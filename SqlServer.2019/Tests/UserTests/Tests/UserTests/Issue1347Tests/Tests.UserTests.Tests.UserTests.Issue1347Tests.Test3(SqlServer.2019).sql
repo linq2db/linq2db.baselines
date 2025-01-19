@@ -1,76 +1,6 @@
 ﻿BeforeExecute
 -- SqlServer.2019
 
-DROP TABLE IF EXISTS [GlobalTaskDTO]
-
-BeforeExecute
--- SqlServer.2019
-
-IF (OBJECT_ID(N'[GlobalTaskDTO]', N'U') IS NULL)
-	CREATE TABLE [GlobalTaskDTO]
-	(
-		[Id]                        UniqueIdentifier NOT NULL,
-		[ResourceID]                UniqueIdentifier NOT NULL,
-		[StorageShelfSourceID]      UniqueIdentifier     NULL,
-		[RPSourceID]                UniqueIdentifier     NULL,
-		[StorageShelfDestinationID] UniqueIdentifier     NULL,
-		[RPDestinationID]           UniqueIdentifier     NULL,
-		[RPOrigDestinationID]       UniqueIdentifier     NULL,
-		[OutfeedTransportOrderID]   UniqueIdentifier     NULL
-	)
-
-BeforeExecute
--- SqlServer.2019
-
-DROP TABLE IF EXISTS [WMS_GlobalTaskA]
-
-BeforeExecute
--- SqlServer.2019
-
-IF (OBJECT_ID(N'[WMS_GlobalTaskA]', N'U') IS NULL)
-	CREATE TABLE [WMS_GlobalTaskA]
-	(
-		[Id]                        UniqueIdentifier NOT NULL,
-		[ResourceID]                UniqueIdentifier NOT NULL,
-		[StorageShelfSourceID]      UniqueIdentifier     NULL,
-		[RPSourceID]                UniqueIdentifier     NULL,
-		[StorageShelfDestinationID] UniqueIdentifier     NULL,
-		[RPDestinationID]           UniqueIdentifier     NULL,
-		[RPOrigDestinationID]       UniqueIdentifier     NULL,
-		[OutfeedTransportOrderID]   UniqueIdentifier     NULL
-	)
-
-BeforeExecute
--- SqlServer.2019
-
-DROP TABLE IF EXISTS [WmsResourcePointDTO]
-
-BeforeExecute
--- SqlServer.2019
-
-IF (OBJECT_ID(N'[WmsResourcePointDTO]', N'U') IS NULL)
-	CREATE TABLE [WmsResourcePointDTO]
-	(
-		[Id] UniqueIdentifier NOT NULL
-	)
-
-BeforeExecute
--- SqlServer.2019
-
-DROP TABLE IF EXISTS [StorageShelfDTO]
-
-BeforeExecute
--- SqlServer.2019
-
-IF (OBJECT_ID(N'[StorageShelfDTO]', N'U') IS NULL)
-	CREATE TABLE [StorageShelfDTO]
-	(
-		[Id] UniqueIdentifier NOT NULL
-	)
-
-BeforeExecute
--- SqlServer.2019
-
 SELECT
 	[t2].[Id],
 	[t2].[ResourceID],
@@ -116,24 +46,4 @@ FROM
 		LEFT JOIN [WmsResourcePointDTO] [dest] ON [t2].[RPDestinationID] = [dest].[Id]
 		LEFT JOIN [StorageShelfDTO] [destShelf] ON [t2].[StorageShelfDestinationID] = [destShelf].[Id]
 		LEFT JOIN [WmsResourcePointDTO] [origdest] ON [t2].[RPOrigDestinationID] = [origdest].[Id]
-
-BeforeExecute
--- SqlServer.2019
-
-DROP TABLE IF EXISTS [StorageShelfDTO]
-
-BeforeExecute
--- SqlServer.2019
-
-DROP TABLE IF EXISTS [WmsResourcePointDTO]
-
-BeforeExecute
--- SqlServer.2019
-
-DROP TABLE IF EXISTS [WMS_GlobalTaskA]
-
-BeforeExecute
--- SqlServer.2019
-
-DROP TABLE IF EXISTS [GlobalTaskDTO]
 

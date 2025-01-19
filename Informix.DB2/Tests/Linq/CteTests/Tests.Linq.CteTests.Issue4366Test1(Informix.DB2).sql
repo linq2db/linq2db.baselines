@@ -1,22 +1,6 @@
 ﻿BeforeExecute
 -- Informix.DB2 Informix
 
-DROP TABLE IF EXISTS Dto
-
-BeforeExecute
--- Informix.DB2 Informix
-
-CREATE TABLE IF NOT EXISTS Dto
-(
-	id        Int           NOT NULL,
-	name      NVarChar(255)     NULL,
-	parent_id Int               NULL,
-	FullName  NVarChar(255)     NULL
-)
-
-BeforeExecute
--- Informix.DB2 Informix
-
 WITH d
 (
 	FullName,
@@ -52,9 +36,4 @@ SELECT
 	t2.FullName
 FROM
 	d t2
-
-BeforeExecute
--- Informix.DB2 Informix
-
-DROP TABLE IF EXISTS Dto
 

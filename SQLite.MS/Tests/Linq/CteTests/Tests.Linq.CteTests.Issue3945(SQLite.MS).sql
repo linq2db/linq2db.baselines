@@ -1,21 +1,6 @@
 ﻿BeforeExecute
 -- SQLite.MS SQLite
 
-DROP TABLE IF EXISTS [TestFolder]
-
-BeforeExecute
--- SQLite.MS SQLite
-
-CREATE TABLE IF NOT EXISTS [TestFolder]
-(
-	[Id]       Guid          NOT NULL,
-	[Label]    NVarChar(255)     NULL,
-	[ParentId] Guid              NULL
-)
-
-BeforeExecute
--- SQLite.MS SQLite
-
 WITH [CTE] ([ParentId], [Label])
 AS
 (
@@ -38,9 +23,4 @@ SELECT
 FROM
 	[CTE] [child]
 		INNER JOIN [TestFolder] [parent] ON [child].[ParentId] = [parent].[Id]
-
-BeforeExecute
--- SQLite.MS SQLite
-
-DROP TABLE IF EXISTS [TestFolder]
 

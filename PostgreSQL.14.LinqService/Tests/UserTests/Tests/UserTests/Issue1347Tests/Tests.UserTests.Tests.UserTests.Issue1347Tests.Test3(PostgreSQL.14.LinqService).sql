@@ -1,72 +1,6 @@
 ﻿BeforeExecute
 -- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
 
-DROP TABLE IF EXISTS "GlobalTaskDTO"
-
-BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
-
-CREATE TABLE IF NOT EXISTS "GlobalTaskDTO"
-(
-	"Id"                        uuid NOT NULL,
-	"ResourceID"                uuid NOT NULL,
-	"StorageShelfSourceID"      uuid     NULL,
-	"RPSourceID"                uuid     NULL,
-	"StorageShelfDestinationID" uuid     NULL,
-	"RPDestinationID"           uuid     NULL,
-	"RPOrigDestinationID"       uuid     NULL,
-	"OutfeedTransportOrderID"   uuid     NULL
-)
-
-BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
-
-DROP TABLE IF EXISTS "WMS_GlobalTaskA"
-
-BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
-
-CREATE TABLE IF NOT EXISTS "WMS_GlobalTaskA"
-(
-	"Id"                        uuid NOT NULL,
-	"ResourceID"                uuid NOT NULL,
-	"StorageShelfSourceID"      uuid     NULL,
-	"RPSourceID"                uuid     NULL,
-	"StorageShelfDestinationID" uuid     NULL,
-	"RPDestinationID"           uuid     NULL,
-	"RPOrigDestinationID"       uuid     NULL,
-	"OutfeedTransportOrderID"   uuid     NULL
-)
-
-BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
-
-DROP TABLE IF EXISTS "WmsResourcePointDTO"
-
-BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
-
-CREATE TABLE IF NOT EXISTS "WmsResourcePointDTO"
-(
-	"Id" uuid NOT NULL
-)
-
-BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
-
-DROP TABLE IF EXISTS "StorageShelfDTO"
-
-BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
-
-CREATE TABLE IF NOT EXISTS "StorageShelfDTO"
-(
-	"Id" uuid NOT NULL
-)
-
-BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
-
 SELECT
 	t2."Id",
 	t2."ResourceID",
@@ -112,24 +46,4 @@ FROM
 		LEFT JOIN "WmsResourcePointDTO" dest ON t2."RPDestinationID" = dest."Id"
 		LEFT JOIN "StorageShelfDTO" "destShelf" ON t2."StorageShelfDestinationID" = "destShelf"."Id"
 		LEFT JOIN "WmsResourcePointDTO" origdest ON t2."RPOrigDestinationID" = origdest."Id"
-
-BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
-
-DROP TABLE IF EXISTS "StorageShelfDTO"
-
-BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
-
-DROP TABLE IF EXISTS "WmsResourcePointDTO"
-
-BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
-
-DROP TABLE IF EXISTS "WMS_GlobalTaskA"
-
-BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
-
-DROP TABLE IF EXISTS "GlobalTaskDTO"
 

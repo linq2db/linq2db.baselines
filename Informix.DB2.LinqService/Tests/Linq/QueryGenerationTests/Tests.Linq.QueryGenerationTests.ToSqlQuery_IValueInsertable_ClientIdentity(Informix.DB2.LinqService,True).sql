@@ -1,22 +1,6 @@
 ﻿BeforeExecute
 -- Informix.DB2 Informix
 
-DROP TABLE IF EXISTS TableWithIdentity
-
-BeforeExecute
--- Informix.DB2 Informix
-
-CREATE TABLE IF NOT EXISTS TableWithIdentity
-(
-	Id      SERIAL  NOT NULL,
-	"Value" Int     NOT NULL,
-
-	PRIMARY KEY (Id)
-)
-
-BeforeExecute
--- Informix.DB2 Informix
-
 INSERT INTO TableWithIdentity
 (
 	Id,
@@ -36,9 +20,4 @@ SELECT FIRST 2
 	t1."Value"
 FROM
 	TableWithIdentity t1
-
-BeforeExecute
--- Informix.DB2 Informix
-
-DROP TABLE IF EXISTS TableWithIdentity
 

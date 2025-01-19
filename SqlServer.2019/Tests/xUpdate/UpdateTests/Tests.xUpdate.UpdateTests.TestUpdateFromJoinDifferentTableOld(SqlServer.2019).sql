@@ -1,67 +1,6 @@
 ﻿BeforeExecute
 -- SqlServer.2019
 
-DROP TABLE IF EXISTS [gt_s_one]
-
-BeforeExecute
--- SqlServer.2019
-
-IF (OBJECT_ID(N'[gt_s_one]', N'U') IS NULL)
-	CREATE TABLE [gt_s_one]
-	(
-		[id]   Int           NOT NULL,
-		[col1] NVarChar(100)     NULL,
-		[col2] NVarChar(100)     NULL,
-		[col3] NVarChar(100)     NULL,
-		[col4] NVarChar(100)     NULL,
-		[col5] NVarChar(100)     NULL,
-		[col6] NVarChar(100)     NULL,
-
-		CONSTRAINT [PK_gt_s_one] PRIMARY KEY CLUSTERED ([id])
-	)
-
-BeforeExecute
--- SqlServer.2019
-
-DROP TABLE IF EXISTS [gt_s_one_target]
-
-BeforeExecute
--- SqlServer.2019
-
-IF (OBJECT_ID(N'[gt_s_one_target]', N'U') IS NULL)
-	CREATE TABLE [gt_s_one_target]
-	(
-		[id]   Int           NOT NULL,
-		[col1] NVarChar(100)     NULL,
-		[col2] NVarChar(100)     NULL,
-		[col3] NVarChar(100)     NULL,
-		[col4] NVarChar(100)     NULL,
-		[col5] NVarChar(100)     NULL,
-		[col6] NVarChar(100)     NULL,
-
-		CONSTRAINT [PK_gt_s_one_target] PRIMARY KEY CLUSTERED ([id])
-	)
-
-BeforeExecute
--- SqlServer.2019
-
-DROP TABLE IF EXISTS [access_mode]
-
-BeforeExecute
--- SqlServer.2019
-
-IF (OBJECT_ID(N'[access_mode]', N'U') IS NULL)
-	CREATE TABLE [access_mode]
-	(
-		[id]   Int            NOT NULL,
-		[code] NVarChar(4000)     NULL,
-
-		CONSTRAINT [PK_access_mode] PRIMARY KEY CLUSTERED ([id])
-	)
-
-BeforeExecute
--- SqlServer.2019
-
 UPDATE
 	[u]
 SET
@@ -77,19 +16,4 @@ FROM
 		LEFT JOIN [access_mode] [y1] ON Upper(REPLACE([x].[col3], N'auth.', N'')) = Upper([y1].[code]) OR [x].[col3] IS NULL AND [y1].[code] IS NULL
 WHERE
 	[x].[id] = [u].[id]
-
-BeforeExecute
--- SqlServer.2019
-
-DROP TABLE IF EXISTS [access_mode]
-
-BeforeExecute
--- SqlServer.2019
-
-DROP TABLE IF EXISTS [gt_s_one_target]
-
-BeforeExecute
--- SqlServer.2019
-
-DROP TABLE IF EXISTS [gt_s_one]
 

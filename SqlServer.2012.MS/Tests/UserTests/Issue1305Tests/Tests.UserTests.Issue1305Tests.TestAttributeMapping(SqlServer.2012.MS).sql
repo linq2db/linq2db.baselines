@@ -1,30 +1,6 @@
 ﻿BeforeExecute
 -- SqlServer.2012.MS SqlServer.2012
 
-IF (OBJECT_ID(N'[ColumnOrderTest]', N'U') IS NOT NULL)
-	DROP TABLE [ColumnOrderTest]
-
-BeforeExecute
--- SqlServer.2012.MS SqlServer.2012
-
-IF (OBJECT_ID(N'[ColumnOrderTest]', N'U') IS NULL)
-	CREATE TABLE [ColumnOrderTest]
-	(
-		[RecordID]       Int            NOT NULL,
-		[EffectiveStart] DateTime2      NOT NULL,
-		[EffectiveEnd]   DateTime2          NULL,
-		[Key]            Int            NOT NULL,
-		[Name]           NVarChar(4000)     NULL,
-		[Code]           NVarChar(4000)     NULL,
-		[Audit1ID]       Int            NOT NULL,
-		[Audit2ID]       Int            NOT NULL,
-
-		CONSTRAINT [PK_ColumnOrderTest] PRIMARY KEY CLUSTERED ([RecordID])
-	)
-
-BeforeExecute
--- SqlServer.2012.MS SqlServer.2012
-
 select @@version
 
 BeforeExecute
@@ -456,9 +432,3 @@ sp_describe_first_result_set
 
 BeforeExecute
 RollbackTransaction
-BeforeExecute
--- SqlServer.2012.MS SqlServer.2012
-
-IF (OBJECT_ID(N'[ColumnOrderTest]', N'U') IS NOT NULL)
-	DROP TABLE [ColumnOrderTest]
-

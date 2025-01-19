@@ -1,27 +1,5 @@
 ﻿BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-
-DROP TABLE IF EXISTS [InheritanceFilter]
-
-BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
-
-CREATE TABLE IF NOT EXISTS [InheritanceFilter]
-(
-	[Id]                INTEGER NOT NULL,
-	[Code]              INTEGER NOT NULL,
-	[Child1Field]       INTEGER     NULL,
-	[Child2Field]       INTEGER     NULL,
-	[Grandchild11Field] INTEGER     NULL,
-	[Grandchild12Field] INTEGER     NULL,
-	[Grandchild21Field] INTEGER     NULL,
-	[Grandchild22Field] INTEGER     NULL,
-
-	CONSTRAINT [PK_InheritanceFilter] PRIMARY KEY ([Id])
-)
-
-BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
 DECLARE @Id  -- Int32
 SET     @Id = 1
 DECLARE @Code  -- Int32
@@ -182,9 +160,4 @@ SELECT
 	[t1].[Grandchild22Field]
 FROM
 	[InheritanceFilter] [t1]
-
-BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
-
-DROP TABLE IF EXISTS [InheritanceFilter]
 

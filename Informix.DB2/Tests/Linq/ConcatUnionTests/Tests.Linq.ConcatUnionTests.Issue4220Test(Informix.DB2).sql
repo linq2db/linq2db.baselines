@@ -1,37 +1,5 @@
 ﻿BeforeExecute
 -- Informix.DB2 Informix
-
-DROP TABLE IF EXISTS ConcreteA
-
-BeforeExecute
--- Informix.DB2 Informix
-
-CREATE TABLE IF NOT EXISTS ConcreteA
-(
-	Id    Int           NOT NULL,
-	AOnly NVarChar(255)     NULL,
-
-	PRIMARY KEY (Id)
-)
-
-BeforeExecute
--- Informix.DB2 Informix
-
-DROP TABLE IF EXISTS ConcreteB
-
-BeforeExecute
--- Informix.DB2 Informix
-
-CREATE TABLE IF NOT EXISTS ConcreteB
-(
-	Id    Int           NOT NULL,
-	BOnly NVarChar(255)     NULL,
-
-	PRIMARY KEY (Id)
-)
-
-BeforeExecute
--- Informix.DB2 Informix
 DECLARE @Id Integer(4) -- Int32
 SET     @Id = 1
 DECLARE @AOnly VarChar(6) -- String
@@ -84,14 +52,4 @@ SELECT
 	e_1.BOnly
 FROM
 	ConcreteB e_1
-
-BeforeExecute
--- Informix.DB2 Informix
-
-DROP TABLE IF EXISTS ConcreteB
-
-BeforeExecute
--- Informix.DB2 Informix
-
-DROP TABLE IF EXISTS ConcreteA
 

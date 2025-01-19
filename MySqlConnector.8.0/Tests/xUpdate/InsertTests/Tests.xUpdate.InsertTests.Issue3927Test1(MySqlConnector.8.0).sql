@@ -1,21 +1,5 @@
 ﻿BeforeExecute
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
-DROP TABLE IF EXISTS `Issue3927Table`
-
-BeforeExecute
--- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
-CREATE TABLE IF NOT EXISTS `Issue3927Table`
-(
-	`SerialNumber` CHAR(11) NOT NULL,
-	`PageNumber`   INT      NOT NULL,
-
-	CONSTRAINT `PK_Issue3927Table` PRIMARY KEY CLUSTERED (`SerialNumber`)
-)
-
-BeforeExecute
--- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 DECLARE @PageNumber Int32
 SET     @PageNumber = 9
 DECLARE @serialNumber String(11) -- AnsiStringFixedLength
@@ -31,9 +15,4 @@ FROM
 	`Issue3927Table` `display`
 WHERE
 	`display`.`SerialNumber` = @serialNumber
-
-BeforeExecute
--- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
-DROP TABLE IF EXISTS `Issue3927Table`
 

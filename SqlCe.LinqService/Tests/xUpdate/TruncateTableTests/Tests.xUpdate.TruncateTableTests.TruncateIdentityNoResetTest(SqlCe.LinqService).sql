@@ -1,22 +1,6 @@
 ﻿BeforeExecute
 -- SqlCe
 
-DROP TABLE [test_temp]
-
-BeforeExecute
--- SqlCe
-
-CREATE TABLE [test_temp]
-(
-	[ID]     Int      NOT NULL IDENTITY,
-	[Field1] Decimal  NOT NULL,
-
-	CONSTRAINT [PK_test_temp] PRIMARY KEY ([ID])
-)
-
-BeforeExecute
--- SqlCe
-
 DELETE FROM [test_temp]
 
 BeforeExecute
@@ -99,9 +83,4 @@ FROM
 ORDER BY
 	[t1].[ID]
 OFFSET @skip ROWS FETCH NEXT 2 ROWS ONLY 
-
-BeforeExecute
--- SqlCe
-
-DROP TABLE [test_temp]
 

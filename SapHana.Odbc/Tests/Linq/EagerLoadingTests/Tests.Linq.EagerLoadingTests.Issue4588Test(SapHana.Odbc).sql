@@ -1,49 +1,4 @@
 ﻿BeforeExecute
--- SapHana.Odbc SapHanaOdbc
-
-DROP TABLE "Order"
-
-BeforeExecute
--- SapHana.Odbc SapHanaOdbc
-
-CREATE COLUMN TABLE "Order"
-(
-	"Id"   Integer       NOT NULL,
-	"Name" NVarChar(255)     NULL
-)
-
-BeforeExecute
--- SapHana.Odbc SapHanaOdbc
-
-DROP TABLE "SubOrder"
-
-BeforeExecute
--- SapHana.Odbc SapHanaOdbc
-
-CREATE COLUMN TABLE "SubOrder"
-(
-	"Id"      Integer NOT NULL,
-	"OrderId" Integer NOT NULL
-)
-
-BeforeExecute
--- SapHana.Odbc SapHanaOdbc
-
-DROP TABLE "SubOrderDetail"
-
-BeforeExecute
--- SapHana.Odbc SapHanaOdbc
-
-CREATE COLUMN TABLE "SubOrderDetail"
-(
-	"Id"         Integer       NOT NULL,
-	"SubOrderId" Integer       NOT NULL,
-	"Code"       NVarChar(255)     NULL,
-	"Date"       Timestamp     NOT NULL,
-	"IsActive"   TinyInt       NOT NULL
-)
-
-BeforeExecute
 BeginTransaction(RepeatableRead)
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
@@ -135,19 +90,4 @@ WHERE
 ORDER BY
 	"x"."Id"
 LIMIT ? OFFSET ?
-
-BeforeExecute
--- SapHana.Odbc SapHanaOdbc
-
-DROP TABLE "SubOrderDetail"
-
-BeforeExecute
--- SapHana.Odbc SapHanaOdbc
-
-DROP TABLE "SubOrder"
-
-BeforeExecute
--- SapHana.Odbc SapHanaOdbc
-
-DROP TABLE "Order"
 

@@ -1,39 +1,5 @@
 ﻿BeforeExecute
 -- Oracle.11.Managed Oracle11
-
-BEGIN
-	EXECUTE IMMEDIATE 'DROP TABLE "TestInsertOrReplaceTable"';
-EXCEPTION
-	WHEN OTHERS THEN
-		IF SQLCODE != -942 THEN
-			RAISE;
-		END IF;
-END;
-
-BeforeExecute
--- Oracle.11.Managed Oracle11
-
-BEGIN
-	EXECUTE IMMEDIATE '
-		CREATE TABLE "TestInsertOrReplaceTable"
-		(
-			ID           Int          NOT NULL,
-			"FirstName"  VarChar(255)     NULL,
-			"LastName"   VarChar(255)     NULL,
-			"MiddleName" VarChar(255)     NULL,
-
-			CONSTRAINT "PK_TestInsertOrReplaceTable" PRIMARY KEY (ID)
-		)
-	';
-EXCEPTION
-	WHEN OTHERS THEN
-		IF SQLCODE != -955 THEN
-			RAISE;
-		END IF;
-END;
-
-BeforeExecute
--- Oracle.11.Managed Oracle11
 DECLARE @ID Int32
 SET     @ID = 0
 DECLARE @FirstName Varchar2(27) -- String
@@ -137,16 +103,4 @@ FROM
 	"TestInsertOrReplaceTable" x
 WHERE
 	x."FirstName" = :FirstName AND ROWNUM <= 1
-
-BeforeExecute
--- Oracle.11.Managed Oracle11
-
-BEGIN
-	EXECUTE IMMEDIATE 'DROP TABLE "TestInsertOrReplaceTable"';
-EXCEPTION
-	WHEN OTHERS THEN
-		IF SQLCODE != -942 THEN
-			RAISE;
-		END IF;
-END;
 

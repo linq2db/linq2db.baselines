@@ -1,20 +1,6 @@
 ﻿BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
-DROP TABLE IF EXISTS [Issue4702Table]
-
-BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
-
-CREATE TABLE IF NOT EXISTS [Issue4702Table]
-(
-	[Id]   INTEGER        NOT NULL PRIMARY KEY AUTOINCREMENT,
-	[Text] NVarChar(255)      NULL
-)
-
-BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
-
 SELECT Max([Id]) FROM [Issue4702Table]
 
 BeforeExecute
@@ -40,9 +26,4 @@ VALUES
 (
 	'Text 3'
 )
-
-BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
-
-DROP TABLE IF EXISTS [Issue4702Table]
 

@@ -1,20 +1,6 @@
 ﻿BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
 
-DROP TABLE [TestBool]
-
-BeforeExecute
--- Access.Jet.OleDb AccessOleDb
-
-CREATE TABLE [TestBool]
-(
-	[Id]    Int NOT NULL,
-	[Value] Bit     NULL
-)
-
-BeforeExecute
--- Access.Jet.OleDb AccessOleDb
-
 INSERT INTO [TestBool]
 (
 	[Id],
@@ -70,9 +56,4 @@ SELECT TOP 2
 	[t1].[Value]
 FROM
 	[TestBool] [t1]
-
-BeforeExecute
--- Access.Jet.OleDb AccessOleDb
-
-DROP TABLE [TestBool]
 

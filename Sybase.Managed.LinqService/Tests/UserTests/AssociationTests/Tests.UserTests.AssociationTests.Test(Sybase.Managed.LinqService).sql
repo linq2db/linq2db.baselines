@@ -1,62 +1,6 @@
 ﻿BeforeExecute
 -- Sybase.Managed Sybase
 
-IF (OBJECT_ID(N'DisTable') IS NOT NULL)
-	DROP TABLE [DisTable]
-
-BeforeExecute
--- Sybase.Managed Sybase
-
-IF (OBJECT_ID(N'DisTable') IS NULL)
-	EXECUTE('
-		CREATE TABLE [DisTable]
-		(
-			[DisTypeID] Int NOT NULL
-		)
-	')
-
-BeforeExecute
--- Sybase.Managed Sybase
-
-IF (OBJECT_ID(N'JurTable') IS NOT NULL)
-	DROP TABLE [JurTable]
-
-BeforeExecute
--- Sybase.Managed Sybase
-
-IF (OBJECT_ID(N'JurTable') IS NULL)
-	EXECUTE('
-		CREATE TABLE [JurTable]
-		(
-			[JurCode] NVarChar(2) NOT NULL,
-
-			CONSTRAINT [PK_JurTable] PRIMARY KEY CLUSTERED ([JurCode])
-		)
-	')
-
-BeforeExecute
--- Sybase.Managed Sybase
-
-IF (OBJECT_ID(N'DisTypeTable') IS NOT NULL)
-	DROP TABLE [DisTypeTable]
-
-BeforeExecute
--- Sybase.Managed Sybase
-
-IF (OBJECT_ID(N'DisTypeTable') IS NULL)
-	EXECUTE('
-		CREATE TABLE [DisTypeTable]
-		(
-			[DisTypeID] Int          NOT NULL,
-			[JurCode]   NVarChar(50) NOT NULL,
-
-			CONSTRAINT [PK_DisTypeTable] PRIMARY KEY CLUSTERED ([DisTypeID])
-		)
-	')
-
-BeforeExecute
--- Sybase.Managed Sybase
-
 SELECT
 	[d].[DisTypeID]
 FROM
@@ -68,22 +12,4 @@ FROM
 			WHEN [d].[DisTypeID] = 5 THEN 5
 		END = [a_DisType].[DisTypeID]
 		INNER JOIN [JurTable] [j] ON [a_DisType].[JurCode] = [j].[JurCode]
-
-BeforeExecute
--- Sybase.Managed Sybase
-
-IF (OBJECT_ID(N'DisTypeTable') IS NOT NULL)
-	DROP TABLE [DisTypeTable]
-
-BeforeExecute
--- Sybase.Managed Sybase
-
-IF (OBJECT_ID(N'JurTable') IS NOT NULL)
-	DROP TABLE [JurTable]
-
-BeforeExecute
--- Sybase.Managed Sybase
-
-IF (OBJECT_ID(N'DisTable') IS NOT NULL)
-	DROP TABLE [DisTable]
 

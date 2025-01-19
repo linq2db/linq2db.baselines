@@ -1,21 +1,5 @@
 ﻿BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-
-DROP TABLE [Issue4460Table]
-
-BeforeExecute
--- Access.Ace.Odbc AccessODBC
-
-CREATE TABLE [Issue4460Table]
-(
-	[Id]      Int           NOT NULL,
-	[Code]    NVarChar(255)     NULL,
-	[Name]    NVarChar(255)     NULL,
-	[Surname] NVarChar(255)     NULL
-)
-
-BeforeExecute
--- Access.Ace.Odbc AccessODBC
 DECLARE @Id Int -- Int32
 SET     @Id = 1
 DECLARE @Code NVarChar(10) -- String
@@ -52,9 +36,4 @@ FROM
 	[Issue4460Table] [t1]
 WHERE
 	[t1].[Code] = 'GrandChild'
-
-BeforeExecute
--- Access.Ace.Odbc AccessODBC
-
-DROP TABLE [Issue4460Table]
 

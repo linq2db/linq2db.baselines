@@ -1,36 +1,5 @@
 ﻿BeforeExecute
 -- Access.Ace.OleDb AccessOleDb
-
-DROP TABLE [Issue1096Task]
-
-BeforeExecute
--- Access.Ace.OleDb AccessOleDb
-
-CREATE TABLE [Issue1096Task]
-(
-	[Id]         Int           NOT NULL,
-	[TargetName] NVarChar(255)     NULL
-)
-
-BeforeExecute
--- Access.Ace.OleDb AccessOleDb
-
-DROP TABLE [Issue1096TaskStage]
-
-BeforeExecute
--- Access.Ace.OleDb AccessOleDb
-
-CREATE TABLE [Issue1096TaskStage]
-(
-	[Id]     Int NOT NULL,
-	[TaskId] Int NOT NULL,
-	[Actual] Bit NOT NULL,
-
-	CONSTRAINT [PK_Issue1096TaskStage] PRIMARY KEY CLUSTERED ([Id])
-)
-
-BeforeExecute
--- Access.Ace.OleDb AccessOleDb
 DECLARE @Id Integer -- Int32
 SET     @Id = 1
 DECLARE @TargetName VarWChar(12) -- String
@@ -99,14 +68,4 @@ SELECT DISTINCT
 FROM
 	[Issue1096Task] [t]
 		LEFT JOIN [Issue1096TaskStage] [a_ActualStage] ON ([t].[Id] = [a_ActualStage].[TaskId] AND [a_ActualStage].[Actual] = True)
-
-BeforeExecute
--- Access.Ace.OleDb AccessOleDb
-
-DROP TABLE [Issue1096TaskStage]
-
-BeforeExecute
--- Access.Ace.OleDb AccessOleDb
-
-DROP TABLE [Issue1096Task]
 

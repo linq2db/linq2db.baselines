@@ -1,23 +1,6 @@
 ﻿BeforeExecute
 -- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
 
-DROP TABLE IF EXISTS "ComplexPerson"
-
-BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
-
-CREATE TABLE IF NOT EXISTS "ComplexPerson"
-(
-	"Id"        Int  NOT NULL,
-	"FirstName" text     NULL,
-	"LastName"  text     NULL,
-
-	CONSTRAINT "PK_ComplexPerson" PRIMARY KEY ("Id")
-)
-
-BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
-
 SELECT
 	COUNT(*)
 FROM
@@ -40,9 +23,4 @@ FROM
 		WHERE
 			x_1."Id" < 20
 	) t1
-
-BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
-
-DROP TABLE IF EXISTS "ComplexPerson"
 

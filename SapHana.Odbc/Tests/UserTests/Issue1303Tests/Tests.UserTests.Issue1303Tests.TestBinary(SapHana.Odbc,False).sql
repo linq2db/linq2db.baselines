@@ -1,23 +1,6 @@
 ﻿BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
-DROP TABLE "Issue1303"
-
-BeforeExecute
--- SapHana.Odbc SapHanaOdbc
-
-CREATE COLUMN TABLE "Issue1303"
-(
-	"ID"     Integer       NOT NULL,
-	"Array"  VarBinary(10)     NULL,
-	"Binary" VarBinary(10)     NULL,
-
-	PRIMARY KEY ("ID")
-)
-
-BeforeExecute
--- SapHana.Odbc SapHanaOdbc
-
 INSERT INTO "Issue1303"
 (
 	"ID",
@@ -69,9 +52,4 @@ FROM
 WHERE
 	"t1"."Binary" = x'0405'
 LIMIT 2
-
-BeforeExecute
--- SapHana.Odbc SapHanaOdbc
-
-DROP TABLE "Issue1303"
 

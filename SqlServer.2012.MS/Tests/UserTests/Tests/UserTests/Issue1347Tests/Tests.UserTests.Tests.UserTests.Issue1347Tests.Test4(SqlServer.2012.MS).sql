@@ -1,50 +1,6 @@
 ﻿BeforeExecute
 -- SqlServer.2012.MS SqlServer.2012
 
-IF (OBJECT_ID(N'[GlobalTaskDTO]', N'U') IS NOT NULL)
-	DROP TABLE [GlobalTaskDTO]
-
-BeforeExecute
--- SqlServer.2012.MS SqlServer.2012
-
-IF (OBJECT_ID(N'[GlobalTaskDTO]', N'U') IS NULL)
-	CREATE TABLE [GlobalTaskDTO]
-	(
-		[Id]                        UniqueIdentifier NOT NULL,
-		[ResourceID]                UniqueIdentifier NOT NULL,
-		[StorageShelfSourceID]      UniqueIdentifier     NULL,
-		[RPSourceID]                UniqueIdentifier     NULL,
-		[StorageShelfDestinationID] UniqueIdentifier     NULL,
-		[RPDestinationID]           UniqueIdentifier     NULL,
-		[RPOrigDestinationID]       UniqueIdentifier     NULL,
-		[OutfeedTransportOrderID]   UniqueIdentifier     NULL
-	)
-
-BeforeExecute
--- SqlServer.2012.MS SqlServer.2012
-
-IF (OBJECT_ID(N'[WMS_GlobalTaskA]', N'U') IS NOT NULL)
-	DROP TABLE [WMS_GlobalTaskA]
-
-BeforeExecute
--- SqlServer.2012.MS SqlServer.2012
-
-IF (OBJECT_ID(N'[WMS_GlobalTaskA]', N'U') IS NULL)
-	CREATE TABLE [WMS_GlobalTaskA]
-	(
-		[Id]                        UniqueIdentifier NOT NULL,
-		[ResourceID]                UniqueIdentifier NOT NULL,
-		[StorageShelfSourceID]      UniqueIdentifier     NULL,
-		[RPSourceID]                UniqueIdentifier     NULL,
-		[StorageShelfDestinationID] UniqueIdentifier     NULL,
-		[RPDestinationID]           UniqueIdentifier     NULL,
-		[RPOrigDestinationID]       UniqueIdentifier     NULL,
-		[OutfeedTransportOrderID]   UniqueIdentifier     NULL
-	)
-
-BeforeExecute
--- SqlServer.2012.MS SqlServer.2012
-
 SELECT
 	[t1].[Id],
 	[t1].[ResourceID],
@@ -68,16 +24,4 @@ SELECT
 	[t2].[OutfeedTransportOrderID]
 FROM
 	[WMS_GlobalTaskA] [t2]
-
-BeforeExecute
--- SqlServer.2012.MS SqlServer.2012
-
-IF (OBJECT_ID(N'[WMS_GlobalTaskA]', N'U') IS NOT NULL)
-	DROP TABLE [WMS_GlobalTaskA]
-
-BeforeExecute
--- SqlServer.2012.MS SqlServer.2012
-
-IF (OBJECT_ID(N'[GlobalTaskDTO]', N'U') IS NOT NULL)
-	DROP TABLE [GlobalTaskDTO]
 

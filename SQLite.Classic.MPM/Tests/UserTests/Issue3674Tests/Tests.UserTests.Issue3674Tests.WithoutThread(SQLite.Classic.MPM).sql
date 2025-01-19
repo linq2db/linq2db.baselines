@@ -1,24 +1,6 @@
 ﻿BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
-DROP TABLE IF EXISTS [Issue3674Tests]
-
-BeforeExecute
--- SQLite.Classic.MPM SQLite.Classic SQLite
-
-CREATE TABLE IF NOT EXISTS [Issue3674Tests]
-(
-	[Code]         NVarChar(30) NOT NULL,
-	[DIM_Company]  NVarChar(30)     NULL,
-	[DIM_Branch]   NVarChar(30)     NULL,
-	[DIM_Location] NVarChar(30)     NULL,
-	[DIM_MSegment] NVarChar(30)     NULL,
-	[DIM_Make]     NVarChar(30)     NULL
-)
-
-BeforeExecute
--- SQLite.Classic.MPM SQLite.Classic SQLite
-
 SELECT
 	[p].[Code],
 	[p].[DIM_Company],
@@ -36,9 +18,4 @@ WHERE
 	([p].[DIM_MSegment] IS NULL OR [p].[DIM_MSegment] = '' OR [p].[DIM_MSegment] = '1' OR [p].[DIM_MSegment] = '2' OR [p].[DIM_MSegment] = '3' OR [p].[DIM_MSegment] = '4' OR [p].[DIM_MSegment] = '5' OR [p].[DIM_MSegment] = '6' OR [p].[DIM_MSegment] = '7' OR [p].[DIM_MSegment] = '8' OR [p].[DIM_MSegment] = '9' OR [p].[DIM_MSegment] = '0') AND
 	([p].[DIM_Make] IS NULL OR [p].[DIM_Make] = '' OR [p].[DIM_Make] = '1' OR [p].[DIM_Make] = '2' OR [p].[DIM_Make] = '3' OR [p].[DIM_Make] = '4' OR [p].[DIM_Make] = '5' OR [p].[DIM_Make] = '6' OR [p].[DIM_Make] = '7' OR [p].[DIM_Make] = '8' OR [p].[DIM_Make] = '9' OR [p].[DIM_Make] = '0' OR [p].[DIM_Make] = '1' OR [p].[DIM_Make] = '2' OR [p].[DIM_Make] = '3' OR [p].[DIM_Make] = '4' OR [p].[DIM_Make] = '5' OR [p].[DIM_Make] = '6' OR [p].[DIM_Make] = '7' OR [p].[DIM_Make] = '8' OR [p].[DIM_Make] = '9' OR [p].[DIM_Make] = '0' OR [p].[DIM_Make] = '1' OR [p].[DIM_Make] = '2' OR [p].[DIM_Make] = '3' OR [p].[DIM_Make] = '4' OR [p].[DIM_Make] = '5' OR [p].[DIM_Make] = '6' OR [p].[DIM_Make] = '7' OR [p].[DIM_Make] = '8' OR [p].[DIM_Make] = '9' OR [p].[DIM_Make] = '0' OR [p].[DIM_Make] = '1' OR [p].[DIM_Make] = '2' OR [p].[DIM_Make] = '3' OR [p].[DIM_Make] = '4' OR [p].[DIM_Make] = '5' OR [p].[DIM_Make] = '6' OR [p].[DIM_Make] = '7' OR [p].[DIM_Make] = '8' OR [p].[DIM_Make] = '9' OR [p].[DIM_Make] = '0' OR [p].[DIM_Make] = '1' OR [p].[DIM_Make] = '2' OR [p].[DIM_Make] = '3' OR [p].[DIM_Make] = '4' OR [p].[DIM_Make] = '5' OR [p].[DIM_Make] = '6' OR [p].[DIM_Make] = '7' OR [p].[DIM_Make] = '8' OR [p].[DIM_Make] = '9' OR [p].[DIM_Make] = '0' OR [p].[DIM_Make] = '1' OR [p].[DIM_Make] = '2' OR [p].[DIM_Make] = '3' OR [p].[DIM_Make] = '4' OR [p].[DIM_Make] = '5' OR [p].[DIM_Make] = '6' OR [p].[DIM_Make] = '7' OR [p].[DIM_Make] = '8' OR [p].[DIM_Make] = '9' OR [p].[DIM_Make] = '0' OR [p].[DIM_Make] = '1' OR [p].[DIM_Make] = '2' OR [p].[DIM_Make] = '3' OR [p].[DIM_Make] = '4' OR [p].[DIM_Make] = '5' OR [p].[DIM_Make] = '6' OR [p].[DIM_Make] = '7' OR [p].[DIM_Make] = '8' OR [p].[DIM_Make] = '9' OR [p].[DIM_Make] = '0' OR [p].[DIM_Make] = '1' OR [p].[DIM_Make] = '2' OR [p].[DIM_Make] = '3' OR [p].[DIM_Make] = '4' OR [p].[DIM_Make] = '5' OR [p].[DIM_Make] = '6' OR [p].[DIM_Make] = '7' OR [p].[DIM_Make] = '8' OR [p].[DIM_Make] = '9' OR [p].[DIM_Make] = '0' OR [p].[DIM_Make] = '1' OR [p].[DIM_Make] = '2' OR [p].[DIM_Make] = '3' OR [p].[DIM_Make] = '4' OR [p].[DIM_Make] = '5' OR [p].[DIM_Make] = '6' OR [p].[DIM_Make] = '7' OR [p].[DIM_Make] = '8' OR [p].[DIM_Make] = '9' OR [p].[DIM_Make] = '0')
 LIMIT 1
-
-BeforeExecute
--- SQLite.Classic.MPM SQLite.Classic SQLite
-
-DROP TABLE IF EXISTS [Issue3674Tests]
 

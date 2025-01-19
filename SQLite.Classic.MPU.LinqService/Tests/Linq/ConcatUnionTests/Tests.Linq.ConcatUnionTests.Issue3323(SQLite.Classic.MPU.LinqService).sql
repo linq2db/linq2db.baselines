@@ -1,24 +1,6 @@
 ﻿BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
-DROP TABLE IF EXISTS [Issue3323Table]
-
-BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
-
-CREATE TABLE IF NOT EXISTS [Issue3323Table]
-(
-	[Id]       INTEGER       NOT NULL,
-	[FistName] NVarChar(255)     NULL,
-	[LastName] NVarChar(255)     NULL,
-	[Text]     NVarChar(255) NOT NULL,
-
-	CONSTRAINT [PK_Issue3323Table] PRIMARY KEY ([Id])
-)
-
-BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
-
 INSERT INTO [Issue3323Table]
 (
 	[Id],
@@ -50,9 +32,4 @@ SELECT
 	[t2].[FistName] || ' ' || [t2].[LastName]
 FROM
 	[Issue3323Table] [t2]
-
-BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
-
-DROP TABLE IF EXISTS [Issue3323Table]
 

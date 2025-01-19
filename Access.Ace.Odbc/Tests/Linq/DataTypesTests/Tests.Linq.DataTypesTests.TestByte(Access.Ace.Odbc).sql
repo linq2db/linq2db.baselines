@@ -1,64 +1,5 @@
 ﻿BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-
-DROP TABLE [ByteTable]
-
-BeforeExecute
--- Access.Ace.Odbc AccessODBC
-
-CREATE TABLE [ByteTable]
-(
-	[Id]             Int     NOT NULL,
-	[Column]         TinyInt NOT NULL,
-	[ColumnNullable] TinyInt     NULL
-)
-
-BeforeExecute
--- Access.Ace.Odbc AccessODBC
-DECLARE @Id Int -- Int32
-SET     @Id = 1
-DECLARE @Column TinyInt(1) -- Byte
-SET     @Column = 1
-DECLARE @ColumnNullable TinyInt -- Byte
-SET     @ColumnNullable = NULL
-
-INSERT INTO [ByteTable]
-(
-	[Id],
-	[Column],
-	[ColumnNullable]
-)
-VALUES
-(
-	?,
-	?,
-	?
-)
-
-BeforeExecute
--- Access.Ace.Odbc AccessODBC
-DECLARE @Id Int -- Int32
-SET     @Id = 2
-DECLARE @Column TinyInt(1) -- Byte
-SET     @Column = 255
-DECLARE @ColumnNullable TinyInt(1) -- Byte
-SET     @ColumnNullable = 2
-
-INSERT INTO [ByteTable]
-(
-	[Id],
-	[Column],
-	[ColumnNullable]
-)
-VALUES
-(
-	?,
-	?,
-	?
-)
-
-BeforeExecute
--- Access.Ace.Odbc AccessODBC
 DECLARE @Column TinyInt(1) -- Byte
 SET     @Column = 255
 DECLARE @ColumnNullable TinyInt(1) -- Byte
@@ -270,9 +211,4 @@ FROM
 	[ByteTable] [t1]
 ORDER BY
 	[t1].[Id]
-
-BeforeExecute
--- Access.Ace.Odbc AccessODBC
-
-DROP TABLE [ByteTable]
 

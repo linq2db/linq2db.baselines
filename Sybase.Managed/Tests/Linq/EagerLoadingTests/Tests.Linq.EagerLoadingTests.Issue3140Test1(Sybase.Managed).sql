@@ -1,46 +1,6 @@
 ﻿BeforeExecute
 -- Sybase.Managed Sybase
 
-IF (OBJECT_ID(N'Issue3140Parent') IS NOT NULL)
-	DROP TABLE [Issue3140Parent]
-
-BeforeExecute
--- Sybase.Managed Sybase
-
-IF (OBJECT_ID(N'Issue3140Parent') IS NULL)
-	EXECUTE('
-		CREATE TABLE [Issue3140Parent]
-		(
-			[Id]      Int NOT NULL,
-			[ChildId] Int NOT NULL,
-
-			CONSTRAINT [PK_Issue3140Parent] PRIMARY KEY CLUSTERED ([Id])
-		)
-	')
-
-BeforeExecute
--- Sybase.Managed Sybase
-
-IF (OBJECT_ID(N'Issue3140Child') IS NOT NULL)
-	DROP TABLE [Issue3140Child]
-
-BeforeExecute
--- Sybase.Managed Sybase
-
-IF (OBJECT_ID(N'Issue3140Child') IS NULL)
-	EXECUTE('
-		CREATE TABLE [Issue3140Child]
-		(
-			[Id]   Int           NOT NULL,
-			[Name] NVarChar(255)     NULL,
-
-			CONSTRAINT [PK_Issue3140Child] PRIMARY KEY CLUSTERED ([Id])
-		)
-	')
-
-BeforeExecute
--- Sybase.Managed Sybase
-
 SELECT
 	[p].[Id],
 	[a_Child].[Id],
@@ -48,16 +8,4 @@ SELECT
 FROM
 	[Issue3140Parent] [p]
 		LEFT JOIN [Issue3140Child] [a_Child] ON [p].[ChildId] = [a_Child].[Id]
-
-BeforeExecute
--- Sybase.Managed Sybase
-
-IF (OBJECT_ID(N'Issue3140Child') IS NOT NULL)
-	DROP TABLE [Issue3140Child]
-
-BeforeExecute
--- Sybase.Managed Sybase
-
-IF (OBJECT_ID(N'Issue3140Parent') IS NOT NULL)
-	DROP TABLE [Issue3140Parent]
 

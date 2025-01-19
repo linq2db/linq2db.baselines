@@ -1,35 +1,6 @@
 ﻿BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
 
-DROP TABLE [MainEntity]
-
-BeforeExecute
--- Access.Jet.OleDb AccessOleDb
-
-CREATE TABLE [MainEntity]
-(
-	[Id] Int NOT NULL,
-
-	CONSTRAINT [PK_MainEntity] PRIMARY KEY CLUSTERED ([Id])
-)
-
-BeforeExecute
--- Access.Jet.OleDb AccessOleDb
-
-DROP TABLE [SubEntity]
-
-BeforeExecute
--- Access.Jet.OleDb AccessOleDb
-
-CREATE TABLE [SubEntity]
-(
-	[Id]           Int NOT NULL,
-	[MainEntityId] Int NOT NULL
-)
-
-BeforeExecute
--- Access.Jet.OleDb AccessOleDb
-
 SELECT
 	[m_1].[Id],
 	[d].[Id],
@@ -45,14 +16,4 @@ SELECT
 	[x].[Id]
 FROM
 	[MainEntity] [x]
-
-BeforeExecute
--- Access.Jet.OleDb AccessOleDb
-
-DROP TABLE [SubEntity]
-
-BeforeExecute
--- Access.Jet.OleDb AccessOleDb
-
-DROP TABLE [MainEntity]
 

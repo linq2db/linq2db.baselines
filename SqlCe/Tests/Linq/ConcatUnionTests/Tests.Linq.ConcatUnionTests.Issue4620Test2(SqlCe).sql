@@ -1,87 +1,6 @@
 ﻿BeforeExecute
 -- SqlCe
 
-DROP TABLE [Issue4620Table]
-
-BeforeExecute
--- SqlCe
-
-CREATE TABLE [Issue4620Table]
-(
-	[Id]         Int     NOT NULL,
-	[IdContract] Int         NULL,
-	[IdClient]   Int         NULL,
-	[Sum]        Decimal NOT NULL
-)
-
-BeforeExecute
--- SqlCe
-
-INSERT INTO [Issue4620Table]
-(
-	[Id],
-	[IdContract],
-	[IdClient],
-	[Sum]
-)
-SELECT 1,NULL,1,0 UNION ALL
-SELECT 2,2,NULL,0 UNION ALL
-SELECT 3,NULL,NULL,0 UNION ALL
-SELECT 4,2,1,0
-
-BeforeExecute
--- SqlCe
-
-DROP TABLE [Issue4620Client]
-
-BeforeExecute
--- SqlCe
-
-CREATE TABLE [Issue4620Client]
-(
-	[Id]   Int           NOT NULL,
-	[Name] NVarChar(255)     NULL
-)
-
-BeforeExecute
--- SqlCe
-
-INSERT INTO [Issue4620Client]
-(
-	[Id],
-	[Name]
-)
-SELECT 1,'Client 1' UNION ALL
-SELECT 2,'Client 2'
-
-BeforeExecute
--- SqlCe
-
-DROP TABLE [Issue4620Contract]
-
-BeforeExecute
--- SqlCe
-
-CREATE TABLE [Issue4620Contract]
-(
-	[Id]       Int NOT NULL,
-	[IdClient] Int NOT NULL
-)
-
-BeforeExecute
--- SqlCe
-
-INSERT INTO [Issue4620Contract]
-(
-	[Id],
-	[IdClient]
-)
-SELECT 1,1 UNION ALL
-SELECT 2,2
-
-BeforeExecute
--- SqlCe
-
 SELECT
 	[t1].[Id],
 	[t1].[Name]
@@ -109,19 +28,4 @@ FROM
 ORDER BY
 	[t1].[Id],
 	[t1].[Name]
-
-BeforeExecute
--- SqlCe
-
-DROP TABLE [Issue4620Contract]
-
-BeforeExecute
--- SqlCe
-
-DROP TABLE [Issue4620Client]
-
-BeforeExecute
--- SqlCe
-
-DROP TABLE [Issue4620Table]
 

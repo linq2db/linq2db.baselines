@@ -1,21 +1,6 @@
 ﻿BeforeExecute
 -- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
 
-DROP TABLE IF EXISTS "Issue3360NullInAnchor"
-
-BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
-
-CREATE TABLE IF NOT EXISTS "Issue3360NullInAnchor"
-(
-	"Id"    Int         NOT NULL,
-	"Guid"  uuid            NULL,
-	"Enum1" VarChar(50)     NULL
-)
-
-BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
-
 WITH RECURSIVE cte ("Id", "Guid")
 AS
 (
@@ -37,9 +22,4 @@ SELECT
 	t2."Guid"
 FROM
 	cte t2
-
-BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
-
-DROP TABLE IF EXISTS "Issue3360NullInAnchor"
 

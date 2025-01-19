@@ -1,20 +1,6 @@
 ﻿BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
-DROP TABLE "TestBool"
-
-BeforeExecute
--- SapHana.Odbc SapHanaOdbc
-
-CREATE COLUMN TABLE "TestBool"
-(
-	"Id"    Integer NOT NULL,
-	"Value" TinyInt     NULL
-)
-
-BeforeExecute
--- SapHana.Odbc SapHanaOdbc
-
 INSERT INTO "TestBool"
 (
 	"Id",
@@ -77,9 +63,4 @@ SELECT
 FROM
 	"TestBool" "t1"
 LIMIT 2
-
-BeforeExecute
--- SapHana.Odbc SapHanaOdbc
-
-DROP TABLE "TestBool"
 

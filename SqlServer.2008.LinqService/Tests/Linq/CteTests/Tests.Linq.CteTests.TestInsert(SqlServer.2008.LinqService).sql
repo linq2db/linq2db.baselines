@@ -1,22 +1,6 @@
 ﻿BeforeExecute
 -- SqlServer.2008
 
-IF (OBJECT_ID(N'[CteChild]', N'U') IS NOT NULL)
-	DROP TABLE [CteChild]
-
-BeforeExecute
--- SqlServer.2008
-
-IF (OBJECT_ID(N'[CteChild]', N'U') IS NULL)
-	CREATE TABLE [CteChild]
-	(
-		[ChildID]  Int NOT NULL,
-		[ParentID] Int NOT NULL
-	)
-
-BeforeExecute
--- SqlServer.2008
-
 WITH [CTE1_] ([ParentID])
 AS
 (
@@ -76,10 +60,4 @@ WHERE
 ORDER BY
 	[c4].[ChildID],
 	[c4].[ParentID]
-
-BeforeExecute
--- SqlServer.2008
-
-IF (OBJECT_ID(N'[CteChild]', N'U') IS NOT NULL)
-	DROP TABLE [CteChild]
 

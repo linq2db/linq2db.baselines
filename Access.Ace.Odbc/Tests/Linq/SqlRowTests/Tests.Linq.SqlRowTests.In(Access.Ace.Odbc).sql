@@ -1,58 +1,6 @@
 ﻿BeforeExecute
 -- Access.Ace.Odbc AccessODBC
 
-DROP TABLE [Ints]
-
-BeforeExecute
--- Access.Ace.Odbc AccessODBC
-
-CREATE TABLE [Ints]
-(
-	[One]   Int NOT NULL,
-	[Two]   Int NOT NULL,
-	[Three] Int NOT NULL,
-	[Four]  Int NOT NULL,
-	[Five]  Int NOT NULL,
-	[Nil]   Int     NULL
-)
-
-BeforeExecute
--- Access.Ace.Odbc AccessODBC
-DECLARE @One Int -- Int32
-SET     @One = 1
-DECLARE @Two Int -- Int32
-SET     @Two = 2
-DECLARE @Three Int -- Int32
-SET     @Three = 3
-DECLARE @Four Int -- Int32
-SET     @Four = 4
-DECLARE @Five Int -- Int32
-SET     @Five = 5
-DECLARE @Nil Int -- Int32
-SET     @Nil = NULL
-
-INSERT INTO [Ints]
-(
-	[One],
-	[Two],
-	[Three],
-	[Four],
-	[Five],
-	[Nil]
-)
-VALUES
-(
-	?,
-	?,
-	?,
-	?,
-	?,
-	?
-)
-
-BeforeExecute
--- Access.Ace.Odbc AccessODBC
-
 SELECT
 	COUNT(*)
 FROM
@@ -95,9 +43,4 @@ WHERE
 	[i].[Nil] = [i].[One] AND [i].[Two] = [i].[One] * 2 AND [i].[Four] = [i].[Four] - 1 OR
 	[i].[Nil] = 0 AND [i].[Two] = 7 AND [i].[Four] = 9 OR
 	[i].[Nil] >= NULL AND [i].[Two] = 2
-
-BeforeExecute
--- Access.Ace.Odbc AccessODBC
-
-DROP TABLE [Ints]
 

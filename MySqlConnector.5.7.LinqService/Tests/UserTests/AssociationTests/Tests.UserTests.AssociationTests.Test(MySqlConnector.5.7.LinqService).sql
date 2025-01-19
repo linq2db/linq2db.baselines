@@ -1,50 +1,6 @@
 ﻿BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 
-DROP TABLE IF EXISTS `DisTable`
-
-BeforeExecute
--- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-
-CREATE TABLE IF NOT EXISTS `DisTable`
-(
-	`DisTypeID` INT NOT NULL
-)
-
-BeforeExecute
--- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-
-DROP TABLE IF EXISTS `JurTable`
-
-BeforeExecute
--- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-
-CREATE TABLE IF NOT EXISTS `JurTable`
-(
-	`JurCode` VARCHAR(2) NOT NULL,
-
-	CONSTRAINT `PK_JurTable` PRIMARY KEY CLUSTERED (`JurCode`)
-)
-
-BeforeExecute
--- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-
-DROP TABLE IF EXISTS `DisTypeTable`
-
-BeforeExecute
--- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-
-CREATE TABLE IF NOT EXISTS `DisTypeTable`
-(
-	`DisTypeID` INT         NOT NULL,
-	`JurCode`   VARCHAR(50) NOT NULL,
-
-	CONSTRAINT `PK_DisTypeTable` PRIMARY KEY CLUSTERED (`DisTypeID`)
-)
-
-BeforeExecute
--- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-
 SELECT
 	`d`.`DisTypeID`
 FROM
@@ -56,19 +12,4 @@ FROM
 			WHEN `d`.`DisTypeID` = 5 THEN 5
 		END = `a_DisType`.`DisTypeID`
 		INNER JOIN `JurTable` `j` ON `a_DisType`.`JurCode` = `j`.`JurCode`
-
-BeforeExecute
--- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-
-DROP TABLE IF EXISTS `DisTypeTable`
-
-BeforeExecute
--- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-
-DROP TABLE IF EXISTS `JurTable`
-
-BeforeExecute
--- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-
-DROP TABLE IF EXISTS `DisTable`
 

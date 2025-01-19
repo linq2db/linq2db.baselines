@@ -1,20 +1,6 @@
 ﻿BeforeExecute
 -- PostgreSQL.15 PostgreSQL
 
-DROP TABLE IF EXISTS "Issue3360WithEnum"
-
-BeforeExecute
--- PostgreSQL.15 PostgreSQL
-
-CREATE TABLE IF NOT EXISTS "Issue3360WithEnum"
-(
-	"Id"  Int         NOT NULL,
-	"Str" VarChar(50) NOT NULL
-)
-
-BeforeExecute
--- PostgreSQL.15 PostgreSQL
-
 WITH RECURSIVE cte ("Id", "Str")
 AS
 (
@@ -36,9 +22,4 @@ SELECT
 	t2."Str"
 FROM
 	cte t2
-
-BeforeExecute
--- PostgreSQL.15 PostgreSQL
-
-DROP TABLE IF EXISTS "Issue3360WithEnum"
 

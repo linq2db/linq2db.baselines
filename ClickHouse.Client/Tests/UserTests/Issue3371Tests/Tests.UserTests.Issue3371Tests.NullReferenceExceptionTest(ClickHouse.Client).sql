@@ -1,62 +1,6 @@
 ﻿BeforeExecute
 -- ClickHouse.Client ClickHouse
 
-DROP TABLE IF EXISTS PayRate
-
-BeforeExecute
--- ClickHouse.Client ClickHouse
-
-CREATE TABLE IF NOT EXISTS PayRate
-(
-	Id   Int32,
-	Name Nullable(String)
-)
-ENGINE = Memory()
-
-BeforeExecute
--- ClickHouse.Client ClickHouse
-
-INSERT INTO PayRate
-(
-	Id,
-	Name
-)
-VALUES
-(1,'Name1'),
-(2,'Name2'),
-(3,'test')
-
-BeforeExecute
--- ClickHouse.Client ClickHouse
-
-DROP TABLE IF EXISTS Employees
-
-BeforeExecute
--- ClickHouse.Client ClickHouse
-
-CREATE TABLE IF NOT EXISTS Employees
-(
-	Id        Int32,
-	PayRateId Nullable(Int32)
-)
-ENGINE = Memory()
-
-BeforeExecute
--- ClickHouse.Client ClickHouse
-
-INSERT INTO Employees
-(
-	Id,
-	PayRateId
-)
-VALUES
-(1,1),
-(2,NULL),
-(3,3)
-
-BeforeExecute
--- ClickHouse.Client ClickHouse
-
 SELECT
 	item_1.Id,
 	a_PayRate.Id,
@@ -79,14 +23,4 @@ FROM
 		LEFT JOIN PayRate a_PayRate ON item_1.PayRateId = a_PayRate.Id
 WHERE
 	a_PayRate.Name = 'test' AND item_1.PayRateId IS NOT NULL
-
-BeforeExecute
--- ClickHouse.Client ClickHouse
-
-DROP TABLE IF EXISTS Employees
-
-BeforeExecute
--- ClickHouse.Client ClickHouse
-
-DROP TABLE IF EXISTS PayRate
 

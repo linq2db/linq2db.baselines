@@ -1,41 +1,5 @@
 ﻿BeforeExecute
 -- DB2 DB2.LUW DB2LUW
-
-BEGIN
-	DECLARE CONTINUE HANDLER FOR SQLSTATE '42704' BEGIN END;
-	EXECUTE IMMEDIATE 'DROP TABLE "ByteTable"';
-END
-
-BeforeExecute
--- DB2 DB2.LUW DB2LUW
-
-BEGIN
-	DECLARE CONTINUE HANDLER FOR SQLSTATE '42710' BEGIN END;
-	EXECUTE IMMEDIATE '
-		CREATE TABLE "ByteTable"
-		(
-			"Id"             Int      NOT NULL,
-			"Column"         SmallInt NOT NULL,
-			"ColumnNullable" SmallInt     NULL
-		)
-	';
-END
-
-BeforeExecute
--- DB2 DB2.LUW DB2LUW
-
-INSERT INTO "ByteTable"
-(
-	"Id",
-	"Column",
-	"ColumnNullable"
-)
-VALUES
-(1,1,NULL),
-(2,255,2)
-
-BeforeExecute
--- DB2 DB2.LUW DB2LUW
 DECLARE @Column SmallInt(2) -- Int16
 SET     @Column = 255
 DECLARE @ColumnNullable SmallInt(2) -- Int16
@@ -175,12 +139,4 @@ FROM
 	"ByteTable" "t1"
 ORDER BY
 	"t1"."Id"
-
-BeforeExecute
--- DB2 DB2.LUW DB2LUW
-
-BEGIN
-	DECLARE CONTINUE HANDLER FOR SQLSTATE '42704' BEGIN END;
-	EXECUTE IMMEDIATE 'DROP TABLE "ByteTable"';
-END
 

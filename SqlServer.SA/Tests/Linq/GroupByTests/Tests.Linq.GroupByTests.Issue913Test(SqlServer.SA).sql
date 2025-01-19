@@ -1,36 +1,6 @@
 ﻿BeforeExecute
 -- SqlServer.SA SqlServer.2019
 
-DROP TABLE IF EXISTS [Issue913Test]
-
-BeforeExecute
--- SqlServer.SA SqlServer.2019
-
-IF (OBJECT_ID(N'[Issue913Test]', N'U') IS NULL)
-	CREATE TABLE [Issue913Test]
-	(
-		[InstrumentID]  Int      NOT NULL,
-		[TradingStatus] NChar(1)     NULL,
-
-		CONSTRAINT [PK_Issue913Test] PRIMARY KEY CLUSTERED ([InstrumentID])
-	)
-
-BeforeExecute
--- SqlServer.SA SqlServer.2019
-
-INSERT INTO [Issue913Test]
-(
-	[InstrumentID],
-	[TradingStatus]
-)
-VALUES
-(1,NULL),
-(2,N'A'),
-(3,N'D')
-
-BeforeExecute
--- SqlServer.SA SqlServer.2019
-
 SELECT
 	[g_2].[cond],
 	COUNT(*)
@@ -43,9 +13,4 @@ FROM
 	) [g_2]
 GROUP BY
 	[g_2].[cond]
-
-BeforeExecute
--- SqlServer.SA SqlServer.2019
-
-DROP TABLE IF EXISTS [Issue913Test]
 

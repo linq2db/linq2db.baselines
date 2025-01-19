@@ -1,20 +1,5 @@
 ﻿BeforeExecute
 -- SQLite.Classic SQLite
-
-DROP TABLE IF EXISTS [my_table]
-
-BeforeExecute
--- SQLite.Classic SQLite
-
-CREATE TABLE IF NOT EXISTS [my_table]
-(
-	[my_col1]      NVarChar(255)     NULL,
-	[itemType]     INTEGER       NOT NULL,
-	[my_other_col] NVarChar(255)     NULL
-)
-
-BeforeExecute
--- SQLite.Classic SQLite
 DECLARE @MyCol1 NVarChar(6) -- String
 SET     @MyCol1 = 'MyCol1'
 DECLARE @itemType  -- Int32
@@ -79,9 +64,4 @@ FROM
 	[my_table] [t1]
 WHERE
 	[t1].[itemType] <> 1
-
-BeforeExecute
--- SQLite.Classic SQLite
-
-DROP TABLE IF EXISTS [my_table]
 

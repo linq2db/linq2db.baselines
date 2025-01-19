@@ -1,19 +1,6 @@
 ﻿BeforeExecute
 -- SqlCe
 
-DROP TABLE [User]
-
-BeforeExecute
--- SqlCe
-
-CREATE TABLE [User]
-(
-	[Id] Int NOT NULL
-)
-
-BeforeExecute
--- SqlCe
-
 INSERT INTO [User]
 (
 	[Id]
@@ -52,9 +39,4 @@ FROM
 					SELECT 'Testing' AS Data
 				) [a_Data]
 		) [t1] ON 1=1
-
-BeforeExecute
--- SqlCe
-
-DROP TABLE [User]
 

@@ -1,22 +1,5 @@
 ﻿BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
-
-DROP TABLE IF EXISTS "Issue1855Table"
-
-BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
-
-CREATE TABLE IF NOT EXISTS "Issue1855Table"
-(
-	"Id"                         Int         NOT NULL,
-	"SomeDateTimeOffset"         TimeStampTZ NOT NULL,
-	"SomeNullableDateTimeOffset" TimeStampTZ     NULL,
-
-	CONSTRAINT "PK_Issue1855Table" PRIMARY KEY ("Id")
-)
-
-BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
 DECLARE @Id Integer -- Int32
 SET     @Id = 1
 DECLARE @SomeDateTimeOffset TimestampTz -- DateTime
@@ -70,9 +53,4 @@ FROM
 	"Issue1855Table" r
 WHERE
 	r."SomeDateTimeOffset" + :interval * Interval '1 Second' >= :clientSideIn
-
-BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
-
-DROP TABLE IF EXISTS "Issue1855Table"
 

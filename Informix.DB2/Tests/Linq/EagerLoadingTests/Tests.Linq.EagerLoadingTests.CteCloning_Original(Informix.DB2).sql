@@ -1,36 +1,4 @@
 ﻿BeforeExecute
--- Informix.DB2 Informix
-
-DROP TABLE IF EXISTS CteTable
-
-BeforeExecute
--- Informix.DB2 Informix
-
-CREATE TABLE IF NOT EXISTS CteTable
-(
-	Id     Int NOT NULL,
-	Value1 Int NOT NULL,
-	Value2 Int NOT NULL,
-	Value3 Int NOT NULL,
-	Value4 Int NOT NULL,
-	Value5 Int NOT NULL
-)
-
-BeforeExecute
--- Informix.DB2 Informix
-
-DROP TABLE IF EXISTS CteChildTable
-
-BeforeExecute
--- Informix.DB2 Informix
-
-CREATE TABLE IF NOT EXISTS CteChildTable
-(
-	Id      Int NOT NULL,
-	"Value" Int NOT NULL
-)
-
-BeforeExecute
 BeginTransaction(RepeatableRead)
 BeforeExecute
 -- Informix.DB2 Informix
@@ -117,14 +85,4 @@ SELECT
 FROM
 	cte t2
 		LEFT JOIN CteChildTable d ON t2.Value4 = d.Id
-
-BeforeExecute
--- Informix.DB2 Informix
-
-DROP TABLE IF EXISTS CteChildTable
-
-BeforeExecute
--- Informix.DB2 Informix
-
-DROP TABLE IF EXISTS CteTable
 

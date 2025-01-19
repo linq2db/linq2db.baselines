@@ -1,40 +1,6 @@
 ﻿BeforeExecute
 -- Informix.DB2 Informix
 
-DROP TABLE IF EXISTS TransactionEntity
-
-BeforeExecute
--- Informix.DB2 Informix
-
-CREATE TABLE IF NOT EXISTS TransactionEntity
-(
-	Id      VARCHAR(36)               NOT NULL,
-	ValidOn datetime year to fraction NOT NULL,
-
-	PRIMARY KEY (Id)
-)
-
-BeforeExecute
--- Informix.DB2 Informix
-
-DROP TABLE IF EXISTS LineEntity
-
-BeforeExecute
--- Informix.DB2 Informix
-
-CREATE TABLE IF NOT EXISTS LineEntity
-(
-	Id            VARCHAR(36)   NOT NULL,
-	TransactionId VARCHAR(36)   NOT NULL,
-	Amount        Decimal       NOT NULL,
-	Currency      NVarChar(255)     NULL,
-
-	PRIMARY KEY (Id)
-)
-
-BeforeExecute
--- Informix.DB2 Informix
-
 SELECT
 	m_1.Id,
 	d.Id,
@@ -91,14 +57,4 @@ WHERE
 				UNION ALL
 				SELECT 'B'::NVarChar(255) FROM table(set{1})) t1
 	)
-
-BeforeExecute
--- Informix.DB2 Informix
-
-DROP TABLE IF EXISTS LineEntity
-
-BeforeExecute
--- Informix.DB2 Informix
-
-DROP TABLE IF EXISTS TransactionEntity
 

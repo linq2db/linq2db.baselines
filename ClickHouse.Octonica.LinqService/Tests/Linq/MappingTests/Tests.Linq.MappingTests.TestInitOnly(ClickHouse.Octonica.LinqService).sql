@@ -1,25 +1,6 @@
 ﻿BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
-DROP TABLE IF EXISTS WithInitOnly
-
-BeforeExecute
--- ClickHouse.Octonica ClickHouse
-
-CREATE TABLE IF NOT EXISTS WithInitOnly
-(
-	Id        Int32,
-	BaseValue Nullable(String),
-	Value     Nullable(String),
-
-	PRIMARY KEY (Id)
-)
-ENGINE = MergeTree()
-ORDER BY Id
-
-BeforeExecute
--- ClickHouse.Octonica ClickHouse
-
 INSERT INTO WithInitOnly
 (
 	Id,
@@ -72,9 +53,4 @@ FROM
 	WithInitOnly r
 ORDER BY
 	r.Id
-
-BeforeExecute
--- ClickHouse.Octonica ClickHouse
-
-DROP TABLE IF EXISTS WithInitOnly
 

@@ -1,47 +1,6 @@
 ﻿BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
-DROP TABLE IF EXISTS [Item]
-
-BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
-
-CREATE TABLE IF NOT EXISTS [Item]
-(
-	[ItemId]   INTEGER       NOT NULL,
-	[Kind]     INTEGER       NOT NULL,
-	[ItemCode] NVarChar(255)     NULL,
-	[Style]    NVarChar(255)     NULL,
-	[Color]    NVarChar(255)     NULL,
-
-	CONSTRAINT [PK_Item] PRIMARY KEY ([ItemId])
-)
-
-BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
-
-INSERT INTO [Item]
-(
-	[ItemId],
-	[Kind],
-	[ItemCode],
-	[Style],
-	[Color]
-)
-VALUES
-(1,1,'01020102','Style1','White'),
-(2,1,'01020102','Style1','White'),
-(3,1,'01020102','Style1','White'),
-(4,2,'03020302','Style3','White'),
-(5,2,'01040104','Style1','Blue'),
-(6,2,'01010104','Style1','Black'),
-(7,3,'03020302','Style3','White'),
-(8,3,'01040104','Style1','Blue'),
-(9,3,'01010104','Style1','Black')
-
-BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
-
 SELECT
 	[t].[Kind] = 1 OR [t].[Kind] = 2,
 	[t].[Kind],
@@ -247,9 +206,4 @@ SELECT
 	[t1].[Color]
 FROM
 	[Item] [t1]
-
-BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
-
-DROP TABLE IF EXISTS [Item]
 

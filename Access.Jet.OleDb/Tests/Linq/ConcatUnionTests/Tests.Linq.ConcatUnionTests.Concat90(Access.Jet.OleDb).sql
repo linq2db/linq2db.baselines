@@ -1,34 +1,6 @@
 ﻿BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
 
-DROP TABLE [TestEntity1]
-
-BeforeExecute
--- Access.Jet.OleDb AccessOleDb
-
-CREATE TABLE [TestEntity1]
-(
-	[Id]     Int           NOT NULL,
-	[Field1] NVarChar(255)     NULL
-)
-
-BeforeExecute
--- Access.Jet.OleDb AccessOleDb
-
-DROP TABLE [TestEntity2]
-
-BeforeExecute
--- Access.Jet.OleDb AccessOleDb
-
-CREATE TABLE [TestEntity2]
-(
-	[Id]     Int           NOT NULL,
-	[Field1] NVarChar(255)     NULL
-)
-
-BeforeExecute
--- Access.Jet.OleDb AccessOleDb
-
 SELECT
 	[t1].[Id],
 	[t1].[Field1],
@@ -86,14 +58,4 @@ FROM
 		LEFT JOIN [TestEntity1] [t1_1] ON ([t2_1].[Id] = [t1_1].[Id])
 WHERE
 	[t1_1].[Id] IS NULL
-
-BeforeExecute
--- Access.Jet.OleDb AccessOleDb
-
-DROP TABLE [TestEntity2]
-
-BeforeExecute
--- Access.Jet.OleDb AccessOleDb
-
-DROP TABLE [TestEntity1]
 

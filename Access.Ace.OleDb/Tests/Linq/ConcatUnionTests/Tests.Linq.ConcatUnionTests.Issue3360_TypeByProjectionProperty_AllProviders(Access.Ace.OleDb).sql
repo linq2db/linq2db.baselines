@@ -1,22 +1,6 @@
 ﻿BeforeExecute
 -- Access.Ace.OleDb AccessOleDb
 
-DROP TABLE [Issue3360Table]
-
-BeforeExecute
--- Access.Ace.OleDb AccessOleDb
-
-CREATE TABLE [Issue3360Table]
-(
-	[Id]  Int     NOT NULL,
-	[Str] VarChar     NULL,
-
-	CONSTRAINT [PK_Issue3360Table] PRIMARY KEY CLUSTERED ([Id])
-)
-
-BeforeExecute
--- Access.Ace.OleDb AccessOleDb
-
 SELECT
 	[p].[Id],
 	CStr('str1')
@@ -43,9 +27,4 @@ SELECT
 	CStr('str1')
 FROM
 	[Issue3360Table] [p_1]
-
-BeforeExecute
--- Access.Ace.OleDb AccessOleDb
-
-DROP TABLE [Issue3360Table]
 

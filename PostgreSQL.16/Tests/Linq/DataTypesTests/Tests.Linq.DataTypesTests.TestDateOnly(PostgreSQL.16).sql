@@ -1,33 +1,5 @@
 ﻿BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
-
-DROP TABLE IF EXISTS "DateOnlyTable"
-
-BeforeExecute
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
-
-CREATE TABLE IF NOT EXISTS "DateOnlyTable"
-(
-	"Id"             Int  NOT NULL,
-	"Column"         Date NOT NULL,
-	"ColumnNullable" Date     NULL
-)
-
-BeforeExecute
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
-
-INSERT INTO "DateOnlyTable"
-(
-	"Id",
-	"Column",
-	"ColumnNullable"
-)
-VALUES
-(1,'1950-01-01'::date,NULL),
-(2,'2020-02-29'::date,'2200-01-01'::date)
-
-BeforeExecute
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 DECLARE @Column Date
 SET     @Column = '2020-02-29'::date
 DECLARE @ColumnNullable Date
@@ -167,9 +139,4 @@ FROM
 	"DateOnlyTable" t1
 ORDER BY
 	t1."Id"
-
-BeforeExecute
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
-
-DROP TABLE IF EXISTS "DateOnlyTable"
 

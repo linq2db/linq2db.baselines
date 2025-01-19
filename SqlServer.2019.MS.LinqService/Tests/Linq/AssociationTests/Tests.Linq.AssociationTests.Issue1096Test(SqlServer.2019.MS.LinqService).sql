@@ -1,38 +1,5 @@
 ﻿BeforeExecute
 -- SqlServer.2019.MS SqlServer.2019
-
-DROP TABLE IF EXISTS [Issue1096Task]
-
-BeforeExecute
--- SqlServer.2019.MS SqlServer.2019
-
-IF (OBJECT_ID(N'[Issue1096Task]', N'U') IS NULL)
-	CREATE TABLE [Issue1096Task]
-	(
-		[Id]         Int            NOT NULL,
-		[TargetName] NVarChar(4000)     NULL
-	)
-
-BeforeExecute
--- SqlServer.2019.MS SqlServer.2019
-
-DROP TABLE IF EXISTS [Issue1096TaskStage]
-
-BeforeExecute
--- SqlServer.2019.MS SqlServer.2019
-
-IF (OBJECT_ID(N'[Issue1096TaskStage]', N'U') IS NULL)
-	CREATE TABLE [Issue1096TaskStage]
-	(
-		[Id]     Int NOT NULL,
-		[TaskId] Int NOT NULL,
-		[Actual] Bit NOT NULL,
-
-		CONSTRAINT [PK_Issue1096TaskStage] PRIMARY KEY CLUSTERED ([Id])
-	)
-
-BeforeExecute
--- SqlServer.2019.MS SqlServer.2019
 DECLARE @Id Int -- Int32
 SET     @Id = 1
 DECLARE @TargetName NVarChar(4000) -- String
@@ -101,14 +68,4 @@ SELECT DISTINCT
 FROM
 	[Issue1096Task] [t]
 		LEFT JOIN [Issue1096TaskStage] [a_ActualStage] ON [t].[Id] = [a_ActualStage].[TaskId] AND [a_ActualStage].[Actual] = 1
-
-BeforeExecute
--- SqlServer.2019.MS SqlServer.2019
-
-DROP TABLE IF EXISTS [Issue1096TaskStage]
-
-BeforeExecute
--- SqlServer.2019.MS SqlServer.2019
-
-DROP TABLE IF EXISTS [Issue1096Task]
 

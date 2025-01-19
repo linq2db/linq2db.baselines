@@ -1,20 +1,5 @@
 ﻿BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-
-DROP TABLE IF EXISTS [DynamicColumnTable]
-
-BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
-
-CREATE TABLE IF NOT EXISTS [DynamicColumnTable]
-(
-	[Id]        INTEGER       NOT NULL,
-	[Name]      NVarChar(255)     NULL,
-	[IsDeleted] Bit           NOT NULL
-)
-
-BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
 DECLARE @Id  -- Int32
 SET     @Id = 1
 DECLARE @Name NVarChar(5) -- String
@@ -82,9 +67,4 @@ FROM
 WHERE
 	[e].[Name] = 'Some2'
 LIMIT 1
-
-BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
-
-DROP TABLE IF EXISTS [DynamicColumnTable]
 

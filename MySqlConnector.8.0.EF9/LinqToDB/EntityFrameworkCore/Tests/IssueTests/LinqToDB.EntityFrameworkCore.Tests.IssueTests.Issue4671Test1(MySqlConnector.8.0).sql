@@ -1,23 +1,5 @@
 ﻿--  MySql.8.0.MySqlConnector MySql80
 
-DROP TABLE IF EXISTS `Issue4671Entity1`
-
-
-
---  MySql.8.0.MySqlConnector MySql80
-
-CREATE TABLE IF NOT EXISTS `Issue4671Entity1`
-(
-	`Id`    int AUTO_INCREMENT NOT NULL,
-	`Value` int                NOT NULL,
-
-	CONSTRAINT `PK_Issue4671Entity1` PRIMARY KEY CLUSTERED (`Id`)
-)
-
-
-
---  MySql.8.0.MySqlConnector MySql80
-
 CREATE TEMPORARY TABLE `Issue4671Entity1TMP`
 (
 	`Id`    int AUTO_INCREMENT NOT NULL,
@@ -79,12 +61,6 @@ LIMIT 2
 --  MySql.8.0.MySqlConnector MySql80
 
 DROP TABLE IF EXISTS `Issue4671Entity1TMP`
-
-
-
---  MySql.8.0.MySqlConnector MySql80
-
-DROP TABLE IF EXISTS `Issue4671Entity1`
 
 
 

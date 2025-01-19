@@ -1,39 +1,4 @@
 ﻿BeforeExecute
--- MySql.5.7 MySql.5.7.MySql.Data MySql57
-
-DROP TABLE IF EXISTS `Test3799Item`
-
-BeforeExecute
--- MySql.5.7 MySql.5.7.MySql.Data MySql57
-
-CREATE TABLE IF NOT EXISTS `Test3799Item`
-(
-	`Id`       INT           NOT NULL,
-	`ParentId` INT               NULL,
-	`Name`     VARCHAR(4000) NOT NULL,
-
-	CONSTRAINT `PK_Test3799Item` PRIMARY KEY CLUSTERED (`Id`)
-)
-
-BeforeExecute
--- MySql.5.7 MySql.5.7.MySql.Data MySql57
-
-INSERT INTO `Test3799Item`
-(
-	`Id`,
-	`ParentId`,
-	`Name`
-)
-VALUES
-(1,NULL,'root'),
-(2,1,'child 1'),
-(3,2,'child 1.1'),
-(4,2,'child 1.2'),
-(5,1,'child 2'),
-(6,5,'child 2.1'),
-(7,5,'child 2.1')
-
-BeforeExecute
 BeginTransaction(RepeatableRead)
 BeforeExecute
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
@@ -85,9 +50,4 @@ SELECT
 	)
 FROM
 	`Test3799Item` `item_1`
-
-BeforeExecute
--- MySql.5.7 MySql.5.7.MySql.Data MySql57
-
-DROP TABLE IF EXISTS `Test3799Item`
 

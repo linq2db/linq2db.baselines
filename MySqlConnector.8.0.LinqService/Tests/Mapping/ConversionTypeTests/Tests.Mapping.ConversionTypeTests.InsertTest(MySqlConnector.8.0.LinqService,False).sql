@@ -1,21 +1,5 @@
 ﻿BeforeExecute
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
-DROP TABLE IF EXISTS `TrimTestTable`
-
-BeforeExecute
--- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
-CREATE TABLE IF NOT EXISTS `TrimTestTable`
-(
-	`ID`   INT         NOT NULL,
-	`Data` VARCHAR(50)     NULL,
-
-	CONSTRAINT `PK_TrimTestTable` PRIMARY KEY CLUSTERED (`ID`)
-)
-
-BeforeExecute
--- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 DECLARE @ID Int32
 SET     @ID = 1
 DECLARE @Data VarChar(9) -- String
@@ -85,9 +69,4 @@ FROM
 	`TrimTestTable` `r`
 ORDER BY
 	`r`.`ID`
-
-BeforeExecute
--- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
-DROP TABLE IF EXISTS `TrimTestTable`
 

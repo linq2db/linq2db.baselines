@@ -1,23 +1,6 @@
 ﻿BeforeExecute
 -- SqlCe
 
-DROP TABLE [ComplexPerson]
-
-BeforeExecute
--- SqlCe
-
-CREATE TABLE [ComplexPerson]
-(
-	[Id]        Int           NOT NULL,
-	[FirstName] NVarChar(255)     NULL,
-	[LastName]  NVarChar(255)     NULL,
-
-	CONSTRAINT [PK_ComplexPerson] PRIMARY KEY ([Id])
-)
-
-BeforeExecute
--- SqlCe
-
 SELECT
 	[x].[Id],
 	[x].[FirstName],
@@ -35,9 +18,4 @@ FROM
 	[ComplexPerson] [x_1]
 WHERE
 	[x_1].[Id] < 20
-
-BeforeExecute
--- SqlCe
-
-DROP TABLE [ComplexPerson]
 

@@ -1,64 +1,6 @@
 ﻿BeforeExecute
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
 
-DROP TABLE IF EXISTS `gt_s_one`
-
-BeforeExecute
--- MySql.5.7 MySql.5.7.MySql.Data MySql57
-
-CREATE TABLE IF NOT EXISTS `gt_s_one`
-(
-	`id`   INT          NOT NULL,
-	`col1` VARCHAR(100)     NULL,
-	`col2` VARCHAR(100)     NULL,
-	`col3` VARCHAR(100)     NULL,
-	`col4` VARCHAR(100)     NULL,
-	`col5` VARCHAR(100)     NULL,
-	`col6` VARCHAR(100)     NULL,
-
-	CONSTRAINT `PK_gt_s_one` PRIMARY KEY CLUSTERED (`id`)
-)
-
-BeforeExecute
--- MySql.5.7 MySql.5.7.MySql.Data MySql57
-
-DROP TABLE IF EXISTS `gt_s_one_target`
-
-BeforeExecute
--- MySql.5.7 MySql.5.7.MySql.Data MySql57
-
-CREATE TABLE IF NOT EXISTS `gt_s_one_target`
-(
-	`id`   INT          NOT NULL,
-	`col1` VARCHAR(100)     NULL,
-	`col2` VARCHAR(100)     NULL,
-	`col3` VARCHAR(100)     NULL,
-	`col4` VARCHAR(100)     NULL,
-	`col5` VARCHAR(100)     NULL,
-	`col6` VARCHAR(100)     NULL,
-
-	CONSTRAINT `PK_gt_s_one_target` PRIMARY KEY CLUSTERED (`id`)
-)
-
-BeforeExecute
--- MySql.5.7 MySql.5.7.MySql.Data MySql57
-
-DROP TABLE IF EXISTS `access_mode`
-
-BeforeExecute
--- MySql.5.7 MySql.5.7.MySql.Data MySql57
-
-CREATE TABLE IF NOT EXISTS `access_mode`
-(
-	`id`   INT           NOT NULL,
-	`code` VARCHAR(4000)     NULL,
-
-	CONSTRAINT `PK_access_mode` PRIMARY KEY CLUSTERED (`id`)
-)
-
-BeforeExecute
--- MySql.5.7 MySql.5.7.MySql.Data MySql57
-
 UPDATE
 	`gt_s_one_target` `u`,
 	`gt_s_one` `x`
@@ -78,19 +20,4 @@ SET
 	END
 WHERE
 	`x`.`id` = `u`.`id`
-
-BeforeExecute
--- MySql.5.7 MySql.5.7.MySql.Data MySql57
-
-DROP TABLE IF EXISTS `access_mode`
-
-BeforeExecute
--- MySql.5.7 MySql.5.7.MySql.Data MySql57
-
-DROP TABLE IF EXISTS `gt_s_one_target`
-
-BeforeExecute
--- MySql.5.7 MySql.5.7.MySql.Data MySql57
-
-DROP TABLE IF EXISTS `gt_s_one`
 

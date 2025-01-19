@@ -1,23 +1,5 @@
 ﻿BeforeExecute
 -- SqlServer.2005.MS SqlServer.2005
-
-IF (OBJECT_ID(N'[BackgroundTask]', N'U') IS NOT NULL)
-	DROP TABLE [BackgroundTask]
-
-BeforeExecute
--- SqlServer.2005.MS SqlServer.2005
-
-IF (OBJECT_ID(N'[BackgroundTask]', N'U') IS NULL)
-	CREATE TABLE [BackgroundTask]
-	(
-		[ID]               Int     NULL,
-		[DurationID]       Int NOT NULL,
-		[DurationInterval] Int NOT NULL,
-		[PersonID]         Int     NULL
-	)
-
-BeforeExecute
--- SqlServer.2005.MS SqlServer.2005
 DECLARE @ID Int -- Int32
 SET     @ID = 3
 DECLARE @DurationID Int -- Int32
@@ -56,10 +38,4 @@ FROM
 	[BackgroundTask] [task_1]
 WHERE
 	[task_1].[PersonID] = @personId
-
-BeforeExecute
--- SqlServer.2005.MS SqlServer.2005
-
-IF (OBJECT_ID(N'[BackgroundTask]', N'U') IS NOT NULL)
-	DROP TABLE [BackgroundTask]
 

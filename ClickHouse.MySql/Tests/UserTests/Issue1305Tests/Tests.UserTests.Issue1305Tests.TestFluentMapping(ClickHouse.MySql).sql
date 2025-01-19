@@ -1,27 +1,6 @@
 ﻿BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
-DROP TABLE IF EXISTS FluentMapping
-
-BeforeExecute
--- ClickHouse.MySql ClickHouse
-
-CREATE TABLE IF NOT EXISTS FluentMapping
-(
-	RecordID       Int32,
-	EffectiveStart DateTime64(7),
-	EffectiveEnd   Nullable(DateTime64(7)),
-	Key            Int32,
-	Unordered1     Int32,
-	Unordered2     Int32,
-	Audit1ID       Int32,
-	Audit2ID       Int32
-)
-ENGINE = Memory()
-
-BeforeExecute
--- ClickHouse.MySql ClickHouse
-
 select name, comment, engine LIKE '%View' from system.tables where is_temporary = 0 and database = database()
 
 BeforeExecute
@@ -55,9 +34,4 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 select database()
-
-BeforeExecute
--- ClickHouse.MySql ClickHouse
-
-DROP TABLE IF EXISTS FluentMapping
 

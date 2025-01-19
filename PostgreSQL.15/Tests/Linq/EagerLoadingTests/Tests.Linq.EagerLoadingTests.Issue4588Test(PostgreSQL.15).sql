@@ -1,49 +1,4 @@
 ﻿BeforeExecute
--- PostgreSQL.15 PostgreSQL
-
-DROP TABLE IF EXISTS "Order"
-
-BeforeExecute
--- PostgreSQL.15 PostgreSQL
-
-CREATE TABLE IF NOT EXISTS "Order"
-(
-	"Id"   Int  NOT NULL,
-	"Name" text     NULL
-)
-
-BeforeExecute
--- PostgreSQL.15 PostgreSQL
-
-DROP TABLE IF EXISTS "SubOrder"
-
-BeforeExecute
--- PostgreSQL.15 PostgreSQL
-
-CREATE TABLE IF NOT EXISTS "SubOrder"
-(
-	"Id"      Int NOT NULL,
-	"OrderId" Int NOT NULL
-)
-
-BeforeExecute
--- PostgreSQL.15 PostgreSQL
-
-DROP TABLE IF EXISTS "SubOrderDetail"
-
-BeforeExecute
--- PostgreSQL.15 PostgreSQL
-
-CREATE TABLE IF NOT EXISTS "SubOrderDetail"
-(
-	"Id"         Int       NOT NULL,
-	"SubOrderId" Int       NOT NULL,
-	"Code"       text          NULL,
-	"Date"       TimeStamp NOT NULL,
-	"IsActive"   Boolean   NOT NULL
-)
-
-BeforeExecute
 BeginTransaction(RepeatableRead)
 BeforeExecute
 -- PostgreSQL.15 PostgreSQL
@@ -135,19 +90,4 @@ WHERE
 ORDER BY
 	x."Id"
 LIMIT :take OFFSET :skip 
-
-BeforeExecute
--- PostgreSQL.15 PostgreSQL
-
-DROP TABLE IF EXISTS "SubOrderDetail"
-
-BeforeExecute
--- PostgreSQL.15 PostgreSQL
-
-DROP TABLE IF EXISTS "SubOrder"
-
-BeforeExecute
--- PostgreSQL.15 PostgreSQL
-
-DROP TABLE IF EXISTS "Order"
 

@@ -1,24 +1,5 @@
 ﻿BeforeExecute
 -- SqlServer.2017.MS SqlServer.2017
-
-DROP TABLE IF EXISTS [PR_1598_Insert_Enum_Table]
-
-BeforeExecute
--- SqlServer.2017.MS SqlServer.2017
-
-IF (OBJECT_ID(N'[PR_1598_Insert_Enum_Table]', N'U') IS NULL)
-	CREATE TABLE [PR_1598_Insert_Enum_Table]
-	(
-		[Id]     Int            NOT NULL,
-		[Name]   NVarChar(4000)     NULL,
-		[Age]    Int                NULL,
-		[Gender] NVarChar(6)        NULL,
-
-		CONSTRAINT [PK_PR_1598_Insert_Enum_Table] PRIMARY KEY CLUSTERED ([Id])
-	)
-
-BeforeExecute
--- SqlServer.2017.MS SqlServer.2017
 DECLARE @Id Int -- Int32
 SET     @Id = 1
 DECLARE @Name NVarChar(4000) -- String
@@ -90,9 +71,4 @@ FROM
 	[PR_1598_Insert_Enum_Table] [t]
 WHERE
 	[t].[Id] = 2
-
-BeforeExecute
--- SqlServer.2017.MS SqlServer.2017
-
-DROP TABLE IF EXISTS [PR_1598_Insert_Enum_Table]
 

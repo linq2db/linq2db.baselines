@@ -1,56 +1,4 @@
 ﻿BeforeExecute
--- SQLite.Classic.MPM SQLite.Classic SQLite
-
-DROP TABLE IF EXISTS [ParentRecord]
-
-BeforeExecute
--- SQLite.Classic.MPM SQLite.Classic SQLite
-
-CREATE TABLE IF NOT EXISTS [ParentRecord]
-(
-	[Id] INTEGER NOT NULL
-)
-
-BeforeExecute
--- SQLite.Classic.MPM SQLite.Classic SQLite
-
-INSERT INTO [ParentRecord]
-(
-	[Id]
-)
-VALUES
-(1)
-
-BeforeExecute
--- SQLite.Classic.MPM SQLite.Classic SQLite
-
-DROP TABLE IF EXISTS [ChildRecord]
-
-BeforeExecute
--- SQLite.Classic.MPM SQLite.Classic SQLite
-
-CREATE TABLE IF NOT EXISTS [ChildRecord]
-(
-	[Id]       INTEGER NOT NULL,
-	[ParentId] INTEGER NOT NULL,
-	[IsActive] Bit     NOT NULL
-)
-
-BeforeExecute
--- SQLite.Classic.MPM SQLite.Classic SQLite
-
-INSERT INTO [ChildRecord]
-(
-	[Id],
-	[ParentId],
-	[IsActive]
-)
-VALUES
-(11,1,1),
-(12,1,0),
-(13,1,1)
-
-BeforeExecute
 BeginTransaction(Serializable)
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
@@ -97,14 +45,4 @@ SELECT
 	[t1].[Id]
 FROM
 	[ParentRecord] [t1]
-
-BeforeExecute
--- SQLite.Classic.MPM SQLite.Classic SQLite
-
-DROP TABLE IF EXISTS [ChildRecord]
-
-BeforeExecute
--- SQLite.Classic.MPM SQLite.Classic SQLite
-
-DROP TABLE IF EXISTS [ParentRecord]
 

@@ -1,23 +1,6 @@
 ﻿BeforeExecute
 -- Sybase.Managed Sybase
 
-IF (OBJECT_ID(N'TableTest1064') IS NOT NULL)
-	DROP TABLE [TableTest1064]
-
-BeforeExecute
--- Sybase.Managed Sybase
-
-IF (OBJECT_ID(N'TableTest1064') IS NULL)
-	EXECUTE('
-		CREATE TABLE [TableTest1064]
-		(
-			[Column1064] Int NOT NULL
-		)
-	')
-
-BeforeExecute
--- Sybase.Managed Sybase
-
 sp_configure 'allow updates', 1
 
 BeforeExecute
@@ -51,10 +34,4 @@ BeforeExecute
 -- Sybase.Managed Sybase
 
 sp_configure 'allow updates', 0
-
-BeforeExecute
--- Sybase.Managed Sybase
-
-IF (OBJECT_ID(N'TableTest1064') IS NOT NULL)
-	DROP TABLE [TableTest1064]
 

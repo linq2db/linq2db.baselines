@@ -1,24 +1,6 @@
 ﻿BeforeExecute
 -- SqlServer.2008
 
-IF (OBJECT_ID(N'[CacheTestTable]', N'U') IS NOT NULL)
-	DROP TABLE [CacheTestTable]
-
-BeforeExecute
--- SqlServer.2008
-
-IF (OBJECT_ID(N'[CacheTestTable]', N'U') IS NULL)
-	CREATE TABLE [CacheTestTable]
-	(
-		[Id]    Int NOT NULL,
-		[Value] Int NOT NULL,
-
-		CONSTRAINT [PK_CacheTestTable] PRIMARY KEY CLUSTERED ([Id])
-	)
-
-BeforeExecute
--- SqlServer.2008
-
 MERGE INTO [CacheTestTable] [Target]
 USING (VALUES
 	(1,1), (2,2)
@@ -99,10 +81,4 @@ FROM
 	[CacheTestTable] [t1]
 ORDER BY
 	[t1].[Id]
-
-BeforeExecute
--- SqlServer.2008
-
-IF (OBJECT_ID(N'[CacheTestTable]', N'U') IS NOT NULL)
-	DROP TABLE [CacheTestTable]
 

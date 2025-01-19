@@ -1,38 +1,6 @@
 ﻿BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
 
-DROP TABLE IF EXISTS `CteTable`
-
-BeforeExecute
--- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
-CREATE TABLE IF NOT EXISTS `CteTable`
-(
-	`Id`     INT NOT NULL,
-	`Value1` INT NOT NULL,
-	`Value2` INT NOT NULL,
-	`Value3` INT NOT NULL,
-	`Value4` INT NOT NULL,
-	`Value5` INT NOT NULL
-)
-
-BeforeExecute
--- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
-DROP TABLE IF EXISTS `CteChildTable`
-
-BeforeExecute
--- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
-CREATE TABLE IF NOT EXISTS `CteChildTable`
-(
-	`Id`    INT NOT NULL,
-	`Value` INT NOT NULL
-)
-
-BeforeExecute
--- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
 WITH `CTE_1` (`Value4`)
 AS
 (
@@ -94,14 +62,4 @@ SELECT
 FROM
 	`CTE_1` `t1`
 		LEFT JOIN `CteChildTable` `d` ON `t1`.`Value4` = `d`.`Id`
-
-BeforeExecute
--- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
-DROP TABLE IF EXISTS `CteChildTable`
-
-BeforeExecute
--- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
-DROP TABLE IF EXISTS `CteTable`
 

@@ -1,92 +1,6 @@
 ﻿BeforeExecute
 -- ClickHouse.Client ClickHouse
 
-DROP TABLE IF EXISTS Issue4723Table1
-
-BeforeExecute
--- ClickHouse.Client ClickHouse
-
-CREATE TABLE IF NOT EXISTS Issue4723Table1
-(
-	Id               Int32,
-	ExpressionMethod Nullable(String)
-)
-ENGINE = Memory()
-
-BeforeExecute
--- ClickHouse.Client ClickHouse
-
-INSERT INTO Issue4723Table1
-(
-	Id,
-	ExpressionMethod
-)
-VALUES
-(
-	1,
-	NULL
-)
-
-BeforeExecute
--- ClickHouse.Client ClickHouse
-
-DROP TABLE IF EXISTS Issue4723Table2
-
-BeforeExecute
--- ClickHouse.Client ClickHouse
-
-CREATE TABLE IF NOT EXISTS Issue4723Table2
-(
-	Id    Int32,
-	Value Nullable(String)
-)
-ENGINE = Memory()
-
-BeforeExecute
--- ClickHouse.Client ClickHouse
-
-INSERT INTO Issue4723Table2
-(
-	Id,
-	Value
-)
-VALUES
-(
-	1,
-	'Value 1'
-)
-
-BeforeExecute
--- ClickHouse.Client ClickHouse
-
-INSERT INTO Issue4723Table2
-(
-	Id,
-	Value
-)
-VALUES
-(
-	1,
-	'Value 1'
-)
-
-BeforeExecute
--- ClickHouse.Client ClickHouse
-
-INSERT INTO Issue4723Table2
-(
-	Id,
-	Value
-)
-VALUES
-(
-	2,
-	'Value 2'
-)
-
-BeforeExecute
--- ClickHouse.Client ClickHouse
-
 SELECT
 	t2.Id,
 	t1.ExpressionMethod
@@ -100,14 +14,4 @@ FROM
 			FROM
 				Issue4723Table2 se
 		) t1 ON t1.Id = t2.Id AND t1.rn <= 1
-
-BeforeExecute
--- ClickHouse.Client ClickHouse
-
-DROP TABLE IF EXISTS Issue4723Table2
-
-BeforeExecute
--- ClickHouse.Client ClickHouse
-
-DROP TABLE IF EXISTS Issue4723Table1
 

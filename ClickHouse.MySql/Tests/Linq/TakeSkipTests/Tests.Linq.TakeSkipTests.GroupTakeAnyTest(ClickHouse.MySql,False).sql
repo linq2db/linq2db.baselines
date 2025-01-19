@@ -1,33 +1,6 @@
 ﻿BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
-DROP TABLE IF EXISTS TakeSkipClass
-
-BeforeExecute
--- ClickHouse.MySql ClickHouse
-
-CREATE TABLE IF NOT EXISTS TakeSkipClass
-(
-	Value Nullable(String)
-)
-ENGINE = Memory()
-
-BeforeExecute
--- ClickHouse.MySql ClickHouse
-
-INSERT INTO TakeSkipClass
-(
-	Value
-)
-VALUES
-('PIPPO'),
-('PLUTO'),
-('PLUTO'),
-('BOLTO')
-
-BeforeExecute
--- ClickHouse.MySql ClickHouse
-
 SELECT
 	EXISTS(
 		SELECT
@@ -40,9 +13,4 @@ SELECT
 			COUNT(*) > 1
 		LIMIT 1
 	)
-
-BeforeExecute
--- ClickHouse.MySql ClickHouse
-
-DROP TABLE IF EXISTS TakeSkipClass
 

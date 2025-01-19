@@ -1,26 +1,6 @@
 ﻿BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
 
-DROP TABLE IF EXISTS "TPHTable"
-
-BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
-
-CREATE TABLE IF NOT EXISTS "TPHTable"
-(
-	"Id"            Int        NOT NULL,
-	"Discriminator" Int        NOT NULL,
-	"Value1"        text           NULL,
-	"Value2"        text           NULL,
-	"Value3"        text           NULL,
-	"NullableBool"  VarChar(1)     NULL,
-
-	CONSTRAINT "PK_TPHTable" PRIMARY KEY ("Id")
-)
-
-BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
-
 INSERT INTO "TPHTable"
 (
 	"Id",
@@ -145,9 +125,4 @@ FROM
 WHERE
 	x."Value3" = 'Str3'
 LIMIT 2
-
-BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
-
-DROP TABLE IF EXISTS "TPHTable"
 

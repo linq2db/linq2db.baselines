@@ -1,43 +1,6 @@
 ﻿BeforeExecute
 -- PostgreSQL.15 PostgreSQL
 
-DROP TABLE IF EXISTS "ConditionalData"
-
-BeforeExecute
--- PostgreSQL.15 PostgreSQL
-
-CREATE TABLE IF NOT EXISTS "ConditionalData"
-(
-	"Id"         Int  NOT NULL,
-	"StringProp" text     NULL,
-
-	CONSTRAINT "PK_ConditionalData" PRIMARY KEY ("Id")
-)
-
-BeforeExecute
--- PostgreSQL.15 PostgreSQL
-
-INSERT INTO "ConditionalData"
-(
-	"Id",
-	"StringProp"
-)
-VALUES
-(1,'String1'),
-(2,'String2'),
-(3,NULL),
-(4,'String4'),
-(5,'String5'),
-(6,NULL),
-(7,'String7'),
-(8,'String8'),
-(9,NULL),
-(10,'String10'),
-(11,'-1')
-
-BeforeExecute
--- PostgreSQL.15 PostgreSQL
-
 SELECT
 	x."Id",
 	CASE
@@ -74,9 +37,4 @@ SELECT
 	t1."StringProp"
 FROM
 	"ConditionalData" t1
-
-BeforeExecute
--- PostgreSQL.15 PostgreSQL
-
-DROP TABLE IF EXISTS "ConditionalData"
 

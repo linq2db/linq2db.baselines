@@ -1,33 +1,5 @@
 ﻿BeforeExecute
 -- Access.Ace.OleDb AccessOleDb
-
-DROP TABLE [Names]
-
-BeforeExecute
--- Access.Ace.OleDb AccessOleDb
-
-CREATE TABLE [Names]
-(
-	[Id]   Int           NOT NULL,
-	[Name] NVarChar(255)     NULL
-)
-
-BeforeExecute
--- Access.Ace.OleDb AccessOleDb
-
-DROP TABLE [Addresses]
-
-BeforeExecute
--- Access.Ace.OleDb AccessOleDb
-
-CREATE TABLE [Addresses]
-(
-	[Id]   Int           NOT NULL,
-	[Text] NVarChar(255)     NULL
-)
-
-BeforeExecute
--- Access.Ace.OleDb AccessOleDb
 DECLARE @Id Integer -- Int32
 SET     @Id = 1
 DECLARE @Name VarWChar(5) -- String
@@ -110,14 +82,4 @@ FROM
 	[Names] [tupledArg]
 ORDER BY
 	[tupledArg].[Id]
-
-BeforeExecute
--- Access.Ace.OleDb AccessOleDb
-
-DROP TABLE [Addresses]
-
-BeforeExecute
--- Access.Ace.OleDb AccessOleDb
-
-DROP TABLE [Names]
 

@@ -1,42 +1,5 @@
 ﻿BeforeExecute
 -- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
-
-DROP TABLE IF EXISTS "Issue3757Level1"
-
-BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
-
-CREATE TABLE IF NOT EXISTS "Issue3757Level1"
-(
-	"ID"     Int     NOT NULL,
-	"ValS"   text        NULL,
-	"ValB"   Boolean     NULL,
-	"ValInt" Int         NULL,
-
-	CONSTRAINT "PK_Issue3757Level1" PRIMARY KEY ("ID")
-)
-
-BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
-
-DROP TABLE IF EXISTS "Issue3757Level2"
-
-BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
-
-CREATE TABLE IF NOT EXISTS "Issue3757Level2"
-(
-	"ID"       Int     NOT NULL,
-	"ParentId" Int     NOT NULL,
-	"ValS"     text        NULL,
-	"ValB"     Boolean     NULL,
-	"ValInt"   Int         NULL,
-
-	CONSTRAINT "PK_Issue3757Level2" PRIMARY KEY ("ID")
-)
-
-BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
 DECLARE @TypedProperty Text(4) -- String
 SET     @TypedProperty = '%de%'
 
@@ -88,14 +51,4 @@ WHERE
 			it."ID" = c_1."ParentId" AND it."ValS" LIKE :TypedProperty ESCAPE '~' AND
 			it."ValS" IS NOT NULL
 	)
-
-BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
-
-DROP TABLE IF EXISTS "Issue3757Level2"
-
-BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
-
-DROP TABLE IF EXISTS "Issue3757Level1"
 

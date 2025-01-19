@@ -1,21 +1,5 @@
 ﻿BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014
-
-IF (OBJECT_ID(N'[CreateTableTypes]', N'U') IS NOT NULL)
-	DROP TABLE [CreateTableTypes]
-
-BeforeExecute
--- SqlServer.2014.MS SqlServer.2014
-
-IF (OBJECT_ID(N'[CreateTableTypes]', N'U') IS NULL)
-	CREATE TABLE [CreateTableTypes]
-	(
-		[String] NVarChar(4000)     NULL,
-		[Id]     Int            NOT NULL
-	)
-
-BeforeExecute
--- SqlServer.2014.MS SqlServer.2014
 DECLARE @Id Int -- Int32
 SET     @Id = 1
 DECLARE @String NVarChar(4000) -- String
@@ -60,10 +44,4 @@ FROM
 	[CreateTableTypes] [t1]
 ORDER BY
 	[t1].[Id]
-
-BeforeExecute
--- SqlServer.2014.MS SqlServer.2014
-
-IF (OBJECT_ID(N'[CreateTableTypes]', N'U') IS NOT NULL)
-	DROP TABLE [CreateTableTypes]
 

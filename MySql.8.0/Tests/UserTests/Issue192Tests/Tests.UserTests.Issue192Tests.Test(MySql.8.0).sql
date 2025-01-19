@@ -1,20 +1,5 @@
 ﻿BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
-DROP TABLE IF EXISTS `TypeConvertTable`
-
-BeforeExecute
--- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
-CREATE TABLE IF NOT EXISTS `TypeConvertTable`
-(
-	`Name`      VARCHAR(50) NOT NULL,
-	`BoolValue` CHAR(255)   NOT NULL,
-	`GuidValue` VARCHAR(50)     NULL
-)
-
-BeforeExecute
--- MySql.8.0 MySql.8.0.MySql.Data MySql80
 DECLARE @Name VarChar(11) -- String
 SET     @Name = 'NotVerified'
 DECLARE @BoolValue String -- AnsiStringFixedLength
@@ -248,9 +233,4 @@ FROM
 WHERE
 	`t1`.`GuidValue` = @GuidValue
 LIMIT 1
-
-BeforeExecute
--- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
-DROP TABLE IF EXISTS `TypeConvertTable`
 

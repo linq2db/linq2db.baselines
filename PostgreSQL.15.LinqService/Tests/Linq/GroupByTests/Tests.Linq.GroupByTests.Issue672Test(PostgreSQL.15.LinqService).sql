@@ -1,23 +1,5 @@
 ﻿BeforeExecute
 -- PostgreSQL.15 PostgreSQL
-
-DROP TABLE IF EXISTS "Stone"
-
-BeforeExecute
--- PostgreSQL.15 PostgreSQL
-
-CREATE TABLE IF NOT EXISTS "Stone"
-(
-	"Id"           SERIAL   NOT NULL,
-	"Name"         text     NOT NULL,
-	"Enabled"      Boolean      NULL,
-	"ImageFullUrl" text         NULL,
-
-	CONSTRAINT "PK_Stone" PRIMARY KEY ("Id")
-)
-
-BeforeExecute
--- PostgreSQL.15 PostgreSQL
 DECLARE @Name Text(6) -- String
 SET     @Name = 'group1'
 DECLARE @Enabled Boolean
@@ -117,9 +99,4 @@ FROM
 				"sG_1"."Name" = s."Name"
 			LIMIT 1
 		) t1 ON 1=1
-
-BeforeExecute
--- PostgreSQL.15 PostgreSQL
-
-DROP TABLE IF EXISTS "Stone"
 

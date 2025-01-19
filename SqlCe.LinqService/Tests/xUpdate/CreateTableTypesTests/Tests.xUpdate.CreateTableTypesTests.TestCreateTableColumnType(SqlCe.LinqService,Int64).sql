@@ -1,19 +1,5 @@
 ﻿BeforeExecute
 -- SqlCe
-
-DROP TABLE [CreateTableTypes]
-
-BeforeExecute
--- SqlCe
-
-CREATE TABLE [CreateTableTypes]
-(
-	[Id]    Int    NOT NULL,
-	[Int64] BigInt NOT NULL
-)
-
-BeforeExecute
--- SqlCe
 DECLARE @Id Int -- Int32
 SET     @Id = 1
 DECLARE @Int64 BigInt -- Int64
@@ -58,9 +44,4 @@ FROM
 	[CreateTableTypes] [t1]
 ORDER BY
 	[t1].[Id]
-
-BeforeExecute
--- SqlCe
-
-DROP TABLE [CreateTableTypes]
 

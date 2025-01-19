@@ -1,29 +1,5 @@
 ﻿BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-
-DROP TABLE [ValueConversion]
-
-BeforeExecute
--- Access.Ace.Odbc AccessODBC
-
-CREATE TABLE [ValueConversion]
-(
-	[Id]                      Int           NOT NULL,
-	[Value1]                  NVarChar(200)     NULL,
-	[Value2]                  NVarChar(200)     NULL,
-	[Enum]                    NVarChar(50)  NOT NULL,
-	[EnumNullable]            VarChar(50)       NULL,
-	[EnumWithNull]            VarChar(50)       NULL,
-	[EnumWithNullDeclarative] VarChar(50)       NULL,
-	[BoolValue]               VarChar(1)    NOT NULL,
-	[AnotherBoolValue]        VarChar(1)    NOT NULL,
-	[DateTimeNullable]        DateTime          NULL,
-
-	CONSTRAINT [PK_ValueConversion] PRIMARY KEY CLUSTERED ([Id])
-)
-
-BeforeExecute
--- Access.Ace.Odbc AccessODBC
 DECLARE @iteration Int -- Int32
 SET     @iteration = 1
 DECLARE @Value1 NVarChar(2) -- String
@@ -76,9 +52,4 @@ FROM
 	[ValueConversion] [e]
 WHERE
 	[e].[Id] = ?
-
-BeforeExecute
--- Access.Ace.Odbc AccessODBC
-
-DROP TABLE [ValueConversion]
 

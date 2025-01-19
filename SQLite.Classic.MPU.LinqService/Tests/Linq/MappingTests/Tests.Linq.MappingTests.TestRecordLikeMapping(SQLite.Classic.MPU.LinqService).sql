@@ -1,22 +1,5 @@
 ﻿BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-
-DROP TABLE IF EXISTS [RecordLike]
-
-BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
-
-CREATE TABLE IF NOT EXISTS [RecordLike]
-(
-	[Id]        INTEGER       NOT NULL,
-	[BaseValue] NVarChar(255)     NULL,
-	[Value]     NVarChar(255)     NULL,
-
-	CONSTRAINT [PK_RecordLike] PRIMARY KEY ([Id])
-)
-
-BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
 DECLARE @Id  -- Int32
 SET     @Id = 1
 DECLARE @BaseValue NVarChar(7) -- String
@@ -82,9 +65,4 @@ FROM
 	[RecordLike] [r]
 ORDER BY
 	[r].[Id]
-
-BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
-
-DROP TABLE IF EXISTS [RecordLike]
 

@@ -1,22 +1,6 @@
 ﻿BeforeExecute
 -- SQLite.MS SQLite
 
-DROP TABLE IF EXISTS [Issue1403Tests_2]
-
-BeforeExecute
--- SQLite.MS SQLite
-
-CREATE TABLE IF NOT EXISTS [Issue1403Tests_2]
-(
-	[event_id]          INTEGER       NOT NULL,
-	[event_description] NVarChar(255) NOT NULL,
-
-	CONSTRAINT [PK_Issue1403Tests_2] PRIMARY KEY ([event_id])
-)
-
-BeforeExecute
--- SQLite.MS SQLite
-
 INSERT INTO [Issue1403Tests_2]
 (
 	[event_id],
@@ -37,9 +21,4 @@ SELECT
 FROM
 	[Issue1403Tests_2] [t1]
 LIMIT 1
-
-BeforeExecute
--- SQLite.MS SQLite
-
-DROP TABLE IF EXISTS [Issue1403Tests_2]
 

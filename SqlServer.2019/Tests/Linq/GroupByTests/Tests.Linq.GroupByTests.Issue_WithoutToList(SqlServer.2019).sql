@@ -1,21 +1,5 @@
 ﻿BeforeExecute
 -- SqlServer.2019
-
-DROP TABLE IF EXISTS [TestAggregateTable]
-
-BeforeExecute
--- SqlServer.2019
-
-IF (OBJECT_ID(N'[TestAggregateTable]', N'U') IS NULL)
-	CREATE TABLE [TestAggregateTable]
-	(
-		[Id]          UniqueIdentifier NOT NULL,
-		[ReferenceId] UniqueIdentifier     NULL,
-		[DateTime]    DateTimeOffset       NULL
-	)
-
-BeforeExecute
--- SqlServer.2019
 DECLARE @Id UniqueIdentifier -- Guid
 SET     @Id = 'bc7b663d-0fde-4327-8f92-5d8cc3a11d11'
 DECLARE @ReferenceId UniqueIdentifier -- Guid
@@ -127,9 +111,4 @@ FROM
 GROUP BY
 	[a_Reference].[Id],
 	[group_1].[ReferenceId]
-
-BeforeExecute
--- SqlServer.2019
-
-DROP TABLE IF EXISTS [TestAggregateTable]
 

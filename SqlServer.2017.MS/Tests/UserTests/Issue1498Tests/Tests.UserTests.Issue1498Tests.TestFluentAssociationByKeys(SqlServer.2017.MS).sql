@@ -1,37 +1,5 @@
 ﻿BeforeExecute
 -- SqlServer.2017.MS SqlServer.2017
-
-DROP TABLE IF EXISTS [Topic]
-
-BeforeExecute
--- SqlServer.2017.MS SqlServer.2017
-
-IF (OBJECT_ID(N'[Topic]', N'U') IS NULL)
-	CREATE TABLE [Topic]
-	(
-		[Id]    Int            NOT NULL,
-		[Title] NVarChar(4000)     NULL,
-		[Text]  NVarChar(4000)     NULL
-	)
-
-BeforeExecute
--- SqlServer.2017.MS SqlServer.2017
-
-DROP TABLE IF EXISTS [Message]
-
-BeforeExecute
--- SqlServer.2017.MS SqlServer.2017
-
-IF (OBJECT_ID(N'[Message]', N'U') IS NULL)
-	CREATE TABLE [Message]
-	(
-		[Id]      Int            NOT NULL,
-		[TopicId] Int            NOT NULL,
-		[Text]    NVarChar(4000)     NULL
-	)
-
-BeforeExecute
--- SqlServer.2017.MS SqlServer.2017
 DECLARE @Id Int -- Int32
 SET     @Id = 6
 DECLARE @Title NVarChar(4000) -- String
@@ -85,13 +53,3 @@ WHERE
 
 BeforeExecute
 DisposeTransaction
-BeforeExecute
--- SqlServer.2017.MS SqlServer.2017
-
-DROP TABLE IF EXISTS [Message]
-
-BeforeExecute
--- SqlServer.2017.MS SqlServer.2017
-
-DROP TABLE IF EXISTS [Topic]
-

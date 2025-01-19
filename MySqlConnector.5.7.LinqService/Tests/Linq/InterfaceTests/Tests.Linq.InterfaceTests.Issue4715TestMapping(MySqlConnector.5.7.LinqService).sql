@@ -1,22 +1,5 @@
 ﻿BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-
-DROP TABLE IF EXISTS `Issue4715Table`
-
-BeforeExecute
--- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-
-CREATE TABLE IF NOT EXISTS `Issue4715Table`
-(
-	`Id`    INT NOT NULL,
-	`Prop1` INT NOT NULL,
-	`Prop2` INT NOT NULL,
-	`Prop3` INT NOT NULL,
-	`Prop4` INT NOT NULL
-)
-
-BeforeExecute
--- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 DECLARE @Id Int32
 SET     @Id = 1
 DECLARE @ImplicitPropertyRW Int32
@@ -55,9 +38,4 @@ SELECT
 FROM
 	`Issue4715Table` `t1`
 LIMIT 2
-
-BeforeExecute
--- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-
-DROP TABLE IF EXISTS `Issue4715Table`
 

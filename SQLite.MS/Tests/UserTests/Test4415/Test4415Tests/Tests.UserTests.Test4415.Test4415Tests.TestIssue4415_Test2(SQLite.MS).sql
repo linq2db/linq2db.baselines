@@ -1,31 +1,6 @@
 ﻿BeforeExecute
 -- SQLite.MS SQLite
 
-DROP TABLE IF EXISTS [Common_Language]
-
-BeforeExecute
--- SQLite.MS SQLite
-
-CREATE TABLE IF NOT EXISTS [Common_Language]
-(
-	[LanguageID] NVarChar(255) NOT NULL,
-	[Name]       NVarChar(255)     NULL
-)
-
-BeforeExecute
--- SQLite.MS SQLite
-
-INSERT INTO [Common_Language]
-(
-	[LanguageID],
-	[Name]
-)
-VALUES
-('de','deutsch')
-
-BeforeExecute
--- SQLite.MS SQLite
-
 SELECT
 	[x].[LanguageID],
 	[x].[Name]
@@ -40,9 +15,4 @@ WHERE
 		GROUP BY
 			[x_1].[Name]
 	)
-
-BeforeExecute
--- SQLite.MS SQLite
-
-DROP TABLE IF EXISTS [Common_Language]
 

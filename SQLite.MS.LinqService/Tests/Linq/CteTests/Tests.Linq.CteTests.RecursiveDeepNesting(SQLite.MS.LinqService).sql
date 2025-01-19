@@ -1,20 +1,6 @@
 ﻿BeforeExecute
 -- SQLite.MS SQLite
 
-DROP TABLE IF EXISTS [HierarchyTree]
-
-BeforeExecute
--- SQLite.MS SQLite
-
-CREATE TABLE IF NOT EXISTS [HierarchyTree]
-(
-	[Id]       INTEGER NOT NULL,
-	[ParentId] INTEGER     NULL
-)
-
-BeforeExecute
--- SQLite.MS SQLite
-
 WITH [CTE_1] ([Id])
 AS
 (
@@ -59,9 +45,4 @@ FROM
 		INNER JOIN [HierarchyTree] [data2] ON [data2].[Id] = [t4].[Id]
 		INNER JOIN [HierarchyTree] [data3] ON [data3].[Id] = [t4].[Id]
 		INNER JOIN [HierarchyTree] [data4] ON [data4].[Id] = [t4].[Id]
-
-BeforeExecute
--- SQLite.MS SQLite
-
-DROP TABLE IF EXISTS [HierarchyTree]
 

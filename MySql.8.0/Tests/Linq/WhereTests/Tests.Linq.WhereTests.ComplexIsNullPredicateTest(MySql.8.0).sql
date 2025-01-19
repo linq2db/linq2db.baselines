@@ -1,35 +1,6 @@
 ﻿BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
 
-DROP TABLE IF EXISTS `ComplexPredicate`
-
-BeforeExecute
--- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
-CREATE TABLE IF NOT EXISTS `ComplexPredicate`
-(
-	`Id`    INT           NOT NULL,
-	`Value` VARCHAR(4000)     NULL
-)
-
-BeforeExecute
--- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
-INSERT INTO `ComplexPredicate`
-(
-	`Id`,
-	`Value`
-)
-VALUES
-(1,NULL),
-(2,'other'),
-(3,'123'),
-(4,'test'),
-(5,'1')
-
-BeforeExecute
--- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
 SELECT
 	`r`.`Id`,
 	`r`.`Value`
@@ -55,9 +26,4 @@ SELECT
 	`t1`.`Value`
 FROM
 	`ComplexPredicate` `t1`
-
-BeforeExecute
--- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
-DROP TABLE IF EXISTS `ComplexPredicate`
 

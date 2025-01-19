@@ -1,21 +1,5 @@
 ﻿BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-
-DROP TABLE [Issue1438]
-
-BeforeExecute
--- Access.Ace.Odbc AccessODBC
-
-CREATE TABLE [Issue1438]
-(
-	[Id]  Int  NOT NULL IDENTITY,
-	[Has] Bit  NOT NULL,
-
-	CONSTRAINT [PK_Issue1438] PRIMARY KEY CLUSTERED ([Id])
-)
-
-BeforeExecute
--- Access.Ace.Odbc AccessODBC
 DECLARE @Has Bit -- Boolean
 SET     @Has = True
 
@@ -45,9 +29,4 @@ FROM
 	[Issue1438] [t1]
 WHERE
 	[t1].[Id] = ?
-
-BeforeExecute
--- Access.Ace.Odbc AccessODBC
-
-DROP TABLE [Issue1438]
 

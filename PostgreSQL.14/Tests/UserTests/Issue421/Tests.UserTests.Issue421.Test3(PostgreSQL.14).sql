@@ -1,21 +1,5 @@
 ﻿BeforeExecute
 -- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
-
-DROP TABLE IF EXISTS "BlobClass"
-
-BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
-
-CREATE TABLE IF NOT EXISTS "BlobClass"
-(
-	"Id"        Int   NOT NULL,
-	"BlobValue" bytea     NULL,
-
-	CONSTRAINT "PK_BlobClass" PRIMARY KEY ("Id")
-)
-
-BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
 DECLARE @Id Integer -- Int32
 SET     @Id = 1
 DECLARE @BlobValue Bytea(3) -- Binary
@@ -55,9 +39,4 @@ FROM
 WHERE
 	t1."Id" = 1
 LIMIT 1
-
-BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
-
-DROP TABLE IF EXISTS "BlobClass"
 

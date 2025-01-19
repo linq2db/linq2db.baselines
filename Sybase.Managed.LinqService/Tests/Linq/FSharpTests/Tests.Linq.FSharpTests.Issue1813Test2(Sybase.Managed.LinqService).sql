@@ -1,41 +1,5 @@
 ﻿BeforeExecute
 -- Sybase.Managed Sybase
-
-IF (OBJECT_ID(N'Names') IS NOT NULL)
-	DROP TABLE [Names]
-
-BeforeExecute
--- Sybase.Managed Sybase
-
-IF (OBJECT_ID(N'Names') IS NULL)
-	EXECUTE('
-		CREATE TABLE [Names]
-		(
-			[Id]   Int           NOT NULL,
-			[Name] NVarChar(255)     NULL
-		)
-	')
-
-BeforeExecute
--- Sybase.Managed Sybase
-
-IF (OBJECT_ID(N'Addresses') IS NOT NULL)
-	DROP TABLE [Addresses]
-
-BeforeExecute
--- Sybase.Managed Sybase
-
-IF (OBJECT_ID(N'Addresses') IS NULL)
-	EXECUTE('
-		CREATE TABLE [Addresses]
-		(
-			[Id]   Int           NOT NULL,
-			[Text] NVarChar(255)     NULL
-		)
-	')
-
-BeforeExecute
--- Sybase.Managed Sybase
 DECLARE @Id Integer -- Int32
 SET     @Id = 1
 DECLARE @Name UniVarChar(5) -- String
@@ -114,16 +78,4 @@ FROM
 	[Names] [tupledArg]
 ORDER BY
 	[tupledArg].[Id]
-
-BeforeExecute
--- Sybase.Managed Sybase
-
-IF (OBJECT_ID(N'Addresses') IS NOT NULL)
-	DROP TABLE [Addresses]
-
-BeforeExecute
--- Sybase.Managed Sybase
-
-IF (OBJECT_ID(N'Names') IS NOT NULL)
-	DROP TABLE [Names]
 

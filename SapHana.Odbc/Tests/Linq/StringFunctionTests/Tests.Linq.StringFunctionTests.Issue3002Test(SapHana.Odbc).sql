@@ -1,21 +1,6 @@
 ﻿BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
-DROP TABLE "SampleClass"
-
-BeforeExecute
--- SapHana.Odbc SapHanaOdbc
-
-CREATE COLUMN TABLE "SampleClass"
-(
-	"Id"     Integer       NOT NULL,
-	"Value"  NVarChar(50)      NULL,
-	"Value2" NVarChar(255)     NULL
-)
-
-BeforeExecute
--- SapHana.Odbc SapHanaOdbc
-
 INSERT INTO "SampleClass"
 (
 	"Id",
@@ -152,9 +137,4 @@ FROM
 	"SampleClass" "sampleClass_1"
 WHERE
 	"sampleClass_1"."Value" = ? OR "sampleClass_1"."Value2" LIKE ? ESCAPE '~'
-
-BeforeExecute
--- SapHana.Odbc SapHanaOdbc
-
-DROP TABLE "SampleClass"
 

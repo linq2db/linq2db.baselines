@@ -1,24 +1,6 @@
 ﻿BeforeExecute
 -- PostgreSQL.15 PostgreSQL
 
-DROP TABLE IF EXISTS "UIntTable"
-
-BeforeExecute
--- PostgreSQL.15 PostgreSQL
-
-CREATE TABLE IF NOT EXISTS "UIntTable"
-(
-	"Field16"  Int         NOT NULL,
-	"Field32"  BigInt      NOT NULL,
-	"Field64"  decimal(20) NOT NULL,
-	"Field16N" Int             NULL,
-	"Field32N" BigInt          NULL,
-	"Field64N" decimal(20)     NULL
-)
-
-BeforeExecute
--- PostgreSQL.15 PostgreSQL
-
 INSERT INTO "UIntTable"
 (
 	"Field16",
@@ -313,9 +295,4 @@ BeforeExecute
 				WHERE
 					pg_constraint.contype = 'f'
 					AND this_schema.nspname NOT IN ('information_schema', 'pg_catalog')
-
-BeforeExecute
--- PostgreSQL.15 PostgreSQL
-
-DROP TABLE IF EXISTS "UIntTable"
 

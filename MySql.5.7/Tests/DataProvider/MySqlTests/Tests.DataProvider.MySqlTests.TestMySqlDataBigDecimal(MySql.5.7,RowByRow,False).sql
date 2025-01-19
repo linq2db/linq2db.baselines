@@ -1,21 +1,6 @@
 ﻿BeforeExecute
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
 
-DROP TABLE IF EXISTS `BigDecimalMySqlDataTable`
-
-BeforeExecute
--- MySql.5.7 MySql.5.7.MySql.Data MySql57
-
-CREATE TABLE IF NOT EXISTS `BigDecimalMySqlDataTable`
-(
-	`Id`       INT             NOT NULL,
-	`Decimal`  decimal(65, 30) NOT NULL,
-	`DecimalN` decimal(65, 30)     NULL
-)
-
-BeforeExecute
--- MySql.5.7 MySql.5.7.MySql.Data MySql57
-
 SELECT 12345678901234567890123456789012345.123456789012345678901234567891
 
 BeforeExecute
@@ -195,9 +180,4 @@ SELECT
 FROM
 	`BigDecimalMySqlDataTable` `t1`
 LIMIT 2
-
-BeforeExecute
--- MySql.5.7 MySql.5.7.MySql.Data MySql57
-
-DROP TABLE IF EXISTS `BigDecimalMySqlDataTable`
 

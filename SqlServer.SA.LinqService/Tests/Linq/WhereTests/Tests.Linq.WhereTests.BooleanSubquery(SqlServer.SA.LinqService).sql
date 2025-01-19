@@ -1,41 +1,6 @@
 ﻿BeforeExecute
 -- SqlServer.SA SqlServer.2019
 
-DROP TABLE IF EXISTS [WhereWithBool]
-
-BeforeExecute
--- SqlServer.SA SqlServer.2019
-
-IF (OBJECT_ID(N'[WhereWithBool]', N'U') IS NULL)
-	CREATE TABLE [WhereWithBool]
-	(
-		[Id]        Int NOT NULL,
-		[BoolValue] Bit NOT NULL,
-
-		CONSTRAINT [PK_WhereWithBool] PRIMARY KEY CLUSTERED ([Id])
-	)
-
-BeforeExecute
--- SqlServer.SA SqlServer.2019
-DECLARE @Id Int -- Int32
-SET     @Id = 1
-DECLARE @BoolValue Bit -- Boolean
-SET     @BoolValue = 1
-
-INSERT INTO [WhereWithBool]
-(
-	[Id],
-	[BoolValue]
-)
-VALUES
-(
-	@Id,
-	@BoolValue
-)
-
-BeforeExecute
--- SqlServer.SA SqlServer.2019
-
 SELECT
 	[t].[Id],
 	[t].[BoolValue]
@@ -44,9 +9,4 @@ FROM
 	[WhereWithBool] [x]
 WHERE
 	[x].[BoolValue] = 1 AND [x].[Id] = 1
-
-BeforeExecute
--- SqlServer.SA SqlServer.2019
-
-DROP TABLE IF EXISTS [WhereWithBool]
 

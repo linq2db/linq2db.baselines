@@ -1,40 +1,6 @@
 ﻿BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
-DROP TABLE IF EXISTS [CteChild]
-
-BeforeExecute
--- SQLite.Classic.MPM SQLite.Classic SQLite
-
-CREATE TABLE IF NOT EXISTS [CteChild]
-(
-	[ChildID]  INTEGER NOT NULL,
-	[ParentID] INTEGER NOT NULL
-)
-
-BeforeExecute
--- SQLite.Classic.MPM SQLite.Classic SQLite
-
-INSERT INTO [CteChild]
-(
-	[ChildID],
-	[ParentID]
-)
-VALUES
-(1000,0),
-(1001,1),
-(1002,2),
-(1003,3),
-(1004,4),
-(1005,5),
-(1006,6),
-(1007,7),
-(1008,8),
-(1009,9)
-
-BeforeExecute
--- SQLite.Classic.MPM SQLite.Classic SQLite
-
 WITH [CTE_1] ([ParentID])
 AS
 (
@@ -57,9 +23,4 @@ WHERE
 		WHERE
 			[CteChild].[ChildID] = [c_2].[ChildID] AND [CteChild].[ParentID] = [c_2].[ParentID]
 	)
-
-BeforeExecute
--- SQLite.Classic.MPM SQLite.Classic SQLite
-
-DROP TABLE IF EXISTS [CteChild]
 

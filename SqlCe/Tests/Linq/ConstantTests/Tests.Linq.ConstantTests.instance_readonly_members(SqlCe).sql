@@ -1,35 +1,5 @@
 ﻿BeforeExecute
 -- SqlCe
-
-DROP TABLE [TestConstantsData]
-
-BeforeExecute
--- SqlCe
-
-CREATE TABLE [TestConstantsData]
-(
-	[Id]                Int              NOT NULL,
-	[GuidValue]         UNIQUEIDENTIFIER NOT NULL,
-	[GuidNullableValue] UNIQUEIDENTIFIER     NULL,
-	[StringValue]       NVarChar(255)        NULL,
-
-	CONSTRAINT [PK_TestConstantsData] PRIMARY KEY ([Id])
-)
-
-BeforeExecute
--- SqlCe
-
-INSERT INTO [TestConstantsData]
-(
-	[Id],
-	[GuidValue],
-	[GuidNullableValue],
-	[StringValue]
-)
-SELECT 1,'bc7b663d-0fde-4327-8f92-5d8cc3a11d11','bc7b663d-0fde-4327-8f92-5d8cc3a11d11','StrValue'
-
-BeforeExecute
--- SqlCe
 DECLARE @Id Int -- Int32
 SET     @Id = 1
 DECLARE @InitOnlyId Int -- Int32
@@ -83,9 +53,4 @@ SELECT
 	[t1].[StringValue]
 FROM
 	[TestConstantsData] [t1]
-
-BeforeExecute
--- SqlCe
-
-DROP TABLE [TestConstantsData]
 

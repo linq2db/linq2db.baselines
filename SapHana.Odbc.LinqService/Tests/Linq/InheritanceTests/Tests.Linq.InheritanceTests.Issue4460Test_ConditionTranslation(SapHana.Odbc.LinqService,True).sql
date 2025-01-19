@@ -1,22 +1,5 @@
 ﻿BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-
-DROP TABLE "Base"
-
-BeforeExecute
--- SapHana.Odbc SapHanaOdbc
-
-CREATE COLUMN TABLE "Base"
-(
-	"Code"   NVarChar(255)     NULL,
-	"Id"     Integer       NOT NULL,
-	"Name"   NVarChar(255)     NULL,
-	"IsMale" TinyInt           NULL,
-	"Age"    Integer           NULL
-)
-
-BeforeExecute
--- SapHana.Odbc SapHanaOdbc
 DECLARE @Code NVarChar(5) -- String
 SET     @Code = 'Child'
 DECLARE @Id  -- Int32
@@ -85,9 +68,4 @@ WHERE
 	"e"."Id" = 0
 ORDER BY
 	"e"."Id"
-
-BeforeExecute
--- SapHana.Odbc SapHanaOdbc
-
-DROP TABLE "Base"
 

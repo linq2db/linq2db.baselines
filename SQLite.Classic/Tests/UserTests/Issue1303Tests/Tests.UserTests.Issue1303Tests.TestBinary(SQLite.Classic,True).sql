@@ -1,23 +1,6 @@
 ﻿BeforeExecute
 -- SQLite.Classic SQLite
 
-DROP TABLE IF EXISTS [Issue1303]
-
-BeforeExecute
--- SQLite.Classic SQLite
-
-CREATE TABLE IF NOT EXISTS [Issue1303]
-(
-	[ID]     INTEGER       NOT NULL,
-	[Array]  VarBinary(10)     NULL,
-	[Binary] VarBinary(10)     NULL,
-
-	CONSTRAINT [PK_Issue1303] PRIMARY KEY ([ID])
-)
-
-BeforeExecute
--- SQLite.Classic SQLite
-
 INSERT INTO [Issue1303]
 (
 	[ID],
@@ -69,9 +52,4 @@ FROM
 WHERE
 	[t1].[Binary] = X'0405'
 LIMIT 2
-
-BeforeExecute
--- SQLite.Classic SQLite
-
-DROP TABLE IF EXISTS [Issue1303]
 

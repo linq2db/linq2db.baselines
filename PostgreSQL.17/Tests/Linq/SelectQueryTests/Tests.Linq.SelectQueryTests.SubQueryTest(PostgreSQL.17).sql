@@ -1,31 +1,6 @@
 ﻿BeforeExecute
 -- PostgreSQL.17 PostgreSQL.15 PostgreSQL
 
-DROP TABLE IF EXISTS "SampleClass"
-
-BeforeExecute
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
-
-CREATE TABLE IF NOT EXISTS "SampleClass"
-(
-	"Id"    Int NOT NULL,
-	"Value" Int NOT NULL
-)
-
-BeforeExecute
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
-
-INSERT INTO "SampleClass"
-(
-	"Id",
-	"Value"
-)
-VALUES
-(1,100)
-
-BeforeExecute
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
-
 SELECT
 	t_1."Id",
 	t_1."Value",
@@ -53,9 +28,4 @@ FROM
 				) t1
 			LIMIT 1
 		) t2 ON 1=1
-
-BeforeExecute
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
-
-DROP TABLE IF EXISTS "SampleClass"
 

@@ -1,38 +1,6 @@
 ﻿BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
 
-DROP TABLE [Request]
-
-BeforeExecute
--- Access.Jet.OleDb AccessOleDb
-
-CREATE TABLE [Request]
-(
-	[Id] Int  NOT NULL IDENTITY,
-
-	CONSTRAINT [PK_Request] PRIMARY KEY CLUSTERED ([Id])
-)
-
-BeforeExecute
--- Access.Jet.OleDb AccessOleDb
-
-DROP TABLE [Metric]
-
-BeforeExecute
--- Access.Jet.OleDb AccessOleDb
-
-CREATE TABLE [Metric]
-(
-	[Id]        Int    NOT NULL IDENTITY,
-	[RequestId] Int    NOT NULL,
-	[Value]     Float      NULL,
-
-	CONSTRAINT [PK_Metric] PRIMARY KEY CLUSTERED ([Id])
-)
-
-BeforeExecute
--- Access.Jet.OleDb AccessOleDb
-
 SELECT
 	(
 		SELECT TOP 1
@@ -52,14 +20,4 @@ SELECT
 	)
 FROM
 	[Request] [a]
-
-BeforeExecute
--- Access.Jet.OleDb AccessOleDb
-
-DROP TABLE [Metric]
-
-BeforeExecute
--- Access.Jet.OleDb AccessOleDb
-
-DROP TABLE [Request]
 

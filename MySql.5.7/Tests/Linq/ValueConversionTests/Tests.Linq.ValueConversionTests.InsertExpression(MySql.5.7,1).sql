@@ -1,29 +1,5 @@
 ﻿BeforeExecute
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
-
-DROP TABLE IF EXISTS `ValueConversion`
-
-BeforeExecute
--- MySql.5.7 MySql.5.7.MySql.Data MySql57
-
-CREATE TABLE IF NOT EXISTS `ValueConversion`
-(
-	`Id`                      INT          NOT NULL,
-	`Value1`                  VARCHAR(200)     NULL,
-	`Value2`                  VARCHAR(200)     NULL,
-	`Enum`                    VARCHAR(50)  NOT NULL,
-	`EnumNullable`            VARCHAR(50)      NULL,
-	`EnumWithNull`            VARCHAR(50)      NULL,
-	`EnumWithNullDeclarative` VARCHAR(50)      NULL,
-	`BoolValue`               VARCHAR(1)   NOT NULL,
-	`AnotherBoolValue`        VARCHAR(1)   NOT NULL,
-	`DateTimeNullable`        DATETIME         NULL,
-
-	CONSTRAINT `PK_ValueConversion` PRIMARY KEY CLUSTERED (`Id`)
-)
-
-BeforeExecute
--- MySql.5.7 MySql.5.7.MySql.Data MySql57
 DECLARE @iteration Int32
 SET     @iteration = 1
 DECLARE @Value1 VarChar(2) -- String
@@ -77,9 +53,4 @@ FROM
 WHERE
 	`e`.`Id` = @iteration
 LIMIT 2
-
-BeforeExecute
--- MySql.5.7 MySql.5.7.MySql.Data MySql57
-
-DROP TABLE IF EXISTS `ValueConversion`
 

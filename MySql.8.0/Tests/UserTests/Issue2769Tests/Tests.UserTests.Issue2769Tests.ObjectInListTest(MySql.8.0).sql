@@ -1,20 +1,6 @@
 ﻿BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
 
-DROP TABLE IF EXISTS `SampleClass`
-
-BeforeExecute
--- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
-CREATE TABLE IF NOT EXISTS `SampleClass`
-(
-	`Id`        INT NOT NULL,
-	`NullValue` INT     NULL
-)
-
-BeforeExecute
--- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
 SELECT
 	`a_1`.`Id`,
 	`a_1`.`NullValue`
@@ -33,9 +19,4 @@ FROM
 WHERE
 	`a_1`.`Id` = 0 AND `a_1`.`KEYNUMB` = 0 OR `a_1`.`Id` = 1 AND `a_1`.`KEYNUMB` = 1 OR
 	`a_1`.`Id` = 2 AND `a_1`.`KEYNUMB` = 2
-
-BeforeExecute
--- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
-DROP TABLE IF EXISTS `SampleClass`
 

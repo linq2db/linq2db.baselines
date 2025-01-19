@@ -1,23 +1,5 @@
 ﻿BeforeExecute
 -- Access.Ace.OleDb AccessOleDb
-
-DROP TABLE [TestInsertOrReplaceTable]
-
-BeforeExecute
--- Access.Ace.OleDb AccessOleDb
-
-CREATE TABLE [TestInsertOrReplaceTable]
-(
-	[ID]         Int           NOT NULL,
-	[FirstName]  NVarChar(255)     NULL,
-	[LastName]   NVarChar(255)     NULL,
-	[MiddleName] NVarChar(255)     NULL,
-
-	CONSTRAINT [PK_TestInsertOrReplaceTable] PRIMARY KEY CLUSTERED ([ID])
-)
-
-BeforeExecute
--- Access.Ace.OleDb AccessOleDb
 DECLARE @FirstName VarWChar(27) -- String
 SET     @FirstName = 'InsertOrReplaceColumnFilter'
 DECLARE @LastName VarWChar(8) -- String
@@ -108,9 +90,4 @@ FROM
 	[TestInsertOrReplaceTable] [x]
 WHERE
 	[x].[FirstName] = @FirstName
-
-BeforeExecute
--- Access.Ace.OleDb AccessOleDb
-
-DROP TABLE [TestInsertOrReplaceTable]
 

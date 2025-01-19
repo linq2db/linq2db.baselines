@@ -1,25 +1,5 @@
 ﻿BeforeExecute
 -- Informix.DB2 Informix
-
-DROP TABLE IF EXISTS TPHTable
-
-BeforeExecute
--- Informix.DB2 Informix
-
-CREATE TABLE IF NOT EXISTS TPHTable
-(
-	Id            Int          NOT NULL,
-	Discriminator Int          NOT NULL,
-	Value1        NVarChar(50)     NULL,
-	Value2        NVarChar(50)     NULL,
-	Value3        NVarChar(50)     NULL,
-	NullableBool  VarChar(1)       NULL,
-
-	PRIMARY KEY (Id)
-)
-
-BeforeExecute
--- Informix.DB2 Informix
 DECLARE @Id Integer(4) -- Int32
 SET     @Id = 1
 DECLARE @Discriminator Integer(4) -- Int32
@@ -192,9 +172,4 @@ FROM
 	TPHTable x
 WHERE
 	x.Value3 = 'Str3'
-
-BeforeExecute
--- Informix.DB2 Informix
-
-DROP TABLE IF EXISTS TPHTable
 

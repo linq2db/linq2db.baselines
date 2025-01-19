@@ -1,35 +1,5 @@
 ﻿BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014
-
-IF (OBJECT_ID(N'[GuidTable]', N'U') IS NOT NULL)
-	DROP TABLE [GuidTable]
-
-BeforeExecute
--- SqlServer.2014.MS SqlServer.2014
-
-IF (OBJECT_ID(N'[GuidTable]', N'U') IS NULL)
-	CREATE TABLE [GuidTable]
-	(
-		[Id]             Int              NOT NULL,
-		[Column]         UniqueIdentifier NOT NULL,
-		[ColumnNullable] UniqueIdentifier     NULL
-	)
-
-BeforeExecute
--- SqlServer.2014.MS SqlServer.2014
-
-INSERT INTO [GuidTable]
-(
-	[Id],
-	[Column],
-	[ColumnNullable]
-)
-VALUES
-(1,'bc7b663d-0fde-4327-8f92-5d8cc3a11d11',NULL),
-(2,'a948600d-de21-4f74-8ac2-9516b287076e','bd3973a5-4323-4dd8-9f4f-df9f93e2a627')
-
-BeforeExecute
--- SqlServer.2014.MS SqlServer.2014
 DECLARE @Column UniqueIdentifier -- Guid
 SET     @Column = 'a948600d-de21-4f74-8ac2-9516b287076e'
 DECLARE @ColumnNullable UniqueIdentifier -- Guid
@@ -173,10 +143,4 @@ FROM
 	[GuidTable] [t1]
 ORDER BY
 	[t1].[Id]
-
-BeforeExecute
--- SqlServer.2014.MS SqlServer.2014
-
-IF (OBJECT_ID(N'[GuidTable]', N'U') IS NOT NULL)
-	DROP TABLE [GuidTable]
 

@@ -1,32 +1,6 @@
 ﻿BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 
-DROP TABLE IF EXISTS `TakeSkipClass`
-
-BeforeExecute
--- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-
-CREATE TABLE IF NOT EXISTS `TakeSkipClass`
-(
-	`Value` VARCHAR(10)     NULL
-)
-
-BeforeExecute
--- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-
-INSERT INTO `TakeSkipClass`
-(
-	`Value`
-)
-VALUES
-('PIPPO'),
-('PLUTO'),
-('PLUTO'),
-('BOLTO')
-
-BeforeExecute
--- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-
 SELECT
 	EXISTS(
 		SELECT
@@ -39,9 +13,4 @@ SELECT
 			COUNT(*) > 1
 		LIMIT 1
 	) as `c1`
-
-BeforeExecute
--- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-
-DROP TABLE IF EXISTS `TakeSkipClass`
 

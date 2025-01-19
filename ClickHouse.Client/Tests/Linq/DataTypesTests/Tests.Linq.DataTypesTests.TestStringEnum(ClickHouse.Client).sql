@@ -1,35 +1,6 @@
 ﻿BeforeExecute
 -- ClickHouse.Client ClickHouse
 
-DROP TABLE IF EXISTS StringEnumTable
-
-BeforeExecute
--- ClickHouse.Client ClickHouse
-
-CREATE TABLE IF NOT EXISTS StringEnumTable
-(
-	Id             Int32,
-	Column         String,
-	ColumnNullable Nullable(String)
-)
-ENGINE = Memory()
-
-BeforeExecute
--- ClickHouse.Client ClickHouse
-
-INSERT INTO StringEnumTable
-(
-	Id,
-	Column,
-	ColumnNullable
-)
-VALUES
-(1,'val=1',NULL),
-(2,'value=2','value=33')
-
-BeforeExecute
--- ClickHouse.Client ClickHouse
-
 SELECT
 	r.Id,
 	r.Column,
@@ -155,9 +126,4 @@ FROM
 	StringEnumTable t1
 ORDER BY
 	t1.Id
-
-BeforeExecute
--- ClickHouse.Client ClickHouse
-
-DROP TABLE IF EXISTS StringEnumTable
 

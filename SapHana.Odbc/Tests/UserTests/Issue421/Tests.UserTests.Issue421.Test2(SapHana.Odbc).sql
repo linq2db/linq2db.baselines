@@ -1,22 +1,6 @@
 ﻿BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
-DROP TABLE "BlobClass"
-
-BeforeExecute
--- SapHana.Odbc SapHanaOdbc
-
-CREATE COLUMN TABLE "BlobClass"
-(
-	"Id"        Integer        NOT NULL,
-	"BlobValue" VarBinary(100)     NULL,
-
-	PRIMARY KEY ("Id")
-)
-
-BeforeExecute
--- SapHana.Odbc SapHanaOdbc
-
 INSERT INTO "BlobClass"
 (
 	"Id",
@@ -61,9 +45,4 @@ FROM
 WHERE
 	"t1"."Id" = 1
 LIMIT 1
-
-BeforeExecute
--- SapHana.Odbc SapHanaOdbc
-
-DROP TABLE "BlobClass"
 

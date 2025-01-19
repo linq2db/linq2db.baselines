@@ -1,24 +1,5 @@
 ﻿BeforeExecute
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
-DROP TABLE IF EXISTS `Base2`
-
-BeforeExecute
--- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
-CREATE TABLE IF NOT EXISTS `Base2`
-(
-	`Id`           INT           NOT NULL,
-	`Type`         INT           NOT NULL,
-	`Name_First`   VARCHAR(4000)     NULL,
-	`Name_Second`  VARCHAR(4000)     NULL,
-	`Test_ChildId` INT           NOT NULL,
-
-	CONSTRAINT `PK_Base2` PRIMARY KEY CLUSTERED (`Id`)
-)
-
-BeforeExecute
--- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 DECLARE @Id Int32
 SET     @Id = 1
 DECLARE @Type Int32
@@ -95,9 +76,4 @@ SELECT
 FROM
 	`Base2` `t1`
 LIMIT 2
-
-BeforeExecute
--- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
-DROP TABLE IF EXISTS `Base2`
 

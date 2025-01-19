@@ -1,72 +1,6 @@
 ﻿BeforeExecute
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql
 
-DROP TABLE IF EXISTS `GlobalTaskDTO`
-
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
-
-CREATE TABLE IF NOT EXISTS `GlobalTaskDTO`
-(
-	`Id`                        CHAR(36) NOT NULL,
-	`ResourceID`                CHAR(36) NOT NULL,
-	`StorageShelfSourceID`      CHAR(36)     NULL,
-	`RPSourceID`                CHAR(36)     NULL,
-	`StorageShelfDestinationID` CHAR(36)     NULL,
-	`RPDestinationID`           CHAR(36)     NULL,
-	`RPOrigDestinationID`       CHAR(36)     NULL,
-	`OutfeedTransportOrderID`   CHAR(36)     NULL
-)
-
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
-
-DROP TABLE IF EXISTS `WMS_GlobalTaskA`
-
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
-
-CREATE TABLE IF NOT EXISTS `WMS_GlobalTaskA`
-(
-	`Id`                        CHAR(36) NOT NULL,
-	`ResourceID`                CHAR(36) NOT NULL,
-	`StorageShelfSourceID`      CHAR(36)     NULL,
-	`RPSourceID`                CHAR(36)     NULL,
-	`StorageShelfDestinationID` CHAR(36)     NULL,
-	`RPDestinationID`           CHAR(36)     NULL,
-	`RPOrigDestinationID`       CHAR(36)     NULL,
-	`OutfeedTransportOrderID`   CHAR(36)     NULL
-)
-
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
-
-DROP TABLE IF EXISTS `WmsResourcePointDTO`
-
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
-
-CREATE TABLE IF NOT EXISTS `WmsResourcePointDTO`
-(
-	`Id` CHAR(36) NOT NULL
-)
-
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
-
-DROP TABLE IF EXISTS `StorageShelfDTO`
-
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
-
-CREATE TABLE IF NOT EXISTS `StorageShelfDTO`
-(
-	`Id` CHAR(36) NOT NULL
-)
-
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
-
 SELECT
 	`t2`.`Id`,
 	`t2`.`ResourceID`,
@@ -112,24 +46,4 @@ FROM
 		LEFT JOIN `WmsResourcePointDTO` `dest` ON `t2`.`RPDestinationID` = `dest`.`Id`
 		LEFT JOIN `StorageShelfDTO` `destShelf` ON `t2`.`StorageShelfDestinationID` = `destShelf`.`Id`
 		LEFT JOIN `WmsResourcePointDTO` `origdest` ON `t2`.`RPOrigDestinationID` = `origdest`.`Id`
-
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
-
-DROP TABLE IF EXISTS `StorageShelfDTO`
-
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
-
-DROP TABLE IF EXISTS `WmsResourcePointDTO`
-
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
-
-DROP TABLE IF EXISTS `WMS_GlobalTaskA`
-
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
-
-DROP TABLE IF EXISTS `GlobalTaskDTO`
 

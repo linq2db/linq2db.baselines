@@ -1,35 +1,5 @@
 ﻿BeforeExecute
 -- PostgreSQL.17 PostgreSQL.15 PostgreSQL
-
-DROP TABLE IF EXISTS "InventoryResourceDTO"
-
-BeforeExecute
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
-
-CREATE TABLE IF NOT EXISTS "InventoryResourceDTO"
-(
-	"Id"                uuid      NOT NULL,
-	"Status"            Int       NOT NULL,
-	"ResourceID"        uuid      NOT NULL,
-	"ModifiedTimeStamp" TimeStamp     NULL
-)
-
-BeforeExecute
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
-
-DROP TABLE IF EXISTS "WmsLoadCarrierDTO"
-
-BeforeExecute
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
-
-CREATE TABLE IF NOT EXISTS "WmsLoadCarrierDTO"
-(
-	"Id"            uuid NOT NULL,
-	"ResourceLabel" text     NULL
-)
-
-BeforeExecute
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
 DECLARE @Id Uuid -- Guid
 SET     @Id = 'bc7b663d-0fde-4327-8f92-5d8cc3a11d11'::uuid
 DECLARE @ResourceLabel Text(1) -- String
@@ -150,14 +120,4 @@ GROUP BY
 	lc."ResourceLabel"
 HAVING
 	COUNT(*) > 1
-
-BeforeExecute
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
-
-DROP TABLE IF EXISTS "WmsLoadCarrierDTO"
-
-BeforeExecute
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
-
-DROP TABLE IF EXISTS "InventoryResourceDTO"
 

@@ -1,70 +1,6 @@
 ﻿BeforeExecute
 -- Informix.DB2 Informix
 
-DROP TABLE IF EXISTS Condos
-
-BeforeExecute
--- Informix.DB2 Informix
-
-CREATE TABLE IF NOT EXISTS Condos
-(
-	Id         Int NOT NULL,
-	LocationId Int NOT NULL,
-
-	PRIMARY KEY (Id)
-)
-
-BeforeExecute
--- Informix.DB2 Informix
-
-DROP TABLE IF EXISTS CategoryCondos
-
-BeforeExecute
--- Informix.DB2 Informix
-
-CREATE TABLE IF NOT EXISTS CategoryCondos
-(
-	CategoryId Int NOT NULL,
-	CondoId    Int NOT NULL,
-
-	PRIMARY KEY (CategoryId, CondoId)
-)
-
-BeforeExecute
--- Informix.DB2 Informix
-
-DROP TABLE IF EXISTS CondoTags
-
-BeforeExecute
--- Informix.DB2 Informix
-
-CREATE TABLE IF NOT EXISTS CondoTags
-(
-	CondoId Int NOT NULL,
-	TagId   Int NOT NULL,
-
-	PRIMARY KEY (CondoId, TagId)
-)
-
-BeforeExecute
--- Informix.DB2 Informix
-
-DROP TABLE IF EXISTS Locations
-
-BeforeExecute
--- Informix.DB2 Informix
-
-CREATE TABLE IF NOT EXISTS Locations
-(
-	Id           Int           NOT NULL,
-	LocationName NVarChar(100) NOT NULL,
-
-	PRIMARY KEY (Id)
-)
-
-BeforeExecute
--- Informix.DB2 Informix
-
 SELECT
 	c_1.Id,
 	c_1.LocationId,
@@ -93,24 +29,4 @@ FROM
 			GROUP BY
 				g1.CondoId
 		) subcc ON c_1.Id = subcc.Key_1
-
-BeforeExecute
--- Informix.DB2 Informix
-
-DROP TABLE IF EXISTS Locations
-
-BeforeExecute
--- Informix.DB2 Informix
-
-DROP TABLE IF EXISTS CondoTags
-
-BeforeExecute
--- Informix.DB2 Informix
-
-DROP TABLE IF EXISTS CategoryCondos
-
-BeforeExecute
--- Informix.DB2 Informix
-
-DROP TABLE IF EXISTS Condos
 

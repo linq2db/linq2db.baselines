@@ -1,20 +1,5 @@
 ﻿BeforeExecute
 -- Access.Ace.OleDb AccessOleDb
-
-DROP TABLE [Issue1316Tests]
-
-BeforeExecute
--- Access.Ace.OleDb AccessOleDb
-
-CREATE TABLE [Issue1316Tests]
-(
-	[ID] Int NOT NULL,
-
-	CONSTRAINT [PK_Issue1316Tests] PRIMARY KEY CLUSTERED ([ID])
-)
-
-BeforeExecute
--- Access.Ace.OleDb AccessOleDb
 DECLARE @ID Integer -- Int32
 SET     @ID = 5
 
@@ -38,9 +23,4 @@ FROM
 	[Issue1316Tests] [t1]
 WHERE
 	[t1].[ID] = @Id
-
-BeforeExecute
--- Access.Ace.OleDb AccessOleDb
-
-DROP TABLE [Issue1316Tests]
 

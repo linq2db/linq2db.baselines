@@ -1,28 +1,6 @@
 ﻿BeforeExecute
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql
 
-DROP TABLE IF EXISTS `ColumnOrderTest`
-
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
-
-CREATE TABLE IF NOT EXISTS `ColumnOrderTest`
-(
-	`RecordID`       INT           NOT NULL,
-	`EffectiveStart` DATETIME      NOT NULL,
-	`EffectiveEnd`   DATETIME          NULL,
-	`Key`            INT           NOT NULL,
-	`Name`           VARCHAR(4000)     NULL,
-	`Code`           VARCHAR(4000)     NULL,
-	`Audit1ID`       INT           NOT NULL,
-	`Audit2ID`       INT           NOT NULL,
-
-	CONSTRAINT `PK_ColumnOrderTest` PRIMARY KEY CLUSTERED (`RecordID`)
-)
-
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
-
 
 SELECT
 		TABLE_SCHEMA,
@@ -352,8 +330,3 @@ SET     @i = NULL
 
 BeforeExecute
 RollbackTransaction
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
-
-DROP TABLE IF EXISTS `ColumnOrderTest`
-

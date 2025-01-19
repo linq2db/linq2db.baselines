@@ -1,26 +1,6 @@
 ﻿BeforeExecute
 -- SqlServer.2005.MS SqlServer.2005
 
-IF (OBJECT_ID(N'[Issue3674Tests]', N'U') IS NOT NULL)
-	DROP TABLE [Issue3674Tests]
-
-BeforeExecute
--- SqlServer.2005.MS SqlServer.2005
-
-IF (OBJECT_ID(N'[Issue3674Tests]', N'U') IS NULL)
-	CREATE TABLE [Issue3674Tests]
-	(
-		[Code]         NVarChar(30) NOT NULL,
-		[DIM_Company]  NVarChar(30)     NULL,
-		[DIM_Branch]   NVarChar(30)     NULL,
-		[DIM_Location] NVarChar(30)     NULL,
-		[DIM_MSegment] NVarChar(30)     NULL,
-		[DIM_Make]     NVarChar(30)     NULL
-	)
-
-BeforeExecute
--- SqlServer.2005.MS SqlServer.2005
-
 SELECT TOP (1)
 	[p].[Code],
 	[p].[DIM_Company],
@@ -37,10 +17,4 @@ WHERE
 	([p].[DIM_Location] IS NULL OR [p].[DIM_Location] = N'' OR [p].[DIM_Location] = N'1' OR [p].[DIM_Location] = N'2' OR [p].[DIM_Location] = N'3' OR [p].[DIM_Location] = N'4' OR [p].[DIM_Location] = N'5' OR [p].[DIM_Location] = N'6' OR [p].[DIM_Location] = N'7' OR [p].[DIM_Location] = N'8' OR [p].[DIM_Location] = N'9' OR [p].[DIM_Location] = N'0') AND
 	([p].[DIM_MSegment] IS NULL OR [p].[DIM_MSegment] = N'' OR [p].[DIM_MSegment] = N'1' OR [p].[DIM_MSegment] = N'2' OR [p].[DIM_MSegment] = N'3' OR [p].[DIM_MSegment] = N'4' OR [p].[DIM_MSegment] = N'5' OR [p].[DIM_MSegment] = N'6' OR [p].[DIM_MSegment] = N'7' OR [p].[DIM_MSegment] = N'8' OR [p].[DIM_MSegment] = N'9' OR [p].[DIM_MSegment] = N'0') AND
 	([p].[DIM_Make] IS NULL OR [p].[DIM_Make] = N'' OR [p].[DIM_Make] = N'1' OR [p].[DIM_Make] = N'2' OR [p].[DIM_Make] = N'3' OR [p].[DIM_Make] = N'4' OR [p].[DIM_Make] = N'5' OR [p].[DIM_Make] = N'6' OR [p].[DIM_Make] = N'7' OR [p].[DIM_Make] = N'8' OR [p].[DIM_Make] = N'9' OR [p].[DIM_Make] = N'0' OR [p].[DIM_Make] = N'1' OR [p].[DIM_Make] = N'2' OR [p].[DIM_Make] = N'3' OR [p].[DIM_Make] = N'4' OR [p].[DIM_Make] = N'5' OR [p].[DIM_Make] = N'6' OR [p].[DIM_Make] = N'7' OR [p].[DIM_Make] = N'8' OR [p].[DIM_Make] = N'9' OR [p].[DIM_Make] = N'0' OR [p].[DIM_Make] = N'1' OR [p].[DIM_Make] = N'2' OR [p].[DIM_Make] = N'3' OR [p].[DIM_Make] = N'4' OR [p].[DIM_Make] = N'5' OR [p].[DIM_Make] = N'6' OR [p].[DIM_Make] = N'7' OR [p].[DIM_Make] = N'8' OR [p].[DIM_Make] = N'9' OR [p].[DIM_Make] = N'0' OR [p].[DIM_Make] = N'1' OR [p].[DIM_Make] = N'2' OR [p].[DIM_Make] = N'3' OR [p].[DIM_Make] = N'4' OR [p].[DIM_Make] = N'5' OR [p].[DIM_Make] = N'6' OR [p].[DIM_Make] = N'7' OR [p].[DIM_Make] = N'8' OR [p].[DIM_Make] = N'9' OR [p].[DIM_Make] = N'0' OR [p].[DIM_Make] = N'1' OR [p].[DIM_Make] = N'2' OR [p].[DIM_Make] = N'3' OR [p].[DIM_Make] = N'4' OR [p].[DIM_Make] = N'5' OR [p].[DIM_Make] = N'6' OR [p].[DIM_Make] = N'7' OR [p].[DIM_Make] = N'8' OR [p].[DIM_Make] = N'9' OR [p].[DIM_Make] = N'0' OR [p].[DIM_Make] = N'1' OR [p].[DIM_Make] = N'2' OR [p].[DIM_Make] = N'3' OR [p].[DIM_Make] = N'4' OR [p].[DIM_Make] = N'5' OR [p].[DIM_Make] = N'6' OR [p].[DIM_Make] = N'7' OR [p].[DIM_Make] = N'8' OR [p].[DIM_Make] = N'9' OR [p].[DIM_Make] = N'0' OR [p].[DIM_Make] = N'1' OR [p].[DIM_Make] = N'2' OR [p].[DIM_Make] = N'3' OR [p].[DIM_Make] = N'4' OR [p].[DIM_Make] = N'5' OR [p].[DIM_Make] = N'6' OR [p].[DIM_Make] = N'7' OR [p].[DIM_Make] = N'8' OR [p].[DIM_Make] = N'9' OR [p].[DIM_Make] = N'0' OR [p].[DIM_Make] = N'1' OR [p].[DIM_Make] = N'2' OR [p].[DIM_Make] = N'3' OR [p].[DIM_Make] = N'4' OR [p].[DIM_Make] = N'5' OR [p].[DIM_Make] = N'6' OR [p].[DIM_Make] = N'7' OR [p].[DIM_Make] = N'8' OR [p].[DIM_Make] = N'9' OR [p].[DIM_Make] = N'0' OR [p].[DIM_Make] = N'1' OR [p].[DIM_Make] = N'2' OR [p].[DIM_Make] = N'3' OR [p].[DIM_Make] = N'4' OR [p].[DIM_Make] = N'5' OR [p].[DIM_Make] = N'6' OR [p].[DIM_Make] = N'7' OR [p].[DIM_Make] = N'8' OR [p].[DIM_Make] = N'9' OR [p].[DIM_Make] = N'0')
-
-BeforeExecute
--- SqlServer.2005.MS SqlServer.2005
-
-IF (OBJECT_ID(N'[Issue3674Tests]', N'U') IS NOT NULL)
-	DROP TABLE [Issue3674Tests]
 

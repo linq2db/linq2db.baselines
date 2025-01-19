@@ -1,64 +1,6 @@
 ﻿BeforeExecute
 -- PostgreSQL.17 PostgreSQL.15 PostgreSQL
 
-DROP TABLE IF EXISTS gt_s_one
-
-BeforeExecute
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
-
-CREATE TABLE IF NOT EXISTS gt_s_one
-(
-	id   Int  NOT NULL,
-	col1 text     NULL,
-	col2 text     NULL,
-	col3 text     NULL,
-	col4 text     NULL,
-	col5 text     NULL,
-	col6 text     NULL,
-
-	CONSTRAINT "PK_gt_s_one" PRIMARY KEY (id)
-)
-
-BeforeExecute
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
-
-DROP TABLE IF EXISTS gt_s_one_target
-
-BeforeExecute
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
-
-CREATE TABLE IF NOT EXISTS gt_s_one_target
-(
-	id   Int  NOT NULL,
-	col1 text     NULL,
-	col2 text     NULL,
-	col3 text     NULL,
-	col4 text     NULL,
-	col5 text     NULL,
-	col6 text     NULL,
-
-	CONSTRAINT "PK_gt_s_one_target" PRIMARY KEY (id)
-)
-
-BeforeExecute
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
-
-DROP TABLE IF EXISTS access_mode
-
-BeforeExecute
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
-
-CREATE TABLE IF NOT EXISTS access_mode
-(
-	id   Int  NOT NULL,
-	code text     NULL,
-
-	CONSTRAINT "PK_access_mode" PRIMARY KEY (id)
-)
-
-BeforeExecute
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
-
 UPDATE
 	gt_s_one_target
 SET
@@ -79,19 +21,4 @@ FROM
 		LEFT JOIN access_mode y1 ON Upper(REPLACE(x.col3, 'auth.', '')) = Upper(y1.code) OR x.col3 IS NULL AND y1.code IS NULL
 WHERE
 	x.id = gt_s_one_target.id
-
-BeforeExecute
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
-
-DROP TABLE IF EXISTS access_mode
-
-BeforeExecute
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
-
-DROP TABLE IF EXISTS gt_s_one_target
-
-BeforeExecute
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
-
-DROP TABLE IF EXISTS gt_s_one
 

@@ -1,37 +1,5 @@
 ﻿BeforeExecute
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql
-
-DROP TABLE IF EXISTS `Issue3830TestTable`
-
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
-
-CREATE TABLE IF NOT EXISTS `Issue3830TestTable`
-(
-	`Id`    INT  NOT NULL,
-	`Bool1` CHAR NOT NULL,
-	`Bool2` CHAR     NULL,
-	`Bool3` CHAR     NULL
-)
-
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
-
-INSERT INTO `Issue3830TestTable`
-(
-	`Id`,
-	`Bool1`,
-	`Bool2`,
-	`Bool3`
-)
-VALUES
-(1,'Y',NULL,NULL),
-(2,'N',NULL,'Y'),
-(3,'N','Y',NULL),
-(4,'Y','N','Y')
-
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
 DECLARE @Bool1 String(1) -- AnsiStringFixedLength
 SET     @Bool1 = 'Y'
 
@@ -307,9 +275,4 @@ FROM
 WHERE
 	`r`.`Bool2` IS NOT NULL AND `r`.`Bool1` = @Bool1 AND
 	`r`.`Bool3` = @Bool3
-
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
-
-DROP TABLE IF EXISTS `Issue3830TestTable`
 

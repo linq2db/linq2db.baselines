@@ -1,51 +1,5 @@
 ﻿BeforeExecute
 -- SqlServer.2019.MS SqlServer.2019
-
-DROP TABLE IF EXISTS [Issue1799Table1]
-
-BeforeExecute
--- SqlServer.2019.MS SqlServer.2019
-
-IF (OBJECT_ID(N'[Issue1799Table1]', N'U') IS NULL)
-	CREATE TABLE [Issue1799Table1]
-	(
-		[EventUser] Int       NOT NULL,
-		[ProcessID] Int       NOT NULL,
-		[EventTime] DateTime2 NOT NULL
-	)
-
-BeforeExecute
--- SqlServer.2019.MS SqlServer.2019
-
-DROP TABLE IF EXISTS [Issue1799Table2]
-
-BeforeExecute
--- SqlServer.2019.MS SqlServer.2019
-
-IF (OBJECT_ID(N'[Issue1799Table2]', N'U') IS NULL)
-	CREATE TABLE [Issue1799Table2]
-	(
-		[UserId]     Int            NOT NULL,
-		[UserGroups] NVarChar(4000)     NULL
-	)
-
-BeforeExecute
--- SqlServer.2019.MS SqlServer.2019
-
-DROP TABLE IF EXISTS [Issue1799Table3]
-
-BeforeExecute
--- SqlServer.2019.MS SqlServer.2019
-
-IF (OBJECT_ID(N'[Issue1799Table3]', N'U') IS NULL)
-	CREATE TABLE [Issue1799Table3]
-	(
-		[ProcessID]   Int            NOT NULL,
-		[ProcessName] NVarChar(4000)     NULL
-	)
-
-BeforeExecute
--- SqlServer.2019.MS SqlServer.2019
 DECLARE @take Int -- Int32
 SET     @take = 10
 
@@ -69,19 +23,4 @@ GROUP BY
 	[g_1].[User_1],
 	[u].[UserGroups],
 	[p].[ProcessName]
-
-BeforeExecute
--- SqlServer.2019.MS SqlServer.2019
-
-DROP TABLE IF EXISTS [Issue1799Table3]
-
-BeforeExecute
--- SqlServer.2019.MS SqlServer.2019
-
-DROP TABLE IF EXISTS [Issue1799Table2]
-
-BeforeExecute
--- SqlServer.2019.MS SqlServer.2019
-
-DROP TABLE IF EXISTS [Issue1799Table1]
 

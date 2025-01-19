@@ -1,24 +1,5 @@
 ﻿BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-
-DROP TABLE IF EXISTS [TPHTableDefault]
-
-BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
-
-CREATE TABLE IF NOT EXISTS [TPHTableDefault]
-(
-	[Id]            INTEGER      NOT NULL,
-	[Discriminator] INTEGER      NOT NULL,
-	[Value1]        NVarChar(50)     NULL,
-	[Value2]        NVarChar(50)     NULL,
-	[Value3]        NVarChar(50)     NULL,
-
-	CONSTRAINT [PK_TPHTableDefault] PRIMARY KEY ([Id])
-)
-
-BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
 DECLARE @Id  -- Int32
 SET     @Id = 1
 DECLARE @Discriminator  -- Int32
@@ -186,9 +167,4 @@ FROM
 WHERE
 	[x].[Value3] = 'Str3'
 LIMIT 2
-
-BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
-
-DROP TABLE IF EXISTS [TPHTableDefault]
 

@@ -1,24 +1,5 @@
 ﻿BeforeExecute
 -- SqlCe
-
-DROP TABLE [Base]
-
-BeforeExecute
--- SqlCe
-
-CREATE TABLE [Base]
-(
-	[Id]           Int           NOT NULL,
-	[Type]         Int           NOT NULL,
-	[Name_First]   NVarChar(255)     NULL,
-	[Name_Second]  NVarChar(255)     NULL,
-	[Test_ChildId] Int           NOT NULL,
-
-	CONSTRAINT [PK_Base] PRIMARY KEY ([Id])
-)
-
-BeforeExecute
--- SqlCe
 DECLARE @Id Int -- Int32
 SET     @Id = 1
 DECLARE @Type Int -- Int32
@@ -93,9 +74,4 @@ SELECT TOP (2)
 	[t1].[Name_Second] as [Second_1]
 FROM
 	[Base] [t1]
-
-BeforeExecute
--- SqlCe
-
-DROP TABLE [Base]
 

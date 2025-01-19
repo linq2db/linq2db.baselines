@@ -1,41 +1,4 @@
 ﻿BeforeExecute
--- SqlCe
-
-DROP TABLE [Issue3757Level1]
-
-BeforeExecute
--- SqlCe
-
-CREATE TABLE [Issue3757Level1]
-(
-	[ID]     Int           NOT NULL,
-	[ValS]   NVarChar(255)     NULL,
-	[ValB]   Bit               NULL,
-	[ValInt] Int               NULL,
-
-	CONSTRAINT [PK_Issue3757Level1] PRIMARY KEY ([ID])
-)
-
-BeforeExecute
--- SqlCe
-
-DROP TABLE [Issue3757Level2]
-
-BeforeExecute
--- SqlCe
-
-CREATE TABLE [Issue3757Level2]
-(
-	[ID]       Int           NOT NULL,
-	[ParentId] Int           NOT NULL,
-	[ValS]     NVarChar(255)     NULL,
-	[ValB]     Bit               NULL,
-	[ValInt]   Int               NULL,
-
-	CONSTRAINT [PK_Issue3757Level2] PRIMARY KEY ([ID])
-)
-
-BeforeExecute
 BeginTransaction(RepeatableRead)
 BeforeExecute
 -- SqlCe
@@ -92,14 +55,4 @@ WHERE
 			[it].[ID] = [c_1].[ParentId] AND [it].[ValS] LIKE @TypedProperty ESCAPE '~' AND
 			[it].[ValS] IS NOT NULL
 	)
-
-BeforeExecute
--- SqlCe
-
-DROP TABLE [Issue3757Level2]
-
-BeforeExecute
--- SqlCe
-
-DROP TABLE [Issue3757Level1]
 

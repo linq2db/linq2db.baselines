@@ -1,20 +1,5 @@
 ﻿BeforeExecute
 -- Access.Jet.Odbc AccessODBC
-
-DROP TABLE [Test3664]
-
-BeforeExecute
--- Access.Jet.Odbc AccessODBC
-
-CREATE TABLE [Test3664]
-(
-	[Id] Int NOT NULL,
-
-	CONSTRAINT [PK_Test3664] PRIMARY KEY CLUSTERED ([Id])
-)
-
-BeforeExecute
--- Access.Jet.Odbc AccessODBC
 DECLARE @Id Int -- Int32
 SET     @Id = 1
 
@@ -24,58 +9,6 @@ INSERT INTO [Test3664]
 )
 VALUES
 (
-	?
-)
-
-BeforeExecute
--- Access.Jet.Odbc AccessODBC
-
-DROP TABLE [Test3664Item]
-
-BeforeExecute
--- Access.Jet.Odbc AccessODBC
-
-CREATE TABLE [Test3664Item]
-(
-	[Id]     Int NOT NULL,
-	[TestId] Int NOT NULL,
-
-	CONSTRAINT [PK_Test3664Item] PRIMARY KEY CLUSTERED ([Id])
-)
-
-BeforeExecute
--- Access.Jet.Odbc AccessODBC
-DECLARE @Id Int -- Int32
-SET     @Id = 11
-DECLARE @TestId Int -- Int32
-SET     @TestId = 1
-
-INSERT INTO [Test3664Item]
-(
-	[Id],
-	[TestId]
-)
-VALUES
-(
-	?,
-	?
-)
-
-BeforeExecute
--- Access.Jet.Odbc AccessODBC
-DECLARE @Id Int -- Int32
-SET     @Id = 12
-DECLARE @TestId Int -- Int32
-SET     @TestId = 1
-
-INSERT INTO [Test3664Item]
-(
-	[Id],
-	[TestId]
-)
-VALUES
-(
-	?,
 	?
 )
 
@@ -124,14 +57,4 @@ SELECT
 	[t1].[Id]
 FROM
 	[Test3664] [t1]
-
-BeforeExecute
--- Access.Jet.Odbc AccessODBC
-
-DROP TABLE [Test3664Item]
-
-BeforeExecute
--- Access.Jet.Odbc AccessODBC
-
-DROP TABLE [Test3664]
 

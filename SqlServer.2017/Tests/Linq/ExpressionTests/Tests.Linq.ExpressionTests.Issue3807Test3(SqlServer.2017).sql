@@ -1,34 +1,4 @@
 ﻿BeforeExecute
--- SqlServer.2017
-
-DROP TABLE IF EXISTS [Issue3807Table]
-
-BeforeExecute
--- SqlServer.2017
-
-IF (OBJECT_ID(N'[Issue3807Table]', N'U') IS NULL)
-	CREATE TABLE [Issue3807Table]
-	(
-		[Id]          Int            NOT NULL,
-		[ArrayString] NVarChar(4000)     NULL,
-
-		CONSTRAINT [PK_Issue3807Table] PRIMARY KEY CLUSTERED ([Id])
-	)
-
-BeforeExecute
--- SqlServer.2017
-
-INSERT INTO [Issue3807Table]
-(
-	[Id],
-	[ArrayString]
-)
-VALUES
-(1,N'one,two,three'),
-(2,N'one,three'),
-(3,NULL)
-
-BeforeExecute
 BeginTransaction(RepeatableRead)
 BeforeExecute
 -- SqlServer.2017
@@ -75,9 +45,4 @@ WHERE
 	)
 ORDER BY
 	[r].[Id]
-
-BeforeExecute
--- SqlServer.2017
-
-DROP TABLE IF EXISTS [Issue3807Table]
 

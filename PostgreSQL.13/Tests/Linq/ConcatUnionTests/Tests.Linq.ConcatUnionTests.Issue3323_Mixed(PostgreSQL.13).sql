@@ -1,24 +1,6 @@
 ﻿BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
 
-DROP TABLE IF EXISTS "Issue3323Table"
-
-BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
-
-CREATE TABLE IF NOT EXISTS "Issue3323Table"
-(
-	"Id"       Int  NOT NULL,
-	"FistName" text     NULL,
-	"LastName" text     NULL,
-	"Text"     text NOT NULL,
-
-	CONSTRAINT "PK_Issue3323Table" PRIMARY KEY ("Id")
-)
-
-BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
-
 INSERT INTO "Issue3323Table"
 (
 	"Id",
@@ -63,9 +45,4 @@ SELECT
 	r_1."FistName" || ' ' || r_1."LastName"
 FROM
 	"Issue3323Table" r_1
-
-BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
-
-DROP TABLE IF EXISTS "Issue3323Table"
 

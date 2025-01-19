@@ -1,54 +1,5 @@
 ﻿BeforeExecute
 -- SqlServer.Contained SqlServer.2019
-
-DROP TABLE IF EXISTS [PatentAssessment]
-
-BeforeExecute
--- SqlServer.Contained SqlServer.2019
-
-IF (OBJECT_ID(N'[PatentAssessment]', N'U') IS NULL)
-	CREATE TABLE [PatentAssessment]
-	(
-		[PatentId]               Int            NOT NULL,
-		[TechnicalReviewersText] NVarChar(1000)     NULL,
-
-		CONSTRAINT [PK_PatentAssessment] PRIMARY KEY CLUSTERED ([PatentId])
-	)
-
-BeforeExecute
--- SqlServer.Contained SqlServer.2019
-
-DROP TABLE IF EXISTS [Issue2918Table2]
-
-BeforeExecute
--- SqlServer.Contained SqlServer.2019
-
-IF (OBJECT_ID(N'[Issue2918Table2]', N'U') IS NULL)
-	CREATE TABLE [Issue2918Table2]
-	(
-		[PatentId] Int NOT NULL,
-		[UserId]   Int NOT NULL
-	)
-
-BeforeExecute
--- SqlServer.Contained SqlServer.2019
-
-DROP TABLE IF EXISTS [User]
-
-BeforeExecute
--- SqlServer.Contained SqlServer.2019
-
-IF (OBJECT_ID(N'[User]', N'U') IS NULL)
-	CREATE TABLE [User]
-	(
-		[Id]          Int            NOT NULL,
-		[DisplayName] NVarChar(1000) NOT NULL,
-
-		CONSTRAINT [PK_User] PRIMARY KEY CLUSTERED ([Id])
-	)
-
-BeforeExecute
--- SqlServer.Contained SqlServer.2019
 DECLARE @userId Int -- Int32
 SET     @userId = 1
 
@@ -88,19 +39,4 @@ UPDATE
 SET
 	[TechnicalReviewersText] = [Source].[source_TechnicalReviewersText]
 ;
-
-BeforeExecute
--- SqlServer.Contained SqlServer.2019
-
-DROP TABLE IF EXISTS [User]
-
-BeforeExecute
--- SqlServer.Contained SqlServer.2019
-
-DROP TABLE IF EXISTS [Issue2918Table2]
-
-BeforeExecute
--- SqlServer.Contained SqlServer.2019
-
-DROP TABLE IF EXISTS [PatentAssessment]
 

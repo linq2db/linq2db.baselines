@@ -1,19 +1,6 @@
 ﻿BeforeExecute
 -- Access.Jet.Odbc AccessODBC
 
-DROP TABLE [ValueItem]
-
-BeforeExecute
--- Access.Jet.Odbc AccessODBC
-
-CREATE TABLE [ValueItem]
-(
-	[Value] Int NOT NULL
-)
-
-BeforeExecute
--- Access.Jet.Odbc AccessODBC
-
 INSERT INTO [ValueItem]
 (
 	[Value]
@@ -30,9 +17,4 @@ SELECT
 	[row_1].[Value]
 FROM
 	[ValueItem] [row_1]
-
-BeforeExecute
--- Access.Jet.Odbc AccessODBC
-
-DROP TABLE [ValueItem]
 

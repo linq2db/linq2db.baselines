@@ -1,29 +1,5 @@
 ﻿BeforeExecute
 -- Firebird.2.5 Firebird
-
-EXECUTE BLOCK AS BEGIN
-	IF (EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'Issue4460Table')) THEN
-		EXECUTE STATEMENT 'DROP TABLE "Issue4460Table"';
-END
-
-BeforeExecute
--- Firebird.2.5 Firebird
-
-EXECUTE BLOCK AS BEGIN
-	IF (NOT EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'Issue4460Table')) THEN
-		EXECUTE STATEMENT '
-			CREATE TABLE "Issue4460Table"
-			(
-				"Id"      Int                                    NOT NULL,
-				"Code"    VarChar(255) CHARACTER SET UNICODE_FSS,
-				"Name"    VarChar(255) CHARACTER SET UNICODE_FSS,
-				"Surname" VarChar(255) CHARACTER SET UNICODE_FSS
-			)
-		';
-END
-
-BeforeExecute
--- Firebird.2.5 Firebird
 DECLARE @Id Integer -- Int32
 SET     @Id = 1
 DECLARE @Code VarChar(10) -- String
@@ -60,12 +36,4 @@ FROM
 	"Issue4460Table" "t1"
 WHERE
 	"t1"."Code" = 'GrandChild'
-
-BeforeExecute
--- Firebird.2.5 Firebird
-
-EXECUTE BLOCK AS BEGIN
-	IF (EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'Issue4460Table')) THEN
-		EXECUTE STATEMENT 'DROP TABLE "Issue4460Table"';
-END
 

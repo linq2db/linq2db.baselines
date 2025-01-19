@@ -1,70 +1,6 @@
 ﻿BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
-DROP TABLE "Condos"
-
-BeforeExecute
--- SapHana.Odbc SapHanaOdbc
-
-CREATE COLUMN TABLE "Condos"
-(
-	"Id"         Integer NOT NULL,
-	"LocationId" Integer NOT NULL,
-
-	PRIMARY KEY ("Id")
-)
-
-BeforeExecute
--- SapHana.Odbc SapHanaOdbc
-
-DROP TABLE "CategoryCondos"
-
-BeforeExecute
--- SapHana.Odbc SapHanaOdbc
-
-CREATE COLUMN TABLE "CategoryCondos"
-(
-	"CategoryId" Integer NOT NULL,
-	"CondoId"    Integer NOT NULL,
-
-	PRIMARY KEY ("CategoryId", "CondoId")
-)
-
-BeforeExecute
--- SapHana.Odbc SapHanaOdbc
-
-DROP TABLE "CondoTags"
-
-BeforeExecute
--- SapHana.Odbc SapHanaOdbc
-
-CREATE COLUMN TABLE "CondoTags"
-(
-	"CondoId" Integer NOT NULL,
-	"TagId"   Integer NOT NULL,
-
-	PRIMARY KEY ("CondoId", "TagId")
-)
-
-BeforeExecute
--- SapHana.Odbc SapHanaOdbc
-
-DROP TABLE "Locations"
-
-BeforeExecute
--- SapHana.Odbc SapHanaOdbc
-
-CREATE COLUMN TABLE "Locations"
-(
-	"Id"           Integer       NOT NULL,
-	"LocationName" NVarChar(100) NOT NULL,
-
-	PRIMARY KEY ("Id")
-)
-
-BeforeExecute
--- SapHana.Odbc SapHanaOdbc
-
 SELECT
 	"c_1"."Id",
 	"c_1"."LocationId",
@@ -93,24 +29,4 @@ FROM
 			GROUP BY
 				"g1"."CondoId"
 		) "subcc" ON "c_1"."Id" = "subcc"."Key_1"
-
-BeforeExecute
--- SapHana.Odbc SapHanaOdbc
-
-DROP TABLE "Locations"
-
-BeforeExecute
--- SapHana.Odbc SapHanaOdbc
-
-DROP TABLE "CondoTags"
-
-BeforeExecute
--- SapHana.Odbc SapHanaOdbc
-
-DROP TABLE "CategoryCondos"
-
-BeforeExecute
--- SapHana.Odbc SapHanaOdbc
-
-DROP TABLE "Condos"
 

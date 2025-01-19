@@ -1,22 +1,5 @@
 ﻿BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-
-DROP TABLE [ConcurrencyAutoIncrement]
-
-BeforeExecute
--- Access.Ace.Odbc AccessODBC
-
-CREATE TABLE [ConcurrencyAutoIncrement]
-(
-	[Id]    Int           NOT NULL,
-	[Stamp] Int           NOT NULL,
-	[Value] NVarChar(255)     NULL,
-
-	CONSTRAINT [PK_ConcurrencyAutoIncrement] PRIMARY KEY CLUSTERED ([Id])
-)
-
-BeforeExecute
--- Access.Ace.Odbc AccessODBC
 DECLARE @Id Int -- Int32
 SET     @Id = 1
 DECLARE @Stamp Int -- Int32
@@ -171,9 +154,4 @@ SELECT
 	[t1].[Value]
 FROM
 	[ConcurrencyAutoIncrement] [t1]
-
-BeforeExecute
--- Access.Ace.Odbc AccessODBC
-
-DROP TABLE [ConcurrencyAutoIncrement]
 

@@ -1,36 +1,5 @@
 ﻿BeforeExecute
 -- Sybase.Managed Sybase
-
-IF (OBJECT_ID(N'ByteTable') IS NOT NULL)
-	DROP TABLE [ByteTable]
-
-BeforeExecute
--- Sybase.Managed Sybase
-
-IF (OBJECT_ID(N'ByteTable') IS NULL)
-	EXECUTE('
-		CREATE TABLE [ByteTable]
-		(
-			[Id]             Int     NOT NULL,
-			[Column]         TinyInt NOT NULL,
-			[ColumnNullable] TinyInt     NULL
-		)
-	')
-
-BeforeExecute
--- Sybase.Managed Sybase
-
-INSERT INTO [ByteTable]
-(
-	[Id],
-	[Column],
-	[ColumnNullable]
-)
-SELECT 1,1,NULL UNION ALL
-SELECT 2,255,2
-
-BeforeExecute
--- Sybase.Managed Sybase
 DECLARE @Column TinyInt -- Byte
 SET     @Column = 255
 DECLARE @ColumnNullable TinyInt -- Byte
@@ -181,10 +150,4 @@ FROM
 	[ByteTable] [t1]
 ORDER BY
 	[t1].[Id]
-
-BeforeExecute
--- Sybase.Managed Sybase
-
-IF (OBJECT_ID(N'ByteTable') IS NOT NULL)
-	DROP TABLE [ByteTable]
 

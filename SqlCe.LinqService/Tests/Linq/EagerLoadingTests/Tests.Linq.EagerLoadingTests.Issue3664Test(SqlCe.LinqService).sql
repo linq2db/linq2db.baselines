@@ -1,20 +1,5 @@
 ﻿BeforeExecute
 -- SqlCe
-
-DROP TABLE [Test3664]
-
-BeforeExecute
--- SqlCe
-
-CREATE TABLE [Test3664]
-(
-	[Id] Int NOT NULL,
-
-	CONSTRAINT [PK_Test3664] PRIMARY KEY ([Id])
-)
-
-BeforeExecute
--- SqlCe
 DECLARE @Id Int -- Int32
 SET     @Id = 1
 
@@ -25,58 +10,6 @@ INSERT INTO [Test3664]
 VALUES
 (
 	@Id
-)
-
-BeforeExecute
--- SqlCe
-
-DROP TABLE [Test3664Item]
-
-BeforeExecute
--- SqlCe
-
-CREATE TABLE [Test3664Item]
-(
-	[Id]     Int NOT NULL,
-	[TestId] Int NOT NULL,
-
-	CONSTRAINT [PK_Test3664Item] PRIMARY KEY ([Id])
-)
-
-BeforeExecute
--- SqlCe
-DECLARE @Id Int -- Int32
-SET     @Id = 11
-DECLARE @TestId Int -- Int32
-SET     @TestId = 1
-
-INSERT INTO [Test3664Item]
-(
-	[Id],
-	[TestId]
-)
-VALUES
-(
-	@Id,
-	@TestId
-)
-
-BeforeExecute
--- SqlCe
-DECLARE @Id Int -- Int32
-SET     @Id = 12
-DECLARE @TestId Int -- Int32
-SET     @TestId = 1
-
-INSERT INTO [Test3664Item]
-(
-	[Id],
-	[TestId]
-)
-VALUES
-(
-	@Id,
-	@TestId
 )
 
 BeforeExecute
@@ -124,14 +57,4 @@ SELECT
 	[t1].[Id]
 FROM
 	[Test3664] [t1]
-
-BeforeExecute
--- SqlCe
-
-DROP TABLE [Test3664Item]
-
-BeforeExecute
--- SqlCe
-
-DROP TABLE [Test3664]
 

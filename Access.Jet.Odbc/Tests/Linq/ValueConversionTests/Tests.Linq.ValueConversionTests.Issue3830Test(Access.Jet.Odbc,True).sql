@@ -1,94 +1,6 @@
 ﻿BeforeExecute
 -- Access.Jet.Odbc AccessODBC
 
-DROP TABLE [Issue3830TestTable]
-
-BeforeExecute
--- Access.Jet.Odbc AccessODBC
-
-CREATE TABLE [Issue3830TestTable]
-(
-	[Id]    Int     NOT NULL,
-	[Bool1] Char(1) NOT NULL,
-	[Bool2] Char(1)     NULL,
-	[Bool3] Char(1)     NULL
-)
-
-BeforeExecute
--- Access.Jet.Odbc AccessODBC
-
-INSERT INTO [Issue3830TestTable]
-(
-	[Id],
-	[Bool1],
-	[Bool2],
-	[Bool3]
-)
-VALUES
-(
-	1,
-	'Y',
-	NULL,
-	NULL
-)
-
-BeforeExecute
--- Access.Jet.Odbc AccessODBC
-
-INSERT INTO [Issue3830TestTable]
-(
-	[Id],
-	[Bool1],
-	[Bool2],
-	[Bool3]
-)
-VALUES
-(
-	2,
-	'N',
-	NULL,
-	'Y'
-)
-
-BeforeExecute
--- Access.Jet.Odbc AccessODBC
-
-INSERT INTO [Issue3830TestTable]
-(
-	[Id],
-	[Bool1],
-	[Bool2],
-	[Bool3]
-)
-VALUES
-(
-	3,
-	'N',
-	'Y',
-	NULL
-)
-
-BeforeExecute
--- Access.Jet.Odbc AccessODBC
-
-INSERT INTO [Issue3830TestTable]
-(
-	[Id],
-	[Bool1],
-	[Bool2],
-	[Bool3]
-)
-VALUES
-(
-	4,
-	'Y',
-	'N',
-	'Y'
-)
-
-BeforeExecute
--- Access.Jet.Odbc AccessODBC
-
 SELECT
 	[r].[Id],
 	[r].[Bool1],
@@ -295,9 +207,4 @@ FROM
 	[Issue3830TestTable] [r]
 WHERE
 	[r].[Bool2] IS NOT NULL AND [r].[Bool1] = 'Y' AND [r].[Bool3] = 'Y'
-
-BeforeExecute
--- Access.Jet.Odbc AccessODBC
-
-DROP TABLE [Issue3830TestTable]
 

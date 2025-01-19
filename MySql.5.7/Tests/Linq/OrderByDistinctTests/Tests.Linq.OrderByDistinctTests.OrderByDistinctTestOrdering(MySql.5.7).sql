@@ -1,38 +1,5 @@
 ﻿BeforeExecute
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
-
-DROP TABLE IF EXISTS `OrderByDistinctData`
-
-BeforeExecute
--- MySql.5.7 MySql.5.7.MySql.Data MySql57
-
-CREATE TABLE IF NOT EXISTS `OrderByDistinctData`
-(
-	`Id`            INT           NOT NULL,
-	`DuplicateData` VARCHAR(4000)     NULL,
-	`OrderData1`    INT           NOT NULL,
-	`OrderData2`    INT           NOT NULL,
-
-	CONSTRAINT `PK_OrderByDistinctData` PRIMARY KEY CLUSTERED (`Id`)
-)
-
-BeforeExecute
--- MySql.5.7 MySql.5.7.MySql.Data MySql57
-
-INSERT INTO `OrderByDistinctData`
-(
-	`Id`,
-	`DuplicateData`,
-	`OrderData1`,
-	`OrderData2`
-)
-VALUES
-(1,'One',1,1),
-(10,'Two',1,1),
-(100,'Three',1,1)
-
-BeforeExecute
--- MySql.5.7 MySql.5.7.MySql.Data MySql57
 DECLARE @skip Int32
 SET     @skip = 0
 DECLARE @take Int32
@@ -202,9 +169,4 @@ ORDER BY
 	`x`.`OrderData1`,
 	`x`.`OrderData2` DESC
 LIMIT @skip, @take
-
-BeforeExecute
--- MySql.5.7 MySql.5.7.MySql.Data MySql57
-
-DROP TABLE IF EXISTS `OrderByDistinctData`
 

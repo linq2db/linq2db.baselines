@@ -1,23 +1,6 @@
 ﻿BeforeExecute
 -- SqlServer.Contained.MS SqlServer.2019
 
-DROP TABLE IF EXISTS [Issue4671Entity]
-
-BeforeExecute
--- SqlServer.Contained.MS SqlServer.2019
-
-IF (OBJECT_ID(N'[Issue4671Entity]', N'U') IS NULL)
-	CREATE TABLE [Issue4671Entity]
-	(
-		[Id]    Int  NOT NULL IDENTITY,
-		[Value] Int  NOT NULL,
-
-		CONSTRAINT [PK_Issue4671Entity] PRIMARY KEY CLUSTERED ([Id])
-	)
-
-BeforeExecute
--- SqlServer.Contained.MS SqlServer.2019
-
 CREATE TABLE [tempdb]..[#Issue4671EntityTMP]
 (
 	[Id]    Int  NOT NULL IDENTITY,
@@ -72,9 +55,4 @@ BeforeExecute
 -- SqlServer.Contained.MS SqlServer.2019
 
 DROP TABLE IF EXISTS [tempdb]..[#Issue4671EntityTMP]
-
-BeforeExecute
--- SqlServer.Contained.MS SqlServer.2019
-
-DROP TABLE IF EXISTS [Issue4671Entity]
 

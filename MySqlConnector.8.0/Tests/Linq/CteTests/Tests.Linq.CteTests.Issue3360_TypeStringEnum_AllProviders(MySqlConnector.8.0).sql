@@ -1,20 +1,6 @@
 ﻿BeforeExecute
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 
-DROP TABLE IF EXISTS `Issue3360WithEnum`
-
-BeforeExecute
--- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
-CREATE TABLE IF NOT EXISTS `Issue3360WithEnum`
-(
-	`Id`  INT         NOT NULL,
-	`Str` VARCHAR(50) NOT NULL
-)
-
-BeforeExecute
--- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
 WITH RECURSIVE `cte` (`Id`, `Str`)
 AS
 (
@@ -36,9 +22,4 @@ SELECT
 	`t2`.`Str`
 FROM
 	`cte` `t2`
-
-BeforeExecute
--- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
-DROP TABLE IF EXISTS `Issue3360WithEnum`
 

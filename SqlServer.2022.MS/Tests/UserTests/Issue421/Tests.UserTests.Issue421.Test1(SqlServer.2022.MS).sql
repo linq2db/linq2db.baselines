@@ -1,22 +1,5 @@
 ﻿BeforeExecute
 -- SqlServer.2022.MS SqlServer.2022
-
-DROP TABLE IF EXISTS [BlobClass]
-
-BeforeExecute
--- SqlServer.2022.MS SqlServer.2022
-
-IF (OBJECT_ID(N'[BlobClass]', N'U') IS NULL)
-	CREATE TABLE [BlobClass]
-	(
-		[Id]        Int            NOT NULL,
-		[BlobValue] VarBinary(100)     NULL,
-
-		CONSTRAINT [PK_BlobClass] PRIMARY KEY CLUSTERED ([Id])
-	)
-
-BeforeExecute
--- SqlServer.2022.MS SqlServer.2022
 DECLARE @Id Int -- Int32
 SET     @Id = 1
 DECLARE @BlobValue VarBinary(100) -- Binary
@@ -66,9 +49,4 @@ FROM
 	[BlobClass] [t1]
 WHERE
 	[t1].[Id] = 1
-
-BeforeExecute
--- SqlServer.2022.MS SqlServer.2022
-
-DROP TABLE IF EXISTS [BlobClass]
 

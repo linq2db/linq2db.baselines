@@ -1,22 +1,5 @@
 ﻿BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-
-DROP TABLE IF EXISTS [Issue4715Table]
-
-BeforeExecute
--- SQLite.Classic.MPM SQLite.Classic SQLite
-
-CREATE TABLE IF NOT EXISTS [Issue4715Table]
-(
-	[Id]    INTEGER NOT NULL,
-	[Prop1] INTEGER NOT NULL,
-	[Prop2] INTEGER NOT NULL,
-	[Prop3] INTEGER NOT NULL,
-	[Prop4] INTEGER NOT NULL
-)
-
-BeforeExecute
--- SQLite.Classic.MPM SQLite.Classic SQLite
 DECLARE @Id  -- Int32
 SET     @Id = 1
 DECLARE @ImplicitPropertyRW  -- Int32
@@ -55,9 +38,4 @@ SELECT
 FROM
 	[Issue4715Table] [t1]
 LIMIT 2
-
-BeforeExecute
--- SQLite.Classic.MPM SQLite.Classic SQLite
-
-DROP TABLE IF EXISTS [Issue4715Table]
 

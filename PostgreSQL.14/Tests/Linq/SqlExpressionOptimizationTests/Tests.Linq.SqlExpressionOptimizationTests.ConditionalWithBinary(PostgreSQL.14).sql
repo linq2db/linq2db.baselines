@@ -1,48 +1,6 @@
 ﻿BeforeExecute
 -- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
 
-DROP TABLE IF EXISTS "OptimizationData"
-
-BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
-
-CREATE TABLE IF NOT EXISTS "OptimizationData"
-(
-	"Id"                  Int     NOT NULL,
-	"IntVlaue"            Int     NOT NULL,
-	"IntVlaueNullable"    Int         NULL,
-	"BoolValue"           Boolean NOT NULL,
-	"BoolValueNullable"   Boolean     NULL,
-	"StringValue"         text        NULL,
-	"StringValueNullable" text        NULL
-)
-
-BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
-
-INSERT INTO "OptimizationData"
-(
-	"Id",
-	"IntVlaue",
-	"IntVlaueNullable",
-	"BoolValue",
-	"BoolValueNullable",
-	"StringValue",
-	"StringValueNullable"
-)
-VALUES
-(1,1,0,True,True,'1','1'),
-(2,2,1,False,NULL,'0','0'),
-(3,4,4,False,NULL,'1','1'),
-(4,0,1,True,True,'0',NULL),
-(5,1,3,True,True,'1',NULL),
-(6,3,0,False,False,'0','0'),
-(7,1,4,False,False,'1','1'),
-(8,3,2,True,True,'0','0')
-
-BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
-
 /* x => x.IntVlaue == 1 ? 3 : 4 == 3 */
 SELECT
 	x."Id",
@@ -2384,9 +2342,4 @@ SELECT
 	t1."StringValueNullable"
 FROM
 	"OptimizationData" t1
-
-BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
-
-DROP TABLE IF EXISTS "OptimizationData"
 

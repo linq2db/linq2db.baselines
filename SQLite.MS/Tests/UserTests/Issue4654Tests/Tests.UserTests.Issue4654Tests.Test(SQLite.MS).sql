@@ -1,51 +1,6 @@
 ﻿BeforeExecute
 -- SQLite.MS SQLite
 
-DROP TABLE IF EXISTS [Issue4654Customer]
-
-BeforeExecute
--- SQLite.MS SQLite
-
-CREATE TABLE IF NOT EXISTS [Issue4654Customer]
-(
-	[Id]   INTEGER        NOT NULL PRIMARY KEY AUTOINCREMENT,
-	[Name] NVarChar(255)      NULL
-)
-
-BeforeExecute
--- SQLite.MS SQLite
-
-DROP TABLE IF EXISTS [Issue4654Order]
-
-BeforeExecute
--- SQLite.MS SQLite
-
-CREATE TABLE IF NOT EXISTS [Issue4654Order]
-(
-	[Id]          INTEGER        NOT NULL PRIMARY KEY AUTOINCREMENT,
-	[ProductName] NVarChar(255)      NULL,
-	[Quantity]    INTEGER        NOT NULL,
-	[CustomerId]  INTEGER        NOT NULL
-)
-
-BeforeExecute
--- SQLite.MS SQLite
-
-DROP TABLE IF EXISTS [Issue4654Product]
-
-BeforeExecute
--- SQLite.MS SQLite
-
-CREATE TABLE IF NOT EXISTS [Issue4654Product]
-(
-	[Id]    INTEGER        NOT NULL PRIMARY KEY AUTOINCREMENT,
-	[Name]  NVarChar(255)      NULL,
-	[Price] Decimal        NOT NULL
-)
-
-BeforeExecute
--- SQLite.MS SQLite
-
 SELECT
 	CAST([c_1].[Id] AS NVarChar),
 	[c_1].[Name]
@@ -63,19 +18,4 @@ SELECT
 	[p].[Name]
 FROM
 	[Issue4654Product] [p]
-
-BeforeExecute
--- SQLite.MS SQLite
-
-DROP TABLE IF EXISTS [Issue4654Product]
-
-BeforeExecute
--- SQLite.MS SQLite
-
-DROP TABLE IF EXISTS [Issue4654Order]
-
-BeforeExecute
--- SQLite.MS SQLite
-
-DROP TABLE IF EXISTS [Issue4654Customer]
 

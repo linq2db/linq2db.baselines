@@ -1,29 +1,6 @@
 ﻿BeforeExecute
 -- Firebird.4 Firebird4
 
-EXECUTE BLOCK AS BEGIN
-	IF (EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'TestFolder')) THEN
-		EXECUTE STATEMENT 'DROP TABLE "TestFolder"';
-END
-
-BeforeExecute
--- Firebird.4 Firebird4
-
-EXECUTE BLOCK AS BEGIN
-	IF (NOT EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'TestFolder')) THEN
-		EXECUTE STATEMENT '
-			CREATE TABLE "TestFolder"
-			(
-				"Id"       BINARY(16)                             NOT NULL,
-				"Label"    VarChar(255) CHARACTER SET UNICODE_FSS,
-				"ParentId" BINARY(16)
-			)
-		';
-END
-
-BeforeExecute
--- Firebird.4 Firebird4
-
 WITH RECURSIVE CTE
 (
 	"Level_1",
@@ -71,12 +48,4 @@ SELECT
 	"t2"."Entity_ParentId"
 FROM
 	CTE "t2"
-
-BeforeExecute
--- Firebird.4 Firebird4
-
-EXECUTE BLOCK AS BEGIN
-	IF (EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'TestFolder')) THEN
-		EXECUTE STATEMENT 'DROP TABLE "TestFolder"';
-END
 

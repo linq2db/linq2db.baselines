@@ -1,22 +1,6 @@
 ﻿BeforeExecute
 -- SqlServer.2008.MS SqlServer.2008
 
-IF (OBJECT_ID(N'[TreeItem]', N'U') IS NOT NULL)
-	DROP TABLE [TreeItem]
-
-BeforeExecute
--- SqlServer.2008.MS SqlServer.2008
-
-IF (OBJECT_ID(N'[TreeItem]', N'U') IS NULL)
-	CREATE TABLE [TreeItem]
-	(
-		[Id]       Int NOT NULL,
-		[ParentId] Int     NULL
-	)
-
-BeforeExecute
--- SqlServer.2008.MS SqlServer.2008
-
 SELECT
 	[x].[Id],
 	[x].[ParentId]
@@ -65,10 +49,4 @@ FROM
 		LEFT JOIN [TreeItem] [a_Parent] ON [t].[ParentId] = [a_Parent].[Id]
 WHERE
 	[a_Parent].[Id] > 0
-
-BeforeExecute
--- SqlServer.2008.MS SqlServer.2008
-
-IF (OBJECT_ID(N'[TreeItem]', N'U') IS NOT NULL)
-	DROP TABLE [TreeItem]
 

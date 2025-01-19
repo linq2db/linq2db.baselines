@@ -1,34 +1,6 @@
 ﻿BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
 
-DROP TABLE IF EXISTS `InsertIssueTest`
-
-BeforeExecute
--- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
-CREATE TABLE IF NOT EXISTS `InsertIssueTest`
-(
-	`ID`          SMALLINT NOT NULL,
-	`intDataType` INT          NULL
-)
-
-BeforeExecute
--- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
-INSERT INTO `InsertIssueTest`
-(
-	`ID`,
-	`intDataType`
-)
-VALUES
-(0,0),
-(0,0),
-(1234,1234),
-(1234,1234)
-
-BeforeExecute
--- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
 INSERT INTO `InsertIssueTest`
 (
 	`ID`,
@@ -80,9 +52,4 @@ SELECT
 	`t1`.`intDataType`
 FROM
 	`InsertIssueTest` `t1`
-
-BeforeExecute
--- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
-DROP TABLE IF EXISTS `InsertIssueTest`
 

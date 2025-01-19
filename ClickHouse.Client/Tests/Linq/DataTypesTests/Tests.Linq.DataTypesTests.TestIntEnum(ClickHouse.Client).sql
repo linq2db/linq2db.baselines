@@ -1,35 +1,6 @@
 ﻿BeforeExecute
 -- ClickHouse.Client ClickHouse
 
-DROP TABLE IF EXISTS IntEnumTable
-
-BeforeExecute
--- ClickHouse.Client ClickHouse
-
-CREATE TABLE IF NOT EXISTS IntEnumTable
-(
-	Id             Int32,
-	Column         Int32,
-	ColumnNullable Nullable(Int32)
-)
-ENGINE = Memory()
-
-BeforeExecute
--- ClickHouse.Client ClickHouse
-
-INSERT INTO IntEnumTable
-(
-	Id,
-	Column,
-	ColumnNullable
-)
-VALUES
-(1,1,NULL),
-(2,2,3)
-
-BeforeExecute
--- ClickHouse.Client ClickHouse
-
 SELECT
 	r.Id,
 	r.Column,
@@ -155,9 +126,4 @@ FROM
 	IntEnumTable t1
 ORDER BY
 	t1.Id
-
-BeforeExecute
--- ClickHouse.Client ClickHouse
-
-DROP TABLE IF EXISTS IntEnumTable
 

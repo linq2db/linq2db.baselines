@@ -1,23 +1,5 @@
 ﻿BeforeExecute
 -- Access.Ace.OleDb AccessOleDb
-
-DROP TABLE [Issue4280]
-
-BeforeExecute
--- Access.Ace.OleDb AccessOleDb
-
-CREATE TABLE [Issue4280]
-(
-	[Id]           Int           NOT NULL,
-	[SerialNumber] NVarChar(255)     NULL,
-	[DeviceType]   NVarChar(255)     NULL,
-	[Location]     NVarChar(255)     NULL,
-
-	CONSTRAINT [PK_Issue4280] PRIMARY KEY CLUSTERED ([Id])
-)
-
-BeforeExecute
--- Access.Ace.OleDb AccessOleDb
 DECLARE @Id Integer -- Int32
 SET     @Id = 2
 DECLARE @SerialNumber VarWChar(7) -- String
@@ -126,9 +108,4 @@ FROM
 	[Issue4280] [t1]
 ORDER BY
 	[t1].[Id]
-
-BeforeExecute
--- Access.Ace.OleDb AccessOleDb
-
-DROP TABLE [Issue4280]
 

@@ -1,38 +1,6 @@
 ﻿BeforeExecute
 -- Sybase.Managed Sybase
 
-IF (OBJECT_ID(N'ComplexPredicate') IS NOT NULL)
-	DROP TABLE [ComplexPredicate]
-
-BeforeExecute
--- Sybase.Managed Sybase
-
-IF (OBJECT_ID(N'ComplexPredicate') IS NULL)
-	EXECUTE('
-		CREATE TABLE [ComplexPredicate]
-		(
-			[Id]    Int           NOT NULL,
-			[Value] NVarChar(255)     NULL
-		)
-	')
-
-BeforeExecute
--- Sybase.Managed Sybase
-
-INSERT INTO [ComplexPredicate]
-(
-	[Id],
-	[Value]
-)
-SELECT 1,NULL UNION ALL
-SELECT 2,'other' UNION ALL
-SELECT 3,'123' UNION ALL
-SELECT 4,'test' UNION ALL
-SELECT 5,'1'
-
-BeforeExecute
--- Sybase.Managed Sybase
-
 SELECT
 	[r].[Id],
 	[r].[Value]
@@ -58,10 +26,4 @@ SELECT
 	[t1].[Value]
 FROM
 	[ComplexPredicate] [t1]
-
-BeforeExecute
--- Sybase.Managed Sybase
-
-IF (OBJECT_ID(N'ComplexPredicate') IS NOT NULL)
-	DROP TABLE [ComplexPredicate]
 

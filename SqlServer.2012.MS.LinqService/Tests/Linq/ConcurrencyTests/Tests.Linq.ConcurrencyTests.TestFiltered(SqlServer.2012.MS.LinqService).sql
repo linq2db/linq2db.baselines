@@ -1,24 +1,5 @@
 ﻿BeforeExecute
 -- SqlServer.2012.MS SqlServer.2012
-
-IF (OBJECT_ID(N'[ConcurrencyFiltered]', N'U') IS NOT NULL)
-	DROP TABLE [ConcurrencyFiltered]
-
-BeforeExecute
--- SqlServer.2012.MS SqlServer.2012
-
-IF (OBJECT_ID(N'[ConcurrencyFiltered]', N'U') IS NULL)
-	CREATE TABLE [ConcurrencyFiltered]
-	(
-		[Id]    Int            NOT NULL,
-		[Stamp] Int            NOT NULL,
-		[Value] NVarChar(4000)     NULL,
-
-		CONSTRAINT [PK_ConcurrencyFiltered] PRIMARY KEY CLUSTERED ([Id])
-	)
-
-BeforeExecute
--- SqlServer.2012.MS SqlServer.2012
 DECLARE @Id Int -- Int32
 SET     @Id = 1
 DECLARE @Stamp Int -- Int32
@@ -150,10 +131,4 @@ SELECT
 	[t1].[Value]
 FROM
 	[ConcurrencyFiltered] [t1]
-
-BeforeExecute
--- SqlServer.2012.MS SqlServer.2012
-
-IF (OBJECT_ID(N'[ConcurrencyFiltered]', N'U') IS NOT NULL)
-	DROP TABLE [ConcurrencyFiltered]
 

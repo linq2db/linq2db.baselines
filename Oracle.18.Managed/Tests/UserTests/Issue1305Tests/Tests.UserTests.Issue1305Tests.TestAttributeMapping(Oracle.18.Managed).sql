@@ -1,44 +1,6 @@
 ﻿BeforeExecute
 -- Oracle.18.Managed Oracle.Managed Oracle12
 
-BEGIN
-	EXECUTE IMMEDIATE 'DROP TABLE "ColumnOrderTest"';
-EXCEPTION
-	WHEN OTHERS THEN
-		IF SQLCODE != -942 THEN
-			RAISE;
-		END IF;
-END;
-
-BeforeExecute
--- Oracle.18.Managed Oracle.Managed Oracle12
-
-BEGIN
-	EXECUTE IMMEDIATE '
-		CREATE TABLE "ColumnOrderTest"
-		(
-			"RecordID"       Int          NOT NULL,
-			"EffectiveStart" timestamp    NOT NULL,
-			"EffectiveEnd"   timestamp        NULL,
-			"Key"            Int          NOT NULL,
-			"Name"           VarChar(255)     NULL,
-			"Code"           VarChar(255)     NULL,
-			"Audit1ID"       Int          NOT NULL,
-			"Audit2ID"       Int          NOT NULL,
-
-			CONSTRAINT "PK_ColumnOrderTest" PRIMARY KEY ("RecordID")
-		)
-	';
-EXCEPTION
-	WHEN OTHERS THEN
-		IF SQLCODE != -955 THEN
-			RAISE;
-		END IF;
-END;
-
-BeforeExecute
--- Oracle.18.Managed Oracle.Managed Oracle12
-
 SELECT USER FROM DUAL
 
 BeforeExecute
@@ -439,15 +401,3 @@ SELECT * FROM SYSTEM.TEST_TABLE_FUNCTION(NULL)
 
 BeforeExecute
 RollbackTransaction
-BeforeExecute
--- Oracle.18.Managed Oracle.Managed Oracle12
-
-BEGIN
-	EXECUTE IMMEDIATE 'DROP TABLE "ColumnOrderTest"';
-EXCEPTION
-	WHEN OTHERS THEN
-		IF SQLCODE != -942 THEN
-			RAISE;
-		END IF;
-END;
-

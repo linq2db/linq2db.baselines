@@ -1,54 +1,11 @@
 ﻿BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
 
-DROP TABLE IF EXISTS "Test3697"
-
-BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
-
-CREATE TABLE IF NOT EXISTS "Test3697"
-(
-	"Id" SERIAL  NOT NULL,
-
-	CONSTRAINT "PK_Test3697" PRIMARY KEY ("Id")
-)
-
-BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
-
 INSERT INTO "Test3697" DEFAULT VALUES
 
 BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
 
-DROP TABLE IF EXISTS "Test3697Item"
-
-BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
-
-CREATE TABLE IF NOT EXISTS "Test3697Item"
-(
-	"Id"     SERIAL  NOT NULL,
-	"Value"  Int     NOT NULL,
-	"TestId" Int     NOT NULL,
-
-	CONSTRAINT "PK_Test3697Item" PRIMARY KEY ("Id")
-)
-
-BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
-
-INSERT INTO "Test3697Item"
-(
-	"Value",
-	"TestId"
-)
-VALUES
-(3,1)
-
-BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
-
 UPDATE
 	"Test3697Item"
 SET
@@ -73,14 +30,4 @@ WHERE
 	a."Id" = "Test3697Item"."TestId"
 RETURNING
 	"Test3697Item"."Id"
-
-BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
-
-DROP TABLE IF EXISTS "Test3697Item"
-
-BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
-
-DROP TABLE IF EXISTS "Test3697"
 

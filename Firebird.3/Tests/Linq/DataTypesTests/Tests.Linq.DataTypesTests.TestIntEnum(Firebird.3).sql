@@ -1,40 +1,5 @@
 ﻿BeforeExecute
 -- Firebird.3 Firebird3
-
-EXECUTE BLOCK AS BEGIN
-	IF (EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'IntEnumTable')) THEN
-		EXECUTE STATEMENT 'DROP TABLE "IntEnumTable"';
-END
-
-BeforeExecute
--- Firebird.3 Firebird3
-
-EXECUTE BLOCK AS BEGIN
-	IF (NOT EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'IntEnumTable')) THEN
-		EXECUTE STATEMENT '
-			CREATE TABLE "IntEnumTable"
-			(
-				"Id"             Int NOT NULL,
-				"Column"         Int NOT NULL,
-				"ColumnNullable" Int
-			)
-		';
-END
-
-BeforeExecute
--- Firebird.3 Firebird3
-
-INSERT INTO "IntEnumTable"
-(
-	"Id",
-	"Column",
-	"ColumnNullable"
-)
-SELECT 1,1,NULL FROM rdb$database UNION ALL
-SELECT 2,2,3 FROM rdb$database
-
-BeforeExecute
--- Firebird.3 Firebird3
 DECLARE @Column Integer -- Int32
 SET     @Column = 2
 DECLARE @ColumnNullable Integer -- Int32
@@ -182,12 +147,4 @@ FROM
 	"IntEnumTable" "t1"
 ORDER BY
 	"t1"."Id"
-
-BeforeExecute
--- Firebird.3 Firebird3
-
-EXECUTE BLOCK AS BEGIN
-	IF (EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'IntEnumTable')) THEN
-		EXECUTE STATEMENT 'DROP TABLE "IntEnumTable"';
-END
 

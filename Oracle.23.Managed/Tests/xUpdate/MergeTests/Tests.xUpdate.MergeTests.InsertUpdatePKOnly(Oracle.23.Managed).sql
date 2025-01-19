@@ -1,44 +1,6 @@
 ﻿BeforeExecute
 -- Oracle.23.Managed Oracle.Managed Oracle12
 
-BEGIN
-	EXECUTE IMMEDIATE 'DROP TABLE "PKOnlyTable"';
-EXCEPTION
-	WHEN OTHERS THEN
-		IF SQLCODE != -942 THEN
-			RAISE;
-		END IF;
-END;
-
-BeforeExecute
--- Oracle.23.Managed Oracle.Managed Oracle12
-
-BEGIN
-	EXECUTE IMMEDIATE '
-		CREATE TABLE "PKOnlyTable"
-		(
-			ID Int NOT NULL,
-
-			CONSTRAINT "PK_PKOnlyTable" PRIMARY KEY (ID)
-		)
-	';
-EXCEPTION
-	WHEN OTHERS THEN
-		IF SQLCODE != -955 THEN
-			RAISE;
-		END IF;
-END;
-
-BeforeExecute
--- Oracle.23.Managed Oracle.Managed Oracle12
-
-INSERT ALL
-	INTO "PKOnlyTable" (ID) VALUES (2)
-SELECT * FROM dual
-
-BeforeExecute
--- Oracle.23.Managed Oracle.Managed Oracle12
-
 MERGE INTO "PKOnlyTable" Target
 USING (
 	SELECT 1 AS "source_ID" FROM sys.dual
@@ -67,16 +29,4 @@ FROM
 	"PKOnlyTable" t1
 ORDER BY
 	t1.ID
-
-BeforeExecute
--- Oracle.23.Managed Oracle.Managed Oracle12
-
-BEGIN
-	EXECUTE IMMEDIATE 'DROP TABLE "PKOnlyTable"';
-EXCEPTION
-	WHEN OTHERS THEN
-		IF SQLCODE != -942 THEN
-			RAISE;
-		END IF;
-END;
 

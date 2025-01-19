@@ -1,21 +1,6 @@
 ﻿BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
 
-DROP TABLE IF EXISTS `TestFolder`
-
-BeforeExecute
--- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
-CREATE TABLE IF NOT EXISTS `TestFolder`
-(
-	`Id`       CHAR(36)      NOT NULL,
-	`Label`    VARCHAR(4000)     NULL,
-	`ParentId` CHAR(36)          NULL
-)
-
-BeforeExecute
--- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
 WITH RECURSIVE `CTE`
 (
 	`Level_1`,
@@ -63,9 +48,4 @@ SELECT
 	`t2`.`Entity_ParentId`
 FROM
 	`CTE` `t2`
-
-BeforeExecute
--- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
-DROP TABLE IF EXISTS `TestFolder`
 

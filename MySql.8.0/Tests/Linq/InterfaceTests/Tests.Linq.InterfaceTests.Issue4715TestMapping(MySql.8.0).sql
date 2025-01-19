@@ -1,22 +1,5 @@
 ﻿BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
-DROP TABLE IF EXISTS `Issue4715Table`
-
-BeforeExecute
--- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
-CREATE TABLE IF NOT EXISTS `Issue4715Table`
-(
-	`Id`    INT NOT NULL,
-	`Prop1` INT NOT NULL,
-	`Prop2` INT NOT NULL,
-	`Prop3` INT NOT NULL,
-	`Prop4` INT NOT NULL
-)
-
-BeforeExecute
--- MySql.8.0 MySql.8.0.MySql.Data MySql80
 DECLARE @Id Int32
 SET     @Id = 1
 DECLARE @ImplicitPropertyRW Int32
@@ -55,9 +38,4 @@ SELECT
 FROM
 	`Issue4715Table` `t1`
 LIMIT 2
-
-BeforeExecute
--- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
-DROP TABLE IF EXISTS `Issue4715Table`
 

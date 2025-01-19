@@ -1,31 +1,5 @@
 ﻿BeforeExecute
 -- Sybase.Managed Sybase
-
-IF (OBJECT_ID(N'InheritanceFilter') IS NOT NULL)
-	DROP TABLE [InheritanceFilter]
-
-BeforeExecute
--- Sybase.Managed Sybase
-
-IF (OBJECT_ID(N'InheritanceFilter') IS NULL)
-	EXECUTE('
-		CREATE TABLE [InheritanceFilter]
-		(
-			[Id]                Int NOT NULL,
-			[Code]              Int NOT NULL,
-			[Child1Field]       Int     NULL,
-			[Child2Field]       Int     NULL,
-			[Grandchild11Field] Int     NULL,
-			[Grandchild12Field] Int     NULL,
-			[Grandchild21Field] Int     NULL,
-			[Grandchild22Field] Int     NULL,
-
-			CONSTRAINT [PK_InheritanceFilter] PRIMARY KEY CLUSTERED ([Id])
-		)
-	')
-
-BeforeExecute
--- Sybase.Managed Sybase
 DECLARE @Id Integer -- Int32
 SET     @Id = 1
 DECLARE @Code Integer -- Int32
@@ -186,10 +160,4 @@ SELECT
 	[t1].[Grandchild22Field]
 FROM
 	[InheritanceFilter] [t1]
-
-BeforeExecute
--- Sybase.Managed Sybase
-
-IF (OBJECT_ID(N'InheritanceFilter') IS NOT NULL)
-	DROP TABLE [InheritanceFilter]
 

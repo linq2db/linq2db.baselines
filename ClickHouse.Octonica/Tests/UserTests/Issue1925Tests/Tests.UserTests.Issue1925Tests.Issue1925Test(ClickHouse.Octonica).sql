@@ -1,37 +1,6 @@
 ﻿BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
-DROP TABLE IF EXISTS SampleClass
-
-BeforeExecute
--- ClickHouse.Octonica ClickHouse
-
-CREATE TABLE IF NOT EXISTS SampleClass
-(
-	Id    Int32,
-	Value Nullable(String)
-)
-ENGINE = Memory()
-
-BeforeExecute
--- ClickHouse.Octonica ClickHouse
-
-INSERT INTO SampleClass
-(
-	Id,
-	Value
-)
-VALUES
-(1,'6'),
-(2,'x[0-9]x'),
-(3,'x[0x'),
-(4,'x[]x'),
-(5,'x]'),
-(6,']x')
-
-BeforeExecute
--- ClickHouse.Octonica ClickHouse
-
 SELECT
 	r.Id
 FROM
@@ -160,9 +129,4 @@ FROM
 	SampleClass r
 WHERE
 	r.Value LIKE '[0-9]'
-
-BeforeExecute
--- ClickHouse.Octonica ClickHouse
-
-DROP TABLE IF EXISTS SampleClass
 

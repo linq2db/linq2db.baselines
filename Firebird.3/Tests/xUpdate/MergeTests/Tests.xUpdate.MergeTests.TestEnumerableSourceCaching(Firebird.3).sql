@@ -1,30 +1,6 @@
 ﻿BeforeExecute
 -- Firebird.3 Firebird3
 
-EXECUTE BLOCK AS BEGIN
-	IF (EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'CacheTestTable')) THEN
-		EXECUTE STATEMENT 'DROP TABLE "CacheTestTable"';
-END
-
-BeforeExecute
--- Firebird.3 Firebird3
-
-EXECUTE BLOCK AS BEGIN
-	IF (NOT EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'CacheTestTable')) THEN
-		EXECUTE STATEMENT '
-			CREATE TABLE "CacheTestTable"
-			(
-				"Id"    Int NOT NULL,
-				"Value" Int NOT NULL,
-
-				CONSTRAINT "PK_CacheTestTable" PRIMARY KEY ("Id")
-			)
-		';
-END
-
-BeforeExecute
--- Firebird.3 Firebird3
-
 MERGE INTO "CacheTestTable" "Target"
 USING (
 	SELECT 1 AS "source_Id", 1 AS "source_Value" FROM rdb$database
@@ -107,12 +83,4 @@ FROM
 	"CacheTestTable" "t1"
 ORDER BY
 	"t1"."Id"
-
-BeforeExecute
--- Firebird.3 Firebird3
-
-EXECUTE BLOCK AS BEGIN
-	IF (EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'CacheTestTable')) THEN
-		EXECUTE STATEMENT 'DROP TABLE "CacheTestTable"';
-END
 

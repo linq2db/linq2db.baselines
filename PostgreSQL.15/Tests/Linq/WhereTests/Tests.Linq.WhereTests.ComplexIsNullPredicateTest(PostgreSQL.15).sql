@@ -1,35 +1,6 @@
 ﻿BeforeExecute
 -- PostgreSQL.15 PostgreSQL
 
-DROP TABLE IF EXISTS "ComplexPredicate"
-
-BeforeExecute
--- PostgreSQL.15 PostgreSQL
-
-CREATE TABLE IF NOT EXISTS "ComplexPredicate"
-(
-	"Id"    Int  NOT NULL,
-	"Value" text     NULL
-)
-
-BeforeExecute
--- PostgreSQL.15 PostgreSQL
-
-INSERT INTO "ComplexPredicate"
-(
-	"Id",
-	"Value"
-)
-VALUES
-(1,NULL),
-(2,'other'),
-(3,'123'),
-(4,'test'),
-(5,'1')
-
-BeforeExecute
--- PostgreSQL.15 PostgreSQL
-
 SELECT
 	r."Id",
 	r."Value"
@@ -55,9 +26,4 @@ SELECT
 	t1."Value"
 FROM
 	"ComplexPredicate" t1
-
-BeforeExecute
--- PostgreSQL.15 PostgreSQL
-
-DROP TABLE IF EXISTS "ComplexPredicate"
 

@@ -1,32 +1,6 @@
 ﻿BeforeExecute
 -- Firebird.4 Firebird4
 
-EXECUTE BLOCK AS BEGIN
-	IF (EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'TableWithGuid')) THEN
-		EXECUTE STATEMENT 'DROP TABLE "TableWithGuid"';
-END
-
-BeforeExecute
--- Firebird.4 Firebird4
-
-EXECUTE BLOCK AS BEGIN
-	IF (NOT EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'TableWithGuid')) THEN
-		EXECUTE STATEMENT '
-			CREATE TABLE "TableWithGuid"
-			(
-				"Default"  BINARY(16) NOT NULL,
-				"Binary"   BINARY(16) NOT NULL,
-				"String"   CHAR(38)   NOT NULL,
-				"DefaultN" BINARY(16),
-				"BinaryN"  BINARY(16),
-				"StringN"  CHAR(38)
-			)
-		';
-END
-
-BeforeExecute
--- Firebird.4 Firebird4
-
 INSERT INTO "TableWithGuid"
 (
 	"Default",
@@ -118,12 +92,4 @@ FROM
 	"TableWithGuid" "x"
 WHERE
 	"x"."StringN" = '66aa9df9-260f-4a2b-ac50-9ca8ce7ad725'
-
-BeforeExecute
--- Firebird.4 Firebird4
-
-EXECUTE BLOCK AS BEGIN
-	IF (EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'TableWithGuid')) THEN
-		EXECUTE STATEMENT 'DROP TABLE "TableWithGuid"';
-END
 

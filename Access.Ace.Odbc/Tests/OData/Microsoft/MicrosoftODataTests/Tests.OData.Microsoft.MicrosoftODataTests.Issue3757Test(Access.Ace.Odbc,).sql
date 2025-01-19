@@ -1,41 +1,4 @@
 ﻿BeforeExecute
--- Access.Ace.Odbc AccessODBC
-
-DROP TABLE [Issue3757Level1]
-
-BeforeExecute
--- Access.Ace.Odbc AccessODBC
-
-CREATE TABLE [Issue3757Level1]
-(
-	[ID]     Int           NOT NULL,
-	[ValS]   NVarChar(255)     NULL,
-	[ValB]   Bit               NULL,
-	[ValInt] Int               NULL,
-
-	CONSTRAINT [PK_Issue3757Level1] PRIMARY KEY CLUSTERED ([ID])
-)
-
-BeforeExecute
--- Access.Ace.Odbc AccessODBC
-
-DROP TABLE [Issue3757Level2]
-
-BeforeExecute
--- Access.Ace.Odbc AccessODBC
-
-CREATE TABLE [Issue3757Level2]
-(
-	[ID]       Int           NOT NULL,
-	[ParentId] Int           NOT NULL,
-	[ValS]     NVarChar(255)     NULL,
-	[ValB]     Bit               NULL,
-	[ValInt]   Int               NULL,
-
-	CONSTRAINT [PK_Issue3757Level2] PRIMARY KEY CLUSTERED ([ID])
-)
-
-BeforeExecute
 BeginTransaction(Unspecified)
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
@@ -62,14 +25,4 @@ SELECT
 	[l1].[ValInt]
 FROM
 	[Issue3757Level1] [l1]
-
-BeforeExecute
--- Access.Ace.Odbc AccessODBC
-
-DROP TABLE [Issue3757Level2]
-
-BeforeExecute
--- Access.Ace.Odbc AccessODBC
-
-DROP TABLE [Issue3757Level1]
 

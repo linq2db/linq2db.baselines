@@ -1,64 +1,5 @@
 ﻿BeforeExecute
 -- Informix.DB2 Informix
-
-DROP TABLE IF EXISTS ByteTable
-
-BeforeExecute
--- Informix.DB2 Informix
-
-CREATE TABLE IF NOT EXISTS ByteTable
-(
-	Id             Int      NOT NULL,
-	"Column"       SmallInt NOT NULL,
-	ColumnNullable SmallInt     NULL
-)
-
-BeforeExecute
--- Informix.DB2 Informix
-DECLARE @Id Integer(4) -- Int32
-SET     @Id = 1
-DECLARE @Column SmallInt(2) -- Int16
-SET     @Column = 1
-DECLARE @ColumnNullable SmallInt -- Int16
-SET     @ColumnNullable = NULL
-
-INSERT INTO ByteTable
-(
-	Id,
-	"Column",
-	ColumnNullable
-)
-VALUES
-(
-	@Id,
-	@Column,
-	@ColumnNullable
-)
-
-BeforeExecute
--- Informix.DB2 Informix
-DECLARE @Id Integer(4) -- Int32
-SET     @Id = 2
-DECLARE @Column SmallInt(2) -- Int16
-SET     @Column = 255
-DECLARE @ColumnNullable SmallInt(2) -- Int16
-SET     @ColumnNullable = 2
-
-INSERT INTO ByteTable
-(
-	Id,
-	"Column",
-	ColumnNullable
-)
-VALUES
-(
-	@Id,
-	@Column,
-	@ColumnNullable
-)
-
-BeforeExecute
--- Informix.DB2 Informix
 DECLARE @Column SmallInt(2) -- Int16
 SET     @Column = 255
 DECLARE @ColumnNullable SmallInt(2) -- Int16
@@ -229,9 +170,4 @@ FROM
 	ByteTable t1
 ORDER BY
 	t1.Id
-
-BeforeExecute
--- Informix.DB2 Informix
-
-DROP TABLE IF EXISTS ByteTable
 

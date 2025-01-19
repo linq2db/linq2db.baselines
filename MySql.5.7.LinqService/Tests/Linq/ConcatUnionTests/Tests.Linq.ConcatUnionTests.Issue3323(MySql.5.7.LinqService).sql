@@ -1,24 +1,6 @@
 ﻿BeforeExecute
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
 
-DROP TABLE IF EXISTS `Issue3323Table`
-
-BeforeExecute
--- MySql.5.7 MySql.5.7.MySql.Data MySql57
-
-CREATE TABLE IF NOT EXISTS `Issue3323Table`
-(
-	`Id`       INT           NOT NULL,
-	`FistName` VARCHAR(4000)     NULL,
-	`LastName` VARCHAR(4000)     NULL,
-	`Text`     VARCHAR(4000) NOT NULL,
-
-	CONSTRAINT `PK_Issue3323Table` PRIMARY KEY CLUSTERED (`Id`)
-)
-
-BeforeExecute
--- MySql.5.7 MySql.5.7.MySql.Data MySql57
-
 INSERT INTO `Issue3323Table`
 (
 	`Id`,
@@ -50,9 +32,4 @@ SELECT
 	Concat(`t2`.`FistName`, ' ', `t2`.`LastName`)
 FROM
 	`Issue3323Table` `t2`
-
-BeforeExecute
--- MySql.5.7 MySql.5.7.MySql.Data MySql57
-
-DROP TABLE IF EXISTS `Issue3323Table`
 

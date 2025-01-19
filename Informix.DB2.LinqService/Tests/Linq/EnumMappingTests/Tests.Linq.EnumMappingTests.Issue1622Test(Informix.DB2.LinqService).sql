@@ -1,21 +1,5 @@
 ﻿BeforeExecute
 -- Informix.DB2 Informix
-
-DROP TABLE IF EXISTS Issue1622Table
-
-BeforeExecute
--- Informix.DB2 Informix
-
-CREATE TABLE IF NOT EXISTS Issue1622Table
-(
-	Id       Int           NOT NULL,
-	SomeText NVarChar(255)     NULL,
-
-	PRIMARY KEY (Id)
-)
-
-BeforeExecute
--- Informix.DB2 Informix
 DECLARE @Id Integer(4) -- Int32
 SET     @Id = 1
 DECLARE @SomeText VarChar(13) -- String
@@ -53,9 +37,4 @@ FROM
 	Issue1622Table e
 WHERE
 	e.Id = 1
-
-BeforeExecute
--- Informix.DB2 Informix
-
-DROP TABLE IF EXISTS Issue1622Table
 

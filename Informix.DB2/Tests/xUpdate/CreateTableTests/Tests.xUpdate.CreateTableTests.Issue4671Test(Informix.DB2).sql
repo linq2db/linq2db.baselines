@@ -1,22 +1,6 @@
 ﻿BeforeExecute
 -- Informix.DB2 Informix
 
-DROP TABLE IF EXISTS Issue4671Entity
-
-BeforeExecute
--- Informix.DB2 Informix
-
-CREATE TABLE IF NOT EXISTS Issue4671Entity
-(
-	Id      SERIAL  NOT NULL,
-	"Value" Int     NOT NULL,
-
-	PRIMARY KEY (Id)
-)
-
-BeforeExecute
--- Informix.DB2 Informix
-
 CREATE TEMP TABLE Issue4671EntityTMP
 (
 	Id      SERIAL  NOT NULL,
@@ -71,9 +55,4 @@ BeforeExecute
 -- Informix.DB2 Informix
 
 DROP TABLE IF EXISTS Issue4671EntityTMP
-
-BeforeExecute
--- Informix.DB2 Informix
-
-DROP TABLE IF EXISTS Issue4671Entity
 

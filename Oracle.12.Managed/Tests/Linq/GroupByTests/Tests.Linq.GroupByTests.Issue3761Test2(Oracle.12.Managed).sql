@@ -1,40 +1,6 @@
 ﻿BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12
 
-BEGIN
-	EXECUTE IMMEDIATE 'DROP TABLE "Issue3761Table"';
-EXCEPTION
-	WHEN OTHERS THEN
-		IF SQLCODE != -942 THEN
-			RAISE;
-		END IF;
-END;
-
-BeforeExecute
--- Oracle.12.Managed Oracle.Managed Oracle12
-
-BEGIN
-	EXECUTE IMMEDIATE '
-		CREATE TABLE "Issue3761Table"
-		(
-			LETO     Int             NOT NULL,
-			STEVILKA Int             NOT NULL,
-			DATUM    timestamp           NULL,
-			SKUPAJ   Decimal(28, 10)     NULL,
-
-			CONSTRAINT "PK_Issue3761Table" PRIMARY KEY (LETO, STEVILKA)
-		)
-	';
-EXCEPTION
-	WHEN OTHERS THEN
-		IF SQLCODE != -955 THEN
-			RAISE;
-		END IF;
-END;
-
-BeforeExecute
--- Oracle.12.Managed Oracle.Managed Oracle12
-
 SELECT
 	t1."Year_1",
 	t1."Month_1",
@@ -84,16 +50,4 @@ FROM
 GROUP BY
 	t2."Year_1",
 	t2."Month_1"
-
-BeforeExecute
--- Oracle.12.Managed Oracle.Managed Oracle12
-
-BEGIN
-	EXECUTE IMMEDIATE 'DROP TABLE "Issue3761Table"';
-EXCEPTION
-	WHEN OTHERS THEN
-		IF SQLCODE != -942 THEN
-			RAISE;
-		END IF;
-END;
 

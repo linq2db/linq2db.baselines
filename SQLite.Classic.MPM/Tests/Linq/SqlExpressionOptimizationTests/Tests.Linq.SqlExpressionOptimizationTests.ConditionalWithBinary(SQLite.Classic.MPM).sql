@@ -1,48 +1,6 @@
 ﻿BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
-DROP TABLE IF EXISTS [OptimizationData]
-
-BeforeExecute
--- SQLite.Classic.MPM SQLite.Classic SQLite
-
-CREATE TABLE IF NOT EXISTS [OptimizationData]
-(
-	[Id]                  INTEGER       NOT NULL,
-	[IntVlaue]            INTEGER       NOT NULL,
-	[IntVlaueNullable]    INTEGER           NULL,
-	[BoolValue]           Bit           NOT NULL,
-	[BoolValueNullable]   Bit               NULL,
-	[StringValue]         NVarChar(255)     NULL,
-	[StringValueNullable] NVarChar(255)     NULL
-)
-
-BeforeExecute
--- SQLite.Classic.MPM SQLite.Classic SQLite
-
-INSERT INTO [OptimizationData]
-(
-	[Id],
-	[IntVlaue],
-	[IntVlaueNullable],
-	[BoolValue],
-	[BoolValueNullable],
-	[StringValue],
-	[StringValueNullable]
-)
-VALUES
-(1,1,0,1,1,'1','1'),
-(2,2,1,0,NULL,'0','0'),
-(3,4,4,0,NULL,'1','1'),
-(4,0,1,1,1,'0',NULL),
-(5,1,3,1,1,'1',NULL),
-(6,3,0,0,0,'0','0'),
-(7,1,4,0,0,'1','1'),
-(8,3,2,1,1,'0','0')
-
-BeforeExecute
--- SQLite.Classic.MPM SQLite.Classic SQLite
-
 /* x => x.IntVlaue == 1 ? 3 : 4 == 3 */
 SELECT
 	[x].[Id],
@@ -2385,9 +2343,4 @@ SELECT
 	[t1].[StringValueNullable]
 FROM
 	[OptimizationData] [t1]
-
-BeforeExecute
--- SQLite.Classic.MPM SQLite.Classic SQLite
-
-DROP TABLE IF EXISTS [OptimizationData]
 

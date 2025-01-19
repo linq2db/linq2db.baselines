@@ -1,26 +1,4 @@
 ﻿BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
-
-DROP TABLE IF EXISTS "InheritanceFilter"
-
-BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
-
-CREATE TABLE IF NOT EXISTS "InheritanceFilter"
-(
-	"Id"                Int NOT NULL,
-	"Code"              Int NOT NULL,
-	"Child1Field"       Int     NULL,
-	"Child2Field"       Int     NULL,
-	"Grandchild11Field" Int     NULL,
-	"Grandchild12Field" Int     NULL,
-	"Grandchild21Field" Int     NULL,
-	"Grandchild22Field" Int     NULL,
-
-	CONSTRAINT "PK_InheritanceFilter" PRIMARY KEY ("Id")
-)
-
-BeforeExecute
 INSERT BULK "InheritanceFilter"(Id, Code, Child1Field, Child2Field, Grandchild11Field, Grandchild12Field, Grandchild21Field, Grandchild22Field)
 
 BeforeExecute
@@ -37,9 +15,4 @@ SELECT
 	t1."Grandchild22Field"
 FROM
 	"InheritanceFilter" t1
-
-BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
-
-DROP TABLE IF EXISTS "InheritanceFilter"
 

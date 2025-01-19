@@ -1,33 +1,6 @@
 ﻿BeforeExecute
 -- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
 
-DROP TABLE IF EXISTS "JsonComparisonTable1"
-
-BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
-
-CREATE TABLE IF NOT EXISTS "JsonComparisonTable1"
-(
-	"Text"  text      NULL,
-	"Json"  json      NULL,
-	"Jsonb" jsonb     NULL
-)
-
-BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
-
-INSERT INTO "JsonComparisonTable1"
-(
-	"Text",
-	"Json",
-	"Jsonb"
-)
-VALUES
-('{ "field": 123}','{  "field": 123}','{   "field": 123}')
-
-BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
-
 SELECT
 	COUNT(*)
 FROM
@@ -104,9 +77,4 @@ FROM
 	"JsonComparisonTable1" r
 WHERE
 	r."Jsonb" = r."Json"::jsonb OR r."Jsonb" IS NULL AND r."Json" IS NULL
-
-BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
-
-DROP TABLE IF EXISTS "JsonComparisonTable1"
 

@@ -1,24 +1,6 @@
 ﻿BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
-DROP TABLE IF EXISTS Issue4715Table
-
-BeforeExecute
--- ClickHouse.MySql ClickHouse
-
-CREATE TABLE IF NOT EXISTS Issue4715Table
-(
-	Id    Int32,
-	Prop1 Int32,
-	Prop2 Int32,
-	Prop3 Int32,
-	Prop4 Int32
-)
-ENGINE = Memory()
-
-BeforeExecute
--- ClickHouse.MySql ClickHouse
-
 INSERT INTO Issue4715Table
 (
 	Id,
@@ -46,9 +28,4 @@ SELECT
 FROM
 	Issue4715Table t1
 LIMIT 2
-
-BeforeExecute
--- ClickHouse.MySql ClickHouse
-
-DROP TABLE IF EXISTS Issue4715Table
 

@@ -1,20 +1,6 @@
 ﻿BeforeExecute
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql
 
-DROP TABLE IF EXISTS `HierarchyTree`
-
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
-
-CREATE TABLE IF NOT EXISTS `HierarchyTree`
-(
-	`Id`       INT NOT NULL,
-	`ParentId` INT     NULL
-)
-
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
-
 WITH RECURSIVE `CTE_1` (`Id`)
 AS
 (
@@ -59,9 +45,4 @@ FROM
 		INNER JOIN `HierarchyTree` `data2` ON `data2`.`Id` = `t4`.`Id`
 		INNER JOIN `HierarchyTree` `data3` ON `data3`.`Id` = `t4`.`Id`
 		INNER JOIN `HierarchyTree` `data4` ON `data4`.`Id` = `t4`.`Id`
-
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
-
-DROP TABLE IF EXISTS `HierarchyTree`
 

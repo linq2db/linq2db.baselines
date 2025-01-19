@@ -1,33 +1,5 @@
 ﻿BeforeExecute
 -- Access.Jet.Odbc AccessODBC
-
-DROP TABLE [Names]
-
-BeforeExecute
--- Access.Jet.Odbc AccessODBC
-
-CREATE TABLE [Names]
-(
-	[Id]   Int           NOT NULL,
-	[Name] NVarChar(255)     NULL
-)
-
-BeforeExecute
--- Access.Jet.Odbc AccessODBC
-
-DROP TABLE [Addresses]
-
-BeforeExecute
--- Access.Jet.Odbc AccessODBC
-
-CREATE TABLE [Addresses]
-(
-	[Id]   Int           NOT NULL,
-	[Text] NVarChar(255)     NULL
-)
-
-BeforeExecute
--- Access.Jet.Odbc AccessODBC
 DECLARE @Id Int -- Int32
 SET     @Id = 1
 DECLARE @Name NVarChar(5) -- String
@@ -110,14 +82,4 @@ FROM
 	[Names] [tupledArg]
 ORDER BY
 	[tupledArg].[Id]
-
-BeforeExecute
--- Access.Jet.Odbc AccessODBC
-
-DROP TABLE [Addresses]
-
-BeforeExecute
--- Access.Jet.Odbc AccessODBC
-
-DROP TABLE [Names]
 

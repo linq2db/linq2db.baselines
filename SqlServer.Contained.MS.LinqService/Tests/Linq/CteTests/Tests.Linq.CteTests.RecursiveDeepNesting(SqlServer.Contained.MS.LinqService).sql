@@ -1,21 +1,6 @@
 ﻿BeforeExecute
 -- SqlServer.Contained.MS SqlServer.2019
 
-DROP TABLE IF EXISTS [HierarchyTree]
-
-BeforeExecute
--- SqlServer.Contained.MS SqlServer.2019
-
-IF (OBJECT_ID(N'[HierarchyTree]', N'U') IS NULL)
-	CREATE TABLE [HierarchyTree]
-	(
-		[Id]       Int NOT NULL,
-		[ParentId] Int     NULL
-	)
-
-BeforeExecute
--- SqlServer.Contained.MS SqlServer.2019
-
 WITH [CTE_1] ([Id])
 AS
 (
@@ -60,9 +45,4 @@ FROM
 		INNER JOIN [HierarchyTree] [data2] ON [data2].[Id] = [t4].[Id]
 		INNER JOIN [HierarchyTree] [data3] ON [data3].[Id] = [t4].[Id]
 		INNER JOIN [HierarchyTree] [data4] ON [data4].[Id] = [t4].[Id]
-
-BeforeExecute
--- SqlServer.Contained.MS SqlServer.2019
-
-DROP TABLE IF EXISTS [HierarchyTree]
 

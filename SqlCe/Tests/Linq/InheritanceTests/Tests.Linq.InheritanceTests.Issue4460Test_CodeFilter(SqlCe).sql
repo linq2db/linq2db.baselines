@@ -1,21 +1,5 @@
 ﻿BeforeExecute
 -- SqlCe
-
-DROP TABLE [Base]
-
-BeforeExecute
--- SqlCe
-
-CREATE TABLE [Base]
-(
-	[Code] NVarChar(255)     NULL,
-	[Id]   Int           NOT NULL,
-	[Name] NVarChar(255)     NULL,
-	[Age]  Int               NULL
-)
-
-BeforeExecute
--- SqlCe
 DECLARE @Code NVarChar(5) -- String
 SET     @Code = 'Child'
 DECLARE @Id Int -- Int32
@@ -70,9 +54,4 @@ FROM
 	[Base] [e]
 WHERE
 	[e].[Code] <> 'Child' OR [e].[Code] IS NULL
-
-BeforeExecute
--- SqlCe
-
-DROP TABLE [Base]
 

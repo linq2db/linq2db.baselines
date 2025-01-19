@@ -1,38 +1,6 @@
 ﻿BeforeExecute
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
 
-DROP TABLE IF EXISTS `Issue3140Parent`
-
-BeforeExecute
--- MySql.5.7 MySql.5.7.MySql.Data MySql57
-
-CREATE TABLE IF NOT EXISTS `Issue3140Parent`
-(
-	`Id`      INT NOT NULL,
-	`ChildId` INT NOT NULL,
-
-	CONSTRAINT `PK_Issue3140Parent` PRIMARY KEY CLUSTERED (`Id`)
-)
-
-BeforeExecute
--- MySql.5.7 MySql.5.7.MySql.Data MySql57
-
-DROP TABLE IF EXISTS `Issue3140Child`
-
-BeforeExecute
--- MySql.5.7 MySql.5.7.MySql.Data MySql57
-
-CREATE TABLE IF NOT EXISTS `Issue3140Child`
-(
-	`Id`   INT           NOT NULL,
-	`Name` VARCHAR(4000)     NULL,
-
-	CONSTRAINT `PK_Issue3140Child` PRIMARY KEY CLUSTERED (`Id`)
-)
-
-BeforeExecute
--- MySql.5.7 MySql.5.7.MySql.Data MySql57
-
 SELECT
 	`t1`.`Id`,
 	`t1`.`ChildId`,
@@ -41,14 +9,4 @@ SELECT
 FROM
 	`Issue3140Parent` `t1`
 		LEFT JOIN `Issue3140Child` `a_Child` ON `t1`.`ChildId` = `a_Child`.`Id`
-
-BeforeExecute
--- MySql.5.7 MySql.5.7.MySql.Data MySql57
-
-DROP TABLE IF EXISTS `Issue3140Child`
-
-BeforeExecute
--- MySql.5.7 MySql.5.7.MySql.Data MySql57
-
-DROP TABLE IF EXISTS `Issue3140Parent`
 

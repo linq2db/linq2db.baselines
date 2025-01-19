@@ -1,23 +1,6 @@
 ﻿BeforeExecute
 -- PostgreSQL.17 PostgreSQL.15 PostgreSQL
 
-DROP TABLE IF EXISTS "OrgGroup"
-
-BeforeExecute
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
-
-CREATE TABLE IF NOT EXISTS "OrgGroup"
-(
-	"Id"        Int  NOT NULL,
-	"ParentId"  Int  NOT NULL,
-	"GroupName" text     NULL,
-
-	CONSTRAINT "PK_OrgGroup" PRIMARY KEY ("Id")
-)
-
-BeforeExecute
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
-
 WITH RECURSIVE previous
 (
 	"OrgGroup_Id",
@@ -50,9 +33,4 @@ SELECT
 	wrapper."OrgGroup_GroupName"
 FROM
 	previous wrapper
-
-BeforeExecute
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
-
-DROP TABLE IF EXISTS "OrgGroup"
 

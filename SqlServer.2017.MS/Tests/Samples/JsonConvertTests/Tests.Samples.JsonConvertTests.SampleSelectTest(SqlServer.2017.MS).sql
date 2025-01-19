@@ -1,20 +1,5 @@
 ﻿BeforeExecute
 -- SqlServer.2017.MS SqlServer.2017
-
-DROP TABLE IF EXISTS [SampleClass]
-
-BeforeExecute
--- SqlServer.2017.MS SqlServer.2017
-
-IF (OBJECT_ID(N'[SampleClass]', N'U') IS NULL)
-	CREATE TABLE [SampleClass]
-	(
-		[Id]   Int           NOT NULL,
-		[Data] VarChar(4000)     NULL
-	)
-
-BeforeExecute
--- SqlServer.2017.MS SqlServer.2017
 DECLARE @Id Int -- Int32
 SET     @Id = 1
 DECLARE @Data VarChar(4000) -- AnsiString
@@ -41,9 +26,4 @@ FROM
 	[SampleClass] [t]
 WHERE
 	JSON_VALUE([t].[Data], N'$.Property1') = N'Pr1'
-
-BeforeExecute
--- SqlServer.2017.MS SqlServer.2017
-
-DROP TABLE IF EXISTS [SampleClass]
 

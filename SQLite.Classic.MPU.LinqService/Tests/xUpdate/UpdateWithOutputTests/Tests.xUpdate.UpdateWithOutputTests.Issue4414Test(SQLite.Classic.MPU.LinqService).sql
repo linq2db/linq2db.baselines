@@ -1,37 +1,5 @@
 ﻿BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-
-DROP TABLE IF EXISTS [Issue4193Person]
-
-BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
-
-CREATE TABLE IF NOT EXISTS [Issue4193Person]
-(
-	[Name]       NVarChar(255) NOT NULL,
-	[EmployeeId] INTEGER           NULL
-)
-
-BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @Name NVarChar(3) -- String
-SET     @Name = 'foo'
-DECLARE @EmployeeId  -- Int32
-SET     @EmployeeId = 1
-
-INSERT INTO [Issue4193Person]
-(
-	[Name],
-	[EmployeeId]
-)
-VALUES
-(
-	@Name,
-	@EmployeeId
-)
-
-BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
 DECLARE @take  -- Int32
 SET     @take = 3
 
@@ -47,9 +15,4 @@ RETURNING
 ORDER BY
 	[Issue4193Person].[EmployeeId]
 LIMIT @take
-
-BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
-
-DROP TABLE IF EXISTS [Issue4193Person]
 

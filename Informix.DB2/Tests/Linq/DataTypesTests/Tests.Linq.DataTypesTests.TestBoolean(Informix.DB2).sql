@@ -1,64 +1,5 @@
 ﻿BeforeExecute
 -- Informix.DB2 Informix
-
-DROP TABLE IF EXISTS BooleanTable
-
-BeforeExecute
--- Informix.DB2 Informix
-
-CREATE TABLE IF NOT EXISTS BooleanTable
-(
-	Id             Int     NOT NULL,
-	"Column"       BOOLEAN NOT NULL,
-	ColumnNullable BOOLEAN     NULL
-)
-
-BeforeExecute
--- Informix.DB2 Informix
-DECLARE @Id Integer(4) -- Int32
-SET     @Id = 1
-DECLARE @Column Char(1) -- StringFixedLength
-SET     @Column = 't'
-DECLARE @ColumnNullable SmallInt -- Boolean
-SET     @ColumnNullable = NULL
-
-INSERT INTO BooleanTable
-(
-	Id,
-	"Column",
-	ColumnNullable
-)
-VALUES
-(
-	@Id,
-	@Column,
-	@ColumnNullable
-)
-
-BeforeExecute
--- Informix.DB2 Informix
-DECLARE @Id Integer(4) -- Int32
-SET     @Id = 2
-DECLARE @Column Char(1) -- StringFixedLength
-SET     @Column = 'f'
-DECLARE @ColumnNullable Char(1) -- StringFixedLength
-SET     @ColumnNullable = 't'
-
-INSERT INTO BooleanTable
-(
-	Id,
-	"Column",
-	ColumnNullable
-)
-VALUES
-(
-	@Id,
-	@Column,
-	@ColumnNullable
-)
-
-BeforeExecute
--- Informix.DB2 Informix
 DECLARE @Column Char(1) -- StringFixedLength
 SET     @Column = 'f'
 DECLARE @ColumnNullable Char(1) -- StringFixedLength
@@ -229,9 +170,4 @@ FROM
 	BooleanTable t1
 ORDER BY
 	t1.Id
-
-BeforeExecute
--- Informix.DB2 Informix
-
-DROP TABLE IF EXISTS BooleanTable
 

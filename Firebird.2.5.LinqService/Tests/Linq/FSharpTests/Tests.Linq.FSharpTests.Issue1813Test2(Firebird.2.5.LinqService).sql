@@ -1,49 +1,5 @@
 ﻿BeforeExecute
 -- Firebird.2.5 Firebird
-
-EXECUTE BLOCK AS BEGIN
-	IF (EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'Names')) THEN
-		EXECUTE STATEMENT 'DROP TABLE "Names"';
-END
-
-BeforeExecute
--- Firebird.2.5 Firebird
-
-EXECUTE BLOCK AS BEGIN
-	IF (NOT EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'Names')) THEN
-		EXECUTE STATEMENT '
-			CREATE TABLE "Names"
-			(
-				"Id"   Int                                    NOT NULL,
-				"Name" VarChar(255) CHARACTER SET UNICODE_FSS
-			)
-		';
-END
-
-BeforeExecute
--- Firebird.2.5 Firebird
-
-EXECUTE BLOCK AS BEGIN
-	IF (EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'Addresses')) THEN
-		EXECUTE STATEMENT 'DROP TABLE "Addresses"';
-END
-
-BeforeExecute
--- Firebird.2.5 Firebird
-
-EXECUTE BLOCK AS BEGIN
-	IF (NOT EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'Addresses')) THEN
-		EXECUTE STATEMENT '
-			CREATE TABLE "Addresses"
-			(
-				"Id"   Int                                    NOT NULL,
-				"Text" VarChar(255) CHARACTER SET UNICODE_FSS
-			)
-		';
-END
-
-BeforeExecute
--- Firebird.2.5 Firebird
 DECLARE @Id Integer -- Int32
 SET     @Id = 1
 DECLARE @Name VarChar(5) -- String
@@ -122,20 +78,4 @@ FROM
 	"Names" "tupledArg"
 ORDER BY
 	"tupledArg"."Id"
-
-BeforeExecute
--- Firebird.2.5 Firebird
-
-EXECUTE BLOCK AS BEGIN
-	IF (EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'Addresses')) THEN
-		EXECUTE STATEMENT 'DROP TABLE "Addresses"';
-END
-
-BeforeExecute
--- Firebird.2.5 Firebird
-
-EXECUTE BLOCK AS BEGIN
-	IF (EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'Names')) THEN
-		EXECUTE STATEMENT 'DROP TABLE "Names"';
-END
 

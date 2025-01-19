@@ -1,21 +1,5 @@
 ﻿BeforeExecute
 -- Access.Jet.Odbc AccessODBC
-
-DROP TABLE [Issue1279Table]
-
-BeforeExecute
--- Access.Jet.Odbc AccessODBC
-
-CREATE TABLE [Issue1279Table]
-(
-	[Id]      Int       NOT NULL IDENTITY,
-	[CharFld] NChar(1)  NOT NULL,
-
-	CONSTRAINT [PK_Issue1279Table] PRIMARY KEY CLUSTERED ([Id])
-)
-
-BeforeExecute
--- Access.Jet.Odbc AccessODBC
 DECLARE @CharFld NChar(1) -- StringFixedLength
 SET     @CharFld = 'P'
 
@@ -36,9 +20,4 @@ SELECT TOP 1
 	[t1].[CharFld]
 FROM
 	[Issue1279Table] [t1]
-
-BeforeExecute
--- Access.Jet.Odbc AccessODBC
-
-DROP TABLE [Issue1279Table]
 

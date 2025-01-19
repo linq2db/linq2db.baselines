@@ -1,26 +1,6 @@
 ﻿BeforeExecute
 -- ClickHouse.Client ClickHouse
 
-DROP TABLE IF EXISTS Issue3323Table
-
-BeforeExecute
--- ClickHouse.Client ClickHouse
-
-CREATE TABLE IF NOT EXISTS Issue3323Table
-(
-	Id       Int32,
-	FistName Nullable(String),
-	LastName Nullable(String),
-	Text     String,
-
-	PRIMARY KEY (Id)
-)
-ENGINE = MergeTree()
-ORDER BY Id
-
-BeforeExecute
--- ClickHouse.Client ClickHouse
-
 INSERT INTO Issue3323Table
 (
 	Id,
@@ -65,9 +45,4 @@ SELECT
 	concat(r_1.FistName, ' ', r_1.LastName) as Text
 FROM
 	Issue3323Table r_1
-
-BeforeExecute
--- ClickHouse.Client ClickHouse
-
-DROP TABLE IF EXISTS Issue3323Table
 

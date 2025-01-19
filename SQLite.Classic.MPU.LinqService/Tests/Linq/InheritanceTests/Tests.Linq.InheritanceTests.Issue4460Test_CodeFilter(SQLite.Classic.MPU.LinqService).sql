@@ -1,21 +1,5 @@
 ﻿BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-
-DROP TABLE IF EXISTS [Base]
-
-BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
-
-CREATE TABLE IF NOT EXISTS [Base]
-(
-	[Code] NVarChar(255)     NULL,
-	[Id]   INTEGER       NOT NULL,
-	[Name] NVarChar(255)     NULL,
-	[Age]  INTEGER           NULL
-)
-
-BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
 DECLARE @Code NVarChar(5) -- String
 SET     @Code = 'Child'
 DECLARE @Id  -- Int32
@@ -70,9 +54,4 @@ FROM
 	[Base] [e]
 WHERE
 	[e].[Code] <> 'Child' OR [e].[Code] IS NULL
-
-BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
-
-DROP TABLE IF EXISTS [Base]
 

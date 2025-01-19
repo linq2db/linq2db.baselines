@@ -1,24 +1,6 @@
 ﻿BeforeExecute
 -- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
 
-DROP TABLE IF EXISTS "ArrayTest"
-
-BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
-
-CREATE TABLE IF NOT EXISTS "ArrayTest"
-(
-	"StrArray"     text[]                 NULL,
-	"IntArray"     int[]                  NULL,
-	"Int2dArray"   int[][]                NULL,
-	"LongArray"    bigint[]               NULL,
-	"DoubleArray"  double precision[]     NULL,
-	"DecimalArray" numeric[]              NULL
-)
-
-BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
-
 SHOW server_version_num
 
 BeforeExecute
@@ -286,8 +268,3 @@ SELECT * FROM testdata.public."TestTableFunction"(NULL::integer)
 
 BeforeExecute
 RollbackTransaction
-BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
-
-DROP TABLE IF EXISTS "ArrayTest"
-

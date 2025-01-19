@@ -1,45 +1,6 @@
 ﻿BeforeExecute
 -- SqlServer.2008.MS SqlServer.2008
 
-IF (OBJECT_ID(N'[ConditionalData]', N'U') IS NOT NULL)
-	DROP TABLE [ConditionalData]
-
-BeforeExecute
--- SqlServer.2008.MS SqlServer.2008
-
-IF (OBJECT_ID(N'[ConditionalData]', N'U') IS NULL)
-	CREATE TABLE [ConditionalData]
-	(
-		[Id]         Int            NOT NULL,
-		[StringProp] NVarChar(4000)     NULL,
-
-		CONSTRAINT [PK_ConditionalData] PRIMARY KEY CLUSTERED ([Id])
-	)
-
-BeforeExecute
--- SqlServer.2008.MS SqlServer.2008
-
-INSERT INTO [ConditionalData]
-(
-	[Id],
-	[StringProp]
-)
-VALUES
-(1,N'String1'),
-(2,N'String2'),
-(3,NULL),
-(4,N'String4'),
-(5,N'String5'),
-(6,NULL),
-(7,N'String7'),
-(8,N'String8'),
-(9,NULL),
-(10,N'String10'),
-(11,N'-1')
-
-BeforeExecute
--- SqlServer.2008.MS SqlServer.2008
-
 SELECT
 	[x].[Id],
 	CASE
@@ -79,10 +40,4 @@ SELECT
 	[t1].[StringProp]
 FROM
 	[ConditionalData] [t1]
-
-BeforeExecute
--- SqlServer.2008.MS SqlServer.2008
-
-IF (OBJECT_ID(N'[ConditionalData]', N'U') IS NOT NULL)
-	DROP TABLE [ConditionalData]
 

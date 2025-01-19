@@ -1,35 +1,5 @@
 ﻿BeforeExecute
 -- SqlServer.2012
-
-IF (OBJECT_ID(N'[DateOnlyTable]', N'U') IS NOT NULL)
-	DROP TABLE [DateOnlyTable]
-
-BeforeExecute
--- SqlServer.2012
-
-IF (OBJECT_ID(N'[DateOnlyTable]', N'U') IS NULL)
-	CREATE TABLE [DateOnlyTable]
-	(
-		[Id]             Int  NOT NULL,
-		[Column]         Date NOT NULL,
-		[ColumnNullable] Date     NULL
-	)
-
-BeforeExecute
--- SqlServer.2012
-
-INSERT INTO [DateOnlyTable]
-(
-	[Id],
-	[Column],
-	[ColumnNullable]
-)
-VALUES
-(1,DATEFROMPARTS(1950, 1, 1),NULL),
-(2,DATEFROMPARTS(2020, 2, 29),DATEFROMPARTS(2200, 1, 1))
-
-BeforeExecute
--- SqlServer.2012
 DECLARE @Column Date
 SET     @Column = DATETIME2FROMPARTS(2020, 2, 29, 0, 0, 0, 0, 7)
 DECLARE @ColumnNullable Date
@@ -172,10 +142,4 @@ FROM
 	[DateOnlyTable] [t1]
 ORDER BY
 	[t1].[Id]
-
-BeforeExecute
--- SqlServer.2012
-
-IF (OBJECT_ID(N'[DateOnlyTable]', N'U') IS NOT NULL)
-	DROP TABLE [DateOnlyTable]
 

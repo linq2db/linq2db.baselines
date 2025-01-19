@@ -1,20 +1,6 @@
 ﻿BeforeExecute
 -- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
 
-DROP TABLE IF EXISTS "CteChild"
-
-BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
-
-CREATE TABLE IF NOT EXISTS "CteChild"
-(
-	"ChildID"  Int NOT NULL,
-	"ParentID" Int NOT NULL
-)
-
-BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
-
 WITH "CTE1_" ("ParentID")
 AS
 (
@@ -74,9 +60,4 @@ WHERE
 ORDER BY
 	c4."ChildID",
 	c4."ParentID"
-
-BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
-
-DROP TABLE IF EXISTS "CteChild"
 

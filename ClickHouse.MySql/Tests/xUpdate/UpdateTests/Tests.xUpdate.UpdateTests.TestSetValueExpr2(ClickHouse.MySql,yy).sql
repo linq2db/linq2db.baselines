@@ -1,35 +1,6 @@
 ﻿BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
-DROP TABLE IF EXISTS TextData
-
-BeforeExecute
--- ClickHouse.MySql ClickHouse
-
-CREATE TABLE IF NOT EXISTS TextData
-(
-	Id     Int32,
-	Items1 Nullable(String),
-	Items2 Nullable(String)
-)
-ENGINE = Memory()
-
-BeforeExecute
--- ClickHouse.MySql ClickHouse
-
-INSERT INTO TextData
-(
-	Id,
-	Items1,
-	Items2
-)
-VALUES
-(1,'T1','Z1'),
-(2,'T2','Z2')
-
-BeforeExecute
--- ClickHouse.MySql ClickHouse
-
 ALTER TABLE
 	TextData
 UPDATE
@@ -49,9 +20,4 @@ FROM
 	TextData t1
 ORDER BY
 	t1.Id
-
-BeforeExecute
--- ClickHouse.MySql ClickHouse
-
-DROP TABLE IF EXISTS TextData
 

@@ -1,82 +1,6 @@
 ﻿BeforeExecute
 -- ClickHouse.Client ClickHouse
 
-DROP TABLE IF EXISTS test_in_1
-
-BeforeExecute
--- ClickHouse.Client ClickHouse
-
-CREATE TABLE IF NOT EXISTS test_in_1
-(
-	ID Int32
-)
-ENGINE = Memory()
-
-BeforeExecute
--- ClickHouse.Client ClickHouse
-
-INSERT INTO test_in_1
-(
-	ID
-)
-VALUES
-(
-	1
-)
-
-BeforeExecute
--- ClickHouse.Client ClickHouse
-
-INSERT INTO test_in_1
-(
-	ID
-)
-VALUES
-(
-	3
-)
-
-BeforeExecute
--- ClickHouse.Client ClickHouse
-
-DROP TABLE IF EXISTS test_in_2
-
-BeforeExecute
--- ClickHouse.Client ClickHouse
-
-CREATE TABLE IF NOT EXISTS test_in_2
-(
-	ID Int32
-)
-ENGINE = Memory()
-
-BeforeExecute
--- ClickHouse.Client ClickHouse
-
-INSERT INTO test_in_2
-(
-	ID
-)
-VALUES
-(
-	1
-)
-
-BeforeExecute
--- ClickHouse.Client ClickHouse
-
-INSERT INTO test_in_2
-(
-	ID
-)
-VALUES
-(
-	2
-)
-
-BeforeExecute
--- ClickHouse.Client ClickHouse
-
 SELECT
 	t.ID
 FROM
@@ -106,14 +30,4 @@ SELECT
 	t1.ID
 FROM
 	test_in_2 t1
-
-BeforeExecute
--- ClickHouse.Client ClickHouse
-
-DROP TABLE IF EXISTS test_in_2
-
-BeforeExecute
--- ClickHouse.Client ClickHouse
-
-DROP TABLE IF EXISTS test_in_1
 

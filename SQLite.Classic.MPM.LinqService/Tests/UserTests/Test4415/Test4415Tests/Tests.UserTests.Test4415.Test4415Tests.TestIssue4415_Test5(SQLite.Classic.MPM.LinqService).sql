@@ -1,56 +1,6 @@
 ﻿BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
-DROP TABLE IF EXISTS [Common_Language]
-
-BeforeExecute
--- SQLite.Classic.MPM SQLite.Classic SQLite
-
-CREATE TABLE IF NOT EXISTS [Common_Language]
-(
-	[LanguageID] NVarChar(255)     NULL,
-	[Name]       NVarChar(255)     NULL
-)
-
-BeforeExecute
--- SQLite.Classic.MPM SQLite.Classic SQLite
-DECLARE @LanguageID NVarChar(2) -- String
-SET     @LanguageID = 'de'
-DECLARE @Name NVarChar(7) -- String
-SET     @Name = 'deutsch'
-
-INSERT INTO [Common_Language]
-(
-	[LanguageID],
-	[Name]
-)
-VALUES
-(
-	@LanguageID,
-	@Name
-)
-
-BeforeExecute
--- SQLite.Classic.MPM SQLite.Classic SQLite
-DECLARE @LanguageID NVarChar -- String
-SET     @LanguageID = NULL
-DECLARE @Name NVarChar(7) -- String
-SET     @Name = 'english'
-
-INSERT INTO [Common_Language]
-(
-	[LanguageID],
-	[Name]
-)
-VALUES
-(
-	@LanguageID,
-	@Name
-)
-
-BeforeExecute
--- SQLite.Classic.MPM SQLite.Classic SQLite
-
 SELECT
 	[t1].[LanguageID],
 	[t1].[Name]
@@ -74,9 +24,4 @@ WHERE
 		GROUP BY
 			[x_1].[Name]
 	)
-
-BeforeExecute
--- SQLite.Classic.MPM SQLite.Classic SQLite
-
-DROP TABLE IF EXISTS [Common_Language]
 

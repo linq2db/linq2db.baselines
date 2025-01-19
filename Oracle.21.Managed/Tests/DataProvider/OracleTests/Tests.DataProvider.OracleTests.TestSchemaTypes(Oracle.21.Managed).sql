@@ -1,39 +1,6 @@
 ﻿BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
 
-BEGIN
-	EXECUTE IMMEDIATE 'DROP TABLE TYPESTEST';
-EXCEPTION
-	WHEN OTHERS THEN
-		IF SQLCODE != -942 THEN
-			RAISE;
-		END IF;
-END;
-
-BeforeExecute
--- Oracle.21.Managed Oracle.Managed Oracle12
-
-BEGIN
-	EXECUTE IMMEDIATE '
-		CREATE TABLE TYPESTEST
-		(
-			"Char10"       CHAR(10)          NULL,
-			"NChar10"      NCHAR(10)         NULL,
-			"VarChar10"    VARCHAR(10)       NULL,
-			"VarChar2_10"  VARCHAR2(10)      NULL,
-			"NVarChar2_10" NVARCHAR2(10)     NULL
-		)
-	';
-EXCEPTION
-	WHEN OTHERS THEN
-		IF SQLCODE != -955 THEN
-			RAISE;
-		END IF;
-END;
-
-BeforeExecute
--- Oracle.21.Managed Oracle.Managed Oracle12
-
 SELECT USER FROM DUAL
 
 BeforeExecute
@@ -141,16 +108,4 @@ BeforeExecute
 							FKCOLS.POSITION       = PKCOLS.POSITION
 						ORDER BY Ordinal, Name
 						
-
-BeforeExecute
--- Oracle.21.Managed Oracle.Managed Oracle12
-
-BEGIN
-	EXECUTE IMMEDIATE 'DROP TABLE TYPESTEST';
-EXCEPTION
-	WHEN OTHERS THEN
-		IF SQLCODE != -942 THEN
-			RAISE;
-		END IF;
-END;
 

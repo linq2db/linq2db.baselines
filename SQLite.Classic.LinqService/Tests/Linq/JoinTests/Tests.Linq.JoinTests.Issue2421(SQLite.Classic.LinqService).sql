@@ -1,78 +1,6 @@
 ﻿BeforeExecute
 -- SQLite.Classic SQLite
 
-DROP TABLE IF EXISTS [UserDTO]
-
-BeforeExecute
--- SQLite.Classic SQLite
-
-CREATE TABLE IF NOT EXISTS [UserDTO]
-(
-	[UserId]   INTEGER        NOT NULL PRIMARY KEY AUTOINCREMENT,
-	[UserName] NVarChar(255)      NULL
-)
-
-BeforeExecute
--- SQLite.Classic SQLite
-
-DROP TABLE IF EXISTS [UserPositionDTO]
-
-BeforeExecute
--- SQLite.Classic SQLite
-
-CREATE TABLE IF NOT EXISTS [UserPositionDTO]
-(
-	[UserPositionId] INTEGER  NOT NULL PRIMARY KEY AUTOINCREMENT,
-	[UserId]         INTEGER  NOT NULL,
-	[PositionId]     INTEGER  NOT NULL
-)
-
-BeforeExecute
--- SQLite.Classic SQLite
-
-DROP TABLE IF EXISTS [UPS]
-
-BeforeExecute
--- SQLite.Classic SQLite
-
-CREATE TABLE IF NOT EXISTS [UPS]
-(
-	[UserPositionSectorId] INTEGER  NOT NULL PRIMARY KEY AUTOINCREMENT,
-	[UserPositionId]       INTEGER  NOT NULL,
-	[SectorId]             INTEGER  NOT NULL
-)
-
-BeforeExecute
--- SQLite.Classic SQLite
-
-DROP TABLE IF EXISTS [PositionDTO]
-
-BeforeExecute
--- SQLite.Classic SQLite
-
-CREATE TABLE IF NOT EXISTS [PositionDTO]
-(
-	[PositionId]   INTEGER        NOT NULL PRIMARY KEY AUTOINCREMENT,
-	[PositionName] NVarChar(255)  NOT NULL
-)
-
-BeforeExecute
--- SQLite.Classic SQLite
-
-DROP TABLE IF EXISTS [SectorDTO]
-
-BeforeExecute
--- SQLite.Classic SQLite
-
-CREATE TABLE IF NOT EXISTS [SectorDTO]
-(
-	[SectorId]   INTEGER        NOT NULL PRIMARY KEY AUTOINCREMENT,
-	[SectorName] NVarChar(255)  NOT NULL
-)
-
-BeforeExecute
--- SQLite.Classic SQLite
-
 SELECT
 	[m_1].[SectorId],
 	[a_User].[UserId]
@@ -91,29 +19,4 @@ SELECT
 	[x].[SectorId]
 FROM
 	[SectorDTO] [x]
-
-BeforeExecute
--- SQLite.Classic SQLite
-
-DROP TABLE IF EXISTS [SectorDTO]
-
-BeforeExecute
--- SQLite.Classic SQLite
-
-DROP TABLE IF EXISTS [PositionDTO]
-
-BeforeExecute
--- SQLite.Classic SQLite
-
-DROP TABLE IF EXISTS [UPS]
-
-BeforeExecute
--- SQLite.Classic SQLite
-
-DROP TABLE IF EXISTS [UserPositionDTO]
-
-BeforeExecute
--- SQLite.Classic SQLite
-
-DROP TABLE IF EXISTS [UserDTO]
 

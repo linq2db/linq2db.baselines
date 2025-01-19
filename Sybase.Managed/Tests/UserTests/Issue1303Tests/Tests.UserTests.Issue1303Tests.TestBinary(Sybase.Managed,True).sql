@@ -1,27 +1,6 @@
 ﻿BeforeExecute
 -- Sybase.Managed Sybase
 
-IF (OBJECT_ID(N'Issue1303') IS NOT NULL)
-	DROP TABLE [Issue1303]
-
-BeforeExecute
--- Sybase.Managed Sybase
-
-IF (OBJECT_ID(N'Issue1303') IS NULL)
-	EXECUTE('
-		CREATE TABLE [Issue1303]
-		(
-			[ID]     Int           NOT NULL,
-			[Array]  VarBinary(10)     NULL,
-			[Binary] VarBinary(10)     NULL,
-
-			CONSTRAINT [PK_Issue1303] PRIMARY KEY CLUSTERED ([ID])
-		)
-	')
-
-BeforeExecute
--- Sybase.Managed Sybase
-
 INSERT INTO [Issue1303]
 (
 	[ID],
@@ -70,10 +49,4 @@ FROM
 	[Issue1303] [t1]
 WHERE
 	[t1].[Binary] = 0x0405
-
-BeforeExecute
--- Sybase.Managed Sybase
-
-IF (OBJECT_ID(N'Issue1303') IS NOT NULL)
-	DROP TABLE [Issue1303]
 

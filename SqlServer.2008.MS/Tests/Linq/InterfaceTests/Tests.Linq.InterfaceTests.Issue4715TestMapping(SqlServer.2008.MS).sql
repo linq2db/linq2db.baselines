@@ -1,24 +1,5 @@
 ﻿BeforeExecute
 -- SqlServer.2008.MS SqlServer.2008
-
-IF (OBJECT_ID(N'[Issue4715Table]', N'U') IS NOT NULL)
-	DROP TABLE [Issue4715Table]
-
-BeforeExecute
--- SqlServer.2008.MS SqlServer.2008
-
-IF (OBJECT_ID(N'[Issue4715Table]', N'U') IS NULL)
-	CREATE TABLE [Issue4715Table]
-	(
-		[Id]    Int NOT NULL,
-		[Prop1] Int NOT NULL,
-		[Prop2] Int NOT NULL,
-		[Prop3] Int NOT NULL,
-		[Prop4] Int NOT NULL
-	)
-
-BeforeExecute
--- SqlServer.2008.MS SqlServer.2008
 DECLARE @Id Int -- Int32
 SET     @Id = 1
 DECLARE @ImplicitPropertyRW Int -- Int32
@@ -56,10 +37,4 @@ SELECT TOP (2)
 	[t1].[Prop3]
 FROM
 	[Issue4715Table] [t1]
-
-BeforeExecute
--- SqlServer.2008.MS SqlServer.2008
-
-IF (OBJECT_ID(N'[Issue4715Table]', N'U') IS NOT NULL)
-	DROP TABLE [Issue4715Table]
 

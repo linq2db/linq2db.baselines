@@ -1,21 +1,6 @@
 ﻿BeforeExecute
 -- SQLite.MS SQLite
 
-DROP TABLE IF EXISTS [Issue3360NullInAnchor]
-
-BeforeExecute
--- SQLite.MS SQLite
-
-CREATE TABLE IF NOT EXISTS [Issue3360NullInAnchor]
-(
-	[Id]    INTEGER     NOT NULL,
-	[Guid]  Guid            NULL,
-	[Enum1] VarChar(50)     NULL
-)
-
-BeforeExecute
--- SQLite.MS SQLite
-
 WITH [cte] ([Id], [Guid])
 AS
 (
@@ -37,9 +22,4 @@ SELECT
 	[t2].[Guid]
 FROM
 	[cte] [t2]
-
-BeforeExecute
--- SQLite.MS SQLite
-
-DROP TABLE IF EXISTS [Issue3360NullInAnchor]
 

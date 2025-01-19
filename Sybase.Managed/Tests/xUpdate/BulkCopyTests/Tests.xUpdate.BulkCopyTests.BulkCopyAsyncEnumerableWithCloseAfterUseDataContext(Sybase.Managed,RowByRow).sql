@@ -1,21 +1,4 @@
 ﻿BeforeExecute
--- Sybase.Managed Sybase
-
-IF (OBJECT_ID(N'SimpleBulkCopyTable') IS NOT NULL)
-	DROP TABLE [SimpleBulkCopyTable]
-
-BeforeExecute
--- Sybase.Managed Sybase
-
-IF (OBJECT_ID(N'SimpleBulkCopyTable') IS NULL)
-	EXECUTE('
-		CREATE TABLE [SimpleBulkCopyTable]
-		(
-			[Id] Int NOT NULL
-		)
-	')
-
-BeforeExecute
 -- Sybase.Managed Sybase (asynchronously)
 DECLARE @Id Integer -- Int32
 SET     @Id = 2
@@ -28,10 +11,4 @@ VALUES
 (
 	@Id
 )
-
-BeforeExecute
--- Sybase.Managed Sybase
-
-IF (OBJECT_ID(N'SimpleBulkCopyTable') IS NOT NULL)
-	DROP TABLE [SimpleBulkCopyTable]
 

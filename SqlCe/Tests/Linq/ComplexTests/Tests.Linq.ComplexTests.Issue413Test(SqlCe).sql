@@ -1,51 +1,5 @@
 ﻿BeforeExecute
 -- SqlCe
-
-DROP TABLE [T1]
-
-BeforeExecute
--- SqlCe
-
-CREATE TABLE [T1]
-(
-	[InstrumentId]         Int           NOT NULL,
-	[InstrumentCode]       NVarChar(255)     NULL,
-	[CreateDate]           DateTime      NOT NULL,
-	[SourceInstrumentCode] NVarChar(255)     NULL,
-
-	CONSTRAINT [PK_T1] PRIMARY KEY ([InstrumentId])
-)
-
-BeforeExecute
--- SqlCe
-
-DROP TABLE [T2]
-
-BeforeExecute
--- SqlCe
-
-CREATE TABLE [T2]
-(
-	[InstrumentId] Int NOT NULL,
-	[IndexId]      Int NOT NULL
-)
-
-BeforeExecute
--- SqlCe
-
-DROP TABLE [T3]
-
-BeforeExecute
--- SqlCe
-
-CREATE TABLE [T3]
-(
-	[InstrumentId] Int NOT NULL,
-	[IndexId]      Int NOT NULL
-)
-
-BeforeExecute
--- SqlCe
 DECLARE @InstrumentId Int -- Int32
 SET     @InstrumentId = 1
 DECLARE @IndexId Int -- Int32
@@ -210,19 +164,4 @@ FROM
 	) [t5]
 ORDER BY
 	[t5].[SourceInstrumentCode]
-
-BeforeExecute
--- SqlCe
-
-DROP TABLE [T3]
-
-BeforeExecute
--- SqlCe
-
-DROP TABLE [T2]
-
-BeforeExecute
--- SqlCe
-
-DROP TABLE [T1]
 

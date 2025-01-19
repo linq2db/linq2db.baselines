@@ -1,48 +1,6 @@
 ﻿BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
-DROP TABLE IF EXISTS SampleData
-
-BeforeExecute
--- ClickHouse.MySql ClickHouse
-
-CREATE TABLE IF NOT EXISTS SampleData
-(
-	Id     Int32,
-	Value1 Int32,
-	Value2 Int32,
-	Value3 Int32,
-
-	PRIMARY KEY (Id)
-)
-ENGINE = MergeTree()
-ORDER BY Id
-
-BeforeExecute
--- ClickHouse.MySql ClickHouse
-
-INSERT INTO SampleData
-(
-	Id,
-	Value1,
-	Value2,
-	Value3
-)
-VALUES
-(1,10,100,1000),
-(2,20,200,2000),
-(3,30,300,3000),
-(4,40,400,4000),
-(5,50,500,5000),
-(6,60,600,6000),
-(7,70,700,7000),
-(8,80,800,8000),
-(9,90,900,9000),
-(10,100,1000,10000)
-
-BeforeExecute
--- ClickHouse.MySql ClickHouse
-
 SELECT
 	r_3.Value_1
 FROM
@@ -71,9 +29,4 @@ FROM
 		WHERE
 			r_2.Id % 6 = 0
 	) r_3
-
-BeforeExecute
--- ClickHouse.MySql ClickHouse
-
-DROP TABLE IF EXISTS SampleData
 

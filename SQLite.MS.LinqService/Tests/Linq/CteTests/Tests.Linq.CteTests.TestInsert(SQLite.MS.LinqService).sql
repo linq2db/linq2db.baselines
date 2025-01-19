@@ -1,20 +1,6 @@
 ﻿BeforeExecute
 -- SQLite.MS SQLite
 
-DROP TABLE IF EXISTS [CteChild]
-
-BeforeExecute
--- SQLite.MS SQLite
-
-CREATE TABLE IF NOT EXISTS [CteChild]
-(
-	[ChildID]  INTEGER NOT NULL,
-	[ParentID] INTEGER NOT NULL
-)
-
-BeforeExecute
--- SQLite.MS SQLite
-
 WITH [CTE1_] ([ParentID])
 AS
 (
@@ -74,9 +60,4 @@ WHERE
 ORDER BY
 	[c4].[ChildID],
 	[c4].[ParentID]
-
-BeforeExecute
--- SQLite.MS SQLite
-
-DROP TABLE IF EXISTS [CteChild]
 

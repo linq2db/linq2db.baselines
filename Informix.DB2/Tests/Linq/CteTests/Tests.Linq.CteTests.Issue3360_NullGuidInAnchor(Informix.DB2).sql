@@ -1,21 +1,6 @@
 ﻿BeforeExecute
 -- Informix.DB2 Informix
 
-DROP TABLE IF EXISTS Issue3360NullInAnchor
-
-BeforeExecute
--- Informix.DB2 Informix
-
-CREATE TABLE IF NOT EXISTS Issue3360NullInAnchor
-(
-	Id    Int         NOT NULL,
-	Guid  VARCHAR(36)     NULL,
-	Enum1 VarChar(50)     NULL
-)
-
-BeforeExecute
--- Informix.DB2 Informix
-
 WITH cte (Id, Guid)
 AS
 (
@@ -37,9 +22,4 @@ SELECT
 	t2.Guid
 FROM
 	cte t2
-
-BeforeExecute
--- Informix.DB2 Informix
-
-DROP TABLE IF EXISTS Issue3360NullInAnchor
 

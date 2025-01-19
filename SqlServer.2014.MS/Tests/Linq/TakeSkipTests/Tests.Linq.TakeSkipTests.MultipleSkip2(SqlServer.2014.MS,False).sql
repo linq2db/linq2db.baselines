@@ -1,34 +1,6 @@
 ﻿BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014
 
-IF (OBJECT_ID(N'[TakeSkipClass]', N'U') IS NOT NULL)
-	DROP TABLE [TakeSkipClass]
-
-BeforeExecute
--- SqlServer.2014.MS SqlServer.2014
-
-IF (OBJECT_ID(N'[TakeSkipClass]', N'U') IS NULL)
-	CREATE TABLE [TakeSkipClass]
-	(
-		[Value] VarChar(10)     NULL
-	)
-
-BeforeExecute
--- SqlServer.2014.MS SqlServer.2014
-
-INSERT INTO [TakeSkipClass]
-(
-	[Value]
-)
-VALUES
-('PLUTO'),
-('PIPPO'),
-('PLUTO'),
-('BOLTO')
-
-BeforeExecute
--- SqlServer.2014.MS SqlServer.2014
-
 SELECT
 	[t1].[Value]
 FROM
@@ -47,10 +19,4 @@ FROM
 ORDER BY
 	[t1].[Value]
 OFFSET 4 ROWS
-
-BeforeExecute
--- SqlServer.2014.MS SqlServer.2014
-
-IF (OBJECT_ID(N'[TakeSkipClass]', N'U') IS NOT NULL)
-	DROP TABLE [TakeSkipClass]
 

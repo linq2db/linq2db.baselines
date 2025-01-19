@@ -1,21 +1,6 @@
 ﻿BeforeExecute
 -- Informix.DB2 Informix
 
-DROP TABLE IF EXISTS TestFolder
-
-BeforeExecute
--- Informix.DB2 Informix
-
-CREATE TABLE IF NOT EXISTS TestFolder
-(
-	Id       VARCHAR(36)   NOT NULL,
-	Label    NVarChar(255)     NULL,
-	ParentId VARCHAR(36)       NULL
-)
-
-BeforeExecute
--- Informix.DB2 Informix
-
 WITH CTE
 (
 	Level_1,
@@ -63,9 +48,4 @@ SELECT
 	t2.Entity_ParentId
 FROM
 	CTE t2
-
-BeforeExecute
--- Informix.DB2 Informix
-
-DROP TABLE IF EXISTS TestFolder
 

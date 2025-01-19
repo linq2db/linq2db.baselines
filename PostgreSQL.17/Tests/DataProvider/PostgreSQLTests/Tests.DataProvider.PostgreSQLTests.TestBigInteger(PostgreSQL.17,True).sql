@@ -1,23 +1,6 @@
 ﻿BeforeExecute
 -- PostgreSQL.17 PostgreSQL.15 PostgreSQL
 
-DROP TABLE IF EXISTS "BigIntegerTable"
-
-BeforeExecute
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
-
-CREATE TABLE IF NOT EXISTS "BigIntegerTable"
-(
-	"Id"     Int         NOT NULL,
-	"Value1" decimal(78) NOT NULL,
-	"Value2" decimal(78)     NULL,
-
-	CONSTRAINT "PK_BigIntegerTable" PRIMARY KEY ("Id")
-)
-
-BeforeExecute
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
-
 INSERT INTO "BigIntegerTable"
 (
 	"Id",
@@ -45,9 +28,4 @@ FROM
 	"BigIntegerTable" t1
 ORDER BY
 	t1."Id"
-
-BeforeExecute
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
-
-DROP TABLE IF EXISTS "BigIntegerTable"
 

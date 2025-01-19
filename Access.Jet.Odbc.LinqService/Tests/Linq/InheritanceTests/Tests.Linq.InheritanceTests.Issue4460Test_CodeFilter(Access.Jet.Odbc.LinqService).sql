@@ -1,21 +1,5 @@
 ﻿BeforeExecute
 -- Access.Jet.Odbc AccessODBC
-
-DROP TABLE [Base]
-
-BeforeExecute
--- Access.Jet.Odbc AccessODBC
-
-CREATE TABLE [Base]
-(
-	[Code] NVarChar(255)     NULL,
-	[Id]   Int           NOT NULL,
-	[Name] NVarChar(255)     NULL,
-	[Age]  Int               NULL
-)
-
-BeforeExecute
--- Access.Jet.Odbc AccessODBC
 DECLARE @Code NVarChar(5) -- String
 SET     @Code = 'Child'
 DECLARE @Id Int -- Int32
@@ -70,9 +54,4 @@ FROM
 	[Base] [e]
 WHERE
 	[e].[Code] <> 'Child' OR [e].[Code] IS NULL
-
-BeforeExecute
--- Access.Jet.Odbc AccessODBC
-
-DROP TABLE [Base]
 

@@ -1,34 +1,6 @@
 ﻿BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 
-DROP TABLE IF EXISTS `TestEntity1`
-
-BeforeExecute
--- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-
-CREATE TABLE IF NOT EXISTS `TestEntity1`
-(
-	`Id`     INT           NOT NULL,
-	`Field1` VARCHAR(4000)     NULL
-)
-
-BeforeExecute
--- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-
-DROP TABLE IF EXISTS `TestEntity2`
-
-BeforeExecute
--- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-
-CREATE TABLE IF NOT EXISTS `TestEntity2`
-(
-	`Id`     INT           NOT NULL,
-	`Field1` VARCHAR(4000)     NULL
-)
-
-BeforeExecute
--- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-
 SELECT
 	`t1`.`Id`,
 	`t1`.`Field1`,
@@ -86,14 +58,4 @@ FROM
 		LEFT JOIN `TestEntity1` `t1_1` ON `t2_1`.`Id` = `t1_1`.`Id`
 WHERE
 	`t1_1`.`Id` IS NULL
-
-BeforeExecute
--- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-
-DROP TABLE IF EXISTS `TestEntity2`
-
-BeforeExecute
--- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-
-DROP TABLE IF EXISTS `TestEntity1`
 

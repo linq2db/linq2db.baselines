@@ -1,40 +1,6 @@
 ﻿BeforeExecute
 -- SqlServer.Contained SqlServer.2019
 
-DROP TABLE IF EXISTS [Issue4596Form]
-
-BeforeExecute
--- SqlServer.Contained SqlServer.2019
-
-IF (OBJECT_ID(N'[Issue4596Form]', N'U') IS NULL)
-	CREATE TABLE [Issue4596Form]
-	(
-		[Id] Int      NOT NULL,
-		[C1] NChar(1) NOT NULL
-	)
-
-BeforeExecute
--- SqlServer.Contained SqlServer.2019
-
-DROP TABLE IF EXISTS [Issue4596Item]
-
-BeforeExecute
--- SqlServer.Contained SqlServer.2019
-
-IF (OBJECT_ID(N'[Issue4596Item]', N'U') IS NULL)
-	CREATE TABLE [Issue4596Item]
-	(
-		[Id]         Int            NOT NULL,
-		[FormId]     Int            NOT NULL,
-		[OrderIndex] Int            NOT NULL,
-		[Name1]      NVarChar(4000)     NULL,
-		[Name2]      NVarChar(4000)     NULL,
-		[Name3]      NVarChar(4000)     NULL
-	)
-
-BeforeExecute
--- SqlServer.Contained SqlServer.2019
-
 SELECT
 	[m_1].[Id],
 	[m_1].[cond],
@@ -73,14 +39,4 @@ SELECT TOP (1)
 	IIF([t1].[C1] <> N'T', 1, 0)
 FROM
 	[Issue4596Form] [t1]
-
-BeforeExecute
--- SqlServer.Contained SqlServer.2019
-
-DROP TABLE IF EXISTS [Issue4596Item]
-
-BeforeExecute
--- SqlServer.Contained SqlServer.2019
-
-DROP TABLE IF EXISTS [Issue4596Form]
 

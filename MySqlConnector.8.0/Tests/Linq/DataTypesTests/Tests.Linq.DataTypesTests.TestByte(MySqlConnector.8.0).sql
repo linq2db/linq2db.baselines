@@ -1,33 +1,5 @@
 ﻿BeforeExecute
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
-DROP TABLE IF EXISTS `ByteTable`
-
-BeforeExecute
--- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
-CREATE TABLE IF NOT EXISTS `ByteTable`
-(
-	`Id`             INT              NOT NULL,
-	`Column`         TINYINT UNSIGNED NOT NULL,
-	`ColumnNullable` TINYINT UNSIGNED     NULL
-)
-
-BeforeExecute
--- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
-INSERT INTO `ByteTable`
-(
-	`Id`,
-	`Column`,
-	`ColumnNullable`
-)
-VALUES
-(1,1,NULL),
-(2,255,2)
-
-BeforeExecute
--- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 DECLARE @Column UByte -- Byte
 SET     @Column = 255
 DECLARE @ColumnNullable UByte -- Byte
@@ -170,9 +142,4 @@ FROM
 	`ByteTable` `t1`
 ORDER BY
 	`t1`.`Id`
-
-BeforeExecute
--- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
-DROP TABLE IF EXISTS `ByteTable`
 

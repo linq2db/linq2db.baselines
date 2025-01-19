@@ -1,22 +1,5 @@
 ﻿BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
-DROP TABLE IF EXISTS `Issue3726Table`
-
-BeforeExecute
--- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
-CREATE TABLE IF NOT EXISTS `Issue3726Table`
-(
-	`Id`     INT           NOT NULL,
-	`Value`  INT UNSIGNED  NOT NULL,
-	`Value2` VARCHAR(4000)     NULL,
-
-	CONSTRAINT `PK_Issue3726Table` PRIMARY KEY CLUSTERED (`Id`)
-)
-
-BeforeExecute
--- MySql.8.0 MySql.8.0.MySql.Data MySql80
 DECLARE @Id Int32
 SET     @Id = 1
 DECLARE @Value UInt32
@@ -50,9 +33,4 @@ SET
 	`f`.`Value2` = @Value2
 WHERE
 	CAST(`f`.`Value` AS SIGNED) = @bar
-
-BeforeExecute
--- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
-DROP TABLE IF EXISTS `Issue3726Table`
 

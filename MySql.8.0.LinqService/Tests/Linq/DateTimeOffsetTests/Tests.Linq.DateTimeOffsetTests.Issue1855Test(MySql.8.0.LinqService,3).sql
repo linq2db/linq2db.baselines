@@ -1,22 +1,5 @@
 ﻿BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
-DROP TABLE IF EXISTS `Issue1855Table`
-
-BeforeExecute
--- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
-CREATE TABLE IF NOT EXISTS `Issue1855Table`
-(
-	`Id`                         INT       NOT NULL,
-	`SomeDateTimeOffset`         TIMESTAMP NOT NULL,
-	`SomeNullableDateTimeOffset` TIMESTAMP     NULL,
-
-	CONSTRAINT `PK_Issue1855Table` PRIMARY KEY CLUSTERED (`Id`)
-)
-
-BeforeExecute
--- MySql.8.0 MySql.8.0.MySql.Data MySql80
 DECLARE @Id Int32
 SET     @Id = 1
 DECLARE @SomeDateTimeOffset Datetime -- DateTimeOffset
@@ -68,9 +51,4 @@ FROM
 	`Issue1855Table` `r`
 WHERE
 	@clientSideIn <> `r`.`SomeDateTimeOffset`
-
-BeforeExecute
--- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
-DROP TABLE IF EXISTS `Issue1855Table`
 

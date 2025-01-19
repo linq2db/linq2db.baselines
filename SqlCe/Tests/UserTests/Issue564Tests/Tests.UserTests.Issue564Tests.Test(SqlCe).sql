@@ -1,23 +1,5 @@
 ﻿BeforeExecute
 -- SqlCe
-
-DROP TABLE [Parent564]
-
-BeforeExecute
--- SqlCe
-
-CREATE TABLE [Parent564]
-(
-	[Id]          Int            NOT NULL IDENTITY,
-	[Type]        NVarChar(255)      NULL,
-	[StringValue] NVarChar(20)       NULL,
-	[IntValue]    Int                NULL,
-
-	CONSTRAINT [PK_Parent564] PRIMARY KEY ([Id])
-)
-
-BeforeExecute
--- SqlCe
 DECLARE @Type NVarChar(9) -- String
 SET     @Type = 'Child564A'
 DECLARE @StringValue NVarChar(9) -- String
@@ -59,9 +41,4 @@ SELECT
 	COUNT(*) as [COUNT_1]
 FROM
 	[Parent564] [t1]
-
-BeforeExecute
--- SqlCe
-
-DROP TABLE [Parent564]
 

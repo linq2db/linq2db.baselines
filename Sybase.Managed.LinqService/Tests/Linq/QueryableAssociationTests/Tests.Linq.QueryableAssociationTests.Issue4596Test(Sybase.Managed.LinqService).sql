@@ -1,46 +1,6 @@
 ﻿BeforeExecute
 -- Sybase.Managed Sybase
 
-IF (OBJECT_ID(N'Issue4596Form') IS NOT NULL)
-	DROP TABLE [Issue4596Form]
-
-BeforeExecute
--- Sybase.Managed Sybase
-
-IF (OBJECT_ID(N'Issue4596Form') IS NULL)
-	EXECUTE('
-		CREATE TABLE [Issue4596Form]
-		(
-			[Id] Int      NOT NULL,
-			[C1] NChar(1) NOT NULL
-		)
-	')
-
-BeforeExecute
--- Sybase.Managed Sybase
-
-IF (OBJECT_ID(N'Issue4596Item') IS NOT NULL)
-	DROP TABLE [Issue4596Item]
-
-BeforeExecute
--- Sybase.Managed Sybase
-
-IF (OBJECT_ID(N'Issue4596Item') IS NULL)
-	EXECUTE('
-		CREATE TABLE [Issue4596Item]
-		(
-			[Id]         Int           NOT NULL,
-			[FormId]     Int           NOT NULL,
-			[OrderIndex] Int           NOT NULL,
-			[Name1]      NVarChar(255)     NULL,
-			[Name2]      NVarChar(255)     NULL,
-			[Name3]      NVarChar(255)     NULL
-		)
-	')
-
-BeforeExecute
--- Sybase.Managed Sybase
-
 SELECT
 	[m_1].[Id],
 	[m_1].[cond],
@@ -103,16 +63,4 @@ SELECT TOP 1
 	END
 FROM
 	[Issue4596Form] [t1]
-
-BeforeExecute
--- Sybase.Managed Sybase
-
-IF (OBJECT_ID(N'Issue4596Item') IS NOT NULL)
-	DROP TABLE [Issue4596Item]
-
-BeforeExecute
--- Sybase.Managed Sybase
-
-IF (OBJECT_ID(N'Issue4596Form') IS NOT NULL)
-	DROP TABLE [Issue4596Form]
 

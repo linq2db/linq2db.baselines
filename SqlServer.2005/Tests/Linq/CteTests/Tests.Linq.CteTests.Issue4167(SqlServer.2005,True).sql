@@ -1,39 +1,6 @@
 ﻿BeforeExecute
 -- SqlServer.2005
 
-IF (OBJECT_ID(N'[Issue4167Table]', N'U') IS NOT NULL)
-	DROP TABLE [Issue4167Table]
-
-BeforeExecute
--- SqlServer.2005
-
-IF (OBJECT_ID(N'[Issue4167Table]', N'U') IS NULL)
-	CREATE TABLE [Issue4167Table]
-	(
-		[ID]        Int            NOT NULL,
-		[Value]     NVarChar(4000)     NULL,
-		[EnumValue] Int                NULL,
-
-		CONSTRAINT [PK_Issue4167Table] PRIMARY KEY CLUSTERED ([ID])
-	)
-
-BeforeExecute
--- SqlServer.2005
-
-INSERT INTO [Issue4167Table]
-(
-	[ID],
-	[Value],
-	[EnumValue]
-)
-SELECT 1,N'000001',0 UNION ALL
-SELECT 2,N'000001',3 UNION ALL
-SELECT 3,N'000001',NULL UNION ALL
-SELECT 4,N'000002',0
-
-BeforeExecute
--- SqlServer.2005
-
 WITH [CTE_1] ([EnumValue])
 AS
 (
@@ -56,10 +23,4 @@ FROM
 	[CTE_1] [t1]
 ORDER BY
 	[t1].[EnumValue]
-
-BeforeExecute
--- SqlServer.2005
-
-IF (OBJECT_ID(N'[Issue4167Table]', N'U') IS NOT NULL)
-	DROP TABLE [Issue4167Table]
 

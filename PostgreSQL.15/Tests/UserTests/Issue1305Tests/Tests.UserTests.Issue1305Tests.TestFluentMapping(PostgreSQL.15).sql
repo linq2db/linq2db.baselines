@@ -1,26 +1,6 @@
 ﻿BeforeExecute
 -- PostgreSQL.15 PostgreSQL
 
-DROP TABLE IF EXISTS "FluentMapping"
-
-BeforeExecute
--- PostgreSQL.15 PostgreSQL
-
-CREATE TABLE IF NOT EXISTS "FluentMapping"
-(
-	"RecordID"       Int       NOT NULL,
-	"EffectiveStart" TimeStamp NOT NULL,
-	"EffectiveEnd"   TimeStamp     NULL,
-	"Key"            Int       NOT NULL,
-	"Unordered1"     Int       NOT NULL,
-	"Unordered2"     Int       NOT NULL,
-	"Audit1ID"       Int       NOT NULL,
-	"Audit2ID"       Int       NOT NULL
-)
-
-BeforeExecute
--- PostgreSQL.15 PostgreSQL
-
 SHOW server_version_num
 
 BeforeExecute
@@ -288,8 +268,3 @@ SELECT * FROM testdata.public."TestTableFunction"(NULL::integer)
 
 BeforeExecute
 RollbackTransaction
-BeforeExecute
--- PostgreSQL.15 PostgreSQL
-
-DROP TABLE IF EXISTS "FluentMapping"
-

@@ -1,68 +1,6 @@
 ﻿BeforeExecute
 -- SqlServer.2019.MS SqlServer.2019
 
-DROP TABLE IF EXISTS [Books]
-
-BeforeExecute
--- SqlServer.2019.MS SqlServer.2019
-
-IF (OBJECT_ID(N'[Books]', N'U') IS NULL)
-	CREATE TABLE [Books]
-	(
-		[Id]       Int            NOT NULL,
-		[Title]    NVarChar(4000) NOT NULL,
-		[AuthorId] Int            NOT NULL,
-
-		CONSTRAINT [PK_Books] PRIMARY KEY CLUSTERED ([Id])
-	)
-
-BeforeExecute
--- SqlServer.2019.MS SqlServer.2019
-
-INSERT INTO [Books]
-(
-	[Id],
-	[Title],
-	[AuthorId]
-)
-VALUES
-(1,N'Something',1),
-(2,N'Book',2),
-(3,N'Boring',3)
-
-BeforeExecute
--- SqlServer.2019.MS SqlServer.2019
-
-DROP TABLE IF EXISTS [Authors]
-
-BeforeExecute
--- SqlServer.2019.MS SqlServer.2019
-
-IF (OBJECT_ID(N'[Authors]', N'U') IS NULL)
-	CREATE TABLE [Authors]
-	(
-		[Id]   Int            NOT NULL,
-		[Name] NVarChar(4000) NOT NULL,
-
-		CONSTRAINT [PK_Authors] PRIMARY KEY CLUSTERED ([Id])
-	)
-
-BeforeExecute
--- SqlServer.2019.MS SqlServer.2019
-
-INSERT INTO [Authors]
-(
-	[Id],
-	[Name]
-)
-VALUES
-(1,N'John'),
-(2,N'Steven'),
-(3,N'Smith')
-
-BeforeExecute
--- SqlServer.2019.MS SqlServer.2019
-
 WITH [BooksCte] ([Book_Id], [Book_Title], [Author_Name])
 AS
 (
@@ -94,14 +32,4 @@ FROM
 	) [b_1]
 WHERE
 	[b_1].[Name] = N'Steven' OR [b_1].[Title] = N'Something'
-
-BeforeExecute
--- SqlServer.2019.MS SqlServer.2019
-
-DROP TABLE IF EXISTS [Authors]
-
-BeforeExecute
--- SqlServer.2019.MS SqlServer.2019
-
-DROP TABLE IF EXISTS [Books]
 

@@ -1,47 +1,6 @@
 ﻿BeforeExecute
 -- SqlCe
 
-DROP TABLE [AggregationData]
-
-BeforeExecute
--- SqlCe
-
-CREATE TABLE [AggregationData]
-(
-	[GroupId]   Int   NOT NULL,
-	[DataValue] Float     NULL
-)
-
-BeforeExecute
--- SqlCe
-
-INSERT INTO [AggregationData]
-(
-	[GroupId],
-	[DataValue]
-)
-SELECT 1,1 UNION ALL
-SELECT 1,NULL UNION ALL
-SELECT 1,3 UNION ALL
-SELECT 1,1 UNION ALL
-SELECT 1,5 UNION ALL
-SELECT 1,6 UNION ALL
-SELECT 2,7 UNION ALL
-SELECT 2,8 UNION ALL
-SELECT 2,9 UNION ALL
-SELECT 2,NULL UNION ALL
-SELECT 2,11 UNION ALL
-SELECT 2,7 UNION ALL
-SELECT 3,13 UNION ALL
-SELECT 3,16 UNION ALL
-SELECT 3,16 UNION ALL
-SELECT 3,16 UNION ALL
-SELECT 3,NULL UNION ALL
-SELECT 3,18
-
-BeforeExecute
--- SqlCe
-
 SELECT
 	[g_2].[GroupId],
 	[g_2].[SUM_1],
@@ -118,9 +77,4 @@ SELECT
 	[t1].[DataValue]
 FROM
 	[AggregationData] [t1]
-
-BeforeExecute
--- SqlCe
-
-DROP TABLE [AggregationData]
 

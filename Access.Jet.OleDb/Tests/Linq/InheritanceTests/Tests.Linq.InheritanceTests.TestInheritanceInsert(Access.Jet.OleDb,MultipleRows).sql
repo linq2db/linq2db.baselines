@@ -1,27 +1,5 @@
 ﻿BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
-
-DROP TABLE [InheritanceFilter]
-
-BeforeExecute
--- Access.Jet.OleDb AccessOleDb
-
-CREATE TABLE [InheritanceFilter]
-(
-	[Id]                Int NOT NULL,
-	[Code]              Int NOT NULL,
-	[Child1Field]       Int     NULL,
-	[Child2Field]       Int     NULL,
-	[Grandchild11Field] Int     NULL,
-	[Grandchild12Field] Int     NULL,
-	[Grandchild21Field] Int     NULL,
-	[Grandchild22Field] Int     NULL,
-
-	CONSTRAINT [PK_InheritanceFilter] PRIMARY KEY CLUSTERED ([Id])
-)
-
-BeforeExecute
--- Access.Jet.OleDb AccessOleDb
 DECLARE @Id Integer -- Int32
 SET     @Id = 1
 DECLARE @Code Integer -- Int32
@@ -182,9 +160,4 @@ SELECT
 	[t1].[Grandchild22Field]
 FROM
 	[InheritanceFilter] [t1]
-
-BeforeExecute
--- Access.Jet.OleDb AccessOleDb
-
-DROP TABLE [InheritanceFilter]
 

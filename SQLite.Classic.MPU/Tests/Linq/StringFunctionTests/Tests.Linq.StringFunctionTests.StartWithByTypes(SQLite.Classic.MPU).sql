@@ -1,36 +1,5 @@
 ﻿BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-
-DROP TABLE IF EXISTS [StringTypesTable]
-
-BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
-
-CREATE TABLE IF NOT EXISTS [StringTypesTable]
-(
-	[Id]             INTEGER      NOT NULL,
-	[CharColumn]     Char(50)         NULL,
-	[NCharColumn]    NChar(50)        NULL,
-	[VarCharColumn]  VarChar(50)      NULL,
-	[NVarCharColumn] NVarChar(50)     NULL
-)
-
-BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
-
-INSERT INTO [StringTypesTable]
-(
-	[Id],
-	[CharColumn],
-	[NCharColumn],
-	[VarCharColumn],
-	[NVarCharColumn]
-)
-VALUES
-(1,'someString','someString','someString','someString')
-
-BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
 DECLARE @str Char(5) -- AnsiStringFixedLength
 SET     @str = 'some%'
 DECLARE @str_1 NChar(5) -- StringFixedLength
@@ -53,9 +22,4 @@ WHERE
 	[t].[NCharColumn] LIKE @str_1 ESCAPE '~' AND
 	[t].[VarCharColumn] LIKE @str_2 ESCAPE '~' AND
 	[t].[NVarCharColumn] LIKE @str_3 ESCAPE '~'
-
-BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
-
-DROP TABLE IF EXISTS [StringTypesTable]
 

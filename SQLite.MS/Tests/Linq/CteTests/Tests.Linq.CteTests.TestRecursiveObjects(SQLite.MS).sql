@@ -1,23 +1,6 @@
 ﻿BeforeExecute
 -- SQLite.MS SQLite
 
-DROP TABLE IF EXISTS [OrgGroup]
-
-BeforeExecute
--- SQLite.MS SQLite
-
-CREATE TABLE IF NOT EXISTS [OrgGroup]
-(
-	[Id]        INTEGER       NOT NULL,
-	[ParentId]  INTEGER       NOT NULL,
-	[GroupName] NVarChar(255)     NULL,
-
-	CONSTRAINT [PK_OrgGroup] PRIMARY KEY ([Id])
-)
-
-BeforeExecute
--- SQLite.MS SQLite
-
 WITH [previous]
 (
 	[OrgGroup_Id],
@@ -50,9 +33,4 @@ SELECT
 	[wrapper].[OrgGroup_GroupName]
 FROM
 	[previous] [wrapper]
-
-BeforeExecute
--- SQLite.MS SQLite
-
-DROP TABLE IF EXISTS [OrgGroup]
 

@@ -1,24 +1,5 @@
 ﻿BeforeExecute
 -- SqlServer.2022
-
-DROP TABLE IF EXISTS [TestInsertOrReplaceTable]
-
-BeforeExecute
--- SqlServer.2022
-
-IF (OBJECT_ID(N'[TestInsertOrReplaceTable]', N'U') IS NULL)
-	CREATE TABLE [TestInsertOrReplaceTable]
-	(
-		[ID]         Int            NOT NULL,
-		[FirstName]  NVarChar(4000)     NULL,
-		[LastName]   NVarChar(4000)     NULL,
-		[MiddleName] NVarChar(4000)     NULL,
-
-		CONSTRAINT [PK_TestInsertOrReplaceTable] PRIMARY KEY CLUSTERED ([ID])
-	)
-
-BeforeExecute
--- SqlServer.2022
 DECLARE @ID Int -- Int32
 SET     @ID = 0
 DECLARE @FirstName NVarChar(4000) -- String
@@ -122,9 +103,4 @@ FROM
 	[TestInsertOrReplaceTable] [x]
 WHERE
 	[x].[FirstName] = @FirstName
-
-BeforeExecute
--- SqlServer.2022
-
-DROP TABLE IF EXISTS [TestInsertOrReplaceTable]
 

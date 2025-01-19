@@ -1,37 +1,5 @@
 ﻿BeforeExecute
 -- SqlServer.2012
-
-IF (OBJECT_ID(N'[Names]', N'U') IS NOT NULL)
-	DROP TABLE [Names]
-
-BeforeExecute
--- SqlServer.2012
-
-IF (OBJECT_ID(N'[Names]', N'U') IS NULL)
-	CREATE TABLE [Names]
-	(
-		[Id]   Int            NOT NULL,
-		[Name] NVarChar(4000)     NULL
-	)
-
-BeforeExecute
--- SqlServer.2012
-
-IF (OBJECT_ID(N'[Addresses]', N'U') IS NOT NULL)
-	DROP TABLE [Addresses]
-
-BeforeExecute
--- SqlServer.2012
-
-IF (OBJECT_ID(N'[Addresses]', N'U') IS NULL)
-	CREATE TABLE [Addresses]
-	(
-		[Id]   Int            NOT NULL,
-		[Text] NVarChar(4000)     NULL
-	)
-
-BeforeExecute
--- SqlServer.2012
 DECLARE @Id Int -- Int32
 SET     @Id = 1
 DECLARE @Name NVarChar(4000) -- String
@@ -114,16 +82,4 @@ FROM
 	[Names] [tupledArg]
 ORDER BY
 	[tupledArg].[Id]
-
-BeforeExecute
--- SqlServer.2012
-
-IF (OBJECT_ID(N'[Addresses]', N'U') IS NOT NULL)
-	DROP TABLE [Addresses]
-
-BeforeExecute
--- SqlServer.2012
-
-IF (OBJECT_ID(N'[Names]', N'U') IS NOT NULL)
-	DROP TABLE [Names]
 

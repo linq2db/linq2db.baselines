@@ -1,38 +1,6 @@
 ﻿BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 
-DROP TABLE IF EXISTS "Issue4596Form"
-
-BeforeExecute
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
-
-CREATE TABLE IF NOT EXISTS "Issue4596Form"
-(
-	"Id" Int       NOT NULL,
-	"C1" character NOT NULL
-)
-
-BeforeExecute
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
-
-DROP TABLE IF EXISTS "Issue4596Item"
-
-BeforeExecute
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
-
-CREATE TABLE IF NOT EXISTS "Issue4596Item"
-(
-	"Id"         Int  NOT NULL,
-	"FormId"     Int  NOT NULL,
-	"OrderIndex" Int  NOT NULL,
-	"Name1"      text     NULL,
-	"Name2"      text     NULL,
-	"Name3"      text     NULL
-)
-
-BeforeExecute
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
-
 SELECT
 	m_1."Id",
 	m_1.cond,
@@ -83,14 +51,4 @@ SELECT
 FROM
 	"Issue4596Form" t1
 LIMIT 1
-
-BeforeExecute
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
-
-DROP TABLE IF EXISTS "Issue4596Item"
-
-BeforeExecute
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
-
-DROP TABLE IF EXISTS "Issue4596Form"
 

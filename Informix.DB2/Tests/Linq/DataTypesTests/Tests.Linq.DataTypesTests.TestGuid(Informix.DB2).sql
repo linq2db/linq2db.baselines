@@ -1,64 +1,5 @@
 ﻿BeforeExecute
 -- Informix.DB2 Informix
-
-DROP TABLE IF EXISTS GuidTable
-
-BeforeExecute
--- Informix.DB2 Informix
-
-CREATE TABLE IF NOT EXISTS GuidTable
-(
-	Id             Int         NOT NULL,
-	"Column"       VARCHAR(36) NOT NULL,
-	ColumnNullable VARCHAR(36)     NULL
-)
-
-BeforeExecute
--- Informix.DB2 Informix
-DECLARE @Id Integer(4) -- Int32
-SET     @Id = 1
-DECLARE @Column Char(36) -- StringFixedLength
-SET     @Column = 'bc7b663d-0fde-4327-8f92-5d8cc3a11d11'
-DECLARE @ColumnNullable Char -- StringFixedLength
-SET     @ColumnNullable = NULL
-
-INSERT INTO GuidTable
-(
-	Id,
-	"Column",
-	ColumnNullable
-)
-VALUES
-(
-	@Id,
-	@Column,
-	@ColumnNullable
-)
-
-BeforeExecute
--- Informix.DB2 Informix
-DECLARE @Id Integer(4) -- Int32
-SET     @Id = 2
-DECLARE @Column Char(36) -- StringFixedLength
-SET     @Column = 'a948600d-de21-4f74-8ac2-9516b287076e'
-DECLARE @ColumnNullable Char(36) -- StringFixedLength
-SET     @ColumnNullable = 'bd3973a5-4323-4dd8-9f4f-df9f93e2a627'
-
-INSERT INTO GuidTable
-(
-	Id,
-	"Column",
-	ColumnNullable
-)
-VALUES
-(
-	@Id,
-	@Column,
-	@ColumnNullable
-)
-
-BeforeExecute
--- Informix.DB2 Informix
 DECLARE @Column Char(36) -- StringFixedLength
 SET     @Column = 'a948600d-de21-4f74-8ac2-9516b287076e'
 DECLARE @ColumnNullable Char(36) -- StringFixedLength
@@ -230,9 +171,4 @@ FROM
 	GuidTable t1
 ORDER BY
 	t1.Id
-
-BeforeExecute
--- Informix.DB2 Informix
-
-DROP TABLE IF EXISTS GuidTable
 

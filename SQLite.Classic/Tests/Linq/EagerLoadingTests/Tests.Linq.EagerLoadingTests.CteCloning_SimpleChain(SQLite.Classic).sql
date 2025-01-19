@@ -1,36 +1,4 @@
 ﻿BeforeExecute
--- SQLite.Classic SQLite
-
-DROP TABLE IF EXISTS [CteTable]
-
-BeforeExecute
--- SQLite.Classic SQLite
-
-CREATE TABLE IF NOT EXISTS [CteTable]
-(
-	[Id]     INTEGER NOT NULL,
-	[Value1] INTEGER NOT NULL,
-	[Value2] INTEGER NOT NULL,
-	[Value3] INTEGER NOT NULL,
-	[Value4] INTEGER NOT NULL,
-	[Value5] INTEGER NOT NULL
-)
-
-BeforeExecute
--- SQLite.Classic SQLite
-
-DROP TABLE IF EXISTS [CteChildTable]
-
-BeforeExecute
--- SQLite.Classic SQLite
-
-CREATE TABLE IF NOT EXISTS [CteChildTable]
-(
-	[Id]    INTEGER NOT NULL,
-	[Value] INTEGER NOT NULL
-)
-
-BeforeExecute
 BeginTransaction(Serializable)
 BeforeExecute
 -- SQLite.Classic SQLite
@@ -149,14 +117,4 @@ SELECT
 FROM
 	[CTE_3] [t1]
 		LEFT JOIN [CteChildTable] [d] ON [t1].[Value4] = [d].[Id]
-
-BeforeExecute
--- SQLite.Classic SQLite
-
-DROP TABLE IF EXISTS [CteChildTable]
-
-BeforeExecute
--- SQLite.Classic SQLite
-
-DROP TABLE IF EXISTS [CteTable]
 

@@ -1,43 +1,5 @@
 ﻿BeforeExecute
 -- Oracle.18.Managed Oracle.Managed Oracle12
-
-BEGIN
-	EXECUTE IMMEDIATE 'DROP TABLE "InheritanceFilter"';
-EXCEPTION
-	WHEN OTHERS THEN
-		IF SQLCODE != -942 THEN
-			RAISE;
-		END IF;
-END;
-
-BeforeExecute
--- Oracle.18.Managed Oracle.Managed Oracle12
-
-BEGIN
-	EXECUTE IMMEDIATE '
-		CREATE TABLE "InheritanceFilter"
-		(
-			"Id"                Int NOT NULL,
-			"Code"              Int NOT NULL,
-			"Child1Field"       Int     NULL,
-			"Child2Field"       Int     NULL,
-			"Grandchild11Field" Int     NULL,
-			"Grandchild12Field" Int     NULL,
-			"Grandchild21Field" Int     NULL,
-			"Grandchild22Field" Int     NULL,
-
-			CONSTRAINT "PK_InheritanceFilter" PRIMARY KEY ("Id")
-		)
-	';
-EXCEPTION
-	WHEN OTHERS THEN
-		IF SQLCODE != -955 THEN
-			RAISE;
-		END IF;
-END;
-
-BeforeExecute
--- Oracle.18.Managed Oracle.Managed Oracle12
 DECLARE @Id Int32
 SET     @Id = 1
 DECLARE @Code Int32
@@ -198,16 +160,4 @@ SELECT
 	t1."Grandchild22Field"
 FROM
 	"InheritanceFilter" t1
-
-BeforeExecute
--- Oracle.18.Managed Oracle.Managed Oracle12
-
-BEGIN
-	EXECUTE IMMEDIATE 'DROP TABLE "InheritanceFilter"';
-EXCEPTION
-	WHEN OTHERS THEN
-		IF SQLCODE != -942 THEN
-			RAISE;
-		END IF;
-END;
 

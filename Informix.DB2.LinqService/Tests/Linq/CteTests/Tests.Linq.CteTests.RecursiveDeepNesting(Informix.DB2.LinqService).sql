@@ -1,20 +1,6 @@
 ﻿BeforeExecute
 -- Informix.DB2 Informix
 
-DROP TABLE IF EXISTS HierarchyTree
-
-BeforeExecute
--- Informix.DB2 Informix
-
-CREATE TABLE IF NOT EXISTS HierarchyTree
-(
-	Id       Int NOT NULL,
-	ParentId Int     NULL
-)
-
-BeforeExecute
--- Informix.DB2 Informix
-
 WITH CTE_1 (Id)
 AS
 (
@@ -59,9 +45,4 @@ FROM
 		INNER JOIN HierarchyTree data2 ON data2.Id = t4.Id
 		INNER JOIN HierarchyTree data3 ON data3.Id = t4.Id
 		INNER JOIN HierarchyTree data4 ON data4.Id = t4.Id
-
-BeforeExecute
--- Informix.DB2 Informix
-
-DROP TABLE IF EXISTS HierarchyTree
 

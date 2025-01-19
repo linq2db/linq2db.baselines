@@ -1,21 +1,5 @@
 ﻿--  SQLite.MS SQLite
 
-DROP TABLE IF EXISTS [Issue4671Entity1]
-
-
-
---  SQLite.MS SQLite
-
-CREATE TABLE IF NOT EXISTS [Issue4671Entity1]
-(
-	[Id]    INTEGER  NOT NULL PRIMARY KEY AUTOINCREMENT,
-	[Value] INTEGER  NOT NULL
-)
-
-
-
---  SQLite.MS SQLite
-
 CREATE TEMPORARY TABLE temp.[Issue4671Entity1TMP]
 (
 	[Id]    INTEGER  NOT NULL PRIMARY KEY AUTOINCREMENT,
@@ -75,12 +59,6 @@ LIMIT 2
 --  SQLite.MS SQLite
 
 DROP TABLE IF EXISTS temp.[Issue4671Entity1TMP]
-
-
-
---  SQLite.MS SQLite
-
-DROP TABLE IF EXISTS [Issue4671Entity1]
 
 
 

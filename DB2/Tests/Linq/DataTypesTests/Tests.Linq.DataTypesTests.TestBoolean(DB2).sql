@@ -1,41 +1,5 @@
 ﻿BeforeExecute
 -- DB2 DB2.LUW DB2LUW
-
-BEGIN
-	DECLARE CONTINUE HANDLER FOR SQLSTATE '42704' BEGIN END;
-	EXECUTE IMMEDIATE 'DROP TABLE "BooleanTable"';
-END
-
-BeforeExecute
--- DB2 DB2.LUW DB2LUW
-
-BEGIN
-	DECLARE CONTINUE HANDLER FOR SQLSTATE '42710' BEGIN END;
-	EXECUTE IMMEDIATE '
-		CREATE TABLE "BooleanTable"
-		(
-			"Id"             Int      NOT NULL,
-			"Column"         smallint NOT NULL,
-			"ColumnNullable" smallint     NULL
-		)
-	';
-END
-
-BeforeExecute
--- DB2 DB2.LUW DB2LUW
-
-INSERT INTO "BooleanTable"
-(
-	"Id",
-	"Column",
-	"ColumnNullable"
-)
-VALUES
-(1,1,NULL),
-(2,0,1)
-
-BeforeExecute
--- DB2 DB2.LUW DB2LUW
 DECLARE @Column SmallInt(4) -- Int16
 SET     @Column = 0
 DECLARE @ColumnNullable SmallInt(4) -- Int16
@@ -175,12 +139,4 @@ FROM
 	"BooleanTable" "t1"
 ORDER BY
 	"t1"."Id"
-
-BeforeExecute
--- DB2 DB2.LUW DB2LUW
-
-BEGIN
-	DECLARE CONTINUE HANDLER FOR SQLSTATE '42704' BEGIN END;
-	EXECUTE IMMEDIATE 'DROP TABLE "BooleanTable"';
-END
 

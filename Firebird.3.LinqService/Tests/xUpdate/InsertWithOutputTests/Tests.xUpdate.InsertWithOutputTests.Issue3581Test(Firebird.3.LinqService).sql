@@ -1,31 +1,5 @@
 ﻿BeforeExecute
 -- Firebird.3 Firebird3
-
-EXECUTE BLOCK AS BEGIN
-	IF (EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'Issue3581Table')) THEN
-		EXECUTE STATEMENT 'DROP TABLE "Issue3581Table"';
-END
-
-BeforeExecute
--- Firebird.3 Firebird3
-
-EXECUTE BLOCK AS BEGIN
-	IF (NOT EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'Issue3581Table')) THEN
-		EXECUTE STATEMENT '
-			CREATE TABLE "Issue3581Table"
-			(
-				"Id"         Int                                    NOT NULL,
-				"Name"       VarChar(255) CHARACTER SET UNICODE_FSS,
-				"ExternalId" VarChar(255) CHARACTER SET UNICODE_FSS,
-				"Source"     VarChar(255) CHARACTER SET UNICODE_FSS,
-
-				CONSTRAINT "PK_Issue3581Table" PRIMARY KEY ("Id")
-			)
-		';
-END
-
-BeforeExecute
--- Firebird.3 Firebird3
 DECLARE @Id Integer -- Int32
 SET     @Id = 1
 DECLARE @Name VarChar(8) -- String
@@ -54,12 +28,4 @@ RETURNING
 	"Issue3581Table"."Name",
 	"Issue3581Table"."ExternalId",
 	"Issue3581Table"."Source"
-
-BeforeExecute
--- Firebird.3 Firebird3
-
-EXECUTE BLOCK AS BEGIN
-	IF (EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'Issue3581Table')) THEN
-		EXECUTE STATEMENT 'DROP TABLE "Issue3581Table"';
-END
 

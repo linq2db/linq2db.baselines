@@ -1,21 +1,6 @@
 ﻿BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
-DROP TABLE IF EXISTS SampleClass
-
-BeforeExecute
--- ClickHouse.MySql ClickHouse
-
-CREATE TABLE IF NOT EXISTS SampleClass
-(
-	Id        Int32,
-	NullValue Nullable(Int32)
-)
-ENGINE = Memory()
-
-BeforeExecute
--- ClickHouse.MySql ClickHouse
-
 SELECT
 	a_1.Id,
 	a_1.NullValue
@@ -34,9 +19,4 @@ FROM
 WHERE
 	a_1.Id = 0 AND a_1.KEYNUMB = 0 OR a_1.Id = 1 AND a_1.KEYNUMB = 1 OR
 	a_1.Id = 2 AND a_1.KEYNUMB = 2
-
-BeforeExecute
--- ClickHouse.MySql ClickHouse
-
-DROP TABLE IF EXISTS SampleClass
 

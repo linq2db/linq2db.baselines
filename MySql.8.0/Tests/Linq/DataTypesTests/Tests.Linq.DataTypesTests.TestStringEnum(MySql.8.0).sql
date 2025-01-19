@@ -1,33 +1,5 @@
 ﻿BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
-DROP TABLE IF EXISTS `StringEnumTable`
-
-BeforeExecute
--- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
-CREATE TABLE IF NOT EXISTS `StringEnumTable`
-(
-	`Id`             INT        NOT NULL,
-	`Column`         VARCHAR(8) NOT NULL,
-	`ColumnNullable` VARCHAR(8)     NULL
-)
-
-BeforeExecute
--- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
-INSERT INTO `StringEnumTable`
-(
-	`Id`,
-	`Column`,
-	`ColumnNullable`
-)
-VALUES
-(1,'val=1',NULL),
-(2,'value=2','value=33')
-
-BeforeExecute
--- MySql.8.0 MySql.8.0.MySql.Data MySql80
 DECLARE @Column VarChar(7) -- String
 SET     @Column = 'value=2'
 DECLARE @ColumnNullable VarChar(8) -- String
@@ -180,9 +152,4 @@ FROM
 	`StringEnumTable` `t1`
 ORDER BY
 	`t1`.`Id`
-
-BeforeExecute
--- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
-DROP TABLE IF EXISTS `StringEnumTable`
 

@@ -1,30 +1,5 @@
 ﻿BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
-
-DROP TABLE IF EXISTS "Issue4193Person"
-
-BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
-
-CREATE TABLE IF NOT EXISTS "Issue4193Person"
-(
-	"Name"       text NOT NULL,
-	"EmployeeId" Int      NULL
-)
-
-BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
-
-INSERT INTO "Issue4193Person"
-(
-	"Name",
-	"EmployeeId"
-)
-VALUES
-('foo',1)
-
-BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
 DECLARE @take Integer -- Int32
 SET     @take = 3
 
@@ -50,9 +25,4 @@ WHERE
 RETURNING
 	"Issue4193Person"."EmployeeId",
 	"Issue4193Person"."Name"
-
-BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
-
-DROP TABLE IF EXISTS "Issue4193Person"
 

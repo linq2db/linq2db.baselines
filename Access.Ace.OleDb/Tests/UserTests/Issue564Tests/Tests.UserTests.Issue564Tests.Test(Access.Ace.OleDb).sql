@@ -1,23 +1,5 @@
 ﻿BeforeExecute
 -- Access.Ace.OleDb AccessOleDb
-
-DROP TABLE [Parent564]
-
-BeforeExecute
--- Access.Ace.OleDb AccessOleDb
-
-CREATE TABLE [Parent564]
-(
-	[Id]          Int            NOT NULL IDENTITY,
-	[Type]        NVarChar(255)      NULL,
-	[StringValue] NVarChar(20)       NULL,
-	[IntValue]    Int                NULL,
-
-	CONSTRAINT [PK_Parent564] PRIMARY KEY CLUSTERED ([Id])
-)
-
-BeforeExecute
--- Access.Ace.OleDb AccessOleDb
 DECLARE @Type VarWChar(9) -- String
 SET     @Type = 'Child564A'
 DECLARE @StringValue VarWChar(9) -- String
@@ -59,9 +41,4 @@ SELECT
 	COUNT(*)
 FROM
 	[Parent564] [t1]
-
-BeforeExecute
--- Access.Ace.OleDb AccessOleDb
-
-DROP TABLE [Parent564]
 

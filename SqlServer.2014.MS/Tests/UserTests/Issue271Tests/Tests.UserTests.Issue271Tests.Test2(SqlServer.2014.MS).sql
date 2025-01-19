@@ -1,24 +1,6 @@
 ﻿BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014
 
-IF (OBJECT_ID(N'[Entity]', N'U') IS NOT NULL)
-	DROP TABLE [Entity]
-
-BeforeExecute
--- SqlServer.2014.MS SqlServer.2014
-
-IF (OBJECT_ID(N'[Entity]', N'U') IS NULL)
-	CREATE TABLE [Entity]
-	(
-		[CharValue]     Char               NULL,
-		[VarCharValue]  VarChar(Max)       NULL,
-		[NCharValue]    NChar              NULL,
-		[NVarCharValue] NVarChar(4000)     NULL
-	)
-
-BeforeExecute
--- SqlServer.2014.MS SqlServer.2014
-
 SELECT
 	[e].[CharValue],
 	[e].[VarCharValue],
@@ -31,10 +13,4 @@ WHERE
 	[e].[VarCharValue] IN ('VarCharValue') AND
 	[e].[NCharValue] IN (N'NCharValue') AND
 	[e].[NVarCharValue] IN (N'NVarCharValue')
-
-BeforeExecute
--- SqlServer.2014.MS SqlServer.2014
-
-IF (OBJECT_ID(N'[Entity]', N'U') IS NOT NULL)
-	DROP TABLE [Entity]
 

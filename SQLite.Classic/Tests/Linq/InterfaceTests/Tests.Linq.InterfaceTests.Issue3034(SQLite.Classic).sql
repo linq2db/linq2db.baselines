@@ -1,32 +1,6 @@
 ﻿BeforeExecute
 -- SQLite.Classic SQLite
 
-DROP TABLE IF EXISTS [MyTable]
-
-BeforeExecute
--- SQLite.Classic SQLite
-
-CREATE TABLE IF NOT EXISTS [MyTable]
-(
-	[Id]   INTEGER       NOT NULL,
-	[Name] NVarChar(255)     NULL
-)
-
-BeforeExecute
--- SQLite.Classic SQLite
-
-INSERT INTO [MyTable]
-(
-	[Id],
-	[Name]
-)
-VALUES
-(1,'old_name'),
-(2,'old_name')
-
-BeforeExecute
--- SQLite.Classic SQLite
-
 UPDATE
 	[MyTable]
 SET
@@ -44,9 +18,4 @@ FROM
 	[MyTable] [t1]
 ORDER BY
 	[t1].[Id]
-
-BeforeExecute
--- SQLite.Classic SQLite
-
-DROP TABLE IF EXISTS [MyTable]
 

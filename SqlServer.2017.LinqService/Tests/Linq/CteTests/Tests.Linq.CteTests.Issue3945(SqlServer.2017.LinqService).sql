@@ -1,22 +1,6 @@
 ﻿BeforeExecute
 -- SqlServer.2017
 
-DROP TABLE IF EXISTS [TestFolder]
-
-BeforeExecute
--- SqlServer.2017
-
-IF (OBJECT_ID(N'[TestFolder]', N'U') IS NULL)
-	CREATE TABLE [TestFolder]
-	(
-		[Id]       UniqueIdentifier NOT NULL,
-		[Label]    NVarChar(4000)       NULL,
-		[ParentId] UniqueIdentifier     NULL
-	)
-
-BeforeExecute
--- SqlServer.2017
-
 WITH [CTE] ([ParentId], [Label])
 AS
 (
@@ -39,9 +23,4 @@ SELECT
 FROM
 	[CTE] [child]
 		INNER JOIN [TestFolder] [parent] ON [child].[ParentId] = [parent].[Id]
-
-BeforeExecute
--- SqlServer.2017
-
-DROP TABLE IF EXISTS [TestFolder]
 

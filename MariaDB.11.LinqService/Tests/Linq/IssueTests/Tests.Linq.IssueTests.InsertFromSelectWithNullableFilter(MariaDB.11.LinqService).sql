@@ -1,92 +1,6 @@
 ﻿BeforeExecute
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql
 
-DROP TABLE IF EXISTS `InsertIssueTest`
-
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
-
-CREATE TABLE IF NOT EXISTS `InsertIssueTest`
-(
-	`ID`          SMALLINT NOT NULL,
-	`intDataType` INT          NULL
-)
-
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
-DECLARE @ID Int16
-SET     @ID = 0
-DECLARE @intDataType Int32
-SET     @intDataType = 0
-
-INSERT INTO `InsertIssueTest`
-(
-	`ID`,
-	`intDataType`
-)
-VALUES
-(
-	@ID,
-	@intDataType
-)
-
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
-DECLARE @ID Int16
-SET     @ID = 0
-DECLARE @intDataType Int32
-SET     @intDataType = 0
-
-INSERT INTO `InsertIssueTest`
-(
-	`ID`,
-	`intDataType`
-)
-VALUES
-(
-	@ID,
-	@intDataType
-)
-
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
-DECLARE @ID Int16
-SET     @ID = 1234
-DECLARE @intDataType Int32
-SET     @intDataType = 1234
-
-INSERT INTO `InsertIssueTest`
-(
-	`ID`,
-	`intDataType`
-)
-VALUES
-(
-	@ID,
-	@intDataType
-)
-
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
-DECLARE @ID Int16
-SET     @ID = 1234
-DECLARE @intDataType Int32
-SET     @intDataType = 1234
-
-INSERT INTO `InsertIssueTest`
-(
-	`ID`,
-	`intDataType`
-)
-VALUES
-(
-	@ID,
-	@intDataType
-)
-
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
-
 INSERT INTO `InsertIssueTest`
 (
 	`ID`,
@@ -138,9 +52,4 @@ SELECT
 	`t1`.`intDataType`
 FROM
 	`InsertIssueTest` `t1`
-
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
-
-DROP TABLE IF EXISTS `InsertIssueTest`
 

@@ -1,31 +1,6 @@
 ﻿BeforeExecute
 -- Firebird.2.5 Firebird
 
-EXECUTE BLOCK AS BEGIN
-	IF (EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'Issue1303')) THEN
-		EXECUTE STATEMENT 'DROP TABLE "Issue1303"';
-END
-
-BeforeExecute
--- Firebird.2.5 Firebird
-
-EXECUTE BLOCK AS BEGIN
-	IF (NOT EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'Issue1303')) THEN
-		EXECUTE STATEMENT '
-			CREATE TABLE "Issue1303"
-			(
-				ID       Int                              NOT NULL,
-				"Array"  VARCHAR(10) CHARACTER SET OCTETS,
-				"Binary" VARCHAR(10) CHARACTER SET OCTETS,
-
-				CONSTRAINT "PK_Issue1303" PRIMARY KEY (ID)
-			)
-		';
-END
-
-BeforeExecute
--- Firebird.2.5 Firebird
-
 INSERT INTO "Issue1303"
 (
 	ID,
@@ -74,12 +49,4 @@ FROM
 	"Issue1303" "t1"
 WHERE
 	"t1"."Binary" = X'0405'
-
-BeforeExecute
--- Firebird.2.5 Firebird
-
-EXECUTE BLOCK AS BEGIN
-	IF (EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'Issue1303')) THEN
-		EXECUTE STATEMENT 'DROP TABLE "Issue1303"';
-END
 

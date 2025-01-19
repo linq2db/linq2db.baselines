@@ -1,82 +1,6 @@
 ﻿BeforeExecute
 -- PostgreSQL.15 PostgreSQL
 
-DROP TABLE IF EXISTS billing_devtypes
-
-BeforeExecute
--- PostgreSQL.15 PostgreSQL
-
-CREATE TABLE IF NOT EXISTS billing_devtypes
-(
-	devtypeid    SERIAL  NOT NULL,
-	typename     text    NOT NULL,
-	"GlobalType" Int     NOT NULL,
-
-	CONSTRAINT "PK_billing_devtypes" PRIMARY KEY (devtypeid)
-)
-
-BeforeExecute
--- PostgreSQL.15 PostgreSQL
-
-DROP TABLE IF EXISTS billing_devices
-
-BeforeExecute
--- PostgreSQL.15 PostgreSQL
-
-CREATE TABLE IF NOT EXISTS billing_devices
-(
-	devid     text NOT NULL,
-	sernum    text     NULL,
-	devtypeid Int  NOT NULL,
-
-	CONSTRAINT "PK_billing_devices" PRIMARY KEY (devid)
-)
-
-BeforeExecute
--- PostgreSQL.15 PostgreSQL
-
-DROP TABLE IF EXISTS "billing_DevReadingType"
-
-BeforeExecute
--- PostgreSQL.15 PostgreSQL
-
-CREATE TABLE IF NOT EXISTS "billing_DevReadingType"
-(
-	"Id"             SERIAL  NOT NULL,
-	"DevTypeId"      Int     NOT NULL,
-	"Name"           text    NOT NULL,
-	"Responsibility" Int     NOT NULL,
-
-	CONSTRAINT "PK_billing_DevReadingType" PRIMARY KEY ("Id")
-)
-
-BeforeExecute
--- PostgreSQL.15 PostgreSQL
-
-DROP TABLE IF EXISTS "billing_TempReading"
-
-BeforeExecute
--- PostgreSQL.15 PostgreSQL
-
-CREATE TABLE IF NOT EXISTS "billing_TempReading"
-(
-	id                 SERIAL     NOT NULL,
-	"DevSerNum"        text       NOT NULL,
-	devid              text           NULL,
-	tsdevice           TimeStamp  NOT NULL,
-	value              decimal    NOT NULL,
-	"Devtypeid"        Int            NULL,
-	"DevReadingTypeId" Int            NULL,
-	"ReadingTypeName"  text           NULL,
-	"DevGlobalType"    Int        NOT NULL,
-	"Responsibility"   Int        NOT NULL,
-
-	CONSTRAINT "PK_billing_TempReading" PRIMARY KEY (id)
-)
-
-BeforeExecute
--- PostgreSQL.15 PostgreSQL
-
 UPDATE
 	"billing_TempReading"
 SET
@@ -114,24 +38,4 @@ SET
 			w_1."DevTypeId" = "billing_TempReading"."Devtypeid"
 		LIMIT 1
 	)
-
-BeforeExecute
--- PostgreSQL.15 PostgreSQL
-
-DROP TABLE IF EXISTS "billing_TempReading"
-
-BeforeExecute
--- PostgreSQL.15 PostgreSQL
-
-DROP TABLE IF EXISTS "billing_DevReadingType"
-
-BeforeExecute
--- PostgreSQL.15 PostgreSQL
-
-DROP TABLE IF EXISTS billing_devices
-
-BeforeExecute
--- PostgreSQL.15 PostgreSQL
-
-DROP TABLE IF EXISTS billing_devtypes
 

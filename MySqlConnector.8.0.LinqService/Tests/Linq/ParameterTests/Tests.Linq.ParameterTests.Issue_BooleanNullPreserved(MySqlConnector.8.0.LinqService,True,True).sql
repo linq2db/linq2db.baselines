@@ -1,20 +1,6 @@
 ﻿BeforeExecute
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 
-DROP TABLE IF EXISTS `TestBool`
-
-BeforeExecute
--- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
-CREATE TABLE IF NOT EXISTS `TestBool`
-(
-	`Id`    INT     NOT NULL,
-	`Value` BOOLEAN     NULL
-)
-
-BeforeExecute
--- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
 INSERT INTO `TestBool`
 (
 	`Id`,
@@ -73,9 +59,4 @@ SELECT
 FROM
 	`TestBool` `t1`
 LIMIT 2
-
-BeforeExecute
--- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
-DROP TABLE IF EXISTS `TestBool`
 

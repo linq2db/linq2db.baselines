@@ -1,22 +1,5 @@
 ﻿BeforeExecute
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
-DROP TABLE IF EXISTS `Base`
-
-BeforeExecute
--- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
-CREATE TABLE IF NOT EXISTS `Base`
-(
-	`Code`   VARCHAR(4000)     NULL,
-	`Id`     INT           NOT NULL,
-	`Name`   VARCHAR(4000)     NULL,
-	`IsMale` BOOLEAN           NULL,
-	`Age`    INT               NULL
-)
-
-BeforeExecute
--- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 DECLARE @Code VarChar(5) -- String
 SET     @Code = 'Child'
 DECLARE @Id Int32
@@ -86,9 +69,4 @@ WHERE
 	END
 ORDER BY
 	`e`.`Id`
-
-BeforeExecute
--- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
-DROP TABLE IF EXISTS `Base`
 

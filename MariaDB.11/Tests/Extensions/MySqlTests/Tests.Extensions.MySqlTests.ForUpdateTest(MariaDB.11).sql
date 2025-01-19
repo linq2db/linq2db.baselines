@@ -1,21 +1,4 @@
 ﻿BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
-
-DROP TABLE IF EXISTS `ForUpdateTestTable`
-
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
-
-CREATE TABLE IF NOT EXISTS `ForUpdateTestTable`
-(
-	`Id`               INT           NOT NULL,
-	`OtherNaming`      VARCHAR(4000) NOT NULL,
-	`timestampUpdated` Timestamp     NOT NULL,
-
-	CONSTRAINT `PK_ForUpdateTestTable` PRIMARY KEY CLUSTERED (`Id`)
-)
-
-BeforeExecute
 BeginTransaction
 BeforeExecute
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql
@@ -62,9 +45,4 @@ FROM
 WHERE
 	`t1`.`Count_1` = 0
 FOR UPDATE
-
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
-
-DROP TABLE IF EXISTS `ForUpdateTestTable`
 

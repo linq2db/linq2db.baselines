@@ -1,23 +1,6 @@
 ﻿BeforeExecute
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 
-DROP TABLE IF EXISTS `OrgGroup`
-
-BeforeExecute
--- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
-CREATE TABLE IF NOT EXISTS `OrgGroup`
-(
-	`Id`        INT           NOT NULL,
-	`ParentId`  INT           NOT NULL,
-	`GroupName` VARCHAR(4000)     NULL,
-
-	CONSTRAINT `PK_OrgGroup` PRIMARY KEY CLUSTERED (`Id`)
-)
-
-BeforeExecute
--- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
 WITH RECURSIVE `previous`
 (
 	`OrgGroup_Id`,
@@ -50,9 +33,4 @@ SELECT
 	`wrapper`.`OrgGroup_GroupName`
 FROM
 	`previous` `wrapper`
-
-BeforeExecute
--- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
-DROP TABLE IF EXISTS `OrgGroup`
 

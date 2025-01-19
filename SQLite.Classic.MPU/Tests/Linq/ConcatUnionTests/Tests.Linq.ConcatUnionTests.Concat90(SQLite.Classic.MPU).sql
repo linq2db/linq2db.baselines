@@ -1,34 +1,6 @@
 ﻿BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
-DROP TABLE IF EXISTS [TestEntity1]
-
-BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
-
-CREATE TABLE IF NOT EXISTS [TestEntity1]
-(
-	[Id]     INTEGER       NOT NULL,
-	[Field1] NVarChar(255)     NULL
-)
-
-BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
-
-DROP TABLE IF EXISTS [TestEntity2]
-
-BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
-
-CREATE TABLE IF NOT EXISTS [TestEntity2]
-(
-	[Id]     INTEGER       NOT NULL,
-	[Field1] NVarChar(255)     NULL
-)
-
-BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
-
 SELECT
 	[t1].[Id],
 	[t1].[Field1],
@@ -86,14 +58,4 @@ FROM
 		LEFT JOIN [TestEntity1] [t1_1] ON [t2_1].[Id] = [t1_1].[Id]
 WHERE
 	[t1_1].[Id] IS NULL
-
-BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
-
-DROP TABLE IF EXISTS [TestEntity2]
-
-BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
-
-DROP TABLE IF EXISTS [TestEntity1]
 

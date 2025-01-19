@@ -1,22 +1,6 @@
 ﻿BeforeExecute
 -- SqlCe
 
-DROP TABLE [Issue4460Table]
-
-BeforeExecute
--- SqlCe
-
-CREATE TABLE [Issue4460Table]
-(
-	[Id]      Int           NOT NULL,
-	[Code]    NVarChar(255)     NULL,
-	[Name]    NVarChar(255)     NULL,
-	[Surname] NVarChar(255)     NULL
-)
-
-BeforeExecute
--- SqlCe
-
 INSERT INTO [Issue4460Table]
 (
 	[Id],
@@ -36,9 +20,4 @@ SELECT
 	[t1].[Surname]
 FROM
 	[Issue4460Table] [t1]
-
-BeforeExecute
--- SqlCe
-
-DROP TABLE [Issue4460Table]
 

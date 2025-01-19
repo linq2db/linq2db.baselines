@@ -1,27 +1,5 @@
 ﻿BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-
-DROP TABLE "InheritanceFilter"
-
-BeforeExecute
--- SapHana.Odbc SapHanaOdbc
-
-CREATE COLUMN TABLE "InheritanceFilter"
-(
-	"Id"                Integer NOT NULL,
-	"Code"              Integer NOT NULL,
-	"Child1Field"       Integer     NULL,
-	"Child2Field"       Integer     NULL,
-	"Grandchild11Field" Integer     NULL,
-	"Grandchild12Field" Integer     NULL,
-	"Grandchild21Field" Integer     NULL,
-	"Grandchild22Field" Integer     NULL,
-
-	PRIMARY KEY ("Id")
-)
-
-BeforeExecute
--- SapHana.Odbc SapHanaOdbc
 DECLARE @Id  -- Int32
 SET     @Id = 1
 DECLARE @Code  -- Int32
@@ -182,9 +160,4 @@ SELECT
 	"t1"."Grandchild22Field"
 FROM
 	"InheritanceFilter" "t1"
-
-BeforeExecute
--- SapHana.Odbc SapHanaOdbc
-
-DROP TABLE "InheritanceFilter"
 

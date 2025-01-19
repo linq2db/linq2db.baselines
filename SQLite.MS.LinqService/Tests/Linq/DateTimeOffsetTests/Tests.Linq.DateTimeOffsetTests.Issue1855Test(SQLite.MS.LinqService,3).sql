@@ -1,22 +1,5 @@
 ﻿BeforeExecute
 -- SQLite.MS SQLite
-
-DROP TABLE IF EXISTS [Issue1855Table]
-
-BeforeExecute
--- SQLite.MS SQLite
-
-CREATE TABLE IF NOT EXISTS [Issue1855Table]
-(
-	[Id]                         INTEGER        NOT NULL,
-	[SomeDateTimeOffset]         DateTimeOffset NOT NULL,
-	[SomeNullableDateTimeOffset] DateTimeOffset     NULL,
-
-	CONSTRAINT [PK_Issue1855Table] PRIMARY KEY ([Id])
-)
-
-BeforeExecute
--- SQLite.MS SQLite
 DECLARE @Id  -- Int32
 SET     @Id = 1
 DECLARE @SomeDateTimeOffset  -- DateTimeOffset
@@ -68,9 +51,4 @@ FROM
 	[Issue1855Table] [r]
 WHERE
 	strftime('%Y-%m-%d %H:%M:%f', @clientSideIn) <> strftime('%Y-%m-%d %H:%M:%f', [r].[SomeDateTimeOffset])
-
-BeforeExecute
--- SQLite.MS SQLite
-
-DROP TABLE IF EXISTS [Issue1855Table]
 

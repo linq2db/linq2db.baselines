@@ -1,22 +1,6 @@
 ﻿BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
-DROP TABLE IF EXISTS [Issue3360Table]
-
-BeforeExecute
--- SQLite.Classic.MPM SQLite.Classic SQLite
-
-CREATE TABLE IF NOT EXISTS [Issue3360Table]
-(
-	[Id]  INTEGER NOT NULL,
-	[Str] VarChar     NULL,
-
-	CONSTRAINT [PK_Issue3360Table] PRIMARY KEY ([Id])
-)
-
-BeforeExecute
--- SQLite.Classic.MPM SQLite.Classic SQLite
-
 WITH [cte] ([Id], [Str])
 AS
 (
@@ -40,9 +24,4 @@ SELECT
 	[t2].[Str]
 FROM
 	[cte] [t2]
-
-BeforeExecute
--- SQLite.Classic.MPM SQLite.Classic SQLite
-
-DROP TABLE IF EXISTS [Issue3360Table]
 

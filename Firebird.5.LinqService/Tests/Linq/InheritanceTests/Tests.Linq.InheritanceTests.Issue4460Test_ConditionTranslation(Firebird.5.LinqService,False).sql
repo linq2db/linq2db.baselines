@@ -1,30 +1,5 @@
 ﻿BeforeExecute
 -- Firebird.5 Firebird4
-
-EXECUTE BLOCK AS BEGIN
-	IF (EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'Base')) THEN
-		EXECUTE STATEMENT 'DROP TABLE "Base"';
-END
-
-BeforeExecute
--- Firebird.5 Firebird4
-
-EXECUTE BLOCK AS BEGIN
-	IF (NOT EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'Base')) THEN
-		EXECUTE STATEMENT '
-			CREATE TABLE "Base"
-			(
-				"Code"   VarChar(255) CHARACTER SET UNICODE_FSS,
-				"Id"     Int                                    NOT NULL,
-				"Name"   VarChar(255) CHARACTER SET UNICODE_FSS,
-				"IsMale" BOOLEAN,
-				"Age"    Int
-			)
-		';
-END
-
-BeforeExecute
--- Firebird.5 Firebird4
 DECLARE @Code VarChar(5) -- String
 SET     @Code = 'Child'
 DECLARE @Id Integer -- Int32
@@ -94,12 +69,4 @@ WHERE
 	END
 ORDER BY
 	"e"."Id"
-
-BeforeExecute
--- Firebird.5 Firebird4
-
-EXECUTE BLOCK AS BEGIN
-	IF (EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'Base')) THEN
-		EXECUTE STATEMENT 'DROP TABLE "Base"';
-END
 

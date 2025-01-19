@@ -1,28 +1,6 @@
 ﻿BeforeExecute
 -- Firebird.4 Firebird4
 
-EXECUTE BLOCK AS BEGIN
-	IF (EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'Issue3360WithEnum')) THEN
-		EXECUTE STATEMENT 'DROP TABLE "Issue3360WithEnum"';
-END
-
-BeforeExecute
--- Firebird.4 Firebird4
-
-EXECUTE BLOCK AS BEGIN
-	IF (NOT EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'Issue3360WithEnum')) THEN
-		EXECUTE STATEMENT '
-			CREATE TABLE "Issue3360WithEnum"
-			(
-				"Id"  Int                                   NOT NULL,
-				"Str" VarChar(50) CHARACTER SET UNICODE_FSS NOT NULL
-			)
-		';
-END
-
-BeforeExecute
--- Firebird.4 Firebird4
-
 WITH RECURSIVE "cte" ("Id", "Str")
 AS
 (
@@ -44,12 +22,4 @@ SELECT
 	"t2"."Str"
 FROM
 	"cte" "t2"
-
-BeforeExecute
--- Firebird.4 Firebird4
-
-EXECUTE BLOCK AS BEGIN
-	IF (EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'Issue3360WithEnum')) THEN
-		EXECUTE STATEMENT 'DROP TABLE "Issue3360WithEnum"';
-END
 

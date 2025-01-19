@@ -1,54 +1,6 @@
 ﻿BeforeExecute
 -- PostgreSQL.17 PostgreSQL.15 PostgreSQL
 
-DROP TABLE IF EXISTS "O1"
-
-BeforeExecute
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
-
-CREATE TABLE IF NOT EXISTS "O1"
-(
-	"DocEntry"    Int  NOT NULL,
-	"BplId"       Int  NOT NULL,
-	"ChaveAcesso" text     NULL,
-	"DocStatus"   text     NULL
-)
-
-BeforeExecute
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
-
-DROP TABLE IF EXISTS "O2"
-
-BeforeExecute
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
-
-CREATE TABLE IF NOT EXISTS "O2"
-(
-	"DocEntry"    Int  NOT NULL,
-	"BplId"       Int  NOT NULL,
-	"ChaveAcesso" text     NULL,
-	"DocStatus"   text     NULL
-)
-
-BeforeExecute
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
-
-DROP TABLE IF EXISTS "O3"
-
-BeforeExecute
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
-
-CREATE TABLE IF NOT EXISTS "O3"
-(
-	"DocEntry"    Int  NOT NULL,
-	"BplId"       Int  NOT NULL,
-	"ChaveAcesso" text     NULL,
-	"DocStatus"   text     NULL
-)
-
-BeforeExecute
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
-
 SELECT
 	"doSap"."DocEntry",
 	CASE
@@ -78,19 +30,4 @@ SELECT
 	'Manual/Externo'::text
 FROM
 	"O3" "doSap_2"
-
-BeforeExecute
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
-
-DROP TABLE IF EXISTS "O3"
-
-BeforeExecute
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
-
-DROP TABLE IF EXISTS "O2"
-
-BeforeExecute
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
-
-DROP TABLE IF EXISTS "O1"
 

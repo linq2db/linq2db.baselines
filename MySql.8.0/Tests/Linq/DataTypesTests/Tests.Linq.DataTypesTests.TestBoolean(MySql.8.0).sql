@@ -1,33 +1,5 @@
 ﻿BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
-DROP TABLE IF EXISTS `BooleanTable`
-
-BeforeExecute
--- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
-CREATE TABLE IF NOT EXISTS `BooleanTable`
-(
-	`Id`             INT     NOT NULL,
-	`Column`         BOOLEAN NOT NULL,
-	`ColumnNullable` BOOLEAN     NULL
-)
-
-BeforeExecute
--- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
-INSERT INTO `BooleanTable`
-(
-	`Id`,
-	`Column`,
-	`ColumnNullable`
-)
-VALUES
-(1,1,NULL),
-(2,0,1)
-
-BeforeExecute
--- MySql.8.0 MySql.8.0.MySql.Data MySql80
 DECLARE @Column UByte -- Boolean
 SET     @Column = 0
 DECLARE @ColumnNullable UByte -- Boolean
@@ -180,9 +152,4 @@ FROM
 	`BooleanTable` `t1`
 ORDER BY
 	`t1`.`Id`
-
-BeforeExecute
--- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
-DROP TABLE IF EXISTS `BooleanTable`
 

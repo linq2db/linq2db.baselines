@@ -1,25 +1,5 @@
 ﻿BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014
-
-IF (OBJECT_ID(N'[Issue3581Table]', N'U') IS NOT NULL)
-	DROP TABLE [Issue3581Table]
-
-BeforeExecute
--- SqlServer.2014.MS SqlServer.2014
-
-IF (OBJECT_ID(N'[Issue3581Table]', N'U') IS NULL)
-	CREATE TABLE [Issue3581Table]
-	(
-		[Id]         Int            NOT NULL,
-		[Name]       NVarChar(4000)     NULL,
-		[ExternalId] NVarChar(4000)     NULL,
-		[Source]     NVarChar(4000)     NULL,
-
-		CONSTRAINT [PK_Issue3581Table] PRIMARY KEY CLUSTERED ([Id])
-	)
-
-BeforeExecute
--- SqlServer.2014.MS SqlServer.2014
 DECLARE @Id Int -- Int32
 SET     @Id = 1
 DECLARE @Name NVarChar(4000) -- String
@@ -48,10 +28,4 @@ VALUES
 	@Id_1,
 	@Source
 )
-
-BeforeExecute
--- SqlServer.2014.MS SqlServer.2014
-
-IF (OBJECT_ID(N'[Issue3581Table]', N'U') IS NOT NULL)
-	DROP TABLE [Issue3581Table]
 

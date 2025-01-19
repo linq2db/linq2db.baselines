@@ -1,20 +1,5 @@
 ﻿BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-
-DROP TABLE IF EXISTS `TypeConvertTable`
-
-BeforeExecute
--- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-
-CREATE TABLE IF NOT EXISTS `TypeConvertTable`
-(
-	`Name`      VARCHAR(50) NOT NULL,
-	`BoolValue` CHAR(255)   NOT NULL,
-	`GuidValue` VARCHAR(50)     NULL
-)
-
-BeforeExecute
--- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 DECLARE @Name VarChar(11) -- String
 SET     @Name = 'NotVerified'
 DECLARE @BoolValue String -- AnsiStringFixedLength
@@ -248,9 +233,4 @@ FROM
 WHERE
 	`t1`.`GuidValue` = @GuidValue
 LIMIT 1
-
-BeforeExecute
--- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-
-DROP TABLE IF EXISTS `TypeConvertTable`
 

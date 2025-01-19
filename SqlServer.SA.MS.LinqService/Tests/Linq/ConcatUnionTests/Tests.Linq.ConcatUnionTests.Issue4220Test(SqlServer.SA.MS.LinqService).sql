@@ -1,39 +1,5 @@
 ﻿BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
-
-DROP TABLE IF EXISTS [ConcreteA]
-
-BeforeExecute
--- SqlServer.SA.MS SqlServer.2019
-
-IF (OBJECT_ID(N'[ConcreteA]', N'U') IS NULL)
-	CREATE TABLE [ConcreteA]
-	(
-		[Id]    Int            NOT NULL,
-		[AOnly] NVarChar(4000)     NULL,
-
-		CONSTRAINT [PK_ConcreteA] PRIMARY KEY CLUSTERED ([Id])
-	)
-
-BeforeExecute
--- SqlServer.SA.MS SqlServer.2019
-
-DROP TABLE IF EXISTS [ConcreteB]
-
-BeforeExecute
--- SqlServer.SA.MS SqlServer.2019
-
-IF (OBJECT_ID(N'[ConcreteB]', N'U') IS NULL)
-	CREATE TABLE [ConcreteB]
-	(
-		[Id]    Int            NOT NULL,
-		[BOnly] NVarChar(4000)     NULL,
-
-		CONSTRAINT [PK_ConcreteB] PRIMARY KEY CLUSTERED ([Id])
-	)
-
-BeforeExecute
--- SqlServer.SA.MS SqlServer.2019
 DECLARE @Id Int -- Int32
 SET     @Id = 1
 DECLARE @AOnly NVarChar(4000) -- String
@@ -86,14 +52,4 @@ SELECT
 	[e_1].[BOnly]
 FROM
 	[ConcreteB] [e_1]
-
-BeforeExecute
--- SqlServer.SA.MS SqlServer.2019
-
-DROP TABLE IF EXISTS [ConcreteB]
-
-BeforeExecute
--- SqlServer.SA.MS SqlServer.2019
-
-DROP TABLE IF EXISTS [ConcreteA]
 

@@ -1,34 +1,5 @@
 ﻿BeforeExecute
 -- SQLite.MS SQLite
-
-DROP TABLE IF EXISTS [TrimTestTable]
-
-BeforeExecute
--- SQLite.MS SQLite
-
-CREATE TABLE IF NOT EXISTS [TrimTestTable]
-(
-	[ID]   INTEGER      NOT NULL,
-	[Data] NVarChar(50)     NULL,
-
-	CONSTRAINT [PK_TrimTestTable] PRIMARY KEY ([ID])
-)
-
-BeforeExecute
--- SQLite.MS SQLite
-
-INSERT INTO [TrimTestTable]
-(
-	[ID],
-	[Data]
-)
-VALUES
-(1,'***XXX***'),
-(2,'***HHH***'),
-(3,'***VVV***')
-
-BeforeExecute
--- SQLite.MS SQLite
 DECLARE @Data NVarChar(9) -- String
 SET     @Data = '***III***'
 DECLARE @ID  -- Int32
@@ -88,9 +59,4 @@ FROM
 	[TrimTestTable] [r]
 ORDER BY
 	[r].[ID]
-
-BeforeExecute
--- SQLite.MS SQLite
-
-DROP TABLE IF EXISTS [TrimTestTable]
 

@@ -1,24 +1,5 @@
 ﻿BeforeExecute
 -- SqlServer.2022
-
-DROP TABLE IF EXISTS [Table]
-
-BeforeExecute
--- SqlServer.2022
-
-IF (OBJECT_ID(N'[Table]', N'U') IS NULL)
-	CREATE TABLE [Table]
-	(
-		[Version]   Int                  NULL,
-		[UpdatedOn] DateTime2            NULL,
-		[UserId]    UniqueIdentifier NOT NULL,
-		[Value]     UniqueIdentifier     NULL,
-
-		CONSTRAINT [PK_Table] PRIMARY KEY CLUSTERED ([UserId])
-	)
-
-BeforeExecute
--- SqlServer.2022
 DECLARE @Version Int -- Int32
 SET     @Version = 0
 
@@ -50,9 +31,4 @@ VALUES
 	[Source].[source_Value]
 )
 ;
-
-BeforeExecute
--- SqlServer.2022
-
-DROP TABLE IF EXISTS [Table]
 

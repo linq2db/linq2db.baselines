@@ -1,20 +1,5 @@
 ﻿BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-
-DROP TABLE "TypeConvertTable"
-
-BeforeExecute
--- SapHana.Odbc SapHanaOdbc
-
-CREATE COLUMN TABLE "TypeConvertTable"
-(
-	"Name"      NVarChar(50) NOT NULL,
-	"BoolValue" Char         NOT NULL,
-	"GuidValue" VarChar(50)      NULL
-)
-
-BeforeExecute
--- SapHana.Odbc SapHanaOdbc
 DECLARE @Name NVarChar(11) -- String
 SET     @Name = 'NotVerified'
 DECLARE @BoolValue Char(1) -- AnsiStringFixedLength
@@ -248,9 +233,4 @@ FROM
 WHERE
 	"t1"."GuidValue" = ?
 LIMIT 1
-
-BeforeExecute
--- SapHana.Odbc SapHanaOdbc
-
-DROP TABLE "TypeConvertTable"
 

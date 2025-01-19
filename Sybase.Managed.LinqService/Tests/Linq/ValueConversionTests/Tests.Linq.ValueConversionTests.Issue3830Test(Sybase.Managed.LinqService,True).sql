@@ -1,98 +1,6 @@
 ﻿BeforeExecute
 -- Sybase.Managed Sybase
 
-IF (OBJECT_ID(N'Issue3830TestTable') IS NOT NULL)
-	DROP TABLE [Issue3830TestTable]
-
-BeforeExecute
--- Sybase.Managed Sybase
-
-IF (OBJECT_ID(N'Issue3830TestTable') IS NULL)
-	EXECUTE('
-		CREATE TABLE [Issue3830TestTable]
-		(
-			[Id]    Int     NOT NULL,
-			[Bool1] Char(1) NOT NULL,
-			[Bool2] Char(1)     NULL,
-			[Bool3] Char(1)     NULL
-		)
-	')
-
-BeforeExecute
--- Sybase.Managed Sybase
-
-INSERT INTO [Issue3830TestTable]
-(
-	[Id],
-	[Bool1],
-	[Bool2],
-	[Bool3]
-)
-VALUES
-(
-	1,
-	'Y',
-	NULL,
-	NULL
-)
-
-BeforeExecute
--- Sybase.Managed Sybase
-
-INSERT INTO [Issue3830TestTable]
-(
-	[Id],
-	[Bool1],
-	[Bool2],
-	[Bool3]
-)
-VALUES
-(
-	2,
-	'N',
-	NULL,
-	'Y'
-)
-
-BeforeExecute
--- Sybase.Managed Sybase
-
-INSERT INTO [Issue3830TestTable]
-(
-	[Id],
-	[Bool1],
-	[Bool2],
-	[Bool3]
-)
-VALUES
-(
-	3,
-	'N',
-	'Y',
-	NULL
-)
-
-BeforeExecute
--- Sybase.Managed Sybase
-
-INSERT INTO [Issue3830TestTable]
-(
-	[Id],
-	[Bool1],
-	[Bool2],
-	[Bool3]
-)
-VALUES
-(
-	4,
-	'Y',
-	'N',
-	'Y'
-)
-
-BeforeExecute
--- Sybase.Managed Sybase
-
 SELECT
 	[r].[Id],
 	[r].[Bool1],
@@ -299,10 +207,4 @@ FROM
 	[Issue3830TestTable] [r]
 WHERE
 	[r].[Bool2] IS NOT NULL AND [r].[Bool1] = 'Y' AND [r].[Bool3] = 'Y'
-
-BeforeExecute
--- Sybase.Managed Sybase
-
-IF (OBJECT_ID(N'Issue3830TestTable') IS NOT NULL)
-	DROP TABLE [Issue3830TestTable]
 

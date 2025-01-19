@@ -1,38 +1,5 @@
 ﻿BeforeExecute
 -- Oracle.11.Managed Oracle11
-
-BEGIN
-	EXECUTE IMMEDIATE 'DROP TABLE "Issue1855Table"';
-EXCEPTION
-	WHEN OTHERS THEN
-		IF SQLCODE != -942 THEN
-			RAISE;
-		END IF;
-END;
-
-BeforeExecute
--- Oracle.11.Managed Oracle11
-
-BEGIN
-	EXECUTE IMMEDIATE '
-		CREATE TABLE "Issue1855Table"
-		(
-			"Id"                         Int                      NOT NULL,
-			"SomeDateTimeOffset"         timestamp with time zone NOT NULL,
-			"SomeNullableDateTimeOffset" timestamp with time zone     NULL,
-
-			CONSTRAINT "PK_Issue1855Table" PRIMARY KEY ("Id")
-		)
-	';
-EXCEPTION
-	WHEN OTHERS THEN
-		IF SQLCODE != -955 THEN
-			RAISE;
-		END IF;
-END;
-
-BeforeExecute
--- Oracle.11.Managed Oracle11
 DECLARE @Id Int32
 SET     @Id = 1
 DECLARE @SomeDateTimeOffset TimeStampTZ -- DateTimeOffset
@@ -85,16 +52,4 @@ FROM
 WHERE
 	:clientSideIn <> r."SomeNullableDateTimeOffset" OR
 	r."SomeNullableDateTimeOffset" IS NULL
-
-BeforeExecute
--- Oracle.11.Managed Oracle11
-
-BEGIN
-	EXECUTE IMMEDIATE 'DROP TABLE "Issue1855Table"';
-EXCEPTION
-	WHEN OTHERS THEN
-		IF SQLCODE != -942 THEN
-			RAISE;
-		END IF;
-END;
 

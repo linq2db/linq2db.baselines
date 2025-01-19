@@ -1,28 +1,5 @@
 ﻿BeforeExecute
 -- Sybase.Managed Sybase
-
-IF (OBJECT_ID(N'Base') IS NOT NULL)
-	DROP TABLE [Base]
-
-BeforeExecute
--- Sybase.Managed Sybase
-
-IF (OBJECT_ID(N'Base') IS NULL)
-	EXECUTE('
-		CREATE TABLE [Base]
-		(
-			[Id]           Int           NOT NULL,
-			[Type]         Int           NOT NULL,
-			[Name_First]   NVarChar(255)     NULL,
-			[Name_Second]  NVarChar(255)     NULL,
-			[Test_ChildId] Int           NOT NULL,
-
-			CONSTRAINT [PK_Base] PRIMARY KEY CLUSTERED ([Id])
-		)
-	')
-
-BeforeExecute
--- Sybase.Managed Sybase
 DECLARE @Id Integer -- Int32
 SET     @Id = 1
 DECLARE @Type Integer -- Int32
@@ -97,10 +74,4 @@ SELECT TOP 2
 	[t1].[Name_Second]
 FROM
 	[Base] [t1]
-
-BeforeExecute
--- Sybase.Managed Sybase
-
-IF (OBJECT_ID(N'Base') IS NOT NULL)
-	DROP TABLE [Base]
 

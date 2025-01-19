@@ -1,22 +1,6 @@
 ﻿BeforeExecute
 -- SqlCe
 
-DROP TABLE [Issue4671Entity]
-
-BeforeExecute
--- SqlCe
-
-CREATE TABLE [Issue4671Entity]
-(
-	[Id]    Int  NOT NULL IDENTITY,
-	[Value] Int  NOT NULL,
-
-	CONSTRAINT [PK_Issue4671Entity] PRIMARY KEY ([Id])
-)
-
-BeforeExecute
--- SqlCe
-
 CREATE TABLE [Issue4671EntityTMP]
 (
 	[Id]    Int  NOT NULL IDENTITY,
@@ -71,9 +55,4 @@ BeforeExecute
 -- SqlCe
 
 DROP TABLE [Issue4671EntityTMP]
-
-BeforeExecute
--- SqlCe
-
-DROP TABLE [Issue4671Entity]
 

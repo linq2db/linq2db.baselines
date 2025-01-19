@@ -1,56 +1,6 @@
 ﻿BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
-DROP TABLE IF EXISTS T1
-
-BeforeExecute
--- ClickHouse.Octonica ClickHouse
-
-CREATE TABLE IF NOT EXISTS T1
-(
-	InstrumentId         Int32,
-	InstrumentCode       Nullable(String),
-	CreateDate           DateTime64(7),
-	SourceInstrumentCode Nullable(String),
-
-	PRIMARY KEY (InstrumentId)
-)
-ENGINE = MergeTree()
-ORDER BY InstrumentId
-
-BeforeExecute
--- ClickHouse.Octonica ClickHouse
-
-DROP TABLE IF EXISTS T2
-
-BeforeExecute
--- ClickHouse.Octonica ClickHouse
-
-CREATE TABLE IF NOT EXISTS T2
-(
-	InstrumentId Int32,
-	IndexId      Int32
-)
-ENGINE = Memory()
-
-BeforeExecute
--- ClickHouse.Octonica ClickHouse
-
-DROP TABLE IF EXISTS T3
-
-BeforeExecute
--- ClickHouse.Octonica ClickHouse
-
-CREATE TABLE IF NOT EXISTS T3
-(
-	InstrumentId Int32,
-	IndexId      Int32
-)
-ENGINE = Memory()
-
-BeforeExecute
--- ClickHouse.Octonica ClickHouse
-
 INSERT INTO T3
 (
 	InstrumentId,
@@ -174,19 +124,4 @@ FROM
 	) t5
 ORDER BY
 	t5.SourceInstrumentCode
-
-BeforeExecute
--- ClickHouse.Octonica ClickHouse
-
-DROP TABLE IF EXISTS T3
-
-BeforeExecute
--- ClickHouse.Octonica ClickHouse
-
-DROP TABLE IF EXISTS T2
-
-BeforeExecute
--- ClickHouse.Octonica ClickHouse
-
-DROP TABLE IF EXISTS T1
 

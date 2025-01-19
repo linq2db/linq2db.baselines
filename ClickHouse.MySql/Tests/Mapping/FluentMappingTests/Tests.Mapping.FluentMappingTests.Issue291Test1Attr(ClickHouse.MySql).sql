@@ -1,22 +1,6 @@
 ﻿BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
-DROP TABLE IF EXISTS my_table
-
-BeforeExecute
--- ClickHouse.MySql ClickHouse
-
-CREATE TABLE IF NOT EXISTS my_table
-(
-	my_col1      Nullable(String),
-	itemType     Int32,
-	my_other_col Nullable(String)
-)
-ENGINE = Memory()
-
-BeforeExecute
--- ClickHouse.MySql ClickHouse
-
 INSERT INTO my_table
 (
 	my_col1,
@@ -66,9 +50,4 @@ SELECT
 	COUNT(*)
 FROM
 	my_table t1
-
-BeforeExecute
--- ClickHouse.MySql ClickHouse
-
-DROP TABLE IF EXISTS my_table
 

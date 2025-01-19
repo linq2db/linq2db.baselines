@@ -1,36 +1,5 @@
 ﻿BeforeExecute
 -- Sybase.Managed Sybase
-
-IF (OBJECT_ID(N'DateOnlyTable') IS NOT NULL)
-	DROP TABLE [DateOnlyTable]
-
-BeforeExecute
--- Sybase.Managed Sybase
-
-IF (OBJECT_ID(N'DateOnlyTable') IS NULL)
-	EXECUTE('
-		CREATE TABLE [DateOnlyTable]
-		(
-			[Id]             Int  NOT NULL,
-			[Column]         Date NOT NULL,
-			[ColumnNullable] Date     NULL
-		)
-	')
-
-BeforeExecute
--- Sybase.Managed Sybase
-
-INSERT INTO [DateOnlyTable]
-(
-	[Id],
-	[Column],
-	[ColumnNullable]
-)
-SELECT 1,'1950-01-01',NULL UNION ALL
-SELECT 2,'2020-02-29','2200-01-01'
-
-BeforeExecute
--- Sybase.Managed Sybase
 DECLARE @Column Date
 SET     @Column = '2020-02-29'
 DECLARE @ColumnNullable Date
@@ -181,10 +150,4 @@ FROM
 	[DateOnlyTable] [t1]
 ORDER BY
 	[t1].[Id]
-
-BeforeExecute
--- Sybase.Managed Sybase
-
-IF (OBJECT_ID(N'DateOnlyTable') IS NOT NULL)
-	DROP TABLE [DateOnlyTable]
 

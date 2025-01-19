@@ -1,21 +1,5 @@
 ﻿BeforeExecute
 -- SQLite.MS SQLite
-
-DROP TABLE IF EXISTS [Parent564]
-
-BeforeExecute
--- SQLite.MS SQLite
-
-CREATE TABLE IF NOT EXISTS [Parent564]
-(
-	[Id]          INTEGER        NOT NULL PRIMARY KEY AUTOINCREMENT,
-	[Type]        NVarChar(255)      NULL,
-	[StringValue] NVarChar(20)       NULL,
-	[IntValue]    INTEGER            NULL
-)
-
-BeforeExecute
--- SQLite.MS SQLite
 DECLARE @Type NVarChar(9) -- String
 SET     @Type = 'Child564A'
 DECLARE @StringValue NVarChar(9) -- String
@@ -57,9 +41,4 @@ SELECT
 	COUNT(*)
 FROM
 	[Parent564] [t1]
-
-BeforeExecute
--- SQLite.MS SQLite
-
-DROP TABLE IF EXISTS [Parent564]
 

@@ -1,21 +1,6 @@
 ﻿BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
 
-DROP TABLE [SampleClass]
-
-BeforeExecute
--- Access.Jet.OleDb AccessOleDb
-
-CREATE TABLE [SampleClass]
-(
-	[Id]     Int           NOT NULL,
-	[Value]  NVarChar(50)      NULL,
-	[Value2] NVarChar(255)     NULL
-)
-
-BeforeExecute
--- Access.Jet.OleDb AccessOleDb
-
 INSERT INTO [SampleClass]
 (
 	[Id],
@@ -128,9 +113,4 @@ FROM
 	[SampleClass] [sampleClass_1]
 WHERE
 	[sampleClass_1].[Value] = @test OR [sampleClass_1].[Value2] LIKE @test_1
-
-BeforeExecute
--- Access.Jet.OleDb AccessOleDb
-
-DROP TABLE [SampleClass]
 

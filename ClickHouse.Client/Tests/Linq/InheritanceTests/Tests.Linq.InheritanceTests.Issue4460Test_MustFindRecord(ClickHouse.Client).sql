@@ -1,23 +1,6 @@
 ﻿BeforeExecute
 -- ClickHouse.Client ClickHouse
 
-DROP TABLE IF EXISTS Issue4460Table
-
-BeforeExecute
--- ClickHouse.Client ClickHouse
-
-CREATE TABLE IF NOT EXISTS Issue4460Table
-(
-	Id      Int32,
-	Code    Nullable(String),
-	Name    Nullable(String),
-	Surname Nullable(String)
-)
-ENGINE = Memory()
-
-BeforeExecute
--- ClickHouse.Client ClickHouse
-
 INSERT INTO Issue4460Table
 (
 	Id,
@@ -45,9 +28,4 @@ FROM
 	Issue4460Table t1
 WHERE
 	t1.Code = 'GrandChild'
-
-BeforeExecute
--- ClickHouse.Client ClickHouse
-
-DROP TABLE IF EXISTS Issue4460Table
 

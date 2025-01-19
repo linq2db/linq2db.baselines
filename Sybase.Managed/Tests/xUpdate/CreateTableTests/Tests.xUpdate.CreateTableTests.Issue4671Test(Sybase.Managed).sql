@@ -1,26 +1,6 @@
 ﻿BeforeExecute
 -- Sybase.Managed Sybase
 
-IF (OBJECT_ID(N'Issue4671Entity') IS NOT NULL)
-	DROP TABLE [Issue4671Entity]
-
-BeforeExecute
--- Sybase.Managed Sybase
-
-IF (OBJECT_ID(N'Issue4671Entity') IS NULL)
-	EXECUTE('
-		CREATE TABLE [Issue4671Entity]
-		(
-			[Id]    Int IDENTITY NOT NULL,
-			[Value] Int          NOT NULL,
-
-			CONSTRAINT [PK_Issue4671Entity] PRIMARY KEY CLUSTERED ([Id])
-		)
-	')
-
-BeforeExecute
--- Sybase.Managed Sybase
-
 CREATE TABLE #Issue4671EntityTMP
 (
 	[Id]    Int IDENTITY NOT NULL,
@@ -76,10 +56,4 @@ BeforeExecute
 
 IF (OBJECT_ID(N'#Issue4671EntityTMP') IS NOT NULL)
 	DROP TABLE #Issue4671EntityTMP
-
-BeforeExecute
--- Sybase.Managed Sybase
-
-IF (OBJECT_ID(N'Issue4671Entity') IS NOT NULL)
-	DROP TABLE [Issue4671Entity]
 

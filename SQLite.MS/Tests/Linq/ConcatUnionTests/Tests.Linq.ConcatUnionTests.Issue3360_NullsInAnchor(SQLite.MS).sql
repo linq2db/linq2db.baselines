@@ -1,49 +1,6 @@
 ﻿BeforeExecute
 -- SQLite.MS SQLite
 
-DROP TABLE IF EXISTS [Issue3360Table1]
-
-BeforeExecute
--- SQLite.MS SQLite
-
-CREATE TABLE IF NOT EXISTS [Issue3360Table1]
-(
-	[Id]    INTEGER   NOT NULL,
-	[Byte]  TinyInt   NOT NULL,
-	[ByteN] TinyInt       NULL,
-	[Guid]  Guid      NOT NULL,
-	[GuidN] Guid          NULL,
-	[Enum]  NChar(11) NOT NULL,
-	[EnumN] NChar(11)     NULL,
-	[Bool]  Bit       NOT NULL,
-	[BoolN] Bit           NULL,
-
-	CONSTRAINT [PK_Issue3360Table1] PRIMARY KEY ([Id])
-)
-
-BeforeExecute
--- SQLite.MS SQLite
-
-INSERT INTO [Issue3360Table1]
-(
-	[Id],
-	[Byte],
-	[ByteN],
-	[Guid],
-	[GuidN],
-	[Enum],
-	[EnumN],
-	[Bool],
-	[BoolN]
-)
-VALUES
-(1,0,NULL,X'00000000000000000000000000000000',NULL,'ENUM1_VALUE',NULL,0,NULL),
-(2,1,2,X'3D667BBCDE0F27438F925D8CC3A11D11',X'0D6048A921DE744F8AC29516B287076E','ENUM1_VALUE','ENUM2_VALUE',1,0),
-(4,3,4,X'A57339BD2343D84D9F4FDF9F93E2A627',X'3D667BBCDE0F27438F925D8CC3A11D11','ENUM1_VALUE','ENUM2_VALUE',0,1)
-
-BeforeExecute
--- SQLite.MS SQLite
-
 SELECT
 	[t1].[Id],
 	[t1].[Byte],
@@ -88,9 +45,4 @@ FROM
 	) [t1]
 ORDER BY
 	[t1].[Id]
-
-BeforeExecute
--- SQLite.MS SQLite
-
-DROP TABLE IF EXISTS [Issue3360Table1]
 

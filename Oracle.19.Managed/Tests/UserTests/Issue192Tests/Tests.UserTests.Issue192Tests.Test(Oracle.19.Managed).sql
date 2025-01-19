@@ -1,36 +1,5 @@
 ﻿BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12
-
-BEGIN
-	EXECUTE IMMEDIATE 'DROP TABLE "TypeConvertTable"';
-EXCEPTION
-	WHEN OTHERS THEN
-		IF SQLCODE != -942 THEN
-			RAISE;
-		END IF;
-END;
-
-BeforeExecute
--- Oracle.19.Managed Oracle.Managed Oracle12
-
-BEGIN
-	EXECUTE IMMEDIATE '
-		CREATE TABLE "TypeConvertTable"
-		(
-			"Name"      VarChar(50) NOT NULL,
-			"BoolValue" Char        NOT NULL,
-			"GuidValue" VarChar(50)     NULL
-		)
-	';
-EXCEPTION
-	WHEN OTHERS THEN
-		IF SQLCODE != -955 THEN
-			RAISE;
-		END IF;
-END;
-
-BeforeExecute
--- Oracle.19.Managed Oracle.Managed Oracle12
 DECLARE @Name Varchar2(11) -- String
 SET     @Name = 'NotVerified'
 DECLARE @BoolValue Char -- AnsiStringFixedLength
@@ -264,16 +233,4 @@ FROM
 WHERE
 	t1."GuidValue" = :GuidValue
 FETCH NEXT 1 ROWS ONLY
-
-BeforeExecute
--- Oracle.19.Managed Oracle.Managed Oracle12
-
-BEGIN
-	EXECUTE IMMEDIATE 'DROP TABLE "TypeConvertTable"';
-EXCEPTION
-	WHEN OTHERS THEN
-		IF SQLCODE != -942 THEN
-			RAISE;
-		END IF;
-END;
 

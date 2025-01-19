@@ -1,38 +1,6 @@
 ﻿BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
-DROP TABLE "CteTable"
-
-BeforeExecute
--- SapHana.Odbc SapHanaOdbc
-
-CREATE COLUMN TABLE "CteTable"
-(
-	"Id"     Integer NOT NULL,
-	"Value1" Integer NOT NULL,
-	"Value2" Integer NOT NULL,
-	"Value3" Integer NOT NULL,
-	"Value4" Integer NOT NULL,
-	"Value5" Integer NOT NULL
-)
-
-BeforeExecute
--- SapHana.Odbc SapHanaOdbc
-
-DROP TABLE "CteChildTable"
-
-BeforeExecute
--- SapHana.Odbc SapHanaOdbc
-
-CREATE COLUMN TABLE "CteChildTable"
-(
-	"Id"    Integer NOT NULL,
-	"Value" Integer NOT NULL
-)
-
-BeforeExecute
--- SapHana.Odbc SapHanaOdbc
-
 WITH "CTE_1" ("Value4")
 AS
 (
@@ -94,14 +62,4 @@ SELECT
 FROM
 	"CTE_1" "t1"
 		LEFT JOIN "CteChildTable" "d" ON "t1"."Value4" = "d"."Id"
-
-BeforeExecute
--- SapHana.Odbc SapHanaOdbc
-
-DROP TABLE "CteChildTable"
-
-BeforeExecute
--- SapHana.Odbc SapHanaOdbc
-
-DROP TABLE "CteTable"
 

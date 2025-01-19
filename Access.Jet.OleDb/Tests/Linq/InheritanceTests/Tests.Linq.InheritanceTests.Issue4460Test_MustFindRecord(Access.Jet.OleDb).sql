@@ -1,21 +1,5 @@
 ﻿BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
-
-DROP TABLE [Issue4460Table]
-
-BeforeExecute
--- Access.Jet.OleDb AccessOleDb
-
-CREATE TABLE [Issue4460Table]
-(
-	[Id]      Int           NOT NULL,
-	[Code]    NVarChar(255)     NULL,
-	[Name]    NVarChar(255)     NULL,
-	[Surname] NVarChar(255)     NULL
-)
-
-BeforeExecute
--- Access.Jet.OleDb AccessOleDb
 DECLARE @Id Integer -- Int32
 SET     @Id = 1
 DECLARE @Code VarWChar(10) -- String
@@ -52,9 +36,4 @@ FROM
 	[Issue4460Table] [t1]
 WHERE
 	[t1].[Code] = 'GrandChild'
-
-BeforeExecute
--- Access.Jet.OleDb AccessOleDb
-
-DROP TABLE [Issue4460Table]
 

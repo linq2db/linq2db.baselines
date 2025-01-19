@@ -1,40 +1,5 @@
 ﻿BeforeExecute
 -- Firebird.3 Firebird3
-
-EXECUTE BLOCK AS BEGIN
-	IF (EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'StringEnumTable')) THEN
-		EXECUTE STATEMENT 'DROP TABLE "StringEnumTable"';
-END
-
-BeforeExecute
--- Firebird.3 Firebird3
-
-EXECUTE BLOCK AS BEGIN
-	IF (NOT EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'StringEnumTable')) THEN
-		EXECUTE STATEMENT '
-			CREATE TABLE "StringEnumTable"
-			(
-				"Id"             Int                                  NOT NULL,
-				"Column"         VarChar(8) CHARACTER SET UNICODE_FSS NOT NULL,
-				"ColumnNullable" VarChar(8) CHARACTER SET UNICODE_FSS
-			)
-		';
-END
-
-BeforeExecute
--- Firebird.3 Firebird3
-
-INSERT INTO "StringEnumTable"
-(
-	"Id",
-	"Column",
-	"ColumnNullable"
-)
-SELECT 1,CAST('val=1' AS VarChar(8) CHARACTER SET UNICODE_FSS),CAST(NULL AS VarChar(8) CHARACTER SET UNICODE_FSS) FROM rdb$database UNION ALL
-SELECT 2,'value=2','value=33' FROM rdb$database
-
-BeforeExecute
--- Firebird.3 Firebird3
 DECLARE @Column VarChar(7) -- String
 SET     @Column = 'value=2'
 DECLARE @ColumnNullable VarChar(8) -- String
@@ -182,12 +147,4 @@ FROM
 	"StringEnumTable" "t1"
 ORDER BY
 	"t1"."Id"
-
-BeforeExecute
--- Firebird.3 Firebird3
-
-EXECUTE BLOCK AS BEGIN
-	IF (EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'StringEnumTable')) THEN
-		EXECUTE STATEMENT 'DROP TABLE "StringEnumTable"';
-END
 

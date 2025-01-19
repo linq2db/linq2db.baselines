@@ -1,23 +1,5 @@
 ﻿BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-
-DROP TABLE [test_insert_or_replace]
-
-BeforeExecute
--- Access.Ace.Odbc AccessODBC
-
-CREATE TABLE [test_insert_or_replace]
-(
-	[id]         Int           NOT NULL,
-	[name]       NVarChar(255)     NULL,
-	[created_by] NVarChar(255)     NULL,
-	[updated_by] NVarChar(255)     NULL,
-
-	CONSTRAINT [PK_test_insert_or_replace] PRIMARY KEY CLUSTERED ([id])
-)
-
-BeforeExecute
--- Access.Ace.Odbc AccessODBC
 DECLARE @Name NVarChar(5) -- String
 SET     @Name = 'Test1'
 DECLARE @UpdatedBy NVarChar -- String
@@ -93,9 +75,4 @@ SELECT TOP 2
 	[t1].[updated_by]
 FROM
 	[test_insert_or_replace] [t1]
-
-BeforeExecute
--- Access.Ace.Odbc AccessODBC
-
-DROP TABLE [test_insert_or_replace]
 

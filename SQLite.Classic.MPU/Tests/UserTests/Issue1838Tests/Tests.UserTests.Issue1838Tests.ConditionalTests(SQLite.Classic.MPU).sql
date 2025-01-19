@@ -1,63 +1,6 @@
 ﻿BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
-DROP TABLE IF EXISTS [Invoice]
-
-BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
-
-CREATE TABLE IF NOT EXISTS [Invoice]
-(
-	[InvoiceID]                BigInt  NOT NULL,
-	[InvoiceReferenceNumberID] BigInt      NULL,
-	[SettlementTotalOnIssue]   Decimal     NULL
-)
-
-BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
-
-INSERT INTO [Invoice]
-(
-	[InvoiceID],
-	[InvoiceReferenceNumberID],
-	[SettlementTotalOnIssue]
-)
-VALUES
-(1,10,3)
-
-BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
-
-DROP TABLE IF EXISTS [InvoiceLineItem]
-
-BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
-
-CREATE TABLE IF NOT EXISTS [InvoiceLineItem]
-(
-	[InvoiceLineItemID]     BigInt  NOT NULL,
-	[BillingAmountOverride] Decimal NOT NULL,
-	[Suppressed]            Bit     NOT NULL,
-	[OwningInvoiceID]       BigInt  NOT NULL
-)
-
-BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
-
-DROP TABLE IF EXISTS [InvoiceReferenceNumber]
-
-BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
-
-CREATE TABLE IF NOT EXISTS [InvoiceReferenceNumber]
-(
-	[InvoiceReferenceNumberID] BigInt        NOT NULL,
-	[ReferenceNumber]          NVarChar(255)     NULL
-)
-
-BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
-
 SELECT
 	[i].[InvoiceID],
 	CASE
@@ -127,19 +70,4 @@ FROM
 			GROUP BY
 				[g_1].[InvoiceID]
 		) [ia] ON [ia].[InvoiceID] = [i].[InvoiceID]
-
-BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
-
-DROP TABLE IF EXISTS [InvoiceReferenceNumber]
-
-BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
-
-DROP TABLE IF EXISTS [InvoiceLineItem]
-
-BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
-
-DROP TABLE IF EXISTS [Invoice]
 

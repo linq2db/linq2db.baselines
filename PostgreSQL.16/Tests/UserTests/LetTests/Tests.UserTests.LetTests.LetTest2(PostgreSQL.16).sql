@@ -1,62 +1,6 @@
 ﻿BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 
-DROP TABLE IF EXISTS "Table1"
-
-BeforeExecute
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
-
-CREATE TABLE IF NOT EXISTS "Table1"
-(
-	"Field3" Int NOT NULL,
-	"Field5" Int     NULL
-)
-
-BeforeExecute
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
-
-DROP TABLE IF EXISTS "Table2"
-
-BeforeExecute
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
-
-CREATE TABLE IF NOT EXISTS "Table2"
-(
-	"Field6" Int     NULL
-)
-
-BeforeExecute
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
-
-DROP TABLE IF EXISTS "Table3"
-
-BeforeExecute
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
-
-CREATE TABLE IF NOT EXISTS "Table3"
-(
-	"Field6" Int     NULL,
-	"Field3" Int NOT NULL,
-	"Field4" Int NOT NULL
-)
-
-BeforeExecute
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
-
-DROP TABLE IF EXISTS "Table7"
-
-BeforeExecute
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
-
-CREATE TABLE IF NOT EXISTS "Table7"
-(
-	"Field4" Int  NOT NULL,
-	"Field8" text     NULL
-)
-
-BeforeExecute
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
-
 SELECT
 	t1."Field6"
 FROM
@@ -69,24 +13,4 @@ FROM
 			LEFT JOIN "Table7" "a_Ref5_1" ON t2."Field4" = "a_Ref5_1"."Field4"
 			INNER JOIN "Table2" t4 ON t2."Field6" = t4."Field6" OR t2."Field6" IS NULL AND t4."Field6" IS NULL
 		ON "a_Ref1"."Field3" = t2."Field3" AND ("a_Ref5"."Field4" = "a_Ref5_1"."Field4" OR "a_Ref5"."Field4" IS NULL AND "a_Ref5_1"."Field4" IS NULL) AND ("a_Ref5"."Field8" = "a_Ref5_1"."Field8" OR "a_Ref5"."Field8" IS NULL AND "a_Ref5_1"."Field8" IS NULL)
-
-BeforeExecute
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
-
-DROP TABLE IF EXISTS "Table7"
-
-BeforeExecute
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
-
-DROP TABLE IF EXISTS "Table3"
-
-BeforeExecute
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
-
-DROP TABLE IF EXISTS "Table2"
-
-BeforeExecute
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
-
-DROP TABLE IF EXISTS "Table1"
 

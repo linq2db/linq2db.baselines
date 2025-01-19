@@ -1,27 +1,6 @@
 ﻿BeforeExecute
 -- Sybase.Managed Sybase
 
-IF (OBJECT_ID(N'ComplexPerson') IS NOT NULL)
-	DROP TABLE [ComplexPerson]
-
-BeforeExecute
--- Sybase.Managed Sybase
-
-IF (OBJECT_ID(N'ComplexPerson') IS NULL)
-	EXECUTE('
-		CREATE TABLE [ComplexPerson]
-		(
-			[Id]        Int           NOT NULL,
-			[FirstName] NVarChar(255)     NULL,
-			[LastName]  NVarChar(255)     NULL,
-
-			CONSTRAINT [PK_ComplexPerson] PRIMARY KEY CLUSTERED ([Id])
-		)
-	')
-
-BeforeExecute
--- Sybase.Managed Sybase
-
 SELECT
 	[x].[Id],
 	[x].[FirstName],
@@ -39,10 +18,4 @@ FROM
 	[ComplexPerson] [x_1]
 WHERE
 	[x_1].[Id] < 20
-
-BeforeExecute
--- Sybase.Managed Sybase
-
-IF (OBJECT_ID(N'ComplexPerson') IS NOT NULL)
-	DROP TABLE [ComplexPerson]
 

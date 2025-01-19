@@ -1,20 +1,5 @@
 ﻿BeforeExecute
 -- SQLite.MS SQLite
-
-DROP TABLE IF EXISTS [Issue1316Tests]
-
-BeforeExecute
--- SQLite.MS SQLite
-
-CREATE TABLE IF NOT EXISTS [Issue1316Tests]
-(
-	[ID] INTEGER NOT NULL,
-
-	CONSTRAINT [PK_Issue1316Tests] PRIMARY KEY ([ID])
-)
-
-BeforeExecute
--- SQLite.MS SQLite
 DECLARE @ID  -- Int32
 SET     @ID = 5
 
@@ -52,9 +37,4 @@ FROM
 WHERE
 	[t1].[ID] = @Id
 LIMIT 2
-
-BeforeExecute
--- SQLite.MS SQLite
-
-DROP TABLE IF EXISTS [Issue1316Tests]
 

@@ -9,17 +9,6 @@ WHERE
 
 BeforeExecute
 -- SqlServer.2017
-
-CREATE TABLE [tempdb]..[#TInserted]
-(
-	[ParentID] Int NOT NULL,
-	[ChildID]  Int NOT NULL,
-
-	PRIMARY KEY CLUSTERED ([ParentID], [ChildID])
-)
-
-BeforeExecute
--- SqlServer.2017
 DECLARE @id Int -- Int32
 SET     @id = 1001
 DECLARE @param Int -- Int32
@@ -65,11 +54,6 @@ FROM
 	[Child] [c_1]
 WHERE
 	[c_1].[ChildID] > 1000
-
-BeforeExecute
--- SqlServer.2017
-
-DROP TABLE IF EXISTS [tempdb]..[#TInserted]
 
 BeforeExecute
 -- SqlServer.2017

@@ -1,35 +1,6 @@
 ﻿BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
-DROP TABLE IF EXISTS [ComplexPredicate]
-
-BeforeExecute
--- SQLite.Classic.MPM SQLite.Classic SQLite
-
-CREATE TABLE IF NOT EXISTS [ComplexPredicate]
-(
-	[Id]    INTEGER       NOT NULL,
-	[Value] NVarChar(255)     NULL
-)
-
-BeforeExecute
--- SQLite.Classic.MPM SQLite.Classic SQLite
-
-INSERT INTO [ComplexPredicate]
-(
-	[Id],
-	[Value]
-)
-VALUES
-(1,NULL),
-(2,'other'),
-(3,'123'),
-(4,'test'),
-(5,'1')
-
-BeforeExecute
--- SQLite.Classic.MPM SQLite.Classic SQLite
-
 SELECT
 	[r].[Id],
 	[r].[Value]
@@ -55,9 +26,4 @@ SELECT
 	[t1].[Value]
 FROM
 	[ComplexPredicate] [t1]
-
-BeforeExecute
--- SQLite.Classic.MPM SQLite.Classic SQLite
-
-DROP TABLE IF EXISTS [ComplexPredicate]
 

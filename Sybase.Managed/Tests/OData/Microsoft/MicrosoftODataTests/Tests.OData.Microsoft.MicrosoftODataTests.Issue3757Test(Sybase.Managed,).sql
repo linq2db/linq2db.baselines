@@ -1,49 +1,4 @@
 ﻿BeforeExecute
--- Sybase.Managed Sybase
-
-IF (OBJECT_ID(N'Issue3757Level1') IS NOT NULL)
-	DROP TABLE [Issue3757Level1]
-
-BeforeExecute
--- Sybase.Managed Sybase
-
-IF (OBJECT_ID(N'Issue3757Level1') IS NULL)
-	EXECUTE('
-		CREATE TABLE [Issue3757Level1]
-		(
-			[ID]     Int           NOT NULL,
-			[ValS]   NVarChar(255)     NULL,
-			[ValB]   Bit,
-			[ValInt] Int               NULL,
-
-			CONSTRAINT [PK_Issue3757Level1] PRIMARY KEY CLUSTERED ([ID])
-		)
-	')
-
-BeforeExecute
--- Sybase.Managed Sybase
-
-IF (OBJECT_ID(N'Issue3757Level2') IS NOT NULL)
-	DROP TABLE [Issue3757Level2]
-
-BeforeExecute
--- Sybase.Managed Sybase
-
-IF (OBJECT_ID(N'Issue3757Level2') IS NULL)
-	EXECUTE('
-		CREATE TABLE [Issue3757Level2]
-		(
-			[ID]       Int           NOT NULL,
-			[ParentId] Int           NOT NULL,
-			[ValS]     NVarChar(255)     NULL,
-			[ValB]     Bit,
-			[ValInt]   Int               NULL,
-
-			CONSTRAINT [PK_Issue3757Level2] PRIMARY KEY CLUSTERED ([ID])
-		)
-	')
-
-BeforeExecute
 BeginTransaction(RepeatableRead)
 BeforeExecute
 -- Sybase.Managed Sybase
@@ -70,16 +25,4 @@ SELECT
 	[l1].[ValInt]
 FROM
 	[Issue3757Level1] [l1]
-
-BeforeExecute
--- Sybase.Managed Sybase
-
-IF (OBJECT_ID(N'Issue3757Level2') IS NOT NULL)
-	DROP TABLE [Issue3757Level2]
-
-BeforeExecute
--- Sybase.Managed Sybase
-
-IF (OBJECT_ID(N'Issue3757Level1') IS NOT NULL)
-	DROP TABLE [Issue3757Level1]
 

@@ -1,35 +1,4 @@
 ﻿BeforeExecute
--- SapHana.Odbc SapHanaOdbc
-
-DROP TABLE "Item"
-
-BeforeExecute
--- SapHana.Odbc SapHanaOdbc
-
-CREATE COLUMN TABLE "Item"
-(
-	"Id"   Integer       NOT NULL,
-	"Text" NVarChar(255)     NULL,
-
-	PRIMARY KEY ("Id")
-)
-
-BeforeExecute
--- SapHana.Odbc SapHanaOdbc
-
-DROP TABLE "ItemValue"
-
-BeforeExecute
--- SapHana.Odbc SapHanaOdbc
-
-CREATE COLUMN TABLE "ItemValue"
-(
-	"Id"     Integer NOT NULL,
-	"ItemId" Integer NOT NULL,
-	"Value"  Decimal NOT NULL
-)
-
-BeforeExecute
 BeginTransaction(RepeatableRead)
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
@@ -77,14 +46,4 @@ FROM
 	) "x_1"
 ORDER BY
 	Coalesce("x_1"."c1", 0)
-
-BeforeExecute
--- SapHana.Odbc SapHanaOdbc
-
-DROP TABLE "ItemValue"
-
-BeforeExecute
--- SapHana.Odbc SapHanaOdbc
-
-DROP TABLE "Item"
 

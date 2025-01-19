@@ -1,22 +1,6 @@
 ﻿BeforeExecute
 -- Access.Ace.Odbc AccessODBC
 
-DROP TABLE [TrimTestTable]
-
-BeforeExecute
--- Access.Ace.Odbc AccessODBC
-
-CREATE TABLE [TrimTestTable]
-(
-	[ID]   Int          NOT NULL,
-	[Data] NVarChar(50)     NULL,
-
-	CONSTRAINT [PK_TrimTestTable] PRIMARY KEY CLUSTERED ([ID])
-)
-
-BeforeExecute
--- Access.Ace.Odbc AccessODBC
-
 INSERT INTO [TrimTestTable]
 (
 	[ID],
@@ -49,9 +33,4 @@ FROM
 	[TrimTestTable] [r]
 ORDER BY
 	[r].[ID]
-
-BeforeExecute
--- Access.Ace.Odbc AccessODBC
-
-DROP TABLE [TrimTestTable]
 

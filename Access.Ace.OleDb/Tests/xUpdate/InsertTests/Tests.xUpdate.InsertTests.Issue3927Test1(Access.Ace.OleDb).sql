@@ -1,21 +1,5 @@
 ﻿BeforeExecute
 -- Access.Ace.OleDb AccessOleDb
-
-DROP TABLE [Issue3927Table]
-
-BeforeExecute
--- Access.Ace.OleDb AccessOleDb
-
-CREATE TABLE [Issue3927Table]
-(
-	[SerialNumber] Char(11) NOT NULL,
-	[PageNumber]   Int      NOT NULL,
-
-	CONSTRAINT [PK_Issue3927Table] PRIMARY KEY CLUSTERED ([SerialNumber])
-)
-
-BeforeExecute
--- Access.Ace.OleDb AccessOleDb
 DECLARE @PageNumber Integer -- Int32
 SET     @PageNumber = 9
 DECLARE @serialNumber Char(11) -- AnsiStringFixedLength
@@ -31,9 +15,4 @@ FROM
 	[Issue3927Table] [display]
 WHERE
 	[display].[SerialNumber] = @serialNumber
-
-BeforeExecute
--- Access.Ace.OleDb AccessOleDb
-
-DROP TABLE [Issue3927Table]
 

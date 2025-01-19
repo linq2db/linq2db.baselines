@@ -1,25 +1,5 @@
 ﻿BeforeExecute
 -- Sybase.Managed Sybase
-
-IF (OBJECT_ID(N'Base') IS NOT NULL)
-	DROP TABLE [Base]
-
-BeforeExecute
--- Sybase.Managed Sybase
-
-IF (OBJECT_ID(N'Base') IS NULL)
-	EXECUTE('
-		CREATE TABLE [Base]
-		(
-			[Code] NVarChar(255)     NULL,
-			[Id]   Int           NOT NULL,
-			[Name] NVarChar(255)     NULL,
-			[Age]  Int               NULL
-		)
-	')
-
-BeforeExecute
--- Sybase.Managed Sybase
 DECLARE @Code UniVarChar(5) -- String
 SET     @Code = 'Child'
 DECLARE @Id Integer -- Int32
@@ -74,10 +54,4 @@ FROM
 	[Base] [e]
 WHERE
 	[e].[Code] <> 'Child' OR [e].[Code] IS NULL
-
-BeforeExecute
--- Sybase.Managed Sybase
-
-IF (OBJECT_ID(N'Base') IS NOT NULL)
-	DROP TABLE [Base]
 

@@ -1,32 +1,5 @@
 ﻿BeforeExecute
 -- Firebird.4 Firebird4
-
-EXECUTE BLOCK AS BEGIN
-	IF (EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'Base2')) THEN
-		EXECUTE STATEMENT 'DROP TABLE "Base2"';
-END
-
-BeforeExecute
--- Firebird.4 Firebird4
-
-EXECUTE BLOCK AS BEGIN
-	IF (NOT EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'Base2')) THEN
-		EXECUTE STATEMENT '
-			CREATE TABLE "Base2"
-			(
-				"Id"           Int                                    NOT NULL,
-				"Type"         Int                                    NOT NULL,
-				"Name_First"   VarChar(255) CHARACTER SET UNICODE_FSS,
-				"Name_Second"  VarChar(255) CHARACTER SET UNICODE_FSS,
-				"Test_ChildId" Int                                    NOT NULL,
-
-				CONSTRAINT "PK_Base2" PRIMARY KEY ("Id")
-			)
-		';
-END
-
-BeforeExecute
--- Firebird.4 Firebird4
 DECLARE @Id Integer -- Int32
 SET     @Id = 1
 DECLARE @Type Integer -- Int32
@@ -103,12 +76,4 @@ SELECT
 FROM
 	"Base2" "t1"
 FETCH NEXT 2 ROWS ONLY
-
-BeforeExecute
--- Firebird.4 Firebird4
-
-EXECUTE BLOCK AS BEGIN
-	IF (EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'Base2')) THEN
-		EXECUTE STATEMENT 'DROP TABLE "Base2"';
-END
 

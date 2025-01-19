@@ -1,39 +1,6 @@
 ﻿BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
-DROP TABLE IF EXISTS [Issue3631Table]
-
-BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
-
-CREATE TABLE IF NOT EXISTS [Issue3631Table]
-(
-	[Country] NVarChar(2) NOT NULL,
-	[State]   NVarChar(2) NOT NULL
-)
-
-BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
-
-INSERT INTO [Issue3631Table]
-(
-	[Country],
-	[State]
-)
-VALUES
-('US','AL'),
-('US','AZ'),
-('US','CA'),
-('US','FL'),
-('US','IN'),
-('US','OH'),
-('US','NY'),
-('CA','AB'),
-('CA','ON')
-
-BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
-
 SELECT
 	[x].[Country],
 	[x].[State]
@@ -52,9 +19,4 @@ WHERE
 					('US','CA'), ('US','NY')
 				) [t1]
 	)
-
-BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
-
-DROP TABLE IF EXISTS [Issue3631Table]
 

@@ -1,33 +1,5 @@
 ﻿BeforeExecute
 -- Sybase.Managed Sybase
-
-IF (OBJECT_ID(N'ValueConversion') IS NOT NULL)
-	DROP TABLE [ValueConversion]
-
-BeforeExecute
--- Sybase.Managed Sybase
-
-IF (OBJECT_ID(N'ValueConversion') IS NULL)
-	EXECUTE('
-		CREATE TABLE [ValueConversion]
-		(
-			[Id]                      Int           NOT NULL,
-			[Value1]                  NVarChar(200)     NULL,
-			[Value2]                  NVarChar(200)     NULL,
-			[Enum]                    NVarChar(50)  NOT NULL,
-			[EnumNullable]            VarChar(50)       NULL,
-			[EnumWithNull]            VarChar(50)       NULL,
-			[EnumWithNullDeclarative] VarChar(50)       NULL,
-			[BoolValue]               VarChar(1)    NOT NULL,
-			[AnotherBoolValue]        VarChar(1)    NOT NULL,
-			[DateTimeNullable]        DateTime          NULL,
-
-			CONSTRAINT [PK_ValueConversion] PRIMARY KEY CLUSTERED ([Id])
-		)
-	')
-
-BeforeExecute
--- Sybase.Managed Sybase
 DECLARE @Id Integer -- Int32
 SET     @Id = 1
 DECLARE @Value1 UniVarChar(2) -- String
@@ -208,10 +180,4 @@ SELECT
 	COUNT(*)
 FROM
 	[ValueConversion] [t1]
-
-BeforeExecute
--- Sybase.Managed Sybase
-
-IF (OBJECT_ID(N'ValueConversion') IS NOT NULL)
-	DROP TABLE [ValueConversion]
 

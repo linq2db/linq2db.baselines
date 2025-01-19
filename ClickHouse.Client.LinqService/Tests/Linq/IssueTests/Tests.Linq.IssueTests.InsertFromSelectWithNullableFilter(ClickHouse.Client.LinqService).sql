@@ -1,77 +1,6 @@
 ﻿BeforeExecute
 -- ClickHouse.Client ClickHouse
 
-DROP TABLE IF EXISTS InsertIssueTest
-
-BeforeExecute
--- ClickHouse.Client ClickHouse
-
-CREATE TABLE IF NOT EXISTS InsertIssueTest
-(
-	ID          Int16,
-	intDataType Nullable(Int32)
-)
-ENGINE = Memory()
-
-BeforeExecute
--- ClickHouse.Client ClickHouse
-
-INSERT INTO InsertIssueTest
-(
-	ID,
-	intDataType
-)
-VALUES
-(
-	toInt16(0),
-	0
-)
-
-BeforeExecute
--- ClickHouse.Client ClickHouse
-
-INSERT INTO InsertIssueTest
-(
-	ID,
-	intDataType
-)
-VALUES
-(
-	toInt16(0),
-	0
-)
-
-BeforeExecute
--- ClickHouse.Client ClickHouse
-
-INSERT INTO InsertIssueTest
-(
-	ID,
-	intDataType
-)
-VALUES
-(
-	toInt16(1234),
-	1234
-)
-
-BeforeExecute
--- ClickHouse.Client ClickHouse
-
-INSERT INTO InsertIssueTest
-(
-	ID,
-	intDataType
-)
-VALUES
-(
-	toInt16(1234),
-	1234
-)
-
-BeforeExecute
--- ClickHouse.Client ClickHouse
-
 INSERT INTO InsertIssueTest
 (
 	ID,
@@ -121,9 +50,4 @@ SELECT
 	t1.intDataType
 FROM
 	InsertIssueTest t1
-
-BeforeExecute
--- ClickHouse.Client ClickHouse
-
-DROP TABLE IF EXISTS InsertIssueTest
 

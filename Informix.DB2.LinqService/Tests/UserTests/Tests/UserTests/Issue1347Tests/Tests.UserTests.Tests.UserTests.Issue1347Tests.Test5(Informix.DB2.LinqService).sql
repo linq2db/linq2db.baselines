@@ -1,72 +1,6 @@
 ﻿BeforeExecute
 -- Informix.DB2 Informix
 
-DROP TABLE IF EXISTS GlobalTaskDTO
-
-BeforeExecute
--- Informix.DB2 Informix
-
-CREATE TABLE IF NOT EXISTS GlobalTaskDTO
-(
-	Id                        VARCHAR(36) NOT NULL,
-	ResourceID                VARCHAR(36) NOT NULL,
-	StorageShelfSourceID      VARCHAR(36)     NULL,
-	RPSourceID                VARCHAR(36)     NULL,
-	StorageShelfDestinationID VARCHAR(36)     NULL,
-	RPDestinationID           VARCHAR(36)     NULL,
-	RPOrigDestinationID       VARCHAR(36)     NULL,
-	OutfeedTransportOrderID   VARCHAR(36)     NULL
-)
-
-BeforeExecute
--- Informix.DB2 Informix
-
-DROP TABLE IF EXISTS WMS_GlobalTaskA
-
-BeforeExecute
--- Informix.DB2 Informix
-
-CREATE TABLE IF NOT EXISTS WMS_GlobalTaskA
-(
-	Id                        VARCHAR(36) NOT NULL,
-	ResourceID                VARCHAR(36) NOT NULL,
-	StorageShelfSourceID      VARCHAR(36)     NULL,
-	RPSourceID                VARCHAR(36)     NULL,
-	StorageShelfDestinationID VARCHAR(36)     NULL,
-	RPDestinationID           VARCHAR(36)     NULL,
-	RPOrigDestinationID       VARCHAR(36)     NULL,
-	OutfeedTransportOrderID   VARCHAR(36)     NULL
-)
-
-BeforeExecute
--- Informix.DB2 Informix
-
-DROP TABLE IF EXISTS WmsLoadCarrierDTO
-
-BeforeExecute
--- Informix.DB2 Informix
-
-CREATE TABLE IF NOT EXISTS WmsLoadCarrierDTO
-(
-	Id VARCHAR(36) NOT NULL
-)
-
-BeforeExecute
--- Informix.DB2 Informix
-
-DROP TABLE IF EXISTS WMS_LoadCarrierA
-
-BeforeExecute
--- Informix.DB2 Informix
-
-CREATE TABLE IF NOT EXISTS WMS_LoadCarrierA
-(
-	Id VARCHAR(36) NOT NULL
-)
-
-BeforeExecute
--- Informix.DB2 Informix
-
 SELECT
 	t3.Id,
 	t3.ResourceID,
@@ -114,24 +48,4 @@ FROM
 			FROM
 				WMS_LoadCarrierA t2
 		) res_1 ON t3.ResourceID = res_1.Id
-
-BeforeExecute
--- Informix.DB2 Informix
-
-DROP TABLE IF EXISTS WMS_LoadCarrierA
-
-BeforeExecute
--- Informix.DB2 Informix
-
-DROP TABLE IF EXISTS WmsLoadCarrierDTO
-
-BeforeExecute
--- Informix.DB2 Informix
-
-DROP TABLE IF EXISTS WMS_GlobalTaskA
-
-BeforeExecute
--- Informix.DB2 Informix
-
-DROP TABLE IF EXISTS GlobalTaskDTO
 

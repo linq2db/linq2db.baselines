@@ -1,28 +1,6 @@
 ﻿BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 
-DROP TABLE IF EXISTS `InheritanceFilter`
-
-BeforeExecute
--- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-
-CREATE TABLE IF NOT EXISTS `InheritanceFilter`
-(
-	`Id`                INT NOT NULL,
-	`Code`              INT NOT NULL,
-	`Child1Field`       INT     NULL,
-	`Child2Field`       INT     NULL,
-	`Grandchild11Field` INT     NULL,
-	`Grandchild12Field` INT     NULL,
-	`Grandchild21Field` INT     NULL,
-	`Grandchild22Field` INT     NULL,
-
-	CONSTRAINT `PK_InheritanceFilter` PRIMARY KEY CLUSTERED (`Id`)
-)
-
-BeforeExecute
--- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-
 INSERT INTO `InheritanceFilter`
 (
 	`Id`,
@@ -56,9 +34,4 @@ SELECT
 	`t1`.`Grandchild22Field`
 FROM
 	`InheritanceFilter` `t1`
-
-BeforeExecute
--- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-
-DROP TABLE IF EXISTS `InheritanceFilter`
 

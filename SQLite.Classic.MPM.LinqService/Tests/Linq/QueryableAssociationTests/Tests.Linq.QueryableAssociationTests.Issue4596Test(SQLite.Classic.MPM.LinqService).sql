@@ -1,38 +1,6 @@
 ﻿BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
-DROP TABLE IF EXISTS [Issue4596Form]
-
-BeforeExecute
--- SQLite.Classic.MPM SQLite.Classic SQLite
-
-CREATE TABLE IF NOT EXISTS [Issue4596Form]
-(
-	[Id] INTEGER  NOT NULL,
-	[C1] NChar(1) NOT NULL
-)
-
-BeforeExecute
--- SQLite.Classic.MPM SQLite.Classic SQLite
-
-DROP TABLE IF EXISTS [Issue4596Item]
-
-BeforeExecute
--- SQLite.Classic.MPM SQLite.Classic SQLite
-
-CREATE TABLE IF NOT EXISTS [Issue4596Item]
-(
-	[Id]         INTEGER       NOT NULL,
-	[FormId]     INTEGER       NOT NULL,
-	[OrderIndex] INTEGER       NOT NULL,
-	[Name1]      NVarChar(255)     NULL,
-	[Name2]      NVarChar(255)     NULL,
-	[Name3]      NVarChar(255)     NULL
-)
-
-BeforeExecute
--- SQLite.Classic.MPM SQLite.Classic SQLite
-
 SELECT
 	[m_1].[Id],
 	[m_1].[cond],
@@ -85,14 +53,4 @@ SELECT
 FROM
 	[Issue4596Form] [t1]
 LIMIT 1
-
-BeforeExecute
--- SQLite.Classic.MPM SQLite.Classic SQLite
-
-DROP TABLE IF EXISTS [Issue4596Item]
-
-BeforeExecute
--- SQLite.Classic.MPM SQLite.Classic SQLite
-
-DROP TABLE IF EXISTS [Issue4596Form]
 

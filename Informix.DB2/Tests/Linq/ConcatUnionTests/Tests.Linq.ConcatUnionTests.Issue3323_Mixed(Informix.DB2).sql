@@ -1,24 +1,6 @@
 ﻿BeforeExecute
 -- Informix.DB2 Informix
 
-DROP TABLE IF EXISTS Issue3323Table
-
-BeforeExecute
--- Informix.DB2 Informix
-
-CREATE TABLE IF NOT EXISTS Issue3323Table
-(
-	Id       Int           NOT NULL,
-	FistName NVarChar(255)     NULL,
-	LastName NVarChar(255)     NULL,
-	Text     NVarChar(255) NOT NULL,
-
-	PRIMARY KEY (Id)
-)
-
-BeforeExecute
--- Informix.DB2 Informix
-
 INSERT INTO Issue3323Table
 (
 	Id,
@@ -63,9 +45,4 @@ SELECT
 	r_1.FistName || ' ' || r_1.LastName
 FROM
 	Issue3323Table r_1
-
-BeforeExecute
--- Informix.DB2 Informix
-
-DROP TABLE IF EXISTS Issue3323Table
 

@@ -1,22 +1,6 @@
 ﻿BeforeExecute
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 
-DROP TABLE IF EXISTS `Dto`
-
-BeforeExecute
--- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
-CREATE TABLE IF NOT EXISTS `Dto`
-(
-	`id`        INT           NOT NULL,
-	`name`      VARCHAR(4000)     NULL,
-	`parent_id` INT               NULL,
-	`FullName`  VARCHAR(4000)     NULL
-)
-
-BeforeExecute
--- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
 WITH RECURSIVE `d`
 (
 	`FullName`,
@@ -52,9 +36,4 @@ SELECT
 	`t2`.`FullName`
 FROM
 	`d` `t2`
-
-BeforeExecute
--- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
-DROP TABLE IF EXISTS `Dto`
 

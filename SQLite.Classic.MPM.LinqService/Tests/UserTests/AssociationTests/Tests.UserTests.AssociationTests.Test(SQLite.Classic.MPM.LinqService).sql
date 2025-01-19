@@ -1,50 +1,6 @@
 ﻿BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
-DROP TABLE IF EXISTS [DisTable]
-
-BeforeExecute
--- SQLite.Classic.MPM SQLite.Classic SQLite
-
-CREATE TABLE IF NOT EXISTS [DisTable]
-(
-	[DisTypeID] INTEGER NOT NULL
-)
-
-BeforeExecute
--- SQLite.Classic.MPM SQLite.Classic SQLite
-
-DROP TABLE IF EXISTS [JurTable]
-
-BeforeExecute
--- SQLite.Classic.MPM SQLite.Classic SQLite
-
-CREATE TABLE IF NOT EXISTS [JurTable]
-(
-	[JurCode] NVarChar(2) NOT NULL,
-
-	CONSTRAINT [PK_JurTable] PRIMARY KEY ([JurCode])
-)
-
-BeforeExecute
--- SQLite.Classic.MPM SQLite.Classic SQLite
-
-DROP TABLE IF EXISTS [DisTypeTable]
-
-BeforeExecute
--- SQLite.Classic.MPM SQLite.Classic SQLite
-
-CREATE TABLE IF NOT EXISTS [DisTypeTable]
-(
-	[DisTypeID] INTEGER      NOT NULL,
-	[JurCode]   NVarChar(50) NOT NULL,
-
-	CONSTRAINT [PK_DisTypeTable] PRIMARY KEY ([DisTypeID])
-)
-
-BeforeExecute
--- SQLite.Classic.MPM SQLite.Classic SQLite
-
 SELECT
 	[d].[DisTypeID]
 FROM
@@ -56,19 +12,4 @@ FROM
 			WHEN [d].[DisTypeID] = 5 THEN 5
 		END = [a_DisType].[DisTypeID]
 		INNER JOIN [JurTable] [j] ON [a_DisType].[JurCode] = [j].[JurCode]
-
-BeforeExecute
--- SQLite.Classic.MPM SQLite.Classic SQLite
-
-DROP TABLE IF EXISTS [DisTypeTable]
-
-BeforeExecute
--- SQLite.Classic.MPM SQLite.Classic SQLite
-
-DROP TABLE IF EXISTS [JurTable]
-
-BeforeExecute
--- SQLite.Classic.MPM SQLite.Classic SQLite
-
-DROP TABLE IF EXISTS [DisTable]
 

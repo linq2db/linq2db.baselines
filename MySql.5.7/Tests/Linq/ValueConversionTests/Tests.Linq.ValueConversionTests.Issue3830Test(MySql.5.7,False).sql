@@ -1,37 +1,5 @@
 ﻿BeforeExecute
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
-
-DROP TABLE IF EXISTS `Issue3830TestTable`
-
-BeforeExecute
--- MySql.5.7 MySql.5.7.MySql.Data MySql57
-
-CREATE TABLE IF NOT EXISTS `Issue3830TestTable`
-(
-	`Id`    INT  NOT NULL,
-	`Bool1` CHAR NOT NULL,
-	`Bool2` CHAR     NULL,
-	`Bool3` CHAR     NULL
-)
-
-BeforeExecute
--- MySql.5.7 MySql.5.7.MySql.Data MySql57
-
-INSERT INTO `Issue3830TestTable`
-(
-	`Id`,
-	`Bool1`,
-	`Bool2`,
-	`Bool3`
-)
-VALUES
-(1,'Y',NULL,NULL),
-(2,'N',NULL,'Y'),
-(3,'N','Y',NULL),
-(4,'Y','N','Y')
-
-BeforeExecute
--- MySql.5.7 MySql.5.7.MySql.Data MySql57
 DECLARE @Bool1 String(1) -- AnsiStringFixedLength
 SET     @Bool1 = 'Y'
 
@@ -307,9 +275,4 @@ FROM
 WHERE
 	`r`.`Bool2` IS NOT NULL AND `r`.`Bool1` = @Bool1 AND
 	`r`.`Bool3` = @Bool3
-
-BeforeExecute
--- MySql.5.7 MySql.5.7.MySql.Data MySql57
-
-DROP TABLE IF EXISTS `Issue3830TestTable`
 

@@ -1,51 +1,5 @@
 ﻿BeforeExecute
 -- PostgreSQL.15 PostgreSQL
-
-DROP TABLE IF EXISTS "PatentAssessment"
-
-BeforeExecute
--- PostgreSQL.15 PostgreSQL
-
-CREATE TABLE IF NOT EXISTS "PatentAssessment"
-(
-	"PatentId"               Int  NOT NULL,
-	"TechnicalReviewersText" text     NULL,
-
-	CONSTRAINT "PK_PatentAssessment" PRIMARY KEY ("PatentId")
-)
-
-BeforeExecute
--- PostgreSQL.15 PostgreSQL
-
-DROP TABLE IF EXISTS "Issue2918Table2"
-
-BeforeExecute
--- PostgreSQL.15 PostgreSQL
-
-CREATE TABLE IF NOT EXISTS "Issue2918Table2"
-(
-	"PatentId" Int NOT NULL,
-	"UserId"   Int NOT NULL
-)
-
-BeforeExecute
--- PostgreSQL.15 PostgreSQL
-
-DROP TABLE IF EXISTS "User"
-
-BeforeExecute
--- PostgreSQL.15 PostgreSQL
-
-CREATE TABLE IF NOT EXISTS "User"
-(
-	"Id"          Int  NOT NULL,
-	"DisplayName" text NOT NULL,
-
-	CONSTRAINT "PK_User" PRIMARY KEY ("Id")
-)
-
-BeforeExecute
--- PostgreSQL.15 PostgreSQL
 DECLARE @userId Integer -- Int32
 SET     @userId = 1
 
@@ -84,19 +38,4 @@ WHEN MATCHED THEN
 UPDATE
 SET
 	"TechnicalReviewersText" = "Source"."source_TechnicalReviewersText"
-
-BeforeExecute
--- PostgreSQL.15 PostgreSQL
-
-DROP TABLE IF EXISTS "User"
-
-BeforeExecute
--- PostgreSQL.15 PostgreSQL
-
-DROP TABLE IF EXISTS "Issue2918Table2"
-
-BeforeExecute
--- PostgreSQL.15 PostgreSQL
-
-DROP TABLE IF EXISTS "PatentAssessment"
 

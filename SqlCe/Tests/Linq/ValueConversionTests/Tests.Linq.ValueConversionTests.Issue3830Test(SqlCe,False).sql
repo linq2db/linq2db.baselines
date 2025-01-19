@@ -1,36 +1,5 @@
 ﻿BeforeExecute
 -- SqlCe
-
-DROP TABLE [Issue3830TestTable]
-
-BeforeExecute
--- SqlCe
-
-CREATE TABLE [Issue3830TestTable]
-(
-	[Id]    Int      NOT NULL,
-	[Bool1] NChar(1) NOT NULL,
-	[Bool2] NChar(1)     NULL,
-	[Bool3] NChar(1)     NULL
-)
-
-BeforeExecute
--- SqlCe
-
-INSERT INTO [Issue3830TestTable]
-(
-	[Id],
-	[Bool1],
-	[Bool2],
-	[Bool3]
-)
-SELECT 1,'Y',NULL,NULL UNION ALL
-SELECT 2,'N',NULL,'Y' UNION ALL
-SELECT 3,'N','Y',NULL UNION ALL
-SELECT 4,'Y','N','Y'
-
-BeforeExecute
--- SqlCe
 DECLARE @Bool1 NVarChar(1) -- String
 SET     @Bool1 = 'Y'
 
@@ -306,9 +275,4 @@ FROM
 WHERE
 	[r].[Bool2] IS NOT NULL AND [r].[Bool1] = @Bool1 AND
 	[r].[Bool3] = @Bool3
-
-BeforeExecute
--- SqlCe
-
-DROP TABLE [Issue3830TestTable]
 

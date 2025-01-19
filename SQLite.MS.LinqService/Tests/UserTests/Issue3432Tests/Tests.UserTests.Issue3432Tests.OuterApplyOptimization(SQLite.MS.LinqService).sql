@@ -1,48 +1,6 @@
 ﻿BeforeExecute
 -- SQLite.MS SQLite
 
-DROP TABLE IF EXISTS [Task]
-
-BeforeExecute
--- SQLite.MS SQLite
-
-CREATE TABLE IF NOT EXISTS [Task]
-(
-	[AdminPartyId] INTEGER       NOT NULL,
-	[Description]  NVarChar(255)     NULL
-)
-
-BeforeExecute
--- SQLite.MS SQLite
-
-DROP TABLE IF EXISTS [Party]
-
-BeforeExecute
--- SQLite.MS SQLite
-
-CREATE TABLE IF NOT EXISTS [Party]
-(
-	[Id]   INTEGER       NOT NULL,
-	[Name] NVarChar(255)     NULL
-)
-
-BeforeExecute
--- SQLite.MS SQLite
-
-DROP TABLE IF EXISTS [PartyAccess]
-
-BeforeExecute
--- SQLite.MS SQLite
-
-CREATE TABLE IF NOT EXISTS [PartyAccess]
-(
-	[PartyId] INTEGER       NOT NULL,
-	[Role]    NVarChar(255)     NULL
-)
-
-BeforeExecute
--- SQLite.MS SQLite
-
 SELECT
 	[task_1].[Description],
 	[party_1].[Name]
@@ -56,19 +14,4 @@ FROM
 			WHERE
 				[pa].[PartyId] = [party_1].[Id] AND [pa].[Role] = 'Admin'
 		)
-
-BeforeExecute
--- SQLite.MS SQLite
-
-DROP TABLE IF EXISTS [PartyAccess]
-
-BeforeExecute
--- SQLite.MS SQLite
-
-DROP TABLE IF EXISTS [Party]
-
-BeforeExecute
--- SQLite.MS SQLite
-
-DROP TABLE IF EXISTS [Task]
 

@@ -1,48 +1,6 @@
 ﻿BeforeExecute
 -- SqlServer.SA SqlServer.2019
 
-DROP TABLE IF EXISTS [GlobalTaskDTO]
-
-BeforeExecute
--- SqlServer.SA SqlServer.2019
-
-IF (OBJECT_ID(N'[GlobalTaskDTO]', N'U') IS NULL)
-	CREATE TABLE [GlobalTaskDTO]
-	(
-		[Id]                        UniqueIdentifier NOT NULL,
-		[ResourceID]                UniqueIdentifier NOT NULL,
-		[StorageShelfSourceID]      UniqueIdentifier     NULL,
-		[RPSourceID]                UniqueIdentifier     NULL,
-		[StorageShelfDestinationID] UniqueIdentifier     NULL,
-		[RPDestinationID]           UniqueIdentifier     NULL,
-		[RPOrigDestinationID]       UniqueIdentifier     NULL,
-		[OutfeedTransportOrderID]   UniqueIdentifier     NULL
-	)
-
-BeforeExecute
--- SqlServer.SA SqlServer.2019
-
-DROP TABLE IF EXISTS [WMS_GlobalTaskA]
-
-BeforeExecute
--- SqlServer.SA SqlServer.2019
-
-IF (OBJECT_ID(N'[WMS_GlobalTaskA]', N'U') IS NULL)
-	CREATE TABLE [WMS_GlobalTaskA]
-	(
-		[Id]                        UniqueIdentifier NOT NULL,
-		[ResourceID]                UniqueIdentifier NOT NULL,
-		[StorageShelfSourceID]      UniqueIdentifier     NULL,
-		[RPSourceID]                UniqueIdentifier     NULL,
-		[StorageShelfDestinationID] UniqueIdentifier     NULL,
-		[RPDestinationID]           UniqueIdentifier     NULL,
-		[RPOrigDestinationID]       UniqueIdentifier     NULL,
-		[OutfeedTransportOrderID]   UniqueIdentifier     NULL
-	)
-
-BeforeExecute
--- SqlServer.SA SqlServer.2019
-
 SELECT
 	[t1].[Id],
 	[t1].[ResourceID],
@@ -66,14 +24,4 @@ SELECT
 	[t2].[OutfeedTransportOrderID]
 FROM
 	[WMS_GlobalTaskA] [t2]
-
-BeforeExecute
--- SqlServer.SA SqlServer.2019
-
-DROP TABLE IF EXISTS [WMS_GlobalTaskA]
-
-BeforeExecute
--- SqlServer.SA SqlServer.2019
-
-DROP TABLE IF EXISTS [GlobalTaskDTO]
 

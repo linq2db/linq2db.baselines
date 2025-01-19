@@ -1,23 +1,6 @@
 ﻿BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
-DROP TABLE IF EXISTS Base
-
-BeforeExecute
--- ClickHouse.MySql ClickHouse
-
-CREATE TABLE IF NOT EXISTS Base
-(
-	Code Nullable(String),
-	Id   Int32,
-	Name Nullable(String),
-	Age  Nullable(Int32)
-)
-ENGINE = Memory()
-
-BeforeExecute
--- ClickHouse.MySql ClickHouse
-
 INSERT INTO Base
 (
 	Code,
@@ -59,9 +42,4 @@ FROM
 	Base e
 WHERE
 	e.Code <> 'Child' OR e.Code IS NULL
-
-BeforeExecute
--- ClickHouse.MySql ClickHouse
-
-DROP TABLE IF EXISTS Base
 

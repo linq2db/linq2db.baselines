@@ -1,39 +1,4 @@
 ﻿BeforeExecute
--- MySql.5.7 MySql.5.7.MySql.Data MySql57
-
-DROP TABLE IF EXISTS `NeedS.esca Pin``g`
-
-BeforeExecute
--- MySql.5.7 MySql.5.7.MySql.Data MySql57
-
-CREATE TABLE IF NOT EXISTS `NeedS.esca Pin``g`
-(
-	`ne.eds ``escaPing` INT          NOT NULL,
-	`Bit_1`             bit(64)          NULL,
-	`Bit_2`             bit(63)          NULL,
-	`Bit_3`             bit(64)          NULL,
-	`Bit_4`             bit(30)          NULL,
-	`Bit_5`             bit(1)           NULL,
-	`needs escaping2`   bit(1)           NULL,
-	`Binary_1`          binary(3)        NULL,
-	`Binary_2`          binary(3)        NULL,
-	`Binary_3`          binary(3)        NULL,
-	`Binary_4`          binary(3)        NULL,
-	`VarBinary_1`       varbinary(3)     NULL,
-	`VarBinary_2`       varbinary(3)     NULL,
-	`Blob_1`            blob             NULL,
-	`Blob_2`            blob             NULL,
-	`TinyBlob_1`        tinyblob         NULL,
-	`TinyBlob_2`        tinyblob         NULL,
-	`MediumBlob_1`      mediumblob       NULL,
-	`MediumBlob_2`      mediumblob       NULL,
-	`LongBlob_1`        longblob         NULL,
-	`LongBlob_2`        longblob         NULL,
-
-	CONSTRAINT `PK_NeedS.esca Pin``g` PRIMARY KEY CLUSTERED (`ne.eds ``escaPing`)
-)
-
-BeforeExecute
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57 (asynchronously)
 
 INSERT INTO `NeedS.esca Pin``g`
@@ -93,9 +58,4 @@ FROM
 	`NeedS.esca Pin``g` `t1`
 ORDER BY
 	`t1`.`ne.eds ``escaPing`
-
-BeforeExecute
--- MySql.5.7 MySql.5.7.MySql.Data MySql57
-
-DROP TABLE IF EXISTS `NeedS.esca Pin``g`
 

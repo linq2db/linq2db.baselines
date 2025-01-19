@@ -1,55 +1,6 @@
 ﻿BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014
 
-IF (OBJECT_ID(N'[Root]', N'U') IS NOT NULL)
-	DROP TABLE [Root]
-
-BeforeExecute
--- SqlServer.2014.MS SqlServer.2014
-
-IF (OBJECT_ID(N'[Root]', N'U') IS NULL)
-	CREATE TABLE [Root]
-	(
-		[Id] Int NOT NULL
-	)
-
-BeforeExecute
--- SqlServer.2014.MS SqlServer.2014
-
-IF (OBJECT_ID(N'[Draft1]', N'U') IS NOT NULL)
-	DROP TABLE [Draft1]
-
-BeforeExecute
--- SqlServer.2014.MS SqlServer.2014
-
-IF (OBJECT_ID(N'[Draft1]', N'U') IS NULL)
-	CREATE TABLE [Draft1]
-	(
-		[RootId] Int            NOT NULL,
-		[Html]   NVarChar(4000)     NULL,
-		[Plain]  NVarChar(4000)     NULL
-	)
-
-BeforeExecute
--- SqlServer.2014.MS SqlServer.2014
-
-IF (OBJECT_ID(N'[Draft2]', N'U') IS NOT NULL)
-	DROP TABLE [Draft2]
-
-BeforeExecute
--- SqlServer.2014.MS SqlServer.2014
-
-IF (OBJECT_ID(N'[Draft2]', N'U') IS NULL)
-	CREATE TABLE [Draft2]
-	(
-		[RootId] Int            NOT NULL,
-		[Html]   NVarChar(4000)     NULL,
-		[Plain]  NVarChar(4000)     NULL
-	)
-
-BeforeExecute
--- SqlServer.2014.MS SqlServer.2014
-
 SELECT
 	[t1].[cond],
 	[t1].[Html],
@@ -79,22 +30,4 @@ FROM
 			WHERE
 				[x].[Id] = [a_OtherDrafts].[RootId]
 		) [t2]
-
-BeforeExecute
--- SqlServer.2014.MS SqlServer.2014
-
-IF (OBJECT_ID(N'[Draft2]', N'U') IS NOT NULL)
-	DROP TABLE [Draft2]
-
-BeforeExecute
--- SqlServer.2014.MS SqlServer.2014
-
-IF (OBJECT_ID(N'[Draft1]', N'U') IS NOT NULL)
-	DROP TABLE [Draft1]
-
-BeforeExecute
--- SqlServer.2014.MS SqlServer.2014
-
-IF (OBJECT_ID(N'[Root]', N'U') IS NOT NULL)
-	DROP TABLE [Root]
 

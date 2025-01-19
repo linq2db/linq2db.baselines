@@ -1,21 +1,6 @@
 ﻿BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
-DROP TABLE IF EXISTS SomeTable
-
-BeforeExecute
--- ClickHouse.Octonica ClickHouse
-
-CREATE TABLE IF NOT EXISTS SomeTable
-(
-	ClassProp Bool,
-	Interface Bool
-)
-ENGINE = Memory()
-
-BeforeExecute
--- ClickHouse.Octonica ClickHouse
-
 INSERT INTO SomeTable
 (
 	ClassProp,
@@ -36,9 +21,4 @@ SELECT
 FROM
 	SomeTable t1
 LIMIT 2
-
-BeforeExecute
--- ClickHouse.Octonica ClickHouse
-
-DROP TABLE IF EXISTS SomeTable
 

@@ -1,34 +1,6 @@
 ﻿BeforeExecute
 -- SqlCe
 
-DROP TABLE [TestEntity1]
-
-BeforeExecute
--- SqlCe
-
-CREATE TABLE [TestEntity1]
-(
-	[Id]     Int           NOT NULL,
-	[Field1] NVarChar(255)     NULL
-)
-
-BeforeExecute
--- SqlCe
-
-DROP TABLE [TestEntity2]
-
-BeforeExecute
--- SqlCe
-
-CREATE TABLE [TestEntity2]
-(
-	[Id]     Int           NOT NULL,
-	[Field1] NVarChar(255)     NULL
-)
-
-BeforeExecute
--- SqlCe
-
 SELECT
 	[t1].[Id],
 	[t1].[Field1],
@@ -86,14 +58,4 @@ FROM
 		LEFT JOIN [TestEntity1] [t1_1] ON [t2_1].[Id] = [t1_1].[Id]
 WHERE
 	[t1_1].[Id] IS NULL
-
-BeforeExecute
--- SqlCe
-
-DROP TABLE [TestEntity2]
-
-BeforeExecute
--- SqlCe
-
-DROP TABLE [TestEntity1]
 

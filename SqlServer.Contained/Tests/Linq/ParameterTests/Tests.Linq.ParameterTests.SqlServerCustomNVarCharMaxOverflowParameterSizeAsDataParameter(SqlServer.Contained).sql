@@ -1,21 +1,5 @@
 ﻿BeforeExecute
 -- SqlServer.Contained SqlServer.2019
-
-DROP TABLE IF EXISTS [AllTypesCustomMaxLength]
-
-BeforeExecute
--- SqlServer.Contained SqlServer.2019
-
-IF (OBJECT_ID(N'[AllTypesCustomMaxLength]', N'U') IS NULL)
-	CREATE TABLE [AllTypesCustomMaxLength]
-	(
-		[VarBinary] VarBinary(Max)     NULL,
-		[VarChar]   VarChar(Max)       NULL,
-		[NVarChar]  NVarChar(Max)      NULL
-	)
-
-BeforeExecute
--- SqlServer.Contained SqlServer.2019
 DECLARE @NVarChar NVarChar(5000) -- String
 SET     @NVarChar = N'яяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяя'
 -- value above truncated for logging
@@ -53,9 +37,4 @@ FROM
 	[AllTypesCustomMaxLength] [t]
 WHERE
 	[t].[NVarChar] = @p
-
-BeforeExecute
--- SqlServer.Contained SqlServer.2019
-
-DROP TABLE IF EXISTS [AllTypesCustomMaxLength]
 

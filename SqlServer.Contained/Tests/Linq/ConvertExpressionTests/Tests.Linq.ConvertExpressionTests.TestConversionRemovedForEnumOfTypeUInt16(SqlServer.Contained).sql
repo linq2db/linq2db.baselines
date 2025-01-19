@@ -1,35 +1,6 @@
 ﻿BeforeExecute
 -- SqlServer.Contained SqlServer.2019
 
-DROP TABLE IF EXISTS [ConversionsTestTable]
-
-BeforeExecute
--- SqlServer.Contained SqlServer.2019
-
-IF (OBJECT_ID(N'[ConversionsTestTable]', N'U') IS NULL)
-	CREATE TABLE [ConversionsTestTable]
-	(
-		[SByte]   TinyInt  NOT NULL,
-		[Byte]    TinyInt  NOT NULL,
-		[Int16]   SmallInt NOT NULL,
-		[UInt16]  Int      NOT NULL,
-		[Int32]   Int      NOT NULL,
-		[UInt32]  BigInt   NOT NULL,
-		[Int64]   BigInt   NOT NULL,
-		[UInt64]  Decimal  NOT NULL,
-		[SByteN]  TinyInt      NULL,
-		[ByteN]   TinyInt      NULL,
-		[Int16N]  SmallInt     NULL,
-		[UInt16N] Int          NULL,
-		[Int32N]  Int          NULL,
-		[UInt32N] BigInt       NULL,
-		[Int64N]  BigInt       NULL,
-		[UInt64N] Decimal      NULL
-	)
-
-BeforeExecute
--- SqlServer.Contained SqlServer.2019
-
 SELECT
 	[x].[SByte],
 	[x].[Byte],
@@ -82,9 +53,4 @@ WHERE
 	4 = [x].[UInt32N] OR
 	4 = [x].[Int64N] OR
 	4 = [x].[UInt64N]
-
-BeforeExecute
--- SqlServer.Contained SqlServer.2019
-
-DROP TABLE IF EXISTS [ConversionsTestTable]
 

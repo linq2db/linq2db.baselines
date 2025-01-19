@@ -1,49 +1,4 @@
 ﻿BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
-
-DROP TABLE IF EXISTS `Order`
-
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
-
-CREATE TABLE IF NOT EXISTS `Order`
-(
-	`Id`   INT           NOT NULL,
-	`Name` VARCHAR(4000)     NULL
-)
-
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
-
-DROP TABLE IF EXISTS `SubOrder`
-
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
-
-CREATE TABLE IF NOT EXISTS `SubOrder`
-(
-	`Id`      INT NOT NULL,
-	`OrderId` INT NOT NULL
-)
-
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
-
-DROP TABLE IF EXISTS `SubOrderDetail`
-
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
-
-CREATE TABLE IF NOT EXISTS `SubOrderDetail`
-(
-	`Id`         INT           NOT NULL,
-	`SubOrderId` INT           NOT NULL,
-	`Code`       VARCHAR(4000)     NULL,
-	`Date`       DATETIME      NOT NULL,
-	`IsActive`   BOOLEAN       NOT NULL
-)
-
-BeforeExecute
 BeginTransaction(RepeatableRead)
 BeforeExecute
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql
@@ -135,19 +90,4 @@ WHERE
 ORDER BY
 	`x`.`Id`
 LIMIT @skip, @take
-
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
-
-DROP TABLE IF EXISTS `SubOrderDetail`
-
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
-
-DROP TABLE IF EXISTS `SubOrder`
-
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
-
-DROP TABLE IF EXISTS `Order`
 

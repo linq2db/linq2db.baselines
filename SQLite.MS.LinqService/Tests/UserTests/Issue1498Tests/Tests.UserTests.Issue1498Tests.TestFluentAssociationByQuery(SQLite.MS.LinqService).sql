@@ -1,35 +1,5 @@
 ﻿BeforeExecute
 -- SQLite.MS SQLite
-
-DROP TABLE IF EXISTS [Topic]
-
-BeforeExecute
--- SQLite.MS SQLite
-
-CREATE TABLE IF NOT EXISTS [Topic]
-(
-	[Id]    INTEGER       NOT NULL,
-	[Title] NVarChar(255)     NULL,
-	[Text]  NVarChar(255)     NULL
-)
-
-BeforeExecute
--- SQLite.MS SQLite
-
-DROP TABLE IF EXISTS [Message]
-
-BeforeExecute
--- SQLite.MS SQLite
-
-CREATE TABLE IF NOT EXISTS [Message]
-(
-	[Id]      INTEGER       NOT NULL,
-	[TopicId] INTEGER       NOT NULL,
-	[Text]    NVarChar(255)     NULL
-)
-
-BeforeExecute
--- SQLite.MS SQLite
 DECLARE @Id  -- Int32
 SET     @Id = 6
 DECLARE @Title NVarChar(5) -- String
@@ -124,14 +94,4 @@ FROM
 WHERE
 	[x].[Id] = 6
 LIMIT 1
-
-BeforeExecute
--- SQLite.MS SQLite
-
-DROP TABLE IF EXISTS [Message]
-
-BeforeExecute
--- SQLite.MS SQLite
-
-DROP TABLE IF EXISTS [Topic]
 

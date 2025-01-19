@@ -1,23 +1,5 @@
 ﻿BeforeExecute
 -- SqlServer.2019.MS SqlServer.2019
-
-DROP TABLE IF EXISTS [ValuesTable]
-
-BeforeExecute
--- SqlServer.2019.MS SqlServer.2019
-
-IF (OBJECT_ID(N'[ValuesTable]', N'U') IS NULL)
-	CREATE TABLE [ValuesTable]
-	(
-		[Id]         BigInt NOT NULL,
-		[SomeValue1] Int    NOT NULL,
-		[SomeValue2] Int    NOT NULL,
-
-		CONSTRAINT [PK_ValuesTable] PRIMARY KEY CLUSTERED ([Id])
-	)
-
-BeforeExecute
--- SqlServer.2019.MS SqlServer.2019
 DECLARE @Id BigInt -- Int64
 SET     @Id = 1
 DECLARE @SomeValue1 Int -- Int32
@@ -47,9 +29,4 @@ SELECT TOP (2)
 	[t1].[SomeValue2]
 FROM
 	[ValuesTable] [t1]
-
-BeforeExecute
--- SqlServer.2019.MS SqlServer.2019
-
-DROP TABLE IF EXISTS [ValuesTable]
 

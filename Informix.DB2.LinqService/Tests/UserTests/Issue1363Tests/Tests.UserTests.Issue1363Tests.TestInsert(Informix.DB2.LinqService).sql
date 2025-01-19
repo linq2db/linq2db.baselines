@@ -1,19 +1,5 @@
 ﻿BeforeExecute
 -- Informix.DB2 Informix
-
-DROP TABLE IF EXISTS Issue1363
-
-BeforeExecute
--- Informix.DB2 Informix
-
-CREATE TABLE IF NOT EXISTS Issue1363
-(
-	required_field VARCHAR(36) NOT NULL,
-	optional_field VARCHAR(36)     NULL
-)
-
-BeforeExecute
--- Informix.DB2 Informix
 DECLARE @id Char(36) -- StringFixedLength
 SET     @id = 'bc7b663d-0fde-4327-8f92-5d8cc3a11d11'
 
@@ -72,9 +58,4 @@ FROM
 	Issue1363 t1
 WHERE
 	t1.required_field = @id2
-
-BeforeExecute
--- Informix.DB2 Informix
-
-DROP TABLE IF EXISTS Issue1363
 

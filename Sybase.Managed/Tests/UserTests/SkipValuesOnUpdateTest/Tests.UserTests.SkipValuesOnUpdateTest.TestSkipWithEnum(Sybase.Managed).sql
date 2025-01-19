@@ -1,27 +1,5 @@
 ﻿BeforeExecute
 -- Sybase.Managed Sybase
-
-IF (OBJECT_ID(N'PR_1598_Update_Enum_Table') IS NOT NULL)
-	DROP TABLE [PR_1598_Update_Enum_Table]
-
-BeforeExecute
--- Sybase.Managed Sybase
-
-IF (OBJECT_ID(N'PR_1598_Update_Enum_Table') IS NULL)
-	EXECUTE('
-		CREATE TABLE [PR_1598_Update_Enum_Table]
-		(
-			[Id]     Int           NOT NULL,
-			[Name]   NVarChar(255)     NULL,
-			[Age]    Int               NULL,
-			[Gender] NVarChar(6)       NULL,
-
-			CONSTRAINT [PK_PR_1598_Update_Enum_Table] PRIMARY KEY CLUSTERED ([Id])
-		)
-	')
-
-BeforeExecute
--- Sybase.Managed Sybase
 DECLARE @Id Integer -- Int32
 SET     @Id = 1
 DECLARE @Name UniVarChar(3) -- String
@@ -121,10 +99,4 @@ FROM
 	[PR_1598_Update_Enum_Table] [t]
 WHERE
 	[t].[Id] = 1
-
-BeforeExecute
--- Sybase.Managed Sybase
-
-IF (OBJECT_ID(N'PR_1598_Update_Enum_Table') IS NOT NULL)
-	DROP TABLE [PR_1598_Update_Enum_Table]
 

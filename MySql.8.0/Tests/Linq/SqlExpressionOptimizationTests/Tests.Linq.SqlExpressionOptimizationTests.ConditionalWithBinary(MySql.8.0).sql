@@ -1,48 +1,6 @@
 ﻿BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
 
-DROP TABLE IF EXISTS `OptimizationData`
-
-BeforeExecute
--- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
-CREATE TABLE IF NOT EXISTS `OptimizationData`
-(
-	`Id`                  INT           NOT NULL,
-	`IntVlaue`            INT           NOT NULL,
-	`IntVlaueNullable`    INT               NULL,
-	`BoolValue`           BOOLEAN       NOT NULL,
-	`BoolValueNullable`   BOOLEAN           NULL,
-	`StringValue`         VARCHAR(4000)     NULL,
-	`StringValueNullable` VARCHAR(4000)     NULL
-)
-
-BeforeExecute
--- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
-INSERT INTO `OptimizationData`
-(
-	`Id`,
-	`IntVlaue`,
-	`IntVlaueNullable`,
-	`BoolValue`,
-	`BoolValueNullable`,
-	`StringValue`,
-	`StringValueNullable`
-)
-VALUES
-(1,1,0,1,1,'1','1'),
-(2,2,1,0,NULL,'0','0'),
-(3,4,4,0,NULL,'1','1'),
-(4,0,1,1,1,'0',NULL),
-(5,1,3,1,1,'1',NULL),
-(6,3,0,0,0,'0','0'),
-(7,1,4,0,0,'1','1'),
-(8,3,2,1,1,'0','0')
-
-BeforeExecute
--- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
 /* x => x.IntVlaue == 1 ? 3 : 4 == 3 */
 SELECT
 	`x`.`Id`,
@@ -2385,9 +2343,4 @@ SELECT
 	`t1`.`StringValueNullable`
 FROM
 	`OptimizationData` `t1`
-
-BeforeExecute
--- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
-DROP TABLE IF EXISTS `OptimizationData`
 

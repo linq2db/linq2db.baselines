@@ -1,22 +1,6 @@
 ﻿BeforeExecute
 -- SqlServer.2008.MS SqlServer.2008
 
-IF (OBJECT_ID(N'[HierarchyTree]', N'U') IS NOT NULL)
-	DROP TABLE [HierarchyTree]
-
-BeforeExecute
--- SqlServer.2008.MS SqlServer.2008
-
-IF (OBJECT_ID(N'[HierarchyTree]', N'U') IS NULL)
-	CREATE TABLE [HierarchyTree]
-	(
-		[Id]       Int NOT NULL,
-		[ParentId] Int     NULL
-	)
-
-BeforeExecute
--- SqlServer.2008.MS SqlServer.2008
-
 WITH [CTE_1] ([Id])
 AS
 (
@@ -61,10 +45,4 @@ FROM
 		INNER JOIN [HierarchyTree] [data2] ON [data2].[Id] = [t4].[Id]
 		INNER JOIN [HierarchyTree] [data3] ON [data3].[Id] = [t4].[Id]
 		INNER JOIN [HierarchyTree] [data4] ON [data4].[Id] = [t4].[Id]
-
-BeforeExecute
--- SqlServer.2008.MS SqlServer.2008
-
-IF (OBJECT_ID(N'[HierarchyTree]', N'U') IS NOT NULL)
-	DROP TABLE [HierarchyTree]
 

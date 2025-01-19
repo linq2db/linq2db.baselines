@@ -1,31 +1,5 @@
 ﻿BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
-DROP TABLE IF EXISTS `TakeSkipClass`
-
-BeforeExecute
--- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
-CREATE TABLE IF NOT EXISTS `TakeSkipClass`
-(
-	`Value` VARCHAR(10)     NULL
-)
-
-BeforeExecute
--- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
-INSERT INTO `TakeSkipClass`
-(
-	`Value`
-)
-VALUES
-('PLUTO'),
-('PIPPO'),
-('PLUTO'),
-('BOLTO')
-
-BeforeExecute
--- MySql.8.0 MySql.8.0.MySql.Data MySql80
 DECLARE @skip Int32
 SET     @skip = 3
 
@@ -49,9 +23,4 @@ FROM
 ORDER BY
 	`t1`.`Value`
 LIMIT @skip, 9223372036854775807
-
-BeforeExecute
--- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
-DROP TABLE IF EXISTS `TakeSkipClass`
 

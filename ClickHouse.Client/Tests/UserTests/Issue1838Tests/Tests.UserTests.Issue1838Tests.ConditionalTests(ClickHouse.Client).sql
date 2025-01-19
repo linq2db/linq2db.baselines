@@ -1,66 +1,6 @@
 ﻿BeforeExecute
 -- ClickHouse.Client ClickHouse
 
-DROP TABLE IF EXISTS Invoice
-
-BeforeExecute
--- ClickHouse.Client ClickHouse
-
-CREATE TABLE IF NOT EXISTS Invoice
-(
-	InvoiceID                Int64,
-	InvoiceReferenceNumberID Nullable(Int64),
-	SettlementTotalOnIssue   Nullable(Decimal128(10))
-)
-ENGINE = Memory()
-
-BeforeExecute
--- ClickHouse.Client ClickHouse
-
-INSERT INTO Invoice
-(
-	InvoiceID,
-	InvoiceReferenceNumberID,
-	SettlementTotalOnIssue
-)
-VALUES
-(toInt64(1),toInt64(10),toDecimal128('3', 10))
-
-BeforeExecute
--- ClickHouse.Client ClickHouse
-
-DROP TABLE IF EXISTS InvoiceLineItem
-
-BeforeExecute
--- ClickHouse.Client ClickHouse
-
-CREATE TABLE IF NOT EXISTS InvoiceLineItem
-(
-	InvoiceLineItemID     Int64,
-	BillingAmountOverride Decimal128(10),
-	Suppressed            Bool,
-	OwningInvoiceID       Int64
-)
-ENGINE = Memory()
-
-BeforeExecute
--- ClickHouse.Client ClickHouse
-
-DROP TABLE IF EXISTS InvoiceReferenceNumber
-
-BeforeExecute
--- ClickHouse.Client ClickHouse
-
-CREATE TABLE IF NOT EXISTS InvoiceReferenceNumber
-(
-	InvoiceReferenceNumberID Int64,
-	ReferenceNumber          Nullable(String)
-)
-ENGINE = Memory()
-
-BeforeExecute
--- ClickHouse.Client ClickHouse
-
 SELECT
 	i.InvoiceID,
 	CASE
@@ -130,19 +70,4 @@ FROM
 			GROUP BY
 				g_1.InvoiceID
 		) ia ON ia.InvoiceID = i.InvoiceID
-
-BeforeExecute
--- ClickHouse.Client ClickHouse
-
-DROP TABLE IF EXISTS InvoiceReferenceNumber
-
-BeforeExecute
--- ClickHouse.Client ClickHouse
-
-DROP TABLE IF EXISTS InvoiceLineItem
-
-BeforeExecute
--- ClickHouse.Client ClickHouse
-
-DROP TABLE IF EXISTS Invoice
 

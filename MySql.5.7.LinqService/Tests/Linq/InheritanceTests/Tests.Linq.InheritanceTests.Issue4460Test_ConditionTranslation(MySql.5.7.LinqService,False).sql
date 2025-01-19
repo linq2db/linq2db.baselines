@@ -1,22 +1,5 @@
 ﻿BeforeExecute
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
-
-DROP TABLE IF EXISTS `Base`
-
-BeforeExecute
--- MySql.5.7 MySql.5.7.MySql.Data MySql57
-
-CREATE TABLE IF NOT EXISTS `Base`
-(
-	`Code`   VARCHAR(4000)     NULL,
-	`Id`     INT           NOT NULL,
-	`Name`   VARCHAR(4000)     NULL,
-	`IsMale` BOOLEAN           NULL,
-	`Age`    INT               NULL
-)
-
-BeforeExecute
--- MySql.5.7 MySql.5.7.MySql.Data MySql57
 DECLARE @Code VarChar(5) -- String
 SET     @Code = 'Child'
 DECLARE @Id Int32
@@ -86,9 +69,4 @@ WHERE
 	END
 ORDER BY
 	`e`.`Id`
-
-BeforeExecute
--- MySql.5.7 MySql.5.7.MySql.Data MySql57
-
-DROP TABLE IF EXISTS `Base`
 

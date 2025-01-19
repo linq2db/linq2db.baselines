@@ -1,35 +1,5 @@
 ﻿BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-
-DROP TABLE IF EXISTS `TakeSkipClass`
-
-BeforeExecute
--- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-
-CREATE TABLE IF NOT EXISTS `TakeSkipClass`
-(
-	`Value` VARCHAR(10)     NULL
-)
-
-BeforeExecute
--- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-
-INSERT INTO `TakeSkipClass`
-(
-	`Value`
-)
-VALUES
-('Value1'),
-('Value2'),
-('Value3'),
-('Value4'),
-('Value5'),
-('Value6'),
-('Value7'),
-('Value8')
-
-BeforeExecute
--- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 DECLARE @take Int32
 SET     @take = 1
 
@@ -40,9 +10,4 @@ FROM
 ORDER BY
 	`t1`.`Value`
 LIMIT @take
-
-BeforeExecute
--- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-
-DROP TABLE IF EXISTS `TakeSkipClass`
 

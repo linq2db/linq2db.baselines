@@ -1,24 +1,6 @@
 ﻿BeforeExecute
 -- SqlServer.Contained.MS SqlServer.2019
 
-DROP TABLE IF EXISTS [Issue3684Table]
-
-BeforeExecute
--- SqlServer.Contained.MS SqlServer.2019
-
-IF (OBJECT_ID(N'[Issue3684Table]', N'U') IS NULL)
-	CREATE TABLE [Issue3684Table]
-	(
-		[Id]                   Int           NOT NULL IDENTITY,
-		[FirstAppointmentTime] DateTime2(0)      NULL,
-		[PassportDateOfIssue]  DateTime          NULL,
-
-		CONSTRAINT [PK_Issue3684Table] PRIMARY KEY CLUSTERED ([Id])
-	)
-
-BeforeExecute
--- SqlServer.Contained.MS SqlServer.2019
-
 INSERT INTO [Issue3684Table] DEFAULT VALUES
 
 BeforeExecute
@@ -50,9 +32,4 @@ FROM
 	[Issue3684Table] [t1]
 ORDER BY
 	[t1].[Id]
-
-BeforeExecute
--- SqlServer.Contained.MS SqlServer.2019
-
-DROP TABLE IF EXISTS [Issue3684Table]
 

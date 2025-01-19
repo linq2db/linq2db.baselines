@@ -1,43 +1,6 @@
 ﻿BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
-DROP TABLE IF EXISTS Test3799Item
-
-BeforeExecute
--- ClickHouse.MySql ClickHouse
-
-CREATE TABLE IF NOT EXISTS Test3799Item
-(
-	Id       Int32,
-	ParentId Nullable(Int32),
-	Name     String,
-
-	PRIMARY KEY (Id)
-)
-ENGINE = MergeTree()
-ORDER BY Id
-
-BeforeExecute
--- ClickHouse.MySql ClickHouse
-
-INSERT INTO Test3799Item
-(
-	Id,
-	ParentId,
-	Name
-)
-VALUES
-(1,NULL,'root'),
-(2,1,'child 1'),
-(3,2,'child 1.1'),
-(4,2,'child 1.2'),
-(5,1,'child 2'),
-(6,5,'child 2.1'),
-(7,5,'child 2.1')
-
-BeforeExecute
--- ClickHouse.MySql ClickHouse
-
 SELECT
 	m_1.Children,
 	d.Name
@@ -76,9 +39,4 @@ FROM
 			FROM
 				Test3799Item a_Children
 		) t1 ON item_1.Id = t1.ParentId AND t1.rn <= 1
-
-BeforeExecute
--- ClickHouse.MySql ClickHouse
-
-DROP TABLE IF EXISTS Test3799Item
 

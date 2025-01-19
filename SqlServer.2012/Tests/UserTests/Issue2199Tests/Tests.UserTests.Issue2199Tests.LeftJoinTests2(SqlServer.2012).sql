@@ -1,43 +1,6 @@
 ﻿BeforeExecute
 -- SqlServer.2012
 
-IF (OBJECT_ID(N'[Manufacturer]', N'U') IS NOT NULL)
-	DROP TABLE [Manufacturer]
-
-BeforeExecute
--- SqlServer.2012
-
-IF (OBJECT_ID(N'[Manufacturer]', N'U') IS NULL)
-	CREATE TABLE [Manufacturer]
-	(
-		[ManufacturerId] Int            NOT NULL,
-		[Name]           NVarChar(4000)     NULL,
-		[CountryCode]    NVarChar(4000)     NULL,
-
-		CONSTRAINT [PK_Manufacturer] PRIMARY KEY CLUSTERED ([ManufacturerId])
-	)
-
-BeforeExecute
--- SqlServer.2012
-
-IF (OBJECT_ID(N'[Country]', N'U') IS NOT NULL)
-	DROP TABLE [Country]
-
-BeforeExecute
--- SqlServer.2012
-
-IF (OBJECT_ID(N'[Country]', N'U') IS NULL)
-	CREATE TABLE [Country]
-	(
-		[Code] NVarChar(4000) NOT NULL,
-		[Name] NVarChar(4000)     NULL,
-
-		CONSTRAINT [PK_Country] PRIMARY KEY CLUSTERED ([Code])
-	)
-
-BeforeExecute
--- SqlServer.2012
-
 SELECT
 	[e].[ManufacturerId],
 	[e].[CountryCode],
@@ -67,16 +30,4 @@ FROM
 		) [m_2] ON 1=1
 WHERE
 	[e].[ManufacturerId] = 1
-
-BeforeExecute
--- SqlServer.2012
-
-IF (OBJECT_ID(N'[Country]', N'U') IS NOT NULL)
-	DROP TABLE [Country]
-
-BeforeExecute
--- SqlServer.2012
-
-IF (OBJECT_ID(N'[Manufacturer]', N'U') IS NOT NULL)
-	DROP TABLE [Manufacturer]
 

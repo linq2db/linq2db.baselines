@@ -1,25 +1,5 @@
 ﻿BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014
-
-IF (OBJECT_ID(N'[Issue4280]', N'U') IS NOT NULL)
-	DROP TABLE [Issue4280]
-
-BeforeExecute
--- SqlServer.2014.MS SqlServer.2014
-
-IF (OBJECT_ID(N'[Issue4280]', N'U') IS NULL)
-	CREATE TABLE [Issue4280]
-	(
-		[Id]           Int            NOT NULL,
-		[SerialNumber] NVarChar(4000)     NULL,
-		[DeviceType]   NVarChar(4000)     NULL,
-		[Location]     NVarChar(4000)     NULL,
-
-		CONSTRAINT [PK_Issue4280] PRIMARY KEY CLUSTERED ([Id])
-	)
-
-BeforeExecute
--- SqlServer.2014.MS SqlServer.2014
 DECLARE @Id Int -- Int32
 SET     @Id = 2
 DECLARE @SerialNumber NVarChar(4000) -- String
@@ -128,10 +108,4 @@ FROM
 	[Issue4280] [t1]
 ORDER BY
 	[t1].[Id]
-
-BeforeExecute
--- SqlServer.2014.MS SqlServer.2014
-
-IF (OBJECT_ID(N'[Issue4280]', N'U') IS NOT NULL)
-	DROP TABLE [Issue4280]
 

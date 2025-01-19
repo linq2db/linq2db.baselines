@@ -1,22 +1,5 @@
 ﻿BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-
-DROP TABLE "Issue4715Table"
-
-BeforeExecute
--- SapHana.Odbc SapHanaOdbc
-
-CREATE COLUMN TABLE "Issue4715Table"
-(
-	"Id"    Integer NOT NULL,
-	"Prop1" Integer NOT NULL,
-	"Prop2" Integer NOT NULL,
-	"Prop3" Integer NOT NULL,
-	"Prop4" Integer NOT NULL
-)
-
-BeforeExecute
--- SapHana.Odbc SapHanaOdbc
 DECLARE @Id  -- Int32
 SET     @Id = 1
 DECLARE @ImplicitPropertyRW  -- Int32
@@ -55,9 +38,4 @@ SELECT
 FROM
 	"Issue4715Table" "t1"
 LIMIT 2
-
-BeforeExecute
--- SapHana.Odbc SapHanaOdbc
-
-DROP TABLE "Issue4715Table"
 

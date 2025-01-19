@@ -1,27 +1,6 @@
 ﻿BeforeExecute
 -- SqlServer.2017
 
-DROP TABLE IF EXISTS [TPHTable]
-
-BeforeExecute
--- SqlServer.2017
-
-IF (OBJECT_ID(N'[TPHTable]', N'U') IS NULL)
-	CREATE TABLE [TPHTable]
-	(
-		[Id]            Int          NOT NULL,
-		[Discriminator] Int          NOT NULL,
-		[Value1]        NVarChar(50)     NULL,
-		[Value2]        NVarChar(50)     NULL,
-		[Value3]        NVarChar(50)     NULL,
-		[NullableBool]  VarChar(1)       NULL,
-
-		CONSTRAINT [PK_TPHTable] PRIMARY KEY CLUSTERED ([Id])
-	)
-
-BeforeExecute
--- SqlServer.2017
-
 INSERT INTO [TPHTable]
 (
 	[Id],
@@ -140,9 +119,4 @@ FROM
 	[TPHTable] [x]
 WHERE
 	[x].[Value3] = N'Str3'
-
-BeforeExecute
--- SqlServer.2017
-
-DROP TABLE IF EXISTS [TPHTable]
 

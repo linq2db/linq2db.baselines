@@ -1,18 +1,5 @@
 ﻿BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
-
-DROP TABLE [Issue680Table]
-
-BeforeExecute
--- Access.Jet.OleDb AccessOleDb
-
-CREATE TABLE [Issue680Table]
-(
-	[TimeStamp] DateTime NOT NULL
-)
-
-BeforeExecute
--- Access.Jet.OleDb AccessOleDb
 DECLARE @value Date -- DateTime
 SET     @value = #2020-02-29 17:54:55#
 
@@ -22,9 +9,4 @@ FROM
 	[Issue680Table] [g_1]
 GROUP BY
 	[g_1].[TimeStamp]
-
-BeforeExecute
--- Access.Jet.OleDb AccessOleDb
-
-DROP TABLE [Issue680Table]
 

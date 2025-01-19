@@ -2,34 +2,6 @@
 BeginTransaction
 BeforeExecute
 -- PostgreSQL.17 PostgreSQL.15 PostgreSQL
-
-DROP TABLE IF EXISTS mega_composites
-
-BeforeExecute
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
-
-CREATE TABLE IF NOT EXISTS mega_composites
-(
-	ref1         BigInt     NULL,
-	"y1.q1.ref1" BigInt     NULL
-)
-
-BeforeExecute
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
-
-DROP TABLE IF EXISTS qwerty
-
-BeforeExecute
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
-
-CREATE TABLE IF NOT EXISTS qwerty
-(
-	"Id"   BigInt NOT NULL,
-	asdfgh text       NULL
-)
-
-BeforeExecute
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
 DECLARE @Id Bigint -- Int64
 SET     @Id = 1
 DECLARE @asdfgh Text(4) -- String
@@ -137,16 +109,6 @@ SELECT
 FROM
 	mega_composites x
 LIMIT :take
-
-BeforeExecute
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
-
-DROP TABLE IF EXISTS qwerty
-
-BeforeExecute
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
-
-DROP TABLE IF EXISTS mega_composites
 
 BeforeExecute
 DisposeTransaction

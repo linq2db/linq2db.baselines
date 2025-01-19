@@ -1,22 +1,6 @@
 ﻿BeforeExecute
 -- SQLite.Classic SQLite
 
-DROP TABLE IF EXISTS [Issue4460Table]
-
-BeforeExecute
--- SQLite.Classic SQLite
-
-CREATE TABLE IF NOT EXISTS [Issue4460Table]
-(
-	[Id]      INTEGER       NOT NULL,
-	[Code]    NVarChar(255)     NULL,
-	[Name]    NVarChar(255)     NULL,
-	[Surname] NVarChar(255)     NULL
-)
-
-BeforeExecute
--- SQLite.Classic SQLite
-
 INSERT INTO [Issue4460Table]
 (
 	[Id],
@@ -37,9 +21,4 @@ SELECT
 	[t1].[Surname]
 FROM
 	[Issue4460Table] [t1]
-
-BeforeExecute
--- SQLite.Classic SQLite
-
-DROP TABLE IF EXISTS [Issue4460Table]
 

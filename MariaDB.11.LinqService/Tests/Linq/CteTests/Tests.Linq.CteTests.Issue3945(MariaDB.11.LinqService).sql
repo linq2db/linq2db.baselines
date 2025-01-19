@@ -1,21 +1,6 @@
 ﻿BeforeExecute
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql
 
-DROP TABLE IF EXISTS `TestFolder`
-
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
-
-CREATE TABLE IF NOT EXISTS `TestFolder`
-(
-	`Id`       CHAR(36)      NOT NULL,
-	`Label`    VARCHAR(4000)     NULL,
-	`ParentId` CHAR(36)          NULL
-)
-
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
-
 INSERT INTO `TestFolder`
 (
 	`Id`,
@@ -38,9 +23,4 @@ SELECT
 FROM
 	`CTE` `child`
 		INNER JOIN `TestFolder` `parent` ON `child`.`ParentId` = `parent`.`Id`
-
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
-
-DROP TABLE IF EXISTS `TestFolder`
 

@@ -1,33 +1,5 @@
 ﻿BeforeExecute
 -- PostgreSQL.17 PostgreSQL.15 PostgreSQL
-
-DROP TABLE IF EXISTS "GuidTable"
-
-BeforeExecute
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
-
-CREATE TABLE IF NOT EXISTS "GuidTable"
-(
-	"Id"             Int  NOT NULL,
-	"Column"         uuid NOT NULL,
-	"ColumnNullable" uuid     NULL
-)
-
-BeforeExecute
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
-
-INSERT INTO "GuidTable"
-(
-	"Id",
-	"Column",
-	"ColumnNullable"
-)
-VALUES
-(1,'bc7b663d-0fde-4327-8f92-5d8cc3a11d11'::uuid,NULL),
-(2,'a948600d-de21-4f74-8ac2-9516b287076e'::uuid,'bd3973a5-4323-4dd8-9f4f-df9f93e2a627'::uuid)
-
-BeforeExecute
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
 DECLARE @Column Uuid -- Guid
 SET     @Column = 'a948600d-de21-4f74-8ac2-9516b287076e'::uuid
 DECLARE @ColumnNullable Uuid -- Guid
@@ -168,9 +140,4 @@ FROM
 	"GuidTable" t1
 ORDER BY
 	t1."Id"
-
-BeforeExecute
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
-
-DROP TABLE IF EXISTS "GuidTable"
 

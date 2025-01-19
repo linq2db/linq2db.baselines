@@ -1,26 +1,6 @@
 ﻿BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
-DROP TABLE IF EXISTS Stone
-
-BeforeExecute
--- ClickHouse.MySql ClickHouse
-
-CREATE TABLE IF NOT EXISTS Stone
-(
-	Id           Int32,
-	Name         String,
-	Enabled      Nullable(Bool),
-	ImageFullUrl Nullable(String),
-
-	PRIMARY KEY (Id)
-)
-ENGINE = MergeTree()
-ORDER BY Id
-
-BeforeExecute
--- ClickHouse.MySql ClickHouse
-
 INSERT INTO Stone
 (
 	Name,
@@ -99,9 +79,4 @@ FROM
 				s.Enabled = true AND NOT startsWith(s.Name, 'level - ') AND
 				CHAR_LENGTH(s.ImageFullUrl) > 0
 		) t1 ON sG_1.Name = t1.Name AND t1.rn <= 1
-
-BeforeExecute
--- ClickHouse.MySql ClickHouse
-
-DROP TABLE IF EXISTS Stone
 

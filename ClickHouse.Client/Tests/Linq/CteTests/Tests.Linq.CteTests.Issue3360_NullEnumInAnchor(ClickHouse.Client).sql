@@ -1,22 +1,6 @@
 ﻿BeforeExecute
 -- ClickHouse.Client ClickHouse
 
-DROP TABLE IF EXISTS Issue3360NullInAnchor
-
-BeforeExecute
--- ClickHouse.Client ClickHouse
-
-CREATE TABLE IF NOT EXISTS Issue3360NullInAnchor
-(
-	Id    Int32,
-	Guid  Nullable(UUID),
-	Enum1 Nullable(String)
-)
-ENGINE = Memory()
-
-BeforeExecute
--- ClickHouse.Client ClickHouse
-
 WITH RECURSIVE cte AS
 (
 	SELECT
@@ -37,9 +21,4 @@ SELECT
 	t2.Enum1
 FROM
 	cte t2
-
-BeforeExecute
--- ClickHouse.Client ClickHouse
-
-DROP TABLE IF EXISTS Issue3360NullInAnchor
 

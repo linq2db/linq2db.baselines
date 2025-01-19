@@ -1,39 +1,5 @@
 ﻿BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-
-DROP TABLE IF EXISTS [Topic]
-
-BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
-
-CREATE TABLE IF NOT EXISTS [Topic]
-(
-	[Id]    INTEGER       NOT NULL,
-	[Title] NVarChar(255)     NULL,
-	[Text]  NVarChar(255)     NULL,
-
-	CONSTRAINT [PK_Topic] PRIMARY KEY ([Id])
-)
-
-BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
-
-DROP TABLE IF EXISTS [Message]
-
-BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
-
-CREATE TABLE IF NOT EXISTS [Message]
-(
-	[Id]      INTEGER       NOT NULL,
-	[TopicId] INTEGER       NOT NULL,
-	[Text]    NVarChar(255)     NULL,
-
-	CONSTRAINT [PK_Message] PRIMARY KEY ([Id])
-)
-
-BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
 DECLARE @Id  -- Int32
 SET     @Id = 6
 DECLARE @Title NVarChar(5) -- String
@@ -128,14 +94,4 @@ FROM
 WHERE
 	[x].[Id] = 6
 LIMIT 1
-
-BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
-
-DROP TABLE IF EXISTS [Message]
-
-BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
-
-DROP TABLE IF EXISTS [Topic]
 

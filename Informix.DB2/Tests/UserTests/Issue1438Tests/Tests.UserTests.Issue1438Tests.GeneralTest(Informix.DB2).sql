@@ -1,21 +1,5 @@
 ﻿BeforeExecute
 -- Informix.DB2 Informix
-
-DROP TABLE IF EXISTS Issue1438
-
-BeforeExecute
--- Informix.DB2 Informix
-
-CREATE TABLE IF NOT EXISTS Issue1438
-(
-	Id  SERIAL   NOT NULL,
-	Has BOOLEAN  NOT NULL,
-
-	PRIMARY KEY (Id)
-)
-
-BeforeExecute
--- Informix.DB2 Informix
 DECLARE @Has Char(1) -- StringFixedLength
 SET     @Has = 't'
 
@@ -45,9 +29,4 @@ FROM
 	Issue1438 t1
 WHERE
 	t1.Id = @id
-
-BeforeExecute
--- Informix.DB2 Informix
-
-DROP TABLE IF EXISTS Issue1438
 

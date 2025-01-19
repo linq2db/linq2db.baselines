@@ -1,20 +1,6 @@
 ﻿BeforeExecute
 -- SQLite.MS SQLite
 
-DROP TABLE IF EXISTS [TableWithIdentity]
-
-BeforeExecute
--- SQLite.MS SQLite
-
-CREATE TABLE IF NOT EXISTS [TableWithIdentity]
-(
-	[Id]    INTEGER  NOT NULL PRIMARY KEY AUTOINCREMENT,
-	[Value] INTEGER  NOT NULL
-)
-
-BeforeExecute
--- SQLite.MS SQLite
-
 INSERT INTO [TableWithIdentity]
 (
 	[Id],
@@ -35,9 +21,4 @@ SELECT
 FROM
 	[TableWithIdentity] [t1]
 LIMIT 2
-
-BeforeExecute
--- SQLite.MS SQLite
-
-DROP TABLE IF EXISTS [TableWithIdentity]
 

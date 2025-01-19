@@ -1,26 +1,6 @@
 ﻿BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
-DROP TABLE IF EXISTS Issue4280
-
-BeforeExecute
--- ClickHouse.Octonica ClickHouse
-
-CREATE TABLE IF NOT EXISTS Issue4280
-(
-	Id           Int32,
-	SerialNumber Nullable(String),
-	DeviceType   Nullable(String),
-	Location     Nullable(String),
-
-	PRIMARY KEY (Id)
-)
-ENGINE = MergeTree()
-ORDER BY Id
-
-BeforeExecute
--- ClickHouse.Octonica ClickHouse
-
 INSERT INTO Issue4280
 (
 	Id,
@@ -100,9 +80,4 @@ FROM
 	Issue4280 t1
 ORDER BY
 	t1.Id
-
-BeforeExecute
--- ClickHouse.Octonica ClickHouse
-
-DROP TABLE IF EXISTS Issue4280
 

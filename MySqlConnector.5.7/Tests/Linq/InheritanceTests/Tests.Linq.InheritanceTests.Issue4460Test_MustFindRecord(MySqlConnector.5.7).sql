@@ -1,21 +1,5 @@
 ﻿BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-
-DROP TABLE IF EXISTS `Issue4460Table`
-
-BeforeExecute
--- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-
-CREATE TABLE IF NOT EXISTS `Issue4460Table`
-(
-	`Id`      INT           NOT NULL,
-	`Code`    VARCHAR(4000)     NULL,
-	`Name`    VARCHAR(4000)     NULL,
-	`Surname` VARCHAR(4000)     NULL
-)
-
-BeforeExecute
--- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 DECLARE @Id Int32
 SET     @Id = 1
 DECLARE @Code VarChar(10) -- String
@@ -52,9 +36,4 @@ FROM
 	`Issue4460Table` `t1`
 WHERE
 	`t1`.`Code` = 'GrandChild'
-
-BeforeExecute
--- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-
-DROP TABLE IF EXISTS `Issue4460Table`
 

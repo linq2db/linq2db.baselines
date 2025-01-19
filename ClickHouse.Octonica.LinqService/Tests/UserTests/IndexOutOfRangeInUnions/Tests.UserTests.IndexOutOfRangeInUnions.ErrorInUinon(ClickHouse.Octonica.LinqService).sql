@@ -1,57 +1,6 @@
 ﻿BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
-DROP TABLE IF EXISTS O1
-
-BeforeExecute
--- ClickHouse.Octonica ClickHouse
-
-CREATE TABLE IF NOT EXISTS O1
-(
-	DocEntry    Int32,
-	BplId       Int32,
-	ChaveAcesso Nullable(String),
-	DocStatus   Nullable(String)
-)
-ENGINE = Memory()
-
-BeforeExecute
--- ClickHouse.Octonica ClickHouse
-
-DROP TABLE IF EXISTS O2
-
-BeforeExecute
--- ClickHouse.Octonica ClickHouse
-
-CREATE TABLE IF NOT EXISTS O2
-(
-	DocEntry    Int32,
-	BplId       Int32,
-	ChaveAcesso Nullable(String),
-	DocStatus   Nullable(String)
-)
-ENGINE = Memory()
-
-BeforeExecute
--- ClickHouse.Octonica ClickHouse
-
-DROP TABLE IF EXISTS O3
-
-BeforeExecute
--- ClickHouse.Octonica ClickHouse
-
-CREATE TABLE IF NOT EXISTS O3
-(
-	DocEntry    Int32,
-	BplId       Int32,
-	ChaveAcesso Nullable(String),
-	DocStatus   Nullable(String)
-)
-ENGINE = Memory()
-
-BeforeExecute
--- ClickHouse.Octonica ClickHouse
-
 SELECT
 	doSap.DocEntry as NumeroInterno,
 	CASE
@@ -81,19 +30,4 @@ SELECT
 	toString('Manual/Externo') as DescricaoStatus
 FROM
 	O3 doSap_2
-
-BeforeExecute
--- ClickHouse.Octonica ClickHouse
-
-DROP TABLE IF EXISTS O3
-
-BeforeExecute
--- ClickHouse.Octonica ClickHouse
-
-DROP TABLE IF EXISTS O2
-
-BeforeExecute
--- ClickHouse.Octonica ClickHouse
-
-DROP TABLE IF EXISTS O1
 

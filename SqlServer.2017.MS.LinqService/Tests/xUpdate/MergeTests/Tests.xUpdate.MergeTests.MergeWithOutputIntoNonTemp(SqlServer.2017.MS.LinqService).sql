@@ -1,23 +1,6 @@
 ﻿BeforeExecute
 -- SqlServer.2017.MS SqlServer.2017
 
-DROP TABLE IF EXISTS [InsertTempTable]
-
-BeforeExecute
--- SqlServer.2017.MS SqlServer.2017
-
-IF (OBJECT_ID(N'[InsertTempTable]', N'U') IS NULL)
-	CREATE TABLE [InsertTempTable]
-	(
-		[Action]    NVarChar(4000)     NULL,
-		[NewId]     Int            NOT NULL,
-		[DeletedId] Int                NULL,
-		[SourceId]  Int                NULL
-	)
-
-BeforeExecute
--- SqlServer.2017.MS SqlServer.2017
-
 DELETE [t1]
 FROM
 	[TestMerge1] [t1]
@@ -297,9 +280,4 @@ SELECT
 	[t1].[SourceId]
 FROM
 	[InsertTempTable] [t1]
-
-BeforeExecute
--- SqlServer.2017.MS SqlServer.2017
-
-DROP TABLE IF EXISTS [InsertTempTable]
 

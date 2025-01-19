@@ -1,43 +1,6 @@
 ﻿BeforeExecute
 -- ClickHouse.Client ClickHouse
 
-DROP TABLE IF EXISTS Manufacturer
-
-BeforeExecute
--- ClickHouse.Client ClickHouse
-
-CREATE TABLE IF NOT EXISTS Manufacturer
-(
-	ManufacturerId Int32,
-	Name           Nullable(String),
-	CountryCode    Nullable(String),
-
-	PRIMARY KEY (ManufacturerId)
-)
-ENGINE = MergeTree()
-ORDER BY ManufacturerId
-
-BeforeExecute
--- ClickHouse.Client ClickHouse
-
-DROP TABLE IF EXISTS Country
-
-BeforeExecute
--- ClickHouse.Client ClickHouse
-
-CREATE TABLE IF NOT EXISTS Country
-(
-	Code String,
-	Name Nullable(String),
-
-	PRIMARY KEY (Code)
-)
-ENGINE = MergeTree()
-ORDER BY Code
-
-BeforeExecute
--- ClickHouse.Client ClickHouse
-
 SELECT
 	e.ManufacturerId,
 	e.CountryCode,
@@ -67,14 +30,4 @@ FROM
 		) m_2 ON 1=1
 WHERE
 	e.ManufacturerId = 1
-
-BeforeExecute
--- ClickHouse.Client ClickHouse
-
-DROP TABLE IF EXISTS Country
-
-BeforeExecute
--- ClickHouse.Client ClickHouse
-
-DROP TABLE IF EXISTS Manufacturer
 

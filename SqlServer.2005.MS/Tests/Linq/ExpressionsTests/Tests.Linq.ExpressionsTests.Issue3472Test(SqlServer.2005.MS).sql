@@ -1,30 +1,6 @@
 ﻿BeforeExecute
 -- SqlServer.2005.MS SqlServer.2005
 
-IF (OBJECT_ID(N'[Issue3472TableDC]', N'U') IS NOT NULL)
-	DROP TABLE [Issue3472TableDC]
-
-BeforeExecute
--- SqlServer.2005.MS SqlServer.2005
-
-IF (OBJECT_ID(N'[Issue3472TableDC]', N'U') IS NULL)
-	CREATE TABLE [Issue3472TableDC]
-	(
-		[Id] Int NOT NULL
-	)
-
-BeforeExecute
--- SqlServer.2005.MS SqlServer.2005
-
-INSERT INTO [Issue3472TableDC]
-(
-	[Id]
-)
-SELECT 1
-
-BeforeExecute
--- SqlServer.2005.MS SqlServer.2005
-
 SELECT
 	[t1].[Id],
 	(
@@ -37,10 +13,4 @@ SELECT
 	)
 FROM
 	[Issue3472TableDC] [t1]
-
-BeforeExecute
--- SqlServer.2005.MS SqlServer.2005
-
-IF (OBJECT_ID(N'[Issue3472TableDC]', N'U') IS NOT NULL)
-	DROP TABLE [Issue3472TableDC]
 

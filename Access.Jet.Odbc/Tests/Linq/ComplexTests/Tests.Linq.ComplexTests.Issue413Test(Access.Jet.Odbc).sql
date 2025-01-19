@@ -1,51 +1,5 @@
 ﻿BeforeExecute
 -- Access.Jet.Odbc AccessODBC
-
-DROP TABLE [T1]
-
-BeforeExecute
--- Access.Jet.Odbc AccessODBC
-
-CREATE TABLE [T1]
-(
-	[InstrumentId]         Int           NOT NULL,
-	[InstrumentCode]       NVarChar(255)     NULL,
-	[CreateDate]           DateTime      NOT NULL,
-	[SourceInstrumentCode] NVarChar(255)     NULL,
-
-	CONSTRAINT [PK_T1] PRIMARY KEY CLUSTERED ([InstrumentId])
-)
-
-BeforeExecute
--- Access.Jet.Odbc AccessODBC
-
-DROP TABLE [T2]
-
-BeforeExecute
--- Access.Jet.Odbc AccessODBC
-
-CREATE TABLE [T2]
-(
-	[InstrumentId] Int NOT NULL,
-	[IndexId]      Int NOT NULL
-)
-
-BeforeExecute
--- Access.Jet.Odbc AccessODBC
-
-DROP TABLE [T3]
-
-BeforeExecute
--- Access.Jet.Odbc AccessODBC
-
-CREATE TABLE [T3]
-(
-	[InstrumentId] Int NOT NULL,
-	[IndexId]      Int NOT NULL
-)
-
-BeforeExecute
--- Access.Jet.Odbc AccessODBC
 DECLARE @InstrumentId Int -- Int32
 SET     @InstrumentId = 1
 DECLARE @IndexId Int -- Int32
@@ -210,19 +164,4 @@ FROM
 	) [t5]
 ORDER BY
 	[t5].[SourceInstrumentCode]
-
-BeforeExecute
--- Access.Jet.Odbc AccessODBC
-
-DROP TABLE [T3]
-
-BeforeExecute
--- Access.Jet.Odbc AccessODBC
-
-DROP TABLE [T2]
-
-BeforeExecute
--- Access.Jet.Odbc AccessODBC
-
-DROP TABLE [T1]
 

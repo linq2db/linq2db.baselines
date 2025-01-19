@@ -1,21 +1,5 @@
 ﻿BeforeExecute
 -- SQLite.MS SQLite
-
-DROP TABLE IF EXISTS [InventoryResourceDTO]
-
-BeforeExecute
--- SQLite.MS SQLite
-
-CREATE TABLE IF NOT EXISTS [InventoryResourceDTO]
-(
-	[Id]        Guid    NOT NULL,
-	[Status]    INTEGER NOT NULL,
-	[Color]     INTEGER NOT NULL,
-	[CMYKColor] INTEGER NOT NULL
-)
-
-BeforeExecute
--- SQLite.MS SQLite
 DECLARE @Id  -- Guid
 SET     @Id = X'3D667BBCDE0F27438F925D8CC3A11D11'
 DECLARE @Status  -- Int32
@@ -70,9 +54,4 @@ WHERE
 		WHEN [x].[Status] = 2 THEN 'InProgress'
 		ELSE 'Unknown'
 	END LIKE '%en%' ESCAPE '~'
-
-BeforeExecute
--- SQLite.MS SQLite
-
-DROP TABLE IF EXISTS [InventoryResourceDTO]
 

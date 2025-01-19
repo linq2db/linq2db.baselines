@@ -1,22 +1,6 @@
 ﻿BeforeExecute
 -- SqlServer.Contained SqlServer.2019
 
-DROP TABLE IF EXISTS [TestFolder]
-
-BeforeExecute
--- SqlServer.Contained SqlServer.2019
-
-IF (OBJECT_ID(N'[TestFolder]', N'U') IS NULL)
-	CREATE TABLE [TestFolder]
-	(
-		[Id]       UniqueIdentifier NOT NULL,
-		[Label]    NVarChar(4000)       NULL,
-		[ParentId] UniqueIdentifier     NULL
-	)
-
-BeforeExecute
--- SqlServer.Contained SqlServer.2019
-
 WITH [CTE]
 (
 	[Level_1],
@@ -64,9 +48,4 @@ SELECT
 	[t2].[Entity_ParentId]
 FROM
 	[CTE] [t2]
-
-BeforeExecute
--- SqlServer.Contained SqlServer.2019
-
-DROP TABLE IF EXISTS [TestFolder]
 

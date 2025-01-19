@@ -1,23 +1,5 @@
 ﻿BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-
-DROP TABLE "Issue4280"
-
-BeforeExecute
--- SapHana.Odbc SapHanaOdbc
-
-CREATE COLUMN TABLE "Issue4280"
-(
-	"Id"           Integer       NOT NULL,
-	"SerialNumber" NVarChar(255)     NULL,
-	"DeviceType"   NVarChar(255)     NULL,
-	"Location"     NVarChar(255)     NULL,
-
-	PRIMARY KEY ("Id")
-)
-
-BeforeExecute
--- SapHana.Odbc SapHanaOdbc
 DECLARE @Id  -- Int32
 SET     @Id = 2
 DECLARE @SerialNumber NVarChar(7) -- String
@@ -126,9 +108,4 @@ FROM
 	"Issue4280" "t1"
 ORDER BY
 	"t1"."Id"
-
-BeforeExecute
--- SapHana.Odbc SapHanaOdbc
-
-DROP TABLE "Issue4280"
 

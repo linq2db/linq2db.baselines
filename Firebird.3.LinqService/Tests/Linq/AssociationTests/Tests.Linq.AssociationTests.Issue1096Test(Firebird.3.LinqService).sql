@@ -1,52 +1,5 @@
 ﻿BeforeExecute
 -- Firebird.3 Firebird3
-
-EXECUTE BLOCK AS BEGIN
-	IF (EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'Issue1096Task')) THEN
-		EXECUTE STATEMENT 'DROP TABLE "Issue1096Task"';
-END
-
-BeforeExecute
--- Firebird.3 Firebird3
-
-EXECUTE BLOCK AS BEGIN
-	IF (NOT EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'Issue1096Task')) THEN
-		EXECUTE STATEMENT '
-			CREATE TABLE "Issue1096Task"
-			(
-				"Id"         Int                                    NOT NULL,
-				"TargetName" VarChar(255) CHARACTER SET UNICODE_FSS
-			)
-		';
-END
-
-BeforeExecute
--- Firebird.3 Firebird3
-
-EXECUTE BLOCK AS BEGIN
-	IF (EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'Issue1096TaskStage')) THEN
-		EXECUTE STATEMENT 'DROP TABLE "Issue1096TaskStage"';
-END
-
-BeforeExecute
--- Firebird.3 Firebird3
-
-EXECUTE BLOCK AS BEGIN
-	IF (NOT EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'Issue1096TaskStage')) THEN
-		EXECUTE STATEMENT '
-			CREATE TABLE "Issue1096TaskStage"
-			(
-				"Id"     Int     NOT NULL,
-				"TaskId" Int     NOT NULL,
-				"Actual" BOOLEAN NOT NULL,
-
-				CONSTRAINT "PK_Issue1096TaskStage" PRIMARY KEY ("Id")
-			)
-		';
-END
-
-BeforeExecute
--- Firebird.3 Firebird3
 DECLARE @Id Integer -- Int32
 SET     @Id = 1
 DECLARE @TargetName VarChar(12) -- String
@@ -115,20 +68,4 @@ SELECT DISTINCT
 FROM
 	"Issue1096Task" "t"
 		LEFT JOIN "Issue1096TaskStage" "a_ActualStage" ON "t"."Id" = "a_ActualStage"."TaskId" AND "a_ActualStage"."Actual" = TRUE
-
-BeforeExecute
--- Firebird.3 Firebird3
-
-EXECUTE BLOCK AS BEGIN
-	IF (EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'Issue1096TaskStage')) THEN
-		EXECUTE STATEMENT 'DROP TABLE "Issue1096TaskStage"';
-END
-
-BeforeExecute
--- Firebird.3 Firebird3
-
-EXECUTE BLOCK AS BEGIN
-	IF (EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'Issue1096Task')) THEN
-		EXECUTE STATEMENT 'DROP TABLE "Issue1096Task"';
-END
 

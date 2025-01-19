@@ -1,29 +1,5 @@
 ﻿BeforeExecute
 -- SqlCe
-
-DROP TABLE [ValueConversion]
-
-BeforeExecute
--- SqlCe
-
-CREATE TABLE [ValueConversion]
-(
-	[Id]                      Int           NOT NULL,
-	[Value1]                  NVarChar(200)     NULL,
-	[Value2]                  NVarChar(200)     NULL,
-	[Enum]                    NVarChar(50)  NOT NULL,
-	[EnumNullable]            NVarChar(50)      NULL,
-	[EnumWithNull]            NVarChar(50)      NULL,
-	[EnumWithNullDeclarative] NVarChar(50)      NULL,
-	[BoolValue]               NVarChar(1)   NOT NULL,
-	[AnotherBoolValue]        NVarChar(1)   NOT NULL,
-	[DateTimeNullable]        DateTime          NULL,
-
-	CONSTRAINT [PK_ValueConversion] PRIMARY KEY ([Id])
-)
-
-BeforeExecute
--- SqlCe
 DECLARE @Id Int -- Int32
 SET     @Id = 1
 DECLARE @Value1 NVarChar(2) -- String
@@ -204,9 +180,4 @@ SELECT
 	COUNT(*) as [COUNT_1]
 FROM
 	[ValueConversion] [t1]
-
-BeforeExecute
--- SqlCe
-
-DROP TABLE [ValueConversion]
 

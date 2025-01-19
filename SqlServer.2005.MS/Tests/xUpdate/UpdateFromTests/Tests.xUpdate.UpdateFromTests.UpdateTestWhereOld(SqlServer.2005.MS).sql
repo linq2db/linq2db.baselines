@@ -1,77 +1,5 @@
 ﻿BeforeExecute
 -- SqlServer.2005.MS SqlServer.2005
-
-IF (OBJECT_ID(N'[UpdatedEntities]', N'U') IS NOT NULL)
-	DROP TABLE [UpdatedEntities]
-
-BeforeExecute
--- SqlServer.2005.MS SqlServer.2005
-
-IF (OBJECT_ID(N'[UpdatedEntities]', N'U') IS NULL)
-	CREATE TABLE [UpdatedEntities]
-	(
-		[id]         Int NOT NULL,
-		[Value1]     Int NOT NULL,
-		[Value2]     Int NOT NULL,
-		[Value3]     Int NOT NULL,
-		[RelationId] Int     NULL,
-
-		CONSTRAINT [PK_UpdatedEntities] PRIMARY KEY CLUSTERED ([id])
-	)
-
-BeforeExecute
--- SqlServer.2005.MS SqlServer.2005
-
-INSERT INTO [UpdatedEntities]
-(
-	[id],
-	[Value1],
-	[Value2],
-	[Value3],
-	[RelationId]
-)
-SELECT 0,1,1,3,0 UNION ALL
-SELECT 1,11,12,13,1 UNION ALL
-SELECT 2,21,22,23,2 UNION ALL
-SELECT 3,31,32,33,3
-
-BeforeExecute
--- SqlServer.2005.MS SqlServer.2005
-
-IF (OBJECT_ID(N'[NewEntities]', N'U') IS NOT NULL)
-	DROP TABLE [NewEntities]
-
-BeforeExecute
--- SqlServer.2005.MS SqlServer.2005
-
-IF (OBJECT_ID(N'[NewEntities]', N'U') IS NULL)
-	CREATE TABLE [NewEntities]
-	(
-		[id]     Int NOT NULL,
-		[Value1] Int NOT NULL,
-		[Value2] Int NOT NULL,
-		[Value3] Int NOT NULL,
-
-		CONSTRAINT [PK_NewEntities] PRIMARY KEY CLUSTERED ([id])
-	)
-
-BeforeExecute
--- SqlServer.2005.MS SqlServer.2005
-
-INSERT INTO [NewEntities]
-(
-	[id],
-	[Value1],
-	[Value2],
-	[Value3]
-)
-SELECT 0,0,0,0 UNION ALL
-SELECT 1,1,1,1 UNION ALL
-SELECT 2,2,2,2 UNION ALL
-SELECT 3,3,3,3
-
-BeforeExecute
--- SqlServer.2005.MS SqlServer.2005
 DECLARE @int1 Int -- Int32
 SET     @int1 = 11
 DECLARE @int2 Int -- Int32
@@ -103,16 +31,4 @@ SELECT
 	[v].[Value3]
 FROM
 	[UpdatedEntities] [v]
-
-BeforeExecute
--- SqlServer.2005.MS SqlServer.2005
-
-IF (OBJECT_ID(N'[NewEntities]', N'U') IS NOT NULL)
-	DROP TABLE [NewEntities]
-
-BeforeExecute
--- SqlServer.2005.MS SqlServer.2005
-
-IF (OBJECT_ID(N'[UpdatedEntities]', N'U') IS NOT NULL)
-	DROP TABLE [UpdatedEntities]
 

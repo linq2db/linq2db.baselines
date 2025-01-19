@@ -1,19 +1,6 @@
 ﻿BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
-DROP TABLE "ValueItem"
-
-BeforeExecute
--- SapHana.Odbc SapHanaOdbc
-
-CREATE COLUMN TABLE "ValueItem"
-(
-	"Value" Integer NOT NULL
-)
-
-BeforeExecute
--- SapHana.Odbc SapHanaOdbc
-
 INSERT INTO "ValueItem"
 (
 	"Value"
@@ -30,9 +17,4 @@ SELECT
 	"row_1"."Value"
 FROM
 	"ValueItem" "row_1"
-
-BeforeExecute
--- SapHana.Odbc SapHanaOdbc
-
-DROP TABLE "ValueItem"
 

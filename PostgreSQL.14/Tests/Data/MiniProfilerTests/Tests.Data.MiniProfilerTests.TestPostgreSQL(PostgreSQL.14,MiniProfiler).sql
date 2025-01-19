@@ -344,23 +344,5 @@ RollbackTransaction
 BeforeExecute
 --  PostgreSQL.9.5 PostgreSQL
 
-DROP TABLE IF EXISTS "TestPostgreSQLTypeName"
-
-BeforeExecute
---  PostgreSQL.9.5 PostgreSQL
-
-CREATE TABLE IF NOT EXISTS "TestPostgreSQLTypeName"
-(
-	"Column" circle     NULL
-)
-
-BeforeExecute
---  PostgreSQL.9.5 PostgreSQL
-
-DROP TABLE IF EXISTS "TestPostgreSQLTypeName"
-
-BeforeExecute
---  PostgreSQL.9.5 PostgreSQL
-
 SHOW server_version_num
 

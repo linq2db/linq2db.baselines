@@ -1,24 +1,6 @@
 ﻿BeforeExecute
 -- SqlServer.2012.MS SqlServer.2012
 
-IF (OBJECT_ID(N'[InsertTempTable]', N'U') IS NOT NULL)
-	DROP TABLE [InsertTempTable]
-
-BeforeExecute
--- SqlServer.2012.MS SqlServer.2012
-
-IF (OBJECT_ID(N'[InsertTempTable]', N'U') IS NULL)
-	CREATE TABLE [InsertTempTable]
-	(
-		[Action]    NVarChar(4000)     NULL,
-		[NewId]     Int            NOT NULL,
-		[DeletedId] Int                NULL,
-		[SourceId]  Int                NULL
-	)
-
-BeforeExecute
--- SqlServer.2012.MS SqlServer.2012
-
 DELETE [t1]
 FROM
 	[TestMerge1] [t1]
@@ -298,10 +280,4 @@ SELECT
 	[t1].[SourceId]
 FROM
 	[InsertTempTable] [t1]
-
-BeforeExecute
--- SqlServer.2012.MS SqlServer.2012
-
-IF (OBJECT_ID(N'[InsertTempTable]', N'U') IS NOT NULL)
-	DROP TABLE [InsertTempTable]
 

@@ -1,92 +1,6 @@
 ﻿BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
-DROP TABLE "InsertIssueTest"
-
-BeforeExecute
--- SapHana.Odbc SapHanaOdbc
-
-CREATE COLUMN TABLE "InsertIssueTest"
-(
-	"ID"          SmallInt NOT NULL,
-	"intDataType" Integer      NULL
-)
-
-BeforeExecute
--- SapHana.Odbc SapHanaOdbc
-DECLARE @ID  -- Int16
-SET     @ID = 0
-DECLARE @intDataType  -- Int32
-SET     @intDataType = 0
-
-INSERT INTO "InsertIssueTest"
-(
-	"ID",
-	"intDataType"
-)
-VALUES
-(
-	?,
-	?
-)
-
-BeforeExecute
--- SapHana.Odbc SapHanaOdbc
-DECLARE @ID  -- Int16
-SET     @ID = 0
-DECLARE @intDataType  -- Int32
-SET     @intDataType = 0
-
-INSERT INTO "InsertIssueTest"
-(
-	"ID",
-	"intDataType"
-)
-VALUES
-(
-	?,
-	?
-)
-
-BeforeExecute
--- SapHana.Odbc SapHanaOdbc
-DECLARE @ID  -- Int16
-SET     @ID = 1234
-DECLARE @intDataType  -- Int32
-SET     @intDataType = 1234
-
-INSERT INTO "InsertIssueTest"
-(
-	"ID",
-	"intDataType"
-)
-VALUES
-(
-	?,
-	?
-)
-
-BeforeExecute
--- SapHana.Odbc SapHanaOdbc
-DECLARE @ID  -- Int16
-SET     @ID = 1234
-DECLARE @intDataType  -- Int32
-SET     @intDataType = 1234
-
-INSERT INTO "InsertIssueTest"
-(
-	"ID",
-	"intDataType"
-)
-VALUES
-(
-	?,
-	?
-)
-
-BeforeExecute
--- SapHana.Odbc SapHanaOdbc
-
 INSERT INTO "InsertIssueTest"
 (
 	"ID",
@@ -138,9 +52,4 @@ SELECT
 	"t1"."intDataType"
 FROM
 	"InsertIssueTest" "t1"
-
-BeforeExecute
--- SapHana.Odbc SapHanaOdbc
-
-DROP TABLE "InsertIssueTest"
 

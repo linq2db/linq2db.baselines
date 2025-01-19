@@ -1,22 +1,5 @@
 ﻿BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-
-DROP TABLE IF EXISTS [ValuesTable]
-
-BeforeExecute
--- SQLite.Classic.MPM SQLite.Classic SQLite
-
-CREATE TABLE IF NOT EXISTS [ValuesTable]
-(
-	[Id]         BigInt  NOT NULL,
-	[SomeValue1] INTEGER NOT NULL,
-	[SomeValue2] INTEGER NOT NULL,
-
-	CONSTRAINT [PK_ValuesTable] PRIMARY KEY ([Id])
-)
-
-BeforeExecute
--- SQLite.Classic.MPM SQLite.Classic SQLite
 DECLARE @param  -- Int32
 SET     @param = 2
 
@@ -43,9 +26,4 @@ SELECT
 FROM
 	[ValuesTable] [t1]
 LIMIT 2
-
-BeforeExecute
--- SQLite.Classic.MPM SQLite.Classic SQLite
-
-DROP TABLE IF EXISTS [ValuesTable]
 

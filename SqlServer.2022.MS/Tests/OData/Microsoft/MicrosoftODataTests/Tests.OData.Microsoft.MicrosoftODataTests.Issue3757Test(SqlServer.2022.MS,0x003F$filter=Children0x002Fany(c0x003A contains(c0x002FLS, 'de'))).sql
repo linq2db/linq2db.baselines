@@ -1,43 +1,4 @@
 ﻿BeforeExecute
--- SqlServer.2022.MS SqlServer.2022
-
-DROP TABLE IF EXISTS [Issue3757Level1]
-
-BeforeExecute
--- SqlServer.2022.MS SqlServer.2022
-
-IF (OBJECT_ID(N'[Issue3757Level1]', N'U') IS NULL)
-	CREATE TABLE [Issue3757Level1]
-	(
-		[ID]     Int            NOT NULL,
-		[ValS]   NVarChar(4000)     NULL,
-		[ValB]   Bit                NULL,
-		[ValInt] Int                NULL,
-
-		CONSTRAINT [PK_Issue3757Level1] PRIMARY KEY CLUSTERED ([ID])
-	)
-
-BeforeExecute
--- SqlServer.2022.MS SqlServer.2022
-
-DROP TABLE IF EXISTS [Issue3757Level2]
-
-BeforeExecute
--- SqlServer.2022.MS SqlServer.2022
-
-IF (OBJECT_ID(N'[Issue3757Level2]', N'U') IS NULL)
-	CREATE TABLE [Issue3757Level2]
-	(
-		[ID]       Int            NOT NULL,
-		[ParentId] Int            NOT NULL,
-		[ValS]     NVarChar(4000)     NULL,
-		[ValB]     Bit                NULL,
-		[ValInt]   Int                NULL,
-
-		CONSTRAINT [PK_Issue3757Level2] PRIMARY KEY CLUSTERED ([ID])
-	)
-
-BeforeExecute
 BeginTransaction(RepeatableRead)
 BeforeExecute
 -- SqlServer.2022.MS SqlServer.2022
@@ -94,14 +55,4 @@ WHERE
 			[it].[ID] = [c_1].[ParentId] AND [it].[ValS] LIKE @TypedProperty ESCAPE N'~' AND
 			[it].[ValS] IS NOT NULL
 	)
-
-BeforeExecute
--- SqlServer.2022.MS SqlServer.2022
-
-DROP TABLE IF EXISTS [Issue3757Level2]
-
-BeforeExecute
--- SqlServer.2022.MS SqlServer.2022
-
-DROP TABLE IF EXISTS [Issue3757Level1]
 

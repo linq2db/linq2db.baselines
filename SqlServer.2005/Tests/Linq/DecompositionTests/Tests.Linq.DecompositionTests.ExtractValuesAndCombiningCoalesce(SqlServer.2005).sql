@@ -1,48 +1,6 @@
 ﻿BeforeExecute
 -- SqlServer.2005
 
-IF (OBJECT_ID(N'[Item]', N'U') IS NOT NULL)
-	DROP TABLE [Item]
-
-BeforeExecute
--- SqlServer.2005
-
-IF (OBJECT_ID(N'[Item]', N'U') IS NULL)
-	CREATE TABLE [Item]
-	(
-		[ItemId]   Int            NOT NULL,
-		[Kind]     Int            NOT NULL,
-		[ItemCode] NVarChar(4000)     NULL,
-		[Style]    NVarChar(4000)     NULL,
-		[Color]    NVarChar(4000)     NULL,
-
-		CONSTRAINT [PK_Item] PRIMARY KEY CLUSTERED ([ItemId])
-	)
-
-BeforeExecute
--- SqlServer.2005
-
-INSERT INTO [Item]
-(
-	[ItemId],
-	[Kind],
-	[ItemCode],
-	[Style],
-	[Color]
-)
-SELECT 1,1,N'01020102',N'Style1',N'White' UNION ALL
-SELECT 2,1,N'01020102',N'Style1',N'White' UNION ALL
-SELECT 3,1,N'01020102',N'Style1',N'White' UNION ALL
-SELECT 4,2,N'03020302',N'Style3',N'White' UNION ALL
-SELECT 5,2,N'01040104',N'Style1',N'Blue' UNION ALL
-SELECT 6,2,N'01010104',N'Style1',N'Black' UNION ALL
-SELECT 7,3,N'03020302',N'Style3',N'White' UNION ALL
-SELECT 8,3,N'01040104',N'Style1',N'Blue' UNION ALL
-SELECT 9,3,N'01010104',N'Style1',N'Black'
-
-BeforeExecute
--- SqlServer.2005
-
 SELECT
 	CASE
 		WHEN [t].[Kind] = 1 OR [t].[Kind] = 2 THEN 1
@@ -302,10 +260,4 @@ SELECT
 	[t1].[Color]
 FROM
 	[Item] [t1]
-
-BeforeExecute
--- SqlServer.2005
-
-IF (OBJECT_ID(N'[Item]', N'U') IS NOT NULL)
-	DROP TABLE [Item]
 

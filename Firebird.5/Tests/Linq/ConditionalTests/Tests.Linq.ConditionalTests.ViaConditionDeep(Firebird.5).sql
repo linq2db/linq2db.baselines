@@ -1,50 +1,6 @@
 ﻿BeforeExecute
 -- Firebird.5 Firebird4
 
-EXECUTE BLOCK AS BEGIN
-	IF (EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'ConditionalData')) THEN
-		EXECUTE STATEMENT 'DROP TABLE "ConditionalData"';
-END
-
-BeforeExecute
--- Firebird.5 Firebird4
-
-EXECUTE BLOCK AS BEGIN
-	IF (NOT EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'ConditionalData')) THEN
-		EXECUTE STATEMENT '
-			CREATE TABLE "ConditionalData"
-			(
-				"Id"         Int                                    NOT NULL,
-				"StringProp" VarChar(255) CHARACTER SET UNICODE_FSS,
-
-				CONSTRAINT "PK_ConditionalData" PRIMARY KEY ("Id")
-			)
-		';
-END
-
-BeforeExecute
--- Firebird.5 Firebird4
-
-INSERT INTO "ConditionalData"
-(
-	"Id",
-	"StringProp"
-)
-SELECT 1,CAST('String1' AS VarChar(255) CHARACTER SET UNICODE_FSS) FROM rdb$database UNION ALL
-SELECT 2,'String2' FROM rdb$database UNION ALL
-SELECT 3,NULL FROM rdb$database UNION ALL
-SELECT 4,'String4' FROM rdb$database UNION ALL
-SELECT 5,'String5' FROM rdb$database UNION ALL
-SELECT 6,NULL FROM rdb$database UNION ALL
-SELECT 7,'String7' FROM rdb$database UNION ALL
-SELECT 8,'String8' FROM rdb$database UNION ALL
-SELECT 9,NULL FROM rdb$database UNION ALL
-SELECT 10,'String10' FROM rdb$database UNION ALL
-SELECT 11,'-1' FROM rdb$database
-
-BeforeExecute
--- Firebird.5 Firebird4
-
 SELECT
 	"x"."Id",
 	CASE
@@ -81,12 +37,4 @@ SELECT
 	"t1"."StringProp"
 FROM
 	"ConditionalData" "t1"
-
-BeforeExecute
--- Firebird.5 Firebird4
-
-EXECUTE BLOCK AS BEGIN
-	IF (EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'ConditionalData')) THEN
-		EXECUTE STATEMENT 'DROP TABLE "ConditionalData"';
-END
 

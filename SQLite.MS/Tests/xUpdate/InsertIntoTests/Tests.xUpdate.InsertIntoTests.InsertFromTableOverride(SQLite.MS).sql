@@ -1,47 +1,6 @@
 ﻿BeforeExecute
 -- SQLite.MS SQLite
 
-DROP TABLE IF EXISTS [InsertTestClass]
-
-BeforeExecute
--- SQLite.MS SQLite
-
-CREATE TABLE IF NOT EXISTS [InsertTestClass]
-(
-	[Id]         INTEGER  NOT NULL PRIMARY KEY AUTOINCREMENT,
-	[Value]      INTEGER  NOT NULL,
-	[OtherValue] INTEGER      NULL
-)
-
-BeforeExecute
--- SQLite.MS SQLite
-
-INSERT INTO [InsertTestClass]
-(
-	[Value],
-	[OtherValue]
-)
-VALUES
-(1,100)
-
-BeforeExecute
--- SQLite.MS SQLite
-
-DROP TABLE IF EXISTS [InsertTestClassDest]
-
-BeforeExecute
--- SQLite.MS SQLite
-
-CREATE TABLE IF NOT EXISTS [InsertTestClassDest]
-(
-	[Id]         INTEGER  NOT NULL PRIMARY KEY AUTOINCREMENT,
-	[Value]      INTEGER  NOT NULL,
-	[OtherValue] INTEGER      NULL
-)
-
-BeforeExecute
--- SQLite.MS SQLite
-
 INSERT INTO [InsertTestClassDest]
 (
 	[Value],
@@ -74,14 +33,4 @@ SELECT
 FROM
 	[InsertTestClassDest] [t1]
 LIMIT 2
-
-BeforeExecute
--- SQLite.MS SQLite
-
-DROP TABLE IF EXISTS [InsertTestClassDest]
-
-BeforeExecute
--- SQLite.MS SQLite
-
-DROP TABLE IF EXISTS [InsertTestClass]
 

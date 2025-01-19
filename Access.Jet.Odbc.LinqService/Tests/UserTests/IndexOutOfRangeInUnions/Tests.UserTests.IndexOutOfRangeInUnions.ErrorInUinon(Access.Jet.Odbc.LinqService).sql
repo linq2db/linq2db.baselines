@@ -1,54 +1,6 @@
 ﻿BeforeExecute
 -- Access.Jet.Odbc AccessODBC
 
-DROP TABLE [O1]
-
-BeforeExecute
--- Access.Jet.Odbc AccessODBC
-
-CREATE TABLE [O1]
-(
-	[DocEntry]    Int           NOT NULL,
-	[BplId]       Int           NOT NULL,
-	[ChaveAcesso] NVarChar(255)     NULL,
-	[DocStatus]   NVarChar(255)     NULL
-)
-
-BeforeExecute
--- Access.Jet.Odbc AccessODBC
-
-DROP TABLE [O2]
-
-BeforeExecute
--- Access.Jet.Odbc AccessODBC
-
-CREATE TABLE [O2]
-(
-	[DocEntry]    Int           NOT NULL,
-	[BplId]       Int           NOT NULL,
-	[ChaveAcesso] NVarChar(255)     NULL,
-	[DocStatus]   NVarChar(255)     NULL
-)
-
-BeforeExecute
--- Access.Jet.Odbc AccessODBC
-
-DROP TABLE [O3]
-
-BeforeExecute
--- Access.Jet.Odbc AccessODBC
-
-CREATE TABLE [O3]
-(
-	[DocEntry]    Int           NOT NULL,
-	[BplId]       Int           NOT NULL,
-	[ChaveAcesso] NVarChar(255)     NULL,
-	[DocStatus]   NVarChar(255)     NULL
-)
-
-BeforeExecute
--- Access.Jet.Odbc AccessODBC
-
 SELECT
 	[doSap].[DocEntry],
 	IIF([doSap].[DocStatus] = 'O', 'Aberto', 'Fechado'),
@@ -69,19 +21,4 @@ SELECT
 	CStr('Manual/Externo')
 FROM
 	[O3] [doSap_2]
-
-BeforeExecute
--- Access.Jet.Odbc AccessODBC
-
-DROP TABLE [O3]
-
-BeforeExecute
--- Access.Jet.Odbc AccessODBC
-
-DROP TABLE [O2]
-
-BeforeExecute
--- Access.Jet.Odbc AccessODBC
-
-DROP TABLE [O1]
 

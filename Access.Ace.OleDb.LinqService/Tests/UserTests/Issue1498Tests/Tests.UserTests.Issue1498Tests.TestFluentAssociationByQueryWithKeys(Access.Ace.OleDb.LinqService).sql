@@ -1,39 +1,5 @@
 ﻿BeforeExecute
 -- Access.Ace.OleDb AccessOleDb
-
-DROP TABLE [Topic]
-
-BeforeExecute
--- Access.Ace.OleDb AccessOleDb
-
-CREATE TABLE [Topic]
-(
-	[Id]    Int           NOT NULL,
-	[Title] NVarChar(255)     NULL,
-	[Text]  NVarChar(255)     NULL,
-
-	CONSTRAINT [PK_Topic] PRIMARY KEY CLUSTERED ([Id])
-)
-
-BeforeExecute
--- Access.Ace.OleDb AccessOleDb
-
-DROP TABLE [Message]
-
-BeforeExecute
--- Access.Ace.OleDb AccessOleDb
-
-CREATE TABLE [Message]
-(
-	[Id]      Int           NOT NULL,
-	[TopicId] Int           NOT NULL,
-	[Text]    NVarChar(255)     NULL,
-
-	CONSTRAINT [PK_Message] PRIMARY KEY CLUSTERED ([Id])
-)
-
-BeforeExecute
--- Access.Ace.OleDb AccessOleDb
 DECLARE @Id Integer -- Int32
 SET     @Id = 6
 DECLARE @Title VarWChar(5) -- String
@@ -126,14 +92,4 @@ FROM
 	[Topic] [x]
 WHERE
 	[x].[Id] = 6
-
-BeforeExecute
--- Access.Ace.OleDb AccessOleDb
-
-DROP TABLE [Message]
-
-BeforeExecute
--- Access.Ace.OleDb AccessOleDb
-
-DROP TABLE [Topic]
 

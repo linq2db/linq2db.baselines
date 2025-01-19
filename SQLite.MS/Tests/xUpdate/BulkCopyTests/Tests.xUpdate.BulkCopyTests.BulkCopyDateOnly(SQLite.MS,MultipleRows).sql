@@ -1,19 +1,6 @@
 ﻿BeforeExecute
 -- SQLite.MS SQLite
 
-DROP TABLE IF EXISTS [DateOnlyTable]
-
-BeforeExecute
--- SQLite.MS SQLite
-
-CREATE TABLE IF NOT EXISTS [DateOnlyTable]
-(
-	[Date] Date NOT NULL
-)
-
-BeforeExecute
--- SQLite.MS SQLite
-
 INSERT INTO [DateOnlyTable]
 (
 	[Date]
@@ -29,9 +16,4 @@ SELECT
 FROM
 	[DateOnlyTable] [t1]
 LIMIT 2
-
-BeforeExecute
--- SQLite.MS SQLite
-
-DROP TABLE IF EXISTS [DateOnlyTable]
 

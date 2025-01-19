@@ -1,21 +1,5 @@
 ﻿BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
-
-DROP TABLE IF EXISTS "TableWithIdentity"
-
-BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
-
-CREATE TABLE IF NOT EXISTS "TableWithIdentity"
-(
-	"Id"    SERIAL  NOT NULL,
-	"Value" Int     NOT NULL,
-
-	CONSTRAINT "PK_TableWithIdentity" PRIMARY KEY ("Id")
-)
-
-BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
 DECLARE @Value Integer -- Int32
 SET     @Value = 1
 
@@ -47,9 +31,4 @@ SELECT
 FROM
 	"TableWithIdentity" t1
 LIMIT 2
-
-BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
-
-DROP TABLE IF EXISTS "TableWithIdentity"
 

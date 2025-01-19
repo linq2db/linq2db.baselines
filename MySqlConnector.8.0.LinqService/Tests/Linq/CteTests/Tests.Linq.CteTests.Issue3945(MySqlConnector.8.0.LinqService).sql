@@ -1,21 +1,6 @@
 ﻿BeforeExecute
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 
-DROP TABLE IF EXISTS `TestFolder`
-
-BeforeExecute
--- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
-CREATE TABLE IF NOT EXISTS `TestFolder`
-(
-	`Id`       CHAR(36)      NOT NULL,
-	`Label`    VARCHAR(4000)     NULL,
-	`ParentId` CHAR(36)          NULL
-)
-
-BeforeExecute
--- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
 INSERT INTO `TestFolder`
 (
 	`Id`,
@@ -38,9 +23,4 @@ SELECT
 FROM
 	`CTE` `child`
 		INNER JOIN `TestFolder` `parent` ON `child`.`ParentId` = `parent`.`Id`
-
-BeforeExecute
--- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
-DROP TABLE IF EXISTS `TestFolder`
 

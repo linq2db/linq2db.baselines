@@ -1,22 +1,6 @@
 ﻿BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
-DROP TABLE "ReviewIndexes"
-
-BeforeExecute
--- SapHana.Odbc SapHanaOdbc
-
-CREATE COLUMN TABLE "ReviewIndexes"
-(
-	"Id"    Integer       NOT NULL,
-	"Value" NVarChar(255)     NULL,
-
-	PRIMARY KEY ("Id")
-)
-
-BeforeExecute
--- SapHana.Odbc SapHanaOdbc
-
 MERGE INTO "ReviewIndexes" "Target"
 USING (
 	SELECT 1 AS "source_Id" FROM DUMMY) "Source"
@@ -27,9 +11,4 @@ UPDATE
 SET
 	"Id" = 2,
 	"Value" = '3'
-
-BeforeExecute
--- SapHana.Odbc SapHanaOdbc
-
-DROP TABLE "ReviewIndexes"
 

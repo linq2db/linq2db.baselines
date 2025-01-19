@@ -1,40 +1,5 @@
 ﻿BeforeExecute
 -- Firebird.5 Firebird4
-
-EXECUTE BLOCK AS BEGIN
-	IF (EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'DateOnlyTable')) THEN
-		EXECUTE STATEMENT 'DROP TABLE "DateOnlyTable"';
-END
-
-BeforeExecute
--- Firebird.5 Firebird4
-
-EXECUTE BLOCK AS BEGIN
-	IF (NOT EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'DateOnlyTable')) THEN
-		EXECUTE STATEMENT '
-			CREATE TABLE "DateOnlyTable"
-			(
-				"Id"             Int  NOT NULL,
-				"Column"         Date NOT NULL,
-				"ColumnNullable" Date
-			)
-		';
-END
-
-BeforeExecute
--- Firebird.5 Firebird4
-
-INSERT INTO "DateOnlyTable"
-(
-	"Id",
-	"Column",
-	"ColumnNullable"
-)
-SELECT 1,CAST('1950-01-01' AS date),NULL FROM rdb$database UNION ALL
-SELECT 2,CAST('2020-02-29' AS date),CAST('2200-01-01' AS date) FROM rdb$database
-
-BeforeExecute
--- Firebird.5 Firebird4
 DECLARE @Column Date
 SET     @Column = CAST('2020-02-29' AS date)
 DECLARE @ColumnNullable Date
@@ -182,12 +147,4 @@ FROM
 	"DateOnlyTable" "t1"
 ORDER BY
 	"t1"."Id"
-
-BeforeExecute
--- Firebird.5 Firebird4
-
-EXECUTE BLOCK AS BEGIN
-	IF (EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'DateOnlyTable')) THEN
-		EXECUTE STATEMENT 'DROP TABLE "DateOnlyTable"';
-END
 

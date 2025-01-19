@@ -1,22 +1,4 @@
 ﻿BeforeExecute
--- SqlServer.SA.MS SqlServer.2019
-
-DROP TABLE IF EXISTS [ConcurrencyAutoIncrement]
-
-BeforeExecute
--- SqlServer.SA.MS SqlServer.2019
-
-IF (OBJECT_ID(N'[ConcurrencyAutoIncrement]', N'U') IS NULL)
-	CREATE TABLE [ConcurrencyAutoIncrement]
-	(
-		[Id]    Int            NOT NULL,
-		[Stamp] Int            NOT NULL,
-		[Value] NVarChar(4000)     NULL,
-
-		CONSTRAINT [PK_ConcurrencyAutoIncrement] PRIMARY KEY CLUSTERED ([Id])
-	)
-
-BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019 (asynchronously)
 DECLARE @Id Int -- Int32
 SET     @Id = 1
@@ -174,9 +156,4 @@ SELECT
 	[t1].[Value]
 FROM
 	[ConcurrencyAutoIncrement] [t1]
-
-BeforeExecute
--- SqlServer.SA.MS SqlServer.2019
-
-DROP TABLE IF EXISTS [ConcurrencyAutoIncrement]
 

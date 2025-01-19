@@ -1,35 +1,6 @@
 ﻿BeforeExecute
 -- ClickHouse.Client ClickHouse
 
-DROP TABLE IF EXISTS ByteTable
-
-BeforeExecute
--- ClickHouse.Client ClickHouse
-
-CREATE TABLE IF NOT EXISTS ByteTable
-(
-	Id             Int32,
-	Column         UInt8,
-	ColumnNullable Nullable(UInt8)
-)
-ENGINE = Memory()
-
-BeforeExecute
--- ClickHouse.Client ClickHouse
-
-INSERT INTO ByteTable
-(
-	Id,
-	Column,
-	ColumnNullable
-)
-VALUES
-(1,toUInt8(1),NULL),
-(2,toUInt8(255),toUInt8(2))
-
-BeforeExecute
--- ClickHouse.Client ClickHouse
-
 SELECT
 	r.Id,
 	r.Column,
@@ -155,9 +126,4 @@ FROM
 	ByteTable t1
 ORDER BY
 	t1.Id
-
-BeforeExecute
--- ClickHouse.Client ClickHouse
-
-DROP TABLE IF EXISTS ByteTable
 

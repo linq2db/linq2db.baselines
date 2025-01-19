@@ -1,24 +1,6 @@
 ﻿BeforeExecute
 -- PostgreSQL.15 PostgreSQL
 
-DROP TABLE IF EXISTS "Issue3674Tests"
-
-BeforeExecute
--- PostgreSQL.15 PostgreSQL
-
-CREATE TABLE IF NOT EXISTS "Issue3674Tests"
-(
-	"Code"         text NOT NULL,
-	"DIM_Company"  text     NULL,
-	"DIM_Branch"   text     NULL,
-	"DIM_Location" text     NULL,
-	"DIM_MSegment" text     NULL,
-	"DIM_Make"     text     NULL
-)
-
-BeforeExecute
--- PostgreSQL.15 PostgreSQL
-
 SELECT
 	p."Code",
 	p."DIM_Company",
@@ -36,9 +18,4 @@ WHERE
 	(p."DIM_MSegment" IS NULL OR p."DIM_MSegment" = '' OR p."DIM_MSegment" = '1' OR p."DIM_MSegment" = '2' OR p."DIM_MSegment" = '3' OR p."DIM_MSegment" = '4' OR p."DIM_MSegment" = '5' OR p."DIM_MSegment" = '6' OR p."DIM_MSegment" = '7' OR p."DIM_MSegment" = '8' OR p."DIM_MSegment" = '9' OR p."DIM_MSegment" = '0') AND
 	(p."DIM_Make" IS NULL OR p."DIM_Make" = '' OR p."DIM_Make" = '1' OR p."DIM_Make" = '2' OR p."DIM_Make" = '3' OR p."DIM_Make" = '4' OR p."DIM_Make" = '5' OR p."DIM_Make" = '6' OR p."DIM_Make" = '7' OR p."DIM_Make" = '8' OR p."DIM_Make" = '9' OR p."DIM_Make" = '0' OR p."DIM_Make" = '1' OR p."DIM_Make" = '2' OR p."DIM_Make" = '3' OR p."DIM_Make" = '4' OR p."DIM_Make" = '5' OR p."DIM_Make" = '6' OR p."DIM_Make" = '7' OR p."DIM_Make" = '8' OR p."DIM_Make" = '9' OR p."DIM_Make" = '0' OR p."DIM_Make" = '1' OR p."DIM_Make" = '2' OR p."DIM_Make" = '3' OR p."DIM_Make" = '4' OR p."DIM_Make" = '5' OR p."DIM_Make" = '6' OR p."DIM_Make" = '7' OR p."DIM_Make" = '8' OR p."DIM_Make" = '9' OR p."DIM_Make" = '0' OR p."DIM_Make" = '1' OR p."DIM_Make" = '2' OR p."DIM_Make" = '3' OR p."DIM_Make" = '4' OR p."DIM_Make" = '5' OR p."DIM_Make" = '6' OR p."DIM_Make" = '7' OR p."DIM_Make" = '8' OR p."DIM_Make" = '9' OR p."DIM_Make" = '0' OR p."DIM_Make" = '1' OR p."DIM_Make" = '2' OR p."DIM_Make" = '3' OR p."DIM_Make" = '4' OR p."DIM_Make" = '5' OR p."DIM_Make" = '6' OR p."DIM_Make" = '7' OR p."DIM_Make" = '8' OR p."DIM_Make" = '9' OR p."DIM_Make" = '0' OR p."DIM_Make" = '1' OR p."DIM_Make" = '2' OR p."DIM_Make" = '3' OR p."DIM_Make" = '4' OR p."DIM_Make" = '5' OR p."DIM_Make" = '6' OR p."DIM_Make" = '7' OR p."DIM_Make" = '8' OR p."DIM_Make" = '9' OR p."DIM_Make" = '0' OR p."DIM_Make" = '1' OR p."DIM_Make" = '2' OR p."DIM_Make" = '3' OR p."DIM_Make" = '4' OR p."DIM_Make" = '5' OR p."DIM_Make" = '6' OR p."DIM_Make" = '7' OR p."DIM_Make" = '8' OR p."DIM_Make" = '9' OR p."DIM_Make" = '0' OR p."DIM_Make" = '1' OR p."DIM_Make" = '2' OR p."DIM_Make" = '3' OR p."DIM_Make" = '4' OR p."DIM_Make" = '5' OR p."DIM_Make" = '6' OR p."DIM_Make" = '7' OR p."DIM_Make" = '8' OR p."DIM_Make" = '9' OR p."DIM_Make" = '0' OR p."DIM_Make" = '1' OR p."DIM_Make" = '2' OR p."DIM_Make" = '3' OR p."DIM_Make" = '4' OR p."DIM_Make" = '5' OR p."DIM_Make" = '6' OR p."DIM_Make" = '7' OR p."DIM_Make" = '8' OR p."DIM_Make" = '9' OR p."DIM_Make" = '0')
 LIMIT 1
-
-BeforeExecute
--- PostgreSQL.15 PostgreSQL
-
-DROP TABLE IF EXISTS "Issue3674Tests"
 

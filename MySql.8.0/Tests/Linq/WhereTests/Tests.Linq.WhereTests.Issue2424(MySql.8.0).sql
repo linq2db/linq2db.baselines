@@ -1,33 +1,6 @@
 ﻿BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
 
-DROP TABLE IF EXISTS `Isue2424Table`
-
-BeforeExecute
--- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
-CREATE TABLE IF NOT EXISTS `Isue2424Table`
-(
-	`Id`       INT           NOT NULL,
-	`StrValue` VARCHAR(4000)     NULL
-)
-
-BeforeExecute
--- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
-INSERT INTO `Isue2424Table`
-(
-	`Id`,
-	`StrValue`
-)
-VALUES
-(1,'1'),
-(3,'3'),
-(5,'5')
-
-BeforeExecute
--- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
 SELECT
 	`i`.`Id`,
 	`i`.`StrValue`
@@ -288,9 +261,4 @@ FROM
 WHERE
 	`i`.`StrValue` <= '1'
 LIMIT 2
-
-BeforeExecute
--- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
-DROP TABLE IF EXISTS `Isue2424Table`
 

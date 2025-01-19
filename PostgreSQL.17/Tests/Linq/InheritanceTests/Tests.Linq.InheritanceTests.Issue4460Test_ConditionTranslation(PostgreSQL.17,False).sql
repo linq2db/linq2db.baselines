@@ -1,22 +1,5 @@
 ﻿BeforeExecute
 -- PostgreSQL.17 PostgreSQL.15 PostgreSQL
-
-DROP TABLE IF EXISTS "Base"
-
-BeforeExecute
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
-
-CREATE TABLE IF NOT EXISTS "Base"
-(
-	"Code"   text        NULL,
-	"Id"     Int     NOT NULL,
-	"Name"   text        NULL,
-	"IsMale" Boolean     NULL,
-	"Age"    Int         NULL
-)
-
-BeforeExecute
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
 DECLARE @Code Text(5) -- String
 SET     @Code = 'Child'
 DECLARE @Id Integer -- Int32
@@ -86,9 +69,4 @@ WHERE
 	END
 ORDER BY
 	e."Id"
-
-BeforeExecute
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
-
-DROP TABLE IF EXISTS "Base"
 

@@ -1,30 +1,6 @@
 ﻿BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
-BEGIN
-	DECLARE CONTINUE HANDLER FOR SQLSTATE '42704' BEGIN END;
-	EXECUTE IMMEDIATE 'DROP TABLE "Dto"';
-END
-
-BeforeExecute
--- DB2 DB2.LUW DB2LUW
-
-BEGIN
-	DECLARE CONTINUE HANDLER FOR SQLSTATE '42710' BEGIN END;
-	EXECUTE IMMEDIATE '
-		CREATE TABLE "Dto"
-		(
-			"id"        Int           NOT NULL,
-			"name"      NVarChar(255)     NULL,
-			"parent_id" Int               NULL,
-			"FullName"  NVarChar(255)     NULL
-		)
-	';
-END
-
-BeforeExecute
--- DB2 DB2.LUW DB2LUW
-
 WITH "d"
 (
 	"FullName",
@@ -66,12 +42,4 @@ SELECT
 	"t2"."FullName"
 FROM
 	"d" "t2"
-
-BeforeExecute
--- DB2 DB2.LUW DB2LUW
-
-BEGIN
-	DECLARE CONTINUE HANDLER FOR SQLSTATE '42704' BEGIN END;
-	EXECUTE IMMEDIATE 'DROP TABLE "Dto"';
-END
 

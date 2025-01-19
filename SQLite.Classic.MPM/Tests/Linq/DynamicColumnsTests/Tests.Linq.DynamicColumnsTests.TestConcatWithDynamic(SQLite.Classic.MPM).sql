@@ -1,62 +1,6 @@
 ﻿BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
-DROP TABLE IF EXISTS [M998_T066]
-
-BeforeExecute
--- SQLite.Classic.MPM SQLite.Classic SQLite
-
-CREATE TABLE IF NOT EXISTS [M998_T066]
-(
-	[F066_04] NVarChar(255)     NULL,
-	[F066_05] NVarChar(255)     NULL,
-	[F066_00] NVarChar(255)     NULL
-)
-
-BeforeExecute
--- SQLite.Classic.MPM SQLite.Classic SQLite
-
-INSERT INTO [M998_T066]
-(
-	[F066_04],
-	[F066_05],
-	[F066_00]
-)
-VALUES
-('Desc1','v1',NULL),
-('Desc2','v2',NULL)
-
-BeforeExecute
--- SQLite.Classic.MPM SQLite.Classic SQLite
-
-DROP TABLE IF EXISTS [M998_T000]
-
-BeforeExecute
--- SQLite.Classic.MPM SQLite.Classic SQLite
-
-CREATE TABLE IF NOT EXISTS [M998_T000]
-(
-	[F066_04] NVarChar(255)     NULL,
-	[F066_05] NVarChar(255)     NULL,
-	[F066_00] NVarChar(255)     NULL
-)
-
-BeforeExecute
--- SQLite.Classic.MPM SQLite.Classic SQLite
-
-INSERT INTO [M998_T000]
-(
-	[F066_04],
-	[F066_05],
-	[F066_00]
-)
-VALUES
-('Desc3',NULL,'v3'),
-('Desc4',NULL,'v4')
-
-BeforeExecute
--- SQLite.Classic.MPM SQLite.Classic SQLite
-
 SELECT
 	[t1].[F066_04],
 	[t1].[F066_05],
@@ -70,14 +14,4 @@ SELECT
 	[t2].[F066_00]
 FROM
 	[M998_T000] [t2]
-
-BeforeExecute
--- SQLite.Classic.MPM SQLite.Classic SQLite
-
-DROP TABLE IF EXISTS [M998_T000]
-
-BeforeExecute
--- SQLite.Classic.MPM SQLite.Classic SQLite
-
-DROP TABLE IF EXISTS [M998_T066]
 

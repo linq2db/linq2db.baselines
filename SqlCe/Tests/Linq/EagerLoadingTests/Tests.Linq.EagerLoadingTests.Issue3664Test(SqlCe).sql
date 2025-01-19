@@ -1,20 +1,5 @@
 ﻿BeforeExecute
 -- SqlCe
-
-DROP TABLE [Test3664]
-
-BeforeExecute
--- SqlCe
-
-CREATE TABLE [Test3664]
-(
-	[Id] Int NOT NULL,
-
-	CONSTRAINT [PK_Test3664] PRIMARY KEY ([Id])
-)
-
-BeforeExecute
--- SqlCe
 DECLARE @Id Int -- Int32
 SET     @Id = 1
 
@@ -26,33 +11,6 @@ VALUES
 (
 	@Id
 )
-
-BeforeExecute
--- SqlCe
-
-DROP TABLE [Test3664Item]
-
-BeforeExecute
--- SqlCe
-
-CREATE TABLE [Test3664Item]
-(
-	[Id]     Int NOT NULL,
-	[TestId] Int NOT NULL,
-
-	CONSTRAINT [PK_Test3664Item] PRIMARY KEY ([Id])
-)
-
-BeforeExecute
--- SqlCe
-
-INSERT INTO [Test3664Item]
-(
-	[Id],
-	[TestId]
-)
-SELECT 11,1 UNION ALL
-SELECT 12,1
 
 BeforeExecute
 BeginTransaction(RepeatableRead)
@@ -107,14 +65,4 @@ SELECT
 	[t1].[Id]
 FROM
 	[Test3664] [t1]
-
-BeforeExecute
--- SqlCe
-
-DROP TABLE [Test3664Item]
-
-BeforeExecute
--- SqlCe
-
-DROP TABLE [Test3664]
 

@@ -1,58 +1,4 @@
 ﻿BeforeExecute
--- SQLite.Classic.MPM SQLite.Classic SQLite
-
-DROP TABLE IF EXISTS [Table2_3014]
-
-BeforeExecute
--- SQLite.Classic.MPM SQLite.Classic SQLite
-
-CREATE TABLE IF NOT EXISTS [Table2_3014]
-(
-	[Id]       INTEGER NOT NULL,
-	[ParentId] INTEGER NOT NULL,
-	[IsTrue]   Bit         NULL
-)
-
-BeforeExecute
--- SQLite.Classic.MPM SQLite.Classic SQLite
-
-INSERT INTO [Table2_3014]
-(
-	[Id],
-	[ParentId],
-	[IsTrue]
-)
-VALUES
-(1,0,1)
-
-BeforeExecute
--- SQLite.Classic.MPM SQLite.Classic SQLite
-
-DROP TABLE IF EXISTS [TableStatus_3014]
-
-BeforeExecute
--- SQLite.Classic.MPM SQLite.Classic SQLite
-
-CREATE TABLE IF NOT EXISTS [TableStatus_3014]
-(
-	[StatusId]   INTEGER       NOT NULL,
-	[StatusName] NVarChar(255) NOT NULL,
-
-	CONSTRAINT [PK_TableStatus_3014] PRIMARY KEY ([StatusId])
-)
-
-BeforeExecute
--- SQLite.Classic.MPM SQLite.Classic SQLite
-
-INSERT INTO [TableStatus_3014]
-(
-	[StatusId],
-	[StatusName]
-)
-VALUES
-(1,'Sample')
-
-BeforeExecute
 BeginTransaction(Serializable)
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
@@ -135,14 +81,4 @@ SELECT
 	[e].[Id]
 FROM
 	[Table2_3014] [e]
-
-BeforeExecute
--- SQLite.Classic.MPM SQLite.Classic SQLite
-
-DROP TABLE IF EXISTS [TableStatus_3014]
-
-BeforeExecute
--- SQLite.Classic.MPM SQLite.Classic SQLite
-
-DROP TABLE IF EXISTS [Table2_3014]
 

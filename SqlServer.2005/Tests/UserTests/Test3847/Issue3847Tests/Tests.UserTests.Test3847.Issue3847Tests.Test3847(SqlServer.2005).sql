@@ -1,21 +1,6 @@
 ﻿BeforeExecute
 -- SqlServer.2005
 
-IF (OBJECT_ID(N'[Test3847_OutfeedTransportOrder]', N'U') IS NOT NULL)
-	DROP TABLE [Test3847_OutfeedTransportOrder]
-
-BeforeExecute
--- SqlServer.2005
-
-IF (OBJECT_ID(N'[Test3847_OutfeedTransportOrder]', N'U') IS NULL)
-	CREATE TABLE [Test3847_OutfeedTransportOrder]
-	(
-		[Id] UniqueIdentifier NOT NULL
-	)
-
-BeforeExecute
--- SqlServer.2005
-
 SELECT
 	[outfeed].[Id],
 	(
@@ -44,10 +29,4 @@ SELECT
 	)
 FROM
 	[Test3847_OutfeedTransportOrder] [outfeed]
-
-BeforeExecute
--- SqlServer.2005
-
-IF (OBJECT_ID(N'[Test3847_OutfeedTransportOrder]', N'U') IS NOT NULL)
-	DROP TABLE [Test3847_OutfeedTransportOrder]
 

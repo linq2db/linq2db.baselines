@@ -1,54 +1,5 @@
 ﻿BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
-
-DROP TABLE IF EXISTS [T1]
-
-BeforeExecute
--- SqlServer.SA.MS SqlServer.2019
-
-IF (OBJECT_ID(N'[T1]', N'U') IS NULL)
-	CREATE TABLE [T1]
-	(
-		[InstrumentId]         Int            NOT NULL,
-		[InstrumentCode]       NVarChar(4000)     NULL,
-		[CreateDate]           DateTime2      NOT NULL,
-		[SourceInstrumentCode] NVarChar(4000)     NULL,
-
-		CONSTRAINT [PK_T1] PRIMARY KEY CLUSTERED ([InstrumentId])
-	)
-
-BeforeExecute
--- SqlServer.SA.MS SqlServer.2019
-
-DROP TABLE IF EXISTS [T2]
-
-BeforeExecute
--- SqlServer.SA.MS SqlServer.2019
-
-IF (OBJECT_ID(N'[T2]', N'U') IS NULL)
-	CREATE TABLE [T2]
-	(
-		[InstrumentId] Int NOT NULL,
-		[IndexId]      Int NOT NULL
-	)
-
-BeforeExecute
--- SqlServer.SA.MS SqlServer.2019
-
-DROP TABLE IF EXISTS [T3]
-
-BeforeExecute
--- SqlServer.SA.MS SqlServer.2019
-
-IF (OBJECT_ID(N'[T3]', N'U') IS NULL)
-	CREATE TABLE [T3]
-	(
-		[InstrumentId] Int NOT NULL,
-		[IndexId]      Int NOT NULL
-	)
-
-BeforeExecute
--- SqlServer.SA.MS SqlServer.2019
 DECLARE @InstrumentId Int -- Int32
 SET     @InstrumentId = 1
 DECLARE @IndexId Int -- Int32
@@ -213,19 +164,4 @@ FROM
 	) [t5]
 ORDER BY
 	[t5].[SourceInstrumentCode]
-
-BeforeExecute
--- SqlServer.SA.MS SqlServer.2019
-
-DROP TABLE IF EXISTS [T3]
-
-BeforeExecute
--- SqlServer.SA.MS SqlServer.2019
-
-DROP TABLE IF EXISTS [T2]
-
-BeforeExecute
--- SqlServer.SA.MS SqlServer.2019
-
-DROP TABLE IF EXISTS [T1]
 

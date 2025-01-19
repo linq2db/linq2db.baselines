@@ -1,23 +1,6 @@
 ﻿BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
-DROP TABLE IF EXISTS Dto
-
-BeforeExecute
--- ClickHouse.MySql ClickHouse
-
-CREATE TABLE IF NOT EXISTS Dto
-(
-	id        Int32,
-	name      Nullable(String),
-	parent_id Nullable(Int32),
-	FullName  Nullable(String)
-)
-ENGINE = Memory()
-
-BeforeExecute
--- ClickHouse.MySql ClickHouse
-
 WITH RECURSIVE d AS
 (
 	SELECT
@@ -46,9 +29,4 @@ SELECT
 	t2.FullName
 FROM
 	d t2
-
-BeforeExecute
--- ClickHouse.MySql ClickHouse
-
-DROP TABLE IF EXISTS Dto
 

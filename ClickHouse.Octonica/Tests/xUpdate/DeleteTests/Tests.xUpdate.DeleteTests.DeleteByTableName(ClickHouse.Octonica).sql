@@ -1,27 +1,6 @@
 ﻿BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
-DROP TABLE IF EXISTS xxPerson
-
-BeforeExecute
--- ClickHouse.Octonica ClickHouse
-
-CREATE TABLE IF NOT EXISTS xxPerson
-(
-	FirstName  String,
-	PersonID   Int32,
-	LastName   String,
-	MiddleName Nullable(String),
-	Gender     FixedString(1),
-
-	PRIMARY KEY (PersonID)
-)
-ENGINE = MergeTree()
-ORDER BY PersonID
-
-BeforeExecute
--- ClickHouse.Octonica ClickHouse
-
 INSERT INTO xxPerson
 (
 	FirstName,
@@ -75,9 +54,4 @@ SELECT
 	COUNT(*)
 FROM
 	xxPerson t1
-
-BeforeExecute
--- ClickHouse.Octonica ClickHouse
-
-DROP TABLE IF EXISTS xxPerson
 

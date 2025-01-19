@@ -1,23 +1,5 @@
 ﻿BeforeExecute
 -- SqlServer.2017.MS SqlServer.2017
-
-DROP TABLE IF EXISTS [ValuesTable]
-
-BeforeExecute
--- SqlServer.2017.MS SqlServer.2017
-
-IF (OBJECT_ID(N'[ValuesTable]', N'U') IS NULL)
-	CREATE TABLE [ValuesTable]
-	(
-		[Id]         BigInt NOT NULL,
-		[SomeValue1] Int    NOT NULL,
-		[SomeValue2] Int    NOT NULL,
-
-		CONSTRAINT [PK_ValuesTable] PRIMARY KEY CLUSTERED ([Id])
-	)
-
-BeforeExecute
--- SqlServer.2017.MS SqlServer.2017
 DECLARE @param Int -- Int32
 SET     @param = 2
 
@@ -43,9 +25,4 @@ SELECT TOP (2)
 	[t1].[SomeValue2]
 FROM
 	[ValuesTable] [t1]
-
-BeforeExecute
--- SqlServer.2017.MS SqlServer.2017
-
-DROP TABLE IF EXISTS [ValuesTable]
 

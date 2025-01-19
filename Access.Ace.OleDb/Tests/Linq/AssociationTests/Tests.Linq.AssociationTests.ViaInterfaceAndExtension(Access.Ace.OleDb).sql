@@ -1,35 +1,6 @@
 ﻿BeforeExecute
 -- Access.Ace.OleDb AccessOleDb
 
-DROP TABLE [MainEntity]
-
-BeforeExecute
--- Access.Ace.OleDb AccessOleDb
-
-CREATE TABLE [MainEntity]
-(
-	[Id] Int NOT NULL,
-
-	CONSTRAINT [PK_MainEntity] PRIMARY KEY CLUSTERED ([Id])
-)
-
-BeforeExecute
--- Access.Ace.OleDb AccessOleDb
-
-DROP TABLE [SubEntity]
-
-BeforeExecute
--- Access.Ace.OleDb AccessOleDb
-
-CREATE TABLE [SubEntity]
-(
-	[Id]           Int NOT NULL,
-	[MainEntityId] Int NOT NULL
-)
-
-BeforeExecute
--- Access.Ace.OleDb AccessOleDb
-
 SELECT
 	[x].[Id],
 	(
@@ -51,14 +22,4 @@ WHERE
 		WHERE
 			[x].[Id] = [a_SubEntities_1].[MainEntityId]
 	)
-
-BeforeExecute
--- Access.Ace.OleDb AccessOleDb
-
-DROP TABLE [SubEntity]
-
-BeforeExecute
--- Access.Ace.OleDb AccessOleDb
-
-DROP TABLE [MainEntity]
 

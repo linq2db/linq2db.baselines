@@ -1,35 +1,5 @@
 ﻿BeforeExecute
 -- SQLite.MS SQLite
-
-DROP TABLE IF EXISTS [InventoryResourceDTO]
-
-BeforeExecute
--- SQLite.MS SQLite
-
-CREATE TABLE IF NOT EXISTS [InventoryResourceDTO]
-(
-	[Id]                Guid      NOT NULL,
-	[Status]            INTEGER   NOT NULL,
-	[ResourceID]        Guid      NOT NULL,
-	[ModifiedTimeStamp] DateTime2     NULL
-)
-
-BeforeExecute
--- SQLite.MS SQLite
-
-DROP TABLE IF EXISTS [WmsLoadCarrierDTO]
-
-BeforeExecute
--- SQLite.MS SQLite
-
-CREATE TABLE IF NOT EXISTS [WmsLoadCarrierDTO]
-(
-	[Id]            Guid          NOT NULL,
-	[ResourceLabel] NVarChar(255)     NULL
-)
-
-BeforeExecute
--- SQLite.MS SQLite
 DECLARE @Id  -- Guid
 SET     @Id = X'3D667BBCDE0F27438F925D8CC3A11D11'
 DECLARE @ResourceLabel NVarChar(1) -- String
@@ -150,14 +120,4 @@ GROUP BY
 	[lc].[ResourceLabel]
 HAVING
 	COUNT(*) > 1
-
-BeforeExecute
--- SQLite.MS SQLite
-
-DROP TABLE IF EXISTS [WmsLoadCarrierDTO]
-
-BeforeExecute
--- SQLite.MS SQLite
-
-DROP TABLE IF EXISTS [InventoryResourceDTO]
 

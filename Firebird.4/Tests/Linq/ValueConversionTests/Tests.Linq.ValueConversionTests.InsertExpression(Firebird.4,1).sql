@@ -1,37 +1,5 @@
 ﻿BeforeExecute
 -- Firebird.4 Firebird4
-
-EXECUTE BLOCK AS BEGIN
-	IF (EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'ValueConversion')) THEN
-		EXECUTE STATEMENT 'DROP TABLE "ValueConversion"';
-END
-
-BeforeExecute
--- Firebird.4 Firebird4
-
-EXECUTE BLOCK AS BEGIN
-	IF (NOT EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'ValueConversion')) THEN
-		EXECUTE STATEMENT '
-			CREATE TABLE "ValueConversion"
-			(
-				"Id"                      Int                                    NOT NULL,
-				"Value1"                  VarChar(200) CHARACTER SET UNICODE_FSS,
-				"Value2"                  VarChar(200) CHARACTER SET UNICODE_FSS,
-				"Enum"                    VarChar(50) CHARACTER SET UNICODE_FSS  NOT NULL,
-				"EnumNullable"            VarChar(50) CHARACTER SET UNICODE_FSS,
-				"EnumWithNull"            VarChar(50) CHARACTER SET UNICODE_FSS,
-				"EnumWithNullDeclarative" VarChar(50) CHARACTER SET UNICODE_FSS,
-				"BoolValue"               VarChar(1) CHARACTER SET UNICODE_FSS   NOT NULL,
-				"AnotherBoolValue"        VarChar(1) CHARACTER SET UNICODE_FSS   NOT NULL,
-				"DateTimeNullable"        TimeStamp,
-
-				CONSTRAINT "PK_ValueConversion" PRIMARY KEY ("Id")
-			)
-		';
-END
-
-BeforeExecute
--- Firebird.4 Firebird4
 DECLARE @iteration Integer -- Int32
 SET     @iteration = 1
 DECLARE @Value1 VarChar(2) -- String
@@ -85,12 +53,4 @@ FROM
 WHERE
 	"e"."Id" = @iteration
 FETCH NEXT 2 ROWS ONLY
-
-BeforeExecute
--- Firebird.4 Firebird4
-
-EXECUTE BLOCK AS BEGIN
-	IF (EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'ValueConversion')) THEN
-		EXECUTE STATEMENT 'DROP TABLE "ValueConversion"';
-END
 

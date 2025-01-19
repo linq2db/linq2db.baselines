@@ -1,38 +1,5 @@
 ﻿BeforeExecute
 -- PostgreSQL.17 PostgreSQL.15 PostgreSQL
-
-DROP TABLE IF EXISTS "Task"
-
-BeforeExecute
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
-
-CREATE TABLE IF NOT EXISTS "Task"
-(
-	"Id"         Int  NOT NULL,
-	"TargetName" text     NULL,
-
-	CONSTRAINT "PK_Task" PRIMARY KEY ("Id")
-)
-
-BeforeExecute
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
-
-DROP TABLE IF EXISTS "TaskStage"
-
-BeforeExecute
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
-
-CREATE TABLE IF NOT EXISTS "TaskStage"
-(
-	"Id"     Int     NOT NULL,
-	"TaskId" Int     NOT NULL,
-	"Actual" Boolean NOT NULL,
-
-	CONSTRAINT "PK_TaskStage" PRIMARY KEY ("Id")
-)
-
-BeforeExecute
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
 DECLARE @Id Integer -- Int32
 SET     @Id = 1
 DECLARE @TargetName Text(12) -- String
@@ -114,14 +81,4 @@ FROM
 		LEFT JOIN "TaskStage" "a_ActualStage" ON p."Id" = "a_ActualStage"."TaskId" AND "a_ActualStage"."Actual" = True
 ORDER BY
 	p."Id"
-
-BeforeExecute
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
-
-DROP TABLE IF EXISTS "TaskStage"
-
-BeforeExecute
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
-
-DROP TABLE IF EXISTS "Task"
 

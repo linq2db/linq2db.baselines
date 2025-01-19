@@ -1,23 +1,5 @@
 ﻿--  MariaDB.10.MySqlConnector MySql
 
-DROP TABLE IF EXISTS `Issue4671Entity1`
-
-
-
---  MariaDB.10.MySqlConnector MySql
-
-CREATE TABLE IF NOT EXISTS `Issue4671Entity1`
-(
-	`Id`    int AUTO_INCREMENT NOT NULL,
-	`Value` int                NOT NULL,
-
-	CONSTRAINT `PK_Issue4671Entity1` PRIMARY KEY CLUSTERED (`Id`)
-)
-
-
-
---  MariaDB.10.MySqlConnector MySql
-
 CREATE TEMPORARY TABLE `Issue4671Entity1TMP`
 (
 	`Id`    int AUTO_INCREMENT NOT NULL,
@@ -79,12 +61,6 @@ LIMIT 2
 --  MariaDB.10.MySqlConnector MySql
 
 DROP TABLE IF EXISTS `Issue4671Entity1TMP`
-
-
-
---  MariaDB.10.MySqlConnector MySql
-
-DROP TABLE IF EXISTS `Issue4671Entity1`
 
 
 

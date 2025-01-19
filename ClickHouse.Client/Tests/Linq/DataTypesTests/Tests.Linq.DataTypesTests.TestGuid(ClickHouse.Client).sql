@@ -1,35 +1,6 @@
 ﻿BeforeExecute
 -- ClickHouse.Client ClickHouse
 
-DROP TABLE IF EXISTS GuidTable
-
-BeforeExecute
--- ClickHouse.Client ClickHouse
-
-CREATE TABLE IF NOT EXISTS GuidTable
-(
-	Id             Int32,
-	Column         UUID,
-	ColumnNullable Nullable(UUID)
-)
-ENGINE = Memory()
-
-BeforeExecute
--- ClickHouse.Client ClickHouse
-
-INSERT INTO GuidTable
-(
-	Id,
-	Column,
-	ColumnNullable
-)
-VALUES
-(1,toUUID('bc7b663d-0fde-4327-8f92-5d8cc3a11d11'),NULL),
-(2,toUUID('a948600d-de21-4f74-8ac2-9516b287076e'),toUUID('bd3973a5-4323-4dd8-9f4f-df9f93e2a627'))
-
-BeforeExecute
--- ClickHouse.Client ClickHouse
-
 SELECT
 	r.Id,
 	r.Column,
@@ -157,9 +128,4 @@ FROM
 	GuidTable t1
 ORDER BY
 	t1.Id
-
-BeforeExecute
--- ClickHouse.Client ClickHouse
-
-DROP TABLE IF EXISTS GuidTable
 

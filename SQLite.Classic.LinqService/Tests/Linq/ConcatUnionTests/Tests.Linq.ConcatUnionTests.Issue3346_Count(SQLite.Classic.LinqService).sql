@@ -1,23 +1,6 @@
 ﻿BeforeExecute
 -- SQLite.Classic SQLite
 
-DROP TABLE IF EXISTS [ComplexPerson]
-
-BeforeExecute
--- SQLite.Classic SQLite
-
-CREATE TABLE IF NOT EXISTS [ComplexPerson]
-(
-	[Id]        INTEGER       NOT NULL,
-	[FirstName] NVarChar(255)     NULL,
-	[LastName]  NVarChar(255)     NULL,
-
-	CONSTRAINT [PK_ComplexPerson] PRIMARY KEY ([Id])
-)
-
-BeforeExecute
--- SQLite.Classic SQLite
-
 SELECT
 	COUNT(*)
 FROM
@@ -40,9 +23,4 @@ FROM
 		WHERE
 			[x_1].[Id] < 20
 	) [t1]
-
-BeforeExecute
--- SQLite.Classic SQLite
-
-DROP TABLE IF EXISTS [ComplexPerson]
 

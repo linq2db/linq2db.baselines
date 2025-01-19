@@ -1,19 +1,6 @@
 ﻿BeforeExecute
 -- SqlCe
 
-DROP TABLE [IdentitySimpleBulkCopyTable]
-
-BeforeExecute
--- SqlCe
-
-CREATE TABLE [IdentitySimpleBulkCopyTable]
-(
-	[Id] Int  NOT NULL IDENTITY
-)
-
-BeforeExecute
--- SqlCe
-
 SET IDENTITY_INSERT [IdentitySimpleBulkCopyTable] ON
 
 BeforeExecute
@@ -29,9 +16,4 @@ BeforeExecute
 -- SqlCe
 
 SET IDENTITY_INSERT [IdentitySimpleBulkCopyTable] OFF
-
-BeforeExecute
--- SqlCe
-
-DROP TABLE [IdentitySimpleBulkCopyTable]
 

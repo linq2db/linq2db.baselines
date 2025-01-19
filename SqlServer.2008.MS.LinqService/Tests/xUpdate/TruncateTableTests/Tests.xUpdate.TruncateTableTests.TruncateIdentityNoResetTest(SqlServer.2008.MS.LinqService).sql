@@ -1,24 +1,6 @@
 ﻿BeforeExecute
 -- SqlServer.2008.MS SqlServer.2008
 
-IF (OBJECT_ID(N'[test_temp]', N'U') IS NOT NULL)
-	DROP TABLE [test_temp]
-
-BeforeExecute
--- SqlServer.2008.MS SqlServer.2008
-
-IF (OBJECT_ID(N'[test_temp]', N'U') IS NULL)
-	CREATE TABLE [test_temp]
-	(
-		[ID]     Int      NOT NULL IDENTITY,
-		[Field1] Decimal  NOT NULL,
-
-		CONSTRAINT [PK_test_temp] PRIMARY KEY CLUSTERED ([ID])
-	)
-
-BeforeExecute
--- SqlServer.2008.MS SqlServer.2008
-
 DELETE FROM [test_temp]
 
 BeforeExecute
@@ -117,10 +99,4 @@ WHERE
 	[t2].[RN] > @skip AND [t2].[RN] <= (@skip + 2)
 ORDER BY
 	[t2].[ID]
-
-BeforeExecute
--- SqlServer.2008.MS SqlServer.2008
-
-IF (OBJECT_ID(N'[test_temp]', N'U') IS NOT NULL)
-	DROP TABLE [test_temp]
 

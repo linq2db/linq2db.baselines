@@ -1,43 +1,6 @@
 ﻿BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12
 
-BEGIN
-	EXECUTE IMMEDIATE 'DROP TABLE "TestTable"';
-EXCEPTION
-	WHEN OTHERS THEN
-		IF SQLCODE != -942 THEN
-			RAISE;
-		END IF;
-END;
-
-BeforeExecute
--- Oracle.12.Managed Oracle.Managed Oracle12
-
-BEGIN
-	EXECUTE IMMEDIATE '
-		CREATE TABLE "TestTable"
-		(
-			ID        Int          NOT NULL,
-			"Field1"  Int          NOT NULL,
-			"Field2"  Int          NOT NULL,
-			"Field3"  Int          NOT NULL,
-			"Field4"  Int          NOT NULL,
-			"field11" VarChar(255)     NULL,
-			"Field5"  Int          NOT NULL,
-
-			CONSTRAINT "PK_TestTable" PRIMARY KEY (ID)
-		)
-	';
-EXCEPTION
-	WHEN OTHERS THEN
-		IF SQLCODE != -955 THEN
-			RAISE;
-		END IF;
-END;
-
-BeforeExecute
--- Oracle.12.Managed Oracle.Managed Oracle12
-
 MERGE INTO "TestTable" Target
 USING (
 	SELECT
@@ -84,16 +47,4 @@ SET
 	"Field4" = "Source"."source_Field4",
 	"field11" = "Source"."source_field1_1",
 	"Field5" = "Source"."source_Field5"
-
-BeforeExecute
--- Oracle.12.Managed Oracle.Managed Oracle12
-
-BEGIN
-	EXECUTE IMMEDIATE 'DROP TABLE "TestTable"';
-EXCEPTION
-	WHEN OTHERS THEN
-		IF SQLCODE != -942 THEN
-			RAISE;
-		END IF;
-END;
 

@@ -1,39 +1,6 @@
 ﻿BeforeExecute
 -- Informix.DB2 Informix
 
-DROP TABLE IF EXISTS VEMPLOYEE_SCH_SEC
-
-BeforeExecute
--- Informix.DB2 Informix
-
-CREATE TABLE IF NOT EXISTS VEMPLOYEE_SCH_SEC
-(
-	ACTIVE BOOLEAN       NOT NULL,
-	ID     Int           NOT NULL,
-	NAME   NVarChar(255) NOT NULL,
-
-	PRIMARY KEY (ID)
-)
-
-BeforeExecute
--- Informix.DB2 Informix
-
-DROP TABLE IF EXISTS VEMPLOYEE_SCHDL_PERM
-
-BeforeExecute
--- Informix.DB2 Informix
-
-CREATE TABLE IF NOT EXISTS VEMPLOYEE_SCHDL_PERM
-(
-	ID        Int     NOT NULL,
-	IS_ACTIVE BOOLEAN NOT NULL,
-
-	PRIMARY KEY (ID)
-)
-
-BeforeExecute
--- Informix.DB2 Informix
-
 SELECT
 	ess.ID
 FROM
@@ -47,14 +14,4 @@ WHERE
 		WHERE
 			ess.ID = y.ID AND y.IS_ACTIVE
 	)
-
-BeforeExecute
--- Informix.DB2 Informix
-
-DROP TABLE IF EXISTS VEMPLOYEE_SCHDL_PERM
-
-BeforeExecute
--- Informix.DB2 Informix
-
-DROP TABLE IF EXISTS VEMPLOYEE_SCH_SEC
 

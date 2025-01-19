@@ -1,46 +1,6 @@
 ﻿BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
-DROP TABLE IF EXISTS [SampleData]
-
-BeforeExecute
--- SQLite.Classic.MPM SQLite.Classic SQLite
-
-CREATE TABLE IF NOT EXISTS [SampleData]
-(
-	[Id]     INTEGER NOT NULL,
-	[Value1] INTEGER NOT NULL,
-	[Value2] INTEGER NOT NULL,
-	[Value3] INTEGER NOT NULL,
-
-	CONSTRAINT [PK_SampleData] PRIMARY KEY ([Id])
-)
-
-BeforeExecute
--- SQLite.Classic.MPM SQLite.Classic SQLite
-
-INSERT INTO [SampleData]
-(
-	[Id],
-	[Value1],
-	[Value2],
-	[Value3]
-)
-VALUES
-(1,10,100,1000),
-(2,20,200,2000),
-(3,30,300,3000),
-(4,40,400,4000),
-(5,50,500,5000),
-(6,60,600,6000),
-(7,70,700,7000),
-(8,80,800,8000),
-(9,90,900,9000),
-(10,100,1000,10000)
-
-BeforeExecute
--- SQLite.Classic.MPM SQLite.Classic SQLite
-
 SELECT
 	[t1].[Id],
 	[t1].[Value1],
@@ -78,9 +38,4 @@ FROM
 	[SampleData] [t_2]
 WHERE
 	[t_2].[Id] % 4 = 0
-
-BeforeExecute
--- SQLite.Classic.MPM SQLite.Classic SQLite
-
-DROP TABLE IF EXISTS [SampleData]
 

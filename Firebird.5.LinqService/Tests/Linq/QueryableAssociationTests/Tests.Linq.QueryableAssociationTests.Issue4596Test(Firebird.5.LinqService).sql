@@ -1,54 +1,6 @@
 ﻿BeforeExecute
 -- Firebird.5 Firebird4
 
-EXECUTE BLOCK AS BEGIN
-	IF (EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'Issue4596Form')) THEN
-		EXECUTE STATEMENT 'DROP TABLE "Issue4596Form"';
-END
-
-BeforeExecute
--- Firebird.5 Firebird4
-
-EXECUTE BLOCK AS BEGIN
-	IF (NOT EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'Issue4596Form')) THEN
-		EXECUTE STATEMENT '
-			CREATE TABLE "Issue4596Form"
-			(
-				"Id" Int      NOT NULL,
-				C1   NChar(1) NOT NULL
-			)
-		';
-END
-
-BeforeExecute
--- Firebird.5 Firebird4
-
-EXECUTE BLOCK AS BEGIN
-	IF (EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'Issue4596Item')) THEN
-		EXECUTE STATEMENT 'DROP TABLE "Issue4596Item"';
-END
-
-BeforeExecute
--- Firebird.5 Firebird4
-
-EXECUTE BLOCK AS BEGIN
-	IF (NOT EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'Issue4596Item')) THEN
-		EXECUTE STATEMENT '
-			CREATE TABLE "Issue4596Item"
-			(
-				"Id"         Int                                    NOT NULL,
-				"FormId"     Int                                    NOT NULL,
-				"OrderIndex" Int                                    NOT NULL,
-				"Name1"      VarChar(255) CHARACTER SET UNICODE_FSS,
-				"Name2"      VarChar(255) CHARACTER SET UNICODE_FSS,
-				"Name3"      VarChar(255) CHARACTER SET UNICODE_FSS
-			)
-		';
-END
-
-BeforeExecute
--- Firebird.5 Firebird4
-
 SELECT
 	"m_1"."Id",
 	"m_1"."cond",
@@ -101,20 +53,4 @@ SELECT
 FROM
 	"Issue4596Form" "t1"
 FETCH NEXT 1 ROWS ONLY
-
-BeforeExecute
--- Firebird.5 Firebird4
-
-EXECUTE BLOCK AS BEGIN
-	IF (EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'Issue4596Item')) THEN
-		EXECUTE STATEMENT 'DROP TABLE "Issue4596Item"';
-END
-
-BeforeExecute
--- Firebird.5 Firebird4
-
-EXECUTE BLOCK AS BEGIN
-	IF (EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'Issue4596Form')) THEN
-		EXECUTE STATEMENT 'DROP TABLE "Issue4596Form"';
-END
 

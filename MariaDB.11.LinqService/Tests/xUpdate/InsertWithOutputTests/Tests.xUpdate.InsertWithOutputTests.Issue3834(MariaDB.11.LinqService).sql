@@ -1,25 +1,5 @@
 ﻿BeforeExecute
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql
-
-DROP TABLE IF EXISTS `Issue3834Table`
-
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
-
-CREATE TABLE IF NOT EXISTS `Issue3834Table`
-(
-	`Id`       INT           NOT NULL,
-	`Nesto`    VARCHAR(4000) NOT NULL,
-	`Nest`     VARCHAR(4000) NOT NULL,
-	`WhatSov`  VARCHAR(4000) NOT NULL,
-	`Co2grund` VARCHAR(4000)     NULL,
-	`Co2aend`  VARCHAR(4000)     NULL,
-
-	CONSTRAINT `PK_Issue3834Table` PRIMARY KEY CLUSTERED (`Id`)
-)
-
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
 DECLARE @Id Int32
 SET     @Id = 123
 DECLARE @Nesto VarChar(5) -- String
@@ -58,9 +38,4 @@ RETURNING
 	`Issue3834Table`.`WhatSov`,
 	`Issue3834Table`.`Co2grund`,
 	`Issue3834Table`.`Co2aend`
-
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
-
-DROP TABLE IF EXISTS `Issue3834Table`
 

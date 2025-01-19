@@ -1,22 +1,5 @@
 ﻿BeforeExecute
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
-
-DROP TABLE IF EXISTS `Issue1554Table`
-
-BeforeExecute
--- MySql.5.7 MySql.5.7.MySql.Data MySql57
-
-CREATE TABLE IF NOT EXISTS `Issue1554Table`
-(
-	`Id`              INT        NOT NULL,
-	`ClaimedKeyType`  VARCHAR(3) NOT NULL,
-	`ClaimedKeyTypeN` VARCHAR(3)     NULL,
-
-	CONSTRAINT `PK_Issue1554Table` PRIMARY KEY CLUSTERED (`Id`)
-)
-
-BeforeExecute
--- MySql.5.7 MySql.5.7.MySql.Data MySql57
 DECLARE @Id Int32
 SET     @Id = 0
 DECLARE @ClaimedKeyType VarChar(3) -- String
@@ -62,9 +45,4 @@ SELECT
 FROM
 	`Issue1554Table` `t1`
 LIMIT 2
-
-BeforeExecute
--- MySql.5.7 MySql.5.7.MySql.Data MySql57
-
-DROP TABLE IF EXISTS `Issue1554Table`
 

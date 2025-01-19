@@ -1,41 +1,5 @@
 ﻿BeforeExecute
 -- DB2 DB2.LUW DB2LUW
-
-BEGIN
-	DECLARE CONTINUE HANDLER FOR SQLSTATE '42704' BEGIN END;
-	EXECUTE IMMEDIATE 'DROP TABLE "IntEnumTable"';
-END
-
-BeforeExecute
--- DB2 DB2.LUW DB2LUW
-
-BEGIN
-	DECLARE CONTINUE HANDLER FOR SQLSTATE '42710' BEGIN END;
-	EXECUTE IMMEDIATE '
-		CREATE TABLE "IntEnumTable"
-		(
-			"Id"             Int NOT NULL,
-			"Column"         Int NOT NULL,
-			"ColumnNullable" Int     NULL
-		)
-	';
-END
-
-BeforeExecute
--- DB2 DB2.LUW DB2LUW
-
-INSERT INTO "IntEnumTable"
-(
-	"Id",
-	"Column",
-	"ColumnNullable"
-)
-VALUES
-(1,1,NULL),
-(2,2,3)
-
-BeforeExecute
--- DB2 DB2.LUW DB2LUW
 DECLARE @Column Integer(4) -- Int32
 SET     @Column = 2
 DECLARE @ColumnNullable Integer(4) -- Int32
@@ -175,12 +139,4 @@ FROM
 	"IntEnumTable" "t1"
 ORDER BY
 	"t1"."Id"
-
-BeforeExecute
--- DB2 DB2.LUW DB2LUW
-
-BEGIN
-	DECLARE CONTINUE HANDLER FOR SQLSTATE '42704' BEGIN END;
-	EXECUTE IMMEDIATE 'DROP TABLE "IntEnumTable"';
-END
 

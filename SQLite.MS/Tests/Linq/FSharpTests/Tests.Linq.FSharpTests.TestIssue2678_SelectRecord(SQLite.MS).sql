@@ -1,21 +1,5 @@
 ﻿BeforeExecute
 -- SQLite.MS SQLite
-
-DROP TABLE IF EXISTS [R]
-
-BeforeExecute
--- SQLite.MS SQLite
-
-CREATE TABLE IF NOT EXISTS [R]
-(
-	[MetadataVersion] INTEGER NOT NULL,
-	[DictionaryKey]   INTEGER NOT NULL,
-
-	CONSTRAINT [PK_R] PRIMARY KEY ([MetadataVersion])
-)
-
-BeforeExecute
--- SQLite.MS SQLite
 DECLARE @MetadataVersion  -- Int32
 SET     @MetadataVersion = 2
 DECLARE @DictionaryKey  -- Int32
@@ -41,9 +25,4 @@ SELECT
 FROM
 	[R] [t1]
 LIMIT 2
-
-BeforeExecute
--- SQLite.MS SQLite
-
-DROP TABLE IF EXISTS [R]
 

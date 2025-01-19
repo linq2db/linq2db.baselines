@@ -1,41 +1,5 @@
 ﻿BeforeExecute
 -- Oracle.11.Managed Oracle11
-
-BEGIN
-	EXECUTE IMMEDIATE 'DROP TABLE "TPHTable"';
-EXCEPTION
-	WHEN OTHERS THEN
-		IF SQLCODE != -942 THEN
-			RAISE;
-		END IF;
-END;
-
-BeforeExecute
--- Oracle.11.Managed Oracle11
-
-BEGIN
-	EXECUTE IMMEDIATE '
-		CREATE TABLE "TPHTable"
-		(
-			"Id"            Int         NOT NULL,
-			"Discriminator" Int         NOT NULL,
-			"Value1"        VarChar(50)     NULL,
-			"Value2"        VarChar(50)     NULL,
-			"Value3"        VarChar(50)     NULL,
-			"NullableBool"  VarChar(1)      NULL,
-
-			CONSTRAINT "PK_TPHTable" PRIMARY KEY ("Id")
-		)
-	';
-EXCEPTION
-	WHEN OTHERS THEN
-		IF SQLCODE != -955 THEN
-			RAISE;
-		END IF;
-END;
-
-BeforeExecute
--- Oracle.11.Managed Oracle11
 DECLARE @Id Int32
 SET     @Id = 1
 DECLARE @Discriminator Int32
@@ -208,16 +172,4 @@ FROM
 	"TPHTable" x
 WHERE
 	x."Value3" = 'Str3' AND ROWNUM <= 2
-
-BeforeExecute
--- Oracle.11.Managed Oracle11
-
-BEGIN
-	EXECUTE IMMEDIATE 'DROP TABLE "TPHTable"';
-EXCEPTION
-	WHEN OTHERS THEN
-		IF SQLCODE != -942 THEN
-			RAISE;
-		END IF;
-END;
 

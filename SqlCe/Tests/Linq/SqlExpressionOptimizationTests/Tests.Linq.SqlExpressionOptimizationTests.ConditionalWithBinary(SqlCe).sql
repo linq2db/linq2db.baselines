@@ -1,47 +1,6 @@
 ﻿BeforeExecute
 -- SqlCe
 
-DROP TABLE [OptimizationData]
-
-BeforeExecute
--- SqlCe
-
-CREATE TABLE [OptimizationData]
-(
-	[Id]                  Int           NOT NULL,
-	[IntVlaue]            Int           NOT NULL,
-	[IntVlaueNullable]    Int               NULL,
-	[BoolValue]           Bit           NOT NULL,
-	[BoolValueNullable]   Bit               NULL,
-	[StringValue]         NVarChar(255)     NULL,
-	[StringValueNullable] NVarChar(255)     NULL
-)
-
-BeforeExecute
--- SqlCe
-
-INSERT INTO [OptimizationData]
-(
-	[Id],
-	[IntVlaue],
-	[IntVlaueNullable],
-	[BoolValue],
-	[BoolValueNullable],
-	[StringValue],
-	[StringValueNullable]
-)
-SELECT 1,1,0,1,1,'1','1' UNION ALL
-SELECT 2,2,1,0,NULL,'0','0' UNION ALL
-SELECT 3,4,4,0,NULL,'1','1' UNION ALL
-SELECT 4,0,1,1,1,'0',NULL UNION ALL
-SELECT 5,1,3,1,1,'1',NULL UNION ALL
-SELECT 6,3,0,0,0,'0','0' UNION ALL
-SELECT 7,1,4,0,0,'1','1' UNION ALL
-SELECT 8,3,2,1,1,'0','0'
-
-BeforeExecute
--- SqlCe
-
 /* x => x.IntVlaue == 1 ? 3 : 4 == 3 */
 SELECT
 	[x].[Id],
@@ -2384,9 +2343,4 @@ SELECT
 	[t1].[StringValueNullable]
 FROM
 	[OptimizationData] [t1]
-
-BeforeExecute
--- SqlCe
-
-DROP TABLE [OptimizationData]
 

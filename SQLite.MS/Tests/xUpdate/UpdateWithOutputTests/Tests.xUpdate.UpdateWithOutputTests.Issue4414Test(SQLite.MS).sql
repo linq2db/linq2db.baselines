@@ -1,30 +1,5 @@
 ﻿BeforeExecute
 -- SQLite.MS SQLite
-
-DROP TABLE IF EXISTS [Issue4193Person]
-
-BeforeExecute
--- SQLite.MS SQLite
-
-CREATE TABLE IF NOT EXISTS [Issue4193Person]
-(
-	[Name]       NVarChar(255) NOT NULL,
-	[EmployeeId] INTEGER           NULL
-)
-
-BeforeExecute
--- SQLite.MS SQLite
-
-INSERT INTO [Issue4193Person]
-(
-	[Name],
-	[EmployeeId]
-)
-VALUES
-('foo',1)
-
-BeforeExecute
--- SQLite.MS SQLite
 DECLARE @take  -- Int32
 SET     @take = 3
 
@@ -50,9 +25,4 @@ WHERE
 RETURNING
 	[Issue4193Person].[EmployeeId],
 	[Issue4193Person].[Name]
-
-BeforeExecute
--- SQLite.MS SQLite
-
-DROP TABLE IF EXISTS [Issue4193Person]
 

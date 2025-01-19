@@ -1,22 +1,5 @@
 ﻿BeforeExecute
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
-
-DROP TABLE IF EXISTS `PR_1598_Insert_Fluent_Table`
-
-BeforeExecute
--- MySql.5.7 MySql.5.7.MySql.Data MySql57
-
-CREATE TABLE IF NOT EXISTS `PR_1598_Insert_Fluent_Table`
-(
-	`Id`   INT           NOT NULL,
-	`Name` VARCHAR(4000)     NULL,
-	`Age`  INT               NULL,
-
-	CONSTRAINT `PK_PR_1598_Insert_Fluent_Table` PRIMARY KEY CLUSTERED (`Id`)
-)
-
-BeforeExecute
--- MySql.5.7 MySql.5.7.MySql.Data MySql57
 DECLARE @Id Int32
 SET     @Id = 1
 DECLARE @Name VarChar -- String
@@ -45,9 +28,4 @@ FROM
 WHERE
 	`t`.`Id` = 1
 LIMIT 1
-
-BeforeExecute
--- MySql.5.7 MySql.5.7.MySql.Data MySql57
-
-DROP TABLE IF EXISTS `PR_1598_Insert_Fluent_Table`
 

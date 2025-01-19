@@ -1,36 +1,5 @@
 ﻿BeforeExecute
 -- SqlCe
-
-DROP TABLE [UserIssue3128]
-
-BeforeExecute
--- SqlCe
-
-CREATE TABLE [UserIssue3128]
-(
-	[Id] Int NOT NULL,
-
-	CONSTRAINT [PK_UserIssue3128] PRIMARY KEY ([Id])
-)
-
-BeforeExecute
--- SqlCe
-
-DROP TABLE [UserDetailsIssue3128]
-
-BeforeExecute
--- SqlCe
-
-CREATE TABLE [UserDetailsIssue3128]
-(
-	[UserId] Int NOT NULL,
-	[Age]    Int NOT NULL,
-
-	CONSTRAINT [PK_UserDetailsIssue3128] PRIMARY KEY ([UserId])
-)
-
-BeforeExecute
--- SqlCe
 DECLARE @Id Int -- Int32
 SET     @Id = 10
 
@@ -80,14 +49,4 @@ FROM
 		) [t2] ON 1=1
 WHERE
 	[t2].[COUNT_1] > 0
-
-BeforeExecute
--- SqlCe
-
-DROP TABLE [UserDetailsIssue3128]
-
-BeforeExecute
--- SqlCe
-
-DROP TABLE [UserIssue3128]
 

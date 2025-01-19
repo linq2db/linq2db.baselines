@@ -2,34 +2,6 @@
 BeginTransaction
 BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
-DROP TABLE IF EXISTS `mega_composites`
-
-BeforeExecute
--- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
-CREATE TABLE IF NOT EXISTS `mega_composites`
-(
-	`ref1`       BIGINT     NULL,
-	`y1.q1.ref1` BIGINT     NULL
-)
-
-BeforeExecute
--- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
-DROP TABLE IF EXISTS `qwerty`
-
-BeforeExecute
--- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
-CREATE TABLE IF NOT EXISTS `qwerty`
-(
-	`Id`     BIGINT        NOT NULL,
-	`asdfgh` VARCHAR(4000)     NULL
-)
-
-BeforeExecute
--- MySql.8.0 MySql.8.0.MySql.Data MySql80
 DECLARE @Id Int64
 SET     @Id = 1
 DECLARE @asdfgh VarChar(4) -- String
@@ -137,16 +109,6 @@ SELECT
 FROM
 	`mega_composites` `x`
 LIMIT @take
-
-BeforeExecute
--- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
-DROP TABLE IF EXISTS `qwerty`
-
-BeforeExecute
--- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
-DROP TABLE IF EXISTS `mega_composites`
 
 BeforeExecute
 DisposeTransaction

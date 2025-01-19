@@ -1,23 +1,4 @@
 ﻿BeforeExecute
--- SqlServer.2017.MS SqlServer.2017
-
-DROP TABLE IF EXISTS [MessageDto4414]
-
-BeforeExecute
--- SqlServer.2017.MS SqlServer.2017
-
-IF (OBJECT_ID(N'[MessageDto4414]', N'U') IS NULL)
-	CREATE TABLE [MessageDto4414]
-	(
-		[Id]       Int            NOT NULL,
-		[Key]      Int            NOT NULL,
-		[Consumed] DateTime2          NULL,
-		[Payload]  NVarChar(4000)     NULL,
-
-		CONSTRAINT [PK_MessageDto4414] PRIMARY KEY CLUSTERED ([Id])
-	)
-
-BeforeExecute
 -- SqlServer.2017.MS SqlServer.2017 (asynchronously)
 DECLARE @take Int -- Int32
 SET     @take = 1
@@ -44,9 +25,4 @@ FROM
 	) [t1]
 WHERE
 	[u].[Id] = [t1].[Id]
-
-BeforeExecute
--- SqlServer.2017.MS SqlServer.2017
-
-DROP TABLE IF EXISTS [MessageDto4414]
 

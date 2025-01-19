@@ -1,92 +1,6 @@
 ﻿BeforeExecute
 -- Informix.DB2 Informix
 
-DROP TABLE IF EXISTS InsertIssueTest
-
-BeforeExecute
--- Informix.DB2 Informix
-
-CREATE TABLE IF NOT EXISTS InsertIssueTest
-(
-	ID          SmallInt NOT NULL,
-	intDataType Int          NULL
-)
-
-BeforeExecute
--- Informix.DB2 Informix
-DECLARE @ID SmallInt(2) -- Int16
-SET     @ID = 0
-DECLARE @intDataType Integer(4) -- Int32
-SET     @intDataType = 0
-
-INSERT INTO InsertIssueTest
-(
-	ID,
-	intDataType
-)
-VALUES
-(
-	@ID,
-	@intDataType
-)
-
-BeforeExecute
--- Informix.DB2 Informix
-DECLARE @ID SmallInt(2) -- Int16
-SET     @ID = 0
-DECLARE @intDataType Integer(4) -- Int32
-SET     @intDataType = 0
-
-INSERT INTO InsertIssueTest
-(
-	ID,
-	intDataType
-)
-VALUES
-(
-	@ID,
-	@intDataType
-)
-
-BeforeExecute
--- Informix.DB2 Informix
-DECLARE @ID SmallInt(2) -- Int16
-SET     @ID = 1234
-DECLARE @intDataType Integer(4) -- Int32
-SET     @intDataType = 1234
-
-INSERT INTO InsertIssueTest
-(
-	ID,
-	intDataType
-)
-VALUES
-(
-	@ID,
-	@intDataType
-)
-
-BeforeExecute
--- Informix.DB2 Informix
-DECLARE @ID SmallInt(2) -- Int16
-SET     @ID = 1234
-DECLARE @intDataType Integer(4) -- Int32
-SET     @intDataType = 1234
-
-INSERT INTO InsertIssueTest
-(
-	ID,
-	intDataType
-)
-VALUES
-(
-	@ID,
-	@intDataType
-)
-
-BeforeExecute
--- Informix.DB2 Informix
-
 INSERT INTO InsertIssueTest
 (
 	ID,
@@ -138,9 +52,4 @@ SELECT
 	t1.intDataType
 FROM
 	InsertIssueTest t1
-
-BeforeExecute
--- Informix.DB2 Informix
-
-DROP TABLE IF EXISTS InsertIssueTest
 

@@ -1,36 +1,6 @@
 ﻿BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
-DROP TABLE IF EXISTS mega_composites
-
-BeforeExecute
--- ClickHouse.Octonica ClickHouse
-
-CREATE TABLE IF NOT EXISTS mega_composites
-(
-	ref1         Nullable(Int64),
-	`y1.q1.ref1` Nullable(Int64)
-)
-ENGINE = Memory()
-
-BeforeExecute
--- ClickHouse.Octonica ClickHouse
-
-DROP TABLE IF EXISTS qwerty
-
-BeforeExecute
--- ClickHouse.Octonica ClickHouse
-
-CREATE TABLE IF NOT EXISTS qwerty
-(
-	Id     Int64,
-	asdfgh Nullable(String)
-)
-ENGINE = Memory()
-
-BeforeExecute
--- ClickHouse.Octonica ClickHouse
-
 INSERT INTO qwerty
 (
 	Id,
@@ -115,14 +85,4 @@ FROM
 				qwerty q
 		) t1 ON t1.Id = x.`y1.q1.ref1` AND t1.rn <= 1
 LIMIT 2
-
-BeforeExecute
--- ClickHouse.Octonica ClickHouse
-
-DROP TABLE IF EXISTS qwerty
-
-BeforeExecute
--- ClickHouse.Octonica ClickHouse
-
-DROP TABLE IF EXISTS mega_composites
 

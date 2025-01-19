@@ -1,26 +1,6 @@
 ﻿BeforeExecute
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql
 
-DROP TABLE IF EXISTS `FluentMapping`
-
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
-
-CREATE TABLE IF NOT EXISTS `FluentMapping`
-(
-	`RecordID`       INT      NOT NULL,
-	`EffectiveStart` DATETIME NOT NULL,
-	`EffectiveEnd`   DATETIME     NULL,
-	`Key`            INT      NOT NULL,
-	`Unordered1`     INT      NOT NULL,
-	`Unordered2`     INT      NOT NULL,
-	`Audit1ID`       INT      NOT NULL,
-	`Audit2ID`       INT      NOT NULL
-)
-
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
-
 
 SELECT
 		TABLE_SCHEMA,
@@ -350,8 +330,3 @@ SET     @i = NULL
 
 BeforeExecute
 RollbackTransaction
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
-
-DROP TABLE IF EXISTS `FluentMapping`
-

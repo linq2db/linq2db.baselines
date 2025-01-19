@@ -1,55 +1,6 @@
 ﻿BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12
 
-BEGIN
-	EXECUTE IMMEDIATE 'DROP TABLE "OptimizationData"';
-EXCEPTION
-	WHEN OTHERS THEN
-		IF SQLCODE != -942 THEN
-			RAISE;
-		END IF;
-END;
-
-BeforeExecute
--- Oracle.12.Managed Oracle.Managed Oracle12
-
-BEGIN
-	EXECUTE IMMEDIATE '
-		CREATE TABLE "OptimizationData"
-		(
-			"Id"                  Int          NOT NULL,
-			"IntVlaue"            Int          NOT NULL,
-			"IntVlaueNullable"    Int              NULL,
-			"BoolValue"           Char(1)      NOT NULL,
-			"BoolValueNullable"   Char(1)          NULL,
-			"StringValue"         VarChar(255)     NULL,
-			"StringValueNullable" VarChar(255)     NULL
-		)
-	';
-EXCEPTION
-	WHEN OTHERS THEN
-		IF SQLCODE != -955 THEN
-			RAISE;
-		END IF;
-END;
-
-BeforeExecute
--- Oracle.12.Managed Oracle.Managed Oracle12
-
-INSERT ALL
-	INTO "OptimizationData" ("Id", "IntVlaue", "IntVlaueNullable", "BoolValue", "BoolValueNullable", "StringValue", "StringValueNullable") VALUES (1,1,0,1,1,'1','1')
-	INTO "OptimizationData" ("Id", "IntVlaue", "IntVlaueNullable", "BoolValue", "BoolValueNullable", "StringValue", "StringValueNullable") VALUES (2,2,1,0,NULL,'0','0')
-	INTO "OptimizationData" ("Id", "IntVlaue", "IntVlaueNullable", "BoolValue", "BoolValueNullable", "StringValue", "StringValueNullable") VALUES (3,4,4,0,NULL,'1','1')
-	INTO "OptimizationData" ("Id", "IntVlaue", "IntVlaueNullable", "BoolValue", "BoolValueNullable", "StringValue", "StringValueNullable") VALUES (4,0,1,1,1,'0',NULL)
-	INTO "OptimizationData" ("Id", "IntVlaue", "IntVlaueNullable", "BoolValue", "BoolValueNullable", "StringValue", "StringValueNullable") VALUES (5,1,3,1,1,'1',NULL)
-	INTO "OptimizationData" ("Id", "IntVlaue", "IntVlaueNullable", "BoolValue", "BoolValueNullable", "StringValue", "StringValueNullable") VALUES (6,3,0,0,0,'0','0')
-	INTO "OptimizationData" ("Id", "IntVlaue", "IntVlaueNullable", "BoolValue", "BoolValueNullable", "StringValue", "StringValueNullable") VALUES (7,1,4,0,0,'1','1')
-	INTO "OptimizationData" ("Id", "IntVlaue", "IntVlaueNullable", "BoolValue", "BoolValueNullable", "StringValue", "StringValueNullable") VALUES (8,3,2,1,1,'0','0')
-SELECT * FROM dual
-
-BeforeExecute
--- Oracle.12.Managed Oracle.Managed Oracle12
-
 /* x => x.IntVlaue == 1 ? 3 : 4 == 3 */
 SELECT
 	x."Id",
@@ -2391,16 +2342,4 @@ SELECT
 	t1."StringValueNullable"
 FROM
 	"OptimizationData" t1
-
-BeforeExecute
--- Oracle.12.Managed Oracle.Managed Oracle12
-
-BEGIN
-	EXECUTE IMMEDIATE 'DROP TABLE "OptimizationData"';
-EXCEPTION
-	WHEN OTHERS THEN
-		IF SQLCODE != -942 THEN
-			RAISE;
-		END IF;
-END;
 

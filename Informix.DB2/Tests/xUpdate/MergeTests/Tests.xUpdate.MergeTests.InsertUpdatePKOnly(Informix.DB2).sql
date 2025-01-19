@@ -1,35 +1,6 @@
 ﻿BeforeExecute
 -- Informix.DB2 Informix
 
-DROP TABLE IF EXISTS PKOnlyTable
-
-BeforeExecute
--- Informix.DB2 Informix
-
-CREATE TABLE IF NOT EXISTS PKOnlyTable
-(
-	ID Int NOT NULL,
-
-	PRIMARY KEY (ID)
-)
-
-BeforeExecute
--- Informix.DB2 Informix
-DECLARE @ID Integer(4) -- Int32
-SET     @ID = 2
-
-INSERT INTO PKOnlyTable
-(
-	ID
-)
-VALUES
-(
-	@ID
-)
-
-BeforeExecute
--- Informix.DB2 Informix
-
 MERGE INTO PKOnlyTable Target
 USING (
 	SELECT 1::Int AS source_ID FROM table(set{1})
@@ -61,9 +32,4 @@ FROM
 	PKOnlyTable t1
 ORDER BY
 	t1.ID
-
-BeforeExecute
--- Informix.DB2 Informix
-
-DROP TABLE IF EXISTS PKOnlyTable
 

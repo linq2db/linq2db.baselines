@@ -1,37 +1,6 @@
 ﻿BeforeExecute
 -- SqlServer.2012.MS SqlServer.2012
 
-IF (OBJECT_ID(N'[ComplexPredicate]', N'U') IS NOT NULL)
-	DROP TABLE [ComplexPredicate]
-
-BeforeExecute
--- SqlServer.2012.MS SqlServer.2012
-
-IF (OBJECT_ID(N'[ComplexPredicate]', N'U') IS NULL)
-	CREATE TABLE [ComplexPredicate]
-	(
-		[Id]    Int            NOT NULL,
-		[Value] NVarChar(4000)     NULL
-	)
-
-BeforeExecute
--- SqlServer.2012.MS SqlServer.2012
-
-INSERT INTO [ComplexPredicate]
-(
-	[Id],
-	[Value]
-)
-VALUES
-(1,NULL),
-(2,N'other'),
-(3,N'123'),
-(4,N'test'),
-(5,N'1')
-
-BeforeExecute
--- SqlServer.2012.MS SqlServer.2012
-
 SELECT
 	[r].[Id],
 	[r].[Value]
@@ -50,10 +19,4 @@ SELECT
 	[t1].[Value]
 FROM
 	[ComplexPredicate] [t1]
-
-BeforeExecute
--- SqlServer.2012.MS SqlServer.2012
-
-IF (OBJECT_ID(N'[ComplexPredicate]', N'U') IS NOT NULL)
-	DROP TABLE [ComplexPredicate]
 

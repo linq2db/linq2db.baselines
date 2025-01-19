@@ -1,30 +1,6 @@
 ﻿BeforeExecute
 -- Firebird.4 Firebird4
 
-EXECUTE BLOCK AS BEGIN
-	IF (EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'TableToInsert')) THEN
-		EXECUTE STATEMENT 'DROP TABLE "TableToInsert"';
-END
-
-BeforeExecute
--- Firebird.4 Firebird4
-
-EXECUTE BLOCK AS BEGIN
-	IF (NOT EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'TableToInsert')) THEN
-		EXECUTE STATEMENT '
-			CREATE TABLE "TableToInsert"
-			(
-				"Id"    Int                                    NOT NULL,
-				"Value" VarChar(255) CHARACTER SET UNICODE_FSS,
-
-				CONSTRAINT "PK_TableToInsert" PRIMARY KEY ("Id")
-			)
-		';
-END
-
-BeforeExecute
--- Firebird.4 Firebird4
-
 INSERT INTO "TableToInsert"
 (
 	"Id",
@@ -61,12 +37,4 @@ FROM
 		LEFT JOIN "TableToInsert" "t" ON "t"."Id" = "t1"."Id"
 WHERE
 	"t"."Id" IS NULL
-
-BeforeExecute
--- Firebird.4 Firebird4
-
-EXECUTE BLOCK AS BEGIN
-	IF (EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'TableToInsert')) THEN
-		EXECUTE STATEMENT 'DROP TABLE "TableToInsert"';
-END
 

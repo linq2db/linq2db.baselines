@@ -1,23 +1,5 @@
 ﻿BeforeExecute
 -- Informix.DB2 Informix
-
-DROP TABLE IF EXISTS Parent564
-
-BeforeExecute
--- Informix.DB2 Informix
-
-CREATE TABLE IF NOT EXISTS Parent564
-(
-	Id          SERIAL         NOT NULL,
-	"Type"      NVarChar(255)      NULL,
-	StringValue NVarChar(20)       NULL,
-	IntValue    Int                NULL,
-
-	PRIMARY KEY (Id)
-)
-
-BeforeExecute
--- Informix.DB2 Informix
 DECLARE @Type VarChar(9) -- String
 SET     @Type = 'Child564A'
 DECLARE @StringValue VarChar(9) -- String
@@ -59,9 +41,4 @@ SELECT
 	COUNT(*)
 FROM
 	Parent564 t1
-
-BeforeExecute
--- Informix.DB2 Informix
-
-DROP TABLE IF EXISTS Parent564
 

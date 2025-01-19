@@ -1,31 +1,6 @@
 ﻿BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 
-DROP TABLE IF EXISTS "PKOnlyTable"
-
-BeforeExecute
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
-
-CREATE TABLE IF NOT EXISTS "PKOnlyTable"
-(
-	"ID" Int NOT NULL,
-
-	CONSTRAINT "PK_PKOnlyTable" PRIMARY KEY ("ID")
-)
-
-BeforeExecute
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
-
-INSERT INTO "PKOnlyTable"
-(
-	"ID"
-)
-VALUES
-(2)
-
-BeforeExecute
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
-
 MERGE INTO "PKOnlyTable" "Target"
 USING (VALUES
 	(1), (2), (3)
@@ -54,9 +29,4 @@ FROM
 	"PKOnlyTable" t1
 ORDER BY
 	t1."ID"
-
-BeforeExecute
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
-
-DROP TABLE IF EXISTS "PKOnlyTable"
 

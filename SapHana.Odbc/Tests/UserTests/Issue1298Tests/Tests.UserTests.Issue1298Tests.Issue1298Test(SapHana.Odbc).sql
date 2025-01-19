@@ -2,34 +2,6 @@
 BeginTransaction
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-
-DROP TABLE "mega_composites"
-
-BeforeExecute
--- SapHana.Odbc SapHanaOdbc
-
-CREATE COLUMN TABLE "mega_composites"
-(
-	"ref1"       BigInt     NULL,
-	"y1.q1.ref1" BigInt     NULL
-)
-
-BeforeExecute
--- SapHana.Odbc SapHanaOdbc
-
-DROP TABLE "qwerty"
-
-BeforeExecute
--- SapHana.Odbc SapHanaOdbc
-
-CREATE COLUMN TABLE "qwerty"
-(
-	"Id"     BigInt        NOT NULL,
-	"asdfgh" NVarChar(255)     NULL
-)
-
-BeforeExecute
--- SapHana.Odbc SapHanaOdbc
 DECLARE @Id  -- Int64
 SET     @Id = 1
 DECLARE @asdfgh NVarChar(4) -- String
@@ -138,16 +110,6 @@ FROM
 			LIMIT 1
 		) "t1" ON 1=1
 LIMIT ?
-
-BeforeExecute
--- SapHana.Odbc SapHanaOdbc
-
-DROP TABLE "qwerty"
-
-BeforeExecute
--- SapHana.Odbc SapHanaOdbc
-
-DROP TABLE "mega_composites"
 
 BeforeExecute
 DisposeTransaction

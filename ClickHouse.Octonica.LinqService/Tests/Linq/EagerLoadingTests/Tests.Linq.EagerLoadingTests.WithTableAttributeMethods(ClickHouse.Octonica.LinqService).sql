@@ -1,41 +1,6 @@
 ﻿BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
-DROP TABLE IF EXISTS UserIssue3128
-
-BeforeExecute
--- ClickHouse.Octonica ClickHouse
-
-CREATE TABLE IF NOT EXISTS UserIssue3128
-(
-	Id Int32,
-
-	PRIMARY KEY (Id)
-)
-ENGINE = MergeTree()
-ORDER BY Id
-
-BeforeExecute
--- ClickHouse.Octonica ClickHouse
-
-DROP TABLE IF EXISTS UserDetailsIssue3128
-
-BeforeExecute
--- ClickHouse.Octonica ClickHouse
-
-CREATE TABLE IF NOT EXISTS UserDetailsIssue3128
-(
-	UserId Int32,
-	Age    Int32,
-
-	PRIMARY KEY (UserId)
-)
-ENGINE = MergeTree()
-ORDER BY UserId
-
-BeforeExecute
--- ClickHouse.Octonica ClickHouse
-
 INSERT INTO UserIssue3128
 (
 	Id
@@ -77,14 +42,4 @@ WHERE
 		FROM
 			UserIssue3128 t1
 	) > 0
-
-BeforeExecute
--- ClickHouse.Octonica ClickHouse
-
-DROP TABLE IF EXISTS UserDetailsIssue3128
-
-BeforeExecute
--- ClickHouse.Octonica ClickHouse
-
-DROP TABLE IF EXISTS UserIssue3128
 
