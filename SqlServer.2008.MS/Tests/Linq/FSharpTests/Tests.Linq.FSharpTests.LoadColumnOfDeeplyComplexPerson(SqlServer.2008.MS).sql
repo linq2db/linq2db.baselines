@@ -1,12 +1,12 @@
 ﻿BeforeExecute
 -- SqlServer.2008.MS SqlServer.2008
-DECLARE @ID Int -- Int32
-SET     @ID = 1
+DECLARE @p Int -- Int32
+SET     @p = 1
 
 SELECT TOP (2)
 	[p].[LastName]
 FROM
 	[Person] [p]
 WHERE
-	[p].[PersonID] = @ID
+	[p].[PersonID] = @p
 

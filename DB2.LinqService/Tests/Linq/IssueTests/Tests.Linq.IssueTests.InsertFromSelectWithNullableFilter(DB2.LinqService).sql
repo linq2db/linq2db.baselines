@@ -1,10 +1,10 @@
 ﻿BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
-INSERT INTO ALLTYPES
+INSERT INTO "InsertIssueTest"
 (
-	SMALLINTDATATYPE,
-	INTDATATYPE
+	ID,
+	"intDataType"
 )
 SELECT
 	123,
@@ -12,23 +12,23 @@ SELECT
 FROM
 	(
 		SELECT DISTINCT
-			"a_Association".SMALLINTDATATYPE as ID
+			"a_Association".ID
 		FROM
-			ALLTYPES "t1"
-				INNER JOIN ALLTYPES "a_Association" ON "t1".SMALLINTDATATYPE = "a_Association".INTDATATYPE
+			"InsertIssueTest" "t1"
+				INNER JOIN "InsertIssueTest" "a_Association" ON "t1".ID = "a_Association"."intDataType"
 		WHERE
 			1 = 0
 	) "t2"
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
-DECLARE @ID SmallInt(2) -- Int16
-SET     @ID = 1234
+DECLARE @cond SmallInt(2) -- Int16
+SET     @cond = 1234
 
-INSERT INTO ALLTYPES
+INSERT INTO "InsertIssueTest"
 (
-	SMALLINTDATATYPE,
-	INTDATATYPE
+	ID,
+	"intDataType"
 )
 SELECT
 	123,
@@ -36,11 +36,20 @@ SELECT
 FROM
 	(
 		SELECT DISTINCT
-			"a_Association".SMALLINTDATATYPE as ID
+			"a_Association".ID
 		FROM
-			ALLTYPES "t1"
-				INNER JOIN ALLTYPES "a_Association" ON "t1".SMALLINTDATATYPE = "a_Association".INTDATATYPE
+			"InsertIssueTest" "t1"
+				INNER JOIN "InsertIssueTest" "a_Association" ON "t1".ID = "a_Association"."intDataType"
 		WHERE
-			"t1".SMALLINTDATATYPE = @ID
+			"t1".ID = @cond
 	) "t2"
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+
+SELECT
+	"t1".ID,
+	"t1"."intDataType"
+FROM
+	"InsertIssueTest" "t1"
 

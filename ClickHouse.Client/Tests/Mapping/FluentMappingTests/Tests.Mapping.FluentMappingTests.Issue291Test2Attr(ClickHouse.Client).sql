@@ -1,22 +1,6 @@
 ﻿BeforeExecute
 -- ClickHouse.Client ClickHouse
 
-DROP TABLE IF EXISTS my_table
-
-BeforeExecute
--- ClickHouse.Client ClickHouse
-
-CREATE TABLE IF NOT EXISTS my_table
-(
-	my_col1      Nullable(String),
-	itemType     Int32,
-	my_other_col Nullable(String)
-)
-ENGINE = Memory()
-
-BeforeExecute
--- ClickHouse.Client ClickHouse
-
 INSERT INTO my_table
 (
 	my_col1,
@@ -68,9 +52,4 @@ FROM
 	my_table t1
 WHERE
 	t1.itemType <> 1
-
-BeforeExecute
--- ClickHouse.Client ClickHouse
-
-DROP TABLE IF EXISTS my_table
 

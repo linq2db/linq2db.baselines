@@ -1,31 +1,5 @@
 ﻿BeforeExecute
 -- Firebird.3 Firebird3
-
-EXECUTE BLOCK AS BEGIN
-	IF (EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'test_insert_or_replace')) THEN
-		EXECUTE STATEMENT 'DROP TABLE "test_insert_or_replace"';
-END
-
-BeforeExecute
--- Firebird.3 Firebird3
-
-EXECUTE BLOCK AS BEGIN
-	IF (NOT EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'test_insert_or_replace')) THEN
-		EXECUTE STATEMENT '
-			CREATE TABLE "test_insert_or_replace"
-			(
-				"id"         Int                                    NOT NULL,
-				"name"       VarChar(255) CHARACTER SET UNICODE_FSS,
-				"created_by" VarChar(255) CHARACTER SET UNICODE_FSS,
-				"updated_by" VarChar(255) CHARACTER SET UNICODE_FSS,
-
-				CONSTRAINT "PK_test_insert_or_replace" PRIMARY KEY ("id")
-			)
-		';
-END
-
-BeforeExecute
--- Firebird.3 Firebird3
 DECLARE @Id Integer -- Int32
 SET     @Id = 1
 DECLARE @Name VarChar(5) -- String
@@ -117,12 +91,4 @@ SELECT
 FROM
 	"test_insert_or_replace" "t1"
 FETCH NEXT 2 ROWS ONLY
-
-BeforeExecute
--- Firebird.3 Firebird3
-
-EXECUTE BLOCK AS BEGIN
-	IF (EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'test_insert_or_replace')) THEN
-		EXECUTE STATEMENT 'DROP TABLE "test_insert_or_replace"';
-END
 

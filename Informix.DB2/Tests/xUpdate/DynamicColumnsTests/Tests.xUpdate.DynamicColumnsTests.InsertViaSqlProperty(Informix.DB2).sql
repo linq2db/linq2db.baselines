@@ -1,5 +1,7 @@
 ﻿BeforeExecute
 -- Informix.DB2 Informix
+DECLARE @id Integer(4) -- Int32
+SET     @id = 1001
 
 INSERT INTO Child
 (
@@ -9,7 +11,7 @@ INSERT INTO Child
 VALUES
 (
 	1,
-	1001
+	@id
 )
 
 BeforeExecute

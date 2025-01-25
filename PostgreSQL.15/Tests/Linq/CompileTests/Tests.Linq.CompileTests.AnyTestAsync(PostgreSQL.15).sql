@@ -1,38 +1,30 @@
 ﻿BeforeExecute
 -- PostgreSQL.15 PostgreSQL (asynchronously)
-DECLARE @ParentID Integer -- Int32
-SET     @ParentID = 1
+DECLARE @p Integer -- Int32
+SET     @p = 1
 
 SELECT
-	CASE
-		WHEN EXISTS(
-			SELECT
-				*
-			FROM
-				"Child" c_1
-			WHERE
-				c_1."ParentID" = :ParentID
-		)
-			THEN True
-		ELSE False
-	END
+	EXISTS(
+		SELECT
+			*
+		FROM
+			"Child" c_1
+		WHERE
+			c_1."ParentID" = :p
+	)
 
 BeforeExecute
 -- PostgreSQL.15 PostgreSQL (asynchronously)
-DECLARE @ParentID Integer -- Int32
-SET     @ParentID = -1
+DECLARE @p Integer -- Int32
+SET     @p = -1
 
 SELECT
-	CASE
-		WHEN EXISTS(
-			SELECT
-				*
-			FROM
-				"Child" c_1
-			WHERE
-				c_1."ParentID" = :ParentID
-		)
-			THEN True
-		ELSE False
-	END
+	EXISTS(
+		SELECT
+			*
+		FROM
+			"Child" c_1
+		WHERE
+			c_1."ParentID" = :p
+	)
 

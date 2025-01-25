@@ -15,8 +15,8 @@ FROM
 UNION ALL
 SELECT
 	toInt32(NULL) as ID,
-	toDecimal64(NULL, toUInt8(4)) as MoneyValue,
-	toDateTime64(NULL, toUInt8(3)) as DateTimeValue,
+	toDecimal64(NULL, 4) as MoneyValue,
+	toDateTime64(NULL, 3) as DateTimeValue,
 	toBool(NULL) as BoolValue,
 	toUUID(NULL) as GuidValue,
 	toString(NULL) as BinaryValue,

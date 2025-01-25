@@ -1,23 +1,6 @@
 ﻿BeforeExecute
 -- ClickHouse.Client ClickHouse
 
-DROP TABLE IF EXISTS BackgroundTask
-
-BeforeExecute
--- ClickHouse.Client ClickHouse
-
-CREATE TABLE IF NOT EXISTS BackgroundTask
-(
-	ID               Nullable(Int32),
-	DurationID       Int32,
-	DurationInterval Int32,
-	PersonID         Nullable(Int32)
-)
-ENGINE = Memory()
-
-BeforeExecute
--- ClickHouse.Client ClickHouse
-
 INSERT INTO BackgroundTask
 (
 	ID,
@@ -45,9 +28,4 @@ FROM
 	BackgroundTask task_1
 WHERE
 	task_1.PersonID = 1
-
-BeforeExecute
--- ClickHouse.Client ClickHouse
-
-DROP TABLE IF EXISTS BackgroundTask
 

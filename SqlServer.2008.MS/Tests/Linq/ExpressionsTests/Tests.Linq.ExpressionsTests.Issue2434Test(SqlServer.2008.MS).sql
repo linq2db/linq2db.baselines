@@ -1,23 +1,6 @@
 ﻿BeforeExecute
 -- SqlServer.2008.MS SqlServer.2008
 
-IF (OBJECT_ID(N'[Issue2434Table]', N'U') IS NOT NULL)
-	DROP TABLE [Issue2434Table]
-
-BeforeExecute
--- SqlServer.2008.MS SqlServer.2008
-
-IF (OBJECT_ID(N'[Issue2434Table]', N'U') IS NULL)
-	CREATE TABLE [Issue2434Table]
-	(
-		[Id]        Int            NOT NULL,
-		[FirstName] NVarChar(4000)     NULL,
-		[LastName]  NVarChar(4000)     NULL
-	)
-
-BeforeExecute
--- SqlServer.2008.MS SqlServer.2008
-
 SELECT
 	[t1].[Id],
 	[t1].[FirstName],
@@ -27,10 +10,4 @@ FROM
 	[Issue2434Table] [t1]
 ORDER BY
 	[t1].[FirstName] + N' ' + [t1].[LastName]
-
-BeforeExecute
--- SqlServer.2008.MS SqlServer.2008
-
-IF (OBJECT_ID(N'[Issue2434Table]', N'U') IS NOT NULL)
-	DROP TABLE [Issue2434Table]
 

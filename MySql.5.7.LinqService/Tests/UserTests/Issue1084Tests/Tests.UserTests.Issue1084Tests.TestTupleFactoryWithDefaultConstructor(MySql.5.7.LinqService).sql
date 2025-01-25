@@ -1,50 +1,10 @@
 ﻿BeforeExecute
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
 
-DROP TABLE IF EXISTS `i1084_person`
-
-BeforeExecute
--- MySql.5.7 MySql.5.7.MySql.Data MySql57
-
-CREATE TABLE IF NOT EXISTS `i1084_person`
-(
-	`Id`            INT NOT NULL,
-	`Number`        INT NOT NULL,
-	`StatusBitmask` INT NOT NULL
-)
-
-BeforeExecute
--- MySql.5.7 MySql.5.7.MySql.Data MySql57
-
-DROP TABLE IF EXISTS `i1084_student`
-
-BeforeExecute
--- MySql.5.7 MySql.5.7.MySql.Data MySql57
-
-CREATE TABLE IF NOT EXISTS `i1084_student`
-(
-	`Id`            INT           NOT NULL,
-	`Number`        VARCHAR(4000)     NULL,
-	`StatusBitmask` INT           NOT NULL
-)
-
-BeforeExecute
--- MySql.5.7 MySql.5.7.MySql.Data MySql57
-
 SELECT
-	`t1`.`StatusBitmask` & 128,
+	`k_1`.`StatusBitmask` & 128,
 	`g_1`.`StatusBitmask` & 128
 FROM
-	`i1084_person` `t1`
-		LEFT JOIN `i1084_student` `g_1` ON `t1`.`Id` = `g_1`.`Id` AND CAST(`t1`.`Number` AS CHAR(11)) = `g_1`.`Number`
-
-BeforeExecute
--- MySql.5.7 MySql.5.7.MySql.Data MySql57
-
-DROP TABLE IF EXISTS `i1084_student`
-
-BeforeExecute
--- MySql.5.7 MySql.5.7.MySql.Data MySql57
-
-DROP TABLE IF EXISTS `i1084_person`
+	`i1084_person` `k_1`
+		LEFT JOIN `i1084_student` `g_1` ON `k_1`.`Id` = `g_1`.`Id` AND CAST(`k_1`.`Number` AS CHAR(11)) = `g_1`.`Number`
 

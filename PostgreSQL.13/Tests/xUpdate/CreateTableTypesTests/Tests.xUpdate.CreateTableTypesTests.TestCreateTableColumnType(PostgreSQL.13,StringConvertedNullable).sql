@@ -1,19 +1,5 @@
 ﻿BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
-
-DROP TABLE IF EXISTS "CreateTableTypes"
-
-BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
-
-CREATE TABLE IF NOT EXISTS "CreateTableTypes"
-(
-	"Id"              Int     NOT NULL,
-	"StringConverted" VarChar     NULL
-)
-
-BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
 DECLARE @Id Integer -- Int32
 SET     @Id = 1
 DECLARE @StringConverted Varchar(4) -- String
@@ -58,9 +44,4 @@ FROM
 	"CreateTableTypes" t1
 ORDER BY
 	t1."Id"
-
-BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
-
-DROP TABLE IF EXISTS "CreateTableTypes"
 

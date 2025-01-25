@@ -1,20 +1,5 @@
 ﻿BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-
-DROP TABLE "TypeConvertTable"
-
-BeforeExecute
--- SapHana.Odbc SapHanaOdbc
-
-CREATE COLUMN TABLE "TypeConvertTable"
-(
-	"Name"      NVarChar(50) NOT NULL,
-	"BoolValue" Char         NOT NULL,
-	"GuidValue" VarChar(50)      NULL
-)
-
-BeforeExecute
--- SapHana.Odbc SapHanaOdbc
 DECLARE @Name NVarChar(11) -- String
 SET     @Name = 'NotVerified'
 DECLARE @BoolValue Char(1) -- AnsiStringFixedLength
@@ -79,8 +64,8 @@ WHERE
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @GuidValue VarChar(36) -- AnsiString
-SET     @GuidValue = 'a948600d-de21-4f74-8ac2-9516b287076e'
+DECLARE @cond VarChar(36) -- AnsiString
+SET     @cond = 'a948600d-de21-4f74-8ac2-9516b287076e'
 
 SELECT
 	COUNT(*)
@@ -248,9 +233,4 @@ FROM
 WHERE
 	"t1"."GuidValue" = ?
 LIMIT 1
-
-BeforeExecute
--- SapHana.Odbc SapHanaOdbc
-
-DROP TABLE "TypeConvertTable"
 

@@ -1,25 +1,6 @@
 ﻿BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
-DROP TABLE IF EXISTS ComplexPerson
-
-BeforeExecute
--- ClickHouse.Octonica ClickHouse
-
-CREATE TABLE IF NOT EXISTS ComplexPerson
-(
-	Id        Int32,
-	FirstName Nullable(String),
-	LastName  Nullable(String),
-
-	PRIMARY KEY (Id)
-)
-ENGINE = MergeTree()
-ORDER BY Id
-
-BeforeExecute
--- ClickHouse.Octonica ClickHouse
-
 SELECT
 	COUNT(*)
 FROM
@@ -42,9 +23,4 @@ FROM
 		WHERE
 			x_1.Id < 20
 	) t1
-
-BeforeExecute
--- ClickHouse.Octonica ClickHouse
-
-DROP TABLE IF EXISTS ComplexPerson
 

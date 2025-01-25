@@ -1,7 +1,5 @@
 ﻿BeforeExecute
 -- Oracle.11.Managed Oracle11 (asynchronously)
-DECLARE @ParentID Int32
-SET     @ParentID = 1
 DECLARE @p Int32
 SET     @p = 1
 
@@ -11,12 +9,10 @@ SELECT
 FROM
 	"Child" c_1
 WHERE
-	c_1."ParentID" = :ParentID AND ROWNUM <= :p
+	c_1."ParentID" = :p AND ROWNUM <= :p
 
 BeforeExecute
 -- Oracle.11.Managed Oracle11 (asynchronously)
-DECLARE @ParentID Int32
-SET     @ParentID = 2
 DECLARE @p Int32
 SET     @p = 2
 
@@ -26,5 +22,5 @@ SELECT
 FROM
 	"Child" c_1
 WHERE
-	c_1."ParentID" = :ParentID AND ROWNUM <= :p
+	c_1."ParentID" = :p AND ROWNUM <= :p
 

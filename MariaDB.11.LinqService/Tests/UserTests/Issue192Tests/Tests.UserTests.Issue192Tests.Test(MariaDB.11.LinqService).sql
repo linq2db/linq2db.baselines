@@ -1,20 +1,5 @@
 ﻿BeforeExecute
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql
-
-DROP TABLE IF EXISTS `TypeConvertTable`
-
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
-
-CREATE TABLE IF NOT EXISTS `TypeConvertTable`
-(
-	`Name`      VARCHAR(50) NOT NULL,
-	`BoolValue` CHAR(255)   NOT NULL,
-	`GuidValue` VARCHAR(50)     NULL
-)
-
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
 DECLARE @Name VarChar(11) -- String
 SET     @Name = 'NotVerified'
 DECLARE @BoolValue String -- AnsiStringFixedLength
@@ -79,15 +64,15 @@ WHERE
 
 BeforeExecute
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql
-DECLARE @GuidValue VarChar(36) -- AnsiString
-SET     @GuidValue = 'a948600d-de21-4f74-8ac2-9516b287076e'
+DECLARE @cond VarChar(36) -- AnsiString
+SET     @cond = 'a948600d-de21-4f74-8ac2-9516b287076e'
 
 SELECT
 	COUNT(*)
 FROM
 	`TypeConvertTable` `t1`
 WHERE
-	`t1`.`GuidValue` = @GuidValue
+	`t1`.`GuidValue` = @cond
 
 BeforeExecute
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql
@@ -248,9 +233,4 @@ FROM
 WHERE
 	`t1`.`GuidValue` = @GuidValue
 LIMIT 1
-
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
-
-DROP TABLE IF EXISTS `TypeConvertTable`
 

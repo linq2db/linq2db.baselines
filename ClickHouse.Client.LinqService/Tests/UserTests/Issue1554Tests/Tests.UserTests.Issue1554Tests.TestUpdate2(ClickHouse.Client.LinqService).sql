@@ -1,25 +1,6 @@
 ﻿BeforeExecute
 -- ClickHouse.Client ClickHouse
 
-DROP TABLE IF EXISTS Issue1554Table
-
-BeforeExecute
--- ClickHouse.Client ClickHouse
-
-CREATE TABLE IF NOT EXISTS Issue1554Table
-(
-	Id              Int32,
-	ClaimedKeyType  String,
-	ClaimedKeyTypeN Nullable(String),
-
-	PRIMARY KEY (Id)
-)
-ENGINE = MergeTree()
-ORDER BY Id
-
-BeforeExecute
--- ClickHouse.Client ClickHouse
-
 INSERT INTO Issue1554Table
 (
 	Id,
@@ -54,9 +35,4 @@ SELECT
 FROM
 	Issue1554Table t1
 LIMIT 2
-
-BeforeExecute
--- ClickHouse.Client ClickHouse
-
-DROP TABLE IF EXISTS Issue1554Table
 

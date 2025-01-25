@@ -4,9 +4,9 @@
 SELECT
 	[od].[OrderID],
 	[o1].[OrderID],
-	[o2].[OrderID],
-	[o3].[OrderID],
-	[o2].[OrderID]
+	IIF([o2].[OrderID] IS NULL, 0, [o2].[OrderID]),
+	IIF([o3].[OrderID] IS NULL, 0, [o3].[OrderID]),
+	IIF([o2].[OrderID] IS NULL, 0, [o2].[OrderID])
 FROM
 	[Order Details] [od]
 		INNER JOIN [Orders] [o1] ON [od].[OrderID] = [o1].[OrderID] AND [od].[ProductID] = 39

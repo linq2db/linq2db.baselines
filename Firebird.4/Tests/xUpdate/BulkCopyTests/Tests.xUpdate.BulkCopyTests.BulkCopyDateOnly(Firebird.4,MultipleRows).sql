@@ -1,27 +1,6 @@
 ﻿BeforeExecute
 -- Firebird.4 Firebird4
 
-EXECUTE BLOCK AS BEGIN
-	IF (EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'DateOnlyTable')) THEN
-		EXECUTE STATEMENT 'DROP TABLE "DateOnlyTable"';
-END
-
-BeforeExecute
--- Firebird.4 Firebird4
-
-EXECUTE BLOCK AS BEGIN
-	IF (NOT EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'DateOnlyTable')) THEN
-		EXECUTE STATEMENT '
-			CREATE TABLE "DateOnlyTable"
-			(
-				"Date" Date NOT NULL
-			)
-		';
-END
-
-BeforeExecute
--- Firebird.4 Firebird4
-
 INSERT INTO "DateOnlyTable"
 (
 	"Date"
@@ -36,12 +15,4 @@ SELECT
 FROM
 	"DateOnlyTable" "t1"
 FETCH NEXT 2 ROWS ONLY
-
-BeforeExecute
--- Firebird.4 Firebird4
-
-EXECUTE BLOCK AS BEGIN
-	IF (EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'DateOnlyTable')) THEN
-		EXECUTE STATEMENT 'DROP TABLE "DateOnlyTable"';
-END
 

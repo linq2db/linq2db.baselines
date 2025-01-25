@@ -1,47 +1,6 @@
 ﻿BeforeExecute
 -- SqlCe
 
-DROP TABLE [OptimizationData]
-
-BeforeExecute
--- SqlCe
-
-CREATE TABLE [OptimizationData]
-(
-	[Id]                  Int           NOT NULL,
-	[IntVlaue]            Int           NOT NULL,
-	[IntVlaueNullable]    Int               NULL,
-	[BoolValue]           Bit           NOT NULL,
-	[BoolValueNullable]   Bit               NULL,
-	[StringValue]         NVarChar(255)     NULL,
-	[StringValueNullable] NVarChar(255)     NULL
-)
-
-BeforeExecute
--- SqlCe
-
-INSERT INTO [OptimizationData]
-(
-	[Id],
-	[IntVlaue],
-	[IntVlaueNullable],
-	[BoolValue],
-	[BoolValueNullable],
-	[StringValue],
-	[StringValueNullable]
-)
-SELECT 1,1,0,1,1,'1','1' UNION ALL
-SELECT 2,2,1,0,NULL,'0','0' UNION ALL
-SELECT 3,4,4,0,NULL,'1','1' UNION ALL
-SELECT 4,0,1,1,1,'0',NULL UNION ALL
-SELECT 5,1,3,1,1,'1',NULL UNION ALL
-SELECT 6,3,0,0,0,'0','0' UNION ALL
-SELECT 7,1,4,0,0,'1','1' UNION ALL
-SELECT 8,3,2,1,1,'0','0'
-
-BeforeExecute
--- SqlCe
-
 /* x => x.IntVlaue == 1 ? 3 : 4 == 3 */
 SELECT
 	[x].[Id],
@@ -208,11 +167,6 @@ SELECT
 	[x_with_not].[StringValueNullable]
 FROM
 	[OptimizationData] [x_with_not]
-WHERE
-	([x_with_not].[IntVlaue] <> 1 OR CASE
-		WHEN [x_with_not].[IntVlaue] = 1 THEN NULL
-		ELSE 0
-	END IS NULL)
 
 BeforeExecute
 -- SqlCe
@@ -273,11 +227,6 @@ SELECT
 	[swap_with_not].[StringValueNullable]
 FROM
 	[OptimizationData] [swap_with_not]
-WHERE
-	([swap_with_not].[IntVlaue] <> 1 OR CASE
-		WHEN [swap_with_not].[IntVlaue] = 1 THEN NULL
-		ELSE 0
-	END IS NULL)
 
 BeforeExecute
 -- SqlCe
@@ -339,10 +288,7 @@ SELECT
 FROM
 	[OptimizationData] [x_with_not]
 WHERE
-	CASE
-		WHEN [x_with_not].[IntVlaue] = 1 THEN NULL
-		ELSE 1
-	END IS NULL
+	[x_with_not].[IntVlaue] = 1
 
 BeforeExecute
 -- SqlCe
@@ -404,10 +350,7 @@ SELECT
 FROM
 	[OptimizationData] [swap_with_not]
 WHERE
-	CASE
-		WHEN [swap_with_not].[IntVlaue] = 1 THEN NULL
-		ELSE 1
-	END IS NULL
+	[swap_with_not].[IntVlaue] = 1
 
 BeforeExecute
 -- SqlCe
@@ -469,7 +412,7 @@ SELECT
 FROM
 	[OptimizationData] [x_with_not]
 WHERE
-	[x_with_not].[BoolValue] <> 1
+	[x_with_not].[BoolValue] = 0
 
 BeforeExecute
 -- SqlCe
@@ -531,7 +474,7 @@ SELECT
 FROM
 	[OptimizationData] [swap_with_not]
 WHERE
-	[swap_with_not].[BoolValue] <> 1
+	[swap_with_not].[BoolValue] = 0
 
 BeforeExecute
 -- SqlCe
@@ -562,7 +505,7 @@ SELECT
 FROM
 	[OptimizationData] [x]
 WHERE
-	[x].[BoolValue] <> 1
+	[x].[BoolValue] = 0
 
 BeforeExecute
 -- SqlCe
@@ -593,10 +536,7 @@ SELECT
 FROM
 	[OptimizationData] [x_with_not]
 WHERE
-	CASE
-		WHEN [x_with_not].[BoolValue] = 1 THEN NULL
-		ELSE 1
-	END IS NULL
+	[x_with_not].[BoolValue] = 1
 
 BeforeExecute
 -- SqlCe
@@ -627,7 +567,7 @@ SELECT
 FROM
 	[OptimizationData] [swap]
 WHERE
-	[swap].[BoolValue] <> 1
+	[swap].[BoolValue] = 0
 
 BeforeExecute
 -- SqlCe
@@ -658,10 +598,7 @@ SELECT
 FROM
 	[OptimizationData] [swap_with_not]
 WHERE
-	CASE
-		WHEN [swap_with_not].[BoolValue] = 1 THEN NULL
-		ELSE 1
-	END IS NULL
+	[swap_with_not].[BoolValue] = 1
 
 BeforeExecute
 -- SqlCe
@@ -723,7 +660,7 @@ SELECT
 FROM
 	[OptimizationData] [x_with_not]
 WHERE
-	[x_with_not].[BoolValue] <> 1
+	[x_with_not].[BoolValue] = 0
 
 BeforeExecute
 -- SqlCe
@@ -785,7 +722,7 @@ SELECT
 FROM
 	[OptimizationData] [swap_with_not]
 WHERE
-	[swap_with_not].[BoolValue] <> 1
+	[swap_with_not].[BoolValue] = 0
 
 BeforeExecute
 -- SqlCe
@@ -1184,7 +1121,7 @@ SELECT
 FROM
 	[OptimizationData] [x]
 WHERE
-	([x].[StringValueNullable] IS NULL OR [x].[StringValueNullable] IS NULL)
+	[x].[StringValueNullable] IS NULL OR [x].[StringValueNullable] IS NULL
 
 BeforeExecute
 -- SqlCe
@@ -1246,7 +1183,7 @@ SELECT
 FROM
 	[OptimizationData] [x]
 WHERE
-	([x].[StringValueNullable] IS NULL OR [x].[StringValueNullable] IS NULL)
+	[x].[StringValueNullable] IS NULL OR [x].[StringValueNullable] IS NULL
 
 BeforeExecute
 -- SqlCe
@@ -1308,7 +1245,7 @@ SELECT
 FROM
 	[OptimizationData] [swap]
 WHERE
-	([swap].[StringValueNullable] IS NULL OR [swap].[StringValueNullable] IS NULL)
+	[swap].[StringValueNullable] IS NULL OR [swap].[StringValueNullable] IS NULL
 
 BeforeExecute
 -- SqlCe
@@ -1553,7 +1490,7 @@ SELECT
 FROM
 	[OptimizationData] [x]
 WHERE
-	([x].[IntVlaue] < 4 OR [x].[IntVlaue] <> 0 AND [x].[IntVlaue] >= 4)
+	[x].[IntVlaue] < 4 OR [x].[IntVlaue] <> 0 AND [x].[IntVlaue] >= 4
 
 BeforeExecute
 -- SqlCe
@@ -1615,7 +1552,7 @@ SELECT
 FROM
 	[OptimizationData] [swap]
 WHERE
-	([swap].[IntVlaue] < 4 OR [swap].[IntVlaue] <> 0 AND [swap].[IntVlaue] >= 4)
+	[swap].[IntVlaue] < 4 OR [swap].[IntVlaue] <> 0 AND [swap].[IntVlaue] >= 4
 
 BeforeExecute
 -- SqlCe
@@ -1677,7 +1614,7 @@ SELECT
 FROM
 	[OptimizationData] [x]
 WHERE
-	([x].[IntVlaue] < 4 OR [x].[IntVlaue] > 0 AND [x].[IntVlaue] >= 4)
+	[x].[IntVlaue] < 4 OR [x].[IntVlaue] > 0 AND [x].[IntVlaue] >= 4
 
 BeforeExecute
 -- SqlCe
@@ -1801,7 +1738,7 @@ SELECT
 FROM
 	[OptimizationData] [x]
 WHERE
-	([x].[IntVlaue] < 4 OR [x].[IntVlaue] >= 0 AND [x].[IntVlaue] >= 4)
+	[x].[IntVlaue] < 4 OR [x].[IntVlaue] >= 0 AND [x].[IntVlaue] >= 4
 
 BeforeExecute
 -- SqlCe
@@ -2049,7 +1986,7 @@ SELECT
 FROM
 	[OptimizationData] [x]
 WHERE
-	([x].[IntVlaue] <> 0 AND [x].[IntVlaue] >= 4 OR [x].[IntVlaue] < 4)
+	[x].[IntVlaue] <> 0 AND [x].[IntVlaue] >= 4 OR [x].[IntVlaue] < 4
 
 BeforeExecute
 -- SqlCe
@@ -2111,7 +2048,8 @@ SELECT
 FROM
 	[OptimizationData] [swap]
 WHERE
-	([swap].[IntVlaue] <> 0 AND [swap].[IntVlaue] >= 4 OR [swap].[IntVlaue] < 4)
+	[swap].[IntVlaue] <> 0 AND [swap].[IntVlaue] >= 4 OR
+	[swap].[IntVlaue] < 4
 
 BeforeExecute
 -- SqlCe
@@ -2173,7 +2111,7 @@ SELECT
 FROM
 	[OptimizationData] [x]
 WHERE
-	([x].[IntVlaue] > 0 AND [x].[IntVlaue] >= 4 OR [x].[IntVlaue] < 4)
+	[x].[IntVlaue] > 0 AND [x].[IntVlaue] >= 4 OR [x].[IntVlaue] < 4
 
 BeforeExecute
 -- SqlCe
@@ -2297,7 +2235,7 @@ SELECT
 FROM
 	[OptimizationData] [x]
 WHERE
-	([x].[IntVlaue] >= 0 AND [x].[IntVlaue] >= 4 OR [x].[IntVlaue] < 4)
+	[x].[IntVlaue] >= 0 AND [x].[IntVlaue] >= 4 OR [x].[IntVlaue] < 4
 
 BeforeExecute
 -- SqlCe
@@ -2405,9 +2343,4 @@ SELECT
 	[t1].[StringValueNullable]
 FROM
 	[OptimizationData] [t1]
-
-BeforeExecute
--- SqlCe
-
-DROP TABLE [OptimizationData]
 

@@ -1,32 +1,6 @@
 ﻿BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
-DROP TABLE IF EXISTS ValueConversion
-
-BeforeExecute
--- ClickHouse.Octonica ClickHouse
-
-CREATE TABLE IF NOT EXISTS ValueConversion
-(
-	Id                      Int32,
-	Value1                  Nullable(String),
-	Value2                  Nullable(String),
-	Enum                    String,
-	EnumNullable            Nullable(String),
-	EnumWithNull            Nullable(String),
-	EnumWithNullDeclarative Nullable(String),
-	BoolValue               String,
-	AnotherBoolValue        String,
-	DateTimeNullable        Nullable(DateTime64(7)),
-
-	PRIMARY KEY (Id)
-)
-ENGINE = MergeTree()
-ORDER BY Id
-
-BeforeExecute
--- ClickHouse.Octonica ClickHouse
-
 INSERT INTO ValueConversion
 (
 	Id,
@@ -165,9 +139,4 @@ SELECT
 	COUNT(*)
 FROM
 	ValueConversion t1
-
-BeforeExecute
--- ClickHouse.Octonica ClickHouse
-
-DROP TABLE IF EXISTS ValueConversion
 

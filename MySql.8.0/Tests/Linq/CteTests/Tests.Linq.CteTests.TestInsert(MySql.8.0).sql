@@ -1,20 +1,6 @@
 ﻿BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
 
-DROP TABLE IF EXISTS `CteChild`
-
-BeforeExecute
--- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
-CREATE TABLE IF NOT EXISTS `CteChild`
-(
-	`ChildID`  INT NOT NULL,
-	`ParentID` INT NOT NULL
-)
-
-BeforeExecute
--- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
 INSERT INTO `CteChild`
 (
 	`ChildID`,
@@ -67,16 +53,11 @@ SELECT
 	`c4`.`ChildID`,
 	`c4`.`ParentID`
 FROM
-	`Child` `p`
-		INNER JOIN `Child` `c4` ON `c4`.`ParentID` = `p`.`ParentID`
+	`Child` `c_1`
+		INNER JOIN `Child` `c4` ON `c4`.`ParentID` = `c_1`.`ParentID`
 WHERE
-	`p`.`ParentID` > 1 AND `c4`.`ParentID` % 2 = 0
+	`c_1`.`ParentID` > 1 AND `c4`.`ParentID` % 2 = 0
 ORDER BY
 	`c4`.`ChildID`,
 	`c4`.`ParentID`
-
-BeforeExecute
--- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
-DROP TABLE IF EXISTS `CteChild`
 

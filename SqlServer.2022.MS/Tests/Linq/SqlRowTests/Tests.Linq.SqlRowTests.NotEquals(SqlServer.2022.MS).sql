@@ -1,46 +1,12 @@
 ﻿BeforeExecute
 -- SqlServer.2022.MS SqlServer.2022
 
-DROP TABLE IF EXISTS [Ints]
-
-BeforeExecute
--- SqlServer.2022.MS SqlServer.2022
-
-IF (OBJECT_ID(N'[Ints]', N'U') IS NULL)
-	CREATE TABLE [Ints]
-	(
-		[One]   Int NOT NULL,
-		[Two]   Int NOT NULL,
-		[Three] Int NOT NULL,
-		[Four]  Int NOT NULL,
-		[Five]  Int NOT NULL,
-		[Nil]   Int     NULL
-	)
-
-BeforeExecute
--- SqlServer.2022.MS SqlServer.2022
-
-INSERT INTO [Ints]
-(
-	[One],
-	[Two],
-	[Three],
-	[Four],
-	[Five],
-	[Nil]
-)
-VALUES
-(1,2,3,4,5,NULL)
-
-BeforeExecute
--- SqlServer.2022.MS SqlServer.2022
-
 SELECT
 	COUNT(*)
 FROM
 	[Ints] [i]
 WHERE
-	([i].[Two] <> [i].[One] * 2 OR [i].[Three] <> [i].[Four] - 1)
+	[i].[Two] <> [i].[One] * 2 OR [i].[Three] <> [i].[Four] - 1
 
 BeforeExecute
 -- SqlServer.2022.MS SqlServer.2022
@@ -70,7 +36,7 @@ SELECT
 FROM
 	[Ints] [i]
 WHERE
-	(1 <> [i].[One] OR [i].[Nil] <> [i].[Nil] OR 4 <> [i].[Three])
+	1 <> [i].[One] OR [i].[Nil] <> [i].[Nil] OR 4 <> [i].[Three]
 
 BeforeExecute
 -- SqlServer.2022.MS SqlServer.2022
@@ -80,10 +46,5 @@ SELECT
 FROM
 	[Ints] [i]
 WHERE
-	(1 <> [i].[One] OR NULL >= [i].[Nil] OR 4 <> [i].[Three])
-
-BeforeExecute
--- SqlServer.2022.MS SqlServer.2022
-
-DROP TABLE IF EXISTS [Ints]
+	1 <> [i].[One] OR NULL >= [i].[Nil] OR 4 <> [i].[Three]
 

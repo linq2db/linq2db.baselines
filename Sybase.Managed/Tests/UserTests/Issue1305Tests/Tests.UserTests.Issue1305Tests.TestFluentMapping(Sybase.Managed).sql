@@ -1,26 +1,12 @@
 ﻿BeforeExecute
 -- Sybase.Managed Sybase
 
-IF (OBJECT_ID(N'FluentMapping') IS NOT NULL)
-	DROP TABLE [FluentMapping]
+select @@unicharsize
 
 BeforeExecute
 -- Sybase.Managed Sybase
 
-IF (OBJECT_ID(N'FluentMapping') IS NULL)
-	EXECUTE('
-		CREATE TABLE [FluentMapping]
-		(
-			[RecordID]       Int      NOT NULL,
-			[EffectiveStart] DateTime NOT NULL,
-			[EffectiveEnd]   DateTime     NULL,
-			[Key]            Int      NOT NULL,
-			[Unordered1]     Int      NOT NULL,
-			[Unordered2]     Int      NOT NULL,
-			[Audit1ID]       Int      NOT NULL,
-			[Audit2ID]       Int      NOT NULL
-		)
-	')
+select @@ncharsize
 
 BeforeExecute
 -- Sybase.Managed Sybase
@@ -70,7 +56,11 @@ SELECT
 	Convert(bit, c.status & 0x08)                    as IsNullable,
 	c.colid                                          as Ordinal,
 	t.name                                           as DataType,
-	c.length                                         as Length,
+	CASE
+		WHEN t.name IN ('nvarchar', 'nchar') THEN c.length / @@ncharsize
+		WHEN t.name IN ('univarchar', 'unichar') THEN c.length / @@unicharsize
+		ELSE c.length
+	END                                              as Length,
 	c.prec                                           as [Precision],
 	c.scale                                          as Scale,
 	Convert(bit, c.status & 0x80)                    as IsIdentity,
@@ -423,9 +413,3 @@ SET FMTONLY OFF
 
 BeforeExecute
 RollbackTransaction
-BeforeExecute
--- Sybase.Managed Sybase
-
-IF (OBJECT_ID(N'FluentMapping') IS NOT NULL)
-	DROP TABLE [FluentMapping]
-

@@ -1,42 +1,10 @@
 ﻿BeforeExecute
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 
-DROP TABLE IF EXISTS `SampleClass`
-
-BeforeExecute
--- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
-CREATE TABLE IF NOT EXISTS `SampleClass`
-(
-	`Id`    INT NOT NULL,
-	`Value` INT NOT NULL
-)
-
-BeforeExecute
--- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-DECLARE @Id Int32
-SET     @Id = 1
-DECLARE @Value Int32
-SET     @Value = 100
-
-INSERT INTO `SampleClass`
-(
-	`Id`,
-	`Value`
-)
-VALUES
-(
-	@Id,
-	@Value
-)
-
-BeforeExecute
--- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
 SELECT
 	`t_1`.`Id`,
 	`t_1`.`Value`,
-	`t2`.`not_null`,
+	`t2`.`cond`,
 	`t2`.`Value1`,
 	`t2`.`Value2`
 FROM
@@ -45,7 +13,7 @@ FROM
 			SELECT
 				`t1`.`Value1`,
 				`t1`.`Value2`,
-				1 as `not_null`
+				1 as `cond`
 			FROM
 				(
 					SELECT
@@ -62,9 +30,4 @@ FROM
 				) `t1`
 			LIMIT 1
 		) `t2` ON 1=1
-
-BeforeExecute
--- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
-DROP TABLE IF EXISTS `SampleClass`
 

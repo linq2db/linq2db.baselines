@@ -122,7 +122,7 @@ BeforeExecute
 -- PostgreSQL.11 PostgreSQL.9.5 PostgreSQL
 
 SELECT
-	t5."SUM_1",
+	t5."WithParentReference",
 	t5."WithParentReferenceCustom1",
 	t5."WithParentReferenceCustom2",
 	t5."WithoutParentReference"
@@ -153,7 +153,7 @@ FROM
 							WHERE
 								"a_Employee"."EmployeeId" = e."EmployeeId"
 						) d ON 1=1
-			) as "SUM_1",
+			) as "WithParentReference",
 			(
 				SELECT
 					Sum(CASE
@@ -235,7 +235,7 @@ FROM
 				INNER JOIN "Employee" "a_Employee" ON tracking."EmployeeId" = "a_Employee"."EmployeeId"
 	) t5
 ORDER BY
-	Coalesce(t5."SUM_1", 0),
+	Coalesce(t5."WithParentReference", 0),
 	Coalesce(t5."WithParentReferenceCustom1", 0),
 	Coalesce(t5."WithParentReferenceCustom2", 0),
 	Coalesce(t5."WithoutParentReference", 0) DESC

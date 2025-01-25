@@ -4,7 +4,7 @@
 SELECT
 	t2.month_1,
 	t2.year_1,
-	1
+	1::Int
 FROM
 	(
 		SELECT
@@ -20,14 +20,14 @@ UNION
 SELECT
 	t3."SmallIntValue",
 	t3."SmallIntValue",
-	3
+	3::Int
 FROM
 	"LinqDataTypes" t3
 UNION
 SELECT
 	Floor(Extract(year From t4."DateTimeValue"))::Int,
 	Floor(Extract(year From t4."DateTimeValue"))::Int,
-	2
+	2::Int
 FROM
 	"LinqDataTypes" t4
 

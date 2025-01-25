@@ -1,19 +1,5 @@
 ﻿BeforeExecute
 -- SQLite.MS SQLite
-
-DROP TABLE IF EXISTS [CreateTableTypes]
-
-BeforeExecute
--- SQLite.MS SQLite
-
-CREATE TABLE IF NOT EXISTS [CreateTableTypes]
-(
-	[StringConverted] NVarChar     NULL,
-	[Id]              INTEGER  NOT NULL
-)
-
-BeforeExecute
--- SQLite.MS SQLite
 DECLARE @Id  -- Int32
 SET     @Id = 1
 DECLARE @StringConverted NVarChar(4) -- String
@@ -58,9 +44,4 @@ FROM
 	[CreateTableTypes] [t1]
 ORDER BY
 	[t1].[Id]
-
-BeforeExecute
--- SQLite.MS SQLite
-
-DROP TABLE IF EXISTS [CreateTableTypes]
 

@@ -10,9 +10,9 @@ SELECT
 	[d_1].[ParentID] as [ParentID_2],
 	[d_1].[ChildID] as [ChildID_1],
 	[d_1].[GrandChildID],
-	[a_Child].[ParentID] as [ParentID_3],
+	[a_Child].[ParentID] as [cond],
 	[a_Child].[ChildID] as [ChildID_2],
-	[a_Parent].[ParentID] as [ParentID_4],
+	[a_Parent].[ParentID] as [cond_1],
 	[a_Parent].[Value1]
 FROM
 	(

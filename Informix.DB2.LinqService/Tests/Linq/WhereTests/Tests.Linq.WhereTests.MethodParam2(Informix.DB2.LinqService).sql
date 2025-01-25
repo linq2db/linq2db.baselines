@@ -1,24 +1,24 @@
 ﻿BeforeExecute
 -- Informix.DB2 Informix
-DECLARE @ID Integer(4) -- Int32
-SET     @ID = 1
+DECLARE @p Integer(4) -- Int32
+SET     @p = 1
 
 SELECT
 	p.PersonID
 FROM
 	Person p
 WHERE
-	p.PersonID = @ID
+	p.PersonID = @p
 
 BeforeExecute
 -- Informix.DB2 Informix
-DECLARE @ID Integer(4) -- Int32
-SET     @ID = 2
+DECLARE @p Integer(4) -- Int32
+SET     @p = 2
 
 SELECT
 	p.PersonID
 FROM
 	Person p
 WHERE
-	p.PersonID = @ID
+	p.PersonID = @p
 

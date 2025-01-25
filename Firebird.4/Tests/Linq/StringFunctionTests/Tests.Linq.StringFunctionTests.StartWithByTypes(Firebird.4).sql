@@ -1,44 +1,6 @@
 ﻿BeforeExecute
 -- Firebird.4 Firebird4
 
-EXECUTE BLOCK AS BEGIN
-	IF (EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'StringTypesTable')) THEN
-		EXECUTE STATEMENT 'DROP TABLE "StringTypesTable"';
-END
-
-BeforeExecute
--- Firebird.4 Firebird4
-
-EXECUTE BLOCK AS BEGIN
-	IF (NOT EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'StringTypesTable')) THEN
-		EXECUTE STATEMENT '
-			CREATE TABLE "StringTypesTable"
-			(
-				"Id"             Int                                   NOT NULL,
-				"CharColumn"     Char(50),
-				"NCharColumn"    NChar(50),
-				"VarCharColumn"  VarChar(50) CHARACTER SET UNICODE_FSS,
-				"NVarCharColumn" VarChar(50) CHARACTER SET UNICODE_FSS
-			)
-		';
-END
-
-BeforeExecute
--- Firebird.4 Firebird4
-
-INSERT INTO "StringTypesTable"
-(
-	"Id",
-	"CharColumn",
-	"NCharColumn",
-	"VarCharColumn",
-	"NVarCharColumn"
-)
-SELECT 1,'someString','someString',CAST('someString' AS VarChar(50) CHARACTER SET UNICODE_FSS),CAST('someString' AS VarChar(50) CHARACTER SET UNICODE_FSS) FROM rdb$database
-
-BeforeExecute
--- Firebird.4 Firebird4
-
 SELECT
 	"t"."Id",
 	"t"."CharColumn",
@@ -52,12 +14,4 @@ WHERE
 	"t"."NCharColumn" STARTING WITH 'some' AND
 	"t"."VarCharColumn" STARTING WITH 'some' AND
 	"t"."NVarCharColumn" STARTING WITH 'some'
-
-BeforeExecute
--- Firebird.4 Firebird4
-
-EXECUTE BLOCK AS BEGIN
-	IF (EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'StringTypesTable')) THEN
-		EXECUTE STATEMENT 'DROP TABLE "StringTypesTable"';
-END
 

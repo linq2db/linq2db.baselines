@@ -1,36 +1,5 @@
 ﻿BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
-
-BEGIN
-	EXECUTE IMMEDIATE 'DROP TABLE "Test3664"';
-EXCEPTION
-	WHEN OTHERS THEN
-		IF SQLCODE != -942 THEN
-			RAISE;
-		END IF;
-END;
-
-BeforeExecute
--- Oracle.21.Managed Oracle.Managed Oracle12
-
-BEGIN
-	EXECUTE IMMEDIATE '
-		CREATE TABLE "Test3664"
-		(
-			"Id" Int NOT NULL,
-
-			CONSTRAINT "PK_Test3664" PRIMARY KEY ("Id")
-		)
-	';
-EXCEPTION
-	WHEN OTHERS THEN
-		IF SQLCODE != -955 THEN
-			RAISE;
-		END IF;
-END;
-
-BeforeExecute
--- Oracle.21.Managed Oracle.Managed Oracle12
 DECLARE @Id Int32
 SET     @Id = 1
 
@@ -42,46 +11,6 @@ VALUES
 (
 	:Id
 )
-
-BeforeExecute
--- Oracle.21.Managed Oracle.Managed Oracle12
-
-BEGIN
-	EXECUTE IMMEDIATE 'DROP TABLE "Test3664Item"';
-EXCEPTION
-	WHEN OTHERS THEN
-		IF SQLCODE != -942 THEN
-			RAISE;
-		END IF;
-END;
-
-BeforeExecute
--- Oracle.21.Managed Oracle.Managed Oracle12
-
-BEGIN
-	EXECUTE IMMEDIATE '
-		CREATE TABLE "Test3664Item"
-		(
-			"Id"     Int NOT NULL,
-			"TestId" Int NOT NULL,
-
-			CONSTRAINT "PK_Test3664Item" PRIMARY KEY ("Id")
-		)
-	';
-EXCEPTION
-	WHEN OTHERS THEN
-		IF SQLCODE != -955 THEN
-			RAISE;
-		END IF;
-END;
-
-BeforeExecute
--- Oracle.21.Managed Oracle.Managed Oracle12
-
-INSERT ALL
-	INTO "Test3664Item" ("Id", "TestId") VALUES (11,1)
-	INTO "Test3664Item" ("Id", "TestId") VALUES (12,1)
-SELECT * FROM dual
 
 BeforeExecute
 BeginTransaction(ReadCommitted)
@@ -136,28 +65,4 @@ SELECT
 	t1."Id"
 FROM
 	"Test3664" t1
-
-BeforeExecute
--- Oracle.21.Managed Oracle.Managed Oracle12
-
-BEGIN
-	EXECUTE IMMEDIATE 'DROP TABLE "Test3664Item"';
-EXCEPTION
-	WHEN OTHERS THEN
-		IF SQLCODE != -942 THEN
-			RAISE;
-		END IF;
-END;
-
-BeforeExecute
--- Oracle.21.Managed Oracle.Managed Oracle12
-
-BEGIN
-	EXECUTE IMMEDIATE 'DROP TABLE "Test3664"';
-EXCEPTION
-	WHEN OTHERS THEN
-		IF SQLCODE != -942 THEN
-			RAISE;
-		END IF;
-END;
 

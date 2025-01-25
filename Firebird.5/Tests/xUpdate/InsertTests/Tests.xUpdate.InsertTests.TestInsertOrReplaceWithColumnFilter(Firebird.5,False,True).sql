@@ -1,31 +1,5 @@
 ﻿BeforeExecute
 -- Firebird.5 Firebird4
-
-EXECUTE BLOCK AS BEGIN
-	IF (EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'TestInsertOrReplaceTable')) THEN
-		EXECUTE STATEMENT 'DROP TABLE "TestInsertOrReplaceTable"';
-END
-
-BeforeExecute
--- Firebird.5 Firebird4
-
-EXECUTE BLOCK AS BEGIN
-	IF (NOT EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'TestInsertOrReplaceTable')) THEN
-		EXECUTE STATEMENT '
-			CREATE TABLE "TestInsertOrReplaceTable"
-			(
-				ID           Int                                    NOT NULL,
-				"FirstName"  VarChar(255) CHARACTER SET UNICODE_FSS,
-				"LastName"   VarChar(255) CHARACTER SET UNICODE_FSS,
-				"MiddleName" VarChar(255) CHARACTER SET UNICODE_FSS,
-
-				CONSTRAINT "PK_TestInsertOrReplaceTable" PRIMARY KEY (ID)
-			)
-		';
-END
-
-BeforeExecute
--- Firebird.5 Firebird4
 DECLARE @ID Integer -- Int32
 SET     @ID = 0
 DECLARE @FirstName VarChar(27) -- String
@@ -126,12 +100,4 @@ FROM
 WHERE
 	"x"."FirstName" = @FirstName
 FETCH NEXT 1 ROWS ONLY
-
-BeforeExecute
--- Firebird.5 Firebird4
-
-EXECUTE BLOCK AS BEGIN
-	IF (EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'TestInsertOrReplaceTable')) THEN
-		EXECUTE STATEMENT 'DROP TABLE "TestInsertOrReplaceTable"';
-END
 

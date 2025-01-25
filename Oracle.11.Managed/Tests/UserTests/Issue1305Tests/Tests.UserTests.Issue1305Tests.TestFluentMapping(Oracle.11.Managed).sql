@@ -1,42 +1,6 @@
 ﻿BeforeExecute
 -- Oracle.11.Managed Oracle11
 
-BEGIN
-	EXECUTE IMMEDIATE 'DROP TABLE "FluentMapping"';
-EXCEPTION
-	WHEN OTHERS THEN
-		IF SQLCODE != -942 THEN
-			RAISE;
-		END IF;
-END;
-
-BeforeExecute
--- Oracle.11.Managed Oracle11
-
-BEGIN
-	EXECUTE IMMEDIATE '
-		CREATE TABLE "FluentMapping"
-		(
-			"RecordID"       Int       NOT NULL,
-			"EffectiveStart" timestamp NOT NULL,
-			"EffectiveEnd"   timestamp     NULL,
-			"Key"            Int       NOT NULL,
-			"Unordered1"     Int       NOT NULL,
-			"Unordered2"     Int       NOT NULL,
-			"Audit1ID"       Int       NOT NULL,
-			"Audit2ID"       Int       NOT NULL
-		)
-	';
-EXCEPTION
-	WHEN OTHERS THEN
-		IF SQLCODE != -955 THEN
-			RAISE;
-		END IF;
-END;
-
-BeforeExecute
--- Oracle.11.Managed Oracle11
-
 SELECT USER FROM DUAL
 
 BeforeExecute
@@ -407,15 +371,3 @@ SELECT * FROM TABLE(TEST.TEST_TABLE_FUNCTION(NULL))
 
 BeforeExecute
 RollbackTransaction
-BeforeExecute
--- Oracle.11.Managed Oracle11
-
-BEGIN
-	EXECUTE IMMEDIATE 'DROP TABLE "FluentMapping"';
-EXCEPTION
-	WHEN OTHERS THEN
-		IF SQLCODE != -942 THEN
-			RAISE;
-		END IF;
-END;
-

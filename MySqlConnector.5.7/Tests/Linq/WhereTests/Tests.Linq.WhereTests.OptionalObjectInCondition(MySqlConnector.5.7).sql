@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-DECLARE @FirstName VarChar(1) -- String
-SET     @FirstName = '1'
+DECLARE @p VarChar(1) -- String
+SET     @p = '1'
 
 SELECT
 	`r`.`FirstName`,
@@ -12,7 +12,7 @@ SELECT
 FROM
 	`Person` `r`
 WHERE
-	`r`.`FirstName` = @FirstName
+	`r`.`FirstName` = @p
 
 BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
@@ -26,12 +26,12 @@ SELECT
 FROM
 	`Person` `r`
 WHERE
-	`r`.`FirstName` IS NULL
+	1 = 0
 
 BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-DECLARE @FirstName VarChar(1) -- String
-SET     @FirstName = '1'
+DECLARE @p VarChar(1) -- String
+SET     @p = '1'
 
 SELECT
 	`r`.`FirstName`,
@@ -42,5 +42,5 @@ SELECT
 FROM
 	`Person` `r`
 WHERE
-	`r`.`FirstName` = @FirstName
+	`r`.`FirstName` = @p
 

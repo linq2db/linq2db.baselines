@@ -1,41 +1,12 @@
 ﻿BeforeExecute
 -- DB2 DB2.LUW DB2LUW
-
-BEGIN
-	DECLARE CONTINUE HANDLER FOR SQLSTATE '42704' BEGIN END;
-	EXECUTE IMMEDIATE 'DROP TABLE "testparams"';
-END
-
-BeforeExecute
--- DB2 DB2.LUW DB2LUW
-
-BEGIN
-	DECLARE CONTINUE HANDLER FOR SQLSTATE '42710' BEGIN END;
-	EXECUTE IMMEDIATE '
-		CREATE TABLE "testparams"
-		(
-			"_p" Int NOT NULL
-		)
-	';
-END
-
-BeforeExecute
--- DB2 DB2.LUW DB2LUW
 DECLARE @p Integer(4) -- Int32
 SET     @p = 2
 
 UPDATE
 	"testparams" "t"
 SET
-	"_p" = CAST(@p AS Int)
+	"_p" = @p
 WHERE
 	"t"."_p" = 1
-
-BeforeExecute
--- DB2 DB2.LUW DB2LUW
-
-BEGIN
-	DECLARE CONTINUE HANDLER FOR SQLSTATE '42704' BEGIN END;
-	EXECUTE IMMEDIATE 'DROP TABLE "testparams"';
-END
 

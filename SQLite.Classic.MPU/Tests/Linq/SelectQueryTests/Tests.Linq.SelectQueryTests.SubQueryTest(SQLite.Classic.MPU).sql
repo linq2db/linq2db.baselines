@@ -1,35 +1,9 @@
 ﻿BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
-DROP TABLE IF EXISTS [SampleClass]
-
-BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
-
-CREATE TABLE IF NOT EXISTS [SampleClass]
-(
-	[Id]    INTEGER NOT NULL,
-	[Value] INTEGER NOT NULL
-)
-
-BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
-
-INSERT INTO [SampleClass]
-(
-	[Id],
-	[Value]
-)
-VALUES
-(1,100)
-
-BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
-
 SELECT
 	[t_1].[Id],
 	[t_1].[Value],
-	[t2].[not_null],
 	[t2].[Value1],
 	[t2].[Value2]
 FROM
@@ -37,8 +11,7 @@ FROM
 		LEFT JOIN (
 			SELECT
 				[t1].[Value1],
-				[t1].[Value2],
-				1 as [not_null]
+				[t1].[Value2]
 			FROM
 				(
 					SELECT
@@ -55,9 +28,4 @@ FROM
 				) [t1]
 			LIMIT 1
 		) [t2] ON 1=1
-
-BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
-
-DROP TABLE IF EXISTS [SampleClass]
 

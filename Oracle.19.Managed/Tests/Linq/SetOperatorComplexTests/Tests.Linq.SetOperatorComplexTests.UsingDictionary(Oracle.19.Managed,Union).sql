@@ -1,143 +1,8 @@
 ﻿BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12
 
-BEGIN
-	EXECUTE IMMEDIATE 'DROP TABLE "Author"';
-EXCEPTION
-	WHEN OTHERS THEN
-		IF SQLCODE != -942 THEN
-			RAISE;
-		END IF;
-END;
-
-BeforeExecute
--- Oracle.19.Managed Oracle.Managed Oracle12
-
-BEGIN
-	EXECUTE IMMEDIATE '
-		CREATE TABLE "Author"
-		(
-			"AuthorId"   Int          NOT NULL,
-			"AuthorName" VarChar(255)     NULL,
-
-			CONSTRAINT "PK_Author" PRIMARY KEY ("AuthorId")
-		)
-	';
-EXCEPTION
-	WHEN OTHERS THEN
-		IF SQLCODE != -955 THEN
-			RAISE;
-		END IF;
-END;
-
-BeforeExecute
--- Oracle.19.Managed Oracle.Managed Oracle12
-
-INSERT ALL
-	INTO "Author" ("AuthorId", "AuthorName") VALUES (1,'Stephen King')
-	INTO "Author" ("AuthorId", "AuthorName") VALUES (2,'Harry Harrison')
-	INTO "Author" ("AuthorId", "AuthorName") VALUES (3,'Roger Joseph Zelazny')
-SELECT * FROM dual
-
-BeforeExecute
--- Oracle.19.Managed Oracle.Managed Oracle12
-
-BEGIN
-	EXECUTE IMMEDIATE 'DROP TABLE "Book"';
-EXCEPTION
-	WHEN OTHERS THEN
-		IF SQLCODE != -942 THEN
-			RAISE;
-		END IF;
-END;
-
-BeforeExecute
--- Oracle.19.Managed Oracle.Managed Oracle12
-
-BEGIN
-	EXECUTE IMMEDIATE '
-		CREATE TABLE "Book"
-		(
-			"BookId"        Int          NOT NULL,
-			"Discriminator" VarChar(255)     NULL,
-			"BookName"      VarChar(255)     NULL,
-			"RomanScore"    Int              NULL,
-			"NovelScore"    Int              NULL,
-
-			CONSTRAINT "PK_Book" PRIMARY KEY ("BookId")
-		)
-	';
-EXCEPTION
-	WHEN OTHERS THEN
-		IF SQLCODE != -955 THEN
-			RAISE;
-		END IF;
-END;
-
-BeforeExecute
--- Oracle.19.Managed Oracle.Managed Oracle12
-
-INSERT ALL
-	INTO "Book" ("BookId", "Discriminator", "BookName", "RomanScore", "NovelScore") VALUES (11,'Roman','Lisey''s Story[',4,0)
-	INTO "Book" ("BookId", "Discriminator", "BookName", "RomanScore", "NovelScore") VALUES (12,'Novel','Duma Key',0,0)
-	INTO "Book" ("BookId", "Discriminator", "BookName", "RomanScore", "NovelScore") VALUES (13,'Roman','Just After Sunset',3,0)
-	INTO "Book" ("BookId", "Discriminator", "BookName", "RomanScore", "NovelScore") VALUES (21,'Roman','Deathworld',1,0)
-	INTO "Book" ("BookId", "Discriminator", "BookName", "RomanScore", "NovelScore") VALUES (22,'Novel','The Stainless Steel Rat',0,0)
-	INTO "Book" ("BookId", "Discriminator", "BookName", "RomanScore", "NovelScore") VALUES (23,'Roman','Planet of the Damned',0,0)
-	INTO "Book" ("BookId", "Discriminator", "BookName", "RomanScore", "NovelScore") VALUES (31,'Roman','Blood of Amber',5,0)
-	INTO "Book" ("BookId", "Discriminator", "BookName", "RomanScore", "NovelScore") VALUES (32,'Novel','Knight of Shadows',0,0)
-	INTO "Book" ("BookId", "Discriminator", "BookName", "RomanScore", "NovelScore") VALUES (33,'Roman','The Chronicles of Amber',7,0)
-SELECT * FROM dual
-
-BeforeExecute
--- Oracle.19.Managed Oracle.Managed Oracle12
-
-BEGIN
-	EXECUTE IMMEDIATE 'DROP TABLE "BookAuthor"';
-EXCEPTION
-	WHEN OTHERS THEN
-		IF SQLCODE != -942 THEN
-			RAISE;
-		END IF;
-END;
-
-BeforeExecute
--- Oracle.19.Managed Oracle.Managed Oracle12
-
-BEGIN
-	EXECUTE IMMEDIATE '
-		CREATE TABLE "BookAuthor"
-		(
-			"FkBookId"   Int NOT NULL,
-			"FkAuthorId" Int NOT NULL
-		)
-	';
-EXCEPTION
-	WHEN OTHERS THEN
-		IF SQLCODE != -955 THEN
-			RAISE;
-		END IF;
-END;
-
-BeforeExecute
--- Oracle.19.Managed Oracle.Managed Oracle12
-
-INSERT ALL
-	INTO "BookAuthor" ("FkBookId", "FkAuthorId") VALUES (11,1)
-	INTO "BookAuthor" ("FkBookId", "FkAuthorId") VALUES (12,1)
-	INTO "BookAuthor" ("FkBookId", "FkAuthorId") VALUES (13,1)
-	INTO "BookAuthor" ("FkBookId", "FkAuthorId") VALUES (21,2)
-	INTO "BookAuthor" ("FkBookId", "FkAuthorId") VALUES (22,2)
-	INTO "BookAuthor" ("FkBookId", "FkAuthorId") VALUES (23,2)
-	INTO "BookAuthor" ("FkBookId", "FkAuthorId") VALUES (31,3)
-	INTO "BookAuthor" ("FkBookId", "FkAuthorId") VALUES (32,3)
-	INTO "BookAuthor" ("FkBookId", "FkAuthorId") VALUES (33,3)
-SELECT * FROM dual
-
-BeforeExecute
--- Oracle.19.Managed Oracle.Managed Oracle12
-
 SELECT
+	CAST('Discriminator' AS VarChar(255)),
 	a_Book."Discriminator",
 	a_Book."BookName",
 	a_Book."BookName"
@@ -149,6 +14,7 @@ WHERE
 	a_Book."Discriminator" = 'Roman'
 UNION
 SELECT
+	CAST('Discriminator' AS VarChar(255)),
 	a_Book_1."Discriminator",
 	a_Book_1."BookName",
 	a_Book_1."BookName"
@@ -212,40 +78,4 @@ SELECT
 	t1."AuthorName"
 FROM
 	"Author" t1
-
-BeforeExecute
--- Oracle.19.Managed Oracle.Managed Oracle12
-
-BEGIN
-	EXECUTE IMMEDIATE 'DROP TABLE "Author"';
-EXCEPTION
-	WHEN OTHERS THEN
-		IF SQLCODE != -942 THEN
-			RAISE;
-		END IF;
-END;
-
-BeforeExecute
--- Oracle.19.Managed Oracle.Managed Oracle12
-
-BEGIN
-	EXECUTE IMMEDIATE 'DROP TABLE "Book"';
-EXCEPTION
-	WHEN OTHERS THEN
-		IF SQLCODE != -942 THEN
-			RAISE;
-		END IF;
-END;
-
-BeforeExecute
--- Oracle.19.Managed Oracle.Managed Oracle12
-
-BEGIN
-	EXECUTE IMMEDIATE 'DROP TABLE "BookAuthor"';
-EXCEPTION
-	WHEN OTHERS THEN
-		IF SQLCODE != -942 THEN
-			RAISE;
-		END IF;
-END;
 

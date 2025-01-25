@@ -1,51 +1,5 @@
 ﻿BeforeExecute
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
-DROP TABLE IF EXISTS `T1`
-
-BeforeExecute
--- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
-CREATE TABLE IF NOT EXISTS `T1`
-(
-	`InstrumentId`         INT           NOT NULL,
-	`InstrumentCode`       VARCHAR(4000)     NULL,
-	`CreateDate`           DATETIME      NOT NULL,
-	`SourceInstrumentCode` VARCHAR(4000)     NULL,
-
-	CONSTRAINT `PK_T1` PRIMARY KEY CLUSTERED (`InstrumentId`)
-)
-
-BeforeExecute
--- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
-DROP TABLE IF EXISTS `T2`
-
-BeforeExecute
--- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
-CREATE TABLE IF NOT EXISTS `T2`
-(
-	`InstrumentId` INT NOT NULL,
-	`IndexId`      INT NOT NULL
-)
-
-BeforeExecute
--- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
-DROP TABLE IF EXISTS `T3`
-
-BeforeExecute
--- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
-CREATE TABLE IF NOT EXISTS `T3`
-(
-	`InstrumentId` INT NOT NULL,
-	`IndexId`      INT NOT NULL
-)
-
-BeforeExecute
--- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 DECLARE @InstrumentId Int32
 SET     @InstrumentId = 1
 DECLARE @IndexId Int32
@@ -210,19 +164,4 @@ FROM
 	) `t5`
 ORDER BY
 	`t5`.`SourceInstrumentCode`
-
-BeforeExecute
--- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
-DROP TABLE IF EXISTS `T3`
-
-BeforeExecute
--- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
-DROP TABLE IF EXISTS `T2`
-
-BeforeExecute
--- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
-DROP TABLE IF EXISTS `T1`
 

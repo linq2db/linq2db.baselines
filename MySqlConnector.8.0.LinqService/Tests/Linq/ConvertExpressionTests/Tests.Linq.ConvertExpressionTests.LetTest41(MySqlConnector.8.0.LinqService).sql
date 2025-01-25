@@ -2,18 +2,14 @@
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 
 SELECT
-	CASE
-		WHEN EXISTS(
-			SELECT
-				*
-			FROM
-				`Child` `c_3`
-			WHERE
-				`c_3`.`ParentID` = `p`.`ParentID` AND `c_3`.`ChildID` > -100
-		)
-			THEN 1
-		ELSE 0
-	END,
+	EXISTS(
+		SELECT
+			*
+		FROM
+			`Child` `c_3`
+		WHERE
+			`c_3`.`ParentID` = `p`.`ParentID` AND `c_3`.`ChildID` > -100
+	),
 	(
 		SELECT
 			COUNT(*)

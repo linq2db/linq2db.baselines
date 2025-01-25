@@ -1,52 +1,5 @@
 ﻿BeforeExecute
 -- SqlServer.2008
-
-IF (OBJECT_ID(N'[InfeedAdvicePositionDTO]', N'U') IS NOT NULL)
-	DROP TABLE [InfeedAdvicePositionDTO]
-
-BeforeExecute
--- SqlServer.2008
-
-IF (OBJECT_ID(N'[InfeedAdvicePositionDTO]', N'U') IS NULL)
-	CREATE TABLE [InfeedAdvicePositionDTO]
-	(
-		[Id] Int NOT NULL
-	)
-
-BeforeExecute
--- SqlServer.2008
-
-IF (OBJECT_ID(N'[InventoryResourceDTO]', N'U') IS NOT NULL)
-	DROP TABLE [InventoryResourceDTO]
-
-BeforeExecute
--- SqlServer.2008
-
-IF (OBJECT_ID(N'[InventoryResourceDTO]', N'U') IS NULL)
-	CREATE TABLE [InventoryResourceDTO]
-	(
-		[InfeedAdviceID] Int NOT NULL,
-		[Quantity]       Int NOT NULL
-	)
-
-BeforeExecute
--- SqlServer.2008
-
-IF (OBJECT_ID(N'[MlogInfeedAddonsDTO]', N'U') IS NOT NULL)
-	DROP TABLE [MlogInfeedAddonsDTO]
-
-BeforeExecute
--- SqlServer.2008
-
-IF (OBJECT_ID(N'[MlogInfeedAddonsDTO]', N'U') IS NULL)
-	CREATE TABLE [MlogInfeedAddonsDTO]
-	(
-		[Id] Int NOT NULL,
-		[Nr] Int NOT NULL
-	)
-
-BeforeExecute
--- SqlServer.2008
 DECLARE @Id Int -- Int32
 SET     @Id = 1
 
@@ -121,22 +74,4 @@ FROM
 			WHERE
 				[ir].[Id] = [infeed].[Id]
 		) [t1]
-
-BeforeExecute
--- SqlServer.2008
-
-IF (OBJECT_ID(N'[MlogInfeedAddonsDTO]', N'U') IS NOT NULL)
-	DROP TABLE [MlogInfeedAddonsDTO]
-
-BeforeExecute
--- SqlServer.2008
-
-IF (OBJECT_ID(N'[InventoryResourceDTO]', N'U') IS NOT NULL)
-	DROP TABLE [InventoryResourceDTO]
-
-BeforeExecute
--- SqlServer.2008
-
-IF (OBJECT_ID(N'[InfeedAdvicePositionDTO]', N'U') IS NOT NULL)
-	DROP TABLE [InfeedAdvicePositionDTO]
 

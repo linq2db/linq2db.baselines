@@ -1,29 +1,17 @@
 ﻿BeforeExecute
 -- Informix.DB2 Informix
-
-DROP TABLE IF EXISTS ValueConversion
-
-BeforeExecute
--- Informix.DB2 Informix
-
-CREATE TABLE IF NOT EXISTS ValueConversion
-(
-	Id                      Int                       NOT NULL,
-	Value1                  NVarChar(200)                 NULL,
-	Value2                  NVarChar(200)                 NULL,
-	Enum                    NVarChar(50)              NOT NULL,
-	EnumNullable            VarChar(50)                   NULL,
-	EnumWithNull            VarChar(50)                   NULL,
-	EnumWithNullDeclarative VarChar(50)                   NULL,
-	BoolValue               VarChar(1)                NOT NULL,
-	AnotherBoolValue        VarChar(1)                NOT NULL,
-	DateTimeNullable        datetime year to fraction     NULL,
-
-	PRIMARY KEY (Id)
-)
-
-BeforeExecute
--- Informix.DB2 Informix
+DECLARE @Id Integer(4) -- Int32
+SET     @Id = 1
+DECLARE @Value1 VarChar(2) -- String
+SET     @Value1 = '[]'
+DECLARE @Enum VarChar(6) -- String
+SET     @Enum = 'Value1'
+DECLARE @Value2 VarChar(22) -- String
+SET     @Value2 = '[{"Value":"inserted"}]'
+DECLARE @BoolValue VarChar(1) -- String
+SET     @BoolValue = 'Y'
+DECLARE @AnotherBoolValue VarChar(1) -- String
+SET     @AnotherBoolValue = 'T'
 
 INSERT INTO ValueConversion
 (
@@ -36,12 +24,12 @@ INSERT INTO ValueConversion
 )
 VALUES
 (
-	1,
-	'[]',
-	'Value1',
-	'[{"Value":"inserted"}]',
-	'Y',
-	'T'
+	@Id,
+	@Value1,
+	@Enum,
+	@Value2,
+	@BoolValue,
+	@AnotherBoolValue
 )
 
 BeforeExecute
@@ -65,6 +53,18 @@ WHERE
 
 BeforeExecute
 -- Informix.DB2 Informix
+DECLARE @Id Integer(4) -- Int32
+SET     @Id = 2
+DECLARE @Value1 VarChar -- String
+SET     @Value1 = NULL
+DECLARE @Value2 VarChar -- String
+SET     @Value2 = NULL
+DECLARE @Enum VarChar(6) -- String
+SET     @Enum = 'Value2'
+DECLARE @BoolValue VarChar(1) -- String
+SET     @BoolValue = 'N'
+DECLARE @AnotherBoolValue VarChar(1) -- String
+SET     @AnotherBoolValue = 'F'
 
 INSERT INTO ValueConversion
 (
@@ -77,12 +77,12 @@ INSERT INTO ValueConversion
 )
 VALUES
 (
-	2,
-	NULL,
-	NULL,
-	'Value2',
-	'N',
-	'F'
+	@Id,
+	@Value1,
+	@Value2,
+	@Enum,
+	@BoolValue,
+	@AnotherBoolValue
 )
 
 BeforeExecute
@@ -180,9 +180,4 @@ SELECT
 	COUNT(*)
 FROM
 	ValueConversion t1
-
-BeforeExecute
--- Informix.DB2 Informix
-
-DROP TABLE IF EXISTS ValueConversion
 

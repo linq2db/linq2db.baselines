@@ -1,75 +1,5 @@
 ﻿BeforeExecute
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
-DROP TABLE IF EXISTS `TrimTestTable`
-
-BeforeExecute
--- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
-CREATE TABLE IF NOT EXISTS `TrimTestTable`
-(
-	`ID`   INT         NOT NULL,
-	`Data` VARCHAR(50)     NULL,
-
-	CONSTRAINT `PK_TrimTestTable` PRIMARY KEY CLUSTERED (`ID`)
-)
-
-BeforeExecute
--- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-DECLARE @ID Int32
-SET     @ID = 1
-DECLARE @Data VarChar(9) -- String
-SET     @Data = '***XXX***'
-
-INSERT INTO `TrimTestTable`
-(
-	`ID`,
-	`Data`
-)
-VALUES
-(
-	@ID,
-	@Data
-)
-
-BeforeExecute
--- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-DECLARE @ID Int32
-SET     @ID = 2
-DECLARE @Data VarChar(9) -- String
-SET     @Data = '***HHH***'
-
-INSERT INTO `TrimTestTable`
-(
-	`ID`,
-	`Data`
-)
-VALUES
-(
-	@ID,
-	@Data
-)
-
-BeforeExecute
--- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-DECLARE @ID Int32
-SET     @ID = 3
-DECLARE @Data VarChar(9) -- String
-SET     @Data = '***VVV***'
-
-INSERT INTO `TrimTestTable`
-(
-	`ID`,
-	`Data`
-)
-VALUES
-(
-	@ID,
-	@Data
-)
-
-BeforeExecute
--- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 DECLARE @Data VarChar(9) -- String
 SET     @Data = '***III***'
 DECLARE @ID Int32
@@ -129,9 +59,4 @@ FROM
 	`TrimTestTable` `r`
 ORDER BY
 	`r`.`ID`
-
-BeforeExecute
--- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
-DROP TABLE IF EXISTS `TrimTestTable`
 

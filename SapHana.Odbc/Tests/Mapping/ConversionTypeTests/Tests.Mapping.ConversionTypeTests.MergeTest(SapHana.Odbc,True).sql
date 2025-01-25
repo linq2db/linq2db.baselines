@@ -1,50 +1,6 @@
 ﻿BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
-DROP TABLE "TrimTestTable"
-
-BeforeExecute
--- SapHana.Odbc SapHanaOdbc
-
-CREATE COLUMN TABLE "TrimTestTable"
-(
-	"ID"   Integer      NOT NULL,
-	"Data" NVarChar(50)     NULL,
-
-	PRIMARY KEY ("ID")
-)
-
-BeforeExecute
--- SapHana.Odbc SapHanaOdbc
-
-INSERT INTO "TrimTestTable"
-(
-	"ID",
-	"Data"
-)
-VALUES
-(
-	1,
-	'***XXX***'
-)
-
-BeforeExecute
--- SapHana.Odbc SapHanaOdbc
-
-INSERT INTO "TrimTestTable"
-(
-	"ID",
-	"Data"
-)
-VALUES
-(
-	3,
-	'***VVV***'
-)
-
-BeforeExecute
--- SapHana.Odbc SapHanaOdbc
-
 MERGE INTO "TrimTestTable" "Target"
 USING (
 	SELECT 1 AS "source_ID", '***OOO***' AS "source_Data" FROM DUMMY
@@ -115,9 +71,4 @@ FROM
 	"TrimTestTable" "r"
 ORDER BY
 	"r"."ID"
-
-BeforeExecute
--- SapHana.Odbc SapHanaOdbc
-
-DROP TABLE "TrimTestTable"
 

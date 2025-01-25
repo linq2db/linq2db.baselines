@@ -1,46 +1,5 @@
 ﻿BeforeExecute
 -- SQLite.Classic SQLite
-
-DROP TABLE IF EXISTS [InfeedAdvicePositionDTO]
-
-BeforeExecute
--- SQLite.Classic SQLite
-
-CREATE TABLE IF NOT EXISTS [InfeedAdvicePositionDTO]
-(
-	[Id] INTEGER NOT NULL
-)
-
-BeforeExecute
--- SQLite.Classic SQLite
-
-DROP TABLE IF EXISTS [InventoryResourceDTO]
-
-BeforeExecute
--- SQLite.Classic SQLite
-
-CREATE TABLE IF NOT EXISTS [InventoryResourceDTO]
-(
-	[InfeedAdviceID] INTEGER NOT NULL,
-	[Quantity]       INTEGER NOT NULL
-)
-
-BeforeExecute
--- SQLite.Classic SQLite
-
-DROP TABLE IF EXISTS [MlogInfeedAddonsDTO]
-
-BeforeExecute
--- SQLite.Classic SQLite
-
-CREATE TABLE IF NOT EXISTS [MlogInfeedAddonsDTO]
-(
-	[Id] INTEGER NOT NULL,
-	[Nr] INTEGER NOT NULL
-)
-
-BeforeExecute
--- SQLite.Classic SQLite
 DECLARE @Id  -- Int32
 SET     @Id = 1
 
@@ -115,19 +74,4 @@ FROM
 				[MlogInfeedAddonsDTO] [ir]
 		) [t1] ON [t1].[Id] = [infeed].[Id] AND [t1].[rn] <= 1
 LIMIT 1
-
-BeforeExecute
--- SQLite.Classic SQLite
-
-DROP TABLE IF EXISTS [MlogInfeedAddonsDTO]
-
-BeforeExecute
--- SQLite.Classic SQLite
-
-DROP TABLE IF EXISTS [InventoryResourceDTO]
-
-BeforeExecute
--- SQLite.Classic SQLite
-
-DROP TABLE IF EXISTS [InfeedAdvicePositionDTO]
 

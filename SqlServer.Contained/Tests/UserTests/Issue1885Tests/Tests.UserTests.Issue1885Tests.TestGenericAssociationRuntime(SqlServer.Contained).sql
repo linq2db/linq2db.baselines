@@ -1,20 +1,6 @@
 ﻿BeforeExecute
 -- SqlServer.Contained SqlServer.2019
 
-DROP TABLE IF EXISTS [User]
-
-BeforeExecute
--- SqlServer.Contained SqlServer.2019
-
-IF (OBJECT_ID(N'[User]', N'U') IS NULL)
-	CREATE TABLE [User]
-	(
-		[Id] Int NOT NULL
-	)
-
-BeforeExecute
--- SqlServer.Contained SqlServer.2019
-
 INSERT INTO [User]
 (
 	[Id]
@@ -40,22 +26,17 @@ BeforeExecute
 -- SqlServer.Contained SqlServer.2019
 
 SELECT
-	[t1].[not_null],
+	[t1].[cond],
 	[t1].[Data_1]
 FROM
 	[User] [t]
 		LEFT JOIN (
 			SELECT
 				[a_Data].[Data] as [Data_1],
-				1 as [not_null]
+				1 as [cond]
 			FROM
 				(
 					SELECT 'Testing' AS Data
 				) [a_Data]
 		) [t1] ON 1=1
-
-BeforeExecute
--- SqlServer.Contained SqlServer.2019
-
-DROP TABLE IF EXISTS [User]
 

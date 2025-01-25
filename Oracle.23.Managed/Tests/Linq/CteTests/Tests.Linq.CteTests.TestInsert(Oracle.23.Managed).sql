@@ -1,36 +1,6 @@
 ﻿BeforeExecute
 -- Oracle.23.Managed Oracle.Managed Oracle12
 
-BEGIN
-	EXECUTE IMMEDIATE 'DROP TABLE "CteChild"';
-EXCEPTION
-	WHEN OTHERS THEN
-		IF SQLCODE != -942 THEN
-			RAISE;
-		END IF;
-END;
-
-BeforeExecute
--- Oracle.23.Managed Oracle.Managed Oracle12
-
-BEGIN
-	EXECUTE IMMEDIATE '
-		CREATE TABLE "CteChild"
-		(
-			"ChildID"  Int NOT NULL,
-			"ParentID" Int NOT NULL
-		)
-	';
-EXCEPTION
-	WHEN OTHERS THEN
-		IF SQLCODE != -955 THEN
-			RAISE;
-		END IF;
-END;
-
-BeforeExecute
--- Oracle.23.Managed Oracle.Managed Oracle12
-
 INSERT INTO "CteChild"
 (
 	"ChildID",
@@ -83,23 +53,11 @@ SELECT
 	c4."ChildID",
 	c4."ParentID"
 FROM
-	"Child" p
-		INNER JOIN "Child" c4 ON c4."ParentID" = p."ParentID"
+	"Child" c_1
+		INNER JOIN "Child" c4 ON c4."ParentID" = c_1."ParentID"
 WHERE
-	p."ParentID" > 1 AND MOD(c4."ParentID", 2) = 0
+	c_1."ParentID" > 1 AND MOD(c4."ParentID", 2) = 0
 ORDER BY
 	c4."ChildID",
 	c4."ParentID"
-
-BeforeExecute
--- Oracle.23.Managed Oracle.Managed Oracle12
-
-BEGIN
-	EXECUTE IMMEDIATE 'DROP TABLE "CteChild"';
-EXCEPTION
-	WHEN OTHERS THEN
-		IF SQLCODE != -942 THEN
-			RAISE;
-		END IF;
-END;
 

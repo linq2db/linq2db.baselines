@@ -1,44 +1,5 @@
 ﻿BeforeExecute
 -- Oracle.18.Managed Oracle.Managed Oracle12
-
-BEGIN
-	EXECUTE IMMEDIATE 'DROP TABLE "GuidTable"';
-EXCEPTION
-	WHEN OTHERS THEN
-		IF SQLCODE != -942 THEN
-			RAISE;
-		END IF;
-END;
-
-BeforeExecute
--- Oracle.18.Managed Oracle.Managed Oracle12
-
-BEGIN
-	EXECUTE IMMEDIATE '
-		CREATE TABLE "GuidTable"
-		(
-			"Id"             Int     NOT NULL,
-			"Column"         Raw(16) NOT NULL,
-			"ColumnNullable" Raw(16)     NULL
-		)
-	';
-EXCEPTION
-	WHEN OTHERS THEN
-		IF SQLCODE != -955 THEN
-			RAISE;
-		END IF;
-END;
-
-BeforeExecute
--- Oracle.18.Managed Oracle.Managed Oracle12
-
-INSERT ALL
-	INTO "GuidTable" ("Id", "Column", "ColumnNullable") VALUES (1,HEXTORAW('3D667BBCDE0F27438F925D8CC3A11D11'),NULL)
-	INTO "GuidTable" ("Id", "Column", "ColumnNullable") VALUES (2,HEXTORAW('0D6048A921DE744F8AC29516B287076E'),HEXTORAW('A57339BD2343D84D9F4FDF9F93E2A627'))
-SELECT * FROM dual
-
-BeforeExecute
--- Oracle.18.Managed Oracle.Managed Oracle12
 DECLARE @Column_1 Raw(16) -- Binary
 SET     @Column_1 = HEXTORAW('0D6048A921DE744F8AC29516B287076E')
 DECLARE @ColumnNullable Raw(16) -- Binary
@@ -179,16 +140,4 @@ FROM
 	"GuidTable" t1
 ORDER BY
 	t1."Id"
-
-BeforeExecute
--- Oracle.18.Managed Oracle.Managed Oracle12
-
-BEGIN
-	EXECUTE IMMEDIATE 'DROP TABLE "GuidTable"';
-EXCEPTION
-	WHEN OTHERS THEN
-		IF SQLCODE != -942 THEN
-			RAISE;
-		END IF;
-END;
 

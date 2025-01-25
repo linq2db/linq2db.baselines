@@ -1,23 +1,5 @@
 ﻿BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-
-DROP TABLE IF EXISTS [PR_1598_Insert_Enum_Table]
-
-BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
-
-CREATE TABLE IF NOT EXISTS [PR_1598_Insert_Enum_Table]
-(
-	[Id]     INTEGER       NOT NULL,
-	[Name]   NVarChar(255)     NULL,
-	[Age]    INTEGER           NULL,
-	[Gender] NVarChar(6)       NULL,
-
-	CONSTRAINT [PK_PR_1598_Insert_Enum_Table] PRIMARY KEY ([Id])
-)
-
-BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
 DECLARE @Id  -- Int32
 SET     @Id = 1
 DECLARE @Name NVarChar(3) -- String
@@ -91,9 +73,4 @@ FROM
 WHERE
 	[t].[Id] = 2
 LIMIT 1
-
-BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
-
-DROP TABLE IF EXISTS [PR_1598_Insert_Enum_Table]
 

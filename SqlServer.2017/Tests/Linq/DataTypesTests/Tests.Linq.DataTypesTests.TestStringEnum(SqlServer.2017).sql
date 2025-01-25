@@ -1,34 +1,5 @@
 ﻿BeforeExecute
 -- SqlServer.2017
-
-DROP TABLE IF EXISTS [StringEnumTable]
-
-BeforeExecute
--- SqlServer.2017
-
-IF (OBJECT_ID(N'[StringEnumTable]', N'U') IS NULL)
-	CREATE TABLE [StringEnumTable]
-	(
-		[Id]             Int         NOT NULL,
-		[Column]         NVarChar(8) NOT NULL,
-		[ColumnNullable] NVarChar(8)     NULL
-	)
-
-BeforeExecute
--- SqlServer.2017
-
-INSERT INTO [StringEnumTable]
-(
-	[Id],
-	[Column],
-	[ColumnNullable]
-)
-VALUES
-(1,N'val=1',NULL),
-(2,N'value=2',N'value=33')
-
-BeforeExecute
--- SqlServer.2017
 DECLARE @Column NVarChar(4000) -- String
 SET     @Column = N'value=2'
 DECLARE @ColumnNullable NVarChar(4000) -- String
@@ -171,9 +142,4 @@ FROM
 	[StringEnumTable] [t1]
 ORDER BY
 	[t1].[Id]
-
-BeforeExecute
--- SqlServer.2017
-
-DROP TABLE IF EXISTS [StringEnumTable]
 

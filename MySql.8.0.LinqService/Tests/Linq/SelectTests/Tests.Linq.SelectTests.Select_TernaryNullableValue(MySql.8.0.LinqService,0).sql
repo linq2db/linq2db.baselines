@@ -2,10 +2,7 @@
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
 DECLARE @value Int32
 SET     @value = 0
-DECLARE @value_1 Int32
-SET     @value_1 = 0
 
 SELECT
-	@value as `c1`,
-	@value_1 as `c2`
+	@value as `c1`
 

@@ -1,24 +1,6 @@
 ﻿BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
-DROP TABLE "Issue3323Table"
-
-BeforeExecute
--- SapHana.Odbc SapHanaOdbc
-
-CREATE COLUMN TABLE "Issue3323Table"
-(
-	"Id"       Integer       NOT NULL,
-	"FistName" NVarChar(255)     NULL,
-	"LastName" NVarChar(255)     NULL,
-	"Text"     NVarChar(255) NOT NULL,
-
-	PRIMARY KEY ("Id")
-)
-
-BeforeExecute
--- SapHana.Odbc SapHanaOdbc
-
 INSERT INTO "Issue3323Table"
 (
 	"Id",
@@ -50,9 +32,4 @@ SELECT
 	"t2"."FistName" || ' ' || "t2"."LastName"
 FROM
 	"Issue3323Table" "t2"
-
-BeforeExecute
--- SapHana.Odbc SapHanaOdbc
-
-DROP TABLE "Issue3323Table"
 

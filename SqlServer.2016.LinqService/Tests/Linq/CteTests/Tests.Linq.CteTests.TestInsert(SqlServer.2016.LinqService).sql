@@ -1,21 +1,6 @@
 ﻿BeforeExecute
 -- SqlServer.2016
 
-DROP TABLE IF EXISTS [CteChild]
-
-BeforeExecute
--- SqlServer.2016
-
-IF (OBJECT_ID(N'[CteChild]', N'U') IS NULL)
-	CREATE TABLE [CteChild]
-	(
-		[ChildID]  Int NOT NULL,
-		[ParentID] Int NOT NULL
-	)
-
-BeforeExecute
--- SqlServer.2016
-
 WITH [CTE1_] ([ParentID])
 AS
 (
@@ -68,16 +53,11 @@ SELECT
 	[c4].[ChildID],
 	[c4].[ParentID]
 FROM
-	[Child] [p]
-		INNER JOIN [Child] [c4] ON [c4].[ParentID] = [p].[ParentID]
+	[Child] [c_1]
+		INNER JOIN [Child] [c4] ON [c4].[ParentID] = [c_1].[ParentID]
 WHERE
-	[p].[ParentID] > 1 AND [c4].[ParentID] % 2 = 0
+	[c_1].[ParentID] > 1 AND [c4].[ParentID] % 2 = 0
 ORDER BY
 	[c4].[ChildID],
 	[c4].[ParentID]
-
-BeforeExecute
--- SqlServer.2016
-
-DROP TABLE IF EXISTS [CteChild]
 

@@ -1,39 +1,5 @@
 ﻿BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
-DROP TABLE IF EXISTS `Topic`
-
-BeforeExecute
--- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
-CREATE TABLE IF NOT EXISTS `Topic`
-(
-	`Id`    INT           NOT NULL,
-	`Title` VARCHAR(4000)     NULL,
-	`Text`  VARCHAR(4000)     NULL,
-
-	CONSTRAINT `PK_Topic` PRIMARY KEY CLUSTERED (`Id`)
-)
-
-BeforeExecute
--- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
-DROP TABLE IF EXISTS `Message`
-
-BeforeExecute
--- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
-CREATE TABLE IF NOT EXISTS `Message`
-(
-	`Id`      INT           NOT NULL,
-	`TopicId` INT           NOT NULL,
-	`Text`    VARCHAR(4000)     NULL,
-
-	CONSTRAINT `PK_Message` PRIMARY KEY CLUSTERED (`Id`)
-)
-
-BeforeExecute
--- MySql.8.0 MySql.8.0.MySql.Data MySql80
 DECLARE @Id Int32
 SET     @Id = 6
 DECLARE @Title VarChar(5) -- String
@@ -128,14 +94,4 @@ FROM
 WHERE
 	`x`.`Id` = 6
 LIMIT 1
-
-BeforeExecute
--- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
-DROP TABLE IF EXISTS `Message`
-
-BeforeExecute
--- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
-DROP TABLE IF EXISTS `Topic`
 

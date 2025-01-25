@@ -1,32 +1,6 @@
 ﻿BeforeExecute
 -- SQLite.Classic SQLite
 
-DROP TABLE IF EXISTS [Common_Language]
-
-BeforeExecute
--- SQLite.Classic SQLite
-
-CREATE TABLE IF NOT EXISTS [Common_Language]
-(
-	[LanguageID] NVarChar(255)     NULL,
-	[Name]       NVarChar(255)     NULL
-)
-
-BeforeExecute
--- SQLite.Classic SQLite
-
-INSERT INTO [Common_Language]
-(
-	[LanguageID],
-	[Name]
-)
-VALUES
-('de','deutsch'),
-(NULL,'english')
-
-BeforeExecute
--- SQLite.Classic SQLite
-
 SELECT
 	[x].[LanguageID],
 	[x].[Name]
@@ -46,11 +20,6 @@ WHERE
 					[x_1].[Name]
 			) [t1]
 		WHERE
-			([x].[LanguageID] = [t1].[MAX_1] OR [x].[LanguageID] IS NULL AND [t1].[MAX_1] IS NULL)
+			[x].[LanguageID] = [t1].[MAX_1] OR [x].[LanguageID] IS NULL AND [t1].[MAX_1] IS NULL
 	)
-
-BeforeExecute
--- SQLite.Classic SQLite
-
-DROP TABLE IF EXISTS [Common_Language]
 

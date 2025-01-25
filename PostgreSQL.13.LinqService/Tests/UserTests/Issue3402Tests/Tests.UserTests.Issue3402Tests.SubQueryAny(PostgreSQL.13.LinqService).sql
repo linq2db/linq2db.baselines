@@ -1,39 +1,6 @@
 ﻿BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
 
-DROP TABLE IF EXISTS "VEMPLOYEE_SCH_SEC"
-
-BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
-
-CREATE TABLE IF NOT EXISTS "VEMPLOYEE_SCH_SEC"
-(
-	"ACTIVE" Boolean NOT NULL,
-	"ID"     Int     NOT NULL,
-	"NAME"   text    NOT NULL,
-
-	CONSTRAINT "PK_VEMPLOYEE_SCH_SEC" PRIMARY KEY ("ID")
-)
-
-BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
-
-DROP TABLE IF EXISTS "VEMPLOYEE_SCHDL_PERM"
-
-BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
-
-CREATE TABLE IF NOT EXISTS "VEMPLOYEE_SCHDL_PERM"
-(
-	"ID"        Int     NOT NULL,
-	"IS_ACTIVE" Boolean NOT NULL,
-
-	CONSTRAINT "PK_VEMPLOYEE_SCHDL_PERM" PRIMARY KEY ("ID")
-)
-
-BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
-
 SELECT
 	ess."ID"
 FROM
@@ -45,16 +12,6 @@ WHERE
 		FROM
 			"VEMPLOYEE_SCHDL_PERM" y
 		WHERE
-			ess."ID" = y."ID" AND y."IS_ACTIVE" = True
+			ess."ID" = y."ID" AND y."IS_ACTIVE"
 	)
-
-BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
-
-DROP TABLE IF EXISTS "VEMPLOYEE_SCHDL_PERM"
-
-BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
-
-DROP TABLE IF EXISTS "VEMPLOYEE_SCH_SEC"
 

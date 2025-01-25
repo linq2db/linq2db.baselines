@@ -1,34 +1,6 @@
 ﻿BeforeExecute
 -- SqlServer.2017.MS SqlServer.2017
 
-DROP TABLE IF EXISTS [Issue3472TableDCTX]
-
-BeforeExecute
--- SqlServer.2017.MS SqlServer.2017
-
-IF (OBJECT_ID(N'[Issue3472TableDCTX]', N'U') IS NULL)
-	CREATE TABLE [Issue3472TableDCTX]
-	(
-		[Id] Int NOT NULL
-	)
-
-BeforeExecute
--- SqlServer.2017.MS SqlServer.2017
-DECLARE @Id Int -- Int32
-SET     @Id = 1
-
-INSERT INTO [Issue3472TableDCTX]
-(
-	[Id]
-)
-VALUES
-(
-	@Id
-)
-
-BeforeExecute
--- SqlServer.2017.MS SqlServer.2017
-
 SELECT
 	[t1].[Id],
 	(
@@ -41,9 +13,4 @@ SELECT
 	)
 FROM
 	[Issue3472TableDCTX] [t1]
-
-BeforeExecute
--- SqlServer.2017.MS SqlServer.2017
-
-DROP TABLE IF EXISTS [Issue3472TableDCTX]
 

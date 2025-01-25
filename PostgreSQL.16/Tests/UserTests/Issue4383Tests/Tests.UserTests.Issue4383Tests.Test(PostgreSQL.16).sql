@@ -1,108 +1,4 @@
 ﻿BeforeExecute
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
-
-DROP TABLE IF EXISTS "PUMPLINES"
-
-BeforeExecute
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
-
-CREATE TABLE IF NOT EXISTS "PUMPLINES"
-(
-	"LINE_ID" Int NOT NULL,
-
-	CONSTRAINT "PK_PUMPLINES" PRIMARY KEY ("LINE_ID")
-)
-
-BeforeExecute
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
-
-INSERT INTO "PUMPLINES"
-(
-	"LINE_ID"
-)
-VALUES
-(1),
-(2)
-
-BeforeExecute
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
-
-DROP TABLE IF EXISTS "PUMPLINE_CHAINS"
-
-BeforeExecute
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
-
-CREATE TABLE IF NOT EXISTS "PUMPLINE_CHAINS"
-(
-	"LINE_ID"  Int NOT NULL,
-	"CHAIN_ID" Int NOT NULL
-)
-
-BeforeExecute
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
-
-INSERT INTO "PUMPLINE_CHAINS"
-(
-	"LINE_ID",
-	"CHAIN_ID"
-)
-VALUES
-(1,11),
-(2,22)
-
-BeforeExecute
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
-
-DROP TABLE IF EXISTS "CHAINS"
-
-BeforeExecute
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
-
-CREATE TABLE IF NOT EXISTS "CHAINS"
-(
-	"CHAIN_ID" Int NOT NULL,
-
-	CONSTRAINT "PK_CHAINS" PRIMARY KEY ("CHAIN_ID")
-)
-
-BeforeExecute
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
-
-INSERT INTO "CHAINS"
-(
-	"CHAIN_ID"
-)
-VALUES
-(11),
-(22)
-
-BeforeExecute
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
-
-DROP TABLE IF EXISTS "CHAINPOINTS"
-
-BeforeExecute
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
-
-CREATE TABLE IF NOT EXISTS "CHAINPOINTS"
-(
-	"CHAIN_ID" Int NOT NULL,
-
-	CONSTRAINT "PK_CHAINPOINTS" PRIMARY KEY ("CHAIN_ID")
-)
-
-BeforeExecute
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
-
-INSERT INTO "CHAINPOINTS"
-(
-	"CHAIN_ID"
-)
-VALUES
-(11),
-(22)
-
-BeforeExecute
 BeginTransaction(RepeatableRead)
 BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
@@ -135,6 +31,7 @@ SELECT
 	m_1."LINE_ID",
 	d."LINE_ID",
 	d."CHAIN_ID",
+	"a_Chain"."CHAIN_ID",
 	"a_Chain"."CHAIN_ID"
 FROM
 	"PUMPLINES" m_1
@@ -149,29 +46,10 @@ BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 
 SELECT
+	t1."LINE_ID",
 	t1."LINE_ID"
 FROM
 	"PUMPLINES" t1
 ORDER BY
 	t1."LINE_ID"
-
-BeforeExecute
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
-
-DROP TABLE IF EXISTS "CHAINPOINTS"
-
-BeforeExecute
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
-
-DROP TABLE IF EXISTS "CHAINS"
-
-BeforeExecute
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
-
-DROP TABLE IF EXISTS "PUMPLINE_CHAINS"
-
-BeforeExecute
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
-
-DROP TABLE IF EXISTS "PUMPLINES"
 

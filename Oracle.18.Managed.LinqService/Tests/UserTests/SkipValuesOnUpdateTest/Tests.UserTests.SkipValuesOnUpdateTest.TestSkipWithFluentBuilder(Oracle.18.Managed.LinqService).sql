@@ -1,38 +1,5 @@
 ﻿BeforeExecute
 -- Oracle.18.Managed Oracle.Managed Oracle12
-
-BEGIN
-	EXECUTE IMMEDIATE 'DROP TABLE "PR_1598_Update_Fluent_Table"';
-EXCEPTION
-	WHEN OTHERS THEN
-		IF SQLCODE != -942 THEN
-			RAISE;
-		END IF;
-END;
-
-BeforeExecute
--- Oracle.18.Managed Oracle.Managed Oracle12
-
-BEGIN
-	EXECUTE IMMEDIATE '
-		CREATE TABLE "PR_1598_Update_Fluent_Table"
-		(
-			"Id"   Int          NOT NULL,
-			"Name" VarChar(255)     NULL,
-			"Age"  Int              NULL,
-
-			CONSTRAINT "PK_PR_1598_Update_Fluent_Table" PRIMARY KEY ("Id")
-		)
-	';
-EXCEPTION
-	WHEN OTHERS THEN
-		IF SQLCODE != -955 THEN
-			RAISE;
-		END IF;
-END;
-
-BeforeExecute
--- Oracle.18.Managed Oracle.Managed Oracle12
 DECLARE @Id Int32
 SET     @Id = 1
 DECLARE @Name Varchar2 -- String
@@ -122,16 +89,4 @@ FROM
 WHERE
 	t."Id" = 1
 FETCH NEXT 1 ROWS ONLY
-
-BeforeExecute
--- Oracle.18.Managed Oracle.Managed Oracle12
-
-BEGIN
-	EXECUTE IMMEDIATE 'DROP TABLE "PR_1598_Update_Fluent_Table"';
-EXCEPTION
-	WHEN OTHERS THEN
-		IF SQLCODE != -942 THEN
-			RAISE;
-		END IF;
-END;
 

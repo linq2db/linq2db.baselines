@@ -1,39 +1,6 @@
 ﻿BeforeExecute
 -- SqlCe
 
-DROP TABLE [VEMPLOYEE_SCH_SEC]
-
-BeforeExecute
--- SqlCe
-
-CREATE TABLE [VEMPLOYEE_SCH_SEC]
-(
-	[ACTIVE] Bit           NOT NULL,
-	[ID]     Int           NOT NULL,
-	[NAME]   NVarChar(255) NOT NULL,
-
-	CONSTRAINT [PK_VEMPLOYEE_SCH_SEC] PRIMARY KEY ([ID])
-)
-
-BeforeExecute
--- SqlCe
-
-DROP TABLE [VEMPLOYEE_SCHDL_PERM]
-
-BeforeExecute
--- SqlCe
-
-CREATE TABLE [VEMPLOYEE_SCHDL_PERM]
-(
-	[ID]        Int NOT NULL,
-	[IS_ACTIVE] Bit NOT NULL,
-
-	CONSTRAINT [PK_VEMPLOYEE_SCHDL_PERM] PRIMARY KEY ([ID])
-)
-
-BeforeExecute
--- SqlCe
-
 SELECT
 	[ess].[ID]
 FROM
@@ -47,14 +14,4 @@ WHERE
 		WHERE
 			[ess].[ID] = [y].[ID] AND [y].[IS_ACTIVE] = 1
 	)
-
-BeforeExecute
--- SqlCe
-
-DROP TABLE [VEMPLOYEE_SCHDL_PERM]
-
-BeforeExecute
--- SqlCe
-
-DROP TABLE [VEMPLOYEE_SCH_SEC]
 

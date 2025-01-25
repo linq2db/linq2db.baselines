@@ -1,25 +1,4 @@
 ﻿BeforeExecute
--- ClickHouse.Client ClickHouse
-
-DROP TABLE IF EXISTS TPHTableDefault
-
-BeforeExecute
--- ClickHouse.Client ClickHouse
-
-CREATE TABLE IF NOT EXISTS TPHTableDefault
-(
-	Id            Int32,
-	Discriminator Int32,
-	Value1        Nullable(String),
-	Value2        Nullable(String),
-	Value3        Nullable(String),
-
-	PRIMARY KEY (Id)
-)
-ENGINE = MergeTree()
-ORDER BY Id
-
-BeforeExecute
 INSERT ASYNC BULK TPHTableDefault(Id, Discriminator, Value1, Value2, Value3)
 
 BeforeExecute
@@ -125,9 +104,4 @@ FROM
 WHERE
 	x.Value3 = 'Str3'
 LIMIT 2
-
-BeforeExecute
--- ClickHouse.Client ClickHouse
-
-DROP TABLE IF EXISTS TPHTableDefault
 

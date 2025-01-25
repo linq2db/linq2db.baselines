@@ -9,10 +9,10 @@ SELECT
 	n."FirstName",
 	n."PersonID"
 FROM
-	"Person" p
+	"Person" t1
 		INNER JOIN (VALUES
 			('Janet',:ID), ('Doe',:ID_1)
-		) n("FirstName", "PersonID") ON p."PersonID" = n."PersonID"
+		) n("FirstName", "PersonID") ON t1."PersonID" = n."PersonID"
 ORDER BY
 	n."PersonID"
 

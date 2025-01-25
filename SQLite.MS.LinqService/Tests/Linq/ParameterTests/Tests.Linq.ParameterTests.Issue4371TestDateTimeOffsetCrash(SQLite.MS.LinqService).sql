@@ -1,20 +1,5 @@
 ﻿BeforeExecute
 -- SQLite.MS SQLite
-
-DROP TABLE IF EXISTS [Issue4371Table]
-
-BeforeExecute
--- SQLite.MS SQLite
-
-CREATE TABLE IF NOT EXISTS [Issue4371Table]
-(
-	[ColumnDT]  VarChar     NULL,
-	[ColumnDTO] VarChar     NULL,
-	[ColumnTS]  VarChar     NULL
-)
-
-BeforeExecute
--- SQLite.MS SQLite
 DECLARE @ColumnDT VarChar -- AnsiString
 SET     @ColumnDT = NULL
 DECLARE @ColumnDTO VarChar(33) -- AnsiString
@@ -45,10 +30,5 @@ SELECT
 FROM
 	[Issue4371Table] [r]
 WHERE
-	strftime('%Y-%m-%d %H:%M:%f', [r].[ColumnDTO]) = strftime('%Y-%m-%d %H:%M:%f', @dto)
-
-BeforeExecute
--- SQLite.MS SQLite
-
-DROP TABLE IF EXISTS [Issue4371Table]
+	[r].[ColumnDTO] = @dto
 

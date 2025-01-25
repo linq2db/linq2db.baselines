@@ -1,64 +1,5 @@
 ﻿BeforeExecute
 -- Informix.DB2 Informix
-
-DROP TABLE IF EXISTS DateOnlyTable
-
-BeforeExecute
--- Informix.DB2 Informix
-
-CREATE TABLE IF NOT EXISTS DateOnlyTable
-(
-	Id             Int                  NOT NULL,
-	"Column"       DATETIME YEAR TO DAY NOT NULL,
-	ColumnNullable DATETIME YEAR TO DAY     NULL
-)
-
-BeforeExecute
--- Informix.DB2 Informix
-DECLARE @Id Integer(4) -- Int32
-SET     @Id = 1
-DECLARE @Column Date(16)
-SET     @Column = TO_DATE('1950-01-01', '%Y-%m-%d')
-DECLARE @ColumnNullable Date
-SET     @ColumnNullable = NULL
-
-INSERT INTO DateOnlyTable
-(
-	Id,
-	"Column",
-	ColumnNullable
-)
-VALUES
-(
-	@Id,
-	@Column,
-	@ColumnNullable
-)
-
-BeforeExecute
--- Informix.DB2 Informix
-DECLARE @Id Integer(4) -- Int32
-SET     @Id = 2
-DECLARE @Column Date(16)
-SET     @Column = TO_DATE('2020-02-29', '%Y-%m-%d')
-DECLARE @ColumnNullable Date(16)
-SET     @ColumnNullable = TO_DATE('2200-01-01', '%Y-%m-%d')
-
-INSERT INTO DateOnlyTable
-(
-	Id,
-	"Column",
-	ColumnNullable
-)
-VALUES
-(
-	@Id,
-	@Column,
-	@ColumnNullable
-)
-
-BeforeExecute
--- Informix.DB2 Informix
 DECLARE @Column Date(16)
 SET     @Column = TO_DATE('2020-02-29', '%Y-%m-%d')
 DECLARE @ColumnNullable Date(16)
@@ -230,9 +171,4 @@ FROM
 	DateOnlyTable t1
 ORDER BY
 	t1.Id
-
-BeforeExecute
--- Informix.DB2 Informix
-
-DROP TABLE IF EXISTS DateOnlyTable
 

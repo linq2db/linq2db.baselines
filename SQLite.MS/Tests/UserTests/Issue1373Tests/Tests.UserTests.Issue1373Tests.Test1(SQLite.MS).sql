@@ -1,21 +1,5 @@
 ﻿BeforeExecute
 -- SQLite.MS SQLite
-
-DROP TABLE IF EXISTS [Issue1373Tests]
-
-BeforeExecute
--- SQLite.MS SQLite
-
-CREATE TABLE IF NOT EXISTS [Issue1373Tests]
-(
-	[Id]     INTEGER       NOT NULL,
-	[Field1] NVarChar(255)     NULL,
-
-	CONSTRAINT [PK_Issue1373Tests] PRIMARY KEY ([Id])
-)
-
-BeforeExecute
--- SQLite.MS SQLite
 DECLARE @Id  -- Int32
 SET     @Id = 1
 DECLARE @Field1 NVarChar -- String
@@ -78,9 +62,4 @@ FROM
 	[Issue1373Tests] [t1]
 ORDER BY
 	[t1].[Id]
-
-BeforeExecute
--- SQLite.MS SQLite
-
-DROP TABLE IF EXISTS [Issue1373Tests]
 

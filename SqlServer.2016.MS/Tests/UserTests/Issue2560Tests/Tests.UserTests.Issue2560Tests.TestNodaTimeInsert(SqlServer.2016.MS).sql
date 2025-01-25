@@ -1,20 +1,5 @@
 ﻿BeforeExecute
 -- SqlServer.2016.MS SqlServer.2016
-
-DROP TABLE IF EXISTS [DataClass]
-
-BeforeExecute
--- SqlServer.2016.MS SqlServer.2016
-
-IF (OBJECT_ID(N'[DataClass]', N'U') IS NULL)
-	CREATE TABLE [DataClass]
-	(
-		[Id]    Int      NOT NULL,
-		[Value] DateTime NOT NULL
-	)
-
-BeforeExecute
--- SqlServer.2016.MS SqlServer.2016
 DECLARE @Id Int -- Int32
 SET     @Id = 0
 DECLARE @Value DateTime
@@ -30,9 +15,4 @@ VALUES
 	@Id,
 	@Value
 )
-
-BeforeExecute
--- SqlServer.2016.MS SqlServer.2016
-
-DROP TABLE IF EXISTS [DataClass]
 

@@ -1,55 +1,12 @@
 ﻿BeforeExecute
 -- ClickHouse.Client ClickHouse
 
-DROP TABLE IF EXISTS Src
-
-BeforeExecute
--- ClickHouse.Client ClickHouse
-
-CREATE TABLE IF NOT EXISTS Src
-(
-	Int            Int32,
-	NullableInt    Nullable(Int32),
-	String         Nullable(String),
-	NullableString Nullable(String)
-)
-ENGINE = Memory()
-
-BeforeExecute
--- ClickHouse.Client ClickHouse
-
-INSERT INTO Src
-(
-	Int,
-	NullableInt,
-	String,
-	NullableString
-)
-VALUES
-(
-	2,
-	2,
-	'abc',
-	'abc'
-)
-
-BeforeExecute
--- ClickHouse.Client ClickHouse
-
-INSERT INTO Src
-(
-	Int,
-	NullableInt,
-	String,
-	NullableString
-)
-VALUES
-(
-	3,
-	NULL,
-	'def',
-	NULL
-)
+SELECT
+	COUNT(*)
+FROM
+	Src s
+WHERE
+	s.Int <> 2
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
@@ -59,7 +16,7 @@ SELECT
 FROM
 	Src s
 WHERE
-	CASE WHEN s.Int = 2 OR s.Int IS NULL AND 2 IS NULL THEN 0 ELSE 1 END = 1
+	s.NullableInt IS NULL OR s.NullableInt <> 2
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
@@ -69,7 +26,7 @@ SELECT
 FROM
 	Src s
 WHERE
-	CASE WHEN s.NullableInt = 2 OR s.NullableInt IS NULL AND 2 IS NULL THEN 0 ELSE 1 END = 1
+	s.Int = 2
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
@@ -79,20 +36,5 @@ SELECT
 FROM
 	Src s
 WHERE
-	CASE WHEN s.Int = 2 OR s.Int IS NULL AND 2 IS NULL THEN 0 ELSE 1 END = 0
-
-BeforeExecute
--- ClickHouse.Client ClickHouse
-
-SELECT
-	COUNT(*)
-FROM
-	Src s
-WHERE
-	CASE WHEN s.NullableInt = 2 OR s.NullableInt IS NULL AND 2 IS NULL THEN 0 ELSE 1 END = 0
-
-BeforeExecute
--- ClickHouse.Client ClickHouse
-
-DROP TABLE IF EXISTS Src
+	NOT (s.NullableInt IS NULL OR s.NullableInt <> 2)
 

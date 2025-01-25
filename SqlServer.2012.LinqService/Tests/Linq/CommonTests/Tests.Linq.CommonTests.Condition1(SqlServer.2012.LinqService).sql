@@ -2,11 +2,12 @@
 -- SqlServer.2012
 
 SELECT
-	IIF([p].[FirstName] IS NULL OR Len([p].[FirstName]) = 0, 1, 0),
-	[p].[FirstName],
-	IIF([p].[MiddleName] IS NULL OR Len([p].[MiddleName]) = 0, 1, 0),
-	[p].[MiddleName],
-	[p].[LastName]
+	CASE
+		WHEN Len([p].[FirstName]) <> 0 THEN [p].[FirstName]
+		WHEN NOT ([p].[MiddleName] IS NULL OR Len([p].[MiddleName]) = 0)
+			THEN [p].[MiddleName]
+		ELSE [p].[LastName]
+	END
 FROM
 	[Person] [p]
 

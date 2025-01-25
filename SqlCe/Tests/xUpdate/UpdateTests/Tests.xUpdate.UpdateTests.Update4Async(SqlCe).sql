@@ -1,5 +1,7 @@
 ﻿BeforeExecute
 -- SqlCe (asynchronously)
+DECLARE @id Int -- Int32
+SET     @id = 1001
 
 INSERT INTO [Child]
 (
@@ -9,7 +11,7 @@ INSERT INTO [Child]
 VALUES
 (
 	1,
-	1001
+	@id
 )
 
 BeforeExecute
@@ -49,13 +51,13 @@ WHERE
 
 BeforeExecute
 -- SqlCe (asynchronously)
-DECLARE @ChildID Int -- Int32
-SET     @ChildID = 1002
+DECLARE @p Int -- Int32
+SET     @p = 1002
 
 SELECT
 	COUNT(*) as [COUNT_1]
 FROM
 	[Child] [c_1]
 WHERE
-	[c_1].[ChildID] = @ChildID
+	[c_1].[ChildID] = @p
 

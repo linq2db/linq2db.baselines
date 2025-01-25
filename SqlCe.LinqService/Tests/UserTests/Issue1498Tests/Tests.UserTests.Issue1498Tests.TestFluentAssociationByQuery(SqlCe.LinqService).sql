@@ -1,35 +1,5 @@
 ﻿BeforeExecute
 -- SqlCe
-
-DROP TABLE [Topic]
-
-BeforeExecute
--- SqlCe
-
-CREATE TABLE [Topic]
-(
-	[Id]    Int           NOT NULL,
-	[Title] NVarChar(255)     NULL,
-	[Text]  NVarChar(255)     NULL
-)
-
-BeforeExecute
--- SqlCe
-
-DROP TABLE [Message]
-
-BeforeExecute
--- SqlCe
-
-CREATE TABLE [Message]
-(
-	[Id]      Int           NOT NULL,
-	[TopicId] Int           NOT NULL,
-	[Text]    NVarChar(255)     NULL
-)
-
-BeforeExecute
--- SqlCe
 DECLARE @Id Int -- Int32
 SET     @Id = 6
 DECLARE @Title NVarChar(5) -- String
@@ -99,7 +69,7 @@ BeforeExecute
 
 SELECT
 	[m_1].[Id],
-	[d].[Id] as [Id_1]
+	[d].[Id] as [Detail]
 FROM
 	(
 		SELECT TOP (1)
@@ -122,14 +92,4 @@ FROM
 	[Topic] [x]
 WHERE
 	[x].[Id] = 6
-
-BeforeExecute
--- SqlCe
-
-DROP TABLE [Message]
-
-BeforeExecute
--- SqlCe
-
-DROP TABLE [Topic]
 

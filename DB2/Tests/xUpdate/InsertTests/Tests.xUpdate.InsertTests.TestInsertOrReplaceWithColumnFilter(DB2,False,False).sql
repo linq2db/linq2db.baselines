@@ -1,31 +1,5 @@
 ﻿BeforeExecute
 -- DB2 DB2.LUW DB2LUW
-
-BEGIN
-	DECLARE CONTINUE HANDLER FOR SQLSTATE '42704' BEGIN END;
-	EXECUTE IMMEDIATE 'DROP TABLE "TestInsertOrReplaceTable"';
-END
-
-BeforeExecute
--- DB2 DB2.LUW DB2LUW
-
-BEGIN
-	DECLARE CONTINUE HANDLER FOR SQLSTATE '42710' BEGIN END;
-	EXECUTE IMMEDIATE '
-		CREATE TABLE "TestInsertOrReplaceTable"
-		(
-			ID           Int           NOT NULL,
-			"FirstName"  NVarChar(255)     NULL,
-			"LastName"   NVarChar(255)     NULL,
-			"MiddleName" NVarChar(255)     NULL,
-
-			CONSTRAINT "PK_TestInsertOrReplaceTable" PRIMARY KEY (ID)
-		)
-	';
-END
-
-BeforeExecute
--- DB2 DB2.LUW DB2LUW
 DECLARE @ID Integer(4) -- Int32
 SET     @ID = 0
 DECLARE @FirstName VarChar(27) -- String
@@ -126,12 +100,4 @@ FROM
 WHERE
 	"x"."FirstName" = @FirstName
 FETCH NEXT 1 ROWS ONLY
-
-BeforeExecute
--- DB2 DB2.LUW DB2LUW
-
-BEGIN
-	DECLARE CONTINUE HANDLER FOR SQLSTATE '42704' BEGIN END;
-	EXECUTE IMMEDIATE 'DROP TABLE "TestInsertOrReplaceTable"';
-END
 

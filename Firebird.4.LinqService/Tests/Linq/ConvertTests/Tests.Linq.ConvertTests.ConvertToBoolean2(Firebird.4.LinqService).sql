@@ -2,17 +2,14 @@
 -- Firebird.4 Firebird4
 
 SELECT
-	"p_1"."c1"
+	"p"."c1"
 FROM
 	(
 		SELECT
-			CASE
-				WHEN "p"."MoneyValue" <> 4.5 THEN TRUE
-				ELSE FALSE
-			END as "c1"
+			"t"."MoneyValue" <> 4.5 as "c1"
 		FROM
-			"LinqDataTypes" "p"
-	) "p_1"
+			"LinqDataTypes" "t"
+	) "p"
 WHERE
-	"p_1"."c1" = FALSE
+	NOT "p"."c1"
 

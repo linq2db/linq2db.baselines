@@ -2,23 +2,28 @@
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
+	r.Value
+FROM
+	ComplexPredicate r
+WHERE
 	CASE
-		WHEN EXISTS(
-			SELECT
-				*
-			FROM
-				Person t1
-			WHERE
-				CASE
-					WHEN t1.MiddleName = '123' THEN true
-					ELSE false
-				END = CASE
-					WHEN t1.MiddleName = '1' OR t1.MiddleName = 'test' AND (t1.MiddleName <> '1' OR t1.MiddleName IS NULL)
-						THEN true
-					ELSE false
-				END
-		)
+		WHEN r.Value = '123' THEN true
+		ELSE false
+	END = CASE
+		WHEN r.Value = '1' OR r.Value = 'test' AND (r.Value <> '1' OR r.Value IS NULL)
 			THEN true
 		ELSE false
 	END
+ORDER BY
+	r.Id
+
+BeforeExecute
+-- ClickHouse.MySql ClickHouse
+
+SELECT
+	t1.Id,
+	t1.Value
+FROM
+	ComplexPredicate t1
 

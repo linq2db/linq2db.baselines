@@ -1,33 +1,5 @@
 ﻿BeforeExecute
 -- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
-
-DROP TABLE IF EXISTS "ByteTable"
-
-BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
-
-CREATE TABLE IF NOT EXISTS "ByteTable"
-(
-	"Id"             Int      NOT NULL,
-	"Column"         SmallInt NOT NULL,
-	"ColumnNullable" SmallInt     NULL
-)
-
-BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
-
-INSERT INTO "ByteTable"
-(
-	"Id",
-	"Column",
-	"ColumnNullable"
-)
-VALUES
-(1,1,NULL),
-(2,255,2)
-
-BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
 DECLARE @Column Smallint -- Int16
 SET     @Column = 255
 DECLARE @ColumnNullable Smallint -- Int16
@@ -167,9 +139,4 @@ FROM
 	"ByteTable" t1
 ORDER BY
 	t1."Id"
-
-BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
-
-DROP TABLE IF EXISTS "ByteTable"
 

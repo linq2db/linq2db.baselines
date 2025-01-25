@@ -1,8 +1,6 @@
 ﻿BeforeExecute
 -- SqlServer.Contained SqlServer.2019
-DECLARE @p VarBinary(8000) -- Binary
-SET     @p = 0x010203
 
 SELECT
-	COMPRESS(@p)
+	COMPRESS(0x010203)
 

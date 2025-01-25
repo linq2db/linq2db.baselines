@@ -1,19 +1,6 @@
 ﻿BeforeExecute
 -- SQLite.Classic SQLite
 
-DROP TABLE IF EXISTS [SimpleBulkCopyTable]
-
-BeforeExecute
--- SQLite.Classic SQLite
-
-CREATE TABLE IF NOT EXISTS [SimpleBulkCopyTable]
-(
-	[Id] INTEGER NOT NULL
-)
-
-BeforeExecute
--- SQLite.Classic SQLite
-
 INSERT INTO [SimpleBulkCopyTable]
 (
 	[Id]
@@ -40,9 +27,4 @@ INSERT INTO [SimpleBulkCopyTable]
 )
 VALUES
 (3)
-
-BeforeExecute
--- SQLite.Classic SQLite
-
-DROP TABLE IF EXISTS [SimpleBulkCopyTable]
 

@@ -1,60 +1,7 @@
 ﻿BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
-
-DROP TABLE IF EXISTS [TableWithData]
-
-BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
-
-CREATE TABLE IF NOT EXISTS [TableWithData]
-(
-	[Id]       INTEGER      NOT NULL,
-	[Value]    INTEGER      NOT NULL,
-	[ValueStr] NVarChar(50)     NULL
-)
-
-BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
-
-INSERT INTO [TableWithData]
-(
-	[Id],
-	[Value],
-	[ValueStr]
-)
-VALUES
-(1,-1,'Str1'),
-(2,-2,'Str2'),
-(3,-3,'Str3'),
-(4,-4,'Str4'),
-(5,-5,'Str5'),
-(6,-6,'Str6'),
-(7,-7,'Str7'),
-(8,-8,'Str8'),
-(9,-9,'Str9'),
-(10,-10,'Str10')
-
-BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
-
-DROP TABLE IF EXISTS [DestinationTable]
-
-BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
-
-CREATE TABLE IF NOT EXISTS [DestinationTable]
-(
-	[Id]       INTEGER      NOT NULL,
-	[Value]    INTEGER      NOT NULL,
-	[ValueStr] NVarChar(50)     NULL
-)
-
-BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite (asynchronously)
 DECLARE @param  -- Int32
 SET     @param = 100
-DECLARE @param_1  -- Int32
-SET     @param_1 = 100
 
 INSERT INTO [DestinationTable]
 (
@@ -65,7 +12,7 @@ INSERT INTO [DestinationTable]
 SELECT
 	[s].[Id] + @param,
 	[s].[Value] + @param,
-	[s].[ValueStr] || @param_1
+	[s].[ValueStr] || @param
 FROM
 	[TableWithData] [s]
 WHERE
@@ -79,25 +26,13 @@ BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 DECLARE @param  -- Int32
 SET     @param = 100
-DECLARE @param_1  -- Int32
-SET     @param_1 = 100
 
 SELECT
 	[s].[Id] + @param,
 	[s].[Value] + @param,
-	[s].[ValueStr] || @param_1
+	[s].[ValueStr] || @param
 FROM
 	[TableWithData] [s]
 WHERE
 	[s].[Id] > 3
-
-BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
-
-DROP TABLE IF EXISTS [DestinationTable]
-
-BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
-
-DROP TABLE IF EXISTS [TableWithData]
 

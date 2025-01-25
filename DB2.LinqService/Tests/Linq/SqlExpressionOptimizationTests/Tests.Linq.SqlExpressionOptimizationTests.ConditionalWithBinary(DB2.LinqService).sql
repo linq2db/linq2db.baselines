@@ -1,337 +1,6 @@
 ﻿BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
-BEGIN
-	DECLARE CONTINUE HANDLER FOR SQLSTATE '42704' BEGIN END;
-	EXECUTE IMMEDIATE 'DROP TABLE "OptimizationData"';
-END
-
-BeforeExecute
--- DB2 DB2.LUW DB2LUW
-
-BEGIN
-	DECLARE CONTINUE HANDLER FOR SQLSTATE '42710' BEGIN END;
-	EXECUTE IMMEDIATE '
-		CREATE TABLE "OptimizationData"
-		(
-			"Id"                  Int           NOT NULL,
-			"IntVlaue"            Int           NOT NULL,
-			"IntVlaueNullable"    Int               NULL,
-			"BoolValue"           smallint      NOT NULL,
-			"BoolValueNullable"   smallint          NULL,
-			"StringValue"         NVarChar(255)     NULL,
-			"StringValueNullable" NVarChar(255)     NULL
-		)
-	';
-END
-
-BeforeExecute
--- DB2 DB2.LUW DB2LUW
-DECLARE @Id Integer(4) -- Int32
-SET     @Id = 1
-DECLARE @IntVlaue Integer(4) -- Int32
-SET     @IntVlaue = 1
-DECLARE @IntVlaueNullable Integer(4) -- Int32
-SET     @IntVlaueNullable = 0
-DECLARE @BoolValue SmallInt(4) -- Int16
-SET     @BoolValue = 1
-DECLARE @BoolValueNullable SmallInt(4) -- Int16
-SET     @BoolValueNullable = 1
-DECLARE @StringValue VarChar(1) -- String
-SET     @StringValue = '1'
-DECLARE @StringValueNullable VarChar(1) -- String
-SET     @StringValueNullable = '1'
-
-INSERT INTO "OptimizationData"
-(
-	"Id",
-	"IntVlaue",
-	"IntVlaueNullable",
-	"BoolValue",
-	"BoolValueNullable",
-	"StringValue",
-	"StringValueNullable"
-)
-VALUES
-(
-	@Id,
-	@IntVlaue,
-	@IntVlaueNullable,
-	@BoolValue,
-	@BoolValueNullable,
-	@StringValue,
-	@StringValueNullable
-)
-
-BeforeExecute
--- DB2 DB2.LUW DB2LUW
-DECLARE @Id Integer(4) -- Int32
-SET     @Id = 2
-DECLARE @IntVlaue Integer(4) -- Int32
-SET     @IntVlaue = 2
-DECLARE @IntVlaueNullable Integer(4) -- Int32
-SET     @IntVlaueNullable = 1
-DECLARE @BoolValue SmallInt(4) -- Int16
-SET     @BoolValue = 0
-DECLARE @BoolValueNullable SmallInt -- Boolean
-SET     @BoolValueNullable = NULL
-DECLARE @StringValue VarChar(1) -- String
-SET     @StringValue = '0'
-DECLARE @StringValueNullable VarChar(1) -- String
-SET     @StringValueNullable = '0'
-
-INSERT INTO "OptimizationData"
-(
-	"Id",
-	"IntVlaue",
-	"IntVlaueNullable",
-	"BoolValue",
-	"BoolValueNullable",
-	"StringValue",
-	"StringValueNullable"
-)
-VALUES
-(
-	@Id,
-	@IntVlaue,
-	@IntVlaueNullable,
-	@BoolValue,
-	@BoolValueNullable,
-	@StringValue,
-	@StringValueNullable
-)
-
-BeforeExecute
--- DB2 DB2.LUW DB2LUW
-DECLARE @Id Integer(4) -- Int32
-SET     @Id = 3
-DECLARE @IntVlaue Integer(4) -- Int32
-SET     @IntVlaue = 4
-DECLARE @IntVlaueNullable Integer(4) -- Int32
-SET     @IntVlaueNullable = 4
-DECLARE @BoolValue SmallInt(4) -- Int16
-SET     @BoolValue = 0
-DECLARE @BoolValueNullable SmallInt -- Boolean
-SET     @BoolValueNullable = NULL
-DECLARE @StringValue VarChar(1) -- String
-SET     @StringValue = '1'
-DECLARE @StringValueNullable VarChar(1) -- String
-SET     @StringValueNullable = '1'
-
-INSERT INTO "OptimizationData"
-(
-	"Id",
-	"IntVlaue",
-	"IntVlaueNullable",
-	"BoolValue",
-	"BoolValueNullable",
-	"StringValue",
-	"StringValueNullable"
-)
-VALUES
-(
-	@Id,
-	@IntVlaue,
-	@IntVlaueNullable,
-	@BoolValue,
-	@BoolValueNullable,
-	@StringValue,
-	@StringValueNullable
-)
-
-BeforeExecute
--- DB2 DB2.LUW DB2LUW
-DECLARE @Id Integer(4) -- Int32
-SET     @Id = 4
-DECLARE @IntVlaue Integer(4) -- Int32
-SET     @IntVlaue = 0
-DECLARE @IntVlaueNullable Integer(4) -- Int32
-SET     @IntVlaueNullable = 1
-DECLARE @BoolValue SmallInt(4) -- Int16
-SET     @BoolValue = 1
-DECLARE @BoolValueNullable SmallInt(4) -- Int16
-SET     @BoolValueNullable = 1
-DECLARE @StringValue VarChar(1) -- String
-SET     @StringValue = '0'
-DECLARE @StringValueNullable VarChar -- String
-SET     @StringValueNullable = NULL
-
-INSERT INTO "OptimizationData"
-(
-	"Id",
-	"IntVlaue",
-	"IntVlaueNullable",
-	"BoolValue",
-	"BoolValueNullable",
-	"StringValue",
-	"StringValueNullable"
-)
-VALUES
-(
-	@Id,
-	@IntVlaue,
-	@IntVlaueNullable,
-	@BoolValue,
-	@BoolValueNullable,
-	@StringValue,
-	@StringValueNullable
-)
-
-BeforeExecute
--- DB2 DB2.LUW DB2LUW
-DECLARE @Id Integer(4) -- Int32
-SET     @Id = 5
-DECLARE @IntVlaue Integer(4) -- Int32
-SET     @IntVlaue = 1
-DECLARE @IntVlaueNullable Integer(4) -- Int32
-SET     @IntVlaueNullable = 3
-DECLARE @BoolValue SmallInt(4) -- Int16
-SET     @BoolValue = 1
-DECLARE @BoolValueNullable SmallInt(4) -- Int16
-SET     @BoolValueNullable = 1
-DECLARE @StringValue VarChar(1) -- String
-SET     @StringValue = '1'
-DECLARE @StringValueNullable VarChar -- String
-SET     @StringValueNullable = NULL
-
-INSERT INTO "OptimizationData"
-(
-	"Id",
-	"IntVlaue",
-	"IntVlaueNullable",
-	"BoolValue",
-	"BoolValueNullable",
-	"StringValue",
-	"StringValueNullable"
-)
-VALUES
-(
-	@Id,
-	@IntVlaue,
-	@IntVlaueNullable,
-	@BoolValue,
-	@BoolValueNullable,
-	@StringValue,
-	@StringValueNullable
-)
-
-BeforeExecute
--- DB2 DB2.LUW DB2LUW
-DECLARE @Id Integer(4) -- Int32
-SET     @Id = 6
-DECLARE @IntVlaue Integer(4) -- Int32
-SET     @IntVlaue = 3
-DECLARE @IntVlaueNullable Integer(4) -- Int32
-SET     @IntVlaueNullable = 0
-DECLARE @BoolValue SmallInt(4) -- Int16
-SET     @BoolValue = 0
-DECLARE @BoolValueNullable SmallInt(4) -- Int16
-SET     @BoolValueNullable = 0
-DECLARE @StringValue VarChar(1) -- String
-SET     @StringValue = '0'
-DECLARE @StringValueNullable VarChar(1) -- String
-SET     @StringValueNullable = '0'
-
-INSERT INTO "OptimizationData"
-(
-	"Id",
-	"IntVlaue",
-	"IntVlaueNullable",
-	"BoolValue",
-	"BoolValueNullable",
-	"StringValue",
-	"StringValueNullable"
-)
-VALUES
-(
-	@Id,
-	@IntVlaue,
-	@IntVlaueNullable,
-	@BoolValue,
-	@BoolValueNullable,
-	@StringValue,
-	@StringValueNullable
-)
-
-BeforeExecute
--- DB2 DB2.LUW DB2LUW
-DECLARE @Id Integer(4) -- Int32
-SET     @Id = 7
-DECLARE @IntVlaue Integer(4) -- Int32
-SET     @IntVlaue = 1
-DECLARE @IntVlaueNullable Integer(4) -- Int32
-SET     @IntVlaueNullable = 4
-DECLARE @BoolValue SmallInt(4) -- Int16
-SET     @BoolValue = 0
-DECLARE @BoolValueNullable SmallInt(4) -- Int16
-SET     @BoolValueNullable = 0
-DECLARE @StringValue VarChar(1) -- String
-SET     @StringValue = '1'
-DECLARE @StringValueNullable VarChar(1) -- String
-SET     @StringValueNullable = '1'
-
-INSERT INTO "OptimizationData"
-(
-	"Id",
-	"IntVlaue",
-	"IntVlaueNullable",
-	"BoolValue",
-	"BoolValueNullable",
-	"StringValue",
-	"StringValueNullable"
-)
-VALUES
-(
-	@Id,
-	@IntVlaue,
-	@IntVlaueNullable,
-	@BoolValue,
-	@BoolValueNullable,
-	@StringValue,
-	@StringValueNullable
-)
-
-BeforeExecute
--- DB2 DB2.LUW DB2LUW
-DECLARE @Id Integer(4) -- Int32
-SET     @Id = 8
-DECLARE @IntVlaue Integer(4) -- Int32
-SET     @IntVlaue = 3
-DECLARE @IntVlaueNullable Integer(4) -- Int32
-SET     @IntVlaueNullable = 2
-DECLARE @BoolValue SmallInt(4) -- Int16
-SET     @BoolValue = 1
-DECLARE @BoolValueNullable SmallInt(4) -- Int16
-SET     @BoolValueNullable = 1
-DECLARE @StringValue VarChar(1) -- String
-SET     @StringValue = '0'
-DECLARE @StringValueNullable VarChar(1) -- String
-SET     @StringValueNullable = '0'
-
-INSERT INTO "OptimizationData"
-(
-	"Id",
-	"IntVlaue",
-	"IntVlaueNullable",
-	"BoolValue",
-	"BoolValueNullable",
-	"StringValue",
-	"StringValueNullable"
-)
-VALUES
-(
-	@Id,
-	@IntVlaue,
-	@IntVlaueNullable,
-	@BoolValue,
-	@BoolValueNullable,
-	@StringValue,
-	@StringValueNullable
-)
-
-BeforeExecute
--- DB2 DB2.LUW DB2LUW
-
 /* x => x.IntVlaue == 1 ? 3 : 4 == 3 */
 SELECT
 	"x"."Id",
@@ -498,11 +167,6 @@ SELECT
 	"x_with_not"."StringValueNullable"
 FROM
 	"OptimizationData" "x_with_not"
-WHERE
-	("x_with_not"."IntVlaue" <> 1 OR CASE
-		WHEN "x_with_not"."IntVlaue" = 1 THEN NULL
-		ELSE 0
-	END IS NULL)
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
@@ -563,11 +227,6 @@ SELECT
 	"swap_with_not"."StringValueNullable"
 FROM
 	"OptimizationData" "swap_with_not"
-WHERE
-	("swap_with_not"."IntVlaue" <> 1 OR CASE
-		WHEN "swap_with_not"."IntVlaue" = 1 THEN NULL
-		ELSE 0
-	END IS NULL)
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
@@ -629,10 +288,7 @@ SELECT
 FROM
 	"OptimizationData" "x_with_not"
 WHERE
-	CASE
-		WHEN "x_with_not"."IntVlaue" = 1 THEN NULL
-		ELSE 1
-	END IS NULL
+	"x_with_not"."IntVlaue" = 1
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
@@ -694,10 +350,7 @@ SELECT
 FROM
 	"OptimizationData" "swap_with_not"
 WHERE
-	CASE
-		WHEN "swap_with_not"."IntVlaue" = 1 THEN NULL
-		ELSE 1
-	END IS NULL
+	"swap_with_not"."IntVlaue" = 1
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
@@ -759,7 +412,7 @@ SELECT
 FROM
 	"OptimizationData" "x_with_not"
 WHERE
-	"x_with_not"."BoolValue" <> 1
+	"x_with_not"."BoolValue" = 0
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
@@ -821,7 +474,7 @@ SELECT
 FROM
 	"OptimizationData" "swap_with_not"
 WHERE
-	"swap_with_not"."BoolValue" <> 1
+	"swap_with_not"."BoolValue" = 0
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
@@ -852,7 +505,7 @@ SELECT
 FROM
 	"OptimizationData" "x"
 WHERE
-	"x"."BoolValue" <> 1
+	NOT "x"."BoolValue"
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
@@ -883,10 +536,7 @@ SELECT
 FROM
 	"OptimizationData" "x_with_not"
 WHERE
-	CASE
-		WHEN "x_with_not"."BoolValue" = 1 THEN NULL
-		ELSE 1
-	END IS NULL
+	"x_with_not"."BoolValue"
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
@@ -917,7 +567,7 @@ SELECT
 FROM
 	"OptimizationData" "swap"
 WHERE
-	"swap"."BoolValue" <> 1
+	NOT "swap"."BoolValue"
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
@@ -948,10 +598,7 @@ SELECT
 FROM
 	"OptimizationData" "swap_with_not"
 WHERE
-	CASE
-		WHEN "swap_with_not"."BoolValue" = 1 THEN NULL
-		ELSE 1
-	END IS NULL
+	"swap_with_not"."BoolValue"
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
@@ -1013,7 +660,7 @@ SELECT
 FROM
 	"OptimizationData" "x_with_not"
 WHERE
-	"x_with_not"."BoolValue" <> 1
+	"x_with_not"."BoolValue" = 0
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
@@ -1075,7 +722,7 @@ SELECT
 FROM
 	"OptimizationData" "swap_with_not"
 WHERE
-	"swap_with_not"."BoolValue" <> 1
+	"swap_with_not"."BoolValue" = 0
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
@@ -1474,7 +1121,7 @@ SELECT
 FROM
 	"OptimizationData" "x"
 WHERE
-	("x"."StringValueNullable" IS NULL OR "x"."StringValueNullable" IS NULL)
+	"x"."StringValueNullable" IS NULL OR "x"."StringValueNullable" IS NULL
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
@@ -1536,7 +1183,7 @@ SELECT
 FROM
 	"OptimizationData" "x"
 WHERE
-	("x"."StringValueNullable" IS NULL OR "x"."StringValueNullable" IS NULL)
+	"x"."StringValueNullable" IS NULL OR "x"."StringValueNullable" IS NULL
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
@@ -1598,7 +1245,7 @@ SELECT
 FROM
 	"OptimizationData" "swap"
 WHERE
-	("swap"."StringValueNullable" IS NULL OR "swap"."StringValueNullable" IS NULL)
+	"swap"."StringValueNullable" IS NULL OR "swap"."StringValueNullable" IS NULL
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
@@ -1843,7 +1490,7 @@ SELECT
 FROM
 	"OptimizationData" "x"
 WHERE
-	("x"."IntVlaue" < 4 OR "x"."IntVlaue" <> 0 AND "x"."IntVlaue" >= 4)
+	"x"."IntVlaue" < 4 OR "x"."IntVlaue" <> 0 AND "x"."IntVlaue" >= 4
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
@@ -1905,7 +1552,7 @@ SELECT
 FROM
 	"OptimizationData" "swap"
 WHERE
-	("swap"."IntVlaue" < 4 OR "swap"."IntVlaue" <> 0 AND "swap"."IntVlaue" >= 4)
+	"swap"."IntVlaue" < 4 OR "swap"."IntVlaue" <> 0 AND "swap"."IntVlaue" >= 4
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
@@ -1967,7 +1614,7 @@ SELECT
 FROM
 	"OptimizationData" "x"
 WHERE
-	("x"."IntVlaue" < 4 OR "x"."IntVlaue" > 0 AND "x"."IntVlaue" >= 4)
+	"x"."IntVlaue" < 4 OR "x"."IntVlaue" > 0 AND "x"."IntVlaue" >= 4
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
@@ -2091,7 +1738,7 @@ SELECT
 FROM
 	"OptimizationData" "x"
 WHERE
-	("x"."IntVlaue" < 4 OR "x"."IntVlaue" >= 0 AND "x"."IntVlaue" >= 4)
+	"x"."IntVlaue" < 4 OR "x"."IntVlaue" >= 0 AND "x"."IntVlaue" >= 4
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
@@ -2339,7 +1986,7 @@ SELECT
 FROM
 	"OptimizationData" "x"
 WHERE
-	("x"."IntVlaue" <> 0 AND "x"."IntVlaue" >= 4 OR "x"."IntVlaue" < 4)
+	"x"."IntVlaue" <> 0 AND "x"."IntVlaue" >= 4 OR "x"."IntVlaue" < 4
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
@@ -2401,7 +2048,8 @@ SELECT
 FROM
 	"OptimizationData" "swap"
 WHERE
-	("swap"."IntVlaue" <> 0 AND "swap"."IntVlaue" >= 4 OR "swap"."IntVlaue" < 4)
+	"swap"."IntVlaue" <> 0 AND "swap"."IntVlaue" >= 4 OR
+	"swap"."IntVlaue" < 4
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
@@ -2463,7 +2111,7 @@ SELECT
 FROM
 	"OptimizationData" "x"
 WHERE
-	("x"."IntVlaue" > 0 AND "x"."IntVlaue" >= 4 OR "x"."IntVlaue" < 4)
+	"x"."IntVlaue" > 0 AND "x"."IntVlaue" >= 4 OR "x"."IntVlaue" < 4
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
@@ -2587,7 +2235,7 @@ SELECT
 FROM
 	"OptimizationData" "x"
 WHERE
-	("x"."IntVlaue" >= 0 AND "x"."IntVlaue" >= 4 OR "x"."IntVlaue" < 4)
+	"x"."IntVlaue" >= 0 AND "x"."IntVlaue" >= 4 OR "x"."IntVlaue" < 4
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
@@ -2695,12 +2343,4 @@ SELECT
 	"t1"."StringValueNullable"
 FROM
 	"OptimizationData" "t1"
-
-BeforeExecute
--- DB2 DB2.LUW DB2LUW
-
-BEGIN
-	DECLARE CONTINUE HANDLER FOR SQLSTATE '42704' BEGIN END;
-	EXECUTE IMMEDIATE 'DROP TABLE "OptimizationData"';
-END
 

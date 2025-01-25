@@ -1,50 +1,6 @@
 ﻿BeforeExecute
 -- Informix.DB2 Informix
 
-DROP TABLE IF EXISTS DisTable
-
-BeforeExecute
--- Informix.DB2 Informix
-
-CREATE TABLE IF NOT EXISTS DisTable
-(
-	DisTypeID Int NOT NULL
-)
-
-BeforeExecute
--- Informix.DB2 Informix
-
-DROP TABLE IF EXISTS JurTable
-
-BeforeExecute
--- Informix.DB2 Informix
-
-CREATE TABLE IF NOT EXISTS JurTable
-(
-	JurCode NVarChar(2) NOT NULL,
-
-	PRIMARY KEY (JurCode)
-)
-
-BeforeExecute
--- Informix.DB2 Informix
-
-DROP TABLE IF EXISTS DisTypeTable
-
-BeforeExecute
--- Informix.DB2 Informix
-
-CREATE TABLE IF NOT EXISTS DisTypeTable
-(
-	DisTypeID Int          NOT NULL,
-	JurCode   NVarChar(50) NOT NULL,
-
-	PRIMARY KEY (DisTypeID)
-)
-
-BeforeExecute
--- Informix.DB2 Informix
-
 SELECT
 	d.DisTypeID
 FROM
@@ -56,19 +12,4 @@ FROM
 			WHEN d.DisTypeID = 5 THEN 5
 		END = a_DisType.DisTypeID
 		INNER JOIN JurTable j ON a_DisType.JurCode = j.JurCode
-
-BeforeExecute
--- Informix.DB2 Informix
-
-DROP TABLE IF EXISTS DisTypeTable
-
-BeforeExecute
--- Informix.DB2 Informix
-
-DROP TABLE IF EXISTS JurTable
-
-BeforeExecute
--- Informix.DB2 Informix
-
-DROP TABLE IF EXISTS DisTable
 

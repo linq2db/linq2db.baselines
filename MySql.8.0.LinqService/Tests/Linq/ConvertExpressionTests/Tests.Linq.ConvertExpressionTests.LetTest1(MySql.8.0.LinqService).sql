@@ -2,26 +2,22 @@
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
 
 SELECT
+	`t1`.`cond`
+FROM
 	(
 		SELECT
-			`a_Children_1`.`ParentID`
+			(
+				SELECT
+					`a_Children`.`ParentID`
+				FROM
+					`Child` `a_Children`
+				WHERE
+					`p`.`ParentID` = `a_Children`.`ParentID`
+				LIMIT 1
+			) as `cond`
 		FROM
-			`Child` `a_Children_1`
-		WHERE
-			`p`.`ParentID` = `a_Children_1`.`ParentID`
-		LIMIT 1
-	)
-FROM
-	`Parent` `p`
-		LEFT JOIN LATERAL (
-			SELECT
-				`a_Children`.`ParentID`
-			FROM
-				`Child` `a_Children`
-			WHERE
-				`p`.`ParentID` = `a_Children`.`ParentID`
-			LIMIT 1
-		) `t1` ON 1=1
+			`Parent` `p`
+	) `t1`
 WHERE
-	`t1`.`ParentID` IS NOT NULL
+	`t1`.`cond` IS NOT NULL
 

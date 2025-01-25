@@ -1,353 +1,12 @@
 ﻿BeforeExecute
 -- Informix.DB2 Informix
 
-DROP TABLE IF EXISTS AggregationData
-
-BeforeExecute
--- Informix.DB2 Informix
-
-CREATE TABLE IF NOT EXISTS AggregationData
-(
-	GroupId   Int   NOT NULL,
-	DataValue Float     NULL
-)
-
-BeforeExecute
--- Informix.DB2 Informix
-DECLARE @GroupId Integer(4) -- Int32
-SET     @GroupId = 1
-DECLARE @DataValue Double(8)
-SET     @DataValue = 1
-
-INSERT INTO AggregationData
-(
-	GroupId,
-	DataValue
-)
-VALUES
-(
-	@GroupId,
-	@DataValue
-)
-
-BeforeExecute
--- Informix.DB2 Informix
-DECLARE @GroupId Integer(4) -- Int32
-SET     @GroupId = 1
-DECLARE @DataValue Double
-SET     @DataValue = NULL
-
-INSERT INTO AggregationData
-(
-	GroupId,
-	DataValue
-)
-VALUES
-(
-	@GroupId,
-	@DataValue
-)
-
-BeforeExecute
--- Informix.DB2 Informix
-DECLARE @GroupId Integer(4) -- Int32
-SET     @GroupId = 1
-DECLARE @DataValue Double(8)
-SET     @DataValue = 3
-
-INSERT INTO AggregationData
-(
-	GroupId,
-	DataValue
-)
-VALUES
-(
-	@GroupId,
-	@DataValue
-)
-
-BeforeExecute
--- Informix.DB2 Informix
-DECLARE @GroupId Integer(4) -- Int32
-SET     @GroupId = 1
-DECLARE @DataValue Double(8)
-SET     @DataValue = 1
-
-INSERT INTO AggregationData
-(
-	GroupId,
-	DataValue
-)
-VALUES
-(
-	@GroupId,
-	@DataValue
-)
-
-BeforeExecute
--- Informix.DB2 Informix
-DECLARE @GroupId Integer(4) -- Int32
-SET     @GroupId = 1
-DECLARE @DataValue Double(8)
-SET     @DataValue = 5
-
-INSERT INTO AggregationData
-(
-	GroupId,
-	DataValue
-)
-VALUES
-(
-	@GroupId,
-	@DataValue
-)
-
-BeforeExecute
--- Informix.DB2 Informix
-DECLARE @GroupId Integer(4) -- Int32
-SET     @GroupId = 1
-DECLARE @DataValue Double(8)
-SET     @DataValue = 6
-
-INSERT INTO AggregationData
-(
-	GroupId,
-	DataValue
-)
-VALUES
-(
-	@GroupId,
-	@DataValue
-)
-
-BeforeExecute
--- Informix.DB2 Informix
-DECLARE @GroupId Integer(4) -- Int32
-SET     @GroupId = 2
-DECLARE @DataValue Double(8)
-SET     @DataValue = 7
-
-INSERT INTO AggregationData
-(
-	GroupId,
-	DataValue
-)
-VALUES
-(
-	@GroupId,
-	@DataValue
-)
-
-BeforeExecute
--- Informix.DB2 Informix
-DECLARE @GroupId Integer(4) -- Int32
-SET     @GroupId = 2
-DECLARE @DataValue Double(8)
-SET     @DataValue = 8
-
-INSERT INTO AggregationData
-(
-	GroupId,
-	DataValue
-)
-VALUES
-(
-	@GroupId,
-	@DataValue
-)
-
-BeforeExecute
--- Informix.DB2 Informix
-DECLARE @GroupId Integer(4) -- Int32
-SET     @GroupId = 2
-DECLARE @DataValue Double(8)
-SET     @DataValue = 9
-
-INSERT INTO AggregationData
-(
-	GroupId,
-	DataValue
-)
-VALUES
-(
-	@GroupId,
-	@DataValue
-)
-
-BeforeExecute
--- Informix.DB2 Informix
-DECLARE @GroupId Integer(4) -- Int32
-SET     @GroupId = 2
-DECLARE @DataValue Double
-SET     @DataValue = NULL
-
-INSERT INTO AggregationData
-(
-	GroupId,
-	DataValue
-)
-VALUES
-(
-	@GroupId,
-	@DataValue
-)
-
-BeforeExecute
--- Informix.DB2 Informix
-DECLARE @GroupId Integer(4) -- Int32
-SET     @GroupId = 2
-DECLARE @DataValue Double(8)
-SET     @DataValue = 11
-
-INSERT INTO AggregationData
-(
-	GroupId,
-	DataValue
-)
-VALUES
-(
-	@GroupId,
-	@DataValue
-)
-
-BeforeExecute
--- Informix.DB2 Informix
-DECLARE @GroupId Integer(4) -- Int32
-SET     @GroupId = 2
-DECLARE @DataValue Double(8)
-SET     @DataValue = 7
-
-INSERT INTO AggregationData
-(
-	GroupId,
-	DataValue
-)
-VALUES
-(
-	@GroupId,
-	@DataValue
-)
-
-BeforeExecute
--- Informix.DB2 Informix
-DECLARE @GroupId Integer(4) -- Int32
-SET     @GroupId = 3
-DECLARE @DataValue Double(8)
-SET     @DataValue = 13
-
-INSERT INTO AggregationData
-(
-	GroupId,
-	DataValue
-)
-VALUES
-(
-	@GroupId,
-	@DataValue
-)
-
-BeforeExecute
--- Informix.DB2 Informix
-DECLARE @GroupId Integer(4) -- Int32
-SET     @GroupId = 3
-DECLARE @DataValue Double(8)
-SET     @DataValue = 16
-
-INSERT INTO AggregationData
-(
-	GroupId,
-	DataValue
-)
-VALUES
-(
-	@GroupId,
-	@DataValue
-)
-
-BeforeExecute
--- Informix.DB2 Informix
-DECLARE @GroupId Integer(4) -- Int32
-SET     @GroupId = 3
-DECLARE @DataValue Double(8)
-SET     @DataValue = 16
-
-INSERT INTO AggregationData
-(
-	GroupId,
-	DataValue
-)
-VALUES
-(
-	@GroupId,
-	@DataValue
-)
-
-BeforeExecute
--- Informix.DB2 Informix
-DECLARE @GroupId Integer(4) -- Int32
-SET     @GroupId = 3
-DECLARE @DataValue Double(8)
-SET     @DataValue = 16
-
-INSERT INTO AggregationData
-(
-	GroupId,
-	DataValue
-)
-VALUES
-(
-	@GroupId,
-	@DataValue
-)
-
-BeforeExecute
--- Informix.DB2 Informix
-DECLARE @GroupId Integer(4) -- Int32
-SET     @GroupId = 3
-DECLARE @DataValue Double
-SET     @DataValue = NULL
-
-INSERT INTO AggregationData
-(
-	GroupId,
-	DataValue
-)
-VALUES
-(
-	@GroupId,
-	@DataValue
-)
-
-BeforeExecute
--- Informix.DB2 Informix
-DECLARE @GroupId Integer(4) -- Int32
-SET     @GroupId = 3
-DECLARE @DataValue Double(8)
-SET     @DataValue = 18
-
-INSERT INTO AggregationData
-(
-	GroupId,
-	DataValue
-)
-VALUES
-(
-	@GroupId,
-	@DataValue
-)
-
-BeforeExecute
--- Informix.DB2 Informix
-
 SELECT
-	g_1.GroupId,
-	COUNT(*),
-	COUNT(CASE
-		WHEN Mod(g_1.DataValue, 2) = 0 THEN 1
-		ELSE NULL
-	END),
-	COUNT(*),
-	COUNT(DISTINCT g_1.DataValue),
+	t1.Key_1,
+	t1.COUNT_1,
+	t1.COUNT_2,
+	t1.COUNT_3,
+	t1.COUNT_4,
 	(
 		SELECT
 			COUNT(*)
@@ -358,7 +17,7 @@ SELECT
 				FROM
 					AggregationData x
 				WHERE
-					x.DataValue IS NOT NULL AND g_1.GroupId = x.GroupId
+					x.DataValue IS NOT NULL AND t1.Key_1 = x.GroupId
 			) x_1
 		WHERE
 			Mod(x_1.DataValue, 2) = 0
@@ -369,13 +28,13 @@ SELECT
 		FROM
 			(
 				SELECT DISTINCT
-					t.DataValue
+					t_1.DataValue
 				FROM
-					AggregationData t
+					AggregationData t_1
 				WHERE
-					t.DataValue IS NOT NULL AND g_1.GroupId = t.GroupId AND
-					Mod(t.DataValue, 2) = 0
-			) t1
+					t_1.DataValue IS NOT NULL AND t1.Key_1 = t_1.GroupId AND
+					Mod(t_1.DataValue, 2) = 0
+			) t2
 	),
 	(
 		SELECT
@@ -387,36 +46,49 @@ SELECT
 				FROM
 					AggregationData x_2
 				WHERE
-					x_2.DataValue IS NOT NULL AND g_1.GroupId = x_2.GroupId AND
+					x_2.DataValue IS NOT NULL AND t1.Key_1 = x_2.GroupId AND
 					Mod(x_2.DataValue, 2) = 0
 			) x_3
 		WHERE
 			Mod(x_3.DataValue, 2) = 0
 	),
-	COUNT(CASE
-		WHEN Mod(g_1.DataValue, 2) = 0 THEN 1
-		ELSE NULL
-	END),
+	t1.COUNT_5,
 	(
 		SELECT
 			COUNT(*)
 		FROM
 			(
 				SELECT DISTINCT
-					t_1.DataValue
+					t_2.DataValue
 				FROM
-					AggregationData t_1
+					AggregationData t_2
 				WHERE
-					t_1.DataValue IS NOT NULL AND g_1.GroupId = t_1.GroupId AND
-					Mod(t_1.DataValue, 2) = 0
-			) t2
+					t_2.DataValue IS NOT NULL AND t1.Key_1 = t_2.GroupId AND
+					Mod(t_2.DataValue, 2) = 0
+			) t3
 	)
 FROM
-	AggregationData g_1
-WHERE
-	g_1.DataValue IS NOT NULL
-GROUP BY
-	g_1.GroupId
+	(
+		SELECT
+			t.GroupId as Key_1,
+			COUNT(*) as COUNT_1,
+			COUNT(CASE
+				WHEN Mod(t.DataValue, 2) = 0 THEN 1
+				ELSE NULL
+			END) as COUNT_2,
+			COUNT(*) as COUNT_3,
+			COUNT(DISTINCT t.DataValue) as COUNT_4,
+			COUNT(CASE
+				WHEN Mod(t.DataValue, 2) = 0 THEN 1
+				ELSE NULL
+			END) as COUNT_5
+		FROM
+			AggregationData t
+		WHERE
+			t.DataValue IS NOT NULL
+		GROUP BY
+			t.GroupId
+	) t1
 
 BeforeExecute
 -- Informix.DB2 Informix
@@ -426,9 +98,4 @@ SELECT
 	t1.DataValue
 FROM
 	AggregationData t1
-
-BeforeExecute
--- Informix.DB2 Informix
-
-DROP TABLE IF EXISTS AggregationData
 

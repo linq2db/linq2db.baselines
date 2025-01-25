@@ -1,36 +1,6 @@
 ﻿BeforeExecute
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 
-DROP TABLE IF EXISTS `TakeSkipClass`
-
-BeforeExecute
--- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
-CREATE TABLE IF NOT EXISTS `TakeSkipClass`
-(
-	`Value` VARCHAR(10)     NULL
-)
-
-BeforeExecute
--- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
-INSERT INTO `TakeSkipClass`
-(
-	`Value`
-)
-VALUES
-('Value1'),
-('Value2'),
-('Value3'),
-('Value4'),
-('Value5'),
-('Value6'),
-('Value7'),
-('Value8')
-
-BeforeExecute
--- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
 SELECT
 	`t1`.`Value`
 FROM
@@ -38,9 +8,4 @@ FROM
 ORDER BY
 	`t1`.`Value`
 LIMIT 3, 2
-
-BeforeExecute
--- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
-DROP TABLE IF EXISTS `TakeSkipClass`
 

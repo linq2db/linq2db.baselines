@@ -1,33 +1,5 @@
 ﻿BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-
-DROP TABLE IF EXISTS `IntEnumTable`
-
-BeforeExecute
--- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-
-CREATE TABLE IF NOT EXISTS `IntEnumTable`
-(
-	`Id`             INT NOT NULL,
-	`Column`         INT NOT NULL,
-	`ColumnNullable` INT     NULL
-)
-
-BeforeExecute
--- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-
-INSERT INTO `IntEnumTable`
-(
-	`Id`,
-	`Column`,
-	`ColumnNullable`
-)
-VALUES
-(1,1,NULL),
-(2,2,3)
-
-BeforeExecute
--- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 DECLARE @Column Int32
 SET     @Column = 2
 DECLARE @ColumnNullable Int32
@@ -170,9 +142,4 @@ FROM
 	`IntEnumTable` `t1`
 ORDER BY
 	`t1`.`Id`
-
-BeforeExecute
--- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-
-DROP TABLE IF EXISTS `IntEnumTable`
 

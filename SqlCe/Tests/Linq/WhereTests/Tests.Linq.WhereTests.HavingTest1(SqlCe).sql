@@ -2,11 +2,11 @@
 -- SqlCe
 
 SELECT
-	COUNT(*) as [COUNT_1]
+	COUNT(*) as [cond]
 FROM
-	[Child] [c_1]
+	[Child] [g_1]
 GROUP BY
-	[c_1].[ParentID]
+	[g_1].[ParentID]
 HAVING
 	COUNT(*) > 1
 

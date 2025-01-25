@@ -1,20 +1,5 @@
 ﻿BeforeExecute
 -- SqlServer.Contained.MS SqlServer.2019
-
-DROP TABLE IF EXISTS [TestTable]
-
-BeforeExecute
--- SqlServer.Contained.MS SqlServer.2019
-
-IF (OBJECT_ID(N'[TestTable]', N'U') IS NULL)
-	CREATE TABLE [TestTable]
-	(
-		[Id]   UniqueIdentifier NOT NULL,
-		[Json] NVarChar(Max)        NULL
-	)
-
-BeforeExecute
--- SqlServer.Contained.MS SqlServer.2019
 DECLARE @Id UniqueIdentifier -- Guid
 SET     @Id = 'bc7b663d-0fde-4327-8f92-5d8cc3a11d11'
 DECLARE @Json NVarChar(4000) -- String
@@ -68,9 +53,4 @@ FROM
 	[TestTable] [x]
 WHERE
 	[x].[Id] = @Id
-
-BeforeExecute
--- SqlServer.Contained.MS SqlServer.2019
-
-DROP TABLE IF EXISTS [TestTable]
 

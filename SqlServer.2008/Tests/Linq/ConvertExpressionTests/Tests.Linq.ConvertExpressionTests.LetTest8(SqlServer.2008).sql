@@ -2,15 +2,18 @@
 -- SqlServer.2008
 
 SELECT
-	[t1].[ParentID],
+	CASE
+		WHEN [t1].[ParentID] IS NULL THEN 0
+		ELSE [t2].[ParentID]
+	END,
 	CASE
 		WHEN EXISTS(
 			SELECT
 				*
 			FROM
-				[Child] [c_3]
+				[Child] [c_4]
 			WHERE
-				[c_3].[ParentID] = [p].[ParentID] AND [c_3].[ChildID] > -100
+				[c_4].[ParentID] = [p].[ParentID] AND [c_4].[ChildID] > -100
 		)
 			THEN 1
 		ELSE 0
@@ -19,12 +22,12 @@ SELECT
 		SELECT
 			COUNT(*)
 		FROM
-			[Child] [c_4]
+			[Child] [c_5]
 		WHERE
-			[c_4].[ParentID] = [p].[ParentID] AND [c_4].[ChildID] > -100
+			[c_5].[ParentID] = [p].[ParentID] AND [c_5].[ChildID] > -100
 	),
-	[t2].[ParentID],
-	[t2].[ChildID]
+	[t3].[ParentID],
+	[t3].[ChildID]
 FROM
 	[Parent] [p]
 		OUTER APPLY (
@@ -40,13 +43,24 @@ FROM
 		) [t1]
 		OUTER APPLY (
 			SELECT TOP (1)
-				[c_2].[ParentID],
-				[c_2].[ChildID]
+				[c_2].[ParentID]
 			FROM
 				[Child] [c_2]
 			WHERE
-				[c_2].[ParentID] = [p].[ParentID] AND [c_2].[ChildID] > -100
+				[c_2].[ParentID] = [p].[ParentID] AND [c_2].[ChildID] > -100 AND
+				[c_2].[ParentID] > 0
 			ORDER BY
 				[c_2].[ChildID]
 		) [t2]
+		OUTER APPLY (
+			SELECT TOP (1)
+				[c_3].[ParentID],
+				[c_3].[ChildID]
+			FROM
+				[Child] [c_3]
+			WHERE
+				[c_3].[ParentID] = [p].[ParentID] AND [c_3].[ChildID] > -100
+			ORDER BY
+				[c_3].[ChildID]
+		) [t3]
 

@@ -22,11 +22,13 @@ WHERE
 
 BeforeExecute
 -- Informix.DB2 Informix
+DECLARE @BinaryValue VarBinary -- Binary
+SET     @BinaryValue = NULL
 
 UPDATE
 	LinqDataTypes t
 SET
-	BinaryValue = NULL
+	BinaryValue = @BinaryValue
 WHERE
 	t.ID = 1
 

@@ -1,47 +1,5 @@
 ﻿BeforeExecute
 -- Sybase.Managed Sybase
-
-IF (OBJECT_ID(N'Topic') IS NOT NULL)
-	DROP TABLE [Topic]
-
-BeforeExecute
--- Sybase.Managed Sybase
-
-IF (OBJECT_ID(N'Topic') IS NULL)
-	EXECUTE('
-		CREATE TABLE [Topic]
-		(
-			[Id]    Int           NOT NULL,
-			[Title] NVarChar(255)     NULL,
-			[Text]  NVarChar(255)     NULL,
-
-			CONSTRAINT [PK_Topic] PRIMARY KEY CLUSTERED ([Id])
-		)
-	')
-
-BeforeExecute
--- Sybase.Managed Sybase
-
-IF (OBJECT_ID(N'Message') IS NOT NULL)
-	DROP TABLE [Message]
-
-BeforeExecute
--- Sybase.Managed Sybase
-
-IF (OBJECT_ID(N'Message') IS NULL)
-	EXECUTE('
-		CREATE TABLE [Message]
-		(
-			[Id]      Int           NOT NULL,
-			[TopicId] Int           NOT NULL,
-			[Text]    NVarChar(255)     NULL,
-
-			CONSTRAINT [PK_Message] PRIMARY KEY CLUSTERED ([Id])
-		)
-	')
-
-BeforeExecute
--- Sybase.Managed Sybase
 DECLARE @Id Integer -- Int32
 SET     @Id = 6
 DECLARE @Title UniVarChar(5) -- String
@@ -139,15 +97,3 @@ WHERE
 
 BeforeExecute
 DisposeTransaction
-BeforeExecute
--- Sybase.Managed Sybase
-
-IF (OBJECT_ID(N'Message') IS NOT NULL)
-	DROP TABLE [Message]
-
-BeforeExecute
--- Sybase.Managed Sybase
-
-IF (OBJECT_ID(N'Topic') IS NOT NULL)
-	DROP TABLE [Topic]
-

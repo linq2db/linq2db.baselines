@@ -2,50 +2,50 @@
 -- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
 
 SELECT
-	t6."ParentID_6",
-	t6."Value1",
 	t6."ParentID",
+	t6."Value1",
+	t6."ParentID_1",
 	t6."ChildID",
 	t6."Any_1",
 	t6."ChildID_1",
-	t6."ParentID_1",
-	t6."ChildID_2",
 	t6."ParentID_2",
-	t6."ChildID_3",
+	t6."ChildID_2",
 	t6."ParentID_3",
-	t6."ChildID_4",
-	t6."ParentID_4",
-	t6."ChildID_5",
-	t6."ParentID_5"
+	t6."ChildArray",
+	t6."ChildArray_1",
+	t6."ChildDictionary1",
+	t6."ChildDictionary1_1",
+	t6."ChildDictionary2",
+	t6."ChildDictionary2_1",
+	t6."ChildDictionary2_2",
+	t6."ChildDictionary2_3"
 FROM
 	(
 		SELECT DISTINCT
-			c1_1."ParentID",
-			c1_1."ChildID",
-			t1."ChildID" as "ChildID_1",
-			t1."ParentID" as "ParentID_1",
-			t2."ChildID" as "ChildID_2",
-			t2."ParentID" as "ParentID_2",
-			t3."ChildID" as "ChildID_3",
-			t3."ParentID" as "ParentID_3",
-			t4."ChildID" as "ChildID_4",
-			t4."ParentID" as "ParentID_4",
-			t5."ChildID" as "ChildID_5",
-			t5."ParentID" as "ParentID_5",
-			p."ParentID" as "ParentID_6",
+			p."ParentID",
 			p."Value1",
-			CASE
-				WHEN EXISTS(
-					SELECT
-						*
-					FROM
-						"Child" c_6
-					WHERE
-						c_6."ChildID" > 2
-				)
-					THEN True
-				ELSE False
-			END as "Any_1"
+			c1_1."ParentID" as "ParentID_1",
+			c1_1."ChildID",
+			EXISTS(
+				SELECT
+					*
+				FROM
+					"Child" c_6
+				WHERE
+					c_6."ChildID" > 2
+			) as "Any_1",
+			t1."ChildID" as "ChildID_1",
+			t1."ParentID" as "ParentID_2",
+			t2."ChildID" as "ChildID_2",
+			t2."ParentID" as "ParentID_3",
+			t3."ChildArray",
+			t3."ChildArray_1",
+			t4."ChildDictionary1",
+			t4."ChildDictionary1_1",
+			t5."ChildDictionary2",
+			t5."ChildDictionary2_1",
+			t5."ChildDictionary2_2",
+			t5."ChildDictionary2_3"
 		FROM
 			"Parent" p
 				LEFT JOIN LATERAL (
@@ -80,8 +80,8 @@ FROM
 				) t2 ON 1=1
 				LEFT JOIN LATERAL (
 					SELECT
-						c_3."ChildID",
-						c_3."ParentID"
+						c_3."ChildID" as "ChildArray",
+						c_3."ParentID" as "ChildArray_1"
 					FROM
 						"Child" c_3
 					WHERE
@@ -90,8 +90,8 @@ FROM
 				) t3 ON 1=1
 				LEFT JOIN LATERAL (
 					SELECT
-						c_4."ChildID",
-						c_4."ParentID"
+						c_4."ChildID" as "ChildDictionary1",
+						c_4."ParentID" as "ChildDictionary1_1"
 					FROM
 						"Child" c_4
 					WHERE
@@ -100,8 +100,10 @@ FROM
 				) t4 ON 1=1
 				LEFT JOIN LATERAL (
 					SELECT
-						c_5."ChildID",
-						c_5."ParentID"
+						'ChildID' as "ChildDictionary2",
+						c_5."ChildID" as "ChildDictionary2_1",
+						'ParentID' as "ChildDictionary2_2",
+						c_5."ParentID" as "ChildDictionary2_3"
 					FROM
 						"Child" c_5
 					WHERE
@@ -110,5 +112,5 @@ FROM
 				) t5 ON 1=1
 	) t6
 ORDER BY
-	t6."ParentID_6"
+	t6."ParentID"
 

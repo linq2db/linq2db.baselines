@@ -1,28 +1,6 @@
 ﻿BeforeExecute
 -- Firebird.3 Firebird3
 
-EXECUTE BLOCK AS BEGIN
-	IF (EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'CteChild')) THEN
-		EXECUTE STATEMENT 'DROP TABLE "CteChild"';
-END
-
-BeforeExecute
--- Firebird.3 Firebird3
-
-EXECUTE BLOCK AS BEGIN
-	IF (NOT EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'CteChild')) THEN
-		EXECUTE STATEMENT '
-			CREATE TABLE "CteChild"
-			(
-				"ChildID"  Int NOT NULL,
-				"ParentID" Int NOT NULL
-			)
-		';
-END
-
-BeforeExecute
--- Firebird.3 Firebird3
-
 INSERT INTO "CteChild"
 (
 	"ChildID",
@@ -75,19 +53,11 @@ SELECT
 	"c4"."ChildID",
 	"c4"."ParentID"
 FROM
-	"Child" "p"
-		INNER JOIN "Child" "c4" ON "c4"."ParentID" = "p"."ParentID"
+	"Child" "c_1"
+		INNER JOIN "Child" "c4" ON "c4"."ParentID" = "c_1"."ParentID"
 WHERE
-	"p"."ParentID" > 1 AND Mod("c4"."ParentID", 2) = 0
+	"c_1"."ParentID" > 1 AND Mod("c4"."ParentID", 2) = 0
 ORDER BY
 	"c4"."ChildID",
 	"c4"."ParentID"
-
-BeforeExecute
--- Firebird.3 Firebird3
-
-EXECUTE BLOCK AS BEGIN
-	IF (EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'CteChild')) THEN
-		EXECUTE STATEMENT 'DROP TABLE "CteChild"';
-END
 

@@ -1,23 +1,6 @@
 ﻿BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
 
-DROP TABLE IF EXISTS "TestFolder"
-
-BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
-
-CREATE TABLE IF NOT EXISTS "TestFolder"
-(
-	"Id"       uuid NOT NULL,
-	"Label"    text     NULL,
-	"ParentId" uuid     NULL
-)
-
-BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
-DECLARE @Guid1 Uuid -- Guid
-SET     @Guid1 = 'bc7b663d-0fde-4327-8f92-5d8cc3a11d11'::uuid
-
 WITH "CTE" ("ParentId", "Label")
 AS
 (
@@ -35,14 +18,9 @@ INSERT INTO "TestFolder"
 	"Label"
 )
 SELECT
-	:Guid1,
+	'bc7b663d-0fde-4327-8f92-5d8cc3a11d11'::uuid,
 	parent."Label" || '/' || child."Label"
 FROM
 	"CTE" child
 		INNER JOIN "TestFolder" parent ON child."ParentId" = parent."Id"
-
-BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
-
-DROP TABLE IF EXISTS "TestFolder"
 

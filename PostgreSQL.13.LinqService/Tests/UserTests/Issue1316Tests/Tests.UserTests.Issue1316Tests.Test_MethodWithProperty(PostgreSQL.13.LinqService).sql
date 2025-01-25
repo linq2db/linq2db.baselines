@@ -1,20 +1,5 @@
 ﻿BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
-
-DROP TABLE IF EXISTS "Issue1316Tests"
-
-BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
-
-CREATE TABLE IF NOT EXISTS "Issue1316Tests"
-(
-	"ID" Int NOT NULL,
-
-	CONSTRAINT "PK_Issue1316Tests" PRIMARY KEY ("ID")
-)
-
-BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
 DECLARE @ID Integer -- Int32
 SET     @ID = 5
 
@@ -39,9 +24,4 @@ FROM
 WHERE
 	t1."ID" = :Item1
 LIMIT 2
-
-BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
-
-DROP TABLE IF EXISTS "Issue1316Tests"
 

@@ -1,73 +1,6 @@
 ﻿BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
-BEGIN
-	DECLARE CONTINUE HANDLER FOR SQLSTATE '42704' BEGIN END;
-	EXECUTE IMMEDIATE 'DROP TABLE "test_in_1"';
-END
-
-BeforeExecute
--- DB2 DB2.LUW DB2LUW
-
-BEGIN
-	DECLARE CONTINUE HANDLER FOR SQLSTATE '42710' BEGIN END;
-	EXECUTE IMMEDIATE '
-		CREATE TABLE "test_in_1"
-		(
-			ID Int     NULL
-		)
-	';
-END
-
-BeforeExecute
--- DB2 DB2.LUW DB2LUW
-
-INSERT INTO "test_in_1"
-(
-	ID
-)
-VALUES
-(1),
-(3)
-
-BeforeExecute
--- DB2 DB2.LUW DB2LUW
-
-BEGIN
-	DECLARE CONTINUE HANDLER FOR SQLSTATE '42704' BEGIN END;
-	EXECUTE IMMEDIATE 'DROP TABLE "test_in_2"';
-END
-
-BeforeExecute
--- DB2 DB2.LUW DB2LUW
-
-BEGIN
-	DECLARE CONTINUE HANDLER FOR SQLSTATE '42710' BEGIN END;
-	EXECUTE IMMEDIATE '
-		CREATE TABLE "test_in_2"
-		(
-			ID Int     NULL,
-			GV Int     NULL
-		)
-	';
-END
-
-BeforeExecute
--- DB2 DB2.LUW DB2LUW
-
-INSERT INTO "test_in_2"
-(
-	ID,
-	GV
-)
-VALUES
-(1,1),
-(2,0),
-(NULL,NULL)
-
-BeforeExecute
--- DB2 DB2.LUW DB2LUW
-
 SELECT
 	"t".ID
 FROM
@@ -79,14 +12,14 @@ WHERE
 		FROM
 			(
 				SELECT
-					MIN("g_1".ID) as MIN_1
+					MIN("g_1".ID) as "In_1"
 				FROM
 					"test_in_2" "g_1"
 				GROUP BY
 					"g_1".GV
 			) "t1"
 		WHERE
-			("t".ID = "t1".MIN_1 OR "t".ID IS NULL AND "t1".MIN_1 IS NULL)
+			"t".ID = "t1"."In_1" OR "t".ID IS NULL AND "t1"."In_1" IS NULL
 	)
 
 BeforeExecute
@@ -105,20 +38,4 @@ SELECT
 	"t1".GV
 FROM
 	"test_in_2" "t1"
-
-BeforeExecute
--- DB2 DB2.LUW DB2LUW
-
-BEGIN
-	DECLARE CONTINUE HANDLER FOR SQLSTATE '42704' BEGIN END;
-	EXECUTE IMMEDIATE 'DROP TABLE "test_in_2"';
-END
-
-BeforeExecute
--- DB2 DB2.LUW DB2LUW
-
-BEGIN
-	DECLARE CONTINUE HANDLER FOR SQLSTATE '42704' BEGIN END;
-	EXECUTE IMMEDIATE 'DROP TABLE "test_in_1"';
-END
 

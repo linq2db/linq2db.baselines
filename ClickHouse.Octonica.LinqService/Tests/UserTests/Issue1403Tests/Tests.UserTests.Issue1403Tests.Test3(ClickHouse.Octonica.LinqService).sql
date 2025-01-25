@@ -1,24 +1,6 @@
 ﻿BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
-DROP TABLE IF EXISTS Issue1403Tests_3
-
-BeforeExecute
--- ClickHouse.Octonica ClickHouse
-
-CREATE TABLE IF NOT EXISTS Issue1403Tests_3
-(
-	event_id          Int32,
-	event_description String,
-
-	PRIMARY KEY (event_id)
-)
-ENGINE = MergeTree()
-ORDER BY event_id
-
-BeforeExecute
--- ClickHouse.Octonica ClickHouse
-
 INSERT INTO Issue1403Tests_3
 (
 	event_id,
@@ -39,9 +21,4 @@ SELECT
 FROM
 	Issue1403Tests_3 t1
 LIMIT 1
-
-BeforeExecute
--- ClickHouse.Octonica ClickHouse
-
-DROP TABLE IF EXISTS Issue1403Tests_3
 

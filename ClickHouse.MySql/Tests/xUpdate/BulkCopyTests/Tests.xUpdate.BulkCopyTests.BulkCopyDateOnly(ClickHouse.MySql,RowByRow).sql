@@ -1,20 +1,6 @@
 ﻿BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
-DROP TABLE IF EXISTS DateOnlyTable
-
-BeforeExecute
--- ClickHouse.MySql ClickHouse
-
-CREATE TABLE IF NOT EXISTS DateOnlyTable
-(
-	Date Date32
-)
-ENGINE = Memory()
-
-BeforeExecute
--- ClickHouse.MySql ClickHouse
-
 INSERT INTO DateOnlyTable
 (
 	Date
@@ -32,9 +18,4 @@ SELECT
 FROM
 	DateOnlyTable t1
 LIMIT 2
-
-BeforeExecute
--- ClickHouse.MySql ClickHouse
-
-DROP TABLE IF EXISTS DateOnlyTable
 

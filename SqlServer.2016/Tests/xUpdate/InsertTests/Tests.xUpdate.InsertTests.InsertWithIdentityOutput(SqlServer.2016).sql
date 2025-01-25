@@ -18,6 +18,8 @@ SET     @MiddleName = NULL
 DECLARE @Gender Char(1) -- AnsiStringFixedLength
 SET     @Gender = N'M'
 
+DECLARE @PersonOutput TABLE ([PersonID] Int)
+
 INSERT INTO [Person]
 (
 	[FirstName],
@@ -25,6 +27,8 @@ INSERT INTO [Person]
 	[MiddleName],
 	[Gender]
 )
+OUTPUT [INSERTED].[PersonID]
+INTO @PersonOutput
 VALUES
 (
 	@FirstName,
@@ -33,12 +37,12 @@ VALUES
 	@Gender
 )
 
-SELECT SCOPE_IDENTITY()
+SELECT [PersonID] FROM @PersonOutput
 
 BeforeExecute
 -- SqlServer.2016
-DECLARE @FirstName NVarChar(4000) -- String
-SET     @FirstName = N'John0'
+DECLARE @p NVarChar(4000) -- String
+SET     @p = N'John0'
 
 SELECT TOP (2)
 	[p].[FirstName],
@@ -49,7 +53,7 @@ SELECT TOP (2)
 FROM
 	[Person] [p]
 WHERE
-	[p].[FirstName] = @FirstName AND [p].[LastName] = N'Shepard'
+	[p].[FirstName] = @p AND [p].[LastName] = N'Shepard'
 
 BeforeExecute
 -- SqlServer.2016
@@ -62,6 +66,8 @@ SET     @MiddleName = NULL
 DECLARE @Gender Char(1) -- AnsiStringFixedLength
 SET     @Gender = N'M'
 
+DECLARE @PersonOutput TABLE ([PersonID] Int)
+
 INSERT INTO [Person]
 (
 	[FirstName],
@@ -69,6 +75,8 @@ INSERT INTO [Person]
 	[MiddleName],
 	[Gender]
 )
+OUTPUT [INSERTED].[PersonID]
+INTO @PersonOutput
 VALUES
 (
 	@FirstName,
@@ -77,12 +85,12 @@ VALUES
 	@Gender
 )
 
-SELECT SCOPE_IDENTITY()
+SELECT [PersonID] FROM @PersonOutput
 
 BeforeExecute
 -- SqlServer.2016
-DECLARE @FirstName NVarChar(4000) -- String
-SET     @FirstName = N'John1'
+DECLARE @p NVarChar(4000) -- String
+SET     @p = N'John1'
 
 SELECT TOP (2)
 	[p].[FirstName],
@@ -93,7 +101,7 @@ SELECT TOP (2)
 FROM
 	[Person] [p]
 WHERE
-	[p].[FirstName] = @FirstName AND [p].[LastName] = N'Shepard'
+	[p].[FirstName] = @p AND [p].[LastName] = N'Shepard'
 
 BeforeExecute
 -- SqlServer.2016

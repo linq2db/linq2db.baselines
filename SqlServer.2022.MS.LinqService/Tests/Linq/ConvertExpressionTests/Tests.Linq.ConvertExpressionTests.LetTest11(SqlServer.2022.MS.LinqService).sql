@@ -2,7 +2,7 @@
 -- SqlServer.2022.MS SqlServer.2022
 
 SELECT
-	[t1].[ParentID],
+	IIF([t1].[ParentID] IS NULL, 0, [t1].[ParentID]),
 	[t2].[ParentID],
 	[t2].[ChildID]
 FROM

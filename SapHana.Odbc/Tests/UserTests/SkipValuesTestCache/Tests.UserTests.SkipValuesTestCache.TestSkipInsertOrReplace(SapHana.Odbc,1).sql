@@ -1,22 +1,5 @@
 ﻿BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-
-DROP TABLE "PR_1598_Insert_Table_Cache"
-
-BeforeExecute
--- SapHana.Odbc SapHanaOdbc
-
-CREATE COLUMN TABLE "PR_1598_Insert_Table_Cache"
-(
-	"Id"   Integer       NOT NULL,
-	"Name" NVarChar(255)     NULL,
-	"Age"  Integer           NULL,
-
-	PRIMARY KEY ("Id")
-)
-
-BeforeExecute
--- SapHana.Odbc SapHanaOdbc
 DECLARE @Name NVarChar(4) -- String
 SET     @Name = 'John'
 DECLARE @Id  -- Int32
@@ -86,9 +69,4 @@ FROM
 WHERE
 	"t"."Id" = 1
 LIMIT 1
-
-BeforeExecute
--- SapHana.Odbc SapHanaOdbc
-
-DROP TABLE "PR_1598_Insert_Table_Cache"
 

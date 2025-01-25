@@ -451,13 +451,13 @@ CREATE TABLE TestMerge1
 	FieldGuid       CHAR(36)          NULL,
 	FieldDecimal    DECIMAL(24, 10)   NULL,
 	FieldDate       DATE              NULL,
--- SKIP MySql.5.7 END
--- SKIP MySql.8.0 END
--- SKIP MySqlConnector.5.7 END
--- SKIP MySqlConnector.8.0 END
--- SKIP MariaDB.11 BEGIN
+
+
+
+
+
 	FieldTime       TIME              NULL,
--- SKIP MariaDB.11 END
+
 	FieldEnumString VARCHAR(20)       NULL,
 	FieldEnumNumber INT               NULL,
 
@@ -489,13 +489,13 @@ CREATE TABLE TestMerge2
 	FieldGuid       CHAR(36)          NULL,
 	FieldDecimal    DECIMAL(24, 10)   NULL,
 	FieldDate       DATE              NULL,
--- SKIP MySql.5.7 END
--- SKIP MySql.8.0 END
--- SKIP MySqlConnector.5.7 END
--- SKIP MySqlConnector.8.0 END
--- SKIP MariaDB.11 BEGIN
+
+
+
+
+
 	FieldTime       TIME              NULL,
--- SKIP MariaDB.11 END
+
 	FieldEnumString VARCHAR(20)       NULL,
 	FieldEnumNumber INT               NULL,
 
@@ -727,7 +727,7 @@ CREATE PROCEDURE `Issue2313Results`(
 	IN `Enum` ENUM('one', 'two'),
 	IN `Set` ENUM('one', 'two'),
 
--- SKIP MySql.5.7 END
+
 
 	IN `Year` YEAR
 )
@@ -775,7 +775,7 @@ BEGIN
 	`Set`,
 	`Year`
 
--- SKIP MySql.5.7 END
+
 
 	FROM Person;
 END
@@ -794,15 +794,6 @@ CREATE TABLE `CollatedTable`
 	`CaseSensitive`		VARCHAR(20) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL,
 	`CaseInsensitive`	VARCHAR(20) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL
 )
-
-BeforeExecute
--- MySql.5.7 MySql.5.7.MySql.Data MySql57
-
--- SKIP MySql.8.0 BEGIN
--- SKIP MySqlConnector.8.0 BEGIN
--- SKIP MySql.5.7 END
--- SKIP MySqlConnector.8.0 END
--- SKIP MySql.8.0 END
 
 BeforeExecute
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57

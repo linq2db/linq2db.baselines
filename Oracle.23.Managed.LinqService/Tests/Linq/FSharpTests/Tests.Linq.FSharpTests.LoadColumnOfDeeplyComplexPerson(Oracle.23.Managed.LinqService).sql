@@ -1,13 +1,13 @@
 ﻿BeforeExecute
 -- Oracle.23.Managed Oracle.Managed Oracle12
-DECLARE @ID Int32
-SET     @ID = 1
+DECLARE @p Int32
+SET     @p = 1
 
 SELECT
 	p."LastName" as "Value_1"
 FROM
 	"Person" p
 WHERE
-	p."PersonID" = :ID
+	p."PersonID" = :p
 FETCH NEXT 2 ROWS ONLY
 

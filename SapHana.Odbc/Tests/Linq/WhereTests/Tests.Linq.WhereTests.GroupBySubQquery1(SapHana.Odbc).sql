@@ -9,7 +9,7 @@ FROM
 WHERE
 	EXISTS(
 		SELECT
-			"y"."ParentID"
+			MAX("y"."ChildID")
 		FROM
 			"Child" "y"
 		GROUP BY

@@ -1,35 +1,6 @@
 ﻿BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
-DROP TABLE IF EXISTS Issue2546Class
-
-BeforeExecute
--- ClickHouse.Octonica ClickHouse
-
-CREATE TABLE IF NOT EXISTS Issue2546Class
-(
-	Id    Int32,
-	Value Nullable(String),
-
-	PRIMARY KEY (Id)
-)
-ENGINE = MergeTree()
-ORDER BY Id
-
-BeforeExecute
--- ClickHouse.Octonica ClickHouse
-
-INSERT INTO Issue2546Class
-(
-	Id,
-	Value
-)
-VALUES
-(1,'Hello World')
-
-BeforeExecute
--- ClickHouse.Octonica ClickHouse
-
 SELECT
 	x.Id,
 	x.Value
@@ -37,9 +8,4 @@ FROM
 	Issue2546Class x
 WHERE
 	x.Value = 'Hello World'
-
-BeforeExecute
--- ClickHouse.Octonica ClickHouse
-
-DROP TABLE IF EXISTS Issue2546Class
 

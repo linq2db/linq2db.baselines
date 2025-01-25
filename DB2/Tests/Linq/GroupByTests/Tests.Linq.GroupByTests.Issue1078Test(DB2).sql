@@ -1,68 +1,15 @@
 ﻿BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
-BEGIN
-	DECLARE CONTINUE HANDLER FOR SQLSTATE '42704' BEGIN END;
-	EXECUTE IMMEDIATE 'DROP TABLE "Issue1078Table"';
-END
-
-BeforeExecute
--- DB2 DB2.LUW DB2LUW
-
-BEGIN
-	DECLARE CONTINUE HANDLER FOR SQLSTATE '42710' BEGIN END;
-	EXECUTE IMMEDIATE '
-		CREATE TABLE "Issue1078Table"
-		(
-			"UserID" Int      NOT NULL,
-			"SiteID" Int      NOT NULL,
-			"Active" smallint NOT NULL,
-
-			CONSTRAINT "PK_Issue1078Table" PRIMARY KEY ("UserID")
-		)
-	';
-END
-
-BeforeExecute
--- DB2 DB2.LUW DB2LUW
-
-INSERT INTO "Issue1078Table"
-(
-	"UserID",
-	"SiteID",
-	"Active"
-)
-VALUES
-(1,1,1),
-(2,1,0),
-(3,1,1),
-(4,2,0),
-(5,2,1),
-(6,2,0),
-(7,2,0),
-(8,3,0),
-(9,4,1)
-
-BeforeExecute
--- DB2 DB2.LUW DB2LUW
-
 SELECT
 	"grp"."SiteID",
 	COUNT(*),
 	COUNT(CASE
-		WHEN "grp"."Active" = 0 THEN 1
+		WHEN NOT "grp"."Active" THEN 1
 		ELSE NULL
 	END)
 FROM
 	"Issue1078Table" "grp"
 GROUP BY
 	"grp"."SiteID"
-
-BeforeExecute
--- DB2 DB2.LUW DB2LUW
-
-BEGIN
-	DECLARE CONTINUE HANDLER FOR SQLSTATE '42704' BEGIN END;
-	EXECUTE IMMEDIATE 'DROP TABLE "Issue1078Table"';
-END
 

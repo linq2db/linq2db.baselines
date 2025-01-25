@@ -26,7 +26,7 @@ SET     @dt = '2010-12-14-05.00.07.425014'
 UPDATE
 	"LinqDataTypes" "t"
 SET
-	"DateTimeValue" = CAST(@dt AS timestamp)
+	"DateTimeValue" = @dt
 WHERE
 	"t".ID = 1
 
@@ -58,7 +58,7 @@ SET     @pdt = '2001-01-11-01.11.21.100000'
 UPDATE
 	"LinqDataTypes" "t"
 SET
-	"DateTimeValue" = CAST(@pdt AS timestamp)
+	"DateTimeValue" = @pdt
 WHERE
 	"t".ID = 1
 

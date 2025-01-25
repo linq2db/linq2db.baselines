@@ -10,18 +10,21 @@ SELECT
 FROM
 	(
 		SELECT DISTINCT
-			[t2].[ParentID]
+			[p].[ParentID]
 		FROM
-			[Parent] [t2]
-				INNER JOIN (
-					SELECT
-						[ch].[ParentID],
-						ROW_NUMBER() OVER (PARTITION BY [ch].[ParentID] ORDER BY [ch].[ChildID] DESC) as [rn]
+			[Parent] [p]
+				CROSS APPLY (
+					SELECT TOP (1)
+						*
 					FROM
 						[Child] [ch]
-				) [t1] ON [t2].[ParentID] = [t1].[ParentID] AND [t1].[rn] <= 1
+					WHERE
+						[p].[ParentID] = [ch].[ParentID]
+					ORDER BY
+						[ch].[ChildID] DESC
+				) [t1]
 		WHERE
-			[t2].[ParentID] = 1
+			[p].[ParentID] = 1
 	) [m_1]
 		INNER JOIN [Child] [d] ON [m_1].[ParentID] = [d].[ParentID]
 
@@ -31,19 +34,22 @@ BeforeExecute
 -- SqlServer.2005.MS SqlServer.2005
 
 SELECT
-	[t2].[ParentID],
+	[p].[ParentID],
 	[t1].[ParentID],
 	[t1].[ChildID]
 FROM
-	[Parent] [t2]
-		INNER JOIN (
-			SELECT
+	[Parent] [p]
+		CROSS APPLY (
+			SELECT TOP (1)
 				[ch].[ParentID],
-				[ch].[ChildID],
-				ROW_NUMBER() OVER (PARTITION BY [ch].[ParentID] ORDER BY [ch].[ChildID] DESC) as [rn]
+				[ch].[ChildID]
 			FROM
 				[Child] [ch]
-		) [t1] ON [t2].[ParentID] = [t1].[ParentID] AND [t1].[rn] <= 1
+			WHERE
+				[p].[ParentID] = [ch].[ParentID]
+			ORDER BY
+				[ch].[ChildID] DESC
+		) [t1]
 WHERE
-	[t2].[ParentID] = 1
+	[p].[ParentID] = 1
 

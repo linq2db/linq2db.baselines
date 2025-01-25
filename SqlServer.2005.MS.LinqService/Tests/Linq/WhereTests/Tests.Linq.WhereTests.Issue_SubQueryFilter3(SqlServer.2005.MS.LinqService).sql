@@ -16,30 +16,32 @@ WHERE
 			*
 		FROM
 			[Person] [p]
-				INNER JOIN (
-					SELECT
-						[d].[PersonID] as [ID],
-						ROW_NUMBER() OVER (PARTITION BY [d].[PersonID] ORDER BY [d].[PersonID]) as [rn]
+				CROSS APPLY (
+					SELECT TOP (1)
+						[d].[PersonID] as [cond]
 					FROM
 						[Person] [d]
-				) [t1] ON [t1].[ID] = [patient_1].[PersonID] AND [t1].[rn] <= 1
+					WHERE
+						[d].[PersonID] = [patient_1].[PersonID]
+				) [t1]
 		WHERE
-			[p].[FirstName] LIKE @filter ESCAPE N'~' AND [p].[PersonID] = [t1].[ID]
+			[p].[FirstName] LIKE @filter ESCAPE N'~' AND [p].[PersonID] = [t1].[cond]
 	) AND
 	EXISTS(
 		SELECT
 			*
 		FROM
 			[Person] [p_1]
-				INNER JOIN (
-					SELECT
-						[d_1].[PersonID] as [ID],
-						ROW_NUMBER() OVER (PARTITION BY [d_1].[PersonID] ORDER BY [d_1].[PersonID]) as [rn]
+				CROSS APPLY (
+					SELECT TOP (1)
+						[d_1].[PersonID] as [cond]
 					FROM
 						[Person] [d_1]
-				) [t2] ON [t2].[ID] = [patient_1].[PersonID] AND [t2].[rn] <= 1
+					WHERE
+						[d_1].[PersonID] = [patient_1].[PersonID]
+				) [t2]
 		WHERE
-			[p_1].[FirstName] LIKE @filter_1 ESCAPE N'~' AND [p_1].[PersonID] = [t2].[ID]
+			[p_1].[FirstName] LIKE @filter_1 ESCAPE N'~' AND [p_1].[PersonID] = [t2].[cond]
 	)
 ORDER BY
 	[patient_1].[PersonID]

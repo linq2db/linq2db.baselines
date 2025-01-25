@@ -1,23 +1,5 @@
 ﻿BeforeExecute
 -- Informix.DB2 Informix
-
-DROP TABLE IF EXISTS Stone
-
-BeforeExecute
--- Informix.DB2 Informix
-
-CREATE TABLE IF NOT EXISTS Stone
-(
-	Id           SERIAL         NOT NULL,
-	Name         NVarChar(255)  NOT NULL,
-	Enabled      BOOLEAN            NULL,
-	ImageFullUrl NVarChar(255)      NULL,
-
-	PRIMARY KEY (Id)
-)
-
-BeforeExecute
--- Informix.DB2 Informix
 DECLARE @Name VarChar(6) -- String
 SET     @Name = 'group1'
 DECLARE @Enabled Char(1) -- StringFixedLength
@@ -97,7 +79,7 @@ FROM
 		FROM
 			Stone sG
 		WHERE
-			sG.Enabled = 't' AND NOT sG.Name LIKE 'level - %' ESCAPE '~' AND
+			sG.Enabled = 't'::BOOLEAN AND NOT sG.Name LIKE 'level - %' ESCAPE '~' AND
 			CHAR_LENGTH(sG.ImageFullUrl) > 0
 		GROUP BY
 			sG.Name
@@ -112,12 +94,7 @@ FROM
 			FROM
 				Stone s
 			WHERE
-				s.Enabled = 't' AND NOT s.Name LIKE 'level - %' ESCAPE '~' AND
+				s.Enabled = 't'::BOOLEAN AND NOT s.Name LIKE 'level - %' ESCAPE '~' AND
 				CHAR_LENGTH(s.ImageFullUrl) > 0
 		) t1 ON sG_1.Name = t1.Name AND t1.rn <= 1
-
-BeforeExecute
--- Informix.DB2 Informix
-
-DROP TABLE IF EXISTS Stone
 

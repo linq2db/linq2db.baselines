@@ -1,185 +1,6 @@
 ﻿BeforeExecute
 -- ClickHouse.Client ClickHouse
 
-DROP TABLE IF EXISTS WhereCases
-
-BeforeExecute
--- ClickHouse.Client ClickHouse
-
-CREATE TABLE IF NOT EXISTS WhereCases
-(
-	Id                Int32,
-	BoolValue         Bool,
-	NullableBoolValue Nullable(Bool),
-
-	PRIMARY KEY (Id)
-)
-ENGINE = MergeTree()
-ORDER BY Id
-
-BeforeExecute
--- ClickHouse.Client ClickHouse
-
-INSERT INTO WhereCases
-(
-	Id,
-	BoolValue,
-	NullableBoolValue
-)
-VALUES
-(
-	1,
-	true,
-	NULL
-)
-
-BeforeExecute
--- ClickHouse.Client ClickHouse
-
-INSERT INTO WhereCases
-(
-	Id,
-	BoolValue,
-	NullableBoolValue
-)
-VALUES
-(
-	2,
-	true,
-	true
-)
-
-BeforeExecute
--- ClickHouse.Client ClickHouse
-
-INSERT INTO WhereCases
-(
-	Id,
-	BoolValue,
-	NullableBoolValue
-)
-VALUES
-(
-	3,
-	true,
-	NULL
-)
-
-BeforeExecute
--- ClickHouse.Client ClickHouse
-
-INSERT INTO WhereCases
-(
-	Id,
-	BoolValue,
-	NullableBoolValue
-)
-VALUES
-(
-	4,
-	true,
-	true
-)
-
-BeforeExecute
--- ClickHouse.Client ClickHouse
-
-INSERT INTO WhereCases
-(
-	Id,
-	BoolValue,
-	NullableBoolValue
-)
-VALUES
-(
-	5,
-	true,
-	true
-)
-
-BeforeExecute
--- ClickHouse.Client ClickHouse
-
-INSERT INTO WhereCases
-(
-	Id,
-	BoolValue,
-	NullableBoolValue
-)
-VALUES
-(
-	11,
-	false,
-	NULL
-)
-
-BeforeExecute
--- ClickHouse.Client ClickHouse
-
-INSERT INTO WhereCases
-(
-	Id,
-	BoolValue,
-	NullableBoolValue
-)
-VALUES
-(
-	12,
-	false,
-	false
-)
-
-BeforeExecute
--- ClickHouse.Client ClickHouse
-
-INSERT INTO WhereCases
-(
-	Id,
-	BoolValue,
-	NullableBoolValue
-)
-VALUES
-(
-	13,
-	false,
-	NULL
-)
-
-BeforeExecute
--- ClickHouse.Client ClickHouse
-
-INSERT INTO WhereCases
-(
-	Id,
-	BoolValue,
-	NullableBoolValue
-)
-VALUES
-(
-	14,
-	false,
-	false
-)
-
-BeforeExecute
--- ClickHouse.Client ClickHouse
-
-INSERT INTO WhereCases
-(
-	Id,
-	BoolValue,
-	NullableBoolValue
-)
-VALUES
-(
-	15,
-	false,
-	false
-)
-
-BeforeExecute
--- ClickHouse.Client ClickHouse
-
 SELECT
 	t1.Id,
 	t1.BoolValue,
@@ -197,7 +18,7 @@ SELECT
 FROM
 	WhereCases t
 WHERE
-	t.BoolValue = false AND t.Id > 0
+	NOT t.BoolValue AND t.Id > 0
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
@@ -209,7 +30,7 @@ SELECT
 FROM
 	WhereCases t
 WHERE
-	NOT (t.BoolValue = false AND t.Id > 0)
+	NOT (NOT t.BoolValue AND t.Id > 0)
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
@@ -486,7 +307,7 @@ SELECT
 FROM
 	WhereCases t
 WHERE
-	t.BoolValue = false AND (t.NullableBoolValue = false OR t.NullableBoolValue IS NULL) AND
+	NOT t.BoolValue AND (t.NullableBoolValue = false OR t.NullableBoolValue IS NULL) AND
 	t.Id > 0
 
 BeforeExecute
@@ -499,7 +320,7 @@ SELECT
 FROM
 	WhereCases t
 WHERE
-	NOT (t.BoolValue = false AND (t.NullableBoolValue = false OR t.NullableBoolValue IS NULL) AND t.Id > 0)
+	NOT (NOT t.BoolValue AND (t.NullableBoolValue = false OR t.NullableBoolValue IS NULL) AND t.Id > 0)
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
@@ -511,7 +332,7 @@ SELECT
 FROM
 	WhereCases t
 WHERE
-	NOT (t.BoolValue = false AND (t.NullableBoolValue = false OR t.NullableBoolValue IS NULL)) AND
+	NOT (NOT t.BoolValue AND (t.NullableBoolValue = false OR t.NullableBoolValue IS NULL)) AND
 	t.Id > 0
 
 BeforeExecute
@@ -524,7 +345,7 @@ SELECT
 FROM
 	WhereCases t
 WHERE
-	NOT (NOT (t.BoolValue = false AND (t.NullableBoolValue = false OR t.NullableBoolValue IS NULL)) AND t.Id > 0)
+	NOT (NOT (NOT t.BoolValue AND (t.NullableBoolValue = false OR t.NullableBoolValue IS NULL)) AND t.Id > 0)
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
@@ -536,7 +357,7 @@ SELECT
 FROM
 	WhereCases t
 WHERE
-	t.BoolValue = false AND t.NullableBoolValue = false AND
+	NOT t.BoolValue AND t.NullableBoolValue = false AND
 	t.Id > 0
 
 BeforeExecute
@@ -549,7 +370,7 @@ SELECT
 FROM
 	WhereCases t
 WHERE
-	NOT (t.BoolValue = false AND t.NullableBoolValue = false AND t.NullableBoolValue IS NOT NULL AND t.Id > 0)
+	NOT (NOT t.BoolValue AND t.NullableBoolValue = false AND t.NullableBoolValue IS NOT NULL AND t.Id > 0)
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
@@ -561,7 +382,7 @@ SELECT
 FROM
 	WhereCases t
 WHERE
-	NOT (t.BoolValue = false AND t.NullableBoolValue = false AND t.NullableBoolValue IS NOT NULL) AND
+	NOT (NOT t.BoolValue AND t.NullableBoolValue = false AND t.NullableBoolValue IS NOT NULL) AND
 	t.Id > 0
 
 BeforeExecute
@@ -574,10 +395,5 @@ SELECT
 FROM
 	WhereCases t
 WHERE
-	NOT (NOT (t.BoolValue = false AND t.NullableBoolValue = false AND t.NullableBoolValue IS NOT NULL) AND t.Id > 0)
-
-BeforeExecute
--- ClickHouse.Client ClickHouse
-
-DROP TABLE IF EXISTS WhereCases
+	NOT (NOT (NOT t.BoolValue AND t.NullableBoolValue = false AND t.NullableBoolValue IS NOT NULL) AND t.Id > 0)
 

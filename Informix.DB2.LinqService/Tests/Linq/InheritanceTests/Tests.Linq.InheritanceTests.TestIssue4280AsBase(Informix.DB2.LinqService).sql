@@ -1,23 +1,5 @@
 ﻿BeforeExecute
 -- Informix.DB2 Informix
-
-DROP TABLE IF EXISTS Issue4280
-
-BeforeExecute
--- Informix.DB2 Informix
-
-CREATE TABLE IF NOT EXISTS Issue4280
-(
-	Id           Int           NOT NULL,
-	SerialNumber NVarChar(255)     NULL,
-	DeviceType   NVarChar(255)     NULL,
-	Location     NVarChar(255)     NULL,
-
-	PRIMARY KEY (Id)
-)
-
-BeforeExecute
--- Informix.DB2 Informix
 DECLARE @Id Integer(4) -- Int32
 SET     @Id = 2
 DECLARE @SerialNumber VarChar(7) -- String
@@ -126,9 +108,4 @@ FROM
 	Issue4280 t1
 ORDER BY
 	t1.Id
-
-BeforeExecute
--- Informix.DB2 Informix
-
-DROP TABLE IF EXISTS Issue4280
 

@@ -1,39 +1,6 @@
 ﻿BeforeExecute
 -- SQLite.MS SQLite
 
-DROP TABLE IF EXISTS [SetEntityBase]
-
-BeforeExecute
--- SQLite.MS SQLite
-
-CREATE TABLE IF NOT EXISTS [SetEntityBase]
-(
-	[Id]            INTEGER       NOT NULL,
-	[Discriminator] INTEGER       NOT NULL,
-	[IntValue]      INTEGER           NULL,
-	[StrValue]      NVarChar(255)     NULL,
-	[DoubleValue]   Float             NULL
-)
-
-BeforeExecute
--- SQLite.MS SQLite
-
-INSERT INTO [SetEntityBase]
-(
-	[Id],
-	[Discriminator],
-	[IntValue],
-	[StrValue],
-	[DoubleValue]
-)
-VALUES
-(1,1,11,NULL,NULL),
-(2,2,NULL,'Str22',NULL),
-(3,3,NULL,NULL,33.329999999999998)
-
-BeforeExecute
--- SQLite.MS SQLite
-
 SELECT
 	[x].[Discriminator],
 	[x].[Id],
@@ -66,9 +33,4 @@ FROM
 	[SetEntityBase] [x_2]
 WHERE
 	[x_2].[Id] = 3
-
-BeforeExecute
--- SQLite.MS SQLite
-
-DROP TABLE IF EXISTS [SetEntityBase]
 

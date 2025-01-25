@@ -4,17 +4,17 @@ DECLARE @id Int32
 SET     @id = 1
 
 SELECT
-	t1."c1"
+	t2."cond"
 FROM
 	(
 		SELECT
 			CASE
-				WHEN COUNT(left_1."ParentID") = COUNT(right_2."ParentID") AND COUNT(left_1."ParentID") = COUNT(*)
+				WHEN COUNT(t1."ParentID") = COUNT(right_2."ParentID") AND COUNT(t1."ParentID") = COUNT(*)
 					THEN 1
 				ELSE 0
-			END as "c1"
+			END as "cond"
 		FROM
-			"Parent" left_1
+			"Parent" t1
 				FULL JOIN (
 					SELECT
 						right_1."ParentID"
@@ -22,8 +22,8 @@ FROM
 						"Parent" right_1
 					WHERE
 						right_1."ParentID" <> :id
-				) right_2 ON right_2."ParentID" = left_1."ParentID"
-	) t1
+				) right_2 ON right_2."ParentID" = t1."ParentID"
+	) t2
 WHERE
 	ROWNUM <= 2
 

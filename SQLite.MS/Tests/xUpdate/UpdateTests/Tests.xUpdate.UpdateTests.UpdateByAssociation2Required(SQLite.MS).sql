@@ -1,56 +1,5 @@
 ﻿BeforeExecute
 -- SQLite.MS SQLite
-
-DROP TABLE IF EXISTS [MainTable]
-
-BeforeExecute
--- SQLite.MS SQLite
-
-CREATE TABLE IF NOT EXISTS [MainTable]
-(
-	[Id]    INTEGER       NOT NULL,
-	[Field] NVarChar(255)     NULL
-)
-
-BeforeExecute
--- SQLite.MS SQLite
-
-INSERT INTO [MainTable]
-(
-	[Id],
-	[Field]
-)
-VALUES
-(1,'value 1'),
-(2,'value 2'),
-(3,'value 3')
-
-BeforeExecute
--- SQLite.MS SQLite
-
-DROP TABLE IF EXISTS [AssociatedTable]
-
-BeforeExecute
--- SQLite.MS SQLite
-
-CREATE TABLE IF NOT EXISTS [AssociatedTable]
-(
-	[Id] INTEGER NOT NULL
-)
-
-BeforeExecute
--- SQLite.MS SQLite
-
-INSERT INTO [AssociatedTable]
-(
-	[Id]
-)
-VALUES
-(1),
-(3)
-
-BeforeExecute
--- SQLite.MS SQLite
 DECLARE @id  -- Int32
 SET     @id = 3
 
@@ -59,9 +8,9 @@ UPDATE
 SET
 	[Field] = 'test'
 FROM
-	[AssociatedTable] [pat]
+	[AssociatedTable] [p]
 WHERE
-	[pat].[Id] = @id AND [pat].[Id] = [MainTable].[Id]
+	[p].[Id] = @id AND [p].[Id] = [MainTable].[Id]
 
 BeforeExecute
 -- SQLite.MS SQLite
@@ -73,14 +22,4 @@ FROM
 	[MainTable] [t1]
 ORDER BY
 	[t1].[Id]
-
-BeforeExecute
--- SQLite.MS SQLite
-
-DROP TABLE IF EXISTS [AssociatedTable]
-
-BeforeExecute
--- SQLite.MS SQLite
-
-DROP TABLE IF EXISTS [MainTable]
 

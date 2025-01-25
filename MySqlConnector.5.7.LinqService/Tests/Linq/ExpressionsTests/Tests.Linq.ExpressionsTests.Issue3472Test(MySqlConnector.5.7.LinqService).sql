@@ -1,33 +1,6 @@
 ﻿BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 
-DROP TABLE IF EXISTS `Issue3472TableDCTX`
-
-BeforeExecute
--- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-
-CREATE TABLE IF NOT EXISTS `Issue3472TableDCTX`
-(
-	`Id` INT NOT NULL
-)
-
-BeforeExecute
--- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-DECLARE @Id Int32
-SET     @Id = 1
-
-INSERT INTO `Issue3472TableDCTX`
-(
-	`Id`
-)
-VALUES
-(
-	@Id
-)
-
-BeforeExecute
--- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-
 SELECT
 	`t1`.`Id`,
 	(
@@ -40,9 +13,4 @@ SELECT
 	)
 FROM
 	`Issue3472TableDCTX` `t1`
-
-BeforeExecute
--- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-
-DROP TABLE IF EXISTS `Issue3472TableDCTX`
 

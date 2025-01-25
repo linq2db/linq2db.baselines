@@ -5,22 +5,6 @@ DROP TABLE IF EXISTS [InventoryResource]
 
 BeforeExecute
 -- SQLite.MS SQLite
-
-DROP TABLE IF EXISTS [InventoryResource]
-
-BeforeExecute
--- SQLite.MS SQLite
-
-CREATE TABLE IF NOT EXISTS [InventoryResource]
-(
-	[Id]     Guid     NOT NULL,
-	[Status] NVarChar NOT NULL,
-
-	CONSTRAINT [PK_InventoryResource] PRIMARY KEY ([Id])
-)
-
-BeforeExecute
--- SQLite.MS SQLite
 DECLARE @Id  -- Guid
 SET     @Id = X'3D667BBCDE0F27438F925D8CC3A11D11'
 DECLARE @Status NVarChar(4) -- String
@@ -36,9 +20,4 @@ VALUES
 	@Id,
 	@Status
 )
-
-BeforeExecute
--- SQLite.MS SQLite
-
-DROP TABLE IF EXISTS [InventoryResource]
 

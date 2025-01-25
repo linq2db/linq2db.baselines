@@ -10,7 +10,7 @@ SELECT
 FROM
 	[Person] [r]
 WHERE
-	Coalesce([r].[FirstName] || '1', NULL) IS NULL
+	1 = 0
 
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
@@ -24,5 +24,5 @@ SELECT
 FROM
 	[Person] [r]
 WHERE
-	Coalesce([r].[FirstName] || '1', NULL) IS NULL
+	1 = 0
 

@@ -1,21 +1,5 @@
 ﻿BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
-
-DROP TABLE IF EXISTS [TestAggregateTable]
-
-BeforeExecute
--- SqlServer.SA.MS SqlServer.2019
-
-IF (OBJECT_ID(N'[TestAggregateTable]', N'U') IS NULL)
-	CREATE TABLE [TestAggregateTable]
-	(
-		[Id]          UniqueIdentifier NOT NULL,
-		[ReferenceId] UniqueIdentifier     NULL,
-		[DateTime]    DateTimeOffset       NULL
-	)
-
-BeforeExecute
--- SqlServer.SA.MS SqlServer.2019
 DECLARE @Id UniqueIdentifier -- Guid
 SET     @Id = 'bc7b663d-0fde-4327-8f92-5d8cc3a11d11'
 DECLARE @ReferenceId UniqueIdentifier -- Guid
@@ -66,38 +50,37 @@ DECLARE @tz NVarChar(4000) -- String
 SET     @tz = N'UTC'
 
 SELECT
-	[m_1].[Id],
+	[m_1].[key_1],
 	[d].[Id],
-	[d].[group_1],
-	[d].[COUNT_1],
-	[d].[c1],
+	[d].[Id_1],
+	[d].[count_1],
+	[d].[percents],
 	[d].[hours],
 	[d].[minutes]
 FROM
 	(
 		SELECT DISTINCT
-			[a_Reference].[Id]
+			[a_Reference].[Id] as [key_1]
 		FROM
 			[TestAggregateTable] [t1]
 				LEFT JOIN [TestAggregateTable] [a_Reference] ON [t1].[ReferenceId] = [a_Reference].[Id]
 		GROUP BY
 			[a_Reference].[Id],
-			[t1].[ReferenceId],
-			[a_Reference].[Id]
+			[t1].[ReferenceId]
 	) [m_1]
 		CROSS APPLY (
 			SELECT
-				COUNT(*) as [COUNT_1],
+				COUNT(*) as [count_1],
 				[t3].[Id],
-				[t3].[group_1],
-				COUNT_BIG(*) * 100E0 / SUM(COUNT_BIG(*)) OVER() as [c1],
+				[t3].[Id_1],
 				[t3].[hours],
-				[t3].[minutes]
+				[t3].[minutes],
+				COUNT_BIG(*) * 100E0 / SUM(COUNT_BIG(*)) OVER() as [percents]
 			FROM
 				(
 					SELECT
 						[t2].[Id],
-						[a_Reference_1].[Id] as [group_1],
+						[a_Reference_1].[Id] as [Id_1],
 						DATEPART(hour, [t2].[DateTime] AT TIME ZONE @tz) as [hours],
 						DATEPART(minute, [t2].[DateTime] AT TIME ZONE @tz) as [minutes]
 					FROM
@@ -106,14 +89,14 @@ FROM
 				) [t3]
 			GROUP BY
 				[t3].[Id],
-				[t3].[group_1],
+				[t3].[Id_1],
 				[t3].[hours],
 				[t3].[minutes]
 			HAVING
-				([t3].[group_1] = [m_1].[Id] OR [t3].[group_1] IS NULL AND [m_1].[Id] IS NULL)
+				[t3].[Id_1] = [m_1].[key_1] OR [t3].[Id_1] IS NULL AND [m_1].[key_1] IS NULL
 		) [d]
 ORDER BY
-	[d].[COUNT_1] DESC
+	[d].[count_1] DESC
 
 BeforeExecute
 DisposeTransaction
@@ -123,17 +106,9 @@ BeforeExecute
 SELECT
 	[a_Reference].[Id]
 FROM
-	[TestAggregateTable] [t1]
-		LEFT JOIN [TestAggregateTable] [a_Reference] ON [t1].[ReferenceId] = [a_Reference].[Id]
+	[TestAggregateTable] [group_1]
+		LEFT JOIN [TestAggregateTable] [a_Reference] ON [group_1].[ReferenceId] = [a_Reference].[Id]
 GROUP BY
 	[a_Reference].[Id],
-	[t1].[ReferenceId],
-	[a_Reference].[Id]
-ORDER BY
-	[t1].[ReferenceId]
-
-BeforeExecute
--- SqlServer.SA.MS SqlServer.2019
-
-DROP TABLE IF EXISTS [TestAggregateTable]
+	[group_1].[ReferenceId]
 

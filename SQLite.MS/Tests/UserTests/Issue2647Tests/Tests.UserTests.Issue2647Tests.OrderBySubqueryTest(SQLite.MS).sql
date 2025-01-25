@@ -1,23 +1,6 @@
 ﻿BeforeExecute
 -- SQLite.MS SQLite
 
-DROP TABLE IF EXISTS [Issue2647Table]
-
-BeforeExecute
--- SQLite.MS SQLite
-
-CREATE TABLE IF NOT EXISTS [Issue2647Table]
-(
-	[Id]         INTEGER       NOT NULL,
-	[LanguageId] NVarChar(255)     NULL,
-	[Text]       NVarChar(255)     NULL,
-
-	CONSTRAINT [PK_Issue2647Table] PRIMARY KEY ([Id])
-)
-
-BeforeExecute
--- SQLite.MS SQLite
-
 SELECT
 	[t1].[Id],
 	[t1].[LanguageId],
@@ -41,9 +24,4 @@ ORDER BY
 		WHERE
 			[ss3].[Id] = [t1].[Id]
 	) DESC
-
-BeforeExecute
--- SQLite.MS SQLite
-
-DROP TABLE IF EXISTS [Issue2647Table]
 

@@ -8,6 +8,12 @@ WHERE
 
 BeforeExecute
 -- Informix.DB2 Informix
+DECLARE @FirstName VarChar(4) -- String
+SET     @FirstName = 'John'
+DECLARE @LastName VarChar(7) -- String
+SET     @LastName = 'Shepard'
+DECLARE @Gender Char(1) -- StringFixedLength
+SET     @Gender = 'M'
 
 INSERT INTO Person
 (
@@ -17,9 +23,9 @@ INSERT INTO Person
 )
 VALUES
 (
-	'John',
-	'Shepard',
-	'M'
+	@FirstName,
+	@LastName,
+	@Gender
 )
 
 BeforeExecute

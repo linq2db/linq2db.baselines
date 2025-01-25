@@ -14,8 +14,8 @@ FROM
 	) `m_1`
 		INNER JOIN (
 			SELECT DISTINCT
-				`d`.`ParentID`,
-				`d`.`ChildID`
+				`d`.`ChildID`,
+				`d`.`ParentID`
 			FROM
 				`Child` `d`
 			WHERE

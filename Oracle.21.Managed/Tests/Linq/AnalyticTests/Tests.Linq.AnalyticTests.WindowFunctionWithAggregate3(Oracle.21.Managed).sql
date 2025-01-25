@@ -4,21 +4,21 @@ DECLARE @take Int32
 SET     @take = 100
 
 SELECT
-	g_2."ParentID",
-	g_2.COUNT_1,
-	g_2."c1"
+	t1."Key_1",
+	t1.COUNT_1,
+	t1."window_1"
 FROM
 	(
 		SELECT
-			g_1."ParentID",
+			g_1."ParentID" as "Key_1",
 			COUNT(*) as COUNT_1,
-			COUNT(*) OVER() as "c1"
+			COUNT(*) OVER() as "window_1"
 		FROM
 			"Child" g_1
 		GROUP BY
 			g_1."ParentID"
-	) g_2
+	) t1
 ORDER BY
-	g_2."ParentID" DESC
+	t1."Key_1" DESC
 FETCH NEXT :take ROWS ONLY
 

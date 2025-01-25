@@ -1,23 +1,5 @@
 ﻿BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
-
-DROP TABLE IF EXISTS "PR_1598_Insert_Enum_Table"
-
-BeforeExecute
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
-
-CREATE TABLE IF NOT EXISTS "PR_1598_Insert_Enum_Table"
-(
-	"Id"     Int  NOT NULL,
-	"Name"   text     NULL,
-	"Age"    Int      NULL,
-	"Gender" text     NULL,
-
-	CONSTRAINT "PK_PR_1598_Insert_Enum_Table" PRIMARY KEY ("Id")
-)
-
-BeforeExecute
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 DECLARE @Id Integer -- Int32
 SET     @Id = 1
 DECLARE @Name Text(3) -- String
@@ -91,9 +73,4 @@ FROM
 WHERE
 	t."Id" = 2
 LIMIT 1
-
-BeforeExecute
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
-
-DROP TABLE IF EXISTS "PR_1598_Insert_Enum_Table"
 

@@ -1,23 +1,5 @@
 ﻿BeforeExecute
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
-
-DROP TABLE IF EXISTS `PR_1598_Insert_Enum_Table`
-
-BeforeExecute
--- MySql.5.7 MySql.5.7.MySql.Data MySql57
-
-CREATE TABLE IF NOT EXISTS `PR_1598_Insert_Enum_Table`
-(
-	`Id`     INT           NOT NULL,
-	`Name`   VARCHAR(4000)     NULL,
-	`Age`    INT               NULL,
-	`Gender` VARCHAR(6)        NULL,
-
-	CONSTRAINT `PK_PR_1598_Insert_Enum_Table` PRIMARY KEY CLUSTERED (`Id`)
-)
-
-BeforeExecute
--- MySql.5.7 MySql.5.7.MySql.Data MySql57
 DECLARE @Id Int32
 SET     @Id = 1
 DECLARE @Name VarChar(3) -- String
@@ -91,9 +73,4 @@ FROM
 WHERE
 	`t`.`Id` = 2
 LIMIT 1
-
-BeforeExecute
--- MySql.5.7 MySql.5.7.MySql.Data MySql57
-
-DROP TABLE IF EXISTS `PR_1598_Insert_Enum_Table`
 

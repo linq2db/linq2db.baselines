@@ -2,7 +2,10 @@
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 
 SELECT
-	`t1`.`ParentID`,
+	CASE
+		WHEN `t1`.`ParentID` IS NULL THEN 0
+		ELSE `t1`.`ParentID`
+	END,
 	`t2`.`ParentID`,
 	`t2`.`ChildID`
 FROM

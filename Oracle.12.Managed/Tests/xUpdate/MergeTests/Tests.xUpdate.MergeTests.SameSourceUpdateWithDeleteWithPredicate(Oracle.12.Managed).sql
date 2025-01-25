@@ -240,7 +240,7 @@ SET
 	"Field2" = "Source"."source_Field2",
 	"Field3" = "Source"."source_Field3"
 WHERE
-	("Source"."source_Id" = 4 OR "Source"."source_Id" = 3)
+	"Source"."source_Id" = 4 OR "Source"."source_Id" = 3
 DELETE WHERE
 	Target."Id" = 3
 

@@ -1,70 +1,12 @@
 ﻿BeforeExecute
 -- SQLite.MS SQLite
 
-DROP TABLE IF EXISTS [gt_s_one]
-
-BeforeExecute
--- SQLite.MS SQLite
-
-CREATE TABLE IF NOT EXISTS [gt_s_one]
-(
-	[id]   INTEGER       NOT NULL,
-	[col1] NVarChar(100)     NULL,
-	[col2] NVarChar(100)     NULL,
-	[col3] NVarChar(100)     NULL,
-	[col4] NVarChar(100)     NULL,
-	[col5] NVarChar(100)     NULL,
-	[col6] NVarChar(100)     NULL,
-
-	CONSTRAINT [PK_gt_s_one] PRIMARY KEY ([id])
-)
-
-BeforeExecute
--- SQLite.MS SQLite
-
-DROP TABLE IF EXISTS [gt_s_one_target]
-
-BeforeExecute
--- SQLite.MS SQLite
-
-CREATE TABLE IF NOT EXISTS [gt_s_one_target]
-(
-	[id]   INTEGER       NOT NULL,
-	[col1] NVarChar(100)     NULL,
-	[col2] NVarChar(100)     NULL,
-	[col3] NVarChar(100)     NULL,
-	[col4] NVarChar(100)     NULL,
-	[col5] NVarChar(100)     NULL,
-	[col6] NVarChar(100)     NULL,
-
-	CONSTRAINT [PK_gt_s_one_target] PRIMARY KEY ([id])
-)
-
-BeforeExecute
--- SQLite.MS SQLite
-
-DROP TABLE IF EXISTS [access_mode]
-
-BeforeExecute
--- SQLite.MS SQLite
-
-CREATE TABLE IF NOT EXISTS [access_mode]
-(
-	[id]   INTEGER       NOT NULL,
-	[code] NVarChar(255)     NULL,
-
-	CONSTRAINT [PK_access_mode] PRIMARY KEY ([id])
-)
-
-BeforeExecute
--- SQLite.MS SQLite
-
 UPDATE
 	[gt_s_one_target]
 SET
 	[col1] = [x].[col1],
 	[col2] = [x].[col2],
-	[col3] = Replace([x].[col3], 'auth.', ''),
+	[col3] = REPLACE([x].[col3], 'auth.', ''),
 	[col4] = [x].[col4],
 	[col5] = CASE
 		WHEN [x].[col3] = 'empty' THEN '1'
@@ -76,22 +18,7 @@ SET
 	END
 FROM
 	[gt_s_one] [x]
-		LEFT JOIN [access_mode] [y1] ON (Upper(Replace([x].[col3], 'auth.', '')) = Upper([y1].[code]) OR Upper(Replace([x].[col3], 'auth.', '')) IS NULL AND Upper([y1].[code]) IS NULL)
+		LEFT JOIN [access_mode] [y1] ON Upper(REPLACE([x].[col3], 'auth.', '')) = Upper([y1].[code]) OR [x].[col3] IS NULL AND [y1].[code] IS NULL
 WHERE
 	[x].[id] = [gt_s_one_target].[id]
-
-BeforeExecute
--- SQLite.MS SQLite
-
-DROP TABLE IF EXISTS [access_mode]
-
-BeforeExecute
--- SQLite.MS SQLite
-
-DROP TABLE IF EXISTS [gt_s_one_target]
-
-BeforeExecute
--- SQLite.MS SQLite
-
-DROP TABLE IF EXISTS [gt_s_one]
 

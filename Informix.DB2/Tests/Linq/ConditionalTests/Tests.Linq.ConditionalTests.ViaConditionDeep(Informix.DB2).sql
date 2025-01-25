@@ -1,210 +1,20 @@
 ﻿BeforeExecute
 -- Informix.DB2 Informix
 
-DROP TABLE IF EXISTS ConditionalData
-
-BeforeExecute
--- Informix.DB2 Informix
-
-CREATE TABLE IF NOT EXISTS ConditionalData
-(
-	Id         Int           NOT NULL,
-	StringProp NVarChar(255)     NULL,
-
-	PRIMARY KEY (Id)
-)
-
-BeforeExecute
--- Informix.DB2 Informix
-DECLARE @Id Integer(4) -- Int32
-SET     @Id = 1
-DECLARE @StringProp VarChar(7) -- String
-SET     @StringProp = 'String1'
-
-INSERT INTO ConditionalData
-(
-	Id,
-	StringProp
-)
-VALUES
-(
-	@Id,
-	@StringProp
-)
-
-BeforeExecute
--- Informix.DB2 Informix
-DECLARE @Id Integer(4) -- Int32
-SET     @Id = 2
-DECLARE @StringProp VarChar(7) -- String
-SET     @StringProp = 'String2'
-
-INSERT INTO ConditionalData
-(
-	Id,
-	StringProp
-)
-VALUES
-(
-	@Id,
-	@StringProp
-)
-
-BeforeExecute
--- Informix.DB2 Informix
-DECLARE @Id Integer(4) -- Int32
-SET     @Id = 3
-DECLARE @StringProp VarChar -- String
-SET     @StringProp = NULL
-
-INSERT INTO ConditionalData
-(
-	Id,
-	StringProp
-)
-VALUES
-(
-	@Id,
-	@StringProp
-)
-
-BeforeExecute
--- Informix.DB2 Informix
-DECLARE @Id Integer(4) -- Int32
-SET     @Id = 4
-DECLARE @StringProp VarChar(7) -- String
-SET     @StringProp = 'String4'
-
-INSERT INTO ConditionalData
-(
-	Id,
-	StringProp
-)
-VALUES
-(
-	@Id,
-	@StringProp
-)
-
-BeforeExecute
--- Informix.DB2 Informix
-DECLARE @Id Integer(4) -- Int32
-SET     @Id = 5
-DECLARE @StringProp VarChar(7) -- String
-SET     @StringProp = 'String5'
-
-INSERT INTO ConditionalData
-(
-	Id,
-	StringProp
-)
-VALUES
-(
-	@Id,
-	@StringProp
-)
-
-BeforeExecute
--- Informix.DB2 Informix
-DECLARE @Id Integer(4) -- Int32
-SET     @Id = 6
-DECLARE @StringProp VarChar -- String
-SET     @StringProp = NULL
-
-INSERT INTO ConditionalData
-(
-	Id,
-	StringProp
-)
-VALUES
-(
-	@Id,
-	@StringProp
-)
-
-BeforeExecute
--- Informix.DB2 Informix
-DECLARE @Id Integer(4) -- Int32
-SET     @Id = 7
-DECLARE @StringProp VarChar(7) -- String
-SET     @StringProp = 'String7'
-
-INSERT INTO ConditionalData
-(
-	Id,
-	StringProp
-)
-VALUES
-(
-	@Id,
-	@StringProp
-)
-
-BeforeExecute
--- Informix.DB2 Informix
-DECLARE @Id Integer(4) -- Int32
-SET     @Id = 8
-DECLARE @StringProp VarChar(7) -- String
-SET     @StringProp = 'String8'
-
-INSERT INTO ConditionalData
-(
-	Id,
-	StringProp
-)
-VALUES
-(
-	@Id,
-	@StringProp
-)
-
-BeforeExecute
--- Informix.DB2 Informix
-DECLARE @Id Integer(4) -- Int32
-SET     @Id = 9
-DECLARE @StringProp VarChar -- String
-SET     @StringProp = NULL
-
-INSERT INTO ConditionalData
-(
-	Id,
-	StringProp
-)
-VALUES
-(
-	@Id,
-	@StringProp
-)
-
-BeforeExecute
--- Informix.DB2 Informix
-DECLARE @Id Integer(4) -- Int32
-SET     @Id = 10
-DECLARE @StringProp VarChar(8) -- String
-SET     @StringProp = 'String10'
-
-INSERT INTO ConditionalData
-(
-	Id,
-	StringProp
-)
-VALUES
-(
-	@Id,
-	@StringProp
-)
-
-BeforeExecute
--- Informix.DB2 Informix
-
 SELECT
 	x.Id,
 	CASE
-		WHEN x.StringProp = '1' OR x.StringProp IS NULL THEN 't'
-		ELSE 'f'
-	END,
+		WHEN x.StringProp = '1' OR x.StringProp IS NULL THEN 't'::BOOLEAN
+		ELSE 'f'::BOOLEAN
+	END::BOOLEAN,
+	CASE
+		WHEN x.StringProp = '2' THEN 't'::BOOLEAN
+		ELSE 'f'::BOOLEAN
+	END::BOOLEAN,
 	x.StringProp,
-	x.StringProp || '2'
+	1,
+	x.StringProp || '2',
+	2
 FROM
 	ConditionalData x
 WHERE
@@ -227,9 +37,4 @@ SELECT
 	t1.StringProp
 FROM
 	ConditionalData t1
-
-BeforeExecute
--- Informix.DB2 Informix
-
-DROP TABLE IF EXISTS ConditionalData
 

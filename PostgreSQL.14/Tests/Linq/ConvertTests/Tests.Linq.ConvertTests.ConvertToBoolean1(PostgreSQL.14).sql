@@ -2,17 +2,14 @@
 -- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
 
 SELECT
-	p_1.c1
+	p.c1
 FROM
 	(
 		SELECT
-			CASE
-				WHEN p."MoneyValue" <> 0 THEN True
-				ELSE False
-			END as c1
+			t."MoneyValue" <> 0 as c1
 		FROM
-			"LinqDataTypes" p
-	) p_1
+			"LinqDataTypes" t
+	) p
 WHERE
-	p_1.c1 = True
+	p.c1 = True
 

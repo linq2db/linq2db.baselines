@@ -8,10 +8,7 @@ FROM
 	(
 		SELECT
 			true as IsActive,
-			CASE
-				WHEN it.SmallIntValue <> 0 THEN true
-				ELSE false
-			END as Other
+			it.SmallIntValue <> 0 as Other
 		FROM
 			LinqDataTypes it
 	) it_1

@@ -10,7 +10,7 @@ SELECT
 FROM
 	[Person] [r]
 WHERE
-	Coalesce([r].[PersonID] + 1, 0) = 0
+	[r].[PersonID] + 1 = 0
 
 BeforeExecute
 -- SQLite.MS SQLite
@@ -24,5 +24,5 @@ SELECT
 FROM
 	[Person] [r]
 WHERE
-	Coalesce([r].[PersonID] + 1, 0) = 0
+	[r].[PersonID] + 1 = 0
 

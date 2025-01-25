@@ -2,13 +2,13 @@
 -- SqlServer.2008.MS SqlServer.2008
 
 SELECT
-	[left_1].[ParentID],
+	[t1].[ParentID],
 	[right_1].[ParentID]
 FROM
-	[Parent] [left_1]
+	[Parent] [t1]
 		RIGHT JOIN [Parent] [right_1]
 			INNER JOIN [Parent] [right2] ON [right_1].[Value1] = [right2].[Value1] + 2
-		ON ([right_1].[Value1] + 2 = [left_1].[Value1] OR [right_1].[Value1] IS NULL AND [left_1].[Value1] IS NULL)
+		ON [right_1].[Value1] + 2 = [t1].[Value1] OR [right_1].[Value1] IS NULL AND [t1].[Value1] IS NULL
 ORDER BY
-	[left_1].[ParentID]
+	[t1].[ParentID]
 

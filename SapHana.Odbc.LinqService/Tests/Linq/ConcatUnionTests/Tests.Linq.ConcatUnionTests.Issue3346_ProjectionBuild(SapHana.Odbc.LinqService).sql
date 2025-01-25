@@ -1,23 +1,6 @@
 ﻿BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
-DROP TABLE "ComplexPerson"
-
-BeforeExecute
--- SapHana.Odbc SapHanaOdbc
-
-CREATE COLUMN TABLE "ComplexPerson"
-(
-	"Id"        Integer       NOT NULL,
-	"FirstName" NVarChar(255)     NULL,
-	"LastName"  NVarChar(255)     NULL,
-
-	PRIMARY KEY ("Id")
-)
-
-BeforeExecute
--- SapHana.Odbc SapHanaOdbc
-
 SELECT
 	"x"."Id",
 	"x"."FirstName",
@@ -35,9 +18,4 @@ FROM
 	"ComplexPerson" "x_1"
 WHERE
 	"x_1"."Id" < 20
-
-BeforeExecute
--- SapHana.Odbc SapHanaOdbc
-
-DROP TABLE "ComplexPerson"
 

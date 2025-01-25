@@ -1,64 +1,5 @@
 ﻿BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-
-DROP TABLE "ByteTable"
-
-BeforeExecute
--- SapHana.Odbc SapHanaOdbc
-
-CREATE COLUMN TABLE "ByteTable"
-(
-	"Id"             Integer NOT NULL,
-	"Column"         TinyInt NOT NULL,
-	"ColumnNullable" TinyInt     NULL
-)
-
-BeforeExecute
--- SapHana.Odbc SapHanaOdbc
-DECLARE @Id  -- Int32
-SET     @Id = 1
-DECLARE @Column  -- Byte
-SET     @Column = 1
-DECLARE @ColumnNullable  -- Byte
-SET     @ColumnNullable = NULL
-
-INSERT INTO "ByteTable"
-(
-	"Id",
-	"Column",
-	"ColumnNullable"
-)
-VALUES
-(
-	?,
-	?,
-	?
-)
-
-BeforeExecute
--- SapHana.Odbc SapHanaOdbc
-DECLARE @Id  -- Int32
-SET     @Id = 2
-DECLARE @Column  -- Byte
-SET     @Column = 255
-DECLARE @ColumnNullable  -- Byte
-SET     @ColumnNullable = 2
-
-INSERT INTO "ByteTable"
-(
-	"Id",
-	"Column",
-	"ColumnNullable"
-)
-VALUES
-(
-	?,
-	?,
-	?
-)
-
-BeforeExecute
--- SapHana.Odbc SapHanaOdbc
 DECLARE @Column  -- Byte
 SET     @Column = 255
 DECLARE @ColumnNullable  -- Byte
@@ -270,9 +211,4 @@ FROM
 	"ByteTable" "t1"
 ORDER BY
 	"t1"."Id"
-
-BeforeExecute
--- SapHana.Odbc SapHanaOdbc
-
-DROP TABLE "ByteTable"
 

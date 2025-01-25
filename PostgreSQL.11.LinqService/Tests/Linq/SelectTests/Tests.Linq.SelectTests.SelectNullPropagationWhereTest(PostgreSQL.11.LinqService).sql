@@ -4,7 +4,6 @@
 SELECT
 	p."ParentID",
 	p."Value1",
-	"a_Parent"."ParentID",
 	"a_Parent"."Value1"
 FROM
 	"Parent" p

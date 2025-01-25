@@ -1,36 +1,5 @@
 ﻿BeforeExecute
 -- SQLite.MS SQLite
-
-DROP TABLE IF EXISTS [Issue1096Task]
-
-BeforeExecute
--- SQLite.MS SQLite
-
-CREATE TABLE IF NOT EXISTS [Issue1096Task]
-(
-	[Id]         INTEGER       NOT NULL,
-	[TargetName] NVarChar(255)     NULL
-)
-
-BeforeExecute
--- SQLite.MS SQLite
-
-DROP TABLE IF EXISTS [Issue1096TaskStage]
-
-BeforeExecute
--- SQLite.MS SQLite
-
-CREATE TABLE IF NOT EXISTS [Issue1096TaskStage]
-(
-	[Id]     INTEGER NOT NULL,
-	[TaskId] INTEGER NOT NULL,
-	[Actual] Bit     NOT NULL,
-
-	CONSTRAINT [PK_Issue1096TaskStage] PRIMARY KEY ([Id])
-)
-
-BeforeExecute
--- SQLite.MS SQLite
 DECLARE @Id  -- Int32
 SET     @Id = 1
 DECLARE @TargetName NVarChar(12) -- String
@@ -99,14 +68,4 @@ SELECT DISTINCT
 FROM
 	[Issue1096Task] [t]
 		LEFT JOIN [Issue1096TaskStage] [a_ActualStage] ON [t].[Id] = [a_ActualStage].[TaskId] AND [a_ActualStage].[Actual] = 1
-
-BeforeExecute
--- SQLite.MS SQLite
-
-DROP TABLE IF EXISTS [Issue1096TaskStage]
-
-BeforeExecute
--- SQLite.MS SQLite
-
-DROP TABLE IF EXISTS [Issue1096Task]
 

@@ -1,33 +1,5 @@
 ﻿BeforeExecute
 -- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
-
-DROP TABLE IF EXISTS "BooleanTable"
-
-BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
-
-CREATE TABLE IF NOT EXISTS "BooleanTable"
-(
-	"Id"             Int     NOT NULL,
-	"Column"         Boolean NOT NULL,
-	"ColumnNullable" Boolean     NULL
-)
-
-BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
-
-INSERT INTO "BooleanTable"
-(
-	"Id",
-	"Column",
-	"ColumnNullable"
-)
-VALUES
-(1,True,NULL),
-(2,False,True)
-
-BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
 DECLARE @Column Boolean
 SET     @Column = False
 DECLARE @ColumnNullable Boolean
@@ -167,9 +139,4 @@ FROM
 	"BooleanTable" t1
 ORDER BY
 	t1."Id"
-
-BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
-
-DROP TABLE IF EXISTS "BooleanTable"
 

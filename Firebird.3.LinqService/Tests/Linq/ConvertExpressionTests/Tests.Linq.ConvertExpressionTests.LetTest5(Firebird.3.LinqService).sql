@@ -2,18 +2,14 @@
 -- Firebird.3 Firebird3
 
 SELECT
-	CASE
-		WHEN EXISTS(
-			SELECT
-				*
-			FROM
-				"Child" "c_2"
-			WHERE
-				"c_2"."ParentID" = "p"."ParentID" AND "c_2"."ChildID" > -100
-		)
-			THEN TRUE
-		ELSE FALSE
-	END,
+	EXISTS(
+		SELECT
+			*
+		FROM
+			"Child" "c_2"
+		WHERE
+			"c_2"."ParentID" = "p"."ParentID" AND "c_2"."ChildID" > -100
+	),
 	(
 		SELECT
 			COUNT(*)

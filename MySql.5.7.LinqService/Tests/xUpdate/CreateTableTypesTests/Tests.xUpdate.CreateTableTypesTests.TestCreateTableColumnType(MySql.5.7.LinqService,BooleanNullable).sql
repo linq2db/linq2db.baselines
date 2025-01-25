@@ -1,19 +1,5 @@
 ﻿BeforeExecute
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
-
-DROP TABLE IF EXISTS `CreateTableTypes`
-
-BeforeExecute
--- MySql.5.7 MySql.5.7.MySql.Data MySql57
-
-CREATE TABLE IF NOT EXISTS `CreateTableTypes`
-(
-	`Id`              INT     NOT NULL,
-	`BooleanNullable` BOOLEAN     NULL
-)
-
-BeforeExecute
--- MySql.5.7 MySql.5.7.MySql.Data MySql57
 DECLARE @Id Int32
 SET     @Id = 1
 DECLARE @BooleanNullable UByte -- Boolean
@@ -58,9 +44,4 @@ FROM
 	`CreateTableTypes` `t1`
 ORDER BY
 	`t1`.`Id`
-
-BeforeExecute
--- MySql.5.7 MySql.5.7.MySql.Data MySql57
-
-DROP TABLE IF EXISTS `CreateTableTypes`
 

@@ -1,27 +1,6 @@
 ﻿BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
 
-DROP TABLE IF EXISTS `Issue1303`
-
-BeforeExecute
--- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
-CREATE TABLE IF NOT EXISTS `Issue1303`
-(
-	`ID`     INT           NOT NULL,
-	`Array`  VARBINARY(10)     NULL,
-	`Binary` VARBINARY(10)     NULL,
-
-	CONSTRAINT `PK_Issue1303` PRIMARY KEY CLUSTERED (`ID`)
-)
-
-BeforeExecute
--- MySql.8.0 MySql.8.0.MySql.Data MySql80
-DECLARE @Array Blob(3) -- Binary
-SET     @Array = 0x010203
-DECLARE @Binary Blob(2) -- Binary
-SET     @Binary = 0x0405
-
 INSERT INTO `Issue1303`
 (
 	`ID`,
@@ -31,8 +10,8 @@ INSERT INTO `Issue1303`
 VALUES
 (
 	1,
-	@Array,
-	@Binary
+	0x010203,
+	0x0405
 )
 
 BeforeExecute
@@ -50,8 +29,6 @@ LIMIT 2
 
 BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
-DECLARE @Array Blob(3) -- Binary
-SET     @Array = 0x010203
 
 SELECT
 	`t1`.`ID`,
@@ -60,13 +37,11 @@ SELECT
 FROM
 	`Issue1303` `t1`
 WHERE
-	`t1`.`Array` = @Array
+	`t1`.`Array` = 0x010203
 LIMIT 2
 
 BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
-DECLARE @Binary Blob(2) -- Binary
-SET     @Binary = 0x0405
 
 SELECT
 	`t1`.`ID`,
@@ -75,11 +50,6 @@ SELECT
 FROM
 	`Issue1303` `t1`
 WHERE
-	`t1`.`Binary` = @Binary
+	`t1`.`Binary` = 0x0405
 LIMIT 2
-
-BeforeExecute
--- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
-DROP TABLE IF EXISTS `Issue1303`
 

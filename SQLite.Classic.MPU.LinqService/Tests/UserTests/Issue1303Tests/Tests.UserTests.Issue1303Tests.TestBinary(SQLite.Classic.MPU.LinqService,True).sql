@@ -1,27 +1,6 @@
 ﻿BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
-DROP TABLE IF EXISTS [Issue1303]
-
-BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
-
-CREATE TABLE IF NOT EXISTS [Issue1303]
-(
-	[ID]     INTEGER       NOT NULL,
-	[Array]  VarBinary(10)     NULL,
-	[Binary] VarBinary(10)     NULL,
-
-	CONSTRAINT [PK_Issue1303] PRIMARY KEY ([ID])
-)
-
-BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @Array Binary(3)
-SET     @Array = X'010203'
-DECLARE @Binary Binary(2)
-SET     @Binary = X'0405'
-
 INSERT INTO [Issue1303]
 (
 	[ID],
@@ -31,8 +10,8 @@ INSERT INTO [Issue1303]
 VALUES
 (
 	1,
-	@Array,
-	@Binary
+	X'010203',
+	X'0405'
 )
 
 BeforeExecute
@@ -73,9 +52,4 @@ FROM
 WHERE
 	[t1].[Binary] = X'0405'
 LIMIT 2
-
-BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
-
-DROP TABLE IF EXISTS [Issue1303]
 

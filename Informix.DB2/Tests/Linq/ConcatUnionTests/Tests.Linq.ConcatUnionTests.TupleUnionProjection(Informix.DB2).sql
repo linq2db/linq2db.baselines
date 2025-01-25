@@ -3,7 +3,7 @@
 
 SELECT
 	x.Value1,
-	x.ParentID
+	NVL(x.ParentID, NULL)
 FROM
 	Parent x
 WHERE

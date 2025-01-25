@@ -1,20 +1,5 @@
 ﻿BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
-
-DROP TABLE IF EXISTS "TableWithData"
-
-BeforeExecute
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
-
-CREATE TABLE IF NOT EXISTS "TableWithData"
-(
-	"Id"       Int  NOT NULL,
-	"Value"    Int  NOT NULL,
-	"ValueStr" text     NULL
-)
-
-BeforeExecute
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 DECLARE @Value Integer -- Int32
 SET     @Value = 200
 DECLARE @value_1 Integer -- Int32
@@ -38,9 +23,4 @@ RETURNING
 	"TableWithData"."Id",
 	"TableWithData"."Value",
 	"TableWithData"."ValueStr"
-
-BeforeExecute
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
-
-DROP TABLE IF EXISTS "TableWithData"
 

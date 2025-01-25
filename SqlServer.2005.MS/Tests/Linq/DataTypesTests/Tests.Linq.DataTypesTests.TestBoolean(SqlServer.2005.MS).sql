@@ -1,34 +1,5 @@
 ﻿BeforeExecute
 -- SqlServer.2005.MS SqlServer.2005
-
-IF (OBJECT_ID(N'[BooleanTable]', N'U') IS NOT NULL)
-	DROP TABLE [BooleanTable]
-
-BeforeExecute
--- SqlServer.2005.MS SqlServer.2005
-
-IF (OBJECT_ID(N'[BooleanTable]', N'U') IS NULL)
-	CREATE TABLE [BooleanTable]
-	(
-		[Id]             Int NOT NULL,
-		[Column]         Bit NOT NULL,
-		[ColumnNullable] Bit     NULL
-	)
-
-BeforeExecute
--- SqlServer.2005.MS SqlServer.2005
-
-INSERT INTO [BooleanTable]
-(
-	[Id],
-	[Column],
-	[ColumnNullable]
-)
-SELECT 1,1,NULL UNION ALL
-SELECT 2,0,1
-
-BeforeExecute
--- SqlServer.2005.MS SqlServer.2005
 DECLARE @Column Bit -- Boolean
 SET     @Column = 0
 DECLARE @ColumnNullable Bit -- Boolean
@@ -170,10 +141,4 @@ FROM
 	[BooleanTable] [t1]
 ORDER BY
 	[t1].[Id]
-
-BeforeExecute
--- SqlServer.2005.MS SqlServer.2005
-
-IF (OBJECT_ID(N'[BooleanTable]', N'U') IS NOT NULL)
-	DROP TABLE [BooleanTable]
 

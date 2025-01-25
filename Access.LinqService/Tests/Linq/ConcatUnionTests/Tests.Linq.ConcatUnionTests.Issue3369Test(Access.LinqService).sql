@@ -4,8 +4,7 @@
 SELECT
 	[t1].[ID],
 	[t1].[OK],
-	[t1].[FirstName],
-	[y].[FirstName]
+	IIF([t1].[FirstName] = 'ddd', [y].[FirstName], [t1].[FirstName])
 FROM
 	(
 		SELECT

@@ -1,34 +1,5 @@
 ﻿BeforeExecute
 -- SqlServer.Contained SqlServer.2019
-
-DROP TABLE IF EXISTS [BooleanTable]
-
-BeforeExecute
--- SqlServer.Contained SqlServer.2019
-
-IF (OBJECT_ID(N'[BooleanTable]', N'U') IS NULL)
-	CREATE TABLE [BooleanTable]
-	(
-		[Id]             Int NOT NULL,
-		[Column]         Bit NOT NULL,
-		[ColumnNullable] Bit     NULL
-	)
-
-BeforeExecute
--- SqlServer.Contained SqlServer.2019
-
-INSERT INTO [BooleanTable]
-(
-	[Id],
-	[Column],
-	[ColumnNullable]
-)
-VALUES
-(1,1,NULL),
-(2,0,1)
-
-BeforeExecute
--- SqlServer.Contained SqlServer.2019
 DECLARE @Column Bit -- Boolean
 SET     @Column = 0
 DECLARE @ColumnNullable Bit -- Boolean
@@ -171,9 +142,4 @@ FROM
 	[BooleanTable] [t1]
 ORDER BY
 	[t1].[Id]
-
-BeforeExecute
--- SqlServer.Contained SqlServer.2019
-
-DROP TABLE IF EXISTS [BooleanTable]
 

@@ -1,32 +1,5 @@
 ﻿BeforeExecute
 -- SqlCe
-
-DROP TABLE [BooleanTable]
-
-BeforeExecute
--- SqlCe
-
-CREATE TABLE [BooleanTable]
-(
-	[Id]             Int NOT NULL,
-	[Column]         Bit NOT NULL,
-	[ColumnNullable] Bit     NULL
-)
-
-BeforeExecute
--- SqlCe
-
-INSERT INTO [BooleanTable]
-(
-	[Id],
-	[Column],
-	[ColumnNullable]
-)
-SELECT 1,1,NULL UNION ALL
-SELECT 2,0,1
-
-BeforeExecute
--- SqlCe
 DECLARE @Column Bit -- Boolean
 SET     @Column = 0
 DECLARE @ColumnNullable Bit -- Boolean
@@ -174,9 +147,4 @@ FROM
 	[BooleanTable] [t1]
 ORDER BY
 	[t1].[Id]
-
-BeforeExecute
--- SqlCe
-
-DROP TABLE [BooleanTable]
 

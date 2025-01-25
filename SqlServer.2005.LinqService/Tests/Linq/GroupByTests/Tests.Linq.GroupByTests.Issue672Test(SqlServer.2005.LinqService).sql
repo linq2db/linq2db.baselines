@@ -1,25 +1,5 @@
 ﻿BeforeExecute
 -- SqlServer.2005
-
-IF (OBJECT_ID(N'[Stone]', N'U') IS NOT NULL)
-	DROP TABLE [Stone]
-
-BeforeExecute
--- SqlServer.2005
-
-IF (OBJECT_ID(N'[Stone]', N'U') IS NULL)
-	CREATE TABLE [Stone]
-	(
-		[Id]           Int             NOT NULL IDENTITY,
-		[Name]         NVarChar(4000)  NOT NULL,
-		[Enabled]      Bit                 NULL,
-		[ImageFullUrl] NVarChar(4000)      NULL,
-
-		CONSTRAINT [PK_Stone] PRIMARY KEY CLUSTERED ([Id])
-	)
-
-BeforeExecute
--- SqlServer.2005
 DECLARE @Name NVarChar(4000) -- String
 SET     @Name = N'group1'
 DECLARE @Enabled Bit -- Boolean
@@ -104,23 +84,18 @@ FROM
 		GROUP BY
 			[sG].[Name]
 	) [sG_1]
-		INNER JOIN (
-			SELECT
+		CROSS APPLY (
+			SELECT TOP (1)
 				[s].[Id],
 				[s].[Name],
 				[s].[Enabled],
-				[s].[ImageFullUrl],
-				ROW_NUMBER() OVER (PARTITION BY [s].[Name] ORDER BY [s].[Name]) as [rn]
+				[s].[ImageFullUrl]
 			FROM
 				[Stone] [s]
 			WHERE
-				[s].[Enabled] = 1 AND [s].[Name] NOT LIKE N'level - %' ESCAPE N'~' AND
-				Len([s].[ImageFullUrl]) > 0
-		) [t1] ON [sG_1].[Name] = [t1].[Name] AND [t1].[rn] <= 1
-
-BeforeExecute
--- SqlServer.2005
-
-IF (OBJECT_ID(N'[Stone]', N'U') IS NOT NULL)
-	DROP TABLE [Stone]
+				[s].[Enabled] = 1 AND
+				[s].[Name] NOT LIKE N'level - %' ESCAPE N'~' AND
+				Len([s].[ImageFullUrl]) > 0 AND
+				[sG_1].[Name] = [s].[Name]
+		) [t1]
 

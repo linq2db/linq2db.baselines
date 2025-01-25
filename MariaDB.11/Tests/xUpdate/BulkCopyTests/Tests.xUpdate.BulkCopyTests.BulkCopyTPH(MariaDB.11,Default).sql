@@ -1,26 +1,6 @@
 ﻿BeforeExecute
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql
 
-DROP TABLE IF EXISTS `TPHTable`
-
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
-
-CREATE TABLE IF NOT EXISTS `TPHTable`
-(
-	`Id`            INT         NOT NULL,
-	`Discriminator` INT         NOT NULL,
-	`Value1`        VARCHAR(50)     NULL,
-	`Value2`        VARCHAR(50)     NULL,
-	`Value3`        VARCHAR(50)     NULL,
-	`NullableBool`  VARCHAR(1)      NULL,
-
-	CONSTRAINT `PK_TPHTable` PRIMARY KEY CLUSTERED (`Id`)
-)
-
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
-
 INSERT INTO `TPHTable`
 (
 	`Id`,
@@ -145,9 +125,4 @@ FROM
 WHERE
 	`x`.`Value3` = 'Str3'
 LIMIT 2
-
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
-
-DROP TABLE IF EXISTS `TPHTable`
 

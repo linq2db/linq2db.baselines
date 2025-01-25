@@ -2,33 +2,6 @@
 BeginTransaction
 BeforeExecute
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql
-
-DROP TABLE IF EXISTS `mega_composites`
-
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
-
-CREATE TABLE IF NOT EXISTS `mega_composites`
-(
-	`ref1` BIGINT     NULL
-)
-
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
-
-DROP TABLE IF EXISTS `qwerty`
-
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
-
-CREATE TABLE IF NOT EXISTS `qwerty`
-(
-	`Id`     BIGINT        NOT NULL,
-	`asdfgh` VARCHAR(4000)     NULL
-)
-
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
 DECLARE @Id Int64
 SET     @Id = 1
 DECLARE @asdfgh VarChar(4) -- String
@@ -67,42 +40,54 @@ BeforeExecute
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql
 DECLARE @ref1 Int64
 SET     @ref1 = 100500
+DECLARE @y1_q1_ref1 Int64
+SET     @y1_q1_ref1 = 100500
 
 INSERT INTO `mega_composites`
 (
-	`ref1`
+	`ref1`,
+	`y1.q1.ref1`
 )
 VALUES
 (
-	@ref1
+	@ref1,
+	@y1_q1_ref1
 )
 
 BeforeExecute
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql
 DECLARE @ref1 Int64
 SET     @ref1 = 1
+DECLARE @y1_q1_ref1 Int64
+SET     @y1_q1_ref1 = 100500
 
 INSERT INTO `mega_composites`
 (
-	`ref1`
+	`ref1`,
+	`y1.q1.ref1`
 )
 VALUES
 (
-	@ref1
+	@ref1,
+	@y1_q1_ref1
 )
 
 BeforeExecute
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql
 DECLARE @ref1 Int64
 SET     @ref1 = 100500
+DECLARE @y1_q1_ref1 Int64
+SET     @y1_q1_ref1 = 1
 
 INSERT INTO `mega_composites`
 (
-	`ref1`
+	`ref1`,
+	`y1.q1.ref1`
 )
 VALUES
 (
-	@ref1
+	@ref1,
+	@y1_q1_ref1
 )
 
 BeforeExecute
@@ -124,16 +109,6 @@ SELECT
 FROM
 	`mega_composites` `x`
 LIMIT @take
-
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
-
-DROP TABLE IF EXISTS `qwerty`
-
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
-
-DROP TABLE IF EXISTS `mega_composites`
 
 BeforeExecute
 DisposeTransaction

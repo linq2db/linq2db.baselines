@@ -1,20 +1,5 @@
 ﻿BeforeExecute
 -- SQLite.MS SQLite
-
-DROP TABLE IF EXISTS [Test3664]
-
-BeforeExecute
--- SQLite.MS SQLite
-
-CREATE TABLE IF NOT EXISTS [Test3664]
-(
-	[Id] INTEGER NOT NULL,
-
-	CONSTRAINT [PK_Test3664] PRIMARY KEY ([Id])
-)
-
-BeforeExecute
--- SQLite.MS SQLite
 DECLARE @Id  -- Int32
 SET     @Id = 1
 
@@ -26,34 +11,6 @@ VALUES
 (
 	@Id
 )
-
-BeforeExecute
--- SQLite.MS SQLite
-
-DROP TABLE IF EXISTS [Test3664Item]
-
-BeforeExecute
--- SQLite.MS SQLite
-
-CREATE TABLE IF NOT EXISTS [Test3664Item]
-(
-	[Id]     INTEGER NOT NULL,
-	[TestId] INTEGER NOT NULL,
-
-	CONSTRAINT [PK_Test3664Item] PRIMARY KEY ([Id])
-)
-
-BeforeExecute
--- SQLite.MS SQLite
-
-INSERT INTO [Test3664Item]
-(
-	[Id],
-	[TestId]
-)
-VALUES
-(11,1),
-(12,1)
 
 BeforeExecute
 BeginTransaction(Serializable)
@@ -108,14 +65,4 @@ SELECT
 	[t1].[Id]
 FROM
 	[Test3664] [t1]
-
-BeforeExecute
--- SQLite.MS SQLite
-
-DROP TABLE IF EXISTS [Test3664Item]
-
-BeforeExecute
--- SQLite.MS SQLite
-
-DROP TABLE IF EXISTS [Test3664]
 

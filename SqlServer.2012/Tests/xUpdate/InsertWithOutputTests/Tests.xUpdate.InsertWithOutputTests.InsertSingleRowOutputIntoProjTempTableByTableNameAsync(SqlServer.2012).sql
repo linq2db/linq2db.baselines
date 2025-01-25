@@ -1,23 +1,6 @@
 ﻿BeforeExecute
 -- SqlServer.2012
 
-IF (OBJECT_ID(N'[TableWithData_source]', N'U') IS NOT NULL)
-	DROP TABLE [TableWithData_source]
-
-BeforeExecute
--- SqlServer.2012
-
-IF (OBJECT_ID(N'[TableWithData_source]', N'U') IS NULL)
-	CREATE TABLE [TableWithData_source]
-	(
-		[Id]       Int          NOT NULL,
-		[Value]    Int          NOT NULL,
-		[ValueStr] NVarChar(50)     NULL
-	)
-
-BeforeExecute
--- SqlServer.2012
-
 CREATE TABLE [tempdb]..[#DestinationTable_output]
 (
 	[Id]       Int          NOT NULL,
@@ -35,9 +18,9 @@ INSERT INTO [TableWithData_source]
 	[ValueStr]
 )
 OUTPUT
-	[INSERTED].[Value] * 2,
-	[INSERTED].[Id] + 1,
-	N'Foo' + [INSERTED].[ValueStr]
+	INSERTED.[Value] * 2,
+	INSERTED.[Id] + 1,
+	N'Foo' + INSERTED.[ValueStr]
 INTO [tempdb]..[#DestinationTable_output]
 (
 	[Value],
@@ -76,10 +59,4 @@ BeforeExecute
 
 IF (OBJECT_ID(N'[tempdb]..[#DestinationTable_output]', N'U') IS NOT NULL)
 	DROP TABLE [tempdb]..[#DestinationTable_output]
-
-BeforeExecute
--- SqlServer.2012
-
-IF (OBJECT_ID(N'[TableWithData_source]', N'U') IS NOT NULL)
-	DROP TABLE [TableWithData_source]
 

@@ -1,20 +1,5 @@
 ﻿BeforeExecute
 -- SQLite.MS SQLite
-
-DROP TABLE IF EXISTS [my_table]
-
-BeforeExecute
--- SQLite.MS SQLite
-
-CREATE TABLE IF NOT EXISTS [my_table]
-(
-	[my_col1]      NVarChar(255)     NULL,
-	[itemType]     INTEGER       NOT NULL,
-	[my_other_col] NVarChar(255)     NULL
-)
-
-BeforeExecute
--- SQLite.MS SQLite
 DECLARE @MyCol1 NVarChar(6) -- String
 SET     @MyCol1 = 'MyCol1'
 DECLARE @itemType  -- Int32
@@ -77,9 +62,4 @@ SELECT
 	COUNT(*)
 FROM
 	[my_table] [t1]
-
-BeforeExecute
--- SQLite.MS SQLite
-
-DROP TABLE IF EXISTS [my_table]
 

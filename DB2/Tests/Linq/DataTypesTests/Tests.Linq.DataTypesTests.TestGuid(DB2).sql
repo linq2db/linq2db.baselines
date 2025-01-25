@@ -1,41 +1,5 @@
 ﻿BeforeExecute
 -- DB2 DB2.LUW DB2LUW
-
-BEGIN
-	DECLARE CONTINUE HANDLER FOR SQLSTATE '42704' BEGIN END;
-	EXECUTE IMMEDIATE 'DROP TABLE "GuidTable"';
-END
-
-BeforeExecute
--- DB2 DB2.LUW DB2LUW
-
-BEGIN
-	DECLARE CONTINUE HANDLER FOR SQLSTATE '42710' BEGIN END;
-	EXECUTE IMMEDIATE '
-		CREATE TABLE "GuidTable"
-		(
-			"Id"             Int                   NOT NULL,
-			"Column"         char(16) for bit data NOT NULL,
-			"ColumnNullable" char(16) for bit data
-		)
-	';
-END
-
-BeforeExecute
--- DB2 DB2.LUW DB2LUW
-
-INSERT INTO "GuidTable"
-(
-	"Id",
-	"Column",
-	"ColumnNullable"
-)
-VALUES
-(1,BX'3D667BBCDE0F27438F925D8CC3A11D11',NULL),
-(2,BX'0D6048A921DE744F8AC29516B287076E',BX'A57339BD2343D84D9F4FDF9F93E2A627')
-
-BeforeExecute
--- DB2 DB2.LUW DB2LUW
 DECLARE @Column VarBinary(16) -- Binary
 SET     @Column = BX'0D6048A921DE744F8AC29516B287076E'
 DECLARE @ColumnNullable VarBinary(16) -- Binary
@@ -176,12 +140,4 @@ FROM
 	"GuidTable" "t1"
 ORDER BY
 	"t1"."Id"
-
-BeforeExecute
--- DB2 DB2.LUW DB2LUW
-
-BEGIN
-	DECLARE CONTINUE HANDLER FOR SQLSTATE '42704' BEGIN END;
-	EXECUTE IMMEDIATE 'DROP TABLE "GuidTable"';
-END
 

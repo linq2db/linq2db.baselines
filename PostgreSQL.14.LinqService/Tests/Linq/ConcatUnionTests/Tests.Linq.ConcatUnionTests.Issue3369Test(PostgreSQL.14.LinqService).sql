@@ -4,17 +4,19 @@
 SELECT
 	t1."ID",
 	t1."OK",
-	t1."FirstName",
-	y."FirstName"
+	CASE
+		WHEN t1."FirstName" = 'ddd' THEN y."FirstName"
+		ELSE t1."FirstName"
+	END
 FROM
 	(
 		SELECT
 			x."PersonID" as "ID",
+			'A'::text as "FirstName",
 			CASE
 				WHEN x."FirstName" = '123' THEN 'Y'
 				ELSE 'N'
-			END as "OK",
-			'A' as "FirstName"
+			END as "OK"
 		FROM
 			"Person" x
 		WHERE
@@ -22,8 +24,8 @@ FROM
 		UNION
 		SELECT
 			x_1."PersonID" as "ID",
-			'N' as "OK",
-			x_1."FirstName"
+			x_1."FirstName",
+			'N'::text as "OK"
 		FROM
 			"Person" x_1
 		WHERE

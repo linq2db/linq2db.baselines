@@ -6,15 +6,11 @@ SELECT
 	`p_1`.`ID`,
 	`p_1`.`LastName`,
 	`p_1`.`MiddleName`,
-	`p_1`.`Gender`,
-	`p_1`.`Field1`
+	`p_1`.`Gender`
 FROM
 	(
 		SELECT
-			CASE
-				WHEN LOCATE('Jo', `p`.`FirstName`) > 0 THEN 1
-				ELSE 0
-			END as `Field1`,
+			LOCATE('Jo', `p`.`FirstName`) > 0 as `Field1`,
 			`p`.`FirstName`,
 			`p`.`PersonID` as `ID`,
 			`p`.`LastName`,
@@ -24,7 +20,7 @@ FROM
 			`Person` `p`
 	) `p_1`
 WHERE
-	`p_1`.`Field1` = 1
+	`p_1`.`Field1`
 ORDER BY
 	`p_1`.`Field1`
 

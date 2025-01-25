@@ -1,22 +1,6 @@
 ﻿BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
 
-DROP TABLE IF EXISTS "Issue1373Tests"
-
-BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
-
-CREATE TABLE IF NOT EXISTS "Issue1373Tests"
-(
-	"Id"     Int  NOT NULL,
-	"Field1" text     NULL,
-
-	CONSTRAINT "PK_Issue1373Tests" PRIMARY KEY ("Id")
-)
-
-BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
-
 INSERT INTO "Issue1373Tests"
 (
 	"Id",
@@ -30,8 +14,6 @@ VALUES
 
 BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
-DECLARE @Field1 Varchar -- String
-SET     @Field1 = NULL
 
 INSERT INTO "Issue1373Tests"
 (
@@ -41,12 +23,12 @@ INSERT INTO "Issue1373Tests"
 VALUES
 (
 	2,
-	:Field1
+	NULL
 )
 
 BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
-DECLARE @Field1 Varchar(4) -- String
+DECLARE @Field1 Text(4) -- String
 SET     @Field1 = 'test'
 
 INSERT INTO "Issue1373Tests"
@@ -70,9 +52,4 @@ FROM
 	"Issue1373Tests" t1
 ORDER BY
 	t1."Id"
-
-BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
-
-DROP TABLE IF EXISTS "Issue1373Tests"
 

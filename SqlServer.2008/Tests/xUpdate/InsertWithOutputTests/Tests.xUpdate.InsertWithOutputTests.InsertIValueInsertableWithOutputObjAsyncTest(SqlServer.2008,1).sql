@@ -1,21 +1,4 @@
 ﻿BeforeExecute
--- SqlServer.2008
-
-IF (OBJECT_ID(N'[TableWithData]', N'U') IS NOT NULL)
-	DROP TABLE [TableWithData]
-
-BeforeExecute
--- SqlServer.2008
-
-IF (OBJECT_ID(N'[TableWithData]', N'U') IS NULL)
-	CREATE TABLE [TableWithData]
-	(
-		[Id]       Int          NOT NULL,
-		[Value]    Int          NOT NULL,
-		[ValueStr] NVarChar(50)     NULL
-	)
-
-BeforeExecute
 -- SqlServer.2008 (asynchronously)
 DECLARE @Value Int -- Int32
 SET     @Value = 100
@@ -31,19 +14,13 @@ INSERT INTO [TableWithData]
 	[ValueStr]
 )
 OUTPUT
-	[INSERTED].[Id],
-	[INSERTED].[Value],
-	[INSERTED].[ValueStr]
+	INSERTED.[Id],
+	INSERTED.[Value],
+	INSERTED.[ValueStr]
 VALUES
 (
 	@Value,
 	@Id,
 	@ValueStr
 )
-
-BeforeExecute
--- SqlServer.2008
-
-IF (OBJECT_ID(N'[TableWithData]', N'U') IS NOT NULL)
-	DROP TABLE [TableWithData]
 

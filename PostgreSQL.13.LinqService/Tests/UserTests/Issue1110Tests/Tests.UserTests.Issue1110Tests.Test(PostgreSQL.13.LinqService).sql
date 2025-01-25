@@ -1,21 +1,5 @@
 ﻿BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
-
-DROP TABLE IF EXISTS "Issue1110TB"
-
-BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
-
-CREATE TABLE IF NOT EXISTS "Issue1110TB"
-(
-	"Id"        Int       NOT NULL,
-	"TimeStamp" TimeStamp NOT NULL,
-
-	CONSTRAINT "PK_Issue1110TB" PRIMARY KEY ("Id")
-)
-
-BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
 DECLARE @Id Integer -- Int32
 SET     @Id = 10
 DECLARE @TimeStamp Timestamp -- DateTime2
@@ -31,9 +15,4 @@ VALUES
 	:Id,
 	:TimeStamp
 )
-
-BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
-
-DROP TABLE IF EXISTS "Issue1110TB"
 

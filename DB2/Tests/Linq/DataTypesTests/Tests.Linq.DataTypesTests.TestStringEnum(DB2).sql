@@ -1,41 +1,5 @@
 ﻿BeforeExecute
 -- DB2 DB2.LUW DB2LUW
-
-BEGIN
-	DECLARE CONTINUE HANDLER FOR SQLSTATE '42704' BEGIN END;
-	EXECUTE IMMEDIATE 'DROP TABLE "StringEnumTable"';
-END
-
-BeforeExecute
--- DB2 DB2.LUW DB2LUW
-
-BEGIN
-	DECLARE CONTINUE HANDLER FOR SQLSTATE '42710' BEGIN END;
-	EXECUTE IMMEDIATE '
-		CREATE TABLE "StringEnumTable"
-		(
-			"Id"             Int         NOT NULL,
-			"Column"         NVarChar(8) NOT NULL,
-			"ColumnNullable" NVarChar(8)     NULL
-		)
-	';
-END
-
-BeforeExecute
--- DB2 DB2.LUW DB2LUW
-
-INSERT INTO "StringEnumTable"
-(
-	"Id",
-	"Column",
-	"ColumnNullable"
-)
-VALUES
-(1,'val=1',NULL),
-(2,'value=2','value=33')
-
-BeforeExecute
--- DB2 DB2.LUW DB2LUW
 DECLARE @Column VarChar(7) -- String
 SET     @Column = 'value=2'
 DECLARE @ColumnNullable VarChar(8) -- String
@@ -175,12 +139,4 @@ FROM
 	"StringEnumTable" "t1"
 ORDER BY
 	"t1"."Id"
-
-BeforeExecute
--- DB2 DB2.LUW DB2LUW
-
-BEGIN
-	DECLARE CONTINUE HANDLER FOR SQLSTATE '42704' BEGIN END;
-	EXECUTE IMMEDIATE 'DROP TABLE "StringEnumTable"';
-END
 

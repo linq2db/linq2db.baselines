@@ -33,13 +33,13 @@ AS
 SELECT
 	[c_2].[CategoryName],
 	[c_2].[NumberOfProducts],
-	[p_2].[ProductName],
-	[p_2].[UnitPrice]
+	[t1].[ProductName],
+	[t1].[UnitPrice]
 FROM
-	[ProductsOverTenDollars] [p_2]
-		INNER JOIN [CategoryAndNumberOfProducts] [c_2] ON [c_2].[CategoryID] = [p_2].[CategoryID]
+	[ProductsOverTenDollars] [t1]
+		INNER JOIN [CategoryAndNumberOfProducts] [c_2] ON [c_2].[CategoryID] = [t1].[CategoryID]
 ORDER BY
-	[p_2].[ProductName]
+	[t1].[ProductName]
 
 BeforeExecute
 -- SqlServer.Northwind.MS SqlServer.2019

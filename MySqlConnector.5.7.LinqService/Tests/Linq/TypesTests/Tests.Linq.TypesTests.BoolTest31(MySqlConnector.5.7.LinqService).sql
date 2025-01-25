@@ -15,5 +15,5 @@ SELECT
 FROM
 	`LinqDataTypes` `t`
 WHERE
-	`t`.`BoolValue` = 1
+	`t`.`BoolValue`
 

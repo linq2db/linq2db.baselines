@@ -1,22 +1,6 @@
 ﻿BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
 
-DROP TABLE IF EXISTS `test_temp`
-
-BeforeExecute
--- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
-CREATE TABLE IF NOT EXISTS `test_temp`
-(
-	`ID`     INT     AUTO_INCREMENT NOT NULL,
-	`Field1` DECIMAL                NOT NULL,
-
-	CONSTRAINT `PK_test_temp` PRIMARY KEY CLUSTERED (`ID`)
-)
-
-BeforeExecute
--- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
 DELETE FROM `test_temp`
 
 BeforeExecute
@@ -99,9 +83,4 @@ FROM
 ORDER BY
 	`t1`.`ID`
 LIMIT @skip, 2
-
-BeforeExecute
--- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
-DROP TABLE IF EXISTS `test_temp`
 

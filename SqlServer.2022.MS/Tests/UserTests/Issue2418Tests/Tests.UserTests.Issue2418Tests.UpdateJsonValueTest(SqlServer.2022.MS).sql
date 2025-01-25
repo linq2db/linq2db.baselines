@@ -1,20 +1,5 @@
 ﻿BeforeExecute
 -- SqlServer.2022.MS SqlServer.2022
-
-DROP TABLE IF EXISTS [TestTable]
-
-BeforeExecute
--- SqlServer.2022.MS SqlServer.2022
-
-IF (OBJECT_ID(N'[TestTable]', N'U') IS NULL)
-	CREATE TABLE [TestTable]
-	(
-		[Id]   UniqueIdentifier NOT NULL,
-		[Json] NVarChar(Max)        NULL
-	)
-
-BeforeExecute
--- SqlServer.2022.MS SqlServer.2022
 DECLARE @Id UniqueIdentifier -- Guid
 SET     @Id = 'bc7b663d-0fde-4327-8f92-5d8cc3a11d11'
 DECLARE @Json NVarChar(4000) -- String
@@ -68,9 +53,4 @@ FROM
 	[TestTable] [x]
 WHERE
 	[x].[Id] = @Id
-
-BeforeExecute
--- SqlServer.2022.MS SqlServer.2022
-
-DROP TABLE IF EXISTS [TestTable]
 

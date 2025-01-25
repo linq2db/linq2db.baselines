@@ -1,74 +1,6 @@
 ﻿BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
-DROP TABLE IF EXISTS Categories
-
-BeforeExecute
--- ClickHouse.MySql ClickHouse
-
-CREATE TABLE IF NOT EXISTS Categories
-(
-	CategoryID   Int32,
-	CategoryName String,
-	Description  Nullable(String),
-
-	PRIMARY KEY (CategoryID)
-)
-ENGINE = MergeTree()
-ORDER BY CategoryID
-
-BeforeExecute
--- ClickHouse.MySql ClickHouse
-
-INSERT INTO Categories
-(
-	CategoryName,
-	Description
-)
-VALUES
-('Name 1','Desc 1'),
-('Name 2','Desc 2')
-
-BeforeExecute
--- ClickHouse.MySql ClickHouse
-
-DROP TABLE IF EXISTS Products
-
-BeforeExecute
--- ClickHouse.MySql ClickHouse
-
-CREATE TABLE IF NOT EXISTS Products
-(
-	ProductID       Int32,
-	ProductName     String,
-	CategoryID      Nullable(Int32),
-	QuantityPerUnit Nullable(String),
-
-	PRIMARY KEY (ProductID)
-)
-ENGINE = MergeTree()
-ORDER BY ProductID
-
-BeforeExecute
--- ClickHouse.MySql ClickHouse
-
-INSERT INTO Products
-(
-	ProductName,
-	CategoryID,
-	QuantityPerUnit
-)
-VALUES
-('Prod 1',1,'q 1'),
-('Prod 2',1,'q 2'),
-('Prod 3',3,'q 3'),
-('Prod 4',3,'q 4'),
-('Prod 5',1,'q 5'),
-('Prod 6',1,'q 6')
-
-BeforeExecute
--- ClickHouse.MySql ClickHouse
-
 SELECT
 	m_1.CategoryID,
 	d.ProductID,
@@ -88,14 +20,4 @@ SELECT
 	t1.Description
 FROM
 	Categories t1
-
-BeforeExecute
--- ClickHouse.MySql ClickHouse
-
-DROP TABLE IF EXISTS Products
-
-BeforeExecute
--- ClickHouse.MySql ClickHouse
-
-DROP TABLE IF EXISTS Categories
 

@@ -16,4 +16,6 @@ FROM
 	) t2
 WHERE
 	ROWNUM <= 1
+ORDER BY
+	t2."ParentID"
 

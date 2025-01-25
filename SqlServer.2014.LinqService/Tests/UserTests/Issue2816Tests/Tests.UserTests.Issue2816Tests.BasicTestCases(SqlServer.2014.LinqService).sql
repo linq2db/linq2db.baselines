@@ -1,140 +1,14 @@
 ﻿BeforeExecute
 -- SqlServer.2014
 
-IF (OBJECT_ID(N'[Issue2816Table]', N'U') IS NOT NULL)
-	DROP TABLE [Issue2816Table]
-
-BeforeExecute
--- SqlServer.2014
-
-IF (OBJECT_ID(N'[Issue2816Table]', N'U') IS NULL)
-	CREATE TABLE [Issue2816Table]
-	(
-		[Id]   Int            NOT NULL,
-		[Text] NVarChar(4000)     NULL,
-
-		CONSTRAINT [PK_Issue2816Table] PRIMARY KEY CLUSTERED ([Id])
-	)
-
-BeforeExecute
--- SqlServer.2014
-DECLARE @Id Int -- Int32
-SET     @Id = 0
-DECLARE @Text NVarChar(4000) -- String
-SET     @Text = N''
-
-INSERT INTO [Issue2816Table]
-(
-	[Id],
-	[Text]
-)
-VALUES
-(
-	@Id,
-	@Text
-)
-
-BeforeExecute
--- SqlServer.2014
-DECLARE @Id Int -- Int32
-SET     @Id = 1
-DECLARE @Text NVarChar(4000) -- String
-SET     @Text = N'a'
-
-INSERT INTO [Issue2816Table]
-(
-	[Id],
-	[Text]
-)
-VALUES
-(
-	@Id,
-	@Text
-)
-
-BeforeExecute
--- SqlServer.2014
-DECLARE @Id Int -- Int32
-SET     @Id = 2
-DECLARE @Text NVarChar(4000) -- String
-SET     @Text = N' m '
-
-INSERT INTO [Issue2816Table]
-(
-	[Id],
-	[Text]
-)
-VALUES
-(
-	@Id,
-	@Text
-)
-
-BeforeExecute
--- SqlServer.2014
-DECLARE @Id Int -- Int32
-SET     @Id = 3
-DECLARE @Text NVarChar(4000) -- String
-SET     @Text = N' '
-
-INSERT INTO [Issue2816Table]
-(
-	[Id],
-	[Text]
-)
-VALUES
-(
-	@Id,
-	@Text
-)
-
-BeforeExecute
--- SqlServer.2014
-DECLARE @Id Int -- Int32
-SET     @Id = 4
-DECLARE @Text NVarChar(4000) -- String
-SET     @Text = N'  '
-
-INSERT INTO [Issue2816Table]
-(
-	[Id],
-	[Text]
-)
-VALUES
-(
-	@Id,
-	@Text
-)
-
-BeforeExecute
--- SqlServer.2014
-DECLARE @Id Int -- Int32
-SET     @Id = 5
-DECLARE @Text NVarChar(4000) -- String
-SET     @Text = NULL
-
-INSERT INTO [Issue2816Table]
-(
-	[Id],
-	[Text]
-)
-VALUES
-(
-	@Id,
-	@Text
-)
-
-BeforeExecute
--- SqlServer.2014
-
 SELECT
 	[p].[Id],
 	[p].[Text]
 FROM
 	[Issue2816Table] [p]
 WHERE
-	([p].[Text] IS NULL OR [p].[Text] NOT LIKE N'%[^	
-                 　]%')
+	[p].[Text] IS NULL OR [p].[Text] NOT LIKE N'%[^	
+                 　]%'
 
 BeforeExecute
 -- SqlServer.2014
@@ -144,10 +18,4 @@ SELECT
 	[t1].[Text]
 FROM
 	[Issue2816Table] [t1]
-
-BeforeExecute
--- SqlServer.2014
-
-IF (OBJECT_ID(N'[Issue2816Table]', N'U') IS NOT NULL)
-	DROP TABLE [Issue2816Table]
 

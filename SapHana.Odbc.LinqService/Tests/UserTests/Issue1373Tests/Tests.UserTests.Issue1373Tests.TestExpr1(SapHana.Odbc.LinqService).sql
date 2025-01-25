@@ -1,22 +1,6 @@
 ﻿BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
-DROP TABLE "Issue1373Tests"
-
-BeforeExecute
--- SapHana.Odbc SapHanaOdbc
-
-CREATE COLUMN TABLE "Issue1373Tests"
-(
-	"Id"     Integer       NOT NULL,
-	"Field1" NVarChar(255)     NULL,
-
-	PRIMARY KEY ("Id")
-)
-
-BeforeExecute
--- SapHana.Odbc SapHanaOdbc
-
 INSERT INTO "Issue1373Tests"
 (
 	"Id",
@@ -30,8 +14,6 @@ VALUES
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @Field1 NVarChar -- String
-SET     @Field1 = NULL
 
 INSERT INTO "Issue1373Tests"
 (
@@ -41,7 +23,7 @@ INSERT INTO "Issue1373Tests"
 VALUES
 (
 	2,
-	?
+	NULL
 )
 
 BeforeExecute
@@ -70,9 +52,4 @@ FROM
 	"Issue1373Tests" "t1"
 ORDER BY
 	"t1"."Id"
-
-BeforeExecute
--- SapHana.Odbc SapHanaOdbc
-
-DROP TABLE "Issue1373Tests"
 

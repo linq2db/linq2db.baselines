@@ -1,167 +1,5 @@
 ﻿BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
-
-BEGIN
-	EXECUTE IMMEDIATE 'DROP TABLE "Alert"';
-EXCEPTION
-	WHEN OTHERS THEN
-		IF SQLCODE != -942 THEN
-			RAISE;
-		END IF;
-END;
-
-BeforeExecute
--- Oracle.21.Managed Oracle.Managed Oracle12
-
-BEGIN
-	EXECUTE IMMEDIATE '
-		CREATE TABLE "Alert"
-		(
-			"AlertKey"     VarChar(255) NOT NULL,
-			"AlertCode"    VarChar(255) NOT NULL,
-			"CreationDate" timestamp    NOT NULL
-		)
-	';
-EXCEPTION
-	WHEN OTHERS THEN
-		IF SQLCODE != -955 THEN
-			RAISE;
-		END IF;
-END;
-
-BeforeExecute
--- Oracle.21.Managed Oracle.Managed Oracle12
-
-BEGIN
-	EXECUTE IMMEDIATE 'DROP TABLE "AuditAlert"';
-EXCEPTION
-	WHEN OTHERS THEN
-		IF SQLCODE != -942 THEN
-			RAISE;
-		END IF;
-END;
-
-BeforeExecute
--- Oracle.21.Managed Oracle.Managed Oracle12
-
-BEGIN
-	EXECUTE IMMEDIATE '
-		CREATE TABLE "AuditAlert"
-		(
-			"AlertKey"        VarChar(255) NOT NULL,
-			"AlertCode"       VarChar(255) NOT NULL,
-			"CreationDate"    timestamp    NOT NULL,
-			"TransactionDate" timestamp        NULL
-		)
-	';
-EXCEPTION
-	WHEN OTHERS THEN
-		IF SQLCODE != -955 THEN
-			RAISE;
-		END IF;
-END;
-
-BeforeExecute
--- Oracle.21.Managed Oracle.Managed Oracle12
-
-BEGIN
-	EXECUTE IMMEDIATE 'DROP TABLE "Trade"';
-EXCEPTION
-	WHEN OTHERS THEN
-		IF SQLCODE != -942 THEN
-			RAISE;
-		END IF;
-END;
-
-BeforeExecute
--- Oracle.21.Managed Oracle.Managed Oracle12
-
-BEGIN
-	EXECUTE IMMEDIATE '
-		CREATE TABLE "Trade"
-		(
-			"DealId"       Int          NOT NULL,
-			"ParcelId"     Int          NOT NULL,
-			"CounterParty" VarChar(255)     NULL
-		)
-	';
-EXCEPTION
-	WHEN OTHERS THEN
-		IF SQLCODE != -955 THEN
-			RAISE;
-		END IF;
-END;
-
-BeforeExecute
--- Oracle.21.Managed Oracle.Managed Oracle12
-
-BEGIN
-	EXECUTE IMMEDIATE 'DROP TABLE "Nomin"';
-EXCEPTION
-	WHEN OTHERS THEN
-		IF SQLCODE != -942 THEN
-			RAISE;
-		END IF;
-END;
-
-BeforeExecute
--- Oracle.21.Managed Oracle.Managed Oracle12
-
-BEGIN
-	EXECUTE IMMEDIATE '
-		CREATE TABLE "Nomin"
-		(
-			"CargoId"              Int          NOT NULL,
-			"DeliveryId"           Int          NOT NULL,
-			"DeliveryCounterParty" VarChar(255)     NULL
-		)
-	';
-EXCEPTION
-	WHEN OTHERS THEN
-		IF SQLCODE != -955 THEN
-			RAISE;
-		END IF;
-END;
-
-BeforeExecute
--- Oracle.21.Managed Oracle.Managed Oracle12
-
-BEGIN
-	EXECUTE IMMEDIATE 'DROP TABLE "Flat"';
-EXCEPTION
-	WHEN OTHERS THEN
-		IF SQLCODE != -942 THEN
-			RAISE;
-		END IF;
-END;
-
-BeforeExecute
--- Oracle.21.Managed Oracle.Managed Oracle12
-
-BEGIN
-	EXECUTE IMMEDIATE '
-		CREATE TABLE "Flat"
-		(
-			"AlertKey"             VarChar(255)     NULL,
-			"AlertCode"            VarChar(255)     NULL,
-			"CargoId"              Int              NULL,
-			"DeliveryId"           Int              NULL,
-			"DeliveryCounterParty" VarChar(255)     NULL,
-			"DealId"               Int              NULL,
-			"ParcelId"             Int              NULL,
-			"CounterParty"         VarChar(255)     NULL,
-			"TransactionDate"      timestamp        NULL
-		)
-	';
-EXCEPTION
-	WHEN OTHERS THEN
-		IF SQLCODE != -955 THEN
-			RAISE;
-		END IF;
-END;
-
-BeforeExecute
--- Oracle.21.Managed Oracle.Managed Oracle12
 DECLARE @cpty Varchar2(3) -- String
 SET     @cpty = '%C%'
 DECLARE @cpty_1 Varchar2(3) -- String
@@ -178,14 +16,13 @@ SET     @cpty_5 = '%C%'
 SELECT
 	al_group_3."AlertKey",
 	al_group_3."AlertCode",
-	t2."LastUpdate_1",
-	t2."CargoId",
+	t2."LastUpdate",
+	t2."cond",
 	t2."DeliveryId",
 	t2."DeliveryCounterParty",
-	t2."DealId",
+	t2."cond_1",
 	t2."ParcelId",
-	t2."CounterParty",
-	t2."LastUpdate"
+	t2."CounterParty"
 FROM
 	(
 		SELECT
@@ -209,7 +46,8 @@ FROM
 				LEFT JOIN "Trade" trade_1 ON al_group_1."AlertKey" = CAST(trade_1."DealId" AS VarChar(255))
 				LEFT JOIN "Nomin" nomin_1 ON al_group_1."AlertKey" = CAST(nomin_1."CargoId" AS VarChar(255))
 		WHERE
-			(nomin_1."DeliveryCounterParty" LIKE :cpty ESCAPE '~' OR trade_1."CounterParty" LIKE :cpty_1 ESCAPE '~' OR al_group_1."AlertCode" LIKE :cpty_2 ESCAPE '~')
+			nomin_1."DeliveryCounterParty" LIKE :cpty ESCAPE '~' OR
+			trade_1."CounterParty" LIKE :cpty_1 ESCAPE '~' OR al_group_1."AlertCode" LIKE :cpty_2 ESCAPE '~'
 		GROUP BY
 			al_group_1."AlertKey",
 			al_group_1."AlertCode",
@@ -217,14 +55,13 @@ FROM
 	) al_group_3
 		OUTER APPLY (
 			SELECT
-				nomin_2."CargoId",
+				nomin_2."CargoId" as "cond",
 				nomin_2."DeliveryId",
 				nomin_2."DeliveryCounterParty",
-				trade_2."DealId",
+				trade_2."DealId" as "cond_1",
 				trade_2."ParcelId",
 				trade_2."CounterParty",
-				Nvl(t1.MAX_1, t1."CreationDate") as "LastUpdate",
-				Nvl(t1.MAX_1, t1."CreationDate") as "LastUpdate_1"
+				Coalesce(t1.MAX_1, t1."CreationDate") as "LastUpdate"
 			FROM
 				(
 					SELECT
@@ -249,64 +86,4 @@ FROM
 				al_group_3."CreationDate" = t1."CreationDate"
 			FETCH NEXT 1 ROWS ONLY
 		) t2
-
-BeforeExecute
--- Oracle.21.Managed Oracle.Managed Oracle12
-
-BEGIN
-	EXECUTE IMMEDIATE 'DROP TABLE "Flat"';
-EXCEPTION
-	WHEN OTHERS THEN
-		IF SQLCODE != -942 THEN
-			RAISE;
-		END IF;
-END;
-
-BeforeExecute
--- Oracle.21.Managed Oracle.Managed Oracle12
-
-BEGIN
-	EXECUTE IMMEDIATE 'DROP TABLE "Nomin"';
-EXCEPTION
-	WHEN OTHERS THEN
-		IF SQLCODE != -942 THEN
-			RAISE;
-		END IF;
-END;
-
-BeforeExecute
--- Oracle.21.Managed Oracle.Managed Oracle12
-
-BEGIN
-	EXECUTE IMMEDIATE 'DROP TABLE "Trade"';
-EXCEPTION
-	WHEN OTHERS THEN
-		IF SQLCODE != -942 THEN
-			RAISE;
-		END IF;
-END;
-
-BeforeExecute
--- Oracle.21.Managed Oracle.Managed Oracle12
-
-BEGIN
-	EXECUTE IMMEDIATE 'DROP TABLE "AuditAlert"';
-EXCEPTION
-	WHEN OTHERS THEN
-		IF SQLCODE != -942 THEN
-			RAISE;
-		END IF;
-END;
-
-BeforeExecute
--- Oracle.21.Managed Oracle.Managed Oracle12
-
-BEGIN
-	EXECUTE IMMEDIATE 'DROP TABLE "Alert"';
-EXCEPTION
-	WHEN OTHERS THEN
-		IF SQLCODE != -942 THEN
-			RAISE;
-		END IF;
-END;
 

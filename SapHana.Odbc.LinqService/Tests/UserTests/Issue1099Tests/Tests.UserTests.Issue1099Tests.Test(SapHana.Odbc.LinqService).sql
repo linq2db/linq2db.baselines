@@ -1,21 +1,5 @@
 ﻿BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-
-DROP TABLE "BackgroundTask"
-
-BeforeExecute
--- SapHana.Odbc SapHanaOdbc
-
-CREATE COLUMN TABLE "BackgroundTask"
-(
-	"ID"               Integer     NULL,
-	"DurationID"       Integer NOT NULL,
-	"DurationInterval" Integer NOT NULL,
-	"PersonID"         Integer     NULL
-)
-
-BeforeExecute
--- SapHana.Odbc SapHanaOdbc
 DECLARE @ID  -- Int32
 SET     @ID = 3
 DECLARE @DurationID  -- Int32
@@ -54,9 +38,4 @@ FROM
 	"BackgroundTask" "task_1"
 WHERE
 	"task_1"."PersonID" = ?
-
-BeforeExecute
--- SapHana.Odbc SapHanaOdbc
-
-DROP TABLE "BackgroundTask"
 

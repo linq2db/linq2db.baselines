@@ -1,22 +1,5 @@
 ﻿BeforeExecute
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql
-
-DROP TABLE IF EXISTS `Issue1554Table`
-
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
-
-CREATE TABLE IF NOT EXISTS `Issue1554Table`
-(
-	`Id`              INT        NOT NULL,
-	`ClaimedKeyType`  VARCHAR(3) NOT NULL,
-	`ClaimedKeyTypeN` VARCHAR(3)     NULL,
-
-	CONSTRAINT `PK_Issue1554Table` PRIMARY KEY CLUSTERED (`Id`)
-)
-
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
 DECLARE @Id Int32
 SET     @Id = 0
 DECLARE @ClaimedKeyType VarChar(3) -- String
@@ -62,9 +45,4 @@ SELECT
 FROM
 	`Issue1554Table` `t1`
 LIMIT 2
-
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
-
-DROP TABLE IF EXISTS `Issue1554Table`
 

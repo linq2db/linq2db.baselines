@@ -1,71 +1,14 @@
 ﻿BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
-DROP TABLE IF EXISTS [Batch]
-
-BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
-
-CREATE TABLE IF NOT EXISTS [Batch]
-(
-	[Id]    INTEGER       NOT NULL,
-	[Value] NVarChar(255)     NULL,
-
-	CONSTRAINT [PK_Batch] PRIMARY KEY ([Id])
-)
-
-BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
-
-INSERT INTO [Batch]
-(
-	[Id],
-	[Value]
-)
-VALUES
-(1,'V1'),
-(2,'V2'),
-(3,'V3')
-
-BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
-
-DROP TABLE IF EXISTS [Confirmation]
-
-BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
-
-CREATE TABLE IF NOT EXISTS [Confirmation]
-(
-	[BatchId] INTEGER   NOT NULL,
-	[Date]    DateTime2 NOT NULL
-)
-
-BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
-
-INSERT INTO [Confirmation]
-(
-	[BatchId],
-	[Date]
-)
-VALUES
-(1,'2019-04-09 14:30:00.000'),
-(2,'2019-04-09 14:30:20.000'),
-(2,'2019-04-09 14:30:25.000'),
-(3,'2019-04-09 14:30:35.000')
-
-BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
-
 SELECT
-	[t1].[BatchId],
+	[t1].[Id],
 	[t1].[Date_1],
 	[t1].[Value_1]
 FROM
 	(
 		SELECT
-			[x].[Id] as [BatchId],
+			[x].[Id],
 			(
 				SELECT
 					[a_Confirmations].[Date]
@@ -83,15 +26,5 @@ FROM
 		LIMIT 2
 	) [t1]
 ORDER BY
-	[t1].[BatchId]
-
-BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
-
-DROP TABLE IF EXISTS [Confirmation]
-
-BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
-
-DROP TABLE IF EXISTS [Batch]
+	[t1].[Id]
 

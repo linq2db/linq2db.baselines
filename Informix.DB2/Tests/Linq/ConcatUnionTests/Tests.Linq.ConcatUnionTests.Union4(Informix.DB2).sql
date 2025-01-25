@@ -3,13 +3,13 @@
 
 SELECT
 	p.ParentID,
-	't'
+	't'::BOOLEAN
 FROM
 	Parent p
 UNION
 SELECT
 	ch.ParentID,
-	'f'
+	'f'::BOOLEAN
 FROM
 	Child ch
 

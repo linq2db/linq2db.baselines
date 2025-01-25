@@ -1,193 +1,6 @@
 ﻿BeforeExecute
 -- SqlServer.2012.MS SqlServer.2012
 
-IF (OBJECT_ID(N'[PUMPLINES]', N'U') IS NOT NULL)
-	DROP TABLE [PUMPLINES]
-
-BeforeExecute
--- SqlServer.2012.MS SqlServer.2012
-
-IF (OBJECT_ID(N'[PUMPLINES]', N'U') IS NULL)
-	CREATE TABLE [PUMPLINES]
-	(
-		[LINE_ID] Int NOT NULL,
-
-		CONSTRAINT [PK_PUMPLINES] PRIMARY KEY CLUSTERED ([LINE_ID])
-	)
-
-BeforeExecute
--- SqlServer.2012.MS SqlServer.2012
-DECLARE @Id Int -- Int32
-SET     @Id = 1
-
-INSERT INTO [PUMPLINES]
-(
-	[LINE_ID]
-)
-VALUES
-(
-	@Id
-)
-
-BeforeExecute
--- SqlServer.2012.MS SqlServer.2012
-DECLARE @Id Int -- Int32
-SET     @Id = 2
-
-INSERT INTO [PUMPLINES]
-(
-	[LINE_ID]
-)
-VALUES
-(
-	@Id
-)
-
-BeforeExecute
--- SqlServer.2012.MS SqlServer.2012
-
-IF (OBJECT_ID(N'[PUMPLINE_CHAINS]', N'U') IS NOT NULL)
-	DROP TABLE [PUMPLINE_CHAINS]
-
-BeforeExecute
--- SqlServer.2012.MS SqlServer.2012
-
-IF (OBJECT_ID(N'[PUMPLINE_CHAINS]', N'U') IS NULL)
-	CREATE TABLE [PUMPLINE_CHAINS]
-	(
-		[LINE_ID]  Int NOT NULL,
-		[CHAIN_ID] Int NOT NULL
-	)
-
-BeforeExecute
--- SqlServer.2012.MS SqlServer.2012
-DECLARE @LineId Int -- Int32
-SET     @LineId = 1
-DECLARE @ChainId Int -- Int32
-SET     @ChainId = 11
-
-INSERT INTO [PUMPLINE_CHAINS]
-(
-	[LINE_ID],
-	[CHAIN_ID]
-)
-VALUES
-(
-	@LineId,
-	@ChainId
-)
-
-BeforeExecute
--- SqlServer.2012.MS SqlServer.2012
-DECLARE @LineId Int -- Int32
-SET     @LineId = 2
-DECLARE @ChainId Int -- Int32
-SET     @ChainId = 22
-
-INSERT INTO [PUMPLINE_CHAINS]
-(
-	[LINE_ID],
-	[CHAIN_ID]
-)
-VALUES
-(
-	@LineId,
-	@ChainId
-)
-
-BeforeExecute
--- SqlServer.2012.MS SqlServer.2012
-
-IF (OBJECT_ID(N'[CHAINS]', N'U') IS NOT NULL)
-	DROP TABLE [CHAINS]
-
-BeforeExecute
--- SqlServer.2012.MS SqlServer.2012
-
-IF (OBJECT_ID(N'[CHAINS]', N'U') IS NULL)
-	CREATE TABLE [CHAINS]
-	(
-		[CHAIN_ID] Int NOT NULL,
-
-		CONSTRAINT [PK_CHAINS] PRIMARY KEY CLUSTERED ([CHAIN_ID])
-	)
-
-BeforeExecute
--- SqlServer.2012.MS SqlServer.2012
-DECLARE @Id Int -- Int32
-SET     @Id = 11
-
-INSERT INTO [CHAINS]
-(
-	[CHAIN_ID]
-)
-VALUES
-(
-	@Id
-)
-
-BeforeExecute
--- SqlServer.2012.MS SqlServer.2012
-DECLARE @Id Int -- Int32
-SET     @Id = 22
-
-INSERT INTO [CHAINS]
-(
-	[CHAIN_ID]
-)
-VALUES
-(
-	@Id
-)
-
-BeforeExecute
--- SqlServer.2012.MS SqlServer.2012
-
-IF (OBJECT_ID(N'[CHAINPOINTS]', N'U') IS NOT NULL)
-	DROP TABLE [CHAINPOINTS]
-
-BeforeExecute
--- SqlServer.2012.MS SqlServer.2012
-
-IF (OBJECT_ID(N'[CHAINPOINTS]', N'U') IS NULL)
-	CREATE TABLE [CHAINPOINTS]
-	(
-		[CHAIN_ID] Int NOT NULL,
-
-		CONSTRAINT [PK_CHAINPOINTS] PRIMARY KEY CLUSTERED ([CHAIN_ID])
-	)
-
-BeforeExecute
--- SqlServer.2012.MS SqlServer.2012
-DECLARE @ElementId Int -- Int32
-SET     @ElementId = 11
-
-INSERT INTO [CHAINPOINTS]
-(
-	[CHAIN_ID]
-)
-VALUES
-(
-	@ElementId
-)
-
-BeforeExecute
--- SqlServer.2012.MS SqlServer.2012
-DECLARE @ElementId Int -- Int32
-SET     @ElementId = 22
-
-INSERT INTO [CHAINPOINTS]
-(
-	[CHAIN_ID]
-)
-VALUES
-(
-	@ElementId
-)
-
-BeforeExecute
--- SqlServer.2012.MS SqlServer.2012
-
 SELECT
 	[m_1].[Id],
 	[m_1].[Id_1],
@@ -216,6 +29,7 @@ SELECT
 	[m_1].[LINE_ID],
 	[d].[LINE_ID],
 	[d].[CHAIN_ID],
+	[a_Chain].[CHAIN_ID],
 	[a_Chain].[CHAIN_ID]
 FROM
 	[PUMPLINES] [m_1]
@@ -228,33 +42,10 @@ BeforeExecute
 -- SqlServer.2012.MS SqlServer.2012
 
 SELECT
+	[t1].[LINE_ID],
 	[t1].[LINE_ID]
 FROM
 	[PUMPLINES] [t1]
 ORDER BY
 	[t1].[LINE_ID]
-
-BeforeExecute
--- SqlServer.2012.MS SqlServer.2012
-
-IF (OBJECT_ID(N'[CHAINPOINTS]', N'U') IS NOT NULL)
-	DROP TABLE [CHAINPOINTS]
-
-BeforeExecute
--- SqlServer.2012.MS SqlServer.2012
-
-IF (OBJECT_ID(N'[CHAINS]', N'U') IS NOT NULL)
-	DROP TABLE [CHAINS]
-
-BeforeExecute
--- SqlServer.2012.MS SqlServer.2012
-
-IF (OBJECT_ID(N'[PUMPLINE_CHAINS]', N'U') IS NOT NULL)
-	DROP TABLE [PUMPLINE_CHAINS]
-
-BeforeExecute
--- SqlServer.2012.MS SqlServer.2012
-
-IF (OBJECT_ID(N'[PUMPLINES]', N'U') IS NOT NULL)
-	DROP TABLE [PUMPLINES]
 

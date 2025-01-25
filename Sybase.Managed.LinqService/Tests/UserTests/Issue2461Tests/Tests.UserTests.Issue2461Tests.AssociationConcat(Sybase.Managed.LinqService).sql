@@ -1,60 +1,6 @@
 ﻿BeforeExecute
 -- Sybase.Managed Sybase
 
-IF (OBJECT_ID(N'MRECEIPT') IS NOT NULL)
-	DROP TABLE [MRECEIPT]
-
-BeforeExecute
--- Sybase.Managed Sybase
-
-IF (OBJECT_ID(N'MRECEIPT') IS NULL)
-	EXECUTE('
-		CREATE TABLE [MRECEIPT]
-		(
-			[RECEIPT_NO] NVarChar(255)     NULL,
-			[CUSTKEY]    NVarChar(255)     NULL
-		)
-	')
-
-BeforeExecute
--- Sybase.Managed Sybase
-
-IF (OBJECT_ID(N'EXTERNAL_RECEIPTS') IS NOT NULL)
-	DROP TABLE [EXTERNAL_RECEIPTS]
-
-BeforeExecute
--- Sybase.Managed Sybase
-
-IF (OBJECT_ID(N'EXTERNAL_RECEIPTS') IS NULL)
-	EXECUTE('
-		CREATE TABLE [EXTERNAL_RECEIPTS]
-		(
-			[RECEIPT_NO] NVarChar(255)     NULL,
-			[CUSTKEY]    NVarChar(255)     NULL
-		)
-	')
-
-BeforeExecute
--- Sybase.Managed Sybase
-
-IF (OBJECT_ID(N'CUST_DTL') IS NOT NULL)
-	DROP TABLE [CUST_DTL]
-
-BeforeExecute
--- Sybase.Managed Sybase
-
-IF (OBJECT_ID(N'CUST_DTL') IS NULL)
-	EXECUTE('
-		CREATE TABLE [CUST_DTL]
-		(
-			[CUSTKEY]   NVarChar(255)     NULL,
-			[BILLGROUP] NVarChar(255)     NULL
-		)
-	')
-
-BeforeExecute
--- Sybase.Managed Sybase
-
 SELECT
 	[i_1].[ReceiptNo],
 	[a_Customer].[BILLGROUP]
@@ -72,23 +18,5 @@ FROM
 		FROM
 			[EXTERNAL_RECEIPTS] [t1]
 	) [i_1]
-		LEFT JOIN [CUST_DTL] [a_Customer] ON ([i_1].[Custkey] = [a_Customer].[CUSTKEY] OR [i_1].[Custkey] IS NULL AND [a_Customer].[CUSTKEY] IS NULL)
-
-BeforeExecute
--- Sybase.Managed Sybase
-
-IF (OBJECT_ID(N'CUST_DTL') IS NOT NULL)
-	DROP TABLE [CUST_DTL]
-
-BeforeExecute
--- Sybase.Managed Sybase
-
-IF (OBJECT_ID(N'EXTERNAL_RECEIPTS') IS NOT NULL)
-	DROP TABLE [EXTERNAL_RECEIPTS]
-
-BeforeExecute
--- Sybase.Managed Sybase
-
-IF (OBJECT_ID(N'MRECEIPT') IS NOT NULL)
-	DROP TABLE [MRECEIPT]
+		LEFT JOIN [CUST_DTL] [a_Customer] ON [i_1].[Custkey] = [a_Customer].[CUSTKEY] OR [i_1].[Custkey] IS NULL AND [a_Customer].[CUSTKEY] IS NULL
 

@@ -5,7 +5,6 @@ SELECT
 	"g_1".ID,
 	COUNT(*),
 	SUM(DateDiff(millisecond, "g_1"."DateTimeValue", DateAdd(Day, 1, "g_1"."DateTimeValue"))),
-	'0',
 	MAX(DateDiff(millisecond, "g_1"."DateTimeValue", DateAdd(Day, 1, "g_1"."DateTimeValue")))
 FROM
 	"LinqDataTypes" "g_1"

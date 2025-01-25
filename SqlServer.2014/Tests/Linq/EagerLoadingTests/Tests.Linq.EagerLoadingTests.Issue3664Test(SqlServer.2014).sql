@@ -1,22 +1,5 @@
 ﻿BeforeExecute
 -- SqlServer.2014
-
-IF (OBJECT_ID(N'[Test3664]', N'U') IS NOT NULL)
-	DROP TABLE [Test3664]
-
-BeforeExecute
--- SqlServer.2014
-
-IF (OBJECT_ID(N'[Test3664]', N'U') IS NULL)
-	CREATE TABLE [Test3664]
-	(
-		[Id] Int NOT NULL,
-
-		CONSTRAINT [PK_Test3664] PRIMARY KEY CLUSTERED ([Id])
-	)
-
-BeforeExecute
--- SqlServer.2014
 DECLARE @Id Int -- Int32
 SET     @Id = 1
 
@@ -28,36 +11,6 @@ VALUES
 (
 	@Id
 )
-
-BeforeExecute
--- SqlServer.2014
-
-IF (OBJECT_ID(N'[Test3664Item]', N'U') IS NOT NULL)
-	DROP TABLE [Test3664Item]
-
-BeforeExecute
--- SqlServer.2014
-
-IF (OBJECT_ID(N'[Test3664Item]', N'U') IS NULL)
-	CREATE TABLE [Test3664Item]
-	(
-		[Id]     Int NOT NULL,
-		[TestId] Int NOT NULL,
-
-		CONSTRAINT [PK_Test3664Item] PRIMARY KEY CLUSTERED ([Id])
-	)
-
-BeforeExecute
--- SqlServer.2014
-
-INSERT INTO [Test3664Item]
-(
-	[Id],
-	[TestId]
-)
-VALUES
-(11,1),
-(12,1)
 
 BeforeExecute
 BeginTransaction(RepeatableRead)
@@ -112,16 +65,4 @@ SELECT
 	[t1].[Id]
 FROM
 	[Test3664] [t1]
-
-BeforeExecute
--- SqlServer.2014
-
-IF (OBJECT_ID(N'[Test3664Item]', N'U') IS NOT NULL)
-	DROP TABLE [Test3664Item]
-
-BeforeExecute
--- SqlServer.2014
-
-IF (OBJECT_ID(N'[Test3664]', N'U') IS NOT NULL)
-	DROP TABLE [Test3664]
 

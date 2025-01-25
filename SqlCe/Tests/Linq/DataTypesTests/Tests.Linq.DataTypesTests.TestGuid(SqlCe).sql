@@ -1,32 +1,5 @@
 ﻿BeforeExecute
 -- SqlCe
-
-DROP TABLE [GuidTable]
-
-BeforeExecute
--- SqlCe
-
-CREATE TABLE [GuidTable]
-(
-	[Id]             Int              NOT NULL,
-	[Column]         UNIQUEIDENTIFIER NOT NULL,
-	[ColumnNullable] UNIQUEIDENTIFIER     NULL
-)
-
-BeforeExecute
--- SqlCe
-
-INSERT INTO [GuidTable]
-(
-	[Id],
-	[Column],
-	[ColumnNullable]
-)
-SELECT 1,'bc7b663d-0fde-4327-8f92-5d8cc3a11d11',NULL UNION ALL
-SELECT 2,'a948600d-de21-4f74-8ac2-9516b287076e','bd3973a5-4323-4dd8-9f4f-df9f93e2a627'
-
-BeforeExecute
--- SqlCe
 DECLARE @Column UniqueIdentifier -- Guid
 SET     @Column = 'a948600d-de21-4f74-8ac2-9516b287076e'
 DECLARE @ColumnNullable UniqueIdentifier -- Guid
@@ -175,9 +148,4 @@ FROM
 	[GuidTable] [t1]
 ORDER BY
 	[t1].[Id]
-
-BeforeExecute
--- SqlCe
-
-DROP TABLE [GuidTable]
 

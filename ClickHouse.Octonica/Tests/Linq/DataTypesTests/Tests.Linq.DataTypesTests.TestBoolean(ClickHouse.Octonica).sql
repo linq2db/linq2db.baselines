@@ -1,35 +1,6 @@
 ﻿BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
-DROP TABLE IF EXISTS BooleanTable
-
-BeforeExecute
--- ClickHouse.Octonica ClickHouse
-
-CREATE TABLE IF NOT EXISTS BooleanTable
-(
-	Id             Int32,
-	Column         Bool,
-	ColumnNullable Nullable(Bool)
-)
-ENGINE = Memory()
-
-BeforeExecute
--- ClickHouse.Octonica ClickHouse
-
-INSERT INTO BooleanTable
-(
-	Id,
-	Column,
-	ColumnNullable
-)
-VALUES
-(1,true,NULL),
-(2,false,true)
-
-BeforeExecute
--- ClickHouse.Octonica ClickHouse
-
 SELECT
 	r.Id,
 	r.Column,
@@ -155,9 +126,4 @@ FROM
 	BooleanTable t1
 ORDER BY
 	t1.Id
-
-BeforeExecute
--- ClickHouse.Octonica ClickHouse
-
-DROP TABLE IF EXISTS BooleanTable
 

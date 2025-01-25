@@ -10,8 +10,7 @@ SET
 		FROM
 			[Parent] [x_1]
 		WHERE
-			[t1].[ID] IS NOT NULL AND [t1].[ID] = [x_1].[ParentID] AND
-			([x_1].[Value1] <> 1 OR [x_1].[Value1] IS NULL)
+			[t1].[ID] = [x_1].[ParentID] AND ([x_1].[Value1] <> 1 OR [x_1].[Value1] IS NULL)
 	), 1, 0)
 FROM
 	[LinqDataTypes] [u],
@@ -26,5 +25,5 @@ FROM
 			[x].[ParentID] IN (10000, 20000)
 	) [t1]
 WHERE
-	[u].[ID] = [t1].[ID] AND [u].[BoolValue] = [t1].[BoolValue]
+	[u].[ID] = [t1].[ID] AND IIF([u].[BoolValue] = 1, 1, 0) = IIF([t1].[BoolValue] = 1, 1, 0)
 

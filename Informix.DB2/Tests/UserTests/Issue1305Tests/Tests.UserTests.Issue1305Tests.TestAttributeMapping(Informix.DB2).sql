@@ -1,28 +1,6 @@
 ﻿BeforeExecute
 -- Informix.DB2 Informix
 
-DROP TABLE IF EXISTS ColumnOrderTest
-
-BeforeExecute
--- Informix.DB2 Informix
-
-CREATE TABLE IF NOT EXISTS ColumnOrderTest
-(
-	RecordID       Int                       NOT NULL,
-	EffectiveStart datetime year to fraction NOT NULL,
-	EffectiveEnd   datetime year to fraction     NULL,
-	"Key"          Int                       NOT NULL,
-	Name           NVarChar(255)                 NULL,
-	Code           NVarChar(255)                 NULL,
-	Audit1ID       Int                       NOT NULL,
-	Audit2ID       Int                       NOT NULL,
-
-	PRIMARY KEY (RecordID)
-)
-
-BeforeExecute
--- Informix.DB2 Informix
-
 
 				SELECT
 					tabid              as TableID,
@@ -127,9 +105,4 @@ BeforeExecute
 								JOIN sysconstraints oc ON r.primary  = oc.constrid
 									JOIN sysindexes ox ON oc.tabid   = ox.tabid AND oc.idxname = ox.idxname
 									JOIN systables  ot ON oc.tabid   = ot.tabid
-
-BeforeExecute
--- Informix.DB2 Informix
-
-DROP TABLE IF EXISTS ColumnOrderTest
 

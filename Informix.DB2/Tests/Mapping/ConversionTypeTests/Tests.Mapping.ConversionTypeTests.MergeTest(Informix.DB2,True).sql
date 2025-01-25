@@ -1,50 +1,6 @@
 ﻿BeforeExecute
 -- Informix.DB2 Informix
 
-DROP TABLE IF EXISTS TrimTestTable
-
-BeforeExecute
--- Informix.DB2 Informix
-
-CREATE TABLE IF NOT EXISTS TrimTestTable
-(
-	ID     Int          NOT NULL,
-	"Data" NVarChar(50)     NULL,
-
-	PRIMARY KEY (ID)
-)
-
-BeforeExecute
--- Informix.DB2 Informix
-
-INSERT INTO TrimTestTable
-(
-	ID,
-	"Data"
-)
-VALUES
-(
-	1,
-	'***XXX***'
-)
-
-BeforeExecute
--- Informix.DB2 Informix
-
-INSERT INTO TrimTestTable
-(
-	ID,
-	"Data"
-)
-VALUES
-(
-	3,
-	'***VVV***'
-)
-
-BeforeExecute
--- Informix.DB2 Informix
-
 MERGE INTO TrimTestTable Target
 USING (
 	SELECT 1::Int AS source_ID, '***OOO***'::NVarChar(50) AS source_Data FROM table(set{1})
@@ -123,9 +79,4 @@ FROM
 	TrimTestTable r
 ORDER BY
 	r.ID
-
-BeforeExecute
--- Informix.DB2 Informix
-
-DROP TABLE IF EXISTS TrimTestTable
 

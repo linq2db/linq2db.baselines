@@ -1,58 +1,12 @@
 ﻿BeforeExecute
 -- SqlServer.2005.MS SqlServer.2005
 
-IF (OBJECT_ID(N'[AggregationData]', N'U') IS NOT NULL)
-	DROP TABLE [AggregationData]
-
-BeforeExecute
--- SqlServer.2005.MS SqlServer.2005
-
-IF (OBJECT_ID(N'[AggregationData]', N'U') IS NULL)
-	CREATE TABLE [AggregationData]
-	(
-		[GroupId]   Int   NOT NULL,
-		[DataValue] Float     NULL
-	)
-
-BeforeExecute
--- SqlServer.2005.MS SqlServer.2005
-
-INSERT INTO [AggregationData]
-(
-	[GroupId],
-	[DataValue]
-)
-SELECT 1,1 UNION ALL
-SELECT 1,NULL UNION ALL
-SELECT 1,3 UNION ALL
-SELECT 1,1 UNION ALL
-SELECT 1,5 UNION ALL
-SELECT 1,6 UNION ALL
-SELECT 2,7 UNION ALL
-SELECT 2,8 UNION ALL
-SELECT 2,9 UNION ALL
-SELECT 2,NULL UNION ALL
-SELECT 2,11 UNION ALL
-SELECT 2,7 UNION ALL
-SELECT 3,13 UNION ALL
-SELECT 3,16 UNION ALL
-SELECT 3,16 UNION ALL
-SELECT 3,16 UNION ALL
-SELECT 3,NULL UNION ALL
-SELECT 3,18
-
-BeforeExecute
--- SqlServer.2005.MS SqlServer.2005
-
 SELECT
-	[g_1].[GroupId],
-	COUNT(*),
-	COUNT(CASE
-		WHEN (Convert(Int, [g_1].[DataValue]) % 2) = 0 THEN 1
-		ELSE NULL
-	END),
-	COUNT(*),
-	COUNT(DISTINCT [g_1].[DataValue]),
+	[t1].[Key_1],
+	[t1].[COUNT_1],
+	[t1].[COUNT_2],
+	[t1].[COUNT_3],
+	[t1].[COUNT_4],
 	(
 		SELECT
 			COUNT(*)
@@ -63,7 +17,7 @@ SELECT
 				FROM
 					[AggregationData] [x]
 				WHERE
-					[x].[DataValue] IS NOT NULL AND [g_1].[GroupId] = [x].[GroupId]
+					[x].[DataValue] IS NOT NULL AND [t1].[Key_1] = [x].[GroupId]
 			) [x_1]
 		WHERE
 			(Convert(Int, [x_1].[DataValue]) % 2) = 0
@@ -74,13 +28,13 @@ SELECT
 		FROM
 			(
 				SELECT DISTINCT
-					[t].[DataValue]
+					[t_1].[DataValue]
 				FROM
-					[AggregationData] [t]
+					[AggregationData] [t_1]
 				WHERE
-					[t].[DataValue] IS NOT NULL AND [g_1].[GroupId] = [t].[GroupId] AND
-					(Convert(Int, [t].[DataValue]) % 2) = 0
-			) [t1]
+					[t_1].[DataValue] IS NOT NULL AND [t1].[Key_1] = [t_1].[GroupId] AND
+					(Convert(Int, [t_1].[DataValue]) % 2) = 0
+			) [t2]
 	),
 	(
 		SELECT
@@ -92,36 +46,49 @@ SELECT
 				FROM
 					[AggregationData] [x_2]
 				WHERE
-					[x_2].[DataValue] IS NOT NULL AND [g_1].[GroupId] = [x_2].[GroupId] AND
+					[x_2].[DataValue] IS NOT NULL AND [t1].[Key_1] = [x_2].[GroupId] AND
 					(Convert(Int, [x_2].[DataValue]) % 2) = 0
 			) [x_3]
 		WHERE
 			(Convert(Int, [x_3].[DataValue]) % 2) = 0
 	),
-	COUNT(CASE
-		WHEN (Convert(Int, [g_1].[DataValue]) % 2) = 0 THEN 1
-		ELSE NULL
-	END),
+	[t1].[COUNT_5],
 	(
 		SELECT
 			COUNT(*)
 		FROM
 			(
 				SELECT DISTINCT
-					[t_1].[DataValue]
+					[t_2].[DataValue]
 				FROM
-					[AggregationData] [t_1]
+					[AggregationData] [t_2]
 				WHERE
-					[t_1].[DataValue] IS NOT NULL AND [g_1].[GroupId] = [t_1].[GroupId] AND
-					(Convert(Int, [t_1].[DataValue]) % 2) = 0
-			) [t2]
+					[t_2].[DataValue] IS NOT NULL AND [t1].[Key_1] = [t_2].[GroupId] AND
+					(Convert(Int, [t_2].[DataValue]) % 2) = 0
+			) [t3]
 	)
 FROM
-	[AggregationData] [g_1]
-WHERE
-	[g_1].[DataValue] IS NOT NULL
-GROUP BY
-	[g_1].[GroupId]
+	(
+		SELECT
+			[t].[GroupId] as [Key_1],
+			COUNT(*) as [COUNT_1],
+			COUNT(CASE
+				WHEN (Convert(Int, [t].[DataValue]) % 2) = 0 THEN 1
+				ELSE NULL
+			END) as [COUNT_2],
+			COUNT(*) as [COUNT_3],
+			COUNT(DISTINCT [t].[DataValue]) as [COUNT_4],
+			COUNT(CASE
+				WHEN (Convert(Int, [t].[DataValue]) % 2) = 0 THEN 1
+				ELSE NULL
+			END) as [COUNT_5]
+		FROM
+			[AggregationData] [t]
+		WHERE
+			[t].[DataValue] IS NOT NULL
+		GROUP BY
+			[t].[GroupId]
+	) [t1]
 
 BeforeExecute
 -- SqlServer.2005.MS SqlServer.2005
@@ -131,10 +98,4 @@ SELECT
 	[t1].[DataValue]
 FROM
 	[AggregationData] [t1]
-
-BeforeExecute
--- SqlServer.2005.MS SqlServer.2005
-
-IF (OBJECT_ID(N'[AggregationData]', N'U') IS NOT NULL)
-	DROP TABLE [AggregationData]
 

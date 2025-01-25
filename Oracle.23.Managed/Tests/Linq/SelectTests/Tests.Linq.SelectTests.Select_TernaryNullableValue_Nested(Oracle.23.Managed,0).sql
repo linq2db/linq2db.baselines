@@ -2,11 +2,8 @@
 -- Oracle.23.Managed Oracle.Managed Oracle12
 DECLARE @value Int32
 SET     @value = 0
-DECLARE @p Int32
-SET     @p = 0
 
 SELECT
-	:value,
-	:p
+	:value
 FROM SYS.DUAL
 

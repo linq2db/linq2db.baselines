@@ -81,7 +81,6 @@ BeforeExecute
 -- PostgreSQL.12 PostgreSQL.9.5 PostgreSQL
 
 SELECT
-	l."Id",
 	l."Value1"
 FROM
 	"Table1788" p

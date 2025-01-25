@@ -1,21 +1,5 @@
 ﻿BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-
-DROP TABLE IF EXISTS `Issue1110TB`
-
-BeforeExecute
--- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-
-CREATE TABLE IF NOT EXISTS `Issue1110TB`
-(
-	`Id`        INT      NOT NULL,
-	`TimeStamp` DATETIME NOT NULL,
-
-	CONSTRAINT `PK_Issue1110TB` PRIMARY KEY CLUSTERED (`Id`)
-)
-
-BeforeExecute
--- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 DECLARE @Id Int32
 SET     @Id = 10
 DECLARE @TimeStamp Datetime -- DateTime
@@ -31,9 +15,4 @@ VALUES
 	@Id,
 	@TimeStamp
 )
-
-BeforeExecute
--- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-
-DROP TABLE IF EXISTS `Issue1110TB`
 

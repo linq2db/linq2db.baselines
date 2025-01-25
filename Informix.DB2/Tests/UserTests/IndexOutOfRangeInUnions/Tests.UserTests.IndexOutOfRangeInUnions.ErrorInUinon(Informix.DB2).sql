@@ -1,61 +1,13 @@
 ﻿BeforeExecute
 -- Informix.DB2 Informix
 
-DROP TABLE IF EXISTS O1
-
-BeforeExecute
--- Informix.DB2 Informix
-
-CREATE TABLE IF NOT EXISTS O1
-(
-	DocEntry    Int           NOT NULL,
-	BplId       Int           NOT NULL,
-	ChaveAcesso NVarChar(255)     NULL,
-	DocStatus   NVarChar(255)     NULL
-)
-
-BeforeExecute
--- Informix.DB2 Informix
-
-DROP TABLE IF EXISTS O2
-
-BeforeExecute
--- Informix.DB2 Informix
-
-CREATE TABLE IF NOT EXISTS O2
-(
-	DocEntry    Int           NOT NULL,
-	BplId       Int           NOT NULL,
-	ChaveAcesso NVarChar(255)     NULL,
-	DocStatus   NVarChar(255)     NULL
-)
-
-BeforeExecute
--- Informix.DB2 Informix
-
-DROP TABLE IF EXISTS O3
-
-BeforeExecute
--- Informix.DB2 Informix
-
-CREATE TABLE IF NOT EXISTS O3
-(
-	DocEntry    Int           NOT NULL,
-	BplId       Int           NOT NULL,
-	ChaveAcesso NVarChar(255)     NULL,
-	DocStatus   NVarChar(255)     NULL
-)
-
-BeforeExecute
--- Informix.DB2 Informix
-
 SELECT
 	doSap.DocEntry,
 	CASE
 		WHEN doSap.DocStatus = 'O' THEN 'Aberto'
 		ELSE 'Fechado'
 	END,
-	'Manual/Externo'
+	'Manual/Externo'::NVarChar(255)
 FROM
 	O1 doSap
 UNION
@@ -65,7 +17,7 @@ SELECT
 		WHEN doSap_1.DocStatus = 'O' THEN 'Aberto'
 		ELSE 'Fechado'
 	END,
-	'Manual/Externo'
+	'Manual/Externo'::NVarChar(255)
 FROM
 	O2 doSap_1
 UNION
@@ -75,22 +27,7 @@ SELECT
 		WHEN doSap_2.DocStatus = 'O' THEN 'Aberto'
 		ELSE 'Fechado'
 	END,
-	'Manual/Externo'
+	'Manual/Externo'::NVarChar(255)
 FROM
 	O3 doSap_2
-
-BeforeExecute
--- Informix.DB2 Informix
-
-DROP TABLE IF EXISTS O3
-
-BeforeExecute
--- Informix.DB2 Informix
-
-DROP TABLE IF EXISTS O2
-
-BeforeExecute
--- Informix.DB2 Informix
-
-DROP TABLE IF EXISTS O1
 

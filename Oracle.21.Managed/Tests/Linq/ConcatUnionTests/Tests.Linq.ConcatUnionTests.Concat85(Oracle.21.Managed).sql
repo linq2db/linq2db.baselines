@@ -3,7 +3,7 @@
 
 SELECT
 	c_1."ParentID",
-	Nvl(c_1."Value1", 0),
+	Coalesce(c_1."Value1", 0),
 	c_1."ParentID"
 FROM
 	"Parent" c_1

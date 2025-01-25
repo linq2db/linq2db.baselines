@@ -1,39 +1,5 @@
 ﻿BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
-
-DROP TABLE IF EXISTS "Topic"
-
-BeforeExecute
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
-
-CREATE TABLE IF NOT EXISTS "Topic"
-(
-	"Id"    Int  NOT NULL,
-	"Title" text     NULL,
-	"Text"  text     NULL,
-
-	CONSTRAINT "PK_Topic" PRIMARY KEY ("Id")
-)
-
-BeforeExecute
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
-
-DROP TABLE IF EXISTS "Message"
-
-BeforeExecute
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
-
-CREATE TABLE IF NOT EXISTS "Message"
-(
-	"Id"      Int  NOT NULL,
-	"TopicId" Int  NOT NULL,
-	"Text"    text     NULL,
-
-	CONSTRAINT "PK_Message" PRIMARY KEY ("Id")
-)
-
-BeforeExecute
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 DECLARE @Id Integer -- Int32
 SET     @Id = 6
 DECLARE @Title Text(5) -- String
@@ -133,13 +99,3 @@ LIMIT 1
 
 BeforeExecute
 DisposeTransaction
-BeforeExecute
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
-
-DROP TABLE IF EXISTS "Message"
-
-BeforeExecute
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
-
-DROP TABLE IF EXISTS "Topic"
-

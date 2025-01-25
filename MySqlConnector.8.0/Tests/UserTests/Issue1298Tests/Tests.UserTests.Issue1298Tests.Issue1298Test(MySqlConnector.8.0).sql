@@ -2,33 +2,6 @@
 BeginTransaction
 BeforeExecute
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
-DROP TABLE IF EXISTS `mega_composites`
-
-BeforeExecute
--- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
-CREATE TABLE IF NOT EXISTS `mega_composites`
-(
-	`ref1` BIGINT     NULL
-)
-
-BeforeExecute
--- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
-DROP TABLE IF EXISTS `qwerty`
-
-BeforeExecute
--- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
-CREATE TABLE IF NOT EXISTS `qwerty`
-(
-	`Id`     BIGINT        NOT NULL,
-	`asdfgh` VARCHAR(4000)     NULL
-)
-
-BeforeExecute
--- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 DECLARE @Id Int64
 SET     @Id = 1
 DECLARE @asdfgh VarChar(4) -- String
@@ -67,42 +40,54 @@ BeforeExecute
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 DECLARE @ref1 Int64
 SET     @ref1 = 100500
+DECLARE @y1_q1_ref1 Int64
+SET     @y1_q1_ref1 = 100500
 
 INSERT INTO `mega_composites`
 (
-	`ref1`
+	`ref1`,
+	`y1.q1.ref1`
 )
 VALUES
 (
-	@ref1
+	@ref1,
+	@y1_q1_ref1
 )
 
 BeforeExecute
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 DECLARE @ref1 Int64
 SET     @ref1 = 1
+DECLARE @y1_q1_ref1 Int64
+SET     @y1_q1_ref1 = 100500
 
 INSERT INTO `mega_composites`
 (
-	`ref1`
+	`ref1`,
+	`y1.q1.ref1`
 )
 VALUES
 (
-	@ref1
+	@ref1,
+	@y1_q1_ref1
 )
 
 BeforeExecute
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 DECLARE @ref1 Int64
 SET     @ref1 = 100500
+DECLARE @y1_q1_ref1 Int64
+SET     @y1_q1_ref1 = 1
 
 INSERT INTO `mega_composites`
 (
-	`ref1`
+	`ref1`,
+	`y1.q1.ref1`
 )
 VALUES
 (
-	@ref1
+	@ref1,
+	@y1_q1_ref1
 )
 
 BeforeExecute
@@ -124,16 +109,6 @@ SELECT
 FROM
 	`mega_composites` `x`
 LIMIT @take
-
-BeforeExecute
--- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
-DROP TABLE IF EXISTS `qwerty`
-
-BeforeExecute
--- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
-DROP TABLE IF EXISTS `mega_composites`
 
 BeforeExecute
 DisposeTransaction

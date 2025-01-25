@@ -1,12 +1,12 @@
 ﻿BeforeExecute
 -- Informix.DB2 Informix
-DECLARE @Id Integer(4) -- Int32
-SET     @Id = 102
+DECLARE @p Integer(4) -- Int32
+SET     @p = 102
 
 DELETE FROM
 	LinqDataTypes
 WHERE
-	LinqDataTypes.ID >= 101 AND LinqDataTypes.ID < @Id
+	LinqDataTypes.ID >= 101 AND LinqDataTypes.ID < @p
 
 BeforeExecute
 -- Informix.DB2 Informix
@@ -24,6 +24,8 @@ VALUES
 
 BeforeExecute
 -- Informix.DB2 Informix
+DECLARE @param BigInt(8) -- Int64
+SET     @param = 11
 
 INSERT INTO LinqDataTypes
 (
@@ -32,7 +34,7 @@ INSERT INTO LinqDataTypes
 )
 SELECT
 	r.ID,
-	11
+	@param::BigInt
 FROM
 	LinqDataTypes r
 WHERE
@@ -50,11 +52,11 @@ WHERE
 
 BeforeExecute
 -- Informix.DB2 Informix
-DECLARE @Id Integer(4) -- Int32
-SET     @Id = 102
+DECLARE @p Integer(4) -- Int32
+SET     @p = 102
 
 DELETE FROM
 	LinqDataTypes
 WHERE
-	LinqDataTypes.ID >= 101 AND LinqDataTypes.ID < @Id
+	LinqDataTypes.ID >= 101 AND LinqDataTypes.ID < @p
 

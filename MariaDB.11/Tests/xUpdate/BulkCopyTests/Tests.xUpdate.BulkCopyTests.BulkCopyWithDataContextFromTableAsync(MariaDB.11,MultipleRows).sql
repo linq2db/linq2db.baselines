@@ -1,17 +1,4 @@
 ﻿BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
-
-DROP TABLE IF EXISTS `SimpleBulkCopyTable`
-
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
-
-CREATE TABLE IF NOT EXISTS `SimpleBulkCopyTable`
-(
-	`Id` INT NOT NULL
-)
-
-BeforeExecute
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql (asynchronously)
 
 INSERT INTO `SimpleBulkCopyTable`
@@ -70,9 +57,4 @@ INSERT INTO `SimpleBulkCopyTable`
 )
 VALUES
 (30)
-
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
-
-DROP TABLE IF EXISTS `SimpleBulkCopyTable`
 

@@ -1,62 +1,18 @@
 ﻿BeforeExecute
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
-DROP TABLE IF EXISTS `sample_class`
-
-BeforeExecute
--- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
-CREATE TABLE IF NOT EXISTS `sample_class`
-(
-	`id`    INT         NOT NULL,
-	`value` VARCHAR(50)     NULL
-)
-
-BeforeExecute
--- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
-INSERT INTO `sample_class`
-(
-	`id`,
-	`value`
-)
-VALUES
-(1,'Str_1'),
-(2,'Str_2'),
-(3,'Str_3'),
-(4,'Str_4'),
-(5,'Str_5'),
-(6,'Str_6'),
-(7,'Str_7'),
-(8,'Str_8'),
-(9,'Str_9'),
-(10,'Str_10'),
-(11,'Str_11'),
-(12,'Str_12'),
-(13,'Str_13'),
-(14,'Str_14'),
-(15,'Str_15'),
-(16,'Str_16'),
-(17,'Str_17'),
-(18,'Str_18'),
-(19,'Str_19'),
-(20,'Str_20')
-
-BeforeExecute
--- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-DECLARE @startId Int64
-SET     @startId = 5
-DECLARE @p Int32
-SET     @p = 15
+DECLARE @p Int64
+SET     @p = 5
+DECLARE @p_1 Int32
+SET     @p_1 = 15
 
 SELECT
 	`s`.`value`,
 	`s`.`id`
 FROM
-	`sample_class` `c_1`
+	`sample_class` `t1`
 		INNER JOIN (
-			SELECT * FROM `sample_class` where `id` >= @startId and `id` < @p
-		) `s` ON `s`.`id` = `c_1`.`id`
+			SELECT * FROM `sample_class` where `id` >= @p and `id` < @p_1
+		) `s` ON `s`.`id` = `t1`.`id`
 WHERE
 	`s`.`id` > 10
 ORDER BY
@@ -78,9 +34,4 @@ WHERE
 	`t`.`id` >= @startId AND `t`.`id` < @endId AND `t`.`id` > 10
 ORDER BY
 	`t`.`id`
-
-BeforeExecute
--- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
-DROP TABLE IF EXISTS `sample_class`
 

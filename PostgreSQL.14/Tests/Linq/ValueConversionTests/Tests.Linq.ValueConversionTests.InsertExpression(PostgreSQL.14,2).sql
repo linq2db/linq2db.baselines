@@ -1,29 +1,5 @@
 ﻿BeforeExecute
 -- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
-
-DROP TABLE IF EXISTS "ValueConversion"
-
-BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
-
-CREATE TABLE IF NOT EXISTS "ValueConversion"
-(
-	"Id"                      Int          NOT NULL,
-	"Value1"                  VarChar(200)     NULL,
-	"Value2"                  VarChar(200)     NULL,
-	"Enum"                    VarChar(50)  NOT NULL,
-	"EnumNullable"            VarChar(50)      NULL,
-	"EnumWithNull"            VarChar(50)      NULL,
-	"EnumWithNullDeclarative" VarChar(50)      NULL,
-	"BoolValue"               VarChar(1)   NOT NULL,
-	"AnotherBoolValue"        VarChar(1)   NOT NULL,
-	"DateTimeNullable"        TimeStamp        NULL,
-
-	CONSTRAINT "PK_ValueConversion" PRIMARY KEY ("Id")
-)
-
-BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
 DECLARE @iteration Integer -- Int32
 SET     @iteration = 2
 DECLARE @Value1 Varchar(2) -- String
@@ -77,9 +53,4 @@ FROM
 WHERE
 	e."Id" = :iteration
 LIMIT 2
-
-BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
-
-DROP TABLE IF EXISTS "ValueConversion"
 

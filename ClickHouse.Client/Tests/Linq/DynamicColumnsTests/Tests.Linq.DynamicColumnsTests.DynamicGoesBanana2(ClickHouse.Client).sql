@@ -1,21 +1,6 @@
 ﻿BeforeExecute
 -- ClickHouse.Client ClickHouse
 
-DROP TABLE IF EXISTS BananaTable
-
-BeforeExecute
--- ClickHouse.Client ClickHouse
-
-CREATE TABLE IF NOT EXISTS BananaTable
-(
-	Id       Int32,
-	Property Nullable(String)
-)
-ENGINE = Memory()
-
-BeforeExecute
--- ClickHouse.Client ClickHouse
-
 INSERT INTO BananaTable
 (
 	Id,
@@ -54,9 +39,4 @@ SELECT
 	t1.Property
 FROM
 	BananaTable t1
-
-BeforeExecute
--- ClickHouse.Client ClickHouse
-
-DROP TABLE IF EXISTS BananaTable
 

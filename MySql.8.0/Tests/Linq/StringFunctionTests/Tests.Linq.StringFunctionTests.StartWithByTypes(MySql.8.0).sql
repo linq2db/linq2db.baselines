@@ -1,41 +1,10 @@
 ﻿BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
-DROP TABLE IF EXISTS `StringTypesTable`
-
-BeforeExecute
--- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
-CREATE TABLE IF NOT EXISTS `StringTypesTable`
-(
-	`Id`             INT         NOT NULL,
-	`CharColumn`     CHAR(50)        NULL,
-	`NCharColumn`    CHAR(50)        NULL,
-	`VarCharColumn`  VARCHAR(50)     NULL,
-	`NVarCharColumn` VARCHAR(50)     NULL
-)
-
-BeforeExecute
--- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
-INSERT INTO `StringTypesTable`
-(
-	`Id`,
-	`CharColumn`,
-	`NCharColumn`,
-	`VarCharColumn`,
-	`NVarCharColumn`
-)
-VALUES
-(1,'someString','someString','someString','someString')
-
-BeforeExecute
--- MySql.8.0 MySql.8.0.MySql.Data MySql80
-DECLARE @str VarChar(5) -- String
+DECLARE @str String(5) -- AnsiStringFixedLength
 SET     @str = 'some%'
-DECLARE @str_1 VarChar(5) -- String
+DECLARE @str_1 String(5) -- StringFixedLength
 SET     @str_1 = 'some%'
-DECLARE @str_2 VarChar(5) -- String
+DECLARE @str_2 VarChar(5) -- AnsiString
 SET     @str_2 = 'some%'
 DECLARE @str_3 VarChar(5) -- String
 SET     @str_3 = 'some%'
@@ -53,9 +22,4 @@ WHERE
 	`t`.`NCharColumn` LIKE @str_1 ESCAPE '~' AND
 	`t`.`VarCharColumn` LIKE @str_2 ESCAPE '~' AND
 	`t`.`NVarCharColumn` LIKE @str_3 ESCAPE '~'
-
-BeforeExecute
--- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
-DROP TABLE IF EXISTS `StringTypesTable`
 

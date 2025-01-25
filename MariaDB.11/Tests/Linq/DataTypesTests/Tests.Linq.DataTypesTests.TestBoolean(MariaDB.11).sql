@@ -1,33 +1,5 @@
 ﻿BeforeExecute
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql
-
-DROP TABLE IF EXISTS `BooleanTable`
-
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
-
-CREATE TABLE IF NOT EXISTS `BooleanTable`
-(
-	`Id`             INT     NOT NULL,
-	`Column`         BOOLEAN NOT NULL,
-	`ColumnNullable` BOOLEAN     NULL
-)
-
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
-
-INSERT INTO `BooleanTable`
-(
-	`Id`,
-	`Column`,
-	`ColumnNullable`
-)
-VALUES
-(1,1,NULL),
-(2,0,1)
-
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
 DECLARE @Column Bool -- Boolean
 SET     @Column = 0
 DECLARE @ColumnNullable Bool -- Boolean
@@ -170,9 +142,4 @@ FROM
 	`BooleanTable` `t1`
 ORDER BY
 	`t1`.`Id`
-
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
-
-DROP TABLE IF EXISTS `BooleanTable`
 

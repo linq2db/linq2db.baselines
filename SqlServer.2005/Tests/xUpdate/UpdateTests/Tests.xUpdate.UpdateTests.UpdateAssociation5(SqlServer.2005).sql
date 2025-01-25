@@ -11,8 +11,7 @@ SET
 			FROM
 				[Parent] [x_1]
 			WHERE
-				[t1].[ID] IS NOT NULL AND [t1].[ID] = [x_1].[ParentID] AND
-				([x_1].[Value1] <> 1 OR [x_1].[Value1] IS NULL)
+				[t1].[ID] = [x_1].[ParentID] AND ([x_1].[Value1] <> 1 OR [x_1].[Value1] IS NULL)
 		)
 			THEN 1
 		ELSE 0
@@ -30,5 +29,11 @@ FROM
 			[x].[ParentID] IN (10000, 20000)
 	) [t1]
 WHERE
-	[u].[ID] = [t1].[ID] AND [u].[BoolValue] = [t1].[BoolValue]
+	[u].[ID] = [t1].[ID] AND CASE
+		WHEN [u].[BoolValue] = 1 THEN 1
+		ELSE 0
+	END = CASE
+		WHEN [t1].[BoolValue] = 1 THEN 1
+		ELSE 0
+	END
 

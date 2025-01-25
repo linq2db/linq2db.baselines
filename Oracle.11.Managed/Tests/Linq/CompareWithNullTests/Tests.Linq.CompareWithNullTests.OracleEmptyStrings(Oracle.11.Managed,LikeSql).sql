@@ -1,0 +1,22 @@
+﻿BeforeExecute
+-- Oracle.11.Managed Oracle11
+
+SELECT
+	x."Id"
+FROM
+	"Src" x
+WHERE
+	x."Text" IS NULL AND ROWNUM <= 1
+
+BeforeExecute
+-- Oracle.11.Managed Oracle11
+DECLARE @p Varchar2 -- String
+SET     @p = ''
+
+SELECT
+	x."Id"
+FROM
+	"Src" x
+WHERE
+	x."Text" = :p AND ROWNUM <= 1
+

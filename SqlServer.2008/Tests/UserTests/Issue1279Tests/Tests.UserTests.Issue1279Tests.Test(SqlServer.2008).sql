@@ -1,23 +1,5 @@
 ﻿BeforeExecute
 -- SqlServer.2008
-
-IF (OBJECT_ID(N'[Issue1279Table]', N'U') IS NOT NULL)
-	DROP TABLE [Issue1279Table]
-
-BeforeExecute
--- SqlServer.2008
-
-IF (OBJECT_ID(N'[Issue1279Table]', N'U') IS NULL)
-	CREATE TABLE [Issue1279Table]
-	(
-		[Id]      Int       NOT NULL IDENTITY,
-		[CharFld] NChar(1)  NOT NULL,
-
-		CONSTRAINT [PK_Issue1279Table] PRIMARY KEY CLUSTERED ([Id])
-	)
-
-BeforeExecute
--- SqlServer.2008
 DECLARE @CharFld NChar(1) -- StringFixedLength
 SET     @CharFld = N'P'
 
@@ -38,10 +20,4 @@ SELECT TOP (1)
 	[t1].[CharFld]
 FROM
 	[Issue1279Table] [t1]
-
-BeforeExecute
--- SqlServer.2008
-
-IF (OBJECT_ID(N'[Issue1279Table]', N'U') IS NOT NULL)
-	DROP TABLE [Issue1279Table]
 

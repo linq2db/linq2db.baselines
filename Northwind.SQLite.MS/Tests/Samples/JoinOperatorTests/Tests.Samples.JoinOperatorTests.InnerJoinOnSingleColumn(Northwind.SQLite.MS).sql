@@ -10,5 +10,5 @@ FROM
 	[Categories] [c_1]
 		INNER JOIN [Products] [p] ON [c_1].[CategoryID] = [p].[CategoryID]
 WHERE
-	[p].[Discontinued] = 0
+	NOT [p].[Discontinued]
 

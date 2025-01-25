@@ -1,22 +1,5 @@
 ﻿BeforeExecute
 -- SqlServer.2005
-
-IF (OBJECT_ID(N'[AllTypesCustomMaxLength]', N'U') IS NOT NULL)
-	DROP TABLE [AllTypesCustomMaxLength]
-
-BeforeExecute
--- SqlServer.2005
-
-IF (OBJECT_ID(N'[AllTypesCustomMaxLength]', N'U') IS NULL)
-	CREATE TABLE [AllTypesCustomMaxLength]
-	(
-		[VarBinary] VarBinary(Max)     NULL,
-		[VarChar]   VarChar(Max)       NULL,
-		[NVarChar]  NVarChar(Max)      NULL
-	)
-
-BeforeExecute
--- SqlServer.2005
 DECLARE @NVarChar NVarChar -- String
 SET     @NVarChar = Tests.Linq.ParameterTests+NVarChar
 
@@ -41,7 +24,15 @@ FROM
 
 BeforeExecute
 -- SqlServer.2005
+DECLARE @p NVarChar -- String
+SET     @p = Tests.Linq.ParameterTests+NVarChar
 
-IF (OBJECT_ID(N'[AllTypesCustomMaxLength]', N'U') IS NOT NULL)
-	DROP TABLE [AllTypesCustomMaxLength]
+SELECT
+	[t].[VarBinary],
+	[t].[VarChar],
+	[t].[NVarChar]
+FROM
+	[AllTypesCustomMaxLength] [t]
+WHERE
+	[t].[NVarChar] = @p
 

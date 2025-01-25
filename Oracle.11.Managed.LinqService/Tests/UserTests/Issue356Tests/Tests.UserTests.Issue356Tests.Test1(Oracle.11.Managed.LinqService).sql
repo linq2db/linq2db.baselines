@@ -4,15 +4,15 @@ DECLARE @take Int32
 SET     @take = 10
 
 SELECT
-	t3."ParentID",
-	t3."ChildID"
+	t4."ParentID",
+	t4."ChildID"
 FROM
 	(
 		SELECT
-			x."ParentID",
+			t3."ParentID",
 			t2."ChildID"
 		FROM
-			"Parent" x
+			"Parent" t3
 				INNER JOIN (
 					SELECT DISTINCT
 						c_2."ParentID",
@@ -31,11 +31,14 @@ FROM
 							FROM
 								"Child" t1
 						) c_2
-				) t2 ON t2."ParentID" = x."ParentID"
+				) t2 ON t2."ParentID" = t3."ParentID"
 		ORDER BY
-			x."ParentID",
+			t3."ParentID",
 			t2."ChildID"
-	) t3
+	) t4
 WHERE
 	ROWNUM <= :take
+ORDER BY
+	t4."ParentID",
+	t4."ChildID"
 

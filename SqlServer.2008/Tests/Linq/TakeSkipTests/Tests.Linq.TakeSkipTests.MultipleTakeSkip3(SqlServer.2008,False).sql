@@ -1,39 +1,6 @@
 ﻿BeforeExecute
 -- SqlServer.2008
 
-IF (OBJECT_ID(N'[TakeSkipClass]', N'U') IS NOT NULL)
-	DROP TABLE [TakeSkipClass]
-
-BeforeExecute
--- SqlServer.2008
-
-IF (OBJECT_ID(N'[TakeSkipClass]', N'U') IS NULL)
-	CREATE TABLE [TakeSkipClass]
-	(
-		[Value] VarChar(10)     NULL
-	)
-
-BeforeExecute
--- SqlServer.2008
-
-INSERT INTO [TakeSkipClass]
-(
-	[Value]
-)
-VALUES
-('Value1'),
-('Value2'),
-('Value3'),
-('Value4'),
-('Value5'),
-('Value6'),
-('Value7'),
-('Value8'),
-('Value9')
-
-BeforeExecute
--- SqlServer.2008
-
 SELECT
 	[t2].[Value_1]
 FROM
@@ -46,10 +13,6 @@ FROM
 	) [t2]
 WHERE
 	[t2].[RN] > 3 AND [t2].[RN] <= 4
-
-BeforeExecute
--- SqlServer.2008
-
-IF (OBJECT_ID(N'[TakeSkipClass]', N'U') IS NOT NULL)
-	DROP TABLE [TakeSkipClass]
+ORDER BY
+	[t2].[Value_1]
 

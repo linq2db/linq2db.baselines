@@ -1,29 +1,5 @@
 ﻿BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-
-DROP TABLE "ValueConversion"
-
-BeforeExecute
--- SapHana.Odbc SapHanaOdbc
-
-CREATE COLUMN TABLE "ValueConversion"
-(
-	"Id"                      Integer       NOT NULL,
-	"Value1"                  NVarChar(200)     NULL,
-	"Value2"                  NVarChar(200)     NULL,
-	"Enum"                    NVarChar(50)  NOT NULL,
-	"EnumNullable"            VarChar(50)       NULL,
-	"EnumWithNull"            VarChar(50)       NULL,
-	"EnumWithNullDeclarative" VarChar(50)       NULL,
-	"BoolValue"               VarChar(1)    NOT NULL,
-	"AnotherBoolValue"        VarChar(1)    NOT NULL,
-	"DateTimeNullable"        Timestamp         NULL,
-
-	PRIMARY KEY ("Id")
-)
-
-BeforeExecute
--- SapHana.Odbc SapHanaOdbc
 DECLARE @Id  -- Int32
 SET     @Id = 1
 DECLARE @Value1 NVarChar(2) -- String
@@ -207,9 +183,4 @@ SELECT
 	COUNT(*)
 FROM
 	"ValueConversion" "t1"
-
-BeforeExecute
--- SapHana.Odbc SapHanaOdbc
-
-DROP TABLE "ValueConversion"
 

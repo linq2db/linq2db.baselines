@@ -1,33 +1,5 @@
 ﻿BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-
-DROP TABLE IF EXISTS `BooleanTable`
-
-BeforeExecute
--- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-
-CREATE TABLE IF NOT EXISTS `BooleanTable`
-(
-	`Id`             INT     NOT NULL,
-	`Column`         BOOLEAN NOT NULL,
-	`ColumnNullable` BOOLEAN     NULL
-)
-
-BeforeExecute
--- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-
-INSERT INTO `BooleanTable`
-(
-	`Id`,
-	`Column`,
-	`ColumnNullable`
-)
-VALUES
-(1,1,NULL),
-(2,0,1)
-
-BeforeExecute
--- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 DECLARE @Column Bool -- Boolean
 SET     @Column = 0
 DECLARE @ColumnNullable Bool -- Boolean
@@ -170,9 +142,4 @@ FROM
 	`BooleanTable` `t1`
 ORDER BY
 	`t1`.`Id`
-
-BeforeExecute
--- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-
-DROP TABLE IF EXISTS `BooleanTable`
 

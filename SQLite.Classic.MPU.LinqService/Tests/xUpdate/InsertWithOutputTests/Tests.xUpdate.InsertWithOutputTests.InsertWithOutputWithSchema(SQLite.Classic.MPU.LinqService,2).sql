@@ -1,20 +1,5 @@
 ﻿BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-
-DROP TABLE IF EXISTS [TableWithDataAndSchema]
-
-BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
-
-CREATE TABLE IF NOT EXISTS [TableWithDataAndSchema]
-(
-	[Id]       INTEGER      NOT NULL,
-	[Value]    INTEGER      NOT NULL,
-	[ValueStr] NVarChar(50)     NULL
-)
-
-BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
 DECLARE @Id  -- Int32
 SET     @Id = 2
 DECLARE @Value  -- Int32
@@ -38,9 +23,4 @@ RETURNING
 	[TableWithDataAndSchema].[Id],
 	[TableWithDataAndSchema].[Value],
 	[TableWithDataAndSchema].[ValueStr]
-
-BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
-
-DROP TABLE IF EXISTS [TableWithDataAndSchema]
 

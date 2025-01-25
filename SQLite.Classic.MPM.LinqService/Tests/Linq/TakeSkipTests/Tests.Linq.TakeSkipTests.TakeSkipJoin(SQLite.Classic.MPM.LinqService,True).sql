@@ -28,26 +28,12 @@ FROM
 		FROM
 			(
 				SELECT
-					[t1].[ID],
-					[t1].[MoneyValue],
-					[t1].[DateTimeValue],
-					[t1].[BoolValue],
-					[t1].[GuidValue],
-					[t1].[BinaryValue],
-					[t1].[SmallIntValue],
-					[t1].[StringValue]
+					[t1].[ID]
 				FROM
 					[LinqDataTypes] [t1]
 				UNION ALL
 				SELECT
-					[t2].[ID],
-					[t2].[MoneyValue],
-					[t2].[DateTimeValue],
-					[t2].[BoolValue],
-					[t2].[GuidValue],
-					[t2].[BinaryValue],
-					[t2].[SmallIntValue],
-					[t2].[StringValue]
+					[t2].[ID]
 				FROM
 					[LinqDataTypes] [t2]
 			) [t3]
@@ -61,25 +47,13 @@ FROM
 				(
 					SELECT
 						[t4].[ID],
-						[t4].[MoneyValue],
-						[t4].[DateTimeValue],
-						[t4].[BoolValue],
-						[t4].[GuidValue],
-						[t4].[BinaryValue],
-						[t4].[SmallIntValue],
-						[t4].[StringValue]
+						[t4].[SmallIntValue]
 					FROM
 						[LinqDataTypes] [t4]
 					UNION ALL
 					SELECT
 						[t5].[ID],
-						[t5].[MoneyValue],
-						[t5].[DateTimeValue],
-						[t5].[BoolValue],
-						[t5].[GuidValue],
-						[t5].[BinaryValue],
-						[t5].[SmallIntValue],
-						[t5].[StringValue]
+						[t5].[SmallIntValue]
 					FROM
 						[LinqDataTypes] [t5]
 				) [t6]

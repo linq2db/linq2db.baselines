@@ -8,7 +8,7 @@ SET     @v1 = 1
 UPDATE
 	"Parent" "p"
 SET
-	"Value1" = CAST(@v1 AS Int)
+	"Value1" = @v1
 WHERE
-	"p"."Value1" = CAST(@v1 AS Int)
+	"p"."Value1" = @v1
 

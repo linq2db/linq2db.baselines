@@ -1,149 +1,6 @@
 ﻿BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
 
-DROP TABLE IF EXISTS [StorageShelfDTO]
-
-BeforeExecute
--- SqlServer.SA.MS SqlServer.2019
-
-IF (OBJECT_ID(N'[StorageShelfDTO]', N'U') IS NULL)
-	CREATE TABLE [StorageShelfDTO]
-	(
-		[Id]        UniqueIdentifier NOT NULL,
-		[AisleID]   UniqueIdentifier NOT NULL,
-		[ChannelID] UniqueIdentifier NOT NULL
-	)
-
-BeforeExecute
--- SqlServer.SA.MS SqlServer.2019
-
-DROP TABLE IF EXISTS [ChannelDTO]
-
-BeforeExecute
--- SqlServer.SA.MS SqlServer.2019
-
-IF (OBJECT_ID(N'[ChannelDTO]', N'U') IS NULL)
-	CREATE TABLE [ChannelDTO]
-	(
-		[Id] UniqueIdentifier NOT NULL
-	)
-
-BeforeExecute
--- SqlServer.SA.MS SqlServer.2019
-
-DROP TABLE IF EXISTS [RefResourceStorageShelfDTO]
-
-BeforeExecute
--- SqlServer.SA.MS SqlServer.2019
-
-IF (OBJECT_ID(N'[RefResourceStorageShelfDTO]', N'U') IS NULL)
-	CREATE TABLE [RefResourceStorageShelfDTO]
-	(
-		[ResourceID]     UniqueIdentifier NOT NULL,
-		[StorageShelfID] UniqueIdentifier NOT NULL
-	)
-
-BeforeExecute
--- SqlServer.SA.MS SqlServer.2019
-
-DROP TABLE IF EXISTS [RefOutfeedTransportOrderResourceDTO]
-
-BeforeExecute
--- SqlServer.SA.MS SqlServer.2019
-
-IF (OBJECT_ID(N'[RefOutfeedTransportOrderResourceDTO]', N'U') IS NULL)
-	CREATE TABLE [RefOutfeedTransportOrderResourceDTO]
-	(
-		[Id]                  UniqueIdentifier NOT NULL,
-		[ResourceID]          UniqueIdentifier NOT NULL,
-		[InventoryResourceID] UniqueIdentifier     NULL,
-		[Quantity]            Decimal          NOT NULL
-	)
-
-BeforeExecute
--- SqlServer.SA.MS SqlServer.2019
-
-DROP TABLE IF EXISTS [AisleDTO]
-
-BeforeExecute
--- SqlServer.SA.MS SqlServer.2019
-
-IF (OBJECT_ID(N'[AisleDTO]', N'U') IS NULL)
-	CREATE TABLE [AisleDTO]
-	(
-		[Id]     UniqueIdentifier NOT NULL,
-		[Status] Int              NOT NULL
-	)
-
-BeforeExecute
--- SqlServer.SA.MS SqlServer.2019
-
-DROP TABLE IF EXISTS [RefResPointAisleDTO]
-
-BeforeExecute
--- SqlServer.SA.MS SqlServer.2019
-
-IF (OBJECT_ID(N'[RefResPointAisleDTO]', N'U') IS NULL)
-	CREATE TABLE [RefResPointAisleDTO]
-	(
-		[ResourcePointId] UniqueIdentifier NOT NULL,
-		[AisleId]         UniqueIdentifier NOT NULL
-	)
-
-BeforeExecute
--- SqlServer.SA.MS SqlServer.2019
-
-DROP TABLE IF EXISTS [WmsResourcePointDTO]
-
-BeforeExecute
--- SqlServer.SA.MS SqlServer.2019
-
-IF (OBJECT_ID(N'[WmsResourcePointDTO]', N'U') IS NULL)
-	CREATE TABLE [WmsResourcePointDTO]
-	(
-		[Id]             UniqueIdentifier NOT NULL,
-		[IsStoragePlace] Bit              NOT NULL
-	)
-
-BeforeExecute
--- SqlServer.SA.MS SqlServer.2019
-
-DROP TABLE IF EXISTS [WmsLoadCarrierDTO]
-
-BeforeExecute
--- SqlServer.SA.MS SqlServer.2019
-
-IF (OBJECT_ID(N'[WmsLoadCarrierDTO]', N'U') IS NULL)
-	CREATE TABLE [WmsLoadCarrierDTO]
-	(
-		[Id]              UniqueIdentifier NOT NULL,
-		[ResourcePointID] UniqueIdentifier     NULL
-	)
-
-BeforeExecute
--- SqlServer.SA.MS SqlServer.2019
-
-DROP TABLE IF EXISTS [InventoryResourceDTO]
-
-BeforeExecute
--- SqlServer.SA.MS SqlServer.2019
-
-IF (OBJECT_ID(N'[InventoryResourceDTO]', N'U') IS NULL)
-	CREATE TABLE [InventoryResourceDTO]
-	(
-		[Id]            UniqueIdentifier NOT NULL,
-		[Status]        Int              NOT NULL,
-		[MaterialID]    UniqueIdentifier NOT NULL,
-		[ResourceID]    UniqueIdentifier NOT NULL,
-		[Quantity]      Decimal          NOT NULL,
-		[ProductStatus] Int              NOT NULL
-	)
-
-BeforeExecute
--- SqlServer.SA.MS SqlServer.2019
-DECLARE @MaterialID UniqueIdentifier -- Guid
-SET     @MaterialID = '00000000-0000-0000-0000-000000000000'
-
 SELECT
 	[cr_1].[Id],
 	[cr_1].[Status],
@@ -165,7 +22,6 @@ SELECT
 FROM
 	(
 		SELECT
-			[ir].[Quantity],
 			Coalesce((
 				SELECT
 					SUM([x].[Quantity])
@@ -175,12 +31,13 @@ FROM
 					[x].[InventoryResourceID] = [ir].[Id]
 			), 0) + (
 				SELECT
-					CAST(COUNT(*) AS Decimal)
+					CAST(COUNT(*) AS Decimal(38, 17))
 				FROM
 					[RefOutfeedTransportOrderResourceDTO] [x_1]
 				WHERE
 					[x_1].[ResourceID] = [r].[Id] AND [x_1].[InventoryResourceID] IS NULL
 			) * [ir].[Quantity] as [RefQty],
+			[ir].[Quantity],
 			[ir].[Id],
 			[ir].[Status],
 			[ir].[MaterialID],
@@ -201,10 +58,8 @@ FROM
 				FROM
 					[InventoryResourceDTO] [irMix]
 				WHERE
-					[irMix].[ResourceID] = [r].[Id] AND
-					[irMix].[Status] >= 0 AND
-					[irMix].[Status] <= 1 AND
-					([irMix].[MaterialID] <> @MaterialID OR [irMix].[ProductStatus] <> 0)
+					[irMix].[ResourceID] = [r].[Id] AND [irMix].[Status] >= 0 AND
+					[irMix].[Status] <= 1
 			), 1, 0) as [MixedStock]
 		FROM
 			[StorageShelfDTO] [cr]
@@ -216,12 +71,11 @@ FROM
 				INNER JOIN [WmsLoadCarrierDTO] [r] ON [refS].[ResourceID] = [r].[Id]
 				INNER JOIN [InventoryResourceDTO] [ir] ON [r].[Id] = [ir].[ResourceID]
 		WHERE
-			[ir].[MaterialID] = @MaterialID AND [ir].[ProductStatus] = 0 AND
-			[ir].[Quantity] > 0
+			1 = 0
 		UNION
 		SELECT
+			CAST(0 AS Decimal(38, 17)) as [RefQty],
 			[ir_1].[Quantity],
-			0 as [RefQty],
 			[ir_1].[Id],
 			[ir_1].[Status],
 			[ir_1].[MaterialID],
@@ -233,65 +87,17 @@ FROM
 			NULL as [AisleID],
 			NULL as [ChannelID],
 			NULL as [Id_3],
-			0 as [AisleStatus],
+			CAST(0 AS Int) as [AisleStatus],
 			[rp_1].[Id] as [Id_4],
 			[rp_1].[IsStoragePlace],
-			0 as [MixedStock]
+			CAST(0 AS Bit) as [MixedStock]
 		FROM
 			[WmsResourcePointDTO] [rp_1]
 				INNER JOIN [WmsLoadCarrierDTO] [r_1] ON [rp_1].[Id] = [r_1].[ResourcePointID]
 				INNER JOIN [InventoryResourceDTO] [ir_1] ON [r_1].[Id] = [ir_1].[ResourceID]
 		WHERE
-			[rp_1].[IsStoragePlace] = 1 AND
-			[ir_1].[MaterialID] = @MaterialID AND
-			[ir_1].[ProductStatus] = 0 AND
-			[ir_1].[Quantity] > 0
+			1 = 0
 	) [cr_1]
 WHERE
 	[cr_1].[Quantity] > [cr_1].[RefQty]
-
-BeforeExecute
--- SqlServer.SA.MS SqlServer.2019
-
-DROP TABLE IF EXISTS [InventoryResourceDTO]
-
-BeforeExecute
--- SqlServer.SA.MS SqlServer.2019
-
-DROP TABLE IF EXISTS [WmsLoadCarrierDTO]
-
-BeforeExecute
--- SqlServer.SA.MS SqlServer.2019
-
-DROP TABLE IF EXISTS [WmsResourcePointDTO]
-
-BeforeExecute
--- SqlServer.SA.MS SqlServer.2019
-
-DROP TABLE IF EXISTS [RefResPointAisleDTO]
-
-BeforeExecute
--- SqlServer.SA.MS SqlServer.2019
-
-DROP TABLE IF EXISTS [AisleDTO]
-
-BeforeExecute
--- SqlServer.SA.MS SqlServer.2019
-
-DROP TABLE IF EXISTS [RefOutfeedTransportOrderResourceDTO]
-
-BeforeExecute
--- SqlServer.SA.MS SqlServer.2019
-
-DROP TABLE IF EXISTS [RefResourceStorageShelfDTO]
-
-BeforeExecute
--- SqlServer.SA.MS SqlServer.2019
-
-DROP TABLE IF EXISTS [ChannelDTO]
-
-BeforeExecute
--- SqlServer.SA.MS SqlServer.2019
-
-DROP TABLE IF EXISTS [StorageShelfDTO]
 

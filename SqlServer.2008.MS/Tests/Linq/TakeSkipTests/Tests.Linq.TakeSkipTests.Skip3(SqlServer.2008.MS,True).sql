@@ -19,4 +19,7 @@ FROM
 	) [t1]
 WHERE
 	[t1].[RN] > @skip
+ORDER BY
+	[t1].[ParentID],
+	[t1].[ChildID]
 

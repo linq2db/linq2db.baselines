@@ -1,35 +1,5 @@
 ﻿BeforeExecute
 -- SqlServer.2012.MS SqlServer.2012
-
-IF (OBJECT_ID(N'[IntEnumTable]', N'U') IS NOT NULL)
-	DROP TABLE [IntEnumTable]
-
-BeforeExecute
--- SqlServer.2012.MS SqlServer.2012
-
-IF (OBJECT_ID(N'[IntEnumTable]', N'U') IS NULL)
-	CREATE TABLE [IntEnumTable]
-	(
-		[Id]             Int NOT NULL,
-		[Column]         Int NOT NULL,
-		[ColumnNullable] Int     NULL
-	)
-
-BeforeExecute
--- SqlServer.2012.MS SqlServer.2012
-
-INSERT INTO [IntEnumTable]
-(
-	[Id],
-	[Column],
-	[ColumnNullable]
-)
-VALUES
-(1,1,NULL),
-(2,2,3)
-
-BeforeExecute
--- SqlServer.2012.MS SqlServer.2012
 DECLARE @Column Int -- Int32
 SET     @Column = 2
 DECLARE @ColumnNullable Int -- Int32
@@ -172,10 +142,4 @@ FROM
 	[IntEnumTable] [t1]
 ORDER BY
 	[t1].[Id]
-
-BeforeExecute
--- SqlServer.2012.MS SqlServer.2012
-
-IF (OBJECT_ID(N'[IntEnumTable]', N'U') IS NOT NULL)
-	DROP TABLE [IntEnumTable]
 

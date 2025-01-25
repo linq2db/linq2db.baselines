@@ -1,53 +1,6 @@
 ﻿BeforeExecute
 -- Firebird.3 Firebird3
 
-EXECUTE BLOCK AS BEGIN
-	IF (EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'Person2562')) THEN
-		EXECUTE STATEMENT 'DROP TABLE "Person2562"';
-END
-
-BeforeExecute
--- Firebird.3 Firebird3
-
-EXECUTE BLOCK AS BEGIN
-	IF (NOT EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'Person2562')) THEN
-		EXECUTE STATEMENT '
-			CREATE TABLE "Person2562"
-			(
-				"CardTypeId" Int                                    NOT NULL,
-				"CardNumber" VarChar(255) CHARACTER SET UNICODE_FSS,
-				"Lics"       VarChar(255) CHARACTER SET UNICODE_FSS
-			)
-		';
-END
-
-BeforeExecute
--- Firebird.3 Firebird3
-
-EXECUTE BLOCK AS BEGIN
-	IF (EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'ExternalId2562')) THEN
-		EXECUTE STATEMENT 'DROP TABLE "ExternalId2562"';
-END
-
-BeforeExecute
--- Firebird.3 Firebird3
-
-EXECUTE BLOCK AS BEGIN
-	IF (NOT EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'ExternalId2562')) THEN
-		EXECUTE STATEMENT '
-			CREATE TABLE "ExternalId2562"
-			(
-				"CardTypeId" Int                                    NOT NULL,
-				"CardNumber" VarChar(255) CHARACTER SET UNICODE_FSS,
-				"TypeId"     Int                                    NOT NULL,
-				"Id"         VarChar(255) CHARACTER SET UNICODE_FSS
-			)
-		';
-END
-
-BeforeExecute
--- Firebird.3 Firebird3
-
 SELECT
 	"t1"."CardTypeId",
 	"t1"."CardNumber",
@@ -82,20 +35,4 @@ SELECT
 	)
 FROM
 	"Person2562" "person"
-
-BeforeExecute
--- Firebird.3 Firebird3
-
-EXECUTE BLOCK AS BEGIN
-	IF (EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'ExternalId2562')) THEN
-		EXECUTE STATEMENT 'DROP TABLE "ExternalId2562"';
-END
-
-BeforeExecute
--- Firebird.3 Firebird3
-
-EXECUTE BLOCK AS BEGIN
-	IF (EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'Person2562')) THEN
-		EXECUTE STATEMENT 'DROP TABLE "Person2562"';
-END
 

@@ -1,31 +1,5 @@
 ﻿BeforeExecute
 -- SqlCe
-
-DROP TABLE [WhereWithString]
-
-BeforeExecute
--- SqlCe
-
-CREATE TABLE [WhereWithString]
-(
-	[Id]          Int           NOT NULL,
-	[StringValue] NVarChar(255)     NULL,
-
-	CONSTRAINT [PK_WhereWithString] PRIMARY KEY ([Id])
-)
-
-BeforeExecute
--- SqlCe
-
-INSERT INTO [WhereWithString]
-(
-	[Id],
-	[StringValue]
-)
-SELECT 1,'Str1'
-
-BeforeExecute
--- SqlCe
 DECLARE @filterValue Int -- Int32
 SET     @filterValue = 2
 
@@ -36,9 +10,4 @@ FROM
 	[WhereWithString] [x]
 WHERE
 	[x].[Id] = @filterValue
-
-BeforeExecute
--- SqlCe
-
-DROP TABLE [WhereWithString]
 

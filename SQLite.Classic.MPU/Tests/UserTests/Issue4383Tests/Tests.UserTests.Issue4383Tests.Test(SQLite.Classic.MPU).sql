@@ -1,108 +1,4 @@
 ﻿BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
-
-DROP TABLE IF EXISTS [PUMPLINES]
-
-BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
-
-CREATE TABLE IF NOT EXISTS [PUMPLINES]
-(
-	[LINE_ID] INTEGER NOT NULL,
-
-	CONSTRAINT [PK_PUMPLINES] PRIMARY KEY ([LINE_ID])
-)
-
-BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
-
-INSERT INTO [PUMPLINES]
-(
-	[LINE_ID]
-)
-VALUES
-(1),
-(2)
-
-BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
-
-DROP TABLE IF EXISTS [PUMPLINE_CHAINS]
-
-BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
-
-CREATE TABLE IF NOT EXISTS [PUMPLINE_CHAINS]
-(
-	[LINE_ID]  INTEGER NOT NULL,
-	[CHAIN_ID] INTEGER NOT NULL
-)
-
-BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
-
-INSERT INTO [PUMPLINE_CHAINS]
-(
-	[LINE_ID],
-	[CHAIN_ID]
-)
-VALUES
-(1,11),
-(2,22)
-
-BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
-
-DROP TABLE IF EXISTS [CHAINS]
-
-BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
-
-CREATE TABLE IF NOT EXISTS [CHAINS]
-(
-	[CHAIN_ID] INTEGER NOT NULL,
-
-	CONSTRAINT [PK_CHAINS] PRIMARY KEY ([CHAIN_ID])
-)
-
-BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
-
-INSERT INTO [CHAINS]
-(
-	[CHAIN_ID]
-)
-VALUES
-(11),
-(22)
-
-BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
-
-DROP TABLE IF EXISTS [CHAINPOINTS]
-
-BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
-
-CREATE TABLE IF NOT EXISTS [CHAINPOINTS]
-(
-	[CHAIN_ID] INTEGER NOT NULL,
-
-	CONSTRAINT [PK_CHAINPOINTS] PRIMARY KEY ([CHAIN_ID])
-)
-
-BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
-
-INSERT INTO [CHAINPOINTS]
-(
-	[CHAIN_ID]
-)
-VALUES
-(11),
-(22)
-
-BeforeExecute
 BeginTransaction(Serializable)
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
@@ -135,6 +31,7 @@ SELECT
 	[m_1].[LINE_ID],
 	[d].[LINE_ID],
 	[d].[CHAIN_ID],
+	[a_Chain].[CHAIN_ID],
 	[a_Chain].[CHAIN_ID]
 FROM
 	[PUMPLINES] [m_1]
@@ -149,29 +46,10 @@ BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
 SELECT
+	[t1].[LINE_ID],
 	[t1].[LINE_ID]
 FROM
 	[PUMPLINES] [t1]
 ORDER BY
 	[t1].[LINE_ID]
-
-BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
-
-DROP TABLE IF EXISTS [CHAINPOINTS]
-
-BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
-
-DROP TABLE IF EXISTS [CHAINS]
-
-BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
-
-DROP TABLE IF EXISTS [PUMPLINE_CHAINS]
-
-BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
-
-DROP TABLE IF EXISTS [PUMPLINES]
 

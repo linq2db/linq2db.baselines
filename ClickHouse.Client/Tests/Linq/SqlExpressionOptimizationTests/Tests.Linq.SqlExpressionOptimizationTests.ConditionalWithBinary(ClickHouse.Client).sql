@@ -1,49 +1,6 @@
 ﻿BeforeExecute
 -- ClickHouse.Client ClickHouse
 
-DROP TABLE IF EXISTS OptimizationData
-
-BeforeExecute
--- ClickHouse.Client ClickHouse
-
-CREATE TABLE IF NOT EXISTS OptimizationData
-(
-	Id                  Int32,
-	IntVlaue            Int32,
-	IntVlaueNullable    Nullable(Int32),
-	BoolValue           Bool,
-	BoolValueNullable   Nullable(Bool),
-	StringValue         Nullable(String),
-	StringValueNullable Nullable(String)
-)
-ENGINE = Memory()
-
-BeforeExecute
--- ClickHouse.Client ClickHouse
-
-INSERT INTO OptimizationData
-(
-	Id,
-	IntVlaue,
-	IntVlaueNullable,
-	BoolValue,
-	BoolValueNullable,
-	StringValue,
-	StringValueNullable
-)
-VALUES
-(1,1,0,true,true,'1','1'),
-(2,2,1,false,NULL,'0','0'),
-(3,4,4,false,NULL,'1','1'),
-(4,0,1,true,true,'0',NULL),
-(5,1,3,true,true,'1',NULL),
-(6,3,0,false,false,'0','0'),
-(7,1,4,false,false,'1','1'),
-(8,3,2,true,true,'0','0')
-
-BeforeExecute
--- ClickHouse.Client ClickHouse
-
 /* x => x.IntVlaue == 1 ? 3 : 4 == 3 */
 SELECT
 	x.Id,
@@ -210,11 +167,6 @@ SELECT
 	x_with_not.StringValueNullable
 FROM
 	OptimizationData x_with_not
-WHERE
-	(x_with_not.IntVlaue <> 1 OR CASE
-		WHEN x_with_not.IntVlaue = 1 THEN NULL
-		ELSE false
-	END IS NULL)
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
@@ -275,11 +227,6 @@ SELECT
 	swap_with_not.StringValueNullable
 FROM
 	OptimizationData swap_with_not
-WHERE
-	(swap_with_not.IntVlaue <> 1 OR CASE
-		WHEN swap_with_not.IntVlaue = 1 THEN NULL
-		ELSE false
-	END IS NULL)
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
@@ -341,10 +288,7 @@ SELECT
 FROM
 	OptimizationData x_with_not
 WHERE
-	CASE
-		WHEN x_with_not.IntVlaue = 1 THEN NULL
-		ELSE true
-	END IS NULL
+	x_with_not.IntVlaue = 1
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
@@ -406,10 +350,7 @@ SELECT
 FROM
 	OptimizationData swap_with_not
 WHERE
-	CASE
-		WHEN swap_with_not.IntVlaue = 1 THEN NULL
-		ELSE true
-	END IS NULL
+	swap_with_not.IntVlaue = 1
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
@@ -471,7 +412,7 @@ SELECT
 FROM
 	OptimizationData x_with_not
 WHERE
-	x_with_not.BoolValue <> true
+	x_with_not.BoolValue = false
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
@@ -533,7 +474,7 @@ SELECT
 FROM
 	OptimizationData swap_with_not
 WHERE
-	swap_with_not.BoolValue <> true
+	swap_with_not.BoolValue = false
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
@@ -564,7 +505,7 @@ SELECT
 FROM
 	OptimizationData x
 WHERE
-	x.BoolValue <> true
+	NOT x.BoolValue
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
@@ -595,10 +536,7 @@ SELECT
 FROM
 	OptimizationData x_with_not
 WHERE
-	CASE
-		WHEN x_with_not.BoolValue = true THEN NULL
-		ELSE true
-	END IS NULL
+	x_with_not.BoolValue
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
@@ -629,7 +567,7 @@ SELECT
 FROM
 	OptimizationData swap
 WHERE
-	swap.BoolValue <> true
+	NOT swap.BoolValue
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
@@ -660,10 +598,7 @@ SELECT
 FROM
 	OptimizationData swap_with_not
 WHERE
-	CASE
-		WHEN swap_with_not.BoolValue = true THEN NULL
-		ELSE true
-	END IS NULL
+	swap_with_not.BoolValue
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
@@ -725,7 +660,7 @@ SELECT
 FROM
 	OptimizationData x_with_not
 WHERE
-	x_with_not.BoolValue <> true
+	x_with_not.BoolValue = false
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
@@ -787,7 +722,7 @@ SELECT
 FROM
 	OptimizationData swap_with_not
 WHERE
-	swap_with_not.BoolValue <> true
+	swap_with_not.BoolValue = false
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
@@ -1186,7 +1121,7 @@ SELECT
 FROM
 	OptimizationData x
 WHERE
-	(x.StringValueNullable IS NULL OR x.StringValueNullable IS NULL)
+	x.StringValueNullable IS NULL OR x.StringValueNullable IS NULL
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
@@ -1248,7 +1183,7 @@ SELECT
 FROM
 	OptimizationData x
 WHERE
-	(x.StringValueNullable IS NULL OR x.StringValueNullable IS NULL)
+	x.StringValueNullable IS NULL OR x.StringValueNullable IS NULL
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
@@ -1310,7 +1245,7 @@ SELECT
 FROM
 	OptimizationData swap
 WHERE
-	(swap.StringValueNullable IS NULL OR swap.StringValueNullable IS NULL)
+	swap.StringValueNullable IS NULL OR swap.StringValueNullable IS NULL
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
@@ -1555,7 +1490,7 @@ SELECT
 FROM
 	OptimizationData x
 WHERE
-	(x.IntVlaue < 4 OR x.IntVlaue <> 0 AND x.IntVlaue >= 4)
+	x.IntVlaue < 4 OR x.IntVlaue <> 0 AND x.IntVlaue >= 4
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
@@ -1617,7 +1552,7 @@ SELECT
 FROM
 	OptimizationData swap
 WHERE
-	(swap.IntVlaue < 4 OR swap.IntVlaue <> 0 AND swap.IntVlaue >= 4)
+	swap.IntVlaue < 4 OR swap.IntVlaue <> 0 AND swap.IntVlaue >= 4
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
@@ -1679,7 +1614,7 @@ SELECT
 FROM
 	OptimizationData x
 WHERE
-	(x.IntVlaue < 4 OR x.IntVlaue > 0 AND x.IntVlaue >= 4)
+	x.IntVlaue < 4 OR x.IntVlaue > 0 AND x.IntVlaue >= 4
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
@@ -1803,7 +1738,7 @@ SELECT
 FROM
 	OptimizationData x
 WHERE
-	(x.IntVlaue < 4 OR x.IntVlaue >= 0 AND x.IntVlaue >= 4)
+	x.IntVlaue < 4 OR x.IntVlaue >= 0 AND x.IntVlaue >= 4
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
@@ -2051,7 +1986,7 @@ SELECT
 FROM
 	OptimizationData x
 WHERE
-	(x.IntVlaue <> 0 AND x.IntVlaue >= 4 OR x.IntVlaue < 4)
+	x.IntVlaue <> 0 AND x.IntVlaue >= 4 OR x.IntVlaue < 4
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
@@ -2113,7 +2048,7 @@ SELECT
 FROM
 	OptimizationData swap
 WHERE
-	(swap.IntVlaue <> 0 AND swap.IntVlaue >= 4 OR swap.IntVlaue < 4)
+	swap.IntVlaue <> 0 AND swap.IntVlaue >= 4 OR swap.IntVlaue < 4
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
@@ -2175,7 +2110,7 @@ SELECT
 FROM
 	OptimizationData x
 WHERE
-	(x.IntVlaue > 0 AND x.IntVlaue >= 4 OR x.IntVlaue < 4)
+	x.IntVlaue > 0 AND x.IntVlaue >= 4 OR x.IntVlaue < 4
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
@@ -2299,7 +2234,7 @@ SELECT
 FROM
 	OptimizationData x
 WHERE
-	(x.IntVlaue >= 0 AND x.IntVlaue >= 4 OR x.IntVlaue < 4)
+	x.IntVlaue >= 0 AND x.IntVlaue >= 4 OR x.IntVlaue < 4
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
@@ -2407,9 +2342,4 @@ SELECT
 	t1.StringValueNullable
 FROM
 	OptimizationData t1
-
-BeforeExecute
--- ClickHouse.Client ClickHouse
-
-DROP TABLE IF EXISTS OptimizationData
 

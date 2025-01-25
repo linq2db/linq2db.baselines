@@ -4,14 +4,13 @@
 SELECT
 	[t1].[ID],
 	[t1].[OK],
-	[t1].[FirstName],
-	[y].[FirstName]
+	IIF([t1].[FirstName] = N'ddd', [y].[FirstName], [t1].[FirstName])
 FROM
 	(
 		SELECT
 			[x].[PersonID] as [ID],
-			IIF([x].[FirstName] = N'123', N'Y', N'N') as [OK],
-			N'A' as [FirstName]
+			CAST(N'A' AS NVarChar(4000)) as [FirstName],
+			IIF([x].[FirstName] = N'123', N'Y', N'N') as [OK]
 		FROM
 			[Person] [x]
 		WHERE
@@ -19,8 +18,8 @@ FROM
 		UNION
 		SELECT
 			[x_1].[PersonID] as [ID],
-			N'N' as [OK],
-			[x_1].[FirstName]
+			[x_1].[FirstName],
+			CAST(N'N' AS NVarChar(4000)) as [OK]
 		FROM
 			[Person] [x_1]
 		WHERE

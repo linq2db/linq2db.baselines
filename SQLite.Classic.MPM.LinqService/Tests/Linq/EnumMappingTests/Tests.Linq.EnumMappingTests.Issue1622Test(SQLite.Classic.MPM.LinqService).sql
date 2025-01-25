@@ -1,21 +1,5 @@
 ﻿BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-
-DROP TABLE IF EXISTS [Issue1622Table]
-
-BeforeExecute
--- SQLite.Classic.MPM SQLite.Classic SQLite
-
-CREATE TABLE IF NOT EXISTS [Issue1622Table]
-(
-	[Id]       INTEGER       NOT NULL,
-	[SomeText] NVarChar(255)     NULL,
-
-	CONSTRAINT [PK_Issue1622Table] PRIMARY KEY ([Id])
-)
-
-BeforeExecute
--- SQLite.Classic.MPM SQLite.Classic SQLite
 DECLARE @Id  -- Int32
 SET     @Id = 1
 DECLARE @SomeText NVarChar(13) -- String
@@ -55,9 +39,4 @@ FROM
 WHERE
 	[e].[Id] = 1
 LIMIT 2
-
-BeforeExecute
--- SQLite.Classic.MPM SQLite.Classic SQLite
-
-DROP TABLE IF EXISTS [Issue1622Table]
 

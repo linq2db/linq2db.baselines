@@ -2,17 +2,14 @@
 -- ClickHouse.MySql ClickHouse
 
 SELECT
-	p_1.c1
+	p.c1
 FROM
 	(
 		SELECT
-			CASE
-				WHEN p.MoneyValue <> toDecimal64('4.5', 10) THEN true
-				ELSE false
-			END as c1
+			t.MoneyValue <> toDecimal128('4.5', 10) as c1
 		FROM
-			LinqDataTypes p
-	) p_1
+			LinqDataTypes t
+	) p
 WHERE
-	p_1.c1 = false
+	NOT p.c1
 

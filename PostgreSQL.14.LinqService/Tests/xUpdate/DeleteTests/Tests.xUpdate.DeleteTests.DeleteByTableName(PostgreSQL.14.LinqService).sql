@@ -1,24 +1,5 @@
 ﻿BeforeExecute
 -- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
-
-DROP TABLE IF EXISTS "xxPerson"
-
-BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
-
-CREATE TABLE IF NOT EXISTS "xxPerson"
-(
-	"FirstName"  text     NOT NULL,
-	"PersonID"   SERIAL   NOT NULL,
-	"LastName"   text     NOT NULL,
-	"MiddleName" text         NULL,
-	"Gender"     Char(1)  NOT NULL,
-
-	CONSTRAINT "PK_xxPerson" PRIMARY KEY ("PersonID")
-)
-
-BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
 DECLARE @FirstName Text(6) -- String
 SET     @FirstName = 'Steven'
 DECLARE @LastName Text(4) -- String
@@ -81,9 +62,4 @@ SELECT
 	COUNT(*)
 FROM
 	"xxPerson" t1
-
-BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
-
-DROP TABLE IF EXISTS "xxPerson"
 

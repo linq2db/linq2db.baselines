@@ -1,24 +1,24 @@
 ﻿BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
-DECLARE @ParentID Int32
-SET     @ParentID = 1
+DECLARE @p Int32
+SET     @p = 1
 
 SELECT
 	MAX(`c_1`.`ParentID`)
 FROM
 	`Child` `c_1`
 WHERE
-	`c_1`.`ParentID` = @ParentID
+	`c_1`.`ParentID` = @p
 
 BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
-DECLARE @ParentID Int32
-SET     @ParentID = -1
+DECLARE @p Int32
+SET     @p = -1
 
 SELECT
 	MAX(`c_1`.`ParentID`)
 FROM
 	`Child` `c_1`
 WHERE
-	`c_1`.`ParentID` = @ParentID
+	`c_1`.`ParentID` = @p
 

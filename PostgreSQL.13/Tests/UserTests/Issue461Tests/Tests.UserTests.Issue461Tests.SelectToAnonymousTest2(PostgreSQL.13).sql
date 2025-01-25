@@ -3,13 +3,13 @@
 
 SELECT
 	t1."Id",
-	t1."ParentId"
+	t1."ParentID"
 FROM
 	"Parent" sep
 		LEFT JOIN (
 			SELECT
 				l."ParentID" + 1 as "Id",
-				l."ParentID" as "ParentId"
+				l."ParentID"
 			FROM
 				"Child" l
 			LIMIT 1

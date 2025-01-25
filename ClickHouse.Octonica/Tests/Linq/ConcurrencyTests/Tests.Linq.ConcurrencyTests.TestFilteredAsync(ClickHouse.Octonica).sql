@@ -1,23 +1,4 @@
 ﻿BeforeExecute
--- ClickHouse.Octonica ClickHouse
-
-DROP TABLE IF EXISTS ConcurrencyFiltered
-
-BeforeExecute
--- ClickHouse.Octonica ClickHouse
-
-CREATE TABLE IF NOT EXISTS ConcurrencyFiltered
-(
-	Id    Int32,
-	Stamp Int32,
-	Value Nullable(String),
-
-	PRIMARY KEY (Id)
-)
-ENGINE = MergeTree()
-ORDER BY Id
-
-BeforeExecute
 -- ClickHouse.Octonica ClickHouse (asynchronously)
 
 INSERT INTO ConcurrencyFiltered
@@ -120,9 +101,4 @@ SELECT
 	t1.Value
 FROM
 	ConcurrencyFiltered t1
-
-BeforeExecute
--- ClickHouse.Octonica ClickHouse
-
-DROP TABLE IF EXISTS ConcurrencyFiltered
 

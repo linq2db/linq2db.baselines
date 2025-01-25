@@ -1,23 +1,5 @@
 ﻿BeforeExecute
 -- PostgreSQL.15 PostgreSQL
-
-DROP TABLE IF EXISTS "Issue4280"
-
-BeforeExecute
--- PostgreSQL.15 PostgreSQL
-
-CREATE TABLE IF NOT EXISTS "Issue4280"
-(
-	"Id"           Int  NOT NULL,
-	"SerialNumber" text     NULL,
-	"DeviceType"   text     NULL,
-	"Location"     text     NULL,
-
-	CONSTRAINT "PK_Issue4280" PRIMARY KEY ("Id")
-)
-
-BeforeExecute
--- PostgreSQL.15 PostgreSQL
 DECLARE @Id Integer -- Int32
 SET     @Id = 2
 DECLARE @SerialNumber Text(7) -- String
@@ -126,9 +108,4 @@ FROM
 	"Issue4280" t1
 ORDER BY
 	t1."Id"
-
-BeforeExecute
--- PostgreSQL.15 PostgreSQL
-
-DROP TABLE IF EXISTS "Issue4280"
 

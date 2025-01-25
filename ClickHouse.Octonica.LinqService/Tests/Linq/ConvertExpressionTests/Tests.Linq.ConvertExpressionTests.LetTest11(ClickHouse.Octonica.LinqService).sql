@@ -2,17 +2,10 @@
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
-	(
-		SELECT
-			c_1.ParentID
-		FROM
-			Child c_1
-		WHERE
-			c_1.ParentID > 0
-		ORDER BY
-			c_1.ParentID
-		LIMIT 1
-	),
+	CASE
+		WHEN t1.ParentID_1 IS NULL THEN 0
+		ELSE t1.ParentID_1
+	END,
 	(
 		SELECT
 			c_2.ParentID
@@ -36,7 +29,23 @@ SELECT
 		LIMIT 1
 	)
 FROM
-	Parent p
+	(
+		SELECT
+			p.ParentID as ParentID,
+			(
+				SELECT
+					c_1.ParentID
+				FROM
+					Child c_1
+				WHERE
+					c_1.ParentID > 0
+				ORDER BY
+					c_1.ParentID
+				LIMIT 1
+			) as ParentID_1
+		FROM
+			Parent p
+	) t1
 ORDER BY
-	p.ParentID
+	t1.ParentID
 

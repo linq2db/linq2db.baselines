@@ -1,39 +1,5 @@
 ﻿BeforeExecute
 -- SqlServer.2019
-
-DROP TABLE IF EXISTS [Task]
-
-BeforeExecute
--- SqlServer.2019
-
-IF (OBJECT_ID(N'[Task]', N'U') IS NULL)
-	CREATE TABLE [Task]
-	(
-		[Id] Int NOT NULL,
-
-		CONSTRAINT [PK_Task] PRIMARY KEY CLUSTERED ([Id])
-	)
-
-BeforeExecute
--- SqlServer.2019
-
-DROP TABLE IF EXISTS [TaskStage]
-
-BeforeExecute
--- SqlServer.2019
-
-IF (OBJECT_ID(N'[TaskStage]', N'U') IS NULL)
-	CREATE TABLE [TaskStage]
-	(
-		[Id]     Int NOT NULL,
-		[TaskId] Int NOT NULL,
-		[Actual] Bit NOT NULL,
-
-		CONSTRAINT [PK_TaskStage] PRIMARY KEY CLUSTERED ([Id])
-	)
-
-BeforeExecute
--- SqlServer.2019
 DECLARE @Id Int -- Int32
 SET     @Id = 1
 
@@ -94,14 +60,4 @@ FROM
 		LEFT JOIN [TaskStage] [a_ActualStage] ON [it].[Id] = [a_ActualStage].[TaskId] AND [a_ActualStage].[Actual] = 1
 GROUP BY
 	[it].[Id]
-
-BeforeExecute
--- SqlServer.2019
-
-DROP TABLE IF EXISTS [TaskStage]
-
-BeforeExecute
--- SqlServer.2019
-
-DROP TABLE IF EXISTS [Task]
 

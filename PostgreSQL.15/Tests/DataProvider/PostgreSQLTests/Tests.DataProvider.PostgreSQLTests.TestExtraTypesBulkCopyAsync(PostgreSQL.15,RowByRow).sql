@@ -1,33 +1,4 @@
 ﻿BeforeExecute
--- PostgreSQL.15 PostgreSQL
-
-DROP TABLE IF EXISTS "ExtraBulkCopyTypesTable"
-
-BeforeExecute
--- PostgreSQL.15 PostgreSQL
-
-CREATE TABLE IF NOT EXISTS "ExtraBulkCopyTypesTable"
-(
-	"Id"      Int         NOT NULL,
-	"Byte"    SmallInt        NULL,
-	"SByte"   SmallInt        NULL,
-	"Int16"   SmallInt        NULL,
-	"UInt16"  Int             NULL,
-	"Int32"   Int             NULL,
-	"UInt32"  BigInt          NULL,
-	"Int64"   BigInt          NULL,
-	"UInt64"  decimal(20)     NULL,
-	"ByteT"   SmallInt        NULL,
-	"SByteT"  SmallInt        NULL,
-	"Int16T"  SmallInt        NULL,
-	"UInt16T" Int             NULL,
-	"Int32T"  Int             NULL,
-	"UInt32T" BigInt          NULL,
-	"Int64T"  BigInt          NULL,
-	"UInt64T" Decimal         NULL
-)
-
-BeforeExecute
 -- PostgreSQL.15 PostgreSQL (asynchronously)
 DECLARE @Id Integer -- Int32
 SET     @Id = 1
@@ -208,9 +179,4 @@ FROM
 	"ExtraBulkCopyTypesTable" t1
 ORDER BY
 	t1."Id"
-
-BeforeExecute
--- PostgreSQL.15 PostgreSQL
-
-DROP TABLE IF EXISTS "ExtraBulkCopyTypesTable"
 

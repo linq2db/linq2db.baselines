@@ -1,23 +1,6 @@
 ﻿BeforeExecute
 -- PostgreSQL.15 PostgreSQL
 
-DROP TABLE IF EXISTS "OrgGroup"
-
-BeforeExecute
--- PostgreSQL.15 PostgreSQL
-
-CREATE TABLE IF NOT EXISTS "OrgGroup"
-(
-	"Id"        Int  NOT NULL,
-	"ParentId"  Int  NOT NULL,
-	"GroupName" text     NULL,
-
-	CONSTRAINT "PK_OrgGroup" PRIMARY KEY ("Id")
-)
-
-BeforeExecute
--- PostgreSQL.15 PostgreSQL
-
 WITH RECURSIVE previous
 (
 	"OrgGroup_Id",
@@ -31,7 +14,7 @@ AS
 		parent."Id",
 		parent."ParentId",
 		parent."GroupName",
-		0
+		0::Int
 	FROM
 		"OrgGroup" parent
 	UNION
@@ -45,14 +28,9 @@ AS
 			INNER JOIN previous parent_1 ON parent_1."OrgGroup_Id" = child."ParentId"
 )
 SELECT
-	t1."OrgGroup_Id",
-	t1."OrgGroup_ParentId",
-	t1."OrgGroup_GroupName"
+	wrapper."OrgGroup_Id",
+	wrapper."OrgGroup_ParentId",
+	wrapper."OrgGroup_GroupName"
 FROM
-	previous t1
-
-BeforeExecute
--- PostgreSQL.15 PostgreSQL
-
-DROP TABLE IF EXISTS "OrgGroup"
+	previous wrapper
 

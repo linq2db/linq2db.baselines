@@ -3,23 +3,41 @@
 
 SELECT
 	s."ParentID",
-	s."Value1",
-	c_2."ParentID",
-	c_2."ChildID_1"
+	c_1."ParentID",
+	c_1."ChildID"
 FROM
 	"Parent" s
-		LEFT JOIN (
-			SELECT
-				CASE
-					WHEN c_1."ParentID" IS NOT NULL THEN c_1."ChildID"
-					ELSE -100
-				END as "ChildID",
-				c_1."ParentID",
-				c_1."ChildID" as "ChildID_1",
-				c_1."ParentID" as "ParentID_1"
-			FROM
-				"Child" c_1
-		) c_2 ON s."ParentID" = c_2."ParentID_1"
+		LEFT JOIN "Child" c_1 ON s."ParentID" = c_1."ParentID"
 WHERE
-	c_2."ChildID" < 0
+	c_1."ChildID" < 0 AND c_1."ParentID" IS NOT NULL OR
+	c_1."ParentID" IS NULL
+
+BeforeExecute
+BeginTransaction(RepeatableRead)
+BeforeExecute
+-- PostgreSQL.15 PostgreSQL
+
+SELECT
+	m_1."ParentID",
+	d."ParentID",
+	d."ChildID"
+FROM
+	(
+		SELECT DISTINCT
+			t1."ParentID"
+		FROM
+			"Parent" t1
+	) m_1
+		INNER JOIN "Child" d ON m_1."ParentID" = d."ParentID"
+
+BeforeExecute
+DisposeTransaction
+BeforeExecute
+-- PostgreSQL.15 PostgreSQL
+
+SELECT
+	t1."ParentID",
+	t1."Value1"
+FROM
+	"Parent" t1
 

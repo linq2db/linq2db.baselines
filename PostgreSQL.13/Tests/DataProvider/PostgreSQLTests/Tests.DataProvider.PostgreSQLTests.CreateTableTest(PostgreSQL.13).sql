@@ -1,19 +1,5 @@
 ﻿BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
-
-DROP TABLE IF EXISTS "CreateTableTestClass"
-
-BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
-
-CREATE TABLE IF NOT EXISTS "CreateTableTestClass"
-(
-	"TimeOffset" TimeStampTZ NOT NULL,
-	"Guid"       uuid        NOT NULL
-)
-
-BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
 DECLARE @TimeOffset TimestampTz -- DateTime
 SET     @TimeOffset = '2017-06-17T19:40:33.0000000+00:00'
 DECLARE @Guid Uuid -- Guid
@@ -43,9 +29,4 @@ FROM
 WHERE
 	t1."Guid" = :Guid
 LIMIT 1
-
-BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
-
-DROP TABLE IF EXISTS "CreateTableTestClass"
 

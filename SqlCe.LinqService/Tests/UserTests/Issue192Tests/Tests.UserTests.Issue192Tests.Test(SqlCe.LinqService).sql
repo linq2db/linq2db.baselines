@@ -1,20 +1,5 @@
 ﻿BeforeExecute
 -- SqlCe
-
-DROP TABLE [TypeConvertTable]
-
-BeforeExecute
--- SqlCe
-
-CREATE TABLE [TypeConvertTable]
-(
-	[Name]      NVarChar(50) NOT NULL,
-	[BoolValue] NChar        NOT NULL,
-	[GuidValue] NVarChar(50)     NULL
-)
-
-BeforeExecute
--- SqlCe
 DECLARE @Name NVarChar(11) -- String
 SET     @Name = 'NotVerified'
 DECLARE @BoolValue NVarChar -- String
@@ -79,15 +64,15 @@ WHERE
 
 BeforeExecute
 -- SqlCe
-DECLARE @GuidValue NVarChar(36) -- String
-SET     @GuidValue = 'a948600d-de21-4f74-8ac2-9516b287076e'
+DECLARE @cond NVarChar(36) -- String
+SET     @cond = 'a948600d-de21-4f74-8ac2-9516b287076e'
 
 SELECT
 	COUNT(*) as [COUNT_1]
 FROM
 	[TypeConvertTable] [t1]
 WHERE
-	[t1].[GuidValue] = @GuidValue
+	[t1].[GuidValue] = @cond
 
 BeforeExecute
 -- SqlCe
@@ -236,9 +221,4 @@ FROM
 	[TypeConvertTable] [t1]
 WHERE
 	[t1].[GuidValue] = @GuidValue
-
-BeforeExecute
--- SqlCe
-
-DROP TABLE [TypeConvertTable]
 

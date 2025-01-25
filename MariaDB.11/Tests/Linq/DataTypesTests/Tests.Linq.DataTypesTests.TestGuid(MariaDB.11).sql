@@ -1,33 +1,5 @@
 ﻿BeforeExecute
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql
-
-DROP TABLE IF EXISTS `GuidTable`
-
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
-
-CREATE TABLE IF NOT EXISTS `GuidTable`
-(
-	`Id`             INT      NOT NULL,
-	`Column`         CHAR(36) NOT NULL,
-	`ColumnNullable` CHAR(36)     NULL
-)
-
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
-
-INSERT INTO `GuidTable`
-(
-	`Id`,
-	`Column`,
-	`ColumnNullable`
-)
-VALUES
-(1,'bc7b663d-0fde-4327-8f92-5d8cc3a11d11',NULL),
-(2,'a948600d-de21-4f74-8ac2-9516b287076e','bd3973a5-4323-4dd8-9f4f-df9f93e2a627')
-
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
 DECLARE @Column Guid
 SET     @Column = 'a948600d-de21-4f74-8ac2-9516b287076e'
 DECLARE @ColumnNullable Guid
@@ -171,9 +143,4 @@ FROM
 	`GuidTable` `t1`
 ORDER BY
 	`t1`.`Id`
-
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
-
-DROP TABLE IF EXISTS `GuidTable`
 

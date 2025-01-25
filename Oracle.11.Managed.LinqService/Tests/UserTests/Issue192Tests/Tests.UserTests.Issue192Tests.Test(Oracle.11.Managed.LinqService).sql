@@ -1,36 +1,5 @@
 ﻿BeforeExecute
 -- Oracle.11.Managed Oracle11
-
-BEGIN
-	EXECUTE IMMEDIATE 'DROP TABLE "TypeConvertTable"';
-EXCEPTION
-	WHEN OTHERS THEN
-		IF SQLCODE != -942 THEN
-			RAISE;
-		END IF;
-END;
-
-BeforeExecute
--- Oracle.11.Managed Oracle11
-
-BEGIN
-	EXECUTE IMMEDIATE '
-		CREATE TABLE "TypeConvertTable"
-		(
-			"Name"      VarChar(50) NOT NULL,
-			"BoolValue" Char        NOT NULL,
-			"GuidValue" VarChar(50)     NULL
-		)
-	';
-EXCEPTION
-	WHEN OTHERS THEN
-		IF SQLCODE != -955 THEN
-			RAISE;
-		END IF;
-END;
-
-BeforeExecute
--- Oracle.11.Managed Oracle11
 DECLARE @Name Varchar2(11) -- String
 SET     @Name = 'NotVerified'
 DECLARE @BoolValue Char -- AnsiStringFixedLength
@@ -95,15 +64,15 @@ WHERE
 
 BeforeExecute
 -- Oracle.11.Managed Oracle11
-DECLARE @GuidValue Varchar2(36) -- String
-SET     @GuidValue = 'a948600d-de21-4f74-8ac2-9516b287076e'
+DECLARE @cond Varchar2(36) -- String
+SET     @cond = 'a948600d-de21-4f74-8ac2-9516b287076e'
 
 SELECT
 	COUNT(*)
 FROM
 	"TypeConvertTable" t1
 WHERE
-	t1."GuidValue" = :GuidValue
+	t1."GuidValue" = :cond
 
 BeforeExecute
 -- Oracle.11.Managed Oracle11
@@ -252,16 +221,4 @@ FROM
 	"TypeConvertTable" t1
 WHERE
 	t1."GuidValue" = :GuidValue AND ROWNUM <= 1
-
-BeforeExecute
--- Oracle.11.Managed Oracle11
-
-BEGIN
-	EXECUTE IMMEDIATE 'DROP TABLE "TypeConvertTable"';
-EXCEPTION
-	WHEN OTHERS THEN
-		IF SQLCODE != -942 THEN
-			RAISE;
-		END IF;
-END;
 

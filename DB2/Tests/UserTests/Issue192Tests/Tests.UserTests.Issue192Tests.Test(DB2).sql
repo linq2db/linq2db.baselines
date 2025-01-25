@@ -1,28 +1,5 @@
 ﻿BeforeExecute
 -- DB2 DB2.LUW DB2LUW
-
-BEGIN
-	DECLARE CONTINUE HANDLER FOR SQLSTATE '42704' BEGIN END;
-	EXECUTE IMMEDIATE 'DROP TABLE "TypeConvertTable"';
-END
-
-BeforeExecute
--- DB2 DB2.LUW DB2LUW
-
-BEGIN
-	DECLARE CONTINUE HANDLER FOR SQLSTATE '42710' BEGIN END;
-	EXECUTE IMMEDIATE '
-		CREATE TABLE "TypeConvertTable"
-		(
-			"Name"      NVarChar(50) NOT NULL,
-			"BoolValue" Char         NOT NULL,
-			"GuidValue" VarChar(50)      NULL
-		)
-	';
-END
-
-BeforeExecute
--- DB2 DB2.LUW DB2LUW
 DECLARE @Name VarChar(11) -- String
 SET     @Name = 'NotVerified'
 DECLARE @BoolValue Char(1) -- StringFixedLength
@@ -87,15 +64,15 @@ WHERE
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
-DECLARE @GuidValue VarChar(36) -- String
-SET     @GuidValue = 'a948600d-de21-4f74-8ac2-9516b287076e'
+DECLARE @cond VarChar(36) -- String
+SET     @cond = 'a948600d-de21-4f74-8ac2-9516b287076e'
 
 SELECT
 	COUNT(*)
 FROM
 	"TypeConvertTable" "t1"
 WHERE
-	"t1"."GuidValue" = @GuidValue
+	"t1"."GuidValue" = @cond
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
@@ -256,12 +233,4 @@ FROM
 WHERE
 	"t1"."GuidValue" = @GuidValue
 FETCH NEXT 1 ROWS ONLY
-
-BeforeExecute
--- DB2 DB2.LUW DB2LUW
-
-BEGIN
-	DECLARE CONTINUE HANDLER FOR SQLSTATE '42704' BEGIN END;
-	EXECUTE IMMEDIATE 'DROP TABLE "TypeConvertTable"';
-END
 

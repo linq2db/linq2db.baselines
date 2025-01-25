@@ -1,23 +1,6 @@
 ﻿BeforeExecute
 -- SqlServer.SA SqlServer.2019
 
-DROP TABLE IF EXISTS [InsertTempTable]
-
-BeforeExecute
--- SqlServer.SA SqlServer.2019
-
-IF (OBJECT_ID(N'[InsertTempTable]', N'U') IS NULL)
-	CREATE TABLE [InsertTempTable]
-	(
-		[Action]    NVarChar(4000)     NULL,
-		[NewId]     Int            NOT NULL,
-		[DeletedId] Int                NULL,
-		[SourceId]  Int                NULL
-	)
-
-BeforeExecute
--- SqlServer.SA SqlServer.2019
-
 DELETE [t1]
 FROM
 	[TestMerge1] [t1]
@@ -297,9 +280,4 @@ SELECT
 	[t1].[SourceId]
 FROM
 	[InsertTempTable] [t1]
-
-BeforeExecute
--- SqlServer.SA SqlServer.2019
-
-DROP TABLE IF EXISTS [InsertTempTable]
 

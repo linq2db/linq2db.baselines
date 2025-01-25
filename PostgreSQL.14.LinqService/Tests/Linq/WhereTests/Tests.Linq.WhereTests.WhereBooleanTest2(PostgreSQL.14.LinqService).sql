@@ -1,243 +1,6 @@
 ﻿BeforeExecute
 -- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
 
-DROP TABLE IF EXISTS "WhereCases"
-
-BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
-
-CREATE TABLE IF NOT EXISTS "WhereCases"
-(
-	"Id"                Int     NOT NULL,
-	"BoolValue"         Boolean NOT NULL,
-	"NullableBoolValue" Boolean     NULL,
-
-	CONSTRAINT "PK_WhereCases" PRIMARY KEY ("Id")
-)
-
-BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
-DECLARE @Id Integer -- Int32
-SET     @Id = 1
-DECLARE @BoolValue Boolean
-SET     @BoolValue = True
-DECLARE @NullableBoolValue Boolean
-SET     @NullableBoolValue = NULL
-
-INSERT INTO "WhereCases"
-(
-	"Id",
-	"BoolValue",
-	"NullableBoolValue"
-)
-VALUES
-(
-	:Id,
-	:BoolValue,
-	:NullableBoolValue
-)
-
-BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
-DECLARE @Id Integer -- Int32
-SET     @Id = 2
-DECLARE @BoolValue Boolean
-SET     @BoolValue = True
-DECLARE @NullableBoolValue Boolean
-SET     @NullableBoolValue = True
-
-INSERT INTO "WhereCases"
-(
-	"Id",
-	"BoolValue",
-	"NullableBoolValue"
-)
-VALUES
-(
-	:Id,
-	:BoolValue,
-	:NullableBoolValue
-)
-
-BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
-DECLARE @Id Integer -- Int32
-SET     @Id = 3
-DECLARE @BoolValue Boolean
-SET     @BoolValue = True
-DECLARE @NullableBoolValue Boolean
-SET     @NullableBoolValue = NULL
-
-INSERT INTO "WhereCases"
-(
-	"Id",
-	"BoolValue",
-	"NullableBoolValue"
-)
-VALUES
-(
-	:Id,
-	:BoolValue,
-	:NullableBoolValue
-)
-
-BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
-DECLARE @Id Integer -- Int32
-SET     @Id = 4
-DECLARE @BoolValue Boolean
-SET     @BoolValue = True
-DECLARE @NullableBoolValue Boolean
-SET     @NullableBoolValue = True
-
-INSERT INTO "WhereCases"
-(
-	"Id",
-	"BoolValue",
-	"NullableBoolValue"
-)
-VALUES
-(
-	:Id,
-	:BoolValue,
-	:NullableBoolValue
-)
-
-BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
-DECLARE @Id Integer -- Int32
-SET     @Id = 5
-DECLARE @BoolValue Boolean
-SET     @BoolValue = True
-DECLARE @NullableBoolValue Boolean
-SET     @NullableBoolValue = True
-
-INSERT INTO "WhereCases"
-(
-	"Id",
-	"BoolValue",
-	"NullableBoolValue"
-)
-VALUES
-(
-	:Id,
-	:BoolValue,
-	:NullableBoolValue
-)
-
-BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
-DECLARE @Id Integer -- Int32
-SET     @Id = 11
-DECLARE @BoolValue Boolean
-SET     @BoolValue = False
-DECLARE @NullableBoolValue Boolean
-SET     @NullableBoolValue = NULL
-
-INSERT INTO "WhereCases"
-(
-	"Id",
-	"BoolValue",
-	"NullableBoolValue"
-)
-VALUES
-(
-	:Id,
-	:BoolValue,
-	:NullableBoolValue
-)
-
-BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
-DECLARE @Id Integer -- Int32
-SET     @Id = 12
-DECLARE @BoolValue Boolean
-SET     @BoolValue = False
-DECLARE @NullableBoolValue Boolean
-SET     @NullableBoolValue = False
-
-INSERT INTO "WhereCases"
-(
-	"Id",
-	"BoolValue",
-	"NullableBoolValue"
-)
-VALUES
-(
-	:Id,
-	:BoolValue,
-	:NullableBoolValue
-)
-
-BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
-DECLARE @Id Integer -- Int32
-SET     @Id = 13
-DECLARE @BoolValue Boolean
-SET     @BoolValue = False
-DECLARE @NullableBoolValue Boolean
-SET     @NullableBoolValue = NULL
-
-INSERT INTO "WhereCases"
-(
-	"Id",
-	"BoolValue",
-	"NullableBoolValue"
-)
-VALUES
-(
-	:Id,
-	:BoolValue,
-	:NullableBoolValue
-)
-
-BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
-DECLARE @Id Integer -- Int32
-SET     @Id = 14
-DECLARE @BoolValue Boolean
-SET     @BoolValue = False
-DECLARE @NullableBoolValue Boolean
-SET     @NullableBoolValue = False
-
-INSERT INTO "WhereCases"
-(
-	"Id",
-	"BoolValue",
-	"NullableBoolValue"
-)
-VALUES
-(
-	:Id,
-	:BoolValue,
-	:NullableBoolValue
-)
-
-BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
-DECLARE @Id Integer -- Int32
-SET     @Id = 15
-DECLARE @BoolValue Boolean
-SET     @BoolValue = False
-DECLARE @NullableBoolValue Boolean
-SET     @NullableBoolValue = False
-
-INSERT INTO "WhereCases"
-(
-	"Id",
-	"BoolValue",
-	"NullableBoolValue"
-)
-VALUES
-(
-	:Id,
-	:BoolValue,
-	:NullableBoolValue
-)
-
-BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
-
 SELECT
 	t1."Id",
 	t1."BoolValue",
@@ -255,7 +18,7 @@ SELECT
 FROM
 	"WhereCases" t
 WHERE
-	t."BoolValue" = False AND t."Id" > 0
+	NOT t."BoolValue" AND t."Id" > 0
 
 BeforeExecute
 -- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
@@ -267,7 +30,7 @@ SELECT
 FROM
 	"WhereCases" t
 WHERE
-	NOT (t."BoolValue" = False AND t."Id" > 0)
+	NOT (NOT t."BoolValue" AND t."Id" > 0)
 
 BeforeExecute
 -- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
@@ -544,7 +307,7 @@ SELECT
 FROM
 	"WhereCases" t
 WHERE
-	t."BoolValue" = False AND (t."NullableBoolValue" = False OR t."NullableBoolValue" IS NULL) AND
+	NOT t."BoolValue" AND (t."NullableBoolValue" = False OR t."NullableBoolValue" IS NULL) AND
 	t."Id" > 0
 
 BeforeExecute
@@ -557,7 +320,7 @@ SELECT
 FROM
 	"WhereCases" t
 WHERE
-	NOT (t."BoolValue" = False AND (t."NullableBoolValue" = False OR t."NullableBoolValue" IS NULL) AND t."Id" > 0)
+	NOT (NOT t."BoolValue" AND (t."NullableBoolValue" = False OR t."NullableBoolValue" IS NULL) AND t."Id" > 0)
 
 BeforeExecute
 -- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
@@ -569,7 +332,7 @@ SELECT
 FROM
 	"WhereCases" t
 WHERE
-	NOT (t."BoolValue" = False AND (t."NullableBoolValue" = False OR t."NullableBoolValue" IS NULL)) AND
+	NOT (NOT t."BoolValue" AND (t."NullableBoolValue" = False OR t."NullableBoolValue" IS NULL)) AND
 	t."Id" > 0
 
 BeforeExecute
@@ -582,7 +345,7 @@ SELECT
 FROM
 	"WhereCases" t
 WHERE
-	NOT (NOT (t."BoolValue" = False AND (t."NullableBoolValue" = False OR t."NullableBoolValue" IS NULL)) AND t."Id" > 0)
+	NOT (NOT (NOT t."BoolValue" AND (t."NullableBoolValue" = False OR t."NullableBoolValue" IS NULL)) AND t."Id" > 0)
 
 BeforeExecute
 -- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
@@ -594,7 +357,7 @@ SELECT
 FROM
 	"WhereCases" t
 WHERE
-	t."BoolValue" = False AND t."NullableBoolValue" = False AND
+	NOT t."BoolValue" AND t."NullableBoolValue" = False AND
 	t."Id" > 0
 
 BeforeExecute
@@ -607,7 +370,7 @@ SELECT
 FROM
 	"WhereCases" t
 WHERE
-	NOT (t."BoolValue" = False AND t."NullableBoolValue" = False AND t."NullableBoolValue" IS NOT NULL AND t."Id" > 0)
+	NOT (NOT t."BoolValue" AND t."NullableBoolValue" = False AND t."NullableBoolValue" IS NOT NULL AND t."Id" > 0)
 
 BeforeExecute
 -- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
@@ -619,7 +382,7 @@ SELECT
 FROM
 	"WhereCases" t
 WHERE
-	NOT (t."BoolValue" = False AND t."NullableBoolValue" = False AND t."NullableBoolValue" IS NOT NULL) AND
+	NOT (NOT t."BoolValue" AND t."NullableBoolValue" = False AND t."NullableBoolValue" IS NOT NULL) AND
 	t."Id" > 0
 
 BeforeExecute
@@ -632,10 +395,5 @@ SELECT
 FROM
 	"WhereCases" t
 WHERE
-	NOT (NOT (t."BoolValue" = False AND t."NullableBoolValue" = False AND t."NullableBoolValue" IS NOT NULL) AND t."Id" > 0)
-
-BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
-
-DROP TABLE IF EXISTS "WhereCases"
+	NOT (NOT (NOT t."BoolValue" AND t."NullableBoolValue" = False AND t."NullableBoolValue" IS NOT NULL) AND t."Id" > 0)
 

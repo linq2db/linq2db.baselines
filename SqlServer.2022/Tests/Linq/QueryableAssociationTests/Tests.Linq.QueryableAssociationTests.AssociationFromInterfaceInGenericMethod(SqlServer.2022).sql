@@ -1,21 +1,6 @@
 ﻿BeforeExecute
 -- SqlServer.2022
 
-DROP TABLE IF EXISTS [TreeItem]
-
-BeforeExecute
--- SqlServer.2022
-
-IF (OBJECT_ID(N'[TreeItem]', N'U') IS NULL)
-	CREATE TABLE [TreeItem]
-	(
-		[Id]       Int NOT NULL,
-		[ParentId] Int     NULL
-	)
-
-BeforeExecute
--- SqlServer.2022
-
 SELECT
 	[x].[Id],
 	[x].[ParentId]
@@ -64,9 +49,4 @@ FROM
 		LEFT JOIN [TreeItem] [a_Parent] ON [t].[ParentId] = [a_Parent].[Id]
 WHERE
 	[a_Parent].[Id] > 0
-
-BeforeExecute
--- SqlServer.2022
-
-DROP TABLE IF EXISTS [TreeItem]
 

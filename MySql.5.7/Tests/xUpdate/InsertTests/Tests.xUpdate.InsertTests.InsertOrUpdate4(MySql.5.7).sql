@@ -54,7 +54,7 @@ VALUES
 	CAST(Char_Length(@diagnosis) + @i AS CHAR(11))
 )
 ON DUPLICATE KEY UPDATE
-	`Diagnosis` = CAST(Char_Length(`Diagnosis`) + @i AS CHAR(11))
+	`Diagnosis` = CAST(Char_Length(`Diagnosis`) + @i AS CHAR(255))
 
 BeforeExecute
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
@@ -76,7 +76,7 @@ VALUES
 	CAST(Char_Length(@diagnosis) + @i AS CHAR(11))
 )
 ON DUPLICATE KEY UPDATE
-	`Diagnosis` = CAST(Char_Length(`Diagnosis`) + @i AS CHAR(11))
+	`Diagnosis` = CAST(Char_Length(`Diagnosis`) + @i AS CHAR(255))
 
 BeforeExecute
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
@@ -98,7 +98,7 @@ VALUES
 	CAST(Char_Length(@diagnosis) + @i AS CHAR(11))
 )
 ON DUPLICATE KEY UPDATE
-	`Diagnosis` = CAST(Char_Length(`Diagnosis`) + @i AS CHAR(11))
+	`Diagnosis` = CAST(Char_Length(`Diagnosis`) + @i AS CHAR(255))
 
 BeforeExecute
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57

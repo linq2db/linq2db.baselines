@@ -2,7 +2,7 @@
 -- SqlServer.SA SqlServer.2019
 
 SELECT
-	[t1].[ParentID],
+	IIF([t1].[ParentID] IS NULL, 0, [t1].[ParentID]),
 	[t2].[ParentID],
 	[t2].[ChildID]
 FROM

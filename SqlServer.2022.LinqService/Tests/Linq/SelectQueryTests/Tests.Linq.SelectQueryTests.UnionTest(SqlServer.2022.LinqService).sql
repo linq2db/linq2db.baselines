@@ -1,21 +1,6 @@
 ﻿BeforeExecute
 -- SqlServer.2022
 
-DROP TABLE IF EXISTS [SampleClass]
-
-BeforeExecute
--- SqlServer.2022
-
-IF (OBJECT_ID(N'[SampleClass]', N'U') IS NULL)
-	CREATE TABLE [SampleClass]
-	(
-		[Id]    Int NOT NULL,
-		[Value] Int NOT NULL
-	)
-
-BeforeExecute
--- SqlServer.2022
-
 SELECT
 	DateAdd(day, [t].[Value], CURRENT_TIMESTAMP),
 	DateAdd(day, 2, CURRENT_TIMESTAMP)
@@ -47,9 +32,4 @@ FROM
 			DateAdd(day, 3, CURRENT_TIMESTAMP) as [Value1],
 			DateAdd(day, 4, CURRENT_TIMESTAMP) as [Value2]
 	) [v_1]
-
-BeforeExecute
--- SqlServer.2022
-
-DROP TABLE IF EXISTS [SampleClass]
 

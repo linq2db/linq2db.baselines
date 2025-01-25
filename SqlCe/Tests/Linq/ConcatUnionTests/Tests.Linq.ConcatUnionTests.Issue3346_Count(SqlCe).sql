@@ -1,23 +1,6 @@
 ﻿BeforeExecute
 -- SqlCe
 
-DROP TABLE [ComplexPerson]
-
-BeforeExecute
--- SqlCe
-
-CREATE TABLE [ComplexPerson]
-(
-	[Id]        Int           NOT NULL,
-	[FirstName] NVarChar(255)     NULL,
-	[LastName]  NVarChar(255)     NULL,
-
-	CONSTRAINT [PK_ComplexPerson] PRIMARY KEY ([Id])
-)
-
-BeforeExecute
--- SqlCe
-
 SELECT
 	COUNT(*) as [COUNT_1]
 FROM
@@ -40,9 +23,4 @@ FROM
 		WHERE
 			[x_1].[Id] < 20
 	) [t1]
-
-BeforeExecute
--- SqlCe
-
-DROP TABLE [ComplexPerson]
 

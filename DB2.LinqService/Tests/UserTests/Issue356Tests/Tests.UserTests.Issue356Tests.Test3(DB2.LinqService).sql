@@ -2,10 +2,10 @@
 -- DB2 DB2.LUW DB2LUW
 
 SELECT
-	"x"."ParentID",
+	"t3"."ParentID",
 	"t2"."ChildID"
 FROM
-	"Parent" "x"
+	"Parent" "t3"
 		INNER JOIN (
 			SELECT
 				"c_2"."ParentID",
@@ -27,8 +27,8 @@ FROM
 			ORDER BY
 				"c_2"."ParentID"
 			OFFSET 10 ROWS FETCH NEXT 10 ROWS ONLY 
-		) "t2" ON "t2"."ParentID" = "x"."ParentID"
+		) "t2" ON "t2"."ParentID" = "t3"."ParentID"
 ORDER BY
-	"x"."ParentID"
+	"t3"."ParentID"
 FETCH NEXT 10 ROWS ONLY
 

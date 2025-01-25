@@ -1,25 +1,5 @@
 ﻿BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
-
-DROP TABLE IF EXISTS "TPHTable"
-
-BeforeExecute
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
-
-CREATE TABLE IF NOT EXISTS "TPHTable"
-(
-	"Id"            Int        NOT NULL,
-	"Discriminator" Int        NOT NULL,
-	"Value1"        text           NULL,
-	"Value2"        text           NULL,
-	"Value3"        text           NULL,
-	"NullableBool"  VarChar(1)     NULL,
-
-	CONSTRAINT "PK_TPHTable" PRIMARY KEY ("Id")
-)
-
-BeforeExecute
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 DECLARE @Id Integer -- Int32
 SET     @Id = 1
 DECLARE @Discriminator Integer -- Int32
@@ -198,9 +178,4 @@ FROM
 WHERE
 	x."Value3" = 'Str3'
 LIMIT 2
-
-BeforeExecute
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
-
-DROP TABLE IF EXISTS "TPHTable"
 

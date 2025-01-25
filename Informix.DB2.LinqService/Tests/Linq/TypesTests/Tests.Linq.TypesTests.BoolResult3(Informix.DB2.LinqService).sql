@@ -2,10 +2,7 @@
 -- Informix.DB2 Informix
 
 SELECT
-	CASE
-		WHEN p.PersonID = 1 THEN 't'
-		ELSE 'f'
-	END::BOOLEAN
+	p.PersonID = 1
 FROM
 	Person p
 

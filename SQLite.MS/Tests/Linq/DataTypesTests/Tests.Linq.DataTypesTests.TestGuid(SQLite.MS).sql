@@ -1,33 +1,5 @@
 ﻿BeforeExecute
 -- SQLite.MS SQLite
-
-DROP TABLE IF EXISTS [GuidTable]
-
-BeforeExecute
--- SQLite.MS SQLite
-
-CREATE TABLE IF NOT EXISTS [GuidTable]
-(
-	[Id]             INTEGER NOT NULL,
-	[Column]         Guid    NOT NULL,
-	[ColumnNullable] Guid        NULL
-)
-
-BeforeExecute
--- SQLite.MS SQLite
-
-INSERT INTO [GuidTable]
-(
-	[Id],
-	[Column],
-	[ColumnNullable]
-)
-VALUES
-(1,X'3D667BBCDE0F27438F925D8CC3A11D11',NULL),
-(2,X'0D6048A921DE744F8AC29516B287076E',X'A57339BD2343D84D9F4FDF9F93E2A627')
-
-BeforeExecute
--- SQLite.MS SQLite
 DECLARE @Column  -- Guid
 SET     @Column = X'0D6048A921DE744F8AC29516B287076E'
 DECLARE @ColumnNullable  -- Guid
@@ -178,9 +150,4 @@ FROM
 	[GuidTable] [t1]
 ORDER BY
 	[t1].[Id]
-
-BeforeExecute
--- SQLite.MS SQLite
-
-DROP TABLE IF EXISTS [GuidTable]
 

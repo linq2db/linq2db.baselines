@@ -1,68 +1,5 @@
 ﻿BeforeExecute
 -- Oracle.18.Managed Oracle.Managed Oracle12
-
-BEGIN
-	EXECUTE IMMEDIATE 'DROP TABLE "Issue1096Task"';
-EXCEPTION
-	WHEN OTHERS THEN
-		IF SQLCODE != -942 THEN
-			RAISE;
-		END IF;
-END;
-
-BeforeExecute
--- Oracle.18.Managed Oracle.Managed Oracle12
-
-BEGIN
-	EXECUTE IMMEDIATE '
-		CREATE TABLE "Issue1096Task"
-		(
-			"Id"         Int          NOT NULL,
-			"TargetName" VarChar(255)     NULL
-		)
-	';
-EXCEPTION
-	WHEN OTHERS THEN
-		IF SQLCODE != -955 THEN
-			RAISE;
-		END IF;
-END;
-
-BeforeExecute
--- Oracle.18.Managed Oracle.Managed Oracle12
-
-BEGIN
-	EXECUTE IMMEDIATE 'DROP TABLE "Issue1096TaskStage"';
-EXCEPTION
-	WHEN OTHERS THEN
-		IF SQLCODE != -942 THEN
-			RAISE;
-		END IF;
-END;
-
-BeforeExecute
--- Oracle.18.Managed Oracle.Managed Oracle12
-
-BEGIN
-	EXECUTE IMMEDIATE '
-		CREATE TABLE "Issue1096TaskStage"
-		(
-			"Id"     Int     NOT NULL,
-			"TaskId" Int     NOT NULL,
-			"Actual" Char(1) NOT NULL,
-
-			CONSTRAINT "PK_Issue1096TaskStage" PRIMARY KEY ("Id")
-		)
-	';
-EXCEPTION
-	WHEN OTHERS THEN
-		IF SQLCODE != -955 THEN
-			RAISE;
-		END IF;
-END;
-
-BeforeExecute
--- Oracle.18.Managed Oracle.Managed Oracle12
 DECLARE @Id Int32
 SET     @Id = 1
 DECLARE @TargetName Varchar2(12) -- String
@@ -131,28 +68,4 @@ SELECT DISTINCT
 FROM
 	"Issue1096Task" t
 		LEFT JOIN "Issue1096TaskStage" a_ActualStage ON t."Id" = a_ActualStage."TaskId" AND a_ActualStage."Actual" = 1
-
-BeforeExecute
--- Oracle.18.Managed Oracle.Managed Oracle12
-
-BEGIN
-	EXECUTE IMMEDIATE 'DROP TABLE "Issue1096TaskStage"';
-EXCEPTION
-	WHEN OTHERS THEN
-		IF SQLCODE != -942 THEN
-			RAISE;
-		END IF;
-END;
-
-BeforeExecute
--- Oracle.18.Managed Oracle.Managed Oracle12
-
-BEGIN
-	EXECUTE IMMEDIATE 'DROP TABLE "Issue1096Task"';
-EXCEPTION
-	WHEN OTHERS THEN
-		IF SQLCODE != -942 THEN
-			RAISE;
-		END IF;
-END;
 

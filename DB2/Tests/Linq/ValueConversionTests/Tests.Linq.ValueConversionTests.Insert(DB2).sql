@@ -1,37 +1,5 @@
 ﻿BeforeExecute
 -- DB2 DB2.LUW DB2LUW
-
-BEGIN
-	DECLARE CONTINUE HANDLER FOR SQLSTATE '42704' BEGIN END;
-	EXECUTE IMMEDIATE 'DROP TABLE "ValueConversion"';
-END
-
-BeforeExecute
--- DB2 DB2.LUW DB2LUW
-
-BEGIN
-	DECLARE CONTINUE HANDLER FOR SQLSTATE '42710' BEGIN END;
-	EXECUTE IMMEDIATE '
-		CREATE TABLE "ValueConversion"
-		(
-			"Id"                      Int           NOT NULL,
-			"Value1"                  NVarChar(200)     NULL,
-			"Value2"                  NVarChar(200)     NULL,
-			"Enum"                    NVarChar(50)  NOT NULL,
-			"EnumNullable"            VarChar(50)       NULL,
-			"EnumWithNull"            VarChar(50)       NULL,
-			"EnumWithNullDeclarative" VarChar(50)       NULL,
-			"BoolValue"               VarChar(1)    NOT NULL,
-			"AnotherBoolValue"        VarChar(1)    NOT NULL,
-			"DateTimeNullable"        timestamp         NULL,
-
-			CONSTRAINT "PK_ValueConversion" PRIMARY KEY ("Id")
-		)
-	';
-END
-
-BeforeExecute
--- DB2 DB2.LUW DB2LUW
 DECLARE @Id Integer(4) -- Int32
 SET     @Id = 1
 DECLARE @Value1 VarChar(2) -- String
@@ -56,12 +24,12 @@ INSERT INTO "ValueConversion"
 )
 VALUES
 (
-	CAST(@Id AS Int),
-	CAST(@Value1 AS NVarChar(2)),
-	CAST(@Enum AS NVarChar(6)),
-	CAST(@Value2 AS NVarChar(22)),
-	CAST(@BoolValue AS VarChar(1)),
-	CAST(@AnotherBoolValue AS VarChar(1))
+	@Id,
+	@Value1,
+	@Enum,
+	@Value2,
+	@BoolValue,
+	@AnotherBoolValue
 )
 
 BeforeExecute
@@ -110,12 +78,12 @@ INSERT INTO "ValueConversion"
 )
 VALUES
 (
-	CAST(@Id AS Int),
-	CAST(@Value1 AS NVarChar(200)),
-	CAST(@Value2 AS NVarChar(200)),
-	CAST(@Enum AS NVarChar(6)),
-	CAST(@BoolValue AS VarChar(1)),
-	CAST(@AnotherBoolValue AS VarChar(1))
+	@Id,
+	@Value1,
+	@Value2,
+	@Enum,
+	@BoolValue,
+	@AnotherBoolValue
 )
 
 BeforeExecute
@@ -215,12 +183,4 @@ SELECT
 	COUNT(*)
 FROM
 	"ValueConversion" "t1"
-
-BeforeExecute
--- DB2 DB2.LUW DB2LUW
-
-BEGIN
-	DECLARE CONTINUE HANDLER FOR SQLSTATE '42704' BEGIN END;
-	EXECUTE IMMEDIATE 'DROP TABLE "ValueConversion"';
-END
 

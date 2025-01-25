@@ -1,35 +1,4 @@
 ﻿BeforeExecute
--- Oracle.21.Managed Oracle.Managed Oracle12
-
-BEGIN
-	EXECUTE IMMEDIATE 'DROP TABLE "Dest1"';
-EXCEPTION
-	WHEN OTHERS THEN
-		IF SQLCODE != -942 THEN
-			RAISE;
-		END IF;
-END;
-
-BeforeExecute
--- Oracle.21.Managed Oracle.Managed Oracle12
-
-BEGIN
-	EXECUTE IMMEDIATE '
-		CREATE TABLE "Dest1"
-		(
-			ID            Int          NOT NULL,
-			"Value"       SmallInt         NULL,
-			"StringValue" VarChar(255)     NULL
-		)
-	';
-EXCEPTION
-	WHEN OTHERS THEN
-		IF SQLCODE != -955 THEN
-			RAISE;
-		END IF;
-END;
-
-BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12 (asynchronously)
 
 INSERT ALL
@@ -125,17 +94,5 @@ SELECT
 FROM
 	"Dest1" x
 WHERE
-	(x.ID = 4001 OR x.ID = 4002)
-
-BeforeExecute
--- Oracle.21.Managed Oracle.Managed Oracle12
-
-BEGIN
-	EXECUTE IMMEDIATE 'DROP TABLE "Dest1"';
-EXCEPTION
-	WHEN OTHERS THEN
-		IF SQLCODE != -942 THEN
-			RAISE;
-		END IF;
-END;
+	x.ID = 4001 OR x.ID = 4002
 

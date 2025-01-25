@@ -4,16 +4,16 @@
 SELECT
 	"p1"."ParentID",
 	"p1"."Value1",
-	"p2_1"."o",
-	"p2_1"."Sum1"
+	"p2"."Key_1",
+	"p2"."Sum1"
 FROM
 	"Parent" "p1"
 		LEFT JOIN (
 			SELECT
-				"p2"."ParentID" as "o",
-				SUM("p2"."ParentID") as "Sum1"
+				"g_1"."ParentID" as "Key_1",
+				SUM("g_1"."ParentID") as "Sum1"
 			FROM
-				"Parent" "p2"
+				"Parent" "g_1"
 			WHERE
 				EXISTS(
 					SELECT
@@ -21,9 +21,9 @@ FROM
 					FROM
 						"Child" "ch"
 					WHERE
-						"p2"."ParentID" = "ch"."ParentID"
+						"g_1"."ParentID" = "ch"."ParentID"
 				)
 			GROUP BY
-				"p2"."ParentID"
-		) "p2_1" ON "p2_1"."o" = "p1"."ParentID"
+				"g_1"."ParentID"
+		) "p2" ON "p2"."Key_1" = "p1"."ParentID"
 

@@ -73,7 +73,7 @@ BeforeExecute
 -- PostgreSQL.12 PostgreSQL.9.5 PostgreSQL
 
 SELECT
-	x_1."Date_1",
+	t1."Date_1",
 	COUNT(*)
 FROM
 	(
@@ -81,11 +81,11 @@ FROM
 			Date_Trunc('day', x."TransactionDate" AT TIME ZONE 'UTC')::Date as "Date_1"
 		FROM
 			"Transactions" x
-	) x_1
+	) t1
 GROUP BY
-	x_1."Date_1"
+	t1."Date_1"
 ORDER BY
-	x_1."Date_1"
+	t1."Date_1"
 
 BeforeExecute
 -- PostgreSQL.12 PostgreSQL.9.5 PostgreSQL

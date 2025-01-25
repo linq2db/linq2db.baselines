@@ -1,21 +1,5 @@
 ﻿BeforeExecute
 -- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
-
-DROP TABLE IF EXISTS "BackgroundTask"
-
-BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
-
-CREATE TABLE IF NOT EXISTS "BackgroundTask"
-(
-	"ID"               Int     NULL,
-	"DurationID"       Int NOT NULL,
-	"DurationInterval" Int NOT NULL,
-	"PersonID"         Int     NULL
-)
-
-BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
 DECLARE @ID Integer -- Int32
 SET     @ID = 3
 DECLARE @DurationID Integer -- Int32
@@ -54,9 +38,4 @@ FROM
 	"BackgroundTask" task_1
 WHERE
 	task_1."PersonID" = :personId
-
-BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
-
-DROP TABLE IF EXISTS "BackgroundTask"
 

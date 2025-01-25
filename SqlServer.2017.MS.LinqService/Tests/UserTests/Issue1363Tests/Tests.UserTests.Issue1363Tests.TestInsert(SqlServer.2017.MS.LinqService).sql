@@ -1,20 +1,5 @@
 ﻿BeforeExecute
 -- SqlServer.2017.MS SqlServer.2017
-
-DROP TABLE IF EXISTS [Issue1363]
-
-BeforeExecute
--- SqlServer.2017.MS SqlServer.2017
-
-IF (OBJECT_ID(N'[Issue1363]', N'U') IS NULL)
-	CREATE TABLE [Issue1363]
-	(
-		[required_field] UniqueIdentifier NOT NULL,
-		[optional_field] UniqueIdentifier     NULL
-	)
-
-BeforeExecute
--- SqlServer.2017.MS SqlServer.2017
 DECLARE @id UniqueIdentifier -- Guid
 SET     @id = 'bc7b663d-0fde-4327-8f92-5d8cc3a11d11'
 
@@ -73,9 +58,4 @@ FROM
 	[Issue1363] [t1]
 WHERE
 	[t1].[required_field] = @id2
-
-BeforeExecute
--- SqlServer.2017.MS SqlServer.2017
-
-DROP TABLE IF EXISTS [Issue1363]
 

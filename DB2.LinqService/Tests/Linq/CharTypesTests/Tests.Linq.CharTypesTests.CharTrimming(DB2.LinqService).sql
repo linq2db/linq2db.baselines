@@ -17,7 +17,7 @@ INSERT INTO ALLTYPES
 )
 VALUES
 (
-	CAST(@NChar AS NChar(1))
+	@NChar
 )
 
 BeforeExecute
@@ -31,7 +31,7 @@ INSERT INTO ALLTYPES
 )
 VALUES
 (
-	CAST(@NChar AS NChar(1))
+	@NChar
 )
 
 BeforeExecute
@@ -46,7 +46,7 @@ INSERT INTO ALLTYPES
 )
 VALUES
 (
-	CAST(@NChar AS NChar(1))
+	@NChar
 )
 
 BeforeExecute
@@ -60,7 +60,7 @@ INSERT INTO ALLTYPES
 )
 VALUES
 (
-	CAST(@NChar AS NChar(1))
+	@NChar
 )
 
 BeforeExecute
@@ -74,7 +74,7 @@ INSERT INTO ALLTYPES
 )
 VALUES
 (
-	CAST(@NChar AS NChar(1))
+	@NChar
 )
 
 BeforeExecute
@@ -88,7 +88,7 @@ INSERT INTO ALLTYPES
 )
 VALUES
 (
-	CAST(@NChar AS NChar(1))
+	@NChar
 )
 
 BeforeExecute
@@ -102,7 +102,7 @@ INSERT INTO ALLTYPES
 )
 VALUES
 (
-	CAST(@NChar AS NChar(1))
+	@NChar
 )
 
 BeforeExecute
@@ -116,7 +116,7 @@ INSERT INTO ALLTYPES
 )
 VALUES
 (
-	CAST(@NChar AS NChar(1))
+	@NChar
 )
 
 BeforeExecute
@@ -130,7 +130,7 @@ INSERT INTO ALLTYPES
 )
 VALUES
 (
-	CAST(@NChar AS NChar(1))
+	@NChar
 )
 
 BeforeExecute
@@ -144,7 +144,7 @@ INSERT INTO ALLTYPES
 )
 VALUES
 (
-	CAST(@NChar AS NChar(1))
+	@NChar
 )
 
 BeforeExecute
@@ -158,7 +158,7 @@ INSERT INTO ALLTYPES
 )
 VALUES
 (
-	CAST(@NChar AS NChar(1))
+	@NChar
 )
 
 BeforeExecute
@@ -172,7 +172,7 @@ INSERT INTO ALLTYPES
 )
 VALUES
 (
-	CAST(@NChar AS NChar(1))
+	@NChar
 )
 
 BeforeExecute
@@ -186,7 +186,7 @@ INSERT INTO ALLTYPES
 )
 VALUES
 (
-	CAST(@NChar AS NChar(1))
+	@NChar
 )
 
 BeforeExecute
@@ -200,7 +200,7 @@ INSERT INTO ALLTYPES
 )
 VALUES
 (
-	CAST(@NChar AS NChar(1))
+	@NChar
 )
 
 BeforeExecute
@@ -214,7 +214,7 @@ INSERT INTO ALLTYPES
 )
 VALUES
 (
-	CAST(@NChar AS NChar(1))
+	@NChar
 )
 
 BeforeExecute
@@ -228,7 +228,7 @@ INSERT INTO ALLTYPES
 )
 VALUES
 (
-	CAST(@NChar AS NChar(1))
+	@NChar
 )
 
 BeforeExecute
@@ -242,7 +242,7 @@ INSERT INTO ALLTYPES
 )
 VALUES
 (
-	CAST(@NChar AS NChar(1))
+	@NChar
 )
 
 BeforeExecute
@@ -256,7 +256,7 @@ INSERT INTO ALLTYPES
 )
 VALUES
 (
-	CAST(@NChar AS NChar(1))
+	@NChar
 )
 
 BeforeExecute
@@ -270,7 +270,7 @@ INSERT INTO ALLTYPES
 )
 VALUES
 (
-	CAST(@NChar AS NChar(1))
+	@NChar
 )
 
 BeforeExecute
@@ -284,7 +284,7 @@ INSERT INTO ALLTYPES
 )
 VALUES
 (
-	CAST(@NChar AS NChar(1))
+	@NChar
 )
 
 BeforeExecute

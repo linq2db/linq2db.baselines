@@ -1,127 +1,5 @@
 ﻿BeforeExecute
 -- Firebird.4 Firebird4
-
-EXECUTE BLOCK AS BEGIN
-	IF (EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'Alert')) THEN
-		EXECUTE STATEMENT 'DROP TABLE "Alert"';
-END
-
-BeforeExecute
--- Firebird.4 Firebird4
-
-EXECUTE BLOCK AS BEGIN
-	IF (NOT EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'Alert')) THEN
-		EXECUTE STATEMENT '
-			CREATE TABLE "Alert"
-			(
-				"AlertKey"     VarChar(255) CHARACTER SET UNICODE_FSS NOT NULL,
-				"AlertCode"    VarChar(255) CHARACTER SET UNICODE_FSS NOT NULL,
-				"CreationDate" TimeStamp                              NOT NULL
-			)
-		';
-END
-
-BeforeExecute
--- Firebird.4 Firebird4
-
-EXECUTE BLOCK AS BEGIN
-	IF (EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'AuditAlert')) THEN
-		EXECUTE STATEMENT 'DROP TABLE "AuditAlert"';
-END
-
-BeforeExecute
--- Firebird.4 Firebird4
-
-EXECUTE BLOCK AS BEGIN
-	IF (NOT EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'AuditAlert')) THEN
-		EXECUTE STATEMENT '
-			CREATE TABLE "AuditAlert"
-			(
-				"AlertKey"        VarChar(255) CHARACTER SET UNICODE_FSS NOT NULL,
-				"AlertCode"       VarChar(255) CHARACTER SET UNICODE_FSS NOT NULL,
-				"CreationDate"    TimeStamp                              NOT NULL,
-				"TransactionDate" TimeStamp
-			)
-		';
-END
-
-BeforeExecute
--- Firebird.4 Firebird4
-
-EXECUTE BLOCK AS BEGIN
-	IF (EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'Trade')) THEN
-		EXECUTE STATEMENT 'DROP TABLE "Trade"';
-END
-
-BeforeExecute
--- Firebird.4 Firebird4
-
-EXECUTE BLOCK AS BEGIN
-	IF (NOT EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'Trade')) THEN
-		EXECUTE STATEMENT '
-			CREATE TABLE "Trade"
-			(
-				"DealId"       Int                                    NOT NULL,
-				"ParcelId"     Int                                    NOT NULL,
-				"CounterParty" VarChar(255) CHARACTER SET UNICODE_FSS
-			)
-		';
-END
-
-BeforeExecute
--- Firebird.4 Firebird4
-
-EXECUTE BLOCK AS BEGIN
-	IF (EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'Nomin')) THEN
-		EXECUTE STATEMENT 'DROP TABLE "Nomin"';
-END
-
-BeforeExecute
--- Firebird.4 Firebird4
-
-EXECUTE BLOCK AS BEGIN
-	IF (NOT EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'Nomin')) THEN
-		EXECUTE STATEMENT '
-			CREATE TABLE "Nomin"
-			(
-				"CargoId"              Int                                    NOT NULL,
-				"DeliveryId"           Int                                    NOT NULL,
-				"DeliveryCounterParty" VarChar(255) CHARACTER SET UNICODE_FSS
-			)
-		';
-END
-
-BeforeExecute
--- Firebird.4 Firebird4
-
-EXECUTE BLOCK AS BEGIN
-	IF (EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'Flat')) THEN
-		EXECUTE STATEMENT 'DROP TABLE "Flat"';
-END
-
-BeforeExecute
--- Firebird.4 Firebird4
-
-EXECUTE BLOCK AS BEGIN
-	IF (NOT EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'Flat')) THEN
-		EXECUTE STATEMENT '
-			CREATE TABLE "Flat"
-			(
-				"AlertKey"             VarChar(255) CHARACTER SET UNICODE_FSS,
-				"AlertCode"            VarChar(255) CHARACTER SET UNICODE_FSS,
-				"CargoId"              Int,
-				"DeliveryId"           Int,
-				"DeliveryCounterParty" VarChar(255) CHARACTER SET UNICODE_FSS,
-				"DealId"               Int,
-				"ParcelId"             Int,
-				"CounterParty"         VarChar(255) CHARACTER SET UNICODE_FSS,
-				"TransactionDate"      TimeStamp
-			)
-		';
-END
-
-BeforeExecute
--- Firebird.4 Firebird4
 DECLARE @cpty VarChar(3) -- String
 SET     @cpty = '%C%'
 DECLARE @cpty_1 VarChar(3) -- String
@@ -138,14 +16,13 @@ SET     @cpty_5 = '%C%'
 SELECT
 	"al_group_3"."AlertKey",
 	"al_group_3"."AlertCode",
-	"t2"."LastUpdate_1",
-	"t2"."CargoId",
+	"t2"."LastUpdate",
+	"t2"."cond",
 	"t2"."DeliveryId",
 	"t2"."DeliveryCounterParty",
-	"t2"."DealId",
+	"t2"."cond_1",
 	"t2"."ParcelId",
-	"t2"."CounterParty",
-	"t2"."LastUpdate"
+	"t2"."CounterParty"
 FROM
 	(
 		SELECT
@@ -169,7 +46,9 @@ FROM
 				LEFT JOIN "Trade" "trade_1" ON "al_group_1"."AlertKey" = "trade_1"."DealId"
 				LEFT JOIN "Nomin" "nomin_1" ON "al_group_1"."AlertKey" = "nomin_1"."CargoId"
 		WHERE
-			("nomin_1"."DeliveryCounterParty" LIKE @cpty ESCAPE '~' OR "trade_1"."CounterParty" LIKE @cpty_1 ESCAPE '~' OR "al_group_1"."AlertCode" LIKE @cpty_2 ESCAPE '~')
+			"nomin_1"."DeliveryCounterParty" LIKE @cpty ESCAPE '~' OR
+			"trade_1"."CounterParty" LIKE @cpty_1 ESCAPE '~' OR
+			"al_group_1"."AlertCode" LIKE @cpty_2 ESCAPE '~'
 		GROUP BY
 			"al_group_1"."AlertKey",
 			"al_group_1"."AlertCode",
@@ -177,14 +56,13 @@ FROM
 	) "al_group_3"
 		LEFT JOIN LATERAL (
 			SELECT
-				"nomin_2"."CargoId",
+				"nomin_2"."CargoId" as "cond",
 				"nomin_2"."DeliveryId",
 				"nomin_2"."DeliveryCounterParty",
-				"trade_2"."DealId",
+				"trade_2"."DealId" as "cond_1",
 				"trade_2"."ParcelId",
 				"trade_2"."CounterParty",
-				Coalesce("t1".MAX_1, "t1"."CreationDate") as "LastUpdate",
-				Coalesce("t1".MAX_1, "t1"."CreationDate") as "LastUpdate_1"
+				Coalesce("t1".MAX_1, "t1"."CreationDate") as "LastUpdate"
 			FROM
 				(
 					SELECT
@@ -209,44 +87,4 @@ FROM
 				"al_group_3"."CreationDate" = "t1"."CreationDate"
 			FETCH NEXT 1 ROWS ONLY
 		) "t2" ON 1=1
-
-BeforeExecute
--- Firebird.4 Firebird4
-
-EXECUTE BLOCK AS BEGIN
-	IF (EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'Flat')) THEN
-		EXECUTE STATEMENT 'DROP TABLE "Flat"';
-END
-
-BeforeExecute
--- Firebird.4 Firebird4
-
-EXECUTE BLOCK AS BEGIN
-	IF (EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'Nomin')) THEN
-		EXECUTE STATEMENT 'DROP TABLE "Nomin"';
-END
-
-BeforeExecute
--- Firebird.4 Firebird4
-
-EXECUTE BLOCK AS BEGIN
-	IF (EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'Trade')) THEN
-		EXECUTE STATEMENT 'DROP TABLE "Trade"';
-END
-
-BeforeExecute
--- Firebird.4 Firebird4
-
-EXECUTE BLOCK AS BEGIN
-	IF (EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'AuditAlert')) THEN
-		EXECUTE STATEMENT 'DROP TABLE "AuditAlert"';
-END
-
-BeforeExecute
--- Firebird.4 Firebird4
-
-EXECUTE BLOCK AS BEGIN
-	IF (EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'Alert')) THEN
-		EXECUTE STATEMENT 'DROP TABLE "Alert"';
-END
 

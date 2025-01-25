@@ -1,24 +1,5 @@
 ﻿BeforeExecute
 -- Sybase.Managed Sybase
-
-IF (OBJECT_ID(N'Test3664') IS NOT NULL)
-	DROP TABLE [Test3664]
-
-BeforeExecute
--- Sybase.Managed Sybase
-
-IF (OBJECT_ID(N'Test3664') IS NULL)
-	EXECUTE('
-		CREATE TABLE [Test3664]
-		(
-			[Id] Int NOT NULL,
-
-			CONSTRAINT [PK_Test3664] PRIMARY KEY CLUSTERED ([Id])
-		)
-	')
-
-BeforeExecute
--- Sybase.Managed Sybase
 DECLARE @Id Integer -- Int32
 SET     @Id = 1
 
@@ -30,37 +11,6 @@ VALUES
 (
 	@Id
 )
-
-BeforeExecute
--- Sybase.Managed Sybase
-
-IF (OBJECT_ID(N'Test3664Item') IS NOT NULL)
-	DROP TABLE [Test3664Item]
-
-BeforeExecute
--- Sybase.Managed Sybase
-
-IF (OBJECT_ID(N'Test3664Item') IS NULL)
-	EXECUTE('
-		CREATE TABLE [Test3664Item]
-		(
-			[Id]     Int NOT NULL,
-			[TestId] Int NOT NULL,
-
-			CONSTRAINT [PK_Test3664Item] PRIMARY KEY CLUSTERED ([Id])
-		)
-	')
-
-BeforeExecute
--- Sybase.Managed Sybase
-
-INSERT INTO [Test3664Item]
-(
-	[Id],
-	[TestId]
-)
-SELECT 11,1 UNION ALL
-SELECT 12,1
 
 BeforeExecute
 BeginTransaction(RepeatableRead)
@@ -115,16 +65,4 @@ SELECT
 	[t1].[Id]
 FROM
 	[Test3664] [t1]
-
-BeforeExecute
--- Sybase.Managed Sybase
-
-IF (OBJECT_ID(N'Test3664Item') IS NOT NULL)
-	DROP TABLE [Test3664Item]
-
-BeforeExecute
--- Sybase.Managed Sybase
-
-IF (OBJECT_ID(N'Test3664') IS NOT NULL)
-	DROP TABLE [Test3664]
 

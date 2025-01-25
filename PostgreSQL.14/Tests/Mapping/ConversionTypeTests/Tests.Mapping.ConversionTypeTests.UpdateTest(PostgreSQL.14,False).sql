@@ -1,34 +1,5 @@
 ﻿BeforeExecute
 -- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
-
-DROP TABLE IF EXISTS "TrimTestTable"
-
-BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
-
-CREATE TABLE IF NOT EXISTS "TrimTestTable"
-(
-	"ID"   Int  NOT NULL,
-	"Data" text     NULL,
-
-	CONSTRAINT "PK_TrimTestTable" PRIMARY KEY ("ID")
-)
-
-BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
-
-INSERT INTO "TrimTestTable"
-(
-	"ID",
-	"Data"
-)
-VALUES
-(1,'***XXX***'),
-(2,'***HHH***'),
-(3,'***VVV***')
-
-BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
 DECLARE @Data Text(9) -- String
 SET     @Data = '***III***'
 DECLARE @ID Integer -- Int32
@@ -88,9 +59,4 @@ FROM
 	"TrimTestTable" r
 ORDER BY
 	r."ID"
-
-BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
-
-DROP TABLE IF EXISTS "TrimTestTable"
 

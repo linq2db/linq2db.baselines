@@ -2,18 +2,14 @@
 -- SQLite.Classic SQLite
 
 SELECT
-	CASE
-		WHEN EXISTS(
-			SELECT
-				*
-			FROM
-				[Child] [c_2]
-			WHERE
-				[c_2].[ParentID] = [p].[ParentID] AND [c_2].[ChildID] > -100
-		)
-			THEN 1
-		ELSE 0
-	END,
+	EXISTS(
+		SELECT
+			*
+		FROM
+			[Child] [c_2]
+		WHERE
+			[c_2].[ParentID] = [p].[ParentID] AND [c_2].[ChildID] > -100
+	),
 	(
 		SELECT
 			COUNT(*)

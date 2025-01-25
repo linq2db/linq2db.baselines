@@ -6,38 +6,27 @@ SELECT
 		SELECT
 			COUNT(*)
 		FROM
-			[Doctor] [d_1]
+			[Doctor] [d]
 		WHERE
-			[d_1].[PersonID] = [i_1].[PersonID]
+			[d].[PersonID] = [t].[PersonID]
 	),
-	[i_1].[PersonID],
-	[i_1].[FirstName],
-	[i_1].[LastName],
-	[i_1].[MiddleName],
-	[i_1].[Gender],
-	[i_1].[FullName],
-	[i_1].[FullName],
-	[i_1].[DoctorCount]
-FROM
+	[t].[PersonID],
+	[t].[FirstName],
+	[t].[LastName],
+	[t].[MiddleName],
+	[t].[Gender],
+	[t].[LastName] || ', ' || [t].[FirstName],
+	[t].[LastName] || ', ' || [t].[FirstName],
 	(
 		SELECT
-			[i].[FirstName],
-			[i].[PersonID],
-			[i].[LastName],
-			[i].[MiddleName],
-			[i].[Gender],
-			[i].[LastName] || ', ' || [i].[FirstName] as [FullName],
-			(
-				SELECT
-					COUNT(*)
-				FROM
-					[Doctor] [d]
-				WHERE
-					[d].[PersonID] = [i].[PersonID]
-			) as [DoctorCount]
+			COUNT(*)
 		FROM
-			[Person] [i]
-	) [i_1]
+			[Doctor] [d_1]
+		WHERE
+			[d_1].[PersonID] = [t].[PersonID]
+	)
+FROM
+	[Person] [t]
 WHERE
-	[i_1].[FirstName] <> 'John'
+	[t].[FirstName] <> 'John'
 

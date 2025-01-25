@@ -1,37 +1,5 @@
 ﻿BeforeExecute
 -- Firebird.3 Firebird3
-
-EXECUTE BLOCK AS BEGIN
-	IF (EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'ValueConversion')) THEN
-		EXECUTE STATEMENT 'DROP TABLE "ValueConversion"';
-END
-
-BeforeExecute
--- Firebird.3 Firebird3
-
-EXECUTE BLOCK AS BEGIN
-	IF (NOT EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'ValueConversion')) THEN
-		EXECUTE STATEMENT '
-			CREATE TABLE "ValueConversion"
-			(
-				"Id"                      Int                                    NOT NULL,
-				"Value1"                  VarChar(200) CHARACTER SET UNICODE_FSS,
-				"Value2"                  VarChar(200) CHARACTER SET UNICODE_FSS,
-				"Enum"                    VarChar(50) CHARACTER SET UNICODE_FSS  NOT NULL,
-				"EnumNullable"            VarChar(50) CHARACTER SET UNICODE_FSS,
-				"EnumWithNull"            VarChar(50) CHARACTER SET UNICODE_FSS,
-				"EnumWithNullDeclarative" VarChar(50) CHARACTER SET UNICODE_FSS,
-				"BoolValue"               VarChar(1) CHARACTER SET UNICODE_FSS   NOT NULL,
-				"AnotherBoolValue"        VarChar(1) CHARACTER SET UNICODE_FSS   NOT NULL,
-				"DateTimeNullable"        TimeStamp,
-
-				CONSTRAINT "PK_ValueConversion" PRIMARY KEY ("Id")
-			)
-		';
-END
-
-BeforeExecute
--- Firebird.3 Firebird3
 DECLARE @iteration Integer -- Int32
 SET     @iteration = 1
 DECLARE @Value1 VarChar(2) -- String
@@ -56,12 +24,12 @@ INSERT INTO "ValueConversion"
 )
 VALUES
 (
-	CAST(@iteration AS Int),
-	CAST(@Value1 AS VARCHAR(2)),
-	CAST(@Enum AS VARCHAR(6)),
-	CAST(@inserted AS VARCHAR(22)),
-	CAST(@boolValue AS VarChar(1) CHARACTER SET UNICODE_FSS),
-	CAST(@boolValue_1 AS VarChar(1) CHARACTER SET UNICODE_FSS)
+	@iteration,
+	@Value1,
+	@Enum,
+	@inserted,
+	@boolValue,
+	@boolValue_1
 )
 
 BeforeExecute
@@ -85,12 +53,4 @@ FROM
 WHERE
 	"e"."Id" = @iteration
 FETCH NEXT 2 ROWS ONLY
-
-BeforeExecute
--- Firebird.3 Firebird3
-
-EXECUTE BLOCK AS BEGIN
-	IF (EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'ValueConversion')) THEN
-		EXECUTE STATEMENT 'DROP TABLE "ValueConversion"';
-END
 

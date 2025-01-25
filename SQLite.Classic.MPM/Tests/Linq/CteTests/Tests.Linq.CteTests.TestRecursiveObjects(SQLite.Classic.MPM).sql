@@ -1,23 +1,6 @@
 ﻿BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
-DROP TABLE IF EXISTS [OrgGroup]
-
-BeforeExecute
--- SQLite.Classic.MPM SQLite.Classic SQLite
-
-CREATE TABLE IF NOT EXISTS [OrgGroup]
-(
-	[Id]        INTEGER       NOT NULL,
-	[ParentId]  INTEGER       NOT NULL,
-	[GroupName] NVarChar(255)     NULL,
-
-	CONSTRAINT [PK_OrgGroup] PRIMARY KEY ([Id])
-)
-
-BeforeExecute
--- SQLite.Classic.MPM SQLite.Classic SQLite
-
 WITH [previous]
 (
 	[OrgGroup_Id],
@@ -31,7 +14,7 @@ AS
 		[parent].[Id],
 		[parent].[ParentId],
 		[parent].[GroupName],
-		0
+		CAST(0 AS INTEGER)
 	FROM
 		[OrgGroup] [parent]
 	UNION
@@ -45,14 +28,9 @@ AS
 			INNER JOIN [previous] [parent_1] ON [parent_1].[OrgGroup_Id] = [child].[ParentId]
 )
 SELECT
-	[t1].[OrgGroup_Id],
-	[t1].[OrgGroup_ParentId],
-	[t1].[OrgGroup_GroupName]
+	[wrapper].[OrgGroup_Id],
+	[wrapper].[OrgGroup_ParentId],
+	[wrapper].[OrgGroup_GroupName]
 FROM
-	[previous] [t1]
-
-BeforeExecute
--- SQLite.Classic.MPM SQLite.Classic SQLite
-
-DROP TABLE IF EXISTS [OrgGroup]
+	[previous] [wrapper]
 

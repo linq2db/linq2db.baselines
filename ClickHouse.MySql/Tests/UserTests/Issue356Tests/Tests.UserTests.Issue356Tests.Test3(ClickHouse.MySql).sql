@@ -2,10 +2,10 @@
 -- ClickHouse.MySql ClickHouse
 
 SELECT
-	x.ParentID,
+	t3.ParentID,
 	t2.ChildID
 FROM
-	Parent x
+	Parent t3
 		INNER JOIN (
 			SELECT
 				c_2.ParentID as ParentID,
@@ -27,8 +27,8 @@ FROM
 			ORDER BY
 				c_2.ParentID
 			LIMIT 10, 10
-		) t2 ON t2.ParentID = x.ParentID
+		) t2 ON t2.ParentID = t3.ParentID
 ORDER BY
-	x.ParentID
+	t3.ParentID
 LIMIT 10
 

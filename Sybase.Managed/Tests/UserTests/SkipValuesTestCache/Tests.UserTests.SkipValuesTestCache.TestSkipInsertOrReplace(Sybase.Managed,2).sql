@@ -1,26 +1,5 @@
 ﻿BeforeExecute
 -- Sybase.Managed Sybase
-
-IF (OBJECT_ID(N'PR_1598_Insert_Table_Cache') IS NOT NULL)
-	DROP TABLE [PR_1598_Insert_Table_Cache]
-
-BeforeExecute
--- Sybase.Managed Sybase
-
-IF (OBJECT_ID(N'PR_1598_Insert_Table_Cache') IS NULL)
-	EXECUTE('
-		CREATE TABLE [PR_1598_Insert_Table_Cache]
-		(
-			[Id]   Int           NOT NULL,
-			[Name] NVarChar(255)     NULL,
-			[Age]  Int               NULL,
-
-			CONSTRAINT PK_PR_1598_Insert_Table_Cache PRIMARY KEY CLUSTERED ([Id])
-		)
-	')
-
-BeforeExecute
--- Sybase.Managed Sybase
 DECLARE @Name UniVarChar(4) -- String
 SET     @Name = 'John'
 DECLARE @Age Integer -- Int32
@@ -120,10 +99,4 @@ FROM
 	[PR_1598_Insert_Table_Cache] [t]
 WHERE
 	[t].[Id] = 1
-
-BeforeExecute
--- Sybase.Managed Sybase
-
-IF (OBJECT_ID(N'PR_1598_Insert_Table_Cache') IS NOT NULL)
-	DROP TABLE [PR_1598_Insert_Table_Cache]
 

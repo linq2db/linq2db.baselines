@@ -1,19 +1,5 @@
 ﻿BeforeExecute
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql
-
-DROP TABLE IF EXISTS `Issue1363`
-
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
-
-CREATE TABLE IF NOT EXISTS `Issue1363`
-(
-	`required_field` CHAR(36) NOT NULL,
-	`optional_field` CHAR(36)     NULL
-)
-
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
 DECLARE @id Guid
 SET     @id = 'bc7b663d-0fde-4327-8f92-5d8cc3a11d11'
 
@@ -73,9 +59,4 @@ FROM
 WHERE
 	`t1`.`required_field` = @id2
 LIMIT 2
-
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
-
-DROP TABLE IF EXISTS `Issue1363`
 

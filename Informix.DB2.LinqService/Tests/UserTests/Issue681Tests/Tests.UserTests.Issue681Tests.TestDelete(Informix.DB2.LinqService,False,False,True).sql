@@ -1,22 +1,6 @@
 ﻿BeforeExecute
 -- Informix.DB2 Informix
 
-DROP TABLE IF EXISTS Issue681Table
-
-BeforeExecute
--- Informix.DB2 Informix
-
-CREATE TABLE IF NOT EXISTS Issue681Table
-(
-	ID      Int NOT NULL,
-	"Value" Int NOT NULL,
-
-	PRIMARY KEY (ID)
-)
-
-BeforeExecute
--- Informix.DB2 Informix
-
 SELECT FIRST 1
 	user
 FROM
@@ -31,9 +15,4 @@ DELETE FROM
 	informix.Issue681Table
 WHERE
 	informix.Issue681Table.ID = @ID
-
-BeforeExecute
--- Informix.DB2 Informix
-
-DROP TABLE IF EXISTS Issue681Table
 

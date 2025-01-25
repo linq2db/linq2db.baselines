@@ -10,16 +10,16 @@ FROM
 	[GrandChild] [grandChild_1]
 		INNER JOIN [Child] [child_1] ON [grandChild_1].[ChildID] = [child_1].[ChildID]
 		LEFT JOIN [Parent] [a_Parent] ON [child_1].[ParentID] = [a_Parent].[ParentID]
-		LEFT JOIN (
-			SELECT
-				[grandChild1].[GrandChildID],
-				ROW_NUMBER() OVER (PARTITION BY [grandChild1].[ParentID] ORDER BY [grandChild1].[ParentID]) as [rn],
-				[grandChild1].[ParentID]
+		OUTER APPLY (
+			SELECT TOP (1)
+				[grandChild1].[GrandChildID]
 			FROM
 				[Child] [pf]
 					INNER JOIN [Parent] [parent1] ON [pf].[ParentID] = [parent1].[ParentID]
 					INNER JOIN [GrandChild] [grandChild1]
 						LEFT JOIN [Child] [a_Child] ON [grandChild1].[ChildID] = [a_Child].[ChildID]
 					ON [parent1].[ParentID] = [a_Child].[ParentID]
-		) [pf_1] ON ([pf_1].[ParentID] = [a_Parent].[ParentID] OR [pf_1].[ParentID] IS NULL AND [a_Parent].[ParentID] IS NULL) AND [pf_1].[rn] <= 1
+			WHERE
+				[grandChild1].[ParentID] = [a_Parent].[ParentID]
+		) [pf_1]
 

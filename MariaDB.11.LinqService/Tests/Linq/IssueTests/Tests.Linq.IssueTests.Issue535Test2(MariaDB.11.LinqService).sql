@@ -1,24 +1,5 @@
 ﻿BeforeExecute
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql
-
-DROP TABLE IF EXISTS `CustomerBase`
-
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
-
-CREATE TABLE IF NOT EXISTS `CustomerBase`
-(
-	`Id`           INT           AUTO_INCREMENT NOT NULL,
-	`ClientType`   CHAR(6)                      NOT NULL,
-	`Name`         VARCHAR(4000)                    NULL,
-	`ContactEmail` VARCHAR(4000)                    NULL,
-	`Enabled`      BOOLEAN                          NULL,
-
-	CONSTRAINT `PK_CustomerBase` PRIMARY KEY CLUSTERED (`Id`)
-)
-
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
 DECLARE @filter VarChar(4) -- String
 SET     @filter = 'test'
 
@@ -26,14 +7,9 @@ SELECT
 	`q`.`Id`,
 	`q`.`Name`,
 	`q`.`ContactEmail`,
-	`q`.`Enabled`
+	Coalesce(`q`.`Enabled`, 0)
 FROM
 	`CustomerBase` `q`
 WHERE
 	`q`.`ClientType` = 'Client' AND (LOCATE(@filter, `q`.`Name`) > 0 OR LOCATE(@filter, `q`.`ContactEmail`) > 0)
-
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
-
-DROP TABLE IF EXISTS `CustomerBase`
 

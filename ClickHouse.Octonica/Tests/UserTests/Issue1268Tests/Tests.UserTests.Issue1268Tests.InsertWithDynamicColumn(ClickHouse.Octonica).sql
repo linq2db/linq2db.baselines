@@ -1,22 +1,6 @@
 ﻿BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
-DROP TABLE IF EXISTS DynamicColumnTable
-
-BeforeExecute
--- ClickHouse.Octonica ClickHouse
-
-CREATE TABLE IF NOT EXISTS DynamicColumnTable
-(
-	Id        Int32,
-	Name      Nullable(String),
-	IsDeleted Bool
-)
-ENGINE = Memory()
-
-BeforeExecute
--- ClickHouse.Octonica ClickHouse
-
 INSERT INTO DynamicColumnTable
 (
 	Id,
@@ -71,9 +55,4 @@ FROM
 WHERE
 	e.Name = 'Some2'
 LIMIT 1
-
-BeforeExecute
--- ClickHouse.Octonica ClickHouse
-
-DROP TABLE IF EXISTS DynamicColumnTable
 

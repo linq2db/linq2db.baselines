@@ -1,20 +1,6 @@
 ﻿BeforeExecute
 -- PostgreSQL.15 PostgreSQL
 
-DROP TABLE IF EXISTS "CteChild"
-
-BeforeExecute
--- PostgreSQL.15 PostgreSQL
-
-CREATE TABLE IF NOT EXISTS "CteChild"
-(
-	"ChildID"  Int NOT NULL,
-	"ParentID" Int NOT NULL
-)
-
-BeforeExecute
--- PostgreSQL.15 PostgreSQL
-
 WITH "CTE1_" ("ParentID")
 AS
 (
@@ -67,16 +53,11 @@ SELECT
 	c4."ChildID",
 	c4."ParentID"
 FROM
-	"Child" p
-		INNER JOIN "Child" c4 ON c4."ParentID" = p."ParentID"
+	"Child" c_1
+		INNER JOIN "Child" c4 ON c4."ParentID" = c_1."ParentID"
 WHERE
-	p."ParentID" > 1 AND (c4."ParentID"::decimal % 2)::decimal = 0
+	c_1."ParentID" > 1 AND (c4."ParentID"::decimal % 2)::decimal = 0
 ORDER BY
 	c4."ChildID",
 	c4."ParentID"
-
-BeforeExecute
--- PostgreSQL.15 PostgreSQL
-
-DROP TABLE IF EXISTS "CteChild"
 

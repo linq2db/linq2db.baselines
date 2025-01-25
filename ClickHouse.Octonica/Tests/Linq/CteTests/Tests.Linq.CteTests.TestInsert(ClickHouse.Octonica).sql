@@ -1,21 +1,6 @@
 ﻿BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
-DROP TABLE IF EXISTS CteChild
-
-BeforeExecute
--- ClickHouse.Octonica ClickHouse
-
-CREATE TABLE IF NOT EXISTS CteChild
-(
-	ChildID  Int32,
-	ParentID Int32
-)
-ENGINE = Memory()
-
-BeforeExecute
--- ClickHouse.Octonica ClickHouse
-
 INSERT INTO CteChild
 (
 	ChildID,
@@ -66,16 +51,11 @@ SELECT
 	c4.ChildID,
 	c4.ParentID
 FROM
-	Child p
-		INNER JOIN Child c4 ON c4.ParentID = p.ParentID
+	Child c_1
+		INNER JOIN Child c4 ON c4.ParentID = c_1.ParentID
 WHERE
-	p.ParentID > 1 AND c4.ParentID % 2 = 0
+	c_1.ParentID > 1 AND c4.ParentID % 2 = 0
 ORDER BY
 	c4.ChildID,
 	c4.ParentID
-
-BeforeExecute
--- ClickHouse.Octonica ClickHouse
-
-DROP TABLE IF EXISTS CteChild
 

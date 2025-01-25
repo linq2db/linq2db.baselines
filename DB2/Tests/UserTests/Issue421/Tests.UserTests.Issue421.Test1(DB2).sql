@@ -1,29 +1,5 @@
 ﻿BeforeExecute
 -- DB2 DB2.LUW DB2LUW
-
-BEGIN
-	DECLARE CONTINUE HANDLER FOR SQLSTATE '42704' BEGIN END;
-	EXECUTE IMMEDIATE 'DROP TABLE "BlobClass"';
-END
-
-BeforeExecute
--- DB2 DB2.LUW DB2LUW
-
-BEGIN
-	DECLARE CONTINUE HANDLER FOR SQLSTATE '42710' BEGIN END;
-	EXECUTE IMMEDIATE '
-		CREATE TABLE "BlobClass"
-		(
-			"Id"        Int  NOT NULL,
-			"BlobValue" Blob     NULL,
-
-			CONSTRAINT "PK_BlobClass" PRIMARY KEY ("Id")
-		)
-	';
-END
-
-BeforeExecute
--- DB2 DB2.LUW DB2LUW
 DECLARE @Id Integer(4) -- Int32
 SET     @Id = 1
 DECLARE @BlobValue Blob(3) -- Binary
@@ -36,8 +12,8 @@ INSERT INTO "BlobClass"
 )
 VALUES
 (
-	CAST(@Id AS Int),
-	CAST(@BlobValue AS Blob(3))
+	@Id,
+	@BlobValue
 )
 
 BeforeExecute
@@ -60,7 +36,7 @@ SET     @BlobValue = BX'030201'
 UPDATE
 	"BlobClass" "t1"
 SET
-	"BlobValue" = CAST(@BlobValue AS Blob(3))
+	"BlobValue" = @BlobValue
 WHERE
 	"t1"."Id" = 1
 
@@ -75,12 +51,4 @@ FROM
 WHERE
 	"t1"."Id" = 1
 FETCH NEXT 1 ROWS ONLY
-
-BeforeExecute
--- DB2 DB2.LUW DB2LUW
-
-BEGIN
-	DECLARE CONTINUE HANDLER FOR SQLSTATE '42704' BEGIN END;
-	EXECUTE IMMEDIATE 'DROP TABLE "BlobClass"';
-END
 

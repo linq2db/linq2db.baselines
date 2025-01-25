@@ -1,33 +1,5 @@
 ﻿BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
-
-DROP TABLE IF EXISTS "IntEnumTable"
-
-BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
-
-CREATE TABLE IF NOT EXISTS "IntEnumTable"
-(
-	"Id"             Int NOT NULL,
-	"Column"         Int NOT NULL,
-	"ColumnNullable" Int     NULL
-)
-
-BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
-
-INSERT INTO "IntEnumTable"
-(
-	"Id",
-	"Column",
-	"ColumnNullable"
-)
-VALUES
-(1,1,NULL),
-(2,2,3)
-
-BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
 DECLARE @Column Integer -- Int32
 SET     @Column = 2
 DECLARE @ColumnNullable Integer -- Int32
@@ -167,9 +139,4 @@ FROM
 	"IntEnumTable" t1
 ORDER BY
 	t1."Id"
-
-BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
-
-DROP TABLE IF EXISTS "IntEnumTable"
 

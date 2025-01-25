@@ -1,28 +1,6 @@
 ﻿BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 
-DROP TABLE IF EXISTS `ColumnOrderTest`
-
-BeforeExecute
--- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-
-CREATE TABLE IF NOT EXISTS `ColumnOrderTest`
-(
-	`RecordID`       INT           NOT NULL,
-	`EffectiveStart` DATETIME      NOT NULL,
-	`EffectiveEnd`   DATETIME          NULL,
-	`Key`            INT           NOT NULL,
-	`Name`           VARCHAR(4000)     NULL,
-	`Code`           VARCHAR(4000)     NULL,
-	`Audit1ID`       INT           NOT NULL,
-	`Audit2ID`       INT           NOT NULL,
-
-	CONSTRAINT `PK_ColumnOrderTest` PRIMARY KEY CLUSTERED (`RecordID`)
-)
-
-BeforeExecute
--- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-
 
 SELECT
 		TABLE_SCHEMA,
@@ -345,8 +323,3 @@ SET     @param1 = NULL
 
 BeforeExecute
 RollbackTransaction
-BeforeExecute
--- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-
-DROP TABLE IF EXISTS `ColumnOrderTest`
-

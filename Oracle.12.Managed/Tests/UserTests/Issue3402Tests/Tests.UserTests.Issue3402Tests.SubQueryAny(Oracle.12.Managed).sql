@@ -1,71 +1,6 @@
 ﻿BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12
 
-BEGIN
-	EXECUTE IMMEDIATE 'DROP TABLE VEMPLOYEE_SCH_SEC';
-EXCEPTION
-	WHEN OTHERS THEN
-		IF SQLCODE != -942 THEN
-			RAISE;
-		END IF;
-END;
-
-BeforeExecute
--- Oracle.12.Managed Oracle.Managed Oracle12
-
-BEGIN
-	EXECUTE IMMEDIATE '
-		CREATE TABLE VEMPLOYEE_SCH_SEC
-		(
-			ACTIVE Char(1)      NOT NULL,
-			ID     Int          NOT NULL,
-			NAME   VarChar(255) NOT NULL,
-
-			CONSTRAINT PK_VEMPLOYEE_SCH_SEC PRIMARY KEY (ID)
-		)
-	';
-EXCEPTION
-	WHEN OTHERS THEN
-		IF SQLCODE != -955 THEN
-			RAISE;
-		END IF;
-END;
-
-BeforeExecute
--- Oracle.12.Managed Oracle.Managed Oracle12
-
-BEGIN
-	EXECUTE IMMEDIATE 'DROP TABLE VEMPLOYEE_SCHDL_PERM';
-EXCEPTION
-	WHEN OTHERS THEN
-		IF SQLCODE != -942 THEN
-			RAISE;
-		END IF;
-END;
-
-BeforeExecute
--- Oracle.12.Managed Oracle.Managed Oracle12
-
-BEGIN
-	EXECUTE IMMEDIATE '
-		CREATE TABLE VEMPLOYEE_SCHDL_PERM
-		(
-			ID        Int     NOT NULL,
-			IS_ACTIVE Char(1) NOT NULL,
-
-			CONSTRAINT PK_VEMPLOYEE_SCHDL_PERM PRIMARY KEY (ID)
-		)
-	';
-EXCEPTION
-	WHEN OTHERS THEN
-		IF SQLCODE != -955 THEN
-			RAISE;
-		END IF;
-END;
-
-BeforeExecute
--- Oracle.12.Managed Oracle.Managed Oracle12
-
 SELECT
 	ess.ID
 FROM
@@ -79,28 +14,4 @@ WHERE
 		WHERE
 			ess.ID = y.ID AND y.IS_ACTIVE = 1
 	)
-
-BeforeExecute
--- Oracle.12.Managed Oracle.Managed Oracle12
-
-BEGIN
-	EXECUTE IMMEDIATE 'DROP TABLE VEMPLOYEE_SCHDL_PERM';
-EXCEPTION
-	WHEN OTHERS THEN
-		IF SQLCODE != -942 THEN
-			RAISE;
-		END IF;
-END;
-
-BeforeExecute
--- Oracle.12.Managed Oracle.Managed Oracle12
-
-BEGIN
-	EXECUTE IMMEDIATE 'DROP TABLE VEMPLOYEE_SCH_SEC';
-EXCEPTION
-	WHEN OTHERS THEN
-		IF SQLCODE != -942 THEN
-			RAISE;
-		END IF;
-END;
 

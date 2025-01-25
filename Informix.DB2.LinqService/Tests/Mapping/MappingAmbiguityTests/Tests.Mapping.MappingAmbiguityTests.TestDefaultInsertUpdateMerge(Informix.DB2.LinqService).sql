@@ -1,27 +1,6 @@
 ﻿BeforeExecute
 -- Informix.DB2 Informix
 
-DROP TABLE IF EXISTS TestTable
-
-BeforeExecute
--- Informix.DB2 Informix
-
-CREATE TABLE IF NOT EXISTS TestTable
-(
-	ID      Int           NOT NULL,
-	Field1  Int           NOT NULL,
-	Field2  Int           NOT NULL,
-	Field3  Int           NOT NULL,
-	Field4  Int           NOT NULL,
-	field11 NVarChar(255)     NULL,
-	Field5  Int           NOT NULL,
-
-	PRIMARY KEY (ID)
-)
-
-BeforeExecute
--- Informix.DB2 Informix
-
 MERGE INTO TestTable Target
 USING (
 	SELECT
@@ -77,9 +56,4 @@ SET
 	Field4 = Source.source_Field4,
 	field11 = Source.source_field1_1,
 	Field5 = Source.source_Field5
-
-BeforeExecute
--- Informix.DB2 Informix
-
-DROP TABLE IF EXISTS TestTable
 

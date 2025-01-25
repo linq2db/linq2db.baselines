@@ -196,8 +196,6 @@ VALUES
 
 BeforeExecute
 -- Access AccessOleDb
-DECLARE @p Integer -- Int32
-SET     @p = NULL
 
 SELECT
 	[x].[Id],
@@ -208,7 +206,7 @@ FROM
 	[ConditionalData] [x]
 WHERE
 	IIF([x].[StringProp] = '1' OR [x].[StringProp] IS NULL, '2', IIF([x].[StringProp] = '2', [x].[StringProp], [x].[StringProp] + '2')) LIKE '%2' AND
-	IIF([x].[StringProp] = '1' OR [x].[StringProp] IS NULL, @p, IIF([x].[StringProp] = '2', 1, 2)) = 2
+	IIF([x].[StringProp] = '1' OR [x].[StringProp] IS NULL, NULL, IIF([x].[StringProp] = '2', 1, 2)) = 2
 
 BeforeExecute
 -- Access AccessOleDb

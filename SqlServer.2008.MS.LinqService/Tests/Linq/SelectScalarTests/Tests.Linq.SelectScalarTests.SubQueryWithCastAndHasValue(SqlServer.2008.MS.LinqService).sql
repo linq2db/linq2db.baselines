@@ -9,11 +9,8 @@ FROM
 WHERE
 	(
 		SELECT TOP (1)
-			CASE
-				WHEN [r].[Value1] IS NOT NULL THEN 1
-				ELSE 0
-			END
+			[r].[Value1]
 		FROM
 			[Parent] [r]
-	) = 1
+	) IS NOT NULL
 

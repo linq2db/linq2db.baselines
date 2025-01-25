@@ -9,12 +9,9 @@ FROM
 WHERE
 	(
 		SELECT
-			CASE
-				WHEN `r`.`Value1` IS NOT NULL THEN 1
-				ELSE 0
-			END
+			`r`.`Value1`
 		FROM
 			`Parent` `r`
 		LIMIT 1
-	) = 1
+	) IS NOT NULL
 

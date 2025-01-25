@@ -1,30 +1,6 @@
 ﻿BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
-BEGIN
-	DECLARE CONTINUE HANDLER FOR SQLSTATE '42704' BEGIN END;
-	EXECUTE IMMEDIATE 'DROP TABLE "Issue1373Tests"';
-END
-
-BeforeExecute
--- DB2 DB2.LUW DB2LUW
-
-BEGIN
-	DECLARE CONTINUE HANDLER FOR SQLSTATE '42710' BEGIN END;
-	EXECUTE IMMEDIATE '
-		CREATE TABLE "Issue1373Tests"
-		(
-			"Id"     Int           NOT NULL,
-			"Field1" NVarChar(255)     NULL,
-
-			CONSTRAINT "PK_Issue1373Tests" PRIMARY KEY ("Id")
-		)
-	';
-END
-
-BeforeExecute
--- DB2 DB2.LUW DB2LUW
-
 INSERT INTO "Issue1373Tests"
 (
 	"Id",
@@ -38,8 +14,6 @@ VALUES
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
-DECLARE @Field1 VarChar -- String
-SET     @Field1 = NULL
 
 INSERT INTO "Issue1373Tests"
 (
@@ -49,7 +23,7 @@ INSERT INTO "Issue1373Tests"
 VALUES
 (
 	2,
-	CAST(@Field1 AS NVarChar(8168))
+	NULL
 )
 
 BeforeExecute
@@ -65,7 +39,7 @@ INSERT INTO "Issue1373Tests"
 VALUES
 (
 	3,
-	CAST(@Field1 AS NVarChar(4))
+	@Field1
 )
 
 BeforeExecute
@@ -78,12 +52,4 @@ FROM
 	"Issue1373Tests" "t1"
 ORDER BY
 	"t1"."Id"
-
-BeforeExecute
--- DB2 DB2.LUW DB2LUW
-
-BEGIN
-	DECLARE CONTINUE HANDLER FOR SQLSTATE '42704' BEGIN END;
-	EXECUTE IMMEDIATE 'DROP TABLE "Issue1373Tests"';
-END
 

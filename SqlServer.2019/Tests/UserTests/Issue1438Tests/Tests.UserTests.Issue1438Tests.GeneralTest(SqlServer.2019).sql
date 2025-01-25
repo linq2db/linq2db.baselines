@@ -1,22 +1,5 @@
 ﻿BeforeExecute
 -- SqlServer.2019
-
-DROP TABLE IF EXISTS [Issue1438]
-
-BeforeExecute
--- SqlServer.2019
-
-IF (OBJECT_ID(N'[Issue1438]', N'U') IS NULL)
-	CREATE TABLE [Issue1438]
-	(
-		[Id]  Int  NOT NULL IDENTITY,
-		[Has] Bit  NOT NULL,
-
-		CONSTRAINT [PK_Issue1438] PRIMARY KEY CLUSTERED ([Id])
-	)
-
-BeforeExecute
--- SqlServer.2019
 DECLARE @Has Bit -- Boolean
 SET     @Has = 1
 
@@ -43,9 +26,4 @@ FROM
 	[Issue1438] [t1]
 WHERE
 	[t1].[Id] = @id
-
-BeforeExecute
--- SqlServer.2019
-
-DROP TABLE IF EXISTS [Issue1438]
 

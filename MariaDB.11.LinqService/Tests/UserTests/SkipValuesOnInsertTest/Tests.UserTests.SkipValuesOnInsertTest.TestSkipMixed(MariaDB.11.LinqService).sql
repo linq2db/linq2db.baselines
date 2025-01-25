@@ -1,22 +1,5 @@
 ﻿BeforeExecute
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql
-
-DROP TABLE IF EXISTS `PR_1598_Mixed_Table`
-
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
-
-CREATE TABLE IF NOT EXISTS `PR_1598_Mixed_Table`
-(
-	`Id`   INT           NOT NULL,
-	`Name` VARCHAR(4000)     NULL,
-	`Age`  INT               NULL,
-
-	CONSTRAINT `PK_PR_1598_Mixed_Table` PRIMARY KEY CLUSTERED (`Id`)
-)
-
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
 DECLARE @Id Int32
 SET     @Id = 1
 DECLARE @Name VarChar(5) -- String
@@ -137,9 +120,4 @@ FROM
 WHERE
 	`t`.`Id` = 2
 LIMIT 1
-
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
-
-DROP TABLE IF EXISTS `PR_1598_Mixed_Table`
 

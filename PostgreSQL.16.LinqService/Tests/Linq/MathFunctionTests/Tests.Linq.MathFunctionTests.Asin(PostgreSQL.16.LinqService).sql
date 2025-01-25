@@ -2,14 +2,14 @@
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 
 SELECT
-	t_1.c1
+	t."Value_1"
 FROM
 	(
 		SELECT
-			Floor(Asin(t."MoneyValue"::Float / 15) * 15) as c1
+			Floor(Asin(p."MoneyValue"::Float / 15) * 15) as "Value_1"
 		FROM
-			"LinqDataTypes" t
-	) t_1
+			"LinqDataTypes" p
+	) t
 WHERE
-	t_1.c1 <> 0.10000000000000001
+	t."Value_1" <> 0.10000000000000001
 

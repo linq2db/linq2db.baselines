@@ -1,44 +1,5 @@
 ﻿BeforeExecute
 -- Oracle.11.Managed Oracle11
-
-BEGIN
-	EXECUTE IMMEDIATE 'DROP TABLE "TakeSkipClass"';
-EXCEPTION
-	WHEN OTHERS THEN
-		IF SQLCODE != -942 THEN
-			RAISE;
-		END IF;
-END;
-
-BeforeExecute
--- Oracle.11.Managed Oracle11
-
-BEGIN
-	EXECUTE IMMEDIATE '
-		CREATE TABLE "TakeSkipClass"
-		(
-			"Value" VarChar(10)     NULL
-		)
-	';
-EXCEPTION
-	WHEN OTHERS THEN
-		IF SQLCODE != -955 THEN
-			RAISE;
-		END IF;
-END;
-
-BeforeExecute
--- Oracle.11.Managed Oracle11
-
-INSERT ALL
-	INTO "TakeSkipClass" ("Value") VALUES ('PIPPO')
-	INTO "TakeSkipClass" ("Value") VALUES ('PLUTO')
-	INTO "TakeSkipClass" ("Value") VALUES ('PLUTO')
-	INTO "TakeSkipClass" ("Value") VALUES ('BOLTO')
-SELECT * FROM dual
-
-BeforeExecute
--- Oracle.11.Managed Oracle11
 DECLARE @take Int32
 SET     @take = 1
 
@@ -46,15 +7,15 @@ SELECT
 	CASE
 		WHEN EXISTS(
 			SELECT
-				t1."Value_1"
+				t1."Key_1"
 			FROM
 				(
 					SELECT
-						group_1."Value" as "Value_1"
+						item_1."Value" as "Key_1"
 					FROM
-						"TakeSkipClass" group_1
+						"TakeSkipClass" item_1
 					GROUP BY
-						group_1."Value"
+						item_1."Value"
 					HAVING
 						COUNT(*) > 1
 				) t1
@@ -65,16 +26,4 @@ SELECT
 		ELSE 0
 	END
 FROM SYS.DUAL
-
-BeforeExecute
--- Oracle.11.Managed Oracle11
-
-BEGIN
-	EXECUTE IMMEDIATE 'DROP TABLE "TakeSkipClass"';
-EXCEPTION
-	WHEN OTHERS THEN
-		IF SQLCODE != -942 THEN
-			RAISE;
-		END IF;
-END;
 

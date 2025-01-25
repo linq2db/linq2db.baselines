@@ -6,5 +6,5 @@ SELECT
 FROM
 	LinqDataTypes p
 WHERE
-	p.BoolValue = 'f'
+	NOT p.BoolValue
 

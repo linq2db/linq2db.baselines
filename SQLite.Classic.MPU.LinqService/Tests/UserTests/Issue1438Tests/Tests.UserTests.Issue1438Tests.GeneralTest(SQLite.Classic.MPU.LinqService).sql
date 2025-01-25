@@ -1,19 +1,5 @@
 ﻿BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-
-DROP TABLE IF EXISTS [Issue1438]
-
-BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
-
-CREATE TABLE IF NOT EXISTS [Issue1438]
-(
-	[Id]  INTEGER  NOT NULL PRIMARY KEY AUTOINCREMENT,
-	[Has] Bit      NOT NULL
-)
-
-BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
 DECLARE @Has  -- Boolean
 SET     @Has = 1
 
@@ -44,9 +30,4 @@ FROM
 WHERE
 	[t1].[Id] = @id
 LIMIT 2
-
-BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
-
-DROP TABLE IF EXISTS [Issue1438]
 

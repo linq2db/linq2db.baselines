@@ -1,48 +1,6 @@
 ﻿BeforeExecute
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 
-DROP TABLE IF EXISTS `OptimizationData`
-
-BeforeExecute
--- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
-CREATE TABLE IF NOT EXISTS `OptimizationData`
-(
-	`Id`                  INT           NOT NULL,
-	`IntVlaue`            INT           NOT NULL,
-	`IntVlaueNullable`    INT               NULL,
-	`BoolValue`           BOOLEAN       NOT NULL,
-	`BoolValueNullable`   BOOLEAN           NULL,
-	`StringValue`         VARCHAR(4000)     NULL,
-	`StringValueNullable` VARCHAR(4000)     NULL
-)
-
-BeforeExecute
--- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
-INSERT INTO `OptimizationData`
-(
-	`Id`,
-	`IntVlaue`,
-	`IntVlaueNullable`,
-	`BoolValue`,
-	`BoolValueNullable`,
-	`StringValue`,
-	`StringValueNullable`
-)
-VALUES
-(1,1,0,1,1,'1','1'),
-(2,2,1,0,NULL,'0','0'),
-(3,4,4,0,NULL,'1','1'),
-(4,0,1,1,1,'0',NULL),
-(5,1,3,1,1,'1',NULL),
-(6,3,0,0,0,'0','0'),
-(7,1,4,0,0,'1','1'),
-(8,3,2,1,1,'0','0')
-
-BeforeExecute
--- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
 /* x => x.IntVlaue == 1 ? 3 : 4 == 3 */
 SELECT
 	`x`.`Id`,
@@ -209,11 +167,6 @@ SELECT
 	`x_with_not`.`StringValueNullable`
 FROM
 	`OptimizationData` `x_with_not`
-WHERE
-	(`x_with_not`.`IntVlaue` <> 1 OR CASE
-		WHEN `x_with_not`.`IntVlaue` = 1 THEN NULL
-		ELSE 0
-	END IS NULL)
 
 BeforeExecute
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
@@ -274,11 +227,6 @@ SELECT
 	`swap_with_not`.`StringValueNullable`
 FROM
 	`OptimizationData` `swap_with_not`
-WHERE
-	(`swap_with_not`.`IntVlaue` <> 1 OR CASE
-		WHEN `swap_with_not`.`IntVlaue` = 1 THEN NULL
-		ELSE 0
-	END IS NULL)
 
 BeforeExecute
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
@@ -340,10 +288,7 @@ SELECT
 FROM
 	`OptimizationData` `x_with_not`
 WHERE
-	CASE
-		WHEN `x_with_not`.`IntVlaue` = 1 THEN NULL
-		ELSE 1
-	END IS NULL
+	`x_with_not`.`IntVlaue` = 1
 
 BeforeExecute
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
@@ -405,10 +350,7 @@ SELECT
 FROM
 	`OptimizationData` `swap_with_not`
 WHERE
-	CASE
-		WHEN `swap_with_not`.`IntVlaue` = 1 THEN NULL
-		ELSE 1
-	END IS NULL
+	`swap_with_not`.`IntVlaue` = 1
 
 BeforeExecute
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
@@ -470,7 +412,7 @@ SELECT
 FROM
 	`OptimizationData` `x_with_not`
 WHERE
-	`x_with_not`.`BoolValue` <> 1
+	`x_with_not`.`BoolValue` = 0
 
 BeforeExecute
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
@@ -532,7 +474,7 @@ SELECT
 FROM
 	`OptimizationData` `swap_with_not`
 WHERE
-	`swap_with_not`.`BoolValue` <> 1
+	`swap_with_not`.`BoolValue` = 0
 
 BeforeExecute
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
@@ -563,7 +505,7 @@ SELECT
 FROM
 	`OptimizationData` `x`
 WHERE
-	`x`.`BoolValue` <> 1
+	NOT `x`.`BoolValue`
 
 BeforeExecute
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
@@ -594,10 +536,7 @@ SELECT
 FROM
 	`OptimizationData` `x_with_not`
 WHERE
-	CASE
-		WHEN `x_with_not`.`BoolValue` = 1 THEN NULL
-		ELSE 1
-	END IS NULL
+	`x_with_not`.`BoolValue`
 
 BeforeExecute
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
@@ -628,7 +567,7 @@ SELECT
 FROM
 	`OptimizationData` `swap`
 WHERE
-	`swap`.`BoolValue` <> 1
+	NOT `swap`.`BoolValue`
 
 BeforeExecute
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
@@ -659,10 +598,7 @@ SELECT
 FROM
 	`OptimizationData` `swap_with_not`
 WHERE
-	CASE
-		WHEN `swap_with_not`.`BoolValue` = 1 THEN NULL
-		ELSE 1
-	END IS NULL
+	`swap_with_not`.`BoolValue`
 
 BeforeExecute
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
@@ -724,7 +660,7 @@ SELECT
 FROM
 	`OptimizationData` `x_with_not`
 WHERE
-	`x_with_not`.`BoolValue` <> 1
+	`x_with_not`.`BoolValue` = 0
 
 BeforeExecute
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
@@ -786,7 +722,7 @@ SELECT
 FROM
 	`OptimizationData` `swap_with_not`
 WHERE
-	`swap_with_not`.`BoolValue` <> 1
+	`swap_with_not`.`BoolValue` = 0
 
 BeforeExecute
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
@@ -1185,7 +1121,7 @@ SELECT
 FROM
 	`OptimizationData` `x`
 WHERE
-	(`x`.`StringValueNullable` IS NULL OR `x`.`StringValueNullable` IS NULL)
+	`x`.`StringValueNullable` IS NULL OR `x`.`StringValueNullable` IS NULL
 
 BeforeExecute
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
@@ -1247,7 +1183,7 @@ SELECT
 FROM
 	`OptimizationData` `x`
 WHERE
-	(`x`.`StringValueNullable` IS NULL OR `x`.`StringValueNullable` IS NULL)
+	`x`.`StringValueNullable` IS NULL OR `x`.`StringValueNullable` IS NULL
 
 BeforeExecute
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
@@ -1309,7 +1245,7 @@ SELECT
 FROM
 	`OptimizationData` `swap`
 WHERE
-	(`swap`.`StringValueNullable` IS NULL OR `swap`.`StringValueNullable` IS NULL)
+	`swap`.`StringValueNullable` IS NULL OR `swap`.`StringValueNullable` IS NULL
 
 BeforeExecute
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
@@ -1554,7 +1490,7 @@ SELECT
 FROM
 	`OptimizationData` `x`
 WHERE
-	(`x`.`IntVlaue` < 4 OR `x`.`IntVlaue` <> 0 AND `x`.`IntVlaue` >= 4)
+	`x`.`IntVlaue` < 4 OR `x`.`IntVlaue` <> 0 AND `x`.`IntVlaue` >= 4
 
 BeforeExecute
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
@@ -1616,7 +1552,7 @@ SELECT
 FROM
 	`OptimizationData` `swap`
 WHERE
-	(`swap`.`IntVlaue` < 4 OR `swap`.`IntVlaue` <> 0 AND `swap`.`IntVlaue` >= 4)
+	`swap`.`IntVlaue` < 4 OR `swap`.`IntVlaue` <> 0 AND `swap`.`IntVlaue` >= 4
 
 BeforeExecute
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
@@ -1678,7 +1614,7 @@ SELECT
 FROM
 	`OptimizationData` `x`
 WHERE
-	(`x`.`IntVlaue` < 4 OR `x`.`IntVlaue` > 0 AND `x`.`IntVlaue` >= 4)
+	`x`.`IntVlaue` < 4 OR `x`.`IntVlaue` > 0 AND `x`.`IntVlaue` >= 4
 
 BeforeExecute
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
@@ -1802,7 +1738,7 @@ SELECT
 FROM
 	`OptimizationData` `x`
 WHERE
-	(`x`.`IntVlaue` < 4 OR `x`.`IntVlaue` >= 0 AND `x`.`IntVlaue` >= 4)
+	`x`.`IntVlaue` < 4 OR `x`.`IntVlaue` >= 0 AND `x`.`IntVlaue` >= 4
 
 BeforeExecute
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
@@ -2050,7 +1986,7 @@ SELECT
 FROM
 	`OptimizationData` `x`
 WHERE
-	(`x`.`IntVlaue` <> 0 AND `x`.`IntVlaue` >= 4 OR `x`.`IntVlaue` < 4)
+	`x`.`IntVlaue` <> 0 AND `x`.`IntVlaue` >= 4 OR `x`.`IntVlaue` < 4
 
 BeforeExecute
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
@@ -2112,7 +2048,8 @@ SELECT
 FROM
 	`OptimizationData` `swap`
 WHERE
-	(`swap`.`IntVlaue` <> 0 AND `swap`.`IntVlaue` >= 4 OR `swap`.`IntVlaue` < 4)
+	`swap`.`IntVlaue` <> 0 AND `swap`.`IntVlaue` >= 4 OR
+	`swap`.`IntVlaue` < 4
 
 BeforeExecute
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
@@ -2174,7 +2111,7 @@ SELECT
 FROM
 	`OptimizationData` `x`
 WHERE
-	(`x`.`IntVlaue` > 0 AND `x`.`IntVlaue` >= 4 OR `x`.`IntVlaue` < 4)
+	`x`.`IntVlaue` > 0 AND `x`.`IntVlaue` >= 4 OR `x`.`IntVlaue` < 4
 
 BeforeExecute
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
@@ -2298,7 +2235,7 @@ SELECT
 FROM
 	`OptimizationData` `x`
 WHERE
-	(`x`.`IntVlaue` >= 0 AND `x`.`IntVlaue` >= 4 OR `x`.`IntVlaue` < 4)
+	`x`.`IntVlaue` >= 0 AND `x`.`IntVlaue` >= 4 OR `x`.`IntVlaue` < 4
 
 BeforeExecute
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
@@ -2406,9 +2343,4 @@ SELECT
 	`t1`.`StringValueNullable`
 FROM
 	`OptimizationData` `t1`
-
-BeforeExecute
--- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
-DROP TABLE IF EXISTS `OptimizationData`
 

@@ -30,14 +30,11 @@ END;
 BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12
 
-INSERT INTO ISSUE4172TABLE
-(
-	ROLE
-)
-VALUES
-(
-	'1'
-)
+INSERT ALL
+	INTO ISSUE4172TABLE (ROLE) VALUES ('')
+	INTO ISSUE4172TABLE (ROLE) VALUES ('')
+	INTO ISSUE4172TABLE (ROLE) VALUES ('1')
+SELECT * FROM dual
 
 BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12
@@ -47,7 +44,7 @@ SELECT
 FROM
 	ISSUE4172TABLE u
 WHERE
-	(u.ROLE = '' OR u.ROLE IS NULL)
+	u.ROLE IS NULL
 
 BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12

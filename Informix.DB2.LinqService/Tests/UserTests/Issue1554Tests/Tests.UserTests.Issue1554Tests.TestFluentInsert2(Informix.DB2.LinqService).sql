@@ -1,22 +1,11 @@
 ﻿BeforeExecute
 -- Informix.DB2 Informix
-
-DROP TABLE IF EXISTS Issue1554FluentTable
-
-BeforeExecute
--- Informix.DB2 Informix
-
-CREATE TABLE IF NOT EXISTS Issue1554FluentTable
-(
-	Id              Int         NOT NULL,
-	ClaimedKeyType  NVarChar(3) NOT NULL,
-	ClaimedKeyTypeN NVarChar(3)     NULL,
-
-	PRIMARY KEY (Id)
-)
-
-BeforeExecute
--- Informix.DB2 Informix
+DECLARE @Id Integer(4) -- Int32
+SET     @Id = 0
+DECLARE @ClaimedKeyType VarChar(2) -- String
+SET     @ClaimedKeyType = 'EC'
+DECLARE @ClaimedKeyTypeN VarChar -- String
+SET     @ClaimedKeyTypeN = NULL
 
 INSERT INTO Issue1554FluentTable
 (
@@ -26,9 +15,9 @@ INSERT INTO Issue1554FluentTable
 )
 VALUES
 (
-	0,
-	'EC',
-	NULL
+	@Id,
+	@ClaimedKeyType,
+	@ClaimedKeyTypeN
 )
 
 BeforeExecute
@@ -40,9 +29,4 @@ SELECT FIRST 2
 	t1.ClaimedKeyTypeN
 FROM
 	Issue1554FluentTable t1
-
-BeforeExecute
--- Informix.DB2 Informix
-
-DROP TABLE IF EXISTS Issue1554FluentTable
 

@@ -2,18 +2,14 @@
 -- DB2 DB2.LUW DB2LUW
 
 SELECT
-	CASE
-		WHEN EXISTS(
-			SELECT
-				*
-			FROM
-				"Child" "c_3"
-			WHERE
-				"c_3"."ParentID" = "p"."ParentID" AND "c_3"."ChildID" > -100
-		)
-			THEN 1
-		ELSE 0
-	END,
+	CAST(EXISTS(
+		SELECT
+			*
+		FROM
+			"Child" "c_3"
+		WHERE
+			"c_3"."ParentID" = "p"."ParentID" AND "c_3"."ChildID" > -100
+	) AS smallint),
 	(
 		SELECT
 			COUNT(*)

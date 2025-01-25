@@ -1,22 +1,6 @@
 ﻿BeforeExecute
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql
 
-DROP TABLE IF EXISTS `test_temp`
-
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
-
-CREATE TABLE IF NOT EXISTS `test_temp`
-(
-	`ID`     INT     AUTO_INCREMENT NOT NULL,
-	`Field1` DECIMAL                NOT NULL,
-
-	CONSTRAINT `PK_test_temp` PRIMARY KEY CLUSTERED (`ID`)
-)
-
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
-
 DELETE FROM `test_temp`
 
 BeforeExecute
@@ -99,9 +83,4 @@ FROM
 ORDER BY
 	`t1`.`ID`
 LIMIT @skip, 2
-
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
-
-DROP TABLE IF EXISTS `test_temp`
 

@@ -13,7 +13,7 @@ WHERE
 		FROM
 			"Parent" param
 		WHERE
-			param."ParentID" = c_1."ParentID" AND Nvl(param."Value1", -1) = c_1."ParentID"
+			param."ParentID" = c_1."ParentID" AND Coalesce(param."Value1", -1) = c_1."ParentID"
 	)
 
 BeforeExecute

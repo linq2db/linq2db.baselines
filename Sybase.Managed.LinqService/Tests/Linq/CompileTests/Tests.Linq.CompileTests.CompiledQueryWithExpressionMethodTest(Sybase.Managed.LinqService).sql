@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- Sybase.Managed Sybase
-DECLARE @ParentID Integer -- Int32
-SET     @ParentID = 1
+DECLARE @p Integer -- Int32
+SET     @p = 1
 
 SELECT TOP 1
 	[x].[ParentID],
@@ -9,7 +9,7 @@ SELECT TOP 1
 FROM
 	[Parent] [x]
 WHERE
-	[x].[ParentID] = @ParentID
+	[x].[ParentID] = @p
 ORDER BY
 	[x].[ParentID] DESC
 

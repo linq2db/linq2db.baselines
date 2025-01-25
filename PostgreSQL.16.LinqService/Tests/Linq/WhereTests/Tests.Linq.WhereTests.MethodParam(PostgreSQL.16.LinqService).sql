@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
-DECLARE @ID Integer -- Int32
-SET     @ID = 1
+DECLARE @p Integer -- Int32
+SET     @p = 1
 
 SELECT
 	p."FirstName",
@@ -12,5 +12,5 @@ SELECT
 FROM
 	"Person" p
 WHERE
-	p."PersonID" = :ID
+	p."PersonID" = :p
 

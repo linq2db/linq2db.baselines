@@ -1,48 +1,6 @@
 ﻿BeforeExecute
 -- SqlCe
 
-DROP TABLE [MRECEIPT]
-
-BeforeExecute
--- SqlCe
-
-CREATE TABLE [MRECEIPT]
-(
-	[RECEIPT_NO] NVarChar(255)     NULL,
-	[CUSTKEY]    NVarChar(255)     NULL
-)
-
-BeforeExecute
--- SqlCe
-
-DROP TABLE [EXTERNAL_RECEIPTS]
-
-BeforeExecute
--- SqlCe
-
-CREATE TABLE [EXTERNAL_RECEIPTS]
-(
-	[RECEIPT_NO] NVarChar(255)     NULL,
-	[CUSTKEY]    NVarChar(255)     NULL
-)
-
-BeforeExecute
--- SqlCe
-
-DROP TABLE [CUST_DTL]
-
-BeforeExecute
--- SqlCe
-
-CREATE TABLE [CUST_DTL]
-(
-	[CUSTKEY]   NVarChar(255)     NULL,
-	[BILLGROUP] NVarChar(255)     NULL
-)
-
-BeforeExecute
--- SqlCe
-
 SELECT
 	[i_1].[ReceiptNo],
 	[a_Customer].[BILLGROUP] as [BillingGroup]
@@ -60,20 +18,5 @@ FROM
 		FROM
 			[EXTERNAL_RECEIPTS] [t1]
 	) [i_1]
-		LEFT JOIN [CUST_DTL] [a_Customer] ON ([i_1].[Custkey] = [a_Customer].[CUSTKEY] OR [i_1].[Custkey] IS NULL AND [a_Customer].[CUSTKEY] IS NULL)
-
-BeforeExecute
--- SqlCe
-
-DROP TABLE [CUST_DTL]
-
-BeforeExecute
--- SqlCe
-
-DROP TABLE [EXTERNAL_RECEIPTS]
-
-BeforeExecute
--- SqlCe
-
-DROP TABLE [MRECEIPT]
+		LEFT JOIN [CUST_DTL] [a_Customer] ON [i_1].[Custkey] = [a_Customer].[CUSTKEY] OR [i_1].[Custkey] IS NULL AND [a_Customer].[CUSTKEY] IS NULL
 

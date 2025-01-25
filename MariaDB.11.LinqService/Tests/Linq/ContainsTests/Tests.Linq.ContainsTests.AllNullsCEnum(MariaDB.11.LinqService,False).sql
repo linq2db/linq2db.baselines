@@ -1,97 +1,24 @@
 ﻿BeforeExecute
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql
-
-DROP TABLE IF EXISTS `Src`
-
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
-
-CREATE TABLE IF NOT EXISTS `Src`
-(
-	`Id`    INT         NOT NULL,
-	`Int`   INT             NULL,
-	`Enum`  VARCHAR(5)      NULL,
-	`CEnum` VARCHAR(20)     NULL
-)
-
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
-DECLARE @Id Int32
-SET     @Id = 1
-DECLARE @Int Int32
-SET     @Int = NULL
-DECLARE @Enum VarChar -- String
-SET     @Enum = NULL
-DECLARE @CEnum VarChar -- AnsiString
-SET     @CEnum = NULL
-
-INSERT INTO `Src`
-(
-	`Id`,
-	`Int`,
-	`Enum`,
-	`CEnum`
-)
-VALUES
-(
-	@Id,
-	@Int,
-	@Enum,
-	@CEnum
-)
-
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
-DECLARE @Id Int32
-SET     @Id = 2
-DECLARE @Int Int32
-SET     @Int = 2
-DECLARE @Enum VarChar(3) -- String
-SET     @Enum = 'TWO'
-DECLARE @CEnum VarChar(12) -- AnsiString
-SET     @CEnum = '___Value2___'
-
-INSERT INTO `Src`
-(
-	`Id`,
-	`Int`,
-	`Enum`,
-	`CEnum`
-)
-VALUES
-(
-	@Id,
-	@Int,
-	@Enum,
-	@CEnum
-)
-
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
-DECLARE @CEnum VarChar -- AnsiString
-SET     @CEnum = NULL
+DECLARE @In VarChar -- AnsiString
+SET     @In = NULL
 
 SELECT
 	COUNT(*)
 FROM
 	`Src` `s`
 WHERE
-	`s`.`CEnum` IN (@CEnum, @CEnum)
+	`s`.`CEnum` IN (@In, @In)
 
 BeforeExecute
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql
-DECLARE @CEnum VarChar -- AnsiString
-SET     @CEnum = NULL
+DECLARE @NotIn VarChar -- AnsiString
+SET     @NotIn = NULL
 
 SELECT
 	COUNT(*)
 FROM
 	`Src` `s`
 WHERE
-	`s`.`CEnum` NOT IN (@CEnum, @CEnum)
-
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
-
-DROP TABLE IF EXISTS `Src`
+	`s`.`CEnum` NOT IN (@NotIn, @NotIn)
 

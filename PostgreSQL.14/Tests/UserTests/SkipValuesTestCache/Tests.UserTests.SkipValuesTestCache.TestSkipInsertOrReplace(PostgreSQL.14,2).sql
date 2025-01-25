@@ -1,22 +1,5 @@
 ﻿BeforeExecute
 -- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
-
-DROP TABLE IF EXISTS "PR_1598_Insert_Table_Cache"
-
-BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
-
-CREATE TABLE IF NOT EXISTS "PR_1598_Insert_Table_Cache"
-(
-	"Id"   Int  NOT NULL,
-	"Name" text     NULL,
-	"Age"  Int      NULL,
-
-	CONSTRAINT "PK_PR_1598_Insert_Table_Cache" PRIMARY KEY ("Id")
-)
-
-BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
 DECLARE @Id Integer -- Int32
 SET     @Id = 1
 DECLARE @Name Text(4) -- String
@@ -90,9 +73,4 @@ FROM
 WHERE
 	t."Id" = 1
 LIMIT 1
-
-BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
-
-DROP TABLE IF EXISTS "PR_1598_Insert_Table_Cache"
 

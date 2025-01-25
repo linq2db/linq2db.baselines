@@ -1,21 +1,21 @@
 ﻿BeforeExecute
 -- ClickHouse.Client ClickHouse
 
-INSERT INTO AllTypes
+INSERT INTO InsertIssueTest
 (
-	smallintDataType,
+	ID,
 	intDataType
 )
 SELECT
 	toInt16(123),
-	toInt32(t2.ID)
+	t2.ID
 FROM
 	(
 		SELECT DISTINCT
-			a_Association.smallintDataType as ID
+			a_Association.ID as ID
 		FROM
-			AllTypes t1
-				INNER JOIN AllTypes a_Association ON t1.smallintDataType = a_Association.intDataType
+			InsertIssueTest t1
+				INNER JOIN InsertIssueTest a_Association ON t1.ID = a_Association.intDataType
 		WHERE
 			1 = 0
 	) t2
@@ -23,22 +23,31 @@ FROM
 BeforeExecute
 -- ClickHouse.Client ClickHouse
 
-INSERT INTO AllTypes
+INSERT INTO InsertIssueTest
 (
-	smallintDataType,
+	ID,
 	intDataType
 )
 SELECT
 	toInt16(123),
-	toInt32(t2.ID)
+	t2.ID
 FROM
 	(
 		SELECT DISTINCT
-			a_Association.smallintDataType as ID
+			a_Association.ID as ID
 		FROM
-			AllTypes t1
-				INNER JOIN AllTypes a_Association ON t1.smallintDataType = a_Association.intDataType
+			InsertIssueTest t1
+				INNER JOIN InsertIssueTest a_Association ON t1.ID = a_Association.intDataType
 		WHERE
-			toInt32(t1.smallintDataType) = toInt16(1234)
+			t1.ID = toInt16(1234)
 	) t2
+
+BeforeExecute
+-- ClickHouse.Client ClickHouse
+
+SELECT
+	t1.ID,
+	t1.intDataType
+FROM
+	InsertIssueTest t1
 

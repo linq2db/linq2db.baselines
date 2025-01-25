@@ -1,25 +1,6 @@
 ﻿BeforeExecute
 -- SqlServer.2012
 
-IF (OBJECT_ID(N'[TestFolder]', N'U') IS NOT NULL)
-	DROP TABLE [TestFolder]
-
-BeforeExecute
--- SqlServer.2012
-
-IF (OBJECT_ID(N'[TestFolder]', N'U') IS NULL)
-	CREATE TABLE [TestFolder]
-	(
-		[Id]       UniqueIdentifier NOT NULL,
-		[Label]    NVarChar(4000)       NULL,
-		[ParentId] UniqueIdentifier     NULL
-	)
-
-BeforeExecute
--- SqlServer.2012
-DECLARE @Guid1 UniqueIdentifier -- Guid
-SET     @Guid1 = 'bc7b663d-0fde-4327-8f92-5d8cc3a11d11'
-
 WITH [CTE] ([ParentId], [Label])
 AS
 (
@@ -37,15 +18,9 @@ INSERT INTO [TestFolder]
 	[Label]
 )
 SELECT
-	@Guid1,
+	'bc7b663d-0fde-4327-8f92-5d8cc3a11d11',
 	[parent].[Label] + N'/' + [child].[Label]
 FROM
 	[CTE] [child]
 		INNER JOIN [TestFolder] [parent] ON [child].[ParentId] = [parent].[Id]
-
-BeforeExecute
--- SqlServer.2012
-
-IF (OBJECT_ID(N'[TestFolder]', N'U') IS NOT NULL)
-	DROP TABLE [TestFolder]
 

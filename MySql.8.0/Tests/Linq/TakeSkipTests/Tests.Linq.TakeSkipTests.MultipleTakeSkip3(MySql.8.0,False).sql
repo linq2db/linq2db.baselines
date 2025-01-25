@@ -1,37 +1,6 @@
 ﻿BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
 
-DROP TABLE IF EXISTS `TakeSkipClass`
-
-BeforeExecute
--- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
-CREATE TABLE IF NOT EXISTS `TakeSkipClass`
-(
-	`Value` VARCHAR(10)     NULL
-)
-
-BeforeExecute
--- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
-INSERT INTO `TakeSkipClass`
-(
-	`Value`
-)
-VALUES
-('Value1'),
-('Value2'),
-('Value3'),
-('Value4'),
-('Value5'),
-('Value6'),
-('Value7'),
-('Value8'),
-('Value9')
-
-BeforeExecute
--- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
 SELECT
 	`t1`.`Value`
 FROM
@@ -39,9 +8,4 @@ FROM
 ORDER BY
 	`t1`.`Value`
 LIMIT 3, 1
-
-BeforeExecute
--- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
-DROP TABLE IF EXISTS `TakeSkipClass`
 

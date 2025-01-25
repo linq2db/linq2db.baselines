@@ -23,4 +23,6 @@ FROM
 	) [t2]
 WHERE
 	[t2].[RN] > @skip AND [t2].[RN] <= (@skip + 1)
+ORDER BY
+	[t2].[LastName]
 

@@ -2,17 +2,14 @@
 -- Informix.DB2 Informix
 
 SELECT
-	p_1.c1
+	p.c1
 FROM
 	(
 		SELECT
-			CASE
-				WHEN p.MoneyValue <> 0 THEN 't'
-				ELSE 'f'
-			END::BOOLEAN as c1
+			t.MoneyValue <> 0 as c1
 		FROM
-			LinqDataTypes p
-	) p_1
+			LinqDataTypes t
+	) p
 WHERE
-	p_1.c1 = 't'
+	p.c1 = 't'::BOOLEAN
 

@@ -9,12 +9,11 @@ FROM
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
-WITH [CTE1_] ([ParentID], [ChildID])
+WITH [CTE1_] ([c1])
 AS
 (
 	SELECT
-		[t1].[ParentID],
-		[t1].[ChildID]
+		1
 	FROM
 		[Child] [t1]
 )
@@ -26,11 +25,11 @@ FROM
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
-WITH [CTE1_] ([C_ChildID])
+WITH [CTE1_] ([c1])
 AS
 (
 	SELECT
-		[c_1].[ChildID]
+		1
 	FROM
 		[Child] [c_1]
 )
@@ -42,22 +41,19 @@ FROM
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
-WITH [CTE1_] AS
+WITH [CTE1_] ([c1])
+AS
 (
 	SELECT
-		*
+		1
 	FROM
 		[Child] [c_1]
 )
 SELECT
-	CASE
-		WHEN EXISTS(
-			SELECT
-				*
-			FROM
-				[CTE1_] [t1]
-		)
-			THEN 1
-		ELSE 0
-	END
+	EXISTS(
+		SELECT
+			*
+		FROM
+			[CTE1_] [t1]
+	)
 

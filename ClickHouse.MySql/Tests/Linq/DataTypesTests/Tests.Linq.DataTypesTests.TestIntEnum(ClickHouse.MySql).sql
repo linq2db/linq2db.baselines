@@ -1,35 +1,6 @@
 ﻿BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
-DROP TABLE IF EXISTS IntEnumTable
-
-BeforeExecute
--- ClickHouse.MySql ClickHouse
-
-CREATE TABLE IF NOT EXISTS IntEnumTable
-(
-	Id             Int32,
-	Column         Int32,
-	ColumnNullable Nullable(Int32)
-)
-ENGINE = Memory()
-
-BeforeExecute
--- ClickHouse.MySql ClickHouse
-
-INSERT INTO IntEnumTable
-(
-	Id,
-	Column,
-	ColumnNullable
-)
-VALUES
-(1,1,NULL),
-(2,2,3)
-
-BeforeExecute
--- ClickHouse.MySql ClickHouse
-
 SELECT
 	r.Id,
 	r.Column,
@@ -165,9 +136,4 @@ FROM
 	IntEnumTable t1
 ORDER BY
 	t1.Id
-
-BeforeExecute
--- ClickHouse.MySql ClickHouse
-
-DROP TABLE IF EXISTS IntEnumTable
 

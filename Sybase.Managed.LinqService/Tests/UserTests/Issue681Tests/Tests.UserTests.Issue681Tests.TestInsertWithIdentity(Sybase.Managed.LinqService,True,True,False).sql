@@ -1,26 +1,6 @@
 ﻿BeforeExecute
 -- Sybase.Managed Sybase
 
-IF (OBJECT_ID(N'Issue681Table4') IS NOT NULL)
-	DROP TABLE [Issue681Table4]
-
-BeforeExecute
--- Sybase.Managed Sybase
-
-IF (OBJECT_ID(N'Issue681Table4') IS NULL)
-	EXECUTE('
-		CREATE TABLE [Issue681Table4]
-		(
-			[ID]    Int IDENTITY NOT NULL,
-			[Value] Int          NOT NULL,
-
-			CONSTRAINT [PK_Issue681Table4] PRIMARY KEY CLUSTERED ([ID])
-		)
-	')
-
-BeforeExecute
--- Sybase.Managed Sybase
-
 SELECT
 	@@SERVERNAME
 
@@ -47,10 +27,4 @@ VALUES
 )
 
 SELECT @@IDENTITY
-
-BeforeExecute
--- Sybase.Managed Sybase
-
-IF (OBJECT_ID(N'Issue681Table4') IS NOT NULL)
-	DROP TABLE [Issue681Table4]
 

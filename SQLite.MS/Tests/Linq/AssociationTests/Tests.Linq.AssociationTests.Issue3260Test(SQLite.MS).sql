@@ -1,68 +1,28 @@
 ﻿BeforeExecute
 -- SQLite.MS SQLite
 
-DROP TABLE IF EXISTS [LeaveRequest]
-
-BeforeExecute
--- SQLite.MS SQLite
-
-CREATE TABLE IF NOT EXISTS [LeaveRequest]
-(
-	[Id]         INTEGER NOT NULL,
-	[EmployeeId] INTEGER NOT NULL
-)
-
-BeforeExecute
--- SQLite.MS SQLite
-
-DROP TABLE IF EXISTS [LeaveRequestDateEntry]
-
-BeforeExecute
--- SQLite.MS SQLite
-
-CREATE TABLE IF NOT EXISTS [LeaveRequestDateEntry]
-(
-	[Id]             INTEGER NOT NULL,
-	[EndHour]        Decimal     NULL,
-	[StartHour]      Decimal     NULL,
-	[LeaveRequestId] INTEGER NOT NULL
-)
-
-BeforeExecute
--- SQLite.MS SQLite
-
 SELECT
 	(
 		SELECT
 			SUM(CASE
 				WHEN [d].[not_null] IS NOT NULL THEN [d].[StartHour]
-				ELSE 0
+				ELSE CAST(0 AS Decimal)
 			END)
 		FROM
 			(
 				SELECT
-					0 as [c1]
+					0 as [Result_1]
 			) [t1]
 				LEFT JOIN (
 					SELECT
 						1 as [not_null],
-						[a_LeaveRequestDateEntries].[StartHour]
+						[e].[StartHour]
 					FROM
-						[LeaveRequestDateEntry] [a_LeaveRequestDateEntries]
+						[LeaveRequestDateEntry] [e]
 					WHERE
-						[x].[Id] = [a_LeaveRequestDateEntries].[LeaveRequestId]
+						[x].[Id] = [e].[LeaveRequestId]
 				) [d] ON 1=1
 	)
 FROM
 	[LeaveRequest] [x]
-
-BeforeExecute
--- SQLite.MS SQLite
-
-DROP TABLE IF EXISTS [LeaveRequestDateEntry]
-
-BeforeExecute
--- SQLite.MS SQLite
-
-DROP TABLE IF EXISTS [LeaveRequest]
 

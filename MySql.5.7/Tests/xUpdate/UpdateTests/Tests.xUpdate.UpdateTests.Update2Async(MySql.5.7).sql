@@ -42,13 +42,13 @@ WHERE
 
 BeforeExecute
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57 (asynchronously)
-DECLARE @ParentID Int32
-SET     @ParentID = 1002
+DECLARE @p Int32
+SET     @p = 1002
 
 SELECT
 	COUNT(*)
 FROM
 	`Parent` `p`
 WHERE
-	`p`.`ParentID` = @ParentID
+	`p`.`ParentID` = @p
 

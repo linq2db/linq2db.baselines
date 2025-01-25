@@ -1,32 +1,6 @@
 ﻿BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
-DROP TABLE IF EXISTS SampleClass
-
-BeforeExecute
--- ClickHouse.Octonica ClickHouse
-
-CREATE TABLE IF NOT EXISTS SampleClass
-(
-	Id    Int32,
-	Value Int32
-)
-ENGINE = Memory()
-
-BeforeExecute
--- ClickHouse.Octonica ClickHouse
-
-INSERT INTO SampleClass
-(
-	Id,
-	Value
-)
-VALUES
-(1,100)
-
-BeforeExecute
--- ClickHouse.Octonica ClickHouse
-
 SELECT
 	t_1.Id,
 	t_1.Value,
@@ -54,9 +28,4 @@ FROM
 				) t1
 			LIMIT 1
 		) t2 ON 1=1
-
-BeforeExecute
--- ClickHouse.Octonica ClickHouse
-
-DROP TABLE IF EXISTS SampleClass
 

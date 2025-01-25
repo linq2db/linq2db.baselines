@@ -1,50 +1,6 @@
 ﻿BeforeExecute
 -- SQLite.MS SQLite
 
-DROP TABLE IF EXISTS [DisTable]
-
-BeforeExecute
--- SQLite.MS SQLite
-
-CREATE TABLE IF NOT EXISTS [DisTable]
-(
-	[DisTypeID] INTEGER NOT NULL
-)
-
-BeforeExecute
--- SQLite.MS SQLite
-
-DROP TABLE IF EXISTS [JurTable]
-
-BeforeExecute
--- SQLite.MS SQLite
-
-CREATE TABLE IF NOT EXISTS [JurTable]
-(
-	[JurCode] NVarChar(2) NOT NULL,
-
-	CONSTRAINT [PK_JurTable] PRIMARY KEY ([JurCode])
-)
-
-BeforeExecute
--- SQLite.MS SQLite
-
-DROP TABLE IF EXISTS [DisTypeTable]
-
-BeforeExecute
--- SQLite.MS SQLite
-
-CREATE TABLE IF NOT EXISTS [DisTypeTable]
-(
-	[DisTypeID] INTEGER      NOT NULL,
-	[JurCode]   NVarChar(50) NOT NULL,
-
-	CONSTRAINT [PK_DisTypeTable] PRIMARY KEY ([DisTypeID])
-)
-
-BeforeExecute
--- SQLite.MS SQLite
-
 SELECT
 	[d].[DisTypeID]
 FROM
@@ -56,19 +12,4 @@ FROM
 			WHEN [d].[DisTypeID] = 5 THEN 5
 		END = [a_DisType].[DisTypeID]
 		INNER JOIN [JurTable] [j] ON [a_DisType].[JurCode] = [j].[JurCode]
-
-BeforeExecute
--- SQLite.MS SQLite
-
-DROP TABLE IF EXISTS [DisTypeTable]
-
-BeforeExecute
--- SQLite.MS SQLite
-
-DROP TABLE IF EXISTS [JurTable]
-
-BeforeExecute
--- SQLite.MS SQLite
-
-DROP TABLE IF EXISTS [DisTable]
 

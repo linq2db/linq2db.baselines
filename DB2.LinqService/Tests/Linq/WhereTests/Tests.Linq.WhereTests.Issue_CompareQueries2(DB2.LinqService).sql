@@ -2,59 +2,35 @@
 -- DB2 DB2.LUW DB2LUW
 
 SELECT
-	"t1"."c1"
+	COUNT("p"."PersonID")
 FROM
-	(
+	"Person" "p"
+WHERE
+	"p"."PersonID" IN (1, 2) AND "p"."PersonID" NOT IN (
 		SELECT
-			COUNT("rec".ID) as "c1"
+			"p_1"."PersonID"
 		FROM
-			(
-				SELECT
-					"p"."PersonID" as ID
-				FROM
-					"Person" "p"
-				WHERE
-					"p"."PersonID" IN (1, 2)
-			) "rec"
+			"Person" "p_1"
 		WHERE
-			"rec".ID NOT IN (
-				SELECT
-					"p_1"."PersonID"
-				FROM
-					"Person" "p_1"
-				WHERE
-					"p_1"."PersonID" IN (3)
-			)
-	) "t1"
+			"p_1"."PersonID" IN (3)
+	)
 FETCH NEXT 2 ROWS ONLY
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 SELECT
-	"t1"."c1"
+	COUNT("p"."PersonID")
 FROM
-	(
+	"Person" "p"
+WHERE
+	"p"."PersonID" IN (3) AND "p"."PersonID" NOT IN (
 		SELECT
-			COUNT("rec".ID) as "c1"
+			"p_1"."PersonID"
 		FROM
-			(
-				SELECT
-					"p"."PersonID" as ID
-				FROM
-					"Person" "p"
-				WHERE
-					"p"."PersonID" IN (3)
-			) "rec"
+			"Person" "p_1"
 		WHERE
-			"rec".ID NOT IN (
-				SELECT
-					"p_1"."PersonID"
-				FROM
-					"Person" "p_1"
-				WHERE
-					"p_1"."PersonID" IN (1, 2)
-			)
-	) "t1"
+			"p_1"."PersonID" IN (1, 2)
+	)
 FETCH NEXT 2 ROWS ONLY
 

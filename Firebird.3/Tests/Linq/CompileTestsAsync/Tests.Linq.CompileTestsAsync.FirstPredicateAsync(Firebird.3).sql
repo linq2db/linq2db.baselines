@@ -1,65 +1,14 @@
 ﻿BeforeExecute
--- Firebird.3 Firebird3
-
-EXECUTE BLOCK AS BEGIN
-	IF (EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'AsyncDataTable')) THEN
-		EXECUTE STATEMENT 'DROP TABLE "AsyncDataTable"';
-END
-
-BeforeExecute
--- Firebird.3 Firebird3
-
-EXECUTE BLOCK AS BEGIN
-	IF (NOT EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'AsyncDataTable')) THEN
-		EXECUTE STATEMENT '
-			CREATE TABLE "AsyncDataTable"
-			(
-				"Id" Int NOT NULL,
-
-				CONSTRAINT "PK_AsyncDataTable" PRIMARY KEY ("Id")
-			)
-		';
-END
-
-BeforeExecute
--- Firebird.3 Firebird3
-
-INSERT INTO "AsyncDataTable"
-(
-	"Id"
-)
-SELECT 1 FROM rdb$database UNION ALL
-SELECT 2 FROM rdb$database UNION ALL
-SELECT 3 FROM rdb$database UNION ALL
-SELECT 4 FROM rdb$database UNION ALL
-SELECT 5 FROM rdb$database UNION ALL
-SELECT 6 FROM rdb$database UNION ALL
-SELECT 7 FROM rdb$database UNION ALL
-SELECT 8 FROM rdb$database UNION ALL
-SELECT 9 FROM rdb$database UNION ALL
-SELECT 10 FROM rdb$database
-
-BeforeExecute
 -- Firebird.3 Firebird3 (asynchronously)
-DECLARE @Id Integer -- Int32
-SET     @Id = 2
-DECLARE @Id_1 Integer -- Int32
-SET     @Id_1 = 2
+DECLARE @p Integer -- Int32
+SET     @p = 2
 
 SELECT
-	CAST(@Id AS Int),
+	CAST(@p AS Int),
 	"c_1"."Id"
 FROM
 	"AsyncDataTable" "c_1"
 WHERE
-	"c_1"."Id" = @Id_1
+	"c_1"."Id" = CAST(@p AS Int)
 FETCH NEXT 1 ROWS ONLY
-
-BeforeExecute
--- Firebird.3 Firebird3
-
-EXECUTE BLOCK AS BEGIN
-	IF (EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'AsyncDataTable')) THEN
-		EXECUTE STATEMENT 'DROP TABLE "AsyncDataTable"';
-END
 

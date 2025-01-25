@@ -1,33 +1,5 @@
 ﻿BeforeExecute
 -- SQLite.MS SQLite
-
-DROP TABLE IF EXISTS [BooleanTable]
-
-BeforeExecute
--- SQLite.MS SQLite
-
-CREATE TABLE IF NOT EXISTS [BooleanTable]
-(
-	[Id]             INTEGER NOT NULL,
-	[Column]         Bit     NOT NULL,
-	[ColumnNullable] Bit         NULL
-)
-
-BeforeExecute
--- SQLite.MS SQLite
-
-INSERT INTO [BooleanTable]
-(
-	[Id],
-	[Column],
-	[ColumnNullable]
-)
-VALUES
-(1,1,NULL),
-(2,0,1)
-
-BeforeExecute
--- SQLite.MS SQLite
 DECLARE @Column  -- Boolean
 SET     @Column = 0
 DECLARE @ColumnNullable  -- Boolean
@@ -177,9 +149,4 @@ FROM
 	[BooleanTable] [t1]
 ORDER BY
 	[t1].[Id]
-
-BeforeExecute
--- SQLite.MS SQLite
-
-DROP TABLE IF EXISTS [BooleanTable]
 

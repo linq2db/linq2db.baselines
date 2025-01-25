@@ -1,44 +1,9 @@
 ﻿BeforeExecute
 -- SqlServer.2005.MS SqlServer.2005
 
-IF (OBJECT_ID(N'[SampleClass]', N'U') IS NOT NULL)
-	DROP TABLE [SampleClass]
-
-BeforeExecute
--- SqlServer.2005.MS SqlServer.2005
-
-IF (OBJECT_ID(N'[SampleClass]', N'U') IS NULL)
-	CREATE TABLE [SampleClass]
-	(
-		[Id]    Int NOT NULL,
-		[Value] Int NOT NULL
-	)
-
-BeforeExecute
--- SqlServer.2005.MS SqlServer.2005
-DECLARE @Id Int -- Int32
-SET     @Id = 1
-DECLARE @Value Int -- Int32
-SET     @Value = 100
-
-INSERT INTO [SampleClass]
-(
-	[Id],
-	[Value]
-)
-VALUES
-(
-	@Id,
-	@Value
-)
-
-BeforeExecute
--- SqlServer.2005.MS SqlServer.2005
-
 SELECT
 	[t_1].[Id],
 	[t_1].[Value],
-	[t2].[not_null],
 	[t2].[Value1],
 	[t2].[Value2]
 FROM
@@ -46,8 +11,7 @@ FROM
 		LEFT JOIN (
 			SELECT TOP (1)
 				[t1].[Value1],
-				[t1].[Value2],
-				1 as [not_null]
+				[t1].[Value2]
 			FROM
 				(
 					SELECT
@@ -63,10 +27,4 @@ FROM
 						DateAdd(day, 4, CURRENT_TIMESTAMP) as [Value2]
 				) [t1]
 		) [t2] ON 1=1
-
-BeforeExecute
--- SqlServer.2005.MS SqlServer.2005
-
-IF (OBJECT_ID(N'[SampleClass]', N'U') IS NOT NULL)
-	DROP TABLE [SampleClass]
 

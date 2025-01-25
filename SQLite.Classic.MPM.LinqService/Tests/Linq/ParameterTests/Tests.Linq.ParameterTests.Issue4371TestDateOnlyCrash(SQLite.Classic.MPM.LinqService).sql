@@ -1,18 +1,5 @@
 ﻿BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-
-DROP TABLE IF EXISTS [Issue4371Table2]
-
-BeforeExecute
--- SQLite.Classic.MPM SQLite.Classic SQLite
-
-CREATE TABLE IF NOT EXISTS [Issue4371Table2]
-(
-	[ColumnDO] VarChar     NULL
-)
-
-BeforeExecute
--- SQLite.Classic.MPM SQLite.Classic SQLite
 DECLARE @ColumnDO VarChar(10) -- AnsiString
 SET     @ColumnDO = '0160-05-06'
 
@@ -35,10 +22,5 @@ SELECT
 FROM
 	[Issue4371Table2] [r]
 WHERE
-	Date([r].[ColumnDO]) = Date(@dt)
-
-BeforeExecute
--- SQLite.Classic.MPM SQLite.Classic SQLite
-
-DROP TABLE IF EXISTS [Issue4371Table2]
+	[r].[ColumnDO] = @dt
 

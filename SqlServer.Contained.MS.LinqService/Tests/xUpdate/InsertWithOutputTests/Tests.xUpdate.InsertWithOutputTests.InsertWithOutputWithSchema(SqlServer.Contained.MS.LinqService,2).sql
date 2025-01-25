@@ -1,21 +1,5 @@
 ﻿BeforeExecute
 -- SqlServer.Contained.MS SqlServer.2019
-
-DROP TABLE IF EXISTS [TestSchema].[TableWithDataAndSchema]
-
-BeforeExecute
--- SqlServer.Contained.MS SqlServer.2019
-
-IF (OBJECT_ID(N'[TestSchema].[TableWithDataAndSchema]', N'U') IS NULL)
-	CREATE TABLE [TestSchema].[TableWithDataAndSchema]
-	(
-		[Id]       Int          NOT NULL,
-		[Value]    Int          NOT NULL,
-		[ValueStr] NVarChar(50)     NULL
-	)
-
-BeforeExecute
--- SqlServer.Contained.MS SqlServer.2019
 DECLARE @Id Int -- Int32
 SET     @Id = 2
 DECLARE @Value Int -- Int32
@@ -30,18 +14,13 @@ INSERT INTO [TestSchema].[TableWithDataAndSchema]
 	[ValueStr]
 )
 OUTPUT
-	[INSERTED].[Id],
-	[INSERTED].[Value],
-	[INSERTED].[ValueStr]
+	INSERTED.[Id],
+	INSERTED.[Value],
+	INSERTED.[ValueStr]
 VALUES
 (
 	@Id,
 	@Value,
 	@ValueStr
 )
-
-BeforeExecute
--- SqlServer.Contained.MS SqlServer.2019
-
-DROP TABLE IF EXISTS [TestSchema].[TableWithDataAndSchema]
 

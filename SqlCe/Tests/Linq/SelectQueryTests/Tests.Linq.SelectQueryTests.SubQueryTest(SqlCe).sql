@@ -1,34 +1,9 @@
 ﻿BeforeExecute
 -- SqlCe
 
-DROP TABLE [SampleClass]
-
-BeforeExecute
--- SqlCe
-
-CREATE TABLE [SampleClass]
-(
-	[Id]    Int NOT NULL,
-	[Value] Int NOT NULL
-)
-
-BeforeExecute
--- SqlCe
-
-INSERT INTO [SampleClass]
-(
-	[Id],
-	[Value]
-)
-SELECT 1,100
-
-BeforeExecute
--- SqlCe
-
 SELECT
 	[t_1].[Id],
 	[t_1].[Value] as [Value_1],
-	[t2].[not_null],
 	[t2].[Value1],
 	[t2].[Value2]
 FROM
@@ -36,8 +11,7 @@ FROM
 		LEFT JOIN (
 			SELECT TOP (1)
 				[t1].[Value1],
-				[t1].[Value2],
-				1 as [not_null]
+				[t1].[Value2]
 			FROM
 				(
 					SELECT
@@ -53,9 +27,4 @@ FROM
 						DateAdd(day, 4, GetDate()) as [Value2]
 				) [t1]
 		) [t2] ON 1=1
-
-BeforeExecute
--- SqlCe
-
-DROP TABLE [SampleClass]
 

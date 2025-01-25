@@ -1,22 +1,6 @@
 ﻿BeforeExecute
 -- ClickHouse.Client ClickHouse
 
-DROP TABLE IF EXISTS TypeConvertTable
-
-BeforeExecute
--- ClickHouse.Client ClickHouse
-
-CREATE TABLE IF NOT EXISTS TypeConvertTable
-(
-	Name      String,
-	BoolValue FixedString(100),
-	GuidValue Nullable(String)
-)
-ENGINE = Memory()
-
-BeforeExecute
--- ClickHouse.Client ClickHouse
-
 INSERT INTO TypeConvertTable
 (
 	Name,
@@ -231,9 +215,4 @@ FROM
 WHERE
 	t1.GuidValue = 'a948600d-de21-4f74-8ac2-9516b287076e'
 LIMIT 1
-
-BeforeExecute
--- ClickHouse.Client ClickHouse
-
-DROP TABLE IF EXISTS TypeConvertTable
 

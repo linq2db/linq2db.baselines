@@ -1,29 +1,5 @@
 ﻿BeforeExecute
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql
-
-DROP TABLE IF EXISTS `ValueConversion`
-
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
-
-CREATE TABLE IF NOT EXISTS `ValueConversion`
-(
-	`Id`                      INT          NOT NULL,
-	`Value1`                  VARCHAR(200)     NULL,
-	`Value2`                  VARCHAR(200)     NULL,
-	`Enum`                    VARCHAR(50)  NOT NULL,
-	`EnumNullable`            VARCHAR(50)      NULL,
-	`EnumWithNull`            VARCHAR(50)      NULL,
-	`EnumWithNullDeclarative` VARCHAR(50)      NULL,
-	`BoolValue`               VARCHAR(1)   NOT NULL,
-	`AnotherBoolValue`        VARCHAR(1)   NOT NULL,
-	`DateTimeNullable`        DATETIME         NULL,
-
-	CONSTRAINT `PK_ValueConversion` PRIMARY KEY CLUSTERED (`Id`)
-)
-
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
 DECLARE @Id Int32
 SET     @Id = 1
 DECLARE @Value1 VarChar(2) -- String
@@ -207,9 +183,4 @@ SELECT
 	COUNT(*)
 FROM
 	`ValueConversion` `t1`
-
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
-
-DROP TABLE IF EXISTS `ValueConversion`
 

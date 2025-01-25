@@ -1,33 +1,5 @@
 ﻿BeforeExecute
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql
-
-DROP TABLE IF EXISTS `ByteTable`
-
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
-
-CREATE TABLE IF NOT EXISTS `ByteTable`
-(
-	`Id`             INT              NOT NULL,
-	`Column`         TINYINT UNSIGNED NOT NULL,
-	`ColumnNullable` TINYINT UNSIGNED     NULL
-)
-
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
-
-INSERT INTO `ByteTable`
-(
-	`Id`,
-	`Column`,
-	`ColumnNullable`
-)
-VALUES
-(1,1,NULL),
-(2,255,2)
-
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
 DECLARE @Column UByte -- Byte
 SET     @Column = 255
 DECLARE @ColumnNullable UByte -- Byte
@@ -170,9 +142,4 @@ FROM
 	`ByteTable` `t1`
 ORDER BY
 	`t1`.`Id`
-
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
-
-DROP TABLE IF EXISTS `ByteTable`
 

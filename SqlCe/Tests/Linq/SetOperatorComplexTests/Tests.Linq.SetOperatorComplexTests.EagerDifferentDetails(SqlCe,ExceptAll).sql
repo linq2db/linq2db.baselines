@@ -1,104 +1,4 @@
 ﻿BeforeExecute
--- SqlCe
-
-DROP TABLE [Author]
-
-BeforeExecute
--- SqlCe
-
-CREATE TABLE [Author]
-(
-	[AuthorId]   Int           NOT NULL,
-	[AuthorName] NVarChar(255)     NULL,
-
-	CONSTRAINT [PK_Author] PRIMARY KEY ([AuthorId])
-)
-
-BeforeExecute
--- SqlCe
-
-INSERT INTO [Author]
-(
-	[AuthorId],
-	[AuthorName]
-)
-SELECT 1,'Stephen King' UNION ALL
-SELECT 2,'Harry Harrison' UNION ALL
-SELECT 3,'Roger Joseph Zelazny'
-
-BeforeExecute
--- SqlCe
-
-DROP TABLE [Book]
-
-BeforeExecute
--- SqlCe
-
-CREATE TABLE [Book]
-(
-	[BookId]        Int           NOT NULL,
-	[Discriminator] NVarChar(255)     NULL,
-	[BookName]      NVarChar(255)     NULL,
-	[RomanScore]    Int               NULL,
-	[NovelScore]    Int               NULL,
-
-	CONSTRAINT [PK_Book] PRIMARY KEY ([BookId])
-)
-
-BeforeExecute
--- SqlCe
-
-INSERT INTO [Book]
-(
-	[BookId],
-	[Discriminator],
-	[BookName],
-	[RomanScore],
-	[NovelScore]
-)
-SELECT 11,'Roman','Lisey''s Story[',4,0 UNION ALL
-SELECT 12,'Novel','Duma Key',0,0 UNION ALL
-SELECT 13,'Roman','Just After Sunset',3,0 UNION ALL
-SELECT 21,'Roman','Deathworld',1,0 UNION ALL
-SELECT 22,'Novel','The Stainless Steel Rat',0,0 UNION ALL
-SELECT 23,'Roman','Planet of the Damned',0,0 UNION ALL
-SELECT 31,'Roman','Blood of Amber',5,0 UNION ALL
-SELECT 32,'Novel','Knight of Shadows',0,0 UNION ALL
-SELECT 33,'Roman','The Chronicles of Amber',7,0
-
-BeforeExecute
--- SqlCe
-
-DROP TABLE [BookAuthor]
-
-BeforeExecute
--- SqlCe
-
-CREATE TABLE [BookAuthor]
-(
-	[FkBookId]   Int NOT NULL,
-	[FkAuthorId] Int NOT NULL
-)
-
-BeforeExecute
--- SqlCe
-
-INSERT INTO [BookAuthor]
-(
-	[FkBookId],
-	[FkAuthorId]
-)
-SELECT 11,1 UNION ALL
-SELECT 12,1 UNION ALL
-SELECT 13,1 UNION ALL
-SELECT 21,2 UNION ALL
-SELECT 22,2 UNION ALL
-SELECT 23,2 UNION ALL
-SELECT 31,3 UNION ALL
-SELECT 32,3 UNION ALL
-SELECT 33,3
-
-BeforeExecute
 BeginTransaction(RepeatableRead)
 BeforeExecute
 -- SqlCe
@@ -116,15 +16,7 @@ FROM
 				INNER JOIN [BookAuthor] [b] ON [b].[FkAuthorId] = [t1].[AuthorId]
 				LEFT JOIN [Book] [a_Book] ON [b].[FkBookId] = [a_Book].[BookId]
 		WHERE
-			[a_Book].[Discriminator] = 'Roman' AND NOT EXISTS(
-				SELECT
-					*
-				FROM
-					[Author] [t2]
-						INNER JOIN [BookAuthor] [b_1] ON [b_1].[FkAuthorId] = [t2].[AuthorId]
-				WHERE
-					1 = 0
-			)
+			[a_Book].[Discriminator] = 'Roman'
 	) [m_1]
 		INNER JOIN [BookAuthor] [d] ON [d].[FkBookId] = [m_1].[BookId]
 		LEFT JOIN [Author] [a_Author] ON [d].[FkAuthorId] = [a_Author].[AuthorId]
@@ -135,22 +27,14 @@ BeforeExecute
 -- SqlCe
 
 SELECT
-	[a_Book].[BookId] as [Id],
+	[a_Book].[BookId],
 	[a_Book].[BookName]
 FROM
 	[Author] [t1]
 		INNER JOIN [BookAuthor] [b] ON [b].[FkAuthorId] = [t1].[AuthorId]
 		LEFT JOIN [Book] [a_Book] ON [b].[FkBookId] = [a_Book].[BookId]
 WHERE
-	[a_Book].[Discriminator] = 'Roman' AND NOT EXISTS(
-		SELECT
-			*
-		FROM
-			[Author] [t2]
-				INNER JOIN [BookAuthor] [b_1] ON [b_1].[FkAuthorId] = [t2].[AuthorId]
-		WHERE
-			1 = 0
-	)
+	[a_Book].[Discriminator] = 'Roman'
 
 BeforeExecute
 BeginTransaction(RepeatableRead)
@@ -186,7 +70,7 @@ BeforeExecute
 SELECT
 	[m_1].[AuthorId],
 	[a_Book].[BookId],
-	[a_Book].[Discriminator],
+	[a_Book].[Discriminator] as [cond],
 	[a_Book].[BookName],
 	[a_Book].[NovelScore],
 	[a_Book].[RomanScore]
@@ -205,19 +89,4 @@ SELECT
 	[t1].[AuthorName]
 FROM
 	[Author] [t1]
-
-BeforeExecute
--- SqlCe
-
-DROP TABLE [Author]
-
-BeforeExecute
--- SqlCe
-
-DROP TABLE [Book]
-
-BeforeExecute
--- SqlCe
-
-DROP TABLE [BookAuthor]
 

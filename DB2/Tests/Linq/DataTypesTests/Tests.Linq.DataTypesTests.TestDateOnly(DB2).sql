@@ -1,41 +1,5 @@
 ﻿BeforeExecute
 -- DB2 DB2.LUW DB2LUW
-
-BEGIN
-	DECLARE CONTINUE HANDLER FOR SQLSTATE '42704' BEGIN END;
-	EXECUTE IMMEDIATE 'DROP TABLE "DateOnlyTable"';
-END
-
-BeforeExecute
--- DB2 DB2.LUW DB2LUW
-
-BEGIN
-	DECLARE CONTINUE HANDLER FOR SQLSTATE '42710' BEGIN END;
-	EXECUTE IMMEDIATE '
-		CREATE TABLE "DateOnlyTable"
-		(
-			"Id"             Int  NOT NULL,
-			"Column"         Date NOT NULL,
-			"ColumnNullable" Date     NULL
-		)
-	';
-END
-
-BeforeExecute
--- DB2 DB2.LUW DB2LUW
-
-INSERT INTO "DateOnlyTable"
-(
-	"Id",
-	"Column",
-	"ColumnNullable"
-)
-VALUES
-(1,'1950-01-01',NULL),
-(2,'2020-02-29','2200-01-01')
-
-BeforeExecute
--- DB2 DB2.LUW DB2LUW
 DECLARE @Column Date(20)
 SET     @Column = '2020-02-29-00.00.00.000000'
 DECLARE @ColumnNullable Date(20)
@@ -175,12 +139,4 @@ FROM
 	"DateOnlyTable" "t1"
 ORDER BY
 	"t1"."Id"
-
-BeforeExecute
--- DB2 DB2.LUW DB2LUW
-
-BEGIN
-	DECLARE CONTINUE HANDLER FOR SQLSTATE '42704' BEGIN END;
-	EXECUTE IMMEDIATE 'DROP TABLE "DateOnlyTable"';
-END
 

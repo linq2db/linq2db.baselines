@@ -1,60 +1,4 @@
 ﻿BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
-
-DROP TABLE IF EXISTS [Table404One]
-
-BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
-
-CREATE TABLE IF NOT EXISTS [Table404One]
-(
-	[Id] INTEGER NOT NULL
-)
-
-BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
-
-INSERT INTO [Table404One]
-(
-	[Id]
-)
-VALUES
-(1),
-(2)
-
-BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
-
-DROP TABLE IF EXISTS [Table404Two]
-
-BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
-
-CREATE TABLE IF NOT EXISTS [Table404Two]
-(
-	[Id]           INTEGER NOT NULL,
-	[Usage]        INTEGER NOT NULL,
-	[FirstTableId] INTEGER NOT NULL
-)
-
-BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
-
-INSERT INTO [Table404Two]
-(
-	[Id],
-	[Usage],
-	[FirstTableId]
-)
-VALUES
-(1,0,1),
-(2,0,1),
-(3,1,1),
-(4,0,2),
-(5,1,2),
-(6,1,2)
-
-BeforeExecute
 BeginTransaction(Serializable)
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
@@ -87,8 +31,8 @@ BeforeExecute
 BeginTransaction(Serializable)
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @Usage  -- Int32
-SET     @Usage = 0
+DECLARE @cond  -- Int32
+SET     @cond = 0
 
 SELECT
 	[m_1].[Id],
@@ -104,7 +48,7 @@ FROM
 	) [m_1]
 		INNER JOIN [Table404Two] [d] ON [m_1].[Id] = [d].[FirstTableId]
 WHERE
-	[d].[Usage] = @Usage
+	[d].[Usage] = @cond
 
 BeforeExecute
 DisposeTransaction
@@ -120,8 +64,8 @@ BeforeExecute
 BeginTransaction(Serializable)
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @Usage  -- Int32
-SET     @Usage = 1
+DECLARE @cond  -- Int32
+SET     @cond = 1
 
 SELECT
 	[m_1].[Id],
@@ -137,7 +81,7 @@ FROM
 	) [m_1]
 		INNER JOIN [Table404Two] [d] ON [m_1].[Id] = [d].[FirstTableId]
 WHERE
-	[d].[Usage] = @Usage
+	[d].[Usage] = @cond
 
 BeforeExecute
 DisposeTransaction
@@ -148,72 +92,6 @@ SELECT
 	[t1].[Id]
 FROM
 	[Table404One] [t1]
-
-BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
-
-DROP TABLE IF EXISTS [Table404Two]
-
-BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
-
-DROP TABLE IF EXISTS [Table404One]
-
-BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
-
-DROP TABLE IF EXISTS [Table404One]
-
-BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
-
-CREATE TABLE IF NOT EXISTS [Table404One]
-(
-	[Id] INTEGER NOT NULL
-)
-
-BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
-
-INSERT INTO [Table404One]
-(
-	[Id]
-)
-VALUES
-(1),
-(2)
-
-BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
-
-DROP TABLE IF EXISTS [Table404Two]
-
-BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
-
-CREATE TABLE IF NOT EXISTS [Table404Two]
-(
-	[Id]           INTEGER NOT NULL,
-	[Usage]        INTEGER NOT NULL,
-	[FirstTableId] INTEGER NOT NULL
-)
-
-BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
-
-INSERT INTO [Table404Two]
-(
-	[Id],
-	[Usage],
-	[FirstTableId]
-)
-VALUES
-(1,0,1),
-(2,0,1),
-(3,1,1),
-(4,0,2),
-(5,1,2),
-(6,1,2)
 
 BeforeExecute
 BeginTransaction(Serializable)
@@ -248,8 +126,8 @@ BeforeExecute
 BeginTransaction(Serializable)
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @Usage  -- Int32
-SET     @Usage = 0
+DECLARE @cond  -- Int32
+SET     @cond = 0
 
 SELECT
 	[m_1].[Id],
@@ -265,7 +143,7 @@ FROM
 	) [m_1]
 		INNER JOIN [Table404Two] [d] ON [m_1].[Id] = [d].[FirstTableId]
 WHERE
-	[d].[Usage] = @Usage
+	[d].[Usage] = @cond
 
 BeforeExecute
 DisposeTransaction
@@ -281,8 +159,8 @@ BeforeExecute
 BeginTransaction(Serializable)
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @Usage  -- Int32
-SET     @Usage = 1
+DECLARE @cond  -- Int32
+SET     @cond = 1
 
 SELECT
 	[m_1].[Id],
@@ -298,7 +176,7 @@ FROM
 	) [m_1]
 		INNER JOIN [Table404Two] [d] ON [m_1].[Id] = [d].[FirstTableId]
 WHERE
-	[d].[Usage] = @Usage
+	[d].[Usage] = @cond
 
 BeforeExecute
 DisposeTransaction
@@ -309,14 +187,4 @@ SELECT
 	[t1].[Id]
 FROM
 	[Table404One] [t1]
-
-BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
-
-DROP TABLE IF EXISTS [Table404Two]
-
-BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
-
-DROP TABLE IF EXISTS [Table404One]
 

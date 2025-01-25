@@ -1,26 +1,6 @@
 ﻿BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
-DROP TABLE "FluentMapping"
-
-BeforeExecute
--- SapHana.Odbc SapHanaOdbc
-
-CREATE COLUMN TABLE "FluentMapping"
-(
-	"RecordID"       Integer   NOT NULL,
-	"EffectiveStart" Timestamp NOT NULL,
-	"EffectiveEnd"   Timestamp     NULL,
-	"Key"            Integer   NOT NULL,
-	"Unordered1"     Integer   NOT NULL,
-	"Unordered2"     Integer   NOT NULL,
-	"Audit1ID"       Integer   NOT NULL,
-	"Audit2ID"       Integer   NOT NULL
-)
-
-BeforeExecute
--- SapHana.Odbc SapHanaOdbc
-
 SELECT CURRENT_SCHEMA FROM DUMMY
 
 BeforeExecute
@@ -589,8 +569,3 @@ SELECT * FROM "TESTDB"."TEST_TABLE_FUNCTION"(0)
 
 BeforeExecute
 DisposeTransaction
-BeforeExecute
--- SapHana.Odbc SapHanaOdbc
-
-DROP TABLE "FluentMapping"
-

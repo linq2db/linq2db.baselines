@@ -1,17 +1,4 @@
 ﻿BeforeExecute
--- SQLite.Classic SQLite
-
-DROP TABLE IF EXISTS [SimpleBulkCopyTable]
-
-BeforeExecute
--- SQLite.Classic SQLite
-
-CREATE TABLE IF NOT EXISTS [SimpleBulkCopyTable]
-(
-	[Id] INTEGER NOT NULL
-)
-
-BeforeExecute
 -- SQLite.Classic SQLite (asynchronously)
 DECLARE @Id  -- Int32
 SET     @Id = 2
@@ -24,9 +11,4 @@ VALUES
 (
 	@Id
 )
-
-BeforeExecute
--- SQLite.Classic SQLite
-
-DROP TABLE IF EXISTS [SimpleBulkCopyTable]
 

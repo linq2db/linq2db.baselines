@@ -1,34 +1,6 @@
 ﻿BeforeExecute
 -- ClickHouse.Client ClickHouse
 
-DROP TABLE IF EXISTS Isue2424Table
-
-BeforeExecute
--- ClickHouse.Client ClickHouse
-
-CREATE TABLE IF NOT EXISTS Isue2424Table
-(
-	Id       Int32,
-	StrValue Nullable(String)
-)
-ENGINE = Memory()
-
-BeforeExecute
--- ClickHouse.Client ClickHouse
-
-INSERT INTO Isue2424Table
-(
-	Id,
-	StrValue
-)
-VALUES
-(1,'1'),
-(3,'3'),
-(5,'5')
-
-BeforeExecute
--- ClickHouse.Client ClickHouse
-
 SELECT
 	i.Id,
 	i.StrValue
@@ -289,9 +261,4 @@ FROM
 WHERE
 	i.StrValue <= '1'
 LIMIT 2
-
-BeforeExecute
--- ClickHouse.Client ClickHouse
-
-DROP TABLE IF EXISTS Isue2424Table
 

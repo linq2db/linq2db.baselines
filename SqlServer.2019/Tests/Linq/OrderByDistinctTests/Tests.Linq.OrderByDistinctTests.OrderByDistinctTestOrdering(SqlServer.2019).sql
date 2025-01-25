@@ -1,39 +1,5 @@
 ﻿BeforeExecute
 -- SqlServer.2019
-
-DROP TABLE IF EXISTS [OrderByDistinctData]
-
-BeforeExecute
--- SqlServer.2019
-
-IF (OBJECT_ID(N'[OrderByDistinctData]', N'U') IS NULL)
-	CREATE TABLE [OrderByDistinctData]
-	(
-		[Id]            Int            NOT NULL,
-		[DuplicateData] NVarChar(4000)     NULL,
-		[OrderData1]    Int            NOT NULL,
-		[OrderData2]    Int            NOT NULL,
-
-		CONSTRAINT [PK_OrderByDistinctData] PRIMARY KEY CLUSTERED ([Id])
-	)
-
-BeforeExecute
--- SqlServer.2019
-
-INSERT INTO [OrderByDistinctData]
-(
-	[Id],
-	[DuplicateData],
-	[OrderData1],
-	[OrderData2]
-)
-VALUES
-(1,N'One',1,1),
-(10,N'Two',1,1),
-(100,N'Three',1,1)
-
-BeforeExecute
--- SqlServer.2019
 DECLARE @skip Int -- Int32
 SET     @skip = 0
 DECLARE @take Int -- Int32
@@ -215,9 +181,4 @@ ORDER BY
 	[x].[OrderData1],
 	[x].[OrderData2] DESC
 OFFSET @skip ROWS FETCH NEXT @take ROWS ONLY 
-
-BeforeExecute
--- SqlServer.2019
-
-DROP TABLE IF EXISTS [OrderByDistinctData]
 

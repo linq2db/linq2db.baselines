@@ -1,20 +1,6 @@
 ﻿BeforeExecute
 --  ClickHouse.Octonica ClickHouse
 
-DROP TABLE IF EXISTS ClickHouseBulkCopyTable
-
-BeforeExecute
---  ClickHouse.Octonica ClickHouse
-
-CREATE TABLE IF NOT EXISTS ClickHouseBulkCopyTable
-(
-	ID Int32
-)
-ENGINE = Memory()
-
-BeforeExecute
---  ClickHouse.Octonica ClickHouse
-
 INSERT INTO ClickHouseBulkCopyTable
 (
 	ID
@@ -1020,25 +1006,6 @@ VALUES
 (2997),
 (2998),
 (2999)
-
-BeforeExecute
---  ClickHouse.Octonica ClickHouse
-
-DROP TABLE IF EXISTS ClickHouseBulkCopyTable
-
-BeforeExecute
---  ClickHouse.Octonica ClickHouse
-
-DROP TABLE IF EXISTS ClickHouseBulkCopyTable
-
-BeforeExecute
---  ClickHouse.Octonica ClickHouse
-
-CREATE TABLE IF NOT EXISTS ClickHouseBulkCopyTable
-(
-	ID Int32
-)
-ENGINE = Memory()
 
 BeforeExecute
 --  ClickHouse.Octonica ClickHouse (asynchronously)
@@ -2048,9 +2015,4 @@ VALUES
 (2997),
 (2998),
 (2999)
-
-BeforeExecute
---  ClickHouse.Octonica ClickHouse
-
-DROP TABLE IF EXISTS ClickHouseBulkCopyTable
 

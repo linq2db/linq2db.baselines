@@ -1,23 +1,6 @@
 ﻿BeforeExecute
 -- SqlServer.2014
 
-IF (OBJECT_ID(N'[SampleClass]', N'U') IS NOT NULL)
-	DROP TABLE [SampleClass]
-
-BeforeExecute
--- SqlServer.2014
-
-IF (OBJECT_ID(N'[SampleClass]', N'U') IS NULL)
-	CREATE TABLE [SampleClass]
-	(
-		[Id]     Int            NOT NULL,
-		[Value]  NVarChar(50)       NULL,
-		[Value2] NVarChar(4000)     NULL
-	)
-
-BeforeExecute
--- SqlServer.2014
-
 INSERT INTO [SampleClass]
 (
 	[Id],
@@ -49,8 +32,8 @@ VALUES
 
 BeforeExecute
 -- SqlServer.2014
-DECLARE @test NVarChar -- String
-SET     @test = Test
+DECLARE @test NVarChar(50) -- String
+SET     @test = N'Test'
 DECLARE @test_1 NVarChar(4000) -- String
 SET     @test_1 = N'%Test%'
 
@@ -61,13 +44,13 @@ SELECT
 		FROM
 			[SampleClass] [sampleClass_1]
 		WHERE
-			([sampleClass_1].[Value] = @test OR [sampleClass_1].[Value2] LIKE @test_1 ESCAPE N'~')
+			[sampleClass_1].[Value] = @test OR [sampleClass_1].[Value2] LIKE @test_1 ESCAPE N'~'
 	), 1, 0)
 
 BeforeExecute
 -- SqlServer.2014
-DECLARE @test NVarChar -- String
-SET     @test = Test
+DECLARE @test NVarChar(50) -- String
+SET     @test = N'Test'
 DECLARE @test_1 NVarChar(4000) -- String
 SET     @test_1 = N'%Test%'
 
@@ -76,12 +59,12 @@ SELECT
 FROM
 	[SampleClass] [sampleClass_1]
 WHERE
-	([sampleClass_1].[Value] = @test OR [sampleClass_1].[Value2] LIKE @test_1 ESCAPE N'~')
+	[sampleClass_1].[Value] = @test OR [sampleClass_1].[Value2] LIKE @test_1 ESCAPE N'~'
 
 BeforeExecute
 -- SqlServer.2014
-DECLARE @test NVarChar -- String
-SET     @test = Value
+DECLARE @test NVarChar(50) -- String
+SET     @test = N'Value'
 DECLARE @test_1 NVarChar(4000) -- String
 SET     @test_1 = N'%Value%'
 
@@ -92,13 +75,13 @@ SELECT
 		FROM
 			[SampleClass] [sampleClass_1]
 		WHERE
-			([sampleClass_1].[Value] = @test OR [sampleClass_1].[Value2] LIKE @test_1 ESCAPE N'~')
+			[sampleClass_1].[Value] = @test OR [sampleClass_1].[Value2] LIKE @test_1 ESCAPE N'~'
 	), 1, 0)
 
 BeforeExecute
 -- SqlServer.2014
-DECLARE @test NVarChar -- String
-SET     @test = Value
+DECLARE @test NVarChar(50) -- String
+SET     @test = N'Value'
 DECLARE @test_1 NVarChar(4000) -- String
 SET     @test_1 = N'%Value%'
 
@@ -107,12 +90,12 @@ SELECT
 FROM
 	[SampleClass] [sampleClass_1]
 WHERE
-	([sampleClass_1].[Value] = @test OR [sampleClass_1].[Value2] LIKE @test_1 ESCAPE N'~')
+	[sampleClass_1].[Value] = @test OR [sampleClass_1].[Value2] LIKE @test_1 ESCAPE N'~'
 
 BeforeExecute
 -- SqlServer.2014
-DECLARE @test NVarChar -- String
-SET     @test = Class
+DECLARE @test NVarChar(50) -- String
+SET     @test = N'Class'
 DECLARE @test_1 NVarChar(4000) -- String
 SET     @test_1 = N'%Class%'
 
@@ -123,13 +106,13 @@ SELECT
 		FROM
 			[SampleClass] [sampleClass_1]
 		WHERE
-			([sampleClass_1].[Value] = @test OR [sampleClass_1].[Value2] LIKE @test_1 ESCAPE N'~')
+			[sampleClass_1].[Value] = @test OR [sampleClass_1].[Value2] LIKE @test_1 ESCAPE N'~'
 	), 1, 0)
 
 BeforeExecute
 -- SqlServer.2014
-DECLARE @test NVarChar -- String
-SET     @test = Class
+DECLARE @test NVarChar(50) -- String
+SET     @test = N'Class'
 DECLARE @test_1 NVarChar(4000) -- String
 SET     @test_1 = N'%Class%'
 
@@ -138,11 +121,5 @@ SELECT
 FROM
 	[SampleClass] [sampleClass_1]
 WHERE
-	([sampleClass_1].[Value] = @test OR [sampleClass_1].[Value2] LIKE @test_1 ESCAPE N'~')
-
-BeforeExecute
--- SqlServer.2014
-
-IF (OBJECT_ID(N'[SampleClass]', N'U') IS NOT NULL)
-	DROP TABLE [SampleClass]
+	[sampleClass_1].[Value] = @test OR [sampleClass_1].[Value2] LIKE @test_1 ESCAPE N'~'
 

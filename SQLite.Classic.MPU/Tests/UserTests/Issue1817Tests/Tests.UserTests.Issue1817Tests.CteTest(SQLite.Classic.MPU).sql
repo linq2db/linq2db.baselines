@@ -1,40 +1,6 @@
 ﻿BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
-DROP TABLE IF EXISTS [Account]
-
-BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
-
-CREATE TABLE IF NOT EXISTS [Account]
-(
-	[Id]     BigInt        NOT NULL,
-	[Number] NVarChar(255)     NULL,
-	[Name]   NVarChar(255)     NULL,
-	[Type]   INTEGER       NOT NULL,
-	[State]  INTEGER       NOT NULL
-)
-
-BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
-
-DROP TABLE IF EXISTS [Transaction]
-
-BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
-
-CREATE TABLE IF NOT EXISTS [Transaction]
-(
-	[Id]              BigInt    NOT NULL,
-	[RequestId]       BigInt    NOT NULL,
-	[OperDate]        DateTime2 NOT NULL,
-	[DebitAccountId]  BigInt    NOT NULL,
-	[CreditAccountId] BigInt    NOT NULL
-)
-
-BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
-
 WITH [accountsInfo]
 (
 	[Id],
@@ -87,14 +53,4 @@ SELECT
 	[t1].[outgoingBalance]
 FROM
 	[accountsInfo] [t1]
-
-BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
-
-DROP TABLE IF EXISTS [Transaction]
-
-BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
-
-DROP TABLE IF EXISTS [Account]
 

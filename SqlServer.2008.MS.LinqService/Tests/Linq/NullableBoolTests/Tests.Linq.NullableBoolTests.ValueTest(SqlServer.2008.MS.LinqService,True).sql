@@ -1,62 +1,5 @@
 ﻿BeforeExecute
 -- SqlServer.2008.MS SqlServer.2008
-
-IF (OBJECT_ID(N'[NullableBoolClass]', N'U') IS NOT NULL)
-	DROP TABLE [NullableBoolClass]
-
-BeforeExecute
--- SqlServer.2008.MS SqlServer.2008
-
-IF (OBJECT_ID(N'[NullableBoolClass]', N'U') IS NULL)
-	CREATE TABLE [NullableBoolClass]
-	(
-		[Value] Bit     NULL
-	)
-
-BeforeExecute
--- SqlServer.2008.MS SqlServer.2008
-DECLARE @Value Bit -- Boolean
-SET     @Value = NULL
-
-INSERT INTO [NullableBoolClass]
-(
-	[Value]
-)
-VALUES
-(
-	@Value
-)
-
-BeforeExecute
--- SqlServer.2008.MS SqlServer.2008
-DECLARE @Value Bit -- Boolean
-SET     @Value = 1
-
-INSERT INTO [NullableBoolClass]
-(
-	[Value]
-)
-VALUES
-(
-	@Value
-)
-
-BeforeExecute
--- SqlServer.2008.MS SqlServer.2008
-DECLARE @Value Bit -- Boolean
-SET     @Value = 0
-
-INSERT INTO [NullableBoolClass]
-(
-	[Value]
-)
-VALUES
-(
-	@Value
-)
-
-BeforeExecute
--- SqlServer.2008.MS SqlServer.2008
 DECLARE @value Bit -- Boolean
 SET     @value = 1
 
@@ -89,7 +32,7 @@ SELECT
 FROM
 	[NullableBoolClass] [t]
 WHERE
-	([t].[Value] <> @value OR [t].[Value] IS NULL)
+	[t].[Value] <> @value OR [t].[Value] IS NULL
 
 BeforeExecute
 -- SqlServer.2008.MS SqlServer.2008
@@ -102,10 +45,4 @@ FROM
 	[NullableBoolClass] [t]
 WHERE
 	[t].[Value] <> @value
-
-BeforeExecute
--- SqlServer.2008.MS SqlServer.2008
-
-IF (OBJECT_ID(N'[NullableBoolClass]', N'U') IS NOT NULL)
-	DROP TABLE [NullableBoolClass]
 

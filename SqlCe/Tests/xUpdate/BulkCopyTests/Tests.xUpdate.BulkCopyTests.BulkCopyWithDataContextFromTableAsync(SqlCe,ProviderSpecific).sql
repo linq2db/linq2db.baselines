@@ -1,17 +1,4 @@
 ﻿BeforeExecute
--- SqlCe
-
-DROP TABLE [SimpleBulkCopyTable]
-
-BeforeExecute
--- SqlCe
-
-CREATE TABLE [SimpleBulkCopyTable]
-(
-	[Id] Int NOT NULL
-)
-
-BeforeExecute
 -- SqlCe (asynchronously)
 
 INSERT INTO [SimpleBulkCopyTable]
@@ -64,9 +51,4 @@ INSERT INTO [SimpleBulkCopyTable]
 	[Id]
 )
 SELECT 30
-
-BeforeExecute
--- SqlCe
-
-DROP TABLE [SimpleBulkCopyTable]
 

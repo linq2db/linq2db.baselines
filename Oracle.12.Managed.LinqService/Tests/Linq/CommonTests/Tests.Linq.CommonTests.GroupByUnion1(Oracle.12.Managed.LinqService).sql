@@ -2,12 +2,12 @@
 -- Oracle.12.Managed Oracle.Managed Oracle12
 
 SELECT
-	tt."ParentID",
+	tt."Key_1",
 	SUM(tt.ID)
 FROM
 	(
 		SELECT
-			gr."ParentID",
+			gr."ParentID" as "Key_1",
 			gr."ChildID" as ID
 		FROM
 			"Child" gr
@@ -15,15 +15,15 @@ FROM
 			gr."ParentID" < 4
 		UNION ALL
 		SELECT
-			Nvl(g_1."ParentID", 0) as "ParentID",
-			Nvl(g_1."GrandChildID", 0) as ID
+			Coalesce(g_1."ParentID", 0) as "Key_1",
+			Coalesce(g_1."GrandChildID", 0) as ID
 		FROM
 			"GrandChild" g_1
 		WHERE
 			g_1."ParentID" >= 4
 	) tt
 GROUP BY
-	tt."ParentID"
+	tt."Key_1"
 HAVING
-	(SUM(tt.ID) <> 0 OR SUM(tt.ID) IS NULL)
+	SUM(tt.ID) <> 0
 

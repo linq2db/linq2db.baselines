@@ -1,47 +1,11 @@
 ﻿BeforeExecute
 -- SqlServer.SA SqlServer.2019
 
-DROP TABLE IF EXISTS [CteChild]
-
-BeforeExecute
--- SqlServer.SA SqlServer.2019
-
-IF (OBJECT_ID(N'[CteChild]', N'U') IS NULL)
-	CREATE TABLE [CteChild]
-	(
-		[ChildID]  Int NOT NULL,
-		[ParentID] Int NOT NULL
-	)
-
-BeforeExecute
--- SqlServer.SA SqlServer.2019
-
-INSERT INTO [CteChild]
-(
-	[ChildID],
-	[ParentID]
-)
-VALUES
-(1000,0),
-(1001,1),
-(1002,2),
-(1003,3),
-(1004,4),
-(1005,5),
-(1006,6),
-(1007,7),
-(1008,8),
-(1009,9)
-
-BeforeExecute
--- SqlServer.SA SqlServer.2019
-
-WITH [CTE_1] ([ParentID], [ChildID])
+WITH [CTE_1] ([ParentID])
 AS
 (
 	SELECT
-		[c_1].[ParentID],
-		[c_1].[ChildID]
+		[c_1].[ParentID]
 	FROM
 		[CteChild] [c_1]
 	WHERE
@@ -51,9 +15,4 @@ DELETE [c_2]
 FROM
 	[CteChild] [c_2]
 		INNER JOIN [CTE_1] [ct] ON [ct].[ParentID] = [c_2].[ParentID]
-
-BeforeExecute
--- SqlServer.SA SqlServer.2019
-
-DROP TABLE IF EXISTS [CteChild]
 

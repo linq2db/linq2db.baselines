@@ -1,37 +1,5 @@
 ﻿BeforeExecute
 -- Oracle.23.Managed Oracle.Managed Oracle12
-
-BEGIN
-	EXECUTE IMMEDIATE 'DROP TABLE "BackgroundTask"';
-EXCEPTION
-	WHEN OTHERS THEN
-		IF SQLCODE != -942 THEN
-			RAISE;
-		END IF;
-END;
-
-BeforeExecute
--- Oracle.23.Managed Oracle.Managed Oracle12
-
-BEGIN
-	EXECUTE IMMEDIATE '
-		CREATE TABLE "BackgroundTask"
-		(
-			ID                 Int     NULL,
-			"DurationID"       Int NOT NULL,
-			"DurationInterval" Int NOT NULL,
-			"PersonID"         Int     NULL
-		)
-	';
-EXCEPTION
-	WHEN OTHERS THEN
-		IF SQLCODE != -955 THEN
-			RAISE;
-		END IF;
-END;
-
-BeforeExecute
--- Oracle.23.Managed Oracle.Managed Oracle12
 DECLARE @ID Int32
 SET     @ID = 3
 DECLARE @DurationID Int32
@@ -70,16 +38,4 @@ FROM
 	"BackgroundTask" task_1
 WHERE
 	task_1."PersonID" = :personId
-
-BeforeExecute
--- Oracle.23.Managed Oracle.Managed Oracle12
-
-BEGIN
-	EXECUTE IMMEDIATE 'DROP TABLE "BackgroundTask"';
-EXCEPTION
-	WHEN OTHERS THEN
-		IF SQLCODE != -942 THEN
-			RAISE;
-		END IF;
-END;
 

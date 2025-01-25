@@ -2,17 +2,18 @@
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
-	t1.PersonID,
-	t1.LastName,
-	CASE
-		WHEN t1.PersonID IN (1, 3) THEN true
-		ELSE false
-	END
+	t2.ID,
+	t2.LastName,
+	t2.flag
 FROM
-	Person t1
+	(
+		SELECT
+			t1.PersonID IN (1, 3) as flag,
+			t1.PersonID as ID,
+			t1.LastName as LastName
+		FROM
+			Person t1
+	) t2
 ORDER BY
-	CASE
-		WHEN t1.PersonID IN (1, 3) THEN true
-		ELSE false
-	END
+	t2.flag
 

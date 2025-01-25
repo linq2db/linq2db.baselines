@@ -1,23 +1,6 @@
 ﻿BeforeExecute
 -- Informix.DB2 Informix
 
-DROP TABLE IF EXISTS ComplexPerson
-
-BeforeExecute
--- Informix.DB2 Informix
-
-CREATE TABLE IF NOT EXISTS ComplexPerson
-(
-	Id        Int           NOT NULL,
-	FirstName NVarChar(255)     NULL,
-	LastName  NVarChar(255)     NULL,
-
-	PRIMARY KEY (Id)
-)
-
-BeforeExecute
--- Informix.DB2 Informix
-
 SELECT
 	x.Id,
 	x.FirstName,
@@ -35,9 +18,4 @@ FROM
 	ComplexPerson x_1
 WHERE
 	x_1.Id < 20
-
-BeforeExecute
--- Informix.DB2 Informix
-
-DROP TABLE IF EXISTS ComplexPerson
 

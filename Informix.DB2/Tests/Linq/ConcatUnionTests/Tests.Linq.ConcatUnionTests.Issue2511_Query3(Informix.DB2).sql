@@ -1,5 +1,7 @@
 ﻿BeforeExecute
 -- Informix.DB2 Informix
+DECLARE @take Integer(4) -- Int32
+SET     @take = 2
 
 SELECT
 	t3.projection__set_id__,
@@ -22,10 +24,10 @@ FROM
 			NULL::Int as c1,
 			NULL::Int as c2,
 			NULL::NVarChar(255) as c3,
-			0 as projection__set_id__
+			0::Int as projection__set_id__
 		FROM
 			(
-				SELECT FIRST 2
+				SELECT FIRST @take
 					p.PersonID as ID,
 					p.FirstName,
 					p.LastName,
@@ -44,7 +46,7 @@ FROM
 			a_Patient.PersonID as c1,
 			a_Patient.PersonID as c2,
 			a_Patient.Diagnosis as c3,
-			1 as projection__set_id__
+			1::Int as projection__set_id__
 		FROM
 			Person t2
 				LEFT JOIN Patient a_Patient ON t2.PersonID = a_Patient.PersonID

@@ -1,144 +1,23 @@
 ﻿BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
-BEGIN
-	DECLARE CONTINUE HANDLER FOR SQLSTATE '42704' BEGIN END;
-	EXECUTE IMMEDIATE 'DROP TABLE "Data"';
-END
-
-BeforeExecute
--- DB2 DB2.LUW DB2LUW
-
-BEGIN
-	DECLARE CONTINUE HANDLER FOR SQLSTATE '42710' BEGIN END;
-	EXECUTE IMMEDIATE '
-		CREATE TABLE "Data"
-		(
-			"Id" Int NOT NULL
-		)
-	';
-END
-
-BeforeExecute
--- DB2 DB2.LUW DB2LUW
-
-INSERT INTO "Data"
-(
-	"Id"
-)
-VALUES
-(1),
-(2),
-(3)
-
-BeforeExecute
--- DB2 DB2.LUW DB2LUW
-
-BEGIN
-	DECLARE CONTINUE HANDLER FOR SQLSTATE '42704' BEGIN END;
-	EXECUTE IMMEDIATE 'DROP TABLE "SubData1"';
-END
-
-BeforeExecute
--- DB2 DB2.LUW DB2LUW
-
-BEGIN
-	DECLARE CONTINUE HANDLER FOR SQLSTATE '42710' BEGIN END;
-	EXECUTE IMMEDIATE '
-		CREATE TABLE "SubData1"
-		(
-			"Id" Int NOT NULL
-		)
-	';
-END
-
-BeforeExecute
--- DB2 DB2.LUW DB2LUW
-
-INSERT INTO "SubData1"
-(
-	"Id"
-)
-VALUES
-(2),
-(3)
-
-BeforeExecute
--- DB2 DB2.LUW DB2LUW
-
-BEGIN
-	DECLARE CONTINUE HANDLER FOR SQLSTATE '42704' BEGIN END;
-	EXECUTE IMMEDIATE 'DROP TABLE "SubData2"';
-END
-
-BeforeExecute
--- DB2 DB2.LUW DB2LUW
-
-BEGIN
-	DECLARE CONTINUE HANDLER FOR SQLSTATE '42710' BEGIN END;
-	EXECUTE IMMEDIATE '
-		CREATE TABLE "SubData2"
-		(
-			"Id"     Int           NOT NULL,
-			"Reason" NVarChar(255)     NULL
-		)
-	';
-END
-
-BeforeExecute
--- DB2 DB2.LUW DB2LUW
-
-INSERT INTO "SubData2"
-(
-	"Id",
-	"Reason"
-)
-VALUES
-(3,'прст1'),
-(3,'прст2')
-
-BeforeExecute
--- DB2 DB2.LUW DB2LUW
-
 SELECT
 	"i"."Id",
-	"a_SubData"."Id",
-	(
-		SELECT
-			"a_SubDatas"."Reason"
-		FROM
-			"SubData2" "a_SubDatas"
-		WHERE
-			"a_SubData"."Id" IS NOT NULL AND "a_SubData"."Id" = "a_SubDatas"."Id"
-		FETCH NEXT 1 ROWS ONLY
-	)
+	CASE
+		WHEN "a_SubData"."Id" IS NULL THEN NULL
+		ELSE (
+			SELECT
+				"a_SubDatas"."Reason"
+			FROM
+				"SubData2" "a_SubDatas"
+			WHERE
+				"a_SubData"."Id" = "a_SubDatas"."Id"
+			FETCH NEXT 1 ROWS ONLY
+		)
+	END
 FROM
 	"Data" "i"
 		LEFT JOIN "SubData1" "a_SubData" ON "i"."Id" = "a_SubData"."Id"
 ORDER BY
 	"i"."Id"
-
-BeforeExecute
--- DB2 DB2.LUW DB2LUW
-
-BEGIN
-	DECLARE CONTINUE HANDLER FOR SQLSTATE '42704' BEGIN END;
-	EXECUTE IMMEDIATE 'DROP TABLE "SubData2"';
-END
-
-BeforeExecute
--- DB2 DB2.LUW DB2LUW
-
-BEGIN
-	DECLARE CONTINUE HANDLER FOR SQLSTATE '42704' BEGIN END;
-	EXECUTE IMMEDIATE 'DROP TABLE "SubData1"';
-END
-
-BeforeExecute
--- DB2 DB2.LUW DB2LUW
-
-BEGIN
-	DECLARE CONTINUE HANDLER FOR SQLSTATE '42704' BEGIN END;
-	EXECUTE IMMEDIATE 'DROP TABLE "Data"';
-END
 

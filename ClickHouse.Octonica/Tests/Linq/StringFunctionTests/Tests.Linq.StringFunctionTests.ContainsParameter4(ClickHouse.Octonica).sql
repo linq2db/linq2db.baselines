@@ -6,15 +6,11 @@ SELECT
 	p_1.ID,
 	p_1.LastName,
 	p_1.MiddleName,
-	p_1.Gender,
-	p_1.Field1
+	p_1.Gender
 FROM
 	(
 		SELECT
-			CASE
-				WHEN position(p.FirstName, 'Jo') > 0 THEN true
-				ELSE false
-			END as Field1,
+			position(p.FirstName, 'Jo') > 0 as Field1,
 			p.FirstName as FirstName,
 			p.PersonID as ID,
 			p.LastName as LastName,
@@ -24,7 +20,7 @@ FROM
 			Person p
 	) p_1
 WHERE
-	p_1.Field1 = true
+	p_1.Field1
 ORDER BY
 	p_1.Field1
 

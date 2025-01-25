@@ -1,22 +1,5 @@
 ﻿BeforeExecute
 -- SqlServer.2022
-
-DROP TABLE IF EXISTS [Issue1373Tests]
-
-BeforeExecute
--- SqlServer.2022
-
-IF (OBJECT_ID(N'[Issue1373Tests]', N'U') IS NULL)
-	CREATE TABLE [Issue1373Tests]
-	(
-		[Id]     Int            NOT NULL,
-		[Field1] NVarChar(4000)     NULL,
-
-		CONSTRAINT [PK_Issue1373Tests] PRIMARY KEY CLUSTERED ([Id])
-	)
-
-BeforeExecute
--- SqlServer.2022
 DECLARE @Id Int -- Int32
 SET     @Id = 1
 DECLARE @Field1 NVarChar(4000) -- String
@@ -79,9 +62,4 @@ FROM
 	[Issue1373Tests] [t1]
 ORDER BY
 	[t1].[Id]
-
-BeforeExecute
--- SqlServer.2022
-
-DROP TABLE IF EXISTS [Issue1373Tests]
 

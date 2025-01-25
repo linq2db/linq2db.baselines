@@ -2,7 +2,7 @@
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
-	r.PersonID
+	r.PersonID IN (1, 2, 3)
 FROM
 	Person r
 

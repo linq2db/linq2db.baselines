@@ -1,115 +1,8 @@
 ﻿BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
-DROP TABLE IF EXISTS Author
-
-BeforeExecute
--- ClickHouse.Octonica ClickHouse
-
-CREATE TABLE IF NOT EXISTS Author
-(
-	AuthorId   Int32,
-	AuthorName Nullable(String),
-
-	PRIMARY KEY (AuthorId)
-)
-ENGINE = MergeTree()
-ORDER BY AuthorId
-
-BeforeExecute
--- ClickHouse.Octonica ClickHouse
-
-INSERT INTO Author
-(
-	AuthorId,
-	AuthorName
-)
-VALUES
-(1,'Stephen King'),
-(2,'Harry Harrison'),
-(3,'Roger Joseph Zelazny')
-
-BeforeExecute
--- ClickHouse.Octonica ClickHouse
-
-DROP TABLE IF EXISTS Book
-
-BeforeExecute
--- ClickHouse.Octonica ClickHouse
-
-CREATE TABLE IF NOT EXISTS Book
-(
-	BookId        Int32,
-	Discriminator Nullable(String),
-	BookName      Nullable(String),
-	RomanScore    Nullable(Int32),
-	NovelScore    Nullable(Int32),
-
-	PRIMARY KEY (BookId)
-)
-ENGINE = MergeTree()
-ORDER BY BookId
-
-BeforeExecute
--- ClickHouse.Octonica ClickHouse
-
-INSERT INTO Book
-(
-	BookId,
-	Discriminator,
-	BookName,
-	RomanScore,
-	NovelScore
-)
-VALUES
-(11,'Roman','Lisey\'s Story[',4,0),
-(12,'Novel','Duma Key',0,0),
-(13,'Roman','Just After Sunset',3,0),
-(21,'Roman','Deathworld',1,0),
-(22,'Novel','The Stainless Steel Rat',0,0),
-(23,'Roman','Planet of the Damned',0,0),
-(31,'Roman','Blood of Amber',5,0),
-(32,'Novel','Knight of Shadows',0,0),
-(33,'Roman','The Chronicles of Amber',7,0)
-
-BeforeExecute
--- ClickHouse.Octonica ClickHouse
-
-DROP TABLE IF EXISTS BookAuthor
-
-BeforeExecute
--- ClickHouse.Octonica ClickHouse
-
-CREATE TABLE IF NOT EXISTS BookAuthor
-(
-	FkBookId   Int32,
-	FkAuthorId Int32
-)
-ENGINE = Memory()
-
-BeforeExecute
--- ClickHouse.Octonica ClickHouse
-
-INSERT INTO BookAuthor
-(
-	FkBookId,
-	FkAuthorId
-)
-VALUES
-(11,1),
-(12,1),
-(13,1),
-(21,2),
-(22,2),
-(23,2),
-(31,3),
-(32,3),
-(33,3)
-
-BeforeExecute
--- ClickHouse.Octonica ClickHouse
-
 SELECT
+	toString('Discriminator') as c1,
 	a_Book.Discriminator,
 	a_Book.BookName,
 	a_Book.BookName as BookName_1
@@ -121,6 +14,7 @@ WHERE
 	a_Book.Discriminator = 'Roman'
 UNION DISTINCT
 SELECT
+	toString('Discriminator') as c1,
 	a_Book_1.Discriminator as Discriminator,
 	a_Book_1.BookName as BookName,
 	a_Book_1.BookName as BookName_1
@@ -180,19 +74,4 @@ SELECT
 	t1.AuthorName
 FROM
 	Author t1
-
-BeforeExecute
--- ClickHouse.Octonica ClickHouse
-
-DROP TABLE IF EXISTS Author
-
-BeforeExecute
--- ClickHouse.Octonica ClickHouse
-
-DROP TABLE IF EXISTS Book
-
-BeforeExecute
--- ClickHouse.Octonica ClickHouse
-
-DROP TABLE IF EXISTS BookAuthor
 

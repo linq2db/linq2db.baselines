@@ -1,21 +1,5 @@
 ﻿BeforeExecute
 -- SQLite.MS SQLite
-
-DROP TABLE IF EXISTS [Issue1960Table]
-
-BeforeExecute
--- SQLite.MS SQLite
-
-CREATE TABLE IF NOT EXISTS [Issue1960Table]
-(
-	[Decimal1] Text   NOT NULL,
-	[Decimal2] Text   NOT NULL,
-	[Decimal3] Text   NOT NULL,
-	[DateTime] BigInt NOT NULL
-)
-
-BeforeExecute
--- SQLite.MS SQLite
 DECLARE @decValue NVarChar -- String
 SET     @decValue = 12345.6789
 DECLARE @dtValue  -- Int64
@@ -47,9 +31,4 @@ SELECT
 FROM
 	[Issue1960Table] [t1]
 LIMIT 2
-
-BeforeExecute
--- SQLite.MS SQLite
-
-DROP TABLE IF EXISTS [Issue1960Table]
 

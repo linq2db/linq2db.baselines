@@ -1,35 +1,6 @@
 ﻿BeforeExecute
 -- Firebird.3 Firebird3
 
-EXECUTE BLOCK AS BEGIN
-	IF (EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'TestTable')) THEN
-		EXECUTE STATEMENT 'DROP TABLE "TestTable"';
-END
-
-BeforeExecute
--- Firebird.3 Firebird3
-
-EXECUTE BLOCK AS BEGIN
-	IF (NOT EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'TestTable')) THEN
-		EXECUTE STATEMENT '
-			CREATE TABLE "TestTable"
-			(
-				ID        Int                                    NOT NULL,
-				"Field1"  Int                                    NOT NULL,
-				"Field2"  Int                                    NOT NULL,
-				"Field3"  Int                                    NOT NULL,
-				"Field4"  Int                                    NOT NULL,
-				"field11" VarChar(255) CHARACTER SET UNICODE_FSS,
-				"Field5"  Int                                    NOT NULL,
-
-				CONSTRAINT "PK_TestTable" PRIMARY KEY (ID)
-			)
-		';
-END
-
-BeforeExecute
--- Firebird.3 Firebird3
-
 MERGE INTO "TestTable" "Target"
 USING (
 	SELECT
@@ -85,12 +56,4 @@ SET
 	"Field4" = "Source"."source_Field4",
 	"field11" = "Source"."source_field1_1",
 	"Field5" = "Source"."source_Field5"
-
-BeforeExecute
--- Firebird.3 Firebird3
-
-EXECUTE BLOCK AS BEGIN
-	IF (EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'TestTable')) THEN
-		EXECUTE STATEMENT 'DROP TABLE "TestTable"';
-END
 

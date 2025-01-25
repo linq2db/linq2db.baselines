@@ -1,21 +1,5 @@
 ﻿BeforeExecute
 -- SqlServer.2019.MS SqlServer.2019
-
-DROP TABLE IF EXISTS [AllTypesCustomMaxLength]
-
-BeforeExecute
--- SqlServer.2019.MS SqlServer.2019
-
-IF (OBJECT_ID(N'[AllTypesCustomMaxLength]', N'U') IS NULL)
-	CREATE TABLE [AllTypesCustomMaxLength]
-	(
-		[VarBinary] VarBinary(Max)     NULL,
-		[VarChar]   VarChar(Max)       NULL,
-		[NVarChar]  NVarChar(Max)      NULL
-	)
-
-BeforeExecute
--- SqlServer.2019.MS SqlServer.2019
 DECLARE @VarBinary VarBinary -- Binary
 SET     @VarBinary = Tests.Linq.ParameterTests+VarBinary
 
@@ -40,6 +24,15 @@ FROM
 
 BeforeExecute
 -- SqlServer.2019.MS SqlServer.2019
+DECLARE @p VarBinary -- Binary
+SET     @p = Tests.Linq.ParameterTests+VarBinary
 
-DROP TABLE IF EXISTS [AllTypesCustomMaxLength]
+SELECT
+	[t].[VarBinary],
+	[t].[VarChar],
+	[t].[NVarChar]
+FROM
+	[AllTypesCustomMaxLength] [t]
+WHERE
+	[t].[VarBinary] = @p
 

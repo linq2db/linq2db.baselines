@@ -1,30 +1,5 @@
 ﻿BeforeExecute
 -- SqlServer.2016.MS SqlServer.2016
-
-DROP TABLE IF EXISTS [ValueConversion]
-
-BeforeExecute
--- SqlServer.2016.MS SqlServer.2016
-
-IF (OBJECT_ID(N'[ValueConversion]', N'U') IS NULL)
-	CREATE TABLE [ValueConversion]
-	(
-		[Id]                      Int           NOT NULL,
-		[Value1]                  NVarChar(200)     NULL,
-		[Value2]                  NVarChar(200)     NULL,
-		[Enum]                    NVarChar(50)  NOT NULL,
-		[EnumNullable]            VarChar(50)       NULL,
-		[EnumWithNull]            VarChar(50)       NULL,
-		[EnumWithNullDeclarative] VarChar(50)       NULL,
-		[BoolValue]               VarChar(1)    NOT NULL,
-		[AnotherBoolValue]        VarChar(1)    NOT NULL,
-		[DateTimeNullable]        DateTime2         NULL,
-
-		CONSTRAINT [PK_ValueConversion] PRIMARY KEY CLUSTERED ([Id])
-	)
-
-BeforeExecute
--- SqlServer.2016.MS SqlServer.2016
 DECLARE @iteration Int -- Int32
 SET     @iteration = 1
 DECLARE @Value1 NVarChar(200) -- String
@@ -77,9 +52,4 @@ FROM
 	[ValueConversion] [e]
 WHERE
 	[e].[Id] = @iteration
-
-BeforeExecute
--- SqlServer.2016.MS SqlServer.2016
-
-DROP TABLE IF EXISTS [ValueConversion]
 

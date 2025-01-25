@@ -1,8 +1,7 @@
 ﻿BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
 
-WITH "CTE_1" ("ParentID", "ChildID")
-AS
+WITH "CTE_1" AS
 (
 	SELECT DISTINCT
 		c_1."ParentID",
@@ -15,5 +14,5 @@ AS
 SELECT
 	COUNT(*)
 FROM
-	"CTE_1" t1
+	"CTE_1" c_2
 

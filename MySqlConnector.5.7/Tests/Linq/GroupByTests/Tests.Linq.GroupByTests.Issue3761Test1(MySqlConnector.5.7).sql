@@ -1,26 +1,6 @@
 ﻿BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 
-DROP TABLE IF EXISTS `Issue3761Table`
-
-BeforeExecute
--- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-
-CREATE TABLE IF NOT EXISTS `Issue3761Table`
-(
-	`LETO`     INT      NOT NULL,
-	`STEVILKA` INT      NOT NULL,
-	`DATUM`    DATETIME     NULL,
-	`SKUPAJ`   DECIMAL      NULL,
-
-	CONSTRAINT `PK_Issue3761Table` PRIMARY KEY CLUSTERED (`LETO`, `STEVILKA`)
-)
-
-BeforeExecute
--- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-DECLARE @DATUM Datetime -- DateTime
-SET     @DATUM = '2019-01-01'
-
 SELECT
 	`t1`.`Year_1`,
 	`t1`.`Month_1`,
@@ -40,14 +20,9 @@ FROM
 		FROM
 			`Issue3761Table` `n`
 		WHERE
-			`n`.`DATUM` < @DATUM
+			`n`.`DATUM` < '2019-01-01'
 	) `t1`
 GROUP BY
 	`t1`.`Year_1`,
 	`t1`.`Month_1`
-
-BeforeExecute
--- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-
-DROP TABLE IF EXISTS `Issue3761Table`
 

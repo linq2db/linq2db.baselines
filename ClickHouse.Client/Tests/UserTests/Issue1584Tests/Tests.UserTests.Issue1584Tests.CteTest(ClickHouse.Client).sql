@@ -1,105 +1,6 @@
 ﻿BeforeExecute
 -- ClickHouse.Client ClickHouse
 
-DROP TABLE IF EXISTS RateEntry
-
-BeforeExecute
--- ClickHouse.Client ClickHouse
-
-CREATE TABLE IF NOT EXISTS RateEntry
-(
-	TI_PK                                UUID,
-	TI_LineOrder                         Int16,
-	TI_RateStartDate                     DateTime64(7),
-	TI_RateEndDate                       Nullable(DateTime64(7)),
-	TI_RX_NKCurrency                     Nullable(String),
-	TI_Frequency                         Int32,
-	TI_OH_Supplier                       Nullable(UUID),
-	TI_OH_TransportProvider              Nullable(UUID),
-	TI_OH_Consignor                      Nullable(UUID),
-	TI_OH_Consignee                      Nullable(UUID),
-	TI_OA_CartagePickupAddressOverride   Nullable(UUID),
-	TI_OA_CartageDeliveryAddressOverride Nullable(UUID),
-	TI_CartagePickupAddressPostCode      Nullable(String),
-	TI_CartageDeliveryAddressPostCode    Nullable(String),
-	TI_RS_NKServiceLevel_NI              Nullable(String),
-	TI_OriginLRC                         Nullable(String),
-	TI_DestinationLRC                    Nullable(String),
-	TI_ViaLRC                            Nullable(String),
-	TI_PageHeading                       Nullable(String),
-	TI_PageOpeningText                   Nullable(String),
-	TI_PageClosingText                   Nullable(String),
-	TI_OH_AgentOverride                  Nullable(UUID),
-	TI_ParentID                          Nullable(UUID),
-	TI_QuotePageIncoTerm                 Nullable(String),
-	TI_BuyersConsolRateMode              Nullable(String),
-	TI_SystemCreateTimeUtc               Nullable(DateTime64(7)),
-	TI_SystemCreateUser                  Nullable(String),
-	TI_SystemLastEditTimeUtc             Nullable(DateTime64(7)),
-	TI_SystemLastEditUser                Nullable(String),
-	TI_TH                                UUID,
-	TI_RC                                Nullable(UUID),
-	TI_ContractNumber                    Nullable(String),
-	TI_PL_NKCarrierServiceLevel          Nullable(String),
-	TI_TZ_OriginZone                     Nullable(UUID),
-	TI_TZ_DestinationZone                Nullable(UUID),
-	TI_IsValid                           Bool,
-	TI_IsCrossTrade                      Bool,
-	TI_DataChecked                       Bool,
-	TI_MatchContainerRateClass           Bool,
-	TI_TransitTime                       Nullable(String),
-	TI_FrequencyUnit                     Nullable(String),
-	TI_Mode                              Nullable(String),
-	TI_RH_NKCommodityCode                Nullable(String),
-	TI_RateCategory                      Nullable(String),
-	TI_FromID                            Nullable(UUID),
-	TI_FromTableCode                     Nullable(String),
-	TI_ToId                              Nullable(UUID),
-	TI_ToTableCode                       Nullable(String),
-	TI_OH_ControllingCustomer            Nullable(UUID),
-	TI_GC_Publisher                      UUID,
-	TI_IsTact                            Bool,
-	TI_ParentTableCode                   Nullable(String),
-	TI_RateKey                           Int32
-)
-ENGINE = Memory()
-
-BeforeExecute
--- ClickHouse.Client ClickHouse
-
-DROP TABLE IF EXISTS RateLines
-
-BeforeExecute
--- ClickHouse.Client ClickHouse
-
-CREATE TABLE IF NOT EXISTS RateLines
-(
-	TL_PK UUID,
-	TL_TI UUID
-)
-ENGINE = Memory()
-
-BeforeExecute
--- ClickHouse.Client ClickHouse
-
-DROP TABLE IF EXISTS RateLineItem
-
-BeforeExecute
--- ClickHouse.Client ClickHouse
-
-CREATE TABLE IF NOT EXISTS RateLineItem
-(
-	TM_PK        UUID,
-	TM_LineOrder UInt8,
-	TM_Type      Nullable(String),
-	TM_Value     Decimal128(10),
-	TM_TL        UUID
-)
-ENGINE = Memory()
-
-BeforeExecute
--- ClickHouse.Client ClickHouse
-
 WITH rateCost AS
 (
 	SELECT
@@ -158,15 +59,15 @@ WITH rateCost AS
 		s.TI_RateKey as RateEntry_TI_RateKey,
 		sumOrNull(CASE
 			WHEN rateLineItem_1.TM_Type IN ('FLT', 'BAS') THEN rateLineItem_1.TM_Value
-			ELSE toDecimal64('0', 10)
+			ELSE toDecimal128('0', 10)
 		END) as FlatRate,
 		sumOrNull(CASE
 			WHEN rateLineItem_1.TM_Type = 'MIN' THEN rateLineItem_1.TM_Value
-			ELSE toDecimal64('0', 10)
+			ELSE toDecimal128('0', 10)
 		END) as MinRate,
 		sumOrNull(CASE
 			WHEN rateLineItem_1.TM_Type = 'UNT' THEN rateLineItem_1.TM_Value
-			ELSE toDecimal64('0', 10)
+			ELSE toDecimal128('0', 10)
 		END) as VariableRate
 	FROM
 		RateEntry s
@@ -343,19 +244,4 @@ SELECT
 FROM
 	RateEntry rateEntry_1
 		INNER JOIN rateCost c_1 ON c_1.RateEntry_TI_PK = rateEntry_1.TI_PK
-
-BeforeExecute
--- ClickHouse.Client ClickHouse
-
-DROP TABLE IF EXISTS RateLineItem
-
-BeforeExecute
--- ClickHouse.Client ClickHouse
-
-DROP TABLE IF EXISTS RateLines
-
-BeforeExecute
--- ClickHouse.Client ClickHouse
-
-DROP TABLE IF EXISTS RateEntry
 

@@ -1,47 +1,9 @@
 ﻿BeforeExecute
 -- Oracle.23.Managed Oracle.Managed Oracle12
 
-BEGIN
-	EXECUTE IMMEDIATE 'DROP TABLE "SampleClass"';
-EXCEPTION
-	WHEN OTHERS THEN
-		IF SQLCODE != -942 THEN
-			RAISE;
-		END IF;
-END;
-
-BeforeExecute
--- Oracle.23.Managed Oracle.Managed Oracle12
-
-BEGIN
-	EXECUTE IMMEDIATE '
-		CREATE TABLE "SampleClass"
-		(
-			"Id"    Int NOT NULL,
-			"Value" Int NOT NULL
-		)
-	';
-EXCEPTION
-	WHEN OTHERS THEN
-		IF SQLCODE != -955 THEN
-			RAISE;
-		END IF;
-END;
-
-BeforeExecute
--- Oracle.23.Managed Oracle.Managed Oracle12
-
-INSERT ALL
-	INTO "SampleClass" ("Id", "Value") VALUES (1,100)
-SELECT * FROM dual
-
-BeforeExecute
--- Oracle.23.Managed Oracle.Managed Oracle12
-
 SELECT
 	t_1."Id",
 	t_1."Value",
-	t2."not_null",
 	t2."Value1",
 	t2."Value2"
 FROM
@@ -49,8 +11,7 @@ FROM
 		LEFT JOIN (
 			SELECT
 				t1."Value1",
-				t1."Value2",
-				1 as "not_null"
+				t1."Value2"
 			FROM
 				(
 					SELECT
@@ -68,16 +29,4 @@ FROM
 				) t1
 			FETCH NEXT 1 ROWS ONLY
 		) t2 ON 1=1
-
-BeforeExecute
--- Oracle.23.Managed Oracle.Managed Oracle12
-
-BEGIN
-	EXECUTE IMMEDIATE 'DROP TABLE "SampleClass"';
-EXCEPTION
-	WHEN OTHERS THEN
-		IF SQLCODE != -942 THEN
-			RAISE;
-		END IF;
-END;
 

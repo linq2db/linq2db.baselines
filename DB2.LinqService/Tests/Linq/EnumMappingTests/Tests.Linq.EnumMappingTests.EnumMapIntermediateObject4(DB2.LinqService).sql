@@ -1,12 +1,12 @@
 ﻿BeforeExecute
 -- DB2 DB2.LUW DB2LUW
-DECLARE @Id Integer(4) -- Int32
-SET     @Id = 102
+DECLARE @p Integer(4) -- Int32
+SET     @p = 102
 
 DELETE FROM
 	"LinqDataTypes" "r"
 WHERE
-	"r".ID >= 101 AND "r".ID < @Id
+	"r".ID >= 101 AND "r".ID < @p
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
@@ -34,11 +34,11 @@ WHERE
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
-DECLARE @Id Integer(4) -- Int32
-SET     @Id = 102
+DECLARE @p Integer(4) -- Int32
+SET     @p = 102
 
 DELETE FROM
 	"LinqDataTypes" "r"
 WHERE
-	"r".ID >= 101 AND "r".ID < @Id
+	"r".ID >= 101 AND "r".ID < @p
 

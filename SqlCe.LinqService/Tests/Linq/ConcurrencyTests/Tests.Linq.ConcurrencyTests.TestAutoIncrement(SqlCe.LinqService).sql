@@ -1,22 +1,5 @@
 ﻿BeforeExecute
 -- SqlCe
-
-DROP TABLE [ConcurrencyAutoIncrement]
-
-BeforeExecute
--- SqlCe
-
-CREATE TABLE [ConcurrencyAutoIncrement]
-(
-	[Id]    Int           NOT NULL,
-	[Stamp] Int           NOT NULL,
-	[Value] NVarChar(255)     NULL,
-
-	CONSTRAINT [PK_ConcurrencyAutoIncrement] PRIMARY KEY ([Id])
-)
-
-BeforeExecute
--- SqlCe
 DECLARE @Id Int -- Int32
 SET     @Id = 1
 DECLARE @Stamp Int -- Int32
@@ -171,9 +154,4 @@ SELECT
 	[t1].[Value] as [Value_1]
 FROM
 	[ConcurrencyAutoIncrement] [t1]
-
-BeforeExecute
--- SqlCe
-
-DROP TABLE [ConcurrencyAutoIncrement]
 

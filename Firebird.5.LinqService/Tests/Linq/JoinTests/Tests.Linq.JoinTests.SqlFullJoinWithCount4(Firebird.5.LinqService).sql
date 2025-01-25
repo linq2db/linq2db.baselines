@@ -6,32 +6,23 @@ DECLARE @id2 Integer -- Int32
 SET     @id2 = 2
 
 SELECT
-	"t1"."c1"
+	COUNT("t1"."ParentID") = COUNT("right_2"."ParentID") AND COUNT("t1"."ParentID") = COUNT(*)
 FROM
 	(
 		SELECT
-			CASE
-				WHEN COUNT("left_1"."ParentID") = COUNT("right_2"."ParentID") AND COUNT("left_1"."ParentID") = COUNT(*)
-					THEN TRUE
-				ELSE FALSE
-			END as "c1"
+			"p"."ParentID"
 		FROM
-			(
-				SELECT
-					"p"."ParentID"
-				FROM
-					"Parent" "p"
-				WHERE
-					"p"."ParentID" <> @id1
-			) "left_1"
-				FULL JOIN (
-					SELECT
-						"right_1"."ParentID"
-					FROM
-						"Parent" "right_1"
-					WHERE
-						"right_1"."ParentID" <> @id2
-				) "right_2" ON "right_2"."ParentID" = "left_1"."ParentID"
+			"Parent" "p"
+		WHERE
+			"p"."ParentID" <> @id1
 	) "t1"
+		FULL JOIN (
+			SELECT
+				"right_1"."ParentID"
+			FROM
+				"Parent" "right_1"
+			WHERE
+				"right_1"."ParentID" <> @id2
+		) "right_2" ON "right_2"."ParentID" = "t1"."ParentID"
 FETCH NEXT 2 ROWS ONLY
 

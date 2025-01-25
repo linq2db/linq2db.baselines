@@ -1,34 +1,6 @@
 ﻿BeforeExecute
 -- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
 
-DROP TABLE IF EXISTS "Car"
-
-BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
-
-CREATE TABLE IF NOT EXISTS "Car"
-(
-	"Id"   Int  NOT NULL,
-	"Name" text     NULL,
-
-	CONSTRAINT "PK_Car" PRIMARY KEY ("Id")
-)
-
-BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
-
-INSERT INTO "Car"
-(
-	"Id",
-	"Name"
-)
-VALUES
-(1,'Special'),
-(2,'NoSpecial')
-
-BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
-
 SELECT
 	x."Id",
 	x."Name"
@@ -53,7 +25,7 @@ SELECT
 FROM
 	"Car" x
 WHERE
-	(x."Name" <> 'Special' OR x."Name" IS NULL)
+	x."Name" <> 'Special' OR x."Name" IS NULL
 
 BeforeExecute
 -- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
@@ -111,7 +83,7 @@ SELECT
 FROM
 	"Car" x
 WHERE
-	(x."Name" <> 'Special' OR x."Name" IS NULL)
+	x."Name" <> 'Special' OR x."Name" IS NULL
 
 BeforeExecute
 -- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
@@ -141,9 +113,4 @@ SELECT
 	t1."Name"
 FROM
 	"Car" t1
-
-BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
-
-DROP TABLE IF EXISTS "Car"
 

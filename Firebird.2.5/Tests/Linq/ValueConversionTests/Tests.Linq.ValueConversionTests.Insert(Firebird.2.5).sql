@@ -1,37 +1,5 @@
 ﻿BeforeExecute
 -- Firebird.2.5 Firebird
-
-EXECUTE BLOCK AS BEGIN
-	IF (EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'ValueConversion')) THEN
-		EXECUTE STATEMENT 'DROP TABLE "ValueConversion"';
-END
-
-BeforeExecute
--- Firebird.2.5 Firebird
-
-EXECUTE BLOCK AS BEGIN
-	IF (NOT EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'ValueConversion')) THEN
-		EXECUTE STATEMENT '
-			CREATE TABLE "ValueConversion"
-			(
-				"Id"                      Int                                    NOT NULL,
-				"Value1"                  VarChar(200) CHARACTER SET UNICODE_FSS,
-				"Value2"                  VarChar(200) CHARACTER SET UNICODE_FSS,
-				"Enum"                    VarChar(50) CHARACTER SET UNICODE_FSS  NOT NULL,
-				"EnumNullable"            VarChar(50) CHARACTER SET UNICODE_FSS,
-				"EnumWithNull"            VarChar(50) CHARACTER SET UNICODE_FSS,
-				"EnumWithNullDeclarative" VarChar(50) CHARACTER SET UNICODE_FSS,
-				"BoolValue"               VarChar(1) CHARACTER SET UNICODE_FSS   NOT NULL,
-				"AnotherBoolValue"        VarChar(1) CHARACTER SET UNICODE_FSS   NOT NULL,
-				"DateTimeNullable"        TimeStamp,
-
-				CONSTRAINT "PK_ValueConversion" PRIMARY KEY ("Id")
-			)
-		';
-END
-
-BeforeExecute
--- Firebird.2.5 Firebird
 DECLARE @Id Integer -- Int32
 SET     @Id = 1
 DECLARE @Value1 VarChar(2) -- String
@@ -56,12 +24,12 @@ INSERT INTO "ValueConversion"
 )
 VALUES
 (
-	CAST(@Id AS Int),
-	CAST(@Value1 AS VARCHAR(2)),
-	CAST(@Enum AS VARCHAR(6)),
-	CAST(@Value2 AS VARCHAR(22)),
-	CAST(@BoolValue AS VarChar(1) CHARACTER SET UNICODE_FSS),
-	CAST(@AnotherBoolValue AS VarChar(1) CHARACTER SET UNICODE_FSS)
+	@Id,
+	@Value1,
+	@Enum,
+	@Value2,
+	@BoolValue,
+	@AnotherBoolValue
 )
 
 BeforeExecute
@@ -109,12 +77,12 @@ INSERT INTO "ValueConversion"
 )
 VALUES
 (
-	CAST(@Id AS Int),
-	CAST(@Value1 AS VARCHAR(1)),
-	CAST(@Value2 AS VARCHAR(1)),
-	CAST(@Enum AS VARCHAR(6)),
-	CAST(@BoolValue AS VarChar(1) CHARACTER SET UNICODE_FSS),
-	CAST(@AnotherBoolValue AS VarChar(1) CHARACTER SET UNICODE_FSS)
+	@Id,
+	@Value1,
+	@Value2,
+	@Enum,
+	@BoolValue,
+	@AnotherBoolValue
 )
 
 BeforeExecute
@@ -212,12 +180,4 @@ SELECT
 	COUNT(*)
 FROM
 	"ValueConversion" "t1"
-
-BeforeExecute
--- Firebird.2.5 Firebird
-
-EXECUTE BLOCK AS BEGIN
-	IF (EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'ValueConversion')) THEN
-		EXECUTE STATEMENT 'DROP TABLE "ValueConversion"';
-END
 

@@ -1,31 +1,5 @@
 ﻿BeforeExecute
 -- SQLite.MS SQLite
-
-DROP TABLE IF EXISTS [InfeedAdviceDTO]
-
-BeforeExecute
--- SQLite.MS SQLite
-
-CREATE TABLE IF NOT EXISTS [InfeedAdviceDTO]
-(
-	[Id] INTEGER NOT NULL
-)
-
-BeforeExecute
--- SQLite.MS SQLite
-
-DROP TABLE IF EXISTS [InventoryResourceDTO]
-
-BeforeExecute
--- SQLite.MS SQLite
-
-CREATE TABLE IF NOT EXISTS [InventoryResourceDTO]
-(
-	[InfeedAdviceID] INTEGER NOT NULL
-)
-
-BeforeExecute
--- SQLite.MS SQLite
 DECLARE @InfeedAdviceID  -- Int32
 SET     @InfeedAdviceID = 1
 
@@ -60,16 +34,4 @@ SELECT
 FROM
 	[InfeedAdviceDTO] [infeed]
 		INNER JOIN [InventoryResourceDTO] [inventory] ON [infeed].[Id] = [inventory].[InfeedAdviceID]
-WHERE
-	[infeed].[Id] IS NOT NULL
-
-BeforeExecute
--- SQLite.MS SQLite
-
-DROP TABLE IF EXISTS [InventoryResourceDTO]
-
-BeforeExecute
--- SQLite.MS SQLite
-
-DROP TABLE IF EXISTS [InfeedAdviceDTO]
 

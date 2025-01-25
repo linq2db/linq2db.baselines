@@ -1,24 +1,6 @@
 ﻿BeforeExecute
 -- ClickHouse.Client ClickHouse
 
-DROP TABLE IF EXISTS R
-
-BeforeExecute
--- ClickHouse.Client ClickHouse
-
-CREATE TABLE IF NOT EXISTS R
-(
-	MetadataVersion Int32,
-	DictionaryKey   Int32,
-
-	PRIMARY KEY (MetadataVersion)
-)
-ENGINE = MergeTree()
-ORDER BY MetadataVersion
-
-BeforeExecute
--- ClickHouse.Client ClickHouse
-
 INSERT INTO R
 (
 	MetadataVersion,
@@ -39,9 +21,4 @@ SELECT
 FROM
 	R t1
 LIMIT 2
-
-BeforeExecute
--- ClickHouse.Client ClickHouse
-
-DROP TABLE IF EXISTS R
 

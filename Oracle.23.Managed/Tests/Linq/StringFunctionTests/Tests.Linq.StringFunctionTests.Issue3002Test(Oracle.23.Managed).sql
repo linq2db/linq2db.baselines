@@ -1,37 +1,6 @@
 ﻿BeforeExecute
 -- Oracle.23.Managed Oracle.Managed Oracle12
 
-BEGIN
-	EXECUTE IMMEDIATE 'DROP TABLE "SampleClass"';
-EXCEPTION
-	WHEN OTHERS THEN
-		IF SQLCODE != -942 THEN
-			RAISE;
-		END IF;
-END;
-
-BeforeExecute
--- Oracle.23.Managed Oracle.Managed Oracle12
-
-BEGIN
-	EXECUTE IMMEDIATE '
-		CREATE TABLE "SampleClass"
-		(
-			"Id"     Int          NOT NULL,
-			"Value"  VarChar2(50)     NULL,
-			"Value2" VarChar(255)     NULL
-		)
-	';
-EXCEPTION
-	WHEN OTHERS THEN
-		IF SQLCODE != -955 THEN
-			RAISE;
-		END IF;
-END;
-
-BeforeExecute
--- Oracle.23.Managed Oracle.Managed Oracle12
-
 INSERT INTO "SampleClass"
 (
 	"Id",
@@ -63,8 +32,8 @@ VALUES
 
 BeforeExecute
 -- Oracle.23.Managed Oracle.Managed Oracle12
-DECLARE @test NVarchar2 -- String
-SET     @test = Test
+DECLARE @test NVarchar2(4) -- String
+SET     @test = 'Test'
 DECLARE @test_1 Varchar2(6) -- String
 SET     @test_1 = '%Test%'
 
@@ -76,7 +45,7 @@ SELECT
 			FROM
 				"SampleClass" sampleClass_1
 			WHERE
-				(sampleClass_1."Value" = :test OR sampleClass_1."Value2" LIKE :test_1 ESCAPE '~')
+				sampleClass_1."Value" = :test OR sampleClass_1."Value2" LIKE :test_1 ESCAPE '~'
 		)
 			THEN 1
 		ELSE 0
@@ -85,8 +54,8 @@ FROM SYS.DUAL
 
 BeforeExecute
 -- Oracle.23.Managed Oracle.Managed Oracle12
-DECLARE @test NVarchar2 -- String
-SET     @test = Test
+DECLARE @test NVarchar2(4) -- String
+SET     @test = 'Test'
 DECLARE @test_1 Varchar2(6) -- String
 SET     @test_1 = '%Test%'
 
@@ -95,12 +64,12 @@ SELECT
 FROM
 	"SampleClass" sampleClass_1
 WHERE
-	(sampleClass_1."Value" = :test OR sampleClass_1."Value2" LIKE :test_1 ESCAPE '~')
+	sampleClass_1."Value" = :test OR sampleClass_1."Value2" LIKE :test_1 ESCAPE '~'
 
 BeforeExecute
 -- Oracle.23.Managed Oracle.Managed Oracle12
-DECLARE @test NVarchar2 -- String
-SET     @test = Value
+DECLARE @test NVarchar2(5) -- String
+SET     @test = 'Value'
 DECLARE @test_1 Varchar2(7) -- String
 SET     @test_1 = '%Value%'
 
@@ -112,7 +81,7 @@ SELECT
 			FROM
 				"SampleClass" sampleClass_1
 			WHERE
-				(sampleClass_1."Value" = :test OR sampleClass_1."Value2" LIKE :test_1 ESCAPE '~')
+				sampleClass_1."Value" = :test OR sampleClass_1."Value2" LIKE :test_1 ESCAPE '~'
 		)
 			THEN 1
 		ELSE 0
@@ -121,8 +90,8 @@ FROM SYS.DUAL
 
 BeforeExecute
 -- Oracle.23.Managed Oracle.Managed Oracle12
-DECLARE @test NVarchar2 -- String
-SET     @test = Value
+DECLARE @test NVarchar2(5) -- String
+SET     @test = 'Value'
 DECLARE @test_1 Varchar2(7) -- String
 SET     @test_1 = '%Value%'
 
@@ -131,12 +100,12 @@ SELECT
 FROM
 	"SampleClass" sampleClass_1
 WHERE
-	(sampleClass_1."Value" = :test OR sampleClass_1."Value2" LIKE :test_1 ESCAPE '~')
+	sampleClass_1."Value" = :test OR sampleClass_1."Value2" LIKE :test_1 ESCAPE '~'
 
 BeforeExecute
 -- Oracle.23.Managed Oracle.Managed Oracle12
-DECLARE @test NVarchar2 -- String
-SET     @test = Class
+DECLARE @test NVarchar2(5) -- String
+SET     @test = 'Class'
 DECLARE @test_1 Varchar2(7) -- String
 SET     @test_1 = '%Class%'
 
@@ -148,7 +117,7 @@ SELECT
 			FROM
 				"SampleClass" sampleClass_1
 			WHERE
-				(sampleClass_1."Value" = :test OR sampleClass_1."Value2" LIKE :test_1 ESCAPE '~')
+				sampleClass_1."Value" = :test OR sampleClass_1."Value2" LIKE :test_1 ESCAPE '~'
 		)
 			THEN 1
 		ELSE 0
@@ -157,8 +126,8 @@ FROM SYS.DUAL
 
 BeforeExecute
 -- Oracle.23.Managed Oracle.Managed Oracle12
-DECLARE @test NVarchar2 -- String
-SET     @test = Class
+DECLARE @test NVarchar2(5) -- String
+SET     @test = 'Class'
 DECLARE @test_1 Varchar2(7) -- String
 SET     @test_1 = '%Class%'
 
@@ -167,17 +136,5 @@ SELECT
 FROM
 	"SampleClass" sampleClass_1
 WHERE
-	(sampleClass_1."Value" = :test OR sampleClass_1."Value2" LIKE :test_1 ESCAPE '~')
-
-BeforeExecute
--- Oracle.23.Managed Oracle.Managed Oracle12
-
-BEGIN
-	EXECUTE IMMEDIATE 'DROP TABLE "SampleClass"';
-EXCEPTION
-	WHEN OTHERS THEN
-		IF SQLCODE != -942 THEN
-			RAISE;
-		END IF;
-END;
+	sampleClass_1."Value" = :test OR sampleClass_1."Value2" LIKE :test_1 ESCAPE '~'
 

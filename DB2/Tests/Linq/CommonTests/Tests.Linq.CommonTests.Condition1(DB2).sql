@@ -3,18 +3,11 @@
 
 SELECT
 	CASE
-		WHEN "p"."FirstName" IS NULL OR CHARACTER_LENGTH("p"."FirstName",CODEUNITS32) = 0
-			THEN 1
-		ELSE 0
-	END,
-	"p"."FirstName",
-	CASE
-		WHEN "p"."MiddleName" IS NULL OR CHARACTER_LENGTH("p"."MiddleName",CODEUNITS32) = 0
-			THEN 1
-		ELSE 0
-	END,
-	"p"."MiddleName",
-	"p"."LastName"
+		WHEN CHARACTER_LENGTH("p"."FirstName",CODEUNITS32) <> 0 THEN "p"."FirstName"
+		WHEN NOT ("p"."MiddleName" IS NULL OR CHARACTER_LENGTH("p"."MiddleName",CODEUNITS32) = 0)
+			THEN "p"."MiddleName"
+		ELSE "p"."LastName"
+	END
 FROM
 	"Person" "p"
 

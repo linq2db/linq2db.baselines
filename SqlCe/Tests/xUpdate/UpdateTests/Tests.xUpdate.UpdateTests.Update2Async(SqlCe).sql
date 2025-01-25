@@ -42,13 +42,13 @@ WHERE
 
 BeforeExecute
 -- SqlCe (asynchronously)
-DECLARE @ParentID Int -- Int32
-SET     @ParentID = 1002
+DECLARE @p Int -- Int32
+SET     @p = 1002
 
 SELECT
 	COUNT(*) as [COUNT_1]
 FROM
 	[Parent] [p]
 WHERE
-	[p].[ParentID] = @ParentID
+	[p].[ParentID] = @p
 

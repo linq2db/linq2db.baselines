@@ -1,36 +1,6 @@
 ﻿BeforeExecute
 -- Firebird.2.5 Firebird
 
-EXECUTE BLOCK AS BEGIN
-	IF (EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'ColumnOrderTest')) THEN
-		EXECUTE STATEMENT 'DROP TABLE "ColumnOrderTest"';
-END
-
-BeforeExecute
--- Firebird.2.5 Firebird
-
-EXECUTE BLOCK AS BEGIN
-	IF (NOT EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'ColumnOrderTest')) THEN
-		EXECUTE STATEMENT '
-			CREATE TABLE "ColumnOrderTest"
-			(
-				"RecordID"       Int                                    NOT NULL,
-				"EffectiveStart" TimeStamp                              NOT NULL,
-				"EffectiveEnd"   TimeStamp,
-				"Key"            Int                                    NOT NULL,
-				"Name"           VarChar(255) CHARACTER SET UNICODE_FSS,
-				"Code"           VarChar(255) CHARACTER SET UNICODE_FSS,
-				"Audit1ID"       Int                                    NOT NULL,
-				"Audit2ID"       Int                                    NOT NULL,
-
-				CONSTRAINT "PK_ColumnOrderTest" PRIMARY KEY ("RecordID")
-			)
-		';
-END
-
-BeforeExecute
--- Firebird.2.5 Firebird
-
 
 SELECT * FROM (
 	SELECT
@@ -118,8 +88,8 @@ SELECT * FROM "Patient_SelectByName"(NULL,NULL)
 
 BeforeExecute
 -- Firebird.2.5 Firebird
-DECLARE @PERSONID Integer(4) -- Int32
-SET     @PERSONID = 0
+DECLARE @PersonID Integer(4) -- Int32
+SET     @PersonID = 0
 
 "Person_Delete"
 
@@ -180,11 +150,3 @@ SELECT * FROM "Scalar_ReturnParameter"
 
 BeforeExecute
 RollbackTransaction
-BeforeExecute
--- Firebird.2.5 Firebird
-
-EXECUTE BLOCK AS BEGIN
-	IF (EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'ColumnOrderTest')) THEN
-		EXECUTE STATEMENT 'DROP TABLE "ColumnOrderTest"';
-END
-

@@ -1,23 +1,5 @@
 ﻿BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-
-DROP TABLE "test_insert_or_replace"
-
-BeforeExecute
--- SapHana.Odbc SapHanaOdbc
-
-CREATE COLUMN TABLE "test_insert_or_replace"
-(
-	"id"         Integer       NOT NULL,
-	"name"       NVarChar(255)     NULL,
-	"created_by" NVarChar(255)     NULL,
-	"updated_by" NVarChar(255)     NULL,
-
-	PRIMARY KEY ("id")
-)
-
-BeforeExecute
--- SapHana.Odbc SapHanaOdbc
 DECLARE @Name NVarChar(5) -- String
 SET     @Name = 'Test1'
 DECLARE @UpdatedBy NVarChar -- String
@@ -95,9 +77,4 @@ SELECT
 FROM
 	"test_insert_or_replace" "t1"
 LIMIT 2
-
-BeforeExecute
--- SapHana.Odbc SapHanaOdbc
-
-DROP TABLE "test_insert_or_replace"
 

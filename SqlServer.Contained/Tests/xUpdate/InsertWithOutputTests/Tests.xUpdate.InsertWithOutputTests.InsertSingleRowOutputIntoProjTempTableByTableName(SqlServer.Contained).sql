@@ -1,22 +1,6 @@
 ﻿BeforeExecute
 -- SqlServer.Contained SqlServer.2019
 
-DROP TABLE IF EXISTS [TableWithData_source]
-
-BeforeExecute
--- SqlServer.Contained SqlServer.2019
-
-IF (OBJECT_ID(N'[TableWithData_source]', N'U') IS NULL)
-	CREATE TABLE [TableWithData_source]
-	(
-		[Id]       Int          NOT NULL,
-		[Value]    Int          NOT NULL,
-		[ValueStr] NVarChar(50)     NULL
-	)
-
-BeforeExecute
--- SqlServer.Contained SqlServer.2019
-
 CREATE TABLE [tempdb]..[#DestinationTable_output]
 (
 	[Id]       Int          NOT NULL,
@@ -34,9 +18,9 @@ INSERT INTO [TableWithData_source]
 	[ValueStr]
 )
 OUTPUT
-	[INSERTED].[Value] * 2,
-	[INSERTED].[Id] + 1,
-	N'Foo' + [INSERTED].[ValueStr]
+	INSERTED.[Value] * 2,
+	INSERTED.[Id] + 1,
+	N'Foo' + INSERTED.[ValueStr]
 INTO [tempdb]..[#DestinationTable_output]
 (
 	[Value],
@@ -74,9 +58,4 @@ BeforeExecute
 -- SqlServer.Contained SqlServer.2019
 
 DROP TABLE IF EXISTS [tempdb]..[#DestinationTable_output]
-
-BeforeExecute
--- SqlServer.Contained SqlServer.2019
-
-DROP TABLE IF EXISTS [TableWithData_source]
 

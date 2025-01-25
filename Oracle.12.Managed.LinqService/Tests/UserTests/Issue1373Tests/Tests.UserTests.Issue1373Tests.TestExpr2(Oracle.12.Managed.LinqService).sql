@@ -1,37 +1,5 @@
 ﻿BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12
-
-BEGIN
-	EXECUTE IMMEDIATE 'DROP TABLE "Issue1373Tests"';
-EXCEPTION
-	WHEN OTHERS THEN
-		IF SQLCODE != -942 THEN
-			RAISE;
-		END IF;
-END;
-
-BeforeExecute
--- Oracle.12.Managed Oracle.Managed Oracle12
-
-BEGIN
-	EXECUTE IMMEDIATE '
-		CREATE TABLE "Issue1373Tests"
-		(
-			"Id"     Int          NOT NULL,
-			"Field1" VarChar(255)     NULL,
-
-			CONSTRAINT "PK_Issue1373Tests" PRIMARY KEY ("Id")
-		)
-	';
-EXCEPTION
-	WHEN OTHERS THEN
-		IF SQLCODE != -955 THEN
-			RAISE;
-		END IF;
-END;
-
-BeforeExecute
--- Oracle.12.Managed Oracle.Managed Oracle12
 DECLARE @Field1 NVarchar2 -- String
 SET     @Field1 = NULL
 
@@ -88,16 +56,4 @@ FROM
 	"Issue1373Tests" t1
 ORDER BY
 	t1."Id"
-
-BeforeExecute
--- Oracle.12.Managed Oracle.Managed Oracle12
-
-BEGIN
-	EXECUTE IMMEDIATE 'DROP TABLE "Issue1373Tests"';
-EXCEPTION
-	WHEN OTHERS THEN
-		IF SQLCODE != -942 THEN
-			RAISE;
-		END IF;
-END;
 

@@ -2,14 +2,14 @@
 -- Oracle.18.Managed Oracle.Managed Oracle12
 
 SELECT
-	t_1."c1"
+	t."Value_1"
 FROM
 	(
 		SELECT
-			Floor(-(t."MoneyValue" + 1)) as "c1"
+			Floor(-(p."MoneyValue" + 1)) as "Value_1"
 		FROM
-			"LinqDataTypes" t
-	) t_1
+			"LinqDataTypes" p
+	) t
 WHERE
-	t_1."c1" <> 0
+	t."Value_1" <> 0
 

@@ -1,56 +1,5 @@
 ﻿BeforeExecute
 -- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
-
-DROP TABLE IF EXISTS "MainTable"
-
-BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
-
-CREATE TABLE IF NOT EXISTS "MainTable"
-(
-	"Id"    Int  NOT NULL,
-	"Field" text     NULL
-)
-
-BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
-
-INSERT INTO "MainTable"
-(
-	"Id",
-	"Field"
-)
-VALUES
-(1,'value 1'),
-(2,'value 2'),
-(3,'value 3')
-
-BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
-
-DROP TABLE IF EXISTS "AssociatedTable"
-
-BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
-
-CREATE TABLE IF NOT EXISTS "AssociatedTable"
-(
-	"Id" Int NOT NULL
-)
-
-BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
-
-INSERT INTO "AssociatedTable"
-(
-	"Id"
-)
-VALUES
-(1),
-(3)
-
-BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
 DECLARE @id Integer -- Int32
 SET     @id = 3
 
@@ -59,9 +8,9 @@ UPDATE
 SET
 	"Field" = 'test'
 FROM
-	"AssociatedTable" pat
+	"AssociatedTable" p
 WHERE
-	pat."Id" = :id AND pat."Id" = "MainTable"."Id"
+	p."Id" = :id AND p."Id" = "MainTable"."Id"
 
 BeforeExecute
 -- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
@@ -73,14 +22,4 @@ FROM
 	"MainTable" t1
 ORDER BY
 	t1."Id"
-
-BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
-
-DROP TABLE IF EXISTS "AssociatedTable"
-
-BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
-
-DROP TABLE IF EXISTS "MainTable"
 

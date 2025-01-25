@@ -1,19 +1,5 @@
 ﻿BeforeExecute
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
-DROP TABLE IF EXISTS `CreateTableTypes`
-
-BeforeExecute
--- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
-CREATE TABLE IF NOT EXISTS `CreateTableTypes`
-(
-	`String` VARCHAR(10)     NULL,
-	`Id`     INT         NOT NULL
-)
-
-BeforeExecute
--- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 DECLARE @Id Int32
 SET     @Id = 1
 DECLARE @String VarChar -- String
@@ -58,9 +44,4 @@ FROM
 	`CreateTableTypes` `t1`
 ORDER BY
 	`t1`.`Id`
-
-BeforeExecute
--- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
-DROP TABLE IF EXISTS `CreateTableTypes`
 

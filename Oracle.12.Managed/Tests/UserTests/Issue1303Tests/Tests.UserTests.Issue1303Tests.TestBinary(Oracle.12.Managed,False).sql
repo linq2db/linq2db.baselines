@@ -1,43 +1,6 @@
 ﻿BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12
 
-BEGIN
-	EXECUTE IMMEDIATE 'DROP TABLE "Issue1303"';
-EXCEPTION
-	WHEN OTHERS THEN
-		IF SQLCODE != -942 THEN
-			RAISE;
-		END IF;
-END;
-
-BeforeExecute
--- Oracle.12.Managed Oracle.Managed Oracle12
-
-BEGIN
-	EXECUTE IMMEDIATE '
-		CREATE TABLE "Issue1303"
-		(
-			ID       Int     NOT NULL,
-			"Array"  Raw(10)     NULL,
-			"Binary" Raw(10)     NULL,
-
-			CONSTRAINT "PK_Issue1303" PRIMARY KEY (ID)
-		)
-	';
-EXCEPTION
-	WHEN OTHERS THEN
-		IF SQLCODE != -955 THEN
-			RAISE;
-		END IF;
-END;
-
-BeforeExecute
--- Oracle.12.Managed Oracle.Managed Oracle12
-DECLARE @Array Raw(3) -- Binary
-SET     @Array = HEXTORAW('010203')
-DECLARE @Binary Raw(2) -- Binary
-SET     @Binary = HEXTORAW('0405')
-
 INSERT INTO "Issue1303"
 (
 	ID,
@@ -47,8 +10,8 @@ INSERT INTO "Issue1303"
 VALUES
 (
 	1,
-	:Array,
-	:Binary
+	HEXTORAW('010203'),
+	HEXTORAW('0405')
 )
 
 BeforeExecute
@@ -66,8 +29,6 @@ FETCH NEXT 2 ROWS ONLY
 
 BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12
-DECLARE @Array Raw(3) -- Binary
-SET     @Array = HEXTORAW('010203')
 
 SELECT
 	t1.ID,
@@ -76,13 +37,11 @@ SELECT
 FROM
 	"Issue1303" t1
 WHERE
-	t1."Array" = :Array
+	t1."Array" = HEXTORAW('010203')
 FETCH NEXT 2 ROWS ONLY
 
 BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12
-DECLARE @Binary Raw(2) -- Binary
-SET     @Binary = HEXTORAW('0405')
 
 SELECT
 	t1.ID,
@@ -91,18 +50,6 @@ SELECT
 FROM
 	"Issue1303" t1
 WHERE
-	t1."Binary" = :Binary
+	t1."Binary" = HEXTORAW('0405')
 FETCH NEXT 2 ROWS ONLY
-
-BeforeExecute
--- Oracle.12.Managed Oracle.Managed Oracle12
-
-BEGIN
-	EXECUTE IMMEDIATE 'DROP TABLE "Issue1303"';
-EXCEPTION
-	WHEN OTHERS THEN
-		IF SQLCODE != -942 THEN
-			RAISE;
-		END IF;
-END;
 

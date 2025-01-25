@@ -1,51 +1,5 @@
 ﻿BeforeExecute
 -- PostgreSQL.15 PostgreSQL
-
-DROP TABLE IF EXISTS "T1"
-
-BeforeExecute
--- PostgreSQL.15 PostgreSQL
-
-CREATE TABLE IF NOT EXISTS "T1"
-(
-	"InstrumentId"         Int       NOT NULL,
-	"InstrumentCode"       text          NULL,
-	"CreateDate"           TimeStamp NOT NULL,
-	"SourceInstrumentCode" text          NULL,
-
-	CONSTRAINT "PK_T1" PRIMARY KEY ("InstrumentId")
-)
-
-BeforeExecute
--- PostgreSQL.15 PostgreSQL
-
-DROP TABLE IF EXISTS "T2"
-
-BeforeExecute
--- PostgreSQL.15 PostgreSQL
-
-CREATE TABLE IF NOT EXISTS "T2"
-(
-	"InstrumentId" Int NOT NULL,
-	"IndexId"      Int NOT NULL
-)
-
-BeforeExecute
--- PostgreSQL.15 PostgreSQL
-
-DROP TABLE IF EXISTS "T3"
-
-BeforeExecute
--- PostgreSQL.15 PostgreSQL
-
-CREATE TABLE IF NOT EXISTS "T3"
-(
-	"InstrumentId" Int NOT NULL,
-	"IndexId"      Int NOT NULL
-)
-
-BeforeExecute
--- PostgreSQL.15 PostgreSQL
 DECLARE @InstrumentId Integer -- Int32
 SET     @InstrumentId = 1
 DECLARE @IndexId Integer -- Int32
@@ -210,19 +164,4 @@ FROM
 	) t5
 ORDER BY
 	t5."SourceInstrumentCode"
-
-BeforeExecute
--- PostgreSQL.15 PostgreSQL
-
-DROP TABLE IF EXISTS "T3"
-
-BeforeExecute
--- PostgreSQL.15 PostgreSQL
-
-DROP TABLE IF EXISTS "T2"
-
-BeforeExecute
--- PostgreSQL.15 PostgreSQL
-
-DROP TABLE IF EXISTS "T1"
 

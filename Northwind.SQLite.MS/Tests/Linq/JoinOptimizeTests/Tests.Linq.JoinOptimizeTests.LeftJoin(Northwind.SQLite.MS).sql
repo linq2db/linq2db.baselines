@@ -4,9 +4,18 @@
 SELECT
 	[od].[OrderID],
 	[o1].[OrderID],
-	[o2].[OrderID],
-	[o3].[OrderID],
-	[o2].[OrderID]
+	CASE
+		WHEN [o2].[OrderID] IS NULL THEN 0
+		ELSE [o2].[OrderID]
+	END,
+	CASE
+		WHEN [o3].[OrderID] IS NULL THEN 0
+		ELSE [o3].[OrderID]
+	END,
+	CASE
+		WHEN [o2].[OrderID] IS NULL THEN 0
+		ELSE [o2].[OrderID]
+	END
 FROM
 	[Order Details] [od]
 		INNER JOIN [Orders] [o1] ON [od].[OrderID] = [o1].[OrderID] AND [od].[ProductID] = 39

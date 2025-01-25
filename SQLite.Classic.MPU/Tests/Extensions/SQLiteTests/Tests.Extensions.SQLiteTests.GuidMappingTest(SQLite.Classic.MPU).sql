@@ -1,24 +1,6 @@
 ﻿BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
-DROP TABLE IF EXISTS [GuidMapping]
-
-BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
-
-CREATE TABLE IF NOT EXISTS [GuidMapping]
-(
-	[BlobGuid1] Guid                 NULL,
-	[BlobGuid2] Binary               NULL,
-	[BlobGuid3] Guid                 NULL,
-	[BlobGuid4] UNIQUEIDENTIFIER     NULL,
-	[TextGuid1] TEXT                 NULL,
-	[TextGuid2] VarChar              NULL
-)
-
-BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
-
 INSERT INTO [GuidMapping]
 (
 	[BlobGuid1]
@@ -166,8 +148,8 @@ DELETE FROM
 
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @Guid1  -- Guid
-SET     @Guid1 = X'3D667BBCDE0F27438F925D8CC3A11D11'
+DECLARE @NonReadonlyGuid1  -- Guid
+SET     @NonReadonlyGuid1 = X'3D667BBCDE0F27438F925D8CC3A11D11'
 
 INSERT INTO [GuidMapping]
 (
@@ -175,7 +157,7 @@ INSERT INTO [GuidMapping]
 )
 VALUES
 (
-	@Guid1
+	@NonReadonlyGuid1
 )
 
 BeforeExecute
@@ -191,8 +173,8 @@ DELETE FROM
 
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @Guid1  -- Guid
-SET     @Guid1 = X'3D667BBCDE0F27438F925D8CC3A11D11'
+DECLARE @NonReadonlyGuid1  -- Guid
+SET     @NonReadonlyGuid1 = X'3D667BBCDE0F27438F925D8CC3A11D11'
 
 INSERT INTO [GuidMapping]
 (
@@ -200,7 +182,7 @@ INSERT INTO [GuidMapping]
 )
 VALUES
 (
-	@Guid1
+	@NonReadonlyGuid1
 )
 
 BeforeExecute
@@ -216,8 +198,8 @@ DELETE FROM
 
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @Guid1  -- Guid
-SET     @Guid1 = X'3D667BBCDE0F27438F925D8CC3A11D11'
+DECLARE @NonReadonlyGuid1  -- Guid
+SET     @NonReadonlyGuid1 = X'3D667BBCDE0F27438F925D8CC3A11D11'
 
 INSERT INTO [GuidMapping]
 (
@@ -225,7 +207,7 @@ INSERT INTO [GuidMapping]
 )
 VALUES
 (
-	@Guid1
+	@NonReadonlyGuid1
 )
 
 BeforeExecute
@@ -241,8 +223,8 @@ DELETE FROM
 
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @Guid1  -- Guid
-SET     @Guid1 = X'3D667BBCDE0F27438F925D8CC3A11D11'
+DECLARE @NonReadonlyGuid1  -- Guid
+SET     @NonReadonlyGuid1 = X'3D667BBCDE0F27438F925D8CC3A11D11'
 
 INSERT INTO [GuidMapping]
 (
@@ -250,7 +232,7 @@ INSERT INTO [GuidMapping]
 )
 VALUES
 (
-	@Guid1
+	@NonReadonlyGuid1
 )
 
 BeforeExecute
@@ -266,8 +248,8 @@ DELETE FROM
 
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @Guid1 NVarChar(36) -- String
-SET     @Guid1 = 'BC7B663D-0FDE-4327-8F92-5D8CC3A11D11'
+DECLARE @NonReadonlyGuid1 NVarChar(36) -- String
+SET     @NonReadonlyGuid1 = 'BC7B663D-0FDE-4327-8F92-5D8CC3A11D11'
 
 INSERT INTO [GuidMapping]
 (
@@ -275,7 +257,7 @@ INSERT INTO [GuidMapping]
 )
 VALUES
 (
-	@Guid1
+	@NonReadonlyGuid1
 )
 
 BeforeExecute
@@ -296,8 +278,8 @@ DELETE FROM
 
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @Guid1 NVarChar(36) -- String
-SET     @Guid1 = 'BC7B663D-0FDE-4327-8F92-5D8CC3A11D11'
+DECLARE @NonReadonlyGuid1 NVarChar(36) -- String
+SET     @NonReadonlyGuid1 = 'BC7B663D-0FDE-4327-8F92-5D8CC3A11D11'
 
 INSERT INTO [GuidMapping]
 (
@@ -305,7 +287,7 @@ INSERT INTO [GuidMapping]
 )
 VALUES
 (
-	@Guid1
+	@NonReadonlyGuid1
 )
 
 BeforeExecute
@@ -474,9 +456,4 @@ SELECT
 	[t1].[TextGuid2]
 FROM
 	[GuidMapping] [t1]
-
-BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
-
-DROP TABLE IF EXISTS [GuidMapping]
 

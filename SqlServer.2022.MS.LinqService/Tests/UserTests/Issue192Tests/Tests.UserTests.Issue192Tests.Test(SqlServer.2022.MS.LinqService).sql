@@ -1,21 +1,5 @@
 ﻿BeforeExecute
 -- SqlServer.2022.MS SqlServer.2022
-
-DROP TABLE IF EXISTS [TypeConvertTable]
-
-BeforeExecute
--- SqlServer.2022.MS SqlServer.2022
-
-IF (OBJECT_ID(N'[TypeConvertTable]', N'U') IS NULL)
-	CREATE TABLE [TypeConvertTable]
-	(
-		[Name]      NVarChar(50) NOT NULL,
-		[BoolValue] Char         NOT NULL,
-		[GuidValue] VarChar(50)      NULL
-	)
-
-BeforeExecute
--- SqlServer.2022.MS SqlServer.2022
 DECLARE @Name NVarChar(50) -- String
 SET     @Name = N'NotVerified'
 DECLARE @BoolValue Char(1) -- AnsiStringFixedLength
@@ -80,15 +64,15 @@ WHERE
 
 BeforeExecute
 -- SqlServer.2022.MS SqlServer.2022
-DECLARE @GuidValue VarChar(50) -- AnsiString
-SET     @GuidValue = N'a948600d-de21-4f74-8ac2-9516b287076e'
+DECLARE @cond VarChar(50) -- AnsiString
+SET     @cond = N'a948600d-de21-4f74-8ac2-9516b287076e'
 
 SELECT
 	COUNT(*)
 FROM
 	[TypeConvertTable] [t1]
 WHERE
-	[t1].[GuidValue] = @GuidValue
+	[t1].[GuidValue] = @cond
 
 BeforeExecute
 -- SqlServer.2022.MS SqlServer.2022
@@ -237,9 +221,4 @@ FROM
 	[TypeConvertTable] [t1]
 WHERE
 	[t1].[GuidValue] = @GuidValue
-
-BeforeExecute
--- SqlServer.2022.MS SqlServer.2022
-
-DROP TABLE IF EXISTS [TypeConvertTable]
 

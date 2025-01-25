@@ -1,51 +1,5 @@
 ﻿BeforeExecute
 -- SQLite.Classic SQLite
-
-DROP TABLE IF EXISTS [T1]
-
-BeforeExecute
--- SQLite.Classic SQLite
-
-CREATE TABLE IF NOT EXISTS [T1]
-(
-	[InstrumentId]         INTEGER       NOT NULL,
-	[InstrumentCode]       NVarChar(255)     NULL,
-	[CreateDate]           DateTime2     NOT NULL,
-	[SourceInstrumentCode] NVarChar(255)     NULL,
-
-	CONSTRAINT [PK_T1] PRIMARY KEY ([InstrumentId])
-)
-
-BeforeExecute
--- SQLite.Classic SQLite
-
-DROP TABLE IF EXISTS [T2]
-
-BeforeExecute
--- SQLite.Classic SQLite
-
-CREATE TABLE IF NOT EXISTS [T2]
-(
-	[InstrumentId] INTEGER NOT NULL,
-	[IndexId]      INTEGER NOT NULL
-)
-
-BeforeExecute
--- SQLite.Classic SQLite
-
-DROP TABLE IF EXISTS [T3]
-
-BeforeExecute
--- SQLite.Classic SQLite
-
-CREATE TABLE IF NOT EXISTS [T3]
-(
-	[InstrumentId] INTEGER NOT NULL,
-	[IndexId]      INTEGER NOT NULL
-)
-
-BeforeExecute
--- SQLite.Classic SQLite
 DECLARE @InstrumentId  -- Int32
 SET     @InstrumentId = 1
 DECLARE @IndexId  -- Int32
@@ -210,19 +164,4 @@ FROM
 	) [t5]
 ORDER BY
 	[t5].[SourceInstrumentCode]
-
-BeforeExecute
--- SQLite.Classic SQLite
-
-DROP TABLE IF EXISTS [T3]
-
-BeforeExecute
--- SQLite.Classic SQLite
-
-DROP TABLE IF EXISTS [T2]
-
-BeforeExecute
--- SQLite.Classic SQLite
-
-DROP TABLE IF EXISTS [T1]
 

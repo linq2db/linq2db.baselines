@@ -1,44 +1,5 @@
 ﻿BeforeExecute
 -- Oracle.18.Managed Oracle.Managed Oracle12
-
-BEGIN
-	EXECUTE IMMEDIATE 'DROP TABLE "DateOnlyTable"';
-EXCEPTION
-	WHEN OTHERS THEN
-		IF SQLCODE != -942 THEN
-			RAISE;
-		END IF;
-END;
-
-BeforeExecute
--- Oracle.18.Managed Oracle.Managed Oracle12
-
-BEGIN
-	EXECUTE IMMEDIATE '
-		CREATE TABLE "DateOnlyTable"
-		(
-			"Id"             Int  NOT NULL,
-			"Column"         date NOT NULL,
-			"ColumnNullable" date     NULL
-		)
-	';
-EXCEPTION
-	WHEN OTHERS THEN
-		IF SQLCODE != -955 THEN
-			RAISE;
-		END IF;
-END;
-
-BeforeExecute
--- Oracle.18.Managed Oracle.Managed Oracle12
-
-INSERT ALL
-	INTO "DateOnlyTable" ("Id", "Column", "ColumnNullable") VALUES (1,DATE '1950-01-01',NULL)
-	INTO "DateOnlyTable" ("Id", "Column", "ColumnNullable") VALUES (2,DATE '2020-02-29',DATE '2200-01-01')
-SELECT * FROM dual
-
-BeforeExecute
--- Oracle.18.Managed Oracle.Managed Oracle12
 DECLARE @Column_1 Date
 SET     @Column_1 = TIMESTAMP '2020-02-29 00:00:00.000000'
 DECLARE @ColumnNullable Date
@@ -178,16 +139,4 @@ FROM
 	"DateOnlyTable" t1
 ORDER BY
 	t1."Id"
-
-BeforeExecute
--- Oracle.18.Managed Oracle.Managed Oracle12
-
-BEGIN
-	EXECUTE IMMEDIATE 'DROP TABLE "DateOnlyTable"';
-EXCEPTION
-	WHEN OTHERS THEN
-		IF SQLCODE != -942 THEN
-			RAISE;
-		END IF;
-END;
 

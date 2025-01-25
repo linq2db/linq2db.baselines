@@ -1,75 +1,5 @@
 ﻿BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-
-DROP TABLE "Src"
-
-BeforeExecute
--- SapHana.Odbc SapHanaOdbc
-
-CREATE COLUMN TABLE "Src"
-(
-	"Int"            Integer       NOT NULL,
-	"NullableInt"    Integer           NULL,
-	"String"         NVarChar(255)     NULL,
-	"NullableString" NVarChar(255)     NULL
-)
-
-BeforeExecute
--- SapHana.Odbc SapHanaOdbc
-DECLARE @Int  -- Int32
-SET     @Int = 2
-DECLARE @NullableInt  -- Int32
-SET     @NullableInt = 2
-DECLARE @String NVarChar(3) -- String
-SET     @String = 'abc'
-DECLARE @NullableString NVarChar(3) -- String
-SET     @NullableString = 'abc'
-
-INSERT INTO "Src"
-(
-	"Int",
-	"NullableInt",
-	"String",
-	"NullableString"
-)
-VALUES
-(
-	?,
-	?,
-	?,
-	?
-)
-
-BeforeExecute
--- SapHana.Odbc SapHanaOdbc
-DECLARE @Int  -- Int32
-SET     @Int = 3
-DECLARE @NullableInt  -- Int32
-SET     @NullableInt = NULL
-DECLARE @String NVarChar(3) -- String
-SET     @String = 'def'
-DECLARE @NullableString NVarChar -- String
-SET     @NullableString = NULL
-
-INSERT INTO "Src"
-(
-	"Int",
-	"NullableInt",
-	"String",
-	"NullableString"
-)
-VALUES
-(
-	?,
-	?,
-	?,
-	?
-)
-
-BeforeExecute
--- SapHana.Odbc SapHanaOdbc
-DECLARE @value NVarChar(3) -- String
-SET     @value = 'xyz'
 DECLARE @value NVarChar(3) -- String
 SET     @value = 'xyz'
 
@@ -78,12 +8,18 @@ SELECT
 FROM
 	"Src" "s"
 WHERE
-	CASE WHEN "s"."String" = ? OR "s"."String" IS NULL AND ? IS NULL THEN 0 ELSE 1 END = 1
+	NOT EXISTS(
+		SELECT
+			"s"."String"
+FROM DUMMY
+		INTERSECT
+		SELECT
+			?
+FROM DUMMY
+	)
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @value NVarChar(3) -- String
-SET     @value = 'xyz'
 DECLARE @value NVarChar(3) -- String
 SET     @value = 'xyz'
 
@@ -92,12 +28,18 @@ SELECT
 FROM
 	"Src" "s"
 WHERE
-	CASE WHEN "s"."NullableString" = ? OR "s"."NullableString" IS NULL AND ? IS NULL THEN 0 ELSE 1 END = 1
+	NOT EXISTS(
+		SELECT
+			"s"."NullableString"
+FROM DUMMY
+		INTERSECT
+		SELECT
+			?
+FROM DUMMY
+	)
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @value NVarChar(3) -- String
-SET     @value = 'xyz'
 DECLARE @value NVarChar(3) -- String
 SET     @value = 'xyz'
 
@@ -106,12 +48,18 @@ SELECT
 FROM
 	"Src" "s"
 WHERE
-	CASE WHEN "s"."String" = ? OR "s"."String" IS NULL AND ? IS NULL THEN 0 ELSE 1 END = 0
+	EXISTS(
+		SELECT
+			"s"."String"
+FROM DUMMY
+		INTERSECT
+		SELECT
+			?
+FROM DUMMY
+	)
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @value NVarChar(3) -- String
-SET     @value = 'xyz'
 DECLARE @value NVarChar(3) -- String
 SET     @value = 'xyz'
 
@@ -120,10 +68,13 @@ SELECT
 FROM
 	"Src" "s"
 WHERE
-	CASE WHEN "s"."NullableString" = ? OR "s"."NullableString" IS NULL AND ? IS NULL THEN 0 ELSE 1 END = 0
-
-BeforeExecute
--- SapHana.Odbc SapHanaOdbc
-
-DROP TABLE "Src"
+	EXISTS(
+		SELECT
+			"s"."NullableString"
+FROM DUMMY
+		INTERSECT
+		SELECT
+			?
+FROM DUMMY
+	)
 

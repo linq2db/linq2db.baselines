@@ -1,22 +1,6 @@
 ﻿BeforeExecute
 -- SQLite.Classic SQLite
 
-DROP TABLE IF EXISTS [Issue1373Tests]
-
-BeforeExecute
--- SQLite.Classic SQLite
-
-CREATE TABLE IF NOT EXISTS [Issue1373Tests]
-(
-	[Id]     INTEGER       NOT NULL,
-	[Field1] NVarChar(255)     NULL,
-
-	CONSTRAINT [PK_Issue1373Tests] PRIMARY KEY ([Id])
-)
-
-BeforeExecute
--- SQLite.Classic SQLite
-
 INSERT INTO [Issue1373Tests]
 (
 	[Id],
@@ -30,8 +14,6 @@ VALUES
 
 BeforeExecute
 -- SQLite.Classic SQLite
-DECLARE @Field1 NVarChar -- String
-SET     @Field1 = NULL
 
 INSERT INTO [Issue1373Tests]
 (
@@ -41,7 +23,7 @@ INSERT INTO [Issue1373Tests]
 VALUES
 (
 	2,
-	@Field1
+	NULL
 )
 
 BeforeExecute
@@ -70,9 +52,4 @@ FROM
 	[Issue1373Tests] [t1]
 ORDER BY
 	[t1].[Id]
-
-BeforeExecute
--- SQLite.Classic SQLite
-
-DROP TABLE IF EXISTS [Issue1373Tests]
 

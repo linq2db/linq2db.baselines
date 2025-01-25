@@ -15,7 +15,7 @@ SELECT
 FROM
 	"Parent" "o"
 WHERE
-	("o"."ParentID" IN (@p, @p_1, @p_2) OR "o"."ParentID" = @param)
+	"o"."ParentID" IN (@p, @p_1, @p_2) OR "o"."ParentID" = @param
 
 BeforeExecute
 -- Firebird.4 Firebird4
@@ -34,7 +34,7 @@ SELECT
 FROM
 	"Parent" "o"
 WHERE
-	("o"."ParentID" IN (@p, @p_1, @p_2) OR "o"."ParentID" = @param)
+	"o"."ParentID" IN (@p, @p_1, @p_2) OR "o"."ParentID" = @param
 
 BeforeExecute
 -- Firebird.4 Firebird4
@@ -53,7 +53,7 @@ SELECT
 FROM
 	"Parent" "o"
 WHERE
-	("o"."ParentID" IN (@p, @p_1, @p_2) OR "o"."ParentID" = @param)
+	"o"."ParentID" IN (@p, @p_1, @p_2) OR "o"."ParentID" = @param
 
 BeforeExecute
 -- Firebird.4 Firebird4
@@ -72,5 +72,5 @@ SELECT
 FROM
 	"Parent" "o"
 WHERE
-	("o"."ParentID" IN (@p, @p_1, @p_2) OR "o"."ParentID" = @param)
+	"o"."ParentID" IN (@p, @p_1, @p_2) OR "o"."ParentID" = @param
 

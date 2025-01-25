@@ -1,31 +1,6 @@
 ﻿BeforeExecute
 -- Firebird.3 Firebird3
 
-EXECUTE BLOCK AS BEGIN
-	IF (EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'ComplexPerson')) THEN
-		EXECUTE STATEMENT 'DROP TABLE "ComplexPerson"';
-END
-
-BeforeExecute
--- Firebird.3 Firebird3
-
-EXECUTE BLOCK AS BEGIN
-	IF (NOT EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'ComplexPerson')) THEN
-		EXECUTE STATEMENT '
-			CREATE TABLE "ComplexPerson"
-			(
-				"Id"        Int                                    NOT NULL,
-				"FirstName" VarChar(255) CHARACTER SET UNICODE_FSS,
-				"LastName"  VarChar(255) CHARACTER SET UNICODE_FSS,
-
-				CONSTRAINT "PK_ComplexPerson" PRIMARY KEY ("Id")
-			)
-		';
-END
-
-BeforeExecute
--- Firebird.3 Firebird3
-
 SELECT
 	COUNT(*)
 FROM
@@ -48,12 +23,4 @@ FROM
 		WHERE
 			"x_1"."Id" < 20
 	) "t1"
-
-BeforeExecute
--- Firebird.3 Firebird3
-
-EXECUTE BLOCK AS BEGIN
-	IF (EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'ComplexPerson')) THEN
-		EXECUTE STATEMENT 'DROP TABLE "ComplexPerson"';
-END
 

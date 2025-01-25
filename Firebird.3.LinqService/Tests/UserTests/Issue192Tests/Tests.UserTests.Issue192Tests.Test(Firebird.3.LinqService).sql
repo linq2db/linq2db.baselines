@@ -1,28 +1,5 @@
 ﻿BeforeExecute
 -- Firebird.3 Firebird3
-
-EXECUTE BLOCK AS BEGIN
-	IF (EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'TypeConvertTable')) THEN
-		EXECUTE STATEMENT 'DROP TABLE "TypeConvertTable"';
-END
-
-BeforeExecute
--- Firebird.3 Firebird3
-
-EXECUTE BLOCK AS BEGIN
-	IF (NOT EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'TypeConvertTable')) THEN
-		EXECUTE STATEMENT '
-			CREATE TABLE "TypeConvertTable"
-			(
-				"Name"      VarChar(50) CHARACTER SET UNICODE_FSS NOT NULL,
-				"BoolValue" Char                                  NOT NULL,
-				"GuidValue" VarChar(50) CHARACTER SET UNICODE_FSS
-			)
-		';
-END
-
-BeforeExecute
--- Firebird.3 Firebird3
 DECLARE @Name VarChar(11) -- String
 SET     @Name = 'NotVerified'
 DECLARE @BoolValue Char -- String
@@ -87,15 +64,15 @@ WHERE
 
 BeforeExecute
 -- Firebird.3 Firebird3
-DECLARE @GuidValue VarChar(36) -- String
-SET     @GuidValue = 'a948600d-de21-4f74-8ac2-9516b287076e'
+DECLARE @cond VarChar(36) -- String
+SET     @cond = 'a948600d-de21-4f74-8ac2-9516b287076e'
 
 SELECT
 	COUNT(*)
 FROM
 	"TypeConvertTable" "t1"
 WHERE
-	"t1"."GuidValue" = @GuidValue
+	"t1"."GuidValue" = @cond
 
 BeforeExecute
 -- Firebird.3 Firebird3
@@ -256,12 +233,4 @@ FROM
 WHERE
 	"t1"."GuidValue" = @GuidValue
 FETCH NEXT 1 ROWS ONLY
-
-BeforeExecute
--- Firebird.3 Firebird3
-
-EXECUTE BLOCK AS BEGIN
-	IF (EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'TypeConvertTable')) THEN
-		EXECUTE STATEMENT 'DROP TABLE "TypeConvertTable"';
-END
 

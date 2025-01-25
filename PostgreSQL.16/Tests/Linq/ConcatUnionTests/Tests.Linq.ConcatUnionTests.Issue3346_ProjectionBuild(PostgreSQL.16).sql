@@ -1,23 +1,6 @@
 ﻿BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 
-DROP TABLE IF EXISTS "ComplexPerson"
-
-BeforeExecute
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
-
-CREATE TABLE IF NOT EXISTS "ComplexPerson"
-(
-	"Id"        Int  NOT NULL,
-	"FirstName" text     NULL,
-	"LastName"  text     NULL,
-
-	CONSTRAINT "PK_ComplexPerson" PRIMARY KEY ("Id")
-)
-
-BeforeExecute
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
-
 SELECT
 	x."Id",
 	x."FirstName",
@@ -35,9 +18,4 @@ FROM
 	"ComplexPerson" x_1
 WHERE
 	x_1."Id" < 20
-
-BeforeExecute
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
-
-DROP TABLE IF EXISTS "ComplexPerson"
 

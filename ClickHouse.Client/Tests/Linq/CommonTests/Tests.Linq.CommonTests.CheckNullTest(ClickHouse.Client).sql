@@ -4,7 +4,7 @@
 SELECT
 	p.ParentID,
 	p.Value1,
-	t1.not_null,
+	t1.cond,
 	t1.ParentID,
 	t1.ChildID,
 	t1.GrandChildID,
@@ -17,7 +17,7 @@ FROM
 				a.ParentID as ParentID,
 				a.ChildID as ChildID,
 				a.GrandChildID as GrandChildID,
-				1 as not_null,
+				1 as cond,
 				ROW_NUMBER() OVER (PARTITION BY a.ParentID ORDER BY a.ParentID) as rn
 			FROM
 				GrandChild a

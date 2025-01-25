@@ -1,20 +1,5 @@
 ﻿BeforeExecute
 -- Informix.DB2 Informix
-
-DROP TABLE IF EXISTS TypeConvertTable
-
-BeforeExecute
--- Informix.DB2 Informix
-
-CREATE TABLE IF NOT EXISTS TypeConvertTable
-(
-	Name      NVarChar(50) NOT NULL,
-	BoolValue Char         NOT NULL,
-	GuidValue VarChar(50)      NULL
-)
-
-BeforeExecute
--- Informix.DB2 Informix
 DECLARE @Name VarChar(11) -- String
 SET     @Name = 'NotVerified'
 DECLARE @BoolValue Char(1) -- StringFixedLength
@@ -79,15 +64,15 @@ WHERE
 
 BeforeExecute
 -- Informix.DB2 Informix
-DECLARE @GuidValue VarChar(36) -- String
-SET     @GuidValue = 'a948600d-de21-4f74-8ac2-9516b287076e'
+DECLARE @cond VarChar(36) -- String
+SET     @cond = 'a948600d-de21-4f74-8ac2-9516b287076e'
 
 SELECT
 	COUNT(*)
 FROM
 	TypeConvertTable t1
 WHERE
-	t1.GuidValue = @GuidValue
+	t1.GuidValue = @cond
 
 BeforeExecute
 -- Informix.DB2 Informix
@@ -236,9 +221,4 @@ FROM
 	TypeConvertTable t1
 WHERE
 	t1.GuidValue = @GuidValue
-
-BeforeExecute
--- Informix.DB2 Informix
-
-DROP TABLE IF EXISTS TypeConvertTable
 

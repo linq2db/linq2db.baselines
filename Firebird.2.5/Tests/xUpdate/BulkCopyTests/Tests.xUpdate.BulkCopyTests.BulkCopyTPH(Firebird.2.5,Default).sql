@@ -1,34 +1,6 @@
 ﻿BeforeExecute
 -- Firebird.2.5 Firebird
 
-EXECUTE BLOCK AS BEGIN
-	IF (EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'TPHTable')) THEN
-		EXECUTE STATEMENT 'DROP TABLE "TPHTable"';
-END
-
-BeforeExecute
--- Firebird.2.5 Firebird
-
-EXECUTE BLOCK AS BEGIN
-	IF (NOT EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'TPHTable')) THEN
-		EXECUTE STATEMENT '
-			CREATE TABLE "TPHTable"
-			(
-				"Id"            Int                                   NOT NULL,
-				"Discriminator" Int                                   NOT NULL,
-				"Value1"        VarChar(50) CHARACTER SET UNICODE_FSS,
-				"Value2"        VarChar(50) CHARACTER SET UNICODE_FSS,
-				"Value3"        VarChar(50) CHARACTER SET UNICODE_FSS,
-				"NullableBool"  VarChar(1) CHARACTER SET UNICODE_FSS,
-
-				CONSTRAINT "PK_TPHTable" PRIMARY KEY ("Id")
-			)
-		';
-END
-
-BeforeExecute
--- Firebird.2.5 Firebird
-
 INSERT INTO "TPHTable"
 (
 	"Id",
@@ -146,12 +118,4 @@ FROM
 	"TPHTable" "x"
 WHERE
 	"x"."Value3" = 'Str3'
-
-BeforeExecute
--- Firebird.2.5 Firebird
-
-EXECUTE BLOCK AS BEGIN
-	IF (EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'TPHTable')) THEN
-		EXECUTE STATEMENT 'DROP TABLE "TPHTable"';
-END
 

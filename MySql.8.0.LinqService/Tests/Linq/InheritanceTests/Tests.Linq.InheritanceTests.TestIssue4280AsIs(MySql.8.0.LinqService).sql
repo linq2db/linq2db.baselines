@@ -1,23 +1,5 @@
 ﻿BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
-DROP TABLE IF EXISTS `Issue4280`
-
-BeforeExecute
--- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
-CREATE TABLE IF NOT EXISTS `Issue4280`
-(
-	`Id`           INT           NOT NULL,
-	`SerialNumber` VARCHAR(4000)     NULL,
-	`DeviceType`   VARCHAR(4000)     NULL,
-	`Location`     VARCHAR(4000)     NULL,
-
-	CONSTRAINT `PK_Issue4280` PRIMARY KEY CLUSTERED (`Id`)
-)
-
-BeforeExecute
--- MySql.8.0 MySql.8.0.MySql.Data MySql80
 DECLARE @Id Int32
 SET     @Id = 2
 DECLARE @SerialNumber VarChar(7) -- String
@@ -126,9 +108,4 @@ FROM
 	`Issue4280` `t1`
 ORDER BY
 	`t1`.`Id`
-
-BeforeExecute
--- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
-DROP TABLE IF EXISTS `Issue4280`
 

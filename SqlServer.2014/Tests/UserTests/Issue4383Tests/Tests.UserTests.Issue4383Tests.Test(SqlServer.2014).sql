@@ -1,116 +1,4 @@
 ﻿BeforeExecute
--- SqlServer.2014
-
-IF (OBJECT_ID(N'[PUMPLINES]', N'U') IS NOT NULL)
-	DROP TABLE [PUMPLINES]
-
-BeforeExecute
--- SqlServer.2014
-
-IF (OBJECT_ID(N'[PUMPLINES]', N'U') IS NULL)
-	CREATE TABLE [PUMPLINES]
-	(
-		[LINE_ID] Int NOT NULL,
-
-		CONSTRAINT [PK_PUMPLINES] PRIMARY KEY CLUSTERED ([LINE_ID])
-	)
-
-BeforeExecute
--- SqlServer.2014
-
-INSERT INTO [PUMPLINES]
-(
-	[LINE_ID]
-)
-VALUES
-(1),
-(2)
-
-BeforeExecute
--- SqlServer.2014
-
-IF (OBJECT_ID(N'[PUMPLINE_CHAINS]', N'U') IS NOT NULL)
-	DROP TABLE [PUMPLINE_CHAINS]
-
-BeforeExecute
--- SqlServer.2014
-
-IF (OBJECT_ID(N'[PUMPLINE_CHAINS]', N'U') IS NULL)
-	CREATE TABLE [PUMPLINE_CHAINS]
-	(
-		[LINE_ID]  Int NOT NULL,
-		[CHAIN_ID] Int NOT NULL
-	)
-
-BeforeExecute
--- SqlServer.2014
-
-INSERT INTO [PUMPLINE_CHAINS]
-(
-	[LINE_ID],
-	[CHAIN_ID]
-)
-VALUES
-(1,11),
-(2,22)
-
-BeforeExecute
--- SqlServer.2014
-
-IF (OBJECT_ID(N'[CHAINS]', N'U') IS NOT NULL)
-	DROP TABLE [CHAINS]
-
-BeforeExecute
--- SqlServer.2014
-
-IF (OBJECT_ID(N'[CHAINS]', N'U') IS NULL)
-	CREATE TABLE [CHAINS]
-	(
-		[CHAIN_ID] Int NOT NULL,
-
-		CONSTRAINT [PK_CHAINS] PRIMARY KEY CLUSTERED ([CHAIN_ID])
-	)
-
-BeforeExecute
--- SqlServer.2014
-
-INSERT INTO [CHAINS]
-(
-	[CHAIN_ID]
-)
-VALUES
-(11),
-(22)
-
-BeforeExecute
--- SqlServer.2014
-
-IF (OBJECT_ID(N'[CHAINPOINTS]', N'U') IS NOT NULL)
-	DROP TABLE [CHAINPOINTS]
-
-BeforeExecute
--- SqlServer.2014
-
-IF (OBJECT_ID(N'[CHAINPOINTS]', N'U') IS NULL)
-	CREATE TABLE [CHAINPOINTS]
-	(
-		[CHAIN_ID] Int NOT NULL,
-
-		CONSTRAINT [PK_CHAINPOINTS] PRIMARY KEY CLUSTERED ([CHAIN_ID])
-	)
-
-BeforeExecute
--- SqlServer.2014
-
-INSERT INTO [CHAINPOINTS]
-(
-	[CHAIN_ID]
-)
-VALUES
-(11),
-(22)
-
-BeforeExecute
 BeginTransaction(RepeatableRead)
 BeforeExecute
 -- SqlServer.2014
@@ -143,6 +31,7 @@ SELECT
 	[m_1].[LINE_ID],
 	[d].[LINE_ID],
 	[d].[CHAIN_ID],
+	[a_Chain].[CHAIN_ID],
 	[a_Chain].[CHAIN_ID]
 FROM
 	[PUMPLINES] [m_1]
@@ -157,33 +46,10 @@ BeforeExecute
 -- SqlServer.2014
 
 SELECT
+	[t1].[LINE_ID],
 	[t1].[LINE_ID]
 FROM
 	[PUMPLINES] [t1]
 ORDER BY
 	[t1].[LINE_ID]
-
-BeforeExecute
--- SqlServer.2014
-
-IF (OBJECT_ID(N'[CHAINPOINTS]', N'U') IS NOT NULL)
-	DROP TABLE [CHAINPOINTS]
-
-BeforeExecute
--- SqlServer.2014
-
-IF (OBJECT_ID(N'[CHAINS]', N'U') IS NOT NULL)
-	DROP TABLE [CHAINS]
-
-BeforeExecute
--- SqlServer.2014
-
-IF (OBJECT_ID(N'[PUMPLINE_CHAINS]', N'U') IS NOT NULL)
-	DROP TABLE [PUMPLINE_CHAINS]
-
-BeforeExecute
--- SqlServer.2014
-
-IF (OBJECT_ID(N'[PUMPLINES]', N'U') IS NOT NULL)
-	DROP TABLE [PUMPLINES]
 

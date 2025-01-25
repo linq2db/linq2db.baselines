@@ -7,7 +7,7 @@ SELECT
 FROM
 	`Child` `c_1`
 WHERE
-	`c_1`.`ParentID` IS NOT NULL AND `c_1`.`ParentID` IN (
+	`c_1`.`ParentID` IN (
 		SELECT
 			`t1`.`ParentID`
 		FROM
@@ -16,8 +16,6 @@ WHERE
 					`v`.`ParentID`
 				FROM
 					`Parent` `v`
-				WHERE
-					`v`.`ParentID` IS NOT NULL
 				LIMIT 100
 			) `t1`
 	)

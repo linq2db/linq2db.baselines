@@ -1,19 +1,5 @@
 ﻿BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
-
-DROP TABLE IF EXISTS "CreateTableTypes"
-
-BeforeExecute
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
-
-CREATE TABLE IF NOT EXISTS "CreateTableTypes"
-(
-	"Id"     Int   NOT NULL,
-	"Double" Float NOT NULL
-)
-
-BeforeExecute
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 DECLARE @Id Integer -- Int32
 SET     @Id = 1
 DECLARE @Double Double
@@ -58,9 +44,4 @@ FROM
 	"CreateTableTypes" t1
 ORDER BY
 	t1."Id"
-
-BeforeExecute
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
-
-DROP TABLE IF EXISTS "CreateTableTypes"
 

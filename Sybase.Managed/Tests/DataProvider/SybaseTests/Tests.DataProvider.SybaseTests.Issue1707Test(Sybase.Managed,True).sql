@@ -1,28 +1,5 @@
 ﻿BeforeExecute
 -- Sybase.Managed Sybase
-
-IF (OBJECT_ID(N'Issue1707') IS NOT NULL)
-	DROP TABLE [Issue1707]
-
-BeforeExecute
--- Sybase.Managed Sybase
-
-IF (OBJECT_ID(N'Issue1707') IS NULL)
-	EXECUTE('
-		CREATE TABLE [Issue1707]
-		(
-			[Id]        Int      NOT NULL,
-			[Time]      Time     NOT NULL,
-			[Time2]     Time     NOT NULL,
-			[DateTime]  DateTime NOT NULL,
-			[TimeN]     Time         NULL,
-			[Time2N]    Time         NULL,
-			[DateTimeN] DateTime     NULL
-		)
-	')
-
-BeforeExecute
--- Sybase.Managed Sybase
 DECLARE @Id Integer -- Int32
 SET     @Id = 1
 DECLARE @Time Time
@@ -226,10 +203,4 @@ FROM
 	[Issue1707] [t1]
 ORDER BY
 	[t1].[Id]
-
-BeforeExecute
--- Sybase.Managed Sybase
-
-IF (OBJECT_ID(N'Issue1707') IS NOT NULL)
-	DROP TABLE [Issue1707]
 

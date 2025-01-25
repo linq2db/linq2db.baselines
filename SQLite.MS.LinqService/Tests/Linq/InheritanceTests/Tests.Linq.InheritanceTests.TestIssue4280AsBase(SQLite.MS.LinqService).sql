@@ -1,23 +1,5 @@
 ﻿BeforeExecute
 -- SQLite.MS SQLite
-
-DROP TABLE IF EXISTS [Issue4280]
-
-BeforeExecute
--- SQLite.MS SQLite
-
-CREATE TABLE IF NOT EXISTS [Issue4280]
-(
-	[Id]           INTEGER       NOT NULL,
-	[SerialNumber] NVarChar(255)     NULL,
-	[DeviceType]   NVarChar(255)     NULL,
-	[Location]     NVarChar(255)     NULL,
-
-	CONSTRAINT [PK_Issue4280] PRIMARY KEY ([Id])
-)
-
-BeforeExecute
--- SQLite.MS SQLite
 DECLARE @Id  -- Int32
 SET     @Id = 2
 DECLARE @SerialNumber NVarChar(7) -- String
@@ -126,9 +108,4 @@ FROM
 	[Issue4280] [t1]
 ORDER BY
 	[t1].[Id]
-
-BeforeExecute
--- SQLite.MS SQLite
-
-DROP TABLE IF EXISTS [Issue4280]
 

@@ -1,29 +1,5 @@
 ﻿BeforeExecute
 -- Firebird.5 Firebird4
-
-EXECUTE BLOCK AS BEGIN
-	IF (EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'Issue1373Tests')) THEN
-		EXECUTE STATEMENT 'DROP TABLE "Issue1373Tests"';
-END
-
-BeforeExecute
--- Firebird.5 Firebird4
-
-EXECUTE BLOCK AS BEGIN
-	IF (NOT EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'Issue1373Tests')) THEN
-		EXECUTE STATEMENT '
-			CREATE TABLE "Issue1373Tests"
-			(
-				"Id"     Int                                    NOT NULL,
-				"Field1" VarChar(255) CHARACTER SET UNICODE_FSS,
-
-				CONSTRAINT "PK_Issue1373Tests" PRIMARY KEY ("Id")
-			)
-		';
-END
-
-BeforeExecute
--- Firebird.5 Firebird4
 DECLARE @Field1 VarChar -- String
 SET     @Field1 = NULL
 
@@ -35,7 +11,7 @@ INSERT INTO "Issue1373Tests"
 VALUES
 (
 	1,
-	CAST(@Field1 AS VARCHAR(1))
+	@Field1
 )
 
 BeforeExecute
@@ -67,7 +43,7 @@ INSERT INTO "Issue1373Tests"
 VALUES
 (
 	3,
-	CAST(@Field1 AS VARCHAR(4))
+	@Field1
 )
 
 BeforeExecute
@@ -80,12 +56,4 @@ FROM
 	"Issue1373Tests" "t1"
 ORDER BY
 	"t1"."Id"
-
-BeforeExecute
--- Firebird.5 Firebird4
-
-EXECUTE BLOCK AS BEGIN
-	IF (EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'Issue1373Tests')) THEN
-		EXECUTE STATEMENT 'DROP TABLE "Issue1373Tests"';
-END
 

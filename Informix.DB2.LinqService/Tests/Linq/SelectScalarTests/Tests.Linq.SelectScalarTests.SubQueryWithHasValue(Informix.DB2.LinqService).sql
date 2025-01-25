@@ -8,13 +8,10 @@ FROM
 	Parent t2
 		LEFT JOIN (
 			SELECT FIRST 1
-				CASE
-					WHEN r.Value1 IS NOT NULL THEN 't'
-					ELSE 'f'
-				END as HasValue
+				r.Value1 as cond
 			FROM
 				Parent r
 		) t1 ON 1=1
 WHERE
-	t1.HasValue = 't'
+	t1.cond IS NOT NULL
 

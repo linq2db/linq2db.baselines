@@ -1,100 +1,66 @@
 ﻿BeforeExecute
 -- SqlCe
-
-DROP TABLE [Src]
-
-BeforeExecute
--- SqlCe
-
-CREATE TABLE [Src]
-(
-	[Id]    Int          NOT NULL,
-	[Int]   Int              NULL,
-	[Enum]  NVarChar(5)      NULL,
-	[CEnum] NVarChar(20)     NULL
-)
-
-BeforeExecute
--- SqlCe
-
-INSERT INTO [Src]
-(
-	[Id],
-	[Int],
-	[Enum],
-	[CEnum]
-)
-SELECT 1,NULL,NULL,NULL UNION ALL
-SELECT 2,2,'TWO','___Value2___'
-
-BeforeExecute
--- SqlCe
-DECLARE @CEnum NVarChar(12) -- String
-SET     @CEnum = '___Value3___'
-DECLARE @CEnum_1 NVarChar(12) -- String
-SET     @CEnum_1 = '___Value4___'
+DECLARE @In NVarChar(12) -- String
+SET     @In = '___Value3___'
+DECLARE @In_1 NVarChar(12) -- String
+SET     @In_1 = '___Value4___'
 
 SELECT TOP (1)
 	[s].[Id]
 FROM
 	[Src] [s]
 WHERE
-	[s].[CEnum] IN (@CEnum, @CEnum_1)
+	[s].[CEnum] IN (@In, @In_1)
 
 BeforeExecute
 -- SqlCe
-DECLARE @CEnum NVarChar(12) -- String
-SET     @CEnum = '___Value3___'
+DECLARE @In NVarChar(12) -- String
+SET     @In = '___Value3___'
 
 SELECT TOP (1)
 	[s].[Id]
 FROM
 	[Src] [s]
 WHERE
-	([s].[CEnum] IN (@CEnum) OR [s].[CEnum] IS NULL)
+	([s].[CEnum] IN (@In) OR [s].[CEnum] IS NULL)
 
 BeforeExecute
 -- SqlCe
-DECLARE @CEnum NVarChar(12) -- String
-SET     @CEnum = '___Value3___'
-DECLARE @CEnum_1 NVarChar(12) -- String
-SET     @CEnum_1 = '___Value2___'
+DECLARE @In NVarChar(12) -- String
+SET     @In = '___Value3___'
+DECLARE @In_1 NVarChar(12) -- String
+SET     @In_1 = '___Value2___'
 
 SELECT TOP (1)
 	[s].[Id]
 FROM
 	[Src] [s]
 WHERE
-	[s].[CEnum] IN (@CEnum, @CEnum_1)
+	[s].[CEnum] IN (@In, @In_1)
 
 BeforeExecute
 -- SqlCe
-DECLARE @CEnum NVarChar(12) -- String
-SET     @CEnum = '___Value2___'
+DECLARE @NotIn NVarChar(12) -- String
+SET     @NotIn = '___Value2___'
 
 SELECT TOP (1)
 	[s].[Id]
 FROM
 	[Src] [s]
 WHERE
-	([s].[CEnum] NOT IN (@CEnum) AND [s].[CEnum] IS NOT NULL)
+	([s].[CEnum] NOT IN (@NotIn) AND [s].[CEnum] IS NOT NULL)
 
 BeforeExecute
 -- SqlCe
-DECLARE @CEnum NVarChar(12) -- String
-SET     @CEnum = '___Value3___'
-DECLARE @CEnum_1 NVarChar(12) -- String
-SET     @CEnum_1 = '___Value2___'
+DECLARE @NotIn NVarChar(12) -- String
+SET     @NotIn = '___Value3___'
+DECLARE @NotIn_1 NVarChar(12) -- String
+SET     @NotIn_1 = '___Value2___'
 
 SELECT TOP (1)
 	[s].[Id]
 FROM
 	[Src] [s]
 WHERE
-	([s].[CEnum] NOT IN (@CEnum, @CEnum_1) OR [s].[CEnum] IS NULL)
-
-BeforeExecute
--- SqlCe
-
-DROP TABLE [Src]
+	([s].[CEnum] NOT IN (@NotIn, @NotIn_1) OR [s].[CEnum] IS NULL)
 

@@ -81,7 +81,6 @@ BeforeExecute
 -- Access AccessOleDb
 
 SELECT
-	[l].[Id],
 	[l].[Value1]
 FROM
 	[Table1788] [p]

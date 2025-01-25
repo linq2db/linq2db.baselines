@@ -1,20 +1,5 @@
 ﻿BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
-
-DROP TABLE IF EXISTS "Test3664"
-
-BeforeExecute
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
-
-CREATE TABLE IF NOT EXISTS "Test3664"
-(
-	"Id" Int NOT NULL,
-
-	CONSTRAINT "PK_Test3664" PRIMARY KEY ("Id")
-)
-
-BeforeExecute
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 DECLARE @Id Integer -- Int32
 SET     @Id = 1
 
@@ -26,34 +11,6 @@ VALUES
 (
 	:Id
 )
-
-BeforeExecute
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
-
-DROP TABLE IF EXISTS "Test3664Item"
-
-BeforeExecute
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
-
-CREATE TABLE IF NOT EXISTS "Test3664Item"
-(
-	"Id"     Int NOT NULL,
-	"TestId" Int NOT NULL,
-
-	CONSTRAINT "PK_Test3664Item" PRIMARY KEY ("Id")
-)
-
-BeforeExecute
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
-
-INSERT INTO "Test3664Item"
-(
-	"Id",
-	"TestId"
-)
-VALUES
-(11,1),
-(12,1)
 
 BeforeExecute
 BeginTransaction(RepeatableRead)
@@ -108,14 +65,4 @@ SELECT
 	t1."Id"
 FROM
 	"Test3664" t1
-
-BeforeExecute
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
-
-DROP TABLE IF EXISTS "Test3664Item"
-
-BeforeExecute
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
-
-DROP TABLE IF EXISTS "Test3664"
 

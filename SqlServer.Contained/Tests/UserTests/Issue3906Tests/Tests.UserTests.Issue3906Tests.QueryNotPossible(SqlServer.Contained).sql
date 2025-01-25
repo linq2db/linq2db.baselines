@@ -1,49 +1,5 @@
 ﻿BeforeExecute
 -- SqlServer.Contained SqlServer.2019
-
-DROP TABLE IF EXISTS [InfeedAdvicePositionDTO]
-
-BeforeExecute
--- SqlServer.Contained SqlServer.2019
-
-IF (OBJECT_ID(N'[InfeedAdvicePositionDTO]', N'U') IS NULL)
-	CREATE TABLE [InfeedAdvicePositionDTO]
-	(
-		[Id] Int NOT NULL
-	)
-
-BeforeExecute
--- SqlServer.Contained SqlServer.2019
-
-DROP TABLE IF EXISTS [InventoryResourceDTO]
-
-BeforeExecute
--- SqlServer.Contained SqlServer.2019
-
-IF (OBJECT_ID(N'[InventoryResourceDTO]', N'U') IS NULL)
-	CREATE TABLE [InventoryResourceDTO]
-	(
-		[InfeedAdviceID] Int NOT NULL,
-		[Quantity]       Int NOT NULL
-	)
-
-BeforeExecute
--- SqlServer.Contained SqlServer.2019
-
-DROP TABLE IF EXISTS [MlogInfeedAddonsDTO]
-
-BeforeExecute
--- SqlServer.Contained SqlServer.2019
-
-IF (OBJECT_ID(N'[MlogInfeedAddonsDTO]', N'U') IS NULL)
-	CREATE TABLE [MlogInfeedAddonsDTO]
-	(
-		[Id] Int NOT NULL,
-		[Nr] Int NOT NULL
-	)
-
-BeforeExecute
--- SqlServer.Contained SqlServer.2019
 DECLARE @Id Int -- Int32
 SET     @Id = 1
 
@@ -118,19 +74,4 @@ FROM
 			WHERE
 				[ir].[Id] = [infeed].[Id]
 		) [t1]
-
-BeforeExecute
--- SqlServer.Contained SqlServer.2019
-
-DROP TABLE IF EXISTS [MlogInfeedAddonsDTO]
-
-BeforeExecute
--- SqlServer.Contained SqlServer.2019
-
-DROP TABLE IF EXISTS [InventoryResourceDTO]
-
-BeforeExecute
--- SqlServer.Contained SqlServer.2019
-
-DROP TABLE IF EXISTS [InfeedAdvicePositionDTO]
 

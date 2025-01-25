@@ -1,21 +1,5 @@
 ﻿BeforeExecute
 -- SqlServer.SA SqlServer.2019
-
-DROP TABLE IF EXISTS [AllTypesCustomMaxLength]
-
-BeforeExecute
--- SqlServer.SA SqlServer.2019
-
-IF (OBJECT_ID(N'[AllTypesCustomMaxLength]', N'U') IS NULL)
-	CREATE TABLE [AllTypesCustomMaxLength]
-	(
-		[VarBinary] VarBinary(Max)     NULL,
-		[VarChar]   VarChar(Max)       NULL,
-		[NVarChar]  NVarChar(Max)      NULL
-	)
-
-BeforeExecute
--- SqlServer.SA SqlServer.2019
 DECLARE @VarChar VarChar(10000) -- AnsiString
 SET     @VarChar = N'zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz'
 -- value above truncated for logging
@@ -41,6 +25,16 @@ FROM
 
 BeforeExecute
 -- SqlServer.SA SqlServer.2019
+DECLARE @p VarChar(10000) -- AnsiString
+SET     @p = N'zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz'
+-- value above truncated for logging
 
-DROP TABLE IF EXISTS [AllTypesCustomMaxLength]
+SELECT
+	[t].[VarBinary],
+	[t].[VarChar],
+	[t].[NVarChar]
+FROM
+	[AllTypesCustomMaxLength] [t]
+WHERE
+	[t].[VarChar] = @p
 

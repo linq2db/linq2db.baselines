@@ -1,20 +1,6 @@
 ﻿BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
-DROP TABLE IF EXISTS [BananaTable]
-
-BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
-
-CREATE TABLE IF NOT EXISTS [BananaTable]
-(
-	[Id]       INTEGER       NOT NULL,
-	[Property] NVarChar(255)     NULL
-)
-
-BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
-
 INSERT INTO [BananaTable]
 (
 	[Id],
@@ -57,9 +43,4 @@ SELECT
 	[t1].[Property]
 FROM
 	[BananaTable] [t1]
-
-BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
-
-DROP TABLE IF EXISTS [BananaTable]
 

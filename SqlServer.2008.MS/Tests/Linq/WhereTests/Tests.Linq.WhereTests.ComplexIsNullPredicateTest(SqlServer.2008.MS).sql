@@ -2,23 +2,28 @@
 -- SqlServer.2008.MS SqlServer.2008
 
 SELECT
+	[r].[Id],
+	[r].[Value]
+FROM
+	[ComplexPredicate] [r]
+WHERE
 	CASE
-		WHEN EXISTS(
-			SELECT
-				*
-			FROM
-				[Person] [t1]
-			WHERE
-				CASE
-					WHEN [t1].[MiddleName] = N'123' THEN 1
-					ELSE 0
-				END = CASE
-					WHEN [t1].[MiddleName] = N'1' OR [t1].[MiddleName] = N'test' AND ([t1].[MiddleName] <> N'1' OR [t1].[MiddleName] IS NULL)
-						THEN 1
-					ELSE 0
-				END
-		)
+		WHEN [r].[Value] = N'123' THEN 1
+		ELSE 0
+	END = CASE
+		WHEN [r].[Value] = N'1' OR [r].[Value] = N'test' AND ([r].[Value] <> N'1' OR [r].[Value] IS NULL)
 			THEN 1
 		ELSE 0
 	END
+ORDER BY
+	[r].[Id]
+
+BeforeExecute
+-- SqlServer.2008.MS SqlServer.2008
+
+SELECT
+	[t1].[Id],
+	[t1].[Value]
+FROM
+	[ComplexPredicate] [t1]
 

@@ -1,54 +1,6 @@
 ﻿BeforeExecute
 -- Sybase.Managed Sybase
 
-IF (OBJECT_ID(N'TrimTestTable') IS NOT NULL)
-	DROP TABLE [TrimTestTable]
-
-BeforeExecute
--- Sybase.Managed Sybase
-
-IF (OBJECT_ID(N'TrimTestTable') IS NULL)
-	EXECUTE('
-		CREATE TABLE [TrimTestTable]
-		(
-			[ID]   Int          NOT NULL,
-			[Data] NVarChar(50)     NULL,
-
-			CONSTRAINT [PK_TrimTestTable] PRIMARY KEY CLUSTERED ([ID])
-		)
-	')
-
-BeforeExecute
--- Sybase.Managed Sybase
-
-INSERT INTO [TrimTestTable]
-(
-	[ID],
-	[Data]
-)
-VALUES
-(
-	1,
-	'***XXX***'
-)
-
-BeforeExecute
--- Sybase.Managed Sybase
-
-INSERT INTO [TrimTestTable]
-(
-	[ID],
-	[Data]
-)
-VALUES
-(
-	3,
-	'***VVV***'
-)
-
-BeforeExecute
--- Sybase.Managed Sybase
-
 MERGE INTO [TrimTestTable] [Target]
 USING (
 	SELECT 1 AS [source_ID], '***OOO***' AS [source_Data]
@@ -127,10 +79,4 @@ FROM
 	[TrimTestTable] [r]
 ORDER BY
 	[r].[ID]
-
-BeforeExecute
--- Sybase.Managed Sybase
-
-IF (OBJECT_ID(N'TrimTestTable') IS NOT NULL)
-	DROP TABLE [TrimTestTable]
 

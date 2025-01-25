@@ -1,38 +1,5 @@
 ﻿BeforeExecute
 -- SqlCe
-
-DROP TABLE [Task]
-
-BeforeExecute
--- SqlCe
-
-CREATE TABLE [Task]
-(
-	[Id]         Int           NOT NULL,
-	[TargetName] NVarChar(255)     NULL,
-
-	CONSTRAINT [PK_Task] PRIMARY KEY ([Id])
-)
-
-BeforeExecute
--- SqlCe
-
-DROP TABLE [TaskStage]
-
-BeforeExecute
--- SqlCe
-
-CREATE TABLE [TaskStage]
-(
-	[Id]     Int NOT NULL,
-	[TaskId] Int NOT NULL,
-	[Actual] Bit NOT NULL,
-
-	CONSTRAINT [PK_TaskStage] PRIMARY KEY ([Id])
-)
-
-BeforeExecute
--- SqlCe
 DECLARE @Id Int -- Int32
 SET     @Id = 1
 DECLARE @TargetName NVarChar(12) -- String
@@ -101,14 +68,4 @@ FROM
 		LEFT JOIN [TaskStage] [a_ActualStage] ON [p].[Id] = [a_ActualStage].[TaskId] AND [a_ActualStage].[Actual] = 1
 WHERE
 	[p].[TargetName] = 'bda.Requests'
-
-BeforeExecute
--- SqlCe
-
-DROP TABLE [TaskStage]
-
-BeforeExecute
--- SqlCe
-
-DROP TABLE [Task]
 

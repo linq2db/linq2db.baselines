@@ -1,27 +1,6 @@
 ﻿BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
 
-DROP TABLE IF EXISTS [Issue3761Table]
-
-BeforeExecute
--- SqlServer.SA.MS SqlServer.2019
-
-IF (OBJECT_ID(N'[Issue3761Table]', N'U') IS NULL)
-	CREATE TABLE [Issue3761Table]
-	(
-		[LETO]     Int       NOT NULL,
-		[STEVILKA] Int       NOT NULL,
-		[DATUM]    DateTime2     NULL,
-		[SKUPAJ]   Decimal       NULL,
-
-		CONSTRAINT [PK_Issue3761Table] PRIMARY KEY CLUSTERED ([LETO], [STEVILKA])
-	)
-
-BeforeExecute
--- SqlServer.SA.MS SqlServer.2019
-DECLARE @DATUM DateTime2
-SET     @DATUM = DATETIME2FROMPARTS(2019, 1, 1, 0, 0, 0, 0, 7)
-
 SELECT
 	[t1].[Year_1],
 	[t1].[Month_1],
@@ -35,7 +14,7 @@ FROM
 		FROM
 			[Issue3761Table] [n]
 		WHERE
-			[n].[DATUM] < @DATUM
+			[n].[DATUM] < DATETIME2FROMPARTS(2019, 1, 1, 0, 0, 0, 0, 7)
 	) [t1]
 GROUP BY
 	[t1].[Year_1],
@@ -54,14 +33,9 @@ FROM
 		FROM
 			[Issue3761Table] [n_1]
 		WHERE
-			[n_1].[DATUM] >= @DATUM
+			[n_1].[DATUM] >= DATETIME2FROMPARTS(2019, 1, 1, 0, 0, 0, 0, 7)
 	) [t2]
 GROUP BY
 	[t2].[Year_1],
 	[t2].[Month_1]
-
-BeforeExecute
--- SqlServer.SA.MS SqlServer.2019
-
-DROP TABLE IF EXISTS [Issue3761Table]
 

@@ -1,20 +1,5 @@
 ﻿BeforeExecute
 -- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
-
-DROP TABLE IF EXISTS "TypeConvertTable"
-
-BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
-
-CREATE TABLE IF NOT EXISTS "TypeConvertTable"
-(
-	"Name"      text        NOT NULL,
-	"BoolValue" Char        NOT NULL,
-	"GuidValue" VarChar(50)     NULL
-)
-
-BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
 DECLARE @Name Text(11) -- String
 SET     @Name = 'NotVerified'
 DECLARE @BoolValue Char -- String
@@ -79,15 +64,15 @@ WHERE
 
 BeforeExecute
 -- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
-DECLARE @GuidValue Varchar(36) -- String
-SET     @GuidValue = 'a948600d-de21-4f74-8ac2-9516b287076e'
+DECLARE @cond Varchar(36) -- String
+SET     @cond = 'a948600d-de21-4f74-8ac2-9516b287076e'
 
 SELECT
 	COUNT(*)
 FROM
 	"TypeConvertTable" t1
 WHERE
-	t1."GuidValue" = :GuidValue
+	t1."GuidValue" = :cond
 
 BeforeExecute
 -- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
@@ -248,9 +233,4 @@ FROM
 WHERE
 	t1."GuidValue" = :GuidValue
 LIMIT 1
-
-BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
-
-DROP TABLE IF EXISTS "TypeConvertTable"
 

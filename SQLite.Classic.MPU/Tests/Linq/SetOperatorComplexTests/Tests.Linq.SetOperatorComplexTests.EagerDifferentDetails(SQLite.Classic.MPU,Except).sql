@@ -1,125 +1,22 @@
 ﻿BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
-
-DROP TABLE IF EXISTS [Author]
-
-BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
-
-CREATE TABLE IF NOT EXISTS [Author]
-(
-	[AuthorId]   INTEGER       NOT NULL,
-	[AuthorName] NVarChar(255)     NULL,
-
-	CONSTRAINT [PK_Author] PRIMARY KEY ([AuthorId])
-)
-
-BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
-
-INSERT INTO [Author]
-(
-	[AuthorId],
-	[AuthorName]
-)
-VALUES
-(1,'Stephen King'),
-(2,'Harry Harrison'),
-(3,'Roger Joseph Zelazny')
-
-BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
-
-DROP TABLE IF EXISTS [Book]
-
-BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
-
-CREATE TABLE IF NOT EXISTS [Book]
-(
-	[BookId]        INTEGER       NOT NULL,
-	[Discriminator] NVarChar(255)     NULL,
-	[BookName]      NVarChar(255)     NULL,
-	[RomanScore]    INTEGER           NULL,
-	[NovelScore]    INTEGER           NULL,
-
-	CONSTRAINT [PK_Book] PRIMARY KEY ([BookId])
-)
-
-BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
-
-INSERT INTO [Book]
-(
-	[BookId],
-	[Discriminator],
-	[BookName],
-	[RomanScore],
-	[NovelScore]
-)
-VALUES
-(11,'Roman','Lisey''s Story[',4,0),
-(12,'Novel','Duma Key',0,0),
-(13,'Roman','Just After Sunset',3,0),
-(21,'Roman','Deathworld',1,0),
-(22,'Novel','The Stainless Steel Rat',0,0),
-(23,'Roman','Planet of the Damned',0,0),
-(31,'Roman','Blood of Amber',5,0),
-(32,'Novel','Knight of Shadows',0,0),
-(33,'Roman','The Chronicles of Amber',7,0)
-
-BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
-
-DROP TABLE IF EXISTS [BookAuthor]
-
-BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
-
-CREATE TABLE IF NOT EXISTS [BookAuthor]
-(
-	[FkBookId]   INTEGER NOT NULL,
-	[FkAuthorId] INTEGER NOT NULL
-)
-
-BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
-
-INSERT INTO [BookAuthor]
-(
-	[FkBookId],
-	[FkAuthorId]
-)
-VALUES
-(11,1),
-(12,1),
-(13,1),
-(21,2),
-(22,2),
-(23,2),
-(31,3),
-(32,3),
-(33,3)
-
-BeforeExecute
 BeginTransaction(Serializable)
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
 SELECT
-	[m_1].[BookId],
+	[m_1].[Id],
 	[a_Author].[AuthorId],
 	[a_Author].[AuthorName]
 FROM
 	(
 		SELECT DISTINCT
-			[t3].[BookId]
+			[t3].[Id_1] as [Id]
 		FROM
 			(
 				SELECT
 					[a_Book].[BookId] as [Id],
 					[a_Book].[BookName],
-					[a_Book].[BookId]
+					[a_Book].[BookId] as [Id_1]
 				FROM
 					[Author] [t1]
 						INNER JOIN [BookAuthor] [b] ON [b].[FkAuthorId] = [t1].[AuthorId]
@@ -130,7 +27,7 @@ FROM
 				SELECT
 					[a_Book_1].[BookId] as [Id],
 					[a_Book_1].[BookName],
-					NULL as [BookId]
+					NULL as [Id_1]
 				FROM
 					[Author] [t2]
 						INNER JOIN [BookAuthor] [b_1] ON [b_1].[FkAuthorId] = [t2].[AuthorId]
@@ -139,7 +36,7 @@ FROM
 					[a_Book_1].[Discriminator] = 'Novel'
 			) [t3]
 	) [m_1]
-		INNER JOIN [BookAuthor] [d] ON [d].[FkBookId] = [m_1].[BookId]
+		INNER JOIN [BookAuthor] [d] ON [d].[FkBookId] = [m_1].[Id]
 		LEFT JOIN [Author] [a_Author] ON [d].[FkAuthorId] = [a_Author].[AuthorId]
 
 BeforeExecute
@@ -222,19 +119,4 @@ SELECT
 	[t1].[AuthorName]
 FROM
 	[Author] [t1]
-
-BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
-
-DROP TABLE IF EXISTS [Author]
-
-BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
-
-DROP TABLE IF EXISTS [Book]
-
-BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
-
-DROP TABLE IF EXISTS [BookAuthor]
 

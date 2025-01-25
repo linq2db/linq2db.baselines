@@ -1,29 +1,17 @@
 ﻿BeforeExecute
 -- SqlCe
-
-DROP TABLE [ValueConversion]
-
-BeforeExecute
--- SqlCe
-
-CREATE TABLE [ValueConversion]
-(
-	[Id]                      Int           NOT NULL,
-	[Value1]                  NVarChar(200)     NULL,
-	[Value2]                  NVarChar(200)     NULL,
-	[Enum]                    NVarChar(50)  NOT NULL,
-	[EnumNullable]            NVarChar(50)      NULL,
-	[EnumWithNull]            NVarChar(50)      NULL,
-	[EnumWithNullDeclarative] NVarChar(50)      NULL,
-	[BoolValue]               NVarChar(1)   NOT NULL,
-	[AnotherBoolValue]        NVarChar(1)   NOT NULL,
-	[DateTimeNullable]        DateTime          NULL,
-
-	CONSTRAINT [PK_ValueConversion] PRIMARY KEY ([Id])
-)
-
-BeforeExecute
--- SqlCe
+DECLARE @Id Int -- Int32
+SET     @Id = 1
+DECLARE @Value1 NVarChar(2) -- String
+SET     @Value1 = '[]'
+DECLARE @Enum NVarChar(6) -- String
+SET     @Enum = 'Value1'
+DECLARE @Value2 NVarChar(22) -- String
+SET     @Value2 = '[{"Value":"inserted"}]'
+DECLARE @BoolValue NVarChar -- String
+SET     @BoolValue = 'Y'
+DECLARE @AnotherBoolValue NVarChar -- String
+SET     @AnotherBoolValue = 'T'
 
 INSERT INTO [ValueConversion]
 (
@@ -36,12 +24,12 @@ INSERT INTO [ValueConversion]
 )
 VALUES
 (
-	1,
-	'[]',
-	'Value1',
-	'[{"Value":"inserted"}]',
-	'Y',
-	'T'
+	@Id,
+	@Value1,
+	@Enum,
+	@Value2,
+	@BoolValue,
+	@AnotherBoolValue
 )
 
 BeforeExecute
@@ -65,6 +53,18 @@ WHERE
 
 BeforeExecute
 -- SqlCe
+DECLARE @Id Int -- Int32
+SET     @Id = 2
+DECLARE @Value1 NVarChar -- String
+SET     @Value1 = NULL
+DECLARE @Value2 NVarChar -- String
+SET     @Value2 = NULL
+DECLARE @Enum NVarChar(6) -- String
+SET     @Enum = 'Value2'
+DECLARE @BoolValue NVarChar -- String
+SET     @BoolValue = 'N'
+DECLARE @AnotherBoolValue NVarChar -- String
+SET     @AnotherBoolValue = 'F'
 
 INSERT INTO [ValueConversion]
 (
@@ -77,12 +77,12 @@ INSERT INTO [ValueConversion]
 )
 VALUES
 (
-	2,
-	NULL,
-	NULL,
-	'Value2',
-	'N',
-	'F'
+	@Id,
+	@Value1,
+	@Value2,
+	@Enum,
+	@BoolValue,
+	@AnotherBoolValue
 )
 
 BeforeExecute
@@ -180,9 +180,4 @@ SELECT
 	COUNT(*) as [COUNT_1]
 FROM
 	[ValueConversion] [t1]
-
-BeforeExecute
--- SqlCe
-
-DROP TABLE [ValueConversion]
 

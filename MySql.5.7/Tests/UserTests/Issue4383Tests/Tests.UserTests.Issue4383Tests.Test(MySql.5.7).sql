@@ -1,108 +1,4 @@
 ﻿BeforeExecute
--- MySql.5.7 MySql.5.7.MySql.Data MySql57
-
-DROP TABLE IF EXISTS `PUMPLINES`
-
-BeforeExecute
--- MySql.5.7 MySql.5.7.MySql.Data MySql57
-
-CREATE TABLE IF NOT EXISTS `PUMPLINES`
-(
-	`LINE_ID` INT NOT NULL,
-
-	CONSTRAINT `PK_PUMPLINES` PRIMARY KEY CLUSTERED (`LINE_ID`)
-)
-
-BeforeExecute
--- MySql.5.7 MySql.5.7.MySql.Data MySql57
-
-INSERT INTO `PUMPLINES`
-(
-	`LINE_ID`
-)
-VALUES
-(1),
-(2)
-
-BeforeExecute
--- MySql.5.7 MySql.5.7.MySql.Data MySql57
-
-DROP TABLE IF EXISTS `PUMPLINE_CHAINS`
-
-BeforeExecute
--- MySql.5.7 MySql.5.7.MySql.Data MySql57
-
-CREATE TABLE IF NOT EXISTS `PUMPLINE_CHAINS`
-(
-	`LINE_ID`  INT NOT NULL,
-	`CHAIN_ID` INT NOT NULL
-)
-
-BeforeExecute
--- MySql.5.7 MySql.5.7.MySql.Data MySql57
-
-INSERT INTO `PUMPLINE_CHAINS`
-(
-	`LINE_ID`,
-	`CHAIN_ID`
-)
-VALUES
-(1,11),
-(2,22)
-
-BeforeExecute
--- MySql.5.7 MySql.5.7.MySql.Data MySql57
-
-DROP TABLE IF EXISTS `CHAINS`
-
-BeforeExecute
--- MySql.5.7 MySql.5.7.MySql.Data MySql57
-
-CREATE TABLE IF NOT EXISTS `CHAINS`
-(
-	`CHAIN_ID` INT NOT NULL,
-
-	CONSTRAINT `PK_CHAINS` PRIMARY KEY CLUSTERED (`CHAIN_ID`)
-)
-
-BeforeExecute
--- MySql.5.7 MySql.5.7.MySql.Data MySql57
-
-INSERT INTO `CHAINS`
-(
-	`CHAIN_ID`
-)
-VALUES
-(11),
-(22)
-
-BeforeExecute
--- MySql.5.7 MySql.5.7.MySql.Data MySql57
-
-DROP TABLE IF EXISTS `CHAINPOINTS`
-
-BeforeExecute
--- MySql.5.7 MySql.5.7.MySql.Data MySql57
-
-CREATE TABLE IF NOT EXISTS `CHAINPOINTS`
-(
-	`CHAIN_ID` INT NOT NULL,
-
-	CONSTRAINT `PK_CHAINPOINTS` PRIMARY KEY CLUSTERED (`CHAIN_ID`)
-)
-
-BeforeExecute
--- MySql.5.7 MySql.5.7.MySql.Data MySql57
-
-INSERT INTO `CHAINPOINTS`
-(
-	`CHAIN_ID`
-)
-VALUES
-(11),
-(22)
-
-BeforeExecute
 BeginTransaction(RepeatableRead)
 BeforeExecute
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
@@ -135,6 +31,7 @@ SELECT
 	`m_1`.`LINE_ID`,
 	`d`.`LINE_ID`,
 	`d`.`CHAIN_ID`,
+	`a_Chain`.`CHAIN_ID`,
 	`a_Chain`.`CHAIN_ID`
 FROM
 	`PUMPLINES` `m_1`
@@ -149,29 +46,10 @@ BeforeExecute
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
 
 SELECT
+	`t1`.`LINE_ID`,
 	`t1`.`LINE_ID`
 FROM
 	`PUMPLINES` `t1`
 ORDER BY
 	`t1`.`LINE_ID`
-
-BeforeExecute
--- MySql.5.7 MySql.5.7.MySql.Data MySql57
-
-DROP TABLE IF EXISTS `CHAINPOINTS`
-
-BeforeExecute
--- MySql.5.7 MySql.5.7.MySql.Data MySql57
-
-DROP TABLE IF EXISTS `CHAINS`
-
-BeforeExecute
--- MySql.5.7 MySql.5.7.MySql.Data MySql57
-
-DROP TABLE IF EXISTS `PUMPLINE_CHAINS`
-
-BeforeExecute
--- MySql.5.7 MySql.5.7.MySql.Data MySql57
-
-DROP TABLE IF EXISTS `PUMPLINES`
 

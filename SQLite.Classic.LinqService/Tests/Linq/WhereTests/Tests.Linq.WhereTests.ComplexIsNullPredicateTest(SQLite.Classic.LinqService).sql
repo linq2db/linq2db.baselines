@@ -2,23 +2,28 @@
 -- SQLite.Classic SQLite
 
 SELECT
+	[r].[Id],
+	[r].[Value]
+FROM
+	[ComplexPredicate] [r]
+WHERE
 	CASE
-		WHEN EXISTS(
-			SELECT
-				*
-			FROM
-				[Person] [t1]
-			WHERE
-				CASE
-					WHEN [t1].[MiddleName] = '123' THEN 1
-					ELSE 0
-				END = CASE
-					WHEN [t1].[MiddleName] = '1' OR [t1].[MiddleName] = 'test' AND ([t1].[MiddleName] <> '1' OR [t1].[MiddleName] IS NULL)
-						THEN 1
-					ELSE 0
-				END
-		)
+		WHEN [r].[Value] = '123' THEN 1
+		ELSE 0
+	END = CASE
+		WHEN [r].[Value] = '1' OR [r].[Value] = 'test' AND ([r].[Value] <> '1' OR [r].[Value] IS NULL)
 			THEN 1
 		ELSE 0
 	END
+ORDER BY
+	[r].[Id]
+
+BeforeExecute
+-- SQLite.Classic SQLite
+
+SELECT
+	[t1].[Id],
+	[t1].[Value]
+FROM
+	[ComplexPredicate] [t1]
 

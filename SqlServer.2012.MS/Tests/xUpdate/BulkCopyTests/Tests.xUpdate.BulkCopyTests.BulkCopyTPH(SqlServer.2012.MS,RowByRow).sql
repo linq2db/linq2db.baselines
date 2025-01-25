@@ -1,27 +1,5 @@
 ﻿BeforeExecute
 -- SqlServer.2012.MS SqlServer.2012
-
-IF (OBJECT_ID(N'[TPHTable]', N'U') IS NOT NULL)
-	DROP TABLE [TPHTable]
-
-BeforeExecute
--- SqlServer.2012.MS SqlServer.2012
-
-IF (OBJECT_ID(N'[TPHTable]', N'U') IS NULL)
-	CREATE TABLE [TPHTable]
-	(
-		[Id]            Int          NOT NULL,
-		[Discriminator] Int          NOT NULL,
-		[Value1]        NVarChar(50)     NULL,
-		[Value2]        NVarChar(50)     NULL,
-		[Value3]        NVarChar(50)     NULL,
-		[NullableBool]  VarChar(1)       NULL,
-
-		CONSTRAINT [PK_TPHTable] PRIMARY KEY CLUSTERED ([Id])
-	)
-
-BeforeExecute
--- SqlServer.2012.MS SqlServer.2012
 DECLARE @Id Int -- Int32
 SET     @Id = 1
 DECLARE @Discriminator Int -- Int32
@@ -194,10 +172,4 @@ FROM
 	[TPHTable] [x]
 WHERE
 	[x].[Value3] = N'Str3'
-
-BeforeExecute
--- SqlServer.2012.MS SqlServer.2012
-
-IF (OBJECT_ID(N'[TPHTable]', N'U') IS NOT NULL)
-	DROP TABLE [TPHTable]
 
