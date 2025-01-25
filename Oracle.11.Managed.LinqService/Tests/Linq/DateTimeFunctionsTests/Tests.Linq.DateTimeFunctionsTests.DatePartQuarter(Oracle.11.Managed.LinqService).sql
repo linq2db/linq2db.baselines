@@ -2,7 +2,7 @@
 -- Oracle.11.Managed Oracle11
 
 SELECT
-	To_Number(To_Char(t."DateTimeValue", 'Q'))
+	TO_NUMBER(TO_CHAR(t."DateTimeValue", 'Q'))
 FROM
 	"LinqDataTypes" t
 

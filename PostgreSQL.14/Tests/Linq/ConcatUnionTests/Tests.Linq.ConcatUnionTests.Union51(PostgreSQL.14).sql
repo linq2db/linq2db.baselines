@@ -9,7 +9,7 @@ FROM
 UNION
 SELECT
 	p2."ParentID",
-	Cast(NULL as Int)
+	NULL::Int
 FROM
 	"Parent" p2
 

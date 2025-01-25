@@ -95,7 +95,7 @@ BeforeExecute
 -- Oracle.11.Managed Oracle11
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	"Mixed" t
 WHERE

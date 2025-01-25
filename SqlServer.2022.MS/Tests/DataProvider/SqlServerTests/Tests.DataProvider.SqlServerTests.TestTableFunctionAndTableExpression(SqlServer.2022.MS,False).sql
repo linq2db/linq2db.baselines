@@ -1,9 +1,7 @@
 ﻿BeforeExecute
 -- SqlServer.2022.MS SqlServer.2022
-DECLARE @take Int -- Int32
-SET     @take = 1
 
-SELECT TOP (@take)
+SELECT TOP (1)
 	[t1].[FirstName],
 	[t1].[PersonID],
 	[t1].[LastName],
@@ -31,70 +29,76 @@ AS
 
 BeforeExecute
 -- SqlServer.2022.MS SqlServer.2022
-DECLARE @take Int -- Int32
-SET     @take = 1
+DECLARE @p Int -- Int32
+SET     @p = 1
+DECLARE @p_1 NVarChar(4000) -- String
+SET     @p_1 = N'John'
 
-SELECT TOP (@take)
+SELECT TOP (1)
 	[t1].[FirstName],
 	[t1].[PersonID],
 	[t1].[LastName],
 	[t1].[MiddleName],
 	[t1].[Gender]
 FROM
-	[PersonTableFunction](1, N'John') [t1]
+	[PersonTableFunction](@p, @p_1) [t1]
 
 BeforeExecute
 -- SqlServer.2022.MS SqlServer.2022
-DECLARE @take Int -- Int32
-SET     @take = 1
+DECLARE @p Int -- Int32
+SET     @p = 1
+DECLARE @p_1 NVarChar(4000) -- String
+SET     @p_1 = N'John'
 
-SELECT TOP (@take)
+SELECT TOP (1)
 	[t1].[FirstName],
 	[t1].[PersonID],
 	[t1].[LastName],
 	[t1].[MiddleName],
 	[t1].[Gender]
 FROM
-	[PersonTableFunction](1, N'John') [t1]
+	[PersonTableFunction](@p, @p_1) [t1]
 
 BeforeExecute
 -- SqlServer.2022.MS SqlServer.2022
-DECLARE @take Int -- Int32
-SET     @take = 1
+DECLARE @p Int -- Int32
+SET     @p = 1
+DECLARE @p_1 NVarChar(4000) -- String
+SET     @p_1 = N'John'
 
-SELECT TOP (@take)
+SELECT TOP (1)
 	[t1].[FirstName],
 	[t1].[PersonID],
 	[t1].[LastName],
 	[t1].[MiddleName],
 	[t1].[Gender]
 FROM
-	[PersonTableFunction](1, N'John') [t1]
+	[PersonTableFunction](@p, @p_1) [t1]
 
 BeforeExecute
 -- SqlServer.2022.MS SqlServer.2022
-DECLARE @take Int -- Int32
-SET     @take = 1
+DECLARE @p Int -- Int32
+SET     @p = 1
+DECLARE @p_1 NVarChar(4000) -- String
+SET     @p_1 = N'John'
 
-SELECT TOP (@take)
+SELECT TOP (1)
 	[t1].[FirstName],
 	[t1].[PersonID],
 	[t1].[LastName],
 	[t1].[MiddleName],
 	[t1].[Gender]
 FROM
-	[PersonTableFunction](1, N'John') [t1]
+	[PersonTableFunction](@p, @p_1) [t1]
 
 BeforeExecute
 -- SqlServer.2022.MS SqlServer.2022
-DECLARE @take Int -- Int32
-SET     @take = 1
 DECLARE @ID Int -- Int32
 SET     @ID = 1
 DECLARE @FirstName NVarChar(4000) -- String
 SET     @FirstName = N'John'
 
-SELECT TOP (@take)
+SELECT TOP (1)
 	[p].[FirstName],
 	[p].[PersonID],
 	[p].[LastName],

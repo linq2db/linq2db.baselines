@@ -4,8 +4,8 @@ DECLARE @ID  -- Int32
 SET     @ID = 5000
 DECLARE @MoneyValue Decimal(1, 0)
 SET     @MoneyValue = 0
-DECLARE @DateTimeValue  -- DateTime
-SET     @DateTimeValue = '2018-01-03'
+DECLARE @DateTimeValue VarChar(23) -- AnsiString
+SET     @DateTimeValue = '2018-01-03 00:00:00.000'
 DECLARE @BoolValue  -- Boolean
 SET     @BoolValue = 0
 DECLARE @GuidValue  -- Guid
@@ -42,15 +42,13 @@ VALUES
 
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @p  -- DateTime
-SET     @p = '2018-01-02'
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	[LinqDataTypes] [t]
 WHERE
-	[t].[ID] = 5000 AND DateTime(strftime('%Y-%m-%d %H:%M:%f', [t].[DateTimeValue],[t].[SmallIntValue] || ' Day')) < DateTime(@p)
+	[t].[ID] = 5000 AND strftime('%Y-%m-%d %H:%M:%f', strftime('%Y-%m-%d %H:%M:%f', [t].[DateTimeValue], CAST([t].[SmallIntValue] AS NVarChar(6)) || ' Day')) < strftime('%Y-%m-%d %H:%M:%f', strftime('%Y-%m-%d %H:%M:%f', '2018-01-02 00:00:00.000'))
 
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite

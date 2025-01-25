@@ -60,12 +60,12 @@ BeforeExecute
 -- SqlServer.2017.MS SqlServer.2017
 
 SELECT
-	[sheet].[Id],
-	[detail].[Id],
-	[detail].[AttendanceSheetId]
+	[m_1].[Id],
+	[d].[Id],
+	[d].[AttendanceSheetId]
 FROM
-	[AttendanceSheet] [sheet]
-		INNER JOIN [AttendanceSheetRow] [detail] ON [detail].[AttendanceSheetId] = [sheet].[Id]
+	[AttendanceSheet] [m_1]
+		INNER JOIN [AttendanceSheetRow] [d] ON [m_1].[Id] = [d].[AttendanceSheetId]
 
 BeforeExecute
 DisposeTransaction
@@ -73,9 +73,9 @@ BeforeExecute
 -- SqlServer.2017.MS SqlServer.2017
 
 SELECT
-	[sheet].[Id]
+	[t1].[Id]
 FROM
-	[AttendanceSheet] [sheet]
+	[AttendanceSheet] [t1]
 
 BeforeExecute
 -- SqlServer.2017.MS SqlServer.2017

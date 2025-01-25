@@ -4,11 +4,11 @@
 SELECT
 	(
 		SELECT
-			Max(t1."ParentID")
+			MAX("a_Children"."ParentID")
 		FROM
-			"Child" t1
+			"Child" "a_Children"
 		WHERE
-			p."ParentID" = t1."ParentID" AND t1."ParentID" < 0
+			p."ParentID" = "a_Children"."ParentID" AND "a_Children"."ParentID" < 0
 	)
 FROM
 	"Parent" p

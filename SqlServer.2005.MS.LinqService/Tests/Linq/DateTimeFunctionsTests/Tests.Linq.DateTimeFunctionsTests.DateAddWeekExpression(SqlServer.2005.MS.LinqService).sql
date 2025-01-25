@@ -4,7 +4,7 @@ DECLARE @p Int -- Int32
 SET     @p = -1
 
 SELECT
-	DateAdd(week, @p, [t].[DateTimeValue])
+	DateAdd(dd, DateDiff(dd, 0, DateAdd(week, @p, [t].[DateTimeValue])), 0)
 FROM
 	[LinqDataTypes] [t]
 

@@ -25,8 +25,8 @@ INSERT INTO MainEntityObject
 	MainValue
 )
 VALUES
-(toInt32(1),'MainValue 1'),
-(toInt32(2),'MainValue 2')
+(1,'MainValue 1'),
+(2,'MainValue 2')
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
@@ -52,7 +52,7 @@ INSERT INTO ChildEntityObject
 	Value
 )
 VALUES
-(toInt32(1),'Value 1')
+(1,'Value 1')
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse

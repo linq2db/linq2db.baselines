@@ -1,8 +1,10 @@
 ﻿BeforeExecute
 -- PostgreSQL.12 PostgreSQL.9.5 PostgreSQL
+DECLARE @month Integer -- Int32
+SET     @month = 1
 
 SELECT
-	Cast((Lpad((2010 + t."ID")::text,4,'0') || '-01-01') as Date)
+	make_timestamp(2010 + t."ID", :month, 1, 0, 0, 0)
 FROM
 	"LinqDataTypes" t
 

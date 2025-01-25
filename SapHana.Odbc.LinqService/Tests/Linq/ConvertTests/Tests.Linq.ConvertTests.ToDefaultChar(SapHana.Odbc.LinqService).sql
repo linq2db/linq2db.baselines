@@ -2,7 +2,7 @@
 -- SapHana.Odbc SapHanaOdbc
 
 SELECT
-	Cast("t"."MoneyValue" as Char)
+	CAST("t"."MoneyValue" AS NChar)
 FROM
 	"LinqDataTypes" "t"
 

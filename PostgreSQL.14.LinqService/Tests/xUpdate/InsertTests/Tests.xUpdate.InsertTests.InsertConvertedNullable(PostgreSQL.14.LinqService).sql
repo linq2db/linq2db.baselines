@@ -2,9 +2,9 @@
 -- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
 
 DELETE FROM
-	"LinqDataTypes" t1
+	"LinqDataTypes" r
 WHERE
-	t1."ID" >= 1000
+	r."ID" >= 1000
 
 BeforeExecute
 -- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
@@ -24,8 +24,6 @@ VALUES
 
 BeforeExecute
 -- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
-DECLARE @take Integer -- Int32
-SET     @take = 1
 
 SELECT
 	t."ID",
@@ -34,13 +32,13 @@ FROM
 	"LinqDataTypes" t
 WHERE
 	t."ID" = 1001
-LIMIT :take
+LIMIT 1
 
 BeforeExecute
 -- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
 
 DELETE FROM
-	"LinqDataTypes" t1
+	"LinqDataTypes" r
 WHERE
-	t1."ID" >= 1000
+	r."ID" >= 1000
 

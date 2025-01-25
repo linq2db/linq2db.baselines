@@ -2,7 +2,7 @@
 -- Access AccessOleDb
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	[AllTypes] [t1]
 
@@ -95,7 +95,7 @@ BeforeExecute
 -- Access AccessOleDb
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	[AllTypes] [t1]
 

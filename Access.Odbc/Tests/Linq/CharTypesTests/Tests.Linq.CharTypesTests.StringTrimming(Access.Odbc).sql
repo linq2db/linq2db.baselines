@@ -2,9 +2,9 @@
 -- Access.Odbc AccessODBC
 
 SELECT
-	Max([_].[ID])
+	MAX([t1].[ID])
 FROM
-	[AllTypes] [_]
+	[AllTypes] [t1]
 
 BeforeExecute
 -- Access.Odbc AccessODBC
@@ -410,15 +410,15 @@ DECLARE @lastId Int -- Int32
 SET     @lastId = 2
 
 SELECT
-	[_].[ID],
-	[_].[char20DataType],
-	[_].[ncharDataType]
+	[t1].[ID],
+	[t1].[char20DataType],
+	[t1].[ncharDataType]
 FROM
-	[AllTypes] [_]
+	[AllTypes] [t1]
 WHERE
-	[_].[ID] > ?
+	[t1].[ID] > ?
 ORDER BY
-	[_].[ID]
+	[t1].[ID]
 
 BeforeExecute
 -- Access.Odbc AccessODBC
@@ -426,7 +426,7 @@ DECLARE @lastId Int -- Int32
 SET     @lastId = 2
 
 DELETE FROM
-	[AllTypes] [_]
+	[AllTypes] [t1]
 WHERE
-	[_].[ID] > ?
+	[t1].[ID] > ?
 

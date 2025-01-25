@@ -74,8 +74,6 @@ VALUES
 
 BeforeExecute
 -- Oracle.18.Managed Oracle.Managed Oracle12
-DECLARE @take Int32
-SET     @take = 1
 
 SELECT
 	e."Id",
@@ -92,7 +90,7 @@ FROM
 	"ValueConversion" e
 WHERE
 	e."Id" = 1
-FETCH NEXT :take ROWS ONLY
+FETCH NEXT 1 ROWS ONLY
 
 BeforeExecute
 -- Oracle.18.Managed Oracle.Managed Oracle12
@@ -130,8 +128,6 @@ VALUES
 
 BeforeExecute
 -- Oracle.18.Managed Oracle.Managed Oracle12
-DECLARE @take Int32
-SET     @take = 1
 
 SELECT
 	e."Id",
@@ -148,7 +144,7 @@ FROM
 	"ValueConversion" e
 WHERE
 	e."Id" = 2
-FETCH NEXT :take ROWS ONLY
+FETCH NEXT 1 ROWS ONLY
 
 BeforeExecute
 -- Oracle.18.Managed Oracle.Managed Oracle12
@@ -202,8 +198,6 @@ VALUES
 
 BeforeExecute
 -- Oracle.18.Managed Oracle.Managed Oracle12
-DECLARE @take Int32
-SET     @take = 1
 
 SELECT
 	e."Id",
@@ -220,13 +214,13 @@ FROM
 	"ValueConversion" e
 WHERE
 	e."Id" = 3
-FETCH NEXT :take ROWS ONLY
+FETCH NEXT 1 ROWS ONLY
 
 BeforeExecute
 -- Oracle.18.Managed Oracle.Managed Oracle12
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	"ValueConversion" t1
 

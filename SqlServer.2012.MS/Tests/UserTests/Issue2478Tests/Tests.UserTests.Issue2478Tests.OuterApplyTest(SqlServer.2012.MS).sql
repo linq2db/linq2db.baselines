@@ -3,31 +3,27 @@
 
 SELECT
 	[p].[ParentID],
-	[t1].[Count_1]
+	(
+		SELECT
+			COUNT(*)
+		FROM
+			[Child] [c_1]
+		WHERE
+			[c_1].[ParentID] = [p].[ParentID]
+	)
 FROM
 	[Parent] [p]
-		OUTER APPLY (
-			SELECT
-				Count(*) as [Count_1]
-			FROM
-				[Child] [t]
-			WHERE
-				[t].[ParentID] = [p].[ParentID]
-		) [t1]
 
 BeforeExecute
 -- SqlServer.2012.MS SqlServer.2012
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
-	[Parent] [p]
-		OUTER APPLY (
-			SELECT
-				Count(*) as [Count_1]
-			FROM
-				[Child] [t]
-			WHERE
-				[t].[ParentID] = [p].[ParentID]
-		) [t1]
+	(
+		SELECT
+			*
+		FROM
+			[Parent] [p]
+	) [t1]
 

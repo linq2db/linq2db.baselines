@@ -89,14 +89,14 @@ DECLARE @ID Integer(4) -- Int32
 SET     @ID = 5
 
 UPDATE
-	Person
+	Person t1
 SET
-	Person.Gender = @Gender,
-	Person.FirstName = @Name_FirstName,
-	Person.MiddleName = @Name_MiddleName,
-	Person.LastName = @Name_LastName
+	Gender = @Gender,
+	FirstName = @Name_FirstName,
+	MiddleName = @Name_MiddleName,
+	LastName = @Name_LastName
 WHERE
-	Person.PersonID = @ID
+	t1.PersonID = @ID
 
 BeforeExecute
 -- Informix.DB2 Informix (asynchronously)

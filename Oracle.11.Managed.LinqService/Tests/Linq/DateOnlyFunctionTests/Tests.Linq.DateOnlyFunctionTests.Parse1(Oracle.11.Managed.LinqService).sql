@@ -290,7 +290,16 @@ SELECT
 FROM
 	"Transactions" t
 WHERE
-	To_Number(To_Char(TO_DATE('2010-01-' || Lpad(t."TransactionId",2,'0'), 'YYYY-MM-DD'), 'DD')) > 0
+	EXTRACT(DAY FROM TO_DATE('2010-01-' || Lpad(t."TransactionId",2,'0'), 'YYYY-MM-DD')) > 0
+
+BeforeExecute
+-- Oracle.11.Managed Oracle11
+
+SELECT
+	t1."TransactionId",
+	t1."TransactionDate"
+FROM
+	"Transactions" t1
 
 BeforeExecute
 -- Oracle.11.Managed Oracle11

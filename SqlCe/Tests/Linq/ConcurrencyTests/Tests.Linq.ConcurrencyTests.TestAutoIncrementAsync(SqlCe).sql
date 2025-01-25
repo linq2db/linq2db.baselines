@@ -43,7 +43,7 @@ BeforeExecute
 SELECT
 	[t1].[Id],
 	[t1].[Stamp],
-	[t1].[Value]
+	[t1].[Value] as [Value_1]
 FROM
 	[ConcurrencyAutoIncrement] [t1]
 
@@ -59,8 +59,8 @@ SET     @Stamp = -10
 UPDATE
 	[ConcurrencyAutoIncrement]
 SET
-	[ConcurrencyAutoIncrement].[Stamp] = [ConcurrencyAutoIncrement].[Stamp] + 1,
-	[ConcurrencyAutoIncrement].[Value] = @Value
+	[Stamp] = [ConcurrencyAutoIncrement].[Stamp] + 1,
+	[Value] = @Value
 WHERE
 	[ConcurrencyAutoIncrement].[Id] = @Id AND [ConcurrencyAutoIncrement].[Stamp] = @Stamp
 
@@ -70,7 +70,7 @@ BeforeExecute
 SELECT
 	[t1].[Id],
 	[t1].[Stamp],
-	[t1].[Value]
+	[t1].[Value] as [Value_1]
 FROM
 	[ConcurrencyAutoIncrement] [t1]
 
@@ -86,8 +86,8 @@ SET     @Stamp = -9
 UPDATE
 	[ConcurrencyAutoIncrement]
 SET
-	[ConcurrencyAutoIncrement].[Stamp] = [ConcurrencyAutoIncrement].[Stamp] + 1,
-	[ConcurrencyAutoIncrement].[Value] = @Value
+	[Stamp] = [ConcurrencyAutoIncrement].[Stamp] + 1,
+	[Value] = @Value
 WHERE
 	[ConcurrencyAutoIncrement].[Id] = @Id AND [ConcurrencyAutoIncrement].[Stamp] = @Stamp
 
@@ -97,7 +97,7 @@ BeforeExecute
 SELECT
 	[t1].[Id],
 	[t1].[Stamp],
-	[t1].[Value]
+	[t1].[Value] as [Value_1]
 FROM
 	[ConcurrencyAutoIncrement] [t1]
 
@@ -113,8 +113,8 @@ SET     @Stamp = -9
 UPDATE
 	[ConcurrencyAutoIncrement]
 SET
-	[ConcurrencyAutoIncrement].[Stamp] = [ConcurrencyAutoIncrement].[Stamp] + 1,
-	[ConcurrencyAutoIncrement].[Value] = @Value
+	[Stamp] = [ConcurrencyAutoIncrement].[Stamp] + 1,
+	[Value] = @Value
 WHERE
 	[ConcurrencyAutoIncrement].[Id] = @Id AND [ConcurrencyAutoIncrement].[Stamp] = @Stamp
 
@@ -124,7 +124,7 @@ BeforeExecute
 SELECT
 	[t1].[Id],
 	[t1].[Stamp],
-	[t1].[Value]
+	[t1].[Value] as [Value_1]
 FROM
 	[ConcurrencyAutoIncrement] [t1]
 
@@ -146,7 +146,7 @@ BeforeExecute
 SELECT
 	[t1].[Id],
 	[t1].[Stamp],
-	[t1].[Value]
+	[t1].[Value] as [Value_1]
 FROM
 	[ConcurrencyAutoIncrement] [t1]
 
@@ -168,7 +168,7 @@ BeforeExecute
 SELECT
 	[t1].[Id],
 	[t1].[Stamp],
-	[t1].[Value]
+	[t1].[Value] as [Value_1]
 FROM
 	[ConcurrencyAutoIncrement] [t1]
 

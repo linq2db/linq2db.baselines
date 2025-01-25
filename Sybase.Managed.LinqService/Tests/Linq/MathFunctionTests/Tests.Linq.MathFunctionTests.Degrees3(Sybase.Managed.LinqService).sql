@@ -2,14 +2,14 @@
 -- Sybase.Managed Sybase
 
 SELECT
-	[t].[c1]
+	[t_1].[c1]
 FROM
 	(
 		SELECT
-			Convert(Float, Convert(Int, [p].[MoneyValue])) * 57.295779513082323 as [c1]
+			CAST(CAST([t].[MoneyValue] AS Int) AS Float) * 57.295779513082323 as [c1]
 		FROM
-			[LinqDataTypes] [p]
-	) [t]
+			[LinqDataTypes] [t]
+	) [t_1]
 WHERE
-	Convert(Float, [t].[c1]) <> 0.10000000000000001
+	CAST([t_1].[c1] AS Float) <> 0.10000000000000001
 

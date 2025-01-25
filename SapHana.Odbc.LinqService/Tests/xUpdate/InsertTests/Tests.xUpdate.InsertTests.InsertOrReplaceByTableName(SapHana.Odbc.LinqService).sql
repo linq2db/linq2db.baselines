@@ -22,11 +22,11 @@ DECLARE @PersonID  -- Int32
 SET     @PersonID = 1
 
 UPDATE
-	"xxPatient"
+	"xxPatient" "t1"
 SET
-	"xxPatient"."Diagnosis" = ?
+	"Diagnosis" = ?
 WHERE
-	"xxPatient"."PersonID" = ?
+	"t1"."PersonID" = ?
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
@@ -54,11 +54,11 @@ DECLARE @PersonID  -- Int32
 SET     @PersonID = 2
 
 UPDATE
-	"xxPatient"
+	"xxPatient" "t1"
 SET
-	"xxPatient"."Diagnosis" = ?
+	"Diagnosis" = ?
 WHERE
-	"xxPatient"."PersonID" = ?
+	"t1"."PersonID" = ?
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
@@ -82,7 +82,7 @@ BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	"xxPatient" "t1"
 
@@ -94,11 +94,11 @@ DECLARE @PersonID  -- Int32
 SET     @PersonID = 1
 
 UPDATE
-	"xxPatient"
+	"xxPatient" "t1"
 SET
-	"xxPatient"."Diagnosis" = ?
+	"Diagnosis" = ?
 WHERE
-	"xxPatient"."PersonID" = ?
+	"t1"."PersonID" = ?
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
@@ -108,17 +108,17 @@ DECLARE @PersonID  -- Int32
 SET     @PersonID = 2
 
 UPDATE
-	"xxPatient"
+	"xxPatient" "t1"
 SET
-	"xxPatient"."Diagnosis" = ?
+	"Diagnosis" = ?
 WHERE
-	"xxPatient"."PersonID" = ?
+	"t1"."PersonID" = ?
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	"xxPatient" "t1"
 

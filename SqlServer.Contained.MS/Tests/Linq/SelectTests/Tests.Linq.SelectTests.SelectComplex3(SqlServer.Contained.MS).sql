@@ -1,16 +1,14 @@
 ﻿BeforeExecute
 -- SqlServer.Contained.MS SqlServer.2019
-DECLARE @take Int -- Int32
-SET     @take = 1
 
-SELECT TOP (@take)
-	[_].[PersonID],
-	[_].[Gender],
-	[_].[FirstName],
-	[_].[LastName],
-	[_].[MiddleName]
+SELECT TOP (1)
+	[t1].[PersonID],
+	[t1].[Gender],
+	[t1].[FirstName],
+	[t1].[LastName],
+	[t1].[MiddleName]
 FROM
-	[Person] [_]
+	[Person] [t1]
 WHERE
-	[_].[PersonID] = 1
+	[t1].[PersonID] = 1
 

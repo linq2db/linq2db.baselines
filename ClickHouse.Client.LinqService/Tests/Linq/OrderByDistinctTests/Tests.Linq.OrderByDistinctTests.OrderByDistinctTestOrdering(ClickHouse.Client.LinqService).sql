@@ -30,10 +30,10 @@ INSERT INTO OrderByDistinctData
 )
 VALUES
 (
-	toInt32(1),
+	1,
 	'One',
-	toInt32(1),
-	toInt32(1)
+	1,
+	1
 )
 
 BeforeExecute
@@ -48,10 +48,10 @@ INSERT INTO OrderByDistinctData
 )
 VALUES
 (
-	toInt32(10),
+	10,
 	'Two',
-	toInt32(1),
-	toInt32(1)
+	1,
+	1
 )
 
 BeforeExecute
@@ -66,10 +66,10 @@ INSERT INTO OrderByDistinctData
 )
 VALUES
 (
-	toInt32(100),
+	100,
 	'Three',
-	toInt32(1),
-	toInt32(1)
+	1,
+	1
 )
 
 BeforeExecute
@@ -79,9 +79,7 @@ SELECT DISTINCT
 	x.DuplicateData
 FROM
 	OrderByDistinctData x
-ORDER BY
-	x.OrderData1
-LIMIT toInt32(0), toInt32(3)
+LIMIT 0, 3
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
@@ -92,7 +90,7 @@ FROM
 	OrderByDistinctData x
 ORDER BY
 	x.OrderData1
-LIMIT toInt32(0), toInt32(3)
+LIMIT 0, 3
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
@@ -101,9 +99,7 @@ SELECT DISTINCT
 	x.DuplicateData
 FROM
 	OrderByDistinctData x
-ORDER BY
-	x.OrderData1 DESC
-LIMIT toInt32(0), toInt32(3)
+LIMIT 0, 3
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
@@ -114,7 +110,7 @@ FROM
 	OrderByDistinctData x
 ORDER BY
 	x.OrderData1 DESC
-LIMIT toInt32(0), toInt32(3)
+LIMIT 0, 3
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
@@ -123,10 +119,7 @@ SELECT DISTINCT
 	x.DuplicateData
 FROM
 	OrderByDistinctData x
-ORDER BY
-	x.OrderData1,
-	x.OrderData2
-LIMIT toInt32(0), toInt32(3)
+LIMIT 0, 3
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
@@ -138,7 +131,7 @@ FROM
 ORDER BY
 	x.OrderData1,
 	x.OrderData2
-LIMIT toInt32(0), toInt32(3)
+LIMIT 0, 3
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
@@ -147,10 +140,7 @@ SELECT DISTINCT
 	x.DuplicateData
 FROM
 	OrderByDistinctData x
-ORDER BY
-	x.OrderData1,
-	x.OrderData2 DESC
-LIMIT toInt32(0), toInt32(3)
+LIMIT 0, 3
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
@@ -162,7 +152,7 @@ FROM
 ORDER BY
 	x.OrderData1,
 	x.OrderData2 DESC
-LIMIT toInt32(0), toInt32(3)
+LIMIT 0, 3
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
@@ -171,10 +161,7 @@ SELECT DISTINCT
 	x.DuplicateData
 FROM
 	OrderByDistinctData x
-ORDER BY
-	x.OrderData1 DESC,
-	x.OrderData2 DESC
-LIMIT toInt32(0), toInt32(3)
+LIMIT 0, 3
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
@@ -186,7 +173,7 @@ FROM
 ORDER BY
 	x.OrderData1 DESC,
 	x.OrderData2 DESC
-LIMIT toInt32(0), toInt32(3)
+LIMIT 0, 3
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
@@ -195,10 +182,7 @@ SELECT DISTINCT
 	x.DuplicateData
 FROM
 	OrderByDistinctData x
-ORDER BY
-	x.OrderData1,
-	x.OrderData2 DESC
-LIMIT toInt32(0), toInt32(3)
+LIMIT 0, 3
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
@@ -210,7 +194,7 @@ FROM
 ORDER BY
 	x.OrderData1,
 	x.OrderData2 DESC
-LIMIT toInt32(0), toInt32(3)
+LIMIT 0, 3
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse

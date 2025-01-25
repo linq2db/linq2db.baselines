@@ -2,14 +2,14 @@
 -- DB2 DB2.LUW DB2LUW
 
 SELECT
-	"t"."c1"
+	"t_1"."c1"
 FROM
 	(
 		SELECT
-			Degrees(Int("p"."MoneyValue")) as "c1"
+			Degrees(CAST(Floor("t"."MoneyValue") AS Int)) as "c1"
 		FROM
-			"LinqDataTypes" "p"
-	) "t"
+			"LinqDataTypes" "t"
+	) "t_1"
 WHERE
-	(Float("t"."c1") <> 0.10000000000000001 OR Float("t"."c1") IS NULL)
+	CAST("t_1"."c1" AS Float) <> 0.10000000000000001
 

@@ -1,17 +1,12 @@
 ﻿BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-DECLARE @p NVarChar(5) -- String
-SET     @p = '2010-'
+DECLARE @year  -- Int32
+SET     @year = 2010
 
 SELECT
-	[t].[c1]
+	strftime('%Y-%m-%d %H:%M:%f', printf('%04d', @year) || '-' || printf('%02d', [t].[ID]) || '-01 00:00:00.000')
 FROM
-	(
-		SELECT
-			Date(@p || printf('%02d', [p].[ID]) || '-01') as [c1]
-		FROM
-			[LinqDataTypes] [p]
-	) [t]
+	[LinqDataTypes] [t]
 WHERE
-	Cast(StrFTime('%Y', [t].[c1]) as int) = 2010
+	CAST(strftime('%Y', strftime('%Y-%m-%d %H:%M:%f', printf('%04d', @year) || '-' || printf('%02d', [t].[ID]) || '-01 00:00:00.000')) AS INTEGER) = 2010
 

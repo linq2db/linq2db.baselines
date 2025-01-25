@@ -73,7 +73,7 @@ BeforeExecute
 -- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
 
 SELECT
-	t."TransactionDate" + -35 * Interval '1 Second'
+	Floor(Extract(second From (t."TransactionDate" + -35 * Interval '1 Second')))::Int
 FROM
 	"Transactions" t
 

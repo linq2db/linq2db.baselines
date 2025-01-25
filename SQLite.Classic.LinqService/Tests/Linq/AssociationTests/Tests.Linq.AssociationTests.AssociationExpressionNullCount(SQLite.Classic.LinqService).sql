@@ -70,7 +70,7 @@ BeforeExecute
 -- SQLite.Classic SQLite
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	[NotNullParent] [p]
 

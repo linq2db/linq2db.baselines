@@ -491,26 +491,22 @@ VALUES
 BeforeExecute
 -- Sybase.Managed Sybase
 
-SELECT TOP 3
+SELECT DISTINCT TOP 3
 	[x].[DuplicateData]
 FROM
 	[OrderByDistinctData] [x]
-GROUP BY
-	[x].[DuplicateData]
-ORDER BY
-	Min([x].[OrderData1] % 3)
 
 BeforeExecute
 -- Sybase.Managed Sybase
 
 SELECT TOP 3
-	[x].[DuplicateData]
+	[g_1].[DuplicateData]
 FROM
-	[OrderByDistinctData] [x]
+	[OrderByDistinctData] [g_1]
 GROUP BY
-	[x].[DuplicateData]
+	[g_1].[DuplicateData]
 ORDER BY
-	Max([x].[OrderData1] % 3)
+	MAX([g_1].[OrderData1] % 3)
 
 BeforeExecute
 -- Sybase.Managed Sybase

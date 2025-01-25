@@ -73,13 +73,11 @@ SET     @Id = 1
 UPDATE
 	[PR_1598_Update_Enum_Table]
 SET
-	[t1].[Name] = @Name,
-	[t1].[Age] = @Age,
-	[t1].[Gender] = @Gender
-FROM
-	[PR_1598_Update_Enum_Table] [t1]
+	[Name] = @Name,
+	[Age] = @Age,
+	[Gender] = @Gender
 WHERE
-	[t1].[Id] = @Id
+	[PR_1598_Update_Enum_Table].[Id] = @Id
 
 BeforeExecute
 -- Sybase.Managed Sybase
@@ -106,12 +104,10 @@ SET     @Id = 1
 UPDATE
 	[PR_1598_Update_Enum_Table]
 SET
-	[t1].[Name] = @Name,
-	[t1].[Age] = @Age
-FROM
-	[PR_1598_Update_Enum_Table] [t1]
+	[Name] = @Name,
+	[Age] = @Age
 WHERE
-	[t1].[Id] = @Id
+	[PR_1598_Update_Enum_Table].[Id] = @Id
 
 BeforeExecute
 -- Sybase.Managed Sybase

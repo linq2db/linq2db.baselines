@@ -4,7 +4,7 @@ DECLARE @defValue  -- Int32
 SET     @defValue = 10
 
 SELECT
-	Coalesce(Min("t1"."ParentID"), ?)
+	Coalesce(MIN("gr"."ParentID"), ?)
 FROM
-	"Parent" "t1"
+	"Parent" "gr"
 

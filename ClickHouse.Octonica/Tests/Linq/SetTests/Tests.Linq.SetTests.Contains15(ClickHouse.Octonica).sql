@@ -8,5 +8,5 @@ FROM
 	Child p
 		INNER JOIN Parent a_Parent1 ON p.ParentID = a_Parent1.ParentID
 WHERE
-	a_Parent1.ParentID IN (toInt32(1), toInt32(2))
+	a_Parent1.ParentID IN (1, 2)
 

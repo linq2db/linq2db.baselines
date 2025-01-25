@@ -16,7 +16,7 @@ WHERE
 					p.ParentID as ParentID
 				FROM
 					Parent p
-				LIMIT toInt32(1), toInt32(100)
+				LIMIT 1, 100
 			) t1
 	)
 

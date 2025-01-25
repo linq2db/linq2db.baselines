@@ -20,15 +20,13 @@ BeforeExecute
 -- Oracle.11.Managed Oracle11
 DECLARE @id Int32
 SET     @id = 100500
-DECLARE @take Int32
-SET     @take = 1
 
 SELECT
-	t1."ParentID"
+	p."ParentID"
 FROM
-	"Parent" t1
+	"Parent" p
 WHERE
-	t1."ParentID" = :id AND ROWNUM <= :take
+	p."ParentID" = :id AND ROWNUM <= 1
 
 BeforeExecute
 -- Oracle.11.Managed Oracle11
@@ -38,36 +36,16 @@ DECLARE @id Int32
 SET     @id = 100500
 
 UPDATE
-	"Parent"
+	"Parent" p
 SET
-	"Parent"."Value1" = :ParentID
+	"Value1" = :ParentID
 WHERE
-	EXISTS(
+	p."ParentID" = :id AND (
 		SELECT
-			*
+			COUNT(*)
 		FROM
-			(
-				SELECT
-					t3."ParentID"
-				FROM
-					(
-						SELECT
-							t2."ParentID",
-							(
-								SELECT
-									Count(*)
-								FROM
-									"Parent" t1
-								WHERE
-									t1."ParentID" = :id
-							) as "ex"
-						FROM
-							"Parent" t2
-					) t3
-				WHERE
-					t3."ParentID" = :id AND t3."ex" > 0
-			) t4
+			"Parent" p_1
 		WHERE
-			"Parent"."ParentID" = t4."ParentID"
-	)
+			p_1."ParentID" = :id
+	) > 0
 

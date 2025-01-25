@@ -35,17 +35,17 @@ BeforeExecute
 
 MERGE INTO "ReviewIndexes" Target
 USING (
-	SELECT 1 AS "Id", '2' AS "Value_1" FROM sys.dual) "Source"
-ON (Target."Id" = "Source"."Id")
+	SELECT 1 AS "source_Id", '2' AS "source_Value" FROM sys.dual) "Source"
+ON (Target."Id" = "Source"."source_Id")
 
 WHEN MATCHED THEN
 UPDATE
 SET
-	Target."Value" = '3'
+	"Value" = '3'
 WHERE
-	(Target."Value" <> "Source"."Value_1" OR Target."Value" IS NULL AND "Source"."Value_1" IS NOT NULL OR Target."Value" IS NOT NULL AND "Source"."Value_1" IS NULL)
+	(Target."Value" <> "Source"."source_Value" OR Target."Value" IS NULL AND "Source"."source_Value" IS NOT NULL OR Target."Value" IS NOT NULL AND "Source"."source_Value" IS NULL)
 DELETE WHERE
-	(Target."Value" <> "Source"."Value_1" OR Target."Value" IS NULL AND "Source"."Value_1" IS NOT NULL OR Target."Value" IS NOT NULL AND "Source"."Value_1" IS NULL)
+	(Target."Value" <> "Source"."source_Value" OR Target."Value" IS NULL AND "Source"."source_Value" IS NOT NULL OR Target."Value" IS NOT NULL AND "Source"."source_Value" IS NULL)
 
 BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12

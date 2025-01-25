@@ -37,7 +37,7 @@ DECLARE @Id Int -- Int32
 SET     @Id = 2
 
 SELECT
-	Max([c_1].[Id])
+	MAX([c_1].[Id]) as [MAX_1]
 FROM
 	[AsyncDataTable] [c_1]
 WHERE

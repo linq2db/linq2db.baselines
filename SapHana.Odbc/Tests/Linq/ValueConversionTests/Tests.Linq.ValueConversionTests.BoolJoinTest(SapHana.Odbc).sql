@@ -535,10 +535,12 @@ FROM
 	"ValueConversion" "t1"
 		INNER JOIN (
 			SELECT
-				"t2"."BoolValue"
+				*
 			FROM
 				"ValueConversion" "t2"
-		) "t2_1" ON "t2_1"."BoolValue" = ? AND "t1"."BoolValue" = ?
+			WHERE
+				"t2"."BoolValue" = ?
+		) "t2_1" ON "t1"."BoolValue" = ?
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc

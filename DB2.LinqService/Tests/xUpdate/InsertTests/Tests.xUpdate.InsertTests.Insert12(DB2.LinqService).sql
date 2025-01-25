@@ -13,8 +13,8 @@ INSERT INTO "Person"
 )
 VALUES
 (
-	@FirstName,
+	CAST(@FirstName AS NVarChar(9)),
 	'LastName',
-	@Gender
+	CAST(@Gender AS NChar(1))
 )
 

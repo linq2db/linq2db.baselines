@@ -1,0 +1,32 @@
+﻿BeforeExecute
+-- Firebird.3 Firebird3
+
+SELECT
+	"pp"."ParentID",
+	(
+		SELECT
+			COUNT(*)
+		FROM
+			"Child" "a_Children"
+		WHERE
+			"pp"."ParentID" = "a_Children"."ParentID"
+	)
+FROM
+	"Parent" "pp"
+
+BeforeExecute
+-- Firebird.3 Firebird3
+
+SELECT
+	"pp"."ParentID",
+	(
+		SELECT
+			COUNT(*)
+		FROM
+			"Child" "a_Children"
+		WHERE
+			"pp"."ParentID" = "a_Children"."ParentID"
+	)
+FROM
+	"Parent" "pp"
+

@@ -16,25 +16,21 @@ CREATE TABLE IF NOT EXISTS "Issue681Table"
 
 BeforeExecute
 -- PostgreSQL.11 PostgreSQL.9.5 PostgreSQL
-DECLARE @take Integer -- Int32
-SET     @take = 1
 
 SELECT
 	current_database()
 FROM
 	"LinqDataTypes" t1
-LIMIT :take
+LIMIT 1
 
 BeforeExecute
 -- PostgreSQL.11 PostgreSQL.9.5 PostgreSQL
-DECLARE @take Integer -- Int32
-SET     @take = 1
 
 SELECT
 	current_schema()
 FROM
 	"LinqDataTypes" t1
-LIMIT :take
+LIMIT 1
 
 BeforeExecute
 -- PostgreSQL.11 PostgreSQL.9.5 PostgreSQL
@@ -43,7 +39,7 @@ SELECT
 	t1."ID",
 	t1."Value"
 FROM
-	testdata."public"."Issue681Table" t1
+	testdata.public."Issue681Table" t1
 
 BeforeExecute
 -- PostgreSQL.11 PostgreSQL.9.5 PostgreSQL

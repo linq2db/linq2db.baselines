@@ -18,7 +18,7 @@ BeforeExecute
 -- SqlCe
 
 SELECT
-	Count(*)
+	COUNT(*) as [COUNT_1]
 FROM
 	[Person] [c_1]
 WHERE
@@ -30,7 +30,7 @@ BeforeExecute
 UPDATE
 	[Person]
 SET
-	[Person].[FirstName] = 'Johnny'
+	[FirstName] = 'Johnny'
 WHERE
 	[Person].[LastName] = 'Limonadovy'
 
@@ -38,7 +38,7 @@ BeforeExecute
 -- SqlCe
 
 SELECT
-	Count(*)
+	COUNT(*) as [COUNT_1]
 FROM
 	[Person] [c_1]
 WHERE

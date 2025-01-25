@@ -2,7 +2,7 @@
 -- Sybase.Managed Sybase
 
 SELECT
-	DateAdd(year, 11, [t].[DateTimeValue])
+	CONVERT(Date, DateAdd(year, 11, [t].[DateTimeValue]))
 FROM
 	[LinqDataTypes] [t]
 

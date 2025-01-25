@@ -223,18 +223,18 @@ BeforeExecute
 
 MERGE INTO "TestMerge1" "Target"
 USING (
-	SELECT CAST(NULL AS Int), CAST(NULL AS Int), CAST(NULL AS Int), CAST(NULL AS Int), CAST(NULL AS Int)
+	SELECT NULL::Int, NULL::Int, NULL::Int, NULL::Int, NULL::Int
 	FROM "TestMerge1"	WHERE 1 = 0
 )
  "Source"
 (
-	"Id",
-	"Field3",
-	"Field1",
-	"Field2",
-	"Field4"
+	"source_Id",
+	"source_Field3",
+	"source_Field1",
+	"source_Field2",
+	"source_Field4"
 )
-ON ("Target"."Id" = "Source"."Id" AND "Source"."Field3" IS NOT NULL)
+ON ("Target"."Id" = "Source"."source_Id" AND "Source"."source_Field3" IS NOT NULL)
 
 WHEN NOT MATCHED THEN
 INSERT
@@ -246,10 +246,10 @@ INSERT
 )
 VALUES
 (
-	"Source"."Id",
-	"Source"."Field1",
-	"Source"."Field2",
-	"Source"."Field4"
+	"Source"."source_Id",
+	"Source"."source_Field1",
+	"Source"."source_Field2",
+	"Source"."source_Field4"
 )
 
 BeforeExecute

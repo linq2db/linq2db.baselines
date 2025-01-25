@@ -10,6 +10,6 @@ WHERE
 		FROM
 			Child c_1
 		WHERE
-			c_1.ParentID = Parent.ParentID + 100
+			Parent.ParentID + 100 = c_1.ParentID
 	)
 

@@ -2,15 +2,15 @@
 -- SQLite.Classic SQLite
 
 SELECT
-	[t1].[Key_1]
+	[g_2].[Year_1]
 FROM
 	(
 		SELECT
-			Cast(StrFTime('%Y', [a_Types].[DateTimeValue]) as int) as [Key_1]
+			CAST(strftime('%Y', [a_Types].[DateTimeValue]) AS INTEGER) as [Year_1]
 		FROM
-			[Parent] [selectParam]
-				LEFT JOIN [LinqDataTypes] [a_Types] ON [selectParam].[ParentID] = [a_Types].[ID]
-	) [t1]
+			[Parent] [g_1]
+				LEFT JOIN [LinqDataTypes] [a_Types] ON [g_1].[ParentID] = [a_Types].[ID]
+	) [g_2]
 GROUP BY
-	[t1].[Key_1]
+	[g_2].[Year_1]
 

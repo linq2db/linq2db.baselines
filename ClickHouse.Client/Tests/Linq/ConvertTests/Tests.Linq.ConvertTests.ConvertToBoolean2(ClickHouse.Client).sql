@@ -2,9 +2,17 @@
 -- ClickHouse.Client ClickHouse
 
 SELECT
-	toBool(t.MoneyValue - toDecimal64('4.5', 10))
+	p_1.c1
 FROM
-	LinqDataTypes t
+	(
+		SELECT
+			CASE
+				WHEN p.MoneyValue <> toDecimal64('4.5', 10) THEN true
+				ELSE false
+			END as c1
+		FROM
+			LinqDataTypes p
+	) p_1
 WHERE
-	toBool(t.MoneyValue - toDecimal64('4.5', 10)) = false
+	p_1.c1 = false
 

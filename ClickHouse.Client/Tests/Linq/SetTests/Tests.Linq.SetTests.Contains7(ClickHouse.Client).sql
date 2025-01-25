@@ -3,7 +3,7 @@
 
 SELECT
 	CASE
-		WHEN toInt32(11) IN (
+		WHEN 11 IN (
 			SELECT
 				c_1.ParentID
 			FROM

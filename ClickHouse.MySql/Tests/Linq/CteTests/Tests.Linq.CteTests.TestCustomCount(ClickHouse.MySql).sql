@@ -9,10 +9,10 @@ WITH CTE_1 AS
 	FROM
 		Child c_1
 	WHERE
-		c_1.ParentID > toInt32(1)
+		c_1.ParentID > 1
 )
 SELECT
 	COUNT(*)
 FROM
-	CTE_1 c_2
+	CTE_1 t1
 

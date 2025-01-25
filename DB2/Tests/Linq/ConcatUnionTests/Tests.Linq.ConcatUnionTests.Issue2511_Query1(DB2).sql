@@ -8,6 +8,7 @@ SELECT
 	"t1"."MiddleName",
 	"t1"."Gender",
 	"a_Patient"."PersonID",
+	"a_Patient"."PersonID",
 	"a_Patient"."Diagnosis"
 FROM
 	"Person" "t1"
@@ -19,6 +20,7 @@ SELECT
 	"t3"."LastName",
 	"t3"."MiddleName",
 	"t3"."Gender",
+	"t3"."PersonID",
 	"t3"."PersonID",
 	"t3"."Diagnosis"
 FROM
@@ -34,6 +36,6 @@ FROM
 		FROM
 			"Person" "t2"
 				LEFT JOIN "Patient" "a_Patient_1" ON "t2"."PersonID" = "a_Patient_1"."PersonID"
-		FETCH FIRST 2 ROWS ONLY
+		FETCH NEXT 2 ROWS ONLY
 	) "t3"
 

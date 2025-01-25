@@ -40,12 +40,10 @@ RETURNING
 
 BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12
-DECLARE @take Int32
-SET     @take = 1
 
 SELECT
 	t1."FirstName",
-	t1."PersonID",
+	t1."PersonID" as ID,
 	t1."LastName",
 	t1."MiddleName",
 	t1."Gender"
@@ -53,7 +51,7 @@ FROM
 	"Person" t1
 WHERE
 	t1."FirstName" = 'test_inherited_insert'
-FETCH NEXT :take ROWS ONLY
+FETCH NEXT 1 ROWS ONLY
 
 BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12
@@ -69,23 +67,21 @@ DECLARE @ID Int32
 SET     @ID = 5
 
 UPDATE
-	"Person"
+	"Person" t1
 SET
-	"Person"."FirstName" = :FirstName,
-	"Person"."LastName" = :LastName,
-	"Person"."MiddleName" = :MiddleName,
-	"Person"."Gender" = :Gender
+	"FirstName" = :FirstName,
+	"LastName" = :LastName,
+	"MiddleName" = :MiddleName,
+	"Gender" = :Gender
 WHERE
-	"Person"."PersonID" = :ID
+	t1."PersonID" = :ID
 
 BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12
-DECLARE @take Int32
-SET     @take = 1
 
 SELECT
 	t1."FirstName",
-	t1."PersonID",
+	t1."PersonID" as ID,
 	t1."LastName",
 	t1."MiddleName",
 	t1."Gender"
@@ -93,7 +89,7 @@ FROM
 	"Person" t1
 WHERE
 	t1."FirstName" = 'test_inherited_insert'
-FETCH NEXT :take ROWS ONLY
+FETCH NEXT 1 ROWS ONLY
 
 BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12

@@ -2,10 +2,10 @@
 -- SqlCe
 
 SELECT
-	[t1].[FirstName],
-	Count(*)
+	[p].[FirstName],
+	COUNT(*) as [COUNT_1]
 FROM
-	[Person] [t1]
+	[Person] [p]
 GROUP BY
-	[t1].[FirstName]
+	[p].[FirstName]
 

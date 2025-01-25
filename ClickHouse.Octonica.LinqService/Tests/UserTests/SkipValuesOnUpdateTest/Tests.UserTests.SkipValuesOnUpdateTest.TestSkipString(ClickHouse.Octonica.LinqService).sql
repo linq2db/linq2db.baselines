@@ -28,9 +28,9 @@ INSERT INTO PR_1598_Update_Table
 )
 VALUES
 (
-	toInt32(1),
+	1,
 	'Manuel',
-	toInt32(14)
+	14
 )
 
 BeforeExecute
@@ -43,8 +43,8 @@ SELECT
 FROM
 	PR_1598_Update_Table t
 WHERE
-	t.Id = toInt32(1)
-LIMIT toInt32(1)
+	t.Id = 1
+LIMIT 1
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -53,9 +53,9 @@ ALTER TABLE
 	PR_1598_Update_Table
 UPDATE
 	Name = 'Jacob',
-	Age = toInt32(15)
+	Age = 15
 WHERE
-	Id = toInt32(1)
+	Id = 1
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -67,8 +67,8 @@ SELECT
 FROM
 	PR_1598_Update_Table t
 WHERE
-	t.Id = toInt32(1)
-LIMIT toInt32(1)
+	t.Id = 1
+LIMIT 1
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -76,9 +76,9 @@ BeforeExecute
 ALTER TABLE
 	PR_1598_Update_Table
 UPDATE
-	Age = toInt32(22)
+	Age = 22
 WHERE
-	Id = toInt32(1)
+	Id = 1
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -90,8 +90,8 @@ SELECT
 FROM
 	PR_1598_Update_Table t
 WHERE
-	t.Id = toInt32(1)
-LIMIT toInt32(1)
+	t.Id = 1
+LIMIT 1
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse

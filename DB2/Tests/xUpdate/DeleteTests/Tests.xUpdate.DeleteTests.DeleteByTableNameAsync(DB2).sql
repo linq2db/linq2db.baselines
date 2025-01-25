@@ -50,7 +50,7 @@ BeforeExecute
 -- DB2 DB2.LUW DB2LUW (asynchronously)
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	"xxPerson" "t1"
 
@@ -65,7 +65,7 @@ SELECT
 	"t1"."Gender"
 FROM
 	"xxPerson" "t1"
-FETCH FIRST 2 ROWS ONLY
+FETCH NEXT 2 ROWS ONLY
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW (asynchronously)
@@ -81,7 +81,7 @@ BeforeExecute
 -- DB2 DB2.LUW DB2LUW (asynchronously)
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	"xxPerson" "t1"
 

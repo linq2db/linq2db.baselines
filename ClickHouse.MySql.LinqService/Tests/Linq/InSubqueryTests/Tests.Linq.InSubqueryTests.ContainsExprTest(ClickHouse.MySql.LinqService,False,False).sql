@@ -7,10 +7,28 @@ SELECT
 FROM
 	Parent p
 WHERE
-	p.ParentID + toInt32(1) IN (
+	p.ParentID + 1 IN (
 		SELECT
 			c_1.ParentID
 		FROM
 			Child c_1
 	)
+
+BeforeExecute
+-- ClickHouse.MySql ClickHouse
+
+SELECT
+	t1.ParentID,
+	t1.Value1
+FROM
+	Parent t1
+
+BeforeExecute
+-- ClickHouse.MySql ClickHouse
+
+SELECT
+	t1.ParentID,
+	t1.ChildID
+FROM
+	Child t1
 

@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-DECLARE @Date  -- DateTime
-SET     @Date = '2020-02-29'
+DECLARE @Date VarChar(23) -- AnsiString
+SET     @Date = '2020-02-29 00:00:00.000'
 
 SELECT
 	[t1_1].[MoneyValue]
@@ -9,13 +9,13 @@ FROM
 	[LinqDataTypes] [t1_1]
 		INNER JOIN (
 			SELECT
-				[sub].[ID],
-				Max([sub].[DateTimeValue]) as [DateTimeValue]
+				[t2].[ID],
+				MAX([t2].[DateTimeValue]) as [DateTimeValue]
 			FROM
-				[LinqDataTypes] [sub]
+				[LinqDataTypes] [t2]
 			WHERE
-				[sub].[ID] = 1 AND DateTime([sub].[DateTimeValue]) <= DateTime(@Date)
+				[t2].[ID] = 1 AND strftime('%Y-%m-%d %H:%M:%f', [t2].[DateTimeValue]) <= strftime('%Y-%m-%d %H:%M:%f', @Date)
 			GROUP BY
-				[sub].[ID]
-		) [t1] ON [t1_1].[ID] = [t1].[ID] AND DateTime([t1_1].[DateTimeValue]) = DateTime([t1].[DateTimeValue])
+				[t2].[ID]
+		) [t1] ON [t1_1].[ID] = [t1].[ID] AND strftime('%Y-%m-%d %H:%M:%f', [t1_1].[DateTimeValue]) = strftime('%Y-%m-%d %H:%M:%f', [t1].[DateTimeValue])
 

@@ -2,12 +2,23 @@
 -- ClickHouse.Client ClickHouse
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	Child p
 		LEFT JOIN Parent a_Parent ON p.ParentID = a_Parent.ParentID
 WHERE
-	a_Parent.ParentID = toInt32(1)
+	a_Parent.ParentID = 1
+
+BeforeExecute
+-- ClickHouse.Client ClickHouse
+
+SELECT
+	COUNT(*)
+FROM
+	Child p
+		LEFT JOIN Parent a_Parent ON p.ParentID = a_Parent.ParentID
+WHERE
+	a_Parent.ParentID = 1
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
@@ -17,15 +28,4 @@ SELECT
 FROM
 	Child ch
 		LEFT JOIN Parent a_Parent ON ch.ParentID = a_Parent.ParentID
-
-BeforeExecute
--- ClickHouse.Client ClickHouse
-
-SELECT
-	Count(*)
-FROM
-	Child p
-		LEFT JOIN Parent a_Parent ON p.ParentID = a_Parent.ParentID
-WHERE
-	a_Parent.ParentID = toInt32(1)
 

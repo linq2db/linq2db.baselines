@@ -4,10 +4,10 @@ DECLARE @id Integer(4) -- Int32
 SET     @id = 10
 
 SELECT
-	"x"."ChildID"
+	"c_1"."ChildID"
 FROM
-	"Child" "x"
+	"Child" "c_1"
 WHERE
-	"x"."ChildID" = @id
-FETCH FIRST 1 ROWS ONLY
+	"c_1"."ChildID" = @id
+FETCH NEXT 1 ROWS ONLY
 

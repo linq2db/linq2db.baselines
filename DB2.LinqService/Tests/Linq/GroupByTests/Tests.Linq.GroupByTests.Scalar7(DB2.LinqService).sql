@@ -2,9 +2,9 @@
 -- DB2 DB2.LUW DB2LUW
 
 SELECT
-	Max("id"."ChildID")
+	MAX("g_1"."ChildID")
 FROM
-	"Child" "id"
+	"Child" "g_1"
 GROUP BY
-	"id"."ParentID"
+	"g_1"."ParentID"
 

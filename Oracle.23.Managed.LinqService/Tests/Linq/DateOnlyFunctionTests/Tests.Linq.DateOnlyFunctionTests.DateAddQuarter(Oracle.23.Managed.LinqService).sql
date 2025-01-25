@@ -286,7 +286,7 @@ BeforeExecute
 -- Oracle.23.Managed Oracle.Managed Oracle12
 
 SELECT
-	t."TransactionDate" + -1 * INTERVAL '3' MONTH
+	t."TransactionDate" - INTERVAL '3' MONTH
 FROM
 	"Transactions" t
 

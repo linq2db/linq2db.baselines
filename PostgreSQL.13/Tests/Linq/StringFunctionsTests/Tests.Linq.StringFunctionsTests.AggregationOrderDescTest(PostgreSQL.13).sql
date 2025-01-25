@@ -35,13 +35,13 @@ BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
 
 SELECT
-	Max(t1."Value1"),
-	STRING_AGG(t1."Value1", ' -> ' ORDER BY t1."Value1" DESC)
+	MAX(g_1."Value1"),
+	STRING_AGG(g_1."Value1", ' -> ' ORDER BY g_1."Value1" DESC)
 FROM
-	"SampleClass" t1
+	"SampleClass" g_1
 GROUP BY
-	t1."Id",
-	t1."Value1"
+	g_1."Id",
+	g_1."Value1"
 
 BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL

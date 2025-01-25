@@ -2,9 +2,9 @@
 -- ClickHouse.Client ClickHouse
 
 SELECT
-	ch.ParentID,
-	ch.ChildID
+	t1.ParentID,
+	t1.ChildID
 FROM
-	Child ch
-LIMIT toInt32(1)
+	Child t1
+LIMIT 1
 

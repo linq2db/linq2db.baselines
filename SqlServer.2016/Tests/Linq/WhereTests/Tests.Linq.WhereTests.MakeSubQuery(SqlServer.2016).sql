@@ -2,7 +2,7 @@
 -- SqlServer.2016
 
 SELECT
-	[p].[PersonID] + 1,
+	[p].[PersonID],
 	[p].[FirstName]
 FROM
 	[Person] [p]

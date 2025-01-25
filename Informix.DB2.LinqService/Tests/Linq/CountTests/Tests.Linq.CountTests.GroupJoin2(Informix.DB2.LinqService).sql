@@ -4,20 +4,20 @@
 SELECT
 	(
 		SELECT
-			Count(*)
+			COUNT(*)
 		FROM
-			Child t1
+			Child c_1
 		WHERE
-			p.ParentID = t1.ParentID
+			t1.ParentID = c_1.ParentID
 	),
 	(
 		SELECT
-			Count(*)
+			COUNT(*)
 		FROM
-			GrandChild t2
+			GrandChild g_1
 		WHERE
-			p.ParentID = t2.ParentID
+			t1.ParentID = g_1.ParentID
 	)
 FROM
-	Parent p
+	Parent t1
 

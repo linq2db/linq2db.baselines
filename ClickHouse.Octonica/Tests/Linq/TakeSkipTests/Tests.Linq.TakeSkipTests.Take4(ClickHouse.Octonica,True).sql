@@ -7,6 +7,6 @@ SELECT
 FROM
 	Child ch
 WHERE
-	ch.ChildID >= toInt32(0) AND ch.ChildID <= toInt32(100)
-LIMIT toInt32(3)
+	ch.ChildID >= 0 AND ch.ChildID <= 100
+LIMIT 3
 

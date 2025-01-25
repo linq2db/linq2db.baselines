@@ -48,7 +48,7 @@ USING (SELECT @id AS [PersonID]) [s] ON
 WHEN MATCHED THEN
 	UPDATE 
 	SET
-		[t1].[Diagnosis] = Convert(NVarChar(11), Len([t1].[Diagnosis]) + @i)
+		[Diagnosis] = CAST(Len([t1].[Diagnosis]) + @i AS NVarChar(11))
 WHEN NOT MATCHED THEN
 	INSERT
 	(
@@ -58,7 +58,7 @@ WHEN NOT MATCHED THEN
 	VALUES
 	(
 		@id,
-		Convert(NVarChar(11), Len(@diagnosis) + @i)
+		CAST(Len(@diagnosis) + @i AS NVarChar(11))
 	);
 
 BeforeExecute
@@ -78,7 +78,7 @@ USING (SELECT @id AS [PersonID]) [s] ON
 WHEN MATCHED THEN
 	UPDATE 
 	SET
-		[t1].[Diagnosis] = Convert(NVarChar(11), Len([t1].[Diagnosis]) + @i)
+		[Diagnosis] = CAST(Len([t1].[Diagnosis]) + @i AS NVarChar(11))
 WHEN NOT MATCHED THEN
 	INSERT
 	(
@@ -88,7 +88,7 @@ WHEN NOT MATCHED THEN
 	VALUES
 	(
 		@id,
-		Convert(NVarChar(11), Len(@diagnosis) + @i)
+		CAST(Len(@diagnosis) + @i AS NVarChar(11))
 	);
 
 BeforeExecute
@@ -108,7 +108,7 @@ USING (SELECT @id AS [PersonID]) [s] ON
 WHEN MATCHED THEN
 	UPDATE 
 	SET
-		[t1].[Diagnosis] = Convert(NVarChar(11), Len([t1].[Diagnosis]) + @i)
+		[Diagnosis] = CAST(Len([t1].[Diagnosis]) + @i AS NVarChar(11))
 WHEN NOT MATCHED THEN
 	INSERT
 	(
@@ -118,17 +118,15 @@ WHEN NOT MATCHED THEN
 	VALUES
 	(
 		@id,
-		Convert(NVarChar(11), Len(@diagnosis) + @i)
+		CAST(Len(@diagnosis) + @i AS NVarChar(11))
 	);
 
 BeforeExecute
 -- SqlServer.Contained SqlServer.2019
-DECLARE @take Int -- Int32
-SET     @take = 2
 DECLARE @id Int -- Int32
 SET     @id = 5
 
-SELECT TOP (@take)
+SELECT TOP (2)
 	[p].[PersonID],
 	[p].[Diagnosis]
 FROM

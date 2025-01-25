@@ -1,9 +1,10 @@
 ﻿BeforeExecute
 -- SqlServer.Northwind.MS SqlServer.2019
-DECLARE @p NVarChar(4000) -- String
-SET     @p = N'sweetest candy bread and dry meat'
+DECLARE @term NVarChar(4000) -- String
+SET     @term = N'sweetest candy bread and dry meat'
 
 SELECT
+	[t].[Discontinued],
 	[t].[ProductID],
 	[t].[ProductName],
 	[t].[SupplierID],
@@ -12,11 +13,10 @@ SELECT
 	[t].[UnitPrice],
 	[t].[UnitsInStock],
 	[t].[UnitsOnOrder],
-	[t].[ReorderLevel],
-	[t].[Discontinued]
+	[t].[ReorderLevel]
 FROM
 	[Products] [t]
-		INNER JOIN FREETEXTTABLE([Categories], ([Description]), @p) [c_1] ON [t].[CategoryID] = [c_1].[KEY]
+		INNER JOIN FREETEXTTABLE([Categories], ([Description]), @term) [c_1] ON [t].[CategoryID] = [c_1].[KEY]
 ORDER BY
 	[t].[ProductName] DESC
 

@@ -2,9 +2,9 @@
 -- Access AccessOleDb (asynchronously)
 
 DELETE FROM
-	[Child] [t1]
+	[Child] [c_1]
 WHERE
-	[t1].[ChildID] > 1000
+	[c_1].[ChildID] > 1000
 
 BeforeExecute
 -- Access AccessOleDb (asynchronously)
@@ -30,7 +30,7 @@ DECLARE @id Integer -- Int32
 SET     @id = 1001
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	[Child] [c_1]
 WHERE
@@ -40,7 +40,7 @@ BeforeExecute
 -- Access AccessOleDb (asynchronously)
 
 DELETE FROM
-	[Child] [t1]
+	[Child] [c_1]
 WHERE
-	[t1].[ChildID] > 1000
+	[c_1].[ChildID] > 1000
 

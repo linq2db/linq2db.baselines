@@ -4,18 +4,25 @@ DECLARE @id Integer(4) -- Int32
 SET     @id = 1
 
 SELECT
-	COUNT("left_1"."ParentID"),
-	COUNT("p_1"."ParentID"),
-	COUNT(*)
+	"t1"."c1"
 FROM
 	(
 		SELECT
-			"p"."ParentID"
+			CASE
+				WHEN COUNT("left_1"."ParentID") = COUNT("right_1"."ParentID") AND COUNT("left_1"."ParentID") = COUNT(*)
+					THEN 1
+				ELSE 0
+			END as "c1"
 		FROM
-			"Parent" "p"
-		WHERE
-			"p"."ParentID" <> @id
-	) "left_1"
-		FULL JOIN "Parent" "p_1" ON "p_1"."ParentID" = "left_1"."ParentID"
-FETCH FIRST 2 ROWS ONLY
+			(
+				SELECT
+					"p"."ParentID"
+				FROM
+					"Parent" "p"
+				WHERE
+					"p"."ParentID" <> @id
+			) "left_1"
+				FULL JOIN "Parent" "right_1" ON "right_1"."ParentID" = "left_1"."ParentID"
+	) "t1"
+FETCH NEXT 2 ROWS ONLY
 

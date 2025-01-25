@@ -3,9 +3,9 @@
 
 SELECT
 	"p"."Value1",
-	"o"."ChildID",
+	"c_1"."ChildID",
 	"p"."ParentID"
 FROM
 	"Parent" "p"
-		LEFT JOIN "Child" "o" ON "p"."ParentID" = "o"."ParentID"
+		LEFT JOIN "Child" "c_1" ON "p"."ParentID" = "c_1"."ParentID"
 

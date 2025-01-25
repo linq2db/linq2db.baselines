@@ -26,7 +26,7 @@ INSERT INTO TrimTestTable
 )
 VALUES
 (
-	toInt32(1),
+	1,
 	'***OOO***'
 )
 

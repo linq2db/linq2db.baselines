@@ -10,5 +10,5 @@ SELECT
 FROM
 	"Person" p
 WHERE
-	p."PersonID" IS NULL
+	1 = 0
 

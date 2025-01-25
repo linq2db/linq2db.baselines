@@ -2,7 +2,7 @@
 -- ClickHouse.Client ClickHouse
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	Person p
 WHERE

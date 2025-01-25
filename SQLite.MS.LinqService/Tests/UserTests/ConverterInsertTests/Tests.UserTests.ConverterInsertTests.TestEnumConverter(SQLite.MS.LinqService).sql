@@ -38,8 +38,6 @@ BeforeExecute
 -- SQLite.MS SQLite
 DECLARE @id  -- Int32
 SET     @id = 5
-DECLARE @take  -- Int32
-SET     @take = 1
 
 SELECT
 	[t].[PersonID],
@@ -51,5 +49,5 @@ FROM
 	[Person] [t]
 WHERE
 	[t].[PersonID] = @id
-LIMIT @take
+LIMIT 1
 

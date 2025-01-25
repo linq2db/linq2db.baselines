@@ -16,14 +16,12 @@ CREATE TABLE IF NOT EXISTS "Issue681Table"
 
 BeforeExecute
 -- PostgreSQL.15 PostgreSQL
-DECLARE @take Integer -- Int32
-SET     @take = 1
 
 SELECT
 	current_schema()
 FROM
 	"LinqDataTypes" t1
-LIMIT :take
+LIMIT 1
 
 BeforeExecute
 -- PostgreSQL.15 PostgreSQL
@@ -33,7 +31,7 @@ DROP TABLE IF EXISTS "Issue681Table2"
 BeforeExecute
 -- PostgreSQL.15 PostgreSQL
 
-CREATE TABLE "public"."Issue681Table2"
+CREATE TABLE public."Issue681Table2"
 (
 	"ID"    Int NOT NULL,
 	"Value" Int NOT NULL,

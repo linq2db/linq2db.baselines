@@ -25,9 +25,9 @@ INSERT INTO Issue2816Table
 	Text
 )
 VALUES
-(toInt32(1),' '),
-(toInt32(2),'   '),
-(toInt32(3),'  x ')
+(1,' '),
+(2,'   '),
+(3,'  x ')
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse

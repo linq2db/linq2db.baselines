@@ -9,9 +9,9 @@ BeforeExecute
 -- SqlServer.2012.MS SqlServer.2012
 
 SELECT
-	Max([_].[PersonID])
+	MAX([t1].[PersonID])
 FROM
-	[Person] [_]
+	[Person] [t1]
 
 BeforeExecute
 -- SqlServer.2012.MS SqlServer.2012
@@ -22,19 +22,19 @@ SET IDENTITY_INSERT [Person] ON
 MERGE INTO [Person] [Target]
 USING (
 	SELECT
-		[t1].[PersonID] as [ID],
-		[a_Patient].[Diagnosis]
+		[t1].[PersonID] as [source_ID],
+		[a_Patient].[Diagnosis] as [source_Patient_Diagnosis]
 	FROM
 		[Person] [t1]
-			LEFT JOIN [Patient] [a_Patient] ON [t1].[PersonID] = [a_Patient].[PersonID]
+			INNER JOIN [Patient] [a_Patient] ON [t1].[PersonID] = [a_Patient].[PersonID]
 ) [Source]
 (
-	[ID],
-	[Diagnosis]
+	[source_ID],
+	[source_Patient_Diagnosis]
 )
-ON ([Target].[PersonID] = [Source].[ID] AND [Target].[FirstName] <> N'first 3')
+ON ([Target].[PersonID] = [Source].[source_ID] AND [Target].[FirstName] <> N'first 3')
 
-WHEN NOT MATCHED AND [Source].[Diagnosis] LIKE N'%sick%' ESCAPE N'~' THEN
+WHEN NOT MATCHED AND [Source].[source_Patient_Diagnosis] LIKE N'%sick%' ESCAPE N'~' THEN
 INSERT
 (
 	[PersonID],

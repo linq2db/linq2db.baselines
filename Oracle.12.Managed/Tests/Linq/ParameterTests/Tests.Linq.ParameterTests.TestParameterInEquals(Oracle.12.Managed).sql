@@ -71,7 +71,7 @@ WHERE
 		FROM
 			"TestEqualsTable2" t2
 		WHERE
-			t1."Id" = t2.FK AND t2."Id" IS NULL
+			1 = 0
 	)
 
 BeforeExecute

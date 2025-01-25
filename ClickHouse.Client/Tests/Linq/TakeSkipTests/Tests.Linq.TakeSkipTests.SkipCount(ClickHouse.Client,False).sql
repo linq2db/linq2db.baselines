@@ -2,14 +2,13 @@
 -- ClickHouse.Client ClickHouse
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	(
 		SELECT
-			t1.ParentID as ParentID,
-			t1.ChildID as ChildID
+			*
 		FROM
 			Child t1
-		LIMIT toInt32(2), 18446744073709551615
+		LIMIT 2, 18446744073709551615
 	) t2
 

@@ -47,7 +47,7 @@ VALUES
 		FROM
 			"Issue1363" t1
 		WHERE
-			t1."required_field" IS NULL
+			1 = 0
 	)
 )
 
@@ -80,8 +80,6 @@ BeforeExecute
 -- Oracle.11.Managed Oracle11
 DECLARE @id2 Raw(16) -- Binary
 SET     @id2 = HEXTORAW('0D6048A921DE744F8AC29516B287076E')
-DECLARE @take Int32
-SET     @take = 2
 
 SELECT
 	t1."required_field",
@@ -89,7 +87,7 @@ SELECT
 FROM
 	"Issue1363" t1
 WHERE
-	t1."required_field" = :id2 AND ROWNUM <= :take
+	t1."required_field" = :id2 AND ROWNUM <= 2
 
 BeforeExecute
 -- Oracle.11.Managed Oracle11

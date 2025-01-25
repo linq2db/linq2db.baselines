@@ -2,9 +2,9 @@
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
-	toInt32(1)
+	1
 FROM
 	Person p
 WHERE
-	p.PersonID = toInt32(1)
+	p.PersonID = 1
 

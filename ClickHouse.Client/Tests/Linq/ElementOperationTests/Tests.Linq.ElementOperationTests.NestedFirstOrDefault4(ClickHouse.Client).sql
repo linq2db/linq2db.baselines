@@ -2,26 +2,33 @@
 -- ClickHouse.Client ClickHouse
 
 SELECT
-	key_data_result.ParentID,
-	key_data_result.Value1,
-	_c.ParentID,
-	_c.ChildID
+	m_1.ParentID,
+	d_1.ParentID,
+	d_1.ChildID
 FROM
 	(
 		SELECT DISTINCT
-			p.ParentID as ParentID,
-			p.Value1 as Value1
+			p.ParentID as ParentID
 		FROM
 			Parent p
-	) key_data_result
-		INNER JOIN Child _c ON key_data_result.ParentID = _c.ParentID AND _c.ParentID > toInt32(0)
+	) m_1
+		INNER JOIN (
+			SELECT DISTINCT
+				d.ParentID as ParentID,
+				d.ChildID as ChildID
+			FROM
+				Child d
+			WHERE
+				d.ParentID > 0
+		) d_1 ON m_1.ParentID = d_1.ParentID
+ORDER BY
+	d_1.ChildID
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
 
 SELECT
-	p.ParentID,
-	p.Value1
+	p.ParentID
 FROM
 	Parent p
 

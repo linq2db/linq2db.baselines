@@ -487,16 +487,12 @@ VALUES
 BeforeExecute
 -- Informix.DB2 Informix
 
-SELECT SKIP 0 FIRST 3
+SELECT SKIP 0 FIRST 3 DISTINCT
 	x.DuplicateData,
 	x.OrderData2
 FROM
 	OrderByDistinctData x
-GROUP BY
-	x.DuplicateData,
-	x.OrderData2
 ORDER BY
-	Min(x.OrderData1),
 	x.OrderData2 DESC
 
 BeforeExecute

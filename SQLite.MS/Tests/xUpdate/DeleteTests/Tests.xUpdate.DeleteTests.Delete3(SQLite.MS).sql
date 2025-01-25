@@ -38,7 +38,7 @@ BeforeExecute
 -- SQLite.MS SQLite
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	[Child] [c_1]
 WHERE
@@ -67,7 +67,7 @@ BeforeExecute
 -- SQLite.MS SQLite
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	[Child] [c_1]
 WHERE

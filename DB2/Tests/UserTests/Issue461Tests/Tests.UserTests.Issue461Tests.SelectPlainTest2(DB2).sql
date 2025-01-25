@@ -8,7 +8,7 @@ SELECT
 			"c_1"."ParentID" + 1
 		FROM
 			"Child" "c_1"
-		FETCH FIRST 1 ROWS ONLY
+		FETCH NEXT 1 ROWS ONLY
 	)
 FROM
 	"Parent" "p"

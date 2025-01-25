@@ -2,7 +2,7 @@
 -- Informix.DB2 Informix
 
 SELECT
-	Cast(t.MoneyValue as Float)
+	t.MoneyValue::Float
 FROM
 	LinqDataTypes t
 

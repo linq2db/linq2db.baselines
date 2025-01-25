@@ -20,7 +20,7 @@ INSERT INTO SimpleBulkCopyTable
 	Id
 )
 VALUES
-(toInt32(2))
+(2)
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse

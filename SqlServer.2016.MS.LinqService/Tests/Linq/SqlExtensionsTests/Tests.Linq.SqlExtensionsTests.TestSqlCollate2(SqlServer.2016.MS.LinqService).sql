@@ -2,7 +2,7 @@
 -- SqlServer.2016.MS SqlServer.2016
 
 SELECT
-	[_].[FirstName] COLLATE Albanian_CI_AS
+	N'1' + [t1].[FirstName] COLLATE Albanian_CI_AS + N'2'
 FROM
-	[Person] [_]
+	[Person] [t1]
 

@@ -22,9 +22,9 @@ USING (VALUES
 	(1)
 ) "Source"
 (
-	"Id"
+	"source_Id"
 )
-ON ("Target"."Id" = "Source"."Id")
+ON ("Target"."Id" = "Source"."source_Id")
 
 WHEN NOT MATCHED THEN
 INSERT

@@ -22,7 +22,7 @@ INSERT INTO SomeEntity
 	OtherId
 )
 VALUES
-(toInt32(1),toInt32(3))
+(1,3)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
@@ -50,7 +50,7 @@ INSERT INTO SomeOtherEntity
 	IsActual
 )
 VALUES
-(toInt32(2),NULL,true)
+(2,NULL,true)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
@@ -62,7 +62,7 @@ SELECT
 FROM
 	SomeEntity t
 		LEFT JOIN SomeOtherEntity a_Other ON t.OtherId = a_Other.Id
-LIMIT toInt32(1)
+LIMIT 1
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse

@@ -19,9 +19,9 @@ BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	[LinqDataTypes] [x]
 WHERE
-	([x].[DateTimeValue2] IN ('2009-09-24 09:19:29.09') OR [x].[DateTimeValue2] IS NULL)
+	([x].[DateTimeValue2] IN ('2009-09-24 09:19:29.090') OR [x].[DateTimeValue2] IS NULL)
 

@@ -28,7 +28,7 @@ BeforeExecute
 -- SQLite.Classic SQLite
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	[Child] [c_1]
 WHERE

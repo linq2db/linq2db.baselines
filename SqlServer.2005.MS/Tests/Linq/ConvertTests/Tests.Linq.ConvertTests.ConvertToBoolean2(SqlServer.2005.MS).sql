@@ -2,9 +2,17 @@
 -- SqlServer.2005.MS SqlServer.2005
 
 SELECT
-	Convert(Bit, [t].[MoneyValue] - 4.5)
+	[p_1].[c1]
 FROM
-	[LinqDataTypes] [t]
+	(
+		SELECT
+			CASE
+				WHEN [p].[MoneyValue] <> 4.5 THEN 1
+				ELSE 0
+			END as [c1]
+		FROM
+			[LinqDataTypes] [p]
+	) [p_1]
 WHERE
-	Convert(Bit, [t].[MoneyValue] - 4.5) = 0
+	[p_1].[c1] = 0
 

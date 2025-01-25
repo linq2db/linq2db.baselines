@@ -36,14 +36,12 @@ DECLARE @id Int -- Int32
 SET     @id = 1
 
 UPDATE
-	[_]
+	[TextData]
 SET
-	[_].[Items1] = [_].[Items1] + @str,
-	[_].[Items2] = [_].[Items2] + @str
-FROM
-	[TextData] [_]
+	[Items1] = [TextData].[Items1] + @str,
+	[Items2] = [TextData].[Items2] + @str
 WHERE
-	[_].[Id] >= @id
+	[TextData].[Id] >= @id
 
 BeforeExecute
 -- SqlServer.2014

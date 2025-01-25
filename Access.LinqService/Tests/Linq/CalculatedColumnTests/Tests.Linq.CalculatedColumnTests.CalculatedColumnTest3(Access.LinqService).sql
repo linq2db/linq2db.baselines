@@ -2,34 +2,42 @@
 -- Access AccessOleDb
 
 SELECT
-	[t1].[cnt],
-	[i].[PersonID],
-	[i].[FirstName],
-	[i].[LastName],
-	[i].[MiddleName],
-	[i].[Gender],
-	[i].[LastName] + ', ' + [i].[FirstName],
-	[t2].[cnt]
+	(
+		SELECT
+			COUNT(*)
+		FROM
+			[Doctor] [d_1]
+		WHERE
+			[d_1].[PersonID] = [i_1].[PersonID]
+	),
+	[i_1].[PersonID],
+	[i_1].[FirstName],
+	[i_1].[LastName],
+	[i_1].[MiddleName],
+	[i_1].[Gender],
+	[i_1].[FullName],
+	[i_1].[FullName],
+	[i_1].[DoctorCount]
 FROM
-	([Person] [i]
-		LEFT JOIN (
-			SELECT
-				Count(*) as [cnt],
-				[d].[PersonID]
-			FROM
-				[Doctor] [d]
-			GROUP BY
-				[d].[PersonID]
-		) [t1] ON ([t1].[PersonID] = [i].[PersonID]))
-		LEFT JOIN (
-			SELECT
-				Count(*) as [cnt],
-				[d_1].[PersonID]
-			FROM
-				[Doctor] [d_1]
-			GROUP BY
-				[d_1].[PersonID]
-		) [t2] ON ([t2].[PersonID] = [i].[PersonID])
+	(
+		SELECT
+			[i].[FirstName],
+			[i].[PersonID],
+			[i].[LastName],
+			[i].[MiddleName],
+			[i].[Gender],
+			[i].[LastName] + ', ' + [i].[FirstName] as [FullName],
+			(
+				SELECT
+					COUNT(*)
+				FROM
+					[Doctor] [d]
+				WHERE
+					[d].[PersonID] = [i].[PersonID]
+			) as [DoctorCount]
+		FROM
+			[Person] [i]
+	) [i_1]
 WHERE
-	[i].[FirstName] <> 'John'
+	[i_1].[FirstName] <> 'John'
 

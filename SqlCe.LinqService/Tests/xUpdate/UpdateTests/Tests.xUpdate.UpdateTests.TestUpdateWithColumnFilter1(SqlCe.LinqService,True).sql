@@ -31,14 +31,12 @@ VALUES
 
 BeforeExecute
 -- SqlCe
-DECLARE @take Int -- Int32
-SET     @take = 1
 DECLARE @FirstName NVarChar(25) -- String
 SET     @FirstName = 'UpdateColumnFilterUpdated'
 
-SELECT TOP (@take)
+SELECT TOP (1)
 	[x].[FirstName],
-	[x].[PersonID],
+	[x].[PersonID] as [ID],
 	[x].[LastName],
 	[x].[MiddleName],
 	[x].[Gender]
@@ -63,23 +61,21 @@ SET     @ID = 5
 UPDATE
 	[Person]
 SET
-	[Person].[FirstName] = @FirstName,
-	[Person].[LastName] = @LastName,
-	[Person].[MiddleName] = @MiddleName,
-	[Person].[Gender] = @Gender
+	[FirstName] = @FirstName,
+	[LastName] = @LastName,
+	[MiddleName] = @MiddleName,
+	[Gender] = @Gender
 WHERE
 	[Person].[PersonID] = @ID
 
 BeforeExecute
 -- SqlCe
-DECLARE @take Int -- Int32
-SET     @take = 1
 DECLARE @FirstName NVarChar(25) -- String
 SET     @FirstName = 'UpdateColumnFilterUpdated'
 
-SELECT TOP (@take)
+SELECT TOP (1)
 	[x].[FirstName],
-	[x].[PersonID],
+	[x].[PersonID] as [ID],
 	[x].[LastName],
 	[x].[MiddleName],
 	[x].[Gender]

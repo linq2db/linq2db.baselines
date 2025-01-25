@@ -1,35 +1,21 @@
 ﻿BeforeExecute
 -- Access.Odbc AccessODBC
 DECLARE @n Int -- Int32
-SET     @n = -1
-DECLARE @n Int -- Int32
-SET     @n = -1
+SET     @n = 1
 
 SELECT
-	Count([t1].[ParentID])
+	COUNT(IIF([g_2].[ParentID] < 3, 1, NULL))
 FROM
 	(
 		SELECT
-			[ch].[ParentID] + 1 as [ParentID],
-			[ch].[ChildID]
+			[g_1].[ParentID] + 1 as [ParentID],
+			[g_1].[ChildID]
 		FROM
-			[Child] [ch]
+			[Child] [g_1]
 		WHERE
-			[ch].[ParentID] > ?
-	) [t2]
-		LEFT JOIN (
-			SELECT
-				[ch_1].[ParentID],
-				[ch_1].[ChildID]
-			FROM
-				[Child] [ch_1]
-			WHERE
-				[ch_1].[ParentID] < 2 AND [ch_1].[ParentID] > ?
-			GROUP BY
-				[ch_1].[ParentID],
-				[ch_1].[ChildID]
-		) [t1] ON ([t2].[ParentID] = [t1].[ParentID] + 1 AND [t2].[ChildID] = [t1].[ChildID])
+			[g_1].[ParentID] + 2 > ?
+	) [g_2]
 GROUP BY
-	[t2].[ParentID],
-	[t2].[ChildID]
+	[g_2].[ParentID],
+	[g_2].[ChildID]
 

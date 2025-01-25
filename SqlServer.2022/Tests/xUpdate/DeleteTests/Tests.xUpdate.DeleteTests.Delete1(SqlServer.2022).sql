@@ -33,7 +33,7 @@ DECLARE @ParentID Int -- Int32
 SET     @ParentID = 1001
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	[Parent] [p]
 WHERE
@@ -44,11 +44,11 @@ BeforeExecute
 DECLARE @ParentID Int -- Int32
 SET     @ParentID = 1001
 
-DELETE [t1]
+DELETE [p]
 FROM
-	[Parent] [t1]
+	[Parent] [p]
 WHERE
-	[t1].[ParentID] = @ParentID
+	[p].[ParentID] = @ParentID
 
 BeforeExecute
 -- SqlServer.2022
@@ -56,7 +56,7 @@ DECLARE @ParentID Int -- Int32
 SET     @ParentID = 1001
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	[Parent] [p]
 WHERE

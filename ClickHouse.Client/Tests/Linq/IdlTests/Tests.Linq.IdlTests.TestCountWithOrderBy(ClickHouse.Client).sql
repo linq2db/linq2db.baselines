@@ -2,15 +2,15 @@
 -- ClickHouse.Client ClickHouse
 
 SELECT
-	maxOrNull(x.PersonID)
+	maxOrNull(p.PersonID)
 FROM
-	Person x
+	Person p
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	Person p
 

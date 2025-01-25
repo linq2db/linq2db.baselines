@@ -2,14 +2,9 @@
 -- Oracle.19.Managed Oracle.Managed Oracle12
 
 SELECT
-	t."c1"
+	TO_TIMESTAMP(LPad(CAST(EXTRACT(YEAR FROM t."DateTimeValue") AS VarChar(4)), 4, '0') || '-10-01 00:00:00.000', 'YYYY-MM-DD HH24:MI:SS.FF3')
 FROM
-	(
-		SELECT
-			TO_DATE(Lpad(To_Number(To_Char(p."DateTimeValue", 'YYYY')),4,'0') || '-10-01', 'YYYY-MM-DD') as "c1"
-		FROM
-			"LinqDataTypes" p
-	) t
+	"LinqDataTypes" t
 WHERE
-	To_Number(To_Char(t."c1", 'MM')) = 10
+	EXTRACT(MONTH FROM TO_TIMESTAMP(LPad(CAST(EXTRACT(YEAR FROM t."DateTimeValue") AS VarChar(4)), 4, '0') || '-10-01 00:00:00.000', 'YYYY-MM-DD HH24:MI:SS.FF3')) = 10
 

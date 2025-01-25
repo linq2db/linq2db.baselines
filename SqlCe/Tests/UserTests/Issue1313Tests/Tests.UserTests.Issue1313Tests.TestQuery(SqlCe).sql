@@ -27,7 +27,7 @@ BeforeExecute
 -- SqlCe
 
 SELECT
-	[row_1].[Value]
+	[row_1].[Value] as [ChangeToProp]
 FROM
 	[ValueItem] [row_1]
 

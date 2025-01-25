@@ -6,5 +6,5 @@ SELECT
 FROM
 	Parent p1
 WHERE
-	p1.ParentID = toInt32(1)
+	p1.ParentID = 1
 

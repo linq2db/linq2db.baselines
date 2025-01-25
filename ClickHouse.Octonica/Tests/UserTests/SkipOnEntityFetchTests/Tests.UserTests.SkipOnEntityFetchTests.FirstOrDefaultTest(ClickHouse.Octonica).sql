@@ -51,7 +51,7 @@ FROM
 	Attachment x
 WHERE
 	x.Id = toInt64(1)
-LIMIT toInt32(1)
+LIMIT 1
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse

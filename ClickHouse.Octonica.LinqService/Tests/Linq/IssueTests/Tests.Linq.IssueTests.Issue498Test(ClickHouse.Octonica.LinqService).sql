@@ -2,11 +2,11 @@
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
-	x.ParentID,
-	Count(*)
+	g_1.ParentID,
+	COUNT(*)
 FROM
-	Child x
-		INNER JOIN GrandChild y ON x.ParentID = y.ParentID AND x.ChildID = y.ChildID
+	Child g_1
+		INNER JOIN GrandChild y ON g_1.ParentID = y.ParentID AND g_1.ChildID = y.ChildID
 GROUP BY
-	x.ParentID
+	g_1.ParentID
 

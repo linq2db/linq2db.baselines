@@ -2,11 +2,7 @@
 -- SqlServer.2012 (asynchronously)
 
 SELECT TOP (1)
-	[p].[FirstName],
-	[p].[PersonID],
-	[p].[LastName],
-	[p].[MiddleName],
-	[p].[Gender]
+	[p].[FirstName]
 FROM
 	[Person] [p]
 WHERE

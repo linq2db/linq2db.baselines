@@ -4,26 +4,26 @@ DECLARE @take Int32
 SET     @take = 5
 
 SELECT
-	t2."Key_1",
-	t2."Count_1"
+	t1."Date_1",
+	t1.COUNT_1
 FROM
 	(
 		SELECT
-			t1."c1" as "Key_1",
-			Count(*) as "Count_1"
+			g_2."Date_1",
+			COUNT(*) as COUNT_1
 		FROM
 			(
 				SELECT
-					Trunc(CURRENT_TIMESTAMP, 'DD') as "c1"
+					TRUNC(CURRENT_TIMESTAMP) as "Date_1"
 				FROM
-					"Parent" v
-						INNER JOIN "Child" s ON v."ParentID" = s."ParentID"
+					"Parent" g_1
+						INNER JOIN "Child" s ON g_1."ParentID" = s."ParentID"
 				WHERE
-					v."Value1" > 0
-			) t1
+					g_1."Value1" > 0
+			) g_2
 		GROUP BY
-			t1."c1"
-	) t2
+			g_2."Date_1"
+	) t1
 WHERE
 	ROWNUM <= :take
 

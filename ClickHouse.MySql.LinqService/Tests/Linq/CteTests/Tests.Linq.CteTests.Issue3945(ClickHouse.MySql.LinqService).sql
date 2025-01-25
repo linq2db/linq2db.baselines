@@ -25,9 +25,8 @@ INSERT INTO TestFolder
 WITH CTE AS
 (
 	SELECT
-		c_1.Id,
-		c_1.Label,
-		c_1.ParentId
+		c_1.ParentId,
+		c_1.Label
 	FROM
 		TestFolder c_1
 	WHERE

@@ -20,7 +20,7 @@ DECLARE @id  -- Int32
 SET     @id = 1001
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	"Child" "c_1"
 WHERE
@@ -34,7 +34,7 @@ SET     @id = 1001
 UPDATE
 	"Child"
 SET
-	"Child"."ChildID" = "Child"."ChildID" + 1
+	"ChildID" = "Child"."ChildID" + 1
 WHERE
 	EXISTS(
 		SELECT
@@ -55,7 +55,7 @@ DECLARE @ChildID  -- Int32
 SET     @ChildID = 1002
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	"Child" "c_1"
 WHERE

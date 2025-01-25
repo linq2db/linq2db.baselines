@@ -10,6 +10,6 @@ SELECT
 FROM
 	Person p
 WHERE
-	concat('123', leftPadUTF8(p.FirstName, toUInt32(toInt32(6)), '*')) = '123**John' AND
-	p.PersonID = toInt32(1)
+	concat('123', leftPadUTF8(p.FirstName, toUInt32(6), '*')) = '123**John' AND
+	p.PersonID = 1
 

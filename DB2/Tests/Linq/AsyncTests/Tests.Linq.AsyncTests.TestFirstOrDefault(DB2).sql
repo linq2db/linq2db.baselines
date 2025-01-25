@@ -16,5 +16,5 @@ FROM
 	"Parent" "o"
 WHERE
 	("o"."ParentID" IN (@p, @p_1, @p_2) OR "o"."ParentID" = @param)
-FETCH FIRST 1 ROWS ONLY
+FETCH NEXT 1 ROWS ONLY
 

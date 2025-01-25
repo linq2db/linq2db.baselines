@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- Oracle.11.Managed Oracle11
 
-WITH CTE_1 ("Child_ParentID", "ChildID")
+WITH CTE_1 ("Child_ParentID", "Child_ChildID")
 AS
 (
 	SELECT
@@ -14,7 +14,7 @@ SELECT
 	p."ParentID",
 	p."Value1",
 	c_1."Child_ParentID",
-	c_1."ChildID"
+	c_1."Child_ChildID"
 FROM
 	"Parent" p
 		INNER JOIN CTE_1 c_1 ON p."ParentID" = c_1."Child_ParentID"
@@ -25,9 +25,9 @@ BeforeExecute
 SELECT
 	p."ParentID",
 	p."Value1",
-	child_1."ParentID",
-	child_1."ChildID"
+	c_1."ParentID",
+	c_1."ChildID"
 FROM
 	"Parent" p
-		INNER JOIN "Child" child_1 ON p."ParentID" = child_1."ParentID"
+		INNER JOIN "Child" c_1 ON p."ParentID" = c_1."ParentID"
 

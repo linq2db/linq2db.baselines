@@ -2,7 +2,7 @@
 -- SqlServer.2017.MS SqlServer.2017
 
 SELECT
-	Convert(TinyInt, [t].[MoneyValue])
+	CAST(Floor([t].[MoneyValue]) AS TinyInt)
 FROM
 	[LinqDataTypes] [t]
 

@@ -496,26 +496,26 @@ BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 SELECT
-	"t"."DuplicateData",
+	"t_1"."DuplicateData",
 	(
 		SELECT
-			Count(*)
+			COUNT(*)
 		FROM
-			"OrderByDistinctData" "s"
+			"OrderByDistinctData" "c_1"
 		WHERE
-			("s"."DuplicateData" = "t"."DuplicateData" OR "s"."DuplicateData" IS NULL AND "t"."DuplicateData" IS NULL)
+			("c_1"."DuplicateData" = "t_1"."DuplicateData" OR "c_1"."DuplicateData" IS NULL AND "t_1"."DuplicateData" IS NULL)
 	)
 FROM
 	(
 		SELECT
-			"t1"."Id",
-			"t1"."DuplicateData"
+			"t"."Id",
+			"t"."DuplicateData"
 		FROM
-			"OrderByDistinctData" "t1"
-		FETCH FIRST 2 ROWS ONLY
-	) "t"
+			"OrderByDistinctData" "t"
+		FETCH NEXT 2 ROWS ONLY
+	) "t_1"
 ORDER BY
-	"t"."Id" DESC
+	"t_1"."Id" DESC
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW

@@ -23,8 +23,8 @@ INSERT INTO AttendanceSheet
 	Id
 )
 VALUES
-(toInt32(1)),
-(toInt32(2))
+(1),
+(2)
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
@@ -50,29 +50,29 @@ INSERT INTO AttendanceSheetRow
 	AttendanceSheetId
 )
 VALUES
-(toInt32(1),toInt32(1)),
-(toInt32(2),toInt32(2)),
-(toInt32(3),toInt32(1)),
-(toInt32(4),toInt32(2))
+(1,1),
+(2,2),
+(3,1),
+(4,2)
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
 
 SELECT
-	sheet.Id,
-	detail.Id,
-	detail.AttendanceSheetId
+	m_1.Id,
+	d.Id,
+	d.AttendanceSheetId
 FROM
-	AttendanceSheet sheet
-		INNER JOIN AttendanceSheetRow detail ON detail.AttendanceSheetId = sheet.Id
+	AttendanceSheet m_1
+		INNER JOIN AttendanceSheetRow d ON m_1.Id = d.AttendanceSheetId
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
 
 SELECT
-	sheet.Id
+	t1.Id
 FROM
-	AttendanceSheet sheet
+	AttendanceSheet t1
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse

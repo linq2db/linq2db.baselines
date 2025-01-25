@@ -50,21 +50,19 @@ INSERT INTO [Confirmation]
 	[Date]
 )
 VALUES
-(1,'2019-04-09 14:30:00'),
-(2,'2019-04-09 14:30:20'),
-(2,'2019-04-09 14:30:25'),
-(3,'2019-04-09 14:30:35')
+(1,'2019-04-09 14:30:00.000'),
+(2,'2019-04-09 14:30:20.000'),
+(2,'2019-04-09 14:30:25.000'),
+(3,'2019-04-09 14:30:35.000')
 
 BeforeExecute
 -- SQLite.MS SQLite
 DECLARE @take  -- Int32
-SET     @take = 1
-DECLARE @take_1  -- Int32
-SET     @take_1 = 2
+SET     @take = 2
 
 SELECT
 	[t1].[BatchId],
-	[t1].[CreationDate],
+	[t1].[Date_1],
 	[t1].[Value_1]
 FROM
 	(
@@ -72,19 +70,19 @@ FROM
 			[x].[Id] as [BatchId],
 			(
 				SELECT
-					[p].[Date]
+					[a_Confirmations].[Date]
 				FROM
-					[Confirmation] [p]
+					[Confirmation] [a_Confirmations]
 				WHERE
-					[x].[Id] = [p].[BatchId]
-				LIMIT @take
-			) as [CreationDate],
+					[x].[Id] = [a_Confirmations].[BatchId]
+				LIMIT 1
+			) as [Date_1],
 			[x].[Value] as [Value_1]
 		FROM
 			[Batch] [x]
 		ORDER BY
 			[x].[Id] DESC
-		LIMIT @take_1
+		LIMIT @take
 	) [t1]
 ORDER BY
 	[t1].[BatchId]

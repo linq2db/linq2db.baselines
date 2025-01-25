@@ -32,13 +32,24 @@ BeforeExecute
 -- SQLite.Classic SQLite
 
 SELECT
-	'Title',
-	[selectParam].[Title],
-	Sum([selectParam].[YearsExperience])
+	[it_1].[Name],
+	[it_1].[Value_1],
+	SUM([it_1].[Value_2])
 FROM
-	[odata_person] [selectParam]
+	(
+		SELECT
+			'Title' as [Name],
+			CASE
+				WHEN [it].[Name] IS NULL THEN NULL
+				ELSE [it].[Title]
+			END as [Value_1],
+			[it].[YearsExperience] as [Value_2]
+		FROM
+			[odata_person] [it]
+	) [it_1]
 GROUP BY
-	[selectParam].[Title]
+	[it_1].[Name],
+	[it_1].[Value_1]
 
 BeforeExecute
 -- SQLite.Classic SQLite

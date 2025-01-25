@@ -47,7 +47,7 @@ BeforeExecute
 -- Access AccessOleDb
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	[xxPerson] [t1]
 

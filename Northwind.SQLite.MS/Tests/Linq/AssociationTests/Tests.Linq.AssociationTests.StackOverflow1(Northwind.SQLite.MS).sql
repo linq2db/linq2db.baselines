@@ -1,7 +1,5 @@
 ﻿BeforeExecute
 -- Northwind.SQLite.MS SQLite.MS SQLite
-DECLARE @take  -- Int32
-SET     @take = 1
 
 SELECT
 	[employee].[EmployeeID],
@@ -27,11 +25,11 @@ FROM
 WHERE
 	(
 		SELECT
-			Count(*)
+			COUNT(*)
 		FROM
-			[Employees] [t1]
+			[Employees] [a_Employees]
 		WHERE
-			[employee].[EmployeeID] = [t1].[ReportsTo]
+			[employee].[EmployeeID] = [a_Employees].[ReportsTo]
 	) > 0
-LIMIT @take
+LIMIT 1
 

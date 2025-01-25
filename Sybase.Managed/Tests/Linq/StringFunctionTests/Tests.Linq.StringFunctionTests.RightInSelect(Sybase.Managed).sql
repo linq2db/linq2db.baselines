@@ -2,7 +2,7 @@
 -- Sybase.Managed Sybase
 
 SELECT
-	Right([p].[FirstName], 3)
+	RIGHT([p].[FirstName], 3)
 FROM
 	[Person] [p]
 WHERE

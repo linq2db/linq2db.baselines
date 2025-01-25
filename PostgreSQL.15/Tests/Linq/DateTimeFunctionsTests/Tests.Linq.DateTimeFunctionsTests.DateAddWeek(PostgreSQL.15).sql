@@ -2,7 +2,7 @@
 -- PostgreSQL.15 PostgreSQL
 
 SELECT
-	t."DateTimeValue" + -1 * Interval '1 Day' * 7
+	Date_Trunc('day', t."DateTimeValue" + (-Interval '1 Day') * 7)
 FROM
 	"LinqDataTypes" t
 

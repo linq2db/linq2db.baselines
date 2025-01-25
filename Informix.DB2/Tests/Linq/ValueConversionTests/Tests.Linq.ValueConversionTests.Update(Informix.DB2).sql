@@ -524,22 +524,16 @@ VALUES
 
 BeforeExecute
 -- Informix.DB2 Informix
-DECLARE @Value2 VarChar(21) -- String
-SET     @Value2 = '[{"Value":"updated"}]'
-DECLARE @EnumWithNull VarChar -- String
-SET     @EnumWithNull = NULL
-DECLARE @EnumWithNullDeclarative VarChar -- String
-SET     @EnumWithNullDeclarative = NULL
 
 UPDATE
-	ValueConversion
+	ValueConversion e
 SET
-	ValueConversion.Value1 = ValueConversion.Value1,
-	ValueConversion.Value2 = @Value2,
-	ValueConversion.EnumWithNull = @EnumWithNull,
-	ValueConversion.EnumWithNullDeclarative = @EnumWithNullDeclarative
+	Value1 = e.Value1,
+	Value2 = '[{"Value":"updated"}]',
+	EnumWithNull = NULL,
+	EnumWithNullDeclarative = NULL
 WHERE
-	ValueConversion.Id = 1
+	e.Id = 1
 
 BeforeExecute
 -- Informix.DB2 Informix
@@ -584,19 +578,19 @@ DECLARE @Id Integer(4) -- Int32
 SET     @Id = 2
 
 UPDATE
-	ValueConversion
+	ValueConversion t1
 SET
-	ValueConversion.Value1 = @Value1,
-	ValueConversion.Value2 = @Value2,
-	ValueConversion.Enum = @Enum,
-	ValueConversion.EnumNullable = @EnumNullable,
-	ValueConversion.EnumWithNull = @EnumWithNull,
-	ValueConversion.EnumWithNullDeclarative = @EnumWithNullDeclarative,
-	ValueConversion.BoolValue = @BoolValue,
-	ValueConversion.AnotherBoolValue = @AnotherBoolValue,
-	ValueConversion.DateTimeNullable = @DateTimeNullable
+	Value1 = @Value1,
+	Value2 = @Value2,
+	Enum = @Enum,
+	EnumNullable = @EnumNullable,
+	EnumWithNull = @EnumWithNull,
+	EnumWithNullDeclarative = @EnumWithNullDeclarative,
+	BoolValue = @BoolValue,
+	AnotherBoolValue = @AnotherBoolValue,
+	DateTimeNullable = @DateTimeNullable
 WHERE
-	ValueConversion.Id = @Id
+	t1.Id = @Id
 
 BeforeExecute
 -- Informix.DB2 Informix
@@ -641,19 +635,19 @@ DECLARE @Id Integer(4) -- Int32
 SET     @Id = 3
 
 UPDATE
-	ValueConversion
+	ValueConversion t1
 SET
-	ValueConversion.Value1 = @Value1,
-	ValueConversion.Value2 = @Value2,
-	ValueConversion.Enum = @Enum,
-	ValueConversion.EnumNullable = @EnumNullable,
-	ValueConversion.EnumWithNull = @EnumWithNull,
-	ValueConversion.EnumWithNullDeclarative = @EnumWithNullDeclarative,
-	ValueConversion.BoolValue = @BoolValue,
-	ValueConversion.AnotherBoolValue = @AnotherBoolValue,
-	ValueConversion.DateTimeNullable = @DateTimeNullable
+	Value1 = @Value1,
+	Value2 = @Value2,
+	Enum = @Enum,
+	EnumNullable = @EnumNullable,
+	EnumWithNull = @EnumWithNull,
+	EnumWithNullDeclarative = @EnumWithNullDeclarative,
+	BoolValue = @BoolValue,
+	AnotherBoolValue = @AnotherBoolValue,
+	DateTimeNullable = @DateTimeNullable
 WHERE
-	ValueConversion.Id = @Id
+	t1.Id = @Id
 
 BeforeExecute
 -- Informix.DB2 Informix

@@ -1,7 +1,5 @@
 ﻿BeforeExecute
 -- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
-DECLARE @skip Integer -- Int32
-SET     @skip = 0
 
 SELECT
 	pat."PersonID",
@@ -17,15 +15,15 @@ WHERE
 				SELECT
 					"a_Patient"."Diagnosis"
 				FROM
-					"Person" per
-						LEFT JOIN "Patient" "a_Patient" ON per."PersonID" = "a_Patient"."PersonID"
+					"Person" t1
+						LEFT JOIN "Patient" "a_Patient" ON t1."PersonID" = "a_Patient"."PersonID"
 				WHERE
-					per."PersonID" = pat."PersonID"
+					t1."PersonID" = pat."PersonID"
 				ORDER BY
-					per."FirstName" DESC
-				OFFSET :skip 
-			) t1
+					t1."FirstName" DESC
+				OFFSET 0 
+			) t2
 		WHERE
-			t1."Diagnosis" LIKE '%with%' ESCAPE '~'
+			t2."Diagnosis" LIKE '%with%' ESCAPE '~'
 	)
 

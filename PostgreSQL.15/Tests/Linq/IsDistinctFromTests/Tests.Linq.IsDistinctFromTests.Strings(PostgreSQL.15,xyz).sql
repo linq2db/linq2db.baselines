@@ -34,7 +34,7 @@ DECLARE @value Text(3) -- String
 SET     @value = 'xyz'
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	"Src" s
 WHERE
@@ -46,7 +46,7 @@ DECLARE @value Text(3) -- String
 SET     @value = 'xyz'
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	"Src" s
 WHERE
@@ -58,7 +58,7 @@ DECLARE @value Text(3) -- String
 SET     @value = 'xyz'
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	"Src" s
 WHERE
@@ -70,7 +70,7 @@ DECLARE @value Text(3) -- String
 SET     @value = 'xyz'
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	"Src" s
 WHERE

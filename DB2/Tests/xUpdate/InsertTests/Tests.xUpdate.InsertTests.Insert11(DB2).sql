@@ -2,9 +2,9 @@
 -- DB2 DB2.LUW DB2LUW
 
 SELECT
-	Max("t"."PersonID")
+	MAX("t1"."PersonID")
 FROM
-	"Person" "t"
+	"Person" "t1"
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
@@ -47,5 +47,5 @@ FROM
 	"Person" "p2"
 WHERE
 	("p2"."PersonID" > @id OR "p2"."PersonID" = 0)
-FETCH FIRST 2 ROWS ONLY
+FETCH NEXT 2 ROWS ONLY
 

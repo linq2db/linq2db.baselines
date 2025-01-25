@@ -2,8 +2,6 @@
 -- Oracle.11.Managed Oracle11
 DECLARE @ParentID Int32
 SET     @ParentID = 1
-DECLARE @take Int32
-SET     @take = 1
 
 SELECT
 	c_1."ParentID",
@@ -11,14 +9,12 @@ SELECT
 FROM
 	"Child" c_1
 WHERE
-	c_1."ParentID" = :ParentID AND ROWNUM <= :take
+	c_1."ParentID" = :ParentID AND ROWNUM <= 1
 
 BeforeExecute
 -- Oracle.11.Managed Oracle11
 DECLARE @ParentID Int32
 SET     @ParentID = 2
-DECLARE @take Int32
-SET     @take = 1
 
 SELECT
 	c_1."ParentID",
@@ -26,5 +22,5 @@ SELECT
 FROM
 	"Child" c_1
 WHERE
-	c_1."ParentID" = :ParentID AND ROWNUM <= :take
+	c_1."ParentID" = :ParentID AND ROWNUM <= 1
 

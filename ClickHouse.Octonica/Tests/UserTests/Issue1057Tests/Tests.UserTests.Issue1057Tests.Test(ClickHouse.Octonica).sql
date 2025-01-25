@@ -45,7 +45,7 @@ INSERT INTO Task
 )
 VALUES
 (
-	toInt32(1),
+	1,
 	'bda.Requests'
 )
 
@@ -59,7 +59,7 @@ INSERT INTO Task
 )
 VALUES
 (
-	toInt32(2),
+	2,
 	'None'
 )
 
@@ -74,8 +74,8 @@ INSERT INTO TaskStage
 )
 VALUES
 (
-	toInt32(2),
-	toInt32(1),
+	2,
+	1,
 	true
 )
 

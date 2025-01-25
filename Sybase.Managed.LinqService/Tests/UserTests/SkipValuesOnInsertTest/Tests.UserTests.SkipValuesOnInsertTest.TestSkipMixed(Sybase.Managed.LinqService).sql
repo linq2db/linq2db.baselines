@@ -63,11 +63,9 @@ SET     @Id = 1
 UPDATE
 	[PR_1598_Mixed_Table]
 SET
-	[t1].[Age] = @Age
-FROM
-	[PR_1598_Mixed_Table] [t1]
+	[Age] = @Age
 WHERE
-	[t1].[Id] = @Id
+	[PR_1598_Mixed_Table].[Id] = @Id
 
 BeforeExecute
 -- Sybase.Managed Sybase
@@ -123,12 +121,10 @@ SET     @Id = 2
 UPDATE
 	[PR_1598_Mixed_Table]
 SET
-	[t1].[Name] = @Name,
-	[t1].[Age] = @Age
-FROM
-	[PR_1598_Mixed_Table] [t1]
+	[Name] = @Name,
+	[Age] = @Age
 WHERE
-	[t1].[Id] = @Id
+	[PR_1598_Mixed_Table].[Id] = @Id
 
 BeforeExecute
 -- Sybase.Managed Sybase

@@ -2,7 +2,7 @@
 -- ClickHouse.Client ClickHouse
 
 SELECT
-	QUARTER(t.DateTimeValue)
+	toQuarter(t.DateTimeValue)
 FROM
 	LinqDataTypes t
 

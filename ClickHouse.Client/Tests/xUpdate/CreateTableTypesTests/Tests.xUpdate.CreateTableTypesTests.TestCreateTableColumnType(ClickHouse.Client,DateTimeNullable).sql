@@ -23,7 +23,7 @@ INSERT INTO CreateTableTypes
 )
 VALUES
 (
-	toInt32(1),
+	1,
 	NULL
 )
 
@@ -37,7 +37,7 @@ INSERT INTO CreateTableTypes
 )
 VALUES
 (
-	toInt32(2),
+	2,
 	toDateTime64('2018-11-25 01:02:03.0000000', 7)
 )
 

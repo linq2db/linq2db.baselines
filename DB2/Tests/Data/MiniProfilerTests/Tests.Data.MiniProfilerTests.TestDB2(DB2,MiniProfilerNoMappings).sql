@@ -1057,9 +1057,9 @@ BeforeExecute
 --  DB2.LUW DB2LUW
 
 DELETE FROM
-	ALLTYPES "t1"
+	ALLTYPES "p"
 WHERE
-	"t1".ID >= 2000
+	"p".ID >= 2000
 
 BeforeExecute
 --  DB2.LUW DB2LUW

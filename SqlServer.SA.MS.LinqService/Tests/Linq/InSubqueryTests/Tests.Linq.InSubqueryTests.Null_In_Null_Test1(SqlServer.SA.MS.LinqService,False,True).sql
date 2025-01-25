@@ -114,31 +114,18 @@ BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
 
 SELECT
-	[t1].[ID]
-FROM
-	[test_in_1] [t1]
-
-BeforeExecute
--- SqlServer.SA.MS SqlServer.2019
-
-SELECT
 	[t].[ID]
 FROM
 	[test_in_1] [t]
 WHERE
-	([t].[ID] IS NULL AND 1 IN (
+	EXISTS(
 		SELECT
-			1
+			*
 		FROM
 			[test_in_2] [p]
 		WHERE
-			[p].[ID] IS NULL
-	) OR [t].[ID] IS NOT NULL AND [t].[ID] IN (
-		SELECT
-			[p].[ID]
-		FROM
-			[test_in_2] [p]
-	))
+			([t].[ID] = [p].[ID] OR [t].[ID] IS NULL AND [p].[ID] IS NULL)
+	)
 
 BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
@@ -146,15 +133,7 @@ BeforeExecute
 SELECT
 	[t1].[ID]
 FROM
-	[test_in_2] [t1]
-
-BeforeExecute
--- SqlServer.SA.MS SqlServer.2019
-
-SELECT
-	[t1].[ID]
-FROM
-	[test_in_2] [t1]
+	[test_in_1] [t1]
 
 BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019

@@ -32,11 +32,11 @@ BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT
-	k_1.StatusBitmask,
-	joinedTable.StatusBitmask
+	BitAnd(t1.StatusBitmask, 128),
+	BitAnd(g_1.StatusBitmask, 128)
 FROM
-	i1084_person k_1
-		LEFT JOIN i1084_student joinedTable ON k_1.Id = joinedTable.Id AND (To_Char(k_1."Number") = joinedTable."Number" OR To_Char(k_1."Number") IS NULL AND joinedTable."Number" IS NULL)
+	i1084_person t1
+		LEFT JOIN i1084_student g_1 ON t1.Id = g_1.Id AND To_Char(t1."Number") = g_1."Number"
 
 BeforeExecute
 -- Informix.DB2 Informix

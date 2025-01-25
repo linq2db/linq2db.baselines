@@ -2,7 +2,7 @@
 -- Sybase.Managed Sybase
 
 SELECT
-	Min([p].[ParentID])
+	MIN([t1].[ParentID])
 FROM
-	[Parent] [p]
+	[Parent] [t1]
 

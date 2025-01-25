@@ -52,50 +52,42 @@ SELECT 600,'Three',5,5
 BeforeExecute
 -- Sybase.Managed Sybase
 
-SELECT TOP 3
+SELECT DISTINCT TOP 3
 	[x].[DuplicateData]
 FROM
 	[OrderByDistinctData] [x]
-GROUP BY
-	[x].[DuplicateData]
-ORDER BY
-	Min([x].[OrderData1])
 
 BeforeExecute
 -- Sybase.Managed Sybase
 
 SELECT TOP 3
+	[g_1].[DuplicateData]
+FROM
+	[OrderByDistinctData] [g_1]
+GROUP BY
+	[g_1].[DuplicateData]
+ORDER BY
+	MAX([g_1].[OrderData1])
+
+BeforeExecute
+-- Sybase.Managed Sybase
+
+SELECT DISTINCT TOP 3
 	[x].[DuplicateData]
 FROM
 	[OrderByDistinctData] [x]
-GROUP BY
-	[x].[DuplicateData]
-ORDER BY
-	Max([x].[OrderData1])
 
 BeforeExecute
 -- Sybase.Managed Sybase
 
 SELECT TOP 3
-	[x].[DuplicateData]
+	[g_1].[DuplicateData]
 FROM
-	[OrderByDistinctData] [x]
+	[OrderByDistinctData] [g_1]
 GROUP BY
-	[x].[DuplicateData]
+	[g_1].[DuplicateData]
 ORDER BY
-	Max([x].[OrderData1]) DESC
-
-BeforeExecute
--- Sybase.Managed Sybase
-
-SELECT TOP 3
-	[x].[DuplicateData]
-FROM
-	[OrderByDistinctData] [x]
-GROUP BY
-	[x].[DuplicateData]
-ORDER BY
-	Min([x].[OrderData1]) DESC
+	MIN([g_1].[OrderData1]) DESC
 
 BeforeExecute
 -- Sybase.Managed Sybase

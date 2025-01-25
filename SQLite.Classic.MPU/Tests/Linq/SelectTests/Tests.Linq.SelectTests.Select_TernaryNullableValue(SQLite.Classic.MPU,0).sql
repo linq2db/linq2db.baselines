@@ -1,8 +1,11 @@
 ﻿BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @Value  -- Int32
-SET     @Value = 0
+DECLARE @value  -- Int32
+SET     @value = 0
+DECLARE @value_1  -- Int32
+SET     @value_1 = 0
 
 SELECT
-	@Value
+	@value,
+	@value_1
 

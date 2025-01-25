@@ -64,8 +64,8 @@ BeforeExecute
 
 SELECT
 	[t1].[Id],
-	[t1].[BaseValue],
-	[t1].[Value]
+	[t1].[Value],
+	[t1].[BaseValue]
 FROM
 	[Record] [t1]
 ORDER BY

@@ -2,9 +2,14 @@
 -- Informix.DB2 Informix
 
 SELECT
-	Ceil(p.MoneyValue)
+	t_1.c1
 FROM
-	LinqDataTypes p
+	(
+		SELECT
+			Ceil(t.MoneyValue) as c1
+		FROM
+			LinqDataTypes t
+	) t_1
 WHERE
-	Ceil(p.MoneyValue) <> 0
+	t_1.c1 <> 0
 

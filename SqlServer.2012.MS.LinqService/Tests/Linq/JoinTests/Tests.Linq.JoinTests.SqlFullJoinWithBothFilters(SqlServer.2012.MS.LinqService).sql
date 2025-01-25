@@ -7,14 +7,11 @@ SET     @id2 = 2
 
 SELECT
 	[left_1].[ParentID],
-	[left_1].[Value1],
-	[t1].[ParentID],
-	[t1].[Value1]
+	[right_2].[ParentID]
 FROM
 	(
 		SELECT
-			[p].[ParentID],
-			[p].[Value1]
+			[p].[ParentID]
 		FROM
 			[Parent] [p]
 		WHERE
@@ -22,13 +19,12 @@ FROM
 	) [left_1]
 		FULL JOIN (
 			SELECT
-				[p_1].[ParentID],
-				[p_1].[Value1]
+				[right_1].[ParentID]
 			FROM
-				[Parent] [p_1]
+				[Parent] [right_1]
 			WHERE
-				[p_1].[ParentID] <> @id2
-		) [t1] ON [t1].[ParentID] = [left_1].[ParentID]
+				[right_1].[ParentID] <> @id2
+		) [right_2] ON [right_2].[ParentID] = [left_1].[ParentID]
 ORDER BY
 	[left_1].[ParentID]
 

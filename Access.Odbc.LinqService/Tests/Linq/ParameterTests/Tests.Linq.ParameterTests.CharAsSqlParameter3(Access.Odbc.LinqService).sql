@@ -1,6 +1,8 @@
 ﻿BeforeExecute
 -- Access.Odbc AccessODBC
+DECLARE @s1 NVarChar(1) -- String
+SET     @s1 = chr(0)
 
 SELECT
-	chr(0)
+	CVar(?)
 

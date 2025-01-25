@@ -51,8 +51,6 @@ VALUES
 
 BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12
-DECLARE @take Int32
-SET     @take = 1
 
 SELECT
 	t."Id",
@@ -62,7 +60,7 @@ FROM
 	"PR_1598_Insert_Fluent_Table" t
 WHERE
 	t."Id" = 1
-FETCH NEXT :take ROWS ONLY
+FETCH NEXT 1 ROWS ONLY
 
 BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12

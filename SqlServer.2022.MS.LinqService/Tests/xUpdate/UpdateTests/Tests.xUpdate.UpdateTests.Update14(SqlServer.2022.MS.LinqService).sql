@@ -32,21 +32,19 @@ DECLARE @idx Int -- Int32
 SET     @idx = 4
 
 UPDATE
-	[_]
+	[Person]
 SET
-	[_].[LastName] = Convert(NVarChar(11), Len(@name) + @idx)
-FROM
-	[Person] [_]
+	[LastName] = CAST(Len(@name) + @idx AS NVarChar(11))
 WHERE
-	[_].[FirstName] LIKE N'Update14%' ESCAPE N'~'
+	[Person].[FirstName] LIKE N'Update14%' ESCAPE N'~'
 
 BeforeExecute
 -- SqlServer.2022.MS SqlServer.2022
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
-	[Person] [_]
+	[Person] [t1]
 WHERE
-	[_].[FirstName] LIKE N'Update14%' ESCAPE N'~'
+	[t1].[FirstName] LIKE N'Update14%' ESCAPE N'~'
 

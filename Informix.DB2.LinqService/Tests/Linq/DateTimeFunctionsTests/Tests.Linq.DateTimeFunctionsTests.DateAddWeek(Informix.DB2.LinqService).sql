@@ -2,7 +2,7 @@
 -- Informix.DB2 Informix
 
 SELECT
-	t.DateTimeValue + Interval(-1) Day to Day * 7
+	Extend(t.DateTimeValue + Interval (-1) Day to Day * 7, Year to Day)
 FROM
 	LinqDataTypes t
 

@@ -10,5 +10,5 @@ SELECT
 FROM
 	Person p
 WHERE
-	leftUTF8(p.FirstName, toInt32(2)) = 'Jo' AND p.PersonID = toInt32(1)
+	leftUTF8(p.FirstName, 2) = 'Jo' AND p.PersonID = 1
 

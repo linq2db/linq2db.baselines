@@ -29,8 +29,8 @@ INSERT INTO EventScheduleItem
 	ParentEventScheduleItemId
 )
 VALUES
-(toInt32(1),toInt32(1),true,toInt32(1)),
-(toInt32(2),toInt32(2),true,toInt32(2))
+(1,1,true,1),
+(2,2,true,2)
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -58,8 +58,8 @@ INSERT INTO EventScheduleItemPerson
 	EventScheduleItemId
 )
 VALUES
-(toInt32(1),toInt32(1),toInt32(1)),
-(toInt32(2),toInt32(2),toInt32(2))
+(1,1,1),
+(2,2,2)
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -85,23 +85,23 @@ INSERT INTO EventSchedulePerson
 	TicketNumberId
 )
 VALUES
-(toInt32(1),toInt32(1)),
-(toInt32(2),toInt32(2))
+(1,1),
+(2,2)
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
-	p.Id,
-	detail.EventSchedulePersonId,
-	detail.Id,
+	m_1.Id,
+	d.EventSchedulePersonId,
+	d.Id,
 	a_Person.TicketNumberId
 FROM
-	EventScheduleItem p
-		INNER JOIN EventScheduleItemPerson detail ON p.Id = detail.EventScheduleItemId
-		LEFT JOIN EventSchedulePerson a_Person ON detail.EventSchedulePersonId = a_Person.Id
+	EventScheduleItem m_1
+		INNER JOIN EventScheduleItemPerson d ON m_1.Id = d.EventScheduleItemId
+		LEFT JOIN EventSchedulePerson a_Person ON d.EventSchedulePersonId = a_Person.Id
 WHERE
-	p.EventId = toInt32(1) AND p.IsActive = true
+	m_1.EventId = 1 AND m_1.IsActive = true
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -111,7 +111,7 @@ SELECT
 FROM
 	EventScheduleItem p
 WHERE
-	p.EventId = toInt32(1) AND p.IsActive = true
+	p.EventId = 1 AND p.IsActive = true
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse

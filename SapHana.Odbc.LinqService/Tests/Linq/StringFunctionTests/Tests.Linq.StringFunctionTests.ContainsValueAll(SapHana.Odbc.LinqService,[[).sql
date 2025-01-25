@@ -4,7 +4,7 @@ DECLARE @s NVarChar(8) -- String
 SET     @s = '123[[456'
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	"Person" "p"
 WHERE
@@ -16,7 +16,7 @@ DECLARE @s NVarChar(8) -- String
 SET     @s = '123[[456'
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	"Person" "p"
 WHERE

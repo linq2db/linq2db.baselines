@@ -146,7 +146,7 @@ SELECT
 FROM
 	"StringTest" t1
 WHERE
-	(:value = t1."StringValue1" OR t1."StringValue1" IS NULL)
+	(t1."StringValue1" = :value OR t1."StringValue1" IS NULL)
 
 BeforeExecute
 -- Oracle.11.Managed Oracle11
@@ -160,7 +160,7 @@ SELECT
 FROM
 	"StringTest" t1
 WHERE
-	(:value = t1."StringValue1" OR t1."StringValue1" IS NULL)
+	(t1."StringValue1" = :value OR t1."StringValue1" IS NULL)
 
 BeforeExecute
 -- Oracle.11.Managed Oracle11
@@ -174,7 +174,7 @@ SELECT
 FROM
 	"StringTest" t1
 WHERE
-	(:value = t1."StringValue2" OR t1."StringValue2" IS NULL)
+	(t1."StringValue2" = :value OR t1."StringValue2" IS NULL)
 
 BeforeExecute
 -- Oracle.11.Managed Oracle11
@@ -188,7 +188,7 @@ SELECT
 FROM
 	"StringTest" t1
 WHERE
-	(:value = t1."StringValue2" OR t1."StringValue2" IS NULL)
+	(t1."StringValue2" = :value OR t1."StringValue2" IS NULL)
 
 BeforeExecute
 -- Oracle.11.Managed Oracle11

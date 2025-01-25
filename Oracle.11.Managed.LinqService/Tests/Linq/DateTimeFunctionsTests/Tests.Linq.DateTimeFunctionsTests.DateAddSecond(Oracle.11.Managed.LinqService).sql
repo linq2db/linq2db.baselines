@@ -2,7 +2,7 @@
 -- Oracle.11.Managed Oracle11
 
 SELECT
-	t."DateTimeValue" + 41 * INTERVAL '1' SECOND
+	EXTRACT(SECOND FROM (t."DateTimeValue" + 41 * INTERVAL '1' SECOND))
 FROM
 	"LinqDataTypes" t
 

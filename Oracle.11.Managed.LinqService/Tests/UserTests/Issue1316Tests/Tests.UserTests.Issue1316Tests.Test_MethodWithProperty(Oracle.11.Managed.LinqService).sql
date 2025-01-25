@@ -47,15 +47,13 @@ BeforeExecute
 -- Oracle.11.Managed Oracle11
 DECLARE @Item1 Int32
 SET     @Item1 = 5
-DECLARE @take Int32
-SET     @take = 2
 
 SELECT
 	t1.ID
 FROM
 	"Issue1316Tests" t1
 WHERE
-	t1.ID = :Item1 AND ROWNUM <= :take
+	t1.ID = :Item1 AND ROWNUM <= 2
 
 BeforeExecute
 -- Oracle.11.Managed Oracle11

@@ -2,20 +2,20 @@
 -- SqlServer.2019.MS SqlServer.2019
 
 SELECT
-	[g_1].[Value1]
+	[g_2].[Value1]
 FROM
 	(
 		SELECT
-			Count(*) as [c1],
+			COUNT(*) as [COUNT_1],
 			[a_Parent].[ParentID],
 			[a_Parent].[Value1]
 		FROM
-			[GrandChild] [t1]
-				INNER JOIN [Parent] [a_Parent] ON [t1].[ParentID] = [a_Parent].[ParentID]
+			[GrandChild] [g_1]
+				INNER JOIN [Parent] [a_Parent] ON [g_1].[ParentID] = [a_Parent].[ParentID]
 		GROUP BY
 			[a_Parent].[ParentID],
 			[a_Parent].[Value1]
-	) [g_1]
+	) [g_2]
 WHERE
-	[g_1].[c1] > 2 AND [g_1].[ParentID] <> 1
+	[g_2].[COUNT_1] > 2 AND [g_2].[ParentID] <> 1
 

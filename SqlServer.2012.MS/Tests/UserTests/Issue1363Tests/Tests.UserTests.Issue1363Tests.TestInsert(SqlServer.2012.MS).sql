@@ -29,11 +29,11 @@ VALUES
 	@id,
 	(
 		SELECT
-			[_].[required_field]
+			[t1].[required_field]
 		FROM
-			[Issue1363] [_]
+			[Issue1363] [t1]
 		WHERE
-			[_].[required_field] IS NULL
+			1 = 0
 	)
 )
 
@@ -54,28 +54,26 @@ VALUES
 	@id,
 	(
 		SELECT
-			[_].[required_field]
+			[t1].[required_field]
 		FROM
-			[Issue1363] [_]
+			[Issue1363] [t1]
 		WHERE
-			[_].[required_field] = @testId
+			[t1].[required_field] = @testId
 	)
 )
 
 BeforeExecute
 -- SqlServer.2012.MS SqlServer.2012
-DECLARE @take Int -- Int32
-SET     @take = 2
 DECLARE @id2 UniqueIdentifier -- Guid
 SET     @id2 = 'a948600d-de21-4f74-8ac2-9516b287076e'
 
-SELECT TOP (@take)
-	[_].[required_field],
-	[_].[optional_field]
+SELECT TOP (2)
+	[t1].[required_field],
+	[t1].[optional_field]
 FROM
-	[Issue1363] [_]
+	[Issue1363] [t1]
 WHERE
-	[_].[required_field] = @id2
+	[t1].[required_field] = @id2
 
 BeforeExecute
 -- SqlServer.2012.MS SqlServer.2012

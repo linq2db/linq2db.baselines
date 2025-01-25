@@ -1,19 +1,14 @@
 ﻿BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12
-DECLARE @take Int32
-SET     @take = 1
 
 SELECT
-	t1."ParentID",
-	t1."c1"
+	(
+		SELECT
+			c_1."ParentID" + 1
+		FROM
+			"Child" c_1
+		FETCH NEXT 1 ROWS ONLY
+	)
 FROM
 	"Parent" p
-		OUTER APPLY (
-			SELECT
-				c_1."ParentID" + 1 as "c1",
-				c_1."ParentID"
-			FROM
-				"Child" c_1
-			FETCH NEXT :take ROWS ONLY
-		) t1
 

@@ -46,7 +46,7 @@ USING (SELECT @PersonID AS [PersonID]) [s] ON
 WHEN MATCHED THEN
 	UPDATE 
 	SET
-		[t1].[Diagnosis] = @Diagnosis
+		[Diagnosis] = @Diagnosis
 WHEN NOT MATCHED THEN
 	INSERT
 	(
@@ -74,7 +74,7 @@ USING (SELECT @PersonID AS [PersonID]) [s] ON
 WHEN MATCHED THEN
 	UPDATE 
 	SET
-		[t1].[Diagnosis] = @Diagnosis
+		[Diagnosis] = @Diagnosis
 WHEN NOT MATCHED THEN
 	INSERT
 	(
@@ -102,7 +102,7 @@ USING (SELECT @PersonID AS [PersonID]) [s] ON
 WHEN MATCHED THEN
 	UPDATE 
 	SET
-		[t1].[Diagnosis] = @Diagnosis
+		[Diagnosis] = @Diagnosis
 WHEN NOT MATCHED THEN
 	INSERT
 	(
@@ -117,12 +117,10 @@ WHEN NOT MATCHED THEN
 
 BeforeExecute
 -- SqlServer.2019.MS SqlServer.2019
-DECLARE @take Int -- Int32
-SET     @take = 2
 DECLARE @id Int -- Int32
 SET     @id = 5
 
-SELECT TOP (@take)
+SELECT TOP (2)
 	[p].[PersonID],
 	[p].[Diagnosis]
 FROM

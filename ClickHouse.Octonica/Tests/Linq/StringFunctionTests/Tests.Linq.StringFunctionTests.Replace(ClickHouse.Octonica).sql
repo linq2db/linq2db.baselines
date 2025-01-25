@@ -10,5 +10,5 @@ SELECT
 FROM
 	Person p
 WHERE
-	Replace(p.FirstName, 'hn', 'lie') = 'Jolie' AND p.PersonID = toInt32(1)
+	Replace(p.FirstName, 'hn', 'lie') = 'Jolie' AND p.PersonID = 1
 

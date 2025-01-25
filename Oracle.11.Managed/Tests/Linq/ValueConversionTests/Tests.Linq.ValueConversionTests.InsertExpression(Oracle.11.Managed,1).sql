@@ -76,8 +76,6 @@ BeforeExecute
 -- Oracle.11.Managed Oracle11
 DECLARE @iteration Int32
 SET     @iteration = 1
-DECLARE @take Int32
-SET     @take = 2
 
 SELECT
 	e."Id",
@@ -93,7 +91,7 @@ SELECT
 FROM
 	"ValueConversion" e
 WHERE
-	e."Id" = :iteration AND ROWNUM <= :take
+	e."Id" = :iteration AND ROWNUM <= 2
 
 BeforeExecute
 -- Oracle.11.Managed Oracle11

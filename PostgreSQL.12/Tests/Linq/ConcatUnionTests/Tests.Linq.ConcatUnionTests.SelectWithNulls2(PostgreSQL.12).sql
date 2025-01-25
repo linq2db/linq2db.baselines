@@ -16,16 +16,16 @@ FROM
 	"LinqDataTypes" t1
 UNION ALL
 SELECT
-	Cast(NULL as Int),
-	Cast(NULL as decimal),
-	Cast(NULL as TimeStamp),
-	Cast(NULL as TimeStamp),
-	Cast(NULL as Boolean),
-	Cast(NULL as uuid),
-	Cast(NULL as SmallInt),
-	Cast(NULL as Int),
-	Cast(NULL as BigInt),
-	Cast(NULL as text)
+	NULL::Int,
+	NULL::decimal,
+	NULL::TimeStamp,
+	NULL::TimeStamp,
+	NULL,
+	NULL::uuid,
+	NULL::SmallInt,
+	NULL::Int,
+	NULL::BigInt,
+	NULL::text
 FROM
 	"LinqDataTypes" d
 

@@ -1,35 +1,26 @@
 ﻿BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-DECLARE @take  -- Int32
-SET     @take = 1
 
 SELECT
-	[lw_Issue3975TestClass].[ParentID],
-	[detail].[ParentID],
-	[detail].[ChildID]
+	[m_1].[ParentID],
+	[d].[ParentID],
+	[d].[ChildID]
 FROM
 	(
-		SELECT DISTINCT
-			[t2].[ParentID]
+		SELECT
+			[t1].[ParentID]
 		FROM
-			(
-				SELECT
-					[t1].[ParentID]
-				FROM
-					[Parent] [t1]
-				LIMIT @take
-			) [t2]
-	) [lw_Issue3975TestClass]
-		INNER JOIN [Child] [detail] ON [lw_Issue3975TestClass].[ParentID] = [detail].[ParentID]
+			[Parent] [t1]
+		LIMIT 1
+	) [m_1]
+		INNER JOIN [Child] [d] ON [m_1].[ParentID] = [d].[ParentID]
 
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-DECLARE @take  -- Int32
-SET     @take = 1
 
 SELECT
 	[t1].[ParentID]
 FROM
 	[Parent] [t1]
-LIMIT @take
+LIMIT 1
 

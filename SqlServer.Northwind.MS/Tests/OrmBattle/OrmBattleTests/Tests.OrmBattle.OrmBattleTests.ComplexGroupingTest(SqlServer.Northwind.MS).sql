@@ -1,108 +1,176 @@
 ﻿BeforeExecute
--- SqlServer.Northwind.MS SqlServer.2019
-
-SELECT
-	[t1].[CustomerID],
-	[t1].[CompanyName],
-	[t1].[ContactName],
-	[t1].[ContactTitle],
-	[t1].[Address],
-	[t1].[City],
-	[t1].[Region],
-	[t1].[PostalCode],
-	[t1].[Country],
-	[t1].[Phone],
-	[t1].[Fax]
-FROM
-	[Customers] [t1]
-
-BeforeExecute
--- SqlServer.Northwind.MS SqlServer.2019
-
-SELECT
-	[t1].[EmployeeID],
-	[t1].[LastName],
-	[t1].[FirstName],
-	[t1].[Title],
-	[t1].[TitleOfCourtesy],
-	[t1].[BirthDate],
-	[t1].[HireDate],
-	[t1].[Address],
-	[t1].[City],
-	[t1].[Region],
-	[t1].[PostalCode],
-	[t1].[Country],
-	[t1].[HomePhone],
-	[t1].[Extension],
-	[t1].[Photo],
-	[t1].[Notes],
-	[t1].[ReportsTo],
-	[t1].[PhotoPath]
-FROM
-	[Employees] [t1]
-
-BeforeExecute
--- SqlServer.Northwind.MS SqlServer.2019
-
-SELECT
-	[t1].[OrderID],
-	[t1].[CustomerID],
-	[t1].[EmployeeID],
-	[t1].[OrderDate],
-	[t1].[RequiredDate],
-	[t1].[ShippedDate],
-	[t1].[ShipVia],
-	[t1].[Freight],
-	[t1].[ShipName],
-	[t1].[ShipAddress],
-	[t1].[ShipCity],
-	[t1].[ShipRegion],
-	[t1].[ShipPostalCode],
-	[t1].[ShipCountry]
-FROM
-	[Orders] [t1]
-
-BeforeExecute
--- SqlServer.Northwind.MS SqlServer.2019
-
-SELECT
-	[t1].[ProductID],
-	[t1].[ProductName],
-	[t1].[SupplierID],
-	[t1].[CategoryID],
-	[t1].[QuantityPerUnit],
-	[t1].[UnitPrice],
-	[t1].[UnitsInStock],
-	[t1].[UnitsOnOrder],
-	[t1].[ReorderLevel],
-	[t1].[Discontinued]
-FROM
-	[Products] [t1]
-
-BeforeExecute
 BeginTransaction(RepeatableRead)
 BeforeExecute
 -- SqlServer.Northwind.MS SqlServer.2019
 
 SELECT
-	[c_1].[CustomerID],
-	[detail].[OrderDate],
-	[detail].[OrderID],
-	[detail].[CustomerID],
-	[detail].[EmployeeID],
-	[detail].[RequiredDate],
-	[detail].[ShippedDate],
-	[detail].[ShipVia],
-	[detail].[Freight],
-	[detail].[ShipName],
-	[detail].[ShipAddress],
-	[detail].[ShipCity],
-	[detail].[ShipRegion],
-	[detail].[ShipPostalCode],
-	[detail].[ShipCountry]
+	[m_1].[CustomerID],
+	[m_1].[Year_1],
+	[m_1].[Month_1],
+	[d_4].[OrderID],
+	[d_4].[CustomerID],
+	[d_4].[EmployeeID],
+	[d_4].[OrderDate],
+	[d_4].[RequiredDate],
+	[d_4].[ShippedDate],
+	[d_4].[ShipVia],
+	[d_4].[Freight],
+	[d_4].[ShipName],
+	[d_4].[ShipAddress],
+	[d_4].[ShipCity],
+	[d_4].[ShipRegion],
+	[d_4].[ShipPostalCode],
+	[d_4].[ShipCountry]
 FROM
-	[Customers] [c_1]
-		INNER JOIN [Orders] [detail] ON ([c_1].[CustomerID] = [detail].[CustomerID] OR [c_1].[CustomerID] IS NULL AND [detail].[CustomerID] IS NULL)
+	(
+		SELECT DISTINCT
+			[t2].[CustomerID],
+			[t2].[Year_1],
+			[d_3].[Month_1]
+		FROM
+			(
+				SELECT DISTINCT
+					[t1].[CustomerID],
+					[d_1].[Year_1]
+				FROM
+					(
+						SELECT DISTINCT
+							[c_1].[CustomerID]
+						FROM
+							[Customers] [c_1]
+					) [t1]
+						CROSS APPLY (
+							SELECT
+								[d].[Year_1]
+							FROM
+								(
+									SELECT
+										DatePart(year, [yg].[OrderDate]) as [Year_1]
+									FROM
+										[Orders] [yg]
+									WHERE
+										[t1].[CustomerID] = [yg].[CustomerID]
+								) [d]
+							GROUP BY
+								[d].[Year_1]
+						) [d_1]
+			) [t2]
+				CROSS APPLY (
+					SELECT
+						[d_2].[Month_2] as [Month_1]
+					FROM
+						(
+							SELECT
+								[mg].[Month_1],
+								DatePart(month, [mg].[OrderDate]) as [Month_2]
+							FROM
+								(
+									SELECT
+										DatePart(year, [a_Orders].[OrderDate]) as [Year_1],
+										DatePart(month, [a_Orders].[OrderDate]) as [Month_1],
+										[a_Orders].[OrderDate]
+									FROM
+										[Orders] [a_Orders]
+									WHERE
+										[t2].[CustomerID] = [a_Orders].[CustomerID]
+								) [mg]
+							WHERE
+								([t2].[Year_1] = [mg].[Year_1] OR [t2].[Year_1] IS NULL AND [mg].[Year_1] IS NULL)
+						) [d_2]
+					GROUP BY
+						[d_2].[Month_1],
+						[d_2].[Month_2]
+				) [d_3]
+	) [m_1]
+		INNER JOIN [Orders] [d_4] ON [m_1].[CustomerID] = [d_4].[CustomerID] AND ([m_1].[Year_1] = DatePart(year, [d_4].[OrderDate]) OR [m_1].[Year_1] IS NULL AND DatePart(year, [d_4].[OrderDate]) IS NULL) AND ([m_1].[Month_1] = DatePart(month, [d_4].[OrderDate]) OR [m_1].[Month_1] IS NULL AND DatePart(month, [d_4].[OrderDate]) IS NULL)
+
+BeforeExecute
+-- SqlServer.Northwind.MS SqlServer.2019
+
+SELECT
+	[m_1].[CustomerID],
+	[m_1].[Year_1],
+	[d_3].[Month_1],
+	[d_3].[Month_2]
+FROM
+	(
+		SELECT DISTINCT
+			[t1].[CustomerID],
+			[d_1].[Year_1]
+		FROM
+			(
+				SELECT DISTINCT
+					[c_1].[CustomerID]
+				FROM
+					[Customers] [c_1]
+			) [t1]
+				CROSS APPLY (
+					SELECT
+						[d].[Year_1]
+					FROM
+						(
+							SELECT
+								DatePart(year, [yg].[OrderDate]) as [Year_1]
+							FROM
+								[Orders] [yg]
+							WHERE
+								[t1].[CustomerID] = [yg].[CustomerID]
+						) [d]
+					GROUP BY
+						[d].[Year_1]
+				) [d_1]
+	) [m_1]
+		CROSS APPLY (
+			SELECT
+				[d_2].[Month_1],
+				[d_2].[Month_2]
+			FROM
+				(
+					SELECT
+						[mg].[Month_1],
+						DatePart(month, [mg].[OrderDate]) as [Month_2]
+					FROM
+						(
+							SELECT
+								DatePart(year, [a_Orders].[OrderDate]) as [Year_1],
+								DatePart(month, [a_Orders].[OrderDate]) as [Month_1],
+								[a_Orders].[OrderDate]
+							FROM
+								[Orders] [a_Orders]
+							WHERE
+								[m_1].[CustomerID] = [a_Orders].[CustomerID]
+						) [mg]
+					WHERE
+						([m_1].[Year_1] = [mg].[Year_1] OR [m_1].[Year_1] IS NULL AND [mg].[Year_1] IS NULL)
+				) [d_2]
+			GROUP BY
+				[d_2].[Month_1],
+				[d_2].[Month_2]
+		) [d_3]
+
+BeforeExecute
+-- SqlServer.Northwind.MS SqlServer.2019
+
+SELECT
+	[m_1].[CustomerID],
+	[d_1].[Year_1]
+FROM
+	[Customers] [m_1]
+		CROSS APPLY (
+			SELECT
+				[d].[Year_1]
+			FROM
+				(
+					SELECT
+						DatePart(year, [yg].[OrderDate]) as [Year_1]
+					FROM
+						[Orders] [yg]
+					WHERE
+						[m_1].[CustomerID] = [yg].[CustomerID]
+				) [d]
+			GROUP BY
+				[d].[Year_1]
+		) [d_1]
 
 BeforeExecute
 DisposeTransaction

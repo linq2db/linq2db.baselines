@@ -46,7 +46,7 @@ BeforeExecute
 -- Access AccessOleDb
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	[InheritanceParent] [t1]
 
@@ -68,7 +68,7 @@ BeforeExecute
 -- Access AccessOleDb
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	[InheritanceParent] [t1]
 

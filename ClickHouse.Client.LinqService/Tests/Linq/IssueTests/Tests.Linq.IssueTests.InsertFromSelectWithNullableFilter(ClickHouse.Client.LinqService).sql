@@ -8,17 +8,17 @@ INSERT INTO AllTypes
 )
 SELECT
 	toInt16(123),
-	toInt32(t1.smallintDataType)
+	toInt32(t2.ID)
 FROM
 	(
 		SELECT DISTINCT
-			c_1.smallintDataType as smallintDataType
+			a_Association.smallintDataType as ID
 		FROM
-			AllTypes _
-				INNER JOIN AllTypes c_1 ON _.smallintDataType = c_1.intDataType
+			AllTypes t1
+				INNER JOIN AllTypes a_Association ON t1.smallintDataType = a_Association.intDataType
 		WHERE
-			toInt32(_.smallintDataType) IS NULL
-	) t1
+			1 = 0
+	) t2
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
@@ -30,15 +30,15 @@ INSERT INTO AllTypes
 )
 SELECT
 	toInt16(123),
-	toInt32(t1.smallintDataType)
+	toInt32(t2.ID)
 FROM
 	(
 		SELECT DISTINCT
-			c_1.smallintDataType as smallintDataType
+			a_Association.smallintDataType as ID
 		FROM
-			AllTypes _
-				INNER JOIN AllTypes c_1 ON _.smallintDataType = c_1.intDataType
+			AllTypes t1
+				INNER JOIN AllTypes a_Association ON t1.smallintDataType = a_Association.intDataType
 		WHERE
-			toInt32(_.smallintDataType) = toInt16(1234)
-	) t1
+			toInt32(t1.smallintDataType) = toInt16(1234)
+	) t2
 

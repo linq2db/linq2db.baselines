@@ -54,8 +54,8 @@ INSERT INTO "TrimTestTable"
 )
 VALUES
 (
-	@ID,
-	@Data
+	CAST(@ID AS Int),
+	CAST(@Data AS NVarChar(9))
 )
 
 BeforeExecute

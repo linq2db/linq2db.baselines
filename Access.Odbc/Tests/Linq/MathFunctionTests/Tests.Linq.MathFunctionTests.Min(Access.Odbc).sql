@@ -2,14 +2,14 @@
 -- Access.Odbc AccessODBC
 
 SELECT
-	[t].[c1]
+	[t_1].[c1]
 FROM
 	(
 		SELECT
-			Iif([p].[MoneyValue] < 5, [p].[MoneyValue], 5) as [c1]
+			IIF([t].[MoneyValue] <= 5, [t].[MoneyValue], 5) as [c1]
 		FROM
-			[LinqDataTypes] [p]
-	) [t]
+			[LinqDataTypes] [t]
+	) [t_1]
 WHERE
-	[t].[c1] <> 0
+	[t_1].[c1] <> 0
 

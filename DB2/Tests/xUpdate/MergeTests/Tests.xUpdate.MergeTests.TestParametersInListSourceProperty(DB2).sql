@@ -235,15 +235,21 @@ BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 DECLARE @value Time(6)
 SET     @value = 00:12:00
+DECLARE @value_1 Time(6)
+SET     @value_1 = 00:12:00
+DECLARE @value_2 Time(6)
+SET     @value_2 = 00:12:00
+DECLARE @value_3 Time(6)
+SET     @value_3 = 00:12:00
 
 MERGE INTO "TestMerge1" "Target"
 USING (VALUES
-	(3,@value), (4,@value), (5,@value), (6,@value)
+	(3,@value), (4,@value_1), (5,@value_2), (6,@value_3)
 ) "Source"
 (
-	"Id",
-	"Field"
+	"source_Id",
+	"source_Field"
 )
-ON ("Target"."Id" = "Source"."Id")
-WHEN MATCHED AND (("Target"."Field3" <> 1 OR "Target"."Field3" IS NULL) OR "Source"."Field" IS NOT NULL) THEN DELETE
+ON ("Target"."Id" = "Source"."source_Id")
+WHEN MATCHED AND ("Target"."Field3" <> 1 OR "Target"."Field3" IS NULL OR "Source"."source_Field" IS NOT NULL) THEN DELETE
 

@@ -2,20 +2,20 @@
 -- Access AccessOleDb
 
 SELECT
-	[t1].[ID],
-	Sum([t1].[Max_1])
+	[g_2].[ParentID],
+	SUM([g_2].[Max_1])
 FROM
 	(
 		SELECT
-			[p].[ParentID] as [ID],
-			Max([p].[Value1]) as [Max_1]
+			[g_1].[ParentID],
+			MAX([g_1].[Value1]) as [Max_1]
 		FROM
-			[Parent] [p]
+			[Parent] [g_1]
 		WHERE
-			[p].[Value1] IS NOT NULL
+			[g_1].[Value1] IS NOT NULL
 		GROUP BY
-			[p].[ParentID]
-	) [t1]
+			[g_1].[ParentID]
+	) [g_2]
 GROUP BY
-	[t1].[ID]
+	[g_2].[ParentID]
 

@@ -2,9 +2,9 @@
 -- SqlServer.2014.MS SqlServer.2014
 
 SELECT
-	[t].[MoneyValue]
+	[p].[MoneyValue]
 FROM
-	[LinqDataTypes] [t]
+	[LinqDataTypes] [p]
 WHERE
-	([t].[BoolValue] = 0)
+	[p].[BoolValue] = 0
 

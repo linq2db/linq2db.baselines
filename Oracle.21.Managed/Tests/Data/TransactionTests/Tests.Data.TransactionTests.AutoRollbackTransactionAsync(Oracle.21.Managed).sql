@@ -22,18 +22,16 @@ BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
 
 UPDATE
-	"Parent"
+	"Parent" t
 SET
-	"Parent"."Value1" = 1012
+	"Value1" = 1012
 WHERE
-	"Parent"."ParentID" = 1010
+	t."ParentID" = 1010
 
 BeforeExecute
 DisposeTransactionAsync
 BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12 (asynchronously)
-DECLARE @take Int32
-SET     @take = 1
 
 SELECT
 	t."ParentID",
@@ -42,5 +40,5 @@ FROM
 	"Parent" t
 WHERE
 	t."ParentID" = 1010
-FETCH NEXT :take ROWS ONLY
+FETCH NEXT 1 ROWS ONLY
 

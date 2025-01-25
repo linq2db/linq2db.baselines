@@ -2,8 +2,6 @@
 -- Oracle.11.Managed Oracle11
 DECLARE @p Varchar2(4) -- String
 SET     @p = 'John'
-DECLARE @take Int32
-SET     @take = 2
 
 SELECT
 	t."PersonID",
@@ -14,14 +12,12 @@ SELECT
 FROM
 	"Person" t
 WHERE
-	t."FirstName" = :p AND ROWNUM <= :take
+	t."FirstName" = :p AND ROWNUM <= 2
 
 BeforeExecute
 -- Oracle.11.Managed Oracle11
 DECLARE @p Varchar2(6) -- String
 SET     @p = 'Tester'
-DECLARE @take Int32
-SET     @take = 2
 
 SELECT
 	t."PersonID",
@@ -32,5 +28,5 @@ SELECT
 FROM
 	"Person" t
 WHERE
-	t."FirstName" = :p AND ROWNUM <= :take
+	t."FirstName" = :p AND ROWNUM <= 2
 

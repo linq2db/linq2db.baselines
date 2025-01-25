@@ -47,14 +47,12 @@ BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	"xxPerson" "t1"
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @take  -- Int32
-SET     @take = 2
 
 SELECT
 	"t1"."FirstName",
@@ -64,7 +62,7 @@ SELECT
 	"t1"."Gender"
 FROM
 	"xxPerson" "t1"
-LIMIT ?
+LIMIT 2
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
@@ -80,19 +78,17 @@ DECLARE @ID  -- Int32
 SET     @ID = 1
 
 UPDATE
-	"xxPerson"
+	"xxPerson" "t1"
 SET
-	"xxPerson"."FirstName" = ?,
-	"xxPerson"."LastName" = ?,
-	"xxPerson"."MiddleName" = ?,
-	"xxPerson"."Gender" = ?
+	"FirstName" = ?,
+	"LastName" = ?,
+	"MiddleName" = ?,
+	"Gender" = ?
 WHERE
-	"xxPerson"."PersonID" = ?
+	"t1"."PersonID" = ?
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @take  -- Int32
-SET     @take = 2
 
 SELECT
 	"t1"."FirstName",
@@ -102,7 +98,7 @@ SELECT
 	"t1"."Gender"
 FROM
 	"xxPerson" "t1"
-LIMIT ?
+LIMIT 2
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc

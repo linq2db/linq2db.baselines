@@ -25,9 +25,9 @@ INSERT INTO TrimTestTable
 	Data
 )
 VALUES
-(toInt32(1),'***XXX***'),
-(toInt32(2),'***HHH***'),
-(toInt32(3),'***VVV***')
+(1,'***XXX***'),
+(2,'***HHH***'),
+(3,'***VVV***')
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
@@ -37,7 +37,7 @@ ALTER TABLE
 UPDATE
 	Data = '***III***'
 WHERE
-	ID = toInt32(3)
+	ID = 3
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse

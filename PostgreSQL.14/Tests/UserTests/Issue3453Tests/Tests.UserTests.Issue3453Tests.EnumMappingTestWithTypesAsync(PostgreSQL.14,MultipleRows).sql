@@ -9,12 +9,12 @@ CREATE TYPE time_unit AS ENUM ('hour', 'day');
 BeforeExecute
 --  PostgreSQL.9.5 PostgreSQL
 
-DROP TABLE IF EXISTS "public".schedule
+DROP TABLE IF EXISTS public.schedule
 
 BeforeExecute
 --  PostgreSQL.9.5 PostgreSQL
 
-CREATE TABLE IF NOT EXISTS "public".schedule
+CREATE TABLE IF NOT EXISTS public.schedule
 (
 	id            SERIAL     NOT NULL,
 	unit          time_unit  NOT NULL,
@@ -27,7 +27,7 @@ CREATE TABLE IF NOT EXISTS "public".schedule
 BeforeExecute
 --  PostgreSQL.9.5 PostgreSQL (asynchronously)
 
-INSERT INTO "public".schedule
+INSERT INTO public.schedule
 (
 	unit,
 	unit_nullable,
@@ -48,7 +48,7 @@ SELECT
 	t1.unit_nullable,
 	t1.amount
 FROM
-	"public".schedule t1
+	public.schedule t1
 
 BeforeExecute
 --  PostgreSQL.9.5 PostgreSQL
@@ -61,7 +61,7 @@ SELECT
 	x.unit_nullable,
 	x.amount
 FROM
-	"public".schedule x
+	public.schedule x
 WHERE
 	x.unit = :unit
 
@@ -76,7 +76,7 @@ SELECT
 	x.unit_nullable,
 	x.amount
 FROM
-	"public".schedule x
+	public.schedule x
 WHERE
 	x.unit_nullable = :unit
 
@@ -91,7 +91,7 @@ SELECT
 	x.unit_nullable,
 	x.amount
 FROM
-	"public".schedule x
+	public.schedule x
 WHERE
 	x.unit_nullable = :unitNullable
 
@@ -104,7 +104,7 @@ SELECT
 	x.unit_nullable,
 	x.amount
 FROM
-	"public".schedule x
+	public.schedule x
 WHERE
 	x.unit_nullable = 'day'
 
@@ -117,7 +117,7 @@ SELECT
 	x.unit_nullable,
 	x.amount
 FROM
-	"public".schedule x
+	public.schedule x
 WHERE
 	x.unit_nullable IS NULL
 
@@ -130,10 +130,10 @@ SELECT
 	t1.unit_nullable,
 	t1.amount
 FROM
-	"public".schedule t1
+	public.schedule t1
 
 BeforeExecute
 --  PostgreSQL.9.5 PostgreSQL
 
-DROP TABLE IF EXISTS "public".schedule
+DROP TABLE IF EXISTS public.schedule
 

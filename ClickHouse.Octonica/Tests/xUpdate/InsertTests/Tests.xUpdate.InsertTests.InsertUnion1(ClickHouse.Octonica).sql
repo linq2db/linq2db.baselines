@@ -4,7 +4,7 @@
 ALTER TABLE
 	Parent
 DELETE WHERE
-	ParentID > toInt32(1000)
+	ParentID > 1000
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -15,7 +15,7 @@ INSERT INTO Parent
 	Value1
 )
 SELECT
-	t1.ParentID + toInt32(1000),
+	t1.ParentID + 1000,
 	t1.Value1
 FROM
 	(
@@ -26,8 +26,8 @@ FROM
 			Child c_1
 		UNION DISTINCT
 		SELECT
-			Coalesce(c_2.ParentID, toInt32(0)) as ParentID,
-			Floor(toFloat64(Coalesce(c_2.GrandChildID, toInt32(0))) / toFloat64(100)) as Value1
+			Coalesce(c_2.ParentID, 0) as ParentID,
+			Floor(toFloat64(Coalesce(c_2.GrandChildID, 0)) / toFloat64(100)) as Value1
 		FROM
 			GrandChild c_2
 	) t1
@@ -36,11 +36,11 @@ BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	Parent c_1
 WHERE
-	c_1.ParentID > toInt32(1000)
+	c_1.ParentID > 1000
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -48,5 +48,5 @@ BeforeExecute
 ALTER TABLE
 	Parent
 DELETE WHERE
-	ParentID > toInt32(1000)
+	ParentID > 1000
 

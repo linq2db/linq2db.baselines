@@ -1,20 +1,20 @@
 ﻿BeforeExecute
 -- SqlServer.2017.MS SqlServer.2017
-DECLARE @take Int -- Int32
-SET     @take = 1
 
 SELECT
 	[o].[ParentID],
 	[o].[Value1],
-	[x].[ParentID],
-	[x].[ChildID]
+	[c_1].[ParentID],
+	[c_1].[ChildID]
 FROM
 	[Parent] [o]
 		LEFT JOIN (
-			SELECT TOP (@take)
-				[t1].[ParentID],
-				[t1].[ChildID]
+			SELECT TOP (1)
+				[x].[ParentID],
+				[x].[ChildID]
 			FROM
-				[Child] [t1]
-		) [x] ON [x].[ParentID] = [o].[ParentID]
+				[Child] [x]
+			ORDER BY
+				[x].[ChildID] DESC
+		) [c_1] ON [c_1].[ParentID] = [o].[ParentID]
 

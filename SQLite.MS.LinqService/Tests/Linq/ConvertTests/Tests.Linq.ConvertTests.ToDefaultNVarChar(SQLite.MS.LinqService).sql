@@ -2,7 +2,7 @@
 -- SQLite.MS SQLite
 
 SELECT
-	Cast([t].[MoneyValue] as NVarChar)
+	CAST([t].[MoneyValue] AS NVarChar(31))
 FROM
 	[LinqDataTypes] [t]
 

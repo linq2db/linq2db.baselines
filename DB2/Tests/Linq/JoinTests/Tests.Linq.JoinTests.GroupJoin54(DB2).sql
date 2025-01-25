@@ -1,43 +1,27 @@
 ﻿BeforeExecute
-BeginTransaction(RepeatableRead)
-BeforeExecute
--- DB2 DB2.LUW DB2LUW
-
-SELECT
-	"key_data_result"."ParentID",
-	"key_data_result"."Value1",
-	"_ch"."ParentID",
-	"_ch"."ChildID"
-FROM
-	(
-		SELECT DISTINCT
-			"p"."ParentID",
-			"p"."Value1"
-		FROM
-			"Parent" "p"
-		WHERE
-			"p"."ParentID" = 1
-	) "key_data_result"
-		INNER JOIN "Child" "_ch" ON "_ch"."ParentID" = "key_data_result"."ParentID"
-
-BeforeExecute
-DisposeTransaction
-BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 SELECT
 	(
 		SELECT
-			Count(*)
+			COUNT(*)
 		FROM
-			"Child" "t1"
+			"Child" "ch_1"
 		WHERE
-			"p"."ParentID" = "t1"."ParentID"
+			"t2"."ParentID" = "ch_1"."ParentID"
 	),
-	"p"."ParentID",
-	"p"."Value1"
+	"t1"."ParentID",
+	"t1"."ChildID"
 FROM
-	"Parent" "p"
+	"Parent" "t2"
+		INNER JOIN (
+			SELECT
+				"ch"."ParentID",
+				"ch"."ChildID",
+				ROW_NUMBER() OVER (PARTITION BY "ch"."ParentID" ORDER BY "ch"."ParentID") as "rn"
+			FROM
+				"Child" "ch"
+		) "t1" ON "t2"."ParentID" = "t1"."ParentID" AND "t1"."rn" <= 1
 WHERE
-	"p"."ParentID" = 1
+	"t2"."ParentID" = 1
 

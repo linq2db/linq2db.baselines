@@ -2,22 +2,27 @@
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @id  -- Int32
 SET     @id = 1
-DECLARE @take  -- Int32
-SET     @take = 2
 
 SELECT
-	COUNT("left_1"."ParentID"),
-	COUNT("p_1"."ParentID"),
-	COUNT(*)
+	"t1"."c1"
 FROM
 	(
 		SELECT
-			"p"."ParentID"
+			CASE
+				WHEN COUNT("left_1"."ParentID") = COUNT("right_1"."ParentID") AND COUNT("left_1"."ParentID") = COUNT(*)
+					THEN 1
+				ELSE 0
+			END as "c1"
 		FROM
-			"Parent" "p"
-		WHERE
-			"p"."ParentID" <> ?
-	) "left_1"
-		FULL JOIN "Parent" "p_1" ON "p_1"."ParentID" = "left_1"."ParentID"
-LIMIT ?
+			(
+				SELECT
+					"p"."ParentID"
+				FROM
+					"Parent" "p"
+				WHERE
+					"p"."ParentID" <> ?
+			) "left_1"
+				FULL JOIN "Parent" "right_1" ON "right_1"."ParentID" = "left_1"."ParentID"
+	) "t1"
+LIMIT 2
 

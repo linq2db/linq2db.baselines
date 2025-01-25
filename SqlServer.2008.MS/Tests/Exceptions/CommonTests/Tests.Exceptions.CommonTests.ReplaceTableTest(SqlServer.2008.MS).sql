@@ -41,9 +41,9 @@ BeforeExecute
 DECLARE @n Int -- Int32
 SET     @n = 555
 
-DELETE [t1]
+DELETE [p]
 FROM
-	[Parent] [t1]
+	[Parent] [p]
 WHERE
-	[t1].[ParentID] = @n
+	[p].[ParentID] = @n
 

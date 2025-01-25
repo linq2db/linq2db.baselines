@@ -2,6 +2,6 @@
 -- Informix.DB2 Informix
 
 SELECT
-	2147483647
+	1
 FROM table(set{1})
 

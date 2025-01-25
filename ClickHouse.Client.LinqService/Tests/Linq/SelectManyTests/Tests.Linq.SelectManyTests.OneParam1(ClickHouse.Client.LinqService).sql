@@ -2,14 +2,14 @@
 -- ClickHouse.Client ClickHouse
 
 SELECT
-	c_1.FirstName,
-	c_1.PersonID,
-	c_1.LastName,
-	c_1.MiddleName,
-	c_1.Gender
+	t1.FirstName,
+	t1.PersonID,
+	t1.LastName,
+	t1.MiddleName,
+	t1.Gender
 FROM
-	Person cp,
-	Person c_1
+	Person t,
+	Person t1
 WHERE
-	c_1.PersonID = toInt32(1)
+	t1.PersonID = 1
 

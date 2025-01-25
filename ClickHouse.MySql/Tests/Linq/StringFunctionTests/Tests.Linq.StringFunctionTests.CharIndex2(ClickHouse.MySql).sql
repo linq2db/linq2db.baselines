@@ -10,6 +10,6 @@ SELECT
 FROM
 	Person p
 WHERE
-	positionUTF8(p.LastName, 'p', toUInt32(toInt32(2))) = toInt32(3) AND
-	p.PersonID = toInt32(1)
+	positionUTF8(p.LastName, 'p', toUInt32(2)) = 3 AND
+	p.PersonID = 1
 

@@ -21,7 +21,7 @@ DECLARE @DateTimeValue2 DateTime2
 SET     @DateTimeValue2 = DATETIME2FROMPARTS(2009, 9, 24, 9, 19, 29, 900000, 7)
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	[LinqDataTypes] [x]
 WHERE

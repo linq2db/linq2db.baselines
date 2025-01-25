@@ -2,7 +2,7 @@
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
 SELECT
-	[_].[FirstName]
+	[t1].[FirstName]
 FROM
-	[Person] [_]
+	[Person] [t1]
 

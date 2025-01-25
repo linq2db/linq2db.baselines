@@ -6,58 +6,13 @@ SELECT
 FROM
 	(
 		SELECT
-			[t1].[ParentID]
+			[g_1].[ParentID]
 		FROM
-			[Child] [t1]
+			[Child] [g_1]
 		GROUP BY
-			[t1].[ParentID]
+			[g_1].[ParentID]
 	) [pmp],
 	[Child] [pmp1]
-
-BeforeExecute
--- Sybase.Managed Sybase
-
-SELECT
-	[t1].[ParentID],
-	[t1].[ChildID]
-FROM
-	[Child] [t1]
-
-BeforeExecute
--- Sybase.Managed Sybase
-
-SELECT
-	[t1].[ParentID],
-	[t1].[ChildID]
-FROM
-	[Child] [t1]
-
-BeforeExecute
--- Sybase.Managed Sybase
-
-SELECT
-	[t1].[ParentID],
-	[t1].[ChildID]
-FROM
-	[Child] [t1]
-
-BeforeExecute
--- Sybase.Managed Sybase
-
-SELECT
-	[t1].[ParentID],
-	[t1].[ChildID]
-FROM
-	[Child] [t1]
-
-BeforeExecute
--- Sybase.Managed Sybase
-
-SELECT
-	[t1].[ParentID],
-	[t1].[ChildID]
-FROM
-	[Child] [t1]
 
 BeforeExecute
 -- Sybase.Managed Sybase

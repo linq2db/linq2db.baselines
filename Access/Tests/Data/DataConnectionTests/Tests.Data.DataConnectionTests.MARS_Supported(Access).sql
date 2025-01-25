@@ -2,7 +2,7 @@
 -- Access AccessOleDb
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	[Person] [t1]
 
@@ -24,12 +24,12 @@ DECLARE @ID Integer -- Int32
 SET     @ID = 1
 
 SELECT
-	[_].[PersonID],
-	[_].[Taxonomy]
+	[t1].[PersonID],
+	[t1].[Taxonomy]
 FROM
-	[Doctor] [_]
+	[Doctor] [t1]
 WHERE
-	[_].[PersonID] = @ID
+	[t1].[PersonID] = @ID
 
 BeforeExecute
 -- Access AccessOleDb
@@ -37,12 +37,12 @@ DECLARE @ID Integer -- Int32
 SET     @ID = 2
 
 SELECT
-	[_].[PersonID],
-	[_].[Taxonomy]
+	[t1].[PersonID],
+	[t1].[Taxonomy]
 FROM
-	[Doctor] [_]
+	[Doctor] [t1]
 WHERE
-	[_].[PersonID] = @ID
+	[t1].[PersonID] = @ID
 
 BeforeExecute
 -- Access AccessOleDb
@@ -50,12 +50,12 @@ DECLARE @ID Integer -- Int32
 SET     @ID = 3
 
 SELECT
-	[_].[PersonID],
-	[_].[Taxonomy]
+	[t1].[PersonID],
+	[t1].[Taxonomy]
 FROM
-	[Doctor] [_]
+	[Doctor] [t1]
 WHERE
-	[_].[PersonID] = @ID
+	[t1].[PersonID] = @ID
 
 BeforeExecute
 -- Access AccessOleDb
@@ -63,10 +63,10 @@ DECLARE @ID Integer -- Int32
 SET     @ID = 4
 
 SELECT
-	[_].[PersonID],
-	[_].[Taxonomy]
+	[t1].[PersonID],
+	[t1].[Taxonomy]
 FROM
-	[Doctor] [_]
+	[Doctor] [t1]
 WHERE
-	[_].[PersonID] = @ID
+	[t1].[PersonID] = @ID
 

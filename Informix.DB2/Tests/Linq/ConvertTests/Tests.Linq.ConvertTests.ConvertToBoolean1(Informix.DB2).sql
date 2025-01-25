@@ -2,12 +2,17 @@
 -- Informix.DB2 Informix
 
 SELECT
-	CASE
-		WHEN t.MoneyValue <> 0 THEN 't'
-		ELSE 'f'
-	END
+	p_1.c1
 FROM
-	LinqDataTypes t
+	(
+		SELECT
+			CASE
+				WHEN p.MoneyValue <> 0 THEN 't'
+				ELSE 'f'
+			END::BOOLEAN as c1
+		FROM
+			LinqDataTypes p
+	) p_1
 WHERE
-	(t.MoneyValue <> 0)
+	p_1.c1 = 't'
 

@@ -24,8 +24,8 @@ INSERT INTO ByteTable
 	ColumnNullable
 )
 VALUES
-(toInt32(1),toUInt8(1),NULL),
-(toInt32(2),toUInt8(255),toUInt8(2))
+(1,toUInt8(1),NULL),
+(2,toUInt8(255),toUInt8(2))
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -69,7 +69,7 @@ INSERT INTO ByteTable
 )
 VALUES
 (
-	toInt32(1),
+	1,
 	toUInt8(1),
 	NULL
 )
@@ -85,7 +85,7 @@ INSERT INTO ByteTable
 )
 VALUES
 (
-	toInt32(2),
+	2,
 	toUInt8(255),
 	toUInt8(2)
 )
@@ -119,8 +119,8 @@ INSERT INTO ByteTable
 	ColumnNullable
 )
 VALUES
-(toInt32(1),toUInt8(1),NULL),
-(toInt32(2),toUInt8(255),toUInt8(2))
+(1,toUInt8(1),NULL),
+(2,toUInt8(255),toUInt8(2))
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse

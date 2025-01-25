@@ -70,7 +70,7 @@ BeforeExecute
 -- Access AccessOleDb
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	[Src] [s]
 WHERE
@@ -80,21 +80,17 @@ BeforeExecute
 -- Access AccessOleDb
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	[Src] [s]
-WHERE
-	1 = 1
 
 BeforeExecute
 -- Access AccessOleDb
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	[Src] [s]
-WHERE
-	1 = 1
 
 BeforeExecute
 -- Access AccessOleDb

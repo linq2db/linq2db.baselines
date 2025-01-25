@@ -85,11 +85,11 @@ DECLARE @PersonID  -- Int32
 SET     @PersonID = 5
 
 UPDATE
-	"Patient"
+	"Patient" "t1"
 SET
-	"Patient"."Diagnosis" = ?
+	"Diagnosis" = ?
 WHERE
-	"Patient"."PersonID" = ?
+	"t1"."PersonID" = ?
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc (asynchronously)
@@ -117,11 +117,11 @@ DECLARE @PersonID  -- Int32
 SET     @PersonID = 5
 
 UPDATE
-	"Patient"
+	"Patient" "t1"
 SET
-	"Patient"."Diagnosis" = ?
+	"Diagnosis" = ?
 WHERE
-	"Patient"."PersonID" = ?
+	"t1"."PersonID" = ?
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc (asynchronously)
@@ -131,18 +131,16 @@ DECLARE @PersonID  -- Int32
 SET     @PersonID = 5
 
 UPDATE
-	"Patient"
+	"Patient" "t1"
 SET
-	"Patient"."Diagnosis" = ?
+	"Diagnosis" = ?
 WHERE
-	"Patient"."PersonID" = ?
+	"t1"."PersonID" = ?
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc (asynchronously)
 DECLARE @id  -- Int32
 SET     @id = 5
-DECLARE @take  -- Int32
-SET     @take = 2
 
 SELECT
 	"p"."PersonID",
@@ -151,5 +149,5 @@ FROM
 	"Patient" "p"
 WHERE
 	"p"."PersonID" = ?
-LIMIT ?
+LIMIT 2
 

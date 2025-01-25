@@ -2,27 +2,27 @@
 -- ClickHouse.MySql ClickHouse
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	(
 		SELECT
-			t1.c1 as Key_1,
-			Count(*) as Count_1
+			t3.c1 as Key_1,
+			COUNT(*) as Count_1
 		FROM
 			(
 				SELECT
-					toInt32(1) as c1
+					1 as c1
 				FROM
-					Person _
+					Person t1
 				UNION ALL
 				SELECT
-					toInt32(2) as c1
+					2 as c1
 				FROM
-					Person _1
-			) t1
+					Person t2
+			) t3
 		GROUP BY
-			t1.c1
-	) _2
+			t3.c1
+	) t4
 WHERE
-	_2.Count_1 > toInt32(1) AND _2.Key_1 = toInt32(1)
+	t4.Key_1 = 1 AND t4.Count_1 > 1
 

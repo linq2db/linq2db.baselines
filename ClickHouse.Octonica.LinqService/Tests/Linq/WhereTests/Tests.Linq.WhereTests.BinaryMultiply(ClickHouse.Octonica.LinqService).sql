@@ -10,5 +10,5 @@ SELECT
 FROM
 	Person p
 WHERE
-	p.PersonID * toInt32(10) = toInt32(10)
+	p.PersonID * 10 = 10
 

@@ -4,7 +4,7 @@ DECLARE @s Text(7) -- String
 SET     @s = '123n456'
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	"Person" p
 WHERE
@@ -16,7 +16,7 @@ DECLARE @s Text(7) -- String
 SET     @s = '123n456'
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	"Person" p
 WHERE

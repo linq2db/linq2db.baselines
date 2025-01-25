@@ -2,7 +2,7 @@
 -- SQLite.Classic SQLite
 
 SELECT
-	strftime('%Y-%m-%d %H:%M:%f', [t].[DateTimeValue],(226/1000.0) || ' Second')
+	strftime('%Y-%m-%d %H:%M:%f', [t].[DateTimeValue], '0.226 Second')
 FROM
 	[LinqDataTypes] [t]
 

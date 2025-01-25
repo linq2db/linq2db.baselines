@@ -50,8 +50,6 @@ VALUES
 
 BeforeExecute
 -- Oracle.11.Managed Oracle11
-DECLARE @take Int32
-SET     @take = 2
 
 SELECT
 	e."Id",
@@ -59,12 +57,10 @@ SELECT
 FROM
 	"Issue1622Table" e
 WHERE
-	e."SomeText" = 'Value1_suffix' AND ROWNUM <= :take
+	e."SomeText" = 'Value1_suffix' AND ROWNUM <= 2
 
 BeforeExecute
 -- Oracle.11.Managed Oracle11
-DECLARE @take Int32
-SET     @take = 2
 
 SELECT
 	e."Id",
@@ -72,7 +68,7 @@ SELECT
 FROM
 	"Issue1622Table" e
 WHERE
-	e."Id" = 1 AND ROWNUM <= :take
+	e."Id" = 1 AND ROWNUM <= 2
 
 BeforeExecute
 -- Oracle.11.Managed Oracle11

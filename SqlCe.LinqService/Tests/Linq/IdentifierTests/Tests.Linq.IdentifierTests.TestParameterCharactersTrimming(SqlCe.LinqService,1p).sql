@@ -19,7 +19,7 @@ SET     @p = 2
 UPDATE
 	[testparams]
 SET
-	[testparams].[1p] = @p
+	[1p] = @p
 WHERE
 	[testparams].[1p] = 1
 

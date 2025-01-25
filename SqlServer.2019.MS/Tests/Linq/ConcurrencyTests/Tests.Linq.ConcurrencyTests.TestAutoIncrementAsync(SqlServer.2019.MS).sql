@@ -58,14 +58,12 @@ DECLARE @Stamp Int -- Int32
 SET     @Stamp = -10
 
 UPDATE
-	[obj]
+	[ConcurrencyAutoIncrement]
 SET
-	[obj].[Stamp] = [obj].[Stamp] + 1,
-	[obj].[Value] = @Value
-FROM
-	[ConcurrencyAutoIncrement] [obj]
+	[Stamp] = [ConcurrencyAutoIncrement].[Stamp] + 1,
+	[Value] = @Value
 WHERE
-	[obj].[Id] = @Id AND [obj].[Stamp] = @Stamp
+	[ConcurrencyAutoIncrement].[Id] = @Id AND [ConcurrencyAutoIncrement].[Stamp] = @Stamp
 
 BeforeExecute
 -- SqlServer.2019.MS SqlServer.2019
@@ -87,14 +85,12 @@ DECLARE @Stamp Int -- Int32
 SET     @Stamp = -9
 
 UPDATE
-	[obj]
+	[ConcurrencyAutoIncrement]
 SET
-	[obj].[Stamp] = [obj].[Stamp] + 1,
-	[obj].[Value] = @Value
-FROM
-	[ConcurrencyAutoIncrement] [obj]
+	[Stamp] = [ConcurrencyAutoIncrement].[Stamp] + 1,
+	[Value] = @Value
 WHERE
-	[obj].[Id] = @Id AND [obj].[Stamp] = @Stamp
+	[ConcurrencyAutoIncrement].[Id] = @Id AND [ConcurrencyAutoIncrement].[Stamp] = @Stamp
 
 BeforeExecute
 -- SqlServer.2019.MS SqlServer.2019
@@ -116,14 +112,12 @@ DECLARE @Stamp Int -- Int32
 SET     @Stamp = -9
 
 UPDATE
-	[obj]
+	[ConcurrencyAutoIncrement]
 SET
-	[obj].[Stamp] = [obj].[Stamp] + 1,
-	[obj].[Value] = @Value
-FROM
-	[ConcurrencyAutoIncrement] [obj]
+	[Stamp] = [ConcurrencyAutoIncrement].[Stamp] + 1,
+	[Value] = @Value
 WHERE
-	[obj].[Id] = @Id AND [obj].[Stamp] = @Stamp
+	[ConcurrencyAutoIncrement].[Id] = @Id AND [ConcurrencyAutoIncrement].[Stamp] = @Stamp
 
 BeforeExecute
 -- SqlServer.2019.MS SqlServer.2019

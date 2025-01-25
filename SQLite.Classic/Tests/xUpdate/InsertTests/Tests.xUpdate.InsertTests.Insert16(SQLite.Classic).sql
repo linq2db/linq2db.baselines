@@ -8,8 +8,8 @@ WHERE
 
 BeforeExecute
 -- SQLite.Classic SQLite
-DECLARE @name NVarChar(8) -- String
-SET     @name = 'Insert16'
+DECLARE @name  -- Int32
+SET     @name = 8
 DECLARE @idx  -- Int32
 SET     @idx = 4
 
@@ -22,7 +22,7 @@ INSERT INTO [Person]
 VALUES
 (
 	'Insert16',
-	Cast((Length(@name) + @idx) as NVarChar(11)),
+	CAST(@name + @idx AS NVarChar(11)),
 	'M'
 )
 
@@ -30,11 +30,11 @@ BeforeExecute
 -- SQLite.Classic SQLite
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
-	[Person] [_]
+	[Person] [t1]
 WHERE
-	[_].[FirstName] LIKE 'Insert16%' ESCAPE '~'
+	[t1].[FirstName] LIKE 'Insert16%' ESCAPE '~'
 
 BeforeExecute
 -- SQLite.Classic SQLite

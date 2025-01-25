@@ -2,7 +2,7 @@
 -- Informix.DB2 Informix
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	Person p
 WHERE
@@ -12,7 +12,7 @@ BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	Person p
 WHERE
@@ -22,7 +22,7 @@ BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	Person p
 WHERE

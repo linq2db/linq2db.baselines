@@ -61,19 +61,17 @@ SET     @EnumWithNullDeclarative = NULL
 UPDATE
 	[ValueConversion]
 SET
-	[ValueConversion].[Value1] = [ValueConversion].[Value1],
-	[ValueConversion].[Value2] = @Value2,
-	[ValueConversion].[EnumWithNull] = @EnumWithNull,
-	[ValueConversion].[EnumWithNullDeclarative] = @EnumWithNullDeclarative
+	[Value1] = [ValueConversion].[Value1],
+	[Value2] = @Value2,
+	[EnumWithNull] = @EnumWithNull,
+	[EnumWithNullDeclarative] = @EnumWithNullDeclarative
 WHERE
 	[ValueConversion].[Id] = 1
 
 BeforeExecute
 -- SqlCe
-DECLARE @take Int -- Int32
-SET     @take = 1
 
-SELECT TOP (@take)
+SELECT TOP (1)
 	[e].[Id],
 	[e].[Value1],
 	[e].[Value2],
@@ -115,24 +113,22 @@ SET     @Id = 2
 UPDATE
 	[ValueConversion]
 SET
-	[ValueConversion].[Value1] = @Value1,
-	[ValueConversion].[Value2] = @Value2,
-	[ValueConversion].[Enum] = @Enum,
-	[ValueConversion].[EnumNullable] = @EnumNullable,
-	[ValueConversion].[EnumWithNull] = @EnumWithNull,
-	[ValueConversion].[EnumWithNullDeclarative] = @EnumWithNullDeclarative,
-	[ValueConversion].[BoolValue] = @BoolValue,
-	[ValueConversion].[AnotherBoolValue] = @AnotherBoolValue,
-	[ValueConversion].[DateTimeNullable] = @DateTimeNullable
+	[Value1] = @Value1,
+	[Value2] = @Value2,
+	[Enum] = @Enum,
+	[EnumNullable] = @EnumNullable,
+	[EnumWithNull] = @EnumWithNull,
+	[EnumWithNullDeclarative] = @EnumWithNullDeclarative,
+	[BoolValue] = @BoolValue,
+	[AnotherBoolValue] = @AnotherBoolValue,
+	[DateTimeNullable] = @DateTimeNullable
 WHERE
 	[ValueConversion].[Id] = @Id
 
 BeforeExecute
 -- SqlCe
-DECLARE @take Int -- Int32
-SET     @take = 1
 
-SELECT TOP (@take)
+SELECT TOP (1)
 	[e].[Id],
 	[e].[Value1],
 	[e].[Value2],
@@ -174,24 +170,22 @@ SET     @Id = 3
 UPDATE
 	[ValueConversion]
 SET
-	[ValueConversion].[Value1] = @Value1,
-	[ValueConversion].[Value2] = @Value2,
-	[ValueConversion].[Enum] = @Enum,
-	[ValueConversion].[EnumNullable] = @EnumNullable,
-	[ValueConversion].[EnumWithNull] = @EnumWithNull,
-	[ValueConversion].[EnumWithNullDeclarative] = @EnumWithNullDeclarative,
-	[ValueConversion].[BoolValue] = @BoolValue,
-	[ValueConversion].[AnotherBoolValue] = @AnotherBoolValue,
-	[ValueConversion].[DateTimeNullable] = @DateTimeNullable
+	[Value1] = @Value1,
+	[Value2] = @Value2,
+	[Enum] = @Enum,
+	[EnumNullable] = @EnumNullable,
+	[EnumWithNull] = @EnumWithNull,
+	[EnumWithNullDeclarative] = @EnumWithNullDeclarative,
+	[BoolValue] = @BoolValue,
+	[AnotherBoolValue] = @AnotherBoolValue,
+	[DateTimeNullable] = @DateTimeNullable
 WHERE
 	[ValueConversion].[Id] = @Id
 
 BeforeExecute
 -- SqlCe
-DECLARE @take Int -- Int32
-SET     @take = 1
 
-SELECT TOP (@take)
+SELECT TOP (1)
 	[e].[Id],
 	[e].[Value1],
 	[e].[Value2],

@@ -31,27 +31,20 @@ BeforeExecute
 -- PostgreSQL.15 PostgreSQL
 
 SELECT
-	t1.c1,
-	Count(*)
+	g_2."IsDelisted",
+	COUNT(*)
 FROM
 	(
 		SELECT
 			CASE
-				WHEN "selectParam"."TradingStatus" = 'D'
-					THEN True
+				WHEN g_1."TradingStatus" = 'D' THEN True
 				ELSE False
-			END as "Key_1",
-			CASE
-				WHEN "selectParam"."TradingStatus" = 'D'
-					THEN True
-				ELSE False
-			END as c1
+			END as "IsDelisted"
 		FROM
-			"Issue913Test" "selectParam"
-	) t1
+			"Issue913Test" g_1
+	) g_2
 GROUP BY
-	t1."Key_1",
-	t1.c1
+	g_2."IsDelisted"
 
 BeforeExecute
 -- PostgreSQL.15 PostgreSQL

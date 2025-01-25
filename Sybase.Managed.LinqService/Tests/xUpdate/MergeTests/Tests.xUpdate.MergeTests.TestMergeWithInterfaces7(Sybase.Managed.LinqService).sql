@@ -23,11 +23,11 @@ BeforeExecute
 
 MERGE INTO [ReviewIndexes] [Target]
 USING (
-	SELECT 1 AS [Id]) [Source]
+	SELECT 1 AS [source_Id]) [Source]
 (
-	[Id]
+	[source_Id]
 )
-ON ([Target].[Id] = [Source].[Id])
+ON ([Target].[Id] = [Source].[source_Id])
 
 WHEN NOT MATCHED THEN
 INSERT

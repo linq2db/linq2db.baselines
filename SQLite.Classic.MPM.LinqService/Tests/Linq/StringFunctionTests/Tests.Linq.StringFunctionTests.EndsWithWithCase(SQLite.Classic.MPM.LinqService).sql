@@ -2,7 +2,7 @@
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	[Patient] [p]
 WHERE
@@ -13,7 +13,7 @@ BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	[Patient] [p]
 WHERE
@@ -24,7 +24,7 @@ BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	[Patient] [p]
 WHERE
@@ -35,7 +35,7 @@ BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	[Patient] [p]
 WHERE

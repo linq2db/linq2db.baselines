@@ -1,11 +1,11 @@
 ﻿BeforeExecute
 -- SqlServer.2016
 
-DELETE [t1]
+DELETE [p]
 FROM
-	[AllTypes2] [t1]
+	[AllTypes2] [p]
 WHERE
-	[t1].[ID] >= 3
+	[p].[ID] >= 3
 
 BeforeExecute
 -- SqlServer.2016 (asynchronously)

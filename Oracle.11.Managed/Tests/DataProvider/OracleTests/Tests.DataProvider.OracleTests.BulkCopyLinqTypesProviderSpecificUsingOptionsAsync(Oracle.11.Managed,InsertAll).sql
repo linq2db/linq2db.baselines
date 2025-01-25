@@ -1,5 +1,5 @@
 ﻿BeforeExecute
---  Oracle.Managed Oracle12
+--  Oracle.11.Managed Oracle11
 
 INSERT ALL
 	INTO "LinqDataTypes" (ID, "MoneyValue", "DateTimeValue", "BoolValue", "GuidValue", "BinaryValue", "SmallIntValue", "StringValue") VALUES (4000,1000,TIMESTAMP '2001-01-11 01:11:21.100000',1,HEXTORAW('99F33B231097794E873D2EC7BF1E0000'),NULL,0,NULL)
@@ -15,10 +15,10 @@ INSERT ALL
 SELECT * FROM dual
 
 BeforeExecute
---  Oracle.Managed Oracle12 (asynchronously)
+--  Oracle.11.Managed Oracle11 (asynchronously)
 
 DELETE FROM
-	"LinqDataTypes" t1
+	"LinqDataTypes" p
 WHERE
-	t1.ID >= 4000
+	p.ID >= 4000
 

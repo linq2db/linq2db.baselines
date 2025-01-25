@@ -5,25 +5,21 @@ DROP TABLE IF EXISTS "DropTableTest"
 
 BeforeExecute
 -- PostgreSQL.12 PostgreSQL.9.5 PostgreSQL
-DECLARE @take Integer -- Int32
-SET     @take = 1
 
 SELECT
 	current_schema()
 FROM
 	"LinqDataTypes" t1
-LIMIT :take
+LIMIT 1
 
 BeforeExecute
 -- PostgreSQL.12 PostgreSQL.9.5 PostgreSQL
-DECLARE @take Integer -- Int32
-SET     @take = 1
 
 SELECT
 	current_database()
 FROM
 	"LinqDataTypes" t1
-LIMIT :take
+LIMIT 1
 
 BeforeExecute
 -- PostgreSQL.12 PostgreSQL.9.5 PostgreSQL
@@ -36,7 +32,7 @@ CREATE TABLE "DropTableTest"
 BeforeExecute
 -- PostgreSQL.12 PostgreSQL.9.5 PostgreSQL
 
-INSERT INTO testdata."public"."DropTableTest"
+INSERT INTO testdata.public."DropTableTest"
 (
 	"ID"
 )
@@ -51,12 +47,12 @@ BeforeExecute
 SELECT
 	t1."ID"
 FROM
-	testdata."public"."DropTableTest" t1
+	testdata.public."DropTableTest" t1
 
 BeforeExecute
 -- PostgreSQL.12 PostgreSQL.9.5 PostgreSQL
 
-DROP TABLE testdata."public"."DropTableTest"
+DROP TABLE testdata.public."DropTableTest"
 
 BeforeExecute
 -- PostgreSQL.12 PostgreSQL.9.5 PostgreSQL
@@ -64,5 +60,5 @@ BeforeExecute
 SELECT
 	t1."ID"
 FROM
-	testdata."public"."DropTableTest" t1
+	testdata.public."DropTableTest" t1
 

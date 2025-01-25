@@ -1,8 +1,10 @@
 ﻿BeforeExecute
 -- SqlServer.2012.MS SqlServer.2012
+DECLARE @month Int -- Int32
+SET     @month = 1
 
 SELECT
-	[t].[ID]
+	DATETIMEFROMPARTS(2010 + [t].[ID], @month, 1, 0, 0, 0, 0)
 FROM
 	[LinqDataTypes] [t]
 

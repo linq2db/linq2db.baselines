@@ -1,5 +1,7 @@
 ﻿BeforeExecute
 -- PostgreSQL.12 PostgreSQL.9.5 PostgreSQL
+DECLARE @p Text(1) -- String
+SET     @p = 'p'
 
 SELECT
 	p."FirstName",
@@ -10,10 +12,6 @@ SELECT
 FROM
 	"Person" p
 WHERE
-	CASE
-		WHEN Position('p' in p."LastName") = 0
-			THEN -1
-		ELSE Length(p."LastName") - Position('p' in Reverse(p."LastName"))
-	END = 2 AND
-	p."PersonID" = 1
+	Length(p."LastName") - Position('p' in Reverse(p."LastName")) = 2 AND
+	Position(:p in p."LastName") <> 0 AND p."PersonID" = 1
 

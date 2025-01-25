@@ -2,7 +2,7 @@
 -- SqlServer.2008.MS SqlServer.2008
 
 SELECT
-	DateAdd(year, 11, [t].[DateTimeValue])
+	CAST(DateAdd(year, 11, [t].[DateTimeValue]) AS Date)
 FROM
 	[LinqDataTypes] [t]
 

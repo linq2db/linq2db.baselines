@@ -2,9 +2,14 @@
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
-	toInt64(t.MoneyValue)
+	p_1.c1
 FROM
-	LinqDataTypes t
+	(
+		SELECT
+			toInt64(p.MoneyValue) as c1
+		FROM
+			LinqDataTypes p
+	) p_1
 WHERE
-	toInt64(t.MoneyValue) > toInt64(0)
+	p_1.c1 > toInt64(0)
 

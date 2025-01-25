@@ -1,48 +1,46 @@
 ﻿BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
-DROP TABLE IF EXISTS EntityWithUser
+DROP TABLE IF EXISTS EntityWithUser1
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
-CREATE TABLE IF NOT EXISTS EntityWithUser
+CREATE TABLE IF NOT EXISTS EntityWithUser1
 (
-	UserId                   Int32,
-	BelongsToCurrentUser     Bool,
-	BelongsToCurrentUserFail Bool
+	UserId               Int32,
+	BelongsToCurrentUser Bool
 )
 ENGINE = Memory()
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
-INSERT INTO EntityWithUser
+INSERT INTO EntityWithUser1
 (
 	UserId,
-	BelongsToCurrentUser,
-	BelongsToCurrentUserFail
+	BelongsToCurrentUser
 )
 VALUES
-(toInt32(1),false,false),
-(toInt32(2),false,false),
-(toInt32(2),false,false),
-(toInt32(3),false,false),
-(toInt32(3),false,false),
-(toInt32(3),false,false)
+(1,false),
+(2,false),
+(2,false),
+(3,false),
+(3,false),
+(3,false)
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
-	EntityWithUser x
+	EntityWithUser1 x
 WHERE
-	x.UserId = toInt32(1)
+	x.UserId = 1
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
-DROP TABLE IF EXISTS EntityWithUser
+DROP TABLE IF EXISTS EntityWithUser1
 

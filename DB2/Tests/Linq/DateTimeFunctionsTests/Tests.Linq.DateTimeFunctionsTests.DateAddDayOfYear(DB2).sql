@@ -2,7 +2,7 @@
 -- DB2 DB2.LUW DB2LUW
 
 SELECT
-	"t"."DateTimeValue" + 3 Day
+	DATE("t"."DateTimeValue" + 3 DAY)
 FROM
 	"LinqDataTypes" "t"
 

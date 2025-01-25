@@ -6,5 +6,5 @@ SELECT
 FROM
 	Person t1
 WHERE
-	t1.PersonID = toInt32(1)
+	t1.PersonID = 1
 

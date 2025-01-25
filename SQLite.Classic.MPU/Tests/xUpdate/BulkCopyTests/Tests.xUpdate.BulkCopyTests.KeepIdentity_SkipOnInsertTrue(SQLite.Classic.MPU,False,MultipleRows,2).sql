@@ -39,14 +39,14 @@ DECLARE @lastId  -- Int32
 SET     @lastId = 3
 
 SELECT
-	[_].[ID],
-	[_].[intDataType]
+	[t1].[ID],
+	[t1].[intDataType]
 FROM
-	[AllTypes] [_]
+	[AllTypes] [t1]
 WHERE
-	[_].[ID] > @lastId
+	[t1].[ID] > @lastId
 ORDER BY
-	[_].[ID]
+	[t1].[ID]
 
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite

@@ -29,7 +29,7 @@ INSERT INTO SampleClass
 )
 VALUES
 (
-	toInt32(1),
+	1,
 	'V1',
 	'V2',
 	NULL,
@@ -49,7 +49,7 @@ INSERT INTO SampleClass
 )
 VALUES
 (
-	toInt32(2),
+	2,
 	NULL,
 	'Z2',
 	NULL,
@@ -69,7 +69,7 @@ INSERT INTO SampleClass
 )
 VALUES
 (
-	toInt32(3),
+	3,
 	'Z1',
 	NULL,
 	NULL,
@@ -80,14 +80,12 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
-	arrayStringConcat(groupArray(t1.Value1), ' -> ')
+	arrayStringConcat(groupArray(g_1.Value1), ' -> ')
 FROM
-	SampleClass t1
+	SampleClass g_1
 GROUP BY
-	t1.Id,
-	t1.Value1
-ORDER BY
-	t1.Id
+	g_1.Id,
+	g_1.Value1
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse

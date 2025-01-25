@@ -4,17 +4,17 @@ BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
 
 SELECT
-	key_data_result."ParentID",
-	detail."ChildID",
-	detail."ParentID"
+	m_1."ParentID",
+	d."ChildID",
+	d."ParentID"
 FROM
 	(
 		SELECT DISTINCT
-			t1."ParentID"
+			p."ParentID"
 		FROM
-			"Parent" t1
-	) key_data_result
-		INNER JOIN "Child" detail ON key_data_result."ParentID" = detail."ParentID"
+			"Parent" p
+	) m_1
+		INNER JOIN "Child" d ON m_1."ParentID" = d."ParentID"
 
 BeforeExecute
 DisposeTransaction
@@ -22,7 +22,7 @@ BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
 
 SELECT
-	t1."ParentID"
+	p."ParentID"
 FROM
-	"Parent" t1
+	"Parent" p
 

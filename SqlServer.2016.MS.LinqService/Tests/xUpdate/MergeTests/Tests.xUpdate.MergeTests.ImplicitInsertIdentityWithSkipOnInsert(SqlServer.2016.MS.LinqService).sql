@@ -23,9 +23,9 @@ BeforeExecute
 -- SqlServer.2016.MS SqlServer.2016
 
 SELECT
-	Max([_].[Id])
+	MAX([t1].[Id])
 FROM
-	[TestMergeIdentity] [_]
+	[TestMergeIdentity] [t1]
 
 BeforeExecute
 -- SqlServer.2016.MS SqlServer.2016
@@ -35,9 +35,9 @@ USING (VALUES
 	(22), (23)
 ) [Source]
 (
-	[Field]
+	[source_Field]
 )
-ON (([Target].[Field] = [Source].[Field] OR [Target].[Field] IS NULL AND [Source].[Field] IS NULL))
+ON (([Target].[Field] = [Source].[source_Field] OR [Target].[Field] IS NULL AND [Source].[source_Field] IS NULL))
 
 WHEN NOT MATCHED THEN
 INSERT
@@ -46,7 +46,7 @@ INSERT
 )
 VALUES
 (
-	[Source].[Field]
+	[Source].[source_Field]
 )
 ;
 

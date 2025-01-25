@@ -21,7 +21,7 @@ INSERT INTO SimpleBulkCopyTable
 )
 VALUES
 (
-	toInt32(1)
+	1
 )
 
 BeforeExecute
@@ -33,7 +33,7 @@ INSERT INTO SimpleBulkCopyTable
 )
 VALUES
 (
-	toInt32(2)
+	2
 )
 
 BeforeExecute

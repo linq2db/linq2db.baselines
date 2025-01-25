@@ -50,31 +50,29 @@ VALUES
 
 BeforeExecute
 -- SqlServer.Contained.MS SqlServer.2019
-DECLARE @take Int -- Int32
-SET     @take = 1
 
-SELECT TOP (@take)
-	[_].[ID],
-	[_].[MoneyValue],
-	[_].[DateTimeValue],
-	[_].[DateTimeValue2],
-	[_].[BoolValue],
-	[_].[GuidValue],
-	[_].[SmallIntValue],
-	[_].[IntValue],
-	[_].[BigIntValue],
-	[_].[StringValue]
+SELECT TOP (1)
+	[t1].[ID],
+	[t1].[MoneyValue],
+	[t1].[DateTimeValue],
+	[t1].[DateTimeValue2],
+	[t1].[BoolValue],
+	[t1].[GuidValue],
+	[t1].[SmallIntValue],
+	[t1].[IntValue],
+	[t1].[BigIntValue],
+	[t1].[StringValue]
 FROM
-	[LinqDataTypes] [_]
+	[LinqDataTypes] [t1]
 WHERE
-	[_].[ID] = 1000
+	[t1].[ID] = 1000
 
 BeforeExecute
 -- SqlServer.Contained.MS SqlServer.2019
 
-DELETE [_]
+DELETE [t1]
 FROM
-	[LinqDataTypes] [_]
+	[LinqDataTypes] [t1]
 WHERE
-	[_].[ID] = 1000
+	[t1].[ID] = 1000
 

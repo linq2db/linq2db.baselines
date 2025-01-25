@@ -27,20 +27,16 @@ BeforeExecute
 -- SqlServer.Contained.MS SqlServer.2019
 
 UPDATE
-	[r]
+	[LinqDataTypes]
 SET
-	[r].[BigIntValue] = 12
-FROM
-	[LinqDataTypes] [r]
+	[BigIntValue] = 12
 WHERE
-	[r].[ID] = 101 AND [r].[BigIntValue] = 11
+	[LinqDataTypes].[ID] = 101 AND [LinqDataTypes].[BigIntValue] = 11
 
 BeforeExecute
 -- SqlServer.Contained.MS SqlServer.2019
-DECLARE @take Int -- Int32
-SET     @take = 1
 
-SELECT TOP (@take)
+SELECT TOP (1)
 	[r].[BigIntValue]
 FROM
 	[LinqDataTypes] [r]

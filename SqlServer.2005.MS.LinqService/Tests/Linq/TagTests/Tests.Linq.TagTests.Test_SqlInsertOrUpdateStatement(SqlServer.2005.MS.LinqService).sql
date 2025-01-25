@@ -22,9 +22,9 @@ BeforeExecute
 /* My Test */
 /* My Test */
 UPDATE
-	[t1]
+	[TestTable]
 SET
-	[t1].[Fd] = 2
+	[Fd] = 2
 FROM
 	[TestTable] [t1]
 WHERE

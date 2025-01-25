@@ -24,11 +24,9 @@ SET     @A123456789b123456789c12345 = 2
 UPDATE
 	[testparams]
 SET
-	[t].[col1] = @A123456789b123456789c12345
-FROM
-	[testparams] [t]
+	[col1] = @A123456789b123456789c12345
 WHERE
-	[t].[Column1] = 1
+	[testparams].[Column1] = 1
 
 BeforeExecute
 -- Sybase.Managed Sybase

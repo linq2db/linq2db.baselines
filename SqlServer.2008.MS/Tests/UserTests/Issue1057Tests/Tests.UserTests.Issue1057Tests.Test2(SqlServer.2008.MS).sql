@@ -110,8 +110,8 @@ BeforeExecute
 -- SqlServer.2008.MS SqlServer.2008
 
 SELECT
-	[p].[Id],
 	[p].[TargetName],
+	[p].[Id],
 	[a_ActualStage].[Id]
 FROM
 	[Task] [p]

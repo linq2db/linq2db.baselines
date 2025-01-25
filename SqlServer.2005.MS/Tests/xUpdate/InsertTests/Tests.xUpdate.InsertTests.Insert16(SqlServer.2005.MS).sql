@@ -1,11 +1,11 @@
 ﻿BeforeExecute
 -- SqlServer.2005.MS SqlServer.2005
 
-DELETE [_]
+DELETE [t1]
 FROM
-	[Person] [_]
+	[Person] [t1]
 WHERE
-	[_].[FirstName] LIKE N'Insert16%' ESCAPE N'~'
+	[t1].[FirstName] LIKE N'Insert16%' ESCAPE N'~'
 
 BeforeExecute
 -- SqlServer.2005.MS SqlServer.2005
@@ -23,7 +23,7 @@ INSERT INTO [Person]
 VALUES
 (
 	N'Insert16',
-	Convert(NVarChar(11), Len(@name) + @idx),
+	CAST(Len(@name) + @idx AS NVarChar(11)),
 	N'M'
 )
 
@@ -31,18 +31,18 @@ BeforeExecute
 -- SqlServer.2005.MS SqlServer.2005
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
-	[Person] [_]
+	[Person] [t1]
 WHERE
-	[_].[FirstName] LIKE N'Insert16%' ESCAPE N'~'
+	[t1].[FirstName] LIKE N'Insert16%' ESCAPE N'~'
 
 BeforeExecute
 -- SqlServer.2005.MS SqlServer.2005
 
-DELETE [_]
+DELETE [t1]
 FROM
-	[Person] [_]
+	[Person] [t1]
 WHERE
-	[_].[FirstName] LIKE N'Insert16%' ESCAPE N'~'
+	[t1].[FirstName] LIKE N'Insert16%' ESCAPE N'~'
 

@@ -2,14 +2,14 @@
 -- DB2 DB2.LUW DB2LUW
 
 SELECT
-	"_"."FirstName",
-	"_"."PersonID",
-	"_"."LastName",
-	"_"."MiddleName",
-	"_"."Gender"
+	"p"."FirstName",
+	"p"."PersonID",
+	"p"."LastName",
+	"p"."MiddleName",
+	"p"."Gender"
 FROM
-	"Person" "_"
+	"Person" "p"
 WHERE
-	"_"."PersonID" = 1
-FETCH FIRST 2 ROWS ONLY
+	"p"."PersonID" = 1
+FETCH NEXT 2 ROWS ONLY
 

@@ -7,5 +7,5 @@ SELECT
 FROM
 	Parent p
 WHERE
-	p.ParentID = toInt32(3) AND p.Value1 = toInt32(3)
+	p.ParentID = 3 AND p.Value1 = 3
 

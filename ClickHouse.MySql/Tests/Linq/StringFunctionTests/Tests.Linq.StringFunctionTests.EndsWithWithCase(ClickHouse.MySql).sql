@@ -2,39 +2,39 @@
 -- ClickHouse.MySql ClickHouse
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	Patient p
 WHERE
-	endsWith(p.Diagnosis, 'Persecution') AND p.PersonID = toInt32(2)
+	endsWith(p.Diagnosis, 'Persecution') AND p.PersonID = 2
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	Patient p
 WHERE
-	(NOT endsWith(p.Diagnosis, 'Persecution')) AND p.PersonID = toInt32(2)
+	NOT endsWith(p.Diagnosis, 'Persecution') AND p.PersonID = 2
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	Patient p
 WHERE
-	endsWith(p.Diagnosis, 'persecution') AND p.PersonID = toInt32(2)
+	endsWith(p.Diagnosis, 'persecution') AND p.PersonID = 2
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	Patient p
 WHERE
-	(NOT endsWith(p.Diagnosis, 'persecution')) AND p.PersonID = toInt32(2)
+	NOT endsWith(p.Diagnosis, 'persecution') AND p.PersonID = 2
 

@@ -20,8 +20,6 @@ IF (OBJECT_ID(N'Issue1373Tests') IS NULL)
 
 BeforeExecute
 -- Sybase.Managed Sybase
-DECLARE @Field1 UniVarChar -- String
-SET     @Field1 = NULL
 
 INSERT INTO [Issue1373Tests]
 (
@@ -31,7 +29,7 @@ INSERT INTO [Issue1373Tests]
 VALUES
 (
 	1,
-	@Field1
+	NULL
 )
 
 BeforeExecute

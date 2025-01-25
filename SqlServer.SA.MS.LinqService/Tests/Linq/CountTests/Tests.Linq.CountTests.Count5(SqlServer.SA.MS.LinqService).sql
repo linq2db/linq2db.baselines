@@ -2,11 +2,11 @@
 -- SqlServer.SA.MS SqlServer.2019
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	(
 		SELECT
-			0 as [c1]
+			[t1].[ParentID]
 		FROM
 			[Child] [t1]
 		GROUP BY

@@ -25,11 +25,11 @@ INSERT INTO Issue2816Table
 	Text
 )
 VALUES
-(toInt32(1),'
+(1,'
 '),
-(toInt32(2),' 
+(2,' 
  '),
-(toInt32(3),' 
+(3,' 
 x ')
 
 BeforeExecute

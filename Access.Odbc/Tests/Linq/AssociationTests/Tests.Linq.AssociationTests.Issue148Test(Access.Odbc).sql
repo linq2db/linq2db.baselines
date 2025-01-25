@@ -4,19 +4,49 @@ BeforeExecute
 -- Access.Odbc AccessODBC
 
 SELECT
-	[key_data_result].[ParentID],
-	[key_data_result].[Value1],
-	[detail].[ParentID],
-	[detail].[ChildID]
+	[m_1].[ParentID],
+	[d].[ParentID],
+	[d].[ChildID]
 FROM
 	(
 		SELECT DISTINCT
-			[n].[ParentID],
-			[n].[Value1]
+			[n].[ParentID]
 		FROM
 			[Parent] [n]
-	) [key_data_result]
-		INNER JOIN [Child] [detail] ON ([key_data_result].[ParentID] = [detail].[ParentID])
+	) [m_1]
+		INNER JOIN [Child] [d] ON ([m_1].[ParentID] = [d].[ParentID])
+
+BeforeExecute
+-- Access.Odbc AccessODBC
+
+SELECT
+	[m_1].[ParentID],
+	[d].[ParentID],
+	[d].[ChildID]
+FROM
+	(
+		SELECT DISTINCT
+			[n].[ParentID]
+		FROM
+			[Parent] [n]
+	) [m_1]
+		INNER JOIN [Child] [d] ON ([m_1].[ParentID] = [d].[ParentID])
+
+BeforeExecute
+-- Access.Odbc AccessODBC
+
+SELECT
+	[m_1].[ParentID],
+	[d].[ParentID],
+	[d].[ChildID]
+FROM
+	(
+		SELECT DISTINCT
+			[n].[ParentID]
+		FROM
+			[Parent] [n]
+	) [m_1]
+		INNER JOIN [Child] [d] ON ([m_1].[ParentID] = [d].[ParentID])
 
 BeforeExecute
 DisposeTransaction
@@ -24,8 +54,7 @@ BeforeExecute
 -- Access.Odbc AccessODBC
 
 SELECT
-	[n].[ParentID],
-	[n].[Value1]
+	[n].[ParentID]
 FROM
 	[Parent] [n]
 

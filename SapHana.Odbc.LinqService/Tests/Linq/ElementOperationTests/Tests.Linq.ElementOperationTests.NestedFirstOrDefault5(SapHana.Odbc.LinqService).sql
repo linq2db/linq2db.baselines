@@ -2,45 +2,24 @@
 -- SapHana.Odbc SapHanaOdbc
 
 SELECT
-	"key_data_result"."ParentID",
-	"key_data_result"."Value1",
-	"key_data_result"."ParentID_1",
-	"key_data_result"."ChildID",
-	"key_data_result"."GrandChildID",
-	"detail"."ParentID",
-	"detail"."ChildID"
-FROM
-	(
-		SELECT DISTINCT
-			"a_Parent"."ParentID",
-			"a_Parent"."Value1",
-			"p"."ParentID" as "ParentID_1",
-			"p"."ChildID",
-			"p"."GrandChildID"
-		FROM
-			"GrandChild" "p"
-				LEFT JOIN "Child" "a_Child" ON "p"."ParentID" = "a_Child"."ParentID" AND "p"."ChildID" = "a_Child"."ChildID"
-				LEFT JOIN "Parent" "a_Parent" ON "a_Child"."ParentID" = "a_Parent"."ParentID"
-		WHERE
-			"p"."ChildID" > 0
-	) "key_data_result"
-		INNER JOIN "Child" "detail" ON "key_data_result"."ParentID" = "detail"."ParentID"
-ORDER BY
-	"detail"."ChildID"
-
-BeforeExecute
--- SapHana.Odbc SapHanaOdbc
-
-SELECT
-	"a_Parent"."ParentID",
-	"a_Parent"."Value1",
-	"p"."ParentID",
-	"p"."ChildID",
-	"p"."GrandChildID"
+	"t1"."ParentID",
+	"t1"."ChildID"
 FROM
 	"GrandChild" "p"
 		LEFT JOIN "Child" "a_Child" ON "p"."ParentID" = "a_Child"."ParentID" AND "p"."ChildID" = "a_Child"."ChildID"
 		LEFT JOIN "Parent" "a_Parent" ON "a_Child"."ParentID" = "a_Parent"."ParentID"
+		LEFT JOIN LATERAL (
+			SELECT
+				"a_Children"."ParentID",
+				"a_Children"."ChildID"
+			FROM
+				"Child" "a_Children"
+			WHERE
+				"a_Parent"."ParentID" IS NOT NULL AND "a_Parent"."ParentID" = "a_Children"."ParentID"
+			ORDER BY
+				"a_Children"."ChildID"
+			LIMIT 1
+		) "t1" ON 1=1
 WHERE
 	"p"."ChildID" > 0
 

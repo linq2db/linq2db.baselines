@@ -502,10 +502,10 @@ VALUES
 
 BeforeExecute
 -- Oracle.11.Managed Oracle11
-DECLARE @take Int32
-SET     @take = 3
 DECLARE @skip Int32
 SET     @skip = 0
+DECLARE @take Int32
+SET     @take = 3
 
 SELECT
 	t2."DuplicateData",
@@ -518,20 +518,16 @@ FROM
 			ROWNUM as RN
 		FROM
 			(
-				SELECT
+				SELECT DISTINCT
 					x."DuplicateData",
 					x."OrderData2"
 				FROM
 					"OrderByDistinctData" x
-				GROUP BY
-					x."DuplicateData",
-					x."OrderData2"
 				ORDER BY
-					Min(x."OrderData1"),
 					x."OrderData2" DESC
 			) t1
 		WHERE
-			ROWNUM <= :take
+			ROWNUM <= (:skip + :take)
 	) t2
 WHERE
 	t2.RN > :skip

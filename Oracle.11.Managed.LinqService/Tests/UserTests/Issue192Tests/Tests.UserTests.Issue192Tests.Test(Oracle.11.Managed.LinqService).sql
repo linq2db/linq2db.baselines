@@ -77,7 +77,7 @@ BeforeExecute
 -- Oracle.11.Managed Oracle11
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	"TypeConvertTable" t1
 WHERE
@@ -87,7 +87,7 @@ BeforeExecute
 -- Oracle.11.Managed Oracle11
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	"TypeConvertTable" t1
 WHERE
@@ -99,7 +99,7 @@ DECLARE @GuidValue Varchar2(36) -- String
 SET     @GuidValue = 'a948600d-de21-4f74-8ac2-9516b287076e'
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	"TypeConvertTable" t1
 WHERE
@@ -107,10 +107,6 @@ WHERE
 
 BeforeExecute
 -- Oracle.11.Managed Oracle11
-DECLARE @BoolValue Char -- AnsiStringFixedLength
-SET     @BoolValue = 'N'
-DECLARE @take Int32
-SET     @take = 1
 
 SELECT
 	t1."Name",
@@ -119,14 +115,10 @@ SELECT
 FROM
 	"TypeConvertTable" t1
 WHERE
-	t1."BoolValue" = :BoolValue AND ROWNUM <= :take
+	t1."BoolValue" = 'N' AND ROWNUM <= 1
 
 BeforeExecute
 -- Oracle.11.Managed Oracle11
-DECLARE @BoolValue Char -- AnsiStringFixedLength
-SET     @BoolValue = 'Y'
-DECLARE @take Int32
-SET     @take = 1
 
 SELECT
 	t1."Name",
@@ -135,14 +127,10 @@ SELECT
 FROM
 	"TypeConvertTable" t1
 WHERE
-	t1."BoolValue" = :BoolValue AND ROWNUM <= :take
+	t1."BoolValue" = 'Y' AND ROWNUM <= 1
 
 BeforeExecute
 -- Oracle.11.Managed Oracle11
-DECLARE @BoolValue Char -- AnsiStringFixedLength
-SET     @BoolValue = 'N'
-DECLARE @take Int32
-SET     @take = 1
 
 SELECT
 	t1."Name",
@@ -151,14 +139,10 @@ SELECT
 FROM
 	"TypeConvertTable" t1
 WHERE
-	t1."BoolValue" = :BoolValue AND ROWNUM <= :take
+	t1."BoolValue" = 'N' AND ROWNUM <= 1
 
 BeforeExecute
 -- Oracle.11.Managed Oracle11
-DECLARE @BoolValue Char -- AnsiStringFixedLength
-SET     @BoolValue = 'Y'
-DECLARE @take Int32
-SET     @take = 1
 
 SELECT
 	t1."Name",
@@ -167,14 +151,10 @@ SELECT
 FROM
 	"TypeConvertTable" t1
 WHERE
-	t1."BoolValue" = :BoolValue AND ROWNUM <= :take
+	t1."BoolValue" = 'Y' AND ROWNUM <= 1
 
 BeforeExecute
 -- Oracle.11.Managed Oracle11
-DECLARE @BoolValue Char -- AnsiStringFixedLength
-SET     @BoolValue = 'N'
-DECLARE @take Int32
-SET     @take = 1
 
 SELECT
 	t1."Name",
@@ -183,14 +163,10 @@ SELECT
 FROM
 	"TypeConvertTable" t1
 WHERE
-	t1."BoolValue" = :BoolValue AND ROWNUM <= :take
+	t1."BoolValue" = 'N' AND ROWNUM <= 1
 
 BeforeExecute
 -- Oracle.11.Managed Oracle11
-DECLARE @BoolValue Char -- AnsiStringFixedLength
-SET     @BoolValue = 'Y'
-DECLARE @take Int32
-SET     @take = 1
 
 SELECT
 	t1."Name",
@@ -199,14 +175,10 @@ SELECT
 FROM
 	"TypeConvertTable" t1
 WHERE
-	t1."BoolValue" = :BoolValue AND ROWNUM <= :take
+	t1."BoolValue" = 'Y' AND ROWNUM <= 1
 
 BeforeExecute
 -- Oracle.11.Managed Oracle11
-DECLARE @BoolValue Char -- AnsiStringFixedLength
-SET     @BoolValue = 'N'
-DECLARE @take Int32
-SET     @take = 1
 
 SELECT
 	t1."Name",
@@ -215,14 +187,10 @@ SELECT
 FROM
 	"TypeConvertTable" t1
 WHERE
-	t1."BoolValue" = :BoolValue AND ROWNUM <= :take
+	t1."BoolValue" = 'N' AND ROWNUM <= 1
 
 BeforeExecute
 -- Oracle.11.Managed Oracle11
-DECLARE @BoolValue Char -- AnsiStringFixedLength
-SET     @BoolValue = 'Y'
-DECLARE @take Int32
-SET     @take = 1
 
 SELECT
 	t1."Name",
@@ -231,14 +199,10 @@ SELECT
 FROM
 	"TypeConvertTable" t1
 WHERE
-	t1."BoolValue" = :BoolValue AND ROWNUM <= :take
+	t1."BoolValue" = 'Y' AND ROWNUM <= 1
 
 BeforeExecute
 -- Oracle.11.Managed Oracle11
-DECLARE @BoolValue Char -- AnsiStringFixedLength
-SET     @BoolValue = 'N'
-DECLARE @take Int32
-SET     @take = 1
 
 SELECT
 	t1."Name",
@@ -247,14 +211,10 @@ SELECT
 FROM
 	"TypeConvertTable" t1
 WHERE
-	t1."BoolValue" = :BoolValue AND ROWNUM <= :take
+	t1."BoolValue" = 'N' AND ROWNUM <= 1
 
 BeforeExecute
 -- Oracle.11.Managed Oracle11
-DECLARE @BoolValue Char -- AnsiStringFixedLength
-SET     @BoolValue = 'Y'
-DECLARE @take Int32
-SET     @take = 1
 
 SELECT
 	t1."Name",
@@ -263,14 +223,12 @@ SELECT
 FROM
 	"TypeConvertTable" t1
 WHERE
-	t1."BoolValue" = :BoolValue AND ROWNUM <= :take
+	t1."BoolValue" = 'Y' AND ROWNUM <= 1
 
 BeforeExecute
 -- Oracle.11.Managed Oracle11
 DECLARE @GuidValue Varchar2(36) -- String
 SET     @GuidValue = 'bc7b663d-0fde-4327-8f92-5d8cc3a11d11'
-DECLARE @take Int32
-SET     @take = 1
 
 SELECT
 	t1."Name",
@@ -279,14 +237,12 @@ SELECT
 FROM
 	"TypeConvertTable" t1
 WHERE
-	t1."GuidValue" = :GuidValue AND ROWNUM <= :take
+	t1."GuidValue" = :GuidValue AND ROWNUM <= 1
 
 BeforeExecute
 -- Oracle.11.Managed Oracle11
 DECLARE @GuidValue Varchar2(36) -- String
 SET     @GuidValue = 'a948600d-de21-4f74-8ac2-9516b287076e'
-DECLARE @take Int32
-SET     @take = 1
 
 SELECT
 	t1."Name",
@@ -295,7 +251,7 @@ SELECT
 FROM
 	"TypeConvertTable" t1
 WHERE
-	t1."GuidValue" = :GuidValue AND ROWNUM <= :take
+	t1."GuidValue" = :GuidValue AND ROWNUM <= 1
 
 BeforeExecute
 -- Oracle.11.Managed Oracle11

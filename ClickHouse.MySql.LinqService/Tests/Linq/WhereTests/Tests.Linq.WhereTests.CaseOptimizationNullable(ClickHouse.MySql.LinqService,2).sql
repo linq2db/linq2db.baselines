@@ -26,7 +26,7 @@ INSERT INTO WhereWithString
 )
 VALUES
 (
-	toInt32(1),
+	1,
 	'Str1'
 )
 
@@ -39,7 +39,7 @@ SELECT
 FROM
 	WhereWithString x
 WHERE
-	x.Id = toInt32(2)
+	x.Id = 2
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse

@@ -2,14 +2,9 @@
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 
 SELECT
-	p.c1
+	p."ID"::SmallInt::text
 FROM
-	(
-		SELECT
-			Cast(Cast(t."ID" as SmallInt) as text) as c1
-		FROM
-			"LinqDataTypes" t
-	) p
+	"LinqDataTypes" p
 WHERE
-	Length(p.c1) > 0
+	Length(p."ID"::SmallInt::text) > 0
 

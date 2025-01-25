@@ -70,7 +70,7 @@ BeforeExecute
 -- Access.Odbc AccessODBC
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	[NotNullParent] [p]
 

@@ -1,104 +1,65 @@
 ﻿BeforeExecute
--- Northwind.SQLite SQLite.Classic SQLite
-
-SELECT
-	[t1].[CustomerID],
-	[t1].[CompanyName],
-	[t1].[ContactName],
-	[t1].[ContactTitle],
-	[t1].[Address],
-	[t1].[City],
-	[t1].[Region],
-	[t1].[PostalCode],
-	[t1].[Country],
-	[t1].[Phone],
-	[t1].[Fax]
-FROM
-	[Customers] [t1]
-
+BeginTransaction(Serializable)
 BeforeExecute
 -- Northwind.SQLite SQLite.Classic SQLite
 
 SELECT
-	[t1].[EmployeeID],
-	[t1].[LastName],
-	[t1].[FirstName],
-	[t1].[Title],
-	[t1].[TitleOfCourtesy],
-	[t1].[BirthDate],
-	[t1].[HireDate],
-	[t1].[Address],
-	[t1].[City],
-	[t1].[Region],
-	[t1].[PostalCode],
-	[t1].[Country],
-	[t1].[HomePhone],
-	[t1].[Extension],
-	[t1].[Photo],
-	[t1].[Notes],
-	[t1].[ReportsTo],
-	[t1].[PhotoPath]
+	[m_1].[c1],
+	[d].[OrderID],
+	[d].[CustomerID],
+	[d].[EmployeeID],
+	[d].[OrderDate],
+	[d].[RequiredDate],
+	[d].[ShippedDate],
+	[d].[ShipVia],
+	[d].[Freight],
+	[d].[ShipName],
+	[d].[ShipAddress],
+	[d].[ShipCity],
+	[d].[ShipRegion],
+	[d].[ShipPostalCode],
+	[d].[ShipCountry]
 FROM
-	[Employees] [t1]
+	(
+		SELECT DISTINCT
+			CASE
+				WHEN [g_1].[Freight] > 50 THEN CASE
+					WHEN [g_1].[Freight] > 100 THEN 'expensive'
+					ELSE 'average'
+				END
+				ELSE 'cheap'
+			END as [c1]
+		FROM
+			[Orders] [g_1]
+	) [m_1]
+		INNER JOIN [Orders] [d] ON [m_1].[c1] = CASE
+			WHEN [d].[Freight] > 50 THEN CASE
+				WHEN [d].[Freight] > 100 THEN 'expensive'
+				ELSE 'average'
+			END
+			ELSE 'cheap'
+		END
 
+BeforeExecute
+DisposeTransaction
 BeforeExecute
 -- Northwind.SQLite SQLite.Classic SQLite
 
 SELECT
-	[t1].[OrderID],
-	[t1].[CustomerID],
-	[t1].[EmployeeID],
-	[t1].[OrderDate],
-	[t1].[RequiredDate],
-	[t1].[ShippedDate],
-	[t1].[ShipVia],
-	[t1].[Freight],
-	[t1].[ShipName],
-	[t1].[ShipAddress],
-	[t1].[ShipCity],
-	[t1].[ShipRegion],
-	[t1].[ShipPostalCode],
-	[t1].[ShipCountry]
-FROM
-	[Orders] [t1]
-
-BeforeExecute
--- Northwind.SQLite SQLite.Classic SQLite
-
-SELECT
-	[t1].[ProductID],
-	[t1].[ProductName],
-	[t1].[SupplierID],
-	[t1].[CategoryID],
-	[t1].[QuantityPerUnit],
-	[t1].[UnitPrice],
-	[t1].[UnitsInStock],
-	[t1].[UnitsOnOrder],
-	[t1].[ReorderLevel],
-	[t1].[Discontinued]
-FROM
-	[Products] [t1]
-
-BeforeExecute
--- Northwind.SQLite SQLite.Classic SQLite
-
-SELECT
-	[t1].[Key_1]
+	[g_2].[c1]
 FROM
 	(
 		SELECT
 			CASE
-				WHEN [selectParam].[Freight] > 50
-					THEN CASE
-					WHEN [selectParam].[Freight] > 100
-						THEN 'expensive'
+				WHEN [g_1].[Freight] > 50 THEN CASE
+					WHEN [g_1].[Freight] > 100 THEN 'expensive'
 					ELSE 'average'
 				END
 				ELSE 'cheap'
-			END as [Key_1]
+			END as [c1]
 		FROM
-			[Orders] [selectParam]
-	) [t1]
+			[Orders] [g_1]
+	) [g_2]
 GROUP BY
-	[t1].[Key_1]
+	[g_2].[c1]
 

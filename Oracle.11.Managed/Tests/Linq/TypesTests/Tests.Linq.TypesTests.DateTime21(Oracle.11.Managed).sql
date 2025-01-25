@@ -1,7 +1,5 @@
 ﻿BeforeExecute
 -- Oracle.11.Managed Oracle11
-DECLARE @take Int32
-SET     @take = 1
 
 SELECT
 	t.ID,
@@ -17,7 +15,7 @@ SELECT
 FROM
 	"LinqDataTypes" t
 WHERE
-	t.ID = 1 AND ROWNUM <= :take
+	t.ID = 1 AND ROWNUM <= 1
 
 BeforeExecute
 -- Oracle.11.Managed Oracle11
@@ -25,16 +23,14 @@ DECLARE @dt TimeStamp -- DateTime
 SET     @dt = TIMESTAMP '2010-12-14 06:00:07.425014'
 
 UPDATE
-	"LinqDataTypes"
+	"LinqDataTypes" t
 SET
-	"LinqDataTypes"."DateTimeValue" = :dt
+	"DateTimeValue" = :dt
 WHERE
-	"LinqDataTypes".ID = 1
+	t.ID = 1
 
 BeforeExecute
 -- Oracle.11.Managed Oracle11
-DECLARE @take Int32
-SET     @take = 1
 
 SELECT
 	t.ID,
@@ -50,7 +46,7 @@ SELECT
 FROM
 	"LinqDataTypes" t
 WHERE
-	t.ID = 1 AND ROWNUM <= :take
+	t.ID = 1 AND ROWNUM <= 1
 
 BeforeExecute
 -- Oracle.11.Managed Oracle11
@@ -58,9 +54,9 @@ DECLARE @pdt TimeStamp -- DateTime
 SET     @pdt = TIMESTAMP '2001-01-11 01:11:21.100000'
 
 UPDATE
-	"LinqDataTypes"
+	"LinqDataTypes" t
 SET
-	"LinqDataTypes"."DateTimeValue" = :pdt
+	"DateTimeValue" = :pdt
 WHERE
-	"LinqDataTypes".ID = 1
+	t.ID = 1
 

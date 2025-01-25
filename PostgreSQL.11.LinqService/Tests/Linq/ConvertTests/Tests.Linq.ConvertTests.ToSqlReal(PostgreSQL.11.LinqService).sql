@@ -2,7 +2,7 @@
 -- PostgreSQL.11 PostgreSQL.9.5 PostgreSQL
 
 SELECT
-	Cast(t."MoneyValue" as Real)
+	t."MoneyValue"::Real
 FROM
 	"LinqDataTypes" t
 

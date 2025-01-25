@@ -2,13 +2,17 @@
 -- PostgreSQL.11 PostgreSQL.9.5 PostgreSQL
 
 SELECT
-	CASE
-		WHEN t."MoneyValue" <> 4.5
-			THEN True
-		ELSE False
-	END
+	p_1.c1
 FROM
-	"LinqDataTypes" t
+	(
+		SELECT
+			CASE
+				WHEN p."MoneyValue" <> 4.5 THEN True
+				ELSE False
+			END as c1
+		FROM
+			"LinqDataTypes" p
+	) p_1
 WHERE
-	t."MoneyValue" = 4.5
+	p_1.c1 = False
 

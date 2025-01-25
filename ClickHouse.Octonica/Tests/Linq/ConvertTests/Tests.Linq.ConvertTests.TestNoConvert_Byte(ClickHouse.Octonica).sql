@@ -52,7 +52,7 @@ INSERT INTO IntegerConverts
 	UInt64N
 )
 VALUES
-(toInt32(1),toUInt8(0),toInt8(0),toInt16(0),toUInt16(0),toInt32(0),toUInt32(0),toInt64(0),toUInt64(0),NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
+(1,toUInt8(0),toInt8(0),toInt16(0),toUInt16(0),0,toUInt32(0),toInt64(0),toUInt64(0),NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -78,7 +78,7 @@ SELECT
 FROM
 	IntegerConverts x
 		INNER JOIN IntegerConverts y ON x.Byte = y.Byte
-LIMIT toInt32(2)
+LIMIT 2
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse

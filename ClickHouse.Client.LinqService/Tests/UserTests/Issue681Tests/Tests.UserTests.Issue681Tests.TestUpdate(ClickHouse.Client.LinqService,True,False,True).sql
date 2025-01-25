@@ -22,9 +22,9 @@ BeforeExecute
 ALTER TABLE
 	Issue681Table
 UPDATE
-	Value = toInt32(10)
+	Value = 10
 WHERE
-	ID = toInt32(5)
+	ID = 5
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse

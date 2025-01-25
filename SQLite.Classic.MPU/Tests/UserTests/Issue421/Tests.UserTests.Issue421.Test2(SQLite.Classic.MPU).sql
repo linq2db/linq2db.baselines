@@ -32,12 +32,12 @@ BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
 SELECT
-	[_].[Id],
-	[_].[BlobValue]
+	[t1].[Id],
+	[t1].[BlobValue]
 FROM
-	[BlobClass] [_]
+	[BlobClass] [t1]
 WHERE
-	[_].[Id] = 1
+	[t1].[Id] = 1
 LIMIT 1
 
 BeforeExecute
@@ -54,12 +54,12 @@ BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
 SELECT
-	[_].[Id],
-	[_].[BlobValue]
+	[t1].[Id],
+	[t1].[BlobValue]
 FROM
-	[BlobClass] [_]
+	[BlobClass] [t1]
 WHERE
-	[_].[Id] = 1
+	[t1].[Id] = 1
 LIMIT 1
 
 BeforeExecute

@@ -33,11 +33,11 @@ DECLARE @from_1 Int32
 SET     @from_1 = 2
 
 UPDATE
-	"testparams"
+	"testparams" t
 SET
-	"testparams"."from" = :from_1
+	"from" = :from_1
 WHERE
-	"testparams"."from" = 1
+	t."from" = 1
 
 BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12

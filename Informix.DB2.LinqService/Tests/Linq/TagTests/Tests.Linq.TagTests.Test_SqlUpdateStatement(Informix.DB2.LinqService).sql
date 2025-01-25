@@ -19,9 +19,9 @@ BeforeExecute
 
 /* My Test */
 UPDATE
-	TestTable
+	TestTable t1
 SET
-	TestTable.Fd = 1
+	Fd = 1
 
 BeforeExecute
 -- Informix.DB2 Informix

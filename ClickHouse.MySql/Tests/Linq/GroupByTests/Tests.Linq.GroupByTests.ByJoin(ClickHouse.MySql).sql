@@ -4,8 +4,8 @@
 SELECT
 	sumOrNull(c2.ChildID)
 FROM
-	Child c1
-		INNER JOIN Child c2 ON c1.ChildID = c2.ChildID + toInt32(1)
+	Child g_1
+		INNER JOIN Child c2 ON g_1.ChildID = c2.ChildID + 1
 GROUP BY
-	c1.ParentID
+	g_1.ParentID
 

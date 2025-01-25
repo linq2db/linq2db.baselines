@@ -11,10 +11,10 @@ FROM
 			p.ParentID as ParentID
 		FROM
 			GrandChild p
-		LIMIT toInt32(3)
-	) t1
+		LIMIT 3
+	) p_1
 WHERE
-	c_1.ParentID = t1.ParentID
+	c_1.ParentID = p_1.ParentID
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
@@ -29,8 +29,8 @@ FROM
 			p.ParentID as ParentID
 		FROM
 			GrandChild p
-		LIMIT toInt32(12), toInt32(3)
-	) t1
+		LIMIT 12, 3
+	) p_1
 WHERE
-	c_1.ParentID = t1.ParentID
+	c_1.ParentID = p_1.ParentID
 

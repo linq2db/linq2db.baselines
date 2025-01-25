@@ -43,7 +43,7 @@ BeforeExecute
 SELECT
 	[t1].[Id],
 	[t1].[Stamp],
-	[t1].[Value]
+	[t1].[Value] as [Value_1]
 FROM
 	[ConcurrencyFiltered] [t1]
 
@@ -59,8 +59,8 @@ SET     @Stamp = -10
 UPDATE
 	[ConcurrencyFiltered]
 SET
-	[ConcurrencyFiltered].[Stamp] = [ConcurrencyFiltered].[Stamp] + 1,
-	[ConcurrencyFiltered].[Value] = @Value
+	[Stamp] = [ConcurrencyFiltered].[Stamp] + 1,
+	[Value] = @Value
 WHERE
 	[ConcurrencyFiltered].[Id] = 2 AND [ConcurrencyFiltered].[Id] = @Id AND
 	[ConcurrencyFiltered].[Stamp] = @Stamp
@@ -71,7 +71,7 @@ BeforeExecute
 SELECT
 	[t1].[Id],
 	[t1].[Stamp],
-	[t1].[Value]
+	[t1].[Value] as [Value_1]
 FROM
 	[ConcurrencyFiltered] [t1]
 
@@ -87,8 +87,8 @@ SET     @Stamp = -10
 UPDATE
 	[ConcurrencyFiltered]
 SET
-	[ConcurrencyFiltered].[Stamp] = [ConcurrencyFiltered].[Stamp] + 1,
-	[ConcurrencyFiltered].[Value] = @Value
+	[Stamp] = [ConcurrencyFiltered].[Stamp] + 1,
+	[Value] = @Value
 WHERE
 	[ConcurrencyFiltered].[Id] = 1 AND [ConcurrencyFiltered].[Id] = @Id AND
 	[ConcurrencyFiltered].[Stamp] = @Stamp
@@ -99,7 +99,7 @@ BeforeExecute
 SELECT
 	[t1].[Id],
 	[t1].[Stamp],
-	[t1].[Value]
+	[t1].[Value] as [Value_1]
 FROM
 	[ConcurrencyFiltered] [t1]
 
@@ -122,7 +122,7 @@ BeforeExecute
 SELECT
 	[t1].[Id],
 	[t1].[Stamp],
-	[t1].[Value]
+	[t1].[Value] as [Value_1]
 FROM
 	[ConcurrencyFiltered] [t1]
 
@@ -145,7 +145,7 @@ BeforeExecute
 SELECT
 	[t1].[Id],
 	[t1].[Stamp],
-	[t1].[Value]
+	[t1].[Value] as [Value_1]
 FROM
 	[ConcurrencyFiltered] [t1]
 

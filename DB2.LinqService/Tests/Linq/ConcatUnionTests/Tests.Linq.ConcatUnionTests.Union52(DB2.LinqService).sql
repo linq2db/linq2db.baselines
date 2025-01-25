@@ -3,7 +3,7 @@
 
 SELECT
 	"p1"."ParentID",
-	Cast(NULL as Int)
+	CAST(NULL AS Int)
 FROM
 	"Parent" "p1"
 UNION

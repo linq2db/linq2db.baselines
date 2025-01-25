@@ -2,7 +2,7 @@
 -- Sybase.Managed Sybase
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	[LinqDataTypes] [p]
 WHERE

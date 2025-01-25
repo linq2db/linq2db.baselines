@@ -2,7 +2,7 @@
 -- ClickHouse.Client ClickHouse
 
 SELECT
-	DAYOFYEAR(t.DateTimeValue)
+	toDayOfYear(t.DateTimeValue)
 FROM
 	LinqDataTypes t
 

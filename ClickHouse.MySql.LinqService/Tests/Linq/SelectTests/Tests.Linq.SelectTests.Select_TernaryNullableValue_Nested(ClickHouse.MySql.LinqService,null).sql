@@ -2,5 +2,6 @@
 -- ClickHouse.MySql ClickHouse
 
 SELECT
-	NULL
+	NULL,
+	0
 

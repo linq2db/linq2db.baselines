@@ -2,14 +2,14 @@
 -- SqlCe
 
 SELECT
-	[p1].[ParentID],
-	[p1].[Value1]
+	[p].[ParentID],
+	[p].[Value1]
 FROM
-	[Parent] [p1]
+	[Parent] [p]
 UNION
 SELECT
 	[p2].[ParentID],
-	NULL
+	NULL as [Value1]
 FROM
 	[Parent] [p2]
 

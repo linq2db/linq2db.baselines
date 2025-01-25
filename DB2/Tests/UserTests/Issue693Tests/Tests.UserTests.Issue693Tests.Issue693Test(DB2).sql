@@ -73,16 +73,16 @@ DECLARE @id1 Integer(4) -- Int32
 SET     @id1 = 5
 
 SELECT
-	"_"."PersonID",
-	"_"."Gender",
-	"_"."FirstName",
-	"_"."MiddleName",
-	"_"."LastName"
+	"t1"."PersonID",
+	"t1"."Gender",
+	"t1"."FirstName",
+	"t1"."MiddleName",
+	"t1"."LastName"
 FROM
-	"Person" "_"
+	"Person" "t1"
 WHERE
-	"_"."PersonID" = @id1
-FETCH FIRST 1 ROWS ONLY
+	"t1"."PersonID" = @id1
+FETCH NEXT 1 ROWS ONLY
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
@@ -90,14 +90,14 @@ DECLARE @id2 Integer(4) -- Int32
 SET     @id2 = 6
 
 SELECT
-	"_"."PersonID",
-	"_"."Gender",
-	"_"."FirstName",
-	"_"."MiddleName",
-	"_"."LastName"
+	"t1"."PersonID",
+	"t1"."Gender",
+	"t1"."FirstName",
+	"t1"."MiddleName",
+	"t1"."LastName"
 FROM
-	"Person" "_"
+	"Person" "t1"
 WHERE
-	"_"."PersonID" = @id2
-FETCH FIRST 1 ROWS ONLY
+	"t1"."PersonID" = @id2
+FETCH NEXT 1 ROWS ONLY
 

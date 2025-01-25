@@ -2,11 +2,11 @@
 -- ClickHouse.Client ClickHouse
 
 SELECT
-	c_1.ChildID,
-	c_1.ParentID
+	a_Children.ChildID,
+	a_Children.ParentID
 FROM
-	Parent _
-		INNER JOIN Child c_1 ON toInt64(_.ParentID) = c_1.ParentID
+	Parent p
+		INNER JOIN Child a_Children ON toInt64(p.ParentID) = a_Children.ParentID
 WHERE
-	_.ParentID = toInt32(1)
+	p.ParentID = 1
 

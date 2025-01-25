@@ -2,7 +2,7 @@
 -- Oracle.11.Managed Oracle11
 
 SELECT
-	Cast(Floor(t."MoneyValue") as Int)
+	CAST(Floor(t."MoneyValue") AS Int)
 FROM
 	"LinqDataTypes" t
 

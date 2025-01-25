@@ -1,4 +1,27 @@
 ﻿BeforeExecute
+BeginTransaction(ReadCommitted)
+BeforeExecute
+-- Oracle.19.Managed Oracle.Managed Oracle12
+
+SELECT
+	m_1."FirstName",
+	d."FirstName",
+	d."PersonID",
+	d."LastName",
+	d."MiddleName",
+	d."Gender"
+FROM
+	(
+		SELECT DISTINCT
+			t1."FirstName"
+		FROM
+			"Person" t1
+	) m_1
+		INNER JOIN "Person" d ON m_1."FirstName" = d."FirstName"
+
+BeforeExecute
+DisposeTransaction
+BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12
 
 SELECT
@@ -7,68 +30,4 @@ FROM
 	"Person" t1
 GROUP BY
 	t1."FirstName"
-
-BeforeExecute
--- Oracle.19.Managed Oracle.Managed Oracle12
-DECLARE @FirstName Varchar2(6) -- String
-SET     @FirstName = 'Tester'
-
-SELECT
-	keyParam."FirstName",
-	keyParam."PersonID",
-	keyParam."LastName",
-	keyParam."MiddleName",
-	keyParam."Gender"
-FROM
-	"Person" keyParam
-WHERE
-	keyParam."FirstName" = :FirstName
-
-BeforeExecute
--- Oracle.19.Managed Oracle.Managed Oracle12
-DECLARE @FirstName Varchar2(6) -- String
-SET     @FirstName = 'Jürgen'
-
-SELECT
-	keyParam."FirstName",
-	keyParam."PersonID",
-	keyParam."LastName",
-	keyParam."MiddleName",
-	keyParam."Gender"
-FROM
-	"Person" keyParam
-WHERE
-	keyParam."FirstName" = :FirstName
-
-BeforeExecute
--- Oracle.19.Managed Oracle.Managed Oracle12
-DECLARE @FirstName Varchar2(4) -- String
-SET     @FirstName = 'Jane'
-
-SELECT
-	keyParam."FirstName",
-	keyParam."PersonID",
-	keyParam."LastName",
-	keyParam."MiddleName",
-	keyParam."Gender"
-FROM
-	"Person" keyParam
-WHERE
-	keyParam."FirstName" = :FirstName
-
-BeforeExecute
--- Oracle.19.Managed Oracle.Managed Oracle12
-DECLARE @FirstName Varchar2(4) -- String
-SET     @FirstName = 'John'
-
-SELECT
-	keyParam."FirstName",
-	keyParam."PersonID",
-	keyParam."LastName",
-	keyParam."MiddleName",
-	keyParam."Gender"
-FROM
-	"Person" keyParam
-WHERE
-	keyParam."FirstName" = :FirstName
 

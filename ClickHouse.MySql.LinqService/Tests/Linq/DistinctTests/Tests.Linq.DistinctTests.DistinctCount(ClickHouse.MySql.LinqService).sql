@@ -2,7 +2,7 @@
 -- ClickHouse.MySql ClickHouse
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	(
 		SELECT DISTINCT
@@ -12,6 +12,6 @@ FROM
 			Parent p
 				INNER JOIN Child c_1 ON p.ParentID = c_1.ParentID
 		WHERE
-			c_1.ChildID > toInt32(20)
+			c_1.ChildID > 20
 	) t1
 

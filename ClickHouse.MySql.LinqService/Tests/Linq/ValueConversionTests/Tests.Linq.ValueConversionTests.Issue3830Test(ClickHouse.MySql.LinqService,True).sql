@@ -27,7 +27,7 @@ INSERT INTO Issue3830TestTable
 )
 VALUES
 (
-	toInt32(1),
+	1,
 	'Y',
 	NULL,
 	NULL
@@ -45,7 +45,7 @@ INSERT INTO Issue3830TestTable
 )
 VALUES
 (
-	toInt32(2),
+	2,
 	'N',
 	NULL,
 	'Y'
@@ -63,7 +63,7 @@ INSERT INTO Issue3830TestTable
 )
 VALUES
 (
-	toInt32(3),
+	3,
 	'N',
 	'Y',
 	NULL
@@ -81,7 +81,7 @@ INSERT INTO Issue3830TestTable
 )
 VALUES
 (
-	toInt32(4),
+	4,
 	'Y',
 	'N',
 	'Y'

@@ -23,13 +23,11 @@ DECLARE @ID Int -- Int32
 SET     @ID = 5
 
 UPDATE
-	[t1]
+	[Issue681Table]
 SET
-	[t1].[Value] = @Value
-FROM
-	[Issue681Table] [t1]
+	[Value] = @Value
 WHERE
-	[t1].[ID] = @ID
+	[Issue681Table].[ID] = @ID
 
 BeforeExecute
 -- SqlServer.2016.MS SqlServer.2016

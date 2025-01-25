@@ -9,5 +9,5 @@ SELECT
 FROM
 	Child t
 		LEFT JOIN Parent a_Parent ON t.ParentID = a_Parent.ParentID
-LIMIT toInt32(1)
+LIMIT 1
 

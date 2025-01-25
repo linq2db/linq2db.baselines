@@ -2,10 +2,11 @@
 -- Access.Odbc AccessODBC
 
 SELECT
-	[_].[PersonID],
-	[_].[LastName]
+	[t1].[PersonID],
+	[t1].[LastName],
+	IIF([t1].[PersonID] IN (1, 3), True, False)
 FROM
-	[Person] [_]
+	[Person] [t1]
 ORDER BY
-	Iif([_].[PersonID] IN (1, 3), True, False)
+	IIF([t1].[PersonID] IN (1, 3), True, False)
 

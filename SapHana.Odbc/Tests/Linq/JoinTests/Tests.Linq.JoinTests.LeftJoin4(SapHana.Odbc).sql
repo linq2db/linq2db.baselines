@@ -1,36 +1,24 @@
 ﻿BeforeExecute
-BeginTransaction(RepeatableRead)
-BeforeExecute
--- SapHana.Odbc SapHanaOdbc
-
-SELECT
-	"key_data_result"."ParentID",
-	"_y1"."ParentID",
-	"_y1"."ChildID"
-FROM
-	(
-		SELECT DISTINCT
-			"x5"."ParentID",
-			"x5"."Value1"
-		FROM
-			"Parent" "x5"
-				LEFT JOIN "Child" "y2" ON "x5"."ParentID" = "y2"."ParentID" AND "x5"."Value1" = "y2"."ParentID"
-		WHERE
-			"x5"."ParentID" = 1 AND "x5"."Value1" IS NOT NULL
-	) "key_data_result"
-		INNER JOIN "Child" "_y1" ON "_y1"."ParentID" = "key_data_result"."ParentID" AND "_y1"."ParentID" = "key_data_result"."Value1"
-
-BeforeExecute
-DisposeTransaction
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 SELECT
 	"x5"."ParentID",
-	"x5"."Value1"
+	"x5"."Value1",
+	"t1"."ParentID",
+	"t1"."ChildID"
 FROM
 	"Parent" "x5"
-		LEFT JOIN "Child" "y2" ON "x5"."ParentID" = "y2"."ParentID" AND "x5"."Value1" = "y2"."ParentID"
+		LEFT JOIN "Child" "y4" ON "x5"."ParentID" = "y4"."ParentID" AND "x5"."Value1" = "y4"."ParentID"
+		LEFT JOIN LATERAL (
+			SELECT
+				"y1"."ParentID",
+				"y1"."ChildID"
+			FROM
+				"Child" "y1"
+			WHERE
+				"x5"."ParentID" = "y1"."ParentID" AND "x5"."Value1" = "y1"."ParentID"
+			LIMIT 1
+		) "t1" ON 1=1
 WHERE
 	"x5"."ParentID" = 1 AND "x5"."Value1" IS NOT NULL
 ORDER BY

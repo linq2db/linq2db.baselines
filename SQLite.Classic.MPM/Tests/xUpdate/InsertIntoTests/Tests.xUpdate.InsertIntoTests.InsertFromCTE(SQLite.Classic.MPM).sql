@@ -42,7 +42,7 @@ CREATE TABLE IF NOT EXISTS [InsertTestClassDest]
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
-WITH [CTE_1] ([Id], [Value], [OtherValue])
+WITH [CTE_1] ([Id], [Value_1], [OtherValue])
 AS
 (
 	SELECT
@@ -54,19 +54,19 @@ AS
 )
 INSERT INTO [InsertTestClassDest]
 (
+	[Id],
 	[Value],
 	[OtherValue]
 )
 SELECT
-	[t2].[Value],
+	[t2].[Id],
+	[t2].[Value_1],
 	[t2].[OtherValue]
 FROM
 	[CTE_1] [t2]
 
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-DECLARE @take  -- Int32
-SET     @take = 2
 
 SELECT
 	[t1].[Id],
@@ -74,12 +74,10 @@ SELECT
 	[t1].[OtherValue]
 FROM
 	[InsertTestClass] [t1]
-LIMIT @take
+LIMIT 2
 
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-DECLARE @take  -- Int32
-SET     @take = 2
 
 SELECT
 	[t1].[Id],
@@ -87,7 +85,7 @@ SELECT
 	[t1].[OtherValue]
 FROM
 	[InsertTestClassDest] [t1]
-LIMIT @take
+LIMIT 2
 
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite

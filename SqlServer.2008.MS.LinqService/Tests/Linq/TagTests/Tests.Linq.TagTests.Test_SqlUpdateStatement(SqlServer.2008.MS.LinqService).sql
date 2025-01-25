@@ -21,11 +21,9 @@ BeforeExecute
 
 /* My Test */
 UPDATE
-	[t1]
+	[TestTable]
 SET
-	[t1].[Fd] = 1
-FROM
-	[TestTable] [t1]
+	[Fd] = 1
 
 BeforeExecute
 -- SqlServer.2008.MS SqlServer.2008

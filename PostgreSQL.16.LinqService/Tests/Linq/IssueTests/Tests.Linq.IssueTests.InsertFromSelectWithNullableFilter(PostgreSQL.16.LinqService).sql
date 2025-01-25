@@ -8,16 +8,16 @@ INSERT INTO "AllTypes"
 )
 SELECT
 	123,
-	t2."smallintDataType"
+	t2."ID"
 FROM
 	(
 		SELECT DISTINCT
-			c_1."smallintDataType"
+			"a_Association"."smallintDataType" as "ID"
 		FROM
 			"AllTypes" t1
-				INNER JOIN "AllTypes" c_1 ON t1."smallintDataType" = c_1."intDataType"
+				INNER JOIN "AllTypes" "a_Association" ON t1."smallintDataType" = "a_Association"."intDataType"
 		WHERE
-			t1."smallintDataType" IS NULL
+			1 = 0
 	) t2
 
 BeforeExecute
@@ -32,14 +32,14 @@ INSERT INTO "AllTypes"
 )
 SELECT
 	123,
-	t2."smallintDataType"
+	t2."ID"
 FROM
 	(
 		SELECT DISTINCT
-			c_1."smallintDataType"
+			"a_Association"."smallintDataType" as "ID"
 		FROM
 			"AllTypes" t1
-				INNER JOIN "AllTypes" c_1 ON t1."smallintDataType" = c_1."intDataType"
+				INNER JOIN "AllTypes" "a_Association" ON t1."smallintDataType" = "a_Association"."intDataType"
 		WHERE
 			t1."smallintDataType" = :ID
 	) t2

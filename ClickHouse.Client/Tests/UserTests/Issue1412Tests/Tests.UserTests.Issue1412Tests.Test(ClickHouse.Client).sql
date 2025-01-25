@@ -30,7 +30,7 @@ INSERT INTO WmsResourceTypeDTO
 	Width
 )
 VALUES
-(toUUID('bc7b663d-0fde-4327-8f92-5d8cc3a11d11'),'Resource Name','RN',toInt32(110),toInt32(256),toInt32(333))
+(toUUID('bc7b663d-0fde-4327-8f92-5d8cc3a11d11'),'Resource Name','RN',110,256,333)
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
@@ -102,7 +102,7 @@ INSERT INTO WmsLoadCarrierDTO
 	DontTouch
 )
 VALUES
-(toUUID('a948600d-de21-4f74-8ac2-9516b287076e'),toInt32(0),NULL,NULL,NULL,toUUID('bc7b663d-0fde-4327-8f92-5d8cc3a11d11'),NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,toInt32(0),false,NULL,NULL,NULL,NULL,false)
+(toUUID('a948600d-de21-4f74-8ac2-9516b287076e'),0,NULL,NULL,NULL,toUUID('bc7b663d-0fde-4327-8f92-5d8cc3a11d11'),NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,false,NULL,NULL,NULL,NULL,false)
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
@@ -174,45 +174,74 @@ INSERT INTO WMS_ResourceA
 	DontTouch
 )
 VALUES
-(toUUID('bd3973a5-4323-4dd8-9f4f-df9f93e2a627'),toInt32(0),NULL,NULL,NULL,toUUID('bc7b663d-0fde-4327-8f92-5d8cc3a11d11'),NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,toInt32(0),false,NULL,NULL,NULL,NULL,false)
+(toUUID('bd3973a5-4323-4dd8-9f4f-df9f93e2a627'),0,NULL,NULL,NULL,toUUID('bc7b663d-0fde-4327-8f92-5d8cc3a11d11'),NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,false,NULL,NULL,NULL,NULL,false)
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
 
 SELECT
-	res.Id,
-	res.Status,
-	res.ResourceLabel,
-	res.ResourceLabelNVE,
-	res.ParentResourceID,
-	res.TypeID,
-	res.HeightClass,
-	res.CurrentWeightOfResource,
-	res.WidthClass,
-	res.LengthClass,
-	res.OriginalResourceID,
-	res.LastGlobalTaskID,
-	res.WashingDate,
-	res.ResourcePointID,
-	res.Height,
-	res.Width,
-	res.Length_1,
-	res.TechnicalValues,
-	res.RearrangementCount,
-	res.IsVirtual,
-	res.ErrorMessage,
-	res.FillingDegree,
-	res.LastInventoryCheckTimeStamp,
-	res.Segmentation,
-	res.DontTouch,
-	tpList.Id,
-	tpList.Name,
-	tpList.ShortName,
-	tpList.Height,
-	tpList.Depth,
-	tpList.Width
+	t2.Id,
+	t2.Status,
+	t2.ResourceLabel,
+	t2.ResourceLabelNVE,
+	t2.ParentResourceID,
+	t2.TypeID,
+	t2.HeightClass,
+	t2.CurrentWeightOfResource,
+	t2.WidthClass,
+	t2.LengthClass,
+	t2.OriginalResourceID,
+	t2.LastGlobalTaskID,
+	t2.WashingDate,
+	t2.ResourcePointID,
+	t2.Height,
+	t2.Width,
+	t2.Length_1,
+	t2.TechnicalValues,
+	t2.RearrangementCount,
+	t2.IsVirtual,
+	t2.ErrorMessage,
+	t2.FillingDegree,
+	t2.LastInventoryCheckTimeStamp,
+	t2.Segmentation,
+	t2.DontTouch,
+	tp.Id,
+	tp.Name,
+	tp.ShortName,
+	tp.Height,
+	tp.Depth,
+	tp.Width
 FROM
 	(
+		SELECT
+			res.Id as Id,
+			res.Status as Status,
+			res.ResourceLabel as ResourceLabel,
+			res.ResourceLabelNVE as ResourceLabelNVE,
+			res.ParentResourceID as ParentResourceID,
+			res.TypeID as TypeID,
+			res.HeightClass as HeightClass,
+			res.CurrentWeightOfResource as CurrentWeightOfResource,
+			res.WidthClass as WidthClass,
+			res.LengthClass as LengthClass,
+			res.OriginalResourceID as OriginalResourceID,
+			res.LastGlobalTaskID as LastGlobalTaskID,
+			res.WashingDate as WashingDate,
+			res.ResourcePointID as ResourcePointID,
+			res.Height as Height,
+			res.Width as Width,
+			res.Length as Length_1,
+			res.TechnicalValues as TechnicalValues,
+			res.RearrangementCount as RearrangementCount,
+			res.IsVirtual as IsVirtual,
+			res.ErrorMessage as ErrorMessage,
+			res.FillingDegree as FillingDegree,
+			res.LastInventoryCheckTimeStamp as LastInventoryCheckTimeStamp,
+			res.Segmentation as Segmentation,
+			res.DontTouch as DontTouch
+		FROM
+			WmsLoadCarrierDTO res
+		UNION DISTINCT
 		SELECT
 			t1.Id as Id,
 			t1.Status as Status,
@@ -240,38 +269,9 @@ FROM
 			t1.Segmentation as Segmentation,
 			t1.DontTouch as DontTouch
 		FROM
-			WmsLoadCarrierDTO t1
-		UNION DISTINCT
-		SELECT
-			t2.Id as Id,
-			t2.Status as Status,
-			t2.ResourceLabel as ResourceLabel,
-			t2.ResourceLabelNVE as ResourceLabelNVE,
-			t2.ParentResourceID as ParentResourceID,
-			t2.TypeID as TypeID,
-			t2.HeightClass as HeightClass,
-			t2.CurrentWeightOfResource as CurrentWeightOfResource,
-			t2.WidthClass as WidthClass,
-			t2.LengthClass as LengthClass,
-			t2.OriginalResourceID as OriginalResourceID,
-			t2.LastGlobalTaskID as LastGlobalTaskID,
-			t2.WashingDate as WashingDate,
-			t2.ResourcePointID as ResourcePointID,
-			t2.Height as Height,
-			t2.Width as Width,
-			t2.Length as Length_1,
-			t2.TechnicalValues as TechnicalValues,
-			t2.RearrangementCount as RearrangementCount,
-			t2.IsVirtual as IsVirtual,
-			t2.ErrorMessage as ErrorMessage,
-			t2.FillingDegree as FillingDegree,
-			t2.LastInventoryCheckTimeStamp as LastInventoryCheckTimeStamp,
-			t2.Segmentation as Segmentation,
-			t2.DontTouch as DontTouch
-		FROM
-			WMS_ResourceA t2
-	) res
-		LEFT JOIN WmsResourceTypeDTO tpList ON res.TypeID = tpList.Id
+			WMS_ResourceA t1
+	) t2
+		LEFT JOIN WmsResourceTypeDTO tp ON t2.TypeID = tp.Id
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse

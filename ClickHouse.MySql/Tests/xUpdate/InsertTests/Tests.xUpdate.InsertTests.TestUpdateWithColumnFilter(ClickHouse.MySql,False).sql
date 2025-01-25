@@ -12,7 +12,7 @@ INSERT INTO Person
 VALUES
 (
 	'InsertColumnFilter',
-	toInt32(0),
+	0,
 	'whatever',
 	'som middle name',
 	'M'
@@ -31,7 +31,7 @@ FROM
 	Person x
 WHERE
 	x.FirstName = 'InsertColumnFilter'
-LIMIT toInt32(1)
+LIMIT 1
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
@@ -43,7 +43,7 @@ UPDATE
 	LastName = 'whatever',
 	Gender = 'M'
 WHERE
-	PersonID = toInt32(0)
+	PersonID = 0
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
@@ -58,7 +58,7 @@ FROM
 	Person x
 WHERE
 	x.FirstName = 'InsertColumnFilter'
-LIMIT toInt32(1)
+LIMIT 1
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse

@@ -2,11 +2,17 @@
 -- ClickHouse.MySql ClickHouse
 
 SELECT
-	nm.MiddleName
+	nm_1.MiddleName
 FROM
-	Person nm
+	(
+		SELECT
+			CHAR_LENGTH(nm.MiddleName) as Length_1,
+			nm.MiddleName as MiddleName
+		FROM
+			Person nm
+	) nm_1
 WHERE
-	(CHAR_LENGTH(nm.MiddleName) <> toInt32(0) OR CHAR_LENGTH(nm.MiddleName) IS NULL)
+	(nm_1.Length_1 <> 0 OR nm_1.Length_1 IS NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse

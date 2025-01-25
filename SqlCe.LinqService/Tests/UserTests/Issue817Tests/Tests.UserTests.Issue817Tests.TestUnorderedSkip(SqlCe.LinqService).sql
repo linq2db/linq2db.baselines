@@ -2,7 +2,7 @@
 -- SqlCe
 
 SELECT
-	Count(*)
+	COUNT(*) as [COUNT_1]
 FROM
 	[Person] [t1]
 
@@ -12,10 +12,10 @@ DECLARE @skip Int -- Int32
 SET     @skip = 1
 
 SELECT
-	[_].[PersonID]
+	[t1].[PersonID]
 FROM
-	[Person] [_]
+	[Person] [t1]
 ORDER BY
-	[_].[PersonID]
+	[t1].[PersonID]
 OFFSET @skip ROWS
 

@@ -25,11 +25,11 @@ DECLARE @p_p Integer(4) -- Int32
 SET     @p_p = 2
 
 UPDATE
-	"testparams"
+	"testparams" "t"
 SET
-	"testparams"."p_p" = @p_p
+	"p_p" = CAST(@p_p AS Int)
 WHERE
-	"testparams"."p_p" = 1
+	"t"."p_p" = 1
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW

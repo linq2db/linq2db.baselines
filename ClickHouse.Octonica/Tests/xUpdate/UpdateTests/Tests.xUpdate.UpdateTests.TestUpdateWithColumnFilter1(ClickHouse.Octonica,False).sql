@@ -12,7 +12,7 @@ INSERT INTO Person
 VALUES
 (
 	'UpdateColumnFilterUpdated',
-	toInt32(100),
+	100,
 	'whatever',
 	'som middle name',
 	'M'
@@ -31,7 +31,7 @@ FROM
 	Person x
 WHERE
 	x.FirstName = 'UpdateColumnFilterUpdated'
-LIMIT toInt32(1)
+LIMIT 1
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -43,7 +43,7 @@ UPDATE
 	LastName = 'whatever',
 	Gender = 'M'
 WHERE
-	PersonID = toInt32(100)
+	PersonID = 100
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -58,5 +58,5 @@ FROM
 	Person x
 WHERE
 	x.FirstName = 'UpdateColumnFilterUpdated'
-LIMIT toInt32(1)
+LIMIT 1
 

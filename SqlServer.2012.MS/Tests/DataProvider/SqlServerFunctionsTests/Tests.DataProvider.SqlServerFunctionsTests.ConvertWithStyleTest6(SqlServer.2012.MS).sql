@@ -1,8 +1,6 @@
 ﻿BeforeExecute
 -- SqlServer.2012.MS SqlServer.2012
-DECLARE @p DateTime2
-SET     @p = DATETIME2FROMPARTS(2022, 2, 22, 0, 0, 0, 0, 7)
 
 SELECT
-	CONVERT(NVarChar(4000), @p, 5)
+	CONVERT(NVarChar(4000), DATETIMEFROMPARTS(2022, 2, 22, 0, 0, 0, 0), 5)
 

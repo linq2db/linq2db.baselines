@@ -84,24 +84,18 @@ BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
 SELECT
-	[t1].[ID]
-FROM
-	[test_in_1] [t1]
-
-BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
-
-SELECT
 	[t].[ID]
 FROM
 	[test_in_1] [t]
 WHERE
-	[t].[ID] NOT IN (
+	[t].[ID] IS NOT NULL AND ([t].[ID] IS NULL OR [t].[ID] NOT IN (
 		SELECT
 			[p].[ID]
 		FROM
 			[test_in_2] [p]
-	)
+		WHERE
+			[p].[ID] IS NOT NULL
+	))
 
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
@@ -109,7 +103,7 @@ BeforeExecute
 SELECT
 	[t1].[ID]
 FROM
-	[test_in_2] [t1]
+	[test_in_1] [t1]
 
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite

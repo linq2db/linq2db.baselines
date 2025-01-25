@@ -2,14 +2,9 @@
 -- SqlServer.2014
 
 SELECT
-	[t].[c1]
+	DATETIMEFROMPARTS(2010, [t].[ID], 1, 0, 0, 0, 0)
 FROM
-	(
-		SELECT
-			DateAdd(month, [p].[ID] + 1319, 0) as [c1]
-		FROM
-			[LinqDataTypes] [p]
-	) [t]
+	[LinqDataTypes] [t]
 WHERE
-	DatePart(year, [t].[c1]) = 2010
+	DatePart(year, DATETIMEFROMPARTS(2010, [t].[ID], 1, 0, 0, 0, 0)) = 2010
 

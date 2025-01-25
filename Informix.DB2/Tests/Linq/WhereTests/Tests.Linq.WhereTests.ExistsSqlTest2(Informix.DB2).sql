@@ -8,9 +8,9 @@ WHERE
 		SELECT
 			*
 		FROM
-			Child t1
+			Child a_Children
 		WHERE
-			Parent.ParentID = t1.ParentID
+			Parent.ParentID = a_Children.ParentID
 	) AND
 	Parent.ParentID > 100
 

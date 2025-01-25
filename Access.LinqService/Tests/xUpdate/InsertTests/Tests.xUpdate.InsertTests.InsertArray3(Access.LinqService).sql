@@ -2,9 +2,9 @@
 -- Access AccessOleDb
 
 DELETE FROM
-	[LinqDataTypes] [t1]
+	[LinqDataTypes] [t]
 WHERE
-	[t1].[ID] > 1000
+	[t].[ID] > 1000
 
 BeforeExecute
 -- Access AccessOleDb
@@ -44,7 +44,7 @@ BeforeExecute
 -- Access AccessOleDb
 
 DELETE FROM
-	[LinqDataTypes] [t1]
+	[LinqDataTypes] [t]
 WHERE
-	[t1].[ID] > 1000
+	[t].[ID] > 1000
 

@@ -30,6 +30,26 @@ IF (OBJECT_ID(N'[LargeNumberEntity]', N'U') IS NULL)
 BeforeExecute
 -- SqlServer.2022.MS SqlServer.2022
 
+DROP TABLE IF EXISTS [SomeTable]
+
+BeforeExecute
+-- SqlServer.2022.MS SqlServer.2022
+
+IF (OBJECT_ID(N'[SomeTable]', N'U') IS NULL)
+	CREATE TABLE [SomeTable]
+	(
+		[LargeNumberEntityId] Int NOT NULL,
+		[Value]               Int NOT NULL
+	)
+
+BeforeExecute
+-- SqlServer.2022.MS SqlServer.2022
+
+DROP TABLE IF EXISTS [SomeTable]
+
+BeforeExecute
+-- SqlServer.2022.MS SqlServer.2022
+
 DROP TABLE IF EXISTS [LargeNumberEntity]
 
 BeforeExecute

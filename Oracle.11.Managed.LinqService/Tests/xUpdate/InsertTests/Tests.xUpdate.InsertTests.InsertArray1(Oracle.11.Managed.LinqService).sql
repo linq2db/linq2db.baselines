@@ -2,9 +2,9 @@
 -- Oracle.11.Managed Oracle11
 
 DELETE FROM
-	"LinqDataTypes" t1
+	"LinqDataTypes" t
 WHERE
-	t1.ID > 1000
+	t.ID > 1000
 
 BeforeExecute
 -- Oracle.11.Managed Oracle11
@@ -24,8 +24,6 @@ VALUES
 
 BeforeExecute
 -- Oracle.11.Managed Oracle11
-DECLARE @take Int32
-SET     @take = 2
 
 SELECT
 	t.ID,
@@ -38,13 +36,13 @@ SELECT
 FROM
 	"LinqDataTypes" t
 WHERE
-	t.ID = 1001 AND ROWNUM <= :take
+	t.ID = 1001 AND ROWNUM <= 2
 
 BeforeExecute
 -- Oracle.11.Managed Oracle11
 
 DELETE FROM
-	"LinqDataTypes" t1
+	"LinqDataTypes" t
 WHERE
-	t1.ID > 1000
+	t.ID > 1000
 

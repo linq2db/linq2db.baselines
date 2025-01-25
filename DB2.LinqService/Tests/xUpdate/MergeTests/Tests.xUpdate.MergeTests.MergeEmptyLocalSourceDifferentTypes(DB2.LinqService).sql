@@ -228,9 +228,9 @@ USING (
 )
  "Source"
 (
-	ID
+	"source_ID"
 )
-ON ("Target"."Id" = "Source".ID)
+ON ("Target"."Id" = "Source"."source_ID")
 
 WHEN NOT MATCHED THEN
 INSERT
@@ -239,7 +239,7 @@ INSERT
 )
 VALUES
 (
-	"Source".ID
+	"Source"."source_ID"
 )
 
 BeforeExecute

@@ -10,5 +10,5 @@ SELECT
 FROM
 	Person p
 WHERE
-	p.PersonID = toInt32(1) AND NOT (p.MiddleName IS NOT NULL AND p.PersonID = toInt32(2))
+	p.PersonID = 1 AND NOT (p.MiddleName IS NOT NULL AND p.PersonID = 2)
 

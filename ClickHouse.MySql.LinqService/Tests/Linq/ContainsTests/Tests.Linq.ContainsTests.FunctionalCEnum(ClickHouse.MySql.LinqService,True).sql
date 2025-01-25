@@ -27,7 +27,7 @@ INSERT INTO Src
 )
 VALUES
 (
-	toInt32(1),
+	1,
 	NULL,
 	NULL,
 	NULL
@@ -45,8 +45,8 @@ INSERT INTO Src
 )
 VALUES
 (
-	toInt32(2),
-	toInt32(2),
+	2,
+	2,
 	'TWO',
 	'___Value2___'
 )
@@ -60,7 +60,7 @@ FROM
 	Src s
 WHERE
 	s.CEnum IN ('___Value3___', '___Value4___')
-LIMIT toInt32(1)
+LIMIT 1
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
@@ -71,7 +71,7 @@ FROM
 	Src s
 WHERE
 	(s.CEnum IN ('___Value3___') OR s.CEnum IS NULL)
-LIMIT toInt32(1)
+LIMIT 1
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
@@ -82,7 +82,7 @@ FROM
 	Src s
 WHERE
 	s.CEnum IN ('___Value3___', '___Value2___')
-LIMIT toInt32(1)
+LIMIT 1
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
@@ -93,7 +93,7 @@ FROM
 	Src s
 WHERE
 	(s.CEnum NOT IN ('___Value2___') AND s.CEnum IS NOT NULL)
-LIMIT toInt32(1)
+LIMIT 1
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
@@ -104,7 +104,7 @@ FROM
 	Src s
 WHERE
 	(s.CEnum NOT IN ('___Value3___', '___Value2___') OR s.CEnum IS NULL)
-LIMIT toInt32(1)
+LIMIT 1
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse

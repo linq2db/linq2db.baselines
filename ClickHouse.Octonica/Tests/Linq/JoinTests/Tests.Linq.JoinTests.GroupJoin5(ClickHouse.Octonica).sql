@@ -2,34 +2,20 @@
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
-	key_data_result.ParentID,
-	key_data_result.Value1,
-	_ch.ParentID,
-	_ch.ChildID
+	t1.ParentID,
+	t1.ChildID
 FROM
-	(
-		SELECT DISTINCT
-			p.ParentID as ParentID,
-			p.Value1 as Value1
-		FROM
-			Parent p
-		WHERE
-			p.ParentID >= toInt32(1)
-	) key_data_result
-		INNER JOIN Child _ch ON _ch.ParentID = key_data_result.ParentID
-ORDER BY
-	_ch.ChildID
-
-BeforeExecute
--- ClickHouse.Octonica ClickHouse
-
-SELECT
-	p.ParentID,
-	p.Value1
-FROM
-	Parent p
+	Parent t2
+		LEFT JOIN (
+			SELECT
+				ch.ParentID as ParentID,
+				ch.ChildID as ChildID,
+				ROW_NUMBER() OVER (PARTITION BY ch.ParentID ORDER BY ch.ChildID) as rn
+			FROM
+				Child ch
+		) t1 ON t2.ParentID = t1.ParentID AND t1.rn <= 1
 WHERE
-	p.ParentID >= toInt32(1)
+	t2.ParentID >= 1
 ORDER BY
-	p.ParentID
+	t2.ParentID
 

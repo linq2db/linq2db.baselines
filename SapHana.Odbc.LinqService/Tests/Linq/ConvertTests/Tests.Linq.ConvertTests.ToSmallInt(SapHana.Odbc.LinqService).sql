@@ -2,7 +2,7 @@
 -- SapHana.Odbc SapHanaOdbc
 
 SELECT
-	Cast(Floor("t"."MoneyValue") as SmallInt)
+	CAST("t"."MoneyValue" AS SmallInt)
 FROM
 	"LinqDataTypes" "t"
 

@@ -491,14 +491,10 @@ SET     @take = 3
 DECLARE @skip  -- Int32
 SET     @skip = 0
 
-SELECT
+SELECT DISTINCT
 	"x"."DuplicateData"
 FROM
 	"OrderByDistinctData" "x"
-GROUP BY
-	"x"."DuplicateData"
-ORDER BY
-	Min(MOD("x"."OrderData1", 3))
 LIMIT ? OFFSET ?
 
 BeforeExecute
@@ -509,13 +505,13 @@ DECLARE @skip  -- Int32
 SET     @skip = 0
 
 SELECT
-	"x"."DuplicateData"
+	"g_1"."DuplicateData"
 FROM
-	"OrderByDistinctData" "x"
+	"OrderByDistinctData" "g_1"
 GROUP BY
-	"x"."DuplicateData"
+	"g_1"."DuplicateData"
 ORDER BY
-	Max(MOD("x"."OrderData1", 3))
+	MAX(MOD("g_1"."OrderData1", 3))
 LIMIT ? OFFSET ?
 
 BeforeExecute

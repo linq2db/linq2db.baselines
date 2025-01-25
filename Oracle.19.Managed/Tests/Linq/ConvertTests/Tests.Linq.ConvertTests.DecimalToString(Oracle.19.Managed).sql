@@ -2,9 +2,9 @@
 -- Oracle.19.Managed Oracle.Managed Oracle12
 
 SELECT
-	Cast(t."MoneyValue" as VarChar(31))
+	CAST(p."MoneyValue" AS VarChar(255))
 FROM
-	"LinqDataTypes" t
+	"LinqDataTypes" p
 WHERE
-	Length(Cast(t."MoneyValue" as VarChar(31))) > 0
+	Length(CAST(p."MoneyValue" AS VarChar(255))) > 0
 

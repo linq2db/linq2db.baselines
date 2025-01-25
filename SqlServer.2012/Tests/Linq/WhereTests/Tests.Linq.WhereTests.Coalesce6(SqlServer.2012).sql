@@ -7,5 +7,5 @@ SELECT
 FROM
 	[Parent] [p]
 WHERE
-	IIF([p].[Value1] = 1, 10, 20) = 20
+	([p].[Value1] <> 1 OR [p].[Value1] IS NULL)
 

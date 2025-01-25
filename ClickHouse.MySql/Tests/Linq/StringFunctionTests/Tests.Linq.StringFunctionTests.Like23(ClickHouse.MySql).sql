@@ -10,5 +10,5 @@ SELECT
 FROM
 	Person p
 WHERE
-	p.FirstName NOT LIKE '%h~%n%' AND p.PersonID = toInt32(1)
+	p.FirstName NOT LIKE '%h~%n%' AND p.PersonID = 1
 

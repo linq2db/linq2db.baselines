@@ -2,9 +2,14 @@
 -- SqlServer.2019.MS SqlServer.2019
 
 SELECT
-	Convert(SmallInt, [t].[MoneyValue])
+	[p_1].[c1]
 FROM
-	[LinqDataTypes] [t]
+	(
+		SELECT
+			CAST(Floor([p].[MoneyValue]) AS SmallInt) as [c1]
+		FROM
+			[LinqDataTypes] [p]
+	) [p_1]
 WHERE
-	Convert(SmallInt, [t].[MoneyValue]) > 0
+	[p_1].[c1] > 0
 

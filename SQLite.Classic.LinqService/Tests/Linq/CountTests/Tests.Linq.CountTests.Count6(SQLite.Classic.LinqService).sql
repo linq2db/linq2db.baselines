@@ -2,16 +2,16 @@
 -- SQLite.Classic SQLite
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	(
 		SELECT
-			0 as [c1]
+			[g_1].[ParentID] as [Key_1]
 		FROM
-			[Child] [t1]
+			[Child] [g_1]
 		GROUP BY
-			[t1].[ParentID]
-		HAVING
-			[t1].[ParentID] > 2
-	) [t2]
+			[g_1].[ParentID]
+	) [g_2]
+WHERE
+	[g_2].[Key_1] > 2
 

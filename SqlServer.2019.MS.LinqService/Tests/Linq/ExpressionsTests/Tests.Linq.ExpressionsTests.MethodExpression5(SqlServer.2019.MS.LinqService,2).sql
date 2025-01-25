@@ -6,7 +6,7 @@ SET     @n = 2
 SELECT
 	(
 		SELECT
-			Count(*)
+			COUNT(*)
 		FROM
 			[Child] [c_1]
 		WHERE

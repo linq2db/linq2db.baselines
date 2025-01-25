@@ -29,8 +29,8 @@ INSERT INTO TestEnumTable
 )
 VALUES
 (
-	toInt32(1),
-	toInt32(1),
+	1,
+	1,
 	'A',
 	'A',
 	toInt16(0)

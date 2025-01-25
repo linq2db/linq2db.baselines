@@ -44,14 +44,17 @@ BeforeExecute
 -- DB2 DB2.LUW DB2LUW (asynchronously)
 DECLARE @Id Integer(4) -- Int32
 SET     @Id = 2
+DECLARE @Id_1 Integer(4) -- Int32
+SET     @Id_1 = 2
 
 SELECT
+	CAST(@Id AS Int),
 	"c_1"."Id"
 FROM
 	"AsyncDataTable" "c_1"
 WHERE
-	"c_1"."Id" = @Id
-FETCH FIRST 2 ROWS ONLY
+	"c_1"."Id" = @Id_1
+FETCH NEXT 2 ROWS ONLY
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW

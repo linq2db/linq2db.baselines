@@ -4,7 +4,7 @@ DECLARE @p Integer -- Int32
 SET     @p = -8
 
 SELECT
-	t."DateTimeValue" + :p * Interval '1 Minute'
+	Floor(Extract(minute From (t."DateTimeValue" + :p * Interval '1 Minute')))::Int
 FROM
 	"LinqDataTypes" t
 

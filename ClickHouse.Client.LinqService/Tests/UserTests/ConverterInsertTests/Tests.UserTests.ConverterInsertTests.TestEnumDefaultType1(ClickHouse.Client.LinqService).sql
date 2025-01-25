@@ -11,7 +11,7 @@ INSERT INTO Person
 )
 VALUES
 (
-	toInt32(100),
+	100,
 	'123',
 	'456',
 	'789',
@@ -30,6 +30,6 @@ SELECT
 FROM
 	Person t
 WHERE
-	t.PersonID = toInt32(100)
-LIMIT toInt32(1)
+	t.PersonID = 100
+LIMIT 1
 

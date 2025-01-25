@@ -2,7 +2,7 @@
 -- Oracle.19.Managed Oracle.Managed Oracle12
 
 SELECT
-	Max(t1."ParentID")
+	MAX(t1."ParentID")
 FROM
 	(
 		SELECT DISTINCT

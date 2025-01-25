@@ -265,9 +265,9 @@ BeforeExecute
 UPDATE
 	[UpdatedEntities]
 SET
-	[UpdatedEntities].[Value1] = [UpdatedEntities].[Value1] + [UpdatedEntities].[Value2] + [UpdatedEntities].[Value3],
-	[UpdatedEntities].[Value2] = [UpdatedEntities].[Value1] + [UpdatedEntities].[Value2] + [UpdatedEntities].[Value3],
-	[UpdatedEntities].[Value3] = 1
+	[Value1] = [UpdatedEntities].[Value1] + [UpdatedEntities].[Value2] + [UpdatedEntities].[Value3],
+	[Value2] = [UpdatedEntities].[Value1] + [UpdatedEntities].[Value2] + [UpdatedEntities].[Value3],
+	[Value3] = 1
 WHERE
 	EXISTS(
 		SELECT
@@ -281,10 +281,8 @@ WHERE
 
 BeforeExecute
 -- SqlCe
-DECLARE @take Int -- Int32
-SET     @take = 1
 
-SELECT TOP (@take)
+SELECT TOP (1)
 	[v].[Value1],
 	[v].[Value2],
 	[v].[Value3]

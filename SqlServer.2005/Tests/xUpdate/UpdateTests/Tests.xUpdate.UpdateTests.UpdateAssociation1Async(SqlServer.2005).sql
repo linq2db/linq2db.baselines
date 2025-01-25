@@ -30,9 +30,9 @@ BeforeExecute
 -- SqlServer.2005 (asynchronously)
 
 UPDATE
-	[Parent]
+	[a_Parent]
 SET
-	[Parent].[Value1] = 5
+	[a_Parent].[Value1] = 5
 FROM
 	[Child] [child_1]
 		LEFT JOIN [Parent] [a_Parent] ON [child_1].[ParentID] = [a_Parent].[ParentID]

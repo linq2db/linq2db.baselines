@@ -488,27 +488,25 @@ BeforeExecute
 -- Access.Odbc AccessODBC
 
 SELECT
-	[t].[DuplicateData],
-	[t2].[Count_1]
+	[t_1].[DuplicateData],
+	(
+		SELECT
+			COUNT(*)
+		FROM
+			[OrderByDistinctData] [c_1]
+		WHERE
+			([c_1].[DuplicateData] = [t_1].[DuplicateData] OR [c_1].[DuplicateData] IS NULL AND [t_1].[DuplicateData] IS NULL)
+	)
 FROM
 	(
 		SELECT TOP 2
-			[t1].[Id],
-			[t1].[DuplicateData]
+			[t].[Id],
+			[t].[DuplicateData]
 		FROM
-			[OrderByDistinctData] [t1]
-	) [t]
-		LEFT JOIN (
-			SELECT
-				Count(*) as [Count_1],
-				[s].[DuplicateData]
-			FROM
-				[OrderByDistinctData] [s]
-			GROUP BY
-				[s].[DuplicateData]
-		) [t2] ON (([t2].[DuplicateData] = [t].[DuplicateData] OR [t2].[DuplicateData] IS NULL AND [t].[DuplicateData] IS NULL))
+			[OrderByDistinctData] [t]
+	) [t_1]
 ORDER BY
-	[t].[Id] DESC
+	[t_1].[Id] DESC
 
 BeforeExecute
 -- Access.Odbc AccessODBC

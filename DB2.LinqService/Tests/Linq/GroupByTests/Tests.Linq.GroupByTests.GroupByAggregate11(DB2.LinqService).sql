@@ -2,34 +2,34 @@
 -- DB2 DB2.LUW DB2LUW
 
 SELECT
-	"t2"."Key_1"
+	"g_2"."c1"
 FROM
 	(
 		SELECT
 			CASE
 				WHEN (
 					SELECT
-						Avg("c_1"."ParentID")
+						AVG("a_Children"."ParentID")
 					FROM
-						"Child" "c_1"
+						"Child" "a_Children"
 					WHERE
-						"p"."ParentID" = "c_1"."ParentID"
+						"g_1"."ParentID" = "a_Children"."ParentID"
 				) > 3
 					THEN 1
 				ELSE 0
-			END as "Key_1"
+			END as "c1"
 		FROM
-			"Parent" "p"
+			"Parent" "g_1"
 		WHERE
 			(
 				SELECT
-					Count(*)
+					COUNT(*)
 				FROM
-					"Child" "t1"
+					"Child" "a_Children_1"
 				WHERE
-					"p"."ParentID" = "t1"."ParentID"
+					"g_1"."ParentID" = "a_Children_1"."ParentID"
 			) > 0
-	) "t2"
+	) "g_2"
 GROUP BY
-	"t2"."Key_1"
+	"g_2"."c1"
 

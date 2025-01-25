@@ -609,17 +609,17 @@ BeforeExecute
 -- Access AccessOleDb
 
 SELECT TOP 2
-	[q].[Value2]
+	[t1].[Value2]
 FROM
 	(
 		SELECT
-			[t].[Id],
-			[t].[Value2]
+			[q].[Id],
+			[q].[Value2]
 		FROM
-			[ValueConversion] [t]
-	) [q]
+			[ValueConversion] [q]
+	) [t1]
 ORDER BY
-	[q].[Id]
+	[t1].[Id]
 
 BeforeExecute
 -- Access AccessOleDb

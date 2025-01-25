@@ -34,12 +34,12 @@ BeforeExecute
 
 SELECT
 	N'Title',
-	[selectParam].[Title],
-	Sum([selectParam].[YearsExperience])
+	[it].[Title],
+	SUM([it].[YearsExperience])
 FROM
-	[odata_person] [selectParam]
+	[odata_person] [it]
 GROUP BY
-	[selectParam].[Title]
+	[it].[Title]
 
 BeforeExecute
 -- SqlServer.2016.MS SqlServer.2016

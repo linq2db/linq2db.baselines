@@ -16,8 +16,8 @@ BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 DECLARE @Id  -- Int32
 SET     @Id = 1
-DECLARE @DateTime  -- DateTime
-SET     @DateTime = '2000-01-01'
+DECLARE @DateTime VarChar(23) -- AnsiString
+SET     @DateTime = '2000-01-01 00:00:00.000'
 
 INSERT INTO [CreateTableTypes]
 (
@@ -34,8 +34,8 @@ BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 DECLARE @Id  -- Int32
 SET     @Id = 2
-DECLARE @DateTime  -- DateTime
-SET     @DateTime = '2018-11-24 01:02:03'
+DECLARE @DateTime VarChar(23) -- AnsiString
+SET     @DateTime = '2018-11-24 01:02:03.000'
 
 INSERT INTO [CreateTableTypes]
 (

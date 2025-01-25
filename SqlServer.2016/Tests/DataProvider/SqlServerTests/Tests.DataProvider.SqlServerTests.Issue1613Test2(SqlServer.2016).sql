@@ -30,22 +30,22 @@ BeforeExecute
 -- SqlServer.2016
 
 SELECT
-	[t1].[Key_1]
+	[g_2].[Date_1]
 FROM
 	(
 		SELECT
-			Convert(Date, [selectParam].[dt]) as [Key_1]
+			CAST([g_1].[dt] AS Date) as [Date_1]
 		FROM
-			[Issue1613] [selectParam]
-	) [t1]
+			[Issue1613] [g_1]
+	) [g_2]
 GROUP BY
-	[t1].[Key_1]
+	[g_2].[Date_1]
 
 BeforeExecute
 -- SqlServer.2016
 
 SELECT
-	[r].[dt]
+	CAST([r].[dt] AS Date)
 FROM
 	[Issue1613] [r]
 

@@ -2,14 +2,14 @@
 -- SqlServer.2016
 
 SELECT
-	[pp].[Value_1]
+	[pp_1].[Value_1]
 FROM
 	(
 		SELECT
-			IIF([p].[MoneyValue] * 2 = Round([p].[MoneyValue] * 2, 2) AND [p].[MoneyValue] <> Round([p].[MoneyValue], 2), Round([p].[MoneyValue] / 2, 2) * 2, Round([p].[MoneyValue], 2)) as [Value_1]
+			IIF([pp].[MoneyValue] * 2 = Round([pp].[MoneyValue] * 2, 2) AND [pp].[MoneyValue] <> Round([pp].[MoneyValue], 2), Round([pp].[MoneyValue] / 2, 2) * 2, Round([pp].[MoneyValue], 2)) as [Value_1]
 		FROM
-			[LinqDataTypes] [p]
-	) [pp]
+			[LinqDataTypes] [pp]
+	) [pp_1]
 WHERE
-	[pp].[Value_1] <> 0 AND [pp].[Value_1] <> 7
+	[pp_1].[Value_1] <> 0 AND [pp_1].[Value_1] <> 7
 

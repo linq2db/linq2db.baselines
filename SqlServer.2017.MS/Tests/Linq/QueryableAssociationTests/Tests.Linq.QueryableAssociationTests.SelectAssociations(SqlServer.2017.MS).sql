@@ -78,27 +78,22 @@ VALUES
 
 BeforeExecute
 -- SqlServer.2017.MS SqlServer.2017
-DECLARE @take Int -- Int32
-SET     @take = 1
-DECLARE @take_1 Int -- Int32
-SET     @take_1 = 1
 
-SELECT TOP (@take)
-	[x_1].[Id],
-	[a_Entity2Language].[LanguageId],
-	[a_Entity2Language].[Name]
+SELECT TOP (1)
+	[x].[Id],
+	[t1].[LanguageId],
+	[a_Language].[Name]
 FROM
-	[Entity] [x_1]
+	[Entity] [x]
 		OUTER APPLY (
-			SELECT TOP (@take_1)
-				[x].[LanguageId],
-				[a_Language].[Name]
+			SELECT TOP (1)
+				[a_Entity2Language].[LanguageId]
 			FROM
-				[Entity2Language] [x]
-					LEFT JOIN [Language] [a_Language] ON [x].[LanguageId] = [a_Language].[Id]
+				[Entity2Language] [a_Entity2Language]
 			WHERE
-				[x].[EntityId] = [x_1].[Id]
-		) [a_Entity2Language]
+				[a_Entity2Language].[EntityId] = [x].[Id]
+		) [t1]
+		LEFT JOIN [Language] [a_Language] ON [t1].[LanguageId] = [a_Language].[Id]
 
 BeforeExecute
 -- SqlServer.2017.MS SqlServer.2017

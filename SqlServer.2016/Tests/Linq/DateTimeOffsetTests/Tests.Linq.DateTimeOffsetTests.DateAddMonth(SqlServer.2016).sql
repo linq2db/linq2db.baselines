@@ -55,7 +55,7 @@ BeforeExecute
 -- SqlServer.2016
 
 SELECT
-	DateAdd(month, 2, [t].[TransactionDate])
+	CAST(DateAdd(month, 2, [t].[TransactionDate]) AS Date)
 FROM
 	[Transactions] [t]
 

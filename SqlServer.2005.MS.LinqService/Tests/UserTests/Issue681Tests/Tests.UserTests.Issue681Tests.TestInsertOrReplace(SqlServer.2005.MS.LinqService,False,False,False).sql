@@ -24,9 +24,9 @@ DECLARE @ID Int -- Int32
 SET     @ID = 5
 
 UPDATE
-	[t1]
+	[Issue681Table]
 SET
-	[t1].[Value] = @Value
+	[Value] = @Value
 FROM
 	[Issue681Table] [t1]
 WHERE
@@ -54,9 +54,9 @@ DECLARE @ID Int -- Int32
 SET     @ID = 5
 
 UPDATE
-	[t1]
+	[Issue681Table]
 SET
-	[t1].[Value] = @Value
+	[Value] = @Value
 FROM
 	[Issue681Table] [t1]
 WHERE

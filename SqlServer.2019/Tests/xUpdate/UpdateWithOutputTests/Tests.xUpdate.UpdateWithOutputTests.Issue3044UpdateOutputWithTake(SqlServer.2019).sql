@@ -40,24 +40,26 @@ DECLARE @take Int -- Int32
 SET     @take = 1
 
 UPDATE
-	[t1]
+	[u]
 SET
-	[t1].[Id] = 20,
-	[t1].[Value_1] = [t1].[Value_1],
-	[t1].[ValueStr] = [t1].[ValueStr]
+	[u].[Id] = [t1].[c1],
+	[u].[Value] = [t1].[Value_1],
+	[u].[ValueStr] = [t1].[ValueStr]
 OUTPUT
-	[DELETED].[Id],
-	[DELETED].[Value_1],
-	[DELETED].[ValueStr],
-	[INSERTED].[Id],
-	[INSERTED].[Value_1],
-	[INSERTED].[ValueStr]
+	DELETED.[Id],
+	DELETED.[Value],
+	DELETED.[ValueStr],
+	INSERTED.[Id],
+	INSERTED.[Value],
+	INSERTED.[ValueStr]
 FROM
+	[TableWithData] [u],
 	(
 		SELECT TOP (@take)
-			[i].[Id],
+			20 as [c1],
 			[i].[Value] as [Value_1],
-			[i].[ValueStr]
+			[i].[ValueStr],
+			[i].[Id]
 		FROM
 			[TableWithData] [i]
 		WHERE
@@ -65,6 +67,9 @@ FROM
 		ORDER BY
 			[i].[Id]
 	) [t1]
+WHERE
+	[u].[Id] = [t1].[Id] AND [u].[Value] = [t1].[Value_1] AND
+	([u].[ValueStr] = [t1].[ValueStr] OR [u].[ValueStr] IS NULL AND [t1].[ValueStr] IS NULL)
 
 BeforeExecute
 -- SqlServer.2019

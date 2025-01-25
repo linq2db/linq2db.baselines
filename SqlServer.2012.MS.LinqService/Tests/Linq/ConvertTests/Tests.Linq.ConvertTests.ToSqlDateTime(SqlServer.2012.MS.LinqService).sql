@@ -2,7 +2,7 @@
 -- SqlServer.2012.MS SqlServer.2012
 
 SELECT
-	Convert(DateTime, Convert(VarChar(11), DatePart(year, [t].[DateTimeValue])) + N'-01-01 00:20:00')
+	CAST(CAST(DatePart(year, [t].[DateTimeValue]) AS VarChar(11)) + N'-01-01 00:20:00' AS DateTime)
 FROM
 	[LinqDataTypes] [t]
 

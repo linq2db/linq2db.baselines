@@ -2,7 +2,7 @@
 -- SQLite.Classic SQLite
 
 SELECT
-	Cast([t].[MoneyValue] as INTEGER)
+	CAST([t].[MoneyValue] AS INTEGER)
 FROM
 	[LinqDataTypes] [t]
 

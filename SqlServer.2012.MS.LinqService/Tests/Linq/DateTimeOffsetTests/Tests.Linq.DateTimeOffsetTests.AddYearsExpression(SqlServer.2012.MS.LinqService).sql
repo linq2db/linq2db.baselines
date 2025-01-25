@@ -490,7 +490,7 @@ DECLARE @p Int -- Int32
 SET     @p = 1
 
 SELECT
-	DateAdd(year, @p, [t].[TransactionDate])
+	CAST(DateAdd(year, @p, [t].[TransactionDate]) AS Date)
 FROM
 	[Transactions] [t]
 

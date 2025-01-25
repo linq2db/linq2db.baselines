@@ -36,29 +36,25 @@ VALUES
 
 BeforeExecute
 -- SqlServer.2008
-DECLARE @take Int -- Int32
-SET     @take = 1
 
-SELECT TOP (@take)
-	[_].[Id],
-	[_].[BlobValue]
+SELECT TOP (1)
+	[t1].[Id],
+	[t1].[BlobValue]
 FROM
-	[BlobClass] [_]
+	[BlobClass] [t1]
 WHERE
-	[_].[Id] = 1
+	[t1].[Id] = 1
 
 BeforeExecute
 -- SqlServer.2008
-DECLARE @take Int -- Int32
-SET     @take = 1
 
-SELECT TOP (@take)
-	[_].[Id],
-	[_].[BlobValue]
+SELECT TOP (1)
+	[t1].[Id],
+	[t1].[BlobValue]
 FROM
-	[BlobClass] [_]
+	[BlobClass] [t1]
 WHERE
-	[_].[Id] = 1
+	[t1].[Id] = 1
 
 BeforeExecute
 -- SqlServer.2008

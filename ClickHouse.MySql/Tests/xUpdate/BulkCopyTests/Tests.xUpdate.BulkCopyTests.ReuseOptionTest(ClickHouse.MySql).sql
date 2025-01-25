@@ -7,7 +7,7 @@ INSERT INTO Parent
 	Value1
 )
 VALUES
-(toInt32(111001),NULL)
+(111001,NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
@@ -18,5 +18,5 @@ INSERT INTO Child
 	ChildID
 )
 VALUES
-(toInt32(111001),toInt32(0))
+(111001,0)
 

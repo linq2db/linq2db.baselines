@@ -88,11 +88,11 @@ BeforeExecute
 -- SQLite.MS SQLite
 
 SELECT
-	[cp].[Id]
+	[x].[Id]
 FROM
-	[Table2_3014] [cp]
+	[Table2_3014] [x]
 WHERE
-	[cp].[Id] = 0
+	[x].[Id] = 0
 
 BeforeExecute
 BeginTransaction(Serializable)
@@ -110,9 +110,10 @@ BeforeExecute
 -- SQLite.MS SQLite
 
 SELECT
-	[t].[Id]
+	[x].[Id],
+	1
 FROM
-	[Table2_3014] [t]
+	[Table2_3014] [x]
 WHERE
 	1 = 0
 
@@ -132,9 +133,10 @@ BeforeExecute
 -- SQLite.MS SQLite
 
 SELECT
-	[t].[Id]
+	[e].[Id],
+	'0'
 FROM
-	[Table2_3014] [t]
+	[Table2_3014] [e]
 
 BeforeExecute
 -- SQLite.MS SQLite

@@ -2,11 +2,11 @@
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	(
 		SELECT
-			0 as [c1]
+			[t1].[ParentID]
 		FROM
 			[Child] [t1]
 		GROUP BY

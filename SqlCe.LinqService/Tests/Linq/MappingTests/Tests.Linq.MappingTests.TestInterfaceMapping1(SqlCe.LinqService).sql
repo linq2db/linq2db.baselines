@@ -2,7 +2,7 @@
 -- SqlCe
 
 SELECT
-	Count(*)
+	COUNT(*) as [COUNT_1]
 FROM
 	[Child] [c_1]
 WHERE

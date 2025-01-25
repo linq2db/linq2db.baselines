@@ -2,19 +2,14 @@
 -- Oracle.18.Managed Oracle.Managed Oracle12
 
 SELECT
-	Max(t2."cnt")
-FROM
-	(
+	MAX((
 		SELECT
-			(
-				SELECT
-					Count(*)
-				FROM
-					"Child" t1
-				WHERE
-					p."ParentID" = t1."ParentID"
-			) as "cnt"
+			COUNT(*)
 		FROM
-			"Parent" p
-	) t2
+			"Child" a_Children
+		WHERE
+			t1."ParentID" = a_Children."ParentID"
+	))
+FROM
+	"Parent" t1
 

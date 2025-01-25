@@ -55,7 +55,7 @@ BeforeExecute
 -- SqlServer.2019
 
 SELECT
-	DateAdd(dayofyear, 3, [t].[TransactionDate])
+	CAST(DateAdd(dayofyear, 3, [t].[TransactionDate]) AS Date)
 FROM
 	[Transactions] [t]
 

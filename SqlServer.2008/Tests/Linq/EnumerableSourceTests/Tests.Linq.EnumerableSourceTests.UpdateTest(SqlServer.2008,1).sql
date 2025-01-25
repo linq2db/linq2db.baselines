@@ -32,14 +32,16 @@ BeforeExecute
 -- SqlServer.2008
 
 UPDATE
-	[t]
+	[u]
 SET
-	[t].[Value] = [r].[Value]
+	[u].[Value] = [r].[Value]
 FROM
-	[TableToInsert] [t]
-		INNER JOIN (VALUES
-			(2,N'Janet Updated'), (3,N'Doe Updated')
-		) [r]([Id], [Value]) ON [t].[Id] = [r].[Id]
+	[TableToInsert] [u],
+	(VALUES
+		(2,N'Janet Updated'), (3,N'Doe Updated')
+	) [r]([Id], [Value])
+WHERE
+	[u].[Id] = [r].[Id]
 
 BeforeExecute
 -- SqlServer.2008

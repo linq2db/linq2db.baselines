@@ -2,14 +2,14 @@
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
-	p.PersonID,
-	_gjd_ri.PersonID,
-	_gjd_ri.Diagnosis
+	m_1.PersonID,
+	d.PersonID,
+	d.Diagnosis
 FROM
-	Person p
-		INNER JOIN Patient _gjd_ri ON _gjd_ri.PersonID = p.PersonID
+	Person m_1
+		INNER JOIN Patient d ON m_1.PersonID = d.PersonID
 WHERE
-	(position(lowerUTF8(p.FirstName), 'test') > toInt32(0))
+	position(lowerUTF8(m_1.FirstName), 'test') > 0
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -20,5 +20,5 @@ SELECT
 FROM
 	Person p
 WHERE
-	(position(lowerUTF8(p.FirstName), 'test') > toInt32(0))
+	position(lowerUTF8(p.FirstName), 'test') > 0
 

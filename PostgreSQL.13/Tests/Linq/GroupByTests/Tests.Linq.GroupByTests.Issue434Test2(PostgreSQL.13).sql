@@ -4,14 +4,14 @@ BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
 
 SELECT
-	p."PersonID",
-	gjd_ri."PersonID",
-	gjd_ri."Diagnosis"
+	m_1."PersonID",
+	d."PersonID",
+	d."Diagnosis"
 FROM
-	"Person" p
-		INNER JOIN "Patient" gjd_ri ON gjd_ri."PersonID" = p."PersonID"
+	"Person" m_1
+		INNER JOIN "Patient" d ON m_1."PersonID" = d."PersonID"
 WHERE
-	Lower(p."FirstName") LIKE '%test%' ESCAPE '~'
+	Lower(m_1."FirstName") LIKE '%test%' ESCAPE '~'
 
 BeforeExecute
 DisposeTransaction

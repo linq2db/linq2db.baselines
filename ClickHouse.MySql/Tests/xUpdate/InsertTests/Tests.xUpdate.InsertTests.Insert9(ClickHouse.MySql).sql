@@ -4,7 +4,7 @@
 ALTER TABLE
 	Child
 DELETE WHERE
-	ParentID > toInt32(1000)
+	ParentID > 1000
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
@@ -12,7 +12,7 @@ BeforeExecute
 ALTER TABLE
 	Parent
 DELETE WHERE
-	ParentID > toInt32(1000)
+	ParentID > 1000
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
@@ -24,8 +24,8 @@ INSERT INTO Parent
 )
 VALUES
 (
-	toInt32(1001),
-	toInt32(1001)
+	1001,
+	1001
 )
 
 BeforeExecute
@@ -42,17 +42,17 @@ SELECT
 FROM
 	Parent p
 WHERE
-	p.ParentID = toInt32(1001)
+	p.ParentID = 1001
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	Child c_1
 WHERE
-	c_1.ParentID = toInt32(1001)
+	c_1.ParentID = 1001
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
@@ -60,7 +60,7 @@ BeforeExecute
 ALTER TABLE
 	Child
 DELETE WHERE
-	ParentID > toInt32(1000)
+	ParentID > 1000
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
@@ -68,5 +68,5 @@ BeforeExecute
 ALTER TABLE
 	Parent
 DELETE WHERE
-	ParentID > toInt32(1000)
+	ParentID > 1000
 

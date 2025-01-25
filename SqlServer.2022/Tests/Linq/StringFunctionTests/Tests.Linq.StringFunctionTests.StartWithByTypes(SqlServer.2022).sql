@@ -32,13 +32,13 @@ VALUES
 
 BeforeExecute
 -- SqlServer.2022
-DECLARE @str Char(5) -- AnsiStringFixedLength
+DECLARE @str NVarChar(4000) -- String
 SET     @str = N'some%'
-DECLARE @str_1 NChar(5) -- StringFixedLength
+DECLARE @str_1 NVarChar(4000) -- String
 SET     @str_1 = N'some%'
-DECLARE @str_2 VarChar(50) -- AnsiString
+DECLARE @str_2 NVarChar(4000) -- String
 SET     @str_2 = N'some%'
-DECLARE @str_3 NVarChar(50) -- String
+DECLARE @str_3 NVarChar(4000) -- String
 SET     @str_3 = N'some%'
 
 SELECT

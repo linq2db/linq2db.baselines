@@ -1,9 +1,7 @@
 ﻿BeforeExecute
 -- SqlCe
-DECLARE @take Int -- Int32
-SET     @take = 1
 
-SELECT TOP (@take)
+SELECT TOP (1)
 	[p].[ParentID]
 FROM
 	[Parent] [p]
@@ -12,10 +10,8 @@ WHERE
 
 BeforeExecute
 -- SqlCe
-DECLARE @take Int -- Int32
-SET     @take = 1
 
-SELECT TOP (@take)
+SELECT TOP (1)
 	[p].[ParentID]
 FROM
 	[Parent] [p]
@@ -24,10 +20,8 @@ WHERE
 
 BeforeExecute
 -- SqlCe
-DECLARE @take Int -- Int32
-SET     @take = 1
 
-SELECT TOP (@take)
+SELECT TOP (1)
 	[p].[ParentID]
 FROM
 	[Parent] [p]

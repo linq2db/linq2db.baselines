@@ -1,7 +1,5 @@
 ﻿BeforeExecute
 -- SqlServer.Contained.MS SqlServer.2019
-DECLARE @take Int -- Int32
-SET     @take = 100
 
 SELECT
 	[c_1].[ParentID],
@@ -14,13 +12,31 @@ WHERE
 			*
 		FROM
 			(
-				SELECT TOP (@take)
-					[p].[ParentID],
-					[p].[Value1] as [Value_1]
+				SELECT TOP (100)
+					[param].[ParentID],
+					[param].[Value1] as [Value_1]
 				FROM
-					[Parent] [p]
-			) [t1]
+					[Parent] [param]
+			) [param_1]
 		WHERE
-			[t1].[ParentID] = [c_1].[ParentID] AND [t1].[Value_1] = [c_1].[ParentID]
+			[param_1].[ParentID] = [c_1].[ParentID] AND [param_1].[Value_1] = [c_1].[ParentID]
 	)
+
+BeforeExecute
+-- SqlServer.Contained.MS SqlServer.2019
+
+SELECT
+	[t1].[ParentID],
+	[t1].[ChildID]
+FROM
+	[Child] [t1]
+
+BeforeExecute
+-- SqlServer.Contained.MS SqlServer.2019
+
+SELECT
+	[t1].[ParentID],
+	[t1].[Value1]
+FROM
+	[Parent] [t1]
 

@@ -20,20 +20,18 @@ IF (OBJECT_ID(N'[Issue3761Table]', N'U') IS NULL)
 
 BeforeExecute
 -- SqlServer.2014
-DECLARE @default DateTime2
-SET     @default = DATETIME2FROMPARTS(1, 1, 1, 0, 0, 0, 0, 7)
 DECLARE @DATUM DateTime2
 SET     @DATUM = DATETIME2FROMPARTS(2019, 1, 1, 0, 0, 0, 0, 7)
 
 SELECT
-	[t1].[Key_1],
-	[t1].[Key_2],
-	Sum([t1].[SKUPAJ])
+	[t1].[Year_1],
+	[t1].[Month_1],
+	SUM([t1].[SKUPAJ])
 FROM
 	(
 		SELECT
-			DatePart(year, Coalesce([n].[DATUM], @default)) as [Key_1],
-			DatePart(month, Coalesce([n].[DATUM], @default)) as [Key_2],
+			DatePart(year, IIF([n].[DATUM] IS NOT NULL, [n].[DATUM], DATETIME2FROMPARTS(1, 1, 1, 0, 0, 0, 0, 7))) as [Year_1],
+			DatePart(month, IIF([n].[DATUM] IS NOT NULL, [n].[DATUM], DATETIME2FROMPARTS(1, 1, 1, 0, 0, 0, 0, 7))) as [Month_1],
 			[n].[SKUPAJ]
 		FROM
 			[Issue3761Table] [n]
@@ -41,8 +39,8 @@ FROM
 			[n].[DATUM] < @DATUM
 	) [t1]
 GROUP BY
-	[t1].[Key_1],
-	[t1].[Key_2]
+	[t1].[Year_1],
+	[t1].[Month_1]
 
 BeforeExecute
 -- SqlServer.2014

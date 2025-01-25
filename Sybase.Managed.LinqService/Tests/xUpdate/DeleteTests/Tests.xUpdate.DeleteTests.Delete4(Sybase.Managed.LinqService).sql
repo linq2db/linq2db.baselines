@@ -3,9 +3,9 @@
 
 DELETE FROM [GrandChild]
 FROM
-	[GrandChild] [t1]
+	[GrandChild] [gc]
 WHERE
-	[t1].[GrandChildID] IN (1001, 1002)
+	[gc].[GrandChildID] IN (1001, 1002)
 
 BeforeExecute
 -- Sybase.Managed Sybase
@@ -43,7 +43,7 @@ BeforeExecute
 -- Sybase.Managed Sybase
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	[GrandChild] [gc]
 WHERE
@@ -63,7 +63,7 @@ BeforeExecute
 -- Sybase.Managed Sybase
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	[GrandChild] [gc]
 WHERE

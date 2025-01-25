@@ -2,14 +2,14 @@
 -- ClickHouse.Client ClickHouse
 
 SELECT
-	p.ParentID,
-	true
+	p.ParentID as id,
+	true as val
 FROM
 	Parent p
 UNION DISTINCT
 SELECT
-	ch.ParentID,
-	false
+	ch.ParentID as id,
+	false as val
 FROM
 	Child ch
 

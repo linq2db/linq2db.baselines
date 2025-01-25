@@ -18,25 +18,25 @@ BeforeExecute
 -- ClickHouse.Client ClickHouse
 
 SELECT
-	_.ID,
-	_.TestField,
-	_.TestNullable
+	t1.ID,
+	t1.TestField,
+	t1.TestNullable
 FROM
-	T1351Model _
+	T1351Model t1
 WHERE
-	_.TestField = toInt8(0)
+	t1.TestField = toInt8(0)
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
 
 SELECT
-	_.ID,
-	_.TestField,
-	_.TestNullable
+	t1.ID,
+	t1.TestField,
+	t1.TestNullable
 FROM
-	T1351Model _
+	T1351Model t1
 WHERE
-	(_.TestNullable <> toInt8(1) OR _.TestNullable IS NULL)
+	(t1.TestNullable <> toInt8(1) OR t1.TestNullable IS NULL)
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse

@@ -26,7 +26,7 @@ INSERT INTO Issue1403Tests_1
 )
 VALUES
 (
-	toInt32(1),
+	1,
 	'New event'
 )
 
@@ -38,7 +38,7 @@ SELECT
 	t1.event_description
 FROM
 	Issue1403Tests_1 t1
-LIMIT toInt32(1)
+LIMIT 1
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse

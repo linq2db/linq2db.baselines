@@ -2,12 +2,11 @@
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	(
 		SELECT
-			[t1].[ParentID],
-			[t1].[ChildID]
+			*
 		FROM
 			[Child] [t1]
 		LIMIT 5

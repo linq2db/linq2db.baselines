@@ -1,32 +1,29 @@
 ﻿BeforeExecute
 -- SqlCe
-DECLARE @take Int -- Int32
-SET     @take = 1
 
 SELECT
-	[t3].[p1],
-	[t1].[ParentID],
-	[t1].[ChildID]
+	[t1].[COUNT_1],
+	[t2].[ParentID],
+	[t2].[ChildID]
 FROM
-	[Parent] [p]
+	[Parent] [t3]
 		OUTER APPLY (
-			SELECT TOP (@take)
-				[ch].[ParentID],
-				[ch].[ChildID]
+			SELECT
+				COUNT(*) as [COUNT_1]
 			FROM
 				[Child] [ch]
 			WHERE
-				[ch].[ParentID] = [p].[ParentID]
+				[t3].[ParentID] = [ch].[ParentID]
 		) [t1]
-		LEFT JOIN (
-			SELECT
-				Count(*) as [p1],
-				[t2].[ParentID]
+		CROSS APPLY (
+			SELECT TOP (1)
+				[ch_1].[ParentID],
+				[ch_1].[ChildID]
 			FROM
-				[Child] [t2]
-			GROUP BY
-				[t2].[ParentID]
-		) [t3] ON [p].[ParentID] = [t3].[ParentID]
+				[Child] [ch_1]
+			WHERE
+				[t3].[ParentID] = [ch_1].[ParentID]
+		) [t2]
 WHERE
-	[p].[ParentID] = 1
+	[t3].[ParentID] = 1
 

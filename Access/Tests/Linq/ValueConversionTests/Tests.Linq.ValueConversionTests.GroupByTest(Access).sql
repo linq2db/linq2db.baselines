@@ -523,41 +523,46 @@ VALUES
 )
 
 BeforeExecute
+BeginTransaction(Unspecified)
+BeforeExecute
+-- Access AccessOleDb
+DECLARE @testedList VarWChar(20) -- String
+SET     @testedList = '[{"Value":"Value1"}]'
+DECLARE @testedList_1 VarWChar(20) -- String
+SET     @testedList_1 = '[{"Value":"Value1"}]'
+
+SELECT
+	[m_1].[Id],
+	[m_1].[Id],
+	[m_1].[Value1],
+	[m_1].[Value2],
+	[m_1].[Enum],
+	[m_1].[EnumNullable],
+	[m_1].[EnumWithNull],
+	[m_1].[EnumWithNullDeclarative],
+	[m_1].[BoolValue],
+	[m_1].[AnotherBoolValue],
+	[m_1].[DateTimeNullable]
+FROM
+	[ValueConversion] [m_1]
+WHERE
+	@testedList = [m_1].[Value2] AND @testedList_1 = [m_1].[Value2]
+
+BeforeExecute
+DisposeTransaction
+BeforeExecute
 -- Access AccessOleDb
 DECLARE @testedList VarWChar(20) -- String
 SET     @testedList = '[{"Value":"Value1"}]'
 
 SELECT
-	[t].[Id]
+	[g_1].[Id]
 FROM
-	[ValueConversion] [t]
+	[ValueConversion] [g_1]
 WHERE
-	@testedList = [t].[Value2]
+	@testedList = [g_1].[Value2]
 GROUP BY
-	[t].[Id]
-
-BeforeExecute
--- Access AccessOleDb
-DECLARE @Value2 VarWChar(20) -- String
-SET     @Value2 = '[{"Value":"Value1"}]'
-DECLARE @Id Integer -- Int32
-SET     @Id = 1
-
-SELECT
-	[t].[Id],
-	[t].[Value1],
-	[t].[Value2],
-	[t].[Enum],
-	[t].[EnumNullable],
-	[t].[EnumWithNull],
-	[t].[EnumWithNullDeclarative],
-	[t].[BoolValue],
-	[t].[AnotherBoolValue],
-	[t].[DateTimeNullable]
-FROM
-	[ValueConversion] [t]
-WHERE
-	@Value2 = [t].[Value2] AND [t].[Id] = @Id
+	[g_1].[Id]
 
 BeforeExecute
 -- Access AccessOleDb

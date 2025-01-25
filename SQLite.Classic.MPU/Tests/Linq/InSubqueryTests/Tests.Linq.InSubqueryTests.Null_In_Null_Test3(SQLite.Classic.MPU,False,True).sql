@@ -51,31 +51,18 @@ BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
 SELECT
-	[t1].[ID]
-FROM
-	[test_in_1] [t1]
-
-BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
-
-SELECT
 	[t].[ID]
 FROM
 	[test_in_1] [t]
 WHERE
-	([t].[ID] IS NULL AND 1 IN (
+	EXISTS(
 		SELECT
-			1
+			*
 		FROM
 			[test_in_2] [p]
 		WHERE
-			[p].[ID] IS NULL
-	) OR [t].[ID] IS NOT NULL AND [t].[ID] IN (
-		SELECT
-			[p].[ID]
-		FROM
-			[test_in_2] [p]
-	))
+			([t].[ID] = [p].[ID] OR [t].[ID] IS NULL AND [p].[ID] IS NULL)
+	)
 
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
@@ -83,7 +70,7 @@ BeforeExecute
 SELECT
 	[t1].[ID]
 FROM
-	[test_in_2] [t1]
+	[test_in_1] [t1]
 
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite

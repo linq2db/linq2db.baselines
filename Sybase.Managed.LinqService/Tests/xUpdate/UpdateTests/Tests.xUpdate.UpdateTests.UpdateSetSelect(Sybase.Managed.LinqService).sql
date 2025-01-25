@@ -13,19 +13,13 @@ BeforeExecute
 UPDATE
 	[Parent]
 SET
-	[p].[ParentID] = (
-		SELECT
-			[c_1].[ParentID]
-		FROM
-			[Child] [c_1]
-		WHERE
-			[c_1].[ChildID] = 11
-	) + 1000
+	[ParentID] = [c_2].[ParentID] + 1000
 FROM
-	[Parent] [p]
-		INNER JOIN [Child] [c_2] ON [p].[ParentID] = [c_2].[ParentID]
+	[Child] [c_1],
+	[Child] [c_2]
 WHERE
-	[p].[ParentID] = 1
+	[Parent].[ParentID] = 1 AND [Parent].[ParentID] = [c_1].[ParentID] AND
+	[c_2].[ChildID] = 11
 
 BeforeExecute
 -- Sybase.Managed Sybase
@@ -35,9 +29,7 @@ SET     @ParentID = 1
 UPDATE
 	[Parent]
 SET
-	[_].[ParentID] = @ParentID
-FROM
-	[Parent] [_]
+	[ParentID] = @ParentID
 WHERE
-	[_].[ParentID] = 1001
+	[Parent].[ParentID] = 1001
 

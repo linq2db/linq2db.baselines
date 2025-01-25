@@ -12,7 +12,7 @@ BeforeExecute
 
 SELECT
 	[x_1].[Key_1],
-	Sum([x_1].[MatchScore])
+	SUM([x_1].[MatchScore])
 FROM
 	(
 		SELECT DISTINCT

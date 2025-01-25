@@ -16,7 +16,7 @@ SELECT
 	[p].[ParentID],
 	[p].[ChildID]
 FROM
-	[CTE_1] [p],
-	[Child] [c_2] WITH (HoldLock)
-OPTION (FAST 10, RECOMPILE)
+	[CTE_1] [p]
+		CROSS JOIN [Child] [c_2] WITH (HoldLock)
+OPTION (RECOMPILE, FAST 10)
 

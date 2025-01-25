@@ -4,9 +4,9 @@ BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12
 
 DELETE FROM
-	"LinqDataTypes" t1
+	"LinqDataTypes" c_1
 WHERE
-	t1.ID > 1000
+	c_1.ID > 1000
 
 BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12
@@ -18,13 +18,13 @@ INSERT INTO "LinqDataTypes"
 	"BoolValue"
 )
 SELECT
-	Cast(Floor(t2."c1" + 1001D) as Int),
+	CAST(Floor(t2."c1" + 1001D) AS Int),
 	Sys_Guid(),
 	1
 FROM
 	(
 		SELECT DISTINCT
-			Floor(Cast(t1.ID as Float) / 3D) as "c1"
+			Floor(CAST(t1.ID AS Float) / 3D) as "c1"
 		FROM
 			"LinqDataTypes" t1
 	) t2
@@ -33,7 +33,7 @@ BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12
 
 DELETE FROM
-	"LinqDataTypes" t1
+	"LinqDataTypes" c_1
 WHERE
-	t1.ID > 1000
+	c_1.ID > 1000
 

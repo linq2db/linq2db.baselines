@@ -5,7 +5,7 @@ BeforeExecute
 -- DB2 DB2.LUW DB2LUW (asynchronously)
 
 DELETE FROM
-	ALLTYPES "t1"
+	ALLTYPES "p"
 WHERE
-	"t1".SMALLINTDATATYPE >= 5000
+	"p".SMALLINTDATATYPE >= 5000
 

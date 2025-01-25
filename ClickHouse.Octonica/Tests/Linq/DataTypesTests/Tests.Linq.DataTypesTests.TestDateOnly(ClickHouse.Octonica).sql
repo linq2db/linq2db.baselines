@@ -24,8 +24,8 @@ INSERT INTO DateOnlyTable
 	ColumnNullable
 )
 VALUES
-(toInt32(1),toDate32('1950-01-01'),NULL),
-(toInt32(2),toDate32('2020-02-29'),toDate32('2200-01-01'))
+(1,toDate32('1950-01-01'),NULL),
+(2,toDate32('2020-02-29'),toDate32('2200-01-01'))
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -69,7 +69,7 @@ INSERT INTO DateOnlyTable
 )
 VALUES
 (
-	toInt32(1),
+	1,
 	toDate32('1950-01-01'),
 	NULL
 )
@@ -85,7 +85,7 @@ INSERT INTO DateOnlyTable
 )
 VALUES
 (
-	toInt32(2),
+	2,
 	toDate32('2020-02-29'),
 	toDate32('2200-01-01')
 )
@@ -119,8 +119,8 @@ INSERT INTO DateOnlyTable
 	ColumnNullable
 )
 VALUES
-(toInt32(1),toDate32('1950-01-01'),NULL),
-(toInt32(2),toDate32('2020-02-29'),toDate32('2200-01-01'))
+(1,toDate32('1950-01-01'),NULL),
+(2,toDate32('2020-02-29'),toDate32('2200-01-01'))
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse

@@ -2,13 +2,13 @@
 -- SqlServer.2017.MS SqlServer.2017
 
 SELECT
-	Count(*)
+	COUNT(*)
 
 BeforeExecute
 -- SqlServer.2017.MS SqlServer.2017
 
 SELECT
-	Count(*)
+	COUNT(*)
 WHERE
 	1 = 0
 

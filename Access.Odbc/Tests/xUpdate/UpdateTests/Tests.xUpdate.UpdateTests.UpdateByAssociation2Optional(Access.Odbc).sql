@@ -113,12 +113,12 @@ DECLARE @id Int -- Int32
 SET     @id = 3
 
 UPDATE
-	[MainTable] [t1]
-		INNER JOIN [AssociatedTable] [a_MainOptional] ON ([a_MainOptional].[Id] = [t1].[Id])
+	[MainTable] [a_MainOptional],
+	[AssociatedTable] [pat]
 SET
-	[t1].[Field] = 'test'
+	[a_MainOptional].[Field] = 'test'
 WHERE
-	[a_MainOptional].[Id] = ?
+	[pat].[Id] = ? AND [pat].[Id] = [a_MainOptional].[Id]
 
 BeforeExecute
 -- Access.Odbc AccessODBC

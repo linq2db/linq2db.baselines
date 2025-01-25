@@ -53,16 +53,14 @@ BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 DECLARE @id  -- Int32
 SET     @id = 1
-DECLARE @take  -- Int32
-SET     @take = 2
 
 SELECT
-	[_].[Value5]
+	[t1].[Value5]
 FROM
-	[UpdateSetTest] [_]
+	[UpdateSetTest] [t1]
 WHERE
-	[_].[Id] = @id
-LIMIT @take
+	[t1].[Id] = @id
+LIMIT 2
 
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
@@ -82,16 +80,14 @@ BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 DECLARE @id  -- Int32
 SET     @id = 1
-DECLARE @take  -- Int32
-SET     @take = 2
 
 SELECT
-	[_].[Value5]
+	[t1].[Value5]
 FROM
-	[UpdateSetTest] [_]
+	[UpdateSetTest] [t1]
 WHERE
-	[_].[Id] = @id
-LIMIT @take
+	[t1].[Id] = @id
+LIMIT 2
 
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite

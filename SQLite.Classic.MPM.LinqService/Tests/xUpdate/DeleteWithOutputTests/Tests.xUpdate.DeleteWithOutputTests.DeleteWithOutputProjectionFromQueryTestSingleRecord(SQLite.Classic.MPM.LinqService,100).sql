@@ -254,7 +254,11 @@ WHERE
 	[TableWithData].[Id] = 3
 RETURNING
 	[TableWithData].[Id] + 1,
-	[TableWithData].[ValueStr] || Cast(1 as VarChar(11))
+	[TableWithData].[ValueStr] || 1,
+	CASE
+		WHEN [TableWithData].[ValueStr] IS NOT NULL THEN 1
+		ELSE 0
+	END
 
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite

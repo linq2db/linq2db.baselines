@@ -2,7 +2,7 @@
 -- SQLite.MS SQLite
 
 SELECT
-	Cast([t].[MoneyValue] as SmallInt)
+	CAST([t].[MoneyValue] AS SmallInt)
 FROM
 	[LinqDataTypes] [t]
 

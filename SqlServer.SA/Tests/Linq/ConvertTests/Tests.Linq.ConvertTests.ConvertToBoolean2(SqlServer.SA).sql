@@ -2,9 +2,14 @@
 -- SqlServer.SA SqlServer.2019
 
 SELECT
-	Convert(Bit, [t].[MoneyValue] - 4.5)
+	[p_1].[c1]
 FROM
-	[LinqDataTypes] [t]
+	(
+		SELECT
+			IIF([p].[MoneyValue] <> 4.5, 1, 0) as [c1]
+		FROM
+			[LinqDataTypes] [p]
+	) [p_1]
 WHERE
-	Convert(Bit, [t].[MoneyValue] - 4.5) = 0
+	[p_1].[c1] = 0
 

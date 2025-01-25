@@ -7,5 +7,5 @@ SELECT
 FROM
 	Parent p
 WHERE
-	(1 = 0 OR p.ParentID = toInt32(2))
+	p.ParentID = 2
 

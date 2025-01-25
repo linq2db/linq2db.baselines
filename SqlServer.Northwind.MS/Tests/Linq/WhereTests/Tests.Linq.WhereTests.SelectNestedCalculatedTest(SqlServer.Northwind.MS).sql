@@ -2,9 +2,9 @@
 -- SqlServer.Northwind.MS SqlServer.2019
 
 SELECT
-	[o].[Freight] * 1000
+	([r].[Freight] * 1000) / 1000
 FROM
-	[Orders] [o]
+	[Orders] [r]
 WHERE
-	[o].[Freight] * 1000 > 100000
+	[r].[Freight] * 1000 > 100000
 

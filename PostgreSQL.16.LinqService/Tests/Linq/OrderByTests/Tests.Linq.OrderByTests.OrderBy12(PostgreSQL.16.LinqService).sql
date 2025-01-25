@@ -7,5 +7,5 @@ SELECT
 FROM
 	"Child" ch
 ORDER BY
-	ch."ChildID" % 2 DESC
+	(ch."ChildID"::decimal % 2)::decimal DESC
 

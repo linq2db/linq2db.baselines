@@ -30,8 +30,8 @@ INSERT INTO Issue2032Table
 	Int2
 )
 VALUES
-(toInt32(1),toDecimal128('123.456', 4),NULL,NULL,NULL,NULL),
-(toInt32(2),toDecimal128('-123.456', 4),toDecimal128('678.903', 4),toDecimal128('3523.2352', 4),toInt32(-123),toInt32(345))
+(1,toDecimal128('123.456', 4),NULL,NULL,NULL,NULL),
+(2,toDecimal128('-123.456', 4),toDecimal128('678.903', 4),toDecimal128('3523.2352', 4),-123,345)
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -39,10 +39,16 @@ BeforeExecute
 SELECT
 	r.Id,
 	r.Decimal1,
-	r.Decimal2,
-	Coalesce(r.Decimal3, toDecimal128('0.1', 4)),
-	r.Int1,
-	Coalesce(r.Int2, toInt32(22))
+	CASE
+		WHEN r.Decimal2 IS NOT NULL THEN r.Decimal2
+		ELSE toDecimal128('0', 4)
+	END,
+	r.Decimal3,
+	CASE
+		WHEN r.Int1 IS NOT NULL THEN r.Int1
+		ELSE 0
+	END,
+	r.Int2
 FROM
 	Issue2032Table r
 ORDER BY

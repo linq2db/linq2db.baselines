@@ -2,8 +2,8 @@
 -- Sybase.Managed Sybase
 
 SELECT
-	Min([t1].[ParentID]),
-	Max([t1].[ParentID])
+	MIN([gr].[ParentID]),
+	MAX([gr].[ParentID])
 FROM
-	[Parent] [t1]
+	[Parent] [gr]
 

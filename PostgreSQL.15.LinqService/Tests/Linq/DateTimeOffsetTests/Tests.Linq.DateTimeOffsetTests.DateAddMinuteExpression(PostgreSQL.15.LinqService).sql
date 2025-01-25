@@ -290,7 +290,7 @@ DECLARE @p Integer -- Int32
 SET     @p = 5
 
 SELECT
-	t."TransactionDate" + :p * Interval '1 Minute'
+	Floor(Extract(minute From (t."TransactionDate" + :p * Interval '1 Minute')))::Int
 FROM
 	"Transactions" t
 

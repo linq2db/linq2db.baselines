@@ -22,45 +22,45 @@ AS
 ),
 [employeeHierarchy]
 (
+	[HierarchyLevel],
 	[EmployeeID],
 	[LastName],
 	[FirstName],
-	[ReportsTo],
-	[HierarchyLevel]
+	[ReportsTo]
 )
 AS
 (
 	SELECT
-		[e_1].[EmployeeID],
-		[e_1].[LastName],
-		[e_1].[FirstName],
-		[e_1].[ReportsTo],
-		1
+		1,
+		[t1].[EmployeeID],
+		[t1].[LastName],
+		[t1].[FirstName],
+		[t1].[ReportsTo]
 	FROM
-		[CTE_1] [e_1]
+		[CTE_1] [t1]
 	WHERE
-		[e_1].[ReportsTo] IS NULL
+		[t1].[ReportsTo] IS NULL
 	UNION ALL
 	SELECT
-		[e_2].[EmployeeID],
-		[e_2].[LastName],
-		[e_2].[FirstName],
-		[e_2].[ReportsTo],
-		[eh].[HierarchyLevel] + 1
+		[eh].[HierarchyLevel] + 1,
+		[t2].[EmployeeID],
+		[t2].[LastName],
+		[t2].[FirstName],
+		[t2].[ReportsTo]
 	FROM
-		[CTE_1] [e_2]
-			INNER JOIN [employeeHierarchy] [eh] ON [e_2].[ReportsTo] = [eh].[EmployeeID]
+		[CTE_1] [t2]
+			INNER JOIN [employeeHierarchy] [eh] ON [t2].[ReportsTo] = [eh].[EmployeeID]
 )
 SELECT
-	[t1].[EmployeeID],
-	[t1].[LastName],
-	[t1].[FirstName],
-	[t1].[ReportsTo],
-	[t1].[HierarchyLevel]
+	[t3].[EmployeeID],
+	[t3].[LastName],
+	[t3].[FirstName],
+	[t3].[ReportsTo],
+	[t3].[HierarchyLevel]
 FROM
-	[employeeHierarchy] [t1]
+	[employeeHierarchy] [t3]
 ORDER BY
-	[t1].[HierarchyLevel],
-	[t1].[LastName],
-	[t1].[FirstName]
+	[t3].[HierarchyLevel],
+	[t3].[LastName],
+	[t3].[FirstName]
 

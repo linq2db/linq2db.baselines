@@ -2,11 +2,11 @@
 -- SQLite.MS SQLite
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
-	[Person] [_]
+	[Person] [t1]
 WHERE
-	[_].[PersonID] IS NULL
+	1 = 0
 
 BeforeExecute
 -- SQLite.MS SQLite
@@ -14,9 +14,9 @@ DECLARE @id  -- Int32
 SET     @id = 1
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
-	[Person] [_]
+	[Person] [t1]
 WHERE
-	[_].[PersonID] = @id
+	[t1].[PersonID] = @id
 

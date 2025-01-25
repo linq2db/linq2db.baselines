@@ -17,9 +17,9 @@ INSERT INTO Issue464
 	Value
 )
 VALUES
-(toInt32(1),toInt32(1)),
-(toInt32(2),toInt32(2)),
-(toInt32(3),toInt32(3))
+(1,1),
+(2,2),
+(3,3)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse

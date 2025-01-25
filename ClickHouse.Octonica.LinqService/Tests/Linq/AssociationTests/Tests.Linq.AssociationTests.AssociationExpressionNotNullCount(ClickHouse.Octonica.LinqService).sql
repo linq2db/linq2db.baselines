@@ -21,7 +21,7 @@ INSERT INTO NotNullParent
 )
 VALUES
 (
-	toInt32(1)
+	1
 )
 
 BeforeExecute
@@ -33,7 +33,7 @@ INSERT INTO NotNullParent
 )
 VALUES
 (
-	toInt32(2)
+	2
 )
 
 BeforeExecute
@@ -59,14 +59,14 @@ INSERT INTO NotNullChild
 )
 VALUES
 (
-	toInt32(1)
+	1
 )
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	NotNullParent p
 		INNER JOIN NotNullChild a_ChildInner ON p.ID = a_ChildInner.ParentID

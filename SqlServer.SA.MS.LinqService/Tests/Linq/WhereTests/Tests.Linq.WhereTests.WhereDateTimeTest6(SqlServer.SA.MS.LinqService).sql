@@ -1,21 +1,19 @@
 ﻿BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
-DECLARE @Date DateTime2
-SET     @Date = DATETIME2FROMPARTS(2009, 9, 20, 0, 0, 0, 0, 7)
 
 SELECT
-	[_].[ID],
-	[_].[MoneyValue],
-	[_].[DateTimeValue],
-	[_].[DateTimeValue2],
-	[_].[BoolValue],
-	[_].[GuidValue],
-	[_].[SmallIntValue],
-	[_].[IntValue],
-	[_].[BigIntValue],
-	[_].[StringValue]
+	[t1].[ID],
+	[t1].[MoneyValue],
+	[t1].[DateTimeValue],
+	[t1].[DateTimeValue2],
+	[t1].[BoolValue],
+	[t1].[GuidValue],
+	[t1].[SmallIntValue],
+	[t1].[IntValue],
+	[t1].[BigIntValue],
+	[t1].[StringValue]
 FROM
-	[LinqDataTypes] [_]
+	[LinqDataTypes] [t1]
 WHERE
-	Convert(Date, [_].[DateTimeValue]) = @Date
+	CAST([t1].[DateTimeValue] AS Date) = CAST(DATETIMEFROMPARTS(2009, 9, 20, 0, 0, 0, 0) AS Date)
 

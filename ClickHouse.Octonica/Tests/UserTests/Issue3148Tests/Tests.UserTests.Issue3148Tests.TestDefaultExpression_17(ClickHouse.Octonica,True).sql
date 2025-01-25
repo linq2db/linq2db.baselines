@@ -2,7 +2,7 @@
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
-	toInt32(1)
+	1
 FROM
 	Child p
 
@@ -10,7 +10,7 @@ BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
-	toInt32(1)
+	1
 FROM
 	Child p
 

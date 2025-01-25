@@ -48,8 +48,8 @@ USING (SELECT :Id AS "Id" FROM SYS.DUAL) s ON
 WHEN MATCHED THEN
 	UPDATE 
 	SET
-		t1."Name" = :Name,
-		t1."Age" = :Age
+		"Name" = :Name,
+		"Age" = :Age
 WHEN NOT MATCHED THEN
 	INSERT
 	(
@@ -66,8 +66,6 @@ WHEN NOT MATCHED THEN
 
 BeforeExecute
 -- Oracle.11.Managed Oracle11
-DECLARE @take Int32
-SET     @take = 1
 
 SELECT
 	t."Id",
@@ -76,7 +74,7 @@ SELECT
 FROM
 	"PR_1598_Insert_Table_Cache" t
 WHERE
-	t."Id" = 1 AND ROWNUM <= :take
+	t."Id" = 1 AND ROWNUM <= 1
 
 BeforeExecute
 -- Oracle.11.Managed Oracle11
@@ -95,8 +93,8 @@ USING (SELECT :Id AS "Id" FROM SYS.DUAL) s ON
 WHEN MATCHED THEN
 	UPDATE 
 	SET
-		t1."Name" = :Name,
-		t1."Age" = :Age
+		"Name" = :Name,
+		"Age" = :Age
 WHEN NOT MATCHED THEN
 	INSERT
 	(
@@ -113,8 +111,6 @@ WHEN NOT MATCHED THEN
 
 BeforeExecute
 -- Oracle.11.Managed Oracle11
-DECLARE @take Int32
-SET     @take = 1
 
 SELECT
 	t."Id",
@@ -123,7 +119,7 @@ SELECT
 FROM
 	"PR_1598_Insert_Table_Cache" t
 WHERE
-	t."Id" = 1 AND ROWNUM <= :take
+	t."Id" = 1 AND ROWNUM <= 1
 
 BeforeExecute
 -- Oracle.11.Managed Oracle11

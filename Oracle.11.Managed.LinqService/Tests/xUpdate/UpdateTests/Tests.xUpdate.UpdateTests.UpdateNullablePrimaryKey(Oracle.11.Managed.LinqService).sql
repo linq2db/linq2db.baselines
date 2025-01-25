@@ -6,11 +6,11 @@ DECLARE @ParentID Int32
 SET     @ParentID = 10000
 
 UPDATE
-	"GrandChild"
+	"GrandChild" t1
 SET
-	"GrandChild"."GrandChildID" = :GrandChildID
+	"GrandChildID" = :GrandChildID
 WHERE
-	"GrandChild"."ParentID" = :ParentID AND "GrandChild"."ChildID" IS NULL
+	t1."ParentID" = :ParentID AND t1."ChildID" IS NULL
 
 BeforeExecute
 -- Oracle.11.Managed Oracle11
@@ -22,9 +22,9 @@ DECLARE @ChildID Int32
 SET     @ChildID = 111
 
 UPDATE
-	"GrandChild"
+	"GrandChild" t1
 SET
-	"GrandChild"."GrandChildID" = :GrandChildID
+	"GrandChildID" = :GrandChildID
 WHERE
-	"GrandChild"."ParentID" = :ParentID AND "GrandChild"."ChildID" = :ChildID
+	t1."ParentID" = :ParentID AND t1."ChildID" = :ChildID
 

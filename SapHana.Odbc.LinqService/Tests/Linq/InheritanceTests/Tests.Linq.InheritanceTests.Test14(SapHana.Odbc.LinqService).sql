@@ -2,14 +2,12 @@
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @id  -- Int32
 SET     @id = 10
-DECLARE @take  -- Int32
-SET     @take = 1
 
 SELECT
-	"x"."ChildID"
+	"c_1"."ChildID"
 FROM
-	"Child" "x"
+	"Child" "c_1"
 WHERE
-	"x"."ChildID" = ?
-LIMIT ?
+	"c_1"."ChildID" = ?
+LIMIT 1
 

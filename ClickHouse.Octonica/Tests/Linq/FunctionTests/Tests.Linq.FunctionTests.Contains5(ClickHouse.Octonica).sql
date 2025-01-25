@@ -7,7 +7,7 @@ SELECT
 FROM
 	Parent p
 WHERE
-	p.ParentID IN (toInt32(1), toInt32(2))
+	p.ParentID IN (1, 2)
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -18,5 +18,5 @@ SELECT
 FROM
 	Parent p
 WHERE
-	p.ParentID IN (toInt32(1), toInt32(2), toInt32(4))
+	p.ParentID IN (1, 2, 4)
 

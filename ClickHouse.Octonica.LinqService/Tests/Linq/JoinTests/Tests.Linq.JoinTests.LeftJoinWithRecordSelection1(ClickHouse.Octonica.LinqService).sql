@@ -24,7 +24,7 @@ INSERT INTO Fact
 )
 VALUES
 (
-	toInt32(3)
+	3
 )
 
 BeforeExecute
@@ -36,7 +36,7 @@ INSERT INTO Fact
 )
 VALUES
 (
-	toInt32(4)
+	4
 )
 
 BeforeExecute
@@ -48,7 +48,7 @@ INSERT INTO Fact
 )
 VALUES
 (
-	toInt32(5)
+	5
 )
 
 BeforeExecute
@@ -81,8 +81,8 @@ INSERT INTO Tag
 )
 VALUES
 (
-	toInt32(1),
-	toInt32(3),
+	1,
+	3,
 	'Tag3'
 )
 
@@ -97,8 +97,8 @@ INSERT INTO Tag
 )
 VALUES
 (
-	toInt32(2),
-	toInt32(3),
+	2,
+	3,
 	'Tag3'
 )
 
@@ -113,8 +113,8 @@ INSERT INTO Tag
 )
 VALUES
 (
-	toInt32(3),
-	toInt32(4),
+	3,
+	4,
 	'Tag4'
 )
 
@@ -123,14 +123,14 @@ BeforeExecute
 
 SELECT
 	fact_1.Id,
-	tagGroup.Id,
-	tagGroup.FactId,
-	tagGroup.Name
+	leftTag.Id,
+	leftTag.FactId,
+	leftTag.Name
 FROM
 	Fact fact_1
-		LEFT JOIN Tag tagGroup ON fact_1.Id = tagGroup.FactId
+		LEFT JOIN Tag leftTag ON fact_1.Id = leftTag.FactId
 WHERE
-	fact_1.Id > toInt32(3)
+	fact_1.Id > 3
 ORDER BY
 	fact_1.Id
 

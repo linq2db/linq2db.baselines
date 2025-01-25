@@ -50,11 +50,11 @@ BeforeExecute
 -- SQLite.Classic SQLite
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
-	[Parent] [_]
+	[Parent] [t1]
 WHERE
-	[_].[ParentID] > 1000
+	[t1].[ParentID] > 1000
 
 BeforeExecute
 -- SQLite.Classic SQLite
@@ -68,9 +68,9 @@ BeforeExecute
 -- SQLite.Classic SQLite
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
-	[Parent] [_]
+	[Parent] [t1]
 WHERE
-	[_].[ParentID] > 1000
+	[t1].[ParentID] > 1000
 

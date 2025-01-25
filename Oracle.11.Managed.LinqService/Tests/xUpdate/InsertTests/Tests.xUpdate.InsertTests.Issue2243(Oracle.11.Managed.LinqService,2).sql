@@ -51,8 +51,8 @@ USING (SELECT :Id AS "id" FROM SYS.DUAL) s ON
 WHEN MATCHED THEN
 	UPDATE 
 	SET
-		t1."name" = :Name,
-		t1."updated_by" = :UpdatedBy
+		"name" = :Name,
+		"updated_by" = :UpdatedBy
 WHEN NOT MATCHED THEN
 	INSERT
 	(
@@ -69,8 +69,6 @@ WHEN NOT MATCHED THEN
 
 BeforeExecute
 -- Oracle.11.Managed Oracle11
-DECLARE @take Int32
-SET     @take = 2
 
 SELECT
 	t1."id",
@@ -80,7 +78,7 @@ SELECT
 FROM
 	"test_insert_or_replace" t1
 WHERE
-	ROWNUM <= :take
+	ROWNUM <= 2
 
 BeforeExecute
 -- Oracle.11.Managed Oracle11
@@ -101,8 +99,8 @@ USING (SELECT :Id AS "id" FROM SYS.DUAL) s ON
 WHEN MATCHED THEN
 	UPDATE 
 	SET
-		t1."name" = :Name,
-		t1."updated_by" = :UpdatedBy
+		"name" = :Name,
+		"updated_by" = :UpdatedBy
 WHEN NOT MATCHED THEN
 	INSERT
 	(
@@ -119,8 +117,6 @@ WHEN NOT MATCHED THEN
 
 BeforeExecute
 -- Oracle.11.Managed Oracle11
-DECLARE @take Int32
-SET     @take = 2
 
 SELECT
 	t1."id",
@@ -130,7 +126,7 @@ SELECT
 FROM
 	"test_insert_or_replace" t1
 WHERE
-	ROWNUM <= :take
+	ROWNUM <= 2
 
 BeforeExecute
 -- Oracle.11.Managed Oracle11

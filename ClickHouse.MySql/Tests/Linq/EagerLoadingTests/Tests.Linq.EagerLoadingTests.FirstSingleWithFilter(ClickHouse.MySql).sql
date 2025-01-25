@@ -29,16 +29,16 @@ INSERT INTO MasterClass
 	ByteValues
 )
 VALUES
-(toInt32(1),toInt32(1),'Str1',NULL),
-(toInt32(2),toInt32(2),'Str2',NULL),
-(toInt32(3),toInt32(3),'Str3',NULL),
-(toInt32(4),toInt32(4),'Str4',NULL),
-(toInt32(5),toInt32(5),'Str5',NULL),
-(toInt32(6),toInt32(6),'Str6',NULL),
-(toInt32(7),toInt32(7),'Str7',NULL),
-(toInt32(8),toInt32(8),'Str8',NULL),
-(toInt32(9),toInt32(9),'Str9',NULL),
-(toInt32(10),toInt32(10),'Str10',NULL)
+(1,1,'Str1',NULL),
+(2,2,'Str2',NULL),
+(3,3,'Str3',NULL),
+(4,4,'Str4',NULL),
+(5,5,'Str5',NULL),
+(6,6,'Str6',NULL),
+(7,7,'Str7',NULL),
+(8,8,'Str8',NULL),
+(9,9,'Str9',NULL),
+(10,10,'Str10',NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
@@ -69,145 +69,123 @@ INSERT INTO DetailClass
 	DetailValue
 )
 VALUES
-(toInt32(1001),toInt32(1),'DetailValue10001'),
-(toInt32(3001),toInt32(3),'DetailValue30001'),
-(toInt32(3002),toInt32(3),'DetailValue30002'),
-(toInt32(3003),toInt32(3),'DetailValue30003'),
-(toInt32(5001),toInt32(5),'DetailValue50001'),
-(toInt32(5002),toInt32(5),'DetailValue50002'),
-(toInt32(5003),toInt32(5),'DetailValue50003'),
-(toInt32(5004),toInt32(5),'DetailValue50004'),
-(toInt32(5005),toInt32(5),'DetailValue50005'),
-(toInt32(7001),toInt32(7),'DetailValue70001'),
-(toInt32(7002),toInt32(7),'DetailValue70002'),
-(toInt32(7003),toInt32(7),'DetailValue70003'),
-(toInt32(7004),toInt32(7),'DetailValue70004'),
-(toInt32(7005),toInt32(7),'DetailValue70005'),
-(toInt32(7006),toInt32(7),'DetailValue70006'),
-(toInt32(7007),toInt32(7),'DetailValue70007'),
-(toInt32(9001),toInt32(9),'DetailValue90001'),
-(toInt32(9002),toInt32(9),'DetailValue90002'),
-(toInt32(9003),toInt32(9),'DetailValue90003'),
-(toInt32(9004),toInt32(9),'DetailValue90004'),
-(toInt32(9005),toInt32(9),'DetailValue90005'),
-(toInt32(9006),toInt32(9),'DetailValue90006'),
-(toInt32(9007),toInt32(9),'DetailValue90007'),
-(toInt32(9008),toInt32(9),'DetailValue90008'),
-(toInt32(9009),toInt32(9),'DetailValue90009')
+(1001,1,'DetailValue10001'),
+(3001,3,'DetailValue30001'),
+(3002,3,'DetailValue30002'),
+(3003,3,'DetailValue30003'),
+(5001,5,'DetailValue50001'),
+(5002,5,'DetailValue50002'),
+(5003,5,'DetailValue50003'),
+(5004,5,'DetailValue50004'),
+(5005,5,'DetailValue50005'),
+(7001,7,'DetailValue70001'),
+(7002,7,'DetailValue70002'),
+(7003,7,'DetailValue70003'),
+(7004,7,'DetailValue70004'),
+(7005,7,'DetailValue70005'),
+(7006,7,'DetailValue70006'),
+(7007,7,'DetailValue70007'),
+(9001,9,'DetailValue90001'),
+(9002,9,'DetailValue90002'),
+(9003,9,'DetailValue90003'),
+(9004,9,'DetailValue90004'),
+(9005,9,'DetailValue90005'),
+(9006,9,'DetailValue90006'),
+(9007,9,'DetailValue90007'),
+(9008,9,'DetailValue90008'),
+(9009,9,'DetailValue90009')
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
-	key_data_result.Id1,
-	key_data_result.Id2,
-	detail.DetailValue
+	m_1.Id1,
+	d.DetailValue
 FROM
 	(
-		SELECT DISTINCT
-			t1.Id1 as Id1,
-			t1.Id2 as Id2
+		SELECT
+			x.Id1 as Id1
 		FROM
-			(
-				SELECT
-					x.Id1 as Id1,
-					x.Id2 as Id2
-				FROM
-					MasterClass x
-				WHERE
-					x.Id1 = toInt32(1)
-				LIMIT toInt32(1)
-			) t1
-	) key_data_result
-		INNER JOIN DetailClass detail ON key_data_result.Id1 = detail.MasterId
+			MasterClass x
+		WHERE
+			x.Id1 = 1
+		LIMIT 1
+	) m_1
+		INNER JOIN DetailClass d ON m_1.Id1 = d.MasterId
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
-	x.Id1,
-	x.Id2
+	x.Id1
 FROM
 	MasterClass x
 WHERE
-	x.Id1 = toInt32(1)
-LIMIT toInt32(1)
+	x.Id1 = 1
+LIMIT 1
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
-	key_data_result.Id1,
-	key_data_result.Id2,
-	detail.DetailValue
+	m_1.Id1,
+	d.DetailValue
 FROM
 	(
-		SELECT DISTINCT
-			t1.Id1 as Id1,
-			t1.Id2 as Id2
+		SELECT
+			x.Id1 as Id1
 		FROM
-			(
-				SELECT
-					x.Id1 as Id1,
-					x.Id2 as Id2
-				FROM
-					MasterClass x
-				WHERE
-					x.Id1 = toInt32(1)
-				LIMIT toInt32(1)
-			) t1
-	) key_data_result
-		INNER JOIN DetailClass detail ON key_data_result.Id1 = detail.MasterId
+			MasterClass x
+		WHERE
+			x.Id1 = 1
+		LIMIT 1
+	) m_1
+		INNER JOIN DetailClass d ON m_1.Id1 = d.MasterId
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
-	x.Id1,
-	x.Id2
+	x.Id1
 FROM
 	MasterClass x
 WHERE
-	x.Id1 = toInt32(1)
-LIMIT toInt32(1)
+	x.Id1 = 1
+LIMIT 1
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
-	key_data_result.Id1,
-	key_data_result.Id2,
-	detail.DetailValue
+	m_1.Id1,
+	d.DetailValue
 FROM
 	(
 		SELECT DISTINCT
-			t1.Id1 as Id1,
-			t1.Id2 as Id2
+			t1.Id1 as Id1
 		FROM
 			(
 				SELECT
-					x.Id1 as Id1,
-					x.Id2 as Id2
+					x.Id1 as Id1
 				FROM
 					MasterClass x
 				WHERE
-					x.Id1 = toInt32(1)
-				LIMIT toInt32(1)
+					x.Id1 = 1
+				LIMIT 2
 			) t1
-	) key_data_result
-		INNER JOIN DetailClass detail ON key_data_result.Id1 = detail.MasterId
+	) m_1
+		INNER JOIN DetailClass d ON m_1.Id1 = d.MasterId
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
-	x.Id1,
-	x.Id2
+	x.Id1
 FROM
 	MasterClass x
 WHERE
-	x.Id1 = toInt32(1)
-LIMIT toInt32(2)
+	x.Id1 = 1
+LIMIT 2
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse

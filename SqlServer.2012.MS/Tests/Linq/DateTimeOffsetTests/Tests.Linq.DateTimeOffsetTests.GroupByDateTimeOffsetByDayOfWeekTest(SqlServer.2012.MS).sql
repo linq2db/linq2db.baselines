@@ -56,19 +56,19 @@ BeforeExecute
 -- SqlServer.2012.MS SqlServer.2012
 
 SELECT
-	[t1].[Key_1],
-	Count(*)
+	[x_1].[DayOfWeek],
+	COUNT(*)
 FROM
 	(
 		SELECT
-			DatePart(weekday, [selectParam].[TransactionDate]) - 1 as [Key_1]
+			DatePart(weekday, [x].[TransactionDate]) - 1 as [DayOfWeek]
 		FROM
-			[Transactions] [selectParam]
-	) [t1]
+			[Transactions] [x]
+	) [x_1]
 GROUP BY
-	[t1].[Key_1]
+	[x_1].[DayOfWeek]
 ORDER BY
-	[t1].[Key_1]
+	[x_1].[DayOfWeek]
 
 BeforeExecute
 -- SqlServer.2012.MS SqlServer.2012

@@ -22,8 +22,8 @@ INSERT INTO Person1974
 	Name
 )
 VALUES
-(toInt32(1),'Person1'),
-(toInt32(2),'Person2')
+(1,'Person1'),
+(2,'Person2')
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
@@ -51,7 +51,7 @@ INSERT INTO Article
 	Price
 )
 VALUES
-('Article',toInt32(2),toFloat64(0))
+('Article',2,toFloat64(0))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
@@ -59,16 +59,16 @@ BeforeExecute
 SELECT
 	t1.ID,
 	t1.Name,
-	a_Bought.ID,
 	a_Bought.PersonId,
+	a_Bought.ID,
 	a_Bought.Price,
-	a.ID,
-	a.PersonId,
-	a.Price
+	a_BoughtQuery.PersonId,
+	a_BoughtQuery.ID,
+	a_BoughtQuery.Price
 FROM
 	Person1974 t1
 		LEFT JOIN Article a_Bought ON t1.ID = a_Bought.PersonId
-		LEFT JOIN Article a ON a.PersonId = t1.ID
+		LEFT JOIN Article a_BoughtQuery ON a_BoughtQuery.PersonId = t1.ID
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse

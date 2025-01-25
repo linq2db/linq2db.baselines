@@ -2,19 +2,14 @@
 -- Oracle.11.Managed Oracle11
 
 SELECT
-	(
-		SELECT
-			Max(ch."ChildID")
-		FROM
-			"Child" ch
-		WHERE
-			ch_1."ParentID" = ch."ParentID" AND ch."ParentID" < 3 AND
-			ch."ParentID" < 3
-	)
+	MAX(CASE
+		WHEN g_1."ParentID" < 3 THEN g_1."ChildID"
+		ELSE NULL
+	END)
 FROM
-	"Child" ch_1
+	"Child" g_1
 WHERE
-	ch_1."ParentID" < 3
+	g_1."ParentID" < 3
 GROUP BY
-	ch_1."ParentID"
+	g_1."ParentID"
 

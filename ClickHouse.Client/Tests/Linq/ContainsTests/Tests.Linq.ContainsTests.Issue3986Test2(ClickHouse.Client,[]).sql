@@ -10,5 +10,5 @@ SELECT
 FROM
 	Person r
 WHERE
-	r.PersonID = toInt32(4) AND 1 = 1
+	r.PersonID = 4
 

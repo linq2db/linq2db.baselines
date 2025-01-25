@@ -2,7 +2,7 @@
 -- Sybase.Managed Sybase
 
 SELECT
-	Convert(Time, [t].[DateTimeValue])
+	CAST([t].[DateTimeValue] AS Time)
 FROM
 	[LinqDataTypes] [t]
 

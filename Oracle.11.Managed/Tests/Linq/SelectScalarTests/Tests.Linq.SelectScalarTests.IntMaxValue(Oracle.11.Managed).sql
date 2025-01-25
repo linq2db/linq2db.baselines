@@ -2,6 +2,6 @@
 -- Oracle.11.Managed Oracle11
 
 SELECT
-	2147483647
+	1
 FROM SYS.DUAL
 

@@ -18,7 +18,7 @@ INSERT INTO TableWithPrimaryKey2
 	Key
 )
 VALUES
-(toInt32(1))
+(1)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse

@@ -2,10 +2,10 @@
 -- DB2 DB2.LUW DB2LUW
 
 SELECT
-	"тбл"."ParentID",
-	"тбл"."Value1"
+	"t1"."ParentID",
+	"t1"."Value1"
 FROM
-	"Parent" "тбл"
+	"Parent" "t1"
 WHERE
-	"тбл"."ParentID" = 3
+	"t1"."ParentID" = 3
 

@@ -20,7 +20,7 @@ BeforeExecute
 -- Access.Odbc AccessODBC
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	[Parent] [p]
 WHERE

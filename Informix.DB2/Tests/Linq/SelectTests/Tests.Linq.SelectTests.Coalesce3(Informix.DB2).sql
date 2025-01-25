@@ -3,9 +3,9 @@
 
 SELECT
 	p.PersonID,
-	Nvl(p.MiddleName, Nvl(p.FirstName, 'None')),
-	Nvl(p.LastName, Nvl(p.FirstName, 'None')),
-	Nvl(p.MiddleName, Nvl(p.MiddleName, 'None'))
+	p.MiddleName,
+	p.FirstName,
+	p.LastName
 FROM
 	Person p
 WHERE

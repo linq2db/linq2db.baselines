@@ -2,9 +2,9 @@
 -- DB2 DB2.LUW DB2LUW
 
 DELETE FROM
-	"Child" "t1"
+	"Child" "c_1"
 WHERE
-	"t1"."ChildID" > 1000
+	"c_1"."ChildID" > 1000
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
@@ -19,7 +19,7 @@ INSERT INTO "Child"
 VALUES
 (
 	1,
-	@id
+	CAST(@id AS Int)
 )
 
 BeforeExecute
@@ -28,7 +28,7 @@ DECLARE @id Integer(4) -- Int32
 SET     @id = 1001
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	"Child" "c_1"
 WHERE
@@ -42,7 +42,7 @@ SET     @id = 1001
 UPDATE
 	"Child"
 SET
-	"Child"."ChildID" = "Child"."ChildID" + 1
+	"ChildID" = "Child"."ChildID" + 1
 WHERE
 	EXISTS(
 		SELECT
@@ -63,7 +63,7 @@ DECLARE @ChildID Integer(4) -- Int32
 SET     @ChildID = 1002
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	"Child" "c_1"
 WHERE

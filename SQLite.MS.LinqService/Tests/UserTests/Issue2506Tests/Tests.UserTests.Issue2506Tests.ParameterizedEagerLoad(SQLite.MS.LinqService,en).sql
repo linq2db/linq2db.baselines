@@ -161,12 +161,14 @@ DECLARE @lang NVarChar(2) -- String
 SET     @lang = 'en'
 
 SELECT
-	[item_1].[Id],
-	[detail].[Lang],
-	[detail].[Text]
+	[m_1].[Id],
+	[d].[Lang],
+	[d].[Text]
 FROM
-	[Item] [item_1]
-		INNER JOIN [ItemText] [detail] ON [item_1].[Id] = [detail].[ItemId] AND [detail].[Lang] = @lang
+	[Item] [m_1]
+		INNER JOIN [ItemText] [d] ON [m_1].[Id] = [d].[ItemId]
+WHERE
+	[d].[Lang] = @lang
 
 BeforeExecute
 -- SQLite.MS SQLite

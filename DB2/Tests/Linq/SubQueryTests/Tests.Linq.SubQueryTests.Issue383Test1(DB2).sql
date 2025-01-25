@@ -261,56 +261,12 @@ BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 SELECT
-	"key_data_result"."City_Code",
-	"key_data_result"."Agent_Id",
-	"key_data_result"."Distributor_Id",
-	"key_data_result"."Contract_Id",
-	"key_data_result"."Distributor_Type_Code",
-	"key_data_result"."Distributor_Agent_Type_Prefix",
-	"key_data_result"."Represents_Type_Prefix",
-	"key_data_result"."Agent_Id_1",
-	"key_data_result"."First_Name",
-	"key_data_result"."Distributor_Id_1",
-	"key_data_result"."Type_Code",
-	"key_data_result"."Distributor_Name",
-	"key_data_result"."Distributor_Id_2",
-	"key_data_result"."Commercial_Property_Id",
-	"key_data_result"."Distributor_Type_Code_1",
-	"key_data_result"."Commercial_Property_Id_1",
-	"key_data_result"."Street_Number",
-	"key_data_result"."Street_Name",
-	"key_data_result"."Zip_Code",
-	"key_data_result"."Zip_Plus_4",
-	"key_data_result"."Contract_Id_1",
-	"key_data_result"."Type_Code_1",
-	"key_data_result"."Effective_Date",
-	"detail"."City_Name"
+	"m_1"."City_Code",
+	"d_1"."City_Name"
 FROM
 	(
 		SELECT DISTINCT
-			"cp"."City_Code",
-			"cda"."Agent_Id",
-			"cda"."Distributor_Id",
-			"cda"."Contract_Id",
-			"cda"."Distributor_Type_Code",
-			"cda"."Distributor_Agent_Type_Prefix",
-			"cda"."Represents_Type_Prefix",
-			"a"."Agent_Id" as "Agent_Id_1",
-			"a"."First_Name",
-			"d"."Distributor_Id" as "Distributor_Id_1",
-			"d"."Type_Code",
-			"d"."Distributor_Name",
-			"dcp"."Distributor_Id" as "Distributor_Id_2",
-			"dcp"."Commercial_Property_Id",
-			"dcp"."Distributor_Type_Code" as "Distributor_Type_Code_1",
-			"cp"."Commercial_Property_Id" as "Commercial_Property_Id_1",
-			"cp"."Street_Number",
-			"cp"."Street_Name",
-			"cp"."Zip_Code",
-			"cp"."Zip_Plus_4",
-			"cd"."Contract_Id" as "Contract_Id_1",
-			"cd"."Type_Code" as "Type_Code_1",
-			"cd"."Effective_Date"
+			"cp"."City_Code"
 		FROM
 			"Contract_Distributor_Agent" "cda"
 				INNER JOIN "Agent" "a" ON "cda"."Agent_Id" = "a"."Agent_Id"
@@ -326,8 +282,8 @@ FROM
 			"cd"."Type_Code" = 'ESTCOE' AND
 			"d"."Type_Code" = 'RE' AND
 			"dcp"."Distributor_Type_Code" = 'RE'
-	) "key_data_result"
-		INNER JOIN "Cities" "detail" ON ("detail"."City_Code" = "key_data_result"."City_Code" OR "detail"."City_Code" IS NULL AND "key_data_result"."City_Code" IS NULL)
+	) "m_1"
+		INNER JOIN "Cities" "d_1" ON ("d_1"."City_Code" = "m_1"."City_Code" OR "d_1"."City_Code" IS NULL AND "m_1"."City_Code" IS NULL)
 
 BeforeExecute
 DisposeTransaction
@@ -341,24 +297,9 @@ SELECT
 	"cp"."Street_Number",
 	"cp"."Street_Name",
 	"cp"."City_Code",
-	"cda"."Agent_Id",
-	"cda"."Distributor_Id",
-	"cda"."Contract_Id",
-	"cda"."Distributor_Type_Code",
-	"cda"."Distributor_Agent_Type_Prefix",
-	"cda"."Represents_Type_Prefix",
-	"a"."Agent_Id",
-	"d"."Distributor_Id",
-	"d"."Type_Code",
-	"dcp"."Distributor_Id",
-	"dcp"."Commercial_Property_Id",
-	"dcp"."Distributor_Type_Code",
-	"cp"."Commercial_Property_Id",
 	"cp"."State",
 	"cp"."Zip_Code",
 	"cp"."Zip_Plus_4",
-	"cd"."Contract_Id",
-	"cd"."Type_Code",
 	"cd"."Effective_Date"
 FROM
 	"Contract_Distributor_Agent" "cda"

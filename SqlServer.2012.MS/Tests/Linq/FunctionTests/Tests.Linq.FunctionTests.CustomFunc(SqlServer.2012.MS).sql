@@ -2,11 +2,7 @@
 -- SqlServer.2012.MS SqlServer.2012
 
 SELECT
-	[p].[FirstName],
-	[p].[PersonID],
-	[p].[LastName],
-	[p].[MiddleName],
-	[p].[Gender]
+	[p].[LastName] + N', ' + [p].[FirstName]
 FROM
 	[Person] [p]
 WHERE

@@ -33,7 +33,7 @@ INSERT INTO xxPerson
 VALUES
 (
 	'Steven',
-	toInt32(0),
+	0,
 	'King',
 	NULL,
 	'M'
@@ -43,7 +43,7 @@ BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	xxPerson t1
 
@@ -58,7 +58,7 @@ SELECT
 	t1.Gender
 FROM
 	xxPerson t1
-LIMIT toInt32(2)
+LIMIT 2
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -71,7 +71,7 @@ UPDATE
 	MiddleName = 'None',
 	Gender = 'M'
 WHERE
-	PersonID = toInt32(0)
+	PersonID = 0
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -84,7 +84,7 @@ SELECT
 	t1.Gender
 FROM
 	xxPerson t1
-LIMIT toInt32(2)
+LIMIT 2
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse

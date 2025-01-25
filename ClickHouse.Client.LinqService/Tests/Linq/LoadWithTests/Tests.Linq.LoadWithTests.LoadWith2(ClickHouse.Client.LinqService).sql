@@ -13,5 +13,5 @@ FROM
 	GrandChild t
 		LEFT JOIN Child a_Child ON t.ParentID = a_Child.ParentID AND t.ChildID = a_Child.ChildID
 		LEFT JOIN Parent a_Parent ON a_Child.ParentID = a_Parent.ParentID
-LIMIT toInt32(1)
+LIMIT 1
 

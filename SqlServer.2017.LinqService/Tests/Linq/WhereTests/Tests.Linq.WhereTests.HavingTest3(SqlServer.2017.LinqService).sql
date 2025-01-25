@@ -2,11 +2,19 @@
 -- SqlServer.2017
 
 SELECT
-	Count(*)
+	[c_2].[COUNT_1]
 FROM
-	[Child] [t1]
-GROUP BY
-	[t1].[ParentID]
-HAVING
-	[t1].[ParentID] > 1 AND Count(*) > 1 AND [t1].[ParentID] > 1
+	(
+		SELECT
+			[c_1].[ParentID],
+			COUNT(*) as [COUNT_1]
+		FROM
+			[Child] [c_1]
+		GROUP BY
+			[c_1].[ParentID]
+		HAVING
+			[c_1].[ParentID] > 1
+	) [c_2]
+WHERE
+	[c_2].[ParentID] > 1 AND [c_2].[COUNT_1] > 1
 

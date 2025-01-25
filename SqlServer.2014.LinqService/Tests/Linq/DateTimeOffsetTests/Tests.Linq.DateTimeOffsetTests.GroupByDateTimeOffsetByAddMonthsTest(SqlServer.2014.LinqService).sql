@@ -488,19 +488,19 @@ BeforeExecute
 -- SqlServer.2014
 
 SELECT
-	[t1].[Key_1],
-	Count(*)
+	[x_1].[c1],
+	COUNT(*)
 FROM
 	(
 		SELECT
-			DateAdd(month, -1, [selectParam].[TransactionDate]) as [Key_1]
+			DateAdd(month, -1, [x].[TransactionDate]) as [c1]
 		FROM
-			[Transactions] [selectParam]
-	) [t1]
+			[Transactions] [x]
+	) [x_1]
 GROUP BY
-	[t1].[Key_1]
+	[x_1].[c1]
 ORDER BY
-	[t1].[Key_1]
+	[x_1].[c1]
 
 BeforeExecute
 -- SqlServer.2014

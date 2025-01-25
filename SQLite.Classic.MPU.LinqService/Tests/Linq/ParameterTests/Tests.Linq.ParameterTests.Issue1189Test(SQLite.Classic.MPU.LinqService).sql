@@ -16,7 +16,7 @@ CREATE TABLE IF NOT EXISTS [Issue1189Customer]
 
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @DateTime  -- DateTime
+DECLARE @DateTime VarChar(23) -- AnsiString
 SET     @DateTime = '2020-02-29 17:54:55.123'
 
 SELECT

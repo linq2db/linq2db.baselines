@@ -2,7 +2,7 @@
 -- Oracle.23.Managed Oracle.Managed Oracle12
 
 SELECT
-	'I-' || Cast(x."PersonID" as VarChar(11)),
+	'I-' || x."PersonID",
 	x."FirstName"
 FROM
 	"Person" x

@@ -7,7 +7,7 @@ SELECT
 FROM
 	Parent o
 WHERE
-	(o.ParentID IN (toInt32(1), toInt32(2), toInt32(3)) OR o.ParentID = toInt32(4))
+	(o.ParentID IN (1, 2, 3) OR o.ParentID = 4)
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
@@ -18,7 +18,7 @@ SELECT
 FROM
 	Parent o
 WHERE
-	((o.ParentID IN (toInt32(1), toInt32(2), toInt32(3)) OR o.ParentID IS NULL) OR o.ParentID = toInt32(4))
+	((o.ParentID IN (1, 2, 3) OR o.ParentID IS NULL) OR o.ParentID = 4)
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
@@ -29,7 +29,7 @@ SELECT
 FROM
 	Parent o
 WHERE
-	(o.ParentID IN (toInt32(4), toInt32(5), toInt32(6)) OR o.ParentID = toInt32(4))
+	(o.ParentID IN (4, 5, 6) OR o.ParentID = 4)
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
@@ -40,5 +40,5 @@ SELECT
 FROM
 	Parent o
 WHERE
-	((o.ParentID IN (toInt32(4), toInt32(5), toInt32(6)) OR o.ParentID IS NULL) OR o.ParentID = toInt32(4))
+	((o.ParentID IN (4, 5, 6) OR o.ParentID IS NULL) OR o.ParentID = 4)
 

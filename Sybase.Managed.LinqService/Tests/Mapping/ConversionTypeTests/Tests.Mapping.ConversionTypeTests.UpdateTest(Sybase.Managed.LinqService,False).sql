@@ -82,11 +82,9 @@ SET     @ID = 3
 UPDATE
 	[TrimTestTable]
 SET
-	[t1].[Data] = @Data
-FROM
-	[TrimTestTable] [t1]
+	[Data] = @Data
 WHERE
-	[t1].[ID] = @ID
+	[TrimTestTable].[ID] = @ID
 
 BeforeExecute
 -- Sybase.Managed Sybase
@@ -96,11 +94,9 @@ SET     @Data = '***OOO***'
 UPDATE
 	[TrimTestTable]
 SET
-	[t].[Data] = @Data
-FROM
-	[TrimTestTable] [t]
+	[Data] = @Data
 WHERE
-	[t].[Data] = '***XXX***'
+	[TrimTestTable].[Data] = '***XXX***'
 
 BeforeExecute
 -- Sybase.Managed Sybase
@@ -112,11 +108,9 @@ SET     @p = '***HHH***'
 UPDATE
 	[TrimTestTable]
 SET
-	[t].[Data] = @Data
-FROM
-	[TrimTestTable] [t]
+	[Data] = @Data
 WHERE
-	[t].[Data] = @p
+	[TrimTestTable].[Data] = @p
 
 BeforeExecute
 -- Sybase.Managed Sybase

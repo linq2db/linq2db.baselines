@@ -107,11 +107,11 @@ UPDATE
 SET
 	[ctg].[is_deleted] = @is_deleted
 FROM
-	[element_services] [ie]
-		INNER JOIN [component_categories] [ctg] ON [ie].[id] = [ctg].[service_id]
+	[element_services] [ct]
+		INNER JOIN [component_categories] [ctg] ON [ct].[id] = [ctg].[service_id]
 		INNER JOIN [Components] [cm] ON [ctg].[id] = [cm].[category_id] AND [cm].[is_deleted] = 0
 WHERE
-	[ie].[id] = N'TestProcessService'
+	[ct].[id] = N'TestProcessService'
 
 BeforeExecute
 -- SqlServer.2019.MS SqlServer.2019

@@ -104,8 +104,8 @@ BeforeExecute
 -- SqlServer.SA SqlServer.2019
 
 SELECT
-	[c_1].[Id],
-	[c_1].[FirmId],
+	[a_Requests].[Id],
+	[a_Requests].[FirmId],
 	[a_DocPrepareAssignment].[Id],
 	[a_DocPrepareAssignment].[DirectionId],
 	[a_DocPrepareAssignment].[TargetId],
@@ -113,8 +113,8 @@ SELECT
 FROM
 	[Requests] [r]
 		LEFT JOIN [FirmInfo] [a_FirmInfo] ON [r].[FirmId] = [a_FirmInfo].[Id]
-		INNER JOIN [Requests] [c_1] ON [a_FirmInfo].[Id] = [c_1].[FirmId]
-		LEFT JOIN [Assignments] [a_DocPrepareAssignment] ON [a_DocPrepareAssignment].[TargetId] = [c_1].[Id]
+		INNER JOIN [Requests] [a_Requests] ON [a_FirmInfo].[Id] IS NOT NULL AND [a_FirmInfo].[Id] = [a_Requests].[FirmId]
+		LEFT JOIN [Assignments] [a_DocPrepareAssignment] ON [a_DocPrepareAssignment].[TargetId] = [a_Requests].[Id]
 WHERE
 	[r].[Id] = 1002
 
@@ -122,8 +122,8 @@ BeforeExecute
 -- SqlServer.SA SqlServer.2019
 
 SELECT
-	[c_1].[Id],
-	[c_1].[FirmId],
+	[a_Requests].[Id],
+	[a_Requests].[FirmId],
 	[a_DocPrepareAssignment].[Id],
 	[a_DocPrepareAssignment].[DirectionId],
 	[a_DocPrepareAssignment].[TargetId],
@@ -131,8 +131,8 @@ SELECT
 FROM
 	[Requests] [r]
 		LEFT JOIN [FirmInfo] [a_FirmInfo] ON [r].[FirmId] = [a_FirmInfo].[Id]
-		INNER JOIN [Requests] [c_1] ON [a_FirmInfo].[Id] = [c_1].[FirmId]
-		LEFT JOIN [Assignments] [a_DocPrepareAssignment] ON [a_DocPrepareAssignment].[TargetId] = [c_1].[Id]
+		INNER JOIN [Requests] [a_Requests] ON [a_FirmInfo].[Id] IS NOT NULL AND [a_FirmInfo].[Id] = [a_Requests].[FirmId]
+		LEFT JOIN [Assignments] [a_DocPrepareAssignment] ON [a_DocPrepareAssignment].[TargetId] = [a_Requests].[Id]
 WHERE
 	[r].[Id] = 1002
 

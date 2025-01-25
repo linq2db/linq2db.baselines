@@ -22,44 +22,38 @@ INSERT INTO SampleClass
 	Value
 )
 VALUES
-(toInt32(1),toInt32(100))
+(1,100)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	t_1.Id,
+	t_1.Value,
 	t2.Value1,
 	t2.Value2
 FROM
-	(
-		SELECT
-			addDays(now(), t.Value) as Value1,
-			addDays(now(), toInt32(2)) as Value2
-		FROM
-			SampleClass t
-		WHERE
-			t.Value = toInt32(1)
-		UNION DISTINCT
-		SELECT
-			t1.Value1 as Value1,
-			t1.Value2 as Value2
-		FROM
-			(
-				SELECT
-					addDays(now(), toInt32(3)) as Value1,
-					addDays(now(), toInt32(4)) as Value2
-			) t1
-	) t2
-LIMIT toInt32(1)
-
-BeforeExecute
--- ClickHouse.MySql ClickHouse
-
-SELECT
-	t.Id,
-	t.Value
-FROM
-	SampleClass t
+	SampleClass t_1
+		LEFT JOIN (
+			SELECT
+				t1.Value1 as Value1,
+				t1.Value2 as Value2
+			FROM
+				(
+					SELECT
+						addDays(now(), t.Value) as Value1,
+						addDays(now(), 2) as Value2
+					FROM
+						SampleClass t
+					WHERE
+						t.Value = 1
+					UNION DISTINCT
+					SELECT
+						addDays(now(), 3) as Value1,
+						addDays(now(), 4) as Value2
+				) t1
+			LIMIT 1
+		) t2 ON 1=1
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse

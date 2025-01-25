@@ -2,7 +2,7 @@
 -- ClickHouse.Client ClickHouse
 
 SELECT
-	toDateTime64(concat(toString(YEAR(t.DateTimeValue)), '-01-01'), toUInt8(7))
+	toDate(concat(toString(toYear(t.DateTimeValue)), '-01-01'))
 FROM
 	LinqDataTypes t
 

@@ -7,5 +7,14 @@ SELECT
 FROM
 	Parent p
 WHERE
-	(p.Value1 NOT IN (toInt32(1), toInt32(2), toInt32(3)) OR p.Value1 IS NULL)
+	(p.Value1 NOT IN (1, 2, 3) OR p.Value1 IS NULL)
+
+BeforeExecute
+-- ClickHouse.Client ClickHouse
+
+SELECT
+	t1.ParentID,
+	t1.Value1
+FROM
+	Parent t1
 

@@ -82,7 +82,7 @@ BeforeExecute
 -- Access AccessOleDb (asynchronously)
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	[xxPatient] [t1]
 
@@ -118,7 +118,7 @@ BeforeExecute
 -- Access AccessOleDb (asynchronously)
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	[xxPatient] [t1]
 

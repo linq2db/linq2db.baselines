@@ -26,7 +26,7 @@ INSERT INTO Issue1622Table
 )
 VALUES
 (
-	toInt32(1),
+	1,
 	'Value1_suffix'
 )
 
@@ -40,7 +40,7 @@ FROM
 	Issue1622Table e
 WHERE
 	e.SomeText = 'Value1_suffix'
-LIMIT toInt32(2)
+LIMIT 2
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
@@ -51,8 +51,8 @@ SELECT
 FROM
 	Issue1622Table e
 WHERE
-	e.Id = toInt32(1)
-LIMIT toInt32(2)
+	e.Id = 1
+LIMIT 2
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse

@@ -376,11 +376,11 @@ BeforeExecute
 -- SqlCe
 
 SELECT
-	Count(*)
+	COUNT(*) as [COUNT_1]
 FROM
 	[InstanceClass] [t]
 WHERE
-	Convert(NVarChar(11), [t].[Id]) + Convert(NVarChar(11), [t].[Value]) = Convert(NVarChar(11), [t].[Id]) + Convert(NVarChar(11), [t].[Value])
+	CAST([t].[Id] AS NVarChar(11)) + CAST([t].[Value] AS NVarChar(11)) = CAST([t].[Id] AS NVarChar(11)) + CAST([t].[Value] AS NVarChar(11))
 
 BeforeExecute
 -- SqlCe

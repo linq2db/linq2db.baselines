@@ -2,7 +2,7 @@
 -- Sybase.Managed Sybase
 
 SELECT
-	Count(*)
+	COUNT(*)
 WHERE
 	1 = 0
 
@@ -10,5 +10,5 @@ BeforeExecute
 -- Sybase.Managed Sybase
 
 SELECT
-	Count(*)
+	COUNT(*)
 

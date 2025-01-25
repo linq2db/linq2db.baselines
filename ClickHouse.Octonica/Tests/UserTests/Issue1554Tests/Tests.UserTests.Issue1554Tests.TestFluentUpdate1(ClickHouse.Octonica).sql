@@ -28,7 +28,7 @@ INSERT INTO Issue1554FluentTable
 )
 VALUES
 (
-	toInt32(0),
+	0,
 	'RSA',
 	'RSA'
 )
@@ -42,7 +42,7 @@ UPDATE
 	ClaimedKeyType = 'EC',
 	ClaimedKeyTypeN = 'EC'
 WHERE
-	Id = toInt32(0)
+	Id = 0
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -53,7 +53,7 @@ SELECT
 	t1.ClaimedKeyTypeN
 FROM
 	Issue1554FluentTable t1
-LIMIT toInt32(2)
+LIMIT 2
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse

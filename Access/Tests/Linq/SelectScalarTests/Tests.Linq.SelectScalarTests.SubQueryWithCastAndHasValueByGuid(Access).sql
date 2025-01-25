@@ -2,15 +2,15 @@
 -- Access AccessOleDb
 
 SELECT
-	[_].[ParentID],
-	[_].[Value1]
+	[t1].[ParentID],
+	[t1].[Value1]
 FROM
-	[Parent] [_]
+	[Parent] [t1]
 WHERE
 	(
 		SELECT TOP 1
-			[r].[GuidValue]
+			IIF([r].[GuidValue] IS NOT NULL, True, False)
 		FROM
 			[LinqDataTypes] [r]
-	) IS NOT NULL
+	) = True
 

@@ -102,27 +102,27 @@ BeforeExecute
 -- Access AccessOleDb
 
 SELECT TOP 2
-	[x].[InId],
-	Iif([j].[InId] IS NULL, [x].[InMinQuantity], [j].[InMinQuantity]),
-	Iif([j].[InId] IS NULL, [x].[InMaxQuantity], [j].[InMaxQuantity])
+	[t1].[InId],
+	IIF([e].[InId] IS NULL, [t1].[InMinQuantity], [e].[InMinQuantity]),
+	IIF([e].[InId] IS NULL, [t1].[InMaxQuantity], [e].[InMaxQuantity])
 FROM
-	[StLink] [x]
-		LEFT JOIN [EdtLink] [j] ON ([x].[InId] = [j].[InId])
+	[StLink] [t1]
+		LEFT JOIN [EdtLink] [e] ON ([t1].[InId] = [e].[InId])
 WHERE
-	[x].[InId] = 1
+	[t1].[InId] = 1
 
 BeforeExecute
 -- Access AccessOleDb
 
 SELECT TOP 2
-	[x].[InId],
-	Iif([j].[InId] IS NULL, [x].[InMinQuantity], [j].[InMinQuantity]),
-	Iif([j].[InId] IS NULL, [x].[InMaxQuantity], [j].[InMaxQuantity])
+	[t1].[InId],
+	IIF([e].[InId] IS NULL, [t1].[InMinQuantity], [e].[InMinQuantity]),
+	IIF([e].[InId] IS NULL, [t1].[InMaxQuantity], [e].[InMaxQuantity])
 FROM
-	[StLink] [x]
-		LEFT JOIN [EdtLink] [j] ON ([x].[InId] = [j].[InId])
+	[StLink] [t1]
+		LEFT JOIN [EdtLink] [e] ON ([t1].[InId] = [e].[InId])
 WHERE
-	[x].[InId] = 2
+	[t1].[InId] = 2
 
 BeforeExecute
 -- Access AccessOleDb

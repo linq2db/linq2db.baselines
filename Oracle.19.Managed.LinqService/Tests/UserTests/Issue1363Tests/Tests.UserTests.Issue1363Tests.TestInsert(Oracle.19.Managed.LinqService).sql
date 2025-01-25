@@ -47,7 +47,7 @@ VALUES
 		FROM
 			"Issue1363" t1
 		WHERE
-			t1."required_field" IS NULL
+			1 = 0
 	)
 )
 
@@ -80,17 +80,15 @@ BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12
 DECLARE @id2 Raw(16) -- Binary
 SET     @id2 = HEXTORAW('0D6048A921DE744F8AC29516B287076E')
-DECLARE @take Int32
-SET     @take = 2
 
 SELECT
-	t1."required_field",
-	t1."optional_field"
+	t1."required_field" as "Required",
+	t1."optional_field" as "Optional"
 FROM
 	"Issue1363" t1
 WHERE
 	t1."required_field" = :id2
-FETCH NEXT :take ROWS ONLY
+FETCH NEXT 2 ROWS ONLY
 
 BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12

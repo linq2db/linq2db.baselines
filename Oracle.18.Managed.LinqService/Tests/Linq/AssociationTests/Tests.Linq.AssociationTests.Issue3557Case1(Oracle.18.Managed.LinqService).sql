@@ -194,26 +194,22 @@ VALUES
 
 BeforeExecute
 -- Oracle.18.Managed Oracle.Managed Oracle12
-DECLARE @take Int32
-SET     @take = 1
 
 SELECT
 	i."Id",
 	a_SubData."Id",
-	t1."Reason",
-	t1."is_empty"
+	t1."Reason"
 FROM
 	"Data" i
 		LEFT JOIN "SubData1" a_SubData ON i."Id" = a_SubData."Id"
 		OUTER APPLY (
 			SELECT
-				s."Reason",
-				1 as "is_empty"
+				a_SubDatas."Reason"
 			FROM
-				"SubData2" s
+				"SubData2" a_SubDatas
 			WHERE
-				a_SubData."Id" = s."Id"
-			FETCH NEXT :take ROWS ONLY
+				a_SubData."Id" IS NOT NULL AND a_SubData."Id" = a_SubDatas."Id"
+			FETCH NEXT 1 ROWS ONLY
 		) t1
 ORDER BY
 	i."Id"

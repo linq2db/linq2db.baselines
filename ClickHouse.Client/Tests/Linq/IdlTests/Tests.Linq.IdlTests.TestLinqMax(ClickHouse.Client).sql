@@ -6,7 +6,7 @@ SELECT
 FROM
 	Patient x
 WHERE
-	x.PersonID < toInt32(0)
+	x.PersonID < 0
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
@@ -16,7 +16,7 @@ SELECT
 FROM
 	Patient x
 WHERE
-	x.PersonID < toInt32(0)
+	x.PersonID < 0
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
@@ -26,7 +26,7 @@ SELECT
 FROM
 	Patient x
 WHERE
-	x.PersonID < toInt32(0)
+	x.PersonID < 0
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
@@ -36,5 +36,5 @@ SELECT
 FROM
 	Patient x
 WHERE
-	x.PersonID < toInt32(0)
+	x.PersonID < 0
 

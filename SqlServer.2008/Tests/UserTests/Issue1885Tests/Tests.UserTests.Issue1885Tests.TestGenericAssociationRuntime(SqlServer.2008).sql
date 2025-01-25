@@ -41,19 +41,19 @@ BeforeExecute
 -- SqlServer.2008
 
 SELECT
-	[a_Data].[Value_1],
-	[a_Data].[is_empty]
+	[t1].[not_null],
+	[t1].[Data_1]
 FROM
 	[User] [t]
 		LEFT JOIN (
 			SELECT
-				[x].[Data] as [Value_1],
-				1 as [is_empty]
+				[a_Data].[Data] as [Data_1],
+				1 as [not_null]
 			FROM
 				(
 					SELECT 'Testing' AS Data
-				) [x]
-		) [a_Data] ON [t].[Id] = [t].[Id]
+				) [a_Data]
+		) [t1] ON 1=1
 
 BeforeExecute
 -- SqlServer.2008

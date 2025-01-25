@@ -30,7 +30,7 @@ INSERT INTO Issue3323Table
 )
 VALUES
 (
-	toInt32(1),
+	1,
 	'one',
 	'two',
 	'text'
@@ -42,14 +42,14 @@ BeforeExecute
 SELECT
 	t1.Id,
 	t1.Text,
-	concat(t1.FistName, ' ', t1.LastName)
+	concat(t1.FistName, ' ', t1.LastName) as FullName
 FROM
 	Issue3323Table t1
 UNION ALL
 SELECT
-	t2.Id,
-	t2.Text,
-	concat(t2.FistName, ' ', t2.LastName)
+	t2.Id as Id,
+	t2.Text as Text,
+	concat(t2.FistName, ' ', t2.LastName) as FullName
 FROM
 	Issue3323Table t2
 

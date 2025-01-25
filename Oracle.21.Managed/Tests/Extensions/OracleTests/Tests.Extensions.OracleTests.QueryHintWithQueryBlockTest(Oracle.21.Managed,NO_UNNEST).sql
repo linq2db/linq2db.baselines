@@ -2,15 +2,15 @@
 -- Oracle.21.Managed Oracle.Managed Oracle12
 
 SELECT /*+ NO_UNNEST(@Parent) */
-	p."ParentID",
-	p."Value1"
+	p_1."ParentID",
+	p_1."Value1"
 FROM
 	"Child" c_1
 		INNER JOIN (
 			SELECT /*+ QB_NAME(Parent) */
-				t1."ParentID",
-				t1."Value1"
+				p."ParentID",
+				p."Value1"
 			FROM
-				"Parent" t1
-		) p ON c_1."ParentID" = p."ParentID"
+				"Parent" p
+		) p_1 ON c_1."ParentID" = p_1."ParentID"
 

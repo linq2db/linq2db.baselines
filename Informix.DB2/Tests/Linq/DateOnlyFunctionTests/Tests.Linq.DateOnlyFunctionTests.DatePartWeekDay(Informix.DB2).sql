@@ -270,7 +270,7 @@ BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT
-	weekDay(t.TransactionDate) + 1
+	WeekDay(t.TransactionDate) + 1
 FROM
 	Transactions t
 

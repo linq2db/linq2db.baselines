@@ -10,5 +10,5 @@ SELECT
 FROM
 	Person p
 WHERE
-	p.PersonID <> COALESCE(toInt32(1), toInt32(2147483647))
+	p.PersonID <> COALESCE(1, 2147483647)
 

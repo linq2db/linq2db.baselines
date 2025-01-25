@@ -2,21 +2,21 @@
 -- ClickHouse.Client ClickHouse
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	(
 		SELECT
-			t1.ParentID as ParentID,
+			p.ParentID as ID,
+			p.Value1 as Value1
+		FROM
+			Parent p
+		UNION DISTINCT
+		SELECT
+			t1.ParentID as ID,
 			t1.Value1 as Value1
 		FROM
 			Parent t1
-		UNION DISTINCT
-		SELECT
-			t2.ParentID as ParentID,
-			t2.Value1 as Value1
-		FROM
-			Parent t2
-	) p
+	) t2
 WHERE
-	p.ParentID > toInt32(1)
+	t2.ID > 1
 

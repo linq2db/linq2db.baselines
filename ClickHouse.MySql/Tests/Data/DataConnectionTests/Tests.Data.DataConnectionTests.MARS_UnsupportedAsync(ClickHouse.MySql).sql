@@ -14,10 +14,10 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse (asynchronously)
 
 SELECT
-	_.PersonID,
-	_.Taxonomy
+	t1.PersonID,
+	t1.Taxonomy
 FROM
-	Doctor _
+	Doctor t1
 WHERE
-	_.PersonID = toInt32(1)
+	t1.PersonID = 1
 

@@ -34,7 +34,7 @@ SET     @ColumnNullable = 3
 
 SELECT
 	[r].[Id],
-	[r].[Column],
+	[r].[Column] as [Column_1],
 	[r].[ColumnNullable]
 FROM
 	[IntEnumTable] [r]
@@ -46,7 +46,7 @@ BeforeExecute
 
 SELECT
 	[r].[Id],
-	[r].[Column],
+	[r].[Column] as [Column_1],
 	[r].[ColumnNullable]
 FROM
 	[IntEnumTable] [r]
@@ -108,7 +108,7 @@ BeforeExecute
 
 SELECT
 	[t1].[Id],
-	[t1].[Column],
+	[t1].[Column] as [Column_1],
 	[t1].[ColumnNullable]
 FROM
 	[IntEnumTable] [t1]
@@ -138,7 +138,7 @@ BeforeExecute
 
 SELECT
 	[t1].[Id],
-	[t1].[Column],
+	[t1].[Column] as [Column_1],
 	[t1].[ColumnNullable]
 FROM
 	[IntEnumTable] [t1]
@@ -168,7 +168,7 @@ BeforeExecute
 
 SELECT
 	[t1].[Id],
-	[t1].[Column],
+	[t1].[Column] as [Column_1],
 	[t1].[ColumnNullable]
 FROM
 	[IntEnumTable] [t1]

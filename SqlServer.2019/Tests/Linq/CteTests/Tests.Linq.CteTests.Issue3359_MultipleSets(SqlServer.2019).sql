@@ -1,32 +1,32 @@
 ﻿BeforeExecute
 -- SqlServer.2019
 
-WITH [cte] ([FirstName], [LastName])
+WITH [cte] ([LastName], [FirstName])
 AS
 (
 	SELECT
-		[p].[FirstName],
-		[p].[LastName]
+		[p].[LastName],
+		[p].[FirstName]
 	FROM
 		[Person] [p]
 	UNION ALL
 	SELECT
-		[p_1].[FirstName],
-		[p_1].[LastName]
+		[t1].[LastName],
+		[t1].[FirstName]
 	FROM
-		[cte] [p_1]
-			INNER JOIN [Doctor] [d] ON ([p_1].[FirstName] = [d].[Taxonomy] OR [p_1].[FirstName] IS NULL AND [d].[Taxonomy] IS NULL)
+		[cte] [t1]
+			INNER JOIN [Doctor] [d] ON [t1].[FirstName] = [d].[Taxonomy]
 	UNION ALL
 	SELECT
-		[p_2].[FirstName],
-		[p_2].[LastName]
+		[t2].[LastName],
+		[t2].[FirstName]
 	FROM
-		[cte] [p_2]
-			INNER JOIN [Patient] [pat] ON ([p_2].[FirstName] = [pat].[Diagnosis] OR [p_2].[FirstName] IS NULL AND [pat].[Diagnosis] IS NULL)
+		[cte] [t2]
+			INNER JOIN [Patient] [pat] ON [t2].[FirstName] = [pat].[Diagnosis]
 )
 SELECT
-	[t1].[FirstName],
-	[t1].[LastName]
+	[t3].[FirstName],
+	[t3].[LastName]
 FROM
-	[cte] [t1]
+	[cte] [t3]
 

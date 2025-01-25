@@ -6,6 +6,6 @@ SELECT
 		SELECT
 			*
 		FROM
-			[Person] [_]
+			[Person] [t1]
 	), 1, 0)
 

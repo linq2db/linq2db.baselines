@@ -10,5 +10,5 @@ SELECT
 FROM
 	[Person] [r]
 WHERE
-	[r].[PersonID] = 3 AND 1 = 0
+	1 = 0
 

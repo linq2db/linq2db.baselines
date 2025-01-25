@@ -10,7 +10,7 @@ SELECT
 FROM
 	Person p
 WHERE
-	p.PersonID = toInt32(1) AND p.MiddleName IS NULL
+	p.PersonID = 1 AND p.MiddleName IS NULL
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
@@ -24,5 +24,5 @@ SELECT
 FROM
 	Person p
 WHERE
-	p.PersonID = toInt32(1) AND p.MiddleName IS NULL
+	p.PersonID = 1 AND p.MiddleName IS NULL
 

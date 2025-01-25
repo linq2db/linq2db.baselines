@@ -39,16 +39,16 @@ BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 SELECT
-	"_"."FirstName",
-	"_"."PersonID",
-	"_"."LastName",
-	"_"."MiddleName",
-	"_"."Gender"
+	"t1"."FirstName",
+	"t1"."PersonID",
+	"t1"."LastName",
+	"t1"."MiddleName",
+	"t1"."Gender"
 FROM
-	"Person" "_"
+	"Person" "t1"
 WHERE
-	"_"."FirstName" = 'test_inherited_insert'
-FETCH FIRST 1 ROWS ONLY
+	"t1"."FirstName" = 'test_inherited_insert'
+FETCH NEXT 1 ROWS ONLY
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
@@ -64,29 +64,29 @@ DECLARE @ID Integer(4) -- Int32
 SET     @ID = 5
 
 UPDATE
-	"Person"
+	"Person" "t1"
 SET
-	"Person"."FirstName" = @FirstName,
-	"Person"."LastName" = @LastName,
-	"Person"."MiddleName" = @MiddleName,
-	"Person"."Gender" = @Gender
+	"FirstName" = @FirstName,
+	"LastName" = @LastName,
+	"MiddleName" = @MiddleName,
+	"Gender" = @Gender
 WHERE
-	"Person"."PersonID" = @ID
+	"t1"."PersonID" = @ID
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 SELECT
-	"_"."FirstName",
-	"_"."PersonID",
-	"_"."LastName",
-	"_"."MiddleName",
-	"_"."Gender"
+	"t1"."FirstName",
+	"t1"."PersonID",
+	"t1"."LastName",
+	"t1"."MiddleName",
+	"t1"."Gender"
 FROM
-	"Person" "_"
+	"Person" "t1"
 WHERE
-	"_"."FirstName" = 'test_inherited_insert'
-FETCH FIRST 1 ROWS ONLY
+	"t1"."FirstName" = 'test_inherited_insert'
+FETCH NEXT 1 ROWS ONLY
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW

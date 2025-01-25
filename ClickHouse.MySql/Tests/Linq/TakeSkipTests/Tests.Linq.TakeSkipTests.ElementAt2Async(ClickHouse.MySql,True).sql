@@ -7,8 +7,8 @@ SELECT
 FROM
 	Parent p
 WHERE
-	p.ParentID > toInt32(1)
+	p.ParentID > 1
 ORDER BY
 	p.ParentID
-LIMIT toInt32(3), toInt32(1)
+LIMIT 3, 1
 

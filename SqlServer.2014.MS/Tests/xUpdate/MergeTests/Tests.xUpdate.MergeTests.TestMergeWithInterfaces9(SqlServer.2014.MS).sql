@@ -24,15 +24,15 @@ USING (VALUES
 	(1,N'2')
 ) [Source]
 (
-	[Id],
-	[Value_1]
+	[source_Id],
+	[source_Value]
 )
-ON ([Target].[Id] = [Source].[Id])
+ON ([Target].[Id] = [Source].[source_Id])
 
-WHEN MATCHED AND [Target].[Id] <> [Source].[Id] THEN
+WHEN MATCHED AND [Target].[Id] <> [Source].[source_Id] THEN
 UPDATE
 SET
-	[Target].[Value] = [Source].[Value_1]
+	[Value] = [Source].[source_Value]
 ;
 
 BeforeExecute

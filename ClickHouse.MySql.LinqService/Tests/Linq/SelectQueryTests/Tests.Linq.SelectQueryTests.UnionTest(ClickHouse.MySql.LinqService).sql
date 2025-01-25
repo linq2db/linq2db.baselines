@@ -17,48 +17,36 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
-	addDays(now(), t.Value),
-	addDays(now(), toInt32(2))
+	addDays(now(), t.Value) as Value1,
+	addDays(now(), 2) as Value2
 FROM
 	SampleClass t
 WHERE
-	t.Value = toInt32(1)
+	t.Value = 1
 UNION DISTINCT
 SELECT
-	t1.Value1,
-	t1.Value2
-FROM
-	(
-		SELECT
-			addDays(now(), toInt32(3)) as Value1,
-			addDays(now(), toInt32(4)) as Value2
-	) t1
+	addDays(now(), 3) as Value1,
+	addDays(now(), 4) as Value2
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
-	v.Value2
+	v_1.Value2
 FROM
 	(
 		SELECT
-			addDays(now(), t.Value) as Value1,
-			addDays(now(), toInt32(2)) as Value2
+			addDays(now(), v.Value) as Value1,
+			addDays(now(), 2) as Value2
 		FROM
-			SampleClass t
+			SampleClass v
 		WHERE
-			t.Value = toInt32(1)
+			v.Value = 1
 		UNION DISTINCT
 		SELECT
-			t1.Value1 as Value1,
-			t1.Value2 as Value2
-		FROM
-			(
-				SELECT
-					addDays(now(), toInt32(3)) as Value1,
-					addDays(now(), toInt32(4)) as Value2
-			) t1
-	) v
+			addDays(now(), 3) as Value1,
+			addDays(now(), 4) as Value2
+	) v_1
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse

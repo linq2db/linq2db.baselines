@@ -33,11 +33,11 @@ DECLARE @p_p Int32
 SET     @p_p = 2
 
 UPDATE
-	"testparams"
+	"testparams" t
 SET
-	"testparams"."p_p" = :p_p
+	"p_p" = :p_p
 WHERE
-	"testparams"."p_p" = 1
+	t."p_p" = 1
 
 BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12

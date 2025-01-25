@@ -61,21 +61,21 @@ BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
-	[TypeConvertTable] [_]
+	[TypeConvertTable] [t1]
 WHERE
-	[_].[BoolValue] = 'N'
+	[t1].[BoolValue] = 'N'
 
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
-	[TypeConvertTable] [_]
+	[TypeConvertTable] [t1]
 WHERE
-	[_].[BoolValue] = 'Y'
+	[t1].[BoolValue] = 'Y'
 
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
@@ -83,215 +83,171 @@ DECLARE @GuidValue VarChar(36) -- AnsiString
 SET     @GuidValue = 'a948600d-de21-4f74-8ac2-9516b287076e'
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
-	[TypeConvertTable] [_]
+	[TypeConvertTable] [t1]
 WHERE
-	[_].[GuidValue] = @GuidValue
+	[t1].[GuidValue] = @GuidValue
 
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @BoolValue Char -- AnsiStringFixedLength
-SET     @BoolValue = 'N'
-DECLARE @take  -- Int32
-SET     @take = 1
 
 SELECT
-	[_].[Name],
-	[_].[BoolValue],
-	[_].[GuidValue]
+	[t1].[Name],
+	[t1].[BoolValue],
+	[t1].[GuidValue]
 FROM
-	[TypeConvertTable] [_]
+	[TypeConvertTable] [t1]
 WHERE
-	[_].[BoolValue] = @BoolValue
-LIMIT @take
+	[t1].[BoolValue] = 'N'
+LIMIT 1
 
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @BoolValue Char -- AnsiStringFixedLength
-SET     @BoolValue = 'Y'
-DECLARE @take  -- Int32
-SET     @take = 1
 
 SELECT
-	[_].[Name],
-	[_].[BoolValue],
-	[_].[GuidValue]
+	[t1].[Name],
+	[t1].[BoolValue],
+	[t1].[GuidValue]
 FROM
-	[TypeConvertTable] [_]
+	[TypeConvertTable] [t1]
 WHERE
-	[_].[BoolValue] = @BoolValue
-LIMIT @take
+	[t1].[BoolValue] = 'Y'
+LIMIT 1
 
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @BoolValue Char -- AnsiStringFixedLength
-SET     @BoolValue = 'N'
-DECLARE @take  -- Int32
-SET     @take = 1
 
 SELECT
-	[_].[Name],
-	[_].[BoolValue],
-	[_].[GuidValue]
+	[t1].[Name],
+	[t1].[BoolValue],
+	[t1].[GuidValue]
 FROM
-	[TypeConvertTable] [_]
+	[TypeConvertTable] [t1]
 WHERE
-	[_].[BoolValue] = @BoolValue
-LIMIT @take
+	[t1].[BoolValue] = 'N'
+LIMIT 1
 
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @BoolValue Char -- AnsiStringFixedLength
-SET     @BoolValue = 'Y'
-DECLARE @take  -- Int32
-SET     @take = 1
 
 SELECT
-	[_].[Name],
-	[_].[BoolValue],
-	[_].[GuidValue]
+	[t1].[Name],
+	[t1].[BoolValue],
+	[t1].[GuidValue]
 FROM
-	[TypeConvertTable] [_]
+	[TypeConvertTable] [t1]
 WHERE
-	[_].[BoolValue] = @BoolValue
-LIMIT @take
+	[t1].[BoolValue] = 'Y'
+LIMIT 1
 
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @BoolValue Char -- AnsiStringFixedLength
-SET     @BoolValue = 'N'
-DECLARE @take  -- Int32
-SET     @take = 1
 
 SELECT
-	[_].[Name],
-	[_].[BoolValue],
-	[_].[GuidValue]
+	[t1].[Name],
+	[t1].[BoolValue],
+	[t1].[GuidValue]
 FROM
-	[TypeConvertTable] [_]
+	[TypeConvertTable] [t1]
 WHERE
-	[_].[BoolValue] = @BoolValue
-LIMIT @take
+	[t1].[BoolValue] = 'N'
+LIMIT 1
 
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @BoolValue Char -- AnsiStringFixedLength
-SET     @BoolValue = 'Y'
-DECLARE @take  -- Int32
-SET     @take = 1
 
 SELECT
-	[_].[Name],
-	[_].[BoolValue],
-	[_].[GuidValue]
+	[t1].[Name],
+	[t1].[BoolValue],
+	[t1].[GuidValue]
 FROM
-	[TypeConvertTable] [_]
+	[TypeConvertTable] [t1]
 WHERE
-	[_].[BoolValue] = @BoolValue
-LIMIT @take
+	[t1].[BoolValue] = 'Y'
+LIMIT 1
 
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @BoolValue Char -- AnsiStringFixedLength
-SET     @BoolValue = 'N'
-DECLARE @take  -- Int32
-SET     @take = 1
 
 SELECT
-	[_].[Name],
-	[_].[BoolValue],
-	[_].[GuidValue]
+	[t1].[Name],
+	[t1].[BoolValue],
+	[t1].[GuidValue]
 FROM
-	[TypeConvertTable] [_]
+	[TypeConvertTable] [t1]
 WHERE
-	[_].[BoolValue] = @BoolValue
-LIMIT @take
+	[t1].[BoolValue] = 'N'
+LIMIT 1
 
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @BoolValue Char -- AnsiStringFixedLength
-SET     @BoolValue = 'Y'
-DECLARE @take  -- Int32
-SET     @take = 1
 
 SELECT
-	[_].[Name],
-	[_].[BoolValue],
-	[_].[GuidValue]
+	[t1].[Name],
+	[t1].[BoolValue],
+	[t1].[GuidValue]
 FROM
-	[TypeConvertTable] [_]
+	[TypeConvertTable] [t1]
 WHERE
-	[_].[BoolValue] = @BoolValue
-LIMIT @take
+	[t1].[BoolValue] = 'Y'
+LIMIT 1
 
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @BoolValue Char -- AnsiStringFixedLength
-SET     @BoolValue = 'N'
-DECLARE @take  -- Int32
-SET     @take = 1
 
 SELECT
-	[_].[Name],
-	[_].[BoolValue],
-	[_].[GuidValue]
+	[t1].[Name],
+	[t1].[BoolValue],
+	[t1].[GuidValue]
 FROM
-	[TypeConvertTable] [_]
+	[TypeConvertTable] [t1]
 WHERE
-	[_].[BoolValue] = @BoolValue
-LIMIT @take
+	[t1].[BoolValue] = 'N'
+LIMIT 1
 
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @BoolValue Char -- AnsiStringFixedLength
-SET     @BoolValue = 'Y'
-DECLARE @take  -- Int32
-SET     @take = 1
 
 SELECT
-	[_].[Name],
-	[_].[BoolValue],
-	[_].[GuidValue]
+	[t1].[Name],
+	[t1].[BoolValue],
+	[t1].[GuidValue]
 FROM
-	[TypeConvertTable] [_]
+	[TypeConvertTable] [t1]
 WHERE
-	[_].[BoolValue] = @BoolValue
-LIMIT @take
+	[t1].[BoolValue] = 'Y'
+LIMIT 1
 
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 DECLARE @GuidValue VarChar(36) -- AnsiString
 SET     @GuidValue = 'bc7b663d-0fde-4327-8f92-5d8cc3a11d11'
-DECLARE @take  -- Int32
-SET     @take = 1
 
 SELECT
-	[_].[Name],
-	[_].[BoolValue],
-	[_].[GuidValue]
+	[t1].[Name],
+	[t1].[BoolValue],
+	[t1].[GuidValue]
 FROM
-	[TypeConvertTable] [_]
+	[TypeConvertTable] [t1]
 WHERE
-	[_].[GuidValue] = @GuidValue
-LIMIT @take
+	[t1].[GuidValue] = @GuidValue
+LIMIT 1
 
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 DECLARE @GuidValue VarChar(36) -- AnsiString
 SET     @GuidValue = 'a948600d-de21-4f74-8ac2-9516b287076e'
-DECLARE @take  -- Int32
-SET     @take = 1
 
 SELECT
-	[_].[Name],
-	[_].[BoolValue],
-	[_].[GuidValue]
+	[t1].[Name],
+	[t1].[BoolValue],
+	[t1].[GuidValue]
 FROM
-	[TypeConvertTable] [_]
+	[TypeConvertTable] [t1]
 WHERE
-	[_].[GuidValue] = @GuidValue
-LIMIT @take
+	[t1].[GuidValue] = @GuidValue
+LIMIT 1
 
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite

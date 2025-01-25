@@ -8,8 +8,7 @@ SELECT
 				*
 			FROM
 				"Child" t1
-		)
-			THEN True
+		) THEN True
 		ELSE False
 	END,
 	CASE
@@ -26,11 +25,10 @@ SELECT
 				*
 			FROM
 				"Child" t2
-		)
-			THEN True
+		) THEN True
 		ELSE False
 	END,
-	Cast(NULL as Boolean)
+	NULL
 FROM
 	"Parent" x_1
 

@@ -2,11 +2,11 @@
 -- SqlServer.2022.MS SqlServer.2022
 
 SELECT
-	[c_2].[ParentID],
-	[c_2].[ChildID],
-	[c_2].[GrandChildID]
+	[a_GrandChildren].[ParentID],
+	[a_GrandChildren].[ChildID],
+	[a_GrandChildren].[GrandChildID]
 FROM
-	[Parent] [cp]
-		INNER JOIN [Child] [c_1] ON [cp].[ParentID] = [c_1].[ParentID]
-		INNER JOIN [GrandChild] [c_2] ON [c_1].[ParentID] = [c_2].[ParentID] AND [c_1].[ChildID] = [c_2].[ChildID]
+	[Parent] [p]
+		INNER JOIN [Child] [a_Children] ON [p].[ParentID] = [a_Children].[ParentID]
+		INNER JOIN [GrandChild] [a_GrandChildren] ON [a_Children].[ParentID] = [a_GrandChildren].[ParentID] AND [a_Children].[ChildID] = [a_GrandChildren].[ChildID]
 

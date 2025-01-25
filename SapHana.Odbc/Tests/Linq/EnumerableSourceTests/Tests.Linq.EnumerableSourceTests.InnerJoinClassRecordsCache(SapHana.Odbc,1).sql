@@ -10,9 +10,9 @@ SELECT
 FROM
 	"Person" "p"
 		INNER JOIN (
-			SELECT 2 AS "PersonID" FROM DUMMY
+			SELECT 2 AS "ID" FROM DUMMY
 			UNION ALL
-			SELECT 3 FROM DUMMY) "n" ON "p"."PersonID" = "n"."PersonID"
+			SELECT 3 FROM DUMMY) "n" ON "p"."PersonID" = "n"."ID"
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
@@ -26,7 +26,7 @@ SELECT
 FROM
 	"Person" "p"
 		INNER JOIN (
-			SELECT 4 AS "PersonID" FROM DUMMY
+			SELECT 4 AS "ID" FROM DUMMY
 			UNION ALL
-			SELECT 5 FROM DUMMY) "n" ON "p"."PersonID" = "n"."PersonID"
+			SELECT 5 FROM DUMMY) "n" ON "p"."PersonID" = "n"."ID"
 

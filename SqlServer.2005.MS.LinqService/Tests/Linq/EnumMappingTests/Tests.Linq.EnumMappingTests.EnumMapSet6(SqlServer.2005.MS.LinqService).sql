@@ -27,19 +27,17 @@ BeforeExecute
 -- SqlServer.2005.MS SqlServer.2005
 
 UPDATE
-	[r]
+	[LinqDataTypes]
 SET
-	[r].[IntValue] = 4
-FROM
-	[LinqDataTypes] [r]
+	[IntValue] = 4
 WHERE
-	[r].[ID] = 101 AND [r].[IntValue] = 3
+	[LinqDataTypes].[ID] = 101 AND [LinqDataTypes].[IntValue] = 3
 
 BeforeExecute
 -- SqlServer.2005.MS SqlServer.2005
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	[LinqDataTypes] [r]
 WHERE

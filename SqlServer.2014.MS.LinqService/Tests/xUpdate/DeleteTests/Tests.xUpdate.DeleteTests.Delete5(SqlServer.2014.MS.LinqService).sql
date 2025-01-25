@@ -52,11 +52,11 @@ BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
-	[Parent] [_]
+	[Parent] [t1]
 WHERE
-	[_].[ParentID] > 1000
+	[t1].[ParentID] > 1000
 
 BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014
@@ -71,9 +71,9 @@ BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
-	[Parent] [_]
+	[Parent] [t1]
 WHERE
-	[_].[ParentID] > 1000
+	[t1].[ParentID] > 1000
 

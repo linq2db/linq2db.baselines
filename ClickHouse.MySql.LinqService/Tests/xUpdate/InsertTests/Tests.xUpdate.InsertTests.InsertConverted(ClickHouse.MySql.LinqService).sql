@@ -4,7 +4,7 @@
 ALTER TABLE
 	LinqDataTypes
 DELETE WHERE
-	ID >= toInt32(1000)
+	ID >= 1000
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
@@ -16,7 +16,7 @@ INSERT INTO LinqDataTypes
 )
 VALUES
 (
-	toInt32(1001),
+	1001,
 	toInt64(600000000)
 )
 
@@ -29,8 +29,8 @@ SELECT
 FROM
 	LinqDataTypes t
 WHERE
-	t.ID = toInt32(1001)
-LIMIT toInt32(1)
+	t.ID = 1001
+LIMIT 1
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
@@ -38,5 +38,5 @@ BeforeExecute
 ALTER TABLE
 	LinqDataTypes
 DELETE WHERE
-	ID >= toInt32(1000)
+	ID >= 1000
 

@@ -2,7 +2,7 @@
 -- ClickHouse.MySql ClickHouse
 
 SELECT
-	((((toInt32(3) * (toInt32(10) - toInt32(2)) / toInt32(3)) * toInt32(2)) * (((((toInt32(3) * (toInt32(10) - toInt32(2)) / toInt32(3)) * toInt32(2)) * (toInt32(10) - toInt32(2)) / ((toInt32(3) * (toInt32(10) - toInt32(2)) / toInt32(3)) * toInt32(2))) * toInt32(2)) - child_1.ChildID) / ((toInt32(3) * (toInt32(10) - toInt32(2)) / toInt32(3)) * toInt32(2))) * child_1.ChildID)
+	((((3 * (10 - 2) / 3) * 2) * (((((3 * (10 - 2) / 3) * 2) * (10 - 2) / ((3 * (10 - 2) / 3) * 2)) * 2) - child_1.ChildID) / ((3 * (10 - 2) / 3) * 2)) * child_1.ChildID)
 FROM
 	Child child_1
 

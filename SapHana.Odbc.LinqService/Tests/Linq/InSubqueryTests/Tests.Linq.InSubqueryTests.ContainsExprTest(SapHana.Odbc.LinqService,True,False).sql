@@ -15,6 +15,24 @@ WHERE
 		FROM
 			"Child" "c_1"
 		WHERE
-			"c_1"."ParentID" = "p"."ParentID" + ?
+			"p"."ParentID" + ? = "c_1"."ParentID"
 	)
+
+BeforeExecute
+-- SapHana.Odbc SapHanaOdbc
+
+SELECT
+	"t1"."ParentID",
+	"t1"."Value1"
+FROM
+	"Parent" "t1"
+
+BeforeExecute
+-- SapHana.Odbc SapHanaOdbc
+
+SELECT
+	"t1"."ParentID",
+	"t1"."ChildID"
+FROM
+	"Child" "t1"
 

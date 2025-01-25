@@ -20,3 +20,12 @@ ORDER BY
 	[t2].[ParentID] DESC
 OFFSET @skip ROWS FETCH NEXT @take ROWS ONLY 
 
+BeforeExecute
+-- SqlServer.2014.MS SqlServer.2014
+
+SELECT
+	[t1].[ParentID],
+	[t1].[Value1]
+FROM
+	[Parent] [t1]
+

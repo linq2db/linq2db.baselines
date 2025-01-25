@@ -16,8 +16,8 @@ FROM
 	) t2
 UNION ALL
 SELECT
-	t4.ParentID,
-	t4.ChildID
+	t4.ParentID as ParentID,
+	t4.ChildID as ChildID
 FROM
 	(
 		SELECT
@@ -39,8 +39,8 @@ FROM
 	Child t1
 UNION ALL
 SELECT
-	t3.ParentID,
-	t3.ChildID
+	t3.ParentID as ParentID,
+	t3.ChildID as ChildID
 FROM
 	(
 		SELECT

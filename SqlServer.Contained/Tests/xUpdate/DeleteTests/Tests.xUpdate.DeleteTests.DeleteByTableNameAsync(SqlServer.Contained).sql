@@ -47,16 +47,14 @@ BeforeExecute
 -- SqlServer.Contained SqlServer.2019 (asynchronously)
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	[xxPerson] [t1]
 
 BeforeExecute
 -- SqlServer.Contained SqlServer.2019 (asynchronously)
-DECLARE @take Int -- Int32
-SET     @take = 2
 
-SELECT TOP (@take)
+SELECT TOP (2)
 	[t1].[FirstName],
 	[t1].[PersonID],
 	[t1].[LastName],
@@ -80,7 +78,7 @@ BeforeExecute
 -- SqlServer.Contained SqlServer.2019 (asynchronously)
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	[xxPerson] [t1]
 

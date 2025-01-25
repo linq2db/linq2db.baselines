@@ -2,19 +2,15 @@
 -- SqlServer.2014.MS SqlServer.2014
 
 SELECT
-	Max([t2].[cnt])
+	MAX([t1].[COUNT_1])
 FROM
-	(
-		SELECT
-			(
-				SELECT
-					Count(*)
-				FROM
-					[Child] [t1]
-				WHERE
-					[p].[ParentID] = [t1].[ParentID]
-			) as [cnt]
-		FROM
-			[Parent] [p]
-	) [t2]
+	[Parent] [t2]
+		OUTER APPLY (
+			SELECT
+				COUNT(*) as [COUNT_1]
+			FROM
+				[Child] [a_Children]
+			WHERE
+				[t2].[ParentID] = [a_Children].[ParentID]
+		) [t1]
 

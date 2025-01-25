@@ -54,7 +54,7 @@ DECLARE @z  -- Int32
 SET     @z = 0
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	[sample_table_temp] [t]
 WHERE

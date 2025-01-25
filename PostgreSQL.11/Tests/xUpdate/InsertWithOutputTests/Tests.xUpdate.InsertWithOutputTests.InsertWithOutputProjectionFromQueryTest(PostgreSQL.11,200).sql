@@ -63,14 +63,14 @@ INSERT INTO "DestinationTable"
 SELECT
 	s."Id" + 100 + :param,
 	s."Value" + 100,
-	s."ValueStr" || Cast(100 as VarChar(11))
+	s."ValueStr" || 100
 FROM
 	"TableWithData" s
 WHERE
 	s."Id" > 3
 RETURNING
 	"DestinationTable"."Id" + 1,
-	"DestinationTable"."ValueStr" || Cast(1 as VarChar(11))
+	"DestinationTable"."ValueStr" || 1
 
 BeforeExecute
 -- PostgreSQL.11 PostgreSQL.9.5 PostgreSQL
@@ -86,8 +86,8 @@ BeforeExecute
 -- PostgreSQL.11 PostgreSQL.9.5 PostgreSQL
 
 SELECT
-	t."Id",
-	t."ValueStr"
+	t."Id" + 1,
+	t."ValueStr" || 1
 FROM
 	"DestinationTable" t
 

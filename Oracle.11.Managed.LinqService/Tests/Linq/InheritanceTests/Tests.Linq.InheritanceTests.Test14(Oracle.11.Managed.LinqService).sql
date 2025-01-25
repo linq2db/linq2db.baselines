@@ -2,13 +2,11 @@
 -- Oracle.11.Managed Oracle11
 DECLARE @id Int32
 SET     @id = 10
-DECLARE @take Int32
-SET     @take = 1
 
 SELECT
-	x."ChildID"
+	c_1."ChildID"
 FROM
-	"Child" x
+	"Child" c_1
 WHERE
-	x."ChildID" = :id AND ROWNUM <= :take
+	c_1."ChildID" = :id AND ROWNUM <= 1
 

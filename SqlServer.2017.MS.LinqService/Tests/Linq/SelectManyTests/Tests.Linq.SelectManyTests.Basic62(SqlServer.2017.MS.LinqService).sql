@@ -2,10 +2,8 @@
 -- SqlServer.2017.MS SqlServer.2017
 
 SELECT
-	[_].[ParentID] + [cp].[ParentID]
+	[a_Children].[ParentID] + [p].[ParentID]
 FROM
-	[Parent] [cp]
-		CROSS JOIN [Child] [_]
-WHERE
-	[_].[ParentID] + [cp].[ParentID] > 1 AND [cp].[ParentID] = [_].[ParentID]
+	[Parent] [p]
+		INNER JOIN [Child] [a_Children] ON [p].[ParentID] = [a_Children].[ParentID] AND [a_Children].[ParentID] + [p].[ParentID] > 1
 

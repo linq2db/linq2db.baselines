@@ -55,51 +55,51 @@ BeforeExecute
 -- SqlServer.2019.MS SqlServer.2019
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	[Ints] [i]
 WHERE
-	([i].[One] < [i].[One] OR [i].[One] = [i].[One] AND [i].[Two] < [i].[One] * 2 OR [i].[One] = [i].[One] AND [i].[Two] = [i].[One] * 2 AND [i].[Three] <= [i].[Four] - 1)
+	([i].[Two] < [i].[One] * 2 OR [i].[Two] = [i].[One] * 2 AND [i].[Three] <= [i].[Four] - 1)
 
 BeforeExecute
 -- SqlServer.2019.MS SqlServer.2019
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	[Ints] [i]
 WHERE
-	([i].[One] < [i].[One] OR [i].[One] = [i].[One] AND [i].[Two] < [i].[Two] OR [i].[One] = [i].[One] AND [i].[Two] = [i].[Two] AND [i].[Four] <= [i].[Three])
+	[i].[Four] <= [i].[Three]
 
 BeforeExecute
 -- SqlServer.2019.MS SqlServer.2019
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	[Ints] [i]
 WHERE
-	([i].[One] < [i].[One] OR [i].[One] = [i].[One] AND [i].[Two] < [i].[Five] OR [i].[One] = [i].[One] AND [i].[Two] = [i].[Five] AND [i].[Four] <= [i].[Three])
+	([i].[Two] < [i].[Five] OR [i].[Two] = [i].[Five] AND [i].[Four] <= [i].[Three])
 
 BeforeExecute
 -- SqlServer.2019.MS SqlServer.2019
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	[Ints] [i]
 WHERE
-	([i].[One] < [i].[One] OR [i].[One] = [i].[One] AND [i].[Nil] < [i].[Two] OR [i].[One] = [i].[One] AND [i].[Nil] = [i].[Two] AND [i].[One] <= [i].[Three])
+	([i].[Nil] < [i].[Two] OR [i].[Nil] = [i].[Two] AND [i].[One] <= [i].[Three])
 
 BeforeExecute
 -- SqlServer.2019.MS SqlServer.2019
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	[Ints] [i]
 WHERE
-	(0 < [i].[One] OR 0 = [i].[One] AND NULL < [i].[Two] OR 0 = [i].[One] AND [i].[Two] IS NULL AND 3 <= [i].[Three])
+	(0 < [i].[One] OR 0 = [i].[One] AND NULL < [i].[Two])
 
 BeforeExecute
 -- SqlServer.2019.MS SqlServer.2019

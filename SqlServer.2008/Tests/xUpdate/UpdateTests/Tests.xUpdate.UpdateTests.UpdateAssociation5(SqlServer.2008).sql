@@ -2,23 +2,33 @@
 -- SqlServer.2008
 
 UPDATE
-	[a_Table1]
+	[u]
 SET
-	[a_Table1].[BoolValue] = CASE
-		WHEN (NOT EXISTS(
+	[u].[BoolValue] = CASE
+		WHEN NOT EXISTS(
 			SELECT
 				*
 			FROM
-				[Parent] [x]
+				[Parent] [x_1]
 			WHERE
-				[a_Table1].[ID] = [x].[ParentID] AND ([x].[Value1] <> 1 OR [x].[Value1] IS NULL)
-		))
+				[t1].[ID] IS NOT NULL AND [t1].[ID] = [x_1].[ParentID] AND
+				([x_1].[Value1] <> 1 OR [x_1].[Value1] IS NULL)
+		)
 			THEN 1
 		ELSE 0
 	END
 FROM
-	[Parent] [x_1]
-		INNER JOIN [LinqDataTypes] [a_Table1] ON [x_1].[ParentID] = [a_Table1].[ID]
+	[LinqDataTypes] [u],
+	(
+		SELECT DISTINCT
+			[a_Table1].[ID],
+			[a_Table1].[BoolValue]
+		FROM
+			[Parent] [x]
+				INNER JOIN [LinqDataTypes] [a_Table1] ON [x].[ParentID] = [a_Table1].[ID]
+		WHERE
+			[x].[ParentID] IN (10000, 20000)
+	) [t1]
 WHERE
-	[x_1].[ParentID] IN (10000, 20000)
+	[u].[ID] = [t1].[ID] AND [u].[BoolValue] = [t1].[BoolValue]
 

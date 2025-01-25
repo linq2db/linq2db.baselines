@@ -2,9 +2,14 @@
 -- ClickHouse.MySql ClickHouse
 
 SELECT
-	toFloat64(t.MoneyValue)
+	p_1.c1
 FROM
-	LinqDataTypes t
+	(
+		SELECT
+			toFloat64(p.MoneyValue) as c1
+		FROM
+			LinqDataTypes p
+	) p_1
 WHERE
-	toFloat64(t.MoneyValue) > toFloat64(0)
+	p_1.c1 > toFloat64(0)
 

@@ -4,12 +4,12 @@
 SELECT
 	(
 		SELECT
-			Count(*)
+			COUNT(*)
 		FROM
-			"Child" "t1"
+			"Child" "c_1"
 		WHERE
-			"p"."ParentID" = "t1"."ParentID"
+			"t1"."ParentID" = "c_1"."ParentID"
 	)
 FROM
-	"Parent" "p"
+	"Parent" "t1"
 

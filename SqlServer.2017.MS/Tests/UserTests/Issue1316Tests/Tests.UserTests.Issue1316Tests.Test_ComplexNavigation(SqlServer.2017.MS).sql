@@ -30,31 +30,27 @@ VALUES
 
 BeforeExecute
 -- SqlServer.2017.MS SqlServer.2017
-DECLARE @take Int -- Int32
-SET     @take = 2
 DECLARE @ID Int -- Int32
 SET     @ID = 5
 
-SELECT TOP (@take)
-	[_].[ID]
+SELECT TOP (2)
+	[t1].[ID]
 FROM
-	[Issue1316Tests] [_]
+	[Issue1316Tests] [t1]
 WHERE
-	[_].[ID] = @ID
+	[t1].[ID] = @ID
 
 BeforeExecute
 -- SqlServer.2017.MS SqlServer.2017
-DECLARE @take Int -- Int32
-SET     @take = 2
 DECLARE @Id Int -- Int32
 SET     @Id = 5
 
-SELECT TOP (@take)
-	[_].[ID]
+SELECT TOP (2)
+	[t1].[ID]
 FROM
-	[Issue1316Tests] [_]
+	[Issue1316Tests] [t1]
 WHERE
-	[_].[ID] = @Id
+	[t1].[ID] = @Id
 
 BeforeExecute
 -- SqlServer.2017.MS SqlServer.2017

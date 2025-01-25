@@ -2,9 +2,9 @@
 -- Access.Odbc AccessODBC
 
 DELETE FROM
-	[Child] [t1]
+	[Child] [c_1]
 WHERE
-	[t1].[ChildID] > 1000
+	[c_1].[ChildID] > 1000
 
 BeforeExecute
 -- Access.Odbc AccessODBC
@@ -28,7 +28,7 @@ BeforeExecute
 -- Access.Odbc AccessODBC
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	[Child] [c_1]
 WHERE
@@ -38,7 +38,7 @@ BeforeExecute
 -- Access.Odbc AccessODBC
 
 DELETE FROM
-	[Child] [t1]
+	[Child] [c_1]
 WHERE
-	[t1].[ChildID] > 1000
+	[c_1].[ChildID] > 1000
 

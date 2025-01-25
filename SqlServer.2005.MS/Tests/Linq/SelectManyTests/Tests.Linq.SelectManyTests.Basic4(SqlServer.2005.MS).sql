@@ -2,8 +2,8 @@
 -- SqlServer.2005.MS SqlServer.2005
 
 SELECT
-	[_].[ParentID] + 1
+	[t1].[ParentID] + 1
 FROM
-	[Parent] [cp]
-		INNER JOIN [Child] [_] ON [cp].[ParentID] = [_].[ParentID] + 1
+	[Parent] [p]
+		INNER JOIN [Child] [t1] ON [p].[ParentID] = [t1].[ParentID] + 1
 

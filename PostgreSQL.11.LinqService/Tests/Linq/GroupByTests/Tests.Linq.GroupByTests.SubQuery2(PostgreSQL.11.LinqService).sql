@@ -1,19 +1,19 @@
 ﻿BeforeExecute
 -- PostgreSQL.11 PostgreSQL.9.5 PostgreSQL
 DECLARE @n Integer -- Int32
-SET     @n = 0
+SET     @n = 1
 
 SELECT
-	t1."ParentID"
+	g_2."ParentID"
 FROM
 	(
 		SELECT
-			ch."ParentID" + 1 as "ParentID"
+			g_1."ParentID" + 1 as "ParentID"
 		FROM
-			"Child" ch
+			"Child" g_1
 		WHERE
-			ch."ParentID" > :n
-	) t1
+			g_1."ParentID" + 1 > :n
+	) g_2
 GROUP BY
-	t1."ParentID"
+	g_2."ParentID"
 

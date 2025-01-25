@@ -2,25 +2,25 @@
 BeginTransaction(ReadCommitted)
 BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
-DECLARE @input Varchar2(6) -- String
-SET     @input = '%test%'
+DECLARE @p Varchar2(6) -- String
+SET     @p = '%test%'
 
 SELECT
-	p."PersonID",
-	gjd_ri."PersonID",
-	gjd_ri."Diagnosis"
+	m_1."PersonID",
+	d."PersonID",
+	d."Diagnosis"
 FROM
-	"Person" p
-		INNER JOIN "Patient" gjd_ri ON gjd_ri."PersonID" = p."PersonID"
+	"Person" m_1
+		INNER JOIN "Patient" d ON m_1."PersonID" = d."PersonID"
 WHERE
-	Lower(p."FirstName") LIKE :input ESCAPE '~'
+	Lower(m_1."FirstName") LIKE :p ESCAPE '~'
 
 BeforeExecute
 DisposeTransaction
 BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
-DECLARE @input Varchar2(6) -- String
-SET     @input = '%test%'
+DECLARE @p Varchar2(6) -- String
+SET     @p = '%test%'
 
 SELECT
 	p."FirstName",
@@ -28,5 +28,5 @@ SELECT
 FROM
 	"Person" p
 WHERE
-	Lower(p."FirstName") LIKE :input ESCAPE '~'
+	Lower(p."FirstName") LIKE :p ESCAPE '~'
 

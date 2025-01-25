@@ -2,7 +2,7 @@
 -- SqlServer.2016
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	(
 		SELECT DISTINCT

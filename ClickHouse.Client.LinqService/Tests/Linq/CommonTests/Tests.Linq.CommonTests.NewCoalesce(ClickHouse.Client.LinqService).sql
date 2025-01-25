@@ -2,7 +2,7 @@
 -- ClickHouse.Client ClickHouse
 
 SELECT
-	Coalesce(p.Value1, toInt32(100))
+	p.Value1
 FROM
 	Parent p
 

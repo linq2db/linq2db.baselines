@@ -1,12 +1,13 @@
 ﻿BeforeExecute
 -- SqlCe
-DECLARE @default Int -- Int32
-SET     @default = 0
 
 SELECT
-	[p].[Value1]
+	CASE
+		WHEN [p].[Value1] IS NOT NULL THEN [p].[Value1]
+		ELSE 0
+	END as [Value_1]
 FROM
 	[Parent] [p]
 WHERE
-	Coalesce([p].[Value1], @default) > 0
+	[p].[Value1] > 0 AND [p].[Value1] IS NOT NULL
 

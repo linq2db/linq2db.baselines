@@ -28,7 +28,7 @@ INSERT INTO StringTypesTable
 	NVarCharColumn
 )
 VALUES
-(toInt32(1),'someString','someString','someString','someString')
+(1,'someString','someString','someString','someString')
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse

@@ -297,9 +297,9 @@ BeforeExecute
 UPDATE
 	"UpdatedEntities"
 SET
-	"UpdatedEntities"."Value1" = "UpdatedEntities"."Value1" + "UpdatedEntities"."Value2" + "UpdatedEntities"."Value3",
-	"UpdatedEntities"."Value2" = "UpdatedEntities"."Value1" + "UpdatedEntities"."Value2" + "UpdatedEntities"."Value3",
-	"UpdatedEntities"."Value3" = 1
+	"Value1" = "UpdatedEntities"."Value1" + "UpdatedEntities"."Value2" + "UpdatedEntities"."Value3",
+	"Value2" = "UpdatedEntities"."Value1" + "UpdatedEntities"."Value2" + "UpdatedEntities"."Value3",
+	"Value3" = 1
 WHERE
 	EXISTS(
 		SELECT
@@ -313,8 +313,6 @@ WHERE
 
 BeforeExecute
 -- Oracle.11.Managed Oracle11
-DECLARE @take Int32
-SET     @take = 1
 
 SELECT
 	v."Value1",
@@ -324,7 +322,7 @@ FROM
 	"UpdatedEntities" v
 		LEFT JOIN "UpdateRelation" a_Relation ON v."RelationId" = a_Relation."id"
 WHERE
-	a_Relation."RelatedValue1" = 11 AND ROWNUM <= :take
+	a_Relation."RelatedValue1" = 11 AND ROWNUM <= 1
 
 BeforeExecute
 -- Oracle.11.Managed Oracle11

@@ -25,7 +25,7 @@ INSERT INTO TrimTestTable
 	Data
 )
 VALUES
-(toInt32(1),'***OOO***')
+(1,'***OOO***')
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse

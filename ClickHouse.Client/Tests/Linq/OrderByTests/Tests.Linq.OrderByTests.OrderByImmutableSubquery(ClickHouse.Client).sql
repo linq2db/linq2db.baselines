@@ -3,11 +3,12 @@
 
 SELECT
 	t1.ChildID,
-	t1.ParentID
+	t1.ParentID,
+	t1.OrderElement
 FROM
 	(
 		SELECT
-			toInt32(2) as OrderElement,
+			2 as OrderElement,
 			ch.ChildID as ChildID,
 			ch.ParentID as ParentID
 		FROM

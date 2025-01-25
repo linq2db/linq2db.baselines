@@ -49,16 +49,14 @@ BeforeExecute
 -- SqlServer.2008
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	[xxPerson] [t1]
 
 BeforeExecute
 -- SqlServer.2008
-DECLARE @take Int -- Int32
-SET     @take = 2
 
-SELECT TOP (@take)
+SELECT TOP (2)
 	[t1].[FirstName],
 	[t1].[PersonID],
 	[t1].[LastName],
@@ -82,7 +80,7 @@ BeforeExecute
 -- SqlServer.2008
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	[xxPerson] [t1]
 

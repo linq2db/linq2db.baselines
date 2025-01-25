@@ -2,28 +2,28 @@
 -- Access AccessOleDb
 
 SELECT
-	[t2].[Key_1]
+	[g_2].[c1]
 FROM
 	(
 		SELECT
-			Iif((
+			IIF((
 				SELECT
-					Count(*)
+					COUNT(*)
 				FROM
-					[Child] [t1]
+					[Child] [a_Children]
 				WHERE
-					[selectParam].[ParentID] = [t1].[ParentID]
+					[g_1].[ParentID] = [a_Children].[ParentID]
 			) > 0 AND (
 				SELECT
-					Avg([c_1].[ParentID])
+					AVG([a_Children_1].[ParentID])
 				FROM
-					[Child] [c_1]
+					[Child] [a_Children_1]
 				WHERE
-					[selectParam].[ParentID] = [c_1].[ParentID]
-			) > 3, True, False) as [Key_1]
+					[g_1].[ParentID] = [a_Children_1].[ParentID]
+			) > 3, True, False) as [c1]
 		FROM
-			[Parent] [selectParam]
-	) [t2]
+			[Parent] [g_1]
+	) [g_2]
 GROUP BY
-	[t2].[Key_1]
+	[g_2].[c1]
 

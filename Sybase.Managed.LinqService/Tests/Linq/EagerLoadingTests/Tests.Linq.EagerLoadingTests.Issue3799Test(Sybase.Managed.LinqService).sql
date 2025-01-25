@@ -177,30 +177,35 @@ BeforeExecute
 -- Sybase.Managed Sybase
 
 SELECT
-	[key_data_result].[Id],
-	[key_data_result].[Id_1],
-	[detail_1].[Name]
+	[m_1].[Id],
+	[m_1].[Id_1],
+	[d_1].[Name]
 FROM
 	(
 		SELECT DISTINCT
-			[detail].[Id],
-			[item_1].[Id] as [Id_1]
+			[d].[Id],
+			[t1].[Id] as [Id_1]
 		FROM
-			[Test3799Item] [item_1]
-				INNER JOIN [Test3799Item] [detail] ON [item_1].[Id] = [detail].[ParentId]
-	) [key_data_result]
-		INNER JOIN [Test3799Item] [detail_1] ON [key_data_result].[Id] = [detail_1].[ParentId]
+			(
+				SELECT DISTINCT
+					[item_1].[Id]
+				FROM
+					[Test3799Item] [item_1]
+			) [t1]
+				INNER JOIN [Test3799Item] [d] ON [t1].[Id] = [d].[ParentId]
+	) [m_1]
+		INNER JOIN [Test3799Item] [d_1] ON [m_1].[Id] = [d_1].[ParentId]
 
 BeforeExecute
 -- Sybase.Managed Sybase
 
 SELECT
-	[item_1].[Id],
-	[detail].[Name],
-	[detail].[Id]
+	[m_1].[Id],
+	[d].[Name],
+	[d].[Id]
 FROM
-	[Test3799Item] [item_1]
-		INNER JOIN [Test3799Item] [detail] ON [item_1].[Id] = [detail].[ParentId]
+	[Test3799Item] [m_1]
+		INNER JOIN [Test3799Item] [d] ON [m_1].[Id] = [d].[ParentId]
 
 BeforeExecute
 -- Sybase.Managed Sybase

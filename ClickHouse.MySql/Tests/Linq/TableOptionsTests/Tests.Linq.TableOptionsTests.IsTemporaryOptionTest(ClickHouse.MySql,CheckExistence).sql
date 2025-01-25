@@ -17,7 +17,7 @@ INSERT INTO temp_table1
 	Value
 )
 VALUES
-(toInt32(1),toInt32(2))
+(1,2)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
@@ -70,7 +70,7 @@ INSERT INTO temp_table1
 	Value
 )
 VALUES
-(toInt32(2),toInt32(3))
+(2,3)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
@@ -82,8 +82,8 @@ INSERT INTO temp_table1
 )
 VALUES
 (
-	toInt32(3),
-	toInt32(3)
+	3,
+	3
 )
 
 BeforeExecute
@@ -95,7 +95,7 @@ INSERT INTO temp_table1
 	Value
 )
 VALUES
-(toInt32(4),toInt32(5))
+(4,5)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse

@@ -70,7 +70,7 @@ BeforeExecute
 -- SQLite.MS SQLite
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	[Src] [s]
 
@@ -78,7 +78,7 @@ BeforeExecute
 -- SQLite.MS SQLite
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	[Src] [s]
 WHERE
@@ -88,7 +88,7 @@ BeforeExecute
 -- SQLite.MS SQLite
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	[Src] [s]
 WHERE
@@ -98,7 +98,7 @@ BeforeExecute
 -- SQLite.MS SQLite
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	[Src] [s]
 WHERE

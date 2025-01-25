@@ -2,19 +2,23 @@
 -- Access AccessOleDb
 
 SELECT
-	[p].[ParentID],
-	[t2].[count_1]
+	[t_1].[ParentID],
+	[t_1].[count_1]
 FROM
-	[Parent] [p]
-		LEFT JOIN (
-			SELECT
-				Count(*) as [count_1],
-				[t1].[ParentID]
-			FROM
-				[Child] [t1]
-			GROUP BY
-				[t1].[ParentID]
-		) [t2] ON ([p].[ParentID] = [t2].[ParentID])
+	(
+		SELECT
+			(
+				SELECT
+					COUNT(*)
+				FROM
+					[Child] [c_1]
+				WHERE
+					[t].[ParentID] = [c_1].[ParentID]
+			) as [count_1],
+			[t].[ParentID]
+		FROM
+			[Parent] [t]
+	) [t_1]
 WHERE
-	[t2].[count_1] > 0
+	[t_1].[count_1] > 0
 

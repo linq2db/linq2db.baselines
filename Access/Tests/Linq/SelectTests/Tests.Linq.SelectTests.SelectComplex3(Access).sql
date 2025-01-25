@@ -2,13 +2,13 @@
 -- Access AccessOleDb
 
 SELECT TOP 1
-	[_].[PersonID],
-	[_].[Gender],
-	[_].[FirstName],
-	[_].[LastName],
-	[_].[MiddleName]
+	[t1].[PersonID],
+	[t1].[Gender],
+	[t1].[FirstName],
+	[t1].[LastName],
+	[t1].[MiddleName]
 FROM
-	[Person] [_]
+	[Person] [t1]
 WHERE
-	[_].[PersonID] = 1
+	[t1].[PersonID] = 1
 

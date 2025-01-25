@@ -6,5 +6,5 @@ SELECT
 FROM
 	[Person] [p]
 WHERE
-	((([p].[FirstName] + ' ') + Convert(VarChar(11), 1)) + Convert(VarChar(11), 2)) = 'John 12'
+	([p].[FirstName] + ' 12') = 'John 12'
 

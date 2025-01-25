@@ -28,7 +28,7 @@ INSERT INTO Issue1554FluentTable
 )
 VALUES
 (
-	toInt32(0),
+	0,
 	'EC',
 	'EC'
 )
@@ -42,7 +42,7 @@ SELECT
 	t1.ClaimedKeyTypeN
 FROM
 	Issue1554FluentTable t1
-LIMIT toInt32(2)
+LIMIT 2
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse

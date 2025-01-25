@@ -41,14 +41,9 @@ BeforeExecute
 SELECT
 	t."Id",
 	t."Value",
-	s."c1"
+	1
 FROM
 	"SampleClass" t
-		INNER JOIN (
-			SELECT
-				1 as "c1"
-			FROM SYS.DUAL
-		) s ON s."c1" = t."Id"
 
 BeforeExecute
 -- Oracle.23.Managed Oracle.Managed Oracle12

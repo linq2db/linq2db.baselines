@@ -35,10 +35,8 @@ VALUES
 
 BeforeExecute
 -- SqlCe
-DECLARE @take Int -- Int32
-SET     @take = 1
 
-SELECT TOP (@take)
+SELECT TOP (1)
 	[t].[Id],
 	[t].[Name],
 	[t].[Age]

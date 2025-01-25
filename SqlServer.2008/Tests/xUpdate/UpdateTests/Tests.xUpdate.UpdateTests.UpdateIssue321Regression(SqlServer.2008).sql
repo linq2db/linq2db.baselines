@@ -50,31 +50,27 @@ VALUES
 
 BeforeExecute
 -- SqlServer.2008
-DECLARE @value2 Int -- Int32
+DECLARE @value2 Decimal(5, 0)
 SET     @value2 = 13621
 DECLARE @id Int -- Int32
 SET     @id = 100500
 
 UPDATE
-	[t1]
+	[LinqDataTypes]
 SET
-	[t1].[SmallIntValue] = Convert(SmallInt, [t1].[MoneyValue] / (@value2 / [t1].[IntValue]))
+	[SmallIntValue] = CAST(Floor([LinqDataTypes].[MoneyValue] / (@value2 / [LinqDataTypes].[IntValue])) AS SmallInt)
+WHERE
+	[LinqDataTypes].[ID] = @id
+
+BeforeExecute
+-- SqlServer.2008
+DECLARE @id Int -- Int32
+SET     @id = 100500
+
+SELECT TOP (1)
+	[t1].[SmallIntValue]
 FROM
 	[LinqDataTypes] [t1]
 WHERE
 	[t1].[ID] = @id
-
-BeforeExecute
--- SqlServer.2008
-DECLARE @take Int -- Int32
-SET     @take = 1
-DECLARE @id Int -- Int32
-SET     @id = 100500
-
-SELECT TOP (@take)
-	[_].[SmallIntValue]
-FROM
-	[LinqDataTypes] [_]
-WHERE
-	[_].[ID] = @id
 

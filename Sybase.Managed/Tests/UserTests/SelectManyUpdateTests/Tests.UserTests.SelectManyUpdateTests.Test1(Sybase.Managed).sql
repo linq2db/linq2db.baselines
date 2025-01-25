@@ -6,10 +6,15 @@ SET     @Value1 = NULL
 UPDATE
 	[Parent]
 SET
-	[c_1].[Value1] = @Value1
-FROM
-	[Parent] [c_1],
-	[Parent] [x]
+	[Value1] = @Value1
 WHERE
-	[x].[ParentID] IN (0, 0) AND [x].[ParentID] = [c_1].[Value1]
+	EXISTS(
+		SELECT
+			*
+		FROM
+			[Parent] [x]
+				INNER JOIN [Parent] [a_Values] ON [x].[ParentID] = [a_Values].[Value1]
+		WHERE
+			[x].[ParentID] IN (0, 0) AND [Parent].[ParentID] = [a_Values].[ParentID]
+	)
 

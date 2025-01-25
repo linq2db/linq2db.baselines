@@ -30,7 +30,7 @@ BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	[CollatedTable] [r]
 WHERE
@@ -40,7 +40,7 @@ BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	[CollatedTable] [r]
 WHERE
@@ -51,7 +51,7 @@ BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	[CollatedTable] [r]
 WHERE
@@ -61,7 +61,7 @@ BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	[CollatedTable] [r]
 WHERE

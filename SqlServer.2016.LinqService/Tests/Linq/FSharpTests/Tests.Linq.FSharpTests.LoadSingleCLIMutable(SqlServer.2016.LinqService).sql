@@ -1,9 +1,7 @@
 ﻿BeforeExecute
 -- SqlServer.2016
-DECLARE @take Int -- Int32
-SET     @take = 2
 
-SELECT TOP (@take)
+SELECT TOP (2)
 	[p].[PersonID],
 	[p].[FirstName],
 	[p].[LastName],
@@ -19,10 +17,8 @@ WHERE
 
 BeforeExecute
 -- SqlServer.2016
-DECLARE @take Int -- Int32
-SET     @take = 2
 
-SELECT TOP (@take)
+SELECT TOP (2)
 	[p].[PersonID],
 	[p].[FirstName],
 	[p].[LastName],

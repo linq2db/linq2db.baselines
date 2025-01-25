@@ -2,7 +2,7 @@
 -- SqlServer.2017.MS SqlServer.2017
 
 SELECT
-	Max([x].[PersonID])
+	MAX([x].[PersonID])
 FROM
 	[Patient] [x]
 WHERE
@@ -12,7 +12,7 @@ BeforeExecute
 -- SqlServer.2017.MS SqlServer.2017
 
 SELECT
-	Max([x].[PersonID])
+	MAX([x].[PersonID])
 FROM
 	[Patient] [x]
 WHERE
@@ -22,7 +22,7 @@ BeforeExecute
 -- SqlServer.2017.MS SqlServer.2017
 
 SELECT
-	Max([x].[PersonID])
+	MAX([x].[PersonID])
 FROM
 	[Patient] [x]
 WHERE
@@ -32,7 +32,7 @@ BeforeExecute
 -- SqlServer.2017.MS SqlServer.2017
 
 SELECT
-	Max([x].[PersonID])
+	MAX([x].[PersonID])
 FROM
 	[Patient] [x]
 WHERE

@@ -322,23 +322,33 @@ BeforeExecute
 -- SQLite.Classic SQLite
 
 SELECT
-	[lw_SampleClass1].[Id],
-	[_].[Id],
-	[_].[ParentId],
-	[_].[SubId],
-	[a_SubItem].[Id],
-	[a_SubItem].[Value]
+	[m_1].[Id],
+	[d_1].[Id_1],
+	[d_1].[ParentId],
+	[d_1].[SubId],
+	[d_1].[Id],
+	[d_1].[Value_1]
 FROM
 	(
 		SELECT DISTINCT
 			[t1].[Id]
 		FROM
 			[SampleClass1] [t1]
-	) [lw_SampleClass1]
-		INNER JOIN [ChildEntitity] [_] ON [lw_SampleClass1].[Id] = [_].[ParentId] AND [_].[ParentId] % 3 = 0
-		LEFT JOIN [SubEntitity] [a_SubItem] ON [_].[SubId] = [a_SubItem].[Id]
-ORDER BY
-	[_].[Id]
+	) [m_1]
+		INNER JOIN (
+			SELECT
+				[a_SubItem].[Id],
+				[a_SubItem].[Value] as [Value_1],
+				[d].[Id] as [Id_1],
+				[d].[ParentId],
+				[d].[SubId],
+				ROW_NUMBER() OVER (PARTITION BY [d].[ParentId] ORDER BY [d].[Id]) as [rn]
+			FROM
+				[ChildEntitity] [d]
+					LEFT JOIN [SubEntitity] [a_SubItem] ON [d].[SubId] = [a_SubItem].[Id]
+			WHERE
+				[d].[ParentId] % 3 = 0
+		) [d_1] ON [m_1].[Id] = [d_1].[ParentId] AND [d_1].[rn] <= 2
 
 BeforeExecute
 DisposeTransaction
@@ -357,23 +367,33 @@ BeforeExecute
 -- SQLite.Classic SQLite
 
 SELECT
-	[lw_SampleClass2].[Id],
-	[_].[Id],
-	[_].[ParentId],
-	[_].[SubId],
-	[a_SubItem].[Id],
-	[a_SubItem].[Value]
+	[m_1].[Id],
+	[d_1].[Id_1],
+	[d_1].[ParentId],
+	[d_1].[SubId],
+	[d_1].[Id],
+	[d_1].[Value_1]
 FROM
 	(
 		SELECT DISTINCT
 			[t1].[Id]
 		FROM
 			[SampleClass2] [t1]
-	) [lw_SampleClass2]
-		INNER JOIN [ChildEntitity] [_] ON [lw_SampleClass2].[Id] = [_].[ParentId] AND [_].[ParentId] % 3 = 0
-		LEFT JOIN [SubEntitity] [a_SubItem] ON [_].[SubId] = [a_SubItem].[Id]
-ORDER BY
-	[_].[Id]
+	) [m_1]
+		INNER JOIN (
+			SELECT
+				[a_SubItem].[Id],
+				[a_SubItem].[Value] as [Value_1],
+				[d].[Id] as [Id_1],
+				[d].[ParentId],
+				[d].[SubId],
+				ROW_NUMBER() OVER (PARTITION BY [d].[ParentId] ORDER BY [d].[Id]) as [rn]
+			FROM
+				[ChildEntitity] [d]
+					LEFT JOIN [SubEntitity] [a_SubItem] ON [d].[SubId] = [a_SubItem].[Id]
+			WHERE
+				[d].[ParentId] % 3 = 0
+		) [d_1] ON [m_1].[Id] = [d_1].[ParentId] AND [d_1].[rn] <= 2
 
 BeforeExecute
 DisposeTransaction

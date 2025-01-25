@@ -2,9 +2,9 @@
 -- Informix.DB2 Informix
 
 SELECT
-	Mdy(10, 1, Year(p.DateTimeValue) + 1)
+	Mdy(10, 1, Year(t.DateTimeValue) + 1)
 FROM
-	LinqDataTypes p
+	LinqDataTypes t
 WHERE
-	Month(Mdy(10, 1, Year(p.DateTimeValue) + 1)) = 10
+	Month(Mdy(10, 1, Year(t.DateTimeValue) + 1)) = 10
 

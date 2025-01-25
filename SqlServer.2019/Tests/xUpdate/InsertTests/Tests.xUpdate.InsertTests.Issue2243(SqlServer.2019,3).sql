@@ -36,8 +36,8 @@ USING (SELECT @Id AS [id]) [s] ON
 WHEN MATCHED THEN
 	UPDATE 
 	SET
-		[t1].[name] = @Name,
-		[t1].[updated_by] = @UpdatedBy
+		[name] = @Name,
+		[updated_by] = @UpdatedBy
 WHEN NOT MATCHED THEN
 	INSERT
 	(
@@ -54,10 +54,8 @@ WHEN NOT MATCHED THEN
 
 BeforeExecute
 -- SqlServer.2019
-DECLARE @take Int -- Int32
-SET     @take = 2
 
-SELECT TOP (@take)
+SELECT TOP (2)
 	[t1].[id],
 	[t1].[name],
 	[t1].[created_by],
@@ -84,8 +82,8 @@ USING (SELECT @Id AS [id]) [s] ON
 WHEN MATCHED THEN
 	UPDATE 
 	SET
-		[t1].[name] = @Name,
-		[t1].[updated_by] = @UpdatedBy
+		[name] = @Name,
+		[updated_by] = @UpdatedBy
 WHEN NOT MATCHED THEN
 	INSERT
 	(
@@ -102,10 +100,8 @@ WHEN NOT MATCHED THEN
 
 BeforeExecute
 -- SqlServer.2019
-DECLARE @take Int -- Int32
-SET     @take = 2
 
-SELECT TOP (@take)
+SELECT TOP (2)
 	[t1].[id],
 	[t1].[name],
 	[t1].[created_by],

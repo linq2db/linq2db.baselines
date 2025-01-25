@@ -12,7 +12,7 @@ INSERT INTO Person
 VALUES
 (
 	'擊敗奴隸',
-	toInt32(100),
+	100,
 	'Юникодкин',
 	NULL,
 	'M'
@@ -31,5 +31,5 @@ FROM
 	Person p
 WHERE
 	p.FirstName = '擊敗奴隸' AND p.LastName = 'Юникодкин'
-LIMIT toInt32(2)
+LIMIT 2
 

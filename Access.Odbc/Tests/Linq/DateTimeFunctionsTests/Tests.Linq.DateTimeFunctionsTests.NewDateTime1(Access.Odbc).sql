@@ -2,9 +2,9 @@
 -- Access.Odbc AccessODBC
 
 SELECT
-	DateSerial(DatePart('yyyy', [p].[DateTimeValue]), 10, 1)
+	DateSerial(DatePart('yyyy', [t].[DateTimeValue]), 10, 1)
 FROM
-	[LinqDataTypes] [p]
+	[LinqDataTypes] [t]
 WHERE
-	DatePart('m', DateSerial(DatePart('yyyy', [p].[DateTimeValue]), 10, 1)) = 10
+	DatePart('m', DateSerial(DatePart('yyyy', [t].[DateTimeValue]), 10, 1)) = 10
 

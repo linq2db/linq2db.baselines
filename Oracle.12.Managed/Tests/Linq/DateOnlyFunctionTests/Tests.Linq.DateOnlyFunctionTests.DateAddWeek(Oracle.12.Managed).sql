@@ -54,7 +54,7 @@ BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12
 
 SELECT
-	t."TransactionDate" + -1 * INTERVAL '7' DAY
+	t."TransactionDate" - INTERVAL '7' DAY
 FROM
 	"Transactions" t
 

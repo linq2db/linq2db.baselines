@@ -63,12 +63,11 @@ SET     @id = 3
 UPDATE
 	[MainTable]
 SET
-	[a_MainOptional].[Field] = 'test'
+	[Field] = 'test'
 FROM
-	[MainTable] [a_MainOptional],
 	[AssociatedTable] [pat]
 WHERE
-	[pat].[Id] = @id AND [pat].[Id] = [a_MainOptional].[Id]
+	[pat].[Id] = @id AND [pat].[Id] = [MainTable].[Id]
 
 BeforeExecute
 -- Sybase.Managed Sybase

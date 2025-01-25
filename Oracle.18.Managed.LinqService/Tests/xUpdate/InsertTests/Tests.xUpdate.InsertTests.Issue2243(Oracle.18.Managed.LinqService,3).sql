@@ -51,8 +51,8 @@ USING (SELECT :Id AS "id" FROM SYS.DUAL) s ON
 WHEN MATCHED THEN
 	UPDATE 
 	SET
-		t1."name" = :Name,
-		t1."updated_by" = :UpdatedBy
+		"name" = :Name,
+		"updated_by" = :UpdatedBy
 WHEN NOT MATCHED THEN
 	INSERT
 	(
@@ -69,17 +69,15 @@ WHEN NOT MATCHED THEN
 
 BeforeExecute
 -- Oracle.18.Managed Oracle.Managed Oracle12
-DECLARE @take Int32
-SET     @take = 2
 
 SELECT
-	t1."id",
-	t1."name",
-	t1."created_by",
-	t1."updated_by"
+	t1."id" as "Id",
+	t1."name" as "Name",
+	t1."created_by" as "CreatedBy",
+	t1."updated_by" as "UpdatedBy"
 FROM
 	"test_insert_or_replace" t1
-FETCH NEXT :take ROWS ONLY
+FETCH NEXT 2 ROWS ONLY
 
 BeforeExecute
 -- Oracle.18.Managed Oracle.Managed Oracle12
@@ -100,8 +98,8 @@ USING (SELECT :Id AS "id" FROM SYS.DUAL) s ON
 WHEN MATCHED THEN
 	UPDATE 
 	SET
-		t1."name" = :Name,
-		t1."updated_by" = :UpdatedBy
+		"name" = :Name,
+		"updated_by" = :UpdatedBy
 WHEN NOT MATCHED THEN
 	INSERT
 	(
@@ -118,17 +116,15 @@ WHEN NOT MATCHED THEN
 
 BeforeExecute
 -- Oracle.18.Managed Oracle.Managed Oracle12
-DECLARE @take Int32
-SET     @take = 2
 
 SELECT
-	t1."id",
-	t1."name",
-	t1."created_by",
-	t1."updated_by"
+	t1."id" as "Id",
+	t1."name" as "Name",
+	t1."created_by" as "CreatedBy",
+	t1."updated_by" as "UpdatedBy"
 FROM
 	"test_insert_or_replace" t1
-FETCH NEXT :take ROWS ONLY
+FETCH NEXT 2 ROWS ONLY
 
 BeforeExecute
 -- Oracle.18.Managed Oracle.Managed Oracle12

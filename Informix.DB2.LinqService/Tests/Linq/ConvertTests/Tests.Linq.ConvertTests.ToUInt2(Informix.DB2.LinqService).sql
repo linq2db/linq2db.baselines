@@ -2,7 +2,7 @@
 -- Informix.DB2 Informix
 
 SELECT
-	Cast(t.MoneyValue as BigInt)
+	t.MoneyValue::BigInt
 FROM
 	LinqDataTypes t
 

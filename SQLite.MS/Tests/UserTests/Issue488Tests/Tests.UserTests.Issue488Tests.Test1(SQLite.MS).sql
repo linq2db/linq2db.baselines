@@ -1,9 +1,7 @@
 ﻿BeforeExecute
 -- SQLite.MS SQLite
 DECLARE @date  -- Date
-SET     @date = '2020-02-29'
-DECLARE @take  -- Int32
-SET     @take = 1
+SET     @date = '2020-02-29 00:00:00.000'
 
 SELECT
 	[t2].[ID],
@@ -17,6 +15,6 @@ FROM
 	[LinqDataTypes] [t1]
 		INNER JOIN [LinqDataTypes] [t2] ON [t1].[ID] = [t2].[ID]
 WHERE
-	DateTime(Date([t2].[DateTimeValue])) = DateTime(@date)
-LIMIT @take
+	Date([t2].[DateTimeValue]) = Date(@date)
+LIMIT 1
 

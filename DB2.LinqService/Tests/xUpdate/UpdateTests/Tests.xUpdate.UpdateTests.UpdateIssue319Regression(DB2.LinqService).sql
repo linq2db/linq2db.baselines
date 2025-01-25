@@ -22,12 +22,12 @@ DECLARE @id Integer(4) -- Int32
 SET     @id = 100500
 
 SELECT
-	"_"."ParentID"
+	"p"."ParentID"
 FROM
-	"Parent" "_"
+	"Parent" "p"
 WHERE
-	"_"."ParentID" = @id
-FETCH FIRST 1 ROWS ONLY
+	"p"."ParentID" = @id
+FETCH NEXT 1 ROWS ONLY
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
@@ -37,36 +37,16 @@ DECLARE @id Integer(4) -- Int32
 SET     @id = 100500
 
 UPDATE
-	"Parent"
+	"Parent" "p"
 SET
-	"Parent"."Value1" = @ParentID
+	"Value1" = CAST(@ParentID AS Int)
 WHERE
-	EXISTS(
+	"p"."ParentID" = @id AND (
 		SELECT
-			*
+			COUNT(*)
 		FROM
-			(
-				SELECT
-					"_2"."ParentID"
-				FROM
-					(
-						SELECT
-							"_1"."ParentID",
-							(
-								SELECT
-									Count(*)
-								FROM
-									"Parent" "_"
-								WHERE
-									"_"."ParentID" = @id
-							) as "ex"
-						FROM
-							"Parent" "_1"
-					) "_2"
-				WHERE
-					"_2"."ParentID" = @id AND "_2"."ex" > 0
-			) "t1"
+			"Parent" "p_1"
 		WHERE
-			"Parent"."ParentID" = "t1"."ParentID"
-	)
+			"p_1"."ParentID" = @id
+	) > 0
 

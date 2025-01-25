@@ -290,7 +290,7 @@ DECLARE @p Integer -- Int32
 SET     @p = -1
 
 SELECT
-	t."TransactionDate" + :p * Interval '1 Day' * 7
+	Date_Trunc('day', (t."TransactionDate" + (:p * Interval '1 Day') * 7) AT TIME ZONE 'UTC')::Date
 FROM
 	"Transactions" t
 

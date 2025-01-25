@@ -26,8 +26,6 @@ VALUES
 
 BeforeExecute
 -- Oracle.11.Managed Oracle11
-DECLARE @take Int32
-SET     @take = 2
 
 SELECT
 	p."FirstName",
@@ -39,5 +37,5 @@ FROM
 	"Person" p
 WHERE
 	p."FirstName" = '擊敗奴隸' AND p."LastName" = 'Юникодкин' AND
-	ROWNUM <= :take
+	ROWNUM <= 2
 

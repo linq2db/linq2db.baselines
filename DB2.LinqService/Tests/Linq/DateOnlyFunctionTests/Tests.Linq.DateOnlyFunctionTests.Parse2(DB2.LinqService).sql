@@ -278,16 +278,11 @@ BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 SELECT
-	"d"."c1"
+	"d"."TransactionDate"
 FROM
-	(
-		SELECT
-			"t"."TransactionDate" as "c1"
-		FROM
-			"Transactions" "t"
-	) "d"
+	"Transactions" "d"
 WHERE
-	To_Number(To_Char("d"."c1", 'DD')) > 0
+	Extract(day from "d"."TransactionDate") > 0
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW

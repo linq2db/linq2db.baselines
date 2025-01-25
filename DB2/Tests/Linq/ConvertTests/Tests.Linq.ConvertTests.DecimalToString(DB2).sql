@@ -2,9 +2,9 @@
 -- DB2 DB2.LUW DB2LUW
 
 SELECT
-	Strip(RTrim(Char("t"."MoneyValue")), L, '0')
+	Strip(RTrim(Char("p"."MoneyValue")), L, '0')
 FROM
-	"LinqDataTypes" "t"
+	"LinqDataTypes" "p"
 WHERE
-	CHARACTER_LENGTH(Strip(RTrim(Char("t"."MoneyValue")), L, '0'),CODEUNITS32) > 0
+	CHARACTER_LENGTH(Strip(RTrim(Char("p"."MoneyValue")), L, '0'),CODEUNITS32) > 0
 

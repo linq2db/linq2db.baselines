@@ -40,12 +40,12 @@ BeforeExecute
 -- Sybase.Managed Sybase
 
 SELECT TOP 1
-	[_].[Id],
-	[_].[BlobValue]
+	[t1].[Id],
+	[t1].[BlobValue]
 FROM
-	[BlobClass] [_]
+	[BlobClass] [t1]
 WHERE
-	[_].[Id] = 1
+	[t1].[Id] = 1
 
 BeforeExecute
 -- Sybase.Managed Sybase
@@ -55,22 +55,20 @@ SET     @BlobValue = 0x030201
 UPDATE
 	[BlobClass]
 SET
-	[_].[BlobValue] = @BlobValue
-FROM
-	[BlobClass] [_]
+	[BlobValue] = @BlobValue
 WHERE
-	[_].[Id] = 1
+	[BlobClass].[Id] = 1
 
 BeforeExecute
 -- Sybase.Managed Sybase
 
 SELECT TOP 1
-	[_].[Id],
-	[_].[BlobValue]
+	[t1].[Id],
+	[t1].[BlobValue]
 FROM
-	[BlobClass] [_]
+	[BlobClass] [t1]
 WHERE
-	[_].[Id] = 1
+	[t1].[Id] = 1
 
 BeforeExecute
 -- Sybase.Managed Sybase

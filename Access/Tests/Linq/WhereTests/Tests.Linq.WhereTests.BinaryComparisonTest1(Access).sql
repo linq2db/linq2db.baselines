@@ -2,9 +2,9 @@
 -- Access AccessOleDb
 
 SELECT
-	Count(*) > 0
+	IIF(COUNT(*) > 0, True, False)
 FROM
-	[Person] [_]
+	[Person] [t1]
 WHERE
-	([_].[FirstName] = [_].[FirstName]) = Iif([_].[MiddleName] <> [_].[LastName], True, False)
+	([t1].[MiddleName] <> [t1].[LastName] OR [t1].[MiddleName] IS NULL)
 

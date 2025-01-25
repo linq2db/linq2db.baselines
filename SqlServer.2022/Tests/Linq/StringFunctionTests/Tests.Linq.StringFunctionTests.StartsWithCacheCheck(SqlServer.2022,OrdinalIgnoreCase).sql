@@ -1,9 +1,7 @@
 ﻿BeforeExecute
 -- SqlServer.2022
-DECLARE @take Int -- Int32
-SET     @take = 2
 
-SELECT TOP (@take)
+SELECT TOP (2)
 	[p].[FirstName]
 FROM
 	[Person] [p]
@@ -14,7 +12,7 @@ BeforeExecute
 -- SqlServer.2022
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	[Person] [p]
 WHERE
@@ -25,7 +23,7 @@ BeforeExecute
 -- SqlServer.2022
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	[Person] [p]
 WHERE

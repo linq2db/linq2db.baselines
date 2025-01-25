@@ -2,17 +2,21 @@
 -- DB2 DB2.LUW DB2LUW
 
 SELECT
-	Sum("t1"."MoneyValue"),
-	To_Number(To_Char("t1"."Key_1", 'YYYY')),
-	To_Number(To_Char("t1"."Key_1", 'MM'))
+	SUM("grp_1"."MoneyValue"),
+	"grp_1"."Year_1",
+	"grp_1"."Month_1"
 FROM
 	(
 		SELECT
-			Date(Lpad(To_Number(To_Char("selectParam"."DateTimeValue", 'YYYY')),4,'0') || '-' || Lpad(To_Number(To_Char("selectParam"."DateTimeValue", 'MM')),2,'0') || '-01') as "Key_1",
-			"selectParam"."MoneyValue"
+			CAST(LPad(Extract(year from "grp"."DateTimeValue"), 4, '0') || '-' || LPad(Extract(month from "grp"."DateTimeValue"), 2, '0') || '-01' AS timestamp) as "Date_1",
+			"grp"."MoneyValue",
+			Extract(year from CAST(LPad(Extract(year from "grp"."DateTimeValue"), 4, '0') || '-' || LPad(Extract(month from "grp"."DateTimeValue"), 2, '0') || '-01' AS timestamp)) as "Year_1",
+			Extract(month from CAST(LPad(Extract(year from "grp"."DateTimeValue"), 4, '0') || '-' || LPad(Extract(month from "grp"."DateTimeValue"), 2, '0') || '-01' AS timestamp)) as "Month_1"
 		FROM
-			"LinqDataTypes" "selectParam"
-	) "t1"
+			"LinqDataTypes" "grp"
+	) "grp_1"
 GROUP BY
-	"t1"."Key_1"
+	"grp_1"."Date_1",
+	"grp_1"."Year_1",
+	"grp_1"."Month_1"
 

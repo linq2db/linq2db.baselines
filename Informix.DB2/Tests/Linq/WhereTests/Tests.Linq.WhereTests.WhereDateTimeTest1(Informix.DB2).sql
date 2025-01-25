@@ -1,7 +1,5 @@
 ﻿BeforeExecute
 -- Informix.DB2 Informix
-DECLARE @DateTimeValue Timestamp(16) -- DateTime
-SET     @DateTimeValue = TO_DATE('2009-01-01', '%Y-%m-%d')
 
 SELECT
 	t1.ID,
@@ -15,5 +13,5 @@ SELECT
 FROM
 	LinqDataTypes t1
 WHERE
-	t1.DateTimeValue > @DateTimeValue
+	t1.DateTimeValue > Mdy(1, 1, 2009)
 

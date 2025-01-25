@@ -58,11 +58,11 @@ BeforeExecute
 -- Access AccessOleDb
 
 UPDATE
-	[Person] [_]
+	[Person] [t1]
 SET
-	[_].[LastName] = [_].[FirstName]
+	[t1].[LastName] = [t1].[FirstName]
 WHERE
-	[_].[FirstName] LIKE 'UpdateComplex%'
+	[t1].[FirstName] LIKE 'UpdateComplex%'
 
 BeforeExecute
 -- Access AccessOleDb
@@ -70,13 +70,13 @@ DECLARE @id Integer -- Int32
 SET     @id = 5
 
 SELECT TOP 1
-	[_].[PersonID],
-	[_].[Gender],
-	[_].[FirstName],
-	[_].[MiddleName],
-	[_].[LastName]
+	[t1].[PersonID],
+	[t1].[Gender],
+	[t1].[FirstName],
+	[t1].[MiddleName],
+	[t1].[LastName]
 FROM
-	[Person] [_]
+	[Person] [t1]
 WHERE
-	[_].[PersonID] = @id
+	[t1].[PersonID] = @id
 

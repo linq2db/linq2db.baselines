@@ -1,14 +1,12 @@
 ﻿BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
-DECLARE @take Int -- Int32
-SET     @take = 1
 DECLARE @id Int -- Int32
 SET     @id = 10
 
-SELECT TOP (@take)
-	[x].[ChildID]
+SELECT TOP (1)
+	[c_1].[ChildID]
 FROM
-	[Child] [x]
+	[Child] [c_1]
 WHERE
-	[x].[ChildID] = @id
+	[c_1].[ChildID] = @id
 

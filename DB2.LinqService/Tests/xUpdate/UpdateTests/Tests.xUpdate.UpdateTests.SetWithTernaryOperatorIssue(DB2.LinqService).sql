@@ -37,15 +37,15 @@ FROM
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
-DECLARE @Value Char(1) -- StringFixedLength
-SET     @Value = 'O'
+DECLARE @nullableGender Char(1) -- StringFixedLength
+SET     @nullableGender = 'O'
 
 UPDATE
-	"Person"
+	"Person" "t1"
 SET
-	"Person"."Gender" = @Value
+	"Gender" = CAST(@nullableGender AS NChar(1))
 WHERE
-	"Person"."FirstName" LIKE 'UpdateComplex%' ESCAPE '~'
+	"t1"."FirstName" LIKE 'UpdateComplex%' ESCAPE '~'
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
@@ -53,14 +53,14 @@ DECLARE @id Integer(4) -- Int32
 SET     @id = 5
 
 SELECT
-	"_"."PersonID",
-	"_"."Gender",
-	"_"."FirstName",
-	"_"."MiddleName",
-	"_"."LastName"
+	"t1"."PersonID",
+	"t1"."Gender",
+	"t1"."FirstName",
+	"t1"."MiddleName",
+	"t1"."LastName"
 FROM
-	"Person" "_"
+	"Person" "t1"
 WHERE
-	"_"."PersonID" = @id
-FETCH FIRST 1 ROWS ONLY
+	"t1"."PersonID" = @id
+FETCH NEXT 1 ROWS ONLY
 

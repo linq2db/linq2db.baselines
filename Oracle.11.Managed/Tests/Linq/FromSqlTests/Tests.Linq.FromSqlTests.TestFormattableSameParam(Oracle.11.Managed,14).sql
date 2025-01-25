@@ -56,17 +56,15 @@ SELECT * FROM dual
 
 BeforeExecute
 -- Oracle.11.Managed Oracle11
-DECLARE @startId Int64
-SET     @startId = 5
-DECLARE @p Int32
-SET     @p = 14
+DECLARE @p Int64
+SET     @p = 5
 
 SELECT
 	c_1."value",
 	c_1."id"
 FROM
 	(
-		SELECT * FROM "sample_class" where "id" >= :startId and "id" < :p
+		SELECT * FROM "sample_class" where "id" >= :p and "id" < 14
 	) c_1
 WHERE
 	c_1."id" > 10

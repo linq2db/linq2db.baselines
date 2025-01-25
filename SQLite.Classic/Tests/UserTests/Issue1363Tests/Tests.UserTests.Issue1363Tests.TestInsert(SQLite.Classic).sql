@@ -27,11 +27,11 @@ VALUES
 	@id,
 	(
 		SELECT
-			[_].[required_field]
+			[t1].[required_field]
 		FROM
-			[Issue1363] [_]
+			[Issue1363] [t1]
 		WHERE
-			[_].[required_field] IS NULL
+			1 = 0
 	)
 )
 
@@ -52,11 +52,11 @@ VALUES
 	@id,
 	(
 		SELECT
-			[_].[required_field]
+			[t1].[required_field]
 		FROM
-			[Issue1363] [_]
+			[Issue1363] [t1]
 		WHERE
-			[_].[required_field] = @testId
+			[t1].[required_field] = @testId
 	)
 )
 
@@ -64,17 +64,15 @@ BeforeExecute
 -- SQLite.Classic SQLite
 DECLARE @id2  -- Guid
 SET     @id2 = X'0D6048A921DE744F8AC29516B287076E'
-DECLARE @take  -- Int32
-SET     @take = 2
 
 SELECT
-	[_].[required_field],
-	[_].[optional_field]
+	[t1].[required_field],
+	[t1].[optional_field]
 FROM
-	[Issue1363] [_]
+	[Issue1363] [t1]
 WHERE
-	[_].[required_field] = @id2
-LIMIT @take
+	[t1].[required_field] = @id2
+LIMIT 2
 
 BeforeExecute
 -- SQLite.Classic SQLite

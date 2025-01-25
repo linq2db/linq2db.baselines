@@ -1,0 +1,86 @@
+﻿BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+
+BEGIN
+	DECLARE CONTINUE HANDLER FOR SQLSTATE '42704' BEGIN END;
+	EXECUTE IMMEDIATE 'DROP TABLE "MainEntity"';
+END
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+
+BEGIN
+	DECLARE CONTINUE HANDLER FOR SQLSTATE '42710' BEGIN END;
+	EXECUTE IMMEDIATE '
+		CREATE TABLE "MainEntity"
+		(
+			"Id" Int NOT NULL,
+
+			CONSTRAINT "PK_MainEntity" PRIMARY KEY ("Id")
+		)
+	';
+END
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+
+BEGIN
+	DECLARE CONTINUE HANDLER FOR SQLSTATE '42704' BEGIN END;
+	EXECUTE IMMEDIATE 'DROP TABLE "SubEntity"';
+END
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+
+BEGIN
+	DECLARE CONTINUE HANDLER FOR SQLSTATE '42710' BEGIN END;
+	EXECUTE IMMEDIATE '
+		CREATE TABLE "SubEntity"
+		(
+			"Id"           Int NOT NULL,
+			"MainEntityId" Int NOT NULL
+		)
+	';
+END
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+
+SELECT
+	"x"."Id",
+	(
+		SELECT
+			COUNT(*)
+		FROM
+			"SubEntity" "a_SubEntities"
+		WHERE
+			"x"."Id" = "a_SubEntities"."MainEntityId"
+	)
+FROM
+	"MainEntity" "x"
+WHERE
+	EXISTS(
+		SELECT
+			*
+		FROM
+			"SubEntity" "a_SubEntities_1"
+		WHERE
+			"x"."Id" = "a_SubEntities_1"."MainEntityId"
+	)
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+
+BEGIN
+	DECLARE CONTINUE HANDLER FOR SQLSTATE '42704' BEGIN END;
+	EXECUTE IMMEDIATE 'DROP TABLE "SubEntity"';
+END
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+
+BEGIN
+	DECLARE CONTINUE HANDLER FOR SQLSTATE '42704' BEGIN END;
+	EXECUTE IMMEDIATE 'DROP TABLE "MainEntity"';
+END
+

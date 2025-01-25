@@ -2,8 +2,8 @@
 -- SqlServer.2008.MS SqlServer.2008
 
 SELECT
-	[p].[ParentID],
-	[p].[Value1]
+	[p].[Value1],
+	[p].[ParentID]
 FROM
 	[Parent] [p]
 

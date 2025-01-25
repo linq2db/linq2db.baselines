@@ -37,5 +37,5 @@ FROM
 	"Person" "p"
 WHERE
 	"p"."FirstName" = '擊敗奴隸' AND "p"."LastName" = 'Юникодкин'
-FETCH FIRST 2 ROWS ONLY
+FETCH NEXT 2 ROWS ONLY
 

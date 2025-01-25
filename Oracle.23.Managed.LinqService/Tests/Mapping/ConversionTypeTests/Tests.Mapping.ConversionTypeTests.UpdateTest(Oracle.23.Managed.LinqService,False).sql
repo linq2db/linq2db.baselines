@@ -92,11 +92,11 @@ DECLARE @ID Int32
 SET     @ID = 3
 
 UPDATE
-	"TrimTestTable"
+	"TrimTestTable" t1
 SET
-	"TrimTestTable"."Data" = :Data
+	"Data" = :Data
 WHERE
-	"TrimTestTable".ID = :ID
+	t1.ID = :ID
 
 BeforeExecute
 -- Oracle.23.Managed Oracle.Managed Oracle12
@@ -104,11 +104,11 @@ DECLARE @Data Varchar2(9) -- String
 SET     @Data = '***OOO***'
 
 UPDATE
-	"TrimTestTable"
+	"TrimTestTable" t
 SET
-	"TrimTestTable"."Data" = :Data
+	"Data" = :Data
 WHERE
-	"TrimTestTable"."Data" = '***XXX***'
+	t."Data" = '***XXX***'
 
 BeforeExecute
 -- Oracle.23.Managed Oracle.Managed Oracle12
@@ -118,11 +118,11 @@ DECLARE @p Varchar2(9) -- String
 SET     @p = '***HHH***'
 
 UPDATE
-	"TrimTestTable"
+	"TrimTestTable" t
 SET
-	"TrimTestTable"."Data" = :Data
+	"Data" = :Data
 WHERE
-	"TrimTestTable"."Data" = :p
+	t."Data" = :p
 
 BeforeExecute
 -- Oracle.23.Managed Oracle.Managed Oracle12

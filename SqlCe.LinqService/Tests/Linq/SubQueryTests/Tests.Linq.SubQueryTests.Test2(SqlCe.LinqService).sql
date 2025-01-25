@@ -2,20 +2,17 @@
 -- SqlCe
 
 SELECT
-	[t1].[Max_1]
+	[t1].[MAX_1]
 FROM
 	[Parent] [p]
-		LEFT JOIN (
+		OUTER APPLY (
 			SELECT
-				Max([ch].[ChildID]) as [Max_1],
-				[ch].[ParentID]
+				MAX([ch].[ChildID]) as [MAX_1]
 			FROM
 				[Child] [ch]
 			WHERE
-				[ch].[ChildID] > 1
-			GROUP BY
-				[ch].[ParentID]
-		) [t1] ON [t1].[ParentID] = [p].[ParentID]
+				[ch].[ParentID] = [p].[ParentID] AND [ch].[ChildID] > 1
+		) [t1]
 WHERE
 	[p].[ParentID] <> 5
 

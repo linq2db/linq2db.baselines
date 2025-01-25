@@ -20,7 +20,7 @@ DECLARE @id Int32
 SET     @id = 1001
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	"Child" c_1
 WHERE
@@ -36,7 +36,7 @@ SET     @id = 1001
 UPDATE
 	"Child"
 SET
-	"Child"."ChildID" = :ChildID
+	"ChildID" = :ChildID
 WHERE
 	EXISTS(
 		SELECT
@@ -55,7 +55,7 @@ BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	"Child" c_1
 WHERE

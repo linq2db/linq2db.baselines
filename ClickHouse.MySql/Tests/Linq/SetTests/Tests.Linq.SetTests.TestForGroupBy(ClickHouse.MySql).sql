@@ -8,7 +8,7 @@ SELECT
 FROM
 	GrandChild x
 WHERE
-	x.ParentID IN (toInt32(2))
+	x.ParentID IN (2)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
@@ -20,5 +20,5 @@ SELECT
 FROM
 	GrandChild x
 WHERE
-	x.ParentID IN (toInt32(3))
+	x.ParentID IN (3)
 

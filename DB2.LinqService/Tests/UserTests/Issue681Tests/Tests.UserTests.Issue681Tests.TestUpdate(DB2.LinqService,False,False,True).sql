@@ -28,8 +28,8 @@ BeforeExecute
 SELECT
 	current schema
 FROM
-	"LinqDataTypes" "_"
-FETCH FIRST 1 ROWS ONLY
+	"LinqDataTypes" "t1"
+FETCH NEXT 1 ROWS ONLY
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
@@ -39,11 +39,11 @@ DECLARE @ID Integer(4) -- Int32
 SET     @ID = 5
 
 UPDATE
-	DB2INST1."Issue681Table"
+	DB2INST1."Issue681Table" "t1"
 SET
-	DB2INST1."Issue681Table"."Value" = @Value
+	"Value" = @Value
 WHERE
-	DB2INST1."Issue681Table".ID = @ID
+	"t1".ID = @ID
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW

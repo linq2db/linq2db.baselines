@@ -39,8 +39,6 @@ VALUES
 
 BeforeExecute
 -- PostgreSQL.12 PostgreSQL.9.5 PostgreSQL
-DECLARE @take Integer -- Int32
-SET     @take = 1
 
 SELECT
 	t."Id",
@@ -50,7 +48,7 @@ FROM
 	"PR_1598_Mixed_Table" t
 WHERE
 	t."Id" = 1
-LIMIT :take
+LIMIT 1
 
 BeforeExecute
 -- PostgreSQL.12 PostgreSQL.9.5 PostgreSQL
@@ -68,8 +66,6 @@ WHERE
 
 BeforeExecute
 -- PostgreSQL.12 PostgreSQL.9.5 PostgreSQL
-DECLARE @take Integer -- Int32
-SET     @take = 1
 
 SELECT
 	t."Id",
@@ -79,7 +75,7 @@ FROM
 	"PR_1598_Mixed_Table" t
 WHERE
 	t."Id" = 1
-LIMIT :take
+LIMIT 1
 
 BeforeExecute
 -- PostgreSQL.12 PostgreSQL.9.5 PostgreSQL
@@ -101,8 +97,6 @@ VALUES
 
 BeforeExecute
 -- PostgreSQL.12 PostgreSQL.9.5 PostgreSQL
-DECLARE @take Integer -- Int32
-SET     @take = 1
 
 SELECT
 	t."Id",
@@ -112,7 +106,7 @@ FROM
 	"PR_1598_Mixed_Table" t
 WHERE
 	t."Id" = 2
-LIMIT :take
+LIMIT 1
 
 BeforeExecute
 -- PostgreSQL.12 PostgreSQL.9.5 PostgreSQL
@@ -133,8 +127,6 @@ WHERE
 
 BeforeExecute
 -- PostgreSQL.12 PostgreSQL.9.5 PostgreSQL
-DECLARE @take Integer -- Int32
-SET     @take = 1
 
 SELECT
 	t."Id",
@@ -144,7 +136,7 @@ FROM
 	"PR_1598_Mixed_Table" t
 WHERE
 	t."Id" = 2
-LIMIT :take
+LIMIT 1
 
 BeforeExecute
 -- PostgreSQL.12 PostgreSQL.9.5 PostgreSQL

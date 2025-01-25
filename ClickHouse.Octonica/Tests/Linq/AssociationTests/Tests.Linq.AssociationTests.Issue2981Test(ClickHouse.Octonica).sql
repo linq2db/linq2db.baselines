@@ -20,8 +20,8 @@ INSERT INTO Issue2981Entity
 	OwnerId
 )
 VALUES
-(toInt32(1)),
-(toInt32(2))
+(1),
+(2)
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -45,7 +45,7 @@ INSERT INTO Issue2981OwnerEntity
 	Id
 )
 VALUES
-(toInt32(1))
+(1)
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse

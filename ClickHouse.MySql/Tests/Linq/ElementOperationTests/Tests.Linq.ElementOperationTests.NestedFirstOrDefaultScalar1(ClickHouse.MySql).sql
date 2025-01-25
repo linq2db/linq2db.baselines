@@ -4,11 +4,11 @@
 SELECT
 	(
 		SELECT
-			p.ChildID
+			t1.ChildID
 		FROM
-			Child p
-		LIMIT toInt32(1)
+			Child t1
+		LIMIT 1
 	)
 FROM
-	Parent p_1
+	Parent p
 

@@ -4,7 +4,7 @@ DECLARE @p  -- Int32
 SET     @p = 1
 
 SELECT
-	strftime('%Y-%m-%d %H:%M:%f', [t].[DateTimeValue],@p || ' Year')
+	Date(strftime('%Y-%m-%d %H:%M:%f', [t].[DateTimeValue], CAST(@p AS NVarChar(11)) || ' Year'))
 FROM
 	[LinqDataTypes] [t]
 

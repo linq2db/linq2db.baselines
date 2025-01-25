@@ -3,18 +3,18 @@
 
 SELECT
 	"t1"."Value1",
-	"t1"."Value1_1"
+	"t1"."ParentID"
 FROM
 	(
 		SELECT
 			"c_1"."ParentID" as "Value1",
-			"c_1"."ParentID" as "Value1_1"
+			"c_1"."ParentID"
 		FROM
 			"Child" "c_1"
 		UNION
 		SELECT
-			"c_2"."ParentID" as "Value1",
-			Cast(NULL as Int) as "Value1_1"
+			CAST(NULL AS Int) as "Value1",
+			"c_2"."ParentID"
 		FROM
 			"Parent" "c_2"
 	) "t1"

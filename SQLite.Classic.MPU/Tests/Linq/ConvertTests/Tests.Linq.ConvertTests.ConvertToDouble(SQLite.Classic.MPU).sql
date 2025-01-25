@@ -2,9 +2,14 @@
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
 SELECT
-	Cast([t].[MoneyValue] as Float)
+	[p_1].[c1]
 FROM
-	[LinqDataTypes] [t]
+	(
+		SELECT
+			CAST([p].[MoneyValue] AS Float) as [c1]
+		FROM
+			[LinqDataTypes] [p]
+	) [p_1]
 WHERE
-	Cast([t].[MoneyValue] as Float) > 0
+	[p_1].[c1] > 0
 

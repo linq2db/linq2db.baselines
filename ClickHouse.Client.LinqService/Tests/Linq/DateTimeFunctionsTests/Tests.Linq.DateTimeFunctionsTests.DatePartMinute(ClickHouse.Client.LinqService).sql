@@ -2,7 +2,7 @@
 -- ClickHouse.Client ClickHouse
 
 SELECT
-	MINUTE(t.DateTimeValue)
+	toMinute(t.DateTimeValue)
 FROM
 	LinqDataTypes t
 

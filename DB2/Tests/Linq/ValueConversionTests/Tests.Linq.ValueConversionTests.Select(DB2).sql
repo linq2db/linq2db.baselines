@@ -143,29 +143,20 @@ ORDER BY
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
-DECLARE @skip Integer(4) -- Int32
-SET     @skip = 1
-DECLARE @take Integer(4) -- Int32
-SET     @take = 2
 
 SELECT
 	"t1"."Value2"
 FROM
 	(
 		SELECT
-			"q"."Value2",
-			ROW_NUMBER() OVER (ORDER BY "q"."Id") as RN
+			"q"."Id",
+			"q"."Value2"
 		FROM
-			(
-				SELECT
-					"t"."Id",
-					"t"."Value2"
-				FROM
-					"ValueConversion" "t"
-			) "q"
+			"ValueConversion" "q"
 	) "t1"
-WHERE
-	"t1".RN > @skip AND "t1".RN <= @take
+ORDER BY
+	"t1"."Id"
+OFFSET 1 ROWS FETCH NEXT 1 ROWS ONLY 
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW

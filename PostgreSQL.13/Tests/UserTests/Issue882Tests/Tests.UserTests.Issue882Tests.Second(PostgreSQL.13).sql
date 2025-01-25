@@ -2,7 +2,7 @@
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
 
 SELECT
-	Cast(Floor(Extract(second from t."DateTimeValue")) as int) % 7
+	(Floor(Extract(second From t."DateTimeValue"))::Int::decimal % 7)::decimal
 FROM
 	"LinqDataTypes" t
 

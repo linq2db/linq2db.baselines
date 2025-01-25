@@ -70,7 +70,7 @@ BeforeExecute
 -- SqlCe
 
 SELECT
-	[s].[Int]
+	[s].[Int] as [Int_1]
 FROM
 	[Src] [s]
 ORDER BY
@@ -80,7 +80,7 @@ BeforeExecute
 -- SqlCe
 
 SELECT
-	[s].[Int]
+	[s].[Int] as [Int_1]
 FROM
 	[Src] [s]
 ORDER BY
@@ -90,7 +90,7 @@ BeforeExecute
 -- SqlCe
 
 SELECT
-	[s].[Int]
+	[s].[Int] as [Int_1]
 FROM
 	[Src] [s]
 ORDER BY

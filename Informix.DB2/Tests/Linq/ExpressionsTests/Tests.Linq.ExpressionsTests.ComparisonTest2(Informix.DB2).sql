@@ -2,56 +2,46 @@
 -- Informix.DB2 Informix
 
 SELECT
-	Cast(CASE
+	CASE
 		WHEN EXISTS(
 			SELECT
 				*
 			FROM
+				Person t1
+			WHERE
 				(
 					SELECT
-						(
+						COUNT(*)
+					FROM
+						Patient t2
+					WHERE
+						t2.PersonID = 0 AND NOT EXISTS(
 							SELECT
-								Count(*)
-							FROM
-								Patient t1
-							WHERE
-								t1.PersonID IS NULL AND NOT EXISTS(
-									SELECT
-										*
-									FROM
-										Patient t2
-									WHERE
-										t2.PersonID = 2 AND t2.PersonID = t1.PersonID
-								)
-						) as cnt,
-						(
-							SELECT
-								Count(*)
+								*
 							FROM
 								Patient t3
 							WHERE
-								t3.PersonID = 2 AND NOT EXISTS(
-									SELECT
-										*
-									FROM
-										Patient t4
-									WHERE
-										t4.PersonID IS NULL AND t4.PersonID = t3.PersonID
-								)
-						) as ex,
-						t5.FirstName,
-						t5.PersonID,
-						t5.LastName,
-						t5.MiddleName,
-						t5.Gender
+								t3.PersonID = 2 AND t2.PersonID = t3.PersonID
+						)
+				) = 0 AND
+				(
+					SELECT
+						COUNT(*)
 					FROM
-						Person t5
-				) t6
-			WHERE
-				t6.cnt = 0 AND t6.ex = 0
+						Patient t4
+					WHERE
+						t4.PersonID = 2 AND NOT EXISTS(
+							SELECT
+								*
+							FROM
+								Patient t5
+							WHERE
+								t5.PersonID = 0 AND t4.PersonID = t5.PersonID
+						)
+				) = 0
 		)
 			THEN 't'
 		ELSE 'f'
-	END as BOOLEAN)
+	END
 FROM table(set{1})
 

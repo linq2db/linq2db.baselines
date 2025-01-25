@@ -19,7 +19,7 @@ BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	LinqDataTypes x
 WHERE

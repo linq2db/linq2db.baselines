@@ -32,12 +32,12 @@ BeforeExecute
 -- SqlCe
 
 SELECT TOP (1)
-	[_].[Id],
-	[_].[BlobValue]
+	[t1].[Id],
+	[t1].[BlobValue]
 FROM
-	[BlobClass] [_]
+	[BlobClass] [t1]
 WHERE
-	[_].[Id] = 1
+	[t1].[Id] = 1
 
 BeforeExecute
 -- SqlCe
@@ -45,7 +45,7 @@ BeforeExecute
 UPDATE
 	[BlobClass]
 SET
-	[BlobClass].[BlobValue] = 0x030201
+	[BlobValue] = 0x030201
 WHERE
 	[BlobClass].[Id] = 1
 
@@ -53,12 +53,12 @@ BeforeExecute
 -- SqlCe
 
 SELECT TOP (1)
-	[_].[Id],
-	[_].[BlobValue]
+	[t1].[Id],
+	[t1].[BlobValue]
 FROM
-	[BlobClass] [_]
+	[BlobClass] [t1]
 WHERE
-	[_].[Id] = 1
+	[t1].[Id] = 1
 
 BeforeExecute
 -- SqlCe

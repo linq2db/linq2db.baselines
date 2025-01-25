@@ -2,14 +2,9 @@
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
 SELECT
-	[t].[c1]
+	strftime('%Y-%m-%d %H:%M:%f', printf('%04d', CAST(strftime('%Y', [t].[DateTimeValue]) AS INTEGER)) || '-10-01 00:00:00.000')
 FROM
-	(
-		SELECT
-			Date(printf('%04d', Cast(StrFTime('%Y', [p].[DateTimeValue]) as int)) || '-10-01') as [c1]
-		FROM
-			[LinqDataTypes] [p]
-	) [t]
+	[LinqDataTypes] [t]
 WHERE
-	Cast(StrFTime('%m', [t].[c1]) as int) = 10
+	CAST(strftime('%m', strftime('%Y-%m-%d %H:%M:%f', printf('%04d', CAST(strftime('%Y', [t].[DateTimeValue]) AS INTEGER)) || '-10-01 00:00:00.000')) AS INTEGER) = 10
 

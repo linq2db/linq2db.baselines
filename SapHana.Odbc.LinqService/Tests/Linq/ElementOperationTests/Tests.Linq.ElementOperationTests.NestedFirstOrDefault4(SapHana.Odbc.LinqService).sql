@@ -2,26 +2,26 @@
 -- SapHana.Odbc SapHanaOdbc
 
 SELECT
-	"key_data_result"."ParentID",
-	"key_data_result"."Value1",
-	"_c"."ParentID",
-	"_c"."ChildID"
-FROM
-	(
-		SELECT DISTINCT
-			"p"."ParentID",
-			"p"."Value1"
-		FROM
-			"Parent" "p"
-	) "key_data_result"
-		INNER JOIN "Child" "_c" ON "key_data_result"."ParentID" = "_c"."ParentID" AND "_c"."ParentID" > 0
-
-BeforeExecute
--- SapHana.Odbc SapHanaOdbc
-
-SELECT
-	"p"."ParentID",
-	"p"."Value1"
+	"t2"."ParentID",
+	"t2"."ChildID"
 FROM
 	"Parent" "p"
+		LEFT JOIN LATERAL (
+			SELECT
+				"t1"."ParentID",
+				"t1"."ChildID"
+			FROM
+				(
+					SELECT DISTINCT
+						"a_Children"."ParentID",
+						"a_Children"."ChildID"
+					FROM
+						"Child" "a_Children"
+					WHERE
+						"p"."ParentID" = "a_Children"."ParentID" AND "a_Children"."ParentID" > 0
+				) "t1"
+			ORDER BY
+				"t1"."ChildID"
+			LIMIT 1
+		) "t2" ON 1=1
 

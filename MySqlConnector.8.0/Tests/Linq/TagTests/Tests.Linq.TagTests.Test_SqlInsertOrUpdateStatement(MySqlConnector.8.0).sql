@@ -1,0 +1,38 @@
+﻿BeforeExecute
+-- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
+
+DROP TABLE IF EXISTS `TestTable`
+
+BeforeExecute
+-- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
+
+CREATE TABLE IF NOT EXISTS `TestTable`
+(
+	`Id` INT NOT NULL,
+	`Fd` INT     NULL,
+
+	CONSTRAINT `PK_TestTable` PRIMARY KEY CLUSTERED (`Id`)
+)
+
+BeforeExecute
+-- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
+
+/* My Test */
+INSERT INTO `TestTable`
+(
+	`Id`,
+	`Fd`
+)
+VALUES
+(
+	1,
+	2
+)
+ON DUPLICATE KEY UPDATE
+	`Fd` = 2
+
+BeforeExecute
+-- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
+
+DROP TABLE IF EXISTS `TestTable`
+

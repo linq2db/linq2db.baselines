@@ -2,32 +2,38 @@
 -- Oracle.11.Managed Oracle11
 
 SELECT
-	t1."SmallIntValue",
-	t1."SmallIntValue",
-	3
+	t2."month_1",
+	t2."month_1",
+	t2."int_1"
 FROM
-	"LinqDataTypes" t1
+	(
+		SELECT
+			CAST(t1."SmallIntValue" AS Int) as "month_1",
+			3 as "int_1"
+		FROM
+			"LinqDataTypes" t1
+	) t2
 UNION
 SELECT
-	t2."month_1",
-	t2."year_1",
+	t4."month_1",
+	t4."year_1",
 	1
 FROM
 	(
 		SELECT
-			To_Number(To_Char(selectParam."DateTimeValue", 'MM')) as "month_1",
-			To_Number(To_Char(selectParam."DateTimeValue", 'YYYY')) as "year_1"
+			EXTRACT(MONTH FROM t3."DateTimeValue") as "month_1",
+			EXTRACT(YEAR FROM t3."DateTimeValue") as "year_1"
 		FROM
-			"LinqDataTypes" selectParam
-	) t2
+			"LinqDataTypes" t3
+	) t4
 GROUP BY
-	t2."month_1",
-	t2."year_1"
+	t4."month_1",
+	t4."year_1"
 UNION
 SELECT
-	To_Number(To_Char(t3."DateTimeValue", 'YYYY')),
-	To_Number(To_Char(t3."DateTimeValue", 'YYYY')),
+	EXTRACT(YEAR FROM t5."DateTimeValue"),
+	EXTRACT(YEAR FROM t5."DateTimeValue"),
 	2
 FROM
-	"LinqDataTypes" t3
+	"LinqDataTypes" t5
 

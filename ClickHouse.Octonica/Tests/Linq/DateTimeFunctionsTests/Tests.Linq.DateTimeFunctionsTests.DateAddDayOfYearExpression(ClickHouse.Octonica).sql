@@ -2,7 +2,7 @@
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
-	addDays(t.DateTimeValue, toInt32(3))
+	toDate(addDays(t.DateTimeValue, 3))
 FROM
 	LinqDataTypes t
 

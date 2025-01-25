@@ -25,7 +25,7 @@ INSERT INTO WhereWithBool
 	BoolValue
 )
 VALUES
-(toInt32(1),true)
+(1,true)
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
@@ -34,16 +34,10 @@ SELECT
 	t.Id,
 	t.BoolValue
 FROM
-	WhereWithBool t
+	WhereWithBool t,
+	WhereWithBool x
 WHERE
-	(
-		SELECT
-			x.BoolValue
-		FROM
-			WhereWithBool x
-		WHERE
-			x.Id = toInt32(1)
-	) = true
+	x.BoolValue = true AND x.Id = 1
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse

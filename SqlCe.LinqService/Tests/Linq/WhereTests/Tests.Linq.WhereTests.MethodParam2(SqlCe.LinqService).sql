@@ -4,7 +4,7 @@ DECLARE @ID Int -- Int32
 SET     @ID = 1
 
 SELECT
-	[p].[PersonID]
+	[p].[PersonID] as [ID]
 FROM
 	[Person] [p]
 WHERE
@@ -16,7 +16,7 @@ DECLARE @ID Int -- Int32
 SET     @ID = 2
 
 SELECT
-	[p].[PersonID]
+	[p].[PersonID] as [ID]
 FROM
 	[Person] [p]
 WHERE

@@ -2,23 +2,18 @@
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
-	lw_Issue3975TestClass.ParentID,
-	detail.ParentID,
-	detail.ChildID
+	m_1.ParentID,
+	d.ParentID,
+	d.ChildID
 FROM
 	(
-		SELECT DISTINCT
-			t2.ParentID as ParentID
+		SELECT
+			t1.ParentID as ParentID
 		FROM
-			(
-				SELECT
-					t1.ParentID as ParentID
-				FROM
-					Parent t1
-				LIMIT toInt32(1)
-			) t2
-	) lw_Issue3975TestClass
-		INNER JOIN Child detail ON lw_Issue3975TestClass.ParentID = detail.ParentID
+			Parent t1
+		LIMIT 1
+	) m_1
+		INNER JOIN Child d ON m_1.ParentID = d.ParentID
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -27,5 +22,5 @@ SELECT
 	t1.ParentID
 FROM
 	Parent t1
-LIMIT toInt32(1)
+LIMIT 1
 

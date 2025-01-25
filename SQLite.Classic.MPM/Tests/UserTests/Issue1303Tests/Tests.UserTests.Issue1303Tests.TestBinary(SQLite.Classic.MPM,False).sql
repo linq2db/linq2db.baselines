@@ -37,52 +37,46 @@ VALUES
 
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-DECLARE @take  -- Int32
-SET     @take = 2
 
 SELECT
-	[_].[ID],
-	[_].[Array],
-	[_].[Binary]
+	[t1].[ID],
+	[t1].[Array],
+	[t1].[Binary]
 FROM
-	[Issue1303] [_]
+	[Issue1303] [t1]
 WHERE
-	[_].[ID] = 1
-LIMIT @take
+	[t1].[ID] = 1
+LIMIT 2
 
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 DECLARE @Array Binary(3)
 SET     @Array = X'010203'
-DECLARE @take  -- Int32
-SET     @take = 2
 
 SELECT
-	[_].[ID],
-	[_].[Array],
-	[_].[Binary]
+	[t1].[ID],
+	[t1].[Array],
+	[t1].[Binary]
 FROM
-	[Issue1303] [_]
+	[Issue1303] [t1]
 WHERE
-	[_].[Array] = @Array
-LIMIT @take
+	[t1].[Array] = @Array
+LIMIT 2
 
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 DECLARE @Binary Binary(2)
 SET     @Binary = X'0405'
-DECLARE @take  -- Int32
-SET     @take = 2
 
 SELECT
-	[_].[ID],
-	[_].[Array],
-	[_].[Binary]
+	[t1].[ID],
+	[t1].[Array],
+	[t1].[Binary]
 FROM
-	[Issue1303] [_]
+	[Issue1303] [t1]
 WHERE
-	[_].[Binary] = @Binary
-LIMIT @take
+	[t1].[Binary] = @Binary
+LIMIT 2
 
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite

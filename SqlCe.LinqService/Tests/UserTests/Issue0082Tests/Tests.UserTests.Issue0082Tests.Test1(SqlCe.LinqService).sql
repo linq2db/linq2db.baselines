@@ -2,65 +2,61 @@
 -- SqlCe
 
 SELECT
-	[o].[ParentID],
-	[t2].[CountResult],
-	[t3].[Sum_1]
+	[t3].[ParentID],
+	[t1].[COUNT_1],
+	[t2].[SUM_1]
 FROM
-	[Parent] [o]
-		LEFT JOIN (
+	[Parent] [t3]
+		OUTER APPLY (
 			SELECT
-				Count(*) as [CountResult],
-				[t1].[ParentID]
-			FROM
-				[Child] [t1]
-			GROUP BY
-				[t1].[ParentID]
-		) [t2] ON [o].[ParentID] = [t2].[ParentID]
-		LEFT JOIN (
-			SELECT
-				Sum([od].[ParentID]) as [Sum_1],
-				[od].[ParentID]
+				COUNT(*) as [COUNT_1]
 			FROM
 				[Child] [od]
-			GROUP BY
-				[od].[ParentID]
-		) [t3] ON [t3].[ParentID] = [o].[ParentID]
+			WHERE
+				[t3].[ParentID] = [od].[ParentID]
+		) [t1]
+		OUTER APPLY (
+			SELECT
+				SUM([od_1].[ParentID]) as [SUM_1]
+			FROM
+				[Child] [od_1]
+			WHERE
+				[t3].[ParentID] = [od_1].[ParentID]
+		) [t2]
 
 BeforeExecute
 -- SqlCe
 
 SELECT
-	Count(*)
+	COUNT(*) as [COUNT_1]
 FROM
-	[Parent] [o]
+	[Parent] [t1]
 
 BeforeExecute
 -- SqlCe
 
 SELECT
-	[o].[ParentID],
-	[t2].[CountResult],
-	[t3].[Sum_1]
+	[x].[ParentID],
+	[t1].[COUNT_1] as [CountResult],
+	[t2].[SUM_1]
 FROM
-	[Parent] [o]
-		LEFT JOIN (
+	[Parent] [x]
+		OUTER APPLY (
 			SELECT
-				Count(*) as [CountResult],
-				[t1].[ParentID]
-			FROM
-				[Child] [t1]
-			GROUP BY
-				[t1].[ParentID]
-		) [t2] ON [o].[ParentID] = [t2].[ParentID]
-		LEFT JOIN (
-			SELECT
-				Sum([od].[ParentID]) as [Sum_1],
-				[od].[ParentID]
+				COUNT(*) as [COUNT_1]
 			FROM
 				[Child] [od]
-			GROUP BY
-				[od].[ParentID]
-		) [t3] ON [t3].[ParentID] = [o].[ParentID]
+			WHERE
+				[x].[ParentID] = [od].[ParentID]
+		) [t1]
+		OUTER APPLY (
+			SELECT
+				SUM([od_1].[ParentID]) as [SUM_1]
+			FROM
+				[Child] [od_1]
+			WHERE
+				[x].[ParentID] = [od_1].[ParentID]
+		) [t2]
 WHERE
-	[t2].[CountResult] > 0
+	[t1].[COUNT_1] > 0
 

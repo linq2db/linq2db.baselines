@@ -7,5 +7,5 @@ SELECT
 FROM
 	Parent p
 WHERE
-	(p.ParentID = toInt32(1) OR (p.ParentID = toInt32(2) OR p.ParentID = toInt32(3)) AND (p.ParentID = toInt32(3) OR p.ParentID = toInt32(1)))
+	(p.ParentID = 1 OR (p.ParentID = 2 OR p.ParentID = 3) AND (p.ParentID = 3 OR p.ParentID = 1))
 

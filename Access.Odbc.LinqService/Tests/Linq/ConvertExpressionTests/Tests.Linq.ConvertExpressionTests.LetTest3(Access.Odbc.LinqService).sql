@@ -4,10 +4,10 @@
 SELECT
 	(
 		SELECT TOP 1
-			[p].[ParentID]
+			[t1].[ParentID]
 		FROM
-			[Child] [p]
+			[Child] [t1]
 	)
 FROM
-	[Parent] [p_1]
+	[Parent] [p]
 

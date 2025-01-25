@@ -1,24 +1,14 @@
 ﻿BeforeExecute
 -- DB2 DB2.LUW DB2LUW
-DECLARE @n Integer(4) -- Int32
-SET     @n = 3
-DECLARE @n_1 Integer(4) -- Int32
-SET     @n_1 = 4
 
 SELECT
-	"t1"."ParentID",
-	"t1"."Value1"
+	"p"."ParentID",
+	"p"."Value1"
 FROM
-	(
-		SELECT
-			"p"."ParentID",
-			"p"."Value1",
-			ROW_NUMBER() OVER (ORDER BY "p"."ParentID") as RN
-		FROM
-			"Parent" "p"
-		WHERE
-			"p"."ParentID" > 1
-	) "t1"
+	"Parent" "p"
 WHERE
-	"t1".RN > @n AND "t1".RN <= @n_1
+	"p"."ParentID" > 1
+ORDER BY
+	"p"."ParentID"
+OFFSET 3 ROWS FETCH NEXT 1 ROWS ONLY 
 

@@ -33,8 +33,6 @@ BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
 DECLARE @FirstName Text(25) -- String
 SET     @FirstName = 'UpdateColumnFilterUpdated'
-DECLARE @take Integer -- Int32
-SET     @take = 1
 
 SELECT
 	x."FirstName",
@@ -46,7 +44,7 @@ FROM
 	"Person" x
 WHERE
 	x."FirstName" = :FirstName
-LIMIT :take
+LIMIT 1
 
 BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
@@ -75,8 +73,6 @@ BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
 DECLARE @FirstName Text(25) -- String
 SET     @FirstName = 'UpdateColumnFilterUpdated'
-DECLARE @take Integer -- Int32
-SET     @take = 1
 
 SELECT
 	x."FirstName",
@@ -88,5 +84,5 @@ FROM
 	"Person" x
 WHERE
 	x."FirstName" = :FirstName
-LIMIT :take
+LIMIT 1
 

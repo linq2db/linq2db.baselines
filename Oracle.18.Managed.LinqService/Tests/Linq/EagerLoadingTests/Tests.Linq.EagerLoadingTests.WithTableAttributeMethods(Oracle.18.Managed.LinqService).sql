@@ -97,30 +97,20 @@ BeforeExecute
 -- Oracle.18.Managed Oracle.Managed Oracle12
 
 SELECT
-	p_1."FirstName",
-	p_1."PersonID",
-	p_1."LastName",
-	p_1."MiddleName",
-	p_1."Gender"
+	p."FirstName",
+	p."PersonID",
+	p."LastName",
+	p."MiddleName",
+	p."Gender"
 FROM
+	"Person" p
+WHERE
 	(
 		SELECT
-			(
-				SELECT
-					Count(*)
-				FROM
-					"UserIssue3128" t1
-			) as "ex",
-			p."FirstName",
-			p."PersonID",
-			p."LastName",
-			p."MiddleName",
-			p."Gender"
+			COUNT(*)
 		FROM
-			"Person" p
-	) p_1
-WHERE
-	p_1."ex" > 0
+			"UserIssue3128" t1
+	) > 0
 
 BeforeExecute
 -- Oracle.18.Managed Oracle.Managed Oracle12

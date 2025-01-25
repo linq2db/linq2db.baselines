@@ -72,8 +72,6 @@ BeforeExecute
 -- Oracle.11.Managed Oracle11
 DECLARE @id1 Int32
 SET     @id1 = 5
-DECLARE @take Int32
-SET     @take = 1
 
 SELECT
 	t1."PersonID",
@@ -84,14 +82,12 @@ SELECT
 FROM
 	"Person" t1
 WHERE
-	t1."PersonID" = :id1 AND ROWNUM <= :take
+	t1."PersonID" = :id1 AND ROWNUM <= 1
 
 BeforeExecute
 -- Oracle.11.Managed Oracle11
 DECLARE @id2 Int32
 SET     @id2 = 6
-DECLARE @take Int32
-SET     @take = 1
 
 SELECT
 	t1."PersonID",
@@ -102,5 +98,5 @@ SELECT
 FROM
 	"Person" t1
 WHERE
-	t1."PersonID" = :id2 AND ROWNUM <= :take
+	t1."PersonID" = :id2 AND ROWNUM <= 1
 

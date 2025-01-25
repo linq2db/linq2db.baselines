@@ -2,14 +2,14 @@
 -- ClickHouse.Client ClickHouse
 
 SELECT
-	_.FirstName,
-	_.PersonID,
-	_.LastName,
-	_.MiddleName,
-	_.Gender
+	p.FirstName,
+	p.PersonID,
+	p.LastName,
+	p.MiddleName,
+	p.Gender
 FROM
-	Person _
+	Person p
 WHERE
-	_.PersonID = toInt32(1)
-LIMIT toInt32(2)
+	p.PersonID = 1
+LIMIT 2
 

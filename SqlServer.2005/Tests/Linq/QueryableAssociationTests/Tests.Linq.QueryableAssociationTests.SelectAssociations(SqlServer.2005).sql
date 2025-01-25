@@ -78,27 +78,22 @@ SELECT 1,N'English'
 
 BeforeExecute
 -- SqlServer.2005
-DECLARE @take Int -- Int32
-SET     @take = 1
-DECLARE @take_1 Int -- Int32
-SET     @take_1 = 1
 
-SELECT TOP (@take)
-	[x_1].[Id],
-	[a_Entity2Language].[LanguageId],
-	[a_Entity2Language].[Name]
+SELECT TOP (1)
+	[x].[Id],
+	[t1].[LanguageId],
+	[a_Language].[Name]
 FROM
-	[Entity] [x_1]
-		OUTER APPLY (
-			SELECT TOP (@take_1)
-				[x].[LanguageId],
-				[a_Language].[Name]
+	[Entity] [x]
+		LEFT JOIN (
+			SELECT
+				[a_Entity2Language].[LanguageId],
+				ROW_NUMBER() OVER (PARTITION BY [a_Entity2Language].[EntityId] ORDER BY [a_Entity2Language].[EntityId]) as [rn],
+				[a_Entity2Language].[EntityId]
 			FROM
-				[Entity2Language] [x]
-					LEFT JOIN [Language] [a_Language] ON [x].[LanguageId] = [a_Language].[Id]
-			WHERE
-				[x].[EntityId] = [x_1].[Id]
-		) [a_Entity2Language]
+				[Entity2Language] [a_Entity2Language]
+		) [t1] ON [t1].[EntityId] = [x].[Id] AND [t1].[rn] <= 1
+		LEFT JOIN [Language] [a_Language] ON [t1].[LanguageId] = [a_Language].[Id]
 
 BeforeExecute
 -- SqlServer.2005

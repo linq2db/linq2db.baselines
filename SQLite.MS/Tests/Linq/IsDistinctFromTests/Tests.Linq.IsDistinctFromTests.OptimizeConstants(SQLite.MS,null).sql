@@ -2,13 +2,13 @@
 -- SQLite.MS SQLite
 
 SELECT
-	Count(*)
+	COUNT(*)
 
 BeforeExecute
 -- SQLite.MS SQLite
 
 SELECT
-	Count(*)
+	COUNT(*)
 WHERE
 	1 = 0
 

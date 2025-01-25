@@ -2,7 +2,7 @@
 -- SQLite.MS SQLite
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	[Person] [p]
 WHERE
@@ -12,7 +12,7 @@ BeforeExecute
 -- SQLite.MS SQLite
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	[Person] [p]
 WHERE

@@ -39,16 +39,10 @@ SELECT
 	t.Id,
 	t.BoolValue
 FROM
-	WhereWithBool t
+	WhereWithBool t,
+	WhereWithBool x
 WHERE
-	(
-		SELECT
-			x.BoolValue
-		FROM
-			WhereWithBool x
-		WHERE
-			x.Id = 1
-	) = 't'
+	x.BoolValue = 't' AND x.Id = 1
 
 BeforeExecute
 -- Informix.DB2 Informix

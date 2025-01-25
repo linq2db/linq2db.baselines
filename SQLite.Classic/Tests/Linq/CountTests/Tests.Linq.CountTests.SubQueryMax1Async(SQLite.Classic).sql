@@ -2,20 +2,15 @@
 -- SQLite.Classic SQLite (asynchronously)
 
 SELECT
-	Max([t1].[cnt])
-FROM
-	(
+	MAX((
 		SELECT
-			(
-				SELECT
-					Count(*)
-				FROM
-					[Child] [c_1]
-						LEFT JOIN [Parent] [a_Parent] ON [c_1].[ParentID] = [a_Parent].[ParentID]
-				WHERE
-					[a_Parent].[ParentID] = [p].[ParentID]
-			) as [cnt]
+			COUNT(*)
 		FROM
-			[Parent] [p]
-	) [t1]
+			[Child] [c_1]
+				LEFT JOIN [Parent] [a_Parent] ON [c_1].[ParentID] = [a_Parent].[ParentID]
+		WHERE
+			[a_Parent].[ParentID] = [t1].[ParentID]
+	))
+FROM
+	[Parent] [t1]
 

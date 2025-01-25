@@ -16,30 +16,27 @@ BeforeExecute
 MERGE INTO "Person" Target
 USING (
 	SELECT
-		t1."PersonID" as ID,
-		t1."FirstName",
-		a_Patient."Diagnosis"
+		t1."PersonID" as "source_ID",
+		t1."FirstName" as "source_FirstName",
+		a_Patient."Diagnosis" as "source_Patient_Diagnosis",
+		a_Patient_1."Diagnosis" as "target_Patient_Diagnosis"
 	FROM
 		"Person" t1
-			LEFT JOIN "Patient" a_Patient ON t1."PersonID" = a_Patient."PersonID"
+			INNER JOIN "Patient" a_Patient ON t1."PersonID" = a_Patient."PersonID"
+			LEFT JOIN "Person" Target_1
+				INNER JOIN "Patient" a_Patient_1 ON Target_1."PersonID" = a_Patient_1."PersonID"
+			ON Target_1."PersonID" = t1."PersonID" AND t1."FirstName" = 'first 4'
 ) "Source"
-ON (Target."PersonID" = "Source".ID AND "Source"."FirstName" = 'first 4')
+ON (Target."PersonID" = "Source"."source_ID" AND "Source"."source_FirstName" = 'first 4')
 
 WHEN MATCHED THEN
 UPDATE
 SET
-	Target."LastName" = "Source"."FirstName"
+	"LastName" = "Source"."source_FirstName"
 
 DELETE WHERE
-	EXISTS(
-	SELECT
-		*
-	FROM
-		"Patient" a_Patient_1
-	WHERE
-		"Source"."Diagnosis" = 'very sick' AND a_Patient_1."Diagnosis" = 'very sick' AND
-		Target."PersonID" = a_Patient_1."PersonID"
-)
+	"Source"."source_Patient_Diagnosis" = 'very sick' AND
+"Source"."target_Patient_Diagnosis" = 'very sick'
 
 BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12

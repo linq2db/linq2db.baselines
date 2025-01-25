@@ -42,7 +42,7 @@ BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 
 SELECT
-	Cast(Floor(Extract(doy from t."TransactionDate")) as int)
+	Floor(Extract(doy From t."TransactionDate"))::Int
 FROM
 	"Transactions" t
 

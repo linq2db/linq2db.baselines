@@ -8,7 +8,7 @@ SET     @take = 1
 SELECT
 	1
 FROM
-	[Person] [_]
+	[Person] [t1]
 ORDER BY
 	1
 OFFSET @skip ROWS FETCH NEXT @take ROWS ONLY 

@@ -1,19 +1,23 @@
 ﻿BeforeExecute
 -- Oracle.11.Managed Oracle11
-DECLARE @take Int32
-SET     @take = 1
 
 SELECT
+	t1."Taxonomy"
+FROM
 	(
 		SELECT
-			d."Taxonomy"
+			s."PersonID"
 		FROM
-			"Doctor" d
-		WHERE
-			t1."PersonID" = d."PersonID" AND ROWNUM <= :take
-	)
-FROM
-	"Doctor" t1
-GROUP BY
-	t1."PersonID"
+			"Doctor" s
+		GROUP BY
+			s."PersonID"
+	) s_2
+		INNER JOIN (
+			SELECT
+				s_1."Taxonomy",
+				ROW_NUMBER() OVER (PARTITION BY s_1."PersonID" ORDER BY s_1."PersonID") as "rn",
+				s_1."PersonID"
+			FROM
+				"Doctor" s_1
+		) t1 ON s_2."PersonID" = t1."PersonID" AND t1."rn" <= 1
 

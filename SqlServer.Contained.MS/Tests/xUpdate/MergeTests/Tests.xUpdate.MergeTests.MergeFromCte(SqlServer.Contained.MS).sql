@@ -233,32 +233,32 @@ WITH [CTE_1]
 AS
 (
 	SELECT
-		[_].[Id],
-		[_].[Field1],
-		[_].[Field2],
-		[_].[Field4]
+		[s].[Id],
+		[s].[Field1],
+		[s].[Field2],
+		[s].[Field4]
 	FROM
-		[TestMerge1] [_]
+		[TestMerge1] [s]
 	WHERE
-		[_].[Id] >= 1
+		[s].[Id] >= 1
 )
 MERGE INTO [CTE_1] [Target]
 USING (
 	SELECT
-		[t1].[Id],
-		[t1].[Field1],
-		[t1].[Field2],
-		[t1].[Field4]
+		[t1].[Id] as [source_Id],
+		[t1].[Field1] as [source_Field1],
+		[t1].[Field2] as [source_Field2],
+		[t1].[Field4] as [source_Field4]
 	FROM
 		[TestMerge2] [t1]
 ) [Source]
 (
-	[Id],
-	[Field1],
-	[Field2],
-	[Field4]
+	[source_Id],
+	[source_Field1],
+	[source_Field2],
+	[source_Field4]
 )
-ON ([Target].[Id] = [Source].[Id])
+ON ([Target].[Id] = [Source].[source_Id])
 
 WHEN NOT MATCHED THEN
 INSERT
@@ -270,10 +270,10 @@ INSERT
 )
 VALUES
 (
-	[Source].[Id],
-	[Source].[Field1],
-	[Source].[Field2],
-	[Source].[Field4]
+	[Source].[source_Id],
+	[Source].[source_Field1],
+	[Source].[source_Field2],
+	[Source].[source_Field4]
 )
 ;
 

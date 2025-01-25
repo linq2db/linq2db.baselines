@@ -30,7 +30,7 @@ BeforeExecute
 -- PostgreSQL.15 PostgreSQL
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	"CollatedTable" r
 WHERE
@@ -40,7 +40,7 @@ BeforeExecute
 -- PostgreSQL.15 PostgreSQL
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	"CollatedTable" r
 WHERE
@@ -50,7 +50,7 @@ BeforeExecute
 -- PostgreSQL.15 PostgreSQL
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	"CollatedTable" r
 WHERE
@@ -60,7 +60,7 @@ BeforeExecute
 -- PostgreSQL.15 PostgreSQL
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	"CollatedTable" r
 WHERE

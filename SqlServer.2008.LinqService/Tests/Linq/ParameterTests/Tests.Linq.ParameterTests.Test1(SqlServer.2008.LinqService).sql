@@ -13,5 +13,5 @@ SELECT
 FROM
 	[LinqDataTypes] [t]
 WHERE
-	[t].[DateTimeValue] = CAST('2020-02-29T17:54:55.123' AS DATETIME)
+	[t].[DateTimeValue] = CAST('2020-02-29T17:54:55.1231234' AS DATETIME2)
 

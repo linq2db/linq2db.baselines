@@ -2,7 +2,8 @@
 -- SqlServer.2016
 
 SELECT
-	[_].[ParentID]
+	[t1].[ParentID] + 1,
+	[t1].[ParentID]
 FROM
-	[Parent] [_]
+	[Parent] [t1]
 

@@ -139,10 +139,10 @@ VALUES
 
 BeforeExecute
 -- SQLite.MS SQLite
+DECLARE @take  -- Int32
+SET     @take = 1
 DECLARE @skip  -- Int32
-SET     @skip = 1
-DECLARE @skip_1  -- Int32
-SET     @skip_1 = 3
+SET     @skip = 3
 
 SELECT
 	[t1].[Value]
@@ -150,7 +150,7 @@ FROM
 	[TakeSkipClass] [t1]
 ORDER BY
 	[t1].[Value]
-LIMIT @skip OFFSET @skip_1
+LIMIT @take OFFSET @skip
 
 BeforeExecute
 -- SQLite.MS SQLite

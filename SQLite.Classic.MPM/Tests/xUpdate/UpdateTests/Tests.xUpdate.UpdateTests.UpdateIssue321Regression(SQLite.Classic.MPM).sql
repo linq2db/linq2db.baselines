@@ -50,7 +50,7 @@ VALUES
 
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-DECLARE @value2  -- Int32
+DECLARE @value2 Decimal(5, 0)
 SET     @value2 = 13621
 DECLARE @id  -- Int32
 SET     @id = 100500
@@ -58,7 +58,7 @@ SET     @id = 100500
 UPDATE
 	[LinqDataTypes]
 SET
-	[SmallIntValue] = Cast(([LinqDataTypes].[MoneyValue] / (@value2 / [LinqDataTypes].[IntValue])) as SmallInt)
+	[SmallIntValue] = CAST([LinqDataTypes].[MoneyValue] / (@value2 / [LinqDataTypes].[IntValue]) AS SmallInt)
 WHERE
 	[LinqDataTypes].[ID] = @id
 
@@ -66,14 +66,12 @@ BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 DECLARE @id  -- Int32
 SET     @id = 100500
-DECLARE @take  -- Int32
-SET     @take = 1
 
 SELECT
-	[_].[SmallIntValue]
+	[t1].[SmallIntValue]
 FROM
-	[LinqDataTypes] [_]
+	[LinqDataTypes] [t1]
 WHERE
-	[_].[ID] = @id
-LIMIT @take
+	[t1].[ID] = @id
+LIMIT 1
 

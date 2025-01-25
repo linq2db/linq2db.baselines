@@ -9,11 +9,11 @@ FROM
 WHERE
 	(
 		SELECT
-			Count(*)
+			COUNT(*)
 		FROM
-			GrandChild t1
+			GrandChild a_GrandChildren
 		WHERE
-			c_1.ParentID = t1.ParentID AND c_1.ChildID = t1.ChildID
+			c_1.ParentID = a_GrandChildren.ParentID AND c_1.ChildID = a_GrandChildren.ChildID
 	) = 2
 UNION ALL
 SELECT
@@ -24,10 +24,10 @@ FROM
 WHERE
 	(
 		SELECT
-			Count(*)
+			COUNT(*)
 		FROM
-			GrandChild t2
+			GrandChild a_GrandChildren_1
 		WHERE
-			c_2.ParentID = t2.ParentID AND c_2.ChildID = t2.ChildID
+			c_2.ParentID = a_GrandChildren_1.ParentID AND c_2.ChildID = a_GrandChildren_1.ChildID
 	) = 3
 

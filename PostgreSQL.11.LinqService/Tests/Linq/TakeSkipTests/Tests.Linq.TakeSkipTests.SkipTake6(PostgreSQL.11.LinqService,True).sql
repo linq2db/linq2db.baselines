@@ -1,7 +1,5 @@
 ﻿BeforeExecute
 -- PostgreSQL.11 PostgreSQL.9.5 PostgreSQL
-DECLARE @take Integer -- Int32
-SET     @take = 3
 
 SELECT
 	c_1."ParentID",
@@ -13,17 +11,13 @@ FROM
 			p."ParentID"
 		FROM
 			"GrandChild" p
-		LIMIT :take
-	) t1
+		LIMIT 3
+	) p_1
 WHERE
-	c_1."ParentID" = t1."ParentID"
+	c_1."ParentID" = p_1."ParentID"
 
 BeforeExecute
 -- PostgreSQL.11 PostgreSQL.9.5 PostgreSQL
-DECLARE @take Integer -- Int32
-SET     @take = 3
-DECLARE @skip Integer -- Int32
-SET     @skip = 12
 
 SELECT
 	c_1."ParentID",
@@ -35,8 +29,8 @@ FROM
 			p."ParentID"
 		FROM
 			"GrandChild" p
-		LIMIT :take OFFSET :skip 
-	) t1
+		LIMIT 3 OFFSET 12 
+	) p_1
 WHERE
-	c_1."ParentID" = t1."ParentID"
+	c_1."ParentID" = p_1."ParentID"
 

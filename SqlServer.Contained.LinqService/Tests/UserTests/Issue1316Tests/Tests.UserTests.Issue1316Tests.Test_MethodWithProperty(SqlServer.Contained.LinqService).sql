@@ -30,17 +30,15 @@ VALUES
 
 BeforeExecute
 -- SqlServer.Contained SqlServer.2019
-DECLARE @take Int -- Int32
-SET     @take = 2
 DECLARE @Item1 Int -- Int32
 SET     @Item1 = 5
 
-SELECT TOP (@take)
-	[_].[ID]
+SELECT TOP (2)
+	[t1].[ID]
 FROM
-	[Issue1316Tests] [_]
+	[Issue1316Tests] [t1]
 WHERE
-	[_].[ID] = @Item1
+	[t1].[ID] = @Item1
 
 BeforeExecute
 -- SqlServer.Contained SqlServer.2019

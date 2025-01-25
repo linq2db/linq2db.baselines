@@ -132,45 +132,41 @@ VALUES
 
 BeforeExecute
 -- Oracle.11.Managed Oracle11
-DECLARE @take Int32
-SET     @take = 2
 
 SELECT
-	x."InId",
+	t1."InId",
 	CASE
-		WHEN j."InId" IS NULL THEN x."InMinQuantity"
-		ELSE j."InMinQuantity"
+		WHEN e."InId" IS NULL THEN t1."InMinQuantity"
+		ELSE e."InMinQuantity"
 	END,
 	CASE
-		WHEN j."InId" IS NULL THEN x."InMaxQuantity"
-		ELSE j."InMaxQuantity"
+		WHEN e."InId" IS NULL THEN t1."InMaxQuantity"
+		ELSE e."InMaxQuantity"
 	END
 FROM
-	"StLink" x
-		LEFT JOIN "EdtLink" j ON x."InId" = j."InId"
+	"StLink" t1
+		LEFT JOIN "EdtLink" e ON t1."InId" = e."InId"
 WHERE
-	x."InId" = 1 AND ROWNUM <= :take
+	t1."InId" = 1 AND ROWNUM <= 2
 
 BeforeExecute
 -- Oracle.11.Managed Oracle11
-DECLARE @take Int32
-SET     @take = 2
 
 SELECT
-	x."InId",
+	t1."InId",
 	CASE
-		WHEN j."InId" IS NULL THEN x."InMinQuantity"
-		ELSE j."InMinQuantity"
+		WHEN e."InId" IS NULL THEN t1."InMinQuantity"
+		ELSE e."InMinQuantity"
 	END,
 	CASE
-		WHEN j."InId" IS NULL THEN x."InMaxQuantity"
-		ELSE j."InMaxQuantity"
+		WHEN e."InId" IS NULL THEN t1."InMaxQuantity"
+		ELSE e."InMaxQuantity"
 	END
 FROM
-	"StLink" x
-		LEFT JOIN "EdtLink" j ON x."InId" = j."InId"
+	"StLink" t1
+		LEFT JOIN "EdtLink" e ON t1."InId" = e."InId"
 WHERE
-	x."InId" = 2 AND ROWNUM <= :take
+	t1."InId" = 2 AND ROWNUM <= 2
 
 BeforeExecute
 -- Oracle.11.Managed Oracle11

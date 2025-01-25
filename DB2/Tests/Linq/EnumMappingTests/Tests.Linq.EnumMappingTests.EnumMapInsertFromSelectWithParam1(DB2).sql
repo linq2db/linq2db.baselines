@@ -34,7 +34,7 @@ INSERT INTO "LinqDataTypes"
 )
 SELECT
 	"r".ID,
-	@param
+	CAST(@param AS BigInt)
 FROM
 	"LinqDataTypes" "r"
 WHERE
@@ -44,7 +44,7 @@ BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	"LinqDataTypes" "r"
 WHERE

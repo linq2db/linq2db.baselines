@@ -17,12 +17,10 @@ BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 DECLARE @take Integer -- Int32
 SET     @take = 15
-DECLARE @take_1 Integer -- Int32
-SET     @take_1 = 15
 
 SELECT
 	e."ID",
-	t7."SmallIntValue"
+	p."SmallIntValue"
 FROM
 	(
 		SELECT
@@ -85,9 +83,9 @@ FROM
 					FROM
 						"LinqDataTypes" t5
 				) t6
-			LIMIT :take_1
-		) t7 ON t7."ID" = e."ID"
+			LIMIT :take
+		) p ON p."ID" = e."ID"
 ORDER BY
-	t7."ID",
-	e."ID"
+	e."ID",
+	p."ID"
 

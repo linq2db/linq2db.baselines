@@ -25,11 +25,9 @@ SET     @dt = '2010-12-14 05:00:07.425'
 UPDATE
 	[LinqDataTypes]
 SET
-	[t1].[DateTimeValue] = @dt
-FROM
-	[LinqDataTypes] [t1]
+	[DateTimeValue] = @dt
 WHERE
-	[t1].[ID] = 1
+	[LinqDataTypes].[ID] = 1
 
 BeforeExecute
 -- Sybase.Managed Sybase
@@ -58,9 +56,7 @@ SET     @pdt = '2001-01-11 01:11:21.100'
 UPDATE
 	[LinqDataTypes]
 SET
-	[t1].[DateTimeValue] = @pdt
-FROM
-	[LinqDataTypes] [t1]
+	[DateTimeValue] = @pdt
 WHERE
-	[t1].[ID] = 1
+	[LinqDataTypes].[ID] = 1
 

@@ -17,10 +17,10 @@ BeforeExecute
 -- Sybase.Managed Sybase
 
 SELECT
-	[t4].[Id_1],
-	[t4].[Value_1],
-	[t4].[Id],
-	[t4].[Value_2],
+	[sub].[Id_1],
+	[sub].[Value_1],
+	[sub].[Id],
+	[sub].[Value_2],
 	[t3].[Id],
 	[t3].[Value]
 FROM
@@ -33,10 +33,10 @@ FROM
 		FROM
 			#TestTable [t1],
 			#TestTable [t2]
-	) [t4]
-		INNER JOIN #TestTable [t3] ON [t4].[Id] = [t3].[Id]
+	) [sub]
+		INNER JOIN #TestTable [t3] ON [sub].[Id] = [t3].[Id]
 WHERE
-	[t4].[Id_1] = [t4].[Id]
+	[sub].[Id_1] = [sub].[Id]
 
 BeforeExecute
 -- Sybase.Managed Sybase

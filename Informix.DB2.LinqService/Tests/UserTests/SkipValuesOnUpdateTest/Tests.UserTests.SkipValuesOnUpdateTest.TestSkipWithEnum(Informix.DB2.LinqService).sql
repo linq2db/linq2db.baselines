@@ -67,13 +67,13 @@ DECLARE @Id Integer(4) -- Int32
 SET     @Id = 1
 
 UPDATE
-	PR_1598_Update_Enum_Table
+	PR_1598_Update_Enum_Table t1
 SET
-	PR_1598_Update_Enum_Table.Name = @Name,
-	PR_1598_Update_Enum_Table.Age = @Age,
-	PR_1598_Update_Enum_Table.Gender = @Gender
+	Name = @Name,
+	Age = @Age,
+	Gender = @Gender
 WHERE
-	PR_1598_Update_Enum_Table.Id = @Id
+	t1.Id = @Id
 
 BeforeExecute
 -- Informix.DB2 Informix
@@ -98,12 +98,12 @@ DECLARE @Id Integer(4) -- Int32
 SET     @Id = 1
 
 UPDATE
-	PR_1598_Update_Enum_Table
+	PR_1598_Update_Enum_Table t1
 SET
-	PR_1598_Update_Enum_Table.Name = @Name,
-	PR_1598_Update_Enum_Table.Age = @Age
+	Name = @Name,
+	Age = @Age
 WHERE
-	PR_1598_Update_Enum_Table.Id = @Id
+	t1.Id = @Id
 
 BeforeExecute
 -- Informix.DB2 Informix

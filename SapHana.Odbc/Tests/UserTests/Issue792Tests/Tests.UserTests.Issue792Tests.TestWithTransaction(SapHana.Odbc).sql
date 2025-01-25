@@ -4,20 +4,18 @@ BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	"AllTypes" "t1"
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @take  -- Int32
-SET     @take = 1
 
 SELECT
 	current_schema
 FROM
-	"LinqDataTypes" "_"
-LIMIT ?
+	"LinqDataTypes" "t1"
+LIMIT 1
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
@@ -390,7 +388,7 @@ BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	"AllTypes" "t1"
 

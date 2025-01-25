@@ -2,8 +2,8 @@
 -- SqlServer.2017.MS SqlServer.2017
 
 SELECT
-	[p].[ParentID],
-	[p].[Value1]
+	[p].[Value1],
+	[p].[ParentID]
 FROM
 	[Parent] [p]
 WHERE

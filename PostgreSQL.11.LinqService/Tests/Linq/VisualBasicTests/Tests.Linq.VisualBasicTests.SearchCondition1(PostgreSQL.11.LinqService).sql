@@ -13,5 +13,5 @@ SELECT
 FROM
 	"LinqDataTypes" t
 WHERE
-	t."BoolValue" = False AND ((t."SmallIntValue" = 5 OR t."SmallIntValue" = 7) OR (t."SmallIntValue" | 2) = 10)
+	t."BoolValue" = False AND (t."SmallIntValue" = 5 OR t."SmallIntValue" = 7 OR (t."SmallIntValue" | 2) = 10)
 

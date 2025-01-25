@@ -42,29 +42,25 @@ BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
 DECLARE @CEnum Varchar2 -- String
 SET     @CEnum = NULL
-DECLARE @CEnum_1 Varchar2 -- String
-SET     @CEnum_1 = NULL
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	"Src" s
 WHERE
-	s."CEnum" IN (:CEnum, :CEnum_1)
+	s."CEnum" IN (:CEnum, :CEnum)
 
 BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
 DECLARE @CEnum Varchar2 -- String
 SET     @CEnum = NULL
-DECLARE @CEnum_1 Varchar2 -- String
-SET     @CEnum_1 = NULL
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	"Src" s
 WHERE
-	s."CEnum" NOT IN (:CEnum, :CEnum_1)
+	s."CEnum" NOT IN (:CEnum, :CEnum)
 
 BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12

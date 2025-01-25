@@ -2,13 +2,13 @@
 -- SqlServer.Northwind SqlServer.2019
 
 SELECT
-	[join_2].[OrderID],
-	[join_2].[EmployeeID],
-	[join_2].[OrderDate],
-	[join_2].[RequiredDate],
-	[join_2].[ShippedDate],
-	[join_2].[ShipVia],
-	[join_2].[Freight],
+	[bind2].[OrderID],
+	[bind2].[EmployeeID],
+	[bind2].[OrderDate],
+	[bind2].[RequiredDate],
+	[bind2].[ShippedDate],
+	[bind2].[ShipVia],
+	[bind2].[Freight],
 	[a_Shipper].[ShipperID],
 	[a_Shipper].[CompanyName],
 	[a_Shipper].[Phone],
@@ -41,34 +41,34 @@ SELECT
 	[a_Customer].[Country],
 	[a_Customer].[Phone],
 	[a_Customer].[Fax],
-	[join_3].[OrderID],
-	[join_3].[ProductID],
-	[join_3].[UnitPrice],
-	[join_3].[Quantity],
-	[join_3].[Discount],
-	[query].[EmployeeID],
-	[query].[BirthDate],
-	[query].[HireDate],
-	[query].[ReportsTo],
-	[join_1].[EmployeeID],
-	[join_1].[LastName],
-	[join_1].[FirstName],
-	[join_1].[Title],
-	[join_1].[TitleOfCourtesy],
-	[join_1].[BirthDate],
-	[join_1].[HireDate],
-	[join_1].[Address],
-	[join_1].[City],
-	[join_1].[Region],
-	[join_1].[PostalCode],
-	[join_1].[Country],
-	[join_1].[HomePhone],
-	[join_1].[Extension],
-	[join_1].[Photo],
-	[join_1].[Notes],
-	[join_1].[ReportsTo],
-	[join_1].[PhotoPath],
-	[join_4].[EmployeeID],
+	[bind3].[OrderID],
+	[bind3].[ProductID],
+	[bind3].[UnitPrice],
+	[bind3].[Quantity],
+	[bind3].[Discount],
+	[e].[EmployeeID],
+	[e].[BirthDate],
+	[e].[HireDate],
+	[e].[ReportsTo],
+	[bind1].[EmployeeID],
+	[bind1].[LastName],
+	[bind1].[FirstName],
+	[bind1].[Title],
+	[bind1].[TitleOfCourtesy],
+	[bind1].[BirthDate],
+	[bind1].[HireDate],
+	[bind1].[Address],
+	[bind1].[City],
+	[bind1].[Region],
+	[bind1].[PostalCode],
+	[bind1].[Country],
+	[bind1].[HomePhone],
+	[bind1].[Extension],
+	[bind1].[Photo],
+	[bind1].[Notes],
+	[bind1].[ReportsTo],
+	[bind1].[PhotoPath],
+	[bind4].[EmployeeID],
 	[a_Employee_1].[EmployeeID],
 	[a_Employee_1].[LastName],
 	[a_Employee_1].[FirstName],
@@ -87,23 +87,23 @@ SELECT
 	[a_Employee_1].[Notes],
 	[a_Employee_1].[ReportsTo],
 	[a_Employee_1].[PhotoPath],
-	[join_5].[TerritoryID],
-	[join_5].[TerritoryDescription],
-	[join_5].[RegionID],
-	[join_6].[RegionID],
-	[join_6].[RegionDescription]
+	[bind5].[TerritoryID],
+	[bind5].[TerritoryDescription],
+	[bind5].[RegionID],
+	[bind6].[RegionID],
+	[bind6].[RegionDescription]
 FROM
-	[Employees] [query]
-		LEFT JOIN [Employees] [join_1] ON [query].[ReportsTo] = [join_1].[EmployeeID]
-		LEFT JOIN [Orders] [join_2] ON [query].[EmployeeID] = [join_2].[EmployeeID]
-		LEFT JOIN [Customers] [a_Customer] ON ([join_2].[CustomerID] = [a_Customer].[CustomerID] OR [join_2].[CustomerID] IS NULL AND [a_Customer].[CustomerID] IS NULL)
-		LEFT JOIN [Employees] [a_Employee] ON [join_2].[EmployeeID] = [a_Employee].[EmployeeID]
-		LEFT JOIN [Shippers] [a_Shipper] ON [join_2].[ShipVia] = [a_Shipper].[ShipperID]
-		LEFT JOIN [Order Details] [join_3] ON [join_2].[OrderID] = [join_3].[OrderID]
-		LEFT JOIN [EmployeeTerritories] [join_4] ON [query].[EmployeeID] = [join_4].[EmployeeID]
-		LEFT JOIN [Employees] [a_Employee_1] ON [join_4].[EmployeeID] = [a_Employee_1].[EmployeeID]
-		LEFT JOIN [Territories] [join_5] ON [join_4].[TerritoryID] = [join_5].[TerritoryID]
-		LEFT JOIN [Region] [join_6] ON [join_5].[RegionID] = [join_6].[RegionID]
+	[Employees] [e]
+		LEFT JOIN [Employees] [bind1] ON [e].[ReportsTo] = [bind1].[EmployeeID]
+		LEFT JOIN [Orders] [bind2] ON [e].[EmployeeID] = [bind2].[EmployeeID]
+		LEFT JOIN [Shippers] [a_Shipper] ON [bind2].[ShipVia] = [a_Shipper].[ShipperID]
+		LEFT JOIN [Employees] [a_Employee] ON [bind2].[EmployeeID] = [a_Employee].[EmployeeID]
+		INNER JOIN [Customers] [a_Customer] ON [bind2].[CustomerID] = [a_Customer].[CustomerID]
+		LEFT JOIN [Order Details] [bind3] ON [bind2].[OrderID] = [bind3].[OrderID]
+		LEFT JOIN [EmployeeTerritories] [bind4] ON [e].[EmployeeID] = [bind4].[EmployeeID]
+		LEFT JOIN [Employees] [a_Employee_1] ON [bind4].[EmployeeID] = [a_Employee_1].[EmployeeID]
+		LEFT JOIN [Territories] [bind5] ON [bind4].[TerritoryID] = [bind5].[TerritoryID]
+		LEFT JOIN [Region] [bind6] ON [bind5].[RegionID] = [bind6].[RegionID]
 WHERE
-	[query].[EmployeeID] = 5
+	[e].[EmployeeID] = 5
 

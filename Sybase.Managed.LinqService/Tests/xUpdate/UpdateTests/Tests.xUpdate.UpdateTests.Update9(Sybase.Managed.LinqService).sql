@@ -20,7 +20,7 @@ DECLARE @id Integer -- Int32
 SET     @id = 1001
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	[Child] [c_1]
 WHERE
@@ -34,14 +34,16 @@ SET     @id = 1001
 UPDATE
 	[Child]
 SET
-	[Child].[ChildID] = [c_1].[ChildID] + 1,
-	[Child].[ParentID] = [p].[ParentID]
+	[ChildID] = [Child].[ChildID] + 1,
+	[ParentID] = [p].[ParentID]
 FROM
-	[Child] [c_1]
-		LEFT JOIN [Parent] [a_Parent] ON [c_1].[ParentID] = [a_Parent].[ParentID]
-		INNER JOIN [Parent] [p] ON [c_1].[ParentID] = [p].[ParentID]
+	[Parent] [a_Parent],
+	[Parent] [p]
 WHERE
-	[c_1].[ChildID] = @id AND [a_Parent].[Value1] = 1
+	[Child].[ChildID] = @id AND
+	[a_Parent].[Value1] = 1 AND
+	[Child].[ParentID] = [a_Parent].[ParentID] AND
+	[Child].[ParentID] = [p].[ParentID]
 
 BeforeExecute
 -- Sybase.Managed Sybase
@@ -49,7 +51,7 @@ DECLARE @ChildID Integer -- Int32
 SET     @ChildID = 1002
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	[Child] [c_1]
 WHERE

@@ -2,7 +2,7 @@
 -- DB2 DB2.LUW DB2LUW
 
 SELECT
-	"t"."DateTimeValue" + -35 Second
+	Extract(second from ("t"."DateTimeValue" + -35 SECOND))
 FROM
 	"LinqDataTypes" "t"
 

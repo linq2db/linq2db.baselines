@@ -2,7 +2,7 @@
 -- ClickHouse.MySql ClickHouse
 
 SELECT
-	MONTH(t.DateTimeValue)
+	toMonth(t.DateTimeValue)
 FROM
 	LinqDataTypes t
 

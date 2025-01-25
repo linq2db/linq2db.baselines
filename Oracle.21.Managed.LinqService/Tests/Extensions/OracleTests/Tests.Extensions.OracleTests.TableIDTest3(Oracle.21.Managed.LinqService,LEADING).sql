@@ -19,6 +19,6 @@ FROM
 				WHERE
 					p."ParentID" < 0
 			) p_1
-	) p_2,
-	"Child" c_1
+	) p_2
+		CROSS JOIN "Child" c_1
 

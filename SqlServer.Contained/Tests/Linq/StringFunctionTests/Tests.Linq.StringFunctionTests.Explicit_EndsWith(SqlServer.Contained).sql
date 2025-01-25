@@ -2,29 +2,29 @@
 -- SqlServer.Contained SqlServer.2019
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	[Patient] [r]
 WHERE
 	[r].[Diagnosis] LIKE N'%Persecution' ESCAPE N'~' AND
-	Convert(VarBinary(8000), RIGHT([r].[Diagnosis], 11)) = Convert(VarBinary(8000), N'Persecution')
+	Convert(VarBinary(8000), RIGHT([r].[Diagnosis], LEN(N'Persecution'))) = Convert(VarBinary(8000), N'Persecution')
 
 BeforeExecute
 -- SqlServer.Contained SqlServer.2019
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	[Patient] [r]
 WHERE
 	[r].[Diagnosis] LIKE N'%persecution' ESCAPE N'~' AND
-	Convert(VarBinary(8000), RIGHT([r].[Diagnosis], 11)) = Convert(VarBinary(8000), N'persecution')
+	Convert(VarBinary(8000), RIGHT([r].[Diagnosis], LEN(N'persecution'))) = Convert(VarBinary(8000), N'persecution')
 
 BeforeExecute
 -- SqlServer.Contained SqlServer.2019
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	[Patient] [r]
 WHERE
@@ -34,7 +34,7 @@ BeforeExecute
 -- SqlServer.Contained SqlServer.2019
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	[Patient] [r]
 WHERE

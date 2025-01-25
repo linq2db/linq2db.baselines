@@ -46,11 +46,11 @@ BeforeExecute
 -- SQLite.MS SQLite
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	[InstanceClass] [t]
 WHERE
-	Cast([t].[Id] as NVarChar(11)) || Cast([t].[Value] as NVarChar(11)) = Cast([t].[Id] as NVarChar(11)) || Cast([t].[Value] as VarChar(11))
+	CAST([t].[Id] AS NVarChar(11)) || CAST([t].[Value] AS NVarChar(11)) = CAST([t].[Id] AS NVarChar(11)) || [t].[Value]
 
 BeforeExecute
 -- SQLite.MS SQLite

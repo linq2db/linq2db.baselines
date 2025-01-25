@@ -2,7 +2,7 @@
 -- ClickHouse.MySql ClickHouse
 
 SELECT
-	YEAR(t.DateTimeValue)
+	toYear(t.DateTimeValue)
 FROM
 	LinqDataTypes t
 

@@ -1,33 +1,21 @@
 ﻿BeforeExecute
 -- SqlServer.Contained.MS SqlServer.2019
 DECLARE @n Int -- Int32
-SET     @n = -1
-DECLARE @n_1 Int -- Int32
-SET     @n_1 = -1
+SET     @n = 1
 
 SELECT
-	(
-		SELECT
-			Count(*)
-		FROM
-			[Child] [ch]
-		WHERE
-			[ch].[ParentID] < 2 AND
-			[t1].[ParentID] = [ch].[ParentID] + 1 AND
-			[t1].[ChildID] = [ch].[ChildID] AND
-			[ch].[ParentID] > @n
-	)
+	COUNT(IIF([g_2].[ParentID] < 3, 1, NULL))
 FROM
 	(
 		SELECT
-			[ch_1].[ParentID] + 1 as [ParentID],
-			[ch_1].[ChildID]
+			[g_1].[ParentID] + 1 as [ParentID],
+			[g_1].[ChildID]
 		FROM
-			[Child] [ch_1]
+			[Child] [g_1]
 		WHERE
-			[ch_1].[ParentID] > @n_1
-	) [t1]
+			[g_1].[ParentID] + 2 > @n
+	) [g_2]
 GROUP BY
-	[t1].[ParentID],
-	[t1].[ChildID]
+	[g_2].[ParentID],
+	[g_2].[ChildID]
 

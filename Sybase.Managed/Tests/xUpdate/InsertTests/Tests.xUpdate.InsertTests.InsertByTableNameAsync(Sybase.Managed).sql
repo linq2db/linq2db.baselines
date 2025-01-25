@@ -98,7 +98,7 @@ BeforeExecute
 -- Sybase.Managed Sybase (asynchronously)
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	[xxPerson] [t1]
 
@@ -106,7 +106,7 @@ BeforeExecute
 -- Sybase.Managed Sybase (asynchronously)
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	[xxPerson] [p]
 WHERE

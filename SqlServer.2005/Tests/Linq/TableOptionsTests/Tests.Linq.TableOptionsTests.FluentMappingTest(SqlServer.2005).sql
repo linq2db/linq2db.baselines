@@ -17,26 +17,18 @@ BeforeExecute
 -- SqlServer.2005
 
 SELECT
-	[t4].[Id_1],
-	[t4].[Value_1],
-	[t4].[Id],
-	[t4].[Value_2],
+	[t1].[Id],
+	[t1].[Value],
+	[t2].[Id],
+	[t2].[Value],
 	[t3].[Id],
 	[t3].[Value]
 FROM
-	(
-		SELECT
-			[t2].[Id],
-			[t1].[Id] as [Id_1],
-			[t1].[Value] as [Value_1],
-			[t2].[Value] as [Value_2]
-		FROM
-			[tempdb]..[#TestTable] [t1],
-			[tempdb]..[#TestTable] [t2]
-	) [t4]
-		INNER JOIN [tempdb]..[#TestTable] [t3] ON [t4].[Id] = [t3].[Id]
+	[tempdb]..[#TestTable] [t1]
+		CROSS JOIN [tempdb]..[#TestTable] [t2]
+		INNER JOIN [tempdb]..[#TestTable] [t3] ON [t2].[Id] = [t3].[Id]
 WHERE
-	[t4].[Id_1] = [t4].[Id]
+	[t1].[Id] = [t2].[Id]
 
 BeforeExecute
 -- SqlServer.2005

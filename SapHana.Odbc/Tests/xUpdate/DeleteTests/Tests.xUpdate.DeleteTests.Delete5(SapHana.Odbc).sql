@@ -50,11 +50,11 @@ BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
-	"Parent" "_"
+	"Parent" "t1"
 WHERE
-	"_"."ParentID" > 1000
+	"t1"."ParentID" > 1000
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
@@ -68,9 +68,9 @@ BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
-	"Parent" "_"
+	"Parent" "t1"
 WHERE
-	"_"."ParentID" > 1000
+	"t1"."ParentID" > 1000
 

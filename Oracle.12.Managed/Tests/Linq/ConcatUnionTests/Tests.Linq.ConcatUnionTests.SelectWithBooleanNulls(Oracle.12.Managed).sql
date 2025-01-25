@@ -8,8 +8,7 @@ SELECT
 				*
 			FROM
 				"Child" t1
-		)
-			THEN 1
+		) THEN 1
 		ELSE 0
 	END,
 	CASE
@@ -26,8 +25,7 @@ SELECT
 				*
 			FROM
 				"Child" t2
-		)
-			THEN 1
+		) THEN 1
 		ELSE 0
 	END,
 	NULL

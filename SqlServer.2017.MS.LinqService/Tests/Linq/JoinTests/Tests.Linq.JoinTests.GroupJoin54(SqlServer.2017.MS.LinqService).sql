@@ -1,30 +1,28 @@
 ﻿BeforeExecute
 -- SqlServer.2017.MS SqlServer.2017
-DECLARE @take Int -- Int32
-SET     @take = 1
 
 SELECT
 	(
 		SELECT
-			Count(*)
+			COUNT(*)
 		FROM
-			[Child] [t1]
+			[Child] [ch_1]
 		WHERE
-			[p].[ParentID] = [t1].[ParentID]
+			[t2].[ParentID] = [ch_1].[ParentID]
 	),
-	[t2].[ParentID],
-	[t2].[ChildID]
+	[t1].[ParentID],
+	[t1].[ChildID]
 FROM
-	[Parent] [p]
-		OUTER APPLY (
-			SELECT TOP (@take)
+	[Parent] [t2]
+		CROSS APPLY (
+			SELECT TOP (1)
 				[ch].[ParentID],
 				[ch].[ChildID]
 			FROM
 				[Child] [ch]
 			WHERE
-				[ch].[ParentID] = [p].[ParentID]
-		) [t2]
+				[t2].[ParentID] = [ch].[ParentID]
+		) [t1]
 WHERE
-	[p].[ParentID] = 1
+	[t2].[ParentID] = 1
 

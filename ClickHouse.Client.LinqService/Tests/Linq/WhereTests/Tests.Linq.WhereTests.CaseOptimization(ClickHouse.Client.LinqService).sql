@@ -26,7 +26,7 @@ INSERT INTO WhereWithString
 )
 VALUES
 (
-	toInt32(1),
+	1,
 	'Str1'
 )
 
@@ -39,7 +39,7 @@ SELECT
 FROM
 	WhereWithString x
 WHERE
-	position(x.StringValue, 'Str') > toInt32(0)
+	position(x.StringValue, 'Str') > 0
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse

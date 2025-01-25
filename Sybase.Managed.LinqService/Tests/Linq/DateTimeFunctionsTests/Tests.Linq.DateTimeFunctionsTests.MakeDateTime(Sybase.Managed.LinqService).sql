@@ -2,14 +2,9 @@
 -- Sybase.Managed Sybase
 
 SELECT
-	[t].[c1]
+	CAST('2010-' + RIGHT('0' + CAST([t].[ID] AS VarChar(2)), 2) + '-01' AS DateTime)
 FROM
-	(
-		SELECT
-			Convert(Date, '2010-' + right(replicate('0',2) + cast([p].[ID] as varchar(255)),2) + '-01') as [c1]
-		FROM
-			[LinqDataTypes] [p]
-	) [t]
+	[LinqDataTypes] [t]
 WHERE
-	DatePart(year, [t].[c1]) = 2010
+	DatePart(year, CAST('2010-' + RIGHT('0' + CAST([t].[ID] AS VarChar(2)), 2) + '-01' AS DateTime)) = 2010
 

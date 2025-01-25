@@ -2,14 +2,14 @@
 -- SqlServer.2008
 
 SELECT
-	[t].[c1]
+	[t_1].[c1]
 FROM
 	(
 		SELECT
-			Floor(Degrees([p].[MoneyValue])) as [c1]
+			Floor(Degrees([t].[MoneyValue])) as [c1]
 		FROM
-			[LinqDataTypes] [p]
-	) [t]
+			[LinqDataTypes] [t]
+	) [t_1]
 WHERE
-	[t].[c1] <> 0.1
+	[t_1].[c1] <> 0.1
 

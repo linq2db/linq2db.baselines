@@ -9,5 +9,5 @@ SELECT
 FROM
 	Child t1
 		INNER JOIN Parent a_Parent ON t1.ParentID = a_Parent.ParentID
-LIMIT toInt32(1)
+LIMIT 1
 

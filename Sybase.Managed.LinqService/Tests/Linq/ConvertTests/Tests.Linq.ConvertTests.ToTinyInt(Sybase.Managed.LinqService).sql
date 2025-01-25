@@ -2,7 +2,7 @@
 -- Sybase.Managed Sybase
 
 SELECT
-	Convert(TinyInt, [t].[MoneyValue])
+	CAST([t].[MoneyValue] AS TinyInt)
 FROM
 	[LinqDataTypes] [t]
 

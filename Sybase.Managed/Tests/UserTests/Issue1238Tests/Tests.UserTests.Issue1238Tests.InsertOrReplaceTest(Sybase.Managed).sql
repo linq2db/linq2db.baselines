@@ -21,7 +21,7 @@ SET     @Data_1 = 1
 UPDATE
 	[InheritanceParent]
 SET
-	[t1].[TypeDiscriminator] = @Data
+	[TypeDiscriminator] = @Data
 FROM
 	[InheritanceParent] [t1]
 WHERE
@@ -48,7 +48,7 @@ BeforeExecute
 -- Sybase.Managed Sybase
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	[InheritanceParent] [t1]
 
@@ -66,7 +66,7 @@ SET     @Data_1 = 1
 UPDATE
 	[InheritanceParent]
 SET
-	[t1].[TypeDiscriminator] = @Data
+	[TypeDiscriminator] = @Data
 FROM
 	[InheritanceParent] [t1]
 WHERE
@@ -93,7 +93,7 @@ BeforeExecute
 -- Sybase.Managed Sybase
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	[InheritanceParent] [t1]
 

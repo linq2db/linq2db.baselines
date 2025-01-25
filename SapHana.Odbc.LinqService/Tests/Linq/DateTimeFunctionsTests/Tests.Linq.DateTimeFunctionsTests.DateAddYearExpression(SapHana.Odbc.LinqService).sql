@@ -1,10 +1,10 @@
 ﻿BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @Parameter1  -- Int32
-SET     @Parameter1 = 11
+DECLARE @p  -- Int32
+SET     @p = 11
 
 SELECT
-	Add_Years("t"."DateTimeValue", ?)
+	To_Date(Add_Years("t"."DateTimeValue", ?))
 FROM
 	"LinqDataTypes" "t"
 

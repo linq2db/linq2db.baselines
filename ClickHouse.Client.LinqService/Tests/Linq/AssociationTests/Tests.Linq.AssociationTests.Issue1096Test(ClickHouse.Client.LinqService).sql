@@ -42,7 +42,7 @@ INSERT INTO Issue1096Task
 )
 VALUES
 (
-	toInt32(1),
+	1,
 	'bda.Requests'
 )
 
@@ -56,7 +56,7 @@ INSERT INTO Issue1096Task
 )
 VALUES
 (
-	toInt32(1),
+	1,
 	'bda.Requests'
 )
 
@@ -71,8 +71,8 @@ INSERT INTO Issue1096TaskStage
 )
 VALUES
 (
-	toInt32(1),
-	toInt32(1),
+	1,
+	1,
 	true
 )
 

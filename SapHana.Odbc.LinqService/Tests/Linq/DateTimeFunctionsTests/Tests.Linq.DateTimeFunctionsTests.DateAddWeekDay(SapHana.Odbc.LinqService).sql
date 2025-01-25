@@ -2,7 +2,7 @@
 -- SapHana.Odbc SapHanaOdbc
 
 SELECT
-	Add_Days("t"."DateTimeValue", 1)
+	To_Date(Add_Days("t"."DateTimeValue", 1))
 FROM
 	"LinqDataTypes" "t"
 

@@ -22,11 +22,11 @@ BeforeExecute
 -- Informix.DB2 Informix
 
 UPDATE
-	Parent
+	Parent t
 SET
-	Parent.Value1 = 1011
+	Value1 = 1011
 WHERE
-	Parent.ParentID = 1010
+	t.ParentID = 1010
 
 BeforeExecute
 CommitTransaction

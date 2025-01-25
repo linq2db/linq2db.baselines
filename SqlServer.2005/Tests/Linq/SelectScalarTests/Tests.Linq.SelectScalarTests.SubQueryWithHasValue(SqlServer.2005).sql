@@ -1,18 +1,20 @@
 ﻿BeforeExecute
 -- SqlServer.2005
-DECLARE @take Int -- Int32
-SET     @take = 1
 
 SELECT
-	[_].[ParentID],
-	[_].[Value1]
+	[t2].[ParentID],
+	[t2].[Value1]
 FROM
-	[Parent] [_]
+	[Parent] [t2]
+		LEFT JOIN (
+			SELECT TOP (1)
+				CASE
+					WHEN [r].[Value1] IS NOT NULL THEN 1
+					ELSE 0
+				END as [HasValue]
+			FROM
+				[Parent] [r]
+		) [t1] ON 1=1
 WHERE
-	(
-		SELECT TOP (@take)
-			[r].[Value1]
-		FROM
-			[Parent] [r]
-	) IS NOT NULL
+	[t1].[HasValue] = 1
 

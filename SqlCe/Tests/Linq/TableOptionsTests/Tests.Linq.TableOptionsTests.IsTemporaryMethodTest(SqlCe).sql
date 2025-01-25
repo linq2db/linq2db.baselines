@@ -17,11 +17,11 @@ BeforeExecute
 
 SELECT
 	[t1].[Id],
-	[t1].[Value],
-	[t2].[Id],
-	[t2].[Value],
-	[t3].[Id],
-	[t3].[Value]
+	[t1].[Value] as [Value_1],
+	[t2].[Id] as [Id_1],
+	[t2].[Value] as [Value_2],
+	[t3].[Id] as [Id_2],
+	[t3].[Value] as [Value_3]
 FROM
 	[TestTable] [t1]
 		INNER JOIN [TestTable] [t2] ON [t1].[Id] = [t2].[Id]

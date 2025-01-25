@@ -63,8 +63,6 @@ VALUES
 
 BeforeExecute
 -- Oracle.11.Managed Oracle11
-DECLARE @take Int32
-SET     @take = 1
 
 SELECT
 	t1."Id",
@@ -75,7 +73,7 @@ SELECT
 FROM
 	"Issue731Table" t1
 WHERE
-	t1."Id" = 1 AND ROWNUM <= :take
+	t1."Id" = 1 AND ROWNUM <= 1
 
 BeforeExecute
 -- Oracle.11.Managed Oracle11

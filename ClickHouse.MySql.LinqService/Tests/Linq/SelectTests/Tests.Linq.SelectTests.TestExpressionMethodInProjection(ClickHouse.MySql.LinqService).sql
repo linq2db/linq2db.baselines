@@ -26,7 +26,7 @@ INSERT INTO MainEntityObject
 )
 VALUES
 (
-	toInt32(1),
+	1,
 	'MainValue 1'
 )
 
@@ -40,7 +40,7 @@ INSERT INTO MainEntityObject
 )
 VALUES
 (
-	toInt32(2),
+	2,
 	'MainValue 2'
 )
 
@@ -69,7 +69,7 @@ INSERT INTO ChildEntityObject
 )
 VALUES
 (
-	toInt32(1),
+	1,
 	'Value 1'
 )
 

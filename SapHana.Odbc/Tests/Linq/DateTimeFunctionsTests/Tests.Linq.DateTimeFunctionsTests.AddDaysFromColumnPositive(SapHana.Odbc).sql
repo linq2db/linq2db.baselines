@@ -42,21 +42,19 @@ VALUES
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @Parameter1  -- DateTime
-SET     @Parameter1 = '2018-01-02'
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	"LinqDataTypes" "t"
 WHERE
-	"t"."ID" = 5000 AND Add_Days("t"."DateTimeValue", "t"."SmallIntValue") > ?
+	"t"."ID" = 5000 AND Add_Days("t"."DateTimeValue", "t"."SmallIntValue") > To_Timestamp('2018-01-02 00:00:00.000')
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 DELETE FROM
-	"LinqDataTypes" "t1"
+	"LinqDataTypes" "t"
 WHERE
-	"t1"."ID" = 5000
+	"t"."ID" = 5000
 

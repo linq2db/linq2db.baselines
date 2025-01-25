@@ -8,6 +8,6 @@ FROM
 	Parent p
 		INNER JOIN Child c_1 ON p.ParentID = c_1.ParentID
 WHERE
-	c_1.ChildID > toInt32(20) AND p.ParentID = toInt32(3)
-LIMIT toInt32(1)
+	c_1.ChildID > 20 AND p.ParentID = 3
+LIMIT 1
 

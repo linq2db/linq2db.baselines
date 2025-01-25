@@ -2,13 +2,21 @@
 -- Informix.DB2 Informix
 
 SELECT
-	p.ParentID,
-	c_1.ChildID + 1
+	sub.ParentID_1,
+	sub.ChildID + 1
 FROM
-	Parent p,
-	Child c_1
-		LEFT JOIN Parent a_Parent ON c_1.ParentID = a_Parent.ParentID
+	(
+		SELECT
+			c_1.ParentID,
+			p.ParentID as ParentID_1,
+			c_1.ChildID,
+			p.Value1
+		FROM
+			Parent p,
+			Child c_1
+	) sub
+		LEFT JOIN Parent a_Parent ON sub.ParentID = a_Parent.ParentID
 WHERE
-	p.ParentID = a_Parent.ParentID AND (p.Value1 = a_Parent.Value1 OR p.Value1 IS NULL AND a_Parent.Value1 IS NULL) AND
-	c_1.ChildID > -1
+	sub.ChildID > -1 AND sub.ParentID_1 = a_Parent.ParentID AND
+	(sub.Value1 = a_Parent.Value1 OR sub.Value1 IS NULL AND a_Parent.Value1 IS NULL)
 

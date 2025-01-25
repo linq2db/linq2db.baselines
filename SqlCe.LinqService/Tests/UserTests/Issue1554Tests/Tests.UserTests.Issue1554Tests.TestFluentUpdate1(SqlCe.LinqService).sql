@@ -47,17 +47,15 @@ SET     @ClaimedKeyTypeN = 'EC'
 UPDATE
 	[Issue1554FluentTable]
 SET
-	[Issue1554FluentTable].[ClaimedKeyType] = @ClaimedKeyType,
-	[Issue1554FluentTable].[ClaimedKeyTypeN] = @ClaimedKeyTypeN
+	[ClaimedKeyType] = @ClaimedKeyType,
+	[ClaimedKeyTypeN] = @ClaimedKeyTypeN
 WHERE
 	[Issue1554FluentTable].[Id] = 0
 
 BeforeExecute
 -- SqlCe
-DECLARE @take Int -- Int32
-SET     @take = 2
 
-SELECT TOP (@take)
+SELECT TOP (2)
 	[t1].[Id],
 	[t1].[ClaimedKeyType],
 	[t1].[ClaimedKeyTypeN]

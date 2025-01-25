@@ -2,15 +2,15 @@
 -- ClickHouse.Octonica ClickHouse (asynchronously)
 
 SELECT
-	maxOrNull(x.PersonID)
+	maxOrNull(p.PersonID)
 FROM
-	Person x
+	Person p
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse (asynchronously)
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	Person p
 

@@ -7,7 +7,7 @@ SELECT
 			SELECT
 				*
 			FROM
-				[Person] [_]
+				[Person] [t1]
 		)
 			THEN 1
 		ELSE 0

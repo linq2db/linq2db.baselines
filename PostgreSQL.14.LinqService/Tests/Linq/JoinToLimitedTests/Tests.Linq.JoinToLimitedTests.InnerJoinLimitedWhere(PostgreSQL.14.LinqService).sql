@@ -1,21 +1,19 @@
 ﻿BeforeExecute
 -- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
-DECLARE @take Integer -- Int32
-SET     @take = 1
 
 SELECT
 	o."ParentID",
 	o."Value1",
-	x."ParentID",
-	x."ChildID"
+	c_1."ParentID",
+	c_1."ChildID"
 FROM
 	"Parent" o
 		INNER JOIN (
 			SELECT
-				t1."ParentID",
-				t1."ChildID"
+				x."ParentID",
+				x."ChildID"
 			FROM
-				"Child" t1
-			LIMIT :take
-		) x ON x."ParentID" = o."ParentID"
+				"Child" x
+			LIMIT 1
+		) c_1 ON c_1."ParentID" = o."ParentID"
 

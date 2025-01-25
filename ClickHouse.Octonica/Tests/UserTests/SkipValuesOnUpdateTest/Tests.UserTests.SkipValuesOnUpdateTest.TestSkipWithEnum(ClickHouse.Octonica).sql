@@ -30,9 +30,9 @@ INSERT INTO PR_1598_Update_Enum_Table
 )
 VALUES
 (
-	toInt32(1),
+	1,
 	'Max',
-	toInt32(20),
+	20,
 	'Female'
 )
 
@@ -47,8 +47,8 @@ SELECT
 FROM
 	PR_1598_Update_Enum_Table t
 WHERE
-	t.Id = toInt32(1)
-LIMIT toInt32(1)
+	t.Id = 1
+LIMIT 1
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -57,10 +57,10 @@ ALTER TABLE
 	PR_1598_Update_Enum_Table
 UPDATE
 	Name = 'Jack',
-	Age = toInt32(2),
+	Age = 2,
 	Gender = 'Male'
 WHERE
-	Id = toInt32(1)
+	Id = 1
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -73,8 +73,8 @@ SELECT
 FROM
 	PR_1598_Update_Enum_Table t
 WHERE
-	t.Id = toInt32(1)
-LIMIT toInt32(1)
+	t.Id = 1
+LIMIT 1
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -83,9 +83,9 @@ ALTER TABLE
 	PR_1598_Update_Enum_Table
 UPDATE
 	Name = 'Francine',
-	Age = toInt32(20)
+	Age = 20
 WHERE
-	Id = toInt32(1)
+	Id = 1
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -98,8 +98,8 @@ SELECT
 FROM
 	PR_1598_Update_Enum_Table t
 WHERE
-	t.Id = toInt32(1)
-LIMIT toInt32(1)
+	t.Id = 1
+LIMIT 1
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse

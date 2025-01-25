@@ -2,14 +2,14 @@
 -- SqlServer.2016
 
 SELECT
-	[p].[c1]
+	[p_1].[c1]
 FROM
 	(
 		SELECT
-			Convert(BigInt, IIF([t].[MoneyValue] - Floor([t].[MoneyValue]) = 0.5 AND Floor([t].[MoneyValue]) % 2 = 0, Floor([t].[MoneyValue]), Round([t].[MoneyValue], 0))) as [c1]
+			CAST(Floor(IIF([p].[MoneyValue] - Floor([p].[MoneyValue]) = 0.5 AND Floor([p].[MoneyValue]) % 2 = 0, Floor([p].[MoneyValue]), Round([p].[MoneyValue], 0))) AS BigInt) as [c1]
 		FROM
-			[LinqDataTypes] [t]
-	) [p]
+			[LinqDataTypes] [p]
+	) [p_1]
 WHERE
-	[p].[c1] > 0
+	[p_1].[c1] > 0
 

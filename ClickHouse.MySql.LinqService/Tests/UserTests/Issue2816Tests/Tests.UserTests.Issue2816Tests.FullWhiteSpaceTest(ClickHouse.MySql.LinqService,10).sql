@@ -26,7 +26,7 @@ INSERT INTO Issue2816Table
 )
 VALUES
 (
-	toInt32(1),
+	1,
 	'
 '
 )
@@ -41,7 +41,7 @@ INSERT INTO Issue2816Table
 )
 VALUES
 (
-	toInt32(2),
+	2,
 	' 
  '
 )
@@ -56,7 +56,7 @@ INSERT INTO Issue2816Table
 )
 VALUES
 (
-	toInt32(3),
+	3,
 	' 
 x '
 )

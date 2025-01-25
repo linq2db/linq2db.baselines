@@ -230,16 +230,16 @@ SET     @idx = 6
 MERGE INTO [TestMerge1] [Target]
 USING (
 	SELECT
-		[t1].[Id],
-		[t1].[Field2]
+		[t1].[Id] as [source_Id],
+		[t1].[Field2] as [source_Field2]
 	FROM
 		[TestMerge2] [t1]
 ) [Source]
 (
-	[Id],
-	[Field2]
+	[source_Id],
+	[source_Field2]
 )
-ON ([Target].[Id] = [Source].[Id])
+ON ([Target].[Id] = [Source].[source_Id])
 
 WHEN NOT MATCHED THEN
 INSERT
@@ -253,10 +253,10 @@ INSERT
 )
 VALUES
 (
-	10 + [Source].[Id],
+	10 + [Source].[source_Id],
 	123,
 	Len(@name) + @idx,
-	[Source].[Field2],
+	[Source].[source_Field2],
 	999,
 	888
 )

@@ -1,7 +1,5 @@
 ﻿BeforeExecute
 -- Oracle.11.Managed Oracle11
-DECLARE @take Int32
-SET     @take = 2
 
 SELECT
 	p."PersonID",
@@ -15,12 +13,10 @@ FROM
 	"Person" p
 		LEFT JOIN "Patient" a_Patient ON p."PersonID" = a_Patient."PersonID"
 WHERE
-	p."PersonID" = 1 AND ROWNUM <= :take
+	p."PersonID" = 1 AND ROWNUM <= 2
 
 BeforeExecute
 -- Oracle.11.Managed Oracle11
-DECLARE @take Int32
-SET     @take = 2
 
 SELECT
 	p."PersonID",
@@ -34,5 +30,5 @@ FROM
 	"Person" p
 		LEFT JOIN "Patient" a_Patient ON p."PersonID" = a_Patient."PersonID"
 WHERE
-	p."PersonID" = 2 AND ROWNUM <= :take
+	p."PersonID" = 2 AND ROWNUM <= 2
 

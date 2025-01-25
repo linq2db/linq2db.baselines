@@ -39,7 +39,7 @@ FROM
 	(
 		SELECT
 			eg."TotalId",
-			Sum(eg."Sum") as "SumAggr"
+			SUM(eg."Sum") as "SumAggr"
 		FROM
 			"Entry" eg
 		GROUP BY

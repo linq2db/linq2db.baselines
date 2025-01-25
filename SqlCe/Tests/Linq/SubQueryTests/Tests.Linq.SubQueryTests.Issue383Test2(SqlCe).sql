@@ -201,9 +201,8 @@ SELECT
 	[d].[Distributor_Name],
 	[cp].[Street_Number],
 	[cp].[Street_Name],
-	[t1].[City_Name],
-	[t1].[is_empty],
-	[cp].[State],
+	[c_1].[City_Name],
+	[cp].[State] as [State_1],
 	[cp].[Zip_Code],
 	[cp].[Zip_Plus_4],
 	[cd].[Effective_Date]
@@ -214,14 +213,7 @@ FROM
 		INNER JOIN [Distributor_Commercial_Propert] [dcp] ON [d].[Distributor_Id] = [dcp].[Distributor_Id]
 		INNER JOIN [Commercial_Property] [cp] ON [dcp].[Commercial_Property_Id] = [cp].[Commercial_Property_Id]
 		INNER JOIN [Contract_Dates] [cd] ON [cda].[Contract_Id] = [cd].[Contract_Id]
-		LEFT JOIN (
-			SELECT
-				[c_1].[City_Name],
-				1 as [is_empty],
-				[c_1].[City_Code]
-			FROM
-				[Cities] [c_1]
-		) [t1] ON ([t1].[City_Code] = [cp].[City_Code] OR [t1].[City_Code] IS NULL AND [cp].[City_Code] IS NULL)
+		INNER JOIN [Cities] [c_1] ON ([c_1].[City_Code] = [cp].[City_Code] OR [c_1].[City_Code] IS NULL AND [cp].[City_Code] IS NULL)
 WHERE
 	[cda].[Contract_Id] = 198827882 AND
 	[cda].[Distributor_Type_Code] = 'CC' AND

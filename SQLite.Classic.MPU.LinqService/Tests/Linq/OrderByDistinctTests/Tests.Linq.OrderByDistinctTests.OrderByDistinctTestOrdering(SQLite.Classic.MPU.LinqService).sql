@@ -105,8 +105,6 @@ SELECT DISTINCT
 	[x].[DuplicateData]
 FROM
 	[OrderByDistinctData] [x]
-ORDER BY
-	[x].[OrderData1]
 LIMIT @take OFFSET @skip
 
 BeforeExecute
@@ -135,8 +133,6 @@ SELECT DISTINCT
 	[x].[DuplicateData]
 FROM
 	[OrderByDistinctData] [x]
-ORDER BY
-	[x].[OrderData1] DESC
 LIMIT @take OFFSET @skip
 
 BeforeExecute
@@ -165,9 +161,6 @@ SELECT DISTINCT
 	[x].[DuplicateData]
 FROM
 	[OrderByDistinctData] [x]
-ORDER BY
-	[x].[OrderData1],
-	[x].[OrderData2]
 LIMIT @take OFFSET @skip
 
 BeforeExecute
@@ -197,9 +190,6 @@ SELECT DISTINCT
 	[x].[DuplicateData]
 FROM
 	[OrderByDistinctData] [x]
-ORDER BY
-	[x].[OrderData1],
-	[x].[OrderData2] DESC
 LIMIT @take OFFSET @skip
 
 BeforeExecute
@@ -229,9 +219,6 @@ SELECT DISTINCT
 	[x].[DuplicateData]
 FROM
 	[OrderByDistinctData] [x]
-ORDER BY
-	[x].[OrderData1] DESC,
-	[x].[OrderData2] DESC
 LIMIT @take OFFSET @skip
 
 BeforeExecute
@@ -261,9 +248,6 @@ SELECT DISTINCT
 	[x].[DuplicateData]
 FROM
 	[OrderByDistinctData] [x]
-ORDER BY
-	[x].[OrderData1],
-	[x].[OrderData2] DESC
 LIMIT @take OFFSET @skip
 
 BeforeExecute

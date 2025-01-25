@@ -50,24 +50,22 @@ VALUES
 
 BeforeExecute
 -- Oracle.18.Managed Oracle.Managed Oracle12
-DECLARE @value2 Int32
+DECLARE @value2 Decimal(5, 0)
 SET     @value2 = 13621
 DECLARE @id Int32
 SET     @id = 100500
 
 UPDATE
-	"LinqDataTypes"
+	"LinqDataTypes" t1
 SET
-	"LinqDataTypes"."SmallIntValue" = Cast(Floor("LinqDataTypes"."MoneyValue" / (:value2 / "LinqDataTypes"."IntValue")) as SmallInt)
+	"SmallIntValue" = CAST(Floor(t1."MoneyValue" / (:value2 / t1."IntValue")) AS SmallInt)
 WHERE
-	"LinqDataTypes".ID = :id
+	t1.ID = :id
 
 BeforeExecute
 -- Oracle.18.Managed Oracle.Managed Oracle12
 DECLARE @id Int32
 SET     @id = 100500
-DECLARE @take Int32
-SET     @take = 1
 
 SELECT
 	t1."SmallIntValue"
@@ -75,5 +73,5 @@ FROM
 	"LinqDataTypes" t1
 WHERE
 	t1.ID = :id
-FETCH NEXT :take ROWS ONLY
+FETCH NEXT 1 ROWS ONLY
 

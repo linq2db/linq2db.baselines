@@ -2,7 +2,7 @@
 -- DB2 DB2.LUW DB2LUW
 
 SELECT
-	"t"."DateTimeValue" + 11 Year
+	DATE("t"."DateTimeValue" + 11 YEAR)
 FROM
 	"LinqDataTypes" "t"
 

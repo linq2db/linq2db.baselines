@@ -49,20 +49,18 @@ FROM
 
 BeforeExecute
 -- Informix.DB2 Informix (asynchronously)
-DECLARE @Value VarChar(7) -- String
-SET     @Value = 'value 1'
 DECLARE @Id Integer(4) -- Int32
 SET     @Id = 1
 DECLARE @Stamp Integer(4) -- Int32
 SET     @Stamp = -10
 
 UPDATE
-	ConcurrencyAutoIncrement
+	ConcurrencyAutoIncrement obj
 SET
-	ConcurrencyAutoIncrement.Stamp = ConcurrencyAutoIncrement.Stamp + 1,
-	ConcurrencyAutoIncrement."Value" = @Value
+	Stamp = obj.Stamp + 1,
+	"Value" = 'value 1'
 WHERE
-	ConcurrencyAutoIncrement.Id = @Id AND ConcurrencyAutoIncrement.Stamp = @Stamp
+	obj.Id = @Id AND obj.Stamp = @Stamp
 
 BeforeExecute
 -- Informix.DB2 Informix
@@ -76,20 +74,18 @@ FROM
 
 BeforeExecute
 -- Informix.DB2 Informix (asynchronously)
-DECLARE @Value VarChar(7) -- String
-SET     @Value = 'value 2'
 DECLARE @Id Integer(4) -- Int32
 SET     @Id = 1
 DECLARE @Stamp Integer(4) -- Int32
 SET     @Stamp = -9
 
 UPDATE
-	ConcurrencyAutoIncrement
+	ConcurrencyAutoIncrement obj
 SET
-	ConcurrencyAutoIncrement.Stamp = ConcurrencyAutoIncrement.Stamp + 1,
-	ConcurrencyAutoIncrement."Value" = @Value
+	Stamp = obj.Stamp + 1,
+	"Value" = 'value 2'
 WHERE
-	ConcurrencyAutoIncrement.Id = @Id AND ConcurrencyAutoIncrement.Stamp = @Stamp
+	obj.Id = @Id AND obj.Stamp = @Stamp
 
 BeforeExecute
 -- Informix.DB2 Informix
@@ -103,20 +99,18 @@ FROM
 
 BeforeExecute
 -- Informix.DB2 Informix (asynchronously)
-DECLARE @Value VarChar(7) -- String
-SET     @Value = 'value 3'
 DECLARE @Id Integer(4) -- Int32
 SET     @Id = 1
 DECLARE @Stamp Integer(4) -- Int32
 SET     @Stamp = -9
 
 UPDATE
-	ConcurrencyAutoIncrement
+	ConcurrencyAutoIncrement obj
 SET
-	ConcurrencyAutoIncrement.Stamp = ConcurrencyAutoIncrement.Stamp + 1,
-	ConcurrencyAutoIncrement."Value" = @Value
+	Stamp = obj.Stamp + 1,
+	"Value" = 'value 3'
 WHERE
-	ConcurrencyAutoIncrement.Id = @Id AND ConcurrencyAutoIncrement.Stamp = @Stamp
+	obj.Id = @Id AND obj.Stamp = @Stamp
 
 BeforeExecute
 -- Informix.DB2 Informix

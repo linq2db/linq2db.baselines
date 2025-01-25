@@ -33,15 +33,17 @@ SELECT SCOPE_IDENTITY()
 
 BeforeExecute
 -- SqlServer.2005.MS SqlServer.2005
+DECLARE @i Int -- Int32
+SET     @i = 0
 DECLARE @id Int -- Int32
 SET     @id = 5
 DECLARE @diagnosis NVarChar(4000) -- String
 SET     @diagnosis = N'abc'
 
 UPDATE
-	[t1]
+	[Patient]
 SET
-	[t1].[Diagnosis] = Convert(NVarChar(11), Len([t1].[Diagnosis]))
+	[Diagnosis] = CAST(Len([t1].[Diagnosis]) + @i AS NVarChar(11))
 FROM
 	[Patient] [t1]
 WHERE
@@ -57,7 +59,7 @@ BEGIN
 	VALUES
 	(
 		@id,
-		Convert(NVarChar(11), Len(@diagnosis))
+		CAST(Len(@diagnosis) + @i AS NVarChar(11))
 	)
 END
 
@@ -71,9 +73,9 @@ DECLARE @diagnosis NVarChar(4000) -- String
 SET     @diagnosis = N'abc'
 
 UPDATE
-	[t1]
+	[Patient]
 SET
-	[t1].[Diagnosis] = Convert(NVarChar(11), Len([t1].[Diagnosis]) + @i)
+	[Diagnosis] = CAST(Len([t1].[Diagnosis]) + @i AS NVarChar(11))
 FROM
 	[Patient] [t1]
 WHERE
@@ -89,7 +91,7 @@ BEGIN
 	VALUES
 	(
 		@id,
-		Convert(NVarChar(11), Len(@diagnosis) + @i)
+		CAST(Len(@diagnosis) + @i AS NVarChar(11))
 	)
 END
 
@@ -103,9 +105,9 @@ DECLARE @diagnosis NVarChar(4000) -- String
 SET     @diagnosis = N'abc'
 
 UPDATE
-	[t1]
+	[Patient]
 SET
-	[t1].[Diagnosis] = Convert(NVarChar(11), Len([t1].[Diagnosis]) + @i)
+	[Diagnosis] = CAST(Len([t1].[Diagnosis]) + @i AS NVarChar(11))
 FROM
 	[Patient] [t1]
 WHERE
@@ -121,18 +123,16 @@ BEGIN
 	VALUES
 	(
 		@id,
-		Convert(NVarChar(11), Len(@diagnosis) + @i)
+		CAST(Len(@diagnosis) + @i AS NVarChar(11))
 	)
 END
 
 BeforeExecute
 -- SqlServer.2005.MS SqlServer.2005
-DECLARE @take Int -- Int32
-SET     @take = 2
 DECLARE @id Int -- Int32
 SET     @id = 5
 
-SELECT TOP (@take)
+SELECT TOP (2)
 	[p].[PersonID],
 	[p].[Diagnosis]
 FROM

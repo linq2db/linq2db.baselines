@@ -10,5 +10,5 @@ SELECT
 FROM
 	Person p
 WHERE
-	positionUTF8(p.FirstName, 'oh') = toInt32(2) AND p.PersonID = toInt32(1)
+	positionUTF8(p.FirstName, 'oh') = 2 AND p.PersonID = 1
 

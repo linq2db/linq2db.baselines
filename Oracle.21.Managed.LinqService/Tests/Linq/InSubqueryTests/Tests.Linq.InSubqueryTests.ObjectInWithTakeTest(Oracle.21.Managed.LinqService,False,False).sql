@@ -1,7 +1,5 @@
 ﻿BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
-DECLARE @take Int32
-SET     @take = 100
 
 SELECT
 	c_1."ParentID",
@@ -15,13 +13,31 @@ WHERE
 		FROM
 			(
 				SELECT
-					p."ParentID",
-					p."Value1" as "Value_1"
+					param."ParentID",
+					param."Value1" as "Value_1"
 				FROM
-					"Parent" p
-				FETCH NEXT :take ROWS ONLY
-			) t1
+					"Parent" param
+				FETCH NEXT 100 ROWS ONLY
+			) param_1
 		WHERE
-			t1."ParentID" = c_1."ParentID" AND t1."Value_1" = c_1."ParentID"
+			param_1."ParentID" = c_1."ParentID" AND param_1."Value_1" = c_1."ParentID"
 	)
+
+BeforeExecute
+-- Oracle.21.Managed Oracle.Managed Oracle12
+
+SELECT
+	t1."ParentID",
+	t1."ChildID"
+FROM
+	"Child" t1
+
+BeforeExecute
+-- Oracle.21.Managed Oracle.Managed Oracle12
+
+SELECT
+	t1."ParentID",
+	t1."Value1"
+FROM
+	"Parent" t1
 

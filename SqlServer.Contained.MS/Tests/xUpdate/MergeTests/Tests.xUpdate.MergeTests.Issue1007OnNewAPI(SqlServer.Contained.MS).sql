@@ -23,9 +23,9 @@ BeforeExecute
 -- SqlServer.Contained.MS SqlServer.2019
 
 SELECT
-	Max([_].[Id])
+	MAX([t1].[Id])
 FROM
-	[TestMergeIdentity] [_]
+	[TestMergeIdentity] [t1]
 
 BeforeExecute
 -- SqlServer.Contained.MS SqlServer.2019
@@ -35,7 +35,7 @@ USING (VALUES
 	(10)
 ) [Source]
 (
-	[Field]
+	[source_Field]
 )
 ON ([Target].[Field] IS NULL)
 
@@ -46,13 +46,13 @@ INSERT
 )
 VALUES
 (
-	[Source].[Field]
+	[Source].[source_Field]
 )
 
 WHEN MATCHED THEN
 UPDATE
 SET
-	[Target].[Field] = [Source].[Field]
+	[Field] = [Source].[source_Field]
 ;
 
 BeforeExecute

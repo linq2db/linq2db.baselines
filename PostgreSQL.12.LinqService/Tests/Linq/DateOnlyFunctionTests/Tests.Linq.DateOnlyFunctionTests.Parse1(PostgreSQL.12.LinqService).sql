@@ -270,11 +270,20 @@ BeforeExecute
 -- PostgreSQL.12 PostgreSQL.9.5 PostgreSQL
 
 SELECT
-	Cast(('2010-01-' || Lpad(t."TransactionId"::text,2,'0')) as Date)
+	('2010-01-' || Lpad(t."TransactionId"::text,2,'0'))::Date
 FROM
 	"Transactions" t
 WHERE
-	Cast(Floor(Extract(day from Cast(('2010-01-' || Lpad(t."TransactionId"::text,2,'0')) as Date))) as int) > 0
+	Floor(Extract(day From ('2010-01-' || Lpad(t."TransactionId"::text,2,'0'))::Date))::Int > 0
+
+BeforeExecute
+-- PostgreSQL.12 PostgreSQL.9.5 PostgreSQL
+
+SELECT
+	t1."TransactionId",
+	t1."TransactionDate"
+FROM
+	"Transactions" t1
 
 BeforeExecute
 -- PostgreSQL.12 PostgreSQL.9.5 PostgreSQL

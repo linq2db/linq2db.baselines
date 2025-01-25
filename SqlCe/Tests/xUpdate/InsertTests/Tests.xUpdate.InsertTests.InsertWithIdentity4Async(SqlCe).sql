@@ -39,14 +39,12 @@ SELECT @@IDENTITY
 
 BeforeExecute
 -- SqlCe (asynchronously)
-DECLARE @take Int -- Int32
-SET     @take = 2
 DECLARE @FirstName NVarChar(5) -- String
 SET     @FirstName = 'John0'
 
-SELECT TOP (@take)
+SELECT TOP (2)
 	[p].[FirstName],
-	[p].[PersonID],
+	[p].[PersonID] as [ID],
 	[p].[LastName],
 	[p].[MiddleName],
 	[p].[Gender]
@@ -88,14 +86,12 @@ SELECT @@IDENTITY
 
 BeforeExecute
 -- SqlCe (asynchronously)
-DECLARE @take Int -- Int32
-SET     @take = 2
 DECLARE @FirstName NVarChar(5) -- String
 SET     @FirstName = 'John1'
 
-SELECT TOP (@take)
+SELECT TOP (2)
 	[p].[FirstName],
-	[p].[PersonID],
+	[p].[PersonID] as [ID],
 	[p].[LastName],
 	[p].[MiddleName],
 	[p].[Gender]

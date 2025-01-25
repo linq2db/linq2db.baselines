@@ -26,13 +26,15 @@ VALUES
 
 BeforeExecute
 -- SQLite.MS SQLite
+DECLARE @name  -- Int32
+SET     @name = 8
 DECLARE @idx  -- Int32
-SET     @idx = 12
+SET     @idx = 4
 
 UPDATE
 	[Person]
 SET
-	[LastName] = Cast(@idx as NVarChar(11))
+	[LastName] = CAST(@name + @idx AS NVarChar(11))
 WHERE
 	[Person].[FirstName] LIKE 'Update14%' ESCAPE '~'
 
@@ -40,9 +42,9 @@ BeforeExecute
 -- SQLite.MS SQLite
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
-	[Person] [_]
+	[Person] [t1]
 WHERE
-	[_].[FirstName] LIKE 'Update14%' ESCAPE '~'
+	[t1].[FirstName] LIKE 'Update14%' ESCAPE '~'
 

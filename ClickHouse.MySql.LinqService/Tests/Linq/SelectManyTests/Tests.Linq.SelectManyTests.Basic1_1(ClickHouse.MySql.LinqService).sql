@@ -2,18 +2,11 @@
 -- ClickHouse.MySql ClickHouse
 
 SELECT
-	t1.ParentID,
-	t1.ChildID,
-	t1.GrandChildID
+	t2.ParentID,
+	t2.ChildID,
+	t2.GrandChildID
 FROM
-	Parent cp,
-	(
-		SELECT
-			c_1.ParentID as ParentID,
-			c_1.ChildID as ChildID,
-			c_1.GrandChildID as GrandChildID
-		FROM
-			Child cp_1,
-			GrandChild c_1
-	) t1
+	Parent p
+		CROSS JOIN Child t1
+		CROSS JOIN GrandChild t2
 

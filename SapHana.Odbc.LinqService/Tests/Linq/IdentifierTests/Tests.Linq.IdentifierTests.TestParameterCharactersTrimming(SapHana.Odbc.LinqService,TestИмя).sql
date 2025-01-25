@@ -17,11 +17,11 @@ DECLARE @TestИмя  -- Int32
 SET     @TestИмя = 2
 
 UPDATE
-	"testparams"
+	"testparams" "t"
 SET
-	"testparams"."TestИмя" = ?
+	"TestИмя" = ?
 WHERE
-	"testparams"."TestИмя" = 1
+	"t"."TestИмя" = 1
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc

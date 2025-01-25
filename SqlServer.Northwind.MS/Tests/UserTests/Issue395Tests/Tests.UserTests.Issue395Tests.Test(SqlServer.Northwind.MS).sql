@@ -1,20 +1,18 @@
 ﻿BeforeExecute
 -- SqlServer.Northwind.MS SqlServer.2019
-DECLARE @take Int -- Int32
-SET     @take = 1
 
-SELECT TOP (@take)
+SELECT TOP (1)
 	[t1].[ShipCountry],
-	Sum([t1].[Via1]),
-	Sum([t1].[Via3]),
-	Sum([t1].[Via3_1])
+	SUM([t1].[Via1]),
+	SUM([t1].[Via2]),
+	SUM([t1].[Via3])
 FROM
 	(
 		SELECT
 			[x].[ShipCountry],
 			[x].[Freight] as [Via1],
-			0 as [Via3],
-			0 as [Via3_1]
+			0 as [Via2],
+			0 as [Via3]
 		FROM
 			[Orders] [x]
 		WHERE
@@ -23,8 +21,8 @@ FROM
 		SELECT
 			[x_1].[ShipCountry],
 			0 as [Via1],
-			[x_1].[Freight] as [Via3],
-			0 as [Via3_1]
+			[x_1].[Freight] as [Via2],
+			0 as [Via3]
 		FROM
 			[Orders] [x_1]
 		WHERE
@@ -33,8 +31,8 @@ FROM
 		SELECT
 			[x_2].[ShipCountry],
 			0 as [Via1],
-			0 as [Via3],
-			[x_2].[Freight] as [Via3_1]
+			0 as [Via2],
+			[x_2].[Freight] as [Via3]
 		FROM
 			[Orders] [x_2]
 		WHERE
@@ -49,7 +47,7 @@ DECLARE @ShipCountry NVarChar(4000) -- String
 SET     @ShipCountry = N'Argentina'
 
 SELECT
-	Sum([x].[Freight])
+	SUM([x].[Freight])
 FROM
 	[Orders] [x]
 WHERE
@@ -61,7 +59,7 @@ DECLARE @ShipCountry NVarChar(4000) -- String
 SET     @ShipCountry = N'Argentina'
 
 SELECT
-	Sum([x].[Freight])
+	SUM([x].[Freight])
 FROM
 	[Orders] [x]
 WHERE
@@ -73,7 +71,7 @@ DECLARE @ShipCountry NVarChar(4000) -- String
 SET     @ShipCountry = N'Argentina'
 
 SELECT
-	Sum([x].[Freight])
+	SUM([x].[Freight])
 FROM
 	[Orders] [x]
 WHERE

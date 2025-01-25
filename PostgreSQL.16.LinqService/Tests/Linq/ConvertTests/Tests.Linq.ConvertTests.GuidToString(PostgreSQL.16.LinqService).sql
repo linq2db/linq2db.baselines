@@ -8,5 +8,5 @@ SELECT
 FROM
 	"LinqDataTypes" t
 WHERE
-	Lower(Cast(t."GuidValue" as text)) = :guid
+	Lower(t."GuidValue"::text) = :guid
 

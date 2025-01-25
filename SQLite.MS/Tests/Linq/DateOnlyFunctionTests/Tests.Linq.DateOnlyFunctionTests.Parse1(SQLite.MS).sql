@@ -46,7 +46,16 @@ SELECT
 FROM
 	[Transactions] [t]
 WHERE
-	Cast(StrFTime('%d', Date('2010-01-' || printf('%02d', [t].[TransactionId]))) as int) > 0
+	CAST(strftime('%d', Date('2010-01-' || printf('%02d', [t].[TransactionId]))) AS INTEGER) > 0
+
+BeforeExecute
+-- SQLite.MS SQLite
+
+SELECT
+	[t1].[TransactionId],
+	[t1].[TransactionDate]
+FROM
+	[Transactions] [t1]
 
 BeforeExecute
 -- SQLite.MS SQLite

@@ -63,12 +63,11 @@ SET     @Stamp = -10
 UPDATE
 	[ConcurrencyFiltered]
 SET
-	[r].[Stamp] = [r].[Stamp] + 1,
-	[r].[Value] = @Value
-FROM
-	[ConcurrencyFiltered] [r]
+	[Stamp] = [ConcurrencyFiltered].[Stamp] + 1,
+	[Value] = @Value
 WHERE
-	[r].[Id] = 2 AND [r].[Id] = @Id AND [r].[Stamp] = @Stamp
+	[ConcurrencyFiltered].[Id] = 2 AND [ConcurrencyFiltered].[Id] = @Id AND
+	[ConcurrencyFiltered].[Stamp] = @Stamp
 
 BeforeExecute
 -- Sybase.Managed Sybase
@@ -92,12 +91,11 @@ SET     @Stamp = -10
 UPDATE
 	[ConcurrencyFiltered]
 SET
-	[r].[Stamp] = [r].[Stamp] + 1,
-	[r].[Value] = @Value
-FROM
-	[ConcurrencyFiltered] [r]
+	[Stamp] = [ConcurrencyFiltered].[Stamp] + 1,
+	[Value] = @Value
 WHERE
-	[r].[Id] = 1 AND [r].[Id] = @Id AND [r].[Stamp] = @Stamp
+	[ConcurrencyFiltered].[Id] = 1 AND [ConcurrencyFiltered].[Id] = @Id AND
+	[ConcurrencyFiltered].[Stamp] = @Stamp
 
 BeforeExecute
 -- Sybase.Managed Sybase

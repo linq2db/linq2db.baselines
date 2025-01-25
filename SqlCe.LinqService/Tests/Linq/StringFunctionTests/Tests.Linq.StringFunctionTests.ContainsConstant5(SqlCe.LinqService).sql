@@ -2,9 +2,9 @@
 -- SqlCe
 
 SELECT
-	Count(*)
+	COUNT(*) as [COUNT_1]
 FROM
 	[Person] [p]
 WHERE
-	[p].[PersonID] = 1 AND '123[456' LIKE '%[%' ESCAPE '~'
+	[p].[PersonID] = 1
 

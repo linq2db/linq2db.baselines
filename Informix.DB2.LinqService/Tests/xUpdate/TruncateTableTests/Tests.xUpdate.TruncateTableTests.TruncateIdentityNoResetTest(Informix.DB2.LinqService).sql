@@ -1,6 +1,11 @@
 ﻿BeforeExecute
 -- Informix.DB2 Informix
 
+DROP TABLE IF EXISTS test_temp
+
+BeforeExecute
+-- Informix.DB2 Informix
+
 CREATE TABLE IF NOT EXISTS test_temp
 (
 	ID     SERIAL   NOT NULL,
@@ -8,6 +13,11 @@ CREATE TABLE IF NOT EXISTS test_temp
 
 	PRIMARY KEY (ID)
 )
+
+BeforeExecute
+-- Informix.DB2 Informix
+
+TRUNCATE TABLE test_temp
 
 BeforeExecute
 -- Informix.DB2 Informix

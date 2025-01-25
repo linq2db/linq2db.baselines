@@ -2,7 +2,7 @@
 -- Sybase.Managed Sybase
 
 SELECT
-	Convert(Decimal, [t].[MoneyValue] * 1000)
+	CAST([t].[MoneyValue] * 1000 AS Decimal)
 FROM
 	[LinqDataTypes] [t]
 

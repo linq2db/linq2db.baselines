@@ -29,24 +29,24 @@ INSERT INTO OrderByDistinctData
 	OrderData2
 )
 VALUES
-(toInt32(1),'One',toInt32(1),toInt32(1)),
-(toInt32(2),'One',toInt32(1),toInt32(10)),
-(toInt32(3),'One',toInt32(2),toInt32(2)),
-(toInt32(4),'One',toInt32(3),toInt32(3)),
-(toInt32(5),'One',toInt32(4),toInt32(4)),
-(toInt32(6),'One',toInt32(5),toInt32(5)),
-(toInt32(10),'Two',toInt32(1),toInt32(1)),
-(toInt32(20),'Two',toInt32(1),toInt32(10)),
-(toInt32(30),'Two',toInt32(2),toInt32(2)),
-(toInt32(40),'Two',toInt32(3),toInt32(3)),
-(toInt32(50),'Two',toInt32(4),toInt32(4)),
-(toInt32(60),'Two',toInt32(5),toInt32(5)),
-(toInt32(100),'Three',toInt32(1),toInt32(1)),
-(toInt32(200),'Three',toInt32(1),toInt32(10)),
-(toInt32(300),'Three',toInt32(2),toInt32(2)),
-(toInt32(400),'Three',toInt32(3),toInt32(3)),
-(toInt32(500),'Three',toInt32(4),toInt32(4)),
-(toInt32(600),'Three',toInt32(5),toInt32(5))
+(1,'One',1,1),
+(2,'One',1,10),
+(3,'One',2,2),
+(4,'One',3,3),
+(5,'One',4,4),
+(6,'One',5,5),
+(10,'Two',1,1),
+(20,'Two',1,10),
+(30,'Two',2,2),
+(40,'Two',3,3),
+(50,'Two',4,4),
+(60,'Two',5,5),
+(100,'Three',1,1),
+(200,'Three',1,10),
+(300,'Three',2,2),
+(400,'Three',3,3),
+(500,'Three',4,4),
+(600,'Three',5,5)
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -57,9 +57,8 @@ SELECT DISTINCT
 FROM
 	OrderByDistinctData x
 ORDER BY
-	x.OrderData1,
 	x.OrderData2 DESC
-LIMIT toInt32(0), toInt32(3)
+LIMIT 0, 3
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse

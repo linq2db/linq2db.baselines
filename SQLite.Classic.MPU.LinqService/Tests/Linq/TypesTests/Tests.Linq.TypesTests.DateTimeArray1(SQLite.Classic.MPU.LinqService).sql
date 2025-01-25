@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @DateTimeValue  -- DateTime
-SET     @DateTimeValue = '2001-01-11 01:11:21.1'
+DECLARE @DateTimeValue VarChar(23) -- AnsiString
+SET     @DateTimeValue = '2001-01-11 01:11:21.100'
 
 SELECT
 	[t].[ID],

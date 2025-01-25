@@ -68,14 +68,14 @@ DECLARE @EnumWithNullDeclarative VarChar -- String
 SET     @EnumWithNullDeclarative = NULL
 
 UPDATE
-	"ValueConversion"
+	"ValueConversion" "e"
 SET
-	"ValueConversion"."Value1" = "ValueConversion"."Value1",
-	"ValueConversion"."Value2" = @Value2,
-	"ValueConversion"."EnumWithNull" = @EnumWithNull,
-	"ValueConversion"."EnumWithNullDeclarative" = @EnumWithNullDeclarative
+	"Value1" = "e"."Value1",
+	"Value2" = CAST(@Value2 AS NVarChar(21)),
+	"EnumWithNull" = CAST(@EnumWithNull AS VarChar(50)),
+	"EnumWithNullDeclarative" = CAST(@EnumWithNullDeclarative AS VarChar(50))
 WHERE
-	"ValueConversion"."Id" = 1
+	"e"."Id" = 1
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
@@ -95,7 +95,7 @@ FROM
 	"ValueConversion" "e"
 WHERE
 	"e"."Id" = 1
-FETCH FIRST 1 ROWS ONLY
+FETCH NEXT 1 ROWS ONLY
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
@@ -121,19 +121,19 @@ DECLARE @Id Integer(4) -- Int32
 SET     @Id = 2
 
 UPDATE
-	"ValueConversion"
+	"ValueConversion" "t1"
 SET
-	"ValueConversion"."Value1" = @Value1,
-	"ValueConversion"."Value2" = @Value2,
-	"ValueConversion"."Enum" = @Enum,
-	"ValueConversion"."EnumNullable" = @EnumNullable,
-	"ValueConversion"."EnumWithNull" = @EnumWithNull,
-	"ValueConversion"."EnumWithNullDeclarative" = @EnumWithNullDeclarative,
-	"ValueConversion"."BoolValue" = @BoolValue,
-	"ValueConversion"."AnotherBoolValue" = @AnotherBoolValue,
-	"ValueConversion"."DateTimeNullable" = @DateTimeNullable
+	"Value1" = @Value1,
+	"Value2" = @Value2,
+	"Enum" = @Enum,
+	"EnumNullable" = @EnumNullable,
+	"EnumWithNull" = @EnumWithNull,
+	"EnumWithNullDeclarative" = @EnumWithNullDeclarative,
+	"BoolValue" = @BoolValue,
+	"AnotherBoolValue" = @AnotherBoolValue,
+	"DateTimeNullable" = @DateTimeNullable
 WHERE
-	"ValueConversion"."Id" = @Id
+	"t1"."Id" = @Id
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
@@ -153,7 +153,7 @@ FROM
 	"ValueConversion" "e"
 WHERE
 	"e"."Id" = 2
-FETCH FIRST 1 ROWS ONLY
+FETCH NEXT 1 ROWS ONLY
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
@@ -179,19 +179,19 @@ DECLARE @Id Integer(4) -- Int32
 SET     @Id = 3
 
 UPDATE
-	"ValueConversion"
+	"ValueConversion" "t1"
 SET
-	"ValueConversion"."Value1" = @Value1,
-	"ValueConversion"."Value2" = @Value2,
-	"ValueConversion"."Enum" = @Enum,
-	"ValueConversion"."EnumNullable" = @EnumNullable,
-	"ValueConversion"."EnumWithNull" = @EnumWithNull,
-	"ValueConversion"."EnumWithNullDeclarative" = @EnumWithNullDeclarative,
-	"ValueConversion"."BoolValue" = @BoolValue,
-	"ValueConversion"."AnotherBoolValue" = @AnotherBoolValue,
-	"ValueConversion"."DateTimeNullable" = @DateTimeNullable
+	"Value1" = @Value1,
+	"Value2" = @Value2,
+	"Enum" = @Enum,
+	"EnumNullable" = @EnumNullable,
+	"EnumWithNull" = @EnumWithNull,
+	"EnumWithNullDeclarative" = @EnumWithNullDeclarative,
+	"BoolValue" = @BoolValue,
+	"AnotherBoolValue" = @AnotherBoolValue,
+	"DateTimeNullable" = @DateTimeNullable
 WHERE
-	"ValueConversion"."Id" = @Id
+	"t1"."Id" = @Id
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
@@ -211,7 +211,7 @@ FROM
 	"ValueConversion" "e"
 WHERE
 	"e"."Id" = 3
-FETCH FIRST 1 ROWS ONLY
+FETCH NEXT 1 ROWS ONLY
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW

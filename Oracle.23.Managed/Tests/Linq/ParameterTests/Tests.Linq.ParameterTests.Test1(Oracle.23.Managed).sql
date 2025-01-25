@@ -13,5 +13,5 @@ SELECT
 FROM
 	"LinqDataTypes" t
 WHERE
-	t."DateTimeValue" = TO_DATE('2020-02-29 17:54:55', 'YYYY-MM-DD HH24:MI:SS')
+	t."DateTimeValue" = TIMESTAMP '2020-02-29 17:54:55.123123'
 

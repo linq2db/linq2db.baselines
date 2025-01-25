@@ -62,21 +62,21 @@ BeforeExecute
 -- SqlServer.Contained.MS SqlServer.2019
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
-	[TypeConvertTable] [_]
+	[TypeConvertTable] [t1]
 WHERE
-	[_].[BoolValue] = 'N'
+	[t1].[BoolValue] = 'N'
 
 BeforeExecute
 -- SqlServer.Contained.MS SqlServer.2019
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
-	[TypeConvertTable] [_]
+	[TypeConvertTable] [t1]
 WHERE
-	[_].[BoolValue] = 'Y'
+	[t1].[BoolValue] = 'Y'
 
 BeforeExecute
 -- SqlServer.Contained.MS SqlServer.2019
@@ -84,203 +84,159 @@ DECLARE @GuidValue VarChar(50) -- AnsiString
 SET     @GuidValue = N'a948600d-de21-4f74-8ac2-9516b287076e'
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
-	[TypeConvertTable] [_]
+	[TypeConvertTable] [t1]
 WHERE
-	[_].[GuidValue] = @GuidValue
+	[t1].[GuidValue] = @GuidValue
 
 BeforeExecute
 -- SqlServer.Contained.MS SqlServer.2019
-DECLARE @take Int -- Int32
-SET     @take = 1
-DECLARE @BoolValue Char(1) -- AnsiStringFixedLength
-SET     @BoolValue = N'N'
 
-SELECT TOP (@take)
-	[_].[Name],
-	[_].[BoolValue],
-	[_].[GuidValue]
+SELECT TOP (1)
+	[t1].[Name],
+	[t1].[BoolValue],
+	[t1].[GuidValue]
 FROM
-	[TypeConvertTable] [_]
+	[TypeConvertTable] [t1]
 WHERE
-	[_].[BoolValue] = @BoolValue
+	[t1].[BoolValue] = 'N'
 
 BeforeExecute
 -- SqlServer.Contained.MS SqlServer.2019
-DECLARE @take Int -- Int32
-SET     @take = 1
-DECLARE @BoolValue Char(1) -- AnsiStringFixedLength
-SET     @BoolValue = N'Y'
 
-SELECT TOP (@take)
-	[_].[Name],
-	[_].[BoolValue],
-	[_].[GuidValue]
+SELECT TOP (1)
+	[t1].[Name],
+	[t1].[BoolValue],
+	[t1].[GuidValue]
 FROM
-	[TypeConvertTable] [_]
+	[TypeConvertTable] [t1]
 WHERE
-	[_].[BoolValue] = @BoolValue
+	[t1].[BoolValue] = 'Y'
 
 BeforeExecute
 -- SqlServer.Contained.MS SqlServer.2019
-DECLARE @take Int -- Int32
-SET     @take = 1
-DECLARE @BoolValue Char(1) -- AnsiStringFixedLength
-SET     @BoolValue = N'N'
 
-SELECT TOP (@take)
-	[_].[Name],
-	[_].[BoolValue],
-	[_].[GuidValue]
+SELECT TOP (1)
+	[t1].[Name],
+	[t1].[BoolValue],
+	[t1].[GuidValue]
 FROM
-	[TypeConvertTable] [_]
+	[TypeConvertTable] [t1]
 WHERE
-	[_].[BoolValue] = @BoolValue
+	[t1].[BoolValue] = 'N'
 
 BeforeExecute
 -- SqlServer.Contained.MS SqlServer.2019
-DECLARE @take Int -- Int32
-SET     @take = 1
-DECLARE @BoolValue Char(1) -- AnsiStringFixedLength
-SET     @BoolValue = N'Y'
 
-SELECT TOP (@take)
-	[_].[Name],
-	[_].[BoolValue],
-	[_].[GuidValue]
+SELECT TOP (1)
+	[t1].[Name],
+	[t1].[BoolValue],
+	[t1].[GuidValue]
 FROM
-	[TypeConvertTable] [_]
+	[TypeConvertTable] [t1]
 WHERE
-	[_].[BoolValue] = @BoolValue
+	[t1].[BoolValue] = 'Y'
 
 BeforeExecute
 -- SqlServer.Contained.MS SqlServer.2019
-DECLARE @take Int -- Int32
-SET     @take = 1
-DECLARE @BoolValue Char(1) -- AnsiStringFixedLength
-SET     @BoolValue = N'N'
 
-SELECT TOP (@take)
-	[_].[Name],
-	[_].[BoolValue],
-	[_].[GuidValue]
+SELECT TOP (1)
+	[t1].[Name],
+	[t1].[BoolValue],
+	[t1].[GuidValue]
 FROM
-	[TypeConvertTable] [_]
+	[TypeConvertTable] [t1]
 WHERE
-	[_].[BoolValue] = @BoolValue
+	[t1].[BoolValue] = 'N'
 
 BeforeExecute
 -- SqlServer.Contained.MS SqlServer.2019
-DECLARE @take Int -- Int32
-SET     @take = 1
-DECLARE @BoolValue Char(1) -- AnsiStringFixedLength
-SET     @BoolValue = N'Y'
 
-SELECT TOP (@take)
-	[_].[Name],
-	[_].[BoolValue],
-	[_].[GuidValue]
+SELECT TOP (1)
+	[t1].[Name],
+	[t1].[BoolValue],
+	[t1].[GuidValue]
 FROM
-	[TypeConvertTable] [_]
+	[TypeConvertTable] [t1]
 WHERE
-	[_].[BoolValue] = @BoolValue
+	[t1].[BoolValue] = 'Y'
 
 BeforeExecute
 -- SqlServer.Contained.MS SqlServer.2019
-DECLARE @take Int -- Int32
-SET     @take = 1
-DECLARE @BoolValue Char(1) -- AnsiStringFixedLength
-SET     @BoolValue = N'N'
 
-SELECT TOP (@take)
-	[_].[Name],
-	[_].[BoolValue],
-	[_].[GuidValue]
+SELECT TOP (1)
+	[t1].[Name],
+	[t1].[BoolValue],
+	[t1].[GuidValue]
 FROM
-	[TypeConvertTable] [_]
+	[TypeConvertTable] [t1]
 WHERE
-	[_].[BoolValue] = @BoolValue
+	[t1].[BoolValue] = 'N'
 
 BeforeExecute
 -- SqlServer.Contained.MS SqlServer.2019
-DECLARE @take Int -- Int32
-SET     @take = 1
-DECLARE @BoolValue Char(1) -- AnsiStringFixedLength
-SET     @BoolValue = N'Y'
 
-SELECT TOP (@take)
-	[_].[Name],
-	[_].[BoolValue],
-	[_].[GuidValue]
+SELECT TOP (1)
+	[t1].[Name],
+	[t1].[BoolValue],
+	[t1].[GuidValue]
 FROM
-	[TypeConvertTable] [_]
+	[TypeConvertTable] [t1]
 WHERE
-	[_].[BoolValue] = @BoolValue
+	[t1].[BoolValue] = 'Y'
 
 BeforeExecute
 -- SqlServer.Contained.MS SqlServer.2019
-DECLARE @take Int -- Int32
-SET     @take = 1
-DECLARE @BoolValue Char(1) -- AnsiStringFixedLength
-SET     @BoolValue = N'N'
 
-SELECT TOP (@take)
-	[_].[Name],
-	[_].[BoolValue],
-	[_].[GuidValue]
+SELECT TOP (1)
+	[t1].[Name],
+	[t1].[BoolValue],
+	[t1].[GuidValue]
 FROM
-	[TypeConvertTable] [_]
+	[TypeConvertTable] [t1]
 WHERE
-	[_].[BoolValue] = @BoolValue
+	[t1].[BoolValue] = 'N'
 
 BeforeExecute
 -- SqlServer.Contained.MS SqlServer.2019
-DECLARE @take Int -- Int32
-SET     @take = 1
-DECLARE @BoolValue Char(1) -- AnsiStringFixedLength
-SET     @BoolValue = N'Y'
 
-SELECT TOP (@take)
-	[_].[Name],
-	[_].[BoolValue],
-	[_].[GuidValue]
+SELECT TOP (1)
+	[t1].[Name],
+	[t1].[BoolValue],
+	[t1].[GuidValue]
 FROM
-	[TypeConvertTable] [_]
+	[TypeConvertTable] [t1]
 WHERE
-	[_].[BoolValue] = @BoolValue
+	[t1].[BoolValue] = 'Y'
 
 BeforeExecute
 -- SqlServer.Contained.MS SqlServer.2019
-DECLARE @take Int -- Int32
-SET     @take = 1
 DECLARE @GuidValue VarChar(50) -- AnsiString
 SET     @GuidValue = N'bc7b663d-0fde-4327-8f92-5d8cc3a11d11'
 
-SELECT TOP (@take)
-	[_].[Name],
-	[_].[BoolValue],
-	[_].[GuidValue]
+SELECT TOP (1)
+	[t1].[Name],
+	[t1].[BoolValue],
+	[t1].[GuidValue]
 FROM
-	[TypeConvertTable] [_]
+	[TypeConvertTable] [t1]
 WHERE
-	[_].[GuidValue] = @GuidValue
+	[t1].[GuidValue] = @GuidValue
 
 BeforeExecute
 -- SqlServer.Contained.MS SqlServer.2019
-DECLARE @take Int -- Int32
-SET     @take = 1
 DECLARE @GuidValue VarChar(50) -- AnsiString
 SET     @GuidValue = N'a948600d-de21-4f74-8ac2-9516b287076e'
 
-SELECT TOP (@take)
-	[_].[Name],
-	[_].[BoolValue],
-	[_].[GuidValue]
+SELECT TOP (1)
+	[t1].[Name],
+	[t1].[BoolValue],
+	[t1].[GuidValue]
 FROM
-	[TypeConvertTable] [_]
+	[TypeConvertTable] [t1]
 WHERE
-	[_].[GuidValue] = @GuidValue
+	[t1].[GuidValue] = @GuidValue
 
 BeforeExecute
 -- SqlServer.Contained.MS SqlServer.2019

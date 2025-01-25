@@ -7,5 +7,5 @@ SELECT
 FROM
 	Parent f
 WHERE
-	(f.ParentID >= toInt32(1) OR f.ParentID <= toInt32(4))
+	(f.ParentID >= 1 OR f.ParentID <= 4)
 

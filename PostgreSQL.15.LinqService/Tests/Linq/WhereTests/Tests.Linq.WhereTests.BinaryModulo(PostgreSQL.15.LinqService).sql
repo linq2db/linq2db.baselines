@@ -10,5 +10,5 @@ SELECT
 FROM
 	"Person" p
 WHERE
-	p."PersonID" % 2 = 1 AND p."PersonID" = 1
+	(p."PersonID"::decimal % 2)::decimal = 1 AND p."PersonID" = 1
 

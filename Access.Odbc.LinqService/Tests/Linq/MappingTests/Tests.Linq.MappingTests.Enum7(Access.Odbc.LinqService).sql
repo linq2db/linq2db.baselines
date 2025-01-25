@@ -6,9 +6,9 @@ DECLARE @v1 Int -- Int32
 SET     @v1 = 1
 
 UPDATE
-	[Parent] [t1]
+	[Parent] [p]
 SET
-	[t1].[Value1] = ?
+	[p].[Value1] = ?
 WHERE
-	[t1].[Value1] = ?
+	[p].[Value1] = ?
 

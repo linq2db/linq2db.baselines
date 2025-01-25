@@ -4,7 +4,7 @@
 ALTER TABLE
 	LinqDataTypes
 DELETE WHERE
-	ID > toInt32(1000)
+	ID > 1000
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
@@ -23,8 +23,8 @@ INSERT INTO LinqDataTypes
 	StringValue
 )
 VALUES
-(toInt32(1003),toDecimal128('0', 10),NULL,NULL,true,toUUID('ef129165-6ffe-4df9-bb6b-bb16e413c883'),NULL,NULL,NULL,NULL),
-(toInt32(1004),toDecimal128('0', 10),toDateTime64('2020-02-29 17:54:55.123', 3),NULL,false,NULL,toInt16(2),toInt32(1532334),NULL,NULL)
+(1003,toDecimal128('0', 10),NULL,NULL,true,toUUID('ef129165-6ffe-4df9-bb6b-bb16e413c883'),NULL,NULL,NULL,NULL),
+(1004,toDecimal128('0', 10),toDateTime64('2020-02-29 17:54:55.123', 3),NULL,false,NULL,toInt16(2),1532334,NULL,NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
@@ -32,5 +32,5 @@ BeforeExecute
 ALTER TABLE
 	LinqDataTypes
 DELETE WHERE
-	ID > toInt32(1000)
+	ID > 1000
 

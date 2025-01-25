@@ -2,26 +2,25 @@
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
 SELECT
-	[key_data_result].[ParentID],
-	[key_data_result].[Value1],
-	[_c].[ParentID],
-	[_c].[ChildID]
+	[m_1].[ParentID],
+	[d].[ParentID],
+	[d].[ChildID]
 FROM
 	(
 		SELECT DISTINCT
-			[p].[ParentID],
-			[p].[Value1]
+			[p].[ParentID]
 		FROM
 			[Parent] [p]
-	) [key_data_result]
-		INNER JOIN [Child] [_c] ON [key_data_result].[ParentID] = [_c].[ParentID] AND [_c].[ParentID] <> 0
+	) [m_1]
+		INNER JOIN [Child] [d] ON [m_1].[ParentID] = [d].[ParentID]
+WHERE
+	[d].[ParentID] <> 0
 
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
 SELECT
-	[p].[ParentID],
-	[p].[Value1]
+	[p].[ParentID]
 FROM
 	[Parent] [p]
 
@@ -29,26 +28,25 @@ BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
 SELECT
-	[key_data_result].[ParentID],
-	[key_data_result].[Value1],
-	[_c].[ParentID],
-	[_c].[ChildID]
+	[m_1].[ParentID],
+	[d].[ParentID],
+	[d].[ChildID]
 FROM
 	(
 		SELECT DISTINCT
-			[p].[ParentID],
-			[p].[Value1]
+			[p].[ParentID]
 		FROM
 			[Parent] [p]
-	) [key_data_result]
-		INNER JOIN [Child] [_c] ON [key_data_result].[ParentID] = [_c].[ParentID] AND [_c].[ParentID] <> 0
+	) [m_1]
+		INNER JOIN [Child] [d] ON [m_1].[ParentID] = [d].[ParentID]
+WHERE
+	[d].[ParentID] <> 0
 
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
 SELECT
-	[p].[ParentID],
-	[p].[Value1]
+	[p].[ParentID]
 FROM
 	[Parent] [p]
 

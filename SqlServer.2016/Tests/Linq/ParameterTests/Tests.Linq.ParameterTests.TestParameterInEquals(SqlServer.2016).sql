@@ -31,17 +31,17 @@ BeforeExecute
 -- SqlServer.2016
 
 SELECT
-	[_].[Id]
+	[t1].[Id]
 FROM
-	[TestEqualsTable1] [_]
+	[TestEqualsTable1] [t1]
 WHERE
 	EXISTS(
 		SELECT
 			*
 		FROM
-			[TestEqualsTable2] [__]
+			[TestEqualsTable2] [t2]
 		WHERE
-			[_].[Id] = [__].[FK] AND [__].[Id] IS NULL
+			1 = 0
 	)
 
 BeforeExecute

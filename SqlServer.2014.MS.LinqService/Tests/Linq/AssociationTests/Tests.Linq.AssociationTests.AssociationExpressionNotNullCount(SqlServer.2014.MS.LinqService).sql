@@ -74,7 +74,7 @@ BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	[NotNullParent] [p]
 		INNER JOIN [NotNullChild] [a_ChildInner] ON [p].[ID] = [a_ChildInner].[ParentID]

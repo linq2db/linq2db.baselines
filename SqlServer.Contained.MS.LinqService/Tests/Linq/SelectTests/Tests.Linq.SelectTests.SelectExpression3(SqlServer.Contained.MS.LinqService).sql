@@ -36,7 +36,7 @@ SET     @take = 1
 SELECT TOP (@take)
 	1
 FROM
-	[SelectExpressionTable] [_]
+	[SelectExpressionTable] [t1]
 
 BeforeExecute
 -- SqlServer.Contained.MS SqlServer.2019

@@ -87,50 +87,36 @@ BeforeExecute
 -- SqlServer.2019
 
 SELECT
-	[s].[Name]
+	[t1].[Id],
+	[t1].[Name],
+	[t1].[Enabled],
+	[t1].[ImageFullUrl]
 FROM
-	[Stone] [s]
-WHERE
-	[s].[Enabled] = 1 AND [s].[Name] NOT LIKE N'level - %' ESCAPE N'~' AND
-	Len([s].[ImageFullUrl]) > 0
-GROUP BY
-	[s].[Name]
-
-BeforeExecute
--- SqlServer.2019
-DECLARE @Name NVarChar(4000) -- String
-SET     @Name = N'group1'
-
-SELECT
-	[s].[Id],
-	[s].[Name],
-	[s].[Enabled],
-	[s].[ImageFullUrl]
-FROM
-	[Stone] [s]
-WHERE
-	[s].[Enabled] = 1 AND
-	[s].[Name] NOT LIKE N'level - %' ESCAPE N'~' AND
-	Len([s].[ImageFullUrl]) > 0 AND
-	[s].[Name] = @Name
-
-BeforeExecute
--- SqlServer.2019
-DECLARE @Name NVarChar(4000) -- String
-SET     @Name = N'group2'
-
-SELECT
-	[s].[Id],
-	[s].[Name],
-	[s].[Enabled],
-	[s].[ImageFullUrl]
-FROM
-	[Stone] [s]
-WHERE
-	[s].[Enabled] = 1 AND
-	[s].[Name] NOT LIKE N'level - %' ESCAPE N'~' AND
-	Len([s].[ImageFullUrl]) > 0 AND
-	[s].[Name] = @Name
+	(
+		SELECT
+			[sG].[Name]
+		FROM
+			[Stone] [sG]
+		WHERE
+			[sG].[Enabled] = 1 AND [sG].[Name] NOT LIKE N'level - %' ESCAPE N'~' AND
+			Len([sG].[ImageFullUrl]) > 0
+		GROUP BY
+			[sG].[Name]
+	) [sG_1]
+		CROSS APPLY (
+			SELECT TOP (1)
+				[s].[Id],
+				[s].[Name],
+				[s].[Enabled],
+				[s].[ImageFullUrl]
+			FROM
+				[Stone] [s]
+			WHERE
+				[s].[Enabled] = 1 AND
+				[s].[Name] NOT LIKE N'level - %' ESCAPE N'~' AND
+				Len([s].[ImageFullUrl]) > 0 AND
+				[sG_1].[Name] = [s].[Name]
+		) [t1]
 
 BeforeExecute
 -- SqlServer.2019

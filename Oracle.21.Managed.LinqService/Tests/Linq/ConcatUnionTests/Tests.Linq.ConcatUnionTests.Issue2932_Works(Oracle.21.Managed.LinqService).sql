@@ -8,9 +8,9 @@ SELECT
 			SELECT
 				*
 			FROM
-				"GrandChild" t1
+				"GrandChild" a_GrandChildren
 			WHERE
-				p."ParentID" = t1."ParentID" AND p."ChildID" = t1."ChildID"
+				p."ParentID" = a_GrandChildren."ParentID" AND p."ChildID" = a_GrandChildren."ChildID"
 		)
 			THEN 1
 		ELSE 0
@@ -25,9 +25,9 @@ SELECT
 			SELECT
 				*
 			FROM
-				"GrandChild" t2
+				"GrandChild" a_GrandChildren_1
 			WHERE
-				p_1."ParentID" = t2."ParentID" AND p_1."ChildID" = t2."ChildID"
+				p_1."ParentID" = a_GrandChildren_1."ParentID" AND p_1."ChildID" = a_GrandChildren_1."ChildID"
 		)
 			THEN 1
 		ELSE 0

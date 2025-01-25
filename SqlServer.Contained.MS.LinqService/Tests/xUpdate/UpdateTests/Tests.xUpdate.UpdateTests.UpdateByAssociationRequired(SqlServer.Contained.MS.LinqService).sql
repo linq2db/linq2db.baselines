@@ -119,11 +119,11 @@ UPDATE
 SET
 	[a_MainRequired].[Field] = N'test'
 FROM
-	[MainTable] [_]
-		INNER JOIN [AssociatedTable] [a_AssociatedRequired] ON [_].[Id] = [a_AssociatedRequired].[Id]
+	[MainTable] [t1]
+		INNER JOIN [AssociatedTable] [a_AssociatedRequired] ON [t1].[Id] = [a_AssociatedRequired].[Id]
 		INNER JOIN [MainTable] [a_MainRequired] ON [a_AssociatedRequired].[Id] = [a_MainRequired].[Id]
 WHERE
-	[_].[Id] = @id
+	[t1].[Id] = @id
 
 BeforeExecute
 -- SqlServer.Contained.MS SqlServer.2019

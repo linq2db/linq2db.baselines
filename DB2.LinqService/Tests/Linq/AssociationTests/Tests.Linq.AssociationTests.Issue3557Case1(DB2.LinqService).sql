@@ -176,12 +176,12 @@ SELECT
 	"a_SubData"."Id",
 	(
 		SELECT
-			"s"."Reason"
+			"a_SubDatas"."Reason"
 		FROM
-			"SubData2" "s"
+			"SubData2" "a_SubDatas"
 		WHERE
-			"a_SubData"."Id" = "s"."Id"
-		FETCH FIRST 1 ROWS ONLY
+			"a_SubData"."Id" IS NOT NULL AND "a_SubData"."Id" = "a_SubDatas"."Id"
+		FETCH NEXT 1 ROWS ONLY
 	)
 FROM
 	"Data" "i"

@@ -57,7 +57,7 @@ DECLARE @p Int -- Int32
 SET     @p = 5
 
 SELECT
-	DateAdd(minute, @p, [t].[TransactionDate])
+	DatePart(minute, DateAdd(minute, @p, [t].[TransactionDate]))
 FROM
 	[Transactions] [t]
 

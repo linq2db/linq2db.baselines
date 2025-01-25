@@ -2,8 +2,8 @@
 -- PostgreSQL.15 PostgreSQL
 
 SELECT
-	p."ParentID",
-	p."Value1"
+	p."Value1",
+	p."ParentID"
 FROM
 	"Parent" p
 

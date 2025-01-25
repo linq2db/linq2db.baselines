@@ -8,10 +8,10 @@ FROM
 	Child t1
 INTERSECT DISTINCT
 SELECT
-	p.ParentID,
-	p.ChildID
+	p.ParentID as ParentID,
+	p.ChildID as ChildID
 FROM
 	Child p
 WHERE
-	p.ParentID = toInt32(3)
+	p.ParentID = 3
 

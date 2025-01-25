@@ -2,7 +2,7 @@
 -- Sybase.Managed Sybase
 
 SELECT
-	Convert(NChar, [t].[MoneyValue])
+	CAST([t].[MoneyValue] AS NChar)
 FROM
 	[LinqDataTypes] [t]
 

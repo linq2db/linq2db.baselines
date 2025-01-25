@@ -2,9 +2,14 @@
 -- PostgreSQL.15 PostgreSQL
 
 SELECT
-	Cast(Floor(t."MoneyValue") as BigInt)
+	p_1.c1
 FROM
-	"LinqDataTypes" t
+	(
+		SELECT
+			Floor(p."MoneyValue")::BigInt as c1
+		FROM
+			"LinqDataTypes" p
+	) p_1
 WHERE
-	Cast(Floor(t."MoneyValue") as BigInt) > 0
+	p_1.c1 > 0
 

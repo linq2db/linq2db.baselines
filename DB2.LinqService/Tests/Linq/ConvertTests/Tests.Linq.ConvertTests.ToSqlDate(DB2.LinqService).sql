@@ -2,7 +2,7 @@
 -- DB2 DB2.LUW DB2LUW
 
 SELECT
-	Date(RTrim(Char(To_Number(To_Char("t"."DateTimeValue", 'YYYY')))) || '-01-01')
+	CAST(Extract(year from "t"."DateTimeValue") || '-01-01' AS Date)
 FROM
 	"LinqDataTypes" "t"
 

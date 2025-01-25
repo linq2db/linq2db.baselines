@@ -1,16 +1,14 @@
 ﻿BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014
-DECLARE @take Int -- Int32
-SET     @take = 2
 
-SELECT TOP (@take)
-	[_].[FirstName],
-	[_].[PersonID],
-	[_].[LastName],
-	[_].[MiddleName],
-	[_].[Gender]
+SELECT TOP (2)
+	[p].[FirstName],
+	[p].[PersonID],
+	[p].[LastName],
+	[p].[MiddleName],
+	[p].[Gender]
 FROM
-	[Person] [_]
+	[Person] [p]
 WHERE
-	[_].[PersonID] = 1
+	[p].[PersonID] = 1
 

@@ -30,7 +30,7 @@ INSERT INTO Issue3323Table
 )
 VALUES
 (
-	toInt32(1),
+	1,
 	'one',
 	'two',
 	'text'
@@ -41,13 +41,13 @@ BeforeExecute
 
 SELECT
 	r.Id,
-	concat(r.FistName, ' ', r.LastName)
+	concat(r.FistName, ' ', r.LastName) as Text
 FROM
 	Issue3323Table r
 UNION ALL
 SELECT
-	r_1.Id + toInt32(1),
-	r_1.Text
+	r_1.Id + 1 as Id,
+	r_1.Text as Text
 FROM
 	Issue3323Table r_1
 
@@ -55,14 +55,14 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
-	r.Id + toInt32(1),
+	r.Id + 1 as Id,
 	r.Text
 FROM
 	Issue3323Table r
 UNION ALL
 SELECT
-	r_1.Id,
-	concat(r_1.FistName, ' ', r_1.LastName)
+	r_1.Id as Id,
+	concat(r_1.FistName, ' ', r_1.LastName) as Text
 FROM
 	Issue3323Table r_1
 

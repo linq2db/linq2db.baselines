@@ -1,7 +1,5 @@
 ﻿BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-DECLARE @take  -- Int32
-SET     @take = 2
 
 SELECT
 	[p].[FirstName]
@@ -9,7 +7,7 @@ FROM
 	[Person] [p]
 WHERE
 	[p].[PersonID] = 1
-LIMIT @take
+LIMIT 2
 
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
@@ -21,7 +19,7 @@ DECLARE @nameToCheck_2 NVarChar(3) -- String
 SET     @nameToCheck_2 = 'Joh'
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	[Person] [p]
 WHERE
@@ -38,7 +36,7 @@ DECLARE @nameToCheck_2 NVarChar(3) -- String
 SET     @nameToCheck_2 = 'Joh'
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	[Person] [p]
 WHERE
@@ -55,7 +53,7 @@ DECLARE @nameToCheck_2 NVarChar(3) -- String
 SET     @nameToCheck_2 = 'JOH'
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	[Person] [p]
 WHERE
@@ -72,7 +70,7 @@ DECLARE @nameToCheck_2 NVarChar(3) -- String
 SET     @nameToCheck_2 = 'JOH'
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	[Person] [p]
 WHERE

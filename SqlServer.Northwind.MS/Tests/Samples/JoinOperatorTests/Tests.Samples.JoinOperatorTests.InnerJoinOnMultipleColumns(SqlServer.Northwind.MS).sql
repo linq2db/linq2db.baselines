@@ -3,15 +3,9 @@
 
 SELECT
 	[t1].[ProductID],
-	[t1].[OrderID]
+	[o].[OrderID]
 FROM
-	(
-		SELECT
-			[p].[ProductID],
-			[o].[OrderID]
-		FROM
-			[Products] [p],
-			[Orders] [o]
-	) [t1]
-		INNER JOIN [Order Details] [d] ON [t1].[ProductID] = [d].[ProductID] AND [t1].[OrderID] = [d].[OrderID]
+	[Products] [t1]
+		CROSS JOIN [Orders] [o]
+		INNER JOIN [Order Details] [d] ON [t1].[ProductID] = [d].[ProductID] AND [o].[OrderID] = [d].[OrderID]
 

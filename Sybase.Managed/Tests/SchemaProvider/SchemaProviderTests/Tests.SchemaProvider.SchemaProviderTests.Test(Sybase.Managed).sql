@@ -4,7 +4,7 @@
 SELECT TOP 1
 	USER_NAME()
 FROM
-	[LinqDataTypes] [_]
+	[LinqDataTypes] [t1]
 
 BeforeExecute
 -- Sybase.Managed Sybase

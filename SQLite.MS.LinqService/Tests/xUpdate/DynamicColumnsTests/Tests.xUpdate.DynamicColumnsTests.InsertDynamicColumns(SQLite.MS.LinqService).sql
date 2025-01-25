@@ -18,7 +18,7 @@ BeforeExecute
 -- SQLite.MS SQLite
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	[Person] [c_1]
 WHERE

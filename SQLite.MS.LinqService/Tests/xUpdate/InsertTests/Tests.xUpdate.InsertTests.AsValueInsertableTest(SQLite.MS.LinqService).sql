@@ -38,7 +38,7 @@ BeforeExecute
 -- SQLite.MS SQLite
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	[TestInsertOrReplaceTable] [x]
 WHERE

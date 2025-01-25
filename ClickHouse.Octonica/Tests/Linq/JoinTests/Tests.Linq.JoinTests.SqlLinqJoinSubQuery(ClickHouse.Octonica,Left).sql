@@ -11,8 +11,8 @@ FROM
 		FROM
 			Parent p
 		WHERE
-			p.ParentID > toInt32(0)
-		LIMIT toInt32(10)
+			p.ParentID > 0
+		LIMIT 10
 	) p_1
 		LEFT JOIN Child c_1 ON p_1.ParentID = c_1.ParentID
 

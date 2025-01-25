@@ -2,11 +2,9 @@
 -- Oracle.19.Managed Oracle.Managed Oracle12
 DECLARE @p Varchar2(4) -- String
 SET     @p = 'John'
-DECLARE @take Int32
-SET     @take = 2
 
 SELECT
-	t."PersonID",
+	t."PersonID" as ID,
 	t."FirstName",
 	t."LastName",
 	t."MiddleName",
@@ -15,17 +13,15 @@ FROM
 	"Person" t
 WHERE
 	t."FirstName" = :p
-FETCH NEXT :take ROWS ONLY
+FETCH NEXT 2 ROWS ONLY
 
 BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12
 DECLARE @p Varchar2(6) -- String
 SET     @p = 'Tester'
-DECLARE @take Int32
-SET     @take = 2
 
 SELECT
-	t."PersonID",
+	t."PersonID" as ID,
 	t."FirstName",
 	t."LastName",
 	t."MiddleName",
@@ -34,5 +30,5 @@ FROM
 	"Person" t
 WHERE
 	t."FirstName" = :p
-FETCH NEXT :take ROWS ONLY
+FETCH NEXT 2 ROWS ONLY
 

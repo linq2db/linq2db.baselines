@@ -36,19 +36,17 @@ SELECT @@IDENTITY
 
 BeforeExecute
 -- SqlCe
-DECLARE @take Int -- Int32
-SET     @take = 1
 
-SELECT TOP (@take)
-	[_].[FirstName],
-	[_].[PersonID],
-	[_].[LastName],
-	[_].[MiddleName],
-	[_].[Gender]
+SELECT TOP (1)
+	[t1].[FirstName],
+	[t1].[PersonID] as [ID],
+	[t1].[LastName],
+	[t1].[MiddleName],
+	[t1].[Gender]
 FROM
-	[Person] [_]
+	[Person] [t1]
 WHERE
-	[_].[FirstName] = 'test_inherited_insert'
+	[t1].[FirstName] = 'test_inherited_insert'
 
 BeforeExecute
 -- SqlCe
@@ -66,28 +64,26 @@ SET     @ID = 5
 UPDATE
 	[Person]
 SET
-	[Person].[FirstName] = @FirstName,
-	[Person].[LastName] = @LastName,
-	[Person].[MiddleName] = @MiddleName,
-	[Person].[Gender] = @Gender
+	[FirstName] = @FirstName,
+	[LastName] = @LastName,
+	[MiddleName] = @MiddleName,
+	[Gender] = @Gender
 WHERE
 	[Person].[PersonID] = @ID
 
 BeforeExecute
 -- SqlCe
-DECLARE @take Int -- Int32
-SET     @take = 1
 
-SELECT TOP (@take)
-	[_].[FirstName],
-	[_].[PersonID],
-	[_].[LastName],
-	[_].[MiddleName],
-	[_].[Gender]
+SELECT TOP (1)
+	[t1].[FirstName],
+	[t1].[PersonID] as [ID],
+	[t1].[LastName],
+	[t1].[MiddleName],
+	[t1].[Gender]
 FROM
-	[Person] [_]
+	[Person] [t1]
 WHERE
-	[_].[FirstName] = 'test_inherited_insert'
+	[t1].[FirstName] = 'test_inherited_insert'
 
 BeforeExecute
 -- SqlCe

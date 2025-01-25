@@ -2,14 +2,14 @@
 -- Access AccessOleDb
 
 SELECT
-	Min([t1].[ParentID])
+	MIN([t2].[ParentID])
 FROM
 	(
 		SELECT TOP 3
-			[p].[ParentID]
+			[t1].[ParentID]
 		FROM
-			[Parent] [p]
+			[Parent] [t1]
 		ORDER BY
-			[p].[Value1]
-	) [t1]
+			[t1].[Value1]
+	) [t2]
 

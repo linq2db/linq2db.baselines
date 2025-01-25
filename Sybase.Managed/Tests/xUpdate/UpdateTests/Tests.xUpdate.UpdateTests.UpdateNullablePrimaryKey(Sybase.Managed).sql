@@ -8,11 +8,9 @@ SET     @ParentID = 10000
 UPDATE
 	[GrandChild]
 SET
-	[t1].[GrandChildID] = @GrandChildID
-FROM
-	[GrandChild] [t1]
+	[GrandChildID] = @GrandChildID
 WHERE
-	[t1].[ParentID] = @ParentID AND [t1].[ChildID] IS NULL
+	[GrandChild].[ParentID] = @ParentID AND [GrandChild].[ChildID] IS NULL
 
 BeforeExecute
 -- Sybase.Managed Sybase
@@ -26,9 +24,7 @@ SET     @ChildID = 111
 UPDATE
 	[GrandChild]
 SET
-	[t1].[GrandChildID] = @GrandChildID
-FROM
-	[GrandChild] [t1]
+	[GrandChildID] = @GrandChildID
 WHERE
-	[t1].[ParentID] = @ParentID AND [t1].[ChildID] = @ChildID
+	[GrandChild].[ParentID] = @ParentID AND [GrandChild].[ChildID] = @ChildID
 

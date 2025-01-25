@@ -39,7 +39,7 @@ DECLARE @id2 Int32
 SET     @id2 = 4000
 
 INSERT ALL
-WHEN "Value_1" IS NULL THEN
+WHEN "source_Value" IS NULL THEN
 	INTO "Dest1"
 	(
 		ID,
@@ -50,7 +50,7 @@ WHEN "Value_1" IS NULL THEN
 		:id1,
 		:value
 	)
-WHEN "Value_1" IS NOT NULL THEN
+WHEN "source_Value" IS NOT NULL THEN
 	INTO "Dest1"
 	(
 		ID,
@@ -62,13 +62,11 @@ WHEN "Value_1" IS NOT NULL THEN
 		:value
 	)
 SELECT
-	:value as "Value_1"
+	:value as "source_Value"
 FROM SYS.DUAL
 
 BeforeExecute
 -- Oracle.11.Managed Oracle11 (asynchronously)
-DECLARE @take Int32
-SET     @take = 2
 
 SELECT
 	t1.ID,
@@ -77,7 +75,7 @@ SELECT
 FROM
 	"Dest1" t1
 WHERE
-	t1.ID > 1000 AND ROWNUM <= :take
+	t1.ID > 1000 AND ROWNUM <= 2
 
 BeforeExecute
 -- Oracle.11.Managed Oracle11

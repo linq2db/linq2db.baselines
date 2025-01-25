@@ -2,7 +2,7 @@
 -- SqlCe
 
 SELECT
-	Convert(Float, [t].[MoneyValue])
+	CAST([t].[MoneyValue] AS Float) as [c1]
 FROM
 	[LinqDataTypes] [t]
 

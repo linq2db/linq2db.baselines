@@ -22,9 +22,9 @@ INSERT INTO SampleClass
 	Value
 )
 VALUES
-(toInt32(1),toInt32(1)),
-(toInt32(2),toInt32(2)),
-(toInt32(3),toInt32(3))
+(1,1),
+(2,2),
+(3,3)
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -35,7 +35,7 @@ SELECT
 FROM
 	SampleClass t
 WHERE
-	t.Value > toInt32(1)
+	t.Value > 1
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse

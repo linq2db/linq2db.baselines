@@ -8,7 +8,7 @@ INSERT INTO Parent
 )
 VALUES
 (
-	toInt32(1001),
+	1001,
 	NULL
 )
 
@@ -16,9 +16,9 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	Parent p
 WHERE
-	p.ParentID = toInt32(1001)
+	p.ParentID = 1001
 

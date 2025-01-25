@@ -30,10 +30,10 @@ INSERT INTO OrderByDistinctData
 )
 VALUES
 (
-	toInt32(1),
+	1,
 	'One',
-	toInt32(1),
-	toInt32(1)
+	1,
+	1
 )
 
 BeforeExecute
@@ -48,10 +48,10 @@ INSERT INTO OrderByDistinctData
 )
 VALUES
 (
-	toInt32(2),
+	2,
 	'One',
-	toInt32(1),
-	toInt32(10)
+	1,
+	10
 )
 
 BeforeExecute
@@ -66,10 +66,10 @@ INSERT INTO OrderByDistinctData
 )
 VALUES
 (
-	toInt32(3),
+	3,
 	'One',
-	toInt32(2),
-	toInt32(2)
+	2,
+	2
 )
 
 BeforeExecute
@@ -84,10 +84,10 @@ INSERT INTO OrderByDistinctData
 )
 VALUES
 (
-	toInt32(4),
+	4,
 	'One',
-	toInt32(3),
-	toInt32(3)
+	3,
+	3
 )
 
 BeforeExecute
@@ -102,10 +102,10 @@ INSERT INTO OrderByDistinctData
 )
 VALUES
 (
-	toInt32(5),
+	5,
 	'One',
-	toInt32(4),
-	toInt32(4)
+	4,
+	4
 )
 
 BeforeExecute
@@ -120,10 +120,10 @@ INSERT INTO OrderByDistinctData
 )
 VALUES
 (
-	toInt32(6),
+	6,
 	'One',
-	toInt32(5),
-	toInt32(5)
+	5,
+	5
 )
 
 BeforeExecute
@@ -138,10 +138,10 @@ INSERT INTO OrderByDistinctData
 )
 VALUES
 (
-	toInt32(10),
+	10,
 	'Two',
-	toInt32(1),
-	toInt32(1)
+	1,
+	1
 )
 
 BeforeExecute
@@ -156,10 +156,10 @@ INSERT INTO OrderByDistinctData
 )
 VALUES
 (
-	toInt32(20),
+	20,
 	'Two',
-	toInt32(1),
-	toInt32(10)
+	1,
+	10
 )
 
 BeforeExecute
@@ -174,10 +174,10 @@ INSERT INTO OrderByDistinctData
 )
 VALUES
 (
-	toInt32(30),
+	30,
 	'Two',
-	toInt32(2),
-	toInt32(2)
+	2,
+	2
 )
 
 BeforeExecute
@@ -192,10 +192,10 @@ INSERT INTO OrderByDistinctData
 )
 VALUES
 (
-	toInt32(40),
+	40,
 	'Two',
-	toInt32(3),
-	toInt32(3)
+	3,
+	3
 )
 
 BeforeExecute
@@ -210,10 +210,10 @@ INSERT INTO OrderByDistinctData
 )
 VALUES
 (
-	toInt32(50),
+	50,
 	'Two',
-	toInt32(4),
-	toInt32(4)
+	4,
+	4
 )
 
 BeforeExecute
@@ -228,10 +228,10 @@ INSERT INTO OrderByDistinctData
 )
 VALUES
 (
-	toInt32(60),
+	60,
 	'Two',
-	toInt32(5),
-	toInt32(5)
+	5,
+	5
 )
 
 BeforeExecute
@@ -246,10 +246,10 @@ INSERT INTO OrderByDistinctData
 )
 VALUES
 (
-	toInt32(100),
+	100,
 	'Three',
-	toInt32(1),
-	toInt32(1)
+	1,
+	1
 )
 
 BeforeExecute
@@ -264,10 +264,10 @@ INSERT INTO OrderByDistinctData
 )
 VALUES
 (
-	toInt32(200),
+	200,
 	'Three',
-	toInt32(1),
-	toInt32(10)
+	1,
+	10
 )
 
 BeforeExecute
@@ -282,10 +282,10 @@ INSERT INTO OrderByDistinctData
 )
 VALUES
 (
-	toInt32(300),
+	300,
 	'Three',
-	toInt32(2),
-	toInt32(2)
+	2,
+	2
 )
 
 BeforeExecute
@@ -300,10 +300,10 @@ INSERT INTO OrderByDistinctData
 )
 VALUES
 (
-	toInt32(400),
+	400,
 	'Three',
-	toInt32(3),
-	toInt32(3)
+	3,
+	3
 )
 
 BeforeExecute
@@ -318,10 +318,10 @@ INSERT INTO OrderByDistinctData
 )
 VALUES
 (
-	toInt32(500),
+	500,
 	'Three',
-	toInt32(4),
-	toInt32(4)
+	4,
+	4
 )
 
 BeforeExecute
@@ -336,10 +336,10 @@ INSERT INTO OrderByDistinctData
 )
 VALUES
 (
-	toInt32(600),
+	600,
 	'Three',
-	toInt32(5),
-	toInt32(5)
+	5,
+	5
 )
 
 BeforeExecute
@@ -349,22 +349,20 @@ SELECT DISTINCT
 	x.DuplicateData
 FROM
 	OrderByDistinctData x
-ORDER BY
-	x.OrderData1
-LIMIT toInt32(0), toInt32(3)
+LIMIT 0, 3
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
-	x.DuplicateData
+	g_1.DuplicateData
 FROM
-	OrderByDistinctData x
+	OrderByDistinctData g_1
 GROUP BY
-	x.DuplicateData
+	g_1.DuplicateData
 ORDER BY
-	maxOrNull(x.OrderData1)
-LIMIT toInt32(0), toInt32(3)
+	maxOrNull(g_1.OrderData1)
+LIMIT 0, 3
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
@@ -373,22 +371,20 @@ SELECT DISTINCT
 	x.DuplicateData
 FROM
 	OrderByDistinctData x
-ORDER BY
-	x.OrderData1 DESC
-LIMIT toInt32(0), toInt32(3)
+LIMIT 0, 3
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
-	x.DuplicateData
+	g_1.DuplicateData
 FROM
-	OrderByDistinctData x
+	OrderByDistinctData g_1
 GROUP BY
-	x.DuplicateData
+	g_1.DuplicateData
 ORDER BY
-	minOrNull(x.OrderData1) DESC
-LIMIT toInt32(0), toInt32(3)
+	minOrNull(g_1.OrderData1) DESC
+LIMIT 0, 3
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse

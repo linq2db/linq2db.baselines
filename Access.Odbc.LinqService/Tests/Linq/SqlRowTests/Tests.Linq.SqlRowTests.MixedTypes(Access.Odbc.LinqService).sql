@@ -79,7 +79,7 @@ BeforeExecute
 -- Access.Odbc AccessODBC
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	[Mixed] [t]
 WHERE

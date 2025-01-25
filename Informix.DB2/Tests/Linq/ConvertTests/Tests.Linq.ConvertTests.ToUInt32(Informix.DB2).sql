@@ -2,9 +2,14 @@
 -- Informix.DB2 Informix
 
 SELECT
-	Cast(t.MoneyValue as BigInt)
+	p_1.c1
 FROM
-	LinqDataTypes t
+	(
+		SELECT
+			p.MoneyValue::BigInt as c1
+		FROM
+			LinqDataTypes p
+	) p_1
 WHERE
-	Cast(t.MoneyValue as BigInt) > 0
+	p_1.c1 > 0
 

@@ -2,7 +2,7 @@
 -- Sybase.Managed Sybase
 
 SELECT
-	Convert(Date, [t].[DateTimeValue])
+	CONVERT(Date, [t].[DateTimeValue])
 FROM
 	[LinqDataTypes] [t]
 

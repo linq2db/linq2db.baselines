@@ -41,7 +41,7 @@ SELECT
 FROM
 	"NullableBoolClass" t
 WHERE
-	t."Value" IS NULL
+	1 = 0
 
 BeforeExecute
 -- PostgreSQL.12 PostgreSQL.9.5 PostgreSQL
@@ -60,8 +60,6 @@ SELECT
 	t."Value"
 FROM
 	"NullableBoolClass" t
-WHERE
-	t."Value" IS NOT NULL
 
 BeforeExecute
 -- PostgreSQL.12 PostgreSQL.9.5 PostgreSQL

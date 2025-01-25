@@ -1,7 +1,5 @@
 ﻿BeforeExecute
 -- Oracle.11.Managed Oracle11
-DECLARE @take Int32
-SET     @take = 1
 
 SELECT
 	t."ParentID",
@@ -16,5 +14,5 @@ FROM
 		LEFT JOIN "Child" a_Child ON t."ParentID" = a_Child."ParentID" AND t."ChildID" = a_Child."ChildID"
 		LEFT JOIN "Parent" a_Parent ON a_Child."ParentID" = a_Parent."ParentID"
 WHERE
-	ROWNUM <= :take
+	ROWNUM <= 1
 

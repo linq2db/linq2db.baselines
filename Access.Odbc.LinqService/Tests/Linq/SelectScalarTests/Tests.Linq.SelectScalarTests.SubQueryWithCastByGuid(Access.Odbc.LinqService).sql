@@ -2,10 +2,10 @@
 -- Access.Odbc AccessODBC
 
 SELECT
-	[_].[ParentID],
-	[_].[Value1]
+	[t1].[ParentID],
+	[t1].[Value1]
 FROM
-	[Parent] [_]
+	[Parent] [t1]
 WHERE
 	(
 		SELECT TOP 1

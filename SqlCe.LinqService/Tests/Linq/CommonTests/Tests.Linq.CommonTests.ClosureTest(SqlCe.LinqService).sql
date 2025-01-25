@@ -1,20 +1,16 @@
 ﻿BeforeExecute
 -- SqlCe
-DECLARE @take Int -- Int32
-SET     @take = 1
 
-SELECT TOP (@take)
-	1
+SELECT TOP (1)
+	1 as [c1]
 FROM
-	[Person] [_]
+	[Person] [t1]
 
 BeforeExecute
 -- SqlCe
-DECLARE @take Int -- Int32
-SET     @take = 1
 
-SELECT TOP (@take)
-	1
+SELECT TOP (1)
+	1 as [c1]
 FROM
-	[Person] [_]
+	[Person] [t1]
 

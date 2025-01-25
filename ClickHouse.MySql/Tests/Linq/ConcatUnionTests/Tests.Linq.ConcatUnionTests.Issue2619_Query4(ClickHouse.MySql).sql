@@ -3,7 +3,7 @@
 
 SELECT
 	item_1.FirstName,
-	item_1.PersonID,
+	item_1.PersonID as ID,
 	item_1.LastName,
 	item_1.MiddleName,
 	item_1.Gender
@@ -11,11 +11,11 @@ FROM
 	Person item_1
 UNION ALL
 SELECT
-	t1.FirstName,
-	t1.ID,
-	t1.LastName,
-	t1.MiddleName,
-	t1.Gender
+	t1.FirstName as FirstName,
+	t1.ID as ID,
+	t1.LastName as LastName,
+	t1.MiddleName as MiddleName,
+	t1.Gender as Gender
 FROM
 	(
 		SELECT

@@ -526,16 +526,22 @@ BeforeExecute
 -- Access.Odbc AccessODBC
 
 SELECT
-	Iif([t1].[EnumNullable] IS NULL, [t1].[Enum], [t1].[EnumNullable]),
-	[t1].[Value1],
-	Iif([t1].[EnumNullable] IS NULL, [t1].[Enum], [t1].[EnumNullable])
+	[t2].[Converted1],
+	[t2].[Converted2],
+	[t2].[Converted1]
 FROM
-	[ValueConversion] [t1]
+	(
+		SELECT
+			IIF([t1].[EnumNullable] IS NULL, [t1].[Enum], [t1].[EnumNullable]) as [Converted1],
+			[t1].[Value1] as [Converted2]
+		FROM
+			[ValueConversion] [t1]
+	) [t2]
 UNION
 SELECT
-	Iif([t1_1].[EnumNullable] IS NULL, [t1_1].[Enum], [t1_1].[EnumNullable]),
+	IIF([t1_1].[EnumNullable] IS NULL, [t1_1].[Enum], [t1_1].[EnumNullable]),
 	[t1_1].[Value1],
-	Iif([t1_1].[EnumNullable] IS NULL, [t1_1].[Enum], [t1_1].[EnumNullable])
+	IIF([t1_1].[EnumNullable] IS NULL, [t1_1].[Enum], [t1_1].[EnumNullable])
 FROM
 	[ValueConversion] [t1_1]
 

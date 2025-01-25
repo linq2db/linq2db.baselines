@@ -3,11 +3,11 @@
 
 SELECT
 	COUNT(*) * 100E0 / SUM(COUNT(*)) OVER(),
-	Sum([_].[ParentID])
+	SUM([t1].[ParentID])
 FROM
-	[Child] [_]
+	[Child] [t1]
 GROUP BY
-	[_].[ParentID]
+	[t1].[ParentID]
 HAVING
-	(Sum([_].[ParentID]) <> 36 OR Sum([_].[ParentID]) IS NULL)
+	(SUM([t1].[ParentID]) <> 36 OR SUM([t1].[ParentID]) IS NULL)
 

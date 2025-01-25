@@ -2,9 +2,14 @@
 -- DB2 DB2.LUW DB2LUW
 
 SELECT
-	Truncate("p"."MoneyValue", 0)
+	"t_1"."c1"
 FROM
-	"LinqDataTypes" "p"
+	(
+		SELECT
+			Truncate("t"."MoneyValue", 0) as "c1"
+		FROM
+			"LinqDataTypes" "t"
+	) "t_1"
 WHERE
-	Truncate("p"."MoneyValue", 0) <> 0.1
+	"t_1"."c1" <> 0.1
 

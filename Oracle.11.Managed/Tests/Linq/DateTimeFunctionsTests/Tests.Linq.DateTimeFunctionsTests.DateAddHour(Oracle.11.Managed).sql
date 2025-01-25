@@ -2,7 +2,7 @@
 -- Oracle.11.Managed Oracle11
 
 SELECT
-	To_Number(To_Char((t."DateTimeValue" + 1 * INTERVAL '1' HOUR), 'HH24'))
+	EXTRACT(HOUR FROM (t."DateTimeValue" + INTERVAL '1' HOUR))
 FROM
 	"LinqDataTypes" t
 

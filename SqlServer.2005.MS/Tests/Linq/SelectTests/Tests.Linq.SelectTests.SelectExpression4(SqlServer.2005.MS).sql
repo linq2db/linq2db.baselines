@@ -32,7 +32,7 @@ SET     @take = 1
 SELECT TOP (@take)
 	1
 FROM
-	[SelectExpressionTable] [_]
+	[SelectExpressionTable] [t1]
 
 BeforeExecute
 -- SqlServer.2005.MS SqlServer.2005

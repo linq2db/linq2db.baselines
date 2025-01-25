@@ -2,7 +2,7 @@
 -- PostgreSQL.15 PostgreSQL
 
 SELECT
-	Cast(To_Char(t."DateTimeValue", 'MS') as int) % 7
+	(To_Char(t."DateTimeValue", 'MS')::Int::decimal % 7)::decimal
 FROM
 	"LinqDataTypes" t
 

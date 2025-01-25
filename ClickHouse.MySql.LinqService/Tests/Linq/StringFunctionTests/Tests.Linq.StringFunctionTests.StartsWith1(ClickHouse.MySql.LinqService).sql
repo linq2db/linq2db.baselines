@@ -10,5 +10,5 @@ SELECT
 FROM
 	Person p
 WHERE
-	startsWith(p.FirstName, 'Jo') AND p.PersonID = toInt32(1)
+	startsWith(p.FirstName, 'Jo') AND p.PersonID = 1
 

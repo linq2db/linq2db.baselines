@@ -39,11 +39,11 @@ BeforeExecute
 -- SqlServer.SA SqlServer.2019
 
 SELECT
-	[_].[Id]
+	[t1].[Id]
 FROM
-	[TransactionScopeTable] [_]
+	[TransactionScopeTable] [t1]
 ORDER BY
-	[_].[Id]
+	[t1].[Id]
 
 BeforeExecute
 -- SqlServer.SA SqlServer.2019

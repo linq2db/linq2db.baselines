@@ -2,9 +2,9 @@
 -- SqlCe
 
 SELECT
-	[p].[PersonID],
-	Coalesce([p].[FirstName], 'None'),
-	Coalesce([p].[MiddleName], 'None')
+	[p].[PersonID] as [ID],
+	[p].[FirstName],
+	[p].[MiddleName]
 FROM
 	[Person] [p]
 WHERE

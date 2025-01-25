@@ -39,14 +39,12 @@ FROM SYS.DUAL
 
 BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12
-DECLARE @take Int32
-SET     @take = 1
 
 SELECT
-	sys_context('userenv', 'current_schema')
+	sys_context('userenv', 'current_schema') as "c1"
 FROM
 	"LinqDataTypes" t1
-FETCH NEXT :take ROWS ONLY
+FETCH NEXT 1 ROWS ONLY
 
 BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12
@@ -56,11 +54,11 @@ DECLARE @ID Int32
 SET     @ID = 5
 
 UPDATE
-	SYSTEM."Issue681Table"@XE
+	SYSTEM."Issue681Table"@XE t1
 SET
-	SYSTEM."Issue681Table"."Value"@XE = :Value
+	"Value" = :Value
 WHERE
-	SYSTEM."Issue681Table".ID@XE = :ID
+	t1.ID = :ID
 
 BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12

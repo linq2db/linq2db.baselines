@@ -2,7 +2,7 @@
 -- PostgreSQL.15 PostgreSQL
 
 SELECT
-	Cast(t."DateTimeValue" as Date)
+	Date_Trunc('day', t."DateTimeValue")
 FROM
 	"LinqDataTypes" t
 

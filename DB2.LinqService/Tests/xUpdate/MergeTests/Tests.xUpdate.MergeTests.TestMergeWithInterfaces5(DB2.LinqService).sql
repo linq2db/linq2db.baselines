@@ -28,21 +28,21 @@ BeforeExecute
 MERGE INTO "ReviewIndexes" "Target"
 USING (
 	SELECT
-		"t1"."Id",
-		"t1"."Value" as "Value_1"
+		"t1"."Id" as "source_Id",
+		"t1"."Value" as "source_Value"
 	FROM
 		"ReviewIndexes" "t1"
 ) "Source"
 (
-	"Id",
-	"Value_1"
+	"source_Id",
+	"source_Value"
 )
-ON ("Target"."Id" = "Source"."Id")
+ON ("Target"."Id" = "Source"."source_Id")
 
 WHEN MATCHED THEN
 UPDATE
 SET
-	"Target"."Value" = "Source"."Value_1"
+	"Value" = "Source"."source_Value"
 
 WHEN NOT MATCHED THEN
 INSERT
@@ -52,8 +52,8 @@ INSERT
 )
 VALUES
 (
-	"Source"."Id",
-	"Source"."Value_1"
+	"Source"."source_Id",
+	"Source"."source_Value"
 )
 
 BeforeExecute

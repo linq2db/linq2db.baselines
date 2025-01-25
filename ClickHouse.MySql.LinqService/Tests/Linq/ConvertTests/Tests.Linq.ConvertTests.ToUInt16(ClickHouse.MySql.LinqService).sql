@@ -2,9 +2,14 @@
 -- ClickHouse.MySql ClickHouse
 
 SELECT
-	toUInt16(t.MoneyValue)
+	p_1.c1
 FROM
-	LinqDataTypes t
+	(
+		SELECT
+			toUInt16(p.MoneyValue) as c1
+		FROM
+			LinqDataTypes p
+	) p_1
 WHERE
-	toUInt16(t.MoneyValue) > toUInt16(0)
+	p_1.c1 > toUInt16(0)
 

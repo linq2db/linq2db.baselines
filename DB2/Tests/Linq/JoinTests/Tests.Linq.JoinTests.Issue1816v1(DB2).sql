@@ -75,11 +75,11 @@ BeforeExecute
 
 SELECT
 	"v"."inId",
-	"r"."inIdState"
+	"t"."inIdState"
 FROM
 	"stVersions" "v"
 		INNER JOIN "stMain" "a_Main" ON "v"."inIdMain" = "a_Main"."inId"
-		LEFT JOIN "rlStatesTypesAndUserGroups" "r" ON "r"."inIdType" = "a_Main"."inIdType"
+		LEFT JOIN "rlStatesTypesAndUserGroups" "t" ON "t"."inIdType" = "a_Main"."inIdType"
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW

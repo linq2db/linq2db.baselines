@@ -2,7 +2,7 @@
 -- PostgreSQL.11 PostgreSQL.9.5 PostgreSQL
 
 SELECT
-	Min(p."ParentID")
+	MIN(t1."ParentID")
 FROM
-	"Parent" p
+	"Parent" t1
 

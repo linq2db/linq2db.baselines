@@ -21,7 +21,7 @@ FROM
 	NumberLikeTestTable x
 WHERE
 	toString(x.IntNProp) LIKE '1%'
-LIMIT toInt32(50)
+LIMIT 50
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
@@ -32,7 +32,7 @@ FROM
 	NumberLikeTestTable x
 WHERE
 	toString(x.IntNProp) LIKE '1%'
-LIMIT toInt32(50)
+LIMIT 50
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse

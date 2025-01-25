@@ -19,17 +19,17 @@ BeforeExecute
 -- SQLite.Classic SQLite
 
 SELECT
-	[lw_Parent].[ParentID],
-	[detail].[ParentID],
-	[detail].[ChildID]
+	[m_1].[ParentID],
+	[d].[ParentID],
+	[d].[ChildID]
 FROM
 	(
 		SELECT DISTINCT
 			[t1].[ParentID]
 		FROM
 			[Parent] [t1]
-	) [lw_Parent]
-		INNER JOIN [Child] [detail] ON [lw_Parent].[ParentID] = [detail].[ParentID]
+	) [m_1]
+		INNER JOIN [Child] [d] ON [m_1].[ParentID] = [d].[ParentID]
 
 BeforeExecute
 DisposeTransaction
@@ -63,17 +63,17 @@ BeforeExecute
 -- SQLite.Classic SQLite
 
 SELECT
-	[lw_Parent].[ParentID],
-	[detail].[ParentID],
-	[detail].[ChildID]
+	[m_1].[ParentID],
+	[d].[ParentID],
+	[d].[ChildID]
 FROM
 	(
 		SELECT DISTINCT
 			[t1].[ParentID]
 		FROM
 			[Parent] [t1]
-	) [lw_Parent]
-		INNER JOIN [Child] [detail] ON [lw_Parent].[ParentID] = [detail].[ParentID]
+	) [m_1]
+		INNER JOIN [Child] [d] ON [m_1].[ParentID] = [d].[ParentID]
 
 BeforeExecute
 DisposeTransaction
@@ -88,8 +88,6 @@ FROM
 
 BeforeExecute
 -- SQLite.Classic SQLite
-DECLARE @take  -- Int32
-SET     @take = 1
 
 SELECT
 	[t1].[FirstName],
@@ -102,52 +100,41 @@ SELECT
 FROM
 	[Person] [t1]
 		LEFT JOIN [Patient] [a_Patient] ON [t1].[PersonID] = [a_Patient].[PersonID]
-LIMIT @take
+LIMIT 1
 
 BeforeExecute
 BeginTransaction(Serializable)
 BeforeExecute
 -- SQLite.Classic SQLite
-DECLARE @take  -- Int32
-SET     @take = 1
 
 SELECT
-	[lw_Parent].[ParentID],
-	[detail].[ParentID],
-	[detail].[ChildID]
+	[m_1].[ParentID],
+	[d].[ParentID],
+	[d].[ChildID]
 FROM
 	(
-		SELECT DISTINCT
-			[t2].[ParentID]
+		SELECT
+			[t1].[ParentID]
 		FROM
-			(
-				SELECT
-					[t1].[ParentID]
-				FROM
-					[Parent] [t1]
-				LIMIT @take
-			) [t2]
-	) [lw_Parent]
-		INNER JOIN [Child] [detail] ON [lw_Parent].[ParentID] = [detail].[ParentID]
+			[Parent] [t1]
+		LIMIT 1
+	) [m_1]
+		INNER JOIN [Child] [d] ON [m_1].[ParentID] = [d].[ParentID]
 
 BeforeExecute
 -- SQLite.Classic SQLite
-DECLARE @take  -- Int32
-SET     @take = 1
 
 SELECT
 	[t1].[ParentID],
 	[t1].[Value1]
 FROM
 	[Parent] [t1]
-LIMIT @take
+LIMIT 1
 
 BeforeExecute
 DisposeTransaction
 BeforeExecute
 -- SQLite.Classic SQLite (asynchronously)
-DECLARE @take  -- Int32
-SET     @take = 1
 
 SELECT
 	[t1].[FirstName],
@@ -160,45 +147,36 @@ SELECT
 FROM
 	[Person] [t1]
 		LEFT JOIN [Patient] [a_Patient] ON [t1].[PersonID] = [a_Patient].[PersonID]
-LIMIT @take
+LIMIT 1
 
 BeforeExecute
 BeginTransactionAsync(Serializable)
 BeforeExecute
 -- SQLite.Classic SQLite (asynchronously)
-DECLARE @take  -- Int32
-SET     @take = 1
 
 SELECT
-	[lw_Parent].[ParentID],
-	[detail].[ParentID],
-	[detail].[ChildID]
+	[m_1].[ParentID],
+	[d].[ParentID],
+	[d].[ChildID]
 FROM
 	(
-		SELECT DISTINCT
-			[t2].[ParentID]
+		SELECT
+			[t1].[ParentID]
 		FROM
-			(
-				SELECT
-					[t1].[ParentID]
-				FROM
-					[Parent] [t1]
-				LIMIT @take
-			) [t2]
-	) [lw_Parent]
-		INNER JOIN [Child] [detail] ON [lw_Parent].[ParentID] = [detail].[ParentID]
+			[Parent] [t1]
+		LIMIT 1
+	) [m_1]
+		INNER JOIN [Child] [d] ON [m_1].[ParentID] = [d].[ParentID]
 
 BeforeExecute
 -- SQLite.Classic SQLite (asynchronously)
-DECLARE @take  -- Int32
-SET     @take = 1
 
 SELECT
 	[t1].[ParentID],
 	[t1].[Value1]
 FROM
 	[Parent] [t1]
-LIMIT @take
+LIMIT 1
 
 BeforeExecute
 DisposeTransactionAsync

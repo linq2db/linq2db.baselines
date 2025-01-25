@@ -32,6 +32,28 @@ IF (OBJECT_ID(N'[LargeNumberEntity]', N'U') IS NULL)
 BeforeExecute
 -- SqlServer.2014
 
+IF (OBJECT_ID(N'[SomeTable]', N'U') IS NOT NULL)
+	DROP TABLE [SomeTable]
+
+BeforeExecute
+-- SqlServer.2014
+
+IF (OBJECT_ID(N'[SomeTable]', N'U') IS NULL)
+	CREATE TABLE [SomeTable]
+	(
+		[LargeNumberEntityId] Int NOT NULL,
+		[Value]               Int NOT NULL
+	)
+
+BeforeExecute
+-- SqlServer.2014
+
+IF (OBJECT_ID(N'[SomeTable]', N'U') IS NOT NULL)
+	DROP TABLE [SomeTable]
+
+BeforeExecute
+-- SqlServer.2014
+
 IF (OBJECT_ID(N'[LargeNumberEntity]', N'U') IS NOT NULL)
 	DROP TABLE [LargeNumberEntity]
 

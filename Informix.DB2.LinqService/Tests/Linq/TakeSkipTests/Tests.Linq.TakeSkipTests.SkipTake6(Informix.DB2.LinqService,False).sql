@@ -11,9 +11,9 @@ FROM
 			p.ParentID
 		FROM
 			GrandChild p
-	) t1
+	) p_1
 WHERE
-	c_1.ParentID = t1.ParentID
+	c_1.ParentID = p_1.ParentID
 
 BeforeExecute
 -- Informix.DB2 Informix
@@ -28,7 +28,7 @@ FROM
 			p.ParentID
 		FROM
 			GrandChild p
-	) t1
+	) p_1
 WHERE
-	c_1.ParentID = t1.ParentID
+	c_1.ParentID = p_1.ParentID
 

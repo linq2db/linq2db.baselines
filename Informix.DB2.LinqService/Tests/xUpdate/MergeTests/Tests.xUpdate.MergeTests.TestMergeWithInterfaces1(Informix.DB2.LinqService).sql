@@ -19,17 +19,17 @@ BeforeExecute
 
 MERGE INTO ReviewIndexes Target
 USING (
-	SELECT 1::Int AS Id, '2'::NVarChar(255) AS Value_1 FROM table(set{1})) Source
+	SELECT 1::Int AS source_Id, '2'::NVarChar(255) AS source_Value FROM table(set{1})) Source
 (
-	Id,
-	Value_1
+	source_Id,
+	source_Value
 )
-ON (Target.Id = Source.Id)
+ON (Target.Id = Source.source_Id)
 
 WHEN MATCHED THEN
 UPDATE
 SET
-	Target."Value" = Source.Value_1
+	"Value" = Source.source_Value
 
 WHEN NOT MATCHED THEN
 INSERT
@@ -39,8 +39,8 @@ INSERT
 )
 VALUES
 (
-	Source.Id,
-	Source.Value_1
+	Source.source_Id,
+	Source.source_Value
 )
 
 BeforeExecute

@@ -2,16 +2,16 @@
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
-	t1.Id,
+	t1.ID,
 	t1.Id2
 FROM
 	(
 		SELECT
 			a.PersonID as Id2,
-			a.PersonID as Id
+			a.PersonID as ID
 		FROM
 			Person a
-		LIMIT toInt32(10)
+		LIMIT 10
 	) t1
 ORDER BY
 	t1.Id2

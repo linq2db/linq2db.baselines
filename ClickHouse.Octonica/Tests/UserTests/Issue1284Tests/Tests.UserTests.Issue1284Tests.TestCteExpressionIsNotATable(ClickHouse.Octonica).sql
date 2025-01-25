@@ -5,23 +5,23 @@ WITH CTE_1 AS
 (
 	SELECT
 		person_1.PersonID as entry_ID,
-		person_1.FirstName,
-		person_1.LastName,
-		person_1.MiddleName,
-		person_1.Gender
+		person_1.FirstName as entry_FirstName,
+		person_1.LastName as entry_LastName,
+		person_1.MiddleName as entry_MiddleName,
+		person_1.Gender as entry_Gender
 	FROM
 		Person person_1
 )
 SELECT
-	x.FirstName,
+	x.entry_FirstName,
 	x.entry_ID,
-	x.LastName,
-	x.MiddleName,
-	x.Gender
+	x.entry_LastName,
+	x.entry_MiddleName,
+	x.entry_Gender
 FROM
 	CTE_1 x
 WHERE
-	x.entry_ID = toInt32(1)
+	x.entry_ID = 1
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -35,5 +35,5 @@ SELECT
 FROM
 	Person x
 WHERE
-	x.PersonID = toInt32(1)
+	x.PersonID = 1
 

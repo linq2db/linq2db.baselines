@@ -25,14 +25,14 @@ DECLARE @Diagnosis VarChar(4) -- String
 SET     @Diagnosis = 'ABC1'
 
 MERGE INTO "xxPatient" "t1"
-USING (SELECT @PersonID AS "PersonID" FROM SYSIBM.SYSDUMMY1 FETCH FIRST 1 ROW ONLY) "s" ON
+USING (SELECT CAST(@PersonID AS Int) AS "PersonID" FROM SYSIBM.SYSDUMMY1 FETCH FIRST 1 ROW ONLY) "s" ON
 (
 	"t1"."PersonID" = "s"."PersonID"
 )
 WHEN MATCHED THEN
 	UPDATE 
 	SET
-		"t1"."Diagnosis" = @Diagnosis
+		"Diagnosis" = CAST(@Diagnosis AS NVarChar(4))
 WHEN NOT MATCHED THEN
 	INSERT
 	(
@@ -41,8 +41,8 @@ WHEN NOT MATCHED THEN
 	)
 	VALUES
 	(
-		@PersonID,
-		@Diagnosis
+		CAST(@PersonID AS Int),
+		CAST(@Diagnosis AS NVarChar(4))
 	)
 
 BeforeExecute
@@ -53,14 +53,14 @@ DECLARE @Diagnosis VarChar(4) -- String
 SET     @Diagnosis = 'ABC2'
 
 MERGE INTO "xxPatient" "t1"
-USING (SELECT @PersonID AS "PersonID" FROM SYSIBM.SYSDUMMY1 FETCH FIRST 1 ROW ONLY) "s" ON
+USING (SELECT CAST(@PersonID AS Int) AS "PersonID" FROM SYSIBM.SYSDUMMY1 FETCH FIRST 1 ROW ONLY) "s" ON
 (
 	"t1"."PersonID" = "s"."PersonID"
 )
 WHEN MATCHED THEN
 	UPDATE 
 	SET
-		"t1"."Diagnosis" = @Diagnosis
+		"Diagnosis" = CAST(@Diagnosis AS NVarChar(4))
 WHEN NOT MATCHED THEN
 	INSERT
 	(
@@ -69,15 +69,15 @@ WHEN NOT MATCHED THEN
 	)
 	VALUES
 	(
-		@PersonID,
-		@Diagnosis
+		CAST(@PersonID AS Int),
+		CAST(@Diagnosis AS NVarChar(4))
 	)
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW (asynchronously)
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	"xxPatient" "t1"
 
@@ -89,14 +89,14 @@ DECLARE @Diagnosis VarChar(4) -- String
 SET     @Diagnosis = 'ABC1'
 
 MERGE INTO "xxPatient" "t1"
-USING (SELECT @PersonID AS "PersonID" FROM SYSIBM.SYSDUMMY1 FETCH FIRST 1 ROW ONLY) "s" ON
+USING (SELECT CAST(@PersonID AS Int) AS "PersonID" FROM SYSIBM.SYSDUMMY1 FETCH FIRST 1 ROW ONLY) "s" ON
 (
 	"t1"."PersonID" = "s"."PersonID"
 )
 WHEN MATCHED THEN
 	UPDATE 
 	SET
-		"t1"."Diagnosis" = @Diagnosis
+		"Diagnosis" = CAST(@Diagnosis AS NVarChar(4))
 WHEN NOT MATCHED THEN
 	INSERT
 	(
@@ -105,8 +105,8 @@ WHEN NOT MATCHED THEN
 	)
 	VALUES
 	(
-		@PersonID,
-		@Diagnosis
+		CAST(@PersonID AS Int),
+		CAST(@Diagnosis AS NVarChar(4))
 	)
 
 BeforeExecute
@@ -117,14 +117,14 @@ DECLARE @Diagnosis VarChar(4) -- String
 SET     @Diagnosis = 'ABC2'
 
 MERGE INTO "xxPatient" "t1"
-USING (SELECT @PersonID AS "PersonID" FROM SYSIBM.SYSDUMMY1 FETCH FIRST 1 ROW ONLY) "s" ON
+USING (SELECT CAST(@PersonID AS Int) AS "PersonID" FROM SYSIBM.SYSDUMMY1 FETCH FIRST 1 ROW ONLY) "s" ON
 (
 	"t1"."PersonID" = "s"."PersonID"
 )
 WHEN MATCHED THEN
 	UPDATE 
 	SET
-		"t1"."Diagnosis" = @Diagnosis
+		"Diagnosis" = CAST(@Diagnosis AS NVarChar(4))
 WHEN NOT MATCHED THEN
 	INSERT
 	(
@@ -133,15 +133,15 @@ WHEN NOT MATCHED THEN
 	)
 	VALUES
 	(
-		@PersonID,
-		@Diagnosis
+		CAST(@PersonID AS Int),
+		CAST(@Diagnosis AS NVarChar(4))
 	)
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW (asynchronously)
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	"xxPatient" "t1"
 

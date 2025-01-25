@@ -4,11 +4,11 @@
 SELECT
 	(
 		SELECT
-			"p"."ParentID"
+			"t1"."ParentID"
 		FROM
-			"Child" "p"
-		FETCH FIRST 1 ROWS ONLY
+			"Child" "t1"
+		FETCH NEXT 1 ROWS ONLY
 	)
 FROM
-	"Parent" "p_1"
+	"Parent" "p"
 

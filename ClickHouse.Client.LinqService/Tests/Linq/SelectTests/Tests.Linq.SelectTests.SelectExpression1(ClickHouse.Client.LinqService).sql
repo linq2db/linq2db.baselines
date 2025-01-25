@@ -24,18 +24,17 @@ INSERT INTO SelectExpressionTable
 )
 VALUES
 (
-	toInt32(1)
+	1
 )
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
 
 SELECT
-	toUUID('b3d9b51c-89f9-442a-893b-cd8a6f667d37'),
-	toUUID('61efdcd4-659d-41e8-910c-506a9c2f31c5')
+	true
 FROM
-	SelectExpressionTable _
-LIMIT toInt32(1)
+	SelectExpressionTable t1
+LIMIT 1
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse

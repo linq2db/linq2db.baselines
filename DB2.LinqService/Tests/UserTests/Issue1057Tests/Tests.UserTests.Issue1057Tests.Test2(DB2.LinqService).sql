@@ -122,8 +122,8 @@ BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 SELECT
-	"p"."Id",
 	"p"."TargetName",
+	"p"."Id",
 	"a_ActualStage"."Id"
 FROM
 	"Task" "p"

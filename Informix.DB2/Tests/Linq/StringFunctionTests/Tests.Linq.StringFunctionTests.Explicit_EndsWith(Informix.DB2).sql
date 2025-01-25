@@ -2,7 +2,7 @@
 -- Informix.DB2 Informix
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	Patient r
 WHERE
@@ -12,7 +12,7 @@ BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	Patient r
 WHERE
@@ -22,7 +22,7 @@ BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	Patient r
 WHERE
@@ -32,7 +32,7 @@ BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	Patient r
 WHERE

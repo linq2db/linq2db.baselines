@@ -1,43 +1,28 @@
 ﻿BeforeExecute
 -- SQLite.MS SQLite
 
-DROP TABLE IF EXISTS [Issue4371Table]
+DROP TABLE IF EXISTS [Issue4371Table2]
 
 BeforeExecute
 -- SQLite.MS SQLite
 
-CREATE TABLE IF NOT EXISTS [Issue4371Table]
+CREATE TABLE IF NOT EXISTS [Issue4371Table2]
 (
-	[ColumnDO]  VarChar     NULL,
-	[ColumnDT]  VarChar     NULL,
-	[ColumnDTO] VarChar     NULL,
-	[ColumnTS]  VarChar     NULL
+	[ColumnDO] VarChar     NULL
 )
 
 BeforeExecute
 -- SQLite.MS SQLite
 DECLARE @ColumnDO VarChar -- AnsiString
 SET     @ColumnDO = '0160-05-06'
-DECLARE @ColumnDT VarChar -- AnsiString
-SET     @ColumnDT = NULL
-DECLARE @ColumnDTO VarChar -- AnsiString
-SET     @ColumnDTO = NULL
-DECLARE @ColumnTS VarChar -- AnsiString
-SET     @ColumnTS = NULL
 
-INSERT INTO [Issue4371Table]
+INSERT INTO [Issue4371Table2]
 (
-	[ColumnDO],
-	[ColumnDT],
-	[ColumnDTO],
-	[ColumnTS]
+	[ColumnDO]
 )
 VALUES
 (
-	@ColumnDO,
-	@ColumnDT,
-	@ColumnDTO,
-	@ColumnTS
+	@ColumnDO
 )
 
 BeforeExecute
@@ -46,14 +31,14 @@ DECLARE @dt VarChar -- AnsiString
 SET     @dt = '0160-05-06'
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
-	[Issue4371Table] [r]
+	[Issue4371Table2] [r]
 WHERE
-	[r].[ColumnDO] = @dt
+	Date([r].[ColumnDO]) = Date(@dt)
 
 BeforeExecute
 -- SQLite.MS SQLite
 
-DROP TABLE IF EXISTS [Issue4371Table]
+DROP TABLE IF EXISTS [Issue4371Table2]
 

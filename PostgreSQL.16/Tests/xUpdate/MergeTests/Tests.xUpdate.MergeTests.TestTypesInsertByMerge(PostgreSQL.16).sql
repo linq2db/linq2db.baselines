@@ -36,27 +36,27 @@ q','&','>',3.40282002E+38,1.7976931348623157E+308,'2001-10-12 21:14:15.167'::tim
 ',1.17549996E-38,-2.2250738585072014E-308,'2098-10-12 21:14:15.997'::timestamp,:value_4,E'\\xFFC864321400'::bytea,'ffffffff-ffff-ffff-ffff-ffffffffffff'::uuid,99999999.9999999999,'2110-11-23'::date,:value_5,'',2147483647)
 ) "Source"
 (
-	"Id",
-	"FieldInt32",
-	"FieldInt64",
-	"FieldBoolean",
-	"FieldString",
-	"FieldNString",
-	"FieldChar",
-	"FieldNChar",
-	"FieldFloat",
-	"FieldDouble",
-	"FieldDateTime",
-	"FieldDateTime2",
-	"FieldBinary",
-	"FieldGuid",
-	"FieldDecimal",
-	"FieldDate",
-	"FieldTime",
-	"FieldEnumString",
-	"FieldEnumNumber"
+	"source_Id",
+	"source_FieldInt32",
+	"source_FieldInt64",
+	"source_FieldBoolean",
+	"source_FieldString",
+	"source_FieldNString",
+	"source_FieldChar",
+	"source_FieldNChar",
+	"source_FieldFloat",
+	"source_FieldDouble",
+	"source_FieldDateTime",
+	"source_FieldDateTime2",
+	"source_FieldBinary",
+	"source_FieldGuid",
+	"source_FieldDecimal",
+	"source_FieldDate",
+	"source_FieldTime",
+	"source_FieldEnumString",
+	"source_FieldEnumNumber"
 )
-ON ("Target"."Id" = "Source"."Id")
+ON ("Target"."Id" = "Source"."source_Id")
 
 WHEN NOT MATCHED THEN
 INSERT
@@ -83,25 +83,25 @@ INSERT
 )
 VALUES
 (
-	"Source"."Id",
-	"Source"."FieldInt32",
-	"Source"."FieldInt64",
-	"Source"."FieldBoolean",
-	"Source"."FieldString",
-	"Source"."FieldNString",
-	"Source"."FieldChar",
-	"Source"."FieldNChar",
-	"Source"."FieldFloat",
-	"Source"."FieldDouble",
-	"Source"."FieldDateTime",
-	"Source"."FieldDateTime2",
-	"Source"."FieldBinary",
-	"Source"."FieldGuid",
-	"Source"."FieldDecimal",
-	"Source"."FieldDate",
-	"Source"."FieldTime",
-	"Source"."FieldEnumString",
-	"Source"."FieldEnumNumber"
+	"Source"."source_Id",
+	"Source"."source_FieldInt32",
+	"Source"."source_FieldInt64",
+	"Source"."source_FieldBoolean",
+	"Source"."source_FieldString",
+	"Source"."source_FieldNString",
+	"Source"."source_FieldChar",
+	"Source"."source_FieldNChar",
+	"Source"."source_FieldFloat",
+	"Source"."source_FieldDouble",
+	"Source"."source_FieldDateTime",
+	"Source"."source_FieldDateTime2",
+	"Source"."source_FieldBinary",
+	"Source"."source_FieldGuid",
+	"Source"."source_FieldDecimal",
+	"Source"."source_FieldDate",
+	"Source"."source_FieldTime",
+	"Source"."source_FieldEnumString",
+	"Source"."source_FieldEnumNumber"
 )
 
 BeforeExecute
@@ -116,10 +116,12 @@ DECLARE @value_3 Interval -- Object
 SET     @value_3 = 14:44:33.2340000
 DECLARE @value_4 TimestampTz -- DateTime
 SET     @value_4 = '2001-11-22T14:53:15.0000000+00:00'
-DECLARE @value_5 TimestampTz -- DateTime
-SET     @value_5 = '2001-11-22T13:29:15.9990000+00:00'
-DECLARE @value_6 Interval -- Object
-SET     @value_6 = 22:44:33
+DECLARE @value_5 Interval -- Object
+SET     @value_5 = 23:59:59.9999999
+DECLARE @value_6 TimestampTz -- DateTime
+SET     @value_6 = '2001-11-22T13:29:15.9990000+00:00'
+DECLARE @value_7 Interval -- Object
+SET     @value_7 = 22:44:33
 
 MERGE INTO "TestMerge2" "Target"
 USING (VALUES
@@ -127,33 +129,33 @@ USING (VALUES
 	(4,2147483647,9223372036854775807,False,'test
 	','ЙЦУКЩывапрм
 q','1',' ',3.40282002E+38,1.7976931348623157E+308,'2001-10-12 21:14:15.167'::timestamp,:value_2,E'\\x000102030004'::bytea,'ffffffff-ffff-ffff-ffff-ffffffffffff'::uuid,-99999999.9999999999,'2123-11-23'::date,:value_3,'',0),
-	(5,-123,987,NULL,'<>?/.,;''zZ":','`~!@#$%^&*()_+{}|[]\',' ',' ',-1.17549996E-38,2.2250738585072014E-308,'2098-10-12 21:14:15.913'::timestamp,:value_4,E'\\xFFC864321400'::bytea,'ffffffff-ffff-ffff-ffff-ffffffffffff'::uuid,-0.123,'2010-11-23'::date,:value_1,NULL,-2147483647),
+	(5,-123,987,NULL,'<>?/.,;''zZ":','`~!@#$%^&*()_+{}|[]\',' ',' ',-1.17549996E-38,2.2250738585072014E-308,'2098-10-12 21:14:15.913'::timestamp,:value_4,E'\\xFFC864321400'::bytea,'ffffffff-ffff-ffff-ffff-ffffffffffff'::uuid,-0.123,'2010-11-23'::date,:value_5,NULL,-2147483647),
 	(6,2147483647,9223372036854775807,False,'test
 	  ','ЙЦУКЩывапрм
-q  ','-','~',3.40282002E+38,1.7976931348623157E+308,'2001-10-12 21:14:15.167'::timestamp,:value_5,E'\\x000102030004'::bytea,'ffffffff-ffff-ffff-ffff-ffffffffffff'::uuid,-99999999.9999999999,'2123-11-23'::date,:value_6,'',0)
+q  ','-','~',3.40282002E+38,1.7976931348623157E+308,'2001-10-12 21:14:15.167'::timestamp,:value_6,E'\\x000102030004'::bytea,'ffffffff-ffff-ffff-ffff-ffffffffffff'::uuid,-99999999.9999999999,'2123-11-23'::date,:value_7,'',0)
 ) "Source"
 (
-	"Id",
-	"FieldInt32",
-	"FieldInt64",
-	"FieldBoolean",
-	"FieldString",
-	"FieldNString",
-	"FieldChar",
-	"FieldNChar",
-	"FieldFloat",
-	"FieldDouble",
-	"FieldDateTime",
-	"FieldDateTime2",
-	"FieldBinary",
-	"FieldGuid",
-	"FieldDecimal",
-	"FieldDate",
-	"FieldTime",
-	"FieldEnumString",
-	"FieldEnumNumber"
+	"source_Id",
+	"source_FieldInt32",
+	"source_FieldInt64",
+	"source_FieldBoolean",
+	"source_FieldString",
+	"source_FieldNString",
+	"source_FieldChar",
+	"source_FieldNChar",
+	"source_FieldFloat",
+	"source_FieldDouble",
+	"source_FieldDateTime",
+	"source_FieldDateTime2",
+	"source_FieldBinary",
+	"source_FieldGuid",
+	"source_FieldDecimal",
+	"source_FieldDate",
+	"source_FieldTime",
+	"source_FieldEnumString",
+	"source_FieldEnumNumber"
 )
-ON ("Target"."Id" = "Source"."Id")
+ON ("Target"."Id" = "Source"."source_Id")
 
 WHEN NOT MATCHED THEN
 INSERT
@@ -180,25 +182,25 @@ INSERT
 )
 VALUES
 (
-	"Source"."Id",
-	"Source"."FieldInt32",
-	"Source"."FieldInt64",
-	"Source"."FieldBoolean",
-	"Source"."FieldString",
-	"Source"."FieldNString",
-	"Source"."FieldChar",
-	"Source"."FieldNChar",
-	"Source"."FieldFloat",
-	"Source"."FieldDouble",
-	"Source"."FieldDateTime",
-	"Source"."FieldDateTime2",
-	"Source"."FieldBinary",
-	"Source"."FieldGuid",
-	"Source"."FieldDecimal",
-	"Source"."FieldDate",
-	"Source"."FieldTime",
-	"Source"."FieldEnumString",
-	"Source"."FieldEnumNumber"
+	"Source"."source_Id",
+	"Source"."source_FieldInt32",
+	"Source"."source_FieldInt64",
+	"Source"."source_FieldBoolean",
+	"Source"."source_FieldString",
+	"Source"."source_FieldNString",
+	"Source"."source_FieldChar",
+	"Source"."source_FieldNChar",
+	"Source"."source_FieldFloat",
+	"Source"."source_FieldDouble",
+	"Source"."source_FieldDateTime",
+	"Source"."source_FieldDateTime2",
+	"Source"."source_FieldBinary",
+	"Source"."source_FieldGuid",
+	"Source"."source_FieldDecimal",
+	"Source"."source_FieldDate",
+	"Source"."source_FieldTime",
+	"Source"."source_FieldEnumString",
+	"Source"."source_FieldEnumNumber"
 )
 
 BeforeExecute

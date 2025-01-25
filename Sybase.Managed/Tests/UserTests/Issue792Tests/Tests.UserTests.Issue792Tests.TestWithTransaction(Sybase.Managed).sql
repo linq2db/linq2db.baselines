@@ -4,7 +4,7 @@ BeforeExecute
 -- Sybase.Managed Sybase
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	[AllTypes] [t1]
 
@@ -14,7 +14,7 @@ BeforeExecute
 SELECT TOP 1
 	USER_NAME()
 FROM
-	[LinqDataTypes] [_]
+	[LinqDataTypes] [t1]
 
 BeforeExecute
 -- Sybase.Managed Sybase
@@ -64,7 +64,7 @@ BeforeExecute
 -- Sybase.Managed Sybase
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	[AllTypes] [t1]
 

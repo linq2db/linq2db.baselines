@@ -2,9 +2,9 @@
 -- Access.Odbc AccessODBC
 
 DELETE FROM
-	[Parent] [t1]
+	[Parent] [p]
 WHERE
-	[t1].[Value1] = 11
+	[p].[Value1] = 11
 
 BeforeExecute
 -- Access.Odbc AccessODBC
@@ -26,7 +26,7 @@ BeforeExecute
 -- Access.Odbc AccessODBC
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	[Parent] [p]
 WHERE
@@ -36,7 +36,7 @@ BeforeExecute
 -- Access.Odbc AccessODBC
 
 DELETE FROM
-	[Parent] [t1]
+	[Parent] [p]
 WHERE
-	[t1].[Value1] = 11
+	[p].[Value1] = 11
 

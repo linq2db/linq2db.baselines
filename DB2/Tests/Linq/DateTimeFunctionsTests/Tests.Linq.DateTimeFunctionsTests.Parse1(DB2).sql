@@ -2,14 +2,9 @@
 -- DB2 DB2.LUW DB2LUW
 
 SELECT
-	"d"."c1"
+	DATE("d"."DateTimeValue")
 FROM
-	(
-		SELECT
-			"t"."DateTimeValue" as "c1"
-		FROM
-			"LinqDataTypes" "t"
-	) "d"
+	"LinqDataTypes" "d"
 WHERE
-	To_Number(To_Char("d"."c1", 'DD')) > 0
+	Extract(day from "d"."DateTimeValue") > 0
 

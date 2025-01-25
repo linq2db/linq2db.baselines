@@ -1,11 +1,11 @@
 ﻿BeforeExecute
 -- SqlServer.2008.MS SqlServer.2008
 
-DELETE [t1]
+DELETE [c_1]
 FROM
-	[Child] [t1]
+	[Child] [c_1]
 WHERE
-	[t1].[ChildID] > 1000
+	[c_1].[ChildID] > 1000
 
 BeforeExecute
 -- SqlServer.2008.MS SqlServer.2008
@@ -82,9 +82,9 @@ IF (OBJECT_ID(N'[TInserted]', N'U') IS NOT NULL)
 BeforeExecute
 -- SqlServer.2008.MS SqlServer.2008
 
-DELETE [t1]
+DELETE [c_1]
 FROM
-	[Child] [t1]
+	[Child] [c_1]
 WHERE
-	[t1].[ChildID] > 1000
+	[c_1].[ChildID] > 1000
 

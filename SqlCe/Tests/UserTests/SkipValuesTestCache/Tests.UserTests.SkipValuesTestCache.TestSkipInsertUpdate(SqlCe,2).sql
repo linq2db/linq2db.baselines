@@ -39,10 +39,8 @@ VALUES
 
 BeforeExecute
 -- SqlCe
-DECLARE @take Int -- Int32
-SET     @take = 1
 
-SELECT TOP (@take)
+SELECT TOP (1)
 	[t].[Id],
 	[t].[Name],
 	[t].[Age]
@@ -63,17 +61,15 @@ SET     @Id = 1
 UPDATE
 	[PR_1598_Insert_Table_Cache]
 SET
-	[PR_1598_Insert_Table_Cache].[Name] = @Name,
-	[PR_1598_Insert_Table_Cache].[Age] = @Age
+	[Name] = @Name,
+	[Age] = @Age
 WHERE
 	[PR_1598_Insert_Table_Cache].[Id] = @Id
 
 BeforeExecute
 -- SqlCe
-DECLARE @take Int -- Int32
-SET     @take = 1
 
-SELECT TOP (@take)
+SELECT TOP (1)
 	[t].[Id],
 	[t].[Name],
 	[t].[Age]

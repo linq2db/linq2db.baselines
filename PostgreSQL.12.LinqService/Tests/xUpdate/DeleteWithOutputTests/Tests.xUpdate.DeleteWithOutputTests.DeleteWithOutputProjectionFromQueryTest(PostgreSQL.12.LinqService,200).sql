@@ -254,7 +254,7 @@ WHERE
 	s."Id" > 3
 RETURNING
 	s."Id" + 1,
-	s."ValueStr" || Cast(1 as VarChar(11))
+	s."ValueStr" || 1
 
 BeforeExecute
 -- PostgreSQL.12 PostgreSQL.9.5 PostgreSQL

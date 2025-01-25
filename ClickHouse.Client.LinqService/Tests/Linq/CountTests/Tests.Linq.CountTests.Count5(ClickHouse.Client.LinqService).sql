@@ -2,11 +2,11 @@
 -- ClickHouse.Client ClickHouse
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	(
 		SELECT
-			toInt32(0) as c1
+			t1.ParentID as ParentID
 		FROM
 			Child t1
 		GROUP BY

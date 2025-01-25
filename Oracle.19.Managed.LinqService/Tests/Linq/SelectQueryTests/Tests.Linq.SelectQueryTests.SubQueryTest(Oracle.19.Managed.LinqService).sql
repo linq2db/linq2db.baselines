@@ -48,20 +48,20 @@ VALUES
 
 BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12
-DECLARE @take Int32
-SET     @take = 1
 
 SELECT
 	t_1."Id",
 	t_1."Value",
-	t3."Value1",
-	t3."Value2"
+	t2."not_null",
+	t2."Value1",
+	t2."Value2"
 FROM
 	"SampleClass" t_1
-		OUTER APPLY (
+		LEFT JOIN (
 			SELECT
-				t2."Value1",
-				t2."Value2"
+				t1."Value1",
+				t1."Value2",
+				1 as "not_null"
 			FROM
 				(
 					SELECT
@@ -73,18 +73,12 @@ FROM
 						t."Value" = 1
 					UNION
 					SELECT
-						t1."Value1",
-						t1."Value2"
-					FROM
-						(
-							SELECT
-								CURRENT_TIMESTAMP + 3 * INTERVAL '1' DAY as "Value1",
-								CURRENT_TIMESTAMP + 4 * INTERVAL '1' DAY as "Value2"
-							FROM SYS.DUAL
-						) t1
-				) t2
-			FETCH NEXT :take ROWS ONLY
-		) t3
+						CURRENT_TIMESTAMP + 3 * INTERVAL '1' DAY as "Value1",
+						CURRENT_TIMESTAMP + 4 * INTERVAL '1' DAY as "Value2"
+					FROM SYS.DUAL
+				) t1
+			FETCH NEXT 1 ROWS ONLY
+		) t2 ON 1=1
 
 BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12

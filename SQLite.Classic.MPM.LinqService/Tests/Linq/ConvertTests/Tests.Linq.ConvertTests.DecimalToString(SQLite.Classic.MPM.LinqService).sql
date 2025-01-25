@@ -2,9 +2,9 @@
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
 SELECT
-	Cast([t].[MoneyValue] as NVarChar(31))
+	CAST([p].[MoneyValue] AS NVarChar(31))
 FROM
-	[LinqDataTypes] [t]
+	[LinqDataTypes] [p]
 WHERE
-	Length(Cast([t].[MoneyValue] as NVarChar(31))) > 0
+	Length(CAST([p].[MoneyValue] AS NVarChar(31))) > 0
 

@@ -2,11 +2,11 @@
 -- Oracle.11.Managed Oracle11
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	"Person" t1
 WHERE
-	t1."PersonID" IS NULL
+	1 = 0
 
 BeforeExecute
 -- Oracle.11.Managed Oracle11
@@ -14,7 +14,7 @@ DECLARE @id Int32
 SET     @id = 1
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	"Person" t1
 WHERE

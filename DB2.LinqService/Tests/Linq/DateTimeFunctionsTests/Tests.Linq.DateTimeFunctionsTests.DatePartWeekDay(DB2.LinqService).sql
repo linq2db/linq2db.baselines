@@ -2,7 +2,7 @@
 -- DB2 DB2.LUW DB2LUW
 
 SELECT
-	DayOfWeek("t"."DateTimeValue")
+	Mod(Trunc("t"."DateTimeValue") - Trunc("t"."DateTimeValue", 'IW') + 1, 7) + 1
 FROM
 	"LinqDataTypes" "t"
 

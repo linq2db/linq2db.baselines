@@ -7,9 +7,9 @@ SELECT
 FROM
 	Person p
 		INNER JOIN (
-			SELECT 'Janet' AS FirstName, toInt32(2) AS PersonID
+			SELECT 'Janet' AS FirstName, 2 AS PersonID
 			UNION ALL
-			SELECT 'Doe', toInt32(3)) n ON p.PersonID = n.PersonID
+			SELECT 'Doe', 3) n ON p.PersonID = n.PersonID
 ORDER BY
 	n.PersonID
 

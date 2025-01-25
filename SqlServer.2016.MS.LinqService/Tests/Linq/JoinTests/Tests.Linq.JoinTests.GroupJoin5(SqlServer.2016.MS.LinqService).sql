@@ -1,26 +1,24 @@
 ﻿BeforeExecute
 -- SqlServer.2016.MS SqlServer.2016
-DECLARE @take Int -- Int32
-SET     @take = 1
 
 SELECT
 	[t1].[ParentID],
 	[t1].[ChildID]
 FROM
-	[Parent] [p]
+	[Parent] [t2]
 		OUTER APPLY (
-			SELECT TOP (@take)
+			SELECT TOP (1)
 				[ch].[ParentID],
 				[ch].[ChildID]
 			FROM
 				[Child] [ch]
 			WHERE
-				[ch].[ParentID] = [p].[ParentID]
+				[t2].[ParentID] = [ch].[ParentID]
 			ORDER BY
 				[ch].[ChildID]
 		) [t1]
 WHERE
-	[p].[ParentID] >= 1
+	[t2].[ParentID] >= 1
 ORDER BY
-	[p].[ParentID]
+	[t2].[ParentID]
 

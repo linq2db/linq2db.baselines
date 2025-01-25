@@ -24,22 +24,18 @@ DECLARE @ParentID Int -- Int32
 SET     @ParentID = 1001
 
 UPDATE
-	[t1]
+	[Parent]
 SET
-	[t1].[Value1] = @Value1
-FROM
-	[Parent] [t1]
+	[Value1] = @Value1
 WHERE
-	[t1].[ParentID] = @ParentID
+	[Parent].[ParentID] = @ParentID
 
 BeforeExecute
 -- SqlServer.SA SqlServer.2019
-DECLARE @take Int -- Int32
-SET     @take = 2
 DECLARE @ParentID Int -- Int32
 SET     @ParentID = 1001
 
-SELECT TOP (@take)
+SELECT TOP (2)
 	[p].[ParentID],
 	[p].[Value1]
 FROM

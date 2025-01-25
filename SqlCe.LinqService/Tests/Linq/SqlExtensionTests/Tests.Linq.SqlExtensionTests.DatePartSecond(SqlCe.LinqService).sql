@@ -2,7 +2,7 @@
 -- SqlCe
 
 SELECT
-	DatePart(second, [t].[DateTimeValue])
+	DatePart(second, [t].[DateTimeValue]) as [c1]
 FROM
 	[LinqDataTypes] [t]
 

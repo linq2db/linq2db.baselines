@@ -270,7 +270,7 @@ BeforeExecute
 -- PostgreSQL.15 PostgreSQL
 
 SELECT
-	Cast(Floor(Extract(day from t."TransactionDate")) as int)
+	Floor(Extract(day From t."TransactionDate"))::Int
 FROM
 	"Transactions" t
 

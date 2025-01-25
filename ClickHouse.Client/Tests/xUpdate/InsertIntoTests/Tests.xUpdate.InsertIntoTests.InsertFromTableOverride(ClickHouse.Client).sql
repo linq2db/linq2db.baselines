@@ -23,7 +23,7 @@ INSERT INTO InsertTestClass
 	OtherValue
 )
 VALUES
-(toInt32(1),toInt32(100))
+(1,100)
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
@@ -50,8 +50,8 @@ INSERT INTO InsertTestClassDest
 	OtherValue
 )
 SELECT
-	t1.Value + toInt32(2),
-	t1.OtherValue + toInt32(2)
+	t1.Value + 2,
+	t1.OtherValue + 2
 FROM
 	InsertTestClass t1
 
@@ -64,7 +64,7 @@ SELECT
 	t1.OtherValue
 FROM
 	InsertTestClass t1
-LIMIT toInt32(2)
+LIMIT 2
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
@@ -75,7 +75,7 @@ SELECT
 	t1.OtherValue
 FROM
 	InsertTestClassDest t1
-LIMIT toInt32(2)
+LIMIT 2
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse

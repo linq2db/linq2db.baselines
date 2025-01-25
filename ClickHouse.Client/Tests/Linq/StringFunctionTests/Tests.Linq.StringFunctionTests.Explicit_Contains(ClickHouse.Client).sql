@@ -2,39 +2,39 @@
 -- ClickHouse.Client ClickHouse
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	Patient r
 WHERE
-	position(r.Diagnosis, 'Paranoid') > toInt32(0)
+	position(r.Diagnosis, 'Paranoid') > 0
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	Patient r
 WHERE
-	position(r.Diagnosis, 'paranoid') > toInt32(0)
+	position(r.Diagnosis, 'paranoid') > 0
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	Patient r
 WHERE
-	positionCaseInsensitive(r.Diagnosis, 'paranoid') > toInt32(0)
+	positionCaseInsensitive(r.Diagnosis, 'paranoid') > 0
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	Patient r
 WHERE
-	positionCaseInsensitive(r.Diagnosis, 'Paranoid') > toInt32(0)
+	positionCaseInsensitive(r.Diagnosis, 'Paranoid') > 0
 

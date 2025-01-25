@@ -74,13 +74,13 @@ SELECT
 	CASE
 		WHEN EXISTS(
 			SELECT
-				"t1"."Value"
+				"group_1"."Value"
 			FROM
-				"TakeSkipClass" "t1"
+				"TakeSkipClass" "group_1"
 			GROUP BY
-				"t1"."Value"
+				"group_1"."Value"
 			HAVING
-				Count(*) > 1
+				COUNT(*) > 1
 			LIMIT 1
 		)
 			THEN 1

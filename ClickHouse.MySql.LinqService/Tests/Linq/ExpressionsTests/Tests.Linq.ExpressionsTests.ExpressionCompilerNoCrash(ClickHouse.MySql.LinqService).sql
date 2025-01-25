@@ -10,5 +10,5 @@ SELECT
 FROM
 	Person p
 WHERE
-	p.PersonID IN (toInt32(1), toInt32(2), toInt32(3))
+	p.PersonID IN (1, 2, 3)
 

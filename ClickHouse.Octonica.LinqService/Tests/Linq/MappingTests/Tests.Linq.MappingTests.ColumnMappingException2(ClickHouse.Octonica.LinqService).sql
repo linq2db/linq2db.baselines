@@ -2,7 +2,7 @@
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
-	_.LastName
+	t1.LastName
 FROM
-	Person _
+	Person t1
 

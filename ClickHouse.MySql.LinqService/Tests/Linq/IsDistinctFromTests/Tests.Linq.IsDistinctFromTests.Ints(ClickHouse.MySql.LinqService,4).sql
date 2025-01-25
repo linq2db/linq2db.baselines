@@ -27,8 +27,8 @@ INSERT INTO Src
 )
 VALUES
 (
-	toInt32(2),
-	toInt32(2),
+	2,
+	2,
 	'abc',
 	'abc'
 )
@@ -45,7 +45,7 @@ INSERT INTO Src
 )
 VALUES
 (
-	toInt32(3),
+	3,
 	NULL,
 	'def',
 	NULL
@@ -55,41 +55,41 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	Src s
 WHERE
-	CASE WHEN s.Int = toInt32(4) OR s.Int IS NULL AND toInt32(4) IS NULL THEN 0 ELSE 1 END = 1
+	CASE WHEN s.Int = 4 OR s.Int IS NULL AND 4 IS NULL THEN 0 ELSE 1 END = 1
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	Src s
 WHERE
-	CASE WHEN s.NullableInt = toInt32(4) OR s.NullableInt IS NULL AND toInt32(4) IS NULL THEN 0 ELSE 1 END = 1
+	CASE WHEN s.NullableInt = 4 OR s.NullableInt IS NULL AND 4 IS NULL THEN 0 ELSE 1 END = 1
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	Src s
 WHERE
-	CASE WHEN s.Int = toInt32(4) OR s.Int IS NULL AND toInt32(4) IS NULL THEN 0 ELSE 1 END = 0
+	CASE WHEN s.Int = 4 OR s.Int IS NULL AND 4 IS NULL THEN 0 ELSE 1 END = 0
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	Src s
 WHERE
-	CASE WHEN s.NullableInt = toInt32(4) OR s.NullableInt IS NULL AND toInt32(4) IS NULL THEN 0 ELSE 1 END = 0
+	CASE WHEN s.NullableInt = 4 OR s.NullableInt IS NULL AND 4 IS NULL THEN 0 ELSE 1 END = 0
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse

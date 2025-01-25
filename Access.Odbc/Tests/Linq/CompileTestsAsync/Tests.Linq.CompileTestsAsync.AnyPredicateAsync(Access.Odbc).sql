@@ -159,7 +159,7 @@ DECLARE @Id Int -- Int32
 SET     @Id = 2
 
 SELECT
-	Count(*) > 0
+	IIF(COUNT(*) > 0, True, False)
 FROM
 	[AsyncDataTable] [c_1]
 WHERE

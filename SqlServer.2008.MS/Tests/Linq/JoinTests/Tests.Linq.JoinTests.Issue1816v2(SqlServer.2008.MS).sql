@@ -57,12 +57,12 @@ BeforeExecute
 
 SELECT
 	[v].[inId],
-	[r].[inIdState],
+	[t].[inIdState],
 	[a_Main].[inIdType]
 FROM
 	[stVersions] [v]
 		INNER JOIN [stMain] [a_Main] ON [v].[inIdMain] = [a_Main].[inId]
-		LEFT JOIN [rlStatesTypesAndUserGroups] [r] ON [r].[inIdType] = [a_Main].[inIdType]
+		LEFT JOIN [rlStatesTypesAndUserGroups] [t] ON [t].[inIdType] = [a_Main].[inIdType]
 
 BeforeExecute
 -- SqlServer.2008.MS SqlServer.2008

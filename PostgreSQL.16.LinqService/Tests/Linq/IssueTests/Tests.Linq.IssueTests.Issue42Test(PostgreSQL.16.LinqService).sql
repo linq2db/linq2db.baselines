@@ -1,7 +1,5 @@
 ﻿BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
-DECLARE @take Integer -- Int32
-SET     @take = 1
 
 SELECT
 	r."ID",
@@ -18,7 +16,27 @@ FROM
 	"LinqDataTypes" r
 WHERE
 	r."ID" = 1
-LIMIT :take
+LIMIT 1
+
+BeforeExecute
+-- PostgreSQL.16 PostgreSQL.15 PostgreSQL
+
+SELECT
+	r."ID",
+	r."MoneyValue",
+	r."DateTimeValue",
+	r."DateTimeValue2",
+	r."BoolValue",
+	r."GuidValue",
+	r."SmallIntValue",
+	r."IntValue",
+	r."BigIntValue",
+	r."StringValue"
+FROM
+	"LinqDataTypes" r
+WHERE
+	r."ID" = 1
+LIMIT 1
 
 BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
@@ -62,8 +80,6 @@ BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 DECLARE @ID Integer -- Int32
 SET     @ID = 1
-DECLARE @take Integer -- Int32
-SET     @take = 1
 
 SELECT
 	r."ID",
@@ -80,7 +96,7 @@ FROM
 	"LinqDataTypes" r
 WHERE
 	r."ID" = :ID
-LIMIT :take
+LIMIT 1
 
 BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
@@ -119,4 +135,24 @@ SET
 	"StringValue" = :StringValue
 WHERE
 	"LinqDataTypes"."ID" = :ID
+
+BeforeExecute
+-- PostgreSQL.16 PostgreSQL.15 PostgreSQL
+
+SELECT
+	r."ID",
+	r."MoneyValue",
+	r."DateTimeValue",
+	r."DateTimeValue2",
+	r."BoolValue",
+	r."GuidValue",
+	r."SmallIntValue",
+	r."IntValue",
+	r."BigIntValue",
+	r."StringValue"
+FROM
+	"LinqDataTypes" r
+WHERE
+	r."ID" = 1
+LIMIT 1
 

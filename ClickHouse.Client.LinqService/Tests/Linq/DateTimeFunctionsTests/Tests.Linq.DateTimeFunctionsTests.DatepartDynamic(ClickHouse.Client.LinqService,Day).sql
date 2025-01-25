@@ -2,7 +2,7 @@
 -- ClickHouse.Client ClickHouse
 
 SELECT
-	DAY(t.DateTimeValue)
+	toDayOfMonth(t.DateTimeValue)
 FROM
 	LinqDataTypes t
 

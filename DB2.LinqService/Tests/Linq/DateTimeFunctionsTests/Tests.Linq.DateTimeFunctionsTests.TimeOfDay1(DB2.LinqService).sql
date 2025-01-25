@@ -2,7 +2,7 @@
 -- DB2 DB2.LUW DB2LUW
 
 SELECT
-	Time("t"."DateTimeValue")
+	CAST("t"."DateTimeValue" AS Time)
 FROM
 	"LinqDataTypes" "t"
 

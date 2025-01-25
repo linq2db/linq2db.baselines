@@ -2,9 +2,9 @@
 -- Informix.DB2 Informix
 
 SELECT
-	Max(p.PersonID)
+	MAX(t1.PersonID)
 FROM
-	Person p
+	Person t1
 
 BeforeExecute
 -- Informix.DB2 Informix
@@ -37,10 +37,10 @@ BeforeExecute
 
 SELECT FIRST 2
 	p.PersonID,
-	p.Gender,
 	p.FirstName,
 	p.MiddleName,
-	p.LastName
+	p.LastName,
+	p.Gender
 FROM
 	Person p
 WHERE

@@ -25,8 +25,8 @@ INSERT INTO Item
 	Name
 )
 VALUES
-(toInt32(1),'Item 1'),
-(toInt32(2),'Item 2')
+(1,'Item 1'),
+(2,'Item 2')
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -57,21 +57,23 @@ INSERT INTO ItemText
 	Text
 )
 VALUES
-(toInt32(1),'de','Item 1 german text'),
-(toInt32(1),'en','Item 1 english text'),
-(toInt32(2),'de','Item 2 german text'),
-(toInt32(2),'en','Item 2 english text')
+(1,'de','Item 1 german text'),
+(1,'en','Item 1 english text'),
+(2,'de','Item 2 german text'),
+(2,'en','Item 2 english text')
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
-	item_1.Id,
-	detail.Lang,
-	detail.Text
+	m_1.Id,
+	d.Lang,
+	d.Text
 FROM
-	Item item_1
-		INNER JOIN ItemText detail ON item_1.Id = detail.ItemId AND detail.Lang = 'de'
+	Item m_1
+		INNER JOIN ItemText d ON m_1.Id = d.ItemId
+WHERE
+	d.Lang = 'de'
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse

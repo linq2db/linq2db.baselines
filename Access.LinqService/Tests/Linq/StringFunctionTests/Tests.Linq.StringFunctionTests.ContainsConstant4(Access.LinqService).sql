@@ -1,24 +1,20 @@
 ﻿BeforeExecute
 -- Access AccessOleDb
-DECLARE @s VarWChar(7) -- String
-SET     @s = '123[456'
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	[Person] [p]
 WHERE
-	[p].[PersonID] = 1 AND @s LIKE '%[[]%'
+	[p].[PersonID] = 1
 
 BeforeExecute
 -- Access AccessOleDb
-DECLARE @s VarWChar(7) -- String
-SET     @s = '123[456'
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	[Person] [p]
 WHERE
-	[p].[PersonID] = 1 AND @s NOT LIKE '%[[]%'
+	1 = 0
 

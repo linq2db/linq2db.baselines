@@ -37,34 +37,34 @@ BeforeExecute
 -- SqlServer.2017.MS SqlServer.2017
 
 SELECT
-	[e_1].[ManufacturerId],
-	[e_1].[CountryCode],
-	[e_1].[Name],
-	[co].[Code],
-	[co].[Name],
 	[t1].[ManufacturerId],
 	[t1].[CountryCode],
 	[t1].[Name],
-	[t1].[Code],
-	[t1].[Name_1]
+	[co].[Code],
+	[co].[Name],
+	[m_2].[ManufacturerId],
+	[m_2].[CountryCode],
+	[m_2].[Name],
+	[m_2].[Code],
+	[m_2].[Name_1]
 FROM
-	[Manufacturer] [e_1]
-		LEFT JOIN [Country] [co] ON [co].[Code] = [e_1].[CountryCode]
+	[Manufacturer] [t1]
+		LEFT JOIN [Country] [co] ON [co].[Code] = [t1].[CountryCode]
 		LEFT JOIN (
 			SELECT
-				[e].[ManufacturerId],
-				[e].[CountryCode],
-				[e].[Name],
+				[m_1].[ManufacturerId],
+				[m_1].[CountryCode],
+				[m_1].[Name],
 				[co_1].[Code],
 				[co_1].[Name] as [Name_1]
 			FROM
-				[Manufacturer] [e]
-					LEFT JOIN [Country] [co_1] ON [co_1].[Code] = [e].[CountryCode]
+				[Manufacturer] [m_1]
+					LEFT JOIN [Country] [co_1] ON [co_1].[Code] = [m_1].[CountryCode]
 			WHERE
-				[e].[ManufacturerId] = 2
-		) [t1] ON 1=1
+				[m_1].[ManufacturerId] = 2
+		) [m_2] ON 1=1
 WHERE
-	[e_1].[ManufacturerId] = 1
+	[t1].[ManufacturerId] = 1
 
 BeforeExecute
 -- SqlServer.2017.MS SqlServer.2017

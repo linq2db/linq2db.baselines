@@ -61,21 +61,21 @@ BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
-	"TypeConvertTable" "_"
+	"TypeConvertTable" "t1"
 WHERE
-	"_"."BoolValue" = 'N'
+	"t1"."BoolValue" = 'N'
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
-	"TypeConvertTable" "_"
+	"TypeConvertTable" "t1"
 WHERE
-	"_"."BoolValue" = 'Y'
+	"t1"."BoolValue" = 'Y'
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
@@ -83,215 +83,171 @@ DECLARE @GuidValue VarChar(36) -- AnsiString
 SET     @GuidValue = 'a948600d-de21-4f74-8ac2-9516b287076e'
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
-	"TypeConvertTable" "_"
+	"TypeConvertTable" "t1"
 WHERE
-	"_"."GuidValue" = ?
+	"t1"."GuidValue" = ?
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @BoolValue Char(1) -- AnsiStringFixedLength
-SET     @BoolValue = 'N'
-DECLARE @take  -- Int32
-SET     @take = 1
 
 SELECT
-	"_"."Name",
-	"_"."BoolValue",
-	"_"."GuidValue"
+	"t1"."Name",
+	"t1"."BoolValue",
+	"t1"."GuidValue"
 FROM
-	"TypeConvertTable" "_"
+	"TypeConvertTable" "t1"
 WHERE
-	"_"."BoolValue" = ?
-LIMIT ?
+	"t1"."BoolValue" = 'N'
+LIMIT 1
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @BoolValue Char(1) -- AnsiStringFixedLength
-SET     @BoolValue = 'Y'
-DECLARE @take  -- Int32
-SET     @take = 1
 
 SELECT
-	"_"."Name",
-	"_"."BoolValue",
-	"_"."GuidValue"
+	"t1"."Name",
+	"t1"."BoolValue",
+	"t1"."GuidValue"
 FROM
-	"TypeConvertTable" "_"
+	"TypeConvertTable" "t1"
 WHERE
-	"_"."BoolValue" = ?
-LIMIT ?
+	"t1"."BoolValue" = 'Y'
+LIMIT 1
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @BoolValue Char(1) -- AnsiStringFixedLength
-SET     @BoolValue = 'N'
-DECLARE @take  -- Int32
-SET     @take = 1
 
 SELECT
-	"_"."Name",
-	"_"."BoolValue",
-	"_"."GuidValue"
+	"t1"."Name",
+	"t1"."BoolValue",
+	"t1"."GuidValue"
 FROM
-	"TypeConvertTable" "_"
+	"TypeConvertTable" "t1"
 WHERE
-	"_"."BoolValue" = ?
-LIMIT ?
+	"t1"."BoolValue" = 'N'
+LIMIT 1
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @BoolValue Char(1) -- AnsiStringFixedLength
-SET     @BoolValue = 'Y'
-DECLARE @take  -- Int32
-SET     @take = 1
 
 SELECT
-	"_"."Name",
-	"_"."BoolValue",
-	"_"."GuidValue"
+	"t1"."Name",
+	"t1"."BoolValue",
+	"t1"."GuidValue"
 FROM
-	"TypeConvertTable" "_"
+	"TypeConvertTable" "t1"
 WHERE
-	"_"."BoolValue" = ?
-LIMIT ?
+	"t1"."BoolValue" = 'Y'
+LIMIT 1
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @BoolValue Char(1) -- AnsiStringFixedLength
-SET     @BoolValue = 'N'
-DECLARE @take  -- Int32
-SET     @take = 1
 
 SELECT
-	"_"."Name",
-	"_"."BoolValue",
-	"_"."GuidValue"
+	"t1"."Name",
+	"t1"."BoolValue",
+	"t1"."GuidValue"
 FROM
-	"TypeConvertTable" "_"
+	"TypeConvertTable" "t1"
 WHERE
-	"_"."BoolValue" = ?
-LIMIT ?
+	"t1"."BoolValue" = 'N'
+LIMIT 1
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @BoolValue Char(1) -- AnsiStringFixedLength
-SET     @BoolValue = 'Y'
-DECLARE @take  -- Int32
-SET     @take = 1
 
 SELECT
-	"_"."Name",
-	"_"."BoolValue",
-	"_"."GuidValue"
+	"t1"."Name",
+	"t1"."BoolValue",
+	"t1"."GuidValue"
 FROM
-	"TypeConvertTable" "_"
+	"TypeConvertTable" "t1"
 WHERE
-	"_"."BoolValue" = ?
-LIMIT ?
+	"t1"."BoolValue" = 'Y'
+LIMIT 1
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @BoolValue Char(1) -- AnsiStringFixedLength
-SET     @BoolValue = 'N'
-DECLARE @take  -- Int32
-SET     @take = 1
 
 SELECT
-	"_"."Name",
-	"_"."BoolValue",
-	"_"."GuidValue"
+	"t1"."Name",
+	"t1"."BoolValue",
+	"t1"."GuidValue"
 FROM
-	"TypeConvertTable" "_"
+	"TypeConvertTable" "t1"
 WHERE
-	"_"."BoolValue" = ?
-LIMIT ?
+	"t1"."BoolValue" = 'N'
+LIMIT 1
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @BoolValue Char(1) -- AnsiStringFixedLength
-SET     @BoolValue = 'Y'
-DECLARE @take  -- Int32
-SET     @take = 1
 
 SELECT
-	"_"."Name",
-	"_"."BoolValue",
-	"_"."GuidValue"
+	"t1"."Name",
+	"t1"."BoolValue",
+	"t1"."GuidValue"
 FROM
-	"TypeConvertTable" "_"
+	"TypeConvertTable" "t1"
 WHERE
-	"_"."BoolValue" = ?
-LIMIT ?
+	"t1"."BoolValue" = 'Y'
+LIMIT 1
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @BoolValue Char(1) -- AnsiStringFixedLength
-SET     @BoolValue = 'N'
-DECLARE @take  -- Int32
-SET     @take = 1
 
 SELECT
-	"_"."Name",
-	"_"."BoolValue",
-	"_"."GuidValue"
+	"t1"."Name",
+	"t1"."BoolValue",
+	"t1"."GuidValue"
 FROM
-	"TypeConvertTable" "_"
+	"TypeConvertTable" "t1"
 WHERE
-	"_"."BoolValue" = ?
-LIMIT ?
+	"t1"."BoolValue" = 'N'
+LIMIT 1
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @BoolValue Char(1) -- AnsiStringFixedLength
-SET     @BoolValue = 'Y'
-DECLARE @take  -- Int32
-SET     @take = 1
 
 SELECT
-	"_"."Name",
-	"_"."BoolValue",
-	"_"."GuidValue"
+	"t1"."Name",
+	"t1"."BoolValue",
+	"t1"."GuidValue"
 FROM
-	"TypeConvertTable" "_"
+	"TypeConvertTable" "t1"
 WHERE
-	"_"."BoolValue" = ?
-LIMIT ?
+	"t1"."BoolValue" = 'Y'
+LIMIT 1
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @GuidValue VarChar(36) -- AnsiString
 SET     @GuidValue = 'bc7b663d-0fde-4327-8f92-5d8cc3a11d11'
-DECLARE @take  -- Int32
-SET     @take = 1
 
 SELECT
-	"_"."Name",
-	"_"."BoolValue",
-	"_"."GuidValue"
+	"t1"."Name",
+	"t1"."BoolValue",
+	"t1"."GuidValue"
 FROM
-	"TypeConvertTable" "_"
+	"TypeConvertTable" "t1"
 WHERE
-	"_"."GuidValue" = ?
-LIMIT ?
+	"t1"."GuidValue" = ?
+LIMIT 1
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @GuidValue VarChar(36) -- AnsiString
 SET     @GuidValue = 'a948600d-de21-4f74-8ac2-9516b287076e'
-DECLARE @take  -- Int32
-SET     @take = 1
 
 SELECT
-	"_"."Name",
-	"_"."BoolValue",
-	"_"."GuidValue"
+	"t1"."Name",
+	"t1"."BoolValue",
+	"t1"."GuidValue"
 FROM
-	"TypeConvertTable" "_"
+	"TypeConvertTable" "t1"
 WHERE
-	"_"."GuidValue" = ?
-LIMIT ?
+	"t1"."GuidValue" = ?
+LIMIT 1
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc

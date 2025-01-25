@@ -10,6 +10,6 @@ SELECT
 FROM
 	Person p
 WHERE
-	Substring(p.FirstName, toInt32(2), CHAR_LENGTH(p.FirstName) - toInt32(1)) = 'ohn' AND
-	p.PersonID = toInt32(1)
+	Substring(p.FirstName, 2, CHAR_LENGTH(p.FirstName) - 1) = 'ohn' AND
+	p.PersonID = 1
 

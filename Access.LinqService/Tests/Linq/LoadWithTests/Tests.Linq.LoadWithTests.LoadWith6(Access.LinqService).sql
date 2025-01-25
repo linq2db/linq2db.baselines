@@ -2,39 +2,35 @@
 -- Access AccessOleDb
 
 SELECT
-	[lw_Child].[ParentID],
-	[lw_Child].[ChildID],
-	[detail].[ParentID],
-	[detail].[ChildID],
-	[detail].[GrandChildID],
+	[m_1].[ParentID],
+	[m_1].[ChildID],
+	[d].[ParentID],
+	[d].[ChildID],
+	[d].[GrandChildID],
 	[a_Child].[ParentID],
 	[a_Child].[ChildID],
 	[a_Parent].[ParentID],
 	[a_Parent].[Value1]
 FROM
-	(([Child] [lw_Child]
-		INNER JOIN [GrandChild] [detail] ON ([lw_Child].[ParentID] = [detail].[ParentID] AND [lw_Child].[ChildID] = [detail].[ChildID]))
-			LEFT JOIN [Child] [a_Child] ON ([detail].[ParentID] = [a_Child].[ParentID] AND [detail].[ChildID] = [a_Child].[ChildID]))
+	(([Child] [m_1]
+		INNER JOIN [GrandChild] [d] ON ([m_1].[ParentID] = [d].[ParentID] AND [m_1].[ChildID] = [d].[ChildID]))
+		LEFT JOIN [Child] [a_Child] ON ([d].[ParentID] = [a_Child].[ParentID] AND [d].[ChildID] = [a_Child].[ChildID]))
 		LEFT JOIN [Parent] [a_Parent] ON ([a_Child].[ParentID] = [a_Parent].[ParentID])
 
 BeforeExecute
 -- Access AccessOleDb
 
 SELECT
-	[t2].[Count_1],
+	(
+		SELECT
+			COUNT(*)
+		FROM
+			[GrandChild] [a_GrandChildren]
+		WHERE
+			[p].[ParentID] = [a_GrandChildren].[ParentID] AND [p].[ChildID] = [a_GrandChildren].[ChildID]
+	),
 	[p].[ParentID],
 	[p].[ChildID]
 FROM
 	[Child] [p]
-		LEFT JOIN (
-			SELECT
-				Count(*) as [Count_1],
-				[t1].[ParentID],
-				[t1].[ChildID]
-			FROM
-				[GrandChild] [t1]
-			GROUP BY
-				[t1].[ParentID],
-				[t1].[ChildID]
-		) [t2] ON ([p].[ParentID] = [t2].[ParentID] AND [p].[ChildID] = [t2].[ChildID])
 

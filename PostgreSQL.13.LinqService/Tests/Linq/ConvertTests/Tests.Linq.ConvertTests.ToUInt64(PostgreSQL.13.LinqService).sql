@@ -1,12 +1,15 @@
 ﻿BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
-DECLARE @p Numeric(1, 0) -- Decimal
-SET     @p = 0
 
 SELECT
-	Cast(Floor(t."MoneyValue") as decimal(20))
+	p_1.c1
 FROM
-	"LinqDataTypes" t
+	(
+		SELECT
+			Floor(p."MoneyValue")::decimal(20) as c1
+		FROM
+			"LinqDataTypes" p
+	) p_1
 WHERE
-	Cast(Floor(t."MoneyValue") as decimal(20)) > :p
+	p_1.c1 > 0
 

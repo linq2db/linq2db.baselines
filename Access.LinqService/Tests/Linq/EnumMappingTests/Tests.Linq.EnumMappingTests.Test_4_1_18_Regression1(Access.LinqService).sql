@@ -28,6 +28,7 @@ BeforeExecute
 -- Access AccessOleDb
 
 SELECT
+	IIF([r].[BigIntValue] IS NOT NULL AND [r].[IntValue] IS NOT NULL, True, False),
 	[r].[BigIntValue],
 	[r].[IntValue]
 FROM

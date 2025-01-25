@@ -61,15 +61,13 @@ SELECT DBINFO('sqlca.sqlerrd1') FROM systables where tabid = 1
 
 BeforeExecute
 -- Informix.DB2 Informix
-DECLARE @Value Char(1) -- StringFixedLength
-SET     @Value = 'O'
 
 UPDATE
-	Person
+	Person t1
 SET
-	Person.Gender = @Value
+	Gender = 'O'
 WHERE
-	Person.FirstName LIKE 'UpdateComplex%' ESCAPE '~'
+	t1.FirstName LIKE 'UpdateComplex%' ESCAPE '~'
 
 BeforeExecute
 -- Informix.DB2 Informix

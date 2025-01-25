@@ -29,14 +29,12 @@ END;
 
 BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
-DECLARE @take Int32
-SET     @take = 1
 
 SELECT
-	sys_context('userenv', 'current_schema')
+	sys_context('userenv', 'current_schema') as "c1"
 FROM
 	"LinqDataTypes" t1
-FETCH NEXT :take ROWS ONLY
+FETCH NEXT 1 ROWS ONLY
 
 BeforeExecute
 INSERT BULK BULKCOPYTABLE(ID)

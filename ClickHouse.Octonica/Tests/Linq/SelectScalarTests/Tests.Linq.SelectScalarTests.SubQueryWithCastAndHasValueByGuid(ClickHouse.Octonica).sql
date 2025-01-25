@@ -2,16 +2,19 @@
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
-	_.ParentID,
-	_.Value1
+	t1.ParentID,
+	t1.Value1
 FROM
-	Parent _
+	Parent t1
 WHERE
 	(
 		SELECT
-			r.GuidValue
+			CASE
+				WHEN r.GuidValue IS NOT NULL THEN true
+				ELSE false
+			END
 		FROM
 			LinqDataTypes r
-		LIMIT toInt32(1)
-	) IS NOT NULL
+		LIMIT 1
+	) = true
 

@@ -28,7 +28,7 @@ INSERT INTO StLink
 )
 VALUES
 (
-	toInt32(1),
+	1,
 	toFloat64(2),
 	toFloat64(1)
 )
@@ -44,7 +44,7 @@ INSERT INTO StLink
 )
 VALUES
 (
-	toInt32(2),
+	2,
 	NULL,
 	NULL
 )
@@ -79,7 +79,7 @@ INSERT INTO EdtLink
 )
 VALUES
 (
-	toInt32(2),
+	2,
 	toFloat64(4),
 	toFloat64(3)
 )
@@ -88,41 +88,41 @@ BeforeExecute
 -- ClickHouse.Client ClickHouse
 
 SELECT
-	x.InId,
+	t1.InId,
 	CASE
-		WHEN j.InId IS NULL THEN x.InMinQuantity
-		ELSE j.InMinQuantity
+		WHEN e.InId IS NULL THEN t1.InMinQuantity
+		ELSE e.InMinQuantity
 	END,
 	CASE
-		WHEN j.InId IS NULL THEN x.InMaxQuantity
-		ELSE j.InMaxQuantity
+		WHEN e.InId IS NULL THEN t1.InMaxQuantity
+		ELSE e.InMaxQuantity
 	END
 FROM
-	StLink x
-		LEFT JOIN EdtLink j ON x.InId = j.InId
+	StLink t1
+		LEFT JOIN EdtLink e ON t1.InId = e.InId
 WHERE
-	x.InId = toInt32(1)
-LIMIT toInt32(2)
+	t1.InId = 1
+LIMIT 2
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
 
 SELECT
-	x.InId,
+	t1.InId,
 	CASE
-		WHEN j.InId IS NULL THEN x.InMinQuantity
-		ELSE j.InMinQuantity
+		WHEN e.InId IS NULL THEN t1.InMinQuantity
+		ELSE e.InMinQuantity
 	END,
 	CASE
-		WHEN j.InId IS NULL THEN x.InMaxQuantity
-		ELSE j.InMaxQuantity
+		WHEN e.InId IS NULL THEN t1.InMaxQuantity
+		ELSE e.InMaxQuantity
 	END
 FROM
-	StLink x
-		LEFT JOIN EdtLink j ON x.InId = j.InId
+	StLink t1
+		LEFT JOIN EdtLink e ON t1.InId = e.InId
 WHERE
-	x.InId = toInt32(2)
-LIMIT toInt32(2)
+	t1.InId = 2
+LIMIT 2
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse

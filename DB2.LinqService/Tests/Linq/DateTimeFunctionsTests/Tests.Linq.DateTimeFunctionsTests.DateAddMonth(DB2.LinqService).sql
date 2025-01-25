@@ -2,7 +2,7 @@
 -- DB2 DB2.LUW DB2LUW
 
 SELECT
-	"t"."DateTimeValue" + 2 Month
+	DATE("t"."DateTimeValue" + 2 MONTH)
 FROM
 	"LinqDataTypes" "t"
 

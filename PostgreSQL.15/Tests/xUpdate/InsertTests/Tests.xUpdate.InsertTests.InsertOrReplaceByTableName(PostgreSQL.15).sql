@@ -58,7 +58,7 @@ BeforeExecute
 -- PostgreSQL.15 PostgreSQL
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	"xxPatient" t1
 
@@ -106,7 +106,7 @@ BeforeExecute
 -- PostgreSQL.15 PostgreSQL
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	"xxPatient" t1
 

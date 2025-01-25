@@ -2,8 +2,6 @@
 -- SqlServer.2022.MS SqlServer.2022
 DECLARE @take Int -- Int32
 SET     @take = 10
-DECLARE @take_1 Int -- Int32
-SET     @take_1 = 1
 
 SELECT TOP (@take)
 	[t1].[ParentID],
@@ -11,7 +9,7 @@ SELECT TOP (@take)
 FROM
 	[Parent] [p]
 		OUTER APPLY (
-			SELECT TOP (@take_1)
+			SELECT TOP (1)
 				[c_1].[ParentID],
 				[c_1].[ChildID]
 			FROM

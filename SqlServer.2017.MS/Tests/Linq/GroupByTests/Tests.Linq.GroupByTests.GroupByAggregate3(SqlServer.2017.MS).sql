@@ -2,48 +2,23 @@
 -- SqlServer.2017.MS SqlServer.2017
 
 SELECT
-	[t1].[Key_1]
+	[g_2].[c1]
 FROM
 	(
 		SELECT
 			IIF((
 				SELECT
-					Avg([c_1].[ParentID])
+					AVG([a_Children].[ParentID])
 				FROM
-					[Child] [c_1]
+					[Child] [a_Children]
 				WHERE
-					[selectParam].[ParentID] = [c_1].[ParentID]
-			) > 3, 1, 0) as [Key_1]
+					[g_1].[ParentID] = [a_Children].[ParentID]
+			) > 3, 1, 0) as [c1]
 		FROM
-			[Parent] [selectParam]
-	) [t1]
+			[Parent] [g_1]
+	) [g_2]
 GROUP BY
-	[t1].[Key_1]
-
-BeforeExecute
--- SqlServer.2017.MS SqlServer.2017
-DECLARE @p Bit -- Boolean
-SET     @p = 0
-
-SELECT
-	[underscore].[ParentID],
-	[underscore].[Value1]
-FROM
-	(
-		SELECT
-			IIF((
-				SELECT
-					Avg([c_1].[ParentID])
-				FROM
-					[Child] [c_1]
-				WHERE
-					[selectParam].[ParentID] = [c_1].[ParentID]
-			) > 3, 1, 0) as [Key_1],
-			[selectParam].[ParentID],
-			[selectParam].[Value1]
-		FROM
-			[Parent] [selectParam]
-	) [underscore]
-WHERE
-	[underscore].[Key_1] = @p
+	[g_2].[c1]
+ORDER BY
+	[g_2].[c1]
 

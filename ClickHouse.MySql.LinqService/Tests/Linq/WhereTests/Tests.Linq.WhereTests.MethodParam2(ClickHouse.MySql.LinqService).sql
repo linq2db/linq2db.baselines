@@ -6,7 +6,7 @@ SELECT
 FROM
 	Person p
 WHERE
-	p.PersonID = toInt32(1)
+	p.PersonID = 1
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
@@ -16,5 +16,5 @@ SELECT
 FROM
 	Person p
 WHERE
-	p.PersonID = toInt32(2)
+	p.PersonID = 2
 

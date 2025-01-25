@@ -36,16 +36,17 @@ BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL (asynchronously)
 DECLARE @Id Integer -- Int32
 SET     @Id = 2
-DECLARE @take Integer -- Int32
-SET     @take = 1
+DECLARE @Id_1 Integer -- Int32
+SET     @Id_1 = 2
 
 SELECT
+	:Id,
 	c_1."Id"
 FROM
 	"AsyncDataTable" c_1
 WHERE
-	c_1."Id" = :Id
-LIMIT :take
+	c_1."Id" = :Id_1
+LIMIT 1
 
 BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL

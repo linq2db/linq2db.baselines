@@ -1,16 +1,14 @@
 ﻿BeforeExecute
 -- SqlServer.2012
-DECLARE @take Int -- Int32
-SET     @take = 2
 DECLARE @ID Int -- Int32
 SET     @ID = 1
 
-SELECT TOP (@take)
+SELECT TOP (2)
 	[p].[PersonID],
-	[p].[Gender],
 	[p].[FirstName],
 	[p].[MiddleName],
-	[p].[LastName]
+	[p].[LastName],
+	[p].[Gender]
 FROM
 	[Person] [p]
 WHERE

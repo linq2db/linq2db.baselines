@@ -3,33 +3,27 @@
 
 SELECT
 	tt.ParentID,
-	tt.Sum_1
+	sumOrNull(tt.ID)
 FROM
 	(
 		SELECT
-			sumOrNull(t1.ID) as Sum_1,
-			t1.ParentID as ParentID
+			gr.ParentID as ParentID,
+			gr.ChildID as ID
 		FROM
-			(
-				SELECT
-					c_1.ParentID as ParentID,
-					c_1.ChildID as ID
-				FROM
-					Child c_1
-				WHERE
-					c_1.ParentID < toInt32(4)
-				UNION ALL
-				SELECT
-					Coalesce(g_1.ParentID, toInt32(0)) as ParentID,
-					Coalesce(g_1.GrandChildID, toInt32(0)) as ID
-				FROM
-					GrandChild g_1
-				WHERE
-					g_1.ParentID >= toInt32(4)
-			) t1
-		GROUP BY
-			t1.ParentID
+			Child gr
+		WHERE
+			gr.ParentID < 4
+		UNION ALL
+		SELECT
+			Coalesce(g_1.ParentID, 0) as ParentID,
+			Coalesce(g_1.GrandChildID, 0) as ID
+		FROM
+			GrandChild g_1
+		WHERE
+			g_1.ParentID >= 4
 	) tt
-WHERE
-	(tt.Sum_1 <> toInt32(0) OR tt.Sum_1 IS NULL)
+GROUP BY
+	tt.ParentID
+HAVING
+	(sumOrNull(tt.ID) <> 0 OR sumOrNull(tt.ID) IS NULL)
 

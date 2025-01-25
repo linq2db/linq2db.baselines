@@ -63,11 +63,11 @@ UPDATE
 SET
 	[a_MainOptional].[Field] = N'test'
 FROM
-	[MainTable] [_]
-		LEFT JOIN [AssociatedTable] [a_AssociatedOptional] ON [_].[Id] = [a_AssociatedOptional].[Id]
+	[MainTable] [t1]
+		LEFT JOIN [AssociatedTable] [a_AssociatedOptional] ON [t1].[Id] = [a_AssociatedOptional].[Id]
 		LEFT JOIN [MainTable] [a_MainOptional] ON [a_AssociatedOptional].[Id] = [a_MainOptional].[Id]
 WHERE
-	[_].[Id] = @id
+	[t1].[Id] = @id
 
 BeforeExecute
 -- SqlServer.2012.MS SqlServer.2012

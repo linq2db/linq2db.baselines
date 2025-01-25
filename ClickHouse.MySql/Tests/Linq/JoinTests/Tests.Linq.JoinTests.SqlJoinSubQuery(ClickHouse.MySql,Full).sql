@@ -3,7 +3,7 @@
 
 SELECT
 	p_1.ParentID,
-	r.ChildID
+	c_1.ChildID
 FROM
 	(
 		SELECT
@@ -11,8 +11,8 @@ FROM
 		FROM
 			Parent p
 		WHERE
-			p.ParentID > toInt32(0)
-		LIMIT toInt32(10)
+			p.ParentID > 0
+		LIMIT 10
 	) p_1
-		FULL JOIN Child r ON p_1.ParentID = r.ParentID
+		FULL JOIN Child c_1 ON p_1.ParentID = c_1.ParentID
 

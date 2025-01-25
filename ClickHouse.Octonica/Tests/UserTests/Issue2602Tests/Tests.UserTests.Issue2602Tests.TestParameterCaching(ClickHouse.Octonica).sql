@@ -38,26 +38,21 @@ BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
-	lw_Email.Id,
-	detail.Id,
-	detail.EmailId,
-	detail.FileName
+	m_1.Id,
+	d.Id,
+	d.EmailId,
+	d.FileName
 FROM
 	(
-		SELECT DISTINCT
-			t1.Id as Id
+		SELECT
+			c_1.Id as Id
 		FROM
-			(
-				SELECT
-					c_1.Id as Id
-				FROM
-					Emails c_1
-				WHERE
-					c_1.Id = toInt32(35)
-				LIMIT toInt32(1)
-			) t1
-	) lw_Email
-		INNER JOIN EmailAttachment detail ON lw_Email.Id = detail.EmailId
+			Emails c_1
+		WHERE
+			c_1.Id = 35
+		LIMIT 1
+	) m_1
+		INNER JOIN EmailAttachment d ON m_1.Id = d.EmailId
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -67,33 +62,28 @@ SELECT
 FROM
 	Emails c_1
 WHERE
-	c_1.Id = toInt32(35)
-LIMIT toInt32(1)
+	c_1.Id = 35
+LIMIT 1
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
-	lw_Email.Id,
-	detail.Id,
-	detail.EmailId,
-	detail.FileName
+	m_1.Id,
+	d.Id,
+	d.EmailId,
+	d.FileName
 FROM
 	(
-		SELECT DISTINCT
-			t1.Id as Id
+		SELECT
+			c_1.Id as Id
 		FROM
-			(
-				SELECT
-					c_1.Id as Id
-				FROM
-					Emails c_1
-				WHERE
-					c_1.Id = toInt32(36)
-				LIMIT toInt32(1)
-			) t1
-	) lw_Email
-		INNER JOIN EmailAttachment detail ON lw_Email.Id = detail.EmailId
+			Emails c_1
+		WHERE
+			c_1.Id = 36
+		LIMIT 1
+	) m_1
+		INNER JOIN EmailAttachment d ON m_1.Id = d.EmailId
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -103,8 +93,8 @@ SELECT
 FROM
 	Emails c_1
 WHERE
-	c_1.Id = toInt32(36)
-LIMIT toInt32(1)
+	c_1.Id = 36
+LIMIT 1
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse

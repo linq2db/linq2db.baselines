@@ -2,14 +2,9 @@
 -- PostgreSQL.12 PostgreSQL.9.5 PostgreSQL
 
 SELECT
-	t.c1
+	make_timestamp(Floor(Extract(year From t."DateTimeValue"))::Int, 10, 1, 0, 0, 0)
 FROM
-	(
-		SELECT
-			Cast((Lpad(Cast(Floor(Extract(year from p."DateTimeValue")) as int)::text,4,'0') || '-10-01') as Date) as c1
-		FROM
-			"LinqDataTypes" p
-	) t
+	"LinqDataTypes" t
 WHERE
-	Cast(Floor(Extract(month from t.c1)) as int) = 10
+	Floor(Extract(month From make_timestamp(Floor(Extract(year From t."DateTimeValue"))::Int, 10, 1, 0, 0, 0)))::Int = 10
 

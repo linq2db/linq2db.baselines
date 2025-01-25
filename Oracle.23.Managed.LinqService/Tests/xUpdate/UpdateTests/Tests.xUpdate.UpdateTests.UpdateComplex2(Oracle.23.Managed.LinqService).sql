@@ -42,21 +42,19 @@ BeforeExecute
 -- Oracle.23.Managed Oracle.Managed Oracle12
 
 UPDATE
-	"Person"
+	"Person" t1
 SET
-	"Person"."LastName" = "Person"."FirstName"
+	"LastName" = t1."FirstName"
 WHERE
-	"Person"."FirstName" LIKE 'UpdateComplex%' ESCAPE '~'
+	t1."FirstName" LIKE 'UpdateComplex%' ESCAPE '~'
 
 BeforeExecute
 -- Oracle.23.Managed Oracle.Managed Oracle12
 DECLARE @id Int32
 SET     @id = 5
-DECLARE @take Int32
-SET     @take = 1
 
 SELECT
-	t1."PersonID",
+	t1."PersonID" as ID,
 	t1."Gender",
 	t1."FirstName",
 	t1."MiddleName",
@@ -65,5 +63,5 @@ FROM
 	"Person" t1
 WHERE
 	t1."PersonID" = :id
-FETCH NEXT :take ROWS ONLY
+FETCH NEXT 1 ROWS ONLY
 

@@ -2,22 +2,19 @@
 -- SqlServer.2012
 
 SELECT
-	(
-		SELECT
-			Count(*)
-		FROM
-			[Child] [t1]
-		WHERE
-			[p].[ParentID] = [t1].[ParentID]
-	),
-	(
-		SELECT
-			Count(*)
-		FROM
-			[Child] [t2]
-		WHERE
-			[p].[ParentID] = [t2].[ParentID]
-	)
+	[t2].[COUNT_1] + [t2].[COUNT_1]
 FROM
-	[Parent] [p]
+	(
+		SELECT
+			(
+				SELECT
+					COUNT(*)
+				FROM
+					[Child] [c_1]
+				WHERE
+					[t1].[ParentID] = [c_1].[ParentID]
+			) as [COUNT_1]
+		FROM
+			[Parent] [t1]
+	) [t2]
 

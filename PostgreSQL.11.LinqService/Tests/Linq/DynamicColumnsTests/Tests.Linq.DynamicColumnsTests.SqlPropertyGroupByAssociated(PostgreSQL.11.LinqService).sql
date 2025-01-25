@@ -3,10 +3,10 @@
 
 SELECT
 	"a_Patient"."Diagnosis",
-	Count(*)
+	COUNT(*)
 FROM
-	"Person" t1
-		LEFT JOIN "Patient" "a_Patient" ON t1."PersonID" = "a_Patient"."PersonID"
+	"Person" p
+		LEFT JOIN "Patient" "a_Patient" ON p."PersonID" = "a_Patient"."PersonID"
 GROUP BY
 	"a_Patient"."Diagnosis"
 

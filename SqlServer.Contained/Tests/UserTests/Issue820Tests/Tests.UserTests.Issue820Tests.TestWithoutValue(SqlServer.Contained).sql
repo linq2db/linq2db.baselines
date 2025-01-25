@@ -4,37 +4,37 @@ DECLARE @param SmallInt -- Int16
 SET     @param = 1
 
 SELECT
-	[_].[ID],
-	[_].[MoneyValue],
-	[_].[DateTimeValue],
-	[_].[DateTimeValue2],
-	[_].[BoolValue],
-	[_].[GuidValue],
-	[_].[SmallIntValue],
-	[_].[IntValue],
-	[_].[BigIntValue],
-	[_].[StringValue]
+	[t1].[ID],
+	[t1].[MoneyValue],
+	[t1].[DateTimeValue],
+	[t1].[DateTimeValue2],
+	[t1].[BoolValue],
+	[t1].[GuidValue],
+	[t1].[SmallIntValue],
+	[t1].[IntValue],
+	[t1].[BigIntValue],
+	[t1].[StringValue]
 FROM
-	[LinqDataTypes] [_]
+	[LinqDataTypes] [t1]
 WHERE
-	@param = [_].[SmallIntValue]
+	@param = [t1].[SmallIntValue]
 
 BeforeExecute
 -- SqlServer.Contained SqlServer.2019
 
 SELECT
-	[_].[ID],
-	[_].[MoneyValue],
-	[_].[DateTimeValue],
-	[_].[DateTimeValue2],
-	[_].[BoolValue],
-	[_].[GuidValue],
-	[_].[SmallIntValue],
-	[_].[IntValue],
-	[_].[BigIntValue],
-	[_].[StringValue]
+	[t1].[ID],
+	[t1].[MoneyValue],
+	[t1].[DateTimeValue],
+	[t1].[DateTimeValue2],
+	[t1].[BoolValue],
+	[t1].[GuidValue],
+	[t1].[SmallIntValue],
+	[t1].[IntValue],
+	[t1].[BigIntValue],
+	[t1].[StringValue]
 FROM
-	[LinqDataTypes] [_]
+	[LinqDataTypes] [t1]
 WHERE
-	[_].[SmallIntValue] IS NULL
+	[t1].[SmallIntValue] IS NULL
 

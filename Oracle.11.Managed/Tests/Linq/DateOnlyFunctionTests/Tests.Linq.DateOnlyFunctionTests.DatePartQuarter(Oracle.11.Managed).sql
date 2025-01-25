@@ -54,7 +54,7 @@ BeforeExecute
 -- Oracle.11.Managed Oracle11
 
 SELECT
-	To_Number(To_Char(t."TransactionDate", 'Q'))
+	TO_NUMBER(TO_CHAR(t."TransactionDate", 'Q'))
 FROM
 	"Transactions" t
 

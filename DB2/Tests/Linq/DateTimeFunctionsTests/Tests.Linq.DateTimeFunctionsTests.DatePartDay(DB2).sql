@@ -2,7 +2,7 @@
 -- DB2 DB2.LUW DB2LUW
 
 SELECT
-	To_Number(To_Char("t"."DateTimeValue", 'DD'))
+	Extract(day from "t"."DateTimeValue")
 FROM
 	"LinqDataTypes" "t"
 

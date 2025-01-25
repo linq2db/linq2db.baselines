@@ -56,12 +56,12 @@ INSERT INTO "ValueConversion"
 )
 VALUES
 (
-	@iteration,
-	@Value1,
-	@Enum,
-	@inserted,
-	@boolValue,
-	@boolValue_1
+	CAST(@iteration AS Int),
+	CAST(@Value1 AS NVarChar(2)),
+	CAST(@Enum AS NVarChar(6)),
+	CAST(@inserted AS NVarChar(22)),
+	CAST(@boolValue AS VarChar(1)),
+	CAST(@boolValue_1 AS VarChar(1))
 )
 
 BeforeExecute
@@ -84,7 +84,7 @@ FROM
 	"ValueConversion" "e"
 WHERE
 	"e"."Id" = @iteration
-FETCH FIRST 2 ROWS ONLY
+FETCH NEXT 2 ROWS ONLY
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW

@@ -24,8 +24,6 @@ VALUES
 
 BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12
-DECLARE @take Int32
-SET     @take = 1
 
 SELECT
 	r."BigIntValue" as "TestField"
@@ -33,7 +31,7 @@ FROM
 	"LinqDataTypes" r
 WHERE
 	r.ID = 101 AND r."BigIntValue" = 12
-FETCH NEXT :take ROWS ONLY
+FETCH NEXT 1 ROWS ONLY
 
 BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12

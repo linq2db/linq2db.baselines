@@ -2,16 +2,16 @@
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
 SELECT
-	[p].[ParentID],
-	[p].[Value1],
+	[x].[ParentID],
+	[x].[Value1],
 	[c_1].[ParentID],
 	[c_1].[ChildID],
 	[cInfo].[ParentID],
 	[cInfo].[Value1]
 FROM
-	[Parent] [p]
-		INNER JOIN [Child] [c_1] ON [p].[ParentID] = [c_1].[ParentID]
+	[Parent] [x]
+		INNER JOIN [Child] [c_1] ON [x].[ParentID] = [c_1].[ParentID]
 		LEFT JOIN [Parent] [cInfo] ON [c_1].[ParentID] = [cInfo].[ParentID]
 WHERE
-	[p].[ParentID] = 1
+	[x].[ParentID] = 1
 

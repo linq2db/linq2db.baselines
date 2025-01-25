@@ -2,7 +2,7 @@
 -- SqlCe
 
 SELECT
-	Convert(NChar(20), [t].[MoneyValue])
+	CAST([t].[MoneyValue] AS NChar(20)) as [c1]
 FROM
 	[LinqDataTypes] [t]
 

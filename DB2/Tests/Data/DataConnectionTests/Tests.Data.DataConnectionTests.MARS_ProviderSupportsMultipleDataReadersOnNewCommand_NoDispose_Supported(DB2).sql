@@ -2,7 +2,7 @@
 -- DB2 DB2.LUW DB2LUW
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	"Person" "t1"
 

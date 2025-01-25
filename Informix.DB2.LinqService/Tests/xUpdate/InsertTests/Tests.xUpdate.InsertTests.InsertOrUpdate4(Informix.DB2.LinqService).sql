@@ -61,15 +61,17 @@ SELECT DBINFO('sqlca.sqlerrd1') FROM systables where tabid = 1
 
 BeforeExecute
 -- Informix.DB2 Informix
+DECLARE @i Integer(4) -- Int32
+SET     @i = 0
 DECLARE @id Integer(4) -- Int32
 SET     @id = 5
 
 UPDATE
-	Patient
+	Patient t1
 SET
-	Patient.Diagnosis = To_Char(CHAR_LENGTH(Patient.Diagnosis))
+	Diagnosis = To_Char(CHAR_LENGTH(t1.Diagnosis) + @i)
 WHERE
-	Patient.PersonID = @id
+	t1.PersonID = @id
 
 BeforeExecute
 -- Informix.DB2 Informix
@@ -77,6 +79,8 @@ DECLARE @id Integer(4) -- Int32
 SET     @id = 5
 DECLARE @diagnosis VarChar(3) -- String
 SET     @diagnosis = 'abc'
+DECLARE @i Integer(4) -- Int32
+SET     @i = 0
 
 INSERT INTO Patient
 (
@@ -86,7 +90,7 @@ INSERT INTO Patient
 VALUES
 (
 	@id,
-	To_Char(CHAR_LENGTH(@diagnosis))
+	To_Char(CHAR_LENGTH(@diagnosis) + @i)
 )
 
 BeforeExecute
@@ -97,11 +101,11 @@ DECLARE @id Integer(4) -- Int32
 SET     @id = 5
 
 UPDATE
-	Patient
+	Patient t1
 SET
-	Patient.Diagnosis = To_Char(CHAR_LENGTH(Patient.Diagnosis) + @i)
+	Diagnosis = To_Char(CHAR_LENGTH(t1.Diagnosis) + @i)
 WHERE
-	Patient.PersonID = @id
+	t1.PersonID = @id
 
 BeforeExecute
 -- Informix.DB2 Informix
@@ -111,11 +115,11 @@ DECLARE @id Integer(4) -- Int32
 SET     @id = 5
 
 UPDATE
-	Patient
+	Patient t1
 SET
-	Patient.Diagnosis = To_Char(CHAR_LENGTH(Patient.Diagnosis) + @i)
+	Diagnosis = To_Char(CHAR_LENGTH(t1.Diagnosis) + @i)
 WHERE
-	Patient.PersonID = @id
+	t1.PersonID = @id
 
 BeforeExecute
 -- Informix.DB2 Informix

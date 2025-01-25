@@ -22,7 +22,7 @@ DECLARE @ParentID Integer -- Int32
 SET     @ParentID = 1001
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	[Parent] [p]
 WHERE
@@ -34,11 +34,11 @@ DECLARE @ParentID Integer -- Int32
 SET     @ParentID = 1001
 
 UPDATE
-	[Parent] [t1]
+	[Parent] [p]
 SET
-	[t1].[ParentID] = [t1].[ParentID] + 1
+	[p].[ParentID] = [p].[ParentID] + 1
 WHERE
-	[t1].[ParentID] = @ParentID
+	[p].[ParentID] = @ParentID
 
 BeforeExecute
 -- Access AccessOleDb
@@ -46,7 +46,7 @@ DECLARE @ParentID Integer -- Int32
 SET     @ParentID = 1002
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	[Parent] [p]
 WHERE

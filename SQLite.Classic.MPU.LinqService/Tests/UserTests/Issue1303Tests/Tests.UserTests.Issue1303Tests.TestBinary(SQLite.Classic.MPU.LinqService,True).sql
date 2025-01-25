@@ -39,39 +39,39 @@ BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
 SELECT
-	[_].[ID],
-	[_].[Array],
-	[_].[Binary]
+	[t1].[ID],
+	[t1].[Array],
+	[t1].[Binary]
 FROM
-	[Issue1303] [_]
+	[Issue1303] [t1]
 WHERE
-	[_].[ID] = 1
+	[t1].[ID] = 1
 LIMIT 2
 
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
 SELECT
-	[_].[ID],
-	[_].[Array],
-	[_].[Binary]
+	[t1].[ID],
+	[t1].[Array],
+	[t1].[Binary]
 FROM
-	[Issue1303] [_]
+	[Issue1303] [t1]
 WHERE
-	[_].[Array] = X'010203'
+	[t1].[Array] = X'010203'
 LIMIT 2
 
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
 SELECT
-	[_].[ID],
-	[_].[Array],
-	[_].[Binary]
+	[t1].[ID],
+	[t1].[Array],
+	[t1].[Binary]
 FROM
-	[Issue1303] [_]
+	[Issue1303] [t1]
 WHERE
-	[_].[Binary] = X'0405'
+	[t1].[Binary] = X'0405'
 LIMIT 2
 
 BeforeExecute

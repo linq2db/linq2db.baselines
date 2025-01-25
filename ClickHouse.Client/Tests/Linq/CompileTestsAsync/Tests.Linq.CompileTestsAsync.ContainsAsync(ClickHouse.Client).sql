@@ -23,23 +23,23 @@ INSERT INTO AsyncDataTable
 	Id
 )
 VALUES
-(toInt32(1)),
-(toInt32(2)),
-(toInt32(3)),
-(toInt32(4)),
-(toInt32(5)),
-(toInt32(6)),
-(toInt32(7)),
-(toInt32(8)),
-(toInt32(9)),
-(toInt32(10))
+(1),
+(2),
+(3),
+(4),
+(5),
+(6),
+(7),
+(8),
+(9),
+(10)
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse (asynchronously)
 
 SELECT
 	CASE
-		WHEN toInt32(2) IN (
+		WHEN 2 IN (
 			SELECT
 				c_1.Id
 			FROM

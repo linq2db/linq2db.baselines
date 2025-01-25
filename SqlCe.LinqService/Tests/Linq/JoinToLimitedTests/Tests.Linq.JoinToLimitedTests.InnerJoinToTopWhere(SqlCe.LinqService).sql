@@ -1,22 +1,22 @@
 ﻿BeforeExecute
 -- SqlCe
-DECLARE @take Int -- Int32
-SET     @take = 1
 
 SELECT
 	[o].[ParentID],
 	[o].[Value1],
-	[t1].[ParentID],
-	[t1].[ChildID]
+	[c_2].[ParentID] as [ParentID_1],
+	[c_2].[ChildID]
 FROM
 	[Parent] [o]
 		CROSS APPLY (
-			SELECT TOP (@take)
-				[x].[ParentID],
-				[x].[ChildID]
+			SELECT TOP (1)
+				[c_1].[ParentID],
+				[c_1].[ChildID]
 			FROM
-				[Child] [x]
+				[Child] [c_1]
 			WHERE
-				[x].[ParentID] = [o].[ParentID]
-		) [t1]
+				[c_1].[ParentID] = [o].[ParentID]
+			ORDER BY
+				[c_1].[ChildID] DESC
+		) [c_2]
 

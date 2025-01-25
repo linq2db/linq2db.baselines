@@ -55,7 +55,7 @@ BeforeExecute
 -- SqlServer.2016
 
 SELECT
-	DateAdd(year, 11, [t].[TransactionDate])
+	CAST(DateAdd(year, 11, [t].[TransactionDate]) AS Date)
 FROM
 	[Transactions] [t]
 

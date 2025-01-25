@@ -11,8 +11,26 @@ WHERE
 		SELECT
 			*
 		FROM
-			[Parent] [p]
+			[Parent] [param]
 		WHERE
-			[p].[ParentID] = [c_1].[ParentID] AND Coalesce([p].[Value1], -1) = [c_1].[ParentID]
+			[param].[ParentID] = [c_1].[ParentID] AND Coalesce([param].[Value1], -1) = [c_1].[ParentID]
 	)
+
+BeforeExecute
+-- Sybase.Managed Sybase
+
+SELECT
+	[t1].[ParentID],
+	[t1].[ChildID]
+FROM
+	[Child] [t1]
+
+BeforeExecute
+-- Sybase.Managed Sybase
+
+SELECT
+	[t1].[ParentID],
+	[t1].[Value1]
+FROM
+	[Parent] [t1]
 

@@ -132,32 +132,23 @@ VALUES
 
 BeforeExecute
 -- Oracle.11.Managed Oracle11
-DECLARE @take Int32
-SET     @take = 1
 
 SELECT
-	key_data_result."Id",
-	detail."Id"
+	m_1."Id",
+	d."Id"
 FROM
 	(
-		SELECT DISTINCT
-			t1."Id"
+		SELECT
+			x."Id"
 		FROM
-			(
-				SELECT
-					x."Id"
-				FROM
-					"Topic" x
-				WHERE
-					x."Id" = 6 AND ROWNUM <= :take
-			) t1
-	) key_data_result
-		INNER JOIN "Message" detail ON detail."TopicId" = key_data_result."Id"
+			"Topic" x
+		WHERE
+			x."Id" = 6 AND ROWNUM <= 1
+	) m_1
+		INNER JOIN "Message" d ON d."TopicId" = m_1."Id"
 
 BeforeExecute
 -- Oracle.11.Managed Oracle11
-DECLARE @take Int32
-SET     @take = 1
 
 SELECT
 	x."Id",
@@ -166,7 +157,7 @@ SELECT
 FROM
 	"Topic" x
 WHERE
-	x."Id" = 6 AND ROWNUM <= :take
+	x."Id" = 6 AND ROWNUM <= 1
 
 BeforeExecute
 -- Oracle.11.Managed Oracle11

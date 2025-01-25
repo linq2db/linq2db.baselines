@@ -146,7 +146,7 @@ BeforeExecute
 -- Oracle.11.Managed Oracle11
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	"xxPerson_o" t1
 
@@ -154,7 +154,7 @@ BeforeExecute
 -- Oracle.11.Managed Oracle11
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	"xxPerson_o" p
 WHERE

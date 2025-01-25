@@ -38,23 +38,21 @@ DECLARE @val Raw(3) -- Binary
 SET     @val = HEXTORAW('010203')
 DECLARE @n Decimal(1, 0)
 SET     @n = 3
-DECLARE @take Int32
-SET     @take = 1
 
 SELECT
-	t2."binaryDataType",
+	t1."binaryDataType",
 	(
 		SELECT
-			Count(*)
+			COUNT(*)
 		FROM
-			"AllTypes" t1
+			"AllTypes" t2
 		WHERE
-			t1.ID = 1000 AND t1."guidDataType" = :val
+			t2.ID = 1000 AND t2."guidDataType" = :val
 	)
 FROM
-	"AllTypes" t2
+	"AllTypes" t1
 WHERE
-	t2.ID = :n AND ROWNUM <= :take
+	t1.ID = :n AND ROWNUM <= 1
 
 BeforeExecute
 -- Oracle.11.Managed Oracle11

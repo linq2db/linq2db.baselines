@@ -104,9 +104,9 @@ SELECT
 	[d].[DetailValue]
 FROM
 	[MasterClass] [m_1]
-		INNER JOIN [DetailClass] [d] ON [d].[MasterId] = [m_1].[Id1] AND [d].[MasterId] = [m_1].[Id2] AND [d].[DetailId] % 2 = 0
+		INNER JOIN [DetailClass] [d] ON [d].[MasterId] = [m_1].[Id1] AND [d].[MasterId] = [m_1].[Id2]
 WHERE
-	[m_1].[Id1] > 5
+	[m_1].[Id1] > 5 AND [d].[DetailId] % 2 = 0
 
 BeforeExecute
 -- SQLite.Classic SQLite
@@ -119,9 +119,9 @@ SELECT
 	[d].[DetailValue]
 FROM
 	[MasterClass] [m_1]
-		INNER JOIN [DetailClass] [d] ON [d].[MasterId] = [m_1].[Id1] AND [d].[MasterId] = [m_1].[Id2] AND [d].[DetailId] % 2 = 0 AND [d].[DetailId] % 2 = 0
+		INNER JOIN [DetailClass] [d] ON [d].[MasterId] = [m_1].[Id1] AND [d].[MasterId] = [m_1].[Id2]
 WHERE
-	[m_1].[Id1] > 5
+	[m_1].[Id1] > 5 AND [d].[DetailId] % 2 = 0 AND [d].[DetailId] % 2 = 0
 
 BeforeExecute
 -- SQLite.Classic SQLite
@@ -129,12 +129,12 @@ BeforeExecute
 SELECT
 	[m_1].[Id1],
 	[m_1].[Id2],
-	[detail].[DetailValue]
+	[d].[DetailValue]
 FROM
 	[MasterClass] [m_1]
-		INNER JOIN [DetailClass] [detail] ON [detail].[MasterId] = [m_1].[Id1] AND [detail].[MasterId] = [m_1].[Id2] AND [detail].[DetailId] % 2 = 0 AND [detail].[DetailId] % 2 = 0
+		INNER JOIN [DetailClass] [d] ON [d].[MasterId] = [m_1].[Id1] AND [d].[MasterId] = [m_1].[Id2]
 WHERE
-	[m_1].[Id1] > 5
+	[m_1].[Id1] > 5 AND [d].[DetailId] % 2 = 0 AND [d].[DetailId] % 2 = 0
 
 BeforeExecute
 DisposeTransaction

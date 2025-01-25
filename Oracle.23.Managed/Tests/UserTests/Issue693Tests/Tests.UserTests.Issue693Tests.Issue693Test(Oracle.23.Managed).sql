@@ -72,11 +72,9 @@ BeforeExecute
 -- Oracle.23.Managed Oracle.Managed Oracle12
 DECLARE @id1 Int32
 SET     @id1 = 5
-DECLARE @take Int32
-SET     @take = 1
 
 SELECT
-	t1."PersonID",
+	t1."PersonID" as ID,
 	t1."Gender",
 	t1."FirstName",
 	t1."MiddleName",
@@ -85,17 +83,15 @@ FROM
 	"Person" t1
 WHERE
 	t1."PersonID" = :id1
-FETCH NEXT :take ROWS ONLY
+FETCH NEXT 1 ROWS ONLY
 
 BeforeExecute
 -- Oracle.23.Managed Oracle.Managed Oracle12
 DECLARE @id2 Int32
 SET     @id2 = 6
-DECLARE @take Int32
-SET     @take = 1
 
 SELECT
-	t1."PersonID",
+	t1."PersonID" as ID,
 	t1."Gender",
 	t1."FirstName",
 	t1."MiddleName",
@@ -104,5 +100,5 @@ FROM
 	"Person" t1
 WHERE
 	t1."PersonID" = :id2
-FETCH NEXT :take ROWS ONLY
+FETCH NEXT 1 ROWS ONLY
 

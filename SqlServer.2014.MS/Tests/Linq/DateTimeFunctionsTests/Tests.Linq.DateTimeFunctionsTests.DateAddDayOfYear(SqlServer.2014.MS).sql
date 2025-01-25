@@ -2,7 +2,7 @@
 -- SqlServer.2014.MS SqlServer.2014
 
 SELECT
-	DateAdd(dayofyear, 3, [t].[DateTimeValue])
+	CAST(DateAdd(dayofyear, 3, [t].[DateTimeValue]) AS Date)
 FROM
 	[LinqDataTypes] [t]
 

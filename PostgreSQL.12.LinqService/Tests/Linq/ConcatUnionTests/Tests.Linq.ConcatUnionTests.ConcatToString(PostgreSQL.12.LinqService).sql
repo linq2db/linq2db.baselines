@@ -21,7 +21,7 @@ FROM
 		FROM
 			"Person" p_1
 		WHERE
-			Cast(p_1."PersonID" as text) LIKE :pattern ESCAPE '~'
+			p_1."PersonID"::text LIKE :pattern ESCAPE '~'
 	) t1
 LIMIT :take
 

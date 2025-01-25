@@ -22,88 +22,88 @@ BeforeExecute
 
 WITH RECURSIVE "categoryHierarchy"
 (
+	"RootCategoryId",
 	"CategoryId",
 	"ParentCategoryId",
 	"Name",
-	"RootCategoryId",
-	"Level"
+	"Level_1"
 )
 AS
 (
 	SELECT
 		"innerC"."Id",
+		"innerC"."Id",
 		"innerC"."ParentId",
 		"innerC"."Name",
-		"innerC"."Id",
 		0
 	FROM
 		"Issue1564Category" "innerC"
 	UNION ALL
 	SELECT
-		c_1."Id",
-		c_1."ParentId",
-		c_1."Name",
 		ch."RootCategoryId",
-		ch."Level" + 1
+		t1."Id",
+		t1."ParentId",
+		t1."Name",
+		ch."Level_1" + 1
 	FROM
-		"Issue1564Category" c_1
-			INNER JOIN "categoryHierarchy" ch ON ch."ParentCategoryId" = c_1."Id"
+		"Issue1564Category" t1
+			INNER JOIN "categoryHierarchy" ch ON ch."ParentCategoryId" = t1."Id"
 )
 SELECT
-	t1."CategoryId",
-	t1."ParentCategoryId",
-	t1."Name",
-	t1."RootCategoryId",
-	t1."Level"
+	t2."CategoryId",
+	t2."ParentCategoryId",
+	t2."Name",
+	t2."RootCategoryId",
+	t2."Level_1"
 FROM
-	"categoryHierarchy" t1
+	"categoryHierarchy" t2
 
 BeforeExecute
 -- PostgreSQL.11 PostgreSQL.9.5 PostgreSQL
 
 WITH RECURSIVE "categoryHierarchy"
 (
+	"RootCategoryId",
 	"CategoryId",
 	"ParentCategoryId",
 	"Name",
-	"RootCategoryId",
-	"Level"
+	"Level_1"
 )
 AS
 (
 	SELECT
 		"innerC"."Id",
+		"innerC"."Id",
 		"innerC"."ParentId",
 		"innerC"."Name",
-		"innerC"."Id",
 		0
 	FROM
 		"Issue1564Category" "innerC"
 	UNION ALL
 	SELECT
-		c_1."Id",
-		c_1."ParentId",
-		c_1."Name",
 		ch."RootCategoryId",
-		ch."Level" + 1
+		t1."Id",
+		t1."ParentId",
+		t1."Name",
+		ch."Level_1" + 1
 	FROM
-		"Issue1564Category" c_1
-			INNER JOIN "categoryHierarchy" ch ON ch."ParentCategoryId" = c_1."Id"
+		"Issue1564Category" t1
+			INNER JOIN "categoryHierarchy" ch ON ch."ParentCategoryId" = t1."Id"
 )
 SELECT
-	c_2."Id",
-	c_2."IsVisible",
-	c_2."DisplayOrder",
+	c_1."Id",
+	c_1."IsVisible",
+	c_1."DisplayOrder",
 	(
 		SELECT
-			STRING_AGG(c1."Name", ' -> ' ORDER BY c1."Level" DESC)
+			STRING_AGG(c1."Name", ' -> ' ORDER BY c1."Level_1" DESC)
 		FROM
 			"categoryHierarchy" c1
 		WHERE
-			c1."RootCategoryId" = c_2."Id"
+			c1."RootCategoryId" = c_1."Id"
 	)
 FROM
-	"Issue1564Category" c_2
+	"Issue1564Category" c_1
 
 BeforeExecute
 -- PostgreSQL.11 PostgreSQL.9.5 PostgreSQL

@@ -93,41 +93,29 @@ VALUES
 
 BeforeExecute
 -- SqlServer.2019.MS SqlServer.2019
-DECLARE @take Int -- Int32
-SET     @take = 1
-DECLARE @take_1 Int -- Int32
-SET     @take_1 = 1
 
 SELECT
-	[t2].[ID3_1],
-	[t2].[is_empty]
+	[t1].[not_null],
+	[t1].[Id3],
+	[t1].[Id3]
 FROM
 	[TABLE1] [t1_1]
 		OUTER APPLY (
-			SELECT TOP (@take)
+			SELECT TOP (1)
 				(
-					SELECT TOP (@take_1)
-						[x].[ID3]
+					SELECT TOP (1)
+						[x_1].[ID3]
 					FROM
-						[TABLE3] [x]
+						[TABLE3] [x_1]
 					WHERE
-						[x].[PARENTID3] = [x_1].[ID2]
-				) as [ID3],
-				[t1].[ID3] as [ID3_1],
-				1 as [is_empty]
+						[x_1].[PARENTID3] = [x].[ID2]
+				) as [Id3],
+				1 as [not_null]
 			FROM
-				[TABLE2] [x_1]
-					OUTER APPLY (
-						SELECT TOP (@take_1)
-							[x].[ID3]
-						FROM
-							[TABLE3] [x]
-						WHERE
-							[x].[PARENTID3] = [x_1].[ID2]
-					) [t1]
+				[TABLE2] [x]
 			WHERE
-				[x_1].[PARENTID2] = [t1_1].[ID1]
-		) [t2]
+				[x].[PARENTID2] = [t1_1].[ID1]
+		) [t1]
 
 BeforeExecute
 -- SqlServer.2019.MS SqlServer.2019

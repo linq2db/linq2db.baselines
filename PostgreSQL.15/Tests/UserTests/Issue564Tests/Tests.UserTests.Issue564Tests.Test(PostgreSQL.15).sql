@@ -56,7 +56,7 @@ BeforeExecute
 -- PostgreSQL.15 PostgreSQL
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	"Parent564" t1
 

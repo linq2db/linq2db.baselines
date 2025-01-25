@@ -2,8 +2,8 @@
 -- Access.Odbc AccessODBC
 
 SELECT
-	[c_1].[ParentID]
+	[t1].[ParentID] + 1
 FROM
-	[Parent] [cp],
-	[Child] [c_1]
+	[Parent] [p],
+	[Child] [t1]
 

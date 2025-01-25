@@ -59,8 +59,6 @@ VALUES
 
 BeforeExecute
 -- SQLite.MS SQLite
-DECLARE @take  -- Int32
-SET     @take = 1
 
 SELECT
 	[o].[my_col1],
@@ -70,13 +68,13 @@ FROM
 	[my_table] [o]
 WHERE
 	[o].[my_col1] = 'MyCol1'
-LIMIT @take
+LIMIT 1
 
 BeforeExecute
 -- SQLite.MS SQLite
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	[my_table] [t1]
 

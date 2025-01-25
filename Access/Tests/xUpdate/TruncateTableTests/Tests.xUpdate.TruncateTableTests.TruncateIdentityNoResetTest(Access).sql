@@ -1,6 +1,11 @@
 ﻿BeforeExecute
 -- Access AccessOleDb
 
+DROP TABLE [test_temp]
+
+BeforeExecute
+-- Access AccessOleDb
+
 CREATE TABLE [test_temp]
 (
 	[ID]     Int      NOT NULL IDENTITY,
@@ -8,6 +13,11 @@ CREATE TABLE [test_temp]
 
 	CONSTRAINT [PK_test_temp] PRIMARY KEY CLUSTERED ([ID])
 )
+
+BeforeExecute
+-- Access AccessOleDb
+
+DELETE FROM [test_temp]
 
 BeforeExecute
 -- Access AccessOleDb

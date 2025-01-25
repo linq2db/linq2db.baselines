@@ -57,8 +57,8 @@ INSERT INTO Requests
 )
 VALUES
 (
-	toInt32(1002),
-	toInt32(1)
+	1002,
+	1
 )
 
 BeforeExecute
@@ -70,7 +70,7 @@ INSERT INTO FirmInfo
 )
 VALUES
 (
-	toInt32(1)
+	1
 )
 
 BeforeExecute
@@ -85,7 +85,7 @@ INSERT INTO Assignments
 VALUES
 (
 	toUUID('c5c0a778-694e-49d1-b1a0-f8ef5569c673'),
-	toInt32(1),
+	1,
 	NULL
 )
 
@@ -93,8 +93,8 @@ BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
-	c_1.Id,
-	c_1.FirmId,
+	a_Requests.Id,
+	a_Requests.FirmId,
 	a_DocPrepareAssignment.Id,
 	a_DocPrepareAssignment.DirectionId,
 	a_DocPrepareAssignment.TargetId,
@@ -102,17 +102,17 @@ SELECT
 FROM
 	Requests r
 		LEFT JOIN FirmInfo a_FirmInfo ON r.FirmId = a_FirmInfo.Id
-		INNER JOIN Requests c_1 ON a_FirmInfo.Id = c_1.FirmId
-		LEFT JOIN Assignments a_DocPrepareAssignment ON a_DocPrepareAssignment.TargetId = c_1.Id
+		INNER JOIN Requests a_Requests ON a_FirmInfo.Id IS NOT NULL AND a_FirmInfo.Id = a_Requests.FirmId
+		LEFT JOIN Assignments a_DocPrepareAssignment ON a_DocPrepareAssignment.TargetId = a_Requests.Id
 WHERE
-	r.Id = toInt32(1002)
+	r.Id = 1002
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
-	c_1.Id,
-	c_1.FirmId,
+	a_Requests.Id,
+	a_Requests.FirmId,
 	a_DocPrepareAssignment.Id,
 	a_DocPrepareAssignment.DirectionId,
 	a_DocPrepareAssignment.TargetId,
@@ -120,10 +120,10 @@ SELECT
 FROM
 	Requests r
 		LEFT JOIN FirmInfo a_FirmInfo ON r.FirmId = a_FirmInfo.Id
-		INNER JOIN Requests c_1 ON a_FirmInfo.Id = c_1.FirmId
-		LEFT JOIN Assignments a_DocPrepareAssignment ON a_DocPrepareAssignment.TargetId = c_1.Id
+		INNER JOIN Requests a_Requests ON a_FirmInfo.Id IS NOT NULL AND a_FirmInfo.Id = a_Requests.FirmId
+		LEFT JOIN Assignments a_DocPrepareAssignment ON a_DocPrepareAssignment.TargetId = a_Requests.Id
 WHERE
-	r.Id = toInt32(1002)
+	r.Id = 1002
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse

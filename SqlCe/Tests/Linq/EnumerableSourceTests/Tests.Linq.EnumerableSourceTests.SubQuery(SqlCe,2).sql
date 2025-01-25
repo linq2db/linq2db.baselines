@@ -30,7 +30,7 @@ BeforeExecute
 
 SELECT
 	[t].[Id],
-	[t].[Value]
+	[t].[Value] as [Value_1]
 FROM
 	[TableToInsert] [t]
 WHERE
@@ -51,7 +51,7 @@ BeforeExecute
 
 SELECT
 	[t1].[Id],
-	[t1].[Value]
+	[t1].[Value] as [Value_1]
 FROM
 	[TableToInsert] [t1]
 

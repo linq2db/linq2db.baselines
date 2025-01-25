@@ -2,7 +2,7 @@
 -- Access AccessOleDb
 
 SELECT
-	[_].[ParentID]
+	[t1].[ParentID] + 1
 FROM
-	[Parent] [_]
+	[Parent] [t1]
 

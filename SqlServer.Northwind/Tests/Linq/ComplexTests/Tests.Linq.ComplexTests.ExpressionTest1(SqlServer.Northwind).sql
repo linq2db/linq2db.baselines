@@ -2,7 +2,7 @@
 -- SqlServer.Northwind SqlServer.2019
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	[Customers] [x]
 WHERE

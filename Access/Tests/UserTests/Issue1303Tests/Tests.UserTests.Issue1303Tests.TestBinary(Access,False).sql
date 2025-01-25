@@ -39,13 +39,13 @@ BeforeExecute
 -- Access AccessOleDb
 
 SELECT TOP 2
-	[_].[ID],
-	[_].[Array],
-	[_].[Binary]
+	[t1].[ID],
+	[t1].[Array],
+	[t1].[Binary]
 FROM
-	[Issue1303] [_]
+	[Issue1303] [t1]
 WHERE
-	[_].[ID] = 1
+	[t1].[ID] = 1
 
 BeforeExecute
 -- Access AccessOleDb
@@ -53,13 +53,13 @@ DECLARE @Array VarBinary(3) -- Binary
 SET     @Array = 0x010203
 
 SELECT TOP 2
-	[_].[ID],
-	[_].[Array],
-	[_].[Binary]
+	[t1].[ID],
+	[t1].[Array],
+	[t1].[Binary]
 FROM
-	[Issue1303] [_]
+	[Issue1303] [t1]
 WHERE
-	[_].[Array] = @Array
+	[t1].[Array] = @Array
 
 BeforeExecute
 -- Access AccessOleDb
@@ -67,13 +67,13 @@ DECLARE @Binary VarBinary(2) -- Binary
 SET     @Binary = 0x0405
 
 SELECT TOP 2
-	[_].[ID],
-	[_].[Array],
-	[_].[Binary]
+	[t1].[ID],
+	[t1].[Array],
+	[t1].[Binary]
 FROM
-	[Issue1303] [_]
+	[Issue1303] [t1]
 WHERE
-	[_].[Binary] = @Binary
+	[t1].[Binary] = @Binary
 
 BeforeExecute
 -- Access AccessOleDb

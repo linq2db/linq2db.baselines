@@ -1,30 +1,26 @@
 ﻿BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12
-DECLARE @take Int32
-SET     @take = 1
 
-WITH CTE_1 ("Operator")
+WITH CTE_1 ("Obj_Operator")
 AS
 (
 	SELECT
-		x."LastName"
+		x."LastName" as "Obj_Operator"
 	FROM
 		"Person" x
 )
 SELECT
-	t1."Operator"
+	t1."Obj_Operator" as "Operator_1"
 FROM
 	CTE_1 t1
-FETCH NEXT :take ROWS ONLY
+FETCH NEXT 1 ROWS ONLY
 
 BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12
-DECLARE @take Int32
-SET     @take = 1
 
 SELECT
-	x."LastName" as "Operator"
+	person_1."LastName" as "Operator_1"
 FROM
-	"Person" x
-FETCH NEXT :take ROWS ONLY
+	"Person" person_1
+FETCH NEXT 1 ROWS ONLY
 

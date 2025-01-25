@@ -50,11 +50,11 @@ BeforeExecute
 -- Access.Odbc AccessODBC
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
-	[Parent] [_]
+	[Parent] [t1]
 WHERE
-	[_].[ParentID] > 1000
+	[t1].[ParentID] > 1000
 
 BeforeExecute
 -- Access.Odbc AccessODBC
@@ -68,9 +68,9 @@ BeforeExecute
 -- Access.Odbc AccessODBC
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
-	[Parent] [_]
+	[Parent] [t1]
 WHERE
-	[_].[ParentID] > 1000
+	[t1].[ParentID] > 1000
 

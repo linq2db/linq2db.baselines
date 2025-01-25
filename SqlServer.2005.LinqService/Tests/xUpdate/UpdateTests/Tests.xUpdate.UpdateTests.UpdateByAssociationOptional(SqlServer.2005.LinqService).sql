@@ -1,0 +1,152 @@
+﻿BeforeExecute
+-- SqlServer.2005
+
+IF (OBJECT_ID(N'[MainTable]', N'U') IS NOT NULL)
+	DROP TABLE [MainTable]
+
+BeforeExecute
+-- SqlServer.2005
+
+IF (OBJECT_ID(N'[MainTable]', N'U') IS NULL)
+	CREATE TABLE [MainTable]
+	(
+		[Id]    Int            NOT NULL,
+		[Field] NVarChar(4000)     NULL
+	)
+
+BeforeExecute
+-- SqlServer.2005
+DECLARE @Id Int -- Int32
+SET     @Id = 1
+DECLARE @Field NVarChar(4000) -- String
+SET     @Field = N'value 1'
+
+INSERT INTO [MainTable]
+(
+	[Id],
+	[Field]
+)
+VALUES
+(
+	@Id,
+	@Field
+)
+
+BeforeExecute
+-- SqlServer.2005
+DECLARE @Id Int -- Int32
+SET     @Id = 2
+DECLARE @Field NVarChar(4000) -- String
+SET     @Field = N'value 2'
+
+INSERT INTO [MainTable]
+(
+	[Id],
+	[Field]
+)
+VALUES
+(
+	@Id,
+	@Field
+)
+
+BeforeExecute
+-- SqlServer.2005
+DECLARE @Id Int -- Int32
+SET     @Id = 3
+DECLARE @Field NVarChar(4000) -- String
+SET     @Field = N'value 3'
+
+INSERT INTO [MainTable]
+(
+	[Id],
+	[Field]
+)
+VALUES
+(
+	@Id,
+	@Field
+)
+
+BeforeExecute
+-- SqlServer.2005
+
+IF (OBJECT_ID(N'[AssociatedTable]', N'U') IS NOT NULL)
+	DROP TABLE [AssociatedTable]
+
+BeforeExecute
+-- SqlServer.2005
+
+IF (OBJECT_ID(N'[AssociatedTable]', N'U') IS NULL)
+	CREATE TABLE [AssociatedTable]
+	(
+		[Id] Int NOT NULL
+	)
+
+BeforeExecute
+-- SqlServer.2005
+DECLARE @Id Int -- Int32
+SET     @Id = 1
+
+INSERT INTO [AssociatedTable]
+(
+	[Id]
+)
+VALUES
+(
+	@Id
+)
+
+BeforeExecute
+-- SqlServer.2005
+DECLARE @Id Int -- Int32
+SET     @Id = 3
+
+INSERT INTO [AssociatedTable]
+(
+	[Id]
+)
+VALUES
+(
+	@Id
+)
+
+BeforeExecute
+-- SqlServer.2005
+DECLARE @id Int -- Int32
+SET     @id = 3
+
+UPDATE
+	[a_MainOptional]
+SET
+	[a_MainOptional].[Field] = N'test'
+FROM
+	[MainTable] [t1]
+		LEFT JOIN [AssociatedTable] [a_AssociatedOptional] ON [t1].[Id] = [a_AssociatedOptional].[Id]
+		LEFT JOIN [MainTable] [a_MainOptional] ON [a_AssociatedOptional].[Id] = [a_MainOptional].[Id]
+WHERE
+	[t1].[Id] = @id
+
+BeforeExecute
+-- SqlServer.2005
+
+SELECT
+	[t1].[Id],
+	[t1].[Field]
+FROM
+	[MainTable] [t1]
+ORDER BY
+	[t1].[Id]
+
+BeforeExecute
+-- SqlServer.2005
+
+IF (OBJECT_ID(N'[AssociatedTable]', N'U') IS NOT NULL)
+	DROP TABLE [AssociatedTable]
+
+BeforeExecute
+-- SqlServer.2005
+
+IF (OBJECT_ID(N'[MainTable]', N'U') IS NOT NULL)
+	DROP TABLE [MainTable]
+

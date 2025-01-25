@@ -22,15 +22,13 @@ VALUES
 
 BeforeExecute
 -- Oracle.11.Managed Oracle11
-DECLARE @take Int32
-SET     @take = 1
 
 SELECT
 	r."BigIntValue"
 FROM
 	"LinqDataTypes" r
 WHERE
-	r.ID = 101 AND r."BigIntValue" IS NULL AND ROWNUM <= :take
+	r.ID = 101 AND r."BigIntValue" IS NULL AND ROWNUM <= 1
 
 BeforeExecute
 -- Oracle.11.Managed Oracle11

@@ -2,15 +2,16 @@
 -- SqlServer.SA SqlServer.2019
 
 SELECT
-	[t1].[Key_1]
+	[gr_1].[ID],
+	[gr_1].[ID] + 1
 FROM
 	(
 		SELECT
-			Coalesce([selectParam].[Value1], [c_1].[ChildID]) as [Key_1]
+			Coalesce([gr].[Value1], [c_1].[ChildID]) as [ID]
 		FROM
-			[Parent] [selectParam]
-				INNER JOIN [Child] [c_1] ON [selectParam].[ParentID] = [c_1].[ParentID]
-	) [t1]
+			[Parent] [gr]
+				INNER JOIN [Child] [c_1] ON [gr].[ParentID] = [c_1].[ParentID]
+	) [gr_1]
 GROUP BY
-	[t1].[Key_1]
+	[gr_1].[ID]
 

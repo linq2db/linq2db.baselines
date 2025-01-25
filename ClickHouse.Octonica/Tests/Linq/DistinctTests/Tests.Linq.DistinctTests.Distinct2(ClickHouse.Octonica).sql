@@ -2,7 +2,7 @@
 -- ClickHouse.Octonica ClickHouse
 
 SELECT DISTINCT
-	Coalesce(p.Value1, p.ParentID % toInt32(2))
+	Coalesce(p.Value1, p.ParentID % 2)
 FROM
 	Parent p
 

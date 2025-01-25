@@ -29,6 +29,7 @@ BeforeExecute
 -- SqlServer.2019.MS SqlServer.2019
 
 SELECT
+	IIF([r].[BigIntValue] IS NOT NULL AND [r].[IntValue] IS NOT NULL, 1, 0),
 	[r].[BigIntValue],
 	[r].[IntValue]
 FROM

@@ -52,33 +52,33 @@ BeforeExecute
 -- Oracle.18.Managed Oracle.Managed Oracle12
 
 SELECT
-	r."Value_1"
+	r_3."Value_1"
 FROM
 	(
 		SELECT
-			t."Id",
-			t."Value1" as "Value_1"
+			r."Id",
+			r."Value1" as "Value_1"
 		FROM
-			"SampleData" t
+			"SampleData" r
 		WHERE
-			MOD(t."Id", 2) = 0
+			MOD(r."Id", 2) = 0
 		MINUS
 		SELECT
-			t_1."Id",
-			t_1."Value2" / 10 as "Value_1"
+			r_1."Id",
+			r_1."Value2" / 10 as "Value_1"
 		FROM
-			"SampleData" t_1
+			"SampleData" r_1
 		WHERE
-			MOD(t_1."Id", 4) = 0
+			MOD(r_1."Id", 4) = 0
 		MINUS
 		SELECT
-			t_2."Id",
-			t_2."Value1" as "Value_1"
+			r_2."Id",
+			r_2."Value1" as "Value_1"
 		FROM
-			"SampleData" t_2
+			"SampleData" r_2
 		WHERE
-			MOD(t_2."Id", 6) = 0
-	) r
+			MOD(r_2."Id", 6) = 0
+	) r_3
 
 BeforeExecute
 -- Oracle.18.Managed Oracle.Managed Oracle12

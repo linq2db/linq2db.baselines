@@ -2,6 +2,6 @@
 -- Informix.DB2 Informix
 
 SELECT
-	'23'
+	Substr('123', 2, 2)
 FROM table(set{1})
 

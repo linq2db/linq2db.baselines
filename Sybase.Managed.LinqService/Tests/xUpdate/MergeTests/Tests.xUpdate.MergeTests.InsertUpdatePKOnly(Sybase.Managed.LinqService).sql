@@ -36,15 +36,15 @@ BeforeExecute
 
 MERGE INTO [PKOnlyTable] [Target]
 USING (
-	SELECT 1 AS [ID]
+	SELECT 1 AS [source_ID]
 	UNION ALL
 	SELECT 2
 	UNION ALL
 	SELECT 3) [Source]
 (
-	[ID]
+	[source_ID]
 )
-ON ([Target].[ID] = [Source].[ID])
+ON ([Target].[ID] = [Source].[source_ID])
 
 WHEN NOT MATCHED THEN
 INSERT
@@ -53,7 +53,7 @@ INSERT
 )
 VALUES
 (
-	[Source].[ID]
+	[Source].[source_ID]
 )
 
 BeforeExecute

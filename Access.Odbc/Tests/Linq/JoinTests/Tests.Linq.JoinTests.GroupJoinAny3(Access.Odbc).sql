@@ -3,7 +3,7 @@
 
 SELECT
 	[p].[ParentID],
-	Iif(EXISTS(
+	IIF(EXISTS(
 		SELECT
 			*
 		FROM

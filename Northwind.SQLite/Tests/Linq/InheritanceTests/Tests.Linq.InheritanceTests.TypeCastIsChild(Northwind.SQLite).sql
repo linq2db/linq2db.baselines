@@ -2,6 +2,7 @@
 -- Northwind.SQLite SQLite.Classic SQLite
 
 SELECT
+	[x].[Discontinued],
 	[x].[ProductID],
 	[x].[ProductName],
 	[x].[SupplierID],
@@ -10,8 +11,7 @@ SELECT
 	[x].[UnitPrice],
 	[x].[UnitsInStock],
 	[x].[UnitsOnOrder],
-	[x].[ReorderLevel],
-	[x].[Discontinued]
+	[x].[ReorderLevel]
 FROM
 	[Products] [x]
 WHERE

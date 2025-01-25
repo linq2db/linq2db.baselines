@@ -70,7 +70,7 @@ BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	Src s
 WHERE
@@ -80,21 +80,17 @@ BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	Src s
-WHERE
-	1 = 1
 
 BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	Src s
-WHERE
-	1 = 1
 
 BeforeExecute
 -- Informix.DB2 Informix

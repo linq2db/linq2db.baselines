@@ -37,7 +37,7 @@ DECLARE @Id Int -- Int32
 SET     @Id = 2
 
 SELECT
-	Min([c_1].[Id])
+	MIN([c_1].[Id]) as [MIN_1]
 FROM
 	[AsyncDataTable] [c_1]
 WHERE

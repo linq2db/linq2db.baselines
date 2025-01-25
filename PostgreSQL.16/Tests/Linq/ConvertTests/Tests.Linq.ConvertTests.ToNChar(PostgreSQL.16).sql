@@ -2,7 +2,7 @@
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 
 SELECT
-	Cast(t."MoneyValue" as NChar(20))
+	t."MoneyValue"::character(20)
 FROM
 	"LinqDataTypes" t
 

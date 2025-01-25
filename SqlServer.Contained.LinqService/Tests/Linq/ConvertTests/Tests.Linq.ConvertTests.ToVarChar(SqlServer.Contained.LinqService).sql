@@ -2,7 +2,7 @@
 -- SqlServer.Contained SqlServer.2019
 
 SELECT
-	Convert(VarChar(20), [t].[MoneyValue])
+	CAST([t].[MoneyValue] AS VarChar(20))
 FROM
 	[LinqDataTypes] [t]
 

@@ -8,15 +8,15 @@ DECLARE @ID_1 Integer(4) -- Int32
 SET     @ID_1 = 2
 
 SELECT
-	"_"."FirstName",
-	"_"."PersonID",
-	"_"."LastName",
-	"_"."MiddleName",
-	"_"."Gender"
+	"t1"."FirstName",
+	"t1"."PersonID",
+	"t1"."LastName",
+	"t1"."MiddleName",
+	"t1"."Gender"
 FROM
-	"Person" "_"
+	"Person" "t1"
 WHERE
-	"_"."PersonID" IN (
+	"t1"."PersonID" IN (
 		SELECT
 			"p"."PersonID"
 		FROM
@@ -24,14 +24,14 @@ WHERE
 		WHERE
 			"p"."PersonID" = @paramCopy
 	) AND
-	("_"."PersonID" IN (
+	("t1"."PersonID" IN (
 		SELECT
 			"p_1"."PersonID"
 		FROM
 			"Person" "p_1"
 		WHERE
 			"p_1"."PersonID" = @ID
-	) OR "_"."PersonID" IN (
+	) OR "t1"."PersonID" IN (
 		SELECT
 			"p_2"."PersonID"
 		FROM
@@ -50,15 +50,15 @@ DECLARE @ID_1 Integer(4) -- Int32
 SET     @ID_1 = 3
 
 SELECT
-	"_"."FirstName",
-	"_"."PersonID",
-	"_"."LastName",
-	"_"."MiddleName",
-	"_"."Gender"
+	"t1"."FirstName",
+	"t1"."PersonID",
+	"t1"."LastName",
+	"t1"."MiddleName",
+	"t1"."Gender"
 FROM
-	"Person" "_"
+	"Person" "t1"
 WHERE
-	"_"."PersonID" IN (
+	"t1"."PersonID" IN (
 		SELECT
 			"p"."PersonID"
 		FROM
@@ -66,14 +66,14 @@ WHERE
 		WHERE
 			@ID <> "p"."PersonID"
 	) AND
-	("_"."PersonID" IN (
+	("t1"."PersonID" IN (
 		SELECT
 			"p_1"."PersonID"
 		FROM
 			"Person" "p_1"
 		WHERE
 			@paramCopy = "p_1"."PersonID"
-	) OR "_"."PersonID" IN (
+	) OR "t1"."PersonID" IN (
 		SELECT
 			"p_2"."PersonID"
 		FROM
@@ -92,15 +92,15 @@ DECLARE @paramCopy Integer(4) -- Int32
 SET     @paramCopy = 3
 
 SELECT
-	"_"."FirstName",
-	"_"."PersonID",
-	"_"."LastName",
-	"_"."MiddleName",
-	"_"."Gender"
+	"t1"."FirstName",
+	"t1"."PersonID",
+	"t1"."LastName",
+	"t1"."MiddleName",
+	"t1"."Gender"
 FROM
-	"Person" "_"
+	"Person" "t1"
 WHERE
-	"_"."PersonID" IN (
+	"t1"."PersonID" IN (
 		SELECT
 			"p"."PersonID"
 		FROM
@@ -108,14 +108,14 @@ WHERE
 		WHERE
 			@ID <> "p"."PersonID"
 	) AND
-	("_"."PersonID" IN (
+	("t1"."PersonID" IN (
 		SELECT
 			"p_1"."PersonID"
 		FROM
 			"Person" "p_1"
 		WHERE
 			"p_1"."PersonID" = @ID_1
-	) OR "_"."PersonID" IN (
+	) OR "t1"."PersonID" IN (
 		SELECT
 			"p_2"."PersonID"
 		FROM
@@ -134,15 +134,15 @@ DECLARE @ID_1 Integer(4) -- Int32
 SET     @ID_1 = 2
 
 SELECT
-	"_"."FirstName",
-	"_"."PersonID",
-	"_"."LastName",
-	"_"."MiddleName",
-	"_"."Gender"
+	"t1"."FirstName",
+	"t1"."PersonID",
+	"t1"."LastName",
+	"t1"."MiddleName",
+	"t1"."Gender"
 FROM
-	"Person" "_"
+	"Person" "t1"
 WHERE
-	"_"."PersonID" IN (
+	"t1"."PersonID" IN (
 		SELECT
 			"p"."PersonID"
 		FROM
@@ -150,14 +150,14 @@ WHERE
 		WHERE
 			"p"."PersonID" = @paramCopy
 	) AND
-	("_"."PersonID" IN (
+	("t1"."PersonID" IN (
 		SELECT
 			"p_1"."PersonID"
 		FROM
 			"Person" "p_1"
 		WHERE
 			"p_1"."PersonID" = @ID
-	) OR "_"."PersonID" IN (
+	) OR "t1"."PersonID" IN (
 		SELECT
 			"p_2"."PersonID"
 		FROM
@@ -176,15 +176,15 @@ DECLARE @paramCopy Integer(4) -- Int32
 SET     @paramCopy = 3
 
 SELECT
-	"_"."FirstName",
-	"_"."PersonID",
-	"_"."LastName",
-	"_"."MiddleName",
-	"_"."Gender"
+	"t1"."FirstName",
+	"t1"."PersonID",
+	"t1"."LastName",
+	"t1"."MiddleName",
+	"t1"."Gender"
 FROM
-	"Person" "_"
+	"Person" "t1"
 WHERE
-	"_"."PersonID" IN (
+	"t1"."PersonID" IN (
 		SELECT
 			"p"."PersonID"
 		FROM
@@ -192,14 +192,14 @@ WHERE
 		WHERE
 			@ID <> "p"."PersonID"
 	) AND
-	("_"."PersonID" IN (
+	("t1"."PersonID" IN (
 		SELECT
 			"p_1"."PersonID"
 		FROM
 			"Person" "p_1"
 		WHERE
 			"p_1"."PersonID" = @ID_1
-	) OR "_"."PersonID" IN (
+	) OR "t1"."PersonID" IN (
 		SELECT
 			"p_2"."PersonID"
 		FROM
@@ -218,15 +218,15 @@ DECLARE @ID_1 Integer(4) -- Int32
 SET     @ID_1 = 3
 
 SELECT
-	"_"."FirstName",
-	"_"."PersonID",
-	"_"."LastName",
-	"_"."MiddleName",
-	"_"."Gender"
+	"t1"."FirstName",
+	"t1"."PersonID",
+	"t1"."LastName",
+	"t1"."MiddleName",
+	"t1"."Gender"
 FROM
-	"Person" "_"
+	"Person" "t1"
 WHERE
-	"_"."PersonID" IN (
+	"t1"."PersonID" IN (
 		SELECT
 			"p"."PersonID"
 		FROM
@@ -234,14 +234,14 @@ WHERE
 		WHERE
 			@ID <> "p"."PersonID"
 	) AND
-	("_"."PersonID" IN (
+	("t1"."PersonID" IN (
 		SELECT
 			"p_1"."PersonID"
 		FROM
 			"Person" "p_1"
 		WHERE
 			@paramCopy = "p_1"."PersonID"
-	) OR "_"."PersonID" IN (
+	) OR "t1"."PersonID" IN (
 		SELECT
 			"p_2"."PersonID"
 		FROM

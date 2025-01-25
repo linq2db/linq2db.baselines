@@ -2,7 +2,7 @@
 -- Sybase.Managed Sybase
 
 SELECT
-	DateAdd(weekday, 1, [t].[DateTimeValue])
+	CONVERT(Date, DateAdd(weekday, 1, [t].[DateTimeValue]))
 FROM
 	[LinqDataTypes] [t]
 

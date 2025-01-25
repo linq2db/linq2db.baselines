@@ -20,7 +20,7 @@ INSERT INTO GrandParent_3230
 	ID
 )
 VALUES
-(toInt32(1))
+(1)
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -46,7 +46,7 @@ INSERT INTO Parent_3230
 	GrandParentID
 )
 VALUES
-(toInt32(1),toInt32(1))
+(1,1)
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -72,7 +72,7 @@ INSERT INTO Child_3230
 	ParentID
 )
 VALUES
-(toInt32(1),toInt32(1))
+(1,1)
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse

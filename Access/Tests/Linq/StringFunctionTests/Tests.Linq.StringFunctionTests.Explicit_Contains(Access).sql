@@ -2,7 +2,7 @@
 -- Access AccessOleDb
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	[Patient] [r]
 WHERE
@@ -12,7 +12,7 @@ BeforeExecute
 -- Access AccessOleDb
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	[Patient] [r]
 WHERE
@@ -22,7 +22,7 @@ BeforeExecute
 -- Access AccessOleDb
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	[Patient] [r]
 WHERE
@@ -32,7 +32,7 @@ BeforeExecute
 -- Access AccessOleDb
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	[Patient] [r]
 WHERE

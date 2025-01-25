@@ -2,7 +2,7 @@
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
-	toDateTime64(concat(leftPadUTF8(toString((toInt32(2010) + t.ID)), toUInt32(toInt32(4)), '0'), '-10-01'), toUInt8(7))
+	makeDateTime(2010 + t.ID, 10, 1, 0, 0, 0)
 FROM
 	LinqDataTypes t
 

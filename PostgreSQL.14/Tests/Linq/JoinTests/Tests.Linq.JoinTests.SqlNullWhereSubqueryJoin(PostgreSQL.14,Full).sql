@@ -2,12 +2,10 @@
 -- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
 DECLARE @take Integer -- Int32
 SET     @take = 10
-DECLARE @take_1 Integer -- Int32
-SET     @take_1 = 10
 
 SELECT
-	p."ParentID",
-	p."Value1"
+	p2_1."ParentID",
+	p2_1."Value1"
 FROM
 	(
 		SELECT
@@ -19,10 +17,10 @@ FROM
 	) p1
 		FULL JOIN (
 			SELECT
-				t2."ParentID",
-				t2."Value1"
+				p2."ParentID",
+				p2."Value1"
 			FROM
-				"Parent" t2
-			LIMIT :take_1
-		) p ON p1."ParentID" = p."ParentID" AND (p1."Value1" = p."Value1" OR p1."Value1" IS NULL AND p."Value1" IS NULL)
+				"Parent" p2
+			LIMIT 10
+		) p2_1 ON p1."ParentID" = p2_1."ParentID" AND (p1."Value1" = p2_1."Value1" OR p1."Value1" IS NULL AND p2_1."Value1" IS NULL)
 

@@ -27,7 +27,7 @@ VALUES
 (
 	'inv1',
 	'test',
-	toInt32(100)
+	100
 )
 
 BeforeExecute
@@ -43,7 +43,7 @@ VALUES
 (
 	'inv1',
 	'test',
-	toInt32(200)
+	200
 )
 
 BeforeExecute
@@ -59,7 +59,7 @@ VALUES
 (
 	'inv2',
 	'test',
-	toInt32(300)
+	300
 )
 
 BeforeExecute
@@ -75,7 +75,7 @@ VALUES
 (
 	'inv2',
 	'test',
-	toInt32(400)
+	400
 )
 
 BeforeExecute
@@ -105,9 +105,9 @@ INSERT INTO InvestorPayment
 )
 VALUES
 (
-	toInt32(1),
+	1,
 	'inv1',
-	toInt32(100)
+	100
 )
 
 BeforeExecute
@@ -121,9 +121,9 @@ INSERT INTO InvestorPayment
 )
 VALUES
 (
-	toInt32(2),
+	2,
 	'inv2',
-	toInt32(200)
+	200
 )
 
 BeforeExecute
@@ -153,7 +153,7 @@ INSERT INTO PaymentEvent
 )
 VALUES
 (
-	toInt32(1),
+	1,
 	'one',
 	'test'
 )
@@ -169,7 +169,7 @@ INSERT INTO PaymentEvent
 )
 VALUES
 (
-	toInt32(2),
+	2,
 	'two',
 	'test'
 )
@@ -200,7 +200,7 @@ INSERT INTO InvestorPaymentDetail
 VALUES
 (
 	'inv1',
-	toInt32(1)
+	1
 )
 
 BeforeExecute
@@ -214,7 +214,7 @@ INSERT INTO InvestorPaymentDetail
 VALUES
 (
 	'inv2',
-	toInt32(2)
+	2
 )
 
 BeforeExecute
@@ -242,8 +242,8 @@ INSERT INTO PaymentCalculation
 )
 VALUES
 (
-	toInt32(1),
-	toInt32(1)
+	1,
+	1
 )
 
 BeforeExecute
@@ -256,8 +256,8 @@ INSERT INTO PaymentCalculation
 )
 VALUES
 (
-	toInt32(2),
-	toInt32(2)
+	2,
+	2
 )
 
 BeforeExecute
@@ -268,10 +268,10 @@ SELECT
 	t1.Units,
 	sumOrNull(ip.NetPayment)
 FROM
-	PaymentEvent pe
-		INNER JOIN InvestorPayment ip ON pe.Id = ip.Id
+	PaymentEvent g_1
+		INNER JOIN InvestorPayment ip ON g_1.Id = ip.Id
 		INNER JOIN InvestorPaymentDetail ipd ON ip.InvestorId = ipd.InvestorId
-		INNER JOIN PaymentCalculation pc ON ipd.CalculationId = pc.Id AND pe.Id = pc.EventId
+		INNER JOIN PaymentCalculation pc ON ipd.CalculationId = pc.Id AND g_1.Id = pc.EventId
 		INNER JOIN (
 			SELECT
 				b.InvestorId as InvestorId,
@@ -282,7 +282,7 @@ FROM
 			GROUP BY
 				b.SecurityClass,
 				b.InvestorId
-		) t1 ON ip.InvestorId = t1.InvestorId AND pe.SecurityClass = t1.SecurityClass
+		) t1 ON ip.InvestorId = t1.InvestorId AND g_1.SecurityClass = t1.SecurityClass
 GROUP BY
 	ip.InvestorId,
 	t1.Units

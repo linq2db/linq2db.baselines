@@ -58,7 +58,7 @@ DECLARE @p Int -- Int32
 SET     @p = -1
 
 SELECT
-	DateAdd(quarter, @p, [t].[TransactionDate])
+	CAST(DateAdd(quarter, @p, [t].[TransactionDate]) AS Date)
 FROM
 	[Transactions] [t]
 

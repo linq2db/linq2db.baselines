@@ -1,15 +1,13 @@
 ﻿BeforeExecute
 -- PostgreSQL.12 PostgreSQL.9.5 PostgreSQL
-DECLARE @p1 Date
-SET     @p1 = '2000-02-03 04:05:06.007'::timestamp
-DECLARE @take Integer -- Int32
-SET     @take = 2
+DECLARE @p Date
+SET     @p = '2000-02-03 04:05:06.007'::timestamp
 
 SELECT
 	t1."Value"
 FROM
 	(
-		SELECT issue_1742_ts(:p1) as "Value"
+		SELECT issue_1742_ts(:p) as "Value"
 	) t1
-LIMIT :take
+LIMIT 2
 

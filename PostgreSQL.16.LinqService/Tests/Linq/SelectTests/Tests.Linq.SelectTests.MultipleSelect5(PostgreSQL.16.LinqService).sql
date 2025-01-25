@@ -2,8 +2,8 @@
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 
 SELECT
-	p4."PersonID",
-	p4."FirstName"
+	p2."PersonID",
+	p2."FirstName"
 FROM
-	"Person" p4
+	"Person" p2
 

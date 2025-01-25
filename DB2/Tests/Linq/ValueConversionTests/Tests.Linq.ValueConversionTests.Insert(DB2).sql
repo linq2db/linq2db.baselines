@@ -56,12 +56,12 @@ INSERT INTO "ValueConversion"
 )
 VALUES
 (
-	@Id,
-	@Value1,
-	@Enum,
-	@Value2,
-	@BoolValue,
-	@AnotherBoolValue
+	CAST(@Id AS Int),
+	CAST(@Value1 AS NVarChar(2)),
+	CAST(@Enum AS NVarChar(6)),
+	CAST(@Value2 AS NVarChar(22)),
+	CAST(@BoolValue AS VarChar(1)),
+	CAST(@AnotherBoolValue AS VarChar(1))
 )
 
 BeforeExecute
@@ -82,7 +82,7 @@ FROM
 	"ValueConversion" "e"
 WHERE
 	"e"."Id" = 1
-FETCH FIRST 1 ROWS ONLY
+FETCH NEXT 1 ROWS ONLY
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
@@ -110,12 +110,12 @@ INSERT INTO "ValueConversion"
 )
 VALUES
 (
-	@Id,
-	@Value1,
-	@Value2,
-	@Enum,
-	@BoolValue,
-	@AnotherBoolValue
+	CAST(@Id AS Int),
+	CAST(@Value1 AS NVarChar(200)),
+	CAST(@Value2 AS NVarChar(200)),
+	CAST(@Enum AS NVarChar(6)),
+	CAST(@BoolValue AS VarChar(1)),
+	CAST(@AnotherBoolValue AS VarChar(1))
 )
 
 BeforeExecute
@@ -136,7 +136,7 @@ FROM
 	"ValueConversion" "e"
 WHERE
 	"e"."Id" = 2
-FETCH FIRST 1 ROWS ONLY
+FETCH NEXT 1 ROWS ONLY
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
@@ -206,13 +206,13 @@ FROM
 	"ValueConversion" "e"
 WHERE
 	"e"."Id" = 3
-FETCH FIRST 1 ROWS ONLY
+FETCH NEXT 1 ROWS ONLY
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	"ValueConversion" "t1"
 

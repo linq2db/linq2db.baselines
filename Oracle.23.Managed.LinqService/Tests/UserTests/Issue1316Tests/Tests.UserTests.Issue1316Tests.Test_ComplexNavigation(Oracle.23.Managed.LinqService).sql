@@ -47,8 +47,6 @@ BeforeExecute
 -- Oracle.23.Managed Oracle.Managed Oracle12
 DECLARE @ID Int32
 SET     @ID = 5
-DECLARE @take Int32
-SET     @take = 2
 
 SELECT
 	t1.ID
@@ -56,14 +54,12 @@ FROM
 	"Issue1316Tests" t1
 WHERE
 	t1.ID = :ID
-FETCH NEXT :take ROWS ONLY
+FETCH NEXT 2 ROWS ONLY
 
 BeforeExecute
 -- Oracle.23.Managed Oracle.Managed Oracle12
 DECLARE @Id Int32
 SET     @Id = 5
-DECLARE @take Int32
-SET     @take = 2
 
 SELECT
 	t1.ID
@@ -71,7 +67,7 @@ FROM
 	"Issue1316Tests" t1
 WHERE
 	t1.ID = :Id
-FETCH NEXT :take ROWS ONLY
+FETCH NEXT 2 ROWS ONLY
 
 BeforeExecute
 -- Oracle.23.Managed Oracle.Managed Oracle12

@@ -2,10 +2,14 @@
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
-	roundBankers(p.MoneyValue, toInt32(2))
+	pp_1.Value_1
 FROM
-	LinqDataTypes p
+	(
+		SELECT
+			roundBankers(pp.MoneyValue, 2) as Value_1
+		FROM
+			LinqDataTypes pp
+	) pp_1
 WHERE
-	roundBankers(p.MoneyValue, toInt32(2)) <> toDecimal64('0', 10) AND
-	roundBankers(p.MoneyValue, toInt32(2)) <> toDecimal64('7', 10)
+	pp_1.Value_1 <> toDecimal128('0', 10) AND pp_1.Value_1 <> toDecimal128('7', 10)
 

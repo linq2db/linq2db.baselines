@@ -24,17 +24,17 @@ INSERT INTO SelectExpressionTable
 )
 VALUES
 (
-	toInt32(1)
+	1
 )
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
-	toInt32(1)
+	1
 FROM
-	SelectExpressionTable _
-LIMIT toInt32(1)
+	SelectExpressionTable t1
+LIMIT 1
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse

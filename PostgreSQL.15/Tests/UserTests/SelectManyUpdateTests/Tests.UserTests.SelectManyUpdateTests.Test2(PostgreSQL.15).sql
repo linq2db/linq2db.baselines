@@ -9,8 +9,7 @@ SET
 	"ChildID" = :ChildID
 FROM
 	"Parent" x
-		INNER JOIN "Child" c_1 ON x."ParentID" = c_1."ParentID"
-		INNER JOIN "Child" c_2 ON c_1."ParentID" = c_2."ChildID"
+		INNER JOIN "Child" "a_Children" ON x."ParentID" = "a_Children"."ParentID"
 WHERE
-	1 = 0 AND "Child"."ParentID" = c_2."ParentID"
+	1 = 0
 

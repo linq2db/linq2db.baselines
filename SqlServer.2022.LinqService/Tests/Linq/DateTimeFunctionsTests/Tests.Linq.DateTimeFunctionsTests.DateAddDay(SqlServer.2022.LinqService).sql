@@ -2,7 +2,7 @@
 -- SqlServer.2022
 
 SELECT
-	DateAdd(day, 5, [t].[DateTimeValue])
+	CAST(DateAdd(day, 5, [t].[DateTimeValue]) AS Date)
 FROM
 	[LinqDataTypes] [t]
 

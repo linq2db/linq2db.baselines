@@ -38,7 +38,7 @@ BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	"TestInsertOrReplaceTable" "x"
 WHERE

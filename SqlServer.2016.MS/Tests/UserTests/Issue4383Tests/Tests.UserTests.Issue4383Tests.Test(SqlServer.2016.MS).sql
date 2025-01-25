@@ -112,33 +112,40 @@ BeforeExecute
 -- SqlServer.2016.MS SqlServer.2016
 
 SELECT
-	[key_data_result].[CHAIN_ID],
-	[key_data_result].[LINE_ID],
-	[detail_1].[CHAIN_ID]
+	[m_1].[Id],
+	[m_1].[Id_1],
+	[d_1].[CHAIN_ID]
 FROM
 	(
 		SELECT DISTINCT
-			[a_Chain].[CHAIN_ID],
-			[lw_PumpLineTest`2].[LINE_ID]
+			[a_Chain].[CHAIN_ID] as [Id],
+			[t2].[Id] as [Id_1]
 		FROM
-			[PUMPLINES] [lw_PumpLineTest`2]
-				INNER JOIN [PUMPLINE_CHAINS] [detail] ON [lw_PumpLineTest`2].[LINE_ID] = [detail].[LINE_ID]
-				LEFT JOIN [CHAINS] [a_Chain] ON [detail].[CHAIN_ID] = [a_Chain].[CHAIN_ID]
-	) [key_data_result]
-		INNER JOIN [CHAINPOINTS] [detail_1] ON [key_data_result].[CHAIN_ID] = [detail_1].[CHAIN_ID]
+			(
+				SELECT DISTINCT
+					[t1].[LINE_ID] as [Id]
+				FROM
+					[PUMPLINES] [t1]
+			) [t2]
+				INNER JOIN [PUMPLINE_CHAINS] [d] ON [t2].[Id] = [d].[LINE_ID]
+				LEFT JOIN [CHAINS] [a_Chain] ON [d].[CHAIN_ID] = [a_Chain].[CHAIN_ID]
+	) [m_1]
+		INNER JOIN [CHAINPOINTS] [d_1] ON [m_1].[Id] = [d_1].[CHAIN_ID]
 
 BeforeExecute
 -- SqlServer.2016.MS SqlServer.2016
 
 SELECT
-	[lw_PumpLineTest`2].[LINE_ID],
-	[detail].[LINE_ID],
-	[detail].[CHAIN_ID],
+	[m_1].[LINE_ID],
+	[d].[LINE_ID],
+	[d].[CHAIN_ID],
 	[a_Chain].[CHAIN_ID]
 FROM
-	[PUMPLINES] [lw_PumpLineTest`2]
-		INNER JOIN [PUMPLINE_CHAINS] [detail] ON [lw_PumpLineTest`2].[LINE_ID] = [detail].[LINE_ID]
-		LEFT JOIN [CHAINS] [a_Chain] ON [detail].[CHAIN_ID] = [a_Chain].[CHAIN_ID]
+	[PUMPLINES] [m_1]
+		INNER JOIN [PUMPLINE_CHAINS] [d] ON [m_1].[LINE_ID] = [d].[LINE_ID]
+		LEFT JOIN [CHAINS] [a_Chain] ON [d].[CHAIN_ID] = [a_Chain].[CHAIN_ID]
+ORDER BY
+	[m_1].[LINE_ID]
 
 BeforeExecute
 DisposeTransaction

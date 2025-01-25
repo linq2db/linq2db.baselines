@@ -2,9 +2,9 @@
 -- SQLite.MS SQLite
 
 SELECT
-	Max([p].[PersonID])
+	MAX([t1].[PersonID])
 FROM
-	[Person] [p]
+	[Person] [t1]
 
 BeforeExecute
 -- SQLite.MS SQLite
@@ -34,20 +34,18 @@ VALUES
 
 BeforeExecute
 -- SQLite.MS SQLite
-DECLARE @take  -- Int32
-SET     @take = 2
 
 SELECT
 	[p].[PersonID],
-	[p].[Gender],
 	[p].[FirstName],
 	[p].[MiddleName],
-	[p].[LastName]
+	[p].[LastName],
+	[p].[Gender]
 FROM
 	[Person] [p]
 WHERE
 	[p].[PersonID] > 4
-LIMIT @take
+LIMIT 2
 
 BeforeExecute
 -- SQLite.MS SQLite

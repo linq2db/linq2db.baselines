@@ -1,31 +1,27 @@
 ﻿BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
-DECLARE @take Int32
-SET     @take = 1
-DECLARE @take_1 Int32
-SET     @take_1 = 1
 
 SELECT
-	t1."ParentID"
-FROM
-	"Parent" p_1
-		OUTER APPLY (
-			SELECT
-				p."ParentID"
-			FROM
-				"Child" p
-			WHERE
-				p_1."ParentID" = p."ParentID"
-			FETCH NEXT :take ROWS ONLY
-		) t1
-WHERE
 	(
 		SELECT
-			1
+			a_Children_1."ParentID"
 		FROM
-			"Child" t2
+			"Child" a_Children_1
 		WHERE
-			p_1."ParentID" = t2."ParentID"
-		FETCH NEXT :take_1 ROWS ONLY
-	) IS NOT NULL
+			p."ParentID" = a_Children_1."ParentID"
+		FETCH NEXT 1 ROWS ONLY
+	)
+FROM
+	"Parent" p
+		OUTER APPLY (
+			SELECT
+				a_Children."ParentID"
+			FROM
+				"Child" a_Children
+			WHERE
+				p."ParentID" = a_Children."ParentID"
+			FETCH NEXT 1 ROWS ONLY
+		) t1
+WHERE
+	t1."ParentID" IS NOT NULL
 

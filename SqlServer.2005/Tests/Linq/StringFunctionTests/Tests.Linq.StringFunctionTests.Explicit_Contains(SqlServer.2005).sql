@@ -2,7 +2,7 @@
 -- SqlServer.2005
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	[Patient] [r]
 WHERE
@@ -13,7 +13,7 @@ BeforeExecute
 -- SqlServer.2005
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	[Patient] [r]
 WHERE
@@ -24,7 +24,7 @@ BeforeExecute
 -- SqlServer.2005
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	[Patient] [r]
 WHERE
@@ -34,7 +34,7 @@ BeforeExecute
 -- SqlServer.2005
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	[Patient] [r]
 WHERE

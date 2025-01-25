@@ -4,10 +4,10 @@ DECLARE @n Int32
 SET     @n = 1
 
 SELECT
-	ch."ParentID",
-	ch."ChildID"
+	t1."ParentID",
+	t1."ChildID"
 FROM
-	"Child" ch
+	"Child" t1
 WHERE
 	ROWNUM <= :n
 

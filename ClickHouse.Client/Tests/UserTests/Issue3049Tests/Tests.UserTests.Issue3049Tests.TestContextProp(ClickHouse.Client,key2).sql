@@ -23,7 +23,7 @@ INSERT INTO SampleClass
 )
 VALUES
 (
-	toInt32(0),
+	0,
 	'key1'
 )
 
@@ -37,7 +37,7 @@ INSERT INTO SampleClass
 )
 VALUES
 (
-	toInt32(0),
+	0,
 	'key2'
 )
 
@@ -50,6 +50,15 @@ FROM
 	SampleClass t
 WHERE
 	t.Value IN ('key2')
+
+BeforeExecute
+-- ClickHouse.Client ClickHouse
+
+SELECT
+	t1.Id,
+	t1.Value
+FROM
+	SampleClass t1
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse

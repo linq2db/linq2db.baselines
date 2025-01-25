@@ -250,11 +250,15 @@ CREATE TABLE IF NOT EXISTS "DestinationTable"
 
 BeforeExecute
 -- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+DECLARE @param Integer -- Int32
+SET     @param = 100
+DECLARE @param_1 Integer -- Int32
+SET     @param_1 = 100
 
 SELECT
-	s."Id",
-	s."Value",
-	s."ValueStr"
+	s."Id" + :param,
+	s."Value" + :param,
+	s."ValueStr" || :param_1
 FROM
 	"TableWithData" s
 WHERE

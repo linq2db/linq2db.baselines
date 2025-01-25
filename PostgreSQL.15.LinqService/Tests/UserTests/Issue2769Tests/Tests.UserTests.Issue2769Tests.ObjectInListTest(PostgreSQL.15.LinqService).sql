@@ -14,16 +14,24 @@ CREATE TABLE IF NOT EXISTS "SampleClass"
 
 BeforeExecute
 -- PostgreSQL.15 PostgreSQL
-DECLARE @default Integer -- Int32
-SET     @default = 0
 
 SELECT
-	a."Id",
-	a."NullValue"
+	a_1."RECORDNAME",
+	a_1."KEYNUMB_1"
 FROM
-	"SampleClass" a
+	(
+		SELECT
+			a."Id" as "RECORDNAME",
+			CASE
+				WHEN a."NullValue" IS NOT NULL THEN a."NullValue"
+				ELSE 0
+			END as "KEYNUMB",
+			a."NullValue" as "KEYNUMB_1"
+		FROM
+			"SampleClass" a
+	) a_1
 WHERE
-	(a."Id" = 0 AND Coalesce(a."NullValue", :default) = 0 OR a."Id" = 1 AND Coalesce(a."NullValue", :default) = 1 OR a."Id" = 2 AND Coalesce(a."NullValue", :default) = 2)
+	(a_1."RECORDNAME" = 0 AND a_1."KEYNUMB" = 0 OR a_1."RECORDNAME" = 1 AND a_1."KEYNUMB" = 1 OR a_1."RECORDNAME" = 2 AND a_1."KEYNUMB" = 2)
 
 BeforeExecute
 -- PostgreSQL.15 PostgreSQL

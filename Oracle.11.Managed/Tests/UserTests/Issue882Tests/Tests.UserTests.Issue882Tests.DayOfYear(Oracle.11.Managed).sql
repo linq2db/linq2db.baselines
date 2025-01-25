@@ -2,7 +2,7 @@
 -- Oracle.11.Managed Oracle11
 
 SELECT
-	MOD(To_Number(To_Char(t."DateTimeValue", 'DDD')), 7)
+	MOD(TO_NUMBER(TO_CHAR(t."DateTimeValue", 'DDD')), 7)
 FROM
 	"LinqDataTypes" t
 

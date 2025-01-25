@@ -2,12 +2,12 @@
 -- PostgreSQL.15 PostgreSQL
 
 SELECT
-	t1."FirstName",
-	Count(*)
+	g_1."FirstName",
+	COUNT(*)
 FROM
-	"Person" t1
+	"Person" g_1
 GROUP BY
-	t1."FirstName"
+	g_1."FirstName"
 ORDER BY
-	t1."FirstName"
+	g_1."FirstName"
 

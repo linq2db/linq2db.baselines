@@ -18,7 +18,7 @@ WHERE
 		FROM
 			Person p
 		WHERE
-			p.PersonID = @paramCopy AND p.PersonID = t1.PersonID
+			p.PersonID = @paramCopy AND t1.PersonID = p.PersonID
 	)
 
 BeforeExecute
@@ -41,7 +41,7 @@ WHERE
 		FROM
 			Person p
 		WHERE
-			p.PersonID = @paramCopy AND p.PersonID = t1.PersonID
+			p.PersonID = @paramCopy AND t1.PersonID = p.PersonID
 	)
 
 BeforeExecute
@@ -64,7 +64,7 @@ WHERE
 		FROM
 			Person p
 		WHERE
-			p.PersonID = @paramCopy AND p.PersonID = t1.PersonID
+			p.PersonID = @paramCopy AND t1.PersonID = p.PersonID
 	)
 
 BeforeExecute
@@ -87,7 +87,7 @@ WHERE
 		FROM
 			Person p
 		WHERE
-			p.PersonID = @paramCopy AND p.PersonID = t1.PersonID
+			p.PersonID = @paramCopy AND t1.PersonID = p.PersonID
 	)
 
 BeforeExecute
@@ -110,6 +110,6 @@ WHERE
 		FROM
 			Person p
 		WHERE
-			p.PersonID = @paramCopy AND p.PersonID = t1.PersonID
+			p.PersonID = @paramCopy AND t1.PersonID = p.PersonID
 	)
 

@@ -1,11 +1,11 @@
 ﻿BeforeExecute
 -- SqlServer.2017.MS SqlServer.2017
 
-DELETE [t1]
+DELETE [c_1]
 FROM
-	[Parent] [t1]
+	[Parent] [c_1]
 WHERE
-	[t1].[ParentID] >= 1000
+	[c_1].[ParentID] >= 1000
 
 BeforeExecute
 INSERT BULK [Parent](ParentID, Value1)
@@ -13,18 +13,18 @@ INSERT BULK [Parent](ParentID, Value1)
 BeforeExecute
 -- SqlServer.2017.MS SqlServer.2017
 
-DELETE [t1]
+DELETE [p]
 FROM
-	[Parent] [t1]
+	[Parent] [p]
 WHERE
-	([t1].[ParentID] = 1000 AND [t1].[Value1] IS NULL OR [t1].[ParentID] = 1001 AND [t1].[Value1] IS NULL)
+	([p].[ParentID] = 1000 AND [p].[Value1] IS NULL OR [p].[ParentID] = 1001 AND [p].[Value1] IS NULL)
 
 BeforeExecute
 -- SqlServer.2017.MS SqlServer.2017
 
-DELETE [t1]
+DELETE [c_1]
 FROM
-	[Parent] [t1]
+	[Parent] [c_1]
 WHERE
-	[t1].[ParentID] >= 1000
+	[c_1].[ParentID] >= 1000
 

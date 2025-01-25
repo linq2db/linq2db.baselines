@@ -42,25 +42,23 @@ VALUES
 
 BeforeExecute
 -- Oracle.18.Managed Oracle.Managed Oracle12
-DECLARE @part1 Int32
+DECLARE @part1 Int16
 SET     @part1 = 4
 DECLARE @part2 Int32
 SET     @part2 = 4
-DECLARE @p TimeStamp -- DateTime
-SET     @p = TIMESTAMP '2018-01-02 00:00:00.000000'
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	"LinqDataTypes" t
 WHERE
-	t.ID = 5000 AND t."DateTimeValue" + ((t."SmallIntValue" + :part1) - :part2) * INTERVAL '1' DAY < :p
+	t.ID = 5000 AND t."DateTimeValue" + ((CAST(t."SmallIntValue" AS Int) + :part1) - :part2) * INTERVAL '1' DAY < TO_TIMESTAMP('2018-01-02 00:00:00.000', 'YYYY-MM-DD HH24:MI:SS.FF3')
 
 BeforeExecute
 -- Oracle.18.Managed Oracle.Managed Oracle12
 
 DELETE FROM
-	"LinqDataTypes" t1
+	"LinqDataTypes" t
 WHERE
-	t1.ID = 5000
+	t.ID = 5000
 

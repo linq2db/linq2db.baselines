@@ -1,10 +1,10 @@
 ﻿BeforeExecute
 -- Access.Odbc AccessODBC (asynchronously)
-DECLARE @Parameter1 Int -- Int32
-SET     @Parameter1 = 1
+DECLARE @p Int -- Int32
+SET     @p = 1
 
 SELECT
-	Count(*) > 0
+	IIF(COUNT(*) > 0, True, False)
 FROM
 	[Child] [c_1]
 WHERE
@@ -12,11 +12,11 @@ WHERE
 
 BeforeExecute
 -- Access.Odbc AccessODBC (asynchronously)
-DECLARE @Parameter1 Int -- Int32
-SET     @Parameter1 = -1
+DECLARE @p Int -- Int32
+SET     @p = -1
 
 SELECT
-	Count(*) > 0
+	IIF(COUNT(*) > 0, True, False)
 FROM
 	[Child] [c_1]
 WHERE

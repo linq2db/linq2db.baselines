@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @param NVarChar(4) -- String
-SET     @param = 'john'
+DECLARE @p NVarChar(4) -- String
+SET     @p = 'john'
 
 SELECT
 	"p"."FirstName",

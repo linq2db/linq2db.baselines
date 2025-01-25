@@ -24,15 +24,13 @@ VALUES
 
 BeforeExecute
 -- Informix.DB2 Informix
-DECLARE @TestField BigInt(8) -- Int64
-SET     @TestField = 12
 
 UPDATE
-	LinqDataTypes
+	LinqDataTypes r
 SET
-	LinqDataTypes.BigIntValue = @TestField
+	BigIntValue = 12
 WHERE
-	LinqDataTypes.ID = 101 AND LinqDataTypes.BigIntValue = 11
+	r.ID = 101 AND r.BigIntValue = 11
 
 BeforeExecute
 -- Informix.DB2 Informix

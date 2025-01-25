@@ -27,12 +27,12 @@ BeforeExecute
 -- SqlServer.2005
 
 SELECT
-	[t1].[Id],
 	[t1].[Discriminator],
-	[t1].[Value1],
-	[t1].[Value2],
+	[t1].[Id],
 	[t1].[Value3],
-	[t1].[NullableBool]
+	[t1].[NullableBool],
+	[t1].[Value2],
+	[t1].[Value1]
 FROM
 	[TPHTable] [t1]
 ORDER BY
@@ -40,16 +40,14 @@ ORDER BY
 
 BeforeExecute
 -- SqlServer.2005
-DECLARE @take Int -- Int32
-SET     @take = 2
 
-SELECT TOP (@take)
-	[x].[Id],
+SELECT TOP (2)
 	[x].[Discriminator],
-	[x].[Value1],
-	[x].[Value2],
+	[x].[Id],
 	[x].[Value3],
-	[x].[NullableBool]
+	[x].[NullableBool],
+	[x].[Value2],
+	[x].[Value1]
 FROM
 	[TPHTable] [x]
 WHERE
@@ -57,16 +55,14 @@ WHERE
 
 BeforeExecute
 -- SqlServer.2005
-DECLARE @take Int -- Int32
-SET     @take = 2
 
-SELECT TOP (@take)
-	[x].[Id],
+SELECT TOP (2)
 	[x].[Discriminator],
-	[x].[Value1],
-	[x].[Value2],
+	[x].[Id],
 	[x].[Value3],
-	[x].[NullableBool]
+	[x].[NullableBool],
+	[x].[Value2],
+	[x].[Value1]
 FROM
 	[TPHTable] [x]
 WHERE
@@ -74,16 +70,14 @@ WHERE
 
 BeforeExecute
 -- SqlServer.2005
-DECLARE @take Int -- Int32
-SET     @take = 2
 
-SELECT TOP (@take)
-	[x].[Id],
+SELECT TOP (2)
 	[x].[Discriminator],
-	[x].[Value1],
-	[x].[Value2],
+	[x].[Id],
 	[x].[Value3],
-	[x].[NullableBool]
+	[x].[NullableBool],
+	[x].[Value2],
+	[x].[Value1]
 FROM
 	[TPHTable] [x]
 WHERE
@@ -91,16 +85,14 @@ WHERE
 
 BeforeExecute
 -- SqlServer.2005
-DECLARE @take Int -- Int32
-SET     @take = 2
 
-SELECT TOP (@take)
-	[x].[Id],
+SELECT TOP (2)
 	[x].[Discriminator],
-	[x].[Value1],
-	[x].[Value2],
+	[x].[Id],
 	[x].[Value3],
-	[x].[NullableBool]
+	[x].[NullableBool],
+	[x].[Value2],
+	[x].[Value1]
 FROM
 	[TPHTable] [x]
 WHERE
@@ -108,16 +100,14 @@ WHERE
 
 BeforeExecute
 -- SqlServer.2005
-DECLARE @take Int -- Int32
-SET     @take = 2
 
-SELECT TOP (@take)
-	[x].[Id],
+SELECT TOP (2)
 	[x].[Discriminator],
-	[x].[Value1],
-	[x].[Value2],
+	[x].[Id],
 	[x].[Value3],
-	[x].[NullableBool]
+	[x].[NullableBool],
+	[x].[Value2],
+	[x].[Value1]
 FROM
 	[TPHTable] [x]
 WHERE
@@ -125,16 +115,14 @@ WHERE
 
 BeforeExecute
 -- SqlServer.2005
-DECLARE @take Int -- Int32
-SET     @take = 2
 
-SELECT TOP (@take)
-	[x].[Id],
+SELECT TOP (2)
 	[x].[Discriminator],
-	[x].[Value1],
-	[x].[Value2],
+	[x].[Id],
 	[x].[Value3],
-	[x].[NullableBool]
+	[x].[NullableBool],
+	[x].[Value2],
+	[x].[Value1]
 FROM
 	[TPHTable] [x]
 WHERE

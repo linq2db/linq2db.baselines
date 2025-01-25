@@ -22,8 +22,8 @@ BeforeExecute
 SELECT
 	currentDatabase()
 FROM
-	LinqDataTypes _
-LIMIT toInt32(1)
+	LinqDataTypes t1
+LIMIT 1
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
@@ -35,8 +35,8 @@ INSERT INTO testdb2.Issue681Table
 )
 VALUES
 (
-	toInt32(5),
-	toInt32(10)
+	5,
+	10
 )
 
 BeforeExecute

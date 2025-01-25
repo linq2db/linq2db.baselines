@@ -2,5 +2,5 @@
 -- SqlCe
 
 SELECT
-	10
+	10 as [SomeValue]
 

@@ -2,10 +2,10 @@
 -- Informix.DB2 Informix
 
 SELECT
-	p.PersonID,
-	p.FirstName
+	pp.PersonID,
+	'  ' || pp.FirstName || ' '
 FROM
-	Person p
+	Person pp
 WHERE
-	RTRIM('  ' || p.FirstName || ' ') = '  John' AND p.PersonID = 1
+	pp.PersonID = 1 AND RTRIM('  ' || pp.FirstName || ' ') = '  John'
 

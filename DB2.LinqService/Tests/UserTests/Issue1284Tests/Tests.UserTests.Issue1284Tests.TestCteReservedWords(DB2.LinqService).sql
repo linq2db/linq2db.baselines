@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
-WITH CTE_1 ("Operator")
+WITH CTE_1 ("Obj_Operator")
 AS
 (
 	SELECT
@@ -10,17 +10,17 @@ AS
 		"Person" "x"
 )
 SELECT
-	"t1"."Operator"
+	"t1"."Obj_Operator"
 FROM
 	CTE_1 "t1"
-FETCH FIRST 1 ROWS ONLY
+FETCH NEXT 1 ROWS ONLY
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 SELECT
-	"x"."LastName"
+	"person_1"."LastName"
 FROM
-	"Person" "x"
-FETCH FIRST 1 ROWS ONLY
+	"Person" "person_1"
+FETCH NEXT 1 ROWS ONLY
 

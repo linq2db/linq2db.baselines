@@ -1,20 +1,22 @@
 ﻿BeforeExecute
 -- Oracle.11.Managed Oracle11
-DECLARE @take Int32
-SET     @take = 1
 
 SELECT
-	t1."ParentID",
-	t1."Value1"
+	t2."ParentID",
+	t2."Value1"
 FROM
-	"Parent" t1
+	"Parent" t2
+		LEFT JOIN (
+			SELECT
+				CASE
+					WHEN r."Value1" IS NOT NULL THEN 1
+					ELSE 0
+				END as "HasValue"
+			FROM
+				"Parent" r
+			WHERE
+				ROWNUM <= 1
+		) t1 ON 1=1
 WHERE
-	(
-		SELECT
-			r."Value1"
-		FROM
-			"Parent" r
-		WHERE
-			ROWNUM <= :take
-	) IS NOT NULL
+	t1."HasValue" = 1
 

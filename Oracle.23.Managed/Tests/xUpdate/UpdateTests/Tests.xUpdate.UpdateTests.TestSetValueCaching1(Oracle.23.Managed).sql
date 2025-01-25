@@ -50,18 +50,16 @@ DECLARE @id Int32
 SET     @id = 1
 
 UPDATE
-	"UpdateSetTest"
+	"UpdateSetTest" t1
 SET
-	"UpdateSetTest"."Value1" = :Value1
+	"Value1" = :Value1
 WHERE
-	"UpdateSetTest"."Id" = :id
+	t1."Id" = :id
 
 BeforeExecute
 -- Oracle.23.Managed Oracle.Managed Oracle12
 DECLARE @id Int32
 SET     @id = 1
-DECLARE @take Int32
-SET     @take = 2
 
 SELECT
 	t1."Value1"
@@ -69,7 +67,7 @@ FROM
 	"UpdateSetTest" t1
 WHERE
 	t1."Id" = :id
-FETCH NEXT :take ROWS ONLY
+FETCH NEXT 2 ROWS ONLY
 
 BeforeExecute
 -- Oracle.23.Managed Oracle.Managed Oracle12
@@ -79,18 +77,16 @@ DECLARE @id Int32
 SET     @id = 1
 
 UPDATE
-	"UpdateSetTest"
+	"UpdateSetTest" t1
 SET
-	"UpdateSetTest"."Value1" = :Value1
+	"Value1" = :Value1
 WHERE
-	"UpdateSetTest"."Id" = :id
+	t1."Id" = :id
 
 BeforeExecute
 -- Oracle.23.Managed Oracle.Managed Oracle12
 DECLARE @id Int32
 SET     @id = 1
-DECLARE @take Int32
-SET     @take = 2
 
 SELECT
 	t1."Value1"
@@ -98,7 +94,7 @@ FROM
 	"UpdateSetTest" t1
 WHERE
 	t1."Id" = :id
-FETCH NEXT :take ROWS ONLY
+FETCH NEXT 2 ROWS ONLY
 
 BeforeExecute
 -- Oracle.23.Managed Oracle.Managed Oracle12

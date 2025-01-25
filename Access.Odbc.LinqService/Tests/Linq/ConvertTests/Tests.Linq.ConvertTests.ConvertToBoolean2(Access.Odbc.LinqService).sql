@@ -2,9 +2,14 @@
 -- Access.Odbc AccessODBC
 
 SELECT
-	CBool([t].[MoneyValue] - 4.5)
+	[p_1].[c1]
 FROM
-	[LinqDataTypes] [t]
+	(
+		SELECT
+			IIF([p].[MoneyValue] <> 4.5, True, False) as [c1]
+		FROM
+			[LinqDataTypes] [p]
+	) [p_1]
 WHERE
-	CBool([t].[MoneyValue] - 4.5) = False
+	[p_1].[c1] = False
 

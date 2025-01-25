@@ -24,16 +24,16 @@ INSERT INTO MappingTestClass
 	Flags
 )
 VALUES
-(toInt32(1),toInt32(10),toInt32(1)),
-(toInt32(2),toInt32(20),toInt32(2)),
-(toInt32(3),toInt32(30),toInt32(3)),
-(toInt32(4),toInt32(40),toInt32(4)),
-(toInt32(5),toInt32(50),toInt32(5)),
-(toInt32(6),toInt32(60),toInt32(6)),
-(toInt32(7),toInt32(70),toInt32(7)),
-(toInt32(8),toInt32(80),toInt32(0)),
-(toInt32(9),toInt32(90),toInt32(1)),
-(toInt32(10),toInt32(100),toInt32(2))
+(1,10,1),
+(2,20,2),
+(3,30,3),
+(4,40,4),
+(5,50,5),
+(6,60,6),
+(7,70,7),
+(8,80,0),
+(9,90,1),
+(10,100,2)
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
@@ -45,7 +45,7 @@ SELECT
 FROM
 	MappingTestClass t
 WHERE
-	bitAnd(toInt32(t.Flags), toInt32(1)) <> toInt32(0)
+	(bitAnd(t.Flags, toInt32(1)) <> 0 OR bitAnd(t.Flags, toInt32(1)) IS NULL)
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse

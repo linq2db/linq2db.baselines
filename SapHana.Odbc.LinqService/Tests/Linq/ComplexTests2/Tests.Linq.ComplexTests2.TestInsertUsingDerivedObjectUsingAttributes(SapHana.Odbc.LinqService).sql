@@ -79,20 +79,18 @@ SELECT CURRENT_IDENTITY_VALUE() FROM DUMMY
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @take  -- Int32
-SET     @take = 1
 
 SELECT
-	"_"."FirstName",
-	"_"."PersonID",
-	"_"."LastName",
-	"_"."MiddleName",
-	"_"."Gender"
+	"t1"."FirstName",
+	"t1"."PersonID",
+	"t1"."LastName",
+	"t1"."MiddleName",
+	"t1"."Gender"
 FROM
-	"Person" "_"
+	"Person" "t1"
 WHERE
-	"_"."FirstName" = 'test_inherited_insert'
-LIMIT ?
+	"t1"."FirstName" = 'test_inherited_insert'
+LIMIT 1
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
@@ -108,31 +106,29 @@ DECLARE @ID  -- Int32
 SET     @ID = 5
 
 UPDATE
-	"Person"
+	"Person" "t1"
 SET
-	"Person"."FirstName" = ?,
-	"Person"."LastName" = ?,
-	"Person"."MiddleName" = ?,
-	"Person"."Gender" = ?
+	"FirstName" = ?,
+	"LastName" = ?,
+	"MiddleName" = ?,
+	"Gender" = ?
 WHERE
-	"Person"."PersonID" = ?
+	"t1"."PersonID" = ?
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @take  -- Int32
-SET     @take = 1
 
 SELECT
-	"_"."FirstName",
-	"_"."PersonID",
-	"_"."LastName",
-	"_"."MiddleName",
-	"_"."Gender"
+	"t1"."FirstName",
+	"t1"."PersonID",
+	"t1"."LastName",
+	"t1"."MiddleName",
+	"t1"."Gender"
 FROM
-	"Person" "_"
+	"Person" "t1"
 WHERE
-	"_"."FirstName" = 'test_inherited_insert'
-LIMIT ?
+	"t1"."FirstName" = 'test_inherited_insert'
+LIMIT 1
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc

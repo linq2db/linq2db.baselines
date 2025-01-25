@@ -2,21 +2,19 @@
 -- SqlCe
 
 SELECT
-	[key_data_result].[ParentID],
-	[key_data_result].[Value1],
-	[_gjd_c].[ParentID],
-	[_gjd_c].[ChildID]
+	[m_1].[ParentID],
+	[d].[ParentID] as [ParentID_1],
+	[d].[ChildID]
 FROM
 	(
 		SELECT DISTINCT
-			[p].[ParentID],
-			[p].[Value1]
+			[p].[ParentID]
 		FROM
 			[Parent] [p]
 		WHERE
 			[p].[ParentID] = 1
-	) [key_data_result]
-		INNER JOIN [Child] [_gjd_c] ON [_gjd_c].[ParentID] = [key_data_result].[ParentID]
+	) [m_1]
+		INNER JOIN [Child] [d] ON [m_1].[ParentID] = [d].[ParentID]
 
 BeforeExecute
 -- SqlCe

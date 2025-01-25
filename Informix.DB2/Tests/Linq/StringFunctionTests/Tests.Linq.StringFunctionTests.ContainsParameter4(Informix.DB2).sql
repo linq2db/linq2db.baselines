@@ -3,20 +3,20 @@
 
 SELECT
 	p_1.FirstName,
-	p_1.PersonID,
+	p_1.ID,
 	p_1.LastName,
 	p_1.MiddleName,
-	p_1.Gender
+	p_1.Gender,
+	p_1.Field1
 FROM
 	(
 		SELECT
-			Cast(CASE
-				WHEN p.FirstName LIKE '%Jo%' ESCAPE '~'
-					THEN 't'
+			CASE
+				WHEN p.FirstName LIKE '%Jo%' ESCAPE '~' THEN 't'
 				ELSE 'f'
-			END as BOOLEAN) as Field1,
+			END::BOOLEAN as Field1,
 			p.FirstName,
-			p.PersonID,
+			p.PersonID as ID,
 			p.LastName,
 			p.MiddleName,
 			p.Gender

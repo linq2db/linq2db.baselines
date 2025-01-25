@@ -27,8 +27,8 @@ INSERT INTO StLink
 	InMinQuantity
 )
 VALUES
-(toInt32(1),toFloat64(2),toFloat64(1)),
-(toInt32(2),NULL,NULL)
+(1,toFloat64(2),toFloat64(1)),
+(2,NULL,NULL)
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
@@ -59,41 +59,41 @@ INSERT INTO EdtLink
 	InMinQuantity
 )
 VALUES
-(toInt32(2),toFloat64(4),toFloat64(3))
+(2,toFloat64(4),toFloat64(3))
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
 
 SELECT
-	x.InId,
-	j.InId,
-	j.InMaxQuantity,
-	j.InMinQuantity,
-	x.InMinQuantity,
-	x.InMaxQuantity
+	t1.InId,
+	e.InId,
+	t1.InMinQuantity,
+	e.InMinQuantity,
+	t1.InMaxQuantity,
+	e.InMaxQuantity
 FROM
-	StLink x
-		LEFT JOIN EdtLink j ON x.InId = j.InId
+	StLink t1
+		LEFT JOIN EdtLink e ON t1.InId = e.InId
 WHERE
-	x.InId = toInt32(1)
-LIMIT toInt32(2)
+	t1.InId = 1
+LIMIT 2
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
 
 SELECT
-	x.InId,
-	j.InId,
-	j.InMaxQuantity,
-	j.InMinQuantity,
-	x.InMinQuantity,
-	x.InMaxQuantity
+	t1.InId,
+	e.InId,
+	t1.InMinQuantity,
+	e.InMinQuantity,
+	t1.InMaxQuantity,
+	e.InMaxQuantity
 FROM
-	StLink x
-		LEFT JOIN EdtLink j ON x.InId = j.InId
+	StLink t1
+		LEFT JOIN EdtLink e ON t1.InId = e.InId
 WHERE
-	x.InId = toInt32(2)
-LIMIT toInt32(2)
+	t1.InId = 2
+LIMIT 2
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse

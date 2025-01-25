@@ -25,11 +25,11 @@ DECLARE @from Integer(4) -- Int32
 SET     @from = 2
 
 UPDATE
-	"testparams"
+	"testparams" "t"
 SET
-	"testparams"."from" = @from
+	"from" = CAST(@from AS Int)
 WHERE
-	"testparams"."from" = 1
+	"t"."from" = 1
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW

@@ -4,7 +4,7 @@ DECLARE @p Integer -- Int32
 SET     @p = 2
 
 SELECT
-	DateAdd('m', @p, [t].[DateTimeValue])
+	DateValue(DateAdd('m', @p, [t].[DateTimeValue]))
 FROM
 	[LinqDataTypes] [t]
 

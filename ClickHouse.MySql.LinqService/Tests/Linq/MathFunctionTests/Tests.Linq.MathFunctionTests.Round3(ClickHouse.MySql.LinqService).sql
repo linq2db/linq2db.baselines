@@ -2,10 +2,14 @@
 -- ClickHouse.MySql ClickHouse
 
 SELECT
-	roundBankers(p.MoneyValue, toInt32(1))
+	t_1.c1
 FROM
-	LinqDataTypes p
+	(
+		SELECT
+			roundBankers(t.MoneyValue, 1) as c1
+		FROM
+			LinqDataTypes t
+	) t_1
 WHERE
-	roundBankers(p.MoneyValue, toInt32(1)) <> toDecimal64('0', 10) AND
-	roundBankers(p.MoneyValue, toInt32(1)) <> toDecimal64('7', 10)
+	t_1.c1 <> toDecimal128('0', 10) AND t_1.c1 <> toDecimal128('7', 10)
 

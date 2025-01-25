@@ -28,7 +28,7 @@ BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	Child c_1
 WHERE

@@ -51,7 +51,7 @@ BeforeExecute
 -- SqlServer.2022
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	[NotNullParent] [p]
 

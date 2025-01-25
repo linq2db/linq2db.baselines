@@ -2,29 +2,29 @@
 -- ClickHouse.MySql ClickHouse
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	Person p
 WHERE
-	startsWith(p.FirstName, 'Jo') AND p.PersonID = toInt32(1)
+	startsWith(p.FirstName, 'Jo') AND p.PersonID = 1
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	Person p
 WHERE
-	startsWith(p.FirstName, 'jo') AND p.PersonID = toInt32(1)
+	startsWith(p.FirstName, 'jo') AND p.PersonID = 1
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	Person p
 WHERE
-	NOT startsWith(p.FirstName, 'Jo') AND p.PersonID = toInt32(1)
+	NOT startsWith(p.FirstName, 'Jo') AND p.PersonID = 1
 

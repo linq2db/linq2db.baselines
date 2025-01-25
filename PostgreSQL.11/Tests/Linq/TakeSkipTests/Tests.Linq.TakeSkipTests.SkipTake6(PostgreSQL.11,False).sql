@@ -12,9 +12,9 @@ FROM
 		FROM
 			"GrandChild" p
 		LIMIT 3
-	) t1
+	) p_1
 WHERE
-	c_1."ParentID" = t1."ParentID"
+	c_1."ParentID" = p_1."ParentID"
 
 BeforeExecute
 -- PostgreSQL.11 PostgreSQL.9.5 PostgreSQL
@@ -30,7 +30,7 @@ FROM
 		FROM
 			"GrandChild" p
 		LIMIT 3 OFFSET 12 
-	) t1
+	) p_1
 WHERE
-	c_1."ParentID" = t1."ParentID"
+	c_1."ParentID" = p_1."ParentID"
 

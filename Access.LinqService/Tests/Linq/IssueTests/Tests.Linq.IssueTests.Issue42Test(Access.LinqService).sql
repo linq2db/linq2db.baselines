@@ -19,6 +19,25 @@ WHERE
 
 BeforeExecute
 -- Access AccessOleDb
+
+SELECT TOP 1
+	[r].[ID],
+	[r].[MoneyValue],
+	[r].[DateTimeValue],
+	[r].[DateTimeValue2],
+	[r].[BoolValue],
+	[r].[GuidValue],
+	[r].[SmallIntValue],
+	[r].[IntValue],
+	[r].[BigIntValue],
+	[r].[StringValue]
+FROM
+	[LinqDataTypes] [r]
+WHERE
+	[r].[ID] = 1
+
+BeforeExecute
+-- Access AccessOleDb
 DECLARE @MoneyValue VarChar(5, 4) -- AnsiString
 SET     @MoneyValue = 1.1100
 DECLARE @DateTimeValue Date -- DateTime
@@ -113,4 +132,23 @@ SET
 	[t1].[StringValue] = @StringValue
 WHERE
 	[t1].[ID] = @ID
+
+BeforeExecute
+-- Access AccessOleDb
+
+SELECT TOP 1
+	[r].[ID],
+	[r].[MoneyValue],
+	[r].[DateTimeValue],
+	[r].[DateTimeValue2],
+	[r].[BoolValue],
+	[r].[GuidValue],
+	[r].[SmallIntValue],
+	[r].[IntValue],
+	[r].[BigIntValue],
+	[r].[StringValue]
+FROM
+	[LinqDataTypes] [r]
+WHERE
+	[r].[ID] = 1
 

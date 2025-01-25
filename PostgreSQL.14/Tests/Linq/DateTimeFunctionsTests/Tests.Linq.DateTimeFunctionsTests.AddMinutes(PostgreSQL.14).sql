@@ -2,7 +2,7 @@
 -- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
 
 SELECT
-	t."DateTimeValue" + -8 * Interval '1 Minute'
+	Floor(Extract(minute From (t."DateTimeValue" + -8 * Interval '1 Minute')))::Int
 FROM
 	"LinqDataTypes" t
 

@@ -84,18 +84,14 @@ BeforeExecute
 -- SqlCe
 
 SELECT
-	'Id',
-	[selectParam].[Id],
-	Sum(CASE
-		WHEN [a_ActualStage].[Id] IS NULL
-			THEN NULL
-		ELSE [a_ActualStage].[Id]
-	END)
+	'Id' as [Name],
+	[it].[Id] as [Value_1],
+	SUM([a_ActualStage].[Id]) as [SUM_1]
 FROM
-	[Task] [selectParam]
-		LEFT JOIN [TaskStage] [a_ActualStage] ON [selectParam].[Id] = [a_ActualStage].[TaskId] AND [a_ActualStage].[Actual] = 1
+	[Task] [it]
+		LEFT JOIN [TaskStage] [a_ActualStage] ON [it].[Id] = [a_ActualStage].[TaskId] AND [a_ActualStage].[Actual] = 1
 GROUP BY
-	[selectParam].[Id]
+	[it].[Id]
 
 BeforeExecute
 -- SqlCe

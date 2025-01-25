@@ -2,9 +2,9 @@
 -- Access.Odbc AccessODBC
 
 DELETE FROM
-	[GrandChild] [t1]
+	[GrandChild] [gc]
 WHERE
-	[t1].[GrandChildID] IN (1001, 1002)
+	[gc].[GrandChildID] IN (1001, 1002)
 
 BeforeExecute
 -- Access.Odbc AccessODBC
@@ -42,7 +42,7 @@ BeforeExecute
 -- Access.Odbc AccessODBC
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	[GrandChild] [gc]
 WHERE
@@ -72,7 +72,7 @@ BeforeExecute
 -- Access.Odbc AccessODBC
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	[GrandChild] [gc]
 WHERE

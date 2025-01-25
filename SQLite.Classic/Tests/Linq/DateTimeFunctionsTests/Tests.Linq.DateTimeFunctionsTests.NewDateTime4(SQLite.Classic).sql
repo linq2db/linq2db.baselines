@@ -2,7 +2,7 @@
 -- SQLite.Classic SQLite
 
 SELECT
-	[p].[DateTimeValue]
+	CAST(strftime('%Y', [p].[DateTimeValue]) AS INTEGER)
 FROM
 	[LinqDataTypes] [p]
 

@@ -2,7 +2,7 @@
 -- SQLite.MS SQLite
 
 SELECT
-	'I-' || Cast([x].[PersonID] as VarChar(11)),
+	'I-' || [x].[PersonID],
 	[x].[FirstName]
 FROM
 	[Person] [x]

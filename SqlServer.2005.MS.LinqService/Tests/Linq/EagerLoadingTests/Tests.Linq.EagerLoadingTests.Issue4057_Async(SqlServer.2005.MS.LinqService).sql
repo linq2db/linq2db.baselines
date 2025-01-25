@@ -1,35 +1,26 @@
 ﻿BeforeExecute
 BeginTransactionAsync(Serializable)
 BeforeExecute
--- SQLite.Default SQLite.MS SQLite (asynchronously)
-DECLARE @take  -- Int32
-SET     @take = 1
+-- SQLite.MS SQLite (asynchronously)
 
 SELECT
-	[lw_Parent].[ParentID],
-	[detail].[ParentID],
-	[detail].[ChildID]
+	[m_1].[ParentID],
+	[d].[ParentID],
+	[d].[ChildID]
 FROM
 	(
-		SELECT DISTINCT
-			[t1].[ParentID]
+		SELECT
+			[x].[ParentID]
 		FROM
-			(
-				SELECT
-					[x].[ParentID]
-				FROM
-					[Parent] [x]
-				WHERE
-					[x].[ParentID] = 3
-				LIMIT @take
-			) [t1]
-	) [lw_Parent]
-		INNER JOIN [Child] [detail] ON [lw_Parent].[ParentID] = [detail].[ParentID]
+			[Parent] [x]
+		WHERE
+			[x].[ParentID] = 3
+		LIMIT 1
+	) [m_1]
+		INNER JOIN [Child] [d] ON [m_1].[ParentID] = [d].[ParentID]
 
 BeforeExecute
--- SQLite.Default SQLite.MS SQLite (asynchronously)
-DECLARE @take  -- Int32
-SET     @take = 1
+-- SQLite.MS SQLite (asynchronously)
 
 SELECT
 	[x].[ParentID],
@@ -38,42 +29,33 @@ FROM
 	[Parent] [x]
 WHERE
 	[x].[ParentID] = 3
-LIMIT @take
+LIMIT 1
 
 BeforeExecute
 DisposeTransactionAsync
 BeforeExecute
 BeginTransactionAsync(Serializable)
 BeforeExecute
--- SQLite.Default SQLite.MS SQLite (asynchronously)
-DECLARE @take  -- Int32
-SET     @take = 1
+-- SQLite.MS SQLite (asynchronously)
 
 SELECT
-	[lw_Parent].[ParentID],
-	[detail].[ParentID],
-	[detail].[ChildID]
+	[m_1].[ParentID],
+	[d].[ParentID],
+	[d].[ChildID]
 FROM
 	(
-		SELECT DISTINCT
-			[t1].[ParentID]
+		SELECT
+			[x].[ParentID]
 		FROM
-			(
-				SELECT
-					[x].[ParentID]
-				FROM
-					[Parent] [x]
-				WHERE
-					[x].[ParentID] = 3
-				LIMIT @take
-			) [t1]
-	) [lw_Parent]
-		INNER JOIN [Child] [detail] ON [lw_Parent].[ParentID] = [detail].[ParentID]
+			[Parent] [x]
+		WHERE
+			[x].[ParentID] = 3
+		LIMIT 1
+	) [m_1]
+		INNER JOIN [Child] [d] ON [m_1].[ParentID] = [d].[ParentID]
 
 BeforeExecute
--- SQLite.Default SQLite.MS SQLite (asynchronously)
-DECLARE @take  -- Int32
-SET     @take = 1
+-- SQLite.MS SQLite (asynchronously)
 
 SELECT
 	[x].[ParentID],
@@ -82,7 +64,7 @@ FROM
 	[Parent] [x]
 WHERE
 	[x].[ParentID] = 3
-LIMIT @take
+LIMIT 1
 
 BeforeExecute
 DisposeTransactionAsync

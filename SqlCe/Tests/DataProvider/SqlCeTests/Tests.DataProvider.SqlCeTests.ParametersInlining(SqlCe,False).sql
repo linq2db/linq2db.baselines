@@ -6,9 +6,9 @@ DECLARE @DateTime DateTime
 SET     @DateTime = '2020-02-29 17:54:55.123'
 
 SELECT
-	[_].[datetimeDataType]
+	[t1].[datetimeDataType] as [DateTimeValue]
 FROM
-	[AllTypes] [_]
+	[AllTypes] [t1]
 WHERE
-	Coalesce([_].[datetimeDataType], @Value) <= @DateTime
+	Coalesce([t1].[datetimeDataType], @Value) <= @DateTime
 

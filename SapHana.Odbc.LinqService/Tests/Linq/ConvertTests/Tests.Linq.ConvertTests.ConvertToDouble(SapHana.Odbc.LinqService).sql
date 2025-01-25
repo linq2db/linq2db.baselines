@@ -2,9 +2,14 @@
 -- SapHana.Odbc SapHanaOdbc
 
 SELECT
-	Cast("t"."MoneyValue" as Double)
+	"p_1"."c1"
 FROM
-	"LinqDataTypes" "t"
+	(
+		SELECT
+			CAST("p"."MoneyValue" AS Double) as "c1"
+		FROM
+			"LinqDataTypes" "p"
+	) "p_1"
 WHERE
-	Cast("t"."MoneyValue" as Double) > 0
+	"p_1"."c1" > 0
 

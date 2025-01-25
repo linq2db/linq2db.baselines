@@ -3,7 +3,7 @@
 
 SELECT
 	p_1.ParentID,
-	c_1.ChildID
+	t1.ChildID
 FROM
 	(
 		SELECT
@@ -11,14 +11,14 @@ FROM
 		FROM
 			Parent p
 		WHERE
-			p.ParentID > toInt32(0)
-		LIMIT toInt32(10)
+			p.ParentID > 0
+		LIMIT 10
 	) p_1,
 	(
 		SELECT
-			t1.ChildID as ChildID
+			c_1.ChildID as ChildID
 		FROM
-			Child t1
-		LIMIT toInt32(10)
-	) c_1
+			Child c_1
+		LIMIT 10
+	) t1
 

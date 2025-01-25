@@ -2,8 +2,7 @@
 -- SqlServer.2005
 
 SELECT
-	[t].[DateTimeValue],
-	[t].[SmallIntValue]
+	DateAdd(day, [t].[SmallIntValue], [t].[DateTimeValue])
 FROM
 	[LinqDataTypes] [t]
 

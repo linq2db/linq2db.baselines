@@ -2,7 +2,7 @@
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
 SELECT
-	[_].[FirstName] COLLATE NOCASE
+	'1' || [t1].[FirstName] COLLATE NOCASE || '2'
 FROM
-	[Person] [_]
+	[Person] [t1]
 

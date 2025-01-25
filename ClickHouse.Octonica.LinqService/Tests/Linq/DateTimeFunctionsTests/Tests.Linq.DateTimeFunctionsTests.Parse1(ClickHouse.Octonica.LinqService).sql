@@ -2,14 +2,9 @@
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
-	d.c1
+	toDate(toDateTime64(toString(d.DateTimeValue), toUInt8(7)))
 FROM
-	(
-		SELECT
-			t.DateTimeValue as c1
-		FROM
-			LinqDataTypes t
-	) d
+	LinqDataTypes d
 WHERE
-	DAY(d.c1) > toInt32(0)
+	toDayOfMonth(toDateTime64(toString(d.DateTimeValue), toUInt8(7))) > 0
 

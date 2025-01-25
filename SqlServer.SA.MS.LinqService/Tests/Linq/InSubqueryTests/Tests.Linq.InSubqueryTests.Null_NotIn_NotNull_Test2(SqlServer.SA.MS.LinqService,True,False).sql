@@ -86,25 +86,17 @@ BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
 
 SELECT
-	[t1].[ID]
-FROM
-	[test_in_1] [t1]
-
-BeforeExecute
--- SqlServer.SA.MS SqlServer.2019
-
-SELECT
 	[t].[ID]
 FROM
 	[test_in_1] [t]
 WHERE
-	NOT EXISTS(
+	[t].[ID] IS NOT NULL AND NOT EXISTS(
 		SELECT
 			*
 		FROM
 			[test_in_2] [p]
 		WHERE
-			[p].[ID] = [t].[ID]
+			[p].[ID] IS NOT NULL AND [t].[ID] = [p].[ID]
 	)
 
 BeforeExecute
@@ -113,7 +105,7 @@ BeforeExecute
 SELECT
 	[t1].[ID]
 FROM
-	[test_in_2] [t1]
+	[test_in_1] [t1]
 
 BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019

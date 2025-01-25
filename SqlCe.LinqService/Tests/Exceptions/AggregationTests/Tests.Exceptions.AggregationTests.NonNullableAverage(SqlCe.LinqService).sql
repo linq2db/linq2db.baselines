@@ -2,9 +2,9 @@
 -- SqlCe
 
 SELECT
-	Avg([_].[ParentID])
+	AVG([t1].[ParentID]) as [AVG_1]
 FROM
-	[Parent] [_]
+	[Parent] [t1]
 WHERE
-	[_].[ParentID] < 0
+	[t1].[ParentID] < 0
 

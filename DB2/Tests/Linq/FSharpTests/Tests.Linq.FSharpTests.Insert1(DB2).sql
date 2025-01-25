@@ -2,9 +2,9 @@
 -- DB2 DB2.LUW DB2LUW
 
 DELETE FROM
-	"Child" "t1"
+	"Child" "c_1"
 WHERE
-	"t1"."ChildID" > 1000
+	"c_1"."ChildID" > 1000
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
@@ -28,7 +28,7 @@ BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	"Child" "c_1"
 WHERE
@@ -38,7 +38,7 @@ BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 DELETE FROM
-	"Child" "t1"
+	"Child" "c_1"
 WHERE
-	"t1"."ChildID" > 1000
+	"c_1"."ChildID" > 1000
 

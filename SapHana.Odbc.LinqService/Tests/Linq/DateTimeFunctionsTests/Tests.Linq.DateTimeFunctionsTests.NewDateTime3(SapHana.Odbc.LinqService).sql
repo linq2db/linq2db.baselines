@@ -2,14 +2,9 @@
 -- SapHana.Odbc SapHanaOdbc
 
 SELECT
-	"t"."c1"
+	To_Timestamp(LPad(Year("t"."DateTimeValue"), 4, '0') || '-10-01 20:35:44.000')
 FROM
-	(
-		SELECT
-			Cast((Lpad(Year("p"."DateTimeValue"),4,'0') || '-10-01 20:35:44') as TimeStamp) as "c1"
-		FROM
-			"LinqDataTypes" "p"
-	) "t"
+	"LinqDataTypes" "t"
 WHERE
-	Month("t"."c1") = 10
+	Month(To_Timestamp(LPad(Year("t"."DateTimeValue"), 4, '0') || '-10-01 20:35:44.000')) = 10
 

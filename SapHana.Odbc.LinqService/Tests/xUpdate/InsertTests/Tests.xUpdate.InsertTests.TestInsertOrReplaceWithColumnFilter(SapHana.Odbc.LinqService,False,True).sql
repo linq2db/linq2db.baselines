@@ -26,12 +26,12 @@ DECLARE @ID  -- Int32
 SET     @ID = 0
 
 UPDATE
-	"TestInsertOrReplaceTable"
+	"TestInsertOrReplaceTable" "t1"
 SET
-	"TestInsertOrReplaceTable"."FirstName" = ?,
-	"TestInsertOrReplaceTable"."LastName" = ?
+	"FirstName" = ?,
+	"LastName" = ?
 WHERE
-	"TestInsertOrReplaceTable"."ID" = ?
+	"t1"."ID" = ?
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
@@ -59,8 +59,6 @@ BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @FirstName NVarChar(27) -- String
 SET     @FirstName = 'InsertOrReplaceColumnFilter'
-DECLARE @take  -- Int32
-SET     @take = 1
 
 SELECT
 	"x"."ID",
@@ -71,7 +69,7 @@ FROM
 	"TestInsertOrReplaceTable" "x"
 WHERE
 	"x"."FirstName" = ?
-LIMIT ?
+LIMIT 1
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
@@ -85,20 +83,18 @@ DECLARE @ID  -- Int32
 SET     @ID = 0
 
 UPDATE
-	"TestInsertOrReplaceTable"
+	"TestInsertOrReplaceTable" "t1"
 SET
-	"TestInsertOrReplaceTable"."FirstName" = ?,
-	"TestInsertOrReplaceTable"."LastName" = ?,
-	"TestInsertOrReplaceTable"."MiddleName" = ?
+	"FirstName" = ?,
+	"LastName" = ?,
+	"MiddleName" = ?
 WHERE
-	"TestInsertOrReplaceTable"."ID" = ?
+	"t1"."ID" = ?
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @FirstName NVarChar(27) -- String
 SET     @FirstName = 'InsertOrReplaceColumnFilter'
-DECLARE @take  -- Int32
-SET     @take = 1
 
 SELECT
 	"x"."ID",
@@ -109,7 +105,7 @@ FROM
 	"TestInsertOrReplaceTable" "x"
 WHERE
 	"x"."FirstName" = ?
-LIMIT ?
+LIMIT 1
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc

@@ -50,8 +50,6 @@ VALUES
 
 BeforeExecute
 -- Oracle.11.Managed Oracle11
-DECLARE @take Int32
-SET     @take = 1
 
 SELECT
 	t1.ID,
@@ -65,7 +63,7 @@ SELECT
 FROM
 	"LinqDataTypes" t1
 WHERE
-	t1.ID = 1000 AND ROWNUM <= :take
+	t1.ID = 1000 AND ROWNUM <= 1
 
 BeforeExecute
 -- Oracle.11.Managed Oracle11

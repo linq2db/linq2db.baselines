@@ -28,7 +28,7 @@ INSERT INTO Issue2691Table
 )
 VALUES
 (
-	toInt32(99),
+	99,
 	'\x01\x02\x03\x04\x05',
 	'\x01\x02\x03\x04\x05\x06'
 )

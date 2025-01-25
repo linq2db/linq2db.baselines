@@ -2,8 +2,10 @@
 -- Informix.DB2 Informix
 
 SELECT
-	t1.ParentID + 1
+	a_Children.ParentID + 1
 FROM
-	Parent cp
-		INNER JOIN Child t1 ON t1.ParentID > 0 AND cp.ParentID = t1.ParentID
+	Parent p
+		INNER JOIN Child a_Children ON p.ParentID = a_Children.ParentID
+WHERE
+	a_Children.ParentID > 0
 

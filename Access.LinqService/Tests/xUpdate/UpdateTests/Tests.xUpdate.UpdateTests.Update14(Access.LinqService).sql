@@ -32,19 +32,19 @@ DECLARE @idx Integer -- Int32
 SET     @idx = 4
 
 UPDATE
-	[Person] [_]
+	[Person] [t1]
 SET
-	[_].[LastName] = CStr(Len(@name) + @idx)
+	[t1].[LastName] = CStr(Len(@name) + @idx)
 WHERE
-	[_].[FirstName] LIKE 'Update14%'
+	[t1].[FirstName] LIKE 'Update14%'
 
 BeforeExecute
 -- Access AccessOleDb
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
-	[Person] [_]
+	[Person] [t1]
 WHERE
-	[_].[FirstName] LIKE 'Update14%'
+	[t1].[FirstName] LIKE 'Update14%'
 

@@ -2,7 +2,7 @@
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 
 SELECT
-	Cast((Cast(Cast(Floor(Extract(year from t."DateTimeValue")) as int) as VarChar(11)) || '-01-01') as Date)
+	(Floor(Extract(year From t."DateTimeValue"))::Int || '-01-01')::Date
 FROM
 	"LinqDataTypes" t
 

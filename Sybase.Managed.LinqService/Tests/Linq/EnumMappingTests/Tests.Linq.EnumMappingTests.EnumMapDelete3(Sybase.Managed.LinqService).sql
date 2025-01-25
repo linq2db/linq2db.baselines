@@ -28,9 +28,9 @@ BeforeExecute
 
 DELETE FROM [LinqDataTypes]
 FROM
-	[LinqDataTypes] [t1]
+	[LinqDataTypes] [r]
 WHERE
-	[t1].[ID] = 101 AND [t1].[BigIntValue] = 12
+	[r].[ID] = 101 AND [r].[BigIntValue] = 12
 
 BeforeExecute
 -- Sybase.Managed Sybase

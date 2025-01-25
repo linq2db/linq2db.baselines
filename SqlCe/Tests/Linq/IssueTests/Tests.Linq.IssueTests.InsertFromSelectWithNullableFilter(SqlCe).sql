@@ -7,18 +7,18 @@ INSERT INTO [AllTypes]
 	[intDataType]
 )
 SELECT
-	123,
-	[t1].[smallintDataType]
+	123 as [c1],
+	[t2].[ID] as [c2]
 FROM
 	(
 		SELECT DISTINCT
-			[c_1].[smallintDataType]
+			[a_Association].[smallintDataType] as [ID]
 		FROM
-			[AllTypes] [_]
-				INNER JOIN [AllTypes] [c_1] ON [_].[smallintDataType] = [c_1].[intDataType]
+			[AllTypes] [t1]
+				INNER JOIN [AllTypes] [a_Association] ON [t1].[smallintDataType] = [a_Association].[intDataType]
 		WHERE
-			[_].[smallintDataType] IS NULL
-	) [t1]
+			1 = 0
+	) [t2]
 
 BeforeExecute
 -- SqlCe
@@ -31,16 +31,16 @@ INSERT INTO [AllTypes]
 	[intDataType]
 )
 SELECT
-	123,
-	[t1].[smallintDataType]
+	123 as [c1],
+	[t2].[ID] as [c2]
 FROM
 	(
 		SELECT DISTINCT
-			[c_1].[smallintDataType]
+			[a_Association].[smallintDataType] as [ID]
 		FROM
-			[AllTypes] [_]
-				INNER JOIN [AllTypes] [c_1] ON [_].[smallintDataType] = [c_1].[intDataType]
+			[AllTypes] [t1]
+				INNER JOIN [AllTypes] [a_Association] ON [t1].[smallintDataType] = [a_Association].[intDataType]
 		WHERE
-			[_].[smallintDataType] = @ID
-	) [t1]
+			[t1].[smallintDataType] = @ID
+	) [t2]
 

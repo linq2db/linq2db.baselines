@@ -2,7 +2,7 @@
 -- SqlCe
 
 SELECT
-	[x].[PersonID]
+	[x].[PersonID] as [ID]
 FROM
 	[Person] [x]
 		LEFT JOIN [Patient] [a_Patient] ON [x].[PersonID] = [a_Patient].[PersonID]

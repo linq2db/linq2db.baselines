@@ -139,27 +139,25 @@ BeforeExecute
 -- SqlServer.2008.MS SqlServer.2008
 DECLARE @skip Int -- Int32
 SET     @skip = 1
-DECLARE @take Int -- Int32
-SET     @take = 2
 
 SELECT
-	[t1].[Value2]
+	[t2].[Value2]
 FROM
 	(
 		SELECT
-			[q].[Value2],
-			ROW_NUMBER() OVER (ORDER BY [q].[Id]) as [RN]
+			[t1].[Value2],
+			ROW_NUMBER() OVER (ORDER BY [t1].[Id]) as [RN]
 		FROM
 			(
 				SELECT
-					[t].[Id],
-					[t].[Value2]
+					[q].[Id],
+					[q].[Value2]
 				FROM
-					[ValueConversion] [t]
-			) [q]
-	) [t1]
+					[ValueConversion] [q]
+			) [t1]
+	) [t2]
 WHERE
-	[t1].[RN] > @skip AND [t1].[RN] <= @take
+	[t2].[RN] > @skip AND [t2].[RN] <= (@skip + 1)
 
 BeforeExecute
 -- SqlServer.2008.MS SqlServer.2008

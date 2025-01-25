@@ -30,9 +30,9 @@ USING (VALUES
 	(1)
 ) "Source"
 (
-	"Id"
+	"source_Id"
 )
-ON ("Target"."Id" = "Source"."Id")
+ON ("Target"."Id" = "Source"."source_Id")
 WHEN MATCHED THEN DELETE
 
 BeforeExecute

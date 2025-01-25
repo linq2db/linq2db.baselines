@@ -42,22 +42,20 @@ VALUES
 
 BeforeExecute
 -- SqlServer.Contained SqlServer.2019
-DECLARE @p DateTime2
-SET     @p = DATETIME2FROMPARTS(2018, 1, 2, 0, 0, 0, 0, 7)
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	[LinqDataTypes] [t]
 WHERE
-	[t].[ID] = 5000 AND DateAdd(day, [t].[SmallIntValue], [t].[DateTimeValue]) > @p
+	[t].[ID] = 5000 AND DateAdd(day, [t].[SmallIntValue], [t].[DateTimeValue]) > DATETIMEFROMPARTS(2018, 1, 2, 0, 0, 0, 0)
 
 BeforeExecute
 -- SqlServer.Contained SqlServer.2019
 
-DELETE [t1]
+DELETE [t]
 FROM
-	[LinqDataTypes] [t1]
+	[LinqDataTypes] [t]
 WHERE
-	[t1].[ID] = 5000
+	[t].[ID] = 5000
 

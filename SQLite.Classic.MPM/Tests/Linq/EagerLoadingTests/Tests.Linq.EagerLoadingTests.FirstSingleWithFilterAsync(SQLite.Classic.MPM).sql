@@ -95,45 +95,32 @@ BeforeExecute
 BeginTransactionAsync(Serializable)
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite (asynchronously)
-DECLARE @take  -- Int32
-SET     @take = 1
 
 SELECT
-	[key_data_result].[Id1],
-	[key_data_result].[Id2],
-	[detail].[DetailValue]
+	[m_1].[Id1],
+	[d].[DetailValue]
 FROM
 	(
-		SELECT DISTINCT
-			[t1].[Id1],
-			[t1].[Id2]
+		SELECT
+			[x].[Id1]
 		FROM
-			(
-				SELECT
-					[x].[Id1],
-					[x].[Id2]
-				FROM
-					[MasterClass] [x]
-				WHERE
-					[x].[Id1] = 1
-				LIMIT @take
-			) [t1]
-	) [key_data_result]
-		INNER JOIN [DetailClass] [detail] ON [key_data_result].[Id1] = [detail].[MasterId]
+			[MasterClass] [x]
+		WHERE
+			[x].[Id1] = 1
+		LIMIT 1
+	) [m_1]
+		INNER JOIN [DetailClass] [d] ON [m_1].[Id1] = [d].[MasterId]
 
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite (asynchronously)
-DECLARE @take  -- Int32
-SET     @take = 1
 
 SELECT
-	[x].[Id1],
-	[x].[Id2]
+	[x].[Id1]
 FROM
 	[MasterClass] [x]
 WHERE
 	[x].[Id1] = 1
-LIMIT @take
+LIMIT 1
 
 BeforeExecute
 DisposeTransactionAsync
@@ -141,45 +128,32 @@ BeforeExecute
 BeginTransactionAsync(Serializable)
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite (asynchronously)
-DECLARE @take  -- Int32
-SET     @take = 1
 
 SELECT
-	[key_data_result].[Id1],
-	[key_data_result].[Id2],
-	[detail].[DetailValue]
+	[m_1].[Id1],
+	[d].[DetailValue]
 FROM
 	(
-		SELECT DISTINCT
-			[t1].[Id1],
-			[t1].[Id2]
+		SELECT
+			[x].[Id1]
 		FROM
-			(
-				SELECT
-					[x].[Id1],
-					[x].[Id2]
-				FROM
-					[MasterClass] [x]
-				WHERE
-					[x].[Id1] = 1
-				LIMIT @take
-			) [t1]
-	) [key_data_result]
-		INNER JOIN [DetailClass] [detail] ON [key_data_result].[Id1] = [detail].[MasterId]
+			[MasterClass] [x]
+		WHERE
+			[x].[Id1] = 1
+		LIMIT 1
+	) [m_1]
+		INNER JOIN [DetailClass] [d] ON [m_1].[Id1] = [d].[MasterId]
 
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite (asynchronously)
-DECLARE @take  -- Int32
-SET     @take = 1
 
 SELECT
-	[x].[Id1],
-	[x].[Id2]
+	[x].[Id1]
 FROM
 	[MasterClass] [x]
 WHERE
 	[x].[Id1] = 1
-LIMIT @take
+LIMIT 1
 
 BeforeExecute
 DisposeTransactionAsync
@@ -187,45 +161,37 @@ BeforeExecute
 BeginTransactionAsync(Serializable)
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite (asynchronously)
-DECLARE @take  -- Int32
-SET     @take = 1
 
 SELECT
-	[key_data_result].[Id1],
-	[key_data_result].[Id2],
-	[detail].[DetailValue]
+	[m_1].[Id1],
+	[d].[DetailValue]
 FROM
 	(
 		SELECT DISTINCT
-			[t1].[Id1],
-			[t1].[Id2]
+			[t1].[Id1]
 		FROM
 			(
 				SELECT
-					[x].[Id1],
-					[x].[Id2]
+					[x].[Id1]
 				FROM
 					[MasterClass] [x]
 				WHERE
 					[x].[Id1] = 1
-				LIMIT @take
+				LIMIT 2
 			) [t1]
-	) [key_data_result]
-		INNER JOIN [DetailClass] [detail] ON [key_data_result].[Id1] = [detail].[MasterId]
+	) [m_1]
+		INNER JOIN [DetailClass] [d] ON [m_1].[Id1] = [d].[MasterId]
 
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite (asynchronously)
-DECLARE @take  -- Int32
-SET     @take = 2
 
 SELECT
-	[x].[Id1],
-	[x].[Id2]
+	[x].[Id1]
 FROM
 	[MasterClass] [x]
 WHERE
 	[x].[Id1] = 1
-LIMIT @take
+LIMIT 2
 
 BeforeExecute
 DisposeTransactionAsync

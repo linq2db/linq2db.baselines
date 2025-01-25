@@ -81,8 +81,6 @@ BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
 DECLARE @skip Int32
 SET     @skip = 1
-DECLARE @take Int32
-SET     @take = 2
 
 SELECT
 	t1.ID,
@@ -91,7 +89,7 @@ FROM
 	"TestIdTrun" t1
 ORDER BY
 	t1.ID
-OFFSET :skip ROWS FETCH NEXT :take ROWS ONLY 
+OFFSET :skip ROWS FETCH NEXT 2 ROWS ONLY 
 
 BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
@@ -145,8 +143,6 @@ BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
 DECLARE @skip Int32
 SET     @skip = 1
-DECLARE @take Int32
-SET     @take = 2
 
 SELECT
 	t1.ID,
@@ -155,7 +151,7 @@ FROM
 	"TestIdTrun" t1
 ORDER BY
 	t1.ID
-OFFSET :skip ROWS FETCH NEXT :take ROWS ONLY 
+OFFSET :skip ROWS FETCH NEXT 2 ROWS ONLY 
 
 BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12

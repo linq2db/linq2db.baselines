@@ -2,87 +2,27 @@
 -- SapHana.Odbc SapHanaOdbc
 
 SELECT
-	"t1"."ParentID"
+	"t1"."ParentID",
+	"t1"."ChildID"
 FROM
-	"Child" "t1"
-GROUP BY
-	"t1"."ParentID"
-
-BeforeExecute
--- SapHana.Odbc SapHanaOdbc
-DECLARE @ParentID  -- Int32
-SET     @ParentID = 1
-
-SELECT
-	"keyParam"."ParentID",
-	"keyParam"."ChildID"
-FROM
-	"Child" "keyParam"
-WHERE
-	"keyParam"."ParentID" = ?
-
-BeforeExecute
--- SapHana.Odbc SapHanaOdbc
-DECLARE @ParentID  -- Int32
-SET     @ParentID = 2
-
-SELECT
-	"keyParam"."ParentID",
-	"keyParam"."ChildID"
-FROM
-	"Child" "keyParam"
-WHERE
-	"keyParam"."ParentID" = ?
-
-BeforeExecute
--- SapHana.Odbc SapHanaOdbc
-DECLARE @ParentID  -- Int32
-SET     @ParentID = 3
-
-SELECT
-	"keyParam"."ParentID",
-	"keyParam"."ChildID"
-FROM
-	"Child" "keyParam"
-WHERE
-	"keyParam"."ParentID" = ?
-
-BeforeExecute
--- SapHana.Odbc SapHanaOdbc
-DECLARE @ParentID  -- Int32
-SET     @ParentID = 4
-
-SELECT
-	"keyParam"."ParentID",
-	"keyParam"."ChildID"
-FROM
-	"Child" "keyParam"
-WHERE
-	"keyParam"."ParentID" = ?
-
-BeforeExecute
--- SapHana.Odbc SapHanaOdbc
-DECLARE @ParentID  -- Int32
-SET     @ParentID = 6
-
-SELECT
-	"keyParam"."ParentID",
-	"keyParam"."ChildID"
-FROM
-	"Child" "keyParam"
-WHERE
-	"keyParam"."ParentID" = ?
-
-BeforeExecute
--- SapHana.Odbc SapHanaOdbc
-DECLARE @ParentID  -- Int32
-SET     @ParentID = 7
-
-SELECT
-	"keyParam"."ParentID",
-	"keyParam"."ChildID"
-FROM
-	"Child" "keyParam"
-WHERE
-	"keyParam"."ParentID" = ?
+	(
+		SELECT
+			"gr"."ParentID"
+		FROM
+			"Child" "gr"
+		GROUP BY
+			"gr"."ParentID"
+	) "gr_1"
+		INNER JOIN LATERAL (
+			SELECT
+				"t"."ParentID",
+				"t"."ChildID"
+			FROM
+				"Child" "t"
+			WHERE
+				"gr_1"."ParentID" = "t"."ParentID"
+			ORDER BY
+				"t"."ChildID" DESC
+			LIMIT 1
+		) "t1" ON 1=1
 

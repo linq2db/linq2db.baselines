@@ -107,20 +107,18 @@ VALUES
 
 BeforeExecute
 -- SqlServer.2012.MS SqlServer.2012
-DECLARE @default Int -- Int32
-SET     @default = 0
 
 SELECT
-	[t].[EnumValue]
+	IIF([g_1].[EnumValue] IS NOT NULL, [g_1].[EnumValue], 0)
 FROM
-	[Issue4167Table] [t]
+	[Issue4167Table] [g_1]
 WHERE
-	[t].[Value] = N'000001'
+	[g_1].[Value] = N'000001'
 GROUP BY
-	[t].[Value],
-	[t].[EnumValue]
+	[g_1].[Value],
+	[g_1].[EnumValue]
 ORDER BY
-	Coalesce([t].[EnumValue], @default)
+	IIF([g_1].[EnumValue] IS NOT NULL, [g_1].[EnumValue], 0)
 
 BeforeExecute
 -- SqlServer.2012.MS SqlServer.2012

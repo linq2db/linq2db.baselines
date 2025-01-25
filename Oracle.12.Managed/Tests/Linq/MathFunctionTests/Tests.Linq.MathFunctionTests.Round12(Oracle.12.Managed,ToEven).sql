@@ -2,18 +2,18 @@
 -- Oracle.12.Managed Oracle.Managed Oracle12
 
 SELECT
-	t."c1"
+	t_1."c1"
 FROM
 	(
 		SELECT
 			CASE
-				WHEN p."MoneyValue" * 2 = Round(p."MoneyValue" * 2, 1) AND p."MoneyValue" <> Round(p."MoneyValue", 1)
-					THEN Round(p."MoneyValue" / 2, 1) * 2
-				ELSE Round(p."MoneyValue", 1)
+				WHEN t."MoneyValue" * 2 = Round(t."MoneyValue" * 2, 1) AND t."MoneyValue" <> Round(t."MoneyValue", 1)
+					THEN Round(t."MoneyValue" / 2, 1) * 2
+				ELSE Round(t."MoneyValue", 1)
 			END as "c1"
 		FROM
-			"LinqDataTypes" p
-	) t
+			"LinqDataTypes" t
+	) t_1
 WHERE
-	t."c1" <> 0 AND t."c1" <> 7
+	t_1."c1" <> 0 AND t_1."c1" <> 7
 

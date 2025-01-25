@@ -23,12 +23,12 @@ USING (VALUES
 	(1,N'2')
 ) [Source]
 (
-	[Id],
-	[Value_1]
+	[source_Id],
+	[source_Value]
 )
-ON ([Target].[Id] = [Source].[Id])
+ON ([Target].[Id] = [Source].[source_Id])
 
-WHEN NOT MATCHED AND [Source].[Id] > 1 THEN
+WHEN NOT MATCHED AND [Source].[source_Id] > 1 THEN
 INSERT
 (
 	[Id],
@@ -36,8 +36,8 @@ INSERT
 )
 VALUES
 (
-	[Source].[Id],
-	[Source].[Value_1]
+	[Source].[source_Id],
+	[Source].[source_Value]
 )
 ;
 

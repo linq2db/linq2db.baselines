@@ -2,27 +2,10 @@
 -- Access AccessOleDb
 
 SELECT
-	Count([t1].[ParentID]),
-	(
-		SELECT
-			Sum([c_1].[ChildID])
-		FROM
-			[Child] [c_1]
-		WHERE
-			[t2].[ParentID] = [c_1].[ParentID] AND [c_1].[ChildID] > 30
-	)
+	COUNT(IIF([g_1].[ChildID] > 30, 1, NULL)),
+	SUM(IIF([g_1].[ChildID] > 30, [g_1].[ChildID], NULL))
 FROM
-	[Child] [t2]
-		LEFT JOIN (
-			SELECT
-				[_].[ParentID]
-			FROM
-				[Child] [_]
-			WHERE
-				[_].[ChildID] > 30
-			GROUP BY
-				[_].[ParentID]
-		) [t1] ON ([t2].[ParentID] = [t1].[ParentID])
+	[Child] [g_1]
 GROUP BY
-	[t2].[ParentID]
+	[g_1].[ParentID]
 

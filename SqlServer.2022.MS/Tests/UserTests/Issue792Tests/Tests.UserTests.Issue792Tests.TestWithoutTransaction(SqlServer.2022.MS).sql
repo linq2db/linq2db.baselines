@@ -2,19 +2,17 @@
 -- SqlServer.2022.MS SqlServer.2022
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	[AllTypes] [t1]
 
 BeforeExecute
 -- SqlServer.2022.MS SqlServer.2022
-DECLARE @take Int -- Int32
-SET     @take = 1
 
-SELECT TOP (@take)
+SELECT TOP (1)
 	SCHEMA_NAME()
 FROM
-	[LinqDataTypes] [_]
+	[LinqDataTypes] [t1]
 
 BeforeExecute
 -- SqlServer.2022.MS SqlServer.2022
@@ -329,7 +327,7 @@ BeforeExecute
 -- SqlServer.2022.MS SqlServer.2022
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	[AllTypes] [t1]
 

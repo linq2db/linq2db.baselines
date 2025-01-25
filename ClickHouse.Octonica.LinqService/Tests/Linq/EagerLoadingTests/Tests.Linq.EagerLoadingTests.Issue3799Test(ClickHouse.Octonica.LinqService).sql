@@ -28,7 +28,7 @@ INSERT INTO Test3799Item
 )
 VALUES
 (
-	toInt32(1),
+	1,
 	NULL,
 	'root'
 )
@@ -44,8 +44,8 @@ INSERT INTO Test3799Item
 )
 VALUES
 (
-	toInt32(2),
-	toInt32(1),
+	2,
+	1,
 	'child 1'
 )
 
@@ -60,8 +60,8 @@ INSERT INTO Test3799Item
 )
 VALUES
 (
-	toInt32(3),
-	toInt32(2),
+	3,
+	2,
 	'child 1.1'
 )
 
@@ -76,8 +76,8 @@ INSERT INTO Test3799Item
 )
 VALUES
 (
-	toInt32(4),
-	toInt32(2),
+	4,
+	2,
 	'child 1.2'
 )
 
@@ -92,8 +92,8 @@ INSERT INTO Test3799Item
 )
 VALUES
 (
-	toInt32(5),
-	toInt32(1),
+	5,
+	1,
 	'child 2'
 )
 
@@ -108,8 +108,8 @@ INSERT INTO Test3799Item
 )
 VALUES
 (
-	toInt32(6),
-	toInt32(5),
+	6,
+	5,
 	'child 2.1'
 )
 
@@ -124,8 +124,8 @@ INSERT INTO Test3799Item
 )
 VALUES
 (
-	toInt32(7),
-	toInt32(5),
+	7,
+	5,
 	'child 2.1'
 )
 
@@ -133,39 +133,43 @@ BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
-	key_data_result.Id,
-	key_data_result.Id_1,
-	detail_1.Name
+	m_1.Id,
+	d.Name
 FROM
 	(
 		SELECT DISTINCT
-			detail.Id as Id,
-			item_1.Id as Id_1
+			t1.Id as Id
 		FROM
 			Test3799Item item_1
-				INNER JOIN Test3799Item detail ON item_1.Id = detail.ParentId
-	) key_data_result
-		INNER JOIN Test3799Item detail_1 ON key_data_result.Id = detail_1.ParentId
-
-BeforeExecute
--- ClickHouse.Octonica ClickHouse
-
-SELECT
-	item_1.Id,
-	detail.Name,
-	detail.Id
-FROM
-	Test3799Item item_1
-		INNER JOIN Test3799Item detail ON item_1.Id = detail.ParentId
+				LEFT JOIN (
+					SELECT
+						a_Children.Id as Id,
+						ROW_NUMBER() OVER (PARTITION BY a_Children.ParentId ORDER BY a_Children.ParentId) as rn,
+						a_Children.ParentId as ParentId
+					FROM
+						Test3799Item a_Children
+				) t1 ON item_1.Id = t1.ParentId AND t1.rn <= 1
+	) m_1
+		INNER JOIN Test3799Item d ON (m_1.Id = d.ParentId OR m_1.Id IS NULL AND d.ParentId IS NULL)
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
 	item_1.Name,
-	item_1.Id
+	t1.Name,
+	t1.Id
 FROM
 	Test3799Item item_1
+		LEFT JOIN (
+			SELECT
+				a_Children.Name as Name,
+				a_Children.Id as Id,
+				ROW_NUMBER() OVER (PARTITION BY a_Children.ParentId ORDER BY a_Children.ParentId) as rn,
+				a_Children.ParentId as ParentId
+			FROM
+				Test3799Item a_Children
+		) t1 ON item_1.Id = t1.ParentId AND t1.rn <= 1
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse

@@ -16,16 +16,16 @@ FROM
 	LinqDataTypes t1
 UNION ALL
 SELECT
-	NULL,
-	NULL,
-	NULL,
-	NULL,
-	NULL,
-	NULL,
-	NULL,
-	NULL,
-	NULL,
-	NULL
+	toInt32(NULL) as ID,
+	toDecimal128(NULL, toUInt8(10)) as MoneyValue,
+	toDateTime64(NULL, toUInt8(3)) as DateTimeValue,
+	toDateTime64(NULL, toUInt8(7)) as DateTimeValue2,
+	toBool(NULL) as BoolValue,
+	toUUID(NULL) as GuidValue,
+	toInt16(NULL) as SmallIntValue,
+	toInt32(NULL) as IntValue,
+	toInt64(NULL) as BigIntValue,
+	toString(NULL) as StringValue
 FROM
 	LinqDataTypes d
 

@@ -62,10 +62,10 @@ DECLARE @take Int32
 SET     @take = 3
 
 SELECT
-	c_1."Id",
-	c_1."DuplicateData",
-	c_1."OrderData1",
-	c_1."OrderData2"
+	q1."Id",
+	q1."DuplicateData",
+	q1."OrderData1",
+	q1."OrderData2"
 FROM
 	(
 		SELECT
@@ -82,9 +82,9 @@ FROM
 		WHERE
 			ROWNUM <= :take
 	) q2
-		INNER JOIN "OrderByDistinctData" c_1 ON c_1."Id" = q2."Id"
+		INNER JOIN "OrderByDistinctData" q1 ON q1."Id" = q2."Id"
 ORDER BY
-	c_1."OrderData1"
+	q1."OrderData1"
 
 BeforeExecute
 -- Oracle.11.Managed Oracle11

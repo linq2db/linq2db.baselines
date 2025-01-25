@@ -23,27 +23,28 @@ INSERT INTO AsyncDataTable
 	Id
 )
 VALUES
-(toInt32(1)),
-(toInt32(2)),
-(toInt32(3)),
-(toInt32(4)),
-(toInt32(5)),
-(toInt32(6)),
-(toInt32(7)),
-(toInt32(8)),
-(toInt32(9)),
-(toInt32(10))
+(1),
+(2),
+(3),
+(4),
+(5),
+(6),
+(7),
+(8),
+(9),
+(10)
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse (asynchronously)
 
 SELECT
+	2,
 	c_1.Id
 FROM
 	AsyncDataTable c_1
 WHERE
-	c_1.Id = toInt32(2)
-LIMIT toInt32(1)
+	c_1.Id = 2
+LIMIT 1
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse

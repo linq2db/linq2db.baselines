@@ -26,7 +26,7 @@ INSERT INTO Blog
 	UserId
 )
 VALUES
-(toInt32(1),'Another .NET Core Guy','Doing .NET Core Stuff','bc7b663d0fde43278f925d8cc3a11d11')
+(1,'Another .NET Core Guy','Doing .NET Core Stuff','bc7b663d0fde43278f925d8cc3a11d11')
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
@@ -58,10 +58,10 @@ INSERT INTO Post
 	IsDeleted
 )
 VALUES
-(toInt32(1),toInt32(1),'Post 1','Content 1 is about EF Core and Razor page',false),
-(toInt32(2),toInt32(1),'Post 2','Content 2 is about Dapper',false),
-(toInt32(3),toInt32(1),'Post 3','Content 3',true),
-(toInt32(4),toInt32(1),'Post 4','Content 4',false)
+(1,1,'Post 1','Content 1 is about EF Core and Razor page',false),
+(2,1,'Post 2','Content 2 is about Dapper',false),
+(3,1,'Post 3','Content 3',true),
+(4,1,'Post 4','Content 4',false)
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
@@ -89,11 +89,11 @@ INSERT INTO Tag
 	IsDeleted
 )
 VALUES
-(toInt32(1),'Razor Page',false),
-(toInt32(2),'EF Core',false),
-(toInt32(3),'Dapper',false),
-(toInt32(4),'Slapper Dapper',false),
-(toInt32(5),'SqlKata',true)
+(1,'Razor Page',false),
+(2,'EF Core',false),
+(3,'Dapper',false),
+(4,'Slapper Dapper',false),
+(5,'SqlKata',true)
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
@@ -123,98 +123,73 @@ INSERT INTO PostTag
 	IsDeleted
 )
 VALUES
-(toInt32(1),toInt32(1),toInt32(1),false),
-(toInt32(2),toInt32(1),toInt32(2),false),
-(toInt32(3),toInt32(2),toInt32(3),false),
-(toInt32(4),toInt32(4),toInt32(5),false)
+(1,1,1,false),
+(2,1,2,false),
+(3,2,3,false),
+(4,4,5,false)
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
 
 SELECT
-	key_data_result_1.Id,
-	key_data_result_1.BlogId,
-	key_data_result_1.Title,
-	key_data_result_1.PostContent,
-	key_data_result_1.IsDeleted,
-	key_data_result_1.Id_1,
-	key_data_result_1.Title_1,
-	key_data_result_1.Slogan,
-	key_data_result_1.UserId,
-	detail_1.TagId,
+	m_1.Id,
+	m_1.Id_1,
+	d_1.TagId,
 	a_Tag.Name
 FROM
 	(
 		SELECT DISTINCT
-			detail.Id as Id,
-			detail.BlogId as BlogId,
-			detail.Title as Title,
-			detail.PostContent as PostContent,
-			detail.IsDeleted as IsDeleted,
-			key_data_result.Id as Id_1,
-			key_data_result.Title as Title_1,
-			key_data_result.Slogan as Slogan,
-			key_data_result.UserId as UserId
+			d.Id as Id,
+			t1.Id as Id_1
 		FROM
 			(
 				SELECT DISTINCT
-					b.Id as Id,
-					b.Title as Title,
-					b.Slogan as Slogan,
-					b.UserId as UserId
+					b.Id as Id
 				FROM
 					Blog b
 				WHERE
-					b.Id = toInt32(1)
-			) key_data_result
-				INNER JOIN Post detail ON key_data_result.Id = detail.BlogId
-	) key_data_result_1
-		INNER JOIN PostTag detail_1 ON key_data_result_1.Id = detail_1.PostId AND detail_1.IsDeleted = false
-		INNER JOIN Tag a_Tag ON detail_1.TagId = a_Tag.Id
+					b.Id = 1
+			) t1
+				INNER JOIN Post d ON t1.Id = d.BlogId
+	) m_1
+		INNER JOIN PostTag d_1 ON m_1.Id = d_1.PostId
+		INNER JOIN Tag a_Tag ON d_1.TagId = a_Tag.Id
+WHERE
+	d_1.IsDeleted = false
 ORDER BY
-	detail_1.TagId
+	d_1.TagId
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
 
 SELECT
-	key_data_result.Id,
-	key_data_result.Title,
-	key_data_result.Slogan,
-	key_data_result.UserId,
-	detail.Id,
-	detail.Title,
-	detail.PostContent,
-	detail.BlogId,
-	detail.IsDeleted
+	m_1.Id,
+	d.Id,
+	d.Title,
+	d.PostContent
 FROM
 	(
 		SELECT DISTINCT
-			b.Id as Id,
-			b.Title as Title,
-			b.Slogan as Slogan,
-			b.UserId as UserId
+			b.Id as Id
 		FROM
 			Blog b
 		WHERE
-			b.Id = toInt32(1)
-	) key_data_result
-		INNER JOIN Post detail ON key_data_result.Id = detail.BlogId
+			b.Id = 1
+	) m_1
+		INNER JOIN Post d ON m_1.Id = d.BlogId
 ORDER BY
-	detail.Id
+	d.Id
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
 
 SELECT
 	b.Id,
-	b.Title,
-	b.Slogan,
-	b.UserId
+	b.Title
 FROM
 	Blog b
 WHERE
-	b.Id = toInt32(1)
+	b.Id = 1
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse

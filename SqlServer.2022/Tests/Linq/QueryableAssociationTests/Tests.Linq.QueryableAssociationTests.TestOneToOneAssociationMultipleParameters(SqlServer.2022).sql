@@ -81,24 +81,20 @@ VALUES
 
 BeforeExecute
 -- SqlServer.2022
-DECLARE @take Int -- Int32
-SET     @take = 1
-DECLARE @take_1 Int -- Int32
-SET     @take_1 = 1
 
-SELECT TOP (@take)
-	[x_1].[Id],
-	[a_FirstUserWithMultipleParameters].[Id]
+SELECT TOP (1)
+	[x].[Id],
+	[t1].[Id]
 FROM
-	[UserGroup] [x_1]
+	[UserGroup] [x]
 		OUTER APPLY (
-			SELECT TOP (@take_1)
-				[x].[Id]
+			SELECT TOP (1)
+				[a_FirstUserWithMultipleParameters].[Id]
 			FROM
-				[User] [x]
+				[User] [a_FirstUserWithMultipleParameters]
 			WHERE
-				[x].[UserGroupId] = [x_1].[Id]
-		) [a_FirstUserWithMultipleParameters]
+				[a_FirstUserWithMultipleParameters].[UserGroupId] = [x].[Id]
+		) [t1]
 
 BeforeExecute
 -- SqlServer.2022

@@ -21,7 +21,7 @@ INSERT INTO aa
 )
 VALUES
 (
-	toInt32(99),
+	99,
 	'hallo'
 )
 

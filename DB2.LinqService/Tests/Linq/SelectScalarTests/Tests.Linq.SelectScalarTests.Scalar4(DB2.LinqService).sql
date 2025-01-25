@@ -9,5 +9,5 @@ FROM
 		INNER JOIN "Child" "c_1" ON "p"."ParentID" = "c_1"."ParentID"
 WHERE
 	"c_1"."ChildID" > 20 AND "p"."ParentID" = 3
-FETCH FIRST 1 ROWS ONLY
+FETCH NEXT 1 ROWS ONLY
 

@@ -24,11 +24,11 @@ DECLARE @id Int -- Int32
 SET     @id = 1
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
-	[Person] [_]
+	[Person] [t1]
 WHERE
-	[_].[PersonID] = ?
+	[t1].[PersonID] = ?
 
 BeforeExecute
 -- Access.Odbc AccessODBC
@@ -43,11 +43,11 @@ DECLARE @id Int -- Int32
 SET     @id = 1
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
-	[Person] [_]
+	[Person] [t1]
 WHERE
-	[_].[PersonID] = ?
+	[t1].[PersonID] = ?
 
 BeforeExecute
 DisposeTransaction

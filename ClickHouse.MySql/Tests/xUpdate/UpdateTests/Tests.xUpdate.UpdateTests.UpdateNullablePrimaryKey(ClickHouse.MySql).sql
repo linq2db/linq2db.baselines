@@ -4,9 +4,9 @@
 ALTER TABLE
 	GrandChild
 UPDATE
-	GrandChildID = toInt32(1000)
+	GrandChildID = 1000
 WHERE
-	ParentID = toInt32(10000) AND ChildID IS NULL
+	ParentID = 10000 AND ChildID IS NULL
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
@@ -14,7 +14,7 @@ BeforeExecute
 ALTER TABLE
 	GrandChild
 UPDATE
-	GrandChildID = toInt32(1000)
+	GrandChildID = 1000
 WHERE
-	ParentID = toInt32(10000) AND ChildID = toInt32(111)
+	ParentID = 10000 AND ChildID = 111
 

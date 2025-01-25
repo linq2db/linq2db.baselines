@@ -67,11 +67,11 @@ DECLARE @id Integer(4) -- Int32
 SET     @id = 5
 
 UPDATE
-	Patient
+	Patient t1
 SET
-	Patient.Diagnosis = To_Char(CHAR_LENGTH(Patient.Diagnosis) + @i)
+	Diagnosis = To_Char(CHAR_LENGTH(t1.Diagnosis) + @i)
 WHERE
-	Patient.PersonID = @id
+	t1.PersonID = @id
 
 BeforeExecute
 -- Informix.DB2 Informix
@@ -101,11 +101,11 @@ DECLARE @id Integer(4) -- Int32
 SET     @id = 5
 
 UPDATE
-	Patient
+	Patient t1
 SET
-	Patient.Diagnosis = To_Char(CHAR_LENGTH(Patient.Diagnosis) + @i)
+	Diagnosis = To_Char(CHAR_LENGTH(t1.Diagnosis) + @i)
 WHERE
-	Patient.PersonID = @id
+	t1.PersonID = @id
 
 BeforeExecute
 -- Informix.DB2 Informix
@@ -115,11 +115,11 @@ DECLARE @id Integer(4) -- Int32
 SET     @id = 5
 
 UPDATE
-	Patient
+	Patient t1
 SET
-	Patient.Diagnosis = To_Char(CHAR_LENGTH(Patient.Diagnosis) + @i)
+	Diagnosis = To_Char(CHAR_LENGTH(t1.Diagnosis) + @i)
 WHERE
-	Patient.PersonID = @id
+	t1.PersonID = @id
 
 BeforeExecute
 -- Informix.DB2 Informix

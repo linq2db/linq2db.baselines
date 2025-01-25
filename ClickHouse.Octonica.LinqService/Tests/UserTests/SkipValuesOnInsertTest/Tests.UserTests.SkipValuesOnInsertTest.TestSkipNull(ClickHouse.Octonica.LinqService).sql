@@ -27,7 +27,7 @@ INSERT INTO PR_1598_Insert_Null_Table
 )
 VALUES
 (
-	toInt32(1),
+	1,
 	'Tommy'
 )
 
@@ -41,8 +41,8 @@ SELECT
 FROM
 	PR_1598_Insert_Null_Table t
 WHERE
-	t.Id = toInt32(1)
-LIMIT toInt32(1)
+	t.Id = 1
+LIMIT 1
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse

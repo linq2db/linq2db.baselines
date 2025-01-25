@@ -157,7 +157,7 @@ BeforeExecute
 -- Informix.DB2 Informix (asynchronously)
 
 SELECT
-	Cast(CASE
+	CASE
 		WHEN EXISTS(
 			SELECT
 				*
@@ -168,7 +168,7 @@ SELECT
 		)
 			THEN 't'
 		ELSE 'f'
-	END as BOOLEAN)
+	END
 FROM table(set{1})
 
 BeforeExecute

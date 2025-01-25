@@ -8,8 +8,6 @@ DECLARE @p  -- Int32
 SET     @p = 3
 DECLARE @param  -- Int32
 SET     @param = 4
-DECLARE @take  -- Int32
-SET     @take = 1
 
 SELECT
 	"o"."ParentID",
@@ -18,5 +16,5 @@ FROM
 	"Parent" "o"
 WHERE
 	("o"."ParentID" IN (?, ?, ?) OR "o"."ParentID" = ?)
-LIMIT ?
+LIMIT 1
 

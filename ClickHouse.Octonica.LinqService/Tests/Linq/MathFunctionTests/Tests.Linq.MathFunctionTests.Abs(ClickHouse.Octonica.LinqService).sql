@@ -2,9 +2,14 @@
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
-	Abs(p.MoneyValue)
+	t_1.c1
 FROM
-	LinqDataTypes p
+	(
+		SELECT
+			Abs(t.MoneyValue) as c1
+		FROM
+			LinqDataTypes t
+	) t_1
 WHERE
-	Abs(p.MoneyValue) > toDecimal64('0', 10)
+	t_1.c1 > toDecimal128('0', 10)
 

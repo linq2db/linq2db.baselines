@@ -2,7 +2,7 @@
 -- SQLite.Classic SQLite
 
 SELECT
-	Cast(strFTime('%f', [t].[DateTimeValue]) * 1000 as int) % 1000
+	CAST(strftime('%f', [t].[DateTimeValue]) * 1000 AS INTEGER) % 1000
 FROM
 	[LinqDataTypes] [t]
 

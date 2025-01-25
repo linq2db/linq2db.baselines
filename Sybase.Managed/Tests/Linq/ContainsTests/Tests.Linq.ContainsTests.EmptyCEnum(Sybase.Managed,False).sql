@@ -35,7 +35,7 @@ BeforeExecute
 -- Sybase.Managed Sybase
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	[Src] [s]
 WHERE
@@ -45,21 +45,17 @@ BeforeExecute
 -- Sybase.Managed Sybase
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	[Src] [s]
-WHERE
-	1 = 1
 
 BeforeExecute
 -- Sybase.Managed Sybase
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	[Src] [s]
-WHERE
-	1 = 1
 
 BeforeExecute
 -- Sybase.Managed Sybase

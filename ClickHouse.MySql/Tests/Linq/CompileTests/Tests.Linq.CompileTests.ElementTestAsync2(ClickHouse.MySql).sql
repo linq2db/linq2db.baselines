@@ -7,8 +7,8 @@ SELECT
 FROM
 	Child c_1
 WHERE
-	c_1.ParentID = toInt32(1)
-LIMIT toInt32(1)
+	c_1.ParentID = 1
+LIMIT 1
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse (asynchronously)
@@ -19,6 +19,6 @@ SELECT
 FROM
 	Child c_1
 WHERE
-	c_1.ParentID = toInt32(2)
-LIMIT toInt32(1)
+	c_1.ParentID = 2
+LIMIT 1
 

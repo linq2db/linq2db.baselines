@@ -6,6 +6,12 @@ ALTER SYSTEM SET DEFERRED_SEGMENT_CREATION=FALSE
 BeforeExecute
 -- Oracle.11.Managed Oracle11
 
+-- default is 300
+ALTER SYSTEM SET OPEN_CURSORS=10000 SID='*' SCOPE=BOTH
+
+BeforeExecute
+-- Oracle.11.Managed Oracle11
+
 -- Cleanup schema
 
 BEGIN

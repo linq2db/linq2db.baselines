@@ -2,14 +2,9 @@
 -- SqlServer.2014.MS SqlServer.2014
 
 SELECT
-	[d].[c1]
+	CAST([d].[DateTimeValue] AS Date)
 FROM
-	(
-		SELECT
-			[t].[DateTimeValue] as [c1]
-		FROM
-			[LinqDataTypes] [t]
-	) [d]
+	[LinqDataTypes] [d]
 WHERE
-	DatePart(day, [d].[c1]) > 0
+	DatePart(day, [d].[DateTimeValue]) > 0
 

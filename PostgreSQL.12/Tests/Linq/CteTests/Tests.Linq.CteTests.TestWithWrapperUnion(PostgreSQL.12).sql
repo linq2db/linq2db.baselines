@@ -3,10 +3,10 @@
 
 WITH "CTE_1"
 (
-	"ParentID",
-	"ChildID",
-	"ParentID_1",
-	"Value1"
+	"Child_ParentID",
+	"Child_ChildID",
+	"Parent_ParentID",
+	"Parent_Value1"
 )
 AS
 (
@@ -20,39 +20,33 @@ AS
 			LEFT JOIN "Parent" "a_Parent" ON child_1."ParentID" = "a_Parent"."ParentID"
 )
 SELECT
-	t2."Parent_ParentID",
-	t2."Value1",
-	t2."Child_ParentID",
-	t2."ChildID"
+	"a_Parent_1"."ParentID",
+	"a_Parent_1"."ParentID",
+	"a_Parent_1"."Value1",
+	child_2."ParentID",
+	child_2."ChildID"
 FROM
-	(
-		SELECT
-			child_2."ParentID" as "Child_ParentID",
-			child_2."ChildID",
-			"a_Parent_1"."ParentID" as "Parent_ParentID",
-			"a_Parent_1"."Value1"
-		FROM
-			"Child" child_2
-				LEFT JOIN "Parent" "a_Parent_1" ON child_2."ParentID" = "a_Parent_1"."ParentID"
-		UNION
-		SELECT
-			t1."ParentID" as "Child_ParentID",
-			t1."ChildID",
-			t1."ParentID_1" as "Parent_ParentID",
-			t1."Value1"
-		FROM
-			"CTE_1" t1
-	) t2
+	"Child" child_2
+		LEFT JOIN "Parent" "a_Parent_1" ON child_2."ParentID" = "a_Parent_1"."ParentID"
+UNION
+SELECT
+	t1."Parent_ParentID",
+	t1."Parent_ParentID",
+	t1."Parent_Value1",
+	t1."Child_ParentID",
+	t1."Child_ChildID"
+FROM
+	"CTE_1" t1
 
 BeforeExecute
 -- PostgreSQL.12 PostgreSQL.9.5 PostgreSQL
 
 WITH "CTE_1"
 (
-	"ParentID",
-	"ChildID",
-	"ParentID_1",
-	"Value1"
+	"Child_ParentID",
+	"Child_ChildID",
+	"Parent_ParentID",
+	"Parent_Value1"
 )
 AS
 (
@@ -66,16 +60,18 @@ AS
 			LEFT JOIN "Parent" "a_Parent" ON child_1."ParentID" = "a_Parent"."ParentID"
 )
 SELECT
-	t1."ParentID",
-	t1."ChildID",
-	t1."ParentID_1",
-	t1."Value1"
+	t1."Child_ParentID",
+	t1."Child_ChildID",
+	t1."Parent_ParentID",
+	t1."Parent_ParentID",
+	t1."Parent_Value1"
 FROM
 	"CTE_1" t1
 UNION
 SELECT
 	child_2."ParentID",
 	child_2."ChildID",
+	"a_Parent_1"."ParentID",
 	"a_Parent_1"."ParentID",
 	"a_Parent_1"."Value1"
 FROM

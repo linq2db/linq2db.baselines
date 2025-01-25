@@ -1,20 +1,24 @@
 ﻿BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
-DECLARE @take Int32
-SET     @take = 1
 
 SELECT
+	t1."Taxonomy"
+FROM
 	(
 		SELECT
-			d."Taxonomy"
+			s."PersonID"
 		FROM
-			"Doctor" d
-		WHERE
-			t1."PersonID" = d."PersonID"
-		FETCH NEXT :take ROWS ONLY
-	)
-FROM
-	"Doctor" t1
-GROUP BY
-	t1."PersonID"
+			"Doctor" s
+		GROUP BY
+			s."PersonID"
+	) s_2
+		CROSS APPLY (
+			SELECT
+				s_1."Taxonomy"
+			FROM
+				"Doctor" s_1
+			WHERE
+				s_2."PersonID" = s_1."PersonID"
+			FETCH NEXT 1 ROWS ONLY
+		) t1
 

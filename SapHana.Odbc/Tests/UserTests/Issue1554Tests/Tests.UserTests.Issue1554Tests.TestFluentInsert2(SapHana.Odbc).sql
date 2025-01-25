@@ -39,8 +39,6 @@ VALUES
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @take  -- Int32
-SET     @take = 2
 
 SELECT
 	"t1"."Id",
@@ -48,7 +46,7 @@ SELECT
 	"t1"."ClaimedKeyTypeN"
 FROM
 	"Issue1554FluentTable" "t1"
-LIMIT ?
+LIMIT 2
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc

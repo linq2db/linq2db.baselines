@@ -35,7 +35,7 @@ BeforeExecute
 -- SqlServer.2005
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	[Mixed] [t]
 WHERE

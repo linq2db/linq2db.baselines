@@ -2,11 +2,17 @@
 -- ClickHouse.MySql ClickHouse
 
 SELECT
-	t1.ParentID
+	g_2.ParentID
 FROM
-	Child t1
-GROUP BY
-	t1.ParentID
-HAVING
-	(Count(*) > toInt32(3) OR t1.ParentID = toInt32(1))
+	(
+		SELECT
+			COUNT(*) as COUNT_1,
+			g_1.ParentID as ParentID
+		FROM
+			Child g_1
+		GROUP BY
+			g_1.ParentID
+	) g_2
+WHERE
+	(g_2.COUNT_1 > 3 OR g_2.ParentID = 1)
 

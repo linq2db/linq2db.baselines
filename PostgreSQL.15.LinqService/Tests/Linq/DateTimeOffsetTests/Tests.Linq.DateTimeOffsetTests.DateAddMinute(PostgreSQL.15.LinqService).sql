@@ -288,7 +288,7 @@ BeforeExecute
 -- PostgreSQL.15 PostgreSQL
 
 SELECT
-	t."TransactionDate" + 5 * Interval '1 Minute'
+	Floor(Extract(minute From (t."TransactionDate" + 5 * Interval '1 Minute')))::Int
 FROM
 	"Transactions" t
 

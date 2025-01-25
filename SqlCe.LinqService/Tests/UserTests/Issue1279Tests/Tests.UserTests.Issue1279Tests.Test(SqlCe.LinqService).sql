@@ -30,10 +30,8 @@ VALUES
 
 BeforeExecute
 -- SqlCe
-DECLARE @take Int -- Int32
-SET     @take = 1
 
-SELECT TOP (@take)
+SELECT TOP (1)
 	[t1].[Id],
 	[t1].[CharFld]
 FROM

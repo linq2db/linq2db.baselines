@@ -42,13 +42,23 @@ BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
 SELECT
-	[t1].[Id],
-	[t1].[Value1],
-	[t1].[Value2],
-	[t1].[Value3]
+	[u_1].[Id],
+	[u_1].[Value1],
+	[u_1].[Value2],
+	[u_1].[Value3]
 FROM
 	[SampleData] [s]
 		INNER JOIN (
+			SELECT
+				[u].[Id],
+				[u].[Value1],
+				[u].[Value2],
+				[u].[Value3]
+			FROM
+				[SampleData] [u]
+			WHERE
+				[u].[Id] % 2 = 0
+			UNION ALL
 			SELECT
 				[t].[Id],
 				[t].[Value1],
@@ -57,18 +67,8 @@ FROM
 			FROM
 				[SampleData] [t]
 			WHERE
-				[t].[Id] % 2 = 0
-			UNION ALL
-			SELECT
-				[t_1].[Id],
-				[t_1].[Value1],
-				[t_1].[Value2],
-				[t_1].[Value3]
-			FROM
-				[SampleData] [t_1]
-			WHERE
-				[t_1].[Id] % 4 = 0
-		) [t1] ON [t1].[Id] = [s].[Id]
+				[t].[Id] % 4 = 0
+		) [u_1] ON [u_1].[Id] = [s].[Id]
 
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite

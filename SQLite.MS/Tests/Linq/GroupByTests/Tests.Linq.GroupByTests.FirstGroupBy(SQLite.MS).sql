@@ -2,87 +2,23 @@
 -- SQLite.MS SQLite
 
 SELECT
-	[t1].[ParentID]
+	[t1].[ParentID],
+	[t1].[ChildID]
 FROM
-	[Child] [t1]
-GROUP BY
-	[t1].[ParentID]
-
-BeforeExecute
--- SQLite.MS SQLite
-DECLARE @ParentID  -- Int32
-SET     @ParentID = 1
-
-SELECT
-	[keyParam].[ParentID],
-	[keyParam].[ChildID]
-FROM
-	[Child] [keyParam]
-WHERE
-	[keyParam].[ParentID] = @ParentID
-
-BeforeExecute
--- SQLite.MS SQLite
-DECLARE @ParentID  -- Int32
-SET     @ParentID = 2
-
-SELECT
-	[keyParam].[ParentID],
-	[keyParam].[ChildID]
-FROM
-	[Child] [keyParam]
-WHERE
-	[keyParam].[ParentID] = @ParentID
-
-BeforeExecute
--- SQLite.MS SQLite
-DECLARE @ParentID  -- Int32
-SET     @ParentID = 3
-
-SELECT
-	[keyParam].[ParentID],
-	[keyParam].[ChildID]
-FROM
-	[Child] [keyParam]
-WHERE
-	[keyParam].[ParentID] = @ParentID
-
-BeforeExecute
--- SQLite.MS SQLite
-DECLARE @ParentID  -- Int32
-SET     @ParentID = 4
-
-SELECT
-	[keyParam].[ParentID],
-	[keyParam].[ChildID]
-FROM
-	[Child] [keyParam]
-WHERE
-	[keyParam].[ParentID] = @ParentID
-
-BeforeExecute
--- SQLite.MS SQLite
-DECLARE @ParentID  -- Int32
-SET     @ParentID = 6
-
-SELECT
-	[keyParam].[ParentID],
-	[keyParam].[ChildID]
-FROM
-	[Child] [keyParam]
-WHERE
-	[keyParam].[ParentID] = @ParentID
-
-BeforeExecute
--- SQLite.MS SQLite
-DECLARE @ParentID  -- Int32
-SET     @ParentID = 7
-
-SELECT
-	[keyParam].[ParentID],
-	[keyParam].[ChildID]
-FROM
-	[Child] [keyParam]
-WHERE
-	[keyParam].[ParentID] = @ParentID
+	(
+		SELECT
+			[gr].[ParentID]
+		FROM
+			[Child] [gr]
+		GROUP BY
+			[gr].[ParentID]
+	) [gr_1]
+		INNER JOIN (
+			SELECT
+				[t].[ParentID],
+				[t].[ChildID],
+				ROW_NUMBER() OVER (PARTITION BY [t].[ParentID] ORDER BY [t].[ChildID] DESC) as [rn]
+			FROM
+				[Child] [t]
+		) [t1] ON [gr_1].[ParentID] = [t1].[ParentID] AND [t1].[rn] <= 1
 

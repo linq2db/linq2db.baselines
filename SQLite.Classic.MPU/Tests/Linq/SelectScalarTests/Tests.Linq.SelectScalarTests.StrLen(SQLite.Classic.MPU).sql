@@ -1,8 +1,6 @@
 ﻿BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @Length  -- Int32
-SET     @Length = 1
 
 SELECT
-	@Length
+	1
 

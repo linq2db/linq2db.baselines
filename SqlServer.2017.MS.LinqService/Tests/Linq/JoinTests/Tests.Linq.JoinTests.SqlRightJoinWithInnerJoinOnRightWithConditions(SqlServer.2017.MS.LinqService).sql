@@ -1,35 +1,33 @@
 ﻿BeforeExecute
 -- SqlServer.2017.MS SqlServer.2017
-DECLARE @id1 Int -- Int32
-SET     @id1 = 1
 DECLARE @id2 Int -- Int32
 SET     @id2 = 2
+DECLARE @id1 Int -- Int32
+SET     @id1 = 1
 
 SELECT
-	[left_1].[left_2],
-	[left_1].[left_1],
-	[t1].[ParentID],
-	[t1].[Value1]
+	[left_2].[ParentID],
+	[right_2].[ParentID]
 FROM
 	(
 		SELECT
-			[p_1].[Value1] as [left_1],
-			[p_1].[ParentID] as [left_2]
+			[left_1].[Value1],
+			[left_1].[ParentID]
 		FROM
-			[Parent] [p_1]
-				INNER JOIN [Parent] [p] ON [p_1].[Value1] = [p].[Value1] + 2
+			[Parent] [left_1]
+				INNER JOIN [Parent] [left2] ON [left_1].[Value1] = [left2].[Value1] + 2
 		WHERE
-			[p].[ParentID] <> @id1 AND [p_1].[ParentID] <> @id2
-	) [left_1]
+			[left_1].[ParentID] <> @id2 AND [left2].[ParentID] <> @id1
+	) [left_2]
 		RIGHT JOIN (
 			SELECT
-				[p_2].[Value1],
-				[p_2].[ParentID]
+				[right_1].[ParentID],
+				[right_1].[Value1] + 2 as [c1]
 			FROM
-				[Parent] [p_2]
+				[Parent] [right_1]
 			WHERE
-				[p_2].[ParentID] <> @id1
-		) [t1] ON [t1].[Value1] + 2 = [left_1].[left_1]
+				[right_1].[ParentID] <> @id1
+		) [right_2] ON ([right_2].[c1] = [left_2].[Value1] OR [right_2].[c1] IS NULL AND [left_2].[Value1] IS NULL)
 ORDER BY
-	[left_1].[left_2]
+	[left_2].[ParentID]
 

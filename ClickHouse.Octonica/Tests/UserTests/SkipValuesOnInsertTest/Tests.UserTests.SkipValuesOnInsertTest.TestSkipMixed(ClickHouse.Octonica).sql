@@ -28,9 +28,9 @@ INSERT INTO PR_1598_Mixed_Table
 )
 VALUES
 (
-	toInt32(1),
+	1,
 	'Jason',
-	toInt32(20)
+	20
 )
 
 BeforeExecute
@@ -43,8 +43,8 @@ SELECT
 FROM
 	PR_1598_Mixed_Table t
 WHERE
-	t.Id = toInt32(1)
-LIMIT toInt32(1)
+	t.Id = 1
+LIMIT 1
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -52,9 +52,9 @@ BeforeExecute
 ALTER TABLE
 	PR_1598_Mixed_Table
 UPDATE
-	Age = toInt32(20)
+	Age = 20
 WHERE
-	Id = toInt32(1)
+	Id = 1
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -66,8 +66,8 @@ SELECT
 FROM
 	PR_1598_Mixed_Table t
 WHERE
-	t.Id = toInt32(1)
-LIMIT toInt32(1)
+	t.Id = 1
+LIMIT 1
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -79,8 +79,8 @@ INSERT INTO PR_1598_Mixed_Table
 )
 VALUES
 (
-	toInt32(2),
-	toInt32(25)
+	2,
+	25
 )
 
 BeforeExecute
@@ -93,8 +93,8 @@ SELECT
 FROM
 	PR_1598_Mixed_Table t
 WHERE
-	t.Id = toInt32(2)
-LIMIT toInt32(1)
+	t.Id = 2
+LIMIT 1
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -103,9 +103,9 @@ ALTER TABLE
 	PR_1598_Mixed_Table
 UPDATE
 	Name = 'Jessy',
-	Age = toInt32(25)
+	Age = 25
 WHERE
-	Id = toInt32(2)
+	Id = 2
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -117,8 +117,8 @@ SELECT
 FROM
 	PR_1598_Mixed_Table t
 WHERE
-	t.Id = toInt32(2)
-LIMIT toInt32(1)
+	t.Id = 2
+LIMIT 1
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse

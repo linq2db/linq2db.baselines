@@ -2,14 +2,9 @@
 -- SqlServer.2008
 
 SELECT
-	[t].[c1]
+	CAST(RIGHT('0' + CAST(DatePart(year, [t].[DateTimeValue]) AS VarChar(4)), 4) + N'-10-01' AS Date)
 FROM
-	(
-		SELECT
-			Convert(Date, REPLICATE('0', CASE WHEN LEN(CAST(DatePart(year, [p].[DateTimeValue]) as NVARCHAR)) > 4 THEN 0 ELSE (4 - LEN(CAST(DatePart(year, [p].[DateTimeValue]) as NVARCHAR))) END) + CAST(DatePart(year, [p].[DateTimeValue]) as NVARCHAR) + N'-10-01') as [c1]
-		FROM
-			[LinqDataTypes] [p]
-	) [t]
+	[LinqDataTypes] [t]
 WHERE
-	DatePart(month, [t].[c1]) = 10
+	DatePart(month, CAST(RIGHT('0' + CAST(DatePart(year, [t].[DateTimeValue]) AS VarChar(4)), 4) + N'-10-01' AS Date)) = 10
 

@@ -1,23 +1,17 @@
 ﻿BeforeExecute
-BeginTransaction(RepeatableRead)
-BeforeExecute
--- SapHana.Odbc SapHanaOdbc
-DECLARE @take  -- Int32
-SET     @take = 1
-
-SELECT
-	"l"."ParentID"
-FROM
-	"Child" "l"
-LIMIT ?
-
-BeforeExecute
-DisposeTransaction
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 SELECT
-	1
+	"t1"."Id",
+	"t1"."ParentId"
 FROM
 	"Parent" "sep"
+		LEFT JOIN (
+			SELECT
+				"l"."ParentID" + 1 as "Id",
+				"l"."ParentID" as "ParentId"
+			FROM
+				"Child" "l"
+			LIMIT 1
+		) "t1" ON 1=1
 

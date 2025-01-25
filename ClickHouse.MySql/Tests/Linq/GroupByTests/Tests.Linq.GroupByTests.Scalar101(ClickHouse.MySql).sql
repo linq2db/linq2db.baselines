@@ -2,9 +2,9 @@
 -- ClickHouse.MySql ClickHouse
 
 SELECT
-	maxOrNull(ch.ChildID)
+	maxOrNull(g_1.ChildID)
 FROM
-	Child ch
+	Child g_1
 GROUP BY
-	ch.ChildID
+	g_1.ChildID
 

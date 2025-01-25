@@ -38,16 +38,11 @@ SELECT * FROM dual
 
 BeforeExecute
 -- Oracle.23.Managed Oracle.Managed Oracle12
-DECLARE @p Raw(16) -- Binary
-SET     @p = HEXTORAW('1CB5D9B3F9892A44893BCD8A6F667D37')
-DECLARE @p_1 Raw(16) -- Binary
-SET     @p_1 = HEXTORAW('D4DCEF619D65E841910C506A9C2F31C5')
 DECLARE @take Int32
 SET     @take = 1
 
 SELECT
-	:p,
-	:p_1
+	1 as "c1"
 FROM
 	"SelectExpressionTable" t1
 FETCH NEXT :take ROWS ONLY

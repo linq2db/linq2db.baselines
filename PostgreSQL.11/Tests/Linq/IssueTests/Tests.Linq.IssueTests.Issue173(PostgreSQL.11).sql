@@ -2,9 +2,9 @@
 -- PostgreSQL.11 PostgreSQL.9.5 PostgreSQL
 
 SELECT
-	r."ParentID"
+	t1."ParentID"
 FROM
-	"Parent" r
+	"Parent" t1
 WHERE
-	r."ParentID" = 1
+	t1."ParentID" = 1
 

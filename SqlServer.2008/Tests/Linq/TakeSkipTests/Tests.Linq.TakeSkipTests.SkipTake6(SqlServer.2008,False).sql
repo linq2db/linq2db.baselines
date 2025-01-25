@@ -11,9 +11,9 @@ FROM
 			[p].[ParentID]
 		FROM
 			[GrandChild] [p]
-	) [t1]
+	) [p_1]
 WHERE
-	[c_1].[ParentID] = [t1].[ParentID]
+	[c_1].[ParentID] = [p_1].[ParentID]
 
 BeforeExecute
 -- SqlServer.2008
@@ -36,7 +36,7 @@ FROM
 			) [t1]
 		WHERE
 			[t1].[RN] > 12 AND [t1].[RN] <= 15
-	) [t2]
+	) [p_1]
 WHERE
-	[c_1].[ParentID] = [t2].[ParentID]
+	[c_1].[ParentID] = [p_1].[ParentID]
 

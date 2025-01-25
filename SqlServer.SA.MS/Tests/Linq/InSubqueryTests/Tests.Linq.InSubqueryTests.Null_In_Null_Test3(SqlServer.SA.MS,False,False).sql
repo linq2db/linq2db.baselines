@@ -53,23 +53,17 @@ BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
 
 SELECT
-	[t1].[ID]
-FROM
-	[test_in_1] [t1]
-
-BeforeExecute
--- SqlServer.SA.MS SqlServer.2019
-
-SELECT
 	[t].[ID]
 FROM
 	[test_in_1] [t]
 WHERE
-	[t].[ID] IN (
+	EXISTS(
 		SELECT
-			[p].[ID]
+			*
 		FROM
 			[test_in_2] [p]
+		WHERE
+			[t].[ID] = [p].[ID]
 	)
 
 BeforeExecute
@@ -78,7 +72,7 @@ BeforeExecute
 SELECT
 	[t1].[ID]
 FROM
-	[test_in_2] [t1]
+	[test_in_1] [t1]
 
 BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019

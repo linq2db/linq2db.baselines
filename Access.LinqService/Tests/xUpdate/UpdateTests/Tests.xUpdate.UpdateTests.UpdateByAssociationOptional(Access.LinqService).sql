@@ -113,13 +113,20 @@ DECLARE @id Integer -- Int32
 SET     @id = 3
 
 UPDATE
-	([MainTable] [_]
-		LEFT JOIN [AssociatedTable] [a_AssociatedOptional] ON ([_].[Id] = [a_AssociatedOptional].[Id]))
-		LEFT JOIN [MainTable] [a_MainOptional] ON ([a_AssociatedOptional].[Id] = [a_MainOptional].[Id])
+	(
+		SELECT
+			[t1].[Id],
+			[a_MainOptional].[Id] as [Id_1],
+			[a_MainOptional].[Field]
+		FROM
+			[MainTable] [a_MainOptional],
+			[MainTable] [t1]
+	) [cross_1]
+		LEFT JOIN [AssociatedTable] [a_AssociatedOptional] ON ([cross_1].[Id] = [a_AssociatedOptional].[Id])
 SET
-	[_].[Field] = 'test'
+	[cross_1].[Field] = 'test'
 WHERE
-	[_].[Id] = @id
+	[cross_1].[Id] = @id AND [a_AssociatedOptional].[Id] = [cross_1].[Id_1]
 
 BeforeExecute
 -- Access AccessOleDb

@@ -36,7 +36,7 @@ USING (SELECT :PersonID AS "PersonID" FROM SYS.DUAL) s ON
 WHEN MATCHED THEN
 	UPDATE 
 	SET
-		t1."Diagnosis" = :Diagnosis
+		"Diagnosis" = :Diagnosis
 WHEN NOT MATCHED THEN
 	INSERT
 	(
@@ -64,7 +64,7 @@ USING (SELECT :PersonID AS "PersonID" FROM SYS.DUAL) s ON
 WHEN MATCHED THEN
 	UPDATE 
 	SET
-		t1."Diagnosis" = :Diagnosis
+		"Diagnosis" = :Diagnosis
 WHEN NOT MATCHED THEN
 	INSERT
 	(
@@ -81,7 +81,7 @@ BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12 (asynchronously)
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	"xxPatient" t1
 
@@ -100,7 +100,7 @@ USING (SELECT :PersonID AS "PersonID" FROM SYS.DUAL) s ON
 WHEN MATCHED THEN
 	UPDATE 
 	SET
-		t1."Diagnosis" = :Diagnosis
+		"Diagnosis" = :Diagnosis
 WHEN NOT MATCHED THEN
 	INSERT
 	(
@@ -128,7 +128,7 @@ USING (SELECT :PersonID AS "PersonID" FROM SYS.DUAL) s ON
 WHEN MATCHED THEN
 	UPDATE 
 	SET
-		t1."Diagnosis" = :Diagnosis
+		"Diagnosis" = :Diagnosis
 WHEN NOT MATCHED THEN
 	INSERT
 	(
@@ -145,7 +145,7 @@ BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12 (asynchronously)
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	"xxPatient" t1
 

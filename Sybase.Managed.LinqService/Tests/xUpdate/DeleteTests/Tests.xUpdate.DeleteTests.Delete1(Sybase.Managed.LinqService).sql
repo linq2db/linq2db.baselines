@@ -33,7 +33,7 @@ DECLARE @ParentID Integer -- Int32
 SET     @ParentID = 1001
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	[Parent] [p]
 WHERE
@@ -46,9 +46,9 @@ SET     @ParentID = 1001
 
 DELETE FROM [Parent]
 FROM
-	[Parent] [t1]
+	[Parent] [p]
 WHERE
-	[t1].[ParentID] = @ParentID
+	[p].[ParentID] = @ParentID
 
 BeforeExecute
 -- Sybase.Managed Sybase
@@ -56,7 +56,7 @@ DECLARE @ParentID Integer -- Int32
 SET     @ParentID = 1001
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	[Parent] [p]
 WHERE

@@ -1,38 +1,25 @@
 ﻿BeforeExecute
 -- SqlServer.2012 (asynchronously)
-DECLARE @take Int -- Int32
-SET     @take = 1
 
 SELECT
-	[key_data_result].[ParentID],
-	[key_data_result].[Value1],
-	[detail].[ChildID]
+	[m_1].[ParentID],
+	[d].[ChildID]
 FROM
 	(
-		SELECT DISTINCT
-			[t1].[ParentID],
-			[t1].[Value1]
+		SELECT TOP (1)
+			[x].[ParentID]
 		FROM
-			(
-				SELECT TOP (@take)
-					[x].[ParentID],
-					[x].[Value1]
-				FROM
-					[Parent] [x]
-				WHERE
-					[x].[ParentID] = 1
-			) [t1]
-	) [key_data_result]
-		INNER JOIN [Child] [detail] ON [key_data_result].[ParentID] = [detail].[ParentID]
+			[Parent] [x]
+		WHERE
+			[x].[ParentID] = 1
+	) [m_1]
+		INNER JOIN [Child] [d] ON [m_1].[ParentID] = [d].[ParentID]
 
 BeforeExecute
 -- SqlServer.2012 (asynchronously)
-DECLARE @take Int -- Int32
-SET     @take = 1
 
-SELECT TOP (@take)
-	[x].[ParentID],
-	[x].[Value1]
+SELECT TOP (1)
+	[x].[ParentID]
 FROM
 	[Parent] [x]
 WHERE

@@ -39,8 +39,6 @@ VALUES
 
 BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
-DECLARE @take Integer -- Int32
-SET     @take = 1
 
 SELECT
 	t."Id",
@@ -50,7 +48,7 @@ FROM
 	"PR_1598_Update_Fluent_Table" t
 WHERE
 	t."Id" = 1
-LIMIT :take
+LIMIT 1
 
 BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
@@ -71,8 +69,6 @@ WHERE
 
 BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
-DECLARE @take Integer -- Int32
-SET     @take = 1
 
 SELECT
 	t."Id",
@@ -82,7 +78,7 @@ FROM
 	"PR_1598_Update_Fluent_Table" t
 WHERE
 	t."Id" = 1
-LIMIT :take
+LIMIT 1
 
 BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
@@ -100,8 +96,6 @@ WHERE
 
 BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
-DECLARE @take Integer -- Int32
-SET     @take = 1
 
 SELECT
 	t."Id",
@@ -111,7 +105,7 @@ FROM
 	"PR_1598_Update_Fluent_Table" t
 WHERE
 	t."Id" = 1
-LIMIT :take
+LIMIT 1
 
 BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL

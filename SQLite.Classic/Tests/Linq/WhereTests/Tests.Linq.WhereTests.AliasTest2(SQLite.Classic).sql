@@ -2,10 +2,10 @@
 -- SQLite.Classic SQLite
 
 SELECT
-	[_].[ParentID],
-	[_].[Value1]
+	[t1].[ParentID],
+	[t1].[Value1]
 FROM
-	[Parent] [_]
+	[Parent] [t1]
 WHERE
-	[_].[ParentID] = 3
+	[t1].[ParentID] = 3
 

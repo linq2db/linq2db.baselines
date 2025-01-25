@@ -16,14 +16,12 @@ CREATE COLUMN TABLE "Issue681Table"
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @take  -- Int32
-SET     @take = 1
 
 SELECT
 	current_schema
 FROM
-	"LinqDataTypes" "_"
-LIMIT ?
+	"LinqDataTypes" "t1"
+LIMIT 1
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
@@ -33,11 +31,11 @@ DECLARE @ID  -- Int32
 SET     @ID = 5
 
 UPDATE
-	"LINKED_DB"."TESTDB"."Issue681Table"
+	"LINKED_DB"."TESTDB"."Issue681Table" "t1"
 SET
-	"LINKED_DB"."TESTDB"."Issue681Table"."Value" = ?
+	"Value" = ?
 WHERE
-	"LINKED_DB"."TESTDB"."Issue681Table"."ID" = ?
+	"t1"."ID" = ?
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc

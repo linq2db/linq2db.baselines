@@ -24,7 +24,7 @@ INSERT INTO AttributeBase
 )
 VALUES
 (
-	toInt32(1)
+	1
 )
 
 BeforeExecute

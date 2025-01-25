@@ -54,9 +54,9 @@ UPDATE
 SET
 	"Value" = 1
 FROM
-	"Test3697" cp
+	"Test3697" a
 WHERE
-	cp."Id" = "Test3697Item"."TestId"
+	a."Id" = "Test3697Item"."TestId"
 RETURNING
 	"Test3697Item"."Id"
 

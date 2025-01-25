@@ -26,7 +26,7 @@ INSERT INTO Issue2816Table
 )
 VALUES
 (
-	toInt32(0),
+	0,
 	''
 )
 
@@ -40,7 +40,7 @@ INSERT INTO Issue2816Table
 )
 VALUES
 (
-	toInt32(1),
+	1,
 	'a'
 )
 
@@ -54,7 +54,7 @@ INSERT INTO Issue2816Table
 )
 VALUES
 (
-	toInt32(2),
+	2,
 	' m '
 )
 
@@ -68,7 +68,7 @@ INSERT INTO Issue2816Table
 )
 VALUES
 (
-	toInt32(3),
+	3,
 	' '
 )
 
@@ -82,7 +82,7 @@ INSERT INTO Issue2816Table
 )
 VALUES
 (
-	toInt32(4),
+	4,
 	'  '
 )
 
@@ -96,7 +96,7 @@ INSERT INTO Issue2816Table
 )
 VALUES
 (
-	toInt32(5),
+	5,
 	NULL
 )
 
@@ -111,6 +111,15 @@ FROM
 WHERE
 	empty(replaceRegexpAll(coalesce(p.Text, ''), '	|
 |||| || | | | | | | | | | | | | | | | |　', ''))
+
+BeforeExecute
+-- ClickHouse.Octonica ClickHouse
+
+SELECT
+	t1.Id,
+	t1.Text
+FROM
+	Issue2816Table t1
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse

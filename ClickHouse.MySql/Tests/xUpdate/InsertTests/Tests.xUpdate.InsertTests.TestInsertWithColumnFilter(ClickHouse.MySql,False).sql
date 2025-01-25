@@ -11,7 +11,7 @@ INSERT INTO Person
 VALUES
 (
 	'InsertColumnFilter',
-	toInt32(0),
+	0,
 	'whatever',
 	'M'
 )
@@ -29,7 +29,7 @@ FROM
 	Person x
 WHERE
 	x.FirstName = 'InsertColumnFilter'
-LIMIT toInt32(1)
+LIMIT 1
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse

@@ -2,12 +2,17 @@
 -- Informix.DB2 Informix
 
 SELECT
-	Cast(CASE
-		WHEN t.MoneyValue <> 4.5 THEN 't'
-		ELSE 'f'
-	END as BOOLEAN)
+	p_1.c1
 FROM
-	LinqDataTypes t
+	(
+		SELECT
+			CASE
+				WHEN p.MoneyValue <> 4.5 THEN 't'
+				ELSE 'f'
+			END::BOOLEAN as c1
+		FROM
+			LinqDataTypes p
+	) p_1
 WHERE
-	t.MoneyValue = 4.5
+	p_1.c1 = 'f'
 

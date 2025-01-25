@@ -54,41 +54,44 @@ SELECT 9,'{"some":"str9"}','[{"Value":"Value9"}]','Value3','Value1','Value1','Va
 SELECT 10,NULL,NULL,'Value1','Value2','Value2','Value2','N','F',NULL
 
 BeforeExecute
+BeginTransaction(RepeatableRead)
+BeforeExecute
 -- Sybase.Managed Sybase
 DECLARE @testedList UniVarChar(20) -- String
 SET     @testedList = '[{"Value":"Value1"}]'
 
 SELECT
-	[t].[Id]
+	[m_1].[Id],
+	[m_1].[Id],
+	[m_1].[Value1],
+	[m_1].[Value2],
+	[m_1].[Enum],
+	[m_1].[EnumNullable],
+	[m_1].[EnumWithNull],
+	[m_1].[EnumWithNullDeclarative],
+	[m_1].[BoolValue],
+	[m_1].[AnotherBoolValue],
+	[m_1].[DateTimeNullable]
 FROM
-	[ValueConversion] [t]
+	[ValueConversion] [m_1]
 WHERE
-	@testedList = [t].[Value2]
-GROUP BY
-	[t].[Id]
+	@testedList = [m_1].[Value2] AND @testedList = [m_1].[Value2]
 
 BeforeExecute
+DisposeTransaction
+BeforeExecute
 -- Sybase.Managed Sybase
-DECLARE @Value2 UniVarChar(20) -- String
-SET     @Value2 = '[{"Value":"Value1"}]'
-DECLARE @Id Integer -- Int32
-SET     @Id = 1
+DECLARE @testedList UniVarChar(20) -- String
+SET     @testedList = '[{"Value":"Value1"}]'
 
 SELECT
-	[t].[Id],
-	[t].[Value1],
-	[t].[Value2],
-	[t].[Enum],
-	[t].[EnumNullable],
-	[t].[EnumWithNull],
-	[t].[EnumWithNullDeclarative],
-	[t].[BoolValue],
-	[t].[AnotherBoolValue],
-	[t].[DateTimeNullable]
+	[g_1].[Id]
 FROM
-	[ValueConversion] [t]
+	[ValueConversion] [g_1]
 WHERE
-	@Value2 = [t].[Value2] AND [t].[Id] = @Id
+	@testedList = [g_1].[Value2]
+GROUP BY
+	[g_1].[Id]
 
 BeforeExecute
 -- Sybase.Managed Sybase

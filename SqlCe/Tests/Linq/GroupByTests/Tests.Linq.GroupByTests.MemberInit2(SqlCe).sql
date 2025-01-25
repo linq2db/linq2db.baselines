@@ -2,11 +2,11 @@
 -- SqlCe
 
 SELECT
-	[t1].[ParentID],
-	[t1].[ChildID]
+	[g_1].[ParentID] as [Field],
+	[g_1].[ChildID] as [Field_1]
 FROM
-	[Child] [t1]
+	[Child] [g_1]
 GROUP BY
-	[t1].[ParentID],
-	[t1].[ChildID]
+	[g_1].[ParentID],
+	[g_1].[ChildID]
 

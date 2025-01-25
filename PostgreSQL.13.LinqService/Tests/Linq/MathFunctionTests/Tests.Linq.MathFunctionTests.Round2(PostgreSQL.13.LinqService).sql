@@ -2,18 +2,18 @@
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
 
 SELECT
-	t.c1
+	t_1.c1
 FROM
 	(
 		SELECT
-			Cast(CASE
-				WHEN p."MoneyValue" - Floor(p."MoneyValue") = 0.5 AND Floor(p."MoneyValue") % 2 = 0
-					THEN Floor(p."MoneyValue")
-				ELSE Round(p."MoneyValue", 0)
-			END as Float) as c1
+			CASE
+				WHEN t."MoneyValue" - Floor(t."MoneyValue") = 0.5 AND Floor(t."MoneyValue") % 2 = 0
+					THEN Floor(t."MoneyValue")
+				ELSE Round(t."MoneyValue", 0)
+			END::Float as c1
 		FROM
-			"LinqDataTypes" p
-	) t
+			"LinqDataTypes" t
+	) t_1
 WHERE
-	t.c1 <> 0
+	t_1.c1 <> 0
 

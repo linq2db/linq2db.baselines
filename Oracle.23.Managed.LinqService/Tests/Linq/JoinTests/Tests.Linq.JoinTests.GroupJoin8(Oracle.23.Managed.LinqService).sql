@@ -1,13 +1,11 @@
 ﻿BeforeExecute
 -- Oracle.23.Managed Oracle.Managed Oracle12
-DECLARE @take Int32
-SET     @take = 1
 
 SELECT
 	t1."ParentID",
 	t1."ChildID"
 FROM
-	"Parent" p
+	"Parent" t2
 		OUTER APPLY (
 			SELECT
 				c_1."ParentID",
@@ -15,9 +13,9 @@ FROM
 			FROM
 				"Child" c_1
 			WHERE
-				c_1."ParentID" = p."ParentID"
+				t2."ParentID" = c_1."ParentID"
 			ORDER BY
 				c_1."ChildID"
-			FETCH NEXT :take ROWS ONLY
+			FETCH NEXT 1 ROWS ONLY
 		) t1
 

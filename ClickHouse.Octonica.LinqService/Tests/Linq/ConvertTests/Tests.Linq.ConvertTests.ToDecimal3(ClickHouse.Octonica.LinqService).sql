@@ -2,9 +2,9 @@
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
-	t.MoneyValue
+	p.MoneyValue
 FROM
-	LinqDataTypes t
+	LinqDataTypes p
 WHERE
-	t.MoneyValue > toDecimal64('0', 4)
+	p.MoneyValue > toDecimal64('0', 4)
 

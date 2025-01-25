@@ -2,9 +2,14 @@
 -- Sybase.Managed Sybase
 
 SELECT
-	Convert(Decimal, [t].[MoneyValue])
+	[p_1].[c1]
 FROM
-	[LinqDataTypes] [t]
+	(
+		SELECT
+			CAST([p].[MoneyValue] AS Decimal) as [c1]
+		FROM
+			[LinqDataTypes] [p]
+	) [p_1]
 WHERE
-	Convert(Decimal, [t].[MoneyValue]) > 0
+	[p_1].[c1] > 0
 

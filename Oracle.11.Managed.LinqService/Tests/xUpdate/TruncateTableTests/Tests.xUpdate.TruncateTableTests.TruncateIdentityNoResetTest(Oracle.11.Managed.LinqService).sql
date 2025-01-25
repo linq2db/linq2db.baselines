@@ -2,6 +2,36 @@
 -- Oracle.11.Managed Oracle11
 
 BEGIN
+	BEGIN
+		EXECUTE IMMEDIATE 'DROP TRIGGER "TIDENTITY_test_temp"';
+	EXCEPTION
+		WHEN OTHERS THEN
+			IF SQLCODE != -4080 THEN
+				RAISE;
+			END IF;
+	END;
+	BEGIN
+		EXECUTE IMMEDIATE 'DROP SEQUENCE "SIDENTITY_test_temp"';
+	EXCEPTION
+		WHEN OTHERS THEN
+			IF SQLCODE != -2289 THEN
+				RAISE;
+			END IF;
+	END;
+	BEGIN
+		EXECUTE IMMEDIATE 'DROP TABLE "test_temp"';
+	EXCEPTION
+		WHEN OTHERS THEN
+			IF SQLCODE != -942 THEN
+				RAISE;
+			END IF;
+	END;
+END;
+
+BeforeExecute
+-- Oracle.11.Managed Oracle11
+
+BEGIN
 	EXECUTE IMMEDIATE '
 		CREATE TABLE "test_temp"
 		(
@@ -35,14 +65,7 @@ END;
 BeforeExecute
 -- Oracle.11.Managed Oracle11
 
-INSERT INTO "test_temp"
-(
-	"Field1"
-)
-VALUES
-(
-	1
-)
+TRUNCATE TABLE "test_temp"
 
 BeforeExecute
 -- Oracle.11.Managed Oracle11
@@ -58,8 +81,18 @@ VALUES
 
 BeforeExecute
 -- Oracle.11.Managed Oracle11
-DECLARE @take Int32
-SET     @take = 3
+
+INSERT INTO "test_temp"
+(
+	"Field1"
+)
+VALUES
+(
+	1
+)
+
+BeforeExecute
+-- Oracle.11.Managed Oracle11
 DECLARE @skip Int32
 SET     @skip = 1
 
@@ -83,7 +116,7 @@ FROM
 					t1.ID
 			) t2
 		WHERE
-			ROWNUM <= :take
+			ROWNUM <= (:skip + 2)
 	) t3
 WHERE
 	t3.RN > :skip
@@ -119,8 +152,6 @@ VALUES
 
 BeforeExecute
 -- Oracle.11.Managed Oracle11
-DECLARE @take Int32
-SET     @take = 3
 DECLARE @skip Int32
 SET     @skip = 1
 
@@ -144,7 +175,7 @@ FROM
 					t1.ID
 			) t2
 		WHERE
-			ROWNUM <= :take
+			ROWNUM <= (:skip + 2)
 	) t3
 WHERE
 	t3.RN > :skip

@@ -1,7 +1,5 @@
 ﻿BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
-DECLARE @Date Timestamp -- DateTime2
-SET     @Date = '2009-09-20'::date
 
 SELECT
 	t1."ID",
@@ -17,5 +15,5 @@ SELECT
 FROM
 	"LinqDataTypes" t1
 WHERE
-	Cast(t1."DateTimeValue" as Date) = :Date
+	Date_Trunc('day', t1."DateTimeValue") = Date_Trunc('day', make_timestamp(2009, 9, 20, 0, 0, 0))
 

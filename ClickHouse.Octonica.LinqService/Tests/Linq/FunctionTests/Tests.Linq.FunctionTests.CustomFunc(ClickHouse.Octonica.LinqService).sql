@@ -2,11 +2,7 @@
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
-	p.FirstName,
-	p.PersonID,
-	p.LastName,
-	p.MiddleName,
-	p.Gender
+	concat(p.LastName, ', ', p.FirstName)
 FROM
 	Person p
 WHERE

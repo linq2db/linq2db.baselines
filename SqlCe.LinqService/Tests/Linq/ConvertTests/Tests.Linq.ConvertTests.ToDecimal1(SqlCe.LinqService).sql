@@ -2,7 +2,7 @@
 -- SqlCe
 
 SELECT
-	Convert(Decimal(10), [t].[MoneyValue] * 1000)
+	CAST([t].[MoneyValue] * 1000 AS Decimal(10, 4)) as [c1]
 FROM
 	[LinqDataTypes] [t]
 

@@ -21,7 +21,7 @@ BeforeExecute
 UPDATE
 	[TestTable]
 SET
-	[TestTable].[Fd] = 2
+	[Fd] = 2
 WHERE
 	[TestTable].[Id] = 1
 

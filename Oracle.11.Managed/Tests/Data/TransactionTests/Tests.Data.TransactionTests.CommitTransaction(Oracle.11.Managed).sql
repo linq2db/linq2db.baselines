@@ -22,18 +22,16 @@ BeforeExecute
 -- Oracle.11.Managed Oracle11
 
 UPDATE
-	"Parent"
+	"Parent" t
 SET
-	"Parent"."Value1" = 1011
+	"Value1" = 1011
 WHERE
-	"Parent"."ParentID" = 1010
+	t."ParentID" = 1010
 
 BeforeExecute
 CommitTransaction
 BeforeExecute
 -- Oracle.11.Managed Oracle11
-DECLARE @take Int32
-SET     @take = 1
 
 SELECT
 	t."ParentID",
@@ -41,5 +39,5 @@ SELECT
 FROM
 	"Parent" t
 WHERE
-	t."ParentID" = 1010 AND ROWNUM <= :take
+	t."ParentID" = 1010 AND ROWNUM <= 1
 

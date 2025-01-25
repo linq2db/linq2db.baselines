@@ -1,13 +1,11 @@
 ﻿BeforeExecute
 -- Oracle.11.Managed Oracle11
-DECLARE @take Int32
-SET     @take = 1
 
 SELECT
 	o."ParentID",
 	o."Value1",
-	x."ParentID",
-	x."ChildID"
+	c_1."ParentID",
+	c_1."ChildID"
 FROM
 	"Parent" o
 		LEFT JOIN (
@@ -15,8 +13,16 @@ FROM
 				t1."ParentID",
 				t1."ChildID"
 			FROM
-				"Child" t1
+				(
+					SELECT
+						x."ParentID",
+						x."ChildID"
+					FROM
+						"Child" x
+					ORDER BY
+						x."ChildID" DESC
+				) t1
 			WHERE
-				ROWNUM <= :take
-		) x ON x."ParentID" = o."ParentID"
+				ROWNUM <= 1
+		) c_1 ON c_1."ParentID" = o."ParentID"
 

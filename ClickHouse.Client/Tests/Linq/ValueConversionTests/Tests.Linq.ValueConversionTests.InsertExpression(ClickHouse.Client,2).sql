@@ -38,7 +38,7 @@ INSERT INTO ValueConversion
 )
 VALUES
 (
-	toInt32(2),
+	2,
 	'[]',
 	'Value1',
 	'[{"Value":"inserted"}]',
@@ -63,8 +63,8 @@ SELECT
 FROM
 	ValueConversion e
 WHERE
-	e.Id = toInt32(2)
-LIMIT toInt32(2)
+	e.Id = 2
+LIMIT 2
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse

@@ -1,13 +1,11 @@
 ﻿BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
-DECLARE @take Integer -- Int32
-SET     @take = 1
 
 SELECT
 	current_schema()
 FROM
 	"LinqDataTypes" t1
-LIMIT :take
+LIMIT 1
 
 BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
@@ -265,22 +263,22 @@ BeginTransaction
 BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
 
-SELECT * FROM testdata."public"."GetParentByID"(NULL::integer)
+SELECT * FROM testdata.public."GetParentByID"(NULL::integer)
 
 BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
 
-SELECT * FROM testdata."public"."TestTableFunction1"(NULL::integer,NULL::integer)
+SELECT * FROM testdata.public."TestTableFunction1"(NULL::integer,NULL::integer)
 
 BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
 
-SELECT * FROM testdata."public"."TestTableFunctionSchema"()
+SELECT * FROM testdata.public."TestTableFunctionSchema"()
 
 BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
 
-SELECT * FROM testdata."public"."TestTableFunction"(NULL::integer)
+SELECT * FROM testdata.public."TestTableFunction"(NULL::integer)
 
 BeforeExecute
 RollbackTransaction

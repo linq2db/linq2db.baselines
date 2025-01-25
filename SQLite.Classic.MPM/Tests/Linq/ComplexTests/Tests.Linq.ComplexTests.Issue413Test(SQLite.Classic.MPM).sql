@@ -140,7 +140,7 @@ DECLARE @InstrumentId  -- Int32
 SET     @InstrumentId = 1
 DECLARE @InstrumentCode NVarChar(4) -- String
 SET     @InstrumentCode = 'aaa1'
-DECLARE @CreateDate  -- DateTime
+DECLARE @CreateDate VarChar(23) -- AnsiString
 SET     @CreateDate = '2020-02-28 17:54:55.123'
 DECLARE @SourceInstrumentCode NVarChar(7) -- String
 SET     @SourceInstrumentCode = 'NOTNULL'
@@ -166,7 +166,7 @@ DECLARE @InstrumentId  -- Int32
 SET     @InstrumentId = 2
 DECLARE @InstrumentCode NVarChar(4) -- String
 SET     @InstrumentCode = 'aaa2'
-DECLARE @CreateDate  -- DateTime
+DECLARE @CreateDate VarChar(23) -- AnsiString
 SET     @CreateDate = '2020-02-28 17:54:55.123'
 DECLARE @SourceInstrumentCode NVarChar -- String
 SET     @SourceInstrumentCode = NULL
@@ -190,26 +190,26 @@ BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 DECLARE @cond NVarChar(4) -- String
 SET     @cond = 'aaa%'
-DECLARE @uptoDate  -- DateTime
+DECLARE @uptoDate VarChar(23) -- AnsiString
 SET     @uptoDate = '2020-02-29 17:54:55.123'
 
 SELECT
-	[t4].[SourceInstrumentCode]
+	[t5].[SourceInstrumentCode]
 FROM
 	(
 		SELECT DISTINCT
 			[ins].[SourceInstrumentCode]
 		FROM
-			[T1] [_]
-				INNER JOIN [T2] [idx] ON [_].[InstrumentId] = [idx].[InstrumentId]
+			[T1] [t4]
+				INNER JOIN [T2] [idx] ON [t4].[InstrumentId] = [idx].[InstrumentId]
 				INNER JOIN [T3] [w] ON [idx].[IndexId] = [w].[IndexId]
 				INNER JOIN [T1] [ins] ON [w].[InstrumentId] = [ins].[InstrumentId]
 		WHERE
-			[ins].[SourceInstrumentCode] IS NOT NULL AND [_].[InstrumentCode] LIKE @cond ESCAPE '~' AND
-			DateTime([_].[CreateDate]) <= DateTime(@uptoDate)
-	) [t4]
+			[t4].[InstrumentCode] LIKE @cond ESCAPE '~' AND strftime('%Y-%m-%d %H:%M:%f', [t4].[CreateDate]) <= strftime('%Y-%m-%d %H:%M:%f', @uptoDate) AND
+			[ins].[SourceInstrumentCode] IS NOT NULL
+	) [t5]
 ORDER BY
-	[t4].[SourceInstrumentCode]
+	[t5].[SourceInstrumentCode]
 
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite

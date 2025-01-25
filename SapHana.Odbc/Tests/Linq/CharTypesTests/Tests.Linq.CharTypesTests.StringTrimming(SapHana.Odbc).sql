@@ -2,9 +2,9 @@
 -- SapHana.Odbc SapHanaOdbc
 
 SELECT
-	Max("_"."ID")
+	MAX("t1"."ID")
 FROM
-	"AllTypes" "_"
+	"AllTypes" "t1"
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
@@ -392,15 +392,15 @@ DECLARE @lastId  -- Int32
 SET     @lastId = 2
 
 SELECT
-	"_"."ID",
-	"_"."char20DataType",
-	"_"."nchar20DataType"
+	"t1"."ID",
+	"t1"."char20DataType",
+	"t1"."nchar20DataType"
 FROM
-	"AllTypes" "_"
+	"AllTypes" "t1"
 WHERE
-	"_"."ID" > ?
+	"t1"."ID" > ?
 ORDER BY
-	"_"."ID"
+	"t1"."ID"
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
@@ -408,7 +408,7 @@ DECLARE @lastId  -- Int32
 SET     @lastId = 2
 
 DELETE FROM
-	"AllTypes" "_"
+	"AllTypes" "t1"
 WHERE
-	"_"."ID" > ?
+	"t1"."ID" > ?
 

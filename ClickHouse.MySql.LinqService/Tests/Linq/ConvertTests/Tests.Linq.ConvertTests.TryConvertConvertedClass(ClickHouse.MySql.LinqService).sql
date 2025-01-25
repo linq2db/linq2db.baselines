@@ -2,5 +2,5 @@
 -- ClickHouse.MySql ClickHouse
 
 SELECT
-	toString(toInt32(345))
+	toString(345)
 

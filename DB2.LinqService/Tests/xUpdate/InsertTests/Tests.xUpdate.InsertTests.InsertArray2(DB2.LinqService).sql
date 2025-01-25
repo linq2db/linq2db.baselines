@@ -2,9 +2,9 @@
 -- DB2 DB2.LUW DB2LUW
 
 DELETE FROM
-	"LinqDataTypes" "t1"
+	"LinqDataTypes" "t"
 WHERE
-	"t1".ID > 1000
+	"t".ID > 1000
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
@@ -21,7 +21,7 @@ VALUES
 (
 	1001,
 	1,
-	@arr
+	CAST(@arr AS VARBINARY(32672))
 )
 
 BeforeExecute
@@ -39,13 +39,13 @@ FROM
 	"LinqDataTypes" "t"
 WHERE
 	"t".ID = 1001
-FETCH FIRST 2 ROWS ONLY
+FETCH NEXT 2 ROWS ONLY
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 DELETE FROM
-	"LinqDataTypes" "t1"
+	"LinqDataTypes" "t"
 WHERE
-	"t1".ID > 1000
+	"t".ID > 1000
 

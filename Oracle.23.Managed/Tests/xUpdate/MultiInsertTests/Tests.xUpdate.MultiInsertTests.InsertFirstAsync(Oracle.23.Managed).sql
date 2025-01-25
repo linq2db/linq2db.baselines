@@ -33,7 +33,7 @@ BeforeExecute
 -- Oracle.23.Managed Oracle.Managed Oracle12 (asynchronously)
 
 INSERT FIRST
-WHEN N < 40 THEN
+WHEN "source_N" < 40 THEN
 	INTO "Dest1"
 	(
 		ID,
@@ -41,8 +41,8 @@ WHEN N < 40 THEN
 	)
 	VALUES
 	(
-		ID + 1,
-		N
+		"source_ID" + 1,
+		"source_N"
 	)
 WHEN 1 = 0 THEN
 	INTO "Dest1"
@@ -52,8 +52,8 @@ WHEN 1 = 0 THEN
 	)
 	VALUES
 	(
-		ID + 2,
-		N
+		"source_ID" + 2,
+		"source_N"
 	)
 ELSE
 	INTO "Dest1"
@@ -63,19 +63,19 @@ ELSE
 	)
 	VALUES
 	(
-		ID + 3,
-		N
+		"source_ID" + 3,
+		"source_N"
 	)
 SELECT
-	42 as N,
-	1000 as ID
+	42 as "source_N",
+	1000 as "source_ID"
 FROM SYS.DUAL
 
 BeforeExecute
 -- Oracle.23.Managed Oracle.Managed Oracle12 (asynchronously)
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	"Dest1" t1
 
@@ -83,7 +83,7 @@ BeforeExecute
 -- Oracle.23.Managed Oracle.Managed Oracle12 (asynchronously)
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	"Dest1" x
 WHERE

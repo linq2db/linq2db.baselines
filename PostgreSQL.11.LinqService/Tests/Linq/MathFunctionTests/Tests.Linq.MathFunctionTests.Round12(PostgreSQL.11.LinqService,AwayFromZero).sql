@@ -2,14 +2,14 @@
 -- PostgreSQL.11 PostgreSQL.9.5 PostgreSQL
 
 SELECT
-	t.c1
+	t_1.c1
 FROM
 	(
 		SELECT
-			Round(p."MoneyValue", 1) as c1
+			Round(t."MoneyValue", 1) as c1
 		FROM
-			"LinqDataTypes" p
-	) t
+			"LinqDataTypes" t
+	) t_1
 WHERE
-	t.c1 <> 0 AND t.c1 <> 7
+	t_1.c1 <> 0 AND t_1.c1 <> 7
 

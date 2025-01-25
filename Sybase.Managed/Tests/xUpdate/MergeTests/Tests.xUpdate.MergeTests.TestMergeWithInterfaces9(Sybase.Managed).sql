@@ -23,17 +23,17 @@ BeforeExecute
 
 MERGE INTO [ReviewIndexes] [Target]
 USING (
-	SELECT 1 AS [Id], '2' AS [Value_1]) [Source]
+	SELECT 1 AS [source_Id], '2' AS [source_Value]) [Source]
 (
-	[Id],
-	[Value_1]
+	[source_Id],
+	[source_Value]
 )
-ON ([Target].[Id] = [Source].[Id])
+ON ([Target].[Id] = [Source].[source_Id])
 
-WHEN MATCHED AND [Target].[Id] <> [Source].[Id] THEN
+WHEN MATCHED AND [Target].[Id] <> [Source].[source_Id] THEN
 UPDATE
 SET
-	[Target].[Value] = [Source].[Value_1]
+	[Value] = [Source].[source_Value]
 
 BeforeExecute
 -- Sybase.Managed Sybase

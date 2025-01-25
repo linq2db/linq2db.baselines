@@ -2,9 +2,14 @@
 -- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
 
 SELECT
-	Cast(t."MoneyValue" as Real)
+	p_1.c1
 FROM
-	"LinqDataTypes" t
+	(
+		SELECT
+			p."MoneyValue"::Real as c1
+		FROM
+			"LinqDataTypes" p
+	) p_1
 WHERE
-	Cast(t."MoneyValue" as Real) > 0
+	p_1.c1 > 0
 

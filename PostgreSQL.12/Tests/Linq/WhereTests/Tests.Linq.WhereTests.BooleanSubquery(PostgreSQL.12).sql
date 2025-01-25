@@ -32,16 +32,10 @@ SELECT
 	t."Id",
 	t."BoolValue"
 FROM
-	"WhereWithBool" t
+	"WhereWithBool" t,
+	"WhereWithBool" x
 WHERE
-	(
-		SELECT
-			x."BoolValue"
-		FROM
-			"WhereWithBool" x
-		WHERE
-			x."Id" = 1
-	) = True
+	x."BoolValue" = True AND x."Id" = 1
 
 BeforeExecute
 -- PostgreSQL.12 PostgreSQL.9.5 PostgreSQL

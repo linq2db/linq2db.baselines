@@ -11,8 +11,7 @@ FROM
 	"Person" "p"
 WHERE
 	CASE
-		WHEN CHARACTER_LENGTH("p"."FirstName",CODEUNITS32) > 6
-			THEN "p"."FirstName"
+		WHEN CHARACTER_LENGTH("p"."FirstName",CODEUNITS32) > 6 THEN "p"."FirstName"
 		ELSE "p"."FirstName" || VarChar(Repeat(' ', 6 - CHARACTER_LENGTH("p"."FirstName",CODEUNITS32)), 1000)
 	END || '123' = 'John  123' AND
 	"p"."PersonID" = 1

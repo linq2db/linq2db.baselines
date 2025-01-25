@@ -26,7 +26,7 @@ INSERT INTO SimpleBulkCopyTable
 	Id
 )
 VALUES
-(toInt32(3))
+(3)
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse

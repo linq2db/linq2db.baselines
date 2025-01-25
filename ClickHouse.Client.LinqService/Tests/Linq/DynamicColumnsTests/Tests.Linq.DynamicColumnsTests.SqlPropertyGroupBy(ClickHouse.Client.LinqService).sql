@@ -2,10 +2,10 @@
 -- ClickHouse.Client ClickHouse
 
 SELECT
-	t1.FirstName,
-	Count(*)
+	p.FirstName,
+	COUNT(*)
 FROM
-	Person t1
+	Person p
 GROUP BY
-	t1.FirstName
+	p.FirstName
 

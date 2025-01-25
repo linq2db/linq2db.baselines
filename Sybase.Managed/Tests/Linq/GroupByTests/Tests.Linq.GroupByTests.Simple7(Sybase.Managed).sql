@@ -2,11 +2,11 @@
 -- Sybase.Managed Sybase
 
 SELECT
-	[t1].[ParentID],
-	[t1].[ChildID]
+	[gr].[ParentID],
+	[gr].[ChildID]
 FROM
-	[GrandChild] [t1]
+	[GrandChild] [gr]
 GROUP BY
-	[t1].[ParentID],
-	[t1].[ChildID]
+	[gr].[ParentID],
+	[gr].[ChildID]
 

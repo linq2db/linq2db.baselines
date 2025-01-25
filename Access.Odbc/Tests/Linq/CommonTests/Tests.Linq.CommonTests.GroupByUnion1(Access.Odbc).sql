@@ -3,33 +3,27 @@
 
 SELECT
 	[tt].[ParentID],
-	[tt].[Sum_1]
+	SUM([tt].[ID])
 FROM
 	(
 		SELECT
-			Sum([t1].[ID]) as [Sum_1],
-			[t1].[ParentID]
+			[gr].[ParentID],
+			[gr].[ChildID] as [ID]
 		FROM
-			(
-				SELECT
-					[c_1].[ParentID],
-					[c_1].[ChildID] as [ID]
-				FROM
-					[Child] [c_1]
-				WHERE
-					[c_1].[ParentID] < 4
-				UNION ALL
-				SELECT
-					Iif([g_1].[ParentID] IS NULL, 0, [g_1].[ParentID]) as [ParentID],
-					Iif([g_1].[GrandChildID] IS NULL, 0, [g_1].[GrandChildID]) as [ID]
-				FROM
-					[GrandChild] [g_1]
-				WHERE
-					[g_1].[ParentID] >= 4
-			) [t1]
-		GROUP BY
-			[t1].[ParentID]
+			[Child] [gr]
+		WHERE
+			[gr].[ParentID] < 4
+		UNION ALL
+		SELECT
+			IIF([g_1].[ParentID] IS NULL, 0, [g_1].[ParentID]) as [ParentID],
+			IIF([g_1].[GrandChildID] IS NULL, 0, [g_1].[GrandChildID]) as [ID]
+		FROM
+			[GrandChild] [g_1]
+		WHERE
+			[g_1].[ParentID] >= 4
 	) [tt]
-WHERE
-	([tt].[Sum_1] <> 0 OR [tt].[Sum_1] IS NULL)
+GROUP BY
+	[tt].[ParentID]
+HAVING
+	(SUM([tt].[ID]) <> 0 OR SUM([tt].[ID]) IS NULL)
 

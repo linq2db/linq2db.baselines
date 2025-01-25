@@ -19,7 +19,7 @@ SET     @Test = 2
 UPDATE
 	[testparams]
 SET
-	[testparams].[TestИмя] = @Test
+	[TestИмя] = @Test
 WHERE
 	[testparams].[TestИмя] = 1
 

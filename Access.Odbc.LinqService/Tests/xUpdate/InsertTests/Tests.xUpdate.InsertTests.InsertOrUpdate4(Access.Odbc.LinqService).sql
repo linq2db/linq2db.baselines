@@ -56,13 +56,15 @@ SELECT @@IDENTITY
 
 BeforeExecute
 -- Access.Odbc AccessODBC
+DECLARE @i Int -- Int32
+SET     @i = 0
 DECLARE @id Int -- Int32
 SET     @id = 5
 
 UPDATE
 	[Patient] [t1]
 SET
-	[t1].[Diagnosis] = CStr(Len([t1].[Diagnosis]))
+	[t1].[Diagnosis] = CStr(Len([t1].[Diagnosis]) + ?)
 WHERE
 	[t1].[PersonID] = ?
 
@@ -72,6 +74,8 @@ DECLARE @id Int -- Int32
 SET     @id = 5
 DECLARE @diagnosis NVarChar(3) -- String
 SET     @diagnosis = 'abc'
+DECLARE @i Int -- Int32
+SET     @i = 0
 
 INSERT INTO [Patient]
 (
@@ -81,7 +85,7 @@ INSERT INTO [Patient]
 VALUES
 (
 	?,
-	CStr(Len(?))
+	CStr(Len(?) + ?)
 )
 
 BeforeExecute

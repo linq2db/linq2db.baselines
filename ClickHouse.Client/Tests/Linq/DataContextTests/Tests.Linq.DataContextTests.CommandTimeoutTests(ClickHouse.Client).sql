@@ -18,5 +18,5 @@ SELECT
 	t1.ChildID
 FROM
 	Child t1
-LIMIT toInt32(1)
+LIMIT 1
 

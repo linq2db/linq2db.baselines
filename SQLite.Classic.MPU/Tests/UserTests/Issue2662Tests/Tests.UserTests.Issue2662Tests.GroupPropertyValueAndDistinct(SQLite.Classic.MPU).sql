@@ -132,25 +132,13 @@ BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
 SELECT
-	[t2].[GroupCol],
-	Count(*),
-	(
-		SELECT
-			Count(*)
-		FROM
-			(
-				SELECT DISTINCT
-					[row_1].[LinkCol]
-				FROM
-					[CountDistinctTest] [row_1]
-				WHERE
-					[t2].[GroupCol] = [row_1].[GroupCol]
-			) [t1]
-	)
+	[grp].[GroupCol],
+	COUNT(*),
+	COUNT(DISTINCT [grp].[LinkCol])
 FROM
-	[CountDistinctTest] [t2]
+	[CountDistinctTest] [grp]
 GROUP BY
-	[t2].[GroupCol]
+	[grp].[GroupCol]
 
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite

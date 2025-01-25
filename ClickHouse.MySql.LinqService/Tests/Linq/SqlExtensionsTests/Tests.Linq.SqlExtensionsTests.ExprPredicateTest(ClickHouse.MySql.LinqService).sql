@@ -23,8 +23,8 @@ INSERT INTO sample_table_temp
 )
 VALUES
 (
-	toInt32(1),
-	toInt32(2)
+	1,
+	2
 )
 
 BeforeExecute
@@ -37,19 +37,19 @@ INSERT INTO sample_table_temp
 )
 VALUES
 (
-	toInt32(3),
-	toInt32(2)
+	3,
+	2
 )
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	sample_table_temp t
 WHERE
-	t.id BETWEEN toInt32(0) AND value
+	t.id BETWEEN 0 AND value
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse

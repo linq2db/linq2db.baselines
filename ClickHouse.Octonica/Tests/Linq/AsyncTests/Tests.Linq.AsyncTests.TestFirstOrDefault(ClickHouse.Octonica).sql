@@ -7,6 +7,6 @@ SELECT
 FROM
 	Parent o
 WHERE
-	(o.ParentID IN (toInt32(1), toInt32(2), toInt32(3)) OR o.ParentID = toInt32(4))
-LIMIT toInt32(1)
+	(o.ParentID IN (1, 2, 3) OR o.ParentID = 4)
+LIMIT 1
 

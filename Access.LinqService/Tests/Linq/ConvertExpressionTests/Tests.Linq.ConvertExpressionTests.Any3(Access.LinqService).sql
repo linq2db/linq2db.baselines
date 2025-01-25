@@ -2,7 +2,7 @@
 -- Access AccessOleDb
 
 SELECT
-	Count(*) > 0
+	IIF(COUNT(*) > 0, True, False)
 FROM
 	[Parent] [p]
 WHERE

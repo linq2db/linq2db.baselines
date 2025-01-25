@@ -33,21 +33,19 @@ SELECT SCOPE_IDENTITY()
 
 BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014
-DECLARE @take Int -- Int32
-SET     @take = 1
 DECLARE @id Int -- Int32
 SET     @id = 5
 
-SELECT TOP (@take)
-	[_].[PersonID],
-	[_].[Gender],
-	[_].[FirstName],
-	[_].[MiddleName],
-	[_].[LastName]
+SELECT TOP (1)
+	[t1].[PersonID],
+	[t1].[Gender],
+	[t1].[FirstName],
+	[t1].[MiddleName],
+	[t1].[LastName]
 FROM
-	[Person] [_]
+	[Person] [t1]
 WHERE
-	[_].[PersonID] = @id
+	[t1].[PersonID] = @id
 
 BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014
@@ -63,32 +61,28 @@ DECLARE @ID Int -- Int32
 SET     @ID = 5
 
 UPDATE
-	[t1]
+	[Person]
 SET
-	[t1].[Gender] = @Gender,
-	[t1].[FirstName] = @Name_FirstName,
-	[t1].[MiddleName] = @Name_MiddleName,
-	[t1].[LastName] = @Name_LastName
-FROM
-	[Person] [t1]
+	[Gender] = @Gender,
+	[FirstName] = @Name_FirstName,
+	[MiddleName] = @Name_MiddleName,
+	[LastName] = @Name_LastName
 WHERE
-	[t1].[PersonID] = @ID
+	[Person].[PersonID] = @ID
 
 BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014
-DECLARE @take Int -- Int32
-SET     @take = 1
 DECLARE @id Int -- Int32
 SET     @id = 5
 
-SELECT TOP (@take)
-	[_].[PersonID],
-	[_].[Gender],
-	[_].[FirstName],
-	[_].[MiddleName],
-	[_].[LastName]
+SELECT TOP (1)
+	[t1].[PersonID],
+	[t1].[Gender],
+	[t1].[FirstName],
+	[t1].[MiddleName],
+	[t1].[LastName]
 FROM
-	[Person] [_]
+	[Person] [t1]
 WHERE
-	[_].[PersonID] = @id
+	[t1].[PersonID] = @id
 

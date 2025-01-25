@@ -2,19 +2,19 @@
 -- ClickHouse.Client ClickHouse
 
 SELECT
-	t1.c1,
-	Count(*)
+	g_2.c1,
+	COUNT(*)
 FROM
 	(
 		SELECT
 			toDate32(now()) as c1
 		FROM
-			Parent v
-				INNER JOIN Child s ON v.ParentID = s.ParentID
+			Parent g_1
+				INNER JOIN Child s ON g_1.ParentID = s.ParentID
 		WHERE
-			v.Value1 > toInt32(0)
-	) t1
+			g_1.Value1 > 0
+	) g_2
 GROUP BY
-	t1.c1
-LIMIT toInt32(5)
+	g_2.c1
+LIMIT 5
 

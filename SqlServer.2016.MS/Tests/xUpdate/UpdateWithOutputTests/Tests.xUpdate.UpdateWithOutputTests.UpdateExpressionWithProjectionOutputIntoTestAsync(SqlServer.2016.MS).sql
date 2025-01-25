@@ -97,8 +97,8 @@ SET
 	[t].[ValueStr] = [s].[ValueStr]
 OUTPUT
 	[s].[Id],
-	[DELETED].[Value],
-	[INSERTED].[ValueStr]
+	DELETED.[Value],
+	INSERTED.[ValueStr]
 INTO [Destination]
 (
 	[Id],

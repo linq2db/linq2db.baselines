@@ -22,16 +22,16 @@ INSERT INTO MainItem
 	Value
 )
 VALUES
-(toInt32(0),'Main_0'),
-(toInt32(1),'Main_1'),
-(toInt32(2),'Main_2'),
-(toInt32(3),'Main_3'),
-(toInt32(4),'Main_4'),
-(toInt32(5),'Main_5'),
-(toInt32(6),'Main_6'),
-(toInt32(7),'Main_7'),
-(toInt32(8),'Main_8'),
-(toInt32(9),'Main_9')
+(0,'Main_0'),
+(1,'Main_1'),
+(2,'Main_2'),
+(3,'Main_3'),
+(4,'Main_4'),
+(5,'Main_5'),
+(6,'Main_6'),
+(7,'Main_7'),
+(8,'Main_8'),
+(9,'Main_9')
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
@@ -59,11 +59,11 @@ INSERT INTO MainItem2
 	MainItemId
 )
 VALUES
-(toInt32(0),'Main2_0',toInt32(0)),
-(toInt32(2),'Main2_1',toInt32(1)),
-(toInt32(4),'Main2_2',toInt32(2)),
-(toInt32(6),'Main2_3',toInt32(3)),
-(toInt32(8),'Main2_4',toInt32(4))
+(0,'Main2_0',0),
+(2,'Main2_1',1),
+(4,'Main2_2',2),
+(6,'Main2_3',3),
+(8,'Main2_4',4)
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
@@ -91,26 +91,26 @@ INSERT INTO SubItem1
 	ParentId
 )
 VALUES
-(toInt32(0),'Sub1_0',toInt32(0)),
-(toInt32(10),'Sub1_1',NULL),
-(toInt32(20),'Sub1_2',toInt32(1)),
-(toInt32(30),'Sub1_3',NULL),
-(toInt32(40),'Sub1_4',toInt32(2)),
-(toInt32(50),'Sub1_5',NULL),
-(toInt32(60),'Sub1_6',toInt32(3)),
-(toInt32(70),'Sub1_7',NULL),
-(toInt32(80),'Sub1_8',toInt32(4)),
-(toInt32(90),'Sub1_9',NULL),
-(toInt32(100),'Sub1_10',toInt32(5)),
-(toInt32(110),'Sub1_11',NULL),
-(toInt32(120),'Sub1_12',toInt32(6)),
-(toInt32(130),'Sub1_13',NULL),
-(toInt32(140),'Sub1_14',toInt32(7)),
-(toInt32(150),'Sub1_15',NULL),
-(toInt32(160),'Sub1_16',toInt32(8)),
-(toInt32(170),'Sub1_17',NULL),
-(toInt32(180),'Sub1_18',toInt32(9)),
-(toInt32(190),'Sub1_19',NULL)
+(0,'Sub1_0',0),
+(10,'Sub1_1',NULL),
+(20,'Sub1_2',1),
+(30,'Sub1_3',NULL),
+(40,'Sub1_4',2),
+(50,'Sub1_5',NULL),
+(60,'Sub1_6',3),
+(70,'Sub1_7',NULL),
+(80,'Sub1_8',4),
+(90,'Sub1_9',NULL),
+(100,'Sub1_10',5),
+(110,'Sub1_11',NULL),
+(120,'Sub1_12',6),
+(130,'Sub1_13',NULL),
+(140,'Sub1_14',7),
+(150,'Sub1_15',NULL),
+(160,'Sub1_16',8),
+(170,'Sub1_17',NULL),
+(180,'Sub1_18',9),
+(190,'Sub1_19',NULL)
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
@@ -138,26 +138,26 @@ INSERT INTO SubItem1_Sub
 	ParentId
 )
 VALUES
-(toInt32(0),'SubSub1_0',toInt32(0)),
-(toInt32(100),'SubSub1_1',toInt32(3)),
-(toInt32(200),'SubSub1_2',toInt32(6)),
-(toInt32(300),'SubSub1_3',toInt32(10)),
-(toInt32(400),'SubSub1_4',toInt32(13)),
-(toInt32(500),'SubSub1_5',toInt32(16)),
-(toInt32(600),'SubSub1_6',toInt32(20)),
-(toInt32(700),'SubSub1_7',toInt32(23)),
-(toInt32(800),'SubSub1_8',toInt32(26)),
-(toInt32(900),'SubSub1_9',toInt32(30)),
-(toInt32(1000),'SubSub1_10',toInt32(33)),
-(toInt32(1100),'SubSub1_11',toInt32(36)),
-(toInt32(1200),'SubSub1_12',toInt32(40)),
-(toInt32(1300),'SubSub1_13',toInt32(43)),
-(toInt32(1400),'SubSub1_14',toInt32(46)),
-(toInt32(1500),'SubSub1_15',toInt32(50)),
-(toInt32(1600),'SubSub1_16',toInt32(53)),
-(toInt32(1700),'SubSub1_17',toInt32(56)),
-(toInt32(1800),'SubSub1_18',toInt32(60)),
-(toInt32(1900),'SubSub1_19',toInt32(63))
+(0,'SubSub1_0',0),
+(100,'SubSub1_1',3),
+(200,'SubSub1_2',6),
+(300,'SubSub1_3',10),
+(400,'SubSub1_4',13),
+(500,'SubSub1_5',16),
+(600,'SubSub1_6',20),
+(700,'SubSub1_7',23),
+(800,'SubSub1_8',26),
+(900,'SubSub1_9',30),
+(1000,'SubSub1_10',33),
+(1100,'SubSub1_11',36),
+(1200,'SubSub1_12',40),
+(1300,'SubSub1_13',43),
+(1400,'SubSub1_14',46),
+(1500,'SubSub1_15',50),
+(1600,'SubSub1_16',53),
+(1700,'SubSub1_17',56),
+(1800,'SubSub1_18',60),
+(1900,'SubSub1_19',63)
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
@@ -185,35 +185,35 @@ INSERT INTO SubItem2
 	ParentId
 )
 VALUES
-(toInt32(0),'Sub2_0',toInt32(0)),
-(toInt32(10),'Sub2_1',NULL),
-(toInt32(20),'Sub2_2',toInt32(1)),
-(toInt32(30),'Sub2_3',NULL),
-(toInt32(40),'Sub2_4',toInt32(2)),
-(toInt32(50),'Sub2_5',NULL),
-(toInt32(60),'Sub2_6',toInt32(3)),
-(toInt32(70),'Sub2_7',NULL),
-(toInt32(80),'Sub2_8',toInt32(4)),
-(toInt32(90),'Sub2_9',NULL),
-(toInt32(100),'Sub2_10',toInt32(5)),
-(toInt32(110),'Sub2_11',NULL),
-(toInt32(120),'Sub2_12',toInt32(6)),
-(toInt32(130),'Sub2_13',NULL),
-(toInt32(140),'Sub2_14',toInt32(7)),
-(toInt32(150),'Sub2_15',NULL),
-(toInt32(160),'Sub2_16',toInt32(8)),
-(toInt32(170),'Sub2_17',NULL),
-(toInt32(180),'Sub2_18',toInt32(9)),
-(toInt32(190),'Sub2_19',NULL)
+(0,'Sub2_0',0),
+(10,'Sub2_1',NULL),
+(20,'Sub2_2',1),
+(30,'Sub2_3',NULL),
+(40,'Sub2_4',2),
+(50,'Sub2_5',NULL),
+(60,'Sub2_6',3),
+(70,'Sub2_7',NULL),
+(80,'Sub2_8',4),
+(90,'Sub2_9',NULL),
+(100,'Sub2_10',5),
+(110,'Sub2_11',NULL),
+(120,'Sub2_12',6),
+(130,'Sub2_13',NULL),
+(140,'Sub2_14',7),
+(150,'Sub2_15',NULL),
+(160,'Sub2_16',8),
+(170,'Sub2_17',NULL),
+(180,'Sub2_18',9),
+(190,'Sub2_19',NULL)
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
 
 SELECT
-	lw_MainItem.Id,
-	e.Id,
-	e.Value,
-	e.ParentId
+	m_2.Id,
+	d_1.Id,
+	d_1.Value_1,
+	d_1.ParentId
 FROM
 	(
 		SELECT DISTINCT
@@ -221,11 +221,19 @@ FROM
 		FROM
 			MainItem m_1
 		WHERE
-			m_1.Id > toInt32(1)
-	) lw_MainItem
-		INNER JOIN SubItem1 e ON lw_MainItem.Id = e.ParentId AND e.ParentId % toInt32(2) = toInt32(0)
-ORDER BY
-	e.Id
+			m_1.Id > 1
+	) m_2
+		INNER JOIN (
+			SELECT
+				d.Id as Id,
+				d.Value as Value_1,
+				d.ParentId as ParentId,
+				ROW_NUMBER() OVER (PARTITION BY d.ParentId ORDER BY d.Id) as rn
+			FROM
+				SubItem1 d
+			WHERE
+				d.ParentId % 2 = 0
+		) d_1 ON m_2.Id = d_1.ParentId AND d_1.rn <= 2
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
@@ -236,7 +244,7 @@ SELECT
 FROM
 	MainItem m_1
 WHERE
-	m_1.Id > toInt32(1)
+	m_1.Id > 1
 ORDER BY
 	m_1.Id
 
@@ -244,10 +252,10 @@ BeforeExecute
 -- ClickHouse.Client ClickHouse
 
 SELECT
-	lw_MainItem.Id,
-	e.Id,
-	e.Value,
-	e.ParentId
+	m_2.Id,
+	d_1.Id,
+	d_1.Value_1,
+	d_1.ParentId
 FROM
 	(
 		SELECT DISTINCT
@@ -255,11 +263,19 @@ FROM
 		FROM
 			MainItem m_1
 		WHERE
-			m_1.Id > toInt32(1)
-	) lw_MainItem
-		INNER JOIN SubItem1 e ON lw_MainItem.Id = e.ParentId AND e.ParentId % toInt32(2) = toInt32(0)
-ORDER BY
-	e.Id
+			m_1.Id > 1
+	) m_2
+		INNER JOIN (
+			SELECT
+				d.Id as Id,
+				d.Value as Value_1,
+				d.ParentId as ParentId,
+				ROW_NUMBER() OVER (PARTITION BY d.ParentId ORDER BY d.Id) as rn
+			FROM
+				SubItem1 d
+			WHERE
+				d.ParentId % 2 = 0
+		) d_1 ON m_2.Id = d_1.ParentId AND d_1.rn <= 2
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
@@ -270,7 +286,7 @@ SELECT
 FROM
 	MainItem m_1
 WHERE
-	m_1.Id > toInt32(1)
+	m_1.Id > 1
 ORDER BY
 	m_1.Id
 
@@ -278,21 +294,16 @@ BeforeExecute
 -- ClickHouse.Client ClickHouse
 
 SELECT
-	lw_MainItem_1.Id_1,
-	lw_MainItem_1.Id_2,
-	lw_MainItem_1.Value_1,
-	lw_MainItem_1.ParentId,
-	e.Id,
-	e.Value,
-	e.ParentId
+	m_2.Id,
+	m_2.Id_1,
+	d_1.Id,
+	d_1.Value,
+	d_1.ParentId
 FROM
 	(
 		SELECT DISTINCT
 			a_Parent.Id as Id,
-			lw_MainItem.Id as Id_1,
-			detail.Id as Id_2,
-			detail.Value as Value_1,
-			detail.ParentId as ParentId
+			t1.Id as Id_1
 		FROM
 			(
 				SELECT DISTINCT
@@ -300,23 +311,21 @@ FROM
 				FROM
 					MainItem m_1
 				WHERE
-					m_1.Id > toInt32(1)
-			) lw_MainItem
-				INNER JOIN SubItem1 detail ON lw_MainItem.Id = detail.ParentId
-				LEFT JOIN MainItem a_Parent ON detail.ParentId = a_Parent.Id
-	) lw_MainItem_1
-		INNER JOIN SubItem2 e ON lw_MainItem_1.Id = e.ParentId AND e.ParentId % toInt32(2) = toInt32(0)
-ORDER BY
-	e.Id
+					m_1.Id > 1
+			) t1
+				INNER JOIN SubItem1 d ON t1.Id = d.ParentId
+				LEFT JOIN MainItem a_Parent ON d.ParentId = a_Parent.Id
+	) m_2
+		INNER JOIN SubItem2 d_1 ON (m_2.Id = d_1.ParentId OR m_2.Id IS NULL AND d_1.ParentId IS NULL)
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
 
 SELECT
-	lw_MainItem.Id,
-	detail.Id,
-	detail.Value,
-	detail.ParentId,
+	m_2.Id,
+	d.Id,
+	d.Value,
+	d.ParentId,
 	a_Parent.Id,
 	a_Parent.Value
 FROM
@@ -326,10 +335,10 @@ FROM
 		FROM
 			MainItem m_1
 		WHERE
-			m_1.Id > toInt32(1)
-	) lw_MainItem
-		INNER JOIN SubItem1 detail ON lw_MainItem.Id = detail.ParentId
-		LEFT JOIN MainItem a_Parent ON detail.ParentId = a_Parent.Id
+			m_1.Id > 1
+	) m_2
+		INNER JOIN SubItem1 d ON m_2.Id = d.ParentId
+		LEFT JOIN MainItem a_Parent ON d.ParentId = a_Parent.Id
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
@@ -340,7 +349,7 @@ SELECT
 FROM
 	MainItem m_1
 WHERE
-	m_1.Id > toInt32(1)
+	m_1.Id > 1
 ORDER BY
 	m_1.Id
 
@@ -348,21 +357,16 @@ BeforeExecute
 -- ClickHouse.Client ClickHouse
 
 SELECT
-	lw_MainItem_1.Id_1,
-	lw_MainItem_1.Id_2,
-	lw_MainItem_1.Value_1,
-	lw_MainItem_1.ParentId,
-	e.Id,
-	e.Value,
-	e.ParentId
+	m_2.Id,
+	m_2.Id_1,
+	d_1.Id,
+	d_1.Value,
+	d_1.ParentId
 FROM
 	(
 		SELECT DISTINCT
 			a_Parent.Id as Id,
-			lw_MainItem.Id as Id_1,
-			detail.Id as Id_2,
-			detail.Value as Value_1,
-			detail.ParentId as ParentId
+			t1.Id as Id_1
 		FROM
 			(
 				SELECT DISTINCT
@@ -370,23 +374,21 @@ FROM
 				FROM
 					MainItem m_1
 				WHERE
-					m_1.Id > toInt32(1)
-			) lw_MainItem
-				INNER JOIN SubItem1 detail ON lw_MainItem.Id = detail.ParentId
-				LEFT JOIN MainItem a_Parent ON detail.ParentId = a_Parent.Id
-	) lw_MainItem_1
-		INNER JOIN SubItem2 e ON lw_MainItem_1.Id = e.ParentId AND e.ParentId % toInt32(2) = toInt32(0)
-ORDER BY
-	e.Id
+					m_1.Id > 1
+			) t1
+				INNER JOIN SubItem1 d ON t1.Id = d.ParentId
+				LEFT JOIN MainItem a_Parent ON d.ParentId = a_Parent.Id
+	) m_2
+		INNER JOIN SubItem2 d_1 ON (m_2.Id = d_1.ParentId OR m_2.Id IS NULL AND d_1.ParentId IS NULL)
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
 
 SELECT
-	lw_MainItem.Id,
-	detail.Id,
-	detail.Value,
-	detail.ParentId,
+	m_2.Id,
+	d.Id,
+	d.Value,
+	d.ParentId,
 	a_Parent.Id,
 	a_Parent.Value
 FROM
@@ -396,10 +398,10 @@ FROM
 		FROM
 			MainItem m_1
 		WHERE
-			m_1.Id > toInt32(1)
-	) lw_MainItem
-		INNER JOIN SubItem1 detail ON lw_MainItem.Id = detail.ParentId
-		LEFT JOIN MainItem a_Parent ON detail.ParentId = a_Parent.Id
+			m_1.Id > 1
+	) m_2
+		INNER JOIN SubItem1 d ON m_2.Id = d.ParentId
+		LEFT JOIN MainItem a_Parent ON d.ParentId = a_Parent.Id
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
@@ -410,7 +412,7 @@ SELECT
 FROM
 	MainItem m_1
 WHERE
-	m_1.Id > toInt32(1)
+	m_1.Id > 1
 ORDER BY
 	m_1.Id
 
@@ -418,10 +420,10 @@ BeforeExecute
 -- ClickHouse.Client ClickHouse
 
 SELECT
-	lw_MainItem.Id,
-	e.Id,
-	e.Value,
-	e.ParentId
+	m_2.Id,
+	d.Id,
+	d.Value,
+	d.ParentId
 FROM
 	(
 		SELECT DISTINCT
@@ -429,9 +431,11 @@ FROM
 		FROM
 			MainItem m_1
 		WHERE
-			m_1.Id > toInt32(1)
-	) lw_MainItem
-		INNER JOIN SubItem1 e ON lw_MainItem.Id = e.ParentId AND e.ParentId % toInt32(2) = toInt32(0) AND (startsWith(e.Value, 'Sub1_'))
+			m_1.Id > 1
+	) m_2
+		INNER JOIN SubItem1 d ON m_2.Id = d.ParentId
+WHERE
+	d.ParentId % 2 = 0 AND startsWith(d.Value, 'Sub1_')
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
@@ -442,7 +446,7 @@ SELECT
 FROM
 	MainItem m_1
 WHERE
-	m_1.Id > toInt32(1)
+	m_1.Id > 1
 ORDER BY
 	m_1.Id
 

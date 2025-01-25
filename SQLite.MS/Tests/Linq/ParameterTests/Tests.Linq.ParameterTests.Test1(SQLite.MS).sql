@@ -13,5 +13,5 @@ SELECT
 FROM
 	[LinqDataTypes] [t]
 WHERE
-	DateTime([t].[DateTimeValue]) = DateTime('2020-02-29 17:54:55.123')
+	strftime('%Y-%m-%d %H:%M:%f', [t].[DateTimeValue]) = strftime('%Y-%m-%d %H:%M:%f', '2020-02-29 17:54:55.123')
 

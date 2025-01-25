@@ -2,11 +2,16 @@
 -- ClickHouse.MySql ClickHouse
 
 SELECT
-	t1.ParentID
+	g_2.ParentID
 FROM
-	Child t1
-GROUP BY
-	t1.ParentID
-HAVING
-	t1.ParentID > toInt32(2)
+	(
+		SELECT
+			g_1.ParentID as ParentID
+		FROM
+			Child g_1
+		GROUP BY
+			g_1.ParentID
+	) g_2
+WHERE
+	g_2.ParentID > 2
 

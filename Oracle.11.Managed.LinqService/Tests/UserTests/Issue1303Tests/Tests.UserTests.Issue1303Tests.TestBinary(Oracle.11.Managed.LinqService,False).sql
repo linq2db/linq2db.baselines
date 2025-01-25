@@ -53,8 +53,6 @@ VALUES
 
 BeforeExecute
 -- Oracle.11.Managed Oracle11
-DECLARE @take Int32
-SET     @take = 2
 
 SELECT
 	t1.ID,
@@ -63,14 +61,12 @@ SELECT
 FROM
 	"Issue1303" t1
 WHERE
-	t1.ID = 1 AND ROWNUM <= :take
+	t1.ID = 1 AND ROWNUM <= 2
 
 BeforeExecute
 -- Oracle.11.Managed Oracle11
 DECLARE @Array Raw(3) -- Binary
 SET     @Array = HEXTORAW('010203')
-DECLARE @take Int32
-SET     @take = 2
 
 SELECT
 	t1.ID,
@@ -79,14 +75,12 @@ SELECT
 FROM
 	"Issue1303" t1
 WHERE
-	t1."Array" = :Array AND ROWNUM <= :take
+	t1."Array" = :Array AND ROWNUM <= 2
 
 BeforeExecute
 -- Oracle.11.Managed Oracle11
 DECLARE @Binary Raw(2) -- Binary
 SET     @Binary = HEXTORAW('0405')
-DECLARE @take Int32
-SET     @take = 2
 
 SELECT
 	t1.ID,
@@ -95,7 +89,7 @@ SELECT
 FROM
 	"Issue1303" t1
 WHERE
-	t1."Binary" = :Binary AND ROWNUM <= :take
+	t1."Binary" = :Binary AND ROWNUM <= 2
 
 BeforeExecute
 -- Oracle.11.Managed Oracle11

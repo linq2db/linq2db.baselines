@@ -4,7 +4,7 @@ DECLARE @p Int -- Int32
 SET     @p = -2
 
 SELECT
-	DateAdd(month, @p, [t].[DateTimeValue])
+	DateAdd(dd, DateDiff(dd, 0, DateAdd(month, @p, [t].[DateTimeValue])), 0)
 FROM
 	[LinqDataTypes] [t]
 

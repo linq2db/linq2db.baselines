@@ -42,7 +42,7 @@ BeforeExecute
 -- Oracle.23.Managed Oracle.Managed Oracle12
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	"Src" s
 WHERE
@@ -52,21 +52,17 @@ BeforeExecute
 -- Oracle.23.Managed Oracle.Managed Oracle12
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	"Src" s
-WHERE
-	1 = 1
 
 BeforeExecute
 -- Oracle.23.Managed Oracle.Managed Oracle12
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	"Src" s
-WHERE
-	1 = 1
 
 BeforeExecute
 -- Oracle.23.Managed Oracle.Managed Oracle12

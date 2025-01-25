@@ -28,9 +28,9 @@ BeforeExecute
 -- DB2 DB2.LUW DB2LUW (asynchronously)
 
 DELETE FROM
-	"LinqDataTypes" "t1"
+	"LinqDataTypes" "p"
 WHERE
-	"t1".ID >= 4000
+	"p".ID >= 4000
 
 BeforeExecute
 INSERT BULK "LinqDataTypes"
@@ -39,7 +39,7 @@ BeforeExecute
 -- DB2 DB2.LUW DB2LUW (asynchronously)
 
 DELETE FROM
-	"LinqDataTypes" "t1"
+	"LinqDataTypes" "p"
 WHERE
-	"t1".ID >= 4000
+	"p".ID >= 4000
 

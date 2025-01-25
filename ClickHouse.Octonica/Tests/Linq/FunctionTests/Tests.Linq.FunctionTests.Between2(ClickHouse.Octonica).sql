@@ -7,5 +7,5 @@ SELECT
 FROM
 	Parent p
 WHERE
-	p.ParentID BETWEEN toInt32(1) AND toInt32(10)
+	p.ParentID BETWEEN 1 AND 10
 

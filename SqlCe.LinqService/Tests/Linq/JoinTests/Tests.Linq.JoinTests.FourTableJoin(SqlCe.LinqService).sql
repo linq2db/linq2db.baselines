@@ -6,10 +6,10 @@ SELECT
 	[p].[Value1],
 	[c1].[ChildID],
 	[c2].[GrandChildID],
-	[c3].[GrandChildID]
+	[c3].[GrandChildID] as [GrandChildID_1]
 FROM
 	[Parent] [p]
 		INNER JOIN [Child] [c1] ON [p].[ParentID] = [c1].[ParentID]
 		INNER JOIN [GrandChild] [c2] ON [c1].[ParentID] = [c2].[ParentID]
-		INNER JOIN [GrandChild] [c3] ON ([c2].[ParentID] = [c3].[ParentID] OR [c2].[ParentID] IS NULL AND [c3].[ParentID] IS NULL)
+		INNER JOIN [GrandChild] [c3] ON [c2].[ParentID] = [c3].[ParentID]
 

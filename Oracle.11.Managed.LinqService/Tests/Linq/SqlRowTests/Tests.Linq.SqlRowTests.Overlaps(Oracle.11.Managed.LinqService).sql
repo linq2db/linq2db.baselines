@@ -68,21 +68,13 @@ VALUES
 
 BeforeExecute
 -- Oracle.11.Managed Oracle11
-DECLARE @p TimeStamp -- DateTime
-SET     @p = TIMESTAMP '2020-10-01 00:00:00.000000'
-DECLARE @p_1 TimeStamp -- DateTime
-SET     @p_1 = TIMESTAMP '2020-10-05 00:00:00.000000'
-DECLARE @p_2 TimeStamp -- DateTime
-SET     @p_2 = TIMESTAMP '2020-10-03 00:00:00.000000'
-DECLARE @p_3 TimeStamp -- DateTime
-SET     @p_3 = TIMESTAMP '2020-11-09 00:00:00.000000'
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	"Ints" i
 WHERE
-	(:p, :p_1) OVERLAPS (:p_2, :p_3)
+	(TO_TIMESTAMP('2020-10-01', 'YYYY-MM-DD HH24:MI:SS'), TO_TIMESTAMP('2020-10-05', 'YYYY-MM-DD HH24:MI:SS')) OVERLAPS (TO_TIMESTAMP('2020-10-03', 'YYYY-MM-DD HH24:MI:SS'), TO_TIMESTAMP('2020-11-09', 'YYYY-MM-DD HH24:MI:SS'))
 
 BeforeExecute
 -- Oracle.11.Managed Oracle11
@@ -96,7 +88,7 @@ DECLARE @p_3 TimeStampTZ -- DateTimeOffset
 SET     @p_3 = 11/09/2020 00:00:00 +01:00
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	"Ints" i
 WHERE
@@ -104,37 +96,29 @@ WHERE
 
 BeforeExecute
 -- Oracle.11.Managed Oracle11
-DECLARE @p TimeStamp -- DateTime
-SET     @p = TIMESTAMP '2020-10-03 00:00:00.000000'
+DECLARE @p IntervalDS -- Object
+SET     @p = 6.00:00:00
 DECLARE @p_1 IntervalDS -- Object
-SET     @p_1 = 6.00:00:00
-DECLARE @p_2 TimeStamp -- DateTime
-SET     @p_2 = TIMESTAMP '2020-10-05 00:00:00.000000'
-DECLARE @p_3 IntervalDS -- Object
-SET     @p_3 = 1.00:00:00
+SET     @p_1 = 1.00:00:00
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	"Ints" i
 WHERE
-	(:p, :p_1) OVERLAPS (:p_2, :p_3)
+	(TO_TIMESTAMP('2020-10-03', 'YYYY-MM-DD HH24:MI:SS'), :p) OVERLAPS (TO_TIMESTAMP('2020-10-05', 'YYYY-MM-DD HH24:MI:SS'), :p_1)
 
 BeforeExecute
 -- Oracle.11.Managed Oracle11
-DECLARE @p TimeStamp -- DateTime
-SET     @p = TIMESTAMP '2020-10-03 00:00:00.000000'
-DECLARE @p_1 IntervalDS -- Object
-SET     @p_1 = 6.00:00:00
-DECLARE @p_2 TimeStamp -- DateTime
-SET     @p_2 = TIMESTAMP '2020-10-05 00:00:00.000000'
+DECLARE @p IntervalDS -- Object
+SET     @p = 6.00:00:00
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	"Ints" i
 WHERE
-	(:p, :p_1) OVERLAPS (:p_2, NULL)
+	(TO_TIMESTAMP('2020-10-03', 'YYYY-MM-DD HH24:MI:SS'), :p) OVERLAPS (TO_TIMESTAMP('2020-10-05', 'YYYY-MM-DD HH24:MI:SS'), NULL)
 
 BeforeExecute
 -- Oracle.11.Managed Oracle11

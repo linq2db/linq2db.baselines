@@ -27,10 +27,10 @@ INSERT INTO Issue4167Table
 	EnumValue
 )
 VALUES
-(toInt32(1),'000001',toInt32(0)),
-(toInt32(2),'000001',toInt32(3)),
-(toInt32(3),'000001',NULL),
-(toInt32(4),'000002',toInt32(0))
+(1,'000001',0),
+(2,'000001',3),
+(3,'000001',NULL),
+(4,'000002',0)
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -38,21 +38,24 @@ BeforeExecute
 WITH CTE_1 AS
 (
 	SELECT
-		Coalesce(t.EnumValue, toInt32(0)) as EnumValue
+		CASE
+			WHEN g_1.EnumValue IS NOT NULL THEN g_1.EnumValue
+			ELSE 0
+		END as EnumValue
 	FROM
-		Issue4167Table t
+		Issue4167Table g_1
 	WHERE
-		t.Value = '000001'
+		g_1.Value = '000001'
 	GROUP BY
-		t.Value,
-		t.EnumValue
+		g_1.Value,
+		g_1.EnumValue
 )
 SELECT
-	r.EnumValue
+	t1.EnumValue
 FROM
-	CTE_1 r
+	CTE_1 t1
 ORDER BY
-	r.EnumValue
+	t1.EnumValue
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse

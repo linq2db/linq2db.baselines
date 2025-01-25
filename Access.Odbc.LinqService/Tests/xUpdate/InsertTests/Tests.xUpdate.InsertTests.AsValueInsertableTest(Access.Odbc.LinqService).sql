@@ -38,7 +38,7 @@ BeforeExecute
 -- Access.Odbc AccessODBC
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	[TestInsertOrReplaceTable] [x]
 WHERE

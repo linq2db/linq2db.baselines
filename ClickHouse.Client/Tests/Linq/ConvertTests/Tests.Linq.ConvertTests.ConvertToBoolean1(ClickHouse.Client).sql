@@ -2,9 +2,17 @@
 -- ClickHouse.Client ClickHouse
 
 SELECT
-	toBool(t.MoneyValue)
+	p_1.c1
 FROM
-	LinqDataTypes t
+	(
+		SELECT
+			CASE
+				WHEN p.MoneyValue <> 0 THEN true
+				ELSE false
+			END as c1
+		FROM
+			LinqDataTypes p
+	) p_1
 WHERE
-	toBool(t.MoneyValue) = true
+	p_1.c1 = true
 

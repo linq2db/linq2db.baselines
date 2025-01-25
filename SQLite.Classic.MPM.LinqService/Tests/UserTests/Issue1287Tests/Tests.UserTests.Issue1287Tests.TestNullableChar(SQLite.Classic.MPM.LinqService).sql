@@ -2,9 +2,9 @@
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
 SELECT
-	[_].[charDataType]
+	[t1].[charDataType]
 FROM
-	[AllTypes] [_]
+	[AllTypes] [t1]
 WHERE
-	[_].[charDataType] = '1'
+	[t1].[charDataType] = '1'
 

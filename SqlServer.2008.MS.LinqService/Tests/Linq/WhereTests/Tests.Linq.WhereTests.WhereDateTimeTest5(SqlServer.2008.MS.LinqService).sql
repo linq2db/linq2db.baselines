@@ -1,19 +1,17 @@
 ﻿BeforeExecute
 -- SqlServer.2008.MS SqlServer.2008
-DECLARE @Date DateTime2
-SET     @Date = CAST('2009-09-20T00:00:00.0000000' AS DATETIME2)
 
 SELECT
-	[_].[ID],
-	[_].[MoneyValue],
-	[_].[DateTimeValue],
-	[_].[BoolValue],
-	[_].[GuidValue],
-	[_].[BinaryValue],
-	[_].[SmallIntValue],
-	[_].[StringValue]
+	[t1].[ID],
+	[t1].[MoneyValue],
+	[t1].[DateTimeValue],
+	[t1].[BoolValue],
+	[t1].[GuidValue],
+	[t1].[BinaryValue],
+	[t1].[SmallIntValue],
+	[t1].[StringValue]
 FROM
-	[LinqDataTypes] [_]
+	[LinqDataTypes] [t1]
 WHERE
-	Convert(Date, [_].[DateTimeValue]) = @Date
+	CAST([t1].[DateTimeValue] AS Date) = CAST(CAST(N'2009-09-20' AS DateTime2) AS Date)
 

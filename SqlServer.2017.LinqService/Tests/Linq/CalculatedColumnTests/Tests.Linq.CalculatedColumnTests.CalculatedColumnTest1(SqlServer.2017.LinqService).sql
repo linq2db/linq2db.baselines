@@ -2,22 +2,34 @@
 -- SqlServer.2017
 
 SELECT
-	[i].[PersonID],
-	[i].[FirstName],
-	[i].[LastName],
-	[i].[MiddleName],
-	[i].[Gender],
-	[i].[LastName] + N', ' + [i].[FirstName],
+	[i_1].[PersonID],
+	[i_1].[FirstName],
+	[i_1].[LastName],
+	[i_1].[MiddleName],
+	[i_1].[Gender],
+	[i_1].[FullName],
+	[i_1].[FullName],
+	[i_1].[DoctorCount]
+FROM
 	(
 		SELECT
-			Count(*)
+			[i].[FirstName],
+			[i].[PersonID],
+			[i].[LastName],
+			[i].[MiddleName],
+			[i].[Gender],
+			[i].[LastName] + N', ' + [i].[FirstName] as [FullName],
+			(
+				SELECT
+					COUNT(*)
+				FROM
+					[Doctor] [d]
+				WHERE
+					[d].[PersonID] = [i].[PersonID]
+			) as [DoctorCount]
 		FROM
-			[Doctor] [d]
-		WHERE
-			[d].[PersonID] = [i].[PersonID]
-	)
-FROM
-	[Person] [i]
+			[Person] [i]
+	) [i_1]
 WHERE
-	[i].[FirstName] <> N'John'
+	[i_1].[FirstName] <> N'John'
 

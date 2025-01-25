@@ -39,49 +39,43 @@ VALUES
 
 BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014
-DECLARE @take Int -- Int32
-SET     @take = 2
 
-SELECT TOP (@take)
-	[_].[ID],
-	[_].[Array],
-	[_].[Binary]
+SELECT TOP (2)
+	[t1].[ID],
+	[t1].[Array],
+	[t1].[Binary]
 FROM
-	[Issue1303] [_]
+	[Issue1303] [t1]
 WHERE
-	[_].[ID] = 1
+	[t1].[ID] = 1
 
 BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014
-DECLARE @take Int -- Int32
-SET     @take = 2
 DECLARE @Array VarBinary(10) -- Binary
 SET     @Array = 0x010203
 
-SELECT TOP (@take)
-	[_].[ID],
-	[_].[Array],
-	[_].[Binary]
+SELECT TOP (2)
+	[t1].[ID],
+	[t1].[Array],
+	[t1].[Binary]
 FROM
-	[Issue1303] [_]
+	[Issue1303] [t1]
 WHERE
-	[_].[Array] = @Array
+	[t1].[Array] = @Array
 
 BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014
-DECLARE @take Int -- Int32
-SET     @take = 2
 DECLARE @Binary VarBinary(2) -- Binary
 SET     @Binary = 0x0405
 
-SELECT TOP (@take)
-	[_].[ID],
-	[_].[Array],
-	[_].[Binary]
+SELECT TOP (2)
+	[t1].[ID],
+	[t1].[Array],
+	[t1].[Binary]
 FROM
-	[Issue1303] [_]
+	[Issue1303] [t1]
 WHERE
-	[_].[Binary] = @Binary
+	[t1].[Binary] = @Binary
 
 BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014

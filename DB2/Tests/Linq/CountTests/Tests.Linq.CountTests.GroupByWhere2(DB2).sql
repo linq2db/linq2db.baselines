@@ -2,11 +2,11 @@
 -- DB2 DB2.LUW DB2LUW
 
 SELECT
-	"t1"."ParentID"
+	"g_1"."ParentID"
 FROM
-	"Child" "t1"
+	"Child" "g_1"
 GROUP BY
-	"t1"."ParentID"
+	"g_1"."ParentID"
 HAVING
-	Count(*) > 2
+	COUNT(*) > 2
 

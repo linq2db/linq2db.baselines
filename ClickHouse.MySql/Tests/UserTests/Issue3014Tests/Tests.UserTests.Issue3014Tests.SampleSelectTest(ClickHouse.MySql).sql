@@ -24,7 +24,7 @@ INSERT INTO Table2_3014
 	IsTrue
 )
 VALUES
-(toInt32(1),toInt32(0),true)
+(1,0,true)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
@@ -53,13 +53,13 @@ INSERT INTO TableStatus_3014
 	StatusName
 )
 VALUES
-(toInt32(1),'Sample')
+(1,'Sample')
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
-	toInt32(1)
+	1
 FROM
 	TableStatus_3014 x
 
@@ -75,7 +75,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
-	toInt32(1)
+	1
 FROM
 	TableStatus_3014 x
 
@@ -83,17 +83,17 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
-	cp.Id
+	x.Id
 FROM
-	Table2_3014 cp
+	Table2_3014 x
 WHERE
-	cp.Id = toInt32(0)
+	x.Id = 0
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
-	toInt32(1)
+	1
 FROM
 	TableStatus_3014 x
 
@@ -101,9 +101,10 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
-	t.Id
+	x.Id,
+	1
 FROM
-	Table2_3014 t
+	Table2_3014 x
 WHERE
 	1 = 0
 
@@ -111,7 +112,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
-	toInt32(1)
+	1
 FROM
 	TableStatus_3014 x
 
@@ -119,9 +120,10 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
-	t.Id
+	e.Id,
+	'0'
 FROM
-	Table2_3014 t
+	Table2_3014 e
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse

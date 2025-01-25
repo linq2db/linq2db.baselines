@@ -1,32 +1,23 @@
 ﻿BeforeExecute
 -- Oracle.11.Managed Oracle11
-DECLARE @take Int32
-SET     @take = 1
 
 SELECT
-	lw_Parent."ParentID",
-	detail."ParentID",
-	detail."ChildID"
+	m_1."ParentID",
+	d."ParentID",
+	d."ChildID"
 FROM
 	(
-		SELECT DISTINCT
-			t1."ParentID"
+		SELECT
+			x."ParentID"
 		FROM
-			(
-				SELECT
-					x."ParentID"
-				FROM
-					"Parent" x
-				WHERE
-					x."ParentID" = 3 AND ROWNUM <= :take
-			) t1
-	) lw_Parent
-		INNER JOIN "Child" detail ON lw_Parent."ParentID" = detail."ParentID"
+			"Parent" x
+		WHERE
+			x."ParentID" = 3 AND ROWNUM <= 1
+	) m_1
+		INNER JOIN "Child" d ON m_1."ParentID" = d."ParentID"
 
 BeforeExecute
 -- Oracle.11.Managed Oracle11
-DECLARE @take Int32
-SET     @take = 1
 
 SELECT
 	x."ParentID",
@@ -34,40 +25,31 @@ SELECT
 FROM
 	"Parent" x
 WHERE
-	x."ParentID" = 3 AND ROWNUM <= :take
+	x."ParentID" = 3 AND ROWNUM <= 1
 
 BeforeExecute
 BeginTransaction
 BeforeExecute
 -- SQLite.MS SQLite
-DECLARE @take  -- Int32
-SET     @take = 1
 
 SELECT
-	[lw_Parent].[ParentID],
-	[detail].[ParentID],
-	[detail].[ChildID]
+	[m_1].[ParentID],
+	[d].[ParentID],
+	[d].[ChildID]
 FROM
 	(
-		SELECT DISTINCT
-			[t1].[ParentID]
+		SELECT
+			[x].[ParentID]
 		FROM
-			(
-				SELECT
-					[x].[ParentID]
-				FROM
-					[Parent] [x]
-				WHERE
-					[x].[ParentID] = 3
-				LIMIT @take
-			) [t1]
-	) [lw_Parent]
-		INNER JOIN [Child] [detail] ON [lw_Parent].[ParentID] = [detail].[ParentID]
+			[Parent] [x]
+		WHERE
+			[x].[ParentID] = 3
+		LIMIT 1
+	) [m_1]
+		INNER JOIN [Child] [d] ON [m_1].[ParentID] = [d].[ParentID]
 
 BeforeExecute
 -- SQLite.MS SQLite
-DECLARE @take  -- Int32
-SET     @take = 1
 
 SELECT
 	[x].[ParentID],
@@ -76,7 +58,7 @@ FROM
 	[Parent] [x]
 WHERE
 	[x].[ParentID] = 3
-LIMIT @take
+LIMIT 1
 
 BeforeExecute
 DisposeTransaction
@@ -84,34 +66,25 @@ BeforeExecute
 BeginTransaction
 BeforeExecute
 -- SQLite.MS SQLite
-DECLARE @take  -- Int32
-SET     @take = 1
 
 SELECT
-	[lw_Parent].[ParentID],
-	[detail].[ParentID],
-	[detail].[ChildID]
+	[m_1].[ParentID],
+	[d].[ParentID],
+	[d].[ChildID]
 FROM
 	(
-		SELECT DISTINCT
-			[t1].[ParentID]
+		SELECT
+			[x].[ParentID]
 		FROM
-			(
-				SELECT
-					[x].[ParentID]
-				FROM
-					[Parent] [x]
-				WHERE
-					[x].[ParentID] = 3
-				LIMIT @take
-			) [t1]
-	) [lw_Parent]
-		INNER JOIN [Child] [detail] ON [lw_Parent].[ParentID] = [detail].[ParentID]
+			[Parent] [x]
+		WHERE
+			[x].[ParentID] = 3
+		LIMIT 1
+	) [m_1]
+		INNER JOIN [Child] [d] ON [m_1].[ParentID] = [d].[ParentID]
 
 BeforeExecute
 -- SQLite.MS SQLite
-DECLARE @take  -- Int32
-SET     @take = 1
 
 SELECT
 	[x].[ParentID],
@@ -120,7 +93,7 @@ FROM
 	[Parent] [x]
 WHERE
 	[x].[ParentID] = 3
-LIMIT @take
+LIMIT 1
 
 BeforeExecute
 DisposeTransaction

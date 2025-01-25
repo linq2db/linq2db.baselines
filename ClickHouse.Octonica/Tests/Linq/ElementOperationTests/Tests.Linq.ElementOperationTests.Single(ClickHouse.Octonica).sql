@@ -7,6 +7,6 @@ SELECT
 FROM
 	Parent p
 WHERE
-	p.ParentID = toInt32(1)
-LIMIT toInt32(2)
+	p.ParentID = 1
+LIMIT 2
 

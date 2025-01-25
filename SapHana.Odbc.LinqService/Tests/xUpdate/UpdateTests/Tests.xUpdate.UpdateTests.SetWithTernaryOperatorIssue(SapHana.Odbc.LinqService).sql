@@ -79,32 +79,30 @@ SELECT CURRENT_IDENTITY_VALUE() FROM DUMMY
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @Value NChar(1) -- StringFixedLength
-SET     @Value = 'O'
+DECLARE @nullableGender NChar(1) -- StringFixedLength
+SET     @nullableGender = 'O'
 
 UPDATE
-	"Person"
+	"Person" "t1"
 SET
-	"Person"."Gender" = ?
+	"Gender" = ?
 WHERE
-	"Person"."FirstName" LIKE 'UpdateComplex%' ESCAPE '~'
+	"t1"."FirstName" LIKE 'UpdateComplex%' ESCAPE '~'
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @id  -- Int32
 SET     @id = 5
-DECLARE @take  -- Int32
-SET     @take = 1
 
 SELECT
-	"_"."PersonID",
-	"_"."Gender",
-	"_"."FirstName",
-	"_"."MiddleName",
-	"_"."LastName"
+	"t1"."PersonID",
+	"t1"."Gender",
+	"t1"."FirstName",
+	"t1"."MiddleName",
+	"t1"."LastName"
 FROM
-	"Person" "_"
+	"Person" "t1"
 WHERE
-	"_"."PersonID" = ?
-LIMIT ?
+	"t1"."PersonID" = ?
+LIMIT 1
 

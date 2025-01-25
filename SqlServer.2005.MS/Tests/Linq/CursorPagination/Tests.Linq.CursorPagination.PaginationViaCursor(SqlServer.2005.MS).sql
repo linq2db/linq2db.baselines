@@ -127,8 +127,8 @@ SELECT 100,CAST('2020-02-27T17:54:55.123' AS DATETIME),100
 
 BeforeExecute
 -- SqlServer.2005.MS SqlServer.2005
-DECLARE @ServiceDate DateTime
-SET     @ServiceDate = CAST('2020-02-27T17:54:55.123' AS DATETIME)
+DECLARE @DateTime DateTime
+SET     @DateTime = CAST('2020-02-29T17:54:55.123' AS DATETIME)
 
 SELECT
 	[t].[BookingID],
@@ -137,20 +137,20 @@ SELECT
 FROM
 	[Booking] [t]
 WHERE
-	[t].[ServiceDate] > @ServiceDate
+	[t].[ServiceDate] > DateAdd(day, -2, @DateTime)
 ORDER BY
 	[t].[ServiceDate] DESC,
 	[t].[BookingID] DESC
 
 BeforeExecute
 -- SqlServer.2005.MS SqlServer.2005
-DECLARE @ServiceDate DateTime
-SET     @ServiceDate = CAST('2020-02-27T17:54:55.123' AS DATETIME)
+DECLARE @DateTime DateTime
+SET     @DateTime = CAST('2020-02-29T17:54:55.123' AS DATETIME)
 DECLARE @take BigInt -- Int64
 SET     @take = 12
 
 SELECT
-	[q].[c1],
+	[q].[TotalCount],
 	[q].[RowNumber],
 	[q].[BookingID],
 	[q].[ServiceDate],
@@ -159,51 +159,54 @@ FROM
 	(
 		SELECT
 			ROW_NUMBER() OVER(ORDER BY [t].[ServiceDate] DESC, [t].[BookingID] DESC) as [RowNumber],
-			COUNT(*) OVER() as [c1],
+			COUNT(*) OVER() as [TotalCount],
 			[t].[BookingID],
 			[t].[ServiceDate],
 			[t].[Value] as [Value_1]
 		FROM
 			[Booking] [t]
 		WHERE
-			[t].[ServiceDate] > @ServiceDate
+			[t].[ServiceDate] > DateAdd(day, -2, @DateTime)
 	) [q]
 WHERE
 	[q].[RowNumber] <= @take
 
 BeforeExecute
 -- SqlServer.2005.MS SqlServer.2005
-DECLARE @ServiceDate DateTime
-SET     @ServiceDate = CAST('2020-02-27T17:54:55.123' AS DATETIME)
+DECLARE @DateTime DateTime
+SET     @DateTime = CAST('2020-02-29T17:54:55.123' AS DATETIME)
 DECLARE @cursorValue Int -- Int32
 SET     @cursorValue = 66
-DECLARE @take BigInt -- Int64
+DECLARE @take Int -- Int32
 SET     @take = 12
 
 WITH [CTE_1]
 (
-	[Cursor],
+	[Cursor_1],
 	[RowNumber],
-	[ServiceDate],
-	[Value]
+	[Data_BookingID],
+	[Data_ServiceDate],
+	[Data_Value]
 )
 AS
 (
 	SELECT
 		[t].[BookingID],
 		ROW_NUMBER() OVER(ORDER BY [t].[ServiceDate] DESC, [t].[BookingID] DESC),
+		[t].[BookingID],
 		[t].[ServiceDate],
 		[t].[Value]
 	FROM
 		[Booking] [t]
 	WHERE
-		[t].[ServiceDate] > @ServiceDate
+		[t].[ServiceDate] > DateAdd(day, -2, @DateTime)
 )
 SELECT
 	[q].[RowNumber],
-	[q].[Cursor],
-	[q].[ServiceDate],
-	[q].[Value]
+	[q].[Cursor_1],
+	[q].[Data_BookingID],
+	[q].[Data_ServiceDate],
+	[q].[Data_Value]
 FROM
 	[CTE_1] [q]
 WHERE
@@ -213,43 +216,46 @@ WHERE
 		FROM
 			[CTE_1] [c_1]
 		WHERE
-			[c_1].[Cursor] = @cursorValue AND [q].[RowNumber] > [c_1].[RowNumber] AND
+			[c_1].[Cursor_1] = @cursorValue AND [q].[RowNumber] > [c_1].[RowNumber] AND
 			[q].[RowNumber] <= [c_1].[RowNumber] + @take
 	)
 
 BeforeExecute
 -- SqlServer.2005.MS SqlServer.2005
-DECLARE @ServiceDate DateTime
-SET     @ServiceDate = CAST('2020-02-27T17:54:55.123' AS DATETIME)
+DECLARE @DateTime DateTime
+SET     @DateTime = CAST('2020-02-29T17:54:55.123' AS DATETIME)
 DECLARE @cursorValue Int -- Int32
 SET     @cursorValue = 30
-DECLARE @take BigInt -- Int64
+DECLARE @take Int -- Int32
 SET     @take = 12
 
 WITH [CTE_1]
 (
-	[Cursor],
+	[Cursor_1],
 	[RowNumber],
-	[ServiceDate],
-	[Value]
+	[Data_BookingID],
+	[Data_ServiceDate],
+	[Data_Value]
 )
 AS
 (
 	SELECT
 		[t].[BookingID],
 		ROW_NUMBER() OVER(ORDER BY [t].[ServiceDate] DESC, [t].[BookingID] DESC),
+		[t].[BookingID],
 		[t].[ServiceDate],
 		[t].[Value]
 	FROM
 		[Booking] [t]
 	WHERE
-		[t].[ServiceDate] > @ServiceDate
+		[t].[ServiceDate] > DateAdd(day, -2, @DateTime)
 )
 SELECT
 	[q].[RowNumber],
-	[q].[Cursor],
-	[q].[ServiceDate],
-	[q].[Value]
+	[q].[Cursor_1],
+	[q].[Data_BookingID],
+	[q].[Data_ServiceDate],
+	[q].[Data_Value]
 FROM
 	[CTE_1] [q]
 WHERE
@@ -259,43 +265,46 @@ WHERE
 		FROM
 			[CTE_1] [c_1]
 		WHERE
-			[c_1].[Cursor] = @cursorValue AND [q].[RowNumber] > [c_1].[RowNumber] AND
+			[c_1].[Cursor_1] = @cursorValue AND [q].[RowNumber] > [c_1].[RowNumber] AND
 			[q].[RowNumber] <= [c_1].[RowNumber] + @take
 	)
 
 BeforeExecute
 -- SqlServer.2005.MS SqlServer.2005
-DECLARE @ServiceDate DateTime
-SET     @ServiceDate = CAST('2020-02-27T17:54:55.123' AS DATETIME)
+DECLARE @DateTime DateTime
+SET     @DateTime = CAST('2020-02-29T17:54:55.123' AS DATETIME)
 DECLARE @cursorValue Int -- Int32
 SET     @cursorValue = 3
-DECLARE @take BigInt -- Int64
+DECLARE @take Int -- Int32
 SET     @take = 12
 
 WITH [CTE_1]
 (
-	[Cursor],
+	[Cursor_1],
 	[RowNumber],
-	[ServiceDate],
-	[Value]
+	[Data_BookingID],
+	[Data_ServiceDate],
+	[Data_Value]
 )
 AS
 (
 	SELECT
 		[t].[BookingID],
 		ROW_NUMBER() OVER(ORDER BY [t].[ServiceDate] DESC, [t].[BookingID] DESC),
+		[t].[BookingID],
 		[t].[ServiceDate],
 		[t].[Value]
 	FROM
 		[Booking] [t]
 	WHERE
-		[t].[ServiceDate] > @ServiceDate
+		[t].[ServiceDate] > DateAdd(day, -2, @DateTime)
 )
 SELECT
 	[q].[RowNumber],
-	[q].[Cursor],
-	[q].[ServiceDate],
-	[q].[Value]
+	[q].[Cursor_1],
+	[q].[Data_BookingID],
+	[q].[Data_ServiceDate],
+	[q].[Data_Value]
 FROM
 	[CTE_1] [q]
 WHERE
@@ -305,7 +314,7 @@ WHERE
 		FROM
 			[CTE_1] [c_1]
 		WHERE
-			[c_1].[Cursor] = @cursorValue AND [q].[RowNumber] > [c_1].[RowNumber] AND
+			[c_1].[Cursor_1] = @cursorValue AND [q].[RowNumber] > [c_1].[RowNumber] AND
 			[q].[RowNumber] <= [c_1].[RowNumber] + @take
 	)
 

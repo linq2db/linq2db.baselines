@@ -49,16 +49,17 @@ BeforeExecute
 -- Oracle.18.Managed Oracle.Managed Oracle12 (asynchronously)
 DECLARE @Id Int32
 SET     @Id = 2
-DECLARE @take Int32
-SET     @take = 1
+DECLARE @Id_1 Int32
+SET     @Id_1 = 2
 
 SELECT
-	c_1."Id" as "Value"
+	:Id as "Id",
+	c_1."Id" as "Id_1"
 FROM
 	"AsyncDataTable" c_1
 WHERE
-	c_1."Id" = :Id
-FETCH NEXT :take ROWS ONLY
+	c_1."Id" = :Id_1
+FETCH NEXT 1 ROWS ONLY
 
 BeforeExecute
 -- Oracle.18.Managed Oracle.Managed Oracle12

@@ -49,21 +49,22 @@ BeforeExecute
 UPDATE
 	[gt_s_one]
 SET
-	[gt_s_one].[col1] = [x].[col1],
-	[gt_s_one].[col2] = [x].[col2],
-	[gt_s_one].[col3] = Str_Replace([x].[col3], 'auth.', ''),
-	[gt_s_one].[col4] = [x].[col4],
-	[gt_s_one].[col5] = CASE
-		WHEN [x].[col3] = 'empty' THEN '1'
+	[col1] = [gt_s_one].[col1],
+	[col2] = [gt_s_one].[col2],
+	[col3] = Str_Replace([gt_s_one].[col3], 'auth.', ''),
+	[col4] = [gt_s_one].[col4],
+	[col5] = CASE
+		WHEN [gt_s_one].[col3] = 'empty' THEN '1'
 		ELSE '0'
 	END,
-	[gt_s_one].[col6] = CASE
-		WHEN [x].[col3] = 'empty' THEN ''
-		ELSE Convert(NVarChar(11), [am].[id])
+	[col6] = CASE
+		WHEN [gt_s_one].[col3] = 'empty' THEN ''
+		ELSE CAST([y1].[id] AS NVarChar(11))
 	END
 FROM
-	[gt_s_one] [x]
-		LEFT JOIN [access_mode] [am] ON (Upper(Str_Replace([x].[col3], 'auth.', '')) = Upper([am].[code]) OR Upper(Str_Replace([x].[col3], 'auth.', '')) IS NULL AND Upper([am].[code]) IS NULL)
+	[access_mode] [y1]
+WHERE
+	(Upper(Str_Replace([gt_s_one].[col3], 'auth.', '')) = Upper([y1].[code]) OR Upper(Str_Replace([gt_s_one].[col3], 'auth.', '')) IS NULL AND Upper([y1].[code]) IS NULL)
 
 BeforeExecute
 -- Sybase.Managed Sybase

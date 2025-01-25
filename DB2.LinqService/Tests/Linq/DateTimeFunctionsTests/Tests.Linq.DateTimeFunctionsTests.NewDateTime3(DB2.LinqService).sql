@@ -2,14 +2,9 @@
 -- DB2 DB2.LUW DB2LUW
 
 SELECT
-	"t"."c1"
+	CAST(LPad(Extract(year from "t"."DateTimeValue"), 4, '0') || '-10-01 20:35:44.000' AS timestamp)
 FROM
-	(
-		SELECT
-			TimeStamp(Lpad(To_Number(To_Char("p"."DateTimeValue", 'YYYY')),4,'0') || '-10-01 20:35:44') as "c1"
-		FROM
-			"LinqDataTypes" "p"
-	) "t"
+	"LinqDataTypes" "t"
 WHERE
-	To_Number(To_Char("t"."c1", 'MM')) = 10
+	Extract(month from CAST(LPad(Extract(year from "t"."DateTimeValue"), 4, '0') || '-10-01 20:35:44.000' AS timestamp)) = 10
 

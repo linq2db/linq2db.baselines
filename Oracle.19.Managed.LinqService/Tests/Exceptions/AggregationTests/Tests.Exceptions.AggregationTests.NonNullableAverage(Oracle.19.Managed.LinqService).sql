@@ -2,7 +2,7 @@
 -- Oracle.19.Managed Oracle.Managed Oracle12
 
 SELECT
-	Round(AVG(t1."ParentID"), 27)
+	AVG(t1."ParentID")
 FROM
 	"Parent" t1
 WHERE

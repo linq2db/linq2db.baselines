@@ -8,11 +8,9 @@ SET     @ID = 1
 UPDATE
 	[LinqDataTypes]
 SET
-	[t].[BinaryValue] = @BinaryValue
-FROM
-	[LinqDataTypes] [t]
+	[BinaryValue] = @BinaryValue
 WHERE
-	[t].[ID] = @ID
+	[LinqDataTypes].[ID] = @ID
 
 BeforeExecute
 -- Sybase.Managed Sybase
@@ -24,11 +22,9 @@ SET     @ID = 2
 UPDATE
 	[LinqDataTypes]
 SET
-	[t].[BinaryValue] = @BinaryValue
-FROM
-	[LinqDataTypes] [t]
+	[BinaryValue] = @BinaryValue
 WHERE
-	[t].[ID] = @ID
+	[LinqDataTypes].[ID] = @ID
 
 BeforeExecute
 -- Sybase.Managed Sybase

@@ -1,17 +1,14 @@
 ﻿BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @Parameter1 NVarChar(5) -- String
-SET     @Parameter1 = '2010-'
+DECLARE @year  -- Int32
+SET     @year = 2010
+DECLARE @year  -- Int32
+SET     @year = 2010
 
 SELECT
-	"t"."c1"
+	To_Timestamp(LPad(?, 4, '0') || '-' || LPad("t"."ID", 2, '0') || '-01 00:00:00.000')
 FROM
-	(
-		SELECT
-			Cast((? || Lpad("p"."ID",2,'0') || '-01') as Date) as "c1"
-		FROM
-			"LinqDataTypes" "p"
-	) "t"
+	"LinqDataTypes" "t"
 WHERE
-	Year("t"."c1") = 2010
+	Year(To_Timestamp(LPad(?, 4, '0') || '-' || LPad("t"."ID", 2, '0') || '-01 00:00:00.000')) = 2010
 

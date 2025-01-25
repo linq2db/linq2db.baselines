@@ -38,8 +38,6 @@ BeforeExecute
 -- Oracle.11.Managed Oracle11
 DECLARE @FirstName Varchar2(18) -- String
 SET     @FirstName = 'InsertColumnFilter'
-DECLARE @take Int32
-SET     @take = 1
 
 SELECT
 	x."FirstName",
@@ -50,7 +48,7 @@ SELECT
 FROM
 	"Person" x
 WHERE
-	x."FirstName" = :FirstName AND ROWNUM <= :take
+	x."FirstName" = :FirstName AND ROWNUM <= 1
 
 BeforeExecute
 -- Oracle.11.Managed Oracle11
@@ -64,20 +62,18 @@ DECLARE @ID Int32
 SET     @ID = 5
 
 UPDATE
-	"Person"
+	"Person" t1
 SET
-	"Person"."FirstName" = :FirstName,
-	"Person"."LastName" = :LastName,
-	"Person"."Gender" = :Gender
+	"FirstName" = :FirstName,
+	"LastName" = :LastName,
+	"Gender" = :Gender
 WHERE
-	"Person"."PersonID" = :ID
+	t1."PersonID" = :ID
 
 BeforeExecute
 -- Oracle.11.Managed Oracle11
 DECLARE @FirstName Varchar2(18) -- String
 SET     @FirstName = 'InsertColumnFilter'
-DECLARE @take Int32
-SET     @take = 1
 
 SELECT
 	x."FirstName",
@@ -88,7 +84,7 @@ SELECT
 FROM
 	"Person" x
 WHERE
-	x."FirstName" = :FirstName AND ROWNUM <= :take
+	x."FirstName" = :FirstName AND ROWNUM <= 1
 
 BeforeExecute
 -- Oracle.11.Managed Oracle11

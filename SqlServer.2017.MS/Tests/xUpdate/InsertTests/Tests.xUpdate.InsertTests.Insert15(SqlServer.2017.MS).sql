@@ -1,11 +1,11 @@
 ﻿BeforeExecute
 -- SqlServer.2017.MS SqlServer.2017
 
-DELETE [_]
+DELETE [t1]
 FROM
-	[Person] [_]
+	[Person] [t1]
 WHERE
-	[_].[FirstName] LIKE N'Insert15%' ESCAPE N'~'
+	[t1].[FirstName] LIKE N'Insert15%' ESCAPE N'~'
 
 BeforeExecute
 -- SqlServer.2017.MS SqlServer.2017
@@ -37,18 +37,18 @@ BeforeExecute
 -- SqlServer.2017.MS SqlServer.2017
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
-	[Person] [_]
+	[Person] [t1]
 WHERE
-	[_].[FirstName] LIKE N'Insert15%' ESCAPE N'~'
+	[t1].[FirstName] LIKE N'Insert15%' ESCAPE N'~'
 
 BeforeExecute
 -- SqlServer.2017.MS SqlServer.2017
 
-DELETE [_]
+DELETE [t1]
 FROM
-	[Person] [_]
+	[Person] [t1]
 WHERE
-	[_].[FirstName] LIKE N'Insert15%' ESCAPE N'~'
+	[t1].[FirstName] LIKE N'Insert15%' ESCAPE N'~'
 

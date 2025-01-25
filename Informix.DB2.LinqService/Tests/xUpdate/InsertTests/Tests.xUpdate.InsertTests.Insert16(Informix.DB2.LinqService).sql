@@ -30,7 +30,7 @@ BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	Person t1
 WHERE

@@ -86,7 +86,7 @@ BeforeExecute
 -- Oracle.11.Managed Oracle11
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	"Src" s
 WHERE
@@ -96,21 +96,17 @@ BeforeExecute
 -- Oracle.11.Managed Oracle11
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	"Src" s
-WHERE
-	1 = 1
 
 BeforeExecute
 -- Oracle.11.Managed Oracle11
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	"Src" s
-WHERE
-	1 = 1
 
 BeforeExecute
 -- Oracle.11.Managed Oracle11

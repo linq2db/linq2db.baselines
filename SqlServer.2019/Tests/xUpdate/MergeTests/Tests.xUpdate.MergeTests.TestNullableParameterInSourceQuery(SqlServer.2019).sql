@@ -37,18 +37,18 @@ BeforeExecute
 MERGE INTO [TestNullableParameterTarget] [Target]
 USING (
 	SELECT
-		2 as [source_field0],
-		[_].[Id]
+		2 as [source_Id1],
+		[t1].[Id] as [source_Id2]
 	FROM
-		[TestNullableParameterSource] [_]
+		[TestNullableParameterSource] [t1]
 	WHERE
-		[_].[Id] IS NULL
+		1 = 0
 ) [Source]
 (
-	[source_field0],
-	[Id]
+	[source_Id1],
+	[source_Id2]
 )
-ON ([Target].[Id1] = [Source].[source_field0] AND [Target].[Id2] = [Source].[Id])
+ON ([Target].[Id1] = [Source].[source_Id1] AND [Target].[Id2] = [Source].[source_Id2])
 
 WHEN NOT MATCHED THEN
 INSERT
@@ -58,8 +58,8 @@ INSERT
 )
 VALUES
 (
-	[Source].[source_field0],
-	[Source].[Id]
+	[Source].[source_Id1],
+	[Source].[source_Id2]
 )
 ;
 
@@ -71,18 +71,18 @@ SET     @id = 1
 MERGE INTO [TestNullableParameterTarget] [Target]
 USING (
 	SELECT
-		2 as [source_field0],
-		[_].[Id]
+		2 as [source_Id1],
+		[t1].[Id] as [source_Id2]
 	FROM
-		[TestNullableParameterSource] [_]
+		[TestNullableParameterSource] [t1]
 	WHERE
-		[_].[Id] = @id
+		[t1].[Id] = @id
 ) [Source]
 (
-	[source_field0],
-	[Id]
+	[source_Id1],
+	[source_Id2]
 )
-ON ([Target].[Id1] = [Source].[source_field0] AND [Target].[Id2] = [Source].[Id])
+ON ([Target].[Id1] = [Source].[source_Id1] AND [Target].[Id2] = [Source].[source_Id2])
 
 WHEN NOT MATCHED THEN
 INSERT
@@ -92,8 +92,8 @@ INSERT
 )
 VALUES
 (
-	[Source].[source_field0],
-	[Source].[Id]
+	[Source].[source_Id1],
+	[Source].[source_Id2]
 )
 ;
 

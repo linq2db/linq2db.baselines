@@ -226,15 +226,15 @@ BeforeExecute
 MERGE INTO [TestMerge1] [Target]
 USING (
 	SELECT
-		[_].[Id] as [OtherId]
+		[t1].[Id] as [source_select]
 	FROM
-		[TestMerge2] [_]
+		[TestMerge2] [t1]
 ) [Source]
 (
-	[OtherId]
+	[source_select]
 )
-ON ([Source].[OtherId] = [Target].[Id])
-WHEN MATCHED AND [Source].[OtherId] = 4 THEN DELETE
+ON ([Source].[source_select] = [Target].[Id])
+WHEN MATCHED AND [Source].[source_select] = 4 THEN DELETE
 ;
 
 BeforeExecute

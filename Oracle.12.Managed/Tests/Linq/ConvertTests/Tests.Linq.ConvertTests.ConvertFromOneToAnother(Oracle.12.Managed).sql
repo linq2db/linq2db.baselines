@@ -2,77 +2,65 @@
 -- Oracle.12.Managed Oracle.Managed Oracle12
 DECLARE @value Decimal(9, 5)
 SET     @value = 6579.64648
-DECLARE @take Int32
-SET     @take = 1
 
 SELECT
-	Cast(:value as Real)
+	CAST(:value AS Real) as "ServerConvert"
 FROM
 	"LinqDataTypes" t1
-FETCH NEXT :take ROWS ONLY
+FETCH NEXT 1 ROWS ONLY
 
 BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12
 DECLARE @value BinaryFloat -- Single
 SET     @value = 6579.64648
-DECLARE @take Int32
-SET     @take = 1
 
 SELECT
-	:value
+	CAST(:value AS Real) as "ServerConvert"
 FROM
 	"LinqDataTypes" t1
-FETCH NEXT :take ROWS ONLY
+FETCH NEXT 1 ROWS ONLY
 
 BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12
 DECLARE @value BinaryDouble -- Double
 SET     @value = 6579.6464800000003D
-DECLARE @take Int32
-SET     @take = 1
 
 SELECT
-	Cast(:value as Real)
+	CAST(:value AS Real) as "ServerConvert"
 FROM
 	"LinqDataTypes" t1
-FETCH NEXT :take ROWS ONLY
+FETCH NEXT 1 ROWS ONLY
 
 BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12
 DECLARE @value Decimal(9, 5)
 SET     @value = 6579.64648
-DECLARE @take Int32
-SET     @take = 1
 
 SELECT
-	Cast(:value as Float)
+	CAST(:value AS Float) as "ServerConvert"
 FROM
 	"LinqDataTypes" t1
-FETCH NEXT :take ROWS ONLY
+FETCH NEXT 1 ROWS ONLY
 
 BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12
 DECLARE @value BinaryFloat -- Single
 SET     @value = 6579.64648
-DECLARE @take Int32
-SET     @take = 1
 
 SELECT
-	Cast(:value as Float)
+	CAST(:value AS Float) as "ServerConvert"
 FROM
 	"LinqDataTypes" t1
-FETCH NEXT :take ROWS ONLY
+FETCH NEXT 1 ROWS ONLY
 
 BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12
 DECLARE @value BinaryDouble -- Double
 SET     @value = 6579.6464800000003D
-DECLARE @take Int32
-SET     @take = 1
 
 SELECT
-	:value
+	CAST(:value AS Float) as "ServerConvert"
 FROM
 	"LinqDataTypes" t1
-FETCH NEXT :take ROWS ONLY
+FETCH NEXT 1 ROWS ONLY
 

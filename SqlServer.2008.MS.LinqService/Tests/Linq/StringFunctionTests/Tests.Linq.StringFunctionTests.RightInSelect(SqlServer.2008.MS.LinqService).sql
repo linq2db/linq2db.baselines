@@ -2,7 +2,7 @@
 -- SqlServer.2008.MS SqlServer.2008
 
 SELECT
-	Right([p].[FirstName], 3)
+	RIGHT([p].[FirstName], 3)
 FROM
 	[Person] [p]
 WHERE

@@ -4,7 +4,7 @@ DECLARE @p Integer -- Int32
 SET     @p = 1
 
 SELECT
-	Count(*) > 0
+	IIF(COUNT(*) > 0, True, False)
 FROM
 	[Child] [c_1]
 WHERE
@@ -16,7 +16,7 @@ DECLARE @p Integer -- Int32
 SET     @p = -1
 
 SELECT
-	Count(*) > 0
+	IIF(COUNT(*) > 0, True, False)
 FROM
 	[Child] [c_1]
 WHERE

@@ -1,7 +1,5 @@
 ﻿BeforeExecute
 -- Oracle.11.Managed Oracle11
-DECLARE @take Int32
-SET     @take = 1
 
 SELECT
 	t1."ParentID",
@@ -15,6 +13,6 @@ WHERE
 		FROM
 			"Parent" r
 		WHERE
-			ROWNUM <= :take
+			ROWNUM <= 1
 	) IS NOT NULL
 

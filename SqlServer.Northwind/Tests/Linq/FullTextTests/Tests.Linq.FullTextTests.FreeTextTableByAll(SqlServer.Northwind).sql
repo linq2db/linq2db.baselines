@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- SqlServer.Northwind SqlServer.2019
-DECLARE @p NVarChar(4000) -- String
-SET     @p = N'seafood bread'
+DECLARE @term NVarChar(4000) -- String
+SET     @term = N'seafood bread'
 
 SELECT
 	[c_1].[CategoryID],
@@ -10,7 +10,7 @@ SELECT
 	[c_1].[Picture]
 FROM
 	[Categories] [c_1]
-		INNER JOIN FREETEXTTABLE([Categories], *, @p) [t] ON [c_1].[CategoryID] = [t].[KEY]
+		INNER JOIN FREETEXTTABLE([Categories], *, @term) [t] ON [c_1].[CategoryID] = [t].[KEY]
 ORDER BY
 	[t].[RANK] DESC
 

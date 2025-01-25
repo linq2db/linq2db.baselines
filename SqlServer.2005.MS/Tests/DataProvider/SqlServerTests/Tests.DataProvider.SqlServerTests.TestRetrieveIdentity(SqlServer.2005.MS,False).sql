@@ -84,9 +84,9 @@ BeforeExecute
 -- SqlServer.2005.MS SqlServer.2005
 
 SELECT
-	Max([_].[PersonID])
+	MAX([t1].[PersonID])
 FROM
-	[Person] [_]
+	[Person] [t1]
 
 BeforeExecute
 -- SqlServer.2005.MS SqlServer.2005

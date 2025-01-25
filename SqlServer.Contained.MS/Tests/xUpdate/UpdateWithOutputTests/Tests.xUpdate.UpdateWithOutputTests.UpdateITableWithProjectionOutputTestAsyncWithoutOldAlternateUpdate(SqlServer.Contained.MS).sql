@@ -74,13 +74,13 @@ BeforeExecute
 -- SqlServer.Contained.MS SqlServer.2019 (asynchronously)
 
 UPDATE
-	[DestinationTable]
+	[t]
 SET
-	[DestinationTable].[Id] = [s].[Id],
-	[DestinationTable].[Value] = [s].[Value],
-	[DestinationTable].[ValueStr] = [s].[ValueStr]
+	[t].[Id] = [s].[Id],
+	[t].[Value] = [s].[Value],
+	[t].[ValueStr] = [s].[ValueStr]
 OUTPUT
-	[INSERTED].[Value]
+	INSERTED.[Value]
 FROM
 	[TableWithData] [s]
 		INNER JOIN [DestinationTable] [t] ON [t].[Id] = [s].[Id]

@@ -7,7 +7,16 @@ SELECT
 FROM
 	Parent p
 WHERE
-	p.Value1 <= toInt32(2)
+	p.Value1 <= 2
+
+BeforeExecute
+-- ClickHouse.Client ClickHouse
+
+SELECT
+	t1.ParentID,
+	t1.Value1
+FROM
+	Parent t1
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
@@ -18,7 +27,16 @@ SELECT
 FROM
 	Parent p
 WHERE
-	(p.Value1 > toInt32(2) OR p.Value1 IS NULL)
+	(p.Value1 > 2 OR p.Value1 IS NULL)
+
+BeforeExecute
+-- ClickHouse.Client ClickHouse
+
+SELECT
+	t1.ParentID,
+	t1.Value1
+FROM
+	Parent t1
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
@@ -29,7 +47,16 @@ SELECT
 FROM
 	Parent p
 WHERE
-	toInt32(2) >= p.Value1
+	2 >= p.Value1
+
+BeforeExecute
+-- ClickHouse.Client ClickHouse
+
+SELECT
+	t1.ParentID,
+	t1.Value1
+FROM
+	Parent t1
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
@@ -40,5 +67,14 @@ SELECT
 FROM
 	Parent p
 WHERE
-	(toInt32(2) < p.Value1 OR p.Value1 IS NULL)
+	(2 < p.Value1 OR p.Value1 IS NULL)
+
+BeforeExecute
+-- ClickHouse.Client ClickHouse
+
+SELECT
+	t1.ParentID,
+	t1.Value1
+FROM
+	Parent t1
 

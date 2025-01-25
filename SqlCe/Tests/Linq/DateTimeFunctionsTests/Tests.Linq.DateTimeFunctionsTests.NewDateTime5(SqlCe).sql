@@ -2,14 +2,9 @@
 -- SqlCe
 
 SELECT
-	[t].[c1]
+	CAST(REPLICATE('0', 4 - LEN(CAST(DatePart(year, [t].[DateTimeValue]) + 1 AS NVarChar(4)))) + CAST(DatePart(year, [t].[DateTimeValue]) + 1 AS NVarChar(4)) + '-10-01' AS DateTime) as [c1]
 FROM
-	(
-		SELECT
-			Convert(Datetime, REPLICATE('0', 4 - LEN(CAST((DatePart(year, [p].[DateTimeValue]) + 1) as NVARCHAR(4)))) + CAST((DatePart(year, [p].[DateTimeValue]) + 1) as NVARCHAR(4)) + '-10-01') as [c1]
-		FROM
-			[LinqDataTypes] [p]
-	) [t]
+	[LinqDataTypes] [t]
 WHERE
-	DatePart(month, [t].[c1]) = 10
+	DatePart(month, CAST(REPLICATE('0', 4 - LEN(CAST(DatePart(year, [t].[DateTimeValue]) + 1 AS NVarChar(4)))) + CAST(DatePart(year, [t].[DateTimeValue]) + 1 AS NVarChar(4)) + '-10-01' AS DateTime)) = 10
 

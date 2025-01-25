@@ -2,14 +2,9 @@
 -- Informix.DB2 Informix
 
 SELECT
-	d.c1
+	Extend(d.DateTimeValue, Year to Day)
 FROM
-	(
-		SELECT
-			t.DateTimeValue as c1
-		FROM
-			LinqDataTypes t
-	) d
+	LinqDataTypes d
 WHERE
-	Day(d.c1) > 0
+	Day(d.DateTimeValue) > 0
 

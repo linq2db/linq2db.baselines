@@ -1,7 +1,5 @@
 ﻿BeforeExecute
 -- SqlCe
-DECLARE @id Int -- Int32
-SET     @id = 1001
 
 INSERT INTO [Child]
 (
@@ -11,7 +9,7 @@ INSERT INTO [Child]
 VALUES
 (
 	1,
-	@id
+	1001
 )
 
 BeforeExecute
@@ -20,7 +18,7 @@ DECLARE @id Int -- Int32
 SET     @id = 1001
 
 SELECT
-	Count(*)
+	COUNT(*) as [COUNT_1]
 FROM
 	[Child] [c_1]
 WHERE
@@ -36,7 +34,7 @@ SET     @id = 1001
 UPDATE
 	[Child]
 SET
-	[Child].[ChildID] = @ChildID
+	[ChildID] = @ChildID
 WHERE
 	EXISTS(
 		SELECT
@@ -55,7 +53,7 @@ BeforeExecute
 -- SqlCe
 
 SELECT
-	Count(*)
+	COUNT(*) as [COUNT_1]
 FROM
 	[Child] [c_1]
 WHERE

@@ -207,8 +207,9 @@ BeforeExecute
 -- SQLite.Classic SQLite
 
 SELECT
-	[lw_MainItem].[Id],
-	[i].[Id]
+	[m_2].[Id],
+	[d].[Id],
+	'QueryResult' || [d].[Id]
 FROM
 	(
 		SELECT DISTINCT
@@ -217,9 +218,11 @@ FROM
 			[MainItem] [m_1]
 		WHERE
 			[m_1].[Id] > 1
-	) [lw_MainItem]
-		INNER JOIN [SubItem1] [i] ON [lw_MainItem].[Id] = [i].[ParentId] AND [i].[Id] % 2 = 0
-		INNER JOIN [MainItem2] [mm] ON [i].[Id] / 10 = [mm].[Id]
+	) [m_2]
+		INNER JOIN [SubItem1] [d] ON [m_2].[Id] = [d].[ParentId]
+		INNER JOIN [MainItem2] [mm] ON [d].[Id] / 10 = [mm].[Id]
+WHERE
+	[d].[Id] % 2 = 0
 
 BeforeExecute
 DisposeTransaction
@@ -240,20 +243,16 @@ BeforeExecute
 -- SQLite.Classic SQLite
 
 SELECT
-	[lw_SubItem1].[Id_1],
-	[lw_SubItem1].[Id],
-	[lw_SubItem1].[Value_1],
-	[lw_SubItem1].[ParentId],
-	[c_1].[Id],
-	[c_1].[Value],
-	[c_1].[ParentId]
+	[m_2].[Id],
+	[m_2].[Id_1],
+	[d_1].[Id],
+	[d_1].[Value],
+	[d_1].[ParentId]
 FROM
 	(
 		SELECT DISTINCT
-			[detail].[Id],
-			[lw_MainItem].[Id] as [Id_1],
-			[detail].[Value] as [Value_1],
-			[detail].[ParentId]
+			[d].[Id],
+			[t1].[Id] as [Id_1]
 		FROM
 			(
 				SELECT DISTINCT
@@ -262,19 +261,19 @@ FROM
 					[MainItem] [m_1]
 				WHERE
 					[m_1].[Id] > 1
-			) [lw_MainItem]
-				INNER JOIN [SubItem1] [detail] ON [lw_MainItem].[Id] = [detail].[ParentId]
-	) [lw_SubItem1]
-		INNER JOIN [SubItem1_Sub] [c_1] ON [lw_SubItem1].[Id] = [c_1].[ParentId] AND [c_1].[Id] = 1
+			) [t1]
+				INNER JOIN [SubItem1] [d] ON [t1].[Id] = [d].[ParentId]
+	) [m_2]
+		INNER JOIN [SubItem1_Sub] [d_1] ON [m_2].[Id] = [d_1].[ParentId]
 
 BeforeExecute
 -- SQLite.Classic SQLite
 
 SELECT
-	[lw_MainItem].[Id],
-	[detail].[Id],
-	[detail].[Value],
-	[detail].[ParentId]
+	[m_2].[Id],
+	[d].[Id],
+	[d].[Value],
+	[d].[ParentId]
 FROM
 	(
 		SELECT DISTINCT
@@ -283,8 +282,8 @@ FROM
 			[MainItem] [m_1]
 		WHERE
 			[m_1].[Id] > 1
-	) [lw_MainItem]
-		INNER JOIN [SubItem1] [detail] ON [lw_MainItem].[Id] = [detail].[ParentId]
+	) [m_2]
+		INNER JOIN [SubItem1] [d] ON [m_2].[Id] = [d].[ParentId]
 
 BeforeExecute
 DisposeTransaction
@@ -306,11 +305,11 @@ SELECT
 	[s].[Id],
 	[s].[Value],
 	[s].[ParentId],
-	[p].[Id],
-	[p].[Value]
+	[a_Parent].[Id],
+	[a_Parent].[Value]
 FROM
 	[SubItem1] [s]
-		LEFT JOIN [MainItem] [p] ON [s].[ParentId] = [p].[Id] AND [p].[Id] % 3 = 0
+		LEFT JOIN [MainItem] [a_Parent] ON [s].[ParentId] = [a_Parent].[Id] AND [a_Parent].[Id] % 3 = 0
 
 BeforeExecute
 -- SQLite.Classic SQLite

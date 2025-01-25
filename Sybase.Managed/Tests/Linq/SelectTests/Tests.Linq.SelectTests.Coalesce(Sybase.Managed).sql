@@ -3,8 +3,8 @@
 
 SELECT
 	[p].[PersonID],
-	Coalesce([p].[FirstName], 'None'),
-	Coalesce([p].[MiddleName], 'None')
+	[p].[FirstName],
+	[p].[MiddleName]
 FROM
 	[Person] [p]
 WHERE

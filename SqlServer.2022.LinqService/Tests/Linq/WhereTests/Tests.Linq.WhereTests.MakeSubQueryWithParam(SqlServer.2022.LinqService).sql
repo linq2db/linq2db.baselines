@@ -2,14 +2,12 @@
 -- SqlServer.2022
 DECLARE @n Int -- Int32
 SET     @n = 1
-DECLARE @n_1 Int -- Int32
-SET     @n_1 = 1
 
 SELECT
-	[p].[PersonID] + @n,
+	([p].[PersonID] + @n) - 1,
 	[p].[FirstName]
 FROM
 	[Person] [p]
 WHERE
-	[p].[PersonID] = @n_1
+	[p].[PersonID] + @n = 2
 

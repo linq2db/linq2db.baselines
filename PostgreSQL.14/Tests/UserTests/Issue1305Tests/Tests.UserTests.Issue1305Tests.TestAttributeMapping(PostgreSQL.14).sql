@@ -276,22 +276,22 @@ BeginTransaction
 BeforeExecute
 -- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
 
-SELECT * FROM testdata."public"."GetParentByID"(NULL::integer)
+SELECT * FROM testdata.public."GetParentByID"(NULL::integer)
 
 BeforeExecute
 -- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
 
-SELECT * FROM testdata."public"."TestTableFunction1"(NULL::integer,NULL::integer)
+SELECT * FROM testdata.public."TestTableFunction1"(NULL::integer,NULL::integer)
 
 BeforeExecute
 -- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
 
-SELECT * FROM testdata."public"."TestTableFunctionSchema"()
+SELECT * FROM testdata.public."TestTableFunctionSchema"()
 
 BeforeExecute
 -- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
 
-SELECT * FROM testdata."public"."TestTableFunction"(NULL::integer)
+SELECT * FROM testdata.public."TestTableFunction"(NULL::integer)
 
 BeforeExecute
 RollbackTransaction

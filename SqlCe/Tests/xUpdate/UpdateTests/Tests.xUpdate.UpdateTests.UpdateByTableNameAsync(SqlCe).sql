@@ -47,18 +47,16 @@ BeforeExecute
 -- SqlCe (asynchronously)
 
 SELECT
-	Count(*)
+	COUNT(*) as [COUNT_1]
 FROM
 	[xxPerson] [t1]
 
 BeforeExecute
 -- SqlCe (asynchronously)
-DECLARE @take Int -- Int32
-SET     @take = 2
 
-SELECT TOP (@take)
+SELECT TOP (2)
 	[t1].[FirstName],
-	[t1].[PersonID],
+	[t1].[PersonID] as [ID],
 	[t1].[LastName],
 	[t1].[MiddleName],
 	[t1].[Gender]
@@ -81,21 +79,19 @@ SET     @ID = 1
 UPDATE
 	[xxPerson]
 SET
-	[xxPerson].[FirstName] = @FirstName,
-	[xxPerson].[LastName] = @LastName,
-	[xxPerson].[MiddleName] = @MiddleName,
-	[xxPerson].[Gender] = @Gender
+	[FirstName] = @FirstName,
+	[LastName] = @LastName,
+	[MiddleName] = @MiddleName,
+	[Gender] = @Gender
 WHERE
 	[xxPerson].[PersonID] = @ID
 
 BeforeExecute
 -- SqlCe (asynchronously)
-DECLARE @take Int -- Int32
-SET     @take = 2
 
-SELECT TOP (@take)
+SELECT TOP (2)
 	[t1].[FirstName],
-	[t1].[PersonID],
+	[t1].[PersonID] as [ID],
 	[t1].[LastName],
 	[t1].[MiddleName],
 	[t1].[Gender]

@@ -2,9 +2,9 @@
 -- ClickHouse.Client ClickHouse
 
 SELECT
-	t.MoneyValue
+	p.MoneyValue
 FROM
-	LinqDataTypes t
+	LinqDataTypes p
 WHERE
-	(t.BoolValue <> false)
+	p.BoolValue <> false
 

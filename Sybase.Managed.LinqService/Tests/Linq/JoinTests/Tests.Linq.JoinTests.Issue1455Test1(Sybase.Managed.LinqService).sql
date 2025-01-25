@@ -11,9 +11,9 @@ IF (OBJECT_ID(N'Alert') IS NULL)
 	EXECUTE('
 		CREATE TABLE [Alert]
 		(
-			[AlertKey]     NVarChar(255)     NULL,
-			[AlertCode]    NVarChar(255)     NULL,
-			[CreationDate] DateTime          NULL
+			[AlertKey]     NVarChar(255) NOT NULL,
+			[AlertCode]    NVarChar(255) NOT NULL,
+			[CreationDate] DateTime      NOT NULL
 		)
 	')
 
@@ -30,9 +30,9 @@ IF (OBJECT_ID(N'AuditAlert') IS NULL)
 	EXECUTE('
 		CREATE TABLE [AuditAlert]
 		(
-			[AlertKey]        NVarChar(255)     NULL,
-			[AlertCode]       NVarChar(255)     NULL,
-			[CreationDate]    DateTime          NULL,
+			[AlertKey]        NVarChar(255) NOT NULL,
+			[AlertCode]       NVarChar(255) NOT NULL,
+			[CreationDate]    DateTime      NOT NULL,
 			[TransactionDate] DateTime          NULL
 		)
 	')
@@ -108,33 +108,103 @@ DECLARE @cpty_1 UniVarChar(3) -- String
 SET     @cpty_1 = '%C%'
 DECLARE @cpty_2 UniVarChar(3) -- String
 SET     @cpty_2 = '%C%'
+DECLARE @cpty_3 UniVarChar(3) -- String
+SET     @cpty_3 = '%C%'
+DECLARE @cpty_4 UniVarChar(3) -- String
+SET     @cpty_4 = '%C%'
+DECLARE @cpty_5 UniVarChar(3) -- String
+SET     @cpty_5 = '%C%'
 
 SELECT
-	[al_1].[alert],
-	[al_1].[alert_1],
-	[al_1].[alert_2]
+	[m_1].[AlertKey],
+	[m_1].[AlertCode],
+	[m_1].[CreationDate],
+	[nomin_2].[CargoId],
+	[nomin_2].[DeliveryId],
+	[nomin_2].[DeliveryCounterParty],
+	[trade_2].[DealId],
+	[trade_2].[ParcelId],
+	[trade_2].[CounterParty],
+	[d].[LastUpdate]
+FROM
+	(
+		SELECT DISTINCT
+			[t1].[AlertKey],
+			[t1].[AlertCode],
+			[t1].[CreationDate]
+		FROM
+			(
+				SELECT
+					[al_group].[AlertKey],
+					[al_group].[AlertCode],
+					[al_group].[CreationDate]
+				FROM
+					[Alert] [al_group]
+						LEFT JOIN [AuditAlert] [au] ON [au].[AlertKey] = [al_group].[AlertKey]
+				GROUP BY
+					[al_group].[AlertKey],
+					[al_group].[AlertCode],
+					[al_group].[CreationDate]
+			) [t1]
+				LEFT JOIN [Trade] [trade_1] ON [t1].[AlertKey] = CAST([trade_1].[DealId] AS NVarChar(11))
+				LEFT JOIN [Nomin] [nomin_1] ON [t1].[AlertKey] = CAST([nomin_1].[CargoId] AS NVarChar(11))
+		WHERE
+			([nomin_1].[DeliveryCounterParty] LIKE @cpty ESCAPE '~' OR [trade_1].[CounterParty] LIKE @cpty_1 ESCAPE '~' OR [t1].[AlertCode] LIKE @cpty_2 ESCAPE '~')
+	) [m_1]
+		INNER JOIN (
+			SELECT
+				[al_group_1].[AlertKey],
+				[al_group_1].[AlertCode],
+				[al_group_1].[CreationDate],
+				Coalesce(MAX([au_1].[TransactionDate]), [al_group_1].[CreationDate]) as [LastUpdate]
+			FROM
+				[Alert] [al_group_1]
+					LEFT JOIN [AuditAlert] [au_1] ON [au_1].[AlertKey] = [al_group_1].[AlertKey]
+			GROUP BY
+				[al_group_1].[AlertKey],
+				[al_group_1].[AlertCode],
+				[al_group_1].[CreationDate]
+		) [d] ON [m_1].[AlertKey] = [d].[AlertKey] AND [m_1].[AlertCode] = [d].[AlertCode] AND [m_1].[CreationDate] = [d].[CreationDate]
+		LEFT JOIN [Trade] [trade_2] ON [d].[AlertKey] = CAST([trade_2].[DealId] AS NVarChar(11))
+		LEFT JOIN [Nomin] [nomin_2] ON [d].[AlertKey] = CAST([nomin_2].[CargoId] AS NVarChar(11))
+WHERE
+	([nomin_2].[DeliveryCounterParty] LIKE @cpty_3 ESCAPE '~' OR [trade_2].[CounterParty] LIKE @cpty_4 ESCAPE '~' OR [d].[AlertCode] LIKE @cpty_5 ESCAPE '~')
+
+BeforeExecute
+-- Sybase.Managed Sybase
+DECLARE @cpty UniVarChar(3) -- String
+SET     @cpty = '%C%'
+DECLARE @cpty_1 UniVarChar(3) -- String
+SET     @cpty_1 = '%C%'
+DECLARE @cpty_2 UniVarChar(3) -- String
+SET     @cpty_2 = '%C%'
+
+SELECT
+	[al_group_1].[AlertKey],
+	[al_group_1].[AlertCode],
+	[al_group_1].[CreationDate]
 FROM
 	(
 		SELECT
-			[al].[AlertKey] as [alert],
-			[al].[AlertCode] as [alert_1],
-			[al].[CreationDate] as [alert_2]
+			[al_group].[AlertKey],
+			[al_group].[AlertCode],
+			[al_group].[CreationDate]
 		FROM
-			[Alert] [al]
-				LEFT JOIN [AuditAlert] [au1] ON ([au1].[AlertKey] = [al].[AlertKey] OR [au1].[AlertKey] IS NULL AND [al].[AlertKey] IS NULL) AND ([au1].[AlertCode] = [au1].[AlertCode] OR [au1].[AlertCode] IS NULL AND [au1].[AlertCode] IS NULL)
+			[Alert] [al_group]
+				LEFT JOIN [AuditAlert] [au] ON [au].[AlertKey] = [al_group].[AlertKey]
 		GROUP BY
-			[al].[AlertKey],
-			[al].[AlertCode],
-			[al].[CreationDate]
-	) [al_1]
-		LEFT JOIN [Trade] [trade1] ON [al_1].[alert] = Convert(NVarChar(11), [trade1].[DealId])
-		LEFT JOIN [Nomin] [nomin1] ON [al_1].[alert] = Convert(NVarChar(11), [nomin1].[CargoId])
+			[al_group].[AlertKey],
+			[al_group].[AlertCode],
+			[al_group].[CreationDate]
+	) [al_group_1]
+		LEFT JOIN [Trade] [trade_1] ON [al_group_1].[AlertKey] = CAST([trade_1].[DealId] AS NVarChar(11))
+		LEFT JOIN [Nomin] [nomin_1] ON [al_group_1].[AlertKey] = CAST([nomin_1].[CargoId] AS NVarChar(11))
 WHERE
-	(([nomin1].[DeliveryCounterParty] LIKE @cpty ESCAPE '~' OR [trade1].[CounterParty] LIKE @cpty_1 ESCAPE '~') OR [al_1].[alert_1] LIKE @cpty_2 ESCAPE '~')
+	([nomin_1].[DeliveryCounterParty] LIKE @cpty ESCAPE '~' OR [trade_1].[CounterParty] LIKE @cpty_1 ESCAPE '~' OR [al_group_1].[AlertCode] LIKE @cpty_2 ESCAPE '~')
 GROUP BY
-	[al_1].[alert],
-	[al_1].[alert_1],
-	[al_1].[alert_2]
+	[al_group_1].[AlertKey],
+	[al_group_1].[AlertCode],
+	[al_group_1].[CreationDate]
 
 BeforeExecute
 -- Sybase.Managed Sybase

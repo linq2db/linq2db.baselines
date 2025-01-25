@@ -20,7 +20,7 @@ INSERT INTO SimpleBulkCopyTable
 	Id
 )
 VALUES
-(toInt32(1))
+(1)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse (asynchronously)
@@ -30,39 +30,7 @@ INSERT INTO SimpleBulkCopyTable
 	Id
 )
 VALUES
-(toInt32(2))
-
-BeforeExecute
--- ClickHouse.MySql ClickHouse (asynchronously)
-
-INSERT INTO SimpleBulkCopyTable
-(
-	Id
-)
-VALUES
-(
-	toInt32(3)
-)
-
-BeforeExecute
--- ClickHouse.MySql ClickHouse (asynchronously)
-
-INSERT INTO SimpleBulkCopyTable
-(
-	Id
-)
-VALUES
-(toInt32(10))
-
-BeforeExecute
--- ClickHouse.MySql ClickHouse (asynchronously)
-
-INSERT INTO SimpleBulkCopyTable
-(
-	Id
-)
-VALUES
-(toInt32(20))
+(2)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse (asynchronously)
@@ -73,7 +41,39 @@ INSERT INTO SimpleBulkCopyTable
 )
 VALUES
 (
-	toInt32(30)
+	3
+)
+
+BeforeExecute
+-- ClickHouse.MySql ClickHouse (asynchronously)
+
+INSERT INTO SimpleBulkCopyTable
+(
+	Id
+)
+VALUES
+(10)
+
+BeforeExecute
+-- ClickHouse.MySql ClickHouse (asynchronously)
+
+INSERT INTO SimpleBulkCopyTable
+(
+	Id
+)
+VALUES
+(20)
+
+BeforeExecute
+-- ClickHouse.MySql ClickHouse (asynchronously)
+
+INSERT INTO SimpleBulkCopyTable
+(
+	Id
+)
+VALUES
+(
+	30
 )
 
 BeforeExecute

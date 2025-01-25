@@ -488,7 +488,7 @@ BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014
 
 SELECT
-	DateAdd(minute, 5, [t].[TransactionDate])
+	DatePart(minute, DateAdd(minute, 5, [t].[TransactionDate]))
 FROM
 	[Transactions] [t]
 

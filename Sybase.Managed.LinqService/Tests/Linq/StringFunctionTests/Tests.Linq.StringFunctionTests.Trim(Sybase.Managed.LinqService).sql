@@ -2,11 +2,10 @@
 -- Sybase.Managed Sybase
 
 SELECT
-	[p].[PersonID],
-	[p].[FirstName]
+	[pp].[PersonID],
+	'  ' + [pp].[FirstName] + ' '
 FROM
-	[Person] [p]
+	[Person] [pp]
 WHERE
-	LTrim(RTrim('  ' + [p].[FirstName] + ' ')) = 'John' AND
-	[p].[PersonID] = 1
+	[pp].[PersonID] = 1 AND LTrim(RTrim('  ' + [pp].[FirstName] + ' ')) = 'John'
 

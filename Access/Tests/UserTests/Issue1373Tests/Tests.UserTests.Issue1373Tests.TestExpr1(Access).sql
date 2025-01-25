@@ -16,8 +16,6 @@ CREATE TABLE [Issue1373Tests]
 
 BeforeExecute
 -- Access AccessOleDb
-DECLARE @Field1 VarWChar -- String
-SET     @Field1 = NULL
 
 INSERT INTO [Issue1373Tests]
 (
@@ -27,7 +25,7 @@ INSERT INTO [Issue1373Tests]
 VALUES
 (
 	1,
-	@Field1
+	NULL
 )
 
 BeforeExecute

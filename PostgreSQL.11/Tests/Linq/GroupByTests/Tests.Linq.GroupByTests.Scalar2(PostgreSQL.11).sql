@@ -2,10 +2,10 @@
 -- PostgreSQL.11 PostgreSQL.9.5 PostgreSQL
 
 SELECT
-	Max(t1."ChildID"),
-	Max(t1."ChildID" + t1."ParentID")
+	MAX(g_1."ChildID"),
+	MAX(g_1."ChildID" + g_1."ParentID")
 FROM
-	"Child" t1
+	"Child" g_1
 GROUP BY
-	t1."ParentID"
+	g_1."ParentID"
 

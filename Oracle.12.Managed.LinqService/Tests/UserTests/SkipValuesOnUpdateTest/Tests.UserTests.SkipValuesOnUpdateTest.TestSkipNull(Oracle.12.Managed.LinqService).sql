@@ -55,8 +55,6 @@ VALUES
 
 BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12
-DECLARE @take Int32
-SET     @take = 1
 
 SELECT
 	t."Id",
@@ -66,7 +64,7 @@ FROM
 	"PR_1598_Update_Null_Table" t
 WHERE
 	t."Id" = 1
-FETCH NEXT :take ROWS ONLY
+FETCH NEXT 1 ROWS ONLY
 
 BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12
@@ -78,17 +76,15 @@ DECLARE @Id Int32
 SET     @Id = 1
 
 UPDATE
-	"PR_1598_Update_Null_Table"
+	"PR_1598_Update_Null_Table" t1
 SET
-	"PR_1598_Update_Null_Table"."Name" = :Name,
-	"PR_1598_Update_Null_Table"."Age" = :Age
+	"Name" = :Name,
+	"Age" = :Age
 WHERE
-	"PR_1598_Update_Null_Table"."Id" = :Id
+	t1."Id" = :Id
 
 BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12
-DECLARE @take Int32
-SET     @take = 1
 
 SELECT
 	t."Id",
@@ -98,7 +94,7 @@ FROM
 	"PR_1598_Update_Null_Table" t
 WHERE
 	t."Id" = 1
-FETCH NEXT :take ROWS ONLY
+FETCH NEXT 1 ROWS ONLY
 
 BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12
@@ -108,16 +104,14 @@ DECLARE @Id Int32
 SET     @Id = 1
 
 UPDATE
-	"PR_1598_Update_Null_Table"
+	"PR_1598_Update_Null_Table" t1
 SET
-	"PR_1598_Update_Null_Table"."Name" = :Name
+	"Name" = :Name
 WHERE
-	"PR_1598_Update_Null_Table"."Id" = :Id
+	t1."Id" = :Id
 
 BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12
-DECLARE @take Int32
-SET     @take = 1
 
 SELECT
 	t."Id",
@@ -127,7 +121,7 @@ FROM
 	"PR_1598_Update_Null_Table" t
 WHERE
 	t."Id" = 1
-FETCH NEXT :take ROWS ONLY
+FETCH NEXT 1 ROWS ONLY
 
 BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12

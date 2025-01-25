@@ -24,11 +24,11 @@ DECLARE @ParentID Integer(4) -- Int32
 SET     @ParentID = 1001
 
 UPDATE
-	Parent
+	Parent t1
 SET
-	Parent.Value1 = @Value1
+	Value1 = @Value1
 WHERE
-	Parent.ParentID = @ParentID
+	t1.ParentID = @ParentID
 
 BeforeExecute
 -- Informix.DB2 Informix

@@ -4,7 +4,7 @@ DECLARE @p Integer -- Int32
 SET     @p = 11
 
 SELECT
-	DateAdd('yyyy', @p, [t].[DateTimeValue])
+	DateValue(DateAdd('yyyy', @p, [t].[DateTimeValue]))
 FROM
 	[LinqDataTypes] [t]
 

@@ -2,7 +2,7 @@
 -- PostgreSQL.11 PostgreSQL.9.5 PostgreSQL
 
 SELECT
-	Cast(To_Char(t."DateTimeValue", 'MS') as int)
+	To_Char(t."DateTimeValue", 'MS')::Int
 FROM
 	"LinqDataTypes" t
 

@@ -3,13 +3,12 @@
 
 SELECT
 	CASE
-		WHEN (p."FirstName" IS NULL OR Length(p."FirstName") = 0)
-			THEN True
+		WHEN p."FirstName" IS NULL OR Length(p."FirstName") = 0 THEN True
 		ELSE False
 	END,
 	p."FirstName",
 	CASE
-		WHEN (p."MiddleName" IS NULL OR Length(p."MiddleName") = 0)
+		WHEN p."MiddleName" IS NULL OR Length(p."MiddleName") = 0
 			THEN True
 		ELSE False
 	END,

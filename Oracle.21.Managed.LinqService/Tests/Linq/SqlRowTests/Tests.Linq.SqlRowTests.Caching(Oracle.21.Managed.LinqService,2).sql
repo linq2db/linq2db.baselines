@@ -72,7 +72,7 @@ DECLARE @r3 Int32
 SET     @r3 = 2
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	"Ints" i
 WHERE

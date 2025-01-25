@@ -6,29 +6,25 @@ DECLARE @id2  -- Int32
 SET     @id2 = 2
 
 SELECT
-	"lr"."ParentID",
-	"lr"."Value1",
-	"t1"."ParentID",
-	"t1"."Value1"
+	"left_2"."left_1",
+	"t1"."ParentID"
 FROM
 	(
 		SELECT
-			"p"."ParentID",
-			"p"."Value1"
+			"left_1"."ParentID" as "left_1"
 		FROM
-			"Parent" "p"
+			"Parent" "left_1"
 		WHERE
-			"p"."ParentID" <> ?
-	) "lr"
+			"left_1"."ParentID" <> ?
+	) "left_2"
 		FULL JOIN (
 			SELECT
-				"p_1"."ParentID",
-				"p_1"."Value1"
+				"right_1"."ParentID"
 			FROM
-				"Parent" "p_1"
+				"Parent" "right_1"
 			WHERE
-				"p_1"."ParentID" <> ?
-		) "t1" ON "t1"."ParentID" = "lr"."ParentID"
+				"right_1"."ParentID" <> ?
+		) "t1" ON "t1"."ParentID" = "left_2"."left_1"
 ORDER BY
-	"lr"."ParentID"
+	"left_2"."left_1"
 

@@ -58,8 +58,8 @@ INSERT INTO T3
 )
 VALUES
 (
-	toInt32(1),
-	toInt32(1)
+	1,
+	1
 )
 
 BeforeExecute
@@ -72,8 +72,8 @@ INSERT INTO T3
 )
 VALUES
 (
-	toInt32(2),
-	toInt32(1)
+	2,
+	1
 )
 
 BeforeExecute
@@ -86,8 +86,8 @@ INSERT INTO T3
 )
 VALUES
 (
-	toInt32(3),
-	toInt32(1)
+	3,
+	1
 )
 
 BeforeExecute
@@ -100,8 +100,8 @@ INSERT INTO T2
 )
 VALUES
 (
-	toInt32(1),
-	toInt32(1)
+	1,
+	1
 )
 
 BeforeExecute
@@ -114,8 +114,8 @@ INSERT INTO T2
 )
 VALUES
 (
-	toInt32(2),
-	toInt32(1)
+	2,
+	1
 )
 
 BeforeExecute
@@ -130,7 +130,7 @@ INSERT INTO T1
 )
 VALUES
 (
-	toInt32(1),
+	1,
 	'aaa1',
 	toDateTime64('2020-02-28 17:54:55.1231234', 7),
 	'NOTNULL'
@@ -148,7 +148,7 @@ INSERT INTO T1
 )
 VALUES
 (
-	toInt32(2),
+	2,
 	'aaa2',
 	toDateTime64('2020-02-28 17:54:55.1231234', 7),
 	NULL
@@ -158,22 +158,22 @@ BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
-	t4.SourceInstrumentCode
+	t5.SourceInstrumentCode
 FROM
 	(
 		SELECT DISTINCT
 			ins.SourceInstrumentCode as SourceInstrumentCode
 		FROM
-			T1 _
-				INNER JOIN T2 idx ON _.InstrumentId = idx.InstrumentId
+			T1 t4
+				INNER JOIN T2 idx ON t4.InstrumentId = idx.InstrumentId
 				INNER JOIN T3 w ON idx.IndexId = w.IndexId
 				INNER JOIN T1 ins ON w.InstrumentId = ins.InstrumentId
 		WHERE
-			ins.SourceInstrumentCode IS NOT NULL AND startsWith(_.InstrumentCode, 'aaa') AND
-			_.CreateDate <= toDateTime64('2020-02-29 17:54:55.1231234', 7)
-	) t4
+			startsWith(t4.InstrumentCode, 'aaa') AND t4.CreateDate <= toDateTime64('2020-02-29 17:54:55.1231234', 7) AND
+			ins.SourceInstrumentCode IS NOT NULL
+	) t5
 ORDER BY
-	t4.SourceInstrumentCode
+	t5.SourceInstrumentCode
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse

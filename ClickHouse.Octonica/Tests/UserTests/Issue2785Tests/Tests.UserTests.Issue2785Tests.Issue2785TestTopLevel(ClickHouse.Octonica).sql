@@ -6,5 +6,5 @@ SELECT
 	a.PersonID
 FROM
 	Person a
-LIMIT toInt32(10)
+LIMIT 10
 

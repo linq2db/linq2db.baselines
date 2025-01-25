@@ -42,15 +42,13 @@ VALUES
 
 BeforeExecute
 -- SqlCe
-DECLARE @p DateTime
-SET     @p = '2018-01-02'
 
 SELECT
-	Count(*)
+	COUNT(*) as [COUNT_1]
 FROM
 	[LinqDataTypes] [t]
 WHERE
-	[t].[ID] = 5000 AND DateAdd(day, [t].[SmallIntValue], [t].[DateTimeValue]) > @p
+	[t].[ID] = 5000 AND DateAdd(day, [t].[SmallIntValue], [t].[DateTimeValue]) > CAST('2018-01-02' AS DateTime)
 
 BeforeExecute
 -- SqlCe

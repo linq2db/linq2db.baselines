@@ -2,9 +2,9 @@
 -- SqlServer.2022
 
 SELECT
-	Max([t].[PersonID])
+	MAX([t1].[PersonID])
 FROM
-	[Person] [t]
+	[Person] [t1]
 
 BeforeExecute
 -- SqlServer.2022
@@ -34,12 +34,10 @@ VALUES
 
 BeforeExecute
 -- SqlServer.2022
-DECLARE @take Int -- Int32
-SET     @take = 2
 DECLARE @id Int -- Int32
 SET     @id = 4
 
-SELECT TOP (@take)
+SELECT TOP (2)
 	[p2].[PersonID],
 	[p2].[Gender],
 	[p2].[FirstName],

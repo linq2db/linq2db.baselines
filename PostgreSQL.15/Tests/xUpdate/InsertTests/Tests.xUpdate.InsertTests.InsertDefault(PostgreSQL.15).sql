@@ -20,7 +20,7 @@ BeforeExecute
 -- PostgreSQL.15 PostgreSQL
 
 DELETE FROM
-	"Person" t1
+	"Person" p
 WHERE
-	t1."FirstName" = 'InsertDefault'
+	p."FirstName" = 'InsertDefault'
 

@@ -2,30 +2,13 @@
 -- Access.Odbc AccessODBC
 
 SELECT
-	[g_1].[Value1]
+	[a_Parent].[Value1]
 FROM
-	(
-		SELECT
-			Count([t1].[ParentID]) as [ex],
-			[a_Parent].[Value1]
-		FROM
-			([GrandChild] [t2]
-				INNER JOIN [Parent] [a_Parent] ON ([t2].[ParentID] = [a_Parent].[ParentID]))
-				LEFT JOIN (
-					SELECT
-						[a_Parent_1].[ParentID]
-					FROM
-						[GrandChild] [_]
-							INNER JOIN [Parent] [a_Parent_1] ON ([_].[ParentID] = [a_Parent_1].[ParentID])
-					WHERE
-						[_].[ChildID] >= 20
-					GROUP BY
-						[a_Parent_1].[ParentID]
-				) [t1] ON ([a_Parent].[ParentID] = [t1].[ParentID])
-		GROUP BY
-			[a_Parent].[ParentID],
-			[a_Parent].[Value1]
-	) [g_1]
-WHERE
-	[g_1].[ex] > 2
+	[GrandChild] [g_1]
+		INNER JOIN [Parent] [a_Parent] ON ([g_1].[ParentID] = [a_Parent].[ParentID])
+GROUP BY
+	[a_Parent].[ParentID],
+	[a_Parent].[Value1]
+HAVING
+	COUNT(IIF([g_1].[ChildID] >= 20, 1, NULL)) > 2
 

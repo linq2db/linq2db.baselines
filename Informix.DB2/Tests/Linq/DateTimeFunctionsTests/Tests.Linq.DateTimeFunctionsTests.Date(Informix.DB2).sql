@@ -2,7 +2,7 @@
 -- Informix.DB2 Informix
 
 SELECT
-	Date(t.DateTimeValue)
+	Extend(t.DateTimeValue, Year to Day)
 FROM
 	LinqDataTypes t
 

@@ -6,7 +6,7 @@ SET     @value = 6579.64648
 SELECT TOP 1
 	@value
 FROM
-	[LinqDataTypes] [_]
+	[LinqDataTypes] [t1]
 
 BeforeExecute
 -- Access AccessOleDb
@@ -16,7 +16,7 @@ SET     @value = 6579.64648
 SELECT TOP 1
 	@value
 FROM
-	[LinqDataTypes] [_]
+	[LinqDataTypes] [t1]
 
 BeforeExecute
 -- Access AccessOleDb
@@ -26,7 +26,7 @@ SET     @value = 6579.6464800000003
 SELECT TOP 1
 	@value
 FROM
-	[LinqDataTypes] [_]
+	[LinqDataTypes] [t1]
 
 BeforeExecute
 -- Access AccessOleDb
@@ -36,7 +36,7 @@ SET     @value = 6579.64648
 SELECT TOP 1
 	@value
 FROM
-	[LinqDataTypes] [_]
+	[LinqDataTypes] [t1]
 
 BeforeExecute
 -- Access AccessOleDb
@@ -46,7 +46,7 @@ SET     @value = 6579.64648
 SELECT TOP 1
 	@value
 FROM
-	[LinqDataTypes] [_]
+	[LinqDataTypes] [t1]
 
 BeforeExecute
 -- Access AccessOleDb
@@ -56,7 +56,7 @@ SET     @value = 6579.6464800000003
 SELECT TOP 1
 	@value
 FROM
-	[LinqDataTypes] [_]
+	[LinqDataTypes] [t1]
 
 BeforeExecute
 -- Access AccessOleDb
@@ -66,7 +66,7 @@ SET     @value = 6579.64648
 SELECT TOP 1
 	@value
 FROM
-	[LinqDataTypes] [_]
+	[LinqDataTypes] [t1]
 
 BeforeExecute
 -- Access AccessOleDb
@@ -76,7 +76,7 @@ SET     @value = 6579.64648
 SELECT TOP 1
 	@value
 FROM
-	[LinqDataTypes] [_]
+	[LinqDataTypes] [t1]
 
 BeforeExecute
 -- Access AccessOleDb
@@ -86,5 +86,5 @@ SET     @value = 6579.6464800000003
 SELECT TOP 1
 	@value
 FROM
-	[LinqDataTypes] [_]
+	[LinqDataTypes] [t1]
 

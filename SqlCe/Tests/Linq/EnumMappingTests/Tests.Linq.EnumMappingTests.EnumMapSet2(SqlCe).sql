@@ -30,17 +30,15 @@ SET     @TestField = 12
 UPDATE
 	[LinqDataTypes]
 SET
-	[LinqDataTypes].[BigIntValue] = @TestField
+	[BigIntValue] = @TestField
 WHERE
 	[LinqDataTypes].[ID] = 101 AND [LinqDataTypes].[BigIntValue] = 11
 
 BeforeExecute
 -- SqlCe
-DECLARE @take Int -- Int32
-SET     @take = 1
 
-SELECT TOP (@take)
-	[r].[BigIntValue]
+SELECT TOP (1)
+	[r].[BigIntValue] as [TestField]
 FROM
 	[LinqDataTypes] [r]
 WHERE

@@ -2,9 +2,9 @@
 -- Oracle.21.Managed Oracle.Managed Oracle12
 
 DELETE FROM
-	"Child" t1
+	"Child" c_1
 WHERE
-	t1."ChildID" > 1000
+	c_1."ChildID" > 1000
 
 BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
@@ -28,7 +28,7 @@ BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	"Child" c_1
 WHERE
@@ -38,7 +38,7 @@ BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
 
 DELETE FROM
-	"Child" t1
+	"Child" c_1
 WHERE
-	t1."ChildID" > 1000
+	c_1."ChildID" > 1000
 

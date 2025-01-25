@@ -2,9 +2,9 @@
 -- SqlServer.2005
 
 SELECT
-	Sum([t1].[ChildID])
+	SUM([g_1].[ChildID])
 FROM
-	[Child] [t1]
+	[Child] [g_1]
 GROUP BY
-	[t1].[ParentID]
+	[g_1].[ParentID]
 

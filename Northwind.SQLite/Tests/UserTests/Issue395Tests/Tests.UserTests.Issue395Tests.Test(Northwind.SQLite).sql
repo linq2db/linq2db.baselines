@@ -1,20 +1,18 @@
 ﻿BeforeExecute
 -- Northwind.SQLite SQLite.Classic SQLite
-DECLARE @take  -- Int32
-SET     @take = 1
 
 SELECT
 	[t1].[ShipCountry],
-	Sum([t1].[Via1]),
-	Sum([t1].[Via3]),
-	Sum([t1].[Via3_1])
+	SUM([t1].[Via1]),
+	SUM([t1].[Via2]),
+	SUM([t1].[Via3])
 FROM
 	(
 		SELECT
 			[x].[ShipCountry],
 			[x].[Freight] as [Via1],
-			0 as [Via3],
-			0 as [Via3_1]
+			0 as [Via2],
+			0 as [Via3]
 		FROM
 			[Orders] [x]
 		WHERE
@@ -23,8 +21,8 @@ FROM
 		SELECT
 			[x_1].[ShipCountry],
 			0 as [Via1],
-			[x_1].[Freight] as [Via3],
-			0 as [Via3_1]
+			[x_1].[Freight] as [Via2],
+			0 as [Via3]
 		FROM
 			[Orders] [x_1]
 		WHERE
@@ -33,8 +31,8 @@ FROM
 		SELECT
 			[x_2].[ShipCountry],
 			0 as [Via1],
-			0 as [Via3],
-			[x_2].[Freight] as [Via3_1]
+			0 as [Via2],
+			[x_2].[Freight] as [Via3]
 		FROM
 			[Orders] [x_2]
 		WHERE
@@ -42,7 +40,7 @@ FROM
 	) [t1]
 GROUP BY
 	[t1].[ShipCountry]
-LIMIT @take
+LIMIT 1
 
 BeforeExecute
 -- Northwind.SQLite SQLite.Classic SQLite
@@ -50,7 +48,7 @@ DECLARE @ShipCountry NVarChar(9) -- String
 SET     @ShipCountry = 'Argentina'
 
 SELECT
-	Sum([x].[Freight])
+	SUM([x].[Freight])
 FROM
 	[Orders] [x]
 WHERE
@@ -62,7 +60,7 @@ DECLARE @ShipCountry NVarChar(9) -- String
 SET     @ShipCountry = 'Argentina'
 
 SELECT
-	Sum([x].[Freight])
+	SUM([x].[Freight])
 FROM
 	[Orders] [x]
 WHERE
@@ -74,7 +72,7 @@ DECLARE @ShipCountry NVarChar(9) -- String
 SET     @ShipCountry = 'Argentina'
 
 SELECT
-	Sum([x].[Freight])
+	SUM([x].[Freight])
 FROM
 	[Orders] [x]
 WHERE

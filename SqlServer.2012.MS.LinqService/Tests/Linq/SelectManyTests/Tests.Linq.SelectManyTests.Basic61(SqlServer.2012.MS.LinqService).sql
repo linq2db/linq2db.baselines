@@ -2,10 +2,11 @@
 -- SqlServer.2012.MS SqlServer.2012
 
 SELECT
-	[_].[ParentID] + 1
+	[a_Children].[ParentID] + 1
 FROM
-	[Parent] [cp]
-		INNER JOIN [Child] [_] ON ([_].[ParentID] > 0 OR [_].[ParentID] > 1) AND [cp].[ParentID] = [_].[ParentID]
+	[Parent] [t1]
+		INNER JOIN [Child] [a_Children] ON [t1].[ParentID] = [a_Children].[ParentID]
 WHERE
-	([_].[ParentID] > -1 OR [_].[ParentID] > 2)
+	([a_Children].[ParentID] > 0 OR [a_Children].[ParentID] > 1) AND
+	([a_Children].[ParentID] > -1 OR [a_Children].[ParentID] > 2)
 

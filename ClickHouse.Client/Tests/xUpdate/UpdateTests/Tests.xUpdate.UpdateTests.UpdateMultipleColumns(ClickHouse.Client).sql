@@ -9,7 +9,7 @@ INSERT INTO LinqDataTypes
 )
 VALUES
 (
-	toInt32(1001),
+	1001,
 	toDecimal64('1000', 4),
 	toInt16(100)
 )
@@ -21,9 +21,9 @@ ALTER TABLE
 	LinqDataTypes
 UPDATE
 	MoneyValue = toDecimal64('2000', 10),
-	SmallIntValue = toInt32(200)
+	SmallIntValue = toInt16(200)
 WHERE
-	ID = toInt32(1001)
+	ID = 1001
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
@@ -40,6 +40,6 @@ SELECT
 FROM
 	LinqDataTypes t
 WHERE
-	t.ID = toInt32(1001)
-LIMIT toInt32(2)
+	t.ID = 1001
+LIMIT 2
 

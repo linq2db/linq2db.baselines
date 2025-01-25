@@ -2,14 +2,27 @@
 -- Sybase.Managed Sybase
 
 SELECT
+	[m_1].[ParentID],
+	[d_1].[ParentID]
+FROM
 	(
 		SELECT DISTINCT
-			[c_1].[ParentID]
+			[p].[ParentID]
 		FROM
-			[Child] [c_1]
-		WHERE
-			[p].[ParentID] = [c_1].[ParentID]
-	)
+			[Parent] [p]
+	) [m_1]
+		INNER JOIN (
+			SELECT DISTINCT
+				[d].[ParentID]
+			FROM
+				[Child] [d]
+		) [d_1] ON [m_1].[ParentID] = [d_1].[ParentID]
+
+BeforeExecute
+-- Sybase.Managed Sybase
+
+SELECT
+	[p].[ParentID]
 FROM
 	[Parent] [p]
 

@@ -1,9 +1,5 @@
 ﻿BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014
-DECLARE @skip Int -- Int32
-SET     @skip = 1
-DECLARE @take Int -- Int32
-SET     @take = 100
 
 SELECT
 	[c_1].[ParentID],
@@ -22,7 +18,7 @@ WHERE
 					[Parent] [p]
 				ORDER BY
 					1
-				OFFSET @skip ROWS FETCH NEXT @take ROWS ONLY 
+				OFFSET 1 ROWS FETCH NEXT 100 ROWS ONLY 
 			) [t1]
 	)
 

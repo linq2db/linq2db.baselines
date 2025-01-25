@@ -26,7 +26,7 @@ INSERT INTO SimpleBulkCopyTable
 	Id
 )
 VALUES
-(toInt32(3))
+(3)
 
 BeforeExecute
 INSERT ASYNC BULK SimpleBulkCopyTable(Id)
@@ -42,7 +42,7 @@ INSERT INTO SimpleBulkCopyTable
 	Id
 )
 VALUES
-(toInt32(30))
+(30)
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse

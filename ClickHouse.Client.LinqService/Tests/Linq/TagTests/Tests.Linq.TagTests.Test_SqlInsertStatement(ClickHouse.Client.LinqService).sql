@@ -26,7 +26,7 @@ INSERT INTO TestTable
 )
 VALUES
 (
-	toInt32(1)
+	1
 )
 
 BeforeExecute

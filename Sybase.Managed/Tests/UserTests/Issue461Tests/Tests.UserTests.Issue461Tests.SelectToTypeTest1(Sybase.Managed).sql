@@ -3,8 +3,8 @@ BeginTransaction(RepeatableRead)
 BeforeExecute
 -- Sybase.Managed Sybase
 
-SELECT TOP 1
-	[l].[ParentID]
+SELECT
+	[l].[ParentID] + 1
 FROM
 	[Child] [l]
 

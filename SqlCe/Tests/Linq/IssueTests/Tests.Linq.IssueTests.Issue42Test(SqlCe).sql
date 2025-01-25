@@ -1,9 +1,26 @@
 ﻿BeforeExecute
 -- SqlCe
-DECLARE @take Int -- Int32
-SET     @take = 1
 
-SELECT TOP (@take)
+SELECT TOP (1)
+	[r].[ID],
+	[r].[MoneyValue],
+	[r].[DateTimeValue],
+	[r].[DateTimeValue2],
+	[r].[BoolValue],
+	[r].[GuidValue],
+	[r].[SmallIntValue],
+	[r].[IntValue],
+	[r].[BigIntValue],
+	[r].[StringValue]
+FROM
+	[LinqDataTypes] [r]
+WHERE
+	[r].[ID] = 1
+
+BeforeExecute
+-- SqlCe
+
+SELECT TOP (1)
 	[r].[ID],
 	[r].[MoneyValue],
 	[r].[DateTimeValue],
@@ -45,26 +62,24 @@ SET     @ID = 1
 UPDATE
 	[LinqDataTypes]
 SET
-	[LinqDataTypes].[MoneyValue] = @MoneyValue,
-	[LinqDataTypes].[DateTimeValue] = @DateTimeValue,
-	[LinqDataTypes].[DateTimeValue2] = @DateTimeValue2,
-	[LinqDataTypes].[BoolValue] = @BoolValue,
-	[LinqDataTypes].[GuidValue] = @GuidValue,
-	[LinqDataTypes].[SmallIntValue] = @SmallIntValue,
-	[LinqDataTypes].[IntValue] = @IntValue,
-	[LinqDataTypes].[BigIntValue] = @BigIntValue,
-	[LinqDataTypes].[StringValue] = @StringValue
+	[MoneyValue] = @MoneyValue,
+	[DateTimeValue] = @DateTimeValue,
+	[DateTimeValue2] = @DateTimeValue2,
+	[BoolValue] = @BoolValue,
+	[GuidValue] = @GuidValue,
+	[SmallIntValue] = @SmallIntValue,
+	[IntValue] = @IntValue,
+	[BigIntValue] = @BigIntValue,
+	[StringValue] = @StringValue
 WHERE
 	[LinqDataTypes].[ID] = @ID
 
 BeforeExecute
 -- SqlCe
-DECLARE @take Int -- Int32
-SET     @take = 1
 DECLARE @ID Int -- Int32
 SET     @ID = 1
 
-SELECT TOP (@take)
+SELECT TOP (1)
 	[r].[ID],
 	[r].[MoneyValue],
 	[r].[DateTimeValue],
@@ -106,15 +121,34 @@ SET     @ID = 1
 UPDATE
 	[LinqDataTypes]
 SET
-	[LinqDataTypes].[MoneyValue] = @MoneyValue,
-	[LinqDataTypes].[DateTimeValue] = @DateTimeValue,
-	[LinqDataTypes].[DateTimeValue2] = @DateTimeValue2,
-	[LinqDataTypes].[BoolValue] = @BoolValue,
-	[LinqDataTypes].[GuidValue] = @GuidValue,
-	[LinqDataTypes].[SmallIntValue] = @SmallIntValue,
-	[LinqDataTypes].[IntValue] = @IntValue,
-	[LinqDataTypes].[BigIntValue] = @BigIntValue,
-	[LinqDataTypes].[StringValue] = @StringValue
+	[MoneyValue] = @MoneyValue,
+	[DateTimeValue] = @DateTimeValue,
+	[DateTimeValue2] = @DateTimeValue2,
+	[BoolValue] = @BoolValue,
+	[GuidValue] = @GuidValue,
+	[SmallIntValue] = @SmallIntValue,
+	[IntValue] = @IntValue,
+	[BigIntValue] = @BigIntValue,
+	[StringValue] = @StringValue
 WHERE
 	[LinqDataTypes].[ID] = @ID
+
+BeforeExecute
+-- SqlCe
+
+SELECT TOP (1)
+	[r].[ID],
+	[r].[MoneyValue],
+	[r].[DateTimeValue],
+	[r].[DateTimeValue2],
+	[r].[BoolValue],
+	[r].[GuidValue],
+	[r].[SmallIntValue],
+	[r].[IntValue],
+	[r].[BigIntValue],
+	[r].[StringValue]
+FROM
+	[LinqDataTypes] [r]
+WHERE
+	[r].[ID] = 1
 

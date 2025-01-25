@@ -2,7 +2,7 @@
 -- Sybase.Managed Sybase
 
 SELECT
-	Convert(Int, [t].[MoneyValue])
+	CAST([t].[MoneyValue] AS Int)
 FROM
 	[LinqDataTypes] [t]
 

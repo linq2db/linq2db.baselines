@@ -24,7 +24,7 @@ BeforeExecute
 SELECT TOP 1
 	DB_NAME()
 FROM
-	[LinqDataTypes] [_]
+	[LinqDataTypes] [t1]
 
 BeforeExecute
 -- Sybase.Managed Sybase
@@ -32,7 +32,7 @@ BeforeExecute
 SELECT TOP 1
 	USER_NAME()
 FROM
-	[LinqDataTypes] [_]
+	[LinqDataTypes] [t1]
 
 BeforeExecute
 -- Sybase.Managed Sybase
@@ -46,7 +46,7 @@ SET     @Value_1 = 10
 UPDATE
 	[TestDataCore].[dbo].[Issue681Table]
 SET
-	[t1].[Value] = @Value
+	[Value] = @Value
 FROM
 	[TestDataCore].[dbo].[Issue681Table] [t1]
 WHERE
@@ -78,7 +78,7 @@ SET     @Value_1 = 10
 UPDATE
 	[TestDataCore].[dbo].[Issue681Table]
 SET
-	[t1].[Value] = @Value
+	[Value] = @Value
 FROM
 	[TestDataCore].[dbo].[Issue681Table] [t1]
 WHERE

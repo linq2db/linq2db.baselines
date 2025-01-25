@@ -2,7 +2,7 @@
 -- SqlServer.Contained.MS SqlServer.2019
 
 SELECT
-	Convert(Real, [t].[MoneyValue])
+	CAST([t].[MoneyValue] AS Real)
 FROM
 	[LinqDataTypes] [t]
 

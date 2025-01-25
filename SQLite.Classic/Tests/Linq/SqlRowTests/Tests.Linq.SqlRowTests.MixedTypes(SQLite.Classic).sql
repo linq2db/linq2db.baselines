@@ -27,14 +27,14 @@ INSERT INTO [Mixed]
 	[Bool]
 )
 VALUES
-(1,'One','2001-01-01',1,1),
-(2,'Two','2002-02-02',2,0)
+(1,'One','2001-01-01 00:00:00.000',1,1),
+(2,'Two','2002-02-02 00:00:00.000',2,0)
 
 BeforeExecute
 -- SQLite.Classic SQLite
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	[Mixed] [t]
 WHERE

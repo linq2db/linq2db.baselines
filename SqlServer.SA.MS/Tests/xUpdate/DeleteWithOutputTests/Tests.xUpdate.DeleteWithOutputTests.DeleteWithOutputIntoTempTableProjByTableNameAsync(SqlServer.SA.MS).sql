@@ -61,14 +61,12 @@ BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019 (asynchronously)
 DECLARE @param Int -- Int32
 SET     @param = 100500
-DECLARE @param_1 Int -- Int32
-SET     @param_1 = 100500
 
 DELETE [s]
 OUTPUT
-	[DELETED].[Id] + @param,
-	[DELETED].[Value] + @param,
-	[DELETED].[ValueStr] + Convert(VarChar(100), @param_1)
+	DELETED.[Id] + @param,
+	DELETED.[Value] + @param,
+	DELETED.[ValueStr] + CAST(@param AS VarChar(11))
 INTO [tempdb]..[#DestinationTable_target]
 (
 	[Id],

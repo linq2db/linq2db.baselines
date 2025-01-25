@@ -18,7 +18,7 @@ BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	"Person" "c_1"
 WHERE
@@ -28,17 +28,17 @@ BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 UPDATE
-	"Person"
+	"Person" "c_1"
 SET
-	"Person"."FirstName" = 'Johnny'
+	"FirstName" = 'Johnny'
 WHERE
-	"Person"."LastName" = 'Limonadovy'
+	"c_1"."LastName" = 'Limonadovy'
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	"Person" "c_1"
 WHERE

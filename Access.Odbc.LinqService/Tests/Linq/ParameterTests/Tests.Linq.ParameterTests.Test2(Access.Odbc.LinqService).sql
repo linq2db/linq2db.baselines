@@ -13,7 +13,7 @@ SELECT TOP 1
 FROM
 	[Parent] [p]
 WHERE
-	(([p].[ParentID] = ? OR [p].[ParentID] >= ?) OR [p].[ParentID] >= ?)
+	([p].[ParentID] = ? OR [p].[ParentID] >= ? OR [p].[ParentID] >= ?)
 ORDER BY
 	[p].[ParentID]
 
@@ -32,7 +32,7 @@ SELECT TOP 1
 FROM
 	[Parent] [p]
 WHERE
-	(([p].[ParentID] = ? OR [p].[ParentID] >= ?) OR [p].[ParentID] >= ?)
+	([p].[ParentID] = ? OR [p].[ParentID] >= ? OR [p].[ParentID] >= ?)
 ORDER BY
 	[p].[ParentID]
 

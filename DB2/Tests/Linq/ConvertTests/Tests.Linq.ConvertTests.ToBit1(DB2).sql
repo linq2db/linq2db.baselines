@@ -13,5 +13,5 @@ SELECT
 FROM
 	"LinqDataTypes" "t"
 WHERE
-	("t"."MoneyValue" <> 0)
+	"t"."MoneyValue" <> 0
 

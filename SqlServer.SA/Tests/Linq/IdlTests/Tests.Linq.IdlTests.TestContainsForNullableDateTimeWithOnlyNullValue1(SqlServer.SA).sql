@@ -19,7 +19,7 @@ BeforeExecute
 -- SqlServer.SA SqlServer.2019
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	[LinqDataTypes] [x]
 WHERE

@@ -20,7 +20,7 @@ DECLARE @id Int -- Int32
 SET     @id = 1001
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	[Child] [c_1]
 WHERE
@@ -32,14 +32,25 @@ DECLARE @id Int -- Int32
 SET     @id = 1001
 
 UPDATE
-	([Child] [p]
-		INNER JOIN [Parent] [c_1] ON ([c_1].[ParentID] = [p].[ParentID]))
-		LEFT JOIN [Parent] [a_Parent] ON ([p].[ParentID] = [a_Parent].[ParentID])
+	((
+		SELECT
+			[p].[ParentID],
+			[c_1].[ParentID] as [ParentID_1],
+			[c_1].[ChildID]
+		FROM
+			[Child] [c_1],
+			[Parent] [p]
+	) [cross_1]
+		INNER JOIN [Child] [c_2] ON ([cross_1].[ParentID] = [c_2].[ParentID]))
+		LEFT JOIN [Parent] [a_Parent] ON ([c_2].[ParentID] = [a_Parent].[ParentID])
 SET
-	[p].[ChildID] = [p].[ChildID] + 1,
-	[p].[ParentID] = [c_1].[ParentID]
+	[cross_1].[ChildID] = [c_2].[ChildID] + 1,
+	[cross_1].[ParentID_1] = [cross_1].[ParentID]
 WHERE
-	[p].[ChildID] = ? AND [a_Parent].[Value1] = 1
+	[c_2].[ChildID] = ? AND
+	[a_Parent].[Value1] = 1 AND
+	[cross_1].[ParentID_1] = [c_2].[ParentID] AND
+	[cross_1].[ChildID] = [c_2].[ChildID]
 
 BeforeExecute
 -- Access.Odbc AccessODBC
@@ -47,7 +58,7 @@ DECLARE @ChildID Int -- Int32
 SET     @ChildID = 1002
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	[Child] [c_1]
 WHERE

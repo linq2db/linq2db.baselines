@@ -58,11 +58,11 @@ BeforeExecute
 -- Oracle.23.Managed Oracle.Managed Oracle12
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	"InstanceClass" t
 WHERE
-	Cast(t."Id" as VarChar(11)) || Cast(t."Value" as VarChar(11)) = Cast(t."Id" as VarChar(11)) || Cast(t."Value" as VarChar(11))
+	CAST(t."Id" AS VarChar(255)) || CAST(t."Value" AS VarChar(255)) = CAST(t."Id" AS VarChar(255)) || t."Value"
 
 BeforeExecute
 -- Oracle.23.Managed Oracle.Managed Oracle12

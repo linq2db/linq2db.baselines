@@ -32,23 +32,23 @@ BeforeExecute
 -- Access AccessOleDb
 
 SELECT TOP 1
-	[_].[Id],
-	[_].[BlobValue]
+	[t1].[Id],
+	[t1].[BlobValue]
 FROM
-	[BlobClass] [_]
+	[BlobClass] [t1]
 WHERE
-	[_].[Id] = 1
+	[t1].[Id] = 1
 
 BeforeExecute
 -- Access AccessOleDb
 
 SELECT TOP 1
-	[_].[Id],
-	[_].[BlobValue]
+	[t1].[Id],
+	[t1].[BlobValue]
 FROM
-	[BlobClass] [_]
+	[BlobClass] [t1]
 WHERE
-	[_].[Id] = 1
+	[t1].[Id] = 1
 
 BeforeExecute
 -- Access AccessOleDb

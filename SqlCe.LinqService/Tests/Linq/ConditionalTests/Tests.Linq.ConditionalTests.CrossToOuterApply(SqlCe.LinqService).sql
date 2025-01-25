@@ -1,0 +1,59 @@
+﻿BeforeExecute
+-- SqlCe
+
+SELECT
+	[p].[ParentID],
+	[t1].[ParentID] as [ParentID_1],
+	[t1].[ChildID],
+	[t2].[ParentID] as [ParentID_2],
+	[t2].[ChildID] as [ChildID_1]
+FROM
+	[Parent] [p]
+		OUTER APPLY (
+			SELECT TOP (1)
+				[a_Children].[ParentID],
+				[a_Children].[ChildID]
+			FROM
+				[Child] [a_Children]
+			WHERE
+				[p].[ParentID] = [a_Children].[ParentID]
+			ORDER BY
+				[a_Children].[ChildID]
+		) [t1]
+		OUTER APPLY (
+			SELECT TOP (1)
+				[a_Children_1].[ParentID],
+				[a_Children_1].[ChildID]
+			FROM
+				[Child] [a_Children_1]
+			WHERE
+				[p].[ParentID] = [a_Children_1].[ParentID]
+			ORDER BY
+				[a_Children_1].[ChildID]
+		) [t2]
+
+BeforeExecute
+-- SqlCe
+
+SELECT
+	[m_1].[ParentID],
+	[d].[ParentID] as [ParentID_1],
+	[d].[ChildID]
+FROM
+	(
+		SELECT DISTINCT
+			[t1].[ParentID]
+		FROM
+			[Parent] [t1]
+	) [m_1]
+		INNER JOIN [Child] [d] ON [m_1].[ParentID] = [d].[ParentID]
+
+BeforeExecute
+-- SqlCe
+
+SELECT
+	[t1].[ParentID],
+	[t1].[Value1]
+FROM
+	[Parent] [t1]
+

@@ -2,10 +2,12 @@
 -- Oracle.23.Managed Oracle.Managed Oracle12
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
-	"Child" child_1
-		INNER JOIN "Parent" parent_1 ON parent_1."ParentID" = child_1."ParentID" AND parent_1."ParentID" < 5
+	"Child" t1
+		INNER JOIN "Parent" parent_1 ON parent_1."ParentID" = t1."ParentID"
+WHERE
+	parent_1."ParentID" < 5
 
 BeforeExecute
 -- Oracle.23.Managed Oracle.Managed Oracle12
@@ -13,15 +15,16 @@ BeforeExecute
 UPDATE
 	"Child"
 SET
-	"Child"."ParentID" = "Child"."ParentID"
+	"ParentID" = "Child"."ParentID"
 WHERE
 	EXISTS(
 		SELECT
 			*
 		FROM
 			"Child" child_1
-				INNER JOIN "Parent" parent_1 ON parent_1."ParentID" = child_1."ParentID" AND parent_1."ParentID" < 5
+				INNER JOIN "Parent" parent_1 ON parent_1."ParentID" = child_1."ParentID"
 		WHERE
-			"Child"."ParentID" = child_1."ParentID" AND "Child"."ChildID" = child_1."ChildID"
+			parent_1."ParentID" < 5 AND "Child"."ParentID" = child_1."ParentID" AND
+			"Child"."ChildID" = child_1."ChildID"
 	)
 

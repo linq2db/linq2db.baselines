@@ -4,11 +4,11 @@ BeforeExecute
 -- Access.Odbc AccessODBC
 
 SELECT TOP 1
-	[_].[PersonID]
+	[t1].[PersonID]
 FROM
-	[Person] [_]
+	[Person] [t1]
 ORDER BY
-	[_].[PersonID] DESC
+	[t1].[PersonID] DESC
 
 BeforeExecute
 -- Access.Odbc AccessODBC
@@ -29,15 +29,15 @@ DECLARE @maxId Int -- Int32
 SET     @maxId = 4
 
 SELECT TOP 2
-	[_].[FirstName],
-	[_].[PersonID],
-	[_].[LastName],
-	[_].[MiddleName],
-	[_].[Gender]
+	[t1].[FirstName],
+	[t1].[PersonID],
+	[t1].[LastName],
+	[t1].[MiddleName],
+	[t1].[Gender]
 FROM
-	[Person] [_]
+	[Person] [t1]
 WHERE
-	[_].[PersonID] > ?
+	[t1].[PersonID] > ?
 
 BeforeExecute
 DisposeTransaction

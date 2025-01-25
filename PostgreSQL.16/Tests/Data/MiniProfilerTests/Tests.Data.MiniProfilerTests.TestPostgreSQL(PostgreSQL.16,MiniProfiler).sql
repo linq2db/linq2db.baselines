@@ -26,9 +26,9 @@ BeforeExecute
 --  PostgreSQL.15 PostgreSQL
 
 DELETE FROM
-	"AllTypes" t1
+	"AllTypes" p
 WHERE
-	t1."ID" >= 2000
+	p."ID" >= 2000
 
 BeforeExecute
 BeginTransaction
@@ -39,9 +39,9 @@ BeforeExecute
 --  PostgreSQL.15 PostgreSQL
 
 DELETE FROM
-	"AllTypes" t1
+	"AllTypes" p
 WHERE
-	t1."ID" >= 2000
+	p."ID" >= 2000
 
 BeforeExecute
 DisposeTransaction
@@ -52,9 +52,9 @@ BeforeExecute
 --  PostgreSQL.15 PostgreSQL (asynchronously)
 
 DELETE FROM
-	"AllTypes" t1
+	"AllTypes" p
 WHERE
-	t1."ID" >= 2000
+	p."ID" >= 2000
 
 BeforeExecute
 BeginTransaction
@@ -65,9 +65,9 @@ BeforeExecute
 --  PostgreSQL.15 PostgreSQL (asynchronously)
 
 DELETE FROM
-	"AllTypes" t1
+	"AllTypes" p
 WHERE
-	t1."ID" >= 2000
+	p."ID" >= 2000
 
 BeforeExecute
 DisposeTransaction
@@ -327,22 +327,22 @@ BeginTransaction
 BeforeExecute
 --  PostgreSQL.15 PostgreSQL
 
-SELECT * FROM testdata."public"."GetParentByID"(NULL::integer)
+SELECT * FROM testdata.public."GetParentByID"(NULL::integer)
 
 BeforeExecute
 --  PostgreSQL.15 PostgreSQL
 
-SELECT * FROM testdata."public"."TestTableFunction1"(NULL::integer,NULL::integer)
+SELECT * FROM testdata.public."TestTableFunction1"(NULL::integer,NULL::integer)
 
 BeforeExecute
 --  PostgreSQL.15 PostgreSQL
 
-SELECT * FROM testdata."public"."TestTableFunctionSchema"()
+SELECT * FROM testdata.public."TestTableFunctionSchema"()
 
 BeforeExecute
 --  PostgreSQL.15 PostgreSQL
 
-SELECT * FROM testdata."public"."TestTableFunction"(NULL::integer)
+SELECT * FROM testdata.public."TestTableFunction"(NULL::integer)
 
 BeforeExecute
 RollbackTransaction

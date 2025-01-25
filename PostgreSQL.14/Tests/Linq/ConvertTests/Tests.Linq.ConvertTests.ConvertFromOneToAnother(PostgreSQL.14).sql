@@ -2,116 +2,98 @@
 -- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
 DECLARE @value Numeric(9, 5) -- Decimal
 SET     @value = 6579.64648
-DECLARE @take Integer -- Int32
-SET     @take = 1
 
 SELECT
-	:value
+	:value::decimal
 FROM
 	"LinqDataTypes" t1
-LIMIT :take
+LIMIT 1
 
 BeforeExecute
 -- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
 DECLARE @value Real -- Single
 SET     @value = 6579.64648
-DECLARE @take Integer -- Int32
-SET     @take = 1
 
 SELECT
-	Cast(:value as decimal)
+	:value::decimal
 FROM
 	"LinqDataTypes" t1
-LIMIT :take
+LIMIT 1
 
 BeforeExecute
 -- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
 DECLARE @value Double
 SET     @value = 6579.6464800000003
-DECLARE @take Integer -- Int32
-SET     @take = 1
 
 SELECT
-	Cast(:value as decimal)
+	:value::decimal
 FROM
 	"LinqDataTypes" t1
-LIMIT :take
+LIMIT 1
 
 BeforeExecute
 -- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
 DECLARE @value Numeric(9, 5) -- Decimal
 SET     @value = 6579.64648
-DECLARE @take Integer -- Int32
-SET     @take = 1
 
 SELECT
-	Cast(:value as Real)
+	:value::Real
 FROM
 	"LinqDataTypes" t1
-LIMIT :take
+LIMIT 1
 
 BeforeExecute
 -- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
 DECLARE @value Real -- Single
 SET     @value = 6579.64648
-DECLARE @take Integer -- Int32
-SET     @take = 1
 
 SELECT
-	:value
+	:value::Real
 FROM
 	"LinqDataTypes" t1
-LIMIT :take
+LIMIT 1
 
 BeforeExecute
 -- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
 DECLARE @value Double
 SET     @value = 6579.6464800000003
-DECLARE @take Integer -- Int32
-SET     @take = 1
 
 SELECT
-	Cast(:value as Real)
+	:value::Real
 FROM
 	"LinqDataTypes" t1
-LIMIT :take
+LIMIT 1
 
 BeforeExecute
 -- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
 DECLARE @value Numeric(9, 5) -- Decimal
 SET     @value = 6579.64648
-DECLARE @take Integer -- Int32
-SET     @take = 1
 
 SELECT
-	Cast(:value as Float)
+	:value::Float
 FROM
 	"LinqDataTypes" t1
-LIMIT :take
+LIMIT 1
 
 BeforeExecute
 -- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
 DECLARE @value Real -- Single
 SET     @value = 6579.64648
-DECLARE @take Integer -- Int32
-SET     @take = 1
 
 SELECT
-	Cast(:value as Float)
+	:value::Float
 FROM
 	"LinqDataTypes" t1
-LIMIT :take
+LIMIT 1
 
 BeforeExecute
 -- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
 DECLARE @value Double
 SET     @value = 6579.6464800000003
-DECLARE @take Integer -- Int32
-SET     @take = 1
 
 SELECT
-	:value
+	:value::Float
 FROM
 	"LinqDataTypes" t1
-LIMIT :take
+LIMIT 1
 

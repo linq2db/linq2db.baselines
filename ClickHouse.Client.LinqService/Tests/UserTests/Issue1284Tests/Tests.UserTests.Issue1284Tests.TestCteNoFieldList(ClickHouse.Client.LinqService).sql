@@ -4,13 +4,13 @@
 WITH cte AS
 (
 	SELECT
-		person_1.PersonID as ID,
-		person_1.FirstName,
-		person_1.LastName,
-		person_1.MiddleName,
-		person_1.Gender
+		x.FirstName,
+		x.PersonID as ID,
+		x.LastName,
+		x.MiddleName,
+		x.Gender
 	FROM
-		Person person_1
+		Person x
 )
 SELECT
 	t1.FirstName,
@@ -25,11 +25,11 @@ BeforeExecute
 -- ClickHouse.Client ClickHouse
 
 SELECT
-	person_1.FirstName,
-	person_1.PersonID,
-	person_1.LastName,
-	person_1.MiddleName,
-	person_1.Gender
+	x.FirstName,
+	x.PersonID,
+	x.LastName,
+	x.MiddleName,
+	x.Gender
 FROM
-	Person person_1
+	Person x
 

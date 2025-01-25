@@ -22,9 +22,9 @@ INSERT INTO Isue2424Table
 	StrValue
 )
 VALUES
-(toInt32(1),'1'),
-(toInt32(3),'3'),
-(toInt32(5),'5')
+(1,'1'),
+(3,'3'),
+(5,'5')
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -36,7 +36,7 @@ FROM
 	Isue2424Table i
 WHERE
 	i.StrValue >= '4'
-LIMIT toInt32(2)
+LIMIT 2
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -48,7 +48,7 @@ FROM
 	Isue2424Table i
 WHERE
 	i.StrValue >= '4'
-LIMIT toInt32(2)
+LIMIT 2
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -60,7 +60,7 @@ FROM
 	Isue2424Table i
 WHERE
 	i.StrValue <= '2'
-LIMIT toInt32(2)
+LIMIT 2
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -72,7 +72,7 @@ FROM
 	Isue2424Table i
 WHERE
 	i.StrValue <= '2'
-LIMIT toInt32(2)
+LIMIT 2
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -84,7 +84,7 @@ FROM
 	Isue2424Table i
 WHERE
 	i.StrValue > '3'
-LIMIT toInt32(2)
+LIMIT 2
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -96,7 +96,7 @@ FROM
 	Isue2424Table i
 WHERE
 	i.StrValue > '3'
-LIMIT toInt32(2)
+LIMIT 2
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -108,7 +108,7 @@ FROM
 	Isue2424Table i
 WHERE
 	i.StrValue < '3'
-LIMIT toInt32(2)
+LIMIT 2
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -120,7 +120,7 @@ FROM
 	Isue2424Table i
 WHERE
 	i.StrValue < '3'
-LIMIT toInt32(2)
+LIMIT 2
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -132,7 +132,7 @@ FROM
 	Isue2424Table i
 WHERE
 	i.StrValue = '3'
-LIMIT toInt32(2)
+LIMIT 2
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -144,7 +144,7 @@ FROM
 	Isue2424Table i
 WHERE
 	i.StrValue = '3'
-LIMIT toInt32(2)
+LIMIT 2
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -156,7 +156,7 @@ FROM
 	Isue2424Table i
 WHERE
 	i.StrValue <= '2'
-LIMIT toInt32(2)
+LIMIT 2
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -168,7 +168,7 @@ FROM
 	Isue2424Table i
 WHERE
 	i.StrValue <= '2'
-LIMIT toInt32(2)
+LIMIT 2
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -180,7 +180,7 @@ FROM
 	Isue2424Table i
 WHERE
 	i.StrValue >= '4'
-LIMIT toInt32(2)
+LIMIT 2
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -192,7 +192,7 @@ FROM
 	Isue2424Table i
 WHERE
 	i.StrValue >= '4'
-LIMIT toInt32(2)
+LIMIT 2
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -204,7 +204,7 @@ FROM
 	Isue2424Table i
 WHERE
 	i.StrValue < '3'
-LIMIT toInt32(2)
+LIMIT 2
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -216,7 +216,7 @@ FROM
 	Isue2424Table i
 WHERE
 	i.StrValue < '3'
-LIMIT toInt32(2)
+LIMIT 2
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -228,7 +228,7 @@ FROM
 	Isue2424Table i
 WHERE
 	i.StrValue > '3'
-LIMIT toInt32(2)
+LIMIT 2
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -240,7 +240,7 @@ FROM
 	Isue2424Table i
 WHERE
 	i.StrValue > '3'
-LIMIT toInt32(2)
+LIMIT 2
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -252,7 +252,7 @@ FROM
 	Isue2424Table i
 WHERE
 	i.StrValue >= '5'
-LIMIT toInt32(2)
+LIMIT 2
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -264,7 +264,7 @@ FROM
 	Isue2424Table i
 WHERE
 	i.StrValue >= '5'
-LIMIT toInt32(2)
+LIMIT 2
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -276,7 +276,7 @@ FROM
 	Isue2424Table i
 WHERE
 	i.StrValue <= '1'
-LIMIT toInt32(2)
+LIMIT 2
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -288,7 +288,7 @@ FROM
 	Isue2424Table i
 WHERE
 	i.StrValue <= '1'
-LIMIT toInt32(2)
+LIMIT 2
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse

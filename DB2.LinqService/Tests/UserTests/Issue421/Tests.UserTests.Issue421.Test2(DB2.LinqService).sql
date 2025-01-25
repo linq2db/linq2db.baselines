@@ -40,35 +40,35 @@ BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 SELECT
-	"_"."Id",
-	"_"."BlobValue"
+	"t1"."Id",
+	"t1"."BlobValue"
 FROM
-	"BlobClass" "_"
+	"BlobClass" "t1"
 WHERE
-	"_"."Id" = 1
-FETCH FIRST 1 ROWS ONLY
+	"t1"."Id" = 1
+FETCH NEXT 1 ROWS ONLY
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 UPDATE
-	"BlobClass"
+	"BlobClass" "t1"
 SET
-	"BlobClass"."BlobValue" = BX'030201'
+	"BlobValue" = BX'030201'
 WHERE
-	"BlobClass"."Id" = 1
+	"t1"."Id" = 1
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 SELECT
-	"_"."Id",
-	"_"."BlobValue"
+	"t1"."Id",
+	"t1"."BlobValue"
 FROM
-	"BlobClass" "_"
+	"BlobClass" "t1"
 WHERE
-	"_"."Id" = 1
-FETCH FIRST 1 ROWS ONLY
+	"t1"."Id" = 1
+FETCH NEXT 1 ROWS ONLY
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW

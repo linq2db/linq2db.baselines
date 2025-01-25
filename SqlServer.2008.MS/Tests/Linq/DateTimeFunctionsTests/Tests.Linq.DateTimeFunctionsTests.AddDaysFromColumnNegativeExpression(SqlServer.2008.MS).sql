@@ -42,26 +42,24 @@ VALUES
 
 BeforeExecute
 -- SqlServer.2008.MS SqlServer.2008
-DECLARE @part1 Int -- Int32
+DECLARE @part1 SmallInt -- Int16
 SET     @part1 = 4
 DECLARE @part2 Int -- Int32
 SET     @part2 = 4
-DECLARE @p DateTime2
-SET     @p = CAST('2018-01-02T00:00:00.0000000' AS DATETIME2)
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	[LinqDataTypes] [t]
 WHERE
-	[t].[ID] = 5000 AND DateAdd(day, ([t].[SmallIntValue] + @part1) - @part2, [t].[DateTimeValue]) < @p
+	[t].[ID] = 5000 AND DateAdd(day, ([t].[SmallIntValue] + @part1) - @part2, [t].[DateTimeValue]) < CAST(N'2018-01-02' AS DateTime2)
 
 BeforeExecute
 -- SqlServer.2008.MS SqlServer.2008
 
-DELETE [t1]
+DELETE [t]
 FROM
-	[LinqDataTypes] [t1]
+	[LinqDataTypes] [t]
 WHERE
-	[t1].[ID] = 5000
+	[t].[ID] = 5000
 

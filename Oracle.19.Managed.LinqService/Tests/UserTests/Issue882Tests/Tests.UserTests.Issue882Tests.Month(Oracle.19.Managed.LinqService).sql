@@ -2,7 +2,7 @@
 -- Oracle.19.Managed Oracle.Managed Oracle12
 
 SELECT
-	MOD(To_Number(To_Char(t."DateTimeValue", 'MM')), 7)
+	MOD(EXTRACT(MONTH FROM t."DateTimeValue"), 7)
 FROM
 	"LinqDataTypes" t
 

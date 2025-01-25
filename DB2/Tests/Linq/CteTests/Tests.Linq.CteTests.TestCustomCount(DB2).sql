@@ -1,7 +1,8 @@
 ﻿BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
-WITH CTE_1 AS
+WITH CTE_1 ("ParentID", "ChildID")
+AS
 (
 	SELECT DISTINCT
 		"c_1"."ParentID",
@@ -14,5 +15,5 @@ WITH CTE_1 AS
 SELECT
 	COUNT(*)
 FROM
-	CTE_1 "c_2"
+	CTE_1 "t1"
 

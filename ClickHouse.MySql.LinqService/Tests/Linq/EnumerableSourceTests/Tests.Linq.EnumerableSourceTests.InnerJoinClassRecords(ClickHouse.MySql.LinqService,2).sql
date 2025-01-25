@@ -10,7 +10,7 @@ SELECT
 FROM
 	Person p
 		INNER JOIN (
-			SELECT toInt32(1) AS PersonID
+			SELECT 1 AS ID
 			UNION ALL
-			SELECT toInt32(2)) n ON p.PersonID = n.PersonID
+			SELECT 2) n ON p.PersonID = n.ID
 

@@ -42,22 +42,20 @@ VALUES
 
 BeforeExecute
 -- SqlServer.2005.MS SqlServer.2005
-DECLARE @p DateTime
-SET     @p = CAST('2018-01-02T00:00:00.000' AS DATETIME)
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	[LinqDataTypes] [t]
 WHERE
-	[t].[ID] = 5000 AND DateAdd(day, [t].[SmallIntValue], [t].[DateTimeValue]) > @p
+	[t].[ID] = 5000 AND DateAdd(day, [t].[SmallIntValue], [t].[DateTimeValue]) > CAST(N'2018-01-02' AS DateTime)
 
 BeforeExecute
 -- SqlServer.2005.MS SqlServer.2005
 
-DELETE [t1]
+DELETE [t]
 FROM
-	[LinqDataTypes] [t1]
+	[LinqDataTypes] [t]
 WHERE
-	[t1].[ID] = 5000
+	[t].[ID] = 5000
 

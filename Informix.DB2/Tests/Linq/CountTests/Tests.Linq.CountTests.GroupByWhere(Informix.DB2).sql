@@ -2,7 +2,7 @@
 -- Informix.DB2 Informix
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	Child ch
 WHERE

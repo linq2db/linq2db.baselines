@@ -10,10 +10,7 @@ SELECT
 FROM
 	Person p
 WHERE
-	CASE
-		WHEN positionUTF8(p.LastName, 'p') = toInt32(0)
-			THEN toInt32(-1)
-		ELSE CHAR_LENGTH(p.LastName) - positionUTF8(reverseUTF8(p.LastName), 'p')
-	END = toInt32(2) AND
-	p.PersonID = toInt32(1)
+	CHAR_LENGTH(p.LastName) - positionUTF8(reverseUTF8(p.LastName), 'p') = 2 AND
+	(positionUTF8(p.LastName, 'p') <> 0 OR positionUTF8(p.LastName, 'p') IS NULL) AND
+	p.PersonID = 1
 

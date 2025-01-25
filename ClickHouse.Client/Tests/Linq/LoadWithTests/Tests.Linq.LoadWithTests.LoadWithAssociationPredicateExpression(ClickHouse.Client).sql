@@ -20,7 +20,7 @@ INSERT INTO ParentRecord
 	Id
 )
 VALUES
-(toInt32(1))
+(1)
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
@@ -48,43 +48,45 @@ INSERT INTO ChildRecord
 	IsActive
 )
 VALUES
-(toInt32(11),toInt32(1),true),
-(toInt32(12),toInt32(1),false),
-(toInt32(13),toInt32(1),true)
+(11,1,true),
+(12,1,false),
+(13,1,true)
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
 
 SELECT
-	lw_ParentRecord.Id,
-	detail.Id,
-	detail.ParentId,
-	detail.IsActive
+	m_1.Id,
+	d.Id,
+	d.ParentId,
+	d.IsActive
 FROM
 	(
 		SELECT DISTINCT
 			t1.Id as Id
 		FROM
 			ParentRecord t1
-	) lw_ParentRecord
-		INNER JOIN ChildRecord detail ON lw_ParentRecord.Id = detail.ParentId
+	) m_1
+		INNER JOIN ChildRecord d ON m_1.Id = d.ParentId
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
 
 SELECT
-	lw_ParentRecord.Id,
-	detail.Id,
-	detail.ParentId,
-	detail.IsActive
+	m_1.Id,
+	d.Id,
+	d.ParentId,
+	d.IsActive
 FROM
 	(
 		SELECT DISTINCT
 			t1.Id as Id
 		FROM
 			ParentRecord t1
-	) lw_ParentRecord
-		INNER JOIN ChildRecord detail ON lw_ParentRecord.Id = detail.ParentId AND detail.IsActive = true
+	) m_1
+		INNER JOIN ChildRecord d ON m_1.Id = d.ParentId
+WHERE
+	d.IsActive = true
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse

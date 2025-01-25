@@ -1,10 +1,10 @@
 ﻿BeforeExecute
 -- SqlServer.2012.MS SqlServer.2012
-DECLARE @p NVarChar(4000) -- String
-SET     @p = N'10'
+DECLARE @month Int -- Int32
+SET     @month = 10
 
 SELECT
-	Convert(Date, format((2010 + [t].[ID]), 'd4') + N'-' + @p + N'-01')
+	DATETIMEFROMPARTS(2010 + [t].[ID], @month, 1, 0, 0, 0, 0)
 FROM
 	[LinqDataTypes] [t]
 

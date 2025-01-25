@@ -1,19 +1,17 @@
 ﻿BeforeExecute
 -- SqlServer.2012.MS SqlServer.2012
-DECLARE @DateTimeValue DateTime2
-SET     @DateTimeValue = DATETIME2FROMPARTS(2009, 1, 1, 0, 0, 0, 0, 7)
 
 SELECT
-	[_].[ID],
-	[_].[MoneyValue],
-	[_].[DateTimeValue],
-	[_].[BoolValue],
-	[_].[GuidValue],
-	[_].[BinaryValue],
-	[_].[SmallIntValue],
-	[_].[StringValue]
+	[t1].[ID],
+	[t1].[MoneyValue],
+	[t1].[DateTimeValue],
+	[t1].[BoolValue],
+	[t1].[GuidValue],
+	[t1].[BinaryValue],
+	[t1].[SmallIntValue],
+	[t1].[StringValue]
 FROM
-	[LinqDataTypes] [_]
+	[LinqDataTypes] [t1]
 WHERE
-	[_].[DateTimeValue] > @DateTimeValue
+	[t1].[DateTimeValue] > DATETIMEFROMPARTS(2009, 1, 1, 0, 0, 0, 0)
 

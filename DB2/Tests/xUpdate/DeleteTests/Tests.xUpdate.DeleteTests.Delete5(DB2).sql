@@ -26,7 +26,7 @@ INSERT INTO "Parent"
 )
 VALUES
 (
-	@ParentID,
+	CAST(@ParentID AS Int),
 	1
 )
 
@@ -42,7 +42,7 @@ INSERT INTO "Parent"
 )
 VALUES
 (
-	@ParentID,
+	CAST(@ParentID AS Int),
 	1
 )
 
@@ -50,11 +50,11 @@ BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
-	"Parent" "_"
+	"Parent" "t1"
 WHERE
-	"_"."ParentID" > 1000
+	"t1"."ParentID" > 1000
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
@@ -68,9 +68,9 @@ BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
-	"Parent" "_"
+	"Parent" "t1"
 WHERE
-	"_"."ParentID" > 1000
+	"t1"."ParentID" > 1000
 

@@ -36,15 +36,13 @@ BeforeExecute
 -- SqlServer.Contained SqlServer.2019
 
 SELECT
-	Max([t1].[Value4]),
-	STRING_AGG([t1].[Value4], N' -> ')
+	MAX([g_1].[Value4]),
+	STRING_AGG([g_1].[Value4], N' -> ')
 FROM
-	[SampleClass] [t1]
+	[SampleClass] [g_1]
 GROUP BY
-	[t1].[Id],
-	[t1].[Value4]
-ORDER BY
-	[t1].[Id]
+	[g_1].[Id],
+	[g_1].[Value4]
 
 BeforeExecute
 -- SqlServer.Contained SqlServer.2019

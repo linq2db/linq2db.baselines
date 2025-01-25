@@ -2,16 +2,16 @@
 -- ClickHouse.Client ClickHouse
 
 SELECT
-	_.ParentID,
-	_.Value1
+	t1.ParentID,
+	t1.Value1
 FROM
-	Parent _
+	Parent t1
 WHERE
 	(
 		SELECT
 			r.GuidValue
 		FROM
 			LinqDataTypes r
-		LIMIT toInt32(1)
+		LIMIT 1
 	) IS NOT NULL
 

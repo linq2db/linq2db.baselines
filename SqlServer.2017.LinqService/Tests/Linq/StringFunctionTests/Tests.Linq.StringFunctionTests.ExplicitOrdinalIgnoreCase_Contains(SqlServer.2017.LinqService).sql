@@ -31,7 +31,7 @@ BeforeExecute
 -- SqlServer.2017
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	[CollatedTable] [r]
 WHERE
@@ -41,7 +41,7 @@ BeforeExecute
 -- SqlServer.2017
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	[CollatedTable] [r]
 WHERE
@@ -51,7 +51,7 @@ BeforeExecute
 -- SqlServer.2017
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	[CollatedTable] [r]
 WHERE
@@ -61,7 +61,7 @@ BeforeExecute
 -- SqlServer.2017
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	[CollatedTable] [r]
 WHERE

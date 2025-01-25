@@ -17,7 +17,7 @@ SELECT
 FROM
 	"LinqDataTypes" t1
 WHERE
-	(:param = t1."SmallIntValue" OR :param IS NULL AND t1."SmallIntValue" IS NULL)
+	CAST(:param AS Int) = t1."SmallIntValue"
 
 BeforeExecute
 -- Oracle.18.Managed Oracle.Managed Oracle12

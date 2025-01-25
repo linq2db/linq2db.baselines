@@ -52,11 +52,11 @@ BeforeExecute
 -- Sybase.Managed Sybase
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
-	[Parent] [_]
+	[Parent] [t1]
 WHERE
-	[_].[ParentID] > 1000
+	[t1].[ParentID] > 1000
 
 BeforeExecute
 -- Sybase.Managed Sybase
@@ -71,9 +71,9 @@ BeforeExecute
 -- Sybase.Managed Sybase
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
-	[Parent] [_]
+	[Parent] [t1]
 WHERE
-	[_].[ParentID] > 1000
+	[t1].[ParentID] > 1000
 

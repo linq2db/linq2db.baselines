@@ -2,14 +2,14 @@
 -- DB2 DB2.LUW DB2LUW
 
 SELECT
-	"t1"."FirstName",
-	"t1"."LastName",
-	Count(*)
+	"g_1"."FirstName",
+	"g_1"."LastName",
+	COUNT(*)
 FROM
-	"Person" "t1"
+	"Person" "g_1"
 GROUP BY
-	"t1"."FirstName",
-	"t1"."LastName"
+	"g_1"."FirstName",
+	"g_1"."LastName"
 ORDER BY
-	"t1"."FirstName"
+	"g_1"."FirstName"
 

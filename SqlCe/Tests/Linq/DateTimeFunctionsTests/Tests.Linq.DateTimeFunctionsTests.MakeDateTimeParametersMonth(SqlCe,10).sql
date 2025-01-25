@@ -1,10 +1,10 @@
 ﻿BeforeExecute
 -- SqlCe
-DECLARE @p NVarChar(2) -- String
-SET     @p = '10'
+DECLARE @month Int -- Int32
+SET     @month = 10
 
 SELECT
-	Convert(Datetime, REPLICATE('0', 4 - LEN(CAST((2010 + [t].[ID]) as NVARCHAR(4)))) + CAST((2010 + [t].[ID]) as NVARCHAR(4)) + '-' + @p + '-01')
+	CAST(REPLICATE('0', 4 - LEN(CAST(2010 + [t].[ID] AS NVarChar(4)))) + CAST(2010 + [t].[ID] AS NVarChar(4)) + '-' + REPLICATE('0', 2 - LEN(CAST(@month AS NVarChar(2)))) + CAST(@month AS NVarChar(2)) + '-01' AS DateTime) as [c1]
 FROM
 	[LinqDataTypes] [t]
 

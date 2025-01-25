@@ -39,34 +39,34 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
-	e_1.ManufacturerId,
-	e_1.CountryCode,
-	e_1.Name,
-	ce.Code,
-	ce.Name,
 	t1.ManufacturerId,
 	t1.CountryCode,
 	t1.Name,
-	t1.co,
-	t1.Name_1
+	co.Code,
+	co.Name,
+	m_2.ManufacturerId,
+	m_2.CountryCode,
+	m_2.Name,
+	m_2.Code,
+	m_2.Name_1
 FROM
-	Manufacturer e_1
-		LEFT JOIN Country ce ON e_1.CountryCode = ce.Code
+	Manufacturer t1
+		LEFT JOIN Country co ON t1.CountryCode = co.Code
 		LEFT JOIN (
 			SELECT
-				e.ManufacturerId as ManufacturerId,
-				e.CountryCode as CountryCode,
-				e.Name as Name,
-				ce_1.Code as co,
-				ce_1.Name as Name_1
+				m_1.ManufacturerId as ManufacturerId,
+				m_1.CountryCode as CountryCode,
+				m_1.Name as Name,
+				co_1.Code as Code,
+				co_1.Name as Name_1
 			FROM
-				Manufacturer e
-					LEFT JOIN Country ce_1 ON e.CountryCode = ce_1.Code
+				Manufacturer m_1
+					LEFT JOIN Country co_1 ON m_1.CountryCode = co_1.Code
 			WHERE
-				e.ManufacturerId = toInt32(2)
-		) t1 ON 1=1
+				m_1.ManufacturerId = 2
+		) m_2 ON 1=1
 WHERE
-	e_1.ManufacturerId = toInt32(1)
+	t1.ManufacturerId = 1
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse

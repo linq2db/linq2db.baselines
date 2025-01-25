@@ -2,12 +2,12 @@
 -- SqlCe
 
 SELECT
-	[t1].[ID],
-	Count(*),
-	Sum(DateDiff(millisecond, [t1].[DateTimeValue], DateAdd(day, 1, [t1].[DateTimeValue]))),
-	Max(DateDiff(millisecond, [t1].[DateTimeValue], DateAdd(day, 1, [t1].[DateTimeValue])))
+	[g_1].[ID],
+	COUNT(*) as [COUNT_1],
+	SUM(DateDiff(millisecond, [g_1].[DateTimeValue], DateAdd(day, 1, [g_1].[DateTimeValue]))) as [SUM_1],
+	MAX(DateDiff(millisecond, [g_1].[DateTimeValue], DateAdd(day, 1, [g_1].[DateTimeValue]))) as [MAX_1]
 FROM
-	[LinqDataTypes] [t1]
+	[LinqDataTypes] [g_1]
 GROUP BY
-	[t1].[ID]
+	[g_1].[ID]
 

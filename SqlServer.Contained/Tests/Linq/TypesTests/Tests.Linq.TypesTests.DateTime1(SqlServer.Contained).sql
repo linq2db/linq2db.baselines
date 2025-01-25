@@ -17,5 +17,5 @@ SELECT
 FROM
 	[LinqDataTypes] [t]
 WHERE
-	Convert(Date, [t].[DateTimeValue]) > @Date
+	CAST([t].[DateTimeValue] AS Date) > @Date
 

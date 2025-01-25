@@ -2,8 +2,6 @@
 -- Oracle.12.Managed Oracle.Managed Oracle12
 DECLARE @skip Int32
 SET     @skip = 300000
-DECLARE @take Int32
-SET     @take = 1
 
 SELECT
 	p."ParentID",
@@ -12,5 +10,5 @@ FROM
 	"Parent" p
 WHERE
 	p."ParentID" > 1
-OFFSET :skip ROWS FETCH NEXT :take ROWS ONLY 
+OFFSET :skip ROWS FETCH NEXT 1 ROWS ONLY 
 

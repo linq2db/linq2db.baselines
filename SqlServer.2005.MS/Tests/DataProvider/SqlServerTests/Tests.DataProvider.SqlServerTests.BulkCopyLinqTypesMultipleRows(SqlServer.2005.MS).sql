@@ -25,9 +25,9 @@ SELECT 4009,1009,CAST('2001-01-11T01:11:21.100' AS DATETIME),1,'233bf399-9710-4e
 BeforeExecute
 -- SqlServer.2005.MS SqlServer.2005
 
-DELETE [t1]
+DELETE [p]
 FROM
-	[dbo].[LinqDataTypes] [t1]
+	[dbo].[LinqDataTypes] [p]
 WHERE
-	[t1].[ID] >= 4000
+	[p].[ID] >= 4000
 

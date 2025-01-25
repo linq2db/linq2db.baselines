@@ -46,7 +46,7 @@ USING (SELECT @id AS [PersonID]) [s] ON
 WHEN MATCHED THEN
 	UPDATE 
 	SET
-		[t1].[Diagnosis] = Convert(NVarChar(11), Len([t1].[Diagnosis]) + @i)
+		[Diagnosis] = CAST(Len([t1].[Diagnosis]) + @i AS NVarChar(11))
 WHEN NOT MATCHED THEN
 	INSERT
 	(
@@ -74,7 +74,7 @@ USING (SELECT @id AS [PersonID]) [s] ON
 WHEN MATCHED THEN
 	UPDATE 
 	SET
-		[t1].[Diagnosis] = Convert(NVarChar(11), Len([t1].[Diagnosis]) + @i)
+		[Diagnosis] = CAST(Len([t1].[Diagnosis]) + @i AS NVarChar(11))
 WHEN NOT MATCHED THEN
 	INSERT
 	(
@@ -102,7 +102,7 @@ USING (SELECT @id AS [PersonID]) [s] ON
 WHEN MATCHED THEN
 	UPDATE 
 	SET
-		[t1].[Diagnosis] = Convert(NVarChar(11), Len([t1].[Diagnosis]) + @i)
+		[Diagnosis] = CAST(Len([t1].[Diagnosis]) + @i AS NVarChar(11))
 WHEN NOT MATCHED THEN
 	INSERT
 	(
@@ -117,12 +117,10 @@ WHEN NOT MATCHED THEN
 
 BeforeExecute
 -- SqlServer.Contained SqlServer.2019 (asynchronously)
-DECLARE @take Int -- Int32
-SET     @take = 2
 DECLARE @id Int -- Int32
 SET     @id = 5
 
-SELECT TOP (@take)
+SELECT TOP (2)
 	[p].[PersonID],
 	[p].[Diagnosis]
 FROM

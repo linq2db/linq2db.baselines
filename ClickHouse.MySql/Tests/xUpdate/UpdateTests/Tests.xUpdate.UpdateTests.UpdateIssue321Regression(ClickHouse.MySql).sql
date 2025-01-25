@@ -16,14 +16,14 @@ INSERT INTO LinqDataTypes
 )
 VALUES
 (
-	toInt32(100500),
+	100500,
 	toDecimal128('3000', 10),
 	NULL,
 	NULL,
 	NULL,
 	NULL,
 	NULL,
-	toInt32(60),
+	60,
 	NULL,
 	NULL
 )
@@ -34,18 +34,18 @@ BeforeExecute
 ALTER TABLE
 	LinqDataTypes
 UPDATE
-	SmallIntValue = toInt16(MoneyValue / (toInt32(13621) / IntValue))
+	SmallIntValue = toInt16(toDecimal128(toFloat64(MoneyValue) / toFloat64(toDecimal128(toFloat64(toDecimal128('13621', 10)) / IntValue, toUInt8(10))), toUInt8(10)))
 WHERE
-	ID = toInt32(100500)
+	ID = 100500
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
-	_.SmallIntValue
+	t1.SmallIntValue
 FROM
-	LinqDataTypes _
+	LinqDataTypes t1
 WHERE
-	_.ID = toInt32(100500)
-LIMIT toInt32(1)
+	t1.ID = 100500
+LIMIT 1
 

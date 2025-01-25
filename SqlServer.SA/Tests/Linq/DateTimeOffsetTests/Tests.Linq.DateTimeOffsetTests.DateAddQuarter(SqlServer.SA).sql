@@ -55,7 +55,7 @@ BeforeExecute
 -- SqlServer.SA SqlServer.2019
 
 SELECT
-	DateAdd(quarter, -1, [t].[TransactionDate])
+	CAST(DateAdd(quarter, -1, [t].[TransactionDate]) AS Date)
 FROM
 	[Transactions] [t]
 

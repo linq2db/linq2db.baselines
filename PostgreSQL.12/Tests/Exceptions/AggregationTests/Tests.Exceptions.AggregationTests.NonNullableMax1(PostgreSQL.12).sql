@@ -2,7 +2,7 @@
 -- PostgreSQL.12 PostgreSQL.9.5 PostgreSQL
 
 SELECT
-	Max(t1."ParentID")
+	MAX(t1."ParentID")
 FROM
 	"Parent" t1
 WHERE

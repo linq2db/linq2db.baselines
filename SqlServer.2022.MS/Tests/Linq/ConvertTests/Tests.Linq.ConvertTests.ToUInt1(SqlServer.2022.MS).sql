@@ -2,7 +2,7 @@
 -- SqlServer.2022.MS SqlServer.2022
 
 SELECT
-	Convert(BigInt, [t].[MoneyValue])
+	CAST(Floor([t].[MoneyValue]) AS BigInt)
 FROM
 	[LinqDataTypes] [t]
 

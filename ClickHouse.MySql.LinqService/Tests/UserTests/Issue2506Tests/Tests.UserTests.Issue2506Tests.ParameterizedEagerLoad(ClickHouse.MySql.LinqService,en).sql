@@ -26,7 +26,7 @@ INSERT INTO Item
 )
 VALUES
 (
-	toInt32(1),
+	1,
 	'Item 1'
 )
 
@@ -40,7 +40,7 @@ INSERT INTO Item
 )
 VALUES
 (
-	toInt32(2),
+	2,
 	'Item 2'
 )
 
@@ -74,7 +74,7 @@ INSERT INTO ItemText
 )
 VALUES
 (
-	toInt32(1),
+	1,
 	'de',
 	'Item 1 german text'
 )
@@ -90,7 +90,7 @@ INSERT INTO ItemText
 )
 VALUES
 (
-	toInt32(1),
+	1,
 	'en',
 	'Item 1 english text'
 )
@@ -106,7 +106,7 @@ INSERT INTO ItemText
 )
 VALUES
 (
-	toInt32(2),
+	2,
 	'de',
 	'Item 2 german text'
 )
@@ -122,7 +122,7 @@ INSERT INTO ItemText
 )
 VALUES
 (
-	toInt32(2),
+	2,
 	'en',
 	'Item 2 english text'
 )
@@ -131,12 +131,14 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
-	item_1.Id,
-	detail.Lang,
-	detail.Text
+	m_1.Id,
+	d.Lang,
+	d.Text
 FROM
-	Item item_1
-		INNER JOIN ItemText detail ON item_1.Id = detail.ItemId AND detail.Lang = 'en'
+	Item m_1
+		INNER JOIN ItemText d ON m_1.Id = d.ItemId
+WHERE
+	d.Lang = 'en'
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse

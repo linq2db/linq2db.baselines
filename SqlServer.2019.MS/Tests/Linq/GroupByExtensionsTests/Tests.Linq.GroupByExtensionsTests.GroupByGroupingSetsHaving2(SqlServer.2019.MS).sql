@@ -39,24 +39,24 @@ BeforeExecute
 -- SqlServer.2019.MS SqlServer.2019
 
 SELECT
-	[g_1].[Id1],
-	Count(*)
+	[gg].[Id1],
+	COUNT(*)
 FROM
 	(
 		SELECT DISTINCT
-			[selectParam].[Id1],
-			[selectParam].[Id2],
-			[selectParam].[Value] as [Value_1]
+			[g_1].[Id1],
+			[g_1].[Id2],
+			[g_1].[Value] as [Value_1]
 		FROM
-			[GroupSampleClass] [selectParam]
-	) [g_1]
+			[GroupSampleClass] [g_1]
+	) [gg]
 GROUP BY GROUPING SETS (
-	([g_1].[Id1], [g_1].[Id2]),
-	([g_1].[Id2]),
+	([gg].[Id1], [gg].[Id2]),
+	([gg].[Id2]),
 	()
 )
 HAVING
-	Count(*) > 0
+	COUNT(*) > 0
 
 BeforeExecute
 -- SqlServer.2019.MS SqlServer.2019

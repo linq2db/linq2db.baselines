@@ -25,35 +25,30 @@ INSERT INTO Transactions
 	TransactionDate
 )
 VALUES
-(toInt32(1),toDate32('2020-02-29')),
-(toInt32(2),toDate32('2021-02-28')),
-(toInt32(3),toDate32('2019-02-28')),
-(toInt32(4),toDate32('2020-03-29')),
-(toInt32(5),toDate32('2020-01-29')),
-(toInt32(6),toDate32('2020-03-01')),
-(toInt32(7),toDate32('2020-02-28')),
-(toInt32(8),toDate32('2020-08-09')),
-(toInt32(9),toDate32('2021-08-09')),
-(toInt32(10),toDate32('2019-08-09')),
-(toInt32(11),toDate32('2020-09-09')),
-(toInt32(12),toDate32('2020-07-09')),
-(toInt32(13),toDate32('2020-08-10')),
-(toInt32(14),toDate32('2020-08-08'))
+(1,toDate32('2020-02-29')),
+(2,toDate32('2021-02-28')),
+(3,toDate32('2019-02-28')),
+(4,toDate32('2020-03-29')),
+(5,toDate32('2020-01-29')),
+(6,toDate32('2020-03-01')),
+(7,toDate32('2020-02-28')),
+(8,toDate32('2020-08-09')),
+(9,toDate32('2021-08-09')),
+(10,toDate32('2019-08-09')),
+(11,toDate32('2020-09-09')),
+(12,toDate32('2020-07-09')),
+(13,toDate32('2020-08-10')),
+(14,toDate32('2020-08-08'))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
-	d.c1
+	d.TransactionDate
 FROM
-	(
-		SELECT
-			t.TransactionDate as c1
-		FROM
-			Transactions t
-	) d
+	Transactions d
 WHERE
-	DAY(d.c1) > toInt32(0)
+	toDayOfMonth(d.TransactionDate) > 0
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse

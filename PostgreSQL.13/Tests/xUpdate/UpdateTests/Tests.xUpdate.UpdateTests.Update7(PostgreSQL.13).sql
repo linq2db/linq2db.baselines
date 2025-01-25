@@ -1,19 +1,19 @@
 ﻿BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
-DECLARE @Value1 Integer -- Int32
-SET     @Value1 = 1
 DECLARE @ParentID Integer -- Int32
 SET     @ParentID = 1001
+DECLARE @Value1 Integer -- Int32
+SET     @Value1 = 1
 
 INSERT INTO "Parent"
 (
-	"Value1",
-	"ParentID"
+	"ParentID",
+	"Value1"
 )
 VALUES
 (
-	:Value1,
-	:ParentID
+	:ParentID,
+	:Value1
 )
 
 BeforeExecute
@@ -22,7 +22,7 @@ DECLARE @id Integer -- Int32
 SET     @id = 1001
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	"Parent" p
 WHERE
@@ -48,7 +48,7 @@ DECLARE @id Integer -- Int32
 SET     @id = 1001
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	"Parent" p
 WHERE
@@ -74,7 +74,7 @@ DECLARE @id Integer -- Int32
 SET     @id = 1001
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	"Parent" p
 WHERE

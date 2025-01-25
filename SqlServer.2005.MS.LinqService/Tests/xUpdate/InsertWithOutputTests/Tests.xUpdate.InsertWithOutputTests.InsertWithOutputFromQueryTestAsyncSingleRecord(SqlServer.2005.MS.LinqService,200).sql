@@ -254,11 +254,15 @@ IF (OBJECT_ID(N'[DestinationTable]', N'U') IS NULL)
 
 BeforeExecute
 -- SqlServer.2005.MS SqlServer.2005
+DECLARE @param Int -- Int32
+SET     @param = 200
+DECLARE @param_1 Int -- Int32
+SET     @param_1 = 200
 
 SELECT
-	[s].[Id],
-	[s].[Value],
-	[s].[ValueStr]
+	[s].[Id] + @param,
+	[s].[Value] + @param,
+	[s].[ValueStr] + CAST(@param_1 AS VarChar(11))
 FROM
 	[TableWithData] [s]
 WHERE

@@ -2,9 +2,14 @@
 -- ClickHouse.Client ClickHouse
 
 SELECT
-	toUInt8(t.MoneyValue)
+	p_1.c1
 FROM
-	LinqDataTypes t
+	(
+		SELECT
+			toUInt8(p.MoneyValue) as c1
+		FROM
+			LinqDataTypes p
+	) p_1
 WHERE
-	toUInt8(t.MoneyValue) > toUInt8(0)
+	p_1.c1 > toUInt8(0)
 

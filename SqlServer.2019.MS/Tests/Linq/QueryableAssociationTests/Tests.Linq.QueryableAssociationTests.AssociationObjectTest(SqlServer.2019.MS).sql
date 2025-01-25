@@ -70,23 +70,21 @@ VALUES
 
 BeforeExecute
 -- SqlServer.2019.MS SqlServer.2019
-DECLARE @take Int -- Int32
-SET     @take = 1
 
 SELECT
-	[a_Other].[Id],
-	[a_Other].[StrValue]
+	[t1].[Id],
+	[t1].[StrValue]
 FROM
 	[SomeEntity] [e]
 		OUTER APPLY (
-			SELECT TOP (@take)
-				[se].[Id],
-				[se].[StrValue]
+			SELECT TOP (1)
+				[a_Other].[Id],
+				[a_Other].[StrValue] + N'_A' as [StrValue]
 			FROM
-				[SomeOtherEntity] [se]
+				[SomeOtherEntity] [a_Other]
 			WHERE
-				[se].[Id] = [e].[Id]
-		) [a_Other]
+				[a_Other].[Id] = [e].[Id]
+		) [t1]
 
 BeforeExecute
 -- SqlServer.2019.MS SqlServer.2019

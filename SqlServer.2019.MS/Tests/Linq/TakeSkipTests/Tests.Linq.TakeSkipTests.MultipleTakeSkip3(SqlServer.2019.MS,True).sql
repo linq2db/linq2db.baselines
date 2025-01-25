@@ -34,8 +34,8 @@ BeforeExecute
 -- SqlServer.2019.MS SqlServer.2019
 DECLARE @skip Int -- Int32
 SET     @skip = 3
-DECLARE @skip_1 Int -- Int32
-SET     @skip_1 = 1
+DECLARE @take Int -- Int32
+SET     @take = 1
 
 SELECT
 	[t1].[Value]
@@ -43,7 +43,7 @@ FROM
 	[TakeSkipClass] [t1]
 ORDER BY
 	[t1].[Value]
-OFFSET @skip ROWS FETCH NEXT @skip_1 ROWS ONLY 
+OFFSET @skip ROWS FETCH NEXT @take ROWS ONLY 
 
 BeforeExecute
 -- SqlServer.2019.MS SqlServer.2019

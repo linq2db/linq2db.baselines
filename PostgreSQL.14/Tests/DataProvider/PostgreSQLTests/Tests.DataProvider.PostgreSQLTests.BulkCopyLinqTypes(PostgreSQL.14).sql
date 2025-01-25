@@ -28,9 +28,9 @@ BeforeExecute
 -- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
 
 DELETE FROM
-	"LinqDataTypes" t1
+	"LinqDataTypes" p
 WHERE
-	t1."ID" >= 4000
+	p."ID" >= 4000
 
 BeforeExecute
 INSERT BULK "LinqDataTypes"(ID, MoneyValue, DateTimeValue, BoolValue, GuidValue, BinaryValue, SmallIntValue, StringValue)
@@ -39,7 +39,7 @@ BeforeExecute
 -- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
 
 DELETE FROM
-	"LinqDataTypes" t1
+	"LinqDataTypes" p
 WHERE
-	t1."ID" >= 4000
+	p."ID" >= 4000
 

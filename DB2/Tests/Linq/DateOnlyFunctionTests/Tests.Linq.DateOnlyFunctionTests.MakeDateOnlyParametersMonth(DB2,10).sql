@@ -1,10 +1,10 @@
 ﻿BeforeExecute
 -- DB2 DB2.LUW DB2LUW
-DECLARE @p VarChar(2) -- String
-SET     @p = '10'
+DECLARE @month Integer(4) -- Int32
+SET     @month = 10
 
 SELECT
-	Date(Lpad((2010 + "t".ID),4,'0') || '-' || @p || '-01')
+	CAST(LPad(2010 + "t".ID, 4, '0') || '-' || LPad(@month, 2, '0') || '-01' AS Date)
 FROM
 	"LinqDataTypes" "t"
 

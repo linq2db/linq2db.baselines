@@ -1,11 +1,11 @@
 ﻿BeforeExecute
 -- SqlServer.2019.MS SqlServer.2019
 
-DELETE [t1]
+DELETE [c_1]
 FROM
-	[Child] [t1]
+	[Child] [c_1]
 WHERE
-	[t1].[ChildID] > 1000
+	[c_1].[ChildID] > 1000
 
 BeforeExecute
 -- SqlServer.2019.MS SqlServer.2019
@@ -26,8 +26,10 @@ IF (OBJECT_ID(N'[TInserted]', N'U') IS NULL)
 
 BeforeExecute
 -- SqlServer.2019.MS SqlServer.2019
+DECLARE @id Int -- Int32
+SET     @id = 1001
 DECLARE @param Int -- Int32
-SET     @param = 1201
+SET     @param = 200
 
 INSERT INTO [Child]
 (
@@ -44,7 +46,7 @@ INTO [TInserted]
 )
 SELECT
 	[c_1].[ParentID],
-	@param
+	@id + @param
 FROM
 	[Child] [c_1]
 WHERE
@@ -78,9 +80,9 @@ DROP TABLE IF EXISTS [TInserted]
 BeforeExecute
 -- SqlServer.2019.MS SqlServer.2019
 
-DELETE [t1]
+DELETE [c_1]
 FROM
-	[Child] [t1]
+	[Child] [c_1]
 WHERE
-	[t1].[ChildID] > 1000
+	[c_1].[ChildID] > 1000
 

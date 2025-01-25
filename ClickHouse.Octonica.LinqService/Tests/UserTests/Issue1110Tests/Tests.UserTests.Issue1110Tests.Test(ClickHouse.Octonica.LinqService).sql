@@ -26,7 +26,7 @@ INSERT INTO Issue1110TB
 )
 VALUES
 (
-	toInt32(10),
+	10,
 	toDateTime64('2020-02-29 17:54:55.1231234', 7)
 )
 

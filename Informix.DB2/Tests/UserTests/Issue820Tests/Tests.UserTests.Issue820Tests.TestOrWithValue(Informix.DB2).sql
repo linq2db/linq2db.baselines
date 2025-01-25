@@ -2,14 +2,14 @@
 -- Informix.DB2 Informix
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	LinqDataTypes t1
 
 BeforeExecute
 -- Informix.DB2 Informix
-DECLARE @Value SmallInt(2) -- Int16
-SET     @Value = 1
+DECLARE @param SmallInt(2) -- Int16
+SET     @param = 1
 
 SELECT
 	t1.ID,
@@ -25,7 +25,7 @@ SELECT
 FROM
 	LinqDataTypes t1
 WHERE
-	@Value = t1.SmallIntValue
+	@param = t1.SmallIntValue
 
 BeforeExecute
 -- Informix.DB2 Informix

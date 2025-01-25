@@ -5,7 +5,7 @@ SET     @take = 10
 
 SELECT
 	[p_1].[ParentID],
-	[r].[ChildID]
+	[c_1].[ChildID]
 FROM
 	(
 		SELECT TOP (@take)
@@ -15,5 +15,5 @@ FROM
 		WHERE
 			[p].[ParentID] > 0
 	) [p_1]
-		INNER JOIN [Child] [r] ON [p_1].[ParentID] = [r].[ParentID]
+		INNER JOIN [Child] [c_1] ON [p_1].[ParentID] = [c_1].[ParentID]
 

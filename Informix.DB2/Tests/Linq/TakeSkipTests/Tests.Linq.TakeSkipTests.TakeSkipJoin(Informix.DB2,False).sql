@@ -18,7 +18,7 @@ BeforeExecute
 
 SELECT
 	e.ID,
-	t7.SmallIntValue
+	p.SmallIntValue
 FROM
 	(
 		SELECT FIRST 15
@@ -80,8 +80,8 @@ FROM
 					FROM
 						LinqDataTypes t5
 				) t6
-		) t7 ON t7.ID = e.ID
+		) p ON p.ID = e.ID
 ORDER BY
-	t7.ID,
-	e.ID
+	e.ID,
+	p.ID
 

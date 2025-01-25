@@ -35,18 +35,16 @@ SELECT @@IDENTITY
 
 BeforeExecute
 -- SqlCe
-DECLARE @take Int -- Int32
-SET     @take = 2
 DECLARE @id Int -- Int32
 SET     @id = 1
 
-SELECT TOP (@take)
-	[_].[Id],
-	[_].[Has]
+SELECT TOP (2)
+	[t1].[Id],
+	[t1].[Has]
 FROM
-	[Issue1438] [_]
+	[Issue1438] [t1]
 WHERE
-	[_].[Id] = @id
+	[t1].[Id] = @id
 
 BeforeExecute
 -- SqlCe

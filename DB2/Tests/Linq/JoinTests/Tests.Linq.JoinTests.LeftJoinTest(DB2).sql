@@ -7,12 +7,12 @@ SELECT
 	"p1"."LastName",
 	"p1"."MiddleName",
 	"p1"."Gender",
-	"g_1"."FirstName",
-	"g_1"."PersonID",
-	"g_1"."LastName",
-	"g_1"."MiddleName",
-	"g_1"."Gender"
+	"p2"."FirstName",
+	"p2"."PersonID",
+	"p2"."LastName",
+	"p2"."MiddleName",
+	"p2"."Gender"
 FROM
 	"Person" "p1"
-		LEFT JOIN "Person" "g_1" ON "p1"."PersonID" = "g_1"."PersonID"
+		LEFT JOIN "Person" "p2" ON "p1"."PersonID" = "p2"."PersonID"
 

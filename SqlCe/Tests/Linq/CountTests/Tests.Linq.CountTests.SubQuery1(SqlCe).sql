@@ -3,20 +3,18 @@
 
 SELECT
 	[p].[ParentID],
-	[t1].[Count_1]
+	[t1].[COUNT_1]
 FROM
 	[Parent] [p]
-		LEFT JOIN (
+		OUTER APPLY (
 			SELECT
-				Count(*) as [Count_1],
-				[c_1].[ParentID]
+				COUNT(*) as [COUNT_1]
 			FROM
-				[Child] [c_1]
+				[Child] [a_Children]
 			WHERE
-				Convert(Decimal, [c_1].[ChildID]) <> 0
-			GROUP BY
-				[c_1].[ParentID]
-		) [t1] ON [p].[ParentID] = [t1].[ParentID] AND [t1].[ParentID] = [p].[ParentID]
+				[p].[ParentID] = [a_Children].[ParentID] AND [a_Children].[ParentID] = [p].[ParentID] AND
+				CAST([a_Children].[ChildID] AS Decimal) <> 0
+		) [t1]
 WHERE
 	[p].[ParentID] <> 5
 

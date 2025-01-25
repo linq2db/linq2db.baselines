@@ -155,13 +155,16 @@ VALUES
 
 BeforeExecute
 -- Informix.DB2 Informix (asynchronously)
+DECLARE @Id Integer(4) -- Int32
+SET     @Id = 2
 
 SELECT FIRST 1
+	2,
 	c_1.Id
 FROM
 	AsyncDataTable c_1
 WHERE
-	c_1.Id = 2
+	c_1.Id = @Id
 
 BeforeExecute
 -- Informix.DB2 Informix

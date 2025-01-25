@@ -8,8 +8,6 @@ WHERE
 
 BeforeExecute
 -- Informix.DB2 Informix (asynchronously)
-DECLARE @id Integer(4) -- Int32
-SET     @id = 1001
 
 INSERT INTO Child
 (
@@ -19,7 +17,7 @@ INSERT INTO Child
 VALUES
 (
 	1,
-	@id
+	1001
 )
 
 BeforeExecute
@@ -28,7 +26,7 @@ DECLARE @id Integer(4) -- Int32
 SET     @id = 1001
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	Child c_1
 WHERE

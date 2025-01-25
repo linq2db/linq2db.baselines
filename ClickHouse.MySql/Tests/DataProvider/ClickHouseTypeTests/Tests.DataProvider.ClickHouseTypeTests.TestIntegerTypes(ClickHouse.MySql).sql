@@ -3886,7 +3886,7 @@ INSERT INTO `TypeTable``2`
 	ColumnNullable
 )
 VALUES
-(toInt32(0),NULL)
+(0,NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
@@ -3897,7 +3897,7 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = toInt32(0) AND r.ColumnNullable IS NULL
+	r.Column = 0 AND r.ColumnNullable IS NULL
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
@@ -3916,7 +3916,7 @@ INSERT INTO `TypeTable``2`
 )
 VALUES
 (
-	toInt32(0),
+	0,
 	NULL
 )
 
@@ -3929,7 +3929,7 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = toInt32(0) AND r.ColumnNullable IS NULL
+	r.Column = 0 AND r.ColumnNullable IS NULL
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
@@ -3947,7 +3947,7 @@ INSERT INTO `TypeTable``2`
 	ColumnNullable
 )
 VALUES
-(toInt32(0),NULL)
+(0,NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
@@ -3958,7 +3958,7 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = toInt32(0) AND r.ColumnNullable IS NULL
+	r.Column = 0 AND r.ColumnNullable IS NULL
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
@@ -3976,7 +3976,7 @@ INSERT INTO `TypeTable``2`
 	ColumnNullable
 )
 VALUES
-(toInt32(0),NULL)
+(0,NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
@@ -3987,7 +3987,7 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = toInt32(0) AND r.ColumnNullable IS NULL
+	r.Column = 0 AND r.ColumnNullable IS NULL
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse (asynchronously)
@@ -4005,7 +4005,7 @@ INSERT INTO `TypeTable``2`
 	ColumnNullable
 )
 VALUES
-(toInt32(0),NULL)
+(0,NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
@@ -4016,7 +4016,7 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = toInt32(0) AND r.ColumnNullable IS NULL
+	r.Column = 0 AND r.ColumnNullable IS NULL
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
@@ -4047,7 +4047,7 @@ INSERT INTO `TypeTable``2`
 	ColumnNullable
 )
 VALUES
-(toInt32(-2147483648),toInt32(2147483647))
+(-2147483648,2147483647)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
@@ -4058,7 +4058,7 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = toInt32(-2147483648) AND r.ColumnNullable = toInt32(2147483647)
+	r.Column = -2147483648 AND r.ColumnNullable = 2147483647
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
@@ -4077,8 +4077,8 @@ INSERT INTO `TypeTable``2`
 )
 VALUES
 (
-	toInt32(-2147483648),
-	toInt32(2147483647)
+	-2147483648,
+	2147483647
 )
 
 BeforeExecute
@@ -4090,7 +4090,7 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = toInt32(-2147483648) AND r.ColumnNullable = toInt32(2147483647)
+	r.Column = -2147483648 AND r.ColumnNullable = 2147483647
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
@@ -4108,7 +4108,7 @@ INSERT INTO `TypeTable``2`
 	ColumnNullable
 )
 VALUES
-(toInt32(-2147483648),toInt32(2147483647))
+(-2147483648,2147483647)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
@@ -4119,7 +4119,7 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = toInt32(-2147483648) AND r.ColumnNullable = toInt32(2147483647)
+	r.Column = -2147483648 AND r.ColumnNullable = 2147483647
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
@@ -4137,7 +4137,7 @@ INSERT INTO `TypeTable``2`
 	ColumnNullable
 )
 VALUES
-(toInt32(-2147483648),toInt32(2147483647))
+(-2147483648,2147483647)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
@@ -4148,7 +4148,7 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = toInt32(-2147483648) AND r.ColumnNullable = toInt32(2147483647)
+	r.Column = -2147483648 AND r.ColumnNullable = 2147483647
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse (asynchronously)
@@ -4166,7 +4166,7 @@ INSERT INTO `TypeTable``2`
 	ColumnNullable
 )
 VALUES
-(toInt32(-2147483648),toInt32(2147483647))
+(-2147483648,2147483647)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
@@ -4177,7 +4177,7 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = toInt32(-2147483648) AND r.ColumnNullable = toInt32(2147483647)
+	r.Column = -2147483648 AND r.ColumnNullable = 2147483647
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
@@ -4208,7 +4208,7 @@ INSERT INTO `TypeTable``2`
 	ColumnNullable
 )
 VALUES
-(toInt32(2147483647),toInt32(-2147483648))
+(2147483647,-2147483648)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
@@ -4219,7 +4219,7 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = toInt32(2147483647) AND r.ColumnNullable = toInt32(-2147483648)
+	r.Column = 2147483647 AND r.ColumnNullable = -2147483648
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
@@ -4238,8 +4238,8 @@ INSERT INTO `TypeTable``2`
 )
 VALUES
 (
-	toInt32(2147483647),
-	toInt32(-2147483648)
+	2147483647,
+	-2147483648
 )
 
 BeforeExecute
@@ -4251,7 +4251,7 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = toInt32(2147483647) AND r.ColumnNullable = toInt32(-2147483648)
+	r.Column = 2147483647 AND r.ColumnNullable = -2147483648
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
@@ -4269,7 +4269,7 @@ INSERT INTO `TypeTable``2`
 	ColumnNullable
 )
 VALUES
-(toInt32(2147483647),toInt32(-2147483648))
+(2147483647,-2147483648)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
@@ -4280,7 +4280,7 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = toInt32(2147483647) AND r.ColumnNullable = toInt32(-2147483648)
+	r.Column = 2147483647 AND r.ColumnNullable = -2147483648
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
@@ -4298,7 +4298,7 @@ INSERT INTO `TypeTable``2`
 	ColumnNullable
 )
 VALUES
-(toInt32(2147483647),toInt32(-2147483648))
+(2147483647,-2147483648)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
@@ -4309,7 +4309,7 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = toInt32(2147483647) AND r.ColumnNullable = toInt32(-2147483648)
+	r.Column = 2147483647 AND r.ColumnNullable = -2147483648
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse (asynchronously)
@@ -4327,7 +4327,7 @@ INSERT INTO `TypeTable``2`
 	ColumnNullable
 )
 VALUES
-(toInt32(2147483647),toInt32(-2147483648))
+(2147483647,-2147483648)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
@@ -4338,7 +4338,7 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = toInt32(2147483647) AND r.ColumnNullable = toInt32(-2147483648)
+	r.Column = 2147483647 AND r.ColumnNullable = -2147483648
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
@@ -4369,7 +4369,7 @@ INSERT INTO `TypeTable``2`
 	ColumnNullable
 )
 VALUES
-(toInt32(0),NULL)
+(0,NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
@@ -4380,7 +4380,7 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = toInt32(0) AND r.ColumnNullable IS NULL
+	r.Column = 0 AND r.ColumnNullable IS NULL
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
@@ -4399,7 +4399,7 @@ INSERT INTO `TypeTable``2`
 )
 VALUES
 (
-	toInt32(0),
+	0,
 	NULL
 )
 
@@ -4412,7 +4412,7 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = toInt32(0) AND r.ColumnNullable IS NULL
+	r.Column = 0 AND r.ColumnNullable IS NULL
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
@@ -4430,7 +4430,7 @@ INSERT INTO `TypeTable``2`
 	ColumnNullable
 )
 VALUES
-(toInt32(0),NULL)
+(0,NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
@@ -4441,7 +4441,7 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = toInt32(0) AND r.ColumnNullable IS NULL
+	r.Column = 0 AND r.ColumnNullable IS NULL
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
@@ -4459,7 +4459,7 @@ INSERT INTO `TypeTable``2`
 	ColumnNullable
 )
 VALUES
-(toInt32(0),NULL)
+(0,NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
@@ -4470,7 +4470,7 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = toInt32(0) AND r.ColumnNullable IS NULL
+	r.Column = 0 AND r.ColumnNullable IS NULL
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse (asynchronously)
@@ -4488,7 +4488,7 @@ INSERT INTO `TypeTable``2`
 	ColumnNullable
 )
 VALUES
-(toInt32(0),NULL)
+(0,NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
@@ -4499,7 +4499,7 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = toInt32(0) AND r.ColumnNullable IS NULL
+	r.Column = 0 AND r.ColumnNullable IS NULL
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
@@ -4530,7 +4530,7 @@ INSERT INTO `TypeTable``2`
 	ColumnNullable
 )
 VALUES
-(toInt32(-2147483648),toInt32(2147483647))
+(-2147483648,2147483647)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
@@ -4541,7 +4541,7 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = toInt32(-2147483648) AND r.ColumnNullable = toInt32(2147483647)
+	r.Column = -2147483648 AND r.ColumnNullable = 2147483647
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
@@ -4560,8 +4560,8 @@ INSERT INTO `TypeTable``2`
 )
 VALUES
 (
-	toInt32(-2147483648),
-	toInt32(2147483647)
+	-2147483648,
+	2147483647
 )
 
 BeforeExecute
@@ -4573,7 +4573,7 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = toInt32(-2147483648) AND r.ColumnNullable = toInt32(2147483647)
+	r.Column = -2147483648 AND r.ColumnNullable = 2147483647
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
@@ -4591,7 +4591,7 @@ INSERT INTO `TypeTable``2`
 	ColumnNullable
 )
 VALUES
-(toInt32(-2147483648),toInt32(2147483647))
+(-2147483648,2147483647)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
@@ -4602,7 +4602,7 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = toInt32(-2147483648) AND r.ColumnNullable = toInt32(2147483647)
+	r.Column = -2147483648 AND r.ColumnNullable = 2147483647
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
@@ -4620,7 +4620,7 @@ INSERT INTO `TypeTable``2`
 	ColumnNullable
 )
 VALUES
-(toInt32(-2147483648),toInt32(2147483647))
+(-2147483648,2147483647)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
@@ -4631,7 +4631,7 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = toInt32(-2147483648) AND r.ColumnNullable = toInt32(2147483647)
+	r.Column = -2147483648 AND r.ColumnNullable = 2147483647
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse (asynchronously)
@@ -4649,7 +4649,7 @@ INSERT INTO `TypeTable``2`
 	ColumnNullable
 )
 VALUES
-(toInt32(-2147483648),toInt32(2147483647))
+(-2147483648,2147483647)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
@@ -4660,7 +4660,7 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = toInt32(-2147483648) AND r.ColumnNullable = toInt32(2147483647)
+	r.Column = -2147483648 AND r.ColumnNullable = 2147483647
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
@@ -4691,7 +4691,7 @@ INSERT INTO `TypeTable``2`
 	ColumnNullable
 )
 VALUES
-(toInt32(2147483647),toInt32(-2147483648))
+(2147483647,-2147483648)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
@@ -4702,7 +4702,7 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = toInt32(2147483647) AND r.ColumnNullable = toInt32(-2147483648)
+	r.Column = 2147483647 AND r.ColumnNullable = -2147483648
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
@@ -4721,8 +4721,8 @@ INSERT INTO `TypeTable``2`
 )
 VALUES
 (
-	toInt32(2147483647),
-	toInt32(-2147483648)
+	2147483647,
+	-2147483648
 )
 
 BeforeExecute
@@ -4734,7 +4734,7 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = toInt32(2147483647) AND r.ColumnNullable = toInt32(-2147483648)
+	r.Column = 2147483647 AND r.ColumnNullable = -2147483648
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
@@ -4752,7 +4752,7 @@ INSERT INTO `TypeTable``2`
 	ColumnNullable
 )
 VALUES
-(toInt32(2147483647),toInt32(-2147483648))
+(2147483647,-2147483648)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
@@ -4763,7 +4763,7 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = toInt32(2147483647) AND r.ColumnNullable = toInt32(-2147483648)
+	r.Column = 2147483647 AND r.ColumnNullable = -2147483648
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
@@ -4781,7 +4781,7 @@ INSERT INTO `TypeTable``2`
 	ColumnNullable
 )
 VALUES
-(toInt32(2147483647),toInt32(-2147483648))
+(2147483647,-2147483648)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
@@ -4792,7 +4792,7 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = toInt32(2147483647) AND r.ColumnNullable = toInt32(-2147483648)
+	r.Column = 2147483647 AND r.ColumnNullable = -2147483648
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse (asynchronously)
@@ -4810,7 +4810,7 @@ INSERT INTO `TypeTable``2`
 	ColumnNullable
 )
 VALUES
-(toInt32(2147483647),toInt32(-2147483648))
+(2147483647,-2147483648)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
@@ -4821,7 +4821,7 @@ SELECT
 FROM
 	`TypeTable``2` r
 WHERE
-	r.Column = toInt32(2147483647) AND r.ColumnNullable = toInt32(-2147483648)
+	r.Column = 2147483647 AND r.ColumnNullable = -2147483648
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse

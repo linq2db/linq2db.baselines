@@ -36,15 +36,15 @@ DECLARE @CreatedBy VarChar(10) -- String
 SET     @CreatedBy = 'TEST_USER2'
 
 MERGE INTO "test_insert_or_replace" "t1"
-USING (SELECT @Id AS "id" FROM SYSIBM.SYSDUMMY1 FETCH FIRST 1 ROW ONLY) "s" ON
+USING (SELECT CAST(@Id AS Int) AS "id" FROM SYSIBM.SYSDUMMY1 FETCH FIRST 1 ROW ONLY) "s" ON
 (
 	"t1"."id" = "s"."id"
 )
 WHEN MATCHED THEN
 	UPDATE 
 	SET
-		"t1"."name" = @Name,
-		"t1"."updated_by" = @UpdatedBy
+		"name" = CAST(@Name AS NVarChar(5)),
+		"updated_by" = CAST(@UpdatedBy AS NVarChar(255))
 WHEN NOT MATCHED THEN
 	INSERT
 	(
@@ -54,9 +54,9 @@ WHEN NOT MATCHED THEN
 	)
 	VALUES
 	(
-		@Id,
-		@Name,
-		@CreatedBy
+		CAST(@Id AS Int),
+		CAST(@Name AS NVarChar(5)),
+		CAST(@CreatedBy AS NVarChar(10))
 	)
 
 BeforeExecute
@@ -69,7 +69,7 @@ SELECT
 	"t1"."updated_by"
 FROM
 	"test_insert_or_replace" "t1"
-FETCH FIRST 2 ROWS ONLY
+FETCH NEXT 2 ROWS ONLY
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
@@ -83,15 +83,15 @@ DECLARE @CreatedBy VarChar(10) -- String
 SET     @CreatedBy = 'TEST_USER2'
 
 MERGE INTO "test_insert_or_replace" "t1"
-USING (SELECT @Id AS "id" FROM SYSIBM.SYSDUMMY1 FETCH FIRST 1 ROW ONLY) "s" ON
+USING (SELECT CAST(@Id AS Int) AS "id" FROM SYSIBM.SYSDUMMY1 FETCH FIRST 1 ROW ONLY) "s" ON
 (
 	"t1"."id" = "s"."id"
 )
 WHEN MATCHED THEN
 	UPDATE 
 	SET
-		"t1"."name" = @Name,
-		"t1"."updated_by" = @UpdatedBy
+		"name" = CAST(@Name AS NVarChar(5)),
+		"updated_by" = CAST(@UpdatedBy AS NVarChar(10))
 WHEN NOT MATCHED THEN
 	INSERT
 	(
@@ -101,9 +101,9 @@ WHEN NOT MATCHED THEN
 	)
 	VALUES
 	(
-		@Id,
-		@Name,
-		@CreatedBy
+		CAST(@Id AS Int),
+		CAST(@Name AS NVarChar(5)),
+		CAST(@CreatedBy AS NVarChar(10))
 	)
 
 BeforeExecute
@@ -116,7 +116,7 @@ SELECT
 	"t1"."updated_by"
 FROM
 	"test_insert_or_replace" "t1"
-FETCH FIRST 2 ROWS ONLY
+FETCH NEXT 2 ROWS ONLY
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW

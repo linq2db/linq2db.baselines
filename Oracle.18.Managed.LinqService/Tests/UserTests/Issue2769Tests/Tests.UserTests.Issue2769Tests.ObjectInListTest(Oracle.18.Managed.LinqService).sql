@@ -30,16 +30,24 @@ END;
 
 BeforeExecute
 -- Oracle.18.Managed Oracle.Managed Oracle12
-DECLARE @default_1 Int32
-SET     @default_1 = 0
 
 SELECT
-	a."Id",
-	a."NullValue"
+	a_1.RECORDNAME,
+	a_1.KEYNUMB_1
 FROM
-	"SampleClass" a
+	(
+		SELECT
+			a."Id" as RECORDNAME,
+			CASE
+				WHEN a."NullValue" IS NOT NULL THEN a."NullValue"
+				ELSE 0
+			END as KEYNUMB,
+			a."NullValue" as KEYNUMB_1
+		FROM
+			"SampleClass" a
+	) a_1
 WHERE
-	(a."Id" = 0 AND Nvl(a."NullValue", :default_1) = 0 OR a."Id" = 1 AND Nvl(a."NullValue", :default_1) = 1 OR a."Id" = 2 AND Nvl(a."NullValue", :default_1) = 2)
+	(a_1.RECORDNAME = 0 AND a_1.KEYNUMB = 0 OR a_1.RECORDNAME = 1 AND a_1.KEYNUMB = 1 OR a_1.RECORDNAME = 2 AND a_1.KEYNUMB = 2)
 
 BeforeExecute
 -- Oracle.18.Managed Oracle.Managed Oracle12

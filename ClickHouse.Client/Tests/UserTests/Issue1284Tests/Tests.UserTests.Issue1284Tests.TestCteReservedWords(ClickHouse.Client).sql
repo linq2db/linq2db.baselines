@@ -4,22 +4,22 @@
 WITH CTE_1 AS
 (
 	SELECT
-		x.LastName as Operator
+		x.LastName as Obj_Operator
 	FROM
 		Person x
 )
 SELECT
-	t1.Operator
+	t1.Obj_Operator
 FROM
 	CTE_1 t1
-LIMIT toInt32(1)
+LIMIT 1
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
 
 SELECT
-	x.LastName
+	person_1.LastName
 FROM
-	Person x
-LIMIT toInt32(1)
+	Person person_1
+LIMIT 1
 

@@ -6,16 +6,16 @@ SELECT
 FROM
 	(
 		SELECT
-			[ch].[Key_1] + '2' as [c1]
+			[g_2].[c1] + '2' as [c1]
 		FROM
 			(
 				SELECT
-					Iif([selectParam].[ParentID] > 2, Iif([selectParam].[ParentID] > 3, '1', '2'), '3') as [Key_1]
+					IIF([g_1].[ParentID] > 2, IIF([g_1].[ParentID] > 3, '1', '2'), '3') as [c1]
 				FROM
-					[Child] [selectParam]
-			) [ch]
+					[Child] [g_1]
+			) [g_2]
 		GROUP BY
-			[ch].[Key_1]
+			[g_2].[c1]
 	) [p]
 WHERE
 	[p].[c1] = '22'

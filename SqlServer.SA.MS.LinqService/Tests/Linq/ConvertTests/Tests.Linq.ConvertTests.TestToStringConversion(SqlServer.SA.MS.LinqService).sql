@@ -173,49 +173,45 @@ VALUES
 
 BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
-DECLARE @take Int -- Int32
-SET     @take = 1
 
-SELECT TOP (@take)
-	Convert(NVarChar(1), [x].[Prop_bool]),
-	Convert(NVarChar(3), [x].[Prop_byte]),
-	Convert(NVarChar(4000), [x].[Prop_char]),
-	Convert(NVarChar(31), [x].[Prop_decimal]),
-	Convert(NVarChar(22), [x].[Prop_double]),
-	Convert(NVarChar(6), [x].[Prop_short]),
-	Convert(NVarChar(11), [x].[Prop_int]),
-	Convert(NVarChar(20), [x].[Prop_long]),
-	Convert(NVarChar(4000), [x].[Prop_sbyte]),
-	Convert(NVarChar(13), [x].[Prop_float]),
-	Convert(NVarChar(4000), [x].[Prop_ushort]),
-	Convert(NVarChar(4000), [x].[Prop_uint]),
-	Convert(NVarChar(4000), [x].[Prop_ulong]),
-	Convert(NVarChar(4000), [x].[Prop_Guid]),
-	Convert(NVarChar(4000), [x].[Prop_DateTime]),
-	Convert(NVarChar(1), [x].[NullableProp_bool]),
-	Convert(NVarChar(3), [x].[NullableProp_byte]),
-	Convert(NVarChar(4000), [x].[NullableProp_char]),
-	Convert(NVarChar(31), [x].[NullableProp_decimal]),
-	Convert(NVarChar(22), [x].[NullableProp_double]),
-	Convert(NVarChar(6), [x].[NullableProp_short]),
-	Convert(NVarChar(11), [x].[NullableProp_int]),
-	Convert(NVarChar(20), [x].[NullableProp_long]),
-	Convert(NVarChar(4000), [x].[NullableProp_sbyte]),
-	Convert(NVarChar(13), [x].[NullableProp_float]),
-	Convert(NVarChar(4000), [x].[NullableProp_ushort]),
-	Convert(NVarChar(4000), [x].[NullableProp_uint]),
-	Convert(NVarChar(4000), [x].[NullableProp_ulong]),
-	Convert(NVarChar(4000), [x].[NullableProp_Guid]),
-	Convert(NVarChar(4000), [x].[NullableProp_DateTime])
+SELECT TOP (1)
+	CAST([x].[Prop_bool] AS NVarChar(1)),
+	CAST([x].[Prop_byte] AS NVarChar(3)),
+	CAST([x].[Prop_char] AS NVarChar(4000)),
+	CAST([x].[Prop_decimal] AS NVarChar(31)),
+	CAST([x].[Prop_double] AS NVarChar(22)),
+	CAST([x].[Prop_short] AS NVarChar(6)),
+	CAST([x].[Prop_int] AS NVarChar(11)),
+	CAST([x].[Prop_long] AS NVarChar(20)),
+	CAST([x].[Prop_sbyte] AS NVarChar(Max)),
+	CAST([x].[Prop_float] AS NVarChar(13)),
+	CAST([x].[Prop_ushort] AS NVarChar(Max)),
+	CAST([x].[Prop_uint] AS NVarChar(Max)),
+	CAST([x].[Prop_ulong] AS NVarChar(Max)),
+	CAST([x].[Prop_Guid] AS NVarChar(36)),
+	CAST([x].[Prop_DateTime] AS NVarChar(27)),
+	CAST([x].[NullableProp_bool] AS NVarChar(1)),
+	CAST([x].[NullableProp_byte] AS NVarChar(3)),
+	CAST([x].[NullableProp_char] AS NVarChar(4000)),
+	CAST([x].[NullableProp_decimal] AS NVarChar(31)),
+	CAST([x].[NullableProp_double] AS NVarChar(22)),
+	CAST([x].[NullableProp_short] AS NVarChar(6)),
+	CAST([x].[NullableProp_int] AS NVarChar(11)),
+	CAST([x].[NullableProp_long] AS NVarChar(20)),
+	CAST([x].[NullableProp_sbyte] AS NVarChar(Max)),
+	CAST([x].[NullableProp_float] AS NVarChar(13)),
+	CAST([x].[NullableProp_ushort] AS NVarChar(Max)),
+	CAST([x].[NullableProp_uint] AS NVarChar(Max)),
+	CAST([x].[NullableProp_ulong] AS NVarChar(Max)),
+	CAST([x].[NullableProp_Guid] AS NVarChar(36)),
+	CAST([x].[NullableProp_DateTime] AS NVarChar(27))
 FROM
 	[ToStringConvertibleTypes] [x]
 
 BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
-DECLARE @take Int -- Int32
-SET     @take = 1
 
-SELECT TOP (@take)
+SELECT TOP (1)
 	[x].[Prop_bool],
 	[x].[Prop_byte],
 	[x].[Prop_char],

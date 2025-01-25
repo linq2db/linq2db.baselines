@@ -62,60 +62,64 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
-	i_1.InvoiceID,
-	x.InvoiceReferenceNumberID,
-	x.ReferenceNumber,
-	i_1.SettlementTotalOnIssue,
-	t1.InvoiceId,
-	t1.Total
+	t1.InvoiceID,
+	r.InvoiceReferenceNumberID,
+	r.ReferenceNumber,
+	t1.SettlementTotalOnIssue,
+	ia.InvoiceId,
+	ia.Total
 FROM
-	Invoice i_1
-		LEFT JOIN InvoiceReferenceNumber x ON x.InvoiceReferenceNumberID = i_1.InvoiceReferenceNumberID
+	Invoice t1
+		LEFT JOIN InvoiceReferenceNumber r ON r.InvoiceReferenceNumberID = t1.InvoiceReferenceNumberID
 		LEFT JOIN (
 			SELECT
-				i.InvoiceID as InvoiceId,
-				sumOrNull(x_1.BillingAmountOverride) as Total
+				g_1.InvoiceID as InvoiceId,
+				sumOrNull(ili.BillingAmountOverride) as Total
 			FROM
-				Invoice i
-					INNER JOIN InvoiceLineItem x_1 ON x_1.OwningInvoiceID = i.InvoiceID AND x_1.Suppressed = false
+				Invoice g_1
+					INNER JOIN InvoiceLineItem ili ON ili.OwningInvoiceID = g_1.InvoiceID
+			WHERE
+				ili.Suppressed = false
 			GROUP BY
-				i.InvoiceID
-		) t1 ON t1.InvoiceId = i_1.InvoiceID
+				g_1.InvoiceID
+		) ia ON ia.InvoiceId = t1.InvoiceID
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
-	i.InvoiceID,
-	x.InvoiceReferenceNumberID,
-	x.ReferenceNumber,
-	i.SettlementTotalOnIssue
+	t1.InvoiceID,
+	r.InvoiceReferenceNumberID,
+	r.ReferenceNumber,
+	t1.SettlementTotalOnIssue
 FROM
-	Invoice i
-		LEFT JOIN InvoiceReferenceNumber x ON x.InvoiceReferenceNumberID = i.InvoiceReferenceNumberID
+	Invoice t1
+		LEFT JOIN InvoiceReferenceNumber r ON r.InvoiceReferenceNumberID = t1.InvoiceReferenceNumberID
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
-	i_1.InvoiceID,
-	x.InvoiceReferenceNumberID,
-	x.ReferenceNumber,
-	t1.InvoiceId,
-	t1.Total
+	t1.InvoiceID,
+	r.InvoiceReferenceNumberID,
+	r.ReferenceNumber,
+	ia.InvoiceId,
+	ia.Total
 FROM
-	Invoice i_1
-		LEFT JOIN InvoiceReferenceNumber x ON x.InvoiceReferenceNumberID = i_1.InvoiceReferenceNumberID
+	Invoice t1
+		LEFT JOIN InvoiceReferenceNumber r ON r.InvoiceReferenceNumberID = t1.InvoiceReferenceNumberID
 		LEFT JOIN (
 			SELECT
-				i.InvoiceID as InvoiceId,
-				sumOrNull(x_1.BillingAmountOverride) as Total
+				g_1.InvoiceID as InvoiceId,
+				sumOrNull(ili.BillingAmountOverride) as Total
 			FROM
-				Invoice i
-					INNER JOIN InvoiceLineItem x_1 ON x_1.OwningInvoiceID = i.InvoiceID AND x_1.Suppressed = false
+				Invoice g_1
+					INNER JOIN InvoiceLineItem ili ON ili.OwningInvoiceID = g_1.InvoiceID
+			WHERE
+				ili.Suppressed = false
 			GROUP BY
-				i.InvoiceID
-		) t1 ON t1.InvoiceId = i_1.InvoiceID
+				g_1.InvoiceID
+		) ia ON ia.InvoiceId = t1.InvoiceID
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse

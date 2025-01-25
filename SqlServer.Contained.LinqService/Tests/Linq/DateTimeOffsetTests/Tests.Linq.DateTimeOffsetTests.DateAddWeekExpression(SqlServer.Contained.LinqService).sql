@@ -489,7 +489,7 @@ DECLARE @p Int -- Int32
 SET     @p = -1
 
 SELECT
-	DateAdd(week, @p, [t].[TransactionDate])
+	CAST(DateAdd(week, @p, [t].[TransactionDate]) AS Date)
 FROM
 	[Transactions] [t]
 

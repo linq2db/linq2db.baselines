@@ -23,8 +23,8 @@ INSERT INTO SomeEntity
 )
 VALUES
 (
-	toInt32(1),
-	toInt32(3)
+	1,
+	3
 )
 
 BeforeExecute
@@ -54,7 +54,7 @@ INSERT INTO SomeOtherEntity
 )
 VALUES
 (
-	toInt32(2),
+	2,
 	NULL,
 	true
 )
@@ -63,13 +63,13 @@ BeforeExecute
 -- ClickHouse.Client ClickHouse
 
 SELECT
-	t.Id,
-	t.OtherId,
+	t1.Id,
+	t1.OtherId,
 	t2.IsActual
 FROM
-	SomeEntity t
-		LEFT JOIN SomeOtherEntity t2 ON t2.Id = t.OtherId
-LIMIT toInt32(1)
+	SomeEntity t1
+		LEFT JOIN SomeOtherEntity t2 ON t2.Id = t1.OtherId
+LIMIT 1
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse

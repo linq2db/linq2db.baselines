@@ -72,25 +72,23 @@ VALUES
 
 BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014
-DECLARE @take Int -- Int32
-SET     @take = 1
 
 SELECT
-	[a_Other].[StrValue],
-	[a_Other].[StrValue_1] + N'_C',
-	[a_Other].[Id]
+	[t1].[StrValue] + N'_B',
+	[t1].[StrValue] + N'_C',
+	[t1].[Id],
+	[t1].[StrValue]
 FROM
 	[SomeEntity] [e]
 		OUTER APPLY (
-			SELECT TOP (@take)
-				[se].[StrValue],
-				[se].[StrValue] + N'_A' as [StrValue_1],
-				[se].[Id]
+			SELECT TOP (1)
+				[a_Other].[StrValue] + N'_A' as [StrValue],
+				[a_Other].[Id]
 			FROM
-				[SomeOtherEntity] [se]
+				[SomeOtherEntity] [a_Other]
 			WHERE
-				[se].[Id] = [e].[Id]
-		) [a_Other]
+				[a_Other].[Id] = [e].[Id]
+		) [t1]
 
 BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014

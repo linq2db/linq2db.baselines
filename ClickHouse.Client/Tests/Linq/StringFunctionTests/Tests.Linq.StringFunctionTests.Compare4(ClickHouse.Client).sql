@@ -10,6 +10,6 @@ SELECT
 FROM
 	Person p
 WHERE
-	lowerUTF8(Substring(p.FirstName, toInt32(2), toInt32(2))) = 'oh' AND
-	p.PersonID = toInt32(1)
+	lowerUTF8(Substring(p.FirstName, 2, 2)) = 'oh' AND
+	p.PersonID = 1
 

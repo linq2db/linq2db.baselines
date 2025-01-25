@@ -51,11 +51,11 @@ BeforeExecute
 -- SqlServer.2022
 
 SELECT
-	[_].[Id]
+	[t1].[Id]
 FROM
-	[TransactionScopeTable] [_]
+	[TransactionScopeTable] [t1]
 ORDER BY
-	[_].[Id]
+	[t1].[Id]
 
 BeforeExecute
 -- SqlServer.2022

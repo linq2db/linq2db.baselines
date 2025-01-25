@@ -2,7 +2,7 @@
 -- SqlServer.2016
 
 SELECT
-	Convert(Float, [t].[MoneyValue])
+	CAST([t].[MoneyValue] AS Float)
 FROM
 	[LinqDataTypes] [t]
 

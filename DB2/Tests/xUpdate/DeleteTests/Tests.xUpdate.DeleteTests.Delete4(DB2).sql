@@ -2,9 +2,9 @@
 -- DB2 DB2.LUW DB2LUW
 
 DELETE FROM
-	"GrandChild" "t1"
+	"GrandChild" "gc"
 WHERE
-	"t1"."GrandChildID" IN (1001, 1002)
+	"gc"."GrandChildID" IN (1001, 1002)
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
@@ -42,7 +42,7 @@ BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	"GrandChild" "gc"
 WHERE
@@ -72,7 +72,7 @@ BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	"GrandChild" "gc"
 WHERE

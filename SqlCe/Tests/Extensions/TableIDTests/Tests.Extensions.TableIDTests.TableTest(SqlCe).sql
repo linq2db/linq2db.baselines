@@ -2,17 +2,18 @@
 -- SqlCe
 
 SELECT
-	'*** t1 ***',
-	'*** [Parent] ***',
-	'*** p.t1 ***'
+	'*** p ***' + '4' as [c1],
+	'*** p ***' as [c2],
+	'*** [Parent] ***' as [c3],
+	'*** p_1.p ***' as [c4]
 FROM
 	[Child] [c_1]
 		INNER JOIN (
 			SELECT
-				[t1].[ParentID]
+				[p].[ParentID]
 			FROM
-				[Parent] [t1]
-		) [p] ON [c_1].[ParentID] = [p].[ParentID]
+				[Parent] [p]
+		) [p_1] ON [c_1].[ParentID] = [p_1].[ParentID]
 WHERE
-	'*** t1 ***' = '*** [Parent] ***'
+	'*** p ***' = '*** [Parent] ***'
 

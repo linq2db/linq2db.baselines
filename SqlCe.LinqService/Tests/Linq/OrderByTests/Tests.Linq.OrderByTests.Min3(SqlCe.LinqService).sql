@@ -4,14 +4,14 @@ DECLARE @take Int -- Int32
 SET     @take = 3
 
 SELECT
-	Min([t1].[ParentID])
+	MIN([t2].[ParentID]) as [MIN_1]
 FROM
 	(
 		SELECT TOP (@take)
-			[p].[ParentID]
+			[t1].[ParentID]
 		FROM
-			[Parent] [p]
+			[Parent] [t1]
 		ORDER BY
-			[p].[Value1]
-	) [t1]
+			[t1].[Value1]
+	) [t2]
 

@@ -5,7 +5,7 @@ SET     @str = '%o~%h%'
 
 SELECT
 	[p].[FirstName],
-	[p].[PersonID],
+	[p].[PersonID] as [ID],
 	[p].[LastName],
 	[p].[MiddleName],
 	[p].[Gender]

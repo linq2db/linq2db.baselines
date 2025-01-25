@@ -2,9 +2,14 @@
 -- Informix.DB2 Informix
 
 SELECT
-	Cast(t.MoneyValue as Int)
+	p_1.c1
 FROM
-	LinqDataTypes t
+	(
+		SELECT
+			p.MoneyValue::Int as c1
+		FROM
+			LinqDataTypes p
+	) p_1
 WHERE
-	Cast(t.MoneyValue as Int) > 0
+	p_1.c1 > 0
 

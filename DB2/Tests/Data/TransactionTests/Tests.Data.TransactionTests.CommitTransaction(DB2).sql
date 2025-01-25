@@ -22,11 +22,11 @@ BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 UPDATE
-	"Parent"
+	"Parent" "t"
 SET
-	"Parent"."Value1" = 1011
+	"Value1" = 1011
 WHERE
-	"Parent"."ParentID" = 1010
+	"t"."ParentID" = 1010
 
 BeforeExecute
 CommitTransaction
@@ -40,5 +40,5 @@ FROM
 	"Parent" "t"
 WHERE
 	"t"."ParentID" = 1010
-FETCH FIRST 1 ROWS ONLY
+FETCH NEXT 1 ROWS ONLY
 

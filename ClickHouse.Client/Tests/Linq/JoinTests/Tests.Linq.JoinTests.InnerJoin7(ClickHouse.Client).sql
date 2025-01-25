@@ -2,10 +2,15 @@
 -- ClickHouse.Client ClickHouse
 
 SELECT
-	ch.ParentID + p.ParentID
+	t.c1
 FROM
-	Child ch
-		INNER JOIN Parent p ON ch.ParentID = p.ParentID
+	(
+		SELECT
+			ch.ParentID + p.ParentID as c1
+		FROM
+			Child ch
+				INNER JOIN Parent p ON ch.ParentID = p.ParentID
+	) t
 WHERE
-	ch.ParentID + p.ParentID > toInt32(2)
+	t.c1 > 2
 

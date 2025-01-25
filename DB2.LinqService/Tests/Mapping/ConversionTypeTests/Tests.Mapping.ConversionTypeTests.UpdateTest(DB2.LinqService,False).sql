@@ -84,11 +84,11 @@ DECLARE @ID Integer(4) -- Int32
 SET     @ID = 3
 
 UPDATE
-	"TrimTestTable"
+	"TrimTestTable" "t1"
 SET
-	"TrimTestTable"."Data" = @Data
+	"Data" = @Data
 WHERE
-	"TrimTestTable".ID = @ID
+	"t1".ID = @ID
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
@@ -96,11 +96,11 @@ DECLARE @Data VarChar(9) -- String
 SET     @Data = '***OOO***'
 
 UPDATE
-	"TrimTestTable"
+	"TrimTestTable" "t"
 SET
-	"TrimTestTable"."Data" = @Data
+	"Data" = CAST(@Data AS NVarChar(9))
 WHERE
-	"TrimTestTable"."Data" = '***XXX***'
+	"t"."Data" = '***XXX***'
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
@@ -110,11 +110,11 @@ DECLARE @p VarChar(9) -- String
 SET     @p = '***HHH***'
 
 UPDATE
-	"TrimTestTable"
+	"TrimTestTable" "t"
 SET
-	"TrimTestTable"."Data" = @Data
+	"Data" = CAST(@Data AS NVarChar(9))
 WHERE
-	"TrimTestTable"."Data" = @p
+	"t"."Data" = @p
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW

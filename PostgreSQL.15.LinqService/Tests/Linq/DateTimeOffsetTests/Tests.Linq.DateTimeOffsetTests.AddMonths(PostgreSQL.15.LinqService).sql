@@ -288,7 +288,7 @@ BeforeExecute
 -- PostgreSQL.15 PostgreSQL
 
 SELECT
-	t."TransactionDate" + -2 * Interval '1 Month'
+	Date_Trunc('day', (t."TransactionDate" + -2 * Interval '1 Month') AT TIME ZONE 'UTC')::Date
 FROM
 	"Transactions" t
 

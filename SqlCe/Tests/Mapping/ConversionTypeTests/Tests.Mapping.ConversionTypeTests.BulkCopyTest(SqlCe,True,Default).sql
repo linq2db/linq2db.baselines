@@ -29,7 +29,7 @@ BeforeExecute
 
 SELECT
 	[r].[ID],
-	[r].[Data]
+	[r].[Data] as [Data_1]
 FROM
 	[TrimTestTable] [r]
 ORDER BY
@@ -40,7 +40,7 @@ BeforeExecute
 
 SELECT
 	[r].[ID],
-	[r].[Data]
+	[r].[Data] as [Data_1]
 FROM
 	[TrimTestTable] [r]
 ORDER BY

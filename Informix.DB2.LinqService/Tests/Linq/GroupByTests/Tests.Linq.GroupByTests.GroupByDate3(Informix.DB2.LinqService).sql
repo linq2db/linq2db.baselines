@@ -2,17 +2,21 @@
 -- Informix.DB2 Informix
 
 SELECT
-	Sum(t1.MoneyValue),
-	Year(t1.Key_1),
-	Month(t1.Key_1)
+	SUM(grp_1.MoneyValue),
+	grp_1.Year_1,
+	grp_1.Month_1
 FROM
 	(
 		SELECT
-			Mdy(Month(selectParam.DateTimeValue), 1, Year(selectParam.DateTimeValue)) as Key_1,
-			selectParam.MoneyValue
+			Mdy(Month(grp.DateTimeValue), 1, Year(grp.DateTimeValue)) as Date_1,
+			grp.MoneyValue,
+			Year(Mdy(Month(grp.DateTimeValue), 1, Year(grp.DateTimeValue))) as Year_1,
+			Month(Mdy(Month(grp.DateTimeValue), 1, Year(grp.DateTimeValue))) as Month_1
 		FROM
-			LinqDataTypes selectParam
-	) t1
+			LinqDataTypes grp
+	) grp_1
 GROUP BY
-	t1.Key_1
+	grp_1.Date_1,
+	grp_1.Year_1,
+	grp_1.Month_1
 

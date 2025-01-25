@@ -90,52 +90,32 @@ VALUES
 )
 
 BeforeExecute
-BeginTransaction(Serializable)
-BeforeExecute
 -- SQLite.Classic SQLite
-DECLARE @take  -- Int32
-SET     @take = 1
 
 SELECT
-	[key_data_result].[Id],
-	[_ir].[Id],
-	[_ir].[Nr]
-FROM
-	(
-		SELECT DISTINCT
-			[t1].[Id]
-		FROM
-			(
-				SELECT
-					[oto].[Id]
-				FROM
-					[InfeedAdvicePositionDTO] [oto]
-				LIMIT @take
-			) [t1]
-	) [key_data_result]
-		LEFT JOIN [MlogInfeedAddonsDTO] [_ir] ON [_ir].[Id] = [key_data_result].[Id]
-
-BeforeExecute
--- SQLite.Classic SQLite
-DECLARE @take  -- Int32
-SET     @take = 1
-
-SELECT
-	[oto].[Id],
+	[infeed].[Id],
 	(
 		SELECT
-			Sum([x].[Quantity])
+			SUM([x].[Quantity])
 		FROM
 			[InventoryResourceDTO] [x]
 		WHERE
-			[x].[InfeedAdviceID] = [oto].[Id]
-	)
+			[x].[InfeedAdviceID] = [infeed].[Id]
+	),
+	[t1].[Id],
+	[t1].[Nr]
 FROM
-	[InfeedAdvicePositionDTO] [oto]
-LIMIT @take
+	[InfeedAdvicePositionDTO] [infeed]
+		LEFT JOIN (
+			SELECT
+				[ir].[Id],
+				[ir].[Nr],
+				ROW_NUMBER() OVER (PARTITION BY [ir].[Id] ORDER BY [ir].[Id]) as [rn]
+			FROM
+				[MlogInfeedAddonsDTO] [ir]
+		) [t1] ON [t1].[Id] = [infeed].[Id] AND [t1].[rn] <= 1
+LIMIT 1
 
-BeforeExecute
-DisposeTransaction
 BeforeExecute
 -- SQLite.Classic SQLite
 

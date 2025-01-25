@@ -1,15 +1,17 @@
 ﻿BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
+DECLARE @p Numeric(1, 0) -- Decimal
+SET     @p = 2
 
 SELECT
-	t.c1
+	t_1.c1
 FROM
 	(
 		SELECT
-			Floor(Cast(Log(2, p."MoneyValue") as Float)) as c1
+			Floor(Log(:p, t."MoneyValue")::Float) as c1
 		FROM
-			"LinqDataTypes" p
-	) t
+			"LinqDataTypes" t
+	) t_1
 WHERE
-	t.c1 <> 0.10000000000000001
+	(t_1.c1 <> 0.10000000000000001 OR t_1.c1 IS NULL)
 

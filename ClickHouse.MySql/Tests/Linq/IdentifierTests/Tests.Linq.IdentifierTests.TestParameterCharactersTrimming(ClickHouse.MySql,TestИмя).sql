@@ -18,9 +18,9 @@ BeforeExecute
 ALTER TABLE
 	testparams
 UPDATE
-	`TestИмя` = toInt32(2)
+	`TestИмя` = 2
 WHERE
-	`TestИмя` = toInt32(1)
+	`TestИмя` = 1
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse

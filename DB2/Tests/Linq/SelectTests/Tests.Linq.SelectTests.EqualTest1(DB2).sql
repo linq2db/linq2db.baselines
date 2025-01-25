@@ -6,5 +6,5 @@ SELECT
 	"p"."Value1"
 FROM
 	"Parent" "p"
-FETCH FIRST 1 ROWS ONLY
+FETCH NEXT 1 ROWS ONLY
 

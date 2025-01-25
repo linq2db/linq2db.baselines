@@ -12,10 +12,10 @@ AS
 	WHERE
 		c_1."ParentID" < -1111
 )
-SELECT /*+ FACT(c_2) FIRST_ROWS(10) ALL_ROWS */
+SELECT /*+ FACT(c_2) ALL_ROWS FIRST_ROWS(10) */
 	p."ParentID",
 	p."ChildID"
 FROM
-	CTE_1 p,
-	"Child" c_2
+	CTE_1 p
+		CROSS JOIN "Child" c_2
 

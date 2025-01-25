@@ -2,15 +2,15 @@
 -- ClickHouse.Client ClickHouse
 
 SELECT
-	minOrNull(t1.ParentID)
+	minOrNull(t2.ParentID)
 FROM
 	(
 		SELECT
-			p.ParentID as ParentID
+			t1.ParentID as ParentID
 		FROM
-			Parent p
+			Parent t1
 		ORDER BY
-			p.Value1
-		LIMIT toInt32(3)
-	) t1
+			t1.Value1
+		LIMIT 3
+	) t2
 

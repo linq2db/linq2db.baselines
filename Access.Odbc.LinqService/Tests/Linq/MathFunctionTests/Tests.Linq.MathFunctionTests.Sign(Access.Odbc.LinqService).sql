@@ -2,9 +2,14 @@
 -- Access.Odbc AccessODBC
 
 SELECT
-	Sgn([p].[MoneyValue])
+	[t_1].[c1]
 FROM
-	[LinqDataTypes] [p]
+	(
+		SELECT
+			Sgn([t].[MoneyValue]) as [c1]
+		FROM
+			[LinqDataTypes] [t]
+	) [t_1]
 WHERE
-	Sgn([p].[MoneyValue]) <> 0
+	[t_1].[c1] <> 0
 

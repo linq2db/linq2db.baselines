@@ -23,9 +23,9 @@ INSERT INTO Fact
 	Id
 )
 VALUES
-(toInt32(3)),
-(toInt32(4)),
-(toInt32(5))
+(3),
+(4),
+(5)
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
@@ -56,9 +56,9 @@ INSERT INTO Tag
 	Name
 )
 VALUES
-(toInt32(1),toInt32(3),'Tag3'),
-(toInt32(2),toInt32(3),'Tag3'),
-(toInt32(3),toInt32(4),'Tag4')
+(1,3,'Tag3'),
+(2,3,'Tag3'),
+(3,4,'Tag4')
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
@@ -72,7 +72,7 @@ FROM
 	Fact ft
 		LEFT JOIN Tag t ON t.FactId = ft.Id
 WHERE
-	ft.Id > toInt32(3)
+	ft.Id > 3
 ORDER BY
 	ft.Id
 

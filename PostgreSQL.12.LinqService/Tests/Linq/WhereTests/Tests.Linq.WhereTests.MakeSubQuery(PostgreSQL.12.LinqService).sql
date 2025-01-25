@@ -2,7 +2,7 @@
 -- PostgreSQL.12 PostgreSQL.9.5 PostgreSQL
 
 SELECT
-	p."PersonID" + 1,
+	p."PersonID",
 	p."FirstName"
 FROM
 	"Person" p

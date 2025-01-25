@@ -18,7 +18,7 @@ BeforeExecute
 -- SqlServer.2016
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	[Person] [c_1]
 WHERE
@@ -28,19 +28,17 @@ BeforeExecute
 -- SqlServer.2016
 
 UPDATE
-	[c_1]
+	[Person]
 SET
-	[c_1].[FirstName] = N'Johnny'
-FROM
-	[Person] [c_1]
+	[FirstName] = N'Johnny'
 WHERE
-	[c_1].[LastName] = N'Limonadovy'
+	[Person].[LastName] = N'Limonadovy'
 
 BeforeExecute
 -- SqlServer.2016
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	[Person] [c_1]
 WHERE

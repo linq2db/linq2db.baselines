@@ -56,14 +56,6 @@ BeforeExecute
 -- Sybase.Managed Sybase
 
 SELECT
-	[t1].[ID]
-FROM
-	[test_in_1] [t1]
-
-BeforeExecute
--- Sybase.Managed Sybase
-
-SELECT
 	[t].[ID]
 FROM
 	[test_in_1] [t]
@@ -74,7 +66,7 @@ WHERE
 		FROM
 			[test_in_2] [p]
 		WHERE
-			[p].[ID] = [t].[ID]
+			[t].[ID] = [p].[ID]
 	)
 
 BeforeExecute
@@ -83,7 +75,7 @@ BeforeExecute
 SELECT
 	[t1].[ID]
 FROM
-	[test_in_2] [t1]
+	[test_in_1] [t1]
 
 BeforeExecute
 -- Sybase.Managed Sybase

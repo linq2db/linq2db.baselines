@@ -26,8 +26,8 @@ INSERT INTO Src
 	CEnum
 )
 VALUES
-(toInt32(1),NULL,NULL,NULL),
-(toInt32(2),toInt32(2),'TWO','___Value2___')
+(1,NULL,NULL,NULL),
+(2,2,'TWO','___Value2___')
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -37,8 +37,8 @@ SELECT
 FROM
 	Src s
 WHERE
-	s.Int IN (toInt32(-1), toInt32(-2))
-LIMIT toInt32(1)
+	s.Int IN (-1, -2)
+LIMIT 1
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -48,8 +48,8 @@ SELECT
 FROM
 	Src s
 WHERE
-	s.Int IN (toInt32(-1), NULL)
-LIMIT toInt32(1)
+	s.Int IN (-1, NULL)
+LIMIT 1
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -59,8 +59,8 @@ SELECT
 FROM
 	Src s
 WHERE
-	s.Int IN (toInt32(-1), toInt32(2))
-LIMIT toInt32(1)
+	s.Int IN (-1, 2)
+LIMIT 1
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -70,8 +70,8 @@ SELECT
 FROM
 	Src s
 WHERE
-	s.Int NOT IN (NULL, toInt32(2))
-LIMIT toInt32(1)
+	s.Int NOT IN (NULL, 2)
+LIMIT 1
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -81,8 +81,8 @@ SELECT
 FROM
 	Src s
 WHERE
-	s.Int NOT IN (toInt32(-1), toInt32(2))
-LIMIT toInt32(1)
+	s.Int NOT IN (-1, 2)
+LIMIT 1
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse

@@ -2,23 +2,21 @@
 -- Access.Odbc AccessODBC
 
 SELECT
-	[t3].[cnt]
+	(
+		SELECT
+			COUNT(*)
+		FROM
+			[Child] [a_Children]
+		WHERE
+			[p_1].[ParentID] = [a_Children].[ParentID]
+	)
 FROM
 	(
 		SELECT TOP 5
-			[t1].[ParentID]
+			[p].[ParentID]
 		FROM
-			[Parent] [t1]
-	) [p]
-		LEFT JOIN (
-			SELECT
-				Count(*) as [cnt],
-				[t2].[ParentID]
-			FROM
-				[Child] [t2]
-			GROUP BY
-				[t2].[ParentID]
-		) [t3] ON ([p].[ParentID] = [t3].[ParentID])
+			[Parent] [p]
+	) [p_1]
 ORDER BY
-	[p].[ParentID] DESC
+	[p_1].[ParentID] DESC
 

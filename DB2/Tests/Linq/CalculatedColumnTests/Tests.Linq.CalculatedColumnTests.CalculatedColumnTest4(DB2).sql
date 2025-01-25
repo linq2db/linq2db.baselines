@@ -2,32 +2,22 @@
 -- DB2 DB2.LUW DB2LUW
 
 SELECT
-	"t1"."PersonID",
-	"t1"."FirstName",
-	"t1"."LastName",
-	"t1"."MiddleName",
-	"t1"."Gender",
-	"t1"."AsSqlFullName",
-	"t1"."DoctorCount"
+	"a_PersonDoctor"."PersonID",
+	"a_PersonDoctor"."FirstName",
+	"a_PersonDoctor"."LastName",
+	"a_PersonDoctor"."MiddleName",
+	"a_PersonDoctor"."Gender",
+	"a_PersonDoctor"."LastName" || ', ' || "a_PersonDoctor"."FirstName",
+	"a_PersonDoctor"."LastName" || ', ' || "a_PersonDoctor"."FirstName",
+	(
+		SELECT
+			COUNT(*)
+		FROM
+			"Doctor" "d_1"
+		WHERE
+			"d_1"."PersonID" = "a_PersonDoctor"."PersonID"
+	)
 FROM
-	"Doctor" "cp"
-		INNER JOIN (
-			SELECT
-				"c_1"."PersonID",
-				"c_1"."FirstName",
-				"c_1"."LastName",
-				"c_1"."MiddleName",
-				"c_1"."Gender",
-				"c_1"."LastName" || ', ' || "c_1"."FirstName" as "AsSqlFullName",
-				(
-					SELECT
-						Count(*)
-					FROM
-						"Doctor" "d"
-					WHERE
-						"d"."PersonID" = "c_1"."PersonID"
-				) as "DoctorCount"
-			FROM
-				"Person" "c_1"
-		) "t1" ON "cp"."PersonID" = "t1"."PersonID"
+	"Doctor" "d"
+		INNER JOIN "Person" "a_PersonDoctor" ON "d"."PersonID" = "a_PersonDoctor"."PersonID"
 

@@ -57,35 +57,35 @@ BeforeExecute
 UPDATE
 	"gt_s_one"
 SET
-	("gt_s_one"."col1", "gt_s_one"."col2", "gt_s_one"."col3", "gt_s_one"."col4", "gt_s_one"."col5", "gt_s_one"."col6") = (
+	("col1", "col2", "col3", "col4", "col5", "col6") = (
 		SELECT
-			"x"."col1",
-			"x"."col2",
-			Replace("x"."col3", 'auth.', ''),
-			"x"."col4",
+			"gt_s_one"."col1",
+			"gt_s_one"."col2",
+			Replace("gt_s_one"."col3", 'auth.', ''),
+			"gt_s_one"."col4",
 			CASE
-				WHEN "x"."col3" = 'empty' THEN '1'
+				WHEN "gt_s_one"."col3" = 'empty' THEN '1'
 				ELSE '0'
 			END,
 			CASE
-				WHEN "x"."col3" = 'empty' THEN ''
-				ELSE RTrim(Char("am"."id"))
+				WHEN "gt_s_one"."col3" = 'empty' THEN ''
+				ELSE RTrim(Char("y1_1"."id"))
 			END
 		FROM
-			"gt_s_one" "x"
-				LEFT JOIN "access_mode" "am" ON (Upper(Replace("x"."col3", 'auth.', '')) = Upper("am"."code") OR Upper(Replace("x"."col3", 'auth.', '')) IS NULL AND Upper("am"."code") IS NULL)
+			"gt_s_one" "x_1"
+				LEFT JOIN "access_mode" "y1_1" ON (Upper(Replace("x_1"."col3", 'auth.', '')) = Upper("y1_1"."code") OR Upper(Replace("x_1"."col3", 'auth.', '')) IS NULL AND Upper("y1_1"."code") IS NULL)
 		WHERE
-			"gt_s_one"."id" = "x"."id"
+			"gt_s_one"."id" = "x_1"."id"
 	)
 WHERE
 	EXISTS(
 		SELECT
 			*
 		FROM
-			"gt_s_one" "x_1"
-				LEFT JOIN "access_mode" "am_1" ON (Upper(Replace("x_1"."col3", 'auth.', '')) = Upper("am_1"."code") OR Upper(Replace("x_1"."col3", 'auth.', '')) IS NULL AND Upper("am_1"."code") IS NULL)
+			"gt_s_one" "x"
+				LEFT JOIN "access_mode" "y1" ON (Upper(Replace("x"."col3", 'auth.', '')) = Upper("y1"."code") OR Upper(Replace("x"."col3", 'auth.', '')) IS NULL AND Upper("y1"."code") IS NULL)
 		WHERE
-			"gt_s_one"."id" = "x_1"."id"
+			"gt_s_one"."id" = "x"."id"
 	)
 
 BeforeExecute

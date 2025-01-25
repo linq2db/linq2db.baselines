@@ -2,7 +2,7 @@
 -- Oracle.21.Managed Oracle.Managed Oracle12
 
 SELECT
-	Min(c_1."ChildID")
+	MIN(c_1."ChildID")
 FROM
 	"Child" c_1
 

@@ -7,7 +7,7 @@ SELECT
 FROM
 	Parent c_1
 WHERE
-	c_1.ParentID = toInt32(1) AND c_1.Value1 IS NOT NULL
+	c_1.ParentID = 1 AND c_1.Value1 IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse

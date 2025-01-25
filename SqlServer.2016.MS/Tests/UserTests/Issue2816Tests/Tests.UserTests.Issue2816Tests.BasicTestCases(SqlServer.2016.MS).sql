@@ -46,5 +46,14 @@ WHERE
 BeforeExecute
 -- SqlServer.2016.MS SqlServer.2016
 
+SELECT
+	[t1].[Id],
+	[t1].[Text]
+FROM
+	[Issue2816Table] [t1]
+
+BeforeExecute
+-- SqlServer.2016.MS SqlServer.2016
+
 DROP TABLE IF EXISTS [Issue2816Table]
 

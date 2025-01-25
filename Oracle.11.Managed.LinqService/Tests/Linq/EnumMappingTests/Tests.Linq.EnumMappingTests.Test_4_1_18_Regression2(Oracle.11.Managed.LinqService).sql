@@ -28,6 +28,11 @@ BeforeExecute
 -- Oracle.11.Managed Oracle11
 
 SELECT
+	CASE
+		WHEN r."BigIntValue" IS NOT NULL AND r."IntValue" IS NOT NULL
+			THEN 1
+		ELSE 0
+	END,
 	r."BigIntValue",
 	r."IntValue"
 FROM

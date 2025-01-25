@@ -31,20 +31,19 @@ INSERT INTO "TestFolder"
 	"Id",
 	"Label"
 )
-WITH CTE ("Id", "Label", "ParentId")
+WITH CTE ("ParentId", "Label")
 AS
 (
 	SELECT
-		"c_1"."Id",
-		"c_1"."Label",
-		"c_1"."ParentId"
+		"c_1"."ParentId",
+		"c_1"."Label"
 	FROM
 		"TestFolder" "c_1"
 	WHERE
 		"c_1"."ParentId" IS NOT NULL
 )
 SELECT
-	@Guid1,
+	CAST(@Guid1 AS char(16) for bit data),
 	"parent"."Label" || '/' || "child"."Label"
 FROM
 	CTE "child"

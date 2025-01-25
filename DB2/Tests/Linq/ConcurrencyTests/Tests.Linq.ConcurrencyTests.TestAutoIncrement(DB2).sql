@@ -65,12 +65,12 @@ DECLARE @Stamp Integer(4) -- Int32
 SET     @Stamp = -10
 
 UPDATE
-	"ConcurrencyAutoIncrement"
+	"ConcurrencyAutoIncrement" "obj"
 SET
-	"ConcurrencyAutoIncrement"."Stamp" = "ConcurrencyAutoIncrement"."Stamp" + 1,
-	"ConcurrencyAutoIncrement"."Value" = @Value
+	"Stamp" = "obj"."Stamp" + 1,
+	"Value" = CAST(@Value AS NVarChar(7))
 WHERE
-	"ConcurrencyAutoIncrement"."Id" = @Id AND "ConcurrencyAutoIncrement"."Stamp" = @Stamp
+	"obj"."Id" = @Id AND "obj"."Stamp" = @Stamp
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
@@ -92,12 +92,12 @@ DECLARE @Stamp Integer(4) -- Int32
 SET     @Stamp = -9
 
 UPDATE
-	"ConcurrencyAutoIncrement"
+	"ConcurrencyAutoIncrement" "obj"
 SET
-	"ConcurrencyAutoIncrement"."Stamp" = "ConcurrencyAutoIncrement"."Stamp" + 1,
-	"ConcurrencyAutoIncrement"."Value" = @Value
+	"Stamp" = "obj"."Stamp" + 1,
+	"Value" = CAST(@Value AS NVarChar(7))
 WHERE
-	"ConcurrencyAutoIncrement"."Id" = @Id AND "ConcurrencyAutoIncrement"."Stamp" = @Stamp
+	"obj"."Id" = @Id AND "obj"."Stamp" = @Stamp
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
@@ -119,12 +119,12 @@ DECLARE @Stamp Integer(4) -- Int32
 SET     @Stamp = -9
 
 UPDATE
-	"ConcurrencyAutoIncrement"
+	"ConcurrencyAutoIncrement" "obj"
 SET
-	"ConcurrencyAutoIncrement"."Stamp" = "ConcurrencyAutoIncrement"."Stamp" + 1,
-	"ConcurrencyAutoIncrement"."Value" = @Value
+	"Stamp" = "obj"."Stamp" + 1,
+	"Value" = CAST(@Value AS NVarChar(7))
 WHERE
-	"ConcurrencyAutoIncrement"."Id" = @Id AND "ConcurrencyAutoIncrement"."Stamp" = @Stamp
+	"obj"."Id" = @Id AND "obj"."Stamp" = @Stamp
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW

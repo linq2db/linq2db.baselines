@@ -23,9 +23,9 @@ DECLARE @PersonID Int -- Int32
 SET     @PersonID = 1
 
 UPDATE
-	[t1]
+	[xxPatient]
 SET
-	[t1].[Diagnosis] = @Diagnosis
+	[Diagnosis] = @Diagnosis
 FROM
 	[xxPatient] [t1]
 WHERE
@@ -53,9 +53,9 @@ DECLARE @PersonID Int -- Int32
 SET     @PersonID = 2
 
 UPDATE
-	[t1]
+	[xxPatient]
 SET
-	[t1].[Diagnosis] = @Diagnosis
+	[Diagnosis] = @Diagnosis
 FROM
 	[xxPatient] [t1]
 WHERE
@@ -79,7 +79,7 @@ BeforeExecute
 -- SqlServer.2005 (asynchronously)
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	[xxPatient] [t1]
 
@@ -91,9 +91,9 @@ DECLARE @PersonID Int -- Int32
 SET     @PersonID = 1
 
 UPDATE
-	[t1]
+	[xxPatient]
 SET
-	[t1].[Diagnosis] = @Diagnosis
+	[Diagnosis] = @Diagnosis
 FROM
 	[xxPatient] [t1]
 WHERE
@@ -121,9 +121,9 @@ DECLARE @PersonID Int -- Int32
 SET     @PersonID = 2
 
 UPDATE
-	[t1]
+	[xxPatient]
 SET
-	[t1].[Diagnosis] = @Diagnosis
+	[Diagnosis] = @Diagnosis
 FROM
 	[xxPatient] [t1]
 WHERE
@@ -147,7 +147,7 @@ BeforeExecute
 -- SqlServer.2005 (asynchronously)
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	[xxPatient] [t1]
 

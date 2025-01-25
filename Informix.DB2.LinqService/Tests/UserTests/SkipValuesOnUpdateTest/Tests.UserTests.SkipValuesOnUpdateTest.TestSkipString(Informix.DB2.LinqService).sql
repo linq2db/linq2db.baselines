@@ -59,12 +59,12 @@ DECLARE @Id Integer(4) -- Int32
 SET     @Id = 1
 
 UPDATE
-	PR_1598_Update_Table
+	PR_1598_Update_Table t1
 SET
-	PR_1598_Update_Table.Name = @Name,
-	PR_1598_Update_Table.Age = @Age
+	Name = @Name,
+	Age = @Age
 WHERE
-	PR_1598_Update_Table.Id = @Id
+	t1.Id = @Id
 
 BeforeExecute
 -- Informix.DB2 Informix
@@ -86,11 +86,11 @@ DECLARE @Id Integer(4) -- Int32
 SET     @Id = 1
 
 UPDATE
-	PR_1598_Update_Table
+	PR_1598_Update_Table t1
 SET
-	PR_1598_Update_Table.Age = @Age
+	Age = @Age
 WHERE
-	PR_1598_Update_Table.Id = @Id
+	t1.Id = @Id
 
 BeforeExecute
 -- Informix.DB2 Informix

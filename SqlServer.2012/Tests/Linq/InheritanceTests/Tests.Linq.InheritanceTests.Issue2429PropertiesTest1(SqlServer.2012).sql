@@ -29,10 +29,8 @@ VALUES
 
 BeforeExecute
 -- SqlServer.2012
-DECLARE @take Int -- Int32
-SET     @take = 1
 
-SELECT TOP (@take)
+SELECT TOP (1)
 	[x].[Id],
 	[x].[Value]
 FROM
@@ -42,10 +40,8 @@ WHERE
 
 BeforeExecute
 -- SqlServer.2012
-DECLARE @take Int -- Int32
-SET     @take = 1
 
-SELECT TOP (@take)
+SELECT TOP (1)
 	[x].[Id],
 	[x].[Value]
 FROM

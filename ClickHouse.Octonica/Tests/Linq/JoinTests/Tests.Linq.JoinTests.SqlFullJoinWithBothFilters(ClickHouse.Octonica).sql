@@ -3,28 +3,24 @@
 
 SELECT
 	left_1.ParentID,
-	left_1.Value1,
-	t1.ParentID,
-	t1.Value1
+	right_2.ParentID
 FROM
 	(
 		SELECT
-			p.ParentID as ParentID,
-			p.Value1 as Value1
+			p.ParentID as ParentID
 		FROM
 			Parent p
 		WHERE
-			p.ParentID <> toInt32(1)
+			p.ParentID <> 1
 	) left_1
 		FULL JOIN (
 			SELECT
-				p_1.ParentID as ParentID,
-				p_1.Value1 as Value1
+				right_1.ParentID as ParentID
 			FROM
-				Parent p_1
+				Parent right_1
 			WHERE
-				p_1.ParentID <> toInt32(2)
-		) t1 ON t1.ParentID = left_1.ParentID
+				right_1.ParentID <> 2
+		) right_2 ON right_2.ParentID = left_1.ParentID
 ORDER BY
 	left_1.ParentID
 

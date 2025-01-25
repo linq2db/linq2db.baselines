@@ -125,15 +125,13 @@ BeforeExecute
 -- Oracle.23.Managed Oracle.Managed Oracle12
 
 SELECT
-	Max(t1."Value4"),
-	LISTAGG(t1."Value4", ' -> ') WITHIN GROUP (ORDER BY ROWNUM)
+	MAX(g_1."Value4"),
+	LISTAGG(g_1."Value4", ' -> ') WITHIN GROUP (ORDER BY ROWNUM)
 FROM
-	"SampleClass" t1
+	"SampleClass" g_1
 GROUP BY
-	t1."Id",
-	t1."Value4"
-ORDER BY
-	t1."Id"
+	g_1."Id",
+	g_1."Value4"
 
 BeforeExecute
 -- Oracle.23.Managed Oracle.Managed Oracle12

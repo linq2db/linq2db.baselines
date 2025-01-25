@@ -488,7 +488,7 @@ BeforeExecute
 -- SqlServer.2014
 
 SELECT
-	DateAdd(day, 5, [t].[TransactionDate])
+	CAST(DateAdd(day, 5, [t].[TransactionDate]) AS Date)
 FROM
 	[Transactions] [t]
 

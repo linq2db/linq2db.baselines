@@ -3,10 +3,9 @@
 
 SELECT
 	[p].[PersonID],
-	[p].[FirstName]
+	N'123' + [p].[FirstName] + N'456'
 FROM
 	[Person] [p]
 WHERE
-	N'123' + [p].[FirstName] + N'456' = N'123John456' AND
-	[p].[PersonID] = 1
+	[p].[PersonID] = 1 AND N'123' + [p].[FirstName] + N'456' = N'123John456'
 

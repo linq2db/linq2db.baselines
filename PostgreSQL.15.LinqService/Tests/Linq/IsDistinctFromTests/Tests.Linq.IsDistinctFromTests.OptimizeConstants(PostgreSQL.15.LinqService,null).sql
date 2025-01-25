@@ -2,13 +2,13 @@
 -- PostgreSQL.15 PostgreSQL
 
 SELECT
-	Count(*)
+	COUNT(*)
 
 BeforeExecute
 -- PostgreSQL.15 PostgreSQL
 
 SELECT
-	Count(*)
+	COUNT(*)
 WHERE
 	1 = 0
 

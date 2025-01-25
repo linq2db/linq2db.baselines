@@ -2,7 +2,7 @@
 -- SqlServer.2008
 
 SELECT
-	Convert(SmallMoney, [t].[MoneyValue])
+	CAST([t].[MoneyValue] AS SmallMoney)
 FROM
 	[LinqDataTypes] [t]
 

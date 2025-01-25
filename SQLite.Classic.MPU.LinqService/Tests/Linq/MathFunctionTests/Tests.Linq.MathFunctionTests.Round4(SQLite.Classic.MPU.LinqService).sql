@@ -2,18 +2,18 @@
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
 SELECT
-	[t].[c1]
+	[t_1].[c1]
 FROM
 	(
 		SELECT
 			CASE
-				WHEN Cast([p].[MoneyValue] as Float) * 2 = Round(Cast([p].[MoneyValue] as Float) * 2, 1) AND Cast([p].[MoneyValue] as Float) <> Round(Cast([p].[MoneyValue] as Float), 1)
-					THEN Round(Cast([p].[MoneyValue] as Float) / 2, 1) * 2
-				ELSE Round(Cast([p].[MoneyValue] as Float), 1)
+				WHEN CAST([t].[MoneyValue] AS Float) * 2 = Round(CAST([t].[MoneyValue] AS Float) * 2, 1) AND CAST([t].[MoneyValue] AS Float) <> Round(CAST([t].[MoneyValue] AS Float), 1)
+					THEN Round(CAST([t].[MoneyValue] AS Float) / 2, 1) * 2
+				ELSE Round(CAST([t].[MoneyValue] AS Float), 1)
 			END as [c1]
 		FROM
-			[LinqDataTypes] [p]
-	) [t]
+			[LinqDataTypes] [t]
+	) [t_1]
 WHERE
-	[t].[c1] <> 0
+	[t_1].[c1] <> 0
 

@@ -10,9 +10,9 @@ SELECT
 FROM
 	"Person" p
 		INNER JOIN (
-			SELECT 2 AS "PersonID" FROM sys.dual
+			SELECT 2 AS ID FROM sys.dual
 			UNION ALL
-			SELECT 3 FROM sys.dual) n ON p."PersonID" = n."PersonID"
+			SELECT 3 FROM sys.dual) n ON p."PersonID" = n.ID
 
 BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12
@@ -26,7 +26,7 @@ SELECT
 FROM
 	"Person" p
 		INNER JOIN (
-			SELECT 4 AS "PersonID" FROM sys.dual
+			SELECT 4 AS ID FROM sys.dual
 			UNION ALL
-			SELECT 5 FROM sys.dual) n ON p."PersonID" = n."PersonID"
+			SELECT 5 FROM sys.dual) n ON p."PersonID" = n.ID
 

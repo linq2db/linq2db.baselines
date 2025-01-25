@@ -39,8 +39,6 @@ SELECT * FROM dual
 
 BeforeExecute
 -- Oracle.11.Managed Oracle11
-DECLARE @take Int32
-SET     @take = 2
 
 SELECT
 	i."Id",
@@ -48,12 +46,10 @@ SELECT
 FROM
 	"Isue2424Table" i
 WHERE
-	i."StrValue" >= '4' AND ROWNUM <= :take
+	i."StrValue" >= '4' AND ROWNUM <= 2
 
 BeforeExecute
 -- Oracle.11.Managed Oracle11
-DECLARE @take Int32
-SET     @take = 2
 
 SELECT
 	i."Id",
@@ -61,12 +57,10 @@ SELECT
 FROM
 	"Isue2424Table" i
 WHERE
-	i."StrValue" >= '4' AND ROWNUM <= :take
+	i."StrValue" >= '4' AND ROWNUM <= 2
 
 BeforeExecute
 -- Oracle.11.Managed Oracle11
-DECLARE @take Int32
-SET     @take = 2
 
 SELECT
 	i."Id",
@@ -74,12 +68,10 @@ SELECT
 FROM
 	"Isue2424Table" i
 WHERE
-	i."StrValue" <= '2' AND ROWNUM <= :take
+	i."StrValue" <= '2' AND ROWNUM <= 2
 
 BeforeExecute
 -- Oracle.11.Managed Oracle11
-DECLARE @take Int32
-SET     @take = 2
 
 SELECT
 	i."Id",
@@ -87,12 +79,10 @@ SELECT
 FROM
 	"Isue2424Table" i
 WHERE
-	i."StrValue" <= '2' AND ROWNUM <= :take
+	i."StrValue" <= '2' AND ROWNUM <= 2
 
 BeforeExecute
 -- Oracle.11.Managed Oracle11
-DECLARE @take Int32
-SET     @take = 2
 
 SELECT
 	i."Id",
@@ -100,12 +90,10 @@ SELECT
 FROM
 	"Isue2424Table" i
 WHERE
-	i."StrValue" > '3' AND ROWNUM <= :take
+	i."StrValue" > '3' AND ROWNUM <= 2
 
 BeforeExecute
 -- Oracle.11.Managed Oracle11
-DECLARE @take Int32
-SET     @take = 2
 
 SELECT
 	i."Id",
@@ -113,12 +101,10 @@ SELECT
 FROM
 	"Isue2424Table" i
 WHERE
-	i."StrValue" > '3' AND ROWNUM <= :take
+	i."StrValue" > '3' AND ROWNUM <= 2
 
 BeforeExecute
 -- Oracle.11.Managed Oracle11
-DECLARE @take Int32
-SET     @take = 2
 
 SELECT
 	i."Id",
@@ -126,12 +112,10 @@ SELECT
 FROM
 	"Isue2424Table" i
 WHERE
-	i."StrValue" < '3' AND ROWNUM <= :take
+	i."StrValue" < '3' AND ROWNUM <= 2
 
 BeforeExecute
 -- Oracle.11.Managed Oracle11
-DECLARE @take Int32
-SET     @take = 2
 
 SELECT
 	i."Id",
@@ -139,12 +123,10 @@ SELECT
 FROM
 	"Isue2424Table" i
 WHERE
-	i."StrValue" < '3' AND ROWNUM <= :take
+	i."StrValue" < '3' AND ROWNUM <= 2
 
 BeforeExecute
 -- Oracle.11.Managed Oracle11
-DECLARE @take Int32
-SET     @take = 2
 
 SELECT
 	i."Id",
@@ -152,12 +134,10 @@ SELECT
 FROM
 	"Isue2424Table" i
 WHERE
-	i."StrValue" = '3' AND ROWNUM <= :take
+	i."StrValue" = '3' AND ROWNUM <= 2
 
 BeforeExecute
 -- Oracle.11.Managed Oracle11
-DECLARE @take Int32
-SET     @take = 2
 
 SELECT
 	i."Id",
@@ -165,12 +145,10 @@ SELECT
 FROM
 	"Isue2424Table" i
 WHERE
-	i."StrValue" = '3' AND ROWNUM <= :take
+	i."StrValue" = '3' AND ROWNUM <= 2
 
 BeforeExecute
 -- Oracle.11.Managed Oracle11
-DECLARE @take Int32
-SET     @take = 2
 
 SELECT
 	i."Id",
@@ -178,12 +156,10 @@ SELECT
 FROM
 	"Isue2424Table" i
 WHERE
-	i."StrValue" <= '2' AND ROWNUM <= :take
+	i."StrValue" <= '2' AND ROWNUM <= 2
 
 BeforeExecute
 -- Oracle.11.Managed Oracle11
-DECLARE @take Int32
-SET     @take = 2
 
 SELECT
 	i."Id",
@@ -191,12 +167,10 @@ SELECT
 FROM
 	"Isue2424Table" i
 WHERE
-	i."StrValue" <= '2' AND ROWNUM <= :take
+	i."StrValue" <= '2' AND ROWNUM <= 2
 
 BeforeExecute
 -- Oracle.11.Managed Oracle11
-DECLARE @take Int32
-SET     @take = 2
 
 SELECT
 	i."Id",
@@ -204,12 +178,10 @@ SELECT
 FROM
 	"Isue2424Table" i
 WHERE
-	i."StrValue" >= '4' AND ROWNUM <= :take
+	i."StrValue" >= '4' AND ROWNUM <= 2
 
 BeforeExecute
 -- Oracle.11.Managed Oracle11
-DECLARE @take Int32
-SET     @take = 2
 
 SELECT
 	i."Id",
@@ -217,12 +189,10 @@ SELECT
 FROM
 	"Isue2424Table" i
 WHERE
-	i."StrValue" >= '4' AND ROWNUM <= :take
+	i."StrValue" >= '4' AND ROWNUM <= 2
 
 BeforeExecute
 -- Oracle.11.Managed Oracle11
-DECLARE @take Int32
-SET     @take = 2
 
 SELECT
 	i."Id",
@@ -230,12 +200,10 @@ SELECT
 FROM
 	"Isue2424Table" i
 WHERE
-	i."StrValue" < '3' AND ROWNUM <= :take
+	i."StrValue" < '3' AND ROWNUM <= 2
 
 BeforeExecute
 -- Oracle.11.Managed Oracle11
-DECLARE @take Int32
-SET     @take = 2
 
 SELECT
 	i."Id",
@@ -243,12 +211,10 @@ SELECT
 FROM
 	"Isue2424Table" i
 WHERE
-	i."StrValue" < '3' AND ROWNUM <= :take
+	i."StrValue" < '3' AND ROWNUM <= 2
 
 BeforeExecute
 -- Oracle.11.Managed Oracle11
-DECLARE @take Int32
-SET     @take = 2
 
 SELECT
 	i."Id",
@@ -256,12 +222,10 @@ SELECT
 FROM
 	"Isue2424Table" i
 WHERE
-	i."StrValue" > '3' AND ROWNUM <= :take
+	i."StrValue" > '3' AND ROWNUM <= 2
 
 BeforeExecute
 -- Oracle.11.Managed Oracle11
-DECLARE @take Int32
-SET     @take = 2
 
 SELECT
 	i."Id",
@@ -269,12 +233,10 @@ SELECT
 FROM
 	"Isue2424Table" i
 WHERE
-	i."StrValue" > '3' AND ROWNUM <= :take
+	i."StrValue" > '3' AND ROWNUM <= 2
 
 BeforeExecute
 -- Oracle.11.Managed Oracle11
-DECLARE @take Int32
-SET     @take = 2
 
 SELECT
 	i."Id",
@@ -282,12 +244,10 @@ SELECT
 FROM
 	"Isue2424Table" i
 WHERE
-	i."StrValue" >= '5' AND ROWNUM <= :take
+	i."StrValue" >= '5' AND ROWNUM <= 2
 
 BeforeExecute
 -- Oracle.11.Managed Oracle11
-DECLARE @take Int32
-SET     @take = 2
 
 SELECT
 	i."Id",
@@ -295,12 +255,10 @@ SELECT
 FROM
 	"Isue2424Table" i
 WHERE
-	i."StrValue" >= '5' AND ROWNUM <= :take
+	i."StrValue" >= '5' AND ROWNUM <= 2
 
 BeforeExecute
 -- Oracle.11.Managed Oracle11
-DECLARE @take Int32
-SET     @take = 2
 
 SELECT
 	i."Id",
@@ -308,12 +266,10 @@ SELECT
 FROM
 	"Isue2424Table" i
 WHERE
-	i."StrValue" <= '1' AND ROWNUM <= :take
+	i."StrValue" <= '1' AND ROWNUM <= 2
 
 BeforeExecute
 -- Oracle.11.Managed Oracle11
-DECLARE @take Int32
-SET     @take = 2
 
 SELECT
 	i."Id",
@@ -321,7 +277,7 @@ SELECT
 FROM
 	"Isue2424Table" i
 WHERE
-	i."StrValue" <= '1' AND ROWNUM <= :take
+	i."StrValue" <= '1' AND ROWNUM <= 2
 
 BeforeExecute
 -- Oracle.11.Managed Oracle11

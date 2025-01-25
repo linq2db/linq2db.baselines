@@ -84,15 +84,15 @@ BeforeExecute
 -- SqlServer.2019
 
 UPDATE
-	[DestinationTable_target]
+	[t]
 SET
-	[DestinationTable_target].[Id] = [s].[Id],
-	[DestinationTable_target].[Value] = [s].[Value],
-	[DestinationTable_target].[ValueStr] = [s].[ValueStr]
+	[t].[Id] = [s].[Id],
+	[t].[Value] = [s].[Value],
+	[t].[ValueStr] = [s].[ValueStr]
 OUTPUT
 	[s].[Id],
-	[DELETED].[Value],
-	[INSERTED].[ValueStr]
+	DELETED.[Value],
+	INSERTED.[ValueStr]
 INTO [tempdb]..[#TableWithData_destination]
 (
 	[Id],

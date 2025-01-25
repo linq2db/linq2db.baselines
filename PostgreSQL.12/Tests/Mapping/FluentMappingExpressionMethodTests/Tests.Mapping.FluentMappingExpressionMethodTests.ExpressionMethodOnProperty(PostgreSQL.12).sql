@@ -46,11 +46,11 @@ BeforeExecute
 -- PostgreSQL.12 PostgreSQL.9.5 PostgreSQL
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	"InstanceClass" t
 WHERE
-	Cast(t."Id" as text) || Cast(t."Value" as text) = Cast(t."Id" as text) || Cast(t."Value" as VarChar(11))
+	t."Id"::text || t."Value"::text = t."Id"::text || t."Value"
 
 BeforeExecute
 -- PostgreSQL.12 PostgreSQL.9.5 PostgreSQL

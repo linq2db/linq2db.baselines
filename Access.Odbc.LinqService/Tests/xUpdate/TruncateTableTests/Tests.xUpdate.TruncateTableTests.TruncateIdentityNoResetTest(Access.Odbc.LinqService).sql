@@ -1,6 +1,11 @@
 ﻿BeforeExecute
 -- Access.Odbc AccessODBC
 
+DROP TABLE [test_temp]
+
+BeforeExecute
+-- Access.Odbc AccessODBC
+
 CREATE TABLE [test_temp]
 (
 	[ID]     Int      NOT NULL IDENTITY,
@@ -8,6 +13,11 @@ CREATE TABLE [test_temp]
 
 	CONSTRAINT [PK_test_temp] PRIMARY KEY CLUSTERED ([ID])
 )
+
+BeforeExecute
+-- Access.Odbc AccessODBC
+
+DELETE FROM [test_temp]
 
 BeforeExecute
 -- Access.Odbc AccessODBC

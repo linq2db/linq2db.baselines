@@ -2,10 +2,10 @@
 -- Oracle.11.Managed Oracle11
 
 SELECT
-	selectParam."ChildID",
-	Round(AVG(selectParam."ParentID"), 27)
+	t1."ChildID",
+	AVG(t1."ParentID")
 FROM
-	"Child" selectParam
+	"Child" t1
 GROUP BY
-	selectParam."ChildID"
+	t1."ChildID"
 

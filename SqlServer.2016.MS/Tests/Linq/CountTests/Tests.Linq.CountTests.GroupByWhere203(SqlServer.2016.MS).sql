@@ -2,24 +2,17 @@
 -- SqlServer.2016.MS SqlServer.2016
 
 SELECT
-	[g_1].[ParentID]
+	[g_2].[ParentID]
 FROM
 	(
 		SELECT
-			(
-				SELECT
-					Count(*)
-				FROM
-					[Child] [ch]
-				WHERE
-					[t1].[ParentID] = [ch].[ParentID] AND [ch].[ChildID] > 20
-			) as [ex],
-			[t1].[ParentID]
+			COUNT(IIF([g_1].[ChildID] > 20, 1, NULL)) as [COUNT_1],
+			[g_1].[ParentID]
 		FROM
-			[Child] [t1]
+			[Child] [g_1]
 		GROUP BY
-			[t1].[ParentID]
-	) [g_1]
+			[g_1].[ParentID]
+	) [g_2]
 WHERE
-	([g_1].[ex] > 2 OR [g_1].[ParentID] > 2)
+	([g_2].[COUNT_1] > 2 OR [g_2].[ParentID] > 2)
 

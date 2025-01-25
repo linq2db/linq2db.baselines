@@ -5,12 +5,7 @@ SELECT /* qb */
 	[t].[PersonID],
 	[t].[Diagnosis]
 FROM
-	(
-		SELECT
-			[c_1].[ParentID]
-		FROM
-			[Parent] [p],
-			[Child] [c_1] NOT INDEXED
-	) [t1]
-		INNER JOIN [Patient] [t] ON [t1].[ParentID] = [t].[PersonID]
+	[Parent] [t1]
+		CROSS JOIN [Child] [c_1] NOT INDEXED
+		INNER JOIN [Patient] [t] ON [c_1].[ParentID] = [t].[PersonID]
 

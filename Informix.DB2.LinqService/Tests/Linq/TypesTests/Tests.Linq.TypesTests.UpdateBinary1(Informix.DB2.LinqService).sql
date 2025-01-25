@@ -4,11 +4,11 @@ DECLARE @BinaryValue VarBinary(5) -- Binary
 SET     @BinaryValue = {1,2,3,4,5}
 
 UPDATE
-	LinqDataTypes
+	LinqDataTypes t
 SET
-	LinqDataTypes.BinaryValue = @BinaryValue
+	BinaryValue = @BinaryValue
 WHERE
-	LinqDataTypes.ID = 1
+	t.ID = 1
 
 BeforeExecute
 -- Informix.DB2 Informix

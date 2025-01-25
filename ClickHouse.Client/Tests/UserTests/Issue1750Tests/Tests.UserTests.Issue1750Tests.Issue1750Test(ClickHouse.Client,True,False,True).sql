@@ -7,6 +7,5 @@ SELECT
 FROM
 	Parent p
 WHERE
-	p.ParentID IN (toInt32(1), toInt32(2), toInt32(3), toInt32(4)) AND
-	(p.Value1 = toInt32(1) OR p.ParentID % toInt32(2) = toInt32(0))
+	p.ParentID IN (1, 2, 3, 4) AND (p.Value1 = 1 OR p.ParentID % 2 = 0)
 

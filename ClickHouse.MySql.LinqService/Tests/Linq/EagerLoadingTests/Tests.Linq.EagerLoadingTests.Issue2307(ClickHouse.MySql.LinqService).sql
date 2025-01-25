@@ -24,7 +24,7 @@ INSERT INTO AttendanceSheet
 )
 VALUES
 (
-	toInt32(1)
+	1
 )
 
 BeforeExecute
@@ -36,7 +36,7 @@ INSERT INTO AttendanceSheet
 )
 VALUES
 (
-	toInt32(2)
+	2
 )
 
 BeforeExecute
@@ -64,8 +64,8 @@ INSERT INTO AttendanceSheetRow
 )
 VALUES
 (
-	toInt32(1),
-	toInt32(1)
+	1,
+	1
 )
 
 BeforeExecute
@@ -78,8 +78,8 @@ INSERT INTO AttendanceSheetRow
 )
 VALUES
 (
-	toInt32(2),
-	toInt32(2)
+	2,
+	2
 )
 
 BeforeExecute
@@ -92,8 +92,8 @@ INSERT INTO AttendanceSheetRow
 )
 VALUES
 (
-	toInt32(3),
-	toInt32(1)
+	3,
+	1
 )
 
 BeforeExecute
@@ -106,28 +106,28 @@ INSERT INTO AttendanceSheetRow
 )
 VALUES
 (
-	toInt32(4),
-	toInt32(2)
+	4,
+	2
 )
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
-	sheet.Id,
-	detail.Id,
-	detail.AttendanceSheetId
+	m_1.Id,
+	d.Id,
+	d.AttendanceSheetId
 FROM
-	AttendanceSheet sheet
-		INNER JOIN AttendanceSheetRow detail ON detail.AttendanceSheetId = sheet.Id
+	AttendanceSheet m_1
+		INNER JOIN AttendanceSheetRow d ON m_1.Id = d.AttendanceSheetId
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
-	sheet.Id
+	t1.Id
 FROM
-	AttendanceSheet sheet
+	AttendanceSheet t1
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse

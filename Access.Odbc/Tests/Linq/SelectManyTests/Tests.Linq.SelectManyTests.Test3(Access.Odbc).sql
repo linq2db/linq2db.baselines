@@ -2,14 +2,14 @@
 -- Access.Odbc AccessODBC
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	(
 		SELECT
-			[p].[ParentID]
+			[t1].[ParentID]
 		FROM
-			[Parent] [p],
+			[Parent] [t1],
 			[Person] [t]
-	) [cross_1]
-		INNER JOIN [GrandChild] [g_1] ON ([cross_1].[ParentID] = [g_1].[ParentID])
+	) [sub]
+		INNER JOIN [GrandChild] [g_1] ON ([sub].[ParentID] = [g_1].[ParentID])
 

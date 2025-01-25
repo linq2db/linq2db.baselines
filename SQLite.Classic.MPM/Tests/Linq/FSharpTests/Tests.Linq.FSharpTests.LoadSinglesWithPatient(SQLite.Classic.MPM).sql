@@ -1,7 +1,5 @@
 ﻿BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-DECLARE @take  -- Int32
-SET     @take = 2
 
 SELECT
 	[p].[PersonID],
@@ -16,12 +14,10 @@ FROM
 		LEFT JOIN [Patient] [a_Patient] ON [p].[PersonID] = [a_Patient].[PersonID]
 WHERE
 	[p].[PersonID] = 1
-LIMIT @take
+LIMIT 2
 
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-DECLARE @take  -- Int32
-SET     @take = 2
 
 SELECT
 	[p].[PersonID],
@@ -36,5 +32,5 @@ FROM
 		LEFT JOIN [Patient] [a_Patient] ON [p].[PersonID] = [a_Patient].[PersonID]
 WHERE
 	[p].[PersonID] = 2
-LIMIT @take
+LIMIT 2
 

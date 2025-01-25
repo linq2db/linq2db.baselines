@@ -3,32 +3,30 @@
 
 SELECT
 	[o].[ParentID],
-	[t2].[CountResult],
 	(
 		SELECT
-			Sum([x].[ParentID])
+			COUNT(*)
 		FROM
-			[Child] [x]
+			[Child] [a_Children]
 		WHERE
-			[o].[ParentID] = [x].[ParentID]
+			[o].[ParentID] = [a_Children].[ParentID]
+	),
+	(
+		SELECT
+			SUM([a_Children_1].[ParentID])
+		FROM
+			[Child] [a_Children_1]
+		WHERE
+			[o].[ParentID] = [a_Children_1].[ParentID]
 	)
 FROM
 	[Parent] [o]
-		LEFT JOIN (
-			SELECT
-				Count(*) as [CountResult],
-				[t1].[ParentID]
-			FROM
-				[Child] [t1]
-			GROUP BY
-				[t1].[ParentID]
-		) [t2] ON ([o].[ParentID] = [t2].[ParentID])
 
 BeforeExecute
 -- Access AccessOleDb
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	[Parent] [o]
 
@@ -38,31 +36,29 @@ BeforeExecute
 SELECT
 	[x_1].[ParentID],
 	[x_1].[CountResult],
-	[x_1].[SumResult]
+	[x_1].[SUM_1]
 FROM
 	(
 		SELECT
-			[t2].[CountResult],
-			[o].[ParentID],
 			(
 				SELECT
-					Sum([x].[ParentID])
+					COUNT(*)
 				FROM
-					[Child] [x]
+					[Child] [a_Children]
 				WHERE
-					[o].[ParentID] = [x].[ParentID]
-			) as [SumResult]
+					[x].[ParentID] = [a_Children].[ParentID]
+			) as [CountResult],
+			[x].[ParentID],
+			(
+				SELECT
+					SUM([a_Children_1].[ParentID])
+				FROM
+					[Child] [a_Children_1]
+				WHERE
+					[x].[ParentID] = [a_Children_1].[ParentID]
+			) as [SUM_1]
 		FROM
-			[Parent] [o]
-				LEFT JOIN (
-					SELECT
-						Count(*) as [CountResult],
-						[t1].[ParentID]
-					FROM
-						[Child] [t1]
-					GROUP BY
-						[t1].[ParentID]
-				) [t2] ON ([o].[ParentID] = [t2].[ParentID])
+			[Parent] [x]
 	) [x_1]
 WHERE
 	[x_1].[CountResult] > 0

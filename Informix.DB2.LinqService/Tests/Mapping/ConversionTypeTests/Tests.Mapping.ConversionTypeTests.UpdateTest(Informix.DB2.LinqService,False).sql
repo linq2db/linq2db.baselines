@@ -76,37 +76,33 @@ DECLARE @ID Integer(4) -- Int32
 SET     @ID = 3
 
 UPDATE
-	TrimTestTable
+	TrimTestTable t1
 SET
-	TrimTestTable."Data" = @Data
+	"Data" = @Data
 WHERE
-	TrimTestTable.ID = @ID
+	t1.ID = @ID
 
 BeforeExecute
 -- Informix.DB2 Informix
-DECLARE @Data VarChar(9) -- String
-SET     @Data = '***OOO***'
 
 UPDATE
-	TrimTestTable
+	TrimTestTable t
 SET
-	TrimTestTable."Data" = @Data
+	"Data" = '***OOO***'
 WHERE
-	TrimTestTable."Data" = '***XXX***'
+	t."Data" = '***XXX***'
 
 BeforeExecute
 -- Informix.DB2 Informix
-DECLARE @Data VarChar(9) -- String
-SET     @Data = '***SSS***'
 DECLARE @p VarChar(9) -- String
 SET     @p = '***HHH***'
 
 UPDATE
-	TrimTestTable
+	TrimTestTable t
 SET
-	TrimTestTable."Data" = @Data
+	"Data" = '***SSS***'
 WHERE
-	TrimTestTable."Data" = @p
+	t."Data" = @p
 
 BeforeExecute
 -- Informix.DB2 Informix

@@ -70,28 +70,26 @@ VALUES
 
 BeforeExecute
 -- SqlServer.2016
-DECLARE @take Int -- Int32
-SET     @take = 1
 
 SELECT
+	[t2].[Id],
+	[t2].[OwnerStr],
 	[t1].[Id],
-	[t1].[OwnerStr],
-	[a_Other].[Id],
-	[a_Other].[StrValue],
-	[se_1].[Id],
-	[se_1].[StrValue]
+	[t1].[StrValue],
+	[a_OtherMapped].[Id],
+	[a_OtherMapped].[StrValue]
 FROM
-	[SomeEntity] [t1]
+	[SomeEntity] [t2]
 		OUTER APPLY (
-			SELECT TOP (@take)
-				[se].[Id],
-				[se].[StrValue]
+			SELECT TOP (1)
+				[a_Other].[Id],
+				[a_Other].[StrValue] + N'_A' as [StrValue]
 			FROM
-				[SomeOtherEntity] [se]
+				[SomeOtherEntity] [a_Other]
 			WHERE
-				[se].[Id] = [t1].[Id]
-		) [a_Other]
-		LEFT JOIN [SomeOtherEntity] [se_1] WITH (NOLOCK) ON [se_1].[Id] = [t1].[Id]
+				[a_Other].[Id] = [t2].[Id]
+		) [t1]
+		LEFT JOIN [SomeOtherEntity] [a_OtherMapped] WITH (NOLOCK) ON [a_OtherMapped].[Id] = [t2].[Id]
 
 BeforeExecute
 -- SqlServer.2016

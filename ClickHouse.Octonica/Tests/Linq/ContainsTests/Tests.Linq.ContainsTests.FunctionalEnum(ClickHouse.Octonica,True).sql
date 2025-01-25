@@ -26,8 +26,8 @@ INSERT INTO Src
 	CEnum
 )
 VALUES
-(toInt32(1),NULL,NULL,NULL),
-(toInt32(2),toInt32(2),'TWO','___Value2___')
+(1,NULL,NULL,NULL),
+(2,2,'TWO','___Value2___')
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -38,7 +38,7 @@ FROM
 	Src s
 WHERE
 	s.Enum IN ('THREE', 'FOUR')
-LIMIT toInt32(1)
+LIMIT 1
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -49,7 +49,7 @@ FROM
 	Src s
 WHERE
 	(s.Enum IN ('THREE') OR s.Enum IS NULL)
-LIMIT toInt32(1)
+LIMIT 1
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -60,7 +60,7 @@ FROM
 	Src s
 WHERE
 	s.Enum IN ('THREE', 'TWO')
-LIMIT toInt32(1)
+LIMIT 1
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -71,7 +71,7 @@ FROM
 	Src s
 WHERE
 	(s.Enum NOT IN ('TWO') AND s.Enum IS NOT NULL)
-LIMIT toInt32(1)
+LIMIT 1
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -82,7 +82,7 @@ FROM
 	Src s
 WHERE
 	(s.Enum NOT IN ('THREE', 'TWO') OR s.Enum IS NULL)
-LIMIT toInt32(1)
+LIMIT 1
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse

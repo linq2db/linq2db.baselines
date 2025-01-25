@@ -1788,16 +1788,16 @@ DECLARE @intParam  -- Int32
 SET     @intParam = 1
 
 SELECT
-	[lw_DetailClass].[Id1],
-	[lw_DetailClass].[DetailId],
-	[detail_1].[SubDetailId],
-	[detail_1].[DetailId],
-	[detail_1].[SubDetailValue]
+	[m_2].[DetailId],
+	[m_2].[Id1],
+	[d_1].[SubDetailId],
+	[d_1].[DetailId],
+	[d_1].[SubDetailValue]
 FROM
 	(
 		SELECT DISTINCT
-			[detail].[DetailId],
-			[lw_MasterClass].[Id1]
+			[d].[DetailId],
+			[t1].[Id1]
 		FROM
 			(
 				SELECT DISTINCT
@@ -1806,10 +1806,10 @@ FROM
 					[MasterClass] [m_1]
 				WHERE
 					[m_1].[Id1] >= @intParam
-			) [lw_MasterClass]
-				INNER JOIN [DetailClass] [detail] ON [lw_MasterClass].[Id1] = [detail].[MasterId]
-	) [lw_DetailClass]
-		INNER JOIN [SubDetailClass] [detail_1] ON [lw_DetailClass].[DetailId] = [detail_1].[DetailId]
+			) [t1]
+				INNER JOIN [DetailClass] [d] ON [t1].[Id1] = [d].[MasterId]
+	) [m_2]
+		INNER JOIN [SubDetailClass] [d_1] ON [m_2].[DetailId] = [d_1].[DetailId]
 
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
@@ -1817,10 +1817,10 @@ DECLARE @intParam  -- Int32
 SET     @intParam = 1
 
 SELECT
-	[lw_MasterClass].[Id1],
-	[detail].[DetailId],
-	[detail].[MasterId],
-	[detail].[DetailValue]
+	[m_2].[Id1],
+	[d].[DetailId],
+	[d].[MasterId],
+	[d].[DetailValue]
 FROM
 	(
 		SELECT DISTINCT
@@ -1829,8 +1829,8 @@ FROM
 			[MasterClass] [m_1]
 		WHERE
 			[m_1].[Id1] >= @intParam
-	) [lw_MasterClass]
-		INNER JOIN [DetailClass] [detail] ON [lw_MasterClass].[Id1] = [detail].[MasterId]
+	) [m_2]
+		INNER JOIN [DetailClass] [d] ON [m_2].[Id1] = [d].[MasterId]
 
 BeforeExecute
 DisposeTransaction

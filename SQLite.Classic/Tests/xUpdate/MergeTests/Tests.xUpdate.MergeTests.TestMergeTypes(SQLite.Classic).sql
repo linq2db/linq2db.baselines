@@ -106,14 +106,14 @@ DECLARE @FieldFloat  -- Single
 SET     @FieldFloat = -3.40282002E+38
 DECLARE @FieldDouble  -- Double
 SET     @FieldDouble = -1.7976931348623157E+308
-DECLARE @FieldDateTime  -- DateTime
+DECLARE @FieldDateTime VarChar(23) -- AnsiString
 SET     @FieldDateTime = '2000-11-12 21:14:15.167'
 DECLARE @FieldBinary Binary(0)
 SET     @FieldBinary = X''
 DECLARE @FieldGuid  -- Guid
 SET     @FieldGuid = X'00000000000000000000000000000000'
-DECLARE @FieldDate  -- DateTime
-SET     @FieldDate = '2000-11-23'
+DECLARE @FieldDate VarChar(23) -- AnsiString
+SET     @FieldDate = '2000-11-23 00:00:00.000'
 DECLARE @FieldEnumString NVarChar(5) -- String
 SET     @FieldEnumString = 'FIRST'
 DECLARE @FieldEnumNumber  -- Int32
@@ -182,14 +182,14 @@ DECLARE @FieldFloat  -- Single
 SET     @FieldFloat = 3.40282002E+38
 DECLARE @FieldDouble  -- Double
 SET     @FieldDouble = 1.7976931348623157E+308
-DECLARE @FieldDateTime  -- DateTime
+DECLARE @FieldDateTime VarChar(23) -- AnsiString
 SET     @FieldDateTime = '2001-10-12 21:14:15.167'
 DECLARE @FieldBinary Binary(6)
 SET     @FieldBinary = X'000102030004'
 DECLARE @FieldGuid  -- Guid
 SET     @FieldGuid = X'FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF'
-DECLARE @FieldDate  -- DateTime
-SET     @FieldDate = '2123-11-23'
+DECLARE @FieldDate VarChar(23) -- AnsiString
+SET     @FieldDate = '2123-11-23 00:00:00.000'
 DECLARE @FieldEnumString NVarChar(1) -- String
 SET     @FieldEnumString = char(0)
 DECLARE @FieldEnumNumber  -- Int32
@@ -257,14 +257,14 @@ DECLARE @FieldFloat  -- Single
 SET     @FieldFloat = 1.17549996E-38
 DECLARE @FieldDouble  -- Double
 SET     @FieldDouble = -2.2250738585072014E-308
-DECLARE @FieldDateTime  -- DateTime
+DECLARE @FieldDateTime VarChar(23) -- AnsiString
 SET     @FieldDateTime = '2098-10-12 21:14:15.997'
 DECLARE @FieldBinary Binary(6)
 SET     @FieldBinary = X'FFC864321400'
 DECLARE @FieldGuid  -- Guid
 SET     @FieldGuid = X'FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF'
-DECLARE @FieldDate  -- DateTime
-SET     @FieldDate = '2110-11-23'
+DECLARE @FieldDate VarChar(23) -- AnsiString
+SET     @FieldDate = '2110-11-23 00:00:00.000'
 DECLARE @FieldEnumString NVarChar -- String
 SET     @FieldEnumString = ''
 DECLARE @FieldEnumNumber  -- Int32
@@ -331,14 +331,14 @@ DECLARE @FieldFloat  -- Single
 SET     @FieldFloat = -1.17549996E-38
 DECLARE @FieldDouble  -- Double
 SET     @FieldDouble = 2.2250738585072014E-308
-DECLARE @FieldDateTime  -- DateTime
+DECLARE @FieldDateTime VarChar(23) -- AnsiString
 SET     @FieldDateTime = '2098-10-12 21:14:15.907'
 DECLARE @FieldBinary Binary(6)
 SET     @FieldBinary = X'FFC864321400'
 DECLARE @FieldGuid  -- Guid
 SET     @FieldGuid = X'FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF'
-DECLARE @FieldDate  -- DateTime
-SET     @FieldDate = '2111-11-23'
+DECLARE @FieldDate VarChar(23) -- AnsiString
+SET     @FieldDate = '2111-11-23 00:00:00.000'
 DECLARE @FieldEnumString NVarChar -- String
 SET     @FieldEnumString = NULL
 DECLARE @FieldEnumNumber  -- Int32
@@ -407,14 +407,14 @@ DECLARE @FieldFloat  -- Single
 SET     @FieldFloat = 3.40282002E+38
 DECLARE @FieldDouble  -- Double
 SET     @FieldDouble = 1.7976931348623157E+308
-DECLARE @FieldDateTime  -- DateTime
+DECLARE @FieldDateTime VarChar(23) -- AnsiString
 SET     @FieldDateTime = '2001-10-12 21:14:15.167'
 DECLARE @FieldBinary Binary(6)
 SET     @FieldBinary = X'000102030004'
 DECLARE @FieldGuid  -- Guid
 SET     @FieldGuid = X'FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF'
-DECLARE @FieldDate  -- DateTime
-SET     @FieldDate = '2123-11-23'
+DECLARE @FieldDate VarChar(23) -- AnsiString
+SET     @FieldDate = '2123-11-23 00:00:00.000'
 DECLARE @FieldEnumString NVarChar(1) -- String
 SET     @FieldEnumString = char(0)
 DECLARE @FieldEnumNumber  -- Int32
@@ -481,14 +481,14 @@ DECLARE @FieldFloat  -- Single
 SET     @FieldFloat = -1.17549996E-38
 DECLARE @FieldDouble  -- Double
 SET     @FieldDouble = 2.2250738585072014E-308
-DECLARE @FieldDateTime  -- DateTime
+DECLARE @FieldDateTime VarChar(23) -- AnsiString
 SET     @FieldDateTime = '2098-10-12 21:14:15.913'
 DECLARE @FieldBinary Binary(6)
 SET     @FieldBinary = X'FFC864321400'
 DECLARE @FieldGuid  -- Guid
 SET     @FieldGuid = X'FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF'
-DECLARE @FieldDate  -- DateTime
-SET     @FieldDate = '2010-11-23'
+DECLARE @FieldDate VarChar(23) -- AnsiString
+SET     @FieldDate = '2010-11-23 00:00:00.000'
 DECLARE @FieldEnumString NVarChar -- String
 SET     @FieldEnumString = NULL
 DECLARE @FieldEnumNumber  -- Int32
@@ -557,14 +557,14 @@ DECLARE @FieldFloat  -- Single
 SET     @FieldFloat = 3.40282002E+38
 DECLARE @FieldDouble  -- Double
 SET     @FieldDouble = 1.7976931348623157E+308
-DECLARE @FieldDateTime  -- DateTime
+DECLARE @FieldDateTime VarChar(23) -- AnsiString
 SET     @FieldDateTime = '2001-10-12 21:14:15.167'
 DECLARE @FieldBinary Binary(6)
 SET     @FieldBinary = X'000102030004'
 DECLARE @FieldGuid  -- Guid
 SET     @FieldGuid = X'FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF'
-DECLARE @FieldDate  -- DateTime
-SET     @FieldDate = '2123-11-23'
+DECLARE @FieldDate VarChar(23) -- AnsiString
+SET     @FieldDate = '2123-11-23 00:00:00.000'
 DECLARE @FieldEnumString NVarChar(1) -- String
 SET     @FieldEnumString = char(0)
 DECLARE @FieldEnumNumber  -- Int32

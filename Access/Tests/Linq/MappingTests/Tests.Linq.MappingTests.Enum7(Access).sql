@@ -8,9 +8,9 @@ DECLARE @v1_1 Integer -- Int32
 SET     @v1_1 = 1
 
 UPDATE
-	[Parent] [t1]
+	[Parent] [p]
 SET
-	[t1].[Value1] = @v1
+	[p].[Value1] = @v1
 WHERE
-	[t1].[Value1] = @v1_1
+	[p].[Value1] = @v1_1
 

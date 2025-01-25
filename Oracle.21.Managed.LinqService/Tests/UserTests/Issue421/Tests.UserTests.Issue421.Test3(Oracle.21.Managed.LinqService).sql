@@ -50,8 +50,6 @@ VALUES
 
 BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
-DECLARE @take Int32
-SET     @take = 1
 
 SELECT
 	t1."Id",
@@ -60,12 +58,10 @@ FROM
 	"BlobClass" t1
 WHERE
 	t1."Id" = 1
-FETCH NEXT :take ROWS ONLY
+FETCH NEXT 1 ROWS ONLY
 
 BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
-DECLARE @take Int32
-SET     @take = 1
 
 SELECT
 	t1."Id",
@@ -74,7 +70,7 @@ FROM
 	"BlobClass" t1
 WHERE
 	t1."Id" = 1
-FETCH NEXT :take ROWS ONLY
+FETCH NEXT 1 ROWS ONLY
 
 BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12

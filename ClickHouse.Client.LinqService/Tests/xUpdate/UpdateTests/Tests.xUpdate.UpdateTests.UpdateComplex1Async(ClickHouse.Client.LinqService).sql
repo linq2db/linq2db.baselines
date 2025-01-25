@@ -11,7 +11,7 @@ INSERT INTO Person
 )
 VALUES
 (
-	toInt32(100),
+	100,
 	'M',
 	'UpdateComplex',
 	NULL,

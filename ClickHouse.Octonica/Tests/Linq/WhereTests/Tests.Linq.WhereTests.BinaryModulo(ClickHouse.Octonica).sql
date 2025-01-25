@@ -10,5 +10,5 @@ SELECT
 FROM
 	Person p
 WHERE
-	p.PersonID % toInt32(2) = toInt32(1) AND p.PersonID = toInt32(1)
+	p.PersonID % 2 = 1 AND p.PersonID = 1
 

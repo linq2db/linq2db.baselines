@@ -2,17 +2,21 @@
 -- SqlServer.2005.MS SqlServer.2005
 
 SELECT
-	Sum([t1].[MoneyValue]),
-	DatePart(year, [t1].[Key_1]),
-	DatePart(month, [t1].[Key_1])
+	SUM([grp_1].[MoneyValue]),
+	[grp_1].[Year_1],
+	[grp_1].[Month_1]
 FROM
 	(
 		SELECT
-			DateAdd(month, ((DatePart(year, [selectParam].[DateTimeValue]) - 1900) * 12 + DatePart(month, [selectParam].[DateTimeValue])) - 1, 0) as [Key_1],
-			[selectParam].[MoneyValue]
+			CAST(RIGHT('0' + CAST(DatePart(year, [grp].[DateTimeValue]) AS VarChar(4)), 4) + '-' + RIGHT('0' + CAST(DatePart(month, [grp].[DateTimeValue]) AS VarChar(2)), 2) + N'-01' AS DateTime) as [Date_1],
+			[grp].[MoneyValue],
+			DatePart(year, CAST(RIGHT('0' + CAST(DatePart(year, [grp].[DateTimeValue]) AS VarChar(4)), 4) + '-' + RIGHT('0' + CAST(DatePart(month, [grp].[DateTimeValue]) AS VarChar(2)), 2) + N'-01' AS DateTime)) as [Year_1],
+			DatePart(month, CAST(RIGHT('0' + CAST(DatePart(year, [grp].[DateTimeValue]) AS VarChar(4)), 4) + '-' + RIGHT('0' + CAST(DatePart(month, [grp].[DateTimeValue]) AS VarChar(2)), 2) + N'-01' AS DateTime)) as [Month_1]
 		FROM
-			[LinqDataTypes] [selectParam]
-	) [t1]
+			[LinqDataTypes] [grp]
+	) [grp_1]
 GROUP BY
-	[t1].[Key_1]
+	[grp_1].[Date_1],
+	[grp_1].[Year_1],
+	[grp_1].[Month_1]
 

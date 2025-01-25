@@ -36,8 +36,8 @@ SET     @CreatedBy = 'TEST_USER2'
 UPDATE
 	[test_insert_or_replace]
 SET
-	[t1].[name] = @Name,
-	[t1].[updated_by] = @UpdatedBy
+	[name] = @Name,
+	[updated_by] = @UpdatedBy
 FROM
 	[test_insert_or_replace] [t1]
 WHERE
@@ -86,8 +86,8 @@ SET     @CreatedBy = 'TEST_USER2'
 UPDATE
 	[test_insert_or_replace]
 SET
-	[t1].[name] = @Name,
-	[t1].[updated_by] = @UpdatedBy
+	[name] = @Name,
+	[updated_by] = @UpdatedBy
 FROM
 	[test_insert_or_replace] [t1]
 WHERE

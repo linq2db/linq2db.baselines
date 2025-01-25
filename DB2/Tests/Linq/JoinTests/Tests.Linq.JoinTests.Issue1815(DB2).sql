@@ -77,35 +77,35 @@ BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 SELECT
-	"x"."InId",
-	"j"."InId",
-	"j"."InMaxQuantity",
-	"j"."InMinQuantity",
-	"x"."InMinQuantity",
-	"x"."InMaxQuantity"
+	"t1"."InId",
+	"e"."InId",
+	"t1"."InMinQuantity",
+	"e"."InMinQuantity",
+	"t1"."InMaxQuantity",
+	"e"."InMaxQuantity"
 FROM
-	"StLink" "x"
-		LEFT JOIN "EdtLink" "j" ON "x"."InId" = "j"."InId"
+	"StLink" "t1"
+		LEFT JOIN "EdtLink" "e" ON "t1"."InId" = "e"."InId"
 WHERE
-	"x"."InId" = 1
-FETCH FIRST 2 ROWS ONLY
+	"t1"."InId" = 1
+FETCH NEXT 2 ROWS ONLY
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 SELECT
-	"x"."InId",
-	"j"."InId",
-	"j"."InMaxQuantity",
-	"j"."InMinQuantity",
-	"x"."InMinQuantity",
-	"x"."InMaxQuantity"
+	"t1"."InId",
+	"e"."InId",
+	"t1"."InMinQuantity",
+	"e"."InMinQuantity",
+	"t1"."InMaxQuantity",
+	"e"."InMaxQuantity"
 FROM
-	"StLink" "x"
-		LEFT JOIN "EdtLink" "j" ON "x"."InId" = "j"."InId"
+	"StLink" "t1"
+		LEFT JOIN "EdtLink" "e" ON "t1"."InId" = "e"."InId"
 WHERE
-	"x"."InId" = 2
-FETCH FIRST 2 ROWS ONLY
+	"t1"."InId" = 2
+FETCH NEXT 2 ROWS ONLY
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW

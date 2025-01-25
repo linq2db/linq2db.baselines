@@ -28,8 +28,8 @@ SET     @Id = 1
 UPDATE
 	[test_insert_or_replace]
 SET
-	[test_insert_or_replace].[name] = @Name,
-	[test_insert_or_replace].[updated_by] = @UpdatedBy
+	[name] = @Name,
+	[updated_by] = @UpdatedBy
 WHERE
 	[test_insert_or_replace].[id] = @Id
 
@@ -57,14 +57,12 @@ VALUES
 
 BeforeExecute
 -- SqlCe
-DECLARE @take Int -- Int32
-SET     @take = 2
 
-SELECT TOP (@take)
-	[t1].[id],
-	[t1].[name],
-	[t1].[created_by],
-	[t1].[updated_by]
+SELECT TOP (2)
+	[t1].[id] as [Id],
+	[t1].[name] as [Name],
+	[t1].[created_by] as [CreatedBy],
+	[t1].[updated_by] as [UpdatedBy]
 FROM
 	[test_insert_or_replace] [t1]
 
@@ -80,21 +78,19 @@ SET     @Id = 1
 UPDATE
 	[test_insert_or_replace]
 SET
-	[test_insert_or_replace].[name] = @Name,
-	[test_insert_or_replace].[updated_by] = @UpdatedBy
+	[name] = @Name,
+	[updated_by] = @UpdatedBy
 WHERE
 	[test_insert_or_replace].[id] = @Id
 
 BeforeExecute
 -- SqlCe
-DECLARE @take Int -- Int32
-SET     @take = 2
 
-SELECT TOP (@take)
-	[t1].[id],
-	[t1].[name],
-	[t1].[created_by],
-	[t1].[updated_by]
+SELECT TOP (2)
+	[t1].[id] as [Id],
+	[t1].[name] as [Name],
+	[t1].[created_by] as [CreatedBy],
+	[t1].[updated_by] as [UpdatedBy]
 FROM
 	[test_insert_or_replace] [t1]
 

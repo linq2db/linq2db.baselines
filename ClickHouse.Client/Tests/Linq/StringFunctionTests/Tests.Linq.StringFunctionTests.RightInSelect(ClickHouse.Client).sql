@@ -2,9 +2,9 @@
 -- ClickHouse.Client ClickHouse
 
 SELECT
-	rightUTF8(p.FirstName, toInt32(3))
+	rightUTF8(p.FirstName, 3)
 FROM
 	Person p
 WHERE
-	p.PersonID = toInt32(1)
+	p.PersonID = 1
 

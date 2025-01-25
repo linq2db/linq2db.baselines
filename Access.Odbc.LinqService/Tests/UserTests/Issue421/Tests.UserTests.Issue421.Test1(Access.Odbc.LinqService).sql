@@ -36,12 +36,12 @@ BeforeExecute
 -- Access.Odbc AccessODBC
 
 SELECT TOP 1
-	[_].[Id],
-	[_].[BlobValue]
+	[t1].[Id],
+	[t1].[BlobValue]
 FROM
-	[BlobClass] [_]
+	[BlobClass] [t1]
 WHERE
-	[_].[Id] = 1
+	[t1].[Id] = 1
 
 BeforeExecute
 -- Access.Odbc AccessODBC
@@ -49,22 +49,22 @@ DECLARE @BlobValue VarBinary(3) -- Binary
 SET     @BlobValue = 0x030201
 
 UPDATE
-	[BlobClass] [_]
+	[BlobClass] [t1]
 SET
-	[_].[BlobValue] = ?
+	[t1].[BlobValue] = ?
 WHERE
-	[_].[Id] = 1
+	[t1].[Id] = 1
 
 BeforeExecute
 -- Access.Odbc AccessODBC
 
 SELECT TOP 1
-	[_].[Id],
-	[_].[BlobValue]
+	[t1].[Id],
+	[t1].[BlobValue]
 FROM
-	[BlobClass] [_]
+	[BlobClass] [t1]
 WHERE
-	[_].[Id] = 1
+	[t1].[Id] = 1
 
 BeforeExecute
 -- Access.Odbc AccessODBC

@@ -51,28 +51,28 @@ INSERT INTO A
 )
 VALUES
 (
-	toInt32(1)
+	1
 )
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
 
 SELECT
-	a_1.Id,
-	t1.bc,
-	t1.bid,
-	t1.cid
+	t2.Id,
+	t1.AId,
+	t1.Id,
+	t1.Id_1
 FROM
-	A a_1
+	A t2
 		LEFT JOIN (
 			SELECT
-				b_1.AId as bc,
-				b_1.Id as bid,
-				c_1.Id as cid
+				bc.AId as AId,
+				bc.Id as Id,
+				c_1.Id as Id_1
 			FROM
-				B b_1
-					INNER JOIN C c_1 ON b_1.Id = c_1.BId
-		) t1 ON a_1.Id = t1.bc
+				B bc
+					INNER JOIN C c_1 ON bc.Id = c_1.BId
+		) t1 ON t2.Id = t1.AId
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse

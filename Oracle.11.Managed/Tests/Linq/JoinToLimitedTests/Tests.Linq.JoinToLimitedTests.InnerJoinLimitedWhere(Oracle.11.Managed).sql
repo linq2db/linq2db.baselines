@@ -1,22 +1,20 @@
 ﻿BeforeExecute
 -- Oracle.11.Managed Oracle11
-DECLARE @take Int32
-SET     @take = 1
 
 SELECT
 	o."ParentID",
 	o."Value1",
-	x."ParentID",
-	x."ChildID"
+	c_1."ParentID",
+	c_1."ChildID"
 FROM
 	"Parent" o
 		INNER JOIN (
 			SELECT
-				t1."ParentID",
-				t1."ChildID"
+				x."ParentID",
+				x."ChildID"
 			FROM
-				"Child" t1
+				"Child" x
 			WHERE
-				ROWNUM <= :take
-		) x ON x."ParentID" = o."ParentID"
+				ROWNUM <= 1
+		) c_1 ON c_1."ParentID" = o."ParentID"
 

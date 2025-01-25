@@ -28,13 +28,13 @@ DECLARE @ID Integer(4) -- Int32
 SET     @ID = 0
 
 UPDATE
-	TestInsertOrReplaceTable
+	TestInsertOrReplaceTable t1
 SET
-	TestInsertOrReplaceTable.FirstName = @FirstName,
-	TestInsertOrReplaceTable.LastName = @LastName,
-	TestInsertOrReplaceTable.MiddleName = @MiddleName
+	FirstName = @FirstName,
+	LastName = @LastName,
+	MiddleName = @MiddleName
 WHERE
-	TestInsertOrReplaceTable.ID = @ID
+	t1.ID = @ID
 
 BeforeExecute
 -- Informix.DB2 Informix
@@ -87,12 +87,12 @@ DECLARE @ID Integer(4) -- Int32
 SET     @ID = 0
 
 UPDATE
-	TestInsertOrReplaceTable
+	TestInsertOrReplaceTable t1
 SET
-	TestInsertOrReplaceTable.FirstName = @FirstName,
-	TestInsertOrReplaceTable.LastName = @LastName
+	FirstName = @FirstName,
+	LastName = @LastName
 WHERE
-	TestInsertOrReplaceTable.ID = @ID
+	t1.ID = @ID
 
 BeforeExecute
 -- Informix.DB2 Informix

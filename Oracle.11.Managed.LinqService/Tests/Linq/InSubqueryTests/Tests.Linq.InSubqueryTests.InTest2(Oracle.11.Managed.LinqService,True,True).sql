@@ -14,6 +14,25 @@ WHERE
 		FROM
 			"Parent" p
 		WHERE
-			(p."Value1" = c_1."ParentID" OR p."Value1" IS NULL AND c_1."ParentID" IS NULL)
+			(c_1."ParentID" = p."Value1" OR c_1."ParentID" IS NULL AND p."Value1" IS NULL)
 	)
+
+BeforeExecute
+-- Oracle.11.Managed Oracle11
+
+SELECT
+	t1."ParentID",
+	t1."ChildID",
+	t1."GrandChildID"
+FROM
+	"GrandChild" t1
+
+BeforeExecute
+-- Oracle.11.Managed Oracle11
+
+SELECT
+	t1."ParentID",
+	t1."Value1"
+FROM
+	"Parent" t1
 

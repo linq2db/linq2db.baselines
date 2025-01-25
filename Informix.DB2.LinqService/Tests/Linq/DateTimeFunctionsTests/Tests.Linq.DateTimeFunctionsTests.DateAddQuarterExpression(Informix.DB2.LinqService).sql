@@ -2,7 +2,7 @@
 -- Informix.DB2 Informix
 
 SELECT
-	t.DateTimeValue + Interval(-1) Month to Month * 3
+	Extend(t.DateTimeValue + Interval (-1) Month to Month * 3, Year to Day)
 FROM
 	LinqDataTypes t
 

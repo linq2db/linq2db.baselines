@@ -14,5 +14,5 @@ FROM
 	"LinqDataTypes" "t"
 WHERE
 	"t"."MoneyValue" * "t".ID = 1.11
-FETCH FIRST 2 ROWS ONLY
+FETCH NEXT 2 ROWS ONLY
 

@@ -5,15 +5,15 @@ SELECT
 	p.Value1,
 	(
 		SELECT
-			Count(*)
+			COUNT(*)
 		FROM
-			Child t1
+			Child a_Children
 		WHERE
-			p.ParentID = t1.ParentID
+			p.ParentID = a_Children.ParentID
 	),
 	(
 		SELECT
-			Count(*)
+			COUNT(*)
 		FROM
 			Child c_1
 		WHERE

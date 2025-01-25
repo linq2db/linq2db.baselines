@@ -2,43 +2,48 @@
 -- SqlServer.2005.MS SqlServer.2005
 
 SELECT
-	[t1].[Key_1]
+	[m_1].[c1],
+	[d].[ParentID],
+	[d].[ChildID]
+FROM
+	(
+		SELECT DISTINCT
+			CASE
+				WHEN [g_1].[ParentID] > 2 THEN CASE
+					WHEN [g_1].[ParentID] > 3 THEN N'1'
+					ELSE N'2'
+				END
+				ELSE N'3'
+			END as [c1]
+		FROM
+			[Child] [g_1]
+	) [m_1]
+		INNER JOIN [Child] [d] ON [m_1].[c1] = CASE
+			WHEN [d].[ParentID] > 2 THEN CASE
+				WHEN [d].[ParentID] > 3 THEN N'1'
+				ELSE N'2'
+			END
+			ELSE N'3'
+		END
+
+BeforeExecute
+-- SqlServer.2005.MS SqlServer.2005
+
+SELECT
+	[g_2].[c1]
 FROM
 	(
 		SELECT
 			CASE
-				WHEN [selectParam].[ParentID] > 2
-					THEN CASE
-					WHEN [selectParam].[ParentID] > 3
-						THEN N'1'
+				WHEN [g_1].[ParentID] > 2 THEN CASE
+					WHEN [g_1].[ParentID] > 3 THEN N'1'
 					ELSE N'2'
 				END
 				ELSE N'3'
-			END as [Key_1]
+			END as [c1]
 		FROM
-			[Child] [selectParam]
-	) [t1]
+			[Child] [g_1]
+	) [g_2]
 GROUP BY
-	[t1].[Key_1]
-
-BeforeExecute
--- SqlServer.2005.MS SqlServer.2005
-DECLARE @p NVarChar(4000) -- String
-SET     @p = N'1'
-
-SELECT
-	[selectParam].[ParentID],
-	[selectParam].[ChildID]
-FROM
-	[Child] [selectParam]
-WHERE
-	CASE
-		WHEN [selectParam].[ParentID] > 2
-			THEN CASE
-			WHEN [selectParam].[ParentID] > 3
-				THEN N'1'
-			ELSE N'2'
-		END
-		ELSE N'3'
-	END = @p
+	[g_2].[c1]
 

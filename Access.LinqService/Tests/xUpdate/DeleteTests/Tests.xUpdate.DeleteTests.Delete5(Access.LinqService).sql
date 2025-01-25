@@ -50,11 +50,11 @@ BeforeExecute
 -- Access AccessOleDb
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
-	[Parent] [_]
+	[Parent] [t1]
 WHERE
-	[_].[ParentID] > 1000
+	[t1].[ParentID] > 1000
 
 BeforeExecute
 -- Access AccessOleDb
@@ -68,9 +68,9 @@ BeforeExecute
 -- Access AccessOleDb
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
-	[Parent] [_]
+	[Parent] [t1]
 WHERE
-	[_].[ParentID] > 1000
+	[t1].[ParentID] > 1000
 

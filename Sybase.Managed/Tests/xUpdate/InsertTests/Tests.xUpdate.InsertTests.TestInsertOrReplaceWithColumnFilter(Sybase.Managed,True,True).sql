@@ -40,9 +40,9 @@ SET     @MiddleName_1 = 'som middle name'
 UPDATE
 	[TestInsertOrReplaceTable]
 SET
-	[t1].[FirstName] = @FirstName,
-	[t1].[LastName] = @LastName,
-	[t1].[MiddleName] = @MiddleName
+	[FirstName] = @FirstName,
+	[LastName] = @LastName,
+	[MiddleName] = @MiddleName
 FROM
 	[TestInsertOrReplaceTable] [t1]
 WHERE
@@ -101,9 +101,9 @@ SET     @MiddleName_1 = 'updated name'
 UPDATE
 	[TestInsertOrReplaceTable]
 SET
-	[t1].[FirstName] = @FirstName,
-	[t1].[LastName] = @LastName,
-	[t1].[MiddleName] = @MiddleName
+	[FirstName] = @FirstName,
+	[LastName] = @LastName,
+	[MiddleName] = @MiddleName
 FROM
 	[TestInsertOrReplaceTable] [t1]
 WHERE

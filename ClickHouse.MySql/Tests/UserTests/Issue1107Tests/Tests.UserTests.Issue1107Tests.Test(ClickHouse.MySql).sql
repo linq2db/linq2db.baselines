@@ -25,7 +25,7 @@ INSERT INTO Issue1107TB
 	TestDate
 )
 VALUES
-(toInt32(0),toDateTime64('2018-01-01 00:00:00.0000000', 7))
+(0,toDateTime64('2018-01-01 00:00:00.0000000', 7))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse

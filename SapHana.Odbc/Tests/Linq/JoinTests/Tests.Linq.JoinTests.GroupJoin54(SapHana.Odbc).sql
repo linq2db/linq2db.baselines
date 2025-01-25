@@ -1,43 +1,29 @@
 ﻿BeforeExecute
-BeginTransaction(RepeatableRead)
-BeforeExecute
--- SapHana.Odbc SapHanaOdbc
-
-SELECT
-	"key_data_result"."ParentID",
-	"key_data_result"."Value1",
-	"_ch"."ParentID",
-	"_ch"."ChildID"
-FROM
-	(
-		SELECT DISTINCT
-			"p"."ParentID",
-			"p"."Value1"
-		FROM
-			"Parent" "p"
-		WHERE
-			"p"."ParentID" = 1
-	) "key_data_result"
-		INNER JOIN "Child" "_ch" ON "_ch"."ParentID" = "key_data_result"."ParentID"
-
-BeforeExecute
-DisposeTransaction
-BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 SELECT
 	(
 		SELECT
-			Count(*)
+			COUNT(*)
 		FROM
-			"Child" "t1"
+			"Child" "ch_1"
 		WHERE
-			"p"."ParentID" = "t1"."ParentID"
+			"t2"."ParentID" = "ch_1"."ParentID"
 	),
-	"p"."ParentID",
-	"p"."Value1"
+	"t1"."ParentID",
+	"t1"."ChildID"
 FROM
-	"Parent" "p"
+	"Parent" "t2"
+		INNER JOIN LATERAL (
+			SELECT
+				"ch"."ParentID",
+				"ch"."ChildID"
+			FROM
+				"Child" "ch"
+			WHERE
+				"t2"."ParentID" = "ch"."ParentID"
+			LIMIT 1
+		) "t1" ON 1=1
 WHERE
-	"p"."ParentID" = 1
+	"t2"."ParentID" = 1
 

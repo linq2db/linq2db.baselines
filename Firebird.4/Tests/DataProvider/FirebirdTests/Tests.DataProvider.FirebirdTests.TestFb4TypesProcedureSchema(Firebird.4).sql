@@ -1,0 +1,140 @@
+﻿BeforeExecute
+-- Firebird.4 Firebird4
+
+EXECUTE BLOCK AS BEGIN
+	IF (EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'TestFbTypesTable')) THEN
+		EXECUTE STATEMENT 'DROP TABLE "TestFbTypesTable"';
+END
+
+BeforeExecute
+-- Firebird.4 Firebird4
+
+EXECUTE BLOCK AS BEGIN
+	IF (NOT EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'TestFbTypesTable')) THEN
+		EXECUTE STATEMENT '
+			CREATE TABLE "TestFbTypesTable"
+			(
+				"Id"         Int                      NOT NULL,
+				"DecFloat16" DECFLOAT(16),
+				"DecFloat30" DECFLOAT,
+				"DecFloat34" DECFLOAT,
+				"DecFloat"   DECFLOAT,
+				"DateTimeTZ" TIMESTAMP WITH TIME ZONE,
+				"TimeTZ"     TIME WITH TIME ZONE,
+				"Int128"     INT128,
+
+				CONSTRAINT "PK_TestFbTypesTable" PRIMARY KEY ("Id")
+			)
+		';
+END
+
+BeforeExecute
+-- Firebird.4 Firebird4
+DECLARE @p1 Dec34(16, 0) -- Object
+SET     @p1 = 1234567890123456E5
+DECLARE @p2 Dec34(30, 0) -- Object
+SET     @p2 = 1234567890123456789012345678901234E15
+DECLARE @p3 Dec34(34, 0) -- Object
+SET     @p3 = 1234567890123456789012345678901235E15
+DECLARE @p4 Dec34 -- Object
+SET     @p4 = 1234567890123456789012345678901236E15
+DECLARE @p5 TimeStampTZ -- Object
+SET     @p5 = 02/29/2020 17:54:55 UTC
+DECLARE @p6 TimeTZ -- Object
+SET     @p6 = 17:54:55.1231234 UTC
+
+INSERT INTO "TestFbTypesTable"
+(
+	"Id",
+	"DecFloat16",
+	"DecFloat30",
+	"DecFloat34",
+	"DecFloat",
+	"DateTimeTZ",
+	"TimeTZ",
+	"Int128"
+)
+SELECT 1,CAST(@p1 AS DECFLOAT(16)),CAST(@p2 AS DECFLOAT),CAST(@p3 AS DECFLOAT),CAST(@p4 AS DECFLOAT),CAST(@p5 AS TIMESTAMP WITH TIME ZONE),CAST(@p6 AS TIME WITH TIME ZONE),-170141183460469231731687303715884105728 FROM rdb$database
+
+BeforeExecute
+-- Firebird.4 Firebird4
+
+
+SELECT * FROM (
+	SELECT
+		RDB$PACKAGE_NAME                                        AS PackageName,
+		RDB$PROCEDURE_NAME                                      AS ProcedureName,
+		RDB$DESCRIPTION                                         AS Description,
+		RDB$PROCEDURE_SOURCE                                    AS Source,
+		CASE WHEN RDB$PROCEDURE_TYPE = 1 THEN 'TF' ELSE 'P' END AS Type
+	FROM RDB$PROCEDURES
+	WHERE RDB$SYSTEM_FLAG = 0 AND (RDB$PRIVATE_FLAG IS NULL OR RDB$PRIVATE_FLAG = 0) AND RDB$PROCEDURE_TYPE IS NOT NULL
+	UNION ALL
+	SELECT
+		RDB$PACKAGE_NAME,
+		RDB$FUNCTION_NAME,
+		RDB$DESCRIPTION,
+		RDB$FUNCTION_SOURCE,
+		'F'
+	FROM RDB$FUNCTIONS
+	WHERE RDB$SYSTEM_FLAG = 0  AND (RDB$PRIVATE_FLAG IS NULL OR RDB$PRIVATE_FLAG = 0)
+) ORDER BY PackageName, ProcedureName
+
+BeforeExecute
+-- Firebird.4 Firebird4
+
+SELECT
+	p.RDB$PACKAGE_NAME                                   AS PackageName,
+	p.RDB$PROCEDURE_NAME                                 AS ProcedureName,
+	p.RDB$PARAMETER_NAME                                 AS ParameterName,
+	p.RDB$PARAMETER_NUMBER                               AS Ordinal,
+	p.RDB$PARAMETER_TYPE                                 AS Direction,
+	p.RDB$DESCRIPTION                                    AS Decsription,
+	f.RDB$FIELD_TYPE                                     AS Type,
+	f.RDB$FIELD_SUB_TYPE                                 AS SubType,
+	COALESCE(f.RDB$CHARACTER_LENGTH, f.RDB$FIELD_LENGTH) AS Length,
+	f.RDB$FIELD_PRECISION                                AS "precision",
+	f.RDB$FIELD_SCALE                                    AS Scale,
+	COALESCE(f.RDB$NULL_FLAG, p.RDB$NULL_FLAG)           AS IsNullable
+FROM RDB$PROCEDURE_PARAMETERS p
+	INNER JOIN RDB$PROCEDURES pr ON p.RDB$PROCEDURE_NAME = pr.RDB$PROCEDURE_NAME
+		AND (p.RDB$PACKAGE_NAME = pr.RDB$PACKAGE_NAME OR (p.RDB$PACKAGE_NAME IS NULL AND pr.RDB$PACKAGE_NAME IS NULL))
+	LEFT JOIN RDB$FIELDS f ON p.RDB$FIELD_SOURCE = f.RDB$FIELD_NAME
+WHERE p.RDB$SYSTEM_FLAG = 0 AND (pr.RDB$PROCEDURE_TYPE <> 1 OR p.RDB$PARAMETER_TYPE <> 1)
+UNION ALL
+SELECT
+	p.RDB$PACKAGE_NAME,
+	p.RDB$FUNCTION_NAME,
+	p.RDB$ARGUMENT_NAME,
+	p.RDB$ARGUMENT_POSITION,
+	CASE WHEN fn.RDB$RETURN_ARGUMENT = p.RDB$ARGUMENT_POSITION THEN 2 ELSE 0 END,
+	p.RDB$DESCRIPTION,
+	COALESCE(f.RDB$FIELD_TYPE, p.RDB$FIELD_TYPE),
+	COALESCE(f.RDB$FIELD_SUB_TYPE, p.RDB$FIELD_TYPE),
+	COALESCE(f.RDB$CHARACTER_LENGTH, f.RDB$FIELD_LENGTH, p.RDB$CHARACTER_LENGTH, p.RDB$FIELD_LENGTH),
+	COALESCE(f.RDB$FIELD_PRECISION, p.RDB$FIELD_PRECISION),
+	COALESCE(f.RDB$FIELD_SCALE, p.RDB$FIELD_SCALE),
+	COALESCE(f.RDB$NULL_FLAG, p.RDB$NULL_FLAG)
+	FROM RDB$FUNCTION_ARGUMENTS p
+		INNER JOIN RDB$FUNCTIONS fn ON p.RDB$FUNCTION_NAME = fn.RDB$FUNCTION_NAME
+			AND (p.RDB$PACKAGE_NAME = fn.RDB$PACKAGE_NAME OR (p.RDB$PACKAGE_NAME IS NULL AND fn.RDB$PACKAGE_NAME IS NULL))
+		LEFT JOIN RDB$FIELDS f ON p.RDB$FIELD_SOURCE = f.RDB$FIELD_NAME
+WHERE p.RDB$SYSTEM_FLAG = 0
+
+BeforeExecute
+BeginTransaction
+BeforeExecute
+-- Firebird.4 Firebird4
+
+SELECT * FROM TEST_V4_TYPES(NULL,NULL,NULL,NULL,NULL)
+
+BeforeExecute
+RollbackTransaction
+BeforeExecute
+-- Firebird.4 Firebird4
+
+EXECUTE BLOCK AS BEGIN
+	IF (EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'TestFbTypesTable')) THEN
+		EXECUTE STATEMENT 'DROP TABLE "TestFbTypesTable"';
+END
+

@@ -2,10 +2,8 @@
 -- Sybase.Managed Sybase
 
 SELECT
-	[_].[ParentID] + [cp].[ParentID]
+	[a_Children].[ParentID] + [p].[ParentID]
 FROM
-	[Parent] [cp]
-		INNER JOIN [Child] [_] ON 1=1
-WHERE
-	[_].[ParentID] + [cp].[ParentID] > 1 AND [cp].[ParentID] = [_].[ParentID]
+	[Parent] [p]
+		INNER JOIN [Child] [a_Children] ON [p].[ParentID] = [a_Children].[ParentID] AND [a_Children].[ParentID] + [p].[ParentID] > 1
 

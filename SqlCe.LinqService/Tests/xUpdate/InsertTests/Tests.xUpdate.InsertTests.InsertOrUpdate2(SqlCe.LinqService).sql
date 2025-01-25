@@ -40,7 +40,7 @@ DECLARE @id Int -- Int32
 SET     @id = 5
 
 SELECT
-	1
+	1 as [c1]
 FROM
 	[Patient] [t1]
 WHERE
@@ -81,7 +81,7 @@ DECLARE @id Int -- Int32
 SET     @id = 5
 
 SELECT
-	1
+	1 as [c1]
 FROM
 	[Patient] [t1]
 WHERE

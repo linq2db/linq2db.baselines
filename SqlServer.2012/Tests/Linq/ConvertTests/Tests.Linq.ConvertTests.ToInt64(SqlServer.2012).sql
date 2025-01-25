@@ -2,9 +2,14 @@
 -- SqlServer.2012
 
 SELECT
-	Convert(BigInt, [t].[MoneyValue])
+	[p_1].[c1]
 FROM
-	[LinqDataTypes] [t]
+	(
+		SELECT
+			CAST(Floor([p].[MoneyValue]) AS BigInt) as [c1]
+		FROM
+			[LinqDataTypes] [p]
+	) [p_1]
 WHERE
-	Convert(BigInt, [t].[MoneyValue]) > 0
+	[p_1].[c1] > 0
 

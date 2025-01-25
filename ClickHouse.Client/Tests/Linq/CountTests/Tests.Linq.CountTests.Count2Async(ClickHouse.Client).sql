@@ -2,9 +2,9 @@
 -- ClickHouse.Client ClickHouse (asynchronously)
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	Parent p
 WHERE
-	p.ParentID > toInt32(2)
+	p.ParentID > 2
 

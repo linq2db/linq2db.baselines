@@ -9,10 +9,10 @@ FROM
 WHERE
 	(
 		SELECT TOP 1
-			1
+			[a_Children].[ParentID]
 		FROM
-			[Child] [t1]
+			[Child] [a_Children]
 		WHERE
-			[p].[ParentID] = [t1].[ParentID]
+			[p].[ParentID] = [a_Children].[ParentID]
 	) IS NOT NULL
 

@@ -5,15 +5,13 @@ SET     @ID = 1
 
 SELECT
 	CASE
-		WHEN EXISTS(
+		WHEN @ID IN (
 			SELECT
-				*
+				[t1].[PersonID]
 			FROM
 				[Person] [t1]
-			WHERE
-				[t1].[PersonID] = @ID
 		)
 			THEN 1
 		ELSE 0
-	END
+	END as [c1]
 

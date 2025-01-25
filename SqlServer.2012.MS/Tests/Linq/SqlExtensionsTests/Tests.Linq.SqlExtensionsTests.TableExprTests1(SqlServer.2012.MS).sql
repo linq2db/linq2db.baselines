@@ -27,10 +27,8 @@ VALUES
 
 BeforeExecute
 -- SqlServer.2012.MS SqlServer.2012
-DECLARE @take Int -- Int32
-SET     @take = 1
 
-SELECT TOP (@take)
+SELECT TOP (1)
 	'[database].[schema].[table_name]',
 	'[database].[schema].[table_name]',
 	'[table_name]',

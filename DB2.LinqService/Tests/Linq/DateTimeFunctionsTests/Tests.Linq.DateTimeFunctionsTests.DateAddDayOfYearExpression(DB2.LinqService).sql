@@ -4,7 +4,7 @@ DECLARE @p Integer(4) -- Int32
 SET     @p = 3
 
 SELECT
-	"t"."DateTimeValue" + @p Day
+	DATE("t"."DateTimeValue" + CAST(@p AS Int) DAY)
 FROM
 	"LinqDataTypes" "t"
 

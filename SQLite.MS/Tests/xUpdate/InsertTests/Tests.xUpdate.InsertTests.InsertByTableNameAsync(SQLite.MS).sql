@@ -102,7 +102,7 @@ BeforeExecute
 -- SQLite.MS SQLite (asynchronously)
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	[xxPerson] [t1]
 
@@ -110,7 +110,7 @@ BeforeExecute
 -- SQLite.MS SQLite (asynchronously)
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	[xxPerson] [p]
 WHERE

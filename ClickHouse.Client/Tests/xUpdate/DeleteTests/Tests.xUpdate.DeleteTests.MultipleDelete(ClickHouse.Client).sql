@@ -4,7 +4,7 @@
 ALTER TABLE
 	Parent
 DELETE WHERE
-	ParentID >= toInt32(1000)
+	ParentID >= 1000
 
 BeforeExecute
 INSERT ASYNC BULK Parent(ParentID, Value1)
@@ -15,7 +15,7 @@ BeforeExecute
 ALTER TABLE
 	Parent
 DELETE WHERE
-	(ParentID = toInt32(1000) AND Value1 IS NULL OR ParentID = toInt32(1001) AND Value1 IS NULL)
+	(ParentID = 1000 AND Value1 IS NULL OR ParentID = 1001 AND Value1 IS NULL)
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
@@ -23,5 +23,5 @@ BeforeExecute
 ALTER TABLE
 	Parent
 DELETE WHERE
-	ParentID >= toInt32(1000)
+	ParentID >= 1000
 

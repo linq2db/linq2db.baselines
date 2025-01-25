@@ -2,26 +2,33 @@
 -- Oracle.11.Managed Oracle11
 
 SELECT
-	key_data_result."ParentID",
-	key_data_result."Value1",
-	c_1."ParentID",
-	c_1."ChildID"
+	m_1."ParentID",
+	d_1."ParentID",
+	d_1."ChildID"
 FROM
 	(
 		SELECT DISTINCT
-			p."ParentID",
-			p."Value1"
+			p."ParentID"
 		FROM
 			"Parent" p
-	) key_data_result
-		INNER JOIN "Child" c_1 ON key_data_result."ParentID" = c_1."ParentID" AND c_1."ParentID" > 0
+	) m_1
+		INNER JOIN (
+			SELECT DISTINCT
+				d."ParentID",
+				d."ChildID"
+			FROM
+				"Child" d
+			WHERE
+				d."ParentID" > 0
+		) d_1 ON m_1."ParentID" = d_1."ParentID"
+ORDER BY
+	d_1."ChildID"
 
 BeforeExecute
 -- Oracle.11.Managed Oracle11
 
 SELECT
-	p."ParentID",
-	p."Value1"
+	p."ParentID"
 FROM
 	"Parent" p
 

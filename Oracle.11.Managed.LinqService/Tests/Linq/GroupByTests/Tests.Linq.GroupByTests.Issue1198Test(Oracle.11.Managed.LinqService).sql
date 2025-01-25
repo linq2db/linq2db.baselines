@@ -31,22 +31,16 @@ END;
 
 BeforeExecute
 -- Oracle.11.Managed Oracle11
-DECLARE @take Int32
-SET     @take = 1
 
 SELECT
-	(
-		SELECT
-			Count(*)
-		FROM
-			"Issue1192Table" t
-		WHERE
-			t."Status" = 3 AND t."MyOtherId" = 12
-	)
+	COUNT(CASE
+		WHEN t."Status" = 3 THEN 1
+		ELSE NULL
+	END)
 FROM
-	"Issue1192Table" t_1
+	"Issue1192Table" t
 WHERE
-	t_1."MyOtherId" = 12 AND ROWNUM <= :take
+	t."MyOtherId" = 12 AND ROWNUM <= 1
 
 BeforeExecute
 -- Oracle.11.Managed Oracle11

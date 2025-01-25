@@ -270,16 +270,11 @@ BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT
-	d.c1
+	d.TransactionDate
 FROM
-	(
-		SELECT
-			t.TransactionDate as c1
-		FROM
-			Transactions t
-	) d
+	Transactions d
 WHERE
-	Day(d.c1) > 0
+	Day(d.TransactionDate) > 0
 
 BeforeExecute
 -- Informix.DB2 Informix

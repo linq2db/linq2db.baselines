@@ -2,20 +2,20 @@
 -- Access.Odbc AccessODBC
 
 SELECT
-	Iif((
+	IIF((
 		SELECT
-			Max([c_1].[ChildID])
+			MAX([a_Children].[ChildID])
 		FROM
-			[Child] [c_1]
+			[Child] [a_Children]
 		WHERE
-			[p].[ParentID] = [c_1].[ParentID]
+			[p].[ParentID] = [a_Children].[ParentID]
 	) IS NULL, [p].[Value1], (
 		SELECT
-			Max([c_1].[ChildID])
+			MAX([a_Children].[ChildID])
 		FROM
-			[Child] [c_1]
+			[Child] [a_Children]
 		WHERE
-			[p].[ParentID] = [c_1].[ParentID]
+			[p].[ParentID] = [a_Children].[ParentID]
 	))
 FROM
 	[Parent] [p]

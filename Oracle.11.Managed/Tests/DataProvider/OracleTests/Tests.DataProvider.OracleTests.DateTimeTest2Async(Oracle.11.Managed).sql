@@ -2,9 +2,9 @@
 -- Oracle.11.Managed Oracle11
 
 DELETE FROM
-	"AllTypes" t1
+	"AllTypes" t
 WHERE
-	t1.ID >= 1000
+	t.ID >= 1000
 
 BeforeExecute
 BeginTransaction

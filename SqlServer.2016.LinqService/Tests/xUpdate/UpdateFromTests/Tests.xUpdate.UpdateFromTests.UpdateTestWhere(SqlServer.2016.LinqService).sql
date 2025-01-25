@@ -273,11 +273,11 @@ DECLARE @someId Int -- Int32
 SET     @someId = 100
 
 UPDATE
-	[UpdatedEntities]
+	[c_1]
 SET
-	[UpdatedEntities].[Value1] = ([c_1].[Value1] * [t].[Value1]) * @int1,
-	[UpdatedEntities].[Value2] = ([c_1].[Value2] * [t].[Value2]) * @int2,
-	[UpdatedEntities].[Value3] = ([c_1].[Value3] * [t].[Value3]) * @int3
+	[c_1].[Value1] = ([c_1].[Value1] * [t].[Value1]) * @int1,
+	[c_1].[Value2] = ([c_1].[Value2] * [t].[Value2]) * @int2,
+	[c_1].[Value3] = ([c_1].[Value3] * [t].[Value3]) * @int3
 FROM
 	[UpdatedEntities] [c_1],
 	[NewEntities] [t]

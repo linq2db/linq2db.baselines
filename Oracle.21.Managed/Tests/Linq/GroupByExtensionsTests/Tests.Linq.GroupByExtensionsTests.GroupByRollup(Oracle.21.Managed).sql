@@ -49,20 +49,20 @@ BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
 
 SELECT
-	t1."Id1",
-	Count(*)
+	g_2."Id1",
+	COUNT(*)
 FROM
 	(
 		SELECT DISTINCT
-			selectParam."Id1",
-			selectParam."Id2",
-			selectParam."Value" as "Value_1"
+			g_1."Id1",
+			g_1."Id2",
+			g_1."Value" as "Value_1"
 		FROM
-			"GroupSampleClass" selectParam
-	) t1
+			"GroupSampleClass" g_1
+	) g_2
 GROUP BY ROLLUP (
-	t1."Id1",
-	t1."Id2"
+	g_2."Id1",
+	g_2."Id2"
 )
 
 BeforeExecute

@@ -26,7 +26,7 @@ INSERT INTO BlobClass
 )
 VALUES
 (
-	toInt32(1),
+	1,
 	'\x01\x02\x03'
 )
 
@@ -34,13 +34,13 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
-	_.Id,
-	_.BlobValue
+	t1.Id,
+	t1.BlobValue
 FROM
-	BlobClass _
+	BlobClass t1
 WHERE
-	_.Id = toInt32(1)
-LIMIT toInt32(1)
+	t1.Id = 1
+LIMIT 1
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
@@ -50,19 +50,19 @@ ALTER TABLE
 UPDATE
 	BlobValue = '\x03\x02\x01'
 WHERE
-	Id = toInt32(1)
+	Id = 1
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
-	_.Id,
-	_.BlobValue
+	t1.Id,
+	t1.BlobValue
 FROM
-	BlobClass _
+	BlobClass t1
 WHERE
-	_.Id = toInt32(1)
-LIMIT toInt32(1)
+	t1.Id = 1
+LIMIT 1
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse

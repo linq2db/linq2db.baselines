@@ -47,11 +47,11 @@ VALUES
 
 BeforeExecute
 -- Access.Odbc AccessODBC
-DECLARE @str Char(5) -- AnsiStringFixedLength
+DECLARE @str NVarChar(5) -- String
 SET     @str = 'some%'
-DECLARE @str NChar(5) -- StringFixedLength
+DECLARE @str NVarChar(5) -- String
 SET     @str = 'some%'
-DECLARE @str VarChar(5) -- AnsiString
+DECLARE @str NVarChar(5) -- String
 SET     @str = 'some%'
 DECLARE @str NVarChar(5) -- String
 SET     @str = 'some%'

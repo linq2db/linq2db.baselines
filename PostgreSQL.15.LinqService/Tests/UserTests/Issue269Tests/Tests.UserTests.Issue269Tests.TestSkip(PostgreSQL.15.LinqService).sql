@@ -1,7 +1,5 @@
 ﻿BeforeExecute
 -- PostgreSQL.15 PostgreSQL
-DECLARE @skip Integer -- Int32
-SET     @skip = 0
 
 SELECT
 	pat."PersonID",
@@ -23,7 +21,7 @@ WHERE
 					per."PersonID" = pat."PersonID"
 				ORDER BY
 					per."FirstName" DESC
-				OFFSET :skip 
+				OFFSET 0 
 			) t1
 		WHERE
 			t1."Diagnosis" LIKE '%with%' ESCAPE '~'

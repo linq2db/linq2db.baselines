@@ -2,15 +2,15 @@
 -- SQLite.Classic.MPM SQLite.Classic SQLite (asynchronously)
 
 SELECT
-	Max([x].[PersonID])
+	MAX([p].[PersonID])
 FROM
-	[Person] [x]
+	[Person] [p]
 
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite (asynchronously)
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	[Person] [p]
 

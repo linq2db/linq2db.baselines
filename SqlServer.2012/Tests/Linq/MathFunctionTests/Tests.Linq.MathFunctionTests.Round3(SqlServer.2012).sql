@@ -2,14 +2,14 @@
 -- SqlServer.2012
 
 SELECT
-	[t].[c1]
+	[t_1].[c1]
 FROM
 	(
 		SELECT
-			IIF([p].[MoneyValue] * 2 = Round([p].[MoneyValue] * 2, 1) AND [p].[MoneyValue] <> Round([p].[MoneyValue], 1), Round([p].[MoneyValue] / 2, 1) * 2, Round([p].[MoneyValue], 1)) as [c1]
+			IIF([t].[MoneyValue] * 2 = Round([t].[MoneyValue] * 2, 1) AND [t].[MoneyValue] <> Round([t].[MoneyValue], 1), Round([t].[MoneyValue] / 2, 1) * 2, Round([t].[MoneyValue], 1)) as [c1]
 		FROM
-			[LinqDataTypes] [p]
-	) [t]
+			[LinqDataTypes] [t]
+	) [t_1]
 WHERE
-	[t].[c1] <> 0 AND [t].[c1] <> 7
+	[t_1].[c1] <> 0 AND [t_1].[c1] <> 7
 

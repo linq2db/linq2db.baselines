@@ -8,7 +8,7 @@ FROM
 	[Person] [x]
 UNION ALL
 SELECT
-	NULL,
+	IIF(False, '', NULL),
 	'QUASI-' + [x_1].[FirstName]
 FROM
 	[Person] [x_1]

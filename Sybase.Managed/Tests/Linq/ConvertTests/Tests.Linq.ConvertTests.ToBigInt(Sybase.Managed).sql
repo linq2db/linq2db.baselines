@@ -2,7 +2,7 @@
 -- Sybase.Managed Sybase
 
 SELECT
-	Convert(BigInt, [t].[MoneyValue])
+	CAST([t].[MoneyValue] AS BigInt)
 FROM
 	[LinqDataTypes] [t]
 

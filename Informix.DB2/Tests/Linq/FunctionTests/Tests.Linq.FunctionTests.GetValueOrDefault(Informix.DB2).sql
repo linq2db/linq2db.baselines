@@ -2,9 +2,12 @@
 -- Informix.DB2 Informix
 
 SELECT
-	p.Value1
+	CASE
+		WHEN p.Value1 IS NOT NULL THEN p.Value1
+		ELSE 0
+	END
 FROM
 	Parent p
 WHERE
-	Nvl(p.Value1, NULL) > 0
+	p.Value1 > 0 AND p.Value1 IS NOT NULL
 

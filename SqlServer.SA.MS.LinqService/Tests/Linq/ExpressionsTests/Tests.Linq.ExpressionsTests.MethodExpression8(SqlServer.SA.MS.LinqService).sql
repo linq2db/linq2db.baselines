@@ -6,7 +6,7 @@ SELECT
 	[ch].[ChildID]
 FROM
 	[Child] [ch]
-		INNER JOIN [Parent] [p] ON [p].[ParentID] = Floor(Convert(Float, [ch].[ChildID]) / 10)
+		INNER JOIN [Parent] [p] ON [p].[ParentID] = CAST(Floor(CAST([ch].[ChildID] AS Float) / 10) AS Int)
 WHERE
 	[ch].[ParentID] = [p].[ParentID]
 

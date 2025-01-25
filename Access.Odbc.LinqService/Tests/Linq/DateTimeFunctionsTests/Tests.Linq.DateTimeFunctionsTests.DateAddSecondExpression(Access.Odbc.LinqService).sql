@@ -1,10 +1,10 @@
 ﻿BeforeExecute
 -- Access.Odbc AccessODBC
-DECLARE @Parameter1 Int -- Int32
-SET     @Parameter1 = 41
+DECLARE @p Int -- Int32
+SET     @p = 41
 
 SELECT
-	DateAdd('s', ?, [t].[DateTimeValue])
+	DatePart('s', DateAdd('s', CVar(?), [t].[DateTimeValue]))
 FROM
 	[LinqDataTypes] [t]
 

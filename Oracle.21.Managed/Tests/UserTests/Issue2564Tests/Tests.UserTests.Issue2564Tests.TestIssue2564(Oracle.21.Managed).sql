@@ -34,30 +34,30 @@ DECLARE @to_1 TimeStamp -- DateTime
 SET     @to_1 = TIMESTAMP '2020-02-29 17:54:55.123123'
 
 SELECT
-	Min(t1."TranslatedMessage1"),
-	t1."Key_2",
-	t1."Key_3",
-	Count(*),
-	Sum(1000 * (EXTRACT(SECOND FROM CAST (t1."TimestampGone" as TIMESTAMP) - CAST (t1."TimestampGenerated" as TIMESTAMP)) + 60 * (EXTRACT(MINUTE FROM CAST (t1."TimestampGone" as TIMESTAMP) - CAST (t1."TimestampGenerated" as TIMESTAMP)) + 60 * (EXTRACT(HOUR FROM CAST (t1."TimestampGone" as TIMESTAMP) - CAST (t1."TimestampGenerated" as TIMESTAMP)) + 24 * EXTRACT(DAY FROM CAST (t1."TimestampGone" as TIMESTAMP) - CAST (t1."TimestampGenerated" as TIMESTAMP))))))
+	MIN(tgGroup_1."TranslatedMessage1"),
+	tgGroup_1."TranslatedMessageGroup",
+	tgGroup_1."Hour_1",
+	COUNT(*),
+	SUM(1000 * (EXTRACT(SECOND FROM CAST (tgGroup_1."TimestampGone" as TIMESTAMP) - CAST (tgGroup_1."TimestampGenerated" as TIMESTAMP)) + 60 * (EXTRACT(MINUTE FROM CAST (tgGroup_1."TimestampGone" as TIMESTAMP) - CAST (tgGroup_1."TimestampGenerated" as TIMESTAMP)) + 60 * (EXTRACT(HOUR FROM CAST (tgGroup_1."TimestampGone" as TIMESTAMP) - CAST (tgGroup_1."TimestampGenerated" as TIMESTAMP)) + 24 * EXTRACT(DAY FROM CAST (tgGroup_1."TimestampGone" as TIMESTAMP) - CAST (tgGroup_1."TimestampGenerated" as TIMESTAMP))))))
 FROM
 	(
 		SELECT
-			m_1."ExternID1" as "Key_1",
-			m_1."TranslatedMessageGroup" as "Key_2",
-			To_Number(To_Char(m_1."TimestampGenerated", 'HH24')) as "Key_3",
-			m_1."TranslatedMessage1",
-			m_1."TimestampGenerated",
-			m_1."TimestampGone"
+			tgGroup."ExternID1",
+			tgGroup."TranslatedMessageGroup",
+			EXTRACT(HOUR FROM tgGroup."TimestampGenerated") as "Hour_1",
+			tgGroup."TranslatedMessage1",
+			tgGroup."TimestampGenerated",
+			tgGroup."TimestampGone"
 		FROM
-			"Issue2564Table" m_1
+			"Issue2564Table" tgGroup
 		WHERE
-			m_1."TimestampGone" IS NOT NULL AND
-			m_1."TimestampGenerated" >= :from_1 AND
-			m_1."TimestampGenerated" <= :to_1 AND
-			m_1."MessageClassName" = 'Error'
-	) t1
+			tgGroup."TimestampGone" IS NOT NULL AND
+			tgGroup."TimestampGenerated" >= :from_1 AND
+			tgGroup."TimestampGenerated" <= :to_1 AND
+			tgGroup."MessageClassName" = 'Error'
+	) tgGroup_1
 GROUP BY
-	t1."Key_1",
-	t1."Key_2",
-	t1."Key_3"
+	tgGroup_1."ExternID1",
+	tgGroup_1."TranslatedMessageGroup",
+	tgGroup_1."Hour_1"
 

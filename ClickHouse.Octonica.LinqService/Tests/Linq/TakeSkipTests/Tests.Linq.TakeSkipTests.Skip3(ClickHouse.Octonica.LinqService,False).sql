@@ -7,9 +7,9 @@ SELECT
 FROM
 	Child ch
 WHERE
-	ch.ChildID >= toInt32(0) AND ch.ChildID <= toInt32(100)
+	ch.ChildID >= 0 AND ch.ChildID <= 100
 ORDER BY
 	ch.ParentID,
 	ch.ChildID
-LIMIT toInt32(3), 18446744073709551615
+LIMIT 3, 18446744073709551615
 

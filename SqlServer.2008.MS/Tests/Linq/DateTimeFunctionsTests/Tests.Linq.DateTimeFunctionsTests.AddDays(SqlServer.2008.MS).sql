@@ -2,7 +2,7 @@
 -- SqlServer.2008.MS SqlServer.2008
 
 SELECT
-	DateAdd(day, 5, [t].[DateTimeValue])
+	CAST(DateAdd(day, 5, [t].[DateTimeValue]) AS Date)
 FROM
 	[LinqDataTypes] [t]
 

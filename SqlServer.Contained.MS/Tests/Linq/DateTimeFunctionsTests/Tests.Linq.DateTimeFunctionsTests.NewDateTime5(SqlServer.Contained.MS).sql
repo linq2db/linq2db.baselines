@@ -2,14 +2,9 @@
 -- SqlServer.Contained.MS SqlServer.2019
 
 SELECT
-	[t].[c1]
+	DATETIMEFROMPARTS(DatePart(year, [t].[DateTimeValue]) + 1, 10, 1, 0, 0, 0, 0)
 FROM
-	(
-		SELECT
-			DateAdd(month, (DatePart(year, [p].[DateTimeValue]) - 1899) * 12 + 9, 0) as [c1]
-		FROM
-			[LinqDataTypes] [p]
-	) [t]
+	[LinqDataTypes] [t]
 WHERE
-	DatePart(month, [t].[c1]) = 10
+	DatePart(month, DATETIMEFROMPARTS(DatePart(year, [t].[DateTimeValue]) + 1, 10, 1, 0, 0, 0, 0)) = 10
 

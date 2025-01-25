@@ -3,10 +3,9 @@
 
 SELECT
 	p.PersonID,
-	p.FirstName
+	concat('123', p.FirstName, '456')
 FROM
 	Person p
 WHERE
-	concat('123', p.FirstName, '456') = '123John456' AND
-	p.PersonID = toInt32(1)
+	p.PersonID = 1 AND concat('123', p.FirstName, '456') = '123John456'
 

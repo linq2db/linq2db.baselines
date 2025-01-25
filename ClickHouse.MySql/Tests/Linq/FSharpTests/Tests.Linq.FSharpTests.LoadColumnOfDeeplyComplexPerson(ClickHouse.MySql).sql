@@ -6,6 +6,6 @@ SELECT
 FROM
 	Person p
 WHERE
-	p.PersonID = toInt32(1)
-LIMIT toInt32(2)
+	p.PersonID = 1
+LIMIT 2
 

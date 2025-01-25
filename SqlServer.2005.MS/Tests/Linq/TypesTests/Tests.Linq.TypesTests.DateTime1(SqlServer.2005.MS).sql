@@ -17,5 +17,5 @@ SELECT
 FROM
 	[LinqDataTypes] [t]
 WHERE
-	Cast(Floor(Cast([t].[DateTimeValue] as Float)) as DateTime) > @Date
+	DateAdd(dd, DateDiff(dd, 0, [t].[DateTimeValue]), 0) > @Date
 

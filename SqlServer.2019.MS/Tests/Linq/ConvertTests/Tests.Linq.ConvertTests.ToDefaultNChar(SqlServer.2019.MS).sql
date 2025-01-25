@@ -2,7 +2,7 @@
 -- SqlServer.2019.MS SqlServer.2019
 
 SELECT
-	Convert(NChar, [t].[MoneyValue])
+	CAST([t].[MoneyValue] AS NChar)
 FROM
 	[LinqDataTypes] [t]
 

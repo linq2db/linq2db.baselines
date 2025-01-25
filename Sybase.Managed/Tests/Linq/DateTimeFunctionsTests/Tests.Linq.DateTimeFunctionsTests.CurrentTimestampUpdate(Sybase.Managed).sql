@@ -4,10 +4,8 @@
 UPDATE
 	[LinqDataTypes]
 SET
-	[p].[BoolValue] = 1,
-	[p].[DateTimeValue] = GetDate()
-FROM
-	[LinqDataTypes] [p]
+	[BoolValue] = 1,
+	[DateTimeValue] = GetDate()
 WHERE
-	[p].[ID] = 100000
+	[LinqDataTypes].[ID] = 100000
 

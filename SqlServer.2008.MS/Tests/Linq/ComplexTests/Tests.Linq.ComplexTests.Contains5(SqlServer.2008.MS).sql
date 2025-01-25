@@ -1,9 +1,5 @@
 ﻿BeforeExecute
 -- SqlServer.2008.MS SqlServer.2008
-DECLARE @skip Int -- Int32
-SET     @skip = 1
-DECLARE @take Int -- Int32
-SET     @take = 101
 
 SELECT
 	[c_1].[ParentID],
@@ -27,7 +23,7 @@ WHERE
 							[Parent] [p]
 					) [t1]
 				WHERE
-					[t1].[RN] > @skip AND [t1].[RN] <= @take
+					[t1].[RN] > 1 AND [t1].[RN] <= 101
 			) [t2]
 	)
 

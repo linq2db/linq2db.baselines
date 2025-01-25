@@ -42,7 +42,7 @@ BeforeExecute
 -- PostgreSQL.12 PostgreSQL.9.5 PostgreSQL
 
 SELECT
-	t."TransactionDate" + 1 * Interval '1 Day'
+	t."TransactionDate" + Interval '1 Day'
 FROM
 	"Transactions" t
 

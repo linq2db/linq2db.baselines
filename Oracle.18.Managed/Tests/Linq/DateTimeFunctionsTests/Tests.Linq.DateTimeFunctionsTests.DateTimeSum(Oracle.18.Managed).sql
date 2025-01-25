@@ -2,12 +2,12 @@
 -- Oracle.18.Managed Oracle.Managed Oracle12
 
 SELECT
-	t1.ID,
-	Count(*),
-	Sum(1000 * (EXTRACT(SECOND FROM CAST ((t1."DateTimeValue" + 1D * INTERVAL '1' DAY) as TIMESTAMP) - CAST (t1."DateTimeValue" as TIMESTAMP)) + 60 * (EXTRACT(MINUTE FROM CAST ((t1."DateTimeValue" + 1D * INTERVAL '1' DAY) as TIMESTAMP) - CAST (t1."DateTimeValue" as TIMESTAMP)) + 60 * (EXTRACT(HOUR FROM CAST ((t1."DateTimeValue" + 1D * INTERVAL '1' DAY) as TIMESTAMP) - CAST (t1."DateTimeValue" as TIMESTAMP)) + 24 * EXTRACT(DAY FROM CAST ((t1."DateTimeValue" + 1D * INTERVAL '1' DAY) as TIMESTAMP) - CAST (t1."DateTimeValue" as TIMESTAMP)))))),
-	Max(1000 * (EXTRACT(SECOND FROM CAST ((t1."DateTimeValue" + 1D * INTERVAL '1' DAY) as TIMESTAMP) - CAST (t1."DateTimeValue" as TIMESTAMP)) + 60 * (EXTRACT(MINUTE FROM CAST ((t1."DateTimeValue" + 1D * INTERVAL '1' DAY) as TIMESTAMP) - CAST (t1."DateTimeValue" as TIMESTAMP)) + 60 * (EXTRACT(HOUR FROM CAST ((t1."DateTimeValue" + 1D * INTERVAL '1' DAY) as TIMESTAMP) - CAST (t1."DateTimeValue" as TIMESTAMP)) + 24 * EXTRACT(DAY FROM CAST ((t1."DateTimeValue" + 1D * INTERVAL '1' DAY) as TIMESTAMP) - CAST (t1."DateTimeValue" as TIMESTAMP))))))
+	g_1.ID,
+	COUNT(*),
+	SUM(1000 * (EXTRACT(SECOND FROM CAST ((g_1."DateTimeValue" + 1D * INTERVAL '1' DAY) as TIMESTAMP) - CAST (g_1."DateTimeValue" as TIMESTAMP)) + 60 * (EXTRACT(MINUTE FROM CAST ((g_1."DateTimeValue" + 1D * INTERVAL '1' DAY) as TIMESTAMP) - CAST (g_1."DateTimeValue" as TIMESTAMP)) + 60 * (EXTRACT(HOUR FROM CAST ((g_1."DateTimeValue" + 1D * INTERVAL '1' DAY) as TIMESTAMP) - CAST (g_1."DateTimeValue" as TIMESTAMP)) + 24 * EXTRACT(DAY FROM CAST ((g_1."DateTimeValue" + 1D * INTERVAL '1' DAY) as TIMESTAMP) - CAST (g_1."DateTimeValue" as TIMESTAMP)))))),
+	MAX(1000 * (EXTRACT(SECOND FROM CAST ((g_1."DateTimeValue" + 1D * INTERVAL '1' DAY) as TIMESTAMP) - CAST (g_1."DateTimeValue" as TIMESTAMP)) + 60 * (EXTRACT(MINUTE FROM CAST ((g_1."DateTimeValue" + 1D * INTERVAL '1' DAY) as TIMESTAMP) - CAST (g_1."DateTimeValue" as TIMESTAMP)) + 60 * (EXTRACT(HOUR FROM CAST ((g_1."DateTimeValue" + 1D * INTERVAL '1' DAY) as TIMESTAMP) - CAST (g_1."DateTimeValue" as TIMESTAMP)) + 24 * EXTRACT(DAY FROM CAST ((g_1."DateTimeValue" + 1D * INTERVAL '1' DAY) as TIMESTAMP) - CAST (g_1."DateTimeValue" as TIMESTAMP))))))
 FROM
-	"LinqDataTypes" t1
+	"LinqDataTypes" g_1
 GROUP BY
-	t1.ID
+	g_1.ID
 

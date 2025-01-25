@@ -2,14 +2,14 @@
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
-	p.c1
+	p_1.c1
 FROM
 	(
 		SELECT
-			toInt8(roundBankers(t.MoneyValue)) as c1
+			toInt8(roundBankers(p.MoneyValue)) as c1
 		FROM
-			LinqDataTypes t
-	) p
+			LinqDataTypes p
+	) p_1
 WHERE
-	p.c1 > toInt8(0)
+	p_1.c1 > toInt8(0)
 

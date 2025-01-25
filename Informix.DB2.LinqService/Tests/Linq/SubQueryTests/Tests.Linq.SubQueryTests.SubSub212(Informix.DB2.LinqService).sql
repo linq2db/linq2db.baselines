@@ -4,24 +4,18 @@
 SELECT
 	(
 		SELECT
-			Count(*)
+			COUNT(*)
 		FROM
-			GrandChild c_1
+			GrandChild a_GrandChildren
 		WHERE
-			c_1.ParentID + 1 < p1.ID AND c_1.ParentID + 1 < p1.ID AND
-			p1.ParentID = c_1.ParentID
+			a_Parent.ParentID IS NOT NULL AND
+			a_Parent.ParentID = a_GrandChildren.ParentID AND
+			a_GrandChildren.ParentID + 1 < p1.ParentID + 2 AND
+			a_GrandChildren.ParentID + 1 < p1.ParentID + 2
 	)
 FROM
-	(
-		SELECT
-			p2.ParentID + 2 as ID,
-			a_Parent.ParentID
-		FROM
-			Child p2
-				LEFT JOIN Parent a_Parent ON p2.ParentID = a_Parent.ParentID
-		WHERE
-			p2.ParentID > -1
-	) p1
+	Child p1
+		LEFT JOIN Parent a_Parent ON p1.ParentID = a_Parent.ParentID
 WHERE
-	p1.ID > 0
+	p1.ParentID > -1 AND p1.ParentID > -2
 

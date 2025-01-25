@@ -34,12 +34,12 @@ BeforeExecute
 
 SELECT
 	N'Title',
-	[selectParam].[Title],
-	Avg([selectParam].[YearsExperience])
+	[it].[Title],
+	AVG([it].[YearsExperience])
 FROM
-	[odata_person] [selectParam]
+	[odata_person] [it]
 GROUP BY
-	[selectParam].[Title]
+	[it].[Title]
 
 BeforeExecute
 -- SqlServer.SA SqlServer.2019

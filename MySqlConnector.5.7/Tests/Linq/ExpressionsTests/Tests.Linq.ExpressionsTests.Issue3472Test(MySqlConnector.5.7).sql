@@ -1,0 +1,44 @@
+﻿BeforeExecute
+-- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
+
+DROP TABLE IF EXISTS `Issue3472TableDC`
+
+BeforeExecute
+-- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
+
+CREATE TABLE IF NOT EXISTS `Issue3472TableDC`
+(
+	`Id` INT NOT NULL
+)
+
+BeforeExecute
+-- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
+
+INSERT INTO `Issue3472TableDC`
+(
+	`Id`
+)
+VALUES
+(1)
+
+BeforeExecute
+-- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
+
+SELECT
+	`t1`.`Id`,
+	(
+		SELECT
+			COUNT(*)
+		FROM
+			`Person` `p`
+		WHERE
+			`p`.`PersonID` = `t1`.`Id`
+	)
+FROM
+	`Issue3472TableDC` `t1`
+
+BeforeExecute
+-- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
+
+DROP TABLE IF EXISTS `Issue3472TableDC`
+

@@ -4,7 +4,7 @@
 ALTER TABLE
 	LinqDataTypes
 DELETE WHERE
-	ID > toInt32(1000)
+	ID > 1000
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
@@ -17,7 +17,7 @@ INSERT INTO LinqDataTypes
 )
 VALUES
 (
-	toInt32(1001),
+	1001,
 	NULL,
 	true
 )
@@ -28,5 +28,5 @@ BeforeExecute
 ALTER TABLE
 	LinqDataTypes
 DELETE WHERE
-	ID > toInt32(1000)
+	ID > 1000
 

@@ -2,37 +2,33 @@
 -- SqlServer.2022
 DECLARE @take Int -- Int32
 SET     @take = 10
-DECLARE @take_1 Int -- Int32
-SET     @take_1 = 10
 
 SELECT TOP (@take)
-	[cp].[ParentID],
-	[c_1].[ChildID]
+	[x].[ParentID],
+	[t2].[ChildID]
 FROM
-	[Parent] [cp]
-		CROSS APPLY (
-			SELECT TOP (@take_1)
-				[t3].[ParentID],
-				[t3].[ChildID]
+	[Parent] [x]
+		INNER JOIN (
+			SELECT TOP (10)
+				[c_2].[ParentID],
+				[c_2].[ChildID]
 			FROM
 				(
+					SELECT
+						[c_1].[ParentID],
+						[c_1].[ChildID]
+					FROM
+						[Child] [c_1]
+					UNION
 					SELECT
 						[t1].[ParentID],
 						[t1].[ChildID]
 					FROM
 						[Child] [t1]
-					UNION
-					SELECT
-						[t2].[ParentID],
-						[t2].[ChildID]
-					FROM
-						[Child] [t2]
-				) [t3]
+				) [c_2]
 			ORDER BY
-				[t3].[ParentID]
-		) [c_1]
-WHERE
-	[c_1].[ParentID] = [cp].[ParentID]
+				[c_2].[ParentID]
+		) [t2] ON [t2].[ParentID] = [x].[ParentID]
 ORDER BY
-	[cp].[ParentID]
+	[x].[ParentID]
 

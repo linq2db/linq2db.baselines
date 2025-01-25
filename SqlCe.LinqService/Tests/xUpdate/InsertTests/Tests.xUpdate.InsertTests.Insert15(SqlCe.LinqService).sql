@@ -36,11 +36,11 @@ BeforeExecute
 -- SqlCe
 
 SELECT
-	Count(*)
+	COUNT(*) as [COUNT_1]
 FROM
-	[Person] [_]
+	[Person] [t1]
 WHERE
-	[_].[FirstName] LIKE 'Insert15%' ESCAPE '~'
+	[t1].[FirstName] LIKE 'Insert15%' ESCAPE '~'
 
 BeforeExecute
 -- SqlCe

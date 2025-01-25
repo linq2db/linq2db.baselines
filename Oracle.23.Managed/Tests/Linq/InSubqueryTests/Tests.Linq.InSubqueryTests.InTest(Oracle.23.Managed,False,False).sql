@@ -12,5 +12,25 @@ WHERE
 			p."ParentID"
 		FROM
 			"Parent" p
+		WHERE
+			p."ParentID" IS NOT NULL
 	)
+
+BeforeExecute
+-- Oracle.23.Managed Oracle.Managed Oracle12
+
+SELECT
+	t1."ParentID",
+	t1."ChildID"
+FROM
+	"Child" t1
+
+BeforeExecute
+-- Oracle.23.Managed Oracle.Managed Oracle12
+
+SELECT
+	t1."ParentID",
+	t1."Value1"
+FROM
+	"Parent" t1
 

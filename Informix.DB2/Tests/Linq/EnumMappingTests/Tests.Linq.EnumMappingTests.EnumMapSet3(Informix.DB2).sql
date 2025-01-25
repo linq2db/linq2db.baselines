@@ -26,17 +26,17 @@ BeforeExecute
 -- Informix.DB2 Informix
 
 UPDATE
-	LinqDataTypes
+	LinqDataTypes r
 SET
-	LinqDataTypes.IntValue = 4
+	IntValue = 4
 WHERE
-	LinqDataTypes.ID = 101 AND LinqDataTypes.IntValue = 3
+	r.ID = 101 AND r.IntValue = 3
 
 BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	LinqDataTypes r
 WHERE

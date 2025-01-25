@@ -2,7 +2,7 @@
 -- SqlServer.2005
 
 SELECT
-	Convert(BigInt, [t].[MoneyValue])
+	CAST(Floor([t].[MoneyValue]) AS BigInt)
 FROM
 	[LinqDataTypes] [t]
 

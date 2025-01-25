@@ -62,7 +62,7 @@ INSERT INTO temp_table1
 	Value
 )
 VALUES
-(toInt32(2),toInt32(3))
+(2,3)
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse (asynchronously)
@@ -74,8 +74,8 @@ INSERT INTO temp_table1
 )
 VALUES
 (
-	toInt32(3),
-	toInt32(3)
+	3,
+	3
 )
 
 BeforeExecute

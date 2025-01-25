@@ -7,10 +7,9 @@ SELECT
 FROM
 	Child t1
 ORDER BY
-	Cast(CASE
-		WHEN t1.ParentID > 0 AND t1.ChildID <> t1.ParentID
-			THEN 't'
+	CASE
+		WHEN t1.ParentID > 0 AND t1.ChildID <> t1.ParentID THEN 't'
 		ELSE 'f'
-	END as BOOLEAN) DESC,
+	END::BOOLEAN DESC,
 	t1.ChildID
 

@@ -11,7 +11,7 @@ FROM
 	[Person] [p]
 		INNER JOIN (VALUES
 			(2), (3)
-		) [n]([PersonID]) ON [p].[PersonID] = [n].[PersonID]
+		) [n]([ID]) ON [p].[PersonID] = [n].[ID]
 
 BeforeExecute
 -- SqlServer.2017.MS SqlServer.2017
@@ -26,5 +26,5 @@ FROM
 	[Person] [p]
 		INNER JOIN (VALUES
 			(4), (5)
-		) [n]([PersonID]) ON [p].[PersonID] = [n].[PersonID]
+		) [n]([ID]) ON [p].[PersonID] = [n].[ID]
 

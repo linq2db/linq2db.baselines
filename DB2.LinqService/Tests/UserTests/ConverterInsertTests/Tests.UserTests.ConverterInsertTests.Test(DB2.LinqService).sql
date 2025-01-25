@@ -50,7 +50,7 @@ FROM
 	"Person" "t"
 WHERE
 	"t"."PersonID" = @id
-FETCH FIRST 1 ROWS ONLY
+FETCH NEXT 1 ROWS ONLY
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
@@ -67,5 +67,5 @@ FROM
 	"Person" "t"
 WHERE
 	"t"."PersonID" = @id
-FETCH FIRST 1 ROWS ONLY
+FETCH NEXT 1 ROWS ONLY
 

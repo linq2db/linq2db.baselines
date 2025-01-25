@@ -224,24 +224,24 @@ BeforeExecute
 MERGE INTO "TestMerge1" "Target"
 USING (
 	SELECT
-		"s"."Field1",
-		"s"."Field2" - 1 as "Field2"
+		"s"."Field1" as "source_Field1",
+		"s"."Field2" - 1 as "source_Field2"
 	FROM
 		"TestMerge2" "s"
 	WHERE
 		"s"."Field1" IS NOT NULL AND "s"."Field2" IS NOT NULL
 ) "Source"
 (
-	"Field1",
-	"Field2"
+	"source_Field1",
+	"source_Field2"
 )
-ON (("Target"."Field1" = "Source"."Field1" OR "Target"."Field1" IS NULL AND "Source"."Field1" IS NULL) AND
-("Target"."Field2" = "Source"."Field2" OR "Target"."Field2" IS NULL AND "Source"."Field2" IS NULL))
+ON (("Target"."Field1" = "Source"."source_Field1" OR "Target"."Field1" IS NULL AND "Source"."source_Field1" IS NULL) AND
+("Target"."Field2" = "Source"."source_Field2" OR "Target"."Field2" IS NULL AND "Source"."source_Field2" IS NULL))
 
 WHEN MATCHED THEN
 UPDATE
 SET
-	"Target"."Field3" = 123
+	"Field3" = 123
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW

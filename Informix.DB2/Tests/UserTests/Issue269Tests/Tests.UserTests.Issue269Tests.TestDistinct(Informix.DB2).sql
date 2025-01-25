@@ -11,9 +11,9 @@ WHERE
 		SELECT
 			*
 		FROM
-			Person per
-				LEFT JOIN Patient a_Patient ON per.PersonID = a_Patient.PersonID
+			Person t1
+				LEFT JOIN Patient a_Patient ON t1.PersonID = a_Patient.PersonID
 		WHERE
-			per.PersonID = pat.PersonID AND a_Patient.Diagnosis LIKE '%with%' ESCAPE '~'
+			t1.PersonID = pat.PersonID AND a_Patient.Diagnosis LIKE '%with%' ESCAPE '~'
 	)
 

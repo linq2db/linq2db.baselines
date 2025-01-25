@@ -53,8 +53,7 @@ SELECT
 FROM
 	[DateOnlyTable] [r]
 WHERE
-	[r].[Column] = CAST('2020-02-29T00:00:00.000' AS DATETIME) AND
-	[r].[ColumnNullable] = CAST('2200-01-01T00:00:00.000' AS DATETIME)
+	[r].[Column] = CAST('2020-02-29' AS DATETIME) AND [r].[ColumnNullable] = CAST('2200-01-01' AS DATETIME)
 
 BeforeExecute
 -- SqlServer.2005.MS SqlServer.2005

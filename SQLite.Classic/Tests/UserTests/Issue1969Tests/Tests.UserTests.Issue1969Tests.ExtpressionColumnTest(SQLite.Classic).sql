@@ -59,43 +59,28 @@ BeforeExecute
 -- SQLite.Classic SQLite
 
 SELECT
-	[t2].[ID],
-	[t2].[NAME],
-	[t2].[CountOf]
-FROM
+	[c_1].[ID],
+	[c_1].[NAME],
 	(
 		SELECT
-			(
-				SELECT
-					Count(*)
-				FROM
-					[KOMPO] [k_2]
-				WHERE
-					[k_2].[NUMBER] = [t1].[ID]
-			) as [ex],
-			[t1].[ID],
-			[t1].[NAME],
-			[t1].[CountOf]
+			COUNT(*)
 		FROM
-			[KOMPO] [k_3]
-				INNER JOIN (
-					SELECT
-						[c_1].[ID],
-						[c_1].[NAME],
-						(
-							SELECT
-								Count(*)
-							FROM
-								[KOMPO] [k_1]
-							WHERE
-								[k_1].[NUMBER] = [c_1].[ID]
-						) as [CountOf]
-					FROM
-						[CONFIG] [c_1]
-				) [t1] ON [t1].[ID] = [k_3].[NUMBER]
-	) [t2]
+			[KOMPO] [k_1]
+		WHERE
+			[k_1].[NUMBER] = [c_1].[ID]
+	)
+FROM
+	[KOMPO] [t1]
+		INNER JOIN [CONFIG] [c_1] ON [c_1].[ID] = [t1].[NUMBER]
 WHERE
-	[t2].[ex] > 1
+	(
+		SELECT
+			COUNT(*)
+		FROM
+			[KOMPO] [k_2]
+		WHERE
+			[k_2].[NUMBER] = [c_1].[ID]
+	) > 1
 
 BeforeExecute
 -- SQLite.Classic SQLite

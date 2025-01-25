@@ -1,29 +1,18 @@
 ﻿BeforeExecute
 -- SqlServer.2022
-DECLARE @take Int -- Int32
-SET     @take = 1
 
 SELECT
-	[t1].[Count_1]
-FROM
 	(
-		SELECT
-			[p2].[ParentID] + 2 as [ID],
-			[p2].[ParentID]
+		SELECT TOP (1)
+			[a_Children].[ParentID] + 1
 		FROM
-			[Parent] [p2]
+			[Child] [a_Children]
 		WHERE
-			[p2].[ParentID] > -1
-	) [p1]
-		OUTER APPLY (
-			SELECT TOP (@take)
-				[c_1].[ParentID] + 1 as [Count_1]
-			FROM
-				[Child] [c_1]
-			WHERE
-				[c_1].[ParentID] + 1 < [p1].[ID] AND [c_1].[ParentID] + 1 < [p1].[ID] AND
-				[p1].[ParentID] = [c_1].[ParentID]
-		) [t1]
+			[p1].[ParentID] = [a_Children].[ParentID] AND [a_Children].[ParentID] + 1 < [p1].[ParentID] + 2 AND
+			[a_Children].[ParentID] + 1 < [p1].[ParentID] + 2
+	)
+FROM
+	[Parent] [p1]
 WHERE
-	[p1].[ID] > 0
+	[p1].[ParentID] > -1 AND [p1].[ParentID] > -2
 

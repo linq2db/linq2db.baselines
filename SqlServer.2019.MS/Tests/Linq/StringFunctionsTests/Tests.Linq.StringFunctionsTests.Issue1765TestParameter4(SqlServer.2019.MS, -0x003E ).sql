@@ -38,15 +38,13 @@ DECLARE @separator NVarChar(4000) -- String
 SET     @separator = N' -> '
 
 SELECT
-	Max([t1].[Value4]),
-	STRING_AGG([t1].[Value4], @separator)
+	MAX([g_1].[Value4]),
+	STRING_AGG([g_1].[Value4], @separator)
 FROM
-	[SampleClass] [t1]
+	[SampleClass] [g_1]
 GROUP BY
-	[t1].[Id],
-	[t1].[Value4]
-ORDER BY
-	[t1].[Id]
+	[g_1].[Id],
+	[g_1].[Value4]
 
 BeforeExecute
 -- SqlServer.2019.MS SqlServer.2019

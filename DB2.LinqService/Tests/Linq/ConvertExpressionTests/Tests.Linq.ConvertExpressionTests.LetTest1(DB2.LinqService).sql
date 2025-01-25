@@ -4,23 +4,22 @@
 SELECT
 	(
 		SELECT
-			"p"."ParentID"
+			"a_Children_1"."ParentID"
 		FROM
-			"Child" "p"
+			"Child" "a_Children_1"
 		WHERE
-			"p_1"."ParentID" = "p"."ParentID"
-		FETCH FIRST 1 ROWS ONLY
+			"p"."ParentID" = "a_Children_1"."ParentID"
+		FETCH NEXT 1 ROWS ONLY
 	)
 FROM
-	"Parent" "p_1"
+	"Parent" "p"
+		LEFT JOIN (
+			SELECT
+				"a_Children"."ParentID",
+				ROW_NUMBER() OVER (PARTITION BY "a_Children"."ParentID" ORDER BY "a_Children"."ParentID") as "rn"
+			FROM
+				"Child" "a_Children"
+		) "t1" ON "p"."ParentID" = "t1"."ParentID" AND "t1"."rn" <= 1
 WHERE
-	(
-		SELECT
-			1
-		FROM
-			"Child" "t1"
-		WHERE
-			"p_1"."ParentID" = "t1"."ParentID"
-		FETCH FIRST 1 ROWS ONLY
-	) IS NOT NULL
+	"t1"."ParentID" IS NOT NULL
 

@@ -2,13 +2,13 @@
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
 SELECT
-	Count(*)
+	COUNT(*)
 
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
 SELECT
-	Count(*)
+	COUNT(*)
 WHERE
 	1 = 0
 

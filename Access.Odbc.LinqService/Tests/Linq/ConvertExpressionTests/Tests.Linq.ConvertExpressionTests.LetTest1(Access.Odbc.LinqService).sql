@@ -4,21 +4,21 @@
 SELECT
 	(
 		SELECT TOP 1
-			[p].[ParentID]
+			[a_Children].[ParentID]
 		FROM
-			[Child] [p]
+			[Child] [a_Children]
 		WHERE
-			[p_1].[ParentID] = [p].[ParentID]
+			[p].[ParentID] = [a_Children].[ParentID]
 	)
 FROM
-	[Parent] [p_1]
+	[Parent] [p]
 WHERE
 	(
 		SELECT TOP 1
-			1
+			[a_Children_1].[ParentID]
 		FROM
-			[Child] [t1]
+			[Child] [a_Children_1]
 		WHERE
-			[p_1].[ParentID] = [t1].[ParentID]
+			[p].[ParentID] = [a_Children_1].[ParentID]
 	) IS NOT NULL
 

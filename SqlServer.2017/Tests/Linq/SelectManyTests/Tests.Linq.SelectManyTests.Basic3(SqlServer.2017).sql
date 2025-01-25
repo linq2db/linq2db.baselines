@@ -2,10 +2,10 @@
 -- SqlServer.2017
 
 SELECT
-	[_].[ParentID] + 1
+	[t1].[ParentID] + 1
 FROM
-	[Parent] [cp],
-	[Child] [_]
+	[Parent] [p],
+	[Child] [t1]
 WHERE
-	[_].[ParentID] > 0
+	[t1].[ParentID] > 0
 

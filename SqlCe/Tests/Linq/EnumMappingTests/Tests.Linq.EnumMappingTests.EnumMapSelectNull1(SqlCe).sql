@@ -22,11 +22,9 @@ VALUES
 
 BeforeExecute
 -- SqlCe
-DECLARE @take Int -- Int32
-SET     @take = 1
 
-SELECT TOP (@take)
-	[r].[BigIntValue]
+SELECT TOP (1)
+	[r].[BigIntValue] as [TestField]
 FROM
 	[LinqDataTypes] [r]
 WHERE

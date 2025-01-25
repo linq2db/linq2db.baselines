@@ -25,7 +25,7 @@ INSERT INTO WhereWithString
 	StringValue
 )
 VALUES
-(toInt32(1),'Str1')
+(1,'Str1')
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse

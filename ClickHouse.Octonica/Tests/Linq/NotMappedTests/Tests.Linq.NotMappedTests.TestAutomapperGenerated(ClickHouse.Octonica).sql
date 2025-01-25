@@ -25,16 +25,16 @@ INSERT INTO SuperClass
 	Value
 )
 VALUES
-(toInt32(1),'Super 1'),
-(toInt32(2),'Super 2'),
-(toInt32(3),'Super 3'),
-(toInt32(4),'Super 4'),
-(toInt32(5),'Super 5'),
-(toInt32(6),'Super 6'),
-(toInt32(7),'Super 7'),
-(toInt32(8),'Super 8'),
-(toInt32(9),'Super 9'),
-(toInt32(10),'Super 10')
+(1,'Super 1'),
+(2,'Super 2'),
+(3,'Super 3'),
+(4,'Super 4'),
+(5,'Super 5'),
+(6,'Super 6'),
+(7,'Super 7'),
+(8,'Super 8'),
+(9,'Super 9'),
+(10,'Super 10')
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -65,16 +65,16 @@ INSERT INTO Subclass1
 	Value
 )
 VALUES
-(toInt32(10),NULL,'Sub1 1'),
-(toInt32(20),toInt32(2),'Sub1 2'),
-(toInt32(30),NULL,'Sub1 3'),
-(toInt32(40),toInt32(4),'Sub1 4'),
-(toInt32(50),NULL,'Sub1 5'),
-(toInt32(60),toInt32(6),'Sub1 6'),
-(toInt32(70),NULL,'Sub1 7'),
-(toInt32(80),toInt32(8),'Sub1 8'),
-(toInt32(90),NULL,'Sub1 9'),
-(toInt32(100),toInt32(10),'Sub1 10')
+(10,NULL,'Sub1 1'),
+(20,2,'Sub1 2'),
+(30,NULL,'Sub1 3'),
+(40,4,'Sub1 4'),
+(50,NULL,'Sub1 5'),
+(60,6,'Sub1 6'),
+(70,NULL,'Sub1 7'),
+(80,8,'Sub1 8'),
+(90,NULL,'Sub1 9'),
+(100,10,'Sub1 10')
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -105,16 +105,16 @@ INSERT INTO Subclass2
 	Value
 )
 VALUES
-(toInt32(100),NULL,'Sub2 1'),
-(toInt32(200),NULL,'Sub2 2'),
-(toInt32(300),NULL,'Sub2 3'),
-(toInt32(400),toInt32(40),'Sub2 4'),
-(toInt32(500),NULL,'Sub2 5'),
-(toInt32(600),NULL,'Sub2 6'),
-(toInt32(700),NULL,'Sub2 7'),
-(toInt32(800),toInt32(80),'Sub2 8'),
-(toInt32(900),NULL,'Sub2 9'),
-(toInt32(1000),NULL,'Sub2 10')
+(100,NULL,'Sub2 1'),
+(200,NULL,'Sub2 2'),
+(300,NULL,'Sub2 3'),
+(400,40,'Sub2 4'),
+(500,NULL,'Sub2 5'),
+(600,NULL,'Sub2 6'),
+(700,NULL,'Sub2 7'),
+(800,80,'Sub2 8'),
+(900,NULL,'Sub2 9'),
+(1000,NULL,'Sub2 10')
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse

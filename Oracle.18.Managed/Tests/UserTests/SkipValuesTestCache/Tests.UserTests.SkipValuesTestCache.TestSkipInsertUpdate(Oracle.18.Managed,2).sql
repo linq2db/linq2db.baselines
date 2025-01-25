@@ -55,8 +55,6 @@ VALUES
 
 BeforeExecute
 -- Oracle.18.Managed Oracle.Managed Oracle12
-DECLARE @take Int32
-SET     @take = 1
 
 SELECT
 	t."Id",
@@ -66,7 +64,7 @@ FROM
 	"PR_1598_Insert_Table_Cache" t
 WHERE
 	t."Id" = 1
-FETCH NEXT :take ROWS ONLY
+FETCH NEXT 1 ROWS ONLY
 
 BeforeExecute
 -- Oracle.18.Managed Oracle.Managed Oracle12
@@ -78,17 +76,15 @@ DECLARE @Id Int32
 SET     @Id = 1
 
 UPDATE
-	"PR_1598_Insert_Table_Cache"
+	"PR_1598_Insert_Table_Cache" t1
 SET
-	"PR_1598_Insert_Table_Cache"."Name" = :Name,
-	"PR_1598_Insert_Table_Cache"."Age" = :Age
+	"Name" = :Name,
+	"Age" = :Age
 WHERE
-	"PR_1598_Insert_Table_Cache"."Id" = :Id
+	t1."Id" = :Id
 
 BeforeExecute
 -- Oracle.18.Managed Oracle.Managed Oracle12
-DECLARE @take Int32
-SET     @take = 1
 
 SELECT
 	t."Id",
@@ -98,7 +94,7 @@ FROM
 	"PR_1598_Insert_Table_Cache" t
 WHERE
 	t."Id" = 1
-FETCH NEXT :take ROWS ONLY
+FETCH NEXT 1 ROWS ONLY
 
 BeforeExecute
 -- Oracle.18.Managed Oracle.Managed Oracle12

@@ -8,9 +8,10 @@ SELECT
 	[t1].[MiddleName],
 	[t1].[Gender],
 	[t1].[LastName] || ', ' || [t1].[FirstName],
+	[t1].[LastName] || ', ' || [t1].[FirstName],
 	(
 		SELECT
-			Count(*)
+			COUNT(*)
 		FROM
 			[Doctor] [d]
 		WHERE
@@ -23,22 +24,34 @@ BeforeExecute
 -- SQLite.MS SQLite
 
 SELECT
-	[i].[PersonID],
-	[i].[FirstName],
-	[i].[LastName],
-	[i].[MiddleName],
-	[i].[Gender],
-	[i].[LastName] || ', ' || [i].[FirstName],
+	[i_1].[PersonID],
+	[i_1].[FirstName],
+	[i_1].[LastName],
+	[i_1].[MiddleName],
+	[i_1].[Gender],
+	[i_1].[FullName],
+	[i_1].[FullName],
+	[i_1].[DoctorCount]
+FROM
 	(
 		SELECT
-			Count(*)
+			[i].[LastName],
+			[i].[FirstName],
+			[i].[PersonID],
+			[i].[MiddleName],
+			[i].[Gender],
+			[i].[LastName] || ', ' || [i].[FirstName] as [FullName],
+			(
+				SELECT
+					COUNT(*)
+				FROM
+					[Doctor] [d]
+				WHERE
+					[d].[PersonID] = [i].[PersonID]
+			) as [DoctorCount]
 		FROM
-			[Doctor] [d]
-		WHERE
-			[d].[PersonID] = [i].[PersonID]
-	)
-FROM
-	[Person] [i]
+			[Person] [i]
+	) [i_1]
 WHERE
-	[i].[LastName] || ', ' || [i].[FirstName] <> 'Pupkin, John'
+	[i_1].[LastName] || ', ' || [i_1].[FirstName] <> 'Pupkin, John'
 

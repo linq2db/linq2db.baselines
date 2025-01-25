@@ -12,7 +12,7 @@ INSERT INTO Person
 VALUES
 (
 	'test_inherited_insert',
-	toInt32(10500),
+	10500,
 	'test',
 	'test',
 	'U'
@@ -22,16 +22,16 @@ BeforeExecute
 -- ClickHouse.Client ClickHouse
 
 SELECT
-	_.FirstName,
-	_.PersonID,
-	_.LastName,
-	_.MiddleName,
-	_.Gender
+	t1.FirstName,
+	t1.PersonID,
+	t1.LastName,
+	t1.MiddleName,
+	t1.Gender
 FROM
-	Person _
+	Person t1
 WHERE
-	_.FirstName = 'test_inherited_insert'
-LIMIT toInt32(1)
+	t1.FirstName = 'test_inherited_insert'
+LIMIT 1
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
@@ -44,22 +44,22 @@ UPDATE
 	MiddleName = 'test',
 	Gender = 'U'
 WHERE
-	PersonID = toInt32(10500)
+	PersonID = 10500
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
 
 SELECT
-	_.FirstName,
-	_.PersonID,
-	_.LastName,
-	_.MiddleName,
-	_.Gender
+	t1.FirstName,
+	t1.PersonID,
+	t1.LastName,
+	t1.MiddleName,
+	t1.Gender
 FROM
-	Person _
+	Person t1
 WHERE
-	_.FirstName = 'test_inherited_insert'
-LIMIT toInt32(1)
+	t1.FirstName = 'test_inherited_insert'
+LIMIT 1
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
@@ -67,5 +67,5 @@ BeforeExecute
 ALTER TABLE
 	Person
 DELETE WHERE
-	PersonID = toInt32(10500)
+	PersonID = 10500
 

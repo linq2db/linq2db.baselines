@@ -54,8 +54,6 @@ WHERE
 
 BeforeExecute
 -- SQLite.MS SQLite
-DECLARE @take  -- Int32
-SET     @take = 2
 
 SELECT
 	[t1].[Id],
@@ -63,7 +61,7 @@ SELECT
 	[t1].[ClaimedKeyTypeN]
 FROM
 	[Issue1554Table] [t1]
-LIMIT @take
+LIMIT 2
 
 BeforeExecute
 -- SQLite.MS SQLite

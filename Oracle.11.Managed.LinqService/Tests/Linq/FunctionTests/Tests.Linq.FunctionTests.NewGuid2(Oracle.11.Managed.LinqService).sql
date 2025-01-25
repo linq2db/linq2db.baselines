@@ -1,12 +1,10 @@
 ﻿BeforeExecute
 -- Oracle.11.Managed Oracle11
-DECLARE @take Int32
-SET     @take = 1
 
 SELECT
-	Sys_Guid()
+	1
 FROM
 	"LinqDataTypes" p
 WHERE
-	ROWNUM <= :take
+	ROWNUM <= 1
 

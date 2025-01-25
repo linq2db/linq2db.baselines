@@ -5,5 +5,5 @@ SELECT
 	"person_1"."PersonID"
 FROM
 	"Person" "person_1"
-FETCH FIRST 1 ROWS ONLY
+FETCH NEXT 1 ROWS ONLY
 

@@ -57,12 +57,12 @@ DECLARE @Stamp  -- Int32
 SET     @Stamp = -10
 
 UPDATE
-	"ConcurrencyAutoIncrement"
+	"ConcurrencyAutoIncrement" "obj"
 SET
-	"ConcurrencyAutoIncrement"."Stamp" = "ConcurrencyAutoIncrement"."Stamp" + 1,
-	"ConcurrencyAutoIncrement"."Value" = ?
+	"Stamp" = "obj"."Stamp" + 1,
+	"Value" = ?
 WHERE
-	"ConcurrencyAutoIncrement"."Id" = ? AND "ConcurrencyAutoIncrement"."Stamp" = ?
+	"obj"."Id" = ? AND "obj"."Stamp" = ?
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
@@ -84,12 +84,12 @@ DECLARE @Stamp  -- Int32
 SET     @Stamp = -9
 
 UPDATE
-	"ConcurrencyAutoIncrement"
+	"ConcurrencyAutoIncrement" "obj"
 SET
-	"ConcurrencyAutoIncrement"."Stamp" = "ConcurrencyAutoIncrement"."Stamp" + 1,
-	"ConcurrencyAutoIncrement"."Value" = ?
+	"Stamp" = "obj"."Stamp" + 1,
+	"Value" = ?
 WHERE
-	"ConcurrencyAutoIncrement"."Id" = ? AND "ConcurrencyAutoIncrement"."Stamp" = ?
+	"obj"."Id" = ? AND "obj"."Stamp" = ?
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
@@ -111,12 +111,12 @@ DECLARE @Stamp  -- Int32
 SET     @Stamp = -9
 
 UPDATE
-	"ConcurrencyAutoIncrement"
+	"ConcurrencyAutoIncrement" "obj"
 SET
-	"ConcurrencyAutoIncrement"."Stamp" = "ConcurrencyAutoIncrement"."Stamp" + 1,
-	"ConcurrencyAutoIncrement"."Value" = ?
+	"Stamp" = "obj"."Stamp" + 1,
+	"Value" = ?
 WHERE
-	"ConcurrencyAutoIncrement"."Id" = ? AND "ConcurrencyAutoIncrement"."Stamp" = ?
+	"obj"."Id" = ? AND "obj"."Stamp" = ?
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc

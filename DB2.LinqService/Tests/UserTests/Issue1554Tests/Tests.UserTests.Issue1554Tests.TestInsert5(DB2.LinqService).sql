@@ -40,9 +40,9 @@ INSERT INTO "Issue1554Table"
 )
 VALUES
 (
-	@Id,
-	@ClaimedKeyType,
-	@ClaimedKeyTypeN
+	CAST(@Id AS Int),
+	CAST(@ClaimedKeyType AS NVarChar(2)),
+	CAST(@ClaimedKeyTypeN AS NVarChar(2))
 )
 
 BeforeExecute
@@ -54,7 +54,7 @@ SELECT
 	"t1"."ClaimedKeyTypeN"
 FROM
 	"Issue1554Table" "t1"
-FETCH FIRST 2 ROWS ONLY
+FETCH NEXT 2 ROWS ONLY
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW

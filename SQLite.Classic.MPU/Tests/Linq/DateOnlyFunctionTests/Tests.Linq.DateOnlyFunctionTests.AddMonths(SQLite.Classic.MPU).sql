@@ -42,7 +42,7 @@ BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
 SELECT
-	strftime('%Y-%m-%d', [t].[TransactionDate],-2 || ' Month')
+	strftime('%Y-%m-%d %H:%M:%f', [t].[TransactionDate], '-2 Month')
 FROM
 	[Transactions] [t]
 

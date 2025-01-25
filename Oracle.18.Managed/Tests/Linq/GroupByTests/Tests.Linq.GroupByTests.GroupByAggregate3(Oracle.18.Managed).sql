@@ -2,56 +2,27 @@
 -- Oracle.18.Managed Oracle.Managed Oracle12
 
 SELECT
-	t1."Key_1"
+	g_2."c1"
 FROM
 	(
 		SELECT
 			CASE
 				WHEN (
 					SELECT
-						Round(AVG(c_1."ParentID"), 27)
+						AVG(a_Children."ParentID")
 					FROM
-						"Child" c_1
+						"Child" a_Children
 					WHERE
-						selectParam."ParentID" = c_1."ParentID"
+						g_1."ParentID" = a_Children."ParentID"
 				) > 3D
 					THEN 1
 				ELSE 0
-			END as "Key_1"
+			END as "c1"
 		FROM
-			"Parent" selectParam
-	) t1
+			"Parent" g_1
+	) g_2
 GROUP BY
-	t1."Key_1"
-
-BeforeExecute
--- Oracle.18.Managed Oracle.Managed Oracle12
-DECLARE @p Int16
-SET     @p = 0
-
-SELECT
-	underscore."ParentID",
-	underscore."Value1"
-FROM
-	(
-		SELECT
-			CASE
-				WHEN (
-					SELECT
-						Round(AVG(c_1."ParentID"), 27)
-					FROM
-						"Child" c_1
-					WHERE
-						selectParam."ParentID" = c_1."ParentID"
-				) > 3D
-					THEN 1
-				ELSE 0
-			END as "Key_1",
-			selectParam."ParentID",
-			selectParam."Value1"
-		FROM
-			"Parent" selectParam
-	) underscore
-WHERE
-	underscore."Key_1" = :p
+	g_2."c1"
+ORDER BY
+	g_2."c1"
 

@@ -13,15 +13,13 @@ CREATE TABLE IF NOT EXISTS testparams
 
 BeforeExecute
 -- Informix.DB2 Informix
-DECLARE @p Integer(4) -- Int32
-SET     @p = 2
 
 UPDATE
-	testparams
+	testparams t
 SET
-	testparams."1p" = @p
+	"1p" = 2
 WHERE
-	testparams."1p" = 1
+	t."1p" = 1
 
 BeforeExecute
 -- Informix.DB2 Informix

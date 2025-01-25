@@ -1,5 +1,7 @@
 ﻿BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
+DECLARE @p NVarChar(1) -- String
+SET     @p = 'e'
 
 SELECT
 	"p"."FirstName",
@@ -10,6 +12,6 @@ SELECT
 FROM
 	"Person" "p"
 WHERE
-	Locate(Substring("p"."LastName",3 + 1),'e') + 3 = 5 AND
+	Locate(Substring("p"."LastName",3 + 1),?) + 3 - 1 = 4 AND
 	"p"."PersonID" = 2
 

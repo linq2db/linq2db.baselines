@@ -2,7 +2,7 @@
 -- Access.Odbc AccessODBC
 
 SELECT
-	Count(*) > 0
+	IIF(COUNT(*) > 0, True, False)
 FROM
-	[Person] [_]
+	[Person] [t1]
 

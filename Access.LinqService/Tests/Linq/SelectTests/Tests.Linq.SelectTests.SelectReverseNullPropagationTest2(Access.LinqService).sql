@@ -2,12 +2,10 @@
 -- Access AccessOleDb
 
 SELECT
-	[gr].[ParentID],
-	[gr].[ChildID],
-	[a_Parent].[ParentID],
+	[c_1].[ParentID],
 	[a_Parent].[Value1]
 FROM
-	([Parent] [p]
-		LEFT JOIN [Child] [gr] ON ([p].[Value1] = [gr].[ParentID]))
-		LEFT JOIN [Parent] [a_Parent] ON ([gr].[ParentID] = [a_Parent].[ParentID])
+	([Parent] [t1]
+		LEFT JOIN [Child] [c_1] ON ([t1].[Value1] = [c_1].[ParentID]))
+		LEFT JOIN [Parent] [a_Parent] ON ([c_1].[ParentID] = [a_Parent].[ParentID])
 

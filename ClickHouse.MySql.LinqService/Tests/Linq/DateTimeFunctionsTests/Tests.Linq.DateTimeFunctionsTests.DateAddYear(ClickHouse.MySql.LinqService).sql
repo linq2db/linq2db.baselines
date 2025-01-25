@@ -2,7 +2,7 @@
 -- ClickHouse.MySql ClickHouse
 
 SELECT
-	addYears(t.DateTimeValue, toInt32(11))
+	toDate(addYears(t.DateTimeValue, 11))
 FROM
 	LinqDataTypes t
 

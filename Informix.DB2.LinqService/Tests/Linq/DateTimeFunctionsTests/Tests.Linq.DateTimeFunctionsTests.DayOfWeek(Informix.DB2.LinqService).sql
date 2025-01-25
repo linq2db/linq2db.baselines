@@ -2,7 +2,7 @@
 -- Informix.DB2 Informix
 
 SELECT
-	weekDay(t.DateTimeValue)
+	WeekDay(t.DateTimeValue)
 FROM
 	LinqDataTypes t
 

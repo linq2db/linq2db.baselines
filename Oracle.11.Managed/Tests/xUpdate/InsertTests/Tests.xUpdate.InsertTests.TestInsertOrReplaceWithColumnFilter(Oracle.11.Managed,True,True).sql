@@ -51,9 +51,9 @@ USING (SELECT :ID AS ID FROM SYS.DUAL) s ON
 WHEN MATCHED THEN
 	UPDATE 
 	SET
-		t1."FirstName" = :FirstName,
-		t1."LastName" = :LastName,
-		t1."MiddleName" = :MiddleName
+		"FirstName" = :FirstName,
+		"LastName" = :LastName,
+		"MiddleName" = :MiddleName
 WHEN NOT MATCHED THEN
 	INSERT
 	(
@@ -74,8 +74,6 @@ BeforeExecute
 -- Oracle.11.Managed Oracle11
 DECLARE @FirstName Varchar2(27) -- String
 SET     @FirstName = 'InsertOrReplaceColumnFilter'
-DECLARE @take Int32
-SET     @take = 1
 
 SELECT
 	x.ID,
@@ -85,7 +83,7 @@ SELECT
 FROM
 	"TestInsertOrReplaceTable" x
 WHERE
-	x."FirstName" = :FirstName AND ROWNUM <= :take
+	x."FirstName" = :FirstName AND ROWNUM <= 1
 
 BeforeExecute
 -- Oracle.11.Managed Oracle11
@@ -106,9 +104,9 @@ USING (SELECT :ID AS ID FROM SYS.DUAL) s ON
 WHEN MATCHED THEN
 	UPDATE 
 	SET
-		t1."FirstName" = :FirstName,
-		t1."LastName" = :LastName,
-		t1."MiddleName" = :MiddleName
+		"FirstName" = :FirstName,
+		"LastName" = :LastName,
+		"MiddleName" = :MiddleName
 WHEN NOT MATCHED THEN
 	INSERT
 	(
@@ -129,8 +127,6 @@ BeforeExecute
 -- Oracle.11.Managed Oracle11
 DECLARE @FirstName Varchar2(27) -- String
 SET     @FirstName = 'InsertOrReplaceColumnFilter'
-DECLARE @take Int32
-SET     @take = 1
 
 SELECT
 	x.ID,
@@ -140,7 +136,7 @@ SELECT
 FROM
 	"TestInsertOrReplaceTable" x
 WHERE
-	x."FirstName" = :FirstName AND ROWNUM <= :take
+	x."FirstName" = :FirstName AND ROWNUM <= 1
 
 BeforeExecute
 -- Oracle.11.Managed Oracle11

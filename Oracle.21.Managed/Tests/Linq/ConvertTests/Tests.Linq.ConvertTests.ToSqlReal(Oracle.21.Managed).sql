@@ -2,7 +2,7 @@
 -- Oracle.21.Managed Oracle.Managed Oracle12
 
 SELECT
-	Cast(t."MoneyValue" as Real)
+	CAST(t."MoneyValue" AS Real)
 FROM
 	"LinqDataTypes" t
 

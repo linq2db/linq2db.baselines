@@ -32,14 +32,14 @@ INSERT INTO "Issue1363"
 )
 VALUES
 (
-	@id,
+	CAST(@id AS char(16) for bit data),
 	(
 		SELECT
-			"_"."required_field"
+			"t1"."required_field"
 		FROM
-			"Issue1363" "_"
+			"Issue1363" "t1"
 		WHERE
-			"_"."required_field" IS NULL
+			1 = 0
 	)
 )
 
@@ -57,14 +57,14 @@ INSERT INTO "Issue1363"
 )
 VALUES
 (
-	@id,
+	CAST(@id AS char(16) for bit data),
 	(
 		SELECT
-			"_"."required_field"
+			"t1"."required_field"
 		FROM
-			"Issue1363" "_"
+			"Issue1363" "t1"
 		WHERE
-			"_"."required_field" = @testId
+			"t1"."required_field" = @testId
 	)
 )
 
@@ -74,13 +74,13 @@ DECLARE @id2 VarBinary(16) -- Binary
 SET     @id2 = BX'0D6048A921DE744F8AC29516B287076E'
 
 SELECT
-	"_"."required_field",
-	"_"."optional_field"
+	"t1"."required_field",
+	"t1"."optional_field"
 FROM
-	"Issue1363" "_"
+	"Issue1363" "t1"
 WHERE
-	"_"."required_field" = @id2
-FETCH FIRST 2 ROWS ONLY
+	"t1"."required_field" = @id2
+FETCH NEXT 2 ROWS ONLY
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW

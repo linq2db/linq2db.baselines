@@ -21,5 +21,5 @@ FROM
 		WHERE
 			RTrim(Char("p_1"."PersonID")) LIKE @pattern ESCAPE '~'
 	) "t1"
-FETCH FIRST 10 ROWS ONLY
+FETCH NEXT 10 ROWS ONLY
 

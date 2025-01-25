@@ -31,9 +31,9 @@ SELECT 2,2,3
 
 BeforeExecute
 -- Sybase.Managed Sybase
-DECLARE @Column Unsupported -- Guid
+DECLARE @Column Integer -- Int32
 SET     @Column = 2
-DECLARE @ColumnNullable Unsupported -- Guid
+DECLARE @ColumnNullable Integer -- Int32
 SET     @ColumnNullable = 3
 
 SELECT

@@ -41,10 +41,8 @@ VALUES
 
 BeforeExecute
 -- SqlServer.2012
-DECLARE @take Int -- Int32
-SET     @take = 2
 
-SELECT TOP (@take)
+SELECT TOP (2)
 	[t1].[Id],
 	[t1].[ClaimedKeyType],
 	[t1].[ClaimedKeyTypeN]

@@ -13,5 +13,5 @@ SELECT
 FROM
 	[LinqDataTypes] [t]
 WHERE
-	Convert(Bit, [t].[MoneyValue] - 4.5) = 0
+	[t].[MoneyValue] = 4.5
 

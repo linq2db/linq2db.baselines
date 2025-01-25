@@ -2,9 +2,9 @@
 -- SapHana.Odbc SapHanaOdbc
 
 DELETE FROM
-	"Parent" "t1"
+	"Parent" "p"
 WHERE
-	"t1"."Value1" = 11
+	"p"."Value1" = 11
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
@@ -26,7 +26,7 @@ BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	"Parent" "p"
 WHERE
@@ -36,7 +36,7 @@ BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 
 DELETE FROM
-	"Parent" "t1"
+	"Parent" "p"
 WHERE
-	"t1"."Value1" = 11
+	"p"."Value1" = 11
 

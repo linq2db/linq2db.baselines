@@ -20,11 +20,11 @@ USING (VALUES
 	(CAST('2020-02-29T17:54:55.1231235' AS DATETIME2),CAST('2020-02-29T17:54:55.1231235+00:40' AS DATETIMEOFFSET))
 ) [Source]
 (
-	[datetime2DataType],
-	[datetimeoffsetDataType]
+	[source_datetime2DataType],
+	[source_datetimeoffsetDataType]
 )
-ON ([Source].[datetime2DataType] = @datetime2DataType AND
-[Source].[datetimeoffsetDataType] = @datetimeoffsetDataType)
+ON ([Source].[source_datetime2DataType] = @datetime2DataType AND
+[Source].[source_datetimeoffsetDataType] = @datetimeoffsetDataType)
 
 WHEN NOT MATCHED THEN
 INSERT
@@ -34,8 +34,8 @@ INSERT
 )
 VALUES
 (
-	[Source].[datetimeoffsetDataType],
-	[Source].[datetime2DataType]
+	[Source].[source_datetimeoffsetDataType],
+	[Source].[source_datetime2DataType]
 )
 ;
 

@@ -2,5 +2,6 @@
 -- ClickHouse.Client ClickHouse
 
 SELECT
-	NULL
+	NULL,
+	0
 

@@ -10,9 +10,9 @@ SELECT
 FROM
 	[Person] [p]
 		INNER JOIN (
-			SELECT 3 AS [PersonID]
+			SELECT 3 AS [ID]
 			UNION ALL
-			SELECT 4) [n] ON [p].[PersonID] = [n].[PersonID]
+			SELECT 4) [n] ON [p].[PersonID] = [n].[ID]
 
 BeforeExecute
 -- Sybase.Managed Sybase
@@ -26,7 +26,7 @@ SELECT
 FROM
 	[Person] [p]
 		INNER JOIN (
-			SELECT 5 AS [PersonID]
+			SELECT 5 AS [ID]
 			UNION ALL
-			SELECT 6) [n] ON [p].[PersonID] = [n].[PersonID]
+			SELECT 6) [n] ON [p].[PersonID] = [n].[ID]
 

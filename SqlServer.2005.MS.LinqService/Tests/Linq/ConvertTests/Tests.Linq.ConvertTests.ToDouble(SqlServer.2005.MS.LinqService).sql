@@ -2,14 +2,14 @@
 -- SqlServer.2005.MS SqlServer.2005
 
 SELECT
-	[p].[c1]
+	[p_1].[c1]
 FROM
 	(
 		SELECT
-			Convert(Int, Convert(Float, [t].[MoneyValue])) as [c1]
+			CAST(Floor(CAST([p].[MoneyValue] AS Float)) AS Int) as [c1]
 		FROM
-			[LinqDataTypes] [t]
-	) [p]
+			[LinqDataTypes] [p]
+	) [p_1]
 WHERE
-	[p].[c1] > 0
+	[p_1].[c1] > 0
 

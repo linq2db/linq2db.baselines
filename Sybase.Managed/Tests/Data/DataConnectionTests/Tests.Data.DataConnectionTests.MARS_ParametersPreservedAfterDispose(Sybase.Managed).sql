@@ -4,13 +4,13 @@ DECLARE @param UniVarChar(4) -- String
 SET     @param = 'test'
 
 SELECT
-	[_].[FirstName],
-	[_].[PersonID],
-	[_].[LastName],
-	[_].[MiddleName],
-	[_].[Gender]
+	[t1].[FirstName],
+	[t1].[PersonID],
+	[t1].[LastName],
+	[t1].[MiddleName],
+	[t1].[Gender]
 FROM
-	[Person] [_]
+	[Person] [t1]
 WHERE
-	[_].[LastName] = @param
+	[t1].[LastName] = @param
 

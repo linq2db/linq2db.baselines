@@ -2,32 +2,38 @@
 -- SqlCe
 
 SELECT
-	[_].[SmallIntValue],
-	[_].[SmallIntValue],
-	3
-FROM
-	[LinqDataTypes] [_]
-UNION
-SELECT
-	[t1].[month_1],
-	[t1].[year_1],
-	1
+	[t2].[month_1],
+	[t2].[month_1] as [year_1],
+	[t2].[int_1]
 FROM
 	(
 		SELECT
-			DatePart(month, [selectParam].[DateTimeValue]) as [month_1],
-			DatePart(year, [selectParam].[DateTimeValue]) as [year_1]
+			[t1].[SmallIntValue] as [month_1],
+			3 as [int_1]
 		FROM
-			[LinqDataTypes] [selectParam]
-	) [t1]
-GROUP BY
-	[t1].[month_1],
-	[t1].[year_1]
+			[LinqDataTypes] [t1]
+	) [t2]
 UNION
 SELECT
-	DatePart(year, [_1].[DateTimeValue]),
-	DatePart(year, [_1].[DateTimeValue]),
-	2
+	[t4].[month_1],
+	[t4].[year_1],
+	1 as [int_1]
 FROM
-	[LinqDataTypes] [_1]
+	(
+		SELECT
+			DatePart(month, [t3].[DateTimeValue]) as [month_1],
+			DatePart(year, [t3].[DateTimeValue]) as [year_1]
+		FROM
+			[LinqDataTypes] [t3]
+	) [t4]
+GROUP BY
+	[t4].[month_1],
+	[t4].[year_1]
+UNION
+SELECT
+	DatePart(year, [t5].[DateTimeValue]) as [month_1],
+	DatePart(year, [t5].[DateTimeValue]) as [year_1],
+	2 as [int_1]
+FROM
+	[LinqDataTypes] [t5]
 

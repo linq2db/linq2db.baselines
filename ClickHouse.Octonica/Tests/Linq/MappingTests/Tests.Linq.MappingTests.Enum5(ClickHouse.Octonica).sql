@@ -2,10 +2,10 @@
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
-	p.Value1,
-	p.ParentID
+	p.ParentID,
+	p.Value1
 FROM
 	Parent p
 WHERE
-	p.Value1 = toInt32(3)
+	p.Value1 = 3
 

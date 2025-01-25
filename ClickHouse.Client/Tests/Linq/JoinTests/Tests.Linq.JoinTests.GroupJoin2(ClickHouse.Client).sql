@@ -2,21 +2,19 @@
 -- ClickHouse.Client ClickHouse
 
 SELECT
-	key_data_result.ParentID,
-	key_data_result.Value1,
-	_gjd_c.ParentID,
-	_gjd_c.ChildID
+	m_1.ParentID,
+	d.ParentID,
+	d.ChildID
 FROM
 	(
 		SELECT DISTINCT
-			p.ParentID as ParentID,
-			p.Value1 as Value1
+			p.ParentID as ParentID
 		FROM
 			Parent p
 		WHERE
-			p.ParentID = toInt32(1)
-	) key_data_result
-		INNER JOIN Child _gjd_c ON _gjd_c.ParentID = key_data_result.ParentID
+			p.ParentID = 1
+	) m_1
+		INNER JOIN Child d ON m_1.ParentID = d.ParentID
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
@@ -27,5 +25,5 @@ SELECT
 FROM
 	Parent p
 WHERE
-	p.ParentID = toInt32(1)
+	p.ParentID = 1
 

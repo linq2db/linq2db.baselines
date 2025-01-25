@@ -112,52 +112,50 @@ BeforeExecute
 UPDATE
 	"billing_TempReading"
 SET
-	("billing_TempReading"."DevReadingTypeId", "billing_TempReading"."Responsibility") = (
+	("DevReadingTypeId", "Responsibility") = (
 		SELECT
-			"drt"."Id",
-			"drt"."Responsibility"
-		FROM
-			"billing_TempReading" "tr"
-				INNER JOIN "billing_DevReadingType" "drt" ON "drt"."Name" = "tr"."ReadingTypeName" AND "drt"."DevTypeId" = "tr"."Devtypeid"
-		WHERE
-			"billing_TempReading"."id" = "tr"."id"
-	)
-WHERE
-	EXISTS(
-		SELECT
-			*
+			"drt_1"."Id",
+			"drt_1"."Responsibility"
 		FROM
 			"billing_TempReading" "tr_1"
 				INNER JOIN "billing_DevReadingType" "drt_1" ON "drt_1"."Name" = "tr_1"."ReadingTypeName" AND "drt_1"."DevTypeId" = "tr_1"."Devtypeid"
 		WHERE
 			"billing_TempReading"."id" = "tr_1"."id"
 	)
+WHERE
+	EXISTS(
+		SELECT
+			*
+		FROM
+			"billing_TempReading" "tr"
+				INNER JOIN "billing_DevReadingType" "drt" ON "drt"."Name" = "tr"."ReadingTypeName" AND "drt"."DevTypeId" = "tr"."Devtypeid"
+		WHERE
+			"billing_TempReading"."id" = "tr"."id"
+	)
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 UPDATE
-	"billing_TempReading"
+	"billing_TempReading" "t1"
 SET
-	"billing_TempReading"."DevReadingTypeId" = (
+	"DevReadingTypeId" = (
 		SELECT
 			"w"."Id"
 		FROM
 			"billing_DevReadingType" "w"
 		WHERE
-			"w"."Name" = "billing_TempReading"."ReadingTypeName" AND
-			"w"."DevTypeId" = "billing_TempReading"."Devtypeid"
-		FETCH FIRST 1 ROWS ONLY
+			"w"."Name" = "t1"."ReadingTypeName" AND "w"."DevTypeId" = "t1"."Devtypeid"
+		FETCH NEXT 1 ROWS ONLY
 	),
-	"billing_TempReading"."Responsibility" = (
+	"Responsibility" = (
 		SELECT
 			"w_1"."Responsibility"
 		FROM
 			"billing_DevReadingType" "w_1"
 		WHERE
-			"w_1"."Name" = "billing_TempReading"."ReadingTypeName" AND
-			"w_1"."DevTypeId" = "billing_TempReading"."Devtypeid"
-		FETCH FIRST 1 ROWS ONLY
+			"w_1"."Name" = "t1"."ReadingTypeName" AND "w_1"."DevTypeId" = "t1"."Devtypeid"
+		FETCH NEXT 1 ROWS ONLY
 	)
 
 BeforeExecute

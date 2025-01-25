@@ -81,46 +81,42 @@ DECLARE @id  -- Int32
 SET     @id = 0
 
 SELECT
-	[t2].[allE],
-	[t2].[allE_1],
-	[t2].[tbl3],
-	[t2].[tbl3_1],
-	[t2].[btbl],
-	[t2].[col]
+	[ctb_1].[not_null],
+	[ctb_1].[Id],
+	[ctb_1].[maxCol],
+	[ctb_1].[Id_1],
+	[ctb_1].[Id_2]
 FROM
-	[table1] [t1_1]
-		LEFT JOIN [table2] [bt1] ON [t1_1].[c_tb1l_Id] = [bt1].[id]
+	[table1] [g_2]
+		LEFT JOIN [table2] [bt1] ON [g_2].[c_tb1l_Id] = [bt1].[id]
 		LEFT JOIN (
 			SELECT
-				[btbl].[id] as [btbl],
-				[allE].[Id] as [allE],
-				[allE].[maxCol] as [allE_1],
-				[tbl3].[id] as [tbl3],
-				[tbl3].[col] as [tbl3_1],
-				[btbl].[col]
+				[ctb].[Id],
+				[ctb].[maxCol],
+				[tbl3].[id] as [Id_1],
+				[btbl].[id] as [Id_2],
+				1 as [not_null]
 			FROM
 				(
 					SELECT
-						Max([t1].[c_tb1l_Id]) as [maxCol],
-						[t1].[c_tb1l_Id] as [Id]
+						MAX([g_1].[c_tb1l_Id]) as [maxCol],
+						[g_1].[c_tb1l_Id] as [Id]
 					FROM
-						[table1] [t1]
+						[table1] [g_1]
 					GROUP BY
-						[t1].[c_tb1l_Id]
-				) [allE]
-					LEFT JOIN [table3] [tbl3] ON [allE].[maxCol] = [tbl3].[id]
+						[g_1].[c_tb1l_Id]
+				) [ctb]
+					LEFT JOIN [table3] [tbl3] ON [ctb].[maxCol] = [tbl3].[id]
 					LEFT JOIN [table3] [btbl] ON ([btbl].[col] = [tbl3].[col] OR [btbl].[col] IS NULL AND [tbl3].[col] IS NULL)
-		) [t2] ON [bt1].[col3] = [t2].[btbl]
+		) [ctb_1] ON ([bt1].[col3] = [ctb_1].[Id_2] OR [bt1].[col3] IS NULL AND [ctb_1].[Id_2] IS NULL)
 		LEFT JOIN [c_table2] [ctb2] ON ([bt1].[textCol] = [ctb2].[col1] OR [bt1].[textCol] IS NULL AND [ctb2].[col1] IS NULL)
 WHERE
-	[t1_1].[commonTableId] = @id
+	[g_2].[commonTableId] = @id
 GROUP BY
-	[t2].[allE],
-	[t2].[allE_1],
-	[t2].[tbl3],
-	[t2].[btbl],
-	[t2].[tbl3_1],
-	[t2].[col]
+	[ctb_1].[Id],
+	[ctb_1].[maxCol],
+	[ctb_1].[Id_1],
+	[ctb_1].[Id_2]
 
 BeforeExecute
 -- SQLite.Classic SQLite

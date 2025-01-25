@@ -21,7 +21,7 @@ INSERT INTO ValueItem
 )
 VALUES
 (
-	toInt32(123)
+	123
 )
 
 BeforeExecute

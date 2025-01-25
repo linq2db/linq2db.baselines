@@ -6,32 +6,26 @@ SET     @id = 2
 SELECT
 	[c_1].[ChildID],
 	[c_1].[ParentID],
-	[t2].[Sum_1],
-	[t1].[Count1]
+	[t1].[SUM_1],
+	[t2].[COUNT_1]
 FROM
 	[Child] [c_1]
-		LEFT JOIN (
+		OUTER APPLY (
 			SELECT
-				Count(*) as [Count1],
-				[g_1].[ChildID]
+				SUM([g_1].[ChildID] * [g_1].[GrandChildID]) as [SUM_1]
 			FROM
 				[GrandChild] [g_1]
 			WHERE
-				[g_1].[GrandChildID] > 0
-			GROUP BY
-				[g_1].[ChildID]
-		) [t1] ON [t1].[ChildID] = [c_1].[ChildID]
-		LEFT JOIN (
+				[g_1].[ChildID] = [c_1].[ChildID] AND [g_1].[GrandChildID] > 0
+		) [t1]
+		OUTER APPLY (
 			SELECT
-				Sum([g_2].[ChildID] * [g_2].[GrandChildID]) as [Sum_1],
-				[g_2].[ChildID]
+				COUNT(*) as [COUNT_1]
 			FROM
 				[GrandChild] [g_2]
 			WHERE
-				[g_2].[GrandChildID] > 0
-			GROUP BY
-				[g_2].[ChildID]
-		) [t2] ON [t2].[ChildID] = [c_1].[ChildID]
+				[g_2].[ChildID] = [c_1].[ChildID] AND [g_2].[GrandChildID] > 0
+		) [t2]
 WHERE
 	[c_1].[ParentID] = @id
 ORDER BY

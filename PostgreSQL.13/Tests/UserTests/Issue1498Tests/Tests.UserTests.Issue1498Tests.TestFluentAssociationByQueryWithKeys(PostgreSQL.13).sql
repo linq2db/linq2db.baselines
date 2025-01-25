@@ -102,33 +102,24 @@ BeforeExecute
 BeginTransaction(RepeatableRead)
 BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
-DECLARE @take Integer -- Int32
-SET     @take = 1
 
 SELECT
-	key_data_result."Id",
-	detail."Id"
+	m_1."Id",
+	d."Id"
 FROM
 	(
-		SELECT DISTINCT
-			t1."Id"
+		SELECT
+			x."Id"
 		FROM
-			(
-				SELECT
-					x."Id"
-				FROM
-					"Topic" x
-				WHERE
-					x."Id" = 6
-				LIMIT :take
-			) t1
-	) key_data_result
-		INNER JOIN "Message" detail ON detail."TopicId" = key_data_result."Id"
+			"Topic" x
+		WHERE
+			x."Id" = 6
+		LIMIT 1
+	) m_1
+		INNER JOIN "Message" d ON d."TopicId" = m_1."Id"
 
 BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
-DECLARE @take Integer -- Int32
-SET     @take = 1
 
 SELECT
 	x."Id",
@@ -138,7 +129,7 @@ FROM
 	"Topic" x
 WHERE
 	x."Id" = 6
-LIMIT :take
+LIMIT 1
 
 BeforeExecute
 DisposeTransaction

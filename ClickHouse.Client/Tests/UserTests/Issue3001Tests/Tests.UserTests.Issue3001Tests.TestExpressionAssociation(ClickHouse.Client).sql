@@ -25,7 +25,7 @@ INSERT INTO House3001
 	Id
 )
 VALUES
-(toInt32(2),toInt32(1))
+(2,1)
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
@@ -54,7 +54,7 @@ INSERT INTO Person3001
 	Id
 )
 VALUES
-(toInt32(1),toInt32(1))
+(1,1)
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
@@ -85,7 +85,7 @@ INSERT INTO Pet3001
 	PersonId
 )
 VALUES
-(false,toInt32(1),toInt32(1))
+(false,1,1)
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
@@ -93,15 +93,14 @@ BeforeExecute
 SELECT
 	x.Id,
 	CASE
-		WHEN a_House.Levels > toInt32(1)
-			THEN true
+		WHEN a_House.Levels > 1 THEN true
 		ELSE false
 	END
 FROM
 	Pet3001 x
 		INNER JOIN Person3001 a_Person ON x.PersonId = a_Person.Id
 		LEFT JOIN House3001 a_House ON a_Person.HouseId = a_House.Id
-LIMIT toInt32(1)
+LIMIT 1
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse

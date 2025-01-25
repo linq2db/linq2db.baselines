@@ -1,7 +1,5 @@
 ﻿BeforeExecute
 -- Oracle.11.Managed Oracle11
-DECLARE @take Int32
-SET     @take = 2
 
 SELECT
 	t1."ParentID",
@@ -9,5 +7,5 @@ SELECT
 FROM
 	"Parent" t1
 WHERE
-	ROWNUM <= :take
+	ROWNUM <= 2
 

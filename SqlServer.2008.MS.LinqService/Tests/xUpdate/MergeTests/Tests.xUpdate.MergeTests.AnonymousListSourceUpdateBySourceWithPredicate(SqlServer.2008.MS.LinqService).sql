@@ -241,18 +241,18 @@ USING (VALUES
 	(3), (4), (5), (6)
 ) [Source]
 (
-	[Key_1]
+	[source_Key]
 )
-ON ([Target].[Id] = [Source].[Key_1])
+ON ([Target].[Id] = [Source].[source_Key])
 
-WHEN NOT MATCHED By Source AND [Target].[Field1] = 2 THEN UPDATE
+WHEN NOT MATCHED BY SOURCE AND [Target].[Field1] = 2 THEN UPDATE
 SET
-	[Target].[Id] = [Target].[Id],
-	[Target].[Field1] = [Target].[Field5],
-	[Target].[Field2] = [Target].[Field4],
-	[Target].[Field3] = [Target].[Field3],
-	[Target].[Field4] = [Target].[Field2],
-	[Target].[Field5] = [Target].[Field1]
+	[Id] = [Target].[Id],
+	[Field1] = [Target].[Field5],
+	[Field2] = [Target].[Field4],
+	[Field3] = [Target].[Field3],
+	[Field4] = [Target].[Field2],
+	[Field5] = [Target].[Field1]
 ;
 
 BeforeExecute

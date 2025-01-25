@@ -35,8 +35,8 @@ SET     @Age_1 = 2
 UPDATE
 	[PR_1598_Insert_Table_Cache]
 SET
-	[t1].[Name] = @Name,
-	[t1].[Age] = @Age
+	[Name] = @Name,
+	[Age] = @Age
 FROM
 	[PR_1598_Insert_Table_Cache] [t1]
 WHERE
@@ -86,8 +86,8 @@ SET     @Age_1 = 2
 UPDATE
 	[PR_1598_Insert_Table_Cache]
 SET
-	[t1].[Name] = @Name,
-	[t1].[Age] = @Age
+	[Name] = @Name,
+	[Age] = @Age
 FROM
 	[PR_1598_Insert_Table_Cache] [t1]
 WHERE

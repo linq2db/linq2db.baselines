@@ -2,9 +2,9 @@
 -- Access AccessOleDb
 
 DELETE FROM
-	[Person] [_]
+	[Person] [t1]
 WHERE
-	[_].[FirstName] LIKE 'Insert16%'
+	[t1].[FirstName] LIKE 'Insert16%'
 
 BeforeExecute
 -- Access AccessOleDb
@@ -30,17 +30,17 @@ BeforeExecute
 -- Access AccessOleDb
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
-	[Person] [_]
+	[Person] [t1]
 WHERE
-	[_].[FirstName] LIKE 'Insert16%'
+	[t1].[FirstName] LIKE 'Insert16%'
 
 BeforeExecute
 -- Access AccessOleDb
 
 DELETE FROM
-	[Person] [_]
+	[Person] [t1]
 WHERE
-	[_].[FirstName] LIKE 'Insert16%'
+	[t1].[FirstName] LIKE 'Insert16%'
 

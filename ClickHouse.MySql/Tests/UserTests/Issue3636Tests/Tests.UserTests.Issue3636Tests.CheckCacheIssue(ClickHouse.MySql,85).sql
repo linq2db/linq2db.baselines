@@ -24,9 +24,9 @@ INSERT INTO T1
 	id3
 )
 VALUES
-(toInt32(1),toInt32(2),toInt32(0)),
-(toInt32(2),toInt32(2),toInt32(0)),
-(toInt32(2),toInt32(85),toInt32(0))
+(1,2,0),
+(2,2,0),
+(2,85,0)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
@@ -52,55 +52,55 @@ INSERT INTO T2
 	id2
 )
 VALUES
-(toInt32(1),toInt32(2)),
-(toInt32(2),toInt32(2)),
-(toInt32(2),toInt32(85))
+(1,2),
+(2,2),
+(2,85)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
-	x_1.id
+	m_1.ID,
+	d.id,
+	d.id2,
+	d.id3,
+	order_2.id,
+	order_2.id2
 FROM
-	T1 x_1
-		LEFT JOIN (
-			SELECT
-				x.id as order_1
-			FROM
-				T2 x
-			WHERE
-				x.id2 = toInt32(85)
-		) t3 ON x_1.id = t3.order_1
+	(
+		SELECT
+			x.id as ID
+		FROM
+			T1 x
+				LEFT JOIN T2 order_1 ON x.id = order_1.id AND order_1.id2 = 85
+		WHERE
+			x.id2 = 85
+		GROUP BY
+			x.id
+		ORDER BY
+			x.id
+		LIMIT 1
+	) m_1
+		INNER JOIN T1 d ON m_1.ID = d.id
+		LEFT JOIN T2 order_2 ON d.id = order_2.id AND order_2.id2 = 85
 WHERE
-	x_1.id2 = toInt32(85)
+	d.id2 = 85
+
+BeforeExecute
+-- ClickHouse.MySql ClickHouse
+
+SELECT
+	x.id
+FROM
+	T1 x
+		LEFT JOIN T2 order_1 ON x.id = order_1.id AND order_1.id2 = 85
+WHERE
+	x.id2 = 85
 GROUP BY
-	x_1.id
+	x.id
 ORDER BY
-	x_1.id
-LIMIT toInt32(1)
-
-BeforeExecute
--- ClickHouse.MySql ClickHouse
-
-SELECT
-	x_1.id,
-	x_1.id2,
-	x_1.id3,
-	t3.order_1,
-	t3.id2
-FROM
-	T1 x_1
-		LEFT JOIN (
-			SELECT
-				x.id as order_1,
-				x.id2 as id2
-			FROM
-				T2 x
-			WHERE
-				x.id2 = toInt32(85)
-		) t3 ON x_1.id = t3.order_1
-WHERE
-	x_1.id = toInt32(2) AND x_1.id2 = toInt32(85)
+	x.id
+LIMIT 1
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse

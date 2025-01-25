@@ -22,7 +22,7 @@ SELECT
 	t1.Date
 FROM
 	DateOnlyTable t1
-LIMIT toInt32(2)
+LIMIT 2
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse

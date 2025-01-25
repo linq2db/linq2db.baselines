@@ -2,9 +2,9 @@
 -- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
 
 DELETE FROM
-	"GrandChild" t1
+	"GrandChild" gc
 WHERE
-	t1."GrandChildID" IN (1001, 1002)
+	gc."GrandChildID" IN (1001, 1002)
 
 BeforeExecute
 -- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
@@ -42,7 +42,7 @@ BeforeExecute
 -- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	"GrandChild" gc
 WHERE
@@ -72,7 +72,7 @@ BeforeExecute
 -- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	"GrandChild" gc
 WHERE

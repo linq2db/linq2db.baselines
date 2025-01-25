@@ -2,9 +2,9 @@
 -- DB2 DB2.LUW DB2LUW
 
 DELETE FROM
-	"Person" "_"
+	"Person" "t1"
 WHERE
-	"_"."FirstName" LIKE 'Insert15%' ESCAPE '~'
+	"t1"."FirstName" LIKE 'Insert15%' ESCAPE '~'
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
@@ -36,17 +36,17 @@ BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
-	"Person" "_"
+	"Person" "t1"
 WHERE
-	"_"."FirstName" LIKE 'Insert15%' ESCAPE '~'
+	"t1"."FirstName" LIKE 'Insert15%' ESCAPE '~'
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 DELETE FROM
-	"Person" "_"
+	"Person" "t1"
 WHERE
-	"_"."FirstName" LIKE 'Insert15%' ESCAPE '~'
+	"t1"."FirstName" LIKE 'Insert15%' ESCAPE '~'
 

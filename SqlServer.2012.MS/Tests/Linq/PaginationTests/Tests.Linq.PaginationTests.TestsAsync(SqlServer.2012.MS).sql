@@ -370,7 +370,7 @@ SET     @take = 1
 DECLARE @Id Int -- Int32
 SET     @Id = 2
 
-WITH [pagination_cte] ([Data_Id], [RowNumber], [Value])
+WITH [pagination_cte] ([Data_Id], [RowNumber], [Data_Value])
 AS
 (
 	SELECT
@@ -383,21 +383,22 @@ AS
 		[x].[Id] % 2 = 0
 )
 SELECT
-	[c_1].[Data_Id],
-	[c_1].[Value],
-	[cp].[c1]
+	[t1].[Data_Id],
+	[t1].[Data_Value],
+	[page].[c1],
+	-1
 FROM
 	(
 		SELECT TOP (@take)
-			Convert(Int, [h].[RowNumber] - 1) / 20 + 1 as [c1]
+			CAST([h].[RowNumber] - 1 AS Int) / 20 + 1 as [c1]
 		FROM
 			[pagination_cte] [h]
 		WHERE
 			[h].[Data_Id] = @Id
-	) [cp]
-		INNER JOIN [pagination_cte] [c_1] ON [c_1].[RowNumber] BETWEEN Convert(BigInt, ([cp].[c1] - 1) * 20 + 1) AND Convert(BigInt, [cp].[c1] * 20)
+	) [page]
+		INNER JOIN [pagination_cte] [t1] ON [t1].[RowNumber] BETWEEN CAST(([page].[c1] - 1) * 20 + 1 AS BigInt) AND CAST([page].[c1] * 20 AS BigInt)
 ORDER BY
-	[c_1].[RowNumber]
+	[t1].[RowNumber]
 
 BeforeExecute
 -- SqlServer.2012.MS SqlServer.2012 (asynchronously)
@@ -410,7 +411,7 @@ WITH [pagination_cte]
 (
 	[Data_Id],
 	[RowNumber],
-	[Value],
+	[Data_Value],
 	[TotalCount]
 )
 AS
@@ -426,32 +427,30 @@ AS
 		[x].[Id] % 2 = 0
 )
 SELECT
-	[c_1].[Data_Id],
-	[c_1].[Value],
-	[cp].[c1],
-	[c_1].[TotalCount]
+	[t1].[Data_Id],
+	[t1].[Data_Value],
+	[page].[c1],
+	[t1].[TotalCount]
 FROM
 	(
 		SELECT TOP (@take)
-			Convert(Int, [h].[RowNumber] - 1) / 20 + 1 as [c1]
+			CAST([h].[RowNumber] - 1 AS Int) / 20 + 1 as [c1]
 		FROM
 			[pagination_cte] [h]
 		WHERE
 			[h].[Data_Id] = @Id
-	) [cp]
-		INNER JOIN [pagination_cte] [c_1] ON [c_1].[RowNumber] BETWEEN Convert(BigInt, ([cp].[c1] - 1) * 20 + 1) AND Convert(BigInt, [cp].[c1] * 20)
+	) [page]
+		INNER JOIN [pagination_cte] [t1] ON [t1].[RowNumber] BETWEEN CAST(([page].[c1] - 1) * 20 + 1 AS BigInt) AND CAST([page].[c1] * 20 AS BigInt)
 ORDER BY
-	[c_1].[RowNumber]
+	[t1].[RowNumber]
 
 BeforeExecute
 -- SqlServer.2012.MS SqlServer.2012 (asynchronously)
-DECLARE @take Int -- Int32
-SET     @take = 1
 DECLARE @Id Int -- Int32
 SET     @Id = 2
 
-SELECT TOP (@take)
-	[h].[RowNumber]
+SELECT TOP (1)
+	([t1].[RowNumber] - 1) / 20 + 1
 FROM
 	(
 		SELECT
@@ -461,19 +460,17 @@ FROM
 			[PaginationData] [x]
 		WHERE
 			[x].[Id] % 2 = 0
-	) [h]
+	) [t1]
 WHERE
-	[h].[Id] = @Id
+	[t1].[Id] = @Id
 
 BeforeExecute
 -- SqlServer.2012.MS SqlServer.2012 (asynchronously)
-DECLARE @take Int -- Int32
-SET     @take = 1
 DECLARE @Id Int -- Int32
 SET     @Id = 78
 
-SELECT TOP (@take)
-	[h].[RowNumber]
+SELECT TOP (1)
+	([t1].[RowNumber] - 1) / 20 + 1
 FROM
 	(
 		SELECT
@@ -483,9 +480,9 @@ FROM
 			[PaginationData] [x]
 		WHERE
 			[x].[Id] % 2 = 0
-	) [h]
+	) [t1]
 WHERE
-	[h].[Id] = @Id
+	[t1].[Id] = @Id
 
 BeforeExecute
 -- SqlServer.2012.MS SqlServer.2012

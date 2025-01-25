@@ -22,7 +22,7 @@ DECLARE @ParentID Int32
 SET     @ParentID = 1001
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	"Parent" p
 WHERE
@@ -34,11 +34,11 @@ DECLARE @ParentID Int32
 SET     @ParentID = 1001
 
 UPDATE
-	"Parent"
+	"Parent" p
 SET
-	"Parent"."ParentID" = "Parent"."ParentID" + 1
+	"ParentID" = p."ParentID" + 1
 WHERE
-	"Parent"."ParentID" = :ParentID
+	p."ParentID" = :ParentID
 
 BeforeExecute
 -- Oracle.18.Managed Oracle.Managed Oracle12 (asynchronously)
@@ -46,7 +46,7 @@ DECLARE @ParentID Int32
 SET     @ParentID = 1002
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	"Parent" p
 WHERE

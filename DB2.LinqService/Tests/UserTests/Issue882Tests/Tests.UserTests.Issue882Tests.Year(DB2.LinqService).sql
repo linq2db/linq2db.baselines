@@ -2,7 +2,7 @@
 -- DB2 DB2.LUW DB2LUW
 
 SELECT
-	Mod(To_Number(To_Char("t"."DateTimeValue", 'YYYY')), 7)
+	Mod(Extract(year from "t"."DateTimeValue"), 7)
 FROM
 	"LinqDataTypes" "t"
 

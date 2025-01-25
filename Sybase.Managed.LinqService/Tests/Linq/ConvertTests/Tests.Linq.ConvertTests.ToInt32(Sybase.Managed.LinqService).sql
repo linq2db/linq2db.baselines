@@ -2,9 +2,14 @@
 -- Sybase.Managed Sybase
 
 SELECT
-	Convert(Int, [t].[MoneyValue])
+	[p_1].[c1]
 FROM
-	[LinqDataTypes] [t]
+	(
+		SELECT
+			CAST([p].[MoneyValue] AS Int) as [c1]
+		FROM
+			[LinqDataTypes] [p]
+	) [p_1]
 WHERE
-	Convert(Int, [t].[MoneyValue]) > 0
+	[p_1].[c1] > 0
 

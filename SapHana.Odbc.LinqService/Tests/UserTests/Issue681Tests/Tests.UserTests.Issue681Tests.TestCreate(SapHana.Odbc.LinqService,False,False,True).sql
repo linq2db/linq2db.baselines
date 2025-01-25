@@ -16,14 +16,12 @@ CREATE COLUMN TABLE "Issue681Table"
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @take  -- Int32
-SET     @take = 1
 
 SELECT
 	current_schema
 FROM
-	"LinqDataTypes" "_"
-LIMIT ?
+	"LinqDataTypes" "t1"
+LIMIT 1
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc

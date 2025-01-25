@@ -7,7 +7,7 @@ SELECT
 FROM
 	Parent p
 WHERE
-	p.ParentID = toInt32(1)
+	p.ParentID = 1
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -18,7 +18,7 @@ SELECT
 FROM
 	Parent p
 WHERE
-	p.ParentID = toInt32(1)
+	p.ParentID = 1
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -29,5 +29,5 @@ SELECT
 FROM
 	Parent p
 WHERE
-	p.ParentID = toInt32(1)
+	p.ParentID = 1
 

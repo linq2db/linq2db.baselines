@@ -1,19 +1,17 @@
 ﻿BeforeExecute
 -- SqlCe
-DECLARE @Date DateTime
-SET     @Date = '2009-09-20'
 
 SELECT
-	[_].[ID],
-	[_].[MoneyValue],
-	[_].[DateTimeValue],
-	[_].[BoolValue],
-	[_].[GuidValue],
-	[_].[BinaryValue],
-	[_].[SmallIntValue],
-	[_].[StringValue]
+	[t1].[ID],
+	[t1].[MoneyValue],
+	[t1].[DateTimeValue],
+	[t1].[BoolValue],
+	[t1].[GuidValue],
+	[t1].[BinaryValue],
+	[t1].[SmallIntValue],
+	[t1].[StringValue]
 FROM
-	[LinqDataTypes] [_]
+	[LinqDataTypes] [t1]
 WHERE
-	Cast(Floor(Cast([_].[DateTimeValue] as Float)) as DateTime) = @Date
+	CAST(CONVERT(NVarChar(10), [t1].[DateTimeValue], 101) AS DateTime) = CAST(CONVERT(NVarChar(10), CAST('2009-09-20' AS DateTime), 101) AS DateTime)
 

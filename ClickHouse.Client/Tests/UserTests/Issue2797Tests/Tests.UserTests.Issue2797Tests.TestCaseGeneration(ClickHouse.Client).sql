@@ -18,9 +18,8 @@ BeforeExecute
 
 SELECT
 	CASE
-		WHEN e.Value BETWEEN toInt32(2) AND toInt32(5)
-			THEN toInt32(0)
-		ELSE toInt32(1)
+		WHEN e.Value BETWEEN 2 AND 5 THEN 0
+		ELSE 1
 	END
 FROM
 	SampleClass e

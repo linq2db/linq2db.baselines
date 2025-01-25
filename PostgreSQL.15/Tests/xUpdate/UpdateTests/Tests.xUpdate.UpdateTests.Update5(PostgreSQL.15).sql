@@ -20,7 +20,7 @@ DECLARE @id Integer -- Int32
 SET     @id = 1001
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	"Child" c_1
 WHERE
@@ -49,7 +49,7 @@ DECLARE @ChildID Integer -- Int32
 SET     @ChildID = 1002
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	"Child" c_1
 WHERE

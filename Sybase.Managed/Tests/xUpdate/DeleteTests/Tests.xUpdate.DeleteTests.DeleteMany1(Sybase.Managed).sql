@@ -44,7 +44,7 @@ BeforeExecute
 DELETE FROM [Child]
 FROM
 	[Parent] [p]
-		INNER JOIN [Child] [c_1] ON [p].[ParentID] = [c_1].[ParentID]
+		INNER JOIN [Child] [a_Children] ON [p].[ParentID] = [a_Children].[ParentID]
 WHERE
 	[p].[ParentID] >= 1000
 
@@ -53,16 +53,16 @@ BeforeExecute
 
 DELETE FROM [Child]
 FROM
-	[Child] [t1]
+	[Child] [c_1]
 WHERE
-	[t1].[ParentID] >= 1000
+	[c_1].[ParentID] >= 1000
 
 BeforeExecute
 -- Sybase.Managed Sybase
 
 DELETE FROM [Parent]
 FROM
-	[Parent] [t1]
+	[Parent] [c_1]
 WHERE
-	[t1].[ParentID] >= 1000
+	[c_1].[ParentID] >= 1000
 

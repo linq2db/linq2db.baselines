@@ -22,7 +22,7 @@ BeforeExecute
 -- PostgreSQL.15 PostgreSQL
 
 SELECT
-	Max(t1."Id")
+	MAX(t1."Id")
 FROM
 	"TestMergeIdentity" t1
 
@@ -34,7 +34,7 @@ USING (VALUES
 	(10)
 ) "Source"
 (
-	"Field"
+	"source_Field"
 )
 ON ("Target"."Field" IS NULL)
 
@@ -45,13 +45,13 @@ INSERT
 )
 VALUES
 (
-	"Source"."Field"
+	"Source"."source_Field"
 )
 
 WHEN MATCHED THEN
 UPDATE
 SET
-	"Field" = "Source"."Field"
+	"Field" = "Source"."source_Field"
 
 BeforeExecute
 -- PostgreSQL.15 PostgreSQL

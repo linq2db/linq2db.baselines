@@ -34,11 +34,24 @@ BeforeExecute
 SELECT
 	(
 		SELECT
-			Sum([e].[StartHour])
+			SUM(CASE
+				WHEN [d].[not_null] IS NOT NULL THEN [d].[StartHour]
+				ELSE 0
+			END)
 		FROM
-			[LeaveRequestDateEntry] [e]
-		WHERE
-			[x].[Id] = [e].[LeaveRequestId]
+			(
+				SELECT
+					0 as [c1]
+			) [t1]
+				LEFT JOIN (
+					SELECT
+						1 as [not_null],
+						[a_LeaveRequestDateEntries].[StartHour]
+					FROM
+						[LeaveRequestDateEntry] [a_LeaveRequestDateEntries]
+					WHERE
+						[x].[Id] = [a_LeaveRequestDateEntries].[LeaveRequestId]
+				) [d] ON 1=1
 	)
 FROM
 	[LeaveRequest] [x]

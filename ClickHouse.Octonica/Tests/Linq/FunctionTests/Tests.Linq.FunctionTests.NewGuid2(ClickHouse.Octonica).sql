@@ -2,8 +2,8 @@
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
-	generateUUIDv4()
+	1
 FROM
 	LinqDataTypes p
-LIMIT toInt32(1)
+LIMIT 1
 

@@ -1,18 +1,14 @@
 ﻿BeforeExecute
 -- SqlCe
-DECLARE @take Int -- Int32
-SET     @take = 1
 
 SELECT
-	[t1].[ParentID],
 	[t1].[c1]
 FROM
 	[Parent] [p]
-		OUTER APPLY (
-			SELECT TOP (@take)
-				[c_1].[ParentID] + 1 as [c1],
-				[c_1].[ParentID]
+		LEFT JOIN (
+			SELECT TOP (1)
+				[c_1].[ParentID] + 1 as [c1]
 			FROM
 				[Child] [c_1]
-		) [t1]
+		) [t1] ON 1=1
 

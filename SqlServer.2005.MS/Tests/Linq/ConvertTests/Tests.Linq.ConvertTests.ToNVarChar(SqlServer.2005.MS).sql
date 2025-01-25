@@ -2,7 +2,7 @@
 -- SqlServer.2005.MS SqlServer.2005
 
 SELECT
-	Convert(NVarChar(20), [t].[MoneyValue])
+	CAST([t].[MoneyValue] AS NVarChar(20))
 FROM
 	[LinqDataTypes] [t]
 

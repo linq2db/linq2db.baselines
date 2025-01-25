@@ -2,7 +2,7 @@
 -- Access.Odbc AccessODBC
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	[Child] [ch]
 WHERE

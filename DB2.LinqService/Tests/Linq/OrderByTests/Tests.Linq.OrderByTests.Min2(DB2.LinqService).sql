@@ -2,15 +2,15 @@
 -- DB2 DB2.LUW DB2LUW
 
 SELECT
-	Min("t1"."ParentID")
+	MIN("t2"."ParentID")
 FROM
 	(
 		SELECT
-			"p"."ParentID"
+			"t1"."ParentID"
 		FROM
-			"Parent" "p"
+			"Parent" "t1"
 		ORDER BY
-			"p"."ParentID"
-		FETCH FIRST 3 ROWS ONLY
-	) "t1"
+			"t1"."ParentID"
+		FETCH NEXT 3 ROWS ONLY
+	) "t2"
 

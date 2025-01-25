@@ -56,15 +56,15 @@ SELECT @@IDENTITY
 
 BeforeExecute
 -- Access AccessOleDb
-DECLARE @Value WChar(1) -- StringFixedLength
-SET     @Value = 'O'
+DECLARE @nullableGender WChar(1) -- StringFixedLength
+SET     @nullableGender = 'O'
 
 UPDATE
-	[Person] [_]
+	[Person] [t1]
 SET
-	[_].[Gender] = @Value
+	[t1].[Gender] = @nullableGender
 WHERE
-	[_].[FirstName] LIKE 'UpdateComplex%'
+	[t1].[FirstName] LIKE 'UpdateComplex%'
 
 BeforeExecute
 -- Access AccessOleDb
@@ -72,13 +72,13 @@ DECLARE @id Integer -- Int32
 SET     @id = 5
 
 SELECT TOP 1
-	[_].[PersonID],
-	[_].[Gender],
-	[_].[FirstName],
-	[_].[MiddleName],
-	[_].[LastName]
+	[t1].[PersonID],
+	[t1].[Gender],
+	[t1].[FirstName],
+	[t1].[MiddleName],
+	[t1].[LastName]
 FROM
-	[Person] [_]
+	[Person] [t1]
 WHERE
-	[_].[PersonID] = @id
+	[t1].[PersonID] = @id
 

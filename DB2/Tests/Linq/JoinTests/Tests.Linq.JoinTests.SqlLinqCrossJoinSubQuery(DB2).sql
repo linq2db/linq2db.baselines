@@ -3,7 +3,7 @@
 
 SELECT
 	"p_1"."ParentID",
-	"c_1"."ChildID"
+	"t1"."ChildID"
 FROM
 	(
 		SELECT
@@ -12,13 +12,13 @@ FROM
 			"Parent" "p"
 		WHERE
 			"p"."ParentID" > 0
-		FETCH FIRST 10 ROWS ONLY
+		FETCH NEXT 10 ROWS ONLY
 	) "p_1",
 	(
 		SELECT
-			"t1"."ChildID"
+			"c_1"."ChildID"
 		FROM
-			"Child" "t1"
-		FETCH FIRST 10 ROWS ONLY
-	) "c_1"
+			"Child" "c_1"
+		FETCH NEXT 10 ROWS ONLY
+	) "t1"
 

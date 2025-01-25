@@ -2,14 +2,14 @@
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
-	t.c1
+	t_1.c1
 FROM
 	(
 		SELECT
-			Truncate(toFloat64(negate(p.MoneyValue))) as c1
+			Truncate(toFloat64(negate(t.MoneyValue))) as c1
 		FROM
-			LinqDataTypes p
-	) t
+			LinqDataTypes t
+	) t_1
 WHERE
-	t.c1 <> toFloat64(0.10000000000000001)
+	t_1.c1 <> toFloat64(0.10000000000000001)
 

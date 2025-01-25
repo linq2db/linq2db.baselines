@@ -2,5 +2,5 @@
 -- SqlServer.2012
 
 SELECT
-	CONVERT(varchar(max), 123)
+	CONVERT(varchar(4), 123)
 

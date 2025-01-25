@@ -2,37 +2,41 @@
 -- Sybase.Managed Sybase
 
 SELECT
-	[key_data_result].[ParentID],
-	[_c].[ParentID],
-	[_c].[ChildID]
+	[m_1].[ParentID],
+	[d].[ParentID],
+	[d].[ChildID]
 FROM
 	(
 		SELECT DISTINCT
 			[p].[ParentID]
 		FROM
 			[Parent] [p]
-	) [key_data_result]
-		INNER JOIN [Child] [_c] ON [_c].[ParentID] = [key_data_result].[ParentID] AND [_c].[ChildID] > -100 AND [_c].[ParentID] > 0
+	) [m_1]
+		INNER JOIN [Child] [d] ON [d].[ParentID] = [m_1].[ParentID]
+WHERE
+	[d].[ChildID] > -100 AND [d].[ParentID] > 0
 ORDER BY
-	[_c].[ChildID]
+	[d].[ChildID]
 
 BeforeExecute
 -- Sybase.Managed Sybase
 
 SELECT
-	[key_data_result].[ParentID],
-	[_c].[ParentID],
-	[_c].[ChildID]
+	[m_1].[ParentID],
+	[d].[ParentID],
+	[d].[ChildID]
 FROM
 	(
 		SELECT DISTINCT
 			[p].[ParentID]
 		FROM
 			[Parent] [p]
-	) [key_data_result]
-		INNER JOIN [Child] [_c] ON [_c].[ParentID] = [key_data_result].[ParentID] AND [_c].[ChildID] > -100
+	) [m_1]
+		INNER JOIN [Child] [d] ON [d].[ParentID] = [m_1].[ParentID]
+WHERE
+	[d].[ChildID] > -100
 ORDER BY
-	[_c].[ChildID]
+	[d].[ChildID]
 
 BeforeExecute
 -- Sybase.Managed Sybase
@@ -53,7 +57,7 @@ SELECT
 	END,
 	(
 		SELECT
-			Count(*)
+			COUNT(*)
 		FROM
 			[Child] [c_2]
 		WHERE

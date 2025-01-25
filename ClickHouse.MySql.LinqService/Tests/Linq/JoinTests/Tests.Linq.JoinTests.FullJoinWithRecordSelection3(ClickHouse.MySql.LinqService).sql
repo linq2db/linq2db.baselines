@@ -24,7 +24,7 @@ INSERT INTO Fact
 )
 VALUES
 (
-	toInt32(3)
+	3
 )
 
 BeforeExecute
@@ -36,7 +36,7 @@ INSERT INTO Fact
 )
 VALUES
 (
-	toInt32(4)
+	4
 )
 
 BeforeExecute
@@ -48,7 +48,7 @@ INSERT INTO Fact
 )
 VALUES
 (
-	toInt32(5)
+	5
 )
 
 BeforeExecute
@@ -81,8 +81,8 @@ INSERT INTO Tag
 )
 VALUES
 (
-	toInt32(1),
-	toInt32(3),
+	1,
+	3,
 	'Tag3'
 )
 
@@ -97,8 +97,8 @@ INSERT INTO Tag
 )
 VALUES
 (
-	toInt32(2),
-	toInt32(3),
+	2,
+	3,
 	'Tag3'
 )
 
@@ -113,8 +113,8 @@ INSERT INTO Tag
 )
 VALUES
 (
-	toInt32(3),
-	toInt32(4),
+	3,
+	4,
 	'Tag4'
 )
 
@@ -129,8 +129,8 @@ INSERT INTO Tag
 )
 VALUES
 (
-	toInt32(4),
-	toInt32(6),
+	4,
+	6,
 	'Tag6'
 )
 
@@ -146,7 +146,7 @@ FROM
 	Tag ft
 		FULL JOIN Fact f ON ft.FactId = f.Id
 WHERE
-	(f.Id > toInt32(3) OR ft.FactId > toInt32(3))
+	(f.Id > 3 OR ft.FactId > 3)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse

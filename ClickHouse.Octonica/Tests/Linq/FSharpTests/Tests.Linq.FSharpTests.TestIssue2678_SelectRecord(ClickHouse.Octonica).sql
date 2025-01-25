@@ -26,8 +26,8 @@ INSERT INTO R
 )
 VALUES
 (
-	toInt32(2),
-	toInt32(5)
+	2,
+	5
 )
 
 BeforeExecute
@@ -38,7 +38,7 @@ SELECT
 	t1.DictionaryKey
 FROM
 	R t1
-LIMIT toInt32(2)
+LIMIT 2
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse

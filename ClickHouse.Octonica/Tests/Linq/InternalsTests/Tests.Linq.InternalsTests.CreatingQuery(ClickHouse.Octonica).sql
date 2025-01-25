@@ -22,7 +22,7 @@ SELECT
 FROM
 	SampleClass t
 WHERE
-	t.Id = toInt32(1)
+	t.Id = 1
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse

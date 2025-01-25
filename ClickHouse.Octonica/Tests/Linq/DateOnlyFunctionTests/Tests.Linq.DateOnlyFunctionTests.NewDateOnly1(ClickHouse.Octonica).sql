@@ -2,14 +2,9 @@
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
-	t.c1
+	makeDateTime(toYear(t.DateTimeValue), 10, 1, 0, 0, 0)
 FROM
-	(
-		SELECT
-			toDate32(concat(leftPadUTF8(toString(YEAR(p.DateTimeValue)), toUInt32(toInt32(4)), '0'), '-10-01')) as c1
-		FROM
-			LinqDataTypes p
-	) t
+	LinqDataTypes t
 WHERE
-	MONTH(t.c1) = toInt32(10)
+	toMonth(makeDateTime(toYear(t.DateTimeValue), 10, 1, 0, 0, 0)) = 10
 

@@ -47,14 +47,12 @@ BeforeExecute
 -- SapHana.Odbc SapHanaOdbc (asynchronously)
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	"xxPerson" "t1"
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc (asynchronously)
-DECLARE @take  -- Int32
-SET     @take = 2
 
 SELECT
 	"t1"."FirstName",
@@ -64,7 +62,7 @@ SELECT
 	"t1"."Gender"
 FROM
 	"xxPerson" "t1"
-LIMIT ?
+LIMIT 2
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc (asynchronously)
@@ -80,7 +78,7 @@ BeforeExecute
 -- SapHana.Odbc SapHanaOdbc (asynchronously)
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	"xxPerson" "t1"
 

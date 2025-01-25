@@ -26,14 +26,14 @@ INSERT INTO User
 	building_number
 )
 VALUES
-('Springwood','Freddy','Elm Street',toInt32(13))
+('Springwood','Freddy','Elm Street',13)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
-	t1.city,
 	t1.user_name,
+	t1.city,
 	t1.street,
 	t1.building_number
 FROM

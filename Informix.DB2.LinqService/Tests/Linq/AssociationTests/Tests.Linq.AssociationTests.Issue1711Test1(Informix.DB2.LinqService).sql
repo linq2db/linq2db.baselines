@@ -39,9 +39,9 @@ WHERE
 		SELECT
 			*
 		FROM
-			Relationship1711 t1
+			Relationship1711 a_relationship
 		WHERE
-			t.Id = t1.EntityId
+			t.Id = a_relationship.EntityId
 	)
 
 BeforeExecute

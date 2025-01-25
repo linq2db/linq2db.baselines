@@ -35,29 +35,25 @@ BeforeExecute
 -- SqlServer.2017
 
 UPDATE
-	[_]
+	[Person]
 SET
-	[_].[LastName] = [_].[FirstName]
-FROM
-	[Person] [_]
+	[LastName] = [Person].[FirstName]
 WHERE
-	[_].[FirstName] LIKE N'UpdateComplex%' ESCAPE N'~'
+	[Person].[FirstName] LIKE N'UpdateComplex%' ESCAPE N'~'
 
 BeforeExecute
 -- SqlServer.2017
-DECLARE @take Int -- Int32
-SET     @take = 1
 DECLARE @id Int -- Int32
 SET     @id = 5
 
-SELECT TOP (@take)
-	[_].[PersonID],
-	[_].[Gender],
-	[_].[FirstName],
-	[_].[MiddleName],
-	[_].[LastName]
+SELECT TOP (1)
+	[t1].[PersonID],
+	[t1].[Gender],
+	[t1].[FirstName],
+	[t1].[MiddleName],
+	[t1].[LastName]
 FROM
-	[Person] [_]
+	[Person] [t1]
 WHERE
-	[_].[PersonID] = @id
+	[t1].[PersonID] = @id
 

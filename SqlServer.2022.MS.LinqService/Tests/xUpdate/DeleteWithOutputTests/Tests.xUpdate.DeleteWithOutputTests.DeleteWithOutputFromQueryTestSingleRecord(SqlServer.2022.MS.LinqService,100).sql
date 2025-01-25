@@ -248,12 +248,14 @@ WHERE
 
 BeforeExecute
 -- SqlServer.2022.MS SqlServer.2022
+DECLARE @param Int -- Int32
+SET     @param = 100
 
 DELETE [s]
 OUTPUT
-	[DELETED].[Id],
-	[DELETED].[Value],
-	[DELETED].[ValueStr]
+	DELETED.[Id] + @param,
+	DELETED.[Value] + @param,
+	DELETED.[ValueStr] + CAST(@param AS VarChar(11))
 FROM
 	[TableWithData] [s]
 WHERE

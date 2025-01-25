@@ -90,9 +90,9 @@ SET
 	[t].[Value] = [s].[Value],
 	[t].[ValueStr] = [s].[ValueStr]
 OUTPUT
-	[INSERTED].[Id],
-	[INSERTED].[Value],
-	[INSERTED].[ValueStr]
+	INSERTED.[Id],
+	INSERTED.[Value],
+	INSERTED.[ValueStr]
 INTO [tempdb]..[#DestinationTable_destination]
 (
 	[Id],

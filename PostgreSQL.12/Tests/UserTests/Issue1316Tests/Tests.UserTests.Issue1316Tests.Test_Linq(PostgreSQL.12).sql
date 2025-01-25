@@ -29,8 +29,6 @@ VALUES
 
 BeforeExecute
 -- PostgreSQL.12 PostgreSQL.9.5 PostgreSQL
-DECLARE @take Integer -- Int32
-SET     @take = 2
 
 SELECT
 	t1."ID"
@@ -38,7 +36,7 @@ FROM
 	"Issue1316Tests" t1
 WHERE
 	t1."ID" IN (4, 5, 6)
-LIMIT :take
+LIMIT 2
 
 BeforeExecute
 -- PostgreSQL.12 PostgreSQL.9.5 PostgreSQL

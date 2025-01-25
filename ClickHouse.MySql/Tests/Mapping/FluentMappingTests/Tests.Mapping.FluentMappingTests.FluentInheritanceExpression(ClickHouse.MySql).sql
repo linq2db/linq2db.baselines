@@ -20,8 +20,8 @@ INSERT INTO DescendantEntity
 	Id
 )
 VALUES
-(toInt32(1)),
-(toInt32(2))
+(1),
+(2)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
@@ -31,7 +31,7 @@ SELECT
 FROM
 	DescendantEntity e
 WHERE
-	e.Id = toInt32(1)
+	e.Id = 1
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
@@ -41,7 +41,7 @@ SELECT
 FROM
 	DescendantEntity e
 WHERE
-	e.Id = toInt32(1)
+	e.Id = 1
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse

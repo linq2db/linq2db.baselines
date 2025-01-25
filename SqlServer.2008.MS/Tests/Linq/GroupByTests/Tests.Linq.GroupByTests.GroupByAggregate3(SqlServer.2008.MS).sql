@@ -2,56 +2,27 @@
 -- SqlServer.2008.MS SqlServer.2008
 
 SELECT
-	[t1].[Key_1]
+	[g_2].[c1]
 FROM
 	(
 		SELECT
 			CASE
 				WHEN (
 					SELECT
-						Avg([c_1].[ParentID])
+						AVG([a_Children].[ParentID])
 					FROM
-						[Child] [c_1]
+						[Child] [a_Children]
 					WHERE
-						[selectParam].[ParentID] = [c_1].[ParentID]
+						[g_1].[ParentID] = [a_Children].[ParentID]
 				) > 3
 					THEN 1
 				ELSE 0
-			END as [Key_1]
+			END as [c1]
 		FROM
-			[Parent] [selectParam]
-	) [t1]
+			[Parent] [g_1]
+	) [g_2]
 GROUP BY
-	[t1].[Key_1]
-
-BeforeExecute
--- SqlServer.2008.MS SqlServer.2008
-DECLARE @p Bit -- Boolean
-SET     @p = 0
-
-SELECT
-	[underscore].[ParentID],
-	[underscore].[Value1]
-FROM
-	(
-		SELECT
-			CASE
-				WHEN (
-					SELECT
-						Avg([c_1].[ParentID])
-					FROM
-						[Child] [c_1]
-					WHERE
-						[selectParam].[ParentID] = [c_1].[ParentID]
-				) > 3
-					THEN 1
-				ELSE 0
-			END as [Key_1],
-			[selectParam].[ParentID],
-			[selectParam].[Value1]
-		FROM
-			[Parent] [selectParam]
-	) [underscore]
-WHERE
-	[underscore].[Key_1] = @p
+	[g_2].[c1]
+ORDER BY
+	[g_2].[c1]
 

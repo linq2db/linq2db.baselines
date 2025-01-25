@@ -86,7 +86,7 @@ BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	"Src" s
 
@@ -94,7 +94,7 @@ BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	"Src" s
 WHERE
@@ -104,7 +104,7 @@ BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	"Src" s
 WHERE
@@ -114,7 +114,7 @@ BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	"Src" s
 WHERE

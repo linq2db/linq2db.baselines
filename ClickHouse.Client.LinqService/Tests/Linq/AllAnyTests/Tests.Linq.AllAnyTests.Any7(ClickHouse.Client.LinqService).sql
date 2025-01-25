@@ -8,8 +8,7 @@ SELECT
 				*
 			FROM
 				Child t1
-		)
-			THEN true
+		) THEN true
 		ELSE false
 	END
 

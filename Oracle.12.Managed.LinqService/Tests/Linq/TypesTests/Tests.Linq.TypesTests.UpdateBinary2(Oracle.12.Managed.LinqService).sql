@@ -6,11 +6,11 @@ DECLARE @ID Int32
 SET     @ID = 1
 
 UPDATE
-	"LinqDataTypes"
+	"LinqDataTypes" t
 SET
-	"LinqDataTypes"."BinaryValue" = :BinaryValue
+	"BinaryValue" = :BinaryValue
 WHERE
-	"LinqDataTypes".ID = :ID
+	t.ID = :ID
 
 BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12
@@ -20,11 +20,11 @@ DECLARE @ID Int32
 SET     @ID = 2
 
 UPDATE
-	"LinqDataTypes"
+	"LinqDataTypes" t
 SET
-	"LinqDataTypes"."BinaryValue" = :BinaryValue
+	"BinaryValue" = :BinaryValue
 WHERE
-	"LinqDataTypes".ID = :ID
+	t.ID = :ID
 
 BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12

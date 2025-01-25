@@ -95,16 +95,16 @@ DECLARE @eventId Int -- Int32
 SET     @eventId = 1
 
 SELECT
-	[p].[Id],
-	[detail].[EventSchedulePersonId],
-	[detail].[Id],
+	[m_1].[Id],
+	[d].[EventSchedulePersonId],
+	[d].[Id],
 	[a_Person].[TicketNumberId]
 FROM
-	[EventScheduleItem] [p]
-		INNER JOIN [EventScheduleItemPerson] [detail] ON [p].[Id] = [detail].[EventScheduleItemId]
-		LEFT JOIN [EventSchedulePerson] [a_Person] ON [detail].[EventSchedulePersonId] = [a_Person].[Id]
+	[EventScheduleItem] [m_1]
+		INNER JOIN [EventScheduleItemPerson] [d] ON [m_1].[Id] = [d].[EventScheduleItemId]
+		LEFT JOIN [EventSchedulePerson] [a_Person] ON [d].[EventSchedulePersonId] = [a_Person].[Id]
 WHERE
-	[p].[EventId] = @eventId AND [p].[IsActive] = 1
+	[m_1].[EventId] = @eventId AND [m_1].[IsActive] = 1
 
 BeforeExecute
 DisposeTransaction

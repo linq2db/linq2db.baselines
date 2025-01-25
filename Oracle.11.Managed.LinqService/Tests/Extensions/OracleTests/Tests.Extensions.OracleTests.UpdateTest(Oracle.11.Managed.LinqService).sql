@@ -2,9 +2,9 @@
 -- Oracle.11.Managed Oracle11
 
 UPDATE /*+ ALL_ROWS FIRST_ROWS(10) */
-	"Child"
+	"Child" c_1
 SET
-	"Child"."ChildID" = "Child"."ChildID" * 2
+	"ChildID" = c_1."ChildID" * 2
 WHERE
-	"Child"."ParentID" < -1111
+	c_1."ParentID" < -1111
 

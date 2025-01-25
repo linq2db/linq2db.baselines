@@ -66,27 +66,23 @@ DECLARE @id Int -- Int32
 SET     @id = 1
 
 UPDATE
-	[_]
+	[UpdateSetTest]
 SET
-	[_].[Value6] = @Value6
-FROM
-	[UpdateSetTest] [_]
+	[Value6] = @Value6
 WHERE
-	[_].[Id] = @id
+	[UpdateSetTest].[Id] = @id
 
 BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
-DECLARE @take Int -- Int32
-SET     @take = 2
 DECLARE @id Int -- Int32
 SET     @id = 1
 
-SELECT TOP (@take)
-	[_].[Value6]
+SELECT TOP (2)
+	[t1].[Value6]
 FROM
-	[UpdateSetTest] [_]
+	[UpdateSetTest] [t1]
 WHERE
-	[_].[Id] = @id
+	[t1].[Id] = @id
 
 BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
@@ -96,27 +92,23 @@ DECLARE @id Int -- Int32
 SET     @id = 1
 
 UPDATE
-	[_]
+	[UpdateSetTest]
 SET
-	[_].[Value6] = @Value6
-FROM
-	[UpdateSetTest] [_]
+	[Value6] = @Value6
 WHERE
-	[_].[Id] = @id
+	[UpdateSetTest].[Id] = @id
 
 BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
-DECLARE @take Int -- Int32
-SET     @take = 2
 DECLARE @id Int -- Int32
 SET     @id = 1
 
-SELECT TOP (@take)
-	[_].[Value6]
+SELECT TOP (2)
+	[t1].[Value6]
 FROM
-	[UpdateSetTest] [_]
+	[UpdateSetTest] [t1]
 WHERE
-	[_].[Id] = @id
+	[t1].[Id] = @id
 
 BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019

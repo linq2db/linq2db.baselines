@@ -34,12 +34,12 @@ BeforeExecute
 
 SELECT
 	N'Title',
-	[selectParam].[Title],
-	Max([selectParam].[YearsExperience])
+	[it].[Title],
+	MAX([it].[YearsExperience])
 FROM
-	[odata_person] [selectParam]
+	[odata_person] [it]
 GROUP BY
-	[selectParam].[Title]
+	[it].[Title]
 
 BeforeExecute
 -- SqlServer.Contained.MS SqlServer.2019

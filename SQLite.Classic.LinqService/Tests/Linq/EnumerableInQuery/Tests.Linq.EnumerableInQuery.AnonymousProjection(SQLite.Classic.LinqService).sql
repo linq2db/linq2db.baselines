@@ -2,35 +2,44 @@
 -- SQLite.Classic SQLite
 
 SELECT
-	[_].[ParentID]
+	[t1].[ParentID]
 FROM
-	[Parent] [_]
+	[Parent] [t1]
 
 BeforeExecute
 -- SQLite.Classic SQLite
 
 SELECT
-	[key_data_result].[ParentID],
-	[_c1].[ParentID]
+	[m_1].[ParentID],
+	[d].[ParentID]
 FROM
 	(
 		SELECT DISTINCT
-			[_].[ParentID]
+			[t1].[ParentID]
 		FROM
-			[Parent] [_]
-	) [key_data_result]
+			[Parent] [t1]
+	) [m_1]
 		INNER JOIN (
 			SELECT NULL [ParentID] WHERE 1 = 0
 			UNION ALL
 			VALUES
 				(1), (2), (3), (4), (5), (6), (7)
-			) [_c1] ON [_c1].[ParentID] = [key_data_result].[ParentID]
+			) [d] ON [d].[ParentID] = [m_1].[ParentID]
 
 BeforeExecute
 -- SQLite.Classic SQLite
 
 SELECT
-	[_].[ParentID]
+	[t1].[ParentID]
 FROM
-	[Parent] [_]
+	[Parent] [t1]
+
+BeforeExecute
+-- SQLite.Classic SQLite
+
+SELECT
+	[t1].[ParentID],
+	[t1].[Value1]
+FROM
+	[Parent] [t1]
 

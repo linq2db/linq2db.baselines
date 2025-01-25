@@ -18,13 +18,11 @@ IF (OBJECT_ID(N'[Issue681Table]', N'U') IS NULL)
 
 BeforeExecute
 -- SqlServer.2012.MS SqlServer.2012
-DECLARE @take Int -- Int32
-SET     @take = 1
 
-SELECT TOP (@take)
+SELECT TOP (1)
 	DB_NAME()
 FROM
-	[LinqDataTypes] [_]
+	[LinqDataTypes] [t1]
 
 BeforeExecute
 -- SqlServer.2012.MS SqlServer.2012
@@ -41,7 +39,7 @@ USING (SELECT @ID AS [ID]) [s] ON
 WHEN MATCHED THEN
 	UPDATE 
 	SET
-		[t1].[Value] = @Value
+		[Value] = @Value
 WHEN NOT MATCHED THEN
 	INSERT
 	(
@@ -69,7 +67,7 @@ USING (SELECT @ID AS [ID]) [s] ON
 WHEN MATCHED THEN
 	UPDATE 
 	SET
-		[t1].[Value] = @Value
+		[Value] = @Value
 WHEN NOT MATCHED THEN
 	INSERT
 	(

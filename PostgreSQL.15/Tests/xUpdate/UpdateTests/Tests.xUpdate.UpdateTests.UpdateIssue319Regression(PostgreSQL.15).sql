@@ -20,16 +20,14 @@ BeforeExecute
 -- PostgreSQL.15 PostgreSQL
 DECLARE @id Integer -- Int32
 SET     @id = 100500
-DECLARE @take Integer -- Int32
-SET     @take = 1
 
 SELECT
-	t1."ParentID"
+	p."ParentID"
 FROM
-	"Parent" t1
+	"Parent" p
 WHERE
-	t1."ParentID" = :id
-LIMIT :take
+	p."ParentID" = :id
+LIMIT 1
 
 BeforeExecute
 -- PostgreSQL.15 PostgreSQL
@@ -42,22 +40,13 @@ UPDATE
 	"Parent"
 SET
 	"Value1" = :ParentID
-FROM
-	(
-		SELECT
-			t2."ParentID",
-			(
-				SELECT
-					Count(*)
-				FROM
-					"Parent" t1
-				WHERE
-					t1."ParentID" = :id
-			) as ex,
-			t2."Value1"
-		FROM
-			"Parent" t2
-	) t3
 WHERE
-	t3."ParentID" = :id AND t3.ex > 0 AND "Parent"."ParentID" = t3."ParentID"
+	"Parent"."ParentID" = :id AND (
+		SELECT
+			COUNT(*)
+		FROM
+			"Parent" p
+		WHERE
+			p."ParentID" = :id
+	) > 0
 

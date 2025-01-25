@@ -155,14 +155,14 @@ BeforeExecute
 -- Oracle.11.Managed Oracle11
 
 SELECT
-	lw_Category."CategoryID",
-	detail."ProductID",
-	detail."ProductName",
-	detail."CategoryID",
-	detail."QuantityPerUnit"
+	m_1."CategoryID",
+	d."ProductID",
+	d."ProductName",
+	d."CategoryID",
+	d."QuantityPerUnit"
 FROM
-	"Categories" lw_Category
-		INNER JOIN "Products" detail ON lw_Category."CategoryID" = detail."CategoryID"
+	"Categories" m_1
+		INNER JOIN "Products" d ON m_1."CategoryID" = d."CategoryID"
 
 BeforeExecute
 DisposeTransaction

@@ -56,7 +56,7 @@ DECLARE @r3 Integer(4) -- Int32
 SET     @r3 = 1
 
 SELECT
-	Count(*)
+	COUNT(*)
 FROM
 	Ints i
 WHERE

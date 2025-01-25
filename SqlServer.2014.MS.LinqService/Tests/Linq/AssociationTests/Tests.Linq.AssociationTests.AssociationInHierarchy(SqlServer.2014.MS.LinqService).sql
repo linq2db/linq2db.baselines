@@ -2,9 +2,9 @@
 -- SqlServer.2014.MS SqlServer.2014
 
 SELECT
-	[o].[ParentID],
-	[o].[Value1]
+	[a_Parent].[ParentID],
+	[a_Parent].[Value1]
 FROM
 	[Child] [ch]
-		LEFT JOIN [Parent] [o] ON [ch].[ParentID] = [o].[ParentID] AND [ch].[ChildID] = 1
+		LEFT JOIN [Parent] [a_Parent] ON [ch].[ParentID] = [a_Parent].[ParentID]
 

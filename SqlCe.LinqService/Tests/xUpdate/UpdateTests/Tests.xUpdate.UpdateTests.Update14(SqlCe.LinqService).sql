@@ -34,7 +34,7 @@ SET     @idx = 4
 UPDATE
 	[Person]
 SET
-	[Person].[LastName] = Convert(NVarChar(11), Len(@name) + @idx)
+	[LastName] = CAST(Len(@name) + @idx AS NVarChar(11))
 WHERE
 	[Person].[FirstName] LIKE 'Update14%' ESCAPE '~'
 
@@ -42,9 +42,9 @@ BeforeExecute
 -- SqlCe
 
 SELECT
-	Count(*)
+	COUNT(*) as [COUNT_1]
 FROM
-	[Person] [_]
+	[Person] [t1]
 WHERE
-	[_].[FirstName] LIKE 'Update14%' ESCAPE '~'
+	[t1].[FirstName] LIKE 'Update14%' ESCAPE '~'
 

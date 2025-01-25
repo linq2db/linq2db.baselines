@@ -2,14 +2,9 @@
 -- Sybase.Managed Sybase
 
 SELECT
-	[t].[c1]
+	CAST(RIGHT('0' + CAST(DatePart(year, [t].[DateTimeValue]) AS VarChar(4)), 4) + '-10-01' AS Date)
 FROM
-	(
-		SELECT
-			Convert(Date, right(replicate('0',4) + cast(DatePart(year, [p].[DateTimeValue]) as varchar(255)),4) + '-10-01') as [c1]
-		FROM
-			[LinqDataTypes] [p]
-	) [t]
+	[LinqDataTypes] [t]
 WHERE
-	DatePart(month, [t].[c1]) = 10
+	DatePart(month, CAST(RIGHT('0' + CAST(DatePart(year, [t].[DateTimeValue]) AS VarChar(4)), 4) + '-10-01' AS Date)) = 10
 

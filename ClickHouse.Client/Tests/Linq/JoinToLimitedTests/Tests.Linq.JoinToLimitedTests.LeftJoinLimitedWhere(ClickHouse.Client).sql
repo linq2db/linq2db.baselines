@@ -4,16 +4,18 @@
 SELECT
 	o.ParentID,
 	o.Value1,
-	x.ParentID,
-	x.ChildID
+	c_1.ParentID,
+	c_1.ChildID
 FROM
 	Parent o
 		LEFT JOIN (
 			SELECT
-				t1.ParentID as ParentID,
-				t1.ChildID as ChildID
+				x.ParentID as ParentID,
+				x.ChildID as ChildID
 			FROM
-				Child t1
-			LIMIT toInt32(1)
-		) x ON x.ParentID = o.ParentID
+				Child x
+			ORDER BY
+				x.ChildID DESC
+			LIMIT 1
+		) c_1 ON c_1.ParentID = o.ParentID
 

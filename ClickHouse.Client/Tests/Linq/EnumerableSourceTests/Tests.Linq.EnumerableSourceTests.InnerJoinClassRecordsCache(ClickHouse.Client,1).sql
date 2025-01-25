@@ -10,9 +10,9 @@ SELECT
 FROM
 	Person p
 		INNER JOIN (
-			SELECT toInt32(2) AS PersonID
+			SELECT 2 AS ID
 			UNION ALL
-			SELECT toInt32(3)) n ON p.PersonID = n.PersonID
+			SELECT 3) n ON p.PersonID = n.ID
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
@@ -26,7 +26,7 @@ SELECT
 FROM
 	Person p
 		INNER JOIN (
-			SELECT toInt32(4) AS PersonID
+			SELECT 4 AS ID
 			UNION ALL
-			SELECT toInt32(5)) n ON p.PersonID = n.PersonID
+			SELECT 5) n ON p.PersonID = n.ID
 

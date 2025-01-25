@@ -38,11 +38,12 @@ BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
 SELECT
-	[e].[Id],
-	[e].[Value],
-	[e].[IsDeleted]
+	[m_1].[Id],
+	[m_1].[Value],
+	[m_1].[IsDeleted]
 FROM
-	[MasterClass] [e]
+	[MasterClass] [m_1]
+		INNER JOIN [MasterClass] [d] ON [d].[Id] = [m_1].[Id]
 
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite

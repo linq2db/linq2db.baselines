@@ -1,17 +1,12 @@
 ﻿BeforeExecute
 -- Oracle.23.Managed Oracle.Managed Oracle12
-DECLARE @p Varchar2(5) -- String
-SET     @p = '2010-'
+DECLARE @year Int32
+SET     @year = 2010
 
 SELECT
-	t."c1"
+	TO_TIMESTAMP(LPad(CAST(:year AS VarChar(4)), 4, '0') || '-' || LPad(CAST(t.ID AS VarChar(2)), 2, '0') || '-01 00:00:00.000', 'YYYY-MM-DD HH24:MI:SS.FF3')
 FROM
-	(
-		SELECT
-			TO_DATE(:p || Lpad(p.ID,2,'0') || '-01', 'YYYY-MM-DD') as "c1"
-		FROM
-			"LinqDataTypes" p
-	) t
+	"LinqDataTypes" t
 WHERE
-	To_Number(To_Char(t."c1", 'YYYY')) = 2010
+	EXTRACT(YEAR FROM TO_TIMESTAMP(LPad(CAST(:year AS VarChar(4)), 4, '0') || '-' || LPad(CAST(t.ID AS VarChar(2)), 2, '0') || '-01 00:00:00.000', 'YYYY-MM-DD HH24:MI:SS.FF3')) = 2010
 

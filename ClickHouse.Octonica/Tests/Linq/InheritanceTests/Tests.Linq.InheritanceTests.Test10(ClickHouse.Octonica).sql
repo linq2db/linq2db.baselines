@@ -7,5 +7,5 @@ SELECT
 FROM
 	Parent t1
 WHERE
-	t1.Value1 IS NOT NULL AND t1.Value1 <> toInt32(1)
+	t1.Value1 IS NOT NULL AND t1.Value1 <> 1
 

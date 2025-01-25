@@ -4,22 +4,22 @@
 MERGE INTO [Parent] [Target]
 USING (
 	SELECT
-		[c_1].[ParentID],
-		[c_1].[Value1]
+		[c_1].[ParentID] as [source_ParentID],
+		[c_1].[Value1] as [source_Value1]
 	FROM
 		[Parent] [c_1] WITH (NoLock)
 	WHERE
 		[c_1].[ParentID] < -1111
 ) [Source]
 (
-	[ParentID],
-	[Value1]
+	[source_ParentID],
+	[source_Value1]
 )
-ON ([Target].[ParentID] = [Source].[ParentID])
+ON ([Target].[ParentID] = [Source].[source_ParentID])
 
 WHEN MATCHED THEN
 UPDATE
 SET
-	[Target].[Value1] = [Source].[Value1]
+	[Value1] = [Source].[source_Value1]
 OPTION (RECOMPILE, FAST 10);
 

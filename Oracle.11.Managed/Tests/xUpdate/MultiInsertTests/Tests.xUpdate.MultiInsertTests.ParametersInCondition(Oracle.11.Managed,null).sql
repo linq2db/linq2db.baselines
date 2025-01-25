@@ -48,7 +48,7 @@ WHEN 1 = 1 THEN
 	VALUES
 	(
 		:id1,
-		"Value_1"
+		"source_Value"
 	)
 WHEN 1 = 0 THEN
 	INTO "Dest1"
@@ -59,16 +59,14 @@ WHEN 1 = 0 THEN
 	VALUES
 	(
 		:id2,
-		"Value_1"
+		"source_Value"
 	)
 SELECT
-	:value as "Value_1"
+	:value as "source_Value"
 FROM SYS.DUAL
 
 BeforeExecute
 -- Oracle.11.Managed Oracle11
-DECLARE @take Int32
-SET     @take = 2
 
 SELECT
 	t1.ID,
@@ -77,7 +75,7 @@ SELECT
 FROM
 	"Dest1" t1
 WHERE
-	t1.ID > 1000 AND ROWNUM <= :take
+	t1.ID > 1000 AND ROWNUM <= 2
 
 BeforeExecute
 -- Oracle.11.Managed Oracle11

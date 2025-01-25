@@ -8,8 +8,7 @@ SELECT
 				*
 			FROM
 				"Parent" p
-		)
-			THEN True
+		) THEN True
 		ELSE False
 	END
 

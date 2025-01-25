@@ -108,12 +108,12 @@ BeforeExecute
 -- Oracle.11.Managed Oracle11
 
 SELECT
-	t1."Id",
 	t1."Discriminator",
-	t1."Value1",
-	t1."Value2",
+	t1."Id",
 	t1."Value3",
-	t1."NullableBool"
+	t1."NullableBool",
+	t1."Value2",
+	t1."Value1"
 FROM
 	"TPHTable" t1
 ORDER BY
@@ -121,105 +121,93 @@ ORDER BY
 
 BeforeExecute
 -- Oracle.11.Managed Oracle11
-DECLARE @take Int32
-SET     @take = 2
 
 SELECT
-	x."Id",
 	x."Discriminator",
-	x."Value1",
-	x."Value2",
+	x."Id",
 	x."Value3",
-	x."NullableBool"
+	x."NullableBool",
+	x."Value2",
+	x."Value1"
 FROM
 	"TPHTable" x
 WHERE
-	x."Discriminator" = 1 AND ROWNUM <= :take
+	x."Discriminator" = 1 AND ROWNUM <= 2
 
 BeforeExecute
 -- Oracle.11.Managed Oracle11
-DECLARE @take Int32
-SET     @take = 2
 
 SELECT
-	x."Id",
 	x."Discriminator",
-	x."Value1",
-	x."Value2",
+	x."Id",
 	x."Value3",
-	x."NullableBool"
+	x."NullableBool",
+	x."Value2",
+	x."Value1"
 FROM
 	"TPHTable" x
 WHERE
-	x."Discriminator" = 2 AND ROWNUM <= :take
+	x."Discriminator" = 2 AND ROWNUM <= 2
 
 BeforeExecute
 -- Oracle.11.Managed Oracle11
-DECLARE @take Int32
-SET     @take = 2
 
 SELECT
-	x."Id",
 	x."Discriminator",
-	x."Value1",
-	x."Value2",
+	x."Id",
 	x."Value3",
-	x."NullableBool"
+	x."NullableBool",
+	x."Value2",
+	x."Value1"
 FROM
 	"TPHTable" x
 WHERE
-	x."Discriminator" = 3 AND ROWNUM <= :take
+	x."Discriminator" = 3 AND ROWNUM <= 2
 
 BeforeExecute
 -- Oracle.11.Managed Oracle11
-DECLARE @take Int32
-SET     @take = 2
 
 SELECT
-	x."Id",
 	x."Discriminator",
-	x."Value1",
-	x."Value2",
+	x."Id",
 	x."Value3",
-	x."NullableBool"
+	x."NullableBool",
+	x."Value2",
+	x."Value1"
 FROM
 	"TPHTable" x
 WHERE
-	x."Value1" = 'Str1' AND ROWNUM <= :take
+	x."Value1" = 'Str1' AND ROWNUM <= 2
 
 BeforeExecute
 -- Oracle.11.Managed Oracle11
-DECLARE @take Int32
-SET     @take = 2
 
 SELECT
-	x."Id",
 	x."Discriminator",
-	x."Value1",
-	x."Value2",
+	x."Id",
 	x."Value3",
-	x."NullableBool"
+	x."NullableBool",
+	x."Value2",
+	x."Value1"
 FROM
 	"TPHTable" x
 WHERE
-	x."Value2" = 'Str2' AND ROWNUM <= :take
+	x."Value2" = 'Str2' AND ROWNUM <= 2
 
 BeforeExecute
 -- Oracle.11.Managed Oracle11
-DECLARE @take Int32
-SET     @take = 2
 
 SELECT
-	x."Id",
 	x."Discriminator",
-	x."Value1",
-	x."Value2",
+	x."Id",
 	x."Value3",
-	x."NullableBool"
+	x."NullableBool",
+	x."Value2",
+	x."Value1"
 FROM
 	"TPHTable" x
 WHERE
-	x."Value3" = 'Str3' AND ROWNUM <= :take
+	x."Value3" = 'Str3' AND ROWNUM <= 2
 
 BeforeExecute
 -- Oracle.11.Managed Oracle11

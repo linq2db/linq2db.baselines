@@ -1,5 +1,5 @@
 ﻿BeforeExecute
---  Oracle.Managed Oracle12
+--  Oracle.11.Managed Oracle11
 
 INSERT INTO "LinqDataTypes"
 (
@@ -25,10 +25,10 @@ INSERT INTO "LinqDataTypes"
 	SELECT 4009,1009,TIMESTAMP '2001-01-11 01:11:21.100000',1,HEXTORAW('99F33B231097794E873D2EC7BF1E0009'),NULL,9,NULL FROM DUAL 
 
 BeforeExecute
---  Oracle.Managed Oracle12 (asynchronously)
+--  Oracle.11.Managed Oracle11 (asynchronously)
 
 DELETE FROM
-	"LinqDataTypes" t1
+	"LinqDataTypes" p
 WHERE
-	t1.ID >= 4000
+	p.ID >= 4000
 

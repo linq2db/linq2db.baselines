@@ -39,15 +39,13 @@ FROM SYS.DUAL
 
 BeforeExecute
 -- Oracle.11.Managed Oracle11
-DECLARE @take Int32
-SET     @take = 1
 
 SELECT
 	sys_context('userenv', 'current_schema')
 FROM
 	"LinqDataTypes" t1
 WHERE
-	ROWNUM <= :take
+	ROWNUM <= 1
 
 BeforeExecute
 -- Oracle.11.Managed Oracle11
@@ -57,11 +55,11 @@ DECLARE @ID Int32
 SET     @ID = 5
 
 UPDATE
-	TEST."Issue681Table"@XE
+	TEST."Issue681Table"@XE t1
 SET
-	TEST."Issue681Table"."Value"@XE = :Value
+	"Value" = :Value
 WHERE
-	TEST."Issue681Table".ID@XE = :ID
+	t1.ID = :ID
 
 BeforeExecute
 -- Oracle.11.Managed Oracle11

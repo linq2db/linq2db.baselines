@@ -16,16 +16,16 @@ FROM
 	"LinqDataTypes" "t1"
 UNION ALL
 SELECT
-	Cast(NULL as Int),
-	Cast(NULL as Decimal),
-	Cast(NULL as timestamp),
-	Cast(NULL as timestamp),
-	Cast(NULL as smallint),
-	Cast(NULL as char(16) for bit data),
-	Cast(NULL as SmallInt),
-	Cast(NULL as Int),
-	Cast(NULL as BigInt),
-	Cast(NULL as NVarChar(255))
+	CAST(NULL AS Int),
+	CAST(NULL AS Decimal),
+	CAST(NULL AS timestamp),
+	CAST(NULL AS timestamp),
+	CAST(NULL AS smallint),
+	CAST(NULL AS char(16) for bit data),
+	CAST(NULL AS SmallInt),
+	CAST(NULL AS Int),
+	CAST(NULL AS BigInt),
+	CAST(NULL AS NVarChar(255))
 FROM
 	"LinqDataTypes" "d"
 
