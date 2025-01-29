@@ -19,9 +19,9 @@ WHERE
 		SELECT
 			COUNT(*)
 		FROM
-			[Order Details] [e_1]
+			[Order Details] [a_OrderDetails]
 		WHERE
-			NOT [e_1].[IsDeleted] AND [e].[ProductID] = [e_1].[ProductID]
+			[e].[ProductID] = [a_OrderDetails].[ProductID]
 	) > 0 AND
 	[e].[ProductName] LIKE 'a%' ESCAPE '~'
 
