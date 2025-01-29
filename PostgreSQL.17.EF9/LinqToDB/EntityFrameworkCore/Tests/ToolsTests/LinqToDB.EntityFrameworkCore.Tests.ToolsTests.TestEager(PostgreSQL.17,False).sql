@@ -42,10 +42,10 @@ SELECT
 	d."IsDeleted",
 	d."EmployeeID",
 	d."TerritoryID",
-	e_1."IsDeleted",
-	e_1."TerritoryID",
-	e_1."TerritoryDescription",
-	e_1."RegionID"
+	"a_Territory"."IsDeleted",
+	"a_Territory"."TerritoryID",
+	"a_Territory"."TerritoryDescription",
+	"a_Territory"."RegionID"
 FROM
 	(
 		SELECT DISTINCT
@@ -55,7 +55,7 @@ FROM
 				LEFT JOIN "Employees" "a_Employee" ON e."EmployeeID" = "a_Employee"."EmployeeID"
 	) m_1
 		INNER JOIN "EmployeeTerritories" d ON m_1."EmployeeId" = d."EmployeeID"
-		INNER JOIN "Territories" e_1 ON d."TerritoryID" = e_1."TerritoryID"
+		INNER JOIN "Territories" "a_Territory" ON d."TerritoryID" = "a_Territory"."TerritoryID"
 
 
 
@@ -69,17 +69,17 @@ SELECT
 	d."UnitPrice",
 	d."Quantity",
 	d."Discount",
-	e_1."IsDeleted",
-	e_1."ProductID",
-	e_1."ProductName",
-	e_1."SupplierID",
-	e_1."CategoryID",
-	e_1."QuantityPerUnit",
-	e_1."UnitPrice",
-	e_1."UnitsInStock",
-	e_1."UnitsOnOrder",
-	e_1."ReorderLevel",
-	e_1."Discontinued"
+	"a_Product"."IsDeleted",
+	"a_Product"."ProductID",
+	"a_Product"."ProductName",
+	"a_Product"."SupplierID",
+	"a_Product"."CategoryID",
+	"a_Product"."QuantityPerUnit",
+	"a_Product"."UnitPrice",
+	"a_Product"."UnitsInStock",
+	"a_Product"."UnitsOnOrder",
+	"a_Product"."ReorderLevel",
+	"a_Product"."Discontinued"
 FROM
 	(
 		SELECT DISTINCT
@@ -88,7 +88,7 @@ FROM
 			"Orders" e
 	) m_1
 		INNER JOIN "Order Details" d ON m_1."OrderId" = d."OrderID"
-		INNER JOIN "Products" e_1 ON d."ProductID" = e_1."ProductID"
+		INNER JOIN "Products" "a_Product" ON d."ProductID" = "a_Product"."ProductID"
 
 
 
