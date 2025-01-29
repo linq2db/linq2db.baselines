@@ -51,17 +51,17 @@ WHERE
 		SELECT
 			COUNT(*)
 		FROM
-			"Order Details" e_1
+			"Order Details" "a_OrderDetails"
 		WHERE
-			e."ProductID" = e_1."ProductID"
+			e."ProductID" = "a_OrderDetails"."ProductID"
 	) > 0 AND
 	(
 		SELECT
 			COUNT(*)
 		FROM
-			"Order Details" e_2
+			"Order Details" "a_OrderDetails_1"
 		WHERE
-			pd2."ProductID" = e_2."ProductID"
+			pd2."ProductID" = "a_OrderDetails_1"."ProductID"
 	) > 0 AND
 	e."ProductID" = pd2."ProductID"
 ORDER BY
