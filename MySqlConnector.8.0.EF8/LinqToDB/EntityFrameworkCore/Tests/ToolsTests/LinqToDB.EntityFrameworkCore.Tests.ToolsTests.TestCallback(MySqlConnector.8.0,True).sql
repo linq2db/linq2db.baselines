@@ -9,9 +9,9 @@ WHERE
 		SELECT
 			COUNT(*)
 		FROM
-			`Order Details` `e`
+			`Order Details` `a_OrderDetails`
 		WHERE
-			(NOT `e`.`IsDeleted` OR NOT `e`.`IsDeleted`) AND `Products`.`ProductID` = `e`.`ProductID`
+			`Products`.`ProductID` = `a_OrderDetails`.`ProductID`
 	) > 0 AND
 	`Products`.`ProductName` LIKE 'a%' ESCAPE '~' AND
 	`Products`.`ProductName` = 'a'
