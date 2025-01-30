@@ -4,14 +4,14 @@ DECLARE @take Integer -- Int32
 SET     @take = 100
 
 SELECT
-	"t1"."PersonID",
-	"t1"."PersonID"
+	"r"."PersonID",
+	"r"."PersonID"
 FROM
-	"Person" "t1"
+	"Person" "r"
 GROUP BY
-	"t1"."PersonID",
-	"t1"."PersonID"
+	"r"."PersonID",
+	"r"."PersonID"
 ORDER BY
-	"t1"."PersonID"
+	"r"."PersonID"
 FETCH NEXT @take ROWS ONLY
 
