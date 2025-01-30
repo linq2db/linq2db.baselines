@@ -2,13 +2,13 @@
 -- Access.Ace.Odbc AccessODBC
 
 SELECT TOP 100
-	[t1].[PersonID],
-	[t1].[PersonID]
+	[r].[PersonID],
+	[r].[PersonID]
 FROM
-	[Person] [t1]
+	[Person] [r]
 GROUP BY
-	[t1].[PersonID],
-	[t1].[PersonID]
+	[r].[PersonID],
+	[r].[PersonID]
 ORDER BY
-	[t1].[PersonID]
+	[r].[PersonID]
 
