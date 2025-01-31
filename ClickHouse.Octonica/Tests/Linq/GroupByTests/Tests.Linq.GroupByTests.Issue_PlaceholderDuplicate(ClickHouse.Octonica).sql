@@ -2,14 +2,14 @@
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
-	t1.PersonID,
-	t1.PersonID
+	r.PersonID,
+	r.PersonID
 FROM
-	Person t1
+	Person r
 GROUP BY
-	t1.PersonID,
-	t1.PersonID
+	r.PersonID,
+	r.PersonID
 ORDER BY
-	t1.PersonID
+	r.PersonID
 LIMIT 100
 
