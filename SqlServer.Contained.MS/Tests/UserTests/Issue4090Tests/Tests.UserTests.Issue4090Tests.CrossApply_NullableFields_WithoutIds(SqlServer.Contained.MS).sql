@@ -32,3 +32,32 @@ FROM
 ORDER BY
 	[t3].[ID3]
 
+BeforeExecute
+-- SqlServer.Contained.MS SqlServer.2019
+
+SELECT
+	[t1].[ID3],
+	[t1].[PARENTID3],
+	[t1].[NAME3]
+FROM
+	[TABLE3] [t1]
+
+BeforeExecute
+-- SqlServer.Contained.MS SqlServer.2019
+
+SELECT
+	[t1].[ID2],
+	[t1].[PARENTID2],
+	[t1].[NAME2]
+FROM
+	[TABLE2] [t1]
+
+BeforeExecute
+-- SqlServer.Contained.MS SqlServer.2019
+
+SELECT
+	[t1].[ID1],
+	[t1].[NAME1]
+FROM
+	[TABLE1] [t1]
+
