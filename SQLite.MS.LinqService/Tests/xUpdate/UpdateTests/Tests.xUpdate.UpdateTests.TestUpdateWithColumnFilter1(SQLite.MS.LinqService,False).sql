@@ -55,7 +55,7 @@ SET     @LastName = 'whatever'
 DECLARE @Gender Char(1) -- AnsiStringFixedLength
 SET     @Gender = 'M'
 DECLARE @ID  -- Int32
-SET     @ID = 5
+SET     @ID = 15
 
 UPDATE
 	[Person]
