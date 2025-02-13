@@ -8,13 +8,13 @@ SELECT
 		FROM
 			[tender] [i]
 		WHERE
-			CAST([i].[id] AS Guid) IN (X'CE1D50ADC2594141982F701AAD554ECE', X'1F3FFBAC78EEE54B865E784775B581F8')
+			CAST([i].[id] AS Guid) IN (X'688BF7BAA3059441B413AD474CCEF80D', X'5ED65EACEB122A44BEAFC11929CDA5BC')
 	)
 
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 DECLARE @tenderId NVarChar(36) -- String
-SET     @tenderId = '74a489ae-4be2-4200-9a41-d5e4f7df6de7'
+SET     @tenderId = 'd838a92b-ef21-4ffb-bd34-9dd6bb6a61bd'
 
 SELECT
 	EXISTS(
