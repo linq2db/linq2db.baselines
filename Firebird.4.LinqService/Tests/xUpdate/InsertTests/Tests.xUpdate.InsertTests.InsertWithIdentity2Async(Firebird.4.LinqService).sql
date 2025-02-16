@@ -27,6 +27,21 @@ RETURNING
 	"PersonID"
 
 BeforeExecute
+-- Firebird.4 Firebird4 (asynchronously)
+
+SELECT
+	"p"."FirstName",
+	"p"."PersonID",
+	"p"."LastName",
+	"p"."MiddleName",
+	"p"."Gender"
+FROM
+	"Person" "p"
+WHERE
+	"p"."FirstName" = 'John' AND "p"."LastName" = 'Shepard'
+FETCH NEXT 2 ROWS ONLY
+
+BeforeExecute
 -- Firebird.4 Firebird4
 
 DELETE FROM
