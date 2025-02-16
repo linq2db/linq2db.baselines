@@ -11,8 +11,8 @@ BeforeExecute
 
 CREATE TABLE "TestIdTrun"
 (
-	ID       Int     GENERATED ALWAYS AS IDENTITY NOT NULL,
-	"Field1" Decimal                              NOT NULL,
+	ID       Int             GENERATED ALWAYS AS IDENTITY NOT NULL,
+	"Field1" Decimal(18, 10)                              NOT NULL,
 
 	CONSTRAINT "PK_TestIdTrun" PRIMARY KEY (ID)
 )
