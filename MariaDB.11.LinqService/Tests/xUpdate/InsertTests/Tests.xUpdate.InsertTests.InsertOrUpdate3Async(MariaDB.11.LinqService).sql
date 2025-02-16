@@ -34,3 +34,77 @@ BeforeExecute
 
 SELECT LAST_INSERT_ID()
 
+BeforeExecute
+-- MariaDB.11 MariaDB.10.MySqlConnector MySql (asynchronously)
+DECLARE @id Int32
+SET     @id = 5
+DECLARE @i Int32
+SET     @i = 0
+
+INSERT INTO `Patient`
+(
+	`PersonID`,
+	`Diagnosis`
+)
+VALUES
+(
+	@id,
+	'abc'
+)
+ON DUPLICATE KEY UPDATE
+	`Diagnosis` = CAST(Char_Length(`Diagnosis`) + @i AS CHAR(11))
+
+BeforeExecute
+-- MariaDB.11 MariaDB.10.MySqlConnector MySql (asynchronously)
+DECLARE @id Int32
+SET     @id = 5
+DECLARE @i Int32
+SET     @i = 1
+
+INSERT INTO `Patient`
+(
+	`PersonID`,
+	`Diagnosis`
+)
+VALUES
+(
+	@id,
+	'abc'
+)
+ON DUPLICATE KEY UPDATE
+	`Diagnosis` = CAST(Char_Length(`Diagnosis`) + @i AS CHAR(11))
+
+BeforeExecute
+-- MariaDB.11 MariaDB.10.MySqlConnector MySql (asynchronously)
+DECLARE @id Int32
+SET     @id = 5
+DECLARE @i Int32
+SET     @i = 2
+
+INSERT INTO `Patient`
+(
+	`PersonID`,
+	`Diagnosis`
+)
+VALUES
+(
+	@id,
+	'abc'
+)
+ON DUPLICATE KEY UPDATE
+	`Diagnosis` = CAST(Char_Length(`Diagnosis`) + @i AS CHAR(11))
+
+BeforeExecute
+-- MariaDB.11 MariaDB.10.MySqlConnector MySql (asynchronously)
+DECLARE @id Int32
+SET     @id = 5
+
+SELECT
+	`p`.`PersonID`,
+	`p`.`Diagnosis`
+FROM
+	`Patient` `p`
+WHERE
+	`p`.`PersonID` = @id
+LIMIT 2
+
