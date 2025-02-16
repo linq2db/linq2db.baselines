@@ -10,3 +10,14 @@ FROM
 WHERE
 	s."Id" = 3
 
+BeforeExecute
+-- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL (asynchronously)
+
+DELETE FROM
+	"TableWithData" s
+WHERE
+	s."Id" = 3
+RETURNING
+	s."Id" + 1,
+	s."ValueStr" || 1
+
