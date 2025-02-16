@@ -38,6 +38,23 @@ RETURNING
 
 BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12 (asynchronously)
+DECLARE @p Varchar2(5) -- String
+SET     @p = 'John0'
+
+SELECT
+	p."FirstName",
+	p."PersonID" as ID,
+	p."LastName",
+	p."MiddleName",
+	p."Gender"
+FROM
+	"Person" p
+WHERE
+	p."FirstName" = :p AND p."LastName" = 'Shepard'
+FETCH NEXT 2 ROWS ONLY
+
+BeforeExecute
+-- Oracle.19.Managed Oracle.Managed Oracle12 (asynchronously)
 DECLARE @FirstName Varchar2(5) -- String
 SET     @FirstName = 'John1'
 DECLARE @LastName Varchar2(7) -- String
@@ -65,6 +82,23 @@ VALUES
 )
 RETURNING 
 	"PersonID" INTO :IDENTITY_PARAMETER
+
+BeforeExecute
+-- Oracle.19.Managed Oracle.Managed Oracle12 (asynchronously)
+DECLARE @p Varchar2(5) -- String
+SET     @p = 'John1'
+
+SELECT
+	p."FirstName",
+	p."PersonID" as ID,
+	p."LastName",
+	p."MiddleName",
+	p."Gender"
+FROM
+	"Person" p
+WHERE
+	p."FirstName" = :p AND p."LastName" = 'Shepard'
+FETCH NEXT 2 ROWS ONLY
 
 BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12
