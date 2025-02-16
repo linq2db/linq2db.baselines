@@ -2,7 +2,7 @@
 -- DB2 DB2.LUW DB2LUW
 
 SELECT
-	CAST("t"."MoneyValue" * 1000 AS Decimal)
+	Decimal("t"."MoneyValue" * 1000, 18, 10)
 FROM
 	"LinqDataTypes" "t"
 

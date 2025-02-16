@@ -3,10 +3,10 @@
 
 SELECT
 	CASE
-		WHEN t2."SUM_1" < 0 THEN 9
-		ELSE t2."SUM_1" + 8
+		WHEN t2.x < 0 THEN 9
+		ELSE t2.x + 8
 	END,
-	t2."SUM_1" + t2."SUM_1"
+	t2.x + t2.x
 FROM
 	(
 		SELECT
@@ -15,7 +15,7 @@ FROM
 					SUM(t1."MoneyValue")
 				FROM
 					"LinqDataTypes" t1
-			) as "SUM_1"
+			) as x
 		FROM
 			"LinqDataTypes" q
 	) t2

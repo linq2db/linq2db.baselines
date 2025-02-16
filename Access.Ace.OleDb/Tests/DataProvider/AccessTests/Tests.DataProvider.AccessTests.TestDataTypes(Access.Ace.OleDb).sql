@@ -116,7 +116,7 @@ SELECT ID FROM [AllTypes] WHERE @p IS NULL AND decimalDataType IS NULL OR @p IS 
 
 BeforeExecute
 -- Access.Ace.OleDb AccessOleDb
-DECLARE @p VarChar -- AnsiString
+DECLARE @p VarChar(18, 10) -- AnsiString
 SET     @p = NULL
 
 SELECT ID FROM [AllTypes] WHERE @p IS NULL AND decimalDataType IS NULL OR @p IS NOT NULL AND decimalDataType = @p
@@ -142,7 +142,7 @@ SELECT ID FROM [AllTypes] WHERE decimalDataType = @p
 
 BeforeExecute
 -- Access.Ace.OleDb AccessOleDb
-DECLARE @p VarChar(7, 0) -- AnsiString
+DECLARE @p VarChar(18, 10) -- AnsiString
 SET     @p = 2222222
 
 SELECT ID FROM [AllTypes] WHERE decimalDataType = @p
@@ -272,7 +272,7 @@ SELECT ID FROM [AllTypes] WHERE @p IS NULL AND moneyDataType IS NULL OR @p IS NO
 
 BeforeExecute
 -- Access.Ace.OleDb AccessOleDb
-DECLARE @p VarChar -- AnsiString
+DECLARE @p VarChar(18, 10) -- AnsiString
 SET     @p = NULL
 
 SELECT ID FROM [AllTypes] WHERE @p IS NULL AND moneyDataType IS NULL OR @p IS NOT NULL AND moneyDataType = @p
@@ -298,7 +298,7 @@ SELECT ID FROM [AllTypes] WHERE moneyDataType = @p
 
 BeforeExecute
 -- Access.Ace.OleDb AccessOleDb
-DECLARE @p VarChar(6, 0) -- AnsiString
+DECLARE @p VarChar(18, 10) -- AnsiString
 SET     @p = 100000
 
 SELECT ID FROM [AllTypes] WHERE moneyDataType = @p

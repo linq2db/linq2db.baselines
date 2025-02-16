@@ -2,7 +2,7 @@
 -- SqlCe
 
 SELECT
-	CAST([t].[MoneyValue] * 1000 AS Decimal(38, 17)) as [c1]
+	CAST([t].[MoneyValue] * 1000 AS Decimal(18, 10)) as [c1]
 FROM
 	[LinqDataTypes] [t]
 

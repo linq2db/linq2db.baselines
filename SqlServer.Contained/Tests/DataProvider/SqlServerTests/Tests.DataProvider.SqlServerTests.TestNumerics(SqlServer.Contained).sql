@@ -2917,7 +2917,7 @@ SELECT @p
 
 BeforeExecute
 -- SqlServer.Contained SqlServer.2019
-DECLARE @p Decimal(1, 0)
+DECLARE @p Decimal(18, 10)
 SET     @p = 1
 
 SELECT @p
@@ -3003,7 +3003,7 @@ SELECT @p
 
 BeforeExecute
 -- SqlServer.Contained SqlServer.2019
-DECLARE @p Decimal(1, 0)
+DECLARE @p Decimal(18, 10)
 SET     @p = 1
 
 SELECT @p
@@ -3175,7 +3175,7 @@ SELECT @p
 
 BeforeExecute
 -- SqlServer.Contained SqlServer.2019
-DECLARE @p Decimal(1, 0)
+DECLARE @p Decimal(18, 10)
 SET     @p = 1
 
 SELECT @p
@@ -3261,7 +3261,7 @@ SELECT @p
 
 BeforeExecute
 -- SqlServer.Contained SqlServer.2019
-DECLARE @p Decimal(1, 0)
+DECLARE @p Decimal(18, 10)
 SET     @p = 1
 
 SELECT @p
@@ -3433,7 +3433,7 @@ SELECT @p
 
 BeforeExecute
 -- SqlServer.Contained SqlServer.2019
-DECLARE @p Decimal(1, 0)
+DECLARE @p Decimal(18, 10)
 SET     @p = 1
 
 SELECT @p
@@ -3519,7 +3519,7 @@ SELECT @p
 
 BeforeExecute
 -- SqlServer.Contained SqlServer.2019
-DECLARE @p Decimal(1, 0)
+DECLARE @p Decimal(18, 10)
 SET     @p = 1
 
 SELECT @p
@@ -3691,7 +3691,7 @@ SELECT @p
 
 BeforeExecute
 -- SqlServer.Contained SqlServer.2019
-DECLARE @p Decimal(1, 0)
+DECLARE @p Decimal(18, 10)
 SET     @p = 1
 
 SELECT @p
@@ -3777,7 +3777,7 @@ SELECT @p
 
 BeforeExecute
 -- SqlServer.Contained SqlServer.2019
-DECLARE @p Decimal(1, 0)
+DECLARE @p Decimal(18, 10)
 SET     @p = 1
 
 SELECT @p
@@ -5041,7 +5041,7 @@ SELECT @p
 
 BeforeExecute
 -- SqlServer.Contained SqlServer.2019
-DECLARE @p Decimal(6, 0)
+DECLARE @p Decimal(18, 10)
 SET     @p = -214748
 
 SELECT @p
@@ -5112,7 +5112,7 @@ SELECT @p
 
 BeforeExecute
 -- SqlServer.Contained SqlServer.2019
-DECLARE @p Decimal(6, 0)
+DECLARE @p Decimal(18, 10)
 SET     @p = 214748
 
 SELECT @p

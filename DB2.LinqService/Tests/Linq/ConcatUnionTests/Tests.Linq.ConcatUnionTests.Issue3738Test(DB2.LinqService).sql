@@ -8,7 +8,7 @@ FROM
 	"Person" "x"
 UNION ALL
 SELECT
-	CAST(NULL AS NVarChar(8168)),
+	CAST(NULL AS NVarChar(255)),
 	'QUASI-' || "x_1"."FirstName"
 FROM
 	"Person" "x_1"

@@ -3,7 +3,7 @@
 
 SELECT
 	[cu].[Id],
-	[cu].[COUNT_1]
+	[cu].[CountOfCards]
 FROM
 	(
 		SELECT
@@ -14,13 +14,14 @@ FROM
 					[Issue1983Card] [card]
 				WHERE
 					[card].[PersonId] = [p].[Id] AND [card].[CardType] = 2
-			) as [COUNT_1],
+			) as [CountOfCards],
 			[p].[Id]
 		FROM
 			[Issue1983Person] [p]
 	) [cu]
 WHERE
-	[cu].[COUNT_1] = 0 OR [cu].[COUNT_1] <> 0 OR [cu].[COUNT_1] IS NULL
+	[cu].[CountOfCards] = 0 OR [cu].[CountOfCards] <> 0 OR
+	[cu].[CountOfCards] IS NULL
 
 BeforeExecute
 -- SQLite.Classic SQLite

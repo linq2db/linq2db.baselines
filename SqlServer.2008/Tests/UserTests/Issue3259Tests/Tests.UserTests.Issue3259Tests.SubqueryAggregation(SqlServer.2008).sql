@@ -2,10 +2,10 @@
 -- SqlServer.2008
 
 SELECT
-	[t9].[SUM_1],
-	[t9].[SumCustom],
-	[t9].[SumCustom_1],
-	[t9].[SUM_2]
+	[t9].[WithParentReference],
+	[t9].[WithParentReferenceCustom1],
+	[t9].[WithParentReferenceCustom2],
+	[t9].[WithoutParentReference]
 FROM
 	(
 		SELECT
@@ -20,7 +20,7 @@ FROM
 									WHEN [tracking].[TrackingTimeType] = 0 THEN [d].[StartHour]
 									ELSE [d].[EndHour]
 								END
-								ELSE CAST(0 AS Decimal(38, 17))
+								ELSE CAST(0 AS Decimal(18, 10))
 							END as [WithParentReference]
 						FROM
 							(
@@ -39,7 +39,7 @@ FROM
 										[a_Employee].[EmployeeId] = [e].[EmployeeId]
 								) [d] ON 1=1
 					) [t2]
-			) as [SUM_1],
+			) as [WithParentReference],
 			(
 				SELECT
 					Sum([t4].[WithParentReferenceCustom1])
@@ -51,7 +51,7 @@ FROM
 									WHEN [tracking].[TrackingTimeType] = 0 THEN [d_1].[StartHour]
 									ELSE [d_1].[EndHour]
 								END
-								ELSE CAST(0 AS Decimal(38, 17))
+								ELSE CAST(0 AS Decimal(18, 10))
 							END as [WithParentReferenceCustom1]
 						FROM
 							(
@@ -70,7 +70,7 @@ FROM
 										[a_Employee].[EmployeeId] = [e_1].[EmployeeId]
 								) [d_1] ON 1=1
 					) [t4]
-			) as [SumCustom],
+			) as [WithParentReferenceCustom1],
 			(
 				SELECT
 					Sum([t6].[WithParentReferenceCustom2])
@@ -82,7 +82,7 @@ FROM
 									WHEN [tracking].[TrackingTimeType] = 0 THEN [d_2].[StartHour]
 									ELSE [d_2].[EndHour]
 								END
-								ELSE CAST(0 AS Decimal(38, 17))
+								ELSE CAST(0 AS Decimal(18, 10))
 							END as [WithParentReferenceCustom2]
 						FROM
 							(
@@ -101,7 +101,7 @@ FROM
 										[a_Employee].[EmployeeId] = [e_2].[EmployeeId]
 								) [d_2] ON 1=1
 					) [t6]
-			) as [SumCustom_1],
+			) as [WithParentReferenceCustom2],
 			(
 				SELECT
 					SUM([t8].[WithoutParentReference])
@@ -113,7 +113,7 @@ FROM
 									WHEN [d_3].[StartHour] IS NOT NULL THEN [d_3].[StartHour]
 									ELSE [d_3].[EndHour]
 								END
-								ELSE CAST(0 AS Decimal(38, 17))
+								ELSE CAST(0 AS Decimal(18, 10))
 							END as [WithoutParentReference]
 						FROM
 							(
@@ -132,14 +132,14 @@ FROM
 										[a_Employee].[EmployeeId] = [e_3].[EmployeeId]
 								) [d_3] ON 1=1
 					) [t8]
-			) as [SUM_2]
+			) as [WithoutParentReference]
 		FROM
 			[EmployeeTimeOffBalance] [tracking]
 				INNER JOIN [Employee] [a_Employee] ON [tracking].[EmployeeId] = [a_Employee].[EmployeeId]
 	) [t9]
 ORDER BY
-	Coalesce([t9].[SUM_1], 0),
-	Coalesce([t9].[SumCustom], 0),
-	Coalesce([t9].[SumCustom_1], 0),
-	Coalesce([t9].[SUM_2], 0) DESC
+	Coalesce([t9].[WithParentReference], 0),
+	Coalesce([t9].[WithParentReferenceCustom1], 0),
+	Coalesce([t9].[WithParentReferenceCustom2], 0),
+	Coalesce([t9].[WithoutParentReference], 0) DESC
 

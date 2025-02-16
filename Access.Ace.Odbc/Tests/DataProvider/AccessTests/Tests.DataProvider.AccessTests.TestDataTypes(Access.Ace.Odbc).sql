@@ -145,7 +145,7 @@ SELECT ID FROM [AllTypes] WHERE decimalDataType = ?
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @p VarChar(7, 0) -- AnsiString
+DECLARE @p VarChar(18, 10) -- AnsiString
 SET     @p = 2222222
 
 SELECT ID FROM [AllTypes] WHERE decimalDataType = ?
@@ -304,7 +304,7 @@ SELECT ID FROM [AllTypes] WHERE moneyDataType = ?
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @p VarChar(10, 4) -- AnsiString
+DECLARE @p VarChar(18, 10) -- AnsiString
 SET     @p = 100000.0000
 
 SELECT ID FROM [AllTypes] WHERE moneyDataType = ?
