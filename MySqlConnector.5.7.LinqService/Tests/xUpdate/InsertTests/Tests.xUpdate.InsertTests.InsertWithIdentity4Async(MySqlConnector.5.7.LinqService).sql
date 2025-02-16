@@ -40,6 +40,23 @@ SELECT LAST_INSERT_ID()
 
 BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57 (asynchronously)
+DECLARE @p VarChar(5) -- String
+SET     @p = 'John0'
+
+SELECT
+	`p`.`FirstName`,
+	`p`.`PersonID`,
+	`p`.`LastName`,
+	`p`.`MiddleName`,
+	`p`.`Gender`
+FROM
+	`Person` `p`
+WHERE
+	`p`.`FirstName` = @p AND `p`.`LastName` = 'Shepard'
+LIMIT 2
+
+BeforeExecute
+-- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57 (asynchronously)
 DECLARE @FirstName VarChar(5) -- String
 SET     @FirstName = 'John1'
 DECLARE @LastName VarChar(7) -- String
@@ -68,6 +85,23 @@ BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57 (asynchronously)
 
 SELECT LAST_INSERT_ID()
+
+BeforeExecute
+-- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57 (asynchronously)
+DECLARE @p VarChar(5) -- String
+SET     @p = 'John1'
+
+SELECT
+	`p`.`FirstName`,
+	`p`.`PersonID`,
+	`p`.`LastName`,
+	`p`.`MiddleName`,
+	`p`.`Gender`
+FROM
+	`Person` `p`
+WHERE
+	`p`.`FirstName` = @p AND `p`.`LastName` = 'Shepard'
+LIMIT 2
 
 BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
