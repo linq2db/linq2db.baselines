@@ -1,20 +1,26 @@
 ﻿BeforeExecute
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
+-- PostgreSQL.16 PostgreSQL.15 PostgreSQL (asynchronously)
+DECLARE @Value Integer -- Int32
+SET     @Value = 100
+DECLARE @Id Integer -- Int32
+SET     @Id = 1
+DECLARE @ValueStr Text(8) -- String
+SET     @ValueStr = 'SomeStr1'
 
-DROP TABLE IF EXISTS "TableWithData"
-
-BeforeExecute
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
-
-CREATE TABLE IF NOT EXISTS "TableWithData"
+INSERT INTO "TableWithData"
 (
-	"Id"       Int  NOT NULL,
-	"Value"    Int  NOT NULL,
-	"ValueStr" text     NULL
+	"Value",
+	"Id",
+	"ValueStr"
 )
-
-BeforeExecute
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
-
-DROP TABLE IF EXISTS "TableWithData"
+VALUES
+(
+	:Value,
+	:Id,
+	:ValueStr
+)
+RETURNING
+	"TableWithData"."Id",
+	"TableWithData"."Value",
+	"TableWithData"."ValueStr"
 
