@@ -48,7 +48,7 @@ USING (SELECT @id AS [PersonID]) [s] ON
 WHEN MATCHED THEN
 	UPDATE 
 	SET
-		[Diagnosis] = CAST(Len([t1].[Diagnosis]) + @i AS NVarChar(11))
+		[Diagnosis] = CAST(Len([t1].[Diagnosis]) + @i AS NVarChar(Max))
 WHEN NOT MATCHED THEN
 	INSERT
 	(
@@ -58,7 +58,7 @@ WHEN NOT MATCHED THEN
 	VALUES
 	(
 		@id,
-		CAST(Len(@diagnosis) + @i AS NVarChar(11))
+		CAST(Len(@diagnosis) + @i AS NVarChar(Max))
 	);
 
 BeforeExecute
@@ -78,7 +78,7 @@ USING (SELECT @id AS [PersonID]) [s] ON
 WHEN MATCHED THEN
 	UPDATE 
 	SET
-		[Diagnosis] = CAST(Len([t1].[Diagnosis]) + @i AS NVarChar(11))
+		[Diagnosis] = CAST(Len([t1].[Diagnosis]) + @i AS NVarChar(Max))
 WHEN NOT MATCHED THEN
 	INSERT
 	(
@@ -88,7 +88,7 @@ WHEN NOT MATCHED THEN
 	VALUES
 	(
 		@id,
-		CAST(Len(@diagnosis) + @i AS NVarChar(11))
+		CAST(Len(@diagnosis) + @i AS NVarChar(Max))
 	);
 
 BeforeExecute
@@ -108,7 +108,7 @@ USING (SELECT @id AS [PersonID]) [s] ON
 WHEN MATCHED THEN
 	UPDATE 
 	SET
-		[Diagnosis] = CAST(Len([t1].[Diagnosis]) + @i AS NVarChar(11))
+		[Diagnosis] = CAST(Len([t1].[Diagnosis]) + @i AS NVarChar(Max))
 WHEN NOT MATCHED THEN
 	INSERT
 	(
@@ -118,7 +118,7 @@ WHEN NOT MATCHED THEN
 	VALUES
 	(
 		@id,
-		CAST(Len(@diagnosis) + @i AS NVarChar(11))
+		CAST(Len(@diagnosis) + @i AS NVarChar(Max))
 	);
 
 BeforeExecute
