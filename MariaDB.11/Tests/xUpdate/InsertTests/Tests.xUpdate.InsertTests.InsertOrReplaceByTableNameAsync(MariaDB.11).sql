@@ -8,8 +8,8 @@ BeforeExecute
 
 CREATE TABLE `xxPatient`
 (
-	`PersonID`  INT           NOT NULL,
-	`Diagnosis` VARCHAR(4000)     NULL,
+	`PersonID`  INT          NOT NULL,
+	`Diagnosis` VARCHAR(255)     NULL,
 
 	CONSTRAINT `PK_xxPatient` PRIMARY KEY CLUSTERED (`PersonID`)
 )

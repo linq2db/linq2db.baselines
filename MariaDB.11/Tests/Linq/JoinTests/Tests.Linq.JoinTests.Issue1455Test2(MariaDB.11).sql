@@ -33,8 +33,8 @@ FROM
 					`al_group`.`AlertCode`,
 					`al_group`.`CreationDate`
 			) `al_group_1`
-				LEFT JOIN `Trade` `trade_1` ON `al_group_1`.`AlertKey` = CAST(`trade_1`.`DealId` AS CHAR(11))
-				LEFT JOIN `Nomin` `nomin_1` ON `al_group_1`.`AlertKey` = CAST(`nomin_1`.`CargoId` AS CHAR(11))
+				LEFT JOIN `Trade` `trade_1` ON `al_group_1`.`AlertKey` = CAST(`trade_1`.`DealId` AS CHAR(255))
+				LEFT JOIN `Nomin` `nomin_1` ON `al_group_1`.`AlertKey` = CAST(`nomin_1`.`CargoId` AS CHAR(255))
 		WHERE
 			`nomin_1`.`DeliveryCounterParty` LIKE @cond OR `trade_1`.`CounterParty` LIKE @cond OR
 			`al_group_1`.`AlertCode` LIKE @cond
@@ -71,8 +71,8 @@ FROM
 						`al_group_2`.`AlertCode`,
 						`al_group_2`.`CreationDate`
 				) `t1`
-					LEFT JOIN `Trade` `trade_2` ON `t1`.`AlertKey` = CAST(`trade_2`.`DealId` AS CHAR(11))
-					LEFT JOIN `Nomin` `nomin_2` ON `t1`.`AlertKey` = CAST(`nomin_2`.`CargoId` AS CHAR(11))
+					LEFT JOIN `Trade` `trade_2` ON `t1`.`AlertKey` = CAST(`trade_2`.`DealId` AS CHAR(255))
+					LEFT JOIN `Nomin` `nomin_2` ON `t1`.`AlertKey` = CAST(`nomin_2`.`CargoId` AS CHAR(255))
 			WHERE
 				`nomin_2`.`DeliveryCounterParty` LIKE @cond OR `trade_2`.`CounterParty` LIKE @cond OR
 				`t1`.`AlertCode` LIKE @cond

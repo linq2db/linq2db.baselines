@@ -14,21 +14,21 @@ SELECT @p
 
 BeforeExecute
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql
-DECLARE @p VarChar(4000) -- String
+DECLARE @p VarChar(1) -- String
 SET     @p = 'A'
 
 SELECT @p
 
 BeforeExecute
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql
-DECLARE @p VarChar(4000) -- String
+DECLARE @p VarChar(1) -- String
 SET     @p = 'A'
 
 SELECT @p
 
 BeforeExecute
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql
-DECLARE @p VarChar(4000) -- String
+DECLARE @p VarChar(1) -- String
 SET     @p = 'A'
 
 SELECT @p
