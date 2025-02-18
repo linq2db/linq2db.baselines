@@ -15,7 +15,7 @@ FROM
 		CROSS APPLY (
 			SELECT
 				[d].[ParentID] as [Key_1],
-				STRING_AGG(CAST([d].[ChildID] AS NVarChar(11)), N', ') as [ToValue]
+				STRING_AGG(CAST([d].[ChildID] AS NVarChar(Max)), N', ') as [ToValue]
 			FROM
 				[Child] [d]
 			WHERE
