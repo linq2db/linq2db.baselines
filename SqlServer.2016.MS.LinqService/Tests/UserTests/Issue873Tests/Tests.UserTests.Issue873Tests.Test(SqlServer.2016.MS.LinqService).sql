@@ -2,7 +2,7 @@
 -- SqlServer.2016.MS SqlServer.2016
 
 SELECT
-	N' ' + CAST(Coalesce([t2].[Value1], 0) AS NVarChar(11)),
+	N' ' + CAST(Coalesce([t2].[Value1], 0) AS NVarChar(Max)),
 	[t2].[c1],
 	IIF(EXISTS(
 		SELECT
@@ -45,6 +45,6 @@ FROM
 			[Parent] [f]
 	) [t2]
 WHERE
-	N' ' + CAST(Coalesce([t2].[Value1], 0) AS NVarChar(11)) LIKE N'%1%' ESCAPE N'~' AND
+	N' ' + CAST(Coalesce([t2].[Value1], 0) AS NVarChar(Max)) LIKE N'%1%' ESCAPE N'~' AND
 	[t2].[c1] > 0
 
