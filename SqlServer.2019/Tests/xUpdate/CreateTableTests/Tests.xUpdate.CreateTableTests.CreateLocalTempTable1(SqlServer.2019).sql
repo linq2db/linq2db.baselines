@@ -8,10 +8,10 @@ BeforeExecute
 
 CREATE TABLE [tempdb]..[#TestTable]
 (
-	[ID]        Int            NOT NULL,
-	[Field1]    NVarChar(50)       NULL,
-	[Field2]    NVarChar(4000)     NULL,
-	[CreatedOn] DateTime2          NULL
+	[ID]        Int           NOT NULL,
+	[Field1]    NVarChar(50)      NULL,
+	[Field2]    NVarChar(Max)     NULL,
+	[CreatedOn] DateTime2         NULL
 )
 
 BeforeExecute

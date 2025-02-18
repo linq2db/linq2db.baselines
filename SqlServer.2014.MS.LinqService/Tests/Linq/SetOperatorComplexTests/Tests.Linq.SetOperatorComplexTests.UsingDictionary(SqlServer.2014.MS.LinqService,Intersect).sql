@@ -2,7 +2,7 @@
 -- SqlServer.2014.MS SqlServer.2014
 
 SELECT
-	CAST(N'Discriminator' AS NVarChar(4000)),
+	CAST(N'Discriminator' AS NVarChar(Max)),
 	[a_Book].[Discriminator],
 	[a_Book].[BookName],
 	[a_Book].[BookName]
@@ -14,7 +14,7 @@ WHERE
 	[a_Book].[Discriminator] = N'Roman'
 INTERSECT
 SELECT
-	CAST(N'Discriminator' AS NVarChar(4000)),
+	CAST(N'Discriminator' AS NVarChar(Max)),
 	[a_Book_1].[Discriminator],
 	[a_Book_1].[BookName],
 	[a_Book_1].[BookName]
