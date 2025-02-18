@@ -2,7 +2,7 @@
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
 
 SELECT
-	Concat(' ', CAST(Coalesce(`t1`.`Value1`, 0) AS CHAR(11))),
+	Concat(' ', CAST(Coalesce(`t1`.`Value1`, 0) AS CHAR(255))),
 	`t1`.`c1`,
 	EXISTS(
 		SELECT
@@ -40,6 +40,6 @@ FROM
 			`Parent` `f`
 	) `t1`
 WHERE
-	LOCATE('1', Concat(' ', CAST(Coalesce(`t1`.`Value1`, 0) AS CHAR(11)))) > 0 AND
+	LOCATE('1', Concat(' ', CAST(Coalesce(`t1`.`Value1`, 0) AS CHAR(255)))) > 0 AND
 	`t1`.`c1` > 0
 

@@ -17,7 +17,7 @@ FROM
 		INNER JOIN LATERAL (
 			SELECT
 				`d`.`ParentID` as `Key_1`,
-				GROUP_CONCAT(CAST(`d`.`ChildID` AS CHAR(11)) SEPARATOR ', ') as `ToValue`
+				GROUP_CONCAT(CAST(`d`.`ChildID` AS CHAR(255)) SEPARATOR ', ') as `ToValue`
 			FROM
 				`Child` `d`
 			WHERE
