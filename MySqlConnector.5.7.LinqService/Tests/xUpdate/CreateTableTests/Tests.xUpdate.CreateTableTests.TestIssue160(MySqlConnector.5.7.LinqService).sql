@@ -3,8 +3,8 @@
 
 CREATE TABLE `aa`
 (
-	`bb` INT           NOT NULL,
-	`cc` VARCHAR(4000)     NULL,
+	`bb` INT          NOT NULL,
+	`cc` VARCHAR(255)     NULL,
 
 	CONSTRAINT `PK_aa` PRIMARY KEY CLUSTERED (`bb`)
 )

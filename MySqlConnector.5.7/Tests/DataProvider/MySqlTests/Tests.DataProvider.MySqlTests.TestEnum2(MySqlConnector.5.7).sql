@@ -14,21 +14,21 @@ SELECT @p
 
 BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-DECLARE @p VarChar(4000) -- String
+DECLARE @p VarChar(1) -- String
 SET     @p = 'A'
 
 SELECT @p
 
 BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-DECLARE @p VarChar(4000) -- String
+DECLARE @p VarChar(1) -- String
 SET     @p = 'A'
 
 SELECT @p
 
 BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-DECLARE @p VarChar(4000) -- String
+DECLARE @p VarChar(1) -- String
 SET     @p = 'A'
 
 SELECT @p
