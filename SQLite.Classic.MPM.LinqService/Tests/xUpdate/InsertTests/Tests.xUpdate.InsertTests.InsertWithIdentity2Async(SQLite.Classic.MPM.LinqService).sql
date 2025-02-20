@@ -28,6 +28,21 @@ BeforeExecute
 SELECT last_insert_rowid()
 
 BeforeExecute
+-- SQLite.Classic.MPM SQLite.Classic SQLite (asynchronously)
+
+SELECT
+	[p].[FirstName],
+	[p].[PersonID],
+	[p].[LastName],
+	[p].[MiddleName],
+	[p].[Gender]
+FROM
+	[Person] [p]
+WHERE
+	[p].[FirstName] = 'John' AND [p].[LastName] = 'Shepard'
+LIMIT 2
+
+BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
 DELETE FROM
