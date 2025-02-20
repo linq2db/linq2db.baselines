@@ -31,3 +31,106 @@ VALUES
 
 SELECT SCOPE_IDENTITY()
 
+BeforeExecute
+-- SqlServer.2005 (asynchronously)
+DECLARE @Diagnosis NVarChar(4000) -- String
+SET     @Diagnosis = N'abc0'
+DECLARE @PersonID Int -- Int32
+SET     @PersonID = 5
+
+UPDATE
+	[Patient]
+SET
+	[Diagnosis] = @Diagnosis
+FROM
+	[Patient] [t1]
+WHERE
+	[t1].[PersonID] = @PersonID
+
+IF @@ROWCOUNT = 0
+BEGIN
+	INSERT INTO [Patient]
+	(
+		[PersonID],
+		[Diagnosis]
+	)
+	VALUES
+	(
+		@PersonID,
+		@Diagnosis
+	)
+END
+
+BeforeExecute
+-- SqlServer.2005 (asynchronously)
+DECLARE @Diagnosis NVarChar(4000) -- String
+SET     @Diagnosis = N'abc1'
+DECLARE @PersonID Int -- Int32
+SET     @PersonID = 5
+
+UPDATE
+	[Patient]
+SET
+	[Diagnosis] = @Diagnosis
+FROM
+	[Patient] [t1]
+WHERE
+	[t1].[PersonID] = @PersonID
+
+IF @@ROWCOUNT = 0
+BEGIN
+	INSERT INTO [Patient]
+	(
+		[PersonID],
+		[Diagnosis]
+	)
+	VALUES
+	(
+		@PersonID,
+		@Diagnosis
+	)
+END
+
+BeforeExecute
+-- SqlServer.2005 (asynchronously)
+DECLARE @Diagnosis NVarChar(4000) -- String
+SET     @Diagnosis = N'abc2'
+DECLARE @PersonID Int -- Int32
+SET     @PersonID = 5
+
+UPDATE
+	[Patient]
+SET
+	[Diagnosis] = @Diagnosis
+FROM
+	[Patient] [t1]
+WHERE
+	[t1].[PersonID] = @PersonID
+
+IF @@ROWCOUNT = 0
+BEGIN
+	INSERT INTO [Patient]
+	(
+		[PersonID],
+		[Diagnosis]
+	)
+	VALUES
+	(
+		@PersonID,
+		@Diagnosis
+	)
+END
+
+BeforeExecute
+-- SqlServer.2005 (asynchronously)
+DECLARE @id Int -- Int32
+SET     @id = 5
+
+SELECT TOP (2)
+	[p].[PersonID],
+	[p].[Diagnosis]
+FROM
+	[Patient] [p]
+WHERE
+	[p].[PersonID] = @id
+

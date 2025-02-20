@@ -59,3 +59,74 @@ BeforeExecute
 
 SELECT DBINFO('sqlca.sqlerrd1') FROM systables where tabid = 1
 
+BeforeExecute
+-- Informix.DB2 Informix (asynchronously)
+DECLARE @i Integer(4) -- Int32
+SET     @i = 0
+DECLARE @id2 Integer(4) -- Int32
+SET     @id2 = 5
+
+UPDATE
+	Patient t1
+SET
+	Diagnosis = To_Char(CHAR_LENGTH(t1.Diagnosis) + @i::Int)
+WHERE
+	t1.PersonID = @id2
+
+BeforeExecute
+-- Informix.DB2 Informix (asynchronously)
+DECLARE @id Integer(4) -- Int32
+SET     @id = 5
+
+INSERT INTO Patient
+(
+	PersonID,
+	Diagnosis
+)
+VALUES
+(
+	@id,
+	'abc'
+)
+
+BeforeExecute
+-- Informix.DB2 Informix (asynchronously)
+DECLARE @i Integer(4) -- Int32
+SET     @i = 1
+DECLARE @id2 Integer(4) -- Int32
+SET     @id2 = 5
+
+UPDATE
+	Patient t1
+SET
+	Diagnosis = To_Char(CHAR_LENGTH(t1.Diagnosis) + @i::Int)
+WHERE
+	t1.PersonID = @id2
+
+BeforeExecute
+-- Informix.DB2 Informix (asynchronously)
+DECLARE @i Integer(4) -- Int32
+SET     @i = 2
+DECLARE @id2 Integer(4) -- Int32
+SET     @id2 = 5
+
+UPDATE
+	Patient t1
+SET
+	Diagnosis = To_Char(CHAR_LENGTH(t1.Diagnosis) + @i::Int)
+WHERE
+	t1.PersonID = @id2
+
+BeforeExecute
+-- Informix.DB2 Informix (asynchronously)
+DECLARE @id Integer(4) -- Int32
+SET     @id = 5
+
+SELECT FIRST 2
+	p.PersonID,
+	p.Diagnosis
+FROM
+	Patient p
+WHERE
+	p.PersonID = @id
+
