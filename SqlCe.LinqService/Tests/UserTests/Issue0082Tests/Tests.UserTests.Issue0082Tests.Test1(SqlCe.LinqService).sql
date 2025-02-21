@@ -37,13 +37,13 @@ BeforeExecute
 
 SELECT
 	[x].[ParentID],
-	[t1].[COUNT_1],
+	[t1].[CountResult],
 	[t2].[SUM_1]
 FROM
 	[Parent] [x]
 		OUTER APPLY (
 			SELECT
-				COUNT(*) as [COUNT_1]
+				COUNT(*) as [CountResult]
 			FROM
 				[Child] [od]
 			WHERE
@@ -58,5 +58,5 @@ FROM
 				[x].[ParentID] = [od_1].[ParentID]
 		) [t2]
 WHERE
-	[t1].[COUNT_1] > 0
+	[t1].[CountResult] > 0
 

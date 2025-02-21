@@ -1397,7 +1397,7 @@ SELECT ?
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @p VarChar(1, 0) -- AnsiString
+DECLARE @p VarChar(18, 10) -- AnsiString
 SET     @p = 1
 
 SELECT ?
@@ -1448,7 +1448,7 @@ SELECT ?
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @p VarChar(1, 0) -- AnsiString
+DECLARE @p VarChar(18, 10) -- AnsiString
 SET     @p = 1
 
 SELECT ?
@@ -1469,7 +1469,7 @@ SELECT CVar(?)
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @p VarChar -- AnsiString
+DECLARE @p VarChar(18, 10) -- AnsiString
 SET     @p = NULL
 
 SELECT CVar(?)
@@ -1520,7 +1520,7 @@ SELECT ?
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @p VarChar(1, 0) -- AnsiString
+DECLARE @p VarChar(18, 10) -- AnsiString
 SET     @p = 1
 
 SELECT ?
@@ -1571,7 +1571,7 @@ SELECT ?
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @p VarChar(1, 0) -- AnsiString
+DECLARE @p VarChar(18, 10) -- AnsiString
 SET     @p = 1
 
 SELECT ?
@@ -1592,7 +1592,7 @@ SELECT CVar(?)
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @p VarChar -- AnsiString
+DECLARE @p VarChar(18, 10) -- AnsiString
 SET     @p = NULL
 
 SELECT CVar(?)
@@ -1643,7 +1643,7 @@ SELECT ?
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @p VarChar(1, 0) -- AnsiString
+DECLARE @p VarChar(18, 10) -- AnsiString
 SET     @p = 1
 
 SELECT ?
@@ -1694,7 +1694,7 @@ SELECT ?
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @p VarChar(1, 0) -- AnsiString
+DECLARE @p VarChar(18, 10) -- AnsiString
 SET     @p = 1
 
 SELECT ?
@@ -1715,7 +1715,7 @@ SELECT CVar(?)
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @p VarChar -- AnsiString
+DECLARE @p VarChar(18, 10) -- AnsiString
 SET     @p = NULL
 
 SELECT CVar(?)
@@ -1766,7 +1766,7 @@ SELECT ?
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @p VarChar(1, 0) -- AnsiString
+DECLARE @p VarChar(18, 10) -- AnsiString
 SET     @p = 1
 
 SELECT ?
@@ -1817,7 +1817,7 @@ SELECT ?
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @p VarChar(1, 0) -- AnsiString
+DECLARE @p VarChar(18, 10) -- AnsiString
 SET     @p = 1
 
 SELECT ?
@@ -1838,7 +1838,7 @@ SELECT CVar(?)
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @p VarChar -- AnsiString
+DECLARE @p VarChar(18, 10) -- AnsiString
 SET     @p = NULL
 
 SELECT CVar(?)
@@ -2435,7 +2435,7 @@ SELECT ?
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @p VarChar(29, 0) -- AnsiString
+DECLARE @p VarChar(18, 10) -- AnsiString
 SET     @p = -79228162514264337593543950335
 
 SELECT ?
@@ -2456,7 +2456,7 @@ SELECT ?
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @p VarChar(29, 0) -- AnsiString
+DECLARE @p VarChar(18, 10) -- AnsiString
 SET     @p = 79228162514264337593543950335
 
 SELECT ?
@@ -2477,7 +2477,7 @@ SELECT ?
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @p VarChar(10, 9) -- AnsiString
+DECLARE @p VarChar(18, 10) -- AnsiString
 SET     @p = 1.123456789
 
 SELECT ?
@@ -2498,7 +2498,7 @@ SELECT ?
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @p VarChar(10, 9) -- AnsiString
+DECLARE @p VarChar(18, 10) -- AnsiString
 SET     @p = -1.123456789
 
 SELECT ?
@@ -2529,7 +2529,7 @@ SELECT ?
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @p VarChar(15, 0) -- AnsiString
+DECLARE @p VarChar(18, 10) -- AnsiString
 SET     @p = -922337203685477
 
 SELECT ?
@@ -2560,7 +2560,7 @@ SELECT ?
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @p VarChar(15, 0) -- AnsiString
+DECLARE @p VarChar(18, 10) -- AnsiString
 SET     @p = 922337203685477
 
 SELECT ?
@@ -2601,7 +2601,7 @@ SELECT ?
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @p VarChar(6, 0) -- AnsiString
+DECLARE @p VarChar(18, 10) -- AnsiString
 SET     @p = -214748
 
 SELECT ?
@@ -2642,7 +2642,7 @@ SELECT ?
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @p VarChar(6, 0) -- AnsiString
+DECLARE @p VarChar(18, 10) -- AnsiString
 SET     @p = 214748
 
 SELECT ?
