@@ -2,16 +2,17 @@
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
 SELECT
-	[t1].[ParentID]
+	(
+		SELECT
+			[ch].[ParentID]
+		FROM
+			[Child] [ch]
+		WHERE
+			[p].[ParentID] = [ch].[ParentID]
+		LIMIT 1
+	)
 FROM
 	[Parent] [p]
-		INNER JOIN (
-			SELECT
-				[ch].[ParentID],
-				ROW_NUMBER() OVER (PARTITION BY [ch].[ParentID] ORDER BY [ch].[ParentID]) as [rn]
-			FROM
-				[Child] [ch]
-		) [t1] ON [p].[ParentID] = [t1].[ParentID] AND [t1].[rn] <= 1
 WHERE
 	[p].[ParentID] = 1
 
