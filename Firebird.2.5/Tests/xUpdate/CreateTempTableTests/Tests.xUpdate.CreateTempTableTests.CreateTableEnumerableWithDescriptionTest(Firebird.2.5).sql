@@ -26,7 +26,7 @@ INSERT INTO "TempTable"
 (
 	"Name"
 )
-SELECT CAST('John' AS VarChar(255) CHARACTER SET UNICODE_FSS) FROM rdb$database
+SELECT CAST('John' AS VarChar(20) CHARACTER SET UNICODE_FSS) FROM rdb$database
 
 BeforeExecute
 -- Firebird.2.5 Firebird
