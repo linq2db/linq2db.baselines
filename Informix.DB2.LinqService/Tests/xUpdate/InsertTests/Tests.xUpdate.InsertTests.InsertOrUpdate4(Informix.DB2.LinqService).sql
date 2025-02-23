@@ -71,7 +71,7 @@ UPDATE
 SET
 	Diagnosis = To_Char(CHAR_LENGTH(t1.Diagnosis) + @i::Int)
 WHERE
-	t1.PersonID = @id
+	t1.PersonID = @id::Int
 
 BeforeExecute
 -- Informix.DB2 Informix
@@ -89,7 +89,7 @@ INSERT INTO Patient
 )
 VALUES
 (
-	@id,
+	@id::Int,
 	To_Char(CHAR_LENGTH(@diagnosis::NVarChar(3)) + @i::Int)
 )
 
@@ -105,7 +105,7 @@ UPDATE
 SET
 	Diagnosis = To_Char(CHAR_LENGTH(t1.Diagnosis) + @i::Int)
 WHERE
-	t1.PersonID = @id
+	t1.PersonID = @id::Int
 
 BeforeExecute
 -- Informix.DB2 Informix
@@ -119,7 +119,7 @@ UPDATE
 SET
 	Diagnosis = To_Char(CHAR_LENGTH(t1.Diagnosis) + @i::Int)
 WHERE
-	t1.PersonID = @id
+	t1.PersonID = @id::Int
 
 BeforeExecute
 -- Informix.DB2 Informix
