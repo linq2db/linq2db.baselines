@@ -85,7 +85,7 @@ INSERT INTO Patient
 )
 VALUES
 (
-	@id,
+	@id::Int,
 	'abc'
 )
 

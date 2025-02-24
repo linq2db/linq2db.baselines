@@ -12,10 +12,11 @@ SET     @personId_3 = 0
 SELECT
 	COUNT(*) > 0
 FROM
-	[Person] [t1],
+	[Person] [t1]
+WHERE
 	(
 		SELECT
-			COUNT([t2].[PersonID]) as [cond]
+			COUNT([t2].[PersonID])
 		FROM
 			[Patient] [t2]
 		WHERE
@@ -27,22 +28,20 @@ FROM
 				WHERE
 					[t3].[PersonID] = @personId_1
 			)
-	) [t4],
+	) = 0 AND
 	(
 		SELECT
-			COUNT([t5].[PersonID]) as [cond]
+			COUNT([t4].[PersonID])
 		FROM
-			[Patient] [t5]
+			[Patient] [t4]
 		WHERE
-			[t5].[PersonID] = @personId_2 AND [t5].[PersonID] NOT IN (
+			[t4].[PersonID] = @personId_2 AND [t4].[PersonID] NOT IN (
 				SELECT
-					[t6].[PersonID]
+					[t5].[PersonID]
 				FROM
-					[Patient] [t6]
+					[Patient] [t5]
 				WHERE
-					[t6].[PersonID] = @personId_3
+					[t5].[PersonID] = @personId_3
 			)
-	) [t7]
-WHERE
-	[t4].[cond] = 0 AND [t7].[cond] = 0
+	) = 0
 

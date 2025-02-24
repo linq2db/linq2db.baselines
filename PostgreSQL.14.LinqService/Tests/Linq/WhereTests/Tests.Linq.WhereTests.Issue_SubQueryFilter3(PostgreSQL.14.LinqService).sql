@@ -16,34 +16,32 @@ WHERE
 			*
 		FROM
 			"Person" p
-				INNER JOIN LATERAL (
-					SELECT
-						d."PersonID" as cond
-					FROM
-						"Person" d
-					WHERE
-						d."PersonID" = patient_1."PersonID"
-					LIMIT 1
-				) t1 ON 1=1
 		WHERE
-			p."FirstName" LIKE :filter ESCAPE '~' AND p."PersonID" = t1.cond
+			p."FirstName" LIKE :filter ESCAPE '~' AND p."PersonID" = (
+				SELECT
+					d."PersonID"
+				FROM
+					"Person" d
+				WHERE
+					d."PersonID" = patient_1."PersonID"
+				LIMIT 1
+			)
 	) AND
 	EXISTS(
 		SELECT
 			*
 		FROM
 			"Person" p_1
-				INNER JOIN LATERAL (
-					SELECT
-						d_1."PersonID" as cond
-					FROM
-						"Person" d_1
-					WHERE
-						d_1."PersonID" = patient_1."PersonID"
-					LIMIT 1
-				) t2 ON 1=1
 		WHERE
-			p_1."FirstName" LIKE :filter_1 ESCAPE '~' AND p_1."PersonID" = t2.cond
+			p_1."FirstName" LIKE :filter_1 ESCAPE '~' AND p_1."PersonID" = (
+				SELECT
+					d_1."PersonID"
+				FROM
+					"Person" d_1
+				WHERE
+					d_1."PersonID" = patient_1."PersonID"
+				LIMIT 1
+			)
 	)
 ORDER BY
 	patient_1."PersonID"
