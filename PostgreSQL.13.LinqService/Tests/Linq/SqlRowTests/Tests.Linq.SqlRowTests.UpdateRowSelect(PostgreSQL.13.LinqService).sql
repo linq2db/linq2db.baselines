@@ -5,12 +5,18 @@ UPDATE
 	"Ints"
 SET
 	"One" = "Ints"."Two" * 5,
-	("Two", "Three") = ("Ints"."Two" * 10, j."Three" * 100),
+	("Two", "Three") = (
+		SELECT
+			"Ints"."Two" * 10,
+			j."Three" * 100
+		FROM
+			"Ints" j
+		WHERE
+			j."One" = 1
+	),
 	("Four", "Nil") = ("Ints"."One" * "Ints"."Four", 600)
-FROM
-	"Ints" j
 WHERE
-	"Ints"."One" = 10 AND j."One" = 1
+	"Ints"."One" = 10
 
 BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL

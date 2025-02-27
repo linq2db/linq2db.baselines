@@ -15,31 +15,29 @@ WHERE
 		SELECT
 			*
 		FROM
-			[Person] [e],
-			(
-				SELECT TOP 1
-					[d].[PersonID] as [cond]
-				FROM
-					[Patient] [d]
-			) [t1]
+			[Person] [e]
 		WHERE
 			[e].[PersonID] = [p].[PersonID] AND [e].[FirstName] LIKE ? AND
-			[e].[PersonID] = [t1].[cond]
+			[e].[PersonID] = (
+				SELECT TOP 1
+					[d].[PersonID]
+				FROM
+					[Patient] [d]
+			)
 	) OR
 	EXISTS(
 		SELECT
 			*
 		FROM
-			[Person] [e_1],
-			(
-				SELECT TOP 1
-					[d_1].[PersonID] as [cond]
-				FROM
-					[Patient] [d_1]
-			) [t2]
+			[Person] [e_1]
 		WHERE
 			[e_1].[PersonID] = [p].[PersonID] AND [e_1].[FirstName] LIKE ? AND
-			[e_1].[PersonID] = [t2].[cond]
+			[e_1].[PersonID] = (
+				SELECT TOP 1
+					[d_1].[PersonID]
+				FROM
+					[Patient] [d_1]
+			)
 	)
 ORDER BY
 	[p].[PersonID]

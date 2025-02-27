@@ -2,60 +2,26 @@
 -- Oracle.12.Managed Oracle.Managed Oracle12
 
 UPDATE
-	"Ints"
+	"Ints" i
 SET
-	"One" = "Ints"."Two" * 5,
+	"One" = i."Two" * 5,
 	("Two", "Three") = (
 		SELECT
-			"Ints"."Two" * 10,
-			j_1."Three" * 100
+			i."Two" * 10,
+			j."Three" * 100
 		FROM
-			"Ints" i_1,
-			"Ints" j_1
+			"Ints" j
 		WHERE
-			i_1."One" = 10 AND
-			j_1."One" = 1 AND
-			"Ints"."One" = i_1."One" AND
-			"Ints"."Two" = i_1."Two" AND
-			"Ints"."Three" = i_1."Three" AND
-			"Ints"."Four" = i_1."Four" AND
-			"Ints"."Five" = i_1."Five" AND
-			("Ints"."Nil" = i_1."Nil" OR "Ints"."Nil" IS NULL AND i_1."Nil" IS NULL)
+			j."One" = 1
 	),
 	("Four", "Nil") = (
 		SELECT
-			"Ints"."One" * "Ints"."Four",
+			i."One" * i."Four",
 			600
-		FROM
-			"Ints" i_2,
-			"Ints" j_2
-		WHERE
-			i_2."One" = 10 AND
-			j_2."One" = 1 AND
-			"Ints"."One" = i_2."One" AND
-			"Ints"."Two" = i_2."Two" AND
-			"Ints"."Three" = i_2."Three" AND
-			"Ints"."Four" = i_2."Four" AND
-			"Ints"."Five" = i_2."Five" AND
-			("Ints"."Nil" = i_2."Nil" OR "Ints"."Nil" IS NULL AND i_2."Nil" IS NULL)
+		FROM SYS.DUAL
 	)
 WHERE
-	EXISTS(
-		SELECT
-			*
-		FROM
-			"Ints" i,
-			"Ints" j
-		WHERE
-			i."One" = 10 AND
-			j."One" = 1 AND
-			"Ints"."One" = i."One" AND
-			"Ints"."Two" = i."Two" AND
-			"Ints"."Three" = i."Three" AND
-			"Ints"."Four" = i."Four" AND
-			"Ints"."Five" = i."Five" AND
-			("Ints"."Nil" = i."Nil" OR "Ints"."Nil" IS NULL AND i."Nil" IS NULL)
-	)
+	i."One" = 10
 
 BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12
