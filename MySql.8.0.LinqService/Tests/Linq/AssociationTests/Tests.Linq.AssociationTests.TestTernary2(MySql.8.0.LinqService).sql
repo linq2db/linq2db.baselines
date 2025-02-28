@@ -2,7 +2,6 @@
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
 
 SELECT
-	`a_Middle`.`ParentID`,
 	`a_Bottom`.`ParentID`,
 	`a_Bottom`.`ChildID`,
 	`a_Bottom`.`GrandChildID`
