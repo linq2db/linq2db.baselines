@@ -844,7 +844,7 @@ SELECT ID FROM `AllTypes` WHERE @p IS NULL AND charDataType IS NULL OR @p IS NOT
 
 BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
-DECLARE @p VarChar(4000) -- String
+DECLARE @p VarChar -- String
 SET     @p = NULL
 
 SELECT ID FROM `AllTypes` WHERE @p IS NULL AND charDataType IS NULL OR @p IS NOT NULL AND charDataType = @p
@@ -896,7 +896,7 @@ SELECT ID FROM `AllTypes` WHERE @p IS NULL AND charDataType IS NULL OR @p IS NOT
 
 BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
-DECLARE @p VarChar(4000) -- String
+DECLARE @p VarChar -- String
 SET     @p = NULL
 
 SELECT ID FROM `AllTypes` WHERE @p IS NULL AND charDataType IS NULL OR @p IS NOT NULL AND charDataType = @p
@@ -948,7 +948,7 @@ SELECT ID FROM `AllTypes` WHERE @p IS NULL AND varcharDataType IS NULL OR @p IS 
 
 BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
-DECLARE @p VarChar(4000) -- String
+DECLARE @p VarChar -- String
 SET     @p = NULL
 
 SELECT ID FROM `AllTypes` WHERE @p IS NULL AND varcharDataType IS NULL OR @p IS NOT NULL AND varcharDataType = @p
@@ -1000,7 +1000,7 @@ SELECT ID FROM `AllTypes` WHERE @p IS NULL AND varcharDataType IS NULL OR @p IS 
 
 BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
-DECLARE @p VarChar(4000) -- String
+DECLARE @p VarChar -- String
 SET     @p = NULL
 
 SELECT ID FROM `AllTypes` WHERE @p IS NULL AND varcharDataType IS NULL OR @p IS NOT NULL AND varcharDataType = @p
@@ -1052,7 +1052,7 @@ SELECT ID FROM `AllTypes` WHERE @p IS NULL AND textDataType IS NULL OR @p IS NOT
 
 BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
-DECLARE @p VarChar(4000) -- String
+DECLARE @p VarChar -- String
 SET     @p = NULL
 
 SELECT ID FROM `AllTypes` WHERE @p IS NULL AND textDataType IS NULL OR @p IS NOT NULL AND textDataType = @p
@@ -1551,7 +1551,7 @@ SELECT enumDataType FROM `AllTypes` WHERE ID = 1
 
 BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
-DECLARE @p VarChar(4000) -- String
+DECLARE @p VarChar -- String
 SET     @p = NULL
 
 SELECT ID FROM `AllTypes` WHERE @p IS NULL AND enumDataType IS NULL OR @p IS NOT NULL AND enumDataType = @p
@@ -1589,7 +1589,7 @@ SELECT setDataType FROM `AllTypes` WHERE ID = 1
 
 BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
-DECLARE @p VarChar(4000) -- String
+DECLARE @p VarChar -- String
 SET     @p = NULL
 
 SELECT ID FROM `AllTypes` WHERE @p IS NULL AND setDataType IS NULL OR @p IS NOT NULL AND setDataType = @p
