@@ -9,7 +9,7 @@ FROM
 	(
 		SELECT
 			[x].[PersonID] as [ID],
-			CAST(N'A' AS NVarChar(4000)) as [FirstName],
+			CAST(N'A' AS NVarChar(Max)) as [FirstName],
 			IIF([x].[FirstName] = N'123', N'Y', N'N') as [OK]
 		FROM
 			[Person] [x]
@@ -19,7 +19,7 @@ FROM
 		SELECT
 			[x_1].[PersonID] as [ID],
 			[x_1].[FirstName],
-			CAST(N'N' AS NVarChar(4000)) as [OK]
+			CAST(N'N' AS NVarChar(Max)) as [OK]
 		FROM
 			[Person] [x_1]
 		WHERE
