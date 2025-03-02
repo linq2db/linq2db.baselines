@@ -2,7 +2,7 @@
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
 
 SELECT
-	Concat(' ', CAST(Coalesce(`f`.`Value1`, 0) AS CHAR(11))),
+	Concat(' ', CAST(Coalesce(`f`.`Value1`, 0) AS CHAR(255))),
 	(
 		SELECT
 			SUM(`c_1`.`ChildID`)
@@ -33,7 +33,7 @@ SELECT
 FROM
 	`Parent` `f`
 WHERE
-	LOCATE('1', Concat(' ', CAST(Coalesce(`f`.`Value1`, 0) AS CHAR(11)))) > 0 AND
+	LOCATE('1', Concat(' ', CAST(Coalesce(`f`.`Value1`, 0) AS CHAR(255)))) > 0 AND
 	(
 		SELECT
 			SUM(`c_1`.`ChildID`)

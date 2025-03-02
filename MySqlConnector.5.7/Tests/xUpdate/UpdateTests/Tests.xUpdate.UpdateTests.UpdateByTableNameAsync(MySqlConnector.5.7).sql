@@ -8,11 +8,11 @@ BeforeExecute
 
 CREATE TABLE `xxPerson`
 (
-	`FirstName`  VARCHAR(4000)                NOT NULL,
-	`PersonID`   INT           AUTO_INCREMENT NOT NULL,
-	`LastName`   VARCHAR(4000)                NOT NULL,
-	`MiddleName` VARCHAR(4000)                    NULL,
-	`Gender`     CHAR                         NOT NULL,
+	`FirstName`  VARCHAR(255)                NOT NULL,
+	`PersonID`   INT          AUTO_INCREMENT NOT NULL,
+	`LastName`   VARCHAR(255)                NOT NULL,
+	`MiddleName` VARCHAR(255)                    NULL,
+	`Gender`     CHAR                        NOT NULL,
 
 	CONSTRAINT `PK_xxPerson` PRIMARY KEY CLUSTERED (`PersonID`)
 )
