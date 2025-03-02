@@ -43,7 +43,7 @@ SET     @diagnosis = N'abc'
 UPDATE
 	[Patient]
 SET
-	[Diagnosis] = CAST(Len([t1].[Diagnosis]) + @i AS NVarChar(11))
+	[Diagnosis] = CAST(Len([t1].[Diagnosis]) + @i AS NVarChar(Max))
 FROM
 	[Patient] [t1]
 WHERE
@@ -59,7 +59,7 @@ BEGIN
 	VALUES
 	(
 		@id,
-		CAST(Len(@diagnosis) + @i AS NVarChar(11))
+		CAST(Len(@diagnosis) + @i AS NVarChar(Max))
 	)
 END
 
@@ -75,7 +75,7 @@ SET     @diagnosis = N'abc'
 UPDATE
 	[Patient]
 SET
-	[Diagnosis] = CAST(Len([t1].[Diagnosis]) + @i AS NVarChar(11))
+	[Diagnosis] = CAST(Len([t1].[Diagnosis]) + @i AS NVarChar(Max))
 FROM
 	[Patient] [t1]
 WHERE
@@ -91,7 +91,7 @@ BEGIN
 	VALUES
 	(
 		@id,
-		CAST(Len(@diagnosis) + @i AS NVarChar(11))
+		CAST(Len(@diagnosis) + @i AS NVarChar(Max))
 	)
 END
 
@@ -107,7 +107,7 @@ SET     @diagnosis = N'abc'
 UPDATE
 	[Patient]
 SET
-	[Diagnosis] = CAST(Len([t1].[Diagnosis]) + @i AS NVarChar(11))
+	[Diagnosis] = CAST(Len([t1].[Diagnosis]) + @i AS NVarChar(Max))
 FROM
 	[Patient] [t1]
 WHERE
@@ -123,7 +123,7 @@ BEGIN
 	VALUES
 	(
 		@id,
-		CAST(Len(@diagnosis) + @i AS NVarChar(11))
+		CAST(Len(@diagnosis) + @i AS NVarChar(Max))
 	)
 END
 
