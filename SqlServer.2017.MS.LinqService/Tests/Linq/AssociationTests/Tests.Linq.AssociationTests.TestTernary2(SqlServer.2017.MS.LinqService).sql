@@ -2,7 +2,6 @@
 -- SqlServer.2017.MS SqlServer.2017
 
 SELECT
-	[a_Middle].[ParentID],
 	[a_Bottom].[ParentID],
 	[a_Bottom].[ChildID],
 	[a_Bottom].[GrandChildID]

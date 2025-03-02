@@ -2,7 +2,6 @@
 -- SqlCe
 
 SELECT
-	[a_Middle].[ParentID] as [cond],
 	[a_Bottom].[ParentID],
 	[a_Bottom].[ChildID],
 	[a_Bottom].[GrandChildID]

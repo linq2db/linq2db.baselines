@@ -3,7 +3,7 @@
 
 SELECT
 	"e"."FirstName",
-	CAST("a_Patient"."PersonID" IS NOT NULL AND "a_Person"."PersonID" IS NOT NULL AND "a_Person"."LastName" IS NOT NULL AS smallint),
+	CAST("a_Person"."PersonID" IS NOT NULL AND "a_Person"."LastName" IS NOT NULL AS smallint),
 	"a_Person"."LastName"
 FROM
 	"Person" "e"
