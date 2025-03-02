@@ -2,5 +2,5 @@
 -- SqlServer.2014
 
 SELECT
-	CONVERT(NVarChar(4000), 123)
+	CONVERT(NVarChar(Max), 123)
 
