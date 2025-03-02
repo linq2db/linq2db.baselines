@@ -2,5 +2,5 @@
 -- SqlServer.SA.MS SqlServer.2019
 
 SELECT
-	TRY_CAST(123 as NVarChar(4000))
+	TRY_CAST(123 as NVarChar(Max))
 
