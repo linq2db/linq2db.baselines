@@ -3,10 +3,10 @@
 
 CREATE TABLE [tempdb]..[#InsertTempTable_42]
 (
-	[Action]    NVarChar(4000)     NULL,
-	[NewId]     Int            NOT NULL,
-	[DeletedId] Int                NULL,
-	[SourceId]  Int                NULL
+	[Action]    NVarChar(Max)     NULL,
+	[NewId]     Int           NOT NULL,
+	[DeletedId] Int               NULL,
+	[SourceId]  Int               NULL
 )
 
 BeforeExecute

@@ -14,7 +14,7 @@ FROM
 		FROM
 			(
 				SELECT
-					CAST(N'Roman' AS NVarChar(4000)) as [cond],
+					CAST(N'Roman' AS NVarChar(Max)) as [cond],
 					[a_Book].[BookId]
 				FROM
 					[Author] [t1]
@@ -24,7 +24,7 @@ FROM
 					[a_Book].[Discriminator] = N'Roman'
 				UNION ALL
 				SELECT
-					CAST(N'Novel' AS NVarChar(4000)) as [cond],
+					CAST(N'Novel' AS NVarChar(Max)) as [cond],
 					NULL as [BookId]
 				FROM
 					[Author] [t2]
@@ -53,7 +53,7 @@ FROM
 		FROM
 			(
 				SELECT
-					CAST(N'Roman' AS NVarChar(4000)) as [cond],
+					CAST(N'Roman' AS NVarChar(Max)) as [cond],
 					NULL as [c1]
 				FROM
 					[Author] [t1]
@@ -63,7 +63,7 @@ FROM
 					[a_Book].[Discriminator] = N'Roman'
 				UNION ALL
 				SELECT
-					CAST(N'Novel' AS NVarChar(4000)) as [cond],
+					CAST(N'Novel' AS NVarChar(Max)) as [cond],
 					[a_Book_1].[BookId] as [c1]
 				FROM
 					[Author] [t2]
@@ -99,7 +99,7 @@ SELECT
 FROM
 	(
 		SELECT
-			CAST(N'Roman' AS NVarChar(4000)) as [BookType],
+			CAST(N'Roman' AS NVarChar(Max)) as [BookType],
 			[a_Book].[BookId],
 			NULL as [c1]
 		FROM
@@ -110,7 +110,7 @@ FROM
 			[a_Book].[Discriminator] = N'Roman'
 		UNION ALL
 		SELECT
-			CAST(N'Novel' AS NVarChar(4000)) as [BookType],
+			CAST(N'Novel' AS NVarChar(Max)) as [BookType],
 			NULL as [BookId],
 			[a_Book_1].[BookId] as [c1]
 		FROM
