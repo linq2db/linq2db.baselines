@@ -2,5 +2,5 @@
 -- SqlServer.2016.MS SqlServer.2016
 
 SELECT
-	TRY_CONVERT(NVarChar(4000), 123)
+	TRY_CONVERT(NVarChar(Max), 123)
 

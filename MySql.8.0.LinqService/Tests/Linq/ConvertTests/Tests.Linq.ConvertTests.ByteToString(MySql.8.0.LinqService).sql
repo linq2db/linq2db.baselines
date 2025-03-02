@@ -6,5 +6,5 @@ SELECT
 FROM
 	`LinqDataTypes` `p`
 WHERE
-	Char_Length(CAST(CAST(`p`.`ID` AS UNSIGNED) AS CHAR(3))) > 0
+	Char_Length(CAST(CAST(`p`.`ID` AS UNSIGNED) AS CHAR(255))) > 0
 

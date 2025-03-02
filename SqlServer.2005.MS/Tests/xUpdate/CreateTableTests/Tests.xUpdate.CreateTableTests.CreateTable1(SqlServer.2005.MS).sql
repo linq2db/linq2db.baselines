@@ -9,10 +9,10 @@ BeforeExecute
 
 CREATE TABLE [TestTable]
 (
-	[ID]        Int             NOT NULL IDENTITY,
-	[Field1]    NVarChar(50)        NULL,
-	[Field2]    NVarChar(4000)      NULL,
-	[CreatedOn] DateTime            NULL,
+	[ID]        Int            NOT NULL IDENTITY,
+	[Field1]    NVarChar(50)       NULL,
+	[Field2]    NVarChar(Max)      NULL,
+	[CreatedOn] DateTime           NULL,
 
 	CONSTRAINT [PK_TestTable] PRIMARY KEY CLUSTERED ([ID])
 )

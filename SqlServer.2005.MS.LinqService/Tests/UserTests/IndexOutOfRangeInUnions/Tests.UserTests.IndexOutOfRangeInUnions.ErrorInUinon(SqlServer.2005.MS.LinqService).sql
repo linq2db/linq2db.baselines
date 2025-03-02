@@ -7,7 +7,7 @@ SELECT
 		WHEN [doSap].[DocStatus] = N'O' THEN N'Aberto'
 		ELSE N'Fechado'
 	END,
-	CAST(N'Manual/Externo' AS NVarChar(4000))
+	CAST(N'Manual/Externo' AS NVarChar(Max))
 FROM
 	[O1] [doSap]
 UNION
@@ -17,7 +17,7 @@ SELECT
 		WHEN [doSap_1].[DocStatus] = N'O' THEN N'Aberto'
 		ELSE N'Fechado'
 	END,
-	CAST(N'Manual/Externo' AS NVarChar(4000))
+	CAST(N'Manual/Externo' AS NVarChar(Max))
 FROM
 	[O2] [doSap_1]
 UNION
@@ -27,7 +27,7 @@ SELECT
 		WHEN [doSap_2].[DocStatus] = N'O' THEN N'Aberto'
 		ELSE N'Fechado'
 	END,
-	CAST(N'Manual/Externo' AS NVarChar(4000))
+	CAST(N'Manual/Externo' AS NVarChar(Max))
 FROM
 	[O3] [doSap_2]
 

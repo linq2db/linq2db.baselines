@@ -1,6 +1,6 @@
 ﻿BeforeExecute
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql
-DECLARE @firstName VarChar(4000) -- String
+DECLARE @firstName VarChar(4) -- String
 SET     @firstName = 'John'
 
 SELECT
