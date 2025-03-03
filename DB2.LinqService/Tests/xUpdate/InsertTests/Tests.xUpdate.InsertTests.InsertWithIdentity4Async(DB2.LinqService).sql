@@ -40,6 +40,23 @@ FROM
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW (asynchronously)
+DECLARE @p VarChar(5) -- String
+SET     @p = 'John0'
+
+SELECT
+	"p"."FirstName",
+	"p"."PersonID",
+	"p"."LastName",
+	"p"."MiddleName",
+	"p"."Gender"
+FROM
+	"Person" "p"
+WHERE
+	"p"."FirstName" = @p AND "p"."LastName" = 'Shepard'
+FETCH NEXT 2 ROWS ONLY
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW (asynchronously)
 DECLARE @FirstName VarChar(5) -- String
 SET     @FirstName = 'John1'
 DECLARE @LastName VarChar(7) -- String
@@ -69,6 +86,23 @@ FROM
 			@Gender
 		)
 	)
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW (asynchronously)
+DECLARE @p VarChar(5) -- String
+SET     @p = 'John1'
+
+SELECT
+	"p"."FirstName",
+	"p"."PersonID",
+	"p"."LastName",
+	"p"."MiddleName",
+	"p"."Gender"
+FROM
+	"Person" "p"
+WHERE
+	"p"."FirstName" = @p AND "p"."LastName" = 'Shepard'
+FETCH NEXT 2 ROWS ONLY
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
