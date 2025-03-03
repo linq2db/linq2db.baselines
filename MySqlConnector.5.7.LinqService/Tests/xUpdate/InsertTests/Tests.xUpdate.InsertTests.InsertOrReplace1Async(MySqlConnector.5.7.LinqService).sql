@@ -34,3 +34,77 @@ BeforeExecute
 
 SELECT LAST_INSERT_ID()
 
+BeforeExecute
+-- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57 (asynchronously)
+DECLARE @PersonID Int32
+SET     @PersonID = 5
+DECLARE @Diagnosis VarChar(4) -- String
+SET     @Diagnosis = 'abc0'
+
+INSERT INTO `Patient`
+(
+	`PersonID`,
+	`Diagnosis`
+)
+VALUES
+(
+	@PersonID,
+	@Diagnosis
+)
+ON DUPLICATE KEY UPDATE
+	`Diagnosis` = @Diagnosis
+
+BeforeExecute
+-- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57 (asynchronously)
+DECLARE @PersonID Int32
+SET     @PersonID = 5
+DECLARE @Diagnosis VarChar(4) -- String
+SET     @Diagnosis = 'abc1'
+
+INSERT INTO `Patient`
+(
+	`PersonID`,
+	`Diagnosis`
+)
+VALUES
+(
+	@PersonID,
+	@Diagnosis
+)
+ON DUPLICATE KEY UPDATE
+	`Diagnosis` = @Diagnosis
+
+BeforeExecute
+-- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57 (asynchronously)
+DECLARE @PersonID Int32
+SET     @PersonID = 5
+DECLARE @Diagnosis VarChar(4) -- String
+SET     @Diagnosis = 'abc2'
+
+INSERT INTO `Patient`
+(
+	`PersonID`,
+	`Diagnosis`
+)
+VALUES
+(
+	@PersonID,
+	@Diagnosis
+)
+ON DUPLICATE KEY UPDATE
+	`Diagnosis` = @Diagnosis
+
+BeforeExecute
+-- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57 (asynchronously)
+DECLARE @id Int32
+SET     @id = 5
+
+SELECT
+	`p`.`PersonID`,
+	`p`.`Diagnosis`
+FROM
+	`Patient` `p`
+WHERE
+	`p`.`PersonID` = @id
+LIMIT 2
+
