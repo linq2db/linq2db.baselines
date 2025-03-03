@@ -36,7 +36,7 @@ VALUES
 BeforeExecute
 -- SQLite.MS SQLite
 DECLARE @lastId  -- Int32
-SET     @lastId = 3
+SET     @lastId = 597
 
 SELECT
 	[t1].[ID],
@@ -51,7 +51,7 @@ ORDER BY
 BeforeExecute
 -- SQLite.MS SQLite
 DECLARE @lastId  -- Int32
-SET     @lastId = 3
+SET     @lastId = 597
 
 DELETE FROM
 	[AllTypes]

@@ -31,13 +31,13 @@ INSERT INTO [AllTypes]
 	[intDataType]
 )
 VALUES
-(13,200),
-(23,300)
+(526,200),
+(536,300)
 
 BeforeExecute
 -- SQLite.MS SQLite
 DECLARE @lastId  -- Int32
-SET     @lastId = 3
+SET     @lastId = 516
 
 SELECT
 	[t1].[ID],
@@ -52,7 +52,7 @@ ORDER BY
 BeforeExecute
 -- SQLite.MS SQLite
 DECLARE @lastId  -- Int32
-SET     @lastId = 3
+SET     @lastId = 516
 
 DELETE FROM
 	[AllTypes]
