@@ -6,5 +6,5 @@ SELECT
 FROM
 	"InstanceClass" t
 WHERE
-	t."Id"::text || t."Value"::text = t."Id"::text || t."Value"
+	t."Id"::VarChar || t."Value"::VarChar = t."Id"::VarChar || t."Value"
 
