@@ -18,11 +18,16 @@ DECLARE @skip Integer -- Int32
 SET     @skip = 0
 
 SELECT FIRST @take SKIP @skip
-	"x"."DuplicateData"
+	"x_1"."DuplicateData"
 FROM
-	"OrderByDistinctData" "x"
-GROUP BY
-	"x"."DuplicateData"
+	(
+		SELECT
+			"x"."DuplicateData"
+		FROM
+			"OrderByDistinctData" "x"
+		GROUP BY
+			"x"."DuplicateData"
+	) "x_1"
 
 BeforeExecute
 -- Firebird.2.5 Firebird
@@ -44,9 +49,14 @@ DECLARE @skip Integer -- Int32
 SET     @skip = 0
 
 SELECT FIRST @take SKIP @skip
-	"x"."DuplicateData"
+	"x_1"."DuplicateData"
 FROM
-	"OrderByDistinctData" "x"
-GROUP BY
-	"x"."DuplicateData"
+	(
+		SELECT
+			"x"."DuplicateData"
+		FROM
+			"OrderByDistinctData" "x"
+		GROUP BY
+			"x"."DuplicateData"
+	) "x_1"
 

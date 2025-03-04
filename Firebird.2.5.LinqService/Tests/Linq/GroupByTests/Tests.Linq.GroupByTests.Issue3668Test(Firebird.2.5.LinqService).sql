@@ -6,17 +6,33 @@ DECLARE @name VarChar(4) -- String
 SET     @name = 'test'
 
 SELECT
-	"m_1"."PersonID",
-	"m_1"."FirstName",
-	"m_1"."PersonID",
-	"m_1"."LastName",
-	"m_1"."MiddleName",
-	"m_1"."Gender"
+	"m_1"."Key_1",
+	"d"."FirstName",
+	"d"."PersonID",
+	"d"."LastName",
+	"d"."MiddleName",
+	"d"."Gender"
 FROM
-	"Person" "m_1"
+	(
+		SELECT DISTINCT
+			"t1"."Key_1"
+		FROM
+			(
+				SELECT
+					"x"."PersonID" as "Key_1"
+				FROM
+					"Person" "x"
+				WHERE
+					"x"."PersonID" = @id AND "x"."LastName" <> @name OR
+					"x"."FirstName" <> @name AND "x"."PersonID" - 1 = @id
+				GROUP BY
+					"x"."PersonID"
+			) "t1"
+	) "m_1"
+		INNER JOIN "Person" "d" ON "m_1"."Key_1" = "d"."PersonID"
 WHERE
-	("m_1"."PersonID" = @id AND "m_1"."LastName" <> @name OR "m_1"."FirstName" <> @name AND "m_1"."PersonID" - 1 = @id) AND
-	("m_1"."PersonID" = @id AND "m_1"."LastName" <> @name OR "m_1"."FirstName" <> @name AND "m_1"."PersonID" - 1 = @id)
+	"d"."PersonID" = @id AND "d"."LastName" <> @name OR
+	"d"."FirstName" <> @name AND "d"."PersonID" - 1 = @id
 
 BeforeExecute
 -- Firebird.2.5 Firebird
