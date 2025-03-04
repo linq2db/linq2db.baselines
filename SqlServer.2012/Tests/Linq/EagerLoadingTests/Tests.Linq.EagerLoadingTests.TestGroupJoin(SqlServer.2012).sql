@@ -58,9 +58,16 @@ FROM
 				[d].[DetailId],
 				[d].[SubDetailValue]
 			FROM
-				[SubDetailClass] [d]
-			WHERE
-				[m_2].[DetailId] = [d].[DetailId]
+				(
+					SELECT
+						[a_SubDetails].[SubDetailValue],
+						[a_SubDetails].[SubDetailId],
+						[a_SubDetails].[DetailId]
+					FROM
+						[SubDetailClass] [a_SubDetails]
+					WHERE
+						[m_2].[DetailId] = [a_SubDetails].[DetailId]
+				) [d]
 			ORDER BY
 				[d].[SubDetailValue]
 		) [d_1]
