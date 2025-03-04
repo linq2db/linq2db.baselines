@@ -58,40 +58,45 @@ SELECT
 FROM
 	(
 		SELECT DISTINCT
-			[a_Reference].[Id] as [key_1]
+			[t2].[key_1]
 		FROM
-			[TestAggregateTable] [t1]
-				LEFT JOIN [TestAggregateTable] [a_Reference] ON [t1].[ReferenceId] = [a_Reference].[Id]
-		GROUP BY
-			[a_Reference].[Id],
-			[t1].[ReferenceId]
+			(
+				SELECT
+					[a_Reference].[Id] as [key_1]
+				FROM
+					[TestAggregateTable] [t1]
+						LEFT JOIN [TestAggregateTable] [a_Reference] ON [t1].[ReferenceId] = [a_Reference].[Id]
+				GROUP BY
+					[a_Reference].[Id],
+					[t1].[ReferenceId]
+			) [t2]
 	) [m_1]
 		CROSS APPLY (
 			SELECT
 				COUNT(*) as [count_1],
-				[t3].[Id],
-				[t3].[Id_1],
-				[t3].[hours],
-				[t3].[minutes],
+				[t4].[Id],
+				[t4].[Id_1],
+				[t4].[hours],
+				[t4].[minutes],
 				COUNT_BIG(*) * 100E0 / SUM(COUNT_BIG(*)) OVER() as [percents]
 			FROM
 				(
 					SELECT
-						[t2].[Id],
+						[t3].[Id],
 						[a_Reference_1].[Id] as [Id_1],
-						DATEPART(hour, [t2].[DateTime] AT TIME ZONE @tz) as [hours],
-						DATEPART(minute, [t2].[DateTime] AT TIME ZONE @tz) as [minutes]
+						DATEPART(hour, [t3].[DateTime] AT TIME ZONE @tz) as [hours],
+						DATEPART(minute, [t3].[DateTime] AT TIME ZONE @tz) as [minutes]
 					FROM
-						[TestAggregateTable] [t2]
-							LEFT JOIN [TestAggregateTable] [a_Reference_1] ON [t2].[ReferenceId] = [a_Reference_1].[Id]
-				) [t3]
+						[TestAggregateTable] [t3]
+							LEFT JOIN [TestAggregateTable] [a_Reference_1] ON [t3].[ReferenceId] = [a_Reference_1].[Id]
+				) [t4]
 			GROUP BY
-				[t3].[Id],
-				[t3].[Id_1],
-				[t3].[hours],
-				[t3].[minutes]
+				[t4].[Id],
+				[t4].[Id_1],
+				[t4].[hours],
+				[t4].[minutes]
 			HAVING
-				[t3].[Id_1] = [m_1].[key_1] OR [t3].[Id_1] IS NULL AND [m_1].[key_1] IS NULL
+				[t4].[Id_1] = [m_1].[key_1] OR [t4].[Id_1] IS NULL AND [m_1].[key_1] IS NULL
 		) [d]
 ORDER BY
 	[d].[count_1] DESC
