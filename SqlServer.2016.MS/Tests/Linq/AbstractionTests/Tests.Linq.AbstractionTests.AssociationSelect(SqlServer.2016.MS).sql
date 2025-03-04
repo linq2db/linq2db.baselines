@@ -19,16 +19,27 @@ FROM
 	) [m_1]
 		CROSS APPLY (
 			SELECT TOP (2)
-				[a_SubItem].[Id] as [cond],
-				[a_SubItem].[Value] as [Value_1],
+				[d].[Id_1] as [cond],
+				[d].[Value_1],
 				[d].[Id],
 				[d].[ParentId],
 				[d].[SubId]
 			FROM
-				[ChildEntitity] [d]
-					LEFT JOIN [SubEntitity] [a_SubItem] ON [d].[SubId] = [a_SubItem].[Id]
+				(
+					SELECT
+						[a_SomeEntities].[ParentId],
+						[a_SomeEntities].[Id],
+						[a_SomeEntities].[SubId],
+						[a_SubItem].[Id] as [Id_1],
+						[a_SubItem].[Value] as [Value_1]
+					FROM
+						[ChildEntitity] [a_SomeEntities]
+							LEFT JOIN [SubEntitity] [a_SubItem] ON [a_SomeEntities].[SubId] = [a_SubItem].[Id]
+					WHERE
+						[m_1].[Id] = [a_SomeEntities].[ParentId]
+				) [d]
 			WHERE
-				[m_1].[Id] = [d].[ParentId] AND [d].[ParentId] % 3 = 0
+				[d].[ParentId] % 3 = 0
 			ORDER BY
 				[d].[Id]
 		) [d_1]
@@ -65,16 +76,27 @@ FROM
 	) [m_1]
 		CROSS APPLY (
 			SELECT TOP (2)
-				[a_SubItem].[Id] as [cond],
-				[a_SubItem].[Value] as [Value_1],
+				[d].[Id_1] as [cond],
+				[d].[Value_1],
 				[d].[Id],
 				[d].[ParentId],
 				[d].[SubId]
 			FROM
-				[ChildEntitity] [d]
-					LEFT JOIN [SubEntitity] [a_SubItem] ON [d].[SubId] = [a_SubItem].[Id]
+				(
+					SELECT
+						[a_SomeEntities].[ParentId],
+						[a_SomeEntities].[Id],
+						[a_SomeEntities].[SubId],
+						[a_SubItem].[Id] as [Id_1],
+						[a_SubItem].[Value] as [Value_1]
+					FROM
+						[ChildEntitity] [a_SomeEntities]
+							LEFT JOIN [SubEntitity] [a_SubItem] ON [a_SomeEntities].[SubId] = [a_SubItem].[Id]
+					WHERE
+						[m_1].[Id] = [a_SomeEntities].[ParentId]
+				) [d]
 			WHERE
-				[m_1].[Id] = [d].[ParentId] AND [d].[ParentId] % 3 = 0
+				[d].[ParentId] % 3 = 0
 			ORDER BY
 				[d].[Id]
 		) [d_1]
