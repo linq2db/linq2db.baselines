@@ -3,9 +3,9 @@
 
 SELECT
 	m_2.Id,
-	d_1.Id,
-	d_1.Value_1,
-	d_1.ParentId
+	d.Id,
+	d.Value,
+	d.ParentId
 FROM
 	(
 		SELECT DISTINCT
@@ -15,17 +15,11 @@ FROM
 		WHERE
 			m_1.Id > 1
 	) m_2
-		INNER JOIN (
-			SELECT
-				d.Id as Id,
-				d.Value as Value_1,
-				d.ParentId as ParentId,
-				ROW_NUMBER() OVER (PARTITION BY d.ParentId ORDER BY d.Id) as rn
-			FROM
-				SubItem1 d
-			WHERE
-				d.ParentId % 2 = 0
-		) d_1 ON m_2.Id = d_1.ParentId AND d_1.rn <= 2
+		INNER JOIN SubItem1 d ON m_2.Id = d.ParentId
+WHERE
+	d.ParentId % 2 = 0
+ORDER BY
+	d.Id
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
@@ -45,9 +39,9 @@ BeforeExecute
 
 SELECT
 	m_2.Id,
-	d_1.Id,
-	d_1.Value_1,
-	d_1.ParentId
+	d.Id,
+	d.Value,
+	d.ParentId
 FROM
 	(
 		SELECT DISTINCT
@@ -57,17 +51,11 @@ FROM
 		WHERE
 			m_1.Id > 1
 	) m_2
-		INNER JOIN (
-			SELECT
-				d.Id as Id,
-				d.Value as Value_1,
-				d.ParentId as ParentId,
-				ROW_NUMBER() OVER (PARTITION BY d.ParentId ORDER BY d.Id) as rn
-			FROM
-				SubItem1 d
-			WHERE
-				d.ParentId % 2 = 0
-		) d_1 ON m_2.Id = d_1.ParentId AND d_1.rn <= 2
+		INNER JOIN SubItem1 d ON m_2.Id = d.ParentId
+WHERE
+	d.ParentId % 2 = 0
+ORDER BY
+	d.Id
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
