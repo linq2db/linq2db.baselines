@@ -2,7 +2,7 @@
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
 DECLARE @Id Integer -- Int32
 SET     @Id = 1
-DECLARE @Name Text -- String
+DECLARE @Name Varchar -- String
 SET     @Name = NULL
 DECLARE @Age Integer -- Int32
 SET     @Age = 2
@@ -35,7 +35,7 @@ LIMIT 1
 
 BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
-DECLARE @Name Text(6) -- String
+DECLARE @Name Varchar(6) -- String
 SET     @Name = 'Franki'
 DECLARE @Age Integer -- Int32
 SET     @Age = 18
@@ -65,7 +65,7 @@ LIMIT 1
 
 BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
-DECLARE @Name Text(4) -- String
+DECLARE @Name Varchar(4) -- String
 SET     @Name = 'Jack'
 DECLARE @Id Integer -- Int32
 SET     @Id = 1

@@ -2,7 +2,7 @@
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
 DECLARE @Id Integer -- Int32
 SET     @Id = 1
-DECLARE @Name Text(5) -- String
+DECLARE @Name Varchar(5) -- String
 SET     @Name = 'Tommy'
 
 INSERT INTO "PR_1598_Insert_Null_Table"

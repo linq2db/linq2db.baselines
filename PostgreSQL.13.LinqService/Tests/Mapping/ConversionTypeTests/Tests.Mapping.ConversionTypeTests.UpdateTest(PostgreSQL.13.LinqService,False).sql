@@ -1,6 +1,6 @@
 ﻿BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
-DECLARE @Data Text(9) -- String
+DECLARE @Data Varchar(9) -- String
 SET     @Data = '***III***'
 DECLARE @ID Integer -- Int32
 SET     @ID = 3
@@ -14,7 +14,7 @@ WHERE
 
 BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
-DECLARE @Data Text(9) -- String
+DECLARE @Data Varchar(9) -- String
 SET     @Data = '***OOO***'
 
 UPDATE
@@ -26,9 +26,9 @@ WHERE
 
 BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
-DECLARE @Data Text(9) -- String
+DECLARE @Data Varchar(9) -- String
 SET     @Data = '***SSS***'
-DECLARE @p Text(9) -- String
+DECLARE @p Varchar(9) -- String
 SET     @p = '***HHH***'
 
 UPDATE

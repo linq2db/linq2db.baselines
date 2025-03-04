@@ -2,9 +2,9 @@
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
 DECLARE @Id Integer -- Int32
 SET     @Id = 6
-DECLARE @Title Text(5) -- String
+DECLARE @Title Varchar(5) -- String
 SET     @Title = 'title'
-DECLARE @Text Text(4) -- String
+DECLARE @Text Varchar(4) -- String
 SET     @Text = 'text'
 
 INSERT INTO "Topic"

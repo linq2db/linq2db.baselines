@@ -2,9 +2,9 @@
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
 DECLARE @Id Integer -- Int32
 SET     @Id = 0
-DECLARE @ClaimedKeyType Text(3) -- String
+DECLARE @ClaimedKeyType Varchar(3) -- String
 SET     @ClaimedKeyType = 'RSA'
-DECLARE @ClaimedKeyTypeN Text(3) -- String
+DECLARE @ClaimedKeyTypeN Varchar(3) -- String
 SET     @ClaimedKeyTypeN = 'RSA'
 
 INSERT INTO "Issue1554FluentTable"
@@ -22,9 +22,9 @@ VALUES
 
 BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
-DECLARE @ClaimedKeyType Text(2) -- String
+DECLARE @ClaimedKeyType Varchar(2) -- String
 SET     @ClaimedKeyType = 'EC'
-DECLARE @ClaimedKeyTypeN Text(2) -- String
+DECLARE @ClaimedKeyTypeN Varchar(2) -- String
 SET     @ClaimedKeyTypeN = 'EC'
 
 UPDATE

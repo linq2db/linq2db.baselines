@@ -2,7 +2,7 @@
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
 DECLARE @Id Integer -- Int32
 SET     @Id = 1
-DECLARE @String Text -- String
+DECLARE @String Varchar -- String
 SET     @String = ''
 
 INSERT INTO "CreateTableTypes"
@@ -20,7 +20,7 @@ BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
 DECLARE @Id Integer -- Int32
 SET     @Id = 2
-DECLARE @String Text(14) -- String
+DECLARE @String Varchar(14) -- String
 SET     @String = 'test max value'
 
 INSERT INTO "CreateTableTypes"
