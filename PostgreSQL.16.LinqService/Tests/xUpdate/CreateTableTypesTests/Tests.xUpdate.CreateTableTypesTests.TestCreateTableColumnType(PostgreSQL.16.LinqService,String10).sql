@@ -2,7 +2,7 @@
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 DECLARE @Id Integer -- Int32
 SET     @Id = 1
-DECLARE @String Text -- String
+DECLARE @String Varchar -- String
 SET     @String = ''
 
 INSERT INTO "CreateTableTypes"
@@ -20,7 +20,7 @@ BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 DECLARE @Id Integer -- Int32
 SET     @Id = 2
-DECLARE @String Text(7) -- String
+DECLARE @String Varchar(7) -- String
 SET     @String = 'test 10'
 
 INSERT INTO "CreateTableTypes"

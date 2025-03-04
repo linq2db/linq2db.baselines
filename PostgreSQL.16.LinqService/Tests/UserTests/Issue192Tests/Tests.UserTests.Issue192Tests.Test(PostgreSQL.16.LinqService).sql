@@ -1,6 +1,6 @@
 ﻿BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
-DECLARE @Name Text(11) -- String
+DECLARE @Name Varchar(11) -- String
 SET     @Name = 'NotVerified'
 DECLARE @BoolValue Char -- String
 SET     @BoolValue = 'N'
@@ -22,7 +22,7 @@ VALUES
 
 BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
-DECLARE @Name Text(8) -- String
+DECLARE @Name Varchar(8) -- String
 SET     @Name = 'Verified'
 DECLARE @BoolValue Char -- String
 SET     @BoolValue = 'Y'
