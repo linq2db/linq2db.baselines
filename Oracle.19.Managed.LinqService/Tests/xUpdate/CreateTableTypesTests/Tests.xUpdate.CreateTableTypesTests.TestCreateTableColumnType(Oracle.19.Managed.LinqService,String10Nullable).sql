@@ -2,7 +2,7 @@
 -- Oracle.19.Managed Oracle.Managed Oracle12
 DECLARE @Id Int32
 SET     @Id = 1
-DECLARE @String Varchar2 -- String
+DECLARE @String NVarchar2 -- String
 SET     @String = NULL
 
 INSERT INTO "CreateTableTypes"
@@ -20,7 +20,7 @@ BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12
 DECLARE @Id Int32
 SET     @Id = 2
-DECLARE @String Varchar2(9) -- String
+DECLARE @String NVarchar2(9) -- String
 SET     @String = 'test 10 n'
 
 INSERT INTO "CreateTableTypes"

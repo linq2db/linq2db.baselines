@@ -4,7 +4,7 @@ DECLARE @Id Int32
 SET     @Id = 1
 DECLARE @Stamp Int32
 SET     @Stamp = -10
-DECLARE @Value Varchar2(7) -- String
+DECLARE @Value NVarchar2(7) -- String
 SET     @Value = 'initial'
 
 INSERT INTO "ConcurrencyAutoIncrement"
@@ -32,7 +32,7 @@ FROM
 
 BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12
-DECLARE @Value Varchar2(7) -- String
+DECLARE @Value NVarchar2(7) -- String
 SET     @Value = 'value 1'
 DECLARE @Id Int32
 SET     @Id = 1
@@ -59,7 +59,7 @@ FROM
 
 BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12
-DECLARE @Value Varchar2(7) -- String
+DECLARE @Value NVarchar2(7) -- String
 SET     @Value = 'value 2'
 DECLARE @Id Int32
 SET     @Id = 1
@@ -86,7 +86,7 @@ FROM
 
 BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12
-DECLARE @Value Varchar2(7) -- String
+DECLARE @Value NVarchar2(7) -- String
 SET     @Value = 'value 3'
 DECLARE @Id Int32
 SET     @Id = 1

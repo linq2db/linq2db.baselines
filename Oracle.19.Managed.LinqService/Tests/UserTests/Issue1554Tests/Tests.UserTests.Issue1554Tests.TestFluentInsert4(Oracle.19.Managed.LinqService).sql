@@ -2,9 +2,9 @@
 -- Oracle.19.Managed Oracle.Managed Oracle12
 DECLARE @Id Int32
 SET     @Id = 0
-DECLARE @ClaimedKeyType Varchar2(2) -- String
+DECLARE @ClaimedKeyType NVarchar2(2) -- String
 SET     @ClaimedKeyType = 'EC'
-DECLARE @ClaimedKeyTypeN Varchar2(2) -- String
+DECLARE @ClaimedKeyTypeN NVarchar2(2) -- String
 SET     @ClaimedKeyTypeN = 'EC'
 
 INSERT INTO "Issue1554FluentTable"
