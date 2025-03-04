@@ -18,7 +18,6 @@ SET     @IDENTITY_PARAMETER = NULL
 
 INSERT INTO "Person"
 (
-	"PersonID",
 	"Gender",
 	"FirstName",
 	"MiddleName",
@@ -26,7 +25,6 @@ INSERT INTO "Person"
 )
 VALUES
 (
-	GEN_ID("PersonID", 1),
 	@Gender,
 	@FirstName,
 	@MiddleName,
@@ -38,7 +36,7 @@ RETURNING
 BeforeExecute
 -- Firebird.3 Firebird3
 DECLARE @id Integer -- Int32
-SET     @id = 6
+SET     @id = 5
 
 SELECT
 	"t1"."PersonID",
