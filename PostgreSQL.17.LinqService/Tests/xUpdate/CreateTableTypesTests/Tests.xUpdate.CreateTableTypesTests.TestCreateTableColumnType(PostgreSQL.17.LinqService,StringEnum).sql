@@ -2,7 +2,7 @@
 -- PostgreSQL.17 PostgreSQL.15 PostgreSQL
 DECLARE @Id Integer -- Int32
 SET     @Id = 1
-DECLARE @StringEnum Text(2) -- String
+DECLARE @StringEnum Varchar(2) -- String
 SET     @StringEnum = '14'
 
 INSERT INTO "CreateTableTypes"
@@ -20,7 +20,7 @@ BeforeExecute
 -- PostgreSQL.17 PostgreSQL.15 PostgreSQL
 DECLARE @Id Integer -- Int32
 SET     @Id = 2
-DECLARE @StringEnum Text(1) -- String
+DECLARE @StringEnum Varchar(1) -- String
 SET     @StringEnum = '4'
 
 INSERT INTO "CreateTableTypes"

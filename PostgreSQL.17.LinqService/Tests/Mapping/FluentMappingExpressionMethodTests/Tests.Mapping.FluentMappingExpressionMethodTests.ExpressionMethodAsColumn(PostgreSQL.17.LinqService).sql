@@ -4,7 +4,7 @@
 SELECT
 	t1."Id",
 	t1."Value",
-	'M' || t1."Id"::text
+	'M' || t1."Id"::VarChar
 FROM
 	"InstanceClass" t1
 
