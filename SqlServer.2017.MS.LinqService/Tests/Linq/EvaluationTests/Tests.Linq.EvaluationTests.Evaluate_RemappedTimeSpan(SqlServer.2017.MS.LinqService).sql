@@ -1,5 +1,7 @@
 ﻿BeforeExecute
 -- SqlServer.2017.MS SqlServer.2017
+DECLARE @value BigInt -- Int64
+SET     @value = 0
 
 SELECT
 	IIF(EXISTS(
@@ -8,6 +10,6 @@ SELECT
 		FROM
 			[Person] [p]
 		WHERE
-			CAST(0 AS BIGINT) > 532266661
+			@value > 532266661
 	), 1, 0)
 
