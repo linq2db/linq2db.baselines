@@ -21,13 +21,18 @@ DECLARE @take Int -- Int32
 SET     @take = 3
 
 SELECT
-	[x].[DuplicateData]
+	[x_1].[DuplicateData]
 FROM
-	[OrderByDistinctData] [x]
-GROUP BY
-	[x].[DuplicateData]
+	(
+		SELECT
+			[x].[DuplicateData]
+		FROM
+			[OrderByDistinctData] [x]
+		GROUP BY
+			[x].[DuplicateData]
+	) [x_1]
 ORDER BY
-	[x].[DuplicateData]
+	[x_1].[DuplicateData]
 OFFSET @skip ROWS FETCH NEXT @take ROWS ONLY 
 
 BeforeExecute
@@ -53,12 +58,17 @@ DECLARE @take Int -- Int32
 SET     @take = 3
 
 SELECT
-	[x].[DuplicateData]
+	[x_1].[DuplicateData]
 FROM
-	[OrderByDistinctData] [x]
-GROUP BY
-	[x].[DuplicateData]
+	(
+		SELECT
+			[x].[DuplicateData]
+		FROM
+			[OrderByDistinctData] [x]
+		GROUP BY
+			[x].[DuplicateData]
+	) [x_1]
 ORDER BY
-	[x].[DuplicateData]
+	[x_1].[DuplicateData]
 OFFSET @skip ROWS FETCH NEXT @take ROWS ONLY 
 

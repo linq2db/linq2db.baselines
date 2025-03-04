@@ -4,13 +4,18 @@ DECLARE @take Int -- Int32
 SET     @take = 100
 
 SELECT TOP (@take)
-	[r].[PersonID] as [ID],
-	[r].[PersonID] as [sort_1]
+	[t1].[sort_1] as [ID],
+	[t1].[sort_1]
 FROM
-	[Person] [r]
-GROUP BY
-	[r].[PersonID],
-	[r].[PersonID]
+	(
+		SELECT
+			[r].[PersonID] as [sort_1]
+		FROM
+			[Person] [r]
+		GROUP BY
+			[r].[PersonID],
+			[r].[PersonID]
+	) [t1]
 ORDER BY
-	[r].[PersonID]
+	[t1].[sort_1]
 
