@@ -10,7 +10,7 @@ CREATE SEQUENCE "PersonSeq" MINVALUE 1 START WITH 5
 
 BeforeExecute
 -- Oracle.11.Managed Oracle11
-DECLARE @Gender Varchar2(1) -- String
+DECLARE @Gender Char(1) -- StringFixedLength
 SET     @Gender = 'M'
 DECLARE @FirstName NVarchar2(12) -- String
 SET     @FirstName = 'FirstName533'

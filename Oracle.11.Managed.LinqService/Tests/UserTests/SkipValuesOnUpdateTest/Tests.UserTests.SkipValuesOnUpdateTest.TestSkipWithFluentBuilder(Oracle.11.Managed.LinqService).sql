@@ -2,7 +2,7 @@
 -- Oracle.11.Managed Oracle11
 DECLARE @Id Int32
 SET     @Id = 1
-DECLARE @Name Varchar2 -- String
+DECLARE @Name NVarchar2 -- String
 SET     @Name = NULL
 DECLARE @Age Int32
 SET     @Age = 2
@@ -34,7 +34,7 @@ WHERE
 
 BeforeExecute
 -- Oracle.11.Managed Oracle11
-DECLARE @Name Varchar2(6) -- String
+DECLARE @Name NVarchar2(6) -- String
 SET     @Name = 'Franki'
 DECLARE @Age Int32
 SET     @Age = 18
@@ -63,7 +63,7 @@ WHERE
 
 BeforeExecute
 -- Oracle.11.Managed Oracle11
-DECLARE @Name Varchar2(4) -- String
+DECLARE @Name NVarchar2(4) -- String
 SET     @Name = 'Jack'
 DECLARE @Id Int32
 SET     @Id = 1

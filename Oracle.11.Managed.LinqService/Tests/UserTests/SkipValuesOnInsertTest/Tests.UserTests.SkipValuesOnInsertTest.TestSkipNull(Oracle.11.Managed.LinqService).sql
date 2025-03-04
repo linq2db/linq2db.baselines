@@ -2,7 +2,7 @@
 -- Oracle.11.Managed Oracle11
 DECLARE @Id Int32
 SET     @Id = 1
-DECLARE @Name Varchar2(5) -- String
+DECLARE @Name NVarchar2(5) -- String
 SET     @Name = 'Tommy'
 
 INSERT INTO "PR_1598_Insert_Null_Table"

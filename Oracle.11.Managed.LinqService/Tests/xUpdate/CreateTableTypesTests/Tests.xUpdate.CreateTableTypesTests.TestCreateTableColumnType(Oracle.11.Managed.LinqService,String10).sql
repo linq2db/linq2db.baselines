@@ -2,7 +2,7 @@
 -- Oracle.11.Managed Oracle11
 DECLARE @Id Int32
 SET     @Id = 1
-DECLARE @String Varchar2(1) -- String
+DECLARE @String NVarchar2(1) -- String
 SET     @String = ' '
 
 INSERT INTO "CreateTableTypes"
@@ -20,7 +20,7 @@ BeforeExecute
 -- Oracle.11.Managed Oracle11
 DECLARE @Id Int32
 SET     @Id = 2
-DECLARE @String Varchar2(7) -- String
+DECLARE @String NVarchar2(7) -- String
 SET     @String = 'test 10'
 
 INSERT INTO "CreateTableTypes"

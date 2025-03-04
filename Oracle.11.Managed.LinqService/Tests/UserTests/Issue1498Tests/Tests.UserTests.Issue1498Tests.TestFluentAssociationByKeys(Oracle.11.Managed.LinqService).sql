@@ -2,9 +2,9 @@
 -- Oracle.11.Managed Oracle11
 DECLARE @Id Int32
 SET     @Id = 6
-DECLARE @Title Varchar2(5) -- String
+DECLARE @Title NVarchar2(5) -- String
 SET     @Title = 'title'
-DECLARE @Text Varchar2(4) -- String
+DECLARE @Text NVarchar2(4) -- String
 SET     @Text = 'text'
 
 INSERT INTO "Topic"
