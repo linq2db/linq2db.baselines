@@ -2,7 +2,7 @@
 -- Oracle.12.Managed Oracle.Managed Oracle12
 DECLARE @Id Int32
 SET     @Id = 1
-DECLARE @StringEnum Varchar2(2) -- String
+DECLARE @StringEnum NVarchar2(2) -- String
 SET     @StringEnum = '14'
 
 INSERT INTO "CreateTableTypes"
@@ -20,7 +20,7 @@ BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12
 DECLARE @Id Int32
 SET     @Id = 2
-DECLARE @StringEnum Varchar2(1) -- String
+DECLARE @StringEnum NVarchar2(1) -- String
 SET     @StringEnum = '4'
 
 INSERT INTO "CreateTableTypes"

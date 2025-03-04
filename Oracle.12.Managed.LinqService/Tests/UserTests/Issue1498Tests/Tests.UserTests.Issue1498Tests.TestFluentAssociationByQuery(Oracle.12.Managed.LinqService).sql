@@ -2,9 +2,9 @@
 -- Oracle.12.Managed Oracle.Managed Oracle12
 DECLARE @Id Int32
 SET     @Id = 6
-DECLARE @Title Varchar2(5) -- String
+DECLARE @Title NVarchar2(5) -- String
 SET     @Title = 'title'
-DECLARE @Text Varchar2(4) -- String
+DECLARE @Text NVarchar2(4) -- String
 SET     @Text = 'text'
 
 INSERT INTO "Topic"
@@ -26,7 +26,7 @@ DECLARE @Id Int32
 SET     @Id = 60
 DECLARE @TopicId Int32
 SET     @TopicId = 6
-DECLARE @Text Varchar2(7) -- String
+DECLARE @Text NVarchar2(7) -- String
 SET     @Text = 'message'
 
 INSERT INTO "Message"
@@ -48,7 +48,7 @@ DECLARE @Id Int32
 SET     @Id = 61
 DECLARE @TopicId Int32
 SET     @TopicId = 7
-DECLARE @Text Varchar2(7) -- String
+DECLARE @Text NVarchar2(7) -- String
 SET     @Text = 'message'
 
 INSERT INTO "Message"

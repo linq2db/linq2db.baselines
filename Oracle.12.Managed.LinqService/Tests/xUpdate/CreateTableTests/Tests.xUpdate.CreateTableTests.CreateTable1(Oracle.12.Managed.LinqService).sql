@@ -33,10 +33,10 @@ BeforeExecute
 
 CREATE TABLE "TestTable"
 (
-	ID          Int           NOT NULL,
-	"Field1"    VarChar(50)       NULL,
-	"Field2"    VarChar(255)      NULL,
-	"CreatedOn" timestamp         NULL,
+	ID          Int             NOT NULL,
+	"Field1"    VarChar2(50)        NULL,
+	"Field2"    VarChar2(4000)      NULL,
+	"CreatedOn" timestamp           NULL,
 
 	CONSTRAINT "PK_TestTable" PRIMARY KEY (ID)
 )

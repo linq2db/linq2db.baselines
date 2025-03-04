@@ -1,6 +1,6 @@
 ﻿BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12
-DECLARE @Data Varchar2(9) -- String
+DECLARE @Data NVarchar2(9) -- String
 SET     @Data = '***III***'
 DECLARE @ID Int32
 SET     @ID = 3
@@ -14,7 +14,7 @@ WHERE
 
 BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12
-DECLARE @Data Varchar2(9) -- String
+DECLARE @Data NVarchar2(9) -- String
 SET     @Data = '***OOO***'
 
 UPDATE
@@ -26,9 +26,9 @@ WHERE
 
 BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12
-DECLARE @Data Varchar2(9) -- String
+DECLARE @Data NVarchar2(9) -- String
 SET     @Data = '***SSS***'
-DECLARE @p Varchar2(9) -- String
+DECLARE @p NVarchar2(9) -- String
 SET     @p = '***HHH***'
 
 UPDATE

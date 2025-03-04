@@ -6,5 +6,5 @@ SELECT
 FROM
 	"InstanceClass" t
 WHERE
-	CAST(t."Id" AS VarChar(255)) || CAST(t."Value" AS VarChar(255)) = CAST(t."Id" AS VarChar(255)) || t."Value"
+	CAST(t."Id" AS VarChar2(4000)) || CAST(t."Value" AS VarChar2(4000)) = CAST(t."Id" AS VarChar2(4000)) || t."Value"
 

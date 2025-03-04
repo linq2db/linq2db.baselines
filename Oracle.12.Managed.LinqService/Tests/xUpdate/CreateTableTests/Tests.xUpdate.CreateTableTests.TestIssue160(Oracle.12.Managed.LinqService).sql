@@ -3,8 +3,8 @@
 
 CREATE TABLE "aa"
 (
-	"bb" Int          NOT NULL,
-	"cc" VarChar(255)     NULL,
+	"bb" Int            NOT NULL,
+	"cc" VarChar2(4000)     NULL,
 
 	CONSTRAINT "PK_aa" PRIMARY KEY ("bb")
 )
@@ -13,7 +13,7 @@ BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12
 DECLARE @bb Int32
 SET     @bb = 99
-DECLARE @cc Varchar2(5) -- String
+DECLARE @cc NVarchar2(5) -- String
 SET     @cc = 'hallo'
 
 INSERT INTO "aa"
