@@ -22,9 +22,9 @@ BeforeExecute
 
 SELECT
 	m_2.Id1,
-	d_1.DetailId,
-	d_1.MasterId,
-	d_1.DetailValue
+	d.DetailId,
+	d.MasterId,
+	d.DetailValue
 FROM
 	(
 		SELECT DISTINCT
@@ -32,15 +32,9 @@ FROM
 		FROM
 			MasterClass m_1
 	) m_2
-		INNER JOIN (
-			SELECT
-				d.DetailId,
-				d.MasterId,
-				d.DetailValue,
-				ROW_NUMBER() OVER (PARTITION BY d.MasterId ORDER BY d.DetailId) as rn
-			FROM
-				DetailClass d
-		) d_1 ON m_2.Id1 = d_1.MasterId AND d_1.rn > 1 AND d_1.rn <= 3
+		INNER JOIN DetailClass d ON m_2.Id1 = d.MasterId
+ORDER BY
+	d.DetailId
 
 BeforeExecute
 DisposeTransaction
