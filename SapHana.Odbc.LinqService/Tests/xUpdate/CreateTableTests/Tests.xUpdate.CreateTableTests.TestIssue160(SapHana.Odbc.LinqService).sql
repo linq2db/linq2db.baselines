@@ -3,8 +3,8 @@
 
 CREATE COLUMN TABLE "aa"
 (
-	"bb" Integer       NOT NULL,
-	"cc" NVarChar(255)     NULL,
+	"bb" Integer        NOT NULL,
+	"cc" NVarChar(5000)     NULL,
 
 	PRIMARY KEY ("bb")
 )
