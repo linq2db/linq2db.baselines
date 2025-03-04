@@ -1,5 +1,7 @@
 ﻿BeforeExecute
 -- SqlServer.2008.MS SqlServer.2008
+DECLARE @value BigInt -- Int64
+SET     @value = 0
 
 SELECT
 	CASE
@@ -9,7 +11,7 @@ SELECT
 			FROM
 				[Person] [p]
 			WHERE
-				CAST(0 AS BIGINT) > 532266661
+				@value > 532266661
 		)
 			THEN 1
 		ELSE 0
