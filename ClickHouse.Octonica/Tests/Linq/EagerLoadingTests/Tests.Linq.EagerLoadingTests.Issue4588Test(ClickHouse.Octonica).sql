@@ -13,25 +13,30 @@ FROM
 	(
 		SELECT DISTINCT
 			d.Id as Id,
-			t2.Id as Id_1
+			t3.Id as Id_1
 		FROM
 			(
 				SELECT DISTINCT
-					t1.Id as Id
+					t2.Id as Id
 				FROM
 					(
 						SELECT
-							x.Id as Id
+							t1.Id as Id
 						FROM
-							Order x
-						WHERE
-							startsWith(x.Name, 'cat')
+							(
+								SELECT
+									x.Id as Id
+								FROM
+									Order x
+								WHERE
+									startsWith(x.Name, 'cat')
+							) t1
 						ORDER BY
-							x.Id
+							t1.Id
 						LIMIT 100, 10
-					) t1
-			) t2
-				INNER JOIN SubOrder d ON t2.Id = d.OrderId
+					) t2
+			) t3
+				INNER JOIN SubOrder d ON t3.Id = d.OrderId
 	) m_1
 		INNER JOIN SubOrderDetail d_1 ON m_1.Id = d_1.SubOrderId
 
@@ -45,19 +50,24 @@ SELECT
 FROM
 	(
 		SELECT DISTINCT
-			t1.Id as Id
+			t2.Id as Id
 		FROM
 			(
 				SELECT
-					x.Id as Id
+					t1.Id as Id
 				FROM
-					Order x
-				WHERE
-					startsWith(x.Name, 'cat')
+					(
+						SELECT
+							x.Id as Id
+						FROM
+							Order x
+						WHERE
+							startsWith(x.Name, 'cat')
+					) t1
 				ORDER BY
-					x.Id
+					t1.Id
 				LIMIT 100, 10
-			) t1
+			) t2
 	) m_1
 		INNER JOIN SubOrder d ON m_1.Id = d.OrderId
 
@@ -65,13 +75,19 @@ BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
-	x.Id,
-	x.Name
+	t1.Id,
+	t1.Name
 FROM
-	Order x
-WHERE
-	startsWith(x.Name, 'cat')
+	(
+		SELECT
+			x.Id as Id,
+			x.Name as Name
+		FROM
+			Order x
+		WHERE
+			startsWith(x.Name, 'cat')
+	) t1
 ORDER BY
-	x.Id
+	t1.Id
 LIMIT 100, 10
 
