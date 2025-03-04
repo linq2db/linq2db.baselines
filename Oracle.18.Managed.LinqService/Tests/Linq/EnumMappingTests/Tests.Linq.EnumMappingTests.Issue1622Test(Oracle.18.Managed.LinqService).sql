@@ -2,7 +2,7 @@
 -- Oracle.18.Managed Oracle.Managed Oracle12
 DECLARE @Id Int32
 SET     @Id = 1
-DECLARE @SomeText Varchar2(13) -- String
+DECLARE @SomeText NVarchar2(13) -- String
 SET     @SomeText = 'Value1_suffix'
 
 INSERT INTO "Issue1622Table"
