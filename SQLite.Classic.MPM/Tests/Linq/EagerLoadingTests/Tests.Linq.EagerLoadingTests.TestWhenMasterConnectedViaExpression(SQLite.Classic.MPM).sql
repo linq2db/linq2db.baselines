@@ -11,9 +11,16 @@ SELECT
 FROM
 	(
 		SELECT DISTINCT
-			[g_1].[Id1] as [Key_1]
+			[t1].[Key_1]
 		FROM
-			[MasterManyId] [g_1]
+			(
+				SELECT
+					[g_1].[Id1] as [Key_1]
+				FROM
+					[MasterManyId] [g_1]
+				GROUP BY
+					[g_1].[Id1]
+			) [t1]
 	) [m_1]
 		INNER JOIN [DetailClass] [d] ON [d].[MasterId] = [m_1].[Key_1]
 
@@ -28,9 +35,16 @@ SELECT
 FROM
 	(
 		SELECT DISTINCT
-			[g_1].[Id1] as [Key_1]
+			[t1].[Key_1]
 		FROM
-			[MasterManyId] [g_1]
+			(
+				SELECT
+					[g_1].[Id1] as [Key_1]
+				FROM
+					[MasterManyId] [g_1]
+				GROUP BY
+					[g_1].[Id1]
+			) [t1]
 	) [m_1]
 		INNER JOIN [DetailClass] [d] ON [d].[MasterId] > [m_1].[Key_1]
 

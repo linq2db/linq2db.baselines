@@ -36,9 +36,16 @@ SELECT
 FROM
 	(
 		SELECT DISTINCT
-			[t1].[Gender] as [Key_1]
+			[t2].[Key_1]
 		FROM
-			[Person] [t1]
+			(
+				SELECT
+					[t1].[Gender] as [Key_1]
+				FROM
+					[Person] [t1]
+				GROUP BY
+					[t1].[Gender]
+			) [t2]
 	) [m_1]
 		INNER JOIN [Person] [d] ON [m_1].[Key_1] = [d].[Gender]
 
@@ -60,14 +67,27 @@ BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
 SELECT
-	[m_1].[PersonID],
-	[m_1].[FirstName],
-	[m_1].[PersonID],
-	[m_1].[LastName],
-	[m_1].[MiddleName],
-	[m_1].[Gender]
+	[m_1].[ID],
+	[d].[FirstName],
+	[d].[PersonID],
+	[d].[LastName],
+	[d].[MiddleName],
+	[d].[Gender]
 FROM
-	[Person] [m_1]
+	(
+		SELECT DISTINCT
+			[t2].[ID]
+		FROM
+			(
+				SELECT
+					[t1].[PersonID] as [ID]
+				FROM
+					[Person] [t1]
+				GROUP BY
+					[t1].[PersonID]
+			) [t2]
+	) [m_1]
+		INNER JOIN [Person] [d] ON [m_1].[ID] = [d].[PersonID]
 
 BeforeExecute
 DisposeTransaction
@@ -87,14 +107,27 @@ BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
 SELECT
-	[m_1].[PersonID],
-	[m_1].[FirstName],
-	[m_1].[PersonID],
-	[m_1].[LastName],
-	[m_1].[MiddleName],
-	[m_1].[Gender]
+	[m_1].[ID],
+	[d].[FirstName],
+	[d].[PersonID],
+	[d].[LastName],
+	[d].[MiddleName],
+	[d].[Gender]
 FROM
-	[Person] [m_1]
+	(
+		SELECT DISTINCT
+			[t2].[ID]
+		FROM
+			(
+				SELECT
+					[t1].[PersonID] as [ID]
+				FROM
+					[Person] [t1]
+				GROUP BY
+					[t1].[PersonID]
+			) [t2]
+	) [m_1]
+		INNER JOIN [Person] [d] ON [m_1].[ID] = [d].[PersonID]
 
 BeforeExecute
 DisposeTransaction
