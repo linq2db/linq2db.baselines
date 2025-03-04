@@ -19,24 +19,29 @@ FROM
 	(
 		SELECT DISTINCT
 			"d"."Id",
-			"t2"."Id" as "Id_1"
+			"t3"."Id" as "Id_1"
 		FROM
 			(
 				SELECT DISTINCT
-					"t1"."Id"
+					"t2"."Id"
 				FROM
 					(
 						SELECT FIRST @take SKIP @skip
-							"x"."Id"
+							"t1"."Id"
 						FROM
-							"Order" "x"
-						WHERE
-							"x"."Name" STARTING WITH 'cat'
+							(
+								SELECT
+									"x"."Id"
+								FROM
+									"Order" "x"
+								WHERE
+									"x"."Name" STARTING WITH 'cat'
+							) "t1"
 						ORDER BY
-							"x"."Id"
-					) "t1"
-			) "t2"
-				INNER JOIN "SubOrder" "d" ON "t2"."Id" = "d"."OrderId"
+							"t1"."Id"
+					) "t2"
+			) "t3"
+				INNER JOIN "SubOrder" "d" ON "t3"."Id" = "d"."OrderId"
 	) "m_1"
 		INNER JOIN "SubOrderDetail" "d_1" ON "m_1"."Id" = "d_1"."SubOrderId"
 
@@ -54,18 +59,23 @@ SELECT
 FROM
 	(
 		SELECT DISTINCT
-			"t1"."Id"
+			"t2"."Id"
 		FROM
 			(
 				SELECT FIRST @take SKIP @skip
-					"x"."Id"
+					"t1"."Id"
 				FROM
-					"Order" "x"
-				WHERE
-					"x"."Name" STARTING WITH 'cat'
+					(
+						SELECT
+							"x"."Id"
+						FROM
+							"Order" "x"
+						WHERE
+							"x"."Name" STARTING WITH 'cat'
+					) "t1"
 				ORDER BY
-					"x"."Id"
-			) "t1"
+					"t1"."Id"
+			) "t2"
 	) "m_1"
 		INNER JOIN "SubOrder" "d" ON "m_1"."Id" = "d"."OrderId"
 
@@ -79,12 +89,18 @@ DECLARE @skip Integer -- Int32
 SET     @skip = 100
 
 SELECT FIRST @take SKIP @skip
-	"x"."Id",
-	"x"."Name"
+	"t1"."Id",
+	"t1"."Name"
 FROM
-	"Order" "x"
-WHERE
-	"x"."Name" STARTING WITH 'cat'
+	(
+		SELECT
+			"x"."Id",
+			"x"."Name"
+		FROM
+			"Order" "x"
+		WHERE
+			"x"."Name" STARTING WITH 'cat'
+	) "t1"
 ORDER BY
-	"x"."Id"
+	"t1"."Id"
 
