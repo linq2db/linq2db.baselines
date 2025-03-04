@@ -18,7 +18,6 @@ SET     @IDENTITY_PARAMETER = NULL
 
 INSERT INTO "Person"
 (
-	"PersonID",
 	"Gender",
 	"FirstName",
 	"MiddleName",
@@ -26,7 +25,6 @@ INSERT INTO "Person"
 )
 VALUES
 (
-	GEN_ID("PersonID", 1),
 	@Gender,
 	@FirstName,
 	@MiddleName,
@@ -50,7 +48,6 @@ SET     @IDENTITY_PARAMETER = NULL
 
 INSERT INTO "Person"
 (
-	"PersonID",
 	"Gender",
 	"FirstName",
 	"MiddleName",
@@ -58,7 +55,6 @@ INSERT INTO "Person"
 )
 VALUES
 (
-	GEN_ID("PersonID", 1),
 	@Gender,
 	@FirstName,
 	@MiddleName,
@@ -70,7 +66,7 @@ RETURNING
 BeforeExecute
 -- Firebird.5 Firebird4
 DECLARE @id1 Integer -- Int32
-SET     @id1 = 6
+SET     @id1 = 5
 
 SELECT
 	"t1"."PersonID",
@@ -87,7 +83,7 @@ FETCH NEXT 1 ROWS ONLY
 BeforeExecute
 -- Firebird.5 Firebird4
 DECLARE @id2 Integer -- Int32
-SET     @id2 = 8
+SET     @id2 = 6
 
 SELECT
 	"t1"."PersonID",
