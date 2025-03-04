@@ -20,12 +20,21 @@ FROM
 		CROSS APPLY (
 			SELECT TOP (2)
 				[d].[Id],
-				[d].[Value] as [Value_1],
+				[d].[Value_1],
 				[d].[ParentId]
 			FROM
-				[SubItem1] [d]
+				(
+					SELECT
+						[a_SubItems1].[ParentId],
+						[a_SubItems1].[Id],
+						[a_SubItems1].[Value] as [Value_1]
+					FROM
+						[SubItem1] [a_SubItems1]
+					WHERE
+						[m_2].[Id] = [a_SubItems1].[ParentId]
+				) [d]
 			WHERE
-				[m_2].[Id] = [d].[ParentId] AND [d].[ParentId] % 2 = 0
+				[d].[ParentId] % 2 = 0
 			ORDER BY
 				[d].[Id]
 		) [d_1]
@@ -66,13 +75,22 @@ FROM
 	) [m_2]
 		CROSS APPLY (
 			SELECT TOP (2)
-				[e].[Value] as [Value_1],
+				[e].[Value_1],
 				[e].[Id],
 				[e].[ParentId]
 			FROM
-				[SubItem1] [e]
+				(
+					SELECT
+						[a_SubItems1].[ParentId],
+						[a_SubItems1].[Id],
+						[a_SubItems1].[Value] as [Value_1]
+					FROM
+						[SubItem1] [a_SubItems1]
+					WHERE
+						[m_2].[Id] = [a_SubItems1].[ParentId]
+				) [e]
 			WHERE
-				[m_2].[Id] = [e].[ParentId] AND [e].[ParentId] % 2 = 0
+				[e].[ParentId] % 2 = 0
 			ORDER BY
 				[e].[Id]
 		) [d]
