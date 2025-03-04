@@ -3,8 +3,8 @@
 
 CREATE TABLE [aa]
 (
-	[bb] Int           NOT NULL,
-	[cc] NVarChar(255)     NULL,
+	[bb] Int            NOT NULL,
+	[cc] NVarChar(5461)     NULL,
 
 	CONSTRAINT [PK_aa] PRIMARY KEY CLUSTERED ([bb])
 )

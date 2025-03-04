@@ -37,7 +37,7 @@ DECLARE @Gender UniChar(1) -- StringFixedLength
 SET     @Gender = 'M'
 DECLARE @FirstName UniVarChar(1) -- String
 SET     @FirstName = 'c'
-DECLARE @MiddleName UniVarChar -- String
+DECLARE @MiddleName Char -- AnsiStringFixedLength
 SET     @MiddleName = NULL
 DECLARE @LastName UniVarChar(1) -- String
 SET     @LastName = 'd'
