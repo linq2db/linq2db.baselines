@@ -10,13 +10,13 @@ CREATE SEQUENCE "PersonSeq" MINVALUE 1 START WITH 5
 
 BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
-DECLARE @Gender Varchar2(1) -- String
+DECLARE @Gender Char(1) -- StringFixedLength
 SET     @Gender = 'M'
-DECLARE @FirstName Varchar2(1) -- String
+DECLARE @FirstName NVarchar2(1) -- String
 SET     @FirstName = 'a'
 DECLARE @MiddleName NVarchar2(1) -- String
 SET     @MiddleName = 'A'
-DECLARE @LastName Varchar2(1) -- String
+DECLARE @LastName NVarchar2(1) -- String
 SET     @LastName = 'b'
 DECLARE @IDENTITY_PARAMETER Decimal
 SET     @IDENTITY_PARAMETER = NULL
@@ -40,13 +40,13 @@ RETURNING
 
 BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
-DECLARE @Gender Varchar2(1) -- String
+DECLARE @Gender Char(1) -- StringFixedLength
 SET     @Gender = 'M'
-DECLARE @FirstName Varchar2(1) -- String
+DECLARE @FirstName NVarchar2(1) -- String
 SET     @FirstName = 'c'
 DECLARE @MiddleName Varchar2 -- String
 SET     @MiddleName = NULL
-DECLARE @LastName Varchar2(1) -- String
+DECLARE @LastName NVarchar2(1) -- String
 SET     @LastName = 'd'
 DECLARE @IDENTITY_PARAMETER Decimal
 SET     @IDENTITY_PARAMETER = NULL

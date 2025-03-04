@@ -2,7 +2,7 @@
 -- Oracle.21.Managed Oracle.Managed Oracle12
 DECLARE @ID Int32
 SET     @ID = 1
-DECLARE @Data Varchar2(9) -- String
+DECLARE @Data NVarchar2(9) -- String
 SET     @Data = '***OOO***'
 
 INSERT INTO "TrimTestTable"
@@ -20,7 +20,7 @@ BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
 DECLARE @ID Int32
 SET     @ID = 2
-DECLARE @Data Varchar2(9) -- String
+DECLARE @Data NVarchar2(9) -- String
 SET     @Data = '***HHH***'
 
 INSERT INTO "TrimTestTable"

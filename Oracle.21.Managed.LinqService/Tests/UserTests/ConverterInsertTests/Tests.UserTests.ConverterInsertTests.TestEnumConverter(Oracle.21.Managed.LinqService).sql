@@ -12,9 +12,9 @@ BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
 DECLARE @FirstName NVarchar2(3) -- String
 SET     @FirstName = '123'
-DECLARE @LastName Varchar2(3) -- String
+DECLARE @LastName NVarchar2(3) -- String
 SET     @LastName = '456'
-DECLARE @MiddleName Varchar2(3) -- String
+DECLARE @MiddleName NVarchar2(3) -- String
 SET     @MiddleName = '789'
 DECLARE @Gender NVarchar2(1) -- String
 SET     @Gender = 'M'

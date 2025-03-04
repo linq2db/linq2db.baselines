@@ -6,9 +6,9 @@ DECLARE @Type Int32
 SET     @Type = 1
 DECLARE @ChildId Int32
 SET     @ChildId = 2
-DECLARE @Name_First Varchar2(5) -- String
+DECLARE @Name_First NVarchar2(5) -- String
 SET     @Name_First = 'First'
-DECLARE @Name_Second Varchar2(6) -- String
+DECLARE @Name_Second NVarchar2(6) -- String
 SET     @Name_Second = 'Second'
 
 INSERT INTO "Base2"
@@ -47,9 +47,9 @@ DECLARE @Type Int32
 SET     @Type = 1
 DECLARE @ChildId Int32
 SET     @ChildId = 2
-DECLARE @Name_First Varchar2(6) -- String
+DECLARE @Name_First NVarchar2(6) -- String
 SET     @Name_First = 'First1'
-DECLARE @Name_Second Varchar2(6) -- String
+DECLARE @Name_Second NVarchar2(6) -- String
 SET     @Name_Second = 'Second'
 DECLARE @Id Int32
 SET     @Id = 1
