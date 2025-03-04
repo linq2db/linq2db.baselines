@@ -1,6 +1,6 @@
 ﻿BeforeExecute
 -- Oracle.23.Managed Oracle.Managed Oracle12
-DECLARE @Name Varchar2(11) -- String
+DECLARE @Name NVarchar2(11) -- String
 SET     @Name = 'NotVerified'
 DECLARE @BoolValue Char -- AnsiStringFixedLength
 SET     @BoolValue = 'N'
@@ -22,7 +22,7 @@ VALUES
 
 BeforeExecute
 -- Oracle.23.Managed Oracle.Managed Oracle12
-DECLARE @Name Varchar2(8) -- String
+DECLARE @Name NVarchar2(8) -- String
 SET     @Name = 'Verified'
 DECLARE @BoolValue Char -- AnsiStringFixedLength
 SET     @BoolValue = 'Y'

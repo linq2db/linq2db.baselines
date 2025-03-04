@@ -10,11 +10,11 @@ CREATE SEQUENCE "PersonSeq" MINVALUE 1 START WITH 5
 
 BeforeExecute
 -- Oracle.23.Managed Oracle.Managed Oracle12
-DECLARE @FirstName Varchar2(21) -- String
+DECLARE @FirstName NVarchar2(21) -- String
 SET     @FirstName = 'test_inherited_insert'
-DECLARE @LastName Varchar2(4) -- String
+DECLARE @LastName NVarchar2(4) -- String
 SET     @LastName = 'test'
-DECLARE @MiddleName Varchar2(4) -- String
+DECLARE @MiddleName NVarchar2(4) -- String
 SET     @MiddleName = 'test'
 DECLARE @Gender Char(1) -- AnsiStringFixedLength
 SET     @Gender = 'U'
@@ -55,11 +55,11 @@ FETCH NEXT 1 ROWS ONLY
 
 BeforeExecute
 -- Oracle.23.Managed Oracle.Managed Oracle12
-DECLARE @FirstName Varchar2(21) -- String
+DECLARE @FirstName NVarchar2(21) -- String
 SET     @FirstName = 'test_inherited_insert'
-DECLARE @LastName Varchar2(4) -- String
+DECLARE @LastName NVarchar2(4) -- String
 SET     @LastName = 'test'
-DECLARE @MiddleName Varchar2(4) -- String
+DECLARE @MiddleName NVarchar2(4) -- String
 SET     @MiddleName = 'test'
 DECLARE @Gender Char(1) -- AnsiStringFixedLength
 SET     @Gender = 'U'
