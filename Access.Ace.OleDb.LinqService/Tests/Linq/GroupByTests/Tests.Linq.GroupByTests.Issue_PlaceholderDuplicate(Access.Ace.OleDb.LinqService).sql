@@ -2,13 +2,18 @@
 -- Access.Ace.OleDb AccessOleDb
 
 SELECT TOP 100
-	[r].[PersonID],
-	[r].[PersonID]
+	[t1].[sort_1],
+	[t1].[sort_1]
 FROM
-	[Person] [r]
-GROUP BY
-	[r].[PersonID],
-	[r].[PersonID]
+	(
+		SELECT
+			[r].[PersonID] as [sort_1]
+		FROM
+			[Person] [r]
+		GROUP BY
+			[r].[PersonID],
+			[r].[PersonID]
+	) [t1]
 ORDER BY
-	[r].[PersonID]
+	[t1].[sort_1]
 
