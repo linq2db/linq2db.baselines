@@ -19,30 +19,35 @@ FROM
 	(
 		SELECT DISTINCT
 			[d].[Id],
-			[t3].[Id] as [Id_1]
+			[t4].[Id] as [Id_1]
 		FROM
 			(
 				SELECT DISTINCT
-					[t2].[Id]
+					[t3].[Id]
 				FROM
 					(
 						SELECT
-							[t1].[Id]
+							[t2].[Id]
 						FROM
 							(
 								SELECT
-									[x].[Id],
-									ROW_NUMBER() OVER (ORDER BY [x].[Id]) as [RN]
+									[t1].[Id],
+									ROW_NUMBER() OVER (ORDER BY [t1].[Id]) as [RN]
 								FROM
-									[Order] [x]
-								WHERE
-									[x].[Name] LIKE N'cat%' ESCAPE N'~'
-							) [t1]
+									(
+										SELECT
+											[x].[Id]
+										FROM
+											[Order] [x]
+										WHERE
+											[x].[Name] LIKE N'cat%' ESCAPE N'~'
+									) [t1]
+							) [t2]
 						WHERE
-							[t1].[RN] > @skip AND [t1].[RN] <= (@skip + @take)
-					) [t2]
-			) [t3]
-				INNER JOIN [SubOrder] [d] ON [t3].[Id] = [d].[OrderId]
+							[t2].[RN] > @skip AND [t2].[RN] <= (@skip + @take)
+					) [t3]
+			) [t4]
+				INNER JOIN [SubOrder] [d] ON [t4].[Id] = [d].[OrderId]
 	) [m_1]
 		INNER JOIN [SubOrderDetail] [d_1] ON [m_1].[Id] = [d_1].[SubOrderId]
 
@@ -60,24 +65,29 @@ SELECT
 FROM
 	(
 		SELECT DISTINCT
-			[t2].[Id]
+			[t3].[Id]
 		FROM
 			(
 				SELECT
-					[t1].[Id]
+					[t2].[Id]
 				FROM
 					(
 						SELECT
-							[x].[Id],
-							ROW_NUMBER() OVER (ORDER BY [x].[Id]) as [RN]
+							[t1].[Id],
+							ROW_NUMBER() OVER (ORDER BY [t1].[Id]) as [RN]
 						FROM
-							[Order] [x]
-						WHERE
-							[x].[Name] LIKE N'cat%' ESCAPE N'~'
-					) [t1]
+							(
+								SELECT
+									[x].[Id]
+								FROM
+									[Order] [x]
+								WHERE
+									[x].[Name] LIKE N'cat%' ESCAPE N'~'
+							) [t1]
+					) [t2]
 				WHERE
-					[t1].[RN] > @skip AND [t1].[RN] <= (@skip + @take)
-			) [t2]
+					[t2].[RN] > @skip AND [t2].[RN] <= (@skip + @take)
+			) [t3]
 	) [m_1]
 		INNER JOIN [SubOrder] [d] ON [m_1].[Id] = [d].[OrderId]
 
@@ -91,21 +101,27 @@ DECLARE @take Int -- Int32
 SET     @take = 10
 
 SELECT
-	[t1].[Id],
-	[t1].[Name]
+	[t2].[Id],
+	[t2].[Name]
 FROM
 	(
 		SELECT
-			[x].[Id],
-			[x].[Name],
-			ROW_NUMBER() OVER (ORDER BY [x].[Id]) as [RN]
+			[t1].[Id],
+			[t1].[Name],
+			ROW_NUMBER() OVER (ORDER BY [t1].[Id]) as [RN]
 		FROM
-			[Order] [x]
-		WHERE
-			[x].[Name] LIKE N'cat%' ESCAPE N'~'
-	) [t1]
+			(
+				SELECT
+					[x].[Id],
+					[x].[Name]
+				FROM
+					[Order] [x]
+				WHERE
+					[x].[Name] LIKE N'cat%' ESCAPE N'~'
+			) [t1]
+	) [t2]
 WHERE
-	[t1].[RN] > @skip AND [t1].[RN] <= (@skip + @take)
+	[t2].[RN] > @skip AND [t2].[RN] <= (@skip + @take)
 ORDER BY
-	[t1].[Id]
+	[t2].[Id]
 

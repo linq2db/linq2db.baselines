@@ -45,9 +45,16 @@ FROM
 						[d].[DetailValue],
 						ROW_NUMBER() OVER (ORDER BY [d].[DetailId]) as [RN]
 					FROM
-						[DetailClass] [d]
-					WHERE
-						[m_2].[Id1] = [d].[MasterId]
+						(
+							SELECT
+								[a_Details].[DetailId],
+								[a_Details].[MasterId],
+								[a_Details].[DetailValue]
+							FROM
+								[DetailClass] [a_Details]
+							WHERE
+								[m_2].[Id1] = [a_Details].[MasterId]
+						) [d]
 				) [t1]
 			WHERE
 				[t1].[RN] > 1 AND [t1].[RN] <= 3
