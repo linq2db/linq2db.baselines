@@ -19,10 +19,15 @@ DECLARE @skip  -- Int32
 SET     @skip = 0
 
 SELECT
-	[x].[DuplicateData]
+	[x_1].[DuplicateData]
 FROM
-	[OrderByDistinctData] [x]
-GROUP BY
-	[x].[DuplicateData]
+	(
+		SELECT
+			[x].[DuplicateData]
+		FROM
+			[OrderByDistinctData] [x]
+		GROUP BY
+			[x].[DuplicateData]
+	) [x_1]
 LIMIT @take OFFSET @skip
 

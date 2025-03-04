@@ -22,15 +22,27 @@ SELECT
 FROM
 	(
 		SELECT DISTINCT
-			CASE
-				WHEN [g_1].[Freight] > 50 THEN CASE
-					WHEN [g_1].[Freight] > 100 THEN 'expensive'
-					ELSE 'average'
-				END
-				ELSE 'cheap'
-			END as [Key_1]
+			[t2].[Key_1]
 		FROM
-			[Orders] [g_1]
+			(
+				SELECT
+					[t1].[Key_1]
+				FROM
+					(
+						SELECT
+							CASE
+								WHEN [g_1].[Freight] > 50 THEN CASE
+									WHEN [g_1].[Freight] > 100 THEN 'expensive'
+									ELSE 'average'
+								END
+								ELSE 'cheap'
+							END as [Key_1]
+						FROM
+							[Orders] [g_1]
+					) [t1]
+				GROUP BY
+					[t1].[Key_1]
+			) [t2]
 	) [m_1]
 		INNER JOIN [Orders] [d] ON [m_1].[Key_1] = CASE
 			WHEN [d].[Freight] > 50 THEN CASE

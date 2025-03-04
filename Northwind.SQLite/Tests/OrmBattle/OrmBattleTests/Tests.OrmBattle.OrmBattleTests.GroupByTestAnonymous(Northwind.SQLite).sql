@@ -20,10 +20,19 @@ SELECT
 FROM
 	(
 		SELECT DISTINCT
-			[t1].[Region],
-			[t1].[City]
+			[t2].[Region],
+			[t2].[City]
 		FROM
-			[Customers] [t1]
+			(
+				SELECT
+					[t1].[Region],
+					[t1].[City]
+				FROM
+					[Customers] [t1]
+				GROUP BY
+					[t1].[Region],
+					[t1].[City]
+			) [t2]
 	) [m_1]
 		INNER JOIN [Customers] [d] ON ([m_1].[Region] = [d].[Region] OR [m_1].[Region] IS NULL AND [d].[Region] IS NULL) AND ([m_1].[City] = [d].[City] OR [m_1].[City] IS NULL AND [d].[City] IS NULL)
 
