@@ -8,10 +8,10 @@ BeforeExecute
 
 CREATE TABLE "TestTable"
 (
-	"ID"        SERIAL     NOT NULL,
-	"Field1"    text           NULL,
-	"Field2"    text           NULL,
-	"CreatedOn" TimeStamp      NULL,
+	"ID"        SERIAL       NOT NULL,
+	"Field1"    VarChar(50)      NULL,
+	"Field2"    VarChar          NULL,
+	"CreatedOn" TimeStamp        NULL,
 
 	CONSTRAINT "PK_TestTable" PRIMARY KEY ("ID")
 )

@@ -2,7 +2,7 @@
 -- PostgreSQL.15 PostgreSQL
 DECLARE @ID Integer -- Int32
 SET     @ID = 1
-DECLARE @Data Text(9) -- String
+DECLARE @Data Varchar(9) -- String
 SET     @Data = '***OOO***'
 
 INSERT INTO "TrimTestTable"
@@ -20,7 +20,7 @@ BeforeExecute
 -- PostgreSQL.15 PostgreSQL
 DECLARE @ID Integer -- Int32
 SET     @ID = 2
-DECLARE @Data Text(9) -- String
+DECLARE @Data Varchar(9) -- String
 SET     @Data = '***HHH***'
 
 INSERT INTO "TrimTestTable"

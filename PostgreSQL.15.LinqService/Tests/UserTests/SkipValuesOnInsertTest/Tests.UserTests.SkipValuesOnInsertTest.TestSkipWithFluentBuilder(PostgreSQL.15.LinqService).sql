@@ -2,7 +2,7 @@
 -- PostgreSQL.15 PostgreSQL
 DECLARE @Id Integer -- Int32
 SET     @Id = 1
-DECLARE @Name Text -- String
+DECLARE @Name Varchar -- String
 SET     @Name = NULL
 
 INSERT INTO "PR_1598_Insert_Fluent_Table"

@@ -7,9 +7,9 @@ BeforeExecute
 -- PostgreSQL.15 PostgreSQL
 DECLARE @FirstName Varchar(3) -- String
 SET     @FirstName = '123'
-DECLARE @LastName Text(3) -- String
+DECLARE @LastName Varchar(3) -- String
 SET     @LastName = '456'
-DECLARE @MiddleName Text(3) -- String
+DECLARE @MiddleName Varchar(3) -- String
 SET     @MiddleName = '789'
 DECLARE @Gender Varchar(1) -- String
 SET     @Gender = 'M'

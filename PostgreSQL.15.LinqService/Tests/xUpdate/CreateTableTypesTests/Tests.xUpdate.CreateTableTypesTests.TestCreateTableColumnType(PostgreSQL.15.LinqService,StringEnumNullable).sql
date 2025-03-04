@@ -2,7 +2,7 @@
 -- PostgreSQL.15 PostgreSQL
 DECLARE @Id Integer -- Int32
 SET     @Id = 1
-DECLARE @StringEnumNullable Text -- String
+DECLARE @StringEnumNullable Varchar -- String
 SET     @StringEnumNullable = NULL
 
 INSERT INTO "CreateTableTypes"
@@ -20,7 +20,7 @@ BeforeExecute
 -- PostgreSQL.15 PostgreSQL
 DECLARE @Id Integer -- Int32
 SET     @Id = 2
-DECLARE @StringEnumNullable Text(2) -- String
+DECLARE @StringEnumNullable Varchar(2) -- String
 SET     @StringEnumNullable = '40'
 
 INSERT INTO "CreateTableTypes"

@@ -5,11 +5,11 @@ ALTER SEQUENCE "Person_PersonID_seq" RESTART WITH 5
 
 BeforeExecute
 -- PostgreSQL.15 PostgreSQL
-DECLARE @FirstName Text(21) -- String
+DECLARE @FirstName Varchar(21) -- String
 SET     @FirstName = 'test_inherited_insert'
-DECLARE @LastName Text(4) -- String
+DECLARE @LastName Varchar(4) -- String
 SET     @LastName = 'test'
-DECLARE @MiddleName Text(4) -- String
+DECLARE @MiddleName Varchar(4) -- String
 SET     @MiddleName = 'test'
 DECLARE @Gender Char(1) -- String
 SET     @Gender = 'U'
@@ -48,11 +48,11 @@ LIMIT 1
 
 BeforeExecute
 -- PostgreSQL.15 PostgreSQL
-DECLARE @FirstName Text(21) -- String
+DECLARE @FirstName Varchar(21) -- String
 SET     @FirstName = 'test_inherited_insert'
-DECLARE @LastName Text(4) -- String
+DECLARE @LastName Varchar(4) -- String
 SET     @LastName = 'test'
-DECLARE @MiddleName Text(4) -- String
+DECLARE @MiddleName Varchar(4) -- String
 SET     @MiddleName = 'test'
 DECLARE @Gender Char(1) -- String
 SET     @Gender = 'U'

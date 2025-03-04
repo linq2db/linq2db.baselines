@@ -2,9 +2,9 @@
 -- PostgreSQL.15 PostgreSQL
 DECLARE @Id Integer -- Int32
 SET     @Id = 0
-DECLARE @ClaimedKeyType Text(2) -- String
+DECLARE @ClaimedKeyType Varchar(2) -- String
 SET     @ClaimedKeyType = 'EC'
-DECLARE @ClaimedKeyTypeN Text(2) -- String
+DECLARE @ClaimedKeyTypeN Varchar(2) -- String
 SET     @ClaimedKeyTypeN = 'EC'
 
 INSERT INTO "Issue1554FluentTable"

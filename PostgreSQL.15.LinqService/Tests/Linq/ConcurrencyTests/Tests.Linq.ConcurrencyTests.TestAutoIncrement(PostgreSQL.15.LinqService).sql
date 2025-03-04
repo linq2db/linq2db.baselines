@@ -4,7 +4,7 @@ DECLARE @Id Integer -- Int32
 SET     @Id = 1
 DECLARE @Stamp Integer -- Int32
 SET     @Stamp = -10
-DECLARE @Value Text(7) -- String
+DECLARE @Value Varchar(7) -- String
 SET     @Value = 'initial'
 
 INSERT INTO "ConcurrencyAutoIncrement"
@@ -32,7 +32,7 @@ FROM
 
 BeforeExecute
 -- PostgreSQL.15 PostgreSQL
-DECLARE @Value Text(7) -- String
+DECLARE @Value Varchar(7) -- String
 SET     @Value = 'value 1'
 DECLARE @Id Integer -- Int32
 SET     @Id = 1
@@ -59,7 +59,7 @@ FROM
 
 BeforeExecute
 -- PostgreSQL.15 PostgreSQL
-DECLARE @Value Text(7) -- String
+DECLARE @Value Varchar(7) -- String
 SET     @Value = 'value 2'
 DECLARE @Id Integer -- Int32
 SET     @Id = 1
@@ -86,7 +86,7 @@ FROM
 
 BeforeExecute
 -- PostgreSQL.15 PostgreSQL
-DECLARE @Value Text(7) -- String
+DECLARE @Value Varchar(7) -- String
 SET     @Value = 'value 3'
 DECLARE @Id Integer -- Int32
 SET     @Id = 1

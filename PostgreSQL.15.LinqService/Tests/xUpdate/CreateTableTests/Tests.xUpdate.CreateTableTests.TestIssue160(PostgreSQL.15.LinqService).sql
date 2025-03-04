@@ -3,8 +3,8 @@
 
 CREATE TABLE aa
 (
-	bb Int  NOT NULL,
-	cc text     NULL,
+	bb Int     NOT NULL,
+	cc VarChar     NULL,
 
 	CONSTRAINT "PK_aa" PRIMARY KEY (bb)
 )
@@ -13,7 +13,7 @@ BeforeExecute
 -- PostgreSQL.15 PostgreSQL
 DECLARE @bb Integer -- Int32
 SET     @bb = 99
-DECLARE @cc Text(5) -- String
+DECLARE @cc Varchar(5) -- String
 SET     @cc = 'hallo'
 
 INSERT INTO aa
