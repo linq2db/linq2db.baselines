@@ -4,18 +4,25 @@ DECLARE @take Int -- Int32
 SET     @take = 1000
 
 SELECT TOP (@take)
-	[a_Patient].[Diagnosis],
-	[a_Patient].[PersonID] as [id],
-	AVG([auto16031].[PersonID]) as [AVG_1]
+	[t2].[Diagnosis],
+	[t2].[id],
+	[t2].[AVG_1]
 FROM
-	[Person] [auto16031]
-		LEFT JOIN [Patient] [a_Patient] ON [auto16031].[PersonID] = [a_Patient].[PersonID]
-GROUP BY
-	[auto16031].[PersonID],
-	[a_Patient].[PersonID],
-	[a_Patient].[Diagnosis]
-HAVING
-	[auto16031].[PersonID] = 1
+	(
+		SELECT
+			[a_Patient].[Diagnosis],
+			[a_Patient].[PersonID] as [id],
+			AVG([t1].[PersonID]) as [AVG_1]
+		FROM
+			[Person] [t1]
+				LEFT JOIN [Patient] [a_Patient] ON [t1].[PersonID] = [a_Patient].[PersonID]
+		GROUP BY
+			[t1].[PersonID],
+			[a_Patient].[PersonID],
+			[a_Patient].[Diagnosis]
+		HAVING
+			[t1].[PersonID] = 1
+	) [t2]
 ORDER BY
-	[a_Patient].[Diagnosis] DESC
+	[t2].[Diagnosis] DESC
 
