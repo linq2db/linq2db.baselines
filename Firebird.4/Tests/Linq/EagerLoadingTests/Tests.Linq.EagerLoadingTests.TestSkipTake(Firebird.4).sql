@@ -38,9 +38,16 @@ FROM
 				"d"."MasterId",
 				"d"."DetailValue"
 			FROM
-				"DetailClass" "d"
-			WHERE
-				"m_2"."Id1" = "d"."MasterId"
+				(
+					SELECT
+						"a_Details"."DetailId",
+						"a_Details"."MasterId",
+						"a_Details"."DetailValue"
+					FROM
+						"DetailClass" "a_Details"
+					WHERE
+						"m_2"."Id1" = "a_Details"."MasterId"
+				) "d"
 			ORDER BY
 				"d"."DetailId"
 			OFFSET 1 ROWS FETCH NEXT 2 ROWS ONLY 
