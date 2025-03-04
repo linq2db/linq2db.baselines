@@ -35,12 +35,17 @@ SELECT
 FROM
 	(
 		SELECT
-			[x].[DuplicateData],
+			[x_1].[DuplicateData],
 			ROW_NUMBER() OVER (ORDER BY (SELECT NULL)) as [RN]
 		FROM
-			[OrderByDistinctData] [x]
-		GROUP BY
-			[x].[DuplicateData]
+			(
+				SELECT
+					[x].[DuplicateData]
+				FROM
+					[OrderByDistinctData] [x]
+				GROUP BY
+					[x].[DuplicateData]
+			) [x_1]
 	) [t1]
 WHERE
 	[t1].[RN] > @skip AND [t1].[RN] <= (@skip + @take)
@@ -82,12 +87,17 @@ SELECT
 FROM
 	(
 		SELECT
-			[x].[DuplicateData],
+			[x_1].[DuplicateData],
 			ROW_NUMBER() OVER (ORDER BY (SELECT NULL)) as [RN]
 		FROM
-			[OrderByDistinctData] [x]
-		GROUP BY
-			[x].[DuplicateData]
+			(
+				SELECT
+					[x].[DuplicateData]
+				FROM
+					[OrderByDistinctData] [x]
+				GROUP BY
+					[x].[DuplicateData]
+			) [x_1]
 	) [t1]
 WHERE
 	[t1].[RN] > @skip AND [t1].[RN] <= (@skip + @take)
