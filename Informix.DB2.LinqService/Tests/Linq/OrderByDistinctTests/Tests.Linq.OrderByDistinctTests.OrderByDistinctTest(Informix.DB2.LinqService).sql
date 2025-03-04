@@ -18,11 +18,16 @@ DECLARE @take Integer(4) -- Int32
 SET     @take = 3
 
 SELECT SKIP @skip FIRST @take
-	x.DuplicateData
+	x_1.DuplicateData
 FROM
-	OrderByDistinctData x
-GROUP BY
-	x.DuplicateData
+	(
+		SELECT
+			x.DuplicateData
+		FROM
+			OrderByDistinctData x
+		GROUP BY
+			x.DuplicateData
+	) x_1
 
 BeforeExecute
 -- Informix.DB2 Informix
@@ -44,9 +49,14 @@ DECLARE @take Integer(4) -- Int32
 SET     @take = 3
 
 SELECT SKIP @skip FIRST @take
-	x.DuplicateData
+	x_1.DuplicateData
 FROM
-	OrderByDistinctData x
-GROUP BY
-	x.DuplicateData
+	(
+		SELECT
+			x.DuplicateData
+		FROM
+			OrderByDistinctData x
+		GROUP BY
+			x.DuplicateData
+	) x_1
 

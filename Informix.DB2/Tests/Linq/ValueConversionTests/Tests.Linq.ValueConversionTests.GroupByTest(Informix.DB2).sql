@@ -6,21 +6,36 @@ DECLARE @testedList VarChar(20) -- String
 SET     @testedList = '[{"Value":"Value1"}]'
 
 SELECT
-	m_1.Id,
-	m_1.Id,
-	m_1.Value1,
-	m_1.Value2,
-	m_1.Enum,
-	m_1.EnumNullable,
-	m_1.EnumWithNull,
-	m_1.EnumWithNullDeclarative,
-	m_1.BoolValue,
-	m_1.AnotherBoolValue,
-	m_1.DateTimeNullable
+	m_1.Key_1,
+	d.Id,
+	d.Value1,
+	d.Value2,
+	d.Enum,
+	d.EnumNullable,
+	d.EnumWithNull,
+	d.EnumWithNullDeclarative,
+	d.BoolValue,
+	d.AnotherBoolValue,
+	d.DateTimeNullable
 FROM
-	ValueConversion m_1
+	(
+		SELECT DISTINCT
+			t1.Key_1
+		FROM
+			(
+				SELECT
+					t.Id as Key_1
+				FROM
+					ValueConversion t
+				WHERE
+					@testedList = t.Value2
+				GROUP BY
+					t.Id
+			) t1
+	) m_1
+		INNER JOIN ValueConversion d ON m_1.Key_1 = d.Id
 WHERE
-	@testedList = m_1.Value2 AND @testedList = m_1.Value2
+	@testedList = d.Value2
 
 BeforeExecute
 DisposeTransaction
