@@ -27,7 +27,7 @@ FROM
 GROUP BY
 	[x].[DuplicateData]
 ORDER BY
-	1
+	MAX([x].[OrderData1])
 OFFSET @skip ROWS FETCH NEXT @take ROWS ONLY 
 
 BeforeExecute
@@ -59,6 +59,6 @@ FROM
 GROUP BY
 	[x].[DuplicateData]
 ORDER BY
-	1
+	MIN([x].[OrderData1]) DESC
 OFFSET @skip ROWS FETCH NEXT @take ROWS ONLY 
 
