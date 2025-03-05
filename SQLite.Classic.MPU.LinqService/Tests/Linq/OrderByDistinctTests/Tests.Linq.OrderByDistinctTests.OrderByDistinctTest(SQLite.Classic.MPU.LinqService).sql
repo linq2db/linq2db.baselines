@@ -21,11 +21,17 @@ SET     @skip = 0
 SELECT
 	[x].[DuplicateData]
 FROM
-	[OrderByDistinctData] [x]
-GROUP BY
-	[x].[DuplicateData]
+	(
+		SELECT
+			MAX([g_1].[OrderData1]) as [OrderData1],
+			[g_1].[DuplicateData]
+		FROM
+			[OrderByDistinctData] [g_1]
+		GROUP BY
+			[g_1].[DuplicateData]
+	) [x]
 ORDER BY
-	MAX([x].[OrderData1])
+	[x].[OrderData1]
 LIMIT @take OFFSET @skip
 
 BeforeExecute
@@ -51,10 +57,16 @@ SET     @skip = 0
 SELECT
 	[x].[DuplicateData]
 FROM
-	[OrderByDistinctData] [x]
-GROUP BY
-	[x].[DuplicateData]
+	(
+		SELECT
+			MIN([g_1].[OrderData1]) as [OrderData1],
+			[g_1].[DuplicateData]
+		FROM
+			[OrderByDistinctData] [g_1]
+		GROUP BY
+			[g_1].[DuplicateData]
+	) [x]
 ORDER BY
-	MIN([x].[OrderData1]) DESC
+	[x].[OrderData1] DESC
 LIMIT @take OFFSET @skip
 
