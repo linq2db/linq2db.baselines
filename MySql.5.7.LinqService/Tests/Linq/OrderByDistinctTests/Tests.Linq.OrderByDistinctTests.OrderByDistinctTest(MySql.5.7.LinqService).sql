@@ -24,6 +24,8 @@ FROM
 	`OrderByDistinctData` `x`
 GROUP BY
 	`x`.`DuplicateData`
+ORDER BY
+	MAX(`x`.`OrderData1`)
 LIMIT @skip, @take
 
 BeforeExecute
@@ -52,5 +54,7 @@ FROM
 	`OrderByDistinctData` `x`
 GROUP BY
 	`x`.`DuplicateData`
+ORDER BY
+	MIN(`x`.`OrderData1`) DESC
 LIMIT @skip, @take
 
