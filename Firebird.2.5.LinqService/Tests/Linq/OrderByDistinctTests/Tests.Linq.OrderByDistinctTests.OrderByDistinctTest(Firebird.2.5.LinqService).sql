@@ -23,6 +23,8 @@ FROM
 	"OrderByDistinctData" "x"
 GROUP BY
 	"x"."DuplicateData"
+ORDER BY
+	MAX("x"."OrderData1")
 
 BeforeExecute
 -- Firebird.2.5 Firebird
@@ -49,4 +51,6 @@ FROM
 	"OrderByDistinctData" "x"
 GROUP BY
 	"x"."DuplicateData"
+ORDER BY
+	MIN("x"."OrderData1") DESC
 
