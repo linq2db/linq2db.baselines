@@ -15,11 +15,17 @@ WHERE
 				SELECT
 					[x].[ParentID]
 				FROM
-					[Child] [x]
-				GROUP BY
-					[x].[ParentID]
+					(
+						SELECT
+							MAX([g_1].[ChildID]) as [Max_1],
+							[g_1].[ParentID]
+						FROM
+							[Child] [g_1]
+						GROUP BY
+							[g_1].[ParentID]
+					) [x]
 				ORDER BY
-					MAX([x].[ChildID]) DESC
+					[x].[Max_1] DESC
 				LIMIT 2
 			) [t1]
 	)
