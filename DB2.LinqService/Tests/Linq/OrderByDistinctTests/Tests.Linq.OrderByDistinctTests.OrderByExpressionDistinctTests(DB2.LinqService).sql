@@ -20,5 +20,7 @@ FROM
 	"OrderByDistinctData" "x"
 GROUP BY
 	"x"."DuplicateData"
+ORDER BY
+	MAX(Mod("x"."OrderData1", 3))
 OFFSET 0 ROWS FETCH NEXT @take ROWS ONLY 
 
