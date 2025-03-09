@@ -9,8 +9,8 @@ BeforeExecute
 
 CREATE TABLE [xxPatient]
 (
-	[PersonID]  Int            NOT NULL,
-	[Diagnosis] NVarChar(4000)     NULL,
+	[PersonID]  Int           NOT NULL,
+	[Diagnosis] NVarChar(Max)     NULL,
 
 	CONSTRAINT [PK_xxPatient] PRIMARY KEY CLUSTERED ([PersonID])
 )

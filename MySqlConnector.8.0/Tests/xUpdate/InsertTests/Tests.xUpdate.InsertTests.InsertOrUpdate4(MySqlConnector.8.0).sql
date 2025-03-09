@@ -51,7 +51,7 @@ INSERT INTO `Patient`
 VALUES
 (
 	@id,
-	CAST(Char_Length(@diagnosis) + @i AS CHAR(11))
+	CAST(Char_Length(@diagnosis) + @i AS CHAR(255))
 )
 ON DUPLICATE KEY UPDATE
 	`Diagnosis` = CAST(Char_Length(`Diagnosis`) + @i AS CHAR(255))
@@ -73,7 +73,7 @@ INSERT INTO `Patient`
 VALUES
 (
 	@id,
-	CAST(Char_Length(@diagnosis) + @i AS CHAR(11))
+	CAST(Char_Length(@diagnosis) + @i AS CHAR(255))
 )
 ON DUPLICATE KEY UPDATE
 	`Diagnosis` = CAST(Char_Length(`Diagnosis`) + @i AS CHAR(255))
@@ -95,7 +95,7 @@ INSERT INTO `Patient`
 VALUES
 (
 	@id,
-	CAST(Char_Length(@diagnosis) + @i AS CHAR(11))
+	CAST(Char_Length(@diagnosis) + @i AS CHAR(255))
 )
 ON DUPLICATE KEY UPDATE
 	`Diagnosis` = CAST(Char_Length(`Diagnosis`) + @i AS CHAR(255))

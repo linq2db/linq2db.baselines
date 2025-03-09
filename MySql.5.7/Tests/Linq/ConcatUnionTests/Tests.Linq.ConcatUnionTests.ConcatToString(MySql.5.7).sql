@@ -21,7 +21,7 @@ FROM
 		FROM
 			`Person` `p_1`
 		WHERE
-			LOCATE(@pattern, CAST(`p_1`.`PersonID` AS CHAR(11))) > 0
+			LOCATE(@pattern, CAST(`p_1`.`PersonID` AS CHAR(255))) > 0
 	) `t1`
 LIMIT @take
 

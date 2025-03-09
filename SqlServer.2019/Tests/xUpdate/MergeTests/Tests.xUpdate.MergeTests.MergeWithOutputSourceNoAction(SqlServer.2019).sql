@@ -260,7 +260,7 @@ VALUES
 )
 OUTPUT
 	[Source].[source_Field1],
-	CAST([Source].[source_Field1] AS NVarChar(11)),
-	CAST(INSERTED.[Id] AS NVarChar(11))
+	CAST([Source].[source_Field1] AS NVarChar(Max)),
+	CAST(INSERTED.[Id] AS NVarChar(Max))
 ;
 

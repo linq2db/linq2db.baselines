@@ -1,6 +1,6 @@
 ﻿BeforeExecute
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-DECLARE @firstName VarChar(4000) -- String
+DECLARE @firstName VarChar(4) -- String
 SET     @firstName = 'John'
 
 SELECT

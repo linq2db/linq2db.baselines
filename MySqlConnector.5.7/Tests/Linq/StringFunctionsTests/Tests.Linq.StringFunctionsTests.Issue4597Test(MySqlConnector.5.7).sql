@@ -4,7 +4,7 @@
 SELECT
 	(
 		SELECT
-			GROUP_CONCAT(CAST(`a_Children`.`ChildID` AS CHAR(11)) SEPARATOR ', ')
+			GROUP_CONCAT(CAST(`a_Children`.`ChildID` AS CHAR(255)) SEPARATOR ', ')
 		FROM
 			`Child` `a_Children`
 		WHERE
