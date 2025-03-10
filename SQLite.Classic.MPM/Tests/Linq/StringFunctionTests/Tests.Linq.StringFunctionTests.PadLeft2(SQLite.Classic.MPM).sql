@@ -11,8 +11,8 @@ FROM
 	[Person] [p]
 WHERE
 	'123' || CASE
-		WHEN Length([p].[FirstName]) > 6 THEN [p].[FirstName]
-		ELSE Replicate('*', 6 - Length([p].[FirstName])) || [p].[FirstName]
+		WHEN LENGTH([p].[FirstName]) < CAST(6 AS INTEGER) THEN SUBSTR(REPLACE(HEX(ZEROBLOB(CAST(6 AS INTEGER))), '0', '*'), 1, CAST(6 AS INTEGER) - LENGTH([p].[FirstName])) || [p].[FirstName]
+		ELSE [p].[FirstName]
 	END = '123**John' AND
 	[p].[PersonID] = 1
 
