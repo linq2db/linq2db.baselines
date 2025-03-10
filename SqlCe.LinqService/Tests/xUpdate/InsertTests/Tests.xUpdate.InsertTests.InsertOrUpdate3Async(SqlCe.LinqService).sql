@@ -34,3 +34,74 @@ BeforeExecute
 
 SELECT @@IDENTITY
 
+BeforeExecute
+-- SqlCe (asynchronously)
+DECLARE @i Int -- Int32
+SET     @i = 0
+DECLARE @id Int -- Int32
+SET     @id = 5
+
+UPDATE
+	[Patient]
+SET
+	[Diagnosis] = CAST(Len([Patient].[Diagnosis]) + @i AS NVarChar(11))
+WHERE
+	[Patient].[PersonID] = @id
+
+BeforeExecute
+-- SqlCe (asynchronously)
+DECLARE @id Int -- Int32
+SET     @id = 5
+
+INSERT INTO [Patient]
+(
+	[PersonID],
+	[Diagnosis]
+)
+VALUES
+(
+	@id,
+	'abc'
+)
+
+BeforeExecute
+-- SqlCe (asynchronously)
+DECLARE @i Int -- Int32
+SET     @i = 1
+DECLARE @id Int -- Int32
+SET     @id = 5
+
+UPDATE
+	[Patient]
+SET
+	[Diagnosis] = CAST(Len([Patient].[Diagnosis]) + @i AS NVarChar(11))
+WHERE
+	[Patient].[PersonID] = @id
+
+BeforeExecute
+-- SqlCe (asynchronously)
+DECLARE @i Int -- Int32
+SET     @i = 2
+DECLARE @id Int -- Int32
+SET     @id = 5
+
+UPDATE
+	[Patient]
+SET
+	[Diagnosis] = CAST(Len([Patient].[Diagnosis]) + @i AS NVarChar(11))
+WHERE
+	[Patient].[PersonID] = @id
+
+BeforeExecute
+-- SqlCe (asynchronously)
+DECLARE @id Int -- Int32
+SET     @id = 5
+
+SELECT TOP (2)
+	[p].[PersonID],
+	[p].[Diagnosis]
+FROM
+	[Patient] [p]
+WHERE
+	[p].[PersonID] = @id
+
