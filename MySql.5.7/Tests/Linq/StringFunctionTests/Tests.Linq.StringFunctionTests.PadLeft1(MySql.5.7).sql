@@ -10,6 +10,9 @@ SELECT
 FROM
 	`Person` `p`
 WHERE
-	Concat('123', LPad(`p`.`FirstName`, 6, ' ')) = '123  John' AND
+	Concat('123', CASE
+		WHEN LENGTH(`p`.`FirstName`) < CAST(6 AS SIGNED) THEN LPAD(`p`.`FirstName`, CAST(6 AS SIGNED), ' ')
+		ELSE `p`.`FirstName`
+	END) = '123  John' AND
 	`p`.`PersonID` = 1
 
