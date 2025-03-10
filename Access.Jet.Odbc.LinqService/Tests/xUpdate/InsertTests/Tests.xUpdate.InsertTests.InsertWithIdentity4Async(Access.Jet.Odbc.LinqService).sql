@@ -39,6 +39,22 @@ SELECT @@IDENTITY
 
 BeforeExecute
 -- Access.Jet.Odbc AccessODBC (asynchronously)
+DECLARE @p NVarChar(5) -- String
+SET     @p = 'John0'
+
+SELECT TOP 2
+	[p].[FirstName],
+	[p].[PersonID],
+	[p].[LastName],
+	[p].[MiddleName],
+	[p].[Gender]
+FROM
+	[Person] [p]
+WHERE
+	[p].[FirstName] = ? AND [p].[LastName] = 'Shepard'
+
+BeforeExecute
+-- Access.Jet.Odbc AccessODBC (asynchronously)
 DECLARE @FirstName NVarChar(5) -- String
 SET     @FirstName = 'John1'
 DECLARE @LastName NVarChar(7) -- String
@@ -67,6 +83,22 @@ BeforeExecute
 -- Access.Jet.Odbc AccessODBC (asynchronously)
 
 SELECT @@IDENTITY
+
+BeforeExecute
+-- Access.Jet.Odbc AccessODBC (asynchronously)
+DECLARE @p NVarChar(5) -- String
+SET     @p = 'John1'
+
+SELECT TOP 2
+	[p].[FirstName],
+	[p].[PersonID],
+	[p].[LastName],
+	[p].[MiddleName],
+	[p].[Gender]
+FROM
+	[Person] [p]
+WHERE
+	[p].[FirstName] = ? AND [p].[LastName] = 'Shepard'
 
 BeforeExecute
 -- Access.Jet.Odbc AccessODBC
