@@ -10,6 +10,9 @@ SELECT
 FROM
 	Person p
 WHERE
-	'123' || LPad(p.FirstName, 6, '*') = '123**John' AND
+	'123' || CASE
+		WHEN LENGTH(p.FirstName) < 6::Int THEN LPAD(p.FirstName, 6::Int, '*')
+		ELSE p.FirstName
+	END = '123**John' AND
 	p.PersonID = 1
 
