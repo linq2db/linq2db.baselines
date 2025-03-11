@@ -4,7 +4,16 @@ DECLARE @personId Int32
 SET     @personId = 1
 
 SELECT
-	COUNT(*)
+	p."FirstName",
+	p."PersonID",
+	p."LastName",
+	p."MiddleName",
+	p."Gender",
+	p."FirstName",
+	p."PersonID",
+	p."LastName",
+	p."MiddleName",
+	p."Gender"
 FROM
 	"Person" p
 WHERE
@@ -19,7 +28,16 @@ DECLARE @personId_1 Int32
 SET     @personId_1 = 2
 
 SELECT
-	COUNT(*)
+	p."FirstName",
+	p."PersonID",
+	p."LastName",
+	p."MiddleName",
+	p."Gender",
+	p."FirstName",
+	p."PersonID",
+	p."LastName",
+	p."MiddleName",
+	p."Gender"
 FROM
 	"Person" p
 WHERE
