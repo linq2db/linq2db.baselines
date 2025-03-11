@@ -17,7 +17,8 @@ INSERT BULK [tempdb]..[#WithIdentity](Name)
 --  SqlServer.2022
 
 SELECT
-	COUNT(*)
+	[t1].[Id],
+	[t1].[Name]
 FROM
 	[tempdb]..[#WithIdentity] [t1]
 
