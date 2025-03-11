@@ -20,7 +20,9 @@ BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
 SELECT
-	COUNT(*)
+	[x].[id],
+	[x].[service_id],
+	[x].[is_deleted]
 FROM
 	[component_categories] [x]
 WHERE
@@ -30,7 +32,9 @@ BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
 SELECT
-	COUNT(*)
+	[x].[id],
+	[x].[service_id],
+	[x].[is_deleted]
 FROM
 	[component_categories] [x]
 WHERE
