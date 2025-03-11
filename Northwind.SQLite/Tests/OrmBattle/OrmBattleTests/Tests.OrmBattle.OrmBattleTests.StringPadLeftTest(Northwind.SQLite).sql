@@ -17,8 +17,7 @@ FROM
 	[Customers] [c_1]
 WHERE
 	'123' || CASE
-		WHEN LENGTH([c_1].[City]) < CAST(8 AS INTEGER) OR [c_1].[City] IS NULL
-			THEN SUBSTR(REPLACE(HEX(ZEROBLOB(CAST(8 AS INTEGER))), '0', ' '), 1, CAST(8 AS INTEGER) - LENGTH([c_1].[City])) || [c_1].[City]
+		WHEN LENGTH([c_1].[City]) < 8 OR [c_1].[City] IS NULL THEN SUBSTR(REPLACE(HEX(ZEROBLOB(8)), '0', ' '), 1, 8 - LENGTH([c_1].[City])) || [c_1].[City]
 		ELSE [c_1].[City]
 	END = '123 Seattle'
 LIMIT 1
