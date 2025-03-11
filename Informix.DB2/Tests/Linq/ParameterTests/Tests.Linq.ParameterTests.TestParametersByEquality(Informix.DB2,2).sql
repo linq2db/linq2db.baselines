@@ -4,16 +4,7 @@ DECLARE @personId Integer(4) -- Int32
 SET     @personId = 1
 
 SELECT
-	p.FirstName,
-	p.PersonID,
-	p.LastName,
-	p.MiddleName,
-	p.Gender,
-	p.FirstName,
-	p.PersonID,
-	p.LastName,
-	p.MiddleName,
-	p.Gender
+	COUNT(*)
 FROM
 	Person p
 WHERE
@@ -28,16 +19,7 @@ DECLARE @personId_1 Integer(4) -- Int32
 SET     @personId_1 = 2
 
 SELECT
-	p.FirstName,
-	p.PersonID,
-	p.LastName,
-	p.MiddleName,
-	p.Gender,
-	p.FirstName,
-	p.PersonID,
-	p.LastName,
-	p.MiddleName,
-	p.Gender
+	COUNT(*)
 FROM
 	Person p
 WHERE

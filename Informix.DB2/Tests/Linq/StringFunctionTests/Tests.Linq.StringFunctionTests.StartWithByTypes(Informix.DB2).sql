@@ -2,11 +2,7 @@
 -- Informix.DB2 Informix
 
 SELECT
-	t.Id,
-	t.CharColumn,
-	t.NCharColumn,
-	t.VarCharColumn,
-	t.NVarCharColumn
+	COUNT(*)
 FROM
 	StringTypesTable t
 WHERE
