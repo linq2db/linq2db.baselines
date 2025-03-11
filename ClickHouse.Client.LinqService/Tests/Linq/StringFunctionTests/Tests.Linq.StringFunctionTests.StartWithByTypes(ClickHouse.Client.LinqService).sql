@@ -2,7 +2,11 @@
 -- ClickHouse.Client ClickHouse
 
 SELECT
-	COUNT(*)
+	t.Id,
+	t.CharColumn,
+	t.NCharColumn,
+	t.VarCharColumn,
+	t.NVarCharColumn
 FROM
 	StringTypesTable t
 WHERE
