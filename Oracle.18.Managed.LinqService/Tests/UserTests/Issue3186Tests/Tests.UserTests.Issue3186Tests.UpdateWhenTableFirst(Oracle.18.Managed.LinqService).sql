@@ -23,7 +23,9 @@ BeforeExecute
 -- Oracle.18.Managed Oracle.Managed Oracle12
 
 SELECT
-	COUNT(*)
+	x."id",
+	x."service_id",
+	x."is_deleted"
 FROM
 	"component_categories" x
 WHERE
@@ -33,7 +35,9 @@ BeforeExecute
 -- Oracle.18.Managed Oracle.Managed Oracle12
 
 SELECT
-	COUNT(*)
+	x."id",
+	x."service_id",
+	x."is_deleted"
 FROM
 	"component_categories" x
 WHERE
