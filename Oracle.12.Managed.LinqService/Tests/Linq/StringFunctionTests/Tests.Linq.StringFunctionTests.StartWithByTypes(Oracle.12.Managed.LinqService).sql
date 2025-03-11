@@ -10,7 +10,11 @@ DECLARE @str_3 NVarchar2(5) -- String
 SET     @str_3 = 'some%'
 
 SELECT
-	COUNT(*)
+	t."Id",
+	t."CharColumn",
+	t."NCharColumn",
+	t."VarCharColumn",
+	t."NVarCharColumn"
 FROM
 	"StringTypesTable" t
 WHERE
