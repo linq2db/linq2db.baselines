@@ -1,20 +1,8 @@
 ﻿BeforeExecute
-BeginTransaction(Serializable)
-BeforeExecute
 -- SQLite.MS SQLite
 
 SELECT
-	1
-FROM
-	[TableStatus_3014] [x]
-
-BeforeExecute
-DisposeTransaction
-BeforeExecute
--- SQLite.MS SQLite
-
-SELECT
-	[t].[Id]
+	COUNT(*)
 FROM
 	[Table2_3014] [t]
 
@@ -63,22 +51,10 @@ WHERE
 	1 = 0
 
 BeforeExecute
-BeginTransaction(Serializable)
-BeforeExecute
 -- SQLite.MS SQLite
 
 SELECT
-	1
+	COUNT(*)
 FROM
-	[TableStatus_3014] [x]
-
-BeforeExecute
-DisposeTransaction
-BeforeExecute
--- SQLite.MS SQLite
-
-SELECT
-	[e].[Id]
-FROM
-	[Table2_3014] [e]
+	[Table2_3014] [t]
 

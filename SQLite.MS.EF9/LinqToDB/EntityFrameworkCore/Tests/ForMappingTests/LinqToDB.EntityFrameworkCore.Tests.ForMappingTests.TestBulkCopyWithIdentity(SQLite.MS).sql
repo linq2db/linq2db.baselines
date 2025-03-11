@@ -23,8 +23,7 @@ VALUES
 --  SQLite.MS SQLite
 
 SELECT
-	[t1].[Id],
-	[t1].[Name]
+	COUNT(*)
 FROM
 	temp.[WithIdentity] [t1]
 
