@@ -8,16 +8,7 @@ DECLARE @personId_2 Integer -- Int32
 SET     @personId_2 = 1
 
 SELECT
-	[p].[FirstName],
-	[p].[PersonID],
-	[p].[LastName],
-	[p].[MiddleName],
-	[p].[Gender],
-	[p].[FirstName],
-	[p].[PersonID],
-	[p].[LastName],
-	[p].[MiddleName],
-	[p].[Gender]
+	COUNT(*)
 FROM
 	[Person] [p]
 WHERE
@@ -34,16 +25,7 @@ DECLARE @personId_2 Integer -- Int32
 SET     @personId_2 = 2
 
 SELECT
-	[p].[FirstName],
-	[p].[PersonID],
-	[p].[LastName],
-	[p].[MiddleName],
-	[p].[Gender],
-	[p].[FirstName],
-	[p].[PersonID],
-	[p].[LastName],
-	[p].[MiddleName],
-	[p].[Gender]
+	COUNT(*)
 FROM
 	[Person] [p]
 WHERE
