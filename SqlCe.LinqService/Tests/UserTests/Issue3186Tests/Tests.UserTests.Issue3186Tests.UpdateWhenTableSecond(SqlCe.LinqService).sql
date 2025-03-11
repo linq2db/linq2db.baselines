@@ -23,9 +23,7 @@ BeforeExecute
 -- SqlCe
 
 SELECT
-	[x].[id],
-	[x].[service_id],
-	[x].[is_deleted]
+	COUNT(*) as [COUNT_1]
 FROM
 	[component_categories] [x]
 WHERE
@@ -35,9 +33,7 @@ BeforeExecute
 -- SqlCe
 
 SELECT
-	[x].[id],
-	[x].[service_id],
-	[x].[is_deleted]
+	COUNT(*) as [COUNT_1]
 FROM
 	[component_categories] [x]
 WHERE
