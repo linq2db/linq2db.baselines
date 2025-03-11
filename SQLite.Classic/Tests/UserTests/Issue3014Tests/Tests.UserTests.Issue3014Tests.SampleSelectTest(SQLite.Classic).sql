@@ -1,8 +1,20 @@
 ﻿BeforeExecute
+BeginTransaction(Serializable)
+BeforeExecute
 -- SQLite.Classic SQLite
 
 SELECT
-	COUNT(*)
+	1
+FROM
+	[TableStatus_3014] [x]
+
+BeforeExecute
+DisposeTransaction
+BeforeExecute
+-- SQLite.Classic SQLite
+
+SELECT
+	[t].[Id]
 FROM
 	[Table2_3014] [t]
 
@@ -51,10 +63,22 @@ WHERE
 	1 = 0
 
 BeforeExecute
+BeginTransaction(Serializable)
+BeforeExecute
 -- SQLite.Classic SQLite
 
 SELECT
-	COUNT(*)
+	1
 FROM
-	[Table2_3014] [t]
+	[TableStatus_3014] [x]
+
+BeforeExecute
+DisposeTransaction
+BeforeExecute
+-- SQLite.Classic SQLite
+
+SELECT
+	[e].[Id]
+FROM
+	[Table2_3014] [e]
 
