@@ -2,7 +2,15 @@
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
-	COUNT(*)
+	1
+FROM
+	TableStatus_3014 x
+
+BeforeExecute
+-- ClickHouse.Octonica ClickHouse
+
+SELECT
+	t.Id
 FROM
 	Table2_3014 t
 
@@ -46,7 +54,15 @@ BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
-	COUNT(*)
+	1
 FROM
-	Table2_3014 t
+	TableStatus_3014 x
+
+BeforeExecute
+-- ClickHouse.Octonica ClickHouse
+
+SELECT
+	e.Id
+FROM
+	Table2_3014 e
 
