@@ -23,7 +23,9 @@ BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 SELECT
-	COUNT(*)
+	"x"."id",
+	"x"."service_id",
+	"x"."is_deleted"
 FROM
 	"component_categories" "x"
 WHERE
@@ -33,7 +35,9 @@ BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
 SELECT
-	COUNT(*)
+	"x"."id",
+	"x"."service_id",
+	"x"."is_deleted"
 FROM
 	"component_categories" "x"
 WHERE
