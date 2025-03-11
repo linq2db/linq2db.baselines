@@ -20,9 +20,7 @@ BeforeExecute
 -- Sybase.Managed Sybase
 
 SELECT
-	[x].[id],
-	[x].[service_id],
-	[x].[is_deleted]
+	COUNT(*)
 FROM
 	[component_categories] [x]
 WHERE
@@ -32,9 +30,7 @@ BeforeExecute
 -- Sybase.Managed Sybase
 
 SELECT
-	[x].[id],
-	[x].[service_id],
-	[x].[is_deleted]
+	COUNT(*)
 FROM
 	[component_categories] [x]
 WHERE
