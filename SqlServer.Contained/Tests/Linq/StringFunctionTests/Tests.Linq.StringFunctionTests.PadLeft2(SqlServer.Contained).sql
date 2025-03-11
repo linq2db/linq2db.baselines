@@ -10,6 +10,6 @@ SELECT
 FROM
 	[Person] [p]
 WHERE
-	N'123' + IIF(LEN([p].[FirstName]) < CAST(6 AS Int), REPLICATE(N'*', CAST(6 AS Int) - LEN([p].[FirstName])) + [p].[FirstName], [p].[FirstName]) = N'123**John' AND
+	N'123' + IIF(LEN([p].[FirstName]) < 6, REPLICATE(N'*', 6 - LEN([p].[FirstName])) + [p].[FirstName], [p].[FirstName]) = N'123**John' AND
 	[p].[PersonID] = 1
 
