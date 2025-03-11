@@ -11,7 +11,7 @@ FROM
 	`Person` `p`
 WHERE
 	Concat('123', CASE
-		WHEN LENGTH(`p`.`FirstName`) < CAST(6 AS SIGNED) THEN LPAD(`p`.`FirstName`, CAST(6 AS SIGNED), '*')
+		WHEN LENGTH(`p`.`FirstName`) < 6 THEN LPAD(`p`.`FirstName`, 6, '*')
 		ELSE `p`.`FirstName`
 	END) = '123**John' AND
 	`p`.`PersonID` = 1
