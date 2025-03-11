@@ -16,7 +16,9 @@ BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
 
 SELECT
-	COUNT(*)
+	[x].[id],
+	[x].[service_id],
+	[x].[is_deleted]
 FROM
 	[component_categories] [x]
 WHERE
@@ -26,7 +28,9 @@ BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
 
 SELECT
-	COUNT(*)
+	[x].[id],
+	[x].[service_id],
+	[x].[is_deleted]
 FROM
 	[component_categories] [x]
 WHERE
