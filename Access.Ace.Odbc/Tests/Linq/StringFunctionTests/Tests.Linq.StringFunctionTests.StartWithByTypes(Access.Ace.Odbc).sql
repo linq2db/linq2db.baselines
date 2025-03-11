@@ -10,11 +10,7 @@ DECLARE @str NVarChar(5) -- String
 SET     @str = 'some%'
 
 SELECT
-	[t].[Id],
-	[t].[CharColumn],
-	[t].[NCharColumn],
-	[t].[VarCharColumn],
-	[t].[NVarCharColumn]
+	COUNT(*)
 FROM
 	[StringTypesTable] [t]
 WHERE

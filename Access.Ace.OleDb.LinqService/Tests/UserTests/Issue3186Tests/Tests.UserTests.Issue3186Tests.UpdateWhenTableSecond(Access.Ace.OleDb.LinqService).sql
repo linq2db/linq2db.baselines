@@ -24,9 +24,7 @@ BeforeExecute
 -- Access.Ace.OleDb AccessOleDb
 
 SELECT
-	[x].[id],
-	[x].[service_id],
-	[x].[is_deleted]
+	COUNT(*)
 FROM
 	[component_categories] [x]
 WHERE
@@ -36,9 +34,7 @@ BeforeExecute
 -- Access.Ace.OleDb AccessOleDb
 
 SELECT
-	[x].[id],
-	[x].[service_id],
-	[x].[is_deleted]
+	COUNT(*)
 FROM
 	[component_categories] [x]
 WHERE
