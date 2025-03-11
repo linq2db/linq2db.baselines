@@ -13,7 +13,10 @@ BeforeExecute
 --  PostgreSQL.9.5 PostgreSQL
 
 SELECT
-	COUNT(*)
+	t1.id,
+	t1.unit,
+	t1.unit_nullable,
+	t1.amount
 FROM
 	public.schedule t1
 
@@ -23,7 +26,10 @@ DECLARE @unit Enum -- Object
 SET     @unit = 'day'
 
 SELECT
-	COUNT(*)
+	x.id,
+	x.unit,
+	x.unit_nullable,
+	x.amount
 FROM
 	public.schedule x
 WHERE
@@ -35,7 +41,10 @@ DECLARE @unit Enum -- Object
 SET     @unit = 'day'
 
 SELECT
-	COUNT(*)
+	x.id,
+	x.unit,
+	x.unit_nullable,
+	x.amount
 FROM
 	public.schedule x
 WHERE
@@ -47,7 +56,10 @@ DECLARE @unitNullable Enum -- Object
 SET     @unitNullable = 'day'
 
 SELECT
-	COUNT(*)
+	x.id,
+	x.unit,
+	x.unit_nullable,
+	x.amount
 FROM
 	public.schedule x
 WHERE
@@ -57,7 +69,10 @@ BeforeExecute
 --  PostgreSQL.9.5 PostgreSQL
 
 SELECT
-	COUNT(*)
+	x.id,
+	x.unit,
+	x.unit_nullable,
+	x.amount
 FROM
 	public.schedule x
 WHERE
@@ -67,7 +82,10 @@ BeforeExecute
 --  PostgreSQL.9.5 PostgreSQL
 
 SELECT
-	COUNT(*)
+	x.id,
+	x.unit,
+	x.unit_nullable,
+	x.amount
 FROM
 	public.schedule x
 WHERE
