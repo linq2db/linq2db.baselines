@@ -2,7 +2,11 @@
 -- Firebird.2.5 Firebird
 
 SELECT
-	COUNT(*)
+	"t"."Id",
+	"t"."CharColumn",
+	"t"."NCharColumn",
+	"t"."VarCharColumn",
+	"t"."NVarCharColumn"
 FROM
 	"StringTypesTable" "t"
 WHERE
