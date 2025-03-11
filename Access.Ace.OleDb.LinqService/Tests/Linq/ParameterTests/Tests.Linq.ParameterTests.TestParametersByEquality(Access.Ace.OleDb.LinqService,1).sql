@@ -8,7 +8,16 @@ DECLARE @personId_2 Integer -- Int32
 SET     @personId_2 = 1
 
 SELECT
-	COUNT(*)
+	[p].[FirstName],
+	[p].[PersonID],
+	[p].[LastName],
+	[p].[MiddleName],
+	[p].[Gender],
+	[p].[FirstName],
+	[p].[PersonID],
+	[p].[LastName],
+	[p].[MiddleName],
+	[p].[Gender]
 FROM
 	[Person] [p]
 WHERE
@@ -25,7 +34,16 @@ DECLARE @personId_2 Integer -- Int32
 SET     @personId_2 = 2
 
 SELECT
-	COUNT(*)
+	[p].[FirstName],
+	[p].[PersonID],
+	[p].[LastName],
+	[p].[MiddleName],
+	[p].[Gender],
+	[p].[FirstName],
+	[p].[PersonID],
+	[p].[LastName],
+	[p].[MiddleName],
+	[p].[Gender]
 FROM
 	[Person] [p]
 WHERE
