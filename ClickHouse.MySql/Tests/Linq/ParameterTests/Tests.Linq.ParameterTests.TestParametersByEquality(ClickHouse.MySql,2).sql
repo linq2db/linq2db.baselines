@@ -2,16 +2,7 @@
 -- ClickHouse.MySql ClickHouse
 
 SELECT
-	p.FirstName,
-	p.PersonID,
-	p.LastName,
-	p.MiddleName,
-	p.Gender,
-	p.FirstName,
-	p.PersonID,
-	p.LastName,
-	p.MiddleName,
-	p.Gender
+	COUNT(*)
 FROM
 	Person p
 WHERE
@@ -21,16 +12,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
-	p.FirstName,
-	p.PersonID,
-	p.LastName,
-	p.MiddleName,
-	p.Gender,
-	p.FirstName,
-	p.PersonID,
-	p.LastName,
-	p.MiddleName,
-	p.Gender
+	COUNT(*)
 FROM
 	Person p
 WHERE
