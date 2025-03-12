@@ -1,4 +1,4 @@
-﻿--  MySql.8.0.MySqlConnector MySql80 (asynchronously)
+﻿-- SQLite.MS MySql.8.0.MySqlConnector MySql80 (asynchronously)
 
 SELECT
 	`x`.`Id`,
