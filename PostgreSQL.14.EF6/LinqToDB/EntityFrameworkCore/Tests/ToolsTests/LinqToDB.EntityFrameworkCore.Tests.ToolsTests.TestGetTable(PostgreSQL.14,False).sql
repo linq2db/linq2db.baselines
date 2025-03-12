@@ -1,4 +1,4 @@
-﻿--  PostgreSQL.9.5 PostgreSQL (asynchronously)
+﻿-- SQLite.MS PostgreSQL.9.5 PostgreSQL (asynchronously)
 
 SELECT
 	e."IsDeleted",
