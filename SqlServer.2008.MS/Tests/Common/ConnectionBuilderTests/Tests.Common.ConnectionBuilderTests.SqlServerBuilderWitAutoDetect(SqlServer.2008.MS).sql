@@ -1,5 +1,5 @@
 ﻿BeforeExecute
---  SqlServer.2008
+-- SQLite.MS SqlServer.2008
 
 SELECT TOP (1)
 	[t1].[ParentID],
