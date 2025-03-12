@@ -1,4 +1,4 @@
-﻿--  PostgreSQL.15 PostgreSQL (asynchronously)
+﻿-- SQLite.MS PostgreSQL.15 PostgreSQL (asynchronously)
 
 SELECT
 	x."Id",
