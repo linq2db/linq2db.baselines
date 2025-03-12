@@ -10,7 +10,7 @@ ORDER BY
 	[t1].[ChildID]
 
 BeforeExecute
---  Access.Ace.Odbc AccessODBC
+-- SQLite.MS Access.Ace.Odbc AccessODBC
 
 SELECT
 	[t1].[ParentID],

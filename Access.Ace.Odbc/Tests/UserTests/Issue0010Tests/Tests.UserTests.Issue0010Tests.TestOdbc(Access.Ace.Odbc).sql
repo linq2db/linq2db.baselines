@@ -7,7 +7,7 @@ BeginTransaction
 BeforeExecute
 RollbackTransaction
 BeforeExecute
---  Access.Ace.Odbc AccessODBC
+-- SQLite.MS Access.Ace.Odbc AccessODBC
 
 SELECT * FROM CLONECODE
 
