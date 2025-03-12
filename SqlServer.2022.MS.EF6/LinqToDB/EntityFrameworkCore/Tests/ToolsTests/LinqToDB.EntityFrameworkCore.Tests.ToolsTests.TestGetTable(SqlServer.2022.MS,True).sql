@@ -1,4 +1,4 @@
-﻿--  SqlServer.2022 (asynchronously)
+﻿-- SQLite.MS SqlServer.2022 (asynchronously)
 
 SELECT
 	[e].[IsDeleted],

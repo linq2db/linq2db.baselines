@@ -1,4 +1,4 @@
-﻿--  SqlServer.2022
+﻿-- SQLite.MS SqlServer.2022
 
 DELETE [e]
 FROM

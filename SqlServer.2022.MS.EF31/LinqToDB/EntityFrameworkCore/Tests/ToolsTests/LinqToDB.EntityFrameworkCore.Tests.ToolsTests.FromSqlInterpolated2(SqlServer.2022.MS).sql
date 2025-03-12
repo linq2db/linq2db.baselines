@@ -13,7 +13,7 @@ CROSS JOIN (
 WHERE (@__ef_filter__p_0 = CAST(1 AS bit)) OR ([c].[IsDeleted] <> CAST(1 AS bit))
 
 
---  SqlServer.2022 (asynchronously)
+-- SQLite.MS SqlServer.2022 (asynchronously)
 
 SELECT
 	[c2].[IsDeleted],
