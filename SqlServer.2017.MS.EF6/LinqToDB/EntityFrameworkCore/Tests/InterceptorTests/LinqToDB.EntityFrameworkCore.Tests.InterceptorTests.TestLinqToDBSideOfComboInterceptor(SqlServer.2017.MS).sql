@@ -1,4 +1,4 @@
-﻿--  SqlServer.2017
+﻿-- SQLite.MS SqlServer.2017
 DECLARE @take Int -- Int32
 SET     @take = 2
 

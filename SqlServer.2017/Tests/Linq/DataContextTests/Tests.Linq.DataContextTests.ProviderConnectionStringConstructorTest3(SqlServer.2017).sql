@@ -10,7 +10,7 @@ ORDER BY
 	[t1].[ChildID]
 
 BeforeExecute
---  SqlServer.2017
+-- SQLite.MS SqlServer.2017
 
 SELECT
 	[t1].[ParentID],

@@ -19,7 +19,7 @@ SELECT [i].[Id] FROM @inserted0 i
 ORDER BY [i].[_Position];
 
 
---  SqlServer.2017 (asynchronously)
+-- SQLite.MS SqlServer.2017 (asynchronously)
 
 SELECT
 	[t1].[Id],

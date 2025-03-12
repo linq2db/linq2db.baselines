@@ -15,7 +15,7 @@ VALUES (i.[Discriminator])
 OUTPUT INSERTED.[Id], i._Position;
 
 
---  SqlServer.2017
+-- SQLite.MS SqlServer.2017
 
 SELECT
 	[t1].[Discriminator],

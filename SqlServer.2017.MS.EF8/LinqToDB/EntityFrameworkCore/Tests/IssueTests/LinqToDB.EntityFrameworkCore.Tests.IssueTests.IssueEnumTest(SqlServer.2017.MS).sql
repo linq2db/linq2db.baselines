@@ -15,7 +15,7 @@ VALUES (i.[Value])
 OUTPUT INSERTED.[Id], i._Position;
 
 
---  SqlServer.2017 (asynchronously)
+-- SQLite.MS SqlServer.2017 (asynchronously)
 
 SELECT
 	[t1].[Id],
