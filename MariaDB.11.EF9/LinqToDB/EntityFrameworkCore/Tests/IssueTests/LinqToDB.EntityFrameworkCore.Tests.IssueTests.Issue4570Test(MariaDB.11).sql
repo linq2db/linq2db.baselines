@@ -1,4 +1,4 @@
-﻿--  MariaDB.10.MySqlConnector MySql
+﻿-- SQLite.MS MariaDB.10.MySqlConnector MySql
 
 SELECT
 	1
