@@ -1,7 +1,7 @@
 ﻿BeginTransaction(RepeatableRead)
 
 
---  PostgreSQL.15 PostgreSQL
+-- SQLite.MS PostgreSQL.15 PostgreSQL
 
 SELECT
 	m_1."OrderID",
@@ -35,7 +35,7 @@ WHERE
 DisposeTransaction
 
 
---  PostgreSQL.15 PostgreSQL
+-- SQLite.MS PostgreSQL.15 PostgreSQL
 
 SELECT
 	e."IsDeleted",

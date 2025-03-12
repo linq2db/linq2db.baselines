@@ -1,4 +1,4 @@
-﻿--  PostgreSQL.15 PostgreSQL
+﻿-- SQLite.MS PostgreSQL.15 PostgreSQL
 
 INSERT INTO "EntityWithXmin"
 (
