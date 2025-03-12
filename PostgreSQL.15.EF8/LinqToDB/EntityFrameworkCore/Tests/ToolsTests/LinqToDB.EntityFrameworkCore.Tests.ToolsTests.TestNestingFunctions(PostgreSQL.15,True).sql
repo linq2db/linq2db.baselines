@@ -18,7 +18,7 @@ WHERE (@__ef_filter__p_0 OR NOT (p."IsDeleted") OR NOT (p."IsDeleted")) AND (
 ORDER BY p."ProductID"
 
 
---  PostgreSQL.15 PostgreSQL
+-- SQLite.MS PostgreSQL.15 PostgreSQL
 
 SELECT
 	e."IsDeleted",

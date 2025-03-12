@@ -1,4 +1,4 @@
-﻿--  PostgreSQL.15 PostgreSQL
+﻿-- SQLite.MS PostgreSQL.15 PostgreSQL
 DECLARE @value Varchar(10) -- String
 SET     @value = '%anything%'
 
