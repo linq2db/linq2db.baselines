@@ -1,4 +1,4 @@
-﻿--  SqlServer.2016 (asynchronously)
+﻿-- SQLite.MS SqlServer.2016 (asynchronously)
 DECLARE @take Int -- Int32
 SET     @take = 20
 

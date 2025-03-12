@@ -1,4 +1,4 @@
-﻿--  SqlServer.2016 (asynchronously)
+﻿-- SQLite.MS SqlServer.2016 (asynchronously)
 
 CREATE TABLE [tempdb]..[#Orders]
 (
@@ -23,7 +23,7 @@ CREATE TABLE [tempdb]..[#Orders]
 
 
 
---  SqlServer.2016 (asynchronously)
+-- SQLite.MS SqlServer.2016 (asynchronously)
 
 INSERT INTO [tempdb]..[#Orders]
 (
@@ -64,7 +64,7 @@ FROM
 
 
 
---  SqlServer.2016
+-- SQLite.MS SqlServer.2016
 DECLARE @take Int -- Int32
 SET     @take = 2
 
@@ -89,7 +89,7 @@ FROM
 
 
 
---  SqlServer.2016
+-- SQLite.MS SqlServer.2016
 
 DROP TABLE IF EXISTS [tempdb]..[#Orders]
 

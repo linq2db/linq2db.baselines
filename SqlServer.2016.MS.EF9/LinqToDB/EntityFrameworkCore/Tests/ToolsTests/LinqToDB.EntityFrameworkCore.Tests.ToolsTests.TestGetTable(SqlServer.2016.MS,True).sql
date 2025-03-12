@@ -1,4 +1,4 @@
-﻿--  SqlServer.2016 (asynchronously)
+﻿-- SQLite.MS SqlServer.2016 (asynchronously)
 
 SELECT
 	[e].[IsDeleted],
