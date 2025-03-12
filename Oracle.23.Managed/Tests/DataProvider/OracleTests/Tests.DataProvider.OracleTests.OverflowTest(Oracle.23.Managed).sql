@@ -1,5 +1,5 @@
 ﻿BeforeExecute
---  Oracle.Managed Oracle12
+-- SQLite.MS Oracle.Managed Oracle12
 
 SELECT
 	t1."Decimal1",
