@@ -10,7 +10,7 @@ ORDER BY
 	"t1"."ChildID"
 
 BeforeExecute
---  SapHana.Odbc SapHanaOdbc
+-- SQLite.MS SapHana.Odbc SapHanaOdbc
 
 SELECT
 	"t1"."ParentID",
