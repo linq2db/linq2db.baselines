@@ -10,7 +10,7 @@ ORDER BY
 	[t1].[ChildID]
 
 BeforeExecute
---  SqlCe
+-- SQLite.MS SqlCe
 
 SELECT
 	[t1].[ParentID],
