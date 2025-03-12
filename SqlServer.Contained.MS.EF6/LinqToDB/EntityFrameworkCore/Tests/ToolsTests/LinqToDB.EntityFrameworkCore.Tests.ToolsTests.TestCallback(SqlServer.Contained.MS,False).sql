@@ -1,4 +1,4 @@
-﻿--  SqlServer.2019
+﻿-- SQLite.MS SqlServer.2019
 
 DELETE [e]
 FROM

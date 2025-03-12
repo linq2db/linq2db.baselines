@@ -1,4 +1,4 @@
-﻿--  SqlServer.2019
+﻿-- SQLite.MS SqlServer.2019
 DECLARE @value NVarChar(60) -- String
 SET     @value = N'%anything%'
 

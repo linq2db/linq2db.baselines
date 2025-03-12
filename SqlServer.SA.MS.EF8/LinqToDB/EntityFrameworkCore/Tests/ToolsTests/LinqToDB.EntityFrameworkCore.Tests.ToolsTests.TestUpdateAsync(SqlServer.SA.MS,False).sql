@@ -1,4 +1,4 @@
-﻿--  SqlServer.2019 (asynchronously)
+﻿-- SQLite.MS SqlServer.2019 (asynchronously)
 DECLARE @test Int -- Int32
 SET     @test = 1
 
