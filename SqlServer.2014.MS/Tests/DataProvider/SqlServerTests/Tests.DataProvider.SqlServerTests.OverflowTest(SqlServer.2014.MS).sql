@@ -1,5 +1,5 @@
 ﻿BeforeExecute
---  SqlServer.2014
+-- SQLite.MS SqlServer.2014
 
 SELECT
 	[t1].[Decimal1],
