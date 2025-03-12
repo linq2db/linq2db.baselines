@@ -18,7 +18,7 @@ VALUES (@p4)
 RETURNING "Id";
 
 
---  PostgreSQL.9.5 PostgreSQL
+-- SQLite.MS PostgreSQL.9.5 PostgreSQL
 
 SELECT
 	t1."Discriminator",
