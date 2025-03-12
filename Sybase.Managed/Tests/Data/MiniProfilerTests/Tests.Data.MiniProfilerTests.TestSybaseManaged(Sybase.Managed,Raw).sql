@@ -1,22 +1,22 @@
 ﻿BeforeExecute
---  Sybase.Managed Sybase
+-- SQLite.MS Sybase.Managed Sybase
 DECLARE @p Unitext(4) -- String
 SET     @p = 'тест'
 
 SELECT @p
 
 BeforeExecute
---  Sybase.Managed Sybase
+-- SQLite.MS Sybase.Managed Sybase
 
 select @@unicharsize
 
 BeforeExecute
---  Sybase.Managed Sybase
+-- SQLite.MS Sybase.Managed Sybase
 
 select @@ncharsize
 
 BeforeExecute
---  Sybase.Managed Sybase
+-- SQLite.MS Sybase.Managed Sybase
 DECLARE @db UniVarChar(255) -- String
 SET     @db = 'TestDataCore'
 
@@ -34,7 +34,7 @@ WHERE
 	type IN ('U','V')
 
 BeforeExecute
---  Sybase.Managed Sybase
+-- SQLite.MS Sybase.Managed Sybase
 
 
 SELECT
@@ -54,7 +54,7 @@ WHERE
 	c.colid < i.keycnt + CASE WHEN i.indid = 1 THEN 1 ELSE 0 END
 
 BeforeExecute
---  Sybase.Managed Sybase
+-- SQLite.MS Sybase.Managed Sybase
 
 
 SELECT
@@ -81,7 +81,7 @@ WHERE
 	o.type IN ('U','V')
 
 BeforeExecute
---  Sybase.Managed Sybase
+-- SQLite.MS Sybase.Managed Sybase
 
 SELECT * FROM (
 SELECT
@@ -373,48 +373,48 @@ WHERE
 	c.status = 64) as t WHERE ThisColumn IS NOT NULL
 
 BeforeExecute
---  Sybase.Managed Sybase
+-- SQLite.MS Sybase.Managed Sybase
 
 sp_oledb_stored_procedures
 
 BeforeExecute
---  Sybase.Managed Sybase
+-- SQLite.MS Sybase.Managed Sybase
 
 sp_oledb_getprocedurecolumns
 
 BeforeExecute
 BeginTransaction
 BeforeExecute
---  Sybase.Managed Sybase
+-- SQLite.MS Sybase.Managed Sybase
 
 SET FMTONLY ON
 
 BeforeExecute
---  Sybase.Managed Sybase
+-- SQLite.MS Sybase.Managed Sybase
 DECLARE @RETURN_VALUE Integer(10) -- Int32
 SET     @RETURN_VALUE = 0
 
 [TestDataCore].[dbo].[AddIssue792Record]
 
 BeforeExecute
---  Sybase.Managed Sybase
+-- SQLite.MS Sybase.Managed Sybase
 
 SET FMTONLY OFF
 
 BeforeExecute
---  Sybase.Managed Sybase
+-- SQLite.MS Sybase.Managed Sybase
 
 SET FMTONLY ON
 
 BeforeExecute
---  Sybase.Managed Sybase
+-- SQLite.MS Sybase.Managed Sybase
 DECLARE @RETURN_VALUE Integer(10) -- Int32
 SET     @RETURN_VALUE = 0
 
 [TestDataCore].[dbo].[Person_SelectAll]
 
 BeforeExecute
---  Sybase.Managed Sybase
+-- SQLite.MS Sybase.Managed Sybase
 
 SET FMTONLY OFF
 
