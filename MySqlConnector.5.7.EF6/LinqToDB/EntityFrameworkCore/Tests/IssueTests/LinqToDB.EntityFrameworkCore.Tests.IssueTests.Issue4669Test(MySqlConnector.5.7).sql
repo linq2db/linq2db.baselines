@@ -1,4 +1,4 @@
-﻿--  MySql.5.7.MySqlConnector MySql57 (asynchronously)
+﻿-- SQLite.MS MySql.5.7.MySqlConnector MySql57 (asynchronously)
 
 SELECT
 	`x`.`Id`,

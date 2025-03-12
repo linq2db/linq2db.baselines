@@ -10,7 +10,7 @@ ORDER BY
 	`t1`.`ChildID`
 
 BeforeExecute
---  MySql.5.7.MySql.Data MySql57
+-- SQLite.MS MySql.5.7.MySql.Data MySql57
 
 SELECT
 	`t1`.`ParentID`,
