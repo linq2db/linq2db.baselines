@@ -1,7 +1,7 @@
 ﻿BeginTransaction(RepeatableRead)
 
 
--- SQLite.MS PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.9.5 PostgreSQL
 
 SELECT
 	m_1."Key_1",
@@ -23,7 +23,7 @@ ORDER BY
 
 
 
--- SQLite.MS PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.9.5 PostgreSQL
 
 SELECT
 	p."AclNameId"

@@ -1,7 +1,7 @@
 ﻿BeginTransaction(RepeatableRead)
 
 
--- SQLite.MS PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.9.5 PostgreSQL
 
 SELECT
 	m_1."Id",
@@ -29,7 +29,7 @@ FROM
 
 
 
--- SQLite.MS PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.9.5 PostgreSQL
 
 SELECT
 	m_1.id,
@@ -44,7 +44,7 @@ WHERE
 
 
 
--- SQLite.MS PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.9.5 PostgreSQL
 
 SELECT
 	m_1.id,
@@ -62,7 +62,7 @@ WHERE
 DisposeTransaction
 
 
--- SQLite.MS PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.9.5 PostgreSQL
 
 SELECT
 	e.id,

@@ -1,4 +1,4 @@
-﻿-- SQLite.MS PostgreSQL.9.5 PostgreSQL
+﻿-- PostgreSQL.9.5 PostgreSQL
 DECLARE @take Integer -- Int32
 SET     @take = 2
 
