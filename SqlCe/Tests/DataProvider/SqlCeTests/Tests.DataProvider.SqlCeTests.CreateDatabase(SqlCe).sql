@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SQLite.MS SqlCe
+-- SqlCe
 
 CREATE TABLE [CreateTableTest]
 (
@@ -9,7 +9,7 @@ CREATE TABLE [CreateTableTest]
 )
 
 BeforeExecute
--- SQLite.MS SqlCe
+-- SqlCe
 
 DROP TABLE [CreateTableTest]
 

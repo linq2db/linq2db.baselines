@@ -1,66 +1,66 @@
 ﻿BeforeExecute
--- SQLite.MS SqlCe
+-- SqlCe
 DECLARE @p NText(3) -- String
 SET     @p = '111'
 
 SELECT Cast(@p as ntext)
 
 BeforeExecute
--- SQLite.MS SqlCe
+-- SqlCe
 DECLARE @p NText(3) -- String
 SET     @p = '111'
 
 SELECT Cast(@p as ntext)
 
 BeforeExecute
--- SQLite.MS SqlCe
+-- SqlCe
 DECLARE @p NVarChar(4) -- String
 SET     @p = '3323'
 
 SELECT ID FROM AllTypes WHERE nvarcharDataType = @p
 
 BeforeExecute
--- SQLite.MS SqlCe
+-- SqlCe
 DECLARE @p NVarChar(4) -- String
 SET     @p = '3323'
 
 SELECT ID FROM AllTypes WHERE nvarcharDataType = @p
 
 BeforeExecute
--- SQLite.MS SqlCe
+-- SqlCe
 DECLARE @p Binary(1)
 SET     @p = 0x01
 
 SELECT ID FROM AllTypes WHERE binaryDataType = @p
 
 BeforeExecute
--- SQLite.MS SqlCe
+-- SqlCe
 DECLARE @p VarBinary(1) -- Binary
 SET     @p = 0x02
 
 SELECT ID FROM AllTypes WHERE varbinaryDataType = @p
 
 BeforeExecute
--- SQLite.MS SqlCe
+-- SqlCe
 DECLARE @p Image(4) -- Binary
 SET     @p = 0x00000003
 
 SELECT Cast(@p as image)
 
 BeforeExecute
--- SQLite.MS SqlCe
+-- SqlCe
 
 SELECT timestampDataType FROM AllTypes WHERE ID = 2
 
 BeforeExecute
--- SQLite.MS SqlCe
+-- SqlCe
 DECLARE @p Timestamp(8) -- Binary
 SET     @p = 0x0000000000003F4C
 
 SELECT ID FROM AllTypes WHERE timestampDataType = @p
 
 BeforeExecute
--- SQLite.MS SqlCe
+-- SqlCe
 
 
 SELECT
@@ -72,7 +72,7 @@ FROM INFORMATION_SCHEMA.INDEXES
 WHERE PRIMARY_KEY = 1
 
 BeforeExecute
--- SQLite.MS SqlCe
+-- SqlCe
 
 
 SELECT
