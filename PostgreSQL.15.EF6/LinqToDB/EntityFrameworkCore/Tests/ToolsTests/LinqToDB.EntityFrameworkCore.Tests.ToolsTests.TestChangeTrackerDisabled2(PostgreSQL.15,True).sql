@@ -1,7 +1,7 @@
 ﻿BeginTransactionAsync(RepeatableRead)
 
 
--- SQLite.MS PostgreSQL.15 PostgreSQL (asynchronously)
+-- PostgreSQL.15 PostgreSQL (asynchronously)
 
 SELECT
 	m_1."ProductId",
@@ -38,7 +38,7 @@ WHERE
 
 
 
--- SQLite.MS PostgreSQL.15 PostgreSQL (asynchronously)
+-- PostgreSQL.15 PostgreSQL (asynchronously)
 
 SELECT
 	m_1."OrderID",
@@ -72,7 +72,7 @@ WHERE
 DisposeTransactionAsync
 
 
--- SQLite.MS PostgreSQL.15 PostgreSQL (asynchronously)
+-- PostgreSQL.15 PostgreSQL (asynchronously)
 
 SELECT
 	e."IsDeleted",

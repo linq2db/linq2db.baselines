@@ -10,7 +10,7 @@ ORDER BY
 	t1."ChildID"
 
 BeforeExecute
--- SQLite.MS PostgreSQL.15 PostgreSQL
+-- PostgreSQL.15 PostgreSQL
 
 SELECT
 	t1."ParentID",
