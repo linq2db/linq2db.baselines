@@ -1,4 +1,4 @@
-﻿-- SQLite.MS PostgreSQL.9.5 PostgreSQL
+﻿-- PostgreSQL.9.5 PostgreSQL
 
 SELECT
 	x."Id"

@@ -1,4 +1,4 @@
-﻿-- SQLite.MS PostgreSQL.9.5 PostgreSQL (asynchronously)
+﻿-- PostgreSQL.9.5 PostgreSQL (asynchronously)
 DECLARE @test Integer -- Int32
 SET     @test = 1
 

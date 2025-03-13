@@ -1,4 +1,4 @@
-﻿-- SQLite.MS PostgreSQL.9.5 PostgreSQL
+﻿-- PostgreSQL.9.5 PostgreSQL
 
 DELETE FROM
 	"Products" e
