@@ -1,4 +1,4 @@
-﻿-- SQLite.MS MySql.8.0.MySqlConnector MySql80
+﻿-- MySql.8.0.MySqlConnector MySql80
 
 CREATE TEMPORARY TABLE `NoIdentity`
 (
@@ -10,7 +10,7 @@ CREATE TEMPORARY TABLE `NoIdentity`
 
 
 
--- SQLite.MS MySql.8.0.MySqlConnector MySql80
+-- MySql.8.0.MySqlConnector MySql80
 
 INSERT INTO `NoIdentity`
 (
@@ -23,7 +23,7 @@ VALUES
 
 
 
--- SQLite.MS MySql.8.0.MySqlConnector MySql80
+-- MySql.8.0.MySqlConnector MySql80
 
 SELECT
 	`t1`.`Id`,
@@ -33,7 +33,7 @@ FROM
 
 
 
--- SQLite.MS MySql.8.0.MySqlConnector MySql80
+-- MySql.8.0.MySqlConnector MySql80
 
 DROP TABLE IF EXISTS `NoIdentity`
 

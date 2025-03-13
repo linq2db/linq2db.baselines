@@ -1,38 +1,38 @@
 ﻿BeforeExecute
--- SQLite.MS MySql.8.0.MySqlConnector MySql80
+-- MySql.8.0.MySqlConnector MySql80
 DECLARE @p Datetime -- DateTime
 SET     @p = '2012-12-12 12:12:12'
 
 SELECT Cast(@p as datetime)
 
 BeforeExecute
--- SQLite.MS MySql.8.0.MySqlConnector MySql80
+-- MySql.8.0.MySqlConnector MySql80
 DECLARE @p Datetime -- DateTime
 SET     @p = '2012-12-12 12:12:12'
 
 SELECT Cast(@p as datetime)
 
 BeforeExecute
--- SQLite.MS MySql.8.0.MySqlConnector MySql80
+-- MySql.8.0.MySqlConnector MySql80
 DECLARE @p Datetime -- DateTime
 SET     @p = '2012-12-12 12:12:12'
 
 SELECT Cast(@p as datetime)
 
 BeforeExecute
--- SQLite.MS MySql.8.0.MySqlConnector MySql80
+-- MySql.8.0.MySqlConnector MySql80
 DECLARE @p Byte -- SByte
 SET     @p = 111
 
 SELECT ID FROM AllTypes WHERE tinyintDataType = @p
 
 BeforeExecute
--- SQLite.MS MySql.8.0.MySqlConnector MySql80
+-- MySql.8.0.MySqlConnector MySql80
 
 SET GLOBAL local_infile=ON
 
 BeforeExecute
--- SQLite.MS MySql.8.0.MySqlConnector MySql80
+-- MySql.8.0.MySqlConnector MySql80
 
 INSERT INTO `AllTypesNoYear`
 (
@@ -1063,7 +1063,7 @@ VALUES
 (NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
 
 BeforeExecute
--- SQLite.MS MySql.8.0.MySqlConnector MySql80
+-- MySql.8.0.MySqlConnector MySql80
 
 DELETE  
 FROM
@@ -1072,7 +1072,7 @@ WHERE
 	`AllTypesNoYear`.`ID` >= 2000
 
 BeforeExecute
--- SQLite.MS MySql.8.0.MySqlConnector MySql80 (asynchronously)
+-- MySql.8.0.MySqlConnector MySql80 (asynchronously)
 
 INSERT INTO `AllTypesNoYear`
 (
@@ -2103,7 +2103,7 @@ VALUES
 (NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
 
 BeforeExecute
--- SQLite.MS MySql.8.0.MySqlConnector MySql80 (asynchronously)
+-- MySql.8.0.MySqlConnector MySql80 (asynchronously)
 
 DELETE  
 FROM
@@ -2112,7 +2112,7 @@ WHERE
 	`AllTypesNoYear`.`ID` >= 2000
 
 BeforeExecute
--- SQLite.MS MySql.8.0.MySqlConnector MySql80
+-- MySql.8.0.MySqlConnector MySql80
 
 
 SELECT
@@ -2124,7 +2124,7 @@ SELECT
 	WHERE TABLE_SCHEMA = DATABASE()
 
 BeforeExecute
--- SQLite.MS MySql.8.0.MySqlConnector MySql80
+-- MySql.8.0.MySqlConnector MySql80
 
 
 			SELECT
@@ -2146,7 +2146,7 @@ BeforeExecute
 					c.CONSTRAINT_SCHEMA = database()
 
 BeforeExecute
--- SQLite.MS MySql.8.0.MySqlConnector MySql80
+-- MySql.8.0.MySqlConnector MySql80
 
 
 SELECT
@@ -2166,7 +2166,7 @@ SELECT
 	WHERE TABLE_SCHEMA = DATABASE()
 
 BeforeExecute
--- SQLite.MS MySql.8.0.MySqlConnector MySql80
+-- MySql.8.0.MySqlConnector MySql80
 
 
 SELECT
@@ -2188,24 +2188,24 @@ SELECT
 		AND c.TABLE_SCHEMA   = DATABASE()
 
 BeforeExecute
--- SQLite.MS MySql.8.0.MySqlConnector MySql80
+-- MySql.8.0.MySqlConnector MySql80
 
 SELECT ROUTINE_SCHEMA, ROUTINE_NAME, ROUTINE_TYPE, ROUTINE_DEFINITION, ROUTINE_COMMENT FROM INFORMATION_SCHEMA.routines WHERE ROUTINE_TYPE IN ('PROCEDURE', 'FUNCTION') AND ROUTINE_SCHEMA = database()
 
 BeforeExecute
--- SQLite.MS MySql.8.0.MySqlConnector MySql80
+-- MySql.8.0.MySqlConnector MySql80
 
 SELECT SPECIFIC_SCHEMA, SPECIFIC_NAME, PARAMETER_MODE, ORDINAL_POSITION, PARAMETER_NAME, NUMERIC_PRECISION, NUMERIC_SCALE, DATA_TYPE, CHARACTER_MAXIMUM_LENGTH, DTD_IDENTIFIER FROM INFORMATION_SCHEMA.parameters WHERE SPECIFIC_SCHEMA = database()
 
 BeforeExecute
 BeginTransaction
 BeforeExecute
--- SQLite.MS MySql.8.0.MySqlConnector MySql80
+-- MySql.8.0.MySqlConnector MySql80
 
 `testdataconnector`.`AddIssue792Record`
 
 BeforeExecute
--- SQLite.MS MySql.8.0.MySqlConnector MySql80
+-- MySql.8.0.MySqlConnector MySql80
 DECLARE @VarCharDefault VarChar(255) -- AnsiString
 SET     @VarCharDefault = NULL
 DECLARE @VarChar1 VarChar(1) -- AnsiString
@@ -2310,7 +2310,7 @@ SET     @GeometryCollection = NULL
 `testdataconnector`.`Issue2313Parameters`
 
 BeforeExecute
--- SQLite.MS MySql.8.0.MySqlConnector MySql80
+-- MySql.8.0.MySqlConnector MySql80
 DECLARE @VarCharDefault VarChar(4000) -- AnsiString
 SET     @VarCharDefault = NULL
 DECLARE @VarChar1 VarChar(1) -- AnsiString
@@ -2415,7 +2415,7 @@ SET     @Year = NULL
 `testdataconnector`.`Issue2313Results`
 
 BeforeExecute
--- SQLite.MS MySql.8.0.MySqlConnector MySql80
+-- MySql.8.0.MySqlConnector MySql80
 DECLARE @aInParam VarChar(256) -- AnsiString
 SET     @aInParam = NULL
 DECLARE @aOutParam Byte -- SByte
@@ -2424,7 +2424,7 @@ SET     @aOutParam = NULL
 `testdataconnector`.`TestOutputParametersWithoutTableProcedure`
 
 BeforeExecute
--- SQLite.MS MySql.8.0.MySqlConnector MySql80
+-- MySql.8.0.MySqlConnector MySql80
 DECLARE @param3 Int32
 SET     @param3 = NULL
 DECLARE @param2 Int32
