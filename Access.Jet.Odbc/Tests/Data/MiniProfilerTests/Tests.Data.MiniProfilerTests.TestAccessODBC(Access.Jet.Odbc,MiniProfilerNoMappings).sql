@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SQLite.MS Access.Jet.Odbc AccessODBC
+-- Access.Jet.Odbc AccessODBC
 DECLARE @p Binary(4)
 SET     @p = 0x05060708
 
