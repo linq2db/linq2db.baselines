@@ -1,4 +1,4 @@
-﻿-- SQLite.MS PostgreSQL.15 PostgreSQL (asynchronously)
+﻿-- PostgreSQL.15 PostgreSQL (asynchronously)
 DECLARE @systemId Varchar(6) -- String
 SET     @systemId = 'system'
 

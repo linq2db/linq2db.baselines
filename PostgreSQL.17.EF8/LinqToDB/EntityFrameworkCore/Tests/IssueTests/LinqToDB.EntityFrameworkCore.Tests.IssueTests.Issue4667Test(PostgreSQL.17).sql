@@ -1,4 +1,4 @@
-﻿-- SQLite.MS PostgreSQL.15 PostgreSQL
+﻿-- PostgreSQL.15 PostgreSQL
 DECLARE @value Json -- Object
 SET     @value = {[property, value]}
 

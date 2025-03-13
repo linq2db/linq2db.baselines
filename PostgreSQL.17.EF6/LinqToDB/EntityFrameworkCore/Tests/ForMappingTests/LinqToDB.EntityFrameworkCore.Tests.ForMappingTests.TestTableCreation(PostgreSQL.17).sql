@@ -1,4 +1,4 @@
-﻿-- SQLite.MS PostgreSQL.15 PostgreSQL
+﻿-- PostgreSQL.15 PostgreSQL
 
 CREATE TEMPORARY TABLE "WithIdentity"
 (
@@ -11,7 +11,7 @@ ON COMMIT PRESERVE ROWS
 
 
 
--- SQLite.MS PostgreSQL.15 PostgreSQL
+-- PostgreSQL.15 PostgreSQL
 
 CREATE TEMPORARY TABLE "NoIdentity"
 (
@@ -24,13 +24,13 @@ ON COMMIT PRESERVE ROWS
 
 
 
--- SQLite.MS PostgreSQL.15 PostgreSQL
+-- PostgreSQL.15 PostgreSQL
 
 DROP TABLE IF EXISTS "NoIdentity"
 
 
 
--- SQLite.MS PostgreSQL.15 PostgreSQL
+-- PostgreSQL.15 PostgreSQL
 
 DROP TABLE IF EXISTS "WithIdentity"
 
