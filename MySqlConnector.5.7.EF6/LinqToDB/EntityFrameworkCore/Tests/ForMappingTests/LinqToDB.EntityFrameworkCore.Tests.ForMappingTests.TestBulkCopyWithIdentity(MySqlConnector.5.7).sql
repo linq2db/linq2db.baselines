@@ -1,4 +1,4 @@
-﻿-- SQLite.MS MySql.5.7.MySqlConnector MySql57
+﻿-- MySql.5.7.MySqlConnector MySql57
 
 CREATE TEMPORARY TABLE `WithIdentity`
 (
@@ -10,7 +10,7 @@ CREATE TEMPORARY TABLE `WithIdentity`
 
 
 
--- SQLite.MS MySql.5.7.MySqlConnector MySql57
+-- MySql.5.7.MySqlConnector MySql57
 
 INSERT INTO `WithIdentity`
 (
@@ -22,7 +22,7 @@ VALUES
 
 
 
--- SQLite.MS MySql.5.7.MySqlConnector MySql57
+-- MySql.5.7.MySqlConnector MySql57
 
 SELECT
 	`t1`.`Id`,
@@ -32,7 +32,7 @@ FROM
 
 
 
--- SQLite.MS MySql.5.7.MySqlConnector MySql57
+-- MySql.5.7.MySqlConnector MySql57
 
 DROP TABLE IF EXISTS `WithIdentity`
 

@@ -1,7 +1,7 @@
 ﻿BeginTransactionAsync(RepeatableRead)
 
 
--- SQLite.MS MySql.5.7.MySqlConnector MySql57 (asynchronously)
+-- MySql.5.7.MySqlConnector MySql57 (asynchronously)
 
 SELECT
 	`m_1`.`ProductId`,
@@ -38,7 +38,7 @@ WHERE
 
 
 
--- SQLite.MS MySql.5.7.MySqlConnector MySql57 (asynchronously)
+-- MySql.5.7.MySqlConnector MySql57 (asynchronously)
 
 SELECT
 	`m_1`.`OrderID`,
@@ -73,7 +73,7 @@ WHERE
 DisposeTransactionAsync
 
 
--- SQLite.MS MySql.5.7.MySqlConnector MySql57 (asynchronously)
+-- MySql.5.7.MySqlConnector MySql57 (asynchronously)
 
 SELECT
 	`e`.`IsDeleted`,

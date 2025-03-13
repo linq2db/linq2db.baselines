@@ -25,7 +25,7 @@ ORDER BY `o`.`OrderID`, `t1`.`OrderID`, `t1`.`ProductID`, `t1`.`ProductID0`, `t1
 BeginTransactionAsync(RepeatableRead)
 
 
--- SQLite.MS MySql.5.7.MySqlConnector MySql57 (asynchronously)
+-- MySql.5.7.MySqlConnector MySql57 (asynchronously)
 
 SELECT
 	`m_1`.`ProductId`,
@@ -55,7 +55,7 @@ FROM
 
 
 
--- SQLite.MS MySql.5.7.MySqlConnector MySql57 (asynchronously)
+-- MySql.5.7.MySqlConnector MySql57 (asynchronously)
 
 SELECT
 	`m_1`.`OrderID`,
@@ -86,7 +86,7 @@ FROM
 DisposeTransactionAsync
 
 
--- SQLite.MS MySql.5.7.MySqlConnector MySql57 (asynchronously)
+-- MySql.5.7.MySqlConnector MySql57 (asynchronously)
 
 SELECT
 	`e`.`IsDeleted`,

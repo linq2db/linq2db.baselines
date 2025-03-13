@@ -1,7 +1,7 @@
 ﻿BeginTransaction(RepeatableRead)
 
 
--- SQLite.MS MySql.5.7.MySqlConnector MySql57
+-- MySql.5.7.MySqlConnector MySql57
 
 SELECT
 	`m_1`.`OrderID`,
@@ -32,7 +32,7 @@ FROM
 DisposeTransaction
 
 
--- SQLite.MS MySql.5.7.MySqlConnector MySql57
+-- MySql.5.7.MySqlConnector MySql57
 
 SELECT
 	`e`.`IsDeleted`,

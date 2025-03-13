@@ -1,4 +1,4 @@
-﻿-- SQLite.MS MySql.5.7.MySqlConnector MySql57
+﻿-- MySql.5.7.MySqlConnector MySql57
 
 CREATE TEMPORARY TABLE `NoIdentity`
 (
@@ -10,7 +10,7 @@ CREATE TEMPORARY TABLE `NoIdentity`
 
 
 
--- SQLite.MS MySql.5.7.MySqlConnector MySql57
+-- MySql.5.7.MySqlConnector MySql57
 
 INSERT INTO `NoIdentity`
 (
@@ -23,7 +23,7 @@ VALUES
 
 
 
--- SQLite.MS MySql.5.7.MySqlConnector MySql57
+-- MySql.5.7.MySqlConnector MySql57
 
 SELECT
 	`t1`.`Id`,
@@ -33,7 +33,7 @@ FROM
 
 
 
--- SQLite.MS MySql.5.7.MySqlConnector MySql57
+-- MySql.5.7.MySqlConnector MySql57
 
 DROP TABLE IF EXISTS `NoIdentity`
 
