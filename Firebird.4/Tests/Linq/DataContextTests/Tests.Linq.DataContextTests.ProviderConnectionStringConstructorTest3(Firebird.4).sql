@@ -10,7 +10,7 @@ ORDER BY
 	"t1"."ChildID"
 
 BeforeExecute
--- SQLite.MS Firebird.4 Firebird4
+-- Firebird.4 Firebird4
 
 SELECT
 	"t1"."ParentID",
