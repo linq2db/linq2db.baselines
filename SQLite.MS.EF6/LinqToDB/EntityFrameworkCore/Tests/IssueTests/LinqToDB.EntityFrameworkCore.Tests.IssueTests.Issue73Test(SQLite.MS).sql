@@ -4,7 +4,7 @@ LEFT JOIN "Issue73Entities" AS "i0" ON "i"."ParentId" = "i0"."Id"
 WHERE "i"."Name" = 'Name1_3'
 
 
---  SQLite.MS SQLite
+-- SQLite.MS SQLite
 
 SELECT
 	[a_Parent].[Name] || '>' || [x].[Name]

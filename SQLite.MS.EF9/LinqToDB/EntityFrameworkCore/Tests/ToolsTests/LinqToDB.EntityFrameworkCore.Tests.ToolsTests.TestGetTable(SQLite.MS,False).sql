@@ -1,4 +1,4 @@
-﻿--  SQLite.MS SQLite (asynchronously)
+﻿-- SQLite.MS SQLite (asynchronously)
 
 SELECT
 	[e].[IsDeleted],
