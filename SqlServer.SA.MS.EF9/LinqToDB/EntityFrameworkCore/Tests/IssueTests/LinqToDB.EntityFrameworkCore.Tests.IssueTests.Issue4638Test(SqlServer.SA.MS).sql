@@ -1,7 +1,7 @@
 ﻿BeginTransaction(RepeatableRead)
 
 
--- SQLite.MS SqlServer.2019
+-- SqlServer.2019
 
 SELECT
 	[m_1].[Key_1],
@@ -22,7 +22,7 @@ ORDER BY
 
 
 
--- SQLite.MS SqlServer.2019
+-- SqlServer.2019
 
 SELECT TOP (1)
 	[p].[AclNameId]

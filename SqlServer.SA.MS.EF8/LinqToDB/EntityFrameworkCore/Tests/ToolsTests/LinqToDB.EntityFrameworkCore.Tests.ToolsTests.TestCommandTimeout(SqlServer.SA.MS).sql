@@ -14,7 +14,7 @@
 					END
 
 
--- SQLite.MS SqlServer.2019
+-- SqlServer.2019
 DECLARE @commandExecutionTime Int -- Int32
 SET     @commandExecutionTime = 5
 

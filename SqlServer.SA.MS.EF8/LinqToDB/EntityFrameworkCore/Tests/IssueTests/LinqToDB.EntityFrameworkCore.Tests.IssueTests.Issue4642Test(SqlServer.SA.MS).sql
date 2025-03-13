@@ -1,4 +1,4 @@
-﻿-- SQLite.MS SqlServer.2019 (asynchronously)
+﻿-- SqlServer.2019 (asynchronously)
 DECLARE @systemId VarChar(20) -- AnsiString
 SET     @systemId = N'system'
 

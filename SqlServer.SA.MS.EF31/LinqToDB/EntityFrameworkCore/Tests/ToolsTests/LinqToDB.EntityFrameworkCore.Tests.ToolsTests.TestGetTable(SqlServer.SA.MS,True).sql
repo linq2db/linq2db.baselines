@@ -1,4 +1,4 @@
-﻿-- SQLite.MS SqlServer.2019 (asynchronously)
+﻿-- SqlServer.2019 (asynchronously)
 
 SELECT
 	[e].[IsDeleted],

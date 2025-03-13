@@ -1,7 +1,7 @@
 ﻿BeginTransaction(RepeatableRead)
 
 
--- SQLite.MS SqlServer.2019
+-- SqlServer.2019
 
 SELECT
 	[m_1].[Id],
@@ -28,7 +28,7 @@ FROM
 DisposeTransaction
 
 
--- SQLite.MS SqlServer.2019
+-- SqlServer.2019
 
 SELECT
 	[c_1].[Id]
