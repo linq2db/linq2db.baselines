@@ -35,7 +35,7 @@ ORDER BY [o].[OrderID], [t].[EmployeeID], [t1].[EmployeeID], [t1].[TerritoryID],
 BeginTransactionAsync(RepeatableRead)
 
 
--- SQLite.MS SqlServer.2022 (asynchronously)
+-- SqlServer.2022 (asynchronously)
 
 SELECT
 	[m_1].[EmployeeId],
@@ -65,7 +65,7 @@ WHERE
 
 
 
--- SQLite.MS SqlServer.2022 (asynchronously)
+-- SqlServer.2022 (asynchronously)
 
 SELECT
 	[m_1].[OrderId],
@@ -107,7 +107,7 @@ WHERE
 DisposeTransactionAsync
 
 
--- SQLite.MS SqlServer.2022 (asynchronously)
+-- SqlServer.2022 (asynchronously)
 
 SELECT
 	[a_Employee].[IsDeleted],

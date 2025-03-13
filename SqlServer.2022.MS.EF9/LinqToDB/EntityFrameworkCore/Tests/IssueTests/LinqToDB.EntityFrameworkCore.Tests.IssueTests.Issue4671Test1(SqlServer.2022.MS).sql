@@ -1,4 +1,4 @@
-﻿-- SQLite.MS SqlServer.2022
+﻿-- SqlServer.2022
 
 CREATE TABLE [tempdb]..[#Issue4671Entity1TMP]
 (
@@ -10,7 +10,7 @@ CREATE TABLE [tempdb]..[#Issue4671Entity1TMP]
 
 
 
--- SQLite.MS SqlServer.2022
+-- SqlServer.2022
 
 INSERT INTO [Issue4671Entity1]
 (
@@ -23,7 +23,7 @@ VALUES
 
 
 
--- SQLite.MS SqlServer.2022
+-- SqlServer.2022
 
 INSERT INTO [tempdb]..[#Issue4671Entity1TMP]
 (
@@ -36,7 +36,7 @@ VALUES
 
 
 
--- SQLite.MS SqlServer.2022
+-- SqlServer.2022
 
 SELECT TOP (2)
 	[t1].[Id],
@@ -46,7 +46,7 @@ FROM
 
 
 
--- SQLite.MS SqlServer.2022
+-- SqlServer.2022
 
 SELECT TOP (2)
 	[t1].[Id],
@@ -56,7 +56,7 @@ FROM
 
 
 
--- SQLite.MS SqlServer.2022
+-- SqlServer.2022
 
 DROP TABLE IF EXISTS [tempdb]..[#Issue4671Entity1TMP]
 

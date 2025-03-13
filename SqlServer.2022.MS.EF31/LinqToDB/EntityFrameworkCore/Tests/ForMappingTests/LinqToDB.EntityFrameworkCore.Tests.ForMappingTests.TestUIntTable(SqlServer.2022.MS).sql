@@ -9,7 +9,7 @@ FROM [UIntTable]
 WHERE @@ROWCOUNT = 1 AND [ID] = scope_identity();
 
 
--- SQLite.MS SqlServer.2022 (asynchronously)
+-- SqlServer.2022 (asynchronously)
 DECLARE @field64 Decimal
 SET     @field64 = 5
 

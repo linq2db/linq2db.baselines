@@ -25,7 +25,7 @@ ORDER BY [o].[OrderID], [t].[OrderID], [t].[ProductID], [t0].[ProductID], [t1].[
 BeginTransaction(RepeatableRead)
 
 
--- SQLite.MS SqlServer.2022
+-- SqlServer.2022
 
 SELECT
 	[m_1].[ProductId],
@@ -48,7 +48,7 @@ FROM
 DisposeTransaction
 
 
--- SQLite.MS SqlServer.2022
+-- SqlServer.2022
 
 SELECT
 	[a_Product].[ProductID],

@@ -1,4 +1,4 @@
-﻿-- SQLite.MS SqlServer.2022
+﻿-- SqlServer.2022
 
 CREATE TABLE [tempdb]..[#Identities]
 (
@@ -14,7 +14,7 @@ INSERT BULK [tempdb]..[#Identities](Name)
 
 
 
--- SQLite.MS SqlServer.2022
+-- SqlServer.2022
 
 SELECT
 	[t1].[Id],
@@ -26,7 +26,7 @@ ORDER BY
 
 
 
--- SQLite.MS SqlServer.2022
+-- SqlServer.2022
 
 DROP TABLE IF EXISTS [tempdb]..[#Identities]
 

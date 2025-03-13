@@ -20,7 +20,7 @@ INNER JOIN @inserted0 i ON ([t].[Id] = [i].[Id])
 ORDER BY [i].[_Position];
 
 
--- SQLite.MS SqlServer.2022 (asynchronously)
+-- SqlServer.2022 (asynchronously)
 
 SELECT
 	[t1].[Id],

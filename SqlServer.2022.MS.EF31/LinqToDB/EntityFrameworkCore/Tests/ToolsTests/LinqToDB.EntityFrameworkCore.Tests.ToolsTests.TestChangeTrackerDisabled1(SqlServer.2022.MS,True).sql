@@ -1,7 +1,7 @@
 ﻿BeginTransactionAsync(RepeatableRead)
 
 
--- SQLite.MS SqlServer.2022 (asynchronously)
+-- SqlServer.2022 (asynchronously)
 
 SELECT
 	[m_1].[ProductId],
@@ -37,7 +37,7 @@ WHERE
 
 
 
--- SQLite.MS SqlServer.2022 (asynchronously)
+-- SqlServer.2022 (asynchronously)
 
 SELECT
 	[m_1].[OrderID],
@@ -71,7 +71,7 @@ WHERE
 DisposeTransactionAsync
 
 
--- SQLite.MS SqlServer.2022 (asynchronously)
+-- SqlServer.2022 (asynchronously)
 
 SELECT
 	[e].[IsDeleted],
