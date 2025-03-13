@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 BeginTransaction(RepeatableRead)
 BeforeExecute
--- SQLite.MS Firebird.2.5 Firebird
+-- Firebird.2.5 Firebird
 
 SELECT
 	"m_1"."ParentID",
@@ -23,7 +23,7 @@ FROM
 		INNER JOIN "Child" "d" ON "m_1"."ParentID" = "d"."ParentID"
 
 BeforeExecute
--- SQLite.MS Firebird.2.5 Firebird
+-- Firebird.2.5 Firebird
 
 SELECT FIRST 1
 	"t1"."ParentID",
