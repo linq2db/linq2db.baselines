@@ -1,4 +1,4 @@
-﻿-- SQLite.MS SqlServer.2017
+﻿-- SqlServer.2017
 
 CREATE TABLE [tempdb]..[#WithIdentity]
 (
@@ -10,7 +10,7 @@ CREATE TABLE [tempdb]..[#WithIdentity]
 
 
 
--- SQLite.MS SqlServer.2017
+-- SqlServer.2017
 
 CREATE TABLE [tempdb]..[#NoIdentity]
 (
@@ -22,13 +22,13 @@ CREATE TABLE [tempdb]..[#NoIdentity]
 
 
 
--- SQLite.MS SqlServer.2017
+-- SqlServer.2017
 
 DROP TABLE IF EXISTS [tempdb]..[#NoIdentity]
 
 
 
--- SQLite.MS SqlServer.2017
+-- SqlServer.2017
 
 DROP TABLE IF EXISTS [tempdb]..[#WithIdentity]
 

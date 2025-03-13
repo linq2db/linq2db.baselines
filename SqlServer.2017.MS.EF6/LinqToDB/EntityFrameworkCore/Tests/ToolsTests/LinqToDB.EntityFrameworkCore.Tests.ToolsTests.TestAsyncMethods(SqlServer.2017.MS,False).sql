@@ -26,7 +26,7 @@ SELECT CASE
 END
 
 
--- SQLite.MS SqlServer.2017 (asynchronously)
+-- SqlServer.2017 (asynchronously)
 
 SELECT
 	[e].[IsDeleted],
@@ -47,7 +47,7 @@ WHERE
 
 
 
--- SQLite.MS SqlServer.2017 (asynchronously)
+-- SqlServer.2017 (asynchronously)
 
 SELECT
 	[e].[IsDeleted],
@@ -68,7 +68,7 @@ WHERE
 
 
 
--- SQLite.MS SqlServer.2017 (asynchronously)
+-- SqlServer.2017 (asynchronously)
 
 SELECT
 	[e].[IsDeleted],
@@ -89,7 +89,7 @@ WHERE
 
 
 
--- SQLite.MS SqlServer.2017 (asynchronously)
+-- SqlServer.2017 (asynchronously)
 
 SELECT
 	IIF(EXISTS(

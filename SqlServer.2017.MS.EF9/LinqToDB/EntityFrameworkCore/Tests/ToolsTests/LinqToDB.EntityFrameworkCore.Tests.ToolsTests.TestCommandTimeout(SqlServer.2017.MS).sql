@@ -14,7 +14,7 @@
 					END
 
 
--- SQLite.MS SqlServer.2017
+-- SqlServer.2017
 DECLARE @commandExecutionTime Int -- Int32
 SET     @commandExecutionTime = 5
 

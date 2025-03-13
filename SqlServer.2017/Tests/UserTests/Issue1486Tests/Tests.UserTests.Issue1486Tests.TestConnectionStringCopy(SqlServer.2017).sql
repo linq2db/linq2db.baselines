@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 BeginTransaction(RepeatableRead)
 BeforeExecute
--- SQLite.MS SqlServer.2017
+-- SqlServer.2017
 
 SELECT
 	[m_1].[ParentID],
@@ -23,7 +23,7 @@ FROM
 		INNER JOIN [Child] [d] ON [m_1].[ParentID] = [d].[ParentID]
 
 BeforeExecute
--- SQLite.MS SqlServer.2017
+-- SqlServer.2017
 
 SELECT TOP (1)
 	[t1].[ParentID],
