@@ -35,7 +35,7 @@ ORDER BY p."ProductID", s1."OrderID0", s1."ProductID", s1."OrderID", s1."Product
 BeginTransactionAsync(RepeatableRead)
 
 
--- SQLite.MS PostgreSQL.15 PostgreSQL (asynchronously)
+-- PostgreSQL.15 PostgreSQL (asynchronously)
 
 SELECT
 	m_1."SupplierId",
@@ -81,7 +81,7 @@ WHERE
 
 
 
--- SQLite.MS PostgreSQL.15 PostgreSQL (asynchronously)
+-- PostgreSQL.15 PostgreSQL (asynchronously)
 
 SELECT
 	m_1."ProductID",
@@ -119,7 +119,7 @@ WHERE
 DisposeTransactionAsync
 
 
--- SQLite.MS PostgreSQL.15 PostgreSQL (asynchronously)
+-- PostgreSQL.15 PostgreSQL (asynchronously)
 
 SELECT
 	p."ProductName",

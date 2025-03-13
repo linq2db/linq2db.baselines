@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SQLite.MS PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.9.5 PostgreSQL
 DECLARE @Has Boolean
 SET     @Has = True
 
@@ -15,7 +15,7 @@ RETURNING
 	"Id"
 
 BeforeExecute
--- SQLite.MS PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.9.5 PostgreSQL
 DECLARE @id Integer -- Int32
 SET     @id = 1
 

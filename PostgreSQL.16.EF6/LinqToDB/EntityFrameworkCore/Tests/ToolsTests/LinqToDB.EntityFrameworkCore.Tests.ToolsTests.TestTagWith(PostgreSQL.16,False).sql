@@ -13,7 +13,7 @@ LEFT JOIN (
 WHERE (@__ef_filter__p_0 OR NOT (e."IsDeleted")) OR NOT (e."IsDeleted")
 
 
--- SQLite.MS PostgreSQL.15 PostgreSQL
+-- PostgreSQL.15 PostgreSQL
 
 /* Tagged query */
 SELECT

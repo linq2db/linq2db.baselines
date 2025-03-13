@@ -1,4 +1,4 @@
-﻿-- SQLite.MS PostgreSQL.15 PostgreSQL
+﻿-- PostgreSQL.15 PostgreSQL
 DECLARE @name Text(11) -- String
 SET     @name = 'test insert'
 
