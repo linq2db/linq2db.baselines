@@ -1,4 +1,4 @@
-﻿-- SQLite.MS MariaDB.10.MySqlConnector MySql
+﻿-- MariaDB.10.MySqlConnector MySql
 DECLARE @Id Int32
 SET     @Id = 0
 DECLARE @BlogType VarChar(9) -- String
@@ -21,7 +21,7 @@ VALUES
 
 
 
--- SQLite.MS MariaDB.10.MySqlConnector MySql
+-- MariaDB.10.MySqlConnector MySql
 DECLARE @Id Int32
 SET     @Id = 0
 DECLARE @BlogType VarChar(8) -- String

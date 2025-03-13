@@ -18,7 +18,7 @@ VALUES (@p4)
 RETURNING `Id`;
 
 
--- SQLite.MS MariaDB.10.MySqlConnector MySql (asynchronously)
+-- MariaDB.10.MySqlConnector MySql (asynchronously)
 
 SELECT
 	`t1`.`Id`,

@@ -10,7 +10,7 @@ ORDER BY
 	`t1`.`ChildID`
 
 BeforeExecute
--- SQLite.MS MariaDB.10.MySqlConnector MySql
+-- MariaDB.10.MySqlConnector MySql
 
 SELECT
 	`t1`.`ParentID`,

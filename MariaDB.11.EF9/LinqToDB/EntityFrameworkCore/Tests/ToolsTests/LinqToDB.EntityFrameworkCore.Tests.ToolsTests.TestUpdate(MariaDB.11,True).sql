@@ -1,4 +1,4 @@
-﻿-- SQLite.MS MariaDB.10.MySqlConnector MySql
+﻿-- MariaDB.10.MySqlConnector MySql
 DECLARE @test Int32
 SET     @test = 1
 

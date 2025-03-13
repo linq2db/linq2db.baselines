@@ -1,7 +1,7 @@
 ﻿BeginTransaction(RepeatableRead)
 
 
--- SQLite.MS MariaDB.10.MySqlConnector MySql
+-- MariaDB.10.MySqlConnector MySql
 
 SELECT
 	`m_1`.`OrderID`,
@@ -32,7 +32,7 @@ FROM
 DisposeTransaction
 
 
--- SQLite.MS MariaDB.10.MySqlConnector MySql
+-- MariaDB.10.MySqlConnector MySql
 
 SELECT
 	`e`.`IsDeleted`,

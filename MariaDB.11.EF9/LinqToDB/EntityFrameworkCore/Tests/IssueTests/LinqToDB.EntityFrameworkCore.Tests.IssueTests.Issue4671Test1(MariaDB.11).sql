@@ -1,4 +1,4 @@
-﻿-- SQLite.MS MariaDB.10.MySqlConnector MySql
+﻿-- MariaDB.10.MySqlConnector MySql
 
 CREATE TEMPORARY TABLE `Issue4671Entity1TMP`
 (
@@ -10,7 +10,7 @@ CREATE TEMPORARY TABLE `Issue4671Entity1TMP`
 
 
 
--- SQLite.MS MariaDB.10.MySqlConnector MySql
+-- MariaDB.10.MySqlConnector MySql
 
 INSERT INTO `Issue4671Entity1`
 (
@@ -23,7 +23,7 @@ VALUES
 
 
 
--- SQLite.MS MariaDB.10.MySqlConnector MySql
+-- MariaDB.10.MySqlConnector MySql
 
 INSERT INTO `Issue4671Entity1TMP`
 (
@@ -36,7 +36,7 @@ VALUES
 
 
 
--- SQLite.MS MariaDB.10.MySqlConnector MySql
+-- MariaDB.10.MySqlConnector MySql
 
 SELECT
 	`t1`.`Id`,
@@ -47,7 +47,7 @@ LIMIT 2
 
 
 
--- SQLite.MS MariaDB.10.MySqlConnector MySql
+-- MariaDB.10.MySqlConnector MySql
 
 SELECT
 	`t1`.`Id`,
@@ -58,7 +58,7 @@ LIMIT 2
 
 
 
--- SQLite.MS MariaDB.10.MySqlConnector MySql
+-- MariaDB.10.MySqlConnector MySql
 
 DROP TABLE IF EXISTS `Issue4671Entity1TMP`
 

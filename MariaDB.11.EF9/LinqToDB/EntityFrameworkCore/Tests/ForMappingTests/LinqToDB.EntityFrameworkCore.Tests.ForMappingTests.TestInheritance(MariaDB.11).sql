@@ -18,7 +18,7 @@ VALUES (@p4)
 RETURNING `Id`;
 
 
--- SQLite.MS MariaDB.10.MySqlConnector MySql
+-- MariaDB.10.MySqlConnector MySql
 
 SELECT
 	`t1`.`Discriminator`,

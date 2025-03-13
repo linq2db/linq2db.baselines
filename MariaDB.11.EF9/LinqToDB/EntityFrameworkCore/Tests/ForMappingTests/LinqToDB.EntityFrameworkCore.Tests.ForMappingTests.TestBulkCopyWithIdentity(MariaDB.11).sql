@@ -1,4 +1,4 @@
-﻿-- SQLite.MS MariaDB.10.MySqlConnector MySql
+﻿-- MariaDB.10.MySqlConnector MySql
 
 CREATE TEMPORARY TABLE `WithIdentity`
 (
@@ -10,7 +10,7 @@ CREATE TEMPORARY TABLE `WithIdentity`
 
 
 
--- SQLite.MS MariaDB.10.MySqlConnector MySql
+-- MariaDB.10.MySqlConnector MySql
 
 INSERT INTO `WithIdentity`
 (
@@ -22,7 +22,7 @@ VALUES
 
 
 
--- SQLite.MS MariaDB.10.MySqlConnector MySql
+-- MariaDB.10.MySqlConnector MySql
 
 SELECT
 	`t1`.`Id`,
@@ -32,7 +32,7 @@ FROM
 
 
 
--- SQLite.MS MariaDB.10.MySqlConnector MySql
+-- MariaDB.10.MySqlConnector MySql
 
 DROP TABLE IF EXISTS `WithIdentity`
 
