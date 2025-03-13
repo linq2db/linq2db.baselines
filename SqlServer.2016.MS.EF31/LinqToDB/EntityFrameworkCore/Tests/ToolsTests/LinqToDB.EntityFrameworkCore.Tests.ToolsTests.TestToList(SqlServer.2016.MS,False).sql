@@ -1,7 +1,7 @@
 ﻿BeginTransaction(RepeatableRead)
 
 
--- SQLite.MS SqlServer.2016
+-- SqlServer.2016
 
 SELECT
 	[m_1].[OrderID],
@@ -32,7 +32,7 @@ FROM
 DisposeTransaction
 
 
--- SQLite.MS SqlServer.2016
+-- SqlServer.2016
 
 SELECT
 	[e].[IsDeleted],

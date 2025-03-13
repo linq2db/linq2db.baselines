@@ -1,4 +1,4 @@
-﻿-- SQLite.MS SqlServer.2016
+﻿-- SqlServer.2016
 
 DELETE [e]
 FROM

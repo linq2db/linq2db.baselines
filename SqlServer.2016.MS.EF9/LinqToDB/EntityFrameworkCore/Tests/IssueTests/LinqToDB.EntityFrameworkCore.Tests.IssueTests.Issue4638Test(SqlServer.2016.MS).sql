@@ -1,7 +1,7 @@
 ﻿BeginTransaction(RepeatableRead)
 
 
--- SQLite.MS SqlServer.2016
+-- SqlServer.2016
 
 SELECT
 	[m_1].[Key_1],
@@ -22,7 +22,7 @@ ORDER BY
 
 
 
--- SQLite.MS SqlServer.2016
+-- SqlServer.2016
 
 SELECT TOP (1)
 	[p].[AclNameId]

@@ -1,4 +1,4 @@
-﻿-- SQLite.MS SqlServer.2016
+﻿-- SqlServer.2016
 
 CREATE TABLE [tempdb]..[#Issue129Table]
 (
@@ -10,7 +10,7 @@ CREATE TABLE [tempdb]..[#Issue129Table]
 
 
 
--- SQLite.MS SqlServer.2016
+-- SqlServer.2016
 
 DROP TABLE IF EXISTS [tempdb]..[#Issue129Table]
 

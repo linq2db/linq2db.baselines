@@ -1,4 +1,4 @@
-﻿-- SQLite.MS SqlServer.2016
+﻿-- SqlServer.2016
 
 SELECT
 	[p].[IsDeleted],

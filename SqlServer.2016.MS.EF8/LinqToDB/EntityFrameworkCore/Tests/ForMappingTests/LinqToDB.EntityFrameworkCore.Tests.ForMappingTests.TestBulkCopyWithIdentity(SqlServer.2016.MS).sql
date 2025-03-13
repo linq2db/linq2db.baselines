@@ -1,4 +1,4 @@
-﻿-- SQLite.MS SqlServer.2016
+﻿-- SqlServer.2016
 
 CREATE TABLE [tempdb]..[#WithIdentity]
 (
@@ -14,7 +14,7 @@ INSERT BULK [tempdb]..[#WithIdentity](Name)
 
 
 
--- SQLite.MS SqlServer.2016
+-- SqlServer.2016
 
 SELECT
 	[t1].[Id],
@@ -24,7 +24,7 @@ FROM
 
 
 
--- SQLite.MS SqlServer.2016
+-- SqlServer.2016
 
 DROP TABLE IF EXISTS [tempdb]..[#WithIdentity]
 

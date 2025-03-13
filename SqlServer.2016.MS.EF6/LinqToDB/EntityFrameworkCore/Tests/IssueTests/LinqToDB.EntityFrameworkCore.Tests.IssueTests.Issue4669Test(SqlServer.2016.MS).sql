@@ -1,4 +1,4 @@
-﻿-- SQLite.MS SqlServer.2016 (asynchronously)
+﻿-- SqlServer.2016 (asynchronously)
 
 SELECT
 	[x].[Id],
