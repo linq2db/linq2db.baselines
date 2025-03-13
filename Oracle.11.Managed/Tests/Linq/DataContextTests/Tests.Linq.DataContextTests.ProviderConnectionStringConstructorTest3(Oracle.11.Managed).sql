@@ -10,7 +10,7 @@ ORDER BY
 	t1."ChildID"
 
 BeforeExecute
--- SQLite.MS Oracle.11.Managed Oracle11
+-- Oracle.11.Managed Oracle11
 
 SELECT
 	t1."ParentID",

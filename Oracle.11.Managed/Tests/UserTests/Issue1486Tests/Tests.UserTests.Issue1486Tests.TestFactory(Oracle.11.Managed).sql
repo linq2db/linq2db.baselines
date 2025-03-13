@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 BeginTransaction(ReadCommitted)
 BeforeExecute
--- SQLite.MS Oracle.11.Managed Oracle11
+-- Oracle.11.Managed Oracle11
 
 SELECT
 	m_1."ParentID",
@@ -25,7 +25,7 @@ FROM
 		INNER JOIN "Child" d ON m_1."ParentID" = d."ParentID"
 
 BeforeExecute
--- SQLite.MS Oracle.11.Managed Oracle11
+-- Oracle.11.Managed Oracle11
 
 SELECT
 	t1."ParentID",
