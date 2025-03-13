@@ -1,24 +1,24 @@
 ﻿BeforeExecute
--- SQLite.MS Informix.DB2 Informix
+-- Informix.DB2 Informix
 DECLARE @p Clob(3) -- String
 SET     @p = 'qqq'
 
 SELECT FIRST 1 @p FROM SYSTABLES
 
 BeforeExecute
--- SQLite.MS Informix.DB2 Informix
+-- Informix.DB2 Informix
 
 SELECT FIRST 1 datetimeDataType FROM ALLTYPES WHERE ID = 2
 
 BeforeExecute
--- SQLite.MS Informix.DB2 Informix
+-- Informix.DB2 Informix
 DECLARE @p Timestamp(16) -- DateTime
 SET     @p = 2012-12-12 12:12:12.00000
 
 SELECT FIRST 1 datetimeDataType FROM ALLTYPES WHERE datetimeDataType  = ?
 
 BeforeExecute
--- SQLite.MS Informix.DB2 Informix
+-- Informix.DB2 Informix
 DECLARE @p Timestamp(16) -- DateTime
 SET     @p = 2012-12-12 12:12:12.00000
 
@@ -28,7 +28,7 @@ BeforeExecute
 INSERT BULK AllTypes
 
 BeforeExecute
--- SQLite.MS Informix.DB2 Informix
+-- Informix.DB2 Informix
 
 DELETE FROM
 	AllTypes
@@ -36,7 +36,7 @@ WHERE
 	AllTypes.ID >= 2000
 
 BeforeExecute
--- SQLite.MS Informix.DB2 Informix
+-- Informix.DB2 Informix
 
 
 				SELECT
@@ -51,7 +51,7 @@ BeforeExecute
 					tabid >= 100
 
 BeforeExecute
--- SQLite.MS Informix.DB2 Informix
+-- Informix.DB2 Informix
 
 
 						SELECT
@@ -78,7 +78,7 @@ BeforeExecute
 						WHERE t.tabid >= 100 AND x.idxtype = 'U'
 
 BeforeExecute
--- SQLite.MS Informix.DB2 Informix
+-- Informix.DB2 Informix
 
 
 					SELECT
@@ -92,7 +92,7 @@ BeforeExecute
 					WHERE t.tabid >= 100
 
 BeforeExecute
--- SQLite.MS Informix.DB2 Informix
+-- Informix.DB2 Informix
 
 
 						SELECT
