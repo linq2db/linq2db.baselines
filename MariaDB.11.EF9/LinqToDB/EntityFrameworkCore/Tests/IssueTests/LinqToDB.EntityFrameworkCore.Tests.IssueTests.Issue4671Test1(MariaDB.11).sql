@@ -60,7 +60,7 @@ LIMIT 2
 
 --  MariaDB.10.MySqlConnector MySql
 
-DROP TABLE IF EXISTS `Issue4671Entity1TMP`
+DROP TEMPORARY TABLE IF EXISTS `Issue4671Entity1TMP`
 
 
 

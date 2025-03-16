@@ -56,5 +56,5 @@ LIMIT 2
 BeforeExecute
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql
 
-DROP TABLE IF EXISTS `Issue4671EntityTMP`
+DROP TEMPORARY TABLE IF EXISTS `Issue4671EntityTMP`
 

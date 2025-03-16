@@ -38,5 +38,5 @@ DROP TABLE IF EXISTS `CreateIfNotExistsTable`
 BeforeExecute
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql
 
-DROP TABLE IF EXISTS `CreateIfNotExistsTable`
+DROP TEMPORARY TABLE IF EXISTS `CreateIfNotExistsTable`
 

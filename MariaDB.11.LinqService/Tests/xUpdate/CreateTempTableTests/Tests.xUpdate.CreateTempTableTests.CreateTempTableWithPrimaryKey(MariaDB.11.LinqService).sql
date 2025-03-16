@@ -11,5 +11,5 @@ CREATE TEMPORARY TABLE `TableWithPrimaryKey`
 BeforeExecute
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql
 
-DROP TABLE IF EXISTS `TableWithPrimaryKey`
+DROP TEMPORARY TABLE IF EXISTS `TableWithPrimaryKey`
 

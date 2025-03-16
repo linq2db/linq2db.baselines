@@ -34,7 +34,7 @@ FROM
 
 --  MariaDB.10.MySqlConnector MySql
 
-DROP TABLE IF EXISTS `WithIdentity`
+DROP TEMPORARY TABLE IF EXISTS `WithIdentity`
 
 
 

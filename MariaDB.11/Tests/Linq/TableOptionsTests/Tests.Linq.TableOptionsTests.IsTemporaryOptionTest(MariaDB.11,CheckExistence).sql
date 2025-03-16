@@ -104,10 +104,10 @@ TRUNCATE TABLE `temp_table2`
 BeforeExecute
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql
 
-DROP TABLE IF EXISTS `temp_table2`
+DROP TEMPORARY TABLE IF EXISTS `temp_table2`
 
 BeforeExecute
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql
 
-DROP TABLE IF EXISTS `temp_table1`
+DROP TEMPORARY TABLE IF EXISTS `temp_table1`
 
