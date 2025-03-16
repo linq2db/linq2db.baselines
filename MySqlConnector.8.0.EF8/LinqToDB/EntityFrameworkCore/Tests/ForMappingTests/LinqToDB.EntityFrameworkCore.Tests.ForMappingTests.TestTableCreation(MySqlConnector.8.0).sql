@@ -24,13 +24,13 @@ CREATE TEMPORARY TABLE `NoIdentity`
 
 --  MySql.8.0.MySqlConnector MySql80
 
-DROP TABLE IF EXISTS `NoIdentity`
+DROP TEMPORARY TABLE IF EXISTS `NoIdentity`
 
 
 
 --  MySql.8.0.MySqlConnector MySql80
 
-DROP TABLE IF EXISTS `WithIdentity`
+DROP TEMPORARY TABLE IF EXISTS `WithIdentity`
 
 
 
