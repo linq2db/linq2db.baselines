@@ -21,5 +21,5 @@ VALUES
 BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 
-DROP TABLE IF EXISTS `TableWithPrimaryKey2`
+DROP TEMPORARY TABLE IF EXISTS `TableWithPrimaryKey2`
 

@@ -35,7 +35,7 @@ FROM
 
 --  MySql.5.7.MySqlConnector MySql57
 
-DROP TABLE IF EXISTS `NoIdentity`
+DROP TEMPORARY TABLE IF EXISTS `NoIdentity`
 
 
 
