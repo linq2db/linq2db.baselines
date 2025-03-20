@@ -31,8 +31,8 @@ VALUES
 
 BeforeExecute
 -- SQLite.Classic SQLite
-DECLARE @p_FirstName NVarChar(18) -- String
-SET     @p_FirstName = 'InsertColumnFilter'
+DECLARE @FirstName NVarChar(18) -- String
+SET     @FirstName = 'InsertColumnFilter'
 
 SELECT
 	[x].[FirstName],
@@ -43,7 +43,7 @@ SELECT
 FROM
 	[Person] [x]
 WHERE
-	[x].[FirstName] = @p_FirstName
+	[x].[FirstName] = @FirstName
 LIMIT 1
 
 BeforeExecute
@@ -68,8 +68,8 @@ WHERE
 
 BeforeExecute
 -- SQLite.Classic SQLite
-DECLARE @p_FirstName NVarChar(18) -- String
-SET     @p_FirstName = 'InsertColumnFilter'
+DECLARE @FirstName NVarChar(18) -- String
+SET     @FirstName = 'InsertColumnFilter'
 
 SELECT
 	[x].[FirstName],
@@ -80,7 +80,7 @@ SELECT
 FROM
 	[Person] [x]
 WHERE
-	[x].[FirstName] = @p_FirstName
+	[x].[FirstName] = @FirstName
 LIMIT 1
 
 BeforeExecute

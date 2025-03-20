@@ -36,12 +36,12 @@ SELECT last_insert_rowid()
 
 BeforeExecute
 -- SQLite.Classic SQLite
-DECLARE @CS8__locals2_CS8__locals1_id  -- Int32
-SET     @CS8__locals2_CS8__locals1_id = 5
+DECLARE @id  -- Int32
+SET     @id = 5
 DECLARE @diagnosis  -- Int32
 SET     @diagnosis = 3
-DECLARE @CS8__locals2_i  -- Int32
-SET     @CS8__locals2_i = 0
+DECLARE @i  -- Int32
+SET     @i = 0
 
 INSERT INTO [Patient] AS [t1]
 (
@@ -50,20 +50,20 @@ INSERT INTO [Patient] AS [t1]
 )
 VALUES
 (
-	@CS8__locals2_CS8__locals1_id,
-	CAST(@diagnosis + @CS8__locals2_i AS NVarChar(11))
+	@id,
+	CAST(@diagnosis + @i AS NVarChar(11))
 )
 ON CONFLICT ([PersonID]) DO UPDATE SET
-	[Diagnosis] = CAST(Length([t1].[Diagnosis]) + @CS8__locals2_i AS NVarChar(11))
+	[Diagnosis] = CAST(Length([t1].[Diagnosis]) + @i AS NVarChar(11))
 
 BeforeExecute
 -- SQLite.Classic SQLite
-DECLARE @CS8__locals2_CS8__locals1_id  -- Int32
-SET     @CS8__locals2_CS8__locals1_id = 5
+DECLARE @id  -- Int32
+SET     @id = 5
 DECLARE @diagnosis  -- Int32
 SET     @diagnosis = 3
-DECLARE @CS8__locals2_i  -- Int32
-SET     @CS8__locals2_i = 1
+DECLARE @i  -- Int32
+SET     @i = 1
 
 INSERT INTO [Patient] AS [t1]
 (
@@ -72,20 +72,20 @@ INSERT INTO [Patient] AS [t1]
 )
 VALUES
 (
-	@CS8__locals2_CS8__locals1_id,
-	CAST(@diagnosis + @CS8__locals2_i AS NVarChar(11))
+	@id,
+	CAST(@diagnosis + @i AS NVarChar(11))
 )
 ON CONFLICT ([PersonID]) DO UPDATE SET
-	[Diagnosis] = CAST(Length([t1].[Diagnosis]) + @CS8__locals2_i AS NVarChar(11))
+	[Diagnosis] = CAST(Length([t1].[Diagnosis]) + @i AS NVarChar(11))
 
 BeforeExecute
 -- SQLite.Classic SQLite
-DECLARE @CS8__locals2_CS8__locals1_id  -- Int32
-SET     @CS8__locals2_CS8__locals1_id = 5
+DECLARE @id  -- Int32
+SET     @id = 5
 DECLARE @diagnosis  -- Int32
 SET     @diagnosis = 3
-DECLARE @CS8__locals2_i  -- Int32
-SET     @CS8__locals2_i = 2
+DECLARE @i  -- Int32
+SET     @i = 2
 
 INSERT INTO [Patient] AS [t1]
 (
@@ -94,11 +94,11 @@ INSERT INTO [Patient] AS [t1]
 )
 VALUES
 (
-	@CS8__locals2_CS8__locals1_id,
-	CAST(@diagnosis + @CS8__locals2_i AS NVarChar(11))
+	@id,
+	CAST(@diagnosis + @i AS NVarChar(11))
 )
 ON CONFLICT ([PersonID]) DO UPDATE SET
-	[Diagnosis] = CAST(Length([t1].[Diagnosis]) + @CS8__locals2_i AS NVarChar(11))
+	[Diagnosis] = CAST(Length([t1].[Diagnosis]) + @i AS NVarChar(11))
 
 BeforeExecute
 -- SQLite.Classic SQLite

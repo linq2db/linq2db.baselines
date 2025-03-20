@@ -10,8 +10,8 @@ LIMIT 1
 --  SQLite.MS SQLite (asynchronously)
 DECLARE @CompanyName NVarChar(19) -- String
 SET     @CompanyName = 'Alfreds Futterkiste'
-DECLARE @customer_CustomerId NVarChar(5) -- String
-SET     @customer_CustomerId = 'ALFKI'
+DECLARE @CustomerId NVarChar(5) -- String
+SET     @CustomerId = 'ALFKI'
 
 UPDATE
 	[Customers]
@@ -19,7 +19,7 @@ SET
 	[CompanyName] = @CompanyName
 WHERE
 	(NOT [Customers].[IsDeleted] OR NOT [Customers].[IsDeleted]) AND
-	[Customers].[CustomerID] = @customer_CustomerId
+	[Customers].[CustomerID] = @CustomerId
 
 
 

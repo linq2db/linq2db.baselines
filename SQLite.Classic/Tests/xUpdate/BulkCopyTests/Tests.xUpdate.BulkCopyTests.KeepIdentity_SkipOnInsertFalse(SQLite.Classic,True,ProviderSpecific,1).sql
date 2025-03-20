@@ -36,8 +36,8 @@ VALUES
 
 BeforeExecute
 -- SQLite.Classic SQLite
-DECLARE @CS8__locals1_lastId  -- Int32
-SET     @CS8__locals1_lastId = 3
+DECLARE @lastId  -- Int32
+SET     @lastId = 3
 
 SELECT
 	[t1].[ID],
@@ -45,7 +45,7 @@ SELECT
 FROM
 	[AllTypes] [t1]
 WHERE
-	[t1].[ID] > @CS8__locals1_lastId
+	[t1].[ID] > @lastId
 ORDER BY
 	[t1].[ID]
 

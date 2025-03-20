@@ -206,8 +206,8 @@ LIMIT 1
 
 BeforeExecute
 -- SQLite.Classic SQLite
-DECLARE @notVerified_GuidValue VarChar(36) -- AnsiString
-SET     @notVerified_GuidValue = 'bc7b663d-0fde-4327-8f92-5d8cc3a11d11'
+DECLARE @GuidValue VarChar(36) -- AnsiString
+SET     @GuidValue = 'bc7b663d-0fde-4327-8f92-5d8cc3a11d11'
 
 SELECT
 	[t1].[Name],
@@ -216,13 +216,13 @@ SELECT
 FROM
 	[TypeConvertTable] [t1]
 WHERE
-	[t1].[GuidValue] = @notVerified_GuidValue
+	[t1].[GuidValue] = @GuidValue
 LIMIT 1
 
 BeforeExecute
 -- SQLite.Classic SQLite
-DECLARE @verified_GuidValue VarChar(36) -- AnsiString
-SET     @verified_GuidValue = 'a948600d-de21-4f74-8ac2-9516b287076e'
+DECLARE @GuidValue VarChar(36) -- AnsiString
+SET     @GuidValue = 'a948600d-de21-4f74-8ac2-9516b287076e'
 
 SELECT
 	[t1].[Name],
@@ -231,6 +231,6 @@ SELECT
 FROM
 	[TypeConvertTable] [t1]
 WHERE
-	[t1].[GuidValue] = @verified_GuidValue
+	[t1].[GuidValue] = @GuidValue
 LIMIT 1
 

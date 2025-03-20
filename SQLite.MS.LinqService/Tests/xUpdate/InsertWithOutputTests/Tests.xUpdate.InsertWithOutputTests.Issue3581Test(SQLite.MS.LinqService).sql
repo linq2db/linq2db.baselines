@@ -4,10 +4,10 @@ DECLARE @Id  -- Int32
 SET     @Id = 1
 DECLARE @Name NVarChar(8) -- String
 SET     @Name = 'John Doe'
-DECLARE @ExternalId_Id NVarChar(1) -- String
-SET     @ExternalId_Id = '1'
-DECLARE @ExternalId_Source NVarChar(7) -- String
-SET     @ExternalId_Source = 'unknown'
+DECLARE @Id_1 NVarChar(1) -- String
+SET     @Id_1 = '1'
+DECLARE @Source NVarChar(7) -- String
+SET     @Source = 'unknown'
 
 INSERT INTO [Issue3581Table]
 (
@@ -20,8 +20,8 @@ VALUES
 (
 	@Id,
 	@Name,
-	@ExternalId_Id,
-	@ExternalId_Source
+	@Id_1,
+	@Source
 )
 RETURNING
 	[Issue3581Table].[Id],

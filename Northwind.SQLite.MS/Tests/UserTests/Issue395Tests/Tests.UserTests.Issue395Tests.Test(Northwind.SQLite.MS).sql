@@ -44,37 +44,37 @@ LIMIT 1
 
 BeforeExecute
 -- Northwind.SQLite.MS SQLite.MS SQLite
-DECLARE @data_ShipCountry NVarChar(9) -- String
-SET     @data_ShipCountry = 'Argentina'
+DECLARE @ShipCountry NVarChar(9) -- String
+SET     @ShipCountry = 'Argentina'
 
 SELECT
 	SUM([x].[Freight])
 FROM
 	[Orders] [x]
 WHERE
-	[x].[ShipVia] = 1 AND [x].[ShipCountry] = @data_ShipCountry
+	[x].[ShipVia] = 1 AND [x].[ShipCountry] = @ShipCountry
 
 BeforeExecute
 -- Northwind.SQLite.MS SQLite.MS SQLite
-DECLARE @data_ShipCountry NVarChar(9) -- String
-SET     @data_ShipCountry = 'Argentina'
+DECLARE @ShipCountry NVarChar(9) -- String
+SET     @ShipCountry = 'Argentina'
 
 SELECT
 	SUM([x].[Freight])
 FROM
 	[Orders] [x]
 WHERE
-	[x].[ShipVia] = 2 AND [x].[ShipCountry] = @data_ShipCountry
+	[x].[ShipVia] = 2 AND [x].[ShipCountry] = @ShipCountry
 
 BeforeExecute
 -- Northwind.SQLite.MS SQLite.MS SQLite
-DECLARE @data_ShipCountry NVarChar(9) -- String
-SET     @data_ShipCountry = 'Argentina'
+DECLARE @ShipCountry NVarChar(9) -- String
+SET     @ShipCountry = 'Argentina'
 
 SELECT
 	SUM([x].[Freight])
 FROM
 	[Orders] [x]
 WHERE
-	[x].[ShipVia] = 3 AND [x].[ShipCountry] = @data_ShipCountry
+	[x].[ShipVia] = 3 AND [x].[ShipCountry] = @ShipCountry
 

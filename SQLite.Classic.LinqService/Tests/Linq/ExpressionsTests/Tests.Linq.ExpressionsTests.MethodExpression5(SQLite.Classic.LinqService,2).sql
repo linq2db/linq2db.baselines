@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- SQLite.Classic SQLite
-DECLARE @CS8__locals1_n  -- Int32
-SET     @CS8__locals1_n = 2
+DECLARE @n  -- Int32
+SET     @n = 2
 
 SELECT
 	(
@@ -11,7 +11,7 @@ SELECT
 			[Child] [c_1]
 		WHERE
 			[c_1].[ParentID] = [p].[ParentID]
-	) + @CS8__locals1_n
+	) + @n
 FROM
 	[Parent] [p]
 

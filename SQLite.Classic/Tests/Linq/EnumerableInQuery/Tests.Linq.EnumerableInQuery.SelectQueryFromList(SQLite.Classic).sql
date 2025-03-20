@@ -1,40 +1,40 @@
 ﻿BeforeExecute
 -- SQLite.Classic SQLite
-DECLARE @item_Id  -- Int32
-SET     @item_Id = 1
-DECLARE @item_Value  -- Int32
-SET     @item_Value = 11
-DECLARE @item_Id_1  -- Int32
-SET     @item_Id_1 = 2
-DECLARE @item_Value_1  -- Int32
-SET     @item_Value_1 = 22
-DECLARE @item_Id_2  -- Int32
-SET     @item_Id_2 = 3
-DECLARE @item_Value_2  -- Int32
-SET     @item_Value_2 = 33
-DECLARE @item_Id_3  -- Int32
-SET     @item_Id_3 = 4
-DECLARE @item_Value_3  -- Int32
-SET     @item_Value_3 = 44
+DECLARE @Id  -- Int32
+SET     @Id = 1
+DECLARE @Value  -- Int32
+SET     @Value = 11
+DECLARE @Id_1  -- Int32
+SET     @Id_1 = 2
+DECLARE @Value_1  -- Int32
+SET     @Value_1 = 22
+DECLARE @Id_2  -- Int32
+SET     @Id_2 = 3
+DECLARE @Value_2  -- Int32
+SET     @Value_2 = 33
+DECLARE @Id_3  -- Int32
+SET     @Id_3 = 4
+DECLARE @Value_3  -- Int32
+SET     @Value_3 = 44
 
 WITH [CTE_1] ([Id], [Value_1])
 AS
 (
 	SELECT
-		@item_Id,
-		@item_Value
+		@Id,
+		@Value
 	UNION ALL
 	SELECT
-		@item_Id_1,
-		@item_Value_1
+		@Id_1,
+		@Value_1
 	UNION ALL
 	SELECT
-		@item_Id_2,
-		@item_Value_2
+		@Id_2,
+		@Value_2
 	UNION ALL
 	SELECT
-		@item_Id_3,
-		@item_Value_3
+		@Id_3,
+		@Value_3
 )
 SELECT
 	[t1].[Id],

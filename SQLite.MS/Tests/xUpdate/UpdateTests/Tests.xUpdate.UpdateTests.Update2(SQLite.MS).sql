@@ -18,27 +18,27 @@ VALUES
 
 BeforeExecute
 -- SQLite.MS SQLite
-DECLARE @parent_ParentID  -- Int32
-SET     @parent_ParentID = 1001
+DECLARE @ParentID  -- Int32
+SET     @ParentID = 1001
 
 SELECT
 	COUNT(*)
 FROM
 	[Parent] [p]
 WHERE
-	[p].[ParentID] = @parent_ParentID
+	[p].[ParentID] = @ParentID
 
 BeforeExecute
 -- SQLite.MS SQLite
-DECLARE @parent_ParentID  -- Int32
-SET     @parent_ParentID = 1001
+DECLARE @ParentID  -- Int32
+SET     @ParentID = 1001
 
 UPDATE
 	[Parent]
 SET
 	[ParentID] = [Parent].[ParentID] + 1
 WHERE
-	[Parent].[ParentID] = @parent_ParentID
+	[Parent].[ParentID] = @ParentID
 
 BeforeExecute
 -- SQLite.MS SQLite

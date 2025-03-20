@@ -1,42 +1,42 @@
 ﻿BeforeExecute
 -- SQLite.MS SQLite
-DECLARE @parent_ParentID  -- Int32
-SET     @parent_ParentID = 1111
+DECLARE @ParentID  -- Int32
+SET     @ParentID = 1111
 
 DELETE FROM
 	[Parent]
 WHERE
-	[Parent].[ParentID] = @parent_ParentID
+	[Parent].[ParentID] = @ParentID
 
 BeforeExecute
 -- SQLite.MS SQLite
-DECLARE @parent_ParentID  -- Int32
-SET     @parent_ParentID = 2111
+DECLARE @ParentID  -- Int32
+SET     @ParentID = 2111
 
 DELETE FROM
 	[Parent]
 WHERE
-	[Parent].[ParentID] = @parent_ParentID
+	[Parent].[ParentID] = @ParentID
 
 BeforeExecute
 -- SQLite.MS SQLite
-DECLARE @parent_ParentID  -- Int32
-SET     @parent_ParentID = 3111
+DECLARE @ParentID  -- Int32
+SET     @ParentID = 3111
 
 DELETE FROM
 	[Parent]
 WHERE
-	[Parent].[ParentID] = @parent_ParentID
+	[Parent].[ParentID] = @ParentID
 
 BeforeExecute
 -- SQLite.MS SQLite
-DECLARE @parent_ParentID  -- Int32
-SET     @parent_ParentID = 4111
+DECLARE @ParentID  -- Int32
+SET     @ParentID = 4111
 
 DELETE FROM
 	[Parent]
 WHERE
-	[Parent].[ParentID] = @parent_ParentID
+	[Parent].[ParentID] = @ParentID
 
 BeforeExecute
 BeginTransaction
@@ -58,41 +58,41 @@ BeforeExecute
 CommitTransaction
 BeforeExecute
 -- SQLite.MS SQLite
-DECLARE @parent_ParentID  -- Int32
-SET     @parent_ParentID = 1111
+DECLARE @ParentID  -- Int32
+SET     @ParentID = 1111
 
 DELETE FROM
 	[Parent]
 WHERE
-	[Parent].[ParentID] = @parent_ParentID
+	[Parent].[ParentID] = @ParentID
 
 BeforeExecute
 -- SQLite.MS SQLite
-DECLARE @parent_ParentID  -- Int32
-SET     @parent_ParentID = 2111
+DECLARE @ParentID  -- Int32
+SET     @ParentID = 2111
 
 DELETE FROM
 	[Parent]
 WHERE
-	[Parent].[ParentID] = @parent_ParentID
+	[Parent].[ParentID] = @ParentID
 
 BeforeExecute
 -- SQLite.MS SQLite
-DECLARE @parent_ParentID  -- Int32
-SET     @parent_ParentID = 3111
+DECLARE @ParentID  -- Int32
+SET     @ParentID = 3111
 
 DELETE FROM
 	[Parent]
 WHERE
-	[Parent].[ParentID] = @parent_ParentID
+	[Parent].[ParentID] = @ParentID
 
 BeforeExecute
 -- SQLite.MS SQLite
-DECLARE @parent_ParentID  -- Int32
-SET     @parent_ParentID = 4111
+DECLARE @ParentID  -- Int32
+SET     @ParentID = 4111
 
 DELETE FROM
 	[Parent]
 WHERE
-	[Parent].[ParentID] = @parent_ParentID
+	[Parent].[ParentID] = @ParentID
 

@@ -1,9 +1,9 @@
 ﻿BeforeExecute
 -- SQLite.Classic SQLite
-DECLARE @parent_ParentID  -- Int32
-SET     @parent_ParentID = 3
-DECLARE @parent_Value1  -- Int32
-SET     @parent_Value1 = 3
+DECLARE @ParentID  -- Int32
+SET     @ParentID = 3
+DECLARE @Value1  -- Int32
+SET     @Value1 = 3
 
 SELECT
 	[p].[ParentID],
@@ -11,5 +11,5 @@ SELECT
 FROM
 	[Parent] [p]
 WHERE
-	[p].[ParentID] = @parent_ParentID AND [p].[Value1] = @parent_Value1
+	[p].[ParentID] = @ParentID AND [p].[Value1] = @Value1
 

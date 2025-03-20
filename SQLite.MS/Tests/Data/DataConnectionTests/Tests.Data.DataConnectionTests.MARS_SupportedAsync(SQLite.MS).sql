@@ -20,8 +20,8 @@ FROM
 
 BeforeExecute
 -- SQLite.MS SQLite (asynchronously)
-DECLARE @p_ID  -- Int32
-SET     @p_ID = 1
+DECLARE @ID  -- Int32
+SET     @ID = 1
 
 SELECT
 	[t1].[PersonID],
@@ -29,12 +29,12 @@ SELECT
 FROM
 	[Doctor] [t1]
 WHERE
-	[t1].[PersonID] = @p_ID
+	[t1].[PersonID] = @ID
 
 BeforeExecute
 -- SQLite.MS SQLite (asynchronously)
-DECLARE @p_ID  -- Int32
-SET     @p_ID = 2
+DECLARE @ID  -- Int32
+SET     @ID = 2
 
 SELECT
 	[t1].[PersonID],
@@ -42,12 +42,12 @@ SELECT
 FROM
 	[Doctor] [t1]
 WHERE
-	[t1].[PersonID] = @p_ID
+	[t1].[PersonID] = @ID
 
 BeforeExecute
 -- SQLite.MS SQLite (asynchronously)
-DECLARE @p_ID  -- Int32
-SET     @p_ID = 3
+DECLARE @ID  -- Int32
+SET     @ID = 3
 
 SELECT
 	[t1].[PersonID],
@@ -55,12 +55,12 @@ SELECT
 FROM
 	[Doctor] [t1]
 WHERE
-	[t1].[PersonID] = @p_ID
+	[t1].[PersonID] = @ID
 
 BeforeExecute
 -- SQLite.MS SQLite (asynchronously)
-DECLARE @p_ID  -- Int32
-SET     @p_ID = 4
+DECLARE @ID  -- Int32
+SET     @ID = 4
 
 SELECT
 	[t1].[PersonID],
@@ -68,5 +68,5 @@ SELECT
 FROM
 	[Doctor] [t1]
 WHERE
-	[t1].[PersonID] = @p_ID
+	[t1].[PersonID] = @ID
 

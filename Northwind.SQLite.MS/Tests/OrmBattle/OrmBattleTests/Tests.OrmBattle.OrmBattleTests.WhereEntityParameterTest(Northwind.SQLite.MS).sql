@@ -24,8 +24,8 @@ LIMIT 1
 
 BeforeExecute
 -- Northwind.SQLite.MS SQLite.MS SQLite
-DECLARE @order_OrderID  -- Int32
-SET     @order_OrderID = 10248
+DECLARE @OrderID  -- Int32
+SET     @OrderID = 10248
 
 SELECT
 	[o].[OrderID],
@@ -45,5 +45,5 @@ SELECT
 FROM
 	[Orders] [o]
 WHERE
-	[o].[OrderID] = @order_OrderID
+	[o].[OrderID] = @OrderID
 
