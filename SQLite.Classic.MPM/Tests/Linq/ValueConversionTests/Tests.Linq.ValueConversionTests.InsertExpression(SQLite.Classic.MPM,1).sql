@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-DECLARE @iteration  -- Int32
-SET     @iteration = 1
+DECLARE @CS8__locals1_iteration  -- Int32
+SET     @CS8__locals1_iteration = 1
 DECLARE @Value1 NVarChar(2) -- String
 SET     @Value1 = '[]'
 DECLARE @Enum NVarChar(6) -- String
@@ -24,7 +24,7 @@ INSERT INTO [ValueConversion]
 )
 VALUES
 (
-	@iteration,
+	@CS8__locals1_iteration,
 	@Value1,
 	@Enum,
 	@inserted,
@@ -34,8 +34,8 @@ VALUES
 
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-DECLARE @iteration  -- Int32
-SET     @iteration = 1
+DECLARE @CS8__locals1_iteration  -- Int32
+SET     @CS8__locals1_iteration = 1
 
 SELECT
 	[e].[Id],
@@ -51,6 +51,6 @@ SELECT
 FROM
 	[ValueConversion] [e]
 WHERE
-	[e].[Id] = @iteration
+	[e].[Id] = @CS8__locals1_iteration
 LIMIT 2
 

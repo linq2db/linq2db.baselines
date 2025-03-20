@@ -31,15 +31,15 @@ LIMIT 1
 
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-DECLARE @ParentID  -- Int32
-SET     @ParentID = 100500
+DECLARE @queryResult_Value_ParentID  -- Int32
+SET     @queryResult_Value_ParentID = 100500
 DECLARE @id  -- Int32
 SET     @id = 100500
 
 UPDATE
 	[Parent]
 SET
-	[Value1] = @ParentID
+	[Value1] = @queryResult_Value_ParentID
 WHERE
 	[Parent].[ParentID] = @id AND (
 		SELECT

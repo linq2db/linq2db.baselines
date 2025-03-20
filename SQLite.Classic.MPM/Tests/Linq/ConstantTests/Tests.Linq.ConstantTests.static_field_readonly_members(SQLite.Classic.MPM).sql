@@ -1,9 +1,9 @@
 ﻿BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-DECLARE @Id  -- Int32
-SET     @Id = 1
-DECLARE @InitOnlyId  -- Int32
-SET     @InitOnlyId = 1
+DECLARE @InnerClassNonReadonly_Id  -- Int32
+SET     @InnerClassNonReadonly_Id = 1
+DECLARE @InnerClassNonReadonly_InitOnlyId  -- Int32
+SET     @InnerClassNonReadonly_InitOnlyId = 1
 
 SELECT
 	[e].[Id],
@@ -13,7 +13,7 @@ SELECT
 FROM
 	[TestConstantsData] [e]
 WHERE
-	[e].[Id] = @Id AND [e].[Id] = @InitOnlyId
+	[e].[Id] = @InnerClassNonReadonly_Id AND [e].[Id] = @InnerClassNonReadonly_InitOnlyId
 
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
@@ -28,10 +28,10 @@ FROM
 
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-DECLARE @Id  -- Int32
-SET     @Id = 1
-DECLARE @InitOnlyId  -- Int32
-SET     @InitOnlyId = 1
+DECLARE @InnerClassNonReadonly_Id  -- Int32
+SET     @InnerClassNonReadonly_Id = 1
+DECLARE @InnerClassNonReadonly_InitOnlyId  -- Int32
+SET     @InnerClassNonReadonly_InitOnlyId = 1
 
 SELECT
 	[e].[Id],
@@ -41,7 +41,7 @@ SELECT
 FROM
 	[TestConstantsData] [e]
 WHERE
-	[e].[Id] = @Id AND [e].[Id] = @InitOnlyId
+	[e].[Id] = @InnerClassNonReadonly_Id AND [e].[Id] = @InnerClassNonReadonly_InitOnlyId
 
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite

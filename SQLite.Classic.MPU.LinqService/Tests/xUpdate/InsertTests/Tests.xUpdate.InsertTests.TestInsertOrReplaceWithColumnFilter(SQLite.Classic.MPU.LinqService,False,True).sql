@@ -25,8 +25,8 @@ ON CONFLICT ([ID]) DO UPDATE SET
 
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @FirstName NVarChar(27) -- String
-SET     @FirstName = 'InsertOrReplaceColumnFilter'
+DECLARE @p_FirstName NVarChar(27) -- String
+SET     @p_FirstName = 'InsertOrReplaceColumnFilter'
 
 SELECT
 	[x].[ID],
@@ -36,7 +36,7 @@ SELECT
 FROM
 	[TestInsertOrReplaceTable] [x]
 WHERE
-	[x].[FirstName] = @FirstName
+	[x].[FirstName] = @p_FirstName
 LIMIT 1
 
 BeforeExecute
@@ -71,8 +71,8 @@ ON CONFLICT ([ID]) DO UPDATE SET
 
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @FirstName NVarChar(27) -- String
-SET     @FirstName = 'InsertOrReplaceColumnFilter'
+DECLARE @p_FirstName NVarChar(27) -- String
+SET     @p_FirstName = 'InsertOrReplaceColumnFilter'
 
 SELECT
 	[x].[ID],
@@ -82,6 +82,6 @@ SELECT
 FROM
 	[TestInsertOrReplaceTable] [x]
 WHERE
-	[x].[FirstName] = @FirstName
+	[x].[FirstName] = @p_FirstName
 LIMIT 1
 

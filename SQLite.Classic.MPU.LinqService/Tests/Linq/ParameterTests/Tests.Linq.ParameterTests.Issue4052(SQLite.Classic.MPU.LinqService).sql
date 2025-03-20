@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @ID  -- Int32
-SET     @ID = 1
+DECLARE @data_ID  -- Int32
+SET     @data_ID = 1
 
 SELECT
 	[c_1].[FirstName],
@@ -12,5 +12,5 @@ SELECT
 FROM
 	[Person] [c_1]
 WHERE
-	[c_1].[PersonID] = @ID AND (Lower(Trim([c_1].[MiddleName])) = '' AND [c_1].[MiddleName] IS NOT NULL OR [c_1].[MiddleName] IS NULL)
+	[c_1].[PersonID] = @data_ID AND (Lower(Trim([c_1].[MiddleName])) = '' AND [c_1].[MiddleName] IS NOT NULL OR [c_1].[MiddleName] IS NULL)
 

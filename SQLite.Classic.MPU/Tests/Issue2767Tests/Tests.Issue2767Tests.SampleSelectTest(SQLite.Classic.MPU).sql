@@ -4,12 +4,12 @@ BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 DECLARE @language NVarChar(2) -- String
 SET     @language = 'en'
-DECLARE @Exercise NVarChar(1) -- String
-SET     @Exercise = '1'
+DECLARE @OriginId_Exercise NVarChar(1) -- String
+SET     @OriginId_Exercise = '1'
 DECLARE @currentLanguage NVarChar(2) -- String
 SET     @currentLanguage = 'en'
-DECLARE @Equipment NVarChar(1) -- String
-SET     @Equipment = '2'
+DECLARE @OriginId_Equipment NVarChar(1) -- String
+SET     @OriginId_Equipment = '2'
 
 SELECT
 	[m_1].[Id],
@@ -31,12 +31,12 @@ FROM
 			[exercise_1].[id] as [Id]
 		FROM
 			[exercise] [exercise_1]
-				LEFT JOIN [ext_translations] [exerciseDescription] ON CAST([exercise_1].[id] AS NVarChar(11)) = [exerciseDescription].[foreign_key] AND [exerciseDescription].[locale] = @language AND [exerciseDescription].[object_class] = @Exercise AND [exerciseDescription].[field] = 'expl'
-				LEFT JOIN [ext_translations] [exerciseStartDescription] ON CAST([exercise_1].[id] AS NVarChar(11)) = [exerciseStartDescription].[foreign_key] AND [exerciseStartDescription].[locale] = @language AND [exerciseStartDescription].[object_class] = @Exercise AND [exerciseStartDescription].[field] = 'startexpl'
+				LEFT JOIN [ext_translations] [exerciseDescription] ON CAST([exercise_1].[id] AS NVarChar(11)) = [exerciseDescription].[foreign_key] AND [exerciseDescription].[locale] = @language AND [exerciseDescription].[object_class] = @OriginId_Exercise AND [exerciseDescription].[field] = 'expl'
+				LEFT JOIN [ext_translations] [exerciseStartDescription] ON CAST([exercise_1].[id] AS NVarChar(11)) = [exerciseStartDescription].[foreign_key] AND [exerciseStartDescription].[locale] = @language AND [exerciseStartDescription].[object_class] = @OriginId_Exercise AND [exerciseStartDescription].[field] = 'startexpl'
 	) [m_1]
 		INNER JOIN [exercise_equipment_linker] [d] ON [m_1].[Id] = [d].[exercise_id]
 		INNER JOIN [exercise_equipment] [equipment] ON [d].[equipment_id] = [equipment].[id]
-		LEFT JOIN [ext_translations] [description] ON CAST([equipment].[id] AS NVarChar(11)) = [description].[foreign_key] AND [description].[locale] = @currentLanguage AND [description].[object_class] = @Equipment AND [description].[field] = 'name'
+		LEFT JOIN [ext_translations] [description] ON CAST([equipment].[id] AS NVarChar(11)) = [description].[foreign_key] AND [description].[locale] = @currentLanguage AND [description].[object_class] = @OriginId_Equipment AND [description].[field] = 'name'
 
 BeforeExecute
 DisposeTransaction
@@ -44,8 +44,8 @@ BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 DECLARE @language NVarChar(2) -- String
 SET     @language = 'en'
-DECLARE @Exercise NVarChar(1) -- String
-SET     @Exercise = '1'
+DECLARE @OriginId_Exercise NVarChar(1) -- String
+SET     @OriginId_Exercise = '1'
 
 SELECT
 	[exercise_1].[id],
@@ -69,8 +69,8 @@ SELECT
 	END
 FROM
 	[exercise] [exercise_1]
-		LEFT JOIN [ext_translations] [exerciseDescription] ON CAST([exercise_1].[id] AS NVarChar(11)) = [exerciseDescription].[foreign_key] AND [exerciseDescription].[locale] = @language AND [exerciseDescription].[object_class] = @Exercise AND [exerciseDescription].[field] = 'expl'
-		LEFT JOIN [ext_translations] [exerciseStartDescription] ON CAST([exercise_1].[id] AS NVarChar(11)) = [exerciseStartDescription].[foreign_key] AND [exerciseStartDescription].[locale] = @language AND [exerciseStartDescription].[object_class] = @Exercise AND [exerciseStartDescription].[field] = 'startexpl'
+		LEFT JOIN [ext_translations] [exerciseDescription] ON CAST([exercise_1].[id] AS NVarChar(11)) = [exerciseDescription].[foreign_key] AND [exerciseDescription].[locale] = @language AND [exerciseDescription].[object_class] = @OriginId_Exercise AND [exerciseDescription].[field] = 'expl'
+		LEFT JOIN [ext_translations] [exerciseStartDescription] ON CAST([exercise_1].[id] AS NVarChar(11)) = [exerciseStartDescription].[foreign_key] AND [exerciseStartDescription].[locale] = @language AND [exerciseStartDescription].[object_class] = @OriginId_Exercise AND [exerciseStartDescription].[field] = 'startexpl'
 ORDER BY
 	[exercise_1].[timestamp] DESC,
 	[exercise_1].[id] DESC
