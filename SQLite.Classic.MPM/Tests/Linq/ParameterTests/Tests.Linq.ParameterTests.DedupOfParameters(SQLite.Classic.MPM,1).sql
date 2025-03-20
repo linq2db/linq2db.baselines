@@ -1,24 +1,24 @@
 ﻿BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-DECLARE @f1_Value  -- Boolean
-SET     @f1_Value = 1
-DECLARE @f2_Value  -- Boolean
-SET     @f2_Value = 0
-DECLARE @f3_Value  -- Boolean
-SET     @f3_Value = 1
-DECLARE @f4_Value  -- Boolean
-SET     @f4_Value = 0
-DECLARE @f5_Value  -- Boolean
-SET     @f5_Value = 0
+DECLARE @Value  -- Boolean
+SET     @Value = 1
+DECLARE @Value_1  -- Boolean
+SET     @Value_1 = 0
+DECLARE @Value_2  -- Boolean
+SET     @Value_2 = 1
+DECLARE @Value_3  -- Boolean
+SET     @Value_3 = 0
+DECLARE @Value_4  -- Boolean
+SET     @Value_4 = 0
 
 UPDATE
 	[IssueDedup]
 SET
-	[Value1] = @f1_Value,
-	[Value2] = @f2_Value,
-	[Value3] = @f3_Value,
-	[Value4] = @f4_Value,
-	[Value5] = @f5_Value
+	[Value1] = @Value,
+	[Value2] = @Value_1,
+	[Value3] = @Value_2,
+	[Value4] = @Value_3,
+	[Value5] = @Value_4
 
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
@@ -36,25 +36,25 @@ LIMIT 2
 
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-DECLARE @f1_Value  -- Boolean
-SET     @f1_Value = 1
-DECLARE @f2_Value  -- Boolean
-SET     @f2_Value = 0
-DECLARE @f3_Value  -- Boolean
-SET     @f3_Value = 0
-DECLARE @f4_Value  -- Boolean
-SET     @f4_Value = 1
-DECLARE @f5_Value  -- Boolean
-SET     @f5_Value = 0
+DECLARE @Value  -- Boolean
+SET     @Value = 1
+DECLARE @Value_1  -- Boolean
+SET     @Value_1 = 0
+DECLARE @Value_2  -- Boolean
+SET     @Value_2 = 0
+DECLARE @Value_3  -- Boolean
+SET     @Value_3 = 1
+DECLARE @Value_4  -- Boolean
+SET     @Value_4 = 0
 
 UPDATE
 	[IssueDedup]
 SET
-	[Value1] = @f1_Value,
-	[Value2] = @f2_Value,
-	[Value3] = @f3_Value,
-	[Value4] = @f4_Value,
-	[Value5] = @f5_Value
+	[Value1] = @Value,
+	[Value2] = @Value_1,
+	[Value3] = @Value_2,
+	[Value4] = @Value_3,
+	[Value5] = @Value_4
 
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
@@ -72,25 +72,25 @@ LIMIT 2
 
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-DECLARE @f1_Value  -- Boolean
-SET     @f1_Value = 0
-DECLARE @f2_Value  -- Boolean
-SET     @f2_Value = 1
-DECLARE @f3_Value  -- Boolean
-SET     @f3_Value = 0
-DECLARE @f4_Value  -- Boolean
-SET     @f4_Value = 1
-DECLARE @f5_Value  -- Boolean
-SET     @f5_Value = 0
+DECLARE @Value  -- Boolean
+SET     @Value = 0
+DECLARE @Value_1  -- Boolean
+SET     @Value_1 = 1
+DECLARE @Value_2  -- Boolean
+SET     @Value_2 = 0
+DECLARE @Value_3  -- Boolean
+SET     @Value_3 = 1
+DECLARE @Value_4  -- Boolean
+SET     @Value_4 = 0
 
 UPDATE
 	[IssueDedup]
 SET
-	[Value1] = @f1_Value,
-	[Value2] = @f2_Value,
-	[Value3] = @f3_Value,
-	[Value4] = @f4_Value,
-	[Value5] = @f5_Value
+	[Value1] = @Value,
+	[Value2] = @Value_1,
+	[Value3] = @Value_2,
+	[Value4] = @Value_3,
+	[Value5] = @Value_4
 
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
@@ -108,25 +108,25 @@ LIMIT 2
 
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-DECLARE @f1_Value  -- Boolean
-SET     @f1_Value = 1
-DECLARE @f2_Value  -- Boolean
-SET     @f2_Value = 1
-DECLARE @f3_Value  -- Boolean
-SET     @f3_Value = 0
-DECLARE @f4_Value  -- Boolean
-SET     @f4_Value = 1
-DECLARE @f5_Value  -- Boolean
-SET     @f5_Value = 1
+DECLARE @Value  -- Boolean
+SET     @Value = 1
+DECLARE @Value_1  -- Boolean
+SET     @Value_1 = 1
+DECLARE @Value_2  -- Boolean
+SET     @Value_2 = 0
+DECLARE @Value_3  -- Boolean
+SET     @Value_3 = 1
+DECLARE @Value_4  -- Boolean
+SET     @Value_4 = 1
 
 UPDATE
 	[IssueDedup]
 SET
-	[Value1] = @f1_Value,
-	[Value2] = @f2_Value,
-	[Value3] = @f3_Value,
-	[Value4] = @f4_Value,
-	[Value5] = @f5_Value
+	[Value1] = @Value,
+	[Value2] = @Value_1,
+	[Value3] = @Value_2,
+	[Value4] = @Value_3,
+	[Value5] = @Value_4
 
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite

@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @container_Value2 NVarChar(11) -- String
-SET     @container_Value2 = 'Hello World'
+DECLARE @Value2 NVarChar(11) -- String
+SET     @Value2 = 'Hello World'
 
 SELECT
 	[x].[Id],
@@ -9,5 +9,5 @@ SELECT
 FROM
 	[Issue2546Class] [x]
 WHERE
-	[x].[Value] = @container_Value2
+	[x].[Value] = @Value2
 

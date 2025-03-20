@@ -78,8 +78,8 @@ WHERE
 
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @t1_ID  -- Int32
-SET     @t1_ID = 1
+DECLARE @ID  -- Int32
+SET     @ID = 1
 
 SELECT
 	[r].[ID],
@@ -95,7 +95,7 @@ SELECT
 FROM
 	[LinqDataTypes] [r]
 WHERE
-	[r].[ID] = @t1_ID
+	[r].[ID] = @ID
 LIMIT 1
 
 BeforeExecute

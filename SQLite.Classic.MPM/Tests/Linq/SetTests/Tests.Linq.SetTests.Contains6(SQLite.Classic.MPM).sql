@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-DECLARE @CS8__locals1_n  -- Int32
-SET     @CS8__locals1_n = 1
+DECLARE @n  -- Int32
+SET     @n = 1
 
 SELECT
 	[p].[ParentID],
@@ -9,7 +9,7 @@ SELECT
 FROM
 	[Parent] [p]
 WHERE
-	[p].[ParentID] + @CS8__locals1_n IN (
+	[p].[ParentID] + @n IN (
 		SELECT
 			[c_1].[ParentID]
 		FROM

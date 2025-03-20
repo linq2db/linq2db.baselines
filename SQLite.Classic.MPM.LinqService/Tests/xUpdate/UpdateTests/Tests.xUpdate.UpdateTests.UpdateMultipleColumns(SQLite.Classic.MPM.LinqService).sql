@@ -2,10 +2,10 @@
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 DECLARE @ID  -- Int32
 SET     @ID = 1001
-DECLARE @ldt_MoneyValue Decimal(4, 0)
-SET     @ldt_MoneyValue = 1000
-DECLARE @ldt_SmallIntValue  -- Int16
-SET     @ldt_SmallIntValue = 100
+DECLARE @MoneyValue Decimal(4, 0)
+SET     @MoneyValue = 1000
+DECLARE @SmallIntValue  -- Int16
+SET     @SmallIntValue = 100
 
 INSERT INTO [LinqDataTypes]
 (
@@ -16,14 +16,14 @@ INSERT INTO [LinqDataTypes]
 VALUES
 (
 	@ID,
-	@ldt_MoneyValue,
-	@ldt_SmallIntValue
+	@MoneyValue,
+	@SmallIntValue
 )
 
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-DECLARE @ldt_ID  -- Int32
-SET     @ldt_ID = 1001
+DECLARE @ID  -- Int32
+SET     @ID = 1001
 
 UPDATE
 	[LinqDataTypes]
@@ -31,12 +31,12 @@ SET
 	[MoneyValue] = 2000,
 	[SmallIntValue] = 200
 WHERE
-	[LinqDataTypes].[ID] = @ldt_ID
+	[LinqDataTypes].[ID] = @ID
 
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-DECLARE @ldt_ID  -- Int32
-SET     @ldt_ID = 1001
+DECLARE @ID  -- Int32
+SET     @ID = 1001
 
 SELECT
 	[t].[ID],
@@ -50,6 +50,6 @@ SELECT
 FROM
 	[LinqDataTypes] [t]
 WHERE
-	[t].[ID] = @ldt_ID
+	[t].[ID] = @ID
 LIMIT 2
 

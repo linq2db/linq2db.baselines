@@ -1,9 +1,9 @@
 ﻿BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @innerClass_Id  -- Int32
-SET     @innerClass_Id = 1
-DECLARE @innerClass_InitOnlyId  -- Int32
-SET     @innerClass_InitOnlyId = 1
+DECLARE @Id  -- Int32
+SET     @Id = 1
+DECLARE @InitOnlyId  -- Int32
+SET     @InitOnlyId = 1
 
 SELECT
 	[e].[Id],
@@ -13,7 +13,7 @@ SELECT
 FROM
 	[TestConstantsData] [e]
 WHERE
-	[e].[Id] = @innerClass_Id AND [e].[Id] = @innerClass_InitOnlyId
+	[e].[Id] = @Id AND [e].[Id] = @InitOnlyId
 
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
@@ -28,10 +28,10 @@ FROM
 
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @innerClass_Id  -- Int32
-SET     @innerClass_Id = 1
-DECLARE @innerClass_InitOnlyId  -- Int32
-SET     @innerClass_InitOnlyId = 1
+DECLARE @Id  -- Int32
+SET     @Id = 1
+DECLARE @InitOnlyId  -- Int32
+SET     @InitOnlyId = 1
 
 SELECT
 	[e].[Id],
@@ -41,7 +41,7 @@ SELECT
 FROM
 	[TestConstantsData] [e]
 WHERE
-	[e].[Id] = @innerClass_Id AND [e].[Id] = @innerClass_InitOnlyId
+	[e].[Id] = @Id AND [e].[Id] = @InitOnlyId
 
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite

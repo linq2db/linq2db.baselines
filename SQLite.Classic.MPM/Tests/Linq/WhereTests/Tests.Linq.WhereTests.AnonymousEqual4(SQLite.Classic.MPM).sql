@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-DECLARE @parent_ParentID  -- Int32
-SET     @parent_ParentID = 2
+DECLARE @ParentID  -- Int32
+SET     @ParentID = 2
 
 SELECT
 	[p].[ParentID],
@@ -9,5 +9,5 @@ SELECT
 FROM
 	[Parent] [p]
 WHERE
-	[p].[ParentID] = @parent_ParentID AND [p].[Value1] IS NULL
+	[p].[ParentID] = @ParentID AND [p].[Value1] IS NULL
 
