@@ -32,8 +32,8 @@ WHERE
 
 BeforeExecute
 -- SQLite.MS SQLite
-DECLARE @ParentID  -- Int32
-SET     @ParentID = 1001
+DECLARE @parent_ParentID  -- Int32
+SET     @parent_ParentID = 1001
 
 SELECT
 	[p].[ParentID],
@@ -41,6 +41,6 @@ SELECT
 FROM
 	[Parent] [p]
 WHERE
-	[p].[ParentID] = @ParentID
+	[p].[ParentID] = @parent_ParentID
 LIMIT 2
 

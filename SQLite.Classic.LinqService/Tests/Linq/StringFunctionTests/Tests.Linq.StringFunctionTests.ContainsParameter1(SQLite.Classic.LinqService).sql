@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- SQLite.Classic SQLite
-DECLARE @str NVarChar(4) -- String
-SET     @str = '%oh%'
+DECLARE @CS8__locals1_str NVarChar(4) -- String
+SET     @CS8__locals1_str = '%oh%'
 
 SELECT
 	[p].[FirstName],
@@ -12,5 +12,6 @@ SELECT
 FROM
 	[Person] [p]
 WHERE
-	[p].[FirstName] LIKE @str ESCAPE '~' AND [p].[PersonID] = 1
+	[p].[FirstName] LIKE @CS8__locals1_str ESCAPE '~' AND
+	[p].[PersonID] = 1
 

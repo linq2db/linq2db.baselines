@@ -1,9 +1,9 @@
 ﻿BeforeExecute
 -- Northwind.SQLite SQLite.Classic SQLite
-DECLARE @City NVarChar(7) -- String
-SET     @City = 'Seattle'
-DECLARE @Region NVarChar(2) -- String
-SET     @Region = 'WA'
+DECLARE @cityRegion_City NVarChar(7) -- String
+SET     @cityRegion_City = 'Seattle'
+DECLARE @cityRegion_Region NVarChar(2) -- String
+SET     @cityRegion_Region = 'WA'
 
 SELECT
 	[o].[OrderID],
@@ -23,5 +23,5 @@ SELECT
 FROM
 	[Orders] [o]
 WHERE
-	[o].[ShipCity] = @City AND [o].[ShipRegion] = @Region
+	[o].[ShipCity] = @cityRegion_City AND [o].[ShipRegion] = @cityRegion_Region
 

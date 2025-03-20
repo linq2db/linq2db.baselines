@@ -10,15 +10,15 @@ LIMIT 1
 --  SQLite.MS SQLite (asynchronously)
 DECLARE @CompanyName NVarChar(13) -- String
 SET     @CompanyName = 'Rancho grande'
-DECLARE @CustomerId NVarChar(5) -- String
-SET     @CustomerId = 'RANCH'
+DECLARE @customer_CustomerId NVarChar(5) -- String
+SET     @customer_CustomerId = 'RANCH'
 
 UPDATE
 	[Customers]
 SET
 	[CompanyName] = @CompanyName
 WHERE
-	[Customers].[CustomerID] = @CustomerId
+	[Customers].[CustomerID] = @customer_CustomerId
 
 
 

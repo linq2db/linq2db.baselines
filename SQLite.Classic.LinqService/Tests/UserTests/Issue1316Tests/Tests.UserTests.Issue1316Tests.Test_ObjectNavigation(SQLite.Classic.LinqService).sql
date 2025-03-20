@@ -14,14 +14,14 @@ VALUES
 
 BeforeExecute
 -- SQLite.Classic SQLite
-DECLARE @Id  -- Int32
-SET     @Id = 5
+DECLARE @obj_Child_Id  -- Int32
+SET     @obj_Child_Id = 5
 
 SELECT
 	[t1].[ID]
 FROM
 	[Issue1316Tests] [t1]
 WHERE
-	[t1].[ID] = @Id
+	[t1].[ID] = @obj_Child_Id
 LIMIT 2
 
