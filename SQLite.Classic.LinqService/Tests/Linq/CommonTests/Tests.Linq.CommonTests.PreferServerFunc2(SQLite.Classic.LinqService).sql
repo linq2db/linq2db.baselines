@@ -1,10 +1,8 @@
 ﻿BeforeExecute
 -- SQLite.Classic SQLite
-DECLARE @Length  -- Int32
-SET     @Length = 0
 
 SELECT
-	Length([p].[FirstName]) + @Length
+	LENGTH([p].[FirstName]) + LENGTH('')
 FROM
 	[Person] [p]
 
