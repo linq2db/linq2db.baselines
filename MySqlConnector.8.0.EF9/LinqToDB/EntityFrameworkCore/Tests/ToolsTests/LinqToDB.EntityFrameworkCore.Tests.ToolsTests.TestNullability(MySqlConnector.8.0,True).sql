@@ -6,7 +6,7 @@ FROM `Employees` AS `e`
 WHERE ((@__ef_filter__p_0 OR NOT (`e`.`IsDeleted`)) OR NOT (`e`.`IsDeleted`)) AND (`e`.`EmployeeID` = @__test_0)
 
 
---  MySql.8.0.MySqlConnector MySql80
+-- MySql.8.0.MySqlConnector MySql80
 DECLARE @test Int32
 SET     @test = 1
 

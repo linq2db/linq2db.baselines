@@ -7,7 +7,7 @@ WHERE (@__ef_filter__p_0 OR NOT ("c"."IsDeleted")) OR NOT ("c"."IsDeleted")
 LIMIT 1
 
 
---  SQLite.MS SQLite (asynchronously)
+-- SQLite.MS SQLite (asynchronously)
 DECLARE @CompanyName NVarChar(19) -- String
 SET     @CompanyName = 'Alfreds Futterkiste'
 DECLARE @CustomerId NVarChar(5) -- String

@@ -1,4 +1,4 @@
-﻿--  SQLite.MS SQLite
+﻿-- SQLite.MS SQLite
 DECLARE @Id  -- Int64
 SET     @Id = 1
 DECLARE @PermanentId  -- Guid
@@ -29,13 +29,13 @@ VALUES
 
 
 
---  SQLite.MS SQLite
+-- SQLite.MS SQLite
 
 SELECT last_insert_rowid()
 
 
 
---  SQLite.MS SQLite
+-- SQLite.MS SQLite
 DECLARE @Id  -- Int64
 SET     @Id = 2
 DECLARE @PermanentId  -- Guid
@@ -66,13 +66,13 @@ VALUES
 
 
 
---  SQLite.MS SQLite
+-- SQLite.MS SQLite
 
 SELECT last_insert_rowid()
 
 
 
---  SQLite.MS SQLite
+-- SQLite.MS SQLite
 DECLARE @Id  -- Int64
 SET     @Id = 3
 DECLARE @PermanentId  -- Guid
@@ -103,7 +103,7 @@ VALUES
 
 
 
---  SQLite.MS SQLite
+-- SQLite.MS SQLite
 
 SELECT last_insert_rowid()
 
@@ -114,7 +114,7 @@ FROM "Subdivisions" AS "s"
 WHERE CAST("s"."Id" AS INTEGER) = 1
 
 
---  SQLite.MS SQLite
+-- SQLite.MS SQLite
 
 SELECT
 	[s].[Id],
@@ -129,7 +129,7 @@ WHERE
 
 
 
---  SQLite.MS SQLite
+-- SQLite.MS SQLite
 DECLARE @id  -- Int64
 SET     @id = 1
 
@@ -146,7 +146,7 @@ WHERE
 
 
 
---  SQLite.MS SQLite
+-- SQLite.MS SQLite
 
 SELECT
 	[s].[Id],
@@ -161,7 +161,7 @@ WHERE
 
 
 
---  SQLite.MS SQLite
+-- SQLite.MS SQLite
 
 SELECT
 	[t1].[Id],

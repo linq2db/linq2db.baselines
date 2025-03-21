@@ -1,33 +1,33 @@
 ﻿BeforeExecute
---  MariaDB.10.MySqlConnector MySql
+-- MariaDB.10.MySqlConnector MySql
 DECLARE @p Datetime -- DateTime
 SET     @p = '2012-12-12 12:12:12'
 
 SELECT Cast(@p as datetime)
 
 BeforeExecute
---  MariaDB.10.MySqlConnector MySql
+-- MariaDB.10.MySqlConnector MySql
 DECLARE @p Datetime -- DateTime
 SET     @p = '2012-12-12 12:12:12'
 
 SELECT Cast(@p as datetime)
 
 BeforeExecute
---  MariaDB.10.MySqlConnector MySql
+-- MariaDB.10.MySqlConnector MySql
 DECLARE @p Datetime -- DateTime
 SET     @p = '2012-12-12 12:12:12'
 
 SELECT Cast(@p as datetime)
 
 BeforeExecute
---  MariaDB.10.MySqlConnector MySql
+-- MariaDB.10.MySqlConnector MySql
 DECLARE @p Byte -- SByte
 SET     @p = 111
 
 SELECT ID FROM AllTypes WHERE tinyintDataType = @p
 
 BeforeExecute
---  MariaDB.10.MySqlConnector MySql
+-- MariaDB.10.MySqlConnector MySql
 
 SET GLOBAL local_infile=ON
 
@@ -35,7 +35,7 @@ BeforeExecute
 INSERT BULK `AllTypesNoYear`(bigintDataType, smallintDataType, tinyintDataType, mediumintDataType, intDataType, numericDataType, decimalDataType, doubleDataType, floatDataType, dateDataType, datetimeDataType, timestampDataType, timeDataType, charDataType, varcharDataType, textDataType, binaryDataType, varbinaryDataType, blobDataType, bitDataType, enumDataType, setDataType, intUnsignedDataType
 
 BeforeExecute
---  MariaDB.10.MySqlConnector MySql
+-- MariaDB.10.MySqlConnector MySql
 
 DELETE  
 FROM
@@ -47,7 +47,7 @@ BeforeExecute
 INSERT ASYNC BULK `AllTypesNoYear`(bigintDataType, smallintDataType, tinyintDataType, mediumintDataType, intDataType, numericDataType, decimalDataType, doubleDataType, floatDataType, dateDataType, datetimeDataType, timestampDataType, timeDataType, charDataType, varcharDataType, textDataType, binaryDataType, varbinaryDataType, blobDataType, bitDataType, enumDataType, setDataType, intUnsignedDataType
 
 BeforeExecute
---  MariaDB.10.MySqlConnector MySql (asynchronously)
+-- MariaDB.10.MySqlConnector MySql (asynchronously)
 
 DELETE  
 FROM
@@ -56,7 +56,7 @@ WHERE
 	`AllTypesNoYear`.`ID` >= 2000
 
 BeforeExecute
---  MariaDB.10.MySqlConnector MySql
+-- MariaDB.10.MySqlConnector MySql
 
 
 SELECT
@@ -68,7 +68,7 @@ SELECT
 	WHERE TABLE_SCHEMA = DATABASE()
 
 BeforeExecute
---  MariaDB.10.MySqlConnector MySql
+-- MariaDB.10.MySqlConnector MySql
 
 
 			SELECT
@@ -90,7 +90,7 @@ BeforeExecute
 					c.CONSTRAINT_SCHEMA = database()
 
 BeforeExecute
---  MariaDB.10.MySqlConnector MySql
+-- MariaDB.10.MySqlConnector MySql
 
 
 SELECT
@@ -110,7 +110,7 @@ SELECT
 	WHERE TABLE_SCHEMA = DATABASE()
 
 BeforeExecute
---  MariaDB.10.MySqlConnector MySql
+-- MariaDB.10.MySqlConnector MySql
 
 
 SELECT
@@ -132,24 +132,24 @@ SELECT
 		AND c.TABLE_SCHEMA   = DATABASE()
 
 BeforeExecute
---  MariaDB.10.MySqlConnector MySql
+-- MariaDB.10.MySqlConnector MySql
 
 SELECT ROUTINE_SCHEMA, ROUTINE_NAME, ROUTINE_TYPE, ROUTINE_DEFINITION, ROUTINE_COMMENT FROM INFORMATION_SCHEMA.routines WHERE ROUTINE_TYPE IN ('PROCEDURE', 'FUNCTION') AND ROUTINE_SCHEMA = database()
 
 BeforeExecute
---  MariaDB.10.MySqlConnector MySql
+-- MariaDB.10.MySqlConnector MySql
 
 SELECT SPECIFIC_SCHEMA, SPECIFIC_NAME, PARAMETER_MODE, ORDINAL_POSITION, PARAMETER_NAME, NUMERIC_PRECISION, NUMERIC_SCALE, DATA_TYPE, CHARACTER_MAXIMUM_LENGTH, DTD_IDENTIFIER FROM INFORMATION_SCHEMA.parameters WHERE SPECIFIC_SCHEMA = database()
 
 BeforeExecute
 BeginTransaction
 BeforeExecute
---  MariaDB.10.MySqlConnector MySql
+-- MariaDB.10.MySqlConnector MySql
 
 `testdata`.`AddIssue792Record`
 
 BeforeExecute
---  MariaDB.10.MySqlConnector MySql
+-- MariaDB.10.MySqlConnector MySql
 DECLARE @VarCharDefault VarChar(255) -- AnsiString
 SET     @VarCharDefault = NULL
 DECLARE @VarChar1 VarChar(1) -- AnsiString
@@ -254,7 +254,7 @@ SET     @GeometryCollection = NULL
 `testdata`.`Issue2313Parameters`
 
 BeforeExecute
---  MariaDB.10.MySqlConnector MySql
+-- MariaDB.10.MySqlConnector MySql
 DECLARE @VarCharDefault VarChar(4000) -- AnsiString
 SET     @VarCharDefault = NULL
 DECLARE @VarChar1 VarChar(1) -- AnsiString
@@ -359,7 +359,7 @@ SET     @Year = NULL
 `testdata`.`Issue2313Results`
 
 BeforeExecute
---  MariaDB.10.MySqlConnector MySql
+-- MariaDB.10.MySqlConnector MySql
 DECLARE @aInParam VarChar(256) -- AnsiString
 SET     @aInParam = NULL
 DECLARE @aOutParam Byte -- SByte
@@ -368,7 +368,7 @@ SET     @aOutParam = NULL
 `testdata`.`TestOutputParametersWithoutTableProcedure`
 
 BeforeExecute
---  MariaDB.10.MySqlConnector MySql
+-- MariaDB.10.MySqlConnector MySql
 DECLARE @param3 Int32
 SET     @param3 = NULL
 DECLARE @param2 Int32
@@ -379,7 +379,7 @@ SET     @param1 = NULL
 `testdata`.`TestProcedure`
 
 BeforeExecute
---  MariaDB.10.MySqlConnector MySql
+-- MariaDB.10.MySqlConnector MySql
 DECLARE @i Int32
 SET     @i = NULL
 

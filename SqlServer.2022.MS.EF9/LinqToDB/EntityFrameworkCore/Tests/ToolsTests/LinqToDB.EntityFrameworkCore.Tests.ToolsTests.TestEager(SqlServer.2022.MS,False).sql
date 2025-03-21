@@ -35,7 +35,7 @@ ORDER BY [o].[OrderID], [e0].[EmployeeID], [s].[EmployeeID], [s].[TerritoryID], 
 BeginTransactionAsync(RepeatableRead)
 
 
---  SqlServer.2022 (asynchronously)
+-- SqlServer.2022 (asynchronously)
 
 SELECT
 	[m_1].[EmployeeId],
@@ -59,7 +59,7 @@ FROM
 
 
 
---  SqlServer.2022 (asynchronously)
+-- SqlServer.2022 (asynchronously)
 
 SELECT
 	[m_1].[OrderId],
@@ -95,7 +95,7 @@ FROM
 DisposeTransactionAsync
 
 
---  SqlServer.2022 (asynchronously)
+-- SqlServer.2022 (asynchronously)
 
 SELECT
 	[a_Employee].[IsDeleted],

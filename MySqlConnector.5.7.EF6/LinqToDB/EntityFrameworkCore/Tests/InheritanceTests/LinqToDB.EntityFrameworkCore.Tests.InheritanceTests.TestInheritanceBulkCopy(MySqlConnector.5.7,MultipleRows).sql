@@ -1,4 +1,4 @@
-﻿--  MySql.5.7.MySqlConnector MySql57
+﻿-- MySql.5.7.MySqlConnector MySql57
 DECLARE @Id Int32
 SET     @Id = 0
 DECLARE @BlogType VarChar(9) -- String
@@ -21,7 +21,7 @@ VALUES
 
 
 
---  MySql.5.7.MySqlConnector MySql57
+-- MySql.5.7.MySqlConnector MySql57
 DECLARE @Id Int32
 SET     @Id = 0
 DECLARE @BlogType VarChar(8) -- String

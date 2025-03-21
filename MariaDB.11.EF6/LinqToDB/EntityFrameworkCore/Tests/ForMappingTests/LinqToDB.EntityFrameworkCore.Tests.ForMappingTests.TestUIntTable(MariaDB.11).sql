@@ -8,7 +8,7 @@ FROM `UIntTable`
 WHERE ROW_COUNT() = 1 AND `ID` = LAST_INSERT_ID();
 
 
---  MariaDB.10.MySqlConnector MySql (asynchronously)
+-- MariaDB.10.MySqlConnector MySql (asynchronously)
 DECLARE @field64 UInt64
 SET     @field64 = 5
 

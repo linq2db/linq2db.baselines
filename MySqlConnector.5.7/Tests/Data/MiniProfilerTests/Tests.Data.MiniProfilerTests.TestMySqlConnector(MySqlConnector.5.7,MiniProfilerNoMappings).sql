@@ -1,38 +1,38 @@
 ﻿BeforeExecute
---  MySql.5.7.MySqlConnector MySql57
+-- MySql.5.7.MySqlConnector MySql57
 DECLARE @p Datetime -- DateTime
 SET     @p = '2012-12-12 12:12:12'
 
 SELECT Cast(@p as datetime)
 
 BeforeExecute
---  MySql.5.7.MySqlConnector MySql57
+-- MySql.5.7.MySqlConnector MySql57
 DECLARE @p Datetime -- DateTime
 SET     @p = '2012-12-12 12:12:12'
 
 SELECT Cast(@p as datetime)
 
 BeforeExecute
---  MySql.5.7.MySqlConnector MySql57
+-- MySql.5.7.MySqlConnector MySql57
 DECLARE @p Datetime -- DateTime
 SET     @p = '2012-12-12 12:12:12'
 
 SELECT Cast(@p as datetime)
 
 BeforeExecute
---  MySql.5.7.MySqlConnector MySql57
+-- MySql.5.7.MySqlConnector MySql57
 DECLARE @p Byte -- SByte
 SET     @p = 111
 
 SELECT ID FROM AllTypes WHERE tinyintDataType = @p
 
 BeforeExecute
---  MySql.5.7.MySqlConnector MySql57
+-- MySql.5.7.MySqlConnector MySql57
 
 SET GLOBAL local_infile=ON
 
 BeforeExecute
---  MySql.5.7.MySqlConnector MySql57
+-- MySql.5.7.MySqlConnector MySql57
 
 INSERT INTO `AllTypesNoYear`
 (
@@ -1063,7 +1063,7 @@ VALUES
 (NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
 
 BeforeExecute
---  MySql.5.7.MySqlConnector MySql57
+-- MySql.5.7.MySqlConnector MySql57
 
 DELETE  
 FROM
@@ -1072,7 +1072,7 @@ WHERE
 	`AllTypesNoYear`.`ID` >= 2000
 
 BeforeExecute
---  MySql.5.7.MySqlConnector MySql57 (asynchronously)
+-- MySql.5.7.MySqlConnector MySql57 (asynchronously)
 
 INSERT INTO `AllTypesNoYear`
 (
@@ -2103,7 +2103,7 @@ VALUES
 (NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
 
 BeforeExecute
---  MySql.5.7.MySqlConnector MySql57 (asynchronously)
+-- MySql.5.7.MySqlConnector MySql57 (asynchronously)
 
 DELETE  
 FROM
@@ -2112,7 +2112,7 @@ WHERE
 	`AllTypesNoYear`.`ID` >= 2000
 
 BeforeExecute
---  MySql.5.7.MySqlConnector MySql57
+-- MySql.5.7.MySqlConnector MySql57
 
 
 SELECT
@@ -2124,7 +2124,7 @@ SELECT
 	WHERE TABLE_SCHEMA = DATABASE()
 
 BeforeExecute
---  MySql.5.7.MySqlConnector MySql57
+-- MySql.5.7.MySqlConnector MySql57
 
 
 			SELECT
@@ -2146,7 +2146,7 @@ BeforeExecute
 					c.CONSTRAINT_SCHEMA = database()
 
 BeforeExecute
---  MySql.5.7.MySqlConnector MySql57
+-- MySql.5.7.MySqlConnector MySql57
 
 
 SELECT
@@ -2166,7 +2166,7 @@ SELECT
 	WHERE TABLE_SCHEMA = DATABASE()
 
 BeforeExecute
---  MySql.5.7.MySqlConnector MySql57
+-- MySql.5.7.MySqlConnector MySql57
 
 
 SELECT
@@ -2188,24 +2188,24 @@ SELECT
 		AND c.TABLE_SCHEMA   = DATABASE()
 
 BeforeExecute
---  MySql.5.7.MySqlConnector MySql57
+-- MySql.5.7.MySqlConnector MySql57
 
 SELECT ROUTINE_SCHEMA, ROUTINE_NAME, ROUTINE_TYPE, ROUTINE_DEFINITION, ROUTINE_COMMENT FROM INFORMATION_SCHEMA.routines WHERE ROUTINE_TYPE IN ('PROCEDURE', 'FUNCTION') AND ROUTINE_SCHEMA = database()
 
 BeforeExecute
---  MySql.5.7.MySqlConnector MySql57
+-- MySql.5.7.MySqlConnector MySql57
 
 SELECT SPECIFIC_SCHEMA, SPECIFIC_NAME, PARAMETER_MODE, ORDINAL_POSITION, PARAMETER_NAME, NUMERIC_PRECISION, NUMERIC_SCALE, DATA_TYPE, CHARACTER_MAXIMUM_LENGTH, DTD_IDENTIFIER FROM INFORMATION_SCHEMA.parameters WHERE SPECIFIC_SCHEMA = database()
 
 BeforeExecute
 BeginTransaction
 BeforeExecute
---  MySql.5.7.MySqlConnector MySql57
+-- MySql.5.7.MySqlConnector MySql57
 
 `testdataconnector`.`AddIssue792Record`
 
 BeforeExecute
---  MySql.5.7.MySqlConnector MySql57
+-- MySql.5.7.MySqlConnector MySql57
 DECLARE @VarCharDefault VarChar(255) -- AnsiString
 SET     @VarCharDefault = NULL
 DECLARE @VarChar1 VarChar(1) -- AnsiString
@@ -2310,7 +2310,7 @@ SET     @GeometryCollection = NULL
 `testdataconnector`.`Issue2313Parameters`
 
 BeforeExecute
---  MySql.5.7.MySqlConnector MySql57
+-- MySql.5.7.MySqlConnector MySql57
 DECLARE @VarCharDefault VarChar(4000) -- AnsiString
 SET     @VarCharDefault = NULL
 DECLARE @VarChar1 VarChar(1) -- AnsiString
@@ -2415,7 +2415,7 @@ SET     @Year = NULL
 `testdataconnector`.`Issue2313Results`
 
 BeforeExecute
---  MySql.5.7.MySqlConnector MySql57
+-- MySql.5.7.MySqlConnector MySql57
 DECLARE @aInParam VarChar(256) -- AnsiString
 SET     @aInParam = NULL
 DECLARE @aOutParam Byte -- SByte
@@ -2424,7 +2424,7 @@ SET     @aOutParam = NULL
 `testdataconnector`.`TestOutputParametersWithoutTableProcedure`
 
 BeforeExecute
---  MySql.5.7.MySqlConnector MySql57
+-- MySql.5.7.MySqlConnector MySql57
 DECLARE @param3 Int32
 SET     @param3 = NULL
 DECLARE @param2 Int32
