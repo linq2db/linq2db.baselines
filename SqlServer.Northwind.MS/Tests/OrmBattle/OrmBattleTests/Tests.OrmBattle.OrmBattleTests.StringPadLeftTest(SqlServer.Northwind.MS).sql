@@ -16,5 +16,5 @@ SELECT TOP (1)
 FROM
 	[Customers] [c_1]
 WHERE
-	N'123' + IIF(LEN([c_1].[City]) < 8 OR [c_1].[City] IS NULL, REPLICATE(N' ', 8 - LEN([c_1].[City])) + [c_1].[City], [c_1].[City]) = N'123 Seattle'
+	N'123' + IIF(LEN([c_1].[City] + N'.') - 1 < 8 OR [c_1].[City] IS NULL, REPLICATE(N' ', 8 - (LEN([c_1].[City] + N'.') - 1)) + [c_1].[City], [c_1].[City]) = N'123 Seattle'
 
