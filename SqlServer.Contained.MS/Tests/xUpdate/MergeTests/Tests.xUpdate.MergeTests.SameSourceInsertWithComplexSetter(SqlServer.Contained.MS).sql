@@ -255,7 +255,7 @@ VALUES
 (
 	10 + [Source].[source_Id],
 	123,
-	Len(@name) + @idx,
+	LEN(@name + N'.') - 1 + @idx,
 	[Source].[source_Field2],
 	999,
 	888
