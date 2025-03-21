@@ -220,8 +220,8 @@ VALUES
 
 BeforeExecute
 -- PostgreSQL.17 PostgreSQL.15 PostgreSQL
-DECLARE @name Integer -- Int32
-SET     @name = 4
+DECLARE @name Text(4) -- String
+SET     @name = 'test'
 DECLARE @idx Integer -- Int32
 SET     @idx = 6
 
@@ -253,7 +253,7 @@ VALUES
 (
 	10 + "Source"."source_Id",
 	123,
-	:name + :idx,
+	LENGTH(:name) + :idx,
 	"Source"."source_Field2",
 	999,
 	888

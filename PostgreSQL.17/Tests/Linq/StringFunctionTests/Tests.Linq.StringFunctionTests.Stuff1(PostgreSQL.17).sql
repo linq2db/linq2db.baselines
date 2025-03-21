@@ -10,6 +10,6 @@ SELECT
 FROM
 	"Person" p
 WHERE
-	Substring(p."FirstName", 1, 2) || '123' || Substring(p."FirstName", Length(p."FirstName") - (Length(p."FirstName") - 3) + 1, Length(p."FirstName") - 3) = 'Jo123n' AND
+	Substring(p."FirstName", 1, 2) || '123' || Substring(p."FirstName", LENGTH(p."FirstName") - (LENGTH(p."FirstName") - 3) + 1, LENGTH(p."FirstName") - 3) = 'Jo123n' AND
 	p."PersonID" = 1
 
