@@ -253,7 +253,7 @@ VALUES
 (
 	10 + "Source"."source_Id",
 	123,
-	Char_Length(CAST(@name AS VARCHAR(4))) + CAST(@idx AS Int),
+	CHAR_LENGTH(CAST(@name AS VARCHAR(4))) + CAST(@idx AS Int),
 	"Source"."source_Field2",
 	999,
 	888
