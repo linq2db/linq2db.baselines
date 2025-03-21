@@ -8,7 +8,7 @@ FROM
 	(
 		SELECT
 			CASE
-				WHEN LEN([p].[FirstName]) < [p].[PersonID] THEN REPLICATE(N'.', [p].[PersonID] - LEN([p].[FirstName])) + [p].[FirstName]
+				WHEN LEN([p].[FirstName] + N'.') - 1 < [p].[PersonID] THEN REPLICATE(N'.', [p].[PersonID] - (LEN([p].[FirstName] + N'.') - 1)) + [p].[FirstName]
 				ELSE [p].[FirstName]
 			END as [FirstName],
 			[p].[PersonID] as [ID]

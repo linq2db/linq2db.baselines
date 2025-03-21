@@ -3,7 +3,7 @@
 
 SELECT
 	CASE
-		WHEN LEN(N'test') < 0 THEN REPLICATE(N'.', 0 - LEN(N'test')) + N'test'
+		WHEN LEN(N'test.') < 1 THEN REPLICATE(N'.', 0 - (LEN(N'test.') - 1)) + N'test'
 		ELSE N'test'
 	END
 
@@ -12,7 +12,7 @@ BeforeExecute
 
 SELECT
 	CASE
-		WHEN LEN(N'test') < 3 THEN REPLICATE(N'.', 3 - LEN(N'test')) + N'test'
+		WHEN LEN(N'test.') < 4 THEN REPLICATE(N'.', 3 - (LEN(N'test.') - 1)) + N'test'
 		ELSE N'test'
 	END
 
@@ -21,7 +21,7 @@ BeforeExecute
 
 SELECT
 	CASE
-		WHEN LEN(N'test') < 4 THEN REPLICATE(N'.', 4 - LEN(N'test')) + N'test'
+		WHEN LEN(N'test.') < 5 THEN REPLICATE(N'.', 4 - (LEN(N'test.') - 1)) + N'test'
 		ELSE N'test'
 	END
 
@@ -30,7 +30,7 @@ BeforeExecute
 
 SELECT
 	CASE
-		WHEN LEN(N'test') < 5 THEN REPLICATE(N'.', 5 - LEN(N'test')) + N'test'
+		WHEN LEN(N'test.') < 6 THEN REPLICATE(N'.', 5 - (LEN(N'test.') - 1)) + N'test'
 		ELSE N'test'
 	END
 
@@ -39,7 +39,7 @@ BeforeExecute
 
 SELECT
 	CASE
-		WHEN LEN(N'test') < 6 THEN REPLICATE(N' ', 6 - LEN(N'test')) + N'test'
+		WHEN LEN(N'test.') < 7 THEN REPLICATE(N' ', 6 - (LEN(N'test.') - 1)) + N'test'
 		ELSE N'test'
 	END
 
@@ -48,7 +48,7 @@ BeforeExecute
 
 SELECT
 	CASE
-		WHEN LEN(N'test') < 6 THEN REPLICATE(N' ', 6 - LEN(N'test')) + N'test'
+		WHEN LEN(N'test.') < 7 THEN REPLICATE(N' ', 6 - (LEN(N'test.') - 1)) + N'test'
 		ELSE N'test'
 	END
 
@@ -57,7 +57,7 @@ BeforeExecute
 
 SELECT
 	CASE
-		WHEN LEN(N'test') < 16 THEN REPLICATE(N'.', 16 - LEN(N'test')) + N'test'
+		WHEN LEN(N'test.') < 17 THEN REPLICATE(N'.', 16 - (LEN(N'test.') - 1)) + N'test'
 		ELSE N'test'
 	END
 
