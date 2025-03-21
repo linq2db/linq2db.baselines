@@ -34,7 +34,7 @@ SET     @idx = 4
 UPDATE
 	[Person] [t1]
 SET
-	[t1].[LastName] = CStr(Len(@name) + @idx)
+	[t1].[LastName] = CStr(LEN(@name) + @idx)
 WHERE
 	[t1].[FirstName] LIKE 'Update14%'
 
