@@ -2,7 +2,7 @@
 -- SqlServer.2012.MS SqlServer.2012
 
 SELECT
-	Len([p].[FirstName])
+	LEN([p].[FirstName] + N'.') - 1
 FROM
 	[Person] [p]
 
