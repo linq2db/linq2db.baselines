@@ -80,7 +80,7 @@ FROM
 			"Stone" "sG"
 		WHERE
 			"sG"."Enabled" = True AND "sG"."Name" NOT LIKE 'level - %' ESCAPE '~' AND
-			Length("sG"."ImageFullUrl") > 0
+			LENGTH("sG"."ImageFullUrl") > 0
 		GROUP BY
 			"sG"."Name"
 	) "sG_1"
@@ -95,7 +95,7 @@ FROM
 			WHERE
 				s."Enabled" = True AND
 				s."Name" NOT LIKE 'level - %' ESCAPE '~' AND
-				Length(s."ImageFullUrl") > 0 AND
+				LENGTH(s."ImageFullUrl") > 0 AND
 				"sG_1"."Name" = s."Name"
 			LIMIT 1
 		) t1 ON 1=1

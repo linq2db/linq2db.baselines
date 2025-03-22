@@ -10,6 +10,9 @@ SELECT
 FROM
 	Person p
 WHERE
-	concat('123', leftPadUTF8(p.FirstName, toUInt32(6), '*')) = '123**John' AND
+	concat('123', CASE
+		WHEN LENGTH(p.FirstName) < 6 THEN LPAD(p.FirstName, 6, '*')
+		ELSE p.FirstName
+	END) = '123**John' AND
 	p.PersonID = 1
 

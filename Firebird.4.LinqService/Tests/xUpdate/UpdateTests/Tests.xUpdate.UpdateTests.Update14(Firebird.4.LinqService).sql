@@ -34,7 +34,7 @@ SET     @idx = 4
 UPDATE
 	"Person" "t1"
 SET
-	"LastName" = Char_Length(CAST(@name AS VARCHAR(8))) + CAST(@idx AS Int)
+	"LastName" = CHAR_LENGTH(CAST(@name AS VARCHAR(8))) + CAST(@idx AS Int)
 WHERE
 	"t1"."FirstName" STARTING WITH 'Update14'
 

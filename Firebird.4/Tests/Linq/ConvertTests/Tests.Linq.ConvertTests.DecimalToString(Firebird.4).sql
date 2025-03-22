@@ -6,5 +6,5 @@ SELECT
 FROM
 	"LinqDataTypes" "p"
 WHERE
-	Char_Length("p"."MoneyValue") > 0
+	CHAR_LENGTH("p"."MoneyValue") > 0
 

@@ -2,7 +2,7 @@
 -- SQLite.MS SQLite
 
 SELECT
-	Length([p].[FirstName])
+	LENGTH([p].[FirstName])
 FROM
 	[Person] [p]
 

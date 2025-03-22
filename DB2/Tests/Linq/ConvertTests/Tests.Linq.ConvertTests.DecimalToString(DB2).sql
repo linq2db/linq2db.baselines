@@ -6,5 +6,5 @@ SELECT
 FROM
 	"LinqDataTypes" "p"
 WHERE
-	CHARACTER_LENGTH(Strip(RTrim(Char("p"."MoneyValue")), L, '0'),CODEUNITS32) > 0
+	CHAR_LENGTH(Strip(RTrim(Char("p"."MoneyValue")), L, '0')) > 0
 

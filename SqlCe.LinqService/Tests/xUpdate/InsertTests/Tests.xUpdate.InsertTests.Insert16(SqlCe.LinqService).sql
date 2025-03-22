@@ -22,7 +22,7 @@ INSERT INTO [Person]
 VALUES
 (
 	'Insert16',
-	CAST(Len(@name) + @idx AS NVarChar(11)),
+	CAST(LEN(@name + '.') - 1 + @idx AS NVarChar(11)),
 	'M'
 )
 
