@@ -2,6 +2,8 @@
 -- PostgreSQL.15 PostgreSQL
 DECLARE @personId Integer -- Int32
 SET     @personId = 1
+DECLARE @personId_1 Integer -- Int32
+SET     @personId_1 = 1
 
 SELECT
 	p."FirstName",
@@ -18,7 +20,7 @@ FROM
 	"Person" p
 WHERE
 	p."PersonID" = :personId AND p."PersonID" = :personId AND
-	p."PersonID" = :personId
+	p."PersonID" = :personId_1
 
 BeforeExecute
 -- PostgreSQL.15 PostgreSQL
