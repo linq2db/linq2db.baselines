@@ -8,7 +8,11 @@ FROM
 	(
 		SELECT
 			CASE
-				WHEN LEN([p].[FirstName]) < [p].[PersonID] THEN LPAD([p].[FirstName], [p].[PersonID], '.')
+				WHEN CASE
+					WHEN '' = [p].[FirstName] THEN 0
+					ELSE CHAR_LENGTH([p].[FirstName])
+				END < [p].[PersonID]
+					THEN LPAD([p].[FirstName], [p].[PersonID], '.')
 				ELSE [p].[FirstName]
 			END as [FirstName],
 			[p].[PersonID] as [ID]

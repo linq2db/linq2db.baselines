@@ -6,7 +6,7 @@ SELECT
 FROM
 	[Person] [nm]
 WHERE
-	Len([nm].[FirstName]) <> 0
+	NOT ('' = [nm].[FirstName] OR CHAR_LENGTH([nm].[FirstName]) = 0 AND '' <> [nm].[FirstName])
 
 BeforeExecute
 -- Sybase.Managed Sybase

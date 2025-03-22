@@ -6,7 +6,7 @@ SELECT
 FROM
 	[Person] [nm]
 WHERE
-	NOT ([nm].[MiddleName] IS NULL OR Len([nm].[MiddleName]) = 0)
+	NOT ([nm].[MiddleName] IS NULL OR '' = [nm].[MiddleName] OR CHAR_LENGTH([nm].[MiddleName]) = 0 AND ('' <> [nm].[MiddleName] OR [nm].[MiddleName] IS NULL))
 
 BeforeExecute
 -- Sybase.Managed Sybase
