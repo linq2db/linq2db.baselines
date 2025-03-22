@@ -2,5 +2,6 @@
 -- ClickHouse.Client ClickHouse
 
 SELECT
-	1
+	'abc ',
+	CHAR_LENGTH('abc ')
 
