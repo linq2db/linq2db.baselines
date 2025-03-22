@@ -6,5 +6,5 @@ SELECT
 FROM
 	"LinqDataTypes" "p"
 WHERE
-	CHARACTER_LENGTH(RTrim(Char(CAST("p".ID AS SmallInt))),CODEUNITS32) > 0
+	CHAR_LENGTH(RTrim(Char(CAST("p".ID AS SmallInt)))) > 0
 
