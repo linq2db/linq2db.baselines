@@ -26,7 +26,7 @@ FROM
 BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57 (asynchronously)
 
-DROP TABLE IF EXISTS `TempTable`
+DROP TEMPORARY TABLE IF EXISTS `TempTable`
 
 BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57

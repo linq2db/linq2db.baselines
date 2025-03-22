@@ -24,13 +24,13 @@ CREATE TEMPORARY TABLE `NoIdentity`
 
 --  MariaDB.10.MySqlConnector MySql
 
-DROP TABLE IF EXISTS `NoIdentity`
+DROP TEMPORARY TABLE IF EXISTS `NoIdentity`
 
 
 
 --  MariaDB.10.MySqlConnector MySql
 
-DROP TABLE IF EXISTS `WithIdentity`
+DROP TEMPORARY TABLE IF EXISTS `WithIdentity`
 
 
 

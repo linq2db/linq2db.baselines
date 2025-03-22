@@ -21,5 +21,5 @@ VALUES
 BeforeExecute
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql
 
-DROP TABLE IF EXISTS `TableWithPrimaryKey2`
+DROP TEMPORARY TABLE IF EXISTS `TableWithPrimaryKey2`
 

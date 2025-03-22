@@ -24,13 +24,13 @@ CREATE TEMPORARY TABLE `NoIdentity`
 
 --  MySql.5.7.MySqlConnector MySql57
 
-DROP TABLE IF EXISTS `NoIdentity`
+DROP TEMPORARY TABLE IF EXISTS `NoIdentity`
 
 
 
 --  MySql.5.7.MySqlConnector MySql57
 
-DROP TABLE IF EXISTS `WithIdentity`
+DROP TEMPORARY TABLE IF EXISTS `WithIdentity`
 
 
 

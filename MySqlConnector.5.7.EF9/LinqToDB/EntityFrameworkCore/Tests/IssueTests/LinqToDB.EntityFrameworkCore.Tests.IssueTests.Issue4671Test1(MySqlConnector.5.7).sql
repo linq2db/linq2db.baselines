@@ -60,7 +60,7 @@ LIMIT 2
 
 --  MySql.5.7.MySqlConnector MySql57
 
-DROP TABLE IF EXISTS `Issue4671Entity1TMP`
+DROP TEMPORARY TABLE IF EXISTS `Issue4671Entity1TMP`
 
 
 
