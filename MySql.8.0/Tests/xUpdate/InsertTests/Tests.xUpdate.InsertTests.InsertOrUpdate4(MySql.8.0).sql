@@ -51,10 +51,10 @@ INSERT INTO `Patient`
 VALUES
 (
 	@id,
-	CAST(Char_Length(@diagnosis) + @i AS CHAR(11))
+	CAST(CHAR_LENGTH(@diagnosis) + @i AS CHAR(11))
 )
 ON DUPLICATE KEY UPDATE
-	`Diagnosis` = CAST(Char_Length(`Diagnosis`) + @i AS CHAR(255))
+	`Diagnosis` = CAST(CHAR_LENGTH(`Diagnosis`) + @i AS CHAR(255))
 
 BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
@@ -73,10 +73,10 @@ INSERT INTO `Patient`
 VALUES
 (
 	@id,
-	CAST(Char_Length(@diagnosis) + @i AS CHAR(11))
+	CAST(CHAR_LENGTH(@diagnosis) + @i AS CHAR(11))
 )
 ON DUPLICATE KEY UPDATE
-	`Diagnosis` = CAST(Char_Length(`Diagnosis`) + @i AS CHAR(255))
+	`Diagnosis` = CAST(CHAR_LENGTH(`Diagnosis`) + @i AS CHAR(255))
 
 BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
@@ -95,10 +95,10 @@ INSERT INTO `Patient`
 VALUES
 (
 	@id,
-	CAST(Char_Length(@diagnosis) + @i AS CHAR(11))
+	CAST(CHAR_LENGTH(@diagnosis) + @i AS CHAR(11))
 )
 ON DUPLICATE KEY UPDATE
-	`Diagnosis` = CAST(Char_Length(`Diagnosis`) + @i AS CHAR(255))
+	`Diagnosis` = CAST(CHAR_LENGTH(`Diagnosis`) + @i AS CHAR(255))
 
 BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
