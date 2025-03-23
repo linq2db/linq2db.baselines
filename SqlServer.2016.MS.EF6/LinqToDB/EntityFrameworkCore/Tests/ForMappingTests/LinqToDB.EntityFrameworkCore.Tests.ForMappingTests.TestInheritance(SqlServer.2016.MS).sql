@@ -19,7 +19,7 @@ SELECT [i].[Id] FROM @inserted0 i
 ORDER BY [i].[_Position];
 
 
---  SqlServer.2016
+-- SqlServer.2016
 
 SELECT
 	[t1].[Discriminator],

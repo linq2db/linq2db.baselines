@@ -25,7 +25,7 @@ ORDER BY [o].[OrderID], [s].[OrderID], [s].[ProductID], [s].[ProductID0], [s].[O
 BeginTransactionAsync(RepeatableRead)
 
 
---  SqlServer.2016 (asynchronously)
+-- SqlServer.2016 (asynchronously)
 
 SELECT
 	[m_1].[ProductId],
@@ -55,7 +55,7 @@ FROM
 
 
 
---  SqlServer.2016 (asynchronously)
+-- SqlServer.2016 (asynchronously)
 
 SELECT
 	[m_1].[OrderID],
@@ -86,7 +86,7 @@ FROM
 DisposeTransactionAsync
 
 
---  SqlServer.2016 (asynchronously)
+-- SqlServer.2016 (asynchronously)
 
 SELECT
 	[e].[IsDeleted],
