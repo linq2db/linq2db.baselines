@@ -32,7 +32,7 @@ FROM `WithInheritance`
 WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
 
 
---  MariaDB.10.MySqlConnector MySql
+-- MariaDB.10.MySqlConnector MySql
 
 SELECT
 	`t1`.`Discriminator`,

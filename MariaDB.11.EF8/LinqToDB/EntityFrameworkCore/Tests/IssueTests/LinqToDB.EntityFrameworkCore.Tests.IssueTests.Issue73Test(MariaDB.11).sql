@@ -4,7 +4,7 @@ LEFT JOIN `Issue73Entities` AS `i0` ON `i`.`ParentId` = `i0`.`Id`
 WHERE `i`.`Name` = 'Name1_3'
 
 
---  MariaDB.10.MySqlConnector MySql
+-- MariaDB.10.MySqlConnector MySql
 
 SELECT
 	Concat(`a_Parent`.`Name`, '>', `x`.`Name`)
