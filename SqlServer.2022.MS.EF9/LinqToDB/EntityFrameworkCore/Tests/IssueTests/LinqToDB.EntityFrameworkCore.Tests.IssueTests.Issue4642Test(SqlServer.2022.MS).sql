@@ -1,4 +1,4 @@
-﻿--  SqlServer.2022 (asynchronously)
+﻿-- SqlServer.2022 (asynchronously)
 DECLARE @systemId VarChar(20) -- AnsiString
 SET     @systemId = N'system'
 
