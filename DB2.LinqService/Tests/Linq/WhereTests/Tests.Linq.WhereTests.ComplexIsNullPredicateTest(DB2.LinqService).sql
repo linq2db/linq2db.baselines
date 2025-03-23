@@ -14,7 +14,8 @@ WHERE
 		WHEN "r"."Value" = '1' OR "r"."Value" = 'test' AND ("r"."Value" <> '1' OR "r"."Value" IS NULL)
 			THEN 1
 		ELSE 0
-	END
+	END OR
+	("r"."Value" = '123') IS NULL AND ("r"."Value" = '1' OR "r"."Value" = 'test' AND ("r"."Value" <> '1' OR "r"."Value" IS NULL)) IS NULL
 ORDER BY
 	"r"."Id"
 

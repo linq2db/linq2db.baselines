@@ -8,7 +8,7 @@ SELECT
 FROM
 	"Child" "t"
 		LEFT JOIN "Parent" "a_Parent" ON "t"."ParentID" = "a_Parent"."ParentID"
-		INNER JOIN "GrandChild" "a_GrandChildren" ON "a_Parent"."ParentID" = "a_GrandChildren"."ParentID"
+		INNER JOIN "GrandChild" "a_GrandChildren" ON "a_Parent"."ParentID" IS NOT NULL AND ("a_Parent"."ParentID" = "a_GrandChildren"."ParentID" OR "a_Parent"."ParentID" IS NULL AND "a_GrandChildren"."ParentID" IS NULL)
 WHERE
 	"a_GrandChildren"."ParentID" = 1
 
