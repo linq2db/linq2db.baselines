@@ -1,4 +1,4 @@
-﻿--  SQLite.MS SQLite
+﻿-- SQLite.MS SQLite
 DECLARE @BlogType NVarChar(9) -- String
 SET     @BlogType = 'blog_base'
 DECLARE @Url NVarChar(7) -- String
@@ -17,7 +17,7 @@ VALUES
 
 
 
---  SQLite.MS SQLite
+-- SQLite.MS SQLite
 DECLARE @BlogType NVarChar(8) -- String
 SET     @BlogType = 'blog_rss'
 DECLARE @Url NVarChar(6) -- String

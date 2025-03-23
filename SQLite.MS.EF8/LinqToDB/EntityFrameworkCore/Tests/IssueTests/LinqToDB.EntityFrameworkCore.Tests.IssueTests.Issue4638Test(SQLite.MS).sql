@@ -1,7 +1,7 @@
 ﻿BeginTransaction(Serializable)
 
 
---  SQLite.MS SQLite
+-- SQLite.MS SQLite
 
 SELECT
 	[m_1].[Key_1],
@@ -23,7 +23,7 @@ ORDER BY
 
 
 
---  SQLite.MS SQLite
+-- SQLite.MS SQLite
 
 SELECT
 	[p].[AclNameId]
