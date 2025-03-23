@@ -4,7 +4,7 @@ LEFT JOIN `Issue73Entities` AS `i0` ON `i`.`ParentId` = `i0`.`Id`
 WHERE `i`.`Name` = 'Name1_3'
 
 
---  MySql.8.0.MySqlConnector MySql80
+-- MySql.8.0.MySqlConnector MySql80
 
 SELECT
 	Concat(`a_Parent`.`Name`, '>', `x`.`Name`)

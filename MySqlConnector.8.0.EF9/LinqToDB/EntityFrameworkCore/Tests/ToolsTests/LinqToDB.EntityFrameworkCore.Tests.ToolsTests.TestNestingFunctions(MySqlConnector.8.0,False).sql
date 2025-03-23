@@ -18,7 +18,7 @@ WHERE (((@__ef_filter__p_0 OR NOT (`p`.`IsDeleted`)) OR NOT (`p`.`IsDeleted`)) A
 ORDER BY `p`.`ProductID`
 
 
---  MySql.8.0.MySqlConnector MySql80
+-- MySql.8.0.MySqlConnector MySql80
 
 SELECT
 	`e`.`IsDeleted`,
