@@ -1,4 +1,4 @@
-﻿--  MySql.5.7.MySqlConnector MySql57 (asynchronously)
+﻿-- MySql.5.7.MySqlConnector MySql57 (asynchronously)
 DECLARE @test Int32
 SET     @test = 1
 

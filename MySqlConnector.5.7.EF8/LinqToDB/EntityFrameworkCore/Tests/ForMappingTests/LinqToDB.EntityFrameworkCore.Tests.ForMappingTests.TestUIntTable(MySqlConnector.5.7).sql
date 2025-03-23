@@ -8,7 +8,7 @@ FROM `UIntTable`
 WHERE ROW_COUNT() = 1 AND `ID` = LAST_INSERT_ID();
 
 
---  MySql.5.7.MySqlConnector MySql57 (asynchronously)
+-- MySql.5.7.MySqlConnector MySql57 (asynchronously)
 DECLARE @field64 UInt64
 SET     @field64 = 5
 
