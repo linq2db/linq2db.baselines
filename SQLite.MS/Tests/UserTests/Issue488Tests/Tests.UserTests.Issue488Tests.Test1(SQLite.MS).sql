@@ -1,4 +1,20 @@
 ﻿BeforeExecute
+--  TestNoopProvider TestNoop (asynchronously)
+
+SELECT
+	1
+FROM
+	TestEntity t1
+
+BeforeExecute
+--  TestNoopProvider TestNoop (asynchronously)
+
+SELECT
+	1
+FROM
+	TestEntity t1
+
+BeforeExecute
 -- SQLite.MS SQLite
 DECLARE @date  -- Date
 SET     @date = '2020-02-29 00:00:00.000'
