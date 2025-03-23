@@ -8,7 +8,7 @@ DECLARE @param Decimal(2, 0)
 SET     @param = 33
 
 SELECT
-	CAST("v"."Integer" AS Decimal) / ?,
+	CAST("v"."Integer" AS Decimal(38, 10)) / ?,
 	"v"."Decimal" / ?,
 	"v"."Double" / ?
 FROM

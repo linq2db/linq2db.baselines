@@ -8,8 +8,8 @@ BeforeExecute
 
 CREATE COLUMN TABLE "TestTrun"
 (
-	"ID"     Integer NOT NULL,
-	"Field1" Decimal NOT NULL,
+	"ID"     Integer         NOT NULL,
+	"Field1" Decimal(38, 10) NOT NULL,
 
 	PRIMARY KEY ("ID")
 )

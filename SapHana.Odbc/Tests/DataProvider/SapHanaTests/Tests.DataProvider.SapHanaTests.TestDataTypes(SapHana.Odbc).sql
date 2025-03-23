@@ -116,7 +116,7 @@ SELECT "ID" FROM "AllTypes" WHERE "decimalDataType" IS NULL AND ? IS NULL
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @p Decimal
+DECLARE @p Decimal(38, 10)
 SET     @p = NULL
 
 SELECT "ID" FROM "AllTypes" WHERE "decimalDataType" IS NULL AND ? IS NULL
@@ -135,22 +135,22 @@ SELECT "decimalDataType" FROM "AllTypes" WHERE "ID" = 2
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @p Decimal(7, 3)
-SET     @p = 1234.567
+DECLARE @p Decimal(14, 10)
+SET     @p = 1234.5670000000
 
 SELECT "ID" FROM "AllTypes" WHERE "decimalDataType" = ?
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @p Decimal(7, 3)
-SET     @p = 1234.567
+DECLARE @p Decimal(38, 10)
+SET     @p = 1234.5670000000
 
 SELECT "ID" FROM "AllTypes" WHERE "decimalDataType" = ?
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @p Decimal(7, 3)
-SET     @p = 1234.567
+DECLARE @p Decimal(14, 10)
+SET     @p = 1234.5670000000
 
 SELECT "ID" FROM "AllTypes" WHERE "decimalDataType" = ?
 
@@ -168,7 +168,7 @@ SELECT "ID" FROM "AllTypes" WHERE "smalldecimalDataType" IS NULL AND ? IS NULL
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @p Decimal
+DECLARE @p Decimal(38, 10)
 SET     @p = NULL
 
 SELECT "ID" FROM "AllTypes" WHERE "smalldecimalDataType" IS NULL AND ? IS NULL
@@ -194,7 +194,7 @@ SELECT "ID" FROM "AllTypes" WHERE "smalldecimalDataType" = ?
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @p Decimal(6, 3)
+DECLARE @p Decimal(38, 10)
 SET     @p = 123.456
 
 SELECT "ID" FROM "AllTypes" WHERE "smalldecimalDataType" = ?
