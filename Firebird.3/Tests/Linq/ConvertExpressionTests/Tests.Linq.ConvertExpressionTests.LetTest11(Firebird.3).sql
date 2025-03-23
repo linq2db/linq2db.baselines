@@ -3,8 +3,8 @@
 
 SELECT
 	CASE
-		WHEN "t1"."ParentID_1" IS NULL THEN 0
-		ELSE "t1"."ParentID_1"
+		WHEN "t1"."cond" IS NULL THEN 0
+		ELSE "t1"."cond"
 	END,
 	(
 		SELECT
@@ -31,7 +31,6 @@ SELECT
 FROM
 	(
 		SELECT
-			"p"."ParentID",
 			(
 				SELECT
 					"c_1"."ParentID"
@@ -42,7 +41,8 @@ FROM
 				ORDER BY
 					"c_1"."ParentID"
 				FETCH NEXT 1 ROWS ONLY
-			) as "ParentID_1"
+			) as "cond",
+			"p"."ParentID"
 		FROM
 			"Parent" "p"
 	) "t1"
