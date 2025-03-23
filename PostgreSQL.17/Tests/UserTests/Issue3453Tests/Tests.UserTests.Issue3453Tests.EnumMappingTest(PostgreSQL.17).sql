@@ -20,7 +20,7 @@ CREATE TABLE IF NOT EXISTS schedule
 INSERT INTO schedule(unit, unit_nullable,amount) VALUES ('day','day',1),('day','day',2),('day','day',3);
 
 BeforeExecute
---  PostgreSQL.15 PostgreSQL
+-- PostgreSQL.15 PostgreSQL
 DECLARE @Unit Enum -- Object
 SET     @Unit = 'hour'
 DECLARE @UnitNullable Unknown -- Object
@@ -42,7 +42,7 @@ VALUES
 )
 
 BeforeExecute
---  PostgreSQL.15 PostgreSQL
+-- PostgreSQL.15 PostgreSQL
 
 SELECT
 	t1.id,
@@ -53,7 +53,7 @@ FROM
 	public.schedule t1
 
 BeforeExecute
---  PostgreSQL.15 PostgreSQL
+-- PostgreSQL.15 PostgreSQL
 DECLARE @unit Enum -- Object
 SET     @unit = 'day'
 
@@ -68,7 +68,7 @@ WHERE
 	x.unit = :unit
 
 BeforeExecute
---  PostgreSQL.15 PostgreSQL
+-- PostgreSQL.15 PostgreSQL
 DECLARE @unit Enum -- Object
 SET     @unit = 'day'
 
@@ -83,7 +83,7 @@ WHERE
 	x.unit_nullable = :unit
 
 BeforeExecute
---  PostgreSQL.15 PostgreSQL
+-- PostgreSQL.15 PostgreSQL
 DECLARE @unitNullable Enum -- Object
 SET     @unitNullable = 'day'
 
@@ -98,7 +98,7 @@ WHERE
 	x.unit_nullable = :unitNullable
 
 BeforeExecute
---  PostgreSQL.15 PostgreSQL
+-- PostgreSQL.15 PostgreSQL
 
 SELECT
 	x.id,
@@ -111,7 +111,7 @@ WHERE
 	x.unit_nullable = 'day'
 
 BeforeExecute
---  PostgreSQL.15 PostgreSQL
+-- PostgreSQL.15 PostgreSQL
 
 SELECT
 	x.id,
@@ -124,7 +124,7 @@ WHERE
 	x.unit_nullable IS NULL
 
 BeforeExecute
---  PostgreSQL.15 PostgreSQL
+-- PostgreSQL.15 PostgreSQL
 
 SELECT
 	t1.id,
