@@ -6,5 +6,6 @@ SELECT
 FROM
 	[Person] [t1]
 WHERE
-	[t1].[MiddleName] = [t1].[LastName]
+	NOT ([t1].[MiddleName] <> [t1].[LastName] OR [t1].[MiddleName] IS NULL) OR
+	([t1].[MiddleName] <> [t1].[LastName] OR [t1].[MiddleName] IS NULL) IS NULL
 
