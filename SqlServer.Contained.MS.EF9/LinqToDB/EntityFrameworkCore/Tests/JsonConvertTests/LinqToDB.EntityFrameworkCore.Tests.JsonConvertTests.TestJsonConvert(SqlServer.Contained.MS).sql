@@ -1,4 +1,4 @@
-﻿--  SqlServer.2019
+﻿-- SqlServer.2019
 
 DELETE [t1]
 FROM
@@ -16,7 +16,7 @@ OUTPUT INSERTED.[Id]
 VALUES (@p0, @p1, @p2, @p3);
 
 
---  SqlServer.2019
+-- SqlServer.2019
 
 SELECT TOP (1)
 	[p].[Id],
