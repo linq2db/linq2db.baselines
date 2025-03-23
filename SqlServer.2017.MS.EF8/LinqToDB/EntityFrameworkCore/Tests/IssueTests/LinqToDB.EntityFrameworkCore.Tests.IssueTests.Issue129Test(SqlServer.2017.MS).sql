@@ -1,4 +1,4 @@
-﻿--  SqlServer.2017
+﻿-- SqlServer.2017
 
 CREATE TABLE [tempdb]..[#Issue129Table]
 (
@@ -10,7 +10,7 @@ CREATE TABLE [tempdb]..[#Issue129Table]
 
 
 
---  SqlServer.2017
+-- SqlServer.2017
 
 DROP TABLE IF EXISTS [tempdb]..[#Issue129Table]
 

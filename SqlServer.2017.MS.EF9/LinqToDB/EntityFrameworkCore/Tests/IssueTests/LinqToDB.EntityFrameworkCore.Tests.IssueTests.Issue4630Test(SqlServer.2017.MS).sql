@@ -1,4 +1,4 @@
-﻿--  SqlServer.2017
+﻿-- SqlServer.2017
 DECLARE @id Int -- Int32
 SET     @id = 2
 

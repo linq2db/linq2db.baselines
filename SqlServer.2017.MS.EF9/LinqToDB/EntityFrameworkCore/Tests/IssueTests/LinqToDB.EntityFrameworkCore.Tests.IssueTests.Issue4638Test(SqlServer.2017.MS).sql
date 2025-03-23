@@ -1,7 +1,7 @@
 ﻿BeginTransaction(RepeatableRead)
 
 
---  SqlServer.2017
+-- SqlServer.2017
 
 SELECT
 	[m_1].[Key_1],
@@ -22,7 +22,7 @@ ORDER BY
 
 
 
---  SqlServer.2017
+-- SqlServer.2017
 
 SELECT TOP (1)
 	[p].[AclNameId]

@@ -20,7 +20,7 @@ INNER JOIN @inserted0 i ON ([t].[Id] = [i].[Id])
 ORDER BY [i].[_Position];
 
 
---  SqlServer.2017
+-- SqlServer.2017
 
 SELECT
 	[t1].[Discriminator],
