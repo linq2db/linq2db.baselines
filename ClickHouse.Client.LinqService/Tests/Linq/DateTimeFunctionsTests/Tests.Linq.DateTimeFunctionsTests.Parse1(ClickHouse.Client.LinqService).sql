@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- ClickHouse.Client ClickHouse
+--  ClickHouse.Client ClickHouse
 
 SELECT
 	toDate32(toDateTime64(toString(d.DateTimeValue), 7))

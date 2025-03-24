@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- ClickHouse.Client ClickHouse
+--  ClickHouse.Client ClickHouse
 
 SELECT
 	GROUPING(g_2.Id1),

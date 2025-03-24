@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- ClickHouse.Client ClickHouse (asynchronously)
+--  ClickHouse.Client ClickHouse (asynchronously)
 
 SELECT
 	CASE
@@ -14,7 +14,7 @@ SELECT
 	END
 
 BeforeExecute
--- ClickHouse.Client ClickHouse (asynchronously)
+--  ClickHouse.Client ClickHouse (asynchronously)
 
 SELECT
 	CASE

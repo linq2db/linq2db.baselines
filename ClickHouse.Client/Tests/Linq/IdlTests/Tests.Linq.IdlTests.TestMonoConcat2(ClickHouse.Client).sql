@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- ClickHouse.Client ClickHouse
+--  ClickHouse.Client ClickHouse
 
 SELECT
 	x.FirstName
@@ -14,7 +14,7 @@ WHERE
 	x_1.FirstName = 'A'
 
 BeforeExecute
--- ClickHouse.Client ClickHouse
+--  ClickHouse.Client ClickHouse
 
 SELECT
 	x.FirstName

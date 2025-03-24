@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- ClickHouse.Client ClickHouse
+--  ClickHouse.Client ClickHouse
 
 SELECT
 	p.ParentID,
@@ -18,7 +18,7 @@ WHERE
 	p_1.ParentID = 2
 
 BeforeExecute
--- ClickHouse.Client ClickHouse
+--  ClickHouse.Client ClickHouse
 
 SELECT
 	t1.ParentID,

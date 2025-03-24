@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- ClickHouse.Client ClickHouse
+--  ClickHouse.Client ClickHouse
 
 SELECT
 	p.FirstName,
@@ -15,7 +15,7 @@ FROM
 			SELECT 4) n ON p.PersonID = n.ID
 
 BeforeExecute
--- ClickHouse.Client ClickHouse
+--  ClickHouse.Client ClickHouse
 
 SELECT
 	p.FirstName,

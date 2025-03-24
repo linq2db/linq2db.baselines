@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- ClickHouse.Client ClickHouse
+--  ClickHouse.Client ClickHouse
 
 SELECT
 	currentDatabase()
@@ -8,12 +8,12 @@ FROM
 LIMIT 1
 
 BeforeExecute
--- ClickHouse.Client ClickHouse
+--  ClickHouse.Client ClickHouse
 
 DROP TABLE IF EXISTS Issue681Table2
 
 BeforeExecute
--- ClickHouse.Client ClickHouse
+--  ClickHouse.Client ClickHouse
 
 CREATE TABLE testdb2.Issue681Table2
 (
@@ -26,7 +26,7 @@ ENGINE = MergeTree()
 ORDER BY ID
 
 BeforeExecute
--- ClickHouse.Client ClickHouse
+--  ClickHouse.Client ClickHouse
 
 DROP TABLE IF EXISTS Issue681Table2
 

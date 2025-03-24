@@ -1,10 +1,10 @@
 ﻿BeforeExecute
--- ClickHouse.Client ClickHouse
+--  ClickHouse.Client ClickHouse
 
 DROP TABLE TestEnumTable
 
 BeforeExecute
--- ClickHouse.Client ClickHouse
+--  ClickHouse.Client ClickHouse
 
 CREATE TABLE TestEnumTable
 (
@@ -17,7 +17,7 @@ CREATE TABLE TestEnumTable
 ENGINE = Memory()
 
 BeforeExecute
--- ClickHouse.Client ClickHouse
+--  ClickHouse.Client ClickHouse
 
 INSERT INTO TestEnumTable
 (
@@ -37,7 +37,7 @@ VALUES
 )
 
 BeforeExecute
--- ClickHouse.Client ClickHouse
+--  ClickHouse.Client ClickHouse
 
 SELECT
 	t1.Field1,
@@ -49,7 +49,7 @@ FROM
 	TestEnumTable t1
 
 BeforeExecute
--- ClickHouse.Client ClickHouse
+--  ClickHouse.Client ClickHouse
 
 DROP TABLE TestEnumTable
 

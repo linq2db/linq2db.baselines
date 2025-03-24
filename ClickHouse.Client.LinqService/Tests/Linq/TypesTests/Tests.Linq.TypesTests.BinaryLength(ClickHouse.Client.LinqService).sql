@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- ClickHouse.Client ClickHouse
+--  ClickHouse.Client ClickHouse
 
 ALTER TABLE
 	LinqDataTypes
@@ -9,7 +9,7 @@ WHERE
 	ID = 1
 
 BeforeExecute
--- ClickHouse.Client ClickHouse
+--  ClickHouse.Client ClickHouse
 
 SELECT
 	Length(t.BinaryValue)
@@ -20,7 +20,7 @@ WHERE
 LIMIT 1
 
 BeforeExecute
--- ClickHouse.Client ClickHouse
+--  ClickHouse.Client ClickHouse
 
 ALTER TABLE
 	LinqDataTypes

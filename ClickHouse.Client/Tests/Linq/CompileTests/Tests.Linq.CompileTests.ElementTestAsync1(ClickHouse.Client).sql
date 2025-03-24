@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- ClickHouse.Client ClickHouse (asynchronously)
+--  ClickHouse.Client ClickHouse (asynchronously)
 
 SELECT
 	c_1.ParentID,
@@ -11,7 +11,7 @@ WHERE
 LIMIT 1
 
 BeforeExecute
--- ClickHouse.Client ClickHouse (asynchronously)
+--  ClickHouse.Client ClickHouse (asynchronously)
 
 SELECT
 	c_1.ParentID,

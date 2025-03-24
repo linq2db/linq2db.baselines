@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- ClickHouse.Client ClickHouse
+--  ClickHouse.Client ClickHouse
 
 CREATE TABLE aa
 (
@@ -12,7 +12,7 @@ ENGINE = MergeTree()
 ORDER BY bb
 
 BeforeExecute
--- ClickHouse.Client ClickHouse
+--  ClickHouse.Client ClickHouse
 
 INSERT INTO aa
 (
@@ -26,7 +26,7 @@ VALUES
 )
 
 BeforeExecute
--- ClickHouse.Client ClickHouse
+--  ClickHouse.Client ClickHouse
 
 SELECT
 	t1.bb,
@@ -35,7 +35,7 @@ FROM
 	aa t1
 
 BeforeExecute
--- ClickHouse.Client ClickHouse
+--  ClickHouse.Client ClickHouse
 
 DROP TABLE aa
 

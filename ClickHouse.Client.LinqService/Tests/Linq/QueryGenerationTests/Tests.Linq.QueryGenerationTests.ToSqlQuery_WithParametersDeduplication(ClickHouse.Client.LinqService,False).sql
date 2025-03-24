@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- ClickHouse.Client ClickHouse
+--  ClickHouse.Client ClickHouse
 
 SELECT
 	p.FirstName,
@@ -13,7 +13,7 @@ WHERE
 	p.FirstName = 'John' OR p.LastName = 'John'
 
 BeforeExecute
--- ClickHouse.Client ClickHouse
+--  ClickHouse.Client ClickHouse
 
 SELECT
 	p.FirstName,

@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- ClickHouse.Client ClickHouse
+--  ClickHouse.Client ClickHouse
 
 INSERT INTO LinqDataTypes
 (
@@ -25,7 +25,7 @@ VALUES
 )
 
 BeforeExecute
--- ClickHouse.Client ClickHouse
+--  ClickHouse.Client ClickHouse
 
 SELECT
 	COUNT(*)
@@ -35,7 +35,7 @@ WHERE
 	t.ID = 5000 AND addDays(t.DateTimeValue, t.SmallIntValue) > makeDateTime(2018, 1, 2, 0, 0, 0)
 
 BeforeExecute
--- ClickHouse.Client ClickHouse
+--  ClickHouse.Client ClickHouse
 
 ALTER TABLE
 	LinqDataTypes

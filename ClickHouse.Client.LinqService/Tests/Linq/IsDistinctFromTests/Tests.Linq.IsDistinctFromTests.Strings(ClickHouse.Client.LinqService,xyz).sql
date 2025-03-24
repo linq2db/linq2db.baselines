@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- ClickHouse.Client ClickHouse
+--  ClickHouse.Client ClickHouse
 
 SELECT
 	COUNT(*)
@@ -9,7 +9,7 @@ WHERE
 	s.String IS NULL OR s.String <> 'xyz'
 
 BeforeExecute
--- ClickHouse.Client ClickHouse
+--  ClickHouse.Client ClickHouse
 
 SELECT
 	COUNT(*)
@@ -19,7 +19,7 @@ WHERE
 	s.NullableString IS NULL OR s.NullableString <> 'xyz'
 
 BeforeExecute
--- ClickHouse.Client ClickHouse
+--  ClickHouse.Client ClickHouse
 
 SELECT
 	COUNT(*)
@@ -29,7 +29,7 @@ WHERE
 	NOT (s.String IS NULL OR s.String <> 'xyz')
 
 BeforeExecute
--- ClickHouse.Client ClickHouse
+--  ClickHouse.Client ClickHouse
 
 SELECT
 	COUNT(*)

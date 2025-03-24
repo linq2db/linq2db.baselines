@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- ClickHouse.Client ClickHouse
+--  ClickHouse.Client ClickHouse
 
 SELECT
 	m_1.ParentID,
@@ -19,7 +19,7 @@ FROM
 		LEFT JOIN Parent a_Parent ON d.ParentID = a_Parent.ParentID
 
 BeforeExecute
--- ClickHouse.Client ClickHouse
+--  ClickHouse.Client ClickHouse
 
 SELECT
 	t.ParentID,

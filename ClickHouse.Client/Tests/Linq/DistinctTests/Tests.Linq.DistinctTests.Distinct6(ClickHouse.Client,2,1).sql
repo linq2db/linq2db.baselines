@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- ClickHouse.Client ClickHouse
+--  ClickHouse.Client ClickHouse
 
 SELECT DISTINCT
 	Coalesce(p.Value1, p.ParentID),
@@ -8,7 +8,7 @@ FROM
 	Parent p
 
 BeforeExecute
--- ClickHouse.Client ClickHouse
+--  ClickHouse.Client ClickHouse
 
 SELECT
 	t1.ParentID,

@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- ClickHouse.Client ClickHouse
+--  ClickHouse.Client ClickHouse
 
 SELECT
 	t.Value
@@ -9,7 +9,7 @@ WHERE
 	t.Value = true
 
 BeforeExecute
--- ClickHouse.Client ClickHouse
+--  ClickHouse.Client ClickHouse
 
 SELECT
 	t.Value
@@ -19,7 +19,7 @@ WHERE
 	t.Value = true
 
 BeforeExecute
--- ClickHouse.Client ClickHouse
+--  ClickHouse.Client ClickHouse
 
 SELECT
 	t.Value
@@ -29,7 +29,7 @@ WHERE
 	t.Value <> true OR t.Value IS NULL
 
 BeforeExecute
--- ClickHouse.Client ClickHouse
+--  ClickHouse.Client ClickHouse
 
 SELECT
 	t.Value

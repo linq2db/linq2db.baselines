@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- ClickHouse.Client ClickHouse
+--  ClickHouse.Client ClickHouse
 
 ALTER TABLE
 	TrimTestTable
@@ -9,7 +9,7 @@ WHERE
 	ID = 3
 
 BeforeExecute
--- ClickHouse.Client ClickHouse
+--  ClickHouse.Client ClickHouse
 
 ALTER TABLE
 	TrimTestTable
@@ -19,7 +19,7 @@ WHERE
 	Data = '***XXX***'
 
 BeforeExecute
--- ClickHouse.Client ClickHouse
+--  ClickHouse.Client ClickHouse
 
 ALTER TABLE
 	TrimTestTable
@@ -29,7 +29,7 @@ WHERE
 	Data = '***HHH***'
 
 BeforeExecute
--- ClickHouse.Client ClickHouse
+--  ClickHouse.Client ClickHouse
 
 SELECT
 	r.ID,
@@ -40,7 +40,7 @@ ORDER BY
 	r.ID
 
 BeforeExecute
--- ClickHouse.Client ClickHouse
+--  ClickHouse.Client ClickHouse
 
 SELECT
 	r.ID,

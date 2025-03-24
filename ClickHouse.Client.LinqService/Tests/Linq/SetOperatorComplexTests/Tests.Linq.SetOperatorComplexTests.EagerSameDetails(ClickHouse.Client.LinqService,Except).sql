@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- ClickHouse.Client ClickHouse
+--  ClickHouse.Client ClickHouse
 
 SELECT
 	m_1.Id,
@@ -38,7 +38,7 @@ FROM
 		LEFT JOIN Author a_Author ON d.FkAuthorId = a_Author.AuthorId
 
 BeforeExecute
--- ClickHouse.Client ClickHouse
+--  ClickHouse.Client ClickHouse
 
 SELECT
 	a_Book.BookId as Id,
@@ -63,7 +63,7 @@ WHERE
 	a_Book_1.Discriminator = 'Novel'
 
 BeforeExecute
--- ClickHouse.Client ClickHouse
+--  ClickHouse.Client ClickHouse
 
 SELECT
 	m_1.BookId,
@@ -89,7 +89,7 @@ FROM
 		LEFT JOIN Author a_Author ON d_1.FkAuthorId = a_Author.AuthorId
 
 BeforeExecute
--- ClickHouse.Client ClickHouse
+--  ClickHouse.Client ClickHouse
 
 SELECT
 	m_1.AuthorId,
@@ -104,7 +104,7 @@ FROM
 		LEFT JOIN Book a_Book ON d.FkBookId = a_Book.BookId
 
 BeforeExecute
--- ClickHouse.Client ClickHouse
+--  ClickHouse.Client ClickHouse
 
 SELECT
 	t1.AuthorId,

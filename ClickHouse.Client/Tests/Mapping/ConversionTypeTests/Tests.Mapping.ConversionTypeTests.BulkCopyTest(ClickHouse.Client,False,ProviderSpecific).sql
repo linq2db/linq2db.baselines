@@ -2,7 +2,7 @@
 INSERT ASYNC BULK TrimTestTable(ID, Data)
 
 BeforeExecute
--- ClickHouse.Client ClickHouse
+--  ClickHouse.Client ClickHouse
 
 SELECT
 	r.ID,
@@ -13,7 +13,7 @@ ORDER BY
 	r.ID
 
 BeforeExecute
--- ClickHouse.Client ClickHouse
+--  ClickHouse.Client ClickHouse
 
 SELECT
 	r.ID,

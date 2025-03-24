@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- ClickHouse.Client ClickHouse
+--  ClickHouse.Client ClickHouse
 
 SELECT
 	m_1.ParentID,
@@ -17,7 +17,7 @@ FROM
 		INNER JOIN Child d ON m_1.ParentID = d.ParentID - 1
 
 BeforeExecute
--- ClickHouse.Client ClickHouse
+--  ClickHouse.Client ClickHouse
 
 SELECT
 	p.ParentID,

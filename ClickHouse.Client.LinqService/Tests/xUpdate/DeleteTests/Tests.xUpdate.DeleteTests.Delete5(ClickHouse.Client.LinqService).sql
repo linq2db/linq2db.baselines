@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- ClickHouse.Client ClickHouse
+--  ClickHouse.Client ClickHouse
 
 ALTER TABLE
 	Parent
@@ -7,7 +7,7 @@ DELETE WHERE
 	ParentID > 1000
 
 BeforeExecute
--- ClickHouse.Client ClickHouse
+--  ClickHouse.Client ClickHouse
 
 ALTER TABLE
 	Parent
@@ -15,7 +15,7 @@ DELETE WHERE
 	ParentID > 1000
 
 BeforeExecute
--- ClickHouse.Client ClickHouse
+--  ClickHouse.Client ClickHouse
 
 INSERT INTO Parent
 (
@@ -29,7 +29,7 @@ VALUES
 )
 
 BeforeExecute
--- ClickHouse.Client ClickHouse
+--  ClickHouse.Client ClickHouse
 
 INSERT INTO Parent
 (
@@ -43,7 +43,7 @@ VALUES
 )
 
 BeforeExecute
--- ClickHouse.Client ClickHouse
+--  ClickHouse.Client ClickHouse
 
 SELECT
 	COUNT(*)
@@ -53,7 +53,7 @@ WHERE
 	t1.ParentID > 1000
 
 BeforeExecute
--- ClickHouse.Client ClickHouse
+--  ClickHouse.Client ClickHouse
 
 ALTER TABLE
 	Parent
@@ -61,7 +61,7 @@ DELETE WHERE
 	ParentID IN (1001, 1002)
 
 BeforeExecute
--- ClickHouse.Client ClickHouse
+--  ClickHouse.Client ClickHouse
 
 SELECT
 	COUNT(*)

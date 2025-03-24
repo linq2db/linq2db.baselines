@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- ClickHouse.Client ClickHouse
+--  ClickHouse.Client ClickHouse
 
 ALTER TABLE
 	Parent
@@ -7,7 +7,7 @@ DELETE WHERE
 	ParentID = 1111
 
 BeforeExecute
--- ClickHouse.Client ClickHouse
+--  ClickHouse.Client ClickHouse
 
 ALTER TABLE
 	Parent
@@ -15,7 +15,7 @@ DELETE WHERE
 	ParentID = 2111
 
 BeforeExecute
--- ClickHouse.Client ClickHouse
+--  ClickHouse.Client ClickHouse
 
 ALTER TABLE
 	Parent
@@ -23,7 +23,7 @@ DELETE WHERE
 	ParentID = 3111
 
 BeforeExecute
--- ClickHouse.Client ClickHouse
+--  ClickHouse.Client ClickHouse
 
 ALTER TABLE
 	Parent
@@ -34,7 +34,7 @@ BeforeExecute
 INSERT ASYNC BULK Parent(ParentID, Value1)
 
 BeforeExecute
--- ClickHouse.Client ClickHouse
+--  ClickHouse.Client ClickHouse
 
 ALTER TABLE
 	Parent
@@ -42,7 +42,7 @@ DELETE WHERE
 	ParentID = 1111
 
 BeforeExecute
--- ClickHouse.Client ClickHouse
+--  ClickHouse.Client ClickHouse
 
 ALTER TABLE
 	Parent
@@ -50,7 +50,7 @@ DELETE WHERE
 	ParentID = 2111
 
 BeforeExecute
--- ClickHouse.Client ClickHouse
+--  ClickHouse.Client ClickHouse
 
 ALTER TABLE
 	Parent
@@ -58,7 +58,7 @@ DELETE WHERE
 	ParentID = 3111
 
 BeforeExecute
--- ClickHouse.Client ClickHouse
+--  ClickHouse.Client ClickHouse
 
 ALTER TABLE
 	Parent

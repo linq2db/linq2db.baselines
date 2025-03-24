@@ -1,10 +1,10 @@
 ﻿BeforeExecute
--- ClickHouse.Client ClickHouse
+--  ClickHouse.Client ClickHouse
 
 DROP TABLE IF EXISTS Test1585
 
 BeforeExecute
--- ClickHouse.Client ClickHouse
+--  ClickHouse.Client ClickHouse
 
 CREATE TABLE Test1585
 (

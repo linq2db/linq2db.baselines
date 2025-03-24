@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- ClickHouse.Client ClickHouse
+--  ClickHouse.Client ClickHouse
 
 SELECT
 	COUNT(*)
@@ -9,7 +9,7 @@ WHERE
 	startsWith(p.FirstName, 'Jo') AND p.PersonID = 1
 
 BeforeExecute
--- ClickHouse.Client ClickHouse
+--  ClickHouse.Client ClickHouse
 
 SELECT
 	COUNT(*)
@@ -19,7 +19,7 @@ WHERE
 	startsWith(p.FirstName, 'jo') AND p.PersonID = 1
 
 BeforeExecute
--- ClickHouse.Client ClickHouse
+--  ClickHouse.Client ClickHouse
 
 SELECT
 	COUNT(*)

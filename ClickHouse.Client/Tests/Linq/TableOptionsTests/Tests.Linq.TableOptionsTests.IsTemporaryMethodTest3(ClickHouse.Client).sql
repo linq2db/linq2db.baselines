@@ -1,10 +1,10 @@
 ﻿BeforeExecute
--- ClickHouse.Client ClickHouse
+--  ClickHouse.Client ClickHouse
 
 DROP TABLE IF EXISTS TestTable
 
 BeforeExecute
--- ClickHouse.Client ClickHouse
+--  ClickHouse.Client ClickHouse
 
 CREATE TEMPORARY TABLE TestTable
 (
@@ -14,7 +14,7 @@ CREATE TEMPORARY TABLE TestTable
 ENGINE = Memory()
 
 BeforeExecute
--- ClickHouse.Client ClickHouse
+--  ClickHouse.Client ClickHouse
 
 SELECT
 	t1.Id,
@@ -31,7 +31,7 @@ WHERE
 	t1.Id = t2.Id
 
 BeforeExecute
--- ClickHouse.Client ClickHouse
+--  ClickHouse.Client ClickHouse
 
 DROP TABLE IF EXISTS TestTable
 

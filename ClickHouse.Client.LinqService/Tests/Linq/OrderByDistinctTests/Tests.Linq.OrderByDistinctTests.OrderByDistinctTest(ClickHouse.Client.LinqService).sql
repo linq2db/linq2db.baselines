@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- ClickHouse.Client ClickHouse
+--  ClickHouse.Client ClickHouse
 
 SELECT DISTINCT
 	x.DuplicateData
@@ -8,7 +8,7 @@ FROM
 LIMIT 0, 3
 
 BeforeExecute
--- ClickHouse.Client ClickHouse
+--  ClickHouse.Client ClickHouse
 
 SELECT
 	x.DuplicateData
@@ -21,7 +21,7 @@ ORDER BY
 LIMIT 0, 3
 
 BeforeExecute
--- ClickHouse.Client ClickHouse
+--  ClickHouse.Client ClickHouse
 
 SELECT DISTINCT
 	x.DuplicateData
@@ -30,7 +30,7 @@ FROM
 LIMIT 0, 3
 
 BeforeExecute
--- ClickHouse.Client ClickHouse
+--  ClickHouse.Client ClickHouse
 
 SELECT
 	x.DuplicateData

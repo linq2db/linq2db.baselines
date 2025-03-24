@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- ClickHouse.Client ClickHouse (asynchronously)
+--  ClickHouse.Client ClickHouse (asynchronously)
 
 CREATE TABLE xxPerson
 (
@@ -15,7 +15,7 @@ ENGINE = MergeTree()
 ORDER BY PersonID
 
 BeforeExecute
--- ClickHouse.Client ClickHouse (asynchronously)
+--  ClickHouse.Client ClickHouse (asynchronously)
 
 INSERT INTO xxPerson
 (
@@ -35,12 +35,12 @@ VALUES
 )
 
 BeforeExecute
--- ClickHouse.Client ClickHouse (asynchronously)
+--  ClickHouse.Client ClickHouse (asynchronously)
 
 DROP TABLE xxPerson
 
 BeforeExecute
--- ClickHouse.Client ClickHouse (asynchronously)
+--  ClickHouse.Client ClickHouse (asynchronously)
 
 DROP TABLE IF EXISTS xxPerson
 

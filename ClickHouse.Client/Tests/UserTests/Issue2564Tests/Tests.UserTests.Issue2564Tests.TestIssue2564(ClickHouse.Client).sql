@@ -1,10 +1,10 @@
 ﻿BeforeExecute
--- ClickHouse.Client ClickHouse
+--  ClickHouse.Client ClickHouse
 
 DROP TABLE IF EXISTS Issue2564Table
 
 BeforeExecute
--- ClickHouse.Client ClickHouse
+--  ClickHouse.Client ClickHouse
 
 CREATE TABLE Issue2564Table
 (
@@ -22,7 +22,7 @@ ENGINE = MergeTree()
 ORDER BY Id
 
 BeforeExecute
--- ClickHouse.Client ClickHouse
+--  ClickHouse.Client ClickHouse
 
 SELECT
 	Trim(minOrNull(tgGroup_1.TranslatedMessage1)),

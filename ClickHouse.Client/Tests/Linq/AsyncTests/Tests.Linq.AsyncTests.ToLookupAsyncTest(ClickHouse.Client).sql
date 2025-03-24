@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- ClickHouse.Client ClickHouse (asynchronously)
+--  ClickHouse.Client ClickHouse (asynchronously)
 
 SELECT
 	t1.ParentID,
@@ -11,7 +11,7 @@ ORDER BY
 	t1.ChildID
 
 BeforeExecute
--- ClickHouse.Client ClickHouse (asynchronously)
+--  ClickHouse.Client ClickHouse (asynchronously)
 
 SELECT
 	t1.ParentID,

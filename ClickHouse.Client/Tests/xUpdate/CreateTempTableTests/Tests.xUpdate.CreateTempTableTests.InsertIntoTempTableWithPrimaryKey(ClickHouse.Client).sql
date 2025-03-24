@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- ClickHouse.Client ClickHouse
+--  ClickHouse.Client ClickHouse
 
 CREATE TEMPORARY TABLE TableWithPrimaryKey2
 (
@@ -14,7 +14,7 @@ BeforeExecute
 INSERT ASYNC BULK TableWithPrimaryKey2(Key)
 
 BeforeExecute
--- ClickHouse.Client ClickHouse
+--  ClickHouse.Client ClickHouse
 
 DROP TABLE IF EXISTS TableWithPrimaryKey2
 

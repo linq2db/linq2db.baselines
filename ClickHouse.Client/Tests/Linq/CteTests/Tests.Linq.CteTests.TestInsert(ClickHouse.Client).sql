@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- ClickHouse.Client ClickHouse
+--  ClickHouse.Client ClickHouse
 
 INSERT INTO CteChild
 (
@@ -33,7 +33,7 @@ FROM
 		INNER JOIN LAST0 c4_1 ON c4_1.ParentID = p.ParentID
 
 BeforeExecute
--- ClickHouse.Client ClickHouse
+--  ClickHouse.Client ClickHouse
 
 SELECT
 	t1.ChildID,
@@ -45,7 +45,7 @@ ORDER BY
 	t1.ParentID
 
 BeforeExecute
--- ClickHouse.Client ClickHouse
+--  ClickHouse.Client ClickHouse
 
 SELECT
 	c4.ChildID,

@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- ClickHouse.Client ClickHouse
+--  ClickHouse.Client ClickHouse
 
 SELECT
 	r.Id,
@@ -11,7 +11,7 @@ WHERE
 	r.Column = 'value=2' AND r.ColumnNullable = 'value=33'
 
 BeforeExecute
--- ClickHouse.Client ClickHouse
+--  ClickHouse.Client ClickHouse
 
 SELECT
 	r.Id,
@@ -23,14 +23,14 @@ WHERE
 	r.Column = 'value=2' AND r.ColumnNullable = 'value=33'
 
 BeforeExecute
--- ClickHouse.Client ClickHouse
+--  ClickHouse.Client ClickHouse
 
 ALTER TABLE
 	StringEnumTable
 DELETE WHERE 1
 
 BeforeExecute
--- ClickHouse.Client ClickHouse
+--  ClickHouse.Client ClickHouse
 
 INSERT INTO StringEnumTable
 (
@@ -46,7 +46,7 @@ VALUES
 )
 
 BeforeExecute
--- ClickHouse.Client ClickHouse
+--  ClickHouse.Client ClickHouse
 
 INSERT INTO StringEnumTable
 (
@@ -62,7 +62,7 @@ VALUES
 )
 
 BeforeExecute
--- ClickHouse.Client ClickHouse
+--  ClickHouse.Client ClickHouse
 
 SELECT
 	t1.Id,
@@ -74,14 +74,14 @@ ORDER BY
 	t1.Id
 
 BeforeExecute
--- ClickHouse.Client ClickHouse
+--  ClickHouse.Client ClickHouse
 
 ALTER TABLE
 	StringEnumTable
 DELETE WHERE 1
 
 BeforeExecute
--- ClickHouse.Client ClickHouse
+--  ClickHouse.Client ClickHouse
 
 INSERT INTO StringEnumTable
 (
@@ -94,7 +94,7 @@ VALUES
 (2,'value=2','value=33')
 
 BeforeExecute
--- ClickHouse.Client ClickHouse
+--  ClickHouse.Client ClickHouse
 
 SELECT
 	t1.Id,
@@ -106,7 +106,7 @@ ORDER BY
 	t1.Id
 
 BeforeExecute
--- ClickHouse.Client ClickHouse
+--  ClickHouse.Client ClickHouse
 
 ALTER TABLE
 	StringEnumTable
@@ -116,7 +116,7 @@ BeforeExecute
 INSERT ASYNC BULK StringEnumTable(Id, Column, ColumnNullable)
 
 BeforeExecute
--- ClickHouse.Client ClickHouse
+--  ClickHouse.Client ClickHouse
 
 SELECT
 	t1.Id,

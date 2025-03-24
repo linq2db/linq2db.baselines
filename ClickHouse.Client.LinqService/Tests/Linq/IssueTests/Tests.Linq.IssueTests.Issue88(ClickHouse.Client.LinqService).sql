@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- ClickHouse.Client ClickHouse
+--  ClickHouse.Client ClickHouse
 
 SELECT
 	t1.FirstName,
@@ -13,7 +13,7 @@ WHERE
 	t1.PersonID = 1 AND t1.Gender = 'M'
 
 BeforeExecute
--- ClickHouse.Client ClickHouse
+--  ClickHouse.Client ClickHouse
 
 SELECT
 	t1.FirstName,
@@ -27,7 +27,7 @@ WHERE
 	t1.PersonID = 1 AND 'M' = t1.Gender
 
 BeforeExecute
--- ClickHouse.Client ClickHouse
+--  ClickHouse.Client ClickHouse
 
 SELECT
 	t1.FirstName,
@@ -41,7 +41,7 @@ WHERE
 	t1.PersonID = 1 AND t1.Gender = 'M'
 
 BeforeExecute
--- ClickHouse.Client ClickHouse
+--  ClickHouse.Client ClickHouse
 
 SELECT
 	t1.FirstName,

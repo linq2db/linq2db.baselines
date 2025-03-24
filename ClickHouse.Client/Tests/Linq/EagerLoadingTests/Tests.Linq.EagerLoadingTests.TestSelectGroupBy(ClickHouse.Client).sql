@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- ClickHouse.Client ClickHouse
+--  ClickHouse.Client ClickHouse
 
 SELECT
 	m_2.MasterId,
@@ -26,7 +26,7 @@ FROM
 		INNER JOIN MasterClass d ON d.Id1 = m_2.MasterId
 
 BeforeExecute
--- ClickHouse.Client ClickHouse
+--  ClickHouse.Client ClickHouse
 
 SELECT
 	t1.Id1,

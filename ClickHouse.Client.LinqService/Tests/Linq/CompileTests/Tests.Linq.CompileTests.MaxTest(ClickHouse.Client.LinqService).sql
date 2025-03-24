@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- ClickHouse.Client ClickHouse
+--  ClickHouse.Client ClickHouse
 
 SELECT
 	maxOrNull(c_1.ParentID)
@@ -9,7 +9,7 @@ WHERE
 	c_1.ParentID = 1
 
 BeforeExecute
--- ClickHouse.Client ClickHouse
+--  ClickHouse.Client ClickHouse
 
 SELECT
 	maxOrNull(c_1.ParentID)

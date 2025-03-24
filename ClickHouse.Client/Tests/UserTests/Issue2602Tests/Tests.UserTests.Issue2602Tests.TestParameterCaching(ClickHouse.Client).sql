@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- ClickHouse.Client ClickHouse
+--  ClickHouse.Client ClickHouse
 
 SELECT
 	m_1.Id,
@@ -19,7 +19,7 @@ FROM
 		INNER JOIN EmailAttachment d ON m_1.Id = d.EmailId
 
 BeforeExecute
--- ClickHouse.Client ClickHouse
+--  ClickHouse.Client ClickHouse
 
 SELECT
 	c_1.Id
@@ -30,7 +30,7 @@ WHERE
 LIMIT 1
 
 BeforeExecute
--- ClickHouse.Client ClickHouse
+--  ClickHouse.Client ClickHouse
 
 SELECT
 	m_1.Id,
@@ -50,7 +50,7 @@ FROM
 		INNER JOIN EmailAttachment d ON m_1.Id = d.EmailId
 
 BeforeExecute
--- ClickHouse.Client ClickHouse
+--  ClickHouse.Client ClickHouse
 
 SELECT
 	c_1.Id

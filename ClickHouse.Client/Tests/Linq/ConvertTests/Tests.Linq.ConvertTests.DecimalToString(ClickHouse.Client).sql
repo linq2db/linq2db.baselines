@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- ClickHouse.Client ClickHouse
+--  ClickHouse.Client ClickHouse
 
 SELECT
 	trim(TRAILING '0.' FROM REPLACE(toString(p.MoneyValue), ',', '.'))

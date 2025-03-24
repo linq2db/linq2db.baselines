@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- ClickHouse.Client ClickHouse
+--  ClickHouse.Client ClickHouse
 
 SELECT
 	date_diff('second', t.DateTimeValue, addMinutes(t.DateTimeValue, toFloat64(100)))

@@ -1,10 +1,10 @@
 ﻿BeforeExecute
--- ClickHouse.Client ClickHouse (asynchronously)
+--  ClickHouse.Client ClickHouse (asynchronously)
 
 DROP TABLE TestTable
 
 BeforeExecute
--- ClickHouse.Client ClickHouse (asynchronously)
+--  ClickHouse.Client ClickHouse (asynchronously)
 
 CREATE TABLE TestTable
 (
@@ -16,7 +16,7 @@ CREATE TABLE TestTable
 ENGINE = Memory()
 
 BeforeExecute
--- ClickHouse.Client ClickHouse (asynchronously)
+--  ClickHouse.Client ClickHouse (asynchronously)
 
 SELECT
 	t1.ID,
@@ -27,7 +27,7 @@ FROM
 	TestTable t1
 
 BeforeExecute
--- ClickHouse.Client ClickHouse (asynchronously)
+--  ClickHouse.Client ClickHouse (asynchronously)
 
 DROP TABLE TestTable
 

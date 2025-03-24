@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- ClickHouse.Client ClickHouse
+--  ClickHouse.Client ClickHouse
 
 CREATE TEMPORARY TABLE TableWithPrimaryKey
 (
@@ -11,7 +11,7 @@ ENGINE = MergeTree()
 ORDER BY Key
 
 BeforeExecute
--- ClickHouse.Client ClickHouse
+--  ClickHouse.Client ClickHouse
 
 DROP TABLE IF EXISTS TableWithPrimaryKey
 

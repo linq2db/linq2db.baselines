@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- ClickHouse.Client ClickHouse
+--  ClickHouse.Client ClickHouse
 
 SELECT
 	toDecimal128(toFloat64(toDecimal128(v.Integer, 10)) / toDecimal32('33', 0), 10),

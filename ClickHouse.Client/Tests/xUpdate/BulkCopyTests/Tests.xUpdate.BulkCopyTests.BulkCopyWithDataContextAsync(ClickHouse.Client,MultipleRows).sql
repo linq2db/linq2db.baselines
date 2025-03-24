@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- ClickHouse.Client ClickHouse (asynchronously)
+--  ClickHouse.Client ClickHouse (asynchronously)
 
 INSERT INTO SimpleBulkCopyTable
 (
@@ -9,7 +9,7 @@ VALUES
 (1)
 
 BeforeExecute
--- ClickHouse.Client ClickHouse (asynchronously)
+--  ClickHouse.Client ClickHouse (asynchronously)
 
 INSERT INTO SimpleBulkCopyTable
 (

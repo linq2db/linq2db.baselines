@@ -1,10 +1,10 @@
 ﻿BeforeExecute
--- ClickHouse.Client ClickHouse
+--  ClickHouse.Client ClickHouse
 
 DROP TABLE IF EXISTS CreateIfNotExistsTable
 
 BeforeExecute
--- ClickHouse.Client ClickHouse
+--  ClickHouse.Client ClickHouse
 
 CREATE TABLE IF NOT EXISTS CreateIfNotExistsTable
 (
@@ -14,7 +14,7 @@ CREATE TABLE IF NOT EXISTS CreateIfNotExistsTable
 ENGINE = Memory()
 
 BeforeExecute
--- ClickHouse.Client ClickHouse
+--  ClickHouse.Client ClickHouse
 
 INSERT INTO CreateIfNotExistsTable
 (
@@ -28,7 +28,7 @@ VALUES
 )
 
 BeforeExecute
--- ClickHouse.Client ClickHouse
+--  ClickHouse.Client ClickHouse
 
 SELECT
 	t1.Id,
@@ -37,7 +37,7 @@ FROM
 	CreateIfNotExistsTable t1
 
 BeforeExecute
--- ClickHouse.Client ClickHouse
+--  ClickHouse.Client ClickHouse
 
 CREATE TABLE IF NOT EXISTS CreateIfNotExistsTable
 (
@@ -47,12 +47,12 @@ CREATE TABLE IF NOT EXISTS CreateIfNotExistsTable
 ENGINE = Memory()
 
 BeforeExecute
--- ClickHouse.Client ClickHouse
+--  ClickHouse.Client ClickHouse
 
 DROP TABLE IF EXISTS CreateIfNotExistsTable
 
 BeforeExecute
--- ClickHouse.Client ClickHouse
+--  ClickHouse.Client ClickHouse
 
 DROP TABLE IF EXISTS CreateIfNotExistsTable
 

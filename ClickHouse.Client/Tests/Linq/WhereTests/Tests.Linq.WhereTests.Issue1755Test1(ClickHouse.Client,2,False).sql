@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- ClickHouse.Client ClickHouse
+--  ClickHouse.Client ClickHouse
 
 SELECT
 	c_1.ParentID,
@@ -10,7 +10,7 @@ WHERE
 	c_1.ParentID = 2 AND c_1.Value1 IS NOT NULL
 
 BeforeExecute
--- ClickHouse.Client ClickHouse
+--  ClickHouse.Client ClickHouse
 
 SELECT
 	t1.ParentID,

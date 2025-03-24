@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- ClickHouse.Client ClickHouse
+--  ClickHouse.Client ClickHouse
 
 WITH CTE1_ AS
 (
@@ -28,7 +28,7 @@ FROM
 		INNER JOIN LAST0 c4_1 ON c4_1.ParentID = p.ParentID
 
 BeforeExecute
--- ClickHouse.Client ClickHouse
+--  ClickHouse.Client ClickHouse
 
 SELECT
 	c4.ParentID,

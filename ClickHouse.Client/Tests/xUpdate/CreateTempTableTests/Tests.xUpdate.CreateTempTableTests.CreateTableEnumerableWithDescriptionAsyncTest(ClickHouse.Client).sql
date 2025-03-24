@@ -1,10 +1,10 @@
 ﻿BeforeExecute
--- ClickHouse.Client ClickHouse (asynchronously)
+--  ClickHouse.Client ClickHouse (asynchronously)
 
 DROP TABLE IF EXISTS TempTable
 
 BeforeExecute
--- ClickHouse.Client ClickHouse (asynchronously)
+--  ClickHouse.Client ClickHouse (asynchronously)
 
 CREATE TABLE IF NOT EXISTS TempTable
 (
@@ -16,7 +16,7 @@ BeforeExecute
 INSERT ASYNC BULK TempTable(Name)
 
 BeforeExecute
--- ClickHouse.Client ClickHouse (asynchronously)
+--  ClickHouse.Client ClickHouse (asynchronously)
 
 SELECT
 	t.Name
@@ -25,7 +25,7 @@ FROM
 		INNER JOIN TempTable t ON p.FirstName = t.Name
 
 BeforeExecute
--- ClickHouse.Client ClickHouse (asynchronously)
+--  ClickHouse.Client ClickHouse (asynchronously)
 
 DROP TABLE IF EXISTS TempTable
 

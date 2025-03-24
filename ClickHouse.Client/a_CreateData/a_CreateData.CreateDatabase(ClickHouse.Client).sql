@@ -1,85 +1,85 @@
 ﻿BeforeExecute
--- ClickHouse.Client ClickHouse
+--  ClickHouse.Client ClickHouse
 
 DROP TABLE IF EXISTS Parent;
 
 BeforeExecute
--- ClickHouse.Client ClickHouse
+--  ClickHouse.Client ClickHouse
 
 DROP TABLE IF EXISTS Child;
 
 BeforeExecute
--- ClickHouse.Client ClickHouse
+--  ClickHouse.Client ClickHouse
 
 DROP TABLE IF EXISTS GrandChild;
 
 BeforeExecute
--- ClickHouse.Client ClickHouse
+--  ClickHouse.Client ClickHouse
 
 DROP TABLE IF EXISTS InheritanceParent;
 
 BeforeExecute
--- ClickHouse.Client ClickHouse
+--  ClickHouse.Client ClickHouse
 
 DROP TABLE IF EXISTS InheritanceChild;
 
 BeforeExecute
--- ClickHouse.Client ClickHouse
+--  ClickHouse.Client ClickHouse
 
 DROP TABLE IF EXISTS Doctor;
 
 BeforeExecute
--- ClickHouse.Client ClickHouse
+--  ClickHouse.Client ClickHouse
 
 DROP TABLE IF EXISTS Patient;
 
 BeforeExecute
--- ClickHouse.Client ClickHouse
+--  ClickHouse.Client ClickHouse
 
 DROP TABLE IF EXISTS Person;
 
 BeforeExecute
--- ClickHouse.Client ClickHouse
+--  ClickHouse.Client ClickHouse
 
 DROP TABLE IF EXISTS LinqDataTypes;
 
 BeforeExecute
--- ClickHouse.Client ClickHouse
+--  ClickHouse.Client ClickHouse
 
 DROP TABLE IF EXISTS AllTypes;
 
 BeforeExecute
--- ClickHouse.Client ClickHouse
+--  ClickHouse.Client ClickHouse
 
 DROP TABLE IF EXISTS CollatedTable;
 
 BeforeExecute
--- ClickHouse.Client ClickHouse
+--  ClickHouse.Client ClickHouse
 
 DROP TABLE IF EXISTS TestMerge1
 
 BeforeExecute
--- ClickHouse.Client ClickHouse
+--  ClickHouse.Client ClickHouse
 
 DROP TABLE IF EXISTS TestMerge2;
 
 BeforeExecute
--- ClickHouse.Client ClickHouse
+--  ClickHouse.Client ClickHouse
 
 CREATE TABLE Parent      (ParentID Int32, Value1 Nullable(Int32)) ENGINE = Memory();
 
 BeforeExecute
--- ClickHouse.Client ClickHouse
+--  ClickHouse.Client ClickHouse
 
 CREATE TABLE Child       (ParentID Int32, ChildID Int32) ENGINE = Memory();
 
 BeforeExecute
--- ClickHouse.Client ClickHouse
+--  ClickHouse.Client ClickHouse
 
 CREATE TABLE GrandChild  (ParentID Int32, ChildID Int32, GrandChildID Int32) ENGINE = Memory();
 
 BeforeExecute
--- ClickHouse.Client ClickHouse
+--  ClickHouse.Client ClickHouse
 
 CREATE TABLE LinqDataTypes
 (
@@ -97,7 +97,7 @@ CREATE TABLE LinqDataTypes
 ) ENGINE = MergeTree() ORDER BY ID PRIMARY KEY ID;
 
 BeforeExecute
--- ClickHouse.Client ClickHouse
+--  ClickHouse.Client ClickHouse
 
 CREATE TABLE InheritanceParent
 (
@@ -107,7 +107,7 @@ CREATE TABLE InheritanceParent
 ) ENGINE = MergeTree() ORDER BY InheritanceParentId PRIMARY KEY InheritanceParentId;
 
 BeforeExecute
--- ClickHouse.Client ClickHouse
+--  ClickHouse.Client ClickHouse
 
 CREATE TABLE InheritanceChild
 (
@@ -118,7 +118,7 @@ CREATE TABLE InheritanceChild
 ) ENGINE = MergeTree() ORDER BY InheritanceChildId PRIMARY KEY InheritanceChildId;
 
 BeforeExecute
--- ClickHouse.Client ClickHouse
+--  ClickHouse.Client ClickHouse
 
 CREATE TABLE Person
 (
@@ -131,7 +131,7 @@ CREATE TABLE Person
 ) ENGINE = MergeTree() ORDER BY PersonID PRIMARY KEY PersonID;
 
 BeforeExecute
--- ClickHouse.Client ClickHouse
+--  ClickHouse.Client ClickHouse
 
 INSERT INTO Person (PersonID, FirstName, LastName, MiddleName, Gender)
 	VALUES
@@ -141,7 +141,7 @@ INSERT INTO Person (PersonID, FirstName, LastName, MiddleName, Gender)
 	(4, 'Jürgen', 'König',     'Ko', 'M');
 
 BeforeExecute
--- ClickHouse.Client ClickHouse
+--  ClickHouse.Client ClickHouse
 
 CREATE TABLE Doctor
 (
@@ -150,12 +150,12 @@ CREATE TABLE Doctor
 ) ENGINE = MergeTree() ORDER BY PersonID PRIMARY KEY PersonID;
 
 BeforeExecute
--- ClickHouse.Client ClickHouse
+--  ClickHouse.Client ClickHouse
 
 INSERT INTO Doctor (PersonID, Taxonomy) VALUES (1, 'Psychiatry');
 
 BeforeExecute
--- ClickHouse.Client ClickHouse
+--  ClickHouse.Client ClickHouse
 
 CREATE TABLE Patient
 (
@@ -164,12 +164,12 @@ CREATE TABLE Patient
 ) ENGINE = MergeTree() ORDER BY PersonID PRIMARY KEY PersonID;
 
 BeforeExecute
--- ClickHouse.Client ClickHouse
+--  ClickHouse.Client ClickHouse
 
 INSERT INTO Patient (PersonID, Diagnosis) VALUES (2, 'Hallucination with Paranoid Bugs'' Delirium of Persecution');
 
 BeforeExecute
--- ClickHouse.Client ClickHouse
+--  ClickHouse.Client ClickHouse
 
 CREATE TABLE AllTypes
 (
@@ -191,7 +191,7 @@ CREATE TABLE AllTypes
 ) ENGINE = MergeTree() ORDER BY ID PRIMARY KEY ID;
 
 BeforeExecute
--- ClickHouse.Client ClickHouse
+--  ClickHouse.Client ClickHouse
 
 INSERT INTO AllTypes
 (
@@ -211,7 +211,7 @@ SELECT	2,
 		'23233', 'тест', '234', '1'
 
 BeforeExecute
--- ClickHouse.Client ClickHouse
+--  ClickHouse.Client ClickHouse
 
 CREATE TABLE CollatedTable
 (
@@ -221,7 +221,7 @@ CREATE TABLE CollatedTable
 )  ENGINE = MergeTree() ORDER BY Id PRIMARY KEY Id;
 
 BeforeExecute
--- ClickHouse.Client ClickHouse
+--  ClickHouse.Client ClickHouse
 
 CREATE TABLE TestMerge1
 (
@@ -252,7 +252,7 @@ CREATE TABLE TestMerge1
 )  ENGINE = MergeTree() ORDER BY Id PRIMARY KEY Id;
 
 BeforeExecute
--- ClickHouse.Client ClickHouse
+--  ClickHouse.Client ClickHouse
 
 CREATE TABLE TestMerge2
 (
@@ -283,12 +283,12 @@ CREATE TABLE TestMerge2
 )  ENGINE = MergeTree() ORDER BY Id PRIMARY KEY Id;
 
 BeforeExecute
--- ClickHouse.Client ClickHouse
+--  ClickHouse.Client ClickHouse
 
 DROP TABLE IF EXISTS ReplacingMergeTreeTable;
 
 BeforeExecute
--- ClickHouse.Client ClickHouse
+--  ClickHouse.Client ClickHouse
 
 CREATE TABLE ReplacingMergeTreeTable
 (

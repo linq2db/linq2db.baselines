@@ -2,7 +2,7 @@
 INSERT ASYNC BULK DateOnlyTable(Date)
 
 BeforeExecute
--- ClickHouse.Client ClickHouse
+--  ClickHouse.Client ClickHouse
 
 SELECT
 	t1.Date

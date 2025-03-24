@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- ClickHouse.Client ClickHouse
+--  ClickHouse.Client ClickHouse
 
 ALTER TABLE
 	Parent
@@ -10,7 +10,7 @@ BeforeExecute
 INSERT ASYNC BULK Parent(ParentID, Value1)
 
 BeforeExecute
--- ClickHouse.Client ClickHouse
+--  ClickHouse.Client ClickHouse
 
 ALTER TABLE
 	Parent
@@ -18,7 +18,7 @@ DELETE WHERE
 	ParentID = 1000 AND Value1 IS NULL OR ParentID = 1001 AND Value1 IS NULL
 
 BeforeExecute
--- ClickHouse.Client ClickHouse
+--  ClickHouse.Client ClickHouse
 
 ALTER TABLE
 	Parent

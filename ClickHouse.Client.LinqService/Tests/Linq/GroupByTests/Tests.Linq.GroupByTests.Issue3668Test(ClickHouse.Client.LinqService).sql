@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- ClickHouse.Client ClickHouse
+--  ClickHouse.Client ClickHouse
 
 SELECT
 	m_1.PersonID,
@@ -15,7 +15,7 @@ WHERE
 	(m_1.PersonID = 1 AND m_1.LastName <> 'test' OR m_1.FirstName <> 'test' AND m_1.PersonID = 2)
 
 BeforeExecute
--- ClickHouse.Client ClickHouse
+--  ClickHouse.Client ClickHouse
 
 SELECT
 	x.PersonID

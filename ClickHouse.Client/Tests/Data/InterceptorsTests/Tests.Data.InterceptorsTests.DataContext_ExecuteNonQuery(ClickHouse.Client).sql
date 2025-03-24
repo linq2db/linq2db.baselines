@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- ClickHouse.Client ClickHouse
+--  ClickHouse.Client ClickHouse
 
 CREATE TEMPORARY TABLE InterceptorsTestsTable
 (
@@ -8,7 +8,7 @@ CREATE TEMPORARY TABLE InterceptorsTestsTable
 ENGINE = Memory()
 
 BeforeExecute
--- ClickHouse.Client ClickHouse
+--  ClickHouse.Client ClickHouse
 
 DROP TABLE IF EXISTS InterceptorsTestsTable
 

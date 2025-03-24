@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- ClickHouse.Client ClickHouse
+--  ClickHouse.Client ClickHouse
 
 CREATE TEMPORARY TABLE UniqueIdTmp
 (
@@ -14,7 +14,7 @@ BeforeExecute
 INSERT ASYNC BULK UniqueIdTmp(ID)
 
 BeforeExecute
--- ClickHouse.Client ClickHouse (asynchronously)
+--  ClickHouse.Client ClickHouse (asynchronously)
 
 SELECT
 	COUNT(*)
@@ -22,7 +22,7 @@ FROM
 	UniqueIdTmp t1
 
 BeforeExecute
--- ClickHouse.Client ClickHouse (asynchronously)
+--  ClickHouse.Client ClickHouse (asynchronously)
 
 DROP TABLE IF EXISTS UniqueIdTmp
 

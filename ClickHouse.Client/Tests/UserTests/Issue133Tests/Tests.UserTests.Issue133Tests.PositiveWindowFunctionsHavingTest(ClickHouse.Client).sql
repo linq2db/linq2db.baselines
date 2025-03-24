@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- ClickHouse.Client ClickHouse
+--  ClickHouse.Client ClickHouse
 
 SELECT
 	(toFloat64(COUNT(*)) * toFloat64(100)) / SUM(COUNT(*)) OVER(),

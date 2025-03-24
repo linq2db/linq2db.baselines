@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- ClickHouse.Client ClickHouse
+--  ClickHouse.Client ClickHouse
 
 SELECT
 	nm.MiddleName
@@ -9,7 +9,7 @@ WHERE
 	NOT (nm.MiddleName IS NULL OR CHAR_LENGTH(nm.MiddleName) = 0)
 
 BeforeExecute
--- ClickHouse.Client ClickHouse
+--  ClickHouse.Client ClickHouse
 
 SELECT
 	t1.FirstName,

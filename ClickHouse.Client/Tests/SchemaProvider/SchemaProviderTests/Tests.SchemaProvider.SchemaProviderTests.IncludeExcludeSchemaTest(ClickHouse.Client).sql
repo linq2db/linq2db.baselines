@@ -1,15 +1,15 @@
 ﻿BeforeExecute
--- ClickHouse.Client ClickHouse
+--  ClickHouse.Client ClickHouse
 
 select name, comment, engine LIKE '%View' from system.tables where is_temporary = 0 and database = database()
 
 BeforeExecute
--- ClickHouse.Client ClickHouse
+--  ClickHouse.Client ClickHouse
 
 select name, primary_key from system.tables where is_temporary = 0 and database = database() and primary_key <> ''
 
 BeforeExecute
--- ClickHouse.Client ClickHouse
+--  ClickHouse.Client ClickHouse
 
 
 SELECT
@@ -26,27 +26,27 @@ FROM system.columns
 WHERE database = database() and default_kind <> 'ALIAS'
 
 BeforeExecute
--- ClickHouse.Client ClickHouse
+--  ClickHouse.Client ClickHouse
 
 select hostName()
 
 BeforeExecute
--- ClickHouse.Client ClickHouse
+--  ClickHouse.Client ClickHouse
 
 select database()
 
 BeforeExecute
--- ClickHouse.Client ClickHouse
+--  ClickHouse.Client ClickHouse
 
 select name, comment, engine LIKE '%View' from system.tables where is_temporary = 0 and database = database()
 
 BeforeExecute
--- ClickHouse.Client ClickHouse
+--  ClickHouse.Client ClickHouse
 
 select name, primary_key from system.tables where is_temporary = 0 and database = database() and primary_key <> ''
 
 BeforeExecute
--- ClickHouse.Client ClickHouse
+--  ClickHouse.Client ClickHouse
 
 
 SELECT
@@ -63,27 +63,27 @@ FROM system.columns
 WHERE database = database() and default_kind <> 'ALIAS'
 
 BeforeExecute
--- ClickHouse.Client ClickHouse
+--  ClickHouse.Client ClickHouse
 
 select hostName()
 
 BeforeExecute
--- ClickHouse.Client ClickHouse
+--  ClickHouse.Client ClickHouse
 
 select database()
 
 BeforeExecute
--- ClickHouse.Client ClickHouse
+--  ClickHouse.Client ClickHouse
 
 select name, comment, engine LIKE '%View' from system.tables where is_temporary = 0 and database = database()
 
 BeforeExecute
--- ClickHouse.Client ClickHouse
+--  ClickHouse.Client ClickHouse
 
 select name, primary_key from system.tables where is_temporary = 0 and database = database() and primary_key <> ''
 
 BeforeExecute
--- ClickHouse.Client ClickHouse
+--  ClickHouse.Client ClickHouse
 
 
 SELECT
@@ -100,12 +100,12 @@ FROM system.columns
 WHERE database = database() and default_kind <> 'ALIAS'
 
 BeforeExecute
--- ClickHouse.Client ClickHouse
+--  ClickHouse.Client ClickHouse
 
 select hostName()
 
 BeforeExecute
--- ClickHouse.Client ClickHouse
+--  ClickHouse.Client ClickHouse
 
 select database()
 

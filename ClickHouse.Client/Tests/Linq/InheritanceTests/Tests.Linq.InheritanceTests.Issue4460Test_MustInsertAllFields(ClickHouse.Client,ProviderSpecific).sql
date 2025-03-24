@@ -2,7 +2,7 @@
 INSERT ASYNC BULK Issue4460Table(Id, Code, Name, Surname)
 
 BeforeExecute
--- ClickHouse.Client ClickHouse
+--  ClickHouse.Client ClickHouse
 
 SELECT
 	t1.Code,

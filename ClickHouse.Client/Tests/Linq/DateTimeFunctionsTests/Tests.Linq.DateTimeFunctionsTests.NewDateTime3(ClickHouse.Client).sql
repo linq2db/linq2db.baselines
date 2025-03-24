@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- ClickHouse.Client ClickHouse
+--  ClickHouse.Client ClickHouse
 
 SELECT
 	makeDateTime(toYear(t.DateTimeValue), 10, 1, 20, 35, 44)

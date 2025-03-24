@@ -5,7 +5,7 @@ BeforeExecute
 INSERT ASYNC BULK SimpleBulkCopyTable(Id)
 
 BeforeExecute
--- ClickHouse.Client ClickHouse
+--  ClickHouse.Client ClickHouse
 
 INSERT INTO SimpleBulkCopyTable
 (

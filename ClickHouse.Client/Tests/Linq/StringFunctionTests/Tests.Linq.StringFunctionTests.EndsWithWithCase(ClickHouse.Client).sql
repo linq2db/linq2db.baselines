@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- ClickHouse.Client ClickHouse
+--  ClickHouse.Client ClickHouse
 
 SELECT
 	COUNT(*)
@@ -9,7 +9,7 @@ WHERE
 	endsWith(p.Diagnosis, 'Persecution') AND p.PersonID = 2
 
 BeforeExecute
--- ClickHouse.Client ClickHouse
+--  ClickHouse.Client ClickHouse
 
 SELECT
 	COUNT(*)
@@ -19,7 +19,7 @@ WHERE
 	NOT endsWith(p.Diagnosis, 'Persecution') AND p.PersonID = 2
 
 BeforeExecute
--- ClickHouse.Client ClickHouse
+--  ClickHouse.Client ClickHouse
 
 SELECT
 	COUNT(*)
@@ -29,7 +29,7 @@ WHERE
 	endsWith(p.Diagnosis, 'persecution') AND p.PersonID = 2
 
 BeforeExecute
--- ClickHouse.Client ClickHouse
+--  ClickHouse.Client ClickHouse
 
 SELECT
 	COUNT(*)

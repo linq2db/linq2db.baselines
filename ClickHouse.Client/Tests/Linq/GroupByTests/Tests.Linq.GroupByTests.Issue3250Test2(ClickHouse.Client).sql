@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- ClickHouse.Client ClickHouse
+--  ClickHouse.Client ClickHouse
 
 SELECT
 	concat(toString(COUNT(*)), ' items have not been processed, e.g. #', toString(MIN(s.PersonID)), '.')

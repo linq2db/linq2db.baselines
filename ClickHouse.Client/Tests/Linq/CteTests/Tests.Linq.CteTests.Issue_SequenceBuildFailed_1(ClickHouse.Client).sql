@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- ClickHouse.Client ClickHouse
+--  ClickHouse.Client ClickHouse
 
 WITH RECURSIVE cte AS
 (
@@ -33,7 +33,7 @@ FROM
 		INNER JOIN Person d ON d.PersonID = m_1.Item1
 
 BeforeExecute
--- ClickHouse.Client ClickHouse
+--  ClickHouse.Client ClickHouse
 
 WITH RECURSIVE cte AS
 (

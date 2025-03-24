@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- ClickHouse.Client ClickHouse
+--  ClickHouse.Client ClickHouse
 
 SELECT
 	sum(grp_1.MoneyValue),
@@ -17,7 +17,7 @@ GROUP BY
 	grp_1.Date_1
 
 BeforeExecute
--- ClickHouse.Client ClickHouse
+--  ClickHouse.Client ClickHouse
 
 SELECT
 	sum(grp_1.MoneyValue),
