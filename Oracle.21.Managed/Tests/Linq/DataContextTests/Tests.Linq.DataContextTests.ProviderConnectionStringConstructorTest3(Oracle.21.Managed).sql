@@ -10,7 +10,7 @@ ORDER BY
 	t1."ChildID"
 
 BeforeExecute
---  Oracle.Managed Oracle12
+-- Oracle.Managed Oracle12
 
 SELECT
 	t1."ParentID",
