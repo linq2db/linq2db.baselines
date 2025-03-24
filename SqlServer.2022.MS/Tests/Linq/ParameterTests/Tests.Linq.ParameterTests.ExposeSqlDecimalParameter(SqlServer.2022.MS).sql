@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2022.MS SqlServer.2022
+--  SqlServer.2022.MS SqlServer.2022
 DECLARE @p Decimal(6, 3)
 SET     @p = 123.456
 

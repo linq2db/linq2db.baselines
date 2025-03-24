@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2022.MS SqlServer.2022
+--  SqlServer.2022.MS SqlServer.2022
 DECLARE @CharFld NChar(1) -- StringFixedLength
 SET     @CharFld = N'P'
 
@@ -13,7 +13,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2022.MS SqlServer.2022
+--  SqlServer.2022.MS SqlServer.2022
 
 SELECT TOP (1)
 	[t1].[Id],

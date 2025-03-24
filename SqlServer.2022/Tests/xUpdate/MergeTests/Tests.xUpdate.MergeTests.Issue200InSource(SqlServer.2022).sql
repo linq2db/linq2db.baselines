@@ -1,14 +1,14 @@
 ﻿BeforeExecute
 BeginTransaction
 BeforeExecute
--- SqlServer.2022
+--  SqlServer.2022
 
 DELETE [t1]
 FROM
 	[AllTypes2] [t1]
 
 BeforeExecute
--- SqlServer.2022
+--  SqlServer.2022
 
 MERGE INTO [AllTypes2] [Target]
 USING (VALUES
@@ -36,7 +36,7 @@ VALUES
 ;
 
 BeforeExecute
--- SqlServer.2022
+--  SqlServer.2022
 
 SELECT
 	[t1].[ID],

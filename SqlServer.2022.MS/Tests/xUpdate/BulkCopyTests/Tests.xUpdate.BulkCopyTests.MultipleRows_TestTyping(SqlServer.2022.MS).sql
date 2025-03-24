@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2022.MS SqlServer.2022
+--  SqlServer.2022.MS SqlServer.2022
 
 INSERT INTO [MultipleRowsTable]
 (
@@ -12,7 +12,7 @@ VALUES
 (2,1.5,-2.6)
 
 BeforeExecute
--- SqlServer.2022.MS SqlServer.2022
+--  SqlServer.2022.MS SqlServer.2022
 
 SELECT
 	[t1].[Id],

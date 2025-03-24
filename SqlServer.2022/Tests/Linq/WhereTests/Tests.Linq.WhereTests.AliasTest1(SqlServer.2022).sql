@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2022
+--  SqlServer.2022
 DECLARE @user Int -- Int32
 SET     @user = 3
 

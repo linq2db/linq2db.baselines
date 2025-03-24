@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2022
+--  SqlServer.2022
 
 UPDATE
 	[TableWithData]
@@ -21,7 +21,7 @@ WHERE
 	[TableWithData].[Id] > 3
 
 BeforeExecute
--- SqlServer.2022
+--  SqlServer.2022
 
 SELECT
 	[t1].[Id],

@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2022.MS SqlServer.2022
+--  SqlServer.2022.MS SqlServer.2022
 DECLARE @true_value VarChar -- AnsiString
 SET     @true_value = N'Y'
 

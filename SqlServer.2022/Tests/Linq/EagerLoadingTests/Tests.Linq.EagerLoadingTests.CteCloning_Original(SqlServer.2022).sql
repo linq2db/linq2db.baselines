@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 BeginTransaction(RepeatableRead)
 BeforeExecute
--- SqlServer.2022
+--  SqlServer.2022
 
 WITH [cte] ([Value2], [Value4])
 AS
@@ -40,7 +40,7 @@ FROM
 BeforeExecute
 DisposeTransaction
 BeforeExecute
--- SqlServer.2022
+--  SqlServer.2022
 
 WITH [cte]
 (

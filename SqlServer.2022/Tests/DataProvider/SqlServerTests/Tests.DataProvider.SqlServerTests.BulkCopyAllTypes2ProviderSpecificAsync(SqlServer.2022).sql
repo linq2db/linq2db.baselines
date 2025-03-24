@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2022
+--  SqlServer.2022
 
 DELETE [p]
 FROM
@@ -11,7 +11,7 @@ BeforeExecute
 INSERT ASYNC BULK [AllTypes2](ID, dateDataType, datetimeoffsetDataType, datetime2DataType, timeDataType, hierarchyidDataType, geographyDataType, geometryDataType)
 
 BeforeExecute
--- SqlServer.2022
+--  SqlServer.2022
 
 SELECT
 	[p].[ID],

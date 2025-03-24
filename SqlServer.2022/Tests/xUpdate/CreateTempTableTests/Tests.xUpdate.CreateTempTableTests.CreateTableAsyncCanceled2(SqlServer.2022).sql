@@ -1,10 +1,10 @@
 ﻿BeforeExecute
--- SqlServer.2022
+--  SqlServer.2022
 
 DROP TABLE IF EXISTS [TempTable]
 
 BeforeExecute
--- SqlServer.2022 (asynchronously)
+--  SqlServer.2022 (asynchronously)
 
 CREATE TABLE [tempdb]..[#TempTable]
 (
@@ -12,7 +12,7 @@ CREATE TABLE [tempdb]..[#TempTable]
 )
 
 BeforeExecute
--- SqlServer.2022 (asynchronously)
+--  SqlServer.2022 (asynchronously)
 
 INSERT INTO [tempdb]..[#TempTable]
 (
@@ -24,12 +24,12 @@ FROM
 	[Parent] [p]
 
 BeforeExecute
--- SqlServer.2022 (asynchronously)
+--  SqlServer.2022 (asynchronously)
 
 DROP TABLE IF EXISTS [tempdb]..[#TempTable]
 
 BeforeExecute
--- SqlServer.2022
+--  SqlServer.2022
 
 DROP TABLE [TempTable]
 

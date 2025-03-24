@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2022
+--  SqlServer.2022
 DECLARE @n Int -- Int32
 SET     @n = 1
 
@@ -19,7 +19,7 @@ FROM
 		INNER JOIN [Child] [d] ON [m_1].[ParentID] = [d].[ParentID] - @n
 
 BeforeExecute
--- SqlServer.2022
+--  SqlServer.2022
 
 SELECT
 	[p].[ParentID],

@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2022.MS SqlServer.2022
+--  SqlServer.2022.MS SqlServer.2022
 
 CREATE TABLE [tempdb]..[#TempTable]
 (
@@ -9,12 +9,12 @@ CREATE TABLE [tempdb]..[#TempTable]
 )
 
 BeforeExecute
--- SqlServer.2022.MS SqlServer.2022
+--  SqlServer.2022.MS SqlServer.2022
 
 DROP TABLE [tempdb]..[#TempTable]
 
 BeforeExecute
--- SqlServer.2022.MS SqlServer.2022
+--  SqlServer.2022.MS SqlServer.2022
 
 CREATE TABLE [tempdb]..[#TempTable]
 (

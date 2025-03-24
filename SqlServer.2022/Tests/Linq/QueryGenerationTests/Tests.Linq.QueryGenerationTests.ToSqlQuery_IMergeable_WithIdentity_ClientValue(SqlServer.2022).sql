@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2022
+--  SqlServer.2022
 
 SET IDENTITY_INSERT [TableWithIdentity] ON
 MERGE INTO [TableWithIdentity] [Target]

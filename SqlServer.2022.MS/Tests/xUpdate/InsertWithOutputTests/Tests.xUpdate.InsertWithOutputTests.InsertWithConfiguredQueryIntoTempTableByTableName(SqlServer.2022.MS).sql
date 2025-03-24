@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2022.MS SqlServer.2022
+--  SqlServer.2022.MS SqlServer.2022
 
 CREATE TABLE [tempdb]..[#TableWithData_target]
 (
@@ -9,7 +9,7 @@ CREATE TABLE [tempdb]..[#TableWithData_target]
 )
 
 BeforeExecute
--- SqlServer.2022.MS SqlServer.2022
+--  SqlServer.2022.MS SqlServer.2022
 
 CREATE TABLE [tempdb]..[#TableWithData_output]
 (
@@ -19,7 +19,7 @@ CREATE TABLE [tempdb]..[#TableWithData_output]
 )
 
 BeforeExecute
--- SqlServer.2022.MS SqlServer.2022
+--  SqlServer.2022.MS SqlServer.2022
 
 INSERT INTO [tempdb]..[#TableWithData_target]
 (
@@ -47,7 +47,7 @@ WHERE
 	[p].[Gender] = 'F'
 
 BeforeExecute
--- SqlServer.2022.MS SqlServer.2022
+--  SqlServer.2022.MS SqlServer.2022
 
 SELECT
 	[t1].[Id],
@@ -57,7 +57,7 @@ FROM
 	[tempdb]..[#TableWithData_target] [t1]
 
 BeforeExecute
--- SqlServer.2022.MS SqlServer.2022
+--  SqlServer.2022.MS SqlServer.2022
 
 SELECT
 	[t1].[Id],
@@ -67,12 +67,12 @@ FROM
 	[tempdb]..[#TableWithData_output] [t1]
 
 BeforeExecute
--- SqlServer.2022.MS SqlServer.2022
+--  SqlServer.2022.MS SqlServer.2022
 
 DROP TABLE IF EXISTS [tempdb]..[#TableWithData_output]
 
 BeforeExecute
--- SqlServer.2022.MS SqlServer.2022
+--  SqlServer.2022.MS SqlServer.2022
 
 DROP TABLE IF EXISTS [tempdb]..[#TableWithData_target]
 

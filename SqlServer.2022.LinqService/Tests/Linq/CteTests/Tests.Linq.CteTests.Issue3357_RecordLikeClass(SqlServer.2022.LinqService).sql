@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2022
+--  SqlServer.2022
 
 WITH [cte] ([Id], [FirstName], [LastName])
 AS

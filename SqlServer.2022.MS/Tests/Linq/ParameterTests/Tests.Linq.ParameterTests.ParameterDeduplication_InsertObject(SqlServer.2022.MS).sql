@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2022.MS SqlServer.2022
+--  SqlServer.2022.MS SqlServer.2022
 DECLARE @Id Int -- Int32
 SET     @Id = 1
 DECLARE @Int1 Int -- Int32
@@ -41,7 +41,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2022.MS SqlServer.2022
+--  SqlServer.2022.MS SqlServer.2022
 DECLARE @Id Int -- Int32
 SET     @Id = 2
 DECLARE @Int1 Int -- Int32
@@ -83,7 +83,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2022.MS SqlServer.2022
+--  SqlServer.2022.MS SqlServer.2022
 
 SELECT
 	[t1].[Id],

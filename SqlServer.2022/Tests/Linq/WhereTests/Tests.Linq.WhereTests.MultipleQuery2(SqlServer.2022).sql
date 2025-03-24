@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2022
+--  SqlServer.2022
 
 SELECT
 	[p].[FirstName],
@@ -13,7 +13,7 @@ WHERE
 	[p].[MiddleName] IS NULL
 
 BeforeExecute
--- SqlServer.2022
+--  SqlServer.2022
 DECLARE @str NVarChar(4000) -- String
 SET     @str = N'123'
 

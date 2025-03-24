@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2022
+--  SqlServer.2022
 
 MERGE INTO [PKOnlyTable] [Target]
 USING (VALUES
@@ -22,7 +22,7 @@ VALUES
 ;
 
 BeforeExecute
--- SqlServer.2022
+--  SqlServer.2022
 
 SELECT
 	[t1].[ID]

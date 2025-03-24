@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2022
+--  SqlServer.2022
 DECLARE @param Int -- Int32
 SET     @param = 100
 

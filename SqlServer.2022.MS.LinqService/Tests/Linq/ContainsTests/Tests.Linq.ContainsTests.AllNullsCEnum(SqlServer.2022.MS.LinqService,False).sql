@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2022.MS SqlServer.2022
+--  SqlServer.2022.MS SqlServer.2022
 DECLARE @In VarChar(20) -- AnsiString
 SET     @In = NULL
 
@@ -11,7 +11,7 @@ WHERE
 	[s].[CEnum] IN (@In, @In)
 
 BeforeExecute
--- SqlServer.2022.MS SqlServer.2022
+--  SqlServer.2022.MS SqlServer.2022
 DECLARE @NotIn VarChar(20) -- AnsiString
 SET     @NotIn = NULL
 

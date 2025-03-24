@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2022.MS SqlServer.2022
+--  SqlServer.2022.MS SqlServer.2022
 
 MERGE INTO [TestNullableParameterTarget] [Target]
 USING (
@@ -31,7 +31,7 @@ VALUES
 ;
 
 BeforeExecute
--- SqlServer.2022.MS SqlServer.2022
+--  SqlServer.2022.MS SqlServer.2022
 DECLARE @id Int -- Int32
 SET     @id = 1
 

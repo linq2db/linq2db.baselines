@@ -1,20 +1,20 @@
 ﻿BeforeExecute
--- SqlServer.2022
+--  SqlServer.2022
 
 DROP TABLE IF EXISTS [issue_4254_media_item_to_media_item_categories]
 
 BeforeExecute
--- SqlServer.2022
+--  SqlServer.2022
 
 DROP TABLE IF EXISTS [issue_4254_media_item_user_share]
 
 BeforeExecute
--- SqlServer.2022
+--  SqlServer.2022
 
 DROP TABLE IF EXISTS [issue_4254_media_items]
 
 BeforeExecute
--- SqlServer.2022
+--  SqlServer.2022
 
 CREATE TABLE [issue_4254_media_items]
 (
@@ -24,7 +24,7 @@ CREATE TABLE [issue_4254_media_items]
 )
 
 BeforeExecute
--- SqlServer.2022
+--  SqlServer.2022
 
 CREATE TABLE [issue_4254_media_item_user_share]
 (
@@ -38,7 +38,7 @@ CREATE TABLE [issue_4254_media_item_user_share]
 )
 
 BeforeExecute
--- SqlServer.2022
+--  SqlServer.2022
 
 CREATE TABLE [issue_4254_media_item_to_media_item_categories]
 (
@@ -52,7 +52,7 @@ CREATE TABLE [issue_4254_media_item_to_media_item_categories]
 BeforeExecute
 BeginTransaction(RepeatableRead)
 BeforeExecute
--- SqlServer.2022
+--  SqlServer.2022
 DECLARE @userId UniqueIdentifier -- Guid
 SET     @userId = 'bc7b663d-0fde-4327-8f92-5d8cc3a11d11'
 DECLARE @now DateTime2
@@ -92,7 +92,7 @@ FROM
 BeforeExecute
 DisposeTransaction
 BeforeExecute
--- SqlServer.2022
+--  SqlServer.2022
 DECLARE @now DateTime2
 SET     @now = DATETIME2FROMPARTS(2020, 2, 29, 17, 54, 55, 1231234, 7)
 DECLARE @userId UniqueIdentifier -- Guid
@@ -133,7 +133,7 @@ WHERE
 BeforeExecute
 BeginTransaction(RepeatableRead)
 BeforeExecute
--- SqlServer.2022
+--  SqlServer.2022
 DECLARE @userId UniqueIdentifier -- Guid
 SET     @userId = 'a948600d-de21-4f74-8ac2-9516b287076e'
 DECLARE @now DateTime2
@@ -173,7 +173,7 @@ FROM
 BeforeExecute
 DisposeTransaction
 BeforeExecute
--- SqlServer.2022
+--  SqlServer.2022
 DECLARE @now DateTime2
 SET     @now = DATETIME2FROMPARTS(2020, 2, 29, 17, 54, 55, 1230000, 7)
 DECLARE @userId UniqueIdentifier -- Guid
@@ -212,17 +212,17 @@ WHERE
 	)
 
 BeforeExecute
--- SqlServer.2022
+--  SqlServer.2022
 
 DROP TABLE IF EXISTS [issue_4254_media_item_to_media_item_categories]
 
 BeforeExecute
--- SqlServer.2022
+--  SqlServer.2022
 
 DROP TABLE IF EXISTS [issue_4254_media_item_user_share]
 
 BeforeExecute
--- SqlServer.2022
+--  SqlServer.2022
 
 DROP TABLE IF EXISTS [issue_4254_media_items]
 

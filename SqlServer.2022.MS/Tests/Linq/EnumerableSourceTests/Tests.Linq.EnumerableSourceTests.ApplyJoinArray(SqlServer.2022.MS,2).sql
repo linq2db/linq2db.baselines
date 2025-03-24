@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2022.MS SqlServer.2022
+--  SqlServer.2022.MS SqlServer.2022
 DECLARE @doe NVarChar(4000) -- String
 SET     @doe = N'Doe'
 
@@ -12,7 +12,7 @@ FROM
 		) [n]([item])
 
 BeforeExecute
--- SqlServer.2022.MS SqlServer.2022
+--  SqlServer.2022.MS SqlServer.2022
 DECLARE @doe NVarChar(4000) -- String
 SET     @doe = N'Doe1'
 

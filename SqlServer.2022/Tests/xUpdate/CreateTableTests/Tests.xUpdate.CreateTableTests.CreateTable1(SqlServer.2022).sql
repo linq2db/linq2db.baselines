@@ -1,10 +1,10 @@
 ﻿BeforeExecute
--- SqlServer.2022
+--  SqlServer.2022
 
 DROP TABLE IF EXISTS [TestTable]
 
 BeforeExecute
--- SqlServer.2022
+--  SqlServer.2022
 
 CREATE TABLE [TestTable]
 (
@@ -17,7 +17,7 @@ CREATE TABLE [TestTable]
 )
 
 BeforeExecute
--- SqlServer.2022
+--  SqlServer.2022
 
 SELECT
 	[t1].[ID],
@@ -28,7 +28,7 @@ FROM
 	[TestTable] [t1]
 
 BeforeExecute
--- SqlServer.2022
+--  SqlServer.2022
 
 DROP TABLE [TestTable]
 

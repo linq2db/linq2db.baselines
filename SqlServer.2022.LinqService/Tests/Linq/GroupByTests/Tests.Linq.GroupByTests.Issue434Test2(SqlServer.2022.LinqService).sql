@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2022
+--  SqlServer.2022
 
 SELECT
 	[m_1].[PersonID],
@@ -12,7 +12,7 @@ WHERE
 	Lower([m_1].[FirstName]) LIKE N'%test%' ESCAPE N'~'
 
 BeforeExecute
--- SqlServer.2022
+--  SqlServer.2022
 
 SELECT
 	[p].[FirstName],

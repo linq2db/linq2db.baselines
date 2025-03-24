@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 BeginTransaction(RepeatableRead)
 BeforeExecute
--- SqlServer.2022
+--  SqlServer.2022
 
 SELECT
 	[m_1].[Children],
@@ -26,7 +26,7 @@ FROM
 BeforeExecute
 DisposeTransaction
 BeforeExecute
--- SqlServer.2022
+--  SqlServer.2022
 
 SELECT
 	[item_1].[Name],

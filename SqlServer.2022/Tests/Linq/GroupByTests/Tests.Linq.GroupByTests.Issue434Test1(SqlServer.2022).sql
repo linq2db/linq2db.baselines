@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 BeginTransaction(RepeatableRead)
 BeforeExecute
--- SqlServer.2022
+--  SqlServer.2022
 DECLARE @input NVarChar(4000) -- String
 SET     @input = N'%test%'
 
@@ -18,7 +18,7 @@ WHERE
 BeforeExecute
 DisposeTransaction
 BeforeExecute
--- SqlServer.2022
+--  SqlServer.2022
 DECLARE @input NVarChar(4000) -- String
 SET     @input = N'%test%'
 

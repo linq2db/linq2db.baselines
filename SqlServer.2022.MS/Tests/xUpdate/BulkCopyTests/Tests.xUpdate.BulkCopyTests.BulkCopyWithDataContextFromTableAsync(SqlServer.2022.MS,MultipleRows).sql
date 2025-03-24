@@ -5,7 +5,7 @@ BeforeExecute
 INSERT ASYNC BULK [SimpleBulkCopyTable](Id)
 
 BeforeExecute
--- SqlServer.2022.MS SqlServer.2022 (asynchronously)
+--  SqlServer.2022.MS SqlServer.2022 (asynchronously)
 
 INSERT INTO [SimpleBulkCopyTable]
 (
@@ -21,7 +21,7 @@ BeforeExecute
 INSERT ASYNC BULK [SimpleBulkCopyTable](Id)
 
 BeforeExecute
--- SqlServer.2022.MS SqlServer.2022 (asynchronously)
+--  SqlServer.2022.MS SqlServer.2022 (asynchronously)
 
 INSERT INTO [SimpleBulkCopyTable]
 (

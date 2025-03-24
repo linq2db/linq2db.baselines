@@ -1,10 +1,10 @@
 ﻿BeforeExecute
--- SqlServer.2022
+--  SqlServer.2022
 
 DROP TABLE IF EXISTS [AllTypeCreateTest]
 
 BeforeExecute
--- SqlServer.2022
+--  SqlServer.2022
 
 CREATE TABLE [AllTypeCreateTest]
 (
@@ -53,7 +53,7 @@ CREATE TABLE [AllTypeCreateTest]
 )
 
 BeforeExecute
--- SqlServer.2022
+--  SqlServer.2022
 
 SELECT
 	[t1].[ID],
@@ -102,7 +102,7 @@ FROM
 	[AllTypeCreateTest] [t1]
 
 BeforeExecute
--- SqlServer.2022
+--  SqlServer.2022
 
 DROP TABLE [AllTypeCreateTest]
 

@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2022 (asynchronously)
+--  SqlServer.2022 (asynchronously)
 
 
 select 1, 1 from INFORMATION_SCHEMA.TABLES where 1 = 0;

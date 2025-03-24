@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2022.MS SqlServer.2022
+--  SqlServer.2022.MS SqlServer.2022
 DECLARE @skip Int -- Int32
 SET     @skip = 0
 DECLARE @take Int -- Int32
@@ -18,7 +18,7 @@ ORDER BY
 OFFSET @skip ROWS FETCH NEXT @take ROWS ONLY 
 
 BeforeExecute
--- SqlServer.2022.MS SqlServer.2022
+--  SqlServer.2022.MS SqlServer.2022
 DECLARE @skip Int -- Int32
 SET     @skip = 20
 DECLARE @take Int -- Int32
@@ -38,7 +38,7 @@ ORDER BY
 OFFSET @skip ROWS FETCH NEXT @take ROWS ONLY 
 
 BeforeExecute
--- SqlServer.2022.MS SqlServer.2022
+--  SqlServer.2022.MS SqlServer.2022
 DECLARE @take Int -- Int32
 SET     @take = 1
 DECLARE @Id Int -- Int32
@@ -75,7 +75,7 @@ ORDER BY
 	[t1].[RowNumber]
 
 BeforeExecute
--- SqlServer.2022.MS SqlServer.2022
+--  SqlServer.2022.MS SqlServer.2022
 DECLARE @take Int -- Int32
 SET     @take = 1
 DECLARE @Id Int -- Int32
@@ -120,7 +120,7 @@ ORDER BY
 	[t1].[RowNumber]
 
 BeforeExecute
--- SqlServer.2022.MS SqlServer.2022
+--  SqlServer.2022.MS SqlServer.2022
 DECLARE @Id Int -- Int32
 SET     @Id = 2
 
@@ -140,7 +140,7 @@ WHERE
 	[t1].[Id] = @Id
 
 BeforeExecute
--- SqlServer.2022.MS SqlServer.2022
+--  SqlServer.2022.MS SqlServer.2022
 DECLARE @Id Int -- Int32
 SET     @Id = 78
 

@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2022.MS SqlServer.2022
+--  SqlServer.2022.MS SqlServer.2022
 
 SELECT
 	IIF(([i].[BoolValue] = 0 AND [i].[BoolValue] IS NOT NULL OR [i].[BoolValue] IS NULL) AND ([i].[IntValue] = (

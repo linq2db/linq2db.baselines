@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2022.MS SqlServer.2022
+--  SqlServer.2022.MS SqlServer.2022
 
 SELECT
 	[e].[Id],
@@ -12,7 +12,7 @@ WHERE
 	[e].[Id] = 1 AND [e].[Id] = 1
 
 BeforeExecute
--- SqlServer.2022.MS SqlServer.2022
+--  SqlServer.2022.MS SqlServer.2022
 
 SELECT
 	[t1].[Id],
@@ -23,7 +23,7 @@ FROM
 	[TestConstantsData] [t1]
 
 BeforeExecute
--- SqlServer.2022.MS SqlServer.2022
+--  SqlServer.2022.MS SqlServer.2022
 
 SELECT
 	[e].[Id],
@@ -36,7 +36,7 @@ WHERE
 	[e].[Id] = 1 AND [e].[Id] = 1
 
 BeforeExecute
--- SqlServer.2022.MS SqlServer.2022
+--  SqlServer.2022.MS SqlServer.2022
 
 SELECT
 	[t1].[Id],

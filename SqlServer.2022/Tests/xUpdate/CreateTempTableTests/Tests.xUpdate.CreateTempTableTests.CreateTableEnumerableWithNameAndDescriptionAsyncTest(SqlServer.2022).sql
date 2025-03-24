@@ -1,10 +1,10 @@
 ﻿BeforeExecute
--- SqlServer.2022 (asynchronously)
+--  SqlServer.2022 (asynchronously)
 
 DROP TABLE IF EXISTS [tempdb]..[#TempTable]
 
 BeforeExecute
--- SqlServer.2022 (asynchronously)
+--  SqlServer.2022 (asynchronously)
 
 IF (OBJECT_ID(N'[tempdb]..[#TempTable]', N'U') IS NULL)
 	CREATE TABLE [tempdb]..[#TempTable]
@@ -16,7 +16,7 @@ BeforeExecute
 INSERT ASYNC BULK [tempdb]..[#TempTable](Name)
 
 BeforeExecute
--- SqlServer.2022 (asynchronously)
+--  SqlServer.2022 (asynchronously)
 
 SELECT
 	[t].[Name]
@@ -25,7 +25,7 @@ FROM
 		INNER JOIN [tempdb]..[#TempTable] [t] ON [p].[FirstName] = [t].[Name]
 
 BeforeExecute
--- SqlServer.2022 (asynchronously)
+--  SqlServer.2022 (asynchronously)
 
 DROP TABLE IF EXISTS [tempdb]..[#TempTable]
 

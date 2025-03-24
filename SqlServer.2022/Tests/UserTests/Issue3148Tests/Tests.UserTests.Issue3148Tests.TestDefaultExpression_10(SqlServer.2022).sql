@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2022
+--  SqlServer.2022
 
 SELECT
 	[x].[ParentID],
@@ -36,7 +36,7 @@ WHERE
 	) IS NULL)
 
 BeforeExecute
--- SqlServer.2022
+--  SqlServer.2022
 
 SELECT
 	[x].[ParentID],

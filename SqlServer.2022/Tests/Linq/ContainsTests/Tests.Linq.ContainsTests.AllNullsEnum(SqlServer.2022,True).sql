@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2022
+--  SqlServer.2022
 
 SELECT
 	COUNT(*)
@@ -9,7 +9,7 @@ WHERE
 	[s].[Enum] IS NULL
 
 BeforeExecute
--- SqlServer.2022
+--  SqlServer.2022
 
 SELECT
 	COUNT(*)

@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2022
+--  SqlServer.2022
 
 INSERT INTO [Parent]
 (
@@ -11,7 +11,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2022
+--  SqlServer.2022
 
 INSERT INTO [Child]
 (
@@ -25,7 +25,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2022
+--  SqlServer.2022
 
 UPDATE
 	[a_Parent]
@@ -38,7 +38,7 @@ WHERE
 	[child_1].[ChildID] = 10000
 
 BeforeExecute
--- SqlServer.2022
+--  SqlServer.2022
 
 DELETE [x]
 FROM
@@ -47,7 +47,7 @@ WHERE
 	[x].[ChildID] = 10000
 
 BeforeExecute
--- SqlServer.2022
+--  SqlServer.2022
 
 DELETE [x]
 FROM

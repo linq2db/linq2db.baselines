@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2022.MS SqlServer.2022
+--  SqlServer.2022.MS SqlServer.2022
 
 CREATE TABLE [tempdb]..[#TableWithData_destination]
 (
@@ -9,7 +9,7 @@ CREATE TABLE [tempdb]..[#TableWithData_destination]
 )
 
 BeforeExecute
--- SqlServer.2022.MS SqlServer.2022
+--  SqlServer.2022.MS SqlServer.2022
 
 UPDATE
 	[TableWithData_source]
@@ -30,7 +30,7 @@ WHERE
 	[TableWithData_source].[Id] > 3
 
 BeforeExecute
--- SqlServer.2022.MS SqlServer.2022
+--  SqlServer.2022.MS SqlServer.2022
 
 SELECT
 	[t1].[Id],
@@ -40,7 +40,7 @@ FROM
 	[tempdb]..[#TableWithData_destination] [t1]
 
 BeforeExecute
--- SqlServer.2022.MS SqlServer.2022
+--  SqlServer.2022.MS SqlServer.2022
 
 DROP TABLE IF EXISTS [tempdb]..[#TableWithData_destination]
 

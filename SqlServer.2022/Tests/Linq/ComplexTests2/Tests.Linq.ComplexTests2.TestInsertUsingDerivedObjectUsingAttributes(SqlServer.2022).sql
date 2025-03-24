@@ -1,10 +1,10 @@
 ﻿BeforeExecute
--- SqlServer.2022
+--  SqlServer.2022
 
 DBCC CHECKIDENT ('Person', RESEED, 4)
 
 BeforeExecute
--- SqlServer.2022
+--  SqlServer.2022
 DECLARE @FirstName NVarChar(4000) -- String
 SET     @FirstName = N'test_inherited_insert'
 DECLARE @LastName NVarChar(4000) -- String
@@ -32,7 +32,7 @@ VALUES
 SELECT SCOPE_IDENTITY()
 
 BeforeExecute
--- SqlServer.2022
+--  SqlServer.2022
 
 SELECT TOP (1)
 	[t1].[FirstName],
@@ -46,7 +46,7 @@ WHERE
 	[t1].[FirstName] = N'test_inherited_insert'
 
 BeforeExecute
--- SqlServer.2022
+--  SqlServer.2022
 DECLARE @FirstName NVarChar(4000) -- String
 SET     @FirstName = N'test_inherited_insert'
 DECLARE @LastName NVarChar(4000) -- String
@@ -69,7 +69,7 @@ WHERE
 	[Person].[PersonID] = @ID
 
 BeforeExecute
--- SqlServer.2022
+--  SqlServer.2022
 
 SELECT TOP (1)
 	[t1].[FirstName],
@@ -83,7 +83,7 @@ WHERE
 	[t1].[FirstName] = N'test_inherited_insert'
 
 BeforeExecute
--- SqlServer.2022
+--  SqlServer.2022
 DECLARE @ID Int -- Int32
 SET     @ID = 5
 

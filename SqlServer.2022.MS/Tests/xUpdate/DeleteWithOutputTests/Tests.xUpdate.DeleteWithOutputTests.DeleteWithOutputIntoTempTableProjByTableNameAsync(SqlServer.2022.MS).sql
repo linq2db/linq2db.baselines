@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2022.MS SqlServer.2022
+--  SqlServer.2022.MS SqlServer.2022
 
 CREATE TABLE [tempdb]..[#DestinationTable_target]
 (
@@ -9,7 +9,7 @@ CREATE TABLE [tempdb]..[#DestinationTable_target]
 )
 
 BeforeExecute
--- SqlServer.2022.MS SqlServer.2022
+--  SqlServer.2022.MS SqlServer.2022
 
 SELECT
 	[s].[Id],
@@ -21,7 +21,7 @@ WHERE
 	[s].[Id] > 3
 
 BeforeExecute
--- SqlServer.2022.MS SqlServer.2022 (asynchronously)
+--  SqlServer.2022.MS SqlServer.2022 (asynchronously)
 DECLARE @param Int -- Int32
 SET     @param = 100500
 
@@ -42,7 +42,7 @@ WHERE
 	[s].[Id] > 3
 
 BeforeExecute
--- SqlServer.2022.MS SqlServer.2022
+--  SqlServer.2022.MS SqlServer.2022
 
 SELECT
 	[t1].[Id],
@@ -52,7 +52,7 @@ FROM
 	[tempdb]..[#DestinationTable_target] [t1]
 
 BeforeExecute
--- SqlServer.2022.MS SqlServer.2022
+--  SqlServer.2022.MS SqlServer.2022
 
 DROP TABLE IF EXISTS [tempdb]..[#DestinationTable_target]
 

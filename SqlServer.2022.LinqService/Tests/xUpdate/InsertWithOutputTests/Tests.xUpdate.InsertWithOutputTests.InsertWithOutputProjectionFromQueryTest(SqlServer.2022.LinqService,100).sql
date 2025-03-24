@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2022
+--  SqlServer.2022
 DECLARE @param Int -- Int32
 SET     @param = 100
 
@@ -22,7 +22,7 @@ WHERE
 	[s].[Id] > 3
 
 BeforeExecute
--- SqlServer.2022
+--  SqlServer.2022
 
 SELECT
 	[t1].[Id],
@@ -32,7 +32,7 @@ FROM
 	[DestinationTable] [t1]
 
 BeforeExecute
--- SqlServer.2022
+--  SqlServer.2022
 
 SELECT
 	[t].[Id] + 1,

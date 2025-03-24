@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2022
+--  SqlServer.2022
 
 CREATE TABLE [tempdb]..[#TableWithData_target]
 (
@@ -9,7 +9,7 @@ CREATE TABLE [tempdb]..[#TableWithData_target]
 )
 
 BeforeExecute
--- SqlServer.2022
+--  SqlServer.2022
 
 SELECT
 	[s].[Id],
@@ -21,7 +21,7 @@ WHERE
 	[s].[Id] > 3
 
 BeforeExecute
--- SqlServer.2022
+--  SqlServer.2022
 
 DELETE [s]
 OUTPUT
@@ -40,7 +40,7 @@ WHERE
 	[s].[Id] > 3
 
 BeforeExecute
--- SqlServer.2022
+--  SqlServer.2022
 
 SELECT
 	[t1].[Id],
@@ -50,7 +50,7 @@ FROM
 	[tempdb]..[#TableWithData_target] [t1]
 
 BeforeExecute
--- SqlServer.2022
+--  SqlServer.2022
 
 DROP TABLE IF EXISTS [tempdb]..[#TableWithData_target]
 

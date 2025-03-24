@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2022 (asynchronously)
+--  SqlServer.2022 (asynchronously)
 DECLARE @input Int -- Int32
 SET     @input = 1
 DECLARE @output Int -- Int32

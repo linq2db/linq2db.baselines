@@ -1,12 +1,12 @@
 ﻿BeforeExecute
--- SqlServer.2022
+--  SqlServer.2022
 
 DBCC CHECKIDENT ('AllTypes', RESEED, 2)
 
 BeforeExecute
 BeginTransaction
 BeforeExecute
--- SqlServer.2022
+--  SqlServer.2022
 
 INSERT INTO [AllTypes]
 (
@@ -22,7 +22,7 @@ VALUES
 SELECT SCOPE_IDENTITY()
 
 BeforeExecute
--- SqlServer.2022
+--  SqlServer.2022
 DECLARE @id Int -- Int32
 SET     @id = 3
 
@@ -36,7 +36,7 @@ WHERE
 	[t].[ID] = @id
 
 BeforeExecute
--- SqlServer.2022
+--  SqlServer.2022
 DECLARE @id Int -- Int32
 SET     @id = 3
 

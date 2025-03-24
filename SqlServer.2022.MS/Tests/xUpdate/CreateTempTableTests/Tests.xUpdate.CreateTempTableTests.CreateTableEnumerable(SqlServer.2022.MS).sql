@@ -1,10 +1,10 @@
 ﻿BeforeExecute
--- SqlServer.2022.MS SqlServer.2022
+--  SqlServer.2022.MS SqlServer.2022
 
 DROP TABLE IF EXISTS [TempTable]
 
 BeforeExecute
--- SqlServer.2022.MS SqlServer.2022
+--  SqlServer.2022.MS SqlServer.2022
 
 SELECT
 	[p].[ParentID]
@@ -12,7 +12,7 @@ FROM
 	[Parent] [p]
 
 BeforeExecute
--- SqlServer.2022.MS SqlServer.2022
+--  SqlServer.2022.MS SqlServer.2022
 
 IF (OBJECT_ID(N'[TempTable]', N'U') IS NULL)
 	CREATE TABLE [TempTable]
@@ -24,7 +24,7 @@ BeforeExecute
 INSERT BULK [TempTable](ID)
 
 BeforeExecute
--- SqlServer.2022.MS SqlServer.2022
+--  SqlServer.2022.MS SqlServer.2022
 
 SELECT
 	[t].[ID]
@@ -33,7 +33,7 @@ FROM
 		INNER JOIN [TempTable] [t] ON [p].[ParentID] = [t].[ID]
 
 BeforeExecute
--- SqlServer.2022.MS SqlServer.2022
+--  SqlServer.2022.MS SqlServer.2022
 
 DROP TABLE IF EXISTS [TempTable]
 

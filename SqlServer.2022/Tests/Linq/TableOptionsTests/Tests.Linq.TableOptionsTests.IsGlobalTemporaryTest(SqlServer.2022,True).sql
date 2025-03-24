@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2022
+--  SqlServer.2022
 
 CREATE TABLE [tempdb]..[##IsGlobalTemporaryTable]
 (
@@ -8,7 +8,7 @@ CREATE TABLE [tempdb]..[##IsGlobalTemporaryTable]
 )
 
 BeforeExecute
--- SqlServer.2022
+--  SqlServer.2022
 
 SELECT
 	[t1].[Id],
@@ -17,7 +17,7 @@ FROM
 	[tempdb]..[##IsGlobalTemporaryTable] [t1]
 
 BeforeExecute
--- SqlServer.2022
+--  SqlServer.2022
 
 DROP TABLE IF EXISTS [tempdb]..[##IsGlobalTemporaryTable]
 

@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2022
+--  SqlServer.2022
 
 DELETE [c_1]
 FROM
@@ -8,7 +8,7 @@ WHERE
 	[c_1].[ChildID] > 1000
 
 BeforeExecute
--- SqlServer.2022
+--  SqlServer.2022
 
 CREATE TABLE [tempdb]..[#TInserted]
 (
@@ -19,7 +19,7 @@ CREATE TABLE [tempdb]..[#TInserted]
 )
 
 BeforeExecute
--- SqlServer.2022
+--  SqlServer.2022
 DECLARE @id Int -- Int32
 SET     @id = 1001
 DECLARE @param Int -- Int32
@@ -47,7 +47,7 @@ WHERE
 	[c_1].[ChildID] = 11
 
 BeforeExecute
--- SqlServer.2022
+--  SqlServer.2022
 
 SELECT
 	[c_1].[ParentID],
@@ -56,7 +56,7 @@ FROM
 	[tempdb]..[#TInserted] [c_1]
 
 BeforeExecute
--- SqlServer.2022
+--  SqlServer.2022
 
 SELECT
 	[c_1].[ParentID],
@@ -67,12 +67,12 @@ WHERE
 	[c_1].[ChildID] > 1000
 
 BeforeExecute
--- SqlServer.2022
+--  SqlServer.2022
 
 DROP TABLE IF EXISTS [tempdb]..[#TInserted]
 
 BeforeExecute
--- SqlServer.2022
+--  SqlServer.2022
 
 DELETE [c_1]
 FROM

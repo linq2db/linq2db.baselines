@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2022
+--  SqlServer.2022
 
 SELECT
 	[m_1].[SectorId],
@@ -13,7 +13,7 @@ WHERE
 	[a_UserPosition].[PositionId] = 1
 
 BeforeExecute
--- SqlServer.2022
+--  SqlServer.2022
 
 SELECT
 	[x].[SectorId]

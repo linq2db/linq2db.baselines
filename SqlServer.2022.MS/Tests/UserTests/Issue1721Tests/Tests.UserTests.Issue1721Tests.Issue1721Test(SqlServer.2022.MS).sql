@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2022.MS SqlServer.2022
+--  SqlServer.2022.MS SqlServer.2022
 
 CREATE TABLE [tempdb]..[#I1721Model]
 (
@@ -12,7 +12,7 @@ CREATE TABLE [tempdb]..[#I1721Model]
 )
 
 BeforeExecute
--- SqlServer.2022.MS SqlServer.2022
+--  SqlServer.2022.MS SqlServer.2022
 
 DROP TABLE IF EXISTS [tempdb]..[#I1721Model]
 

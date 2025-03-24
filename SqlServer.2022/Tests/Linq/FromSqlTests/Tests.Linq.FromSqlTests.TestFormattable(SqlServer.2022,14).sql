@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2022
+--  SqlServer.2022
 
 SELECT
 	[c_1].[value],
@@ -14,7 +14,7 @@ ORDER BY
 	[c_1].[id]
 
 BeforeExecute
--- SqlServer.2022
+--  SqlServer.2022
 DECLARE @startId Int -- Int32
 SET     @startId = 5
 DECLARE @endId Int -- Int32

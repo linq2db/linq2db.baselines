@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2022
+--  SqlServer.2022
 
 CREATE TABLE [tempdb]..[#DestinationTable_destination]
 (
@@ -9,7 +9,7 @@ CREATE TABLE [tempdb]..[#DestinationTable_destination]
 )
 
 BeforeExecute
--- SqlServer.2022
+--  SqlServer.2022
 
 UPDATE
 	[t]
@@ -32,7 +32,7 @@ FROM
 		INNER JOIN [DestinationTable_target] [t] ON [t].[Id] = [s].[Id]
 
 BeforeExecute
--- SqlServer.2022
+--  SqlServer.2022
 
 SELECT
 	[t1].[Id],
@@ -42,7 +42,7 @@ FROM
 	[DestinationTable_target] [t1]
 
 BeforeExecute
--- SqlServer.2022
+--  SqlServer.2022
 
 SELECT
 	[t1].[Id],
@@ -52,7 +52,7 @@ FROM
 	[tempdb]..[#DestinationTable_destination] [t1]
 
 BeforeExecute
--- SqlServer.2022
+--  SqlServer.2022
 
 DROP TABLE IF EXISTS [tempdb]..[#DestinationTable_destination]
 

@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2022
+--  SqlServer.2022
 DECLARE @Id Int -- Int32
 SET     @Id = 1
 DECLARE @Name NVarChar(4000) -- String
@@ -17,7 +17,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2022
+--  SqlServer.2022
 DECLARE @Id Int -- Int32
 SET     @Id = 2
 DECLARE @Name NVarChar(4000) -- String
@@ -35,7 +35,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2022
+--  SqlServer.2022
 DECLARE @Id Int -- Int32
 SET     @Id = 1
 DECLARE @Text NVarChar(4000) -- String
@@ -55,7 +55,7 @@ VALUES
 BeforeExecute
 BeginTransaction(RepeatableRead)
 BeforeExecute
--- SqlServer.2022
+--  SqlServer.2022
 
 SELECT
 	[m_1].[Id],
@@ -73,7 +73,7 @@ FROM
 BeforeExecute
 DisposeTransaction
 BeforeExecute
--- SqlServer.2022
+--  SqlServer.2022
 
 SELECT
 	[tupledArg].[Id],

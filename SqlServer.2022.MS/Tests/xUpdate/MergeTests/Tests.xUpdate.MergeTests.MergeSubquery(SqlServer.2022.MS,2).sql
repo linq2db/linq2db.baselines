@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 BeginTransaction
 BeforeExecute
--- SqlServer.2022.MS SqlServer.2022
+--  SqlServer.2022.MS SqlServer.2022
 
 CREATE TABLE [tempdb]..[#MergeTemp]
 (
@@ -15,7 +15,7 @@ BeforeExecute
 INSERT BULK [tempdb]..[#MergeTemp](ID, Name)
 
 BeforeExecute
--- SqlServer.2022.MS SqlServer.2022
+--  SqlServer.2022.MS SqlServer.2022
 
 MERGE INTO [tempdb]..[#MergeTemp] [t1]
 USING (SELECT (
@@ -54,7 +54,7 @@ WHEN NOT MATCHED THEN
 	);
 
 BeforeExecute
--- SqlServer.2022.MS SqlServer.2022
+--  SqlServer.2022.MS SqlServer.2022
 
 DROP TABLE IF EXISTS [tempdb]..[#MergeTemp]
 

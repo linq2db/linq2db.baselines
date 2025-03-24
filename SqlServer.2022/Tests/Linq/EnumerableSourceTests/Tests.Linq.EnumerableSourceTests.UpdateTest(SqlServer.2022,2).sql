@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2022
+--  SqlServer.2022
 
 UPDATE
 	[u]
@@ -14,7 +14,7 @@ WHERE
 	[u].[Id] = [r].[Id]
 
 BeforeExecute
--- SqlServer.2022
+--  SqlServer.2022
 
 SELECT
 	[t1].[Id],

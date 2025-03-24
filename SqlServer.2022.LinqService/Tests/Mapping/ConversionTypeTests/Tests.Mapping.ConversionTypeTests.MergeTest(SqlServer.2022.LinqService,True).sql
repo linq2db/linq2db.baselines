@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2022
+--  SqlServer.2022
 
 MERGE INTO [TrimTestTable] [Target]
 USING (VALUES
@@ -30,7 +30,7 @@ VALUES
 ;
 
 BeforeExecute
--- SqlServer.2022
+--  SqlServer.2022
 
 MERGE INTO [TrimTestTable] [Target]
 USING (VALUES
@@ -61,7 +61,7 @@ VALUES
 ;
 
 BeforeExecute
--- SqlServer.2022
+--  SqlServer.2022
 
 SELECT
 	[r].[ID],
@@ -72,7 +72,7 @@ ORDER BY
 	[r].[ID]
 
 BeforeExecute
--- SqlServer.2022
+--  SqlServer.2022
 
 SELECT
 	[r].[ID],

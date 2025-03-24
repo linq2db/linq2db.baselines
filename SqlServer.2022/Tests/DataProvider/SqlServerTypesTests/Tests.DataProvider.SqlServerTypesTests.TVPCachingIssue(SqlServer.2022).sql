@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 BeginTransaction(RepeatableRead)
 BeforeExecute
--- SqlServer.2022
+--  SqlServer.2022
 DECLARE @p [dbo].[TestTableType] -- Structured -- Object
 SET     @p = 
 
@@ -27,7 +27,7 @@ FROM
 BeforeExecute
 DisposeTransaction
 BeforeExecute
--- SqlServer.2022
+--  SqlServer.2022
 DECLARE @p [dbo].[TestTableType] -- Structured -- Object
 SET     @p = 
 
@@ -46,7 +46,7 @@ WHERE
 BeforeExecute
 BeginTransaction(RepeatableRead)
 BeforeExecute
--- SqlServer.2022
+--  SqlServer.2022
 DECLARE @p [dbo].[TestTableType] -- Structured -- Object
 SET     @p = 
 
@@ -72,7 +72,7 @@ FROM
 BeforeExecute
 DisposeTransaction
 BeforeExecute
--- SqlServer.2022
+--  SqlServer.2022
 DECLARE @p [dbo].[TestTableType] -- Structured -- Object
 SET     @p = 
 
@@ -91,7 +91,7 @@ WHERE
 BeforeExecute
 BeginTransaction(RepeatableRead)
 BeforeExecute
--- SqlServer.2022
+--  SqlServer.2022
 DECLARE @p [dbo].[TestTableType] -- Structured -- Object
 SET     @p = 
 
@@ -117,7 +117,7 @@ FROM
 BeforeExecute
 DisposeTransaction
 BeforeExecute
--- SqlServer.2022
+--  SqlServer.2022
 DECLARE @p [dbo].[TestTableType] -- Structured -- Object
 SET     @p = 
 
@@ -136,7 +136,7 @@ WHERE
 BeforeExecute
 BeginTransaction(RepeatableRead)
 BeforeExecute
--- SqlServer.2022
+--  SqlServer.2022
 DECLARE @p [dbo].[TestTableType] -- Structured -- Object
 SET     @p = 
 
@@ -162,7 +162,7 @@ FROM
 BeforeExecute
 DisposeTransaction
 BeforeExecute
--- SqlServer.2022
+--  SqlServer.2022
 DECLARE @p [dbo].[TestTableType] -- Structured -- Object
 SET     @p = 
 
