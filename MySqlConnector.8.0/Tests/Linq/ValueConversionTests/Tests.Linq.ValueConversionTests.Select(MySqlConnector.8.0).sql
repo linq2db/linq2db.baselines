@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
+--  MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 
 SELECT
 	`t1`.`Id`,
@@ -18,7 +18,7 @@ ORDER BY
 	`t1`.`Id`
 
 BeforeExecute
--- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
+--  MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 
 SELECT
 	`t`.`Id`,
@@ -30,7 +30,7 @@ ORDER BY
 	`t`.`Id`
 
 BeforeExecute
--- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
+--  MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 
 SELECT
 	`t1`.`Id`,
@@ -49,7 +49,7 @@ ORDER BY
 	`t1`.`Id`
 
 BeforeExecute
--- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
+--  MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 
 SELECT
 	`t2`.`Id`,
@@ -82,7 +82,7 @@ ORDER BY
 	`t2`.`Id`
 
 BeforeExecute
--- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
+--  MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 DECLARE @skip Int32
 SET     @skip = 1
 

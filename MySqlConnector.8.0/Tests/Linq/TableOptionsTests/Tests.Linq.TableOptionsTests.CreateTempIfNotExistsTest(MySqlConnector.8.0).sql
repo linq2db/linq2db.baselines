@@ -1,10 +1,10 @@
 ﻿BeforeExecute
--- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
+--  MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 
 DROP TABLE IF EXISTS `CreateIfNotExistsTable`
 
 BeforeExecute
--- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
+--  MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 
 CREATE TEMPORARY TABLE `CreateIfNotExistsTable`
 (
@@ -13,7 +13,7 @@ CREATE TEMPORARY TABLE `CreateIfNotExistsTable`
 )
 
 BeforeExecute
--- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
+--  MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 
 SELECT
 	`t1`.`Id`,
@@ -22,7 +22,7 @@ FROM
 	`CreateIfNotExistsTable` `t1`
 
 BeforeExecute
--- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
+--  MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 
 CREATE TABLE IF NOT EXISTS `CreateIfNotExistsTable`
 (
@@ -31,12 +31,12 @@ CREATE TABLE IF NOT EXISTS `CreateIfNotExistsTable`
 )
 
 BeforeExecute
--- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
+--  MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 
 DROP TABLE IF EXISTS `CreateIfNotExistsTable`
 
 BeforeExecute
--- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
+--  MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 
 DROP TEMPORARY TABLE IF EXISTS `CreateIfNotExistsTable`
 

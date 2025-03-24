@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- MySql.8.0 MySql.8.0.MySql.Data MySql80
+--  MySql.8.0 MySql.8.0.MySql.Data MySql80
 
 SELECT
 	`nm`.`MiddleName`
@@ -15,7 +15,7 @@ WHERE
 	`nm`.`Value_1` <> 0 OR `nm`.`Value_1` IS NULL
 
 BeforeExecute
--- MySql.8.0 MySql.8.0.MySql.Data MySql80
+--  MySql.8.0 MySql.8.0.MySql.Data MySql80
 
 SELECT
 	`t1`.`FirstName`,

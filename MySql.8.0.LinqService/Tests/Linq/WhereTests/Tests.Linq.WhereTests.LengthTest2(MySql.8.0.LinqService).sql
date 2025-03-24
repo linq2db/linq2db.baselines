@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- MySql.8.0 MySql.8.0.MySql.Data MySql80
+--  MySql.8.0 MySql.8.0.MySql.Data MySql80
 
 SELECT
 	`nm`.`FirstName`
@@ -9,7 +9,7 @@ WHERE
 	Char_Length(`nm`.`FirstName`) <> 0
 
 BeforeExecute
--- MySql.8.0 MySql.8.0.MySql.Data MySql80
+--  MySql.8.0 MySql.8.0.MySql.Data MySql80
 
 SELECT
 	`t1`.`FirstName`,

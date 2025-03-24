@@ -1,12 +1,12 @@
 ﻿BeforeExecute
--- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
+--  MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 
 ALTER TABLE Person AUTO_INCREMENT = 5
 
 BeforeExecute
 BeginTransaction
 BeforeExecute
--- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
+--  MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 
 SELECT
 	`t1`.`PersonID`,
@@ -17,7 +17,7 @@ ORDER BY
 	`t1`.`PersonID`
 
 BeforeExecute
--- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
+--  MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 
 SELECT
 	`t1`.`PersonID`,
@@ -28,7 +28,7 @@ ORDER BY
 	`t1`.`PersonID`
 
 BeforeExecute
--- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
+--  MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 
 SELECT
 	`t1`.`FirstName`,

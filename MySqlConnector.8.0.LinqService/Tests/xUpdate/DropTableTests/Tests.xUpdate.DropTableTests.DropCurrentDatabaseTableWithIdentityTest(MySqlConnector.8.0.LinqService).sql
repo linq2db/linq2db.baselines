@@ -1,10 +1,10 @@
 ﻿BeforeExecute
--- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
+--  MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 
 DROP TABLE IF EXISTS `DropTableTestID`
 
 BeforeExecute
--- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
+--  MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 
 CREATE TABLE `DropTableTestID`
 (
@@ -15,7 +15,7 @@ CREATE TABLE `DropTableTestID`
 )
 
 BeforeExecute
--- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
+--  MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 
 INSERT INTO `DropTableTestID`
 (
@@ -27,7 +27,7 @@ VALUES
 )
 
 BeforeExecute
--- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
+--  MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 
 SELECT
 	`t`.`ID`,
@@ -36,12 +36,12 @@ FROM
 	`DropTableTestID` `t`
 
 BeforeExecute
--- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
+--  MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 
 DROP TABLE `DropTableTestID`
 
 BeforeExecute
--- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
+--  MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 
 SELECT
 	`t1`.`ID`,

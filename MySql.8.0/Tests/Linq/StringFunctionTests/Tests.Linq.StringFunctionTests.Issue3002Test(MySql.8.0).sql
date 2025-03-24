@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- MySql.8.0 MySql.8.0.MySql.Data MySql80
+--  MySql.8.0 MySql.8.0.MySql.Data MySql80
 
 INSERT INTO `SampleClass`
 (
@@ -15,7 +15,7 @@ VALUES
 )
 
 BeforeExecute
--- MySql.8.0 MySql.8.0.MySql.Data MySql80
+--  MySql.8.0 MySql.8.0.MySql.Data MySql80
 
 INSERT INTO `SampleClass`
 (
@@ -31,7 +31,7 @@ VALUES
 )
 
 BeforeExecute
--- MySql.8.0 MySql.8.0.MySql.Data MySql80
+--  MySql.8.0 MySql.8.0.MySql.Data MySql80
 DECLARE @test VarChar(4) -- String
 SET     @test = 'Test'
 DECLARE @test_1 VarChar(4) -- String
@@ -48,7 +48,7 @@ SELECT
 	) as `c1`
 
 BeforeExecute
--- MySql.8.0 MySql.8.0.MySql.Data MySql80
+--  MySql.8.0 MySql.8.0.MySql.Data MySql80
 DECLARE @test VarChar(4) -- String
 SET     @test = 'Test'
 DECLARE @test_1 VarChar(4) -- String
@@ -62,7 +62,7 @@ WHERE
 	`sampleClass_1`.`Value` = @test OR LOCATE(@test_1, `sampleClass_1`.`Value2`) > 0
 
 BeforeExecute
--- MySql.8.0 MySql.8.0.MySql.Data MySql80
+--  MySql.8.0 MySql.8.0.MySql.Data MySql80
 DECLARE @test VarChar(5) -- String
 SET     @test = 'Value'
 DECLARE @test_1 VarChar(5) -- String
@@ -79,7 +79,7 @@ SELECT
 	) as `c1`
 
 BeforeExecute
--- MySql.8.0 MySql.8.0.MySql.Data MySql80
+--  MySql.8.0 MySql.8.0.MySql.Data MySql80
 DECLARE @test VarChar(5) -- String
 SET     @test = 'Value'
 DECLARE @test_1 VarChar(5) -- String
@@ -93,7 +93,7 @@ WHERE
 	`sampleClass_1`.`Value` = @test OR LOCATE(@test_1, `sampleClass_1`.`Value2`) > 0
 
 BeforeExecute
--- MySql.8.0 MySql.8.0.MySql.Data MySql80
+--  MySql.8.0 MySql.8.0.MySql.Data MySql80
 DECLARE @test VarChar(5) -- String
 SET     @test = 'Class'
 DECLARE @test_1 VarChar(5) -- String
@@ -110,7 +110,7 @@ SELECT
 	) as `c1`
 
 BeforeExecute
--- MySql.8.0 MySql.8.0.MySql.Data MySql80
+--  MySql.8.0 MySql.8.0.MySql.Data MySql80
 DECLARE @test VarChar(5) -- String
 SET     @test = 'Class'
 DECLARE @test_1 VarChar(5) -- String

@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- MySql.8.0 MySql.8.0.MySql.Data MySql80
+--  MySql.8.0 MySql.8.0.MySql.Data MySql80
 
 INSERT INTO `Parent`
 (
@@ -11,7 +11,7 @@ VALUES
 )
 
 BeforeExecute
--- MySql.8.0 MySql.8.0.MySql.Data MySql80
+--  MySql.8.0 MySql.8.0.MySql.Data MySql80
 
 INSERT INTO `Child`
 (
@@ -25,7 +25,7 @@ VALUES
 )
 
 BeforeExecute
--- MySql.8.0 MySql.8.0.MySql.Data MySql80
+--  MySql.8.0 MySql.8.0.MySql.Data MySql80
 DECLARE @Value1 Int32
 SET     @Value1 = 5
 
@@ -38,7 +38,7 @@ WHERE
 	`child_1`.`ChildID` = 10000 AND `child_1`.`ParentID` = `a_Parent`.`ParentID`
 
 BeforeExecute
--- MySql.8.0 MySql.8.0.MySql.Data MySql80
+--  MySql.8.0 MySql.8.0.MySql.Data MySql80
 
 DELETE  
 FROM
@@ -47,7 +47,7 @@ WHERE
 	`Child`.`ChildID` = 10000
 
 BeforeExecute
--- MySql.8.0 MySql.8.0.MySql.Data MySql80
+--  MySql.8.0 MySql.8.0.MySql.Data MySql80
 
 DELETE  
 FROM

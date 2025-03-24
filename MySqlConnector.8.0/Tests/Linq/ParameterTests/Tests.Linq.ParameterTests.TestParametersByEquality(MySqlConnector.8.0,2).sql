@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
+--  MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 DECLARE @personId Int32
 SET     @personId = 1
 DECLARE @personId_1 Int32
@@ -23,7 +23,7 @@ WHERE
 	`p`.`PersonID` = @personId_1
 
 BeforeExecute
--- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
+--  MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 DECLARE @personId Int32
 SET     @personId = 1
 DECLARE @personId_1 Int32

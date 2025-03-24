@@ -1,15 +1,15 @@
 ﻿BeforeExecute
--- MySql.8.0 MySql.8.0.MySql.Data MySql80
+--  MySql.8.0 MySql.8.0.MySql.Data MySql80
 
 SELECT 12345678901234567890123456789012345.123456789012345678901234567891
 
 BeforeExecute
--- MySql.8.0 MySql.8.0.MySql.Data MySql80
+--  MySql.8.0 MySql.8.0.MySql.Data MySql80
 
 SELECT -12345678901234567890123456789012345.123456789012345678901234567891
 
 BeforeExecute
--- MySql.8.0 MySql.8.0.MySql.Data MySql80
+--  MySql.8.0 MySql.8.0.MySql.Data MySql80
 DECLARE @Id Int32
 SET     @Id = 1
 DECLARE @Decimal VarChar(66) -- AnsiString
@@ -31,7 +31,7 @@ VALUES
 )
 
 BeforeExecute
--- MySql.8.0 MySql.8.0.MySql.Data MySql80
+--  MySql.8.0 MySql.8.0.MySql.Data MySql80
 DECLARE @Id Int32
 SET     @Id = 2
 DECLARE @Decimal VarChar(67) -- AnsiString
@@ -53,7 +53,7 @@ VALUES
 )
 
 BeforeExecute
--- MySql.8.0 MySql.8.0.MySql.Data MySql80
+--  MySql.8.0 MySql.8.0.MySql.Data MySql80
 
 SELECT
 	`t1`.`Id`,
@@ -64,14 +64,14 @@ FROM
 LIMIT 2
 
 BeforeExecute
--- MySql.8.0 MySql.8.0.MySql.Data MySql80
+--  MySql.8.0 MySql.8.0.MySql.Data MySql80
 
 DELETE  
 FROM
 	`BigDecimalMySqlDataTable`
 
 BeforeExecute
--- MySql.8.0 MySql.8.0.MySql.Data MySql80
+--  MySql.8.0 MySql.8.0.MySql.Data MySql80
 DECLARE @value1 VarChar(66) -- AnsiString
 SET     @value1 = '12345678901234567890123456789012345.123456789012345678901234567891'
 DECLARE @value2 VarChar(67) -- AnsiString
@@ -91,7 +91,7 @@ VALUES
 )
 
 BeforeExecute
--- MySql.8.0 MySql.8.0.MySql.Data MySql80
+--  MySql.8.0 MySql.8.0.MySql.Data MySql80
 DECLARE @value2 VarChar(67) -- AnsiString
 SET     @value2 = '-12345678901234567890123456789012345.123456789012345678901234567891'
 
@@ -109,7 +109,7 @@ VALUES
 )
 
 BeforeExecute
--- MySql.8.0 MySql.8.0.MySql.Data MySql80
+--  MySql.8.0 MySql.8.0.MySql.Data MySql80
 
 SELECT
 	`t1`.`Id`,
@@ -120,14 +120,14 @@ FROM
 LIMIT 2
 
 BeforeExecute
--- MySql.8.0 MySql.8.0.MySql.Data MySql80
+--  MySql.8.0 MySql.8.0.MySql.Data MySql80
 
 DELETE  
 FROM
 	`BigDecimalMySqlDataTable`
 
 BeforeExecute
--- MySql.8.0 MySql.8.0.MySql.Data MySql80
+--  MySql.8.0 MySql.8.0.MySql.Data MySql80
 DECLARE @Id Int32
 SET     @Id = 1
 DECLARE @Decimal VarChar(66) -- AnsiString
@@ -149,7 +149,7 @@ VALUES
 )
 
 BeforeExecute
--- MySql.8.0 MySql.8.0.MySql.Data MySql80
+--  MySql.8.0 MySql.8.0.MySql.Data MySql80
 DECLARE @Id Int32
 SET     @Id = 2
 DECLARE @Decimal VarChar(67) -- AnsiString
@@ -171,7 +171,7 @@ VALUES
 )
 
 BeforeExecute
--- MySql.8.0 MySql.8.0.MySql.Data MySql80
+--  MySql.8.0 MySql.8.0.MySql.Data MySql80
 
 SELECT
 	`t1`.`Id`,

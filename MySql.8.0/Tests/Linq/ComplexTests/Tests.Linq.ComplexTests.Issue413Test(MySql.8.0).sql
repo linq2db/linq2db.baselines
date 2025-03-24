@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- MySql.8.0 MySql.8.0.MySql.Data MySql80
+--  MySql.8.0 MySql.8.0.MySql.Data MySql80
 DECLARE @InstrumentId Int32
 SET     @InstrumentId = 1
 DECLARE @IndexId Int32
@@ -17,7 +17,7 @@ VALUES
 )
 
 BeforeExecute
--- MySql.8.0 MySql.8.0.MySql.Data MySql80
+--  MySql.8.0 MySql.8.0.MySql.Data MySql80
 DECLARE @InstrumentId Int32
 SET     @InstrumentId = 2
 DECLARE @IndexId Int32
@@ -35,7 +35,7 @@ VALUES
 )
 
 BeforeExecute
--- MySql.8.0 MySql.8.0.MySql.Data MySql80
+--  MySql.8.0 MySql.8.0.MySql.Data MySql80
 DECLARE @InstrumentId Int32
 SET     @InstrumentId = 3
 DECLARE @IndexId Int32
@@ -53,7 +53,7 @@ VALUES
 )
 
 BeforeExecute
--- MySql.8.0 MySql.8.0.MySql.Data MySql80
+--  MySql.8.0 MySql.8.0.MySql.Data MySql80
 DECLARE @InstrumentId Int32
 SET     @InstrumentId = 1
 DECLARE @IndexId Int32
@@ -71,7 +71,7 @@ VALUES
 )
 
 BeforeExecute
--- MySql.8.0 MySql.8.0.MySql.Data MySql80
+--  MySql.8.0 MySql.8.0.MySql.Data MySql80
 DECLARE @InstrumentId Int32
 SET     @InstrumentId = 2
 DECLARE @IndexId Int32
@@ -89,7 +89,7 @@ VALUES
 )
 
 BeforeExecute
--- MySql.8.0 MySql.8.0.MySql.Data MySql80
+--  MySql.8.0 MySql.8.0.MySql.Data MySql80
 DECLARE @InstrumentId Int32
 SET     @InstrumentId = 1
 DECLARE @InstrumentCode VarChar(4) -- String
@@ -115,7 +115,7 @@ VALUES
 )
 
 BeforeExecute
--- MySql.8.0 MySql.8.0.MySql.Data MySql80
+--  MySql.8.0 MySql.8.0.MySql.Data MySql80
 DECLARE @InstrumentId Int32
 SET     @InstrumentId = 2
 DECLARE @InstrumentCode VarChar(4) -- String
@@ -141,7 +141,7 @@ VALUES
 )
 
 BeforeExecute
--- MySql.8.0 MySql.8.0.MySql.Data MySql80
+--  MySql.8.0 MySql.8.0.MySql.Data MySql80
 DECLARE @cond VarChar(4) -- String
 SET     @cond = 'aaa%'
 DECLARE @uptoDate Datetime -- DateTime

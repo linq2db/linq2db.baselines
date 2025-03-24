@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- MySql.8.0 MySql.8.0.MySql.Data MySql80
+--  MySql.8.0 MySql.8.0.MySql.Data MySql80
 
 UPDATE
 	`Parent` `p`
@@ -11,7 +11,7 @@ WHERE
 BeforeExecute
 BeginTransaction(Unspecified)
 BeforeExecute
--- MySql.8.0 MySql.8.0.MySql.Data MySql80
+--  MySql.8.0 MySql.8.0.MySql.Data MySql80
 
 UPDATE
 	`Parent` `p`
@@ -21,7 +21,7 @@ WHERE
 	`p`.`ParentID` = 1
 
 BeforeExecute
--- MySql.8.0 MySql.8.0.MySql.Data MySql80
+--  MySql.8.0 MySql.8.0.MySql.Data MySql80
 
 SELECT
 	`p`.`ParentID`,
@@ -35,7 +35,7 @@ LIMIT 1
 BeforeExecute
 RollbackTransaction
 BeforeExecute
--- MySql.8.0 MySql.8.0.MySql.Data MySql80
+--  MySql.8.0 MySql.8.0.MySql.Data MySql80
 
 SELECT
 	`p`.`ParentID`,

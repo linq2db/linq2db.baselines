@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 BeginTransaction(RepeatableRead)
 BeforeExecute
--- MySql.8.0 MySql.8.0.MySql.Data MySql80
+--  MySql.8.0 MySql.8.0.MySql.Data MySql80
 
 WITH RECURSIVE `cte` (`Value2`)
 AS
@@ -88,7 +88,7 @@ FROM
 BeforeExecute
 DisposeTransaction
 BeforeExecute
--- MySql.8.0 MySql.8.0.MySql.Data MySql80
+--  MySql.8.0 MySql.8.0.MySql.Data MySql80
 
 WITH RECURSIVE `cte` (`Value2`)
 AS

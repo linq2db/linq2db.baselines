@@ -2,7 +2,7 @@
 INSERT BULK `TPHTable`(Id, Discriminator, Value1, Value2, Value3, NullableBool
 
 BeforeExecute
--- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
+--  MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 
 SELECT
 	`t1`.`Discriminator`,
@@ -17,7 +17,7 @@ ORDER BY
 	`t1`.`Id`
 
 BeforeExecute
--- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
+--  MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 
 SELECT
 	`x`.`Discriminator`,
@@ -33,7 +33,7 @@ WHERE
 LIMIT 2
 
 BeforeExecute
--- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
+--  MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 
 SELECT
 	`x`.`Discriminator`,
@@ -49,7 +49,7 @@ WHERE
 LIMIT 2
 
 BeforeExecute
--- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
+--  MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 
 SELECT
 	`x`.`Discriminator`,
@@ -65,7 +65,7 @@ WHERE
 LIMIT 2
 
 BeforeExecute
--- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
+--  MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 
 SELECT
 	`x`.`Discriminator`,
@@ -81,7 +81,7 @@ WHERE
 LIMIT 2
 
 BeforeExecute
--- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
+--  MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 
 SELECT
 	`x`.`Discriminator`,
@@ -97,7 +97,7 @@ WHERE
 LIMIT 2
 
 BeforeExecute
--- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
+--  MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 
 SELECT
 	`x`.`Discriminator`,

@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- MySql.8.0 MySql.8.0.MySql.Data MySql80
+--  MySql.8.0 MySql.8.0.MySql.Data MySql80
 DECLARE @doe VarChar(3) -- String
 SET     @doe = 'Doe'
 
@@ -17,7 +17,7 @@ FROM
 			SELECT @doe) `n` ON 1=1
 
 BeforeExecute
--- MySql.8.0 MySql.8.0.MySql.Data MySql80
+--  MySql.8.0 MySql.8.0.MySql.Data MySql80
 DECLARE @doe VarChar(4) -- String
 SET     @doe = 'Doe1'
 

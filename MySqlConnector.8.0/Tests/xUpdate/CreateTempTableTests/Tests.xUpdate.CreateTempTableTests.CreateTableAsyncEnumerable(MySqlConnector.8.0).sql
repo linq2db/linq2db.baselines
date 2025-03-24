@@ -1,10 +1,10 @@
 ﻿BeforeExecute
--- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
+--  MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 
 DROP TABLE IF EXISTS `TempTable`
 
 BeforeExecute
--- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
+--  MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 
 SELECT
 	`p`.`ParentID`
@@ -12,7 +12,7 @@ FROM
 	`Parent` `p`
 
 BeforeExecute
--- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80 (asynchronously)
+--  MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80 (asynchronously)
 
 CREATE TABLE IF NOT EXISTS `TempTable`
 (
@@ -20,7 +20,7 @@ CREATE TABLE IF NOT EXISTS `TempTable`
 )
 
 BeforeExecute
--- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80 (asynchronously)
+--  MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80 (asynchronously)
 
 INSERT INTO `TempTable`
 (
@@ -36,7 +36,7 @@ VALUES
 (7)
 
 BeforeExecute
--- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
+--  MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 
 SELECT
 	`t`.`ID`
@@ -45,7 +45,7 @@ FROM
 		INNER JOIN `TempTable` `t` ON `p`.`ParentID` = `t`.`ID`
 
 BeforeExecute
--- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80 (asynchronously)
+--  MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80 (asynchronously)
 
 DROP TABLE IF EXISTS `TempTable`
 

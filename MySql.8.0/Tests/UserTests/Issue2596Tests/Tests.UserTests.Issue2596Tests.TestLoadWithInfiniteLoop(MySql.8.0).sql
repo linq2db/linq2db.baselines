@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 BeginTransaction(RepeatableRead)
 BeforeExecute
--- MySql.8.0 MySql.8.0.MySql.Data MySql80
+--  MySql.8.0 MySql.8.0.MySql.Data MySql80
 
 SELECT
 	`m_1`.`Id`,
@@ -29,7 +29,7 @@ FROM
 		LEFT JOIN `Product` `a_Product` ON `d`.`ProductId` = `a_Product`.`Id`
 
 BeforeExecute
--- MySql.8.0 MySql.8.0.MySql.Data MySql80
+--  MySql.8.0 MySql.8.0.MySql.Data MySql80
 
 SELECT
 	`m_1`.`Id`,
@@ -54,7 +54,7 @@ FROM
 		INNER JOIN `AccountTax` `a_Tax` ON `d`.`TaxId` = `a_Tax`.`Id`
 
 BeforeExecute
--- MySql.8.0 MySql.8.0.MySql.Data MySql80
+--  MySql.8.0 MySql.8.0.MySql.Data MySql80
 
 SELECT
 	`m_1`.`Id`,
@@ -76,7 +76,7 @@ FROM
 		INNER JOIN `CustomInvoiceLine` `d` ON `m_1`.`Id` = `d`.`CustomInvoiceId`
 
 BeforeExecute
--- MySql.8.0 MySql.8.0.MySql.Data MySql80
+--  MySql.8.0 MySql.8.0.MySql.Data MySql80
 
 SELECT
 	`m_1`.`Id`,
@@ -104,7 +104,7 @@ FROM
 		LEFT JOIN `MeasureSource` `a_PreviousSource` ON `d`.`PreviousSourceId` = `a_PreviousSource`.`Id`
 
 BeforeExecute
--- MySql.8.0 MySql.8.0.MySql.Data MySql80
+--  MySql.8.0 MySql.8.0.MySql.Data MySql80
 
 SELECT
 	`m_1`.`Id`,
@@ -128,7 +128,7 @@ FROM
 BeforeExecute
 DisposeTransaction
 BeforeExecute
--- MySql.8.0 MySql.8.0.MySql.Data MySql80
+--  MySql.8.0 MySql.8.0.MySql.Data MySql80
 
 SELECT
 	`f`.`Id`,

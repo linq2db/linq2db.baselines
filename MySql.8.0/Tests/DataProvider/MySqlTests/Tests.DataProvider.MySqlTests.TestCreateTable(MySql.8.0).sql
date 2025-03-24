@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- MySql.8.0 MySql.8.0.MySql.Data MySql80
+--  MySql.8.0 MySql.8.0.MySql.Data MySql80
 DECLARE @VarCharDefault VarChar(4) -- String
 SET     @VarCharDefault = 'ыsdf'
 DECLARE @VarChar1 VarChar(1) -- String
@@ -221,7 +221,7 @@ VALUES
 )
 
 BeforeExecute
--- MySql.8.0 MySql.8.0.MySql.Data MySql80
+--  MySql.8.0 MySql.8.0.MySql.Data MySql80
 
 SELECT
 	`t1`.`VarCharDefault`,

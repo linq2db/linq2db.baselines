@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- MySql.8.0 MySql.8.0.MySql.Data MySql80
+--  MySql.8.0 MySql.8.0.MySql.Data MySql80
 
 WITH `CTE_1` (`ParentID`)
 AS
@@ -18,7 +18,7 @@ SET
 	`c_2`.`ParentID` = `c_2`.`ChildID`
 
 BeforeExecute
--- MySql.8.0 MySql.8.0.MySql.Data MySql80
+--  MySql.8.0 MySql.8.0.MySql.Data MySql80
 
 SELECT
 	`c_1`.`ChildID`,
@@ -29,7 +29,7 @@ WHERE
 	`c_1`.`ParentID` % 2 = 0
 
 BeforeExecute
--- MySql.8.0 MySql.8.0.MySql.Data MySql80
+--  MySql.8.0 MySql.8.0.MySql.Data MySql80
 
 SELECT
 	`c_1`.`ChildID`
