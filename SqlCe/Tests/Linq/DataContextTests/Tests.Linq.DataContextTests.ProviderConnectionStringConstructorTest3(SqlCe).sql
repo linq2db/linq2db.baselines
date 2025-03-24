@@ -10,7 +10,7 @@ ORDER BY
 	[t1].[ChildID]
 
 BeforeExecute
---  SqlCe
+-- SqlCe
 
 SELECT
 	[t1].[ParentID],
