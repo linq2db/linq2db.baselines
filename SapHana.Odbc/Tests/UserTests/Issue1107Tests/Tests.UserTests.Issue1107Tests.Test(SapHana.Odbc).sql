@@ -1,8 +1,8 @@
 ﻿BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @Id  -- Int32
+DECLARE @Id Int -- Int32
 SET     @Id = 0
-DECLARE @TestDate  -- DateTime
+DECLARE @TestDate DateTime
 SET     @TestDate = '2018-01-01'
 
 INSERT INTO "Issue1107TB"

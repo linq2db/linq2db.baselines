@@ -1,6 +1,6 @@
 ﻿BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @param  -- Int64
+DECLARE @param BigInt -- Int64
 SET     @param = 1
 
 SELECT

@@ -1,6 +1,6 @@
 ﻿BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @Has  -- Byte
+DECLARE @Has TinyInt(1) -- Byte
 SET     @Has = 1
 
 INSERT INTO "Issue1438"
@@ -19,7 +19,7 @@ SELECT CURRENT_IDENTITY_VALUE() FROM DUMMY
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @id  -- Int32
+DECLARE @id Int -- Int32
 SET     @id = 1
 
 SELECT

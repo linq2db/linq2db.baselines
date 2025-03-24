@@ -1,6 +1,6 @@
 ﻿BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @Second  -- Int32
+DECLARE @Second Int -- Int32
 SET     @Second = -35
 
 SELECT

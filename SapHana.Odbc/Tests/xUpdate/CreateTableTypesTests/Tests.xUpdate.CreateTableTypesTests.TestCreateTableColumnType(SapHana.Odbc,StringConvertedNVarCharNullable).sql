@@ -1,6 +1,6 @@
 ﻿BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @Id  -- Int32
+DECLARE @Id Int -- Int32
 SET     @Id = 1
 DECLARE @StringConverted NVarChar(4) -- String
 SET     @StringConverted = 'null'
@@ -18,7 +18,7 @@ VALUES
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @Id  -- Int32
+DECLARE @Id Int -- Int32
 SET     @Id = 2
 DECLARE @StringConverted NVarChar(53) -- String
 SET     @StringConverted = '[{"Item1":1,"Item2":"one"},{"Item1":2,"Item2":"two"}]'

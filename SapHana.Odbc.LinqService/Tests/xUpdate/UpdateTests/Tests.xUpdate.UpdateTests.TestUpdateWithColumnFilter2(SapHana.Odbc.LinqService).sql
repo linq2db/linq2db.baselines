@@ -93,7 +93,7 @@ BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @FirstName NVarChar(25) -- String
 SET     @FirstName = 'UpdateColumnFilterUpdated'
-DECLARE @ID  -- Int32
+DECLARE @ID Int -- Int32
 SET     @ID = 5
 
 UPDATE
@@ -105,7 +105,7 @@ WHERE
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @ID  -- Int32
+DECLARE @ID Int -- Int32
 SET     @ID = 5
 
 SELECT
@@ -130,7 +130,7 @@ DECLARE @MiddleName NVarChar -- String
 SET     @MiddleName = NULL
 DECLARE @Gender Char(1) -- AnsiStringFixedLength
 SET     @Gender = 'M'
-DECLARE @ID  -- Int32
+DECLARE @ID Int -- Int32
 SET     @ID = 5
 
 UPDATE
@@ -145,7 +145,7 @@ WHERE
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @ID  -- Int32
+DECLARE @ID Int -- Int32
 SET     @ID = 5
 
 SELECT

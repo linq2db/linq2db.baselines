@@ -1,6 +1,6 @@
 ﻿BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @p  -- Int32
+DECLARE @p Int -- Int32
 SET     @p = 1
 
 SELECT
@@ -18,7 +18,7 @@ FROM DUMMY
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @p  -- Int32
+DECLARE @p Int -- Int32
 SET     @p = -1
 
 SELECT

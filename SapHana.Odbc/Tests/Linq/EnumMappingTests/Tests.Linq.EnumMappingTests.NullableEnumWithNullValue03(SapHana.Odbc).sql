@@ -1,6 +1,6 @@
 ﻿BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @p  -- Int32
+DECLARE @p Int -- Int32
 SET     @p = 104
 
 DELETE FROM
@@ -10,7 +10,7 @@ WHERE
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @Id  -- Int32
+DECLARE @Id Int -- Int32
 SET     @Id = 101
 DECLARE @Value NChar(2) -- StringFixedLength
 SET     @Value = '11'
@@ -28,7 +28,7 @@ VALUES
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @Id  -- Int32
+DECLARE @Id Int -- Int32
 SET     @Id = 102
 DECLARE @Value NChar(2) -- StringFixedLength
 SET     @Value = '22'
@@ -46,7 +46,7 @@ VALUES
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @Id  -- Int32
+DECLARE @Id Int -- Int32
 SET     @Id = 103
 DECLARE @Value NChar -- StringFixedLength
 SET     @Value = NULL
@@ -91,7 +91,7 @@ ORDER BY
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @p  -- Int32
+DECLARE @p Int -- Int32
 SET     @p = 104
 
 DELETE FROM

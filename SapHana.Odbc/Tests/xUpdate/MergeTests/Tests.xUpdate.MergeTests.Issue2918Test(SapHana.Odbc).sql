@@ -1,6 +1,6 @@
 ﻿BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @userId  -- Int32
+DECLARE @userId Int -- Int32
 SET     @userId = 1
 
 MERGE INTO "PatentAssessment" "Target"

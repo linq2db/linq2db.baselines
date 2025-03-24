@@ -1,6 +1,6 @@
 ﻿BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @ID  -- Int32
+DECLARE @ID Int -- Int32
 SET     @ID = 5
 
 INSERT INTO "Issue1316Tests"
@@ -14,7 +14,7 @@ VALUES
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @Item1  -- Int32
+DECLARE @Item1 Int -- Int32
 SET     @Item1 = 5
 
 SELECT

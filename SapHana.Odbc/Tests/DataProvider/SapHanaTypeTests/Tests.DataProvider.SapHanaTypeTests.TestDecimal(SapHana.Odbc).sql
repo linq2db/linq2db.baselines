@@ -1,6 +1,6 @@
 ﻿BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @value NVarChar(1, 0) -- String
+DECLARE @value Decimal(1, 0)
 SET     @value = 0
 
 SELECT
@@ -30,9 +30,9 @@ DELETE FROM
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @Column NVarChar(1, 0) -- String
+DECLARE @Column Decimal(1, 0)
 SET     @Column = 0
-DECLARE @ColumnNullable NVarChar -- String
+DECLARE @ColumnNullable Decimal
 SET     @ColumnNullable = NULL
 
 INSERT INTO "TypeTable`2"
@@ -48,7 +48,7 @@ VALUES
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @value NVarChar(1, 0) -- String
+DECLARE @value Decimal(1, 0)
 SET     @value = 0
 
 SELECT
@@ -67,9 +67,9 @@ DELETE FROM
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @Column NVarChar(1, 0) -- String
+DECLARE @Column Decimal(1, 0)
 SET     @Column = 0
-DECLARE @ColumnNullable NVarChar -- String
+DECLARE @ColumnNullable Decimal
 SET     @ColumnNullable = NULL
 
 INSERT INTO "TypeTable`2"
@@ -85,7 +85,7 @@ VALUES
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @value NVarChar(1, 0) -- String
+DECLARE @value Decimal(1, 0)
 SET     @value = 0
 
 SELECT
@@ -104,9 +104,9 @@ DELETE FROM
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @Column NVarChar(1, 0) -- String
+DECLARE @Column Decimal(1, 0)
 SET     @Column = 0
-DECLARE @ColumnNullable NVarChar -- String
+DECLARE @ColumnNullable Decimal
 SET     @ColumnNullable = NULL
 
 INSERT INTO "TypeTable`2"
@@ -122,7 +122,7 @@ VALUES
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @value NVarChar(1, 0) -- String
+DECLARE @value Decimal(1, 0)
 SET     @value = 0
 
 SELECT
@@ -141,9 +141,9 @@ DELETE FROM
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc (asynchronously)
-DECLARE @Column NVarChar(1, 0) -- String
+DECLARE @Column Decimal(1, 0)
 SET     @Column = 0
-DECLARE @ColumnNullable NVarChar -- String
+DECLARE @ColumnNullable Decimal
 SET     @ColumnNullable = NULL
 
 INSERT INTO "TypeTable`2"
@@ -159,7 +159,7 @@ VALUES
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @value NVarChar(1, 0) -- String
+DECLARE @value Decimal(1, 0)
 SET     @value = 0
 
 SELECT
@@ -172,9 +172,9 @@ WHERE
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @value NVarChar(29, 10) -- String
+DECLARE @value Decimal(29, 10)
 SET     @value = -7922816251426433759.3543950335
-DECLARE @nullableValue NVarChar(29, 10) -- String
+DECLARE @nullableValue Decimal(29, 10)
 SET     @nullableValue = 7922816251426433759.3543950335
 
 SELECT
@@ -205,9 +205,9 @@ DELETE FROM
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @Column NVarChar(29, 10) -- String
+DECLARE @Column Decimal(29, 10)
 SET     @Column = -7922816251426433759.3543950335
-DECLARE @ColumnNullable NVarChar(29, 10) -- String
+DECLARE @ColumnNullable Decimal(29, 10)
 SET     @ColumnNullable = 7922816251426433759.3543950335
 
 INSERT INTO "TypeTable`2"
@@ -223,9 +223,9 @@ VALUES
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @value NVarChar(29, 10) -- String
+DECLARE @value Decimal(29, 10)
 SET     @value = -7922816251426433759.3543950335
-DECLARE @nullableValue NVarChar(29, 10) -- String
+DECLARE @nullableValue Decimal(29, 10)
 SET     @nullableValue = 7922816251426433759.3543950335
 
 SELECT
@@ -244,9 +244,9 @@ DELETE FROM
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @Column NVarChar(29, 10) -- String
+DECLARE @Column Decimal(29, 10)
 SET     @Column = -7922816251426433759.3543950335
-DECLARE @ColumnNullable NVarChar(29, 10) -- String
+DECLARE @ColumnNullable Decimal(29, 10)
 SET     @ColumnNullable = 7922816251426433759.3543950335
 
 INSERT INTO "TypeTable`2"
@@ -262,9 +262,9 @@ VALUES
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @value NVarChar(29, 10) -- String
+DECLARE @value Decimal(29, 10)
 SET     @value = -7922816251426433759.3543950335
-DECLARE @nullableValue NVarChar(29, 10) -- String
+DECLARE @nullableValue Decimal(29, 10)
 SET     @nullableValue = 7922816251426433759.3543950335
 
 SELECT
@@ -283,9 +283,9 @@ DELETE FROM
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @Column NVarChar(29, 10) -- String
+DECLARE @Column Decimal(29, 10)
 SET     @Column = -7922816251426433759.3543950335
-DECLARE @ColumnNullable NVarChar(29, 10) -- String
+DECLARE @ColumnNullable Decimal(29, 10)
 SET     @ColumnNullable = 7922816251426433759.3543950335
 
 INSERT INTO "TypeTable`2"
@@ -301,9 +301,9 @@ VALUES
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @value NVarChar(29, 10) -- String
+DECLARE @value Decimal(29, 10)
 SET     @value = -7922816251426433759.3543950335
-DECLARE @nullableValue NVarChar(29, 10) -- String
+DECLARE @nullableValue Decimal(29, 10)
 SET     @nullableValue = 7922816251426433759.3543950335
 
 SELECT
@@ -322,9 +322,9 @@ DELETE FROM
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc (asynchronously)
-DECLARE @Column NVarChar(29, 10) -- String
+DECLARE @Column Decimal(29, 10)
 SET     @Column = -7922816251426433759.3543950335
-DECLARE @ColumnNullable NVarChar(29, 10) -- String
+DECLARE @ColumnNullable Decimal(29, 10)
 SET     @ColumnNullable = 7922816251426433759.3543950335
 
 INSERT INTO "TypeTable`2"
@@ -340,9 +340,9 @@ VALUES
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @value NVarChar(29, 10) -- String
+DECLARE @value Decimal(29, 10)
 SET     @value = -7922816251426433759.3543950335
-DECLARE @nullableValue NVarChar(29, 10) -- String
+DECLARE @nullableValue Decimal(29, 10)
 SET     @nullableValue = 7922816251426433759.3543950335
 
 SELECT

@@ -35,7 +35,7 @@ DELETE FROM
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @Id  -- Int32
+DECLARE @Id Int -- Int32
 SET     @Id = 1
 DECLARE @Column Char(36) -- AnsiStringFixedLength
 SET     @Column = 'bc7b663d-0fde-4327-8f92-5d8cc3a11d11'
@@ -57,7 +57,7 @@ VALUES
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @Id  -- Int32
+DECLARE @Id Int -- Int32
 SET     @Id = 2
 DECLARE @Column Char(36) -- AnsiStringFixedLength
 SET     @Column = 'a948600d-de21-4f74-8ac2-9516b287076e'
@@ -97,7 +97,7 @@ DELETE FROM
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @Id  -- Int32
+DECLARE @Id Int -- Int32
 SET     @Id = 1
 DECLARE @Column Char(36) -- AnsiStringFixedLength
 SET     @Column = 'bc7b663d-0fde-4327-8f92-5d8cc3a11d11'
@@ -119,7 +119,7 @@ VALUES
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @Id  -- Int32
+DECLARE @Id Int -- Int32
 SET     @Id = 2
 DECLARE @Column Char(36) -- AnsiStringFixedLength
 SET     @Column = 'a948600d-de21-4f74-8ac2-9516b287076e'
@@ -159,7 +159,7 @@ DELETE FROM
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @Id  -- Int32
+DECLARE @Id Int -- Int32
 SET     @Id = 1
 DECLARE @Column Char(36) -- AnsiStringFixedLength
 SET     @Column = 'bc7b663d-0fde-4327-8f92-5d8cc3a11d11'
@@ -181,7 +181,7 @@ VALUES
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @Id  -- Int32
+DECLARE @Id Int -- Int32
 SET     @Id = 2
 DECLARE @Column Char(36) -- AnsiStringFixedLength
 SET     @Column = 'a948600d-de21-4f74-8ac2-9516b287076e'

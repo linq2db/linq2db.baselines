@@ -1,6 +1,6 @@
 ﻿BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @ID  -- Int32
+DECLARE @ID Int -- Int32
 SET     @ID = 1001
 
 INSERT INTO "LinqDataTypes"
@@ -18,7 +18,7 @@ VALUES
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @id  -- Int32
+DECLARE @id Int -- Int32
 SET     @id = 1001
 
 UPDATE
@@ -31,7 +31,7 @@ WHERE
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @id  -- Int32
+DECLARE @id Int -- Int32
 SET     @id = 1001
 
 UPDATE
@@ -44,7 +44,7 @@ WHERE
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @id  -- Int32
+DECLARE @id Int -- Int32
 SET     @id = 1001
 
 SELECT

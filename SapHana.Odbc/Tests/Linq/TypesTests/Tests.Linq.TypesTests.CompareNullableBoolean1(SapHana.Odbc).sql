@@ -15,7 +15,7 @@ FROM
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @param  -- Byte
+DECLARE @param TinyInt(1) -- Byte
 SET     @param = 1
 
 SELECT

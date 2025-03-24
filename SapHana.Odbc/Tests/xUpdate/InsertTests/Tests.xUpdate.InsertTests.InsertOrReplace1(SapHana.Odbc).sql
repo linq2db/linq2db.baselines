@@ -81,7 +81,7 @@ BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @Diagnosis NVarChar(4) -- String
 SET     @Diagnosis = 'abc0'
-DECLARE @PersonID  -- Int32
+DECLARE @PersonID Int -- Int32
 SET     @PersonID = 5
 
 UPDATE
@@ -93,7 +93,7 @@ WHERE
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @PersonID  -- Int32
+DECLARE @PersonID Int -- Int32
 SET     @PersonID = 5
 DECLARE @Diagnosis NVarChar(4) -- String
 SET     @Diagnosis = 'abc0'
@@ -113,7 +113,7 @@ BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @Diagnosis NVarChar(4) -- String
 SET     @Diagnosis = 'abc1'
-DECLARE @PersonID  -- Int32
+DECLARE @PersonID Int -- Int32
 SET     @PersonID = 5
 
 UPDATE
@@ -127,7 +127,7 @@ BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @Diagnosis NVarChar(4) -- String
 SET     @Diagnosis = 'abc2'
-DECLARE @PersonID  -- Int32
+DECLARE @PersonID Int -- Int32
 SET     @PersonID = 5
 
 UPDATE
@@ -139,7 +139,7 @@ WHERE
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @id  -- Int32
+DECLARE @id Int -- Int32
 SET     @id = 5
 
 SELECT

@@ -1,8 +1,8 @@
 ﻿BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @Id  -- Int32
+DECLARE @Id Int -- Int32
 SET     @Id = 1
-DECLARE @BooleanNullable  -- Byte
+DECLARE @BooleanNullable TinyInt -- Byte
 SET     @BooleanNullable = NULL
 
 INSERT INTO "CreateTableTypes"
@@ -18,9 +18,9 @@ VALUES
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @Id  -- Int32
+DECLARE @Id Int -- Int32
 SET     @Id = 2
-DECLARE @BooleanNullable  -- Byte
+DECLARE @BooleanNullable TinyInt(1) -- Byte
 SET     @BooleanNullable = 1
 
 INSERT INTO "CreateTableTypes"

@@ -1,6 +1,6 @@
 ﻿BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @ParentID  -- Int32
+DECLARE @ParentID Int -- Int32
 SET     @ParentID = 1111
 
 DELETE FROM
@@ -10,7 +10,7 @@ WHERE
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @ParentID  -- Int32
+DECLARE @ParentID Int -- Int32
 SET     @ParentID = 2111
 
 DELETE FROM
@@ -20,7 +20,7 @@ WHERE
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @ParentID  -- Int32
+DECLARE @ParentID Int -- Int32
 SET     @ParentID = 3111
 
 DELETE FROM
@@ -30,7 +30,7 @@ WHERE
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @ParentID  -- Int32
+DECLARE @ParentID Int -- Int32
 SET     @ParentID = 4111
 
 DELETE FROM
@@ -42,9 +42,9 @@ BeforeExecute
 BeginTransaction
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @ParentID  -- Int32
+DECLARE @ParentID Int -- Int32
 SET     @ParentID = 1111
-DECLARE @Value1  -- Int32
+DECLARE @Value1 Int -- Int32
 SET     @Value1 = 1111
 
 INSERT INTO "Parent"
@@ -60,9 +60,9 @@ VALUES
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @ParentID  -- Int32
+DECLARE @ParentID Int -- Int32
 SET     @ParentID = 2111
-DECLARE @Value1  -- Int32
+DECLARE @Value1 Int -- Int32
 SET     @Value1 = 2111
 
 INSERT INTO "Parent"
@@ -78,9 +78,9 @@ VALUES
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @ParentID  -- Int32
+DECLARE @ParentID Int -- Int32
 SET     @ParentID = 3111
-DECLARE @Value1  -- Int32
+DECLARE @Value1 Int -- Int32
 SET     @Value1 = 3111
 
 INSERT INTO "Parent"
@@ -96,9 +96,9 @@ VALUES
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @ParentID  -- Int32
+DECLARE @ParentID Int -- Int32
 SET     @ParentID = 4111
-DECLARE @Value1  -- Int32
+DECLARE @Value1 Int -- Int32
 SET     @Value1 = 4111
 
 INSERT INTO "Parent"
@@ -116,7 +116,7 @@ BeforeExecute
 CommitTransaction
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @ParentID  -- Int32
+DECLARE @ParentID Int -- Int32
 SET     @ParentID = 1111
 
 DELETE FROM
@@ -126,7 +126,7 @@ WHERE
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @ParentID  -- Int32
+DECLARE @ParentID Int -- Int32
 SET     @ParentID = 2111
 
 DELETE FROM
@@ -136,7 +136,7 @@ WHERE
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @ParentID  -- Int32
+DECLARE @ParentID Int -- Int32
 SET     @ParentID = 3111
 
 DELETE FROM
@@ -146,7 +146,7 @@ WHERE
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @ParentID  -- Int32
+DECLARE @ParentID Int -- Int32
 SET     @ParentID = 4111
 
 DELETE FROM

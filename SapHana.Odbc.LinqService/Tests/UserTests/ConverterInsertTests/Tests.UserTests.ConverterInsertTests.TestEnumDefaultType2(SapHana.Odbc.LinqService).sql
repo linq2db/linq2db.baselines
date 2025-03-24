@@ -79,7 +79,7 @@ SELECT CURRENT_IDENTITY_VALUE() FROM DUMMY
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @id  -- Int32
+DECLARE @id Int -- Int32
 SET     @id = 5
 
 SELECT

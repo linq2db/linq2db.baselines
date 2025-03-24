@@ -1,20 +1,20 @@
 ﻿BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @id  -- Int32
+DECLARE @id Int -- Int32
 SET     @id = 1
 DECLARE @name NVarChar(4) -- String
 SET     @name = 'test'
 DECLARE @name NVarChar(4) -- String
 SET     @name = 'test'
-DECLARE @id  -- Int32
+DECLARE @id Int -- Int32
 SET     @id = 1
-DECLARE @id  -- Int32
+DECLARE @id Int -- Int32
 SET     @id = 1
 DECLARE @name NVarChar(4) -- String
 SET     @name = 'test'
 DECLARE @name NVarChar(4) -- String
 SET     @name = 'test'
-DECLARE @id  -- Int32
+DECLARE @id Int -- Int32
 SET     @id = 1
 
 SELECT
@@ -32,13 +32,13 @@ WHERE
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @id  -- Int32
+DECLARE @id Int -- Int32
 SET     @id = 1
 DECLARE @name NVarChar(4) -- String
 SET     @name = 'test'
 DECLARE @name NVarChar(4) -- String
 SET     @name = 'test'
-DECLARE @id  -- Int32
+DECLARE @id Int -- Int32
 SET     @id = 1
 
 SELECT

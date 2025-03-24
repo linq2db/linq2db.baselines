@@ -1,8 +1,8 @@
 ﻿BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @Id  -- Int32
+DECLARE @Id Int -- Int32
 SET     @Id = 1
-DECLARE @Stamp  -- Int32
+DECLARE @Stamp Int -- Int32
 SET     @Stamp = -10
 DECLARE @Value NVarChar(7) -- String
 SET     @Value = 'initial'
@@ -34,9 +34,9 @@ BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @Value NVarChar(7) -- String
 SET     @Value = 'value 1'
-DECLARE @Id  -- Int32
+DECLARE @Id Int -- Int32
 SET     @Id = 1
-DECLARE @Stamp  -- Int32
+DECLARE @Stamp Int -- Int32
 SET     @Stamp = -10
 
 UPDATE
@@ -61,9 +61,9 @@ BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @Value NVarChar(7) -- String
 SET     @Value = 'value 2'
-DECLARE @Id  -- Int32
+DECLARE @Id Int -- Int32
 SET     @Id = 1
-DECLARE @Stamp  -- Int32
+DECLARE @Stamp Int -- Int32
 SET     @Stamp = -9
 
 UPDATE
@@ -88,9 +88,9 @@ BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @Value NVarChar(7) -- String
 SET     @Value = 'value 3'
-DECLARE @Id  -- Int32
+DECLARE @Id Int -- Int32
 SET     @Id = 1
-DECLARE @Stamp  -- Int32
+DECLARE @Stamp Int -- Int32
 SET     @Stamp = -9
 
 UPDATE
@@ -113,9 +113,9 @@ FROM
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @Id  -- Int32
+DECLARE @Id Int -- Int32
 SET     @Id = 1
-DECLARE @Stamp  -- Int32
+DECLARE @Stamp Int -- Int32
 SET     @Stamp = -9
 
 DELETE FROM
@@ -135,9 +135,9 @@ FROM
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @Id  -- Int32
+DECLARE @Id Int -- Int32
 SET     @Id = 1
-DECLARE @Stamp  -- Int32
+DECLARE @Stamp Int -- Int32
 SET     @Stamp = -8
 
 DELETE FROM

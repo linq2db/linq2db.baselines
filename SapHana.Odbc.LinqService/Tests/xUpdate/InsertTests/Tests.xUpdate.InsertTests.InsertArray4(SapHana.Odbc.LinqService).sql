@@ -8,19 +8,19 @@ WHERE
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @ID  -- Int32
+DECLARE @ID Int -- Int32
 SET     @ID = 1001
 DECLARE @MoneyValue Decimal(1, 0)
 SET     @MoneyValue = 0
-DECLARE @DateTimeValue  -- DateTime
+DECLARE @DateTimeValue DateTime
 SET     @DateTimeValue = NULL
-DECLARE @BoolValue  -- Byte
+DECLARE @BoolValue TinyInt(1) -- Byte
 SET     @BoolValue = 1
 DECLARE @GuidValue Char(36) -- AnsiStringFixedLength
 SET     @GuidValue = '00000000-0000-0000-0000-000000000000'
-DECLARE @BinaryValue Binary(4)
+DECLARE @BinaryValue VarBinary(4) -- Binary
 SET     @BinaryValue = x'01020304'
-DECLARE @SmallIntValue  -- Int16
+DECLARE @SmallIntValue SmallInt -- Int16
 SET     @SmallIntValue = 0
 
 INSERT INTO "LinqDataTypes"
