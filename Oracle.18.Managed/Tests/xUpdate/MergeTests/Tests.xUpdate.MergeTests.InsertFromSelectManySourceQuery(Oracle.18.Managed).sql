@@ -1,25 +1,25 @@
 ﻿BeforeExecute
 BeginTransaction
 BeforeExecute
--- Oracle.18.Managed Oracle.Managed Oracle12
+--  Oracle.18.Managed Oracle.Managed Oracle12
 
 DELETE FROM
 	"Parent" t1
 
 BeforeExecute
--- Oracle.18.Managed Oracle.Managed Oracle12
+--  Oracle.18.Managed Oracle.Managed Oracle12
 
 DELETE FROM
 	"Child" t1
 
 BeforeExecute
--- Oracle.18.Managed Oracle.Managed Oracle12
+--  Oracle.18.Managed Oracle.Managed Oracle12
 
 DELETE FROM
 	"GrandChild" t1
 
 BeforeExecute
--- Oracle.18.Managed Oracle.Managed Oracle12
+--  Oracle.18.Managed Oracle.Managed Oracle12
 DECLARE @Id Int32
 SET     @Id = 1
 
@@ -33,7 +33,7 @@ VALUES
 )
 
 BeforeExecute
--- Oracle.18.Managed Oracle.Managed Oracle12
+--  Oracle.18.Managed Oracle.Managed Oracle12
 DECLARE @Id Int32
 SET     @Id = 2
 
@@ -47,7 +47,7 @@ VALUES
 )
 
 BeforeExecute
--- Oracle.18.Managed Oracle.Managed Oracle12
+--  Oracle.18.Managed Oracle.Managed Oracle12
 DECLARE @Id Int32
 SET     @Id = 10
 
@@ -61,7 +61,7 @@ VALUES
 )
 
 BeforeExecute
--- Oracle.18.Managed Oracle.Managed Oracle12
+--  Oracle.18.Managed Oracle.Managed Oracle12
 DECLARE @Id Int32
 SET     @Id = 20
 
@@ -75,7 +75,7 @@ VALUES
 )
 
 BeforeExecute
--- Oracle.18.Managed Oracle.Managed Oracle12
+--  Oracle.18.Managed Oracle.Managed Oracle12
 DECLARE @Id Int32
 SET     @Id = 11
 DECLARE @LeftId Int32
@@ -97,7 +97,7 @@ VALUES
 )
 
 BeforeExecute
--- Oracle.18.Managed Oracle.Managed Oracle12
+--  Oracle.18.Managed Oracle.Managed Oracle12
 
 MERGE INTO "GrandChild" Target
 USING (
@@ -126,7 +126,7 @@ VALUES
 )
 
 BeforeExecute
--- Oracle.18.Managed Oracle.Managed Oracle12
+--  Oracle.18.Managed Oracle.Managed Oracle12
 
 SELECT
 	t1."GrandChildID",

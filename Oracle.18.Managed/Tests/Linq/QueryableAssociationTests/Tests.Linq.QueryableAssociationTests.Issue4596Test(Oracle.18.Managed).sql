@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 BeginTransaction(ReadCommitted)
 BeforeExecute
--- Oracle.18.Managed Oracle.Managed Oracle12
+--  Oracle.18.Managed Oracle.Managed Oracle12
 
 SELECT
 	m_1."Id",
@@ -51,7 +51,7 @@ ORDER BY
 	END
 
 BeforeExecute
--- Oracle.18.Managed Oracle.Managed Oracle12
+--  Oracle.18.Managed Oracle.Managed Oracle12
 
 SELECT
 	t1."Id",

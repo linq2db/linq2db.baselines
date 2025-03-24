@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Oracle.18.Managed Oracle.Managed Oracle12
+--  Oracle.18.Managed Oracle.Managed Oracle12
 DECLARE @param Int16
 SET     @param = 1
 
@@ -20,7 +20,7 @@ WHERE
 	CAST(:param AS Int) = t1."SmallIntValue"
 
 BeforeExecute
--- Oracle.18.Managed Oracle.Managed Oracle12
+--  Oracle.18.Managed Oracle.Managed Oracle12
 
 SELECT
 	t1.ID,

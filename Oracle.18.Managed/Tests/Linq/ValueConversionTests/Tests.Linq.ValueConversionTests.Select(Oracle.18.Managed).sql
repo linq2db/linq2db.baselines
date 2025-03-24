@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Oracle.18.Managed Oracle.Managed Oracle12
+--  Oracle.18.Managed Oracle.Managed Oracle12
 
 SELECT
 	t1."Id",
@@ -18,7 +18,7 @@ ORDER BY
 	t1."Id"
 
 BeforeExecute
--- Oracle.18.Managed Oracle.Managed Oracle12
+--  Oracle.18.Managed Oracle.Managed Oracle12
 
 SELECT
 	t."Id",
@@ -30,7 +30,7 @@ ORDER BY
 	t."Id"
 
 BeforeExecute
--- Oracle.18.Managed Oracle.Managed Oracle12
+--  Oracle.18.Managed Oracle.Managed Oracle12
 
 SELECT
 	t1."Id",
@@ -49,7 +49,7 @@ ORDER BY
 	t1."Id"
 
 BeforeExecute
--- Oracle.18.Managed Oracle.Managed Oracle12
+--  Oracle.18.Managed Oracle.Managed Oracle12
 
 SELECT
 	t2."Id",
@@ -82,7 +82,7 @@ ORDER BY
 	t2."Id"
 
 BeforeExecute
--- Oracle.18.Managed Oracle.Managed Oracle12
+--  Oracle.18.Managed Oracle.Managed Oracle12
 DECLARE @skip Int32
 SET     @skip = 1
 

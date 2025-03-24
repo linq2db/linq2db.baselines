@@ -1,15 +1,15 @@
 ﻿BeforeExecute
--- Oracle.18.Managed Oracle.Managed Oracle12
+--  Oracle.18.Managed Oracle.Managed Oracle12
 
 DROP SEQUENCE "PersonSeq"
 
 BeforeExecute
--- Oracle.18.Managed Oracle.Managed Oracle12
+--  Oracle.18.Managed Oracle.Managed Oracle12
 
 CREATE SEQUENCE "PersonSeq" MINVALUE 1 START WITH 5
 
 BeforeExecute
--- Oracle.18.Managed Oracle.Managed Oracle12
+--  Oracle.18.Managed Oracle.Managed Oracle12
 DECLARE @FirstName Varchar2(21) -- String
 SET     @FirstName = 'test_inherited_insert'
 DECLARE @LastName Varchar2(4) -- String
@@ -39,7 +39,7 @@ RETURNING
 	"PersonID" INTO :IDENTITY_PARAMETER
 
 BeforeExecute
--- Oracle.18.Managed Oracle.Managed Oracle12
+--  Oracle.18.Managed Oracle.Managed Oracle12
 
 SELECT
 	t1."FirstName",
@@ -54,7 +54,7 @@ WHERE
 FETCH NEXT 1 ROWS ONLY
 
 BeforeExecute
--- Oracle.18.Managed Oracle.Managed Oracle12
+--  Oracle.18.Managed Oracle.Managed Oracle12
 DECLARE @FirstName Varchar2(21) -- String
 SET     @FirstName = 'test_inherited_insert'
 DECLARE @LastName Varchar2(4) -- String
@@ -77,7 +77,7 @@ WHERE
 	t1."PersonID" = :ID
 
 BeforeExecute
--- Oracle.18.Managed Oracle.Managed Oracle12
+--  Oracle.18.Managed Oracle.Managed Oracle12
 
 SELECT
 	t1."FirstName",
@@ -92,7 +92,7 @@ WHERE
 FETCH NEXT 1 ROWS ONLY
 
 BeforeExecute
--- Oracle.18.Managed Oracle.Managed Oracle12
+--  Oracle.18.Managed Oracle.Managed Oracle12
 DECLARE @ID Int32
 SET     @ID = 5
 

@@ -1,50 +1,50 @@
 ﻿BeforeExecute
--- Oracle.18.Managed Oracle.Managed Oracle12
+--  Oracle.18.Managed Oracle.Managed Oracle12
 
 SELECT user FROM dual
 
 BeforeExecute
--- Oracle.18.Managed Oracle.Managed Oracle12
+--  Oracle.18.Managed Oracle.Managed Oracle12
 
 GRANT CREATE ANY TRIGGER TO SYSTEM
 
 BeforeExecute
--- Oracle.18.Managed Oracle.Managed Oracle12
+--  Oracle.18.Managed Oracle.Managed Oracle12
 
 GRANT CREATE ANY SEQUENCE TO SYSTEM
 
 BeforeExecute
--- Oracle.18.Managed Oracle.Managed Oracle12
+--  Oracle.18.Managed Oracle.Managed Oracle12
 
 GRANT DROP ANY TRIGGER TO SYSTEM
 
 BeforeExecute
--- Oracle.18.Managed Oracle.Managed Oracle12
+--  Oracle.18.Managed Oracle.Managed Oracle12
 
 GRANT DROP ANY SEQUENCE TO SYSTEM
 
 BeforeExecute
--- Oracle.18.Managed Oracle.Managed Oracle12
+--  Oracle.18.Managed Oracle.Managed Oracle12
 
 DROP USER C##ISSUE723SCHEMA CASCADE
 
 BeforeExecute
--- Oracle.18.Managed Oracle.Managed Oracle12
+--  Oracle.18.Managed Oracle.Managed Oracle12
 
 CREATE USER C##ISSUE723SCHEMA IDENTIFIED BY password
 
 BeforeExecute
--- Oracle.18.Managed Oracle.Managed Oracle12
+--  Oracle.18.Managed Oracle.Managed Oracle12
 
 SELECT default_tablespace FROM sys.dba_users WHERE username = 'C##ISSUE723SCHEMA'
 
 BeforeExecute
--- Oracle.18.Managed Oracle.Managed Oracle12
+--  Oracle.18.Managed Oracle.Managed Oracle12
 
 ALTER USER C##ISSUE723SCHEMA quota unlimited on USERS
 
 BeforeExecute
--- Oracle.18.Managed Oracle.Managed Oracle12
+--  Oracle.18.Managed Oracle.Managed Oracle12
 
 CREATE TABLE C##ISSUE723SCHEMA.ISSUE723TABLE
 (
@@ -54,12 +54,12 @@ CREATE TABLE C##ISSUE723SCHEMA.ISSUE723TABLE
 )
 
 BeforeExecute
--- Oracle.18.Managed Oracle.Managed Oracle12
+--  Oracle.18.Managed Oracle.Managed Oracle12
 
 CREATE SEQUENCE C##ISSUE723SCHEMA.SIDENTITY_ISSUE723TABLE
 
 BeforeExecute
--- Oracle.18.Managed Oracle.Managed Oracle12
+--  Oracle.18.Managed Oracle.Managed Oracle12
 
 CREATE OR REPLACE TRIGGER C##ISSUE723SCHEMA.TIDENTITY_ISSUE723TABLE
 BEFORE INSERT ON C##ISSUE723SCHEMA.ISSUE723TABLE FOR EACH ROW
@@ -68,7 +68,7 @@ BEGIN
 END;
 
 BeforeExecute
--- Oracle.18.Managed Oracle.Managed Oracle12
+--  Oracle.18.Managed Oracle.Managed Oracle12
 DECLARE @IDENTITY_PARAMETER Decimal
 SET     @IDENTITY_PARAMETER = NULL
 
@@ -77,7 +77,7 @@ RETURNING
 	"Id" INTO :IDENTITY_PARAMETER
 
 BeforeExecute
--- Oracle.18.Managed Oracle.Managed Oracle12
+--  Oracle.18.Managed Oracle.Managed Oracle12
 DECLARE @IDENTITY_PARAMETER Decimal
 SET     @IDENTITY_PARAMETER = NULL
 
@@ -86,7 +86,7 @@ RETURNING
 	"Id" INTO :IDENTITY_PARAMETER
 
 BeforeExecute
--- Oracle.18.Managed Oracle.Managed Oracle12
+--  Oracle.18.Managed Oracle.Managed Oracle12
 
 BEGIN
 	EXECUTE IMMEDIATE 'DROP TRIGGER C##ISSUE723SCHEMA.TIDENTITY_ISSUE723TABLE';
@@ -95,7 +95,7 @@ BEGIN
 END;
 
 BeforeExecute
--- Oracle.18.Managed Oracle.Managed Oracle12
+--  Oracle.18.Managed Oracle.Managed Oracle12
 
 DROP USER C##ISSUE723SCHEMA CASCADE
 

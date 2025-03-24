@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Oracle.18.Managed Oracle.Managed Oracle12
+--  Oracle.18.Managed Oracle.Managed Oracle12
 DECLARE @Column_1 Raw(16) -- Binary
 SET     @Column_1 = HEXTORAW('0D6048A921DE744F8AC29516B287076E')
 DECLARE @ColumnNullable Raw(16) -- Binary
@@ -15,7 +15,7 @@ WHERE
 	r."Column" = :Column_1 AND r."ColumnNullable" = :ColumnNullable
 
 BeforeExecute
--- Oracle.18.Managed Oracle.Managed Oracle12
+--  Oracle.18.Managed Oracle.Managed Oracle12
 
 SELECT
 	r."Id",
@@ -28,13 +28,13 @@ WHERE
 	r."ColumnNullable" = HEXTORAW('A57339BD2343D84D9F4FDF9F93E2A627')
 
 BeforeExecute
--- Oracle.18.Managed Oracle.Managed Oracle12
+--  Oracle.18.Managed Oracle.Managed Oracle12
 
 DELETE FROM
 	"GuidTable" t1
 
 BeforeExecute
--- Oracle.18.Managed Oracle.Managed Oracle12
+--  Oracle.18.Managed Oracle.Managed Oracle12
 DECLARE @Id Int32
 SET     @Id = 1
 DECLARE @Column_1 Raw(16) -- Binary
@@ -56,7 +56,7 @@ VALUES
 )
 
 BeforeExecute
--- Oracle.18.Managed Oracle.Managed Oracle12
+--  Oracle.18.Managed Oracle.Managed Oracle12
 DECLARE @Id Int32
 SET     @Id = 2
 DECLARE @Column_1 Raw(16) -- Binary
@@ -78,7 +78,7 @@ VALUES
 )
 
 BeforeExecute
--- Oracle.18.Managed Oracle.Managed Oracle12
+--  Oracle.18.Managed Oracle.Managed Oracle12
 
 SELECT
 	t1."Id",
@@ -90,13 +90,13 @@ ORDER BY
 	t1."Id"
 
 BeforeExecute
--- Oracle.18.Managed Oracle.Managed Oracle12
+--  Oracle.18.Managed Oracle.Managed Oracle12
 
 DELETE FROM
 	"GuidTable" t1
 
 BeforeExecute
--- Oracle.18.Managed Oracle.Managed Oracle12
+--  Oracle.18.Managed Oracle.Managed Oracle12
 
 INSERT ALL
 	INTO "GuidTable" ("Id", "Column", "ColumnNullable") VALUES (1,HEXTORAW('3D667BBCDE0F27438F925D8CC3A11D11'),NULL)
@@ -104,7 +104,7 @@ INSERT ALL
 SELECT * FROM dual
 
 BeforeExecute
--- Oracle.18.Managed Oracle.Managed Oracle12
+--  Oracle.18.Managed Oracle.Managed Oracle12
 
 SELECT
 	t1."Id",
@@ -116,13 +116,13 @@ ORDER BY
 	t1."Id"
 
 BeforeExecute
--- Oracle.18.Managed Oracle.Managed Oracle12
+--  Oracle.18.Managed Oracle.Managed Oracle12
 
 DELETE FROM
 	"GuidTable" t1
 
 BeforeExecute
--- Oracle.18.Managed Oracle.Managed Oracle12
+--  Oracle.18.Managed Oracle.Managed Oracle12
 
 INSERT ALL
 	INTO "GuidTable" ("Id", "Column", "ColumnNullable") VALUES (1,HEXTORAW('3D667BBCDE0F27438F925D8CC3A11D11'),NULL)
@@ -130,7 +130,7 @@ INSERT ALL
 SELECT * FROM dual
 
 BeforeExecute
--- Oracle.18.Managed Oracle.Managed Oracle12
+--  Oracle.18.Managed Oracle.Managed Oracle12
 
 SELECT
 	t1."Id",

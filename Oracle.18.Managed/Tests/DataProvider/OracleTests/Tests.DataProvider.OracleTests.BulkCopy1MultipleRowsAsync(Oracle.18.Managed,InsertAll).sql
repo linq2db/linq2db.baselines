@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Oracle.18.Managed Oracle.Managed Oracle12 (asynchronously)
+--  Oracle.18.Managed Oracle.Managed Oracle12 (asynchronously)
 
 INSERT ALL
 	INTO STG_TRADE_INFORMATION (STG_TRADE_ID, STG_TRADE_VERSION, INFORMATION_TYPE_ID, INFORMATION_TYPE_NAME, VALUE, VALUE_AS_INTEGER, VALUE_AS_DATE) VALUES (375,1,20224,'Gas Month',NULL,NULL,NULL)

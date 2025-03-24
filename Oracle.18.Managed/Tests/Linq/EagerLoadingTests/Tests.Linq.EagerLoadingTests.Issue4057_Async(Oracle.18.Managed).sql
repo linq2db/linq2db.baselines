@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 BeginTransactionAsync(ReadCommitted)
 BeforeExecute
--- Oracle.18.Managed Oracle.Managed Oracle12 (asynchronously)
+--  Oracle.18.Managed Oracle.Managed Oracle12 (asynchronously)
 
 SELECT
 	m_1."ParentID",
@@ -20,7 +20,7 @@ FROM
 		INNER JOIN "Child" d ON m_1."ParentID" = d."ParentID"
 
 BeforeExecute
--- Oracle.18.Managed Oracle.Managed Oracle12 (asynchronously)
+--  Oracle.18.Managed Oracle.Managed Oracle12 (asynchronously)
 
 SELECT
 	x."ParentID",
@@ -36,7 +36,7 @@ DisposeTransactionAsync
 BeforeExecute
 BeginTransactionAsync(ReadCommitted)
 BeforeExecute
--- Oracle.18.Managed Oracle.Managed Oracle12 (asynchronously)
+--  Oracle.18.Managed Oracle.Managed Oracle12 (asynchronously)
 
 SELECT
 	m_1."ParentID",
@@ -55,7 +55,7 @@ FROM
 		INNER JOIN "Child" d ON m_1."ParentID" = d."ParentID"
 
 BeforeExecute
--- Oracle.18.Managed Oracle.Managed Oracle12 (asynchronously)
+--  Oracle.18.Managed Oracle.Managed Oracle12 (asynchronously)
 
 SELECT
 	x."ParentID",
@@ -71,7 +71,7 @@ DisposeTransactionAsync
 BeforeExecute
 BeginTransactionAsync(ReadCommitted)
 BeforeExecute
--- Oracle.18.Managed Oracle.Managed Oracle12 (asynchronously)
+--  Oracle.18.Managed Oracle.Managed Oracle12 (asynchronously)
 
 SELECT
 	m_1."ParentID",
@@ -90,7 +90,7 @@ FROM
 		INNER JOIN "Child" d ON m_1."ParentID" = d."ParentID"
 
 BeforeExecute
--- Oracle.18.Managed Oracle.Managed Oracle12 (asynchronously)
+--  Oracle.18.Managed Oracle.Managed Oracle12 (asynchronously)
 
 SELECT
 	x."ParentID",

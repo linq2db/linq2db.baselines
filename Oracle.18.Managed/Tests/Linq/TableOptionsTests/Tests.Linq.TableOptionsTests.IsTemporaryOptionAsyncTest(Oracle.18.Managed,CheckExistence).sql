@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Oracle.18.Managed Oracle.Managed Oracle12 (asynchronously)
+--  Oracle.18.Managed Oracle.Managed Oracle12 (asynchronously)
 
 BEGIN
 	EXECUTE IMMEDIATE '
@@ -18,14 +18,14 @@ EXCEPTION
 END;
 
 BeforeExecute
--- Oracle.18.Managed Oracle.Managed Oracle12 (asynchronously)
+--  Oracle.18.Managed Oracle.Managed Oracle12 (asynchronously)
 
 INSERT ALL
 	INTO "temp_table1" (ID, "Value") VALUES (1,2)
 SELECT * FROM dual
 
 BeforeExecute
--- Oracle.18.Managed Oracle.Managed Oracle12 (asynchronously)
+--  Oracle.18.Managed Oracle.Managed Oracle12 (asynchronously)
 
 BEGIN
 	EXECUTE IMMEDIATE '
@@ -44,7 +44,7 @@ EXCEPTION
 END;
 
 BeforeExecute
--- Oracle.18.Managed Oracle.Managed Oracle12 (asynchronously)
+--  Oracle.18.Managed Oracle.Managed Oracle12 (asynchronously)
 
 INSERT INTO "temp_table2"
 (
@@ -58,7 +58,7 @@ FROM
 	"temp_table1" t1
 
 BeforeExecute
--- Oracle.18.Managed Oracle.Managed Oracle12
+--  Oracle.18.Managed Oracle.Managed Oracle12
 
 SELECT
 	t1.ID,
@@ -67,7 +67,7 @@ FROM
 	"temp_table1" t1
 
 BeforeExecute
--- Oracle.18.Managed Oracle.Managed Oracle12
+--  Oracle.18.Managed Oracle.Managed Oracle12
 
 SELECT
 	t1.ID,
@@ -76,14 +76,14 @@ FROM
 	"temp_table2" t1
 
 BeforeExecute
--- Oracle.18.Managed Oracle.Managed Oracle12 (asynchronously)
+--  Oracle.18.Managed Oracle.Managed Oracle12 (asynchronously)
 
 INSERT ALL
 	INTO "temp_table1" (ID, "Value") VALUES (2,3)
 SELECT * FROM dual
 
 BeforeExecute
--- Oracle.18.Managed Oracle.Managed Oracle12 (asynchronously)
+--  Oracle.18.Managed Oracle.Managed Oracle12 (asynchronously)
 DECLARE @ID Int32
 SET     @ID = 3
 DECLARE @Value Int32
@@ -101,24 +101,24 @@ VALUES
 )
 
 BeforeExecute
--- Oracle.18.Managed Oracle.Managed Oracle12
+--  Oracle.18.Managed Oracle.Managed Oracle12
 
 INSERT ALL
 	INTO "temp_table1" (ID, "Value") VALUES (4,5)
 SELECT * FROM dual
 
 BeforeExecute
--- Oracle.18.Managed Oracle.Managed Oracle12 (asynchronously)
+--  Oracle.18.Managed Oracle.Managed Oracle12 (asynchronously)
 
 TRUNCATE TABLE "temp_table1"
 
 BeforeExecute
--- Oracle.18.Managed Oracle.Managed Oracle12 (asynchronously)
+--  Oracle.18.Managed Oracle.Managed Oracle12 (asynchronously)
 
 TRUNCATE TABLE "temp_table2"
 
 BeforeExecute
--- Oracle.18.Managed Oracle.Managed Oracle12
+--  Oracle.18.Managed Oracle.Managed Oracle12
 
 BEGIN
 	EXECUTE IMMEDIATE 'DROP TABLE "temp_table2"';
@@ -130,7 +130,7 @@ EXCEPTION
 END;
 
 BeforeExecute
--- Oracle.18.Managed Oracle.Managed Oracle12
+--  Oracle.18.Managed Oracle.Managed Oracle12
 
 BEGIN
 	EXECUTE IMMEDIATE 'DROP TABLE "temp_table1"';

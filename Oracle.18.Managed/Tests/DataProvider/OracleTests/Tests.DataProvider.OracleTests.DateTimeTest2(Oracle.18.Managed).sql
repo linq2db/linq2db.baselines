@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Oracle.18.Managed Oracle.Managed Oracle12
+--  Oracle.18.Managed Oracle.Managed Oracle12
 
 DELETE FROM
 	"AllTypes" t
@@ -9,7 +9,7 @@ WHERE
 BeforeExecute
 BeginTransaction
 BeforeExecute
--- Oracle.18.Managed Oracle.Managed Oracle12
+--  Oracle.18.Managed Oracle.Managed Oracle12
 DECLARE @:p1 Clob(4000) -- Object
 SET     @:p1 = NULL
 DECLARE @:p2 NClob(4000) -- Object

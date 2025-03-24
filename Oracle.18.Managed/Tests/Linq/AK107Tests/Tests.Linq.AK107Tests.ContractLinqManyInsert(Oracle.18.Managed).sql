@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 BeginTransaction
 BeforeExecute
--- Oracle.18.Managed Oracle.Managed Oracle12
+--  Oracle.18.Managed Oracle.Managed Oracle12
 DECLARE @Name Varchar2(4) -- String
 SET     @Name = 'user'
 DECLARE @IDENTITY_PARAMETER Decimal
@@ -21,7 +21,7 @@ RETURNING
 	"user_id" INTO :IDENTITY_PARAMETER
 
 BeforeExecute
--- Oracle.18.Managed Oracle.Managed Oracle12
+--  Oracle.18.Managed Oracle.Managed Oracle12
 
 INSERT INTO "t_test_user_contract"
 (

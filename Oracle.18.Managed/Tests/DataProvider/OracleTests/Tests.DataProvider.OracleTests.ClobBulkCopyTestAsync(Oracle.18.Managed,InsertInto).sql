@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Oracle.18.Managed Oracle.Managed Oracle12 (asynchronously)
+--  Oracle.18.Managed Oracle.Managed Oracle12 (asynchronously)
 
 CREATE TABLE "ClobEntity"
 (
@@ -9,7 +9,7 @@ CREATE TABLE "ClobEntity"
 )
 
 BeforeExecute
--- Oracle.18.Managed Oracle.Managed Oracle12 (asynchronously)
+--  Oracle.18.Managed Oracle.Managed Oracle12 (asynchronously)
 DECLARE @:p1 Int32
 SET     @:p1 = {1,2}
 DECLARE @:p2 Clob -- Object
@@ -22,7 +22,7 @@ SET     @:p3 = {'NClob1111111111111111111111111111111111111111111111111111111111
 INSERT INTO "ClobEntity" ("Id", "ClobValue", "NClobValue") VALUES (:p1, :p2, :p3)
 
 BeforeExecute
--- Oracle.18.Managed Oracle.Managed Oracle12 (asynchronously)
+--  Oracle.18.Managed Oracle.Managed Oracle12 (asynchronously)
 
 SELECT
 	t1."Id",
@@ -32,7 +32,7 @@ FROM
 	"ClobEntity" t1
 
 BeforeExecute
--- Oracle.18.Managed Oracle.Managed Oracle12 (asynchronously)
+--  Oracle.18.Managed Oracle.Managed Oracle12 (asynchronously)
 
 DROP TABLE "ClobEntity"
 

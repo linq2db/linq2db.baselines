@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Oracle.18.Managed Oracle.Managed Oracle12
+--  Oracle.18.Managed Oracle.Managed Oracle12
 
 SELECT
 	sys_context('userenv', 'current_schema') as "c1"
@@ -8,22 +8,22 @@ FROM
 FETCH NEXT 1 ROWS ONLY
 
 BeforeExecute
--- Oracle.18.Managed Oracle.Managed Oracle12
+--  Oracle.18.Managed Oracle.Managed Oracle12
 
 SELECT USER FROM DUAL
 
 BeforeExecute
--- Oracle.18.Managed Oracle.Managed Oracle12
+--  Oracle.18.Managed Oracle.Managed Oracle12
 
 SELECT  VERSION from PRODUCT_COMPONENT_VERSION WHERE ROWNUM = 1
 
 BeforeExecute
--- Oracle.18.Managed Oracle.Managed Oracle12
+--  Oracle.18.Managed Oracle.Managed Oracle12
 
 select user from dual
 
 BeforeExecute
--- Oracle.18.Managed Oracle.Managed Oracle12
+--  Oracle.18.Managed Oracle.Managed Oracle12
 DECLARE @CurrentUser Varchar2(6) -- String
 SET     @CurrentUser = 'SYSTEM'
 
@@ -57,7 +57,7 @@ SET     @CurrentUser = 'SYSTEM'
 					
 
 BeforeExecute
--- Oracle.18.Managed Oracle.Managed Oracle12
+--  Oracle.18.Managed Oracle.Managed Oracle12
 
 
 					SELECT
@@ -76,7 +76,7 @@ BeforeExecute
 						FKCOLS.OWNER IN ('SYSTEM')
 
 BeforeExecute
--- Oracle.18.Managed Oracle.Managed Oracle12
+--  Oracle.18.Managed Oracle.Managed Oracle12
 
 
 					SELECT
@@ -99,7 +99,7 @@ BeforeExecute
 					WHERE c.OWNER IN ('SYSTEM')
 
 BeforeExecute
--- Oracle.18.Managed Oracle.Managed Oracle12
+--  Oracle.18.Managed Oracle.Managed Oracle12
 
 
 						SELECT
@@ -131,7 +131,7 @@ BeforeExecute
 							PKCON.OWNER IN ('SYSTEM')
 
 BeforeExecute
--- Oracle.18.Managed Oracle.Managed Oracle12
+--  Oracle.18.Managed Oracle.Managed Oracle12
 
 SELECT
 	p.OWNER                                                                                                                              AS Owner,
@@ -154,7 +154,7 @@ ORDER BY
 	CASE WHEN p.OBJECT_TYPE = 'PACKAGE' THEN p.PROCEDURE_NAME ELSE p.OBJECT_NAME END
 
 BeforeExecute
--- Oracle.18.Managed Oracle.Managed Oracle12
+--  Oracle.18.Managed Oracle.Managed Oracle12
 
 SELECT
 	OWNER          AS Owner,
@@ -175,12 +175,12 @@ WHERE OWNER IN ('SYSTEM') AND SEQUENCE > 0 AND DATA_LEVEL = 0
 BeforeExecute
 BeginTransaction
 BeforeExecute
--- Oracle.18.Managed Oracle.Managed Oracle12
+--  Oracle.18.Managed Oracle.Managed Oracle12
 
 SYSTEM.ISSUE2132.TEST
 
 BeforeExecute
--- Oracle.18.Managed Oracle.Managed Oracle12
+--  Oracle.18.Managed Oracle.Managed Oracle12
 DECLARE @I Decimal(22)
 SET     @I = 0
 DECLARE @O Decimal(22)
@@ -189,12 +189,12 @@ SET     @O = 0
 SYSTEM.TEST_PACKAGE1.TEST_PROCEDURE
 
 BeforeExecute
--- Oracle.18.Managed Oracle.Managed Oracle12
+--  Oracle.18.Managed Oracle.Managed Oracle12
 
 SELECT * FROM SYSTEM.TEST_PACKAGE1.TEST_TABLE_FUNCTION(NULL)
 
 BeforeExecute
--- Oracle.18.Managed Oracle.Managed Oracle12
+--  Oracle.18.Managed Oracle.Managed Oracle12
 DECLARE @I Decimal(22)
 SET     @I = 0
 DECLARE @O Decimal(22)
@@ -203,17 +203,17 @@ SET     @O = 0
 SYSTEM.TEST_PACKAGE2.TEST_PROCEDURE
 
 BeforeExecute
--- Oracle.18.Managed Oracle.Managed Oracle12
+--  Oracle.18.Managed Oracle.Managed Oracle12
 
 SELECT * FROM SYSTEM.TEST_PACKAGE2.TEST_TABLE_FUNCTION(NULL)
 
 BeforeExecute
--- Oracle.18.Managed Oracle.Managed Oracle12
+--  Oracle.18.Managed Oracle.Managed Oracle12
 
 SYSTEM.ADDISSUE792RECORD
 
 BeforeExecute
--- Oracle.18.Managed Oracle.Managed Oracle12
+--  Oracle.18.Managed Oracle.Managed Oracle12
 DECLARE @ID Decimal(22)
 SET     @ID = 0
 DECLARE @BIGINTDATATYPE Decimal(22)
@@ -272,7 +272,7 @@ SET     @XMLDATATYPE = NULL
 SYSTEM.ALLOUTPUTPARAMETERS
 
 BeforeExecute
--- Oracle.18.Managed Oracle.Managed Oracle12
+--  Oracle.18.Managed Oracle.Managed Oracle12
 DECLARE @PINTARRAY Varchar2 -- String
 SET     @PINTARRAY = NULL
 DECLARE @POUTPUTINTARRAY Varchar2 -- String
@@ -289,37 +289,37 @@ SET     @PINPUTOUTPUTSTRARRAY = NULL
 SYSTEM.ARRAYTEST
 
 BeforeExecute
--- Oracle.18.Managed Oracle.Managed Oracle12
+--  Oracle.18.Managed Oracle.Managed Oracle12
 
 SELECT * FROM SYSTEM.LOGMNR$COL_GG_TABF_PUBLIC(NULL,NULL,NULL,NULL,NULL)
 
 BeforeExecute
--- Oracle.18.Managed Oracle.Managed Oracle12
+--  Oracle.18.Managed Oracle.Managed Oracle12
 
 SELECT * FROM SYSTEM.LOGMNR$GSBA_GG_TABF_PUBLIC(NULL,NULL,NULL)
 
 BeforeExecute
--- Oracle.18.Managed Oracle.Managed Oracle12
+--  Oracle.18.Managed Oracle.Managed Oracle12
 
 SELECT * FROM SYSTEM.LOGMNR$KEY_GG_TABF_PUBLIC(NULL,NULL,NULL,NULL,NULL,NULL)
 
 BeforeExecute
--- Oracle.18.Managed Oracle.Managed Oracle12
+--  Oracle.18.Managed Oracle.Managed Oracle12
 
 SELECT * FROM SYSTEM.LOGMNR$SEQ_GG_TABF_PUBLIC(NULL,NULL,NULL,NULL)
 
 BeforeExecute
--- Oracle.18.Managed Oracle.Managed Oracle12
+--  Oracle.18.Managed Oracle.Managed Oracle12
 
 SELECT * FROM SYSTEM.LOGMNR$TAB_GG_TABF_PUBLIC(NULL,NULL,NULL,NULL,NULL)
 
 BeforeExecute
--- Oracle.18.Managed Oracle.Managed Oracle12
+--  Oracle.18.Managed Oracle.Managed Oracle12
 
 SELECT * FROM SYSTEM.LOGMNR$USER_GG_TABF_PUBLIC(NULL,NULL,NULL,NULL,NULL)
 
 BeforeExecute
--- Oracle.18.Managed Oracle.Managed Oracle12
+--  Oracle.18.Managed Oracle.Managed Oracle12
 DECLARE @PSTR NVarchar2 -- String
 SET     @PSTR = ''
 DECLARE @POUTPUTSTR NVarchar2 -- String
@@ -330,7 +330,7 @@ SET     @PINPUTOUTPUTSTR = ''
 SYSTEM.OUTREFENUMTEST
 
 BeforeExecute
--- Oracle.18.Managed Oracle.Managed Oracle12
+--  Oracle.18.Managed Oracle.Managed Oracle12
 DECLARE @PID Decimal(22)
 SET     @PID = 0
 DECLARE @POUTPUTID Decimal(22)
@@ -347,14 +347,14 @@ SET     @PINPUTOUTPUTSTR = ''
 SYSTEM.OUTREFTEST
 
 BeforeExecute
--- Oracle.18.Managed Oracle.Managed Oracle12
+--  Oracle.18.Managed Oracle.Managed Oracle12
 DECLARE @PPERSONID Decimal(22)
 SET     @PPERSONID = 0
 
 SYSTEM.PERSON_DELETE
 
 BeforeExecute
--- Oracle.18.Managed Oracle.Managed Oracle12
+--  Oracle.18.Managed Oracle.Managed Oracle12
 DECLARE @PFIRSTNAME NVarchar2 -- String
 SET     @PFIRSTNAME = ''
 DECLARE @PLASTNAME NVarchar2 -- String
@@ -369,7 +369,7 @@ SET     @PPERSONID = 0
 SYSTEM.PERSON_INSERT_OUTPUTPARAMETER
 
 BeforeExecute
--- Oracle.18.Managed Oracle.Managed Oracle12
+--  Oracle.18.Managed Oracle.Managed Oracle12
 DECLARE @PPERSONID Decimal(22)
 SET     @PPERSONID = 0
 DECLARE @PFIRSTNAME NVarchar2 -- String
@@ -384,7 +384,7 @@ SET     @PGENDER = ''
 SYSTEM.PERSON_UPDATE
 
 BeforeExecute
--- Oracle.18.Managed Oracle.Managed Oracle12
+--  Oracle.18.Managed Oracle.Managed Oracle12
 DECLARE @MR RefCursor -- Object
 SET     @MR = NULL
 DECLARE @SR RefCursor -- Object
@@ -393,14 +393,14 @@ SET     @SR = NULL
 SYSTEM.RESULTSETTEST
 
 BeforeExecute
--- Oracle.18.Managed Oracle.Managed Oracle12
+--  Oracle.18.Managed Oracle.Managed Oracle12
 DECLARE @POUTPUTINTARRAY Varchar2 -- String
 SET     @POUTPUTINTARRAY = NULL
 
 SYSTEM.SCALARARRAY
 
 BeforeExecute
--- Oracle.18.Managed Oracle.Managed Oracle12
+--  Oracle.18.Managed Oracle.Managed Oracle12
 DECLARE @POUTPUTINT Int32
 SET     @POUTPUTINT = 0
 DECLARE @POUTPUTSTRING NVarchar2 -- String
@@ -409,7 +409,7 @@ SET     @POUTPUTSTRING = ''
 SYSTEM.SCALAR_OUTPUTPARAMETER
 
 BeforeExecute
--- Oracle.18.Managed Oracle.Managed Oracle12
+--  Oracle.18.Managed Oracle.Managed Oracle12
 DECLARE @I Decimal(22)
 SET     @I = 0
 DECLARE @O Decimal(22)
@@ -418,7 +418,7 @@ SET     @O = 0
 SYSTEM.TEST_PROCEDURE
 
 BeforeExecute
--- Oracle.18.Managed Oracle.Managed Oracle12
+--  Oracle.18.Managed Oracle.Managed Oracle12
 
 SELECT * FROM SYSTEM.TEST_TABLE_FUNCTION(NULL)
 

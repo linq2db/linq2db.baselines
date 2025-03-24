@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Oracle.18.Managed Oracle.Managed Oracle12
+--  Oracle.18.Managed Oracle.Managed Oracle12
 
 SELECT /*+ QB_NAME(qb) PUSH_PRED(@qb) */
 	p."ParentID",
