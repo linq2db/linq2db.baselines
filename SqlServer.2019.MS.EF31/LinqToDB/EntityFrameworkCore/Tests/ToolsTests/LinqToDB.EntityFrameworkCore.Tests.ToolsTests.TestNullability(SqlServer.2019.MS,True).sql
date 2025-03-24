@@ -6,7 +6,7 @@ FROM [Employees] AS [e]
 WHERE ((@__ef_filter__p_0 = CAST(1 AS bit)) OR ([e].[IsDeleted] <> CAST(1 AS bit))) AND ([e].[EmployeeID] = @__test_0)
 
 
---  SqlServer.2019
+-- SqlServer.2019
 DECLARE @test Int -- Int32
 SET     @test = 1
 
