@@ -20,7 +20,7 @@ INNER JOIN @inserted0 i ON ([t].[Id] = [i].[Id])
 ORDER BY [i].[_Position];
 
 
---  SqlServer.2017 (asynchronously)
+-- SqlServer.2017 (asynchronously)
 
 SELECT
 	[t1].[Id],
