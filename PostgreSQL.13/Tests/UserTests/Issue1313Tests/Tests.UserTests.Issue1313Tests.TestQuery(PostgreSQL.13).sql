@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+--  PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
 
 INSERT INTO "ValueItem"
 (
@@ -11,7 +11,7 @@ VALUES
 )
 
 BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+--  PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
 
 SELECT
 	row_1."Value"

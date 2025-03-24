@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+--  PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
 
 SELECT
 	COUNT(*)
@@ -7,7 +7,7 @@ FROM
 	"AllTypes" t1
 
 BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+--  PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
 
 SELECT
 	current_schema()
@@ -16,12 +16,12 @@ FROM
 LIMIT 1
 
 BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+--  PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
 
 SHOW server_version_num
 
 BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+--  PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
 
 
 SELECT	r.ROUTINE_CATALOG,
@@ -41,12 +41,12 @@ SELECT	r.ROUTINE_CATALOG,
 		WHERE n.nspname NOT IN ('information_schema', 'pg_catalog') AND n.nspname IN ('public')
 
 BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+--  PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
 
 SELECT SPECIFIC_CATALOG, SPECIFIC_SCHEMA, SPECIFIC_NAME, ORDINAL_POSITION, PARAMETER_MODE, PARAMETER_NAME, DATA_TYPE FROM INFORMATION_SCHEMA.parameters
 
 BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+--  PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
 
 SELECT r.SPECIFIC_CATALOG, r.SPECIFIC_SCHEMA, r.SPECIFIC_NAME, r.DATA_TYPE
 	FROM INFORMATION_SCHEMA.ROUTINES r
@@ -59,29 +59,29 @@ SELECT r.SPECIFIC_CATALOG, r.SPECIFIC_SCHEMA, r.SPECIFIC_NAME, r.DATA_TYPE
 BeforeExecute
 BeginTransaction
 BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+--  PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
 
 SELECT * FROM testdata.public."GetParentByID"(NULL::integer)
 
 BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+--  PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
 
 SELECT * FROM testdata.public."TestTableFunction1"(NULL::integer,NULL::integer)
 
 BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+--  PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
 
 SELECT * FROM testdata.public."TestTableFunctionSchema"()
 
 BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+--  PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
 
 SELECT * FROM testdata.public."TestTableFunction"(NULL::integer)
 
 BeforeExecute
 RollbackTransaction
 BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+--  PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
 
 SELECT
 	COUNT(*)
@@ -89,7 +89,7 @@ FROM
 	"AllTypes" t1
 
 BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+--  PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
 
 DELETE FROM
 	"AllTypes" t1

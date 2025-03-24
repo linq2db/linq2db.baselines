@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+--  PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
 DECLARE @Id Integer -- Int32
 SET     @Id = 6
 DECLARE @Title Text(5) -- String
@@ -23,7 +23,7 @@ VALUES
 BeforeExecute
 BeginTransaction(RepeatableRead)
 BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+--  PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
 
 SELECT
 	m_1."Id",
@@ -41,7 +41,7 @@ FROM
 		INNER JOIN "Message" d ON m_1."Id" = d."TopicId"
 
 BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+--  PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
 
 SELECT
 	x."Id",

@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+--  PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
 DECLARE @firstName Text(4) -- String
 SET     @firstName = 'John'
 
@@ -15,7 +15,7 @@ WHERE
 	p."FirstName" = :firstName OR p."LastName" = :firstName
 
 BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+--  PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
 DECLARE @firstName Text(4) -- String
 SET     @firstName = 'John'
 

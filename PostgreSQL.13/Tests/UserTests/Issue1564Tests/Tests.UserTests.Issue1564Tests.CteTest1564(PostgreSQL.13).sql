@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+--  PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
 
 WITH RECURSIVE "categoryHierarchy"
 (
@@ -40,7 +40,7 @@ FROM
 	"categoryHierarchy" t2
 
 BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+--  PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
 
 WITH RECURSIVE "categoryHierarchy"
 (

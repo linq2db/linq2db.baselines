@@ -1,10 +1,10 @@
 ﻿BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+--  PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
 
 DROP TABLE IF EXISTS "Issue681Table2"
 
 BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+--  PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
 
 CREATE TABLE "Issue681Table2"
 (
@@ -15,7 +15,7 @@ CREATE TABLE "Issue681Table2"
 )
 
 BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+--  PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
 
 DROP TABLE IF EXISTS "Issue681Table2"
 

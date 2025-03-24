@@ -1,10 +1,10 @@
 ﻿BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+--  PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
 
 ALTER SEQUENCE "AllTypes_ID_seq" RESTART WITH 3
 
 BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+--  PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
 DECLARE @Value Integer -- Int32
 SET     @Value = 0
 
@@ -23,7 +23,7 @@ BeforeExecute
 INSERT BULK "AllTypes"(intDataType)
 
 BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+--  PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
 DECLARE @lastId Integer -- Int32
 SET     @lastId = 3
 
@@ -38,7 +38,7 @@ ORDER BY
 	t1."ID"
 
 BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+--  PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
 DECLARE @lastId Integer -- Int32
 SET     @lastId = 3
 

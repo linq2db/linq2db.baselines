@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+--  PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
 
 CREATE TEMPORARY TABLE "IsTemporaryTable"
 (
@@ -9,7 +9,7 @@ CREATE TEMPORARY TABLE "IsTemporaryTable"
 ON COMMIT PRESERVE ROWS
 
 BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+--  PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
 
 SELECT
 	t1."Id",
@@ -18,7 +18,7 @@ FROM
 	"IsTemporaryTable" t1
 
 BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+--  PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
 
 DROP TABLE IF EXISTS "IsTemporaryTable"
 

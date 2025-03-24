@@ -1,10 +1,10 @@
 ﻿BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL (asynchronously)
+--  PostgreSQL.13 PostgreSQL.9.5 PostgreSQL (asynchronously)
 
 DROP TABLE IF EXISTS "TempTable"
 
 BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL (asynchronously)
+--  PostgreSQL.13 PostgreSQL.9.5 PostgreSQL (asynchronously)
 
 CREATE TEMPORARY TABLE IF NOT EXISTS "TempTable"
 (
@@ -13,7 +13,7 @@ CREATE TEMPORARY TABLE IF NOT EXISTS "TempTable"
 ON COMMIT PRESERVE ROWS
 
 BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL (asynchronously)
+--  PostgreSQL.13 PostgreSQL.9.5 PostgreSQL (asynchronously)
 
 INSERT INTO "TempTable"
 (
@@ -23,7 +23,7 @@ VALUES
 ('John')
 
 BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL (asynchronously)
+--  PostgreSQL.13 PostgreSQL.9.5 PostgreSQL (asynchronously)
 
 SELECT
 	t."Name"
@@ -32,7 +32,7 @@ FROM
 		INNER JOIN "TempTable" t ON p."FirstName" = t."Name"
 
 BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL (asynchronously)
+--  PostgreSQL.13 PostgreSQL.9.5 PostgreSQL (asynchronously)
 
 DROP TABLE IF EXISTS "TempTable"
 
