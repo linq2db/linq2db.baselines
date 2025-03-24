@@ -1,4 +1,4 @@
-﻿--  MySql.8.0.MySqlConnector MySql80
+﻿-- MySql.8.0.MySqlConnector MySql80
 DECLARE @Id Int32
 SET     @Id = 0
 DECLARE @BlogType VarChar(9) -- String
@@ -21,7 +21,7 @@ VALUES
 
 
 
---  MySql.8.0.MySqlConnector MySql80
+-- MySql.8.0.MySqlConnector MySql80
 DECLARE @Id Int32
 SET     @Id = 0
 DECLARE @BlogType VarChar(8) -- String

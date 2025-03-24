@@ -6,7 +6,7 @@ FROM `Products` AS `p`
 WHERE ((@__ef_filter__p_0 OR NOT (`p`.`IsDeleted`)) OR NOT (`p`.`IsDeleted`)) AND (`p`.`ProductName` LIKE 'U%')
 
 
---  MySql.8.0.MySqlConnector MySql80 (asynchronously)
+-- MySql.8.0.MySqlConnector MySql80 (asynchronously)
 
 SELECT
 	MAX(`e`.`QuantityPerUnit`)
@@ -17,7 +17,7 @@ WHERE
 
 
 
---  MySql.8.0.MySqlConnector MySql80
+-- MySql.8.0.MySqlConnector MySql80
 
 DELETE  
 FROM
