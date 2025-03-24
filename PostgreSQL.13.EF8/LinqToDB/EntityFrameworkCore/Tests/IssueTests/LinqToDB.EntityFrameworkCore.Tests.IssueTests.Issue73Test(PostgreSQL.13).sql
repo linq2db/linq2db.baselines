@@ -4,7 +4,7 @@ LEFT JOIN "Issue73Entities" AS i0 ON i."ParentId" = i0."Id"
 WHERE i."Name" = 'Name1_3'
 
 
---  PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.9.5 PostgreSQL
 
 SELECT
 	"a_Parent"."Name" || '>' || x."Name"

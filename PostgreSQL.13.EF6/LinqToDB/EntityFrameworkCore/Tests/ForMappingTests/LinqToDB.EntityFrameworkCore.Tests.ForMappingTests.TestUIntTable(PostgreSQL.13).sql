@@ -6,7 +6,7 @@ VALUES (@p0, @p1, @p2, @p3, @p4, @p5)
 RETURNING "ID";
 
 
---  PostgreSQL.9.5 PostgreSQL (asynchronously)
+-- PostgreSQL.9.5 PostgreSQL (asynchronously)
 DECLARE @field64 Numeric(1, 0) -- Decimal
 SET     @field64 = 5
 
