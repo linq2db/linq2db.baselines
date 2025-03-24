@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2012
+--  SqlServer.2012
 
 SELECT
 	[t1].[Id],
@@ -9,7 +9,7 @@ FROM
 	[ConcurrencyAutoIncrement] [t1]
 
 BeforeExecute
--- SqlServer.2012
+--  SqlServer.2012
 
 SELECT
 	[t1].[Id],
@@ -19,7 +19,7 @@ FROM
 	[ConcurrencyAutoIncrement] [t1]
 
 BeforeExecute
--- SqlServer.2012
+--  SqlServer.2012
 
 SELECT
 	[t1].[Id],
@@ -29,7 +29,7 @@ FROM
 	[ConcurrencyAutoIncrement] [t1]
 
 BeforeExecute
--- SqlServer.2012
+--  SqlServer.2012
 
 SELECT
 	[t1].[Id],
@@ -39,7 +39,7 @@ FROM
 	[ConcurrencyAutoIncrement] [t1]
 
 BeforeExecute
--- SqlServer.2012
+--  SqlServer.2012
 
 SELECT
 	[t1].[Id],
@@ -49,7 +49,7 @@ FROM
 	[ConcurrencyAutoIncrement] [t1]
 
 BeforeExecute
--- SqlServer.2012
+--  SqlServer.2012
 
 SELECT
 	[t1].[Id],

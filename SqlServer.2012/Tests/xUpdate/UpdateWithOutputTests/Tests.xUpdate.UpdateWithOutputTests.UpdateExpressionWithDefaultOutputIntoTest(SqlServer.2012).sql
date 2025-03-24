@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2012
+--  SqlServer.2012
 
 UPDATE
 	[t]
@@ -22,7 +22,7 @@ FROM
 		INNER JOIN [DestinationTable] [t] ON [t].[Id] = [s].[Id]
 
 BeforeExecute
--- SqlServer.2012
+--  SqlServer.2012
 
 SELECT
 	[t1].[Id],
@@ -32,7 +32,7 @@ FROM
 	[DestinationTable] [t1]
 
 BeforeExecute
--- SqlServer.2012
+--  SqlServer.2012
 
 SELECT
 	[t1].[Id],

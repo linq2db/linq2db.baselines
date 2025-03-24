@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 BeginTransaction
 BeforeExecute
--- SqlServer.2012
+--  SqlServer.2012
 DECLARE @FirstName NVarChar(4000) -- String
 SET     @FirstName = N''
 DECLARE @LastName NVarChar(4000) -- String
@@ -27,7 +27,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2012
+--  SqlServer.2012
 DECLARE @FirstName NVarChar(4000) -- String
 SET     @FirstName = N''
 DECLARE @LastName NVarChar(4000) -- String
@@ -53,7 +53,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2012
+--  SqlServer.2012
 DECLARE @FirstName NVarChar(4000) -- String
 SET     @FirstName = N''
 DECLARE @LastName NVarChar(4000) -- String
@@ -81,7 +81,7 @@ VALUES
 BeforeExecute
 DisposeTransaction
 BeforeExecute
--- SqlServer.2012
+--  SqlServer.2012
 
 SELECT
 	MAX([t1].[PersonID])
@@ -89,7 +89,7 @@ FROM
 	[Person] [t1]
 
 BeforeExecute
--- SqlServer.2012
+--  SqlServer.2012
 
 SELECT Max([PersonID]) FROM [Person]
 

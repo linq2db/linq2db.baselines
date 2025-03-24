@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2012.MS SqlServer.2012
+--  SqlServer.2012.MS SqlServer.2012
 
 SELECT
 	[o].[ParentID],
@@ -23,7 +23,7 @@ FROM
 	[Parent] [o]
 
 BeforeExecute
--- SqlServer.2012.MS SqlServer.2012
+--  SqlServer.2012.MS SqlServer.2012
 
 SELECT
 	COUNT(*)
@@ -31,7 +31,7 @@ FROM
 	[Parent] [o]
 
 BeforeExecute
--- SqlServer.2012.MS SqlServer.2012
+--  SqlServer.2012.MS SqlServer.2012
 
 SELECT
 	[x].[ParentID],

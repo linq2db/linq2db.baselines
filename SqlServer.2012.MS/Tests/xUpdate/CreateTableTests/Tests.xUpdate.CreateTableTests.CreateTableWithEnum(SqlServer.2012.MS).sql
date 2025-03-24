@@ -1,10 +1,10 @@
 ﻿BeforeExecute
--- SqlServer.2012.MS SqlServer.2012
+--  SqlServer.2012.MS SqlServer.2012
 
 DROP TABLE [TestEnumTable]
 
 BeforeExecute
--- SqlServer.2012.MS SqlServer.2012
+--  SqlServer.2012.MS SqlServer.2012
 
 CREATE TABLE [TestEnumTable]
 (
@@ -16,7 +16,7 @@ CREATE TABLE [TestEnumTable]
 )
 
 BeforeExecute
--- SqlServer.2012.MS SqlServer.2012
+--  SqlServer.2012.MS SqlServer.2012
 
 INSERT INTO [TestEnumTable]
 (
@@ -36,7 +36,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2012.MS SqlServer.2012
+--  SqlServer.2012.MS SqlServer.2012
 
 SELECT
 	[t1].[Field1],
@@ -48,7 +48,7 @@ FROM
 	[TestEnumTable] [t1]
 
 BeforeExecute
--- SqlServer.2012.MS SqlServer.2012
+--  SqlServer.2012.MS SqlServer.2012
 
 DROP TABLE [TestEnumTable]
 

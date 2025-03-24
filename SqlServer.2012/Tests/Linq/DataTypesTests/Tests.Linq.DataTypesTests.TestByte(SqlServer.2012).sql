@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2012
+--  SqlServer.2012
 DECLARE @Column TinyInt(1) -- Byte
 SET     @Column = 255
 DECLARE @ColumnNullable TinyInt(1) -- Byte
@@ -15,7 +15,7 @@ WHERE
 	[r].[Column] = @Column AND [r].[ColumnNullable] = @ColumnNullable
 
 BeforeExecute
--- SqlServer.2012
+--  SqlServer.2012
 
 SELECT
 	[r].[Id],
@@ -27,14 +27,14 @@ WHERE
 	[r].[Column] = 255 AND [r].[ColumnNullable] = 2
 
 BeforeExecute
--- SqlServer.2012
+--  SqlServer.2012
 
 DELETE [t1]
 FROM
 	[ByteTable] [t1]
 
 BeforeExecute
--- SqlServer.2012
+--  SqlServer.2012
 DECLARE @Id Int -- Int32
 SET     @Id = 1
 DECLARE @Column TinyInt(1) -- Byte
@@ -56,7 +56,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2012
+--  SqlServer.2012
 DECLARE @Id Int -- Int32
 SET     @Id = 2
 DECLARE @Column TinyInt(1) -- Byte
@@ -78,7 +78,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2012
+--  SqlServer.2012
 
 SELECT
 	[t1].[Id],
@@ -90,14 +90,14 @@ ORDER BY
 	[t1].[Id]
 
 BeforeExecute
--- SqlServer.2012
+--  SqlServer.2012
 
 DELETE [t1]
 FROM
 	[ByteTable] [t1]
 
 BeforeExecute
--- SqlServer.2012
+--  SqlServer.2012
 
 INSERT INTO [ByteTable]
 (
@@ -110,7 +110,7 @@ VALUES
 (2,255,2)
 
 BeforeExecute
--- SqlServer.2012
+--  SqlServer.2012
 
 SELECT
 	[t1].[Id],
@@ -122,7 +122,7 @@ ORDER BY
 	[t1].[Id]
 
 BeforeExecute
--- SqlServer.2012
+--  SqlServer.2012
 
 DELETE [t1]
 FROM
@@ -132,7 +132,7 @@ BeforeExecute
 INSERT BULK [ByteTable](Id, Column, ColumnNullable)
 
 BeforeExecute
--- SqlServer.2012
+--  SqlServer.2012
 
 SELECT
 	[t1].[Id],

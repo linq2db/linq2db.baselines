@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2012.MS SqlServer.2012
+--  SqlServer.2012.MS SqlServer.2012
 
 INSERT INTO [ValueItem]
 (
@@ -11,7 +11,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2012.MS SqlServer.2012
+--  SqlServer.2012.MS SqlServer.2012
 
 SELECT
 	[row_1].[Value]

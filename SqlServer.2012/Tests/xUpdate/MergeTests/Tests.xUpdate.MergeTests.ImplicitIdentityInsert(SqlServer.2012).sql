@@ -1,12 +1,12 @@
 ﻿BeforeExecute
--- SqlServer.2012
+--  SqlServer.2012
 
 DBCC CHECKIDENT ('Person', RESEED, 4)
 
 BeforeExecute
 BeginTransaction
 BeforeExecute
--- SqlServer.2012
+--  SqlServer.2012
 
 SELECT
 	MAX([t1].[PersonID])
@@ -14,7 +14,7 @@ FROM
 	[Person] [t1]
 
 BeforeExecute
--- SqlServer.2012
+--  SqlServer.2012
 
 MERGE INTO [Person] [Target]
 USING (
@@ -55,7 +55,7 @@ VALUES
 ;
 
 BeforeExecute
--- SqlServer.2012
+--  SqlServer.2012
 
 SELECT
 	[t1].[FirstName],

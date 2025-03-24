@@ -1,10 +1,10 @@
 ﻿BeforeExecute
--- SqlServer.2012.MS SqlServer.2012
+--  SqlServer.2012.MS SqlServer.2012
 
 DBCC CHECKIDENT ('Person', RESEED, 4)
 
 BeforeExecute
--- SqlServer.2012.MS SqlServer.2012
+--  SqlServer.2012.MS SqlServer.2012
 DECLARE @FirstName NVarChar(4000) -- String
 SET     @FirstName = N'123'
 DECLARE @LastName NVarChar(4000) -- String
@@ -32,7 +32,7 @@ VALUES
 SELECT SCOPE_IDENTITY()
 
 BeforeExecute
--- SqlServer.2012.MS SqlServer.2012
+--  SqlServer.2012.MS SqlServer.2012
 DECLARE @id Int -- Int32
 SET     @id = 5
 
@@ -48,7 +48,7 @@ WHERE
 	[t].[PersonID] = @id
 
 BeforeExecute
--- SqlServer.2012.MS SqlServer.2012
+--  SqlServer.2012.MS SqlServer.2012
 DECLARE @id Int -- Int32
 SET     @id = 5
 

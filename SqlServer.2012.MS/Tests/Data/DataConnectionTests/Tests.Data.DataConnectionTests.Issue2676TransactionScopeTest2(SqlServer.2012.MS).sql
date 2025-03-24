@@ -1,11 +1,11 @@
 ﻿BeforeExecute
--- SqlServer.2012.MS SqlServer.2012
+--  SqlServer.2012.MS SqlServer.2012
 
 IF (OBJECT_ID(N'[TransactionScopeTable]', N'U') IS NOT NULL)
 	DROP TABLE [TransactionScopeTable]
 
 BeforeExecute
--- SqlServer.2012.MS SqlServer.2012
+--  SqlServer.2012.MS SqlServer.2012
 
 CREATE TABLE [TransactionScopeTable]
 (
@@ -13,7 +13,7 @@ CREATE TABLE [TransactionScopeTable]
 )
 
 BeforeExecute
--- SqlServer.2012.MS SqlServer.2012
+--  SqlServer.2012.MS SqlServer.2012
 
 INSERT INTO [TransactionScopeTable]
 (
@@ -25,7 +25,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2012.MS SqlServer.2012
+--  SqlServer.2012.MS SqlServer.2012
 
 INSERT INTO [TransactionScopeTable]
 (
@@ -37,7 +37,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2012.MS SqlServer.2012
+--  SqlServer.2012.MS SqlServer.2012
 
 SELECT
 	[t1].[Id]
@@ -47,7 +47,7 @@ ORDER BY
 	[t1].[Id]
 
 BeforeExecute
--- SqlServer.2012.MS SqlServer.2012
+--  SqlServer.2012.MS SqlServer.2012
 
 IF (OBJECT_ID(N'[TransactionScopeTable]', N'U') IS NOT NULL)
 	DROP TABLE [TransactionScopeTable]

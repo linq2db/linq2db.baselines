@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2012
+--  SqlServer.2012
 DECLARE @part1 SmallInt -- Int16
 SET     @part1 = 4
 DECLARE @part2 Int -- Int32

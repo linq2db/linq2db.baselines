@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2012
+--  SqlServer.2012
 
 SELECT
 	[p].[FirstName],
@@ -13,7 +13,7 @@ WHERE
 	[p].[FirstName] = N'John' OR [p].[LastName] = N'John'
 
 BeforeExecute
--- SqlServer.2012
+--  SqlServer.2012
 DECLARE @firstName NVarChar(4000) -- String
 SET     @firstName = N'John'
 

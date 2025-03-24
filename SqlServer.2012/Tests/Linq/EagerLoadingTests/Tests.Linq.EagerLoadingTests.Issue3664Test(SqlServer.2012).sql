@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2012
+--  SqlServer.2012
 DECLARE @Id Int -- Int32
 SET     @Id = 1
 
@@ -15,7 +15,7 @@ VALUES
 BeforeExecute
 BeginTransaction(RepeatableRead)
 BeforeExecute
--- SqlServer.2012
+--  SqlServer.2012
 DECLARE @id Int -- Int32
 SET     @id = 11
 
@@ -32,7 +32,7 @@ WHERE
 BeforeExecute
 DisposeTransaction
 BeforeExecute
--- SqlServer.2012
+--  SqlServer.2012
 
 SELECT
 	[t1].[Id]
@@ -42,7 +42,7 @@ FROM
 BeforeExecute
 BeginTransaction(RepeatableRead)
 BeforeExecute
--- SqlServer.2012
+--  SqlServer.2012
 DECLARE @id Int -- Int32
 SET     @id = 12
 
@@ -59,7 +59,7 @@ WHERE
 BeforeExecute
 DisposeTransaction
 BeforeExecute
--- SqlServer.2012
+--  SqlServer.2012
 
 SELECT
 	[t1].[Id]

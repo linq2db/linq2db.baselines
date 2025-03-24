@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2012
+--  SqlServer.2012
 
 SELECT
 	[p].[ParentID],
@@ -12,7 +12,7 @@ WHERE
 BeforeExecute
 BeginTransaction(RepeatableRead)
 BeforeExecute
--- SqlServer.2012
+--  SqlServer.2012
 
 SELECT
 	[m_1].[ParentID],
@@ -35,7 +35,7 @@ FROM
 		INNER JOIN [Child] [d] ON [m_1].[ParentID] = [d].[ParentID]
 
 BeforeExecute
--- SqlServer.2012
+--  SqlServer.2012
 
 SELECT TOP (2)
 	[p].[ParentID],

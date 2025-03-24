@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2012.MS SqlServer.2012
+--  SqlServer.2012.MS SqlServer.2012
 
 CREATE TABLE [tempdb]..[#DestinationTable_target]
 (
@@ -9,7 +9,7 @@ CREATE TABLE [tempdb]..[#DestinationTable_target]
 )
 
 BeforeExecute
--- SqlServer.2012.MS SqlServer.2012
+--  SqlServer.2012.MS SqlServer.2012
 
 SELECT
 	[s].[Id],
@@ -21,7 +21,7 @@ WHERE
 	[s].[Id] > 3
 
 BeforeExecute
--- SqlServer.2012.MS SqlServer.2012 (asynchronously)
+--  SqlServer.2012.MS SqlServer.2012 (asynchronously)
 DECLARE @param Int -- Int32
 SET     @param = 100500
 
@@ -42,7 +42,7 @@ WHERE
 	[s].[Id] > 3
 
 BeforeExecute
--- SqlServer.2012.MS SqlServer.2012
+--  SqlServer.2012.MS SqlServer.2012
 
 SELECT
 	[t1].[Id],
@@ -52,7 +52,7 @@ FROM
 	[tempdb]..[#DestinationTable_target] [t1]
 
 BeforeExecute
--- SqlServer.2012.MS SqlServer.2012
+--  SqlServer.2012.MS SqlServer.2012
 
 IF (OBJECT_ID(N'[tempdb]..[#DestinationTable_target]', N'U') IS NOT NULL)
 	DROP TABLE [tempdb]..[#DestinationTable_target]

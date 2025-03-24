@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2012
+--  SqlServer.2012
 
 SELECT
 	COUNT(*)
@@ -13,7 +13,7 @@ WHERE
 	N'{}' + [p].[LastName] = N'{}' + [p].[LastName]
 
 BeforeExecute
--- SqlServer.2012
+--  SqlServer.2012
 
 SELECT
 	COUNT(*)

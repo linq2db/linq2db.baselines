@@ -2,7 +2,7 @@
 INSERT ASYNC BULK [dbo].[LinqDataTypes](ID, MoneyValue, DateTimeValue, BoolValue, GuidValue, BinaryValue, SmallIntValue)
 
 BeforeExecute
--- SqlServer.2012
+--  SqlServer.2012
 
 DELETE [p]
 FROM

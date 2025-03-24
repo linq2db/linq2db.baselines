@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2012
+--  SqlServer.2012
 
 SELECT
 	FORMATMESSAGE(20009, N'ABC', N'CBA')

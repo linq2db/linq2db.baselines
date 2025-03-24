@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2012.MS SqlServer.2012
+--  SqlServer.2012.MS SqlServer.2012
 
 SELECT TOP (1)
 	'T5=(CHAR: ' + CASE WHEN N'X' IS NULL THEN 'null' ELSE CAST(N'X' AS NVARCHAR) END + ', STRING: ' + N'some string' + ')',

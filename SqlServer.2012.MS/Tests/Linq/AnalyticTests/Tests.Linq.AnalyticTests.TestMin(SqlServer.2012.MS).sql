@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2012.MS SqlServer.2012
+--  SqlServer.2012.MS SqlServer.2012
 
 SELECT
 	MIN([c_1].[ChildID]),
@@ -13,7 +13,7 @@ GROUP BY
 	[g_1].[ParentID]
 
 BeforeExecute
--- SqlServer.2012.MS SqlServer.2012
+--  SqlServer.2012.MS SqlServer.2012
 
 SELECT
 	MIN([t1].[ParentID])
@@ -21,7 +21,7 @@ FROM
 	[Child] [t1]
 
 BeforeExecute
--- SqlServer.2012.MS SqlServer.2012
+--  SqlServer.2012.MS SqlServer.2012
 
 SELECT
 	MIN(ALL [t1].[ParentID])
@@ -29,7 +29,7 @@ FROM
 	[Child] [t1]
 
 BeforeExecute
--- SqlServer.2012.MS SqlServer.2012
+--  SqlServer.2012.MS SqlServer.2012
 
 SELECT
 	MIN(DISTINCT [t1].[ParentID])

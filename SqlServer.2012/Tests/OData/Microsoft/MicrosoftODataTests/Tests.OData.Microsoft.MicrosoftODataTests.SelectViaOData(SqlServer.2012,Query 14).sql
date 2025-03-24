@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2012
+--  SqlServer.2012
 DECLARE @TypedProperty NVarChar(4000) -- String
 SET     @TypedProperty = N'Engineer'
 DECLARE @TypedProperty_1 NVarChar(4000) -- String

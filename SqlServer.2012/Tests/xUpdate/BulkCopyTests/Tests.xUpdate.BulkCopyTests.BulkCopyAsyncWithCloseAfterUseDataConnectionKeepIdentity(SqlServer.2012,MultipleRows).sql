@@ -1,10 +1,10 @@
 ﻿BeforeExecute
--- SqlServer.2012 (asynchronously)
+--  SqlServer.2012 (asynchronously)
 
 SET IDENTITY_INSERT [IdentitySimpleBulkCopyTable] ON
 
 BeforeExecute
--- SqlServer.2012 (asynchronously)
+--  SqlServer.2012 (asynchronously)
 
 INSERT INTO [IdentitySimpleBulkCopyTable]
 (
@@ -14,7 +14,7 @@ VALUES
 (1)
 
 BeforeExecute
--- SqlServer.2012 (asynchronously)
+--  SqlServer.2012 (asynchronously)
 
 SET IDENTITY_INSERT [IdentitySimpleBulkCopyTable] OFF
 

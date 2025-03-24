@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2012
+--  SqlServer.2012
 
 CREATE TABLE [tempdb]..[#TestTable]
 (
@@ -8,7 +8,7 @@ CREATE TABLE [tempdb]..[#TestTable]
 )
 
 BeforeExecute
--- SqlServer.2012
+--  SqlServer.2012
 
 DROP TABLE [tempdb]..[#TestTable]
 

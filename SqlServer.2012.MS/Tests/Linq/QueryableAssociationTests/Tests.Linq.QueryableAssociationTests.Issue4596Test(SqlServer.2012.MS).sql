@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 BeginTransaction(RepeatableRead)
 BeforeExecute
--- SqlServer.2012.MS SqlServer.2012
+--  SqlServer.2012.MS SqlServer.2012
 
 SELECT
 	[m_1].[Id],
@@ -32,7 +32,7 @@ ORDER BY
 	IIF([m_1].[cond_1] = 1, [d].[Name3], N'')
 
 BeforeExecute
--- SqlServer.2012.MS SqlServer.2012
+--  SqlServer.2012.MS SqlServer.2012
 
 SELECT TOP (1)
 	[t1].[Id],

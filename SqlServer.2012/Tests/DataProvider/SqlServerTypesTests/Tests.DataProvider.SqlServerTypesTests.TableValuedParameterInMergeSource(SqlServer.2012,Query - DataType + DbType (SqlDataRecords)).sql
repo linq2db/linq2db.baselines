@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2012
+--  SqlServer.2012
 
 CREATE TABLE [tempdb]..[#TestMergeTVPTable]
 (
@@ -8,7 +8,7 @@ CREATE TABLE [tempdb]..[#TestMergeTVPTable]
 )
 
 BeforeExecute
--- SqlServer.2012
+--  SqlServer.2012
 DECLARE @p [dbo].[TestTableType] -- Structured -- Object
 SET     @p = {Microsoft.SqlServer.Server.SqlDataRecord,Microsoft.SqlServer.Server.SqlDataRecord,Microsoft.SqlServer.Server.SqlDataRecord}
 
@@ -42,7 +42,7 @@ VALUES
 ;
 
 BeforeExecute
--- SqlServer.2012
+--  SqlServer.2012
 
 SELECT
 	[t1].[Id],
@@ -53,7 +53,7 @@ ORDER BY
 	[t1].[Id]
 
 BeforeExecute
--- SqlServer.2012
+--  SqlServer.2012
 
 IF (OBJECT_ID(N'[tempdb]..[#TestMergeTVPTable]', N'U') IS NOT NULL)
 	DROP TABLE [tempdb]..[#TestMergeTVPTable]

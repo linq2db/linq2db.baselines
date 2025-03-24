@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2012
+--  SqlServer.2012
 DECLARE @str NVarChar(4000) -- String
 SET     @str = N'John123'
 

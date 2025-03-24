@@ -2,7 +2,7 @@
 INSERT BULK [VariantTable](Id, Value)
 
 BeforeExecute
--- SqlServer.2012
+--  SqlServer.2012
 
 SELECT
 	[t1].[Id],

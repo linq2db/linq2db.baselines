@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2012
+--  SqlServer.2012
 
 CREATE TABLE [tempdb]..[#TempTable]
 (
@@ -9,7 +9,7 @@ CREATE TABLE [tempdb]..[#TempTable]
 )
 
 BeforeExecute
--- SqlServer.2012
+--  SqlServer.2012
 
 CREATE TABLE [tempdb]..[#TempTable]
 (

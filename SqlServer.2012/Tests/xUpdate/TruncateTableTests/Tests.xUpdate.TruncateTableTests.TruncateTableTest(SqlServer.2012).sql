@@ -1,11 +1,11 @@
 ﻿BeforeExecute
--- SqlServer.2012
+--  SqlServer.2012
 
 IF (OBJECT_ID(N'[TestTrun]', N'U') IS NOT NULL)
 	DROP TABLE [TestTrun]
 
 BeforeExecute
--- SqlServer.2012
+--  SqlServer.2012
 
 CREATE TABLE [TestTrun]
 (
@@ -16,12 +16,12 @@ CREATE TABLE [TestTrun]
 )
 
 BeforeExecute
--- SqlServer.2012
+--  SqlServer.2012
 
 TRUNCATE TABLE [TestTrun]
 
 BeforeExecute
--- SqlServer.2012
+--  SqlServer.2012
 
 DROP TABLE [TestTrun]
 

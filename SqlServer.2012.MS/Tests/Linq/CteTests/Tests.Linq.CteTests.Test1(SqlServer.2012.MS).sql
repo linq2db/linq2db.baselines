@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2012.MS SqlServer.2012
+--  SqlServer.2012.MS SqlServer.2012
 
 WITH [CTE_1] ([ParentID])
 AS
@@ -20,7 +20,7 @@ FROM
 		INNER JOIN [CTE_1] [c2] ON [p].[ParentID] = [c2].[ParentID]
 
 BeforeExecute
--- SqlServer.2012.MS SqlServer.2012
+--  SqlServer.2012.MS SqlServer.2012
 
 SELECT
 	[p].[ParentID],

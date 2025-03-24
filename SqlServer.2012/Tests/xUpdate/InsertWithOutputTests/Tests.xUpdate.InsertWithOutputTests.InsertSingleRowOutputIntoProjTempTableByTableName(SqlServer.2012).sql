@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2012
+--  SqlServer.2012
 
 CREATE TABLE [tempdb]..[#DestinationTable_output]
 (
@@ -9,7 +9,7 @@ CREATE TABLE [tempdb]..[#DestinationTable_output]
 )
 
 BeforeExecute
--- SqlServer.2012
+--  SqlServer.2012
 
 INSERT INTO [TableWithData_source]
 (
@@ -35,7 +35,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2012
+--  SqlServer.2012
 
 SELECT
 	[t1].[Id],
@@ -45,7 +45,7 @@ FROM
 	[TableWithData_source] [t1]
 
 BeforeExecute
--- SqlServer.2012
+--  SqlServer.2012
 
 SELECT
 	[t1].[Id],
@@ -55,7 +55,7 @@ FROM
 	[tempdb]..[#DestinationTable_output] [t1]
 
 BeforeExecute
--- SqlServer.2012
+--  SqlServer.2012
 
 IF (OBJECT_ID(N'[tempdb]..[#DestinationTable_output]', N'U') IS NOT NULL)
 	DROP TABLE [tempdb]..[#DestinationTable_output]

@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 BeginTransaction
 BeforeExecute
--- SqlServer.2012
+--  SqlServer.2012
 
 CREATE TABLE [tempdb]..[#MergeTemp]
 (
@@ -15,7 +15,7 @@ BeforeExecute
 INSERT BULK [tempdb]..[#MergeTemp](ID, Name)
 
 BeforeExecute
--- SqlServer.2012
+--  SqlServer.2012
 
 MERGE INTO [tempdb]..[#MergeTemp] [t1]
 USING (SELECT (
@@ -54,7 +54,7 @@ WHEN NOT MATCHED THEN
 	);
 
 BeforeExecute
--- SqlServer.2012
+--  SqlServer.2012
 
 IF (OBJECT_ID(N'[tempdb]..[#MergeTemp]', N'U') IS NOT NULL)
 	DROP TABLE [tempdb]..[#MergeTemp]

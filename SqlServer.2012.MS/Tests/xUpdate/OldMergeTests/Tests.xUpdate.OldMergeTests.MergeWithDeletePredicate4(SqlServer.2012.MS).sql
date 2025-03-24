@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2012.MS SqlServer.2012
+--  SqlServer.2012.MS SqlServer.2012
 
 SELECT TOP (1)
 	[t1].[PersonID],
@@ -8,7 +8,7 @@ FROM
 	[Patient] [t1]
 
 BeforeExecute
--- SqlServer.2012.MS SqlServer.2012
+--  SqlServer.2012.MS SqlServer.2012
 DECLARE @patient Int -- Int32
 SET     @patient = 2
 
@@ -69,7 +69,7 @@ WHEN NOT MATCHED BY SOURCE AND (
 ;
 
 BeforeExecute
--- SqlServer.2012.MS SqlServer.2012
+--  SqlServer.2012.MS SqlServer.2012
 DECLARE @patient Int -- Int32
 SET     @patient = 3
 
