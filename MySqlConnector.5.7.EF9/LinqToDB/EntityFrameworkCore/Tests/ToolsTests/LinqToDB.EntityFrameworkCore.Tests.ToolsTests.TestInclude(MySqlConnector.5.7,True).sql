@@ -35,7 +35,7 @@ ORDER BY `o`.`OrderID`, `e0`.`EmployeeID`, `s`.`EmployeeID`, `s`.`TerritoryID`, 
 BeginTransactionAsync(RepeatableRead)
 
 
---  MySql.5.7.MySqlConnector MySql57 (asynchronously)
+-- MySql.5.7.MySqlConnector MySql57 (asynchronously)
 
 SELECT
 	`m_1`.`EmployeeId`,
@@ -64,7 +64,7 @@ WHERE
 
 
 
---  MySql.5.7.MySqlConnector MySql57 (asynchronously)
+-- MySql.5.7.MySqlConnector MySql57 (asynchronously)
 
 SELECT
 	`m_1`.`OrderId`,
@@ -105,7 +105,7 @@ WHERE
 DisposeTransactionAsync
 
 
---  MySql.5.7.MySqlConnector MySql57 (asynchronously)
+-- MySql.5.7.MySqlConnector MySql57 (asynchronously)
 
 SELECT
 	`e`.`IsDeleted`,
