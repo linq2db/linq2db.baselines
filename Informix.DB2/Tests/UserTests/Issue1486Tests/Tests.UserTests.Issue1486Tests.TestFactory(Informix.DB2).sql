@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 BeginTransaction(RepeatableRead)
 BeforeExecute
---  Informix.DB2 Informix
+-- Informix.DB2 Informix
 
 SELECT
 	m_1.ParentID,
@@ -23,7 +23,7 @@ FROM
 		INNER JOIN Child d ON m_1.ParentID = d.ParentID
 
 BeforeExecute
---  Informix.DB2 Informix
+-- Informix.DB2 Informix
 
 SELECT FIRST 1
 	t1.ParentID,
