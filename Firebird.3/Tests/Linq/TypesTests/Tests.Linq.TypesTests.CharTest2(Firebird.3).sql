@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SQLite.MS SQLite
+--  SQLite.MS SQLite
 
 SELECT
 	[t1].[PersonID],
@@ -11,7 +11,7 @@ FROM
 	[Person] [t1]
 
 BeforeExecute
--- Firebird.3 Firebird3
+--  Firebird.3 Firebird3
 
 SELECT
 	"p"."PersonID"

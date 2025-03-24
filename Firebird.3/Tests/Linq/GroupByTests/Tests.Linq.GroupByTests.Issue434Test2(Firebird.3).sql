@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 BeginTransaction(RepeatableRead)
 BeforeExecute
--- Firebird.3 Firebird3
+--  Firebird.3 Firebird3
 
 SELECT
 	"m_1"."PersonID",
@@ -16,7 +16,7 @@ WHERE
 BeforeExecute
 DisposeTransaction
 BeforeExecute
--- Firebird.3 Firebird3
+--  Firebird.3 Firebird3
 
 SELECT
 	"p"."FirstName",

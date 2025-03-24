@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Firebird.3 Firebird3
+--  Firebird.3 Firebird3
 DECLARE @Type VarChar(9) -- String
 SET     @Type = 'Child564A'
 DECLARE @StringValue VarChar(9) -- String
@@ -17,7 +17,7 @@ VALUES
 )
 
 BeforeExecute
--- Firebird.3 Firebird3
+--  Firebird.3 Firebird3
 DECLARE @Type VarChar(9) -- String
 SET     @Type = 'Child564B'
 DECLARE @IntValue Integer -- Int32
@@ -35,7 +35,7 @@ VALUES
 )
 
 BeforeExecute
--- Firebird.3 Firebird3
+--  Firebird.3 Firebird3
 
 SELECT
 	COUNT(*)

@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Firebird.3 Firebird3
+--  Firebird.3 Firebird3
 DECLARE @true_value VarChar -- String
 SET     @true_value = 'Y'
 

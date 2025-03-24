@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Firebird.3 Firebird3
+--  Firebird.3 Firebird3
 DECLARE @value Integer -- Int32
 SET     @value = 123
 
@@ -15,7 +15,7 @@ VALUES
 )
 
 BeforeExecute
--- Firebird.3 Firebird3
+--  Firebird.3 Firebird3
 
 SELECT
 	"t1"."Id",

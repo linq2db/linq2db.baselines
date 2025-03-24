@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Firebird.3 Firebird3
+--  Firebird.3 Firebird3
 
 CREATE GLOBAL TEMPORARY TABLE "TestTable"
 (
@@ -9,7 +9,7 @@ CREATE GLOBAL TEMPORARY TABLE "TestTable"
 ON COMMIT PRESERVE ROWS
 
 BeforeExecute
--- Firebird.3 Firebird3
+--  Firebird.3 Firebird3
 
 EXECUTE BLOCK AS BEGIN
 	IF (EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'TestTable')) THEN

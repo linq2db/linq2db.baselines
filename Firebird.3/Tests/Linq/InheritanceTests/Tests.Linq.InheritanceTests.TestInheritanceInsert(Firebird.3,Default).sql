@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Firebird.3 Firebird3
+--  Firebird.3 Firebird3
 
 INSERT INTO "InheritanceFilter"
 (
@@ -20,7 +20,7 @@ SELECT 5,21,0,25,0,0,15,0 FROM rdb$database UNION ALL
 SELECT 6,22,0,26,0,0,0,16 FROM rdb$database
 
 BeforeExecute
--- Firebird.3 Firebird3
+--  Firebird.3 Firebird3
 
 SELECT
 	"t1"."Code",

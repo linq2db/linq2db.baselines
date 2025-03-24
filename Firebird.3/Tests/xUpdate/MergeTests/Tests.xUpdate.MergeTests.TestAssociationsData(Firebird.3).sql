@@ -1,12 +1,12 @@
 ﻿BeforeExecute
--- Firebird.3 Firebird3
+--  Firebird.3 Firebird3
 
 SET GENERATOR "PersonID" TO 4
 
 BeforeExecute
 BeginTransaction
 BeforeExecute
--- Firebird.3 Firebird3
+--  Firebird.3 Firebird3
 
 SELECT
 	"t1"."PersonID",
@@ -17,7 +17,7 @@ ORDER BY
 	"t1"."PersonID"
 
 BeforeExecute
--- Firebird.3 Firebird3
+--  Firebird.3 Firebird3
 
 SELECT
 	"t1"."PersonID",
@@ -28,7 +28,7 @@ ORDER BY
 	"t1"."PersonID"
 
 BeforeExecute
--- Firebird.3 Firebird3
+--  Firebird.3 Firebird3
 
 SELECT
 	"t1"."FirstName",

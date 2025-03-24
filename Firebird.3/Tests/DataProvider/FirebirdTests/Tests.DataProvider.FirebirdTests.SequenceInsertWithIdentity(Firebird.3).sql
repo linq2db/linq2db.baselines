@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Firebird.3 Firebird3
+--  Firebird.3 Firebird3
 
 DELETE FROM
 	"SequenceTest" "t1"
@@ -7,7 +7,7 @@ WHERE
 	"t1"."Value_" = 'SeqValue'
 
 BeforeExecute
--- Firebird.3 Firebird3
+--  Firebird.3 Firebird3
 DECLARE @Value VarChar(8) -- String
 SET     @Value = 'SeqValue'
 DECLARE @IDENTITY_PARAMETER Decimal
@@ -27,7 +27,7 @@ RETURNING
 	ID
 
 BeforeExecute
--- Firebird.3 Firebird3
+--  Firebird.3 Firebird3
 
 SELECT
 	"t1".ID,
@@ -39,7 +39,7 @@ WHERE
 FETCH NEXT 2 ROWS ONLY
 
 BeforeExecute
--- Firebird.3 Firebird3
+--  Firebird.3 Firebird3
 DECLARE @id1 Integer -- Int32
 SET     @id1 = 2
 
@@ -49,7 +49,7 @@ WHERE
 	"t1".ID = @id1
 
 BeforeExecute
--- Firebird.3 Firebird3
+--  Firebird.3 Firebird3
 
 SELECT
 	COUNT(*)

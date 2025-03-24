@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 BeginTransaction(RepeatableRead)
 BeforeExecute
--- Firebird.3 Firebird3
+--  Firebird.3 Firebird3
 DECLARE @id Integer -- Int32
 SET     @id = 1
 DECLARE @name VarChar(4) -- String
@@ -23,7 +23,7 @@ WHERE
 BeforeExecute
 DisposeTransaction
 BeforeExecute
--- Firebird.3 Firebird3
+--  Firebird.3 Firebird3
 DECLARE @id Integer -- Int32
 SET     @id = 1
 DECLARE @name VarChar(4) -- String

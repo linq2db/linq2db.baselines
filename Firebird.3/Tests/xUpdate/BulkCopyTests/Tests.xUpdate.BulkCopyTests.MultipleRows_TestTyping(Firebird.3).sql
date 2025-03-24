@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Firebird.3 Firebird3
+--  Firebird.3 Firebird3
 
 INSERT INTO "MultipleRowsTable"
 (
@@ -11,7 +11,7 @@ SELECT 1,NULL,1 FROM rdb$database UNION ALL
 SELECT 2,1.5,-2.6 FROM rdb$database
 
 BeforeExecute
--- Firebird.3 Firebird3
+--  Firebird.3 Firebird3
 
 SELECT
 	"t1"."Id",

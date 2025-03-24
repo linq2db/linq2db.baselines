@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Firebird.3 Firebird3
+--  Firebird.3 Firebird3
 
 CREATE TABLE "Issue464"
 (
@@ -8,7 +8,7 @@ CREATE TABLE "Issue464"
 )
 
 BeforeExecute
--- Firebird.3 Firebird3
+--  Firebird.3 Firebird3
 
 INSERT INTO "Issue464"
 (
@@ -20,7 +20,7 @@ SELECT 2,2 FROM rdb$database UNION ALL
 SELECT 3,3 FROM rdb$database
 
 BeforeExecute
--- Firebird.3 Firebird3
+--  Firebird.3 Firebird3
 
 SELECT
 	"t1"."Id",
@@ -29,7 +29,7 @@ FROM
 	"Issue464" "t1"
 
 BeforeExecute
--- Firebird.3 Firebird3
+--  Firebird.3 Firebird3
 
 DROP TABLE "Issue464"
 

@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Firebird.3 Firebird3
+--  Firebird.3 Firebird3
 DECLARE @cpty VarChar(3) -- String
 SET     @cpty = '%C%'
 DECLARE @cpty_1 VarChar(3) -- String

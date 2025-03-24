@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Firebird.3 Firebird3
+--  Firebird.3 Firebird3
 
 INSERT INTO "TrimTestTable"
 (
@@ -9,7 +9,7 @@ INSERT INTO "TrimTestTable"
 SELECT 1,CAST('***OOO***' AS VarChar(50) CHARACTER SET UNICODE_FSS) FROM rdb$database
 
 BeforeExecute
--- Firebird.3 Firebird3
+--  Firebird.3 Firebird3
 
 SELECT
 	"r".ID,
@@ -20,7 +20,7 @@ ORDER BY
 	"r".ID
 
 BeforeExecute
--- Firebird.3 Firebird3
+--  Firebird.3 Firebird3
 
 SELECT
 	"r".ID,
