@@ -196,14 +196,14 @@ WHERE
 		FROM
 			(
 				SELECT
-					[x].[ParentID],
-					[x].[Value1]
+					[x].[Value1],
+					[x].[ParentID]
 				FROM
 					[Parent] [x]
 				WHERE
 					[x].[ParentID] > 1000
 				ORDER BY
-					[x].[ParentID]
+					[x].[Value1]
 				OFFSET @skip ROWS FETCH NEXT @take ROWS ONLY 
 			) [t1]
 		WHERE
