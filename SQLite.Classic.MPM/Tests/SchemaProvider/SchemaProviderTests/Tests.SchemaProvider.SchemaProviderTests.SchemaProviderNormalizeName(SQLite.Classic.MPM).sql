@@ -1,5 +1,5 @@
 ﻿BeforeExecute
---  SQLite.Classic SQLite
+-- SQLite.Classic SQLite
 
 create table Customer
 					(
@@ -8,7 +8,7 @@ create table Customer
 					)
 
 BeforeExecute
---  SQLite.Classic SQLite
+-- SQLite.Classic SQLite
 
 create table Purchase
 					(
@@ -20,7 +20,7 @@ create table Purchase
 					)
 
 BeforeExecute
---  SQLite.Classic SQLite
+-- SQLite.Classic SQLite
 
 create table PurchaseItem
 					(
