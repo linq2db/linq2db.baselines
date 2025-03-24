@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
+--  SQLite.Classic.MPU SQLite.Classic SQLite
 DECLARE @take  -- Int32
 SET     @take = 1
 
@@ -12,7 +12,7 @@ FROM
 LIMIT @take
 
 BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
+--  SQLite.Classic.MPU SQLite.Classic SQLite
 
 SELECT
 	[t1].[ParentID],

@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SQLite.Classic.MPM SQLite.Classic SQLite
+--  SQLite.Classic.MPM SQLite.Classic SQLite
 
 SELECT
 	[x_8].[Id],
@@ -187,7 +187,7 @@ FROM
 		LEFT JOIN [MaterialDTO] [m8] ON [i8].[MaterialID] = [m8].[Id]
 
 BeforeExecute
--- SQLite.Classic.MPM SQLite.Classic SQLite
+--  SQLite.Classic.MPM SQLite.Classic SQLite
 
 SELECT
 	[x_8].[Id],

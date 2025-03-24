@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SQLite.Classic.MPM SQLite.Classic SQLite
+--  SQLite.Classic.MPM SQLite.Classic SQLite
 
 INSERT INTO [MultipleRowsTable]
 (
@@ -12,7 +12,7 @@ VALUES
 (2,1.5,-2.6)
 
 BeforeExecute
--- SQLite.Classic.MPM SQLite.Classic SQLite
+--  SQLite.Classic.MPM SQLite.Classic SQLite
 
 SELECT
 	[t1].[Id],

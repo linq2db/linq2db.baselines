@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 BeginTransaction(Serializable)
 BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
+--  SQLite.Classic.MPU SQLite.Classic SQLite
 
 WITH [CTE_1] ([Id])
 AS
@@ -48,7 +48,7 @@ FROM
 BeforeExecute
 DisposeTransaction
 BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
+--  SQLite.Classic.MPU SQLite.Classic SQLite
 
 WITH [CTE_1]
 (

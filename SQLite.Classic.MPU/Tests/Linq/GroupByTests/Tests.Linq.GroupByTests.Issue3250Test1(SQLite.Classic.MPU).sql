@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
+--  SQLite.Classic.MPU SQLite.Classic SQLite
 
 SELECT
 	(COUNT(*) || ' items have not been processed, e.g. #' || MIN([g_1].[PersonID])) || '.'

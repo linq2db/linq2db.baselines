@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
+--  SQLite.Classic.MPU SQLite.Classic SQLite
 DECLARE @Value  -- Int32
 SET     @Value = 1
 
@@ -13,7 +13,7 @@ VALUES
 )
 
 BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
+--  SQLite.Classic.MPU SQLite.Classic SQLite
 DECLARE @addition  -- Int32
 SET     @addition = 123
 
@@ -29,7 +29,7 @@ FROM
 	[TableWithIdentitySrc] [t1]
 
 BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
+--  SQLite.Classic.MPU SQLite.Classic SQLite
 
 SELECT
 	[t1].[Id],

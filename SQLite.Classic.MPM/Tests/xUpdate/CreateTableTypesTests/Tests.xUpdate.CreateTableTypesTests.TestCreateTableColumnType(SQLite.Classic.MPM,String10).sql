@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SQLite.Classic.MPM SQLite.Classic SQLite
+--  SQLite.Classic.MPM SQLite.Classic SQLite
 DECLARE @Id  -- Int32
 SET     @Id = 1
 DECLARE @String NVarChar -- String
@@ -17,7 +17,7 @@ VALUES
 )
 
 BeforeExecute
--- SQLite.Classic.MPM SQLite.Classic SQLite
+--  SQLite.Classic.MPM SQLite.Classic SQLite
 DECLARE @Id  -- Int32
 SET     @Id = 2
 DECLARE @String NVarChar(7) -- String
@@ -35,7 +35,7 @@ VALUES
 )
 
 BeforeExecute
--- SQLite.Classic.MPM SQLite.Classic SQLite
+--  SQLite.Classic.MPM SQLite.Classic SQLite
 
 SELECT
 	[t1].[Id],

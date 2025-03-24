@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
+--  SQLite.Classic.MPU SQLite.Classic SQLite
 
 SELECT
 	[nm].[FirstName]
@@ -9,7 +9,7 @@ WHERE
 	Length([nm].[FirstName]) <> 0
 
 BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
+--  SQLite.Classic.MPU SQLite.Classic SQLite
 
 SELECT
 	[t1].[FirstName],

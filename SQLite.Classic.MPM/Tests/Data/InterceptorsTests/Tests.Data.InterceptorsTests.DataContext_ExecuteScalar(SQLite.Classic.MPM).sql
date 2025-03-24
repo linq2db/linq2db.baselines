@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SQLite.Classic.MPM SQLite.Classic SQLite
+--  SQLite.Classic.MPM SQLite.Classic SQLite
 
 CREATE TABLE [InterceptorsTestsTable]
 (
@@ -7,7 +7,7 @@ CREATE TABLE [InterceptorsTestsTable]
 )
 
 BeforeExecute
--- SQLite.Classic.MPM SQLite.Classic SQLite
+--  SQLite.Classic.MPM SQLite.Classic SQLite
 
 INSERT INTO [InterceptorsTestsTable]
 (
@@ -19,12 +19,12 @@ VALUES
 )
 
 BeforeExecute
--- SQLite.Classic.MPM SQLite.Classic SQLite
+--  SQLite.Classic.MPM SQLite.Classic SQLite
 
 SELECT last_insert_rowid()
 
 BeforeExecute
--- SQLite.Classic.MPM SQLite.Classic SQLite
+--  SQLite.Classic.MPM SQLite.Classic SQLite
 
 DROP TABLE IF EXISTS [InterceptorsTestsTable]
 

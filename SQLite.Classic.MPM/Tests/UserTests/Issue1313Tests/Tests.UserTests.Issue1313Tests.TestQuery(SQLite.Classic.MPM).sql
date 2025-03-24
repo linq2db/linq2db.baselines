@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SQLite.Classic.MPM SQLite.Classic SQLite
+--  SQLite.Classic.MPM SQLite.Classic SQLite
 
 INSERT INTO [ValueItem]
 (
@@ -11,7 +11,7 @@ VALUES
 )
 
 BeforeExecute
--- SQLite.Classic.MPM SQLite.Classic SQLite
+--  SQLite.Classic.MPM SQLite.Classic SQLite
 
 SELECT
 	[row_1].[Value]

@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SQLite.Classic.MPM SQLite.Classic SQLite
+--  SQLite.Classic.MPM SQLite.Classic SQLite
 
 SELECT
 	[x].[ParentID]
@@ -8,7 +8,7 @@ FROM
 		INNER JOIN [Child] [y] ON [x].[ParentID] = [y].[ParentID]
 
 BeforeExecute
--- SQLite.Classic.MPM SQLite.Classic SQLite
+--  SQLite.Classic.MPM SQLite.Classic SQLite
 
 SELECT
 	[g_1].[ParentID]

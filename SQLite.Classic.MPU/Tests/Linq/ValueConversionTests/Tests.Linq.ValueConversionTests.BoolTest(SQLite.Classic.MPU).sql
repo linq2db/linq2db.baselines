@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
+--  SQLite.Classic.MPU SQLite.Classic SQLite
 DECLARE @true_value VarChar -- AnsiString
 SET     @true_value = 'Y'
 

@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
+--  SQLite.Classic.MPU SQLite.Classic SQLite
 DECLARE @id  -- Int32
 SET     @id = 1001
 
@@ -15,7 +15,7 @@ VALUES
 )
 
 BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
+--  SQLite.Classic.MPU SQLite.Classic SQLite
 DECLARE @id  -- Int32
 SET     @id = 1001
 
@@ -27,7 +27,7 @@ WHERE
 	[c_1].[ChildID] = @id
 
 BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
+--  SQLite.Classic.MPU SQLite.Classic SQLite
 DECLARE @id  -- Int32
 SET     @id = 1001
 
@@ -46,7 +46,7 @@ WHERE
 	[Child].[ParentID] = [p].[ParentID]
 
 BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
+--  SQLite.Classic.MPU SQLite.Classic SQLite
 DECLARE @p  -- Int32
 SET     @p = 1002
 

@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
+--  SQLite.Classic.MPU SQLite.Classic SQLite
 DECLARE @MyCol1 NVarChar(6) -- String
 SET     @MyCol1 = 'MyCol1'
 DECLARE @itemType  -- Int32
@@ -21,7 +21,7 @@ VALUES
 )
 
 BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
+--  SQLite.Classic.MPU SQLite.Classic SQLite
 DECLARE @MyCol1 NVarChar -- String
 SET     @MyCol1 = NULL
 DECLARE @itemType  -- Int32
@@ -43,7 +43,7 @@ VALUES
 )
 
 BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
+--  SQLite.Classic.MPU SQLite.Classic SQLite
 
 SELECT
 	[t1].[itemType],
@@ -56,7 +56,7 @@ WHERE
 LIMIT 1
 
 BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
+--  SQLite.Classic.MPU SQLite.Classic SQLite
 
 SELECT
 	COUNT(*)

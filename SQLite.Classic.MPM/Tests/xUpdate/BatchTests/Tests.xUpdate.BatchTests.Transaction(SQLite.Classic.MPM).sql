@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SQLite.Classic.MPM SQLite.Classic SQLite
+--  SQLite.Classic.MPM SQLite.Classic SQLite
 DECLARE @ParentID  -- Int32
 SET     @ParentID = 1111
 
@@ -9,7 +9,7 @@ WHERE
 	[Parent].[ParentID] = @ParentID
 
 BeforeExecute
--- SQLite.Classic.MPM SQLite.Classic SQLite
+--  SQLite.Classic.MPM SQLite.Classic SQLite
 DECLARE @ParentID  -- Int32
 SET     @ParentID = 2111
 
@@ -19,7 +19,7 @@ WHERE
 	[Parent].[ParentID] = @ParentID
 
 BeforeExecute
--- SQLite.Classic.MPM SQLite.Classic SQLite
+--  SQLite.Classic.MPM SQLite.Classic SQLite
 DECLARE @ParentID  -- Int32
 SET     @ParentID = 3111
 
@@ -29,7 +29,7 @@ WHERE
 	[Parent].[ParentID] = @ParentID
 
 BeforeExecute
--- SQLite.Classic.MPM SQLite.Classic SQLite
+--  SQLite.Classic.MPM SQLite.Classic SQLite
 DECLARE @ParentID  -- Int32
 SET     @ParentID = 4111
 
@@ -41,7 +41,7 @@ WHERE
 BeforeExecute
 BeginTransaction
 BeforeExecute
--- SQLite.Classic.MPM SQLite.Classic SQLite
+--  SQLite.Classic.MPM SQLite.Classic SQLite
 
 INSERT INTO [Parent]
 (
@@ -57,7 +57,7 @@ VALUES
 BeforeExecute
 CommitTransaction
 BeforeExecute
--- SQLite.Classic.MPM SQLite.Classic SQLite
+--  SQLite.Classic.MPM SQLite.Classic SQLite
 DECLARE @ParentID  -- Int32
 SET     @ParentID = 1111
 
@@ -67,7 +67,7 @@ WHERE
 	[Parent].[ParentID] = @ParentID
 
 BeforeExecute
--- SQLite.Classic.MPM SQLite.Classic SQLite
+--  SQLite.Classic.MPM SQLite.Classic SQLite
 DECLARE @ParentID  -- Int32
 SET     @ParentID = 2111
 
@@ -77,7 +77,7 @@ WHERE
 	[Parent].[ParentID] = @ParentID
 
 BeforeExecute
--- SQLite.Classic.MPM SQLite.Classic SQLite
+--  SQLite.Classic.MPM SQLite.Classic SQLite
 DECLARE @ParentID  -- Int32
 SET     @ParentID = 3111
 
@@ -87,7 +87,7 @@ WHERE
 	[Parent].[ParentID] = @ParentID
 
 BeforeExecute
--- SQLite.Classic.MPM SQLite.Classic SQLite
+--  SQLite.Classic.MPM SQLite.Classic SQLite
 DECLARE @ParentID  -- Int32
 SET     @ParentID = 4111
 

@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 BeginTransaction(Serializable)
 BeforeExecute
--- SQLite.Classic.MPM SQLite.Classic SQLite
+--  SQLite.Classic.MPM SQLite.Classic SQLite
 DECLARE @TypedProperty NVarChar(4) -- String
 SET     @TypedProperty = '%de%'
 
@@ -34,7 +34,7 @@ FROM
 BeforeExecute
 DisposeTransaction
 BeforeExecute
--- SQLite.Classic.MPM SQLite.Classic SQLite
+--  SQLite.Classic.MPM SQLite.Classic SQLite
 DECLARE @TypedProperty NVarChar(4) -- String
 SET     @TypedProperty = '%de%'
 

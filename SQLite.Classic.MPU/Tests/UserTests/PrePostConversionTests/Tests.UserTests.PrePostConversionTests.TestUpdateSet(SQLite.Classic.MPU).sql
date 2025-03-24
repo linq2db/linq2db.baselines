@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
+--  SQLite.Classic.MPU SQLite.Classic SQLite
 DECLARE @Id  -- Int64
 SET     @Id = 1
 DECLARE @SomeValue1  -- Int32
@@ -21,7 +21,7 @@ VALUES
 )
 
 BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
+--  SQLite.Classic.MPU SQLite.Classic SQLite
 DECLARE @SomeValue1  -- Int32
 SET     @SomeValue1 = 8
 
@@ -32,7 +32,7 @@ SET
 	[SomeValue2] = 4
 
 BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
+--  SQLite.Classic.MPU SQLite.Classic SQLite
 
 SELECT
 	[t1].[Id],
@@ -43,7 +43,7 @@ FROM
 LIMIT 2
 
 BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
+--  SQLite.Classic.MPU SQLite.Classic SQLite
 DECLARE @param  -- Int32
 SET     @param = 8
 
@@ -53,7 +53,7 @@ SET
 	[SomeValue2] = @param
 
 BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
+--  SQLite.Classic.MPU SQLite.Classic SQLite
 
 SELECT
 	[t1].[Id],

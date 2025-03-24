@@ -1,10 +1,10 @@
 ﻿BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
+--  SQLite.Classic.MPU SQLite.Classic SQLite
 
 DROP TABLE IF EXISTS temp.[TestTable]
 
 BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
+--  SQLite.Classic.MPU SQLite.Classic SQLite
 
 CREATE TEMPORARY TABLE temp.[TestTable]
 (
@@ -13,7 +13,7 @@ CREATE TEMPORARY TABLE temp.[TestTable]
 )
 
 BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
+--  SQLite.Classic.MPU SQLite.Classic SQLite
 
 SELECT
 	[t1].[Id],
@@ -30,7 +30,7 @@ WHERE
 	[t1].[Id] = [t2].[Id]
 
 BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
+--  SQLite.Classic.MPU SQLite.Classic SQLite
 
 DROP TABLE IF EXISTS temp.[TestTable]
 

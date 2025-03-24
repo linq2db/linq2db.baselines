@@ -1,10 +1,10 @@
 ﻿BeforeExecute
--- SQLite.Classic.MPM SQLite.Classic SQLite
+--  SQLite.Classic.MPM SQLite.Classic SQLite
 
 DROP TABLE IF EXISTS temp.[TestTable]
 
 BeforeExecute
--- SQLite.Classic.MPM SQLite.Classic SQLite
+--  SQLite.Classic.MPM SQLite.Classic SQLite
 
 CREATE TEMPORARY TABLE temp.[TestTable]
 (
@@ -13,7 +13,7 @@ CREATE TEMPORARY TABLE temp.[TestTable]
 )
 
 BeforeExecute
--- SQLite.Classic.MPM SQLite.Classic SQLite
+--  SQLite.Classic.MPM SQLite.Classic SQLite
 
 SELECT
 	[t1].[Id],
@@ -28,7 +28,7 @@ FROM
 		INNER JOIN temp.[TestTable] [t3] ON [t2].[Id] = [t3].[Id]
 
 BeforeExecute
--- SQLite.Classic.MPM SQLite.Classic SQLite
+--  SQLite.Classic.MPM SQLite.Classic SQLite
 
 DROP TABLE IF EXISTS temp.[TestTable]
 

@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SQLite.Classic.MPM SQLite.Classic SQLite
+--  SQLite.Classic.MPM SQLite.Classic SQLite
 DECLARE @id  -- Int32
 SET     @id = 1001
 
@@ -15,7 +15,7 @@ VALUES
 )
 
 BeforeExecute
--- SQLite.Classic.MPM SQLite.Classic SQLite
+--  SQLite.Classic.MPM SQLite.Classic SQLite
 DECLARE @id  -- Int32
 SET     @id = 1001
 
@@ -27,7 +27,7 @@ WHERE
 	[c_1].[ChildID] = @id
 
 BeforeExecute
--- SQLite.Classic.MPM SQLite.Classic SQLite
+--  SQLite.Classic.MPM SQLite.Classic SQLite
 DECLARE @ChildID  -- Int32
 SET     @ChildID = 5000
 DECLARE @id  -- Int32
@@ -44,7 +44,7 @@ WHERE
 	[Child].[ParentID] = [a_Parent].[ParentID]
 
 BeforeExecute
--- SQLite.Classic.MPM SQLite.Classic SQLite
+--  SQLite.Classic.MPM SQLite.Classic SQLite
 
 SELECT
 	COUNT(*)

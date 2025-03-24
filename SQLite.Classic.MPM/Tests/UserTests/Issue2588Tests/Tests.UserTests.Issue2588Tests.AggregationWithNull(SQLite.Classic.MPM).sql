@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SQLite.Classic.MPM SQLite.Classic SQLite (asynchronously)
+--  SQLite.Classic.MPM SQLite.Classic SQLite (asynchronously)
 
 SELECT
 	MAX([x].[Value])
@@ -9,7 +9,7 @@ WHERE
 	[x].[Id] = 0
 
 BeforeExecute
--- SQLite.Classic.MPM SQLite.Classic SQLite (asynchronously)
+--  SQLite.Classic.MPM SQLite.Classic SQLite (asynchronously)
 
 SELECT
 	MAX([x].[Value])
@@ -19,7 +19,7 @@ WHERE
 	[x].[Id] = 0
 
 BeforeExecute
--- SQLite.Classic.MPM SQLite.Classic SQLite (asynchronously)
+--  SQLite.Classic.MPM SQLite.Classic SQLite (asynchronously)
 
 SELECT
 	MAX(CASE
@@ -34,7 +34,7 @@ FROM
 		LEFT JOIN [TestClass] [d] ON [d].[Id] = 0
 
 BeforeExecute
--- SQLite.Classic.MPM SQLite.Classic SQLite (asynchronously)
+--  SQLite.Classic.MPM SQLite.Classic SQLite (asynchronously)
 
 SELECT
 	MAX(CASE

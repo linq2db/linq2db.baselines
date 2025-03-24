@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SQLite.Classic.MPM SQLite.Classic SQLite (asynchronously)
+--  SQLite.Classic.MPM SQLite.Classic SQLite (asynchronously)
 
 SELECT
 	[t1].[ParentID],
@@ -10,7 +10,7 @@ FROM
 BeforeExecute
 BeginTransactionAsync
 BeforeExecute
--- SQLite.Classic.MPM SQLite.Classic SQLite
+--  SQLite.Classic.MPM SQLite.Classic SQLite
 DECLARE @ParentID  -- Int32
 SET     @ParentID = 1010
 DECLARE @Value1  -- Int32

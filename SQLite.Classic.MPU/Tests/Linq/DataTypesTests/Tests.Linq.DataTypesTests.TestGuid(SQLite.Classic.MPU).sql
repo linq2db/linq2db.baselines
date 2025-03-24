@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
+--  SQLite.Classic.MPU SQLite.Classic SQLite
 DECLARE @Column  -- Guid
 SET     @Column = X'0D6048A921DE744F8AC29516B287076E'
 DECLARE @ColumnNullable  -- Guid
@@ -15,7 +15,7 @@ WHERE
 	[r].[Column] = @Column AND [r].[ColumnNullable] = @ColumnNullable
 
 BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
+--  SQLite.Classic.MPU SQLite.Classic SQLite
 
 SELECT
 	[r].[Id],
@@ -28,13 +28,13 @@ WHERE
 	[r].[ColumnNullable] = X'A57339BD2343D84D9F4FDF9F93E2A627'
 
 BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
+--  SQLite.Classic.MPU SQLite.Classic SQLite
 
 DELETE FROM
 	[GuidTable]
 
 BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
+--  SQLite.Classic.MPU SQLite.Classic SQLite
 DECLARE @Id  -- Int32
 SET     @Id = 1
 DECLARE @Column  -- Guid
@@ -56,7 +56,7 @@ VALUES
 )
 
 BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
+--  SQLite.Classic.MPU SQLite.Classic SQLite
 DECLARE @Id  -- Int32
 SET     @Id = 2
 DECLARE @Column  -- Guid
@@ -78,7 +78,7 @@ VALUES
 )
 
 BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
+--  SQLite.Classic.MPU SQLite.Classic SQLite
 
 SELECT
 	[t1].[Id],
@@ -90,13 +90,13 @@ ORDER BY
 	[t1].[Id]
 
 BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
+--  SQLite.Classic.MPU SQLite.Classic SQLite
 
 DELETE FROM
 	[GuidTable]
 
 BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
+--  SQLite.Classic.MPU SQLite.Classic SQLite
 
 INSERT INTO [GuidTable]
 (
@@ -109,7 +109,7 @@ VALUES
 (2,X'0D6048A921DE744F8AC29516B287076E',X'A57339BD2343D84D9F4FDF9F93E2A627')
 
 BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
+--  SQLite.Classic.MPU SQLite.Classic SQLite
 
 SELECT
 	[t1].[Id],
@@ -121,13 +121,13 @@ ORDER BY
 	[t1].[Id]
 
 BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
+--  SQLite.Classic.MPU SQLite.Classic SQLite
 
 DELETE FROM
 	[GuidTable]
 
 BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
+--  SQLite.Classic.MPU SQLite.Classic SQLite
 
 INSERT INTO [GuidTable]
 (
@@ -140,7 +140,7 @@ VALUES
 (2,X'0D6048A921DE744F8AC29516B287076E',X'A57339BD2343D84D9F4FDF9F93E2A627')
 
 BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
+--  SQLite.Classic.MPU SQLite.Classic SQLite
 
 SELECT
 	[t1].[Id],

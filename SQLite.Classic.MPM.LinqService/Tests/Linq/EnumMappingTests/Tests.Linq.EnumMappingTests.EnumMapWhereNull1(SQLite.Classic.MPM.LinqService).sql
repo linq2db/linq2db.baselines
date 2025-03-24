@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SQLite.Classic.MPM SQLite.Classic SQLite
+--  SQLite.Classic.MPM SQLite.Classic SQLite
 DECLARE @p  -- Int32
 SET     @p = 102
 
@@ -9,7 +9,7 @@ WHERE
 	[LinqDataTypes].[ID] >= 101 AND [LinqDataTypes].[ID] < @p
 
 BeforeExecute
--- SQLite.Classic.MPM SQLite.Classic SQLite
+--  SQLite.Classic.MPM SQLite.Classic SQLite
 
 INSERT INTO [LinqDataTypes]
 (
@@ -21,7 +21,7 @@ VALUES
 )
 
 BeforeExecute
--- SQLite.Classic.MPM SQLite.Classic SQLite
+--  SQLite.Classic.MPM SQLite.Classic SQLite
 
 SELECT
 	[r].[BigIntValue]
@@ -32,7 +32,7 @@ WHERE
 LIMIT 1
 
 BeforeExecute
--- SQLite.Classic.MPM SQLite.Classic SQLite
+--  SQLite.Classic.MPM SQLite.Classic SQLite
 DECLARE @p  -- Int32
 SET     @p = 102
 

@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
+--  SQLite.Classic.MPU SQLite.Classic SQLite
 DECLARE @Id  -- Guid
 SET     @Id = X'3D667BBCDE0F27438F925D8CC3A11D11'
 DECLARE @ResourceLabel NVarChar(1) -- String
@@ -17,7 +17,7 @@ VALUES
 )
 
 BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
+--  SQLite.Classic.MPU SQLite.Classic SQLite
 DECLARE @Id  -- Guid
 SET     @Id = X'0D6048A921DE744F8AC29516B287076E'
 DECLARE @Status  -- Int32
@@ -43,7 +43,7 @@ VALUES
 )
 
 BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
+--  SQLite.Classic.MPU SQLite.Classic SQLite
 DECLARE @Id  -- Guid
 SET     @Id = X'A57339BD2343D84D9F4FDF9F93E2A627'
 DECLARE @Status  -- Int32
@@ -71,7 +71,7 @@ VALUES
 BeforeExecute
 BeginTransaction(Serializable)
 BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
+--  SQLite.Classic.MPU SQLite.Classic SQLite
 
 SELECT
 	[m_1].[Status],
@@ -107,7 +107,7 @@ FROM
 BeforeExecute
 DisposeTransaction
 BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
+--  SQLite.Classic.MPU SQLite.Classic SQLite
 
 SELECT
 	[grp].[Status],

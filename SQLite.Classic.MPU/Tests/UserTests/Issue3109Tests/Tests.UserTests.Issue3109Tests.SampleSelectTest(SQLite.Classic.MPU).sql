@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
+--  SQLite.Classic.MPU SQLite.Classic SQLite
 
 SELECT
 	[t1].[LeftId],
@@ -17,7 +17,7 @@ LIMIT 1
 BeforeExecute
 BeginTransaction(Serializable)
 BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
+--  SQLite.Classic.MPU SQLite.Classic SQLite
 
 SELECT
 	[m_1].[LeftId],
@@ -34,7 +34,7 @@ FROM
 		INNER JOIN [LeftRight] [d] ON [m_1].[LeftId] = [d].[LeftId]
 
 BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
+--  SQLite.Classic.MPU SQLite.Classic SQLite
 
 SELECT
 	[t1].[LeftId],
@@ -48,7 +48,7 @@ DisposeTransaction
 BeforeExecute
 BeginTransaction(Serializable)
 BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
+--  SQLite.Classic.MPU SQLite.Classic SQLite
 
 SELECT
 	[m_1].[RightId],
@@ -65,7 +65,7 @@ FROM
 		INNER JOIN [LeftRight] [d] ON [m_1].[RightId] = [d].[RightId]
 
 BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
+--  SQLite.Classic.MPU SQLite.Classic SQLite
 
 SELECT
 	[t1].[RightId],

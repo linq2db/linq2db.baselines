@@ -1,10 +1,10 @@
 ﻿BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite (asynchronously)
+--  SQLite.Classic.MPU SQLite.Classic SQLite (asynchronously)
 
 DROP TABLE IF EXISTS [TempTable]
 
 BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite (asynchronously)
+--  SQLite.Classic.MPU SQLite.Classic SQLite (asynchronously)
 
 CREATE TEMPORARY TABLE temp.[TempTable]
 (
@@ -12,12 +12,12 @@ CREATE TEMPORARY TABLE temp.[TempTable]
 )
 
 BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite (asynchronously)
+--  SQLite.Classic.MPU SQLite.Classic SQLite (asynchronously)
 
 DROP TABLE temp.[TempTable]
 
 BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite (asynchronously)
+--  SQLite.Classic.MPU SQLite.Classic SQLite (asynchronously)
 
 DROP TABLE IF EXISTS temp.[TempTable]
 

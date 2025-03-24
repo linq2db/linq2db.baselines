@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
+--  SQLite.Classic.MPU SQLite.Classic SQLite
 
 --
 -- Helper table
@@ -103,24 +103,24 @@ CREATE TABLE LinqDataTypes
 DROP TABLE IF EXISTS TestIdentity
 
 BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
+--  SQLite.Classic.MPU SQLite.Classic SQLite
 
 CREATE TABLE TestIdentity (
 	ID integer NOT NULL CONSTRAINT PK_TestIdentity PRIMARY KEY AUTOINCREMENT
 )
 
 BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
+--  SQLite.Classic.MPU SQLite.Classic SQLite
 
 DROP VIEW IF EXISTS AllTypesView
 
 BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
+--  SQLite.Classic.MPU SQLite.Classic SQLite
 
 DROP TABLE IF EXISTS AllTypes
 
 BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
+--  SQLite.Classic.MPU SQLite.Classic SQLite
 
 CREATE TABLE AllTypes
 (
@@ -156,7 +156,7 @@ CREATE TABLE AllTypes
 )
 
 BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
+--  SQLite.Classic.MPU SQLite.Classic SQLite
 
 CREATE VIEW AllTypesView
 AS
@@ -166,7 +166,7 @@ SELECT
 FROM AllTypes
 
 BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
+--  SQLite.Classic.MPU SQLite.Classic SQLite
 
 INSERT INTO AllTypes
 (
@@ -189,7 +189,7 @@ SELECT
 		   10
 
 BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
+--  SQLite.Classic.MPU SQLite.Classic SQLite
 
 --
 -- Demonstration Tables for Issue #784
@@ -199,7 +199,7 @@ BeforeExecute
 DROP TABLE IF EXISTS PrimaryKeyTable
 
 BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
+--  SQLite.Classic.MPU SQLite.Classic SQLite
 
 CREATE TABLE PrimaryKeyTable
 (
@@ -208,13 +208,13 @@ CREATE TABLE PrimaryKeyTable
 )
 
 BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
+--  SQLite.Classic.MPU SQLite.Classic SQLite
 
 -- Child table
 DROP TABLE IF EXISTS ForeignKeyTable
 
 BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
+--  SQLite.Classic.MPU SQLite.Classic SQLite
 
 CREATE TABLE ForeignKeyTable
 (
@@ -227,13 +227,13 @@ CREATE TABLE ForeignKeyTable
 )
 
 BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
+--  SQLite.Classic.MPU SQLite.Classic SQLite
 
 -- Second-level child table, alternate semantics
 DROP TABLE IF EXISTS FKTestPosition
 
 BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
+--  SQLite.Classic.MPU SQLite.Classic SQLite
 
 CREATE TABLE FKTestPosition
 (
@@ -250,7 +250,7 @@ CREATE TABLE FKTestPosition
 )
 
 BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
+--  SQLite.Classic.MPU SQLite.Classic SQLite
 
 -- merge test tables
 DROP TABLE IF EXISTS TestMerge1;
@@ -342,7 +342,7 @@ CREATE TABLE CollatedTable
 );
 
 BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
+--  SQLite.Classic.MPU SQLite.Classic SQLite
 
 INSERT INTO [LinqDataTypes]
 (
@@ -372,7 +372,7 @@ VALUES
 (12,11.45,'2012-11-07 19:19:29.090',NULL,1,X'181D0203F097C04D98D0F0C7DF4A1230',12,NULL,NULL,'0')
 
 BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
+--  SQLite.Classic.MPU SQLite.Classic SQLite
 
 INSERT INTO [Parent]
 (
@@ -389,7 +389,7 @@ VALUES
 (7,1)
 
 BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
+--  SQLite.Classic.MPU SQLite.Classic SQLite
 
 INSERT INTO [Child]
 (
@@ -416,7 +416,7 @@ VALUES
 (7,77)
 
 BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
+--  SQLite.Classic.MPU SQLite.Classic SQLite
 
 INSERT INTO [GrandChild]
 (
@@ -449,7 +449,7 @@ VALUES
 (4,42,424)
 
 BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
+--  SQLite.Classic.MPU SQLite.Classic SQLite
 
 INSERT INTO [InheritanceParent]
 (
@@ -463,7 +463,7 @@ VALUES
 (3,2,'InheritanceParent2')
 
 BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
+--  SQLite.Classic.MPU SQLite.Classic SQLite
 
 INSERT INTO [InheritanceChild]
 (

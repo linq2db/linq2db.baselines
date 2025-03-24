@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
+--  SQLite.Classic.MPU SQLite.Classic SQLite
 DECLARE @Id  -- Int32
 SET     @Id = 0
 DECLARE @ClaimedKeyType NVarChar(3) -- String
@@ -21,7 +21,7 @@ VALUES
 )
 
 BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
+--  SQLite.Classic.MPU SQLite.Classic SQLite
 DECLARE @ClaimedKeyType NVarChar(2) -- String
 SET     @ClaimedKeyType = 'EC'
 DECLARE @ClaimedKeyTypeN NVarChar(2) -- String
@@ -36,7 +36,7 @@ WHERE
 	[Issue1554Table].[Id] = 0
 
 BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
+--  SQLite.Classic.MPU SQLite.Classic SQLite
 
 SELECT
 	[t1].[Id],

@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SQLite.Classic.MPM SQLite.Classic SQLite
+--  SQLite.Classic.MPM SQLite.Classic SQLite
 
 CREATE TEMPORARY TABLE temp.[TableWithPrimaryKey]
 (
@@ -9,7 +9,7 @@ CREATE TEMPORARY TABLE temp.[TableWithPrimaryKey]
 )
 
 BeforeExecute
--- SQLite.Classic.MPM SQLite.Classic SQLite
+--  SQLite.Classic.MPM SQLite.Classic SQLite
 
 DROP TABLE IF EXISTS temp.[TableWithPrimaryKey]
 

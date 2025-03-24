@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SQLite.Classic.MPM SQLite.Classic SQLite (asynchronously)
+--  SQLite.Classic.MPM SQLite.Classic SQLite (asynchronously)
 
 SELECT
 	NOT EXISTS(

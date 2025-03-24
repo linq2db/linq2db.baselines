@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SQLite.Classic.MPM SQLite.Classic SQLite
+--  SQLite.Classic.MPM SQLite.Classic SQLite
 DECLARE @p0 VarChar(3) -- AnsiString
 SET     @p0 = 'one'
 DECLARE @p1 VarChar(3) -- AnsiString

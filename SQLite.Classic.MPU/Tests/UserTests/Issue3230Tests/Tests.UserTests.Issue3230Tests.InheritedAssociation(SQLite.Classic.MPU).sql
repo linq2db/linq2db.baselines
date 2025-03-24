@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
+--  SQLite.Classic.MPU SQLite.Classic SQLite
 
 SELECT
 	[t1].[ID],
@@ -13,7 +13,7 @@ FROM
 		LEFT JOIN [GrandParent_3230] [a_GrandParent] ON [a_Parent].[GrandParentID] = [a_GrandParent].[ID]
 
 BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
+--  SQLite.Classic.MPU SQLite.Classic SQLite
 
 SELECT
 	[t1].[ID],

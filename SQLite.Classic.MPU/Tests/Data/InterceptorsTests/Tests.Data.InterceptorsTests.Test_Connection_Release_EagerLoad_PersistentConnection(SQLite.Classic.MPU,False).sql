@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
+--  SQLite.Classic.MPU SQLite.Classic SQLite
 
 SELECT
 	[t1].[FirstName],
@@ -16,7 +16,7 @@ FROM
 BeforeExecute
 BeginTransaction(Serializable)
 BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
+--  SQLite.Classic.MPU SQLite.Classic SQLite
 
 SELECT
 	[m_1].[ParentID],
@@ -34,7 +34,7 @@ FROM
 BeforeExecute
 DisposeTransaction
 BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
+--  SQLite.Classic.MPU SQLite.Classic SQLite
 
 SELECT
 	[t1].[ParentID],
@@ -43,7 +43,7 @@ FROM
 	[Parent] [t1]
 
 BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
+--  SQLite.Classic.MPU SQLite.Classic SQLite
 
 SELECT
 	[t1].[FirstName],
@@ -60,7 +60,7 @@ FROM
 BeforeExecute
 BeginTransaction(Serializable)
 BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
+--  SQLite.Classic.MPU SQLite.Classic SQLite
 
 SELECT
 	[m_1].[ParentID],
@@ -78,7 +78,7 @@ FROM
 BeforeExecute
 DisposeTransaction
 BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
+--  SQLite.Classic.MPU SQLite.Classic SQLite
 
 SELECT
 	[t1].[ParentID],
@@ -87,7 +87,7 @@ FROM
 	[Parent] [t1]
 
 BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
+--  SQLite.Classic.MPU SQLite.Classic SQLite
 
 SELECT
 	[t1].[FirstName],
@@ -105,7 +105,7 @@ LIMIT 1
 BeforeExecute
 BeginTransaction(Serializable)
 BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
+--  SQLite.Classic.MPU SQLite.Classic SQLite
 
 SELECT
 	[m_1].[ParentID],
@@ -122,7 +122,7 @@ FROM
 		INNER JOIN [Child] [d] ON [m_1].[ParentID] = [d].[ParentID]
 
 BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
+--  SQLite.Classic.MPU SQLite.Classic SQLite
 
 SELECT
 	[t1].[ParentID],
@@ -134,7 +134,7 @@ LIMIT 1
 BeforeExecute
 DisposeTransaction
 BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite (asynchronously)
+--  SQLite.Classic.MPU SQLite.Classic SQLite (asynchronously)
 
 SELECT
 	[t1].[FirstName],
@@ -152,7 +152,7 @@ LIMIT 1
 BeforeExecute
 BeginTransactionAsync(Serializable)
 BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite (asynchronously)
+--  SQLite.Classic.MPU SQLite.Classic SQLite (asynchronously)
 
 SELECT
 	[m_1].[ParentID],
@@ -169,7 +169,7 @@ FROM
 		INNER JOIN [Child] [d] ON [m_1].[ParentID] = [d].[ParentID]
 
 BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite (asynchronously)
+--  SQLite.Classic.MPU SQLite.Classic SQLite (asynchronously)
 
 SELECT
 	[t1].[ParentID],

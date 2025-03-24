@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SQLite.Classic.MPM SQLite.Classic SQLite
+--  SQLite.Classic.MPM SQLite.Classic SQLite
 
 WITH [CTE_1] ([Id], [Value_1])
 AS
@@ -23,7 +23,7 @@ FROM
 		INNER JOIN [TableToInsert] [t] ON [t].[Id] = [r].[Id] AND ([t].[Value] = [r].[Value_1] OR [t].[Value] IS NULL AND [r].[Value_1] IS NULL)
 
 BeforeExecute
--- SQLite.Classic.MPM SQLite.Classic SQLite
+--  SQLite.Classic.MPM SQLite.Classic SQLite
 
 SELECT
 	[t1].[Id],

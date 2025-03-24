@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite (asynchronously)
+--  SQLite.Classic.MPU SQLite.Classic SQLite (asynchronously)
 
 SELECT
 	[p].[FirstName],
@@ -13,7 +13,7 @@ WHERE
 	[p].[PersonID] = 1
 
 BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite (asynchronously)
+--  SQLite.Classic.MPU SQLite.Classic SQLite (asynchronously)
 
 SELECT
 	[p].[FirstName],

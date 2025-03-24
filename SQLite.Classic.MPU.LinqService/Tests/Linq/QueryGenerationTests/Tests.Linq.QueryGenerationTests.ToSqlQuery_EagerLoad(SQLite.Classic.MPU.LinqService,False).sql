@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
+--  SQLite.Classic.MPU SQLite.Classic SQLite
 DECLARE @id  -- Int32
 SET     @id = 2
 
@@ -12,7 +12,7 @@ WHERE
 	[p].[ParentID] = @id
 
 BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
+--  SQLite.Classic.MPU SQLite.Classic SQLite
 DECLARE @id  -- Int32
 SET     @id = 2
 

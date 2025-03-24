@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SQLite.Classic.MPM SQLite.Classic SQLite
+--  SQLite.Classic.MPM SQLite.Classic SQLite
 
 SELECT
 	[a_Book].[BookId],
@@ -22,7 +22,7 @@ WHERE
 	[a_Book_1].[Discriminator] = 'Novel'
 
 BeforeExecute
--- SQLite.Classic.MPM SQLite.Classic SQLite
+--  SQLite.Classic.MPM SQLite.Classic SQLite
 
 SELECT
 	[m_1].[AuthorId],
@@ -37,7 +37,7 @@ FROM
 		LEFT JOIN [Book] [a_Book] ON [d].[FkBookId] = [a_Book].[BookId]
 
 BeforeExecute
--- SQLite.Classic.MPM SQLite.Classic SQLite
+--  SQLite.Classic.MPM SQLite.Classic SQLite
 
 SELECT
 	[t1].[AuthorId],

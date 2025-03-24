@@ -1,10 +1,10 @@
 ﻿BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
+--  SQLite.Classic.MPU SQLite.Classic SQLite
 
 UPDATE sqlite_sequence SET seq = 4 WHERE name = 'Person'
 
 BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
+--  SQLite.Classic.MPU SQLite.Classic SQLite
 DECLARE @FirstName NVarChar(4) -- String
 SET     @FirstName = 'test'
 DECLARE @LastName NVarChar(7) -- String
@@ -30,12 +30,12 @@ VALUES
 )
 
 BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
+--  SQLite.Classic.MPU SQLite.Classic SQLite
 
 SELECT last_insert_rowid()
 
 BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
+--  SQLite.Classic.MPU SQLite.Classic SQLite
 DECLARE @id  -- Int32
 SET     @id = 5
 
@@ -52,7 +52,7 @@ VALUES
 ON CONFLICT ([PersonID]) DO NOTHING
 
 BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
+--  SQLite.Classic.MPU SQLite.Classic SQLite
 DECLARE @id  -- Int32
 SET     @id = 5
 
@@ -65,7 +65,7 @@ WHERE
 	[p].[PersonID] = @id
 
 BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
+--  SQLite.Classic.MPU SQLite.Classic SQLite
 DECLARE @id  -- Int32
 SET     @id = 5
 
@@ -82,7 +82,7 @@ VALUES
 ON CONFLICT ([PersonID]) DO NOTHING
 
 BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
+--  SQLite.Classic.MPU SQLite.Classic SQLite
 DECLARE @id  -- Int32
 SET     @id = 5
 

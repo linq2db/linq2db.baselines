@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 BeginTransaction(Serializable)
 BeforeExecute
--- SQLite.Classic.MPM SQLite.Classic SQLite
+--  SQLite.Classic.MPM SQLite.Classic SQLite
 DECLARE @take  -- Int32
 SET     @take = 20
 
@@ -29,7 +29,7 @@ FROM
 		INNER JOIN [SubDetailClass] [d] ON [m_2].[DetailId] = [d].[DetailId]
 
 BeforeExecute
--- SQLite.Classic.MPM SQLite.Classic SQLite
+--  SQLite.Classic.MPM SQLite.Classic SQLite
 DECLARE @take  -- Int32
 SET     @take = 20
 
@@ -65,7 +65,7 @@ FROM
 		) [d_1] ON [m_2].[DetailId] = [d_1].[DetailId] AND [d_1].[rn] <= 10
 
 BeforeExecute
--- SQLite.Classic.MPM SQLite.Classic SQLite
+--  SQLite.Classic.MPM SQLite.Classic SQLite
 DECLARE @take  -- Int32
 SET     @take = 20
 
@@ -105,7 +105,7 @@ FROM
 BeforeExecute
 DisposeTransaction
 BeforeExecute
--- SQLite.Classic.MPM SQLite.Classic SQLite
+--  SQLite.Classic.MPM SQLite.Classic SQLite
 DECLARE @take  -- Int32
 SET     @take = 20
 

@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SQLite.Classic.MPM SQLite.Classic SQLite
+--  SQLite.Classic.MPM SQLite.Classic SQLite
 
 CREATE TEMPORARY TABLE temp.[ChannelDTO]
 (
@@ -9,7 +9,7 @@ CREATE TEMPORARY TABLE temp.[ChannelDTO]
 )
 
 BeforeExecute
--- SQLite.Classic.MPM SQLite.Classic SQLite
+--  SQLite.Classic.MPM SQLite.Classic SQLite
 
 CREATE TEMPORARY TABLE temp.[InventoryResourceDTO]
 (
@@ -27,7 +27,7 @@ CREATE TEMPORARY TABLE temp.[InventoryResourceDTO]
 )
 
 BeforeExecute
--- SQLite.Classic.MPM SQLite.Classic SQLite
+--  SQLite.Classic.MPM SQLite.Classic SQLite
 
 CREATE TEMPORARY TABLE temp.[MaterialDTO]
 (
@@ -44,7 +44,7 @@ CREATE TEMPORARY TABLE temp.[MaterialDTO]
 )
 
 BeforeExecute
--- SQLite.Classic.MPM SQLite.Classic SQLite
+--  SQLite.Classic.MPM SQLite.Classic SQLite
 
 CREATE TEMPORARY TABLE temp.[WmsLoadCarrierDTO]
 (
@@ -60,7 +60,7 @@ CREATE TEMPORARY TABLE temp.[WmsLoadCarrierDTO]
 )
 
 BeforeExecute
--- SQLite.Classic.MPM SQLite.Classic SQLite
+--  SQLite.Classic.MPM SQLite.Classic SQLite
 
 CREATE TEMPORARY TABLE temp.[RefResourceStorageShelfDTO]
 (
@@ -70,7 +70,7 @@ CREATE TEMPORARY TABLE temp.[RefResourceStorageShelfDTO]
 )
 
 BeforeExecute
--- SQLite.Classic.MPM SQLite.Classic SQLite
+--  SQLite.Classic.MPM SQLite.Classic SQLite
 
 CREATE TEMPORARY TABLE temp.[AisleDTO]
 (
@@ -81,7 +81,7 @@ CREATE TEMPORARY TABLE temp.[AisleDTO]
 )
 
 BeforeExecute
--- SQLite.Classic.MPM SQLite.Classic SQLite
+--  SQLite.Classic.MPM SQLite.Classic SQLite
 
 CREATE TEMPORARY TABLE temp.[RefOutfeedTransportOrderResourceDTO]
 (
@@ -90,7 +90,7 @@ CREATE TEMPORARY TABLE temp.[RefOutfeedTransportOrderResourceDTO]
 )
 
 BeforeExecute
--- SQLite.Classic.MPM SQLite.Classic SQLite
+--  SQLite.Classic.MPM SQLite.Classic SQLite
 
 CREATE TEMPORARY TABLE temp.[InfeedAdvicePositionDTO]
 (
@@ -99,7 +99,7 @@ CREATE TEMPORARY TABLE temp.[InfeedAdvicePositionDTO]
 )
 
 BeforeExecute
--- SQLite.Classic.MPM SQLite.Classic SQLite
+--  SQLite.Classic.MPM SQLite.Classic SQLite
 
 CREATE TEMPORARY TABLE temp.[StorageShelfDTO]
 (
@@ -112,7 +112,7 @@ CREATE TEMPORARY TABLE temp.[StorageShelfDTO]
 )
 
 BeforeExecute
--- SQLite.Classic.MPM SQLite.Classic SQLite
+--  SQLite.Classic.MPM SQLite.Classic SQLite
 
 WITH [CTE_1]
 (
@@ -329,47 +329,47 @@ FROM
 	) [x]
 
 BeforeExecute
--- SQLite.Classic.MPM SQLite.Classic SQLite
+--  SQLite.Classic.MPM SQLite.Classic SQLite
 
 DROP TABLE IF EXISTS temp.[StorageShelfDTO]
 
 BeforeExecute
--- SQLite.Classic.MPM SQLite.Classic SQLite
+--  SQLite.Classic.MPM SQLite.Classic SQLite
 
 DROP TABLE IF EXISTS temp.[InfeedAdvicePositionDTO]
 
 BeforeExecute
--- SQLite.Classic.MPM SQLite.Classic SQLite
+--  SQLite.Classic.MPM SQLite.Classic SQLite
 
 DROP TABLE IF EXISTS temp.[RefOutfeedTransportOrderResourceDTO]
 
 BeforeExecute
--- SQLite.Classic.MPM SQLite.Classic SQLite
+--  SQLite.Classic.MPM SQLite.Classic SQLite
 
 DROP TABLE IF EXISTS temp.[AisleDTO]
 
 BeforeExecute
--- SQLite.Classic.MPM SQLite.Classic SQLite
+--  SQLite.Classic.MPM SQLite.Classic SQLite
 
 DROP TABLE IF EXISTS temp.[RefResourceStorageShelfDTO]
 
 BeforeExecute
--- SQLite.Classic.MPM SQLite.Classic SQLite
+--  SQLite.Classic.MPM SQLite.Classic SQLite
 
 DROP TABLE IF EXISTS temp.[WmsLoadCarrierDTO]
 
 BeforeExecute
--- SQLite.Classic.MPM SQLite.Classic SQLite
+--  SQLite.Classic.MPM SQLite.Classic SQLite
 
 DROP TABLE IF EXISTS temp.[MaterialDTO]
 
 BeforeExecute
--- SQLite.Classic.MPM SQLite.Classic SQLite
+--  SQLite.Classic.MPM SQLite.Classic SQLite
 
 DROP TABLE IF EXISTS temp.[InventoryResourceDTO]
 
 BeforeExecute
--- SQLite.Classic.MPM SQLite.Classic SQLite
+--  SQLite.Classic.MPM SQLite.Classic SQLite
 
 DROP TABLE IF EXISTS temp.[ChannelDTO]
 

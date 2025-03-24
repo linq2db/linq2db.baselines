@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 BeginTransactionAsync(Serializable)
 BeforeExecute
--- SQLite.Classic.MPM SQLite.Classic SQLite (asynchronously)
+--  SQLite.Classic.MPM SQLite.Classic SQLite (asynchronously)
 
 SELECT
 	[m_1].[Id1],
@@ -19,7 +19,7 @@ FROM
 		INNER JOIN [DetailClass] [d] ON [m_1].[Id1] = [d].[MasterId]
 
 BeforeExecute
--- SQLite.Classic.MPM SQLite.Classic SQLite (asynchronously)
+--  SQLite.Classic.MPM SQLite.Classic SQLite (asynchronously)
 
 SELECT
 	[x].[Id1]
@@ -34,7 +34,7 @@ DisposeTransactionAsync
 BeforeExecute
 BeginTransactionAsync(Serializable)
 BeforeExecute
--- SQLite.Classic.MPM SQLite.Classic SQLite (asynchronously)
+--  SQLite.Classic.MPM SQLite.Classic SQLite (asynchronously)
 
 SELECT
 	[m_1].[Id1],
@@ -52,7 +52,7 @@ FROM
 		INNER JOIN [DetailClass] [d] ON [m_1].[Id1] = [d].[MasterId]
 
 BeforeExecute
--- SQLite.Classic.MPM SQLite.Classic SQLite (asynchronously)
+--  SQLite.Classic.MPM SQLite.Classic SQLite (asynchronously)
 
 SELECT
 	[x].[Id1]
@@ -67,7 +67,7 @@ DisposeTransactionAsync
 BeforeExecute
 BeginTransactionAsync(Serializable)
 BeforeExecute
--- SQLite.Classic.MPM SQLite.Classic SQLite (asynchronously)
+--  SQLite.Classic.MPM SQLite.Classic SQLite (asynchronously)
 
 SELECT
 	[m_1].[Id1],
@@ -90,7 +90,7 @@ FROM
 		INNER JOIN [DetailClass] [d] ON [m_1].[Id1] = [d].[MasterId]
 
 BeforeExecute
--- SQLite.Classic.MPM SQLite.Classic SQLite (asynchronously)
+--  SQLite.Classic.MPM SQLite.Classic SQLite (asynchronously)
 
 SELECT
 	[x].[Id1]

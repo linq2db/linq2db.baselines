@@ -1,10 +1,10 @@
 ﻿BeforeExecute
--- SQLite.Classic.MPM SQLite.Classic SQLite
+--  SQLite.Classic.MPM SQLite.Classic SQLite
 
 UPDATE sqlite_sequence SET seq = 4 WHERE name = 'Person'
 
 BeforeExecute
--- SQLite.Classic.MPM SQLite.Classic SQLite
+--  SQLite.Classic.MPM SQLite.Classic SQLite
 DECLARE @FirstName NVarChar(18) -- String
 SET     @FirstName = 'InsertColumnFilter'
 DECLARE @LastName NVarChar(8) -- String
@@ -30,7 +30,7 @@ VALUES
 )
 
 BeforeExecute
--- SQLite.Classic.MPM SQLite.Classic SQLite
+--  SQLite.Classic.MPM SQLite.Classic SQLite
 DECLARE @FirstName NVarChar(18) -- String
 SET     @FirstName = 'InsertColumnFilter'
 
@@ -47,7 +47,7 @@ WHERE
 LIMIT 1
 
 BeforeExecute
--- SQLite.Classic.MPM SQLite.Classic SQLite
+--  SQLite.Classic.MPM SQLite.Classic SQLite
 DECLARE @FirstName NVarChar(18) -- String
 SET     @FirstName = 'InsertColumnFilter'
 DECLARE @LastName NVarChar(8) -- String
@@ -70,7 +70,7 @@ WHERE
 	[Person].[PersonID] = @ID
 
 BeforeExecute
--- SQLite.Classic.MPM SQLite.Classic SQLite
+--  SQLite.Classic.MPM SQLite.Classic SQLite
 DECLARE @FirstName NVarChar(18) -- String
 SET     @FirstName = 'InsertColumnFilter'
 
@@ -87,7 +87,7 @@ WHERE
 LIMIT 1
 
 BeforeExecute
--- SQLite.Classic.MPM SQLite.Classic SQLite
+--  SQLite.Classic.MPM SQLite.Classic SQLite
 DECLARE @newName NVarChar(18) -- String
 SET     @newName = 'InsertColumnFilter'
 

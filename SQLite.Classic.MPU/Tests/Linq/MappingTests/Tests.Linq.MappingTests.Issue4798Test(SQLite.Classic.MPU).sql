@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
+--  SQLite.Classic.MPU SQLite.Classic SQLite
 
 SELECT
 	EXISTS(
@@ -12,7 +12,7 @@ SELECT
 	)
 
 BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
+--  SQLite.Classic.MPU SQLite.Classic SQLite
 DECLARE @tenderId NVarChar(36) -- String
 SET     @tenderId = 'bc7b663d-0fde-4327-8f92-5d8cc3a11d11'
 

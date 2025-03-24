@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite (asynchronously)
+--  SQLite.Classic.MPU SQLite.Classic SQLite (asynchronously)
 DECLARE @search NVarChar(5) -- String
 SET     @search = 'test%'
 DECLARE @search_1 NVarChar(4) -- String
@@ -31,17 +31,17 @@ WHERE
 	[row1_2].[Field1] LIKE @search_2 ESCAPE '~'
 
 BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite (asynchronously)
+--  SQLite.Classic.MPU SQLite.Classic SQLite (asynchronously)
 
 DROP TABLE IF EXISTS [table3]
 
 BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite (asynchronously)
+--  SQLite.Classic.MPU SQLite.Classic SQLite (asynchronously)
 
 DROP TABLE IF EXISTS [table2]
 
 BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite (asynchronously)
+--  SQLite.Classic.MPU SQLite.Classic SQLite (asynchronously)
 
 DROP TABLE IF EXISTS [table1]
 

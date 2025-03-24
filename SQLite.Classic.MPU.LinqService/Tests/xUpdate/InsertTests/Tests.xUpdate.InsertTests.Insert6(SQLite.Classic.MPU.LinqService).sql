@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
+--  SQLite.Classic.MPU SQLite.Classic SQLite
 
 DELETE FROM
 	[Parent]
@@ -7,7 +7,7 @@ WHERE
 	[Parent].[Value1] = 11
 
 BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
+--  SQLite.Classic.MPU SQLite.Classic SQLite
 
 INSERT INTO [Parent]
 (
@@ -23,7 +23,7 @@ WHERE
 	[c_1].[ChildID] = 11
 
 BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
+--  SQLite.Classic.MPU SQLite.Classic SQLite
 
 SELECT
 	COUNT(*)
@@ -33,7 +33,7 @@ WHERE
 	[p].[Value1] = 11
 
 BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
+--  SQLite.Classic.MPU SQLite.Classic SQLite
 
 DELETE FROM
 	[Parent]

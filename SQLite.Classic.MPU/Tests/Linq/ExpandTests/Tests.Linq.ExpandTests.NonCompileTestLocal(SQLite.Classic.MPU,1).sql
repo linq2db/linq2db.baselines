@@ -8,7 +8,7 @@ WHERE
 	[t2].[Value] > @param
 
 BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
+--  SQLite.Classic.MPU SQLite.Classic SQLite
 DECLARE @param  -- Int32
 SET     @param = 1
 

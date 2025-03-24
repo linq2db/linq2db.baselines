@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SQLite.Classic.MPM SQLite.Classic SQLite
+--  SQLite.Classic.MPM SQLite.Classic SQLite
 DECLARE @In VarChar -- AnsiString
 SET     @In = NULL
 
@@ -11,7 +11,7 @@ WHERE
 	[s].[CEnum] IN (@In, @In)
 
 BeforeExecute
--- SQLite.Classic.MPM SQLite.Classic SQLite
+--  SQLite.Classic.MPM SQLite.Classic SQLite
 DECLARE @NotIn VarChar -- AnsiString
 SET     @NotIn = NULL
 

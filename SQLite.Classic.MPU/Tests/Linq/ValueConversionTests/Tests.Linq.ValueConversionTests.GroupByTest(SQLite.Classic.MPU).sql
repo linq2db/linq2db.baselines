@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 BeginTransaction(Serializable)
 BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
+--  SQLite.Classic.MPU SQLite.Classic SQLite
 DECLARE @testedList NVarChar(20) -- String
 SET     @testedList = '[{"Value":"Value1"}]'
 
@@ -25,7 +25,7 @@ WHERE
 BeforeExecute
 DisposeTransaction
 BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
+--  SQLite.Classic.MPU SQLite.Classic SQLite
 DECLARE @testedList NVarChar(20) -- String
 SET     @testedList = '[{"Value":"Value1"}]'
 
