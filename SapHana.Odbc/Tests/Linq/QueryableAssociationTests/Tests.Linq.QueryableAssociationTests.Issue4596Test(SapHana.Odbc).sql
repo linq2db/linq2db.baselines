@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 BeginTransaction(RepeatableRead)
 BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+--  SapHana.Odbc SapHanaOdbc
 
 SELECT
 	"m_1"."Id",
@@ -49,7 +49,7 @@ ORDER BY
 	END
 
 BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+--  SapHana.Odbc SapHanaOdbc
 
 SELECT
 	"t1"."Id",

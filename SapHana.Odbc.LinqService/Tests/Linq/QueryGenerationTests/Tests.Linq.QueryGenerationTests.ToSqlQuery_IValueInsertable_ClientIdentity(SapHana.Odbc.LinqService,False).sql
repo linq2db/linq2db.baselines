@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+--  SapHana.Odbc SapHanaOdbc
 DECLARE @value  -- Int32
 SET     @value = 123
 
@@ -15,7 +15,7 @@ VALUES
 )
 
 BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+--  SapHana.Odbc SapHanaOdbc
 
 SELECT
 	"t1"."Id",

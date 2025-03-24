@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 BeginTransactionAsync
 BeforeExecute
--- SapHana.Odbc SapHanaOdbc (asynchronously)
+--  SapHana.Odbc SapHanaOdbc (asynchronously)
 DECLARE @ParentID  -- Int32
 SET     @ParentID = 1010
 DECLARE @Value1  -- Int32

@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+--  SapHana.Odbc SapHanaOdbc
 DECLARE @Name NVarChar(6) -- String
 SET     @Name = 'group1'
 DECLARE @Enabled  -- Byte
@@ -21,7 +21,7 @@ VALUES
 )
 
 BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+--  SapHana.Odbc SapHanaOdbc
 DECLARE @Name NVarChar(6) -- String
 SET     @Name = 'group1'
 DECLARE @Enabled  -- Byte
@@ -43,7 +43,7 @@ VALUES
 )
 
 BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+--  SapHana.Odbc SapHanaOdbc
 DECLARE @Name NVarChar(6) -- String
 SET     @Name = 'group2'
 DECLARE @Enabled  -- Byte
@@ -65,7 +65,7 @@ VALUES
 )
 
 BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+--  SapHana.Odbc SapHanaOdbc
 
 SELECT
 	"t1"."Id",

@@ -1,10 +1,10 @@
 ﻿BeforeExecute
--- SapHana.Odbc SapHanaOdbc (asynchronously)
+--  SapHana.Odbc SapHanaOdbc (asynchronously)
 
 DROP TABLE "TempTable"
 
 BeforeExecute
--- SapHana.Odbc SapHanaOdbc (asynchronously)
+--  SapHana.Odbc SapHanaOdbc (asynchronously)
 
 CREATE COLUMN TABLE "TempTable"
 (
@@ -12,12 +12,12 @@ CREATE COLUMN TABLE "TempTable"
 )
 
 BeforeExecute
--- SapHana.Odbc SapHanaOdbc (asynchronously)
+--  SapHana.Odbc SapHanaOdbc (asynchronously)
 
 DROP TABLE "TempTable"
 
 BeforeExecute
--- SapHana.Odbc SapHanaOdbc (asynchronously)
+--  SapHana.Odbc SapHanaOdbc (asynchronously)
 
 DROP TABLE "TempTable"
 

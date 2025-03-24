@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+--  SapHana.Odbc SapHanaOdbc
 
 SELECT
 	"t"."ParentID",
@@ -8,7 +8,7 @@ FROM
 	"Parent" "t"
 
 BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+--  SapHana.Odbc SapHanaOdbc
 DECLARE @param  -- Int32
 SET     @param = 1
 

@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+--  SapHana.Odbc SapHanaOdbc
 
 SELECT
 	"p"."ParentID",
@@ -10,7 +10,7 @@ WHERE
 	("p"."Value1" NOT IN (1, 2, 3) OR "p"."Value1" IS NULL)
 
 BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+--  SapHana.Odbc SapHanaOdbc
 
 SELECT
 	"t1"."ParentID",

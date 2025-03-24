@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SapHana.Odbc SapHanaOdbc (asynchronously)
+--  SapHana.Odbc SapHanaOdbc (asynchronously)
 DECLARE @search NVarChar(5) -- String
 SET     @search = 'test%'
 DECLARE @search NVarChar(4) -- String
@@ -31,17 +31,17 @@ WHERE
 	"row1_2"."Field1" LIKE ? ESCAPE '~'
 
 BeforeExecute
--- SapHana.Odbc SapHanaOdbc (asynchronously)
+--  SapHana.Odbc SapHanaOdbc (asynchronously)
 
 DROP TABLE "table3"
 
 BeforeExecute
--- SapHana.Odbc SapHanaOdbc (asynchronously)
+--  SapHana.Odbc SapHanaOdbc (asynchronously)
 
 DROP TABLE "table2"
 
 BeforeExecute
--- SapHana.Odbc SapHanaOdbc (asynchronously)
+--  SapHana.Odbc SapHanaOdbc (asynchronously)
 
 DROP TABLE "table1"
 

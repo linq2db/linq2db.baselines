@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+--  SapHana.Odbc SapHanaOdbc
 DECLARE @_testValue  -- Int32
 SET     @_testValue = 3
 

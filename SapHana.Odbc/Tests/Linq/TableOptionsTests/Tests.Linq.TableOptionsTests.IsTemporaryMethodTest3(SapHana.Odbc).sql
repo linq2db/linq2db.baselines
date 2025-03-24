@@ -1,10 +1,10 @@
 ﻿BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+--  SapHana.Odbc SapHanaOdbc
 
 DROP TABLE "TestTable"
 
 BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+--  SapHana.Odbc SapHanaOdbc
 
 CREATE COLUMN TABLE "TestTable"
 (
@@ -13,7 +13,7 @@ CREATE COLUMN TABLE "TestTable"
 )
 
 BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+--  SapHana.Odbc SapHanaOdbc
 
 SELECT
 	"t1"."Id",
@@ -30,7 +30,7 @@ WHERE
 	"t1"."Id" = "t2"."Id"
 
 BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+--  SapHana.Odbc SapHanaOdbc
 
 DROP TABLE "TestTable"
 

@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+--  SapHana.Odbc SapHanaOdbc
 
 CREATE COLUMN TABLE "TableWithPrimaryKey"
 (
@@ -9,7 +9,7 @@ CREATE COLUMN TABLE "TableWithPrimaryKey"
 )
 
 BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+--  SapHana.Odbc SapHanaOdbc
 
 DROP TABLE "TableWithPrimaryKey"
 

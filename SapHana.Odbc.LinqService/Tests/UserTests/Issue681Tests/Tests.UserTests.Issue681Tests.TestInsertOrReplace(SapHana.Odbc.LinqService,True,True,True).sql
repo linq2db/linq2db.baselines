@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+--  SapHana.Odbc SapHanaOdbc
 
 SELECT
 	current_schema
@@ -8,7 +8,7 @@ FROM
 LIMIT 1
 
 BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+--  SapHana.Odbc SapHanaOdbc
 DECLARE @Value  -- Int32
 SET     @Value = 10
 DECLARE @ID  -- Int32
@@ -22,7 +22,7 @@ WHERE
 	"t1"."ID" = ?
 
 BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+--  SapHana.Odbc SapHanaOdbc
 DECLARE @ID  -- Int32
 SET     @ID = 5
 DECLARE @Value  -- Int32
@@ -40,7 +40,7 @@ VALUES
 )
 
 BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+--  SapHana.Odbc SapHanaOdbc
 DECLARE @Value  -- Int32
 SET     @Value = 10
 DECLARE @ID  -- Int32

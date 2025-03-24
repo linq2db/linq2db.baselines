@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+--  SapHana.Odbc SapHanaOdbc
 DECLARE @$VB$Local_SelectedValue  -- Int32
 SET     @$VB$Local_SelectedValue = 1
 

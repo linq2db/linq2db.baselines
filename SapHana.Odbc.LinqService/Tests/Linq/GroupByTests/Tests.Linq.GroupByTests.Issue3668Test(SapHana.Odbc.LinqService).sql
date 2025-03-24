@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+--  SapHana.Odbc SapHanaOdbc
 DECLARE @id  -- Int32
 SET     @id = 1
 DECLARE @name NVarChar(4) -- String
@@ -31,7 +31,7 @@ WHERE
 	("m_1"."PersonID" = ? AND "m_1"."LastName" <> ? OR "m_1"."FirstName" <> ? AND "m_1"."PersonID" - 1 = ?)
 
 BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+--  SapHana.Odbc SapHanaOdbc
 DECLARE @id  -- Int32
 SET     @id = 1
 DECLARE @name NVarChar(4) -- String

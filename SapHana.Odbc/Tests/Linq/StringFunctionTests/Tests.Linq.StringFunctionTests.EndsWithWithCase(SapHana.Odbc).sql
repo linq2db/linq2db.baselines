@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+--  SapHana.Odbc SapHanaOdbc
 
 SELECT
 	COUNT(*)
@@ -10,7 +10,7 @@ WHERE
 	"p"."PersonID" = 2
 
 BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+--  SapHana.Odbc SapHanaOdbc
 
 SELECT
 	COUNT(*)
@@ -21,7 +21,7 @@ WHERE
 	"p"."PersonID" = 2
 
 BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+--  SapHana.Odbc SapHanaOdbc
 
 SELECT
 	COUNT(*)
@@ -32,7 +32,7 @@ WHERE
 	"p"."PersonID" = 2
 
 BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+--  SapHana.Odbc SapHanaOdbc
 
 SELECT
 	COUNT(*)

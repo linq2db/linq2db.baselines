@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+--  SapHana.Odbc SapHanaOdbc
 DECLARE @ID  -- Int32
 SET     @ID = 5000
 DECLARE @MoneyValue Decimal(1, 0)
@@ -41,7 +41,7 @@ VALUES
 )
 
 BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+--  SapHana.Odbc SapHanaOdbc
 DECLARE @part1  -- Int16
 SET     @part1 = 4
 DECLARE @part2  -- Int32
@@ -55,7 +55,7 @@ WHERE
 	"t"."ID" = 5000 AND Add_Days("t"."DateTimeValue", ("t"."SmallIntValue" + ?) - ?) > To_Timestamp('2018-01-02 00:00:00.000')
 
 BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+--  SapHana.Odbc SapHanaOdbc
 
 DELETE FROM
 	"LinqDataTypes" "t"

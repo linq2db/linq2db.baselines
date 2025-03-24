@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+--  SapHana.Odbc SapHanaOdbc
 DECLARE @personId  -- Int32
 SET     @personId = 0
 DECLARE @personId  -- Int32

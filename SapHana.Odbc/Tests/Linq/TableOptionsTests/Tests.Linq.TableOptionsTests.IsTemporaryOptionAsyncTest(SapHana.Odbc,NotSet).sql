@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SapHana.Odbc SapHanaOdbc (asynchronously)
+--  SapHana.Odbc SapHanaOdbc (asynchronously)
 
 CREATE COLUMN TABLE "temp_table1"
 (
@@ -8,7 +8,7 @@ CREATE COLUMN TABLE "temp_table1"
 )
 
 BeforeExecute
--- SapHana.Odbc SapHanaOdbc (asynchronously)
+--  SapHana.Odbc SapHanaOdbc (asynchronously)
 DECLARE @ID  -- Int32
 SET     @ID = 1
 DECLARE @Value  -- Int32
@@ -26,7 +26,7 @@ VALUES
 )
 
 BeforeExecute
--- SapHana.Odbc SapHanaOdbc (asynchronously)
+--  SapHana.Odbc SapHanaOdbc (asynchronously)
 
 CREATE COLUMN TABLE "temp_table2"
 (
@@ -35,7 +35,7 @@ CREATE COLUMN TABLE "temp_table2"
 )
 
 BeforeExecute
--- SapHana.Odbc SapHanaOdbc (asynchronously)
+--  SapHana.Odbc SapHanaOdbc (asynchronously)
 
 INSERT INTO "temp_table2"
 (
@@ -49,7 +49,7 @@ FROM
 	"temp_table1" "t1"
 
 BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+--  SapHana.Odbc SapHanaOdbc
 
 SELECT
 	"t1"."ID",
@@ -58,7 +58,7 @@ FROM
 	"temp_table1" "t1"
 
 BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+--  SapHana.Odbc SapHanaOdbc
 
 SELECT
 	"t1"."ID",
@@ -67,7 +67,7 @@ FROM
 	"temp_table2" "t1"
 
 BeforeExecute
--- SapHana.Odbc SapHanaOdbc (asynchronously)
+--  SapHana.Odbc SapHanaOdbc (asynchronously)
 DECLARE @ID  -- Int32
 SET     @ID = 2
 DECLARE @Value  -- Int32
@@ -85,7 +85,7 @@ VALUES
 )
 
 BeforeExecute
--- SapHana.Odbc SapHanaOdbc (asynchronously)
+--  SapHana.Odbc SapHanaOdbc (asynchronously)
 DECLARE @ID  -- Int32
 SET     @ID = 3
 DECLARE @Value  -- Int32
@@ -103,7 +103,7 @@ VALUES
 )
 
 BeforeExecute
--- SapHana.Odbc SapHanaOdbc (asynchronously)
+--  SapHana.Odbc SapHanaOdbc (asynchronously)
 DECLARE @ID  -- Int32
 SET     @ID = 4
 DECLARE @Value  -- Int32
@@ -121,22 +121,22 @@ VALUES
 )
 
 BeforeExecute
--- SapHana.Odbc SapHanaOdbc (asynchronously)
+--  SapHana.Odbc SapHanaOdbc (asynchronously)
 
 DELETE FROM "temp_table1"
 
 BeforeExecute
--- SapHana.Odbc SapHanaOdbc (asynchronously)
+--  SapHana.Odbc SapHanaOdbc (asynchronously)
 
 DELETE FROM "temp_table2"
 
 BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+--  SapHana.Odbc SapHanaOdbc
 
 DROP TABLE "temp_table2"
 
 BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+--  SapHana.Odbc SapHanaOdbc
 
 DROP TABLE "temp_table1"
 

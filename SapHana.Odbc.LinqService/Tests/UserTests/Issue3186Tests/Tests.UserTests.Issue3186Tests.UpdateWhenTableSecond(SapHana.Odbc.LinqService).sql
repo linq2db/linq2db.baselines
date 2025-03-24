@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+--  SapHana.Odbc SapHanaOdbc
 DECLARE @is_deleted  -- Byte
 SET     @is_deleted = 1
 
@@ -20,7 +20,7 @@ WHERE
 	)
 
 BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+--  SapHana.Odbc SapHanaOdbc
 
 SELECT
 	"x"."id",
@@ -32,7 +32,7 @@ WHERE
 	"x"."is_deleted" = 1 AND "x"."service_id" = 'TestProcessService'
 
 BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+--  SapHana.Odbc SapHanaOdbc
 
 SELECT
 	"x"."id",

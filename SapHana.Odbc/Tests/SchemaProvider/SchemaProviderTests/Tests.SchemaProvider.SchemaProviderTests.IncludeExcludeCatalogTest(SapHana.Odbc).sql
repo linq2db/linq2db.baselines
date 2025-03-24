@@ -1,15 +1,15 @@
 ﻿BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+--  SapHana.Odbc SapHanaOdbc
 
 SELECT CURRENT_SCHEMA FROM DUMMY
 
 BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+--  SapHana.Odbc SapHanaOdbc
 
 SELECT 1 FROM _SYS_BI.BIMC_ALL_CUBES LIMIT 1
 
 BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+--  SapHana.Odbc SapHanaOdbc
 
 
 				SELECT
@@ -56,7 +56,7 @@ BeforeExecute
 				WHERE s.HAS_PRIVILEGES = 'TRUE'
 
 BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+--  SapHana.Odbc SapHanaOdbc
 
 
 				SELECT
@@ -69,7 +69,7 @@ BeforeExecute
 				FROM INDEX_COLUMNS
 
 BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+--  SapHana.Odbc SapHanaOdbc
 
 
 				SELECT
@@ -116,7 +116,7 @@ BeforeExecute
 				WHERE s.HAS_PRIVILEGES = 'TRUE'
 
 BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+--  SapHana.Odbc SapHanaOdbc
 
 
 				SELECT
@@ -130,7 +130,7 @@ BeforeExecute
 				WHERE SCHEMA_NAME IN ('TESTDB')
 
 BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+--  SapHana.Odbc SapHanaOdbc
 
 
 				SELECT
@@ -147,7 +147,7 @@ BeforeExecute
 				WHERE v.VIEW_TYPE = 'CALC' AND v.IS_VALID = 'TRUE' AND v.SCHEMA_NAME IN ('TESTDB')
 
 BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+--  SapHana.Odbc SapHanaOdbc
 
 
 				SELECT
@@ -164,7 +164,7 @@ BeforeExecute
 				ORDER BY v.VIEW_NAME, p."ORDER"
 
 BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+--  SapHana.Odbc SapHanaOdbc
 
 
 				SELECT
@@ -211,7 +211,7 @@ BeforeExecute
 				WHERE s.HAS_PRIVILEGES = 'TRUE'
 
 BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+--  SapHana.Odbc SapHanaOdbc
 
 
 				SELECT
@@ -233,7 +233,7 @@ BeforeExecute
 				WHERE F.SCHEMA_NAME IN ('TESTDB')
 
 BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+--  SapHana.Odbc SapHanaOdbc
 
 
 				SELECT
@@ -270,7 +270,7 @@ BeginTransaction
 BeforeExecute
 BeginTransaction
 BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+--  SapHana.Odbc SapHanaOdbc
 
 { CALL "TESTDB"."AddIssue792Record" () }
 
@@ -279,7 +279,7 @@ DisposeTransaction
 BeforeExecute
 BeginTransaction
 BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+--  SapHana.Odbc SapHanaOdbc
 DECLARE @TABLENAME VarChar(50) -- AnsiString
 SET     @TABLENAME = ''
 DECLARE @CONSTRAINTNAME VarChar(100) -- AnsiString
@@ -294,7 +294,7 @@ DisposeTransaction
 BeforeExecute
 BeginTransaction
 BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+--  SapHana.Odbc SapHanaOdbc
 DECLARE @FUNCTIONNAME VarChar(50) -- AnsiString
 SET     @FUNCTIONNAME = ''
 DECLARE @SCHEMANAME VarChar(50) -- AnsiString
@@ -307,7 +307,7 @@ DisposeTransaction
 BeforeExecute
 BeginTransaction
 BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+--  SapHana.Odbc SapHanaOdbc
 DECLARE @PROCEDURENAME VarChar(50) -- AnsiString
 SET     @PROCEDURENAME = ''
 DECLARE @SCHEMANAME VarChar(50) -- AnsiString
@@ -320,7 +320,7 @@ DisposeTransaction
 BeforeExecute
 BeginTransaction
 BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+--  SapHana.Odbc SapHanaOdbc
 DECLARE @TABLENAME VarChar(50) -- AnsiString
 SET     @TABLENAME = ''
 DECLARE @SCHEMANAME VarChar(50) -- AnsiString
@@ -333,7 +333,7 @@ DisposeTransaction
 BeforeExecute
 BeginTransaction
 BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+--  SapHana.Odbc SapHanaOdbc
 DECLARE @VIEWNAME VarChar(50) -- AnsiString
 SET     @VIEWNAME = ''
 DECLARE @SCHEMANAME VarChar(50) -- AnsiString
@@ -346,7 +346,7 @@ DisposeTransaction
 BeforeExecute
 BeginTransaction
 BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+--  SapHana.Odbc SapHanaOdbc
 
 { CALL "TESTDB"."DuplicateColumnNames" () }
 
@@ -355,7 +355,7 @@ DisposeTransaction
 BeforeExecute
 BeginTransaction
 BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+--  SapHana.Odbc SapHanaOdbc
 DECLARE @STR VarChar(50) -- AnsiString
 SET     @STR = ''
 DECLARE @OUTPUTSTR VarChar(50) -- AnsiString
@@ -370,7 +370,7 @@ DisposeTransaction
 BeforeExecute
 BeginTransaction
 BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+--  SapHana.Odbc SapHanaOdbc
 DECLARE @ID  -- Int32
 SET     @ID = 0
 DECLARE @OUTPUTID  -- Int32
@@ -391,7 +391,7 @@ DisposeTransaction
 BeforeExecute
 BeginTransaction
 BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+--  SapHana.Odbc SapHanaOdbc
 
 { CALL "TESTDB"."Patient_SelectAll" () }
 
@@ -400,7 +400,7 @@ DisposeTransaction
 BeforeExecute
 BeginTransaction
 BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+--  SapHana.Odbc SapHanaOdbc
 DECLARE @FIRSTNAME NVarChar(50) -- String
 SET     @FIRSTNAME = ''
 DECLARE @LASTNAME NVarChar(50) -- String
@@ -413,7 +413,7 @@ DisposeTransaction
 BeforeExecute
 BeginTransaction
 BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+--  SapHana.Odbc SapHanaOdbc
 DECLARE @PERSONID  -- Int32
 SET     @PERSONID = 0
 
@@ -424,7 +424,7 @@ DisposeTransaction
 BeforeExecute
 BeginTransaction
 BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+--  SapHana.Odbc SapHanaOdbc
 DECLARE @FIRSTNAME NVarChar(50) -- String
 SET     @FIRSTNAME = ''
 DECLARE @LASTNAME NVarChar(50) -- String
@@ -441,7 +441,7 @@ DisposeTransaction
 BeforeExecute
 BeginTransaction
 BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+--  SapHana.Odbc SapHanaOdbc
 DECLARE @FIRSTNAME NVarChar(50) -- String
 SET     @FIRSTNAME = ''
 DECLARE @LASTNAME NVarChar(50) -- String
@@ -460,7 +460,7 @@ DisposeTransaction
 BeforeExecute
 BeginTransaction
 BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+--  SapHana.Odbc SapHanaOdbc
 
 { CALL "TESTDB"."Person_SelectAll" () }
 
@@ -469,7 +469,7 @@ DisposeTransaction
 BeforeExecute
 BeginTransaction
 BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+--  SapHana.Odbc SapHanaOdbc
 DECLARE @ID  -- Int32
 SET     @ID = 0
 
@@ -480,7 +480,7 @@ DisposeTransaction
 BeforeExecute
 BeginTransaction
 BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+--  SapHana.Odbc SapHanaOdbc
 DECLARE @FIRSTNAME NVarChar(50) -- String
 SET     @FIRSTNAME = ''
 DECLARE @LASTNAME NVarChar(50) -- String
@@ -493,7 +493,7 @@ DisposeTransaction
 BeforeExecute
 BeginTransaction
 BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+--  SapHana.Odbc SapHanaOdbc
 DECLARE @FIRSTNAME NVarChar(50) -- String
 SET     @FIRSTNAME = ''
 DECLARE @LASTNAME NVarChar(50) -- String
@@ -506,7 +506,7 @@ DisposeTransaction
 BeforeExecute
 BeginTransaction
 BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+--  SapHana.Odbc SapHanaOdbc
 DECLARE @PERSONID  -- Int32
 SET     @PERSONID = 0
 DECLARE @FIRSTNAME NVarChar(50) -- String
@@ -525,7 +525,7 @@ DisposeTransaction
 BeforeExecute
 BeginTransaction
 BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+--  SapHana.Odbc SapHanaOdbc
 
 { CALL "TESTDB"."SelectImplicitColumn" () }
 
@@ -534,7 +534,7 @@ DisposeTransaction
 BeforeExecute
 BeginTransaction
 BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+--  SapHana.Odbc SapHanaOdbc
 DECLARE @I  -- Int32
 SET     @I = 0
 
@@ -545,7 +545,7 @@ DisposeTransaction
 BeforeExecute
 BeginTransaction
 BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+--  SapHana.Odbc SapHanaOdbc
 
 { CALL "TESTDB"."prd.global.ecc/CV_MARAproc" () }
 
@@ -554,7 +554,7 @@ DisposeTransaction
 BeforeExecute
 BeginTransaction
 BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+--  SapHana.Odbc SapHanaOdbc
 
 SELECT * FROM "TESTDB"."GetParentByID"(0)
 
@@ -563,24 +563,24 @@ DisposeTransaction
 BeforeExecute
 BeginTransaction
 BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+--  SapHana.Odbc SapHanaOdbc
 
 SELECT * FROM "TESTDB"."TEST_TABLE_FUNCTION"(0)
 
 BeforeExecute
 DisposeTransaction
 BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+--  SapHana.Odbc SapHanaOdbc
 
 SELECT CURRENT_SCHEMA FROM DUMMY
 
 BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+--  SapHana.Odbc SapHanaOdbc
 
 SELECT 1 FROM _SYS_BI.BIMC_ALL_CUBES LIMIT 1
 
 BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+--  SapHana.Odbc SapHanaOdbc
 
 
 				SELECT
@@ -627,7 +627,7 @@ BeforeExecute
 				WHERE s.HAS_PRIVILEGES = 'TRUE'
 
 BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+--  SapHana.Odbc SapHanaOdbc
 
 
 				SELECT
@@ -640,7 +640,7 @@ BeforeExecute
 				FROM INDEX_COLUMNS
 
 BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+--  SapHana.Odbc SapHanaOdbc
 
 
 				SELECT
@@ -687,7 +687,7 @@ BeforeExecute
 				WHERE s.HAS_PRIVILEGES = 'TRUE'
 
 BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+--  SapHana.Odbc SapHanaOdbc
 
 
 				SELECT
@@ -701,7 +701,7 @@ BeforeExecute
 				WHERE SCHEMA_NAME IN ('TESTDB')
 
 BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+--  SapHana.Odbc SapHanaOdbc
 
 
 				SELECT
@@ -718,7 +718,7 @@ BeforeExecute
 				WHERE v.VIEW_TYPE = 'CALC' AND v.IS_VALID = 'TRUE' AND v.SCHEMA_NAME IN ('TESTDB')
 
 BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+--  SapHana.Odbc SapHanaOdbc
 
 
 				SELECT
@@ -735,7 +735,7 @@ BeforeExecute
 				ORDER BY v.VIEW_NAME, p."ORDER"
 
 BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+--  SapHana.Odbc SapHanaOdbc
 
 
 				SELECT
@@ -782,7 +782,7 @@ BeforeExecute
 				WHERE s.HAS_PRIVILEGES = 'TRUE'
 
 BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+--  SapHana.Odbc SapHanaOdbc
 
 
 				SELECT
@@ -804,7 +804,7 @@ BeforeExecute
 				WHERE F.SCHEMA_NAME IN ('TESTDB')
 
 BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+--  SapHana.Odbc SapHanaOdbc
 
 
 				SELECT
@@ -841,17 +841,17 @@ BeginTransaction
 BeforeExecute
 RollbackTransaction
 BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+--  SapHana.Odbc SapHanaOdbc
 
 SELECT CURRENT_SCHEMA FROM DUMMY
 
 BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+--  SapHana.Odbc SapHanaOdbc
 
 SELECT 1 FROM _SYS_BI.BIMC_ALL_CUBES LIMIT 1
 
 BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+--  SapHana.Odbc SapHanaOdbc
 
 
 				SELECT
@@ -898,7 +898,7 @@ BeforeExecute
 				WHERE s.HAS_PRIVILEGES = 'TRUE'
 
 BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+--  SapHana.Odbc SapHanaOdbc
 
 
 				SELECT
@@ -911,7 +911,7 @@ BeforeExecute
 				FROM INDEX_COLUMNS
 
 BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+--  SapHana.Odbc SapHanaOdbc
 
 
 				SELECT
@@ -958,7 +958,7 @@ BeforeExecute
 				WHERE s.HAS_PRIVILEGES = 'TRUE'
 
 BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+--  SapHana.Odbc SapHanaOdbc
 
 
 				SELECT
@@ -972,7 +972,7 @@ BeforeExecute
 				WHERE SCHEMA_NAME IN ('TESTDB')
 
 BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+--  SapHana.Odbc SapHanaOdbc
 
 
 				SELECT
@@ -989,7 +989,7 @@ BeforeExecute
 				WHERE v.VIEW_TYPE = 'CALC' AND v.IS_VALID = 'TRUE' AND v.SCHEMA_NAME IN ('TESTDB')
 
 BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+--  SapHana.Odbc SapHanaOdbc
 
 
 				SELECT
@@ -1006,7 +1006,7 @@ BeforeExecute
 				ORDER BY v.VIEW_NAME, p."ORDER"
 
 BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+--  SapHana.Odbc SapHanaOdbc
 
 
 				SELECT
@@ -1053,7 +1053,7 @@ BeforeExecute
 				WHERE s.HAS_PRIVILEGES = 'TRUE'
 
 BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+--  SapHana.Odbc SapHanaOdbc
 
 
 				SELECT
@@ -1075,7 +1075,7 @@ BeforeExecute
 				WHERE F.SCHEMA_NAME IN ('TESTDB')
 
 BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+--  SapHana.Odbc SapHanaOdbc
 
 
 				SELECT

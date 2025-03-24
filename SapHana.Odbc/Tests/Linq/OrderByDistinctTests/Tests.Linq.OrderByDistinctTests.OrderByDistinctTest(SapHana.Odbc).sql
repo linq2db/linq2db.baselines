@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+--  SapHana.Odbc SapHanaOdbc
 DECLARE @take  -- Int32
 SET     @take = 3
 DECLARE @skip  -- Int32
@@ -12,7 +12,7 @@ FROM
 LIMIT ? OFFSET ?
 
 BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+--  SapHana.Odbc SapHanaOdbc
 DECLARE @take  -- Int32
 SET     @take = 3
 DECLARE @skip  -- Int32
@@ -29,7 +29,7 @@ ORDER BY
 LIMIT ? OFFSET ?
 
 BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+--  SapHana.Odbc SapHanaOdbc
 DECLARE @take  -- Int32
 SET     @take = 3
 DECLARE @skip  -- Int32
@@ -42,7 +42,7 @@ FROM
 LIMIT ? OFFSET ?
 
 BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+--  SapHana.Odbc SapHanaOdbc
 DECLARE @take  -- Int32
 SET     @take = 3
 DECLARE @skip  -- Int32

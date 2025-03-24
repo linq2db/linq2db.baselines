@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+--  SapHana.Odbc SapHanaOdbc
 DECLARE @gender Char(1) -- AnsiStringFixedLength
 SET     @gender = 'M'
 

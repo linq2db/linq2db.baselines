@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+--  SapHana.Odbc SapHanaOdbc
 
 SELECT
 	"m_1"."CategoryID",
@@ -12,7 +12,7 @@ FROM
 		INNER JOIN "Products" "d" ON "m_1"."CategoryID" = "d"."CategoryID"
 
 BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+--  SapHana.Odbc SapHanaOdbc
 
 SELECT
 	"t1"."CategoryID",

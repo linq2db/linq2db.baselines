@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+--  SapHana.Odbc SapHanaOdbc
 DECLARE @personId  -- Int32
 SET     @personId = 1
 DECLARE @personId  -- Int32
@@ -24,7 +24,7 @@ WHERE
 	"p"."PersonID" = ? AND "p"."PersonID" = ? AND "p"."PersonID" = ?
 
 BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+--  SapHana.Odbc SapHanaOdbc
 DECLARE @personId  -- Int32
 SET     @personId = 1
 DECLARE @personId  -- Int32

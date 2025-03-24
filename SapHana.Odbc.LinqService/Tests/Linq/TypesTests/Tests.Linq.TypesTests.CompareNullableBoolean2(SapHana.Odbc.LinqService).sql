@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+--  SapHana.Odbc SapHanaOdbc
 
 SELECT
 	"t1"."ID",
@@ -15,7 +15,7 @@ FROM
 		INNER JOIN "LinqDataTypes" "t2" ON "t1"."ID" = "t2"."ID"
 
 BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+--  SapHana.Odbc SapHanaOdbc
 DECLARE @param2  -- Byte
 SET     @param2 = 0
 

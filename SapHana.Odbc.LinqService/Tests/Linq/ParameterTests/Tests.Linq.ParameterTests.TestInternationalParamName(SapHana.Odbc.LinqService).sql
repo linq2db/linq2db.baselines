@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+--  SapHana.Odbc SapHanaOdbc
 DECLARE @параметр  -- Int32
 SET     @параметр = 1
 
@@ -12,7 +12,7 @@ WHERE
 	"p"."ParentID" = ?
 
 BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+--  SapHana.Odbc SapHanaOdbc
 DECLARE @参数  -- Int32
 SET     @参数 = 1
 
@@ -25,7 +25,7 @@ WHERE
 	"p"."ParentID" = ?
 
 BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+--  SapHana.Odbc SapHanaOdbc
 DECLARE @パラメータ  -- Int32
 SET     @パラメータ = 1
 

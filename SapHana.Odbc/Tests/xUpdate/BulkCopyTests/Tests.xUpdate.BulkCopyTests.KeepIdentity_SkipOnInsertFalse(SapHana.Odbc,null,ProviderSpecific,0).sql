@@ -1,10 +1,10 @@
 ﻿BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+--  SapHana.Odbc SapHanaOdbc
 
 RENAME TABLE "AllTypes" TO "AllTypes_OLD"
 
 BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+--  SapHana.Odbc SapHanaOdbc
 
 
 CREATE COLUMN TABLE "AllTypes"
@@ -44,17 +44,17 @@ CREATE COLUMN TABLE "AllTypes"
 )
 
 BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+--  SapHana.Odbc SapHanaOdbc
 
 INSERT INTO "AllTypes" SELECT ID, "bigintDataType", "smallintDataType", "decimalDataType", "smalldecimalDataType", "intDataType", "tinyintDataType", "floatDataType", "realDataType", "dateDataType", "timeDataType", "seconddateDataType", "timestampDataType", "charDataType", "char20DataType", "varcharDataType", "textDataType", "shorttextDataType", "ncharDataType", "nchar20DataType", "nvarcharDataType", "alphanumDataType", "binaryDataType", "varbinaryDataType", "blobDataType", "clobDataType", "nclobDataType" FROM "AllTypes_OLD"
 
 BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+--  SapHana.Odbc SapHanaOdbc
 
 DROP TABLE "AllTypes_OLD"
 
 BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+--  SapHana.Odbc SapHanaOdbc
 DECLARE @Value  -- Int32
 SET     @Value = 0
 
@@ -68,12 +68,12 @@ VALUES
 )
 
 BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+--  SapHana.Odbc SapHanaOdbc
 
 SELECT CURRENT_IDENTITY_VALUE() FROM DUMMY
 
 BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+--  SapHana.Odbc SapHanaOdbc
 DECLARE @Value  -- Int32
 SET     @Value = 200
 
@@ -87,7 +87,7 @@ VALUES
 )
 
 BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+--  SapHana.Odbc SapHanaOdbc
 DECLARE @Value  -- Int32
 SET     @Value = 300
 
@@ -101,7 +101,7 @@ VALUES
 )
 
 BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+--  SapHana.Odbc SapHanaOdbc
 DECLARE @lastId  -- Int32
 SET     @lastId = 3
 
@@ -116,7 +116,7 @@ ORDER BY
 	"t1"."ID"
 
 BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+--  SapHana.Odbc SapHanaOdbc
 DECLARE @lastId  -- Int32
 SET     @lastId = 3
 

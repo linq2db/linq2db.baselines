@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+--  SapHana.Odbc SapHanaOdbc
 
 SELECT
 	(COUNT(*) || ' items have not been processed, e.g. #' || MIN("g_1"."PersonID")) || '.'

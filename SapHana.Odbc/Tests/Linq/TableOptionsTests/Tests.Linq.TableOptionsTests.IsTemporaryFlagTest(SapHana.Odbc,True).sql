@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+--  SapHana.Odbc SapHanaOdbc
 
 CREATE COLUMN TABLE "IsTemporaryTable"
 (
@@ -8,7 +8,7 @@ CREATE COLUMN TABLE "IsTemporaryTable"
 )
 
 BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+--  SapHana.Odbc SapHanaOdbc
 
 SELECT
 	"t1"."Id",
@@ -17,7 +17,7 @@ FROM
 	"IsTemporaryTable" "t1"
 
 BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+--  SapHana.Odbc SapHanaOdbc
 
 DROP TABLE "IsTemporaryTable"
 

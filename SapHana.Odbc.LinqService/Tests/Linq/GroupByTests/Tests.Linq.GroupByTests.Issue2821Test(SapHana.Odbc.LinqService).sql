@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+--  SapHana.Odbc SapHanaOdbc
 DECLARE @currentDate  -- DateTime
 SET     @currentDate = '2020-02-29 17:54:55.123'
 DECLARE @currentDate  -- DateTime
