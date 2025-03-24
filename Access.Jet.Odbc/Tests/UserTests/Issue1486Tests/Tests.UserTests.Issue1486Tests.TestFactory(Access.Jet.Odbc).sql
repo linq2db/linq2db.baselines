@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 BeginTransaction(Unspecified)
 BeforeExecute
---  Access.Jet.Odbc AccessODBC
+-- Access.Jet.Odbc AccessODBC
 
 SELECT
 	[m_1].[ParentID],
@@ -23,7 +23,7 @@ FROM
 		INNER JOIN [Child] [d] ON ([m_1].[ParentID] = [d].[ParentID])
 
 BeforeExecute
---  Access.Jet.Odbc AccessODBC
+-- Access.Jet.Odbc AccessODBC
 
 SELECT TOP 1
 	[t1].[ParentID],

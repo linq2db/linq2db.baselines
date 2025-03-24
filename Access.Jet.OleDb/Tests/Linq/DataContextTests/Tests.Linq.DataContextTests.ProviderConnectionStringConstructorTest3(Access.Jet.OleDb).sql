@@ -10,7 +10,7 @@ ORDER BY
 	[t1].[ChildID]
 
 BeforeExecute
---  Access.Jet.OleDb AccessOleDb
+-- Access.Jet.OleDb AccessOleDb
 
 SELECT
 	[t1].[ParentID],
