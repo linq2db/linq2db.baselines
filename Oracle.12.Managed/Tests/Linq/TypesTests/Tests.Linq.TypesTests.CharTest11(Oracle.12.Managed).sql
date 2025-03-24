@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SQLite.MS SQLite
+--  SQLite.MS SQLite
 
 SELECT
 	[t1].[PersonID],
@@ -11,7 +11,7 @@ FROM
 	[Person] [t1]
 
 BeforeExecute
--- Oracle.12.Managed Oracle.Managed Oracle12
+--  Oracle.12.Managed Oracle.Managed Oracle12
 
 SELECT
 	p."PersonID"

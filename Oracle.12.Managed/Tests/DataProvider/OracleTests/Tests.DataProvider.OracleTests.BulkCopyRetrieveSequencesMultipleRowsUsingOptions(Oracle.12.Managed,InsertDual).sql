@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Oracle.12.Managed Oracle.Managed Oracle12
+--  Oracle.12.Managed Oracle.Managed Oracle12
 
 DELETE FROM
 	SEQUENCETEST t1
@@ -7,12 +7,12 @@ WHERE
 	t1.VALUE = 'SeqValue'
 
 BeforeExecute
--- Oracle.12.Managed Oracle.Managed Oracle12
+--  Oracle.12.Managed Oracle.Managed Oracle12
 
 SELECT SEQUENCETESTSEQ.nextval ID from DUAL connect by level <= 4
 
 BeforeExecute
--- Oracle.12.Managed Oracle.Managed Oracle12
+--  Oracle.12.Managed Oracle.Managed Oracle12
 
 INSERT INTO SEQUENCETEST
 (

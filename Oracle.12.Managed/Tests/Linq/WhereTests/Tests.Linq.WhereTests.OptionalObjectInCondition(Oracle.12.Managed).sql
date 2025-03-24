@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Oracle.12.Managed Oracle.Managed Oracle12
+--  Oracle.12.Managed Oracle.Managed Oracle12
 DECLARE @p Varchar2(1) -- String
 SET     @p = '1'
 
@@ -15,7 +15,7 @@ WHERE
 	r."FirstName" = :p
 
 BeforeExecute
--- Oracle.12.Managed Oracle.Managed Oracle12
+--  Oracle.12.Managed Oracle.Managed Oracle12
 
 SELECT
 	r."FirstName",
@@ -29,7 +29,7 @@ WHERE
 	1 = 0
 
 BeforeExecute
--- Oracle.12.Managed Oracle.Managed Oracle12
+--  Oracle.12.Managed Oracle.Managed Oracle12
 DECLARE @p Varchar2(1) -- String
 SET     @p = '1'
 

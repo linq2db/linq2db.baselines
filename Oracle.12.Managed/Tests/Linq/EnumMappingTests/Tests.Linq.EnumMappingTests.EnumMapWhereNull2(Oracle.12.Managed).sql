@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Oracle.12.Managed Oracle.Managed Oracle12
+--  Oracle.12.Managed Oracle.Managed Oracle12
 DECLARE @p Int32
 SET     @p = 102
 
@@ -9,7 +9,7 @@ WHERE
 	r.ID >= 101 AND r.ID < :p
 
 BeforeExecute
--- Oracle.12.Managed Oracle.Managed Oracle12
+--  Oracle.12.Managed Oracle.Managed Oracle12
 
 INSERT INTO "LinqDataTypes"
 (
@@ -21,7 +21,7 @@ VALUES
 )
 
 BeforeExecute
--- Oracle.12.Managed Oracle.Managed Oracle12
+--  Oracle.12.Managed Oracle.Managed Oracle12
 
 SELECT
 	r."BigIntValue" as "TestField"
@@ -32,7 +32,7 @@ WHERE
 FETCH NEXT 1 ROWS ONLY
 
 BeforeExecute
--- Oracle.12.Managed Oracle.Managed Oracle12
+--  Oracle.12.Managed Oracle.Managed Oracle12
 DECLARE @p Int32
 SET     @p = 102
 

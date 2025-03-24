@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Oracle.12.Managed Oracle.Managed Oracle12
+--  Oracle.12.Managed Oracle.Managed Oracle12
 
 WITH CTE1_ ("ParentID")
 AS
@@ -30,7 +30,7 @@ FROM
 		INNER JOIN LAST0 c4_1 ON c4_1."ParentID" = p."ParentID"
 
 BeforeExecute
--- Oracle.12.Managed Oracle.Managed Oracle12
+--  Oracle.12.Managed Oracle.Managed Oracle12
 
 SELECT
 	c4."ParentID",

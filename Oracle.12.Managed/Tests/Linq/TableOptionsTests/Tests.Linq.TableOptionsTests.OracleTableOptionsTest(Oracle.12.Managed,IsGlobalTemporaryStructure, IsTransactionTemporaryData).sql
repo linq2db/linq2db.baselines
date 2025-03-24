@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Oracle.12.Managed Oracle.Managed Oracle12
+--  Oracle.12.Managed Oracle.Managed Oracle12
 
 CREATE GLOBAL TEMPORARY TABLE "TestTable"
 (
@@ -9,7 +9,7 @@ CREATE GLOBAL TEMPORARY TABLE "TestTable"
 ON COMMIT DELETE ROWS
 
 BeforeExecute
--- Oracle.12.Managed Oracle.Managed Oracle12
+--  Oracle.12.Managed Oracle.Managed Oracle12
 
 BEGIN
 	EXECUTE IMMEDIATE 'DROP TABLE "TestTable"';

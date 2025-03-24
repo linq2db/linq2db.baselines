@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Oracle.12.Managed Oracle.Managed Oracle12
+--  Oracle.12.Managed Oracle.Managed Oracle12
 DECLARE @:p1 Int32
 SET     @:p1 = {375,328,348,357,371,333,353,973}
 DECLARE @:p2 Int32

@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Oracle.12.Managed Oracle.Managed Oracle12
+--  Oracle.12.Managed Oracle.Managed Oracle12
 DECLARE @p Varchar2(67) -- String
 SET     @p = '<t>
 <r><c0>1</c0><c1>11</c1></r>

@@ -1,11 +1,11 @@
 ﻿BeforeExecute
--- Oracle.12.Managed Oracle.Managed Oracle12
+--  Oracle.12.Managed Oracle.Managed Oracle12
 
 DELETE FROM
 	LINQDATATYPESBC t1
 
 BeforeExecute
--- Oracle.12.Managed Oracle.Managed Oracle12
+--  Oracle.12.Managed Oracle.Managed Oracle12
 DECLARE @:p1 Int32
 SET     @:p1 = {1003,1004,1005,1006}
 DECLARE @:p2 Decimal
@@ -30,7 +30,7 @@ SET     @:p10 = {NULL,NULL,NULL,NULL}
 INSERT INTO LINQDATATYPESBC (ID, MONEYVALUE, DATETIMEVALUE, DATETIMEVALUE2, BOOLVALUE, GUIDVALUE, SMALLINTVALUE, INTVALUE, BIGINTVALUE, STRINGVALUE) VALUES (:p1, :p2, :p3, :p4, :p5, :p6, :p7, :p8, :p9, :p10)
 
 BeforeExecute
--- Oracle.12.Managed Oracle.Managed Oracle12
+--  Oracle.12.Managed Oracle.Managed Oracle12
 
 DELETE FROM
 	LINQDATATYPESBC t1

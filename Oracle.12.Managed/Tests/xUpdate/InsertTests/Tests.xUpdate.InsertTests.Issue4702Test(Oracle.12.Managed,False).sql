@@ -1,10 +1,10 @@
 ﻿BeforeExecute
--- Oracle.12.Managed Oracle.Managed Oracle12
+--  Oracle.12.Managed Oracle.Managed Oracle12
 
 SELECT Max("Id") FROM "Issue4702Table"
 
 BeforeExecute
--- Oracle.12.Managed Oracle.Managed Oracle12
+--  Oracle.12.Managed Oracle.Managed Oracle12
 
 INSERT ALL
 	INTO "Issue4702Table" ("Id", "Text") VALUES (1,'Text 1')
@@ -12,7 +12,7 @@ INSERT ALL
 SELECT * FROM dual
 
 BeforeExecute
--- Oracle.12.Managed Oracle.Managed Oracle12
+--  Oracle.12.Managed Oracle.Managed Oracle12
 
 INSERT INTO "Issue4702Table"
 (

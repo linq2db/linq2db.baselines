@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 BeginTransaction
 BeforeExecute
--- Oracle.12.Managed Oracle.Managed Oracle12
+--  Oracle.12.Managed Oracle.Managed Oracle12
 DECLARE @:p1 Int32
 SET     @:p1 = 111001
 DECLARE @:p2 Int32
@@ -257,7 +257,7 @@ INSERT ALL
 SELECT * FROM dual
 
 BeforeExecute
--- Oracle.12.Managed Oracle.Managed Oracle12
+--  Oracle.12.Managed Oracle.Managed Oracle12
 DECLARE @:p1 Int32
 SET     @:p1 = 111051
 DECLARE @:p2 Int32
@@ -513,7 +513,7 @@ INSERT ALL
 SELECT * FROM dual
 
 BeforeExecute
--- Oracle.12.Managed Oracle.Managed Oracle12
+--  Oracle.12.Managed Oracle.Managed Oracle12
 DECLARE @:p1 Int32
 SET     @:p1 = 111101
 DECLARE @:p2 Int32
@@ -764,7 +764,7 @@ INSERT ALL
 SELECT * FROM dual
 
 BeforeExecute
--- Oracle.12.Managed Oracle.Managed Oracle12
+--  Oracle.12.Managed Oracle.Managed Oracle12
 DECLARE @ParentID Int32
 SET     @ParentID = 111001
 DECLARE @ParentID_1 Int32
