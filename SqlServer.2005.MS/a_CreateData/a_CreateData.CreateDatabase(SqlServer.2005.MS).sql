@@ -1,23 +1,23 @@
 ﻿BeforeExecute
--- SqlServer.2005.MS SqlServer.2005
+--  SqlServer.2005.MS SqlServer.2005
 
 IF EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID('dbo.SameTableName') AND type IN (N'U'))
 BEGIN DROP TABLE dbo.SameTableName END
 
 BeforeExecute
--- SqlServer.2005.MS SqlServer.2005
+--  SqlServer.2005.MS SqlServer.2005
 
 IF EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID('dbo.TestSchema_SameTableName') AND type IN (N'U'))
 BEGIN DROP TABLE dbo.TestSchema_SameTableName END
 
 BeforeExecute
--- SqlServer.2005.MS SqlServer.2005
+--  SqlServer.2005.MS SqlServer.2005
 
 IF EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID('TestSchema.SameTableName') AND type IN (N'U'))
 BEGIN DROP TABLE TestSchema.SameTableName END
 
 BeforeExecute
--- SqlServer.2005.MS SqlServer.2005
+--  SqlServer.2005.MS SqlServer.2005
 
 IF EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID('Doctor') AND type in (N'U'))
 BEGIN DROP TABLE Doctor END
@@ -32,20 +32,20 @@ IF EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID('InheritanceChi
 BEGIN DROP TABLE InheritanceChild END
 
 BeforeExecute
--- SqlServer.2005.MS SqlServer.2005
+--  SqlServer.2005.MS SqlServer.2005
 
 IF EXISTS (SELECT * FROM sys.objects WHERE type = 'P' AND name = 'TestProcedure' AND schema_id = SCHEMA_ID('TestSchema'))
 	DROP PROCEDURE TestSchema.TestProcedure
 
 BeforeExecute
--- SqlServer.2005.MS SqlServer.2005
+--  SqlServer.2005.MS SqlServer.2005
 
 IF EXISTS (SELECT * FROM sys.objects WHERE type = 'IF' AND name = 'SchemaTableFunction' AND schema_id = SCHEMA_ID('TestSchema'))
 BEGIN DROP FUNCTION TestSchema.SchemaTableFunction
 END
 
 BeforeExecute
--- SqlServer.2005.MS SqlServer.2005
+--  SqlServer.2005.MS SqlServer.2005
 
 CREATE TABLE InheritanceParent
 (
@@ -56,7 +56,7 @@ CREATE TABLE InheritanceParent
 ON [PRIMARY]
 
 BeforeExecute
--- SqlServer.2005.MS SqlServer.2005
+--  SqlServer.2005.MS SqlServer.2005
 
 CREATE TABLE InheritanceChild
 (
@@ -68,7 +68,7 @@ CREATE TABLE InheritanceChild
 ON [PRIMARY]
 
 BeforeExecute
--- SqlServer.2005.MS SqlServer.2005
+--  SqlServer.2005.MS SqlServer.2005
 
 -- Person Table
 
@@ -87,27 +87,27 @@ CREATE TABLE Person
 ON [PRIMARY]
 
 BeforeExecute
--- SqlServer.2005.MS SqlServer.2005
+--  SqlServer.2005.MS SqlServer.2005
 
 INSERT INTO Person (FirstName, LastName, Gender) VALUES ('John',   'Pupkin',    'M')
 
 BeforeExecute
--- SqlServer.2005.MS SqlServer.2005
+--  SqlServer.2005.MS SqlServer.2005
 
 INSERT INTO Person (FirstName, LastName, Gender) VALUES ('Tester', 'Testerson', 'M')
 
 BeforeExecute
--- SqlServer.2005.MS SqlServer.2005
+--  SqlServer.2005.MS SqlServer.2005
 
 INSERT INTO Person (FirstName, LastName, Gender) VALUES ('Jane',   'Doe',       'F')
 
 BeforeExecute
--- SqlServer.2005.MS SqlServer.2005
+--  SqlServer.2005.MS SqlServer.2005
 
 INSERT INTO Person (FirstName, LastName, MiddleName, Gender) VALUES (N'Jürgen', N'König', 'Ko', 'M')
 
 BeforeExecute
--- SqlServer.2005.MS SqlServer.2005
+--  SqlServer.2005.MS SqlServer.2005
 
 -- Doctor Table Extension
 
@@ -124,12 +124,12 @@ CREATE TABLE Doctor
 ON [PRIMARY]
 
 BeforeExecute
--- SqlServer.2005.MS SqlServer.2005
+--  SqlServer.2005.MS SqlServer.2005
 
 INSERT INTO Doctor (PersonID, Taxonomy) VALUES (1, 'Psychiatry')
 
 BeforeExecute
--- SqlServer.2005.MS SqlServer.2005
+--  SqlServer.2005.MS SqlServer.2005
 
 -- Patient Table Extension
 
@@ -146,12 +146,12 @@ CREATE TABLE Patient
 ON [PRIMARY]
 
 BeforeExecute
--- SqlServer.2005.MS SqlServer.2005
+--  SqlServer.2005.MS SqlServer.2005
 
 INSERT INTO Patient (PersonID, Diagnosis) VALUES (2, 'Hallucination with Paranoid Bugs'' Delirium of Persecution')
 
 BeforeExecute
--- SqlServer.2005.MS SqlServer.2005
+--  SqlServer.2005.MS SqlServer.2005
 
 -- Person_SelectByKey
 
@@ -160,7 +160,7 @@ BEGIN DROP Procedure Person_SelectByKey
 END
 
 BeforeExecute
--- SqlServer.2005.MS SqlServer.2005
+--  SqlServer.2005.MS SqlServer.2005
 
 CREATE Procedure Person_SelectByKey
 	@id int
@@ -169,12 +169,12 @@ AS
 SELECT * FROM Person WHERE PersonID = @id
 
 BeforeExecute
--- SqlServer.2005.MS SqlServer.2005
+--  SqlServer.2005.MS SqlServer.2005
 
 GRANT EXEC ON Person_SelectByKey TO PUBLIC
 
 BeforeExecute
--- SqlServer.2005.MS SqlServer.2005
+--  SqlServer.2005.MS SqlServer.2005
 
 -- Person_SelectByKeyLowercase
 
@@ -183,7 +183,7 @@ BEGIN DROP Procedure Person_SelectByKeyLowercase
 END
 
 BeforeExecute
--- SqlServer.2005.MS SqlServer.2005
+--  SqlServer.2005.MS SqlServer.2005
 
 CREATE Procedure Person_SelectByKeyLowercase
 	@id int
@@ -192,12 +192,12 @@ AS
 SELECT PersonID, FirstName FROM Person WHERE PersonID = @id
 
 BeforeExecute
--- SqlServer.2005.MS SqlServer.2005
+--  SqlServer.2005.MS SqlServer.2005
 
 GRANT EXEC ON Person_SelectByKeyLowercase TO PUBLIC
 
 BeforeExecute
--- SqlServer.2005.MS SqlServer.2005
+--  SqlServer.2005.MS SqlServer.2005
 
 -- Person_SelectAll
 
@@ -205,7 +205,7 @@ IF EXISTS (SELECT * FROM sys.objects WHERE type = 'P' AND name = 'Person_SelectA
 BEGIN DROP Procedure Person_SelectAll END
 
 BeforeExecute
--- SqlServer.2005.MS SqlServer.2005
+--  SqlServer.2005.MS SqlServer.2005
 
 CREATE Procedure Person_SelectAll
 AS
@@ -213,12 +213,12 @@ AS
 SELECT * FROM Person
 
 BeforeExecute
--- SqlServer.2005.MS SqlServer.2005
+--  SqlServer.2005.MS SqlServer.2005
 
 GRANT EXEC ON Person_SelectAll TO PUBLIC
 
 BeforeExecute
--- SqlServer.2005.MS SqlServer.2005
+--  SqlServer.2005.MS SqlServer.2005
 
 -- Person_SelectByName
 
@@ -226,7 +226,7 @@ IF EXISTS (SELECT * FROM sys.objects WHERE type = 'P' AND name = 'Person_SelectB
 BEGIN DROP Procedure Person_SelectByName END
 
 BeforeExecute
--- SqlServer.2005.MS SqlServer.2005
+--  SqlServer.2005.MS SqlServer.2005
 
 CREATE Procedure Person_SelectByName
 	@firstName nvarchar(50),
@@ -241,12 +241,12 @@ WHERE
 	FirstName = @firstName AND LastName = @lastName
 
 BeforeExecute
--- SqlServer.2005.MS SqlServer.2005
+--  SqlServer.2005.MS SqlServer.2005
 
 GRANT EXEC ON Person_SelectByName TO PUBLIC
 
 BeforeExecute
--- SqlServer.2005.MS SqlServer.2005
+--  SqlServer.2005.MS SqlServer.2005
 
 -- Person_SelectListByName
 
@@ -255,7 +255,7 @@ BEGIN DROP Procedure Person_SelectListByName
 END
 
 BeforeExecute
--- SqlServer.2005.MS SqlServer.2005
+--  SqlServer.2005.MS SqlServer.2005
 
 CREATE Procedure Person_SelectListByName
 	@firstName nvarchar(50),
@@ -270,12 +270,12 @@ WHERE
 	FirstName like @firstName AND LastName like @lastName
 
 BeforeExecute
--- SqlServer.2005.MS SqlServer.2005
+--  SqlServer.2005.MS SqlServer.2005
 
 GRANT EXEC ON Person_SelectByName TO PUBLIC
 
 BeforeExecute
--- SqlServer.2005.MS SqlServer.2005
+--  SqlServer.2005.MS SqlServer.2005
 
 -- Person_Insert
 
@@ -283,7 +283,7 @@ IF EXISTS (SELECT * FROM sys.objects WHERE type = 'P' AND name = 'Person_Insert'
 BEGIN DROP Procedure Person_Insert END
 
 BeforeExecute
--- SqlServer.2005.MS SqlServer.2005
+--  SqlServer.2005.MS SqlServer.2005
 
 CREATE Procedure Person_Insert
 	@FirstName  nvarchar(50),
@@ -300,12 +300,12 @@ VALUES
 SELECT Cast(SCOPE_IDENTITY() as int) PersonID
 
 BeforeExecute
--- SqlServer.2005.MS SqlServer.2005
+--  SqlServer.2005.MS SqlServer.2005
 
 GRANT EXEC ON Person_Insert TO PUBLIC
 
 BeforeExecute
--- SqlServer.2005.MS SqlServer.2005
+--  SqlServer.2005.MS SqlServer.2005
 
 -- Person_Insert_OutputParameter
 
@@ -313,7 +313,7 @@ IF EXISTS (SELECT * FROM sys.objects WHERE type = 'P' AND name = 'Person_Insert_
 BEGIN DROP Procedure Person_Insert_OutputParameter END
 
 BeforeExecute
--- SqlServer.2005.MS SqlServer.2005
+--  SqlServer.2005.MS SqlServer.2005
 
 CREATE Procedure Person_Insert_OutputParameter
 	@FirstName  nvarchar(50),
@@ -331,12 +331,12 @@ VALUES
 SET @PersonID = Cast(SCOPE_IDENTITY() as int)
 
 BeforeExecute
--- SqlServer.2005.MS SqlServer.2005
+--  SqlServer.2005.MS SqlServer.2005
 
 GRANT EXEC ON Person_Insert_OutputParameter TO PUBLIC
 
 BeforeExecute
--- SqlServer.2005.MS SqlServer.2005
+--  SqlServer.2005.MS SqlServer.2005
 
 -- Person_Update
 
@@ -344,7 +344,7 @@ IF EXISTS (SELECT * FROM sys.objects WHERE type = 'P' AND name = 'Person_Update'
 BEGIN DROP Procedure Person_Update END
 
 BeforeExecute
--- SqlServer.2005.MS SqlServer.2005
+--  SqlServer.2005.MS SqlServer.2005
 
 CREATE Procedure Person_Update
 	@PersonID   int,
@@ -365,12 +365,12 @@ WHERE
 	PersonID = @PersonID
 
 BeforeExecute
--- SqlServer.2005.MS SqlServer.2005
+--  SqlServer.2005.MS SqlServer.2005
 
 GRANT EXEC ON Person_Update TO PUBLIC
 
 BeforeExecute
--- SqlServer.2005.MS SqlServer.2005
+--  SqlServer.2005.MS SqlServer.2005
 
 -- Person_Delete
 
@@ -378,7 +378,7 @@ IF EXISTS (SELECT * FROM sys.objects WHERE type = 'P' AND name = 'Person_Delete'
 BEGIN DROP Procedure Person_Delete END
 
 BeforeExecute
--- SqlServer.2005.MS SqlServer.2005
+--  SqlServer.2005.MS SqlServer.2005
 
 CREATE Procedure Person_Delete
 	@PersonID int
@@ -387,12 +387,12 @@ AS
 DELETE FROM Person WHERE PersonID = @PersonID
 
 BeforeExecute
--- SqlServer.2005.MS SqlServer.2005
+--  SqlServer.2005.MS SqlServer.2005
 
 GRANT EXEC ON Person_Delete TO PUBLIC
 
 BeforeExecute
--- SqlServer.2005.MS SqlServer.2005
+--  SqlServer.2005.MS SqlServer.2005
 
 -- Patient_SelectAll
 
@@ -400,7 +400,7 @@ IF EXISTS (SELECT * FROM sys.objects WHERE type = 'P' AND name = 'Patient_Select
 BEGIN DROP Procedure Patient_SelectAll END
 
 BeforeExecute
--- SqlServer.2005.MS SqlServer.2005
+--  SqlServer.2005.MS SqlServer.2005
 
 CREATE Procedure Patient_SelectAll
 AS
@@ -413,12 +413,12 @@ WHERE
 	Patient.PersonID = Person.PersonID
 
 BeforeExecute
--- SqlServer.2005.MS SqlServer.2005
+--  SqlServer.2005.MS SqlServer.2005
 
 GRANT EXEC ON Patient_SelectAll TO PUBLIC
 
 BeforeExecute
--- SqlServer.2005.MS SqlServer.2005
+--  SqlServer.2005.MS SqlServer.2005
 
 -- Patient_SelectByName
 
@@ -426,7 +426,7 @@ IF EXISTS (SELECT * FROM sys.objects WHERE type = 'P' AND name = 'Patient_Select
 BEGIN DROP Procedure Patient_SelectByName END
 
 BeforeExecute
--- SqlServer.2005.MS SqlServer.2005
+--  SqlServer.2005.MS SqlServer.2005
 
 CREATE Procedure Patient_SelectByName
 	@firstName nvarchar(50),
@@ -442,12 +442,12 @@ WHERE
 	AND FirstName = @firstName AND LastName = @lastName
 
 BeforeExecute
--- SqlServer.2005.MS SqlServer.2005
+--  SqlServer.2005.MS SqlServer.2005
 
 GRANT EXEC ON Person_SelectByName TO PUBLIC
 
 BeforeExecute
--- SqlServer.2005.MS SqlServer.2005
+--  SqlServer.2005.MS SqlServer.2005
 
 -- VariableResults
 
@@ -455,7 +455,7 @@ IF EXISTS (SELECT * FROM sys.objects WHERE type = 'P' AND name = 'VariableResult
 BEGIN DROP Procedure VariableResults END
 
 BeforeExecute
--- SqlServer.2005.MS SqlServer.2005
+--  SqlServer.2005.MS SqlServer.2005
 
 CREATE PROCEDURE VariableResults
 	@ReturnFullRow bit = 1
@@ -475,7 +475,7 @@ BEGIN
 END
 
 BeforeExecute
--- SqlServer.2005.MS SqlServer.2005
+--  SqlServer.2005.MS SqlServer.2005
 
 -- OutRefTest
 
@@ -483,7 +483,7 @@ IF EXISTS (SELECT * FROM sys.objects WHERE type = 'P' AND name = 'OutRefTest')
 BEGIN DROP Procedure OutRefTest END
 
 BeforeExecute
--- SqlServer.2005.MS SqlServer.2005
+--  SqlServer.2005.MS SqlServer.2005
 
 CREATE Procedure OutRefTest
 	@ID             int,
@@ -500,7 +500,7 @@ SET @outputStr      = @str
 SET @inputOutputStr = @str + @inputOutputStr
 
 BeforeExecute
--- SqlServer.2005.MS SqlServer.2005
+--  SqlServer.2005.MS SqlServer.2005
 
 -- OutRefEnumTest
 
@@ -508,7 +508,7 @@ IF EXISTS (SELECT * FROM sys.objects WHERE type = 'P' AND name = 'OutRefEnumTest
 BEGIN DROP Procedure OutRefEnumTest END
 
 BeforeExecute
--- SqlServer.2005.MS SqlServer.2005
+--  SqlServer.2005.MS SqlServer.2005
 
 CREATE Procedure OutRefEnumTest
 	@str            varchar(50),
@@ -520,7 +520,7 @@ SET @outputStr      = @str
 SET @inputOutputStr = @str + @inputOutputStr
 
 BeforeExecute
--- SqlServer.2005.MS SqlServer.2005
+--  SqlServer.2005.MS SqlServer.2005
 
 -- Data Types test
 
@@ -528,7 +528,7 @@ IF EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID('AllTypes') AND
 BEGIN DROP TABLE AllTypes END
 
 BeforeExecute
--- SqlServer.2005.MS SqlServer.2005
+--  SqlServer.2005.MS SqlServer.2005
 
 CREATE TABLE AllTypes
 (
@@ -659,7 +659,7 @@ CREATE TABLE AllTypes
 ) ON [PRIMARY]
 
 BeforeExecute
--- SqlServer.2005.MS SqlServer.2005
+--  SqlServer.2005.MS SqlServer.2005
 
 INSERT INTO AllTypes
 (
@@ -699,7 +699,7 @@ SELECT
 	'<root><element strattr="strvalue" intattr="12345"/></root>'
 
 BeforeExecute
--- SqlServer.2005.MS SqlServer.2005
+--  SqlServer.2005.MS SqlServer.2005
 
 -- GetParentByID function
 IF EXISTS (SELECT * FROM sys.objects WHERE type = 'IF' AND name = 'GetParentByID')
@@ -707,67 +707,67 @@ BEGIN DROP FUNCTION GetParentByID
 END
 
 BeforeExecute
--- SqlServer.2005.MS SqlServer.2005
+--  SqlServer.2005.MS SqlServer.2005
 
 IF EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID('ParentView') AND type in (N'V'))
 BEGIN DROP VIEW ParentView END
 
 BeforeExecute
--- SqlServer.2005.MS SqlServer.2005
+--  SqlServer.2005.MS SqlServer.2005
 
 IF EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID('ParentChildView') AND type in (N'V'))
 BEGIN DROP VIEW ParentChildView END
 
 BeforeExecute
--- SqlServer.2005.MS SqlServer.2005
+--  SqlServer.2005.MS SqlServer.2005
 
 IF EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID('Parent') AND type in (N'U'))
 BEGIN DROP TABLE Parent END
 
 BeforeExecute
--- SqlServer.2005.MS SqlServer.2005
+--  SqlServer.2005.MS SqlServer.2005
 
 IF EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID('Child') AND type in (N'U'))
 BEGIN DROP TABLE Child END
 
 BeforeExecute
--- SqlServer.2005.MS SqlServer.2005
+--  SqlServer.2005.MS SqlServer.2005
 
 IF EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID('GrandChild') AND type in (N'U'))
 BEGIN DROP TABLE GrandChild END
 
 BeforeExecute
--- SqlServer.2005.MS SqlServer.2005
+--  SqlServer.2005.MS SqlServer.2005
 
 CREATE TABLE Parent     (ParentID int, Value1 int,  _ID INT IDENTITY PRIMARY KEY)
 
 BeforeExecute
--- SqlServer.2005.MS SqlServer.2005
+--  SqlServer.2005.MS SqlServer.2005
 
 CREATE TABLE Child      (ParentID int, ChildID int, _ID INT IDENTITY PRIMARY KEY)
 
 BeforeExecute
--- SqlServer.2005.MS SqlServer.2005
+--  SqlServer.2005.MS SqlServer.2005
 
 CREATE INDEX IX_ChildIndex ON Child (ParentID)
 
 BeforeExecute
--- SqlServer.2005.MS SqlServer.2005
+--  SqlServer.2005.MS SqlServer.2005
 
 CREATE TABLE GrandChild (ParentID int, ChildID int, GrandChildID int, _ID INT IDENTITY PRIMARY KEY)
 
 BeforeExecute
--- SqlServer.2005.MS SqlServer.2005
+--  SqlServer.2005.MS SqlServer.2005
 
 EXEC sys.sp_addextendedproperty @name=N'MS_Description', @value=N'This is Parent table' , @level0type=N'SCHEMA', @level0name=N'dbo', @level1type=N'TABLE', @level1name=N'Parent'
 
 BeforeExecute
--- SqlServer.2005.MS SqlServer.2005
+--  SqlServer.2005.MS SqlServer.2005
 
 EXEC sys.sp_addextendedproperty @name=N'MS_Description', @value=N'This ChildID column', @level0type=N'SCHEMA', @level0name=N'dbo',  @level1type=N'TABLE', @level1name=N'Child', @level2type=N'COLUMN', @level2name=N'ChildID'
 
 BeforeExecute
--- SqlServer.2005.MS SqlServer.2005
+--  SqlServer.2005.MS SqlServer.2005
 
 CREATE FUNCTION GetParentByID(@id int)
 RETURNS TABLE
@@ -778,7 +778,7 @@ RETURN
 )
 
 BeforeExecute
--- SqlServer.2005.MS SqlServer.2005
+--  SqlServer.2005.MS SqlServer.2005
 
 -- ParentView
 
@@ -787,7 +787,7 @@ AS
 	SELECT * FROM Parent
 
 BeforeExecute
--- SqlServer.2005.MS SqlServer.2005
+--  SqlServer.2005.MS SqlServer.2005
 
 -- ParentChildView
 
@@ -801,7 +801,7 @@ AS
 		LEFT JOIN Child ch ON p.ParentID = ch.ParentID
 
 BeforeExecute
--- SqlServer.2005.MS SqlServer.2005
+--  SqlServer.2005.MS SqlServer.2005
 
 -- LinqDataTypes
 
@@ -809,7 +809,7 @@ IF EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID('LinqDataTypes'
 BEGIN DROP TABLE LinqDataTypes END
 
 BeforeExecute
--- SqlServer.2005.MS SqlServer.2005
+--  SqlServer.2005.MS SqlServer.2005
 
 CREATE TABLE LinqDataTypes
 (
@@ -827,33 +827,33 @@ CREATE TABLE LinqDataTypes
 )
 
 BeforeExecute
--- SqlServer.2005.MS SqlServer.2005
+--  SqlServer.2005.MS SqlServer.2005
 
 IF EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID('TestIdentity') AND type in (N'U'))
 BEGIN DROP TABLE TestIdentity END
 
 BeforeExecute
--- SqlServer.2005.MS SqlServer.2005
+--  SqlServer.2005.MS SqlServer.2005
 
 CREATE TABLE TestIdentity (
 	ID int NOT NULL IDENTITY(1,1) CONSTRAINT PK_TestIdentity PRIMARY KEY CLUSTERED
 ) ON [PRIMARY]
 
 BeforeExecute
--- SqlServer.2005.MS SqlServer.2005
+--  SqlServer.2005.MS SqlServer.2005
 
 -- IndexTable
 IF EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID('IndexTable2') AND type in (N'U'))
 BEGIN DROP TABLE IndexTable2 END
 
 BeforeExecute
--- SqlServer.2005.MS SqlServer.2005
+--  SqlServer.2005.MS SqlServer.2005
 
 IF EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID('IndexTable') AND type in (N'U'))
 BEGIN DROP TABLE IndexTable END
 
 BeforeExecute
--- SqlServer.2005.MS SqlServer.2005
+--  SqlServer.2005.MS SqlServer.2005
 
 CREATE TABLE IndexTable
 (
@@ -866,7 +866,7 @@ CREATE TABLE IndexTable
 )
 
 BeforeExecute
--- SqlServer.2005.MS SqlServer.2005
+--  SqlServer.2005.MS SqlServer.2005
 
 CREATE TABLE IndexTable2
 (
@@ -880,14 +880,14 @@ CREATE TABLE IndexTable2
 )
 
 BeforeExecute
--- SqlServer.2005.MS SqlServer.2005
+--  SqlServer.2005.MS SqlServer.2005
 
 IF EXISTS (SELECT * FROM sys.objects WHERE type = 'P' AND name = 'SelectImplicitColumn')
 BEGIN DROP Procedure SelectImplicitColumn
 END
 
 BeforeExecute
--- SqlServer.2005.MS SqlServer.2005
+--  SqlServer.2005.MS SqlServer.2005
 
 CREATE PROCEDURE SelectImplicitColumn
 AS
@@ -896,14 +896,14 @@ BEGIN
 END
 
 BeforeExecute
--- SqlServer.2005.MS SqlServer.2005
+--  SqlServer.2005.MS SqlServer.2005
 
 IF EXISTS (SELECT * FROM sys.objects WHERE type = 'P' AND name = 'DuplicateColumnNames')
 BEGIN DROP Procedure DuplicateColumnNames
 END
 
 BeforeExecute
--- SqlServer.2005.MS SqlServer.2005
+--  SqlServer.2005.MS SqlServer.2005
 
 CREATE PROCEDURE DuplicateColumnNames
 AS
@@ -912,13 +912,13 @@ BEGIN
 END
 
 BeforeExecute
--- SqlServer.2005.MS SqlServer.2005
+--  SqlServer.2005.MS SqlServer.2005
 
 IF EXISTS (SELECT * FROM sys.objects WHERE name = 'Name.Test')
 BEGIN DROP TABLE [Name.Test] END
 
 BeforeExecute
--- SqlServer.2005.MS SqlServer.2005
+--  SqlServer.2005.MS SqlServer.2005
 
 CREATE TABLE [Name.Test]
 (
@@ -927,13 +927,13 @@ CREATE TABLE [Name.Test]
 )
 
 BeforeExecute
--- SqlServer.2005.MS SqlServer.2005
+--  SqlServer.2005.MS SqlServer.2005
 
 IF EXISTS (SELECT * FROM sys.objects WHERE name = 'GuidID')
 BEGIN DROP TABLE [GuidID] END
 
 BeforeExecute
--- SqlServer.2005.MS SqlServer.2005
+--  SqlServer.2005.MS SqlServer.2005
 
 CREATE TABLE [GuidID]
 (
@@ -942,13 +942,13 @@ CREATE TABLE [GuidID]
 )
 
 BeforeExecute
--- SqlServer.2005.MS SqlServer.2005
+--  SqlServer.2005.MS SqlServer.2005
 
 IF EXISTS (SELECT * FROM sys.objects WHERE name = 'GuidID2')
 BEGIN DROP TABLE [GuidID2] END
 
 BeforeExecute
--- SqlServer.2005.MS SqlServer.2005
+--  SqlServer.2005.MS SqlServer.2005
 
 CREATE TABLE [GuidID2]
 (
@@ -956,13 +956,13 @@ CREATE TABLE [GuidID2]
 )
 
 BeforeExecute
--- SqlServer.2005.MS SqlServer.2005
+--  SqlServer.2005.MS SqlServer.2005
 
 IF EXISTS (SELECT * FROM sys.objects WHERE name = 'DecimalOverflow')
 BEGIN DROP TABLE [DecimalOverflow] END
 
 BeforeExecute
--- SqlServer.2005.MS SqlServer.2005
+--  SqlServer.2005.MS SqlServer.2005
 
 CREATE TABLE [DecimalOverflow]
 (
@@ -974,7 +974,7 @@ CREATE TABLE [DecimalOverflow]
 )
 
 BeforeExecute
--- SqlServer.2005.MS SqlServer.2005
+--  SqlServer.2005.MS SqlServer.2005
 
 INSERT INTO [DecimalOverflow]
 SELECT  123456789012345.12345678901234567890,  1234567890123456789.91,  12.345678901234512345678901234567890,  1234567890123456789,  .12345678901234512345678901234567890 UNION ALL
@@ -987,26 +987,26 @@ SELECT  12345678901234.5678901234567,                            NULL,          
 SELECT -12345678901234.5678901234567,                            NULL,                                  NULL,                 NULL,                                  NULL
 
 BeforeExecute
--- SqlServer.2005.MS SqlServer.2005
+--  SqlServer.2005.MS SqlServer.2005
 
 -- merge test tables
 IF EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID('TestMerge1') AND type in (N'U'))
 BEGIN DROP TABLE TestMerge1 END
 
 BeforeExecute
--- SqlServer.2005.MS SqlServer.2005
+--  SqlServer.2005.MS SqlServer.2005
 
 IF EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID('TestMerge2') AND type in (N'U'))
 BEGIN DROP TABLE TestMerge2 END
 
 BeforeExecute
--- SqlServer.2005.MS SqlServer.2005
+--  SqlServer.2005.MS SqlServer.2005
 
 IF EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID('TestMergeIdentity') AND type in (N'U'))
 BEGIN DROP TABLE TestMergeIdentity END
 
 BeforeExecute
--- SqlServer.2005.MS SqlServer.2005
+--  SqlServer.2005.MS SqlServer.2005
 
 CREATE TABLE TestMerge1
 (
@@ -1040,7 +1040,7 @@ CREATE TABLE TestMerge1
 )
 
 BeforeExecute
--- SqlServer.2005.MS SqlServer.2005
+--  SqlServer.2005.MS SqlServer.2005
 
 CREATE TABLE TestMerge2
 (
@@ -1074,7 +1074,7 @@ CREATE TABLE TestMerge2
 )
 
 BeforeExecute
--- SqlServer.2005.MS SqlServer.2005
+--  SqlServer.2005.MS SqlServer.2005
 
 CREATE TABLE TestMergeIdentity
 (
@@ -1083,26 +1083,26 @@ CREATE TABLE TestMergeIdentity
 )
 
 BeforeExecute
--- SqlServer.2005.MS SqlServer.2005
+--  SqlServer.2005.MS SqlServer.2005
 
 -- Generate schema
 IF EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID('TestSchemaY') AND type in (N'U'))
 BEGIN DROP TABLE TestSchemaY END
 
 BeforeExecute
--- SqlServer.2005.MS SqlServer.2005
+--  SqlServer.2005.MS SqlServer.2005
 
 IF EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID('TestSchemaX') AND type in (N'U'))
 BEGIN DROP TABLE TestSchemaX END
 
 BeforeExecute
--- SqlServer.2005.MS SqlServer.2005
+--  SqlServer.2005.MS SqlServer.2005
 
 IF EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID('TestSchema.TestSchemaB') AND type in (N'U'))
 BEGIN DROP TABLE TestSchema.TestSchemaB END
 
 BeforeExecute
--- SqlServer.2005.MS SqlServer.2005
+--  SqlServer.2005.MS SqlServer.2005
 
 IF EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID('TestSchema.TestSchemaA') AND type in (N'U'))
 BEGIN
@@ -1110,7 +1110,7 @@ BEGIN
 END
 
 BeforeExecute
--- SqlServer.2005.MS SqlServer.2005
+--  SqlServer.2005.MS SqlServer.2005
 
 IF EXISTS (SELECT  SCHEMA_NAME FROM    INFORMATION_SCHEMA.SCHEMATA WHERE   SCHEMA_NAME = 'TestSchema')
 BEGIN
@@ -1118,7 +1118,7 @@ BEGIN
 END
 
 BeforeExecute
--- SqlServer.2005.MS SqlServer.2005
+--  SqlServer.2005.MS SqlServer.2005
 
 EXEC('CREATE SCHEMA [TestSchema] AUTHORIZATION [dbo]');
 
@@ -1129,7 +1129,7 @@ CREATE TABLE [dbo].[TestSchemaX]
 );
 
 BeforeExecute
--- SqlServer.2005.MS SqlServer.2005
+--  SqlServer.2005.MS SqlServer.2005
 
 CREATE TABLE [dbo].[TestSchemaY]
 (
@@ -1142,7 +1142,7 @@ CREATE TABLE [dbo].[TestSchemaY]
 );
 
 BeforeExecute
--- SqlServer.2005.MS SqlServer.2005
+--  SqlServer.2005.MS SqlServer.2005
 
 CREATE TABLE [TestSchema].[TestSchemaA]
 (
@@ -1151,7 +1151,7 @@ CREATE TABLE [TestSchema].[TestSchemaA]
 );
 
 BeforeExecute
--- SqlServer.2005.MS SqlServer.2005
+--  SqlServer.2005.MS SqlServer.2005
 
 CREATE TABLE [TestSchema].[TestSchemaB]
 (
@@ -1166,13 +1166,13 @@ CREATE TABLE [TestSchema].[TestSchemaB]
 );
 
 BeforeExecute
--- SqlServer.2005.MS SqlServer.2005
+--  SqlServer.2005.MS SqlServer.2005
 
 IF EXISTS (SELECT * FROM sys.objects WHERE type = 'P' AND name = 'AddIssue792Record')
 	DROP Procedure AddIssue792Record
 
 BeforeExecute
--- SqlServer.2005.MS SqlServer.2005
+--  SqlServer.2005.MS SqlServer.2005
 
 CREATE Procedure AddIssue792Record
 AS
@@ -1181,18 +1181,18 @@ BEGIN
 END
 
 BeforeExecute
--- SqlServer.2005.MS SqlServer.2005
+--  SqlServer.2005.MS SqlServer.2005
 
 GRANT EXEC ON AddIssue792Record TO PUBLIC
 
 BeforeExecute
--- SqlServer.2005.MS SqlServer.2005
+--  SqlServer.2005.MS SqlServer.2005
 
 IF EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID('Issue1144') AND type in (N'U'))
 BEGIN DROP TABLE Issue1144 END
 
 BeforeExecute
--- SqlServer.2005.MS SqlServer.2005
+--  SqlServer.2005.MS SqlServer.2005
 
 CREATE TABLE Issue1144
 (
@@ -1201,13 +1201,13 @@ CREATE TABLE Issue1144
 )
 
 BeforeExecute
--- SqlServer.2005.MS SqlServer.2005
+--  SqlServer.2005.MS SqlServer.2005
 
 EXEC sys.sp_addextendedproperty @name=N'MS_Description', @value=N'Column description' , @level0type=N'SCHEMA',@level0name=N'dbo', @level1type=N'TABLE',@level1name=N'Issue1144', @level2type=N'COLUMN',@level2name=N'id'
 EXEC sys.sp_addextendedproperty @name=N'MS_Description', @value=N'Index description' , @level0type=N'SCHEMA',@level0name=N'dbo', @level1type=N'TABLE',@level1name=N'Issue1144', @level2type=N'INDEX',@level2name=N'PK_Issue1144'
 
 BeforeExecute
--- SqlServer.2005.MS SqlServer.2005
+--  SqlServer.2005.MS SqlServer.2005
 
 CREATE TABLE dbo.SameTableName
 (
@@ -1215,7 +1215,7 @@ CREATE TABLE dbo.SameTableName
 )
 
 BeforeExecute
--- SqlServer.2005.MS SqlServer.2005
+--  SqlServer.2005.MS SqlServer.2005
 
 CREATE TABLE dbo.TestSchema_SameTableName
 (
@@ -1223,7 +1223,7 @@ CREATE TABLE dbo.TestSchema_SameTableName
 )
 
 BeforeExecute
--- SqlServer.2005.MS SqlServer.2005
+--  SqlServer.2005.MS SqlServer.2005
 
 CREATE TABLE TestSchema.SameTableName
 (
@@ -1231,7 +1231,7 @@ CREATE TABLE TestSchema.SameTableName
 )
 
 BeforeExecute
--- SqlServer.2005.MS SqlServer.2005
+--  SqlServer.2005.MS SqlServer.2005
 
 CREATE PROCEDURE TestSchema.TestProcedure
 AS
@@ -1240,7 +1240,7 @@ BEGIN
 END
 
 BeforeExecute
--- SqlServer.2005.MS SqlServer.2005
+--  SqlServer.2005.MS SqlServer.2005
 
 CREATE FUNCTION TestSchema.SchemaTableFunction(@id int)
 RETURNS TABLE
@@ -1251,7 +1251,7 @@ RETURN
 )
 
 BeforeExecute
--- SqlServer.2005.MS SqlServer.2005
+--  SqlServer.2005.MS SqlServer.2005
 
 -- PersonSearch
 
@@ -1259,7 +1259,7 @@ IF EXISTS (SELECT * FROM sys.objects WHERE type = 'P' AND name = 'PersonSearch')
 BEGIN DROP Procedure PersonSearch END
 
 BeforeExecute
--- SqlServer.2005.MS SqlServer.2005
+--  SqlServer.2005.MS SqlServer.2005
 
 CREATE PROCEDURE PersonSearch
 	@nameFilter	nvarchar(512)
@@ -1314,13 +1314,13 @@ BEGIN
 END
 
 BeforeExecute
--- SqlServer.2005.MS SqlServer.2005
+--  SqlServer.2005.MS SqlServer.2005
 
 IF EXISTS (SELECT * FROM sys.objects WHERE type = 'P' AND name = 'Issue1897')
 BEGIN DROP Procedure Issue1897 END
 
 BeforeExecute
--- SqlServer.2005.MS SqlServer.2005
+--  SqlServer.2005.MS SqlServer.2005
 
 CREATE PROCEDURE dbo.Issue1897
 AS
@@ -1329,13 +1329,13 @@ BEGIN
 END
 
 BeforeExecute
--- SqlServer.2005.MS SqlServer.2005
+--  SqlServer.2005.MS SqlServer.2005
 
 IF EXISTS (SELECT * FROM sys.objects WHERE type = 'TF' AND name = 'Issue1921')
 BEGIN DROP FUNCTION Issue1921 END
 
 BeforeExecute
--- SqlServer.2005.MS SqlServer.2005
+--  SqlServer.2005.MS SqlServer.2005
 
 CREATE FUNCTION dbo.Issue1921()
 RETURNS @table table (name sysname, objid    int)
@@ -1347,13 +1347,13 @@ RETURN
 END
 
 BeforeExecute
--- SqlServer.2005.MS SqlServer.2005
+--  SqlServer.2005.MS SqlServer.2005
 
 IF EXISTS (SELECT * FROM sys.objects WHERE type = 'P' AND name = 'QueryProcParameters')
 BEGIN DROP Procedure QueryProcParameters END
 
 BeforeExecute
--- SqlServer.2005.MS SqlServer.2005
+--  SqlServer.2005.MS SqlServer.2005
 
 CREATE Procedure QueryProcParameters
 	@input          int,
@@ -1366,13 +1366,13 @@ SELECT * FROM Person
 SET @output2 = @input + 2
 
 BeforeExecute
--- SqlServer.2005.MS SqlServer.2005
+--  SqlServer.2005.MS SqlServer.2005
 
 IF EXISTS (SELECT * FROM sys.objects WHERE type = 'P' AND name = 'QueryProcMultipleParameters')
 BEGIN DROP Procedure QueryProcMultipleParameters END
 
 BeforeExecute
--- SqlServer.2005.MS SqlServer.2005
+--  SqlServer.2005.MS SqlServer.2005
 
 CREATE Procedure QueryProcMultipleParameters
 	@input   int,
@@ -1388,13 +1388,13 @@ SELECT * FROM Doctor
 SET @output3 = @input + 3
 
 BeforeExecute
--- SqlServer.2005.MS SqlServer.2005
+--  SqlServer.2005.MS SqlServer.2005
 
 IF EXISTS (SELECT * FROM sys.objects WHERE type = 'P' AND name = 'ExecuteProcIntParameters')
 BEGIN DROP Procedure ExecuteProcIntParameters END
 
 BeforeExecute
--- SqlServer.2005.MS SqlServer.2005
+--  SqlServer.2005.MS SqlServer.2005
 
 CREATE Procedure ExecuteProcIntParameters
 	@input          int,
@@ -1405,13 +1405,13 @@ SET @output = @input + 1
 UPDATE Person SET FirstName = N'John' WHERE FirstName = N'John'
 
 BeforeExecute
--- SqlServer.2005.MS SqlServer.2005
+--  SqlServer.2005.MS SqlServer.2005
 
 IF EXISTS (SELECT * FROM sys.objects WHERE type = 'P' AND name = 'ExecuteProcStringParameters')
 BEGIN DROP Procedure ExecuteProcStringParameters END
 
 BeforeExecute
--- SqlServer.2005.MS SqlServer.2005
+--  SqlServer.2005.MS SqlServer.2005
 
 CREATE Procedure ExecuteProcStringParameters
 	@input          int,
@@ -1422,7 +1422,7 @@ SET @output = @input + 1
 SELECT N'издрасте'
 
 BeforeExecute
--- SqlServer.2005.MS SqlServer.2005
+--  SqlServer.2005.MS SqlServer.2005
 
 -- ScalarFunction function
 IF EXISTS (SELECT * FROM sys.objects WHERE type = 'FN' AND name = 'ScalarFunction')
@@ -1430,7 +1430,7 @@ BEGIN DROP FUNCTION ScalarFunction
 END
 
 BeforeExecute
--- SqlServer.2005.MS SqlServer.2005
+--  SqlServer.2005.MS SqlServer.2005
 
 CREATE FUNCTION ScalarFunction(@value INT)
 RETURNS INT
@@ -1440,7 +1440,7 @@ BEGIN
 END
 
 BeforeExecute
--- SqlServer.2005.MS SqlServer.2005
+--  SqlServer.2005.MS SqlServer.2005
 
 EXEC sys.sp_addextendedproperty @name=N'MS_Description', @value=N'This is <test> procedure!', @level0type=N'SCHEMA', @level0name=N'dbo',  @level1type=N'PROCEDURE', @level1name=N'ExecuteProcStringParameters'
 EXEC sys.sp_addextendedproperty @name=N'MS_Description', @value=N'This is <test> procedure parameter!', @level0type=N'SCHEMA', @level0name=N'dbo',  @level1type=N'PROCEDURE', @level1name=N'ExecuteProcStringParameters', @level2type=N'PARAMETER', @level2name=N'@input'
@@ -1450,14 +1450,14 @@ EXEC sys.sp_addextendedproperty @name=N'MS_Description', @value=N'This is <test>
 EXEC sys.sp_addextendedproperty @name=N'MS_Description', @value=N'This is <test> scalar function parameter!', @level0type=N'SCHEMA', @level0name=N'dbo',  @level1type=N'FUNCTION', @level1name=N'ScalarFunction', @level2type=N'PARAMETER', @level2name=N'@value'
 
 BeforeExecute
--- SqlServer.2005.MS SqlServer.2005
+--  SqlServer.2005.MS SqlServer.2005
 
 -- test T4 name conflict
 IF EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID('dbo.DataType') AND type in (N'U'))
 BEGIN DROP TABLE dbo.DataType END
 
 BeforeExecute
--- SqlServer.2005.MS SqlServer.2005
+--  SqlServer.2005.MS SqlServer.2005
 
 CREATE TABLE DataType
 (
@@ -1465,12 +1465,12 @@ CREATE TABLE DataType
 )
 
 BeforeExecute
--- SqlServer.2005.MS SqlServer.2005
+--  SqlServer.2005.MS SqlServer.2005
 
 DROP TABLE CollatedTable
 
 BeforeExecute
--- SqlServer.2005.MS SqlServer.2005
+--  SqlServer.2005.MS SqlServer.2005
 
 CREATE TABLE CollatedTable
 (
@@ -1480,22 +1480,22 @@ CREATE TABLE CollatedTable
 )
 
 BeforeExecute
--- SqlServer.2005.MS SqlServer.2005
+--  SqlServer.2005.MS SqlServer.2005
 
 -- one-to-one (by primary key) relation for scaffold testing
 
 BeforeExecute
--- SqlServer.2005.MS SqlServer.2005
+--  SqlServer.2005.MS SqlServer.2005
 
 DROP TABLE Provider
 
 BeforeExecute
--- SqlServer.2005.MS SqlServer.2005
+--  SqlServer.2005.MS SqlServer.2005
 
 DROP TABLE Member
 
 BeforeExecute
--- SqlServer.2005.MS SqlServer.2005
+--  SqlServer.2005.MS SqlServer.2005
 
 CREATE TABLE Member(
 	MemberId INT IDENTITY(1,1) NOT NULL,
@@ -1504,7 +1504,7 @@ CREATE TABLE Member(
 )
 
 BeforeExecute
--- SqlServer.2005.MS SqlServer.2005
+--  SqlServer.2005.MS SqlServer.2005
 
 CREATE TABLE Provider(
 	ProviderId INT           NOT NULL,
@@ -1513,7 +1513,7 @@ CREATE TABLE Provider(
 )
 
 BeforeExecute
--- SqlServer.2005.MS SqlServer.2005
+--  SqlServer.2005.MS SqlServer.2005
 
 ALTER TABLE Provider WITH CHECK ADD CONSTRAINT FK_Provider_Member FOREIGN KEY(ProviderId) REFERENCES Member (MemberId)
 

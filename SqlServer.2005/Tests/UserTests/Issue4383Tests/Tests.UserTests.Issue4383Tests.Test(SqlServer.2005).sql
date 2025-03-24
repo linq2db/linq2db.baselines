@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 BeginTransaction(RepeatableRead)
 BeforeExecute
--- SqlServer.2005
+--  SqlServer.2005
 
 SELECT
 	[m_1].[Id],
@@ -25,7 +25,7 @@ FROM
 		INNER JOIN [CHAINPOINTS] [d_1] ON [m_1].[Id] = [d_1].[CHAIN_ID]
 
 BeforeExecute
--- SqlServer.2005
+--  SqlServer.2005
 
 SELECT
 	[m_1].[LINE_ID],
@@ -43,7 +43,7 @@ ORDER BY
 BeforeExecute
 DisposeTransaction
 BeforeExecute
--- SqlServer.2005
+--  SqlServer.2005
 
 SELECT
 	[t1].[LINE_ID],

@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 BeginTransaction
 BeforeExecute
--- SqlServer.2005.MS SqlServer.2005 (asynchronously)
+--  SqlServer.2005.MS SqlServer.2005 (asynchronously)
 
 SELECT
 	[m_1].[ParentID],
@@ -19,7 +19,7 @@ FROM
 		INNER JOIN [Child] [d] ON [m_1].[ParentID] = [d].[ParentID]
 
 BeforeExecute
--- SqlServer.2005.MS SqlServer.2005 (asynchronously)
+--  SqlServer.2005.MS SqlServer.2005 (asynchronously)
 
 SELECT TOP (1)
 	[x].[ParentID],
@@ -34,7 +34,7 @@ DisposeTransaction
 BeforeExecute
 BeginTransaction
 BeforeExecute
--- SqlServer.2005.MS SqlServer.2005 (asynchronously)
+--  SqlServer.2005.MS SqlServer.2005 (asynchronously)
 
 SELECT
 	[m_1].[ParentID],
@@ -52,7 +52,7 @@ FROM
 		INNER JOIN [Child] [d] ON [m_1].[ParentID] = [d].[ParentID]
 
 BeforeExecute
--- SqlServer.2005.MS SqlServer.2005 (asynchronously)
+--  SqlServer.2005.MS SqlServer.2005 (asynchronously)
 
 SELECT TOP (1)
 	[x].[ParentID],

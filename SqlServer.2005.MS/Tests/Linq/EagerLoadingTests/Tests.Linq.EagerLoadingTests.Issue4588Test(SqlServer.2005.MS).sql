@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 BeginTransaction(RepeatableRead)
 BeforeExecute
--- SqlServer.2005.MS SqlServer.2005
+--  SqlServer.2005.MS SqlServer.2005
 DECLARE @skip Int -- Int32
 SET     @skip = 100
 DECLARE @take Int -- Int32
@@ -47,7 +47,7 @@ FROM
 		INNER JOIN [SubOrderDetail] [d_1] ON [m_1].[Id] = [d_1].[SubOrderId]
 
 BeforeExecute
--- SqlServer.2005.MS SqlServer.2005
+--  SqlServer.2005.MS SqlServer.2005
 DECLARE @skip Int -- Int32
 SET     @skip = 100
 DECLARE @take Int -- Int32
@@ -84,7 +84,7 @@ FROM
 BeforeExecute
 DisposeTransaction
 BeforeExecute
--- SqlServer.2005.MS SqlServer.2005
+--  SqlServer.2005.MS SqlServer.2005
 DECLARE @skip Int -- Int32
 SET     @skip = 100
 DECLARE @take Int -- Int32

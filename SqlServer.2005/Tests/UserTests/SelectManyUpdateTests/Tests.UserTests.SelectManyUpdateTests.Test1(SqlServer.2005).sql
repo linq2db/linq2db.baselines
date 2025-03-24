@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2005
+--  SqlServer.2005
 DECLARE @Value1 Int -- Int32
 SET     @Value1 = NULL
 

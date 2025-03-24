@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2005
+--  SqlServer.2005
 
 SELECT
 	CASE
@@ -20,7 +20,7 @@ FROM
 	[Parent] [p]
 
 BeforeExecute
--- SqlServer.2005
+--  SqlServer.2005
 
 SELECT
 	[m_1].[ParentID],
@@ -36,7 +36,7 @@ FROM
 		INNER JOIN [Child] [d] ON [m_1].[ParentID] = [d].[ParentID]
 
 BeforeExecute
--- SqlServer.2005
+--  SqlServer.2005
 
 SELECT
 	[t1].[ParentID],

@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2005
+--  SqlServer.2005
 
 SELECT
 	[x].[PersonID] + [y].[item]
@@ -11,7 +11,7 @@ FROM
 			SELECT 3) [y]
 
 BeforeExecute
--- SqlServer.2005
+--  SqlServer.2005
 
 SELECT
 	[t1].[FirstName],

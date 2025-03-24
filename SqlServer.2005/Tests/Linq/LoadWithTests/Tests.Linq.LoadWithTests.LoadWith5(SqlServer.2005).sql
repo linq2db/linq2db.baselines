@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 BeginTransaction(RepeatableRead)
 BeforeExecute
--- SqlServer.2005
+--  SqlServer.2005
 
 SELECT
 	[m_1].[ParentID],
@@ -34,7 +34,7 @@ FROM
 		LEFT JOIN [Parent] [a_Parent] ON [a_Child].[ParentID] = [a_Parent].[ParentID]
 
 BeforeExecute
--- SqlServer.2005
+--  SqlServer.2005
 
 SELECT
 	[m_1].[ParentID],
@@ -52,7 +52,7 @@ FROM
 BeforeExecute
 DisposeTransaction
 BeforeExecute
--- SqlServer.2005
+--  SqlServer.2005
 
 SELECT
 	(

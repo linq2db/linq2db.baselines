@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2005.MS SqlServer.2005
+--  SqlServer.2005.MS SqlServer.2005
 
 CREATE TABLE [tempdb]..[#temp_table1]
 (
@@ -11,7 +11,7 @@ BeforeExecute
 INSERT BULK [tempdb]..[#temp_table1](ID, Value)
 
 BeforeExecute
--- SqlServer.2005.MS SqlServer.2005
+--  SqlServer.2005.MS SqlServer.2005
 
 CREATE TABLE [tempdb]..[#temp_table2]
 (
@@ -20,7 +20,7 @@ CREATE TABLE [tempdb]..[#temp_table2]
 )
 
 BeforeExecute
--- SqlServer.2005.MS SqlServer.2005
+--  SqlServer.2005.MS SqlServer.2005
 
 INSERT INTO [tempdb]..[#temp_table2]
 (
@@ -34,7 +34,7 @@ FROM
 	[tempdb]..[#temp_table1] [t1]
 
 BeforeExecute
--- SqlServer.2005.MS SqlServer.2005
+--  SqlServer.2005.MS SqlServer.2005
 
 SELECT
 	[t1].[ID],
@@ -43,7 +43,7 @@ FROM
 	[tempdb]..[#temp_table1] [t1]
 
 BeforeExecute
--- SqlServer.2005.MS SqlServer.2005
+--  SqlServer.2005.MS SqlServer.2005
 
 SELECT
 	[t1].[ID],
@@ -52,7 +52,7 @@ FROM
 	[tempdb]..[#temp_table2] [t1]
 
 BeforeExecute
--- SqlServer.2005.MS SqlServer.2005
+--  SqlServer.2005.MS SqlServer.2005
 
 INSERT INTO [tempdb]..[#temp_table1]
 (
@@ -62,7 +62,7 @@ INSERT INTO [tempdb]..[#temp_table1]
 SELECT 2,3
 
 BeforeExecute
--- SqlServer.2005.MS SqlServer.2005
+--  SqlServer.2005.MS SqlServer.2005
 DECLARE @ID Int -- Int32
 SET     @ID = 3
 DECLARE @Value Int -- Int32
@@ -83,23 +83,23 @@ BeforeExecute
 INSERT BULK [tempdb]..[#temp_table1](ID, Value)
 
 BeforeExecute
--- SqlServer.2005.MS SqlServer.2005
+--  SqlServer.2005.MS SqlServer.2005
 
 TRUNCATE TABLE [tempdb]..[#temp_table1]
 
 BeforeExecute
--- SqlServer.2005.MS SqlServer.2005
+--  SqlServer.2005.MS SqlServer.2005
 
 TRUNCATE TABLE [tempdb]..[#temp_table2]
 
 BeforeExecute
--- SqlServer.2005.MS SqlServer.2005
+--  SqlServer.2005.MS SqlServer.2005
 
 IF (OBJECT_ID(N'[tempdb]..[#temp_table2]', N'U') IS NOT NULL)
 	DROP TABLE [tempdb]..[#temp_table2]
 
 BeforeExecute
--- SqlServer.2005.MS SqlServer.2005
+--  SqlServer.2005.MS SqlServer.2005
 
 IF (OBJECT_ID(N'[tempdb]..[#temp_table1]', N'U') IS NOT NULL)
 	DROP TABLE [tempdb]..[#temp_table1]

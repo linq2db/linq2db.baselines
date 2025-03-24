@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 BeginTransaction(RepeatableRead)
 BeforeExecute
--- SqlServer.2005
+--  SqlServer.2005
 
 WITH [cte] ([Value2])
 AS
@@ -88,7 +88,7 @@ FROM
 BeforeExecute
 DisposeTransaction
 BeforeExecute
--- SqlServer.2005
+--  SqlServer.2005
 
 WITH [cte] ([Value2])
 AS

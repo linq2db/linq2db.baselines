@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 BeginTransaction(RepeatableRead)
 BeforeExecute
--- SqlServer.2005
+--  SqlServer.2005
 
 SELECT
 	[m_1].[SectorId],
@@ -17,7 +17,7 @@ WHERE
 BeforeExecute
 DisposeTransaction
 BeforeExecute
--- SqlServer.2005
+--  SqlServer.2005
 
 SELECT
 	[x].[SectorId]

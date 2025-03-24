@@ -1,11 +1,11 @@
 ﻿BeforeExecute
--- SqlServer.2005 (asynchronously)
+--  SqlServer.2005 (asynchronously)
 
 IF (OBJECT_ID(N'[tempdb]..[#TempTable]', N'U') IS NOT NULL)
 	DROP TABLE [tempdb]..[#TempTable]
 
 BeforeExecute
--- SqlServer.2005 (asynchronously)
+--  SqlServer.2005 (asynchronously)
 
 IF (OBJECT_ID(N'[tempdb]..[#TempTable]', N'U') IS NULL)
 	CREATE TABLE [tempdb]..[#TempTable]
@@ -17,7 +17,7 @@ BeforeExecute
 INSERT ASYNC BULK [tempdb]..[#TempTable](Name)
 
 BeforeExecute
--- SqlServer.2005 (asynchronously)
+--  SqlServer.2005 (asynchronously)
 
 SELECT
 	[t].[Name]
@@ -26,7 +26,7 @@ FROM
 		INNER JOIN [tempdb]..[#TempTable] [t] ON [p].[FirstName] = [t].[Name]
 
 BeforeExecute
--- SqlServer.2005 (asynchronously)
+--  SqlServer.2005 (asynchronously)
 
 IF (OBJECT_ID(N'[tempdb]..[#TempTable]', N'U') IS NOT NULL)
 	DROP TABLE [tempdb]..[#TempTable]

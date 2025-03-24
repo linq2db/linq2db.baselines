@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2005
+--  SqlServer.2005
 DECLARE @year Int -- Int32
 SET     @year = 2010
 

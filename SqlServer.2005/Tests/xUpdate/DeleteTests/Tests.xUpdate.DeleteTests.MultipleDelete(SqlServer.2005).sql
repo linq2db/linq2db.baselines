@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2005
+--  SqlServer.2005
 
 DELETE [c_1]
 FROM
@@ -11,7 +11,7 @@ BeforeExecute
 INSERT BULK [Parent](ParentID, Value1)
 
 BeforeExecute
--- SqlServer.2005
+--  SqlServer.2005
 
 DELETE [p]
 FROM
@@ -20,7 +20,7 @@ WHERE
 	[p].[ParentID] = 1000 AND [p].[Value1] IS NULL OR [p].[ParentID] = 1001 AND [p].[Value1] IS NULL
 
 BeforeExecute
--- SqlServer.2005
+--  SqlServer.2005
 
 DELETE [c_1]
 FROM

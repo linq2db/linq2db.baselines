@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2005
+--  SqlServer.2005
 
 SELECT
 	DATEPART(Month, CAST('2022-02-22T00:00:00.000' AS DATETIME))

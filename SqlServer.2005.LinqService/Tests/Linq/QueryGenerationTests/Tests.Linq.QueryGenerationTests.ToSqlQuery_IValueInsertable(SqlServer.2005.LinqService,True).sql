@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2005
+--  SqlServer.2005
 
 INSERT INTO [TableWithIdentity]
 (
@@ -11,7 +11,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2005
+--  SqlServer.2005
 
 SELECT TOP (2)
 	[t1].[Id],

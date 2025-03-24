@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2005 (asynchronously)
+--  SqlServer.2005 (asynchronously)
 
 DELETE [p]
 FROM
@@ -8,12 +8,12 @@ WHERE
 	[p].[ID] >= 700
 
 BeforeExecute
--- SqlServer.2005 (asynchronously)
+--  SqlServer.2005 (asynchronously)
 
 SET IDENTITY_INSERT [AllTypes] ON
 
 BeforeExecute
--- SqlServer.2005 (asynchronously)
+--  SqlServer.2005 (asynchronously)
 
 INSERT INTO [AllTypes]
 (
@@ -63,12 +63,12 @@ SELECT 700,1,1.1,1,1,1.1,1.1,1,1,1.1,1.1000000000000001,1.10000002,CAST('2014-12
 SELECT 701,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
 
 BeforeExecute
--- SqlServer.2005 (asynchronously)
+--  SqlServer.2005 (asynchronously)
 
 SET IDENTITY_INSERT [AllTypes] OFF
 
 BeforeExecute
--- SqlServer.2005
+--  SqlServer.2005
 
 SELECT
 	[t].[ID],
@@ -121,7 +121,7 @@ ORDER BY
 	[t].[ID]
 
 BeforeExecute
--- SqlServer.2005 (asynchronously)
+--  SqlServer.2005 (asynchronously)
 
 DELETE [p]
 FROM

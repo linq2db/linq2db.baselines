@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2005
+--  SqlServer.2005
 
 SELECT
 	[it_1].[cond],
@@ -24,7 +24,7 @@ WHERE
 	[it_1].[ColorName] = N'Red'
 
 BeforeExecute
--- SqlServer.2005
+--  SqlServer.2005
 
 SELECT
 	[t1].[Id],

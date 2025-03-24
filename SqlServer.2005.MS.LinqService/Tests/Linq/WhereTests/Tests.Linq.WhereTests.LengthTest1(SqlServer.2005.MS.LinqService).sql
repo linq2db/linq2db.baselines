@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2005.MS SqlServer.2005
+--  SqlServer.2005.MS SqlServer.2005
 
 SELECT
 	[nm].[MiddleName]
@@ -15,7 +15,7 @@ WHERE
 	[nm].[Value_1] <> 0 OR [nm].[Value_1] IS NULL
 
 BeforeExecute
--- SqlServer.2005.MS SqlServer.2005
+--  SqlServer.2005.MS SqlServer.2005
 
 SELECT
 	[t1].[FirstName],

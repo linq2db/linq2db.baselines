@@ -2,7 +2,7 @@
 INSERT BULK [dbo].[LinqDataTypes](ID, MoneyValue, DateTimeValue, BoolValue, GuidValue, BinaryValue, SmallIntValue)
 
 BeforeExecute
--- SqlServer.2005
+--  SqlServer.2005
 
 DELETE [p]
 FROM

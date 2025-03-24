@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2005.MS SqlServer.2005
+--  SqlServer.2005.MS SqlServer.2005
 
 INSERT INTO [Issue4460Table]
 (
@@ -11,7 +11,7 @@ INSERT INTO [Issue4460Table]
 SELECT 1,N'GrandChild',N'Tom',N'Black'
 
 BeforeExecute
--- SqlServer.2005.MS SqlServer.2005
+--  SqlServer.2005.MS SqlServer.2005
 
 SELECT
 	[t1].[Code],

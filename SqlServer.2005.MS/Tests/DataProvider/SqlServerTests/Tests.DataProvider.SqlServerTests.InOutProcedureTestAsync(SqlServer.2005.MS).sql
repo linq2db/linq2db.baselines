@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2005.MS SqlServer.2005
+--  SqlServer.2005.MS SqlServer.2005
 
 SELECT TOP (1)
 	DB_NAME()
@@ -7,7 +7,7 @@ FROM
 	[LinqDataTypes] [t1]
 
 BeforeExecute
--- SqlServer.2005.MS SqlServer.2005 (asynchronously)
+--  SqlServer.2005.MS SqlServer.2005 (asynchronously)
 DECLARE @ID Int -- Int32
 SET     @ID = 1234
 DECLARE @outputID Int -- Int32

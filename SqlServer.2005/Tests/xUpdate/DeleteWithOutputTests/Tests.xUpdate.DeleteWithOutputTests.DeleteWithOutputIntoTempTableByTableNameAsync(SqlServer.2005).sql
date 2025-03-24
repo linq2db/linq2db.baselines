@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2005
+--  SqlServer.2005
 
 CREATE TABLE [tempdb]..[#TableWithData_target]
 (
@@ -9,7 +9,7 @@ CREATE TABLE [tempdb]..[#TableWithData_target]
 )
 
 BeforeExecute
--- SqlServer.2005
+--  SqlServer.2005
 
 SELECT
 	[s].[Id],
@@ -21,7 +21,7 @@ WHERE
 	[s].[Id] > 3
 
 BeforeExecute
--- SqlServer.2005 (asynchronously)
+--  SqlServer.2005 (asynchronously)
 
 DELETE [s]
 OUTPUT
@@ -40,7 +40,7 @@ WHERE
 	[s].[Id] > 3
 
 BeforeExecute
--- SqlServer.2005
+--  SqlServer.2005
 
 SELECT
 	[t1].[Id],
@@ -50,7 +50,7 @@ FROM
 	[tempdb]..[#TableWithData_target] [t1]
 
 BeforeExecute
--- SqlServer.2005
+--  SqlServer.2005
 
 IF (OBJECT_ID(N'[tempdb]..[#TableWithData_target]', N'U') IS NOT NULL)
 	DROP TABLE [tempdb]..[#TableWithData_target]

@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2005
+--  SqlServer.2005
 DECLARE @Column Bit -- Boolean
 SET     @Column = 0
 DECLARE @ColumnNullable Bit -- Boolean
@@ -15,7 +15,7 @@ WHERE
 	[r].[Column] = @Column AND [r].[ColumnNullable] = @ColumnNullable
 
 BeforeExecute
--- SqlServer.2005
+--  SqlServer.2005
 
 SELECT
 	[r].[Id],
@@ -27,14 +27,14 @@ WHERE
 	[r].[Column] = 0 AND [r].[ColumnNullable] = 1
 
 BeforeExecute
--- SqlServer.2005
+--  SqlServer.2005
 
 DELETE [t1]
 FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- SqlServer.2005
+--  SqlServer.2005
 DECLARE @Id Int -- Int32
 SET     @Id = 1
 DECLARE @Column Bit -- Boolean
@@ -56,7 +56,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2005
+--  SqlServer.2005
 DECLARE @Id Int -- Int32
 SET     @Id = 2
 DECLARE @Column Bit -- Boolean
@@ -78,7 +78,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2005
+--  SqlServer.2005
 
 SELECT
 	[t1].[Id],
@@ -90,14 +90,14 @@ ORDER BY
 	[t1].[Id]
 
 BeforeExecute
--- SqlServer.2005
+--  SqlServer.2005
 
 DELETE [t1]
 FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- SqlServer.2005
+--  SqlServer.2005
 
 INSERT INTO [BooleanTable]
 (
@@ -109,7 +109,7 @@ SELECT 1,1,NULL UNION ALL
 SELECT 2,0,1
 
 BeforeExecute
--- SqlServer.2005
+--  SqlServer.2005
 
 SELECT
 	[t1].[Id],
@@ -121,7 +121,7 @@ ORDER BY
 	[t1].[Id]
 
 BeforeExecute
--- SqlServer.2005
+--  SqlServer.2005
 
 DELETE [t1]
 FROM
@@ -131,7 +131,7 @@ BeforeExecute
 INSERT BULK [BooleanTable](Id, Column, ColumnNullable)
 
 BeforeExecute
--- SqlServer.2005
+--  SqlServer.2005
 
 SELECT
 	[t1].[Id],

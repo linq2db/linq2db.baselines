@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2005
+--  SqlServer.2005
 
 SELECT
 	CAST(CAST(DatePart(year, [p].[DateTimeValue]) AS VarChar(11)) + N'-01-01 00:00:00' AS DateTime)

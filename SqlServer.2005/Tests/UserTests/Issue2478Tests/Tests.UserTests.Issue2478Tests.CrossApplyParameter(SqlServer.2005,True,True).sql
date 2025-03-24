@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2005
+--  SqlServer.2005
 
 SELECT
 	[q].[ParentID],
@@ -20,7 +20,7 @@ WHERE
 	[c_2].[Count_1] > 0
 
 BeforeExecute
--- SqlServer.2005
+--  SqlServer.2005
 
 SELECT
 	COUNT(*)

@@ -1,15 +1,15 @@
 ﻿BeforeExecute
--- SqlServer.2005
+--  SqlServer.2005
 
 select @@version
 
 BeforeExecute
--- SqlServer.2005
+--  SqlServer.2005
 
 SELECT compatibility_level FROM sys.databases WHERE name = db_name()
 
 BeforeExecute
--- SqlServer.2005
+--  SqlServer.2005
 
 
 				SELECT
@@ -48,7 +48,7 @@ BeforeExecute
 					) IS NULL
 
 BeforeExecute
--- SqlServer.2005
+--  SqlServer.2005
 
 
 				SELECT
@@ -68,7 +68,7 @@ BeforeExecute
 					c.CONSTRAINT_TYPE='PRIMARY KEY'
 
 BeforeExecute
--- SqlServer.2005
+--  SqlServer.2005
 
 
 				SELECT
@@ -99,7 +99,7 @@ BeforeExecute
 						x.name = 'MS_Description' AND x.class = 1
 
 BeforeExecute
--- SqlServer.2005
+--  SqlServer.2005
 
 
 				SELECT
@@ -120,7 +120,7 @@ BeforeExecute
 					Ordinal
 
 BeforeExecute
--- SqlServer.2005
+--  SqlServer.2005
 
 SELECT
 					SPECIFIC_CATALOG COLLATE DATABASE_DEFAULT + '.' + SPECIFIC_SCHEMA + '.' + SPECIFIC_NAME as ProcedureID,
@@ -141,7 +141,7 @@ SELECT
 				ORDER BY SPECIFIC_CATALOG, SPECIFIC_SCHEMA, SPECIFIC_NAME
 
 BeforeExecute
--- SqlServer.2005
+--  SqlServer.2005
 
 SELECT
 					SPECIFIC_CATALOG COLLATE DATABASE_DEFAULT + '.' + SPECIFIC_SCHEMA + '.' + SPECIFIC_NAME as ProcedureID,
@@ -170,17 +170,17 @@ SELECT
 BeforeExecute
 BeginTransaction
 BeforeExecute
--- SqlServer.2005
+--  SqlServer.2005
 
 [TestData].[dbo].[AddIssue792Record]
 
 BeforeExecute
--- SqlServer.2005
+--  SqlServer.2005
 
 [TestData].[dbo].[DuplicateColumnNames]
 
 BeforeExecute
--- SqlServer.2005
+--  SqlServer.2005
 DECLARE @input Int -- Int32
 SET     @input = 0
 DECLARE @output Int -- Int32
@@ -189,7 +189,7 @@ SET     @output = 0
 [TestData].[dbo].[ExecuteProcIntParameters]
 
 BeforeExecute
--- SqlServer.2005
+--  SqlServer.2005
 DECLARE @input Int -- Int32
 SET     @input = 0
 DECLARE @output Int -- Int32
@@ -198,22 +198,22 @@ SET     @output = 0
 [TestData].[dbo].[ExecuteProcStringParameters]
 
 BeforeExecute
--- SqlServer.2005
+--  SqlServer.2005
 
 SELECT * FROM [TestData].[dbo].[GetParentByID](NULL)
 
 BeforeExecute
--- SqlServer.2005
+--  SqlServer.2005
 
 [TestData].[dbo].[Issue1897]
 
 BeforeExecute
--- SqlServer.2005
+--  SqlServer.2005
 
 SELECT * FROM [TestData].[dbo].[Issue1921]()
 
 BeforeExecute
--- SqlServer.2005
+--  SqlServer.2005
 DECLARE @str VarChar(50) -- AnsiString
 SET     @str = N''
 DECLARE @outputStr VarChar(50) -- AnsiString
@@ -224,7 +224,7 @@ SET     @inputOutputStr = N''
 [TestData].[dbo].[OutRefEnumTest]
 
 BeforeExecute
--- SqlServer.2005
+--  SqlServer.2005
 DECLARE @ID Int -- Int32
 SET     @ID = 0
 DECLARE @outputID Int -- Int32
@@ -241,12 +241,12 @@ SET     @inputOutputStr = N''
 [TestData].[dbo].[OutRefTest]
 
 BeforeExecute
--- SqlServer.2005
+--  SqlServer.2005
 
 [TestData].[dbo].[Patient_SelectAll]
 
 BeforeExecute
--- SqlServer.2005
+--  SqlServer.2005
 DECLARE @firstName NVarChar(50) -- String
 SET     @firstName = N''
 DECLARE @lastName NVarChar(50) -- String
@@ -255,14 +255,14 @@ SET     @lastName = N''
 [TestData].[dbo].[Patient_SelectByName]
 
 BeforeExecute
--- SqlServer.2005
+--  SqlServer.2005
 DECLARE @PersonID Int -- Int32
 SET     @PersonID = 0
 
 [TestData].[dbo].[Person_Delete]
 
 BeforeExecute
--- SqlServer.2005
+--  SqlServer.2005
 DECLARE @FirstName NVarChar(50) -- String
 SET     @FirstName = N''
 DECLARE @LastName NVarChar(50) -- String
@@ -275,7 +275,7 @@ SET     @Gender = char(0)
 [TestData].[dbo].[Person_Insert]
 
 BeforeExecute
--- SqlServer.2005
+--  SqlServer.2005
 DECLARE @FirstName NVarChar(50) -- String
 SET     @FirstName = N''
 DECLARE @LastName NVarChar(50) -- String
@@ -290,26 +290,26 @@ SET     @PersonID = 0
 [TestData].[dbo].[Person_Insert_OutputParameter]
 
 BeforeExecute
--- SqlServer.2005
+--  SqlServer.2005
 
 [TestData].[dbo].[Person_SelectAll]
 
 BeforeExecute
--- SqlServer.2005
+--  SqlServer.2005
 DECLARE @id Int -- Int32
 SET     @id = 0
 
 [TestData].[dbo].[Person_SelectByKey]
 
 BeforeExecute
--- SqlServer.2005
+--  SqlServer.2005
 DECLARE @id Int -- Int32
 SET     @id = 0
 
 [TestData].[dbo].[Person_SelectByKeyLowercase]
 
 BeforeExecute
--- SqlServer.2005
+--  SqlServer.2005
 DECLARE @firstName NVarChar(50) -- String
 SET     @firstName = N''
 DECLARE @lastName NVarChar(50) -- String
@@ -318,7 +318,7 @@ SET     @lastName = N''
 [TestData].[dbo].[Person_SelectByName]
 
 BeforeExecute
--- SqlServer.2005
+--  SqlServer.2005
 DECLARE @firstName NVarChar(50) -- String
 SET     @firstName = N''
 DECLARE @lastName NVarChar(50) -- String
@@ -327,7 +327,7 @@ SET     @lastName = N''
 [TestData].[dbo].[Person_SelectListByName]
 
 BeforeExecute
--- SqlServer.2005
+--  SqlServer.2005
 DECLARE @PersonID Int -- Int32
 SET     @PersonID = 0
 DECLARE @FirstName NVarChar(50) -- String
@@ -342,14 +342,14 @@ SET     @Gender = char(0)
 [TestData].[dbo].[Person_Update]
 
 BeforeExecute
--- SqlServer.2005
+--  SqlServer.2005
 DECLARE @nameFilter NVarChar(512) -- String
 SET     @nameFilter = N''
 
 [TestData].[dbo].[PersonSearch]
 
 BeforeExecute
--- SqlServer.2005
+--  SqlServer.2005
 DECLARE @input Int -- Int32
 SET     @input = 0
 DECLARE @output1 Int -- Int32
@@ -362,7 +362,7 @@ SET     @output3 = 0
 [TestData].[dbo].[QueryProcMultipleParameters]
 
 BeforeExecute
--- SqlServer.2005
+--  SqlServer.2005
 DECLARE @input Int -- Int32
 SET     @input = 0
 DECLARE @output1 Int -- Int32
@@ -373,41 +373,41 @@ SET     @output2 = 0
 [TestData].[dbo].[QueryProcParameters]
 
 BeforeExecute
--- SqlServer.2005
+--  SqlServer.2005
 
 [TestData].[dbo].[SelectImplicitColumn]
 
 BeforeExecute
--- SqlServer.2005
+--  SqlServer.2005
 DECLARE @ReturnFullRow Bit -- Boolean
 SET     @ReturnFullRow = 0
 
 [TestData].[dbo].[VariableResults]
 
 BeforeExecute
--- SqlServer.2005
+--  SqlServer.2005
 
 SELECT * FROM [TestData].[TestSchema].[SchemaTableFunction](NULL)
 
 BeforeExecute
--- SqlServer.2005
+--  SqlServer.2005
 
 [TestData].[TestSchema].[TestProcedure]
 
 BeforeExecute
 RollbackTransaction
 BeforeExecute
--- SqlServer.2005
+--  SqlServer.2005
 
 select @@version
 
 BeforeExecute
--- SqlServer.2005
+--  SqlServer.2005
 
 SELECT compatibility_level FROM sys.databases WHERE name = db_name()
 
 BeforeExecute
--- SqlServer.2005
+--  SqlServer.2005
 
 
 				SELECT
@@ -446,7 +446,7 @@ BeforeExecute
 					) IS NULL
 
 BeforeExecute
--- SqlServer.2005
+--  SqlServer.2005
 
 
 				SELECT
@@ -466,7 +466,7 @@ BeforeExecute
 					c.CONSTRAINT_TYPE='PRIMARY KEY'
 
 BeforeExecute
--- SqlServer.2005
+--  SqlServer.2005
 
 
 				SELECT
@@ -497,7 +497,7 @@ BeforeExecute
 						x.name = 'MS_Description' AND x.class = 1
 
 BeforeExecute
--- SqlServer.2005
+--  SqlServer.2005
 
 
 				SELECT
@@ -518,7 +518,7 @@ BeforeExecute
 					Ordinal
 
 BeforeExecute
--- SqlServer.2005
+--  SqlServer.2005
 
 SELECT
 					SPECIFIC_CATALOG COLLATE DATABASE_DEFAULT + '.' + SPECIFIC_SCHEMA + '.' + SPECIFIC_NAME as ProcedureID,
@@ -539,7 +539,7 @@ SELECT
 				ORDER BY SPECIFIC_CATALOG, SPECIFIC_SCHEMA, SPECIFIC_NAME
 
 BeforeExecute
--- SqlServer.2005
+--  SqlServer.2005
 
 SELECT
 					SPECIFIC_CATALOG COLLATE DATABASE_DEFAULT + '.' + SPECIFIC_SCHEMA + '.' + SPECIFIC_NAME as ProcedureID,
@@ -570,17 +570,17 @@ BeginTransaction
 BeforeExecute
 RollbackTransaction
 BeforeExecute
--- SqlServer.2005
+--  SqlServer.2005
 
 select @@version
 
 BeforeExecute
--- SqlServer.2005
+--  SqlServer.2005
 
 SELECT compatibility_level FROM sys.databases WHERE name = db_name()
 
 BeforeExecute
--- SqlServer.2005
+--  SqlServer.2005
 
 
 				SELECT
@@ -619,7 +619,7 @@ BeforeExecute
 					) IS NULL
 
 BeforeExecute
--- SqlServer.2005
+--  SqlServer.2005
 
 
 				SELECT
@@ -639,7 +639,7 @@ BeforeExecute
 					c.CONSTRAINT_TYPE='PRIMARY KEY'
 
 BeforeExecute
--- SqlServer.2005
+--  SqlServer.2005
 
 
 				SELECT
@@ -670,7 +670,7 @@ BeforeExecute
 						x.name = 'MS_Description' AND x.class = 1
 
 BeforeExecute
--- SqlServer.2005
+--  SqlServer.2005
 
 
 				SELECT
@@ -691,7 +691,7 @@ BeforeExecute
 					Ordinal
 
 BeforeExecute
--- SqlServer.2005
+--  SqlServer.2005
 
 SELECT
 					SPECIFIC_CATALOG COLLATE DATABASE_DEFAULT + '.' + SPECIFIC_SCHEMA + '.' + SPECIFIC_NAME as ProcedureID,
@@ -712,7 +712,7 @@ SELECT
 				ORDER BY SPECIFIC_CATALOG, SPECIFIC_SCHEMA, SPECIFIC_NAME
 
 BeforeExecute
--- SqlServer.2005
+--  SqlServer.2005
 
 SELECT
 					SPECIFIC_CATALOG COLLATE DATABASE_DEFAULT + '.' + SPECIFIC_SCHEMA + '.' + SPECIFIC_NAME as ProcedureID,

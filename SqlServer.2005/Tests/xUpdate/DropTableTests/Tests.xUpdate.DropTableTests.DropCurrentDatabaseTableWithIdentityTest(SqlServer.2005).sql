@@ -1,11 +1,11 @@
 ﻿BeforeExecute
--- SqlServer.2005
+--  SqlServer.2005
 
 IF (OBJECT_ID(N'[DropTableTestID]', N'U') IS NOT NULL)
 	DROP TABLE [DropTableTestID]
 
 BeforeExecute
--- SqlServer.2005
+--  SqlServer.2005
 
 CREATE TABLE [DropTableTestID]
 (
@@ -16,7 +16,7 @@ CREATE TABLE [DropTableTestID]
 )
 
 BeforeExecute
--- SqlServer.2005
+--  SqlServer.2005
 
 INSERT INTO [DropTableTestID]
 (
@@ -28,7 +28,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2005
+--  SqlServer.2005
 
 SELECT
 	[t].[ID],
@@ -37,12 +37,12 @@ FROM
 	[DropTableTestID] [t]
 
 BeforeExecute
--- SqlServer.2005
+--  SqlServer.2005
 
 DROP TABLE [DropTableTestID]
 
 BeforeExecute
--- SqlServer.2005
+--  SqlServer.2005
 
 SELECT
 	[t1].[ID],

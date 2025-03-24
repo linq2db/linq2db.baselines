@@ -1,10 +1,10 @@
 ﻿BeforeExecute
--- SqlServer.2005
+--  SqlServer.2005
 
 DBCC CHECKIDENT ('Person', RESEED, 4)
 
 BeforeExecute
--- SqlServer.2005
+--  SqlServer.2005
 DECLARE @FirstName NVarChar(4000) -- String
 SET     @FirstName = N'John'
 DECLARE @LastName NVarChar(4000) -- String
@@ -32,7 +32,7 @@ VALUES
 SELECT SCOPE_IDENTITY()
 
 BeforeExecute
--- SqlServer.2005
+--  SqlServer.2005
 DECLARE @Diagnosis NVarChar(4000) -- String
 SET     @Diagnosis = N'abc0'
 DECLARE @PersonID Int -- Int32
@@ -62,7 +62,7 @@ BEGIN
 END
 
 BeforeExecute
--- SqlServer.2005
+--  SqlServer.2005
 DECLARE @Diagnosis NVarChar(4000) -- String
 SET     @Diagnosis = N'abc1'
 DECLARE @PersonID Int -- Int32
@@ -92,7 +92,7 @@ BEGIN
 END
 
 BeforeExecute
--- SqlServer.2005
+--  SqlServer.2005
 DECLARE @Diagnosis NVarChar(4000) -- String
 SET     @Diagnosis = N'abc2'
 DECLARE @PersonID Int -- Int32
@@ -122,7 +122,7 @@ BEGIN
 END
 
 BeforeExecute
--- SqlServer.2005
+--  SqlServer.2005
 DECLARE @id Int -- Int32
 SET     @id = 5
 

@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2005
+--  SqlServer.2005
 DECLARE @Column UniqueIdentifier -- Guid
 SET     @Column = 'a948600d-de21-4f74-8ac2-9516b287076e'
 DECLARE @ColumnNullable UniqueIdentifier -- Guid
@@ -15,7 +15,7 @@ WHERE
 	[r].[Column] = @Column AND [r].[ColumnNullable] = @ColumnNullable
 
 BeforeExecute
--- SqlServer.2005
+--  SqlServer.2005
 
 SELECT
 	[r].[Id],
@@ -28,14 +28,14 @@ WHERE
 	[r].[ColumnNullable] = 'bd3973a5-4323-4dd8-9f4f-df9f93e2a627'
 
 BeforeExecute
--- SqlServer.2005
+--  SqlServer.2005
 
 DELETE [t1]
 FROM
 	[GuidTable] [t1]
 
 BeforeExecute
--- SqlServer.2005
+--  SqlServer.2005
 DECLARE @Id Int -- Int32
 SET     @Id = 1
 DECLARE @Column UniqueIdentifier -- Guid
@@ -57,7 +57,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2005
+--  SqlServer.2005
 DECLARE @Id Int -- Int32
 SET     @Id = 2
 DECLARE @Column UniqueIdentifier -- Guid
@@ -79,7 +79,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2005
+--  SqlServer.2005
 
 SELECT
 	[t1].[Id],
@@ -91,14 +91,14 @@ ORDER BY
 	[t1].[Id]
 
 BeforeExecute
--- SqlServer.2005
+--  SqlServer.2005
 
 DELETE [t1]
 FROM
 	[GuidTable] [t1]
 
 BeforeExecute
--- SqlServer.2005
+--  SqlServer.2005
 
 INSERT INTO [GuidTable]
 (
@@ -110,7 +110,7 @@ SELECT 1,'bc7b663d-0fde-4327-8f92-5d8cc3a11d11',NULL UNION ALL
 SELECT 2,'a948600d-de21-4f74-8ac2-9516b287076e','bd3973a5-4323-4dd8-9f4f-df9f93e2a627'
 
 BeforeExecute
--- SqlServer.2005
+--  SqlServer.2005
 
 SELECT
 	[t1].[Id],
@@ -122,7 +122,7 @@ ORDER BY
 	[t1].[Id]
 
 BeforeExecute
--- SqlServer.2005
+--  SqlServer.2005
 
 DELETE [t1]
 FROM
@@ -132,7 +132,7 @@ BeforeExecute
 INSERT BULK [GuidTable](Id, Column, ColumnNullable)
 
 BeforeExecute
--- SqlServer.2005
+--  SqlServer.2005
 
 SELECT
 	[t1].[Id],

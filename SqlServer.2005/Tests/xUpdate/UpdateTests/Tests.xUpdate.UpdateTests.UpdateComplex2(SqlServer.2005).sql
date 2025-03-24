@@ -1,10 +1,10 @@
 ﻿BeforeExecute
--- SqlServer.2005
+--  SqlServer.2005
 
 DBCC CHECKIDENT ('Person', RESEED, 4)
 
 BeforeExecute
--- SqlServer.2005
+--  SqlServer.2005
 DECLARE @Gender NChar(1) -- StringFixedLength
 SET     @Gender = N'M'
 DECLARE @Name_FirstName NVarChar(4000) -- String
@@ -32,7 +32,7 @@ VALUES
 SELECT SCOPE_IDENTITY()
 
 BeforeExecute
--- SqlServer.2005
+--  SqlServer.2005
 
 UPDATE
 	[Person]
@@ -42,7 +42,7 @@ WHERE
 	[Person].[FirstName] LIKE N'UpdateComplex%' ESCAPE N'~'
 
 BeforeExecute
--- SqlServer.2005
+--  SqlServer.2005
 DECLARE @id Int -- Int32
 SET     @id = 5
 

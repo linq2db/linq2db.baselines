@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2005.MS SqlServer.2005
+--  SqlServer.2005.MS SqlServer.2005
 
 INSERT INTO [InheritanceFilter]
 (
@@ -20,7 +20,7 @@ SELECT 5,21,0,25,0,0,15,0 UNION ALL
 SELECT 6,22,0,26,0,0,0,16
 
 BeforeExecute
--- SqlServer.2005.MS SqlServer.2005
+--  SqlServer.2005.MS SqlServer.2005
 
 SELECT
 	[t1].[Code],

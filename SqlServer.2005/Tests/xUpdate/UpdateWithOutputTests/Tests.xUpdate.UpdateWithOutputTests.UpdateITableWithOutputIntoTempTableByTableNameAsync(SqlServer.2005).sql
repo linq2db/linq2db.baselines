@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2005
+--  SqlServer.2005
 
 CREATE TABLE [tempdb]..[#DestinationTable_destination]
 (
@@ -9,7 +9,7 @@ CREATE TABLE [tempdb]..[#DestinationTable_destination]
 )
 
 BeforeExecute
--- SqlServer.2005 (asynchronously)
+--  SqlServer.2005 (asynchronously)
 
 UPDATE
 	[t]
@@ -32,7 +32,7 @@ FROM
 		INNER JOIN [DestinationTable_target] [t] ON [t].[Id] = [s].[Id]
 
 BeforeExecute
--- SqlServer.2005
+--  SqlServer.2005
 
 SELECT
 	[t1].[Id],
@@ -42,7 +42,7 @@ FROM
 	[DestinationTable_target] [t1]
 
 BeforeExecute
--- SqlServer.2005
+--  SqlServer.2005
 
 SELECT
 	[t1].[Id],
@@ -52,7 +52,7 @@ FROM
 	[tempdb]..[#DestinationTable_destination] [t1]
 
 BeforeExecute
--- SqlServer.2005
+--  SqlServer.2005
 
 IF (OBJECT_ID(N'[tempdb]..[#DestinationTable_destination]', N'U') IS NOT NULL)
 	DROP TABLE [tempdb]..[#DestinationTable_destination]

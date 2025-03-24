@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2005.MS SqlServer.2005
+--  SqlServer.2005.MS SqlServer.2005
 
 INSERT INTO [dbo].[LinqDataTypes]
 (
@@ -23,7 +23,7 @@ SELECT 4008,1008,CAST('2001-01-11T01:11:21.100' AS DATETIME),1,'233bf399-9710-4e
 SELECT 4009,1009,CAST('2001-01-11T01:11:21.100' AS DATETIME),1,'233bf399-9710-4e79-873d-2ec7bf1e0009',NULL,9
 
 BeforeExecute
--- SqlServer.2005.MS SqlServer.2005
+--  SqlServer.2005.MS SqlServer.2005
 
 DELETE [p]
 FROM
