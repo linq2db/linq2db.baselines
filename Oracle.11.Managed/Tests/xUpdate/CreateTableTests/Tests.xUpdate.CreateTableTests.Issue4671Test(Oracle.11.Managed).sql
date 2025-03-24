@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Oracle.11.Managed Oracle11
+--  Oracle.11.Managed Oracle11
 
 BEGIN
 	EXECUTE IMMEDIATE '
@@ -20,12 +20,12 @@ EXCEPTION
 END;
 
 BeforeExecute
--- Oracle.11.Managed Oracle11
+--  Oracle.11.Managed Oracle11
 
 CREATE SEQUENCE "SIDENTITY_Issue4671EntityTMP"
 
 BeforeExecute
--- Oracle.11.Managed Oracle11
+--  Oracle.11.Managed Oracle11
 
 CREATE OR REPLACE TRIGGER "TIDENTITY_Issue4671EntityTMP"
 BEFORE INSERT ON "Issue4671EntityTMP" FOR EACH ROW
@@ -34,7 +34,7 @@ BEGIN
 END;
 
 BeforeExecute
--- Oracle.11.Managed Oracle11
+--  Oracle.11.Managed Oracle11
 
 INSERT INTO "Issue4671Entity"
 (
@@ -46,7 +46,7 @@ VALUES
 )
 
 BeforeExecute
--- Oracle.11.Managed Oracle11
+--  Oracle.11.Managed Oracle11
 
 INSERT INTO "Issue4671EntityTMP"
 (
@@ -58,7 +58,7 @@ VALUES
 )
 
 BeforeExecute
--- Oracle.11.Managed Oracle11
+--  Oracle.11.Managed Oracle11
 
 SELECT
 	t1."Id",
@@ -69,7 +69,7 @@ WHERE
 	ROWNUM <= 2
 
 BeforeExecute
--- Oracle.11.Managed Oracle11
+--  Oracle.11.Managed Oracle11
 
 SELECT
 	t1."Id",
@@ -80,7 +80,7 @@ WHERE
 	ROWNUM <= 2
 
 BeforeExecute
--- Oracle.11.Managed Oracle11
+--  Oracle.11.Managed Oracle11
 
 BEGIN
 	BEGIN

@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 BeginTransaction(ReadCommitted)
 BeforeExecute
--- Oracle.11.Managed Oracle11
+--  Oracle.11.Managed Oracle11
 DECLARE @TypedProperty Varchar2(4) -- String
 SET     @TypedProperty = '%de%'
 
@@ -34,7 +34,7 @@ FROM
 BeforeExecute
 DisposeTransaction
 BeforeExecute
--- Oracle.11.Managed Oracle11
+--  Oracle.11.Managed Oracle11
 DECLARE @TypedProperty Varchar2(4) -- String
 SET     @TypedProperty = '%de%'
 

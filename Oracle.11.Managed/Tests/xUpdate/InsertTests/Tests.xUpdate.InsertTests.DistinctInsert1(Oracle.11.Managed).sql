@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 BeginTransaction
 BeforeExecute
--- Oracle.11.Managed Oracle11
+--  Oracle.11.Managed Oracle11
 
 DELETE FROM
 	"LinqDataTypes" c_1
@@ -9,7 +9,7 @@ WHERE
 	c_1.ID > 1000
 
 BeforeExecute
--- Oracle.11.Managed Oracle11
+--  Oracle.11.Managed Oracle11
 
 INSERT INTO "LinqDataTypes"
 (
@@ -30,7 +30,7 @@ FROM
 	) t2
 
 BeforeExecute
--- Oracle.11.Managed Oracle11
+--  Oracle.11.Managed Oracle11
 
 DELETE FROM
 	"LinqDataTypes" c_1

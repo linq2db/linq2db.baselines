@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Oracle.11.Managed Oracle11
+--  Oracle.11.Managed Oracle11
 
 INSERT INTO "CteChild"
 (
@@ -35,7 +35,7 @@ FROM
 		INNER JOIN LAST0 c4_1 ON c4_1."ParentID" = p."ParentID"
 
 BeforeExecute
--- Oracle.11.Managed Oracle11
+--  Oracle.11.Managed Oracle11
 
 SELECT
 	t1."ChildID",
@@ -47,7 +47,7 @@ ORDER BY
 	t1."ParentID"
 
 BeforeExecute
--- Oracle.11.Managed Oracle11
+--  Oracle.11.Managed Oracle11
 
 SELECT
 	c4."ChildID",

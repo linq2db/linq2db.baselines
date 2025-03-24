@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Oracle.11.Managed Oracle11
+--  Oracle.11.Managed Oracle11
 
 SELECT
 	m_1."ParentID",
@@ -21,7 +21,7 @@ FROM
 		) d_1 ON m_1."ParentID" = d_1."Detail"
 
 BeforeExecute
--- Oracle.11.Managed Oracle11
+--  Oracle.11.Managed Oracle11
 
 SELECT
 	p."ParentID"

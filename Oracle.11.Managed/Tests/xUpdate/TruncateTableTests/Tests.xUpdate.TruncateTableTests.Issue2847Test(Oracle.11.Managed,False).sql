@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Oracle.11.Managed Oracle11
+--  Oracle.11.Managed Oracle11
 
 INSERT INTO "TestIdTrun"
 (
@@ -11,12 +11,12 @@ VALUES
 )
 
 BeforeExecute
--- Oracle.11.Managed Oracle11
+--  Oracle.11.Managed Oracle11
 
 DROP SEQUENCE "SIDENTITY_TestIdTrun"
 
 BeforeExecute
--- Oracle.11.Managed Oracle11
+--  Oracle.11.Managed Oracle11
 
 TRUNCATE TABLE "TestIdTrun"
 

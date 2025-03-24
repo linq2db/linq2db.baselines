@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Oracle.11.Managed Oracle11
+--  Oracle.11.Managed Oracle11
 DECLARE @true_value Varchar2 -- String
 SET     @true_value = 'Y'
 

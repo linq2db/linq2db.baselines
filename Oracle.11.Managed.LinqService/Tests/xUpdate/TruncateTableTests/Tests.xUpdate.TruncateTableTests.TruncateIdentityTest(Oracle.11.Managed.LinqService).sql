@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Oracle.11.Managed Oracle11
+--  Oracle.11.Managed Oracle11
 
 BEGIN
 	BEGIN
@@ -29,7 +29,7 @@ BEGIN
 END;
 
 BeforeExecute
--- Oracle.11.Managed Oracle11
+--  Oracle.11.Managed Oracle11
 
 CREATE TABLE "TestIdTrun"
 (
@@ -40,12 +40,12 @@ CREATE TABLE "TestIdTrun"
 )
 
 BeforeExecute
--- Oracle.11.Managed Oracle11
+--  Oracle.11.Managed Oracle11
 
 CREATE SEQUENCE "SIDENTITY_TestIdTrun"
 
 BeforeExecute
--- Oracle.11.Managed Oracle11
+--  Oracle.11.Managed Oracle11
 
 CREATE OR REPLACE TRIGGER "TIDENTITY_TestIdTrun"
 BEFORE INSERT ON "TestIdTrun" FOR EACH ROW
@@ -54,7 +54,7 @@ BEGIN
 END;
 
 BeforeExecute
--- Oracle.11.Managed Oracle11
+--  Oracle.11.Managed Oracle11
 
 INSERT INTO "TestIdTrun"
 (
@@ -66,7 +66,7 @@ VALUES
 )
 
 BeforeExecute
--- Oracle.11.Managed Oracle11
+--  Oracle.11.Managed Oracle11
 
 INSERT INTO "TestIdTrun"
 (
@@ -78,7 +78,7 @@ VALUES
 )
 
 BeforeExecute
--- Oracle.11.Managed Oracle11
+--  Oracle.11.Managed Oracle11
 DECLARE @skip Int32
 SET     @skip = 1
 
@@ -110,12 +110,12 @@ ORDER BY
 	t3.ID
 
 BeforeExecute
--- Oracle.11.Managed Oracle11
+--  Oracle.11.Managed Oracle11
 
 TRUNCATE TABLE "TestIdTrun"
 
 BeforeExecute
--- Oracle.11.Managed Oracle11
+--  Oracle.11.Managed Oracle11
 
 DECLARE
 	l_value number;
@@ -134,7 +134,7 @@ BEGIN
 END;
 
 BeforeExecute
--- Oracle.11.Managed Oracle11
+--  Oracle.11.Managed Oracle11
 
 INSERT INTO "TestIdTrun"
 (
@@ -146,7 +146,7 @@ VALUES
 )
 
 BeforeExecute
--- Oracle.11.Managed Oracle11
+--  Oracle.11.Managed Oracle11
 
 INSERT INTO "TestIdTrun"
 (
@@ -158,7 +158,7 @@ VALUES
 )
 
 BeforeExecute
--- Oracle.11.Managed Oracle11
+--  Oracle.11.Managed Oracle11
 DECLARE @skip Int32
 SET     @skip = 1
 
@@ -190,7 +190,7 @@ ORDER BY
 	t3.ID
 
 BeforeExecute
--- Oracle.11.Managed Oracle11
+--  Oracle.11.Managed Oracle11
 
 BEGIN
 	EXECUTE IMMEDIATE 'DROP TRIGGER "TIDENTITY_TestIdTrun"';

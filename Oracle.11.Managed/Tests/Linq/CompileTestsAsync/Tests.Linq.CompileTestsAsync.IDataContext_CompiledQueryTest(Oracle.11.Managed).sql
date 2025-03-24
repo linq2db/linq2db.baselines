@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Oracle.11.Managed Oracle11 (asynchronously)
+--  Oracle.11.Managed Oracle11 (asynchronously)
 
 SELECT
 	p."FirstName",
@@ -13,7 +13,7 @@ WHERE
 	p."PersonID" = 1
 
 BeforeExecute
--- Oracle.11.Managed Oracle11 (asynchronously)
+--  Oracle.11.Managed Oracle11 (asynchronously)
 
 SELECT
 	p."FirstName",

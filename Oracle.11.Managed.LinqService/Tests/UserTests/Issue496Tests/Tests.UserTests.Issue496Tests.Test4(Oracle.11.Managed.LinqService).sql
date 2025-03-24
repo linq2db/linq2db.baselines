@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Oracle.11.Managed Oracle11
+--  Oracle.11.Managed Oracle11
 
 SELECT
 	m_1."ParentID",
@@ -15,7 +15,7 @@ FROM
 		INNER JOIN "Child" d ON CAST(m_1."ParentID" AS Number(19)) = d."ParentID"
 
 BeforeExecute
--- Oracle.11.Managed Oracle11
+--  Oracle.11.Managed Oracle11
 
 SELECT
 	p."ParentID"

@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 BeginTransaction
 BeforeExecute
--- Oracle.11.Managed Oracle11
+--  Oracle.11.Managed Oracle11
 DECLARE @Name Varchar2(4) -- String
 SET     @Name = 'user'
 DECLARE @IDENTITY_PARAMETER Decimal
@@ -21,7 +21,7 @@ RETURNING
 	"user_id" INTO :IDENTITY_PARAMETER
 
 BeforeExecute
--- Oracle.11.Managed Oracle11
+--  Oracle.11.Managed Oracle11
 DECLARE @ContractSequence Int64
 SET     @ContractSequence = 0
 DECLARE @Id Int64

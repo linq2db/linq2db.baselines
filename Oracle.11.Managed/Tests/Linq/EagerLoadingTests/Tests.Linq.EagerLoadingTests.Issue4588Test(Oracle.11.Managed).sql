@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 BeginTransaction(ReadCommitted)
 BeforeExecute
--- Oracle.11.Managed Oracle11
+--  Oracle.11.Managed Oracle11
 DECLARE @skip Int32
 SET     @skip = 100
 DECLARE @take Int32
@@ -56,7 +56,7 @@ FROM
 		INNER JOIN "SubOrderDetail" d_1 ON m_1."Id" = d_1."SubOrderId"
 
 BeforeExecute
--- Oracle.11.Managed Oracle11
+--  Oracle.11.Managed Oracle11
 DECLARE @skip Int32
 SET     @skip = 100
 DECLARE @take Int32
@@ -102,7 +102,7 @@ FROM
 BeforeExecute
 DisposeTransaction
 BeforeExecute
--- Oracle.11.Managed Oracle11
+--  Oracle.11.Managed Oracle11
 DECLARE @skip Int32
 SET     @skip = 100
 DECLARE @take Int32

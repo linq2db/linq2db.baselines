@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Oracle.11.Managed Oracle11
+--  Oracle.11.Managed Oracle11
 
 SELECT
 	(COUNT(*) || ' items have not been processed, e.g. #' || MIN(s."PersonID")) || '.'

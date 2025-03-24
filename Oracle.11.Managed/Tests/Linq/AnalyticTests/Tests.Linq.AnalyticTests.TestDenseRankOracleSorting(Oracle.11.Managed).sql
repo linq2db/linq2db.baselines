@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Oracle.11.Managed Oracle11
+--  Oracle.11.Managed Oracle11
 
 SELECT
 	DENSE_RANK(1, 2) WITHIN GROUP (ORDER BY p."Value1", c_1."ChildID" DESC)

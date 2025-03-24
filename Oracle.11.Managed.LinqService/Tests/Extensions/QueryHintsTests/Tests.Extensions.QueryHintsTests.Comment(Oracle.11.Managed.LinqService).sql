@@ -12,7 +12,7 @@ FROM
 ----
 
 BeforeExecute
--- Oracle.11.Managed Oracle11
+--  Oracle.11.Managed Oracle11
 
 SELECT
 	p."ParentID",
@@ -35,7 +35,7 @@ FROM
 ---
 
 BeforeExecute
--- Oracle.11.Managed Oracle11
+--  Oracle.11.Managed Oracle11
 
 SELECT
 	p."ParentID",

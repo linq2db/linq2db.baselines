@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Oracle.11.Managed Oracle11
+--  Oracle.11.Managed Oracle11
 
 SELECT /*+ QB_NAME(qb) NO_EXPAND(@qb) */
 	p."ParentID",

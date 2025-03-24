@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Oracle.11.Managed Oracle11 (asynchronously)
+--  Oracle.11.Managed Oracle11 (asynchronously)
 
 CREATE TABLE "ClobEntity"
 (
@@ -9,7 +9,7 @@ CREATE TABLE "ClobEntity"
 )
 
 BeforeExecute
--- Oracle.11.Managed Oracle11 (asynchronously)
+--  Oracle.11.Managed Oracle11 (asynchronously)
 DECLARE @:p1 Clob -- Object
 SET     @:p1 = 'Clob1111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111'
 -- value above truncated for logging
@@ -29,7 +29,7 @@ INSERT ALL
 SELECT * FROM dual
 
 BeforeExecute
--- Oracle.11.Managed Oracle11 (asynchronously)
+--  Oracle.11.Managed Oracle11 (asynchronously)
 
 SELECT
 	t1."Id",
@@ -39,7 +39,7 @@ FROM
 	"ClobEntity" t1
 
 BeforeExecute
--- Oracle.11.Managed Oracle11 (asynchronously)
+--  Oracle.11.Managed Oracle11 (asynchronously)
 
 DROP TABLE "ClobEntity"
 

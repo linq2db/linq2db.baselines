@@ -1,15 +1,15 @@
 ﻿BeforeExecute
--- Oracle.11.Managed Oracle11
+--  Oracle.11.Managed Oracle11
 
 DROP SEQUENCE "PersonSeq"
 
 BeforeExecute
--- Oracle.11.Managed Oracle11
+--  Oracle.11.Managed Oracle11
 
 CREATE SEQUENCE "PersonSeq" MINVALUE 1 START WITH 5
 
 BeforeExecute
--- Oracle.11.Managed Oracle11
+--  Oracle.11.Managed Oracle11
 DECLARE @FirstName Varchar2(4) -- String
 SET     @FirstName = 'John'
 DECLARE @LastName Varchar2(7) -- String
@@ -39,7 +39,7 @@ RETURNING
 	"PersonID" INTO :IDENTITY_PARAMETER
 
 BeforeExecute
--- Oracle.11.Managed Oracle11 (asynchronously)
+--  Oracle.11.Managed Oracle11 (asynchronously)
 DECLARE @id2 Int32
 SET     @id2 = 5
 DECLARE @i Int32
@@ -69,7 +69,7 @@ WHEN NOT MATCHED THEN
 	)
 
 BeforeExecute
--- Oracle.11.Managed Oracle11 (asynchronously)
+--  Oracle.11.Managed Oracle11 (asynchronously)
 DECLARE @id2 Int32
 SET     @id2 = 5
 DECLARE @i Int32
@@ -99,7 +99,7 @@ WHEN NOT MATCHED THEN
 	)
 
 BeforeExecute
--- Oracle.11.Managed Oracle11 (asynchronously)
+--  Oracle.11.Managed Oracle11 (asynchronously)
 DECLARE @id2 Int32
 SET     @id2 = 5
 DECLARE @i Int32
@@ -129,7 +129,7 @@ WHEN NOT MATCHED THEN
 	)
 
 BeforeExecute
--- Oracle.11.Managed Oracle11 (asynchronously)
+--  Oracle.11.Managed Oracle11 (asynchronously)
 DECLARE @id Int32
 SET     @id = 5
 

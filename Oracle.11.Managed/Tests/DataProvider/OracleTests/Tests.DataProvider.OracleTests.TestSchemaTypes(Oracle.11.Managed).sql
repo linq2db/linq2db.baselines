@@ -1,20 +1,20 @@
 ﻿BeforeExecute
--- Oracle.11.Managed Oracle11
+--  Oracle.11.Managed Oracle11
 
 SELECT USER FROM DUAL
 
 BeforeExecute
--- Oracle.11.Managed Oracle11
+--  Oracle.11.Managed Oracle11
 
 SELECT  VERSION from PRODUCT_COMPONENT_VERSION WHERE ROWNUM = 1
 
 BeforeExecute
--- Oracle.11.Managed Oracle11
+--  Oracle.11.Managed Oracle11
 
 select user from dual
 
 BeforeExecute
--- Oracle.11.Managed Oracle11
+--  Oracle.11.Managed Oracle11
 DECLARE @CurrentUser Varchar2(4) -- String
 SET     @CurrentUser = 'TEST'
 
@@ -46,7 +46,7 @@ SET     @CurrentUser = 'TEST'
 					
 
 BeforeExecute
--- Oracle.11.Managed Oracle11
+--  Oracle.11.Managed Oracle11
 
 
 					SELECT
@@ -65,7 +65,7 @@ BeforeExecute
 						FKCOLS.OWNER IN ('TEST')
 
 BeforeExecute
--- Oracle.11.Managed Oracle11
+--  Oracle.11.Managed Oracle11
 
 
 					SELECT
@@ -87,7 +87,7 @@ BeforeExecute
 					
 
 BeforeExecute
--- Oracle.11.Managed Oracle11
+--  Oracle.11.Managed Oracle11
 
 
 						SELECT

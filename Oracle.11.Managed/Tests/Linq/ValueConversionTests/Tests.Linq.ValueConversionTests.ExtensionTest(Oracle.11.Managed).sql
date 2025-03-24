@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Oracle.11.Managed Oracle11
+--  Oracle.11.Managed Oracle11
 DECLARE @testedList NVarchar2(20) -- String
 SET     @testedList = '[{"Value":"Value1"}]'
 

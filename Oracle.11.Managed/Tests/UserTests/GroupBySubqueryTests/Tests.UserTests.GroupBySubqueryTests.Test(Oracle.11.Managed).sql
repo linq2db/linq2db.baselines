@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Oracle.11.Managed Oracle11
+--  Oracle.11.Managed Oracle11
 
 SELECT DISTINCT
 	a_Ref4."Field6",
@@ -16,7 +16,7 @@ WHERE
 	t1."Field3" IS NOT NULL
 
 BeforeExecute
--- Oracle.11.Managed Oracle11
+--  Oracle.11.Managed Oracle11
 
 SELECT
 	g_2."Field6",

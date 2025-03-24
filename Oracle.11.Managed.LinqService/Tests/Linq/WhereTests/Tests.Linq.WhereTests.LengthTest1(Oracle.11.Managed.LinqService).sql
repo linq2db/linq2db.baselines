@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Oracle.11.Managed Oracle11
+--  Oracle.11.Managed Oracle11
 
 SELECT
 	nm."MiddleName"
@@ -15,7 +15,7 @@ WHERE
 	nm."Value_1" <> 0 OR nm."Value_1" IS NULL
 
 BeforeExecute
--- Oracle.11.Managed Oracle11
+--  Oracle.11.Managed Oracle11
 
 SELECT
 	t1."FirstName",

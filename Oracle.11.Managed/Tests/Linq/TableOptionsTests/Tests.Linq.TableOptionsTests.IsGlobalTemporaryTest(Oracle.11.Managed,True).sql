@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Oracle.11.Managed Oracle11
+--  Oracle.11.Managed Oracle11
 
 CREATE GLOBAL TEMPORARY TABLE "IsGlobalTemporaryTable"
 (
@@ -9,7 +9,7 @@ CREATE GLOBAL TEMPORARY TABLE "IsGlobalTemporaryTable"
 ON COMMIT PRESERVE ROWS
 
 BeforeExecute
--- Oracle.11.Managed Oracle11
+--  Oracle.11.Managed Oracle11
 
 SELECT
 	t1."Id",
@@ -18,7 +18,7 @@ FROM
 	"IsGlobalTemporaryTable" t1
 
 BeforeExecute
--- Oracle.11.Managed Oracle11
+--  Oracle.11.Managed Oracle11
 
 BEGIN
 	EXECUTE IMMEDIATE 'DROP TABLE "IsGlobalTemporaryTable"';

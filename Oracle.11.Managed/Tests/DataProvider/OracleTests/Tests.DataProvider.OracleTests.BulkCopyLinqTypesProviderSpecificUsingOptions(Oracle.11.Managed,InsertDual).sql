@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Oracle.11.Managed Oracle11
+--  Oracle.11.Managed Oracle11
 
 INSERT INTO "LinqDataTypes"
 (
@@ -24,7 +24,7 @@ INSERT INTO "LinqDataTypes"
 	SELECT 4009,1009,TIMESTAMP '2001-01-11 01:11:21.100000',1,NULL,9,NULL FROM DUAL 
 
 BeforeExecute
--- Oracle.11.Managed Oracle11
+--  Oracle.11.Managed Oracle11
 
 DELETE FROM
 	"LinqDataTypes" p

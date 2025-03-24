@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Oracle.11.Managed Oracle11
+--  Oracle.11.Managed Oracle11
 DECLARE @Value2 NVarchar2(21) -- String
 SET     @Value2 = '[{"Value":"updated"}]'
 DECLARE @EnumWithNull Varchar2 -- String
@@ -18,7 +18,7 @@ WHERE
 	e."Id" = 1
 
 BeforeExecute
--- Oracle.11.Managed Oracle11
+--  Oracle.11.Managed Oracle11
 
 SELECT
 	e."Id",
@@ -37,7 +37,7 @@ WHERE
 	e."Id" = 1 AND ROWNUM <= 1
 
 BeforeExecute
--- Oracle.11.Managed Oracle11
+--  Oracle.11.Managed Oracle11
 DECLARE @Value1 NVarchar2(20) -- String
 SET     @Value1 = '{"some":"updated2}"}'
 DECLARE @Value2 NVarchar2(22) -- String
@@ -75,7 +75,7 @@ WHERE
 	t1."Id" = :Id
 
 BeforeExecute
--- Oracle.11.Managed Oracle11
+--  Oracle.11.Managed Oracle11
 
 SELECT
 	e."Id",
@@ -94,7 +94,7 @@ WHERE
 	e."Id" = 2 AND ROWNUM <= 1
 
 BeforeExecute
--- Oracle.11.Managed Oracle11
+--  Oracle.11.Managed Oracle11
 DECLARE @Value1 NVarchar2 -- String
 SET     @Value1 = NULL
 DECLARE @Value2 NVarchar2 -- String
@@ -132,7 +132,7 @@ WHERE
 	t1."Id" = :Id
 
 BeforeExecute
--- Oracle.11.Managed Oracle11
+--  Oracle.11.Managed Oracle11
 
 SELECT
 	e."Id",

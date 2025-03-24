@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Oracle.11.Managed Oracle11
+--  Oracle.11.Managed Oracle11
 DECLARE @Name Varchar2(6) -- String
 SET     @Name = 'group1'
 DECLARE @Enabled Int16
@@ -21,7 +21,7 @@ VALUES
 )
 
 BeforeExecute
--- Oracle.11.Managed Oracle11
+--  Oracle.11.Managed Oracle11
 DECLARE @Name Varchar2(6) -- String
 SET     @Name = 'group1'
 DECLARE @Enabled Int16
@@ -43,7 +43,7 @@ VALUES
 )
 
 BeforeExecute
--- Oracle.11.Managed Oracle11
+--  Oracle.11.Managed Oracle11
 DECLARE @Name Varchar2(6) -- String
 SET     @Name = 'group2'
 DECLARE @Enabled Int16
@@ -65,7 +65,7 @@ VALUES
 )
 
 BeforeExecute
--- Oracle.11.Managed Oracle11
+--  Oracle.11.Managed Oracle11
 
 SELECT
 	t1."Id",

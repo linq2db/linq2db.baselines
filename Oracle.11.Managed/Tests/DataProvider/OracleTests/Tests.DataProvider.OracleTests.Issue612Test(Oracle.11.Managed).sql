@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Oracle.11.Managed Oracle11
+--  Oracle.11.Managed Oracle11
 
 CREATE TABLE "DateTimeOffsetTable"
 (
@@ -7,7 +7,7 @@ CREATE TABLE "DateTimeOffsetTable"
 )
 
 BeforeExecute
--- Oracle.11.Managed Oracle11
+--  Oracle.11.Managed Oracle11
 DECLARE @DateTimeOffsetValue TimeStampTZ -- DateTimeOffset
 SET     @DateTimeOffsetValue = 03/30/2017 15:32:58.512655 +03:00
 
@@ -21,7 +21,7 @@ VALUES
 )
 
 BeforeExecute
--- Oracle.11.Managed Oracle11
+--  Oracle.11.Managed Oracle11
 
 SELECT
 	x."DateTimeOffsetValue"
@@ -31,7 +31,7 @@ WHERE
 	ROWNUM <= 2
 
 BeforeExecute
--- Oracle.11.Managed Oracle11
+--  Oracle.11.Managed Oracle11
 
 DROP TABLE "DateTimeOffsetTable"
 

@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Oracle.11.Managed Oracle11
+--  Oracle.11.Managed Oracle11
 
 SELECT /*+ QB_NAME(qb) PUSH_SUBQ(@qb) */
 	p."ParentID",

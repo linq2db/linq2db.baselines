@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Oracle.11.Managed Oracle11
+--  Oracle.11.Managed Oracle11
 DECLARE @Date_1 Date
 SET     @Date_1 = TIMESTAMP '2020-01-03 00:00:00.000000'
 DECLARE @DateTime TimeStamp -- DateTime
@@ -53,7 +53,7 @@ VALUES
 )
 
 BeforeExecute
--- Oracle.11.Managed Oracle11
+--  Oracle.11.Managed Oracle11
 
 SELECT
 	r."Date",
@@ -73,7 +73,7 @@ WHERE
 	r."Date" = DATE '2020-01-03'
 
 BeforeExecute
--- Oracle.11.Managed Oracle11
+--  Oracle.11.Managed Oracle11
 
 SELECT
 	r."Date",
@@ -93,7 +93,7 @@ WHERE
 	r."DateTime" = TIMESTAMP '2020-01-03 04:05:06.789123'
 
 BeforeExecute
--- Oracle.11.Managed Oracle11
+--  Oracle.11.Managed Oracle11
 
 SELECT
 	r."Date",
@@ -113,7 +113,7 @@ WHERE
 	r."DateTime_" = TO_DATE('2020-01-03 04:05:06', 'YYYY-MM-DD HH24:MI:SS')
 
 BeforeExecute
--- Oracle.11.Managed Oracle11
+--  Oracle.11.Managed Oracle11
 
 SELECT
 	r."Date",
@@ -133,7 +133,7 @@ WHERE
 	r."DateTime2" = TIMESTAMP '2020-01-03 04:05:06.789123'
 
 BeforeExecute
--- Oracle.11.Managed Oracle11
+--  Oracle.11.Managed Oracle11
 
 SELECT
 	r."Date",
@@ -153,7 +153,7 @@ WHERE
 	r."DateTime2_0" = TIMESTAMP '2020-01-03 04:05:06'
 
 BeforeExecute
--- Oracle.11.Managed Oracle11
+--  Oracle.11.Managed Oracle11
 
 SELECT
 	r."Date",
@@ -173,7 +173,7 @@ WHERE
 	r."DateTime2_1" = TIMESTAMP '2020-01-03 04:05:06.7'
 
 BeforeExecute
--- Oracle.11.Managed Oracle11
+--  Oracle.11.Managed Oracle11
 
 SELECT
 	r."Date",
@@ -193,7 +193,7 @@ WHERE
 	r."DateTime2_9" = TIMESTAMP '2020-01-03 04:05:06.7891234'
 
 BeforeExecute
--- Oracle.11.Managed Oracle11
+--  Oracle.11.Managed Oracle11
 
 SELECT
 	r."Date",
@@ -213,7 +213,7 @@ WHERE
 	r."DateTimeOffset_" = TIMESTAMP '2020-01-03 03:20:06.789123 +00:00'
 
 BeforeExecute
--- Oracle.11.Managed Oracle11
+--  Oracle.11.Managed Oracle11
 
 SELECT
 	r."Date",
@@ -233,7 +233,7 @@ WHERE
 	r."DateTimeOffset_0" = TIMESTAMP '2020-01-03 03:20:06 +00:00'
 
 BeforeExecute
--- Oracle.11.Managed Oracle11
+--  Oracle.11.Managed Oracle11
 
 SELECT
 	r."Date",
@@ -253,7 +253,7 @@ WHERE
 	r."DateTimeOffset_1" = TIMESTAMP '2020-01-03 03:20:06.7 +00:00'
 
 BeforeExecute
--- Oracle.11.Managed Oracle11
+--  Oracle.11.Managed Oracle11
 
 SELECT
 	r."Date",

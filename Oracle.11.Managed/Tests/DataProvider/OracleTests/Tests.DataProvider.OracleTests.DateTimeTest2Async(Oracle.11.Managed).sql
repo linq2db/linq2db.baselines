@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Oracle.11.Managed Oracle11
+--  Oracle.11.Managed Oracle11
 
 DELETE FROM
 	"AllTypes" t
@@ -9,7 +9,7 @@ WHERE
 BeforeExecute
 BeginTransaction
 BeforeExecute
--- Oracle.11.Managed Oracle11 (asynchronously)
+--  Oracle.11.Managed Oracle11 (asynchronously)
 DECLARE @:p1 Clob(4000) -- Object
 SET     @:p1 = NULL
 DECLARE @:p2 NClob(4000) -- Object

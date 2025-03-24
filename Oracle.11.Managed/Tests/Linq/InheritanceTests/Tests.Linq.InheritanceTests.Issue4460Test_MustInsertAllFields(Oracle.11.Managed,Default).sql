@@ -1,12 +1,12 @@
 ﻿BeforeExecute
--- Oracle.11.Managed Oracle11
+--  Oracle.11.Managed Oracle11
 
 INSERT ALL
 	INTO "Issue4460Table" ("Id", "Code", "Name", "Surname") VALUES (1,'GrandChild','Tom','Black')
 SELECT * FROM dual
 
 BeforeExecute
--- Oracle.11.Managed Oracle11
+--  Oracle.11.Managed Oracle11
 
 SELECT
 	t1."Code",
