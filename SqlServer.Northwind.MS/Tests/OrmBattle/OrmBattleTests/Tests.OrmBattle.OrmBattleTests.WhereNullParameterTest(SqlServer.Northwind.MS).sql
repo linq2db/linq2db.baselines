@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.Northwind.MS SqlServer.2019
+--  SqlServer.Northwind.MS SqlServer.2019
 
 SELECT
 	[o].[OrderID],
@@ -22,7 +22,7 @@ WHERE
 	[o].[ShipRegion] IS NULL
 
 BeforeExecute
--- SqlServer.Northwind.MS SqlServer.2019
+--  SqlServer.Northwind.MS SqlServer.2019
 DECLARE @region NVarChar(4000) -- String
 SET     @region = N'WA'
 

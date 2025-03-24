@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.Northwind.MS SqlServer.2019
+--  SqlServer.Northwind.MS SqlServer.2019
 DECLARE @top Int -- Int32
 SET     @top = 2
 

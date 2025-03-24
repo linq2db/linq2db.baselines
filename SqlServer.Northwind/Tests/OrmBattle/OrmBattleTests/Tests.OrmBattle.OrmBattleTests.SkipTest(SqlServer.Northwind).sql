@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.Northwind SqlServer.2019
+--  SqlServer.Northwind SqlServer.2019
 DECLARE @skip Int -- Int32
 SET     @skip = 10
 

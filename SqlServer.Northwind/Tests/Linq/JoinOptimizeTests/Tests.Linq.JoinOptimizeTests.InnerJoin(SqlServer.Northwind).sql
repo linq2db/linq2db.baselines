@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.Northwind SqlServer.2019
+--  SqlServer.Northwind SqlServer.2019
 
 SELECT
 	[od].[OrderID],
@@ -13,7 +13,7 @@ FROM
 		INNER JOIN [Orders] [o1] ON [od].[OrderID] = [o1].[OrderID] AND [od].[ProductID] = 1
 
 BeforeExecute
--- SqlServer.Northwind SqlServer.2019
+--  SqlServer.Northwind SqlServer.2019
 
 SELECT
 	[v].[OrderID]
@@ -22,7 +22,7 @@ FROM
 		INNER JOIN [Orders] [o1] ON [v].[OrderID] = [o1].[OrderID] AND [v].[ProductID] = 1
 
 BeforeExecute
--- SqlServer.Northwind SqlServer.2019
+--  SqlServer.Northwind SqlServer.2019
 
 SELECT
 	[o1].[OrderDate]

@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 BeginTransaction(RepeatableRead)
 BeforeExecute
--- SqlServer.Northwind SqlServer.2019
+--  SqlServer.Northwind SqlServer.2019
 
 SELECT
 	[m_1].[ProductID],
@@ -35,7 +35,7 @@ FROM
 		ON [d_1].[ProductID] = [m_1].[ProductID] AND [a_Supplier].[SupplierID] = [m_1].[SupplierID]
 
 BeforeExecute
--- SqlServer.Northwind SqlServer.2019
+--  SqlServer.Northwind SqlServer.2019
 
 SELECT
 	[m_1].[SupplierID],
@@ -47,7 +47,7 @@ FROM
 BeforeExecute
 DisposeTransaction
 BeforeExecute
--- SqlServer.Northwind SqlServer.2019
+--  SqlServer.Northwind SqlServer.2019
 
 SELECT
 	[supplier].[SupplierID]

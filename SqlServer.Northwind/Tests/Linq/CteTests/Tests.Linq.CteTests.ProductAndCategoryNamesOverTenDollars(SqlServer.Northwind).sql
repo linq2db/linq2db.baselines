@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.Northwind SqlServer.2019
+--  SqlServer.Northwind SqlServer.2019
 
 WITH [ProductAndCategoryNamesOverTenDollars] ([CategoryName], [UnitPrice], [ProductName])
 AS
@@ -26,7 +26,7 @@ ORDER BY
 	[t1].[ProductName]
 
 BeforeExecute
--- SqlServer.Northwind SqlServer.2019
+--  SqlServer.Northwind SqlServer.2019
 
 SELECT
 	[p].[ProductName],

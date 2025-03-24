@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.Northwind SqlServer.2019
+--  SqlServer.Northwind SqlServer.2019
 
 WITH [EmployeeSubordinatesReport]
 (
@@ -40,7 +40,7 @@ FROM
 		LEFT JOIN [EmployeeSubordinatesReport] [manager] ON [employee].[ReportsTo] = [manager].[EmployeeID]
 
 BeforeExecute
--- SqlServer.Northwind SqlServer.2019
+--  SqlServer.Northwind SqlServer.2019
 
 SELECT
 	[employee].[LastName],

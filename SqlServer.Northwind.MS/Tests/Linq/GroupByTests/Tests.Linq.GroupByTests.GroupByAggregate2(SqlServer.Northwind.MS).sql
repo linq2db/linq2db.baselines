@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 BeginTransaction(RepeatableRead)
 BeforeExecute
--- SqlServer.Northwind.MS SqlServer.2019
+--  SqlServer.Northwind.MS SqlServer.2019
 
 SELECT
 	[m_1].[Key_1],
@@ -49,7 +49,7 @@ FROM
 BeforeExecute
 DisposeTransaction
 BeforeExecute
--- SqlServer.Northwind.MS SqlServer.2019
+--  SqlServer.Northwind.MS SqlServer.2019
 
 SELECT
 	[t2].[Key_1]

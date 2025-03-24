@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.Northwind SqlServer.2019
+--  SqlServer.Northwind SqlServer.2019
 
 SELECT
 	[order_1].[OrderID]
@@ -9,7 +9,7 @@ WHERE
 	[order_1].[OrderDate] = DATETIME2FROMPARTS(1997, 11, 14, 0, 0, 0, 0, 7)
 
 BeforeExecute
--- SqlServer.Northwind SqlServer.2019
+--  SqlServer.Northwind SqlServer.2019
 
 SELECT
 	[order_1].[OrderID]

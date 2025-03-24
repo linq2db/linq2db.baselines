@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.Northwind SqlServer.2019
+--  SqlServer.Northwind SqlServer.2019
 DECLARE @city NVarChar(4000) -- String
 SET     @city = N'Seattle'
 
@@ -24,7 +24,7 @@ WHERE
 	[o].[ShipCity] = @city
 
 BeforeExecute
--- SqlServer.Northwind SqlServer.2019
+--  SqlServer.Northwind SqlServer.2019
 DECLARE @city NVarChar(4000) -- String
 SET     @city = N'Rio de Janeiro'
 

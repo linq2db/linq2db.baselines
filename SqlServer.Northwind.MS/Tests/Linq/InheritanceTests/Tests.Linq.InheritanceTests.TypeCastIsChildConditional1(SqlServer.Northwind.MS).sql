@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.Northwind.MS SqlServer.2019
+--  SqlServer.Northwind.MS SqlServer.2019
 
 SELECT
 	[x].[Discontinued],
@@ -16,7 +16,7 @@ FROM
 	[Products] [x]
 
 BeforeExecute
--- SqlServer.Northwind.MS SqlServer.2019
+--  SqlServer.Northwind.MS SqlServer.2019
 
 SELECT
 	[t1].[Discontinued],

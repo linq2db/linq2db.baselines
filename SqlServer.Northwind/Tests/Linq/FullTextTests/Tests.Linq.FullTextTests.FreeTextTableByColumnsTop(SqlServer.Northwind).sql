@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.Northwind SqlServer.2019
+--  SqlServer.Northwind SqlServer.2019
 DECLARE @term NVarChar(4000) -- String
 SET     @term = N'meat bread'
 DECLARE @top Int -- Int32

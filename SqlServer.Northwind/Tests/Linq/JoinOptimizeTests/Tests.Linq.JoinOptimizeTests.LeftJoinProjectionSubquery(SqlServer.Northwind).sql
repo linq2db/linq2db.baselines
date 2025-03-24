@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.Northwind SqlServer.2019
+--  SqlServer.Northwind SqlServer.2019
 DECLARE @take Int -- Int32
 SET     @take = 10
 
@@ -24,7 +24,7 @@ ORDER BY
 	[t1].[OrderID]
 
 BeforeExecute
--- SqlServer.Northwind SqlServer.2019
+--  SqlServer.Northwind SqlServer.2019
 DECLARE @take Int -- Int32
 SET     @take = 10
 
