@@ -7,6 +7,6 @@ SELECT
 FROM
 	"Person" p
 WHERE
-	p."PersonID" = 1 AND 1 = InStr(Reverse(Substr('123' || p."FirstName" || '0123451234', 6, 6)), '321') AND
+	p."PersonID" = 1 AND (11 - InStr(Reverse(Substr('123' || p."FirstName" || '0123451234', 6, 6)), '321')) - LENGTH('123') = 7 AND
 	InStr(Substr('123' || p."FirstName" || '0123451234', 1, 11), '123', 6) <> 0
 
