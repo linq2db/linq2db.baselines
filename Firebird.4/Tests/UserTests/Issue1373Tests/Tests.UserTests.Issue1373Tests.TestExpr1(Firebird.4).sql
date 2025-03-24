@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Firebird.4 Firebird4
+--  Firebird.4 Firebird4
 
 INSERT INTO "Issue1373Tests"
 (
@@ -13,7 +13,7 @@ VALUES
 )
 
 BeforeExecute
--- Firebird.4 Firebird4
+--  Firebird.4 Firebird4
 
 INSERT INTO "Issue1373Tests"
 (
@@ -27,7 +27,7 @@ VALUES
 )
 
 BeforeExecute
--- Firebird.4 Firebird4
+--  Firebird.4 Firebird4
 DECLARE @Field1 VarChar(4) -- String
 SET     @Field1 = 'test'
 
@@ -43,7 +43,7 @@ VALUES
 )
 
 BeforeExecute
--- Firebird.4 Firebird4
+--  Firebird.4 Firebird4
 
 SELECT
 	"t1"."Id",

@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Firebird.4 Firebird4 (asynchronously)
+--  Firebird.4 Firebird4 (asynchronously)
 
 INSERT INTO "SimpleBulkCopyTable"
 (
@@ -8,7 +8,7 @@ INSERT INTO "SimpleBulkCopyTable"
 SELECT 1 FROM rdb$database
 
 BeforeExecute
--- Firebird.4 Firebird4 (asynchronously)
+--  Firebird.4 Firebird4 (asynchronously)
 
 INSERT INTO "SimpleBulkCopyTable"
 (

@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Firebird.4 Firebird4
+--  Firebird.4 Firebird4
 
 
 SELECT * FROM (
@@ -23,7 +23,7 @@ SELECT * FROM (
 ) ORDER BY PackageName, ProcedureName
 
 BeforeExecute
--- Firebird.4 Firebird4
+--  Firebird.4 Firebird4
 
 SELECT
 	p.RDB$PACKAGE_NAME                                   AS PackageName,
@@ -68,7 +68,7 @@ BeginTransaction
 BeforeExecute
 RollbackTransaction
 BeforeExecute
--- Firebird.4 Firebird4
+--  Firebird.4 Firebird4
 
 
 SELECT * FROM (
@@ -92,7 +92,7 @@ SELECT * FROM (
 ) ORDER BY PackageName, ProcedureName
 
 BeforeExecute
--- Firebird.4 Firebird4
+--  Firebird.4 Firebird4
 
 SELECT
 	p.RDB$PACKAGE_NAME                                   AS PackageName,
@@ -137,7 +137,7 @@ BeginTransaction
 BeforeExecute
 RollbackTransaction
 BeforeExecute
--- Firebird.4 Firebird4
+--  Firebird.4 Firebird4
 
 
 SELECT * FROM (
@@ -161,7 +161,7 @@ SELECT * FROM (
 ) ORDER BY PackageName, ProcedureName
 
 BeforeExecute
--- Firebird.4 Firebird4
+--  Firebird.4 Firebird4
 
 SELECT
 	p.RDB$PACKAGE_NAME                                   AS PackageName,

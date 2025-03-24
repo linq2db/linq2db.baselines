@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Firebird.4 Firebird4
+--  Firebird.4 Firebird4
 
 DELETE FROM
 	"Person" "t1"
@@ -7,7 +7,7 @@ WHERE
 	"t1"."PersonID" > 4
 
 BeforeExecute
--- Firebird.4 Firebird4
+--  Firebird.4 Firebird4
 DECLARE @FirstName VarChar(4) -- String
 SET     @FirstName = 'John'
 DECLARE @LastName VarChar(7) -- String
@@ -33,7 +33,7 @@ RETURNING
 	"PersonID"
 
 BeforeExecute
--- Firebird.4 Firebird4
+--  Firebird.4 Firebird4
 
 SELECT
 	"p"."FirstName",
@@ -48,7 +48,7 @@ WHERE
 FETCH NEXT 2 ROWS ONLY
 
 BeforeExecute
--- Firebird.4 Firebird4
+--  Firebird.4 Firebird4
 
 DELETE FROM
 	"Person" "t1"

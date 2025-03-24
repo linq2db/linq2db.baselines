@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Firebird.4 Firebird4
+--  Firebird.4 Firebird4
 DECLARE @value BigInt -- Int64
 SET     @value = 0
 

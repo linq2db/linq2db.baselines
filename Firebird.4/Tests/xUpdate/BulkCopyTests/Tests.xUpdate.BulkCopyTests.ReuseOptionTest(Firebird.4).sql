@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 BeginTransaction
 BeforeExecute
--- Firebird.4 Firebird4
+--  Firebird.4 Firebird4
 
 INSERT INTO "Parent"
 (
@@ -11,7 +11,7 @@ INSERT INTO "Parent"
 SELECT 111001,NULL FROM rdb$database
 
 BeforeExecute
--- Firebird.4 Firebird4
+--  Firebird.4 Firebird4
 
 INSERT INTO "Child"
 (

@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Firebird.4 Firebird4
+--  Firebird.4 Firebird4
 DECLARE @userId Integer -- Int32
 SET     @userId = 1
 

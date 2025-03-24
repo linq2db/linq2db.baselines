@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Firebird.4 Firebird4
+--  Firebird.4 Firebird4
 
 INSERT INTO "SimpleBulkCopyTable"
 (
@@ -8,7 +8,7 @@ INSERT INTO "SimpleBulkCopyTable"
 SELECT 1 FROM rdb$database
 
 BeforeExecute
--- Firebird.4 Firebird4
+--  Firebird.4 Firebird4
 
 INSERT INTO "SimpleBulkCopyTable"
 (
@@ -17,7 +17,7 @@ INSERT INTO "SimpleBulkCopyTable"
 SELECT 2 FROM rdb$database
 
 BeforeExecute
--- Firebird.4 Firebird4
+--  Firebird.4 Firebird4
 DECLARE @Id Integer -- Int32
 SET     @Id = 3
 

@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Firebird.4 Firebird4
+--  Firebird.4 Firebird4
 
 DELETE FROM
 	"GrandChild" "gc"
@@ -7,7 +7,7 @@ WHERE
 	"gc"."GrandChildID" IN (1001, 1002)
 
 BeforeExecute
--- Firebird.4 Firebird4
+--  Firebird.4 Firebird4
 
 INSERT INTO "GrandChild"
 (
@@ -23,7 +23,7 @@ VALUES
 )
 
 BeforeExecute
--- Firebird.4 Firebird4
+--  Firebird.4 Firebird4
 
 INSERT INTO "GrandChild"
 (
@@ -39,7 +39,7 @@ VALUES
 )
 
 BeforeExecute
--- Firebird.4 Firebird4
+--  Firebird.4 Firebird4
 
 SELECT
 	COUNT(*)
@@ -49,7 +49,7 @@ WHERE
 	"gc"."ParentID" = 1
 
 BeforeExecute
--- Firebird.4 Firebird4
+--  Firebird.4 Firebird4
 
 DELETE FROM
 	"GrandChild" "t1"
@@ -69,7 +69,7 @@ WHERE
 	)
 
 BeforeExecute
--- Firebird.4 Firebird4
+--  Firebird.4 Firebird4
 
 SELECT
 	COUNT(*)

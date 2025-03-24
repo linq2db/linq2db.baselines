@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Firebird.4 Firebird4
+--  Firebird.4 Firebird4
 DECLARE @ParentID Integer -- Int32
 SET     @ParentID = 1010
 DECLARE @Value1 Integer -- Int32
@@ -19,7 +19,7 @@ VALUES
 BeforeExecute
 BeginTransaction
 BeforeExecute
--- Firebird.4 Firebird4
+--  Firebird.4 Firebird4
 
 UPDATE
 	"Parent" "t"
@@ -31,7 +31,7 @@ WHERE
 BeforeExecute
 CommitTransaction
 BeforeExecute
--- Firebird.4 Firebird4
+--  Firebird.4 Firebird4
 
 SELECT
 	"t"."ParentID",

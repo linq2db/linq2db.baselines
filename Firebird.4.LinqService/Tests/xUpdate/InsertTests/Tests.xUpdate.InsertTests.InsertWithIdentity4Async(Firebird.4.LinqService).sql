@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Firebird.4 Firebird4
+--  Firebird.4 Firebird4
 
 DELETE FROM
 	"Person" "t1"
@@ -7,7 +7,7 @@ WHERE
 	"t1"."PersonID" > 4
 
 BeforeExecute
--- Firebird.4 Firebird4 (asynchronously)
+--  Firebird.4 Firebird4 (asynchronously)
 DECLARE @FirstName VarChar(5) -- String
 SET     @FirstName = 'John0'
 DECLARE @LastName VarChar(7) -- String
@@ -37,7 +37,7 @@ RETURNING
 	"PersonID"
 
 BeforeExecute
--- Firebird.4 Firebird4 (asynchronously)
+--  Firebird.4 Firebird4 (asynchronously)
 DECLARE @FirstName VarChar(5) -- String
 SET     @FirstName = 'John1'
 DECLARE @LastName VarChar(7) -- String
@@ -67,7 +67,7 @@ RETURNING
 	"PersonID"
 
 BeforeExecute
--- Firebird.4 Firebird4
+--  Firebird.4 Firebird4
 
 DELETE FROM
 	"Person" "t1"

@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Firebird.4 Firebird4 (asynchronously)
+--  Firebird.4 Firebird4 (asynchronously)
 
 EXECUTE BLOCK AS BEGIN
 	EXECUTE STATEMENT '
@@ -27,7 +27,7 @@ EXECUTE BLOCK AS BEGIN
 END
 
 BeforeExecute
--- Firebird.4 Firebird4 (asynchronously)
+--  Firebird.4 Firebird4 (asynchronously)
 DECLARE @FirstName VarChar(6) -- String
 SET     @FirstName = 'Steven'
 DECLARE @LastName VarChar(4) -- String
@@ -53,37 +53,7 @@ VALUES
 )
 
 BeforeExecute
--- Firebird.4 Firebird4 (asynchronously)
-DECLARE @FirstName VarChar(6) -- String
-SET     @FirstName = 'Steven'
-DECLARE @LastName VarChar(4) -- String
-SET     @LastName = 'King'
-DECLARE @MiddleName VarChar -- String
-SET     @MiddleName = NULL
-DECLARE @Gender Char(1) -- String
-SET     @Gender = 'M'
-DECLARE @IDENTITY_PARAMETER Decimal
-SET     @IDENTITY_PARAMETER = NULL
-
-INSERT INTO "xxPerson_f_31"
-(
-	"FirstName",
-	"LastName",
-	"MiddleName",
-	"Gender"
-)
-VALUES
-(
-	@FirstName,
-	@LastName,
-	@MiddleName,
-	@Gender
-)
-RETURNING
-	"PersonID"
-
-BeforeExecute
--- Firebird.4 Firebird4 (asynchronously)
+--  Firebird.4 Firebird4 (asynchronously)
 DECLARE @FirstName VarChar(6) -- String
 SET     @FirstName = 'Steven'
 DECLARE @LastName VarChar(4) -- String
@@ -113,7 +83,37 @@ RETURNING
 	"PersonID"
 
 BeforeExecute
--- Firebird.4 Firebird4 (asynchronously)
+--  Firebird.4 Firebird4 (asynchronously)
+DECLARE @FirstName VarChar(6) -- String
+SET     @FirstName = 'Steven'
+DECLARE @LastName VarChar(4) -- String
+SET     @LastName = 'King'
+DECLARE @MiddleName VarChar -- String
+SET     @MiddleName = NULL
+DECLARE @Gender Char(1) -- String
+SET     @Gender = 'M'
+DECLARE @IDENTITY_PARAMETER Decimal
+SET     @IDENTITY_PARAMETER = NULL
+
+INSERT INTO "xxPerson_f_31"
+(
+	"FirstName",
+	"LastName",
+	"MiddleName",
+	"Gender"
+)
+VALUES
+(
+	@FirstName,
+	@LastName,
+	@MiddleName,
+	@Gender
+)
+RETURNING
+	"PersonID"
+
+BeforeExecute
+--  Firebird.4 Firebird4 (asynchronously)
 
 SELECT
 	COUNT(*)
@@ -121,7 +121,7 @@ FROM
 	"xxPerson_f_31" "t1"
 
 BeforeExecute
--- Firebird.4 Firebird4 (asynchronously)
+--  Firebird.4 Firebird4 (asynchronously)
 
 SELECT
 	COUNT(*)
@@ -132,7 +132,7 @@ WHERE
 	"p"."Gender" = 'M'
 
 BeforeExecute
--- Firebird.4 Firebird4 (asynchronously)
+--  Firebird.4 Firebird4 (asynchronously)
 
 EXECUTE BLOCK AS BEGIN
 	EXECUTE STATEMENT 'DROP TRIGGER "TIDENTITY_xxPerson_f_31"';
@@ -141,7 +141,7 @@ EXECUTE BLOCK AS BEGIN
 END
 
 BeforeExecute
--- Firebird.4 Firebird4 (asynchronously)
+--  Firebird.4 Firebird4 (asynchronously)
 
 EXECUTE BLOCK AS BEGIN
 	IF (EXISTS(SELECT 1 FROM rdb$triggers WHERE rdb$trigger_name = 'TIDENTITY_xxPerson_f_31')) THEN

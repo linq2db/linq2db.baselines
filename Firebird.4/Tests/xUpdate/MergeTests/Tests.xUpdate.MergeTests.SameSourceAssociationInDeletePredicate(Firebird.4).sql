@@ -1,12 +1,12 @@
 ﻿BeforeExecute
--- Firebird.4 Firebird4
+--  Firebird.4 Firebird4
 
 SET GENERATOR "PersonID" TO 4
 
 BeforeExecute
 BeginTransaction
 BeforeExecute
--- Firebird.4 Firebird4
+--  Firebird.4 Firebird4
 
 MERGE INTO "Patient" "Target"
 USING (
@@ -33,7 +33,7 @@ WHEN MATCHED AND "Source"."source_Person_FirstName" = 'first 4' AND
 "Source"."target_Person_FirstName" = 'first 4' THEN DELETE
 
 BeforeExecute
--- Firebird.4 Firebird4
+--  Firebird.4 Firebird4
 
 SELECT
 	"t1"."PersonID",

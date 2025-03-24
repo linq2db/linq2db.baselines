@@ -1,13 +1,13 @@
 ﻿BeforeExecute
 BeginTransaction
 BeforeExecute
--- Firebird.4 Firebird4
+--  Firebird.4 Firebird4
 
 DELETE FROM
 	"InheritanceParent" "t1"
 
 BeforeExecute
--- Firebird.4 Firebird4
+--  Firebird.4 Firebird4
 DECLARE @Key1 Integer -- Int32
 SET     @Key1 = 143
 DECLARE @Key2 VarChar -- String
@@ -40,7 +40,7 @@ WHEN NOT MATCHED THEN
 	)
 
 BeforeExecute
--- Firebird.4 Firebird4
+--  Firebird.4 Firebird4
 
 SELECT
 	COUNT(*)
@@ -48,7 +48,7 @@ FROM
 	"InheritanceParent" "t1"
 
 BeforeExecute
--- Firebird.4 Firebird4
+--  Firebird.4 Firebird4
 DECLARE @Key1 Integer -- Int32
 SET     @Key1 = 143
 DECLARE @Key2 VarChar -- String
@@ -81,7 +81,7 @@ WHEN NOT MATCHED THEN
 	)
 
 BeforeExecute
--- Firebird.4 Firebird4
+--  Firebird.4 Firebird4
 
 SELECT
 	COUNT(*)
