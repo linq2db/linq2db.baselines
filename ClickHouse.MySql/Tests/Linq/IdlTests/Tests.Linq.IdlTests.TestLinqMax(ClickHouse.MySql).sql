@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- ClickHouse.MySql ClickHouse
+--  ClickHouse.MySql ClickHouse
 
 SELECT
 	maxOrNull(x.PersonID)
@@ -9,7 +9,7 @@ WHERE
 	x.PersonID < 0
 
 BeforeExecute
--- ClickHouse.MySql ClickHouse
+--  ClickHouse.MySql ClickHouse
 
 SELECT
 	maxOrNull(x.PersonID)
@@ -19,7 +19,7 @@ WHERE
 	x.PersonID < 0
 
 BeforeExecute
--- ClickHouse.MySql ClickHouse
+--  ClickHouse.MySql ClickHouse
 
 SELECT
 	maxOrNull(x.PersonID)
@@ -29,7 +29,7 @@ WHERE
 	x.PersonID < 0
 
 BeforeExecute
--- ClickHouse.MySql ClickHouse
+--  ClickHouse.MySql ClickHouse
 
 SELECT
 	maxOrNull(x.PersonID)

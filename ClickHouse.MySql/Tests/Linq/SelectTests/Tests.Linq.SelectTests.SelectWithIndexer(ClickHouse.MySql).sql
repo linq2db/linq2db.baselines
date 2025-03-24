@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- ClickHouse.MySql ClickHouse
+--  ClickHouse.MySql ClickHouse
 
 SELECT
 	x.FirstName,
@@ -21,7 +21,7 @@ ORDER BY
 	x.PersonID DESC
 
 BeforeExecute
--- ClickHouse.MySql ClickHouse
+--  ClickHouse.MySql ClickHouse
 
 SELECT
 	t1.FirstName,

@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- ClickHouse.MySql ClickHouse
+--  ClickHouse.MySql ClickHouse
 
 SELECT
 	toFloat64(v.Integer) / 33,

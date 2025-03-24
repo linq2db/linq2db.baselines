@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- ClickHouse.MySql ClickHouse
+--  ClickHouse.MySql ClickHouse
 
 SELECT
 	m_1.OrderId,
@@ -19,7 +19,7 @@ FROM
 		INNER JOIN OrderDetail d ON m_1.OrderId = d.OrderId
 
 BeforeExecute
--- ClickHouse.MySql ClickHouse
+--  ClickHouse.MySql ClickHouse
 
 SELECT
 	o.OrderType,

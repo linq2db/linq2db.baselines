@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- ClickHouse.MySql ClickHouse
+--  ClickHouse.MySql ClickHouse
 
 SELECT
 	m_1.DetailId,
@@ -26,7 +26,7 @@ FROM
 		INNER JOIN SubDetailClass d_1 ON d_1.DetailId = m_1.DetailId
 
 BeforeExecute
--- ClickHouse.MySql ClickHouse
+--  ClickHouse.MySql ClickHouse
 
 SELECT
 	m_1.DetailId,
@@ -53,7 +53,7 @@ FROM
 		INNER JOIN SubDetailClass d_1 ON m_1.DetailId = d_1.DetailId
 
 BeforeExecute
--- ClickHouse.MySql ClickHouse
+--  ClickHouse.MySql ClickHouse
 
 SELECT
 	m_1.Id1,
@@ -70,7 +70,7 @@ FROM
 		INNER JOIN DetailClass d ON d.MasterId = m_1.Id1
 
 BeforeExecute
--- ClickHouse.MySql ClickHouse
+--  ClickHouse.MySql ClickHouse
 
 SELECT
 	master_1.Id1

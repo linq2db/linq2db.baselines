@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- ClickHouse.MySql ClickHouse
+--  ClickHouse.MySql ClickHouse
 
 CREATE TEMPORARY TABLE TableWithPrimaryKey2
 (
@@ -11,7 +11,7 @@ ENGINE = MergeTree()
 ORDER BY Key
 
 BeforeExecute
--- ClickHouse.MySql ClickHouse
+--  ClickHouse.MySql ClickHouse
 
 INSERT INTO TableWithPrimaryKey2
 (
@@ -21,7 +21,7 @@ VALUES
 (1)
 
 BeforeExecute
--- ClickHouse.MySql ClickHouse
+--  ClickHouse.MySql ClickHouse
 
 DROP TABLE IF EXISTS TableWithPrimaryKey2
 

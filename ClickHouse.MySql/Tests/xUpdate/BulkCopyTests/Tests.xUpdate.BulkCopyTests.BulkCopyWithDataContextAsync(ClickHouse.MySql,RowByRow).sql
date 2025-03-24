@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- ClickHouse.MySql ClickHouse (asynchronously)
+--  ClickHouse.MySql ClickHouse (asynchronously)
 
 INSERT INTO SimpleBulkCopyTable
 (
@@ -11,7 +11,7 @@ VALUES
 )
 
 BeforeExecute
--- ClickHouse.MySql ClickHouse (asynchronously)
+--  ClickHouse.MySql ClickHouse (asynchronously)
 
 INSERT INTO SimpleBulkCopyTable
 (

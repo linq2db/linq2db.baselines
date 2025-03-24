@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- ClickHouse.MySql ClickHouse
+--  ClickHouse.MySql ClickHouse
 
 INSERT INTO MultipleRowsTable
 (
@@ -12,7 +12,7 @@ VALUES
 (2,toDecimal128('1.5', 10),toDecimal128('-2.6', 10))
 
 BeforeExecute
--- ClickHouse.MySql ClickHouse
+--  ClickHouse.MySql ClickHouse
 
 SELECT
 	t1.Id,

@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- ClickHouse.MySql ClickHouse
+--  ClickHouse.MySql ClickHouse
 
 SELECT
 	COUNT(*)
@@ -13,7 +13,7 @@ WHERE
 	concat('{}', p.LastName) = concat('{}', p.LastName)
 
 BeforeExecute
--- ClickHouse.MySql ClickHouse
+--  ClickHouse.MySql ClickHouse
 
 SELECT
 	COUNT(*)

@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- ClickHouse.MySql ClickHouse (asynchronously)
+--  ClickHouse.MySql ClickHouse (asynchronously)
 
 SELECT
 	avgOrNull(toInt64(c_1.Id))

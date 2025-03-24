@@ -8,7 +8,7 @@ WHERE
 	t2.Value > 1
 
 BeforeExecute
--- ClickHouse.MySql ClickHouse
+--  ClickHouse.MySql ClickHouse
 
 SELECT
 	t.Id,

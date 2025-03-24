@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- ClickHouse.MySql ClickHouse
+--  ClickHouse.MySql ClickHouse
 
 SELECT
 	m_1.Id,
@@ -31,7 +31,7 @@ FROM
 		) d_1 ON m_1.Id = d_1.ParentId AND d_1.rn <= 2
 
 BeforeExecute
--- ClickHouse.MySql ClickHouse
+--  ClickHouse.MySql ClickHouse
 
 SELECT
 	t1.Id,
@@ -40,7 +40,7 @@ FROM
 	SampleClass1 t1
 
 BeforeExecute
--- ClickHouse.MySql ClickHouse
+--  ClickHouse.MySql ClickHouse
 
 SELECT
 	m_1.Id,
@@ -72,7 +72,7 @@ FROM
 		) d_1 ON m_1.Id = d_1.ParentId AND d_1.rn <= 2
 
 BeforeExecute
--- ClickHouse.MySql ClickHouse
+--  ClickHouse.MySql ClickHouse
 
 SELECT
 	t1.Id,

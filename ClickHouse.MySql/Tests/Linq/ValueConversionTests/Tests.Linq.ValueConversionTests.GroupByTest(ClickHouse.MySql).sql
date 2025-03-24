@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- ClickHouse.MySql ClickHouse
+--  ClickHouse.MySql ClickHouse
 
 SELECT
 	m_1.Id,
@@ -19,7 +19,7 @@ WHERE
 	'[{"Value":"Value1"}]' = m_1.Value2 AND '[{"Value":"Value1"}]' = m_1.Value2
 
 BeforeExecute
--- ClickHouse.MySql ClickHouse
+--  ClickHouse.MySql ClickHouse
 
 SELECT
 	g_1.Id

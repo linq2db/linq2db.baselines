@@ -1,10 +1,10 @@
 ﻿BeforeExecute
--- ClickHouse.MySql ClickHouse
+--  ClickHouse.MySql ClickHouse
 
 DROP TABLE IF EXISTS Issue2564Table
 
 BeforeExecute
--- ClickHouse.MySql ClickHouse
+--  ClickHouse.MySql ClickHouse
 
 CREATE TABLE Issue2564Table
 (
@@ -22,7 +22,7 @@ ENGINE = MergeTree()
 ORDER BY Id
 
 BeforeExecute
--- ClickHouse.MySql ClickHouse
+--  ClickHouse.MySql ClickHouse
 
 SELECT
 	Trim(minOrNull(tgGroup_1.TranslatedMessage1)),

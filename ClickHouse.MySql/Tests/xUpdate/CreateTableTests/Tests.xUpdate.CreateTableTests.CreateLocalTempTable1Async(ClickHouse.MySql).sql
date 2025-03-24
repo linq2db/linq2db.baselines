@@ -1,10 +1,10 @@
 ﻿BeforeExecute
--- ClickHouse.MySql ClickHouse (asynchronously)
+--  ClickHouse.MySql ClickHouse (asynchronously)
 
 DROP TABLE TestTable
 
 BeforeExecute
--- ClickHouse.MySql ClickHouse (asynchronously)
+--  ClickHouse.MySql ClickHouse (asynchronously)
 
 CREATE TABLE TestTable
 (
@@ -16,7 +16,7 @@ CREATE TABLE TestTable
 ENGINE = Memory()
 
 BeforeExecute
--- ClickHouse.MySql ClickHouse (asynchronously)
+--  ClickHouse.MySql ClickHouse (asynchronously)
 
 SELECT
 	t1.ID,
@@ -27,7 +27,7 @@ FROM
 	TestTable t1
 
 BeforeExecute
--- ClickHouse.MySql ClickHouse (asynchronously)
+--  ClickHouse.MySql ClickHouse (asynchronously)
 
 DROP TABLE TestTable
 

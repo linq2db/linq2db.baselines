@@ -1,10 +1,10 @@
 ﻿BeforeExecute
--- ClickHouse.MySql ClickHouse
+--  ClickHouse.MySql ClickHouse
 
 DROP TABLE IF EXISTS TempTable
 
 BeforeExecute
--- ClickHouse.MySql ClickHouse
+--  ClickHouse.MySql ClickHouse
 
 SELECT
 	p.ParentID
@@ -12,7 +12,7 @@ FROM
 	Parent p
 
 BeforeExecute
--- ClickHouse.MySql ClickHouse (asynchronously)
+--  ClickHouse.MySql ClickHouse (asynchronously)
 
 CREATE TABLE IF NOT EXISTS TempTable
 (
@@ -21,7 +21,7 @@ CREATE TABLE IF NOT EXISTS TempTable
 ENGINE = Memory()
 
 BeforeExecute
--- ClickHouse.MySql ClickHouse (asynchronously)
+--  ClickHouse.MySql ClickHouse (asynchronously)
 
 INSERT INTO TempTable
 (
@@ -37,7 +37,7 @@ VALUES
 (7)
 
 BeforeExecute
--- ClickHouse.MySql ClickHouse
+--  ClickHouse.MySql ClickHouse
 
 SELECT
 	t.ID
@@ -46,7 +46,7 @@ FROM
 		INNER JOIN TempTable t ON p.ParentID = t.ID
 
 BeforeExecute
--- ClickHouse.MySql ClickHouse (asynchronously)
+--  ClickHouse.MySql ClickHouse (asynchronously)
 
 DROP TABLE IF EXISTS TempTable
 

@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- ClickHouse.MySql ClickHouse
+--  ClickHouse.MySql ClickHouse
 
 SELECT
 	t1.ID,
@@ -13,7 +13,7 @@ FROM
 		LEFT JOIN GrandParent_3230 a_GrandParent ON a_Parent.GrandParentID = a_GrandParent.ID
 
 BeforeExecute
--- ClickHouse.MySql ClickHouse
+--  ClickHouse.MySql ClickHouse
 
 SELECT
 	t1.ID,

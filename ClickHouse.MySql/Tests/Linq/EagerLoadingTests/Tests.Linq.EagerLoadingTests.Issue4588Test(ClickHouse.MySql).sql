@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- ClickHouse.MySql ClickHouse
+--  ClickHouse.MySql ClickHouse
 
 SELECT
 	m_1.Id,
@@ -36,7 +36,7 @@ FROM
 		INNER JOIN SubOrderDetail d_1 ON m_1.Id = d_1.SubOrderId
 
 BeforeExecute
--- ClickHouse.MySql ClickHouse
+--  ClickHouse.MySql ClickHouse
 
 SELECT
 	m_1.Id,
@@ -62,7 +62,7 @@ FROM
 		INNER JOIN SubOrder d ON m_1.Id = d.OrderId
 
 BeforeExecute
--- ClickHouse.MySql ClickHouse
+--  ClickHouse.MySql ClickHouse
 
 SELECT
 	x.Id,

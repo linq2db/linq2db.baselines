@@ -7,7 +7,7 @@ FROM
 ----
 
 BeforeExecute
--- ClickHouse.MySql ClickHouse
+--  ClickHouse.MySql ClickHouse
 
 SELECT
 	p.ParentID,
@@ -25,7 +25,7 @@ FROM
 ---
 
 BeforeExecute
--- ClickHouse.MySql ClickHouse
+--  ClickHouse.MySql ClickHouse
 
 SELECT
 	p.ParentID,

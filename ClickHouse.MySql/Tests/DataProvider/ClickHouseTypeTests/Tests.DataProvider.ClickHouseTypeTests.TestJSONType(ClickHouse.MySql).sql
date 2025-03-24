@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- ClickHouse.MySql ClickHouse
+--  ClickHouse.MySql ClickHouse
 
 SELECT
 	t1.Column,
@@ -8,14 +8,14 @@ FROM
 	`TypeTable``2` t1
 
 BeforeExecute
--- ClickHouse.MySql ClickHouse
+--  ClickHouse.MySql ClickHouse
 
 ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
 BeforeExecute
--- ClickHouse.MySql ClickHouse
+--  ClickHouse.MySql ClickHouse
 
 INSERT INTO `TypeTable``2`
 (
@@ -29,7 +29,7 @@ VALUES
 )
 
 BeforeExecute
--- ClickHouse.MySql ClickHouse
+--  ClickHouse.MySql ClickHouse
 
 SELECT
 	t1.Column,
@@ -38,14 +38,14 @@ FROM
 	`TypeTable``2` t1
 
 BeforeExecute
--- ClickHouse.MySql ClickHouse
+--  ClickHouse.MySql ClickHouse
 
 ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
 BeforeExecute
--- ClickHouse.MySql ClickHouse
+--  ClickHouse.MySql ClickHouse
 
 INSERT INTO `TypeTable``2`
 (
@@ -56,7 +56,7 @@ VALUES
 ('null','null')
 
 BeforeExecute
--- ClickHouse.MySql ClickHouse
+--  ClickHouse.MySql ClickHouse
 
 SELECT
 	t1.Column,
@@ -65,14 +65,14 @@ FROM
 	`TypeTable``2` t1
 
 BeforeExecute
--- ClickHouse.MySql ClickHouse
+--  ClickHouse.MySql ClickHouse
 
 ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
 BeforeExecute
--- ClickHouse.MySql ClickHouse
+--  ClickHouse.MySql ClickHouse
 
 INSERT INTO `TypeTable``2`
 (
@@ -83,7 +83,7 @@ VALUES
 ('null','null')
 
 BeforeExecute
--- ClickHouse.MySql ClickHouse
+--  ClickHouse.MySql ClickHouse
 
 SELECT
 	t1.Column,
@@ -92,14 +92,14 @@ FROM
 	`TypeTable``2` t1
 
 BeforeExecute
--- ClickHouse.MySql ClickHouse (asynchronously)
+--  ClickHouse.MySql ClickHouse (asynchronously)
 
 ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
 BeforeExecute
--- ClickHouse.MySql ClickHouse (asynchronously)
+--  ClickHouse.MySql ClickHouse (asynchronously)
 
 INSERT INTO `TypeTable``2`
 (
@@ -110,7 +110,7 @@ VALUES
 ('null','null')
 
 BeforeExecute
--- ClickHouse.MySql ClickHouse
+--  ClickHouse.MySql ClickHouse
 
 SELECT
 	t1.Column,
@@ -119,7 +119,7 @@ FROM
 	`TypeTable``2` t1
 
 BeforeExecute
--- ClickHouse.MySql ClickHouse
+--  ClickHouse.MySql ClickHouse
 
 SELECT
 	t1.Column,
@@ -128,14 +128,14 @@ FROM
 	`TypeTable``2` t1
 
 BeforeExecute
--- ClickHouse.MySql ClickHouse
+--  ClickHouse.MySql ClickHouse
 
 ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
 BeforeExecute
--- ClickHouse.MySql ClickHouse
+--  ClickHouse.MySql ClickHouse
 
 INSERT INTO `TypeTable``2`
 (
@@ -149,7 +149,7 @@ VALUES
 )
 
 BeforeExecute
--- ClickHouse.MySql ClickHouse
+--  ClickHouse.MySql ClickHouse
 
 SELECT
 	t1.Column,
@@ -158,14 +158,14 @@ FROM
 	`TypeTable``2` t1
 
 BeforeExecute
--- ClickHouse.MySql ClickHouse
+--  ClickHouse.MySql ClickHouse
 
 ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
 BeforeExecute
--- ClickHouse.MySql ClickHouse
+--  ClickHouse.MySql ClickHouse
 
 INSERT INTO `TypeTable``2`
 (
@@ -176,7 +176,7 @@ VALUES
 ('{ "prop": 333 }','{ "prop": 123 }')
 
 BeforeExecute
--- ClickHouse.MySql ClickHouse
+--  ClickHouse.MySql ClickHouse
 
 SELECT
 	t1.Column,
@@ -185,14 +185,14 @@ FROM
 	`TypeTable``2` t1
 
 BeforeExecute
--- ClickHouse.MySql ClickHouse
+--  ClickHouse.MySql ClickHouse
 
 ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
 BeforeExecute
--- ClickHouse.MySql ClickHouse
+--  ClickHouse.MySql ClickHouse
 
 INSERT INTO `TypeTable``2`
 (
@@ -203,7 +203,7 @@ VALUES
 ('{ "prop": 333 }','{ "prop": 123 }')
 
 BeforeExecute
--- ClickHouse.MySql ClickHouse
+--  ClickHouse.MySql ClickHouse
 
 SELECT
 	t1.Column,
@@ -212,14 +212,14 @@ FROM
 	`TypeTable``2` t1
 
 BeforeExecute
--- ClickHouse.MySql ClickHouse (asynchronously)
+--  ClickHouse.MySql ClickHouse (asynchronously)
 
 ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
 BeforeExecute
--- ClickHouse.MySql ClickHouse (asynchronously)
+--  ClickHouse.MySql ClickHouse (asynchronously)
 
 INSERT INTO `TypeTable``2`
 (
@@ -230,7 +230,7 @@ VALUES
 ('{ "prop": 333 }','{ "prop": 123 }')
 
 BeforeExecute
--- ClickHouse.MySql ClickHouse
+--  ClickHouse.MySql ClickHouse
 
 SELECT
 	t1.Column,

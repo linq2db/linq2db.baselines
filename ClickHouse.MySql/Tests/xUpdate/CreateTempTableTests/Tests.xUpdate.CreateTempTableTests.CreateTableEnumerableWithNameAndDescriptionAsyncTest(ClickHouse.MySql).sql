@@ -1,10 +1,10 @@
 ﻿BeforeExecute
--- ClickHouse.MySql ClickHouse (asynchronously)
+--  ClickHouse.MySql ClickHouse (asynchronously)
 
 DROP TABLE IF EXISTS TempTable
 
 BeforeExecute
--- ClickHouse.MySql ClickHouse (asynchronously)
+--  ClickHouse.MySql ClickHouse (asynchronously)
 
 CREATE TEMPORARY TABLE IF NOT EXISTS TempTable
 (
@@ -13,7 +13,7 @@ CREATE TEMPORARY TABLE IF NOT EXISTS TempTable
 ENGINE = Memory()
 
 BeforeExecute
--- ClickHouse.MySql ClickHouse (asynchronously)
+--  ClickHouse.MySql ClickHouse (asynchronously)
 
 INSERT INTO TempTable
 (
@@ -23,7 +23,7 @@ VALUES
 ('John')
 
 BeforeExecute
--- ClickHouse.MySql ClickHouse (asynchronously)
+--  ClickHouse.MySql ClickHouse (asynchronously)
 
 SELECT
 	t.Name
@@ -32,7 +32,7 @@ FROM
 		INNER JOIN TempTable t ON p.FirstName = t.Name
 
 BeforeExecute
--- ClickHouse.MySql ClickHouse (asynchronously)
+--  ClickHouse.MySql ClickHouse (asynchronously)
 
 DROP TABLE IF EXISTS TempTable
 

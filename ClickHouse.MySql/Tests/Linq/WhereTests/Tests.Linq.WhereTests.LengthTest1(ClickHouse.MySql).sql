@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- ClickHouse.MySql ClickHouse
+--  ClickHouse.MySql ClickHouse
 
 SELECT
 	nm.MiddleName
@@ -15,7 +15,7 @@ WHERE
 	nm.Value_1 <> 0 OR nm.Value_1 IS NULL
 
 BeforeExecute
--- ClickHouse.MySql ClickHouse
+--  ClickHouse.MySql ClickHouse
 
 SELECT
 	t1.FirstName,

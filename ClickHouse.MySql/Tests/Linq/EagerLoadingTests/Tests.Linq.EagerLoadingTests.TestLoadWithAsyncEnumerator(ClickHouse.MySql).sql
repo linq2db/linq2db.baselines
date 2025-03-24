@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- ClickHouse.MySql ClickHouse (asynchronously)
+--  ClickHouse.MySql ClickHouse (asynchronously)
 
 SELECT
 	m_2.Id1,
@@ -18,7 +18,7 @@ FROM
 		INNER JOIN DetailClass d ON m_2.Id1 = d.MasterId
 
 BeforeExecute
--- ClickHouse.MySql ClickHouse (asynchronously)
+--  ClickHouse.MySql ClickHouse (asynchronously)
 
 SELECT
 	m_1.Id1,
@@ -33,7 +33,7 @@ WHERE
 	m_1.Id1 >= 0 AND d.DetailId % 2 = 0
 
 BeforeExecute
--- ClickHouse.MySql ClickHouse (asynchronously)
+--  ClickHouse.MySql ClickHouse (asynchronously)
 
 SELECT
 	m_1.Id1,

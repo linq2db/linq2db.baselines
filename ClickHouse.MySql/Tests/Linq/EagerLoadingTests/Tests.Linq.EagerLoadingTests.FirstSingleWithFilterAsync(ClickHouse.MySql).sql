@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- ClickHouse.MySql ClickHouse (asynchronously)
+--  ClickHouse.MySql ClickHouse (asynchronously)
 
 SELECT
 	m_1.Id1,
@@ -17,7 +17,7 @@ FROM
 		INNER JOIN DetailClass d ON m_1.Id1 = d.MasterId
 
 BeforeExecute
--- ClickHouse.MySql ClickHouse (asynchronously)
+--  ClickHouse.MySql ClickHouse (asynchronously)
 
 SELECT
 	x.Id1
@@ -28,7 +28,7 @@ WHERE
 LIMIT 1
 
 BeforeExecute
--- ClickHouse.MySql ClickHouse (asynchronously)
+--  ClickHouse.MySql ClickHouse (asynchronously)
 
 SELECT
 	m_1.Id1,
@@ -46,7 +46,7 @@ FROM
 		INNER JOIN DetailClass d ON m_1.Id1 = d.MasterId
 
 BeforeExecute
--- ClickHouse.MySql ClickHouse (asynchronously)
+--  ClickHouse.MySql ClickHouse (asynchronously)
 
 SELECT
 	x.Id1
@@ -57,7 +57,7 @@ WHERE
 LIMIT 1
 
 BeforeExecute
--- ClickHouse.MySql ClickHouse (asynchronously)
+--  ClickHouse.MySql ClickHouse (asynchronously)
 
 SELECT
 	m_1.Id1,
@@ -80,7 +80,7 @@ FROM
 		INNER JOIN DetailClass d ON m_1.Id1 = d.MasterId
 
 BeforeExecute
--- ClickHouse.MySql ClickHouse (asynchronously)
+--  ClickHouse.MySql ClickHouse (asynchronously)
 
 SELECT
 	x.Id1

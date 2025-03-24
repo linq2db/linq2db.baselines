@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- ClickHouse.MySql ClickHouse
+--  ClickHouse.MySql ClickHouse
 
 SELECT
 	addDays(now(), t.Value) as Value1,
@@ -14,7 +14,7 @@ SELECT
 	addDays(now(), 4) as Value2
 
 BeforeExecute
--- ClickHouse.MySql ClickHouse
+--  ClickHouse.MySql ClickHouse
 
 SELECT
 	v_1.Value2

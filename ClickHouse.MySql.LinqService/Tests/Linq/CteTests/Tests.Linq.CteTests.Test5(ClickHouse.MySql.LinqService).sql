@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- ClickHouse.MySql ClickHouse
+--  ClickHouse.MySql ClickHouse
 
 WITH CTE_1 AS
 (
@@ -24,7 +24,7 @@ FROM
 		INNER JOIN CTE_1 c2 ON p.ParentID = c2.ParentID
 
 BeforeExecute
--- ClickHouse.MySql ClickHouse
+--  ClickHouse.MySql ClickHouse
 
 SELECT
 	COUNT(*)

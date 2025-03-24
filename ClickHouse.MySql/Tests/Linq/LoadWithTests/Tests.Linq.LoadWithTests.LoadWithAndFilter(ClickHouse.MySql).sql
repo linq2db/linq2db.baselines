@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- ClickHouse.MySql ClickHouse
+--  ClickHouse.MySql ClickHouse
 
 SELECT
 	m_2.Id,
@@ -32,7 +32,7 @@ FROM
 		LEFT JOIN SubItem1 a_ParentSubItem ON d_1.ParentId = a_ParentSubItem.Id
 
 BeforeExecute
--- ClickHouse.MySql ClickHouse
+--  ClickHouse.MySql ClickHouse
 
 SELECT
 	m_2.Id,
@@ -53,7 +53,7 @@ FROM
 		INNER JOIN SubItem1 d ON m_2.Id = d.ParentId
 
 BeforeExecute
--- ClickHouse.MySql ClickHouse
+--  ClickHouse.MySql ClickHouse
 
 SELECT
 	m_2.Id,
@@ -74,7 +74,7 @@ FROM
 		INNER JOIN SubItem2 d ON m_2.Id = d.ParentId
 
 BeforeExecute
--- ClickHouse.MySql ClickHouse
+--  ClickHouse.MySql ClickHouse
 
 SELECT
 	m_1.Id,
@@ -89,7 +89,7 @@ ORDER BY
 	m_1.Id
 
 BeforeExecute
--- ClickHouse.MySql ClickHouse
+--  ClickHouse.MySql ClickHouse
 
 SELECT
 	m_2.Id,
@@ -124,7 +124,7 @@ FROM
 		LEFT JOIN SubItem1 a_ParentSubItem ON d_1.ParentId = a_ParentSubItem.Id
 
 BeforeExecute
--- ClickHouse.MySql ClickHouse
+--  ClickHouse.MySql ClickHouse
 
 SELECT
 	m_2.Id,
@@ -147,7 +147,7 @@ WHERE
 	d.Value = d.Value OR d.Value IS NULL AND d.Value IS NULL
 
 BeforeExecute
--- ClickHouse.MySql ClickHouse
+--  ClickHouse.MySql ClickHouse
 
 SELECT
 	m_2.Id,
@@ -173,7 +173,7 @@ WHERE
 	d.Value = d.Value OR d.Value IS NULL AND d.Value IS NULL
 
 BeforeExecute
--- ClickHouse.MySql ClickHouse
+--  ClickHouse.MySql ClickHouse
 
 SELECT
 	m_1.Id,
@@ -188,7 +188,7 @@ ORDER BY
 	m_1.Id
 
 BeforeExecute
--- ClickHouse.MySql ClickHouse
+--  ClickHouse.MySql ClickHouse
 
 SELECT
 	m_2.Id,
@@ -221,7 +221,7 @@ FROM
 		LEFT JOIN SubItem1 a_ParentSubItem ON d_1.ParentId = a_ParentSubItem.Id
 
 BeforeExecute
--- ClickHouse.MySql ClickHouse
+--  ClickHouse.MySql ClickHouse
 
 SELECT
 	m_2.Id,
@@ -242,7 +242,7 @@ FROM
 		INNER JOIN SubItem1 d ON m_2.Id = d.ParentId
 
 BeforeExecute
--- ClickHouse.MySql ClickHouse
+--  ClickHouse.MySql ClickHouse
 
 SELECT
 	m_2.Id,
@@ -266,7 +266,7 @@ FROM
 		LEFT JOIN MainItem a_Parent ON d.ParentId = a_Parent.Id
 
 BeforeExecute
--- ClickHouse.MySql ClickHouse
+--  ClickHouse.MySql ClickHouse
 
 SELECT
 	m_1.Id,

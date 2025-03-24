@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- ClickHouse.MySql ClickHouse
+--  ClickHouse.MySql ClickHouse
 
 CREATE TEMPORARY TABLE IsTemporaryTable
 (
@@ -9,7 +9,7 @@ CREATE TEMPORARY TABLE IsTemporaryTable
 ENGINE = Memory()
 
 BeforeExecute
--- ClickHouse.MySql ClickHouse
+--  ClickHouse.MySql ClickHouse
 
 SELECT
 	t1.Id,
@@ -18,7 +18,7 @@ FROM
 	IsTemporaryTable t1
 
 BeforeExecute
--- ClickHouse.MySql ClickHouse
+--  ClickHouse.MySql ClickHouse
 
 DROP TABLE IF EXISTS IsTemporaryTable
 
