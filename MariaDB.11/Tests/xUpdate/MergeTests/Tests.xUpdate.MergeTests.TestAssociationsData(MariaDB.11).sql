@@ -1,12 +1,12 @@
 ﻿BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+--  MariaDB.11 MariaDB.10.MySqlConnector MySql
 
 ALTER TABLE Person AUTO_INCREMENT = 5
 
 BeforeExecute
 BeginTransaction
 BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+--  MariaDB.11 MariaDB.10.MySqlConnector MySql
 
 SELECT
 	`t1`.`PersonID`,
@@ -17,7 +17,7 @@ ORDER BY
 	`t1`.`PersonID`
 
 BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+--  MariaDB.11 MariaDB.10.MySqlConnector MySql
 
 SELECT
 	`t1`.`PersonID`,
@@ -28,7 +28,7 @@ ORDER BY
 	`t1`.`PersonID`
 
 BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+--  MariaDB.11 MariaDB.10.MySqlConnector MySql
 
 SELECT
 	`t1`.`FirstName`,

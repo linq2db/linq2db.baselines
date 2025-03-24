@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+--  MariaDB.11 MariaDB.10.MySqlConnector MySql
 
 SELECT
 	CAST(0 AS SIGNED),
@@ -33,7 +33,7 @@ WHERE
 BeforeExecute
 BeginTransaction(RepeatableRead)
 BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+--  MariaDB.11 MariaDB.10.MySqlConnector MySql
 
 SELECT
 	`m_1`.`ParentID`,
@@ -51,7 +51,7 @@ FROM
 BeforeExecute
 DisposeTransaction
 BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+--  MariaDB.11 MariaDB.10.MySqlConnector MySql
 
 SELECT
 	`t1`.`ParentID`,
@@ -60,7 +60,7 @@ FROM
 	`Parent` `t1`
 
 BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+--  MariaDB.11 MariaDB.10.MySqlConnector MySql
 
 SELECT
 	`t1`.`ParentID`,

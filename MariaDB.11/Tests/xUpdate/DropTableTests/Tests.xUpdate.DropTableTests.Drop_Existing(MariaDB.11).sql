@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+--  MariaDB.11 MariaDB.10.MySqlConnector MySql
 
 CREATE TABLE `Table`
 (
@@ -7,7 +7,7 @@ CREATE TABLE `Table`
 )
 
 BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+--  MariaDB.11 MariaDB.10.MySqlConnector MySql
 
 DROP TABLE `Table`
 

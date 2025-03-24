@@ -1,10 +1,10 @@
 ﻿BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+--  MariaDB.11 MariaDB.10.MySqlConnector MySql
 
 DROP TABLE IF EXISTS `Issue681Table2`
 
 BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+--  MariaDB.11 MariaDB.10.MySqlConnector MySql
 
 CREATE TABLE `Issue681Table2`
 (
@@ -15,7 +15,7 @@ CREATE TABLE `Issue681Table2`
 )
 
 BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+--  MariaDB.11 MariaDB.10.MySqlConnector MySql
 
 DROP TABLE IF EXISTS `Issue681Table2`
 

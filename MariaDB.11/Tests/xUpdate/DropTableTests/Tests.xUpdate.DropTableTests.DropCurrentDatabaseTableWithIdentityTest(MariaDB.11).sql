@@ -1,10 +1,10 @@
 ﻿BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+--  MariaDB.11 MariaDB.10.MySqlConnector MySql
 
 DROP TABLE IF EXISTS `DropTableTestID`
 
 BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+--  MariaDB.11 MariaDB.10.MySqlConnector MySql
 
 CREATE TABLE `DropTableTestID`
 (
@@ -15,7 +15,7 @@ CREATE TABLE `DropTableTestID`
 )
 
 BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+--  MariaDB.11 MariaDB.10.MySqlConnector MySql
 
 INSERT INTO `DropTableTestID`
 (
@@ -27,7 +27,7 @@ VALUES
 )
 
 BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+--  MariaDB.11 MariaDB.10.MySqlConnector MySql
 
 SELECT
 	`t`.`ID`,
@@ -36,12 +36,12 @@ FROM
 	`DropTableTestID` `t`
 
 BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+--  MariaDB.11 MariaDB.10.MySqlConnector MySql
 
 DROP TABLE `DropTableTestID`
 
 BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+--  MariaDB.11 MariaDB.10.MySqlConnector MySql
 
 SELECT
 	`t1`.`ID`,

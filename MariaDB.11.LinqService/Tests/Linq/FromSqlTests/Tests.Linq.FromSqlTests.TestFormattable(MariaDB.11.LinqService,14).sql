@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+--  MariaDB.11 MariaDB.10.MySqlConnector MySql
 
 SELECT
 	`c_1`.`value`,
@@ -14,7 +14,7 @@ ORDER BY
 	`c_1`.`id`
 
 BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+--  MariaDB.11 MariaDB.10.MySqlConnector MySql
 DECLARE @startId Int32
 SET     @startId = 5
 DECLARE @endId Int32

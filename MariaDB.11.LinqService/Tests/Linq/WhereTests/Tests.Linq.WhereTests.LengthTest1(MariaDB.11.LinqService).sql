@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+--  MariaDB.11 MariaDB.10.MySqlConnector MySql
 
 SELECT
 	`nm`.`MiddleName`
@@ -15,7 +15,7 @@ WHERE
 	`nm`.`Value_1` <> 0 OR `nm`.`Value_1` IS NULL
 
 BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+--  MariaDB.11 MariaDB.10.MySqlConnector MySql
 
 SELECT
 	`t1`.`FirstName`,

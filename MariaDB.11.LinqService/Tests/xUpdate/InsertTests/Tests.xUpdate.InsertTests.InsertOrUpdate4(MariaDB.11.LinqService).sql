@@ -1,10 +1,10 @@
 ﻿BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+--  MariaDB.11 MariaDB.10.MySqlConnector MySql
 
 ALTER TABLE Person AUTO_INCREMENT = 5
 
 BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+--  MariaDB.11 MariaDB.10.MySqlConnector MySql
 DECLARE @FirstName VarChar(4) -- String
 SET     @FirstName = 'John'
 DECLARE @LastName VarChar(7) -- String
@@ -30,12 +30,12 @@ VALUES
 )
 
 BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+--  MariaDB.11 MariaDB.10.MySqlConnector MySql
 
 SELECT LAST_INSERT_ID()
 
 BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+--  MariaDB.11 MariaDB.10.MySqlConnector MySql
 DECLARE @id Int32
 SET     @id = 5
 DECLARE @diagnosis VarChar(3) -- String
@@ -57,7 +57,7 @@ ON DUPLICATE KEY UPDATE
 	`Diagnosis` = CAST(Char_Length(`Diagnosis`) + @i AS CHAR(11))
 
 BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+--  MariaDB.11 MariaDB.10.MySqlConnector MySql
 DECLARE @id Int32
 SET     @id = 5
 DECLARE @diagnosis VarChar(3) -- String
@@ -79,7 +79,7 @@ ON DUPLICATE KEY UPDATE
 	`Diagnosis` = CAST(Char_Length(`Diagnosis`) + @i AS CHAR(11))
 
 BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+--  MariaDB.11 MariaDB.10.MySqlConnector MySql
 DECLARE @id Int32
 SET     @id = 5
 DECLARE @diagnosis VarChar(3) -- String
@@ -101,7 +101,7 @@ ON DUPLICATE KEY UPDATE
 	`Diagnosis` = CAST(Char_Length(`Diagnosis`) + @i AS CHAR(11))
 
 BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+--  MariaDB.11 MariaDB.10.MySqlConnector MySql
 DECLARE @id Int32
 SET     @id = 5
 

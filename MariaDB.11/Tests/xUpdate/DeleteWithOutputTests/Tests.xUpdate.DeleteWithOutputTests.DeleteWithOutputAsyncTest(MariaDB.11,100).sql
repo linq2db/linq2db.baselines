@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+--  MariaDB.11 MariaDB.10.MySqlConnector MySql
 
 SELECT
 	`s`.`Id`,
@@ -11,7 +11,7 @@ WHERE
 	`s`.`Id` > 3
 
 BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql (asynchronously)
+--  MariaDB.11 MariaDB.10.MySqlConnector MySql (asynchronously)
 
 DELETE  
 FROM
@@ -24,7 +24,7 @@ RETURNING
 	`TableWithData`.`ValueStr`
 
 BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql (asynchronously)
+--  MariaDB.11 MariaDB.10.MySqlConnector MySql (asynchronously)
 
 DROP TABLE IF EXISTS `TableWithData`
 

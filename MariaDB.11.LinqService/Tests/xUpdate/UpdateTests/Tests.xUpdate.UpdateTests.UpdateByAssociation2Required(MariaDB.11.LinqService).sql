@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+--  MariaDB.11 MariaDB.10.MySqlConnector MySql
 DECLARE @id Int32
 SET     @id = 3
 
@@ -12,7 +12,7 @@ WHERE
 	`p`.`Id` = @id AND `p`.`Id` = `a_MainRequired`.`Id`
 
 BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+--  MariaDB.11 MariaDB.10.MySqlConnector MySql
 
 SELECT
 	`t1`.`Id`,

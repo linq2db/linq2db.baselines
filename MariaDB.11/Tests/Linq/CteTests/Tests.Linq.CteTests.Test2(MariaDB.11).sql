@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+--  MariaDB.11 MariaDB.10.MySqlConnector MySql
 
 WITH RECURSIVE `CTE1_` (`ParentID`)
 AS
@@ -67,7 +67,7 @@ FROM
 		INNER JOIN `LATEST` `c4_1` ON `c4_1`.`ParentID` = `c3`.`ParentID`
 
 BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+--  MariaDB.11 MariaDB.10.MySqlConnector MySql
 
 SELECT
 	`c3`.`ParentID`,

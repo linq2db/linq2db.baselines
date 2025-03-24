@@ -1,10 +1,10 @@
 ﻿BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+--  MariaDB.11 MariaDB.10.MySqlConnector MySql
 
 DROP TABLE IF EXISTS `TempTable`
 
 BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql (asynchronously)
+--  MariaDB.11 MariaDB.10.MySqlConnector MySql (asynchronously)
 
 CREATE TEMPORARY TABLE `TempTable`
 (
@@ -12,7 +12,7 @@ CREATE TEMPORARY TABLE `TempTable`
 )
 
 BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql (asynchronously)
+--  MariaDB.11 MariaDB.10.MySqlConnector MySql (asynchronously)
 
 INSERT INTO `TempTable`
 (
@@ -24,12 +24,12 @@ FROM
 	`Parent` `p`
 
 BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql (asynchronously)
+--  MariaDB.11 MariaDB.10.MySqlConnector MySql (asynchronously)
 
 DROP TEMPORARY TABLE IF EXISTS `TempTable`
 
 BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+--  MariaDB.11 MariaDB.10.MySqlConnector MySql
 
 DROP TABLE `TempTable`
 

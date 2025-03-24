@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql (asynchronously)
+--  MariaDB.11 MariaDB.10.MySqlConnector MySql (asynchronously)
 DECLARE @search VarChar(5) -- String
 SET     @search = 'test%'
 DECLARE @search_1 VarChar(4) -- String
@@ -31,17 +31,17 @@ WHERE
 	`row1_2`.`Field1` LIKE @search_2 ESCAPE '~'
 
 BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql (asynchronously)
+--  MariaDB.11 MariaDB.10.MySqlConnector MySql (asynchronously)
 
 DROP TABLE IF EXISTS `table3`
 
 BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql (asynchronously)
+--  MariaDB.11 MariaDB.10.MySqlConnector MySql (asynchronously)
 
 DROP TABLE IF EXISTS `table2`
 
 BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql (asynchronously)
+--  MariaDB.11 MariaDB.10.MySqlConnector MySql (asynchronously)
 
 DROP TABLE IF EXISTS `table1`
 
