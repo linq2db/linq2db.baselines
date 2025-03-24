@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2008
+--  SqlServer.2008
 DECLARE @date NVarChar(4000) -- String
 SET     @date = N'2022-02-24'
 

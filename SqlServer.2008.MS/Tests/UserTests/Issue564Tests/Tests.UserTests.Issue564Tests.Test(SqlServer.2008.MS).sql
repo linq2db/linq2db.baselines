@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2008.MS SqlServer.2008
+--  SqlServer.2008.MS SqlServer.2008
 DECLARE @Type NVarChar(4000) -- String
 SET     @Type = N'Child564A'
 DECLARE @StringValue NVarChar(20) -- String
@@ -17,7 +17,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2008.MS SqlServer.2008
+--  SqlServer.2008.MS SqlServer.2008
 DECLARE @Type NVarChar(4000) -- String
 SET     @Type = N'Child564B'
 DECLARE @IntValue Int -- Int32
@@ -35,7 +35,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2008.MS SqlServer.2008
+--  SqlServer.2008.MS SqlServer.2008
 
 SELECT
 	COUNT(*)

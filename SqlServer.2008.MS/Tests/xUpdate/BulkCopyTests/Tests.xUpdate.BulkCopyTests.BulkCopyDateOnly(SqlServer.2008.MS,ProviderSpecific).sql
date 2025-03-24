@@ -2,7 +2,7 @@
 INSERT BULK [DateOnlyTable](Date)
 
 BeforeExecute
--- SqlServer.2008.MS SqlServer.2008
+--  SqlServer.2008.MS SqlServer.2008
 
 SELECT TOP (2)
 	[t1].[Date]

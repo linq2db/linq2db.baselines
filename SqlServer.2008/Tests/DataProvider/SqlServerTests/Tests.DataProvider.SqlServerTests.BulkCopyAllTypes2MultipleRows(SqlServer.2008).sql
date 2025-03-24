@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2008
+--  SqlServer.2008
 
 DELETE [p]
 FROM
@@ -8,12 +8,12 @@ WHERE
 	[p].[ID] >= 3
 
 BeforeExecute
--- SqlServer.2008
+--  SqlServer.2008
 
 SET IDENTITY_INSERT [AllTypes2] ON
 
 BeforeExecute
--- SqlServer.2008
+--  SqlServer.2008
 DECLARE @p1 hierarchyid -- Udt -- Object
 SET     @p1 = /1/3/
 DECLARE @p2 geography -- Udt -- Object
@@ -99,12 +99,12 @@ VALUES
 (12,CAST('2020-03-09T00:00:00.0000000' AS DATETIME2),CAST('2020-02-29T18:03:55.1231234+00:00' AS DATETIMEOFFSET),CAST('2020-03-09T00:00:00.0000000' AS DATETIME2),CAST('00:00:09.0000000' AS TIME),@p28,@p29,@p30)
 
 BeforeExecute
--- SqlServer.2008
+--  SqlServer.2008
 
 SET IDENTITY_INSERT [AllTypes2] OFF
 
 BeforeExecute
--- SqlServer.2008
+--  SqlServer.2008
 
 SELECT
 	[p].[ID],

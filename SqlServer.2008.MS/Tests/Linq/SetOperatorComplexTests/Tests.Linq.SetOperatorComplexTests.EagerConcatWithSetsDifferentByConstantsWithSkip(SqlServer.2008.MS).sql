@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 BeginTransaction(RepeatableRead)
 BeforeExecute
--- SqlServer.2008.MS SqlServer.2008
+--  SqlServer.2008.MS SqlServer.2008
 DECLARE @skip Int -- Int32
 SET     @skip = 6
 
@@ -55,7 +55,7 @@ FROM
 BeforeExecute
 DisposeTransaction
 BeforeExecute
--- SqlServer.2008.MS SqlServer.2008
+--  SqlServer.2008.MS SqlServer.2008
 DECLARE @skip Int -- Int32
 SET     @skip = 6
 
@@ -100,7 +100,7 @@ ORDER BY
 BeforeExecute
 BeginTransaction(RepeatableRead)
 BeforeExecute
--- SqlServer.2008.MS SqlServer.2008
+--  SqlServer.2008.MS SqlServer.2008
 
 SELECT
 	[m_1].[BookId],
@@ -114,7 +114,7 @@ FROM
 BeforeExecute
 DisposeTransaction
 BeforeExecute
--- SqlServer.2008.MS SqlServer.2008
+--  SqlServer.2008.MS SqlServer.2008
 
 SELECT
 	[t1].[Discriminator],

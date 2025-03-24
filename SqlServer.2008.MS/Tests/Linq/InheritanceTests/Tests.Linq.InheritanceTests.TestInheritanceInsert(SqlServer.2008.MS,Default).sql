@@ -2,7 +2,7 @@
 INSERT BULK [InheritanceFilter](Id, Code, Child1Field, Child2Field, Grandchild11Field, Grandchild12Field, Grandchild21Field, Grandchild22Field)
 
 BeforeExecute
--- SqlServer.2008.MS SqlServer.2008
+--  SqlServer.2008.MS SqlServer.2008
 
 SELECT
 	[t1].[Code],

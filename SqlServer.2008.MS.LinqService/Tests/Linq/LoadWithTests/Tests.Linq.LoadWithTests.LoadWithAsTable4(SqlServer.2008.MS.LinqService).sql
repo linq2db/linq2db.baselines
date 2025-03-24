@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2008.MS SqlServer.2008
+--  SqlServer.2008.MS SqlServer.2008
 
 SELECT
 	[m_1].[ParentID],
@@ -18,7 +18,7 @@ FROM
 		LEFT JOIN [Parent] [a_Parent] ON [d].[ParentID] = [a_Parent].[ParentID]
 
 BeforeExecute
--- SqlServer.2008.MS SqlServer.2008
+--  SqlServer.2008.MS SqlServer.2008
 
 SELECT TOP (1)
 	[t].[ParentID],

@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2008.MS SqlServer.2008
+--  SqlServer.2008.MS SqlServer.2008
 
 INSERT INTO [Issue4460Table]
 (
@@ -12,7 +12,7 @@ VALUES
 (1,N'GrandChild',N'Tom',N'Black')
 
 BeforeExecute
--- SqlServer.2008.MS SqlServer.2008
+--  SqlServer.2008.MS SqlServer.2008
 
 SELECT
 	[t1].[Code],

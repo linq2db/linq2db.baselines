@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2008.MS SqlServer.2008
+--  SqlServer.2008.MS SqlServer.2008
 
 SELECT
 	DAY(CAST('2022-02-22T00:00:00.0000000' AS DATETIME2))

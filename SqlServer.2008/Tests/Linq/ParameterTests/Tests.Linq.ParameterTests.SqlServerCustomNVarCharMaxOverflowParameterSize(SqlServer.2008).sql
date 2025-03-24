@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2008
+--  SqlServer.2008
 DECLARE @NVarChar NVarChar -- String
 SET     @NVarChar = Tests.Linq.ParameterTests+NVarChar
 
@@ -13,7 +13,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2008
+--  SqlServer.2008
 
 SELECT
 	[t1].[VarBinary],
@@ -23,7 +23,7 @@ FROM
 	[AllTypesCustomMaxLength] [t1]
 
 BeforeExecute
--- SqlServer.2008
+--  SqlServer.2008
 DECLARE @p NVarChar -- String
 SET     @p = Tests.Linq.ParameterTests+NVarChar
 

@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 BeginTransaction
 BeforeExecute
--- SqlServer.2008.MS SqlServer.2008
+--  SqlServer.2008.MS SqlServer.2008
 
 DELETE [c_1]
 FROM
@@ -10,7 +10,7 @@ WHERE
 	[c_1].[ID] > 1000
 
 BeforeExecute
--- SqlServer.2008.MS SqlServer.2008
+--  SqlServer.2008.MS SqlServer.2008
 
 INSERT INTO [LinqDataTypes]
 (
@@ -31,7 +31,7 @@ FROM
 	) [t2]
 
 BeforeExecute
--- SqlServer.2008.MS SqlServer.2008
+--  SqlServer.2008.MS SqlServer.2008
 
 DELETE [c_1]
 FROM

@@ -1,10 +1,10 @@
 ﻿BeforeExecute
--- SqlServer.2008.MS SqlServer.2008
+--  SqlServer.2008.MS SqlServer.2008
 
 DBCC CHECKIDENT ('Person', RESEED, 4)
 
 BeforeExecute
--- SqlServer.2008.MS SqlServer.2008
+--  SqlServer.2008.MS SqlServer.2008
 DECLARE @Gender NChar(1) -- StringFixedLength
 SET     @Gender = N'M'
 DECLARE @Name_FirstName NVarChar(4000) -- String

@@ -1,12 +1,12 @@
 ﻿BeforeExecute
--- SqlServer.2008.MS SqlServer.2008
+--  SqlServer.2008.MS SqlServer.2008
 
 DBCC CHECKIDENT ('AllTypes', RESEED, 2)
 
 BeforeExecute
 BeginTransaction
 BeforeExecute
--- SqlServer.2008.MS SqlServer.2008
+--  SqlServer.2008.MS SqlServer.2008
 
 SELECT
 	MAX([t1].[ID])
@@ -14,7 +14,7 @@ FROM
 	[AllTypes] [t1]
 
 BeforeExecute
--- SqlServer.2008.MS SqlServer.2008
+--  SqlServer.2008.MS SqlServer.2008
 
 MERGE INTO [AllTypes] [Target]
 USING (VALUES
@@ -44,7 +44,7 @@ VALUES
 ;
 
 BeforeExecute
--- SqlServer.2008.MS SqlServer.2008
+--  SqlServer.2008.MS SqlServer.2008
 DECLARE @take Int -- Int32
 SET     @take = 1
 

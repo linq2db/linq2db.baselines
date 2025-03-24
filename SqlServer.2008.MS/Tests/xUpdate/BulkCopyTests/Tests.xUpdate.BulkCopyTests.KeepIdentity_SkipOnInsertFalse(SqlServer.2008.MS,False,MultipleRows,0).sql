@@ -1,10 +1,10 @@
 ﻿BeforeExecute
--- SqlServer.2008.MS SqlServer.2008
+--  SqlServer.2008.MS SqlServer.2008
 
 DBCC CHECKIDENT ('AllTypes', RESEED, 2)
 
 BeforeExecute
--- SqlServer.2008.MS SqlServer.2008
+--  SqlServer.2008.MS SqlServer.2008
 DECLARE @Value Int -- Int32
 SET     @Value = 0
 
@@ -20,7 +20,7 @@ VALUES
 SELECT SCOPE_IDENTITY()
 
 BeforeExecute
--- SqlServer.2008.MS SqlServer.2008
+--  SqlServer.2008.MS SqlServer.2008
 
 INSERT INTO [AllTypes]
 (
@@ -31,7 +31,7 @@ VALUES
 (300)
 
 BeforeExecute
--- SqlServer.2008.MS SqlServer.2008
+--  SqlServer.2008.MS SqlServer.2008
 DECLARE @lastId Int -- Int32
 SET     @lastId = 3
 
@@ -46,7 +46,7 @@ ORDER BY
 	[t1].[ID]
 
 BeforeExecute
--- SqlServer.2008.MS SqlServer.2008
+--  SqlServer.2008.MS SqlServer.2008
 DECLARE @lastId Int -- Int32
 SET     @lastId = 3
 

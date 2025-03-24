@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2008
+--  SqlServer.2008
 
 SELECT
 	[p].[ParentID],
@@ -20,7 +20,7 @@ FROM
 		) [c_2]
 
 BeforeExecute
--- SqlServer.2008
+--  SqlServer.2008
 
 SELECT
 	COUNT(*)

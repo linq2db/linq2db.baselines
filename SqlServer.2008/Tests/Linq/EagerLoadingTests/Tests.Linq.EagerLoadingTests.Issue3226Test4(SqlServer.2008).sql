@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 BeginTransaction(RepeatableRead)
 BeforeExecute
--- SqlServer.2008
+--  SqlServer.2008
 
 SELECT
 	[m_1].[Id],
@@ -23,7 +23,7 @@ FROM
 BeforeExecute
 DisposeTransaction
 BeforeExecute
--- SqlServer.2008
+--  SqlServer.2008
 
 SELECT
 	[x_1].[Id],

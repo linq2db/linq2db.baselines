@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2008
+--  SqlServer.2008
 
 INSERT INTO [dbo].[LinqDataTypes]
 (
@@ -24,7 +24,7 @@ VALUES
 (4009,1009,CAST('2001-01-11T01:11:21.1000000' AS DATETIME2),1,'233bf399-9710-4e79-873d-2ec7bf1e0009',NULL,9)
 
 BeforeExecute
--- SqlServer.2008
+--  SqlServer.2008
 
 DELETE [p]
 FROM

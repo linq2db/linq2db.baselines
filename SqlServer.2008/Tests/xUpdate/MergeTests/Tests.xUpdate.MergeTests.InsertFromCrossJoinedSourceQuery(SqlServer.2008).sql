@@ -1,28 +1,28 @@
 ﻿BeforeExecute
 BeginTransaction
 BeforeExecute
--- SqlServer.2008
+--  SqlServer.2008
 
 DELETE [t1]
 FROM
 	[Parent] [t1]
 
 BeforeExecute
--- SqlServer.2008
+--  SqlServer.2008
 
 DELETE [t1]
 FROM
 	[Child] [t1]
 
 BeforeExecute
--- SqlServer.2008
+--  SqlServer.2008
 
 DELETE [t1]
 FROM
 	[GrandChild] [t1]
 
 BeforeExecute
--- SqlServer.2008
+--  SqlServer.2008
 DECLARE @Id Int -- Int32
 SET     @Id = 1
 
@@ -36,7 +36,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2008
+--  SqlServer.2008
 DECLARE @Id Int -- Int32
 SET     @Id = 2
 
@@ -50,7 +50,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2008
+--  SqlServer.2008
 DECLARE @Id Int -- Int32
 SET     @Id = 10
 
@@ -64,7 +64,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2008
+--  SqlServer.2008
 DECLARE @Id Int -- Int32
 SET     @Id = 20
 
@@ -78,7 +78,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2008
+--  SqlServer.2008
 DECLARE @Id Int -- Int32
 SET     @Id = 11
 DECLARE @LeftId Int -- Int32
@@ -100,7 +100,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2008
+--  SqlServer.2008
 
 MERGE INTO [GrandChild] [Target]
 USING (
@@ -135,7 +135,7 @@ VALUES
 ;
 
 BeforeExecute
--- SqlServer.2008
+--  SqlServer.2008
 
 SELECT
 	[t1].[GrandChildID],

@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 BeginTransaction
 BeforeExecute
--- SqlServer.2008.MS SqlServer.2008
+--  SqlServer.2008.MS SqlServer.2008
 DECLARE @v1 Int -- Int32
 SET     @v1 = 1
 

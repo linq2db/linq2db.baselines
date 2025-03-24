@@ -5,7 +5,7 @@ BeforeExecute
 INSERT ASYNC BULK [SimpleBulkCopyTable](Id)
 
 BeforeExecute
--- SqlServer.2008 (asynchronously)
+--  SqlServer.2008 (asynchronously)
 
 INSERT INTO [SimpleBulkCopyTable]
 (
@@ -21,7 +21,7 @@ BeforeExecute
 INSERT ASYNC BULK [SimpleBulkCopyTable](Id)
 
 BeforeExecute
--- SqlServer.2008 (asynchronously)
+--  SqlServer.2008 (asynchronously)
 
 INSERT INTO [SimpleBulkCopyTable]
 (

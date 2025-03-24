@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2008
+--  SqlServer.2008
 
 INSERT INTO [Issue1403Tests_1]
 (
@@ -13,7 +13,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2008
+--  SqlServer.2008
 
 SELECT TOP (1)
 	[t1].[event_id],

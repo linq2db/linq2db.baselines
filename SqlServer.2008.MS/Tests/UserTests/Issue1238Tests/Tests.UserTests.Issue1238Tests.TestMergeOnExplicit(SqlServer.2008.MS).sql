@@ -1,14 +1,14 @@
 ﻿BeforeExecute
 BeginTransaction
 BeforeExecute
--- SqlServer.2008.MS SqlServer.2008
+--  SqlServer.2008.MS SqlServer.2008
 
 DELETE [t1]
 FROM
 	[InheritanceParent] [t1]
 
 BeforeExecute
--- SqlServer.2008.MS SqlServer.2008
+--  SqlServer.2008.MS SqlServer.2008
 
 MERGE INTO [InheritanceParent] [Target]
 USING (VALUES
@@ -43,7 +43,7 @@ VALUES
 ;
 
 BeforeExecute
--- SqlServer.2008.MS SqlServer.2008
+--  SqlServer.2008.MS SqlServer.2008
 
 SELECT
 	COUNT(*)
@@ -51,7 +51,7 @@ FROM
 	[InheritanceParent] [t1]
 
 BeforeExecute
--- SqlServer.2008.MS SqlServer.2008
+--  SqlServer.2008.MS SqlServer.2008
 
 MERGE INTO [InheritanceParent] [Target]
 USING (VALUES
@@ -86,7 +86,7 @@ VALUES
 ;
 
 BeforeExecute
--- SqlServer.2008.MS SqlServer.2008
+--  SqlServer.2008.MS SqlServer.2008
 
 SELECT
 	COUNT(*)

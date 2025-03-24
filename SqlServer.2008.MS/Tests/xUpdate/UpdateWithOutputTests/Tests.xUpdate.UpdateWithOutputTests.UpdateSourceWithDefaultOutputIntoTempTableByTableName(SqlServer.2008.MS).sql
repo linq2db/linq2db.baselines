@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2008.MS SqlServer.2008
+--  SqlServer.2008.MS SqlServer.2008
 
 CREATE TABLE [tempdb]..[#TableWithData_destination]
 (
@@ -9,7 +9,7 @@ CREATE TABLE [tempdb]..[#TableWithData_destination]
 )
 
 BeforeExecute
--- SqlServer.2008.MS SqlServer.2008
+--  SqlServer.2008.MS SqlServer.2008
 
 UPDATE
 	[TableWithData_source]
@@ -31,7 +31,7 @@ WHERE
 	[TableWithData_source].[Id] > 3
 
 BeforeExecute
--- SqlServer.2008.MS SqlServer.2008
+--  SqlServer.2008.MS SqlServer.2008
 
 SELECT
 	[t1].[Id],
@@ -41,7 +41,7 @@ FROM
 	[tempdb]..[#TableWithData_destination] [t1]
 
 BeforeExecute
--- SqlServer.2008.MS SqlServer.2008
+--  SqlServer.2008.MS SqlServer.2008
 
 IF (OBJECT_ID(N'[tempdb]..[#TableWithData_destination]', N'U') IS NOT NULL)
 	DROP TABLE [tempdb]..[#TableWithData_destination]

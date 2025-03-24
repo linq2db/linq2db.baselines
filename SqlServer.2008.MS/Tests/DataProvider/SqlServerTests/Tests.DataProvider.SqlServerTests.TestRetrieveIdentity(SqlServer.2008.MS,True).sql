@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 BeginTransaction
 BeforeExecute
--- SqlServer.2008.MS SqlServer.2008
+--  SqlServer.2008.MS SqlServer.2008
 DECLARE @FirstName NVarChar(4000) -- String
 SET     @FirstName = N''
 DECLARE @LastName NVarChar(4000) -- String
@@ -27,7 +27,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2008.MS SqlServer.2008
+--  SqlServer.2008.MS SqlServer.2008
 DECLARE @FirstName NVarChar(4000) -- String
 SET     @FirstName = N''
 DECLARE @LastName NVarChar(4000) -- String
@@ -53,7 +53,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2008.MS SqlServer.2008
+--  SqlServer.2008.MS SqlServer.2008
 DECLARE @FirstName NVarChar(4000) -- String
 SET     @FirstName = N''
 DECLARE @LastName NVarChar(4000) -- String
@@ -81,7 +81,7 @@ VALUES
 BeforeExecute
 DisposeTransaction
 BeforeExecute
--- SqlServer.2008.MS SqlServer.2008
+--  SqlServer.2008.MS SqlServer.2008
 
 SELECT
 	MAX([t1].[PersonID])
@@ -89,17 +89,17 @@ FROM
 	[Person] [t1]
 
 BeforeExecute
--- SqlServer.2008.MS SqlServer.2008
+--  SqlServer.2008.MS SqlServer.2008
 
 SELECT IDENT_CURRENT('Person')
 
 BeforeExecute
--- SqlServer.2008.MS SqlServer.2008
+--  SqlServer.2008.MS SqlServer.2008
 
 SELECT IDENT_INCR('Person')
 
 BeforeExecute
--- SqlServer.2008.MS SqlServer.2008
+--  SqlServer.2008.MS SqlServer.2008
 DECLARE @tableName NVarChar(4000) -- String
 SET     @tableName = N'[Person]'
 

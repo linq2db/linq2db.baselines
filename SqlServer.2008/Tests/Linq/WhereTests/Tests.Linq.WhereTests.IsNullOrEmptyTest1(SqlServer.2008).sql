@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2008
+--  SqlServer.2008
 
 SELECT
 	[nm].[MiddleName]
@@ -9,7 +9,7 @@ WHERE
 	NOT ([nm].[MiddleName] IS NULL OR Len([nm].[MiddleName]) = 0)
 
 BeforeExecute
--- SqlServer.2008
+--  SqlServer.2008
 
 SELECT
 	[t1].[FirstName],

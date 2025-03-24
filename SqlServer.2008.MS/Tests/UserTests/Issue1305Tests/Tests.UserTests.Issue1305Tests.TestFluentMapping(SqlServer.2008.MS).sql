@@ -1,15 +1,15 @@
 ﻿BeforeExecute
--- SqlServer.2008.MS SqlServer.2008
+--  SqlServer.2008.MS SqlServer.2008
 
 select @@version
 
 BeforeExecute
--- SqlServer.2008.MS SqlServer.2008
+--  SqlServer.2008.MS SqlServer.2008
 
 SELECT compatibility_level FROM sys.databases WHERE name = db_name()
 
 BeforeExecute
--- SqlServer.2008.MS SqlServer.2008
+--  SqlServer.2008.MS SqlServer.2008
 
 
 				SELECT
@@ -48,7 +48,7 @@ BeforeExecute
 					) IS NULL
 
 BeforeExecute
--- SqlServer.2008.MS SqlServer.2008
+--  SqlServer.2008.MS SqlServer.2008
 
 
 				SELECT
@@ -68,7 +68,7 @@ BeforeExecute
 					c.CONSTRAINT_TYPE='PRIMARY KEY'
 
 BeforeExecute
--- SqlServer.2008.MS SqlServer.2008
+--  SqlServer.2008.MS SqlServer.2008
 
 
 				SELECT
@@ -99,7 +99,7 @@ BeforeExecute
 						x.name = 'MS_Description' AND x.class = 1
 
 BeforeExecute
--- SqlServer.2008.MS SqlServer.2008
+--  SqlServer.2008.MS SqlServer.2008
 
 
 				SELECT
@@ -120,7 +120,7 @@ BeforeExecute
 					Ordinal
 
 BeforeExecute
--- SqlServer.2008.MS SqlServer.2008
+--  SqlServer.2008.MS SqlServer.2008
 
 SELECT
 					SPECIFIC_CATALOG COLLATE DATABASE_DEFAULT + '.' + SPECIFIC_SCHEMA + '.' + SPECIFIC_NAME as ProcedureID,
@@ -141,7 +141,7 @@ SELECT
 				ORDER BY SPECIFIC_CATALOG, SPECIFIC_SCHEMA, SPECIFIC_NAME
 
 BeforeExecute
--- SqlServer.2008.MS SqlServer.2008
+--  SqlServer.2008.MS SqlServer.2008
 
 SELECT
 					SPECIFIC_CATALOG COLLATE DATABASE_DEFAULT + '.' + SPECIFIC_SCHEMA + '.' + SPECIFIC_NAME as ProcedureID,
@@ -170,17 +170,17 @@ SELECT
 BeforeExecute
 BeginTransaction
 BeforeExecute
--- SqlServer.2008.MS SqlServer.2008
+--  SqlServer.2008.MS SqlServer.2008
 
 [TestDataMS].[dbo].[AddIssue792Record]
 
 BeforeExecute
--- SqlServer.2008.MS SqlServer.2008
+--  SqlServer.2008.MS SqlServer.2008
 
 [TestDataMS].[dbo].[DuplicateColumnNames]
 
 BeforeExecute
--- SqlServer.2008.MS SqlServer.2008
+--  SqlServer.2008.MS SqlServer.2008
 DECLARE @input Int -- Int32
 SET     @input = 0
 DECLARE @output Int -- Int32
@@ -189,7 +189,7 @@ SET     @output = 0
 [TestDataMS].[dbo].[ExecuteProcIntParameters]
 
 BeforeExecute
--- SqlServer.2008.MS SqlServer.2008
+--  SqlServer.2008.MS SqlServer.2008
 DECLARE @input Int -- Int32
 SET     @input = 0
 DECLARE @output Int -- Int32
@@ -198,22 +198,22 @@ SET     @output = 0
 [TestDataMS].[dbo].[ExecuteProcStringParameters]
 
 BeforeExecute
--- SqlServer.2008.MS SqlServer.2008
+--  SqlServer.2008.MS SqlServer.2008
 
 SELECT * FROM [TestDataMS].[dbo].[GetParentByID](NULL)
 
 BeforeExecute
--- SqlServer.2008.MS SqlServer.2008
+--  SqlServer.2008.MS SqlServer.2008
 
 [TestDataMS].[dbo].[Issue1897]
 
 BeforeExecute
--- SqlServer.2008.MS SqlServer.2008
+--  SqlServer.2008.MS SqlServer.2008
 
 SELECT * FROM [TestDataMS].[dbo].[Issue1921]()
 
 BeforeExecute
--- SqlServer.2008.MS SqlServer.2008
+--  SqlServer.2008.MS SqlServer.2008
 DECLARE @str VarChar(50) -- AnsiString
 SET     @str = N''
 DECLARE @outputStr VarChar(50) -- AnsiString
@@ -224,7 +224,7 @@ SET     @inputOutputStr = N''
 [TestDataMS].[dbo].[OutRefEnumTest]
 
 BeforeExecute
--- SqlServer.2008.MS SqlServer.2008
+--  SqlServer.2008.MS SqlServer.2008
 DECLARE @ID Int -- Int32
 SET     @ID = 0
 DECLARE @outputID Int -- Int32
@@ -241,12 +241,12 @@ SET     @inputOutputStr = N''
 [TestDataMS].[dbo].[OutRefTest]
 
 BeforeExecute
--- SqlServer.2008.MS SqlServer.2008
+--  SqlServer.2008.MS SqlServer.2008
 
 [TestDataMS].[dbo].[Patient_SelectAll]
 
 BeforeExecute
--- SqlServer.2008.MS SqlServer.2008
+--  SqlServer.2008.MS SqlServer.2008
 DECLARE @firstName NVarChar(50) -- String
 SET     @firstName = N''
 DECLARE @lastName NVarChar(50) -- String
@@ -255,14 +255,14 @@ SET     @lastName = N''
 [TestDataMS].[dbo].[Patient_SelectByName]
 
 BeforeExecute
--- SqlServer.2008.MS SqlServer.2008
+--  SqlServer.2008.MS SqlServer.2008
 DECLARE @PersonID Int -- Int32
 SET     @PersonID = 0
 
 [TestDataMS].[dbo].[Person_Delete]
 
 BeforeExecute
--- SqlServer.2008.MS SqlServer.2008
+--  SqlServer.2008.MS SqlServer.2008
 DECLARE @FirstName NVarChar(50) -- String
 SET     @FirstName = N''
 DECLARE @LastName NVarChar(50) -- String
@@ -275,7 +275,7 @@ SET     @Gender = char(0)
 [TestDataMS].[dbo].[Person_Insert]
 
 BeforeExecute
--- SqlServer.2008.MS SqlServer.2008
+--  SqlServer.2008.MS SqlServer.2008
 DECLARE @FirstName NVarChar(50) -- String
 SET     @FirstName = N''
 DECLARE @LastName NVarChar(50) -- String
@@ -290,26 +290,26 @@ SET     @PersonID = 0
 [TestDataMS].[dbo].[Person_Insert_OutputParameter]
 
 BeforeExecute
--- SqlServer.2008.MS SqlServer.2008
+--  SqlServer.2008.MS SqlServer.2008
 
 [TestDataMS].[dbo].[Person_SelectAll]
 
 BeforeExecute
--- SqlServer.2008.MS SqlServer.2008
+--  SqlServer.2008.MS SqlServer.2008
 DECLARE @id Int -- Int32
 SET     @id = 0
 
 [TestDataMS].[dbo].[Person_SelectByKey]
 
 BeforeExecute
--- SqlServer.2008.MS SqlServer.2008
+--  SqlServer.2008.MS SqlServer.2008
 DECLARE @id Int -- Int32
 SET     @id = 0
 
 [TestDataMS].[dbo].[Person_SelectByKeyLowercase]
 
 BeforeExecute
--- SqlServer.2008.MS SqlServer.2008
+--  SqlServer.2008.MS SqlServer.2008
 DECLARE @firstName NVarChar(50) -- String
 SET     @firstName = N''
 DECLARE @lastName NVarChar(50) -- String
@@ -318,7 +318,7 @@ SET     @lastName = N''
 [TestDataMS].[dbo].[Person_SelectByName]
 
 BeforeExecute
--- SqlServer.2008.MS SqlServer.2008
+--  SqlServer.2008.MS SqlServer.2008
 DECLARE @firstName NVarChar(50) -- String
 SET     @firstName = N''
 DECLARE @lastName NVarChar(50) -- String
@@ -327,7 +327,7 @@ SET     @lastName = N''
 [TestDataMS].[dbo].[Person_SelectListByName]
 
 BeforeExecute
--- SqlServer.2008.MS SqlServer.2008
+--  SqlServer.2008.MS SqlServer.2008
 DECLARE @PersonID Int -- Int32
 SET     @PersonID = 0
 DECLARE @FirstName NVarChar(50) -- String
@@ -342,14 +342,14 @@ SET     @Gender = char(0)
 [TestDataMS].[dbo].[Person_Update]
 
 BeforeExecute
--- SqlServer.2008.MS SqlServer.2008
+--  SqlServer.2008.MS SqlServer.2008
 DECLARE @nameFilter NVarChar(512) -- String
 SET     @nameFilter = N''
 
 [TestDataMS].[dbo].[PersonSearch]
 
 BeforeExecute
--- SqlServer.2008.MS SqlServer.2008
+--  SqlServer.2008.MS SqlServer.2008
 DECLARE @input Int -- Int32
 SET     @input = 0
 DECLARE @output1 Int -- Int32
@@ -362,7 +362,7 @@ SET     @output3 = 0
 [TestDataMS].[dbo].[QueryProcMultipleParameters]
 
 BeforeExecute
--- SqlServer.2008.MS SqlServer.2008
+--  SqlServer.2008.MS SqlServer.2008
 DECLARE @input Int -- Int32
 SET     @input = 0
 DECLARE @output1 Int -- Int32
@@ -373,31 +373,31 @@ SET     @output2 = 0
 [TestDataMS].[dbo].[QueryProcParameters]
 
 BeforeExecute
--- SqlServer.2008.MS SqlServer.2008
+--  SqlServer.2008.MS SqlServer.2008
 
 [TestDataMS].[dbo].[SelectImplicitColumn]
 
 BeforeExecute
--- SqlServer.2008.MS SqlServer.2008
+--  SqlServer.2008.MS SqlServer.2008
 DECLARE @table [dbo].[TestTableType] -- Structured -- Object
 SET     @table = NULL
 
 [TestDataMS].[dbo].[TableTypeTestProc]
 
 BeforeExecute
--- SqlServer.2008.MS SqlServer.2008
+--  SqlServer.2008.MS SqlServer.2008
 DECLARE @ReturnFullRow Bit -- Boolean
 SET     @ReturnFullRow = 0
 
 [TestDataMS].[dbo].[VariableResults]
 
 BeforeExecute
--- SqlServer.2008.MS SqlServer.2008
+--  SqlServer.2008.MS SqlServer.2008
 
 SELECT * FROM [TestDataMS].[TestSchema].[SchemaTableFunction](NULL)
 
 BeforeExecute
--- SqlServer.2008.MS SqlServer.2008
+--  SqlServer.2008.MS SqlServer.2008
 
 [TestDataMS].[TestSchema].[TestProcedure]
 

@@ -2,7 +2,7 @@
 INSERT BULK [TrimTestTable](ID, Data)
 
 BeforeExecute
--- SqlServer.2008.MS SqlServer.2008
+--  SqlServer.2008.MS SqlServer.2008
 
 SELECT
 	[r].[ID],
@@ -13,7 +13,7 @@ ORDER BY
 	[r].[ID]
 
 BeforeExecute
--- SqlServer.2008.MS SqlServer.2008
+--  SqlServer.2008.MS SqlServer.2008
 
 SELECT
 	[r].[ID],

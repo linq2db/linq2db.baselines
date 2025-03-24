@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 BeginTransaction
 BeforeExecute
--- SqlServer.2008
+--  SqlServer.2008
 
 MERGE INTO [Child] [Target]
 USING (

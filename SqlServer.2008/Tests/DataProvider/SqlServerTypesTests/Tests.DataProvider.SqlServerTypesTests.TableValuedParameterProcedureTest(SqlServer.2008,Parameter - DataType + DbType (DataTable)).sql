@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2008
+--  SqlServer.2008
 DECLARE @table [dbo].[TestTableType] -- Structured -- Object
 SET     @table = 
 

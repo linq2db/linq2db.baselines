@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2008
+--  SqlServer.2008
 
 SELECT TOP (1)
 	[t1].[file_id],
@@ -35,7 +35,7 @@ FROM
 	[sys].[database_files] [t1]
 
 BeforeExecute
--- SqlServer.2008
+--  SqlServer.2008
 DECLARE @FileID Int -- Int32
 SET     @FileID = 1
 

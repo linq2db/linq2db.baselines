@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2008
+--  SqlServer.2008
 
 INSERT INTO [Table2]
 (
@@ -11,7 +11,7 @@ FROM
 	[Table1] [t]
 
 BeforeExecute
--- SqlServer.2008
+--  SqlServer.2008
 
 SELECT
 	[t1].[ID],

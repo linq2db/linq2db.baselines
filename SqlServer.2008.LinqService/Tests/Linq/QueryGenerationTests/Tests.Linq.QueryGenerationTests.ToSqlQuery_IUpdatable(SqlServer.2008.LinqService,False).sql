@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2008
+--  SqlServer.2008
 DECLARE @Value Int -- Int32
 SET     @Value = 1
 
@@ -13,7 +13,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2008
+--  SqlServer.2008
 DECLARE @newValue Int -- Int32
 SET     @newValue = 123
 
@@ -23,7 +23,7 @@ SET
 	[Value] = @newValue
 
 BeforeExecute
--- SqlServer.2008
+--  SqlServer.2008
 
 SELECT TOP (2)
 	[t1].[Id],

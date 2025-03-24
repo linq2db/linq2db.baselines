@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2008
+--  SqlServer.2008
 DECLARE @ID Int -- Int32
 SET     @ID = 1
 DECLARE @Data NVarChar(50) -- String
@@ -17,7 +17,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2008
+--  SqlServer.2008
 
 SELECT
 	[r].[ID],
@@ -28,7 +28,7 @@ ORDER BY
 	[r].[ID]
 
 BeforeExecute
--- SqlServer.2008
+--  SqlServer.2008
 
 SELECT
 	[r].[ID],

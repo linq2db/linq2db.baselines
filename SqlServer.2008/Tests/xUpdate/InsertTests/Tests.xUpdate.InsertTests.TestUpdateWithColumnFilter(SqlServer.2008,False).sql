@@ -1,10 +1,10 @@
 ﻿BeforeExecute
--- SqlServer.2008
+--  SqlServer.2008
 
 DBCC CHECKIDENT ('Person', RESEED, 4)
 
 BeforeExecute
--- SqlServer.2008
+--  SqlServer.2008
 DECLARE @FirstName NVarChar(4000) -- String
 SET     @FirstName = N'InsertColumnFilter'
 DECLARE @LastName NVarChar(4000) -- String
@@ -30,7 +30,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2008
+--  SqlServer.2008
 DECLARE @FirstName NVarChar(4000) -- String
 SET     @FirstName = N'InsertColumnFilter'
 
@@ -46,7 +46,7 @@ WHERE
 	[x].[FirstName] = @FirstName
 
 BeforeExecute
--- SqlServer.2008
+--  SqlServer.2008
 DECLARE @FirstName NVarChar(4000) -- String
 SET     @FirstName = N'InsertColumnFilter'
 DECLARE @LastName NVarChar(4000) -- String
@@ -66,7 +66,7 @@ WHERE
 	[Person].[PersonID] = @ID
 
 BeforeExecute
--- SqlServer.2008
+--  SqlServer.2008
 DECLARE @FirstName NVarChar(4000) -- String
 SET     @FirstName = N'InsertColumnFilter'
 
@@ -82,7 +82,7 @@ WHERE
 	[x].[FirstName] = @FirstName
 
 BeforeExecute
--- SqlServer.2008
+--  SqlServer.2008
 DECLARE @newName NVarChar(4000) -- String
 SET     @newName = N'InsertColumnFilter'
 

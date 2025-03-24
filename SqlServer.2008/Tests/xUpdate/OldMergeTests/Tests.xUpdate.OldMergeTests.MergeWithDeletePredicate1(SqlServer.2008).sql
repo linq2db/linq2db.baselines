@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2008
+--  SqlServer.2008
 
 SELECT
 	[t].[ID],
@@ -18,7 +18,7 @@ WHERE
 	[t].[ID] > 5
 
 BeforeExecute
--- SqlServer.2008
+--  SqlServer.2008
 
 MERGE INTO [LinqDataTypes] [Target]
 USING (

@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2008.MS SqlServer.2008
+--  SqlServer.2008.MS SqlServer.2008
 DECLARE @p BigInt -- Int64
 SET     @p = 5
 
@@ -18,7 +18,7 @@ ORDER BY
 	[c_1].[id]
 
 BeforeExecute
--- SqlServer.2008.MS SqlServer.2008
+--  SqlServer.2008.MS SqlServer.2008
 DECLARE @startId Int -- Int32
 SET     @startId = 5
 DECLARE @endId Int -- Int32

@@ -1,19 +1,19 @@
 ﻿BeforeExecute
--- SqlServer.2008
+--  SqlServer.2008
 
 DELETE [t1]
 FROM
 	[TestMerge1] [t1]
 
 BeforeExecute
--- SqlServer.2008
+--  SqlServer.2008
 
 DELETE [t1]
 FROM
 	[TestMerge2] [t1]
 
 BeforeExecute
--- SqlServer.2008
+--  SqlServer.2008
 
 MERGE INTO [TestMerge1] [Target]
 USING (VALUES
@@ -96,7 +96,7 @@ VALUES
 ;
 
 BeforeExecute
--- SqlServer.2008
+--  SqlServer.2008
 
 MERGE INTO [TestMerge2] [Target]
 USING (VALUES
@@ -180,7 +180,7 @@ VALUES
 ;
 
 BeforeExecute
--- SqlServer.2008
+--  SqlServer.2008
 
 SELECT
 	[t1].[Id],
@@ -208,7 +208,7 @@ ORDER BY
 	[t1].[Id]
 
 BeforeExecute
--- SqlServer.2008
+--  SqlServer.2008
 
 SELECT
 	[t1].[Id],

@@ -1,12 +1,12 @@
 ﻿BeforeExecute
--- SqlServer.2008
+--  SqlServer.2008
 
 
 				IF EXISTS (SELECT * FROM sysobjects WHERE id = object_id(N'fn_SomeFunction') AND xtype IN (N'FN', N'IF', N'TF'))
 					DROP FUNCTION fn_SomeFunction
 
 BeforeExecute
--- SqlServer.2008
+--  SqlServer.2008
 
 CREATE FUNCTION fn_SomeFunction (@id AS INT)
 RETURNS TABLE
@@ -18,7 +18,7 @@ AS RETURN
 BeforeExecute
 BeginTransaction(RepeatableRead)
 BeforeExecute
--- SqlServer.2008
+--  SqlServer.2008
 DECLARE @take Int -- Int32
 SET     @take = 2
 
@@ -49,7 +49,7 @@ FROM
 		) [d_1]
 
 BeforeExecute
--- SqlServer.2008
+--  SqlServer.2008
 DECLARE @take Int -- Int32
 SET     @take = 2
 
@@ -74,7 +74,7 @@ FROM
 BeforeExecute
 DisposeTransaction
 BeforeExecute
--- SqlServer.2008
+--  SqlServer.2008
 DECLARE @take Int -- Int32
 SET     @take = 2
 
@@ -96,7 +96,7 @@ FROM
 		) [t1]
 
 BeforeExecute
--- SqlServer.2008
+--  SqlServer.2008
 
 
 				IF EXISTS (SELECT * FROM sysobjects WHERE id = object_id(N'fn_SomeFunction') AND xtype IN (N'FN', N'IF', N'TF'))

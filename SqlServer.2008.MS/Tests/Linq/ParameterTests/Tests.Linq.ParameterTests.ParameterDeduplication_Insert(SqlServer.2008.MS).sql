@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2008.MS SqlServer.2008
+--  SqlServer.2008.MS SqlServer.2008
 DECLARE @id Int -- Int32
 SET     @id = 1
 DECLARE @int1 Int -- Int32
@@ -41,7 +41,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2008.MS SqlServer.2008
+--  SqlServer.2008.MS SqlServer.2008
 DECLARE @id Int -- Int32
 SET     @id = 2
 DECLARE @int1 Int -- Int32
@@ -83,7 +83,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2008.MS SqlServer.2008
+--  SqlServer.2008.MS SqlServer.2008
 
 SELECT
 	[t1].[Id],

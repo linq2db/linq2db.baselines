@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2008
+--  SqlServer.2008
 
 WITH [CTE1_] ([ParentID], [ChildID])
 AS
@@ -17,7 +17,7 @@ FROM
 	[CTE1_] [t2]
 
 BeforeExecute
--- SqlServer.2008
+--  SqlServer.2008
 
 SELECT
 	[t1].[ParentID],

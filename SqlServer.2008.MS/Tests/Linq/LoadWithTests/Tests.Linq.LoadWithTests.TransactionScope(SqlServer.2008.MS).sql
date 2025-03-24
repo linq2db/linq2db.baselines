@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2008.MS SqlServer.2008
+--  SqlServer.2008.MS SqlServer.2008
 
 SELECT
 	[m_1].[ParentID],
@@ -16,7 +16,7 @@ FROM
 		INNER JOIN [Child] [d] ON [m_1].[ParentID] = [d].[ParentID]
 
 BeforeExecute
--- SqlServer.2008.MS SqlServer.2008
+--  SqlServer.2008.MS SqlServer.2008
 
 SELECT TOP (1)
 	[x].[ParentID]

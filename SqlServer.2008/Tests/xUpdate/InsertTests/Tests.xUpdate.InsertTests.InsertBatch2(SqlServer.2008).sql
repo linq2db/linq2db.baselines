@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2008
+--  SqlServer.2008
 
 DELETE [t1]
 FROM
@@ -11,7 +11,7 @@ BeforeExecute
 INSERT BULK [LinqDataTypes](ID, MoneyValue, DateTimeValue, DateTimeValue2, BoolValue, GuidValue, SmallIntValue, IntValue, BigIntValue, StringValue)
 
 BeforeExecute
--- SqlServer.2008
+--  SqlServer.2008
 
 DELETE [t1]
 FROM

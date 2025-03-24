@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2008
+--  SqlServer.2008
 
 SELECT
 	DateAdd(day, [t].[Value], CURRENT_TIMESTAMP),
@@ -14,7 +14,7 @@ SELECT
 	DateAdd(day, 4, CURRENT_TIMESTAMP)
 
 BeforeExecute
--- SqlServer.2008
+--  SqlServer.2008
 
 SELECT
 	[v_1].[Value2]

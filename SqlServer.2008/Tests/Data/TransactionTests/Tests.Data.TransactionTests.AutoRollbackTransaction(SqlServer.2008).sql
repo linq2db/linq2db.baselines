@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2008
+--  SqlServer.2008
 DECLARE @ParentID Int -- Int32
 SET     @ParentID = 1010
 DECLARE @Value1 Int -- Int32
@@ -19,7 +19,7 @@ VALUES
 BeforeExecute
 BeginTransaction
 BeforeExecute
--- SqlServer.2008
+--  SqlServer.2008
 
 UPDATE
 	[Parent]
@@ -31,7 +31,7 @@ WHERE
 BeforeExecute
 DisposeTransaction
 BeforeExecute
--- SqlServer.2008
+--  SqlServer.2008
 
 SELECT TOP (1)
 	[t].[ParentID],

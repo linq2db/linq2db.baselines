@@ -1,11 +1,11 @@
 ﻿BeforeExecute
--- SqlServer.2008.MS SqlServer.2008
+--  SqlServer.2008.MS SqlServer.2008
 
 IF (OBJECT_ID(N'[TestIdTrun]', N'U') IS NOT NULL)
 	DROP TABLE [TestIdTrun]
 
 BeforeExecute
--- SqlServer.2008.MS SqlServer.2008
+--  SqlServer.2008.MS SqlServer.2008
 
 CREATE TABLE [TestIdTrun]
 (
@@ -16,7 +16,7 @@ CREATE TABLE [TestIdTrun]
 )
 
 BeforeExecute
--- SqlServer.2008.MS SqlServer.2008
+--  SqlServer.2008.MS SqlServer.2008
 
 INSERT INTO [TestIdTrun]
 (
@@ -28,7 +28,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2008.MS SqlServer.2008
+--  SqlServer.2008.MS SqlServer.2008
 
 INSERT INTO [TestIdTrun]
 (
@@ -40,7 +40,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2008.MS SqlServer.2008
+--  SqlServer.2008.MS SqlServer.2008
 DECLARE @skip Int -- Int32
 SET     @skip = 1
 
@@ -62,12 +62,12 @@ ORDER BY
 	[t2].[ID]
 
 BeforeExecute
--- SqlServer.2008.MS SqlServer.2008
+--  SqlServer.2008.MS SqlServer.2008
 
 TRUNCATE TABLE [TestIdTrun]
 
 BeforeExecute
--- SqlServer.2008.MS SqlServer.2008
+--  SqlServer.2008.MS SqlServer.2008
 
 INSERT INTO [TestIdTrun]
 (
@@ -79,7 +79,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2008.MS SqlServer.2008
+--  SqlServer.2008.MS SqlServer.2008
 
 INSERT INTO [TestIdTrun]
 (
@@ -91,7 +91,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2008.MS SqlServer.2008
+--  SqlServer.2008.MS SqlServer.2008
 DECLARE @skip Int -- Int32
 SET     @skip = 1
 
@@ -113,7 +113,7 @@ ORDER BY
 	[t2].[ID]
 
 BeforeExecute
--- SqlServer.2008.MS SqlServer.2008
+--  SqlServer.2008.MS SqlServer.2008
 
 DROP TABLE [TestIdTrun]
 

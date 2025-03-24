@@ -5,7 +5,7 @@ BeforeExecute
 INSERT BULK [SimpleBulkCopyTable](Id)
 
 BeforeExecute
--- SqlServer.2008
+--  SqlServer.2008
 
 INSERT INTO [SimpleBulkCopyTable]
 (

@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2008
+--  SqlServer.2008
 
 SET IDENTITY_INSERT [TableWithIdentity] ON
 MERGE INTO [TableWithIdentity] [Target]

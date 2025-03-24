@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2008
+--  SqlServer.2008
 DECLARE @n Int -- Int32
 SET     @n = 1
 
@@ -19,7 +19,7 @@ FROM
 		INNER JOIN [Child] [d] ON [m_1].[ParentID] + @n = [d].[ParentID]
 
 BeforeExecute
--- SqlServer.2008
+--  SqlServer.2008
 
 SELECT
 	[p].[ParentID],

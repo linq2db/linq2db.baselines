@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SQLite.MS SQLite
+--  SQLite.MS SQLite
 
 SELECT
 	[t1].[PersonID],
@@ -11,7 +11,7 @@ FROM
 	[Person] [t1]
 
 BeforeExecute
--- SqlServer.2008.MS SqlServer.2008
+--  SqlServer.2008.MS SqlServer.2008
 
 SELECT
 	[p].[PersonID]

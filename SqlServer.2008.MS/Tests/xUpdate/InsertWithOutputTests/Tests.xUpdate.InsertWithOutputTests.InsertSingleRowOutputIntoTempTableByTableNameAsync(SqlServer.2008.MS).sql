@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2008.MS SqlServer.2008
+--  SqlServer.2008.MS SqlServer.2008
 
 CREATE TABLE [tempdb]..[#TableWithData_output]
 (
@@ -9,7 +9,7 @@ CREATE TABLE [tempdb]..[#TableWithData_output]
 )
 
 BeforeExecute
--- SqlServer.2008.MS SqlServer.2008 (asynchronously)
+--  SqlServer.2008.MS SqlServer.2008 (asynchronously)
 
 INSERT INTO [TableWithData_source]
 (
@@ -35,7 +35,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2008.MS SqlServer.2008
+--  SqlServer.2008.MS SqlServer.2008
 
 SELECT
 	[t1].[Id],
@@ -45,7 +45,7 @@ FROM
 	[TableWithData_source] [t1]
 
 BeforeExecute
--- SqlServer.2008.MS SqlServer.2008
+--  SqlServer.2008.MS SqlServer.2008
 
 SELECT
 	[t1].[Id],
@@ -55,7 +55,7 @@ FROM
 	[tempdb]..[#TableWithData_output] [t1]
 
 BeforeExecute
--- SqlServer.2008.MS SqlServer.2008
+--  SqlServer.2008.MS SqlServer.2008
 
 IF (OBJECT_ID(N'[tempdb]..[#TableWithData_output]', N'U') IS NOT NULL)
 	DROP TABLE [tempdb]..[#TableWithData_output]

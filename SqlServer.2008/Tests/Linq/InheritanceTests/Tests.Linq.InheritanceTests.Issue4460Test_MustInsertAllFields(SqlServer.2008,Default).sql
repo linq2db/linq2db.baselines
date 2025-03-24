@@ -2,7 +2,7 @@
 INSERT BULK [Issue4460Table](Id, Code, Name, Surname)
 
 BeforeExecute
--- SqlServer.2008
+--  SqlServer.2008
 
 SELECT
 	[t1].[Code],

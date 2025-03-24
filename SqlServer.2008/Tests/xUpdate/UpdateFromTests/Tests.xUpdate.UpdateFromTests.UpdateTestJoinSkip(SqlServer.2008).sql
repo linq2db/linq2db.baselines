@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2008
+--  SqlServer.2008
 DECLARE @int1 Int -- Int32
 SET     @int1 = 11
 DECLARE @int2 Int -- Int32
@@ -36,7 +36,7 @@ WHERE
 	[t1].[RN] > @skip AND [u].[id] = [t1].[id]
 
 BeforeExecute
--- SqlServer.2008
+--  SqlServer.2008
 
 SELECT
 	[v].[id],

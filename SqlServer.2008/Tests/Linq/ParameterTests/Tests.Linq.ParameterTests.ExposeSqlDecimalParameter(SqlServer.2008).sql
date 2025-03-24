@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2008
+--  SqlServer.2008
 DECLARE @p Decimal(6, 3)
 SET     @p = 123.456
 

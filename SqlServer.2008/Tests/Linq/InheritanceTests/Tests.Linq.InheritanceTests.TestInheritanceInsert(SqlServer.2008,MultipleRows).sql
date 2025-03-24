@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2008
+--  SqlServer.2008
 
 INSERT INTO [InheritanceFilter]
 (
@@ -21,7 +21,7 @@ VALUES
 (6,22,0,26,0,0,0,16)
 
 BeforeExecute
--- SqlServer.2008
+--  SqlServer.2008
 
 SELECT
 	[t1].[Code],

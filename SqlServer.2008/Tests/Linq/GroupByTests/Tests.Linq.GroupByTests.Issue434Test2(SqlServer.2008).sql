@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 BeginTransaction(RepeatableRead)
 BeforeExecute
--- SqlServer.2008
+--  SqlServer.2008
 
 SELECT
 	[m_1].[PersonID],
@@ -16,7 +16,7 @@ WHERE
 BeforeExecute
 DisposeTransaction
 BeforeExecute
--- SqlServer.2008
+--  SqlServer.2008
 
 SELECT
 	[p].[FirstName],

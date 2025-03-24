@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 BeginTransaction(RepeatableRead)
 BeforeExecute
--- SqlServer.2008.MS SqlServer.2008
+--  SqlServer.2008.MS SqlServer.2008
 DECLARE @testedList NVarChar(200) -- String
 SET     @testedList = N'[{"Value":"Value1"}]'
 
@@ -25,7 +25,7 @@ WHERE
 BeforeExecute
 DisposeTransaction
 BeforeExecute
--- SqlServer.2008.MS SqlServer.2008
+--  SqlServer.2008.MS SqlServer.2008
 DECLARE @testedList NVarChar(200) -- String
 SET     @testedList = N'[{"Value":"Value1"}]'
 

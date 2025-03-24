@@ -1,11 +1,11 @@
 ﻿BeforeExecute
--- SqlServer.2008.MS SqlServer.2008
+--  SqlServer.2008.MS SqlServer.2008
 
 IF (OBJECT_ID(N'[AllTypeCreateTest]', N'U') IS NOT NULL)
 	DROP TABLE [AllTypeCreateTest]
 
 BeforeExecute
--- SqlServer.2008.MS SqlServer.2008
+--  SqlServer.2008.MS SqlServer.2008
 
 CREATE TABLE [AllTypeCreateTest]
 (
@@ -54,7 +54,7 @@ CREATE TABLE [AllTypeCreateTest]
 )
 
 BeforeExecute
--- SqlServer.2008.MS SqlServer.2008
+--  SqlServer.2008.MS SqlServer.2008
 
 SELECT
 	[t1].[ID],
@@ -103,7 +103,7 @@ FROM
 	[AllTypeCreateTest] [t1]
 
 BeforeExecute
--- SqlServer.2008.MS SqlServer.2008
+--  SqlServer.2008.MS SqlServer.2008
 
 DROP TABLE [AllTypeCreateTest]
 

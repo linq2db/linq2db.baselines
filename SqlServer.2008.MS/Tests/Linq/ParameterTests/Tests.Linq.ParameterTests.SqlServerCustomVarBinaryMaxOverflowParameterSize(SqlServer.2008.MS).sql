@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2008.MS SqlServer.2008
+--  SqlServer.2008.MS SqlServer.2008
 DECLARE @VarBinary VarBinary -- Binary
 SET     @VarBinary = Tests.Linq.ParameterTests+VarBinary
 
@@ -13,7 +13,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2008.MS SqlServer.2008
+--  SqlServer.2008.MS SqlServer.2008
 
 SELECT
 	[t1].[VarBinary],
@@ -23,7 +23,7 @@ FROM
 	[AllTypesCustomMaxLength] [t1]
 
 BeforeExecute
--- SqlServer.2008.MS SqlServer.2008
+--  SqlServer.2008.MS SqlServer.2008
 DECLARE @p VarBinary -- Binary
 SET     @p = Tests.Linq.ParameterTests+VarBinary
 

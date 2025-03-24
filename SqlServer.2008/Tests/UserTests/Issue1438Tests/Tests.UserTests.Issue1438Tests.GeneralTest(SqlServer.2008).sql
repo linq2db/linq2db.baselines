@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2008
+--  SqlServer.2008
 DECLARE @Has Bit -- Boolean
 SET     @Has = 1
 
@@ -15,7 +15,7 @@ VALUES
 SELECT SCOPE_IDENTITY()
 
 BeforeExecute
--- SqlServer.2008
+--  SqlServer.2008
 DECLARE @id Int -- Int32
 SET     @id = 1
 

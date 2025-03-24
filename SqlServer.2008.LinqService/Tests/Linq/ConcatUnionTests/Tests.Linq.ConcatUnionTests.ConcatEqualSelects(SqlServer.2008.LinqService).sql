@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2008
+--  SqlServer.2008
 
 SELECT
 	[p].[ParentID] + 1,
@@ -18,7 +18,7 @@ WHERE
 	[p_1].[ParentID] = 2
 
 BeforeExecute
--- SqlServer.2008
+--  SqlServer.2008
 
 SELECT
 	[t1].[ParentID],

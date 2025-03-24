@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2008.MS SqlServer.2008
+--  SqlServer.2008.MS SqlServer.2008
 
 DELETE [c_1]
 FROM
@@ -8,7 +8,7 @@ WHERE
 	[c_1].[ChildID] > 1000
 
 BeforeExecute
--- SqlServer.2008.MS SqlServer.2008
+--  SqlServer.2008.MS SqlServer.2008
 
 CREATE TABLE [tempdb]..[#TInserted]
 (
@@ -19,7 +19,7 @@ CREATE TABLE [tempdb]..[#TInserted]
 )
 
 BeforeExecute
--- SqlServer.2008.MS SqlServer.2008 (asynchronously)
+--  SqlServer.2008.MS SqlServer.2008 (asynchronously)
 DECLARE @id Int -- Int32
 SET     @id = 1001
 
@@ -45,7 +45,7 @@ WHERE
 	[c_1].[ChildID] = 11
 
 BeforeExecute
--- SqlServer.2008.MS SqlServer.2008
+--  SqlServer.2008.MS SqlServer.2008
 
 SELECT
 	[c_1].[ParentID] - 4242,
@@ -54,7 +54,7 @@ FROM
 	[tempdb]..[#TInserted] [c_1]
 
 BeforeExecute
--- SqlServer.2008.MS SqlServer.2008
+--  SqlServer.2008.MS SqlServer.2008
 
 SELECT
 	[c_1].[ParentID],
@@ -65,13 +65,13 @@ WHERE
 	[c_1].[ChildID] > 1000
 
 BeforeExecute
--- SqlServer.2008.MS SqlServer.2008
+--  SqlServer.2008.MS SqlServer.2008
 
 IF (OBJECT_ID(N'[tempdb]..[#TInserted]', N'U') IS NOT NULL)
 	DROP TABLE [tempdb]..[#TInserted]
 
 BeforeExecute
--- SqlServer.2008.MS SqlServer.2008
+--  SqlServer.2008.MS SqlServer.2008
 
 DELETE [c_1]
 FROM

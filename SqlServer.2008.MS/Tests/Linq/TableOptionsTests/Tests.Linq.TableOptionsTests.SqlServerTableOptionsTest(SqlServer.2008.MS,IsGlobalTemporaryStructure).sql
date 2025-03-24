@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2008.MS SqlServer.2008
+--  SqlServer.2008.MS SqlServer.2008
 
 CREATE TABLE [tempdb]..[##TestTable]
 (
@@ -8,7 +8,7 @@ CREATE TABLE [tempdb]..[##TestTable]
 )
 
 BeforeExecute
--- SqlServer.2008.MS SqlServer.2008
+--  SqlServer.2008.MS SqlServer.2008
 
 IF (OBJECT_ID(N'[tempdb]..[##TestTable]', N'U') IS NOT NULL)
 	DROP TABLE [tempdb]..[##TestTable]
