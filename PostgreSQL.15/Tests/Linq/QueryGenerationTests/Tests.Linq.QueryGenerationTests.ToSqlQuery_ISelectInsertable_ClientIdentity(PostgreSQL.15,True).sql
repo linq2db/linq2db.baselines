@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- PostgreSQL.15 PostgreSQL
+--  PostgreSQL.15 PostgreSQL
 DECLARE @Value Integer -- Int32
 SET     @Value = 1
 
@@ -13,7 +13,7 @@ VALUES
 )
 
 BeforeExecute
--- PostgreSQL.15 PostgreSQL
+--  PostgreSQL.15 PostgreSQL
 
 INSERT INTO "TableWithIdentity"
 (
@@ -27,7 +27,7 @@ FROM
 	"TableWithIdentitySrc" t1
 
 BeforeExecute
--- PostgreSQL.15 PostgreSQL
+--  PostgreSQL.15 PostgreSQL
 
 SELECT
 	t1."Id",

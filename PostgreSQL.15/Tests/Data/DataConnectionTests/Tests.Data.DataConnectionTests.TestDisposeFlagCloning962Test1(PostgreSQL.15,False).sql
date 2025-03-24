@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 BeginTransaction(RepeatableRead)
 BeforeExecute
--- PostgreSQL.15 PostgreSQL
+--  PostgreSQL.15 PostgreSQL
 
 SELECT
 	m_1."CategoryID",
@@ -16,7 +16,7 @@ FROM
 BeforeExecute
 DisposeTransaction
 BeforeExecute
--- PostgreSQL.15 PostgreSQL
+--  PostgreSQL.15 PostgreSQL
 
 SELECT
 	t1."CategoryID",

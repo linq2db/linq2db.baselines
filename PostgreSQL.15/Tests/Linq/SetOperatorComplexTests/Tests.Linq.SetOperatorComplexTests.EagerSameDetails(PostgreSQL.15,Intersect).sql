@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 BeginTransaction(RepeatableRead)
 BeforeExecute
--- PostgreSQL.15 PostgreSQL
+--  PostgreSQL.15 PostgreSQL
 
 SELECT
 	m_1."Id",
@@ -42,7 +42,7 @@ FROM
 BeforeExecute
 DisposeTransaction
 BeforeExecute
--- PostgreSQL.15 PostgreSQL
+--  PostgreSQL.15 PostgreSQL
 
 SELECT
 	"a_Book"."BookId",
@@ -69,7 +69,7 @@ WHERE
 BeforeExecute
 BeginTransaction(RepeatableRead)
 BeforeExecute
--- PostgreSQL.15 PostgreSQL
+--  PostgreSQL.15 PostgreSQL
 
 SELECT
 	m_1."BookId",
@@ -95,7 +95,7 @@ FROM
 		LEFT JOIN "Author" "a_Author" ON d_1."FkAuthorId" = "a_Author"."AuthorId"
 
 BeforeExecute
--- PostgreSQL.15 PostgreSQL
+--  PostgreSQL.15 PostgreSQL
 
 SELECT
 	m_1."AuthorId",
@@ -112,7 +112,7 @@ FROM
 BeforeExecute
 DisposeTransaction
 BeforeExecute
--- PostgreSQL.15 PostgreSQL
+--  PostgreSQL.15 PostgreSQL
 
 SELECT
 	t1."AuthorId",

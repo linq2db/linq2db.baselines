@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 BeginTransaction(RepeatableRead)
 BeforeExecute
--- PostgreSQL.15 PostgreSQL
+--  PostgreSQL.15 PostgreSQL
 
 SELECT
 	m_1."City_Code",
@@ -31,7 +31,7 @@ FROM
 BeforeExecute
 DisposeTransaction
 BeforeExecute
--- PostgreSQL.15 PostgreSQL
+--  PostgreSQL.15 PostgreSQL
 
 SELECT
 	a."First_Name",

@@ -1,11 +1,11 @@
 ﻿BeforeExecute
--- PostgreSQL.15 PostgreSQL
+--  PostgreSQL.15 PostgreSQL
 
 DELETE FROM
 	"TestMergeIdentity" t1
 
 BeforeExecute
--- PostgreSQL.15 PostgreSQL
+--  PostgreSQL.15 PostgreSQL
 DECLARE @Field Integer -- Int32
 SET     @Field = NULL
 
@@ -19,7 +19,7 @@ VALUES
 )
 
 BeforeExecute
--- PostgreSQL.15 PostgreSQL
+--  PostgreSQL.15 PostgreSQL
 
 SELECT
 	MAX(t1."Id")
@@ -27,7 +27,7 @@ FROM
 	"TestMergeIdentity" t1
 
 BeforeExecute
--- PostgreSQL.15 PostgreSQL
+--  PostgreSQL.15 PostgreSQL
 
 MERGE INTO "TestMergeIdentity" "Target"
 USING (VALUES
@@ -54,7 +54,7 @@ SET
 	"Field" = "Source"."source_Field"
 
 BeforeExecute
--- PostgreSQL.15 PostgreSQL
+--  PostgreSQL.15 PostgreSQL
 
 SELECT
 	t1."Id",

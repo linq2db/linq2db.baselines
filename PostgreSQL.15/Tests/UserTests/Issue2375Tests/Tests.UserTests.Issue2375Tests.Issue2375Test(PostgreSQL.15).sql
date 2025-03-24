@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- PostgreSQL.15 PostgreSQL
+--  PostgreSQL.15 PostgreSQL
 DECLARE @Id Uuid -- Guid
 SET     @Id = 'bc7b663d-0fde-4327-8f92-5d8cc3a11d11'::uuid
 DECLARE @ResourceLabel Text(1) -- String
@@ -17,7 +17,7 @@ VALUES
 )
 
 BeforeExecute
--- PostgreSQL.15 PostgreSQL
+--  PostgreSQL.15 PostgreSQL
 DECLARE @Id Uuid -- Guid
 SET     @Id = 'a948600d-de21-4f74-8ac2-9516b287076e'::uuid
 DECLARE @Status Integer -- Int32
@@ -43,7 +43,7 @@ VALUES
 )
 
 BeforeExecute
--- PostgreSQL.15 PostgreSQL
+--  PostgreSQL.15 PostgreSQL
 DECLARE @Id Uuid -- Guid
 SET     @Id = 'bd3973a5-4323-4dd8-9f4f-df9f93e2a627'::uuid
 DECLARE @Status Integer -- Int32
@@ -71,7 +71,7 @@ VALUES
 BeforeExecute
 BeginTransaction(RepeatableRead)
 BeforeExecute
--- PostgreSQL.15 PostgreSQL
+--  PostgreSQL.15 PostgreSQL
 
 SELECT
 	m_1."Status",
@@ -107,7 +107,7 @@ FROM
 BeforeExecute
 DisposeTransaction
 BeforeExecute
--- PostgreSQL.15 PostgreSQL
+--  PostgreSQL.15 PostgreSQL
 
 SELECT
 	grp."Status",

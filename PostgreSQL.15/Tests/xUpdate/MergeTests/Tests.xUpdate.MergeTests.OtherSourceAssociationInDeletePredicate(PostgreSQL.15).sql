@@ -1,12 +1,12 @@
 ﻿BeforeExecute
--- PostgreSQL.15 PostgreSQL
+--  PostgreSQL.15 PostgreSQL
 
 ALTER SEQUENCE "Person_PersonID_seq" RESTART WITH 5
 
 BeforeExecute
 BeginTransaction
 BeforeExecute
--- PostgreSQL.15 PostgreSQL
+--  PostgreSQL.15 PostgreSQL
 
 MERGE INTO "Patient" "Target"
 USING (
@@ -33,7 +33,7 @@ WHEN MATCHED AND "Source"."source_Person_FirstName" = 'first 4' AND
 "Source"."target_Person_FirstName" = 'first 4' THEN DELETE
 
 BeforeExecute
--- PostgreSQL.15 PostgreSQL
+--  PostgreSQL.15 PostgreSQL
 
 SELECT
 	t1."PersonID",

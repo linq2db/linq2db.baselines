@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- PostgreSQL.15 PostgreSQL
+--  PostgreSQL.15 PostgreSQL
 
 INSERT INTO "TrimTestTable"
 (
@@ -16,7 +16,7 @@ RETURNING
 	"TrimTestTable"."Data"
 
 BeforeExecute
--- PostgreSQL.15 PostgreSQL
+--  PostgreSQL.15 PostgreSQL
 
 SELECT
 	r."ID",
@@ -27,7 +27,7 @@ ORDER BY
 	r."ID"
 
 BeforeExecute
--- PostgreSQL.15 PostgreSQL
+--  PostgreSQL.15 PostgreSQL
 
 SELECT
 	r."ID",

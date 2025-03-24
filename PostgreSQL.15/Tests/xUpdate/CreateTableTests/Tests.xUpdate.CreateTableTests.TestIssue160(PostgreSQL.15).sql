@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- PostgreSQL.15 PostgreSQL
+--  PostgreSQL.15 PostgreSQL
 
 CREATE TABLE aa
 (
@@ -10,7 +10,7 @@ CREATE TABLE aa
 )
 
 BeforeExecute
--- PostgreSQL.15 PostgreSQL
+--  PostgreSQL.15 PostgreSQL
 DECLARE @bb Integer -- Int32
 SET     @bb = 99
 DECLARE @cc Text(5) -- String
@@ -28,7 +28,7 @@ VALUES
 )
 
 BeforeExecute
--- PostgreSQL.15 PostgreSQL
+--  PostgreSQL.15 PostgreSQL
 
 SELECT
 	t1.bb,
@@ -37,7 +37,7 @@ FROM
 	aa t1
 
 BeforeExecute
--- PostgreSQL.15 PostgreSQL
+--  PostgreSQL.15 PostgreSQL
 
 DROP TABLE aa
 

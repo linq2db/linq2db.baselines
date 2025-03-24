@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- PostgreSQL.15 PostgreSQL
+--  PostgreSQL.15 PostgreSQL
 
 WITH RECURSIVE "CTE1_" ("ParentID")
 AS
@@ -67,7 +67,7 @@ FROM
 		INNER JOIN "LATEST" c4_1 ON c4_1."ParentID" = c3."ParentID"
 
 BeforeExecute
--- PostgreSQL.15 PostgreSQL
+--  PostgreSQL.15 PostgreSQL
 
 SELECT
 	c3."ParentID",

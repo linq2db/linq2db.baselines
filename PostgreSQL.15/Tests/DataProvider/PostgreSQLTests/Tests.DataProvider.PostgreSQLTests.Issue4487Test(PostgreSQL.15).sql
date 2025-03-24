@@ -1,10 +1,10 @@
 ﻿BeforeExecute
--- PostgreSQL.15 PostgreSQL
+--  PostgreSQL.15 PostgreSQL
 
 DROP TYPE IF EXISTS "item_type_enum";
 
 BeforeExecute
--- PostgreSQL.15 PostgreSQL
+--  PostgreSQL.15 PostgreSQL
 
 CREATE TYPE "item_type_enum" AS ENUM (
   'type1',
@@ -66,7 +66,7 @@ ORDER BY
 	t1."Id"
 
 BeforeExecute
--- PostgreSQL.15 PostgreSQL
+--  PostgreSQL.15 PostgreSQL
 
 DROP TYPE IF EXISTS "item_type_enum";
 

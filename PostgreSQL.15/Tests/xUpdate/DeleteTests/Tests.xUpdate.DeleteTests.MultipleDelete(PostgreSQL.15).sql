@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- PostgreSQL.15 PostgreSQL
+--  PostgreSQL.15 PostgreSQL
 
 DELETE FROM
 	"Parent" c_1
@@ -7,7 +7,7 @@ WHERE
 	c_1."ParentID" >= 1000
 
 BeforeExecute
--- PostgreSQL.15 PostgreSQL
+--  PostgreSQL.15 PostgreSQL
 
 INSERT INTO "Parent"
 (
@@ -19,7 +19,7 @@ VALUES
 (1001,NULL)
 
 BeforeExecute
--- PostgreSQL.15 PostgreSQL
+--  PostgreSQL.15 PostgreSQL
 
 DELETE FROM
 	"Parent" p
@@ -27,7 +27,7 @@ WHERE
 	p."ParentID" = 1000 AND p."Value1" IS NULL OR p."ParentID" = 1001 AND p."Value1" IS NULL
 
 BeforeExecute
--- PostgreSQL.15 PostgreSQL
+--  PostgreSQL.15 PostgreSQL
 
 DELETE FROM
 	"Parent" c_1

@@ -1,10 +1,10 @@
 ﻿BeforeExecute
--- PostgreSQL.15 PostgreSQL (asynchronously)
+--  PostgreSQL.15 PostgreSQL (asynchronously)
 
 DROP TABLE IF EXISTS "TempTable"
 
 BeforeExecute
--- PostgreSQL.15 PostgreSQL (asynchronously)
+--  PostgreSQL.15 PostgreSQL (asynchronously)
 
 CREATE TABLE IF NOT EXISTS "TempTable"
 (
@@ -12,7 +12,7 @@ CREATE TABLE IF NOT EXISTS "TempTable"
 )
 
 BeforeExecute
--- PostgreSQL.15 PostgreSQL (asynchronously)
+--  PostgreSQL.15 PostgreSQL (asynchronously)
 
 INSERT INTO "TempTable"
 (
@@ -22,7 +22,7 @@ VALUES
 ('John')
 
 BeforeExecute
--- PostgreSQL.15 PostgreSQL (asynchronously)
+--  PostgreSQL.15 PostgreSQL (asynchronously)
 
 SELECT
 	t."Name"
@@ -31,7 +31,7 @@ FROM
 		INNER JOIN "TempTable" t ON p."FirstName" = t."Name"
 
 BeforeExecute
--- PostgreSQL.15 PostgreSQL (asynchronously)
+--  PostgreSQL.15 PostgreSQL (asynchronously)
 
 DROP TABLE IF EXISTS "TempTable"
 

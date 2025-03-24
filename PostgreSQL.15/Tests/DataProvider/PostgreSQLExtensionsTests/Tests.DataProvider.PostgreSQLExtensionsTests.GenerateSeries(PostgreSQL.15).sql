@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- PostgreSQL.15 PostgreSQL
+--  PostgreSQL.15 PostgreSQL
 
 SELECT
 	t1
@@ -7,7 +7,7 @@ FROM
 	GENERATE_SERIES(1, 10) t1
 
 BeforeExecute
--- PostgreSQL.15 PostgreSQL
+--  PostgreSQL.15 PostgreSQL
 
 SELECT
 	t1
@@ -15,7 +15,7 @@ FROM
 	GENERATE_SERIES(1, 10, 2) t1
 
 BeforeExecute
--- PostgreSQL.15 PostgreSQL
+--  PostgreSQL.15 PostgreSQL
 DECLARE @value Interval -- Object
 SET     @value = 05:00:00
 
@@ -25,7 +25,7 @@ FROM
 	GENERATE_SERIES('2020-02-19 17:54:55.123'::timestamp, '2020-02-29 17:54:55.123'::timestamp, :value) t1
 
 BeforeExecute
--- PostgreSQL.15 PostgreSQL
+--  PostgreSQL.15 PostgreSQL
 DECLARE @p Timestamp -- DateTime2
 SET     @p = '2020-02-19 17:54:55.123'::timestamp
 DECLARE @p_1 Interval -- Object

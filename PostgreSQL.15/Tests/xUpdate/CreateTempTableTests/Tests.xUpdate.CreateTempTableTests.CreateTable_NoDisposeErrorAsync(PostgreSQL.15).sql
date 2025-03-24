@@ -1,10 +1,10 @@
 ﻿BeforeExecute
--- PostgreSQL.15 PostgreSQL (asynchronously)
+--  PostgreSQL.15 PostgreSQL (asynchronously)
 
 DROP TABLE IF EXISTS "TempTable"
 
 BeforeExecute
--- PostgreSQL.15 PostgreSQL (asynchronously)
+--  PostgreSQL.15 PostgreSQL (asynchronously)
 
 CREATE TEMPORARY TABLE "TempTable"
 (
@@ -13,12 +13,12 @@ CREATE TEMPORARY TABLE "TempTable"
 ON COMMIT PRESERVE ROWS
 
 BeforeExecute
--- PostgreSQL.15 PostgreSQL (asynchronously)
+--  PostgreSQL.15 PostgreSQL (asynchronously)
 
 DROP TABLE "TempTable"
 
 BeforeExecute
--- PostgreSQL.15 PostgreSQL (asynchronously)
+--  PostgreSQL.15 PostgreSQL (asynchronously)
 
 DROP TABLE IF EXISTS "TempTable"
 

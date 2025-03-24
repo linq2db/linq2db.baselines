@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- PostgreSQL.15 PostgreSQL
+--  PostgreSQL.15 PostgreSQL
 
 SELECT
 	s."Id",
@@ -11,7 +11,7 @@ WHERE
 	s."Id" > 3
 
 BeforeExecute
--- PostgreSQL.15 PostgreSQL (asynchronously)
+--  PostgreSQL.15 PostgreSQL (asynchronously)
 
 DELETE FROM
 	"TableWithData" s
@@ -23,7 +23,7 @@ RETURNING
 	s."ValueStr"
 
 BeforeExecute
--- PostgreSQL.15 PostgreSQL (asynchronously)
+--  PostgreSQL.15 PostgreSQL (asynchronously)
 
 DROP TABLE IF EXISTS "TableWithData"
 

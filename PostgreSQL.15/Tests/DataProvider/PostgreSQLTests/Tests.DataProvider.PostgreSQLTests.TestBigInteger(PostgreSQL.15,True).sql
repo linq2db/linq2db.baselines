@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- PostgreSQL.15 PostgreSQL
+--  PostgreSQL.15 PostgreSQL
 
 INSERT INTO "BigIntegerTable"
 (
@@ -18,7 +18,7 @@ BeforeExecute
 INSERT BULK "BigIntegerTable"(Id, Value1, Value2)
 
 BeforeExecute
--- PostgreSQL.15 PostgreSQL
+--  PostgreSQL.15 PostgreSQL
 
 SELECT
 	t1."Id",
