@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 BeginTransaction
 BeforeExecute
--- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
+--  MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 DECLARE @CODE_AA VarChar(2) -- String
 SET     @CODE_AA = 'AA'
 
@@ -15,7 +15,7 @@ VALUES
 )
 
 BeforeExecute
--- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
+--  MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 
 CREATE TEMPORARY TABLE IF NOT EXISTS `TMP_MIN_TEMPORARY`
 (
@@ -26,12 +26,12 @@ CREATE TEMPORARY TABLE IF NOT EXISTS `TMP_MIN_TEMPORARY`
 )
 
 BeforeExecute
--- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
+--  MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 
 DROP TEMPORARY TABLE IF EXISTS `TMP_MIN_TEMPORARY`
 
 BeforeExecute
--- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
+--  MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 DECLARE @CODE_AA VarChar(2) -- String
 SET     @CODE_AA = 'AA'
 
@@ -47,7 +47,7 @@ VALUES
 BeforeExecute
 RollbackTransaction
 BeforeExecute
--- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
+--  MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 
 SELECT
 	COUNT(*)

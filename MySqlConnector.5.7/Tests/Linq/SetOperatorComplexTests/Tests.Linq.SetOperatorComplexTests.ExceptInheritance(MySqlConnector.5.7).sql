@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
+--  MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 
 SELECT DISTINCT
 	`t1`.`cond`,
@@ -43,7 +43,7 @@ WHERE
 BeforeExecute
 BeginTransaction(RepeatableRead)
 BeforeExecute
--- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
+--  MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 
 SELECT
 	`m_1`.`AuthorId`,
@@ -60,7 +60,7 @@ FROM
 BeforeExecute
 DisposeTransaction
 BeforeExecute
--- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
+--  MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 
 SELECT
 	`t1`.`AuthorId`,

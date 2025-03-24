@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- MySql.5.7 MySql.5.7.MySql.Data MySql57
+--  MySql.5.7 MySql.5.7.MySql.Data MySql57
 
 INSERT INTO `MultipleRowsTable`
 (
@@ -12,7 +12,7 @@ VALUES
 (2,1.5,-2.6)
 
 BeforeExecute
--- MySql.5.7 MySql.5.7.MySql.Data MySql57
+--  MySql.5.7 MySql.5.7.MySql.Data MySql57
 
 SELECT
 	`t1`.`Id`,

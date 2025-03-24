@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 BeginTransactionAsync(RepeatableRead)
 BeforeExecute
--- MySql.5.7 MySql.5.7.MySql.Data MySql57 (asynchronously)
+--  MySql.5.7 MySql.5.7.MySql.Data MySql57 (asynchronously)
 
 SELECT
 	`m_1`.`ParentID`,
@@ -20,7 +20,7 @@ FROM
 		ON `m_1`.`ParentID` = `a_Parent1_1`.`ParentID`
 
 BeforeExecute
--- MySql.5.7 MySql.5.7.MySql.Data MySql57 (asynchronously)
+--  MySql.5.7 MySql.5.7.MySql.Data MySql57 (asynchronously)
 
 SELECT
 	`a_Parent1`.`ParentID`

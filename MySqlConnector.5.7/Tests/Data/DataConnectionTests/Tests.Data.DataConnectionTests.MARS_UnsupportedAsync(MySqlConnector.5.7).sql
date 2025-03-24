@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57 (asynchronously)
+--  MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57 (asynchronously)
 
 SELECT
 	`t1`.`FirstName`,
@@ -11,7 +11,7 @@ FROM
 	`Person` `t1`
 
 BeforeExecute
--- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57 (asynchronously)
+--  MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57 (asynchronously)
 DECLARE @ID Int32
 SET     @ID = 1
 

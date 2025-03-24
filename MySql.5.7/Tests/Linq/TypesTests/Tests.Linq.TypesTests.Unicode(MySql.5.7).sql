@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 BeginTransaction
 BeforeExecute
--- MySql.5.7 MySql.5.7.MySql.Data MySql57
+--  MySql.5.7 MySql.5.7.MySql.Data MySql57
 DECLARE @FirstName VarChar(4) -- String
 SET     @FirstName = '擊敗奴隸'
 DECLARE @LastName VarChar(9) -- String
@@ -27,7 +27,7 @@ VALUES
 )
 
 BeforeExecute
--- MySql.5.7 MySql.5.7.MySql.Data MySql57
+--  MySql.5.7 MySql.5.7.MySql.Data MySql57
 
 SELECT
 	`p`.`FirstName`,

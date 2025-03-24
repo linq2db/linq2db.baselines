@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- MySql.5.7 MySql.5.7.MySql.Data MySql57 (asynchronously)
+--  MySql.5.7 MySql.5.7.MySql.Data MySql57 (asynchronously)
 DECLARE @Id Int32
 SET     @Id = 1
 DECLARE @Bit_1 UInt64
@@ -93,7 +93,7 @@ VALUES
 )
 
 BeforeExecute
--- MySql.5.7 MySql.5.7.MySql.Data MySql57 (asynchronously)
+--  MySql.5.7 MySql.5.7.MySql.Data MySql57 (asynchronously)
 DECLARE @Id Int32
 SET     @Id = 2
 DECLARE @Bit_1 UInt64
@@ -187,7 +187,7 @@ VALUES
 )
 
 BeforeExecute
--- MySql.5.7 MySql.5.7.MySql.Data MySql57 (asynchronously)
+--  MySql.5.7 MySql.5.7.MySql.Data MySql57 (asynchronously)
 
 SELECT
 	`t1`.`ne.eds ``escaPing`,

@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- MySql.5.7 MySql.5.7.MySql.Data MySql57
+--  MySql.5.7 MySql.5.7.MySql.Data MySql57
 DECLARE @ParentID Int32
 SET     @ParentID = 1010
 DECLARE @Value1 Int32
@@ -19,7 +19,7 @@ VALUES
 BeforeExecute
 BeginTransaction
 BeforeExecute
--- MySql.5.7 MySql.5.7.MySql.Data MySql57
+--  MySql.5.7 MySql.5.7.MySql.Data MySql57
 
 UPDATE
 	`Parent` `t`
@@ -31,7 +31,7 @@ WHERE
 BeforeExecute
 DisposeTransaction
 BeforeExecute
--- MySql.5.7 MySql.5.7.MySql.Data MySql57
+--  MySql.5.7 MySql.5.7.MySql.Data MySql57
 
 SELECT
 	`t`.`ParentID`,

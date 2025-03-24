@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- MySql.5.7 MySql.5.7.MySql.Data MySql57
+--  MySql.5.7 MySql.5.7.MySql.Data MySql57
 
 CREATE TABLE `aa`
 (
@@ -10,7 +10,7 @@ CREATE TABLE `aa`
 )
 
 BeforeExecute
--- MySql.5.7 MySql.5.7.MySql.Data MySql57
+--  MySql.5.7 MySql.5.7.MySql.Data MySql57
 DECLARE @bb Int32
 SET     @bb = 99
 DECLARE @cc VarChar(5) -- String
@@ -28,7 +28,7 @@ VALUES
 )
 
 BeforeExecute
--- MySql.5.7 MySql.5.7.MySql.Data MySql57
+--  MySql.5.7 MySql.5.7.MySql.Data MySql57
 
 SELECT
 	`t1`.`bb`,
@@ -37,7 +37,7 @@ FROM
 	`aa` `t1`
 
 BeforeExecute
--- MySql.5.7 MySql.5.7.MySql.Data MySql57
+--  MySql.5.7 MySql.5.7.MySql.Data MySql57
 
 DROP TABLE `aa`
 

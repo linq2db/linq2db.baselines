@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
+--  MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 DECLARE @Type VarChar(9) -- String
 SET     @Type = 'Child564A'
 DECLARE @StringValue VarChar(9) -- String
@@ -17,7 +17,7 @@ VALUES
 )
 
 BeforeExecute
--- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
+--  MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 DECLARE @Type VarChar(9) -- String
 SET     @Type = 'Child564B'
 DECLARE @IntValue Int32
@@ -35,7 +35,7 @@ VALUES
 )
 
 BeforeExecute
--- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
+--  MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 
 SELECT
 	COUNT(*)

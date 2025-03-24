@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
+--  MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 DECLARE @Id Int32
 SET     @Id = 1
 DECLARE @Type Int32
@@ -29,7 +29,7 @@ VALUES
 )
 
 BeforeExecute
--- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
+--  MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 
 SELECT
 	`t1`.`Type`,
@@ -42,7 +42,7 @@ FROM
 LIMIT 2
 
 BeforeExecute
--- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
+--  MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 DECLARE @Type Int32
 SET     @Type = 1
 DECLARE @ChildId Int32
@@ -65,7 +65,7 @@ WHERE
 	`t1`.`Id` = @Id
 
 BeforeExecute
--- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
+--  MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 
 SELECT
 	`t1`.`Type`,

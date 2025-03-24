@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- MySql.5.7 MySql.5.7.MySql.Data MySql57
+--  MySql.5.7 MySql.5.7.MySql.Data MySql57
 DECLARE @VarCharDefault VarChar(4) -- String
 SET     @VarCharDefault = 'ыsdf'
 DECLARE @VarChar1 VarChar(1) -- String
@@ -221,7 +221,7 @@ VALUES
 )
 
 BeforeExecute
--- MySql.5.7 MySql.5.7.MySql.Data MySql57
+--  MySql.5.7 MySql.5.7.MySql.Data MySql57
 
 SELECT
 	`t1`.`VarCharDefault`,

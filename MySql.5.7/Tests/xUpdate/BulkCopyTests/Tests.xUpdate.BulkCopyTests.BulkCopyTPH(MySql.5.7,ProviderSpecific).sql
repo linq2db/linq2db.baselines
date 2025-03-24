@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- MySql.5.7 MySql.5.7.MySql.Data MySql57
+--  MySql.5.7 MySql.5.7.MySql.Data MySql57
 
 INSERT INTO `TPHTable`
 (
@@ -16,7 +16,7 @@ VALUES
 (3,3,NULL,NULL,'Str3','Y')
 
 BeforeExecute
--- MySql.5.7 MySql.5.7.MySql.Data MySql57
+--  MySql.5.7 MySql.5.7.MySql.Data MySql57
 
 SELECT
 	`t1`.`Discriminator`,
@@ -31,7 +31,7 @@ ORDER BY
 	`t1`.`Id`
 
 BeforeExecute
--- MySql.5.7 MySql.5.7.MySql.Data MySql57
+--  MySql.5.7 MySql.5.7.MySql.Data MySql57
 
 SELECT
 	`x`.`Discriminator`,
@@ -47,7 +47,7 @@ WHERE
 LIMIT 2
 
 BeforeExecute
--- MySql.5.7 MySql.5.7.MySql.Data MySql57
+--  MySql.5.7 MySql.5.7.MySql.Data MySql57
 
 SELECT
 	`x`.`Discriminator`,
@@ -63,7 +63,7 @@ WHERE
 LIMIT 2
 
 BeforeExecute
--- MySql.5.7 MySql.5.7.MySql.Data MySql57
+--  MySql.5.7 MySql.5.7.MySql.Data MySql57
 
 SELECT
 	`x`.`Discriminator`,
@@ -79,7 +79,7 @@ WHERE
 LIMIT 2
 
 BeforeExecute
--- MySql.5.7 MySql.5.7.MySql.Data MySql57
+--  MySql.5.7 MySql.5.7.MySql.Data MySql57
 
 SELECT
 	`x`.`Discriminator`,
@@ -95,7 +95,7 @@ WHERE
 LIMIT 2
 
 BeforeExecute
--- MySql.5.7 MySql.5.7.MySql.Data MySql57
+--  MySql.5.7 MySql.5.7.MySql.Data MySql57
 
 SELECT
 	`x`.`Discriminator`,
@@ -111,7 +111,7 @@ WHERE
 LIMIT 2
 
 BeforeExecute
--- MySql.5.7 MySql.5.7.MySql.Data MySql57
+--  MySql.5.7 MySql.5.7.MySql.Data MySql57
 
 SELECT
 	`x`.`Discriminator`,

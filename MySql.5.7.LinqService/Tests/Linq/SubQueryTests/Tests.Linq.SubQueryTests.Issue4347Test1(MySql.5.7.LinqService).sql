@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- MySql.5.7 MySql.5.7.MySql.Data MySql57
+--  MySql.5.7 MySql.5.7.MySql.Data MySql57
 
 SELECT
 	`m_1`.`Id`,
@@ -35,7 +35,7 @@ FROM
 		INNER JOIN `LineEntity` `d` ON `m_1`.`Id` = `d`.`TransactionId`
 
 BeforeExecute
--- MySql.5.7 MySql.5.7.MySql.Data MySql57
+--  MySql.5.7 MySql.5.7.MySql.Data MySql57
 
 SELECT
 	`x`.`Id`,

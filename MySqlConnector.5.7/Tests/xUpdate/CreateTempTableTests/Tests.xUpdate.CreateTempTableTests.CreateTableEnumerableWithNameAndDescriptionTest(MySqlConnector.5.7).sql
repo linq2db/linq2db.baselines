@@ -1,10 +1,10 @@
 ﻿BeforeExecute
--- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
+--  MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 
 DROP TABLE IF EXISTS `TempTable`
 
 BeforeExecute
--- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
+--  MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 
 CREATE TABLE IF NOT EXISTS `TempTable`
 (
@@ -12,7 +12,7 @@ CREATE TABLE IF NOT EXISTS `TempTable`
 )
 
 BeforeExecute
--- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
+--  MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 
 INSERT INTO `TempTable`
 (
@@ -22,7 +22,7 @@ VALUES
 ('John')
 
 BeforeExecute
--- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
+--  MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 
 SELECT
 	`t`.`Name`
@@ -31,7 +31,7 @@ FROM
 		INNER JOIN `TempTable` `t` ON `p`.`FirstName` = `t`.`Name`
 
 BeforeExecute
--- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
+--  MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 
 DROP TABLE IF EXISTS `TempTable`
 

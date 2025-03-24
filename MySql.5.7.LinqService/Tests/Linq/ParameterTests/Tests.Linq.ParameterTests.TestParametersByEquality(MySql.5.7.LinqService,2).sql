@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- MySql.5.7 MySql.5.7.MySql.Data MySql57
+--  MySql.5.7 MySql.5.7.MySql.Data MySql57
 DECLARE @personId Int32
 SET     @personId = 1
 DECLARE @personId_1 Int32
@@ -23,7 +23,7 @@ WHERE
 	`p`.`PersonID` = @personId_1
 
 BeforeExecute
--- MySql.5.7 MySql.5.7.MySql.Data MySql57
+--  MySql.5.7 MySql.5.7.MySql.Data MySql57
 DECLARE @personId Int32
 SET     @personId = 1
 DECLARE @personId_1 Int32

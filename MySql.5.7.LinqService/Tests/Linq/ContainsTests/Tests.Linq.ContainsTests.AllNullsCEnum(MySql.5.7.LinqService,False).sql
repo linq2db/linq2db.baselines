@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- MySql.5.7 MySql.5.7.MySql.Data MySql57
+--  MySql.5.7 MySql.5.7.MySql.Data MySql57
 DECLARE @In VarChar -- AnsiString
 SET     @In = NULL
 
@@ -11,7 +11,7 @@ WHERE
 	`s`.`CEnum` IN (@In, @In)
 
 BeforeExecute
--- MySql.5.7 MySql.5.7.MySql.Data MySql57
+--  MySql.5.7 MySql.5.7.MySql.Data MySql57
 DECLARE @NotIn VarChar -- AnsiString
 SET     @NotIn = NULL
 

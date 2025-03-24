@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- MySql.5.7 MySql.5.7.MySql.Data MySql57
+--  MySql.5.7 MySql.5.7.MySql.Data MySql57
 
 DELETE  
 FROM
@@ -8,7 +8,7 @@ WHERE
 	`Person`.`FirstName` LIKE 'Insert16%' ESCAPE '~'
 
 BeforeExecute
--- MySql.5.7 MySql.5.7.MySql.Data MySql57
+--  MySql.5.7 MySql.5.7.MySql.Data MySql57
 DECLARE @name VarChar(8) -- String
 SET     @name = 'Insert16'
 DECLARE @idx Int32
@@ -28,7 +28,7 @@ VALUES
 )
 
 BeforeExecute
--- MySql.5.7 MySql.5.7.MySql.Data MySql57
+--  MySql.5.7 MySql.5.7.MySql.Data MySql57
 
 SELECT
 	COUNT(*)
@@ -38,7 +38,7 @@ WHERE
 	`t1`.`FirstName` LIKE 'Insert16%' ESCAPE '~'
 
 BeforeExecute
--- MySql.5.7 MySql.5.7.MySql.Data MySql57
+--  MySql.5.7 MySql.5.7.MySql.Data MySql57
 
 DELETE  
 FROM

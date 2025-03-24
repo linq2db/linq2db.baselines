@@ -1,10 +1,10 @@
 ﻿BeforeExecute
--- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
+--  MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 
 ALTER TABLE Person AUTO_INCREMENT = 5
 
 BeforeExecute
--- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
+--  MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 DECLARE @FirstName VarChar(4) -- String
 SET     @FirstName = 'John'
 DECLARE @LastName VarChar(7) -- String
@@ -30,12 +30,12 @@ VALUES
 )
 
 BeforeExecute
--- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
+--  MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 
 SELECT LAST_INSERT_ID()
 
 BeforeExecute
--- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57 (asynchronously)
+--  MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57 (asynchronously)
 DECLARE @PersonID Int32
 SET     @PersonID = 5
 DECLARE @Diagnosis VarChar(4) -- String
@@ -55,7 +55,7 @@ ON DUPLICATE KEY UPDATE
 	`Diagnosis` = @Diagnosis
 
 BeforeExecute
--- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57 (asynchronously)
+--  MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57 (asynchronously)
 DECLARE @PersonID Int32
 SET     @PersonID = 5
 DECLARE @Diagnosis VarChar(4) -- String
@@ -75,7 +75,7 @@ ON DUPLICATE KEY UPDATE
 	`Diagnosis` = @Diagnosis
 
 BeforeExecute
--- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57 (asynchronously)
+--  MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57 (asynchronously)
 DECLARE @PersonID Int32
 SET     @PersonID = 5
 DECLARE @Diagnosis VarChar(4) -- String
@@ -95,7 +95,7 @@ ON DUPLICATE KEY UPDATE
 	`Diagnosis` = @Diagnosis
 
 BeforeExecute
--- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57 (asynchronously)
+--  MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57 (asynchronously)
 DECLARE @id Int32
 SET     @id = 5
 

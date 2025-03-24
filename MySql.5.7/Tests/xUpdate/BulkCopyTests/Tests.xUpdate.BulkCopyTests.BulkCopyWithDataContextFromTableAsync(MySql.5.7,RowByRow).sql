@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- MySql.5.7 MySql.5.7.MySql.Data MySql57 (asynchronously)
+--  MySql.5.7 MySql.5.7.MySql.Data MySql57 (asynchronously)
 
 INSERT INTO `SimpleBulkCopyTable`
 (
@@ -9,7 +9,7 @@ VALUES
 (1)
 
 BeforeExecute
--- MySql.5.7 MySql.5.7.MySql.Data MySql57 (asynchronously)
+--  MySql.5.7 MySql.5.7.MySql.Data MySql57 (asynchronously)
 
 INSERT INTO `SimpleBulkCopyTable`
 (
@@ -19,7 +19,7 @@ VALUES
 (2)
 
 BeforeExecute
--- MySql.5.7 MySql.5.7.MySql.Data MySql57 (asynchronously)
+--  MySql.5.7 MySql.5.7.MySql.Data MySql57 (asynchronously)
 DECLARE @Id Int32
 SET     @Id = 3
 
@@ -33,7 +33,7 @@ VALUES
 )
 
 BeforeExecute
--- MySql.5.7 MySql.5.7.MySql.Data MySql57 (asynchronously)
+--  MySql.5.7 MySql.5.7.MySql.Data MySql57 (asynchronously)
 
 INSERT INTO `SimpleBulkCopyTable`
 (
@@ -43,7 +43,7 @@ VALUES
 (10)
 
 BeforeExecute
--- MySql.5.7 MySql.5.7.MySql.Data MySql57 (asynchronously)
+--  MySql.5.7 MySql.5.7.MySql.Data MySql57 (asynchronously)
 
 INSERT INTO `SimpleBulkCopyTable`
 (
@@ -53,7 +53,7 @@ VALUES
 (20)
 
 BeforeExecute
--- MySql.5.7 MySql.5.7.MySql.Data MySql57 (asynchronously)
+--  MySql.5.7 MySql.5.7.MySql.Data MySql57 (asynchronously)
 DECLARE @Id Int32
 SET     @Id = 30
 

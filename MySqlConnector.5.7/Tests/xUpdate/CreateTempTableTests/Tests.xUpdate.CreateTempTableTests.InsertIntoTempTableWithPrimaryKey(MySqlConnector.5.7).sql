@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
+--  MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 
 CREATE TEMPORARY TABLE `TableWithPrimaryKey2`
 (
@@ -9,7 +9,7 @@ CREATE TEMPORARY TABLE `TableWithPrimaryKey2`
 )
 
 BeforeExecute
--- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
+--  MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 
 INSERT INTO `TableWithPrimaryKey2`
 (
@@ -19,7 +19,7 @@ VALUES
 (1)
 
 BeforeExecute
--- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
+--  MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 
 DROP TEMPORARY TABLE IF EXISTS `TableWithPrimaryKey2`
 

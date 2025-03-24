@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 BeginTransaction(RepeatableRead)
 BeforeExecute
--- MySql.5.7 MySql.5.7.MySql.Data MySql57
+--  MySql.5.7 MySql.5.7.MySql.Data MySql57
 DECLARE @skip Int32
 SET     @skip = 100
 DECLARE @take Int32
@@ -42,7 +42,7 @@ FROM
 		INNER JOIN `SubOrderDetail` `d_1` ON `m_1`.`Id` = `d_1`.`SubOrderId`
 
 BeforeExecute
--- MySql.5.7 MySql.5.7.MySql.Data MySql57
+--  MySql.5.7 MySql.5.7.MySql.Data MySql57
 DECLARE @skip Int32
 SET     @skip = 100
 DECLARE @take Int32
@@ -74,7 +74,7 @@ FROM
 BeforeExecute
 DisposeTransaction
 BeforeExecute
--- MySql.5.7 MySql.5.7.MySql.Data MySql57
+--  MySql.5.7 MySql.5.7.MySql.Data MySql57
 DECLARE @skip Int32
 SET     @skip = 100
 DECLARE @take Int32

@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57 (asynchronously)
+--  MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57 (asynchronously)
 
 INSERT INTO `SimpleBulkCopyTable`
 (
@@ -9,7 +9,7 @@ VALUES
 (1)
 
 BeforeExecute
--- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57 (asynchronously)
+--  MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57 (asynchronously)
 
 INSERT INTO `SimpleBulkCopyTable`
 (
@@ -22,7 +22,7 @@ BeforeExecute
 INSERT ASYNC BULK `SimpleBulkCopyTable`(Id
 
 BeforeExecute
--- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57 (asynchronously)
+--  MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57 (asynchronously)
 
 INSERT INTO `SimpleBulkCopyTable`
 (
@@ -32,7 +32,7 @@ VALUES
 (10)
 
 BeforeExecute
--- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57 (asynchronously)
+--  MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57 (asynchronously)
 
 INSERT INTO `SimpleBulkCopyTable`
 (

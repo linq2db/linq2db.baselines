@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- MySql.5.7 MySql.5.7.MySql.Data MySql57
+--  MySql.5.7 MySql.5.7.MySql.Data MySql57
 
 UPDATE
 	`Parent` `p`
@@ -11,7 +11,7 @@ WHERE
 BeforeExecute
 BeginTransaction(Unspecified)
 BeforeExecute
--- MySql.5.7 MySql.5.7.MySql.Data MySql57
+--  MySql.5.7 MySql.5.7.MySql.Data MySql57
 
 UPDATE
 	`Parent` `p`
@@ -21,7 +21,7 @@ WHERE
 	`p`.`ParentID` = 1
 
 BeforeExecute
--- MySql.5.7 MySql.5.7.MySql.Data MySql57
+--  MySql.5.7 MySql.5.7.MySql.Data MySql57
 
 SELECT
 	`p`.`ParentID`,
@@ -35,7 +35,7 @@ LIMIT 1
 BeforeExecute
 RollbackTransaction
 BeforeExecute
--- MySql.5.7 MySql.5.7.MySql.Data MySql57
+--  MySql.5.7 MySql.5.7.MySql.Data MySql57
 
 SELECT
 	`p`.`ParentID`,

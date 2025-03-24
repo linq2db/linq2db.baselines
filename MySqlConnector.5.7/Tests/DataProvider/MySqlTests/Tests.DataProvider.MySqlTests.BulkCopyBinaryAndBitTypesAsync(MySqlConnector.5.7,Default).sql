@@ -1,10 +1,10 @@
 ﻿BeforeExecute
--- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
+--  MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 
 SET GLOBAL local_infile=ON
 
 BeforeExecute
--- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57 (asynchronously)
+--  MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57 (asynchronously)
 
 INSERT INTO `NeedS.esca Pin``g`
 (
@@ -35,7 +35,7 @@ VALUES
 (2,18446744073709551615,9223372036854775807,18446744073709551615,1073741823,1,1,0x010203,0x040506,0x070809,0x0A0B0C,0x0D0E0F,0x101112,0x131415,0x161718,0x191A1B,0x1C1D1E,0x1F2021,0x222324,0x252627,0x28292A)
 
 BeforeExecute
--- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57 (asynchronously)
+--  MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57 (asynchronously)
 
 SELECT
 	`t1`.`ne.eds ``escaPing`,

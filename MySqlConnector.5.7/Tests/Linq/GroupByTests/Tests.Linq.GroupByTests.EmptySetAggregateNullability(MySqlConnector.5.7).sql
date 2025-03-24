@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
+--  MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 
 SELECT
 	COUNT(*)
@@ -16,7 +16,7 @@ WHERE
 	`t1`.`Min_1` <> 0 OR `t1`.`Min_1` IS NULL
 
 BeforeExecute
--- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
+--  MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 
 SELECT
 	COUNT(*)
@@ -33,7 +33,7 @@ WHERE
 	`t1`.`Max_1` <> 0 OR `t1`.`Max_1` IS NULL
 
 BeforeExecute
--- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
+--  MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 
 SELECT
 	COUNT(*)
@@ -50,7 +50,7 @@ WHERE
 	`t1`.`Avg_1` <> 0 OR `t1`.`Avg_1` IS NULL
 
 BeforeExecute
--- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
+--  MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 
 SELECT
 	COUNT(*)
@@ -67,7 +67,7 @@ WHERE
 	`t1`.`Sum_1` <> 0 OR `t1`.`Sum_1` IS NULL
 
 BeforeExecute
--- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
+--  MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 
 SELECT
 	COUNT(*)
