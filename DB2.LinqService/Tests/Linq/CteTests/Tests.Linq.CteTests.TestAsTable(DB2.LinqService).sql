@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- DB2 DB2.LUW DB2LUW
+--  DB2 DB2.LUW DB2LUW
 
 WITH CTE1_ ("ParentID", "ChildID")
 AS
@@ -17,7 +17,7 @@ FROM
 	CTE1_ "t2"
 
 BeforeExecute
--- DB2 DB2.LUW DB2LUW
+--  DB2 DB2.LUW DB2LUW
 
 SELECT
 	"t1"."ParentID",

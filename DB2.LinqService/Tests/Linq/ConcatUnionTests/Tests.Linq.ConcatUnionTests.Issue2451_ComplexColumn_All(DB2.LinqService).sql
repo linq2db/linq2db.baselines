@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- DB2 DB2.LUW DB2LUW
+--  DB2 DB2.LUW DB2LUW
 
 SELECT
 	"p"."FirstName"
@@ -12,7 +12,7 @@ FROM
 	"Person" "p_1"
 
 BeforeExecute
--- DB2 DB2.LUW DB2LUW
+--  DB2 DB2.LUW DB2LUW
 
 SELECT
 	"p"."FirstName" || '/' || "p"."LastName"

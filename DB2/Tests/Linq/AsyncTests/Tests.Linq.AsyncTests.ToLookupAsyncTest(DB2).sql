@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- DB2 DB2.LUW DB2LUW (asynchronously)
+--  DB2 DB2.LUW DB2LUW (asynchronously)
 
 SELECT
 	"t1"."ParentID",
@@ -11,7 +11,7 @@ ORDER BY
 	"t1"."ChildID"
 
 BeforeExecute
--- DB2 DB2.LUW DB2LUW (asynchronously)
+--  DB2 DB2.LUW DB2LUW (asynchronously)
 
 SELECT
 	"t1"."ParentID",

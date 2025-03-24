@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- DB2 DB2.LUW DB2LUW
+--  DB2 DB2.LUW DB2LUW
 
 INSERT INTO "Parent"
 (
@@ -13,7 +13,7 @@ VALUES
 )
 
 BeforeExecute
--- DB2 DB2.LUW DB2LUW
+--  DB2 DB2.LUW DB2LUW
 
 INSERT INTO "Child"
 (
@@ -27,7 +27,7 @@ VALUES
 )
 
 BeforeExecute
--- DB2 DB2.LUW DB2LUW
+--  DB2 DB2.LUW DB2LUW
 DECLARE @Value1 Integer(4) -- Int32
 SET     @Value1 = 5
 

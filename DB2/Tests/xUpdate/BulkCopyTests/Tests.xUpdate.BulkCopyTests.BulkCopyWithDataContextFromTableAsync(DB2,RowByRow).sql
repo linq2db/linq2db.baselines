@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- DB2 DB2.LUW DB2LUW (asynchronously)
+--  DB2 DB2.LUW DB2LUW (asynchronously)
 
 INSERT INTO "SimpleBulkCopyTable"
 (
@@ -9,7 +9,7 @@ VALUES
 (1)
 
 BeforeExecute
--- DB2 DB2.LUW DB2LUW (asynchronously)
+--  DB2 DB2.LUW DB2LUW (asynchronously)
 
 INSERT INTO "SimpleBulkCopyTable"
 (
@@ -19,7 +19,7 @@ VALUES
 (2)
 
 BeforeExecute
--- DB2 DB2.LUW DB2LUW (asynchronously)
+--  DB2 DB2.LUW DB2LUW (asynchronously)
 DECLARE @Id Integer(4) -- Int32
 SET     @Id = 3
 
@@ -33,7 +33,7 @@ VALUES
 )
 
 BeforeExecute
--- DB2 DB2.LUW DB2LUW (asynchronously)
+--  DB2 DB2.LUW DB2LUW (asynchronously)
 
 INSERT INTO "SimpleBulkCopyTable"
 (
@@ -43,7 +43,7 @@ VALUES
 (10)
 
 BeforeExecute
--- DB2 DB2.LUW DB2LUW (asynchronously)
+--  DB2 DB2.LUW DB2LUW (asynchronously)
 
 INSERT INTO "SimpleBulkCopyTable"
 (
@@ -53,7 +53,7 @@ VALUES
 (20)
 
 BeforeExecute
--- DB2 DB2.LUW DB2LUW (asynchronously)
+--  DB2 DB2.LUW DB2LUW (asynchronously)
 DECLARE @Id Integer(4) -- Int32
 SET     @Id = 30
 

@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- DB2 DB2.LUW DB2LUW
+--  DB2 DB2.LUW DB2LUW
 
 UPDATE
 	"Ints" "i"
@@ -19,7 +19,7 @@ WHERE
 	"i"."One" = 10
 
 BeforeExecute
--- DB2 DB2.LUW DB2LUW
+--  DB2 DB2.LUW DB2LUW
 
 SELECT
 	"t1"."One",

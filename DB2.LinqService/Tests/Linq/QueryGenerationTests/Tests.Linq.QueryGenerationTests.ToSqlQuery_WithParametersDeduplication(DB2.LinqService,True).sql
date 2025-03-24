@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- DB2 DB2.LUW DB2LUW
+--  DB2 DB2.LUW DB2LUW
 
 SELECT
 	"p"."FirstName",
@@ -13,7 +13,7 @@ WHERE
 	"p"."FirstName" = 'John' OR "p"."LastName" = 'John'
 
 BeforeExecute
--- DB2 DB2.LUW DB2LUW
+--  DB2 DB2.LUW DB2LUW
 DECLARE @firstName VarChar(4) -- String
 SET     @firstName = 'John'
 

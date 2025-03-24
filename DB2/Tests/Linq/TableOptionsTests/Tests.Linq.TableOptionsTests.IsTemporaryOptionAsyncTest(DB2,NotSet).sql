@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- DB2 DB2.LUW DB2LUW (asynchronously)
+--  DB2 DB2.LUW DB2LUW (asynchronously)
 
 DECLARE GLOBAL TEMPORARY TABLE SESSION."temp_table1"
 (
@@ -9,7 +9,7 @@ DECLARE GLOBAL TEMPORARY TABLE SESSION."temp_table1"
 ON COMMIT PRESERVE ROWS
 
 BeforeExecute
--- DB2 DB2.LUW DB2LUW (asynchronously)
+--  DB2 DB2.LUW DB2LUW (asynchronously)
 
 INSERT INTO SESSION."temp_table1"
 (
@@ -20,7 +20,7 @@ VALUES
 (1,2)
 
 BeforeExecute
--- DB2 DB2.LUW DB2LUW (asynchronously)
+--  DB2 DB2.LUW DB2LUW (asynchronously)
 
 DECLARE GLOBAL TEMPORARY TABLE SESSION."temp_table2"
 (
@@ -30,7 +30,7 @@ DECLARE GLOBAL TEMPORARY TABLE SESSION."temp_table2"
 ON COMMIT PRESERVE ROWS
 
 BeforeExecute
--- DB2 DB2.LUW DB2LUW (asynchronously)
+--  DB2 DB2.LUW DB2LUW (asynchronously)
 
 INSERT INTO SESSION."temp_table2"
 (
@@ -44,7 +44,7 @@ FROM
 	SESSION."temp_table1" "t1"
 
 BeforeExecute
--- DB2 DB2.LUW DB2LUW
+--  DB2 DB2.LUW DB2LUW
 
 SELECT
 	"t1".ID,
@@ -53,7 +53,7 @@ FROM
 	SESSION."temp_table1" "t1"
 
 BeforeExecute
--- DB2 DB2.LUW DB2LUW
+--  DB2 DB2.LUW DB2LUW
 
 SELECT
 	"t1".ID,
@@ -62,7 +62,7 @@ FROM
 	SESSION."temp_table2" "t1"
 
 BeforeExecute
--- DB2 DB2.LUW DB2LUW (asynchronously)
+--  DB2 DB2.LUW DB2LUW (asynchronously)
 
 INSERT INTO SESSION."temp_table1"
 (
@@ -73,7 +73,7 @@ VALUES
 (2,3)
 
 BeforeExecute
--- DB2 DB2.LUW DB2LUW (asynchronously)
+--  DB2 DB2.LUW DB2LUW (asynchronously)
 DECLARE @ID Integer(4) -- Int32
 SET     @ID = 3
 DECLARE @Value Integer(4) -- Int32
@@ -94,17 +94,17 @@ BeforeExecute
 INSERT BULK SESSION."temp_table1"
 
 BeforeExecute
--- DB2 DB2.LUW DB2LUW (asynchronously)
+--  DB2 DB2.LUW DB2LUW (asynchronously)
 
 TRUNCATE TABLE SESSION."temp_table1" IMMEDIATE
 
 BeforeExecute
--- DB2 DB2.LUW DB2LUW (asynchronously)
+--  DB2 DB2.LUW DB2LUW (asynchronously)
 
 TRUNCATE TABLE SESSION."temp_table2" IMMEDIATE
 
 BeforeExecute
--- DB2 DB2.LUW DB2LUW
+--  DB2 DB2.LUW DB2LUW
 
 BEGIN
 	DECLARE CONTINUE HANDLER FOR SQLSTATE '42704' BEGIN END;
@@ -112,7 +112,7 @@ BEGIN
 END
 
 BeforeExecute
--- DB2 DB2.LUW DB2LUW
+--  DB2 DB2.LUW DB2LUW
 
 BEGIN
 	DECLARE CONTINUE HANDLER FOR SQLSTATE '42704' BEGIN END;

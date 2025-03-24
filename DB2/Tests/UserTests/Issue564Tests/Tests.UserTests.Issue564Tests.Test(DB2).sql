@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- DB2 DB2.LUW DB2LUW
+--  DB2 DB2.LUW DB2LUW
 DECLARE @Type VarChar(9) -- String
 SET     @Type = 'Child564A'
 DECLARE @StringValue VarChar(9) -- String
@@ -17,7 +17,7 @@ VALUES
 )
 
 BeforeExecute
--- DB2 DB2.LUW DB2LUW
+--  DB2 DB2.LUW DB2LUW
 DECLARE @Type VarChar(9) -- String
 SET     @Type = 'Child564B'
 DECLARE @IntValue Integer(4) -- Int32
@@ -35,7 +35,7 @@ VALUES
 )
 
 BeforeExecute
--- DB2 DB2.LUW DB2LUW
+--  DB2 DB2.LUW DB2LUW
 
 SELECT
 	COUNT(*)

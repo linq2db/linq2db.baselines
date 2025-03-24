@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- DB2 DB2.LUW DB2LUW (asynchronously)
+--  DB2 DB2.LUW DB2LUW (asynchronously)
 
 SELECT
 	"t1"."ParentID",
@@ -10,7 +10,7 @@ FROM
 BeforeExecute
 BeginTransactionAsync
 BeforeExecute
--- DB2 DB2.LUW DB2LUW
+--  DB2 DB2.LUW DB2LUW
 DECLARE @ParentID Integer(4) -- Int32
 SET     @ParentID = 1010
 DECLARE @Value1 Integer(4) -- Int32

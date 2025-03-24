@@ -1,12 +1,12 @@
 ﻿BeforeExecute
--- DB2 DB2.LUW DB2LUW
+--  DB2 DB2.LUW DB2LUW
 
 ALTER TABLE "Person" ALTER COLUMN "PersonID" RESTART WITH 5
 
 BeforeExecute
 BeginTransaction
 BeforeExecute
--- DB2 DB2.LUW DB2LUW
+--  DB2 DB2.LUW DB2LUW
 
 MERGE INTO "Patient" "Target"
 USING (
@@ -33,7 +33,7 @@ WHEN MATCHED AND "Source"."source_Person_FirstName" = 'first 4' AND
 "Source"."target_Person_FirstName" = 'first 4' THEN DELETE
 
 BeforeExecute
--- DB2 DB2.LUW DB2LUW
+--  DB2 DB2.LUW DB2LUW
 
 SELECT
 	"t1"."PersonID",

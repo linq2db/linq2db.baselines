@@ -1,25 +1,25 @@
 ﻿BeforeExecute
 BeginTransaction
 BeforeExecute
--- DB2 DB2.LUW DB2LUW
+--  DB2 DB2.LUW DB2LUW
 
 DELETE FROM
 	"Parent" "t1"
 
 BeforeExecute
--- DB2 DB2.LUW DB2LUW
+--  DB2 DB2.LUW DB2LUW
 
 DELETE FROM
 	"Child" "t1"
 
 BeforeExecute
--- DB2 DB2.LUW DB2LUW
+--  DB2 DB2.LUW DB2LUW
 
 DELETE FROM
 	"GrandChild" "t1"
 
 BeforeExecute
--- DB2 DB2.LUW DB2LUW
+--  DB2 DB2.LUW DB2LUW
 DECLARE @Id Integer(4) -- Int32
 SET     @Id = 1
 
@@ -33,7 +33,7 @@ VALUES
 )
 
 BeforeExecute
--- DB2 DB2.LUW DB2LUW
+--  DB2 DB2.LUW DB2LUW
 DECLARE @Id Integer(4) -- Int32
 SET     @Id = 2
 
@@ -47,7 +47,7 @@ VALUES
 )
 
 BeforeExecute
--- DB2 DB2.LUW DB2LUW
+--  DB2 DB2.LUW DB2LUW
 DECLARE @Id Integer(4) -- Int32
 SET     @Id = 10
 
@@ -61,7 +61,7 @@ VALUES
 )
 
 BeforeExecute
--- DB2 DB2.LUW DB2LUW
+--  DB2 DB2.LUW DB2LUW
 DECLARE @Id Integer(4) -- Int32
 SET     @Id = 20
 
@@ -75,7 +75,7 @@ VALUES
 )
 
 BeforeExecute
--- DB2 DB2.LUW DB2LUW
+--  DB2 DB2.LUW DB2LUW
 DECLARE @Id Integer(4) -- Int32
 SET     @Id = 11
 DECLARE @LeftId Integer(4) -- Int32
@@ -97,7 +97,7 @@ VALUES
 )
 
 BeforeExecute
--- DB2 DB2.LUW DB2LUW
+--  DB2 DB2.LUW DB2LUW
 
 MERGE INTO "GrandChild" "Target"
 USING (
@@ -123,7 +123,7 @@ VALUES
 )
 
 BeforeExecute
--- DB2 DB2.LUW DB2LUW
+--  DB2 DB2.LUW DB2LUW
 
 SELECT
 	"t1"."GrandChildID",

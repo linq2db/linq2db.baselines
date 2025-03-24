@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 BeginTransaction
 BeforeExecute
--- DB2 DB2.LUW DB2LUW
+--  DB2 DB2.LUW DB2LUW
 DECLARE @FirstName VarChar(4) -- String
 SET     @FirstName = '擊敗奴隸'
 DECLARE @LastName VarChar(9) -- String
@@ -27,7 +27,7 @@ VALUES
 )
 
 BeforeExecute
--- DB2 DB2.LUW DB2LUW
+--  DB2 DB2.LUW DB2LUW
 
 SELECT
 	"p"."FirstName",

@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- DB2 DB2.LUW DB2LUW
+--  DB2 DB2.LUW DB2LUW
 
 WITH CTE1_ ("ParentID")
 AS
@@ -30,7 +30,7 @@ FROM
 		INNER JOIN LAST0 "c4_1" ON "c4_1"."ParentID" = "p"."ParentID"
 
 BeforeExecute
--- DB2 DB2.LUW DB2LUW
+--  DB2 DB2.LUW DB2LUW
 
 SELECT
 	"c4"."ParentID",

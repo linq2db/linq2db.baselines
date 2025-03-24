@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- DB2 DB2.LUW DB2LUW
+--  DB2 DB2.LUW DB2LUW
 DECLARE @Bool1 Char(1) -- StringFixedLength
 SET     @Bool1 = 'Y'
 
@@ -14,7 +14,7 @@ WHERE
 	"r"."Bool1" = @Bool1 AND "r"."Bool2" IS NULL AND "r"."Bool3" IS NULL
 
 BeforeExecute
--- DB2 DB2.LUW DB2LUW
+--  DB2 DB2.LUW DB2LUW
 DECLARE @true_value Char(1) -- StringFixedLength
 SET     @true_value = 'Y'
 
@@ -30,7 +30,7 @@ WHERE
 	"r"."Bool3" IS NULL
 
 BeforeExecute
--- DB2 DB2.LUW DB2LUW
+--  DB2 DB2.LUW DB2LUW
 DECLARE @Bool1 Char(1) -- StringFixedLength
 SET     @Bool1 = 'Y'
 
@@ -46,7 +46,7 @@ WHERE
 	"r"."Bool2" IS NULL
 
 BeforeExecute
--- DB2 DB2.LUW DB2LUW
+--  DB2 DB2.LUW DB2LUW
 DECLARE @Bool1 Char(1) -- StringFixedLength
 SET     @Bool1 = 'Y'
 
@@ -61,7 +61,7 @@ WHERE
 	"r"."Bool2" IS NULL AND "r"."Bool1" = @Bool1 AND "r"."Bool3" IS NULL
 
 BeforeExecute
--- DB2 DB2.LUW DB2LUW
+--  DB2 DB2.LUW DB2LUW
 DECLARE @Bool1 Char(1) -- StringFixedLength
 SET     @Bool1 = 'N'
 DECLARE @Bool3 Char(1) -- StringFixedLength
@@ -78,7 +78,7 @@ WHERE
 	"r"."Bool1" = @Bool1 AND "r"."Bool2" IS NULL AND "r"."Bool3" = @Bool3
 
 BeforeExecute
--- DB2 DB2.LUW DB2LUW
+--  DB2 DB2.LUW DB2LUW
 DECLARE @true_value Char(1) -- StringFixedLength
 SET     @true_value = 'Y'
 DECLARE @Bool1 Char(1) -- StringFixedLength
@@ -96,7 +96,7 @@ WHERE
 	"r"."Bool2" IS NULL
 
 BeforeExecute
--- DB2 DB2.LUW DB2LUW
+--  DB2 DB2.LUW DB2LUW
 DECLARE @false_value Char(1) -- StringFixedLength
 SET     @false_value = 'N'
 DECLARE @Bool3 Char(1) -- StringFixedLength
@@ -114,7 +114,7 @@ WHERE
 	"r"."Bool3" = @Bool3
 
 BeforeExecute
--- DB2 DB2.LUW DB2LUW
+--  DB2 DB2.LUW DB2LUW
 DECLARE @Bool1 Char(1) -- StringFixedLength
 SET     @Bool1 = 'N'
 DECLARE @Bool3 Char(1) -- StringFixedLength
@@ -131,7 +131,7 @@ WHERE
 	"r"."Bool2" IS NULL AND "r"."Bool1" = @Bool1 AND "r"."Bool3" = @Bool3
 
 BeforeExecute
--- DB2 DB2.LUW DB2LUW
+--  DB2 DB2.LUW DB2LUW
 DECLARE @Bool1 Char(1) -- StringFixedLength
 SET     @Bool1 = 'N'
 DECLARE @Bool2 Char(1) -- StringFixedLength
@@ -148,7 +148,7 @@ WHERE
 	"r"."Bool1" = @Bool1 AND "r"."Bool2" = @Bool2 AND "r"."Bool3" IS NULL
 
 BeforeExecute
--- DB2 DB2.LUW DB2LUW
+--  DB2 DB2.LUW DB2LUW
 DECLARE @false_value Char(1) -- StringFixedLength
 SET     @false_value = 'N'
 DECLARE @Bool2 Char(1) -- StringFixedLength
@@ -166,7 +166,7 @@ WHERE
 	"r"."Bool3" IS NULL
 
 BeforeExecute
--- DB2 DB2.LUW DB2LUW
+--  DB2 DB2.LUW DB2LUW
 DECLARE @Bool1 Char(1) -- StringFixedLength
 SET     @Bool1 = 'N'
 DECLARE @Bool2 Char(1) -- StringFixedLength
@@ -184,7 +184,7 @@ WHERE
 	"r"."Bool2" = @Bool2
 
 BeforeExecute
--- DB2 DB2.LUW DB2LUW
+--  DB2 DB2.LUW DB2LUW
 DECLARE @Bool1 Char(1) -- StringFixedLength
 SET     @Bool1 = 'N'
 
@@ -200,7 +200,7 @@ WHERE
 	"r"."Bool3" IS NULL
 
 BeforeExecute
--- DB2 DB2.LUW DB2LUW
+--  DB2 DB2.LUW DB2LUW
 DECLARE @Bool1 Char(1) -- StringFixedLength
 SET     @Bool1 = 'Y'
 DECLARE @Bool2 Char(1) -- StringFixedLength
@@ -219,7 +219,7 @@ WHERE
 	"r"."Bool1" = @Bool1 AND "r"."Bool2" = @Bool2 AND "r"."Bool3" = @Bool3
 
 BeforeExecute
--- DB2 DB2.LUW DB2LUW
+--  DB2 DB2.LUW DB2LUW
 DECLARE @true_value Char(1) -- StringFixedLength
 SET     @true_value = 'Y'
 DECLARE @Bool2 Char(1) -- StringFixedLength
@@ -239,7 +239,7 @@ WHERE
 	"r"."Bool3" = @Bool3
 
 BeforeExecute
--- DB2 DB2.LUW DB2LUW
+--  DB2 DB2.LUW DB2LUW
 DECLARE @true_value Char(1) -- StringFixedLength
 SET     @true_value = 'Y'
 DECLARE @Bool1 Char(1) -- StringFixedLength
@@ -259,7 +259,7 @@ WHERE
 	"r"."Bool2" = @Bool2
 
 BeforeExecute
--- DB2 DB2.LUW DB2LUW
+--  DB2 DB2.LUW DB2LUW
 DECLARE @Bool1 Char(1) -- StringFixedLength
 SET     @Bool1 = 'Y'
 DECLARE @Bool3 Char(1) -- StringFixedLength

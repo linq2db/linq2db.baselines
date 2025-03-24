@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 BeginTransaction(RepeatableRead)
 BeforeExecute
--- DB2 DB2.LUW DB2LUW
+--  DB2 DB2.LUW DB2LUW
 
 SELECT
 	"m_1"."Id",
@@ -25,7 +25,7 @@ FROM
 		INNER JOIN CHAINPOINTS "d_1" ON "m_1"."Id" = "d_1".CHAIN_ID
 
 BeforeExecute
--- DB2 DB2.LUW DB2LUW
+--  DB2 DB2.LUW DB2LUW
 
 SELECT
 	"m_1".LINE_ID,
@@ -43,7 +43,7 @@ ORDER BY
 BeforeExecute
 DisposeTransaction
 BeforeExecute
--- DB2 DB2.LUW DB2LUW
+--  DB2 DB2.LUW DB2LUW
 
 SELECT
 	"t1".LINE_ID,

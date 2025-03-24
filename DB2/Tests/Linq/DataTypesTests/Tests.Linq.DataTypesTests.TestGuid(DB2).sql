@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- DB2 DB2.LUW DB2LUW
+--  DB2 DB2.LUW DB2LUW
 DECLARE @Column VarBinary(16) -- Binary
 SET     @Column = BX'0D6048A921DE744F8AC29516B287076E'
 DECLARE @ColumnNullable VarBinary(16) -- Binary
@@ -15,7 +15,7 @@ WHERE
 	"r"."Column" = @Column AND "r"."ColumnNullable" = @ColumnNullable
 
 BeforeExecute
--- DB2 DB2.LUW DB2LUW
+--  DB2 DB2.LUW DB2LUW
 
 SELECT
 	"r"."Id",
@@ -28,13 +28,13 @@ WHERE
 	"r"."ColumnNullable" = BX'A57339BD2343D84D9F4FDF9F93E2A627'
 
 BeforeExecute
--- DB2 DB2.LUW DB2LUW
+--  DB2 DB2.LUW DB2LUW
 
 DELETE FROM
 	"GuidTable" "t1"
 
 BeforeExecute
--- DB2 DB2.LUW DB2LUW
+--  DB2 DB2.LUW DB2LUW
 DECLARE @Id Integer(4) -- Int32
 SET     @Id = 1
 DECLARE @Column VarBinary(16) -- Binary
@@ -56,7 +56,7 @@ VALUES
 )
 
 BeforeExecute
--- DB2 DB2.LUW DB2LUW
+--  DB2 DB2.LUW DB2LUW
 DECLARE @Id Integer(4) -- Int32
 SET     @Id = 2
 DECLARE @Column VarBinary(16) -- Binary
@@ -78,7 +78,7 @@ VALUES
 )
 
 BeforeExecute
--- DB2 DB2.LUW DB2LUW
+--  DB2 DB2.LUW DB2LUW
 
 SELECT
 	"t1"."Id",
@@ -90,13 +90,13 @@ ORDER BY
 	"t1"."Id"
 
 BeforeExecute
--- DB2 DB2.LUW DB2LUW
+--  DB2 DB2.LUW DB2LUW
 
 DELETE FROM
 	"GuidTable" "t1"
 
 BeforeExecute
--- DB2 DB2.LUW DB2LUW
+--  DB2 DB2.LUW DB2LUW
 
 INSERT INTO "GuidTable"
 (
@@ -109,7 +109,7 @@ VALUES
 (2,BX'0D6048A921DE744F8AC29516B287076E',BX'A57339BD2343D84D9F4FDF9F93E2A627')
 
 BeforeExecute
--- DB2 DB2.LUW DB2LUW
+--  DB2 DB2.LUW DB2LUW
 
 SELECT
 	"t1"."Id",
@@ -121,7 +121,7 @@ ORDER BY
 	"t1"."Id"
 
 BeforeExecute
--- DB2 DB2.LUW DB2LUW
+--  DB2 DB2.LUW DB2LUW
 
 DELETE FROM
 	"GuidTable" "t1"
@@ -130,7 +130,7 @@ BeforeExecute
 INSERT BULK "GuidTable"
 
 BeforeExecute
--- DB2 DB2.LUW DB2LUW
+--  DB2 DB2.LUW DB2LUW
 
 SELECT
 	"t1"."Id",

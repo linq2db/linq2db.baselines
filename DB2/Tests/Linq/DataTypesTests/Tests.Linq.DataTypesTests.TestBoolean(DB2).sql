@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- DB2 DB2.LUW DB2LUW
+--  DB2 DB2.LUW DB2LUW
 DECLARE @Column SmallInt(4) -- Int16
 SET     @Column = 0
 DECLARE @ColumnNullable SmallInt(4) -- Int16
@@ -15,7 +15,7 @@ WHERE
 	"r"."Column" = @Column AND "r"."ColumnNullable" = @ColumnNullable
 
 BeforeExecute
--- DB2 DB2.LUW DB2LUW
+--  DB2 DB2.LUW DB2LUW
 
 SELECT
 	"r"."Id",
@@ -27,13 +27,13 @@ WHERE
 	"r"."Column" = 0 AND "r"."ColumnNullable" = 1
 
 BeforeExecute
--- DB2 DB2.LUW DB2LUW
+--  DB2 DB2.LUW DB2LUW
 
 DELETE FROM
 	"BooleanTable" "t1"
 
 BeforeExecute
--- DB2 DB2.LUW DB2LUW
+--  DB2 DB2.LUW DB2LUW
 DECLARE @Id Integer(4) -- Int32
 SET     @Id = 1
 DECLARE @Column SmallInt(4) -- Int16
@@ -55,7 +55,7 @@ VALUES
 )
 
 BeforeExecute
--- DB2 DB2.LUW DB2LUW
+--  DB2 DB2.LUW DB2LUW
 DECLARE @Id Integer(4) -- Int32
 SET     @Id = 2
 DECLARE @Column SmallInt(4) -- Int16
@@ -77,7 +77,7 @@ VALUES
 )
 
 BeforeExecute
--- DB2 DB2.LUW DB2LUW
+--  DB2 DB2.LUW DB2LUW
 
 SELECT
 	"t1"."Id",
@@ -89,13 +89,13 @@ ORDER BY
 	"t1"."Id"
 
 BeforeExecute
--- DB2 DB2.LUW DB2LUW
+--  DB2 DB2.LUW DB2LUW
 
 DELETE FROM
 	"BooleanTable" "t1"
 
 BeforeExecute
--- DB2 DB2.LUW DB2LUW
+--  DB2 DB2.LUW DB2LUW
 
 INSERT INTO "BooleanTable"
 (
@@ -108,7 +108,7 @@ VALUES
 (2,0,1)
 
 BeforeExecute
--- DB2 DB2.LUW DB2LUW
+--  DB2 DB2.LUW DB2LUW
 
 SELECT
 	"t1"."Id",
@@ -120,7 +120,7 @@ ORDER BY
 	"t1"."Id"
 
 BeforeExecute
--- DB2 DB2.LUW DB2LUW
+--  DB2 DB2.LUW DB2LUW
 
 DELETE FROM
 	"BooleanTable" "t1"
@@ -129,7 +129,7 @@ BeforeExecute
 INSERT BULK "BooleanTable"
 
 BeforeExecute
--- DB2 DB2.LUW DB2LUW
+--  DB2 DB2.LUW DB2LUW
 
 SELECT
 	"t1"."Id",

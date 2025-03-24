@@ -1,12 +1,12 @@
 ﻿BeforeExecute
--- DB2 DB2.LUW DB2LUW
+--  DB2 DB2.LUW DB2LUW
 
 ALTER TABLE "Person" ALTER COLUMN "PersonID" RESTART WITH 5
 
 BeforeExecute
 BeginTransaction
 BeforeExecute
--- DB2 DB2.LUW DB2LUW
+--  DB2 DB2.LUW DB2LUW
 
 MERGE INTO "Person" "Target"
 USING (
@@ -37,7 +37,7 @@ SET
 	"LastName" = 'Updated'
 
 BeforeExecute
--- DB2 DB2.LUW DB2LUW
+--  DB2 DB2.LUW DB2LUW
 
 SELECT
 	"t1"."FirstName",

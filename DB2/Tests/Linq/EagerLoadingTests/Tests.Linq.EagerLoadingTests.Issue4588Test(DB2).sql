@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 BeginTransaction(RepeatableRead)
 BeforeExecute
--- DB2 DB2.LUW DB2LUW
+--  DB2 DB2.LUW DB2LUW
 DECLARE @take Integer(4) -- Int32
 SET     @take = 10
 
@@ -40,7 +40,7 @@ FROM
 		INNER JOIN "SubOrderDetail" "d_1" ON "m_1"."Id" = "d_1"."SubOrderId"
 
 BeforeExecute
--- DB2 DB2.LUW DB2LUW
+--  DB2 DB2.LUW DB2LUW
 DECLARE @take Integer(4) -- Int32
 SET     @take = 10
 
@@ -70,7 +70,7 @@ FROM
 BeforeExecute
 DisposeTransaction
 BeforeExecute
--- DB2 DB2.LUW DB2LUW
+--  DB2 DB2.LUW DB2LUW
 DECLARE @take Integer(4) -- Int32
 SET     @take = 10
 

@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- DB2 DB2.LUW DB2LUW
+--  DB2 DB2.LUW DB2LUW
 
 INSERT INTO "LinqDataTypes"
 (
@@ -25,7 +25,7 @@ VALUES
 (4009,1009,'2001-01-11-01.11.21.100000',1,BX'99F33B231097794E873D2EC7BF1E0009',NULL,9,NULL)
 
 BeforeExecute
--- DB2 DB2.LUW DB2LUW
+--  DB2 DB2.LUW DB2LUW
 
 DELETE FROM
 	"LinqDataTypes" "p"
@@ -36,7 +36,7 @@ BeforeExecute
 INSERT BULK "LinqDataTypes"
 
 BeforeExecute
--- DB2 DB2.LUW DB2LUW
+--  DB2 DB2.LUW DB2LUW
 
 DELETE FROM
 	"LinqDataTypes" "p"

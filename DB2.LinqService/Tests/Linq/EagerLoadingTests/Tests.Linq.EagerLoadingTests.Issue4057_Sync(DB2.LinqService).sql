@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- DB2 DB2.LUW DB2LUW
+--  DB2 DB2.LUW DB2LUW
 
 SELECT
 	"m_1"."ParentID",
@@ -18,7 +18,7 @@ FROM
 		INNER JOIN "Child" "d" ON "m_1"."ParentID" = "d"."ParentID"
 
 BeforeExecute
--- DB2 DB2.LUW DB2LUW
+--  DB2 DB2.LUW DB2LUW
 
 SELECT
 	"x"."ParentID",
@@ -32,7 +32,7 @@ FETCH NEXT 1 ROWS ONLY
 BeforeExecute
 BeginTransaction(RepeatableRead)
 BeforeExecute
--- DB2 DB2.LUW DB2LUW
+--  DB2 DB2.LUW DB2LUW
 
 SELECT
 	"m_1"."ParentID",
@@ -51,7 +51,7 @@ FROM
 		INNER JOIN "Child" "d" ON "m_1"."ParentID" = "d"."ParentID"
 
 BeforeExecute
--- DB2 DB2.LUW DB2LUW
+--  DB2 DB2.LUW DB2LUW
 
 SELECT
 	"x"."ParentID",
@@ -67,7 +67,7 @@ DisposeTransaction
 BeforeExecute
 BeginTransaction(RepeatableRead)
 BeforeExecute
--- DB2 DB2.LUW DB2LUW
+--  DB2 DB2.LUW DB2LUW
 
 SELECT
 	"m_1"."ParentID",
@@ -86,7 +86,7 @@ FROM
 		INNER JOIN "Child" "d" ON "m_1"."ParentID" = "d"."ParentID"
 
 BeforeExecute
--- DB2 DB2.LUW DB2LUW
+--  DB2 DB2.LUW DB2LUW
 
 SELECT
 	"x"."ParentID",

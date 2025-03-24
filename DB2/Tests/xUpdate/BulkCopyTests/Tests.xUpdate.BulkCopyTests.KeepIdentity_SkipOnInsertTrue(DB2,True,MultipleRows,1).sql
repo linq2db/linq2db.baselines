@@ -1,15 +1,15 @@
 ﻿BeforeExecute
--- DB2 DB2.LUW DB2LUW
+--  DB2 DB2.LUW DB2LUW
 
 ALTER TABLE AllTypes ALTER COLUMN ID RESTART WITH 3
 
 BeforeExecute
--- DB2 DB2.LUW DB2LUW
+--  DB2 DB2.LUW DB2LUW
 
 ALTER TABLE "KeepIdentityTest" ALTER COLUMN "ID" RESTART WITH 1
 
 BeforeExecute
--- DB2 DB2.LUW DB2LUW
+--  DB2 DB2.LUW DB2LUW
 DECLARE @Value Integer(4) -- Int32
 SET     @Value = 0
 
@@ -29,7 +29,7 @@ FROM
 	)
 
 BeforeExecute
--- DB2 DB2.LUW DB2LUW (asynchronously)
+--  DB2 DB2.LUW DB2LUW (asynchronously)
 
 INSERT INTO "KeepIdentityTest"
 (
@@ -41,7 +41,7 @@ VALUES
 (21,300)
 
 BeforeExecute
--- DB2 DB2.LUW DB2LUW
+--  DB2 DB2.LUW DB2LUW
 DECLARE @lastId Integer(4) -- Int32
 SET     @lastId = 1
 
@@ -56,7 +56,7 @@ ORDER BY
 	"t1".ID
 
 BeforeExecute
--- DB2 DB2.LUW DB2LUW
+--  DB2 DB2.LUW DB2LUW
 DECLARE @lastId Integer(4) -- Int32
 SET     @lastId = 1
 

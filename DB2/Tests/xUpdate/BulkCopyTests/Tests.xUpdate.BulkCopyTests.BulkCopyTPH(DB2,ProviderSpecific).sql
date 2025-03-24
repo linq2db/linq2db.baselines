@@ -2,7 +2,7 @@
 INSERT BULK "TPHTable"
 
 BeforeExecute
--- DB2 DB2.LUW DB2LUW
+--  DB2 DB2.LUW DB2LUW
 
 SELECT
 	"t1"."Discriminator",
@@ -17,7 +17,7 @@ ORDER BY
 	"t1"."Id"
 
 BeforeExecute
--- DB2 DB2.LUW DB2LUW
+--  DB2 DB2.LUW DB2LUW
 
 SELECT
 	"x"."Discriminator",
@@ -33,7 +33,7 @@ WHERE
 FETCH NEXT 2 ROWS ONLY
 
 BeforeExecute
--- DB2 DB2.LUW DB2LUW
+--  DB2 DB2.LUW DB2LUW
 
 SELECT
 	"x"."Discriminator",
@@ -49,7 +49,7 @@ WHERE
 FETCH NEXT 2 ROWS ONLY
 
 BeforeExecute
--- DB2 DB2.LUW DB2LUW
+--  DB2 DB2.LUW DB2LUW
 
 SELECT
 	"x"."Discriminator",
@@ -65,7 +65,7 @@ WHERE
 FETCH NEXT 2 ROWS ONLY
 
 BeforeExecute
--- DB2 DB2.LUW DB2LUW
+--  DB2 DB2.LUW DB2LUW
 
 SELECT
 	"x"."Discriminator",
@@ -81,7 +81,7 @@ WHERE
 FETCH NEXT 2 ROWS ONLY
 
 BeforeExecute
--- DB2 DB2.LUW DB2LUW
+--  DB2 DB2.LUW DB2LUW
 
 SELECT
 	"x"."Discriminator",
@@ -97,7 +97,7 @@ WHERE
 FETCH NEXT 2 ROWS ONLY
 
 BeforeExecute
--- DB2 DB2.LUW DB2LUW
+--  DB2 DB2.LUW DB2LUW
 
 SELECT
 	"x"."Discriminator",

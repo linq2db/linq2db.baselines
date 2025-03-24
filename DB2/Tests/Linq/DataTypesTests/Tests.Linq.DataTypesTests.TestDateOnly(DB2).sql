@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- DB2 DB2.LUW DB2LUW
+--  DB2 DB2.LUW DB2LUW
 DECLARE @Column Date(20)
 SET     @Column = '2020-02-29-00.00.00.000000'
 DECLARE @ColumnNullable Date(20)
@@ -15,7 +15,7 @@ WHERE
 	"r"."Column" = @Column AND "r"."ColumnNullable" = @ColumnNullable
 
 BeforeExecute
--- DB2 DB2.LUW DB2LUW
+--  DB2 DB2.LUW DB2LUW
 
 SELECT
 	"r"."Id",
@@ -27,13 +27,13 @@ WHERE
 	"r"."Column" = '2020-02-29' AND "r"."ColumnNullable" = '2200-01-01'
 
 BeforeExecute
--- DB2 DB2.LUW DB2LUW
+--  DB2 DB2.LUW DB2LUW
 
 DELETE FROM
 	"DateOnlyTable" "t1"
 
 BeforeExecute
--- DB2 DB2.LUW DB2LUW
+--  DB2 DB2.LUW DB2LUW
 DECLARE @Id Integer(4) -- Int32
 SET     @Id = 1
 DECLARE @Column Date(20)
@@ -55,7 +55,7 @@ VALUES
 )
 
 BeforeExecute
--- DB2 DB2.LUW DB2LUW
+--  DB2 DB2.LUW DB2LUW
 DECLARE @Id Integer(4) -- Int32
 SET     @Id = 2
 DECLARE @Column Date(20)
@@ -77,7 +77,7 @@ VALUES
 )
 
 BeforeExecute
--- DB2 DB2.LUW DB2LUW
+--  DB2 DB2.LUW DB2LUW
 
 SELECT
 	"t1"."Id",
@@ -89,13 +89,13 @@ ORDER BY
 	"t1"."Id"
 
 BeforeExecute
--- DB2 DB2.LUW DB2LUW
+--  DB2 DB2.LUW DB2LUW
 
 DELETE FROM
 	"DateOnlyTable" "t1"
 
 BeforeExecute
--- DB2 DB2.LUW DB2LUW
+--  DB2 DB2.LUW DB2LUW
 
 INSERT INTO "DateOnlyTable"
 (
@@ -108,7 +108,7 @@ VALUES
 (2,'2020-02-29','2200-01-01')
 
 BeforeExecute
--- DB2 DB2.LUW DB2LUW
+--  DB2 DB2.LUW DB2LUW
 
 SELECT
 	"t1"."Id",
@@ -120,7 +120,7 @@ ORDER BY
 	"t1"."Id"
 
 BeforeExecute
--- DB2 DB2.LUW DB2LUW
+--  DB2 DB2.LUW DB2LUW
 
 DELETE FROM
 	"DateOnlyTable" "t1"
@@ -129,7 +129,7 @@ BeforeExecute
 INSERT BULK "DateOnlyTable"
 
 BeforeExecute
--- DB2 DB2.LUW DB2LUW
+--  DB2 DB2.LUW DB2LUW
 
 SELECT
 	"t1"."Id",

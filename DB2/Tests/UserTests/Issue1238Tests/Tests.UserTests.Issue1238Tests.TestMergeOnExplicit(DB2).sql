@@ -1,13 +1,13 @@
 ﻿BeforeExecute
 BeginTransaction
 BeforeExecute
--- DB2 DB2.LUW DB2LUW
+--  DB2 DB2.LUW DB2LUW
 
 DELETE FROM
 	"InheritanceParent" "t1"
 
 BeforeExecute
--- DB2 DB2.LUW DB2LUW
+--  DB2 DB2.LUW DB2LUW
 
 MERGE INTO "InheritanceParent" "Target"
 USING (VALUES
@@ -41,7 +41,7 @@ VALUES
 )
 
 BeforeExecute
--- DB2 DB2.LUW DB2LUW
+--  DB2 DB2.LUW DB2LUW
 
 SELECT
 	COUNT(*)
@@ -49,7 +49,7 @@ FROM
 	"InheritanceParent" "t1"
 
 BeforeExecute
--- DB2 DB2.LUW DB2LUW
+--  DB2 DB2.LUW DB2LUW
 
 MERGE INTO "InheritanceParent" "Target"
 USING (VALUES
@@ -83,7 +83,7 @@ VALUES
 )
 
 BeforeExecute
--- DB2 DB2.LUW DB2LUW
+--  DB2 DB2.LUW DB2LUW
 
 SELECT
 	COUNT(*)

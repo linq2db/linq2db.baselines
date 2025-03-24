@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 BeginTransactionAsync(RepeatableRead)
 BeforeExecute
--- DB2 DB2.LUW DB2LUW (asynchronously)
+--  DB2 DB2.LUW DB2LUW (asynchronously)
 
 SELECT
 	"m_1"."ParentID",
@@ -20,7 +20,7 @@ FROM
 		INNER JOIN "Child" "d" ON "m_1"."ParentID" = "d"."ParentID"
 
 BeforeExecute
--- DB2 DB2.LUW DB2LUW (asynchronously)
+--  DB2 DB2.LUW DB2LUW (asynchronously)
 
 SELECT
 	"x"."ParentID",
@@ -36,7 +36,7 @@ DisposeTransactionAsync
 BeforeExecute
 BeginTransactionAsync(RepeatableRead)
 BeforeExecute
--- DB2 DB2.LUW DB2LUW (asynchronously)
+--  DB2 DB2.LUW DB2LUW (asynchronously)
 
 SELECT
 	"m_1"."ParentID",
@@ -55,7 +55,7 @@ FROM
 		INNER JOIN "Child" "d" ON "m_1"."ParentID" = "d"."ParentID"
 
 BeforeExecute
--- DB2 DB2.LUW DB2LUW (asynchronously)
+--  DB2 DB2.LUW DB2LUW (asynchronously)
 
 SELECT
 	"x"."ParentID",

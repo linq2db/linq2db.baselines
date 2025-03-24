@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- DB2 DB2.LUW DB2LUW
+--  DB2 DB2.LUW DB2LUW
 
 SELECT
 	"m_1"."ParentID",
@@ -21,7 +21,7 @@ FROM
 		) "d_1" ON "m_1"."ParentID" = "d_1"."Detail"
 
 BeforeExecute
--- DB2 DB2.LUW DB2LUW
+--  DB2 DB2.LUW DB2LUW
 
 SELECT
 	"p"."ParentID"

@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- DB2 DB2.LUW DB2LUW
+--  DB2 DB2.LUW DB2LUW
 DECLARE @ParentID Integer(4) -- Int32
 SET     @ParentID = 1111
 
@@ -9,7 +9,7 @@ WHERE
 	"p"."ParentID" = @ParentID
 
 BeforeExecute
--- DB2 DB2.LUW DB2LUW
+--  DB2 DB2.LUW DB2LUW
 DECLARE @ParentID Integer(4) -- Int32
 SET     @ParentID = 2111
 
@@ -19,7 +19,7 @@ WHERE
 	"p"."ParentID" = @ParentID
 
 BeforeExecute
--- DB2 DB2.LUW DB2LUW
+--  DB2 DB2.LUW DB2LUW
 DECLARE @ParentID Integer(4) -- Int32
 SET     @ParentID = 3111
 
@@ -29,7 +29,7 @@ WHERE
 	"p"."ParentID" = @ParentID
 
 BeforeExecute
--- DB2 DB2.LUW DB2LUW
+--  DB2 DB2.LUW DB2LUW
 DECLARE @ParentID Integer(4) -- Int32
 SET     @ParentID = 4111
 
@@ -39,7 +39,7 @@ WHERE
 	"p"."ParentID" = @ParentID
 
 BeforeExecute
--- DB2 DB2.LUW DB2LUW
+--  DB2 DB2.LUW DB2LUW
 
 INSERT INTO "Parent"
 (
@@ -53,7 +53,7 @@ VALUES
 (4111,4111)
 
 BeforeExecute
--- DB2 DB2.LUW DB2LUW
+--  DB2 DB2.LUW DB2LUW
 DECLARE @ParentID Integer(4) -- Int32
 SET     @ParentID = 1111
 
@@ -63,7 +63,7 @@ WHERE
 	"p"."ParentID" = @ParentID
 
 BeforeExecute
--- DB2 DB2.LUW DB2LUW
+--  DB2 DB2.LUW DB2LUW
 DECLARE @ParentID Integer(4) -- Int32
 SET     @ParentID = 2111
 
@@ -73,7 +73,7 @@ WHERE
 	"p"."ParentID" = @ParentID
 
 BeforeExecute
--- DB2 DB2.LUW DB2LUW
+--  DB2 DB2.LUW DB2LUW
 DECLARE @ParentID Integer(4) -- Int32
 SET     @ParentID = 3111
 
@@ -83,7 +83,7 @@ WHERE
 	"p"."ParentID" = @ParentID
 
 BeforeExecute
--- DB2 DB2.LUW DB2LUW
+--  DB2 DB2.LUW DB2LUW
 DECLARE @ParentID Integer(4) -- Int32
 SET     @ParentID = 4111
 

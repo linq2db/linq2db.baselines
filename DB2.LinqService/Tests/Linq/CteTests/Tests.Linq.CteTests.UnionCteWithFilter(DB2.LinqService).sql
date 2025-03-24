@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- DB2 DB2.LUW DB2LUW
+--  DB2 DB2.LUW DB2LUW
 
 WITH "BooksCte" ("Book_Id", "Book_Title", "Author_Name")
 AS

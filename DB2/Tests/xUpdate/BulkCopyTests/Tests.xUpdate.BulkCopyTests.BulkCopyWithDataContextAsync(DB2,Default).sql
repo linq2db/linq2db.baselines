@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- DB2 DB2.LUW DB2LUW (asynchronously)
+--  DB2 DB2.LUW DB2LUW (asynchronously)
 
 INSERT INTO "SimpleBulkCopyTable"
 (
@@ -9,7 +9,7 @@ VALUES
 (1)
 
 BeforeExecute
--- DB2 DB2.LUW DB2LUW (asynchronously)
+--  DB2 DB2.LUW DB2LUW (asynchronously)
 
 INSERT INTO "SimpleBulkCopyTable"
 (

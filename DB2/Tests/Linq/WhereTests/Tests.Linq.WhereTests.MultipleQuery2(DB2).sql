@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- DB2 DB2.LUW DB2LUW
+--  DB2 DB2.LUW DB2LUW
 
 SELECT
 	"p"."FirstName",
@@ -13,7 +13,7 @@ WHERE
 	"p"."MiddleName" IS NULL
 
 BeforeExecute
--- DB2 DB2.LUW DB2LUW
+--  DB2 DB2.LUW DB2LUW
 DECLARE @str VarChar(3) -- String
 SET     @str = '123'
 

@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- DB2 DB2.LUW DB2LUW
+--  DB2 DB2.LUW DB2LUW
 DECLARE @ParentID Integer(4) -- Int32
 SET     @ParentID = 11
 DECLARE @Value1 Integer(4) -- Int32

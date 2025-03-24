@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- DB2 DB2.LUW DB2LUW (asynchronously)
+--  DB2 DB2.LUW DB2LUW (asynchronously)
 
 BEGIN
 	DECLARE CONTINUE HANDLER FOR SQLSTATE '42704' BEGIN END;
@@ -7,7 +7,7 @@ BEGIN
 END
 
 BeforeExecute
--- DB2 DB2.LUW DB2LUW (asynchronously)
+--  DB2 DB2.LUW DB2LUW (asynchronously)
 
 BEGIN
 	DECLARE CONTINUE HANDLER FOR SQLSTATE '42710' BEGIN END;
@@ -21,7 +21,7 @@ BEGIN
 END
 
 BeforeExecute
--- DB2 DB2.LUW DB2LUW (asynchronously)
+--  DB2 DB2.LUW DB2LUW (asynchronously)
 
 INSERT INTO SESSION."TempTable"
 (
@@ -31,7 +31,7 @@ VALUES
 ('John')
 
 BeforeExecute
--- DB2 DB2.LUW DB2LUW (asynchronously)
+--  DB2 DB2.LUW DB2LUW (asynchronously)
 
 SELECT
 	"t"."Name"
@@ -40,7 +40,7 @@ FROM
 		INNER JOIN SESSION."TempTable" "t" ON "p"."FirstName" = "t"."Name"
 
 BeforeExecute
--- DB2 DB2.LUW DB2LUW (asynchronously)
+--  DB2 DB2.LUW DB2LUW (asynchronously)
 
 BEGIN
 	DECLARE CONTINUE HANDLER FOR SQLSTATE '42704' BEGIN END;

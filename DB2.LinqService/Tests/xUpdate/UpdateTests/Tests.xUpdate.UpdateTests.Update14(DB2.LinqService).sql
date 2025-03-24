@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- DB2 DB2.LUW DB2LUW
+--  DB2 DB2.LUW DB2LUW
 DECLARE @FirstName VarChar(8) -- String
 SET     @FirstName = 'Update14'
 DECLARE @LastName VarChar(8) -- String
@@ -25,7 +25,7 @@ VALUES
 )
 
 BeforeExecute
--- DB2 DB2.LUW DB2LUW
+--  DB2 DB2.LUW DB2LUW
 DECLARE @name VarChar(8) -- String
 SET     @name = 'Update14'
 DECLARE @idx Integer(4) -- Int32
@@ -39,7 +39,7 @@ WHERE
 	"t1"."FirstName" LIKE 'Update14%' ESCAPE '~'
 
 BeforeExecute
--- DB2 DB2.LUW DB2LUW
+--  DB2 DB2.LUW DB2LUW
 
 SELECT
 	COUNT(*)

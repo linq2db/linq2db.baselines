@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- DB2 DB2.LUW DB2LUW
+--  DB2 DB2.LUW DB2LUW
 DECLARE @In VarChar -- String
 SET     @In = NULL
 
@@ -11,7 +11,7 @@ WHERE
 	"s"."CEnum" IN (@In, @In)
 
 BeforeExecute
--- DB2 DB2.LUW DB2LUW
+--  DB2 DB2.LUW DB2LUW
 DECLARE @NotIn VarChar -- String
 SET     @NotIn = NULL
 

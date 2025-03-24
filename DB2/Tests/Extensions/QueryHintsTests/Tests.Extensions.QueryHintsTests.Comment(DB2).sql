@@ -7,7 +7,7 @@ FROM
 ----
 
 BeforeExecute
--- DB2 DB2.LUW DB2LUW
+--  DB2 DB2.LUW DB2LUW
 
 SELECT
 	"p"."ParentID",
@@ -25,7 +25,7 @@ FROM
 ---
 
 BeforeExecute
--- DB2 DB2.LUW DB2LUW
+--  DB2 DB2.LUW DB2LUW
 
 SELECT
 	"p"."ParentID",

@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- DB2 DB2.LUW DB2LUW
+--  DB2 DB2.LUW DB2LUW
 
 SELECT
 	current schema
@@ -8,7 +8,7 @@ FROM
 FETCH NEXT 1 ROWS ONLY
 
 BeforeExecute
--- DB2 DB2.LUW DB2LUW
+--  DB2 DB2.LUW DB2LUW
 DECLARE @Value Integer(4) -- Int32
 SET     @Value = 10
 DECLARE @ID Integer(4) -- Int32

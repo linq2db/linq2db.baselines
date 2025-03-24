@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- DB2 DB2.LUW DB2LUW (asynchronously)
+--  DB2 DB2.LUW DB2LUW (asynchronously)
 DECLARE @search VarChar(5) -- String
 SET     @search = 'test%'
 DECLARE @search_1 VarChar(4) -- String
@@ -31,7 +31,7 @@ WHERE
 	"row1_2"."Field1" LIKE @search_2 ESCAPE '~'
 
 BeforeExecute
--- DB2 DB2.LUW DB2LUW (asynchronously)
+--  DB2 DB2.LUW DB2LUW (asynchronously)
 DECLARE @search VarChar(5) -- String
 SET     @search = 'test%'
 DECLARE @search_1 VarChar(4) -- String
@@ -63,7 +63,7 @@ WHERE
 	"row1_2"."Field1" LIKE @search_2 ESCAPE '~'
 
 BeforeExecute
--- DB2 DB2.LUW DB2LUW (asynchronously)
+--  DB2 DB2.LUW DB2LUW (asynchronously)
 
 BEGIN
 	DECLARE CONTINUE HANDLER FOR SQLSTATE '42704' BEGIN END;
@@ -71,7 +71,7 @@ BEGIN
 END
 
 BeforeExecute
--- DB2 DB2.LUW DB2LUW (asynchronously)
+--  DB2 DB2.LUW DB2LUW (asynchronously)
 
 BEGIN
 	DECLARE CONTINUE HANDLER FOR SQLSTATE '42704' BEGIN END;
@@ -79,7 +79,7 @@ BEGIN
 END
 
 BeforeExecute
--- DB2 DB2.LUW DB2LUW (asynchronously)
+--  DB2 DB2.LUW DB2LUW (asynchronously)
 
 BEGIN
 	DECLARE CONTINUE HANDLER FOR SQLSTATE '42704' BEGIN END;

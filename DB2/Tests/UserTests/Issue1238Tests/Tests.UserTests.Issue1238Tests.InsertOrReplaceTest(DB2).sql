@@ -1,13 +1,13 @@
 ﻿BeforeExecute
 BeginTransaction
 BeforeExecute
--- DB2 DB2.LUW DB2LUW
+--  DB2 DB2.LUW DB2LUW
 
 DELETE FROM
 	"InheritanceParent" "t1"
 
 BeforeExecute
--- DB2 DB2.LUW DB2LUW
+--  DB2 DB2.LUW DB2LUW
 DECLARE @Key1 Integer(4) -- Int32
 SET     @Key1 = 143
 DECLARE @Key2 VarChar -- String
@@ -40,7 +40,7 @@ WHEN NOT MATCHED THEN
 	)
 
 BeforeExecute
--- DB2 DB2.LUW DB2LUW
+--  DB2 DB2.LUW DB2LUW
 
 SELECT
 	COUNT(*)
@@ -48,7 +48,7 @@ FROM
 	"InheritanceParent" "t1"
 
 BeforeExecute
--- DB2 DB2.LUW DB2LUW
+--  DB2 DB2.LUW DB2LUW
 DECLARE @Key1 Integer(4) -- Int32
 SET     @Key1 = 143
 DECLARE @Key2 VarChar -- String
@@ -81,7 +81,7 @@ WHEN NOT MATCHED THEN
 	)
 
 BeforeExecute
--- DB2 DB2.LUW DB2LUW
+--  DB2 DB2.LUW DB2LUW
 
 SELECT
 	COUNT(*)

@@ -1,10 +1,10 @@
 ﻿BeforeExecute
--- DB2 DB2.LUW DB2LUW
+--  DB2 DB2.LUW DB2LUW
 
 ALTER TABLE "Person" ALTER COLUMN "PersonID" RESTART WITH 5
 
 BeforeExecute
--- DB2 DB2.LUW DB2LUW
+--  DB2 DB2.LUW DB2LUW
 DECLARE @FirstName VarChar(4) -- String
 SET     @FirstName = 'test'
 DECLARE @LastName VarChar(7) -- String
@@ -36,7 +36,7 @@ FROM
 	)
 
 BeforeExecute
--- DB2 DB2.LUW DB2LUW
+--  DB2 DB2.LUW DB2LUW
 DECLARE @id Integer(4) -- Int32
 SET     @id = 5
 
@@ -58,7 +58,7 @@ WHEN NOT MATCHED THEN
 	)
 
 BeforeExecute
--- DB2 DB2.LUW DB2LUW
+--  DB2 DB2.LUW DB2LUW
 DECLARE @id Integer(4) -- Int32
 SET     @id = 5
 
@@ -71,7 +71,7 @@ WHERE
 	"p"."PersonID" = @id
 
 BeforeExecute
--- DB2 DB2.LUW DB2LUW
+--  DB2 DB2.LUW DB2LUW
 DECLARE @id Integer(4) -- Int32
 SET     @id = 5
 
@@ -93,7 +93,7 @@ WHEN NOT MATCHED THEN
 	)
 
 BeforeExecute
--- DB2 DB2.LUW DB2LUW
+--  DB2 DB2.LUW DB2LUW
 DECLARE @id Integer(4) -- Int32
 SET     @id = 5
 

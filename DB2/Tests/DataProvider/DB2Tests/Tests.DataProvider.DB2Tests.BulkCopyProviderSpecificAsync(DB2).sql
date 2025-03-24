@@ -2,7 +2,7 @@
 INSERT BULK ALLTYPES
 
 BeforeExecute
--- DB2 DB2.LUW DB2LUW (asynchronously)
+--  DB2 DB2.LUW DB2LUW (asynchronously)
 
 DELETE FROM
 	ALLTYPES "p"

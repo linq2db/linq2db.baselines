@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- DB2 DB2.LUW DB2LUW
+--  DB2 DB2.LUW DB2LUW
 DECLARE @ncCodeBo VarChar(30) -- String
 SET     @ncCodeBo = 'NCCodeBO:8110,SETUP_OSCILLOSCO'
 

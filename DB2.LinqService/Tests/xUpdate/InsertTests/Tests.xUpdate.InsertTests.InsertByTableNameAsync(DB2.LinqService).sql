@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- DB2 DB2.LUW DB2LUW (asynchronously)
+--  DB2 DB2.LUW DB2LUW (asynchronously)
 DECLARE @FirstName VarChar(6) -- String
 SET     @FirstName = 'Steven'
 DECLARE @LastName VarChar(4) -- String
@@ -31,7 +31,7 @@ FROM
 	)
 
 BeforeExecute
--- DB2 DB2.LUW DB2LUW (asynchronously)
+--  DB2 DB2.LUW DB2LUW (asynchronously)
 DECLARE @FirstName VarChar(6) -- String
 SET     @FirstName = 'Steven'
 DECLARE @LastName VarChar(4) -- String

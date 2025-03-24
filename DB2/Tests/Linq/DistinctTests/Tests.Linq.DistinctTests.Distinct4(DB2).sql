@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- DB2 DB2.LUW DB2LUW
+--  DB2 DB2.LUW DB2LUW
 
 SELECT DISTINCT
 	Coalesce("p"."Value1", Mod("p"."ParentID", 2)),

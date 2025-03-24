@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 BeginTransaction(RepeatableRead)
 BeforeExecute
--- DB2 DB2.LUW DB2LUW
+--  DB2 DB2.LUW DB2LUW
 
 SELECT
 	"m_1"."ParentID",
@@ -21,7 +21,7 @@ FROM
 		LEFT JOIN "Parent" "a_Parent" ON "d"."ParentID" = "a_Parent"."ParentID"
 
 BeforeExecute
--- DB2 DB2.LUW DB2LUW
+--  DB2 DB2.LUW DB2LUW
 
 SELECT
 	"t"."ParentID",

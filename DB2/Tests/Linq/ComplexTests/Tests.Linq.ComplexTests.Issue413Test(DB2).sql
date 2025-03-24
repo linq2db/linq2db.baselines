@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- DB2 DB2.LUW DB2LUW
+--  DB2 DB2.LUW DB2LUW
 DECLARE @InstrumentId Integer(4) -- Int32
 SET     @InstrumentId = 1
 DECLARE @IndexId Integer(4) -- Int32
@@ -17,7 +17,7 @@ VALUES
 )
 
 BeforeExecute
--- DB2 DB2.LUW DB2LUW
+--  DB2 DB2.LUW DB2LUW
 DECLARE @InstrumentId Integer(4) -- Int32
 SET     @InstrumentId = 2
 DECLARE @IndexId Integer(4) -- Int32
@@ -35,7 +35,7 @@ VALUES
 )
 
 BeforeExecute
--- DB2 DB2.LUW DB2LUW
+--  DB2 DB2.LUW DB2LUW
 DECLARE @InstrumentId Integer(4) -- Int32
 SET     @InstrumentId = 3
 DECLARE @IndexId Integer(4) -- Int32
@@ -53,7 +53,7 @@ VALUES
 )
 
 BeforeExecute
--- DB2 DB2.LUW DB2LUW
+--  DB2 DB2.LUW DB2LUW
 DECLARE @InstrumentId Integer(4) -- Int32
 SET     @InstrumentId = 1
 DECLARE @IndexId Integer(4) -- Int32
@@ -71,7 +71,7 @@ VALUES
 )
 
 BeforeExecute
--- DB2 DB2.LUW DB2LUW
+--  DB2 DB2.LUW DB2LUW
 DECLARE @InstrumentId Integer(4) -- Int32
 SET     @InstrumentId = 2
 DECLARE @IndexId Integer(4) -- Int32
@@ -89,7 +89,7 @@ VALUES
 )
 
 BeforeExecute
--- DB2 DB2.LUW DB2LUW
+--  DB2 DB2.LUW DB2LUW
 DECLARE @InstrumentId Integer(4) -- Int32
 SET     @InstrumentId = 1
 DECLARE @InstrumentCode VarChar(4) -- String
@@ -115,7 +115,7 @@ VALUES
 )
 
 BeforeExecute
--- DB2 DB2.LUW DB2LUW
+--  DB2 DB2.LUW DB2LUW
 DECLARE @InstrumentId Integer(4) -- Int32
 SET     @InstrumentId = 2
 DECLARE @InstrumentCode VarChar(4) -- String
@@ -141,7 +141,7 @@ VALUES
 )
 
 BeforeExecute
--- DB2 DB2.LUW DB2LUW
+--  DB2 DB2.LUW DB2LUW
 DECLARE @cond VarChar(4) -- String
 SET     @cond = 'aaa%'
 DECLARE @uptoDate Timestamp(20) -- DateTime
