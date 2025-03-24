@@ -1,4 +1,4 @@
-﻿--  SqlServer.2016
+﻿-- SqlServer.2016
 
 CREATE TABLE [tempdb]..[#Identities]
 (
@@ -14,7 +14,7 @@ INSERT BULK [tempdb]..[#Identities](Name)
 
 
 
---  SqlServer.2016
+-- SqlServer.2016
 
 SELECT
 	[t1].[Id],
@@ -26,7 +26,7 @@ ORDER BY
 
 
 
---  SqlServer.2016
+-- SqlServer.2016
 
 DROP TABLE IF EXISTS [tempdb]..[#Identities]
 
