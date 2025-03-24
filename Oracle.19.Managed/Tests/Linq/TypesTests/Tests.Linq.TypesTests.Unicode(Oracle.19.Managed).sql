@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 BeginTransaction
 BeforeExecute
--- Oracle.19.Managed Oracle.Managed Oracle12
+--  Oracle.19.Managed Oracle.Managed Oracle12
 DECLARE @FirstName Varchar2(4) -- String
 SET     @FirstName = '擊敗奴隸'
 DECLARE @LastName Varchar2(9) -- String
@@ -27,7 +27,7 @@ VALUES
 )
 
 BeforeExecute
--- Oracle.19.Managed Oracle.Managed Oracle12
+--  Oracle.19.Managed Oracle.Managed Oracle12
 
 SELECT
 	p."FirstName",

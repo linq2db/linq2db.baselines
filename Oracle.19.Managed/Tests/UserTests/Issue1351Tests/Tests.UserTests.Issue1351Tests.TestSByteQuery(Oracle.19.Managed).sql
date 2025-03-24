@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Oracle.19.Managed Oracle.Managed Oracle12
+--  Oracle.19.Managed Oracle.Managed Oracle12
 
 SELECT
 	t1.ID,
@@ -11,7 +11,7 @@ WHERE
 	t1."TestField" = 0
 
 BeforeExecute
--- Oracle.19.Managed Oracle.Managed Oracle12
+--  Oracle.19.Managed Oracle.Managed Oracle12
 
 SELECT
 	t1.ID,

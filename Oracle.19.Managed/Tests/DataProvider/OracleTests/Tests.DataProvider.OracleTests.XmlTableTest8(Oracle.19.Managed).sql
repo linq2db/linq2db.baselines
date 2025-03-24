@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Oracle.19.Managed Oracle.Managed Oracle12
+--  Oracle.19.Managed Oracle.Managed Oracle12
 DECLARE @data Varchar2(35) -- String
 SET     @data = '<t><r><c0>1</c0><c1>11</c1></r></t>'
 
@@ -19,7 +19,7 @@ WHERE
 	) > 0
 
 BeforeExecute
--- Oracle.19.Managed Oracle.Managed Oracle12
+--  Oracle.19.Managed Oracle.Managed Oracle12
 DECLARE @data Varchar2(35) -- String
 SET     @data = '<t><r><c0>2</c0><c1>22</c1></r></t>'
 

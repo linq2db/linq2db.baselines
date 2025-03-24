@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 BeginTransaction(ReadCommitted)
 BeforeExecute
--- Oracle.19.Managed Oracle.Managed Oracle12
+--  Oracle.19.Managed Oracle.Managed Oracle12
 DECLARE @id Int32
 SET     @id = 1
 DECLARE @name Varchar2(4) -- String
@@ -23,7 +23,7 @@ WHERE
 BeforeExecute
 DisposeTransaction
 BeforeExecute
--- Oracle.19.Managed Oracle.Managed Oracle12
+--  Oracle.19.Managed Oracle.Managed Oracle12
 DECLARE @id Int32
 SET     @id = 1
 DECLARE @name Varchar2(4) -- String

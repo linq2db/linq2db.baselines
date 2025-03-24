@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Oracle.19.Managed Oracle.Managed Oracle12 (asynchronously)
+--  Oracle.19.Managed Oracle.Managed Oracle12 (asynchronously)
 
 INSERT INTO STG_TRADE_INFORMATION
 (

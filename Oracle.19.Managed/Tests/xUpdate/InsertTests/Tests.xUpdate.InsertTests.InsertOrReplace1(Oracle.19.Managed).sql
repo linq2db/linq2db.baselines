@@ -1,15 +1,15 @@
 ﻿BeforeExecute
--- Oracle.19.Managed Oracle.Managed Oracle12
+--  Oracle.19.Managed Oracle.Managed Oracle12
 
 DROP SEQUENCE "PersonSeq"
 
 BeforeExecute
--- Oracle.19.Managed Oracle.Managed Oracle12
+--  Oracle.19.Managed Oracle.Managed Oracle12
 
 CREATE SEQUENCE "PersonSeq" MINVALUE 1 START WITH 5
 
 BeforeExecute
--- Oracle.19.Managed Oracle.Managed Oracle12
+--  Oracle.19.Managed Oracle.Managed Oracle12
 DECLARE @FirstName Varchar2(4) -- String
 SET     @FirstName = 'John'
 DECLARE @LastName Varchar2(7) -- String
@@ -39,7 +39,7 @@ RETURNING
 	"PersonID" INTO :IDENTITY_PARAMETER
 
 BeforeExecute
--- Oracle.19.Managed Oracle.Managed Oracle12
+--  Oracle.19.Managed Oracle.Managed Oracle12
 DECLARE @PersonID Int32
 SET     @PersonID = 5
 DECLARE @Diagnosis Varchar2(4) -- String
@@ -67,7 +67,7 @@ WHEN NOT MATCHED THEN
 	)
 
 BeforeExecute
--- Oracle.19.Managed Oracle.Managed Oracle12
+--  Oracle.19.Managed Oracle.Managed Oracle12
 DECLARE @PersonID Int32
 SET     @PersonID = 5
 DECLARE @Diagnosis Varchar2(4) -- String
@@ -95,7 +95,7 @@ WHEN NOT MATCHED THEN
 	)
 
 BeforeExecute
--- Oracle.19.Managed Oracle.Managed Oracle12
+--  Oracle.19.Managed Oracle.Managed Oracle12
 DECLARE @PersonID Int32
 SET     @PersonID = 5
 DECLARE @Diagnosis Varchar2(4) -- String
@@ -123,7 +123,7 @@ WHEN NOT MATCHED THEN
 	)
 
 BeforeExecute
--- Oracle.19.Managed Oracle.Managed Oracle12
+--  Oracle.19.Managed Oracle.Managed Oracle12
 DECLARE @id Int32
 SET     @id = 5
 

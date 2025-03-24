@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Oracle.19.Managed Oracle.Managed Oracle12 (asynchronously)
+--  Oracle.19.Managed Oracle.Managed Oracle12 (asynchronously)
 
 SELECT
 	t1."ParentID",
@@ -11,7 +11,7 @@ ORDER BY
 	t1."ChildID"
 
 BeforeExecute
--- Oracle.19.Managed Oracle.Managed Oracle12 (asynchronously)
+--  Oracle.19.Managed Oracle.Managed Oracle12 (asynchronously)
 
 SELECT
 	t1."ParentID",

@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Oracle.19.Managed Oracle.Managed Oracle12
+--  Oracle.19.Managed Oracle.Managed Oracle12
 
 CREATE TABLE "DateTimeOffsetTable"
 (
@@ -7,7 +7,7 @@ CREATE TABLE "DateTimeOffsetTable"
 )
 
 BeforeExecute
--- Oracle.19.Managed Oracle.Managed Oracle12
+--  Oracle.19.Managed Oracle.Managed Oracle12
 DECLARE @DateTimeOffsetValue TimeStampTZ -- DateTimeOffset
 SET     @DateTimeOffsetValue = 01/01/2000 10:11:12 +05:00
 
@@ -21,7 +21,7 @@ VALUES
 )
 
 BeforeExecute
--- Oracle.19.Managed Oracle.Managed Oracle12
+--  Oracle.19.Managed Oracle.Managed Oracle12
 
 SELECT
 	t1."DateTimeOffsetValue"
@@ -30,7 +30,7 @@ FROM
 FETCH NEXT 2 ROWS ONLY
 
 BeforeExecute
--- Oracle.19.Managed Oracle.Managed Oracle12
+--  Oracle.19.Managed Oracle.Managed Oracle12
 
 DROP TABLE "DateTimeOffsetTable"
 
