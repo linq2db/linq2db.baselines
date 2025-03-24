@@ -6,7 +6,7 @@ FROM "Events" AS e
 WHERE (((e."Duration" @> @__date_0 OR (lower(e."Duration") = @__date_0)) OR (upper(e."Duration") = @__date_0)) OR isempty(e."Duration")) OR isempty(e."Duration" * e."Duration")
 
 
---  PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.9.5 PostgreSQL
 DECLARE @date Timestamp -- DateTime2
 SET     @date = '2020-02-29 17:54:55.123'::timestamp
 

@@ -1,7 +1,7 @@
 ﻿BeginTransaction(RepeatableRead)
 
 
---  SqlServer.2022
+-- SqlServer.2022
 
 SELECT
 	[m_1].[OrderID],
@@ -32,7 +32,7 @@ FROM
 DisposeTransaction
 
 
---  SqlServer.2022
+-- SqlServer.2022
 
 SELECT
 	[e].[IsDeleted],

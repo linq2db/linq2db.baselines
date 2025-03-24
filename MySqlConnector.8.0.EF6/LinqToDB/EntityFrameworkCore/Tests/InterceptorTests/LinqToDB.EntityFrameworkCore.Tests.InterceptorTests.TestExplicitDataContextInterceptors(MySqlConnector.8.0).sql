@@ -1,4 +1,4 @@
-﻿--  MySql.8.0.MySqlConnector MySql80
+﻿-- MySql.8.0.MySqlConnector MySql80
 DECLARE @take Int32
 SET     @take = 2
 
@@ -24,7 +24,7 @@ LIMIT @take
 
 
 
---  MySql.8.0.MySqlConnector MySql80
+-- MySql.8.0.MySqlConnector MySql80
 DECLARE @take Int32
 SET     @take = 2
 

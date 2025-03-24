@@ -1,4 +1,4 @@
-﻿--  SqlServer.2017
+﻿-- SqlServer.2017
 
 CREATE TABLE [tempdb]..[#Issue4671Entity1TMP]
 (
@@ -10,7 +10,7 @@ CREATE TABLE [tempdb]..[#Issue4671Entity1TMP]
 
 
 
---  SqlServer.2017
+-- SqlServer.2017
 
 INSERT INTO [Issue4671Entity1]
 (
@@ -23,7 +23,7 @@ VALUES
 
 
 
---  SqlServer.2017
+-- SqlServer.2017
 
 INSERT INTO [tempdb]..[#Issue4671Entity1TMP]
 (
@@ -36,7 +36,7 @@ VALUES
 
 
 
---  SqlServer.2017
+-- SqlServer.2017
 
 SELECT TOP (2)
 	[t1].[Id],
@@ -46,7 +46,7 @@ FROM
 
 
 
---  SqlServer.2017
+-- SqlServer.2017
 
 SELECT TOP (2)
 	[t1].[Id],
@@ -56,7 +56,7 @@ FROM
 
 
 
---  SqlServer.2017
+-- SqlServer.2017
 
 DROP TABLE IF EXISTS [tempdb]..[#Issue4671Entity1TMP]
 

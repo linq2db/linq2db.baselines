@@ -1,4 +1,4 @@
-﻿--  SQLite.MS SQLite (asynchronously)
+﻿-- SQLite.MS SQLite (asynchronously)
 DECLARE @test  -- Int32
 SET     @test = 1
 

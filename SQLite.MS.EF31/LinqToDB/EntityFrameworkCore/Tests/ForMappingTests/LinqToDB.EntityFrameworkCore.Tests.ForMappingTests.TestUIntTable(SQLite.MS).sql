@@ -8,7 +8,7 @@ FROM "UIntTable"
 WHERE changes() = 1 AND "rowid" = last_insert_rowid();
 
 
---  SQLite.MS SQLite (asynchronously)
+-- SQLite.MS SQLite (asynchronously)
 DECLARE @field64 Decimal
 SET     @field64 = 5
 

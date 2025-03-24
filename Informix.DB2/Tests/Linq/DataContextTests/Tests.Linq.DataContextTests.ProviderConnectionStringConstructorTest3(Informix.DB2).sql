@@ -10,7 +10,7 @@ ORDER BY
 	t1.ChildID
 
 BeforeExecute
---  Informix.DB2 Informix
+-- Informix.DB2 Informix
 
 SELECT
 	t1.ParentID,

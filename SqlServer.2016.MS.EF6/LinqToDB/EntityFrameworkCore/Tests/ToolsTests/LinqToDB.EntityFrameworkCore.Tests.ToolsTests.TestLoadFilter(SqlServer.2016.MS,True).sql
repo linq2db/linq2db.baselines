@@ -35,7 +35,7 @@ ORDER BY [p].[ProductID], [t3].[OrderID0], [t3].[ProductID], [t3].[OrderID], [t3
 BeginTransactionAsync(RepeatableRead)
 
 
---  SqlServer.2016 (asynchronously)
+-- SqlServer.2016 (asynchronously)
 
 SELECT
 	[m_1].[SupplierId],
@@ -81,7 +81,7 @@ WHERE
 
 
 
---  SqlServer.2016 (asynchronously)
+-- SqlServer.2016 (asynchronously)
 
 SELECT
 	[m_1].[ProductID],
@@ -119,7 +119,7 @@ WHERE
 DisposeTransactionAsync
 
 
---  SqlServer.2016 (asynchronously)
+-- SqlServer.2016 (asynchronously)
 
 SELECT
 	[p].[ProductName],

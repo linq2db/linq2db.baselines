@@ -10,7 +10,7 @@ ORDER BY
 	[t1].[ChildID]
 
 BeforeExecute
---  SqlServer.2008
+-- SqlServer.2008
 
 SELECT
 	[t1].[ParentID],

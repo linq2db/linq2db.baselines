@@ -1,5 +1,5 @@
 ﻿BeforeExecute
---  ClickHouse.Octonica ClickHouse
+-- ClickHouse.Octonica ClickHouse
 
 INSERT INTO ClickHouseBulkCopyTable
 (
@@ -1008,7 +1008,7 @@ VALUES
 (2999)
 
 BeforeExecute
---  ClickHouse.Octonica ClickHouse (asynchronously)
+-- ClickHouse.Octonica ClickHouse (asynchronously)
 
 INSERT INTO ClickHouseBulkCopyTable
 (
