@@ -1,10 +1,10 @@
 ﻿BeforeExecute
--- Informix.DB2 Informix
+--  Informix.DB2 Informix
 
 DROP TABLE IF EXISTS TestTable
 
 BeforeExecute
--- Informix.DB2 Informix
+--  Informix.DB2 Informix
 
 CREATE TEMP TABLE TestTable
 (
@@ -13,7 +13,7 @@ CREATE TEMP TABLE TestTable
 )
 
 BeforeExecute
--- Informix.DB2 Informix
+--  Informix.DB2 Informix
 
 SELECT
 	sub.Id_1,
@@ -38,7 +38,7 @@ WHERE
 	sub.Id_1 = sub.Id
 
 BeforeExecute
--- Informix.DB2 Informix
+--  Informix.DB2 Informix
 
 DROP TABLE IF EXISTS TestTable
 

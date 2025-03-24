@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Informix.DB2 Informix (asynchronously)
+--  Informix.DB2 Informix (asynchronously)
 
 SELECT
 	p.FirstName,
@@ -13,7 +13,7 @@ WHERE
 	p.PersonID = 1
 
 BeforeExecute
--- Informix.DB2 Informix (asynchronously)
+--  Informix.DB2 Informix (asynchronously)
 
 SELECT
 	p.FirstName,

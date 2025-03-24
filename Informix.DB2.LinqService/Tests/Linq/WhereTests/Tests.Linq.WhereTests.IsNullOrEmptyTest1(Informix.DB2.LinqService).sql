@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Informix.DB2 Informix
+--  Informix.DB2 Informix
 
 SELECT
 	nm.MiddleName
@@ -9,7 +9,7 @@ WHERE
 	NOT (nm.MiddleName IS NULL OR CHAR_LENGTH(nm.MiddleName) = 0)
 
 BeforeExecute
--- Informix.DB2 Informix
+--  Informix.DB2 Informix
 
 SELECT
 	t1.FirstName,

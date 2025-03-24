@@ -1,10 +1,10 @@
 ﻿BeforeExecute
--- Informix.DB2 Informix
+--  Informix.DB2 Informix
 
 DROP TABLE IF EXISTS TestTable
 
 BeforeExecute
--- Informix.DB2 Informix
+--  Informix.DB2 Informix
 
 CREATE TABLE TestTable
 (
@@ -17,7 +17,7 @@ CREATE TABLE TestTable
 )
 
 BeforeExecute
--- Informix.DB2 Informix
+--  Informix.DB2 Informix
 
 SELECT
 	t1.ID,
@@ -28,7 +28,7 @@ FROM
 	TestTable t1
 
 BeforeExecute
--- Informix.DB2 Informix
+--  Informix.DB2 Informix
 
 DROP TABLE TestTable
 

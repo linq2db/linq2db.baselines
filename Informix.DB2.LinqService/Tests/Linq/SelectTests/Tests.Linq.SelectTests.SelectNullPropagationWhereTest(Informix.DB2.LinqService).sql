@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Informix.DB2 Informix
+--  Informix.DB2 Informix
 
 SELECT
 	p.ParentID,
@@ -26,7 +26,7 @@ ORDER BY
 	a_Parent.Value1
 
 BeforeExecute
--- Informix.DB2 Informix
+--  Informix.DB2 Informix
 
 SELECT
 	t1.ParentID,
@@ -35,7 +35,7 @@ FROM
 	Parent t1
 
 BeforeExecute
--- Informix.DB2 Informix
+--  Informix.DB2 Informix
 
 SELECT
 	t1.ParentID,

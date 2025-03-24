@@ -1,35 +1,35 @@
 ﻿BeforeExecute
--- Informix.DB2 Informix
+--  Informix.DB2 Informix
 
 INSERT INTO Person (PersonID, FirstName, LastName, MiddleName, Gender) VALUES (2147483647, '1', '2', '3', 'M')
 
 BeforeExecute
--- Informix.DB2 Informix
+--  Informix.DB2 Informix
 
 DELETE FROM Person WHERE PersonID > 4
 
 BeforeExecute
--- Informix.DB2 Informix
+--  Informix.DB2 Informix
 
 ALTER TABLE Person MODIFY (PersonID SERIAL(5))
 
 BeforeExecute
--- Informix.DB2 Informix
+--  Informix.DB2 Informix
 
 ALTER TABLE Person ADD CONSTRAINT PRIMARY KEY (PersonID)
 
 BeforeExecute
--- Informix.DB2 Informix
+--  Informix.DB2 Informix
 
 ALTER TABLE Patient ADD CONSTRAINT(FOREIGN KEY (PersonID) REFERENCES Person (PersonID))
 
 BeforeExecute
--- Informix.DB2 Informix
+--  Informix.DB2 Informix
 
 ALTER TABLE Doctor ADD CONSTRAINT(FOREIGN KEY (PersonID) REFERENCES Person (PersonID))
 
 BeforeExecute
--- Informix.DB2 Informix
+--  Informix.DB2 Informix
 DECLARE @FirstName VarChar(18) -- String
 SET     @FirstName = 'InsertColumnFilter'
 DECLARE @LastName VarChar(8) -- String
@@ -55,7 +55,7 @@ VALUES
 )
 
 BeforeExecute
--- Informix.DB2 Informix
+--  Informix.DB2 Informix
 DECLARE @FirstName VarChar(18) -- String
 SET     @FirstName = 'InsertColumnFilter'
 
@@ -71,7 +71,7 @@ WHERE
 	x.FirstName = @FirstName
 
 BeforeExecute
--- Informix.DB2 Informix
+--  Informix.DB2 Informix
 DECLARE @FirstName VarChar(18) -- String
 SET     @FirstName = 'InsertColumnFilter'
 DECLARE @LastName VarChar(8) -- String
@@ -94,7 +94,7 @@ WHERE
 	t1.PersonID = @ID
 
 BeforeExecute
--- Informix.DB2 Informix
+--  Informix.DB2 Informix
 DECLARE @FirstName VarChar(18) -- String
 SET     @FirstName = 'InsertColumnFilter'
 
@@ -110,7 +110,7 @@ WHERE
 	x.FirstName = @FirstName
 
 BeforeExecute
--- Informix.DB2 Informix
+--  Informix.DB2 Informix
 DECLARE @newName VarChar(18) -- String
 SET     @newName = 'InsertColumnFilter'
 

@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 BeginTransaction(RepeatableRead)
 BeforeExecute
--- Informix.DB2 Informix
+--  Informix.DB2 Informix
 
 WITH CTE_1 (PersonID)
 AS
@@ -32,7 +32,7 @@ FROM
 BeforeExecute
 DisposeTransaction
 BeforeExecute
--- Informix.DB2 Informix
+--  Informix.DB2 Informix
 
 WITH CTE_1 (PersonID)
 AS

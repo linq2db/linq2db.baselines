@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Informix.DB2 Informix
+--  Informix.DB2 Informix
 
 SELECT
 	COUNT(*)
@@ -13,7 +13,7 @@ WHERE
 	'{}' || p.LastName = '{}' || p.LastName
 
 BeforeExecute
--- Informix.DB2 Informix
+--  Informix.DB2 Informix
 
 SELECT
 	COUNT(*)

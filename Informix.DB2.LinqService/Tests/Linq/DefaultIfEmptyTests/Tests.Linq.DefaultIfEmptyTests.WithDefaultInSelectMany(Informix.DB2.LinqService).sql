@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Informix.DB2 Informix
+--  Informix.DB2 Informix
 
 SELECT
 	s.ParentID,
@@ -12,7 +12,7 @@ WHERE
 	c_1.ChildID < 0 AND c_1.ParentID IS NOT NULL OR c_1.ParentID IS NULL
 
 BeforeExecute
--- Informix.DB2 Informix
+--  Informix.DB2 Informix
 
 SELECT
 	m_1.ParentID,
@@ -28,7 +28,7 @@ FROM
 		INNER JOIN Child d ON m_1.ParentID = d.ParentID
 
 BeforeExecute
--- Informix.DB2 Informix
+--  Informix.DB2 Informix
 
 SELECT
 	t1.ParentID,

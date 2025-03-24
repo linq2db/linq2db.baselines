@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 BeginTransaction(RepeatableRead)
 BeforeExecute
--- Informix.DB2 Informix
+--  Informix.DB2 Informix
 
 SELECT
 	m_2.Id1,
@@ -18,7 +18,7 @@ FROM
 		INNER JOIN DetailClass d ON m_2.Id1 = d.MasterId
 
 BeforeExecute
--- Informix.DB2 Informix
+--  Informix.DB2 Informix
 
 SELECT
 	m_2.Id1,
@@ -45,7 +45,7 @@ FROM
 BeforeExecute
 DisposeTransaction
 BeforeExecute
--- Informix.DB2 Informix
+--  Informix.DB2 Informix
 
 SELECT
 	m_1.Id1,
@@ -58,7 +58,7 @@ FROM
 BeforeExecute
 BeginTransaction(RepeatableRead)
 BeforeExecute
--- Informix.DB2 Informix
+--  Informix.DB2 Informix
 
 SELECT
 	m_1.Id1,
@@ -77,7 +77,7 @@ FROM
 BeforeExecute
 DisposeTransaction
 BeforeExecute
--- Informix.DB2 Informix
+--  Informix.DB2 Informix
 
 SELECT
 	t1.Id1,

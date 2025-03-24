@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Informix.DB2 Informix
+--  Informix.DB2 Informix
 
 SELECT
 	x.Value1
@@ -9,7 +9,7 @@ WHERE
 	Nvl(x.Value1, 100) > 10
 
 BeforeExecute
--- Informix.DB2 Informix
+--  Informix.DB2 Informix
 
 SELECT
 	p.Value1

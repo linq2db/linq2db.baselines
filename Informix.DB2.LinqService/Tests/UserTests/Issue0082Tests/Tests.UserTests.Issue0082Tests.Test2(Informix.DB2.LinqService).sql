@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Informix.DB2 Informix
+--  Informix.DB2 Informix
 
 SELECT
 	o.ParentID,
@@ -23,7 +23,7 @@ FROM
 	Parent o
 
 BeforeExecute
--- Informix.DB2 Informix
+--  Informix.DB2 Informix
 
 SELECT
 	COUNT(*)
@@ -31,7 +31,7 @@ FROM
 	Parent o
 
 BeforeExecute
--- Informix.DB2 Informix
+--  Informix.DB2 Informix
 
 SELECT
 	x.ParentID,

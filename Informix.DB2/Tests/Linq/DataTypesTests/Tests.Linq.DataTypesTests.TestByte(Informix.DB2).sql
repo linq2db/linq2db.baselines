@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Informix.DB2 Informix
+--  Informix.DB2 Informix
 DECLARE @Column SmallInt(2) -- Int16
 SET     @Column = 255
 DECLARE @ColumnNullable SmallInt(2) -- Int16
@@ -15,7 +15,7 @@ WHERE
 	r."Column" = @Column AND r.ColumnNullable = @ColumnNullable
 
 BeforeExecute
--- Informix.DB2 Informix
+--  Informix.DB2 Informix
 
 SELECT
 	r.Id,
@@ -27,13 +27,13 @@ WHERE
 	r."Column" = 255 AND r.ColumnNullable = 2
 
 BeforeExecute
--- Informix.DB2 Informix
+--  Informix.DB2 Informix
 
 DELETE FROM
 	ByteTable
 
 BeforeExecute
--- Informix.DB2 Informix
+--  Informix.DB2 Informix
 DECLARE @Id Integer(4) -- Int32
 SET     @Id = 1
 DECLARE @Column SmallInt(2) -- Int16
@@ -55,7 +55,7 @@ VALUES
 )
 
 BeforeExecute
--- Informix.DB2 Informix
+--  Informix.DB2 Informix
 DECLARE @Id Integer(4) -- Int32
 SET     @Id = 2
 DECLARE @Column SmallInt(2) -- Int16
@@ -77,7 +77,7 @@ VALUES
 )
 
 BeforeExecute
--- Informix.DB2 Informix
+--  Informix.DB2 Informix
 
 SELECT
 	t1.Id,
@@ -89,13 +89,13 @@ ORDER BY
 	t1.Id
 
 BeforeExecute
--- Informix.DB2 Informix
+--  Informix.DB2 Informix
 
 DELETE FROM
 	ByteTable
 
 BeforeExecute
--- Informix.DB2 Informix
+--  Informix.DB2 Informix
 DECLARE @Id Integer(4) -- Int32
 SET     @Id = 1
 DECLARE @Column SmallInt(2) -- Int16
@@ -117,7 +117,7 @@ VALUES
 )
 
 BeforeExecute
--- Informix.DB2 Informix
+--  Informix.DB2 Informix
 DECLARE @Id Integer(4) -- Int32
 SET     @Id = 2
 DECLARE @Column SmallInt(2) -- Int16
@@ -139,7 +139,7 @@ VALUES
 )
 
 BeforeExecute
--- Informix.DB2 Informix
+--  Informix.DB2 Informix
 
 SELECT
 	t1.Id,
@@ -151,7 +151,7 @@ ORDER BY
 	t1.Id
 
 BeforeExecute
--- Informix.DB2 Informix
+--  Informix.DB2 Informix
 
 DELETE FROM
 	ByteTable
@@ -160,7 +160,7 @@ BeforeExecute
 INSERT BULK ByteTable
 
 BeforeExecute
--- Informix.DB2 Informix
+--  Informix.DB2 Informix
 
 SELECT
 	t1.Id,

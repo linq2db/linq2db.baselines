@@ -1,11 +1,11 @@
 ﻿BeforeExecute
--- Informix.DB2 Informix
+--  Informix.DB2 Informix
 
 DELETE FROM
 	CollatedTable
 
 BeforeExecute
--- Informix.DB2 Informix
+--  Informix.DB2 Informix
 DECLARE @Id Integer(4) -- Int32
 SET     @Id = 1
 DECLARE @CaseSensitive VarChar(10) -- String
@@ -27,7 +27,7 @@ VALUES
 )
 
 BeforeExecute
--- Informix.DB2 Informix
+--  Informix.DB2 Informix
 
 SELECT
 	COUNT(*)
@@ -37,7 +37,7 @@ WHERE
 	r.CaseSensitive LIKE 'TestSt%' ESCAPE '~'
 
 BeforeExecute
--- Informix.DB2 Informix
+--  Informix.DB2 Informix
 
 SELECT
 	COUNT(*)
@@ -47,7 +47,7 @@ WHERE
 	r.CaseInsensitive LIKE 'TestSt%' ESCAPE '~'
 
 BeforeExecute
--- Informix.DB2 Informix
+--  Informix.DB2 Informix
 
 SELECT
 	COUNT(*)
@@ -57,7 +57,7 @@ WHERE
 	r.CaseSensitive LIKE 'testst%' ESCAPE '~'
 
 BeforeExecute
--- Informix.DB2 Informix
+--  Informix.DB2 Informix
 
 SELECT
 	COUNT(*)

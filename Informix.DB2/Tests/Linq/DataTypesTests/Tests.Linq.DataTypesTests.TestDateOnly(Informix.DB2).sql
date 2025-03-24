@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Informix.DB2 Informix
+--  Informix.DB2 Informix
 DECLARE @Column Date(16)
 SET     @Column = TO_DATE('2020-02-29', '%Y-%m-%d')
 DECLARE @ColumnNullable Date(16)
@@ -15,7 +15,7 @@ WHERE
 	r."Column" = @Column AND r.ColumnNullable = @ColumnNullable
 
 BeforeExecute
--- Informix.DB2 Informix
+--  Informix.DB2 Informix
 
 SELECT
 	r.Id,
@@ -28,13 +28,13 @@ WHERE
 	r.ColumnNullable = TO_DATE('2200-01-01', '%Y-%m-%d')
 
 BeforeExecute
--- Informix.DB2 Informix
+--  Informix.DB2 Informix
 
 DELETE FROM
 	DateOnlyTable
 
 BeforeExecute
--- Informix.DB2 Informix
+--  Informix.DB2 Informix
 DECLARE @Id Integer(4) -- Int32
 SET     @Id = 1
 DECLARE @Column Date(16)
@@ -56,7 +56,7 @@ VALUES
 )
 
 BeforeExecute
--- Informix.DB2 Informix
+--  Informix.DB2 Informix
 DECLARE @Id Integer(4) -- Int32
 SET     @Id = 2
 DECLARE @Column Date(16)
@@ -78,7 +78,7 @@ VALUES
 )
 
 BeforeExecute
--- Informix.DB2 Informix
+--  Informix.DB2 Informix
 
 SELECT
 	t1.Id,
@@ -90,13 +90,13 @@ ORDER BY
 	t1.Id
 
 BeforeExecute
--- Informix.DB2 Informix
+--  Informix.DB2 Informix
 
 DELETE FROM
 	DateOnlyTable
 
 BeforeExecute
--- Informix.DB2 Informix
+--  Informix.DB2 Informix
 DECLARE @Id Integer(4) -- Int32
 SET     @Id = 1
 DECLARE @Column Date(16)
@@ -118,7 +118,7 @@ VALUES
 )
 
 BeforeExecute
--- Informix.DB2 Informix
+--  Informix.DB2 Informix
 DECLARE @Id Integer(4) -- Int32
 SET     @Id = 2
 DECLARE @Column Date(16)
@@ -140,7 +140,7 @@ VALUES
 )
 
 BeforeExecute
--- Informix.DB2 Informix
+--  Informix.DB2 Informix
 
 SELECT
 	t1.Id,
@@ -152,7 +152,7 @@ ORDER BY
 	t1.Id
 
 BeforeExecute
--- Informix.DB2 Informix
+--  Informix.DB2 Informix
 
 DELETE FROM
 	DateOnlyTable
@@ -161,7 +161,7 @@ BeforeExecute
 INSERT BULK DateOnlyTable
 
 BeforeExecute
--- Informix.DB2 Informix
+--  Informix.DB2 Informix
 
 SELECT
 	t1.Id,

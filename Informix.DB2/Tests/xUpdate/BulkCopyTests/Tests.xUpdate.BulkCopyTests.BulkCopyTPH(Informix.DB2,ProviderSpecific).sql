@@ -2,7 +2,7 @@
 INSERT BULK TPHTable
 
 BeforeExecute
--- Informix.DB2 Informix
+--  Informix.DB2 Informix
 
 SELECT
 	t1.Discriminator,
@@ -17,7 +17,7 @@ ORDER BY
 	t1.Id
 
 BeforeExecute
--- Informix.DB2 Informix
+--  Informix.DB2 Informix
 
 SELECT FIRST 2
 	x.Discriminator,
@@ -32,7 +32,7 @@ WHERE
 	x.Discriminator = 1
 
 BeforeExecute
--- Informix.DB2 Informix
+--  Informix.DB2 Informix
 
 SELECT FIRST 2
 	x.Discriminator,
@@ -47,7 +47,7 @@ WHERE
 	x.Discriminator = 2
 
 BeforeExecute
--- Informix.DB2 Informix
+--  Informix.DB2 Informix
 
 SELECT FIRST 2
 	x.Discriminator,
@@ -62,7 +62,7 @@ WHERE
 	x.Discriminator = 3
 
 BeforeExecute
--- Informix.DB2 Informix
+--  Informix.DB2 Informix
 
 SELECT FIRST 2
 	x.Discriminator,
@@ -77,7 +77,7 @@ WHERE
 	x.Value1 = 'Str1'
 
 BeforeExecute
--- Informix.DB2 Informix
+--  Informix.DB2 Informix
 
 SELECT FIRST 2
 	x.Discriminator,
@@ -92,7 +92,7 @@ WHERE
 	x.Value2 = 'Str2'
 
 BeforeExecute
--- Informix.DB2 Informix
+--  Informix.DB2 Informix
 
 SELECT FIRST 2
 	x.Discriminator,

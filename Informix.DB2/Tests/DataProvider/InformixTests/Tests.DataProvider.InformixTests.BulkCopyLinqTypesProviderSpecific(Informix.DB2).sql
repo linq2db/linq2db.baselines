@@ -2,7 +2,7 @@
 INSERT BULK LinqDataTypes
 
 BeforeExecute
--- Informix.DB2 Informix
+--  Informix.DB2 Informix
 
 DELETE FROM
 	LinqDataTypes

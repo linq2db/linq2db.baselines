@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Informix.DB2 Informix
+--  Informix.DB2 Informix
 
 WITH CTE1_ (ParentID, ChildID)
 AS
@@ -17,7 +17,7 @@ FROM
 	CTE1_ t2
 
 BeforeExecute
--- Informix.DB2 Informix
+--  Informix.DB2 Informix
 
 SELECT
 	t1.ParentID,

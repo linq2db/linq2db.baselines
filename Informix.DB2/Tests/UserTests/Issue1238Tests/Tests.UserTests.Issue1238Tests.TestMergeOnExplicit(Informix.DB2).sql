@@ -1,13 +1,13 @@
 ﻿BeforeExecute
 BeginTransaction
 BeforeExecute
--- Informix.DB2 Informix
+--  Informix.DB2 Informix
 
 DELETE FROM
 	InheritanceParent
 
 BeforeExecute
--- Informix.DB2 Informix
+--  Informix.DB2 Informix
 
 MERGE INTO InheritanceParent Target
 USING (
@@ -40,7 +40,7 @@ VALUES
 )
 
 BeforeExecute
--- Informix.DB2 Informix
+--  Informix.DB2 Informix
 
 SELECT
 	COUNT(*)
@@ -48,7 +48,7 @@ FROM
 	InheritanceParent t1
 
 BeforeExecute
--- Informix.DB2 Informix
+--  Informix.DB2 Informix
 
 MERGE INTO InheritanceParent Target
 USING (
@@ -81,7 +81,7 @@ VALUES
 )
 
 BeforeExecute
--- Informix.DB2 Informix
+--  Informix.DB2 Informix
 
 SELECT
 	COUNT(*)

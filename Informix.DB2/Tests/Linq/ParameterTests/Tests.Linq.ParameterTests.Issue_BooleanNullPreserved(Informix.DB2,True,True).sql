@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Informix.DB2 Informix
+--  Informix.DB2 Informix
 
 INSERT INTO TestBool
 (
@@ -13,7 +13,7 @@ VALUES
 )
 
 BeforeExecute
--- Informix.DB2 Informix
+--  Informix.DB2 Informix
 
 SELECT FIRST 2
 	t1.Id,
@@ -22,7 +22,7 @@ FROM
 	TestBool t1
 
 BeforeExecute
--- Informix.DB2 Informix
+--  Informix.DB2 Informix
 
 UPDATE
 	TestBool t1
@@ -35,7 +35,7 @@ SET
 	END
 
 BeforeExecute
--- Informix.DB2 Informix
+--  Informix.DB2 Informix
 
 SELECT FIRST 2
 	t1.Id,
@@ -44,7 +44,7 @@ FROM
 	TestBool t1
 
 BeforeExecute
--- Informix.DB2 Informix
+--  Informix.DB2 Informix
 
 UPDATE
 	TestBool t1
@@ -53,7 +53,7 @@ SET
 	"Value" = 'f'::BOOLEAN
 
 BeforeExecute
--- Informix.DB2 Informix
+--  Informix.DB2 Informix
 
 SELECT FIRST 2
 	t1.Id,

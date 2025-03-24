@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Informix.DB2 Informix
+--  Informix.DB2 Informix
 
 DELETE FROM
 	Person
@@ -7,7 +7,7 @@ WHERE
 	Person.PersonID > 4
 
 BeforeExecute
--- Informix.DB2 Informix (asynchronously)
+--  Informix.DB2 Informix (asynchronously)
 
 INSERT INTO Person
 (
@@ -23,12 +23,12 @@ VALUES
 )
 
 BeforeExecute
--- Informix.DB2 Informix (asynchronously)
+--  Informix.DB2 Informix (asynchronously)
 
 SELECT DBINFO('sqlca.sqlerrd1') FROM systables where tabid = 1
 
 BeforeExecute
--- Informix.DB2 Informix
+--  Informix.DB2 Informix
 
 DELETE FROM
 	Person

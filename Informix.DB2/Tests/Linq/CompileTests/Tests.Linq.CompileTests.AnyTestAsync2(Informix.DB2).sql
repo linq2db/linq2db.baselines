@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Informix.DB2 Informix (asynchronously)
+--  Informix.DB2 Informix (asynchronously)
 
 SELECT
 	EXISTS(
@@ -13,7 +13,7 @@ SELECT
 FROM table(set{1})
 
 BeforeExecute
--- Informix.DB2 Informix (asynchronously)
+--  Informix.DB2 Informix (asynchronously)
 
 SELECT
 	EXISTS(

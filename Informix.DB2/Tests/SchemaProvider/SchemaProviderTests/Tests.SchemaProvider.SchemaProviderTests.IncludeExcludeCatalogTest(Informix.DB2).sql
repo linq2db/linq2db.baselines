@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Informix.DB2 Informix
+--  Informix.DB2 Informix
 
 
 				SELECT
@@ -14,7 +14,7 @@
 					tabid >= 100
 
 BeforeExecute
--- Informix.DB2 Informix
+--  Informix.DB2 Informix
 
 
 						SELECT
@@ -41,7 +41,7 @@ BeforeExecute
 						WHERE t.tabid >= 100 AND x.idxtype = 'U'
 
 BeforeExecute
--- Informix.DB2 Informix
+--  Informix.DB2 Informix
 
 
 					SELECT
@@ -55,7 +55,7 @@ BeforeExecute
 					WHERE t.tabid >= 100
 
 BeforeExecute
--- Informix.DB2 Informix
+--  Informix.DB2 Informix
 
 
 						SELECT
@@ -107,7 +107,7 @@ BeforeExecute
 									JOIN systables  ot ON oc.tabid   = ot.tabid
 
 BeforeExecute
--- Informix.DB2 Informix
+--  Informix.DB2 Informix
 
 
 				SELECT
@@ -122,7 +122,7 @@ BeforeExecute
 					tabid >= 100
 
 BeforeExecute
--- Informix.DB2 Informix
+--  Informix.DB2 Informix
 
 
 						SELECT
@@ -149,7 +149,7 @@ BeforeExecute
 						WHERE t.tabid >= 100 AND x.idxtype = 'U'
 
 BeforeExecute
--- Informix.DB2 Informix
+--  Informix.DB2 Informix
 
 
 					SELECT
@@ -163,7 +163,7 @@ BeforeExecute
 					WHERE t.tabid >= 100
 
 BeforeExecute
--- Informix.DB2 Informix
+--  Informix.DB2 Informix
 
 
 						SELECT
@@ -215,7 +215,7 @@ BeforeExecute
 									JOIN systables  ot ON oc.tabid   = ot.tabid
 
 BeforeExecute
--- Informix.DB2 Informix
+--  Informix.DB2 Informix
 
 
 				SELECT
@@ -230,7 +230,7 @@ BeforeExecute
 					tabid >= 100
 
 BeforeExecute
--- Informix.DB2 Informix
+--  Informix.DB2 Informix
 
 
 						SELECT
@@ -257,7 +257,7 @@ BeforeExecute
 						WHERE t.tabid >= 100 AND x.idxtype = 'U'
 
 BeforeExecute
--- Informix.DB2 Informix
+--  Informix.DB2 Informix
 
 
 					SELECT
@@ -271,7 +271,7 @@ BeforeExecute
 					WHERE t.tabid >= 100
 
 BeforeExecute
--- Informix.DB2 Informix
+--  Informix.DB2 Informix
 
 
 						SELECT

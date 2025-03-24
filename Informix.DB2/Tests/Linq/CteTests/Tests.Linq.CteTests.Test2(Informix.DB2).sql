@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Informix.DB2 Informix
+--  Informix.DB2 Informix
 
 WITH CTE1_ (ParentID)
 AS
@@ -67,7 +67,7 @@ FROM
 		INNER JOIN LATEST c4_1 ON c4_1.ParentID = c3.ParentID
 
 BeforeExecute
--- Informix.DB2 Informix
+--  Informix.DB2 Informix
 
 SELECT
 	c3.ParentID,

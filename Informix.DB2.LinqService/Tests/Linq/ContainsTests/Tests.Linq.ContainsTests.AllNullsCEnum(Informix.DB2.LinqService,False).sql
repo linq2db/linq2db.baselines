@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Informix.DB2 Informix
+--  Informix.DB2 Informix
 DECLARE @In VarChar -- String
 SET     @In = NULL
 
@@ -11,7 +11,7 @@ WHERE
 	s.CEnum IN (@In, @In)
 
 BeforeExecute
--- Informix.DB2 Informix
+--  Informix.DB2 Informix
 DECLARE @NotIn VarChar -- String
 SET     @NotIn = NULL
 

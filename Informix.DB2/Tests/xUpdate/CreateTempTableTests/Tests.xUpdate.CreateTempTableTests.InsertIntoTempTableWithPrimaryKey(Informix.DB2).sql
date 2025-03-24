@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Informix.DB2 Informix
+--  Informix.DB2 Informix
 
 CREATE TEMP TABLE TableWithPrimaryKey2
 (
@@ -12,7 +12,7 @@ BeforeExecute
 INSERT BULK TableWithPrimaryKey2
 
 BeforeExecute
--- Informix.DB2 Informix
+--  Informix.DB2 Informix
 
 DROP TABLE IF EXISTS TableWithPrimaryKey2
 

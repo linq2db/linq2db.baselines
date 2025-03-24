@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 BeginTransaction
 BeforeExecute
--- Informix.DB2 Informix
+--  Informix.DB2 Informix
 
 CREATE TEMP TABLE MergeTemp
 (
@@ -12,7 +12,7 @@ CREATE TEMP TABLE MergeTemp
 )
 
 BeforeExecute
--- Informix.DB2 Informix
+--  Informix.DB2 Informix
 DECLARE @ID Integer(4) -- Int32
 SET     @ID = 1
 DECLARE @Name VarChar(4) -- String
@@ -30,7 +30,7 @@ VALUES
 )
 
 BeforeExecute
--- Informix.DB2 Informix
+--  Informix.DB2 Informix
 
 UPDATE
 	MergeTemp t1
@@ -48,7 +48,7 @@ WHERE
 	)
 
 BeforeExecute
--- Informix.DB2 Informix
+--  Informix.DB2 Informix
 
 DROP TABLE IF EXISTS MergeTemp
 

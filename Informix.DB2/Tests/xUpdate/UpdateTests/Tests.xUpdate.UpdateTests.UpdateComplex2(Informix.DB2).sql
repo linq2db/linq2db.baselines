@@ -1,35 +1,35 @@
 ﻿BeforeExecute
--- Informix.DB2 Informix
+--  Informix.DB2 Informix
 
 INSERT INTO Person (PersonID, FirstName, LastName, MiddleName, Gender) VALUES (2147483647, '1', '2', '3', 'M')
 
 BeforeExecute
--- Informix.DB2 Informix
+--  Informix.DB2 Informix
 
 DELETE FROM Person WHERE PersonID > 4
 
 BeforeExecute
--- Informix.DB2 Informix
+--  Informix.DB2 Informix
 
 ALTER TABLE Person MODIFY (PersonID SERIAL(5))
 
 BeforeExecute
--- Informix.DB2 Informix
+--  Informix.DB2 Informix
 
 ALTER TABLE Person ADD CONSTRAINT PRIMARY KEY (PersonID)
 
 BeforeExecute
--- Informix.DB2 Informix
+--  Informix.DB2 Informix
 
 ALTER TABLE Patient ADD CONSTRAINT(FOREIGN KEY (PersonID) REFERENCES Person (PersonID))
 
 BeforeExecute
--- Informix.DB2 Informix
+--  Informix.DB2 Informix
 
 ALTER TABLE Doctor ADD CONSTRAINT(FOREIGN KEY (PersonID) REFERENCES Person (PersonID))
 
 BeforeExecute
--- Informix.DB2 Informix
+--  Informix.DB2 Informix
 DECLARE @Gender Char(1) -- StringFixedLength
 SET     @Gender = 'M'
 DECLARE @Name_FirstName VarChar(13) -- String
@@ -55,12 +55,12 @@ VALUES
 )
 
 BeforeExecute
--- Informix.DB2 Informix
+--  Informix.DB2 Informix
 
 SELECT DBINFO('sqlca.sqlerrd1') FROM systables where tabid = 1
 
 BeforeExecute
--- Informix.DB2 Informix
+--  Informix.DB2 Informix
 
 UPDATE
 	Person t1
@@ -70,7 +70,7 @@ WHERE
 	t1.FirstName LIKE 'UpdateComplex%' ESCAPE '~'
 
 BeforeExecute
--- Informix.DB2 Informix
+--  Informix.DB2 Informix
 DECLARE @id Integer(4) -- Int32
 SET     @id = 5
 

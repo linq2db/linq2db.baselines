@@ -1,10 +1,10 @@
 ﻿BeforeExecute
--- Informix.DB2 Informix (asynchronously)
+--  Informix.DB2 Informix (asynchronously)
 
 DROP TABLE IF EXISTS TempTable
 
 BeforeExecute
--- Informix.DB2 Informix (asynchronously)
+--  Informix.DB2 Informix (asynchronously)
 
 CREATE TABLE IF NOT EXISTS TempTable
 (
@@ -15,7 +15,7 @@ BeforeExecute
 INSERT BULK TempTable
 
 BeforeExecute
--- Informix.DB2 Informix (asynchronously)
+--  Informix.DB2 Informix (asynchronously)
 
 SELECT
 	t.Name
@@ -24,7 +24,7 @@ FROM
 		INNER JOIN TempTable t ON p.FirstName = t.Name
 
 BeforeExecute
--- Informix.DB2 Informix (asynchronously)
+--  Informix.DB2 Informix (asynchronously)
 
 DROP TABLE IF EXISTS TempTable
 

@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Informix.DB2 Informix
+--  Informix.DB2 Informix
 
 CREATE TEMP TABLE TableWithPrimaryKey
 (
@@ -9,7 +9,7 @@ CREATE TEMP TABLE TableWithPrimaryKey
 )
 
 BeforeExecute
--- Informix.DB2 Informix
+--  Informix.DB2 Informix
 
 DROP TABLE IF EXISTS TableWithPrimaryKey
 

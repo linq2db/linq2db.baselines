@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Informix.DB2 Informix
+--  Informix.DB2 Informix
 
 SELECT FIRST 1
 	user
@@ -7,7 +7,7 @@ FROM
 	LinqDataTypes t1
 
 BeforeExecute
--- Informix.DB2 Informix
+--  Informix.DB2 Informix
 
 
 				SELECT
@@ -22,7 +22,7 @@ BeforeExecute
 					tabid >= 100
 
 BeforeExecute
--- Informix.DB2 Informix
+--  Informix.DB2 Informix
 
 
 						SELECT
@@ -49,7 +49,7 @@ BeforeExecute
 						WHERE t.tabid >= 100 AND x.idxtype = 'U'
 
 BeforeExecute
--- Informix.DB2 Informix
+--  Informix.DB2 Informix
 
 
 					SELECT
@@ -63,7 +63,7 @@ BeforeExecute
 					WHERE t.tabid >= 100
 
 BeforeExecute
--- Informix.DB2 Informix
+--  Informix.DB2 Informix
 
 
 						SELECT

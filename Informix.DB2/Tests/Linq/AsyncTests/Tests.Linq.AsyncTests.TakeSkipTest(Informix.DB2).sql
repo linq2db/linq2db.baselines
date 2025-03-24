@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Informix.DB2 Informix
+--  Informix.DB2 Informix
 DECLARE @skip Integer(4) -- Int32
 SET     @skip = 1
 DECLARE @take Integer(4) -- Int32
@@ -14,7 +14,7 @@ ORDER BY
 	t1.ParentID
 
 BeforeExecute
--- Informix.DB2 Informix (asynchronously)
+--  Informix.DB2 Informix (asynchronously)
 DECLARE @skip Integer(4) -- Int32
 SET     @skip = 1
 DECLARE @take Integer(4) -- Int32

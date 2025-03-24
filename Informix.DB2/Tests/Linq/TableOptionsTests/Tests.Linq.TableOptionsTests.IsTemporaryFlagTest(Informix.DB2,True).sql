@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Informix.DB2 Informix
+--  Informix.DB2 Informix
 
 CREATE TEMP TABLE IsTemporaryTable
 (
@@ -8,7 +8,7 @@ CREATE TEMP TABLE IsTemporaryTable
 )
 
 BeforeExecute
--- Informix.DB2 Informix
+--  Informix.DB2 Informix
 
 SELECT
 	t1.Id,
@@ -17,7 +17,7 @@ FROM
 	IsTemporaryTable t1
 
 BeforeExecute
--- Informix.DB2 Informix
+--  Informix.DB2 Informix
 
 DROP TABLE IF EXISTS IsTemporaryTable
 

@@ -1,35 +1,35 @@
 ﻿BeforeExecute
--- Informix.DB2 Informix
+--  Informix.DB2 Informix
 
 INSERT INTO Person (PersonID, FirstName, LastName, MiddleName, Gender) VALUES (2147483647, '1', '2', '3', 'M')
 
 BeforeExecute
--- Informix.DB2 Informix
+--  Informix.DB2 Informix
 
 DELETE FROM Person WHERE PersonID > 4
 
 BeforeExecute
--- Informix.DB2 Informix
+--  Informix.DB2 Informix
 
 ALTER TABLE Person MODIFY (PersonID SERIAL(5))
 
 BeforeExecute
--- Informix.DB2 Informix
+--  Informix.DB2 Informix
 
 ALTER TABLE Person ADD CONSTRAINT PRIMARY KEY (PersonID)
 
 BeforeExecute
--- Informix.DB2 Informix
+--  Informix.DB2 Informix
 
 ALTER TABLE Patient ADD CONSTRAINT(FOREIGN KEY (PersonID) REFERENCES Person (PersonID))
 
 BeforeExecute
--- Informix.DB2 Informix
+--  Informix.DB2 Informix
 
 ALTER TABLE Doctor ADD CONSTRAINT(FOREIGN KEY (PersonID) REFERENCES Person (PersonID))
 
 BeforeExecute
--- Informix.DB2 Informix
+--  Informix.DB2 Informix
 DECLARE @FirstName VarChar(4) -- String
 SET     @FirstName = 'John'
 DECLARE @LastName VarChar(7) -- String
@@ -55,12 +55,12 @@ VALUES
 )
 
 BeforeExecute
--- Informix.DB2 Informix
+--  Informix.DB2 Informix
 
 SELECT DBINFO('sqlca.sqlerrd1') FROM systables where tabid = 1
 
 BeforeExecute
--- Informix.DB2 Informix (asynchronously)
+--  Informix.DB2 Informix (asynchronously)
 DECLARE @Diagnosis VarChar(4) -- String
 SET     @Diagnosis = 'abc0'
 DECLARE @PersonID Integer(4) -- Int32
@@ -74,7 +74,7 @@ WHERE
 	t1.PersonID = @PersonID
 
 BeforeExecute
--- Informix.DB2 Informix (asynchronously)
+--  Informix.DB2 Informix (asynchronously)
 DECLARE @PersonID Integer(4) -- Int32
 SET     @PersonID = 5
 DECLARE @Diagnosis VarChar(4) -- String
@@ -92,7 +92,7 @@ VALUES
 )
 
 BeforeExecute
--- Informix.DB2 Informix (asynchronously)
+--  Informix.DB2 Informix (asynchronously)
 DECLARE @Diagnosis VarChar(4) -- String
 SET     @Diagnosis = 'abc1'
 DECLARE @PersonID Integer(4) -- Int32
@@ -106,7 +106,7 @@ WHERE
 	t1.PersonID = @PersonID
 
 BeforeExecute
--- Informix.DB2 Informix (asynchronously)
+--  Informix.DB2 Informix (asynchronously)
 DECLARE @Diagnosis VarChar(4) -- String
 SET     @Diagnosis = 'abc2'
 DECLARE @PersonID Integer(4) -- Int32
@@ -120,7 +120,7 @@ WHERE
 	t1.PersonID = @PersonID
 
 BeforeExecute
--- Informix.DB2 Informix (asynchronously)
+--  Informix.DB2 Informix (asynchronously)
 DECLARE @id Integer(4) -- Int32
 SET     @id = 5
 

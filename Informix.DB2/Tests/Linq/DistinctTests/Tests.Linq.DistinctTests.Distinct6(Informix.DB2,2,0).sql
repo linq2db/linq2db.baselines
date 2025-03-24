@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Informix.DB2 Informix
+--  Informix.DB2 Informix
 
 SELECT DISTINCT
 	Nvl(p.Value1, p.ParentID),
@@ -8,7 +8,7 @@ FROM
 	Parent p
 
 BeforeExecute
--- Informix.DB2 Informix
+--  Informix.DB2 Informix
 
 SELECT
 	t1.ParentID,

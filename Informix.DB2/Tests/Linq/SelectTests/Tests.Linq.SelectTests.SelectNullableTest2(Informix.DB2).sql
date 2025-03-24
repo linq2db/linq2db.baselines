@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Informix.DB2 Informix
+--  Informix.DB2 Informix
 DECLARE @ID Integer(4) -- Int32
 SET     @ID = 1000
 DECLARE @MoneyValue Decimal(16)
@@ -49,7 +49,7 @@ VALUES
 )
 
 BeforeExecute
--- Informix.DB2 Informix
+--  Informix.DB2 Informix
 
 SELECT FIRST 1
 	t1.ID,
@@ -66,7 +66,7 @@ WHERE
 	t1.ID = 1000
 
 BeforeExecute
--- Informix.DB2 Informix
+--  Informix.DB2 Informix
 
 DELETE FROM
 	LinqDataTypes

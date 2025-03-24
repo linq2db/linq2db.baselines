@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Informix.DB2 Informix
+--  Informix.DB2 Informix
 
 SELECT
 	m_1.Id,
@@ -29,7 +29,7 @@ FROM
 		INNER JOIN Document a_Documents ON a_Attachment.Id = a_Documents.AttachmentId
 
 BeforeExecute
--- Informix.DB2 Informix
+--  Informix.DB2 Informix
 
 SELECT
 	t1.cond,

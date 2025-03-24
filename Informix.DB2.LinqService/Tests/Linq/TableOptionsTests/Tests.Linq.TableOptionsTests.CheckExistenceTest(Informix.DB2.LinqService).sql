@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Informix.DB2 Informix
+--  Informix.DB2 Informix
 
 CREATE TABLE IF NOT EXISTS DisposableTable
 (
@@ -7,7 +7,7 @@ CREATE TABLE IF NOT EXISTS DisposableTable
 )
 
 BeforeExecute
--- Informix.DB2 Informix
+--  Informix.DB2 Informix
 
 DROP TABLE IF EXISTS DisposableTable
 

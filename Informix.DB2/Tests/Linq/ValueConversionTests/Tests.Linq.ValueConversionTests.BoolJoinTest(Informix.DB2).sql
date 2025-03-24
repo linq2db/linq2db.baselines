@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Informix.DB2 Informix
+--  Informix.DB2 Informix
 DECLARE @true_value VarChar(1) -- String
 SET     @true_value = 'Y'
 

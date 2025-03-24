@@ -1,10 +1,10 @@
 ﻿BeforeExecute
--- Informix.DB2 Informix
+--  Informix.DB2 Informix
 
 DROP TABLE AllTypeCreateTest
 
 BeforeExecute
--- Informix.DB2 Informix
+--  Informix.DB2 Informix
 
 CREATE TABLE AllTypeCreateTest
 (
@@ -34,7 +34,7 @@ CREATE TABLE AllTypeCreateTest
 )
 
 BeforeExecute
--- Informix.DB2 Informix
+--  Informix.DB2 Informix
 
 SELECT
 	t1.ID,
@@ -62,7 +62,7 @@ FROM
 	AllTypeCreateTest t1
 
 BeforeExecute
--- Informix.DB2 Informix
+--  Informix.DB2 Informix
 
 DROP TABLE AllTypeCreateTest
 

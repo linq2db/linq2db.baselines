@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Informix.DB2 Informix (asynchronously)
+--  Informix.DB2 Informix (asynchronously)
 DECLARE @search VarChar(4) -- String
 SET     @search = 'test'
 
@@ -27,7 +27,7 @@ WHERE
 	row1_2.Field1 LIKE 'test%' ESCAPE '~'
 
 BeforeExecute
--- Informix.DB2 Informix (asynchronously)
+--  Informix.DB2 Informix (asynchronously)
 DECLARE @search VarChar(4) -- String
 SET     @search = 'test'
 
@@ -55,17 +55,17 @@ WHERE
 	row1_2.Field1 LIKE 'test%' ESCAPE '~'
 
 BeforeExecute
--- Informix.DB2 Informix (asynchronously)
+--  Informix.DB2 Informix (asynchronously)
 
 DROP TABLE IF EXISTS table3
 
 BeforeExecute
--- Informix.DB2 Informix (asynchronously)
+--  Informix.DB2 Informix (asynchronously)
 
 DROP TABLE IF EXISTS table2
 
 BeforeExecute
--- Informix.DB2 Informix (asynchronously)
+--  Informix.DB2 Informix (asynchronously)
 
 DROP TABLE IF EXISTS table1
 
