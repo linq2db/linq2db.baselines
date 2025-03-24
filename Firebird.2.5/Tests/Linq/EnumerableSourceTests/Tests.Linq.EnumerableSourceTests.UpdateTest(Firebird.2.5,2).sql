@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Firebird.2.5 Firebird
+--  Firebird.2.5 Firebird
 
 UPDATE
 	"TableToInsert"
@@ -31,7 +31,7 @@ WHERE
 	)
 
 BeforeExecute
--- Firebird.2.5 Firebird
+--  Firebird.2.5 Firebird
 
 SELECT
 	"t1"."Id",

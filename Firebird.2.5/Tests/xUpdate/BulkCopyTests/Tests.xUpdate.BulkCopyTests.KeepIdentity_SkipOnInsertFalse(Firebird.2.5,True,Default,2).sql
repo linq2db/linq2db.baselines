@@ -1,10 +1,10 @@
 ﻿BeforeExecute
--- Firebird.2.5 Firebird
+--  Firebird.2.5 Firebird
 
 SET GENERATOR "AllTypesID" TO 2
 
 BeforeExecute
--- Firebird.2.5 Firebird
+--  Firebird.2.5 Firebird
 DECLARE @Value Integer -- Int32
 SET     @Value = 0
 DECLARE @IDENTITY_PARAMETER Decimal
@@ -22,7 +22,7 @@ RETURNING
 	ID
 
 BeforeExecute
--- Firebird.2.5 Firebird
+--  Firebird.2.5 Firebird
 DECLARE @lastId Integer -- Int32
 SET     @lastId = 3
 

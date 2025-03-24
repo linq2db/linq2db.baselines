@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Firebird.2.5 Firebird
+--  Firebird.2.5 Firebird
 
 SELECT
 	"m_1"."Id",
@@ -16,7 +16,7 @@ FROM
 		INNER JOIN "EntityD" "d" ON "m_1"."Id" = "d".FK
 
 BeforeExecute
--- Firebird.2.5 Firebird
+--  Firebird.2.5 Firebird
 
 SELECT
 	"e"."Id",

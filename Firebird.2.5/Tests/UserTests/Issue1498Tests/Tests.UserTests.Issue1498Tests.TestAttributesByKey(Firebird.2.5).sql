@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Firebird.2.5 Firebird
+--  Firebird.2.5 Firebird
 DECLARE @Id Integer -- Int32
 SET     @Id = 6
 DECLARE @Title VarChar(5) -- String
@@ -23,7 +23,7 @@ VALUES
 BeforeExecute
 BeginTransaction(RepeatableRead)
 BeforeExecute
--- Firebird.2.5 Firebird
+--  Firebird.2.5 Firebird
 
 SELECT
 	"m_1"."Id",
@@ -40,7 +40,7 @@ FROM
 		INNER JOIN "Message" "d" ON "m_1"."Id" = "d"."TopicId"
 
 BeforeExecute
--- Firebird.2.5 Firebird
+--  Firebird.2.5 Firebird
 
 SELECT FIRST 1
 	"x"."Id",

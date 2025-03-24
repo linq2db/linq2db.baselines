@@ -1,10 +1,10 @@
 ﻿BeforeExecute
--- Firebird.2.5 Firebird
+--  Firebird.2.5 Firebird
 
 SET GENERATOR "PersonID" TO 4
 
 BeforeExecute
--- Firebird.2.5 Firebird
+--  Firebird.2.5 Firebird
 DECLARE @FirstName VarChar(18) -- String
 SET     @FirstName = 'InsertColumnFilter'
 DECLARE @LastName VarChar(8) -- String
@@ -30,7 +30,7 @@ VALUES
 )
 
 BeforeExecute
--- Firebird.2.5 Firebird
+--  Firebird.2.5 Firebird
 DECLARE @FirstName VarChar(18) -- String
 SET     @FirstName = 'InsertColumnFilter'
 
@@ -46,7 +46,7 @@ WHERE
 	"x"."FirstName" = @FirstName
 
 BeforeExecute
--- Firebird.2.5 Firebird
+--  Firebird.2.5 Firebird
 DECLARE @FirstName VarChar(18) -- String
 SET     @FirstName = 'InsertColumnFilter'
 DECLARE @LastName VarChar(8) -- String
@@ -69,7 +69,7 @@ WHERE
 	"t1"."PersonID" = @ID
 
 BeforeExecute
--- Firebird.2.5 Firebird
+--  Firebird.2.5 Firebird
 DECLARE @FirstName VarChar(18) -- String
 SET     @FirstName = 'InsertColumnFilter'
 
@@ -85,7 +85,7 @@ WHERE
 	"x"."FirstName" = @FirstName
 
 BeforeExecute
--- Firebird.2.5 Firebird
+--  Firebird.2.5 Firebird
 DECLARE @newName VarChar(18) -- String
 SET     @newName = 'InsertColumnFilter'
 

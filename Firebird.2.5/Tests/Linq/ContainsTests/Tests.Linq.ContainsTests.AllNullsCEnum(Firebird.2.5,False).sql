@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Firebird.2.5 Firebird
+--  Firebird.2.5 Firebird
 DECLARE @In VarChar -- String
 SET     @In = NULL
 
@@ -11,7 +11,7 @@ WHERE
 	"s"."CEnum" IN (@In, @In)
 
 BeforeExecute
--- Firebird.2.5 Firebird
+--  Firebird.2.5 Firebird
 DECLARE @NotIn VarChar -- String
 SET     @NotIn = NULL
 

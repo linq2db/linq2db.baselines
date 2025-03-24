@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Firebird.2.5 Firebird
+--  Firebird.2.5 Firebird
 
 CREATE GLOBAL TEMPORARY TABLE "IsGlobalTemporaryTable"
 (
@@ -9,7 +9,7 @@ CREATE GLOBAL TEMPORARY TABLE "IsGlobalTemporaryTable"
 ON COMMIT PRESERVE ROWS
 
 BeforeExecute
--- Firebird.2.5 Firebird
+--  Firebird.2.5 Firebird
 
 SELECT
 	"t1"."Id",
@@ -18,7 +18,7 @@ FROM
 	"IsGlobalTemporaryTable" "t1"
 
 BeforeExecute
--- Firebird.2.5 Firebird
+--  Firebird.2.5 Firebird
 
 EXECUTE BLOCK AS BEGIN
 	IF (EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'IsGlobalTemporaryTable')) THEN

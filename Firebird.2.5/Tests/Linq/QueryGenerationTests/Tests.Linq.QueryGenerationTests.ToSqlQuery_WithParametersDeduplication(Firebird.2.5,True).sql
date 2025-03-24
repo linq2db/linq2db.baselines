@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Firebird.2.5 Firebird
+--  Firebird.2.5 Firebird
 
 SELECT
 	"p"."FirstName",
@@ -13,7 +13,7 @@ WHERE
 	"p"."FirstName" = 'John' OR "p"."LastName" = 'John'
 
 BeforeExecute
--- Firebird.2.5 Firebird
+--  Firebird.2.5 Firebird
 DECLARE @firstName VarChar(4) -- String
 SET     @firstName = 'John'
 

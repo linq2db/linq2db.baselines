@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Firebird.2.5 Firebird
+--  Firebird.2.5 Firebird
 
 SELECT
 	"m_1"."ParentID",
@@ -21,7 +21,7 @@ FROM
 		) "d_1" ON "m_1"."ParentID" = "d_1"."Detail"
 
 BeforeExecute
--- Firebird.2.5 Firebird
+--  Firebird.2.5 Firebird
 
 SELECT
 	"p"."ParentID"

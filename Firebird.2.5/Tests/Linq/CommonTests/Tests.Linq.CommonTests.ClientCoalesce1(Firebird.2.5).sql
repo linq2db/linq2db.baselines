@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Firebird.2.5 Firebird
+--  Firebird.2.5 Firebird
 DECLARE @Value1 Integer -- Int32
 SET     @Value1 = 100
 
@@ -11,7 +11,7 @@ WHERE
 	Coalesce("x"."Value1", @Value1) > 10
 
 BeforeExecute
--- Firebird.2.5 Firebird
+--  Firebird.2.5 Firebird
 
 SELECT
 	"p"."Value1"

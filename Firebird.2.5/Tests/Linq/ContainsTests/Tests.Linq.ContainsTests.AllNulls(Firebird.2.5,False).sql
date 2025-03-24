@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Firebird.2.5 Firebird
+--  Firebird.2.5 Firebird
 
 SELECT
 	COUNT(*)
@@ -9,7 +9,7 @@ WHERE
 	"s"."Int" IN (NULL, NULL)
 
 BeforeExecute
--- Firebird.2.5 Firebird
+--  Firebird.2.5 Firebird
 
 SELECT
 	COUNT(*)

@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Firebird.2.5 Firebird
+--  Firebird.2.5 Firebird
 
 INSERT INTO "TPHTable"
 (
@@ -15,7 +15,7 @@ SELECT 2,2,NULL,'Str2',NULL,NULL FROM rdb$database UNION ALL
 SELECT 3,3,NULL,NULL,'Str3','Y' FROM rdb$database
 
 BeforeExecute
--- Firebird.2.5 Firebird
+--  Firebird.2.5 Firebird
 
 SELECT
 	"t1"."Discriminator",
@@ -30,7 +30,7 @@ ORDER BY
 	"t1"."Id"
 
 BeforeExecute
--- Firebird.2.5 Firebird
+--  Firebird.2.5 Firebird
 
 SELECT FIRST 2
 	"x"."Discriminator",
@@ -45,7 +45,7 @@ WHERE
 	"x"."Discriminator" = 1
 
 BeforeExecute
--- Firebird.2.5 Firebird
+--  Firebird.2.5 Firebird
 
 SELECT FIRST 2
 	"x"."Discriminator",
@@ -60,7 +60,7 @@ WHERE
 	"x"."Discriminator" = 2
 
 BeforeExecute
--- Firebird.2.5 Firebird
+--  Firebird.2.5 Firebird
 
 SELECT FIRST 2
 	"x"."Discriminator",
@@ -75,7 +75,7 @@ WHERE
 	"x"."Discriminator" = 3
 
 BeforeExecute
--- Firebird.2.5 Firebird
+--  Firebird.2.5 Firebird
 
 SELECT FIRST 2
 	"x"."Discriminator",
@@ -90,7 +90,7 @@ WHERE
 	"x"."Value1" = 'Str1'
 
 BeforeExecute
--- Firebird.2.5 Firebird
+--  Firebird.2.5 Firebird
 
 SELECT FIRST 2
 	"x"."Discriminator",
@@ -105,7 +105,7 @@ WHERE
 	"x"."Value2" = 'Str2'
 
 BeforeExecute
--- Firebird.2.5 Firebird
+--  Firebird.2.5 Firebird
 
 SELECT FIRST 2
 	"x"."Discriminator",

@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Firebird.2.5 Firebird
+--  Firebird.2.5 Firebird
 
 SELECT
 	"t"."ParentID",
@@ -8,7 +8,7 @@ FROM
 	"Parent" "t"
 
 BeforeExecute
--- Firebird.2.5 Firebird
+--  Firebird.2.5 Firebird
 DECLARE @param Integer -- Int32
 SET     @param = 1
 

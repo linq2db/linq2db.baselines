@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 BeginTransaction(RepeatableRead)
 BeforeExecute
--- Firebird.2.5 Firebird
+--  Firebird.2.5 Firebird
 DECLARE @n Integer -- Int32
 SET     @n = 1
 
@@ -23,7 +23,7 @@ FROM
 BeforeExecute
 DisposeTransaction
 BeforeExecute
--- Firebird.2.5 Firebird
+--  Firebird.2.5 Firebird
 
 SELECT
 	"p"."ParentID",

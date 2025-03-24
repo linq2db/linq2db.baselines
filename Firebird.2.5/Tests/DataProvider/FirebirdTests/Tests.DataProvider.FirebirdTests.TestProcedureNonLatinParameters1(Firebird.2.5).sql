@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Firebird.2.5 Firebird
+--  Firebird.2.5 Firebird
 DECLARE @FIRSTNAME VarChar(50) -- String
 SET     @FIRSTNAME = _utf8 x'D098D0BCD18F'
 DECLARE @LASTNAME VarChar(50) -- String
@@ -14,7 +14,7 @@ SET     @PERSONID = NULL
 "Person_Insert"
 
 BeforeExecute
--- Firebird.2.5 Firebird
+--  Firebird.2.5 Firebird
 DECLARE @id Integer -- Int32
 SET     @id = 5
 
@@ -30,7 +30,7 @@ WHERE
 	"p"."PersonID" = @id
 
 BeforeExecute
--- Firebird.2.5 Firebird
+--  Firebird.2.5 Firebird
 DECLARE @id Integer -- Int32
 SET     @id = 5
 

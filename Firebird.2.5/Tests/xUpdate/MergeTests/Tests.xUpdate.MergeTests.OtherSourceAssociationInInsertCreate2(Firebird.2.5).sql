@@ -1,12 +1,12 @@
 ﻿BeforeExecute
--- Firebird.2.5 Firebird
+--  Firebird.2.5 Firebird
 
 SET GENERATOR "PersonID" TO 4
 
 BeforeExecute
 BeginTransaction
 BeforeExecute
--- Firebird.2.5 Firebird
+--  Firebird.2.5 Firebird
 
 MERGE INTO "Person" "Target"
 USING (
@@ -38,7 +38,7 @@ VALUES
 )
 
 BeforeExecute
--- Firebird.2.5 Firebird
+--  Firebird.2.5 Firebird
 
 SELECT
 	"t1"."FirstName",

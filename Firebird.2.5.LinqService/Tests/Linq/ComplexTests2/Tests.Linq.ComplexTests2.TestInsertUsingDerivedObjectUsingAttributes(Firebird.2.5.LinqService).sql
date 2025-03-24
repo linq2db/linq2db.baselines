@@ -1,10 +1,10 @@
 ﻿BeforeExecute
--- Firebird.2.5 Firebird
+--  Firebird.2.5 Firebird
 
 SET GENERATOR "PersonID" TO 4
 
 BeforeExecute
--- Firebird.2.5 Firebird
+--  Firebird.2.5 Firebird
 DECLARE @FirstName VarChar(21) -- String
 SET     @FirstName = 'test_inherited_insert'
 DECLARE @LastName VarChar(4) -- String
@@ -34,7 +34,7 @@ RETURNING
 	"PersonID"
 
 BeforeExecute
--- Firebird.2.5 Firebird
+--  Firebird.2.5 Firebird
 
 SELECT FIRST 1
 	"t1"."FirstName",
@@ -48,7 +48,7 @@ WHERE
 	"t1"."FirstName" = 'test_inherited_insert'
 
 BeforeExecute
--- Firebird.2.5 Firebird
+--  Firebird.2.5 Firebird
 DECLARE @FirstName VarChar(21) -- String
 SET     @FirstName = 'test_inherited_insert'
 DECLARE @LastName VarChar(4) -- String
@@ -71,7 +71,7 @@ WHERE
 	"t1"."PersonID" = @ID
 
 BeforeExecute
--- Firebird.2.5 Firebird
+--  Firebird.2.5 Firebird
 
 SELECT FIRST 1
 	"t1"."FirstName",
@@ -85,7 +85,7 @@ WHERE
 	"t1"."FirstName" = 'test_inherited_insert'
 
 BeforeExecute
--- Firebird.2.5 Firebird
+--  Firebird.2.5 Firebird
 DECLARE @ID Integer -- Int32
 SET     @ID = 5
 

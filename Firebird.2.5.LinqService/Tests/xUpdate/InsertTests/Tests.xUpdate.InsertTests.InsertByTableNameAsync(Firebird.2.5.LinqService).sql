@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Firebird.2.5 Firebird (asynchronously)
+--  Firebird.2.5 Firebird (asynchronously)
 DECLARE @FirstName VarChar(6) -- String
 SET     @FirstName = 'Steven'
 DECLARE @LastName VarChar(4) -- String
@@ -29,7 +29,7 @@ RETURNING
 	"PersonID"
 
 BeforeExecute
--- Firebird.2.5 Firebird (asynchronously)
+--  Firebird.2.5 Firebird (asynchronously)
 DECLARE @FirstName VarChar(6) -- String
 SET     @FirstName = 'Steven'
 DECLARE @LastName VarChar(4) -- String

@@ -1,12 +1,12 @@
 ﻿BeforeExecute
--- Firebird.2.5 Firebird
+--  Firebird.2.5 Firebird
 
 SELECT
 	10
 FROM rdb$database
 
 BeforeExecute
--- Firebird.2.5 Firebird
+--  Firebird.2.5 Firebird
 DECLARE @blob Binary(3)
 SET     @blob = X'010203'
 

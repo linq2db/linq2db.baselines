@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Firebird.2.5 Firebird
+--  Firebird.2.5 Firebird
 
 SELECT
 	"c_1"."value",
@@ -14,7 +14,7 @@ ORDER BY
 	"c_1"."id"
 
 BeforeExecute
--- Firebird.2.5 Firebird
+--  Firebird.2.5 Firebird
 DECLARE @startId Integer -- Int32
 SET     @startId = 5
 DECLARE @endId Integer -- Int32

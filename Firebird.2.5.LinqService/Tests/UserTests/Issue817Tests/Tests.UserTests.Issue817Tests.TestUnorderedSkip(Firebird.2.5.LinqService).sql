@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Firebird.2.5 Firebird
+--  Firebird.2.5 Firebird
 
 SELECT
 	COUNT(*)
@@ -7,7 +7,7 @@ FROM
 	"Person" "t1"
 
 BeforeExecute
--- Firebird.2.5 Firebird
+--  Firebird.2.5 Firebird
 DECLARE @skip Integer -- Int32
 SET     @skip = 1
 

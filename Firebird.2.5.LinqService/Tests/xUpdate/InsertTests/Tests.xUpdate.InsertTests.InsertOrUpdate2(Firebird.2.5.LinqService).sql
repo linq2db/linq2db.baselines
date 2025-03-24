@@ -1,10 +1,10 @@
 ﻿BeforeExecute
--- Firebird.2.5 Firebird
+--  Firebird.2.5 Firebird
 
 SET GENERATOR "PersonID" TO 4
 
 BeforeExecute
--- Firebird.2.5 Firebird
+--  Firebird.2.5 Firebird
 DECLARE @FirstName VarChar(4) -- String
 SET     @FirstName = 'test'
 DECLARE @LastName VarChar(7) -- String
@@ -34,7 +34,7 @@ RETURNING
 	"PersonID"
 
 BeforeExecute
--- Firebird.2.5 Firebird
+--  Firebird.2.5 Firebird
 DECLARE @id Integer -- Int32
 SET     @id = 5
 
@@ -56,7 +56,7 @@ WHEN NOT MATCHED THEN
 	)
 
 BeforeExecute
--- Firebird.2.5 Firebird
+--  Firebird.2.5 Firebird
 DECLARE @id Integer -- Int32
 SET     @id = 5
 
@@ -69,7 +69,7 @@ WHERE
 	"p"."PersonID" = @id
 
 BeforeExecute
--- Firebird.2.5 Firebird
+--  Firebird.2.5 Firebird
 DECLARE @id Integer -- Int32
 SET     @id = 5
 
@@ -91,7 +91,7 @@ WHEN NOT MATCHED THEN
 	)
 
 BeforeExecute
--- Firebird.2.5 Firebird
+--  Firebird.2.5 Firebird
 DECLARE @id Integer -- Int32
 SET     @id = 5
 

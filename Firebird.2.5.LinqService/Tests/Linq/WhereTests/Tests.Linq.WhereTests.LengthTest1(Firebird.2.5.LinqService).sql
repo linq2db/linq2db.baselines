@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Firebird.2.5 Firebird
+--  Firebird.2.5 Firebird
 
 SELECT
 	"nm"."MiddleName"
@@ -15,7 +15,7 @@ WHERE
 	"nm"."Value_1" <> 0 OR "nm"."Value_1" IS NULL
 
 BeforeExecute
--- Firebird.2.5 Firebird
+--  Firebird.2.5 Firebird
 
 SELECT
 	"t1"."FirstName",

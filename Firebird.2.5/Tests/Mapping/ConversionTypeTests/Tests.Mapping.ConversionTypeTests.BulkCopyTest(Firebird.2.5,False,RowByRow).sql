@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Firebird.2.5 Firebird
+--  Firebird.2.5 Firebird
 DECLARE @ID Integer -- Int32
 SET     @ID = 1
 DECLARE @Data VarChar(9) -- String
@@ -17,7 +17,7 @@ VALUES
 )
 
 BeforeExecute
--- Firebird.2.5 Firebird
+--  Firebird.2.5 Firebird
 
 SELECT
 	"r".ID,
@@ -28,7 +28,7 @@ ORDER BY
 	"r".ID
 
 BeforeExecute
--- Firebird.2.5 Firebird
+--  Firebird.2.5 Firebird
 
 SELECT
 	"r".ID,

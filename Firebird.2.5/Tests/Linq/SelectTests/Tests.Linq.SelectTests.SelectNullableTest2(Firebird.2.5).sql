@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Firebird.2.5 Firebird
+--  Firebird.2.5 Firebird
 DECLARE @ID Integer -- Int32
 SET     @ID = 1000
 DECLARE @MoneyValue Decimal(1, 0)
@@ -49,7 +49,7 @@ VALUES
 )
 
 BeforeExecute
--- Firebird.2.5 Firebird
+--  Firebird.2.5 Firebird
 
 SELECT FIRST 1
 	"t1".ID,
@@ -66,7 +66,7 @@ WHERE
 	"t1".ID = 1000
 
 BeforeExecute
--- Firebird.2.5 Firebird
+--  Firebird.2.5 Firebird
 
 DELETE FROM
 	"LinqDataTypes" "t1"

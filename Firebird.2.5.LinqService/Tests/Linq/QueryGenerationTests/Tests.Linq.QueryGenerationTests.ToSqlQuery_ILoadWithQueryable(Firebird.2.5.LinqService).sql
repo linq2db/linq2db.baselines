@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Firebird.2.5 Firebird
+--  Firebird.2.5 Firebird
 
 SELECT
 	"p"."ParentID",
@@ -10,7 +10,7 @@ WHERE
 	"p"."ParentID" = 1
 
 BeforeExecute
--- Firebird.2.5 Firebird
+--  Firebird.2.5 Firebird
 
 SELECT
 	"m_1"."ParentID",
@@ -33,7 +33,7 @@ FROM
 		INNER JOIN "Child" "d" ON "m_1"."ParentID" = "d"."ParentID"
 
 BeforeExecute
--- Firebird.2.5 Firebird
+--  Firebird.2.5 Firebird
 
 SELECT FIRST 2
 	"p"."ParentID",

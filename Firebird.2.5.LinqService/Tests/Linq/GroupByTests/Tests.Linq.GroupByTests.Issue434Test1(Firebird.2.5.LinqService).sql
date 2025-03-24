@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Firebird.2.5 Firebird
+--  Firebird.2.5 Firebird
 DECLARE @input VarChar(6) -- String
 SET     @input = '%test%'
 
@@ -14,7 +14,7 @@ WHERE
 	Lower("m_1"."FirstName") LIKE @input ESCAPE '~'
 
 BeforeExecute
--- Firebird.2.5 Firebird
+--  Firebird.2.5 Firebird
 DECLARE @input VarChar(6) -- String
 SET     @input = '%test%'
 

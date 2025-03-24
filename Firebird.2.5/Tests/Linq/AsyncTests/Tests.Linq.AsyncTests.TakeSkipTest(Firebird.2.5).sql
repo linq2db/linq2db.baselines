@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Firebird.2.5 Firebird
+--  Firebird.2.5 Firebird
 DECLARE @take Integer -- Int32
 SET     @take = 2
 DECLARE @skip Integer -- Int32
@@ -14,7 +14,7 @@ ORDER BY
 	"t1"."ParentID"
 
 BeforeExecute
--- Firebird.2.5 Firebird (asynchronously)
+--  Firebird.2.5 Firebird (asynchronously)
 DECLARE @take Integer -- Int32
 SET     @take = 2
 DECLARE @skip Integer -- Int32

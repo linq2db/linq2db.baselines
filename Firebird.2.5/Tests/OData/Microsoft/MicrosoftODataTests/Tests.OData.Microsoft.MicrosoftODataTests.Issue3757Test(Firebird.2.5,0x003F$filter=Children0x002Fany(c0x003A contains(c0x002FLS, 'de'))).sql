@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 BeginTransaction(RepeatableRead)
 BeforeExecute
--- Firebird.2.5 Firebird
+--  Firebird.2.5 Firebird
 DECLARE @TypedProperty VarChar(4) -- String
 SET     @TypedProperty = '%de%'
 
@@ -34,7 +34,7 @@ FROM
 BeforeExecute
 DisposeTransaction
 BeforeExecute
--- Firebird.2.5 Firebird
+--  Firebird.2.5 Firebird
 DECLARE @TypedProperty VarChar(4) -- String
 SET     @TypedProperty = '%de%'
 

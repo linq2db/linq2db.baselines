@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Firebird.2.5 Firebird
+--  Firebird.2.5 Firebird
 
 SELECT
 	CAST(CAST(Extract(year from "d"."DateTimeValue") AS VarChar(6) CHARACTER SET UNICODE_FSS) || '-02-24 00:00:00' AS TimeStamp)

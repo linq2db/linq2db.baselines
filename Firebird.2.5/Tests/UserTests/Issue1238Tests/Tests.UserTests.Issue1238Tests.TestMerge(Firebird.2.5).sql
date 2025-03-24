@@ -1,13 +1,13 @@
 ﻿BeforeExecute
 BeginTransaction
 BeforeExecute
--- Firebird.2.5 Firebird
+--  Firebird.2.5 Firebird
 
 DELETE FROM
 	"InheritanceParent" "t1"
 
 BeforeExecute
--- Firebird.2.5 Firebird
+--  Firebird.2.5 Firebird
 
 MERGE INTO "InheritanceParent" "Target"
 USING (
@@ -40,7 +40,7 @@ VALUES
 )
 
 BeforeExecute
--- Firebird.2.5 Firebird
+--  Firebird.2.5 Firebird
 
 SELECT
 	COUNT(*)
@@ -48,7 +48,7 @@ FROM
 	"InheritanceParent" "t1"
 
 BeforeExecute
--- Firebird.2.5 Firebird
+--  Firebird.2.5 Firebird
 
 MERGE INTO "InheritanceParent" "Target"
 USING (
@@ -81,7 +81,7 @@ VALUES
 )
 
 BeforeExecute
--- Firebird.2.5 Firebird
+--  Firebird.2.5 Firebird
 
 SELECT
 	COUNT(*)

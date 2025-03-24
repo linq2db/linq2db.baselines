@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Firebird.2.5 Firebird
+--  Firebird.2.5 Firebird
 
 SELECT
 	"nm"."MiddleName"
@@ -9,7 +9,7 @@ WHERE
 	NOT ("nm"."MiddleName" IS NULL OR Char_Length("nm"."MiddleName") = 0)
 
 BeforeExecute
--- Firebird.2.5 Firebird
+--  Firebird.2.5 Firebird
 
 SELECT
 	"t1"."FirstName",

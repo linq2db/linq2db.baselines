@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Firebird.2.5 Firebird
+--  Firebird.2.5 Firebird
 
 INSERT INTO "InsertIssueTest"
 (
@@ -21,7 +21,7 @@ FROM
 	) "t2"
 
 BeforeExecute
--- Firebird.2.5 Firebird
+--  Firebird.2.5 Firebird
 DECLARE @cond SmallInt -- Int16
 SET     @cond = 1234
 
@@ -45,7 +45,7 @@ FROM
 	) "t2"
 
 BeforeExecute
--- Firebird.2.5 Firebird
+--  Firebird.2.5 Firebird
 
 SELECT
 	"t1".ID,

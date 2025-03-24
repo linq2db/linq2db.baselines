@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Firebird.2.5 Firebird
+--  Firebird.2.5 Firebird
 DECLARE @ncCodeBo VarChar(30) -- String
 SET     @ncCodeBo = 'NCCodeBO:8110,SETUP_OSCILLOSCO'
 
