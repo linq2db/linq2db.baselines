@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 BeginTransaction(RepeatableRead)
 BeforeExecute
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
+--  PostgreSQL.16 PostgreSQL.15 PostgreSQL
 
 SELECT
 	m_1."PersonID",
@@ -16,7 +16,7 @@ FROM
 BeforeExecute
 DisposeTransaction
 BeforeExecute
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
+--  PostgreSQL.16 PostgreSQL.15 PostgreSQL
 
 SELECT
 	t1."PersonID"
@@ -28,7 +28,7 @@ GROUP BY
 BeforeExecute
 BeginTransaction(RepeatableRead)
 BeforeExecute
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
+--  PostgreSQL.16 PostgreSQL.15 PostgreSQL
 
 SELECT
 	m_1."PersonID",
@@ -43,7 +43,7 @@ FROM
 BeforeExecute
 DisposeTransaction
 BeforeExecute
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
+--  PostgreSQL.16 PostgreSQL.15 PostgreSQL
 
 SELECT
 	t1."PersonID"

@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
+--  PostgreSQL.16 PostgreSQL.15 PostgreSQL
 DECLARE @arr -2147483639 -- Object
 SET     @arr = {1,2,3}
 

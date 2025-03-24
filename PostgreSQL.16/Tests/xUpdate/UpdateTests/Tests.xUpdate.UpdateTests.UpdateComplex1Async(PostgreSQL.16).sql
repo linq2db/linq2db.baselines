@@ -1,10 +1,10 @@
 ﻿BeforeExecute
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
+--  PostgreSQL.16 PostgreSQL.15 PostgreSQL
 
 ALTER SEQUENCE "Person_PersonID_seq" RESTART WITH 5
 
 BeforeExecute
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
+--  PostgreSQL.16 PostgreSQL.15 PostgreSQL
 DECLARE @Gender Text(1) -- String
 SET     @Gender = 'M'
 DECLARE @Name_FirstName Text(13) -- String
@@ -32,7 +32,7 @@ RETURNING
 	"PersonID"
 
 BeforeExecute
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL (asynchronously)
+--  PostgreSQL.16 PostgreSQL.15 PostgreSQL (asynchronously)
 DECLARE @id Integer -- Int32
 SET     @id = 5
 
@@ -49,7 +49,7 @@ WHERE
 LIMIT 1
 
 BeforeExecute
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL (asynchronously)
+--  PostgreSQL.16 PostgreSQL.15 PostgreSQL (asynchronously)
 DECLARE @Gender Text(1) -- String
 SET     @Gender = 'M'
 DECLARE @Name_FirstName Text(13) -- String
@@ -72,7 +72,7 @@ WHERE
 	"Person"."PersonID" = :ID
 
 BeforeExecute
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL (asynchronously)
+--  PostgreSQL.16 PostgreSQL.15 PostgreSQL (asynchronously)
 DECLARE @id Integer -- Int32
 SET     @id = 5
 

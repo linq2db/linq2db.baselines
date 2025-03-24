@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
+--  PostgreSQL.16 PostgreSQL.15 PostgreSQL
 DECLARE @In Varchar -- String
 SET     @In = NULL
 
@@ -11,7 +11,7 @@ WHERE
 	s."CEnum" IN (:In, :In)
 
 BeforeExecute
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
+--  PostgreSQL.16 PostgreSQL.15 PostgreSQL
 DECLARE @NotIn Varchar -- String
 SET     @NotIn = NULL
 

@@ -1,10 +1,10 @@
 ﻿BeforeExecute
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
+--  PostgreSQL.16 PostgreSQL.15 PostgreSQL
 
 DROP TABLE IF EXISTS "TempTable"
 
 BeforeExecute
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
+--  PostgreSQL.16 PostgreSQL.15 PostgreSQL
 
 SELECT
 	p."ParentID"
@@ -12,7 +12,7 @@ FROM
 	"Parent" p
 
 BeforeExecute
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL (asynchronously)
+--  PostgreSQL.16 PostgreSQL.15 PostgreSQL (asynchronously)
 
 CREATE TEMPORARY TABLE "TempTable"
 (
@@ -21,7 +21,7 @@ CREATE TEMPORARY TABLE "TempTable"
 ON COMMIT PRESERVE ROWS
 
 BeforeExecute
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
+--  PostgreSQL.16 PostgreSQL.15 PostgreSQL
 
 DROP TABLE "TempTable"
 

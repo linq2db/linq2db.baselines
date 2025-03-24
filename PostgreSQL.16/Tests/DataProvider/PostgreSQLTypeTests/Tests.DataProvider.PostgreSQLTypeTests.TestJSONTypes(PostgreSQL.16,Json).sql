@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
+--  PostgreSQL.16 PostgreSQL.15 PostgreSQL
 DECLARE @value Json -- Object
 SET     @value = 'null'
 DECLARE @nullableValue Json -- Object
@@ -14,7 +14,7 @@ WHERE
 	r."Column"::jsonb = :value::jsonb AND r."ColumnNullable"::jsonb = :nullableValue::jsonb
 
 BeforeExecute
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
+--  PostgreSQL.16 PostgreSQL.15 PostgreSQL
 
 SELECT
 	r."Column",
@@ -25,13 +25,13 @@ WHERE
 	r."Column"::jsonb = 'null'::jsonb AND r."ColumnNullable"::jsonb = 'null'::jsonb
 
 BeforeExecute
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
+--  PostgreSQL.16 PostgreSQL.15 PostgreSQL
 
 DELETE FROM
 	"TypeTable`2" t1
 
 BeforeExecute
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
+--  PostgreSQL.16 PostgreSQL.15 PostgreSQL
 DECLARE @Column Json -- Object
 SET     @Column = 'null'
 DECLARE @ColumnNullable Json -- Object
@@ -49,7 +49,7 @@ VALUES
 )
 
 BeforeExecute
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
+--  PostgreSQL.16 PostgreSQL.15 PostgreSQL
 DECLARE @value Json -- Object
 SET     @value = 'null'
 DECLARE @nullableValue Json -- Object
@@ -64,13 +64,13 @@ WHERE
 	r."Column"::jsonb = :value::jsonb AND r."ColumnNullable"::jsonb = :nullableValue::jsonb
 
 BeforeExecute
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
+--  PostgreSQL.16 PostgreSQL.15 PostgreSQL
 
 DELETE FROM
 	"TypeTable`2" t1
 
 BeforeExecute
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
+--  PostgreSQL.16 PostgreSQL.15 PostgreSQL
 
 INSERT INTO "TypeTable`2"
 (
@@ -81,7 +81,7 @@ VALUES
 ('null','null')
 
 BeforeExecute
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
+--  PostgreSQL.16 PostgreSQL.15 PostgreSQL
 DECLARE @value Json -- Object
 SET     @value = 'null'
 DECLARE @nullableValue Json -- Object
@@ -96,7 +96,7 @@ WHERE
 	r."Column"::jsonb = :value::jsonb AND r."ColumnNullable"::jsonb = :nullableValue::jsonb
 
 BeforeExecute
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
+--  PostgreSQL.16 PostgreSQL.15 PostgreSQL
 
 DELETE FROM
 	"TypeTable`2" t1
@@ -105,7 +105,7 @@ BeforeExecute
 INSERT BULK "TypeTable`2"(Column, ColumnNullable)
 
 BeforeExecute
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
+--  PostgreSQL.16 PostgreSQL.15 PostgreSQL
 DECLARE @value Json -- Object
 SET     @value = 'null'
 DECLARE @nullableValue Json -- Object
@@ -120,7 +120,7 @@ WHERE
 	r."Column"::jsonb = :value::jsonb AND r."ColumnNullable"::jsonb = :nullableValue::jsonb
 
 BeforeExecute
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL (asynchronously)
+--  PostgreSQL.16 PostgreSQL.15 PostgreSQL (asynchronously)
 
 DELETE FROM
 	"TypeTable`2" t1
@@ -129,7 +129,7 @@ BeforeExecute
 INSERT ASYNC BULK "TypeTable`2"(Column, ColumnNullable)
 
 BeforeExecute
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
+--  PostgreSQL.16 PostgreSQL.15 PostgreSQL
 DECLARE @value Json -- Object
 SET     @value = 'null'
 DECLARE @nullableValue Json -- Object
@@ -144,7 +144,7 @@ WHERE
 	r."Column"::jsonb = :value::jsonb AND r."ColumnNullable"::jsonb = :nullableValue::jsonb
 
 BeforeExecute
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
+--  PostgreSQL.16 PostgreSQL.15 PostgreSQL
 DECLARE @value Json -- Object
 SET     @value = 'true'
 DECLARE @nullableValue Json -- Object
@@ -159,7 +159,7 @@ WHERE
 	r."Column"::jsonb = :value::jsonb AND r."ColumnNullable"::jsonb = :nullableValue::jsonb
 
 BeforeExecute
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
+--  PostgreSQL.16 PostgreSQL.15 PostgreSQL
 
 SELECT
 	r."Column",
@@ -170,13 +170,13 @@ WHERE
 	r."Column"::jsonb = 'true'::jsonb AND r."ColumnNullable"::jsonb = 'false'::jsonb
 
 BeforeExecute
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
+--  PostgreSQL.16 PostgreSQL.15 PostgreSQL
 
 DELETE FROM
 	"TypeTable`2" t1
 
 BeforeExecute
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
+--  PostgreSQL.16 PostgreSQL.15 PostgreSQL
 DECLARE @Column Json -- Object
 SET     @Column = 'true'
 DECLARE @ColumnNullable Json -- Object
@@ -194,7 +194,7 @@ VALUES
 )
 
 BeforeExecute
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
+--  PostgreSQL.16 PostgreSQL.15 PostgreSQL
 DECLARE @value Json -- Object
 SET     @value = 'true'
 DECLARE @nullableValue Json -- Object
@@ -209,13 +209,13 @@ WHERE
 	r."Column"::jsonb = :value::jsonb AND r."ColumnNullable"::jsonb = :nullableValue::jsonb
 
 BeforeExecute
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
+--  PostgreSQL.16 PostgreSQL.15 PostgreSQL
 
 DELETE FROM
 	"TypeTable`2" t1
 
 BeforeExecute
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
+--  PostgreSQL.16 PostgreSQL.15 PostgreSQL
 
 INSERT INTO "TypeTable`2"
 (
@@ -226,7 +226,7 @@ VALUES
 ('true','false')
 
 BeforeExecute
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
+--  PostgreSQL.16 PostgreSQL.15 PostgreSQL
 DECLARE @value Json -- Object
 SET     @value = 'true'
 DECLARE @nullableValue Json -- Object
@@ -241,7 +241,7 @@ WHERE
 	r."Column"::jsonb = :value::jsonb AND r."ColumnNullable"::jsonb = :nullableValue::jsonb
 
 BeforeExecute
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
+--  PostgreSQL.16 PostgreSQL.15 PostgreSQL
 
 DELETE FROM
 	"TypeTable`2" t1
@@ -250,7 +250,7 @@ BeforeExecute
 INSERT BULK "TypeTable`2"(Column, ColumnNullable)
 
 BeforeExecute
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
+--  PostgreSQL.16 PostgreSQL.15 PostgreSQL
 DECLARE @value Json -- Object
 SET     @value = 'true'
 DECLARE @nullableValue Json -- Object
@@ -265,7 +265,7 @@ WHERE
 	r."Column"::jsonb = :value::jsonb AND r."ColumnNullable"::jsonb = :nullableValue::jsonb
 
 BeforeExecute
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL (asynchronously)
+--  PostgreSQL.16 PostgreSQL.15 PostgreSQL (asynchronously)
 
 DELETE FROM
 	"TypeTable`2" t1
@@ -274,7 +274,7 @@ BeforeExecute
 INSERT ASYNC BULK "TypeTable`2"(Column, ColumnNullable)
 
 BeforeExecute
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
+--  PostgreSQL.16 PostgreSQL.15 PostgreSQL
 DECLARE @value Json -- Object
 SET     @value = 'true'
 DECLARE @nullableValue Json -- Object
@@ -289,7 +289,7 @@ WHERE
 	r."Column"::jsonb = :value::jsonb AND r."ColumnNullable"::jsonb = :nullableValue::jsonb
 
 BeforeExecute
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
+--  PostgreSQL.16 PostgreSQL.15 PostgreSQL
 DECLARE @value Json -- Object
 SET     @value = '12'
 DECLARE @nullableValue Json -- Object
@@ -304,7 +304,7 @@ WHERE
 	r."Column"::jsonb = :value::jsonb AND r."ColumnNullable"::jsonb = :nullableValue::jsonb
 
 BeforeExecute
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
+--  PostgreSQL.16 PostgreSQL.15 PostgreSQL
 
 SELECT
 	r."Column",
@@ -315,13 +315,13 @@ WHERE
 	r."Column"::jsonb = '12'::jsonb AND r."ColumnNullable"::jsonb = '-34'::jsonb
 
 BeforeExecute
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
+--  PostgreSQL.16 PostgreSQL.15 PostgreSQL
 
 DELETE FROM
 	"TypeTable`2" t1
 
 BeforeExecute
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
+--  PostgreSQL.16 PostgreSQL.15 PostgreSQL
 DECLARE @Column Json -- Object
 SET     @Column = '12'
 DECLARE @ColumnNullable Json -- Object
@@ -339,7 +339,7 @@ VALUES
 )
 
 BeforeExecute
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
+--  PostgreSQL.16 PostgreSQL.15 PostgreSQL
 DECLARE @value Json -- Object
 SET     @value = '12'
 DECLARE @nullableValue Json -- Object
@@ -354,13 +354,13 @@ WHERE
 	r."Column"::jsonb = :value::jsonb AND r."ColumnNullable"::jsonb = :nullableValue::jsonb
 
 BeforeExecute
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
+--  PostgreSQL.16 PostgreSQL.15 PostgreSQL
 
 DELETE FROM
 	"TypeTable`2" t1
 
 BeforeExecute
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
+--  PostgreSQL.16 PostgreSQL.15 PostgreSQL
 
 INSERT INTO "TypeTable`2"
 (
@@ -371,7 +371,7 @@ VALUES
 ('12','-34')
 
 BeforeExecute
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
+--  PostgreSQL.16 PostgreSQL.15 PostgreSQL
 DECLARE @value Json -- Object
 SET     @value = '12'
 DECLARE @nullableValue Json -- Object
@@ -386,7 +386,7 @@ WHERE
 	r."Column"::jsonb = :value::jsonb AND r."ColumnNullable"::jsonb = :nullableValue::jsonb
 
 BeforeExecute
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
+--  PostgreSQL.16 PostgreSQL.15 PostgreSQL
 
 DELETE FROM
 	"TypeTable`2" t1
@@ -395,7 +395,7 @@ BeforeExecute
 INSERT BULK "TypeTable`2"(Column, ColumnNullable)
 
 BeforeExecute
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
+--  PostgreSQL.16 PostgreSQL.15 PostgreSQL
 DECLARE @value Json -- Object
 SET     @value = '12'
 DECLARE @nullableValue Json -- Object
@@ -410,7 +410,7 @@ WHERE
 	r."Column"::jsonb = :value::jsonb AND r."ColumnNullable"::jsonb = :nullableValue::jsonb
 
 BeforeExecute
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL (asynchronously)
+--  PostgreSQL.16 PostgreSQL.15 PostgreSQL (asynchronously)
 
 DELETE FROM
 	"TypeTable`2" t1
@@ -419,7 +419,7 @@ BeforeExecute
 INSERT ASYNC BULK "TypeTable`2"(Column, ColumnNullable)
 
 BeforeExecute
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
+--  PostgreSQL.16 PostgreSQL.15 PostgreSQL
 DECLARE @value Json -- Object
 SET     @value = '12'
 DECLARE @nullableValue Json -- Object
@@ -434,7 +434,7 @@ WHERE
 	r."Column"::jsonb = :value::jsonb AND r."ColumnNullable"::jsonb = :nullableValue::jsonb
 
 BeforeExecute
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
+--  PostgreSQL.16 PostgreSQL.15 PostgreSQL
 DECLARE @value Json -- Object
 SET     @value = '-12e34'
 DECLARE @nullableValue Json -- Object
@@ -449,7 +449,7 @@ WHERE
 	r."Column"::jsonb = :value::jsonb AND r."ColumnNullable"::jsonb = :nullableValue::jsonb
 
 BeforeExecute
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
+--  PostgreSQL.16 PostgreSQL.15 PostgreSQL
 
 SELECT
 	r."Column",
@@ -460,13 +460,13 @@ WHERE
 	r."Column"::jsonb = '-12e34'::jsonb AND r."ColumnNullable"::jsonb = '34.12'::jsonb
 
 BeforeExecute
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
+--  PostgreSQL.16 PostgreSQL.15 PostgreSQL
 
 DELETE FROM
 	"TypeTable`2" t1
 
 BeforeExecute
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
+--  PostgreSQL.16 PostgreSQL.15 PostgreSQL
 DECLARE @Column Json -- Object
 SET     @Column = '-12e34'
 DECLARE @ColumnNullable Json -- Object
@@ -484,7 +484,7 @@ VALUES
 )
 
 BeforeExecute
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
+--  PostgreSQL.16 PostgreSQL.15 PostgreSQL
 DECLARE @value Json -- Object
 SET     @value = '-12e34'
 DECLARE @nullableValue Json -- Object
@@ -499,13 +499,13 @@ WHERE
 	r."Column"::jsonb = :value::jsonb AND r."ColumnNullable"::jsonb = :nullableValue::jsonb
 
 BeforeExecute
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
+--  PostgreSQL.16 PostgreSQL.15 PostgreSQL
 
 DELETE FROM
 	"TypeTable`2" t1
 
 BeforeExecute
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
+--  PostgreSQL.16 PostgreSQL.15 PostgreSQL
 
 INSERT INTO "TypeTable`2"
 (
@@ -516,7 +516,7 @@ VALUES
 ('-12e34','34.12')
 
 BeforeExecute
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
+--  PostgreSQL.16 PostgreSQL.15 PostgreSQL
 DECLARE @value Json -- Object
 SET     @value = '-12e34'
 DECLARE @nullableValue Json -- Object
@@ -531,7 +531,7 @@ WHERE
 	r."Column"::jsonb = :value::jsonb AND r."ColumnNullable"::jsonb = :nullableValue::jsonb
 
 BeforeExecute
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
+--  PostgreSQL.16 PostgreSQL.15 PostgreSQL
 
 DELETE FROM
 	"TypeTable`2" t1
@@ -540,7 +540,7 @@ BeforeExecute
 INSERT BULK "TypeTable`2"(Column, ColumnNullable)
 
 BeforeExecute
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
+--  PostgreSQL.16 PostgreSQL.15 PostgreSQL
 DECLARE @value Json -- Object
 SET     @value = '-12e34'
 DECLARE @nullableValue Json -- Object
@@ -555,7 +555,7 @@ WHERE
 	r."Column"::jsonb = :value::jsonb AND r."ColumnNullable"::jsonb = :nullableValue::jsonb
 
 BeforeExecute
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL (asynchronously)
+--  PostgreSQL.16 PostgreSQL.15 PostgreSQL (asynchronously)
 
 DELETE FROM
 	"TypeTable`2" t1
@@ -564,7 +564,7 @@ BeforeExecute
 INSERT ASYNC BULK "TypeTable`2"(Column, ColumnNullable)
 
 BeforeExecute
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
+--  PostgreSQL.16 PostgreSQL.15 PostgreSQL
 DECLARE @value Json -- Object
 SET     @value = '-12e34'
 DECLARE @nullableValue Json -- Object
@@ -579,7 +579,7 @@ WHERE
 	r."Column"::jsonb = :value::jsonb AND r."ColumnNullable"::jsonb = :nullableValue::jsonb
 
 BeforeExecute
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
+--  PostgreSQL.16 PostgreSQL.15 PostgreSQL
 DECLARE @value Json -- Object
 SET     @value = '"тест"'
 DECLARE @nullableValue Json -- Object
@@ -594,7 +594,7 @@ WHERE
 	r."Column"::jsonb = :value::jsonb AND r."ColumnNullable"::jsonb = :nullableValue::jsonb
 
 BeforeExecute
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
+--  PostgreSQL.16 PostgreSQL.15 PostgreSQL
 
 SELECT
 	r."Column",
@@ -605,13 +605,13 @@ WHERE
 	r."Column"::jsonb = '"тест"'::jsonb AND r."ColumnNullable"::jsonb = '""'::jsonb
 
 BeforeExecute
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
+--  PostgreSQL.16 PostgreSQL.15 PostgreSQL
 
 DELETE FROM
 	"TypeTable`2" t1
 
 BeforeExecute
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
+--  PostgreSQL.16 PostgreSQL.15 PostgreSQL
 DECLARE @Column Json -- Object
 SET     @Column = '"тест"'
 DECLARE @ColumnNullable Json -- Object
@@ -629,7 +629,7 @@ VALUES
 )
 
 BeforeExecute
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
+--  PostgreSQL.16 PostgreSQL.15 PostgreSQL
 DECLARE @value Json -- Object
 SET     @value = '"тест"'
 DECLARE @nullableValue Json -- Object
@@ -644,13 +644,13 @@ WHERE
 	r."Column"::jsonb = :value::jsonb AND r."ColumnNullable"::jsonb = :nullableValue::jsonb
 
 BeforeExecute
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
+--  PostgreSQL.16 PostgreSQL.15 PostgreSQL
 
 DELETE FROM
 	"TypeTable`2" t1
 
 BeforeExecute
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
+--  PostgreSQL.16 PostgreSQL.15 PostgreSQL
 
 INSERT INTO "TypeTable`2"
 (
@@ -661,7 +661,7 @@ VALUES
 ('"тест"','""')
 
 BeforeExecute
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
+--  PostgreSQL.16 PostgreSQL.15 PostgreSQL
 DECLARE @value Json -- Object
 SET     @value = '"тест"'
 DECLARE @nullableValue Json -- Object
@@ -676,7 +676,7 @@ WHERE
 	r."Column"::jsonb = :value::jsonb AND r."ColumnNullable"::jsonb = :nullableValue::jsonb
 
 BeforeExecute
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
+--  PostgreSQL.16 PostgreSQL.15 PostgreSQL
 
 DELETE FROM
 	"TypeTable`2" t1
@@ -685,7 +685,7 @@ BeforeExecute
 INSERT BULK "TypeTable`2"(Column, ColumnNullable)
 
 BeforeExecute
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
+--  PostgreSQL.16 PostgreSQL.15 PostgreSQL
 DECLARE @value Json -- Object
 SET     @value = '"тест"'
 DECLARE @nullableValue Json -- Object
@@ -700,7 +700,7 @@ WHERE
 	r."Column"::jsonb = :value::jsonb AND r."ColumnNullable"::jsonb = :nullableValue::jsonb
 
 BeforeExecute
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL (asynchronously)
+--  PostgreSQL.16 PostgreSQL.15 PostgreSQL (asynchronously)
 
 DELETE FROM
 	"TypeTable`2" t1
@@ -709,7 +709,7 @@ BeforeExecute
 INSERT ASYNC BULK "TypeTable`2"(Column, ColumnNullable)
 
 BeforeExecute
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
+--  PostgreSQL.16 PostgreSQL.15 PostgreSQL
 DECLARE @value Json -- Object
 SET     @value = '"тест"'
 DECLARE @nullableValue Json -- Object
@@ -724,7 +724,7 @@ WHERE
 	r."Column"::jsonb = :value::jsonb AND r."ColumnNullable"::jsonb = :nullableValue::jsonb
 
 BeforeExecute
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
+--  PostgreSQL.16 PostgreSQL.15 PostgreSQL
 DECLARE @value Json -- Object
 SET     @value = 'null'
 
@@ -737,7 +737,7 @@ WHERE
 	r."Column"::jsonb = :value::jsonb AND r."ColumnNullable"::jsonb IS NULL
 
 BeforeExecute
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
+--  PostgreSQL.16 PostgreSQL.15 PostgreSQL
 
 SELECT
 	r."Column",
@@ -748,13 +748,13 @@ WHERE
 	r."Column"::jsonb = 'null'::jsonb AND r."ColumnNullable"::jsonb IS NULL
 
 BeforeExecute
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
+--  PostgreSQL.16 PostgreSQL.15 PostgreSQL
 
 DELETE FROM
 	"TypeTable`2" t1
 
 BeforeExecute
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
+--  PostgreSQL.16 PostgreSQL.15 PostgreSQL
 DECLARE @Column Json -- Object
 SET     @Column = 'null'
 DECLARE @ColumnNullable Json -- Object
@@ -772,7 +772,7 @@ VALUES
 )
 
 BeforeExecute
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
+--  PostgreSQL.16 PostgreSQL.15 PostgreSQL
 DECLARE @value Json -- Object
 SET     @value = 'null'
 
@@ -785,13 +785,13 @@ WHERE
 	r."Column"::jsonb = :value::jsonb AND r."ColumnNullable"::jsonb IS NULL
 
 BeforeExecute
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
+--  PostgreSQL.16 PostgreSQL.15 PostgreSQL
 
 DELETE FROM
 	"TypeTable`2" t1
 
 BeforeExecute
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
+--  PostgreSQL.16 PostgreSQL.15 PostgreSQL
 
 INSERT INTO "TypeTable`2"
 (
@@ -802,7 +802,7 @@ VALUES
 ('null',NULL)
 
 BeforeExecute
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
+--  PostgreSQL.16 PostgreSQL.15 PostgreSQL
 DECLARE @value Json -- Object
 SET     @value = 'null'
 
@@ -815,7 +815,7 @@ WHERE
 	r."Column"::jsonb = :value::jsonb AND r."ColumnNullable"::jsonb IS NULL
 
 BeforeExecute
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
+--  PostgreSQL.16 PostgreSQL.15 PostgreSQL
 
 DELETE FROM
 	"TypeTable`2" t1
@@ -824,7 +824,7 @@ BeforeExecute
 INSERT BULK "TypeTable`2"(Column, ColumnNullable)
 
 BeforeExecute
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
+--  PostgreSQL.16 PostgreSQL.15 PostgreSQL
 DECLARE @value Json -- Object
 SET     @value = 'null'
 
@@ -837,7 +837,7 @@ WHERE
 	r."Column"::jsonb = :value::jsonb AND r."ColumnNullable"::jsonb IS NULL
 
 BeforeExecute
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL (asynchronously)
+--  PostgreSQL.16 PostgreSQL.15 PostgreSQL (asynchronously)
 
 DELETE FROM
 	"TypeTable`2" t1
@@ -846,7 +846,7 @@ BeforeExecute
 INSERT ASYNC BULK "TypeTable`2"(Column, ColumnNullable)
 
 BeforeExecute
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
+--  PostgreSQL.16 PostgreSQL.15 PostgreSQL
 DECLARE @value Json -- Object
 SET     @value = 'null'
 
@@ -859,7 +859,7 @@ WHERE
 	r."Column"::jsonb = :value::jsonb AND r."ColumnNullable"::jsonb IS NULL
 
 BeforeExecute
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
+--  PostgreSQL.16 PostgreSQL.15 PostgreSQL
 DECLARE @value Json -- Object
 SET     @value = '[1, 2, 3]'
 DECLARE @nullableValue Json -- Object
@@ -874,7 +874,7 @@ WHERE
 	r."Column"::jsonb = :value::jsonb AND r."ColumnNullable"::jsonb = :nullableValue::jsonb
 
 BeforeExecute
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
+--  PostgreSQL.16 PostgreSQL.15 PostgreSQL
 
 SELECT
 	r."Column",
@@ -885,13 +885,13 @@ WHERE
 	r."Column"::jsonb = '[1, 2, 3]'::jsonb AND r."ColumnNullable"::jsonb = '[true, false]'::jsonb
 
 BeforeExecute
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
+--  PostgreSQL.16 PostgreSQL.15 PostgreSQL
 
 DELETE FROM
 	"TypeTable`2" t1
 
 BeforeExecute
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
+--  PostgreSQL.16 PostgreSQL.15 PostgreSQL
 DECLARE @Column Json -- Object
 SET     @Column = '[1, 2, 3]'
 DECLARE @ColumnNullable Json -- Object
@@ -909,7 +909,7 @@ VALUES
 )
 
 BeforeExecute
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
+--  PostgreSQL.16 PostgreSQL.15 PostgreSQL
 DECLARE @value Json -- Object
 SET     @value = '[1, 2, 3]'
 DECLARE @nullableValue Json -- Object
@@ -924,13 +924,13 @@ WHERE
 	r."Column"::jsonb = :value::jsonb AND r."ColumnNullable"::jsonb = :nullableValue::jsonb
 
 BeforeExecute
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
+--  PostgreSQL.16 PostgreSQL.15 PostgreSQL
 
 DELETE FROM
 	"TypeTable`2" t1
 
 BeforeExecute
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
+--  PostgreSQL.16 PostgreSQL.15 PostgreSQL
 
 INSERT INTO "TypeTable`2"
 (
@@ -941,7 +941,7 @@ VALUES
 ('[1, 2, 3]','[true, false]')
 
 BeforeExecute
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
+--  PostgreSQL.16 PostgreSQL.15 PostgreSQL
 DECLARE @value Json -- Object
 SET     @value = '[1, 2, 3]'
 DECLARE @nullableValue Json -- Object
@@ -956,7 +956,7 @@ WHERE
 	r."Column"::jsonb = :value::jsonb AND r."ColumnNullable"::jsonb = :nullableValue::jsonb
 
 BeforeExecute
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
+--  PostgreSQL.16 PostgreSQL.15 PostgreSQL
 
 DELETE FROM
 	"TypeTable`2" t1
@@ -965,7 +965,7 @@ BeforeExecute
 INSERT BULK "TypeTable`2"(Column, ColumnNullable)
 
 BeforeExecute
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
+--  PostgreSQL.16 PostgreSQL.15 PostgreSQL
 DECLARE @value Json -- Object
 SET     @value = '[1, 2, 3]'
 DECLARE @nullableValue Json -- Object
@@ -980,7 +980,7 @@ WHERE
 	r."Column"::jsonb = :value::jsonb AND r."ColumnNullable"::jsonb = :nullableValue::jsonb
 
 BeforeExecute
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL (asynchronously)
+--  PostgreSQL.16 PostgreSQL.15 PostgreSQL (asynchronously)
 
 DELETE FROM
 	"TypeTable`2" t1
@@ -989,7 +989,7 @@ BeforeExecute
 INSERT ASYNC BULK "TypeTable`2"(Column, ColumnNullable)
 
 BeforeExecute
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
+--  PostgreSQL.16 PostgreSQL.15 PostgreSQL
 DECLARE @value Json -- Object
 SET     @value = '[1, 2, 3]'
 DECLARE @nullableValue Json -- Object
@@ -1004,7 +1004,7 @@ WHERE
 	r."Column"::jsonb = :value::jsonb AND r."ColumnNullable"::jsonb = :nullableValue::jsonb
 
 BeforeExecute
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
+--  PostgreSQL.16 PostgreSQL.15 PostgreSQL
 DECLARE @value Json -- Object
 SET     @value = '{"x": 1, "y": {"a": null, "b": "тест", "w": [1, null, "qqq", true], "z": true}}'
 DECLARE @nullableValue Json -- Object
@@ -1019,7 +1019,7 @@ WHERE
 	r."Column"::jsonb = :value::jsonb AND r."ColumnNullable"::jsonb = :nullableValue::jsonb
 
 BeforeExecute
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
+--  PostgreSQL.16 PostgreSQL.15 PostgreSQL
 
 SELECT
 	r."Column",
@@ -1031,13 +1031,13 @@ WHERE
 	r."ColumnNullable"::jsonb = '{"4454": {"": true, "b": "тест", "w": [-1, false, "qqdfg q", true], "null": null}, "тест": 1}'::jsonb
 
 BeforeExecute
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
+--  PostgreSQL.16 PostgreSQL.15 PostgreSQL
 
 DELETE FROM
 	"TypeTable`2" t1
 
 BeforeExecute
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
+--  PostgreSQL.16 PostgreSQL.15 PostgreSQL
 DECLARE @Column Json -- Object
 SET     @Column = '{"x": 1, "y": {"a": null, "b": "тест", "w": [1, null, "qqq", true], "z": true}}'
 DECLARE @ColumnNullable Json -- Object
@@ -1055,7 +1055,7 @@ VALUES
 )
 
 BeforeExecute
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
+--  PostgreSQL.16 PostgreSQL.15 PostgreSQL
 DECLARE @value Json -- Object
 SET     @value = '{"x": 1, "y": {"a": null, "b": "тест", "w": [1, null, "qqq", true], "z": true}}'
 DECLARE @nullableValue Json -- Object
@@ -1070,13 +1070,13 @@ WHERE
 	r."Column"::jsonb = :value::jsonb AND r."ColumnNullable"::jsonb = :nullableValue::jsonb
 
 BeforeExecute
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
+--  PostgreSQL.16 PostgreSQL.15 PostgreSQL
 
 DELETE FROM
 	"TypeTable`2" t1
 
 BeforeExecute
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
+--  PostgreSQL.16 PostgreSQL.15 PostgreSQL
 
 INSERT INTO "TypeTable`2"
 (
@@ -1087,7 +1087,7 @@ VALUES
 ('{"x": 1, "y": {"a": null, "b": "тест", "w": [1, null, "qqq", true], "z": true}}','{"4454": {"": true, "b": "тест", "w": [-1, false, "qqdfg q", true], "null": null}, "тест": 1}')
 
 BeforeExecute
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
+--  PostgreSQL.16 PostgreSQL.15 PostgreSQL
 DECLARE @value Json -- Object
 SET     @value = '{"x": 1, "y": {"a": null, "b": "тест", "w": [1, null, "qqq", true], "z": true}}'
 DECLARE @nullableValue Json -- Object
@@ -1102,7 +1102,7 @@ WHERE
 	r."Column"::jsonb = :value::jsonb AND r."ColumnNullable"::jsonb = :nullableValue::jsonb
 
 BeforeExecute
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
+--  PostgreSQL.16 PostgreSQL.15 PostgreSQL
 
 DELETE FROM
 	"TypeTable`2" t1
@@ -1111,7 +1111,7 @@ BeforeExecute
 INSERT BULK "TypeTable`2"(Column, ColumnNullable)
 
 BeforeExecute
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
+--  PostgreSQL.16 PostgreSQL.15 PostgreSQL
 DECLARE @value Json -- Object
 SET     @value = '{"x": 1, "y": {"a": null, "b": "тест", "w": [1, null, "qqq", true], "z": true}}'
 DECLARE @nullableValue Json -- Object
@@ -1126,7 +1126,7 @@ WHERE
 	r."Column"::jsonb = :value::jsonb AND r."ColumnNullable"::jsonb = :nullableValue::jsonb
 
 BeforeExecute
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL (asynchronously)
+--  PostgreSQL.16 PostgreSQL.15 PostgreSQL (asynchronously)
 
 DELETE FROM
 	"TypeTable`2" t1
@@ -1135,7 +1135,7 @@ BeforeExecute
 INSERT ASYNC BULK "TypeTable`2"(Column, ColumnNullable)
 
 BeforeExecute
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
+--  PostgreSQL.16 PostgreSQL.15 PostgreSQL
 DECLARE @value Json -- Object
 SET     @value = '{"x": 1, "y": {"a": null, "b": "тест", "w": [1, null, "qqq", true], "z": true}}'
 DECLARE @nullableValue Json -- Object

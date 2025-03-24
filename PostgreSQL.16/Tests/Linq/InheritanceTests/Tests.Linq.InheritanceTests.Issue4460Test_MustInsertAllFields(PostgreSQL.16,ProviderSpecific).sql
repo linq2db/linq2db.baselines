@@ -2,7 +2,7 @@
 INSERT BULK "Issue4460Table"(Id, Code, Name, Surname)
 
 BeforeExecute
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
+--  PostgreSQL.16 PostgreSQL.15 PostgreSQL
 
 SELECT
 	t1."Code",
