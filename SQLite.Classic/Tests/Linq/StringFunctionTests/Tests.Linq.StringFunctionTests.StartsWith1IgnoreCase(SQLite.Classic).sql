@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SQLite.Classic SQLite
+--  SQLite.Classic SQLite
 
 SELECT
 	COUNT(*)
@@ -9,7 +9,7 @@ WHERE
 	[p].[FirstName] LIKE 'joH%' ESCAPE '~' AND [p].[PersonID] = 1
 
 BeforeExecute
--- SQLite.Classic SQLite
+--  SQLite.Classic SQLite
 
 SELECT
 	COUNT(*)

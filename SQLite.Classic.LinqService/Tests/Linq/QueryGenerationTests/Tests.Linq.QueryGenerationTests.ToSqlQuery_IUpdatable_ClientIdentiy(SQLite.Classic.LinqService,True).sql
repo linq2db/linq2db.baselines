@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SQLite.Classic SQLite
+--  SQLite.Classic SQLite
 DECLARE @Value  -- Int32
 SET     @Value = 1
 
@@ -13,7 +13,7 @@ VALUES
 )
 
 BeforeExecute
--- SQLite.Classic SQLite
+--  SQLite.Classic SQLite
 
 UPDATE
 	[TableWithIdentity]
@@ -22,7 +22,7 @@ SET
 	[Value] = 123
 
 BeforeExecute
--- SQLite.Classic SQLite
+--  SQLite.Classic SQLite
 
 SELECT
 	[t1].[Id],

@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SQLite.Classic SQLite
+--  SQLite.Classic SQLite
 
 SELECT
 	[x_1].[StrValue]

@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SQLite.MS SQLite
+--  SQLite.MS SQLite
 
 WITH [cte] ([Id], [Enum1])
 AS

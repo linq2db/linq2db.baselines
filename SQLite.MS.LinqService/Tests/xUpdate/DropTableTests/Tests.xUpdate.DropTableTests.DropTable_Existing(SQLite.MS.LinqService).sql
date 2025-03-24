@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SQLite.MS SQLite
+--  SQLite.MS SQLite
 
 CREATE TABLE [Table]
 (
@@ -7,7 +7,7 @@ CREATE TABLE [Table]
 )
 
 BeforeExecute
--- SQLite.MS SQLite
+--  SQLite.MS SQLite
 
 DROP TABLE [Table]
 

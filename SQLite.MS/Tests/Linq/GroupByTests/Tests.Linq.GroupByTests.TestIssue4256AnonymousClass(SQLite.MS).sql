@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SQLite.MS SQLite
+--  SQLite.MS SQLite
 
 SELECT
 	[it_1].[IsActive],
@@ -17,7 +17,7 @@ GROUP BY
 	[it_1].[Other]
 
 BeforeExecute
--- SQLite.MS SQLite
+--  SQLite.MS SQLite
 
 SELECT
 	[t1].[ID],

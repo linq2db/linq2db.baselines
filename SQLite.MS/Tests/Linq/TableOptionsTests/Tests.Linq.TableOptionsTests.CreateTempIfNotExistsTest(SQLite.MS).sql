@@ -1,10 +1,10 @@
 ﻿BeforeExecute
--- SQLite.MS SQLite
+--  SQLite.MS SQLite
 
 DROP TABLE IF EXISTS [CreateIfNotExistsTable]
 
 BeforeExecute
--- SQLite.MS SQLite
+--  SQLite.MS SQLite
 
 CREATE TEMPORARY TABLE temp.[CreateIfNotExistsTable]
 (
@@ -13,7 +13,7 @@ CREATE TEMPORARY TABLE temp.[CreateIfNotExistsTable]
 )
 
 BeforeExecute
--- SQLite.MS SQLite
+--  SQLite.MS SQLite
 
 SELECT
 	[t1].[Id],
@@ -22,7 +22,7 @@ FROM
 	temp.[CreateIfNotExistsTable] [t1]
 
 BeforeExecute
--- SQLite.MS SQLite
+--  SQLite.MS SQLite
 
 CREATE TABLE IF NOT EXISTS [CreateIfNotExistsTable]
 (
@@ -31,12 +31,12 @@ CREATE TABLE IF NOT EXISTS [CreateIfNotExistsTable]
 )
 
 BeforeExecute
--- SQLite.MS SQLite
+--  SQLite.MS SQLite
 
 DROP TABLE IF EXISTS [CreateIfNotExistsTable]
 
 BeforeExecute
--- SQLite.MS SQLite
+--  SQLite.MS SQLite
 
 DROP TABLE IF EXISTS temp.[CreateIfNotExistsTable]
 

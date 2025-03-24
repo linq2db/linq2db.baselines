@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SQLite.Classic SQLite
+--  SQLite.Classic SQLite
 
 WITH [CTE_1]
 (
@@ -32,7 +32,7 @@ WHERE
 	[x].[entry_ID] = 1
 
 BeforeExecute
--- SQLite.Classic SQLite
+--  SQLite.Classic SQLite
 
 SELECT
 	[x].[FirstName],

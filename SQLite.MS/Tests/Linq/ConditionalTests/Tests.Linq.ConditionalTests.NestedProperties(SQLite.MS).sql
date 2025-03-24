@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SQLite.MS SQLite
+--  SQLite.MS SQLite
 
 SELECT
 	[x].[Id],
@@ -10,7 +10,7 @@ WHERE
 	1 = 0
 
 BeforeExecute
--- SQLite.MS SQLite
+--  SQLite.MS SQLite
 
 SELECT
 	[t1].[Id],

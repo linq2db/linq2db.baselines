@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SQLite.MS SQLite
+--  SQLite.MS SQLite
 
 INSERT INTO [Person]
 (
@@ -15,7 +15,7 @@ VALUES
 )
 
 BeforeExecute
--- SQLite.MS SQLite
+--  SQLite.MS SQLite
 
 SELECT
 	COUNT(*)

@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SQLite.MS SQLite
+--  SQLite.MS SQLite
 
 SELECT
 	COUNT(*)
@@ -9,7 +9,7 @@ WHERE
 	1 = 0
 
 BeforeExecute
--- SQLite.MS SQLite
+--  SQLite.MS SQLite
 DECLARE @id  -- Int32
 SET     @id = 1
 

@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SQLite.Classic SQLite
+--  SQLite.Classic SQLite
 
 INSERT INTO [Issue1403Tests_2]
 (
@@ -13,7 +13,7 @@ VALUES
 )
 
 BeforeExecute
--- SQLite.Classic SQLite
+--  SQLite.Classic SQLite
 
 SELECT
 	[t1].[event_id],

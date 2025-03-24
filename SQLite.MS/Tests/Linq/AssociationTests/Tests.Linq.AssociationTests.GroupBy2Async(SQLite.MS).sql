@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 BeginTransactionAsync(Serializable)
 BeforeExecute
--- SQLite.MS SQLite (asynchronously)
+--  SQLite.MS SQLite (asynchronously)
 
 SELECT
 	[m_1].[ParentID],
@@ -20,7 +20,7 @@ FROM
 		ON [m_1].[ParentID] = [a_Parent1_1].[ParentID]
 
 BeforeExecute
--- SQLite.MS SQLite (asynchronously)
+--  SQLite.MS SQLite (asynchronously)
 
 SELECT
 	[a_Parent1].[ParentID]

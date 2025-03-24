@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SQLite.Classic SQLite
+--  SQLite.Classic SQLite
 DECLARE @defValue  -- Int32
 SET     @defValue = 10
 

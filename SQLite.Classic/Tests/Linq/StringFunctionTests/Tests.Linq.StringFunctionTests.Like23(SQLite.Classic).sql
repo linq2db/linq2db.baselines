@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SQLite.Classic SQLite
+--  SQLite.Classic SQLite
 DECLARE @pattern NVarChar(6) -- String
 SET     @pattern = '%h~%n%'
 

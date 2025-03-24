@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SQLite.Classic SQLite
+--  SQLite.Classic SQLite
 DECLARE @Value2 NVarChar(11) -- String
 SET     @Value2 = 'Hello World'
 

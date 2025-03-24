@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 BeginTransaction(Serializable)
 BeforeExecute
--- SQLite.MS SQLite
+--  SQLite.MS SQLite
 
 SELECT
 	[m_1].[ParentID],
@@ -21,7 +21,7 @@ FROM
 		LEFT JOIN [Parent] [a_Parent] ON [d].[ParentID] = [a_Parent].[ParentID]
 
 BeforeExecute
--- SQLite.MS SQLite
+--  SQLite.MS SQLite
 
 SELECT
 	[t].[ParentID],

@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SQLite.Classic SQLite
+--  SQLite.Classic SQLite
 
 SELECT
 	[t1].[FirstName],
@@ -11,7 +11,7 @@ FROM
 	[Person] [t1]
 
 BeforeExecute
--- SQLite.Classic SQLite
+--  SQLite.Classic SQLite
 
 SELECT
 	[gr].[Gender],
@@ -24,7 +24,7 @@ GROUP BY
 BeforeExecute
 BeginTransaction(Serializable)
 BeforeExecute
--- SQLite.Classic SQLite
+--  SQLite.Classic SQLite
 
 SELECT
 	[m_1].[Key_1],
@@ -45,7 +45,7 @@ FROM
 BeforeExecute
 DisposeTransaction
 BeforeExecute
--- SQLite.Classic SQLite
+--  SQLite.Classic SQLite
 
 SELECT
 	[t1].[Gender]
@@ -57,7 +57,7 @@ GROUP BY
 BeforeExecute
 BeginTransaction(Serializable)
 BeforeExecute
--- SQLite.Classic SQLite
+--  SQLite.Classic SQLite
 
 SELECT
 	[m_1].[PersonID],
@@ -72,7 +72,7 @@ FROM
 BeforeExecute
 DisposeTransaction
 BeforeExecute
--- SQLite.Classic SQLite
+--  SQLite.Classic SQLite
 
 SELECT
 	[t1].[PersonID]
@@ -84,7 +84,7 @@ GROUP BY
 BeforeExecute
 BeginTransaction(Serializable)
 BeforeExecute
--- SQLite.Classic SQLite
+--  SQLite.Classic SQLite
 
 SELECT
 	[m_1].[PersonID],
@@ -99,7 +99,7 @@ FROM
 BeforeExecute
 DisposeTransaction
 BeforeExecute
--- SQLite.Classic SQLite
+--  SQLite.Classic SQLite
 
 SELECT
 	[t1].[PersonID]

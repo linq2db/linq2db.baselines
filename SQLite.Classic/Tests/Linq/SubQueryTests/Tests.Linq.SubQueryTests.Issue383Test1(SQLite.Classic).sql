@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 BeginTransaction(Serializable)
 BeforeExecute
--- SQLite.Classic SQLite
+--  SQLite.Classic SQLite
 
 SELECT
 	[m_1].[City_Code],
@@ -31,7 +31,7 @@ FROM
 BeforeExecute
 DisposeTransaction
 BeforeExecute
--- SQLite.Classic SQLite
+--  SQLite.Classic SQLite
 
 SELECT
 	[a].[First_Name],

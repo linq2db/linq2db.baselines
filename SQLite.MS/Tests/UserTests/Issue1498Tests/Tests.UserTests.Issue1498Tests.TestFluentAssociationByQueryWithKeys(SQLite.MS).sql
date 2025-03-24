@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SQLite.MS SQLite
+--  SQLite.MS SQLite
 DECLARE @Id  -- Int32
 SET     @Id = 6
 DECLARE @Title NVarChar(5) -- String
@@ -21,7 +21,7 @@ VALUES
 )
 
 BeforeExecute
--- SQLite.MS SQLite
+--  SQLite.MS SQLite
 DECLARE @Id  -- Int32
 SET     @Id = 60
 DECLARE @TopicId  -- Int32
@@ -43,7 +43,7 @@ VALUES
 )
 
 BeforeExecute
--- SQLite.MS SQLite
+--  SQLite.MS SQLite
 DECLARE @Id  -- Int32
 SET     @Id = 61
 DECLARE @TopicId  -- Int32
@@ -67,7 +67,7 @@ VALUES
 BeforeExecute
 BeginTransaction(Serializable)
 BeforeExecute
--- SQLite.MS SQLite
+--  SQLite.MS SQLite
 
 SELECT
 	[m_1].[Id],
@@ -85,7 +85,7 @@ FROM
 		INNER JOIN [Message] [d] ON [d].[TopicId] = [m_1].[Id]
 
 BeforeExecute
--- SQLite.MS SQLite
+--  SQLite.MS SQLite
 
 SELECT
 	[x].[Id],

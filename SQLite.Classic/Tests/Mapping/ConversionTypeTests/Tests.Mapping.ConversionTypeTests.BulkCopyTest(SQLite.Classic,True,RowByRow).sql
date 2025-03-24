@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SQLite.Classic SQLite
+--  SQLite.Classic SQLite
 
 INSERT INTO [TrimTestTable]
 (
@@ -13,7 +13,7 @@ VALUES
 )
 
 BeforeExecute
--- SQLite.Classic SQLite
+--  SQLite.Classic SQLite
 
 SELECT
 	[r].[ID],
@@ -24,7 +24,7 @@ ORDER BY
 	[r].[ID]
 
 BeforeExecute
--- SQLite.Classic SQLite
+--  SQLite.Classic SQLite
 
 SELECT
 	[r].[ID],

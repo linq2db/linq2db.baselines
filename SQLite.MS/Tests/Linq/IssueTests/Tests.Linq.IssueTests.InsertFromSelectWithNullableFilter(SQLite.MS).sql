@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SQLite.MS SQLite
+--  SQLite.MS SQLite
 
 INSERT INTO [InsertIssueTest]
 (
@@ -21,7 +21,7 @@ FROM
 	) [t2]
 
 BeforeExecute
--- SQLite.MS SQLite
+--  SQLite.MS SQLite
 DECLARE @cond  -- Int16
 SET     @cond = 1234
 
@@ -45,7 +45,7 @@ FROM
 	) [t2]
 
 BeforeExecute
--- SQLite.MS SQLite
+--  SQLite.MS SQLite
 
 SELECT
 	[t1].[ID],

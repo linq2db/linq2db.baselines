@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Northwind.SQLite SQLite.Classic SQLite
+--  Northwind.SQLite SQLite.Classic SQLite
 
 SELECT
 	[t1].[OrderID],
@@ -23,7 +23,7 @@ ORDER BY
 LIMIT 1
 
 BeforeExecute
--- Northwind.SQLite SQLite.Classic SQLite
+--  Northwind.SQLite SQLite.Classic SQLite
 DECLARE @OrderID  -- Int32
 SET     @OrderID = 10248
 

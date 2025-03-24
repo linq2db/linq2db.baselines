@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 BeginTransaction(Serializable)
 BeforeExecute
--- SQLite.Classic SQLite
+--  SQLite.Classic SQLite
 DECLARE @language NVarChar(2) -- String
 SET     @language = 'en'
 DECLARE @Exercise NVarChar(1) -- String
@@ -41,7 +41,7 @@ FROM
 BeforeExecute
 DisposeTransaction
 BeforeExecute
--- SQLite.Classic SQLite
+--  SQLite.Classic SQLite
 DECLARE @language NVarChar(2) -- String
 SET     @language = 'en'
 DECLARE @Exercise NVarChar(1) -- String

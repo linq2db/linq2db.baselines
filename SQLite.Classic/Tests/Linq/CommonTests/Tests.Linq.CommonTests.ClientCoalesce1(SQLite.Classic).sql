@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SQLite.Classic SQLite
+--  SQLite.Classic SQLite
 DECLARE @Value1  -- Int32
 SET     @Value1 = 100
 
@@ -11,7 +11,7 @@ WHERE
 	Coalesce([x].[Value1], @Value1) > 10
 
 BeforeExecute
--- SQLite.Classic SQLite
+--  SQLite.Classic SQLite
 
 SELECT
 	[p].[Value1]

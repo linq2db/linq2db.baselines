@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SQLite.MS SQLite
+--  SQLite.MS SQLite
 
 WITH [CTE_1] ([Id], [Value_1], [OtherValue])
 AS
@@ -25,7 +25,7 @@ FROM
 	[CTE_1] [t2]
 
 BeforeExecute
--- SQLite.MS SQLite
+--  SQLite.MS SQLite
 
 SELECT
 	[t1].[Id],
@@ -36,7 +36,7 @@ FROM
 LIMIT 2
 
 BeforeExecute
--- SQLite.MS SQLite
+--  SQLite.MS SQLite
 
 SELECT
 	[t1].[Id],

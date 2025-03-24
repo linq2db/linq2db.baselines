@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SQLite.Classic SQLite
+--  SQLite.Classic SQLite
 DECLARE @clientName NVarChar(3) -- String
 SET     @clientName = 'Abc'
 

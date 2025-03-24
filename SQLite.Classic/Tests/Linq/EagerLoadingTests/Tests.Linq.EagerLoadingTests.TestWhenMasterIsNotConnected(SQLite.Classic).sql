@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 BeginTransaction(Serializable)
 BeforeExecute
--- SQLite.Classic SQLite
+--  SQLite.Classic SQLite
 
 SELECT
 	[t1].[DetailId],
@@ -13,7 +13,7 @@ FROM
 BeforeExecute
 DisposeTransaction
 BeforeExecute
--- SQLite.Classic SQLite
+--  SQLite.Classic SQLite
 DECLARE @take  -- Int32
 SET     @take = 11
 

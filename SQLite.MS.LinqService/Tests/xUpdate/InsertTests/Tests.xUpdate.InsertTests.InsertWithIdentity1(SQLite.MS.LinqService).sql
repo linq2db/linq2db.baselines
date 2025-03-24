@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SQLite.MS SQLite
+--  SQLite.MS SQLite
 
 DELETE FROM
 	[Person]
@@ -7,7 +7,7 @@ WHERE
 	[Person].[PersonID] > 4
 
 BeforeExecute
--- SQLite.MS SQLite
+--  SQLite.MS SQLite
 
 INSERT INTO [Person]
 (
@@ -23,12 +23,12 @@ VALUES
 )
 
 BeforeExecute
--- SQLite.MS SQLite
+--  SQLite.MS SQLite
 
 SELECT last_insert_rowid()
 
 BeforeExecute
--- SQLite.MS SQLite
+--  SQLite.MS SQLite
 
 SELECT
 	[p].[FirstName],
@@ -43,7 +43,7 @@ WHERE
 LIMIT 2
 
 BeforeExecute
--- SQLite.MS SQLite
+--  SQLite.MS SQLite
 
 DELETE FROM
 	[Person]

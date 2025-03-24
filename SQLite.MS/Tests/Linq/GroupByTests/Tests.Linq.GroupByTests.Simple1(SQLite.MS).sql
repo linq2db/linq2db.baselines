@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 BeginTransaction
 BeforeExecute
--- SQLite.MS SQLite
+--  SQLite.MS SQLite
 
 SELECT
 	[m_1].[Key_1],
@@ -17,7 +17,7 @@ FROM
 		INNER JOIN [Child] [d] ON [m_1].[Key_1] = [d].[ParentID]
 
 BeforeExecute
--- SQLite.MS SQLite
+--  SQLite.MS SQLite
 
 SELECT
 	[t1].[ParentID]

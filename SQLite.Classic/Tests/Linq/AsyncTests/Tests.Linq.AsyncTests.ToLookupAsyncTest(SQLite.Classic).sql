@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SQLite.Classic SQLite (asynchronously)
+--  SQLite.Classic SQLite (asynchronously)
 
 SELECT
 	[t1].[ParentID],
@@ -11,7 +11,7 @@ ORDER BY
 	[t1].[ChildID]
 
 BeforeExecute
--- SQLite.Classic SQLite (asynchronously)
+--  SQLite.Classic SQLite (asynchronously)
 
 SELECT
 	[t1].[ParentID],

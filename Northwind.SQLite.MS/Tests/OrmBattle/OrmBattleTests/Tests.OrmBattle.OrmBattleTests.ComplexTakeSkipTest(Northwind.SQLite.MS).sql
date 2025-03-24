@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Northwind.SQLite.MS SQLite.MS SQLite
+--  Northwind.SQLite.MS SQLite.MS SQLite
 DECLARE @take  -- Int32
 SET     @take = 50
 DECLARE @skip  -- Int32

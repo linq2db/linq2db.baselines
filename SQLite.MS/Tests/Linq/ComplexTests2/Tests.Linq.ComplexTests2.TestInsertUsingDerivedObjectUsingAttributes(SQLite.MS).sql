@@ -1,10 +1,10 @@
 ﻿BeforeExecute
--- SQLite.MS SQLite
+--  SQLite.MS SQLite
 
 UPDATE sqlite_sequence SET seq = 4 WHERE name = 'Person'
 
 BeforeExecute
--- SQLite.MS SQLite
+--  SQLite.MS SQLite
 DECLARE @FirstName NVarChar(21) -- String
 SET     @FirstName = 'test_inherited_insert'
 DECLARE @LastName NVarChar(4) -- String
@@ -30,12 +30,12 @@ VALUES
 )
 
 BeforeExecute
--- SQLite.MS SQLite
+--  SQLite.MS SQLite
 
 SELECT last_insert_rowid()
 
 BeforeExecute
--- SQLite.MS SQLite
+--  SQLite.MS SQLite
 
 SELECT
 	[t1].[FirstName],
@@ -50,7 +50,7 @@ WHERE
 LIMIT 1
 
 BeforeExecute
--- SQLite.MS SQLite
+--  SQLite.MS SQLite
 DECLARE @FirstName NVarChar(21) -- String
 SET     @FirstName = 'test_inherited_insert'
 DECLARE @LastName NVarChar(4) -- String
@@ -73,7 +73,7 @@ WHERE
 	[Person].[PersonID] = @ID
 
 BeforeExecute
--- SQLite.MS SQLite
+--  SQLite.MS SQLite
 
 SELECT
 	[t1].[FirstName],
@@ -88,7 +88,7 @@ WHERE
 LIMIT 1
 
 BeforeExecute
--- SQLite.MS SQLite
+--  SQLite.MS SQLite
 DECLARE @ID  -- Int32
 SET     @ID = 5
 

@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 BeginTransaction(Serializable)
 BeforeExecute
--- Northwind.SQLite.MS SQLite.MS SQLite
+--  Northwind.SQLite.MS SQLite.MS SQLite
 
 SELECT
 	[m_1].[Region],
@@ -30,7 +30,7 @@ FROM
 BeforeExecute
 DisposeTransaction
 BeforeExecute
--- Northwind.SQLite.MS SQLite.MS SQLite
+--  Northwind.SQLite.MS SQLite.MS SQLite
 
 SELECT
 	[t1].[Region],

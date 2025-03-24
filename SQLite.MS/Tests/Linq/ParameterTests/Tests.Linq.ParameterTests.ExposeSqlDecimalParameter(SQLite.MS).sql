@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SQLite.MS SQLite
+--  SQLite.MS SQLite
 DECLARE @p Decimal(6, 3)
 SET     @p = 123.456
 

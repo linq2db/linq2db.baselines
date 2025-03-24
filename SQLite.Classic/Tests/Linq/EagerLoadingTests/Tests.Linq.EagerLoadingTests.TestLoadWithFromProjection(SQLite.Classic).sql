@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 BeginTransaction(Serializable)
 BeforeExecute
--- SQLite.Classic SQLite
+--  SQLite.Classic SQLite
 
 SELECT
 	[m_2].[DetailId],
@@ -27,7 +27,7 @@ FROM
 		INNER JOIN [SubDetailClass] [d_2] ON [m_2].[DetailId] = [d_2].[DetailId]
 
 BeforeExecute
--- SQLite.Classic SQLite
+--  SQLite.Classic SQLite
 
 SELECT
 	[m_2].[Id1],
@@ -45,7 +45,7 @@ FROM
 		INNER JOIN [DetailClass] [d_1] ON [m_2].[Id1] = [d_1].[MasterId]
 
 BeforeExecute
--- SQLite.Classic SQLite
+--  SQLite.Classic SQLite
 
 SELECT
 	[m_2].[DetailId],
@@ -69,7 +69,7 @@ FROM
 BeforeExecute
 DisposeTransaction
 BeforeExecute
--- SQLite.Classic SQLite
+--  SQLite.Classic SQLite
 
 SELECT
 	[r].[Id1],

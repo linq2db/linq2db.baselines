@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SQLite.Classic SQLite
+--  SQLite.Classic SQLite
 
 SELECT
 	[t].[ID],
@@ -14,7 +14,7 @@ FROM
 	[LinqDataTypes] [t]
 
 BeforeExecute
--- SQLite.Classic SQLite
+--  SQLite.Classic SQLite
 DECLARE @param  -- Boolean
 SET     @param = 1
 

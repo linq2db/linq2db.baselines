@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Northwind.SQLite SQLite.Classic SQLite
+--  Northwind.SQLite SQLite.Classic SQLite
 DECLARE @city NVarChar(7) -- String
 SET     @city = 'Seattle'
 
@@ -24,7 +24,7 @@ WHERE
 	[o].[ShipCity] = @city
 
 BeforeExecute
--- Northwind.SQLite SQLite.Classic SQLite
+--  Northwind.SQLite SQLite.Classic SQLite
 DECLARE @city NVarChar(14) -- String
 SET     @city = 'Rio de Janeiro'
 

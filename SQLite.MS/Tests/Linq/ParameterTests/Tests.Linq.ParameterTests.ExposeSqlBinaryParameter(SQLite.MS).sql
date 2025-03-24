@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SQLite.MS SQLite
+--  SQLite.MS SQLite
 DECLARE @p Binary(3)
 SET     @p = X'000102'
 

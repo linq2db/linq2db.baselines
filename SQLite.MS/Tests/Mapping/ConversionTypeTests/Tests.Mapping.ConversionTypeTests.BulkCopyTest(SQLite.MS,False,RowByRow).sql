@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SQLite.MS SQLite
+--  SQLite.MS SQLite
 DECLARE @ID  -- Int32
 SET     @ID = 1
 DECLARE @Data NVarChar(9) -- String
@@ -17,7 +17,7 @@ VALUES
 )
 
 BeforeExecute
--- SQLite.MS SQLite
+--  SQLite.MS SQLite
 
 SELECT
 	[r].[ID],
@@ -28,7 +28,7 @@ ORDER BY
 	[r].[ID]
 
 BeforeExecute
--- SQLite.MS SQLite
+--  SQLite.MS SQLite
 
 SELECT
 	[r].[ID],

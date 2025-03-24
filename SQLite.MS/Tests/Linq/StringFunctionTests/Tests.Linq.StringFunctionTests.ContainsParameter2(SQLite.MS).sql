@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SQLite.MS SQLite
+--  SQLite.MS SQLite
 DECLARE @str NVarChar(6) -- String
 SET     @str = '%o~%h%'
 

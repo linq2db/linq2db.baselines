@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SQLite.MS SQLite
+--  SQLite.MS SQLite
 DECLARE @t NVarChar(1) -- String
 SET     @t = 'A'
 
@@ -16,7 +16,7 @@ WHERE
 	[x_1].[FirstName] = @t
 
 BeforeExecute
--- SQLite.MS SQLite
+--  SQLite.MS SQLite
 DECLARE @t NVarChar(1) -- String
 SET     @t = 'A'
 

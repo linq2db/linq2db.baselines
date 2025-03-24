@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SQLite.MS SQLite
+--  SQLite.MS SQLite
 DECLARE @p NVarChar(1) -- String
 SET     @p = '1'
 
@@ -15,7 +15,7 @@ WHERE
 	[r].[FirstName] = @p
 
 BeforeExecute
--- SQLite.MS SQLite
+--  SQLite.MS SQLite
 
 SELECT
 	[r].[FirstName],
@@ -29,7 +29,7 @@ WHERE
 	1 = 0
 
 BeforeExecute
--- SQLite.MS SQLite
+--  SQLite.MS SQLite
 DECLARE @p NVarChar(1) -- String
 SET     @p = '1'
 

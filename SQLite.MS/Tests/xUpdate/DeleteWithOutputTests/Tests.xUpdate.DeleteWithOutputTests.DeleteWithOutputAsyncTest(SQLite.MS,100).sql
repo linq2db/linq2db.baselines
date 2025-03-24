@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SQLite.MS SQLite
+--  SQLite.MS SQLite
 
 SELECT
 	[s].[Id],
@@ -11,7 +11,7 @@ WHERE
 	[s].[Id] > 3
 
 BeforeExecute
--- SQLite.MS SQLite (asynchronously)
+--  SQLite.MS SQLite (asynchronously)
 
 DELETE FROM
 	[TableWithData]
@@ -23,7 +23,7 @@ RETURNING
 	[TableWithData].[ValueStr]
 
 BeforeExecute
--- SQLite.MS SQLite (asynchronously)
+--  SQLite.MS SQLite (asynchronously)
 
 DROP TABLE IF EXISTS [TableWithData]
 

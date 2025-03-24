@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SQLite.MS SQLite
+--  SQLite.MS SQLite
 
 SELECT
 	[nm].[MiddleName]
@@ -15,7 +15,7 @@ WHERE
 	[nm].[Value_1] <> 0 OR [nm].[Value_1] IS NULL
 
 BeforeExecute
--- SQLite.MS SQLite
+--  SQLite.MS SQLite
 
 SELECT
 	[t1].[FirstName],

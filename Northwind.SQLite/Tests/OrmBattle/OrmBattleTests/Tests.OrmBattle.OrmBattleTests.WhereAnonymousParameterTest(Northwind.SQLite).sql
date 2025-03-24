@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Northwind.SQLite SQLite.Classic SQLite
+--  Northwind.SQLite SQLite.Classic SQLite
 DECLARE @City NVarChar(7) -- String
 SET     @City = 'Seattle'
 DECLARE @Region NVarChar(2) -- String

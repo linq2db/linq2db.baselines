@@ -1,10 +1,10 @@
 ﻿BeforeExecute
--- SQLite.MS SQLite
+--  SQLite.MS SQLite
 
 UPDATE sqlite_sequence SET seq = 4 WHERE name = 'Person'
 
 BeforeExecute
--- SQLite.MS SQLite
+--  SQLite.MS SQLite
 DECLARE @FirstName NVarChar(3) -- String
 SET     @FirstName = '123'
 DECLARE @LastName NVarChar(3) -- String
@@ -30,12 +30,12 @@ VALUES
 )
 
 BeforeExecute
--- SQLite.MS SQLite
+--  SQLite.MS SQLite
 
 SELECT last_insert_rowid()
 
 BeforeExecute
--- SQLite.MS SQLite
+--  SQLite.MS SQLite
 DECLARE @id  -- Int32
 SET     @id = 5
 

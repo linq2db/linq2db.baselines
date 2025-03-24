@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SQLite.MS SQLite
+--  SQLite.MS SQLite
 DECLARE @Column  -- Date
 SET     @Column = '2020-02-29'
 DECLARE @ColumnNullable  -- Date
@@ -15,7 +15,7 @@ WHERE
 	[r].[Column] = @Column AND [r].[ColumnNullable] = @ColumnNullable
 
 BeforeExecute
--- SQLite.MS SQLite
+--  SQLite.MS SQLite
 
 SELECT
 	[r].[Id],
@@ -27,13 +27,13 @@ WHERE
 	[r].[Column] = '2020-02-29' AND [r].[ColumnNullable] = '2200-01-01'
 
 BeforeExecute
--- SQLite.MS SQLite
+--  SQLite.MS SQLite
 
 DELETE FROM
 	[DateOnlyTable]
 
 BeforeExecute
--- SQLite.MS SQLite
+--  SQLite.MS SQLite
 DECLARE @Id  -- Int32
 SET     @Id = 1
 DECLARE @Column  -- Date
@@ -55,7 +55,7 @@ VALUES
 )
 
 BeforeExecute
--- SQLite.MS SQLite
+--  SQLite.MS SQLite
 DECLARE @Id  -- Int32
 SET     @Id = 2
 DECLARE @Column  -- Date
@@ -77,7 +77,7 @@ VALUES
 )
 
 BeforeExecute
--- SQLite.MS SQLite
+--  SQLite.MS SQLite
 
 SELECT
 	[t1].[Id],
@@ -89,13 +89,13 @@ ORDER BY
 	[t1].[Id]
 
 BeforeExecute
--- SQLite.MS SQLite
+--  SQLite.MS SQLite
 
 DELETE FROM
 	[DateOnlyTable]
 
 BeforeExecute
--- SQLite.MS SQLite
+--  SQLite.MS SQLite
 
 INSERT INTO [DateOnlyTable]
 (
@@ -108,7 +108,7 @@ VALUES
 (2,'2020-02-29','2200-01-01')
 
 BeforeExecute
--- SQLite.MS SQLite
+--  SQLite.MS SQLite
 
 SELECT
 	[t1].[Id],
@@ -120,13 +120,13 @@ ORDER BY
 	[t1].[Id]
 
 BeforeExecute
--- SQLite.MS SQLite
+--  SQLite.MS SQLite
 
 DELETE FROM
 	[DateOnlyTable]
 
 BeforeExecute
--- SQLite.MS SQLite
+--  SQLite.MS SQLite
 
 INSERT INTO [DateOnlyTable]
 (
@@ -139,7 +139,7 @@ VALUES
 (2,'2020-02-29','2200-01-01')
 
 BeforeExecute
--- SQLite.MS SQLite
+--  SQLite.MS SQLite
 
 SELECT
 	[t1].[Id],

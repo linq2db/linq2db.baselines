@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Northwind.SQLite SQLite.Classic SQLite
+--  Northwind.SQLite SQLite.Classic SQLite
 
 SELECT
 	[o].[OrderID],
@@ -22,7 +22,7 @@ WHERE
 	[o].[ShipRegion] IS NULL
 
 BeforeExecute
--- Northwind.SQLite SQLite.Classic SQLite
+--  Northwind.SQLite SQLite.Classic SQLite
 DECLARE @region NVarChar(2) -- String
 SET     @region = 'WA'
 

@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SQLite.MS SQLite
+--  SQLite.MS SQLite
 
 SELECT
 	[m_1].[ID],
@@ -12,7 +12,7 @@ FROM
 		INNER JOIN [Issue3757Level2] [d] ON [m_1].[ID] = [d].[ParentId]
 
 BeforeExecute
--- SQLite.MS SQLite
+--  SQLite.MS SQLite
 
 SELECT
 	[l1].[ID],

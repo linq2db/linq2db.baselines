@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SQLite.MS SQLite
+--  SQLite.MS SQLite
 DECLARE @p  -- Int32
 SET     @p = 10
 
@@ -9,7 +9,7 @@ SET
 	[Value] = @p + [SampleClass].[Value] * 2
 
 BeforeExecute
--- SQLite.MS SQLite
+--  SQLite.MS SQLite
 
 SELECT
 	[t1].[Id],

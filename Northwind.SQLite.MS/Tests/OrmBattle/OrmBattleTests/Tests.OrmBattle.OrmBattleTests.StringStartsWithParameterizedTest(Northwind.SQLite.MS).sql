@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Northwind.SQLite.MS SQLite.MS SQLite
+--  Northwind.SQLite.MS SQLite.MS SQLite
 DECLARE @likeA NVarChar(2) -- String
 SET     @likeA = 'A%'
 DECLARE @likeL NVarChar(2) -- String

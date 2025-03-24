@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SQLite.Classic SQLite
+--  SQLite.Classic SQLite
 DECLARE @var1  -- Int32
 SET     @var1 = 4
 
@@ -14,7 +14,7 @@ FROM
 	) [t1]
 
 BeforeExecute
--- SQLite.Classic SQLite
+--  SQLite.Classic SQLite
 DECLARE @var1  -- Int32
 SET     @var1 = 4
 

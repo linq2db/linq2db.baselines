@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SQLite.MS SQLite
+--  SQLite.MS SQLite
 DECLARE @s1 NVarChar(1) -- String
 SET     @s1 = char(0)
 

@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SQLite.MS SQLite
+--  SQLite.MS SQLite
 
 SELECT
 	[i].[InvoiceID],
@@ -29,7 +29,7 @@ FROM
 		) [ia] ON [ia].[InvoiceID] = [i].[InvoiceID]
 
 BeforeExecute
--- SQLite.MS SQLite
+--  SQLite.MS SQLite
 
 SELECT
 	[i].[InvoiceID],
@@ -43,7 +43,7 @@ FROM
 		LEFT JOIN [InvoiceReferenceNumber] [r] ON [r].[InvoiceReferenceNumberID] = [i].[InvoiceReferenceNumberID]
 
 BeforeExecute
--- SQLite.MS SQLite
+--  SQLite.MS SQLite
 
 SELECT
 	[i].[InvoiceID],

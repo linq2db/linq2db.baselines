@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SQLite.Classic SQLite
+--  SQLite.Classic SQLite
 
 WITH [cte] ([Id], [FirstName], [LastName])
 AS

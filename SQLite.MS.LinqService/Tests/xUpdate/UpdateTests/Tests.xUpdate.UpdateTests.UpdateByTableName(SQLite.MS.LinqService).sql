@@ -1,10 +1,10 @@
 ﻿BeforeExecute
--- SQLite.MS SQLite
+--  SQLite.MS SQLite
 
 DROP TABLE IF EXISTS [xxPerson]
 
 BeforeExecute
--- SQLite.MS SQLite
+--  SQLite.MS SQLite
 
 CREATE TABLE [xxPerson]
 (
@@ -16,7 +16,7 @@ CREATE TABLE [xxPerson]
 )
 
 BeforeExecute
--- SQLite.MS SQLite
+--  SQLite.MS SQLite
 DECLARE @FirstName NVarChar(6) -- String
 SET     @FirstName = 'Steven'
 DECLARE @LastName NVarChar(4) -- String
@@ -42,7 +42,7 @@ VALUES
 )
 
 BeforeExecute
--- SQLite.MS SQLite
+--  SQLite.MS SQLite
 
 SELECT
 	COUNT(*)
@@ -50,7 +50,7 @@ FROM
 	[xxPerson] [t1]
 
 BeforeExecute
--- SQLite.MS SQLite
+--  SQLite.MS SQLite
 
 SELECT
 	[t1].[FirstName],
@@ -63,7 +63,7 @@ FROM
 LIMIT 2
 
 BeforeExecute
--- SQLite.MS SQLite
+--  SQLite.MS SQLite
 DECLARE @FirstName NVarChar(6) -- String
 SET     @FirstName = 'Steven'
 DECLARE @LastName NVarChar(4) -- String
@@ -86,7 +86,7 @@ WHERE
 	[xxPerson].[PersonID] = @ID
 
 BeforeExecute
--- SQLite.MS SQLite
+--  SQLite.MS SQLite
 
 SELECT
 	[t1].[FirstName],
@@ -99,7 +99,7 @@ FROM
 LIMIT 2
 
 BeforeExecute
--- SQLite.MS SQLite
+--  SQLite.MS SQLite
 
 DROP TABLE [xxPerson]
 

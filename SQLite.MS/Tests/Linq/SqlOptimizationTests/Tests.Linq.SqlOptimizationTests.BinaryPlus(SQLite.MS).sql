@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SQLite.MS SQLite
+--  SQLite.MS SQLite
 
 SELECT
 	[t].[Id] - 3
@@ -7,7 +7,7 @@ FROM
 	[DataClass] [t]
 
 BeforeExecute
--- SQLite.MS SQLite
+--  SQLite.MS SQLite
 DECLARE @n  -- Int32
 SET     @n = 2
 

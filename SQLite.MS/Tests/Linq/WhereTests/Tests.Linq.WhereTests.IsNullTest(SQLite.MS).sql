@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SQLite.MS SQLite
+--  SQLite.MS SQLite
 
 SELECT
 	[nm].[MiddleName]
@@ -9,7 +9,7 @@ WHERE
 	[nm].[MiddleName] IS NOT NULL
 
 BeforeExecute
--- SQLite.MS SQLite
+--  SQLite.MS SQLite
 
 SELECT
 	[t1].[FirstName],

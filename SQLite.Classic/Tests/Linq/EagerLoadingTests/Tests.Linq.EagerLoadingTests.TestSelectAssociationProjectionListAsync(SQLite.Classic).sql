@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 BeginTransactionAsync(Serializable)
 BeforeExecute
--- SQLite.Classic SQLite (asynchronously)
+--  SQLite.Classic SQLite (asynchronously)
 DECLARE @intParam  -- Int32
 SET     @intParam = 0
 
@@ -22,7 +22,7 @@ FROM
 		INNER JOIN [DetailClass] [d] ON [m_2].[Id1] = [d].[MasterId]
 
 BeforeExecute
--- SQLite.Classic SQLite (asynchronously)
+--  SQLite.Classic SQLite (asynchronously)
 DECLARE @intParam  -- Int32
 SET     @intParam = 0
 
@@ -45,7 +45,7 @@ WHERE
 	[d].[DetailId] % 2 = 0
 
 BeforeExecute
--- SQLite.Classic SQLite (asynchronously)
+--  SQLite.Classic SQLite (asynchronously)
 DECLARE @intParam  -- Int32
 SET     @intParam = 0
 
@@ -66,7 +66,7 @@ WHERE
 	[d].[DetailId] % 2 = 0
 
 BeforeExecute
--- SQLite.Classic SQLite (asynchronously)
+--  SQLite.Classic SQLite (asynchronously)
 DECLARE @intParam  -- Int32
 SET     @intParam = 0
 

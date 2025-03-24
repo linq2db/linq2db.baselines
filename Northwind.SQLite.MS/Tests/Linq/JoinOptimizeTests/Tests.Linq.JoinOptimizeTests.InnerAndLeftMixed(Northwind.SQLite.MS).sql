@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Northwind.SQLite.MS SQLite.MS SQLite
+--  Northwind.SQLite.MS SQLite.MS SQLite
 
 SELECT
 	[od].[OrderID],
@@ -15,7 +15,7 @@ ORDER BY
 	[od].[OrderID]
 
 BeforeExecute
--- Northwind.SQLite.MS SQLite.MS SQLite
+--  Northwind.SQLite.MS SQLite.MS SQLite
 
 SELECT
 	[v].[OrderID]

@@ -63,7 +63,7 @@ CREATE TABLE [TypeB]
 )
 
 BeforeExecute
--- SQLite.Classic SQLite
+--  SQLite.Classic SQLite
 
 SELECT DISTINCT
 	[a_Ref4].[Field6],
@@ -80,7 +80,7 @@ WHERE
 	[t1].[Field3] IS NOT NULL
 
 BeforeExecute
--- SQLite.Classic SQLite
+--  SQLite.Classic SQLite
 
 SELECT
 	[g_2].[Field6],

@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SQLite.MS SQLite
+--  SQLite.MS SQLite
 DECLARE @Column  -- Int32
 SET     @Column = 2
 DECLARE @ColumnNullable  -- Int32
@@ -15,7 +15,7 @@ WHERE
 	[r].[Column] = @Column AND [r].[ColumnNullable] = @ColumnNullable
 
 BeforeExecute
--- SQLite.MS SQLite
+--  SQLite.MS SQLite
 
 SELECT
 	[r].[Id],
@@ -27,13 +27,13 @@ WHERE
 	[r].[Column] = 2 AND [r].[ColumnNullable] = 3
 
 BeforeExecute
--- SQLite.MS SQLite
+--  SQLite.MS SQLite
 
 DELETE FROM
 	[IntEnumTable]
 
 BeforeExecute
--- SQLite.MS SQLite
+--  SQLite.MS SQLite
 DECLARE @Id  -- Int32
 SET     @Id = 1
 DECLARE @Column  -- Int32
@@ -55,7 +55,7 @@ VALUES
 )
 
 BeforeExecute
--- SQLite.MS SQLite
+--  SQLite.MS SQLite
 DECLARE @Id  -- Int32
 SET     @Id = 2
 DECLARE @Column  -- Int32
@@ -77,7 +77,7 @@ VALUES
 )
 
 BeforeExecute
--- SQLite.MS SQLite
+--  SQLite.MS SQLite
 
 SELECT
 	[t1].[Id],
@@ -89,13 +89,13 @@ ORDER BY
 	[t1].[Id]
 
 BeforeExecute
--- SQLite.MS SQLite
+--  SQLite.MS SQLite
 
 DELETE FROM
 	[IntEnumTable]
 
 BeforeExecute
--- SQLite.MS SQLite
+--  SQLite.MS SQLite
 
 INSERT INTO [IntEnumTable]
 (
@@ -108,7 +108,7 @@ VALUES
 (2,2,3)
 
 BeforeExecute
--- SQLite.MS SQLite
+--  SQLite.MS SQLite
 
 SELECT
 	[t1].[Id],
@@ -120,13 +120,13 @@ ORDER BY
 	[t1].[Id]
 
 BeforeExecute
--- SQLite.MS SQLite
+--  SQLite.MS SQLite
 
 DELETE FROM
 	[IntEnumTable]
 
 BeforeExecute
--- SQLite.MS SQLite
+--  SQLite.MS SQLite
 
 INSERT INTO [IntEnumTable]
 (
@@ -139,7 +139,7 @@ VALUES
 (2,2,3)
 
 BeforeExecute
--- SQLite.MS SQLite
+--  SQLite.MS SQLite
 
 SELECT
 	[t1].[Id],

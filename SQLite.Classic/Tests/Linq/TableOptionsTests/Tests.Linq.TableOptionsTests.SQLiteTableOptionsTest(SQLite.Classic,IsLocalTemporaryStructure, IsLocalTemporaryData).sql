@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SQLite.Classic SQLite
+--  SQLite.Classic SQLite
 
 CREATE TEMPORARY TABLE temp.[TestTable]
 (
@@ -8,7 +8,7 @@ CREATE TEMPORARY TABLE temp.[TestTable]
 )
 
 BeforeExecute
--- SQLite.Classic SQLite
+--  SQLite.Classic SQLite
 
 DROP TABLE IF EXISTS temp.[TestTable]
 

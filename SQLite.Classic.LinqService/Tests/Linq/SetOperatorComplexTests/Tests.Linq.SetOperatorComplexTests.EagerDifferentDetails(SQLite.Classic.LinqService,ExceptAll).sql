@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SQLite.Classic SQLite
+--  SQLite.Classic SQLite
 
 SELECT
 	[m_1].[BookId],
@@ -20,7 +20,7 @@ FROM
 		LEFT JOIN [Author] [a_Author] ON [d].[FkAuthorId] = [a_Author].[AuthorId]
 
 BeforeExecute
--- SQLite.Classic SQLite
+--  SQLite.Classic SQLite
 
 SELECT
 	[a_Book].[BookId],
@@ -33,7 +33,7 @@ WHERE
 	[a_Book].[Discriminator] = 'Roman'
 
 BeforeExecute
--- SQLite.Classic SQLite
+--  SQLite.Classic SQLite
 
 SELECT
 	[m_1].[BookId],
@@ -59,7 +59,7 @@ FROM
 		LEFT JOIN [Author] [a_Author] ON [d_1].[FkAuthorId] = [a_Author].[AuthorId]
 
 BeforeExecute
--- SQLite.Classic SQLite
+--  SQLite.Classic SQLite
 
 SELECT
 	[m_1].[AuthorId],
@@ -74,7 +74,7 @@ FROM
 		LEFT JOIN [Book] [a_Book] ON [d].[FkBookId] = [a_Book].[BookId]
 
 BeforeExecute
--- SQLite.Classic SQLite
+--  SQLite.Classic SQLite
 
 SELECT
 	[t1].[AuthorId],

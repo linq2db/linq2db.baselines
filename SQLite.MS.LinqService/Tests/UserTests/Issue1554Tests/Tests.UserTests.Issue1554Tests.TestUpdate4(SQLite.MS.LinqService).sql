@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SQLite.MS SQLite
+--  SQLite.MS SQLite
 DECLARE @Id  -- Int32
 SET     @Id = 0
 DECLARE @ClaimedKeyType NVarChar(3) -- String
@@ -21,7 +21,7 @@ VALUES
 )
 
 BeforeExecute
--- SQLite.MS SQLite
+--  SQLite.MS SQLite
 DECLARE @ClaimedKeyType NVarChar(2) -- String
 SET     @ClaimedKeyType = 'EC'
 DECLARE @ClaimedKeyTypeN NVarChar(2) -- String
@@ -36,7 +36,7 @@ WHERE
 	[Issue1554Table].[Id] = 0
 
 BeforeExecute
--- SQLite.MS SQLite
+--  SQLite.MS SQLite
 
 SELECT
 	[t1].[Id],

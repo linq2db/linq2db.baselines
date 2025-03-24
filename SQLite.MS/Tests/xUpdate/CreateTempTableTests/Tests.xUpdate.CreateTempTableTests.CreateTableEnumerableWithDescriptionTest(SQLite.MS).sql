@@ -1,10 +1,10 @@
 ﻿BeforeExecute
--- SQLite.MS SQLite
+--  SQLite.MS SQLite
 
 DROP TABLE IF EXISTS [TempTable]
 
 BeforeExecute
--- SQLite.MS SQLite
+--  SQLite.MS SQLite
 
 CREATE TABLE IF NOT EXISTS [TempTable]
 (
@@ -12,7 +12,7 @@ CREATE TABLE IF NOT EXISTS [TempTable]
 )
 
 BeforeExecute
--- SQLite.MS SQLite
+--  SQLite.MS SQLite
 
 INSERT INTO [TempTable]
 (
@@ -22,7 +22,7 @@ VALUES
 ('John')
 
 BeforeExecute
--- SQLite.MS SQLite
+--  SQLite.MS SQLite
 
 SELECT
 	[t].[Name]
@@ -31,7 +31,7 @@ FROM
 		INNER JOIN [TempTable] [t] ON [p].[FirstName] = [t].[Name]
 
 BeforeExecute
--- SQLite.MS SQLite
+--  SQLite.MS SQLite
 
 DROP TABLE IF EXISTS [TempTable]
 

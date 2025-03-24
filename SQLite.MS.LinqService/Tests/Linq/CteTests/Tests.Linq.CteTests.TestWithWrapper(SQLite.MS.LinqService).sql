@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SQLite.MS SQLite
+--  SQLite.MS SQLite
 
 WITH [CTE_1] ([Child_ParentID], [Child_ChildID])
 AS
@@ -20,7 +20,7 @@ FROM
 		INNER JOIN [CTE_1] [c_1] ON [p].[ParentID] = [c_1].[Child_ParentID]
 
 BeforeExecute
--- SQLite.MS SQLite
+--  SQLite.MS SQLite
 
 SELECT
 	[p].[ParentID],

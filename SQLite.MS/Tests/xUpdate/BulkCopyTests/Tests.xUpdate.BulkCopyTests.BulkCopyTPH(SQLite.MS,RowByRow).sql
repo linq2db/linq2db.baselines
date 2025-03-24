@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SQLite.MS SQLite
+--  SQLite.MS SQLite
 DECLARE @Id  -- Int32
 SET     @Id = 1
 DECLARE @Discriminator  -- Int32
@@ -21,7 +21,7 @@ VALUES
 )
 
 BeforeExecute
--- SQLite.MS SQLite
+--  SQLite.MS SQLite
 DECLARE @Id  -- Int32
 SET     @Id = 2
 DECLARE @Discriminator  -- Int32
@@ -43,7 +43,7 @@ VALUES
 )
 
 BeforeExecute
--- SQLite.MS SQLite
+--  SQLite.MS SQLite
 DECLARE @Id  -- Int32
 SET     @Id = 3
 DECLARE @Discriminator  -- Int32
@@ -69,7 +69,7 @@ VALUES
 )
 
 BeforeExecute
--- SQLite.MS SQLite
+--  SQLite.MS SQLite
 
 SELECT
 	[t1].[Discriminator],
@@ -84,7 +84,7 @@ ORDER BY
 	[t1].[Id]
 
 BeforeExecute
--- SQLite.MS SQLite
+--  SQLite.MS SQLite
 
 SELECT
 	[x].[Discriminator],
@@ -100,7 +100,7 @@ WHERE
 LIMIT 2
 
 BeforeExecute
--- SQLite.MS SQLite
+--  SQLite.MS SQLite
 
 SELECT
 	[x].[Discriminator],
@@ -116,7 +116,7 @@ WHERE
 LIMIT 2
 
 BeforeExecute
--- SQLite.MS SQLite
+--  SQLite.MS SQLite
 
 SELECT
 	[x].[Discriminator],
@@ -132,7 +132,7 @@ WHERE
 LIMIT 2
 
 BeforeExecute
--- SQLite.MS SQLite
+--  SQLite.MS SQLite
 
 SELECT
 	[x].[Discriminator],
@@ -148,7 +148,7 @@ WHERE
 LIMIT 2
 
 BeforeExecute
--- SQLite.MS SQLite
+--  SQLite.MS SQLite
 
 SELECT
 	[x].[Discriminator],
@@ -164,7 +164,7 @@ WHERE
 LIMIT 2
 
 BeforeExecute
--- SQLite.MS SQLite
+--  SQLite.MS SQLite
 
 SELECT
 	[x].[Discriminator],

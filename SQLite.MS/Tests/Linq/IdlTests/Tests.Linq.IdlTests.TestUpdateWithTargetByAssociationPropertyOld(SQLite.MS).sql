@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SQLite.MS SQLite
+--  SQLite.MS SQLite
 
 INSERT INTO [Parent]
 (
@@ -11,7 +11,7 @@ VALUES
 )
 
 BeforeExecute
--- SQLite.MS SQLite
+--  SQLite.MS SQLite
 
 INSERT INTO [Child]
 (
@@ -25,7 +25,7 @@ VALUES
 )
 
 BeforeExecute
--- SQLite.MS SQLite
+--  SQLite.MS SQLite
 
 UPDATE
 	[Parent]
@@ -37,7 +37,7 @@ WHERE
 	[child_1].[ChildID] = 10000 AND [child_1].[ParentID] = [Parent].[ParentID]
 
 BeforeExecute
--- SQLite.MS SQLite
+--  SQLite.MS SQLite
 
 DELETE FROM
 	[Child]
@@ -45,7 +45,7 @@ WHERE
 	[Child].[ChildID] = 10000
 
 BeforeExecute
--- SQLite.MS SQLite
+--  SQLite.MS SQLite
 
 DELETE FROM
 	[Parent]

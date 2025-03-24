@@ -1,10 +1,10 @@
 ﻿BeforeExecute
--- SQLite.Classic SQLite
+--  SQLite.Classic SQLite
 
 UPDATE sqlite_sequence SET seq = 2 WHERE name = 'AllTypes'
 
 BeforeExecute
--- SQLite.Classic SQLite
+--  SQLite.Classic SQLite
 DECLARE @Value  -- Int32
 SET     @Value = 0
 
@@ -18,12 +18,12 @@ VALUES
 )
 
 BeforeExecute
--- SQLite.Classic SQLite
+--  SQLite.Classic SQLite
 
 SELECT last_insert_rowid()
 
 BeforeExecute
--- SQLite.Classic SQLite (asynchronously)
+--  SQLite.Classic SQLite (asynchronously)
 
 INSERT INTO [AllTypes]
 (
@@ -34,7 +34,7 @@ VALUES
 (300)
 
 BeforeExecute
--- SQLite.Classic SQLite
+--  SQLite.Classic SQLite
 DECLARE @lastId  -- Int32
 SET     @lastId = 3
 
@@ -49,7 +49,7 @@ ORDER BY
 	[t1].[ID]
 
 BeforeExecute
--- SQLite.Classic SQLite
+--  SQLite.Classic SQLite
 DECLARE @lastId  -- Int32
 SET     @lastId = 3
 

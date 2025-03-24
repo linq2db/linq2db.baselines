@@ -1,10 +1,10 @@
 ﻿BeforeExecute
--- SQLite.Classic SQLite (asynchronously)
+--  SQLite.Classic SQLite (asynchronously)
 
 DROP TABLE [TestTable]
 
 BeforeExecute
--- SQLite.Classic SQLite (asynchronously)
+--  SQLite.Classic SQLite (asynchronously)
 
 CREATE TABLE [TestTable]
 (
@@ -15,7 +15,7 @@ CREATE TABLE [TestTable]
 )
 
 BeforeExecute
--- SQLite.Classic SQLite (asynchronously)
+--  SQLite.Classic SQLite (asynchronously)
 
 SELECT
 	[t1].[ID],
@@ -26,7 +26,7 @@ FROM
 	[TestTable] [t1]
 
 BeforeExecute
--- SQLite.Classic SQLite (asynchronously)
+--  SQLite.Classic SQLite (asynchronously)
 
 DROP TABLE [TestTable]
 

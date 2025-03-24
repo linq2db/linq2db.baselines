@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 BeginTransaction(Serializable)
 BeforeExecute
--- Northwind.SQLite SQLite.Classic SQLite
+--  Northwind.SQLite SQLite.Classic SQLite
 
 SELECT
 	[m_1].[ProductID],
@@ -35,7 +35,7 @@ FROM
 		ON [d_1].[ProductID] = [m_1].[ProductID] AND [a_Supplier].[SupplierID] = [m_1].[SupplierID]
 
 BeforeExecute
--- Northwind.SQLite SQLite.Classic SQLite
+--  Northwind.SQLite SQLite.Classic SQLite
 
 SELECT
 	[m_1].[SupplierID],
@@ -47,7 +47,7 @@ FROM
 BeforeExecute
 DisposeTransaction
 BeforeExecute
--- Northwind.SQLite SQLite.Classic SQLite
+--  Northwind.SQLite SQLite.Classic SQLite
 
 SELECT
 	[supplier].[SupplierID]

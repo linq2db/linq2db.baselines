@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SQLite.MS SQLite
+--  SQLite.MS SQLite
 DECLARE @rank VarChar(19) -- AnsiString
 SET     @rank = 'strange(''function")'
 

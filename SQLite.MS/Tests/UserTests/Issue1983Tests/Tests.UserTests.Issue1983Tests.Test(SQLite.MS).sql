@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SQLite.MS SQLite
+--  SQLite.MS SQLite
 
 SELECT
 	[cu].[Id],
@@ -24,7 +24,7 @@ WHERE
 	[cu].[CountOfCards] IS NULL
 
 BeforeExecute
--- SQLite.MS SQLite
+--  SQLite.MS SQLite
 
 SELECT
 	[cu].[Id],
@@ -67,7 +67,7 @@ WHERE
 	) <> 0
 
 BeforeExecute
--- SQLite.MS SQLite
+--  SQLite.MS SQLite
 
 SELECT
 	[cu].[Id],

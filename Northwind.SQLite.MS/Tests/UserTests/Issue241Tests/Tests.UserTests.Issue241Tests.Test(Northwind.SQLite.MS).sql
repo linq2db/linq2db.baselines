@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 BeginTransaction(Serializable)
 BeforeExecute
--- Northwind.SQLite.MS SQLite.MS SQLite
+--  Northwind.SQLite.MS SQLite.MS SQLite
 
 SELECT
 	[m_1].[CustomerID],
@@ -24,7 +24,7 @@ WHERE
 BeforeExecute
 DisposeTransaction
 BeforeExecute
--- Northwind.SQLite.MS SQLite.MS SQLite
+--  Northwind.SQLite.MS SQLite.MS SQLite
 
 SELECT
 	[o].[CustomerID]

@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SQLite.MS SQLite
+--  SQLite.MS SQLite
 
 SELECT
 	COUNT(*)
@@ -9,7 +9,7 @@ WHERE
 	[x].[A] IS NULL
 
 BeforeExecute
--- SQLite.MS SQLite
+--  SQLite.MS SQLite
 
 SELECT
 	COUNT(*)
@@ -19,7 +19,7 @@ WHERE
 	[x].[A] IS NULL
 
 BeforeExecute
--- SQLite.MS SQLite
+--  SQLite.MS SQLite
 DECLARE @p  -- Int32
 SET     @p = NULL
 

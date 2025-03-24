@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SQLite.Classic SQLite
+--  SQLite.Classic SQLite
 
 INSERT INTO [Parent]
 (
@@ -11,7 +11,7 @@ VALUES
 )
 
 BeforeExecute
--- SQLite.Classic SQLite
+--  SQLite.Classic SQLite
 
 INSERT INTO [Child]
 (
@@ -25,7 +25,7 @@ VALUES
 )
 
 BeforeExecute
--- SQLite.Classic SQLite
+--  SQLite.Classic SQLite
 DECLARE @Value1  -- Int32
 SET     @Value1 = 5
 
@@ -39,7 +39,7 @@ WHERE
 	[child_1].[ChildID] = 10000 AND [child_1].[ParentID] = [Parent].[ParentID]
 
 BeforeExecute
--- SQLite.Classic SQLite
+--  SQLite.Classic SQLite
 
 DELETE FROM
 	[Child]
@@ -47,7 +47,7 @@ WHERE
 	[Child].[ChildID] = 10000
 
 BeforeExecute
--- SQLite.Classic SQLite
+--  SQLite.Classic SQLite
 
 DELETE FROM
 	[Parent]

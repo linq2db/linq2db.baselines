@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Northwind.SQLite SQLite.Classic SQLite
+--  Northwind.SQLite SQLite.Classic SQLite
 
 WITH [EmployeeSubordinatesReport]
 (
@@ -40,7 +40,7 @@ FROM
 		LEFT JOIN [EmployeeSubordinatesReport] [manager] ON [employee].[ReportsTo] = [manager].[EmployeeID]
 
 BeforeExecute
--- Northwind.SQLite SQLite.Classic SQLite
+--  Northwind.SQLite SQLite.Classic SQLite
 
 SELECT
 	[employee].[LastName],

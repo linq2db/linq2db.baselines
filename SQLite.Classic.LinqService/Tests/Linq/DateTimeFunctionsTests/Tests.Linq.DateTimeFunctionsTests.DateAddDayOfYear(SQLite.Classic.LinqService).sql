@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SQLite.Classic SQLite
+--  SQLite.Classic SQLite
 
 SELECT
 	Date(strftime('%Y-%m-%d %H:%M:%f', [t].[DateTimeValue], '3 Day'))

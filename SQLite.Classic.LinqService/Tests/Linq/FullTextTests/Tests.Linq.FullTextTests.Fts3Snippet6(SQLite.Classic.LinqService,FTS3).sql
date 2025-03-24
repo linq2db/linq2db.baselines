@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SQLite.Classic SQLite
+--  SQLite.Classic SQLite
 
 SELECT
 	snippet([r].[FTS3_TABLE], '>', '<', '[zzz]', 1, 1)

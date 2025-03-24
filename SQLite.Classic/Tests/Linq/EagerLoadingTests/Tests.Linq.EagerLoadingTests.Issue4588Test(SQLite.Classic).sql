@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 BeginTransaction(Serializable)
 BeforeExecute
--- SQLite.Classic SQLite
+--  SQLite.Classic SQLite
 DECLARE @take  -- Int32
 SET     @take = 10
 DECLARE @skip  -- Int32
@@ -42,7 +42,7 @@ FROM
 		INNER JOIN [SubOrderDetail] [d_1] ON [m_1].[Id] = [d_1].[SubOrderId]
 
 BeforeExecute
--- SQLite.Classic SQLite
+--  SQLite.Classic SQLite
 DECLARE @take  -- Int32
 SET     @take = 10
 DECLARE @skip  -- Int32
@@ -74,7 +74,7 @@ FROM
 BeforeExecute
 DisposeTransaction
 BeforeExecute
--- SQLite.Classic SQLite
+--  SQLite.Classic SQLite
 DECLARE @take  -- Int32
 SET     @take = 10
 DECLARE @skip  -- Int32

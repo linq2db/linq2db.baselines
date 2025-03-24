@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SQLite.MS SQLite
+--  SQLite.MS SQLite
 
 DELETE FROM
 	[Parent]
@@ -7,7 +7,7 @@ WHERE
 	[Parent].[ParentID] > 1000
 
 BeforeExecute
--- SQLite.MS SQLite
+--  SQLite.MS SQLite
 
 UPDATE
 	[Parent]
@@ -21,7 +21,7 @@ WHERE
 	[c_2].[ChildID] = 11
 
 BeforeExecute
--- SQLite.MS SQLite
+--  SQLite.MS SQLite
 DECLARE @ParentID  -- Int32
 SET     @ParentID = 1
 

@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SQLite.MS SQLite
+--  SQLite.MS SQLite
 
 SELECT
 	[m_1].[PersonID],
@@ -12,7 +12,7 @@ WHERE
 	Lower([m_1].[FirstName]) LIKE '%test%' ESCAPE '~'
 
 BeforeExecute
--- SQLite.MS SQLite
+--  SQLite.MS SQLite
 
 SELECT
 	[p].[FirstName],

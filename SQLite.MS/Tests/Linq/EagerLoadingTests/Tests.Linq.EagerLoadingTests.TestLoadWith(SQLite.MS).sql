@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 BeginTransaction(Serializable)
 BeforeExecute
--- SQLite.MS SQLite
+--  SQLite.MS SQLite
 DECLARE @intParam  -- Int32
 SET     @intParam = 0
 
@@ -22,7 +22,7 @@ FROM
 		INNER JOIN [DetailClass] [d] ON [m_2].[Id1] = [d].[MasterId]
 
 BeforeExecute
--- SQLite.MS SQLite
+--  SQLite.MS SQLite
 DECLARE @intParam  -- Int32
 SET     @intParam = 0
 
@@ -41,7 +41,7 @@ WHERE
 BeforeExecute
 DisposeTransaction
 BeforeExecute
--- SQLite.MS SQLite
+--  SQLite.MS SQLite
 DECLARE @intParam  -- Int32
 SET     @intParam = 0
 

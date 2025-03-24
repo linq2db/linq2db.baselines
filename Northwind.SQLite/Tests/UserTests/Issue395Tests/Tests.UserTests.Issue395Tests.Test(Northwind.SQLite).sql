@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Northwind.SQLite SQLite.Classic SQLite
+--  Northwind.SQLite SQLite.Classic SQLite
 
 SELECT
 	[t1].[Key_1],
@@ -43,7 +43,7 @@ GROUP BY
 LIMIT 1
 
 BeforeExecute
--- Northwind.SQLite SQLite.Classic SQLite
+--  Northwind.SQLite SQLite.Classic SQLite
 DECLARE @ShipCountry NVarChar(9) -- String
 SET     @ShipCountry = 'Argentina'
 
@@ -55,7 +55,7 @@ WHERE
 	[x].[ShipVia] = 1 AND [x].[ShipCountry] = @ShipCountry
 
 BeforeExecute
--- Northwind.SQLite SQLite.Classic SQLite
+--  Northwind.SQLite SQLite.Classic SQLite
 DECLARE @ShipCountry NVarChar(9) -- String
 SET     @ShipCountry = 'Argentina'
 
@@ -67,7 +67,7 @@ WHERE
 	[x].[ShipVia] = 2 AND [x].[ShipCountry] = @ShipCountry
 
 BeforeExecute
--- Northwind.SQLite SQLite.Classic SQLite
+--  Northwind.SQLite SQLite.Classic SQLite
 DECLARE @ShipCountry NVarChar(9) -- String
 SET     @ShipCountry = 'Argentina'
 

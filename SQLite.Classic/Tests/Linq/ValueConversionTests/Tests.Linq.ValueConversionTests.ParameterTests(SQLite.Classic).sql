@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SQLite.Classic SQLite
+--  SQLite.Classic SQLite
 DECLARE @testedList NVarChar(20) -- String
 SET     @testedList = '[{"Value":"Value1"}]'
 

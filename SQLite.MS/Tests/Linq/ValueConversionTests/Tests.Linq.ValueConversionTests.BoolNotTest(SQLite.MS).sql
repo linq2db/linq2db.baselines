@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SQLite.MS SQLite
+--  SQLite.MS SQLite
 DECLARE @false_value VarChar(1) -- AnsiString
 SET     @false_value = 'N'
 

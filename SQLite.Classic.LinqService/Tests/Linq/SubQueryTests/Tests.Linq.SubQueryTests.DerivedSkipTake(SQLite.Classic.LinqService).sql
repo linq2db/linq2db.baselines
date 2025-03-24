@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SQLite.Classic SQLite
+--  SQLite.Classic SQLite
 DECLARE @take  -- Int32
 SET     @take = 1
 DECLARE @skip  -- Int32
@@ -19,7 +19,7 @@ FROM
 	) [t2]
 
 BeforeExecute
--- SQLite.Classic SQLite
+--  SQLite.Classic SQLite
 
 SELECT
 	[t1].[ParentID],

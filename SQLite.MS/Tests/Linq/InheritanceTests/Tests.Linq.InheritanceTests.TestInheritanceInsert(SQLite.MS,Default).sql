@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SQLite.MS SQLite
+--  SQLite.MS SQLite
 
 INSERT INTO [InheritanceFilter]
 (
@@ -21,7 +21,7 @@ VALUES
 (6,22,0,26,0,0,0,16)
 
 BeforeExecute
--- SQLite.MS SQLite
+--  SQLite.MS SQLite
 
 SELECT
 	[t1].[Code],

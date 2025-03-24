@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SQLite.Classic SQLite
+--  SQLite.Classic SQLite
 DECLARE @gender Char(1) -- AnsiStringFixedLength
 SET     @gender = 'O'
 

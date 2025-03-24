@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SQLite.Classic SQLite
+--  SQLite.Classic SQLite
 
 DELETE FROM
 	[LinqDataTypes]
@@ -7,7 +7,7 @@ WHERE
 	[LinqDataTypes].[ID] > 1000
 
 BeforeExecute
--- SQLite.Classic SQLite
+--  SQLite.Classic SQLite
 
 INSERT INTO [LinqDataTypes]
 (
@@ -23,7 +23,7 @@ VALUES
 )
 
 BeforeExecute
--- SQLite.Classic SQLite
+--  SQLite.Classic SQLite
 
 SELECT
 	[t].[ID],
@@ -40,7 +40,7 @@ WHERE
 LIMIT 2
 
 BeforeExecute
--- SQLite.Classic SQLite
+--  SQLite.Classic SQLite
 
 DELETE FROM
 	[LinqDataTypes]

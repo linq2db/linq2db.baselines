@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SQLite.Classic SQLite
+--  SQLite.Classic SQLite
 
 DELETE FROM
 	[Person]
@@ -7,7 +7,7 @@ WHERE
 	[Person].[PersonID] > 4
 
 BeforeExecute
--- SQLite.Classic SQLite (asynchronously)
+--  SQLite.Classic SQLite (asynchronously)
 DECLARE @FirstName NVarChar(5) -- String
 SET     @FirstName = 'John0'
 DECLARE @LastName NVarChar(7) -- String
@@ -33,12 +33,12 @@ VALUES
 )
 
 BeforeExecute
--- SQLite.Classic SQLite (asynchronously)
+--  SQLite.Classic SQLite (asynchronously)
 
 SELECT last_insert_rowid()
 
 BeforeExecute
--- SQLite.Classic SQLite (asynchronously)
+--  SQLite.Classic SQLite (asynchronously)
 DECLARE @FirstName NVarChar(5) -- String
 SET     @FirstName = 'John1'
 DECLARE @LastName NVarChar(7) -- String
@@ -64,12 +64,12 @@ VALUES
 )
 
 BeforeExecute
--- SQLite.Classic SQLite (asynchronously)
+--  SQLite.Classic SQLite (asynchronously)
 
 SELECT last_insert_rowid()
 
 BeforeExecute
--- SQLite.Classic SQLite
+--  SQLite.Classic SQLite
 
 DELETE FROM
 	[Person]

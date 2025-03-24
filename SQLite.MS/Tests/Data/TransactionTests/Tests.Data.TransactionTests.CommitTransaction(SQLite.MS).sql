@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SQLite.MS SQLite
+--  SQLite.MS SQLite
 DECLARE @ParentID  -- Int32
 SET     @ParentID = 1010
 DECLARE @Value1  -- Int32
@@ -19,7 +19,7 @@ VALUES
 BeforeExecute
 BeginTransaction
 BeforeExecute
--- SQLite.MS SQLite
+--  SQLite.MS SQLite
 
 UPDATE
 	[Parent]
@@ -31,7 +31,7 @@ WHERE
 BeforeExecute
 CommitTransaction
 BeforeExecute
--- SQLite.MS SQLite
+--  SQLite.MS SQLite
 
 SELECT
 	[t].[ParentID],

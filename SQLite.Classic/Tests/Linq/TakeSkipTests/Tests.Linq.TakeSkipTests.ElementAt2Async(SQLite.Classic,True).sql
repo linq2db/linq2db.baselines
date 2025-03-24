@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SQLite.Classic SQLite (asynchronously)
+--  SQLite.Classic SQLite (asynchronously)
 DECLARE @n  -- Int32
 SET     @n = 3
 

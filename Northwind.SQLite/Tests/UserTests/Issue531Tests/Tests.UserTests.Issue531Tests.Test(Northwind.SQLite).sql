@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Northwind.SQLite SQLite.Classic SQLite
+--  Northwind.SQLite SQLite.Classic SQLite
 DECLARE @ext NVarChar(4) -- String
 SET     @ext = '5467'
 
@@ -28,7 +28,7 @@ WHERE
 	[e].[Extension] = @ext
 
 BeforeExecute
--- Northwind.SQLite SQLite.Classic SQLite
+--  Northwind.SQLite SQLite.Classic SQLite
 
 SELECT
 	[e].[EmployeeID],

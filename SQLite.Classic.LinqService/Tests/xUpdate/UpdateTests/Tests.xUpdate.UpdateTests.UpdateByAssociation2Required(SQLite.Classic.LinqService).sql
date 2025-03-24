@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SQLite.Classic SQLite
+--  SQLite.Classic SQLite
 DECLARE @id  -- Int32
 SET     @id = 3
 
@@ -13,7 +13,7 @@ WHERE
 	[p].[Id] = @id AND [p].[Id] = [MainTable].[Id]
 
 BeforeExecute
--- SQLite.Classic SQLite
+--  SQLite.Classic SQLite
 
 SELECT
 	[t1].[Id],

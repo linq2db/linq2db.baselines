@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Northwind.SQLite.MS SQLite.MS SQLite
+--  Northwind.SQLite.MS SQLite.MS SQLite
 
 SELECT
 	[order_1].[OrderID]
@@ -9,7 +9,7 @@ WHERE
 	strftime('%Y-%m-%d %H:%M:%f', [order_1].[OrderDate]) = strftime('%Y-%m-%d %H:%M:%f', '1997-11-14 00:00:00.000')
 
 BeforeExecute
--- Northwind.SQLite.MS SQLite.MS SQLite
+--  Northwind.SQLite.MS SQLite.MS SQLite
 
 SELECT
 	[order_1].[OrderID]

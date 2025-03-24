@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SQLite.Classic SQLite
+--  SQLite.Classic SQLite
 DECLARE @VBLocal_id  -- Int32
 SET     @VBLocal_id = 1
 

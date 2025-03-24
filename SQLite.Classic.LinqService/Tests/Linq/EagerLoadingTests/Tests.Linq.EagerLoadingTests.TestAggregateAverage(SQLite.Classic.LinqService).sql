@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SQLite.Classic SQLite
+--  SQLite.Classic SQLite
 
 SELECT
 	(
@@ -36,7 +36,7 @@ WHERE
 	) > 1
 
 BeforeExecute
--- SQLite.Classic SQLite
+--  SQLite.Classic SQLite
 
 SELECT
 	[m_1].[Id1],
@@ -53,7 +53,7 @@ FROM
 		INNER JOIN [DetailClass] [d] ON [m_1].[Id1] = [d].[MasterId]
 
 BeforeExecute
--- SQLite.Classic SQLite
+--  SQLite.Classic SQLite
 
 SELECT
 	[t1].[Id1],

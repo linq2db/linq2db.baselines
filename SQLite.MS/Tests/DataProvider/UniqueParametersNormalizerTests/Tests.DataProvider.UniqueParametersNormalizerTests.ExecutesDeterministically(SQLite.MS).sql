@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SQLite.MS SQLite (asynchronously)
+--  SQLite.MS SQLite (asynchronously)
 DECLARE @search NVarChar(5) -- String
 SET     @search = 'test%'
 DECLARE @search_1 NVarChar(4) -- String
@@ -31,7 +31,7 @@ WHERE
 	[row1_2].[Field1] LIKE @search_2 ESCAPE '~'
 
 BeforeExecute
--- SQLite.MS SQLite (asynchronously)
+--  SQLite.MS SQLite (asynchronously)
 DECLARE @search NVarChar(5) -- String
 SET     @search = 'test%'
 DECLARE @search_1 NVarChar(4) -- String
@@ -63,17 +63,17 @@ WHERE
 	[row1_2].[Field1] LIKE @search_2 ESCAPE '~'
 
 BeforeExecute
--- SQLite.MS SQLite (asynchronously)
+--  SQLite.MS SQLite (asynchronously)
 
 DROP TABLE IF EXISTS [table3]
 
 BeforeExecute
--- SQLite.MS SQLite (asynchronously)
+--  SQLite.MS SQLite (asynchronously)
 
 DROP TABLE IF EXISTS [table2]
 
 BeforeExecute
--- SQLite.MS SQLite (asynchronously)
+--  SQLite.MS SQLite (asynchronously)
 
 DROP TABLE IF EXISTS [table1]
 

@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SQLite.MS SQLite
+--  SQLite.MS SQLite
 DECLARE @ParameterP NVarChar(4) -- String
 SET     @ParameterP = 'John'
 

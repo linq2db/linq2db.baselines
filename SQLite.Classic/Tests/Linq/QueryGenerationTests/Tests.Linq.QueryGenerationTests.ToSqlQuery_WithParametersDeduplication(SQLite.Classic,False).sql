@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SQLite.Classic SQLite
+--  SQLite.Classic SQLite
 DECLARE @firstName NVarChar(255) -- String
 SET     @firstName = 'John'
 
@@ -15,7 +15,7 @@ WHERE
 	[p].[FirstName] = @firstName OR [p].[LastName] = @firstName
 
 BeforeExecute
--- SQLite.Classic SQLite
+--  SQLite.Classic SQLite
 DECLARE @firstName NVarChar(4) -- String
 SET     @firstName = 'John'
 

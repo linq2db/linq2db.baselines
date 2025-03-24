@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SQLite.Classic SQLite
+--  SQLite.Classic SQLite
 
 CREATE TABLE IF NOT EXISTS [DisposableTable]
 (
@@ -7,7 +7,7 @@ CREATE TABLE IF NOT EXISTS [DisposableTable]
 )
 
 BeforeExecute
--- SQLite.Classic SQLite
+--  SQLite.Classic SQLite
 
 DROP TABLE IF EXISTS [DisposableTable]
 

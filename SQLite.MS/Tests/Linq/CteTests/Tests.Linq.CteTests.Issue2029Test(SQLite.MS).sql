@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SQLite.MS SQLite
+--  SQLite.MS SQLite
 DECLARE @ncCodeBo NVarChar(30) -- String
 SET     @ncCodeBo = 'NCCodeBO:8110,SETUP_OSCILLOSCO'
 

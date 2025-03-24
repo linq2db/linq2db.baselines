@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SQLite.MS SQLite (asynchronously)
+--  SQLite.MS SQLite (asynchronously)
 
 CREATE TABLE [xxPerson]
 (
@@ -11,7 +11,7 @@ CREATE TABLE [xxPerson]
 )
 
 BeforeExecute
--- SQLite.MS SQLite (asynchronously)
+--  SQLite.MS SQLite (asynchronously)
 DECLARE @FirstName NVarChar(6) -- String
 SET     @FirstName = 'Steven'
 DECLARE @LastName NVarChar(4) -- String
@@ -37,7 +37,7 @@ VALUES
 )
 
 BeforeExecute
--- SQLite.MS SQLite (asynchronously)
+--  SQLite.MS SQLite (asynchronously)
 DECLARE @FirstName NVarChar(6) -- String
 SET     @FirstName = 'Steven'
 DECLARE @LastName NVarChar(4) -- String
@@ -63,12 +63,12 @@ VALUES
 )
 
 BeforeExecute
--- SQLite.MS SQLite (asynchronously)
+--  SQLite.MS SQLite (asynchronously)
 
 SELECT last_insert_rowid()
 
 BeforeExecute
--- SQLite.MS SQLite (asynchronously)
+--  SQLite.MS SQLite (asynchronously)
 DECLARE @FirstName NVarChar(6) -- String
 SET     @FirstName = 'Steven'
 DECLARE @LastName NVarChar(4) -- String
@@ -94,12 +94,12 @@ VALUES
 )
 
 BeforeExecute
--- SQLite.MS SQLite (asynchronously)
+--  SQLite.MS SQLite (asynchronously)
 
 SELECT last_insert_rowid()
 
 BeforeExecute
--- SQLite.MS SQLite (asynchronously)
+--  SQLite.MS SQLite (asynchronously)
 
 SELECT
 	COUNT(*)
@@ -107,7 +107,7 @@ FROM
 	[xxPerson] [t1]
 
 BeforeExecute
--- SQLite.MS SQLite (asynchronously)
+--  SQLite.MS SQLite (asynchronously)
 
 SELECT
 	COUNT(*)
@@ -118,12 +118,12 @@ WHERE
 	[p].[Gender] = 'M'
 
 BeforeExecute
--- SQLite.MS SQLite (asynchronously)
+--  SQLite.MS SQLite (asynchronously)
 
 DROP TABLE [xxPerson]
 
 BeforeExecute
--- SQLite.MS SQLite (asynchronously)
+--  SQLite.MS SQLite (asynchronously)
 
 DROP TABLE IF EXISTS [xxPerson]
 

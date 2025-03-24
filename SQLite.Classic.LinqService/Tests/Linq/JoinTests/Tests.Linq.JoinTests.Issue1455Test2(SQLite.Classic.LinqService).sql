@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SQLite.Classic SQLite
+--  SQLite.Classic SQLite
 DECLARE @cond NVarChar(3) -- String
 SET     @cond = '%C%'
 

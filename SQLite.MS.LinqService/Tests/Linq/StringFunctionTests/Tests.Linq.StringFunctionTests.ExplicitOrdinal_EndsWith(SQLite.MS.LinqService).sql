@@ -1,11 +1,11 @@
 ﻿BeforeExecute
--- SQLite.MS SQLite
+--  SQLite.MS SQLite
 
 DELETE FROM
 	[CollatedTable]
 
 BeforeExecute
--- SQLite.MS SQLite
+--  SQLite.MS SQLite
 DECLARE @Id  -- Int32
 SET     @Id = 1
 DECLARE @CaseSensitive NVarChar(10) -- String
@@ -27,7 +27,7 @@ VALUES
 )
 
 BeforeExecute
--- SQLite.MS SQLite
+--  SQLite.MS SQLite
 
 SELECT
 	COUNT(*)
@@ -38,7 +38,7 @@ WHERE
 	Substr([r].[CaseSensitive], -8) = 'stString'
 
 BeforeExecute
--- SQLite.MS SQLite
+--  SQLite.MS SQLite
 
 SELECT
 	COUNT(*)
@@ -49,7 +49,7 @@ WHERE
 	Substr([r].[CaseInsensitive], -8) = 'stString'
 
 BeforeExecute
--- SQLite.MS SQLite
+--  SQLite.MS SQLite
 
 SELECT
 	COUNT(*)
@@ -60,7 +60,7 @@ WHERE
 	Substr([r].[CaseSensitive], -8) = 'ststring'
 
 BeforeExecute
--- SQLite.MS SQLite
+--  SQLite.MS SQLite
 
 SELECT
 	COUNT(*)

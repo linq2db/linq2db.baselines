@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SQLite.MS SQLite
+--  SQLite.MS SQLite
 DECLARE @param  -- Int16
 SET     @param = 1
 
@@ -20,7 +20,7 @@ WHERE
 	CAST(@param AS INTEGER) = [t1].[SmallIntValue]
 
 BeforeExecute
--- SQLite.MS SQLite
+--  SQLite.MS SQLite
 
 SELECT
 	[t1].[ID],

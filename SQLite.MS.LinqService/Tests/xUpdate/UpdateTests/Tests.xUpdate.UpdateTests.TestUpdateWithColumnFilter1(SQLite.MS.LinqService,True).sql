@@ -1,10 +1,10 @@
 ﻿BeforeExecute
--- SQLite.MS SQLite
+--  SQLite.MS SQLite
 
 UPDATE sqlite_sequence SET seq = 4 WHERE name = 'Person'
 
 BeforeExecute
--- SQLite.MS SQLite
+--  SQLite.MS SQLite
 DECLARE @FirstName NVarChar(25) -- String
 SET     @FirstName = 'UpdateColumnFilterUpdated'
 DECLARE @LastName NVarChar(8) -- String
@@ -30,7 +30,7 @@ VALUES
 )
 
 BeforeExecute
--- SQLite.MS SQLite
+--  SQLite.MS SQLite
 DECLARE @FirstName NVarChar(25) -- String
 SET     @FirstName = 'UpdateColumnFilterUpdated'
 
@@ -47,7 +47,7 @@ WHERE
 LIMIT 1
 
 BeforeExecute
--- SQLite.MS SQLite
+--  SQLite.MS SQLite
 DECLARE @FirstName NVarChar(25) -- String
 SET     @FirstName = 'UpdateColumnFilterUpdated'
 DECLARE @LastName NVarChar(8) -- String
@@ -70,7 +70,7 @@ WHERE
 	[Person].[PersonID] = @ID
 
 BeforeExecute
--- SQLite.MS SQLite
+--  SQLite.MS SQLite
 DECLARE @FirstName NVarChar(25) -- String
 SET     @FirstName = 'UpdateColumnFilterUpdated'
 

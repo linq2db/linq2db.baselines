@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SQLite.Classic SQLite
+--  SQLite.Classic SQLite
 
 WITH [CTE_1] ([InvestorId], [SecurityClass], [Units])
 AS

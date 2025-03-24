@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SQLite.Classic SQLite
+--  SQLite.Classic SQLite
 DECLARE @param  -- Int32
 SET     @param = 33
 DECLARE @param_1 Decimal

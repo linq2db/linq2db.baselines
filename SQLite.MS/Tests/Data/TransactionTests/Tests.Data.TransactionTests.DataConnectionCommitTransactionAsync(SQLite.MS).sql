@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 BeginTransactionAsync
 BeforeExecute
--- SQLite.MS SQLite (asynchronously)
+--  SQLite.MS SQLite (asynchronously)
 DECLARE @ParentID  -- Int32
 SET     @ParentID = 1010
 DECLARE @Value1  -- Int32
@@ -21,7 +21,7 @@ VALUES
 BeforeExecute
 CommitTransactionAsync
 BeforeExecute
--- SQLite.MS SQLite
+--  SQLite.MS SQLite
 
 DELETE FROM
 	[Parent]

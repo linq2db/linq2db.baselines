@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SQLite.MS SQLite
+--  SQLite.MS SQLite
 
 CREATE TEMPORARY TABLE temp.[IsTemporaryTable]
 (
@@ -8,7 +8,7 @@ CREATE TEMPORARY TABLE temp.[IsTemporaryTable]
 )
 
 BeforeExecute
--- SQLite.MS SQLite
+--  SQLite.MS SQLite
 
 SELECT
 	[t1].[Id],
@@ -17,7 +17,7 @@ FROM
 	temp.[IsTemporaryTable] [t1]
 
 BeforeExecute
--- SQLite.MS SQLite
+--  SQLite.MS SQLite
 
 DROP TABLE IF EXISTS temp.[IsTemporaryTable]
 

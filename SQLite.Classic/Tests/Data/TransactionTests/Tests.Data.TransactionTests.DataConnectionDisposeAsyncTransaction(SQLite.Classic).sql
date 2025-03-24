@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 BeginTransaction
 BeforeExecute
--- SQLite.Classic SQLite
+--  SQLite.Classic SQLite
 DECLARE @ParentID  -- Int32
 SET     @ParentID = 1010
 DECLARE @Value1  -- Int32

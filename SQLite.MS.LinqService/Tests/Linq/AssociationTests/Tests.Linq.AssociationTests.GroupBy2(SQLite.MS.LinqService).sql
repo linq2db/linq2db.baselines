@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SQLite.MS SQLite
+--  SQLite.MS SQLite
 
 SELECT
 	[m_1].[ParentID],
@@ -18,7 +18,7 @@ FROM
 		ON [m_1].[ParentID] = [a_Parent1_1].[ParentID]
 
 BeforeExecute
--- SQLite.MS SQLite
+--  SQLite.MS SQLite
 
 SELECT
 	[a_Parent1].[ParentID]

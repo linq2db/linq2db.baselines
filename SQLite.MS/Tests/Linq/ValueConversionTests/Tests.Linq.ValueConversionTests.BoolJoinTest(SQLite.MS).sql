@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SQLite.MS SQLite
+--  SQLite.MS SQLite
 DECLARE @true_value VarChar(1) -- AnsiString
 SET     @true_value = 'Y'
 

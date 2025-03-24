@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SQLite.MS SQLite
+--  SQLite.MS SQLite
 
 SELECT
 	[m_1].[CategoryID],
@@ -12,7 +12,7 @@ FROM
 		INNER JOIN [Products] [d] ON [m_1].[CategoryID] = [d].[CategoryID]
 
 BeforeExecute
--- SQLite.MS SQLite
+--  SQLite.MS SQLite
 
 SELECT
 	[t1].[CategoryID],

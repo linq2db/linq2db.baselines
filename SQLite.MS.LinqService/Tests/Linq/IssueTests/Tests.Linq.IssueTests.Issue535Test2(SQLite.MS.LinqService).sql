@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SQLite.MS SQLite
+--  SQLite.MS SQLite
 DECLARE @filter NVarChar(6) -- String
 SET     @filter = '%test%'
 DECLARE @filter_1 NVarChar(6) -- String

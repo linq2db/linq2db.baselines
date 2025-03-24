@@ -1,10 +1,10 @@
 ﻿BeforeExecute
--- SQLite.MS SQLite
+--  SQLite.MS SQLite
 
 DROP TABLE IF EXISTS [TempTable]
 
 BeforeExecute
--- SQLite.MS SQLite
+--  SQLite.MS SQLite
 
 SELECT
 	[p].[ParentID]
@@ -12,7 +12,7 @@ FROM
 	[Parent] [p]
 
 BeforeExecute
--- SQLite.MS SQLite (asynchronously)
+--  SQLite.MS SQLite (asynchronously)
 
 CREATE TABLE IF NOT EXISTS [TempTable]
 (
@@ -20,7 +20,7 @@ CREATE TABLE IF NOT EXISTS [TempTable]
 )
 
 BeforeExecute
--- SQLite.MS SQLite (asynchronously)
+--  SQLite.MS SQLite (asynchronously)
 
 INSERT INTO [TempTable]
 (
@@ -36,7 +36,7 @@ VALUES
 (7)
 
 BeforeExecute
--- SQLite.MS SQLite
+--  SQLite.MS SQLite
 
 SELECT
 	[t].[ID]
@@ -45,7 +45,7 @@ FROM
 		INNER JOIN [TempTable] [t] ON [p].[ParentID] = [t].[ID]
 
 BeforeExecute
--- SQLite.MS SQLite (asynchronously)
+--  SQLite.MS SQLite (asynchronously)
 
 DROP TABLE IF EXISTS [TempTable]
 

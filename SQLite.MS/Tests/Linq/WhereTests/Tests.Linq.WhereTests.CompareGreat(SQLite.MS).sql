@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SQLite.MS SQLite
+--  SQLite.MS SQLite
 
 SELECT
 	[p].[Id],
@@ -12,7 +12,7 @@ WHERE
 	[p].[Nullable] > [p].[OtherNullable]
 
 BeforeExecute
--- SQLite.MS SQLite
+--  SQLite.MS SQLite
 
 SELECT
 	[t1].[Id],
@@ -23,7 +23,7 @@ FROM
 	[WhereCompareData] [t1]
 
 BeforeExecute
--- SQLite.MS SQLite
+--  SQLite.MS SQLite
 
 SELECT
 	[p].[Id],
@@ -37,7 +37,7 @@ WHERE
 	[p].[OtherNullable] IS NULL
 
 BeforeExecute
--- SQLite.MS SQLite
+--  SQLite.MS SQLite
 
 SELECT
 	[t1].[Id],
@@ -48,7 +48,7 @@ FROM
 	[WhereCompareData] [t1]
 
 BeforeExecute
--- SQLite.MS SQLite
+--  SQLite.MS SQLite
 
 SELECT
 	[p].[Id],
@@ -61,7 +61,7 @@ WHERE
 	[p].[OtherNullable] < [p].[Nullable]
 
 BeforeExecute
--- SQLite.MS SQLite
+--  SQLite.MS SQLite
 
 SELECT
 	[t1].[Id],
@@ -72,7 +72,7 @@ FROM
 	[WhereCompareData] [t1]
 
 BeforeExecute
--- SQLite.MS SQLite
+--  SQLite.MS SQLite
 
 SELECT
 	[p].[Id],
@@ -86,7 +86,7 @@ WHERE
 	[p].[Nullable] IS NULL
 
 BeforeExecute
--- SQLite.MS SQLite
+--  SQLite.MS SQLite
 
 SELECT
 	[t1].[Id],

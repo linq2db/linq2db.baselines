@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SQLite.MS SQLite
+--  SQLite.MS SQLite
 
 WITH [CTE_1] ([ParentID])
 AS
@@ -21,7 +21,7 @@ WHERE
 	[ct].[ParentID] = [CteChild].[ParentID]
 
 BeforeExecute
--- SQLite.MS SQLite
+--  SQLite.MS SQLite
 
 SELECT
 	[c_1].[ChildID],
@@ -32,7 +32,7 @@ WHERE
 	[c_1].[ParentID] % 2 = 0
 
 BeforeExecute
--- SQLite.MS SQLite
+--  SQLite.MS SQLite
 
 SELECT
 	[c_1].[ChildID]

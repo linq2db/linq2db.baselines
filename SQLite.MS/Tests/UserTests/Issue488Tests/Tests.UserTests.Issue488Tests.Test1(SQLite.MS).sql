@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SQLite.MS SQLite
+--  SQLite.MS SQLite
 DECLARE @date  -- Date
 SET     @date = '2020-02-29 00:00:00.000'
 

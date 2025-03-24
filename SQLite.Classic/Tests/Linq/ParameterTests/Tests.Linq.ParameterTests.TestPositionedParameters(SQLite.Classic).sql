@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SQLite.Classic SQLite
+--  SQLite.Classic SQLite
 DECLARE @z2  -- Int32
 SET     @z2 = 2
 DECLARE @y10  -- Int32

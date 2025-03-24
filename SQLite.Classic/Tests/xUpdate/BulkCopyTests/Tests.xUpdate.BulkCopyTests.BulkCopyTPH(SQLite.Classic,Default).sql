@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SQLite.Classic SQLite
+--  SQLite.Classic SQLite
 
 INSERT INTO [TPHTable]
 (
@@ -16,7 +16,7 @@ VALUES
 (3,3,NULL,NULL,'Str3','Y')
 
 BeforeExecute
--- SQLite.Classic SQLite
+--  SQLite.Classic SQLite
 
 SELECT
 	[t1].[Discriminator],
@@ -31,7 +31,7 @@ ORDER BY
 	[t1].[Id]
 
 BeforeExecute
--- SQLite.Classic SQLite
+--  SQLite.Classic SQLite
 
 SELECT
 	[x].[Discriminator],
@@ -47,7 +47,7 @@ WHERE
 LIMIT 2
 
 BeforeExecute
--- SQLite.Classic SQLite
+--  SQLite.Classic SQLite
 
 SELECT
 	[x].[Discriminator],
@@ -63,7 +63,7 @@ WHERE
 LIMIT 2
 
 BeforeExecute
--- SQLite.Classic SQLite
+--  SQLite.Classic SQLite
 
 SELECT
 	[x].[Discriminator],
@@ -79,7 +79,7 @@ WHERE
 LIMIT 2
 
 BeforeExecute
--- SQLite.Classic SQLite
+--  SQLite.Classic SQLite
 
 SELECT
 	[x].[Discriminator],
@@ -95,7 +95,7 @@ WHERE
 LIMIT 2
 
 BeforeExecute
--- SQLite.Classic SQLite
+--  SQLite.Classic SQLite
 
 SELECT
 	[x].[Discriminator],
@@ -111,7 +111,7 @@ WHERE
 LIMIT 2
 
 BeforeExecute
--- SQLite.Classic SQLite
+--  SQLite.Classic SQLite
 
 SELECT
 	[x].[Discriminator],

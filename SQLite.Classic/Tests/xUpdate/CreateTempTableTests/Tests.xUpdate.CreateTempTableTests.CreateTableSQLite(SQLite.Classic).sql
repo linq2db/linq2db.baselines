@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SQLite.Classic SQLite
+--  SQLite.Classic SQLite
 
 CREATE TEMPORARY TABLE temp.[#TempTable]
 (
@@ -8,7 +8,7 @@ CREATE TEMPORARY TABLE temp.[#TempTable]
 )
 
 BeforeExecute
--- SQLite.Classic SQLite
+--  SQLite.Classic SQLite
 
 INSERT INTO temp.[#TempTable]
 (
@@ -19,7 +19,7 @@ VALUES
 (1,2)
 
 BeforeExecute
--- SQLite.Classic SQLite
+--  SQLite.Classic SQLite
 
 SELECT
 	[t1].[ID],
@@ -28,7 +28,7 @@ FROM
 	temp.[#TempTable] [t1]
 
 BeforeExecute
--- SQLite.Classic SQLite
+--  SQLite.Classic SQLite
 
 DROP TABLE IF EXISTS temp.[#TempTable]
 

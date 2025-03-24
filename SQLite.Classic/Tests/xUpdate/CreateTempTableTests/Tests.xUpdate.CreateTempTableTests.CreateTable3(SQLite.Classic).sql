@@ -1,10 +1,10 @@
 ﻿BeforeExecute
--- SQLite.Classic SQLite
+--  SQLite.Classic SQLite
 
 DROP TABLE IF EXISTS [TempTable]
 
 BeforeExecute
--- SQLite.Classic SQLite
+--  SQLite.Classic SQLite
 
 CREATE TABLE IF NOT EXISTS [TempTable]
 (
@@ -14,7 +14,7 @@ CREATE TABLE IF NOT EXISTS [TempTable]
 )
 
 BeforeExecute
--- SQLite.Classic SQLite
+--  SQLite.Classic SQLite
 
 INSERT INTO [TempTable]
 (
@@ -26,7 +26,7 @@ FROM
 	[Parent] [p]
 
 BeforeExecute
--- SQLite.Classic SQLite
+--  SQLite.Classic SQLite
 
 SELECT
 	[t].[ID]
@@ -35,7 +35,7 @@ FROM
 		INNER JOIN [TempTable] [t] ON [p].[ParentID] = [t].[ID]
 
 BeforeExecute
--- SQLite.Classic SQLite
+--  SQLite.Classic SQLite
 
 DROP TABLE IF EXISTS [TempTable]
 

@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SQLite.Classic SQLite
+--  SQLite.Classic SQLite
 
 SELECT
 	[t1].[Id],
@@ -18,7 +18,7 @@ ORDER BY
 	[t1].[Id]
 
 BeforeExecute
--- SQLite.Classic SQLite
+--  SQLite.Classic SQLite
 
 SELECT
 	[t].[Id],
@@ -30,7 +30,7 @@ ORDER BY
 	[t].[Id]
 
 BeforeExecute
--- SQLite.Classic SQLite
+--  SQLite.Classic SQLite
 
 SELECT
 	[t1].[Id],
@@ -49,7 +49,7 @@ ORDER BY
 	[t1].[Id]
 
 BeforeExecute
--- SQLite.Classic SQLite
+--  SQLite.Classic SQLite
 
 SELECT
 	[t2].[Id],
@@ -82,7 +82,7 @@ ORDER BY
 	[t2].[Id]
 
 BeforeExecute
--- SQLite.Classic SQLite
+--  SQLite.Classic SQLite
 DECLARE @skip  -- Int32
 SET     @skip = 1
 

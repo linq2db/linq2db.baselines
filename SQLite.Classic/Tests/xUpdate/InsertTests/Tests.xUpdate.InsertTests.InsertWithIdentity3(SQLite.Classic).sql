@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SQLite.Classic SQLite
+--  SQLite.Classic SQLite
 
 DELETE FROM
 	[Person]
@@ -7,7 +7,7 @@ WHERE
 	[Person].[PersonID] > 4
 
 BeforeExecute
--- SQLite.Classic SQLite
+--  SQLite.Classic SQLite
 DECLARE @FirstName NVarChar(4) -- String
 SET     @FirstName = 'John'
 DECLARE @LastName NVarChar(7) -- String
@@ -29,12 +29,12 @@ VALUES
 )
 
 BeforeExecute
--- SQLite.Classic SQLite
+--  SQLite.Classic SQLite
 
 SELECT last_insert_rowid()
 
 BeforeExecute
--- SQLite.Classic SQLite
+--  SQLite.Classic SQLite
 
 SELECT
 	[p].[FirstName],
@@ -49,7 +49,7 @@ WHERE
 LIMIT 2
 
 BeforeExecute
--- SQLite.Classic SQLite
+--  SQLite.Classic SQLite
 
 DELETE FROM
 	[Person]

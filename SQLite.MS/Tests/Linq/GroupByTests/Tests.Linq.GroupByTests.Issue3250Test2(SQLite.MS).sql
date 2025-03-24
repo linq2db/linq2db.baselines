@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SQLite.MS SQLite
+--  SQLite.MS SQLite
 
 SELECT
 	(COUNT(*) || ' items have not been processed, e.g. #' || MIN([s].[PersonID])) || '.'

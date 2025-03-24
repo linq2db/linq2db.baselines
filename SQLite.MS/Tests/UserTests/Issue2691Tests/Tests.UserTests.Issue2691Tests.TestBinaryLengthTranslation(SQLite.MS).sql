@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SQLite.MS SQLite
+--  SQLite.MS SQLite
 DECLARE @Id  -- Int32
 SET     @Id = 99
 DECLARE @Data Binary(5)
@@ -21,7 +21,7 @@ VALUES
 )
 
 BeforeExecute
--- SQLite.MS SQLite
+--  SQLite.MS SQLite
 
 SELECT
 	Length([x].[Data])
@@ -29,7 +29,7 @@ FROM
 	[Issue2691Table] [x]
 
 BeforeExecute
--- SQLite.MS SQLite
+--  SQLite.MS SQLite
 
 SELECT
 	Length([x].[Data])
@@ -37,7 +37,7 @@ FROM
 	[Issue2691Table] [x]
 
 BeforeExecute
--- SQLite.MS SQLite
+--  SQLite.MS SQLite
 
 SELECT
 	Length([x].[DataB])
@@ -45,7 +45,7 @@ FROM
 	[Issue2691Table] [x]
 
 BeforeExecute
--- SQLite.MS SQLite
+--  SQLite.MS SQLite
 
 SELECT
 	Length([x].[DataB])

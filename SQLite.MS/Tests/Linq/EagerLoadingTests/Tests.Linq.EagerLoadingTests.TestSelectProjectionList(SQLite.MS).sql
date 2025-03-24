@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 BeginTransaction(Serializable)
 BeforeExecute
--- SQLite.MS SQLite
+--  SQLite.MS SQLite
 DECLARE @intParam  -- Int32
 SET     @intParam = 0
 
@@ -18,7 +18,7 @@ WHERE
 	[m_1].[Id1] >= @intParam
 
 BeforeExecute
--- SQLite.MS SQLite
+--  SQLite.MS SQLite
 DECLARE @intParam  -- Int32
 SET     @intParam = 0
 
@@ -43,7 +43,7 @@ WHERE
 BeforeExecute
 DisposeTransaction
 BeforeExecute
--- SQLite.MS SQLite
+--  SQLite.MS SQLite
 DECLARE @intParam  -- Int32
 SET     @intParam = 0
 

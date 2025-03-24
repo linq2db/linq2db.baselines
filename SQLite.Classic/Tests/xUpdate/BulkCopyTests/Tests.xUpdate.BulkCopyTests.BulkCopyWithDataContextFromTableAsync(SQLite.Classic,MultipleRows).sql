@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SQLite.Classic SQLite (asynchronously)
+--  SQLite.Classic SQLite (asynchronously)
 
 INSERT INTO [SimpleBulkCopyTable]
 (
@@ -9,7 +9,7 @@ VALUES
 (1)
 
 BeforeExecute
--- SQLite.Classic SQLite (asynchronously)
+--  SQLite.Classic SQLite (asynchronously)
 
 INSERT INTO [SimpleBulkCopyTable]
 (
@@ -19,7 +19,7 @@ VALUES
 (2)
 
 BeforeExecute
--- SQLite.Classic SQLite (asynchronously)
+--  SQLite.Classic SQLite (asynchronously)
 
 INSERT INTO [SimpleBulkCopyTable]
 (
@@ -29,7 +29,7 @@ VALUES
 (3)
 
 BeforeExecute
--- SQLite.Classic SQLite (asynchronously)
+--  SQLite.Classic SQLite (asynchronously)
 
 INSERT INTO [SimpleBulkCopyTable]
 (
@@ -39,7 +39,7 @@ VALUES
 (10)
 
 BeforeExecute
--- SQLite.Classic SQLite (asynchronously)
+--  SQLite.Classic SQLite (asynchronously)
 
 INSERT INTO [SimpleBulkCopyTable]
 (
@@ -49,7 +49,7 @@ VALUES
 (20)
 
 BeforeExecute
--- SQLite.Classic SQLite (asynchronously)
+--  SQLite.Classic SQLite (asynchronously)
 
 INSERT INTO [SimpleBulkCopyTable]
 (
