@@ -1,10 +1,10 @@
 ﻿BeforeExecute
--- SqlCe
+--  SqlCe
 
 ALTER TABLE Person ALTER COLUMN PersonID IDENTITY(5,1)
 
 BeforeExecute
--- SqlCe
+--  SqlCe
 DECLARE @Gender NVarChar(1) -- String
 SET     @Gender = 'M'
 DECLARE @FirstName NVarChar(12) -- String
@@ -30,12 +30,12 @@ VALUES
 )
 
 BeforeExecute
--- SqlCe
+--  SqlCe
 
 SELECT @@IDENTITY
 
 BeforeExecute
--- SqlCe
+--  SqlCe
 DECLARE @id Int -- Int32
 SET     @id = 5
 

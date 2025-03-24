@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlCe (asynchronously)
+--  SqlCe (asynchronously)
 DECLARE @search NVarChar(5) -- String
 SET     @search = 'test%'
 DECLARE @search_1 NVarChar(4) -- String
@@ -31,17 +31,17 @@ WHERE
 	[row1_2].[Field1] LIKE @search_2 ESCAPE '~'
 
 BeforeExecute
--- SqlCe (asynchronously)
+--  SqlCe (asynchronously)
 
 DROP TABLE [table3]
 
 BeforeExecute
--- SqlCe (asynchronously)
+--  SqlCe (asynchronously)
 
 DROP TABLE [table2]
 
 BeforeExecute
--- SqlCe (asynchronously)
+--  SqlCe (asynchronously)
 
 DROP TABLE [table1]
 

@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlCe
+--  SqlCe
 
 SELECT
 	SUM([g_1].[ParentID]) as [SUM_1]

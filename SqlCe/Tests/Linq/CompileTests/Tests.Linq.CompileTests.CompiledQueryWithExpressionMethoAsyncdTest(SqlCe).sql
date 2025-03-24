@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlCe (asynchronously)
+--  SqlCe (asynchronously)
 DECLARE @p Int -- Int32
 SET     @p = 1
 

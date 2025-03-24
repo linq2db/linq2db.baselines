@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlCe
+--  SqlCe
 DECLARE @personId Int -- Int32
 SET     @personId = 1
 DECLARE @personId_1 Int -- Int32
@@ -23,7 +23,7 @@ WHERE
 	[p].[PersonID] = @personId_1
 
 BeforeExecute
--- SqlCe
+--  SqlCe
 DECLARE @personId Int -- Int32
 SET     @personId = 1
 DECLARE @personId_1 Int -- Int32

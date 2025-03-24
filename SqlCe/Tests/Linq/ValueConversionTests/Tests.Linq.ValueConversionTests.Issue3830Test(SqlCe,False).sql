@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlCe
+--  SqlCe
 DECLARE @Bool1 NVarChar(1) -- String
 SET     @Bool1 = 'Y'
 
@@ -14,7 +14,7 @@ WHERE
 	[r].[Bool1] = @Bool1 AND [r].[Bool2] IS NULL AND [r].[Bool3] IS NULL
 
 BeforeExecute
--- SqlCe
+--  SqlCe
 DECLARE @true_value NVarChar(1) -- String
 SET     @true_value = 'Y'
 
@@ -30,7 +30,7 @@ WHERE
 	[r].[Bool3] IS NULL
 
 BeforeExecute
--- SqlCe
+--  SqlCe
 DECLARE @Bool1 NVarChar(1) -- String
 SET     @Bool1 = 'Y'
 
@@ -46,7 +46,7 @@ WHERE
 	[r].[Bool2] IS NULL
 
 BeforeExecute
--- SqlCe
+--  SqlCe
 DECLARE @Bool1 NVarChar(1) -- String
 SET     @Bool1 = 'Y'
 
@@ -61,7 +61,7 @@ WHERE
 	[r].[Bool2] IS NULL AND [r].[Bool1] = @Bool1 AND [r].[Bool3] IS NULL
 
 BeforeExecute
--- SqlCe
+--  SqlCe
 DECLARE @Bool1 NVarChar(1) -- String
 SET     @Bool1 = 'N'
 DECLARE @Bool3 NVarChar(1) -- String
@@ -78,7 +78,7 @@ WHERE
 	[r].[Bool1] = @Bool1 AND [r].[Bool2] IS NULL AND [r].[Bool3] = @Bool3
 
 BeforeExecute
--- SqlCe
+--  SqlCe
 DECLARE @true_value NVarChar(1) -- String
 SET     @true_value = 'Y'
 DECLARE @Bool1 NVarChar(1) -- String
@@ -96,7 +96,7 @@ WHERE
 	[r].[Bool2] IS NULL
 
 BeforeExecute
--- SqlCe
+--  SqlCe
 DECLARE @false_value NVarChar(1) -- String
 SET     @false_value = 'N'
 DECLARE @Bool3 NVarChar(1) -- String
@@ -114,7 +114,7 @@ WHERE
 	[r].[Bool3] = @Bool3
 
 BeforeExecute
--- SqlCe
+--  SqlCe
 DECLARE @Bool1 NVarChar(1) -- String
 SET     @Bool1 = 'N'
 DECLARE @Bool3 NVarChar(1) -- String
@@ -131,7 +131,7 @@ WHERE
 	[r].[Bool2] IS NULL AND [r].[Bool1] = @Bool1 AND [r].[Bool3] = @Bool3
 
 BeforeExecute
--- SqlCe
+--  SqlCe
 DECLARE @Bool1 NVarChar(1) -- String
 SET     @Bool1 = 'N'
 DECLARE @Bool2 NVarChar(1) -- String
@@ -148,7 +148,7 @@ WHERE
 	[r].[Bool1] = @Bool1 AND [r].[Bool2] = @Bool2 AND [r].[Bool3] IS NULL
 
 BeforeExecute
--- SqlCe
+--  SqlCe
 DECLARE @false_value NVarChar(1) -- String
 SET     @false_value = 'N'
 DECLARE @Bool2 NVarChar(1) -- String
@@ -166,7 +166,7 @@ WHERE
 	[r].[Bool3] IS NULL
 
 BeforeExecute
--- SqlCe
+--  SqlCe
 DECLARE @Bool1 NVarChar(1) -- String
 SET     @Bool1 = 'N'
 DECLARE @Bool2 NVarChar(1) -- String
@@ -184,7 +184,7 @@ WHERE
 	[r].[Bool2] = @Bool2
 
 BeforeExecute
--- SqlCe
+--  SqlCe
 DECLARE @Bool1 NVarChar(1) -- String
 SET     @Bool1 = 'N'
 
@@ -200,7 +200,7 @@ WHERE
 	[r].[Bool3] IS NULL
 
 BeforeExecute
--- SqlCe
+--  SqlCe
 DECLARE @Bool1 NVarChar(1) -- String
 SET     @Bool1 = 'Y'
 DECLARE @Bool2 NVarChar(1) -- String
@@ -219,7 +219,7 @@ WHERE
 	[r].[Bool1] = @Bool1 AND [r].[Bool2] = @Bool2 AND [r].[Bool3] = @Bool3
 
 BeforeExecute
--- SqlCe
+--  SqlCe
 DECLARE @true_value NVarChar(1) -- String
 SET     @true_value = 'Y'
 DECLARE @Bool2 NVarChar(1) -- String
@@ -239,7 +239,7 @@ WHERE
 	[r].[Bool3] = @Bool3
 
 BeforeExecute
--- SqlCe
+--  SqlCe
 DECLARE @true_value NVarChar(1) -- String
 SET     @true_value = 'Y'
 DECLARE @Bool1 NVarChar(1) -- String
@@ -259,7 +259,7 @@ WHERE
 	[r].[Bool2] = @Bool2
 
 BeforeExecute
--- SqlCe
+--  SqlCe
 DECLARE @Bool1 NVarChar(1) -- String
 SET     @Bool1 = 'Y'
 DECLARE @Bool3 NVarChar(1) -- String

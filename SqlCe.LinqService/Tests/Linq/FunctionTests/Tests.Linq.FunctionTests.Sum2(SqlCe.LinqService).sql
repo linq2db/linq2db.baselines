@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlCe
+--  SqlCe
 
 SELECT
 	[t1].[SUM_1] as [ChildCount]

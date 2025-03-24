@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlCe
+--  SqlCe
 DECLARE @Id Int -- Int32
 SET     @Id = 6
 DECLARE @Title NVarChar(5) -- String
@@ -21,7 +21,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlCe
+--  SqlCe
 DECLARE @Id Int -- Int32
 SET     @Id = 60
 DECLARE @TopicId Int -- Int32
@@ -43,7 +43,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlCe
+--  SqlCe
 DECLARE @Id Int -- Int32
 SET     @Id = 61
 DECLARE @TopicId Int -- Int32
@@ -67,7 +67,7 @@ VALUES
 BeforeExecute
 BeginTransaction(RepeatableRead)
 BeforeExecute
--- SqlCe
+--  SqlCe
 
 SELECT
 	[m_1].[Id],
@@ -84,7 +84,7 @@ FROM
 		INNER JOIN [Message] [d] ON [d].[TopicId] = [m_1].[Id]
 
 BeforeExecute
--- SqlCe
+--  SqlCe
 
 SELECT TOP (1)
 	[x].[Id],

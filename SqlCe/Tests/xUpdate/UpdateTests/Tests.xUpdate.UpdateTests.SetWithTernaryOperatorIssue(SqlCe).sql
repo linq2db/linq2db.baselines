@@ -1,10 +1,10 @@
 ﻿BeforeExecute
--- SqlCe
+--  SqlCe
 
 ALTER TABLE Person ALTER COLUMN PersonID IDENTITY(5,1)
 
 BeforeExecute
--- SqlCe
+--  SqlCe
 DECLARE @Gender NVarChar(1) -- String
 SET     @Gender = 'M'
 DECLARE @Name_FirstName NVarChar(13) -- String
@@ -30,12 +30,12 @@ VALUES
 )
 
 BeforeExecute
--- SqlCe
+--  SqlCe
 
 SELECT @@IDENTITY
 
 BeforeExecute
--- SqlCe
+--  SqlCe
 DECLARE @nullableGender NVarChar(1) -- String
 SET     @nullableGender = 'O'
 
@@ -47,7 +47,7 @@ WHERE
 	[Person].[FirstName] LIKE 'UpdateComplex%' ESCAPE '~'
 
 BeforeExecute
--- SqlCe
+--  SqlCe
 DECLARE @id Int -- Int32
 SET     @id = 5
 

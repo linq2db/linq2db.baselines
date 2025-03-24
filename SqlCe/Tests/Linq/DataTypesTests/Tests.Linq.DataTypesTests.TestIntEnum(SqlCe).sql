@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlCe
+--  SqlCe
 DECLARE @Column Int -- Int32
 SET     @Column = 2
 DECLARE @ColumnNullable Int -- Int32
@@ -15,7 +15,7 @@ WHERE
 	[r].[Column] = @Column AND [r].[ColumnNullable] = @ColumnNullable
 
 BeforeExecute
--- SqlCe
+--  SqlCe
 
 SELECT
 	[r].[Id],
@@ -27,13 +27,13 @@ WHERE
 	[r].[Column] = 2 AND [r].[ColumnNullable] = 3
 
 BeforeExecute
--- SqlCe
+--  SqlCe
 
 DELETE FROM
 	[IntEnumTable]
 
 BeforeExecute
--- SqlCe
+--  SqlCe
 DECLARE @Id Int -- Int32
 SET     @Id = 1
 DECLARE @Column Int -- Int32
@@ -55,7 +55,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlCe
+--  SqlCe
 DECLARE @Id Int -- Int32
 SET     @Id = 2
 DECLARE @Column Int -- Int32
@@ -77,7 +77,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlCe
+--  SqlCe
 
 SELECT
 	[t1].[Id],
@@ -89,13 +89,13 @@ ORDER BY
 	[t1].[Id]
 
 BeforeExecute
--- SqlCe
+--  SqlCe
 
 DELETE FROM
 	[IntEnumTable]
 
 BeforeExecute
--- SqlCe
+--  SqlCe
 
 INSERT INTO [IntEnumTable]
 (
@@ -107,7 +107,7 @@ SELECT 1,1,NULL UNION ALL
 SELECT 2,2,3
 
 BeforeExecute
--- SqlCe
+--  SqlCe
 
 SELECT
 	[t1].[Id],
@@ -119,13 +119,13 @@ ORDER BY
 	[t1].[Id]
 
 BeforeExecute
--- SqlCe
+--  SqlCe
 
 DELETE FROM
 	[IntEnumTable]
 
 BeforeExecute
--- SqlCe
+--  SqlCe
 
 INSERT INTO [IntEnumTable]
 (
@@ -137,7 +137,7 @@ SELECT 1,1,NULL UNION ALL
 SELECT 2,2,3
 
 BeforeExecute
--- SqlCe
+--  SqlCe
 
 SELECT
 	[t1].[Id],

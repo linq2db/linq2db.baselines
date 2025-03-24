@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlCe
+--  SqlCe
 
 SELECT
 	[p].[FirstName],
@@ -13,7 +13,7 @@ WHERE
 	[p].[FirstName] = 'John'
 
 BeforeExecute
--- SqlCe
+--  SqlCe
 
 SELECT
 	[p].[FirstName],

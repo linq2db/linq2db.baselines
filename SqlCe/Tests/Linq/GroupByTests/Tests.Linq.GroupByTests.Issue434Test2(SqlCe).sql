@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 BeginTransaction(RepeatableRead)
 BeforeExecute
--- SqlCe
+--  SqlCe
 
 SELECT
 	[m_1].[PersonID] as [ID],
@@ -16,7 +16,7 @@ WHERE
 BeforeExecute
 DisposeTransaction
 BeforeExecute
--- SqlCe
+--  SqlCe
 
 SELECT
 	[p].[FirstName],

@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlCe
+--  SqlCe
 DECLARE @id Int -- Int32
 SET     @id = 1001
 
@@ -15,7 +15,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlCe
+--  SqlCe
 DECLARE @id Int -- Int32
 SET     @id = 1001
 
@@ -27,7 +27,7 @@ WHERE
 	[c_1].[ChildID] = @id
 
 BeforeExecute
--- SqlCe
+--  SqlCe
 DECLARE @id Int -- Int32
 SET     @id = 1001
 
@@ -50,7 +50,7 @@ WHERE
 	)
 
 BeforeExecute
--- SqlCe
+--  SqlCe
 DECLARE @p Int -- Int32
 SET     @p = 1002
 

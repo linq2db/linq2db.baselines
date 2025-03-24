@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlCe
+--  SqlCe
 
 SELECT
 	DatePart(dayofyear, [t].[DateTimeValue]) as [c1]

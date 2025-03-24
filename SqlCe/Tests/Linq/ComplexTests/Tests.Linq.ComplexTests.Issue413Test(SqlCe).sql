@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlCe
+--  SqlCe
 DECLARE @InstrumentId Int -- Int32
 SET     @InstrumentId = 1
 DECLARE @IndexId Int -- Int32
@@ -17,7 +17,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlCe
+--  SqlCe
 DECLARE @InstrumentId Int -- Int32
 SET     @InstrumentId = 2
 DECLARE @IndexId Int -- Int32
@@ -35,7 +35,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlCe
+--  SqlCe
 DECLARE @InstrumentId Int -- Int32
 SET     @InstrumentId = 3
 DECLARE @IndexId Int -- Int32
@@ -53,7 +53,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlCe
+--  SqlCe
 DECLARE @InstrumentId Int -- Int32
 SET     @InstrumentId = 1
 DECLARE @IndexId Int -- Int32
@@ -71,7 +71,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlCe
+--  SqlCe
 DECLARE @InstrumentId Int -- Int32
 SET     @InstrumentId = 2
 DECLARE @IndexId Int -- Int32
@@ -89,7 +89,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlCe
+--  SqlCe
 DECLARE @InstrumentId Int -- Int32
 SET     @InstrumentId = 1
 DECLARE @InstrumentCode NVarChar(4) -- String
@@ -115,7 +115,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlCe
+--  SqlCe
 DECLARE @InstrumentId Int -- Int32
 SET     @InstrumentId = 2
 DECLARE @InstrumentCode NVarChar(4) -- String
@@ -141,7 +141,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlCe
+--  SqlCe
 DECLARE @cond NVarChar(4) -- String
 SET     @cond = 'aaa%'
 DECLARE @uptoDate DateTime

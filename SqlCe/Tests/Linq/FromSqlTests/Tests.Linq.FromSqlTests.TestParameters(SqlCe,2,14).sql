@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlCe
+--  SqlCe
 DECLARE @p BigInt -- Int64
 SET     @p = 5
 
@@ -18,7 +18,7 @@ ORDER BY
 	[c_1].[id]
 
 BeforeExecute
--- SqlCe
+--  SqlCe
 DECLARE @startId Int -- Int32
 SET     @startId = 5
 DECLARE @endId Int -- Int32

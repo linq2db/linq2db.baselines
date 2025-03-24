@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlCe
+--  SqlCe
 
 INSERT INTO [Issue1303]
 (
@@ -15,7 +15,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlCe
+--  SqlCe
 
 SELECT TOP (2)
 	[t1].[ID],
@@ -27,7 +27,7 @@ WHERE
 	[t1].[ID] = 1
 
 BeforeExecute
--- SqlCe
+--  SqlCe
 
 SELECT TOP (2)
 	[t1].[ID],
@@ -39,7 +39,7 @@ WHERE
 	[t1].[Array] = 0x010203
 
 BeforeExecute
--- SqlCe
+--  SqlCe
 
 SELECT TOP (2)
 	[t1].[ID],

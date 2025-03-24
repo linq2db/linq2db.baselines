@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlCe
+--  SqlCe
 DECLARE @Id Int -- Int32
 SET     @Id = 1
 DECLARE @Value1 NVarChar(2) -- String
@@ -33,7 +33,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlCe
+--  SqlCe
 
 SELECT TOP (1)
 	[e].[Id],
@@ -52,7 +52,7 @@ WHERE
 	[e].[Id] = 1
 
 BeforeExecute
--- SqlCe
+--  SqlCe
 DECLARE @Id Int -- Int32
 SET     @Id = 2
 DECLARE @Value1 NVarChar -- String
@@ -86,7 +86,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlCe
+--  SqlCe
 
 SELECT TOP (1)
 	[e].[Id],
@@ -105,7 +105,7 @@ WHERE
 	[e].[Id] = 2
 
 BeforeExecute
--- SqlCe
+--  SqlCe
 DECLARE @Id Int -- Int32
 SET     @Id = 3
 DECLARE @Value1 NVarChar(21) -- String
@@ -155,7 +155,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlCe
+--  SqlCe
 
 SELECT TOP (1)
 	[e].[Id],
@@ -174,7 +174,7 @@ WHERE
 	[e].[Id] = 3
 
 BeforeExecute
--- SqlCe
+--  SqlCe
 
 SELECT
 	COUNT(*) as [COUNT_1]

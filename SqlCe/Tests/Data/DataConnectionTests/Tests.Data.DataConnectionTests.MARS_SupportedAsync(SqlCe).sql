@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlCe (asynchronously)
+--  SqlCe (asynchronously)
 
 SELECT
 	COUNT(*) as [COUNT_1]
@@ -7,7 +7,7 @@ FROM
 	[Person] [t1]
 
 BeforeExecute
--- SqlCe (asynchronously)
+--  SqlCe (asynchronously)
 
 SELECT
 	[t1].[FirstName],
@@ -19,7 +19,7 @@ FROM
 	[Person] [t1]
 
 BeforeExecute
--- SqlCe (asynchronously)
+--  SqlCe (asynchronously)
 DECLARE @ID Int -- Int32
 SET     @ID = 1
 
@@ -32,7 +32,7 @@ WHERE
 	[t1].[PersonID] = @ID
 
 BeforeExecute
--- SqlCe (asynchronously)
+--  SqlCe (asynchronously)
 DECLARE @ID Int -- Int32
 SET     @ID = 2
 
@@ -45,7 +45,7 @@ WHERE
 	[t1].[PersonID] = @ID
 
 BeforeExecute
--- SqlCe (asynchronously)
+--  SqlCe (asynchronously)
 DECLARE @ID Int -- Int32
 SET     @ID = 3
 
@@ -58,7 +58,7 @@ WHERE
 	[t1].[PersonID] = @ID
 
 BeforeExecute
--- SqlCe (asynchronously)
+--  SqlCe (asynchronously)
 DECLARE @ID Int -- Int32
 SET     @ID = 4
 

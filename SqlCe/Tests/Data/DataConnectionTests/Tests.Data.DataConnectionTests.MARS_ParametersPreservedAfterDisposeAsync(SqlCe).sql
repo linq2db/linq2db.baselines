@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlCe (asynchronously)
+--  SqlCe (asynchronously)
 DECLARE @param NVarChar(4) -- String
 SET     @param = 'test'
 

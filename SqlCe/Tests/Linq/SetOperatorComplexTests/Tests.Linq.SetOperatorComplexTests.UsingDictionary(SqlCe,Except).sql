@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlCe
+--  SqlCe
 
 SELECT DISTINCT
 	[a_Book].[Discriminator],
@@ -26,7 +26,7 @@ WHERE
 BeforeExecute
 BeginTransaction(RepeatableRead)
 BeforeExecute
--- SqlCe
+--  SqlCe
 
 SELECT
 	[m_1].[BookId],
@@ -52,7 +52,7 @@ FROM
 		LEFT JOIN [Author] [a_Author] ON [d_1].[FkAuthorId] = [a_Author].[AuthorId]
 
 BeforeExecute
--- SqlCe
+--  SqlCe
 
 SELECT
 	[m_1].[AuthorId],
@@ -69,7 +69,7 @@ FROM
 BeforeExecute
 DisposeTransaction
 BeforeExecute
--- SqlCe
+--  SqlCe
 
 SELECT
 	[t1].[AuthorId],

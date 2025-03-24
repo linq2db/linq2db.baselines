@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlCe
+--  SqlCe
 DECLARE @testValue Int -- Int32
 SET     @testValue = 1
 

@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlCe
+--  SqlCe
 DECLARE @Id Int -- Int32
 SET     @Id = 1
 DECLARE @SomeText NVarChar(13) -- String
@@ -17,7 +17,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlCe
+--  SqlCe
 
 SELECT TOP (2)
 	[e].[Id],
@@ -28,7 +28,7 @@ WHERE
 	[e].[SomeText] = 'Value1_suffix'
 
 BeforeExecute
--- SqlCe
+--  SqlCe
 
 SELECT TOP (2)
 	[e].[Id],

@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlCe
+--  SqlCe
 
 CREATE TABLE [Issue4671EntityTMP]
 (
@@ -10,7 +10,7 @@ CREATE TABLE [Issue4671EntityTMP]
 )
 
 BeforeExecute
--- SqlCe
+--  SqlCe
 
 INSERT INTO [Issue4671Entity]
 (
@@ -22,7 +22,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlCe
+--  SqlCe
 
 INSERT INTO [Issue4671EntityTMP]
 (
@@ -34,7 +34,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlCe
+--  SqlCe
 
 SELECT TOP (2)
 	[t1].[Id],
@@ -43,7 +43,7 @@ FROM
 	[Issue4671Entity] [t1]
 
 BeforeExecute
--- SqlCe
+--  SqlCe
 
 SELECT TOP (2)
 	[t1].[Id],
@@ -52,7 +52,7 @@ FROM
 	[Issue4671EntityTMP] [t1]
 
 BeforeExecute
--- SqlCe
+--  SqlCe
 
 DROP TABLE [Issue4671EntityTMP]
 

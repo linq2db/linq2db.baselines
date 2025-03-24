@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlCe
+--  SqlCe
 
 SELECT
 	DatePart(hour, [t].[DateTimeValue]) % 7 as [c1]

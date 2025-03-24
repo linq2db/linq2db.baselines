@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlCe
+--  SqlCe
 
 SELECT
 	Substring([p].[FirstName], Len([p].[FirstName]) - 2, 3) as [c1]

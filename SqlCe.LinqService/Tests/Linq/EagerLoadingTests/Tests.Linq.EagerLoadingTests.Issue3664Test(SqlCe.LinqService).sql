@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlCe
+--  SqlCe
 DECLARE @Id Int -- Int32
 SET     @Id = 1
 
@@ -13,7 +13,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlCe
+--  SqlCe
 DECLARE @id Int -- Int32
 SET     @id = 11
 
@@ -28,7 +28,7 @@ WHERE
 	[d].[Id] = @id
 
 BeforeExecute
--- SqlCe
+--  SqlCe
 
 SELECT
 	[t1].[Id]
@@ -36,7 +36,7 @@ FROM
 	[Test3664] [t1]
 
 BeforeExecute
--- SqlCe
+--  SqlCe
 DECLARE @id Int -- Int32
 SET     @id = 12
 
@@ -51,7 +51,7 @@ WHERE
 	[d].[Id] = @id
 
 BeforeExecute
--- SqlCe
+--  SqlCe
 
 SELECT
 	[t1].[Id]

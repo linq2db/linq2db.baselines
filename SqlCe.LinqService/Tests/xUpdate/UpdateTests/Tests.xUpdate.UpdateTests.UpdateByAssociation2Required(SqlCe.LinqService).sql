@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlCe
+--  SqlCe
 DECLARE @id Int -- Int32
 SET     @id = 3
 
@@ -20,7 +20,7 @@ WHERE
 	)
 
 BeforeExecute
--- SqlCe
+--  SqlCe
 
 SELECT
 	[t1].[Id],

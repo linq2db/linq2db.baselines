@@ -1,10 +1,10 @@
 ﻿BeforeExecute
--- SqlCe
+--  SqlCe
 
 DROP TABLE [xxPerson]
 
 BeforeExecute
--- SqlCe
+--  SqlCe
 
 CREATE TABLE [xxPerson]
 (
@@ -18,7 +18,7 @@ CREATE TABLE [xxPerson]
 )
 
 BeforeExecute
--- SqlCe
+--  SqlCe
 DECLARE @FirstName NVarChar(6) -- String
 SET     @FirstName = 'Steven'
 DECLARE @LastName NVarChar(4) -- String
@@ -44,7 +44,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlCe
+--  SqlCe
 DECLARE @FirstName NVarChar(6) -- String
 SET     @FirstName = 'Steven'
 DECLARE @LastName NVarChar(4) -- String
@@ -70,12 +70,12 @@ VALUES
 )
 
 BeforeExecute
--- SqlCe
+--  SqlCe
 
 SELECT @@IDENTITY
 
 BeforeExecute
--- SqlCe
+--  SqlCe
 DECLARE @FirstName NVarChar(6) -- String
 SET     @FirstName = 'Steven'
 DECLARE @LastName NVarChar(4) -- String
@@ -101,12 +101,12 @@ VALUES
 )
 
 BeforeExecute
--- SqlCe
+--  SqlCe
 
 SELECT @@IDENTITY
 
 BeforeExecute
--- SqlCe
+--  SqlCe
 
 SELECT
 	COUNT(*) as [COUNT_1]
@@ -114,7 +114,7 @@ FROM
 	[xxPerson] [t1]
 
 BeforeExecute
--- SqlCe
+--  SqlCe
 
 SELECT
 	COUNT(*) as [COUNT_1]
@@ -125,12 +125,12 @@ WHERE
 	[p].[Gender] = 'M'
 
 BeforeExecute
--- SqlCe
+--  SqlCe
 
 DROP TABLE [xxPerson]
 
 BeforeExecute
--- SqlCe
+--  SqlCe
 
 DROP TABLE [xxPerson]
 

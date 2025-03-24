@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlCe
+--  SqlCe
 
 SELECT
 	CAST(0 AS Int) as [projection__set_id__],
@@ -33,7 +33,7 @@ WHERE
 BeforeExecute
 BeginTransaction(RepeatableRead)
 BeforeExecute
--- SqlCe
+--  SqlCe
 
 SELECT
 	[m_1].[ParentID],
@@ -51,7 +51,7 @@ FROM
 BeforeExecute
 DisposeTransaction
 BeforeExecute
--- SqlCe
+--  SqlCe
 
 SELECT
 	[t1].[ParentID],
@@ -60,7 +60,7 @@ FROM
 	[Parent] [t1]
 
 BeforeExecute
--- SqlCe
+--  SqlCe
 
 SELECT
 	[t1].[ParentID],

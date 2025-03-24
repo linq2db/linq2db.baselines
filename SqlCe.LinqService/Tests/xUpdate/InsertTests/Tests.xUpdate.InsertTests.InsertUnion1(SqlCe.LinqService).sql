@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlCe
+--  SqlCe
 
 DELETE FROM
 	[Parent]
@@ -7,7 +7,7 @@ WHERE
 	[Parent].[ParentID] > 1000
 
 BeforeExecute
--- SqlCe
+--  SqlCe
 
 INSERT INTO [Parent]
 (
@@ -33,7 +33,7 @@ FROM
 	) [t1]
 
 BeforeExecute
--- SqlCe
+--  SqlCe
 
 SELECT
 	COUNT(*) as [COUNT_1]
@@ -43,7 +43,7 @@ WHERE
 	[c_1].[ParentID] > 1000
 
 BeforeExecute
--- SqlCe
+--  SqlCe
 
 DELETE FROM
 	[Parent]

@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlCe
+--  SqlCe
 
 SELECT
 	COUNT(*) as [COUNT_1]
@@ -9,7 +9,7 @@ WHERE
 	[p].[FirstName] LIKE '%jOh%' ESCAPE '~' AND [p].[PersonID] = 1
 
 BeforeExecute
--- SqlCe
+--  SqlCe
 
 SELECT
 	COUNT(*) as [COUNT_1]

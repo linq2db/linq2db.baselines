@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlCe
+--  SqlCe
 
 SELECT
 	1 as [c1]
@@ -9,7 +9,7 @@ WHERE
 	[t1].[id] = 1
 
 BeforeExecute
--- SqlCe
+--  SqlCe
 
 INSERT INTO [test_insert_or_replace]
 (
@@ -23,7 +23,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlCe
+--  SqlCe
 
 SELECT
 	1 as [c1]

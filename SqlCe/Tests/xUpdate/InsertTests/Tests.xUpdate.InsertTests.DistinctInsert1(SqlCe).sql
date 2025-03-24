@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 BeginTransaction
 BeforeExecute
--- SqlCe
+--  SqlCe
 
 DELETE FROM
 	[LinqDataTypes]
@@ -9,7 +9,7 @@ WHERE
 	[LinqDataTypes].[ID] > 1000
 
 BeforeExecute
--- SqlCe
+--  SqlCe
 
 INSERT INTO [LinqDataTypes]
 (
@@ -30,7 +30,7 @@ FROM
 	) [t2]
 
 BeforeExecute
--- SqlCe
+--  SqlCe
 
 DELETE FROM
 	[LinqDataTypes]

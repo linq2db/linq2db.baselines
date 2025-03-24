@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 BeginTransaction(RepeatableRead)
 BeforeExecute
--- SqlCe
+--  SqlCe
 
 SELECT
 	[m_2].[Id1],
@@ -18,7 +18,7 @@ FROM
 		INNER JOIN [DetailClass] [d] ON [m_2].[Id1] = [d].[MasterId]
 
 BeforeExecute
--- SqlCe
+--  SqlCe
 
 SELECT
 	[m_2].[Id1],
@@ -49,7 +49,7 @@ FROM
 BeforeExecute
 DisposeTransaction
 BeforeExecute
--- SqlCe
+--  SqlCe
 
 SELECT
 	[m_1].[Id1],
@@ -62,7 +62,7 @@ FROM
 BeforeExecute
 BeginTransaction(RepeatableRead)
 BeforeExecute
--- SqlCe
+--  SqlCe
 
 SELECT
 	[m_1].[Id1],
@@ -81,7 +81,7 @@ FROM
 BeforeExecute
 DisposeTransaction
 BeforeExecute
--- SqlCe
+--  SqlCe
 
 SELECT
 	[t1].[Id1],

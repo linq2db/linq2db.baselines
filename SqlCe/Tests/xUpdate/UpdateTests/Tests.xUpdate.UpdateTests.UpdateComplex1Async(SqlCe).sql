@@ -1,10 +1,10 @@
 ﻿BeforeExecute
--- SqlCe
+--  SqlCe
 
 ALTER TABLE Person ALTER COLUMN PersonID IDENTITY(5,1)
 
 BeforeExecute
--- SqlCe
+--  SqlCe
 DECLARE @Gender NVarChar(1) -- String
 SET     @Gender = 'M'
 DECLARE @Name_FirstName NVarChar(13) -- String
@@ -30,12 +30,12 @@ VALUES
 )
 
 BeforeExecute
--- SqlCe
+--  SqlCe
 
 SELECT @@IDENTITY
 
 BeforeExecute
--- SqlCe (asynchronously)
+--  SqlCe (asynchronously)
 DECLARE @id Int -- Int32
 SET     @id = 5
 
@@ -51,7 +51,7 @@ WHERE
 	[t1].[PersonID] = @id
 
 BeforeExecute
--- SqlCe (asynchronously)
+--  SqlCe (asynchronously)
 DECLARE @Gender NVarChar(1) -- String
 SET     @Gender = 'M'
 DECLARE @Name_FirstName NVarChar(13) -- String
@@ -74,7 +74,7 @@ WHERE
 	[Person].[PersonID] = @ID
 
 BeforeExecute
--- SqlCe (asynchronously)
+--  SqlCe (asynchronously)
 DECLARE @id Int -- Int32
 SET     @id = 5
 

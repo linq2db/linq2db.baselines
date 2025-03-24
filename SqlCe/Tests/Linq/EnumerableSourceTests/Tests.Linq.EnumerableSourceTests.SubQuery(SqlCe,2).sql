@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlCe
+--  SqlCe
 
 SELECT
 	[t].[Id],
@@ -20,7 +20,7 @@ WHERE
 	)
 
 BeforeExecute
--- SqlCe
+--  SqlCe
 
 SELECT
 	[t1].[Id],

@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlCe
+--  SqlCe
 
 DELETE FROM
 	[Person]
@@ -7,7 +7,7 @@ WHERE
 	[Person].[PersonID] > 4
 
 BeforeExecute
--- SqlCe (asynchronously)
+--  SqlCe (asynchronously)
 
 INSERT INTO [Person]
 (
@@ -23,12 +23,12 @@ VALUES
 )
 
 BeforeExecute
--- SqlCe (asynchronously)
+--  SqlCe (asynchronously)
 
 SELECT @@IDENTITY
 
 BeforeExecute
--- SqlCe
+--  SqlCe
 
 DELETE FROM
 	[Person]

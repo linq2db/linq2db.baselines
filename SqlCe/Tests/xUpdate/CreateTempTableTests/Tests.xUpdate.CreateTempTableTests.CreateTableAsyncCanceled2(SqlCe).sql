@@ -1,10 +1,10 @@
 ﻿BeforeExecute
--- SqlCe
+--  SqlCe
 
 DROP TABLE [TempTable]
 
 BeforeExecute
--- SqlCe (asynchronously)
+--  SqlCe (asynchronously)
 
 CREATE TABLE [TempTable]
 (
@@ -12,7 +12,7 @@ CREATE TABLE [TempTable]
 )
 
 BeforeExecute
--- SqlCe (asynchronously)
+--  SqlCe (asynchronously)
 
 INSERT INTO [TempTable]
 (
@@ -24,12 +24,12 @@ FROM
 	[Parent] [p]
 
 BeforeExecute
--- SqlCe (asynchronously)
+--  SqlCe (asynchronously)
 
 DROP TABLE [TempTable]
 
 BeforeExecute
--- SqlCe
+--  SqlCe
 
 DROP TABLE [TempTable]
 

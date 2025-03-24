@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlCe
+--  SqlCe
 
 INSERT INTO [DateOnlyTable]
 (
@@ -8,7 +8,7 @@ INSERT INTO [DateOnlyTable]
 SELECT '2021-01-01'
 
 BeforeExecute
--- SqlCe
+--  SqlCe
 
 SELECT TOP (2)
 	[t1].[Date] as [Date_1]

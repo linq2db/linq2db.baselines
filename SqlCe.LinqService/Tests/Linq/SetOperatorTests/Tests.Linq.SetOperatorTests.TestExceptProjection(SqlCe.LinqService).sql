@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlCe
+--  SqlCe
 
 SELECT DISTINCT
 	[r].[Value1] as [Value_1]

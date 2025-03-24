@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlCe
+--  SqlCe
 
 /* My Test */
 INSERT INTO [TestTable]

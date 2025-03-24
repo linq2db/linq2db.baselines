@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlCe
+--  SqlCe
 DECLARE @Column DateTime
 SET     @Column = '2020-02-29'
 DECLARE @ColumnNullable DateTime
@@ -15,7 +15,7 @@ WHERE
 	[r].[Column] = @Column AND [r].[ColumnNullable] = @ColumnNullable
 
 BeforeExecute
--- SqlCe
+--  SqlCe
 
 SELECT
 	[r].[Id],
@@ -27,13 +27,13 @@ WHERE
 	[r].[Column] = '2020-02-29' AND [r].[ColumnNullable] = '2200-01-01'
 
 BeforeExecute
--- SqlCe
+--  SqlCe
 
 DELETE FROM
 	[DateOnlyTable]
 
 BeforeExecute
--- SqlCe
+--  SqlCe
 DECLARE @Id Int -- Int32
 SET     @Id = 1
 DECLARE @Column DateTime
@@ -55,7 +55,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlCe
+--  SqlCe
 DECLARE @Id Int -- Int32
 SET     @Id = 2
 DECLARE @Column DateTime
@@ -77,7 +77,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlCe
+--  SqlCe
 
 SELECT
 	[t1].[Id],
@@ -89,13 +89,13 @@ ORDER BY
 	[t1].[Id]
 
 BeforeExecute
--- SqlCe
+--  SqlCe
 
 DELETE FROM
 	[DateOnlyTable]
 
 BeforeExecute
--- SqlCe
+--  SqlCe
 
 INSERT INTO [DateOnlyTable]
 (
@@ -107,7 +107,7 @@ SELECT 1,'1950-01-01',NULL UNION ALL
 SELECT 2,'2020-02-29','2200-01-01'
 
 BeforeExecute
--- SqlCe
+--  SqlCe
 
 SELECT
 	[t1].[Id],
@@ -119,13 +119,13 @@ ORDER BY
 	[t1].[Id]
 
 BeforeExecute
--- SqlCe
+--  SqlCe
 
 DELETE FROM
 	[DateOnlyTable]
 
 BeforeExecute
--- SqlCe
+--  SqlCe
 
 INSERT INTO [DateOnlyTable]
 (
@@ -137,7 +137,7 @@ SELECT 1,'1950-01-01',NULL UNION ALL
 SELECT 2,'2020-02-29','2200-01-01'
 
 BeforeExecute
--- SqlCe
+--  SqlCe
 
 SELECT
 	[t1].[Id],

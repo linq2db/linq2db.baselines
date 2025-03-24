@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlCe
+--  SqlCe
 DECLARE @In NVarChar -- String
 SET     @In = NULL
 
@@ -11,7 +11,7 @@ WHERE
 	[s].[CEnum] IN (@In, @In)
 
 BeforeExecute
--- SqlCe
+--  SqlCe
 DECLARE @NotIn NVarChar -- String
 SET     @NotIn = NULL
 

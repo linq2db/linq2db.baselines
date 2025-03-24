@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlCe (asynchronously)
+--  SqlCe (asynchronously)
 
 INSERT INTO [SimpleBulkCopyTable]
 (
@@ -8,7 +8,7 @@ INSERT INTO [SimpleBulkCopyTable]
 SELECT 1
 
 BeforeExecute
--- SqlCe (asynchronously)
+--  SqlCe (asynchronously)
 
 INSERT INTO [SimpleBulkCopyTable]
 (
@@ -17,7 +17,7 @@ INSERT INTO [SimpleBulkCopyTable]
 SELECT 2
 
 BeforeExecute
--- SqlCe (asynchronously)
+--  SqlCe (asynchronously)
 
 INSERT INTO [SimpleBulkCopyTable]
 (
@@ -26,7 +26,7 @@ INSERT INTO [SimpleBulkCopyTable]
 SELECT 3
 
 BeforeExecute
--- SqlCe (asynchronously)
+--  SqlCe (asynchronously)
 
 INSERT INTO [SimpleBulkCopyTable]
 (
@@ -35,7 +35,7 @@ INSERT INTO [SimpleBulkCopyTable]
 SELECT 10
 
 BeforeExecute
--- SqlCe (asynchronously)
+--  SqlCe (asynchronously)
 
 INSERT INTO [SimpleBulkCopyTable]
 (
@@ -44,7 +44,7 @@ INSERT INTO [SimpleBulkCopyTable]
 SELECT 20
 
 BeforeExecute
--- SqlCe (asynchronously)
+--  SqlCe (asynchronously)
 
 INSERT INTO [SimpleBulkCopyTable]
 (

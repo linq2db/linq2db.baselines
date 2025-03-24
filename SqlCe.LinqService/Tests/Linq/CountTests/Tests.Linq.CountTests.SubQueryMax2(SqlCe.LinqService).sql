@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlCe
+--  SqlCe
 
 SELECT
 	MAX([t1].[COUNT_1]) as [MAX_1]

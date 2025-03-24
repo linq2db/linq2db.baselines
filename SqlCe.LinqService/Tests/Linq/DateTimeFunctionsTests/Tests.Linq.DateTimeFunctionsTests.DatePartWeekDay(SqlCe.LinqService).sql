@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlCe
+--  SqlCe
 
 SELECT
 	DatePart(weekday, [t].[DateTimeValue]) as [c1]

@@ -1,10 +1,10 @@
 ﻿BeforeExecute
--- SqlCe
+--  SqlCe
 
 DROP TABLE [TempTable]
 
 BeforeExecute
--- SqlCe
+--  SqlCe
 
 CREATE TABLE [TempTable]
 (
@@ -12,12 +12,12 @@ CREATE TABLE [TempTable]
 )
 
 BeforeExecute
--- SqlCe
+--  SqlCe
 
 DROP TABLE [TempTable]
 
 BeforeExecute
--- SqlCe
+--  SqlCe
 
 DROP TABLE [TempTable]
 

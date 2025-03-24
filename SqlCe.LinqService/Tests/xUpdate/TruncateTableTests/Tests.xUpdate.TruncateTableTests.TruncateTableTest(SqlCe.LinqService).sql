@@ -1,10 +1,10 @@
 ﻿BeforeExecute
--- SqlCe
+--  SqlCe
 
 DROP TABLE [TestTrun]
 
 BeforeExecute
--- SqlCe
+--  SqlCe
 
 CREATE TABLE [TestTrun]
 (
@@ -15,12 +15,12 @@ CREATE TABLE [TestTrun]
 )
 
 BeforeExecute
--- SqlCe
+--  SqlCe
 
 DELETE FROM [TestTrun]
 
 BeforeExecute
--- SqlCe
+--  SqlCe
 
 DROP TABLE [TestTrun]
 

@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlCe
+--  SqlCe
 DECLARE @Column Bit -- Boolean
 SET     @Column = 0
 DECLARE @ColumnNullable Bit -- Boolean
@@ -15,7 +15,7 @@ WHERE
 	[r].[Column] = @Column AND [r].[ColumnNullable] = @ColumnNullable
 
 BeforeExecute
--- SqlCe
+--  SqlCe
 
 SELECT
 	[r].[Id],
@@ -27,13 +27,13 @@ WHERE
 	[r].[Column] = 0 AND [r].[ColumnNullable] = 1
 
 BeforeExecute
--- SqlCe
+--  SqlCe
 
 DELETE FROM
 	[BooleanTable]
 
 BeforeExecute
--- SqlCe
+--  SqlCe
 DECLARE @Id Int -- Int32
 SET     @Id = 1
 DECLARE @Column Bit -- Boolean
@@ -55,7 +55,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlCe
+--  SqlCe
 DECLARE @Id Int -- Int32
 SET     @Id = 2
 DECLARE @Column Bit -- Boolean
@@ -77,7 +77,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlCe
+--  SqlCe
 
 SELECT
 	[t1].[Id],
@@ -89,13 +89,13 @@ ORDER BY
 	[t1].[Id]
 
 BeforeExecute
--- SqlCe
+--  SqlCe
 
 DELETE FROM
 	[BooleanTable]
 
 BeforeExecute
--- SqlCe
+--  SqlCe
 
 INSERT INTO [BooleanTable]
 (
@@ -107,7 +107,7 @@ SELECT 1,1,NULL UNION ALL
 SELECT 2,0,1
 
 BeforeExecute
--- SqlCe
+--  SqlCe
 
 SELECT
 	[t1].[Id],
@@ -119,13 +119,13 @@ ORDER BY
 	[t1].[Id]
 
 BeforeExecute
--- SqlCe
+--  SqlCe
 
 DELETE FROM
 	[BooleanTable]
 
 BeforeExecute
--- SqlCe
+--  SqlCe
 
 INSERT INTO [BooleanTable]
 (
@@ -137,7 +137,7 @@ SELECT 1,1,NULL UNION ALL
 SELECT 2,0,1
 
 BeforeExecute
--- SqlCe
+--  SqlCe
 
 SELECT
 	[t1].[Id],

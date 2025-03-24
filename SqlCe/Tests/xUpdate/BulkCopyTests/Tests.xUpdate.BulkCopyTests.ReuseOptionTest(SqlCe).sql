@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 BeginTransaction
 BeforeExecute
--- SqlCe
+--  SqlCe
 
 INSERT INTO [Parent]
 (
@@ -11,7 +11,7 @@ INSERT INTO [Parent]
 SELECT 111001,NULL
 
 BeforeExecute
--- SqlCe
+--  SqlCe
 
 INSERT INTO [Child]
 (

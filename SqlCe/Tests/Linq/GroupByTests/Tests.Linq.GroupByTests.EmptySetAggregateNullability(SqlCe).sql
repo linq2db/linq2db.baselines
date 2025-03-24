@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlCe
+--  SqlCe
 
 SELECT
 	COUNT(*) as [COUNT_1]
@@ -16,7 +16,7 @@ WHERE
 	[t1].[Min_1] <> 0 OR [t1].[Min_1] IS NULL
 
 BeforeExecute
--- SqlCe
+--  SqlCe
 
 SELECT
 	COUNT(*) as [COUNT_1]
@@ -33,7 +33,7 @@ WHERE
 	[t1].[Max_1] <> 0 OR [t1].[Max_1] IS NULL
 
 BeforeExecute
--- SqlCe
+--  SqlCe
 
 SELECT
 	COUNT(*) as [COUNT_1]
@@ -50,7 +50,7 @@ WHERE
 	[t1].[Avg_1] <> 0 OR [t1].[Avg_1] IS NULL
 
 BeforeExecute
--- SqlCe
+--  SqlCe
 
 SELECT
 	COUNT(*) as [COUNT_1]
@@ -67,7 +67,7 @@ WHERE
 	[t1].[Sum_1] <> 0 OR [t1].[Sum_1] IS NULL
 
 BeforeExecute
--- SqlCe
+--  SqlCe
 
 SELECT
 	COUNT(*) as [COUNT_1]

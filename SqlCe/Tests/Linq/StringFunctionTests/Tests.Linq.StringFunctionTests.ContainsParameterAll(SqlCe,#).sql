@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlCe
+--  SqlCe
 DECLARE @s NVarChar(7) -- String
 SET     @s = '123#456'
 DECLARE @toTest NVarChar(3) -- String

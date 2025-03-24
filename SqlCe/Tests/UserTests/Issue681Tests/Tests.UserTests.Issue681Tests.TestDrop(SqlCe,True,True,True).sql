@@ -1,10 +1,10 @@
 ﻿BeforeExecute
--- SqlCe
+--  SqlCe
 
 DROP TABLE [Issue681Table2]
 
 BeforeExecute
--- SqlCe
+--  SqlCe
 
 CREATE TABLE [Issue681Table2]
 (
@@ -15,7 +15,7 @@ CREATE TABLE [Issue681Table2]
 )
 
 BeforeExecute
--- SqlCe
+--  SqlCe
 
 DROP TABLE [Issue681Table2]
 

@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlCe
+--  SqlCe
 
 SELECT
 	DatePart(month, [t].[DateTimeValue]) as [c1]

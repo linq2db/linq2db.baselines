@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlCe
+--  SqlCe
 DECLARE @param BigInt -- Int64
 SET     @param = 1
 
@@ -20,7 +20,7 @@ WHERE
 	@param = [t1].[BigIntValue]
 
 BeforeExecute
--- SqlCe
+--  SqlCe
 
 SELECT
 	[t1].[ID],

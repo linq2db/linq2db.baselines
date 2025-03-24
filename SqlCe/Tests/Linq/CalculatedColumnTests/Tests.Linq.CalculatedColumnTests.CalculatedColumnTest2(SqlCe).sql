@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlCe
+--  SqlCe
 
 SELECT
 	[t2].[PersonID],
@@ -22,7 +22,7 @@ FROM
 		) [t1]
 
 BeforeExecute
--- SqlCe
+--  SqlCe
 
 SELECT
 	[i].[PersonID],

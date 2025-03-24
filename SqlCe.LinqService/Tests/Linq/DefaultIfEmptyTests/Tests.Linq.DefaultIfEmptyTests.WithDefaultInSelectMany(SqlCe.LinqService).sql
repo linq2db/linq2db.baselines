@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlCe
+--  SqlCe
 
 SELECT
 	[s].[ParentID],
@@ -13,7 +13,7 @@ WHERE
 	[c_1].[ParentID] IS NULL
 
 BeforeExecute
--- SqlCe
+--  SqlCe
 
 SELECT
 	[m_1].[ParentID],
@@ -29,7 +29,7 @@ FROM
 		INNER JOIN [Child] [d] ON [m_1].[ParentID] = [d].[ParentID]
 
 BeforeExecute
--- SqlCe
+--  SqlCe
 
 SELECT
 	[t1].[ParentID],

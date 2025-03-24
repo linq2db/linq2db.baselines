@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlCe
+--  SqlCe
 
 SELECT
 	([t].[ParentID] * 1000) / 1000 as [c1]

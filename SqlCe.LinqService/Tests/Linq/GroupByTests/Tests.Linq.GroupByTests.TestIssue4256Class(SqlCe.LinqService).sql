@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlCe
+--  SqlCe
 
 SELECT
 	[it_1].[IsActive],
@@ -20,7 +20,7 @@ GROUP BY
 	[it_1].[Other]
 
 BeforeExecute
--- SqlCe
+--  SqlCe
 
 SELECT
 	[t1].[ID],

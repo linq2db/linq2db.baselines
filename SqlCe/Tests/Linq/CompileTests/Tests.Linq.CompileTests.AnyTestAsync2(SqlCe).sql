@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlCe (asynchronously)
+--  SqlCe (asynchronously)
 DECLARE @p Int -- Int32
 SET     @p = 1
 
@@ -18,7 +18,7 @@ SELECT
 	END as [c1]
 
 BeforeExecute
--- SqlCe (asynchronously)
+--  SqlCe (asynchronously)
 DECLARE @p Int -- Int32
 SET     @p = -1
 

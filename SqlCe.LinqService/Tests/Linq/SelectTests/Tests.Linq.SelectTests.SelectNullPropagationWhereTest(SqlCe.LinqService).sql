@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlCe
+--  SqlCe
 
 SELECT
 	[p].[ParentID],
@@ -26,7 +26,7 @@ ORDER BY
 	[a_Parent].[Value1]
 
 BeforeExecute
--- SqlCe
+--  SqlCe
 
 SELECT
 	[t1].[ParentID],
@@ -35,7 +35,7 @@ FROM
 	[Parent] [t1]
 
 BeforeExecute
--- SqlCe
+--  SqlCe
 
 SELECT
 	[t1].[ParentID],

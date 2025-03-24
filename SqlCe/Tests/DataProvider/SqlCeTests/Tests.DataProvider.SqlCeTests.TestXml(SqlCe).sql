@@ -1,48 +1,48 @@
 ﻿BeforeExecute
--- SqlCe
+--  SqlCe
 
 SELECT Cast('<xml/>' as nvarchar)
 
 BeforeExecute
--- SqlCe
+--  SqlCe
 
 SELECT Cast('<xml/>' as nvarchar)
 
 BeforeExecute
--- SqlCe
+--  SqlCe
 
 SELECT Cast('<xml/>' as nvarchar)
 
 BeforeExecute
--- SqlCe
+--  SqlCe
 DECLARE @p NVarChar(6) -- String
 SET     @p = '<xml/>'
 
 SELECT Cast(@p as nvarchar)
 
 BeforeExecute
--- SqlCe
+--  SqlCe
 DECLARE @p NVarChar(7) -- String
 SET     @p = '<xml />'
 
 SELECT Cast(@p as nvarchar)
 
 BeforeExecute
--- SqlCe
+--  SqlCe
 DECLARE @p NVarChar(7) -- String
 SET     @p = '<xml />'
 
 SELECT Cast(@p as nvarchar)
 
 BeforeExecute
--- SqlCe
+--  SqlCe
 DECLARE @p NVarChar(7) -- String
 SET     @p = '<xml />'
 
 SELECT Cast(@p as nvarchar)
 
 BeforeExecute
--- SqlCe
+--  SqlCe
 DECLARE @p NVarChar(7) -- String
 SET     @p = '<xml />'
 

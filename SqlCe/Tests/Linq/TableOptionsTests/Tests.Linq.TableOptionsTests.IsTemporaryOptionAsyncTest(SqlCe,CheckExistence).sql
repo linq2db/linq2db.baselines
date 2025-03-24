@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlCe (asynchronously)
+--  SqlCe (asynchronously)
 
 CREATE TABLE [temp_table1]
 (
@@ -8,7 +8,7 @@ CREATE TABLE [temp_table1]
 )
 
 BeforeExecute
--- SqlCe (asynchronously)
+--  SqlCe (asynchronously)
 
 INSERT INTO [temp_table1]
 (
@@ -18,7 +18,7 @@ INSERT INTO [temp_table1]
 SELECT 1,2
 
 BeforeExecute
--- SqlCe (asynchronously)
+--  SqlCe (asynchronously)
 
 CREATE TABLE [temp_table2]
 (
@@ -27,7 +27,7 @@ CREATE TABLE [temp_table2]
 )
 
 BeforeExecute
--- SqlCe (asynchronously)
+--  SqlCe (asynchronously)
 
 INSERT INTO [temp_table2]
 (
@@ -41,7 +41,7 @@ FROM
 	[temp_table1] [t1]
 
 BeforeExecute
--- SqlCe
+--  SqlCe
 
 SELECT
 	[t1].[ID],
@@ -50,7 +50,7 @@ FROM
 	[temp_table1] [t1]
 
 BeforeExecute
--- SqlCe
+--  SqlCe
 
 SELECT
 	[t1].[ID],
@@ -59,7 +59,7 @@ FROM
 	[temp_table2] [t1]
 
 BeforeExecute
--- SqlCe (asynchronously)
+--  SqlCe (asynchronously)
 
 INSERT INTO [temp_table1]
 (
@@ -69,7 +69,7 @@ INSERT INTO [temp_table1]
 SELECT 2,3
 
 BeforeExecute
--- SqlCe (asynchronously)
+--  SqlCe (asynchronously)
 DECLARE @ID Int -- Int32
 SET     @ID = 3
 DECLARE @Value Int -- Int32
@@ -87,7 +87,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlCe (asynchronously)
+--  SqlCe (asynchronously)
 
 INSERT INTO [temp_table1]
 (
@@ -97,22 +97,22 @@ INSERT INTO [temp_table1]
 SELECT 4,5
 
 BeforeExecute
--- SqlCe (asynchronously)
+--  SqlCe (asynchronously)
 
 DELETE FROM [temp_table1]
 
 BeforeExecute
--- SqlCe (asynchronously)
+--  SqlCe (asynchronously)
 
 DELETE FROM [temp_table2]
 
 BeforeExecute
--- SqlCe
+--  SqlCe
 
 DROP TABLE [temp_table2]
 
 BeforeExecute
--- SqlCe
+--  SqlCe
 
 DROP TABLE [temp_table1]
 

@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlCe
+--  SqlCe
 
 SELECT
 	SUM([grp_1].[MoneyValue]) as [SUM_1],

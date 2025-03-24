@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlCe
+--  SqlCe
 DECLARE @p NVarChar(1) -- String
 SET     @p = '1'
 
@@ -15,7 +15,7 @@ WHERE
 	[r].[FirstName] = @p
 
 BeforeExecute
--- SqlCe
+--  SqlCe
 
 SELECT
 	[r].[FirstName],
@@ -29,7 +29,7 @@ WHERE
 	1 = 0
 
 BeforeExecute
--- SqlCe
+--  SqlCe
 DECLARE @p NVarChar(1) -- String
 SET     @p = '1'
 

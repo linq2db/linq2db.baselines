@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SQLite.MS SQLite
+--  SQLite.MS SQLite
 
 --
 -- Helper table
@@ -103,24 +103,24 @@ CREATE TABLE LinqDataTypes
 DROP TABLE IF EXISTS TestIdentity
 
 BeforeExecute
--- SQLite.MS SQLite
+--  SQLite.MS SQLite
 
 CREATE TABLE TestIdentity (
 	ID integer NOT NULL CONSTRAINT PK_TestIdentity PRIMARY KEY AUTOINCREMENT
 )
 
 BeforeExecute
--- SQLite.MS SQLite
+--  SQLite.MS SQLite
 
 DROP VIEW IF EXISTS AllTypesView
 
 BeforeExecute
--- SQLite.MS SQLite
+--  SQLite.MS SQLite
 
 DROP TABLE IF EXISTS AllTypes
 
 BeforeExecute
--- SQLite.MS SQLite
+--  SQLite.MS SQLite
 
 CREATE TABLE AllTypes
 (
@@ -156,7 +156,7 @@ CREATE TABLE AllTypes
 )
 
 BeforeExecute
--- SQLite.MS SQLite
+--  SQLite.MS SQLite
 
 CREATE VIEW AllTypesView
 AS
@@ -166,7 +166,7 @@ SELECT
 FROM AllTypes
 
 BeforeExecute
--- SQLite.MS SQLite
+--  SQLite.MS SQLite
 
 INSERT INTO AllTypes
 (
@@ -189,7 +189,7 @@ SELECT
 		   10
 
 BeforeExecute
--- SQLite.MS SQLite
+--  SQLite.MS SQLite
 
 --
 -- Demonstration Tables for Issue #784
@@ -199,7 +199,7 @@ BeforeExecute
 DROP TABLE IF EXISTS PrimaryKeyTable
 
 BeforeExecute
--- SQLite.MS SQLite
+--  SQLite.MS SQLite
 
 CREATE TABLE PrimaryKeyTable
 (
@@ -208,13 +208,13 @@ CREATE TABLE PrimaryKeyTable
 )
 
 BeforeExecute
--- SQLite.MS SQLite
+--  SQLite.MS SQLite
 
 -- Child table
 DROP TABLE IF EXISTS ForeignKeyTable
 
 BeforeExecute
--- SQLite.MS SQLite
+--  SQLite.MS SQLite
 
 CREATE TABLE ForeignKeyTable
 (
@@ -227,13 +227,13 @@ CREATE TABLE ForeignKeyTable
 )
 
 BeforeExecute
--- SQLite.MS SQLite
+--  SQLite.MS SQLite
 
 -- Second-level child table, alternate semantics
 DROP TABLE IF EXISTS FKTestPosition
 
 BeforeExecute
--- SQLite.MS SQLite
+--  SQLite.MS SQLite
 
 CREATE TABLE FKTestPosition
 (
@@ -250,7 +250,7 @@ CREATE TABLE FKTestPosition
 )
 
 BeforeExecute
--- SQLite.MS SQLite
+--  SQLite.MS SQLite
 
 -- merge test tables
 DROP TABLE IF EXISTS TestMerge1;
@@ -342,7 +342,7 @@ CREATE TABLE CollatedTable
 );
 
 BeforeExecute
--- SQLite.MS SQLite
+--  SQLite.MS SQLite
 
 INSERT INTO [LinqDataTypes]
 (
@@ -372,7 +372,7 @@ VALUES
 (12,11.45,'2012-11-07 19:19:29.090',NULL,1,X'181D0203F097C04D98D0F0C7DF4A1230',12,NULL,NULL,'0')
 
 BeforeExecute
--- SQLite.MS SQLite
+--  SQLite.MS SQLite
 
 INSERT INTO [Parent]
 (
@@ -389,7 +389,7 @@ VALUES
 (7,1)
 
 BeforeExecute
--- SQLite.MS SQLite
+--  SQLite.MS SQLite
 
 INSERT INTO [Child]
 (
@@ -416,7 +416,7 @@ VALUES
 (7,77)
 
 BeforeExecute
--- SQLite.MS SQLite
+--  SQLite.MS SQLite
 
 INSERT INTO [GrandChild]
 (
@@ -449,7 +449,7 @@ VALUES
 (4,42,424)
 
 BeforeExecute
--- SQLite.MS SQLite
+--  SQLite.MS SQLite
 
 INSERT INTO [InheritanceParent]
 (
@@ -463,7 +463,7 @@ VALUES
 (3,2,'InheritanceParent2')
 
 BeforeExecute
--- SQLite.MS SQLite
+--  SQLite.MS SQLite
 
 INSERT INTO [InheritanceChild]
 (
@@ -498,7 +498,7 @@ SET     @uniqueidentifierDataType = X'FF19966F868B11D0B42D00C04FC964FF'
 				WHERE ID = 2
 
 BeforeExecute
--- SQLite.MS.Data SQLite.MS SQLite
+--  SQLite.MS.Data SQLite.MS SQLite
 
 --
 -- Helper table
@@ -602,24 +602,24 @@ CREATE TABLE LinqDataTypes
 DROP TABLE IF EXISTS TestIdentity
 
 BeforeExecute
--- SQLite.MS.Data SQLite.MS SQLite
+--  SQLite.MS.Data SQLite.MS SQLite
 
 CREATE TABLE TestIdentity (
 	ID integer NOT NULL CONSTRAINT PK_TestIdentity PRIMARY KEY AUTOINCREMENT
 )
 
 BeforeExecute
--- SQLite.MS.Data SQLite.MS SQLite
+--  SQLite.MS.Data SQLite.MS SQLite
 
 DROP VIEW IF EXISTS AllTypesView
 
 BeforeExecute
--- SQLite.MS.Data SQLite.MS SQLite
+--  SQLite.MS.Data SQLite.MS SQLite
 
 DROP TABLE IF EXISTS AllTypes
 
 BeforeExecute
--- SQLite.MS.Data SQLite.MS SQLite
+--  SQLite.MS.Data SQLite.MS SQLite
 
 CREATE TABLE AllTypes
 (
@@ -655,7 +655,7 @@ CREATE TABLE AllTypes
 )
 
 BeforeExecute
--- SQLite.MS.Data SQLite.MS SQLite
+--  SQLite.MS.Data SQLite.MS SQLite
 
 CREATE VIEW AllTypesView
 AS
@@ -665,7 +665,7 @@ SELECT
 FROM AllTypes
 
 BeforeExecute
--- SQLite.MS.Data SQLite.MS SQLite
+--  SQLite.MS.Data SQLite.MS SQLite
 
 INSERT INTO AllTypes
 (
@@ -688,7 +688,7 @@ SELECT
 		   10
 
 BeforeExecute
--- SQLite.MS.Data SQLite.MS SQLite
+--  SQLite.MS.Data SQLite.MS SQLite
 
 --
 -- Demonstration Tables for Issue #784
@@ -698,7 +698,7 @@ BeforeExecute
 DROP TABLE IF EXISTS PrimaryKeyTable
 
 BeforeExecute
--- SQLite.MS.Data SQLite.MS SQLite
+--  SQLite.MS.Data SQLite.MS SQLite
 
 CREATE TABLE PrimaryKeyTable
 (
@@ -707,13 +707,13 @@ CREATE TABLE PrimaryKeyTable
 )
 
 BeforeExecute
--- SQLite.MS.Data SQLite.MS SQLite
+--  SQLite.MS.Data SQLite.MS SQLite
 
 -- Child table
 DROP TABLE IF EXISTS ForeignKeyTable
 
 BeforeExecute
--- SQLite.MS.Data SQLite.MS SQLite
+--  SQLite.MS.Data SQLite.MS SQLite
 
 CREATE TABLE ForeignKeyTable
 (
@@ -726,13 +726,13 @@ CREATE TABLE ForeignKeyTable
 )
 
 BeforeExecute
--- SQLite.MS.Data SQLite.MS SQLite
+--  SQLite.MS.Data SQLite.MS SQLite
 
 -- Second-level child table, alternate semantics
 DROP TABLE IF EXISTS FKTestPosition
 
 BeforeExecute
--- SQLite.MS.Data SQLite.MS SQLite
+--  SQLite.MS.Data SQLite.MS SQLite
 
 CREATE TABLE FKTestPosition
 (
@@ -749,7 +749,7 @@ CREATE TABLE FKTestPosition
 )
 
 BeforeExecute
--- SQLite.MS.Data SQLite.MS SQLite
+--  SQLite.MS.Data SQLite.MS SQLite
 
 -- merge test tables
 DROP TABLE IF EXISTS TestMerge1;
@@ -841,7 +841,7 @@ CREATE TABLE CollatedTable
 );
 
 BeforeExecute
--- SQLite.MS.Data SQLite.MS SQLite
+--  SQLite.MS.Data SQLite.MS SQLite
 
 INSERT INTO [LinqDataTypes]
 (
@@ -871,7 +871,7 @@ VALUES
 (12,11.45,'2012-11-07 19:19:29.090',NULL,1,X'181D0203F097C04D98D0F0C7DF4A1230',12,NULL,NULL,'0')
 
 BeforeExecute
--- SQLite.MS.Data SQLite.MS SQLite
+--  SQLite.MS.Data SQLite.MS SQLite
 
 INSERT INTO [Parent]
 (
@@ -888,7 +888,7 @@ VALUES
 (7,1)
 
 BeforeExecute
--- SQLite.MS.Data SQLite.MS SQLite
+--  SQLite.MS.Data SQLite.MS SQLite
 
 INSERT INTO [Child]
 (
@@ -915,7 +915,7 @@ VALUES
 (7,77)
 
 BeforeExecute
--- SQLite.MS.Data SQLite.MS SQLite
+--  SQLite.MS.Data SQLite.MS SQLite
 
 INSERT INTO [GrandChild]
 (
@@ -948,7 +948,7 @@ VALUES
 (4,42,424)
 
 BeforeExecute
--- SQLite.MS.Data SQLite.MS SQLite
+--  SQLite.MS.Data SQLite.MS SQLite
 
 INSERT INTO [InheritanceParent]
 (
@@ -962,7 +962,7 @@ VALUES
 (3,2,'InheritanceParent2')
 
 BeforeExecute
--- SQLite.MS.Data SQLite.MS SQLite
+--  SQLite.MS.Data SQLite.MS SQLite
 
 INSERT INTO [InheritanceChild]
 (

@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlCe
+--  SqlCe
 
 SELECT
 	[c_1].[value] as [Value_1],
@@ -14,7 +14,7 @@ ORDER BY
 	[c_1].[id]
 
 BeforeExecute
--- SqlCe
+--  SqlCe
 DECLARE @startId Int -- Int32
 SET     @startId = 5
 DECLARE @endId Int -- Int32

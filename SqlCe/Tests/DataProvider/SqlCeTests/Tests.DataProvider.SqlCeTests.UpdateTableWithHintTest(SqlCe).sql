@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlCe
+--  SqlCe
 
 UPDATE
 	[Person]
@@ -7,7 +7,7 @@ SET
 	[FirstName] = [Person].[FirstName]
 
 BeforeExecute
--- SqlCe
+--  SqlCe
 
 UPDATE
 	[Person] WITH (TABLOCK)

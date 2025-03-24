@@ -1,10 +1,10 @@
 ﻿BeforeExecute
--- SqlCe
+--  SqlCe
 
 DROP TABLE [xxPerson]
 
 BeforeExecute
--- SqlCe
+--  SqlCe
 
 CREATE TABLE [xxPerson]
 (
@@ -18,7 +18,7 @@ CREATE TABLE [xxPerson]
 )
 
 BeforeExecute
--- SqlCe
+--  SqlCe
 DECLARE @FirstName NVarChar(6) -- String
 SET     @FirstName = 'Steven'
 DECLARE @LastName NVarChar(4) -- String
@@ -44,7 +44,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlCe
+--  SqlCe
 
 SELECT
 	COUNT(*) as [COUNT_1]
@@ -52,7 +52,7 @@ FROM
 	[xxPerson] [t1]
 
 BeforeExecute
--- SqlCe
+--  SqlCe
 
 SELECT TOP (2)
 	[t1].[FirstName],
@@ -64,7 +64,7 @@ FROM
 	[xxPerson] [t1]
 
 BeforeExecute
--- SqlCe
+--  SqlCe
 DECLARE @FirstName NVarChar(6) -- String
 SET     @FirstName = 'Steven'
 DECLARE @LastName NVarChar(4) -- String
@@ -87,7 +87,7 @@ WHERE
 	[xxPerson].[PersonID] = @ID
 
 BeforeExecute
--- SqlCe
+--  SqlCe
 
 SELECT TOP (2)
 	[t1].[FirstName],
@@ -99,7 +99,7 @@ FROM
 	[xxPerson] [t1]
 
 BeforeExecute
--- SqlCe
+--  SqlCe
 
 DROP TABLE [xxPerson]
 

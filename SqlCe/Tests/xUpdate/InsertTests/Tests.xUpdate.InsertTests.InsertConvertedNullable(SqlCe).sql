@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlCe
+--  SqlCe
 
 DELETE FROM
 	[LinqDataTypes]
@@ -7,7 +7,7 @@ WHERE
 	[LinqDataTypes].[ID] >= 1000
 
 BeforeExecute
--- SqlCe
+--  SqlCe
 DECLARE @tt BigInt -- Int64
 SET     @tt = 600000000
 
@@ -23,7 +23,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlCe
+--  SqlCe
 
 SELECT TOP (1)
 	[t].[ID],
@@ -34,7 +34,7 @@ WHERE
 	[t].[ID] = 1001
 
 BeforeExecute
--- SqlCe
+--  SqlCe
 
 DELETE FROM
 	[LinqDataTypes]

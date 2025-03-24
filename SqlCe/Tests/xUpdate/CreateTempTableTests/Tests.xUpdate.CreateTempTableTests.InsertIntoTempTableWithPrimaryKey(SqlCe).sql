@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlCe
+--  SqlCe
 
 CREATE TABLE [TableWithPrimaryKey2]
 (
@@ -9,7 +9,7 @@ CREATE TABLE [TableWithPrimaryKey2]
 )
 
 BeforeExecute
--- SqlCe
+--  SqlCe
 
 INSERT INTO [TableWithPrimaryKey2]
 (
@@ -18,7 +18,7 @@ INSERT INTO [TableWithPrimaryKey2]
 SELECT 1
 
 BeforeExecute
--- SqlCe
+--  SqlCe
 
 DROP TABLE [TableWithPrimaryKey2]
 

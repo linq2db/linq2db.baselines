@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlCe
+--  SqlCe
 
 SELECT
 	[m_1].[Key_1],
@@ -18,7 +18,7 @@ FROM
 		INNER JOIN [Person] [d] ON [m_1].[Key_1] = [d].[FirstName]
 
 BeforeExecute
--- SqlCe
+--  SqlCe
 
 SELECT
 	[t1].[FirstName] as [Key_1],

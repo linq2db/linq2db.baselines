@@ -1,10 +1,10 @@
 ﻿BeforeExecute
--- SqlCe
+--  SqlCe
 
 DROP TABLE [TempTable]
 
 BeforeExecute
--- SqlCe
+--  SqlCe
 
 CREATE TABLE [TempTable]
 (
@@ -14,7 +14,7 @@ CREATE TABLE [TempTable]
 )
 
 BeforeExecute
--- SqlCe
+--  SqlCe
 
 INSERT INTO [TempTable]
 (
@@ -26,7 +26,7 @@ FROM
 	[Parent] [p]
 
 BeforeExecute
--- SqlCe
+--  SqlCe
 
 SELECT
 	[t].[ID]
@@ -35,7 +35,7 @@ FROM
 		INNER JOIN [TempTable] [t] ON [p].[ParentID] = [t].[ID]
 
 BeforeExecute
--- SqlCe
+--  SqlCe
 
 DROP TABLE [TempTable]
 

@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlCe
+--  SqlCe
 
 DELETE FROM
 	[LinqDataTypes]
@@ -7,7 +7,7 @@ WHERE
 	[LinqDataTypes].[ID] > 1000
 
 BeforeExecute
--- SqlCe
+--  SqlCe
 DECLARE @ID Int -- Int32
 SET     @ID = 1001
 DECLARE @MoneyValue Decimal(1, 0)
@@ -45,7 +45,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlCe
+--  SqlCe
 
 SELECT TOP (2)
 	[t].[ID],
@@ -61,7 +61,7 @@ WHERE
 	[t].[ID] = 1001
 
 BeforeExecute
--- SqlCe
+--  SqlCe
 
 DELETE FROM
 	[LinqDataTypes]

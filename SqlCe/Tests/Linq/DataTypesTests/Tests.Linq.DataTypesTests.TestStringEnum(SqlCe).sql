@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlCe
+--  SqlCe
 DECLARE @Column NVarChar(7) -- String
 SET     @Column = 'value=2'
 DECLARE @ColumnNullable NVarChar(8) -- String
@@ -15,7 +15,7 @@ WHERE
 	[r].[Column] = @Column AND [r].[ColumnNullable] = @ColumnNullable
 
 BeforeExecute
--- SqlCe
+--  SqlCe
 
 SELECT
 	[r].[Id],
@@ -27,13 +27,13 @@ WHERE
 	[r].[Column] = 'value=2' AND [r].[ColumnNullable] = 'value=33'
 
 BeforeExecute
--- SqlCe
+--  SqlCe
 
 DELETE FROM
 	[StringEnumTable]
 
 BeforeExecute
--- SqlCe
+--  SqlCe
 DECLARE @Id Int -- Int32
 SET     @Id = 1
 DECLARE @Column NVarChar(5) -- String
@@ -55,7 +55,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlCe
+--  SqlCe
 DECLARE @Id Int -- Int32
 SET     @Id = 2
 DECLARE @Column NVarChar(7) -- String
@@ -77,7 +77,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlCe
+--  SqlCe
 
 SELECT
 	[t1].[Id],
@@ -89,13 +89,13 @@ ORDER BY
 	[t1].[Id]
 
 BeforeExecute
--- SqlCe
+--  SqlCe
 
 DELETE FROM
 	[StringEnumTable]
 
 BeforeExecute
--- SqlCe
+--  SqlCe
 
 INSERT INTO [StringEnumTable]
 (
@@ -107,7 +107,7 @@ SELECT 1,'val=1',NULL UNION ALL
 SELECT 2,'value=2','value=33'
 
 BeforeExecute
--- SqlCe
+--  SqlCe
 
 SELECT
 	[t1].[Id],
@@ -119,13 +119,13 @@ ORDER BY
 	[t1].[Id]
 
 BeforeExecute
--- SqlCe
+--  SqlCe
 
 DELETE FROM
 	[StringEnumTable]
 
 BeforeExecute
--- SqlCe
+--  SqlCe
 
 INSERT INTO [StringEnumTable]
 (
@@ -137,7 +137,7 @@ SELECT 1,'val=1',NULL UNION ALL
 SELECT 2,'value=2','value=33'
 
 BeforeExecute
--- SqlCe
+--  SqlCe
 
 SELECT
 	[t1].[Id],

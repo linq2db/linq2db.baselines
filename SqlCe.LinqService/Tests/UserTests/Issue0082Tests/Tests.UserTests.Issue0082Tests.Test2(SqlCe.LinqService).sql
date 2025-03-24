@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlCe
+--  SqlCe
 
 SELECT
 	[o].[ParentID],
@@ -25,7 +25,7 @@ FROM
 		) [t2]
 
 BeforeExecute
--- SqlCe
+--  SqlCe
 
 SELECT
 	COUNT(*) as [COUNT_1]
@@ -33,7 +33,7 @@ FROM
 	[Parent] [o]
 
 BeforeExecute
--- SqlCe
+--  SqlCe
 
 SELECT
 	[x].[ParentID],

@@ -1,12 +1,12 @@
 ﻿BeforeExecute
--- SqlCe
+--  SqlCe
 
 ALTER TABLE Person ALTER COLUMN PersonID IDENTITY(5,1)
 
 BeforeExecute
 BeginTransaction
 BeforeExecute
--- SqlCe
+--  SqlCe
 
 SELECT
 	[t1].[PersonID],
@@ -17,7 +17,7 @@ ORDER BY
 	[t1].[PersonID]
 
 BeforeExecute
--- SqlCe
+--  SqlCe
 
 SELECT
 	[t1].[PersonID],
@@ -28,7 +28,7 @@ ORDER BY
 	[t1].[PersonID]
 
 BeforeExecute
--- SqlCe
+--  SqlCe
 
 SELECT
 	[t1].[FirstName],

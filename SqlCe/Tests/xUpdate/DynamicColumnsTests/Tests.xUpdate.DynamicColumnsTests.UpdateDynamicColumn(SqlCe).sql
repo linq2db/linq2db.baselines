@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlCe
+--  SqlCe
 
 INSERT INTO [Person]
 (
@@ -15,7 +15,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlCe
+--  SqlCe
 
 SELECT
 	COUNT(*) as [COUNT_1]
@@ -25,7 +25,7 @@ WHERE
 	[c_1].[LastName] = 'Limonadovy'
 
 BeforeExecute
--- SqlCe
+--  SqlCe
 
 UPDATE
 	[Person]
@@ -35,7 +35,7 @@ WHERE
 	[Person].[LastName] = 'Limonadovy'
 
 BeforeExecute
--- SqlCe
+--  SqlCe
 
 SELECT
 	COUNT(*) as [COUNT_1]

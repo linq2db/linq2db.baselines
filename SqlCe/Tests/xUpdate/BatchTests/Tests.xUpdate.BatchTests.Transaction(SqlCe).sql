@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlCe
+--  SqlCe
 DECLARE @ParentID Int -- Int32
 SET     @ParentID = 1111
 
@@ -9,7 +9,7 @@ WHERE
 	[Parent].[ParentID] = @ParentID
 
 BeforeExecute
--- SqlCe
+--  SqlCe
 DECLARE @ParentID Int -- Int32
 SET     @ParentID = 2111
 
@@ -19,7 +19,7 @@ WHERE
 	[Parent].[ParentID] = @ParentID
 
 BeforeExecute
--- SqlCe
+--  SqlCe
 DECLARE @ParentID Int -- Int32
 SET     @ParentID = 3111
 
@@ -29,7 +29,7 @@ WHERE
 	[Parent].[ParentID] = @ParentID
 
 BeforeExecute
--- SqlCe
+--  SqlCe
 DECLARE @ParentID Int -- Int32
 SET     @ParentID = 4111
 
@@ -41,7 +41,7 @@ WHERE
 BeforeExecute
 BeginTransaction
 BeforeExecute
--- SqlCe
+--  SqlCe
 
 INSERT INTO [Parent]
 (
@@ -56,7 +56,7 @@ SELECT 4111,4111
 BeforeExecute
 CommitTransaction
 BeforeExecute
--- SqlCe
+--  SqlCe
 DECLARE @ParentID Int -- Int32
 SET     @ParentID = 1111
 
@@ -66,7 +66,7 @@ WHERE
 	[Parent].[ParentID] = @ParentID
 
 BeforeExecute
--- SqlCe
+--  SqlCe
 DECLARE @ParentID Int -- Int32
 SET     @ParentID = 2111
 
@@ -76,7 +76,7 @@ WHERE
 	[Parent].[ParentID] = @ParentID
 
 BeforeExecute
--- SqlCe
+--  SqlCe
 DECLARE @ParentID Int -- Int32
 SET     @ParentID = 3111
 
@@ -86,7 +86,7 @@ WHERE
 	[Parent].[ParentID] = @ParentID
 
 BeforeExecute
--- SqlCe
+--  SqlCe
 DECLARE @ParentID Int -- Int32
 SET     @ParentID = 4111
 

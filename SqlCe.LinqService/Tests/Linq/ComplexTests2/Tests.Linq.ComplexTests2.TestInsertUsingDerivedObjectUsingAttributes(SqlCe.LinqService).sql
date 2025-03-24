@@ -1,10 +1,10 @@
 ﻿BeforeExecute
--- SqlCe
+--  SqlCe
 
 ALTER TABLE Person ALTER COLUMN PersonID IDENTITY(5,1)
 
 BeforeExecute
--- SqlCe
+--  SqlCe
 DECLARE @FirstName NVarChar(21) -- String
 SET     @FirstName = 'test_inherited_insert'
 DECLARE @LastName NVarChar(4) -- String
@@ -30,12 +30,12 @@ VALUES
 )
 
 BeforeExecute
--- SqlCe
+--  SqlCe
 
 SELECT @@IDENTITY
 
 BeforeExecute
--- SqlCe
+--  SqlCe
 
 SELECT TOP (1)
 	[t1].[FirstName],
@@ -49,7 +49,7 @@ WHERE
 	[t1].[FirstName] = 'test_inherited_insert'
 
 BeforeExecute
--- SqlCe
+--  SqlCe
 DECLARE @FirstName NVarChar(21) -- String
 SET     @FirstName = 'test_inherited_insert'
 DECLARE @LastName NVarChar(4) -- String
@@ -72,7 +72,7 @@ WHERE
 	[Person].[PersonID] = @ID
 
 BeforeExecute
--- SqlCe
+--  SqlCe
 
 SELECT TOP (1)
 	[t1].[FirstName],
@@ -86,7 +86,7 @@ WHERE
 	[t1].[FirstName] = 'test_inherited_insert'
 
 BeforeExecute
--- SqlCe
+--  SqlCe
 DECLARE @ID Int -- Int32
 SET     @ID = 5
 

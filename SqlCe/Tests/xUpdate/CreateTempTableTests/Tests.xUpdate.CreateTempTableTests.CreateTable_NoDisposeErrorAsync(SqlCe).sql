@@ -1,10 +1,10 @@
 ﻿BeforeExecute
--- SqlCe (asynchronously)
+--  SqlCe (asynchronously)
 
 DROP TABLE [TempTable]
 
 BeforeExecute
--- SqlCe (asynchronously)
+--  SqlCe (asynchronously)
 
 CREATE TABLE [TempTable]
 (
@@ -12,12 +12,12 @@ CREATE TABLE [TempTable]
 )
 
 BeforeExecute
--- SqlCe (asynchronously)
+--  SqlCe (asynchronously)
 
 DROP TABLE [TempTable]
 
 BeforeExecute
--- SqlCe (asynchronously)
+--  SqlCe (asynchronously)
 
 DROP TABLE [TempTable]
 

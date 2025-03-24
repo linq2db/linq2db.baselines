@@ -1,10 +1,10 @@
 ﻿BeforeExecute
--- SqlCe
+--  SqlCe
 
 SET IDENTITY_INSERT [IdentitySimpleBulkCopyTable] ON
 
 BeforeExecute
--- SqlCe
+--  SqlCe
 
 INSERT INTO [IdentitySimpleBulkCopyTable]
 (
@@ -13,7 +13,7 @@ INSERT INTO [IdentitySimpleBulkCopyTable]
 SELECT 1
 
 BeforeExecute
--- SqlCe
+--  SqlCe
 
 SET IDENTITY_INSERT [IdentitySimpleBulkCopyTable] OFF
 

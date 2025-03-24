@@ -1,10 +1,10 @@
 ﻿BeforeExecute
--- SqlCe
+--  SqlCe
 
 DROP TABLE [TempTable]
 
 BeforeExecute
--- SqlCe
+--  SqlCe
 
 CREATE TABLE [TempTable]
 (
@@ -12,7 +12,7 @@ CREATE TABLE [TempTable]
 )
 
 BeforeExecute
--- SqlCe
+--  SqlCe
 
 INSERT INTO [TempTable]
 (
@@ -21,7 +21,7 @@ INSERT INTO [TempTable]
 SELECT 'John'
 
 BeforeExecute
--- SqlCe
+--  SqlCe
 
 SELECT
 	[t].[Name]
@@ -30,7 +30,7 @@ FROM
 		INNER JOIN [TempTable] [t] ON [p].[FirstName] = [t].[Name]
 
 BeforeExecute
--- SqlCe
+--  SqlCe
 
 DROP TABLE [TempTable]
 

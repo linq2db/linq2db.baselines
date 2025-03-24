@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlCe
+--  SqlCe
 
 SELECT
 	DateAdd(month, [t].[SmallIntValue], [t].[DateTimeValue]) as [c1]

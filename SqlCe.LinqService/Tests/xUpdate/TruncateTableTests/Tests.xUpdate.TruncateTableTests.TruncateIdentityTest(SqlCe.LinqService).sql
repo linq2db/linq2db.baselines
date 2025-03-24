@@ -1,10 +1,10 @@
 ﻿BeforeExecute
--- SqlCe
+--  SqlCe
 
 DROP TABLE [TestIdTrun]
 
 BeforeExecute
--- SqlCe
+--  SqlCe
 
 CREATE TABLE [TestIdTrun]
 (
@@ -15,7 +15,7 @@ CREATE TABLE [TestIdTrun]
 )
 
 BeforeExecute
--- SqlCe
+--  SqlCe
 
 INSERT INTO [TestIdTrun]
 (
@@ -27,7 +27,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlCe
+--  SqlCe
 
 INSERT INTO [TestIdTrun]
 (
@@ -39,7 +39,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlCe
+--  SqlCe
 DECLARE @skip Int -- Int32
 SET     @skip = 1
 
@@ -53,17 +53,17 @@ ORDER BY
 OFFSET @skip ROWS FETCH NEXT 2 ROWS ONLY 
 
 BeforeExecute
--- SqlCe
+--  SqlCe
 
 DELETE FROM [TestIdTrun]
 
 BeforeExecute
--- SqlCe
+--  SqlCe
 
 ALTER TABLE [TestIdTrun] ALTER COLUMN [ID] IDENTITY(1, 1)
 
 BeforeExecute
--- SqlCe
+--  SqlCe
 
 INSERT INTO [TestIdTrun]
 (
@@ -75,7 +75,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlCe
+--  SqlCe
 
 INSERT INTO [TestIdTrun]
 (
@@ -87,7 +87,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlCe
+--  SqlCe
 DECLARE @skip Int -- Int32
 SET     @skip = 1
 
@@ -101,7 +101,7 @@ ORDER BY
 OFFSET @skip ROWS FETCH NEXT 2 ROWS ONLY 
 
 BeforeExecute
--- SqlCe
+--  SqlCe
 
 DROP TABLE [TestIdTrun]
 

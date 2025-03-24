@@ -1,10 +1,10 @@
 ﻿BeforeExecute
--- SqlCe
+--  SqlCe
 
 ALTER TABLE AllTypes ALTER COLUMN ID IDENTITY(3,1)
 
 BeforeExecute
--- SqlCe
+--  SqlCe
 DECLARE @Value Int -- Int32
 SET     @Value = 0
 
@@ -18,12 +18,12 @@ VALUES
 )
 
 BeforeExecute
--- SqlCe
+--  SqlCe
 
 SELECT @@IDENTITY
 
 BeforeExecute
--- SqlCe
+--  SqlCe
 DECLARE @Value Int -- Int32
 SET     @Value = 200
 
@@ -37,7 +37,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlCe
+--  SqlCe
 DECLARE @Value Int -- Int32
 SET     @Value = 300
 
@@ -51,7 +51,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlCe
+--  SqlCe
 DECLARE @lastId Int -- Int32
 SET     @lastId = 3
 
@@ -66,7 +66,7 @@ ORDER BY
 	[t1].[ID]
 
 BeforeExecute
--- SqlCe
+--  SqlCe
 DECLARE @lastId Int -- Int32
 SET     @lastId = 3
 

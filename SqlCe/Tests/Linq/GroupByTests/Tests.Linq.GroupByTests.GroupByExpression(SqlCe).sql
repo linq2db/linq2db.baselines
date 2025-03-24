@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlCe
+--  SqlCe
 DECLARE @defValue Int -- Int32
 SET     @defValue = 10
 

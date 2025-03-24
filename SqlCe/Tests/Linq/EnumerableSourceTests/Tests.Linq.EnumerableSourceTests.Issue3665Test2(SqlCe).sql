@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlCe
+--  SqlCe
 
 SELECT
 	[x].[PersonID] + [y].[item] as [c1]
@@ -15,7 +15,7 @@ FROM
 			SELECT 3 AS [item]) [y]
 
 BeforeExecute
--- SqlCe
+--  SqlCe
 
 SELECT
 	[t1].[FirstName],

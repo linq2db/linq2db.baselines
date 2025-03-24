@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlCe
+--  SqlCe
 
 SELECT
 	[m_1].[Key_1],
@@ -27,7 +27,7 @@ FROM
 		END
 
 BeforeExecute
--- SqlCe
+--  SqlCe
 
 SELECT
 	[g_2].[Key_1]

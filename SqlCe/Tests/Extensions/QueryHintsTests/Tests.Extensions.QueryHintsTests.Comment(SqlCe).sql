@@ -7,7 +7,7 @@ FROM
 ----
 
 BeforeExecute
--- SqlCe
+--  SqlCe
 
 SELECT
 	[p].[ParentID],
@@ -25,7 +25,7 @@ FROM
 ---
 
 BeforeExecute
--- SqlCe
+--  SqlCe
 
 SELECT
 	[p].[ParentID],

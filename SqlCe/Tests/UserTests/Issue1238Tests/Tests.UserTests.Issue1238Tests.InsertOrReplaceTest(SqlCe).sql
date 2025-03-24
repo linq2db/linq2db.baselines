@@ -1,13 +1,13 @@
 ﻿BeforeExecute
 BeginTransaction
 BeforeExecute
--- SqlCe
+--  SqlCe
 
 DELETE FROM
 	[InheritanceParent]
 
 BeforeExecute
--- SqlCe
+--  SqlCe
 DECLARE @Data Int -- Int32
 SET     @Data = 1
 DECLARE @Key1 Int -- Int32
@@ -22,7 +22,7 @@ WHERE
 	[InheritanceParent].[Name] IS NULL
 
 BeforeExecute
--- SqlCe
+--  SqlCe
 DECLARE @Key1 Int -- Int32
 SET     @Key1 = 143
 DECLARE @Key2 NVarChar -- String
@@ -44,7 +44,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlCe
+--  SqlCe
 
 SELECT
 	COUNT(*) as [COUNT_1]
@@ -52,7 +52,7 @@ FROM
 	[InheritanceParent] [t1]
 
 BeforeExecute
--- SqlCe
+--  SqlCe
 DECLARE @Data Int -- Int32
 SET     @Data = 1
 DECLARE @Key1 Int -- Int32
@@ -67,7 +67,7 @@ WHERE
 	[InheritanceParent].[Name] IS NULL
 
 BeforeExecute
--- SqlCe
+--  SqlCe
 
 SELECT
 	COUNT(*) as [COUNT_1]

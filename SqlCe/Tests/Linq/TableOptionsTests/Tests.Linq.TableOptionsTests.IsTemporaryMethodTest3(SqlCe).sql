@@ -1,10 +1,10 @@
 ﻿BeforeExecute
--- SqlCe
+--  SqlCe
 
 DROP TABLE [TestTable]
 
 BeforeExecute
--- SqlCe
+--  SqlCe
 
 CREATE TABLE [TestTable]
 (
@@ -13,7 +13,7 @@ CREATE TABLE [TestTable]
 )
 
 BeforeExecute
--- SqlCe
+--  SqlCe
 
 SELECT
 	[t1].[Id],
@@ -30,7 +30,7 @@ WHERE
 	[t1].[Id] = [t2].[Id]
 
 BeforeExecute
--- SqlCe
+--  SqlCe
 
 DROP TABLE [TestTable]
 

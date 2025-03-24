@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlCe
+--  SqlCe
 DECLARE @ps NVarChar(3) -- String
 SET     @ps = '%[%'
 

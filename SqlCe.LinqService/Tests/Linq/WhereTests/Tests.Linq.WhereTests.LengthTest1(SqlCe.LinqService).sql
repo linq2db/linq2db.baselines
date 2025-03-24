@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlCe
+--  SqlCe
 
 SELECT
 	[nm].[MiddleName]
@@ -15,7 +15,7 @@ WHERE
 	[nm].[Value_1] <> 0 OR [nm].[Value_1] IS NULL
 
 BeforeExecute
--- SqlCe
+--  SqlCe
 
 SELECT
 	[t1].[FirstName],

@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlCe
+--  SqlCe
 
 SELECT TOP (1)
 	[p].[ParentID]
@@ -9,7 +9,7 @@ WHERE
 	[p].[ParentID] = 2
 
 BeforeExecute
--- SqlCe
+--  SqlCe
 
 SELECT TOP (1)
 	[p].[ParentID]
@@ -19,7 +19,7 @@ WHERE
 	[p].[ParentID] = 2
 
 BeforeExecute
--- SqlCe
+--  SqlCe
 
 SELECT TOP (1)
 	[p].[ParentID]

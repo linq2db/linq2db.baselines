@@ -1,10 +1,10 @@
 ﻿BeforeExecute
--- SqlCe
+--  SqlCe
 
 ALTER TABLE Person ALTER COLUMN PersonID IDENTITY(5,1)
 
 BeforeExecute
--- SqlCe
+--  SqlCe
 DECLARE @FirstName NVarChar(18) -- String
 SET     @FirstName = 'UpdateColumnFilter'
 DECLARE @LastName NVarChar(8) -- String
@@ -30,7 +30,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlCe
+--  SqlCe
 DECLARE @FirstName NVarChar(18) -- String
 SET     @FirstName = 'UpdateColumnFilter'
 
@@ -46,7 +46,7 @@ WHERE
 	[x].[FirstName] = @FirstName
 
 BeforeExecute
--- SqlCe
+--  SqlCe
 DECLARE @FirstName NVarChar(25) -- String
 SET     @FirstName = 'UpdateColumnFilterUpdated'
 DECLARE @ID Int -- Int32
@@ -60,7 +60,7 @@ WHERE
 	[Person].[PersonID] = @ID
 
 BeforeExecute
--- SqlCe
+--  SqlCe
 DECLARE @ID Int -- Int32
 SET     @ID = 5
 
@@ -76,7 +76,7 @@ WHERE
 	[x].[PersonID] = @ID
 
 BeforeExecute
--- SqlCe
+--  SqlCe
 DECLARE @FirstName NVarChar(25) -- String
 SET     @FirstName = 'UpdateColumnFilterUpdated'
 DECLARE @LastName NVarChar(25) -- String
@@ -99,7 +99,7 @@ WHERE
 	[Person].[PersonID] = @ID
 
 BeforeExecute
--- SqlCe
+--  SqlCe
 DECLARE @ID Int -- Int32
 SET     @ID = 5
 

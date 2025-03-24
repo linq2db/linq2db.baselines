@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlCe
+--  SqlCe
 
 SELECT
 	[p].[FirstName],
@@ -15,7 +15,7 @@ FROM
 			SELECT 4 AS [ID]) [n] ON [p].[PersonID] = [n].[ID]
 
 BeforeExecute
--- SqlCe
+--  SqlCe
 
 SELECT
 	[p].[FirstName],

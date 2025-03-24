@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlCe
+--  SqlCe
 DECLARE @take Int -- Int32
 SET     @take = 10
 DECLARE @pattern NVarChar(3) -- String

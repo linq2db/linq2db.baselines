@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlCe
+--  SqlCe
 
 CREATE TABLE [IsTemporaryTable]
 (
@@ -8,7 +8,7 @@ CREATE TABLE [IsTemporaryTable]
 )
 
 BeforeExecute
--- SqlCe
+--  SqlCe
 
 SELECT
 	[t1].[Id],
@@ -17,7 +17,7 @@ FROM
 	[IsTemporaryTable] [t1]
 
 BeforeExecute
--- SqlCe
+--  SqlCe
 
 DROP TABLE [IsTemporaryTable]
 

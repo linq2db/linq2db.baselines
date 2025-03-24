@@ -1,10 +1,10 @@
 ﻿BeforeExecute
--- SqlCe
+--  SqlCe
 
 DROP TABLE [TestTable]
 
 BeforeExecute
--- SqlCe
+--  SqlCe
 
 CREATE TABLE [TestTable]
 (
@@ -13,7 +13,7 @@ CREATE TABLE [TestTable]
 )
 
 BeforeExecute
--- SqlCe
+--  SqlCe
 
 SELECT
 	[t1].[Id],
@@ -28,7 +28,7 @@ FROM
 		INNER JOIN [TestTable] [t3] ON [t2].[Id] = [t3].[Id]
 
 BeforeExecute
--- SqlCe
+--  SqlCe
 
 DROP TABLE [TestTable]
 

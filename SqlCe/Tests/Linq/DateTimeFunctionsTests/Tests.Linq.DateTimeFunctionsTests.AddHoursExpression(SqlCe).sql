@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlCe
+--  SqlCe
 DECLARE @Hour Int -- Int32
 SET     @Hour = 22
 

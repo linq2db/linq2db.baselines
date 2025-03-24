@@ -1,10 +1,10 @@
 ﻿BeforeExecute
--- SqlCe
+--  SqlCe
 
 DROP TABLE [TempTable]
 
 BeforeExecute
--- SqlCe
+--  SqlCe
 
 SELECT
 	[p].[ParentID]
@@ -12,7 +12,7 @@ FROM
 	[Parent] [p]
 
 BeforeExecute
--- SqlCe (asynchronously)
+--  SqlCe (asynchronously)
 
 CREATE TABLE [TempTable]
 (
@@ -20,7 +20,7 @@ CREATE TABLE [TempTable]
 )
 
 BeforeExecute
--- SqlCe (asynchronously)
+--  SqlCe (asynchronously)
 
 INSERT INTO [TempTable]
 (
@@ -35,7 +35,7 @@ SELECT 6 UNION ALL
 SELECT 7
 
 BeforeExecute
--- SqlCe
+--  SqlCe
 
 SELECT
 	[t].[ID]
@@ -44,7 +44,7 @@ FROM
 		INNER JOIN [TempTable] [t] ON [p].[ParentID] = [t].[ID]
 
 BeforeExecute
--- SqlCe (asynchronously)
+--  SqlCe (asynchronously)
 
 DROP TABLE [TempTable]
 

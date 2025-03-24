@@ -1,20 +1,20 @@
 ﻿BeforeExecute
--- SqlCe
+--  SqlCe
 
 SELECT 'A'
 
 BeforeExecute
--- SqlCe
+--  SqlCe
 
 SELECT 'A'
 
 BeforeExecute
--- SqlCe
+--  SqlCe
 
 SELECT 'B'
 
 BeforeExecute
--- SqlCe
+--  SqlCe
 
 SELECT 'B'
 
