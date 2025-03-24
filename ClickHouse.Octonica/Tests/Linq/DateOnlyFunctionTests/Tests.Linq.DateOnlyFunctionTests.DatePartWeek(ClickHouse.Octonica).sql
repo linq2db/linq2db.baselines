@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- ClickHouse.Octonica ClickHouse
+--  ClickHouse.Octonica ClickHouse
 
 SELECT
 	toISOWeek(toDateTime64(t.TransactionDate, 1))

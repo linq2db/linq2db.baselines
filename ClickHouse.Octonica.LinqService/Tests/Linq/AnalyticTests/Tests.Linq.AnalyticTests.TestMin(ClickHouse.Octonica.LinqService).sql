@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- ClickHouse.Octonica ClickHouse
+--  ClickHouse.Octonica ClickHouse
 
 SELECT
 	min(c_1.ChildID),
@@ -13,7 +13,7 @@ GROUP BY
 	g_1.ParentID
 
 BeforeExecute
--- ClickHouse.Octonica ClickHouse
+--  ClickHouse.Octonica ClickHouse
 
 SELECT
 	minOrNull(t1.ParentID)
@@ -21,7 +21,7 @@ FROM
 	Child t1
 
 BeforeExecute
--- ClickHouse.Octonica ClickHouse
+--  ClickHouse.Octonica ClickHouse
 
 SELECT
 	MIN(ALL t1.ParentID)
@@ -29,7 +29,7 @@ FROM
 	Child t1
 
 BeforeExecute
--- ClickHouse.Octonica ClickHouse
+--  ClickHouse.Octonica ClickHouse
 
 SELECT
 	MIN(DISTINCT t1.ParentID)

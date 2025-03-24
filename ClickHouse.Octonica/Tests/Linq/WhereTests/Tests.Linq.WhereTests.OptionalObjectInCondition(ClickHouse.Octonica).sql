@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- ClickHouse.Octonica ClickHouse
+--  ClickHouse.Octonica ClickHouse
 
 SELECT
 	r.FirstName,
@@ -13,7 +13,7 @@ WHERE
 	r.FirstName = '1'
 
 BeforeExecute
--- ClickHouse.Octonica ClickHouse
+--  ClickHouse.Octonica ClickHouse
 
 SELECT
 	r.FirstName,
@@ -27,7 +27,7 @@ WHERE
 	1 = 0
 
 BeforeExecute
--- ClickHouse.Octonica ClickHouse
+--  ClickHouse.Octonica ClickHouse
 
 SELECT
 	r.FirstName,

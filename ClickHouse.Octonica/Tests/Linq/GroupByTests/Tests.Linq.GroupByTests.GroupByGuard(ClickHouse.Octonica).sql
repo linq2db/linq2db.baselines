@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- ClickHouse.Octonica ClickHouse
+--  ClickHouse.Octonica ClickHouse
 
 SELECT
 	t1.FirstName,
@@ -11,7 +11,7 @@ FROM
 	Person t1
 
 BeforeExecute
--- ClickHouse.Octonica ClickHouse
+--  ClickHouse.Octonica ClickHouse
 
 SELECT
 	gr.Gender,
@@ -22,7 +22,7 @@ GROUP BY
 	gr.Gender
 
 BeforeExecute
--- ClickHouse.Octonica ClickHouse
+--  ClickHouse.Octonica ClickHouse
 
 SELECT
 	m_1.Key_1,
@@ -41,7 +41,7 @@ FROM
 		INNER JOIN Person d ON m_1.Key_1 = d.Gender
 
 BeforeExecute
--- ClickHouse.Octonica ClickHouse
+--  ClickHouse.Octonica ClickHouse
 
 SELECT
 	t1.Gender
@@ -51,7 +51,7 @@ GROUP BY
 	t1.Gender
 
 BeforeExecute
--- ClickHouse.Octonica ClickHouse
+--  ClickHouse.Octonica ClickHouse
 
 SELECT
 	m_1.PersonID,
@@ -64,7 +64,7 @@ FROM
 	Person m_1
 
 BeforeExecute
--- ClickHouse.Octonica ClickHouse
+--  ClickHouse.Octonica ClickHouse
 
 SELECT
 	t1.PersonID
@@ -74,7 +74,7 @@ GROUP BY
 	t1.PersonID
 
 BeforeExecute
--- ClickHouse.Octonica ClickHouse
+--  ClickHouse.Octonica ClickHouse
 
 SELECT
 	m_1.PersonID,
@@ -87,7 +87,7 @@ FROM
 	Person m_1
 
 BeforeExecute
--- ClickHouse.Octonica ClickHouse
+--  ClickHouse.Octonica ClickHouse
 
 SELECT
 	t1.PersonID

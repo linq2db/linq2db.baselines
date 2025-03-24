@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- ClickHouse.Octonica ClickHouse
+--  ClickHouse.Octonica ClickHouse
 
 SELECT
 	x.ChildID,
@@ -12,7 +12,7 @@ FROM
 		INNER JOIN Person p3 ON x.ChildID = p3.PersonID
 
 BeforeExecute
--- ClickHouse.Octonica ClickHouse
+--  ClickHouse.Octonica ClickHouse
 
 SELECT
 	x.ChildID,

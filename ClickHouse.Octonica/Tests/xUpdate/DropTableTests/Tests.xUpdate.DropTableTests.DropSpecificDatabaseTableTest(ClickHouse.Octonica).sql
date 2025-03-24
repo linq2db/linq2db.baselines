@@ -1,10 +1,10 @@
 ﻿BeforeExecute
--- ClickHouse.Octonica ClickHouse
+--  ClickHouse.Octonica ClickHouse
 
 DROP TABLE IF EXISTS DropTableTest
 
 BeforeExecute
--- ClickHouse.Octonica ClickHouse
+--  ClickHouse.Octonica ClickHouse
 
 SELECT
 	currentDatabase()
@@ -13,7 +13,7 @@ FROM
 LIMIT 1
 
 BeforeExecute
--- ClickHouse.Octonica ClickHouse
+--  ClickHouse.Octonica ClickHouse
 
 CREATE TABLE DropTableTest
 (
@@ -22,7 +22,7 @@ CREATE TABLE DropTableTest
 ENGINE = Memory()
 
 BeforeExecute
--- ClickHouse.Octonica ClickHouse
+--  ClickHouse.Octonica ClickHouse
 
 INSERT INTO testdb1.DropTableTest
 (
@@ -34,7 +34,7 @@ VALUES
 )
 
 BeforeExecute
--- ClickHouse.Octonica ClickHouse
+--  ClickHouse.Octonica ClickHouse
 
 SELECT
 	t1.ID
@@ -42,12 +42,12 @@ FROM
 	testdb1.DropTableTest t1
 
 BeforeExecute
--- ClickHouse.Octonica ClickHouse
+--  ClickHouse.Octonica ClickHouse
 
 DROP TABLE testdb1.DropTableTest
 
 BeforeExecute
--- ClickHouse.Octonica ClickHouse
+--  ClickHouse.Octonica ClickHouse
 
 SELECT
 	t1.ID

@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- ClickHouse.Octonica ClickHouse
+--  ClickHouse.Octonica ClickHouse
 
 SELECT
 	(toFloat64(COUNT(*)) * toFloat64(100)) / SUM(COUNT(*)) OVER(),

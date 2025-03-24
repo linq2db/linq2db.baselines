@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- ClickHouse.Octonica ClickHouse
+--  ClickHouse.Octonica ClickHouse
 
 INSERT INTO InheritanceFilter
 (
@@ -21,7 +21,7 @@ VALUES
 (6,22,0,26,0,0,0,16)
 
 BeforeExecute
--- ClickHouse.Octonica ClickHouse
+--  ClickHouse.Octonica ClickHouse
 
 SELECT
 	t1.Code,

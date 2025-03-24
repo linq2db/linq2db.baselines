@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- ClickHouse.Octonica ClickHouse
+--  ClickHouse.Octonica ClickHouse
 
 SELECT
 	m_1.Id,
@@ -19,7 +19,7 @@ WHERE
 	'[{"Value":"Value1"}]' = m_1.Value2 AND '[{"Value":"Value1"}]' = m_1.Value2
 
 BeforeExecute
--- ClickHouse.Octonica ClickHouse
+--  ClickHouse.Octonica ClickHouse
 
 SELECT
 	g_1.Id

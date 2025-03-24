@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- ClickHouse.Octonica ClickHouse (asynchronously)
+--  ClickHouse.Octonica ClickHouse (asynchronously)
 
 SELECT
 	t1.ParentID,
@@ -11,7 +11,7 @@ ORDER BY
 	t1.ChildID
 
 BeforeExecute
--- ClickHouse.Octonica ClickHouse (asynchronously)
+--  ClickHouse.Octonica ClickHouse (asynchronously)
 
 SELECT
 	t1.ParentID,

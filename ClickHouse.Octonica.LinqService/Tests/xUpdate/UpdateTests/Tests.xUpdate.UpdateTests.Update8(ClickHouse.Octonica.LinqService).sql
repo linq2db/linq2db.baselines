@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- ClickHouse.Octonica ClickHouse
+--  ClickHouse.Octonica ClickHouse
 
 INSERT INTO Parent
 (
@@ -13,7 +13,7 @@ VALUES
 )
 
 BeforeExecute
--- ClickHouse.Octonica ClickHouse
+--  ClickHouse.Octonica ClickHouse
 
 ALTER TABLE
 	Parent
@@ -23,7 +23,7 @@ WHERE
 	ParentID = 1001
 
 BeforeExecute
--- ClickHouse.Octonica ClickHouse
+--  ClickHouse.Octonica ClickHouse
 
 SELECT
 	p.ParentID,

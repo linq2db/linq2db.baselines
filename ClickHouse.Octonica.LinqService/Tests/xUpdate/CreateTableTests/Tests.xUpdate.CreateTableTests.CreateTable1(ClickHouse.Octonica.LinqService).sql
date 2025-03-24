@@ -1,10 +1,10 @@
 ﻿BeforeExecute
--- ClickHouse.Octonica ClickHouse
+--  ClickHouse.Octonica ClickHouse
 
 DROP TABLE IF EXISTS TestTable
 
 BeforeExecute
--- ClickHouse.Octonica ClickHouse
+--  ClickHouse.Octonica ClickHouse
 
 CREATE TABLE TestTable
 (
@@ -19,7 +19,7 @@ ENGINE = MergeTree()
 ORDER BY ID
 
 BeforeExecute
--- ClickHouse.Octonica ClickHouse
+--  ClickHouse.Octonica ClickHouse
 
 SELECT
 	t1.ID,
@@ -30,7 +30,7 @@ FROM
 	TestTable t1
 
 BeforeExecute
--- ClickHouse.Octonica ClickHouse
+--  ClickHouse.Octonica ClickHouse
 
 DROP TABLE TestTable
 

@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- ClickHouse.Octonica ClickHouse
+--  ClickHouse.Octonica ClickHouse
 
 SELECT
 	r.Id,
@@ -11,7 +11,7 @@ WHERE
 	r.Column = 2 AND r.ColumnNullable = 3
 
 BeforeExecute
--- ClickHouse.Octonica ClickHouse
+--  ClickHouse.Octonica ClickHouse
 
 SELECT
 	r.Id,
@@ -23,14 +23,14 @@ WHERE
 	r.Column = 2 AND r.ColumnNullable = 3
 
 BeforeExecute
--- ClickHouse.Octonica ClickHouse
+--  ClickHouse.Octonica ClickHouse
 
 ALTER TABLE
 	IntEnumTable
 DELETE WHERE 1
 
 BeforeExecute
--- ClickHouse.Octonica ClickHouse
+--  ClickHouse.Octonica ClickHouse
 
 INSERT INTO IntEnumTable
 (
@@ -46,7 +46,7 @@ VALUES
 )
 
 BeforeExecute
--- ClickHouse.Octonica ClickHouse
+--  ClickHouse.Octonica ClickHouse
 
 INSERT INTO IntEnumTable
 (
@@ -62,7 +62,7 @@ VALUES
 )
 
 BeforeExecute
--- ClickHouse.Octonica ClickHouse
+--  ClickHouse.Octonica ClickHouse
 
 SELECT
 	t1.Id,
@@ -74,14 +74,14 @@ ORDER BY
 	t1.Id
 
 BeforeExecute
--- ClickHouse.Octonica ClickHouse
+--  ClickHouse.Octonica ClickHouse
 
 ALTER TABLE
 	IntEnumTable
 DELETE WHERE 1
 
 BeforeExecute
--- ClickHouse.Octonica ClickHouse
+--  ClickHouse.Octonica ClickHouse
 
 INSERT INTO IntEnumTable
 (
@@ -94,7 +94,7 @@ VALUES
 (2,2,3)
 
 BeforeExecute
--- ClickHouse.Octonica ClickHouse
+--  ClickHouse.Octonica ClickHouse
 
 SELECT
 	t1.Id,
@@ -106,7 +106,7 @@ ORDER BY
 	t1.Id
 
 BeforeExecute
--- ClickHouse.Octonica ClickHouse
+--  ClickHouse.Octonica ClickHouse
 
 ALTER TABLE
 	IntEnumTable
@@ -116,7 +116,7 @@ BeforeExecute
 INSERT INTO IntEnumTable(Id, Column, ColumnNullable) VALUES
 
 BeforeExecute
--- ClickHouse.Octonica ClickHouse
+--  ClickHouse.Octonica ClickHouse
 
 SELECT
 	t1.Id,

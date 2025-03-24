@@ -1,10 +1,10 @@
 ﻿BeforeExecute
--- ClickHouse.Octonica ClickHouse (asynchronously)
+--  ClickHouse.Octonica ClickHouse (asynchronously)
 
 DROP TABLE IF EXISTS TempTable
 
 BeforeExecute
--- ClickHouse.Octonica ClickHouse (asynchronously)
+--  ClickHouse.Octonica ClickHouse (asynchronously)
 
 CREATE TABLE IF NOT EXISTS TempTable
 (
@@ -16,7 +16,7 @@ BeforeExecute
 INSERT INTO TempTable(Name) VALUES
 
 BeforeExecute
--- ClickHouse.Octonica ClickHouse (asynchronously)
+--  ClickHouse.Octonica ClickHouse (asynchronously)
 
 SELECT
 	t.Name
@@ -25,7 +25,7 @@ FROM
 		INNER JOIN TempTable t ON p.FirstName = t.Name
 
 BeforeExecute
--- ClickHouse.Octonica ClickHouse (asynchronously)
+--  ClickHouse.Octonica ClickHouse (asynchronously)
 
 DROP TABLE IF EXISTS TempTable
 

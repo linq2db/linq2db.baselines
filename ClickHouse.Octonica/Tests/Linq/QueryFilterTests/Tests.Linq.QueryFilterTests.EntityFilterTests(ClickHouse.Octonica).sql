@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- ClickHouse.Octonica ClickHouse
+--  ClickHouse.Octonica ClickHouse
 
 SELECT
 	m_1.Id,
@@ -11,7 +11,7 @@ WHERE
 	NOT m_1.IsDeleted
 
 BeforeExecute
--- ClickHouse.Octonica ClickHouse
+--  ClickHouse.Octonica ClickHouse
 
 SELECT
 	m_1.Id,
@@ -21,7 +21,7 @@ FROM
 	MasterClass m_1
 
 BeforeExecute
--- ClickHouse.Octonica ClickHouse
+--  ClickHouse.Octonica ClickHouse
 
 SELECT
 	m_1.Id,
@@ -33,7 +33,7 @@ WHERE
 	NOT m_1.IsDeleted
 
 BeforeExecute
--- ClickHouse.Octonica ClickHouse
+--  ClickHouse.Octonica ClickHouse
 
 SELECT
 	m_1.Id,

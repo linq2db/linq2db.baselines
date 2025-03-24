@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- ClickHouse.Octonica ClickHouse
+--  ClickHouse.Octonica ClickHouse
 
 SELECT
 	COUNT(*)
@@ -13,7 +13,7 @@ WHERE
 	concat('{}', p.LastName) = concat('{}', p.LastName)
 
 BeforeExecute
--- ClickHouse.Octonica ClickHouse
+--  ClickHouse.Octonica ClickHouse
 
 SELECT
 	COUNT(*)

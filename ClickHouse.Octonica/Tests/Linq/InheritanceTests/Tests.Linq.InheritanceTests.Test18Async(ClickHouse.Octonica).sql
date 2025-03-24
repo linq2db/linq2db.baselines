@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- ClickHouse.Octonica ClickHouse (asynchronously)
+--  ClickHouse.Octonica ClickHouse (asynchronously)
 
 SELECT DISTINCT
 	p1.PersonID,

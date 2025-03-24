@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- ClickHouse.Octonica ClickHouse (asynchronously)
+--  ClickHouse.Octonica ClickHouse (asynchronously)
 
 SELECT
 	sumOrNull(toDecimal128(c_1.Id, 10))

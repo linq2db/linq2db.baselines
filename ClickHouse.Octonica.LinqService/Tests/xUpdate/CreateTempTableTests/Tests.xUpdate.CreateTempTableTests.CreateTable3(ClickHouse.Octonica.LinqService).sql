@@ -1,10 +1,10 @@
 ﻿BeforeExecute
--- ClickHouse.Octonica ClickHouse
+--  ClickHouse.Octonica ClickHouse
 
 DROP TABLE IF EXISTS TempTable
 
 BeforeExecute
--- ClickHouse.Octonica ClickHouse
+--  ClickHouse.Octonica ClickHouse
 
 CREATE TABLE IF NOT EXISTS TempTable
 (
@@ -16,7 +16,7 @@ ENGINE = MergeTree()
 ORDER BY ID
 
 BeforeExecute
--- ClickHouse.Octonica ClickHouse
+--  ClickHouse.Octonica ClickHouse
 
 INSERT INTO TempTable
 (
@@ -28,7 +28,7 @@ FROM
 	Parent p
 
 BeforeExecute
--- ClickHouse.Octonica ClickHouse
+--  ClickHouse.Octonica ClickHouse
 
 SELECT
 	t.ID
@@ -37,7 +37,7 @@ FROM
 		INNER JOIN TempTable t ON p.ParentID = t.ID
 
 BeforeExecute
--- ClickHouse.Octonica ClickHouse
+--  ClickHouse.Octonica ClickHouse
 
 DROP TABLE IF EXISTS TempTable
 

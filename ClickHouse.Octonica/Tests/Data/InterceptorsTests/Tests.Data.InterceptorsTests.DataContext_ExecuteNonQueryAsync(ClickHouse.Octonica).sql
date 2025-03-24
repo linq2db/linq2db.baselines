@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- ClickHouse.Octonica ClickHouse (asynchronously)
+--  ClickHouse.Octonica ClickHouse (asynchronously)
 
 CREATE TEMPORARY TABLE InterceptorsTestsTable
 (
@@ -8,7 +8,7 @@ CREATE TEMPORARY TABLE InterceptorsTestsTable
 ENGINE = Memory()
 
 BeforeExecute
--- ClickHouse.Octonica ClickHouse (asynchronously)
+--  ClickHouse.Octonica ClickHouse (asynchronously)
 
 DROP TABLE IF EXISTS InterceptorsTestsTable
 

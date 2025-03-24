@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- ClickHouse.Octonica ClickHouse
+--  ClickHouse.Octonica ClickHouse
 
 SELECT
 	m_1.Key_1,
@@ -18,7 +18,7 @@ WHERE
 	d.ParentID IN (2)
 
 BeforeExecute
--- ClickHouse.Octonica ClickHouse
+--  ClickHouse.Octonica ClickHouse
 
 SELECT
 	x.ChildID
@@ -30,7 +30,7 @@ GROUP BY
 	x.ChildID
 
 BeforeExecute
--- ClickHouse.Octonica ClickHouse
+--  ClickHouse.Octonica ClickHouse
 
 SELECT
 	m_1.Key_1,
@@ -49,7 +49,7 @@ WHERE
 	d.ParentID IN (3)
 
 BeforeExecute
--- ClickHouse.Octonica ClickHouse
+--  ClickHouse.Octonica ClickHouse
 
 SELECT
 	x.ChildID

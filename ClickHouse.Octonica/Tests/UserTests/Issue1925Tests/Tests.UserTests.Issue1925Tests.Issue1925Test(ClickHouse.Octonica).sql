@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- ClickHouse.Octonica ClickHouse
+--  ClickHouse.Octonica ClickHouse
 
 SELECT
 	r.Id
@@ -10,7 +10,7 @@ WHERE
 LIMIT 2
 
 BeforeExecute
--- ClickHouse.Octonica ClickHouse
+--  ClickHouse.Octonica ClickHouse
 
 SELECT
 	r.Id
@@ -21,7 +21,7 @@ WHERE
 LIMIT 2
 
 BeforeExecute
--- ClickHouse.Octonica ClickHouse
+--  ClickHouse.Octonica ClickHouse
 
 SELECT
 	r.Id
@@ -32,7 +32,7 @@ WHERE
 LIMIT 2
 
 BeforeExecute
--- ClickHouse.Octonica ClickHouse
+--  ClickHouse.Octonica ClickHouse
 
 SELECT
 	r.Id,
@@ -43,7 +43,7 @@ WHERE
 	position(r.Value, '[]') > 0
 
 BeforeExecute
--- ClickHouse.Octonica ClickHouse
+--  ClickHouse.Octonica ClickHouse
 
 SELECT
 	r.Id,
@@ -54,7 +54,7 @@ WHERE
 	position(r.Value, '[0') > 0
 
 BeforeExecute
--- ClickHouse.Octonica ClickHouse
+--  ClickHouse.Octonica ClickHouse
 
 SELECT
 	r.Id,
@@ -65,7 +65,7 @@ WHERE
 	position(r.Value, '[0') > 0
 
 BeforeExecute
--- ClickHouse.Octonica ClickHouse
+--  ClickHouse.Octonica ClickHouse
 
 SELECT
 	r.Id,
@@ -76,7 +76,7 @@ WHERE
 	position(r.Value, '[0-9]') > 0
 
 BeforeExecute
--- ClickHouse.Octonica ClickHouse
+--  ClickHouse.Octonica ClickHouse
 
 SELECT
 	r.Id,
@@ -87,7 +87,7 @@ WHERE
 	position(r.Value, '6') > 0
 
 BeforeExecute
--- ClickHouse.Octonica ClickHouse
+--  ClickHouse.Octonica ClickHouse
 
 SELECT
 	r.Id,
@@ -98,7 +98,7 @@ WHERE
 	r.Value LIKE '[0'
 
 BeforeExecute
--- ClickHouse.Octonica ClickHouse
+--  ClickHouse.Octonica ClickHouse
 
 SELECT
 	r.Id,
@@ -109,7 +109,7 @@ WHERE
 	r.Value LIKE '[0'
 
 BeforeExecute
--- ClickHouse.Octonica ClickHouse
+--  ClickHouse.Octonica ClickHouse
 
 SELECT
 	r.Id,
@@ -120,7 +120,7 @@ WHERE
 	r.Value LIKE '[0-9]'
 
 BeforeExecute
--- ClickHouse.Octonica ClickHouse
+--  ClickHouse.Octonica ClickHouse
 
 SELECT
 	r.Id,

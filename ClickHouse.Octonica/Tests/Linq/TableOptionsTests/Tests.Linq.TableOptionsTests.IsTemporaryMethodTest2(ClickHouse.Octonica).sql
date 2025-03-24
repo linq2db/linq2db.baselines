@@ -1,10 +1,10 @@
 ﻿BeforeExecute
--- ClickHouse.Octonica ClickHouse
+--  ClickHouse.Octonica ClickHouse
 
 DROP TABLE IF EXISTS TestTable
 
 BeforeExecute
--- ClickHouse.Octonica ClickHouse
+--  ClickHouse.Octonica ClickHouse
 
 CREATE TEMPORARY TABLE TestTable
 (
@@ -14,7 +14,7 @@ CREATE TEMPORARY TABLE TestTable
 ENGINE = Memory()
 
 BeforeExecute
--- ClickHouse.Octonica ClickHouse
+--  ClickHouse.Octonica ClickHouse
 
 SELECT
 	t1.Id,
@@ -31,7 +31,7 @@ WHERE
 	t1.Id = t2.Id
 
 BeforeExecute
--- ClickHouse.Octonica ClickHouse
+--  ClickHouse.Octonica ClickHouse
 
 DROP TABLE IF EXISTS TestTable
 

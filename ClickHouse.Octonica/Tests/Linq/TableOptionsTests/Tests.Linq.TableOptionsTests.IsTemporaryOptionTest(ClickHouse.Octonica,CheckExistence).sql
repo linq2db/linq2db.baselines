@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- ClickHouse.Octonica ClickHouse
+--  ClickHouse.Octonica ClickHouse
 
 CREATE TEMPORARY TABLE IF NOT EXISTS temp_table1
 (
@@ -12,7 +12,7 @@ BeforeExecute
 INSERT INTO temp_table1(ID, Value) VALUES
 
 BeforeExecute
--- ClickHouse.Octonica ClickHouse
+--  ClickHouse.Octonica ClickHouse
 
 CREATE TEMPORARY TABLE IF NOT EXISTS temp_table2
 (
@@ -22,7 +22,7 @@ CREATE TEMPORARY TABLE IF NOT EXISTS temp_table2
 ENGINE = Memory()
 
 BeforeExecute
--- ClickHouse.Octonica ClickHouse
+--  ClickHouse.Octonica ClickHouse
 
 INSERT INTO temp_table2
 (
@@ -36,7 +36,7 @@ FROM
 	temp_table1 t1
 
 BeforeExecute
--- ClickHouse.Octonica ClickHouse
+--  ClickHouse.Octonica ClickHouse
 
 SELECT
 	t1.ID,
@@ -45,7 +45,7 @@ FROM
 	temp_table1 t1
 
 BeforeExecute
--- ClickHouse.Octonica ClickHouse
+--  ClickHouse.Octonica ClickHouse
 
 SELECT
 	t1.ID,
@@ -54,7 +54,7 @@ FROM
 	temp_table2 t1
 
 BeforeExecute
--- ClickHouse.Octonica ClickHouse
+--  ClickHouse.Octonica ClickHouse
 
 INSERT INTO temp_table1
 (
@@ -65,7 +65,7 @@ VALUES
 (2,3)
 
 BeforeExecute
--- ClickHouse.Octonica ClickHouse
+--  ClickHouse.Octonica ClickHouse
 
 INSERT INTO temp_table1
 (
@@ -82,22 +82,22 @@ BeforeExecute
 INSERT INTO temp_table1(ID, Value) VALUES
 
 BeforeExecute
--- ClickHouse.Octonica ClickHouse
+--  ClickHouse.Octonica ClickHouse
 
 TRUNCATE TABLE temp_table1
 
 BeforeExecute
--- ClickHouse.Octonica ClickHouse
+--  ClickHouse.Octonica ClickHouse
 
 TRUNCATE TABLE temp_table2
 
 BeforeExecute
--- ClickHouse.Octonica ClickHouse
+--  ClickHouse.Octonica ClickHouse
 
 DROP TABLE IF EXISTS temp_table2
 
 BeforeExecute
--- ClickHouse.Octonica ClickHouse
+--  ClickHouse.Octonica ClickHouse
 
 DROP TABLE IF EXISTS temp_table1
 

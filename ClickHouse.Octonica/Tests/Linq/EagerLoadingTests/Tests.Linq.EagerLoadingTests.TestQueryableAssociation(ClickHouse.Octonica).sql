@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- ClickHouse.Octonica ClickHouse
+--  ClickHouse.Octonica ClickHouse
 
 SELECT
 	m_1.Id1,
@@ -14,7 +14,7 @@ WHERE
 	m_1.Id1 > 5 AND d.DetailId % 2 = 0
 
 BeforeExecute
--- ClickHouse.Octonica ClickHouse
+--  ClickHouse.Octonica ClickHouse
 
 SELECT
 	m_1.Id1,
@@ -29,7 +29,7 @@ WHERE
 	m_1.Id1 > 5 AND d.DetailId % 2 = 0 AND d.DetailId % 2 = 0
 
 BeforeExecute
--- ClickHouse.Octonica ClickHouse
+--  ClickHouse.Octonica ClickHouse
 
 SELECT
 	m_1.Id1,
@@ -42,7 +42,7 @@ WHERE
 	m_1.Id1 > 5 AND d.DetailId % 2 = 0 AND d.DetailId % 2 = 0
 
 BeforeExecute
--- ClickHouse.Octonica ClickHouse
+--  ClickHouse.Octonica ClickHouse
 
 SELECT
 	m_1.Id1,

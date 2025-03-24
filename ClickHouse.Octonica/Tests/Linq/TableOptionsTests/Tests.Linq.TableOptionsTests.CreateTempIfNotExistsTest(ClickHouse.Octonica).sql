@@ -1,10 +1,10 @@
 ﻿BeforeExecute
--- ClickHouse.Octonica ClickHouse
+--  ClickHouse.Octonica ClickHouse
 
 DROP TABLE IF EXISTS CreateIfNotExistsTable
 
 BeforeExecute
--- ClickHouse.Octonica ClickHouse
+--  ClickHouse.Octonica ClickHouse
 
 CREATE TEMPORARY TABLE CreateIfNotExistsTable
 (
@@ -14,7 +14,7 @@ CREATE TEMPORARY TABLE CreateIfNotExistsTable
 ENGINE = Memory()
 
 BeforeExecute
--- ClickHouse.Octonica ClickHouse
+--  ClickHouse.Octonica ClickHouse
 
 SELECT
 	t1.Id,
@@ -23,7 +23,7 @@ FROM
 	CreateIfNotExistsTable t1
 
 BeforeExecute
--- ClickHouse.Octonica ClickHouse
+--  ClickHouse.Octonica ClickHouse
 
 CREATE TABLE IF NOT EXISTS CreateIfNotExistsTable
 (
@@ -33,12 +33,12 @@ CREATE TABLE IF NOT EXISTS CreateIfNotExistsTable
 ENGINE = Memory()
 
 BeforeExecute
--- ClickHouse.Octonica ClickHouse
+--  ClickHouse.Octonica ClickHouse
 
 DROP TABLE IF EXISTS CreateIfNotExistsTable
 
 BeforeExecute
--- ClickHouse.Octonica ClickHouse
+--  ClickHouse.Octonica ClickHouse
 
 DROP TABLE IF EXISTS CreateIfNotExistsTable
 

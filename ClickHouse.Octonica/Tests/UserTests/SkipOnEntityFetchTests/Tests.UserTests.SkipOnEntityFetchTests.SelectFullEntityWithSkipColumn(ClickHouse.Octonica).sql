@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- ClickHouse.Octonica ClickHouse
+--  ClickHouse.Octonica ClickHouse
 
 SELECT
 	t1.FirstName,
@@ -8,7 +8,7 @@ FROM
 	Person t1
 
 BeforeExecute
--- ClickHouse.Octonica ClickHouse
+--  ClickHouse.Octonica ClickHouse
 
 SELECT
 	p.FirstName,
@@ -19,7 +19,7 @@ WHERE
 	Coalesce(p.PersonID, 0) >= 2
 
 BeforeExecute
--- ClickHouse.Octonica ClickHouse
+--  ClickHouse.Octonica ClickHouse
 
 SELECT
 	NOT EXISTS(
@@ -32,7 +32,7 @@ SELECT
 	)
 
 BeforeExecute
--- ClickHouse.Octonica ClickHouse
+--  ClickHouse.Octonica ClickHouse
 
 SELECT
 	NOT EXISTS(

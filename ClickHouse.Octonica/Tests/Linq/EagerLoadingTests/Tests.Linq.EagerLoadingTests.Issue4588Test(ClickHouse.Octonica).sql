@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- ClickHouse.Octonica ClickHouse
+--  ClickHouse.Octonica ClickHouse
 
 SELECT
 	m_1.Id,
@@ -36,7 +36,7 @@ FROM
 		INNER JOIN SubOrderDetail d_1 ON m_1.Id = d_1.SubOrderId
 
 BeforeExecute
--- ClickHouse.Octonica ClickHouse
+--  ClickHouse.Octonica ClickHouse
 
 SELECT
 	m_1.Id,
@@ -62,7 +62,7 @@ FROM
 		INNER JOIN SubOrder d ON m_1.Id = d.OrderId
 
 BeforeExecute
--- ClickHouse.Octonica ClickHouse
+--  ClickHouse.Octonica ClickHouse
 
 SELECT
 	x.Id,

@@ -2,7 +2,7 @@
 INSERT INTO TrimTestTable(ID, Data) VALUES
 
 BeforeExecute
--- ClickHouse.Octonica ClickHouse
+--  ClickHouse.Octonica ClickHouse
 
 SELECT
 	r.ID,
@@ -13,7 +13,7 @@ ORDER BY
 	r.ID
 
 BeforeExecute
--- ClickHouse.Octonica ClickHouse
+--  ClickHouse.Octonica ClickHouse
 
 SELECT
 	r.ID,

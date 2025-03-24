@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- ClickHouse.Octonica ClickHouse
+--  ClickHouse.Octonica ClickHouse
 
 ALTER TABLE
 	Parent
@@ -7,7 +7,7 @@ DELETE WHERE
 	ParentID = 1001
 
 BeforeExecute
--- ClickHouse.Octonica ClickHouse
+--  ClickHouse.Octonica ClickHouse
 
 INSERT INTO Parent
 (
@@ -21,7 +21,7 @@ VALUES
 )
 
 BeforeExecute
--- ClickHouse.Octonica ClickHouse
+--  ClickHouse.Octonica ClickHouse
 
 SELECT
 	COUNT(*)
@@ -31,7 +31,7 @@ WHERE
 	p.ParentID = 1001
 
 BeforeExecute
--- ClickHouse.Octonica ClickHouse
+--  ClickHouse.Octonica ClickHouse
 
 ALTER TABLE
 	Parent
@@ -39,7 +39,7 @@ DELETE WHERE
 	ParentID = 1001
 
 BeforeExecute
--- ClickHouse.Octonica ClickHouse
+--  ClickHouse.Octonica ClickHouse
 
 SELECT
 	COUNT(*)

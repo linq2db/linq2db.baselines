@@ -1,15 +1,15 @@
 ﻿BeforeExecute
--- ClickHouse.Octonica ClickHouse
+--  ClickHouse.Octonica ClickHouse
 
 select name, comment, engine LIKE '%View' from system.tables where is_temporary = 0 and database = database()
 
 BeforeExecute
--- ClickHouse.Octonica ClickHouse
+--  ClickHouse.Octonica ClickHouse
 
 select name, primary_key from system.tables where is_temporary = 0 and database = database() and primary_key <> ''
 
 BeforeExecute
--- ClickHouse.Octonica ClickHouse
+--  ClickHouse.Octonica ClickHouse
 
 
 SELECT
@@ -26,12 +26,12 @@ FROM system.columns
 WHERE database = database() and default_kind <> 'ALIAS'
 
 BeforeExecute
--- ClickHouse.Octonica ClickHouse
+--  ClickHouse.Octonica ClickHouse
 
 select hostName()
 
 BeforeExecute
--- ClickHouse.Octonica ClickHouse
+--  ClickHouse.Octonica ClickHouse
 
 select database()
 

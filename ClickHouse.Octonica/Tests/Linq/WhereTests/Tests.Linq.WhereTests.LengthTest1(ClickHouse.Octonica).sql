@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- ClickHouse.Octonica ClickHouse
+--  ClickHouse.Octonica ClickHouse
 
 SELECT
 	nm.MiddleName
@@ -15,7 +15,7 @@ WHERE
 	nm.Value_1 <> 0 OR nm.Value_1 IS NULL
 
 BeforeExecute
--- ClickHouse.Octonica ClickHouse
+--  ClickHouse.Octonica ClickHouse
 
 SELECT
 	t1.FirstName,

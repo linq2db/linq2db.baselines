@@ -5,7 +5,7 @@ BeforeExecute
 INSERT INTO SimpleBulkCopyTable(Id) VALUES
 
 BeforeExecute
--- ClickHouse.Octonica ClickHouse
+--  ClickHouse.Octonica ClickHouse
 
 INSERT INTO SimpleBulkCopyTable
 (

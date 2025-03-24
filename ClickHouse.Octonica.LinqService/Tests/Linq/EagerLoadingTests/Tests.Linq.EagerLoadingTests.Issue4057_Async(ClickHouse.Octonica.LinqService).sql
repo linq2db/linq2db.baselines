@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- ClickHouse.Octonica ClickHouse (asynchronously)
+--  ClickHouse.Octonica ClickHouse (asynchronously)
 
 SELECT
 	m_1.ParentID,
@@ -18,7 +18,7 @@ FROM
 		INNER JOIN Child d ON m_1.ParentID = d.ParentID
 
 BeforeExecute
--- ClickHouse.Octonica ClickHouse (asynchronously)
+--  ClickHouse.Octonica ClickHouse (asynchronously)
 
 SELECT
 	x.ParentID,
@@ -30,7 +30,7 @@ WHERE
 LIMIT 1
 
 BeforeExecute
--- ClickHouse.Octonica ClickHouse (asynchronously)
+--  ClickHouse.Octonica ClickHouse (asynchronously)
 
 SELECT
 	m_1.ParentID,
@@ -49,7 +49,7 @@ FROM
 		INNER JOIN Child d ON m_1.ParentID = d.ParentID
 
 BeforeExecute
--- ClickHouse.Octonica ClickHouse (asynchronously)
+--  ClickHouse.Octonica ClickHouse (asynchronously)
 
 SELECT
 	x.ParentID,

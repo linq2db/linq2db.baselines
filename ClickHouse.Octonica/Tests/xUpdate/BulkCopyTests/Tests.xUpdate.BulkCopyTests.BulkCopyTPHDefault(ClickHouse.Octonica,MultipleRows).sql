@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- ClickHouse.Octonica ClickHouse
+--  ClickHouse.Octonica ClickHouse
 
 INSERT INTO TPHTableDefault
 (
@@ -15,7 +15,7 @@ VALUES
 (3,3,NULL,NULL,'Str3')
 
 BeforeExecute
--- ClickHouse.Octonica ClickHouse
+--  ClickHouse.Octonica ClickHouse
 
 SELECT
 	t1.Discriminator,
@@ -29,7 +29,7 @@ ORDER BY
 	t1.Id
 
 BeforeExecute
--- ClickHouse.Octonica ClickHouse
+--  ClickHouse.Octonica ClickHouse
 
 SELECT
 	x.Discriminator,
@@ -44,7 +44,7 @@ WHERE
 LIMIT 2
 
 BeforeExecute
--- ClickHouse.Octonica ClickHouse
+--  ClickHouse.Octonica ClickHouse
 
 SELECT
 	x.Discriminator,
@@ -59,7 +59,7 @@ WHERE
 LIMIT 2
 
 BeforeExecute
--- ClickHouse.Octonica ClickHouse
+--  ClickHouse.Octonica ClickHouse
 
 SELECT
 	x.Discriminator,
@@ -74,7 +74,7 @@ WHERE
 LIMIT 2
 
 BeforeExecute
--- ClickHouse.Octonica ClickHouse
+--  ClickHouse.Octonica ClickHouse
 
 SELECT
 	x.Discriminator,
@@ -89,7 +89,7 @@ WHERE
 LIMIT 2
 
 BeforeExecute
--- ClickHouse.Octonica ClickHouse
+--  ClickHouse.Octonica ClickHouse
 
 SELECT
 	x.Discriminator,
@@ -104,7 +104,7 @@ WHERE
 LIMIT 2
 
 BeforeExecute
--- ClickHouse.Octonica ClickHouse
+--  ClickHouse.Octonica ClickHouse
 
 SELECT
 	x.Discriminator,

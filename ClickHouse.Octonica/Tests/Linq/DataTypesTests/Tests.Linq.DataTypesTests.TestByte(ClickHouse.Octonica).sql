@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- ClickHouse.Octonica ClickHouse
+--  ClickHouse.Octonica ClickHouse
 
 SELECT
 	r.Id,
@@ -11,7 +11,7 @@ WHERE
 	r.Column = toUInt8(255) AND r.ColumnNullable = toUInt8(2)
 
 BeforeExecute
--- ClickHouse.Octonica ClickHouse
+--  ClickHouse.Octonica ClickHouse
 
 SELECT
 	r.Id,
@@ -23,14 +23,14 @@ WHERE
 	r.Column = toUInt8(255) AND r.ColumnNullable = toUInt8(2)
 
 BeforeExecute
--- ClickHouse.Octonica ClickHouse
+--  ClickHouse.Octonica ClickHouse
 
 ALTER TABLE
 	ByteTable
 DELETE WHERE 1
 
 BeforeExecute
--- ClickHouse.Octonica ClickHouse
+--  ClickHouse.Octonica ClickHouse
 
 INSERT INTO ByteTable
 (
@@ -46,7 +46,7 @@ VALUES
 )
 
 BeforeExecute
--- ClickHouse.Octonica ClickHouse
+--  ClickHouse.Octonica ClickHouse
 
 INSERT INTO ByteTable
 (
@@ -62,7 +62,7 @@ VALUES
 )
 
 BeforeExecute
--- ClickHouse.Octonica ClickHouse
+--  ClickHouse.Octonica ClickHouse
 
 SELECT
 	t1.Id,
@@ -74,14 +74,14 @@ ORDER BY
 	t1.Id
 
 BeforeExecute
--- ClickHouse.Octonica ClickHouse
+--  ClickHouse.Octonica ClickHouse
 
 ALTER TABLE
 	ByteTable
 DELETE WHERE 1
 
 BeforeExecute
--- ClickHouse.Octonica ClickHouse
+--  ClickHouse.Octonica ClickHouse
 
 INSERT INTO ByteTable
 (
@@ -94,7 +94,7 @@ VALUES
 (2,toUInt8(255),toUInt8(2))
 
 BeforeExecute
--- ClickHouse.Octonica ClickHouse
+--  ClickHouse.Octonica ClickHouse
 
 SELECT
 	t1.Id,
@@ -106,7 +106,7 @@ ORDER BY
 	t1.Id
 
 BeforeExecute
--- ClickHouse.Octonica ClickHouse
+--  ClickHouse.Octonica ClickHouse
 
 ALTER TABLE
 	ByteTable
@@ -116,7 +116,7 @@ BeforeExecute
 INSERT INTO ByteTable(Id, Column, ColumnNullable) VALUES
 
 BeforeExecute
--- ClickHouse.Octonica ClickHouse
+--  ClickHouse.Octonica ClickHouse
 
 SELECT
 	t1.Id,

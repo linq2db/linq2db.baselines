@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- ClickHouse.Octonica ClickHouse (asynchronously)
+--  ClickHouse.Octonica ClickHouse (asynchronously)
 
 SELECT
 	m_2.Id1,
@@ -18,7 +18,7 @@ FROM
 		INNER JOIN DetailClass d ON m_2.Id1 = d.MasterId
 
 BeforeExecute
--- ClickHouse.Octonica ClickHouse (asynchronously)
+--  ClickHouse.Octonica ClickHouse (asynchronously)
 
 SELECT
 	m_2.Id1,
@@ -39,7 +39,7 @@ WHERE
 	d.DetailId % 2 = 0
 
 BeforeExecute
--- ClickHouse.Octonica ClickHouse (asynchronously)
+--  ClickHouse.Octonica ClickHouse (asynchronously)
 
 SELECT
 	m_2.Id1,
@@ -58,7 +58,7 @@ WHERE
 	d.DetailId % 2 = 0
 
 BeforeExecute
--- ClickHouse.Octonica ClickHouse (asynchronously)
+--  ClickHouse.Octonica ClickHouse (asynchronously)
 
 SELECT
 	m_1.Id1 + 100,

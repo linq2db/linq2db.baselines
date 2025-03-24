@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- ClickHouse.Octonica ClickHouse
+--  ClickHouse.Octonica ClickHouse
 
 CREATE TABLE IF NOT EXISTS DisposableTable
 (
@@ -8,7 +8,7 @@ CREATE TABLE IF NOT EXISTS DisposableTable
 ENGINE = Memory()
 
 BeforeExecute
--- ClickHouse.Octonica ClickHouse
+--  ClickHouse.Octonica ClickHouse
 
 DROP TABLE IF EXISTS DisposableTable
 

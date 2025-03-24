@@ -5,7 +5,7 @@ BeforeExecute
 INSERT INTO SimpleBulkCopyTable(Id) VALUES
 
 BeforeExecute
--- ClickHouse.Octonica ClickHouse (asynchronously)
+--  ClickHouse.Octonica ClickHouse (asynchronously)
 
 INSERT INTO SimpleBulkCopyTable
 (
@@ -23,7 +23,7 @@ BeforeExecute
 INSERT INTO SimpleBulkCopyTable(Id) VALUES
 
 BeforeExecute
--- ClickHouse.Octonica ClickHouse (asynchronously)
+--  ClickHouse.Octonica ClickHouse (asynchronously)
 
 INSERT INTO SimpleBulkCopyTable
 (

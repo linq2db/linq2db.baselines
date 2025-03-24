@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- ClickHouse.Octonica ClickHouse
+--  ClickHouse.Octonica ClickHouse
 
 SELECT
 	m_2.Id,
@@ -28,7 +28,7 @@ FROM
 		) d_1 ON m_2.Id = d_1.ParentId AND d_1.rn <= 2
 
 BeforeExecute
--- ClickHouse.Octonica ClickHouse
+--  ClickHouse.Octonica ClickHouse
 
 SELECT
 	m_1.Id,
@@ -41,7 +41,7 @@ ORDER BY
 	m_1.Id
 
 BeforeExecute
--- ClickHouse.Octonica ClickHouse
+--  ClickHouse.Octonica ClickHouse
 
 SELECT
 	m_2.Id,
@@ -70,7 +70,7 @@ FROM
 		) d_1 ON m_2.Id = d_1.ParentId AND d_1.rn <= 2
 
 BeforeExecute
--- ClickHouse.Octonica ClickHouse
+--  ClickHouse.Octonica ClickHouse
 
 SELECT
 	m_1.Id,
@@ -83,7 +83,7 @@ ORDER BY
 	m_1.Id
 
 BeforeExecute
--- ClickHouse.Octonica ClickHouse
+--  ClickHouse.Octonica ClickHouse
 
 SELECT
 	m_2.cond,
@@ -111,7 +111,7 @@ FROM
 		INNER JOIN SubItem2 d_1 ON m_2.cond = d_1.ParentId OR m_2.cond IS NULL AND d_1.ParentId IS NULL
 
 BeforeExecute
--- ClickHouse.Octonica ClickHouse
+--  ClickHouse.Octonica ClickHouse
 
 SELECT
 	m_2.Id,
@@ -133,7 +133,7 @@ FROM
 		LEFT JOIN MainItem a_Parent ON d.ParentId = a_Parent.Id
 
 BeforeExecute
--- ClickHouse.Octonica ClickHouse
+--  ClickHouse.Octonica ClickHouse
 
 SELECT
 	m_1.Id,
@@ -146,7 +146,7 @@ ORDER BY
 	m_1.Id
 
 BeforeExecute
--- ClickHouse.Octonica ClickHouse
+--  ClickHouse.Octonica ClickHouse
 
 SELECT
 	m_2.cond,
@@ -174,7 +174,7 @@ FROM
 		INNER JOIN SubItem2 d_1 ON m_2.cond = d_1.ParentId OR m_2.cond IS NULL AND d_1.ParentId IS NULL
 
 BeforeExecute
--- ClickHouse.Octonica ClickHouse
+--  ClickHouse.Octonica ClickHouse
 
 SELECT
 	m_2.Id,
@@ -196,7 +196,7 @@ FROM
 		LEFT JOIN MainItem a_Parent ON d.ParentId = a_Parent.Id
 
 BeforeExecute
--- ClickHouse.Octonica ClickHouse
+--  ClickHouse.Octonica ClickHouse
 
 SELECT
 	m_1.Id,
@@ -209,7 +209,7 @@ ORDER BY
 	m_1.Id
 
 BeforeExecute
--- ClickHouse.Octonica ClickHouse
+--  ClickHouse.Octonica ClickHouse
 
 SELECT
 	m_2.Id,
@@ -230,7 +230,7 @@ WHERE
 	d.ParentId % 2 = 0 AND startsWith(d.Value, 'Sub1_')
 
 BeforeExecute
--- ClickHouse.Octonica ClickHouse
+--  ClickHouse.Octonica ClickHouse
 
 SELECT
 	m_1.Id,

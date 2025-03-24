@@ -8,7 +8,7 @@ WHERE
 	t2.Value > 2
 
 BeforeExecute
--- ClickHouse.Octonica ClickHouse
+--  ClickHouse.Octonica ClickHouse
 
 SELECT
 	t.Id,

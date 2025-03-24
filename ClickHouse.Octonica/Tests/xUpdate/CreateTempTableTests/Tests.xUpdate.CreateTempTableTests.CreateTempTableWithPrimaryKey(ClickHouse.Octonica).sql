@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- ClickHouse.Octonica ClickHouse
+--  ClickHouse.Octonica ClickHouse
 
 CREATE TEMPORARY TABLE TableWithPrimaryKey
 (
@@ -11,7 +11,7 @@ ENGINE = MergeTree()
 ORDER BY Key
 
 BeforeExecute
--- ClickHouse.Octonica ClickHouse
+--  ClickHouse.Octonica ClickHouse
 
 DROP TABLE IF EXISTS TableWithPrimaryKey
 

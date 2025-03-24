@@ -2,7 +2,7 @@
 INSERT INTO Issue4460Table(Id, Code, Name, Surname) VALUES
 
 BeforeExecute
--- ClickHouse.Octonica ClickHouse
+--  ClickHouse.Octonica ClickHouse
 
 SELECT
 	t1.Code,

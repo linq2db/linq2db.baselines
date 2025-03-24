@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- ClickHouse.Octonica ClickHouse
+--  ClickHouse.Octonica ClickHouse
 
 SELECT
 	p.ParentID,
@@ -10,7 +10,7 @@ WHERE
 	p.Value1 > 2
 
 BeforeExecute
--- ClickHouse.Octonica ClickHouse
+--  ClickHouse.Octonica ClickHouse
 
 SELECT
 	t1.ParentID,
@@ -19,7 +19,7 @@ FROM
 	Parent t1
 
 BeforeExecute
--- ClickHouse.Octonica ClickHouse
+--  ClickHouse.Octonica ClickHouse
 
 SELECT
 	p.ParentID,
@@ -30,7 +30,7 @@ WHERE
 	p.Value1 <= 2 OR p.Value1 IS NULL
 
 BeforeExecute
--- ClickHouse.Octonica ClickHouse
+--  ClickHouse.Octonica ClickHouse
 
 SELECT
 	t1.ParentID,
@@ -39,7 +39,7 @@ FROM
 	Parent t1
 
 BeforeExecute
--- ClickHouse.Octonica ClickHouse
+--  ClickHouse.Octonica ClickHouse
 
 SELECT
 	p.ParentID,
@@ -50,7 +50,7 @@ WHERE
 	2 < p.Value1
 
 BeforeExecute
--- ClickHouse.Octonica ClickHouse
+--  ClickHouse.Octonica ClickHouse
 
 SELECT
 	t1.ParentID,
@@ -59,7 +59,7 @@ FROM
 	Parent t1
 
 BeforeExecute
--- ClickHouse.Octonica ClickHouse
+--  ClickHouse.Octonica ClickHouse
 
 SELECT
 	p.ParentID,
@@ -70,7 +70,7 @@ WHERE
 	2 >= p.Value1 OR p.Value1 IS NULL
 
 BeforeExecute
--- ClickHouse.Octonica ClickHouse
+--  ClickHouse.Octonica ClickHouse
 
 SELECT
 	t1.ParentID,

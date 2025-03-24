@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- ClickHouse.Octonica ClickHouse
+--  ClickHouse.Octonica ClickHouse
 
 SELECT
 	t.DateTimeNullable
@@ -9,7 +9,7 @@ WHERE
 	toDateTime64('2020-02-29 00:00:00.0000000', 7) = t.DateTimeNullable
 
 BeforeExecute
--- ClickHouse.Octonica ClickHouse
+--  ClickHouse.Octonica ClickHouse
 
 SELECT
 	t.DateTimeNullable

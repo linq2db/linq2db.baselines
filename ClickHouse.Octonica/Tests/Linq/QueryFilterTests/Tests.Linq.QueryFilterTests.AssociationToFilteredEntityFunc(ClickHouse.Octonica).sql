@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- ClickHouse.Octonica ClickHouse
+--  ClickHouse.Octonica ClickHouse
 
 SELECT
 	d.Id,
@@ -13,7 +13,7 @@ WHERE
 	NOT d.IsDeleted
 
 BeforeExecute
--- ClickHouse.Octonica ClickHouse
+--  ClickHouse.Octonica ClickHouse
 
 SELECT
 	d.Id,
@@ -25,7 +25,7 @@ FROM
 		INNER JOIN DetailClass d ON m_1.Id = d.MasterId
 
 BeforeExecute
--- ClickHouse.Octonica ClickHouse
+--  ClickHouse.Octonica ClickHouse
 
 SELECT
 	d.Id,
@@ -39,7 +39,7 @@ WHERE
 	NOT d.IsDeleted
 
 BeforeExecute
--- ClickHouse.Octonica ClickHouse
+--  ClickHouse.Octonica ClickHouse
 
 SELECT
 	d.Id,

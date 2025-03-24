@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- ClickHouse.Octonica ClickHouse
+--  ClickHouse.Octonica ClickHouse
 
 SELECT
 	m_2.Id,
@@ -27,7 +27,7 @@ FROM
 		INNER JOIN SubItem1_Sub d_1 ON m_2.Id = d_1.ParentId
 
 BeforeExecute
--- ClickHouse.Octonica ClickHouse
+--  ClickHouse.Octonica ClickHouse
 
 SELECT
 	m_2.Id,
@@ -47,7 +47,7 @@ FROM
 		INNER JOIN SubItem1 d ON m_2.Id = d.ParentId
 
 BeforeExecute
--- ClickHouse.Octonica ClickHouse
+--  ClickHouse.Octonica ClickHouse
 
 SELECT
 	m_2.Id,
@@ -67,7 +67,7 @@ FROM
 		INNER JOIN SubItem2 d ON m_2.Id = d.ParentId
 
 BeforeExecute
--- ClickHouse.Octonica ClickHouse
+--  ClickHouse.Octonica ClickHouse
 
 SELECT
 	m_1.Id,
@@ -79,7 +79,7 @@ WHERE
 	m_1.Id > 1
 
 BeforeExecute
--- ClickHouse.Octonica ClickHouse
+--  ClickHouse.Octonica ClickHouse
 
 SELECT
 	m_2.Id,
@@ -107,7 +107,7 @@ FROM
 		INNER JOIN SubItem1_Sub d_1 ON m_2.Id = d_1.ParentId
 
 BeforeExecute
--- ClickHouse.Octonica ClickHouse
+--  ClickHouse.Octonica ClickHouse
 
 SELECT
 	m_2.Id,
@@ -127,7 +127,7 @@ FROM
 		INNER JOIN SubItem1 d ON m_2.Id = d.ParentId
 
 BeforeExecute
--- ClickHouse.Octonica ClickHouse
+--  ClickHouse.Octonica ClickHouse
 
 SELECT
 	m_1.Id,

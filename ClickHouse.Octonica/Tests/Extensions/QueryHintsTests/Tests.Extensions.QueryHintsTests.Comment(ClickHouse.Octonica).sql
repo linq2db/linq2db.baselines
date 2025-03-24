@@ -7,7 +7,7 @@ FROM
 ----
 
 BeforeExecute
--- ClickHouse.Octonica ClickHouse
+--  ClickHouse.Octonica ClickHouse
 
 SELECT
 	p.ParentID,
@@ -25,7 +25,7 @@ FROM
 ---
 
 BeforeExecute
--- ClickHouse.Octonica ClickHouse
+--  ClickHouse.Octonica ClickHouse
 
 SELECT
 	p.ParentID,
