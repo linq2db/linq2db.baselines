@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Oracle.23.Managed Oracle.Managed Oracle12
+--  Oracle.23.Managed Oracle.Managed Oracle12
 
 CREATE TABLE "ClobEntity"
 (
@@ -9,7 +9,7 @@ CREATE TABLE "ClobEntity"
 )
 
 BeforeExecute
--- Oracle.23.Managed Oracle.Managed Oracle12
+--  Oracle.23.Managed Oracle.Managed Oracle12
 DECLARE @:p1 Clob -- Object
 SET     @:p1 = 'Clob1111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111'
 -- value above truncated for logging
@@ -34,7 +34,7 @@ INSERT INTO "ClobEntity"
 	SELECT 2,:p3,:p4 FROM DUAL 
 
 BeforeExecute
--- Oracle.23.Managed Oracle.Managed Oracle12
+--  Oracle.23.Managed Oracle.Managed Oracle12
 
 SELECT
 	t1."Id",
@@ -44,7 +44,7 @@ FROM
 	"ClobEntity" t1
 
 BeforeExecute
--- Oracle.23.Managed Oracle.Managed Oracle12
+--  Oracle.23.Managed Oracle.Managed Oracle12
 
 DROP TABLE "ClobEntity"
 

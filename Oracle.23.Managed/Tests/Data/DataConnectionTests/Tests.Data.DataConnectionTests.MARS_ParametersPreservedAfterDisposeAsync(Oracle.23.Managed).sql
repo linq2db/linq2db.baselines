@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Oracle.23.Managed Oracle.Managed Oracle12 (asynchronously)
+--  Oracle.23.Managed Oracle.Managed Oracle12 (asynchronously)
 DECLARE @param Varchar2(4) -- String
 SET     @param = 'test'
 

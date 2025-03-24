@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Oracle.23.Managed Oracle.Managed Oracle12 (asynchronously)
+--  Oracle.23.Managed Oracle.Managed Oracle12 (asynchronously)
 
 INSERT ALL
 	INTO "LinqDataTypes" (ID, "MoneyValue", "DateTimeValue", "BoolValue", "GuidValue", "BinaryValue", "SmallIntValue", "StringValue") VALUES (4000,1000,TIMESTAMP '2001-01-11 01:11:21.100000',1,HEXTORAW('99F33B231097794E873D2EC7BF1E0000'),NULL,0,NULL)
@@ -15,7 +15,7 @@ INSERT ALL
 SELECT * FROM dual
 
 BeforeExecute
--- Oracle.23.Managed Oracle.Managed Oracle12 (asynchronously)
+--  Oracle.23.Managed Oracle.Managed Oracle12 (asynchronously)
 
 DELETE FROM
 	"LinqDataTypes" p

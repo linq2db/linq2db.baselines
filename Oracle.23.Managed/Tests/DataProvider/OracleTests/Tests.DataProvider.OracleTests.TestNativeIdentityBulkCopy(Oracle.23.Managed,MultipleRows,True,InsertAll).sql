@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Oracle.23.Managed Oracle.Managed Oracle12
+--  Oracle.23.Managed Oracle.Managed Oracle12
 
 INSERT ALL
 	INTO "NativeIdentity" ("Id", "Field") VALUES (4,11)
@@ -7,7 +7,7 @@ INSERT ALL
 SELECT * FROM dual
 
 BeforeExecute
--- Oracle.23.Managed Oracle.Managed Oracle12
+--  Oracle.23.Managed Oracle.Managed Oracle12
 
 SELECT
 	t1."Id",

@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Oracle.23.Managed Oracle.Managed Oracle12
+--  Oracle.23.Managed Oracle.Managed Oracle12
 DECLARE @part1 Int16
 SET     @part1 = 4
 DECLARE @part2 Int32

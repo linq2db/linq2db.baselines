@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Oracle.23.Managed Oracle.Managed Oracle12
+--  Oracle.23.Managed Oracle.Managed Oracle12
 
 INSERT INTO "Parent"
 (
@@ -11,7 +11,7 @@ VALUES
 )
 
 BeforeExecute
--- Oracle.23.Managed Oracle.Managed Oracle12
+--  Oracle.23.Managed Oracle.Managed Oracle12
 
 INSERT INTO "Child"
 (
@@ -25,7 +25,7 @@ VALUES
 )
 
 BeforeExecute
--- Oracle.23.Managed Oracle.Managed Oracle12
+--  Oracle.23.Managed Oracle.Managed Oracle12
 
 INSERT INTO "Child"
 (
@@ -39,7 +39,7 @@ VALUES
 )
 
 BeforeExecute
--- Oracle.23.Managed Oracle.Managed Oracle12
+--  Oracle.23.Managed Oracle.Managed Oracle12
 
 DELETE FROM
 	"Child" t1
@@ -56,7 +56,7 @@ WHERE
 	)
 
 BeforeExecute
--- Oracle.23.Managed Oracle.Managed Oracle12
+--  Oracle.23.Managed Oracle.Managed Oracle12
 
 DELETE FROM
 	"Child" c_1
@@ -64,7 +64,7 @@ WHERE
 	c_1."ParentID" >= 1000
 
 BeforeExecute
--- Oracle.23.Managed Oracle.Managed Oracle12
+--  Oracle.23.Managed Oracle.Managed Oracle12
 
 DELETE FROM
 	"Parent" c_1

@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Oracle.23.Managed Oracle.Managed Oracle12
+--  Oracle.23.Managed Oracle.Managed Oracle12
 
 INSERT INTO "TestIdTrun"
 (
@@ -11,17 +11,17 @@ VALUES
 )
 
 BeforeExecute
--- Oracle.23.Managed Oracle.Managed Oracle12
+--  Oracle.23.Managed Oracle.Managed Oracle12
 
 DROP SEQUENCE "SIDENTITY_TestIdTrun"
 
 BeforeExecute
--- Oracle.23.Managed Oracle.Managed Oracle12
+--  Oracle.23.Managed Oracle.Managed Oracle12
 
 TRUNCATE TABLE "TestIdTrun"
 
 BeforeExecute
--- Oracle.23.Managed Oracle.Managed Oracle12
+--  Oracle.23.Managed Oracle.Managed Oracle12
 
 DECLARE
 	l_value number;

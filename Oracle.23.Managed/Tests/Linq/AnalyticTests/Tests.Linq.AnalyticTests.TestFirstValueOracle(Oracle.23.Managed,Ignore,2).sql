@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Oracle.23.Managed Oracle.Managed Oracle12
+--  Oracle.23.Managed Oracle.Managed Oracle12
 
 SELECT
 	FIRST_VALUE(p."Value1" IGNORE NULLS) OVER(),

@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Oracle.23.Managed Oracle.Managed Oracle12
+--  Oracle.23.Managed Oracle.Managed Oracle12
 DECLARE @:p1 Int32
 SET     @:p1 = {1,2,3,4,5,6,7,8}
 -- value above truncated for logging
@@ -7,7 +7,7 @@ SET     @:p1 = {1,2,3,4,5,6,7,8}
 INSERT INTO BULKCOPYTABLE (ID) VALUES (:p1)
 
 BeforeExecute
--- Oracle.23.Managed Oracle.Managed Oracle12
+--  Oracle.23.Managed Oracle.Managed Oracle12
 DECLARE @id Int32
 SET     @id = 4
 

@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Oracle.23.Managed Oracle.Managed Oracle12
+--  Oracle.23.Managed Oracle.Managed Oracle12
 
 DELETE FROM
 	"Person" t1
@@ -7,7 +7,7 @@ WHERE
 	t1."PersonID" > 4
 
 BeforeExecute
--- Oracle.23.Managed Oracle.Managed Oracle12 (asynchronously)
+--  Oracle.23.Managed Oracle.Managed Oracle12 (asynchronously)
 DECLARE @FirstName Varchar2(5) -- String
 SET     @FirstName = 'John0'
 DECLARE @LastName Varchar2(7) -- String
@@ -37,7 +37,7 @@ RETURNING
 	"PersonID" INTO :IDENTITY_PARAMETER
 
 BeforeExecute
--- Oracle.23.Managed Oracle.Managed Oracle12 (asynchronously)
+--  Oracle.23.Managed Oracle.Managed Oracle12 (asynchronously)
 DECLARE @FirstName Varchar2(5) -- String
 SET     @FirstName = 'John1'
 DECLARE @LastName Varchar2(7) -- String
@@ -67,7 +67,7 @@ RETURNING
 	"PersonID" INTO :IDENTITY_PARAMETER
 
 BeforeExecute
--- Oracle.23.Managed Oracle.Managed Oracle12
+--  Oracle.23.Managed Oracle.Managed Oracle12
 
 DELETE FROM
 	"Person" t1

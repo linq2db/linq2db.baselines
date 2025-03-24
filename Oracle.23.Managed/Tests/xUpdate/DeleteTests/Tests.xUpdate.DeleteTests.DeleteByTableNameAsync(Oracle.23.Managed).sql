@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Oracle.23.Managed Oracle.Managed Oracle12 (asynchronously)
+--  Oracle.23.Managed Oracle.Managed Oracle12 (asynchronously)
 
 BEGIN
 	BEGIN
@@ -29,7 +29,7 @@ BEGIN
 END;
 
 BeforeExecute
--- Oracle.23.Managed Oracle.Managed Oracle12 (asynchronously)
+--  Oracle.23.Managed Oracle.Managed Oracle12 (asynchronously)
 
 CREATE TABLE "xxPerson_o"
 (
@@ -43,12 +43,12 @@ CREATE TABLE "xxPerson_o"
 )
 
 BeforeExecute
--- Oracle.23.Managed Oracle.Managed Oracle12 (asynchronously)
+--  Oracle.23.Managed Oracle.Managed Oracle12 (asynchronously)
 
 CREATE SEQUENCE "SIDENTITY_xxPerson_o"
 
 BeforeExecute
--- Oracle.23.Managed Oracle.Managed Oracle12 (asynchronously)
+--  Oracle.23.Managed Oracle.Managed Oracle12 (asynchronously)
 
 CREATE OR REPLACE TRIGGER "TIDENTITY_xxPerson_o"
 BEFORE INSERT ON "xxPerson_o" FOR EACH ROW
@@ -57,7 +57,7 @@ BEGIN
 END;
 
 BeforeExecute
--- Oracle.23.Managed Oracle.Managed Oracle12 (asynchronously)
+--  Oracle.23.Managed Oracle.Managed Oracle12 (asynchronously)
 DECLARE @FirstName Varchar2(6) -- String
 SET     @FirstName = 'Steven'
 DECLARE @LastName Varchar2(4) -- String
@@ -83,7 +83,7 @@ VALUES
 )
 
 BeforeExecute
--- Oracle.23.Managed Oracle.Managed Oracle12 (asynchronously)
+--  Oracle.23.Managed Oracle.Managed Oracle12 (asynchronously)
 
 SELECT
 	COUNT(*)
@@ -91,7 +91,7 @@ FROM
 	"xxPerson_o" t1
 
 BeforeExecute
--- Oracle.23.Managed Oracle.Managed Oracle12 (asynchronously)
+--  Oracle.23.Managed Oracle.Managed Oracle12 (asynchronously)
 
 SELECT
 	t1."FirstName",
@@ -104,7 +104,7 @@ FROM
 FETCH NEXT 2 ROWS ONLY
 
 BeforeExecute
--- Oracle.23.Managed Oracle.Managed Oracle12 (asynchronously)
+--  Oracle.23.Managed Oracle.Managed Oracle12 (asynchronously)
 DECLARE @ID Int32
 SET     @ID = 1
 
@@ -114,7 +114,7 @@ WHERE
 	t1."PersonID" = :ID
 
 BeforeExecute
--- Oracle.23.Managed Oracle.Managed Oracle12 (asynchronously)
+--  Oracle.23.Managed Oracle.Managed Oracle12 (asynchronously)
 
 SELECT
 	COUNT(*)
@@ -122,7 +122,7 @@ FROM
 	"xxPerson_o" t1
 
 BeforeExecute
--- Oracle.23.Managed Oracle.Managed Oracle12 (asynchronously)
+--  Oracle.23.Managed Oracle.Managed Oracle12 (asynchronously)
 
 BEGIN
 	EXECUTE IMMEDIATE 'DROP TRIGGER "TIDENTITY_xxPerson_o"';

@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Oracle.23.Managed Oracle.Managed Oracle12
+--  Oracle.23.Managed Oracle.Managed Oracle12
 DECLARE @sfcBo Varchar2(20) -- String
 SET     @sfcBo = 'SFCBO:8110,C17C05016'
 

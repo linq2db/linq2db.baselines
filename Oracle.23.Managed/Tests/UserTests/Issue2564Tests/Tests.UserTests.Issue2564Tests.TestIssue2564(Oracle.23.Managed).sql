@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Oracle.23.Managed Oracle.Managed Oracle12
+--  Oracle.23.Managed Oracle.Managed Oracle12
 
 BEGIN
 	EXECUTE IMMEDIATE 'DROP TABLE "Issue2564Table"';
@@ -11,7 +11,7 @@ EXCEPTION
 END;
 
 BeforeExecute
--- Oracle.23.Managed Oracle.Managed Oracle12
+--  Oracle.23.Managed Oracle.Managed Oracle12
 
 CREATE TABLE "Issue2564Table"
 (
@@ -27,7 +27,7 @@ CREATE TABLE "Issue2564Table"
 )
 
 BeforeExecute
--- Oracle.23.Managed Oracle.Managed Oracle12
+--  Oracle.23.Managed Oracle.Managed Oracle12
 DECLARE @from_1 TimeStamp -- DateTime
 SET     @from_1 = TIMESTAMP '2020-02-28 17:54:55.123123'
 DECLARE @to_1 TimeStamp -- DateTime
