@@ -1,7 +1,7 @@
 ﻿BeginTransactionAsync(RepeatableRead)
 
 
---  SqlServer.2019 (asynchronously)
+-- SqlServer.2019 (asynchronously)
 
 SELECT
 	[m_1].[ProductId],
@@ -37,7 +37,7 @@ WHERE
 
 
 
---  SqlServer.2019 (asynchronously)
+-- SqlServer.2019 (asynchronously)
 
 SELECT
 	[m_1].[OrderID],
@@ -71,7 +71,7 @@ WHERE
 DisposeTransactionAsync
 
 
---  SqlServer.2019 (asynchronously)
+-- SqlServer.2019 (asynchronously)
 
 SELECT
 	[e].[IsDeleted],
