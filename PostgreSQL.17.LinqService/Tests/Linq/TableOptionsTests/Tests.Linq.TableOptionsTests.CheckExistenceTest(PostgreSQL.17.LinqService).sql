@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
+--  PostgreSQL.17 PostgreSQL.15 PostgreSQL
 
 CREATE TABLE IF NOT EXISTS "DisposableTable"
 (
@@ -7,7 +7,7 @@ CREATE TABLE IF NOT EXISTS "DisposableTable"
 )
 
 BeforeExecute
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
+--  PostgreSQL.17 PostgreSQL.15 PostgreSQL
 
 DROP TABLE IF EXISTS "DisposableTable"
 

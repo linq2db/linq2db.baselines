@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
+--  PostgreSQL.17 PostgreSQL.15 PostgreSQL
 
 SELECT
 	nm."MiddleName"
@@ -15,7 +15,7 @@ WHERE
 	nm."Value_1" <> 0 OR nm."Value_1" IS NULL
 
 BeforeExecute
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
+--  PostgreSQL.17 PostgreSQL.15 PostgreSQL
 
 SELECT
 	t1."FirstName",

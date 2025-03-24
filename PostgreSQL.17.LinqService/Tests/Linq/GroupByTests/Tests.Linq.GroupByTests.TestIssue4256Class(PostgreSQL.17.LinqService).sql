@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
+--  PostgreSQL.17 PostgreSQL.15 PostgreSQL
 
 SELECT
 	it_1."IsActive",
@@ -17,7 +17,7 @@ GROUP BY
 	it_1."Other"
 
 BeforeExecute
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
+--  PostgreSQL.17 PostgreSQL.15 PostgreSQL
 
 SELECT
 	t1."ID",

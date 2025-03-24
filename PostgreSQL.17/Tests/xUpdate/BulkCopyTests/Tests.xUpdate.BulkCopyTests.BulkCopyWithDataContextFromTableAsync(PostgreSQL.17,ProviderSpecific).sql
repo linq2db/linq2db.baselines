@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL (asynchronously)
+--  PostgreSQL.17 PostgreSQL.15 PostgreSQL (asynchronously)
 
 INSERT INTO "SimpleBulkCopyTable"
 (
@@ -9,7 +9,7 @@ VALUES
 (1)
 
 BeforeExecute
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL (asynchronously)
+--  PostgreSQL.17 PostgreSQL.15 PostgreSQL (asynchronously)
 
 INSERT INTO "SimpleBulkCopyTable"
 (
@@ -22,7 +22,7 @@ BeforeExecute
 INSERT ASYNC BULK "SimpleBulkCopyTable"(Id)
 
 BeforeExecute
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL (asynchronously)
+--  PostgreSQL.17 PostgreSQL.15 PostgreSQL (asynchronously)
 
 INSERT INTO "SimpleBulkCopyTable"
 (
@@ -32,7 +32,7 @@ VALUES
 (10)
 
 BeforeExecute
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL (asynchronously)
+--  PostgreSQL.17 PostgreSQL.15 PostgreSQL (asynchronously)
 
 INSERT INTO "SimpleBulkCopyTable"
 (

@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
+--  PostgreSQL.17 PostgreSQL.15 PostgreSQL
 DECLARE @ncCodeBo Text(30) -- String
 SET     @ncCodeBo = 'NCCodeBO:8110,SETUP_OSCILLOSCO'
 

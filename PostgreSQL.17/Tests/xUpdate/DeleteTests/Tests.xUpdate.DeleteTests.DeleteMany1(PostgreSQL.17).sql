@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
+--  PostgreSQL.17 PostgreSQL.15 PostgreSQL
 
 INSERT INTO "Parent"
 (
@@ -11,7 +11,7 @@ VALUES
 )
 
 BeforeExecute
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
+--  PostgreSQL.17 PostgreSQL.15 PostgreSQL
 
 INSERT INTO "Child"
 (
@@ -25,7 +25,7 @@ VALUES
 )
 
 BeforeExecute
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
+--  PostgreSQL.17 PostgreSQL.15 PostgreSQL
 
 INSERT INTO "Child"
 (
@@ -39,7 +39,7 @@ VALUES
 )
 
 BeforeExecute
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
+--  PostgreSQL.17 PostgreSQL.15 PostgreSQL
 
 DELETE FROM
 	"Child" t1
@@ -56,7 +56,7 @@ WHERE
 	)
 
 BeforeExecute
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
+--  PostgreSQL.17 PostgreSQL.15 PostgreSQL
 
 DELETE FROM
 	"Child" c_1
@@ -64,7 +64,7 @@ WHERE
 	c_1."ParentID" >= 1000
 
 BeforeExecute
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
+--  PostgreSQL.17 PostgreSQL.15 PostgreSQL
 
 DELETE FROM
 	"Parent" c_1

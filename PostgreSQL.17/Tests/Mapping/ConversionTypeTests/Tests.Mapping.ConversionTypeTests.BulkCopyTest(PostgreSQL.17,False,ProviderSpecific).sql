@@ -2,7 +2,7 @@
 INSERT BULK "TrimTestTable"(ID, Data)
 
 BeforeExecute
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
+--  PostgreSQL.17 PostgreSQL.15 PostgreSQL
 
 SELECT
 	r."ID",
@@ -13,7 +13,7 @@ ORDER BY
 	r."ID"
 
 BeforeExecute
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
+--  PostgreSQL.17 PostgreSQL.15 PostgreSQL
 
 SELECT
 	r."ID",

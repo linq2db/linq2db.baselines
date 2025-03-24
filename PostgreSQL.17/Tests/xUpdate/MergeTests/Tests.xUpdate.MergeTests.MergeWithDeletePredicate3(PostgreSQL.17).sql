@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 BeginTransaction
 BeforeExecute
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
+--  PostgreSQL.17 PostgreSQL.15 PostgreSQL
 DECLARE @FirstName Text(8) -- String
 SET     @FirstName = 'Не ASCII'
 DECLARE @LastName Text(9) -- String
@@ -27,7 +27,7 @@ VALUES
 )
 
 BeforeExecute
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
+--  PostgreSQL.17 PostgreSQL.15 PostgreSQL
 
 SELECT
 	t1."FirstName",
@@ -40,7 +40,7 @@ FROM
 LIMIT 1
 
 BeforeExecute
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
+--  PostgreSQL.17 PostgreSQL.15 PostgreSQL
 DECLARE @PersonID Integer -- Int32
 SET     @PersonID = 1
 DECLARE @Diagnosis Text(8) -- String
@@ -58,7 +58,7 @@ VALUES
 )
 
 BeforeExecute
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
+--  PostgreSQL.17 PostgreSQL.15 PostgreSQL
 DECLARE @ID Integer -- Int32
 SET     @ID = 1
 
@@ -72,7 +72,7 @@ WHERE
 LIMIT 1
 
 BeforeExecute
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
+--  PostgreSQL.17 PostgreSQL.15 PostgreSQL
 DECLARE @PersonID Integer -- Int32
 SET     @PersonID = 1
 

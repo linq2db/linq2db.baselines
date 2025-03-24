@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 BeginTransaction(RepeatableRead)
 BeforeExecute
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
+--  PostgreSQL.17 PostgreSQL.15 PostgreSQL
 DECLARE @myId Integer -- Int32
 SET     @myId = 85
 
@@ -33,7 +33,7 @@ WHERE
 	d.id2 = :myId
 
 BeforeExecute
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
+--  PostgreSQL.17 PostgreSQL.15 PostgreSQL
 DECLARE @myId Integer -- Int32
 SET     @myId = 85
 

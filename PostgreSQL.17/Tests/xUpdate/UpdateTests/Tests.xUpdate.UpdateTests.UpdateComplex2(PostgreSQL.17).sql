@@ -1,10 +1,10 @@
 ﻿BeforeExecute
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
+--  PostgreSQL.17 PostgreSQL.15 PostgreSQL
 
 ALTER SEQUENCE "Person_PersonID_seq" RESTART WITH 5
 
 BeforeExecute
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
+--  PostgreSQL.17 PostgreSQL.15 PostgreSQL
 DECLARE @Gender Text(1) -- String
 SET     @Gender = 'M'
 DECLARE @Name_FirstName Text(13) -- String
@@ -32,7 +32,7 @@ RETURNING
 	"PersonID"
 
 BeforeExecute
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
+--  PostgreSQL.17 PostgreSQL.15 PostgreSQL
 
 UPDATE
 	"Person"
@@ -42,7 +42,7 @@ WHERE
 	"Person"."FirstName" LIKE 'UpdateComplex%' ESCAPE '~'
 
 BeforeExecute
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
+--  PostgreSQL.17 PostgreSQL.15 PostgreSQL
 DECLARE @id Integer -- Int32
 SET     @id = 5
 

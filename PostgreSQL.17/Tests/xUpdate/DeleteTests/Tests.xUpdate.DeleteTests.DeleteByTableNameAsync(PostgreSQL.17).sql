@@ -1,10 +1,10 @@
 ﻿BeforeExecute
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL (asynchronously)
+--  PostgreSQL.17 PostgreSQL.15 PostgreSQL (asynchronously)
 
 DROP TABLE IF EXISTS "xxPerson"
 
 BeforeExecute
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL (asynchronously)
+--  PostgreSQL.17 PostgreSQL.15 PostgreSQL (asynchronously)
 
 CREATE TABLE "xxPerson"
 (
@@ -18,7 +18,7 @@ CREATE TABLE "xxPerson"
 )
 
 BeforeExecute
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL (asynchronously)
+--  PostgreSQL.17 PostgreSQL.15 PostgreSQL (asynchronously)
 DECLARE @FirstName Text(6) -- String
 SET     @FirstName = 'Steven'
 DECLARE @LastName Text(4) -- String
@@ -44,7 +44,7 @@ VALUES
 )
 
 BeforeExecute
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL (asynchronously)
+--  PostgreSQL.17 PostgreSQL.15 PostgreSQL (asynchronously)
 
 SELECT
 	COUNT(*)
@@ -52,7 +52,7 @@ FROM
 	"xxPerson" t1
 
 BeforeExecute
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL (asynchronously)
+--  PostgreSQL.17 PostgreSQL.15 PostgreSQL (asynchronously)
 
 SELECT
 	t1."FirstName",
@@ -65,7 +65,7 @@ FROM
 LIMIT 2
 
 BeforeExecute
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL (asynchronously)
+--  PostgreSQL.17 PostgreSQL.15 PostgreSQL (asynchronously)
 DECLARE @ID Integer -- Int32
 SET     @ID = 1
 
@@ -75,7 +75,7 @@ WHERE
 	t1."PersonID" = :ID
 
 BeforeExecute
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL (asynchronously)
+--  PostgreSQL.17 PostgreSQL.15 PostgreSQL (asynchronously)
 
 SELECT
 	COUNT(*)
@@ -83,7 +83,7 @@ FROM
 	"xxPerson" t1
 
 BeforeExecute
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL (asynchronously)
+--  PostgreSQL.17 PostgreSQL.15 PostgreSQL (asynchronously)
 
 DROP TABLE "xxPerson"
 

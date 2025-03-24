@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
+--  PostgreSQL.17 PostgreSQL.15 PostgreSQL
 DECLARE @p Text(4) -- String
 SET     @p = 'John'
 
@@ -16,7 +16,7 @@ WHERE
 LIMIT 2
 
 BeforeExecute
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
+--  PostgreSQL.17 PostgreSQL.15 PostgreSQL
 DECLARE @p Text(6) -- String
 SET     @p = 'Tester'
 

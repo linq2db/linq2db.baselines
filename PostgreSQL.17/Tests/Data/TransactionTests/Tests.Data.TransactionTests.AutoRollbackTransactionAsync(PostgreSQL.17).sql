@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL (asynchronously)
+--  PostgreSQL.17 PostgreSQL.15 PostgreSQL (asynchronously)
 DECLARE @ParentID Integer -- Int32
 SET     @ParentID = 1010
 DECLARE @Value1 Integer -- Int32
@@ -19,7 +19,7 @@ VALUES
 BeforeExecute
 BeginTransaction
 BeforeExecute
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
+--  PostgreSQL.17 PostgreSQL.15 PostgreSQL
 
 UPDATE
 	"Parent"
@@ -31,7 +31,7 @@ WHERE
 BeforeExecute
 DisposeTransactionAsync
 BeforeExecute
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL (asynchronously)
+--  PostgreSQL.17 PostgreSQL.15 PostgreSQL (asynchronously)
 
 SELECT
 	t."ParentID",

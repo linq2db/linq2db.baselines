@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
+--  PostgreSQL.17 PostgreSQL.15 PostgreSQL
 DECLARE @InstrumentId Integer -- Int32
 SET     @InstrumentId = 1
 DECLARE @IndexId Integer -- Int32
@@ -17,7 +17,7 @@ VALUES
 )
 
 BeforeExecute
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
+--  PostgreSQL.17 PostgreSQL.15 PostgreSQL
 DECLARE @InstrumentId Integer -- Int32
 SET     @InstrumentId = 2
 DECLARE @IndexId Integer -- Int32
@@ -35,7 +35,7 @@ VALUES
 )
 
 BeforeExecute
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
+--  PostgreSQL.17 PostgreSQL.15 PostgreSQL
 DECLARE @InstrumentId Integer -- Int32
 SET     @InstrumentId = 3
 DECLARE @IndexId Integer -- Int32
@@ -53,7 +53,7 @@ VALUES
 )
 
 BeforeExecute
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
+--  PostgreSQL.17 PostgreSQL.15 PostgreSQL
 DECLARE @InstrumentId Integer -- Int32
 SET     @InstrumentId = 1
 DECLARE @IndexId Integer -- Int32
@@ -71,7 +71,7 @@ VALUES
 )
 
 BeforeExecute
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
+--  PostgreSQL.17 PostgreSQL.15 PostgreSQL
 DECLARE @InstrumentId Integer -- Int32
 SET     @InstrumentId = 2
 DECLARE @IndexId Integer -- Int32
@@ -89,7 +89,7 @@ VALUES
 )
 
 BeforeExecute
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
+--  PostgreSQL.17 PostgreSQL.15 PostgreSQL
 DECLARE @InstrumentId Integer -- Int32
 SET     @InstrumentId = 1
 DECLARE @InstrumentCode Text(4) -- String
@@ -115,7 +115,7 @@ VALUES
 )
 
 BeforeExecute
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
+--  PostgreSQL.17 PostgreSQL.15 PostgreSQL
 DECLARE @InstrumentId Integer -- Int32
 SET     @InstrumentId = 2
 DECLARE @InstrumentCode Text(4) -- String
@@ -141,7 +141,7 @@ VALUES
 )
 
 BeforeExecute
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
+--  PostgreSQL.17 PostgreSQL.15 PostgreSQL
 DECLARE @cond Text(4) -- String
 SET     @cond = 'aaa%'
 DECLARE @uptoDate Timestamp -- DateTime2

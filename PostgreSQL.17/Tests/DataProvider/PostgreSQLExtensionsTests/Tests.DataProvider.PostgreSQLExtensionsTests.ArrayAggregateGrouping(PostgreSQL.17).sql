@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
+--  PostgreSQL.17 PostgreSQL.15 PostgreSQL
 
 SELECT
 	g_2."Key_1",
@@ -20,7 +20,7 @@ GROUP BY
 	g_2."Key_1"
 
 BeforeExecute
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
+--  PostgreSQL.17 PostgreSQL.15 PostgreSQL
 
 SELECT
 	ARRAY_AGG(v)
@@ -29,7 +29,7 @@ FROM
 		INNER JOIN LATERAL UNNEST(t1."StrArray") v ON 1=1
 
 BeforeExecute
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
+--  PostgreSQL.17 PostgreSQL.15 PostgreSQL
 
 SELECT
 	ARRAY_AGG(DISTINCT v)
@@ -38,7 +38,7 @@ FROM
 		INNER JOIN LATERAL UNNEST(t1."StrArray") v ON 1=1
 
 BeforeExecute
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
+--  PostgreSQL.17 PostgreSQL.15 PostgreSQL
 
 SELECT
 	ARRAY_AGG(v ORDER BY v)

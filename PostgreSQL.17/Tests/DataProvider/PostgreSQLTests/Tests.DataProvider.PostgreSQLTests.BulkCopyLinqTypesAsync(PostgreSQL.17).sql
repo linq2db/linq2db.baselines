@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL (asynchronously)
+--  PostgreSQL.17 PostgreSQL.15 PostgreSQL (asynchronously)
 
 INSERT INTO "LinqDataTypes"
 (
@@ -25,7 +25,7 @@ VALUES
 (4009,1009,'2001-01-11 01:11:21.100'::timestamp,True,'233bf399-9710-4e79-873d-2ec7bf1e0009'::uuid,NULL,9,NULL)
 
 BeforeExecute
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL (asynchronously)
+--  PostgreSQL.17 PostgreSQL.15 PostgreSQL (asynchronously)
 
 DELETE FROM
 	"LinqDataTypes" p
@@ -36,7 +36,7 @@ BeforeExecute
 INSERT ASYNC BULK "LinqDataTypes"(ID, MoneyValue, DateTimeValue, BoolValue, GuidValue, BinaryValue, SmallIntValue, StringValue)
 
 BeforeExecute
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL (asynchronously)
+--  PostgreSQL.17 PostgreSQL.15 PostgreSQL (asynchronously)
 
 DELETE FROM
 	"LinqDataTypes" p

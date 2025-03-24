@@ -1,10 +1,10 @@
 ﻿BeforeExecute
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
+--  PostgreSQL.17 PostgreSQL.15 PostgreSQL
 
 SHOW server_version_num
 
 BeforeExecute
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
+--  PostgreSQL.17 PostgreSQL.15 PostgreSQL
 
 
 				SELECT
@@ -53,7 +53,7 @@ BeforeExecute
 				WHERE v.schemaname NOT IN ('information_schema', 'pg_catalog')
 
 BeforeExecute
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
+--  PostgreSQL.17 PostgreSQL.15 PostgreSQL
 
 	SELECT
 		current_database() || '.' || pg_namespace.nspname || '.' || pg_class.relname as TableID,
@@ -70,7 +70,7 @@ BeforeExecute
 	AND pg_namespace.nspname NOT IN ('information_schema', 'pg_catalog')
 
 BeforeExecute
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
+--  PostgreSQL.17 PostgreSQL.15 PostgreSQL
 
 
 				SELECT columns.TableID,
@@ -159,7 +159,7 @@ BeforeExecute
 				     ) columns;
 
 BeforeExecute
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
+--  PostgreSQL.17 PostgreSQL.15 PostgreSQL
 
 
 				SELECT
@@ -209,7 +209,7 @@ BeforeExecute
 					AND this_schema.nspname NOT IN ('information_schema', 'pg_catalog')
 
 BeforeExecute
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
+--  PostgreSQL.17 PostgreSQL.15 PostgreSQL
 
 
 SELECT	r.ROUTINE_CATALOG,
@@ -229,12 +229,12 @@ SELECT	r.ROUTINE_CATALOG,
 		WHERE n.nspname NOT IN ('information_schema', 'pg_catalog')
 
 BeforeExecute
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
+--  PostgreSQL.17 PostgreSQL.15 PostgreSQL
 
 SELECT SPECIFIC_CATALOG, SPECIFIC_SCHEMA, SPECIFIC_NAME, ORDINAL_POSITION, PARAMETER_MODE, PARAMETER_NAME, DATA_TYPE FROM INFORMATION_SCHEMA.parameters
 
 BeforeExecute
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
+--  PostgreSQL.17 PostgreSQL.15 PostgreSQL
 
 SELECT r.SPECIFIC_CATALOG, r.SPECIFIC_SCHEMA, r.SPECIFIC_NAME, r.DATA_TYPE
 	FROM INFORMATION_SCHEMA.ROUTINES r
@@ -247,22 +247,22 @@ SELECT r.SPECIFIC_CATALOG, r.SPECIFIC_SCHEMA, r.SPECIFIC_NAME, r.DATA_TYPE
 BeforeExecute
 BeginTransaction
 BeforeExecute
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
+--  PostgreSQL.17 PostgreSQL.15 PostgreSQL
 
 SELECT * FROM testdata.public."GetParentByID"(NULL::integer)
 
 BeforeExecute
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
+--  PostgreSQL.17 PostgreSQL.15 PostgreSQL
 
 SELECT * FROM testdata.public."TestTableFunction1"(NULL::integer,NULL::integer)
 
 BeforeExecute
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
+--  PostgreSQL.17 PostgreSQL.15 PostgreSQL
 
 SELECT * FROM testdata.public."TestTableFunctionSchema"()
 
 BeforeExecute
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
+--  PostgreSQL.17 PostgreSQL.15 PostgreSQL
 
 SELECT * FROM testdata.public."TestTableFunction"(NULL::integer)
 

@@ -1,10 +1,10 @@
 ﻿BeforeExecute
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
+--  PostgreSQL.17 PostgreSQL.15 PostgreSQL
 
 DROP TABLE IF EXISTS "TempTable"
 
 BeforeExecute
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
+--  PostgreSQL.17 PostgreSQL.15 PostgreSQL
 
 SELECT
 	p."ParentID"
@@ -12,7 +12,7 @@ FROM
 	"Parent" p
 
 BeforeExecute
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
+--  PostgreSQL.17 PostgreSQL.15 PostgreSQL
 
 CREATE TABLE IF NOT EXISTS "TempTable"
 (
@@ -20,7 +20,7 @@ CREATE TABLE IF NOT EXISTS "TempTable"
 )
 
 BeforeExecute
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
+--  PostgreSQL.17 PostgreSQL.15 PostgreSQL
 
 INSERT INTO "TempTable"
 (
@@ -36,7 +36,7 @@ VALUES
 (7)
 
 BeforeExecute
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
+--  PostgreSQL.17 PostgreSQL.15 PostgreSQL
 
 SELECT
 	t."ID"
@@ -45,7 +45,7 @@ FROM
 		INNER JOIN "TempTable" t ON p."ParentID" = t."ID"
 
 BeforeExecute
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
+--  PostgreSQL.17 PostgreSQL.15 PostgreSQL
 
 DROP TABLE IF EXISTS "TempTable"
 

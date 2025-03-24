@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
+--  PostgreSQL.17 PostgreSQL.15 PostgreSQL
 
 DELETE FROM
 	"Parent" t1
@@ -7,7 +7,7 @@ WHERE
 	t1."ParentID" > 1000
 
 BeforeExecute
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
+--  PostgreSQL.17 PostgreSQL.15 PostgreSQL
 
 UPDATE
 	"Parent"
@@ -21,7 +21,7 @@ WHERE
 	c_2."ChildID" = 11
 
 BeforeExecute
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
+--  PostgreSQL.17 PostgreSQL.15 PostgreSQL
 DECLARE @ParentID Integer -- Int32
 SET     @ParentID = 1
 

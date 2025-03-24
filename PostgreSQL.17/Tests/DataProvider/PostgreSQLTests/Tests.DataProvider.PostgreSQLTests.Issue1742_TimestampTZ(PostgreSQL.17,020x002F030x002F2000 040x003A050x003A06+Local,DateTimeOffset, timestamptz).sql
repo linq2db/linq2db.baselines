@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
+--  PostgreSQL.17 PostgreSQL.15 PostgreSQL
 DECLARE @p TimestampTz -- DateTime
 SET     @p = '2000-02-03 04:05:06.007'::timestamp
 

@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
+--  PostgreSQL.17 PostgreSQL.15 PostgreSQL
 
 
 DROP TABLE IF EXISTS schedule;
@@ -7,7 +7,7 @@ DROP TYPE IF EXISTS time_unit;
 CREATE TYPE time_unit AS ENUM ('hour', 'day');
 
 BeforeExecute
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
+--  PostgreSQL.17 PostgreSQL.15 PostgreSQL
 
 
 CREATE TABLE IF NOT EXISTS schedule

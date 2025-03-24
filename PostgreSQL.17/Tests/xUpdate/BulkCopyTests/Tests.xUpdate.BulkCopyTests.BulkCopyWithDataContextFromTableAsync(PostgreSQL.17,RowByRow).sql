@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL (asynchronously)
+--  PostgreSQL.17 PostgreSQL.15 PostgreSQL (asynchronously)
 
 INSERT INTO "SimpleBulkCopyTable"
 (
@@ -9,7 +9,7 @@ VALUES
 (1)
 
 BeforeExecute
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL (asynchronously)
+--  PostgreSQL.17 PostgreSQL.15 PostgreSQL (asynchronously)
 
 INSERT INTO "SimpleBulkCopyTable"
 (
@@ -19,7 +19,7 @@ VALUES
 (2)
 
 BeforeExecute
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL (asynchronously)
+--  PostgreSQL.17 PostgreSQL.15 PostgreSQL (asynchronously)
 DECLARE @Id Integer -- Int32
 SET     @Id = 3
 
@@ -33,7 +33,7 @@ VALUES
 )
 
 BeforeExecute
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL (asynchronously)
+--  PostgreSQL.17 PostgreSQL.15 PostgreSQL (asynchronously)
 
 INSERT INTO "SimpleBulkCopyTable"
 (
@@ -43,7 +43,7 @@ VALUES
 (10)
 
 BeforeExecute
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL (asynchronously)
+--  PostgreSQL.17 PostgreSQL.15 PostgreSQL (asynchronously)
 
 INSERT INTO "SimpleBulkCopyTable"
 (
@@ -53,7 +53,7 @@ VALUES
 (20)
 
 BeforeExecute
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL (asynchronously)
+--  PostgreSQL.17 PostgreSQL.15 PostgreSQL (asynchronously)
 DECLARE @Id Integer -- Int32
 SET     @Id = 30
 
