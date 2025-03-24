@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Firebird.5 Firebird4
+--  Firebird.5 Firebird4
 
 DELETE FROM
 	"Person" "t1"
@@ -7,7 +7,7 @@ WHERE
 	"t1"."FirstName" STARTING WITH 'Insert16'
 
 BeforeExecute
--- Firebird.5 Firebird4
+--  Firebird.5 Firebird4
 DECLARE @name VarChar(8) -- String
 SET     @name = 'Insert16'
 DECLARE @idx Integer -- Int32
@@ -27,7 +27,7 @@ VALUES
 )
 
 BeforeExecute
--- Firebird.5 Firebird4
+--  Firebird.5 Firebird4
 
 SELECT
 	COUNT(*)
@@ -37,7 +37,7 @@ WHERE
 	"t1"."FirstName" STARTING WITH 'Insert16'
 
 BeforeExecute
--- Firebird.5 Firebird4
+--  Firebird.5 Firebird4
 
 DELETE FROM
 	"Person" "t1"

@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Firebird.5 Firebird4 (asynchronously)
+--  Firebird.5 Firebird4 (asynchronously)
 
 SELECT
 	"t1"."ParentID",
@@ -10,7 +10,7 @@ FROM
 BeforeExecute
 BeginTransactionAsync
 BeforeExecute
--- Firebird.5 Firebird4
+--  Firebird.5 Firebird4
 DECLARE @ParentID Integer -- Int32
 SET     @ParentID = 1010
 DECLARE @Value1 Integer -- Int32

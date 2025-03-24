@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Firebird.5 Firebird4
+--  Firebird.5 Firebird4
 
 DELETE FROM
 	"Parent" "p"
@@ -7,7 +7,7 @@ WHERE
 	"p"."ParentID" > 1000
 
 BeforeExecute
--- Firebird.5 Firebird4
+--  Firebird.5 Firebird4
 
 INSERT INTO "Parent"
 (
@@ -33,7 +33,7 @@ FROM
 	) "t1"
 
 BeforeExecute
--- Firebird.5 Firebird4
+--  Firebird.5 Firebird4
 
 SELECT
 	COUNT(*)
@@ -43,7 +43,7 @@ WHERE
 	"c_1"."ParentID" > 1000
 
 BeforeExecute
--- Firebird.5 Firebird4
+--  Firebird.5 Firebird4
 
 DELETE FROM
 	"Parent" "p"

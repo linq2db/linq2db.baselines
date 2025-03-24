@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Firebird.5 Firebird4
+--  Firebird.5 Firebird4
 DECLARE @param Integer -- Int32
 SET     @param = 100
 
@@ -22,7 +22,7 @@ RETURNING
 	"DestinationTable"."ValueStr" || CAST(1 AS VarChar(11) CHARACTER SET UNICODE_FSS)
 
 BeforeExecute
--- Firebird.5 Firebird4
+--  Firebird.5 Firebird4
 
 SELECT
 	"t1"."Id",
@@ -32,7 +32,7 @@ FROM
 	"DestinationTable" "t1"
 
 BeforeExecute
--- Firebird.5 Firebird4
+--  Firebird.5 Firebird4
 
 SELECT
 	"t"."Id" + 1,

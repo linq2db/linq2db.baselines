@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Firebird.5 Firebird4
+--  Firebird.5 Firebird4
 
 INSERT INTO "Parent"
 (
@@ -13,7 +13,7 @@ VALUES
 )
 
 BeforeExecute
--- Firebird.5 Firebird4
+--  Firebird.5 Firebird4
 
 INSERT INTO "Child"
 (
@@ -27,7 +27,7 @@ VALUES
 )
 
 BeforeExecute
--- Firebird.5 Firebird4
+--  Firebird.5 Firebird4
 DECLARE @Value1 Integer -- Int32
 SET     @Value1 = 5
 

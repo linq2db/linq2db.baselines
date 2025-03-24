@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Firebird.5 Firebird4
+--  Firebird.5 Firebird4
 
 SELECT
 	CAST(0 AS Int),
@@ -34,7 +34,7 @@ WHERE
 BeforeExecute
 BeginTransaction(RepeatableRead)
 BeforeExecute
--- Firebird.5 Firebird4
+--  Firebird.5 Firebird4
 
 SELECT
 	"m_1"."ParentID",
@@ -52,7 +52,7 @@ FROM
 BeforeExecute
 DisposeTransaction
 BeforeExecute
--- Firebird.5 Firebird4
+--  Firebird.5 Firebird4
 
 SELECT
 	"t1"."ParentID",
@@ -61,7 +61,7 @@ FROM
 	"Parent" "t1"
 
 BeforeExecute
--- Firebird.5 Firebird4
+--  Firebird.5 Firebird4
 
 SELECT
 	"t1"."ParentID",

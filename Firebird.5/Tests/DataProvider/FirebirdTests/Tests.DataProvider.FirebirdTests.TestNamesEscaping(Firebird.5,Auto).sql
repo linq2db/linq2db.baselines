@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Firebird.5 Firebird4
+--  Firebird.5 Firebird4
 
 INSERT INTO "CamelCaseName"
 (
@@ -21,7 +21,7 @@ VALUES
 )
 
 BeforeExecute
--- Firebird.5 Firebird4
+--  Firebird.5 Firebird4
 
 SELECT
 	"t1"."Id",
@@ -34,7 +34,7 @@ FROM
 	"CamelCaseName" "t1"
 
 BeforeExecute
--- Firebird.5 Firebird4
+--  Firebird.5 Firebird4
 
 DELETE FROM
 	"CamelCaseName" "t1"

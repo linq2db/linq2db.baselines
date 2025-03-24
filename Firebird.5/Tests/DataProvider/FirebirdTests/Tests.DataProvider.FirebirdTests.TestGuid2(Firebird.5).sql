@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Firebird.5 Firebird4
+--  Firebird.5 Firebird4
 
 SELECT
 	"t"."GuidValue"
@@ -7,7 +7,7 @@ FROM
 	"LinqDataTypes" "t"
 
 BeforeExecute
--- Firebird.5 Firebird4
+--  Firebird.5 Firebird4
 
 SELECT
 	"t".ID,
@@ -25,7 +25,7 @@ FROM
 FETCH NEXT 1 ROWS ONLY
 
 BeforeExecute
--- Firebird.5 Firebird4
+--  Firebird.5 Firebird4
 DECLARE @MoneyValue Decimal(3, 2)
 SET     @MoneyValue = 1.11
 DECLARE @DateTimeValue TimeStamp -- DateTime
@@ -63,7 +63,7 @@ WHERE
 	"t1".ID = @ID
 
 BeforeExecute
--- Firebird.5 Firebird4
+--  Firebird.5 Firebird4
 DECLARE @GuidValue Guid
 SET     @GuidValue = X'EF1291656FFE4DF9BB6BBB16E413C883'
 DECLARE @ID Integer -- Int32

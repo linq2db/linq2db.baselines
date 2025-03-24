@@ -7,7 +7,7 @@ FROM
 ----
 
 BeforeExecute
--- Firebird.5 Firebird4
+--  Firebird.5 Firebird4
 
 SELECT
 	"p"."ParentID",
@@ -25,7 +25,7 @@ FROM
 ---
 
 BeforeExecute
--- Firebird.5 Firebird4
+--  Firebird.5 Firebird4
 
 SELECT
 	"p"."ParentID",

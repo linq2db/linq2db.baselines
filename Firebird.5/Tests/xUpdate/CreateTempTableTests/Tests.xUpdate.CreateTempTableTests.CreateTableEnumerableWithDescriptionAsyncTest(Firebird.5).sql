@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Firebird.5 Firebird4 (asynchronously)
+--  Firebird.5 Firebird4 (asynchronously)
 
 EXECUTE BLOCK AS BEGIN
 	IF (EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'TempTable')) THEN
@@ -7,7 +7,7 @@ EXECUTE BLOCK AS BEGIN
 END
 
 BeforeExecute
--- Firebird.5 Firebird4 (asynchronously)
+--  Firebird.5 Firebird4 (asynchronously)
 
 EXECUTE BLOCK AS BEGIN
 	IF (NOT EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'TempTable')) THEN
@@ -20,7 +20,7 @@ EXECUTE BLOCK AS BEGIN
 END
 
 BeforeExecute
--- Firebird.5 Firebird4 (asynchronously)
+--  Firebird.5 Firebird4 (asynchronously)
 
 INSERT INTO "TempTable"
 (
@@ -29,7 +29,7 @@ INSERT INTO "TempTable"
 SELECT CAST('John' AS VarChar(255) CHARACTER SET UNICODE_FSS) FROM rdb$database
 
 BeforeExecute
--- Firebird.5 Firebird4 (asynchronously)
+--  Firebird.5 Firebird4 (asynchronously)
 
 SELECT
 	"t"."Name"
@@ -38,7 +38,7 @@ FROM
 		INNER JOIN "TempTable" "t" ON "p"."FirstName" = "t"."Name"
 
 BeforeExecute
--- Firebird.5 Firebird4 (asynchronously)
+--  Firebird.5 Firebird4 (asynchronously)
 
 EXECUTE BLOCK AS BEGIN
 	IF (EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'TempTable')) THEN

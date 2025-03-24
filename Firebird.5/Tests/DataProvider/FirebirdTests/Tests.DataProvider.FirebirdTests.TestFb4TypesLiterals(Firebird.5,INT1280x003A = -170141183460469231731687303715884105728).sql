@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Firebird.5 Firebird4
+--  Firebird.5 Firebird4
 DECLARE @Int128 Int128 -- Object
 SET     @Int128 = -170141183460469231731687303715884105728
 
@@ -15,7 +15,7 @@ VALUES
 )
 
 BeforeExecute
--- Firebird.5 Firebird4
+--  Firebird.5 Firebird4
 
 SELECT
 	COUNT(*)

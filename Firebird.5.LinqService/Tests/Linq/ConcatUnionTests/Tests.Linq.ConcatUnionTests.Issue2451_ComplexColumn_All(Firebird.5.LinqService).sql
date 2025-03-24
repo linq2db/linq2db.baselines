@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Firebird.5 Firebird4
+--  Firebird.5 Firebird4
 
 SELECT
 	"p"."FirstName"
@@ -12,7 +12,7 @@ FROM
 	"Person" "p_1"
 
 BeforeExecute
--- Firebird.5 Firebird4
+--  Firebird.5 Firebird4
 
 SELECT
 	"p"."FirstName" || '/' || "p"."LastName"

@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Firebird.5 Firebird4
+--  Firebird.5 Firebird4
 
 SELECT
 	"g_1"."GroupId",
@@ -30,7 +30,7 @@ GROUP BY
 	"g_1"."GroupId"
 
 BeforeExecute
--- Firebird.5 Firebird4
+--  Firebird.5 Firebird4
 
 SELECT
 	"t1"."GroupId",

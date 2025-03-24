@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Firebird.5 Firebird4
+--  Firebird.5 Firebird4
 
 SELECT
 	"nm"."MiddleName"
@@ -9,7 +9,7 @@ WHERE
 	"nm"."MiddleName" IS NOT NULL
 
 BeforeExecute
--- Firebird.5 Firebird4
+--  Firebird.5 Firebird4
 
 SELECT
 	"t1"."FirstName",

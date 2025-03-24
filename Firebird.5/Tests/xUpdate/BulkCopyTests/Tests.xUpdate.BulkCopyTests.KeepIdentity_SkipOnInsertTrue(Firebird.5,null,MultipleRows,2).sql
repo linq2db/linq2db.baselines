@@ -1,10 +1,10 @@
 ﻿BeforeExecute
--- Firebird.5 Firebird4
+--  Firebird.5 Firebird4
 
 SET GENERATOR "AllTypesID" TO 2
 
 BeforeExecute
--- Firebird.5 Firebird4
+--  Firebird.5 Firebird4
 DECLARE @Value Integer -- Int32
 SET     @Value = 0
 DECLARE @IDENTITY_PARAMETER Decimal
@@ -22,7 +22,7 @@ RETURNING
 	ID
 
 BeforeExecute
--- Firebird.5 Firebird4 (asynchronously)
+--  Firebird.5 Firebird4 (asynchronously)
 
 INSERT INTO "AllTypes"
 (
@@ -32,7 +32,7 @@ SELECT 200 FROM rdb$database UNION ALL
 SELECT 300 FROM rdb$database
 
 BeforeExecute
--- Firebird.5 Firebird4
+--  Firebird.5 Firebird4
 DECLARE @lastId Integer -- Int32
 SET     @lastId = 3
 
@@ -47,7 +47,7 @@ ORDER BY
 	"t1".ID
 
 BeforeExecute
--- Firebird.5 Firebird4
+--  Firebird.5 Firebird4
 DECLARE @lastId Integer -- Int32
 SET     @lastId = 3
 

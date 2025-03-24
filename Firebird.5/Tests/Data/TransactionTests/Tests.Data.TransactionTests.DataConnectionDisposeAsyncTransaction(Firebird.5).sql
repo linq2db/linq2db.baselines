@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 BeginTransaction
 BeforeExecute
--- Firebird.5 Firebird4
+--  Firebird.5 Firebird4
 DECLARE @ParentID Integer -- Int32
 SET     @ParentID = 1010
 DECLARE @Value1 Integer -- Int32

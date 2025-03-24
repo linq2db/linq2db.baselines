@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Firebird.5 Firebird4
+--  Firebird.5 Firebird4
 
 SELECT
 	"s"."Id",
@@ -11,7 +11,7 @@ WHERE
 	"s"."Id" > 3
 
 BeforeExecute
--- Firebird.5 Firebird4 (asynchronously)
+--  Firebird.5 Firebird4 (asynchronously)
 
 DELETE FROM
 	"TableWithData" "s"
@@ -23,7 +23,7 @@ RETURNING
 	"s"."ValueStr"
 
 BeforeExecute
--- Firebird.5 Firebird4 (asynchronously)
+--  Firebird.5 Firebird4 (asynchronously)
 
 EXECUTE BLOCK AS BEGIN
 	IF (EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'TableWithData')) THEN

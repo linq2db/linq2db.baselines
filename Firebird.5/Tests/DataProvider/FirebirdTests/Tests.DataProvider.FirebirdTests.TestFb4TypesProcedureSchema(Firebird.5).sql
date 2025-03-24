@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Firebird.5 Firebird4
+--  Firebird.5 Firebird4
 
 
 SELECT * FROM (
@@ -23,7 +23,7 @@ SELECT * FROM (
 ) ORDER BY PackageName, ProcedureName
 
 BeforeExecute
--- Firebird.5 Firebird4
+--  Firebird.5 Firebird4
 
 SELECT
 	p.RDB$PACKAGE_NAME                                   AS PackageName,
@@ -66,7 +66,7 @@ WHERE p.RDB$SYSTEM_FLAG = 0
 BeforeExecute
 BeginTransaction
 BeforeExecute
--- Firebird.5 Firebird4
+--  Firebird.5 Firebird4
 
 SELECT * FROM TEST_V4_TYPES(NULL,NULL,NULL,NULL,NULL)
 

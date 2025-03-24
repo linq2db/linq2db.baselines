@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Firebird.5 Firebird4
+--  Firebird.5 Firebird4
 DECLARE @p Integer -- Int32
 SET     @p = 102
 
@@ -9,7 +9,7 @@ WHERE
 	"r".ID >= 101 AND "r".ID < @p
 
 BeforeExecute
--- Firebird.5 Firebird4
+--  Firebird.5 Firebird4
 
 INSERT INTO "LinqDataTypes"
 (
@@ -23,7 +23,7 @@ VALUES
 )
 
 BeforeExecute
--- Firebird.5 Firebird4
+--  Firebird.5 Firebird4
 DECLARE @param BigInt -- Int64
 SET     @param = 11
 
@@ -41,7 +41,7 @@ WHERE
 	"r".ID = 101 AND "r"."BigIntValue" = 12
 
 BeforeExecute
--- Firebird.5 Firebird4
+--  Firebird.5 Firebird4
 
 SELECT
 	COUNT(*)
@@ -51,7 +51,7 @@ WHERE
 	"r".ID = 101 AND "r"."BigIntValue" = 11
 
 BeforeExecute
--- Firebird.5 Firebird4
+--  Firebird.5 Firebird4
 DECLARE @p Integer -- Int32
 SET     @p = 102
 

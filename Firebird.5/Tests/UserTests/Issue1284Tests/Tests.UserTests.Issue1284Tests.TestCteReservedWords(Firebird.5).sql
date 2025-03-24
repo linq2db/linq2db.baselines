@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Firebird.5 Firebird4
+--  Firebird.5 Firebird4
 
 WITH CTE_1 ("Obj_Operator")
 AS
@@ -16,7 +16,7 @@ FROM
 FETCH NEXT 1 ROWS ONLY
 
 BeforeExecute
--- Firebird.5 Firebird4
+--  Firebird.5 Firebird4
 
 SELECT
 	"person_1"."LastName"

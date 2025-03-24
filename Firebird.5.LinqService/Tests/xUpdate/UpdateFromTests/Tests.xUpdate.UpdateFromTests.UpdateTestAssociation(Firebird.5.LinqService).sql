@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Firebird.5 Firebird4
+--  Firebird.5 Firebird4
 
 UPDATE
 	"UpdatedEntities"
@@ -25,7 +25,7 @@ WHERE
 	)
 
 BeforeExecute
--- Firebird.5 Firebird4
+--  Firebird.5 Firebird4
 
 SELECT
 	"v"."Value1"

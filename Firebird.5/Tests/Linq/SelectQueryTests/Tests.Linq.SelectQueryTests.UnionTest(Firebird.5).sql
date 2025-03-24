@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Firebird.5 Firebird4
+--  Firebird.5 Firebird4
 
 SELECT
 	DateAdd(Day, "t"."Value", LOCALTIMESTAMP),
@@ -15,7 +15,7 @@ SELECT
 FROM rdb$database
 
 BeforeExecute
--- Firebird.5 Firebird4
+--  Firebird.5 Firebird4
 
 SELECT
 	"v_1"."Value2"

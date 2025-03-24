@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Firebird.5 Firebird4
+--  Firebird.5 Firebird4
 
 SELECT
 	"p"."ParentID",
@@ -10,7 +10,7 @@ WHERE
 	"p"."ParentID" = 2
 
 BeforeExecute
--- Firebird.5 Firebird4
+--  Firebird.5 Firebird4
 DECLARE @id Integer -- Int32
 SET     @id = 2
 

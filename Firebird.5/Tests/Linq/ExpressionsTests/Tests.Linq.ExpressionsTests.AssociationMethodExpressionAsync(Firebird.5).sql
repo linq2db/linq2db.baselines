@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Firebird.5 Firebird4 (asynchronously)
+--  Firebird.5 Firebird4 (asynchronously)
 
 SELECT
 	"t1"."ParentID",
@@ -8,7 +8,7 @@ FROM
 	"Parent" "t1"
 
 BeforeExecute
--- Firebird.5 Firebird4 (asynchronously)
+--  Firebird.5 Firebird4 (asynchronously)
 
 SELECT
 	(

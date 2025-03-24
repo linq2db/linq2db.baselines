@@ -1,12 +1,12 @@
 ﻿BeforeExecute
--- Firebird.5 Firebird4
+--  Firebird.5 Firebird4
 
 SET GENERATOR "AllTypesID" TO 2
 
 BeforeExecute
 BeginTransaction
 BeforeExecute
--- Firebird.5 Firebird4
+--  Firebird.5 Firebird4
 DECLARE @IDENTITY_PARAMETER Decimal
 SET     @IDENTITY_PARAMETER = NULL
 
@@ -24,7 +24,7 @@ RETURNING
 	ID
 
 BeforeExecute
--- Firebird.5 Firebird4
+--  Firebird.5 Firebird4
 DECLARE @id Integer -- Int32
 SET     @id = 3
 
@@ -38,7 +38,7 @@ WHERE
 	"t".ID = @id
 
 BeforeExecute
--- Firebird.5 Firebird4
+--  Firebird.5 Firebird4
 DECLARE @id Integer -- Int32
 SET     @id = 3
 

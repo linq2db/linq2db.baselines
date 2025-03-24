@@ -1,12 +1,12 @@
 ﻿BeforeExecute
--- Firebird.5 Firebird4
+--  Firebird.5 Firebird4
 
 SET GENERATOR "AllTypesID" TO 2
 
 BeforeExecute
 BeginTransaction
 BeforeExecute
--- Firebird.5 Firebird4
+--  Firebird.5 Firebird4
 
 SELECT
 	MAX("t1".ID)
@@ -14,7 +14,7 @@ FROM
 	"AllTypes" "t1"
 
 BeforeExecute
--- Firebird.5 Firebird4
+--  Firebird.5 Firebird4
 
 MERGE INTO "AllTypes" "Target"
 USING (
@@ -42,7 +42,7 @@ VALUES
 )
 
 BeforeExecute
--- Firebird.5 Firebird4
+--  Firebird.5 Firebird4
 DECLARE @take Integer -- Int32
 SET     @take = 1
 

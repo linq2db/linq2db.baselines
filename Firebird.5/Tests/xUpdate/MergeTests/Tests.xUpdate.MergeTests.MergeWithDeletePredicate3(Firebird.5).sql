@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 BeginTransaction
 BeforeExecute
--- Firebird.5 Firebird4
+--  Firebird.5 Firebird4
 DECLARE @FirstName VarChar(8) -- String
 SET     @FirstName = _utf8 x'D09DD0B5204153434949'
 DECLARE @LastName VarChar(9) -- String
@@ -27,7 +27,7 @@ VALUES
 )
 
 BeforeExecute
--- Firebird.5 Firebird4
+--  Firebird.5 Firebird4
 
 SELECT
 	"t1"."FirstName",
@@ -40,7 +40,7 @@ FROM
 FETCH NEXT 1 ROWS ONLY
 
 BeforeExecute
--- Firebird.5 Firebird4
+--  Firebird.5 Firebird4
 DECLARE @PersonID Integer -- Int32
 SET     @PersonID = 1
 DECLARE @Diagnosis VarChar(8) -- String
@@ -58,7 +58,7 @@ VALUES
 )
 
 BeforeExecute
--- Firebird.5 Firebird4
+--  Firebird.5 Firebird4
 DECLARE @ID Integer -- Int32
 SET     @ID = 1
 
@@ -72,7 +72,7 @@ WHERE
 FETCH NEXT 1 ROWS ONLY
 
 BeforeExecute
--- Firebird.5 Firebird4
+--  Firebird.5 Firebird4
 DECLARE @PersonID Integer -- Int32
 SET     @PersonID = 1
 

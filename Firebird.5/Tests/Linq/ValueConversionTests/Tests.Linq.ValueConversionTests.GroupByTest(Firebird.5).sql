@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 BeginTransaction(RepeatableRead)
 BeforeExecute
--- Firebird.5 Firebird4
+--  Firebird.5 Firebird4
 DECLARE @testedList VarChar(20) -- String
 SET     @testedList = '[{"Value":"Value1"}]'
 
@@ -25,7 +25,7 @@ WHERE
 BeforeExecute
 DisposeTransaction
 BeforeExecute
--- Firebird.5 Firebird4
+--  Firebird.5 Firebird4
 DECLARE @testedList VarChar(20) -- String
 SET     @testedList = '[{"Value":"Value1"}]'
 

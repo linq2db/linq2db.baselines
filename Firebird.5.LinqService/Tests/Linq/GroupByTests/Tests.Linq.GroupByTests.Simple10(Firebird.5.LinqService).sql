@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Firebird.5 Firebird4
+--  Firebird.5 Firebird4
 
 SELECT
 	"m_1"."Key_1",
@@ -15,7 +15,7 @@ FROM
 		INNER JOIN "Child" "d" ON "m_1"."Key_1" = "d"."ParentID"
 
 BeforeExecute
--- Firebird.5 Firebird4
+--  Firebird.5 Firebird4
 
 SELECT
 	"g_1"."ParentID"

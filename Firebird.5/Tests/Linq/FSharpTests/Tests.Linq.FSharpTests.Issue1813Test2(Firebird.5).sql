@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Firebird.5 Firebird4
+--  Firebird.5 Firebird4
 DECLARE @Id Integer -- Int32
 SET     @Id = 1
 DECLARE @Name VarChar(5) -- String
@@ -17,7 +17,7 @@ VALUES
 )
 
 BeforeExecute
--- Firebird.5 Firebird4
+--  Firebird.5 Firebird4
 DECLARE @Id Integer -- Int32
 SET     @Id = 2
 DECLARE @Name VarChar(5) -- String
@@ -35,7 +35,7 @@ VALUES
 )
 
 BeforeExecute
--- Firebird.5 Firebird4
+--  Firebird.5 Firebird4
 DECLARE @Id Integer -- Int32
 SET     @Id = 1
 DECLARE @Text VarChar(7) -- String
@@ -55,7 +55,7 @@ VALUES
 BeforeExecute
 BeginTransaction(RepeatableRead)
 BeforeExecute
--- Firebird.5 Firebird4
+--  Firebird.5 Firebird4
 
 SELECT
 	"m_1"."Id",
@@ -73,7 +73,7 @@ FROM
 BeforeExecute
 DisposeTransaction
 BeforeExecute
--- Firebird.5 Firebird4
+--  Firebird.5 Firebird4
 
 SELECT
 	"tupledArg"."Id",

@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 BeginTransaction
 BeforeExecute
--- Firebird.5 Firebird4 (asynchronously)
+--  Firebird.5 Firebird4 (asynchronously)
 
 SELECT
 	"m_1"."ParentID",
@@ -20,7 +20,7 @@ FROM
 		INNER JOIN "Child" "d" ON "m_1"."ParentID" = "d"."ParentID"
 
 BeforeExecute
--- Firebird.5 Firebird4 (asynchronously)
+--  Firebird.5 Firebird4 (asynchronously)
 
 SELECT
 	"x"."ParentID",
@@ -36,7 +36,7 @@ DisposeTransaction
 BeforeExecute
 BeginTransaction
 BeforeExecute
--- Firebird.5 Firebird4 (asynchronously)
+--  Firebird.5 Firebird4 (asynchronously)
 
 SELECT
 	"m_1"."ParentID",
@@ -55,7 +55,7 @@ FROM
 		INNER JOIN "Child" "d" ON "m_1"."ParentID" = "d"."ParentID"
 
 BeforeExecute
--- Firebird.5 Firebird4 (asynchronously)
+--  Firebird.5 Firebird4 (asynchronously)
 
 SELECT
 	"x"."ParentID",

@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Firebird.5 Firebird4
+--  Firebird.5 Firebird4
 DECLARE @Column Integer -- Int32
 SET     @Column = 2
 DECLARE @ColumnNullable Integer -- Int32
@@ -15,7 +15,7 @@ WHERE
 	"r"."Column" = @Column AND "r"."ColumnNullable" = @ColumnNullable
 
 BeforeExecute
--- Firebird.5 Firebird4
+--  Firebird.5 Firebird4
 
 SELECT
 	"r"."Id",
@@ -27,13 +27,13 @@ WHERE
 	"r"."Column" = 2 AND "r"."ColumnNullable" = 3
 
 BeforeExecute
--- Firebird.5 Firebird4
+--  Firebird.5 Firebird4
 
 DELETE FROM
 	"IntEnumTable" "t1"
 
 BeforeExecute
--- Firebird.5 Firebird4
+--  Firebird.5 Firebird4
 DECLARE @Id Integer -- Int32
 SET     @Id = 1
 DECLARE @Column Integer -- Int32
@@ -55,7 +55,7 @@ VALUES
 )
 
 BeforeExecute
--- Firebird.5 Firebird4
+--  Firebird.5 Firebird4
 DECLARE @Id Integer -- Int32
 SET     @Id = 2
 DECLARE @Column Integer -- Int32
@@ -77,7 +77,7 @@ VALUES
 )
 
 BeforeExecute
--- Firebird.5 Firebird4
+--  Firebird.5 Firebird4
 
 SELECT
 	"t1"."Id",
@@ -89,13 +89,13 @@ ORDER BY
 	"t1"."Id"
 
 BeforeExecute
--- Firebird.5 Firebird4
+--  Firebird.5 Firebird4
 
 DELETE FROM
 	"IntEnumTable" "t1"
 
 BeforeExecute
--- Firebird.5 Firebird4
+--  Firebird.5 Firebird4
 
 INSERT INTO "IntEnumTable"
 (
@@ -107,7 +107,7 @@ SELECT 1,1,NULL FROM rdb$database UNION ALL
 SELECT 2,2,3 FROM rdb$database
 
 BeforeExecute
--- Firebird.5 Firebird4
+--  Firebird.5 Firebird4
 
 SELECT
 	"t1"."Id",
@@ -119,13 +119,13 @@ ORDER BY
 	"t1"."Id"
 
 BeforeExecute
--- Firebird.5 Firebird4
+--  Firebird.5 Firebird4
 
 DELETE FROM
 	"IntEnumTable" "t1"
 
 BeforeExecute
--- Firebird.5 Firebird4
+--  Firebird.5 Firebird4
 
 INSERT INTO "IntEnumTable"
 (
@@ -137,7 +137,7 @@ SELECT 1,1,NULL FROM rdb$database UNION ALL
 SELECT 2,2,3 FROM rdb$database
 
 BeforeExecute
--- Firebird.5 Firebird4
+--  Firebird.5 Firebird4
 
 SELECT
 	"t1"."Id",
