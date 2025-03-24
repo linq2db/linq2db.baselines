@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Oracle.21.Managed Oracle.Managed Oracle12
+--  Oracle.21.Managed Oracle.Managed Oracle12
 DECLARE @value Int32
 SET     @value = 123
 
@@ -15,7 +15,7 @@ VALUES
 )
 
 BeforeExecute
--- Oracle.21.Managed Oracle.Managed Oracle12
+--  Oracle.21.Managed Oracle.Managed Oracle12
 
 SELECT
 	t1."Id",

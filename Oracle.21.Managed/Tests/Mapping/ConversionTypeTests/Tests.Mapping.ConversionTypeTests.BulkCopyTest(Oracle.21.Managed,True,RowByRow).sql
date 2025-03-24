@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Oracle.21.Managed Oracle.Managed Oracle12
+--  Oracle.21.Managed Oracle.Managed Oracle12
 
 INSERT INTO "TrimTestTable"
 (
@@ -13,7 +13,7 @@ VALUES
 )
 
 BeforeExecute
--- Oracle.21.Managed Oracle.Managed Oracle12
+--  Oracle.21.Managed Oracle.Managed Oracle12
 
 SELECT
 	r.ID,
@@ -24,7 +24,7 @@ ORDER BY
 	r.ID
 
 BeforeExecute
--- Oracle.21.Managed Oracle.Managed Oracle12
+--  Oracle.21.Managed Oracle.Managed Oracle12
 
 SELECT
 	r.ID,

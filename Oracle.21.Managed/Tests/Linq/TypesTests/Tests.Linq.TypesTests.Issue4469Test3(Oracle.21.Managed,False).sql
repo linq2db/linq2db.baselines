@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Oracle.21.Managed Oracle.Managed Oracle12
+--  Oracle.21.Managed Oracle.Managed Oracle12
 DECLARE @param Int32
 SET     @param = 33D
 DECLARE @param_1 Decimal

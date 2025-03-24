@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Oracle.21.Managed Oracle.Managed Oracle12
+--  Oracle.21.Managed Oracle.Managed Oracle12
 
 SELECT
 	c_1."value",
@@ -14,7 +14,7 @@ ORDER BY
 	c_1."id"
 
 BeforeExecute
--- Oracle.21.Managed Oracle.Managed Oracle12
+--  Oracle.21.Managed Oracle.Managed Oracle12
 DECLARE @startId Int32
 SET     @startId = 5
 DECLARE @endId Int32

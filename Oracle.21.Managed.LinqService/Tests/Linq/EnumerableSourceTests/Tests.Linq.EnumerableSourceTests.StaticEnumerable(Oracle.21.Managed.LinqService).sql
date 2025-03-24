@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Oracle.21.Managed Oracle.Managed Oracle12
+--  Oracle.21.Managed Oracle.Managed Oracle12
 
 SELECT
 	p."FirstName",
@@ -25,7 +25,7 @@ WHERE
 	)
 
 BeforeExecute
--- Oracle.21.Managed Oracle.Managed Oracle12
+--  Oracle.21.Managed Oracle.Managed Oracle12
 
 SELECT
 	t1."FirstName",

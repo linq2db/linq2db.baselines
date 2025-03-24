@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Oracle.21.Managed Oracle.Managed Oracle12 (asynchronously)
+--  Oracle.21.Managed Oracle.Managed Oracle12 (asynchronously)
 
 BEGIN
 	EXECUTE IMMEDIATE 'DROP TABLE "TempTable"';
@@ -11,7 +11,7 @@ EXCEPTION
 END;
 
 BeforeExecute
--- Oracle.21.Managed Oracle.Managed Oracle12 (asynchronously)
+--  Oracle.21.Managed Oracle.Managed Oracle12 (asynchronously)
 
 BEGIN
 	EXECUTE IMMEDIATE '
@@ -28,14 +28,14 @@ EXCEPTION
 END;
 
 BeforeExecute
--- Oracle.21.Managed Oracle.Managed Oracle12 (asynchronously)
+--  Oracle.21.Managed Oracle.Managed Oracle12 (asynchronously)
 
 INSERT ALL
 	INTO "TempTable" ("Name") VALUES ('John')
 SELECT * FROM dual
 
 BeforeExecute
--- Oracle.21.Managed Oracle.Managed Oracle12 (asynchronously)
+--  Oracle.21.Managed Oracle.Managed Oracle12 (asynchronously)
 
 SELECT
 	t."Name"
@@ -44,7 +44,7 @@ FROM
 		INNER JOIN "TempTable" t ON p."FirstName" = t."Name"
 
 BeforeExecute
--- Oracle.21.Managed Oracle.Managed Oracle12 (asynchronously)
+--  Oracle.21.Managed Oracle.Managed Oracle12 (asynchronously)
 
 BEGIN
 	EXECUTE IMMEDIATE 'DROP TABLE "TempTable"';

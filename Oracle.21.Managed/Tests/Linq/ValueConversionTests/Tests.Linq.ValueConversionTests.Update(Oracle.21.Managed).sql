@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Oracle.21.Managed Oracle.Managed Oracle12
+--  Oracle.21.Managed Oracle.Managed Oracle12
 DECLARE @Value2 NVarchar2(21) -- String
 SET     @Value2 = '[{"Value":"updated"}]'
 DECLARE @EnumWithNull Varchar2 -- String
@@ -18,7 +18,7 @@ WHERE
 	e."Id" = 1
 
 BeforeExecute
--- Oracle.21.Managed Oracle.Managed Oracle12
+--  Oracle.21.Managed Oracle.Managed Oracle12
 
 SELECT
 	e."Id",
@@ -38,7 +38,7 @@ WHERE
 FETCH NEXT 1 ROWS ONLY
 
 BeforeExecute
--- Oracle.21.Managed Oracle.Managed Oracle12
+--  Oracle.21.Managed Oracle.Managed Oracle12
 DECLARE @Value1 NVarchar2(20) -- String
 SET     @Value1 = '{"some":"updated2}"}'
 DECLARE @Value2 NVarchar2(22) -- String
@@ -76,7 +76,7 @@ WHERE
 	t1."Id" = :Id
 
 BeforeExecute
--- Oracle.21.Managed Oracle.Managed Oracle12
+--  Oracle.21.Managed Oracle.Managed Oracle12
 
 SELECT
 	e."Id",
@@ -96,7 +96,7 @@ WHERE
 FETCH NEXT 1 ROWS ONLY
 
 BeforeExecute
--- Oracle.21.Managed Oracle.Managed Oracle12
+--  Oracle.21.Managed Oracle.Managed Oracle12
 DECLARE @Value1 NVarchar2 -- String
 SET     @Value1 = NULL
 DECLARE @Value2 NVarchar2 -- String
@@ -134,7 +134,7 @@ WHERE
 	t1."Id" = :Id
 
 BeforeExecute
--- Oracle.21.Managed Oracle.Managed Oracle12
+--  Oracle.21.Managed Oracle.Managed Oracle12
 
 SELECT
 	e."Id",

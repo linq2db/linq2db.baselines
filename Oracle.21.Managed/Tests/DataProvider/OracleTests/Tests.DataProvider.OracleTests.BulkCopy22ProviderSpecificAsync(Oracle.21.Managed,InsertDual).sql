@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Oracle.21.Managed Oracle.Managed Oracle12
+--  Oracle.21.Managed Oracle.Managed Oracle12
 
 DELETE FROM
 	"LinqDataTypes" t1
@@ -7,7 +7,7 @@ WHERE
 	t1.ID > 1000
 
 BeforeExecute
--- Oracle.21.Managed Oracle.Managed Oracle12
+--  Oracle.21.Managed Oracle.Managed Oracle12
 
 INSERT INTO "LinqDataTypes"
 (
@@ -28,7 +28,7 @@ INSERT INTO "LinqDataTypes"
 	SELECT 1006,2,TIMESTAMP '2020-02-29 17:54:55.123123',NULL,0,6,153,NULL,NULL FROM DUAL 
 
 BeforeExecute
--- Oracle.21.Managed Oracle.Managed Oracle12 (asynchronously)
+--  Oracle.21.Managed Oracle.Managed Oracle12 (asynchronously)
 
 DELETE FROM
 	"LinqDataTypes" t1

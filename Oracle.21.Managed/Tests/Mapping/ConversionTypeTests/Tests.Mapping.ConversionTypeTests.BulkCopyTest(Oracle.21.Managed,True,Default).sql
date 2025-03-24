@@ -1,12 +1,12 @@
 ﻿BeforeExecute
--- Oracle.21.Managed Oracle.Managed Oracle12
+--  Oracle.21.Managed Oracle.Managed Oracle12
 
 INSERT ALL
 	INTO "TrimTestTable" (ID, "Data") VALUES (1,'***OOO***')
 SELECT * FROM dual
 
 BeforeExecute
--- Oracle.21.Managed Oracle.Managed Oracle12
+--  Oracle.21.Managed Oracle.Managed Oracle12
 
 SELECT
 	r.ID,
@@ -17,7 +17,7 @@ ORDER BY
 	r.ID
 
 BeforeExecute
--- Oracle.21.Managed Oracle.Managed Oracle12
+--  Oracle.21.Managed Oracle.Managed Oracle12
 
 SELECT
 	r.ID,

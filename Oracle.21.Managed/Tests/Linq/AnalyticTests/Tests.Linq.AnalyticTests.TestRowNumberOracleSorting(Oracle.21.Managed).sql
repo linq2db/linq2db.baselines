@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Oracle.21.Managed Oracle.Managed Oracle12
+--  Oracle.21.Managed Oracle.Managed Oracle12
 
 SELECT
 	ROW_NUMBER() OVER(ORDER BY p."Value1", c_1."ChildID" DESC, p."ParentID")

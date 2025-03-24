@@ -1,10 +1,10 @@
 ﻿BeforeExecute
--- Oracle.21.Managed Oracle.Managed Oracle12
+--  Oracle.21.Managed Oracle.Managed Oracle12
 
 DROP TABLE "TempTestTable"
 
 BeforeExecute
--- Oracle.21.Managed Oracle.Managed Oracle12
+--  Oracle.21.Managed Oracle.Managed Oracle12
 
 CREATE TABLE "TempTestTable"
 (
@@ -12,7 +12,7 @@ CREATE TABLE "TempTestTable"
 )
 
 BeforeExecute
--- Oracle.21.Managed Oracle.Managed Oracle12
+--  Oracle.21.Managed Oracle.Managed Oracle12
 
 SELECT DISTINCT
 	t.AAAAAAAAAAAAAAAAAAAAAAAAAAAABC
@@ -20,7 +20,7 @@ FROM
 	"TempTestTable" t
 
 BeforeExecute
--- Oracle.21.Managed Oracle.Managed Oracle12
+--  Oracle.21.Managed Oracle.Managed Oracle12
 
 DROP TABLE "TempTestTable"
 

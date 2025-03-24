@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Oracle.21.Managed Oracle.Managed Oracle12
+--  Oracle.21.Managed Oracle.Managed Oracle12
 
 SELECT
 	t1.ID,
@@ -8,7 +8,7 @@ FROM
 	"AllTypes" t1
 
 BeforeExecute
--- Oracle.21.Managed Oracle.Managed Oracle12
+--  Oracle.21.Managed Oracle.Managed Oracle12
 DECLARE @MyDate TimeStampTZ -- DateTime
 SET     @MyDate = NULL
 DECLARE @ID Int32
@@ -22,7 +22,7 @@ WHERE
 	mt.ID = :ID
 
 BeforeExecute
--- Oracle.21.Managed Oracle.Managed Oracle12
+--  Oracle.21.Managed Oracle.Managed Oracle12
 
 UPDATE
 	"AllTypes" mt

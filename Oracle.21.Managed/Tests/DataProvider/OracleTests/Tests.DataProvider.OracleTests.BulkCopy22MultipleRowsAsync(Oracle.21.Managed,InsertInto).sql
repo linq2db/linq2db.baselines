@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Oracle.21.Managed Oracle.Managed Oracle12
+--  Oracle.21.Managed Oracle.Managed Oracle12
 
 DELETE FROM
 	"LinqDataTypes" t1
@@ -7,7 +7,7 @@ WHERE
 	t1.ID > 1000
 
 BeforeExecute
--- Oracle.21.Managed Oracle.Managed Oracle12 (asynchronously)
+--  Oracle.21.Managed Oracle.Managed Oracle12 (asynchronously)
 DECLARE @:p1 Int32
 SET     @:p1 = {1003,1004,1005,1006}
 DECLARE @:p2 Decimal
@@ -30,7 +30,7 @@ SET     @:p9 = {NULL,NULL,NULL,NULL}
 INSERT INTO "LinqDataTypes" (ID, "MoneyValue", "DateTimeValue", "DateTimeValue2", "BoolValue", "SmallIntValue", "IntValue", "BigIntValue", "StringValue") VALUES (:p1, :p2, :p3, :p4, :p5, :p6, :p7, :p8, :p9)
 
 BeforeExecute
--- Oracle.21.Managed Oracle.Managed Oracle12 (asynchronously)
+--  Oracle.21.Managed Oracle.Managed Oracle12 (asynchronously)
 
 DELETE FROM
 	"LinqDataTypes" t1

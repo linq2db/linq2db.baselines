@@ -1,10 +1,10 @@
 ﻿BeforeExecute
--- Oracle.21.Managed Oracle.Managed Oracle12
+--  Oracle.21.Managed Oracle.Managed Oracle12
 
 CREATE SEQUENCE SEQ_A START WITH 1 MINVALUE 0
 
 BeforeExecute
--- Oracle.21.Managed Oracle.Managed Oracle12
+--  Oracle.21.Managed Oracle.Managed Oracle12
 
 
 CREATE TABLE "TABLE_A"(
@@ -15,7 +15,7 @@ CREATE TABLE "TABLE_A"(
 )
 
 BeforeExecute
--- Oracle.21.Managed Oracle.Managed Oracle12 (asynchronously)
+--  Oracle.21.Managed Oracle.Managed Oracle12 (asynchronously)
 DECLARE @COLUMNA Int64
 SET     @COLUMNA = 1
 DECLARE @COLUMNB Int32
@@ -39,7 +39,7 @@ RETURNING
 	COLUMN_C INTO :IDENTITY_PARAMETER
 
 BeforeExecute
--- Oracle.21.Managed Oracle.Managed Oracle12 (asynchronously)
+--  Oracle.21.Managed Oracle.Managed Oracle12 (asynchronously)
 DECLARE @COLUMNA Int64
 SET     @COLUMNA = 1
 DECLARE @COLUMNB Int32
@@ -63,12 +63,12 @@ RETURNING
 	COLUMN_C INTO :IDENTITY_PARAMETER
 
 BeforeExecute
--- Oracle.21.Managed Oracle.Managed Oracle12
+--  Oracle.21.Managed Oracle.Managed Oracle12
 
 DROP SEQUENCE SEQ_A
 
 BeforeExecute
--- Oracle.21.Managed Oracle.Managed Oracle12
+--  Oracle.21.Managed Oracle.Managed Oracle12
 
 DROP TABLE "TABLE_A"
 

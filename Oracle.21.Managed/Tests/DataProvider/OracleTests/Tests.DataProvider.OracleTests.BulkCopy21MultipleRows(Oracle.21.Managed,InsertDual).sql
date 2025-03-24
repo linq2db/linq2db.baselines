@@ -1,11 +1,11 @@
 ﻿BeforeExecute
--- Oracle.21.Managed Oracle.Managed Oracle12
+--  Oracle.21.Managed Oracle.Managed Oracle12
 
 DELETE FROM
 	LINQDATATYPESBC t1
 
 BeforeExecute
--- Oracle.21.Managed Oracle.Managed Oracle12
+--  Oracle.21.Managed Oracle.Managed Oracle12
 
 INSERT INTO LINQDATATYPESBC
 (
@@ -27,7 +27,7 @@ INSERT INTO LINQDATATYPESBC
 	SELECT 1006,2,TIMESTAMP '2020-02-29 17:54:55.123123',NULL,0,NULL,6,153,NULL,NULL FROM DUAL 
 
 BeforeExecute
--- Oracle.21.Managed Oracle.Managed Oracle12
+--  Oracle.21.Managed Oracle.Managed Oracle12
 
 DELETE FROM
 	LINQDATATYPESBC t1

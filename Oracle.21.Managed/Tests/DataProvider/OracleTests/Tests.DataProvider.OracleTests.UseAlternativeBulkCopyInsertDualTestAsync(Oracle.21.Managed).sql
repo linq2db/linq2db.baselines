@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Oracle.21.Managed Oracle.Managed Oracle12 (asynchronously)
+--  Oracle.21.Managed Oracle.Managed Oracle12 (asynchronously)
 
 CREATE TABLE "UseAlternativeBulkCopy"
 (
@@ -8,7 +8,7 @@ CREATE TABLE "UseAlternativeBulkCopy"
 )
 
 BeforeExecute
--- Oracle.21.Managed Oracle.Managed Oracle12 (asynchronously)
+--  Oracle.21.Managed Oracle.Managed Oracle12 (asynchronously)
 
 INSERT INTO "UseAlternativeBulkCopy"
 (
@@ -43,7 +43,7 @@ INSERT INTO "UseAlternativeBulkCopy"
 	SELECT 24,24 FROM DUAL 
 
 BeforeExecute
--- Oracle.21.Managed Oracle.Managed Oracle12 (asynchronously)
+--  Oracle.21.Managed Oracle.Managed Oracle12 (asynchronously)
 
 INSERT INTO "UseAlternativeBulkCopy"
 (
@@ -78,7 +78,7 @@ INSERT INTO "UseAlternativeBulkCopy"
 	SELECT 49,49 FROM DUAL 
 
 BeforeExecute
--- Oracle.21.Managed Oracle.Managed Oracle12 (asynchronously)
+--  Oracle.21.Managed Oracle.Managed Oracle12 (asynchronously)
 
 INSERT INTO "UseAlternativeBulkCopy"
 (
@@ -113,7 +113,7 @@ INSERT INTO "UseAlternativeBulkCopy"
 	SELECT 74,74 FROM DUAL 
 
 BeforeExecute
--- Oracle.21.Managed Oracle.Managed Oracle12 (asynchronously)
+--  Oracle.21.Managed Oracle.Managed Oracle12 (asynchronously)
 
 INSERT INTO "UseAlternativeBulkCopy"
 (
@@ -148,7 +148,7 @@ INSERT INTO "UseAlternativeBulkCopy"
 	SELECT 99,99 FROM DUAL 
 
 BeforeExecute
--- Oracle.21.Managed Oracle.Managed Oracle12 (asynchronously)
+--  Oracle.21.Managed Oracle.Managed Oracle12 (asynchronously)
 
 SELECT
 	t1."Id",
@@ -157,7 +157,7 @@ FROM
 	"UseAlternativeBulkCopy" t1
 
 BeforeExecute
--- Oracle.21.Managed Oracle.Managed Oracle12 (asynchronously)
+--  Oracle.21.Managed Oracle.Managed Oracle12 (asynchronously)
 
 DROP TABLE "UseAlternativeBulkCopy"
 

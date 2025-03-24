@@ -1,11 +1,11 @@
 ﻿BeforeExecute
--- Oracle.21.Managed Oracle.Managed Oracle12
+--  Oracle.21.Managed Oracle.Managed Oracle12
 
 DELETE FROM
 	LINQDATATYPESBC t1
 
 BeforeExecute
--- Oracle.21.Managed Oracle.Managed Oracle12
+--  Oracle.21.Managed Oracle.Managed Oracle12
 
 INSERT ALL
 	INTO LINQDATATYPESBC (ID, MONEYVALUE, DATETIMEVALUE, DATETIMEVALUE2, BOOLVALUE, GUIDVALUE, SMALLINTVALUE, INTVALUE, BIGINTVALUE, STRINGVALUE) VALUES (1003,0,NULL,NULL,1,HEXTORAW('659112EFFE6FF94DBB6BBB16E413C883'),NULL,NULL,NULL,NULL)
@@ -15,7 +15,7 @@ INSERT ALL
 SELECT * FROM dual
 
 BeforeExecute
--- Oracle.21.Managed Oracle.Managed Oracle12
+--  Oracle.21.Managed Oracle.Managed Oracle12
 
 DELETE FROM
 	LINQDATATYPESBC t1

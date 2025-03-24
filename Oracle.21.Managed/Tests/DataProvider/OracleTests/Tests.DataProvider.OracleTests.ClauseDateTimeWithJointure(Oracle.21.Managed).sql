@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Oracle.21.Managed Oracle.Managed Oracle12
+--  Oracle.21.Managed Oracle.Managed Oracle12
 DECLARE @date_1 Date
 SET     @date_1 = TIMESTAMP '2020-02-29 00:00:00.000000'
 
