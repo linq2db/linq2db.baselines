@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2016.MS SqlServer.2016
+--  SqlServer.2016.MS SqlServer.2016
 
 SELECT TOP (1)
 	[t1].[file_id],
@@ -35,7 +35,7 @@ FROM
 	[sys].[database_files] [t1]
 
 BeforeExecute
--- SqlServer.2016.MS SqlServer.2016
+--  SqlServer.2016.MS SqlServer.2016
 DECLARE @Name NVarChar(4000) -- String
 SET     @Name = N'TestDataMS'
 

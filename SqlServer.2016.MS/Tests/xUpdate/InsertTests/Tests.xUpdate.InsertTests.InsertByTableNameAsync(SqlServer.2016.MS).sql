@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2016.MS SqlServer.2016 (asynchronously)
+--  SqlServer.2016.MS SqlServer.2016 (asynchronously)
 
 CREATE TABLE [xxPerson]
 (
@@ -13,7 +13,7 @@ CREATE TABLE [xxPerson]
 )
 
 BeforeExecute
--- SqlServer.2016.MS SqlServer.2016 (asynchronously)
+--  SqlServer.2016.MS SqlServer.2016 (asynchronously)
 DECLARE @FirstName NVarChar(4000) -- String
 SET     @FirstName = N'Steven'
 DECLARE @LastName NVarChar(4000) -- String
@@ -39,35 +39,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2016.MS SqlServer.2016 (asynchronously)
-DECLARE @FirstName NVarChar(4000) -- String
-SET     @FirstName = N'Steven'
-DECLARE @LastName NVarChar(4000) -- String
-SET     @LastName = N'King'
-DECLARE @MiddleName NVarChar(4000) -- String
-SET     @MiddleName = NULL
-DECLARE @Gender Char(1) -- AnsiStringFixedLength
-SET     @Gender = N'M'
-
-INSERT INTO [xxPerson]
-(
-	[FirstName],
-	[LastName],
-	[MiddleName],
-	[Gender]
-)
-VALUES
-(
-	@FirstName,
-	@LastName,
-	@MiddleName,
-	@Gender
-)
-
-SELECT SCOPE_IDENTITY()
-
-BeforeExecute
--- SqlServer.2016.MS SqlServer.2016 (asynchronously)
+--  SqlServer.2016.MS SqlServer.2016 (asynchronously)
 DECLARE @FirstName NVarChar(4000) -- String
 SET     @FirstName = N'Steven'
 DECLARE @LastName NVarChar(4000) -- String
@@ -95,7 +67,35 @@ VALUES
 SELECT SCOPE_IDENTITY()
 
 BeforeExecute
--- SqlServer.2016.MS SqlServer.2016 (asynchronously)
+--  SqlServer.2016.MS SqlServer.2016 (asynchronously)
+DECLARE @FirstName NVarChar(4000) -- String
+SET     @FirstName = N'Steven'
+DECLARE @LastName NVarChar(4000) -- String
+SET     @LastName = N'King'
+DECLARE @MiddleName NVarChar(4000) -- String
+SET     @MiddleName = NULL
+DECLARE @Gender Char(1) -- AnsiStringFixedLength
+SET     @Gender = N'M'
+
+INSERT INTO [xxPerson]
+(
+	[FirstName],
+	[LastName],
+	[MiddleName],
+	[Gender]
+)
+VALUES
+(
+	@FirstName,
+	@LastName,
+	@MiddleName,
+	@Gender
+)
+
+SELECT SCOPE_IDENTITY()
+
+BeforeExecute
+--  SqlServer.2016.MS SqlServer.2016 (asynchronously)
 
 SELECT
 	COUNT(*)
@@ -103,7 +103,7 @@ FROM
 	[xxPerson] [t1]
 
 BeforeExecute
--- SqlServer.2016.MS SqlServer.2016 (asynchronously)
+--  SqlServer.2016.MS SqlServer.2016 (asynchronously)
 
 SELECT
 	COUNT(*)
@@ -114,12 +114,12 @@ WHERE
 	[p].[Gender] = 'M'
 
 BeforeExecute
--- SqlServer.2016.MS SqlServer.2016 (asynchronously)
+--  SqlServer.2016.MS SqlServer.2016 (asynchronously)
 
 DROP TABLE [xxPerson]
 
 BeforeExecute
--- SqlServer.2016.MS SqlServer.2016 (asynchronously)
+--  SqlServer.2016.MS SqlServer.2016 (asynchronously)
 
 DROP TABLE IF EXISTS [xxPerson]
 

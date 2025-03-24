@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2016
+--  SqlServer.2016
 
 INSERT INTO [Issue1373Tests]
 (
@@ -13,7 +13,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2016
+--  SqlServer.2016
 
 INSERT INTO [Issue1373Tests]
 (
@@ -27,7 +27,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2016
+--  SqlServer.2016
 DECLARE @Field1 NVarChar(4000) -- String
 SET     @Field1 = N'test'
 
@@ -43,7 +43,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2016
+--  SqlServer.2016
 
 SELECT
 	[t1].[Id],

@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 BeginTransaction(RepeatableRead)
 BeforeExecute
--- SqlServer.2016.MS SqlServer.2016
+--  SqlServer.2016.MS SqlServer.2016
 
 WITH [CTE_1] ([Id])
 AS
@@ -48,7 +48,7 @@ FROM
 BeforeExecute
 DisposeTransaction
 BeforeExecute
--- SqlServer.2016.MS SqlServer.2016
+--  SqlServer.2016.MS SqlServer.2016
 
 WITH [CTE_1]
 (

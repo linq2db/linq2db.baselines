@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2016
+--  SqlServer.2016
 
 SELECT
 	[s].[ParentID],
@@ -15,7 +15,7 @@ WHERE
 BeforeExecute
 BeginTransaction(RepeatableRead)
 BeforeExecute
--- SqlServer.2016
+--  SqlServer.2016
 
 SELECT
 	[m_1].[ParentID],
@@ -33,7 +33,7 @@ FROM
 BeforeExecute
 DisposeTransaction
 BeforeExecute
--- SqlServer.2016
+--  SqlServer.2016
 
 SELECT
 	[t1].[ParentID],

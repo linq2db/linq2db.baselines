@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2016
+--  SqlServer.2016
 
 SELECT
 	[p].[FirstName],
@@ -13,7 +13,7 @@ WHERE
 	[p].[PersonID] = 1
 
 BeforeExecute
--- SqlServer.2016
+--  SqlServer.2016
 DECLARE @id Int -- Int32
 SET     @id = 1
 

@@ -1,12 +1,12 @@
 ﻿BeforeExecute
--- SqlServer.2016.MS SqlServer.2016
+--  SqlServer.2016.MS SqlServer.2016
 
 DBCC CHECKIDENT ('Person', RESEED, 4)
 
 BeforeExecute
 BeginTransaction
 BeforeExecute
--- SqlServer.2016.MS SqlServer.2016
+--  SqlServer.2016.MS SqlServer.2016
 
 MERGE INTO [Person] [Target]
 USING (
@@ -30,7 +30,7 @@ WHEN NOT MATCHED BY SOURCE AND (
 ;
 
 BeforeExecute
--- SqlServer.2016.MS SqlServer.2016
+--  SqlServer.2016.MS SqlServer.2016
 
 SELECT
 	[t1].[FirstName],

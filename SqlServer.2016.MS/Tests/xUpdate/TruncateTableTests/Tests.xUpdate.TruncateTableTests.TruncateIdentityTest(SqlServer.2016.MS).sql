@@ -1,10 +1,10 @@
 ﻿BeforeExecute
--- SqlServer.2016.MS SqlServer.2016
+--  SqlServer.2016.MS SqlServer.2016
 
 DROP TABLE IF EXISTS [TestIdTrun]
 
 BeforeExecute
--- SqlServer.2016.MS SqlServer.2016
+--  SqlServer.2016.MS SqlServer.2016
 
 CREATE TABLE [TestIdTrun]
 (
@@ -15,7 +15,7 @@ CREATE TABLE [TestIdTrun]
 )
 
 BeforeExecute
--- SqlServer.2016.MS SqlServer.2016
+--  SqlServer.2016.MS SqlServer.2016
 
 INSERT INTO [TestIdTrun]
 (
@@ -27,7 +27,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2016.MS SqlServer.2016
+--  SqlServer.2016.MS SqlServer.2016
 
 INSERT INTO [TestIdTrun]
 (
@@ -39,7 +39,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2016.MS SqlServer.2016
+--  SqlServer.2016.MS SqlServer.2016
 DECLARE @skip Int -- Int32
 SET     @skip = 1
 
@@ -53,12 +53,12 @@ ORDER BY
 OFFSET @skip ROWS FETCH NEXT 2 ROWS ONLY 
 
 BeforeExecute
--- SqlServer.2016.MS SqlServer.2016
+--  SqlServer.2016.MS SqlServer.2016
 
 TRUNCATE TABLE [TestIdTrun]
 
 BeforeExecute
--- SqlServer.2016.MS SqlServer.2016
+--  SqlServer.2016.MS SqlServer.2016
 
 INSERT INTO [TestIdTrun]
 (
@@ -70,7 +70,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2016.MS SqlServer.2016
+--  SqlServer.2016.MS SqlServer.2016
 
 INSERT INTO [TestIdTrun]
 (
@@ -82,7 +82,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2016.MS SqlServer.2016
+--  SqlServer.2016.MS SqlServer.2016
 DECLARE @skip Int -- Int32
 SET     @skip = 1
 
@@ -96,7 +96,7 @@ ORDER BY
 OFFSET @skip ROWS FETCH NEXT 2 ROWS ONLY 
 
 BeforeExecute
--- SqlServer.2016.MS SqlServer.2016
+--  SqlServer.2016.MS SqlServer.2016
 
 DROP TABLE [TestIdTrun]
 

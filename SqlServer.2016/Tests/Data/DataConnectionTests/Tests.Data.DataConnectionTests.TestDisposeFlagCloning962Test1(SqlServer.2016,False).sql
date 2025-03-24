@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 BeginTransaction(RepeatableRead)
 BeforeExecute
--- SqlServer.2016
+--  SqlServer.2016
 
 SELECT
 	[m_1].[CategoryID],
@@ -16,7 +16,7 @@ FROM
 BeforeExecute
 DisposeTransaction
 BeforeExecute
--- SqlServer.2016
+--  SqlServer.2016
 
 SELECT
 	[t1].[CategoryID],

@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2016.MS SqlServer.2016
+--  SqlServer.2016.MS SqlServer.2016
 
 CREATE TABLE [tempdb]..[#TableWithData_output]
 (
@@ -9,7 +9,7 @@ CREATE TABLE [tempdb]..[#TableWithData_output]
 )
 
 BeforeExecute
--- SqlServer.2016.MS SqlServer.2016 (asynchronously)
+--  SqlServer.2016.MS SqlServer.2016 (asynchronously)
 
 INSERT INTO [TableWithData_source]
 (
@@ -35,7 +35,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2016.MS SqlServer.2016
+--  SqlServer.2016.MS SqlServer.2016
 
 SELECT
 	[t1].[Id],
@@ -45,7 +45,7 @@ FROM
 	[TableWithData_source] [t1]
 
 BeforeExecute
--- SqlServer.2016.MS SqlServer.2016
+--  SqlServer.2016.MS SqlServer.2016
 
 SELECT
 	[t1].[Id],
@@ -55,7 +55,7 @@ FROM
 	[tempdb]..[#TableWithData_output] [t1]
 
 BeforeExecute
--- SqlServer.2016.MS SqlServer.2016
+--  SqlServer.2016.MS SqlServer.2016
 
 DROP TABLE IF EXISTS [tempdb]..[#TableWithData_output]
 

@@ -1,10 +1,10 @@
 ﻿BeforeExecute
--- SqlServer.2016
+--  SqlServer.2016
 
 DROP TABLE IF EXISTS [TestTrun]
 
 BeforeExecute
--- SqlServer.2016
+--  SqlServer.2016
 
 CREATE TABLE [TestTrun]
 (
@@ -15,12 +15,12 @@ CREATE TABLE [TestTrun]
 )
 
 BeforeExecute
--- SqlServer.2016
+--  SqlServer.2016
 
 TRUNCATE TABLE [TestTrun]
 
 BeforeExecute
--- SqlServer.2016
+--  SqlServer.2016
 
 DROP TABLE [TestTrun]
 

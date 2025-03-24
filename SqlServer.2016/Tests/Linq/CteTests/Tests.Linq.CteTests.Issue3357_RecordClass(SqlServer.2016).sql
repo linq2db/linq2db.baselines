@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2016
+--  SqlServer.2016
 
 WITH [cte] ([Id], [FirstName], [LastName])
 AS

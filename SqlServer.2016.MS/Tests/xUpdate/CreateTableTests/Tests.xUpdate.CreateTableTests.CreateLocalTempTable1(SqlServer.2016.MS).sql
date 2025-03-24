@@ -1,10 +1,10 @@
 ﻿BeforeExecute
--- SqlServer.2016.MS SqlServer.2016
+--  SqlServer.2016.MS SqlServer.2016
 
 DROP TABLE [tempdb]..[#TestTable]
 
 BeforeExecute
--- SqlServer.2016.MS SqlServer.2016
+--  SqlServer.2016.MS SqlServer.2016
 
 CREATE TABLE [tempdb]..[#TestTable]
 (
@@ -15,7 +15,7 @@ CREATE TABLE [tempdb]..[#TestTable]
 )
 
 BeforeExecute
--- SqlServer.2016.MS SqlServer.2016
+--  SqlServer.2016.MS SqlServer.2016
 
 SELECT
 	[t1].[ID],
@@ -26,7 +26,7 @@ FROM
 	[tempdb]..[#TestTable] [t1]
 
 BeforeExecute
--- SqlServer.2016.MS SqlServer.2016
+--  SqlServer.2016.MS SqlServer.2016
 
 DROP TABLE [tempdb]..[#TestTable]
 

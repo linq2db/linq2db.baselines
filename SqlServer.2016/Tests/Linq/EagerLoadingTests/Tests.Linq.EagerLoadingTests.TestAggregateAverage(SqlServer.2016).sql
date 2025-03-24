@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2016
+--  SqlServer.2016
 
 SELECT
 	[t3].[AVG_1]
@@ -39,7 +39,7 @@ WHERE
 BeforeExecute
 BeginTransaction(RepeatableRead)
 BeforeExecute
--- SqlServer.2016
+--  SqlServer.2016
 
 SELECT
 	[m_1].[Id1],
@@ -58,7 +58,7 @@ FROM
 BeforeExecute
 DisposeTransaction
 BeforeExecute
--- SqlServer.2016
+--  SqlServer.2016
 
 SELECT
 	[t1].[Id1],

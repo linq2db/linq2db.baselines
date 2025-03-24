@@ -1,10 +1,10 @@
 ﻿BeforeExecute
--- SqlServer.2016.MS SqlServer.2016
+--  SqlServer.2016.MS SqlServer.2016
 
 DBCC CHECKIDENT ('AllTypes', RESEED, 2)
 
 BeforeExecute
--- SqlServer.2016.MS SqlServer.2016
+--  SqlServer.2016.MS SqlServer.2016
 DECLARE @Value Int -- Int32
 SET     @Value = 0
 
@@ -23,7 +23,7 @@ BeforeExecute
 INSERT ASYNC BULK [AllTypes](intDataType)
 
 BeforeExecute
--- SqlServer.2016.MS SqlServer.2016
+--  SqlServer.2016.MS SqlServer.2016
 DECLARE @lastId Int -- Int32
 SET     @lastId = 3
 
@@ -38,7 +38,7 @@ ORDER BY
 	[t1].[ID]
 
 BeforeExecute
--- SqlServer.2016.MS SqlServer.2016
+--  SqlServer.2016.MS SqlServer.2016
 DECLARE @lastId Int -- Int32
 SET     @lastId = 3
 

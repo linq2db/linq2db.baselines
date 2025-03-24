@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 BeginTransaction(RepeatableRead)
 BeforeExecute
--- SqlServer.2016
+--  SqlServer.2016
 
 SELECT
 	[m_1].[ParentID],
@@ -20,7 +20,7 @@ FROM
 		LEFT JOIN [Parent] [a_Parent] ON [d].[ParentID] = [a_Parent].[ParentID]
 
 BeforeExecute
--- SqlServer.2016
+--  SqlServer.2016
 
 SELECT TOP (1)
 	[t].[ParentID],

@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2016.MS SqlServer.2016
+--  SqlServer.2016.MS SqlServer.2016
 
 DELETE [p]
 FROM
@@ -8,7 +8,7 @@ WHERE
 	[p].[ParentID] > 1000
 
 BeforeExecute
--- SqlServer.2016.MS SqlServer.2016
+--  SqlServer.2016.MS SqlServer.2016
 
 INSERT INTO [Parent]
 (
@@ -34,7 +34,7 @@ FROM
 	) [t1]
 
 BeforeExecute
--- SqlServer.2016.MS SqlServer.2016
+--  SqlServer.2016.MS SqlServer.2016
 
 SELECT
 	COUNT(*)
@@ -44,7 +44,7 @@ WHERE
 	[c_1].[ParentID] > 1000
 
 BeforeExecute
--- SqlServer.2016.MS SqlServer.2016
+--  SqlServer.2016.MS SqlServer.2016
 
 DELETE [p]
 FROM

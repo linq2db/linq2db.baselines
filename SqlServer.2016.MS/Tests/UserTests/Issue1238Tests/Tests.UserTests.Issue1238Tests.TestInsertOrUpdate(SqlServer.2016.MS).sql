@@ -1,14 +1,14 @@
 ﻿BeforeExecute
 BeginTransaction
 BeforeExecute
--- SqlServer.2016.MS SqlServer.2016
+--  SqlServer.2016.MS SqlServer.2016
 
 DELETE [t1]
 FROM
 	[InheritanceParent] [t1]
 
 BeforeExecute
--- SqlServer.2016.MS SqlServer.2016
+--  SqlServer.2016.MS SqlServer.2016
 
 MERGE INTO [InheritanceParent] [t1]
 USING (SELECT 143 AS [InheritanceParentId], NULL AS [Name]) [s] ON
@@ -35,7 +35,7 @@ WHEN NOT MATCHED THEN
 	);
 
 BeforeExecute
--- SqlServer.2016.MS SqlServer.2016
+--  SqlServer.2016.MS SqlServer.2016
 
 SELECT
 	COUNT(*)
@@ -43,7 +43,7 @@ FROM
 	[InheritanceParent] [t1]
 
 BeforeExecute
--- SqlServer.2016.MS SqlServer.2016
+--  SqlServer.2016.MS SqlServer.2016
 
 MERGE INTO [InheritanceParent] [t1]
 USING (SELECT 143 AS [InheritanceParentId], NULL AS [Name]) [s] ON
@@ -70,7 +70,7 @@ WHEN NOT MATCHED THEN
 	);
 
 BeforeExecute
--- SqlServer.2016.MS SqlServer.2016
+--  SqlServer.2016.MS SqlServer.2016
 
 SELECT
 	COUNT(*)

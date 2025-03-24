@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2016.MS SqlServer.2016
+--  SqlServer.2016.MS SqlServer.2016
 DECLARE @take Int -- Int32
 SET     @take = 2
 DECLARE @int1 Int -- Int32
@@ -24,7 +24,7 @@ WHERE
 	[t].[id] <> @someId
 
 BeforeExecute
--- SqlServer.2016.MS SqlServer.2016
+--  SqlServer.2016.MS SqlServer.2016
 
 SELECT
 	[v].[id],

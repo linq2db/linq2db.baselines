@@ -1,12 +1,12 @@
 ﻿BeforeExecute
--- SqlServer.2016.MS SqlServer.2016
+--  SqlServer.2016.MS SqlServer.2016
 
 DBCC CHECKIDENT ('Person', RESEED, 4)
 
 BeforeExecute
 BeginTransaction
 BeforeExecute
--- SqlServer.2016.MS SqlServer.2016
+--  SqlServer.2016.MS SqlServer.2016
 
 SELECT
 	MAX([t1].[PersonID])
@@ -14,7 +14,7 @@ FROM
 	[Person] [t1]
 
 BeforeExecute
--- SqlServer.2016.MS SqlServer.2016
+--  SqlServer.2016.MS SqlServer.2016
 
 MERGE INTO [Person] [Target]
 USING (
@@ -55,7 +55,7 @@ VALUES
 ;
 
 BeforeExecute
--- SqlServer.2016.MS SqlServer.2016
+--  SqlServer.2016.MS SqlServer.2016
 
 SELECT
 	[t1].[FirstName],

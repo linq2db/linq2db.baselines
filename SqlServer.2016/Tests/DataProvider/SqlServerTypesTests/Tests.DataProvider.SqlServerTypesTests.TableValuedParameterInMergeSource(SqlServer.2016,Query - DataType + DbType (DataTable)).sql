@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2016
+--  SqlServer.2016
 
 CREATE TABLE [tempdb]..[#TestMergeTVPTable]
 (
@@ -8,7 +8,7 @@ CREATE TABLE [tempdb]..[#TestMergeTVPTable]
 )
 
 BeforeExecute
--- SqlServer.2016
+--  SqlServer.2016
 DECLARE @p [dbo].[TestTableType] -- Structured -- Object
 SET     @p = 
 
@@ -42,7 +42,7 @@ VALUES
 ;
 
 BeforeExecute
--- SqlServer.2016
+--  SqlServer.2016
 
 SELECT
 	[t1].[Id],
@@ -53,7 +53,7 @@ ORDER BY
 	[t1].[Id]
 
 BeforeExecute
--- SqlServer.2016
+--  SqlServer.2016
 
 DROP TABLE IF EXISTS [tempdb]..[#TestMergeTVPTable]
 

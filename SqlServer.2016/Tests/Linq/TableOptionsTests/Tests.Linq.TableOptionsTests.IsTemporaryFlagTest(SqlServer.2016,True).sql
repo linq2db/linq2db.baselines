@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2016
+--  SqlServer.2016
 
 CREATE TABLE [tempdb].[TestSchema].[#IsTemporaryTable]
 (
@@ -8,7 +8,7 @@ CREATE TABLE [tempdb].[TestSchema].[#IsTemporaryTable]
 )
 
 BeforeExecute
--- SqlServer.2016
+--  SqlServer.2016
 
 SELECT
 	[t1].[Id],
@@ -17,7 +17,7 @@ FROM
 	[tempdb].[TestSchema].[#IsTemporaryTable] [t1]
 
 BeforeExecute
--- SqlServer.2016
+--  SqlServer.2016
 
 DROP TABLE IF EXISTS [tempdb].[TestSchema].[#IsTemporaryTable]
 

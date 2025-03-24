@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2016
+--  SqlServer.2016
 
 SELECT
 	[m_1].[ParentID],
@@ -17,7 +17,7 @@ FROM
 		INNER JOIN [Child] [d] ON [m_1].[ParentID] = [d].[ParentID]
 
 BeforeExecute
--- SqlServer.2016
+--  SqlServer.2016
 
 SELECT TOP (1)
 	[x].[ParentID],
@@ -30,7 +30,7 @@ WHERE
 BeforeExecute
 BeginTransaction(RepeatableRead)
 BeforeExecute
--- SqlServer.2016
+--  SqlServer.2016
 
 SELECT
 	[m_1].[ParentID],
@@ -48,7 +48,7 @@ FROM
 		INNER JOIN [Child] [d] ON [m_1].[ParentID] = [d].[ParentID]
 
 BeforeExecute
--- SqlServer.2016
+--  SqlServer.2016
 
 SELECT TOP (1)
 	[x].[ParentID],
@@ -63,7 +63,7 @@ DisposeTransaction
 BeforeExecute
 BeginTransaction(RepeatableRead)
 BeforeExecute
--- SqlServer.2016
+--  SqlServer.2016
 
 SELECT
 	[m_1].[ParentID],
@@ -81,7 +81,7 @@ FROM
 		INNER JOIN [Child] [d] ON [m_1].[ParentID] = [d].[ParentID]
 
 BeforeExecute
--- SqlServer.2016
+--  SqlServer.2016
 
 SELECT TOP (1)
 	[x].[ParentID],

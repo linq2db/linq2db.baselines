@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2016
+--  SqlServer.2016
 
 SELECT
 	[m_1].[Id],
@@ -32,7 +32,7 @@ FROM
 		INNER JOIN [LineEntity] [d] ON [m_1].[Id] = [d].[TransactionId]
 
 BeforeExecute
--- SqlServer.2016
+--  SqlServer.2016
 
 SELECT
 	[x].[Id],

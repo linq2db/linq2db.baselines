@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2016
+--  SqlServer.2016
 
 MERGE INTO [TestNullableParameterTarget] [Target]
 USING (
@@ -31,7 +31,7 @@ VALUES
 ;
 
 BeforeExecute
--- SqlServer.2016
+--  SqlServer.2016
 DECLARE @id Int -- Int32
 SET     @id = 1
 

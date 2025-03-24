@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 BeginTransaction(RepeatableRead)
 BeforeExecute
--- SqlServer.2016
+--  SqlServer.2016
 DECLARE @p NChar(1) -- StringFixedLength
 SET     @p = N','
 
@@ -29,7 +29,7 @@ FROM
 BeforeExecute
 DisposeTransaction
 BeforeExecute
--- SqlServer.2016
+--  SqlServer.2016
 DECLARE @p NChar(1) -- StringFixedLength
 SET     @p = N','
 

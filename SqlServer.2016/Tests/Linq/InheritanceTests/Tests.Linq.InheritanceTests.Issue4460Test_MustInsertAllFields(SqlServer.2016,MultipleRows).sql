@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2016
+--  SqlServer.2016
 
 INSERT INTO [Issue4460Table]
 (
@@ -12,7 +12,7 @@ VALUES
 (1,N'GrandChild',N'Tom',N'Black')
 
 BeforeExecute
--- SqlServer.2016
+--  SqlServer.2016
 
 SELECT
 	[t1].[Code],

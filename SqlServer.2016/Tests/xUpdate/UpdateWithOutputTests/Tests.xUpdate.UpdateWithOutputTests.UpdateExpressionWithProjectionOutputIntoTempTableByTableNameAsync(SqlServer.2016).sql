@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2016
+--  SqlServer.2016
 
 CREATE TABLE [tempdb]..[#TableWithData_destination]
 (
@@ -9,7 +9,7 @@ CREATE TABLE [tempdb]..[#TableWithData_destination]
 )
 
 BeforeExecute
--- SqlServer.2016 (asynchronously)
+--  SqlServer.2016 (asynchronously)
 
 UPDATE
 	[t]
@@ -32,7 +32,7 @@ FROM
 		INNER JOIN [DestinationTable_target] [t] ON [t].[Id] = [s].[Id]
 
 BeforeExecute
--- SqlServer.2016
+--  SqlServer.2016
 
 SELECT
 	[t1].[Id],
@@ -42,7 +42,7 @@ FROM
 	[tempdb]..[#TableWithData_destination] [t1]
 
 BeforeExecute
--- SqlServer.2016
+--  SqlServer.2016
 
 DROP TABLE IF EXISTS [tempdb]..[#TableWithData_destination]
 

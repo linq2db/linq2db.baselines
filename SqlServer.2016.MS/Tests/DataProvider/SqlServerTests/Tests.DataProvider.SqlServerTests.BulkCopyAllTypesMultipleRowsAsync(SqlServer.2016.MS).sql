@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2016.MS SqlServer.2016 (asynchronously)
+--  SqlServer.2016.MS SqlServer.2016 (asynchronously)
 
 DELETE [p]
 FROM
@@ -8,12 +8,12 @@ WHERE
 	[p].[ID] >= 700
 
 BeforeExecute
--- SqlServer.2016.MS SqlServer.2016 (asynchronously)
+--  SqlServer.2016.MS SqlServer.2016 (asynchronously)
 
 SET IDENTITY_INSERT [AllTypes] ON
 
 BeforeExecute
--- SqlServer.2016.MS SqlServer.2016 (asynchronously)
+--  SqlServer.2016.MS SqlServer.2016 (asynchronously)
 
 INSERT INTO [AllTypes]
 (
@@ -64,12 +64,12 @@ VALUES
 (701,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
 
 BeforeExecute
--- SqlServer.2016.MS SqlServer.2016 (asynchronously)
+--  SqlServer.2016.MS SqlServer.2016 (asynchronously)
 
 SET IDENTITY_INSERT [AllTypes] OFF
 
 BeforeExecute
--- SqlServer.2016.MS SqlServer.2016
+--  SqlServer.2016.MS SqlServer.2016
 
 SELECT
 	[t].[ID],
@@ -122,7 +122,7 @@ ORDER BY
 	[t].[ID]
 
 BeforeExecute
--- SqlServer.2016.MS SqlServer.2016 (asynchronously)
+--  SqlServer.2016.MS SqlServer.2016 (asynchronously)
 
 DELETE [p]
 FROM

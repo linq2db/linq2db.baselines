@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2016.MS SqlServer.2016
+--  SqlServer.2016.MS SqlServer.2016
 
 CREATE TABLE [tempdb]..[#TableWithData_destination]
 (
@@ -9,7 +9,7 @@ CREATE TABLE [tempdb]..[#TableWithData_destination]
 )
 
 BeforeExecute
--- SqlServer.2016.MS SqlServer.2016
+--  SqlServer.2016.MS SqlServer.2016
 
 UPDATE
 	[TableWithData_source]
@@ -31,7 +31,7 @@ WHERE
 	[TableWithData_source].[Id] > 3
 
 BeforeExecute
--- SqlServer.2016.MS SqlServer.2016
+--  SqlServer.2016.MS SqlServer.2016
 
 SELECT
 	[t1].[Id],
@@ -41,7 +41,7 @@ FROM
 	[tempdb]..[#TableWithData_destination] [t1]
 
 BeforeExecute
--- SqlServer.2016.MS SqlServer.2016
+--  SqlServer.2016.MS SqlServer.2016
 
 DROP TABLE IF EXISTS [tempdb]..[#TableWithData_destination]
 

@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2016
+--  SqlServer.2016
 
 SELECT
 	[g_2].[Key_1]
@@ -14,7 +14,7 @@ GROUP BY
 	[g_2].[Key_1]
 
 BeforeExecute
--- SqlServer.2016
+--  SqlServer.2016
 
 SELECT DISTINCT
 	CAST([r].[dt] AS Time)

@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2016.MS SqlServer.2016
+--  SqlServer.2016.MS SqlServer.2016
 DECLARE @Id Int -- Int32
 SET     @Id = 1
 DECLARE @Name NVarChar(4000) -- String
@@ -17,7 +17,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2016.MS SqlServer.2016
+--  SqlServer.2016.MS SqlServer.2016
 
 SELECT TOP (1)
 	[t].[Id],

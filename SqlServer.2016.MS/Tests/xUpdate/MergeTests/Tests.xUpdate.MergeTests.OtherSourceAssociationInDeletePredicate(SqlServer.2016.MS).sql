@@ -1,12 +1,12 @@
 ﻿BeforeExecute
--- SqlServer.2016.MS SqlServer.2016
+--  SqlServer.2016.MS SqlServer.2016
 
 DBCC CHECKIDENT ('Person', RESEED, 4)
 
 BeforeExecute
 BeginTransaction
 BeforeExecute
--- SqlServer.2016.MS SqlServer.2016
+--  SqlServer.2016.MS SqlServer.2016
 
 MERGE INTO [Patient] [Target]
 USING (
@@ -34,7 +34,7 @@ WHEN MATCHED AND [Source].[source_Person_FirstName] = N'first 4' AND
 ;
 
 BeforeExecute
--- SqlServer.2016.MS SqlServer.2016
+--  SqlServer.2016.MS SqlServer.2016
 
 SELECT
 	[t1].[PersonID],

@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2016
+--  SqlServer.2016
 
 DELETE [p]
 FROM
@@ -11,7 +11,7 @@ BeforeExecute
 INSERT BULK [AllTypes2](ID, dateDataType, datetimeoffsetDataType, datetime2DataType, timeDataType, hierarchyidDataType, geographyDataType, geometryDataType)
 
 BeforeExecute
--- SqlServer.2016
+--  SqlServer.2016
 
 SELECT
 	[p].[ID],

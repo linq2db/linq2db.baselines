@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 BeginTransaction
 BeforeExecute
--- SqlServer.2016
+--  SqlServer.2016
 
 MERGE INTO [LinqDataTypes] [Target]
 USING (

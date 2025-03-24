@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 BeginTransaction
 BeforeExecute
--- SqlServer.2016
+--  SqlServer.2016
 
 SELECT
 	XACT_STATE()
@@ -9,7 +9,7 @@ SELECT
 BeforeExecute
 RollbackTransaction
 BeforeExecute
--- SqlServer.2016
+--  SqlServer.2016
 
 SELECT
 	XACT_STATE()
