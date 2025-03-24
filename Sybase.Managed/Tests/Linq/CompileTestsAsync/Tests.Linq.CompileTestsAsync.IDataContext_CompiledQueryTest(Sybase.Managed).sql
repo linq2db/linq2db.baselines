@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Sybase.Managed Sybase (asynchronously)
+--  Sybase.Managed Sybase (asynchronously)
 
 SELECT
 	[p].[FirstName],
@@ -13,7 +13,7 @@ WHERE
 	[p].[PersonID] = 1
 
 BeforeExecute
--- Sybase.Managed Sybase (asynchronously)
+--  Sybase.Managed Sybase (asynchronously)
 
 SELECT
 	[p].[FirstName],

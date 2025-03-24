@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Sybase.Managed Sybase
+--  Sybase.Managed Sybase
 
 SELECT
 	[pmp].[ParentID]
@@ -9,7 +9,7 @@ GROUP BY
 	[pmp].[ParentID]
 
 BeforeExecute
--- Sybase.Managed Sybase
+--  Sybase.Managed Sybase
 
 SELECT
 	[t1].[ParentID],

@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Sybase.Managed Sybase
+--  Sybase.Managed Sybase
 
 DELETE FROM [Person]
 FROM
@@ -8,7 +8,7 @@ WHERE
 	[t1].[PersonID] > 4
 
 BeforeExecute
--- Sybase.Managed Sybase (asynchronously)
+--  Sybase.Managed Sybase (asynchronously)
 DECLARE @FirstName UniVarChar(5) -- String
 SET     @FirstName = 'John0'
 DECLARE @LastName UniVarChar(7) -- String
@@ -36,7 +36,7 @@ VALUES
 SELECT @@IDENTITY
 
 BeforeExecute
--- Sybase.Managed Sybase (asynchronously)
+--  Sybase.Managed Sybase (asynchronously)
 DECLARE @FirstName UniVarChar(5) -- String
 SET     @FirstName = 'John1'
 DECLARE @LastName UniVarChar(7) -- String
@@ -64,7 +64,7 @@ VALUES
 SELECT @@IDENTITY
 
 BeforeExecute
--- Sybase.Managed Sybase
+--  Sybase.Managed Sybase
 
 DELETE FROM [Person]
 FROM

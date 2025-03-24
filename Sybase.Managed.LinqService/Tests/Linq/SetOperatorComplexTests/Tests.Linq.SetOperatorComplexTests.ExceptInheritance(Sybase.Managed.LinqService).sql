@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Sybase.Managed Sybase
+--  Sybase.Managed Sybase
 
 SELECT DISTINCT
 	[t1].[cond],
@@ -41,7 +41,7 @@ WHERE
 	)
 
 BeforeExecute
--- Sybase.Managed Sybase
+--  Sybase.Managed Sybase
 
 SELECT
 	[m_1].[AuthorId],
@@ -56,7 +56,7 @@ FROM
 		LEFT JOIN [Book] [a_Book] ON [d].[FkBookId] = [a_Book].[BookId]
 
 BeforeExecute
--- Sybase.Managed Sybase
+--  Sybase.Managed Sybase
 
 SELECT
 	[t1].[AuthorId],

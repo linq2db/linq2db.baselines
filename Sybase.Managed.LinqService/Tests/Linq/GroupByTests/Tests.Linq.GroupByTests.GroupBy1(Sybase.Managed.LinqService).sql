@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Sybase.Managed Sybase
+--  Sybase.Managed Sybase
 
 SELECT
 	[p_2].[Key_1]

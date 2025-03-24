@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Sybase.Managed Sybase
+--  Sybase.Managed Sybase
 DECLARE @ParentID Integer -- Int32
 SET     @ParentID = 1010
 DECLARE @Value1 Integer -- Int32
@@ -19,7 +19,7 @@ VALUES
 BeforeExecute
 BeginTransaction
 BeforeExecute
--- Sybase.Managed Sybase
+--  Sybase.Managed Sybase
 
 UPDATE
 	[Parent]
@@ -31,7 +31,7 @@ WHERE
 BeforeExecute
 RollbackTransaction
 BeforeExecute
--- Sybase.Managed Sybase
+--  Sybase.Managed Sybase
 
 SELECT TOP 1
 	[t].[ParentID],

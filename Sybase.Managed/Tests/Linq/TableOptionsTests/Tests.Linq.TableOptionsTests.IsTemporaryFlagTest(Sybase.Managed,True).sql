@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Sybase.Managed Sybase
+--  Sybase.Managed Sybase
 
 CREATE TABLE #IsTemporaryTable
 (
@@ -8,7 +8,7 @@ CREATE TABLE #IsTemporaryTable
 )
 
 BeforeExecute
--- Sybase.Managed Sybase
+--  Sybase.Managed Sybase
 
 SELECT
 	[t1].[Id],
@@ -17,7 +17,7 @@ FROM
 	#IsTemporaryTable [t1]
 
 BeforeExecute
--- Sybase.Managed Sybase
+--  Sybase.Managed Sybase
 
 IF (OBJECT_ID(N'#IsTemporaryTable') IS NOT NULL)
 	DROP TABLE #IsTemporaryTable

@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Sybase.Managed Sybase
+--  Sybase.Managed Sybase
 
 INSERT INTO [Issue1403Tests_3]
 (
@@ -13,7 +13,7 @@ VALUES
 )
 
 BeforeExecute
--- Sybase.Managed Sybase
+--  Sybase.Managed Sybase
 
 SELECT TOP 1
 	[t1].[event_id],

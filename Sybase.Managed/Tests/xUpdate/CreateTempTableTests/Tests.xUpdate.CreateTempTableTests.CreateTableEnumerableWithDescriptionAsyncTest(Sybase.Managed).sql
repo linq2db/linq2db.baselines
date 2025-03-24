@@ -1,11 +1,11 @@
 ﻿BeforeExecute
--- Sybase.Managed Sybase (asynchronously)
+--  Sybase.Managed Sybase (asynchronously)
 
 IF (OBJECT_ID(N'TempTable') IS NOT NULL)
 	DROP TABLE [TempTable]
 
 BeforeExecute
--- Sybase.Managed Sybase (asynchronously)
+--  Sybase.Managed Sybase (asynchronously)
 
 IF (OBJECT_ID(N'TempTable') IS NULL)
 	EXECUTE('
@@ -16,7 +16,7 @@ IF (OBJECT_ID(N'TempTable') IS NULL)
 	')
 
 BeforeExecute
--- Sybase.Managed Sybase (asynchronously)
+--  Sybase.Managed Sybase (asynchronously)
 
 INSERT INTO [TempTable]
 (
@@ -25,7 +25,7 @@ INSERT INTO [TempTable]
 SELECT 'John'
 
 BeforeExecute
--- Sybase.Managed Sybase (asynchronously)
+--  Sybase.Managed Sybase (asynchronously)
 
 SELECT
 	[t].[Name]
@@ -34,7 +34,7 @@ FROM
 		INNER JOIN [TempTable] [t] ON [p].[FirstName] = [t].[Name]
 
 BeforeExecute
--- Sybase.Managed Sybase (asynchronously)
+--  Sybase.Managed Sybase (asynchronously)
 
 IF (OBJECT_ID(N'TempTable') IS NOT NULL)
 	DROP TABLE [TempTable]

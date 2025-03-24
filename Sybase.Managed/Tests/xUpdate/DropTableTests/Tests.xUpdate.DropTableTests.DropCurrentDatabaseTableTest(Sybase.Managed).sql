@@ -1,11 +1,11 @@
 ﻿BeforeExecute
--- Sybase.Managed Sybase
+--  Sybase.Managed Sybase
 
 IF (OBJECT_ID(N'DropTableTest') IS NOT NULL)
 	DROP TABLE [DropTableTest]
 
 BeforeExecute
--- Sybase.Managed Sybase
+--  Sybase.Managed Sybase
 
 CREATE TABLE [DropTableTest]
 (
@@ -13,7 +13,7 @@ CREATE TABLE [DropTableTest]
 )
 
 BeforeExecute
--- Sybase.Managed Sybase
+--  Sybase.Managed Sybase
 
 INSERT INTO [DropTableTest]
 (
@@ -25,7 +25,7 @@ VALUES
 )
 
 BeforeExecute
--- Sybase.Managed Sybase
+--  Sybase.Managed Sybase
 
 SELECT
 	[t1].[ID]
@@ -33,12 +33,12 @@ FROM
 	[DropTableTest] [t1]
 
 BeforeExecute
--- Sybase.Managed Sybase
+--  Sybase.Managed Sybase
 
 DROP TABLE [DropTableTest]
 
 BeforeExecute
--- Sybase.Managed Sybase
+--  Sybase.Managed Sybase
 
 SELECT
 	[t1].[ID]

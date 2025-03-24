@@ -1,10 +1,10 @@
 ﻿BeforeExecute
--- Sybase.Managed Sybase
+--  Sybase.Managed Sybase
 
 sp_chgattribute Person, 'identity_burn_max', 0, '4'
 
 BeforeExecute
--- Sybase.Managed Sybase
+--  Sybase.Managed Sybase
 DECLARE @Gender UniChar(1) -- StringFixedLength
 SET     @Gender = 'M'
 DECLARE @Name_FirstName UniVarChar(13) -- String
@@ -32,7 +32,7 @@ VALUES
 SELECT @@IDENTITY
 
 BeforeExecute
--- Sybase.Managed Sybase
+--  Sybase.Managed Sybase
 
 UPDATE
 	[Person]
@@ -42,7 +42,7 @@ WHERE
 	[Person].[FirstName] LIKE 'UpdateComplex%' ESCAPE '~'
 
 BeforeExecute
--- Sybase.Managed Sybase
+--  Sybase.Managed Sybase
 DECLARE @id Integer -- Int32
 SET     @id = 5
 

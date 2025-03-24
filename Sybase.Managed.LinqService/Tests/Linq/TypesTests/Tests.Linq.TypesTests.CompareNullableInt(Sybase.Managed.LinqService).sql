@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Sybase.Managed Sybase
+--  Sybase.Managed Sybase
 
 SELECT
 	[t].[ParentID],
@@ -8,7 +8,7 @@ FROM
 	[Parent] [t]
 
 BeforeExecute
--- Sybase.Managed Sybase
+--  Sybase.Managed Sybase
 DECLARE @param Integer -- Int32
 SET     @param = 1
 

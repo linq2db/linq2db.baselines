@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Sybase.Managed Sybase
+--  Sybase.Managed Sybase
 DECLARE @Id Integer -- Int32
 SET     @Id = 1
 DECLARE @Int32 Integer -- Int32
@@ -17,7 +17,7 @@ VALUES
 )
 
 BeforeExecute
--- Sybase.Managed Sybase
+--  Sybase.Managed Sybase
 DECLARE @Id Integer -- Int32
 SET     @Id = 2
 DECLARE @Int32 Integer -- Int32
@@ -35,7 +35,7 @@ VALUES
 )
 
 BeforeExecute
--- Sybase.Managed Sybase
+--  Sybase.Managed Sybase
 
 SELECT
 	[t1].[Id],

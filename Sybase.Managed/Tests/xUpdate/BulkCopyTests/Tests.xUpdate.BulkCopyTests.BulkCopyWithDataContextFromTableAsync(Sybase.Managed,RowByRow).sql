@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Sybase.Managed Sybase (asynchronously)
+--  Sybase.Managed Sybase (asynchronously)
 
 INSERT INTO [SimpleBulkCopyTable]
 (
@@ -8,7 +8,7 @@ INSERT INTO [SimpleBulkCopyTable]
 SELECT 1
 
 BeforeExecute
--- Sybase.Managed Sybase (asynchronously)
+--  Sybase.Managed Sybase (asynchronously)
 
 INSERT INTO [SimpleBulkCopyTable]
 (
@@ -17,7 +17,7 @@ INSERT INTO [SimpleBulkCopyTable]
 SELECT 2
 
 BeforeExecute
--- Sybase.Managed Sybase (asynchronously)
+--  Sybase.Managed Sybase (asynchronously)
 DECLARE @Id Integer -- Int32
 SET     @Id = 3
 
@@ -31,7 +31,7 @@ VALUES
 )
 
 BeforeExecute
--- Sybase.Managed Sybase (asynchronously)
+--  Sybase.Managed Sybase (asynchronously)
 
 INSERT INTO [SimpleBulkCopyTable]
 (
@@ -40,7 +40,7 @@ INSERT INTO [SimpleBulkCopyTable]
 SELECT 10
 
 BeforeExecute
--- Sybase.Managed Sybase (asynchronously)
+--  Sybase.Managed Sybase (asynchronously)
 
 INSERT INTO [SimpleBulkCopyTable]
 (
@@ -49,7 +49,7 @@ INSERT INTO [SimpleBulkCopyTable]
 SELECT 20
 
 BeforeExecute
--- Sybase.Managed Sybase (asynchronously)
+--  Sybase.Managed Sybase (asynchronously)
 DECLARE @Id Integer -- Int32
 SET     @Id = 30
 

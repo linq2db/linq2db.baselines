@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Sybase.Managed Sybase
+--  Sybase.Managed Sybase
 
 SELECT
 	COUNT(*)
@@ -13,7 +13,7 @@ WHERE
 	'{}' + [p].[LastName] = '{}' + [p].[LastName]
 
 BeforeExecute
--- Sybase.Managed Sybase
+--  Sybase.Managed Sybase
 
 SELECT
 	COUNT(*)

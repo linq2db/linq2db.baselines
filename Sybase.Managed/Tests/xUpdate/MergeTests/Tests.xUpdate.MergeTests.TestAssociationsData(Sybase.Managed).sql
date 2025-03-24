@@ -1,12 +1,12 @@
 ﻿BeforeExecute
--- Sybase.Managed Sybase
+--  Sybase.Managed Sybase
 
 sp_chgattribute Person, 'identity_burn_max', 0, '4'
 
 BeforeExecute
 BeginTransaction
 BeforeExecute
--- Sybase.Managed Sybase
+--  Sybase.Managed Sybase
 
 SELECT
 	[t1].[PersonID],
@@ -17,7 +17,7 @@ ORDER BY
 	[t1].[PersonID]
 
 BeforeExecute
--- Sybase.Managed Sybase
+--  Sybase.Managed Sybase
 
 SELECT
 	[t1].[PersonID],
@@ -28,7 +28,7 @@ ORDER BY
 	[t1].[PersonID]
 
 BeforeExecute
--- Sybase.Managed Sybase
+--  Sybase.Managed Sybase
 
 SELECT
 	[t1].[FirstName],

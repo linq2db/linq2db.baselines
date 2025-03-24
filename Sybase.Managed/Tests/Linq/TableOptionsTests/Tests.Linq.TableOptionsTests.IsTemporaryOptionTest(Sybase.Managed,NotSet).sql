@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Sybase.Managed Sybase
+--  Sybase.Managed Sybase
 
 CREATE TABLE #temp_table1
 (
@@ -8,7 +8,7 @@ CREATE TABLE #temp_table1
 )
 
 BeforeExecute
--- Sybase.Managed Sybase
+--  Sybase.Managed Sybase
 
 INSERT INTO #temp_table1
 (
@@ -18,7 +18,7 @@ INSERT INTO #temp_table1
 SELECT 1,2
 
 BeforeExecute
--- Sybase.Managed Sybase
+--  Sybase.Managed Sybase
 
 CREATE TABLE #temp_table2
 (
@@ -27,7 +27,7 @@ CREATE TABLE #temp_table2
 )
 
 BeforeExecute
--- Sybase.Managed Sybase
+--  Sybase.Managed Sybase
 
 INSERT INTO #temp_table2
 (
@@ -41,7 +41,7 @@ FROM
 	#temp_table1 [t1]
 
 BeforeExecute
--- Sybase.Managed Sybase
+--  Sybase.Managed Sybase
 
 SELECT
 	[t1].[ID],
@@ -50,7 +50,7 @@ FROM
 	#temp_table1 [t1]
 
 BeforeExecute
--- Sybase.Managed Sybase
+--  Sybase.Managed Sybase
 
 SELECT
 	[t1].[ID],
@@ -59,7 +59,7 @@ FROM
 	#temp_table2 [t1]
 
 BeforeExecute
--- Sybase.Managed Sybase
+--  Sybase.Managed Sybase
 
 INSERT INTO #temp_table1
 (
@@ -69,7 +69,7 @@ INSERT INTO #temp_table1
 SELECT 2,3
 
 BeforeExecute
--- Sybase.Managed Sybase
+--  Sybase.Managed Sybase
 DECLARE @ID Integer -- Int32
 SET     @ID = 3
 DECLARE @Value Integer -- Int32
@@ -87,7 +87,7 @@ VALUES
 )
 
 BeforeExecute
--- Sybase.Managed Sybase
+--  Sybase.Managed Sybase
 
 INSERT INTO #temp_table1
 (
@@ -97,23 +97,23 @@ INSERT INTO #temp_table1
 SELECT 4,5
 
 BeforeExecute
--- Sybase.Managed Sybase
+--  Sybase.Managed Sybase
 
 TRUNCATE TABLE #temp_table1
 
 BeforeExecute
--- Sybase.Managed Sybase
+--  Sybase.Managed Sybase
 
 TRUNCATE TABLE #temp_table2
 
 BeforeExecute
--- Sybase.Managed Sybase
+--  Sybase.Managed Sybase
 
 IF (OBJECT_ID(N'#temp_table2') IS NOT NULL)
 	DROP TABLE #temp_table2
 
 BeforeExecute
--- Sybase.Managed Sybase
+--  Sybase.Managed Sybase
 
 IF (OBJECT_ID(N'#temp_table1') IS NOT NULL)
 	DROP TABLE #temp_table1

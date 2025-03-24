@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Sybase.Managed Sybase
+--  Sybase.Managed Sybase
 
 SELECT
 	[nm].[MiddleName]
@@ -15,7 +15,7 @@ WHERE
 	[nm].[Value_1] <> 0 OR [nm].[Value_1] IS NULL
 
 BeforeExecute
--- Sybase.Managed Sybase
+--  Sybase.Managed Sybase
 
 SELECT
 	[t1].[FirstName],

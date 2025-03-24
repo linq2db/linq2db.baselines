@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Sybase.Managed Sybase
+--  Sybase.Managed Sybase
 
 DELETE FROM [AllTypes]
 FROM
@@ -8,7 +8,7 @@ WHERE
 	[p].[ID] >= 700
 
 BeforeExecute
--- Sybase.Managed Sybase (asynchronously)
+--  Sybase.Managed Sybase (asynchronously)
 
 INSERT INTO [AllTypes]
 (
@@ -47,7 +47,7 @@ SELECT 700,1,2,1.6,1,1,2,1.1,1.2,1.3,1,2,1,1.3999999999999999,1.5,'2014-12-17 21
 SELECT 701,NULL,NULL,NULL,0,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
 
 BeforeExecute
--- Sybase.Managed Sybase
+--  Sybase.Managed Sybase
 
 SELECT
 	[t].[ID],
@@ -88,7 +88,7 @@ ORDER BY
 	[t].[ID]
 
 BeforeExecute
--- Sybase.Managed Sybase (asynchronously)
+--  Sybase.Managed Sybase (asynchronously)
 
 DELETE FROM [AllTypes]
 FROM

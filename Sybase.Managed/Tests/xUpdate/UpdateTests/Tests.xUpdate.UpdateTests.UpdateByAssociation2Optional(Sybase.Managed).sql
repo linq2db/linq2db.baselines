@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Sybase.Managed Sybase
+--  Sybase.Managed Sybase
 DECLARE @id Integer -- Int32
 SET     @id = 3
 
@@ -13,7 +13,7 @@ WHERE
 	[p].[Id] = @id AND [p].[Id] = [MainTable].[Id]
 
 BeforeExecute
--- Sybase.Managed Sybase
+--  Sybase.Managed Sybase
 
 SELECT
 	[t1].[Id],

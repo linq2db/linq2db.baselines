@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Sybase.Managed Sybase
+--  Sybase.Managed Sybase
 DECLARE @testedList UniVarChar(20) -- String
 SET     @testedList = '[{"Value":"Value1"}]'
 

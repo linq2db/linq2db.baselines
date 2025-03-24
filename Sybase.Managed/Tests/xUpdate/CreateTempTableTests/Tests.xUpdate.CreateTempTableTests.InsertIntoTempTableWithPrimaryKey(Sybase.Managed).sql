@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Sybase.Managed Sybase
+--  Sybase.Managed Sybase
 
 CREATE TABLE #TableWithPrimaryKey2
 (
@@ -9,7 +9,7 @@ CREATE TABLE #TableWithPrimaryKey2
 )
 
 BeforeExecute
--- Sybase.Managed Sybase
+--  Sybase.Managed Sybase
 
 INSERT INTO #TableWithPrimaryKey2
 (
@@ -18,7 +18,7 @@ INSERT INTO #TableWithPrimaryKey2
 SELECT 1
 
 BeforeExecute
--- Sybase.Managed Sybase
+--  Sybase.Managed Sybase
 
 IF (OBJECT_ID(N'#TableWithPrimaryKey2') IS NOT NULL)
 	DROP TABLE #TableWithPrimaryKey2

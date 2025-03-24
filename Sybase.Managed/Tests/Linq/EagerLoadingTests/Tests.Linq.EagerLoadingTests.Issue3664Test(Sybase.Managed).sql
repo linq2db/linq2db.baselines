@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Sybase.Managed Sybase
+--  Sybase.Managed Sybase
 DECLARE @Id Integer -- Int32
 SET     @Id = 1
 
@@ -15,7 +15,7 @@ VALUES
 BeforeExecute
 BeginTransaction(RepeatableRead)
 BeforeExecute
--- Sybase.Managed Sybase
+--  Sybase.Managed Sybase
 DECLARE @id Integer -- Int32
 SET     @id = 11
 
@@ -32,7 +32,7 @@ WHERE
 BeforeExecute
 DisposeTransaction
 BeforeExecute
--- Sybase.Managed Sybase
+--  Sybase.Managed Sybase
 
 SELECT
 	[t1].[Id]
@@ -42,7 +42,7 @@ FROM
 BeforeExecute
 BeginTransaction(RepeatableRead)
 BeforeExecute
--- Sybase.Managed Sybase
+--  Sybase.Managed Sybase
 DECLARE @id Integer -- Int32
 SET     @id = 12
 
@@ -59,7 +59,7 @@ WHERE
 BeforeExecute
 DisposeTransaction
 BeforeExecute
--- Sybase.Managed Sybase
+--  Sybase.Managed Sybase
 
 SELECT
 	[t1].[Id]

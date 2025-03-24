@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Sybase.Managed Sybase
+--  Sybase.Managed Sybase
 
 SELECT
 	DateAdd(second, [t].[SmallIntValue], [t].[DateTimeValue])

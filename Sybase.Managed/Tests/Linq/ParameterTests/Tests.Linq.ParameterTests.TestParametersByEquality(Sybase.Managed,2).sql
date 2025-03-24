@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Sybase.Managed Sybase
+--  Sybase.Managed Sybase
 DECLARE @personId Integer -- Int32
 SET     @personId = 1
 DECLARE @personId_1 Integer -- Int32
@@ -23,7 +23,7 @@ WHERE
 	[p].[PersonID] = @personId_1
 
 BeforeExecute
--- Sybase.Managed Sybase
+--  Sybase.Managed Sybase
 DECLARE @personId Integer -- Int32
 SET     @personId = 1
 DECLARE @personId_1 Integer -- Int32

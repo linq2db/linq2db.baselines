@@ -1,17 +1,17 @@
 ﻿BeforeExecute
--- Sybase.Managed Sybase
+--  Sybase.Managed Sybase
 
 sp_chgattribute AllTypes, 'identity_burn_max', 0, '2'
 
 BeforeExecute
--- Sybase.Managed Sybase
+--  Sybase.Managed Sybase
 
 sp_chgattribute KeepIdentityTest, 'identity_burn_max', 0, '0'
 
 BeforeExecute
 BeginTransaction
 BeforeExecute
--- Sybase.Managed Sybase
+--  Sybase.Managed Sybase
 
 SELECT
 	MAX([t1].[ID])
@@ -19,7 +19,7 @@ FROM
 	[AllTypes] [t1]
 
 BeforeExecute
--- Sybase.Managed Sybase
+--  Sybase.Managed Sybase
 
 MERGE INTO [AllTypes] [Target]
 USING (
@@ -47,7 +47,7 @@ VALUES
 )
 
 BeforeExecute
--- Sybase.Managed Sybase
+--  Sybase.Managed Sybase
 
 SELECT TOP 1
 	[t1].[ID],

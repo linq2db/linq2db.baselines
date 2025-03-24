@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Sybase.Managed Sybase
+--  Sybase.Managed Sybase
 DECLARE @p UniVarChar(1) -- String
 SET     @p = '1'
 
@@ -15,7 +15,7 @@ WHERE
 	[r].[FirstName] = @p
 
 BeforeExecute
--- Sybase.Managed Sybase
+--  Sybase.Managed Sybase
 
 SELECT
 	[r].[FirstName],
@@ -29,7 +29,7 @@ WHERE
 	1 = 0
 
 BeforeExecute
--- Sybase.Managed Sybase
+--  Sybase.Managed Sybase
 DECLARE @p UniVarChar(1) -- String
 SET     @p = '1'
 

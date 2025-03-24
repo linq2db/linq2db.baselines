@@ -1,30 +1,30 @@
 ﻿BeforeExecute
--- Sybase.Managed Sybase
+--  Sybase.Managed Sybase
 
 USE master
 
 BeforeExecute
--- Sybase.Managed Sybase
+--  Sybase.Managed Sybase
 
 DROP DATABASE TestDataCore
 
 BeforeExecute
--- Sybase.Managed Sybase
+--  Sybase.Managed Sybase
 
 CREATE DATABASE TestDataCore ON default = '102400K'
 
 BeforeExecute
--- Sybase.Managed Sybase
+--  Sybase.Managed Sybase
 
 USE TestDataCore
 
 BeforeExecute
--- Sybase.Managed Sybase
+--  Sybase.Managed Sybase
 
 sp_configure 'enable unicode normalization', 0
 
 BeforeExecute
--- Sybase.Managed Sybase
+--  Sybase.Managed Sybase
 
 CREATE TABLE InheritanceParent
 (
@@ -36,7 +36,7 @@ CREATE TABLE InheritanceParent
 )
 
 BeforeExecute
--- Sybase.Managed Sybase
+--  Sybase.Managed Sybase
 
 CREATE TABLE InheritanceChild
 (
@@ -49,7 +49,7 @@ CREATE TABLE InheritanceChild
 )
 
 BeforeExecute
--- Sybase.Managed Sybase
+--  Sybase.Managed Sybase
 
 -- Person Table
 
@@ -64,27 +64,27 @@ CREATE TABLE Person
 )
 
 BeforeExecute
--- Sybase.Managed Sybase
+--  Sybase.Managed Sybase
 
 INSERT INTO Person (FirstName, LastName, Gender) VALUES ('John',   'Pupkin',    'M')
 
 BeforeExecute
--- Sybase.Managed Sybase
+--  Sybase.Managed Sybase
 
 INSERT INTO Person (FirstName, LastName, Gender) VALUES ('Tester', 'Testerson', 'M')
 
 BeforeExecute
--- Sybase.Managed Sybase
+--  Sybase.Managed Sybase
 
 INSERT INTO Person (FirstName, LastName, Gender) VALUES ('Jane',   'Doe',       'F')
 
 BeforeExecute
--- Sybase.Managed Sybase
+--  Sybase.Managed Sybase
 
 INSERT INTO Person (FirstName, LastName, MiddleName, Gender) VALUES ('Jürgen', 'König', 'Ko', 'M')
 
 BeforeExecute
--- Sybase.Managed Sybase
+--  Sybase.Managed Sybase
 
 -- Doctor Table Extension
 
@@ -98,12 +98,12 @@ CREATE TABLE Doctor
 )
 
 BeforeExecute
--- Sybase.Managed Sybase
+--  Sybase.Managed Sybase
 
 INSERT INTO Doctor (PersonID, Taxonomy) VALUES (1, 'Psychiatry')
 
 BeforeExecute
--- Sybase.Managed Sybase
+--  Sybase.Managed Sybase
 
 -- Patient Table Extension
 
@@ -117,27 +117,27 @@ CREATE TABLE Patient
 )
 
 BeforeExecute
--- Sybase.Managed Sybase
+--  Sybase.Managed Sybase
 
 INSERT INTO Patient (PersonID, Diagnosis) VALUES (2, 'Hallucination with Paranoid Bugs'' Delirium of Persecution')
 
 BeforeExecute
--- Sybase.Managed Sybase
+--  Sybase.Managed Sybase
 
 CREATE TABLE Parent      (ParentID INT NULL, Value1 int NULL)
 
 BeforeExecute
--- Sybase.Managed Sybase
+--  Sybase.Managed Sybase
 
 CREATE TABLE Child       (ParentID int NULL, ChildID INT NULL)
 
 BeforeExecute
--- Sybase.Managed Sybase
+--  Sybase.Managed Sybase
 
 CREATE TABLE GrandChild  (ParentID INT NULL, ChildID INT NULL, GrandChildID INT NULL)
 
 BeforeExecute
--- Sybase.Managed Sybase
+--  Sybase.Managed Sybase
 
 CREATE TABLE LinqDataTypes
 (
@@ -155,7 +155,7 @@ CREATE TABLE LinqDataTypes
 )
 
 BeforeExecute
--- Sybase.Managed Sybase
+--  Sybase.Managed Sybase
 
 CREATE TABLE TestIdentity
 (
@@ -163,7 +163,7 @@ CREATE TABLE TestIdentity
 )
 
 BeforeExecute
--- Sybase.Managed Sybase
+--  Sybase.Managed Sybase
 
 -- AllTypes
 
@@ -207,7 +207,7 @@ CREATE TABLE AllTypes
 )
 
 BeforeExecute
--- Sybase.Managed Sybase
+--  Sybase.Managed Sybase
 
 INSERT INTO AllTypes
 (
@@ -239,7 +239,7 @@ SELECT
 	        1,         2, Cast(3 as varbinary)
 
 BeforeExecute
--- Sybase.Managed Sybase
+--  Sybase.Managed Sybase
 
 -- merge test tables
 CREATE TABLE TestMerge1
@@ -271,7 +271,7 @@ CREATE TABLE TestMerge1
 )
 
 BeforeExecute
--- Sybase.Managed Sybase
+--  Sybase.Managed Sybase
 
 CREATE TABLE TestMerge2
 (
@@ -302,7 +302,7 @@ CREATE TABLE TestMerge2
 )
 
 BeforeExecute
--- Sybase.Managed Sybase
+--  Sybase.Managed Sybase
 
 CREATE TABLE TestMergeIdentity
 (
@@ -313,14 +313,14 @@ CREATE TABLE TestMergeIdentity
 )
 
 BeforeExecute
--- Sybase.Managed Sybase
+--  Sybase.Managed Sybase
 
 CREATE OR REPLACE PROCEDURE AddIssue792Record AS
 	INSERT INTO dbo.AllTypes(char20DataType) VALUES('issue792')
 RETURN
 
 BeforeExecute
--- Sybase.Managed Sybase
+--  Sybase.Managed Sybase
 
 CREATE Procedure Person_SelectAll
 AS
@@ -328,7 +328,7 @@ AS
 SELECT * FROM Person
 
 BeforeExecute
--- Sybase.Managed Sybase
+--  Sybase.Managed Sybase
 
 CREATE TABLE KeepIdentityTest (
 	ID    INT IDENTITY,
@@ -336,7 +336,7 @@ CREATE TABLE KeepIdentityTest (
 )
 
 BeforeExecute
--- Sybase.Managed Sybase
+--  Sybase.Managed Sybase
 
 CREATE TABLE CollatedTable
 (
@@ -346,7 +346,7 @@ CREATE TABLE CollatedTable
 )
 
 BeforeExecute
--- Sybase.Managed Sybase
+--  Sybase.Managed Sybase
 
 INSERT INTO [LinqDataTypes]
 (
@@ -375,7 +375,7 @@ SELECT 11,11.45,'2009-09-27',NULL,1,'d3021d18-97f0-4dc0-98d0-f0c7df4a1230',11,NU
 SELECT 12,11.45,'2012-11-07 19:19:29.090',NULL,1,'03021d18-97f0-4dc0-98d0-f0c7df4a1230',12,NULL,NULL,'0'
 
 BeforeExecute
--- Sybase.Managed Sybase
+--  Sybase.Managed Sybase
 
 INSERT INTO [Parent]
 (
@@ -391,7 +391,7 @@ SELECT 6,6 UNION ALL
 SELECT 7,1
 
 BeforeExecute
--- Sybase.Managed Sybase
+--  Sybase.Managed Sybase
 
 INSERT INTO [Child]
 (
@@ -417,7 +417,7 @@ SELECT 6,66 UNION ALL
 SELECT 7,77
 
 BeforeExecute
--- Sybase.Managed Sybase
+--  Sybase.Managed Sybase
 
 INSERT INTO [GrandChild]
 (
@@ -449,7 +449,7 @@ SELECT 4,42,423 UNION ALL
 SELECT 4,42,424
 
 BeforeExecute
--- Sybase.Managed Sybase
+--  Sybase.Managed Sybase
 
 INSERT INTO [InheritanceParent]
 (
@@ -462,7 +462,7 @@ SELECT 2,1,NULL UNION ALL
 SELECT 3,2,'InheritanceParent2'
 
 BeforeExecute
--- Sybase.Managed Sybase
+--  Sybase.Managed Sybase
 
 INSERT INTO [InheritanceChild]
 (

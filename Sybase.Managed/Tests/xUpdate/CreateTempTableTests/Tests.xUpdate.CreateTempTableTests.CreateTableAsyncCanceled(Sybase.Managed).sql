@@ -1,11 +1,11 @@
 ﻿BeforeExecute
--- Sybase.Managed Sybase
+--  Sybase.Managed Sybase
 
 IF (OBJECT_ID(N'TempTable') IS NOT NULL)
 	DROP TABLE [TempTable]
 
 BeforeExecute
--- Sybase.Managed Sybase
+--  Sybase.Managed Sybase
 
 SELECT
 	[p].[ParentID]
@@ -13,7 +13,7 @@ FROM
 	[Parent] [p]
 
 BeforeExecute
--- Sybase.Managed Sybase (asynchronously)
+--  Sybase.Managed Sybase (asynchronously)
 
 CREATE TABLE #TempTable
 (
@@ -21,7 +21,7 @@ CREATE TABLE #TempTable
 )
 
 BeforeExecute
--- Sybase.Managed Sybase
+--  Sybase.Managed Sybase
 
 DROP TABLE [TempTable]
 

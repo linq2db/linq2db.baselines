@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Sybase.Managed Sybase
+--  Sybase.Managed Sybase
 
 INSERT INTO [SimpleBulkCopyTable]
 (
@@ -8,7 +8,7 @@ INSERT INTO [SimpleBulkCopyTable]
 SELECT 1
 
 BeforeExecute
--- Sybase.Managed Sybase
+--  Sybase.Managed Sybase
 
 INSERT INTO [SimpleBulkCopyTable]
 (
@@ -17,7 +17,7 @@ INSERT INTO [SimpleBulkCopyTable]
 SELECT 2
 
 BeforeExecute
--- Sybase.Managed Sybase
+--  Sybase.Managed Sybase
 DECLARE @Id Integer -- Int32
 SET     @Id = 3
 

@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Sybase.Managed Sybase
+--  Sybase.Managed Sybase
 
 INSERT INTO [Person]
 (
@@ -15,7 +15,7 @@ VALUES
 )
 
 BeforeExecute
--- Sybase.Managed Sybase
+--  Sybase.Managed Sybase
 
 SELECT
 	COUNT(*)
@@ -25,7 +25,7 @@ WHERE
 	[c_1].[LastName] = 'Limonadovy'
 
 BeforeExecute
--- Sybase.Managed Sybase
+--  Sybase.Managed Sybase
 
 UPDATE
 	[Person]
@@ -35,7 +35,7 @@ WHERE
 	[Person].[LastName] = 'Limonadovy'
 
 BeforeExecute
--- Sybase.Managed Sybase
+--  Sybase.Managed Sybase
 
 SELECT
 	COUNT(*)

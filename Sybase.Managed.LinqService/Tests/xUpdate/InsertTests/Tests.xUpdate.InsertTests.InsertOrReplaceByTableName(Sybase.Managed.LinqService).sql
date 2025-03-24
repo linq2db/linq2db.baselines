@@ -1,11 +1,11 @@
 ﻿BeforeExecute
--- Sybase.Managed Sybase
+--  Sybase.Managed Sybase
 
 IF (OBJECT_ID(N'xxPatient') IS NOT NULL)
 	DROP TABLE [xxPatient]
 
 BeforeExecute
--- Sybase.Managed Sybase
+--  Sybase.Managed Sybase
 
 CREATE TABLE [xxPatient]
 (
@@ -16,7 +16,7 @@ CREATE TABLE [xxPatient]
 )
 
 BeforeExecute
--- Sybase.Managed Sybase
+--  Sybase.Managed Sybase
 DECLARE @Diagnosis UniVarChar(4) -- String
 SET     @Diagnosis = 'ABC1'
 DECLARE @PersonID Integer -- Int32
@@ -48,7 +48,7 @@ BEGIN
 END
 
 BeforeExecute
--- Sybase.Managed Sybase
+--  Sybase.Managed Sybase
 DECLARE @Diagnosis UniVarChar(4) -- String
 SET     @Diagnosis = 'ABC2'
 DECLARE @PersonID Integer -- Int32
@@ -80,7 +80,7 @@ BEGIN
 END
 
 BeforeExecute
--- Sybase.Managed Sybase
+--  Sybase.Managed Sybase
 
 SELECT
 	COUNT(*)
@@ -88,7 +88,7 @@ FROM
 	[xxPatient] [t1]
 
 BeforeExecute
--- Sybase.Managed Sybase
+--  Sybase.Managed Sybase
 DECLARE @Diagnosis UniVarChar(4) -- String
 SET     @Diagnosis = 'ABC1'
 DECLARE @PersonID Integer -- Int32
@@ -120,7 +120,7 @@ BEGIN
 END
 
 BeforeExecute
--- Sybase.Managed Sybase
+--  Sybase.Managed Sybase
 DECLARE @Diagnosis UniVarChar(4) -- String
 SET     @Diagnosis = 'ABC2'
 DECLARE @PersonID Integer -- Int32
@@ -152,7 +152,7 @@ BEGIN
 END
 
 BeforeExecute
--- Sybase.Managed Sybase
+--  Sybase.Managed Sybase
 
 SELECT
 	COUNT(*)
@@ -160,7 +160,7 @@ FROM
 	[xxPatient] [t1]
 
 BeforeExecute
--- Sybase.Managed Sybase
+--  Sybase.Managed Sybase
 
 IF (OBJECT_ID(N'xxPatient') IS NOT NULL)
 	DROP TABLE [xxPatient]

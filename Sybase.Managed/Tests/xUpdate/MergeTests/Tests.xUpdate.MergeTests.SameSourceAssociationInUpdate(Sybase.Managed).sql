@@ -1,12 +1,12 @@
 ﻿BeforeExecute
--- Sybase.Managed Sybase
+--  Sybase.Managed Sybase
 
 sp_chgattribute Person, 'identity_burn_max', 0, '4'
 
 BeforeExecute
 BeginTransaction
 BeforeExecute
--- Sybase.Managed Sybase
+--  Sybase.Managed Sybase
 
 MERGE INTO [Person] [Target]
 USING (
@@ -37,7 +37,7 @@ SET
 	[LastName] = 'last ' + [Source].[target_Patient_Diagnosis]
 
 BeforeExecute
--- Sybase.Managed Sybase
+--  Sybase.Managed Sybase
 
 SELECT
 	[t1].[FirstName],

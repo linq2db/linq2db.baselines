@@ -1,11 +1,11 @@
 ﻿BeforeExecute
--- Sybase.Managed Sybase
+--  Sybase.Managed Sybase
 
 IF (OBJECT_ID(N'TestIdTrun') IS NOT NULL)
 	DROP TABLE [TestIdTrun]
 
 BeforeExecute
--- Sybase.Managed Sybase
+--  Sybase.Managed Sybase
 
 CREATE TABLE [TestIdTrun]
 (
@@ -16,7 +16,7 @@ CREATE TABLE [TestIdTrun]
 )
 
 BeforeExecute
--- Sybase.Managed Sybase
+--  Sybase.Managed Sybase
 
 INSERT INTO [TestIdTrun]
 (
@@ -28,7 +28,7 @@ VALUES
 )
 
 BeforeExecute
--- Sybase.Managed Sybase
+--  Sybase.Managed Sybase
 
 INSERT INTO [TestIdTrun]
 (
@@ -40,7 +40,7 @@ VALUES
 )
 
 BeforeExecute
--- Sybase.Managed Sybase
+--  Sybase.Managed Sybase
 
 SELECT TOP 3
 	[t1].[ID],
@@ -51,17 +51,17 @@ ORDER BY
 	[t1].[ID]
 
 BeforeExecute
--- Sybase.Managed Sybase
+--  Sybase.Managed Sybase
 
 TRUNCATE TABLE [TestIdTrun]
 
 BeforeExecute
--- Sybase.Managed Sybase
+--  Sybase.Managed Sybase
 
 sp_chgattribute [TestIdTrun], 'identity_burn_max', 0, '0'
 
 BeforeExecute
--- Sybase.Managed Sybase
+--  Sybase.Managed Sybase
 
 INSERT INTO [TestIdTrun]
 (
@@ -73,7 +73,7 @@ VALUES
 )
 
 BeforeExecute
--- Sybase.Managed Sybase
+--  Sybase.Managed Sybase
 
 INSERT INTO [TestIdTrun]
 (
@@ -85,7 +85,7 @@ VALUES
 )
 
 BeforeExecute
--- Sybase.Managed Sybase
+--  Sybase.Managed Sybase
 
 SELECT TOP 3
 	[t1].[ID],
@@ -96,7 +96,7 @@ ORDER BY
 	[t1].[ID]
 
 BeforeExecute
--- Sybase.Managed Sybase
+--  Sybase.Managed Sybase
 
 DROP TABLE [TestIdTrun]
 

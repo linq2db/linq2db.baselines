@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Sybase.Managed Sybase (asynchronously)
+--  Sybase.Managed Sybase (asynchronously)
 DECLARE @param UniVarChar(4) -- String
 SET     @param = 'test'
 

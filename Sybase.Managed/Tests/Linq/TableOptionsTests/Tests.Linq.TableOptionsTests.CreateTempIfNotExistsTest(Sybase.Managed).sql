@@ -1,11 +1,11 @@
 ﻿BeforeExecute
--- Sybase.Managed Sybase
+--  Sybase.Managed Sybase
 
 IF (OBJECT_ID(N'CreateIfNotExistsTable') IS NOT NULL)
 	DROP TABLE [CreateIfNotExistsTable]
 
 BeforeExecute
--- Sybase.Managed Sybase
+--  Sybase.Managed Sybase
 
 CREATE TABLE #CreateIfNotExistsTable
 (
@@ -14,7 +14,7 @@ CREATE TABLE #CreateIfNotExistsTable
 )
 
 BeforeExecute
--- Sybase.Managed Sybase
+--  Sybase.Managed Sybase
 
 SELECT
 	[t1].[Id],
@@ -23,7 +23,7 @@ FROM
 	#CreateIfNotExistsTable [t1]
 
 BeforeExecute
--- Sybase.Managed Sybase
+--  Sybase.Managed Sybase
 
 IF (OBJECT_ID(N'CreateIfNotExistsTable') IS NULL)
 	EXECUTE('
@@ -35,13 +35,13 @@ IF (OBJECT_ID(N'CreateIfNotExistsTable') IS NULL)
 	')
 
 BeforeExecute
--- Sybase.Managed Sybase
+--  Sybase.Managed Sybase
 
 IF (OBJECT_ID(N'CreateIfNotExistsTable') IS NOT NULL)
 	DROP TABLE [CreateIfNotExistsTable]
 
 BeforeExecute
--- Sybase.Managed Sybase
+--  Sybase.Managed Sybase
 
 IF (OBJECT_ID(N'#CreateIfNotExistsTable') IS NOT NULL)
 	DROP TABLE #CreateIfNotExistsTable

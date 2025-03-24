@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Sybase.Managed Sybase (asynchronously)
+--  Sybase.Managed Sybase (asynchronously)
 
 INSERT INTO [SimpleBulkCopyTable]
 (
@@ -8,7 +8,7 @@ INSERT INTO [SimpleBulkCopyTable]
 SELECT 1
 
 BeforeExecute
--- Sybase.Managed Sybase (asynchronously)
+--  Sybase.Managed Sybase (asynchronously)
 
 INSERT INTO [SimpleBulkCopyTable]
 (

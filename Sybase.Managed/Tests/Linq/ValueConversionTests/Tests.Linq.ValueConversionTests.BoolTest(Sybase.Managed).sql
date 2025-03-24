@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Sybase.Managed Sybase
+--  Sybase.Managed Sybase
 DECLARE @true_value VarChar -- AnsiString
 SET     @true_value = 'Y'
 

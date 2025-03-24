@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Sybase.Managed Sybase
+--  Sybase.Managed Sybase
 
 select PersonID, FirstName, MiddleName, LastName, Gender from Person where PersonID = 3
 

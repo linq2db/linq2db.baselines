@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Sybase.Managed Sybase (asynchronously)
+--  Sybase.Managed Sybase (asynchronously)
 
 CREATE TABLE [xxPerson]
 (
@@ -13,7 +13,7 @@ CREATE TABLE [xxPerson]
 )
 
 BeforeExecute
--- Sybase.Managed Sybase (asynchronously)
+--  Sybase.Managed Sybase (asynchronously)
 DECLARE @FirstName UniVarChar(6) -- String
 SET     @FirstName = 'Steven'
 DECLARE @LastName UniVarChar(4) -- String
@@ -39,35 +39,7 @@ VALUES
 )
 
 BeforeExecute
--- Sybase.Managed Sybase (asynchronously)
-DECLARE @FirstName UniVarChar(6) -- String
-SET     @FirstName = 'Steven'
-DECLARE @LastName UniVarChar(4) -- String
-SET     @LastName = 'King'
-DECLARE @MiddleName UniVarChar -- String
-SET     @MiddleName = NULL
-DECLARE @Gender Char(1) -- AnsiStringFixedLength
-SET     @Gender = 'M'
-
-INSERT INTO [xxPerson]
-(
-	[FirstName],
-	[LastName],
-	[MiddleName],
-	[Gender]
-)
-VALUES
-(
-	@FirstName,
-	@LastName,
-	@MiddleName,
-	@Gender
-)
-
-SELECT @@IDENTITY
-
-BeforeExecute
--- Sybase.Managed Sybase (asynchronously)
+--  Sybase.Managed Sybase (asynchronously)
 DECLARE @FirstName UniVarChar(6) -- String
 SET     @FirstName = 'Steven'
 DECLARE @LastName UniVarChar(4) -- String
@@ -95,7 +67,35 @@ VALUES
 SELECT @@IDENTITY
 
 BeforeExecute
--- Sybase.Managed Sybase (asynchronously)
+--  Sybase.Managed Sybase (asynchronously)
+DECLARE @FirstName UniVarChar(6) -- String
+SET     @FirstName = 'Steven'
+DECLARE @LastName UniVarChar(4) -- String
+SET     @LastName = 'King'
+DECLARE @MiddleName UniVarChar -- String
+SET     @MiddleName = NULL
+DECLARE @Gender Char(1) -- AnsiStringFixedLength
+SET     @Gender = 'M'
+
+INSERT INTO [xxPerson]
+(
+	[FirstName],
+	[LastName],
+	[MiddleName],
+	[Gender]
+)
+VALUES
+(
+	@FirstName,
+	@LastName,
+	@MiddleName,
+	@Gender
+)
+
+SELECT @@IDENTITY
+
+BeforeExecute
+--  Sybase.Managed Sybase (asynchronously)
 
 SELECT
 	COUNT(*)
@@ -103,7 +103,7 @@ FROM
 	[xxPerson] [t1]
 
 BeforeExecute
--- Sybase.Managed Sybase (asynchronously)
+--  Sybase.Managed Sybase (asynchronously)
 
 SELECT
 	COUNT(*)
@@ -114,12 +114,12 @@ WHERE
 	[p].[Gender] = 'M'
 
 BeforeExecute
--- Sybase.Managed Sybase (asynchronously)
+--  Sybase.Managed Sybase (asynchronously)
 
 DROP TABLE [xxPerson]
 
 BeforeExecute
--- Sybase.Managed Sybase (asynchronously)
+--  Sybase.Managed Sybase (asynchronously)
 
 IF (OBJECT_ID(N'xxPerson') IS NOT NULL)
 	DROP TABLE [xxPerson]

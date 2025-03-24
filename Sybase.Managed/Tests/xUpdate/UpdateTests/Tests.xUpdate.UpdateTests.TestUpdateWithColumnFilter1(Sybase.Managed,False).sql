@@ -1,10 +1,10 @@
 ﻿BeforeExecute
--- Sybase.Managed Sybase
+--  Sybase.Managed Sybase
 
 sp_chgattribute Person, 'identity_burn_max', 0, '4'
 
 BeforeExecute
--- Sybase.Managed Sybase
+--  Sybase.Managed Sybase
 DECLARE @FirstName UniVarChar(25) -- String
 SET     @FirstName = 'UpdateColumnFilterUpdated'
 DECLARE @LastName UniVarChar(8) -- String
@@ -30,7 +30,7 @@ VALUES
 )
 
 BeforeExecute
--- Sybase.Managed Sybase
+--  Sybase.Managed Sybase
 DECLARE @FirstName UniVarChar(25) -- String
 SET     @FirstName = 'UpdateColumnFilterUpdated'
 
@@ -46,7 +46,7 @@ WHERE
 	[x].[FirstName] = @FirstName
 
 BeforeExecute
--- Sybase.Managed Sybase
+--  Sybase.Managed Sybase
 DECLARE @FirstName UniVarChar(25) -- String
 SET     @FirstName = 'UpdateColumnFilterUpdated'
 DECLARE @LastName UniVarChar(8) -- String
@@ -66,7 +66,7 @@ WHERE
 	[Person].[PersonID] = @ID
 
 BeforeExecute
--- Sybase.Managed Sybase
+--  Sybase.Managed Sybase
 DECLARE @FirstName UniVarChar(25) -- String
 SET     @FirstName = 'UpdateColumnFilterUpdated'
 

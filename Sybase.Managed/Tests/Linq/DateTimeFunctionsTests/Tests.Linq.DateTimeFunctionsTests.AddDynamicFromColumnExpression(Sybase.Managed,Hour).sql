@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Sybase.Managed Sybase
+--  Sybase.Managed Sybase
 DECLARE @part1 SmallInt -- Int16
 SET     @part1 = 4
 DECLARE @part2 Integer -- Int32

@@ -1,11 +1,11 @@
 ﻿BeforeExecute
--- Sybase.Managed Sybase
+--  Sybase.Managed Sybase
 
 IF (OBJECT_ID(N'#TestTable') IS NOT NULL)
 	DROP TABLE #TestTable
 
 BeforeExecute
--- Sybase.Managed Sybase
+--  Sybase.Managed Sybase
 
 CREATE TABLE #TestTable
 (
@@ -14,7 +14,7 @@ CREATE TABLE #TestTable
 )
 
 BeforeExecute
--- Sybase.Managed Sybase
+--  Sybase.Managed Sybase
 
 SELECT
 	[sub].[Id_1],
@@ -39,7 +39,7 @@ WHERE
 	[sub].[Id_1] = [sub].[Id]
 
 BeforeExecute
--- Sybase.Managed Sybase
+--  Sybase.Managed Sybase
 
 IF (OBJECT_ID(N'#TestTable') IS NOT NULL)
 	DROP TABLE #TestTable

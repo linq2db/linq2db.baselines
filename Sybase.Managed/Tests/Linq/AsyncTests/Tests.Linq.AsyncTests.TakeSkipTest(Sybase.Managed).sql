@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Sybase.Managed Sybase
+--  Sybase.Managed Sybase
 
 SELECT TOP 3
 	[t1].[ParentID],
@@ -10,7 +10,7 @@ ORDER BY
 	[t1].[ParentID]
 
 BeforeExecute
--- Sybase.Managed Sybase (asynchronously)
+--  Sybase.Managed Sybase (asynchronously)
 
 SELECT TOP 3
 	[t1].[ParentID],

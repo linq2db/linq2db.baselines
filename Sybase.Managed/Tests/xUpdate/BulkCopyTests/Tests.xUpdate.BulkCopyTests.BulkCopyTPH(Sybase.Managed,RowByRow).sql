@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Sybase.Managed Sybase
+--  Sybase.Managed Sybase
 DECLARE @Id Integer -- Int32
 SET     @Id = 1
 DECLARE @Discriminator Integer -- Int32
@@ -21,7 +21,7 @@ VALUES
 )
 
 BeforeExecute
--- Sybase.Managed Sybase
+--  Sybase.Managed Sybase
 DECLARE @Id Integer -- Int32
 SET     @Id = 2
 DECLARE @Discriminator Integer -- Int32
@@ -43,7 +43,7 @@ VALUES
 )
 
 BeforeExecute
--- Sybase.Managed Sybase
+--  Sybase.Managed Sybase
 DECLARE @Id Integer -- Int32
 SET     @Id = 3
 DECLARE @Discriminator Integer -- Int32
@@ -69,7 +69,7 @@ VALUES
 )
 
 BeforeExecute
--- Sybase.Managed Sybase
+--  Sybase.Managed Sybase
 
 SELECT
 	[t1].[Discriminator],
@@ -84,7 +84,7 @@ ORDER BY
 	[t1].[Id]
 
 BeforeExecute
--- Sybase.Managed Sybase
+--  Sybase.Managed Sybase
 
 SELECT TOP 2
 	[x].[Discriminator],
@@ -99,7 +99,7 @@ WHERE
 	[x].[Discriminator] = 1
 
 BeforeExecute
--- Sybase.Managed Sybase
+--  Sybase.Managed Sybase
 
 SELECT TOP 2
 	[x].[Discriminator],
@@ -114,7 +114,7 @@ WHERE
 	[x].[Discriminator] = 2
 
 BeforeExecute
--- Sybase.Managed Sybase
+--  Sybase.Managed Sybase
 
 SELECT TOP 2
 	[x].[Discriminator],
@@ -129,7 +129,7 @@ WHERE
 	[x].[Discriminator] = 3
 
 BeforeExecute
--- Sybase.Managed Sybase
+--  Sybase.Managed Sybase
 
 SELECT TOP 2
 	[x].[Discriminator],
@@ -144,7 +144,7 @@ WHERE
 	[x].[Value1] = 'Str1'
 
 BeforeExecute
--- Sybase.Managed Sybase
+--  Sybase.Managed Sybase
 
 SELECT TOP 2
 	[x].[Discriminator],
@@ -159,7 +159,7 @@ WHERE
 	[x].[Value2] = 'Str2'
 
 BeforeExecute
--- Sybase.Managed Sybase
+--  Sybase.Managed Sybase
 
 SELECT TOP 2
 	[x].[Discriminator],

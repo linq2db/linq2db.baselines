@@ -12,7 +12,7 @@ FROM
 ----
 
 BeforeExecute
--- Sybase.Managed Sybase
+--  Sybase.Managed Sybase
 
 SELECT
 	[p].[ParentID],
@@ -35,7 +35,7 @@ FROM
 ---
 
 BeforeExecute
--- Sybase.Managed Sybase
+--  Sybase.Managed Sybase
 
 SELECT
 	[p].[ParentID],

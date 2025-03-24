@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Sybase.Managed Sybase
+--  Sybase.Managed Sybase
 
 SELECT
 	(CAST(COUNT(*) AS VarChar(11)) + ' items have not been processed, e.g. #' + CAST(MIN([s].[PersonID]) AS VarChar(11))) + '.'

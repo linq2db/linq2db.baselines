@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Sybase.Managed Sybase
+--  Sybase.Managed Sybase
 DECLARE @Column Integer -- Int32
 SET     @Column = 2
 DECLARE @ColumnNullable Integer -- Int32
@@ -15,7 +15,7 @@ WHERE
 	[r].[Column] = @Column AND [r].[ColumnNullable] = @ColumnNullable
 
 BeforeExecute
--- Sybase.Managed Sybase
+--  Sybase.Managed Sybase
 
 SELECT
 	[r].[Id],
@@ -27,14 +27,14 @@ WHERE
 	[r].[Column] = 2 AND [r].[ColumnNullable] = 3
 
 BeforeExecute
--- Sybase.Managed Sybase
+--  Sybase.Managed Sybase
 
 DELETE FROM [IntEnumTable]
 FROM
 	[IntEnumTable] [t1]
 
 BeforeExecute
--- Sybase.Managed Sybase
+--  Sybase.Managed Sybase
 DECLARE @Id Integer -- Int32
 SET     @Id = 1
 DECLARE @Column Integer -- Int32
@@ -56,7 +56,7 @@ VALUES
 )
 
 BeforeExecute
--- Sybase.Managed Sybase
+--  Sybase.Managed Sybase
 DECLARE @Id Integer -- Int32
 SET     @Id = 2
 DECLARE @Column Integer -- Int32
@@ -78,7 +78,7 @@ VALUES
 )
 
 BeforeExecute
--- Sybase.Managed Sybase
+--  Sybase.Managed Sybase
 
 SELECT
 	[t1].[Id],
@@ -90,14 +90,14 @@ ORDER BY
 	[t1].[Id]
 
 BeforeExecute
--- Sybase.Managed Sybase
+--  Sybase.Managed Sybase
 
 DELETE FROM [IntEnumTable]
 FROM
 	[IntEnumTable] [t1]
 
 BeforeExecute
--- Sybase.Managed Sybase
+--  Sybase.Managed Sybase
 
 INSERT INTO [IntEnumTable]
 (
@@ -109,7 +109,7 @@ SELECT 1,1,NULL UNION ALL
 SELECT 2,2,3
 
 BeforeExecute
--- Sybase.Managed Sybase
+--  Sybase.Managed Sybase
 
 SELECT
 	[t1].[Id],
@@ -121,14 +121,14 @@ ORDER BY
 	[t1].[Id]
 
 BeforeExecute
--- Sybase.Managed Sybase
+--  Sybase.Managed Sybase
 
 DELETE FROM [IntEnumTable]
 FROM
 	[IntEnumTable] [t1]
 
 BeforeExecute
--- Sybase.Managed Sybase
+--  Sybase.Managed Sybase
 
 INSERT INTO [IntEnumTable]
 (
@@ -140,7 +140,7 @@ SELECT 1,1,NULL UNION ALL
 SELECT 2,2,3
 
 BeforeExecute
--- Sybase.Managed Sybase
+--  Sybase.Managed Sybase
 
 SELECT
 	[t1].[Id],

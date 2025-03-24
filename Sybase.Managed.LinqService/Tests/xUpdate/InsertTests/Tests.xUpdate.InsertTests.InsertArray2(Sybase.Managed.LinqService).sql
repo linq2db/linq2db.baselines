@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Sybase.Managed Sybase
+--  Sybase.Managed Sybase
 
 DELETE FROM [LinqDataTypes]
 FROM
@@ -8,7 +8,7 @@ WHERE
 	[t].[ID] > 1000
 
 BeforeExecute
--- Sybase.Managed Sybase
+--  Sybase.Managed Sybase
 DECLARE @arr VarBinary -- Binary
 SET     @arr = NULL
 
@@ -26,7 +26,7 @@ VALUES
 )
 
 BeforeExecute
--- Sybase.Managed Sybase
+--  Sybase.Managed Sybase
 
 SELECT TOP 2
 	[t].[ID],
@@ -42,7 +42,7 @@ WHERE
 	[t].[ID] = 1001
 
 BeforeExecute
--- Sybase.Managed Sybase
+--  Sybase.Managed Sybase
 
 DELETE FROM [LinqDataTypes]
 FROM

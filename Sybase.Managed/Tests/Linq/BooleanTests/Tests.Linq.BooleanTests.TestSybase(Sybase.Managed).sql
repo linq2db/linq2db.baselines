@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Sybase.Managed Sybase
+--  Sybase.Managed Sybase
 DECLARE @True Bit -- Boolean
 SET     @True = 1
 
@@ -18,7 +18,7 @@ WHERE
 	[r].[Boolean] = @True
 
 BeforeExecute
--- Sybase.Managed Sybase
+--  Sybase.Managed Sybase
 
 SELECT
 	[t1].[Id],
@@ -33,7 +33,7 @@ FROM
 	[SybaseBooleanTable] [t1]
 
 BeforeExecute
--- Sybase.Managed Sybase
+--  Sybase.Managed Sybase
 DECLARE @False Bit -- Boolean
 SET     @False = 0
 
@@ -52,7 +52,7 @@ WHERE
 	[r].[Boolean] = @False
 
 BeforeExecute
--- Sybase.Managed Sybase
+--  Sybase.Managed Sybase
 
 SELECT
 	[t1].[Id],
@@ -67,7 +67,7 @@ FROM
 	[SybaseBooleanTable] [t1]
 
 BeforeExecute
--- Sybase.Managed Sybase
+--  Sybase.Managed Sybase
 DECLARE @TrueN Bit -- Boolean
 SET     @TrueN = 1
 
@@ -86,7 +86,7 @@ WHERE
 	[r].[Boolean] = @TrueN
 
 BeforeExecute
--- Sybase.Managed Sybase
+--  Sybase.Managed Sybase
 
 SELECT
 	[t1].[Id],
@@ -101,7 +101,7 @@ FROM
 	[SybaseBooleanTable] [t1]
 
 BeforeExecute
--- Sybase.Managed Sybase
+--  Sybase.Managed Sybase
 DECLARE @FalseN Bit -- Boolean
 SET     @FalseN = 0
 
@@ -120,7 +120,7 @@ WHERE
 	[r].[Boolean] = @FalseN
 
 BeforeExecute
--- Sybase.Managed Sybase
+--  Sybase.Managed Sybase
 
 SELECT
 	[t1].[Id],
@@ -135,7 +135,7 @@ FROM
 	[SybaseBooleanTable] [t1]
 
 BeforeExecute
--- Sybase.Managed Sybase
+--  Sybase.Managed Sybase
 
 SELECT
 	[r].[Id],
@@ -152,7 +152,7 @@ WHERE
 	1 = 0
 
 BeforeExecute
--- Sybase.Managed Sybase
+--  Sybase.Managed Sybase
 
 SELECT
 	[t1].[Id],
@@ -167,7 +167,7 @@ FROM
 	[SybaseBooleanTable] [t1]
 
 BeforeExecute
--- Sybase.Managed Sybase
+--  Sybase.Managed Sybase
 DECLARE @True Bit -- Boolean
 SET     @True = 1
 
@@ -186,7 +186,7 @@ WHERE
 	[r].[Boolean] <> @True
 
 BeforeExecute
--- Sybase.Managed Sybase
+--  Sybase.Managed Sybase
 
 SELECT
 	[t1].[Id],
@@ -201,7 +201,7 @@ FROM
 	[SybaseBooleanTable] [t1]
 
 BeforeExecute
--- Sybase.Managed Sybase
+--  Sybase.Managed Sybase
 DECLARE @False Bit -- Boolean
 SET     @False = 0
 
@@ -220,7 +220,7 @@ WHERE
 	[r].[Boolean] <> @False
 
 BeforeExecute
--- Sybase.Managed Sybase
+--  Sybase.Managed Sybase
 
 SELECT
 	[t1].[Id],
@@ -235,7 +235,7 @@ FROM
 	[SybaseBooleanTable] [t1]
 
 BeforeExecute
--- Sybase.Managed Sybase
+--  Sybase.Managed Sybase
 DECLARE @TrueN Bit -- Boolean
 SET     @TrueN = 1
 
@@ -254,7 +254,7 @@ WHERE
 	[r].[Boolean] <> @TrueN
 
 BeforeExecute
--- Sybase.Managed Sybase
+--  Sybase.Managed Sybase
 
 SELECT
 	[t1].[Id],
@@ -269,7 +269,7 @@ FROM
 	[SybaseBooleanTable] [t1]
 
 BeforeExecute
--- Sybase.Managed Sybase
+--  Sybase.Managed Sybase
 DECLARE @FalseN Bit -- Boolean
 SET     @FalseN = 0
 
@@ -288,7 +288,7 @@ WHERE
 	[r].[Boolean] <> @FalseN
 
 BeforeExecute
--- Sybase.Managed Sybase
+--  Sybase.Managed Sybase
 
 SELECT
 	[t1].[Id],
@@ -303,7 +303,7 @@ FROM
 	[SybaseBooleanTable] [t1]
 
 BeforeExecute
--- Sybase.Managed Sybase
+--  Sybase.Managed Sybase
 
 SELECT
 	[r].[Id],
@@ -318,7 +318,7 @@ FROM
 	[SybaseBooleanTable] [r]
 
 BeforeExecute
--- Sybase.Managed Sybase
+--  Sybase.Managed Sybase
 
 SELECT
 	[t1].[Id],
@@ -333,7 +333,7 @@ FROM
 	[SybaseBooleanTable] [t1]
 
 BeforeExecute
--- Sybase.Managed Sybase
+--  Sybase.Managed Sybase
 
 SELECT
 	[g_1].[Id],
@@ -507,7 +507,7 @@ GROUP BY
 	[g_1].[Id]
 
 BeforeExecute
--- Sybase.Managed Sybase
+--  Sybase.Managed Sybase
 
 SELECT
 	[t1].[Id],
@@ -522,7 +522,7 @@ FROM
 	[SybaseBooleanTable] [t1]
 
 BeforeExecute
--- Sybase.Managed Sybase
+--  Sybase.Managed Sybase
 
 SELECT
 	[r].[Id],
@@ -1135,7 +1135,7 @@ FROM
 	[SybaseBooleanTable] [r_1]
 
 BeforeExecute
--- Sybase.Managed Sybase
+--  Sybase.Managed Sybase
 
 SELECT
 	[t1].[Id],
@@ -1150,7 +1150,7 @@ FROM
 	[SybaseBooleanTable] [t1]
 
 BeforeExecute
--- Sybase.Managed Sybase
+--  Sybase.Managed Sybase
 
 SELECT
 	[r].[Id],
@@ -1167,7 +1167,7 @@ WHERE
 	[r].[Boolean] = 1
 
 BeforeExecute
--- Sybase.Managed Sybase
+--  Sybase.Managed Sybase
 
 SELECT
 	[t1].[Id],
@@ -1182,7 +1182,7 @@ FROM
 	[SybaseBooleanTable] [t1]
 
 BeforeExecute
--- Sybase.Managed Sybase
+--  Sybase.Managed Sybase
 
 SELECT
 	[r].[Id],
@@ -1199,7 +1199,7 @@ WHERE
 	[r].[Boolean] = 0
 
 BeforeExecute
--- Sybase.Managed Sybase
+--  Sybase.Managed Sybase
 
 SELECT
 	[t1].[Id],
@@ -1214,7 +1214,7 @@ FROM
 	[SybaseBooleanTable] [t1]
 
 BeforeExecute
--- Sybase.Managed Sybase
+--  Sybase.Managed Sybase
 
 SELECT
 	[r].[Id],
@@ -1231,7 +1231,7 @@ WHERE
 	[r].[Boolean] = 1
 
 BeforeExecute
--- Sybase.Managed Sybase
+--  Sybase.Managed Sybase
 
 SELECT
 	[t1].[Id],
@@ -1246,7 +1246,7 @@ FROM
 	[SybaseBooleanTable] [t1]
 
 BeforeExecute
--- Sybase.Managed Sybase
+--  Sybase.Managed Sybase
 
 SELECT
 	[r].[Id],
@@ -1263,7 +1263,7 @@ WHERE
 	[r].[Boolean] = 0
 
 BeforeExecute
--- Sybase.Managed Sybase
+--  Sybase.Managed Sybase
 
 SELECT
 	[t1].[Id],
@@ -1278,7 +1278,7 @@ FROM
 	[SybaseBooleanTable] [t1]
 
 BeforeExecute
--- Sybase.Managed Sybase
+--  Sybase.Managed Sybase
 
 SELECT
 	[r].[Id],
@@ -1295,7 +1295,7 @@ WHERE
 	1 = 0
 
 BeforeExecute
--- Sybase.Managed Sybase
+--  Sybase.Managed Sybase
 
 SELECT
 	[t1].[Id],
@@ -1310,7 +1310,7 @@ FROM
 	[SybaseBooleanTable] [t1]
 
 BeforeExecute
--- Sybase.Managed Sybase
+--  Sybase.Managed Sybase
 
 SELECT
 	[r].[Id],
@@ -1327,7 +1327,7 @@ WHERE
 	[r].[Boolean] <> 1
 
 BeforeExecute
--- Sybase.Managed Sybase
+--  Sybase.Managed Sybase
 
 SELECT
 	[t1].[Id],
@@ -1342,7 +1342,7 @@ FROM
 	[SybaseBooleanTable] [t1]
 
 BeforeExecute
--- Sybase.Managed Sybase
+--  Sybase.Managed Sybase
 
 SELECT
 	[r].[Id],
@@ -1359,7 +1359,7 @@ WHERE
 	[r].[Boolean] <> 0
 
 BeforeExecute
--- Sybase.Managed Sybase
+--  Sybase.Managed Sybase
 
 SELECT
 	[t1].[Id],
@@ -1374,7 +1374,7 @@ FROM
 	[SybaseBooleanTable] [t1]
 
 BeforeExecute
--- Sybase.Managed Sybase
+--  Sybase.Managed Sybase
 
 SELECT
 	[r].[Id],
@@ -1391,7 +1391,7 @@ WHERE
 	[r].[Boolean] <> 1
 
 BeforeExecute
--- Sybase.Managed Sybase
+--  Sybase.Managed Sybase
 
 SELECT
 	[t1].[Id],
@@ -1406,7 +1406,7 @@ FROM
 	[SybaseBooleanTable] [t1]
 
 BeforeExecute
--- Sybase.Managed Sybase
+--  Sybase.Managed Sybase
 
 SELECT
 	[r].[Id],
@@ -1423,7 +1423,7 @@ WHERE
 	[r].[Boolean] <> 0
 
 BeforeExecute
--- Sybase.Managed Sybase
+--  Sybase.Managed Sybase
 
 SELECT
 	[t1].[Id],
@@ -1438,7 +1438,7 @@ FROM
 	[SybaseBooleanTable] [t1]
 
 BeforeExecute
--- Sybase.Managed Sybase
+--  Sybase.Managed Sybase
 
 SELECT
 	[r].[Id],
@@ -1453,7 +1453,7 @@ FROM
 	[SybaseBooleanTable] [r]
 
 BeforeExecute
--- Sybase.Managed Sybase
+--  Sybase.Managed Sybase
 
 SELECT
 	[t1].[Id],
@@ -1468,7 +1468,7 @@ FROM
 	[SybaseBooleanTable] [t1]
 
 BeforeExecute
--- Sybase.Managed Sybase
+--  Sybase.Managed Sybase
 
 SELECT
 	[g_1].[Id],
@@ -1642,7 +1642,7 @@ GROUP BY
 	[g_1].[Id]
 
 BeforeExecute
--- Sybase.Managed Sybase
+--  Sybase.Managed Sybase
 
 SELECT
 	[t1].[Id],
@@ -1657,7 +1657,7 @@ FROM
 	[SybaseBooleanTable] [t1]
 
 BeforeExecute
--- Sybase.Managed Sybase
+--  Sybase.Managed Sybase
 
 SELECT
 	[r].[Id],
@@ -2270,7 +2270,7 @@ FROM
 	[SybaseBooleanTable] [r_1]
 
 BeforeExecute
--- Sybase.Managed Sybase
+--  Sybase.Managed Sybase
 
 SELECT
 	[t1].[Id],

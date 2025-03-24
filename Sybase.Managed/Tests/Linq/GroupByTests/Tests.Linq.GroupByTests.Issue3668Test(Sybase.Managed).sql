@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 BeginTransaction(RepeatableRead)
 BeforeExecute
--- Sybase.Managed Sybase
+--  Sybase.Managed Sybase
 DECLARE @id Integer -- Int32
 SET     @id = 1
 DECLARE @name UniVarChar(4) -- String
@@ -23,7 +23,7 @@ WHERE
 BeforeExecute
 DisposeTransaction
 BeforeExecute
--- Sybase.Managed Sybase
+--  Sybase.Managed Sybase
 DECLARE @id Integer -- Int32
 SET     @id = 1
 DECLARE @name UniVarChar(4) -- String

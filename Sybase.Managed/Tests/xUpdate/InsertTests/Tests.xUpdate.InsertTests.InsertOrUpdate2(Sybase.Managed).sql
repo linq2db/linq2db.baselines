@@ -1,10 +1,10 @@
 ﻿BeforeExecute
--- Sybase.Managed Sybase
+--  Sybase.Managed Sybase
 
 sp_chgattribute Person, 'identity_burn_max', 0, '4'
 
 BeforeExecute
--- Sybase.Managed Sybase
+--  Sybase.Managed Sybase
 DECLARE @FirstName UniVarChar(4) -- String
 SET     @FirstName = 'test'
 DECLARE @LastName UniVarChar(7) -- String
@@ -32,7 +32,7 @@ VALUES
 SELECT @@IDENTITY
 
 BeforeExecute
--- Sybase.Managed Sybase
+--  Sybase.Managed Sybase
 DECLARE @id Integer -- Int32
 SET     @id = 5
 
@@ -57,7 +57,7 @@ BEGIN
 END
 
 BeforeExecute
--- Sybase.Managed Sybase
+--  Sybase.Managed Sybase
 DECLARE @id Integer -- Int32
 SET     @id = 5
 
@@ -70,7 +70,7 @@ WHERE
 	[p].[PersonID] = @id
 
 BeforeExecute
--- Sybase.Managed Sybase
+--  Sybase.Managed Sybase
 DECLARE @id Integer -- Int32
 SET     @id = 5
 
@@ -95,7 +95,7 @@ BEGIN
 END
 
 BeforeExecute
--- Sybase.Managed Sybase
+--  Sybase.Managed Sybase
 DECLARE @id Integer -- Int32
 SET     @id = 5
 

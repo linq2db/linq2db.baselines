@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Sybase.Managed Sybase (asynchronously)
+--  Sybase.Managed Sybase (asynchronously)
 
 INSERT INTO [LinqDataTypes]
 (
@@ -24,7 +24,7 @@ SELECT 4008,1008,'2001-01-11 01:11:21.100',1,'233bf399-9710-4e79-873d-2ec7bf1e00
 SELECT 4009,1009,'2001-01-11 01:11:21.100',1,'233bf399-9710-4e79-873d-2ec7bf1e0009',NULL,9,NULL
 
 BeforeExecute
--- Sybase.Managed Sybase (asynchronously)
+--  Sybase.Managed Sybase (asynchronously)
 
 DELETE FROM [LinqDataTypes]
 FROM
@@ -33,7 +33,7 @@ WHERE
 	[p].[ID] >= 4000
 
 BeforeExecute
--- Sybase.Managed Sybase (asynchronously)
+--  Sybase.Managed Sybase (asynchronously)
 
 INSERT INTO [LinqDataTypes]
 (
@@ -58,7 +58,7 @@ SELECT 4008,1008,'2001-01-11 01:11:21.100',1,'233bf399-9710-4e79-873d-2ec7bf1e00
 SELECT 4009,1009,'2001-01-11 01:11:21.100',1,'233bf399-9710-4e79-873d-2ec7bf1e0009',NULL,9,NULL
 
 BeforeExecute
--- Sybase.Managed Sybase (asynchronously)
+--  Sybase.Managed Sybase (asynchronously)
 
 DELETE FROM [LinqDataTypes]
 FROM

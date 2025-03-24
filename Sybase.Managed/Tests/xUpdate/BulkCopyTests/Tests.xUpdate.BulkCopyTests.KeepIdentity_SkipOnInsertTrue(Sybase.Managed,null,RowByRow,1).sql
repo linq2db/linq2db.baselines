@@ -1,15 +1,15 @@
 ﻿BeforeExecute
--- Sybase.Managed Sybase
+--  Sybase.Managed Sybase
 
 sp_chgattribute AllTypes, 'identity_burn_max', 0, '2'
 
 BeforeExecute
--- Sybase.Managed Sybase
+--  Sybase.Managed Sybase
 
 sp_chgattribute KeepIdentityTest, 'identity_burn_max', 0, '0'
 
 BeforeExecute
--- Sybase.Managed Sybase
+--  Sybase.Managed Sybase
 DECLARE @Value Integer -- Int32
 SET     @Value = 0
 
@@ -25,7 +25,7 @@ VALUES
 SELECT @@IDENTITY
 
 BeforeExecute
--- Sybase.Managed Sybase (asynchronously)
+--  Sybase.Managed Sybase (asynchronously)
 DECLARE @Value Integer -- Int32
 SET     @Value = 200
 
@@ -39,7 +39,7 @@ VALUES
 )
 
 BeforeExecute
--- Sybase.Managed Sybase (asynchronously)
+--  Sybase.Managed Sybase (asynchronously)
 DECLARE @Value Integer -- Int32
 SET     @Value = 300
 
@@ -53,7 +53,7 @@ VALUES
 )
 
 BeforeExecute
--- Sybase.Managed Sybase
+--  Sybase.Managed Sybase
 DECLARE @lastId Integer -- Int32
 SET     @lastId = 1
 
@@ -68,7 +68,7 @@ ORDER BY
 	[t1].[ID]
 
 BeforeExecute
--- Sybase.Managed Sybase
+--  Sybase.Managed Sybase
 DECLARE @lastId Integer -- Int32
 SET     @lastId = 1
 

@@ -1,11 +1,11 @@
 ﻿BeforeExecute
--- Sybase.Managed Sybase
+--  Sybase.Managed Sybase
 
 IF (OBJECT_ID(N'DropTableTest') IS NOT NULL)
 	DROP TABLE [DropTableTest]
 
 BeforeExecute
--- Sybase.Managed Sybase
+--  Sybase.Managed Sybase
 
 SELECT TOP 1
 	USER_NAME()
@@ -13,7 +13,7 @@ FROM
 	[LinqDataTypes] [t1]
 
 BeforeExecute
--- Sybase.Managed Sybase
+--  Sybase.Managed Sybase
 
 SELECT TOP 1
 	DB_NAME()
@@ -21,7 +21,7 @@ FROM
 	[LinqDataTypes] [t1]
 
 BeforeExecute
--- Sybase.Managed Sybase
+--  Sybase.Managed Sybase
 
 CREATE TABLE [DropTableTest]
 (
@@ -29,7 +29,7 @@ CREATE TABLE [DropTableTest]
 )
 
 BeforeExecute
--- Sybase.Managed Sybase
+--  Sybase.Managed Sybase
 
 INSERT INTO [TestDataCore].[dbo].[DropTableTest]
 (
@@ -41,7 +41,7 @@ VALUES
 )
 
 BeforeExecute
--- Sybase.Managed Sybase
+--  Sybase.Managed Sybase
 
 SELECT
 	[t1].[ID]
@@ -49,12 +49,12 @@ FROM
 	[TestDataCore].[dbo].[DropTableTest] [t1]
 
 BeforeExecute
--- Sybase.Managed Sybase
+--  Sybase.Managed Sybase
 
 DROP TABLE [TestDataCore].[dbo].[DropTableTest]
 
 BeforeExecute
--- Sybase.Managed Sybase
+--  Sybase.Managed Sybase
 
 SELECT
 	[t1].[ID]

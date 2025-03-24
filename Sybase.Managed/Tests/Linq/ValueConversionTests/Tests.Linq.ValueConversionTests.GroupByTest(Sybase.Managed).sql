@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 BeginTransaction(RepeatableRead)
 BeforeExecute
--- Sybase.Managed Sybase
+--  Sybase.Managed Sybase
 DECLARE @testedList UniVarChar(20) -- String
 SET     @testedList = '[{"Value":"Value1"}]'
 
@@ -25,7 +25,7 @@ WHERE
 BeforeExecute
 DisposeTransaction
 BeforeExecute
--- Sybase.Managed Sybase
+--  Sybase.Managed Sybase
 DECLARE @testedList UniVarChar(20) -- String
 SET     @testedList = '[{"Value":"Value1"}]'
 

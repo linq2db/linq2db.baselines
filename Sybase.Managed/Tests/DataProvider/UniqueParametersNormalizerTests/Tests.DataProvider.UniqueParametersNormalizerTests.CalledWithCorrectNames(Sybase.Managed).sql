@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Sybase.Managed Sybase (asynchronously)
+--  Sybase.Managed Sybase (asynchronously)
 DECLARE @search UniVarChar(5) -- String
 SET     @search = 'test%'
 DECLARE @search_1 UniVarChar(4) -- String
@@ -31,19 +31,19 @@ WHERE
 	[row1_2].[Field1] LIKE @search_2 ESCAPE '~'
 
 BeforeExecute
--- Sybase.Managed Sybase (asynchronously)
+--  Sybase.Managed Sybase (asynchronously)
 
 IF (OBJECT_ID(N'table3') IS NOT NULL)
 	DROP TABLE [table3]
 
 BeforeExecute
--- Sybase.Managed Sybase (asynchronously)
+--  Sybase.Managed Sybase (asynchronously)
 
 IF (OBJECT_ID(N'table2') IS NOT NULL)
 	DROP TABLE [table2]
 
 BeforeExecute
--- Sybase.Managed Sybase (asynchronously)
+--  Sybase.Managed Sybase (asynchronously)
 
 IF (OBJECT_ID(N'table1') IS NOT NULL)
 	DROP TABLE [table1]

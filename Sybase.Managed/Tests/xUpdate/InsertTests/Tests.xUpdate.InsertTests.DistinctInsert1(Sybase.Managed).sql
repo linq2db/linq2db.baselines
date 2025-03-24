@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 BeginTransaction
 BeforeExecute
--- Sybase.Managed Sybase
+--  Sybase.Managed Sybase
 
 DELETE FROM [LinqDataTypes]
 FROM
@@ -10,7 +10,7 @@ WHERE
 	[c_1].[ID] > 1000
 
 BeforeExecute
--- Sybase.Managed Sybase
+--  Sybase.Managed Sybase
 
 INSERT INTO [LinqDataTypes]
 (
@@ -31,7 +31,7 @@ FROM
 	) [t2]
 
 BeforeExecute
--- Sybase.Managed Sybase
+--  Sybase.Managed Sybase
 
 DELETE FROM [LinqDataTypes]
 FROM

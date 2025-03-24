@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Sybase.Managed Sybase
+--  Sybase.Managed Sybase
 
 DELETE FROM [Person]
 FROM
@@ -8,7 +8,7 @@ WHERE
 	[t1].[FirstName] LIKE 'Insert16%' ESCAPE '~'
 
 BeforeExecute
--- Sybase.Managed Sybase
+--  Sybase.Managed Sybase
 DECLARE @name UniVarChar(8) -- String
 SET     @name = 'Insert16'
 DECLARE @idx Integer -- Int32
@@ -28,7 +28,7 @@ VALUES
 )
 
 BeforeExecute
--- Sybase.Managed Sybase
+--  Sybase.Managed Sybase
 
 SELECT
 	COUNT(*)
@@ -38,7 +38,7 @@ WHERE
 	[t1].[FirstName] LIKE 'Insert16%' ESCAPE '~'
 
 BeforeExecute
--- Sybase.Managed Sybase
+--  Sybase.Managed Sybase
 
 DELETE FROM [Person]
 FROM

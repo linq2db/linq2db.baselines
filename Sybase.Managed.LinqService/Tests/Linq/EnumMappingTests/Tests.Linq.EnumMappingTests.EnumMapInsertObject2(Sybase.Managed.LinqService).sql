@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Sybase.Managed Sybase
+--  Sybase.Managed Sybase
 DECLARE @p Integer -- Int32
 SET     @p = 102
 
@@ -10,7 +10,7 @@ WHERE
 	[r].[ID] >= 101 AND [r].[ID] < @p
 
 BeforeExecute
--- Sybase.Managed Sybase
+--  Sybase.Managed Sybase
 DECLARE @Id Integer -- Int32
 SET     @Id = 101
 DECLARE @TestField BigInt -- Int64
@@ -32,7 +32,7 @@ VALUES
 )
 
 BeforeExecute
--- Sybase.Managed Sybase
+--  Sybase.Managed Sybase
 
 SELECT
 	COUNT(*)
@@ -42,7 +42,7 @@ WHERE
 	[r].[ID] = 101 AND [r].[BigIntValue] = 12
 
 BeforeExecute
--- Sybase.Managed Sybase
+--  Sybase.Managed Sybase
 DECLARE @p Integer -- Int32
 SET     @p = 102
 

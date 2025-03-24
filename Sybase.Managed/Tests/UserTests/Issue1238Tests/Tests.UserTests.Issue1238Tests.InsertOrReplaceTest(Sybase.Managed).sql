@@ -1,14 +1,14 @@
 ﻿BeforeExecute
 BeginTransaction
 BeforeExecute
--- Sybase.Managed Sybase
+--  Sybase.Managed Sybase
 
 DELETE FROM [InheritanceParent]
 FROM
 	[InheritanceParent] [t1]
 
 BeforeExecute
--- Sybase.Managed Sybase
+--  Sybase.Managed Sybase
 DECLARE @Data Integer -- Int32
 SET     @Data = 1
 DECLARE @Key1 Integer -- Int32
@@ -45,7 +45,7 @@ BEGIN
 END
 
 BeforeExecute
--- Sybase.Managed Sybase
+--  Sybase.Managed Sybase
 
 SELECT
 	COUNT(*)
@@ -53,7 +53,7 @@ FROM
 	[InheritanceParent] [t1]
 
 BeforeExecute
--- Sybase.Managed Sybase
+--  Sybase.Managed Sybase
 DECLARE @Data Integer -- Int32
 SET     @Data = 1
 DECLARE @Key1 Integer -- Int32
@@ -90,7 +90,7 @@ BEGIN
 END
 
 BeforeExecute
--- Sybase.Managed Sybase
+--  Sybase.Managed Sybase
 
 SELECT
 	COUNT(*)

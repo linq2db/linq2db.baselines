@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Sybase.Managed Sybase
+--  Sybase.Managed Sybase
 
 DELETE FROM [Parent]
 FROM
@@ -8,7 +8,7 @@ WHERE
 	[t1].[ParentID] > 1000
 
 BeforeExecute
--- Sybase.Managed Sybase
+--  Sybase.Managed Sybase
 
 UPDATE
 	[Parent]
@@ -22,7 +22,7 @@ WHERE
 	[c_2].[ChildID] = 11
 
 BeforeExecute
--- Sybase.Managed Sybase
+--  Sybase.Managed Sybase
 DECLARE @ParentID Integer -- Int32
 SET     @ParentID = 1
 

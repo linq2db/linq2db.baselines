@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Sybase.Managed Sybase
+--  Sybase.Managed Sybase
 
 INSERT INTO [Issue4460Table]
 (
@@ -11,7 +11,7 @@ INSERT INTO [Issue4460Table]
 SELECT 1,'GrandChild','Tom','Black'
 
 BeforeExecute
--- Sybase.Managed Sybase
+--  Sybase.Managed Sybase
 
 SELECT
 	[t1].[Code],

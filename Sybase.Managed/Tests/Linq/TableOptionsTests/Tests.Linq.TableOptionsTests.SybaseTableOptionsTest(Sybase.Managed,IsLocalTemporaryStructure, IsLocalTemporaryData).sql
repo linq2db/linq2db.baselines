@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Sybase.Managed Sybase
+--  Sybase.Managed Sybase
 
 CREATE TABLE #TestTable
 (
@@ -8,7 +8,7 @@ CREATE TABLE #TestTable
 )
 
 BeforeExecute
--- Sybase.Managed Sybase
+--  Sybase.Managed Sybase
 
 IF (OBJECT_ID(N'#TestTable') IS NOT NULL)
 	DROP TABLE #TestTable

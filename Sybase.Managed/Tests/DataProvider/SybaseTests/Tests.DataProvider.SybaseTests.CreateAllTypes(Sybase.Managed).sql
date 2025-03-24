@@ -1,10 +1,10 @@
 ﻿BeforeExecute
--- Sybase.Managed Sybase
+--  Sybase.Managed Sybase
 
 DROP TABLE [AllTypeCreateTest]
 
 BeforeExecute
--- Sybase.Managed Sybase
+--  Sybase.Managed Sybase
 
 CREATE TABLE [AllTypeCreateTest]
 (
@@ -43,7 +43,7 @@ CREATE TABLE [AllTypeCreateTest]
 )
 
 BeforeExecute
--- Sybase.Managed Sybase
+--  Sybase.Managed Sybase
 
 SELECT
 	[t1].[ID],
@@ -80,7 +80,7 @@ FROM
 	[AllTypeCreateTest] [t1]
 
 BeforeExecute
--- Sybase.Managed Sybase
+--  Sybase.Managed Sybase
 
 DROP TABLE [AllTypeCreateTest]
 

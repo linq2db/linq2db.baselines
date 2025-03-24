@@ -1,12 +1,12 @@
 ﻿BeforeExecute
--- Sybase.Managed Sybase
+--  Sybase.Managed Sybase
 
 DELETE FROM [TestMergeIdentity]
 FROM
 	[TestMergeIdentity] [t1]
 
 BeforeExecute
--- Sybase.Managed Sybase
+--  Sybase.Managed Sybase
 DECLARE @Field Integer -- Int32
 SET     @Field = NULL
 
@@ -20,7 +20,7 @@ VALUES
 )
 
 BeforeExecute
--- Sybase.Managed Sybase
+--  Sybase.Managed Sybase
 
 SELECT
 	MAX([t1].[Id])
@@ -28,7 +28,7 @@ FROM
 	[TestMergeIdentity] [t1]
 
 BeforeExecute
--- Sybase.Managed Sybase
+--  Sybase.Managed Sybase
 
 MERGE INTO [TestMergeIdentity] [Target]
 USING (
@@ -54,7 +54,7 @@ SET
 	[Field] = [Source].[source_Field]
 
 BeforeExecute
--- Sybase.Managed Sybase
+--  Sybase.Managed Sybase
 
 SELECT
 	[t1].[Id],

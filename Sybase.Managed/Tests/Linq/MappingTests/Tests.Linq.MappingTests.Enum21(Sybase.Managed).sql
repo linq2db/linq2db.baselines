@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Sybase.Managed Sybase
+--  Sybase.Managed Sybase
 DECLARE @gender Char(1) -- AnsiStringFixedLength
 SET     @gender = 'M'
 

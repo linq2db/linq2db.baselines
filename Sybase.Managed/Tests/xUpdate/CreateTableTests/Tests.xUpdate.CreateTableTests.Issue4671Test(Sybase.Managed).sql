@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Sybase.Managed Sybase
+--  Sybase.Managed Sybase
 
 CREATE TABLE #Issue4671EntityTMP
 (
@@ -10,7 +10,7 @@ CREATE TABLE #Issue4671EntityTMP
 )
 
 BeforeExecute
--- Sybase.Managed Sybase
+--  Sybase.Managed Sybase
 
 INSERT INTO [Issue4671Entity]
 (
@@ -22,7 +22,7 @@ VALUES
 )
 
 BeforeExecute
--- Sybase.Managed Sybase
+--  Sybase.Managed Sybase
 
 INSERT INTO #Issue4671EntityTMP
 (
@@ -34,7 +34,7 @@ VALUES
 )
 
 BeforeExecute
--- Sybase.Managed Sybase
+--  Sybase.Managed Sybase
 
 SELECT TOP 2
 	[t1].[Id],
@@ -43,7 +43,7 @@ FROM
 	[Issue4671Entity] [t1]
 
 BeforeExecute
--- Sybase.Managed Sybase
+--  Sybase.Managed Sybase
 
 SELECT TOP 2
 	[t1].[Id],
@@ -52,7 +52,7 @@ FROM
 	#Issue4671EntityTMP [t1]
 
 BeforeExecute
--- Sybase.Managed Sybase
+--  Sybase.Managed Sybase
 
 IF (OBJECT_ID(N'#Issue4671EntityTMP') IS NOT NULL)
 	DROP TABLE #Issue4671EntityTMP

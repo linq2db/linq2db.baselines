@@ -1,10 +1,10 @@
 ﻿BeforeExecute
--- Sybase.Managed Sybase
+--  Sybase.Managed Sybase
 
 sp_chgattribute Person, 'identity_burn_max', 0, '4'
 
 BeforeExecute
--- Sybase.Managed Sybase
+--  Sybase.Managed Sybase
 DECLARE @FirstName UniVarChar(21) -- String
 SET     @FirstName = 'test_inherited_insert'
 DECLARE @LastName UniVarChar(4) -- String
@@ -32,7 +32,7 @@ VALUES
 SELECT @@IDENTITY
 
 BeforeExecute
--- Sybase.Managed Sybase
+--  Sybase.Managed Sybase
 
 SELECT TOP 1
 	[t1].[FirstName],
@@ -46,7 +46,7 @@ WHERE
 	[t1].[FirstName] = 'test_inherited_insert'
 
 BeforeExecute
--- Sybase.Managed Sybase
+--  Sybase.Managed Sybase
 DECLARE @FirstName UniVarChar(21) -- String
 SET     @FirstName = 'test_inherited_insert'
 DECLARE @LastName UniVarChar(4) -- String
@@ -69,7 +69,7 @@ WHERE
 	[Person].[PersonID] = @ID
 
 BeforeExecute
--- Sybase.Managed Sybase
+--  Sybase.Managed Sybase
 
 SELECT TOP 1
 	[t1].[FirstName],
@@ -83,7 +83,7 @@ WHERE
 	[t1].[FirstName] = 'test_inherited_insert'
 
 BeforeExecute
--- Sybase.Managed Sybase
+--  Sybase.Managed Sybase
 DECLARE @ID Integer -- Int32
 SET     @ID = 5
 

@@ -1,12 +1,12 @@
 ﻿BeforeExecute
--- Sybase.Managed Sybase
+--  Sybase.Managed Sybase
 
 DELETE FROM [CollatedTable]
 FROM
 	[CollatedTable] [t1]
 
 BeforeExecute
--- Sybase.Managed Sybase
+--  Sybase.Managed Sybase
 DECLARE @Id Integer -- Int32
 SET     @Id = 1
 DECLARE @CaseSensitive UniVarChar(10) -- String
@@ -28,7 +28,7 @@ VALUES
 )
 
 BeforeExecute
--- Sybase.Managed Sybase
+--  Sybase.Managed Sybase
 
 SELECT
 	COUNT(*)
@@ -38,7 +38,7 @@ WHERE
 	[r].[CaseSensitive] LIKE '%stString' ESCAPE '~'
 
 BeforeExecute
--- Sybase.Managed Sybase
+--  Sybase.Managed Sybase
 
 SELECT
 	COUNT(*)
@@ -48,7 +48,7 @@ WHERE
 	[r].[CaseInsensitive] LIKE '%stString' ESCAPE '~'
 
 BeforeExecute
--- Sybase.Managed Sybase
+--  Sybase.Managed Sybase
 
 SELECT
 	COUNT(*)
@@ -58,7 +58,7 @@ WHERE
 	[r].[CaseSensitive] LIKE '%ststring' ESCAPE '~'
 
 BeforeExecute
--- Sybase.Managed Sybase
+--  Sybase.Managed Sybase
 
 SELECT
 	COUNT(*)

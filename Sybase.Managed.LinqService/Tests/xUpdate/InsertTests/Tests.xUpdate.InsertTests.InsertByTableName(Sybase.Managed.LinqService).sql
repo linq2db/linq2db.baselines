@@ -1,11 +1,11 @@
 ﻿BeforeExecute
--- Sybase.Managed Sybase
+--  Sybase.Managed Sybase
 
 IF (OBJECT_ID(N'xxPerson') IS NOT NULL)
 	DROP TABLE [xxPerson]
 
 BeforeExecute
--- Sybase.Managed Sybase
+--  Sybase.Managed Sybase
 
 CREATE TABLE [xxPerson]
 (
@@ -19,7 +19,7 @@ CREATE TABLE [xxPerson]
 )
 
 BeforeExecute
--- Sybase.Managed Sybase
+--  Sybase.Managed Sybase
 DECLARE @FirstName UniVarChar(6) -- String
 SET     @FirstName = 'Steven'
 DECLARE @LastName UniVarChar(4) -- String
@@ -45,35 +45,7 @@ VALUES
 )
 
 BeforeExecute
--- Sybase.Managed Sybase
-DECLARE @FirstName UniVarChar(6) -- String
-SET     @FirstName = 'Steven'
-DECLARE @LastName UniVarChar(4) -- String
-SET     @LastName = 'King'
-DECLARE @MiddleName UniVarChar -- String
-SET     @MiddleName = NULL
-DECLARE @Gender Char(1) -- AnsiStringFixedLength
-SET     @Gender = 'M'
-
-INSERT INTO [xxPerson]
-(
-	[FirstName],
-	[LastName],
-	[MiddleName],
-	[Gender]
-)
-VALUES
-(
-	@FirstName,
-	@LastName,
-	@MiddleName,
-	@Gender
-)
-
-SELECT @@IDENTITY
-
-BeforeExecute
--- Sybase.Managed Sybase
+--  Sybase.Managed Sybase
 DECLARE @FirstName UniVarChar(6) -- String
 SET     @FirstName = 'Steven'
 DECLARE @LastName UniVarChar(4) -- String
@@ -101,7 +73,35 @@ VALUES
 SELECT @@IDENTITY
 
 BeforeExecute
--- Sybase.Managed Sybase
+--  Sybase.Managed Sybase
+DECLARE @FirstName UniVarChar(6) -- String
+SET     @FirstName = 'Steven'
+DECLARE @LastName UniVarChar(4) -- String
+SET     @LastName = 'King'
+DECLARE @MiddleName UniVarChar -- String
+SET     @MiddleName = NULL
+DECLARE @Gender Char(1) -- AnsiStringFixedLength
+SET     @Gender = 'M'
+
+INSERT INTO [xxPerson]
+(
+	[FirstName],
+	[LastName],
+	[MiddleName],
+	[Gender]
+)
+VALUES
+(
+	@FirstName,
+	@LastName,
+	@MiddleName,
+	@Gender
+)
+
+SELECT @@IDENTITY
+
+BeforeExecute
+--  Sybase.Managed Sybase
 
 SELECT
 	COUNT(*)
@@ -109,7 +109,7 @@ FROM
 	[xxPerson] [t1]
 
 BeforeExecute
--- Sybase.Managed Sybase
+--  Sybase.Managed Sybase
 
 SELECT
 	COUNT(*)
@@ -120,12 +120,12 @@ WHERE
 	[p].[Gender] = 'M'
 
 BeforeExecute
--- Sybase.Managed Sybase
+--  Sybase.Managed Sybase
 
 DROP TABLE [xxPerson]
 
 BeforeExecute
--- Sybase.Managed Sybase
+--  Sybase.Managed Sybase
 
 IF (OBJECT_ID(N'xxPerson') IS NOT NULL)
 	DROP TABLE [xxPerson]

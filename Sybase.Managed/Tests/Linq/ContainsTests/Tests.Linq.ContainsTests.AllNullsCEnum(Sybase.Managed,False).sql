@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Sybase.Managed Sybase
+--  Sybase.Managed Sybase
 DECLARE @In VarChar -- AnsiString
 SET     @In = NULL
 
@@ -11,7 +11,7 @@ WHERE
 	[s].[CEnum] IN (@In, @In)
 
 BeforeExecute
--- Sybase.Managed Sybase
+--  Sybase.Managed Sybase
 DECLARE @NotIn VarChar -- AnsiString
 SET     @NotIn = NULL
 
