@@ -6,5 +6,5 @@ SELECT
 FROM
 	"LinqDataTypes" p
 WHERE
-	Length(CAST(p."MoneyValue" AS VarChar(255))) > 0
+	LENGTH(CAST(p."MoneyValue" AS VarChar(255))) > 0
 
