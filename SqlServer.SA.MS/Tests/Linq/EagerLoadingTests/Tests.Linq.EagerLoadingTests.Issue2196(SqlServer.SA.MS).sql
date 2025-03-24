@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 BeginTransaction(RepeatableRead)
 BeforeExecute
--- SqlServer.SA.MS SqlServer.2019
+--  SqlServer.SA.MS SqlServer.2019
 DECLARE @eventId Int -- Int32
 SET     @eventId = 1
 
@@ -20,7 +20,7 @@ WHERE
 BeforeExecute
 DisposeTransaction
 BeforeExecute
--- SqlServer.SA.MS SqlServer.2019
+--  SqlServer.SA.MS SqlServer.2019
 DECLARE @eventId Int -- Int32
 SET     @eventId = 1
 

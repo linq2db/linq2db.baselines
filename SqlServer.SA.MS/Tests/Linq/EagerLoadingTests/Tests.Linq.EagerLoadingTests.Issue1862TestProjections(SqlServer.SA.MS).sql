@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 BeginTransaction(RepeatableRead)
 BeforeExecute
--- SqlServer.SA.MS SqlServer.2019
+--  SqlServer.SA.MS SqlServer.2019
 DECLARE @blogId Int -- Int32
 SET     @blogId = 1
 
@@ -34,7 +34,7 @@ ORDER BY
 	[d_1].[TagId]
 
 BeforeExecute
--- SqlServer.SA.MS SqlServer.2019
+--  SqlServer.SA.MS SqlServer.2019
 DECLARE @blogId Int -- Int32
 SET     @blogId = 1
 
@@ -59,7 +59,7 @@ ORDER BY
 BeforeExecute
 DisposeTransaction
 BeforeExecute
--- SqlServer.SA.MS SqlServer.2019
+--  SqlServer.SA.MS SqlServer.2019
 DECLARE @blogId Int -- Int32
 SET     @blogId = 1
 

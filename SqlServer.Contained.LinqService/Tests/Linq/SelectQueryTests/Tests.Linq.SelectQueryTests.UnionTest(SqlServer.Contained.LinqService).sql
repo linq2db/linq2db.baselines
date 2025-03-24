@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.Contained SqlServer.2019
+--  SqlServer.Contained SqlServer.2019
 
 SELECT
 	DateAdd(day, [t].[Value], CURRENT_TIMESTAMP),
@@ -14,7 +14,7 @@ SELECT
 	DateAdd(day, 4, CURRENT_TIMESTAMP)
 
 BeforeExecute
--- SqlServer.Contained SqlServer.2019
+--  SqlServer.Contained SqlServer.2019
 
 SELECT
 	[v_1].[Value2]

@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 BeginTransaction(RepeatableRead)
 BeforeExecute
--- SqlServer.Contained SqlServer.2019
+--  SqlServer.Contained SqlServer.2019
 
 SELECT
 	[m_1].[ParentID],
@@ -21,7 +21,7 @@ FROM
 BeforeExecute
 DisposeTransaction
 BeforeExecute
--- SqlServer.Contained SqlServer.2019
+--  SqlServer.Contained SqlServer.2019
 
 SELECT
 	[t].[ParentID],

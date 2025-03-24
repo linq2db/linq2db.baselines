@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.SA SqlServer.2019
+--  SqlServer.SA SqlServer.2019
 
 SELECT
 	Coalesce([t].[Nullable1], [t].[Nullable2], [t].[Nullable3], [t].[Id]),
@@ -14,7 +14,7 @@ FROM
 	[CoalesceNullableFields] [t]
 
 BeforeExecute
--- SqlServer.SA SqlServer.2019
+--  SqlServer.SA SqlServer.2019
 
 SELECT
 	[t1].[Id],

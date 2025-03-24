@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.SA SqlServer.2019
+--  SqlServer.SA SqlServer.2019
 
 UPDATE
 	[Person]
@@ -7,7 +7,7 @@ SET
 	[FirstName] = [Person].[FirstName]
 
 BeforeExecute
--- SqlServer.SA SqlServer.2019
+--  SqlServer.SA SqlServer.2019
 
 UPDATE
 	[t1]

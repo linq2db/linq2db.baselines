@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.SA SqlServer.2019
+--  SqlServer.SA SqlServer.2019
 
 SELECT
 	[t1].[ID],
@@ -11,7 +11,7 @@ WHERE
 	[t1].[TestField] = 0
 
 BeforeExecute
--- SqlServer.SA SqlServer.2019
+--  SqlServer.SA SqlServer.2019
 
 SELECT
 	[t1].[ID],

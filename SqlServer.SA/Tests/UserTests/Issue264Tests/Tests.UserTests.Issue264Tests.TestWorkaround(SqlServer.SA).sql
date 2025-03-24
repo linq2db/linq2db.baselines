@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.SA SqlServer.2019
+--  SqlServer.SA SqlServer.2019
 
 SELECT
 	COUNT(*)
@@ -21,7 +21,7 @@ FROM
 	) [t3]
 
 BeforeExecute
--- SqlServer.SA SqlServer.2019
+--  SqlServer.SA SqlServer.2019
 
 SELECT
 	[t2].[month_1],

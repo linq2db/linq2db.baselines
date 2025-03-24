@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.Contained SqlServer.2019
+--  SqlServer.Contained SqlServer.2019
 DECLARE @Id Int -- Int32
 SET     @Id = 6
 DECLARE @Title NVarChar(4000) -- String
@@ -23,7 +23,7 @@ VALUES
 BeforeExecute
 BeginTransaction(RepeatableRead)
 BeforeExecute
--- SqlServer.Contained SqlServer.2019
+--  SqlServer.Contained SqlServer.2019
 
 SELECT
 	[m_1].[Id],
@@ -40,7 +40,7 @@ FROM
 		INNER JOIN [Message] [d] ON [d].[TopicId] = [m_1].[Id]
 
 BeforeExecute
--- SqlServer.Contained SqlServer.2019
+--  SqlServer.Contained SqlServer.2019
 
 SELECT TOP (1)
 	[x].[Id],

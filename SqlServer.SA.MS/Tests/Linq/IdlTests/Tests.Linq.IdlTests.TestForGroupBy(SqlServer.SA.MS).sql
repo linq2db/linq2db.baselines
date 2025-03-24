@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 BeginTransaction(RepeatableRead)
 BeforeExecute
--- SqlServer.SA.MS SqlServer.2019
+--  SqlServer.SA.MS SqlServer.2019
 
 SELECT
 	[m_1].[Key_1],
@@ -22,7 +22,7 @@ WHERE
 BeforeExecute
 DisposeTransaction
 BeforeExecute
--- SqlServer.SA.MS SqlServer.2019
+--  SqlServer.SA.MS SqlServer.2019
 
 SELECT
 	[x].[ChildID]
@@ -36,7 +36,7 @@ GROUP BY
 BeforeExecute
 BeginTransaction(RepeatableRead)
 BeforeExecute
--- SqlServer.SA.MS SqlServer.2019
+--  SqlServer.SA.MS SqlServer.2019
 
 SELECT
 	[m_1].[Key_1],
@@ -57,7 +57,7 @@ WHERE
 BeforeExecute
 DisposeTransaction
 BeforeExecute
--- SqlServer.SA.MS SqlServer.2019
+--  SqlServer.SA.MS SqlServer.2019
 
 SELECT
 	[x].[ChildID]

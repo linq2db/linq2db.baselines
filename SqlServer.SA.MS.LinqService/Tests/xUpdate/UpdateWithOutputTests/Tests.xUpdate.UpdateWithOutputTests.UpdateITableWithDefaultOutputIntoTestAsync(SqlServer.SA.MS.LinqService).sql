@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.SA.MS SqlServer.2019
+--  SqlServer.SA.MS SqlServer.2019
 
 SELECT
 	[t1].[Id],
@@ -9,7 +9,7 @@ FROM
 	[DestinationTable] [t1]
 
 BeforeExecute
--- SqlServer.SA.MS SqlServer.2019
+--  SqlServer.SA.MS SqlServer.2019
 
 SELECT
 	[t1].[Id],

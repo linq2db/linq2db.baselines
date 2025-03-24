@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.SA.MS SqlServer.2019
+--  SqlServer.SA.MS SqlServer.2019
 
 CREATE TABLE [tempdb]..[#TableWithData_target]
 (
@@ -9,7 +9,7 @@ CREATE TABLE [tempdb]..[#TableWithData_target]
 )
 
 BeforeExecute
--- SqlServer.SA.MS SqlServer.2019
+--  SqlServer.SA.MS SqlServer.2019
 
 SELECT
 	[s].[Id],
@@ -21,7 +21,7 @@ WHERE
 	[s].[Id] > 3
 
 BeforeExecute
--- SqlServer.SA.MS SqlServer.2019 (asynchronously)
+--  SqlServer.SA.MS SqlServer.2019 (asynchronously)
 
 DELETE [s]
 OUTPUT
@@ -40,7 +40,7 @@ WHERE
 	[s].[Id] > 3
 
 BeforeExecute
--- SqlServer.SA.MS SqlServer.2019
+--  SqlServer.SA.MS SqlServer.2019
 
 SELECT
 	[t1].[Id],
@@ -50,7 +50,7 @@ FROM
 	[tempdb]..[#TableWithData_target] [t1]
 
 BeforeExecute
--- SqlServer.SA.MS SqlServer.2019
+--  SqlServer.SA.MS SqlServer.2019
 
 DROP TABLE IF EXISTS [tempdb]..[#TableWithData_target]
 

@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.SA SqlServer.2019
+--  SqlServer.SA SqlServer.2019
 
 INSERT INTO [Table2]
 (
@@ -11,7 +11,7 @@ FROM
 	[Table1] [t]
 
 BeforeExecute
--- SqlServer.SA SqlServer.2019
+--  SqlServer.SA SqlServer.2019
 
 SELECT
 	[t1].[ID],

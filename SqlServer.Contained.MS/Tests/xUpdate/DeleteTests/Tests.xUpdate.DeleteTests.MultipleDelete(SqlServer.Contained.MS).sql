@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.Contained.MS SqlServer.2019
+--  SqlServer.Contained.MS SqlServer.2019
 
 DELETE [c_1]
 FROM
@@ -11,7 +11,7 @@ BeforeExecute
 INSERT BULK [Parent](ParentID, Value1)
 
 BeforeExecute
--- SqlServer.Contained.MS SqlServer.2019
+--  SqlServer.Contained.MS SqlServer.2019
 
 DELETE [p]
 FROM
@@ -20,7 +20,7 @@ WHERE
 	[p].[ParentID] = 1000 AND [p].[Value1] IS NULL OR [p].[ParentID] = 1001 AND [p].[Value1] IS NULL
 
 BeforeExecute
--- SqlServer.Contained.MS SqlServer.2019
+--  SqlServer.Contained.MS SqlServer.2019
 
 DELETE [c_1]
 FROM

@@ -1,12 +1,12 @@
 ﻿BeforeExecute
--- SqlServer.Contained SqlServer.2019
+--  SqlServer.Contained SqlServer.2019
 
 DBCC CHECKIDENT ('Person', RESEED, 4)
 
 BeforeExecute
 BeginTransaction
 BeforeExecute
--- SqlServer.Contained SqlServer.2019
+--  SqlServer.Contained SqlServer.2019
 
 MERGE INTO [Patient] [Target]
 USING (
@@ -34,7 +34,7 @@ WHEN MATCHED AND [Source].[source_Person_FirstName] = N'first 4' AND
 ;
 
 BeforeExecute
--- SqlServer.Contained SqlServer.2019
+--  SqlServer.Contained SqlServer.2019
 
 SELECT
 	[t1].[PersonID],

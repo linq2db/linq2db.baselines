@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.Contained.MS SqlServer.2019
+--  SqlServer.Contained.MS SqlServer.2019
 DECLARE @param SmallInt -- Int16
 SET     @param = 1
 
@@ -20,7 +20,7 @@ WHERE
 	CAST(@param AS Int) = [t1].[SmallIntValue]
 
 BeforeExecute
--- SqlServer.Contained.MS SqlServer.2019
+--  SqlServer.Contained.MS SqlServer.2019
 
 SELECT
 	[t1].[ID],

@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 BeginTransaction(RepeatableRead)
 BeforeExecute
--- SqlServer.Contained SqlServer.2019
+--  SqlServer.Contained SqlServer.2019
 DECLARE @n Int -- Int32
 SET     @n = 1
 
@@ -23,7 +23,7 @@ FROM
 BeforeExecute
 DisposeTransaction
 BeforeExecute
--- SqlServer.Contained SqlServer.2019
+--  SqlServer.Contained SqlServer.2019
 
 SELECT
 	[p].[ParentID],

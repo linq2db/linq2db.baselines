@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.Contained SqlServer.2019
+--  SqlServer.Contained SqlServer.2019
 
 DELETE [c_1]
 FROM
@@ -8,7 +8,7 @@ WHERE
 	[c_1].[ChildID] > 1000
 
 BeforeExecute
--- SqlServer.Contained SqlServer.2019
+--  SqlServer.Contained SqlServer.2019
 
 CREATE TABLE [tempdb]..[#TInserted]
 (
@@ -19,7 +19,7 @@ CREATE TABLE [tempdb]..[#TInserted]
 )
 
 BeforeExecute
--- SqlServer.Contained SqlServer.2019
+--  SqlServer.Contained SqlServer.2019
 DECLARE @param Int -- Int32
 SET     @param = 200
 DECLARE @id Int -- Int32
@@ -47,7 +47,7 @@ WHERE
 	[c_1].[ChildID] = 11
 
 BeforeExecute
--- SqlServer.Contained SqlServer.2019
+--  SqlServer.Contained SqlServer.2019
 DECLARE @param Int -- Int32
 SET     @param = 200
 
@@ -58,7 +58,7 @@ FROM
 	[tempdb]..[#TInserted] [c_1]
 
 BeforeExecute
--- SqlServer.Contained SqlServer.2019
+--  SqlServer.Contained SqlServer.2019
 
 SELECT
 	[c_1].[ParentID],
@@ -69,12 +69,12 @@ WHERE
 	[c_1].[ChildID] > 1000
 
 BeforeExecute
--- SqlServer.Contained SqlServer.2019
+--  SqlServer.Contained SqlServer.2019
 
 DROP TABLE [tempdb]..[#TInserted]
 
 BeforeExecute
--- SqlServer.Contained SqlServer.2019
+--  SqlServer.Contained SqlServer.2019
 
 DELETE [c_1]
 FROM

@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.Contained SqlServer.2019
+--  SqlServer.Contained SqlServer.2019
 DECLARE @Value Int -- Int32
 SET     @Value = 1
 
@@ -13,7 +13,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.Contained SqlServer.2019
+--  SqlServer.Contained SqlServer.2019
 
 INSERT INTO [TableWithIdentity]
 (
@@ -25,7 +25,7 @@ FROM
 	[TableWithIdentitySrc] [t1]
 
 BeforeExecute
--- SqlServer.Contained SqlServer.2019
+--  SqlServer.Contained SqlServer.2019
 
 SELECT
 	[t1].[Id],

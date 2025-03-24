@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.SA.MS SqlServer.2019
+--  SqlServer.SA.MS SqlServer.2019
 
 CREATE TABLE [tempdb]..[##TestTable]
 (
@@ -8,7 +8,7 @@ CREATE TABLE [tempdb]..[##TestTable]
 )
 
 BeforeExecute
--- SqlServer.SA.MS SqlServer.2019
+--  SqlServer.SA.MS SqlServer.2019
 
 DROP TABLE IF EXISTS [tempdb]..[##TestTable]
 

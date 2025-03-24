@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.SA.MS SqlServer.2019
+--  SqlServer.SA.MS SqlServer.2019
 DECLARE @Value2 NVarChar(200) -- String
 SET     @Value2 = N'[{"Value":"updated"}]'
 DECLARE @EnumWithNull VarChar(50) -- AnsiString
@@ -18,7 +18,7 @@ WHERE
 	[ValueConversion].[Id] = 1
 
 BeforeExecute
--- SqlServer.SA.MS SqlServer.2019
+--  SqlServer.SA.MS SqlServer.2019
 
 SELECT TOP (1)
 	[e].[Id],
@@ -37,7 +37,7 @@ WHERE
 	[e].[Id] = 1
 
 BeforeExecute
--- SqlServer.SA.MS SqlServer.2019
+--  SqlServer.SA.MS SqlServer.2019
 DECLARE @Value1 NVarChar(200) -- String
 SET     @Value1 = N'{"some":"updated2}"}'
 DECLARE @Value2 NVarChar(200) -- String
@@ -75,7 +75,7 @@ WHERE
 	[ValueConversion].[Id] = @Id
 
 BeforeExecute
--- SqlServer.SA.MS SqlServer.2019
+--  SqlServer.SA.MS SqlServer.2019
 
 SELECT TOP (1)
 	[e].[Id],
@@ -94,7 +94,7 @@ WHERE
 	[e].[Id] = 2
 
 BeforeExecute
--- SqlServer.SA.MS SqlServer.2019
+--  SqlServer.SA.MS SqlServer.2019
 DECLARE @Value1 NVarChar(200) -- String
 SET     @Value1 = NULL
 DECLARE @Value2 NVarChar(200) -- String
@@ -132,7 +132,7 @@ WHERE
 	[ValueConversion].[Id] = @Id
 
 BeforeExecute
--- SqlServer.SA.MS SqlServer.2019
+--  SqlServer.SA.MS SqlServer.2019
 
 SELECT TOP (1)
 	[e].[Id],

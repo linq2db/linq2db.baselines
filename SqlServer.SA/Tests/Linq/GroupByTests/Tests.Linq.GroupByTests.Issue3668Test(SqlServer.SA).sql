@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 BeginTransaction(RepeatableRead)
 BeforeExecute
--- SqlServer.SA SqlServer.2019
+--  SqlServer.SA SqlServer.2019
 DECLARE @id Int -- Int32
 SET     @id = 1
 DECLARE @name NVarChar(4000) -- String
@@ -23,7 +23,7 @@ WHERE
 BeforeExecute
 DisposeTransaction
 BeforeExecute
--- SqlServer.SA SqlServer.2019
+--  SqlServer.SA SqlServer.2019
 DECLARE @id Int -- Int32
 SET     @id = 1
 DECLARE @name NVarChar(4000) -- String

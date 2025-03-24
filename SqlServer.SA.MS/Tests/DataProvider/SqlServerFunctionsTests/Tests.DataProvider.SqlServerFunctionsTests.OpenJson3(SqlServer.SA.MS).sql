@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.SA.MS SqlServer.2019
+--  SqlServer.SA.MS SqlServer.2019
 DECLARE @p NVarChar(4000) -- String
 SET     @p = N'[ 10, 20, 30, 40, 50, 60, 70 ]'
 

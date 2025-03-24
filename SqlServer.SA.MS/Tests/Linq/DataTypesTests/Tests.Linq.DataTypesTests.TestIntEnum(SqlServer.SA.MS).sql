@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.SA.MS SqlServer.2019
+--  SqlServer.SA.MS SqlServer.2019
 DECLARE @Column Int -- Int32
 SET     @Column = 2
 DECLARE @ColumnNullable Int -- Int32
@@ -15,7 +15,7 @@ WHERE
 	[r].[Column] = @Column AND [r].[ColumnNullable] = @ColumnNullable
 
 BeforeExecute
--- SqlServer.SA.MS SqlServer.2019
+--  SqlServer.SA.MS SqlServer.2019
 
 SELECT
 	[r].[Id],
@@ -27,14 +27,14 @@ WHERE
 	[r].[Column] = 2 AND [r].[ColumnNullable] = 3
 
 BeforeExecute
--- SqlServer.SA.MS SqlServer.2019
+--  SqlServer.SA.MS SqlServer.2019
 
 DELETE [t1]
 FROM
 	[IntEnumTable] [t1]
 
 BeforeExecute
--- SqlServer.SA.MS SqlServer.2019
+--  SqlServer.SA.MS SqlServer.2019
 DECLARE @Id Int -- Int32
 SET     @Id = 1
 DECLARE @Column Int -- Int32
@@ -56,7 +56,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.SA.MS SqlServer.2019
+--  SqlServer.SA.MS SqlServer.2019
 DECLARE @Id Int -- Int32
 SET     @Id = 2
 DECLARE @Column Int -- Int32
@@ -78,7 +78,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.SA.MS SqlServer.2019
+--  SqlServer.SA.MS SqlServer.2019
 
 SELECT
 	[t1].[Id],
@@ -90,14 +90,14 @@ ORDER BY
 	[t1].[Id]
 
 BeforeExecute
--- SqlServer.SA.MS SqlServer.2019
+--  SqlServer.SA.MS SqlServer.2019
 
 DELETE [t1]
 FROM
 	[IntEnumTable] [t1]
 
 BeforeExecute
--- SqlServer.SA.MS SqlServer.2019
+--  SqlServer.SA.MS SqlServer.2019
 
 INSERT INTO [IntEnumTable]
 (
@@ -110,7 +110,7 @@ VALUES
 (2,2,3)
 
 BeforeExecute
--- SqlServer.SA.MS SqlServer.2019
+--  SqlServer.SA.MS SqlServer.2019
 
 SELECT
 	[t1].[Id],
@@ -122,7 +122,7 @@ ORDER BY
 	[t1].[Id]
 
 BeforeExecute
--- SqlServer.SA.MS SqlServer.2019
+--  SqlServer.SA.MS SqlServer.2019
 
 DELETE [t1]
 FROM
@@ -132,7 +132,7 @@ BeforeExecute
 INSERT BULK [IntEnumTable](Id, Column, ColumnNullable)
 
 BeforeExecute
--- SqlServer.SA.MS SqlServer.2019
+--  SqlServer.SA.MS SqlServer.2019
 
 SELECT
 	[t1].[Id],

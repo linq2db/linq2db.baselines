@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.Contained SqlServer.2019
+--  SqlServer.Contained SqlServer.2019
 DECLARE @take Int -- Int32
 SET     @take = 1
 
@@ -18,7 +18,7 @@ ORDER BY
 	[t2].[ParentID]
 
 BeforeExecute
--- SqlServer.Contained SqlServer.2019
+--  SqlServer.Contained SqlServer.2019
 
 SELECT
 	[t1].[ParentID],

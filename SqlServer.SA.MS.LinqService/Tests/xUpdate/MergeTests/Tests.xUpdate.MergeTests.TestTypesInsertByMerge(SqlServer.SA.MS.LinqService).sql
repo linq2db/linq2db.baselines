@@ -1,19 +1,19 @@
 ﻿BeforeExecute
--- SqlServer.SA.MS SqlServer.2019
+--  SqlServer.SA.MS SqlServer.2019
 
 DELETE [t1]
 FROM
 	[TestMerge1] [t1]
 
 BeforeExecute
--- SqlServer.SA.MS SqlServer.2019
+--  SqlServer.SA.MS SqlServer.2019
 
 DELETE [t1]
 FROM
 	[TestMerge2] [t1]
 
 BeforeExecute
--- SqlServer.SA.MS SqlServer.2019
+--  SqlServer.SA.MS SqlServer.2019
 
 MERGE INTO [TestMerge1] [Target]
 USING (VALUES
@@ -96,7 +96,7 @@ VALUES
 ;
 
 BeforeExecute
--- SqlServer.SA.MS SqlServer.2019
+--  SqlServer.SA.MS SqlServer.2019
 
 MERGE INTO [TestMerge2] [Target]
 USING (VALUES
@@ -180,7 +180,7 @@ VALUES
 ;
 
 BeforeExecute
--- SqlServer.SA.MS SqlServer.2019
+--  SqlServer.SA.MS SqlServer.2019
 
 SELECT
 	[t1].[Id],
@@ -208,7 +208,7 @@ ORDER BY
 	[t1].[Id]
 
 BeforeExecute
--- SqlServer.SA.MS SqlServer.2019
+--  SqlServer.SA.MS SqlServer.2019
 
 SELECT
 	[t1].[Id],

@@ -2,7 +2,7 @@
 INSERT BULK [TrimTestTable](ID, Data)
 
 BeforeExecute
--- SqlServer.Contained SqlServer.2019
+--  SqlServer.Contained SqlServer.2019
 
 SELECT
 	[r].[ID],
@@ -13,7 +13,7 @@ ORDER BY
 	[r].[ID]
 
 BeforeExecute
--- SqlServer.Contained SqlServer.2019
+--  SqlServer.Contained SqlServer.2019
 
 SELECT
 	[r].[ID],

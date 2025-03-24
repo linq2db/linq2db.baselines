@@ -1,10 +1,10 @@
 ﻿BeforeExecute
--- SqlServer.SA.MS SqlServer.2019
+--  SqlServer.SA.MS SqlServer.2019
 
 DROP TABLE [tempdb]..[#TestTable]
 
 BeforeExecute
--- SqlServer.SA.MS SqlServer.2019
+--  SqlServer.SA.MS SqlServer.2019
 
 CREATE TABLE [tempdb]..[#TestTable]
 (
@@ -15,7 +15,7 @@ CREATE TABLE [tempdb]..[#TestTable]
 )
 
 BeforeExecute
--- SqlServer.SA.MS SqlServer.2019
+--  SqlServer.SA.MS SqlServer.2019
 
 SELECT
 	[t1].[ID],
@@ -26,7 +26,7 @@ FROM
 	[tempdb]..[#TestTable] [t1]
 
 BeforeExecute
--- SqlServer.SA.MS SqlServer.2019
+--  SqlServer.SA.MS SqlServer.2019
 
 DROP TABLE [tempdb]..[#TestTable]
 

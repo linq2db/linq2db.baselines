@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.SA SqlServer.2019
+--  SqlServer.SA SqlServer.2019
 
 INSERT INTO [TableWithIdentity]
 (
@@ -11,7 +11,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.SA SqlServer.2019
+--  SqlServer.SA SqlServer.2019
 
 SELECT TOP (2)
 	[t1].[Id],

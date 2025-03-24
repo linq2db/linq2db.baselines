@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.SA SqlServer.2019
+--  SqlServer.SA SqlServer.2019
 
 SELECT
 	[x_8].[Id],
@@ -175,7 +175,7 @@ FROM
 		LEFT JOIN [MaterialDTO] [m8] ON [i8].[MaterialID] = [m8].[Id]
 
 BeforeExecute
--- SqlServer.SA SqlServer.2019
+--  SqlServer.SA SqlServer.2019
 
 SELECT
 	[x_8].[Id],

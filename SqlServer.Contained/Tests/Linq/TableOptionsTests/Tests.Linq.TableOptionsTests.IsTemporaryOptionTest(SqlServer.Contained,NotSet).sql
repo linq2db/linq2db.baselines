@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.Contained SqlServer.2019
+--  SqlServer.Contained SqlServer.2019
 
 CREATE TABLE [tempdb]..[#temp_table1]
 (
@@ -11,7 +11,7 @@ BeforeExecute
 INSERT BULK [tempdb]..[#temp_table1](ID, Value)
 
 BeforeExecute
--- SqlServer.Contained SqlServer.2019
+--  SqlServer.Contained SqlServer.2019
 
 CREATE TABLE [tempdb]..[#temp_table2]
 (
@@ -20,7 +20,7 @@ CREATE TABLE [tempdb]..[#temp_table2]
 )
 
 BeforeExecute
--- SqlServer.Contained SqlServer.2019
+--  SqlServer.Contained SqlServer.2019
 
 INSERT INTO [tempdb]..[#temp_table2]
 (
@@ -34,7 +34,7 @@ FROM
 	[tempdb]..[#temp_table1] [t1]
 
 BeforeExecute
--- SqlServer.Contained SqlServer.2019
+--  SqlServer.Contained SqlServer.2019
 
 SELECT
 	[t1].[ID],
@@ -43,7 +43,7 @@ FROM
 	[tempdb]..[#temp_table1] [t1]
 
 BeforeExecute
--- SqlServer.Contained SqlServer.2019
+--  SqlServer.Contained SqlServer.2019
 
 SELECT
 	[t1].[ID],
@@ -52,7 +52,7 @@ FROM
 	[tempdb]..[#temp_table2] [t1]
 
 BeforeExecute
--- SqlServer.Contained SqlServer.2019
+--  SqlServer.Contained SqlServer.2019
 
 INSERT INTO [tempdb]..[#temp_table1]
 (
@@ -63,7 +63,7 @@ VALUES
 (2,3)
 
 BeforeExecute
--- SqlServer.Contained SqlServer.2019
+--  SqlServer.Contained SqlServer.2019
 DECLARE @ID Int -- Int32
 SET     @ID = 3
 DECLARE @Value Int -- Int32
@@ -84,22 +84,22 @@ BeforeExecute
 INSERT BULK [tempdb]..[#temp_table1](ID, Value)
 
 BeforeExecute
--- SqlServer.Contained SqlServer.2019
+--  SqlServer.Contained SqlServer.2019
 
 TRUNCATE TABLE [tempdb]..[#temp_table1]
 
 BeforeExecute
--- SqlServer.Contained SqlServer.2019
+--  SqlServer.Contained SqlServer.2019
 
 TRUNCATE TABLE [tempdb]..[#temp_table2]
 
 BeforeExecute
--- SqlServer.Contained SqlServer.2019
+--  SqlServer.Contained SqlServer.2019
 
 DROP TABLE IF EXISTS [tempdb]..[#temp_table2]
 
 BeforeExecute
--- SqlServer.Contained SqlServer.2019
+--  SqlServer.Contained SqlServer.2019
 
 DROP TABLE IF EXISTS [tempdb]..[#temp_table1]
 

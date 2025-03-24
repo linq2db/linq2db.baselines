@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.SA.MS SqlServer.2019
+--  SqlServer.SA.MS SqlServer.2019
 DECLARE @int1 Int -- Int32
 SET     @int1 = 2
 DECLARE @int2 Int -- Int32
@@ -31,7 +31,7 @@ WHERE
 	[ParameterDeduplication].[Id] = @id
 
 BeforeExecute
--- SqlServer.SA.MS SqlServer.2019
+--  SqlServer.SA.MS SqlServer.2019
 DECLARE @int1 Int -- Int32
 SET     @int1 = 3
 DECLARE @int2 Int -- Int32
@@ -63,7 +63,7 @@ WHERE
 	[ParameterDeduplication].[Id] = @id
 
 BeforeExecute
--- SqlServer.SA.MS SqlServer.2019
+--  SqlServer.SA.MS SqlServer.2019
 
 SELECT
 	[t1].[Id],

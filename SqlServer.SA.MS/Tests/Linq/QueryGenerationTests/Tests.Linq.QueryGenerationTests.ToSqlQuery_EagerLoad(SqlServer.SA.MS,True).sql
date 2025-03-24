@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.SA.MS SqlServer.2019
+--  SqlServer.SA.MS SqlServer.2019
 
 SELECT
 	[p].[ParentID],
@@ -10,7 +10,7 @@ WHERE
 	[p].[ParentID] = 2
 
 BeforeExecute
--- SqlServer.SA.MS SqlServer.2019
+--  SqlServer.SA.MS SqlServer.2019
 DECLARE @id Int -- Int32
 SET     @id = 2
 

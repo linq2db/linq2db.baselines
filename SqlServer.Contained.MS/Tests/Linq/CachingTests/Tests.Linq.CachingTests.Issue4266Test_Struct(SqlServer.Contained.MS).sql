@@ -1,15 +1,15 @@
 ﻿BeforeExecute
--- SqlServer.Contained.MS SqlServer.2019
+--  SqlServer.Contained.MS SqlServer.2019
 
 IF EXISTS (SELECT * FROM sys.types WHERE name = 'IntTableType') DROP TYPE IntTableType
 
 BeforeExecute
--- SqlServer.Contained.MS SqlServer.2019
+--  SqlServer.Contained.MS SqlServer.2019
 
 CREATE TYPE IntTableType AS TABLE(Id INT)
 
 BeforeExecute
--- SqlServer.Contained.MS SqlServer.2019
+--  SqlServer.Contained.MS SqlServer.2019
 DECLARE @persons IntTableType -- Structured -- Object
 SET     @persons = IntTableType
 DECLARE @cond IntTableType -- Structured -- Object
@@ -25,7 +25,7 @@ ORDER BY
 	[p].[PersonID]
 
 BeforeExecute
--- SqlServer.Contained.MS SqlServer.2019
+--  SqlServer.Contained.MS SqlServer.2019
 DECLARE @persons IntTableType -- Structured -- Object
 SET     @persons = IntTableType
 DECLARE @cond IntTableType -- Structured -- Object
@@ -41,7 +41,7 @@ ORDER BY
 	[p].[PersonID]
 
 BeforeExecute
--- SqlServer.Contained.MS SqlServer.2019
+--  SqlServer.Contained.MS SqlServer.2019
 
 IF EXISTS (SELECT * FROM sys.types WHERE name = 'IntTableType') DROP TYPE IntTableType
 

@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.SA SqlServer.2019 (asynchronously)
+--  SqlServer.SA SqlServer.2019 (asynchronously)
 
 DELETE [p]
 FROM
@@ -8,12 +8,12 @@ WHERE
 	[p].[ID] >= 700
 
 BeforeExecute
--- SqlServer.SA SqlServer.2019 (asynchronously)
+--  SqlServer.SA SqlServer.2019 (asynchronously)
 
 SET IDENTITY_INSERT [AllTypes] ON
 
 BeforeExecute
--- SqlServer.SA SqlServer.2019 (asynchronously)
+--  SqlServer.SA SqlServer.2019 (asynchronously)
 
 INSERT INTO [AllTypes]
 (
@@ -64,12 +64,12 @@ VALUES
 (701,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
 
 BeforeExecute
--- SqlServer.SA SqlServer.2019 (asynchronously)
+--  SqlServer.SA SqlServer.2019 (asynchronously)
 
 SET IDENTITY_INSERT [AllTypes] OFF
 
 BeforeExecute
--- SqlServer.SA SqlServer.2019
+--  SqlServer.SA SqlServer.2019
 
 SELECT
 	[t].[ID],
@@ -122,7 +122,7 @@ ORDER BY
 	[t].[ID]
 
 BeforeExecute
--- SqlServer.SA SqlServer.2019 (asynchronously)
+--  SqlServer.SA SqlServer.2019 (asynchronously)
 
 DELETE [p]
 FROM

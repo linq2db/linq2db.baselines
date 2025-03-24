@@ -1,10 +1,10 @@
 ﻿BeforeExecute
--- SqlServer.SA.MS SqlServer.2019
+--  SqlServer.SA.MS SqlServer.2019
 
 DBCC CHECKIDENT ('Person', RESEED, 4)
 
 BeforeExecute
--- SqlServer.SA.MS SqlServer.2019
+--  SqlServer.SA.MS SqlServer.2019
 DECLARE @Gender NChar(1) -- StringFixedLength
 SET     @Gender = N'M'
 DECLARE @Name_FirstName NVarChar(4000) -- String
@@ -32,7 +32,7 @@ VALUES
 SELECT SCOPE_IDENTITY()
 
 BeforeExecute
--- SqlServer.SA.MS SqlServer.2019
+--  SqlServer.SA.MS SqlServer.2019
 
 UPDATE
 	[Person]
@@ -42,7 +42,7 @@ WHERE
 	[Person].[FirstName] LIKE N'UpdateComplex%' ESCAPE N'~'
 
 BeforeExecute
--- SqlServer.SA.MS SqlServer.2019
+--  SqlServer.SA.MS SqlServer.2019
 DECLARE @id Int -- Int32
 SET     @id = 5
 

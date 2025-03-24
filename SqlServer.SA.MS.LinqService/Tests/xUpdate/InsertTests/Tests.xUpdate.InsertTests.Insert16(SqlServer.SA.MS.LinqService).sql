@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.SA.MS SqlServer.2019
+--  SqlServer.SA.MS SqlServer.2019
 
 DELETE [t1]
 FROM
@@ -8,7 +8,7 @@ WHERE
 	[t1].[FirstName] LIKE N'Insert16%' ESCAPE N'~'
 
 BeforeExecute
--- SqlServer.SA.MS SqlServer.2019
+--  SqlServer.SA.MS SqlServer.2019
 DECLARE @name NVarChar(4000) -- String
 SET     @name = N'Insert16'
 DECLARE @idx Int -- Int32
@@ -28,7 +28,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.SA.MS SqlServer.2019
+--  SqlServer.SA.MS SqlServer.2019
 
 SELECT
 	COUNT(*)
@@ -38,7 +38,7 @@ WHERE
 	[t1].[FirstName] LIKE N'Insert16%' ESCAPE N'~'
 
 BeforeExecute
--- SqlServer.SA.MS SqlServer.2019
+--  SqlServer.SA.MS SqlServer.2019
 
 DELETE [t1]
 FROM

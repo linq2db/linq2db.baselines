@@ -1,14 +1,14 @@
 ﻿BeforeExecute
 BeginTransaction
 BeforeExecute
--- SqlServer.SA.MS SqlServer.2019
+--  SqlServer.SA.MS SqlServer.2019
 
 DELETE [t1]
 FROM
 	[InheritanceParent] [t1]
 
 BeforeExecute
--- SqlServer.SA.MS SqlServer.2019
+--  SqlServer.SA.MS SqlServer.2019
 
 MERGE INTO [InheritanceParent] [Target]
 USING (VALUES
@@ -43,7 +43,7 @@ VALUES
 ;
 
 BeforeExecute
--- SqlServer.SA.MS SqlServer.2019
+--  SqlServer.SA.MS SqlServer.2019
 
 SELECT
 	COUNT(*)
@@ -51,7 +51,7 @@ FROM
 	[InheritanceParent] [t1]
 
 BeforeExecute
--- SqlServer.SA.MS SqlServer.2019
+--  SqlServer.SA.MS SqlServer.2019
 
 MERGE INTO [InheritanceParent] [Target]
 USING (VALUES
@@ -86,7 +86,7 @@ VALUES
 ;
 
 BeforeExecute
--- SqlServer.SA.MS SqlServer.2019
+--  SqlServer.SA.MS SqlServer.2019
 
 SELECT
 	COUNT(*)

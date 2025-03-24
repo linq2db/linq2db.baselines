@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.Contained.MS SqlServer.2019
+--  SqlServer.Contained.MS SqlServer.2019
 
 CREATE TABLE [tempdb]..[##IsGlobalTemporaryTable]
 (
@@ -8,7 +8,7 @@ CREATE TABLE [tempdb]..[##IsGlobalTemporaryTable]
 )
 
 BeforeExecute
--- SqlServer.Contained.MS SqlServer.2019
+--  SqlServer.Contained.MS SqlServer.2019
 
 SELECT
 	[t1].[Id],
@@ -17,7 +17,7 @@ FROM
 	[tempdb]..[##IsGlobalTemporaryTable] [t1]
 
 BeforeExecute
--- SqlServer.Contained.MS SqlServer.2019
+--  SqlServer.Contained.MS SqlServer.2019
 
 DROP TABLE IF EXISTS [tempdb]..[##IsGlobalTemporaryTable]
 

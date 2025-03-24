@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.SA SqlServer.2019
+--  SqlServer.SA SqlServer.2019
 
 CREATE TABLE [tempdb]..[#TestMergeTVPTable]
 (
@@ -8,7 +8,7 @@ CREATE TABLE [tempdb]..[#TestMergeTVPTable]
 )
 
 BeforeExecute
--- SqlServer.SA SqlServer.2019
+--  SqlServer.SA SqlServer.2019
 DECLARE @p [dbo].[TestTableType] -- Structured -- Object
 SET     @p = {Microsoft.SqlServer.Server.SqlDataRecord,Microsoft.SqlServer.Server.SqlDataRecord,Microsoft.SqlServer.Server.SqlDataRecord}
 
@@ -42,7 +42,7 @@ VALUES
 ;
 
 BeforeExecute
--- SqlServer.SA SqlServer.2019
+--  SqlServer.SA SqlServer.2019
 
 SELECT
 	[t1].[Id],
@@ -53,7 +53,7 @@ ORDER BY
 	[t1].[Id]
 
 BeforeExecute
--- SqlServer.SA SqlServer.2019
+--  SqlServer.SA SqlServer.2019
 
 DROP TABLE IF EXISTS [tempdb]..[#TestMergeTVPTable]
 

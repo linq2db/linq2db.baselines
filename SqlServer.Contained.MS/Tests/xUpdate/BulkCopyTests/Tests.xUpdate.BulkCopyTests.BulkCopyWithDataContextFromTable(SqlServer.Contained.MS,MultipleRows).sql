@@ -5,7 +5,7 @@ BeforeExecute
 INSERT BULK [SimpleBulkCopyTable](Id)
 
 BeforeExecute
--- SqlServer.Contained.MS SqlServer.2019
+--  SqlServer.Contained.MS SqlServer.2019
 
 INSERT INTO [SimpleBulkCopyTable]
 (

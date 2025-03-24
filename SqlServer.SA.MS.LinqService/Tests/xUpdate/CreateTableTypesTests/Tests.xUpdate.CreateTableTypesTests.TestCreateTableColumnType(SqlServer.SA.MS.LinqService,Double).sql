@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.SA.MS SqlServer.2019
+--  SqlServer.SA.MS SqlServer.2019
 DECLARE @Id Int -- Int32
 SET     @Id = 1
 DECLARE @Double Float -- Double
@@ -17,7 +17,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.SA.MS SqlServer.2019
+--  SqlServer.SA.MS SqlServer.2019
 DECLARE @Id Int -- Int32
 SET     @Id = 2
 DECLARE @Double Float -- Double
@@ -35,7 +35,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.SA.MS SqlServer.2019
+--  SqlServer.SA.MS SqlServer.2019
 
 SELECT
 	[t1].[Id],

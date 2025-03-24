@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 BeginTransaction
 BeforeExecute
--- SqlServer.Contained SqlServer.2019
+--  SqlServer.Contained SqlServer.2019
 DECLARE @n Int -- Int32
 SET     @n = 555
 
@@ -17,7 +17,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.Contained SqlServer.2019
+--  SqlServer.Contained SqlServer.2019
 DECLARE @n Int -- Int32
 SET     @n = 555
 
@@ -33,7 +33,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.Contained SqlServer.2019
+--  SqlServer.Contained SqlServer.2019
 DECLARE @n Int -- Int32
 SET     @n = 555
 

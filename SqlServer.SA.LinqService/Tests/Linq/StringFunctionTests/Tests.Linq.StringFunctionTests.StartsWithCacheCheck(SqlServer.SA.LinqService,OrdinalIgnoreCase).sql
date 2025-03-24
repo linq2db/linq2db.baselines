@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.SA SqlServer.2019
+--  SqlServer.SA SqlServer.2019
 
 SELECT TOP (2)
 	[p].[FirstName]
@@ -9,7 +9,7 @@ WHERE
 	[p].[PersonID] = 1
 
 BeforeExecute
--- SqlServer.SA SqlServer.2019
+--  SqlServer.SA SqlServer.2019
 
 SELECT
 	COUNT(*)
@@ -20,7 +20,7 @@ WHERE
 	[p].[PersonID] = 1
 
 BeforeExecute
--- SqlServer.SA SqlServer.2019
+--  SqlServer.SA SqlServer.2019
 
 SELECT
 	COUNT(*)

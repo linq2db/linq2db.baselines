@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.SA.MS SqlServer.2019
+--  SqlServer.SA.MS SqlServer.2019
 DECLARE @cond NVarChar(4000) -- String
 SET     @cond = N'%En%'
 DECLARE @cond_1 NVarChar(4000) -- String

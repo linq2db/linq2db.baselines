@@ -5,7 +5,7 @@ BeforeExecute
 INSERT ASYNC BULK [SimpleBulkCopyTable](Id)
 
 BeforeExecute
--- SqlServer.Contained SqlServer.2019 (asynchronously)
+--  SqlServer.Contained SqlServer.2019 (asynchronously)
 DECLARE @Id Int -- Int32
 SET     @Id = 3
 
@@ -25,7 +25,7 @@ BeforeExecute
 INSERT ASYNC BULK [SimpleBulkCopyTable](Id)
 
 BeforeExecute
--- SqlServer.Contained SqlServer.2019 (asynchronously)
+--  SqlServer.Contained SqlServer.2019 (asynchronously)
 DECLARE @Id Int -- Int32
 SET     @Id = 30
 

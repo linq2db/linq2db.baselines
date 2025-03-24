@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.SA.MS SqlServer.2019
+--  SqlServer.SA.MS SqlServer.2019
 DECLARE @InstrumentId Int -- Int32
 SET     @InstrumentId = 1
 DECLARE @IndexId Int -- Int32
@@ -17,7 +17,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.SA.MS SqlServer.2019
+--  SqlServer.SA.MS SqlServer.2019
 DECLARE @InstrumentId Int -- Int32
 SET     @InstrumentId = 2
 DECLARE @IndexId Int -- Int32
@@ -35,7 +35,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.SA.MS SqlServer.2019
+--  SqlServer.SA.MS SqlServer.2019
 DECLARE @InstrumentId Int -- Int32
 SET     @InstrumentId = 3
 DECLARE @IndexId Int -- Int32
@@ -53,7 +53,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.SA.MS SqlServer.2019
+--  SqlServer.SA.MS SqlServer.2019
 DECLARE @InstrumentId Int -- Int32
 SET     @InstrumentId = 1
 DECLARE @IndexId Int -- Int32
@@ -71,7 +71,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.SA.MS SqlServer.2019
+--  SqlServer.SA.MS SqlServer.2019
 DECLARE @InstrumentId Int -- Int32
 SET     @InstrumentId = 2
 DECLARE @IndexId Int -- Int32
@@ -89,7 +89,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.SA.MS SqlServer.2019
+--  SqlServer.SA.MS SqlServer.2019
 DECLARE @InstrumentId Int -- Int32
 SET     @InstrumentId = 1
 DECLARE @InstrumentCode NVarChar(4000) -- String
@@ -115,7 +115,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.SA.MS SqlServer.2019
+--  SqlServer.SA.MS SqlServer.2019
 DECLARE @InstrumentId Int -- Int32
 SET     @InstrumentId = 2
 DECLARE @InstrumentCode NVarChar(4000) -- String
@@ -141,7 +141,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.SA.MS SqlServer.2019
+--  SqlServer.SA.MS SqlServer.2019
 DECLARE @cond NVarChar(4000) -- String
 SET     @cond = N'aaa%'
 DECLARE @uptoDate DateTime2

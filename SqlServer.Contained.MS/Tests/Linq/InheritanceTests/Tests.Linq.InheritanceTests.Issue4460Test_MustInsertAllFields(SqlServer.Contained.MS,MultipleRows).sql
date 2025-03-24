@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.Contained.MS SqlServer.2019
+--  SqlServer.Contained.MS SqlServer.2019
 
 INSERT INTO [Issue4460Table]
 (
@@ -12,7 +12,7 @@ VALUES
 (1,N'GrandChild',N'Tom',N'Black')
 
 BeforeExecute
--- SqlServer.Contained.MS SqlServer.2019
+--  SqlServer.Contained.MS SqlServer.2019
 
 SELECT
 	[t1].[Code],

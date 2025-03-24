@@ -1,12 +1,12 @@
 ﻿BeforeExecute
--- SqlServer.SA.MS SqlServer.2019
+--  SqlServer.SA.MS SqlServer.2019
 
 DBCC CHECKIDENT ('Person', RESEED, 4)
 
 BeforeExecute
 BeginTransaction
 BeforeExecute
--- SqlServer.SA.MS SqlServer.2019
+--  SqlServer.SA.MS SqlServer.2019
 
 MERGE INTO [Person] [Target]
 USING (
@@ -33,7 +33,7 @@ SET
 ;
 
 BeforeExecute
--- SqlServer.SA.MS SqlServer.2019
+--  SqlServer.SA.MS SqlServer.2019
 
 SELECT
 	[t1].[FirstName],

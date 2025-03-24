@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 BeginTransaction(RepeatableRead)
 BeforeExecute
--- SqlServer.Contained SqlServer.2019
+--  SqlServer.Contained SqlServer.2019
 
 SELECT
 	[m_1].[Id],
@@ -32,7 +32,7 @@ ORDER BY
 	IIF([m_1].[cond_1] = 1, [d].[Name3], N'')
 
 BeforeExecute
--- SqlServer.Contained SqlServer.2019
+--  SqlServer.Contained SqlServer.2019
 
 SELECT TOP (1)
 	[t1].[Id],

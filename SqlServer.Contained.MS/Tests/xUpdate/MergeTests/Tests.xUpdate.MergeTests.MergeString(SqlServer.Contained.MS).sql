@@ -1,12 +1,12 @@
 ﻿BeforeExecute
--- SqlServer.Contained.MS SqlServer.2019
+--  SqlServer.Contained.MS SqlServer.2019
 
 DBCC CHECKIDENT ('AllTypes', RESEED, 2)
 
 BeforeExecute
 BeginTransaction
 BeforeExecute
--- SqlServer.Contained.MS SqlServer.2019
+--  SqlServer.Contained.MS SqlServer.2019
 
 SELECT
 	MAX([t1].[ID])
@@ -14,7 +14,7 @@ FROM
 	[AllTypes] [t1]
 
 BeforeExecute
--- SqlServer.Contained.MS SqlServer.2019
+--  SqlServer.Contained.MS SqlServer.2019
 
 MERGE INTO [AllTypes] [Target]
 USING (VALUES
@@ -44,7 +44,7 @@ VALUES
 ;
 
 BeforeExecute
--- SqlServer.Contained.MS SqlServer.2019
+--  SqlServer.Contained.MS SqlServer.2019
 DECLARE @take Int -- Int32
 SET     @take = 1
 

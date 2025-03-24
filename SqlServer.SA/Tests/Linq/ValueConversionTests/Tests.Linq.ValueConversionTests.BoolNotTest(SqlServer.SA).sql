@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.SA SqlServer.2019
+--  SqlServer.SA SqlServer.2019
 DECLARE @false_value VarChar -- AnsiString
 SET     @false_value = N'N'
 

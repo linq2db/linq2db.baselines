@@ -1,10 +1,10 @@
 ﻿BeforeExecute
--- SqlServer.Contained SqlServer.2019
+--  SqlServer.Contained SqlServer.2019
 
 DROP TABLE IF EXISTS [CreateIfNotExistsTable]
 
 BeforeExecute
--- SqlServer.Contained SqlServer.2019
+--  SqlServer.Contained SqlServer.2019
 
 IF (OBJECT_ID(N'[CreateIfNotExistsTable]', N'U') IS NULL)
 	CREATE TABLE [CreateIfNotExistsTable]
@@ -14,7 +14,7 @@ IF (OBJECT_ID(N'[CreateIfNotExistsTable]', N'U') IS NULL)
 	)
 
 BeforeExecute
--- SqlServer.Contained SqlServer.2019
+--  SqlServer.Contained SqlServer.2019
 
 INSERT INTO [CreateIfNotExistsTable]
 (
@@ -28,7 +28,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.Contained SqlServer.2019
+--  SqlServer.Contained SqlServer.2019
 
 SELECT
 	[t1].[Id],
@@ -37,7 +37,7 @@ FROM
 	[CreateIfNotExistsTable] [t1]
 
 BeforeExecute
--- SqlServer.Contained SqlServer.2019
+--  SqlServer.Contained SqlServer.2019
 
 IF (OBJECT_ID(N'[CreateIfNotExistsTable]', N'U') IS NULL)
 	CREATE TABLE [CreateIfNotExistsTable]
@@ -47,12 +47,12 @@ IF (OBJECT_ID(N'[CreateIfNotExistsTable]', N'U') IS NULL)
 	)
 
 BeforeExecute
--- SqlServer.Contained SqlServer.2019
+--  SqlServer.Contained SqlServer.2019
 
 DROP TABLE IF EXISTS [CreateIfNotExistsTable]
 
 BeforeExecute
--- SqlServer.Contained SqlServer.2019
+--  SqlServer.Contained SqlServer.2019
 
 DROP TABLE IF EXISTS [CreateIfNotExistsTable]
 

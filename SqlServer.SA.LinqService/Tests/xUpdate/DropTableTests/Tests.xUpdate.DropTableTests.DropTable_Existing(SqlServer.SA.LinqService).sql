@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.SA SqlServer.2019
+--  SqlServer.SA SqlServer.2019
 
 CREATE TABLE [Table]
 (
@@ -7,7 +7,7 @@ CREATE TABLE [Table]
 )
 
 BeforeExecute
--- SqlServer.SA SqlServer.2019
+--  SqlServer.SA SqlServer.2019
 
 DROP TABLE [Table]
 

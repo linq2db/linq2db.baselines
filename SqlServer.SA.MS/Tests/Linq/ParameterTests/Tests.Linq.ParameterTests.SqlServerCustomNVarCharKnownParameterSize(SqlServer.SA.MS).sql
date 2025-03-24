@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.SA.MS SqlServer.2019
+--  SqlServer.SA.MS SqlServer.2019
 DECLARE @p NVarChar -- String
 SET     @p = Tests.Linq.ParameterTests+NVarChar
 

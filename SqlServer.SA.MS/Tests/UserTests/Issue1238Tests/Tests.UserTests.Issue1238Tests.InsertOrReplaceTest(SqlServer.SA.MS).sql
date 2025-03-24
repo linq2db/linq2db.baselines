@@ -1,14 +1,14 @@
 ﻿BeforeExecute
 BeginTransaction
 BeforeExecute
--- SqlServer.SA.MS SqlServer.2019
+--  SqlServer.SA.MS SqlServer.2019
 
 DELETE [t1]
 FROM
 	[InheritanceParent] [t1]
 
 BeforeExecute
--- SqlServer.SA.MS SqlServer.2019
+--  SqlServer.SA.MS SqlServer.2019
 DECLARE @Key1 Int -- Int32
 SET     @Key1 = 143
 DECLARE @Key2 NVarChar(4000) -- String
@@ -41,7 +41,7 @@ WHEN NOT MATCHED THEN
 	);
 
 BeforeExecute
--- SqlServer.SA.MS SqlServer.2019
+--  SqlServer.SA.MS SqlServer.2019
 
 SELECT
 	COUNT(*)
@@ -49,7 +49,7 @@ FROM
 	[InheritanceParent] [t1]
 
 BeforeExecute
--- SqlServer.SA.MS SqlServer.2019
+--  SqlServer.SA.MS SqlServer.2019
 DECLARE @Key1 Int -- Int32
 SET     @Key1 = 143
 DECLARE @Key2 NVarChar(4000) -- String
@@ -82,7 +82,7 @@ WHEN NOT MATCHED THEN
 	);
 
 BeforeExecute
--- SqlServer.SA.MS SqlServer.2019
+--  SqlServer.SA.MS SqlServer.2019
 
 SELECT
 	COUNT(*)

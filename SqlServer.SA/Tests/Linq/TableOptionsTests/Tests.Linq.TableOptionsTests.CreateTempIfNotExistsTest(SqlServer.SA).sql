@@ -1,10 +1,10 @@
 ﻿BeforeExecute
--- SqlServer.SA SqlServer.2019
+--  SqlServer.SA SqlServer.2019
 
 DROP TABLE IF EXISTS [CreateIfNotExistsTable]
 
 BeforeExecute
--- SqlServer.SA SqlServer.2019
+--  SqlServer.SA SqlServer.2019
 
 CREATE TABLE [tempdb]..[#CreateIfNotExistsTable]
 (
@@ -13,7 +13,7 @@ CREATE TABLE [tempdb]..[#CreateIfNotExistsTable]
 )
 
 BeforeExecute
--- SqlServer.SA SqlServer.2019
+--  SqlServer.SA SqlServer.2019
 
 SELECT
 	[t1].[Id],
@@ -22,7 +22,7 @@ FROM
 	[tempdb]..[#CreateIfNotExistsTable] [t1]
 
 BeforeExecute
--- SqlServer.SA SqlServer.2019
+--  SqlServer.SA SqlServer.2019
 
 IF (OBJECT_ID(N'[CreateIfNotExistsTable]', N'U') IS NULL)
 	CREATE TABLE [CreateIfNotExistsTable]
@@ -32,12 +32,12 @@ IF (OBJECT_ID(N'[CreateIfNotExistsTable]', N'U') IS NULL)
 	)
 
 BeforeExecute
--- SqlServer.SA SqlServer.2019
+--  SqlServer.SA SqlServer.2019
 
 DROP TABLE IF EXISTS [CreateIfNotExistsTable]
 
 BeforeExecute
--- SqlServer.SA SqlServer.2019
+--  SqlServer.SA SqlServer.2019
 
 DROP TABLE IF EXISTS [tempdb]..[#CreateIfNotExistsTable]
 

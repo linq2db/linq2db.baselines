@@ -1,10 +1,10 @@
 ﻿BeforeExecute
--- SqlServer.SA SqlServer.2019
+--  SqlServer.SA SqlServer.2019
 
 DROP TABLE IF EXISTS [TempTable]
 
 BeforeExecute
--- SqlServer.SA SqlServer.2019
+--  SqlServer.SA SqlServer.2019
 
 CREATE TABLE [tempdb]..[#TempTable]
 (
@@ -12,12 +12,12 @@ CREATE TABLE [tempdb]..[#TempTable]
 )
 
 BeforeExecute
--- SqlServer.SA SqlServer.2019
+--  SqlServer.SA SqlServer.2019
 
 DROP TABLE [tempdb]..[#TempTable]
 
 BeforeExecute
--- SqlServer.SA SqlServer.2019
+--  SqlServer.SA SqlServer.2019
 
 DROP TABLE IF EXISTS [tempdb]..[#TempTable]
 

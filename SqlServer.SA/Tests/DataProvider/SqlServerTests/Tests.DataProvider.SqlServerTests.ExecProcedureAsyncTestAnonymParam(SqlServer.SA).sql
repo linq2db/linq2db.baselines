@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.SA SqlServer.2019
+--  SqlServer.SA SqlServer.2019
 
 SELECT TOP (1)
 	DB_NAME()
@@ -7,7 +7,7 @@ FROM
 	[LinqDataTypes] [t1]
 
 BeforeExecute
--- SqlServer.SA SqlServer.2019 (asynchronously)
+--  SqlServer.SA SqlServer.2019 (asynchronously)
 DECLARE @FirstName NVarChar(4000) -- String
 SET     @FirstName = N'233bf399-9710-4e79-873d-2ec7bf1e0001'
 DECLARE @LastName NVarChar(4000) -- String
@@ -20,7 +20,7 @@ SET     @Gender = N'M'
 [TestDataSA]..[Person_Insert]
 
 BeforeExecute
--- SqlServer.SA SqlServer.2019
+--  SqlServer.SA SqlServer.2019
 DECLARE @FirstName NVarChar(4000) -- String
 SET     @FirstName = N'233bf399-9710-4e79-873d-2ec7bf1e0001'
 

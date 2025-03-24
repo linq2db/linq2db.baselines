@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.SA.MS SqlServer.2019
+--  SqlServer.SA.MS SqlServer.2019
 
 SELECT
 	[p].[FirstName],
@@ -13,7 +13,7 @@ WHERE
 	[p].[MiddleName] IS NOT NULL
 
 BeforeExecute
--- SqlServer.SA.MS SqlServer.2019
+--  SqlServer.SA.MS SqlServer.2019
 
 SELECT TOP (2)
 	[p].[FirstName],

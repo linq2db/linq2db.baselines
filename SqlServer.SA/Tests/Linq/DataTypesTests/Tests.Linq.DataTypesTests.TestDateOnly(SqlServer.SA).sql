@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.SA SqlServer.2019
+--  SqlServer.SA SqlServer.2019
 DECLARE @Column Date
 SET     @Column = DATETIME2FROMPARTS(2020, 2, 29, 0, 0, 0, 0, 7)
 DECLARE @ColumnNullable Date
@@ -15,7 +15,7 @@ WHERE
 	[r].[Column] = @Column AND [r].[ColumnNullable] = @ColumnNullable
 
 BeforeExecute
--- SqlServer.SA SqlServer.2019
+--  SqlServer.SA SqlServer.2019
 
 SELECT
 	[r].[Id],
@@ -27,14 +27,14 @@ WHERE
 	[r].[Column] = DATEFROMPARTS(2020, 2, 29) AND [r].[ColumnNullable] = DATEFROMPARTS(2200, 1, 1)
 
 BeforeExecute
--- SqlServer.SA SqlServer.2019
+--  SqlServer.SA SqlServer.2019
 
 DELETE [t1]
 FROM
 	[DateOnlyTable] [t1]
 
 BeforeExecute
--- SqlServer.SA SqlServer.2019
+--  SqlServer.SA SqlServer.2019
 DECLARE @Id Int -- Int32
 SET     @Id = 1
 DECLARE @Column Date
@@ -56,7 +56,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.SA SqlServer.2019
+--  SqlServer.SA SqlServer.2019
 DECLARE @Id Int -- Int32
 SET     @Id = 2
 DECLARE @Column Date
@@ -78,7 +78,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.SA SqlServer.2019
+--  SqlServer.SA SqlServer.2019
 
 SELECT
 	[t1].[Id],
@@ -90,14 +90,14 @@ ORDER BY
 	[t1].[Id]
 
 BeforeExecute
--- SqlServer.SA SqlServer.2019
+--  SqlServer.SA SqlServer.2019
 
 DELETE [t1]
 FROM
 	[DateOnlyTable] [t1]
 
 BeforeExecute
--- SqlServer.SA SqlServer.2019
+--  SqlServer.SA SqlServer.2019
 
 INSERT INTO [DateOnlyTable]
 (
@@ -110,7 +110,7 @@ VALUES
 (2,DATEFROMPARTS(2020, 2, 29),DATEFROMPARTS(2200, 1, 1))
 
 BeforeExecute
--- SqlServer.SA SqlServer.2019
+--  SqlServer.SA SqlServer.2019
 
 SELECT
 	[t1].[Id],
@@ -122,7 +122,7 @@ ORDER BY
 	[t1].[Id]
 
 BeforeExecute
--- SqlServer.SA SqlServer.2019
+--  SqlServer.SA SqlServer.2019
 
 DELETE [t1]
 FROM
@@ -132,7 +132,7 @@ BeforeExecute
 INSERT BULK [DateOnlyTable](Id, Column, ColumnNullable)
 
 BeforeExecute
--- SqlServer.SA SqlServer.2019
+--  SqlServer.SA SqlServer.2019
 
 SELECT
 	[t1].[Id],

@@ -5,7 +5,7 @@ BeforeExecute
 INSERT ASYNC BULK [SimpleBulkCopyTable](Id)
 
 BeforeExecute
--- SqlServer.Contained SqlServer.2019 (asynchronously)
+--  SqlServer.Contained SqlServer.2019 (asynchronously)
 
 INSERT INTO [SimpleBulkCopyTable]
 (
@@ -21,7 +21,7 @@ BeforeExecute
 INSERT ASYNC BULK [SimpleBulkCopyTable](Id)
 
 BeforeExecute
--- SqlServer.Contained SqlServer.2019 (asynchronously)
+--  SqlServer.Contained SqlServer.2019 (asynchronously)
 
 INSERT INTO [SimpleBulkCopyTable]
 (

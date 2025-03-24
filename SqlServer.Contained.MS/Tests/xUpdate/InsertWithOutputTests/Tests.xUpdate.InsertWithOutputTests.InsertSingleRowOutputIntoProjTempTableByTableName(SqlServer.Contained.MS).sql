@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.Contained.MS SqlServer.2019
+--  SqlServer.Contained.MS SqlServer.2019
 
 CREATE TABLE [tempdb]..[#DestinationTable_output]
 (
@@ -9,7 +9,7 @@ CREATE TABLE [tempdb]..[#DestinationTable_output]
 )
 
 BeforeExecute
--- SqlServer.Contained.MS SqlServer.2019
+--  SqlServer.Contained.MS SqlServer.2019
 
 INSERT INTO [TableWithData_source]
 (
@@ -35,7 +35,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.Contained.MS SqlServer.2019
+--  SqlServer.Contained.MS SqlServer.2019
 
 SELECT
 	[t1].[Id],
@@ -45,7 +45,7 @@ FROM
 	[TableWithData_source] [t1]
 
 BeforeExecute
--- SqlServer.Contained.MS SqlServer.2019
+--  SqlServer.Contained.MS SqlServer.2019
 
 SELECT
 	[t1].[Id],
@@ -55,7 +55,7 @@ FROM
 	[tempdb]..[#DestinationTable_output] [t1]
 
 BeforeExecute
--- SqlServer.Contained.MS SqlServer.2019
+--  SqlServer.Contained.MS SqlServer.2019
 
 DROP TABLE IF EXISTS [tempdb]..[#DestinationTable_output]
 

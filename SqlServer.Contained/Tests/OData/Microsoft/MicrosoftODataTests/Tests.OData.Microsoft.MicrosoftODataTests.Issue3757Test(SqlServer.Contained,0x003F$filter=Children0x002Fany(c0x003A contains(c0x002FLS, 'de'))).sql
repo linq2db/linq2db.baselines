@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 BeginTransaction(RepeatableRead)
 BeforeExecute
--- SqlServer.Contained SqlServer.2019
+--  SqlServer.Contained SqlServer.2019
 DECLARE @TypedProperty NVarChar(4000) -- String
 SET     @TypedProperty = N'%de%'
 
@@ -34,7 +34,7 @@ FROM
 BeforeExecute
 DisposeTransaction
 BeforeExecute
--- SqlServer.Contained SqlServer.2019
+--  SqlServer.Contained SqlServer.2019
 DECLARE @TypedProperty NVarChar(4000) -- String
 SET     @TypedProperty = N'%de%'
 

@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.SA.MS SqlServer.2019
+--  SqlServer.SA.MS SqlServer.2019
 
 SET IDENTITY_INSERT [TableWithIdentity] ON
 MERGE INTO [TableWithIdentity] [Target]

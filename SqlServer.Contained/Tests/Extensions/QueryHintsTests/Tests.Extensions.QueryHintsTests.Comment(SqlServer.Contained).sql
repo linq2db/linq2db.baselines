@@ -7,7 +7,7 @@ FROM
 ----
 
 BeforeExecute
--- SqlServer.Contained SqlServer.2019
+--  SqlServer.Contained SqlServer.2019
 
 SELECT
 	[p].[ParentID],
@@ -25,7 +25,7 @@ FROM
 ---
 
 BeforeExecute
--- SqlServer.Contained SqlServer.2019
+--  SqlServer.Contained SqlServer.2019
 
 SELECT
 	[p].[ParentID],

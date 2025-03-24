@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.SA SqlServer.2019 (asynchronously)
+--  SqlServer.SA SqlServer.2019 (asynchronously)
 
 INSERT INTO [SimpleBulkCopyTable]
 (
@@ -9,7 +9,7 @@ VALUES
 (1)
 
 BeforeExecute
--- SqlServer.SA SqlServer.2019 (asynchronously)
+--  SqlServer.SA SqlServer.2019 (asynchronously)
 
 INSERT INTO [SimpleBulkCopyTable]
 (

@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.Contained SqlServer.2019
+--  SqlServer.Contained SqlServer.2019
 
 SELECT
 	[p].[FirstName],
@@ -13,7 +13,7 @@ WHERE
 	[p].[MiddleName] IS NULL
 
 BeforeExecute
--- SqlServer.Contained SqlServer.2019
+--  SqlServer.Contained SqlServer.2019
 DECLARE @str NVarChar(4000) -- String
 SET     @str = N'123'
 

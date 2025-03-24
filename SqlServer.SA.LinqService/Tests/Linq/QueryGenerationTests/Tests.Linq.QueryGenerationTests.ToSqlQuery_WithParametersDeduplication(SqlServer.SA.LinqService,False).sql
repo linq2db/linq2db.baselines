@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.SA SqlServer.2019
+--  SqlServer.SA SqlServer.2019
 DECLARE @firstName NVarChar(4000) -- String
 SET     @firstName = N'John'
 
@@ -15,7 +15,7 @@ WHERE
 	[p].[FirstName] = @firstName OR [p].[LastName] = @firstName
 
 BeforeExecute
--- SqlServer.SA SqlServer.2019
+--  SqlServer.SA SqlServer.2019
 DECLARE @firstName NVarChar(4000) -- String
 SET     @firstName = N'John'
 

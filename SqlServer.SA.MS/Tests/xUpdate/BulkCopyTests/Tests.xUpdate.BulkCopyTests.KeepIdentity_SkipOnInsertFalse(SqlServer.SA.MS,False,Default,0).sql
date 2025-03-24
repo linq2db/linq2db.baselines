@@ -1,10 +1,10 @@
 ﻿BeforeExecute
--- SqlServer.SA.MS SqlServer.2019
+--  SqlServer.SA.MS SqlServer.2019
 
 DBCC CHECKIDENT ('AllTypes', RESEED, 2)
 
 BeforeExecute
--- SqlServer.SA.MS SqlServer.2019
+--  SqlServer.SA.MS SqlServer.2019
 DECLARE @Value Int -- Int32
 SET     @Value = 0
 
@@ -23,7 +23,7 @@ BeforeExecute
 INSERT BULK [AllTypes](intDataType)
 
 BeforeExecute
--- SqlServer.SA.MS SqlServer.2019
+--  SqlServer.SA.MS SqlServer.2019
 DECLARE @lastId Int -- Int32
 SET     @lastId = 3
 
@@ -38,7 +38,7 @@ ORDER BY
 	[t1].[ID]
 
 BeforeExecute
--- SqlServer.SA.MS SqlServer.2019
+--  SqlServer.SA.MS SqlServer.2019
 DECLARE @lastId Int -- Int32
 SET     @lastId = 3
 

@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.Contained.MS SqlServer.2019
+--  SqlServer.Contained.MS SqlServer.2019
 
 CREATE TABLE [tempdb]..[#I1721Model]
 (
@@ -12,7 +12,7 @@ CREATE TABLE [tempdb]..[#I1721Model]
 )
 
 BeforeExecute
--- SqlServer.Contained.MS SqlServer.2019
+--  SqlServer.Contained.MS SqlServer.2019
 
 DROP TABLE IF EXISTS [tempdb]..[#I1721Model]
 

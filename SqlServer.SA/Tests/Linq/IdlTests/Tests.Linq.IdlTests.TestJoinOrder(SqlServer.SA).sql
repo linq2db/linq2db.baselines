@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.SA SqlServer.2019
+--  SqlServer.SA SqlServer.2019
 
 SELECT
 	[x].[ChildID],
@@ -12,7 +12,7 @@ FROM
 		INNER JOIN [Person] [p3] ON [x].[ChildID] = [p3].[PersonID]
 
 BeforeExecute
--- SqlServer.SA SqlServer.2019
+--  SqlServer.SA SqlServer.2019
 
 SELECT
 	[x].[ChildID],

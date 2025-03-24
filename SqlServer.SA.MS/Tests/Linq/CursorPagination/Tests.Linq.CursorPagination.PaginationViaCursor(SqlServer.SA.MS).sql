@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.SA.MS SqlServer.2019
+--  SqlServer.SA.MS SqlServer.2019
 
 SELECT
 	[t].[BookingID],
@@ -14,7 +14,7 @@ ORDER BY
 	[t].[BookingID] DESC
 
 BeforeExecute
--- SqlServer.SA.MS SqlServer.2019
+--  SqlServer.SA.MS SqlServer.2019
 DECLARE @take BigInt -- Int64
 SET     @take = 12
 
@@ -41,7 +41,7 @@ WHERE
 	[q].[RowNumber] <= @take
 
 BeforeExecute
--- SqlServer.SA.MS SqlServer.2019
+--  SqlServer.SA.MS SqlServer.2019
 DECLARE @cursorValue Int -- Int32
 SET     @cursorValue = 66
 DECLARE @take Int -- Int32
@@ -85,7 +85,7 @@ WHERE
 	)
 
 BeforeExecute
--- SqlServer.SA.MS SqlServer.2019
+--  SqlServer.SA.MS SqlServer.2019
 DECLARE @cursorValue Int -- Int32
 SET     @cursorValue = 30
 DECLARE @take Int -- Int32
@@ -129,7 +129,7 @@ WHERE
 	)
 
 BeforeExecute
--- SqlServer.SA.MS SqlServer.2019
+--  SqlServer.SA.MS SqlServer.2019
 DECLARE @cursorValue Int -- Int32
 SET     @cursorValue = 3
 DECLARE @take Int -- Int32

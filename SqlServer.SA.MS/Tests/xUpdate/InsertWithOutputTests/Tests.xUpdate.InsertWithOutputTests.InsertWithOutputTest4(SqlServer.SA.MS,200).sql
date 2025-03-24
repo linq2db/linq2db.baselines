@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.SA.MS SqlServer.2019
+--  SqlServer.SA.MS SqlServer.2019
 DECLARE @param Int -- Int32
 SET     @param = 200
 DECLARE @id Int -- Int32
@@ -21,7 +21,7 @@ WHERE
 	[c_1].[ChildID] = 11
 
 BeforeExecute
--- SqlServer.SA.MS SqlServer.2019
+--  SqlServer.SA.MS SqlServer.2019
 DECLARE @param Int -- Int32
 SET     @param = 200
 
@@ -33,7 +33,7 @@ WHERE
 	[c_1].[ChildID] > 1000
 
 BeforeExecute
--- SqlServer.SA.MS SqlServer.2019
+--  SqlServer.SA.MS SqlServer.2019
 
 DELETE [c_1]
 FROM

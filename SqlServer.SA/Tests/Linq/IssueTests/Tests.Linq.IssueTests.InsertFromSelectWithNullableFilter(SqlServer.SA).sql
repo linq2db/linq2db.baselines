@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.SA SqlServer.2019
+--  SqlServer.SA SqlServer.2019
 
 INSERT INTO [InsertIssueTest]
 (
@@ -21,7 +21,7 @@ FROM
 	) [t2]
 
 BeforeExecute
--- SqlServer.SA SqlServer.2019
+--  SqlServer.SA SqlServer.2019
 DECLARE @cond SmallInt -- Int16
 SET     @cond = 1234
 
@@ -45,7 +45,7 @@ FROM
 	) [t2]
 
 BeforeExecute
--- SqlServer.SA SqlServer.2019
+--  SqlServer.SA SqlServer.2019
 
 SELECT
 	[t1].[ID],

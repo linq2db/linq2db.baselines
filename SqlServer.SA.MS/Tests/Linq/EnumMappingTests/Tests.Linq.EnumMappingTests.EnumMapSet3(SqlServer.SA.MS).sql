@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.SA.MS SqlServer.2019
+--  SqlServer.SA.MS SqlServer.2019
 DECLARE @p Int -- Int32
 SET     @p = 102
 
@@ -10,7 +10,7 @@ WHERE
 	[r].[ID] >= 101 AND [r].[ID] < @p
 
 BeforeExecute
--- SqlServer.SA.MS SqlServer.2019
+--  SqlServer.SA.MS SqlServer.2019
 
 INSERT INTO [LinqDataTypes]
 (
@@ -24,7 +24,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.SA.MS SqlServer.2019
+--  SqlServer.SA.MS SqlServer.2019
 
 UPDATE
 	[LinqDataTypes]
@@ -34,7 +34,7 @@ WHERE
 	[LinqDataTypes].[ID] = 101 AND [LinqDataTypes].[IntValue] = 3
 
 BeforeExecute
--- SqlServer.SA.MS SqlServer.2019
+--  SqlServer.SA.MS SqlServer.2019
 
 SELECT
 	COUNT(*)
@@ -44,7 +44,7 @@ WHERE
 	[r].[ID] = 101 AND [r].[IntValue] = 4
 
 BeforeExecute
--- SqlServer.SA.MS SqlServer.2019
+--  SqlServer.SA.MS SqlServer.2019
 DECLARE @p Int -- Int32
 SET     @p = 102
 

@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.Contained.MS SqlServer.2019
+--  SqlServer.Contained.MS SqlServer.2019
 
 CREATE TABLE [tempdb]..[#TableWithData_destination]
 (
@@ -9,7 +9,7 @@ CREATE TABLE [tempdb]..[#TableWithData_destination]
 )
 
 BeforeExecute
--- SqlServer.Contained.MS SqlServer.2019
+--  SqlServer.Contained.MS SqlServer.2019
 
 UPDATE
 	[t]
@@ -32,7 +32,7 @@ FROM
 		INNER JOIN [DestinationTable_target] [t] ON [t].[Id] = [s].[Id]
 
 BeforeExecute
--- SqlServer.Contained.MS SqlServer.2019
+--  SqlServer.Contained.MS SqlServer.2019
 
 SELECT
 	[t1].[Id],
@@ -42,7 +42,7 @@ FROM
 	[tempdb]..[#TableWithData_destination] [t1]
 
 BeforeExecute
--- SqlServer.Contained.MS SqlServer.2019
+--  SqlServer.Contained.MS SqlServer.2019
 
 DROP TABLE IF EXISTS [tempdb]..[#TableWithData_destination]
 

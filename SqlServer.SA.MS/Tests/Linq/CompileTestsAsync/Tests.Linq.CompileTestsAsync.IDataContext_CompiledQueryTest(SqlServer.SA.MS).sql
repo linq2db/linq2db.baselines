@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.SA.MS SqlServer.2019 (asynchronously)
+--  SqlServer.SA.MS SqlServer.2019 (asynchronously)
 
 SELECT
 	[p].[FirstName],
@@ -13,7 +13,7 @@ WHERE
 	[p].[PersonID] = 1
 
 BeforeExecute
--- SqlServer.SA.MS SqlServer.2019 (asynchronously)
+--  SqlServer.SA.MS SqlServer.2019 (asynchronously)
 
 SELECT
 	[p].[FirstName],

@@ -1,10 +1,10 @@
 ﻿BeforeExecute
--- SqlServer.Contained.MS SqlServer.2019
+--  SqlServer.Contained.MS SqlServer.2019
 
 DBCC CHECKIDENT ('AllTypes', RESEED, 2)
 
 BeforeExecute
--- SqlServer.Contained.MS SqlServer.2019
+--  SqlServer.Contained.MS SqlServer.2019
 DECLARE @Value Int -- Int32
 SET     @Value = 0
 
@@ -23,7 +23,7 @@ BeforeExecute
 INSERT ASYNC BULK [AllTypes](intDataType)
 
 BeforeExecute
--- SqlServer.Contained.MS SqlServer.2019
+--  SqlServer.Contained.MS SqlServer.2019
 DECLARE @lastId Int -- Int32
 SET     @lastId = 3
 
@@ -38,7 +38,7 @@ ORDER BY
 	[t1].[ID]
 
 BeforeExecute
--- SqlServer.Contained.MS SqlServer.2019
+--  SqlServer.Contained.MS SqlServer.2019
 DECLARE @lastId Int -- Int32
 SET     @lastId = 3
 

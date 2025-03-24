@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 BeginTransactionAsync
 BeforeExecute
--- SqlServer.SA SqlServer.2019 (asynchronously)
+--  SqlServer.SA SqlServer.2019 (asynchronously)
 DECLARE @ParentID Int -- Int32
 SET     @ParentID = 1010
 DECLARE @Value1 Int -- Int32
@@ -21,7 +21,7 @@ VALUES
 BeforeExecute
 CommitTransactionAsync
 BeforeExecute
--- SqlServer.SA SqlServer.2019
+--  SqlServer.SA SqlServer.2019
 
 DELETE [t1]
 FROM

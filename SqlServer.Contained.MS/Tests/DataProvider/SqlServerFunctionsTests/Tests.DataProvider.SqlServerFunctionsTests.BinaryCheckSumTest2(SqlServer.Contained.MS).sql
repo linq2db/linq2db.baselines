@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.Contained.MS SqlServer.2019
+--  SqlServer.Contained.MS SqlServer.2019
 
 SELECT TOP (1)
 	BINARY_CHECKSUM([p].[PersonID], [p].[FirstName])

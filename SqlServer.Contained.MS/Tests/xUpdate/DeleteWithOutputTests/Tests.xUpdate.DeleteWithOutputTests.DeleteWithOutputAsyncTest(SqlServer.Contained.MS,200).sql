@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.Contained.MS SqlServer.2019
+--  SqlServer.Contained.MS SqlServer.2019
 
 SELECT
 	[s].[Id],
@@ -11,7 +11,7 @@ WHERE
 	[s].[Id] > 3
 
 BeforeExecute
--- SqlServer.Contained.MS SqlServer.2019 (asynchronously)
+--  SqlServer.Contained.MS SqlServer.2019 (asynchronously)
 
 DELETE [s]
 OUTPUT
@@ -24,7 +24,7 @@ WHERE
 	[s].[Id] > 3
 
 BeforeExecute
--- SqlServer.Contained.MS SqlServer.2019 (asynchronously)
+--  SqlServer.Contained.MS SqlServer.2019 (asynchronously)
 
 DROP TABLE IF EXISTS [TableWithData]
 

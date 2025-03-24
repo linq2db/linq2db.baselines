@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.SA.MS SqlServer.2019
+--  SqlServer.SA.MS SqlServer.2019
 DECLARE @skip Int -- Int32
 SET     @skip = 1
 DECLARE @take Int -- Int32
@@ -21,7 +21,7 @@ FROM
 	) [t2]
 
 BeforeExecute
--- SqlServer.SA.MS SqlServer.2019
+--  SqlServer.SA.MS SqlServer.2019
 
 SELECT
 	[t1].[ParentID],

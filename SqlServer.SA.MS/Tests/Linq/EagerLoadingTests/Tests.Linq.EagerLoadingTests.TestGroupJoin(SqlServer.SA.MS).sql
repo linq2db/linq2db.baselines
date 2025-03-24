@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 BeginTransaction(RepeatableRead)
 BeforeExecute
--- SqlServer.SA.MS SqlServer.2019
+--  SqlServer.SA.MS SqlServer.2019
 DECLARE @take Int -- Int32
 SET     @take = 20
 
@@ -28,7 +28,7 @@ FROM
 		INNER JOIN [SubDetailClass] [d] ON [m_2].[DetailId] = [d].[DetailId]
 
 BeforeExecute
--- SqlServer.SA.MS SqlServer.2019
+--  SqlServer.SA.MS SqlServer.2019
 DECLARE @take Int -- Int32
 SET     @take = 20
 
@@ -66,7 +66,7 @@ FROM
 		) [d_1]
 
 BeforeExecute
--- SqlServer.SA.MS SqlServer.2019
+--  SqlServer.SA.MS SqlServer.2019
 DECLARE @take Int -- Int32
 SET     @take = 20
 
@@ -108,7 +108,7 @@ FROM
 BeforeExecute
 DisposeTransaction
 BeforeExecute
--- SqlServer.SA.MS SqlServer.2019
+--  SqlServer.SA.MS SqlServer.2019
 DECLARE @take Int -- Int32
 SET     @take = 20
 

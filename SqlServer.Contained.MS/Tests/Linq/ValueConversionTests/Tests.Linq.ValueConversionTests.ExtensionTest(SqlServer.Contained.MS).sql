@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.Contained.MS SqlServer.2019
+--  SqlServer.Contained.MS SqlServer.2019
 DECLARE @testedList NVarChar(200) -- String
 SET     @testedList = N'[{"Value":"Value1"}]'
 

@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.SA SqlServer.2019
+--  SqlServer.SA SqlServer.2019
 
 CREATE TABLE [tempdb]..[#DestinationTable_destination]
 (
@@ -9,7 +9,7 @@ CREATE TABLE [tempdb]..[#DestinationTable_destination]
 )
 
 BeforeExecute
--- SqlServer.SA SqlServer.2019
+--  SqlServer.SA SqlServer.2019
 
 UPDATE
 	[TableWithData_source]
@@ -31,7 +31,7 @@ WHERE
 	[TableWithData_source].[Id] > 3
 
 BeforeExecute
--- SqlServer.SA SqlServer.2019
+--  SqlServer.SA SqlServer.2019
 
 SELECT
 	[t1].[Id],
@@ -41,7 +41,7 @@ FROM
 	[tempdb]..[#DestinationTable_destination] [t1]
 
 BeforeExecute
--- SqlServer.SA SqlServer.2019
+--  SqlServer.SA SqlServer.2019
 
 DROP TABLE IF EXISTS [tempdb]..[#DestinationTable_destination]
 

@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.SA SqlServer.2019
+--  SqlServer.SA SqlServer.2019
 
 SELECT
 	[nm].[MiddleName]
@@ -9,7 +9,7 @@ WHERE
 	NOT ([nm].[MiddleName] IS NULL OR Len([nm].[MiddleName]) = 0)
 
 BeforeExecute
--- SqlServer.SA SqlServer.2019
+--  SqlServer.SA SqlServer.2019
 
 SELECT
 	[t1].[FirstName],

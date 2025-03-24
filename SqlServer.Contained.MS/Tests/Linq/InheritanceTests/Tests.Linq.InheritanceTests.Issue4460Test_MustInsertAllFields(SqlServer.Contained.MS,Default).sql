@@ -2,7 +2,7 @@
 INSERT BULK [Issue4460Table](Id, Code, Name, Surname)
 
 BeforeExecute
--- SqlServer.Contained.MS SqlServer.2019
+--  SqlServer.Contained.MS SqlServer.2019
 
 SELECT
 	[t1].[Code],

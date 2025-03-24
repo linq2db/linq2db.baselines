@@ -1,10 +1,10 @@
 ﻿BeforeExecute
--- SqlServer.Contained.MS SqlServer.2019 (asynchronously)
+--  SqlServer.Contained.MS SqlServer.2019 (asynchronously)
 
 DROP TABLE [tempdb]..[#TestTable]
 
 BeforeExecute
--- SqlServer.Contained.MS SqlServer.2019 (asynchronously)
+--  SqlServer.Contained.MS SqlServer.2019 (asynchronously)
 
 CREATE TABLE [tempdb]..[#TestTable]
 (
@@ -15,7 +15,7 @@ CREATE TABLE [tempdb]..[#TestTable]
 )
 
 BeforeExecute
--- SqlServer.Contained.MS SqlServer.2019 (asynchronously)
+--  SqlServer.Contained.MS SqlServer.2019 (asynchronously)
 
 SELECT
 	[t1].[ID],
@@ -26,7 +26,7 @@ FROM
 	[tempdb]..[#TestTable] [t1]
 
 BeforeExecute
--- SqlServer.Contained.MS SqlServer.2019 (asynchronously)
+--  SqlServer.Contained.MS SqlServer.2019 (asynchronously)
 
 DROP TABLE [tempdb]..[#TestTable]
 

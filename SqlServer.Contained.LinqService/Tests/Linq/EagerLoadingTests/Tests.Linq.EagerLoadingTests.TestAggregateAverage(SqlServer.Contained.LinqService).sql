@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.Contained SqlServer.2019
+--  SqlServer.Contained SqlServer.2019
 
 SELECT
 	[t3].[AVG_1]
@@ -37,7 +37,7 @@ WHERE
 	) > 1
 
 BeforeExecute
--- SqlServer.Contained SqlServer.2019
+--  SqlServer.Contained SqlServer.2019
 
 SELECT
 	[m_1].[Id1],
@@ -54,7 +54,7 @@ FROM
 		INNER JOIN [DetailClass] [d] ON [m_1].[Id1] = [d].[MasterId]
 
 BeforeExecute
--- SqlServer.Contained SqlServer.2019
+--  SqlServer.Contained SqlServer.2019
 
 SELECT
 	[t1].[Id1],

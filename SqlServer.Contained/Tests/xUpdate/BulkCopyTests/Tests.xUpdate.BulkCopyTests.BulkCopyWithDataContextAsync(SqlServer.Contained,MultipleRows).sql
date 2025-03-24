@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.Contained SqlServer.2019 (asynchronously)
+--  SqlServer.Contained SqlServer.2019 (asynchronously)
 
 INSERT INTO [SimpleBulkCopyTable]
 (
@@ -9,7 +9,7 @@ VALUES
 (1)
 
 BeforeExecute
--- SqlServer.Contained SqlServer.2019 (asynchronously)
+--  SqlServer.Contained SqlServer.2019 (asynchronously)
 
 INSERT INTO [SimpleBulkCopyTable]
 (

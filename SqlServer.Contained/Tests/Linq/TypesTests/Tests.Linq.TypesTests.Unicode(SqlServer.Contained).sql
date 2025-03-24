@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 BeginTransaction
 BeforeExecute
--- SqlServer.Contained SqlServer.2019
+--  SqlServer.Contained SqlServer.2019
 DECLARE @FirstName NVarChar(4000) -- String
 SET     @FirstName = N'擊敗奴隸'
 DECLARE @LastName NVarChar(4000) -- String
@@ -27,7 +27,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.Contained SqlServer.2019
+--  SqlServer.Contained SqlServer.2019
 
 SELECT TOP (2)
 	[p].[FirstName],

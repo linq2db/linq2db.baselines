@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.Contained SqlServer.2019
+--  SqlServer.Contained SqlServer.2019
 DECLARE @Column UniqueIdentifier -- Guid
 SET     @Column = 'a948600d-de21-4f74-8ac2-9516b287076e'
 DECLARE @ColumnNullable UniqueIdentifier -- Guid
@@ -15,7 +15,7 @@ WHERE
 	[r].[Column] = @Column AND [r].[ColumnNullable] = @ColumnNullable
 
 BeforeExecute
--- SqlServer.Contained SqlServer.2019
+--  SqlServer.Contained SqlServer.2019
 
 SELECT
 	[r].[Id],
@@ -28,14 +28,14 @@ WHERE
 	[r].[ColumnNullable] = 'bd3973a5-4323-4dd8-9f4f-df9f93e2a627'
 
 BeforeExecute
--- SqlServer.Contained SqlServer.2019
+--  SqlServer.Contained SqlServer.2019
 
 DELETE [t1]
 FROM
 	[GuidTable] [t1]
 
 BeforeExecute
--- SqlServer.Contained SqlServer.2019
+--  SqlServer.Contained SqlServer.2019
 DECLARE @Id Int -- Int32
 SET     @Id = 1
 DECLARE @Column UniqueIdentifier -- Guid
@@ -57,7 +57,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.Contained SqlServer.2019
+--  SqlServer.Contained SqlServer.2019
 DECLARE @Id Int -- Int32
 SET     @Id = 2
 DECLARE @Column UniqueIdentifier -- Guid
@@ -79,7 +79,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.Contained SqlServer.2019
+--  SqlServer.Contained SqlServer.2019
 
 SELECT
 	[t1].[Id],
@@ -91,14 +91,14 @@ ORDER BY
 	[t1].[Id]
 
 BeforeExecute
--- SqlServer.Contained SqlServer.2019
+--  SqlServer.Contained SqlServer.2019
 
 DELETE [t1]
 FROM
 	[GuidTable] [t1]
 
 BeforeExecute
--- SqlServer.Contained SqlServer.2019
+--  SqlServer.Contained SqlServer.2019
 
 INSERT INTO [GuidTable]
 (
@@ -111,7 +111,7 @@ VALUES
 (2,'a948600d-de21-4f74-8ac2-9516b287076e','bd3973a5-4323-4dd8-9f4f-df9f93e2a627')
 
 BeforeExecute
--- SqlServer.Contained SqlServer.2019
+--  SqlServer.Contained SqlServer.2019
 
 SELECT
 	[t1].[Id],
@@ -123,7 +123,7 @@ ORDER BY
 	[t1].[Id]
 
 BeforeExecute
--- SqlServer.Contained SqlServer.2019
+--  SqlServer.Contained SqlServer.2019
 
 DELETE [t1]
 FROM
@@ -133,7 +133,7 @@ BeforeExecute
 INSERT BULK [GuidTable](Id, Column, ColumnNullable)
 
 BeforeExecute
--- SqlServer.Contained SqlServer.2019
+--  SqlServer.Contained SqlServer.2019
 
 SELECT
 	[t1].[Id],

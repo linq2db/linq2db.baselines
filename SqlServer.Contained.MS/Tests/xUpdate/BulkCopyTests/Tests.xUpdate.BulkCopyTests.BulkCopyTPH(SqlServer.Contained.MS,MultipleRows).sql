@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.Contained.MS SqlServer.2019
+--  SqlServer.Contained.MS SqlServer.2019
 
 INSERT INTO [TPHTable]
 (
@@ -16,7 +16,7 @@ VALUES
 (3,3,NULL,NULL,N'Str3','Y')
 
 BeforeExecute
--- SqlServer.Contained.MS SqlServer.2019
+--  SqlServer.Contained.MS SqlServer.2019
 
 SELECT
 	[t1].[Discriminator],
@@ -31,7 +31,7 @@ ORDER BY
 	[t1].[Id]
 
 BeforeExecute
--- SqlServer.Contained.MS SqlServer.2019
+--  SqlServer.Contained.MS SqlServer.2019
 
 SELECT TOP (2)
 	[x].[Discriminator],
@@ -46,7 +46,7 @@ WHERE
 	[x].[Discriminator] = 1
 
 BeforeExecute
--- SqlServer.Contained.MS SqlServer.2019
+--  SqlServer.Contained.MS SqlServer.2019
 
 SELECT TOP (2)
 	[x].[Discriminator],
@@ -61,7 +61,7 @@ WHERE
 	[x].[Discriminator] = 2
 
 BeforeExecute
--- SqlServer.Contained.MS SqlServer.2019
+--  SqlServer.Contained.MS SqlServer.2019
 
 SELECT TOP (2)
 	[x].[Discriminator],
@@ -76,7 +76,7 @@ WHERE
 	[x].[Discriminator] = 3
 
 BeforeExecute
--- SqlServer.Contained.MS SqlServer.2019
+--  SqlServer.Contained.MS SqlServer.2019
 
 SELECT TOP (2)
 	[x].[Discriminator],
@@ -91,7 +91,7 @@ WHERE
 	[x].[Value1] = N'Str1'
 
 BeforeExecute
--- SqlServer.Contained.MS SqlServer.2019
+--  SqlServer.Contained.MS SqlServer.2019
 
 SELECT TOP (2)
 	[x].[Discriminator],
@@ -106,7 +106,7 @@ WHERE
 	[x].[Value2] = N'Str2'
 
 BeforeExecute
--- SqlServer.Contained.MS SqlServer.2019
+--  SqlServer.Contained.MS SqlServer.2019
 
 SELECT TOP (2)
 	[x].[Discriminator],

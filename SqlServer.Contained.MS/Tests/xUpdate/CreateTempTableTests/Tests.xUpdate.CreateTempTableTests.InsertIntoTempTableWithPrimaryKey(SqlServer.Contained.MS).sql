@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.Contained.MS SqlServer.2019
+--  SqlServer.Contained.MS SqlServer.2019
 
 CREATE TABLE [tempdb]..[#TableWithPrimaryKey2]
 (
@@ -12,7 +12,7 @@ BeforeExecute
 INSERT BULK [tempdb]..[#TableWithPrimaryKey2](Key)
 
 BeforeExecute
--- SqlServer.Contained.MS SqlServer.2019
+--  SqlServer.Contained.MS SqlServer.2019
 
 DROP TABLE IF EXISTS [tempdb]..[#TableWithPrimaryKey2]
 

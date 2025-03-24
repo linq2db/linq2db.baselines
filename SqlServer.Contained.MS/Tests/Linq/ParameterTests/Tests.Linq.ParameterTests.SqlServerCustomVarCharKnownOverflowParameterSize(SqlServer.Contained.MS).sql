@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.Contained.MS SqlServer.2019
+--  SqlServer.Contained.MS SqlServer.2019
 DECLARE @p VarChar -- AnsiString
 SET     @p = Tests.Linq.ParameterTests+VarChar
 

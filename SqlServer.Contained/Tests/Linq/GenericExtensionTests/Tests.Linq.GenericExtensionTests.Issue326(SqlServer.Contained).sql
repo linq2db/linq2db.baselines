@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.Contained SqlServer.2019
+--  SqlServer.Contained SqlServer.2019
 
 SELECT TOP (1)
 	'T5=(CHAR: ' + CASE WHEN N'X' IS NULL THEN 'null' ELSE CAST(N'X' AS NVARCHAR) END + ', STRING: ' + N'some string' + ')',
