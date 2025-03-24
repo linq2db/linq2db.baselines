@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+--  PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
 
 SELECT
 	current_database()
@@ -8,7 +8,7 @@ FROM
 LIMIT 1
 
 BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+--  PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
 
 SELECT
 	current_schema()
@@ -17,12 +17,12 @@ FROM
 LIMIT 1
 
 BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+--  PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
 
 DROP TABLE IF EXISTS "Issue681Table2"
 
 BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+--  PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
 
 CREATE TABLE "Issue681Table2"
 (
@@ -33,7 +33,7 @@ CREATE TABLE "Issue681Table2"
 )
 
 BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+--  PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
 
 DROP TABLE testdata.public."Issue681Table2"
 

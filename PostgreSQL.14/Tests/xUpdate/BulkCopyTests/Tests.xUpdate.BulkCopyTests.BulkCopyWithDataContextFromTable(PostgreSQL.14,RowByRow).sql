@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+--  PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
 
 INSERT INTO "SimpleBulkCopyTable"
 (
@@ -9,7 +9,7 @@ VALUES
 (1)
 
 BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+--  PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
 
 INSERT INTO "SimpleBulkCopyTable"
 (
@@ -19,7 +19,7 @@ VALUES
 (2)
 
 BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+--  PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
 DECLARE @Id Integer -- Int32
 SET     @Id = 3
 

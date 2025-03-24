@@ -1,12 +1,12 @@
 ﻿BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+--  PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
 
 ALTER SEQUENCE "Person_PersonID_seq" RESTART WITH 5
 
 BeforeExecute
 BeginTransaction
 BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+--  PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
 
 SELECT
 	t1."PersonID",
@@ -17,7 +17,7 @@ ORDER BY
 	t1."PersonID"
 
 BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+--  PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
 
 SELECT
 	t1."PersonID",
@@ -28,7 +28,7 @@ ORDER BY
 	t1."PersonID"
 
 BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+--  PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
 
 SELECT
 	t1."FirstName",

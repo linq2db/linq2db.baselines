@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+--  PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
 DECLARE @doe Text(3) -- String
 SET     @doe = 'Doe'
 
@@ -12,7 +12,7 @@ FROM
 		) n(item) ON 1=1
 
 BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+--  PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
 DECLARE @doe Text(4) -- String
 SET     @doe = 'Doe1'
 

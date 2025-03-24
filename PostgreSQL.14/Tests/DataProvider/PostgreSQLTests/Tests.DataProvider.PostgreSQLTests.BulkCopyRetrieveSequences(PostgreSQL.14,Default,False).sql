@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+--  PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
 
 DELETE FROM
 	"SequenceTest1" t1
@@ -7,12 +7,12 @@ WHERE
 	t1."Value" LIKE 'SeqValue%' ESCAPE '~'
 
 BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+--  PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
 
 SELECT Max("ID") FROM "SequenceTest1"
 
 BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+--  PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
 
 INSERT INTO "SequenceTest1"
 (
@@ -32,7 +32,7 @@ VALUES
 (10,'SeqValue10')
 
 BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+--  PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
 
 INSERT INTO "SequenceTest1"
 (
@@ -52,7 +52,7 @@ VALUES
 (20,'SeqValue20')
 
 BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+--  PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
 
 INSERT INTO "SequenceTest1"
 (
@@ -72,7 +72,7 @@ VALUES
 (30,'SeqValue30')
 
 BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+--  PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
 
 INSERT INTO "SequenceTest1"
 (
@@ -92,7 +92,7 @@ VALUES
 (40,'SeqValue40')
 
 BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+--  PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
 
 DELETE FROM
 	"SequenceTest1" t1

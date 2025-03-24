@@ -1,10 +1,10 @@
 ﻿BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+--  PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
 
 DROP TABLE IF EXISTS "TestTable"
 
 BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+--  PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
 
 CREATE TEMPORARY TABLE "TestTable"
 (
@@ -14,7 +14,7 @@ CREATE TEMPORARY TABLE "TestTable"
 ON COMMIT PRESERVE ROWS
 
 BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+--  PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
 
 SELECT
 	t1."Id",
@@ -31,7 +31,7 @@ WHERE
 	t1."Id" = t2."Id"
 
 BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+--  PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
 
 DROP TABLE IF EXISTS "TestTable"
 

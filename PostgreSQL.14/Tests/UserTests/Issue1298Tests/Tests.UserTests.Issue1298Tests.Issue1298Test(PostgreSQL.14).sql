@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 BeginTransaction
 BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+--  PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
 DECLARE @Id Bigint -- Int64
 SET     @Id = 1
 DECLARE @asdfgh Text(4) -- String
@@ -19,7 +19,7 @@ VALUES
 )
 
 BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+--  PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
 DECLARE @Id Bigint -- Int64
 SET     @Id = 100500
 DECLARE @asdfgh Text(9) -- String
@@ -37,7 +37,7 @@ VALUES
 )
 
 BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+--  PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
 DECLARE @ref1 Bigint -- Int64
 SET     @ref1 = 100500
 DECLARE @y1_q1_ref1 Bigint -- Int64
@@ -55,7 +55,7 @@ VALUES
 )
 
 BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+--  PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
 DECLARE @ref1 Bigint -- Int64
 SET     @ref1 = 1
 DECLARE @y1_q1_ref1 Bigint -- Int64
@@ -73,7 +73,7 @@ VALUES
 )
 
 BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+--  PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
 DECLARE @ref1 Bigint -- Int64
 SET     @ref1 = 100500
 DECLARE @y1_q1_ref1 Bigint -- Int64
@@ -91,7 +91,7 @@ VALUES
 )
 
 BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+--  PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
 DECLARE @take Integer -- Int32
 SET     @take = 2
 

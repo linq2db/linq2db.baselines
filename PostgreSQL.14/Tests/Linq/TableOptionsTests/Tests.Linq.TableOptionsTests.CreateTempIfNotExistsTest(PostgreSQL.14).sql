@@ -1,10 +1,10 @@
 ﻿BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+--  PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
 
 DROP TABLE IF EXISTS "CreateIfNotExistsTable"
 
 BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+--  PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
 
 CREATE TEMPORARY TABLE "CreateIfNotExistsTable"
 (
@@ -14,7 +14,7 @@ CREATE TEMPORARY TABLE "CreateIfNotExistsTable"
 ON COMMIT PRESERVE ROWS
 
 BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+--  PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
 
 SELECT
 	t1."Id",
@@ -23,7 +23,7 @@ FROM
 	"CreateIfNotExistsTable" t1
 
 BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+--  PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
 
 CREATE TABLE IF NOT EXISTS "CreateIfNotExistsTable"
 (
@@ -32,12 +32,12 @@ CREATE TABLE IF NOT EXISTS "CreateIfNotExistsTable"
 )
 
 BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+--  PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
 
 DROP TABLE IF EXISTS "CreateIfNotExistsTable"
 
 BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+--  PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
 
 DROP TABLE IF EXISTS "CreateIfNotExistsTable"
 

@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+--  PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
 
 CREATE TEMPORARY TABLE "Issue4333Table"
 (
@@ -11,7 +11,7 @@ CREATE TEMPORARY TABLE "Issue4333Table"
 ON COMMIT PRESERVE ROWS
 
 BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+--  PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
 
 INSERT INTO "Issue4333Table"
 (
@@ -22,7 +22,7 @@ VALUES
 ('Baz')
 
 BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+--  PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
 
 DROP TABLE IF EXISTS "Issue4333Table"
 
