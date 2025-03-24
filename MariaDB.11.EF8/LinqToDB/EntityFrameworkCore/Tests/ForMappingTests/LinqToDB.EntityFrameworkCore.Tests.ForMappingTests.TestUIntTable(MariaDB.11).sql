@@ -7,7 +7,7 @@ VALUES (@p0, @p1, @p2, @p3, @p4, @p5)
 RETURNING `ID`;
 
 
---  MariaDB.10.MySqlConnector MySql (asynchronously)
+-- MariaDB.10.MySqlConnector MySql (asynchronously)
 DECLARE @field64 UInt64
 SET     @field64 = 5
 

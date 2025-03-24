@@ -3,7 +3,7 @@ FROM `Products` AS `p`
 INNER JOIN `Order Details` AS `o` ON `p`.`ProductID` = `o`.`ProductID`
 
 
---  MariaDB.10.MySqlConnector MySql
+-- MariaDB.10.MySqlConnector MySql
 
 SELECT
 	`p`.`IsDeleted`,
@@ -42,7 +42,7 @@ INNER JOIN (
 WHERE (@__ef_filter__p_0 OR NOT (`p`.`IsDeleted`)) OR NOT (`p`.`IsDeleted`)
 
 
---  MariaDB.10.MySqlConnector MySql
+-- MariaDB.10.MySqlConnector MySql
 
 SELECT
 	`p`.`IsDeleted`,

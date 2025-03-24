@@ -1,4 +1,4 @@
-﻿--  MariaDB.10.MySqlConnector MySql
+﻿-- MariaDB.10.MySqlConnector MySql
 
 CREATE TEMPORARY TABLE `WithIdentity`
 (
@@ -10,7 +10,7 @@ CREATE TEMPORARY TABLE `WithIdentity`
 
 
 
---  MariaDB.10.MySqlConnector MySql
+-- MariaDB.10.MySqlConnector MySql
 
 CREATE TEMPORARY TABLE `NoIdentity`
 (
@@ -22,13 +22,13 @@ CREATE TEMPORARY TABLE `NoIdentity`
 
 
 
---  MariaDB.10.MySqlConnector MySql
+-- MariaDB.10.MySqlConnector MySql
 
 DROP TEMPORARY TABLE IF EXISTS `NoIdentity`
 
 
 
---  MariaDB.10.MySqlConnector MySql
+-- MariaDB.10.MySqlConnector MySql
 
 DROP TEMPORARY TABLE IF EXISTS `WithIdentity`
 
