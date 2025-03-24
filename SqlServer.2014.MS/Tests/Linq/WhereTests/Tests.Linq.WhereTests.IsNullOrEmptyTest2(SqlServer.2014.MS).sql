@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2014.MS SqlServer.2014
+--  SqlServer.2014.MS SqlServer.2014
 
 SELECT
 	[nm].[FirstName]
@@ -9,7 +9,7 @@ WHERE
 	Len([nm].[FirstName]) <> 0
 
 BeforeExecute
--- SqlServer.2014.MS SqlServer.2014
+--  SqlServer.2014.MS SqlServer.2014
 
 SELECT
 	[t1].[FirstName],

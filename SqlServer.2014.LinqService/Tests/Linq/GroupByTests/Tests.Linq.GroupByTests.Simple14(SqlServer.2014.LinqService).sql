@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2014
+--  SqlServer.2014
 
 SELECT
 	[m_1].[ParentID],
@@ -21,7 +21,7 @@ FROM
 		) [d_1] ON [m_1].[ParentID] = [d_1].[Detail]
 
 BeforeExecute
--- SqlServer.2014
+--  SqlServer.2014
 
 SELECT
 	[p].[ParentID]

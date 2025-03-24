@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 BeginTransaction(RepeatableRead)
 BeforeExecute
--- SqlServer.2014
+--  SqlServer.2014
 
 WITH [CTE_1] ([PersonID])
 AS
@@ -32,7 +32,7 @@ FROM
 BeforeExecute
 DisposeTransaction
 BeforeExecute
--- SqlServer.2014
+--  SqlServer.2014
 
 WITH [CTE_1] ([PersonID])
 AS

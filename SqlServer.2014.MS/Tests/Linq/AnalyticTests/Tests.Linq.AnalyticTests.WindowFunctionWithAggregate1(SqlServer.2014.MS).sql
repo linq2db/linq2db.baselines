@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2014.MS SqlServer.2014
+--  SqlServer.2014.MS SqlServer.2014
 DECLARE @take Int -- Int32
 SET     @take = 100
 
@@ -22,7 +22,7 @@ ORDER BY
 	[t1].[Key_1] DESC
 
 BeforeExecute
--- SqlServer.2014.MS SqlServer.2014
+--  SqlServer.2014.MS SqlServer.2014
 
 SELECT
 	[t1].[ParentID],

@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2014.MS SqlServer.2014
+--  SqlServer.2014.MS SqlServer.2014
 
 SELECT
 	[x].[ParentID],
@@ -36,7 +36,7 @@ WHERE
 	) IS NULL)
 
 BeforeExecute
--- SqlServer.2014.MS SqlServer.2014
+--  SqlServer.2014.MS SqlServer.2014
 
 SELECT
 	[x].[ParentID],

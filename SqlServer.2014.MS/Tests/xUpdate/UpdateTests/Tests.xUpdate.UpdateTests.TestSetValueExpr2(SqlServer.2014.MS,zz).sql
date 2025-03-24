@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2014.MS SqlServer.2014
+--  SqlServer.2014.MS SqlServer.2014
 DECLARE @str NVarChar(4000) -- String
 SET     @str = N'zz'
 DECLARE @id Int -- Int32
@@ -14,7 +14,7 @@ WHERE
 	[TextData].[Id] >= @id
 
 BeforeExecute
--- SqlServer.2014.MS SqlServer.2014
+--  SqlServer.2014.MS SqlServer.2014
 
 SELECT
 	[t1].[Id],

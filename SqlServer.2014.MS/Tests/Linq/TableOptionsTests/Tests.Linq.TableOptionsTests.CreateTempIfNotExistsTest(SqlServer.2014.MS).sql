@@ -1,11 +1,11 @@
 ﻿BeforeExecute
--- SqlServer.2014.MS SqlServer.2014
+--  SqlServer.2014.MS SqlServer.2014
 
 IF (OBJECT_ID(N'[CreateIfNotExistsTable]', N'U') IS NOT NULL)
 	DROP TABLE [CreateIfNotExistsTable]
 
 BeforeExecute
--- SqlServer.2014.MS SqlServer.2014
+--  SqlServer.2014.MS SqlServer.2014
 
 CREATE TABLE [tempdb]..[#CreateIfNotExistsTable]
 (
@@ -14,7 +14,7 @@ CREATE TABLE [tempdb]..[#CreateIfNotExistsTable]
 )
 
 BeforeExecute
--- SqlServer.2014.MS SqlServer.2014
+--  SqlServer.2014.MS SqlServer.2014
 
 SELECT
 	[t1].[Id],
@@ -23,7 +23,7 @@ FROM
 	[tempdb]..[#CreateIfNotExistsTable] [t1]
 
 BeforeExecute
--- SqlServer.2014.MS SqlServer.2014
+--  SqlServer.2014.MS SqlServer.2014
 
 IF (OBJECT_ID(N'[CreateIfNotExistsTable]', N'U') IS NULL)
 	CREATE TABLE [CreateIfNotExistsTable]
@@ -33,13 +33,13 @@ IF (OBJECT_ID(N'[CreateIfNotExistsTable]', N'U') IS NULL)
 	)
 
 BeforeExecute
--- SqlServer.2014.MS SqlServer.2014
+--  SqlServer.2014.MS SqlServer.2014
 
 IF (OBJECT_ID(N'[CreateIfNotExistsTable]', N'U') IS NOT NULL)
 	DROP TABLE [CreateIfNotExistsTable]
 
 BeforeExecute
--- SqlServer.2014.MS SqlServer.2014
+--  SqlServer.2014.MS SqlServer.2014
 
 IF (OBJECT_ID(N'[tempdb]..[#CreateIfNotExistsTable]', N'U') IS NOT NULL)
 	DROP TABLE [tempdb]..[#CreateIfNotExistsTable]

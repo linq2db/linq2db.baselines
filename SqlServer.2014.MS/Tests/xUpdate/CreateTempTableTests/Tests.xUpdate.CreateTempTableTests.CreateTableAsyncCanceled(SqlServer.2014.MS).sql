@@ -1,11 +1,11 @@
 ﻿BeforeExecute
--- SqlServer.2014.MS SqlServer.2014
+--  SqlServer.2014.MS SqlServer.2014
 
 IF (OBJECT_ID(N'[TempTable]', N'U') IS NOT NULL)
 	DROP TABLE [TempTable]
 
 BeforeExecute
--- SqlServer.2014.MS SqlServer.2014
+--  SqlServer.2014.MS SqlServer.2014
 
 SELECT
 	[p].[ParentID]
@@ -13,7 +13,7 @@ FROM
 	[Parent] [p]
 
 BeforeExecute
--- SqlServer.2014.MS SqlServer.2014 (asynchronously)
+--  SqlServer.2014.MS SqlServer.2014 (asynchronously)
 
 CREATE TABLE [tempdb]..[#TempTable]
 (
@@ -21,7 +21,7 @@ CREATE TABLE [tempdb]..[#TempTable]
 )
 
 BeforeExecute
--- SqlServer.2014.MS SqlServer.2014
+--  SqlServer.2014.MS SqlServer.2014
 
 DROP TABLE [TempTable]
 

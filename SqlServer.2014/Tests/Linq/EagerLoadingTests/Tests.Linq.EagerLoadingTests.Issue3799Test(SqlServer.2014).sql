@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 BeginTransaction(RepeatableRead)
 BeforeExecute
--- SqlServer.2014
+--  SqlServer.2014
 
 SELECT
 	[m_1].[Children],
@@ -26,7 +26,7 @@ FROM
 BeforeExecute
 DisposeTransaction
 BeforeExecute
--- SqlServer.2014
+--  SqlServer.2014
 
 SELECT
 	[item_1].[Name],

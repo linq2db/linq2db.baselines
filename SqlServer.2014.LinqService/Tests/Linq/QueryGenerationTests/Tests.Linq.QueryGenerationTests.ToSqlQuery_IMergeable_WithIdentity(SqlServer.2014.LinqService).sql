@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2014
+--  SqlServer.2014
 
 MERGE INTO [TableWithIdentity] [Target]
 USING (VALUES

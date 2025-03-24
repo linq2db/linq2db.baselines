@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 BeginTransaction(RepeatableRead)
 BeforeExecute
--- SqlServer.2014
+--  SqlServer.2014
 
 SELECT
 	[m_1].[PersonID],
@@ -16,7 +16,7 @@ FROM
 BeforeExecute
 DisposeTransaction
 BeforeExecute
--- SqlServer.2014
+--  SqlServer.2014
 
 SELECT
 	[t1].[PersonID]
@@ -28,7 +28,7 @@ GROUP BY
 BeforeExecute
 BeginTransaction(RepeatableRead)
 BeforeExecute
--- SqlServer.2014
+--  SqlServer.2014
 
 SELECT
 	[m_1].[PersonID],
@@ -43,7 +43,7 @@ FROM
 BeforeExecute
 DisposeTransaction
 BeforeExecute
--- SqlServer.2014
+--  SqlServer.2014
 
 SELECT
 	[t1].[PersonID]

@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2014.MS SqlServer.2014
+--  SqlServer.2014.MS SqlServer.2014
 
 DELETE [t1]
 FROM
@@ -8,7 +8,7 @@ WHERE
 	[t1].[PersonID] > 4
 
 BeforeExecute
--- SqlServer.2014.MS SqlServer.2014 (asynchronously)
+--  SqlServer.2014.MS SqlServer.2014 (asynchronously)
 
 INSERT INTO [Person]
 (
@@ -26,7 +26,7 @@ VALUES
 SELECT SCOPE_IDENTITY()
 
 BeforeExecute
--- SqlServer.2014.MS SqlServer.2014
+--  SqlServer.2014.MS SqlServer.2014
 
 DELETE [t1]
 FROM

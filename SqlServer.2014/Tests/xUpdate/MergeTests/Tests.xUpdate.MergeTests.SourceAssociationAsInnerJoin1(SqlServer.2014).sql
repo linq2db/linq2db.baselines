@@ -1,12 +1,12 @@
 ﻿BeforeExecute
--- SqlServer.2014
+--  SqlServer.2014
 
 DBCC CHECKIDENT ('Person', RESEED, 4)
 
 BeforeExecute
 BeginTransaction
 BeforeExecute
--- SqlServer.2014
+--  SqlServer.2014
 
 SELECT
 	[t1].[FirstName],
@@ -18,7 +18,7 @@ FROM
 	[Person] [t1]
 
 BeforeExecute
--- SqlServer.2014
+--  SqlServer.2014
 
 SELECT
 	[t1].[PersonID],
@@ -27,7 +27,7 @@ FROM
 	[Patient] [t1]
 
 BeforeExecute
--- SqlServer.2014
+--  SqlServer.2014
 
 MERGE INTO [Person] [Target]
 USING (

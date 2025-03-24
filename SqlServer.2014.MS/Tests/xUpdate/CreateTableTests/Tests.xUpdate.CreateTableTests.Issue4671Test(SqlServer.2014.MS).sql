@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2014.MS SqlServer.2014
+--  SqlServer.2014.MS SqlServer.2014
 
 CREATE TABLE [tempdb]..[#Issue4671EntityTMP]
 (
@@ -10,7 +10,7 @@ CREATE TABLE [tempdb]..[#Issue4671EntityTMP]
 )
 
 BeforeExecute
--- SqlServer.2014.MS SqlServer.2014
+--  SqlServer.2014.MS SqlServer.2014
 
 INSERT INTO [Issue4671Entity]
 (
@@ -22,7 +22,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2014.MS SqlServer.2014
+--  SqlServer.2014.MS SqlServer.2014
 
 INSERT INTO [tempdb]..[#Issue4671EntityTMP]
 (
@@ -34,7 +34,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2014.MS SqlServer.2014
+--  SqlServer.2014.MS SqlServer.2014
 
 SELECT TOP (2)
 	[t1].[Id],
@@ -43,7 +43,7 @@ FROM
 	[Issue4671Entity] [t1]
 
 BeforeExecute
--- SqlServer.2014.MS SqlServer.2014
+--  SqlServer.2014.MS SqlServer.2014
 
 SELECT TOP (2)
 	[t1].[Id],
@@ -52,7 +52,7 @@ FROM
 	[tempdb]..[#Issue4671EntityTMP] [t1]
 
 BeforeExecute
--- SqlServer.2014.MS SqlServer.2014
+--  SqlServer.2014.MS SqlServer.2014
 
 IF (OBJECT_ID(N'[tempdb]..[#Issue4671EntityTMP]', N'U') IS NOT NULL)
 	DROP TABLE [tempdb]..[#Issue4671EntityTMP]

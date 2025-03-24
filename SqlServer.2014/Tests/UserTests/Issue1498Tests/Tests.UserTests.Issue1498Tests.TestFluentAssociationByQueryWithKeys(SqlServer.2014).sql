@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2014
+--  SqlServer.2014
 DECLARE @Id Int -- Int32
 SET     @Id = 6
 DECLARE @Title NVarChar(4000) -- String
@@ -21,7 +21,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2014
+--  SqlServer.2014
 DECLARE @Id Int -- Int32
 SET     @Id = 60
 DECLARE @TopicId Int -- Int32
@@ -43,7 +43,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2014
+--  SqlServer.2014
 DECLARE @Id Int -- Int32
 SET     @Id = 61
 DECLARE @TopicId Int -- Int32
@@ -67,7 +67,7 @@ VALUES
 BeforeExecute
 BeginTransaction(RepeatableRead)
 BeforeExecute
--- SqlServer.2014
+--  SqlServer.2014
 
 SELECT
 	[m_1].[Id],
@@ -84,7 +84,7 @@ FROM
 		INNER JOIN [Message] [d] ON [d].[TopicId] = [m_1].[Id]
 
 BeforeExecute
--- SqlServer.2014
+--  SqlServer.2014
 
 SELECT TOP (1)
 	[x].[Id],

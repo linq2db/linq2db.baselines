@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2014
+--  SqlServer.2014
 
 CREATE TABLE [tempdb]..[#InsertTempTable_42]
 (
@@ -10,14 +10,14 @@ CREATE TABLE [tempdb]..[#InsertTempTable_42]
 )
 
 BeforeExecute
--- SqlServer.2014
+--  SqlServer.2014
 
 DELETE [t1]
 FROM
 	[TestMerge1] [t1]
 
 BeforeExecute
--- SqlServer.2014
+--  SqlServer.2014
 DECLARE @Id Int -- Int32
 SET     @Id = 1
 DECLARE @Field1 Int -- Int32
@@ -43,7 +43,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2014
+--  SqlServer.2014
 DECLARE @Id Int -- Int32
 SET     @Id = 2
 DECLARE @Field1 Int -- Int32
@@ -69,7 +69,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2014
+--  SqlServer.2014
 DECLARE @Id Int -- Int32
 SET     @Id = 3
 DECLARE @Field1 Int -- Int32
@@ -95,7 +95,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2014
+--  SqlServer.2014
 DECLARE @Id Int -- Int32
 SET     @Id = 4
 DECLARE @Field1 Int -- Int32
@@ -121,14 +121,14 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2014
+--  SqlServer.2014
 
 DELETE [t1]
 FROM
 	[TestMerge2] [t1]
 
 BeforeExecute
--- SqlServer.2014
+--  SqlServer.2014
 DECLARE @Id Int -- Int32
 SET     @Id = 3
 DECLARE @Field1 Int -- Int32
@@ -154,7 +154,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2014
+--  SqlServer.2014
 DECLARE @Id Int -- Int32
 SET     @Id = 4
 DECLARE @Field1 Int -- Int32
@@ -180,7 +180,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2014
+--  SqlServer.2014
 DECLARE @Id Int -- Int32
 SET     @Id = 5
 DECLARE @Field1 Int -- Int32
@@ -206,7 +206,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2014
+--  SqlServer.2014
 DECLARE @Id Int -- Int32
 SET     @Id = 6
 DECLARE @Field1 Int -- Int32
@@ -232,7 +232,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2014
+--  SqlServer.2014
 
 MERGE INTO [TestMerge1] [Target]
 USING (
@@ -284,7 +284,7 @@ INTO [tempdb]..[#InsertTempTable_42]
 ;
 
 BeforeExecute
--- SqlServer.2014
+--  SqlServer.2014
 
 SELECT
 	[t1].[Action],
@@ -295,7 +295,7 @@ FROM
 	[tempdb]..[#InsertTempTable_42] [t1]
 
 BeforeExecute
--- SqlServer.2014
+--  SqlServer.2014
 
 IF (OBJECT_ID(N'[tempdb]..[#InsertTempTable_42]', N'U') IS NOT NULL)
 	DROP TABLE [tempdb]..[#InsertTempTable_42]

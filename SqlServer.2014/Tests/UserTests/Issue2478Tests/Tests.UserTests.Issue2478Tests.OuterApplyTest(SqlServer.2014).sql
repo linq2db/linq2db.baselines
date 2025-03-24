@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2014
+--  SqlServer.2014
 
 SELECT
 	[p].[ParentID],
@@ -17,7 +17,7 @@ FROM
 		) [c_2]
 
 BeforeExecute
--- SqlServer.2014
+--  SqlServer.2014
 
 SELECT
 	COUNT(*)

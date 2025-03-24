@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 BeginTransactionAsync(RepeatableRead)
 BeforeExecute
--- SqlServer.2014 (asynchronously)
+--  SqlServer.2014 (asynchronously)
 
 SELECT
 	[m_1].[ParentID],
@@ -20,7 +20,7 @@ FROM
 		ON [m_1].[ParentID] = [a_Parent1_1].[ParentID]
 
 BeforeExecute
--- SqlServer.2014 (asynchronously)
+--  SqlServer.2014 (asynchronously)
 
 SELECT
 	[a_Parent1].[ParentID]

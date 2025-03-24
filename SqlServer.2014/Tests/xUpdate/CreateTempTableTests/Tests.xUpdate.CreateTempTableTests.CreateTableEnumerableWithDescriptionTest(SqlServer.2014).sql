@@ -1,11 +1,11 @@
 ﻿BeforeExecute
--- SqlServer.2014
+--  SqlServer.2014
 
 IF (OBJECT_ID(N'[TempTable]', N'U') IS NOT NULL)
 	DROP TABLE [TempTable]
 
 BeforeExecute
--- SqlServer.2014
+--  SqlServer.2014
 
 IF (OBJECT_ID(N'[TempTable]', N'U') IS NULL)
 	CREATE TABLE [TempTable]
@@ -17,7 +17,7 @@ BeforeExecute
 INSERT BULK [TempTable](Name)
 
 BeforeExecute
--- SqlServer.2014
+--  SqlServer.2014
 
 SELECT
 	[t].[Name]
@@ -26,7 +26,7 @@ FROM
 		INNER JOIN [TempTable] [t] ON [p].[FirstName] = [t].[Name]
 
 BeforeExecute
--- SqlServer.2014
+--  SqlServer.2014
 
 IF (OBJECT_ID(N'[TempTable]', N'U') IS NOT NULL)
 	DROP TABLE [TempTable]

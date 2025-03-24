@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2014 (asynchronously)
+--  SqlServer.2014 (asynchronously)
 DECLARE @ParentID Int -- Int32
 SET     @ParentID = 1010
 DECLARE @Value1 Int -- Int32
@@ -19,7 +19,7 @@ VALUES
 BeforeExecute
 BeginTransaction
 BeforeExecute
--- SqlServer.2014
+--  SqlServer.2014
 
 UPDATE
 	[Parent]
@@ -31,7 +31,7 @@ WHERE
 BeforeExecute
 DisposeTransactionAsync
 BeforeExecute
--- SqlServer.2014 (asynchronously)
+--  SqlServer.2014 (asynchronously)
 
 SELECT TOP (1)
 	[t].[ParentID],

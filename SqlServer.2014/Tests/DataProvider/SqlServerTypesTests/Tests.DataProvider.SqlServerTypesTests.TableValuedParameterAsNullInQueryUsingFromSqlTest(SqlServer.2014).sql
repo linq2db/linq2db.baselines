@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2014
+--  SqlServer.2014
 DECLARE @p [dbo].[TestTableType] -- Structured -- Object
 SET     @p = NULL
 

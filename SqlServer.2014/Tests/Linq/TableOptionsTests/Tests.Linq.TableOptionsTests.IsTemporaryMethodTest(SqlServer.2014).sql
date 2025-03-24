@@ -1,11 +1,11 @@
 ﻿BeforeExecute
--- SqlServer.2014
+--  SqlServer.2014
 
 IF (OBJECT_ID(N'[tempdb]..[#TestTable]', N'U') IS NOT NULL)
 	DROP TABLE [tempdb]..[#TestTable]
 
 BeforeExecute
--- SqlServer.2014
+--  SqlServer.2014
 
 CREATE TABLE [tempdb]..[#TestTable]
 (
@@ -14,7 +14,7 @@ CREATE TABLE [tempdb]..[#TestTable]
 )
 
 BeforeExecute
--- SqlServer.2014
+--  SqlServer.2014
 
 SELECT
 	[t1].[Id],
@@ -29,7 +29,7 @@ FROM
 		INNER JOIN [tempdb]..[#TestTable] [t3] ON [t2].[Id] = [t3].[Id]
 
 BeforeExecute
--- SqlServer.2014
+--  SqlServer.2014
 
 IF (OBJECT_ID(N'[tempdb]..[#TestTable]', N'U') IS NOT NULL)
 	DROP TABLE [tempdb]..[#TestTable]

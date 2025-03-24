@@ -5,7 +5,7 @@ BeforeExecute
 INSERT ASYNC BULK [SimpleBulkCopyTable](Id)
 
 BeforeExecute
--- SqlServer.2014.MS SqlServer.2014 (asynchronously)
+--  SqlServer.2014.MS SqlServer.2014 (asynchronously)
 DECLARE @Id Int -- Int32
 SET     @Id = 3
 
@@ -25,7 +25,7 @@ BeforeExecute
 INSERT ASYNC BULK [SimpleBulkCopyTable](Id)
 
 BeforeExecute
--- SqlServer.2014.MS SqlServer.2014 (asynchronously)
+--  SqlServer.2014.MS SqlServer.2014 (asynchronously)
 DECLARE @Id Int -- Int32
 SET     @Id = 30
 

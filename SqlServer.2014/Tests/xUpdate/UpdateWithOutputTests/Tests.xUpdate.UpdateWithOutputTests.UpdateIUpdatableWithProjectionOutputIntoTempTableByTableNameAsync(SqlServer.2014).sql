@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2014
+--  SqlServer.2014
 
 CREATE TABLE [tempdb]..[#DestinationTable_destination]
 (
@@ -9,7 +9,7 @@ CREATE TABLE [tempdb]..[#DestinationTable_destination]
 )
 
 BeforeExecute
--- SqlServer.2014 (asynchronously)
+--  SqlServer.2014 (asynchronously)
 
 UPDATE
 	[TableWithData_source]
@@ -30,7 +30,7 @@ WHERE
 	[TableWithData_source].[Id] > 3
 
 BeforeExecute
--- SqlServer.2014
+--  SqlServer.2014
 
 SELECT
 	[t1].[Id],
@@ -40,7 +40,7 @@ FROM
 	[tempdb]..[#DestinationTable_destination] [t1]
 
 BeforeExecute
--- SqlServer.2014
+--  SqlServer.2014
 
 IF (OBJECT_ID(N'[tempdb]..[#DestinationTable_destination]', N'U') IS NOT NULL)
 	DROP TABLE [tempdb]..[#DestinationTable_destination]

@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2014.MS SqlServer.2014
+--  SqlServer.2014.MS SqlServer.2014
 DECLARE @personId Int -- Int32
 SET     @personId = 1
 DECLARE @personId_1 Int -- Int32
@@ -23,7 +23,7 @@ WHERE
 	[p].[PersonID] = @personId_1
 
 BeforeExecute
--- SqlServer.2014.MS SqlServer.2014
+--  SqlServer.2014.MS SqlServer.2014
 DECLARE @personId Int -- Int32
 SET     @personId = 1
 DECLARE @personId_1 Int -- Int32

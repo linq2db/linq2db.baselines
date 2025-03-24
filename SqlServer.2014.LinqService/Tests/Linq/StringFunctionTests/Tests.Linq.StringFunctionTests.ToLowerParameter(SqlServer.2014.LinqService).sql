@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2014
+--  SqlServer.2014
 DECLARE @param NVarChar(4000) -- String
 SET     @param = N'john'
 

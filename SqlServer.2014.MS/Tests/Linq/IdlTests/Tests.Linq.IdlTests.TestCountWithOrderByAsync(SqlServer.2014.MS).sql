@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2014.MS SqlServer.2014 (asynchronously)
+--  SqlServer.2014.MS SqlServer.2014 (asynchronously)
 
 SELECT
 	MAX([p].[PersonID])
@@ -7,7 +7,7 @@ FROM
 	[Person] [p]
 
 BeforeExecute
--- SqlServer.2014.MS SqlServer.2014 (asynchronously)
+--  SqlServer.2014.MS SqlServer.2014 (asynchronously)
 
 SELECT
 	COUNT(*)

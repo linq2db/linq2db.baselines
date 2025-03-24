@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2014
+--  SqlServer.2014
 
 SELECT
 	[s].[Id],
@@ -11,7 +11,7 @@ WHERE
 	[s].[Id] > 3
 
 BeforeExecute
--- SqlServer.2014 (asynchronously)
+--  SqlServer.2014 (asynchronously)
 
 DELETE [s]
 OUTPUT
@@ -24,7 +24,7 @@ WHERE
 	[s].[Id] > 3
 
 BeforeExecute
--- SqlServer.2014 (asynchronously)
+--  SqlServer.2014 (asynchronously)
 
 IF (OBJECT_ID(N'[TableWithData]', N'U') IS NOT NULL)
 	DROP TABLE [TableWithData]

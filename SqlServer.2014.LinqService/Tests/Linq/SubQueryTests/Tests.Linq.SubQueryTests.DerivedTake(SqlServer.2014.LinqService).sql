@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2014
+--  SqlServer.2014
 DECLARE @take Int -- Int32
 SET     @take = 1
 
@@ -16,7 +16,7 @@ FROM
 	) [t2]
 
 BeforeExecute
--- SqlServer.2014
+--  SqlServer.2014
 
 SELECT
 	[t1].[ParentID],

@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2014.MS SqlServer.2014
+--  SqlServer.2014.MS SqlServer.2014
 
 CREATE TABLE [tempdb]..[#I1721Model]
 (
@@ -12,7 +12,7 @@ CREATE TABLE [tempdb]..[#I1721Model]
 )
 
 BeforeExecute
--- SqlServer.2014.MS SqlServer.2014
+--  SqlServer.2014.MS SqlServer.2014
 
 IF (OBJECT_ID(N'[tempdb]..[#I1721Model]', N'U') IS NOT NULL)
 	DROP TABLE [tempdb]..[#I1721Model]

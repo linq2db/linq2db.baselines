@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2014 (asynchronously)
+--  SqlServer.2014 (asynchronously)
 
 INSERT INTO [dbo].[LinqDataTypes]
 (
@@ -24,7 +24,7 @@ VALUES
 (4009,1009,DATETIME2FROMPARTS(2001, 1, 11, 1, 11, 21, 1000000, 7),1,'233bf399-9710-4e79-873d-2ec7bf1e0009',NULL,9)
 
 BeforeExecute
--- SqlServer.2014
+--  SqlServer.2014
 
 DELETE [p]
 FROM
