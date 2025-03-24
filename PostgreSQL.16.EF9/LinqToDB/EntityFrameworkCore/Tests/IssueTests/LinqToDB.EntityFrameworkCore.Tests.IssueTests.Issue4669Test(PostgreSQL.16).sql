@@ -1,4 +1,4 @@
-﻿--  PostgreSQL.15 PostgreSQL (asynchronously)
+﻿-- PostgreSQL.15 PostgreSQL (asynchronously)
 
 SELECT
 	x."Id",
