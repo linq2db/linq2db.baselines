@@ -1,4 +1,4 @@
-﻿--  SQLite.MS SQLite
+﻿-- SQLite.MS SQLite
 
 CREATE TEMPORARY TABLE temp.[Issue4671Entity1TMP]
 (
@@ -8,7 +8,7 @@ CREATE TEMPORARY TABLE temp.[Issue4671Entity1TMP]
 
 
 
---  SQLite.MS SQLite
+-- SQLite.MS SQLite
 
 INSERT INTO [Issue4671Entity1]
 (
@@ -21,7 +21,7 @@ VALUES
 
 
 
---  SQLite.MS SQLite
+-- SQLite.MS SQLite
 
 INSERT INTO temp.[Issue4671Entity1TMP]
 (
@@ -34,7 +34,7 @@ VALUES
 
 
 
---  SQLite.MS SQLite
+-- SQLite.MS SQLite
 
 SELECT
 	[t1].[Id],
@@ -45,7 +45,7 @@ LIMIT 2
 
 
 
---  SQLite.MS SQLite
+-- SQLite.MS SQLite
 
 SELECT
 	[t1].[Id],
@@ -56,7 +56,7 @@ LIMIT 2
 
 
 
---  SQLite.MS SQLite
+-- SQLite.MS SQLite
 
 DROP TABLE IF EXISTS temp.[Issue4671Entity1TMP]
 
