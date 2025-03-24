@@ -1,10 +1,10 @@
 ﻿BeforeExecute
--- SqlServer.2019.MS SqlServer.2019
+--  SqlServer.2019.MS SqlServer.2019
 
 DBCC CHECKIDENT ('Person', RESEED, 4)
 
 BeforeExecute
--- SqlServer.2019.MS SqlServer.2019
+--  SqlServer.2019.MS SqlServer.2019
 DECLARE @Gender NChar(1) -- StringFixedLength
 SET     @Gender = N'M'
 DECLARE @FirstName NVarChar(4000) -- String
@@ -32,7 +32,7 @@ VALUES
 SELECT SCOPE_IDENTITY()
 
 BeforeExecute
--- SqlServer.2019.MS SqlServer.2019
+--  SqlServer.2019.MS SqlServer.2019
 DECLARE @Gender NChar(1) -- StringFixedLength
 SET     @Gender = N'M'
 DECLARE @FirstName NVarChar(4000) -- String
@@ -60,7 +60,7 @@ VALUES
 SELECT SCOPE_IDENTITY()
 
 BeforeExecute
--- SqlServer.2019.MS SqlServer.2019
+--  SqlServer.2019.MS SqlServer.2019
 DECLARE @id1 Int -- Int32
 SET     @id1 = 5
 
@@ -76,7 +76,7 @@ WHERE
 	[t1].[PersonID] = @id1
 
 BeforeExecute
--- SqlServer.2019.MS SqlServer.2019
+--  SqlServer.2019.MS SqlServer.2019
 DECLARE @id2 Int -- Int32
 SET     @id2 = 6
 

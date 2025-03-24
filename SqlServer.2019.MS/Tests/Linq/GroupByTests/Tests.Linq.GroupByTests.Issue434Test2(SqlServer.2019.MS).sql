@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 BeginTransaction(RepeatableRead)
 BeforeExecute
--- SqlServer.2019.MS SqlServer.2019
+--  SqlServer.2019.MS SqlServer.2019
 
 SELECT
 	[m_1].[PersonID],
@@ -16,7 +16,7 @@ WHERE
 BeforeExecute
 DisposeTransaction
 BeforeExecute
--- SqlServer.2019.MS SqlServer.2019
+--  SqlServer.2019.MS SqlServer.2019
 
 SELECT
 	[p].[FirstName],

@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2019
+--  SqlServer.2019
 
 SELECT TOP (1)
 	[t].[ID],
@@ -18,7 +18,7 @@ WHERE
 	[t].[ID] = 1
 
 BeforeExecute
--- SqlServer.2019
+--  SqlServer.2019
 
 SELECT TOP (1)
 	[t].[ID],
@@ -37,7 +37,7 @@ WHERE
 	[t].[ID] = 1
 
 BeforeExecute
--- SqlServer.2019
+--  SqlServer.2019
 DECLARE @MoneyValue Decimal(5, 4)
 SET     @MoneyValue = 1.1100
 DECLARE @DateTimeValue DateTime
@@ -75,7 +75,7 @@ WHERE
 	[LinqDataTypes].[ID] = @ID
 
 BeforeExecute
--- SqlServer.2019
+--  SqlServer.2019
 
 SELECT TOP (1)
 	[t].[ID],
@@ -94,7 +94,7 @@ WHERE
 	[t].[ID] = 1
 
 BeforeExecute
--- SqlServer.2019
+--  SqlServer.2019
 DECLARE @pdt DateTime2
 SET     @pdt = NULL
 

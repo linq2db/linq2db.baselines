@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2019
+--  SqlServer.2019
 
 SELECT
 	[p].[FirstName],
@@ -13,7 +13,7 @@ WHERE
 	[p].[PersonID] = 1
 
 BeforeExecute
--- SqlServer.2019
+--  SqlServer.2019
 
 SELECT TOP (2)
 	[p].[FirstName],

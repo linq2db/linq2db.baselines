@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2019
+--  SqlServer.2019
 
 SELECT
 	[p].[ParentID],
@@ -8,7 +8,7 @@ FROM
 	[Parent] [p]
 
 BeforeExecute
--- SqlServer.2019
+--  SqlServer.2019
 
 SELECT
 	COUNT(*)

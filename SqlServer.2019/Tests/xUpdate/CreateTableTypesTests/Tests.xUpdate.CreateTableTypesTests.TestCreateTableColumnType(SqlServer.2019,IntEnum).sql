@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2019
+--  SqlServer.2019
 DECLARE @Id Int -- Int32
 SET     @Id = 1
 DECLARE @IntEnum Int -- Int32
@@ -17,7 +17,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2019
+--  SqlServer.2019
 DECLARE @Id Int -- Int32
 SET     @Id = 2
 DECLARE @IntEnum Int -- Int32
@@ -35,7 +35,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2019
+--  SqlServer.2019
 
 SELECT
 	[t1].[Id],

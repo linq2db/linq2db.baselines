@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2019.MS SqlServer.2019
+--  SqlServer.2019.MS SqlServer.2019
 
 INSERT INTO [Person]
 (
@@ -17,7 +17,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2019.MS SqlServer.2019
+--  SqlServer.2019.MS SqlServer.2019
 
 DELETE [p]
 FROM

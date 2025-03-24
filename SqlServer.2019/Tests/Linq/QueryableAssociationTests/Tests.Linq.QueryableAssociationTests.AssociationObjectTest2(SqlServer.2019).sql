@@ -1,12 +1,12 @@
 ﻿BeforeExecute
--- SqlServer.2019
+--  SqlServer.2019
 
 
 				IF EXISTS (SELECT * FROM sysobjects WHERE id = object_id(N'fn_SomeFunction') AND xtype IN (N'FN', N'IF', N'TF'))
 					DROP FUNCTION fn_SomeFunction
 
 BeforeExecute
--- SqlServer.2019
+--  SqlServer.2019
 
 CREATE FUNCTION fn_SomeFunction (@id AS INT)
 RETURNS TABLE
@@ -16,7 +16,7 @@ AS RETURN
   SELECT * FROM [SomeOtherEntity] WHERE Id = @id
 
 BeforeExecute
--- SqlServer.2019
+--  SqlServer.2019
 
 SELECT
 	[x].[Id],
@@ -34,7 +34,7 @@ WHERE
 BeforeExecute
 BeginTransaction(RepeatableRead)
 BeforeExecute
--- SqlServer.2019
+--  SqlServer.2019
 
 SELECT
 	[m_1].[Id],
@@ -52,7 +52,7 @@ FROM
 BeforeExecute
 DisposeTransaction
 BeforeExecute
--- SqlServer.2019
+--  SqlServer.2019
 
 SELECT
 	[t1].[Id],
@@ -61,7 +61,7 @@ FROM
 	[SomeTable] [t1] WITH (NOLOCK)
 
 BeforeExecute
--- SqlServer.2019
+--  SqlServer.2019
 
 
 				IF EXISTS (SELECT * FROM sysobjects WHERE id = object_id(N'fn_SomeFunction') AND xtype IN (N'FN', N'IF', N'TF'))

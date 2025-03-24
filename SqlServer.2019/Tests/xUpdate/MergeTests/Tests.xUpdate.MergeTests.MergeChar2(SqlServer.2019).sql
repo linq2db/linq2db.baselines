@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 BeginTransaction
 BeforeExecute
--- SqlServer.2019
+--  SqlServer.2019
 
 MERGE INTO [AllTypes] [Target]
 USING (VALUES

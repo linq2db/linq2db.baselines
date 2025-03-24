@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2019
+--  SqlServer.2019
 
 SELECT
 	[s].[Id],
@@ -11,7 +11,7 @@ WHERE
 	[s].[Id] = 3
 
 BeforeExecute
--- SqlServer.2019 (asynchronously)
+--  SqlServer.2019 (asynchronously)
 
 DELETE [s]
 OUTPUT

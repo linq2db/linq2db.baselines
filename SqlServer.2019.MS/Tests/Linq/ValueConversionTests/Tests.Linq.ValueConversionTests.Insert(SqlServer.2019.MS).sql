@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2019.MS SqlServer.2019
+--  SqlServer.2019.MS SqlServer.2019
 DECLARE @Id Int -- Int32
 SET     @Id = 1
 DECLARE @Value1 NVarChar(200) -- String
@@ -33,7 +33,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2019.MS SqlServer.2019
+--  SqlServer.2019.MS SqlServer.2019
 
 SELECT TOP (1)
 	[e].[Id],
@@ -52,7 +52,7 @@ WHERE
 	[e].[Id] = 1
 
 BeforeExecute
--- SqlServer.2019.MS SqlServer.2019
+--  SqlServer.2019.MS SqlServer.2019
 DECLARE @Id Int -- Int32
 SET     @Id = 2
 DECLARE @Value1 NVarChar(200) -- String
@@ -86,7 +86,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2019.MS SqlServer.2019
+--  SqlServer.2019.MS SqlServer.2019
 
 SELECT TOP (1)
 	[e].[Id],
@@ -105,7 +105,7 @@ WHERE
 	[e].[Id] = 2
 
 BeforeExecute
--- SqlServer.2019.MS SqlServer.2019
+--  SqlServer.2019.MS SqlServer.2019
 DECLARE @Id Int -- Int32
 SET     @Id = 3
 DECLARE @Value1 NVarChar(200) -- String
@@ -155,7 +155,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2019.MS SqlServer.2019
+--  SqlServer.2019.MS SqlServer.2019
 
 SELECT TOP (1)
 	[e].[Id],
@@ -174,7 +174,7 @@ WHERE
 	[e].[Id] = 3
 
 BeforeExecute
--- SqlServer.2019.MS SqlServer.2019
+--  SqlServer.2019.MS SqlServer.2019
 
 SELECT
 	COUNT(*)

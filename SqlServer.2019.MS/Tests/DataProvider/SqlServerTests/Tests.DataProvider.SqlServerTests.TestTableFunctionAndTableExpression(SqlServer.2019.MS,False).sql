@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2019.MS SqlServer.2019
+--  SqlServer.2019.MS SqlServer.2019
 
 SELECT TOP (1)
 	[t1].[FirstName],
@@ -11,7 +11,7 @@ FROM
 	[Person] [t1]
 
 BeforeExecute
--- SqlServer.2019.MS SqlServer.2019
+--  SqlServer.2019.MS SqlServer.2019
 
 
 IF EXISTS (SELECT * FROM sys.objects WHERE type = 'IF' AND name = 'PersonTableFunction')
@@ -19,7 +19,7 @@ IF EXISTS (SELECT * FROM sys.objects WHERE type = 'IF' AND name = 'PersonTableFu
 END
 
 BeforeExecute
--- SqlServer.2019.MS SqlServer.2019
+--  SqlServer.2019.MS SqlServer.2019
 
 
 CREATE FUNCTION dbo.PersonTableFunction( @ID int, @FirstName varchar(50))
@@ -28,7 +28,7 @@ AS
 	RETURN ( SELECT * FROM dbo.Person WHERE PersonID = @ID AND FirstName = @FirstName )
 
 BeforeExecute
--- SqlServer.2019.MS SqlServer.2019
+--  SqlServer.2019.MS SqlServer.2019
 DECLARE @p Int -- Int32
 SET     @p = 1
 DECLARE @p_1 NVarChar(4000) -- String
@@ -44,7 +44,7 @@ FROM
 	[PersonTableFunction](@p, @p_1) [t1]
 
 BeforeExecute
--- SqlServer.2019.MS SqlServer.2019
+--  SqlServer.2019.MS SqlServer.2019
 DECLARE @p Int -- Int32
 SET     @p = 1
 DECLARE @p_1 NVarChar(4000) -- String
@@ -60,7 +60,7 @@ FROM
 	[PersonTableFunction](@p, @p_1) [t1]
 
 BeforeExecute
--- SqlServer.2019.MS SqlServer.2019
+--  SqlServer.2019.MS SqlServer.2019
 DECLARE @p Int -- Int32
 SET     @p = 1
 DECLARE @p_1 NVarChar(4000) -- String
@@ -76,7 +76,7 @@ FROM
 	[PersonTableFunction](@p, @p_1) [t1]
 
 BeforeExecute
--- SqlServer.2019.MS SqlServer.2019
+--  SqlServer.2019.MS SqlServer.2019
 DECLARE @p Int -- Int32
 SET     @p = 1
 DECLARE @p_1 NVarChar(4000) -- String
@@ -92,7 +92,7 @@ FROM
 	[PersonTableFunction](@p, @p_1) [t1]
 
 BeforeExecute
--- SqlServer.2019.MS SqlServer.2019
+--  SqlServer.2019.MS SqlServer.2019
 DECLARE @ID Int -- Int32
 SET     @ID = 1
 DECLARE @FirstName NVarChar(4000) -- String
@@ -112,7 +112,7 @@ FROM
 		INNER JOIN PersonTableFunction(@ID, @FirstName) [tet] ON [tet].[PersonID] = [p].[PersonID]
 
 BeforeExecute
--- SqlServer.2019.MS SqlServer.2019
+--  SqlServer.2019.MS SqlServer.2019
 
 
 IF EXISTS (SELECT * FROM sys.objects WHERE type = 'IF' AND name = 'PersonTableFunction')

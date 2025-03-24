@@ -1,10 +1,10 @@
 ﻿BeforeExecute
--- SqlServer.2019.MS SqlServer.2019
+--  SqlServer.2019.MS SqlServer.2019
 
 DROP TABLE IF EXISTS [Issue681Table2]
 
 BeforeExecute
--- SqlServer.2019.MS SqlServer.2019
+--  SqlServer.2019.MS SqlServer.2019
 
 CREATE TABLE [Issue681Table2]
 (
@@ -15,7 +15,7 @@ CREATE TABLE [Issue681Table2]
 )
 
 BeforeExecute
--- SqlServer.2019.MS SqlServer.2019
+--  SqlServer.2019.MS SqlServer.2019
 
 DROP TABLE [Issue681Table2]
 

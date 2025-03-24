@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2019
+--  SqlServer.2019
 DECLARE @In VarChar(20) -- AnsiString
 SET     @In = NULL
 
@@ -11,7 +11,7 @@ WHERE
 	[s].[CEnum] IN (@In, @In)
 
 BeforeExecute
--- SqlServer.2019
+--  SqlServer.2019
 DECLARE @NotIn VarChar(20) -- AnsiString
 SET     @NotIn = NULL
 

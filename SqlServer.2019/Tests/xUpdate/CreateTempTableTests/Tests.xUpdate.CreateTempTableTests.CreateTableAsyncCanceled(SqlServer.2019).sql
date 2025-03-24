@@ -1,10 +1,10 @@
 ﻿BeforeExecute
--- SqlServer.2019
+--  SqlServer.2019
 
 DROP TABLE IF EXISTS [TempTable]
 
 BeforeExecute
--- SqlServer.2019
+--  SqlServer.2019
 
 SELECT
 	[p].[ParentID]
@@ -12,7 +12,7 @@ FROM
 	[Parent] [p]
 
 BeforeExecute
--- SqlServer.2019 (asynchronously)
+--  SqlServer.2019 (asynchronously)
 
 CREATE TABLE [tempdb]..[#TempTable]
 (
@@ -20,7 +20,7 @@ CREATE TABLE [tempdb]..[#TempTable]
 )
 
 BeforeExecute
--- SqlServer.2019
+--  SqlServer.2019
 
 DROP TABLE [TempTable]
 

@@ -1,10 +1,10 @@
 ﻿BeforeExecute
--- SqlServer.2019
+--  SqlServer.2019
 
 DROP TABLE IF EXISTS [TestTrun]
 
 BeforeExecute
--- SqlServer.2019
+--  SqlServer.2019
 
 CREATE TABLE [TestTrun]
 (
@@ -15,12 +15,12 @@ CREATE TABLE [TestTrun]
 )
 
 BeforeExecute
--- SqlServer.2019
+--  SqlServer.2019
 
 TRUNCATE TABLE [TestTrun]
 
 BeforeExecute
--- SqlServer.2019
+--  SqlServer.2019
 
 DROP TABLE [TestTrun]
 

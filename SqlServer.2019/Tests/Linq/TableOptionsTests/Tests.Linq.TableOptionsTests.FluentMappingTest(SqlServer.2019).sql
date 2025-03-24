@@ -1,10 +1,10 @@
 ﻿BeforeExecute
--- SqlServer.2019
+--  SqlServer.2019
 
 DROP TABLE IF EXISTS [tempdb]..[#TestTable]
 
 BeforeExecute
--- SqlServer.2019
+--  SqlServer.2019
 
 CREATE TABLE [tempdb]..[#TestTable]
 (
@@ -13,7 +13,7 @@ CREATE TABLE [tempdb]..[#TestTable]
 )
 
 BeforeExecute
--- SqlServer.2019
+--  SqlServer.2019
 
 SELECT
 	[t1].[Id],
@@ -30,7 +30,7 @@ WHERE
 	[t1].[Id] = [t2].[Id]
 
 BeforeExecute
--- SqlServer.2019
+--  SqlServer.2019
 
 DROP TABLE IF EXISTS [tempdb]..[#TestTable]
 

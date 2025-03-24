@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 BeginTransaction(RepeatableRead)
 BeforeExecute
--- SqlServer.2019
+--  SqlServer.2019
 
 SELECT
 	[m_1].[Key_1],
@@ -19,7 +19,7 @@ FROM
 BeforeExecute
 DisposeTransaction
 BeforeExecute
--- SqlServer.2019
+--  SqlServer.2019
 
 SELECT
 	[g_1].[ParentID]

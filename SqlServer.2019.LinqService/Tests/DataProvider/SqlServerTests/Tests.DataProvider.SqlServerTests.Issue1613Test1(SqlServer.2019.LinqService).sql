@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2019
+--  SqlServer.2019
 
 SELECT
 	[g_1].[dt]
@@ -9,7 +9,7 @@ GROUP BY
 	[g_1].[dt]
 
 BeforeExecute
--- SqlServer.2019
+--  SqlServer.2019
 
 SELECT
 	[r].[dt]

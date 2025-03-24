@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2019
+--  SqlServer.2019
 DECLARE @take Int -- Int32
 SET     @take = 100
 
@@ -22,7 +22,7 @@ ORDER BY
 	[t1].[Key_1] DESC
 
 BeforeExecute
--- SqlServer.2019
+--  SqlServer.2019
 
 SELECT
 	[t1].[ParentID],

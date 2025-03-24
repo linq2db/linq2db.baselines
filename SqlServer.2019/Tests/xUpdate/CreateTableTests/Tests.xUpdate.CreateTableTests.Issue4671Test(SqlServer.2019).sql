@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2019
+--  SqlServer.2019
 
 CREATE TABLE [tempdb]..[#Issue4671EntityTMP]
 (
@@ -10,7 +10,7 @@ CREATE TABLE [tempdb]..[#Issue4671EntityTMP]
 )
 
 BeforeExecute
--- SqlServer.2019
+--  SqlServer.2019
 
 INSERT INTO [Issue4671Entity]
 (
@@ -22,7 +22,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2019
+--  SqlServer.2019
 
 INSERT INTO [tempdb]..[#Issue4671EntityTMP]
 (
@@ -34,7 +34,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2019
+--  SqlServer.2019
 
 SELECT TOP (2)
 	[t1].[Id],
@@ -43,7 +43,7 @@ FROM
 	[Issue4671Entity] [t1]
 
 BeforeExecute
--- SqlServer.2019
+--  SqlServer.2019
 
 SELECT TOP (2)
 	[t1].[Id],
@@ -52,7 +52,7 @@ FROM
 	[tempdb]..[#Issue4671EntityTMP] [t1]
 
 BeforeExecute
--- SqlServer.2019
+--  SqlServer.2019
 
 DROP TABLE IF EXISTS [tempdb]..[#Issue4671EntityTMP]
 

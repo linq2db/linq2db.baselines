@@ -1,10 +1,10 @@
 ﻿BeforeExecute
--- SqlServer.2019.MS SqlServer.2019
+--  SqlServer.2019.MS SqlServer.2019
 
 DROP TABLE [AllType2CreateTest]
 
 BeforeExecute
--- SqlServer.2019.MS SqlServer.2019
+--  SqlServer.2019.MS SqlServer.2019
 
 CREATE TABLE [AllType2CreateTest]
 (
@@ -21,7 +21,7 @@ CREATE TABLE [AllType2CreateTest]
 )
 
 BeforeExecute
--- SqlServer.2019.MS SqlServer.2019
+--  SqlServer.2019.MS SqlServer.2019
 
 SELECT
 	[t1].[ID],
@@ -36,7 +36,7 @@ FROM
 	[AllType2CreateTest] [t1]
 
 BeforeExecute
--- SqlServer.2019.MS SqlServer.2019
+--  SqlServer.2019.MS SqlServer.2019
 
 DROP TABLE [AllType2CreateTest]
 

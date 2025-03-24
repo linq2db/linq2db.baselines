@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2019.MS SqlServer.2019
+--  SqlServer.2019.MS SqlServer.2019
 DECLARE @b NVarChar(4000) -- String
 SET     @b = N'B'
 

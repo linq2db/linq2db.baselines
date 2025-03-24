@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2019
+--  SqlServer.2019
 DECLARE @Version Int -- Int32
 SET     @Version = 0
 

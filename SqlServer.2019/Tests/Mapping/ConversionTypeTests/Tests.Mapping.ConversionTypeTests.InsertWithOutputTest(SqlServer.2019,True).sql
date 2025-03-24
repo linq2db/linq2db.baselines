@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2019
+--  SqlServer.2019
 
 INSERT INTO [TrimTestTable]
 (
@@ -16,7 +16,7 @@ FROM
 	[TrimTestTable] [t1]
 
 BeforeExecute
--- SqlServer.2019
+--  SqlServer.2019
 
 SELECT
 	[r].[ID],
@@ -27,7 +27,7 @@ ORDER BY
 	[r].[ID]
 
 BeforeExecute
--- SqlServer.2019
+--  SqlServer.2019
 
 SELECT
 	[r].[ID],

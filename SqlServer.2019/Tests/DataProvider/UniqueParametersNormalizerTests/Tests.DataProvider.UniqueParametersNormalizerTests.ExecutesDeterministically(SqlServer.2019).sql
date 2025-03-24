@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2019 (asynchronously)
+--  SqlServer.2019 (asynchronously)
 DECLARE @search NVarChar(4000) -- String
 SET     @search = N'test%'
 DECLARE @search_1 NVarChar(4000) -- String
@@ -31,7 +31,7 @@ WHERE
 	[row1_2].[Field1] LIKE @search_2 ESCAPE N'~'
 
 BeforeExecute
--- SqlServer.2019 (asynchronously)
+--  SqlServer.2019 (asynchronously)
 DECLARE @search NVarChar(4000) -- String
 SET     @search = N'test%'
 DECLARE @search_1 NVarChar(4000) -- String
@@ -63,17 +63,17 @@ WHERE
 	[row1_2].[Field1] LIKE @search_2 ESCAPE N'~'
 
 BeforeExecute
--- SqlServer.2019 (asynchronously)
+--  SqlServer.2019 (asynchronously)
 
 DROP TABLE IF EXISTS [table3]
 
 BeforeExecute
--- SqlServer.2019 (asynchronously)
+--  SqlServer.2019 (asynchronously)
 
 DROP TABLE IF EXISTS [table2]
 
 BeforeExecute
--- SqlServer.2019 (asynchronously)
+--  SqlServer.2019 (asynchronously)
 
 DROP TABLE IF EXISTS [table1]
 
