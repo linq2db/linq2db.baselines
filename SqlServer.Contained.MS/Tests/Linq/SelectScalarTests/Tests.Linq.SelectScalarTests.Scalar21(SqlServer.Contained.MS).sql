@@ -2,7 +2,7 @@
 -- SqlServer.Contained.MS SqlServer.2019
 
 SELECT
-	Len([p].[FirstName])
+	LEN([p].[FirstName] + N'.') - 1
 FROM
 	[Person] [p]
 

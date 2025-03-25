@@ -2,5 +2,5 @@
 -- Access.Ace.Odbc AccessODBC
 
 SELECT
-	Len('1')
+	1
 

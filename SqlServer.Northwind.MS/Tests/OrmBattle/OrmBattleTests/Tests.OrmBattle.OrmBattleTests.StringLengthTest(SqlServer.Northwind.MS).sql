@@ -16,5 +16,5 @@ SELECT TOP (1)
 FROM
 	[Customers] [c_1]
 WHERE
-	Len([c_1].[City]) = 7
+	LEN([c_1].[City] + N'.') - 1 = 7
 

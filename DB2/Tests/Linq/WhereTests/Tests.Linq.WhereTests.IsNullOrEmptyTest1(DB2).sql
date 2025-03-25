@@ -6,7 +6,7 @@ SELECT
 FROM
 	"Person" "nm"
 WHERE
-	NOT ("nm"."MiddleName" IS NULL OR CHARACTER_LENGTH("nm"."MiddleName",CODEUNITS32) = 0)
+	NOT ("nm"."MiddleName" IS NULL OR CHAR_LENGTH("nm"."MiddleName") = 0)
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW

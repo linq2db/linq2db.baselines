@@ -8,8 +8,8 @@ WHERE
 
 BeforeExecute
 -- PostgreSQL.17 PostgreSQL.15 PostgreSQL
-DECLARE @name Integer -- Int32
-SET     @name = 8
+DECLARE @name Text(8) -- String
+SET     @name = 'Insert16'
 DECLARE @idx Integer -- Int32
 SET     @idx = 4
 
@@ -22,7 +22,7 @@ INSERT INTO "Person"
 VALUES
 (
 	'Insert16',
-	(:name + :idx)::text,
+	(LENGTH(:name) + :idx)::text,
 	'M'
 )
 

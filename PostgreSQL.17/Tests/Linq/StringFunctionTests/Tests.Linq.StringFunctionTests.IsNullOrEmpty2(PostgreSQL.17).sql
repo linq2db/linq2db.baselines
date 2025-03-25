@@ -2,7 +2,7 @@
 -- PostgreSQL.17 PostgreSQL.15 PostgreSQL
 
 SELECT
-	Length(p."FirstName") = 0
+	LENGTH(p."FirstName") = 0
 FROM
 	"Person" p
 WHERE

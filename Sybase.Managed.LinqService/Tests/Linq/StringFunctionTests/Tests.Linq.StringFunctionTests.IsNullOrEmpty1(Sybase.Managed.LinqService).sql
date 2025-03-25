@@ -10,5 +10,6 @@ SELECT
 FROM
 	[Person] [p]
 WHERE
-	Len([p].[FirstName]) <> 0 AND [p].[PersonID] = 1
+	NOT ('' = [p].[FirstName] OR CHAR_LENGTH([p].[FirstName]) = 0 AND '' <> [p].[FirstName]) AND
+	[p].[PersonID] = 1
 

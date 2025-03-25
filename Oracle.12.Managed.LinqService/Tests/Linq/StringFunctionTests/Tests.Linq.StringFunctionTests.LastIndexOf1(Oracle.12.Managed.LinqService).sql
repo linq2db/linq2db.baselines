@@ -10,6 +10,6 @@ SELECT
 FROM
 	"Person" p
 WHERE
-	Length(p."LastName") - InStr(Reverse(p."LastName"), 'p') = 2 AND
+	(LENGTH(p."LastName") - InStr(Reverse(p."LastName"), 'p')) - LENGTH('p') = 1 AND
 	InStr(p."LastName", 'p') <> 0 AND p."PersonID" = 1
 

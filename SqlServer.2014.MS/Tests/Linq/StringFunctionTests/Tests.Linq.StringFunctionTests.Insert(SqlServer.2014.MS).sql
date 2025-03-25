@@ -10,6 +10,6 @@ SELECT
 FROM
 	[Person] [p]
 WHERE
-	IIF(Len([p].[FirstName]) = 2, [p].[FirstName] + N'123', Stuff([p].[FirstName], 3, 0, N'123')) = N'Jo123hn' AND
+	IIF(LEN([p].[FirstName] + N'.') = 3, [p].[FirstName] + N'123', Stuff([p].[FirstName], 3, 0, N'123')) = N'Jo123hn' AND
 	[p].[PersonID] = 1
 

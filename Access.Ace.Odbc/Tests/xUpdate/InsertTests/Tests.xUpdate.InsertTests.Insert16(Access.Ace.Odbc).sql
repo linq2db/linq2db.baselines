@@ -22,7 +22,7 @@ INSERT INTO [Person]
 VALUES
 (
 	'Insert16',
-	CStr(Len(?) + ?),
+	CStr(LEN(?) + ?),
 	'M'
 )
 

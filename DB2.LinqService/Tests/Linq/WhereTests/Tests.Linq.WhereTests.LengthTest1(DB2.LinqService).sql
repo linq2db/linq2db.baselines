@@ -6,13 +6,13 @@ SELECT
 FROM
 	(
 		SELECT
-			CHARACTER_LENGTH("p"."MiddleName",CODEUNITS32) as "Value_1",
+			CHAR_LENGTH("p"."MiddleName") as "Length_1",
 			"p"."MiddleName"
 		FROM
 			"Person" "p"
 	) "nm"
 WHERE
-	"nm"."Value_1" <> 0 OR "nm"."Value_1" IS NULL
+	"nm"."Length_1" <> 0 OR "nm"."Length_1" IS NULL
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW

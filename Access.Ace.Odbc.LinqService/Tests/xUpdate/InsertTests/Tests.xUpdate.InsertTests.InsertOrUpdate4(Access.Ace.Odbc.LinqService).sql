@@ -64,7 +64,7 @@ SET     @id = 5
 UPDATE
 	[Patient] [t1]
 SET
-	[t1].[Diagnosis] = IIF([t1].[Diagnosis] IS NOT NULL, CStr(Len([t1].[Diagnosis]) + ?), NULL)
+	[t1].[Diagnosis] = IIF([t1].[Diagnosis] IS NOT NULL, CStr(LEN([t1].[Diagnosis]) + ?), NULL)
 WHERE
 	[t1].[PersonID] = ?
 
@@ -85,7 +85,7 @@ INSERT INTO [Patient]
 VALUES
 (
 	?,
-	CStr(Len(?) + ?)
+	CStr(LEN(?) + ?)
 )
 
 BeforeExecute
@@ -98,7 +98,7 @@ SET     @id = 5
 UPDATE
 	[Patient] [t1]
 SET
-	[t1].[Diagnosis] = IIF([t1].[Diagnosis] IS NOT NULL, CStr(Len([t1].[Diagnosis]) + ?), NULL)
+	[t1].[Diagnosis] = IIF([t1].[Diagnosis] IS NOT NULL, CStr(LEN([t1].[Diagnosis]) + ?), NULL)
 WHERE
 	[t1].[PersonID] = ?
 
@@ -112,7 +112,7 @@ SET     @id = 5
 UPDATE
 	[Patient] [t1]
 SET
-	[t1].[Diagnosis] = IIF([t1].[Diagnosis] IS NOT NULL, CStr(Len([t1].[Diagnosis]) + ?), NULL)
+	[t1].[Diagnosis] = IIF([t1].[Diagnosis] IS NOT NULL, CStr(LEN([t1].[Diagnosis]) + ?), NULL)
 WHERE
 	[t1].[PersonID] = ?
 

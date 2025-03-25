@@ -22,7 +22,7 @@ INSERT INTO Person
 VALUES
 (
 	'Insert16',
-	To_Char(CHAR_LENGTH(@name::NVarChar(8)) + @idx::Int),
+	To_Char(LENGTH(@name::NVarChar(8) || '.') - 1 + @idx::Int),
 	'M'
 )
 

@@ -6,13 +6,16 @@ SELECT
 FROM
 	(
 		SELECT
-			Len([p].[MiddleName]) as [Value_1],
+			CASE
+				WHEN '' = [p].[MiddleName] THEN 0
+				ELSE CHAR_LENGTH([p].[MiddleName])
+			END as [Length_1],
 			[p].[MiddleName]
 		FROM
 			[Person] [p]
 	) [nm]
 WHERE
-	[nm].[Value_1] <> 0 OR [nm].[Value_1] IS NULL
+	[nm].[Length_1] <> 0 OR [nm].[Length_1] IS NULL
 
 BeforeExecute
 -- Sybase.Managed Sybase

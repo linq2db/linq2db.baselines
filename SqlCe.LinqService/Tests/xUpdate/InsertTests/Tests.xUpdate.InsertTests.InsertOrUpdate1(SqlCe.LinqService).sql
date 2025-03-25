@@ -44,7 +44,7 @@ SET     @id = 5
 UPDATE
 	[Patient]
 SET
-	[Diagnosis] = CAST(Len([Patient].[Diagnosis]) + @i AS NVarChar(11))
+	[Diagnosis] = CAST(LEN([Patient].[Diagnosis] + '.') - 1 + @i AS NVarChar(11))
 WHERE
 	[Patient].[PersonID] = @id
 
@@ -74,7 +74,7 @@ SET     @id = 5
 UPDATE
 	[Patient]
 SET
-	[Diagnosis] = CAST(Len([Patient].[Diagnosis]) + @i AS NVarChar(11))
+	[Diagnosis] = CAST(LEN([Patient].[Diagnosis] + '.') - 1 + @i AS NVarChar(11))
 WHERE
 	[Patient].[PersonID] = @id
 
@@ -88,7 +88,7 @@ SET     @id = 5
 UPDATE
 	[Patient]
 SET
-	[Diagnosis] = CAST(Len([Patient].[Diagnosis]) + @i AS NVarChar(11))
+	[Diagnosis] = CAST(LEN([Patient].[Diagnosis] + '.') - 1 + @i AS NVarChar(11))
 WHERE
 	[Patient].[PersonID] = @id
 

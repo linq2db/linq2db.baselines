@@ -2,7 +2,7 @@
 -- Oracle.11.Managed Oracle11
 
 SELECT
-	Substr(p."FirstName", Length(p."FirstName") - 2, 3)
+	Substr(p."FirstName", LENGTH(p."FirstName") - 2, 3)
 FROM
 	"Person" p
 WHERE

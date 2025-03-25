@@ -1,0 +1,9 @@
+﻿BeforeExecute
+-- SqlServer.2005
+DECLARE @stringValue NVarChar(4000) -- String
+SET     @stringValue = N' abc '
+
+SELECT
+	@stringValue,
+	LEN(@stringValue + N'.') - 1
+

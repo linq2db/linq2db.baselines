@@ -2,7 +2,7 @@
 -- Access.Ace.Odbc AccessODBC
 
 SELECT
-	Len([p].[FirstName]) = 0
+	LEN([p].[FirstName]) = 0
 FROM
 	[Person] [p]
 WHERE
