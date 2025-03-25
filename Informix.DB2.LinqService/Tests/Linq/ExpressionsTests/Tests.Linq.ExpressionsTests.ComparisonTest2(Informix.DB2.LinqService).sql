@@ -1,5 +1,9 @@
 ﻿BeforeExecute
 -- Informix.DB2 Informix
+DECLARE @personId Integer(4) -- Int32
+SET     @personId = 0
+DECLARE @personId_1 Integer(4) -- Int32
+SET     @personId_1 = 2
 
 SELECT
 	EXISTS(
@@ -14,13 +18,13 @@ SELECT
 				FROM
 					Patient t2
 				WHERE
-					t2.PersonID = 0 AND NOT EXISTS(
+					t2.PersonID = @personId AND NOT EXISTS(
 						SELECT
 							*
 						FROM
 							Patient t3
 						WHERE
-							t3.PersonID = 2 AND t2.PersonID = t3.PersonID
+							t3.PersonID = @personId_1 AND t2.PersonID = t3.PersonID
 					)
 			) = 0 AND
 			(
@@ -29,13 +33,13 @@ SELECT
 				FROM
 					Patient t4
 				WHERE
-					t4.PersonID = 2 AND NOT EXISTS(
+					t4.PersonID = @personId_1 AND NOT EXISTS(
 						SELECT
 							*
 						FROM
 							Patient t5
 						WHERE
-							t5.PersonID = 0 AND t4.PersonID = t5.PersonID
+							t5.PersonID = @personId AND t4.PersonID = t5.PersonID
 					)
 			) = 0
 	)

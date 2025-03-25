@@ -6,5 +6,5 @@ SELECT
 FROM
 	LinqDataTypes p
 WHERE
-	CHAR_LENGTH(To_Char(p.MoneyValue)) > 0
+	LENGTH(To_Char(p.MoneyValue) || '.') > 1
 

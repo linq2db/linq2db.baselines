@@ -8,7 +8,7 @@ FROM
 	(
 		SELECT
 			CASE
-				WHEN LENGTH(p.FirstName) < p.PersonID THEN LPAD(p.FirstName, p.PersonID, '.')
+				WHEN LENGTH(p.FirstName || '.') - 1 < p.PersonID THEN LPAD(p.FirstName, p.PersonID, '.')
 				ELSE p.FirstName
 			END as FirstName,
 			p.PersonID as ID

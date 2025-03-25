@@ -1,5 +1,7 @@
 ﻿BeforeExecute
 -- Informix.DB2 Informix
+DECLARE @testValue Integer(4) -- Int32
+SET     @testValue = 3
 
 SELECT
 	id_1.c1,
@@ -17,7 +19,7 @@ SELECT
 		FROM
 			Child p_1
 		WHERE
-			p_1.ParentID = id_1.c1 AND p_1.ParentID = 3
+			p_1.ParentID = id_1.c1 AND p_1.ParentID = @testValue
 	)
 FROM
 	(

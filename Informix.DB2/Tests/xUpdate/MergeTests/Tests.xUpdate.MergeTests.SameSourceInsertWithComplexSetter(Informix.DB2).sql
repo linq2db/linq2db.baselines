@@ -253,7 +253,7 @@ VALUES
 (
 	10 + Source.source_Id,
 	123,
-	CHAR_LENGTH(@name::NVarChar(4)) + @idx::Int,
+	LENGTH(@name::NVarChar(4) || '.') - 1 + @idx::Int,
 	Source.source_Field2,
 	999,
 	888
