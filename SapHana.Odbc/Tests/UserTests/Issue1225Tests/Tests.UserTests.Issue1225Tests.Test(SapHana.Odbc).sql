@@ -1,6 +1,6 @@
 ﻿BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @Id  -- Int32
+DECLARE @Id Int -- Int32
 SET     @Id = 1
 
 INSERT INTO "Task"
@@ -14,7 +14,7 @@ VALUES
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @Id  -- Int32
+DECLARE @Id Int -- Int32
 SET     @Id = 2
 
 INSERT INTO "Task"
@@ -28,11 +28,11 @@ VALUES
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @Id  -- Int32
+DECLARE @Id Int -- Int32
 SET     @Id = 2
-DECLARE @TaskId  -- Int32
+DECLARE @TaskId Int -- Int32
 SET     @TaskId = 1
-DECLARE @Actual  -- Byte
+DECLARE @Actual TinyInt(1) -- Byte
 SET     @Actual = 1
 
 INSERT INTO "TaskStage"

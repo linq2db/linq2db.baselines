@@ -1,8 +1,8 @@
 ﻿BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @BinaryValue Binary(5)
+DECLARE @BinaryValue VarBinary(5) -- Binary
 SET     @BinaryValue = x'0102030405'
-DECLARE @p  -- Int32
+DECLARE @p Int -- Int32
 SET     @p = 1
 
 UPDATE
@@ -14,9 +14,9 @@ WHERE
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @BinaryValue Binary(5)
+DECLARE @BinaryValue VarBinary(5) -- Binary
 SET     @BinaryValue = x'0504030201'
-DECLARE @p  -- Int32
+DECLARE @p Int -- Int32
 SET     @p = 2
 
 UPDATE

@@ -83,7 +83,7 @@ ORDER BY
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @skip  -- Int32
+DECLARE @skip Int -- Int32
 SET     @skip = 1
 
 SELECT

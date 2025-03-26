@@ -79,7 +79,7 @@ SELECT CURRENT_IDENTITY_VALUE() FROM DUMMY
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc (asynchronously)
-DECLARE @id  -- Int32
+DECLARE @id Int -- Int32
 SET     @id = 5
 
 SELECT
@@ -104,7 +104,7 @@ DECLARE @Name_MiddleName NVarChar -- String
 SET     @Name_MiddleName = NULL
 DECLARE @Name_LastName NVarChar(13) -- String
 SET     @Name_LastName = 'UpdateComplex'
-DECLARE @ID  -- Int32
+DECLARE @ID Int -- Int32
 SET     @ID = 5
 
 UPDATE
@@ -119,7 +119,7 @@ WHERE
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc (asynchronously)
-DECLARE @id  -- Int32
+DECLARE @id Int -- Int32
 SET     @id = 5
 
 SELECT

@@ -1,10 +1,10 @@
 ﻿BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @personId  -- Int32
+DECLARE @personId Int -- Int32
 SET     @personId = 1
-DECLARE @personId  -- Int32
+DECLARE @personId Int -- Int32
 SET     @personId = 1
-DECLARE @personId  -- Int32
+DECLARE @personId Int -- Int32
 SET     @personId = 1
 
 SELECT
@@ -25,11 +25,11 @@ WHERE
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @personId  -- Int32
+DECLARE @personId Int -- Int32
 SET     @personId = 1
-DECLARE @personId  -- Int32
+DECLARE @personId Int -- Int32
 SET     @personId = 1
-DECLARE @personId  -- Int32
+DECLARE @personId Int -- Int32
 SET     @personId = 2
 
 SELECT

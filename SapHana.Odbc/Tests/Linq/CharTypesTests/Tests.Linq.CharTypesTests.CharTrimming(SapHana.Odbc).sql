@@ -370,7 +370,7 @@ VALUES
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @lastId  -- Int32
+DECLARE @lastId Int -- Int32
 SET     @lastId = 2
 
 SELECT
@@ -386,7 +386,7 @@ ORDER BY
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @lastId  -- Int32
+DECLARE @lastId Int -- Int32
 SET     @lastId = 2
 
 DELETE FROM

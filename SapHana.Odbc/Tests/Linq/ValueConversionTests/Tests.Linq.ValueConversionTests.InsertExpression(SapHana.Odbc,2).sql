@@ -1,6 +1,6 @@
 ﻿BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @iteration  -- Int32
+DECLARE @iteration Int -- Int32
 SET     @iteration = 2
 DECLARE @Value1 NVarChar(2) -- String
 SET     @Value1 = '[]'
@@ -34,7 +34,7 @@ VALUES
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @iteration  -- Int32
+DECLARE @iteration Int -- Int32
 SET     @iteration = 2
 
 SELECT

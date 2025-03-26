@@ -9,7 +9,7 @@ FROM
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @param  -- Int32
+DECLARE @param Int -- Int32
 SET     @param = 1
 
 SELECT

@@ -31,7 +31,7 @@ BeforeExecute
 BeginTransaction(RepeatableRead)
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @cond  -- Int32
+DECLARE @cond Int -- Int32
 SET     @cond = 0
 
 SELECT
@@ -64,7 +64,7 @@ BeforeExecute
 BeginTransaction(RepeatableRead)
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @cond  -- Int32
+DECLARE @cond Int -- Int32
 SET     @cond = 1
 
 SELECT
@@ -126,7 +126,7 @@ BeforeExecute
 BeginTransaction(RepeatableRead)
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @cond  -- Int32
+DECLARE @cond Int -- Int32
 SET     @cond = 0
 
 SELECT
@@ -159,7 +159,7 @@ BeforeExecute
 BeginTransaction(RepeatableRead)
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @cond  -- Int32
+DECLARE @cond Int -- Int32
 SET     @cond = 1
 
 SELECT

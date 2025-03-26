@@ -20,7 +20,7 @@ DELETE FROM
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @Id  -- Int32
+DECLARE @Id Int -- Int32
 SET     @Id = 1
 
 INSERT INTO "Parent"
@@ -34,7 +34,7 @@ VALUES
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @Id  -- Int32
+DECLARE @Id Int -- Int32
 SET     @Id = 2
 
 INSERT INTO "Parent"
@@ -48,7 +48,7 @@ VALUES
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @Id  -- Int32
+DECLARE @Id Int -- Int32
 SET     @Id = 10
 
 INSERT INTO "Child"
@@ -62,7 +62,7 @@ VALUES
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @Id  -- Int32
+DECLARE @Id Int -- Int32
 SET     @Id = 20
 
 INSERT INTO "Child"
@@ -76,11 +76,11 @@ VALUES
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @Id  -- Int32
+DECLARE @Id Int -- Int32
 SET     @Id = 11
-DECLARE @LeftId  -- Int32
+DECLARE @LeftId Int -- Int32
 SET     @LeftId = 100
-DECLARE @RightId  -- Int32
+DECLARE @RightId Int -- Int32
 SET     @RightId = 200
 
 INSERT INTO "GrandChild"

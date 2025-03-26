@@ -1,8 +1,8 @@
 ﻿BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @Column  -- Date
+DECLARE @Column Date
 SET     @Column = '2020-02-29'
-DECLARE @ColumnNullable  -- Date
+DECLARE @ColumnNullable Date
 SET     @ColumnNullable = '2200-01-01'
 
 SELECT
@@ -34,11 +34,11 @@ DELETE FROM
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @Id  -- Int32
+DECLARE @Id Int -- Int32
 SET     @Id = 1
-DECLARE @Column  -- Date
+DECLARE @Column Date
 SET     @Column = '1950-01-01'
-DECLARE @ColumnNullable  -- Date
+DECLARE @ColumnNullable Date
 SET     @ColumnNullable = NULL
 
 INSERT INTO "DateOnlyTable"
@@ -56,11 +56,11 @@ VALUES
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @Id  -- Int32
+DECLARE @Id Int -- Int32
 SET     @Id = 2
-DECLARE @Column  -- Date
+DECLARE @Column Date
 SET     @Column = '2020-02-29'
-DECLARE @ColumnNullable  -- Date
+DECLARE @ColumnNullable Date
 SET     @ColumnNullable = '2200-01-01'
 
 INSERT INTO "DateOnlyTable"
@@ -96,11 +96,11 @@ DELETE FROM
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @Id  -- Int32
+DECLARE @Id Int -- Int32
 SET     @Id = 1
-DECLARE @Column  -- Date
+DECLARE @Column Date
 SET     @Column = '1950-01-01'
-DECLARE @ColumnNullable  -- Date
+DECLARE @ColumnNullable Date
 SET     @ColumnNullable = NULL
 
 INSERT INTO "DateOnlyTable"
@@ -118,11 +118,11 @@ VALUES
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @Id  -- Int32
+DECLARE @Id Int -- Int32
 SET     @Id = 2
-DECLARE @Column  -- Date
+DECLARE @Column Date
 SET     @Column = '2020-02-29'
-DECLARE @ColumnNullable  -- Date
+DECLARE @ColumnNullable Date
 SET     @ColumnNullable = '2200-01-01'
 
 INSERT INTO "DateOnlyTable"
@@ -158,11 +158,11 @@ DELETE FROM
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @Id  -- Int32
+DECLARE @Id Int -- Int32
 SET     @Id = 1
-DECLARE @Column  -- Date
+DECLARE @Column Date
 SET     @Column = '1950-01-01'
-DECLARE @ColumnNullable  -- Date
+DECLARE @ColumnNullable Date
 SET     @ColumnNullable = NULL
 
 INSERT INTO "DateOnlyTable"
@@ -180,11 +180,11 @@ VALUES
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @Id  -- Int32
+DECLARE @Id Int -- Int32
 SET     @Id = 2
-DECLARE @Column  -- Date
+DECLARE @Column Date
 SET     @Column = '2020-02-29'
-DECLARE @ColumnNullable  -- Date
+DECLARE @ColumnNullable Date
 SET     @ColumnNullable = '2200-01-01'
 
 INSERT INTO "DateOnlyTable"

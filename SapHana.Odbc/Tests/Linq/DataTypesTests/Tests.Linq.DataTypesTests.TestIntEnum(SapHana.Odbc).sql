@@ -1,8 +1,8 @@
 ﻿BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @Column  -- Int32
+DECLARE @Column Int -- Int32
 SET     @Column = 2
-DECLARE @ColumnNullable  -- Int32
+DECLARE @ColumnNullable Int -- Int32
 SET     @ColumnNullable = 3
 
 SELECT
@@ -34,11 +34,11 @@ DELETE FROM
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @Id  -- Int32
+DECLARE @Id Int -- Int32
 SET     @Id = 1
-DECLARE @Column  -- Int32
+DECLARE @Column Int -- Int32
 SET     @Column = 1
-DECLARE @ColumnNullable  -- Int32
+DECLARE @ColumnNullable Int -- Int32
 SET     @ColumnNullable = NULL
 
 INSERT INTO "IntEnumTable"
@@ -56,11 +56,11 @@ VALUES
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @Id  -- Int32
+DECLARE @Id Int -- Int32
 SET     @Id = 2
-DECLARE @Column  -- Int32
+DECLARE @Column Int -- Int32
 SET     @Column = 2
-DECLARE @ColumnNullable  -- Int32
+DECLARE @ColumnNullable Int -- Int32
 SET     @ColumnNullable = 3
 
 INSERT INTO "IntEnumTable"
@@ -96,11 +96,11 @@ DELETE FROM
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @Id  -- Int32
+DECLARE @Id Int -- Int32
 SET     @Id = 1
-DECLARE @Column  -- Int32
+DECLARE @Column Int -- Int32
 SET     @Column = 1
-DECLARE @ColumnNullable  -- Int32
+DECLARE @ColumnNullable Int -- Int32
 SET     @ColumnNullable = NULL
 
 INSERT INTO "IntEnumTable"
@@ -118,11 +118,11 @@ VALUES
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @Id  -- Int32
+DECLARE @Id Int -- Int32
 SET     @Id = 2
-DECLARE @Column  -- Int32
+DECLARE @Column Int -- Int32
 SET     @Column = 2
-DECLARE @ColumnNullable  -- Int32
+DECLARE @ColumnNullable Int -- Int32
 SET     @ColumnNullable = 3
 
 INSERT INTO "IntEnumTable"
@@ -158,11 +158,11 @@ DELETE FROM
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @Id  -- Int32
+DECLARE @Id Int -- Int32
 SET     @Id = 1
-DECLARE @Column  -- Int32
+DECLARE @Column Int -- Int32
 SET     @Column = 1
-DECLARE @ColumnNullable  -- Int32
+DECLARE @ColumnNullable Int -- Int32
 SET     @ColumnNullable = NULL
 
 INSERT INTO "IntEnumTable"
@@ -180,11 +180,11 @@ VALUES
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @Id  -- Int32
+DECLARE @Id Int -- Int32
 SET     @Id = 2
-DECLARE @Column  -- Int32
+DECLARE @Column Int -- Int32
 SET     @Column = 2
-DECLARE @ColumnNullable  -- Int32
+DECLARE @ColumnNullable Int -- Int32
 SET     @ColumnNullable = 3
 
 INSERT INTO "IntEnumTable"

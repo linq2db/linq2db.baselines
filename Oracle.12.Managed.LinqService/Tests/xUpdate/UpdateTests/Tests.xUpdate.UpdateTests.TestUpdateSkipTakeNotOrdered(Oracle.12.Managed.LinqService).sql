@@ -196,19 +196,19 @@ WHERE
 		FROM
 			(
 				SELECT
-					t2."ParentID",
-					t2."Value1"
+					t2."Value1",
+					t2."ParentID"
 				FROM
 					(
 						SELECT
-							t1."ParentID",
 							t1."Value1",
+							t1."ParentID",
 							ROWNUM as RN
 						FROM
 							(
 								SELECT
-									x."ParentID",
-									x."Value1"
+									x."Value1",
+									x."ParentID"
 								FROM
 									"Parent" x
 								WHERE

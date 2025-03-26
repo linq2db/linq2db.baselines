@@ -79,9 +79,9 @@ SELECT CURRENT_IDENTITY_VALUE() FROM DUMMY
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @i  -- Int32
+DECLARE @i Int -- Int32
 SET     @i = 0
-DECLARE @id  -- Int32
+DECLARE @id Int -- Int32
 SET     @id = 5
 
 UPDATE
@@ -93,11 +93,11 @@ WHERE
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @id  -- Int32
+DECLARE @id Int -- Int32
 SET     @id = 5
-DECLARE @diagnosis  -- Int32
+DECLARE @diagnosis Int -- Int32
 SET     @diagnosis = 3
-DECLARE @i  -- Int32
+DECLARE @i Int -- Int32
 SET     @i = 0
 
 INSERT INTO "Patient"
@@ -113,9 +113,9 @@ VALUES
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @i  -- Int32
+DECLARE @i Int -- Int32
 SET     @i = 1
-DECLARE @id  -- Int32
+DECLARE @id Int -- Int32
 SET     @id = 5
 
 UPDATE
@@ -127,9 +127,9 @@ WHERE
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @i  -- Int32
+DECLARE @i Int -- Int32
 SET     @i = 2
-DECLARE @id  -- Int32
+DECLARE @id Int -- Int32
 SET     @id = 5
 
 UPDATE
@@ -141,7 +141,7 @@ WHERE
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @id  -- Int32
+DECLARE @id Int -- Int32
 SET     @id = 5
 
 SELECT
