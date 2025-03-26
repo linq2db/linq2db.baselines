@@ -110,7 +110,7 @@ SELECT CURRENT_IDENTITY_VALUE() FROM DUMMY
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @id1  -- Int32
+DECLARE @id1 Int -- Int32
 SET     @id1 = 5
 
 SELECT
@@ -127,7 +127,7 @@ LIMIT 1
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @id2  -- Int32
+DECLARE @id2 Int -- Int32
 SET     @id2 = 6
 
 SELECT

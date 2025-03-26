@@ -8,9 +8,9 @@ DELETE FROM
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @Data  -- Int32
+DECLARE @Data Int -- Int32
 SET     @Data = 1
-DECLARE @Key1  -- Int32
+DECLARE @Key1 Int -- Int32
 SET     @Key1 = 143
 
 UPDATE
@@ -22,11 +22,11 @@ WHERE
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @Key1  -- Int32
+DECLARE @Key1 Int -- Int32
 SET     @Key1 = 143
 DECLARE @Key2 NVarChar -- String
 SET     @Key2 = NULL
-DECLARE @Data  -- Int32
+DECLARE @Data Int -- Int32
 SET     @Data = 1
 
 INSERT INTO "InheritanceParent"
@@ -52,9 +52,9 @@ FROM
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @Data  -- Int32
+DECLARE @Data Int -- Int32
 SET     @Data = 1
-DECLARE @Key1  -- Int32
+DECLARE @Key1 Int -- Int32
 SET     @Key1 = 143
 
 UPDATE

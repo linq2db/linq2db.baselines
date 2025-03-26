@@ -1,6 +1,6 @@
 ﻿BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @idCopy  -- Int32
+DECLARE @idCopy Int -- Int32
 SET     @idCopy = 0
 
 SELECT
@@ -16,7 +16,7 @@ WHERE
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @idCopy  -- Int32
+DECLARE @idCopy Int -- Int32
 SET     @idCopy = 1
 
 SELECT
@@ -32,7 +32,7 @@ WHERE
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @idCopy  -- Int32
+DECLARE @idCopy Int -- Int32
 SET     @idCopy = 0
 
 SELECT
@@ -48,7 +48,7 @@ WHERE
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @idCopy  -- Int32
+DECLARE @idCopy Int -- Int32
 SET     @idCopy = 1
 
 SELECT
@@ -64,7 +64,7 @@ WHERE
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @idCopy  -- Int32
+DECLARE @idCopy Int -- Int32
 SET     @idCopy = 0
 
 SELECT
@@ -80,7 +80,7 @@ WHERE
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @idCopy  -- Int32
+DECLARE @idCopy Int -- Int32
 SET     @idCopy = 1
 
 SELECT
@@ -96,7 +96,7 @@ WHERE
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @idCopy  -- Int32
+DECLARE @idCopy Int -- Int32
 SET     @idCopy = 0
 
 SELECT
@@ -112,7 +112,7 @@ WHERE
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @idCopy  -- Int32
+DECLARE @idCopy Int -- Int32
 SET     @idCopy = 1
 
 SELECT

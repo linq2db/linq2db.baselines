@@ -1,6 +1,6 @@
 ﻿BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @value  -- Byte
+DECLARE @value TinyInt(1) -- Byte
 SET     @value = 0
 
 SELECT
@@ -12,7 +12,7 @@ WHERE
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @value  -- Byte
+DECLARE @value TinyInt(1) -- Byte
 SET     @value = 0
 
 SELECT
@@ -24,7 +24,7 @@ WHERE
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @value  -- Byte
+DECLARE @value TinyInt(1) -- Byte
 SET     @value = 0
 
 SELECT
@@ -36,7 +36,7 @@ WHERE
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @value  -- Byte
+DECLARE @value TinyInt(1) -- Byte
 SET     @value = 0
 
 SELECT

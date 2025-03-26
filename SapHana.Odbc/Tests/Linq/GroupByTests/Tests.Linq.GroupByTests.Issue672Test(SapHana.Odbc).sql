@@ -2,7 +2,7 @@
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @Name NVarChar(6) -- String
 SET     @Name = 'group1'
-DECLARE @Enabled  -- Byte
+DECLARE @Enabled TinyInt(1) -- Byte
 SET     @Enabled = 1
 DECLARE @ImageFullUrl NVarChar(3) -- String
 SET     @ImageFullUrl = '123'
@@ -24,7 +24,7 @@ BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @Name NVarChar(6) -- String
 SET     @Name = 'group1'
-DECLARE @Enabled  -- Byte
+DECLARE @Enabled TinyInt(1) -- Byte
 SET     @Enabled = 1
 DECLARE @ImageFullUrl NVarChar(3) -- String
 SET     @ImageFullUrl = '123'
@@ -46,7 +46,7 @@ BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @Name NVarChar(6) -- String
 SET     @Name = 'group2'
-DECLARE @Enabled  -- Byte
+DECLARE @Enabled TinyInt(1) -- Byte
 SET     @Enabled = 1
 DECLARE @ImageFullUrl NVarChar(3) -- String
 SET     @ImageFullUrl = '123'

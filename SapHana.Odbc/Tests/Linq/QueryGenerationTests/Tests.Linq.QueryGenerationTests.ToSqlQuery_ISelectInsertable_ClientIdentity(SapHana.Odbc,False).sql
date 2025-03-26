@@ -1,6 +1,6 @@
 ﻿BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @Value  -- Int32
+DECLARE @Value Int -- Int32
 SET     @Value = 1
 
 INSERT INTO "TableWithIdentitySrc"
@@ -14,7 +14,7 @@ VALUES
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @addition  -- Int32
+DECLARE @addition Int -- Int32
 SET     @addition = 123
 
 INSERT INTO "TableWithIdentity"

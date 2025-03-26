@@ -1,6 +1,6 @@
 ﻿BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @take  -- Int32
+DECLARE @take Int -- Int32
 SET     @take = 3
 
 WITH "CTE_1" ("ParentID", "Value1")

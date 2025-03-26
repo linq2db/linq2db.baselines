@@ -380,11 +380,11 @@ BeforeExecute
 BeginTransaction
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @ID  -- Int32
+DECLARE @ID Int(10) -- Int32
 SET     @ID = 0
-DECLARE @OUTPUTID  -- Int32
+DECLARE @OUTPUTID Int(10) -- Int32
 SET     @OUTPUTID = 0
-DECLARE @INPUTOUTPUTID  -- Int32
+DECLARE @INPUTOUTPUTID Int(10) -- Int32
 SET     @INPUTOUTPUTID = 0
 DECLARE @STR VarChar(50) -- AnsiString
 SET     @STR = ''
@@ -423,7 +423,7 @@ BeforeExecute
 BeginTransaction
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @PERSONID  -- Int32
+DECLARE @PERSONID Int(10) -- Int32
 SET     @PERSONID = 0
 
 { CALL "TESTDB"."Person_Delete" (?) }
@@ -459,7 +459,7 @@ DECLARE @MIDDLENAME NVarChar(50) -- String
 SET     @MIDDLENAME = ''
 DECLARE @GENDER Char(1) -- AnsiStringFixedLength
 SET     @GENDER = char(0)
-DECLARE @PERSONID  -- Int32
+DECLARE @PERSONID Int(10) -- Int32
 SET     @PERSONID = 0
 
 { CALL "TESTDB"."Person_Insert_OutputParameter" (?,?,?,?,?) }
@@ -479,7 +479,7 @@ BeforeExecute
 BeginTransaction
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @ID  -- Int32
+DECLARE @ID Int(10) -- Int32
 SET     @ID = 0
 
 { CALL "TESTDB"."Person_SelectByKey" (?) }
@@ -516,7 +516,7 @@ BeforeExecute
 BeginTransaction
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @PERSONID  -- Int32
+DECLARE @PERSONID Int(10) -- Int32
 SET     @PERSONID = 0
 DECLARE @FIRSTNAME NVarChar(50) -- String
 SET     @FIRSTNAME = ''
@@ -544,7 +544,7 @@ BeforeExecute
 BeginTransaction
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @I  -- Int32
+DECLARE @I Int(10) -- Int32
 SET     @I = 0
 
 { CALL "TESTDB"."TEST_PROCEDURE" (?) }

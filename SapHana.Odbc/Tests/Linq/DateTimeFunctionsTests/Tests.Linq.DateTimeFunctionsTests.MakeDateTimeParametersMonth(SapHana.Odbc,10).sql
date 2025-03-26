@@ -1,6 +1,6 @@
 ﻿BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @month  -- Int32
+DECLARE @month Int -- Int32
 SET     @month = 10
 
 SELECT

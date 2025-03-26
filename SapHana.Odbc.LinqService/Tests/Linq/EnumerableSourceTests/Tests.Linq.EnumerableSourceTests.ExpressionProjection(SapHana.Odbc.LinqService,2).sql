@@ -1,8 +1,8 @@
 ﻿BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @ID  -- Int32
+DECLARE @ID Int -- Int32
 SET     @ID = 3
-DECLARE @ID  -- Int32
+DECLARE @ID Int -- Int32
 SET     @ID = 4
 
 SELECT

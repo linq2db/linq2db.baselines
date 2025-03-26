@@ -2,9 +2,9 @@
 BeginTransaction(RepeatableRead)
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @take  -- Int32
+DECLARE @take Int -- Int32
 SET     @take = 10
-DECLARE @skip  -- Int32
+DECLARE @skip Int -- Int32
 SET     @skip = 100
 
 SELECT
@@ -43,9 +43,9 @@ FROM
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @take  -- Int32
+DECLARE @take Int -- Int32
 SET     @take = 10
-DECLARE @skip  -- Int32
+DECLARE @skip Int -- Int32
 SET     @skip = 100
 
 SELECT
@@ -75,9 +75,9 @@ BeforeExecute
 DisposeTransaction
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @take  -- Int32
+DECLARE @take Int -- Int32
 SET     @take = 10
-DECLARE @skip  -- Int32
+DECLARE @skip Int -- Int32
 SET     @skip = 100
 
 SELECT

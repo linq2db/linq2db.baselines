@@ -1,14 +1,14 @@
 ﻿BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @Id  -- Int32
+DECLARE @Id Int -- Int32
 SET     @Id = 1
-DECLARE @ImplicitPropertyRW  -- Int32
+DECLARE @ImplicitPropertyRW Int -- Int32
 SET     @ImplicitPropertyRW = 2
-DECLARE @ImplicitPropertyRO  -- Int32
+DECLARE @ImplicitPropertyRO Int -- Int32
 SET     @ImplicitPropertyRO = 11
-DECLARE @Tests_Linq_InterfaceTests_IExplicitInterface<Tests_Linq_InterfaceTests_Issue4715Table>_ExplicitPropertyRW  -- Int32
+DECLARE @Tests_Linq_InterfaceTests_IExplicitInterface<Tests_Linq_InterfaceTests_Issue4715Table>_ExplicitPropertyRW Int -- Int32
 SET     @Tests_Linq_InterfaceTests_IExplicitInterface<Tests_Linq_InterfaceTests_Issue4715Table>_ExplicitPropertyRW = 3
-DECLARE @Tests_Linq_InterfaceTests_IExplicitInterface<Tests_Linq_InterfaceTests_Issue4715Table>_ExplicitPropertyRO  -- Int32
+DECLARE @Tests_Linq_InterfaceTests_IExplicitInterface<Tests_Linq_InterfaceTests_Issue4715Table>_ExplicitPropertyRO Int -- Int32
 SET     @Tests_Linq_InterfaceTests_IExplicitInterface<Tests_Linq_InterfaceTests_Issue4715Table>_ExplicitPropertyRO = 22
 
 INSERT INTO "Issue4715Table"

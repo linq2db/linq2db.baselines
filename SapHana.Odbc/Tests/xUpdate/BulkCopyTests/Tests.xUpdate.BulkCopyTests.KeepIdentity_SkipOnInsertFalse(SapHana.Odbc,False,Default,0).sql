@@ -55,7 +55,7 @@ DROP TABLE "AllTypes_OLD"
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @Value  -- Int32
+DECLARE @Value Int -- Int32
 SET     @Value = 0
 
 INSERT INTO "AllTypes"
@@ -74,7 +74,7 @@ SELECT CURRENT_IDENTITY_VALUE() FROM DUMMY
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @Value  -- Int32
+DECLARE @Value Int -- Int32
 SET     @Value = 200
 
 INSERT INTO "AllTypes"
@@ -88,7 +88,7 @@ VALUES
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @Value  -- Int32
+DECLARE @Value Int -- Int32
 SET     @Value = 300
 
 INSERT INTO "AllTypes"
@@ -102,7 +102,7 @@ VALUES
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @lastId  -- Int32
+DECLARE @lastId Int -- Int32
 SET     @lastId = 3
 
 SELECT
@@ -117,7 +117,7 @@ ORDER BY
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @lastId  -- Int32
+DECLARE @lastId Int -- Int32
 SET     @lastId = 3
 
 DELETE FROM

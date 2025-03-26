@@ -4,7 +4,7 @@ DECLARE @FirstName NVarChar(27) -- String
 SET     @FirstName = 'InsertOrReplaceColumnFilter'
 DECLARE @LastName NVarChar(8) -- String
 SET     @LastName = 'whatever'
-DECLARE @ID  -- Int32
+DECLARE @ID Int -- Int32
 SET     @ID = 0
 
 UPDATE
@@ -17,7 +17,7 @@ WHERE
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @ID  -- Int32
+DECLARE @ID Int -- Int32
 SET     @ID = 0
 DECLARE @FirstName NVarChar(27) -- String
 SET     @FirstName = 'InsertOrReplaceColumnFilter'
@@ -61,7 +61,7 @@ DECLARE @LastName NVarChar(8) -- String
 SET     @LastName = 'whatever'
 DECLARE @MiddleName NVarChar(12) -- String
 SET     @MiddleName = 'updated name'
-DECLARE @ID  -- Int32
+DECLARE @ID Int -- Int32
 SET     @ID = 0
 
 UPDATE

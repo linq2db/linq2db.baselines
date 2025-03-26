@@ -9,9 +9,9 @@ LIMIT 1
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @Value  -- Int32
+DECLARE @Value Int -- Int32
 SET     @Value = 10
-DECLARE @ID  -- Int32
+DECLARE @ID Int -- Int32
 SET     @ID = 5
 
 UPDATE
@@ -23,9 +23,9 @@ WHERE
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @ID  -- Int32
+DECLARE @ID Int -- Int32
 SET     @ID = 5
-DECLARE @Value  -- Int32
+DECLARE @Value Int -- Int32
 SET     @Value = 10
 
 INSERT INTO "TESTDB"."Issue681Table"
@@ -41,9 +41,9 @@ VALUES
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @Value  -- Int32
+DECLARE @Value Int -- Int32
 SET     @Value = 10
-DECLARE @ID  -- Int32
+DECLARE @ID Int -- Int32
 SET     @ID = 5
 
 UPDATE

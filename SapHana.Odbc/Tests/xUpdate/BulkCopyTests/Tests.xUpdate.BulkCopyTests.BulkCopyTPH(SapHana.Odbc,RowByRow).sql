@@ -1,8 +1,8 @@
 ﻿BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @Id  -- Int32
+DECLARE @Id Int -- Int32
 SET     @Id = 1
-DECLARE @Discriminator  -- Int32
+DECLARE @Discriminator Int -- Int32
 SET     @Discriminator = 1
 DECLARE @Value1 NVarChar(4) -- String
 SET     @Value1 = 'Str1'
@@ -22,9 +22,9 @@ VALUES
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @Id  -- Int32
+DECLARE @Id Int -- Int32
 SET     @Id = 2
-DECLARE @Discriminator  -- Int32
+DECLARE @Discriminator Int -- Int32
 SET     @Discriminator = 2
 DECLARE @Value2 NVarChar(4) -- String
 SET     @Value2 = 'Str2'
@@ -44,9 +44,9 @@ VALUES
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @Id  -- Int32
+DECLARE @Id Int -- Int32
 SET     @Id = 3
-DECLARE @Discriminator  -- Int32
+DECLARE @Discriminator Int -- Int32
 SET     @Discriminator = 3
 DECLARE @Value3 NVarChar(4) -- String
 SET     @Value3 = 'Str3'

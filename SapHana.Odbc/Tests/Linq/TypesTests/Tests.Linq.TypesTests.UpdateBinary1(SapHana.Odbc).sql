@@ -1,6 +1,6 @@
 ﻿BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @BinaryValue Binary(5)
+DECLARE @BinaryValue VarBinary(5) -- Binary
 SET     @BinaryValue = x'0102030405'
 
 UPDATE
