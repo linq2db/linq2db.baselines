@@ -1,6 +1,11 @@
 ﻿BeforeExecute
 -- SQLite.MS SQLite
 
+select sqlite_version();
+
+BeforeExecute
+-- SQLite.MS SQLite
+
 WITH [cte] ([FirstName], [LastName])
 AS
 (
