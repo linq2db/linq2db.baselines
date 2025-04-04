@@ -16,5 +16,5 @@ SELECT
 	[t1].[Key],
 	[t1].[Rank]
 FROM
-	FREETEXTTABLE([database].[schema].[table_name], [value], N'some query text') [t1]
+	FREETEXTTABLE([database].[schema].[table_name], [value], @p) [t1]
 
