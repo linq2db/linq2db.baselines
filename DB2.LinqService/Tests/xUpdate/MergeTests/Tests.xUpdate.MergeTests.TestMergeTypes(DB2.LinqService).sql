@@ -114,7 +114,7 @@ DECLARE @FieldFloat Real(4) -- Single
 SET     @FieldFloat = -3.40282002E+38
 DECLARE @FieldDouble Double(8)
 SET     @FieldDouble = -1.7976931348623157E+308
-DECLARE @FieldDateTime Timestamp(20) -- DateTime
+DECLARE @FieldDateTime Timestamp(16) -- DateTime
 SET     @FieldDateTime = '2000-11-12-21.14.15.167000'
 DECLARE @FieldBinary VarBinary(0) -- Binary
 SET     @FieldBinary = BX''
@@ -122,7 +122,7 @@ DECLARE @FieldGuid VarBinary(16) -- Binary
 SET     @FieldGuid = BX'00000000000000000000000000000000'
 DECLARE @FieldDecimal (18, 10) -- Decimal
 SET     @FieldDecimal = 12345678.9012345678
-DECLARE @FieldDate Timestamp(20) -- DateTime
+DECLARE @FieldDate Timestamp(16) -- DateTime
 SET     @FieldDate = '2000-11-23-00.00.00.000000'
 DECLARE @FieldTime Time(6)
 SET     @FieldTime = '09:44:34'
@@ -198,7 +198,7 @@ DECLARE @FieldFloat Real(4) -- Single
 SET     @FieldFloat = 3.40282002E+38
 DECLARE @FieldDouble Double(8)
 SET     @FieldDouble = 1.7976931348623157E+308
-DECLARE @FieldDateTime Timestamp(20) -- DateTime
+DECLARE @FieldDateTime Timestamp(16) -- DateTime
 SET     @FieldDateTime = '2001-10-12-21.14.15.167000'
 DECLARE @FieldBinary VarBinary(6) -- Binary
 SET     @FieldBinary = BX'000102030004'
@@ -206,7 +206,7 @@ DECLARE @FieldGuid VarBinary(16) -- Binary
 SET     @FieldGuid = BX'FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF'
 DECLARE @FieldDecimal (18, 10) -- Decimal
 SET     @FieldDecimal = -99999999.9999999999
-DECLARE @FieldDate Timestamp(20) -- DateTime
+DECLARE @FieldDate Timestamp(16) -- DateTime
 SET     @FieldDate = '2123-11-23-00.00.00.000000'
 DECLARE @FieldTime Time(6)
 SET     @FieldTime = '00:44:34'
@@ -281,7 +281,7 @@ DECLARE @FieldFloat Real(4) -- Single
 SET     @FieldFloat = 1.17549996E-38
 DECLARE @FieldDouble Double(8)
 SET     @FieldDouble = -2.2250738585072014E-308
-DECLARE @FieldDateTime Timestamp(20) -- DateTime
+DECLARE @FieldDateTime Timestamp(16) -- DateTime
 SET     @FieldDateTime = '2098-10-12-21.14.15.997000'
 DECLARE @FieldBinary VarBinary(6) -- Binary
 SET     @FieldBinary = BX'FFC864321400'
@@ -289,7 +289,7 @@ DECLARE @FieldGuid VarBinary(16) -- Binary
 SET     @FieldGuid = BX'FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF'
 DECLARE @FieldDecimal (18, 10) -- Decimal
 SET     @FieldDecimal = 99999999.9999999999
-DECLARE @FieldDate Timestamp(20) -- DateTime
+DECLARE @FieldDate Timestamp(16) -- DateTime
 SET     @FieldDate = '2110-11-23-00.00.00.000000'
 DECLARE @FieldTime Time(6)
 SET     @FieldTime = '00:00:00'
@@ -363,7 +363,7 @@ DECLARE @FieldFloat Real(4) -- Single
 SET     @FieldFloat = -1.17549996E-38
 DECLARE @FieldDouble Double(8)
 SET     @FieldDouble = 2.2250738585072014E-308
-DECLARE @FieldDateTime Timestamp(20) -- DateTime
+DECLARE @FieldDateTime Timestamp(16) -- DateTime
 SET     @FieldDateTime = '2098-10-12-21.14.15.907000'
 DECLARE @FieldBinary VarBinary(6) -- Binary
 SET     @FieldBinary = BX'FFC864321400'
@@ -371,7 +371,7 @@ DECLARE @FieldGuid VarBinary(16) -- Binary
 SET     @FieldGuid = BX'FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF'
 DECLARE @FieldDecimal (3, 3) -- Decimal
 SET     @FieldDecimal = -0.123
-DECLARE @FieldDate Timestamp(20) -- DateTime
+DECLARE @FieldDate Timestamp(16) -- DateTime
 SET     @FieldDate = '2111-11-23-00.00.00.000000'
 DECLARE @FieldTime Time(6)
 SET     @FieldTime = '23:59:59'
@@ -447,7 +447,7 @@ DECLARE @FieldFloat Real(4) -- Single
 SET     @FieldFloat = 3.40282002E+38
 DECLARE @FieldDouble Double(8)
 SET     @FieldDouble = 1.7976931348623157E+308
-DECLARE @FieldDateTime Timestamp(20) -- DateTime
+DECLARE @FieldDateTime Timestamp(16) -- DateTime
 SET     @FieldDateTime = '2001-10-12-21.14.15.167000'
 DECLARE @FieldBinary VarBinary(6) -- Binary
 SET     @FieldBinary = BX'000102030004'
@@ -455,7 +455,7 @@ DECLARE @FieldGuid VarBinary(16) -- Binary
 SET     @FieldGuid = BX'FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF'
 DECLARE @FieldDecimal (18, 10) -- Decimal
 SET     @FieldDecimal = -99999999.9999999999
-DECLARE @FieldDate Timestamp(20) -- DateTime
+DECLARE @FieldDate Timestamp(16) -- DateTime
 SET     @FieldDate = '2123-11-23-00.00.00.000000'
 DECLARE @FieldTime Time(6)
 SET     @FieldTime = '14:44:33'
@@ -529,7 +529,7 @@ DECLARE @FieldFloat Real(4) -- Single
 SET     @FieldFloat = -1.17549996E-38
 DECLARE @FieldDouble Double(8)
 SET     @FieldDouble = 2.2250738585072014E-308
-DECLARE @FieldDateTime Timestamp(20) -- DateTime
+DECLARE @FieldDateTime Timestamp(16) -- DateTime
 SET     @FieldDateTime = '2098-10-12-21.14.15.913000'
 DECLARE @FieldBinary VarBinary(6) -- Binary
 SET     @FieldBinary = BX'FFC864321400'
@@ -537,7 +537,7 @@ DECLARE @FieldGuid VarBinary(16) -- Binary
 SET     @FieldGuid = BX'FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF'
 DECLARE @FieldDecimal (3, 3) -- Decimal
 SET     @FieldDecimal = -0.123
-DECLARE @FieldDate Timestamp(20) -- DateTime
+DECLARE @FieldDate Timestamp(16) -- DateTime
 SET     @FieldDate = '2010-11-23-00.00.00.000000'
 DECLARE @FieldTime Time(6)
 SET     @FieldTime = '23:59:59'
@@ -613,7 +613,7 @@ DECLARE @FieldFloat Real(4) -- Single
 SET     @FieldFloat = 3.40282002E+38
 DECLARE @FieldDouble Double(8)
 SET     @FieldDouble = 1.7976931348623157E+308
-DECLARE @FieldDateTime Timestamp(20) -- DateTime
+DECLARE @FieldDateTime Timestamp(16) -- DateTime
 SET     @FieldDateTime = '2001-10-12-21.14.15.167000'
 DECLARE @FieldBinary VarBinary(6) -- Binary
 SET     @FieldBinary = BX'000102030004'
@@ -621,7 +621,7 @@ DECLARE @FieldGuid VarBinary(16) -- Binary
 SET     @FieldGuid = BX'FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF'
 DECLARE @FieldDecimal (18, 10) -- Decimal
 SET     @FieldDecimal = -99999999.9999999999
-DECLARE @FieldDate Timestamp(20) -- DateTime
+DECLARE @FieldDate Timestamp(16) -- DateTime
 SET     @FieldDate = '2123-11-23-00.00.00.000000'
 DECLARE @FieldTime Time(6)
 SET     @FieldTime = '22:44:33'

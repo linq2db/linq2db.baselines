@@ -1,6 +1,6 @@
 ﻿BeforeExecute
 -- DB2 DB2.LUW DB2LUW
-DECLARE @dt Timestamp(20) -- DateTime
+DECLARE @dt Timestamp(16) -- DateTime
 SET     @dt = '2020-02-29-17.54.55.123123'
 
 SELECT

@@ -4,7 +4,7 @@ DECLARE @ID Integer(4) -- Int32
 SET     @ID = 5000
 DECLARE @MoneyValue (1, 0) -- Decimal
 SET     @MoneyValue = 0
-DECLARE @DateTimeValue Timestamp(20) -- DateTime
+DECLARE @DateTimeValue Timestamp(16) -- DateTime
 SET     @DateTimeValue = '2018-01-03-00.00.00.000000'
 DECLARE @BoolValue SmallInt(4) -- Int16
 SET     @BoolValue = 0

@@ -42,7 +42,7 @@ BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 DECLARE @MoneyValue (5, 4) -- Decimal
 SET     @MoneyValue = 1.1100
-DECLARE @DateTimeValue Timestamp(20) -- DateTime
+DECLARE @DateTimeValue Timestamp(16) -- DateTime
 SET     @DateTimeValue = '2001-01-11-01.11.21.100000'
 DECLARE @DateTimeValue2 Timestamp -- DateTime
 SET     @DateTimeValue2 = NULL
@@ -102,7 +102,7 @@ BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 DECLARE @MoneyValue (5, 4) -- Decimal
 SET     @MoneyValue = 1.1100
-DECLARE @DateTimeValue Timestamp(20) -- DateTime
+DECLARE @DateTimeValue Timestamp(16) -- DateTime
 SET     @DateTimeValue = '2001-01-11-01.11.21.100000'
 DECLARE @DateTimeValue2 Timestamp -- DateTime
 SET     @DateTimeValue2 = NULL
