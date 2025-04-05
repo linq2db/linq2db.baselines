@@ -49,31 +49,23 @@ SELECT
 		SELECT
 			COUNT(*)
 		FROM
+			[Employees] [e2]
+		WHERE
+			([e2].[ReportsTo] = [employee].[ReportsTo] OR [e2].[ReportsTo] IS NULL AND [employee].[ReportsTo] IS NULL) AND
+			[e2].[ReportsTo] IS NOT NULL
+	),
+	[manager].[LastName],
+	[manager].[FirstName],
+	(
+		SELECT
+			COUNT(*)
+		FROM
 			[Employees] [e2_1]
 		WHERE
-			([e2_1].[ReportsTo] = [employee].[ReportsTo] OR [e2_1].[ReportsTo] IS NULL AND [employee].[ReportsTo] IS NULL) AND
+			([e2_1].[ReportsTo] = [manager].[ReportsTo] OR [e2_1].[ReportsTo] IS NULL AND [manager].[ReportsTo] IS NULL) AND
 			[e2_1].[ReportsTo] IS NOT NULL
-	),
-	[manager_1].[LastName],
-	[manager_1].[FirstName],
-	[manager_1].[NumberOfSubordinates]
+	)
 FROM
 	[Employees] [employee]
-		LEFT JOIN (
-			SELECT
-				[manager].[LastName],
-				[manager].[FirstName],
-				(
-					SELECT
-						COUNT(*)
-					FROM
-						[Employees] [e2]
-					WHERE
-						([e2].[ReportsTo] = [manager].[ReportsTo] OR [e2].[ReportsTo] IS NULL AND [manager].[ReportsTo] IS NULL) AND
-						[e2].[ReportsTo] IS NOT NULL
-				) as [NumberOfSubordinates],
-				[manager].[EmployeeID]
-			FROM
-				[Employees] [manager]
-		) [manager_1] ON [employee].[ReportsTo] = [manager_1].[EmployeeID]
+		LEFT JOIN [Employees] [manager] ON [employee].[ReportsTo] = [manager].[EmployeeID]
 
