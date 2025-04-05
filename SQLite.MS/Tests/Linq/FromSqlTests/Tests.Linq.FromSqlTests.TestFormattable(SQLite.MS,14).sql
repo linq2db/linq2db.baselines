@@ -1,12 +1,16 @@
 ﻿BeforeExecute
 -- SQLite.MS SQLite
+DECLARE @p  -- Int32
+SET     @p = 5
+DECLARE @p_1  -- Int32
+SET     @p_1 = 14
 
 SELECT
 	[c_1].[value],
 	[c_1].[id]
 FROM
 	(
-		SELECT * FROM [sample_class] where [id] >= 5 and [id] < 14
+		SELECT * FROM [sample_class] where [id] >= @p and [id] < @p_1
 	) [c_1]
 WHERE
 	[c_1].[id] > 10
