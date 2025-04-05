@@ -10,3 +10,20 @@ FROM
 WHERE
 	[s].[Id] > 3
 
+BeforeExecute
+-- SQLite.MS SQLite (asynchronously)
+
+DELETE FROM
+	[TableWithData]
+WHERE
+	[TableWithData].[Id] > 3
+RETURNING
+	[TableWithData].[Id],
+	[TableWithData].[Value],
+	[TableWithData].[ValueStr]
+
+BeforeExecute
+-- SQLite.MS SQLite (asynchronously)
+
+DROP TABLE IF EXISTS [TableWithData]
+
