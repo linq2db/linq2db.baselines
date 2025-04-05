@@ -66,7 +66,7 @@ FROM
 		FROM
 			`Names` `Item1`
 	) `m_1`
-		INNER JOIN `Addresses` `d` ON `m_1`.`Id` = `d`.`Id`
+		LEFT JOIN `Addresses` `d` ON `m_1`.`Id` = `d`.`Id`
 
 BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
