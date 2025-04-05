@@ -1,6 +1,6 @@
 ﻿BeforeExecute
 -- DB2 DB2.LUW DB2LUW
-DECLARE @dateTime Timestamp(20) -- DateTime
+DECLARE @dateTime Timestamp(16) -- DateTime
 SET     @dateTime = '1992-01-11-01.11.21.100000'
 
 SELECT
@@ -13,7 +13,7 @@ FETCH NEXT 1 ROWS ONLY
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
-DECLARE @dateTime Timestamp(20) -- DateTime
+DECLARE @dateTime Timestamp(16) -- DateTime
 SET     @dateTime = '1993-01-11-01.11.21.100000'
 
 SELECT

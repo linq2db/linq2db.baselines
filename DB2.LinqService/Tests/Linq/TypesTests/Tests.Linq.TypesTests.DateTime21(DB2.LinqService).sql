@@ -20,7 +20,7 @@ FETCH NEXT 1 ROWS ONLY
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
-DECLARE @dt Timestamp(20) -- DateTime
+DECLARE @dt Timestamp(16) -- DateTime
 SET     @dt = '2010-12-14-05.00.07.425014'
 
 UPDATE
@@ -52,7 +52,7 @@ FETCH NEXT 1 ROWS ONLY
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
-DECLARE @pdt Timestamp(20) -- DateTime
+DECLARE @pdt Timestamp(16) -- DateTime
 SET     @pdt = '2001-01-11-01.11.21.100000'
 
 UPDATE

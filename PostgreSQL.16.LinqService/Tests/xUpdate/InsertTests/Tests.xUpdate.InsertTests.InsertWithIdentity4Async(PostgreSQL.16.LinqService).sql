@@ -36,6 +36,23 @@ RETURNING
 
 BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL (asynchronously)
+DECLARE @p Text(5) -- String
+SET     @p = 'John0'
+
+SELECT
+	p."FirstName",
+	p."PersonID",
+	p."LastName",
+	p."MiddleName",
+	p."Gender"
+FROM
+	"Person" p
+WHERE
+	p."FirstName" = :p AND p."LastName" = 'Shepard'
+LIMIT 2
+
+BeforeExecute
+-- PostgreSQL.16 PostgreSQL.15 PostgreSQL (asynchronously)
 DECLARE @FirstName Text(5) -- String
 SET     @FirstName = 'John1'
 DECLARE @LastName Text(7) -- String
@@ -61,6 +78,23 @@ VALUES
 )
 RETURNING 
 	"PersonID"
+
+BeforeExecute
+-- PostgreSQL.16 PostgreSQL.15 PostgreSQL (asynchronously)
+DECLARE @p Text(5) -- String
+SET     @p = 'John1'
+
+SELECT
+	p."FirstName",
+	p."PersonID",
+	p."LastName",
+	p."MiddleName",
+	p."Gender"
+FROM
+	"Person" p
+WHERE
+	p."FirstName" = :p AND p."LastName" = 'Shepard'
+LIMIT 2
 
 BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL

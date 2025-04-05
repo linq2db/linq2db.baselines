@@ -1,8 +1,8 @@
 ﻿BeforeExecute
 -- DB2 DB2.LUW DB2LUW
-DECLARE @currentDate Timestamp(20) -- DateTime
+DECLARE @currentDate Timestamp(16) -- DateTime
 SET     @currentDate = '2020-02-29-17.54.55.123123'
-DECLARE @currentDate_1 Timestamp(20) -- DateTime
+DECLARE @currentDate_1 Timestamp(16) -- DateTime
 SET     @currentDate_1 = '2020-02-29-17.54.55.123123'
 
 SELECT

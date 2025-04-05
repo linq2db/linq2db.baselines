@@ -1,20 +1,4 @@
 ﻿BeforeExecute
---  TestNoopProvider TestNoop (asynchronously)
-
-SELECT
-	1
-FROM
-	TestEntity t1
-
-BeforeExecute
---  TestNoopProvider TestNoop (asynchronously)
-
-SELECT
-	1
-FROM
-	TestEntity t1
-
-BeforeExecute
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
 
 SELECT
