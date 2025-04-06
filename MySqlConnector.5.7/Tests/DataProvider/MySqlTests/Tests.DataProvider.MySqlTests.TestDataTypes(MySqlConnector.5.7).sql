@@ -844,7 +844,7 @@ SELECT ID FROM `AllTypes` WHERE @p IS NULL AND charDataType IS NULL OR @p IS NOT
 
 BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-DECLARE @p VarChar(4000) -- String
+DECLARE @p VarChar -- String
 SET     @p = NULL
 
 SELECT ID FROM `AllTypes` WHERE @p IS NULL AND charDataType IS NULL OR @p IS NOT NULL AND charDataType = @p
@@ -870,7 +870,7 @@ SELECT ID FROM `AllTypes` WHERE charDataType = @p
 
 BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-DECLARE @p VarChar(4000) -- String
+DECLARE @p VarChar(1) -- String
 SET     @p = '1'
 
 SELECT ID FROM `AllTypes` WHERE charDataType = @p
@@ -896,7 +896,7 @@ SELECT ID FROM `AllTypes` WHERE @p IS NULL AND charDataType IS NULL OR @p IS NOT
 
 BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-DECLARE @p VarChar(4000) -- String
+DECLARE @p VarChar -- String
 SET     @p = NULL
 
 SELECT ID FROM `AllTypes` WHERE @p IS NULL AND charDataType IS NULL OR @p IS NOT NULL AND charDataType = @p
@@ -922,7 +922,7 @@ SELECT ID FROM `AllTypes` WHERE charDataType = @p
 
 BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-DECLARE @p VarChar(4000) -- String
+DECLARE @p VarChar(1) -- String
 SET     @p = '1'
 
 SELECT ID FROM `AllTypes` WHERE charDataType = @p
@@ -948,7 +948,7 @@ SELECT ID FROM `AllTypes` WHERE @p IS NULL AND varcharDataType IS NULL OR @p IS 
 
 BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-DECLARE @p VarChar(4000) -- String
+DECLARE @p VarChar -- String
 SET     @p = NULL
 
 SELECT ID FROM `AllTypes` WHERE @p IS NULL AND varcharDataType IS NULL OR @p IS NOT NULL AND varcharDataType = @p
@@ -974,7 +974,7 @@ SELECT ID FROM `AllTypes` WHERE varcharDataType = @p
 
 BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-DECLARE @p VarChar(4000) -- String
+DECLARE @p VarChar(3) -- String
 SET     @p = '234'
 
 SELECT ID FROM `AllTypes` WHERE varcharDataType = @p
@@ -1000,7 +1000,7 @@ SELECT ID FROM `AllTypes` WHERE @p IS NULL AND varcharDataType IS NULL OR @p IS 
 
 BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-DECLARE @p VarChar(4000) -- String
+DECLARE @p VarChar -- String
 SET     @p = NULL
 
 SELECT ID FROM `AllTypes` WHERE @p IS NULL AND varcharDataType IS NULL OR @p IS NOT NULL AND varcharDataType = @p
@@ -1026,7 +1026,7 @@ SELECT ID FROM `AllTypes` WHERE varcharDataType = @p
 
 BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-DECLARE @p VarChar(4000) -- String
+DECLARE @p VarChar(3) -- String
 SET     @p = '234'
 
 SELECT ID FROM `AllTypes` WHERE varcharDataType = @p
@@ -1052,7 +1052,7 @@ SELECT ID FROM `AllTypes` WHERE @p IS NULL AND textDataType IS NULL OR @p IS NOT
 
 BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-DECLARE @p VarChar(4000) -- String
+DECLARE @p VarChar -- String
 SET     @p = NULL
 
 SELECT ID FROM `AllTypes` WHERE @p IS NULL AND textDataType IS NULL OR @p IS NOT NULL AND textDataType = @p
@@ -1078,7 +1078,7 @@ SELECT ID FROM `AllTypes` WHERE textDataType = @p
 
 BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-DECLARE @p VarChar(4000) -- String
+DECLARE @p VarChar(3) -- String
 SET     @p = '567'
 
 SELECT ID FROM `AllTypes` WHERE textDataType = @p
@@ -1551,7 +1551,7 @@ SELECT enumDataType FROM `AllTypes` WHERE ID = 1
 
 BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-DECLARE @p VarChar(4000) -- String
+DECLARE @p VarChar -- String
 SET     @p = NULL
 
 SELECT ID FROM `AllTypes` WHERE @p IS NULL AND enumDataType IS NULL OR @p IS NOT NULL AND enumDataType = @p
@@ -1570,7 +1570,7 @@ SELECT enumDataType FROM `AllTypes` WHERE ID = 2
 
 BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-DECLARE @p VarChar(4000) -- String
+DECLARE @p VarChar(5) -- String
 SET     @p = 'Green'
 
 SELECT ID FROM `AllTypes` WHERE enumDataType = @p
@@ -1589,7 +1589,7 @@ SELECT setDataType FROM `AllTypes` WHERE ID = 1
 
 BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-DECLARE @p VarChar(4000) -- String
+DECLARE @p VarChar -- String
 SET     @p = NULL
 
 SELECT ID FROM `AllTypes` WHERE @p IS NULL AND setDataType IS NULL OR @p IS NOT NULL AND setDataType = @p
@@ -1608,7 +1608,7 @@ SELECT setDataType FROM `AllTypes` WHERE ID = 2
 
 BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-DECLARE @p VarChar(4000) -- String
+DECLARE @p VarChar(3) -- String
 SET     @p = 'one'
 
 SELECT ID FROM `AllTypes` WHERE setDataType = @p

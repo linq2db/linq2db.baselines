@@ -3,8 +3,8 @@
 
 CREATE TABLE [tempdb]..[#TestMergeTVPTable]
 (
-	[Id]   Int            NOT NULL,
-	[Name] NVarChar(4000)     NULL
+	[Id]   Int           NOT NULL,
+	[Name] NVarChar(Max)     NULL
 )
 
 BeforeExecute

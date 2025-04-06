@@ -1,6 +1,6 @@
 ﻿BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-DECLARE @firstName VarChar(4000) -- String
+DECLARE @firstName VarChar(4) -- String
 SET     @firstName = 'John'
 
 SELECT
