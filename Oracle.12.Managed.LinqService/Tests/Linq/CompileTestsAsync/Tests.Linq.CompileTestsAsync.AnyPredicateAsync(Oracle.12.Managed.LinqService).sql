@@ -1,183 +1,20 @@
 ﻿BeforeExecute
--- Oracle.12.Managed Oracle.Managed Oracle12
+-- Oracle.12.Managed Oracle.Managed Oracle12 (asynchronously)
+DECLARE @p Int32
+SET     @p = 2
 
-BEGIN
-	EXECUTE IMMEDIATE 'DROP TABLE "AsyncDataTable"';
-EXCEPTION
-	WHEN OTHERS THEN
-		IF SQLCODE != -942 THEN
-			RAISE;
-		END IF;
-END;
-
-BeforeExecute
--- Oracle.12.Managed Oracle.Managed Oracle12
-
-BEGIN
-	EXECUTE IMMEDIATE '
-		CREATE TABLE "AsyncDataTable"
-		(
-			"Id" Int NOT NULL,
-
-			CONSTRAINT "PK_AsyncDataTable" PRIMARY KEY ("Id")
+SELECT
+	CASE
+		WHEN EXISTS(
+			SELECT
+				*
+			FROM
+				"AsyncDataTable" c_1
+			WHERE
+				c_1."Id" = :p
 		)
-	';
-EXCEPTION
-	WHEN OTHERS THEN
-		IF SQLCODE != -955 THEN
-			RAISE;
-		END IF;
-END;
-
-BeforeExecute
--- Oracle.12.Managed Oracle.Managed Oracle12
-DECLARE @Id Int32
-SET     @Id = 1
-
-INSERT INTO "AsyncDataTable"
-(
-	"Id"
-)
-VALUES
-(
-	:Id
-)
-
-BeforeExecute
--- Oracle.12.Managed Oracle.Managed Oracle12
-DECLARE @Id Int32
-SET     @Id = 2
-
-INSERT INTO "AsyncDataTable"
-(
-	"Id"
-)
-VALUES
-(
-	:Id
-)
-
-BeforeExecute
--- Oracle.12.Managed Oracle.Managed Oracle12
-DECLARE @Id Int32
-SET     @Id = 3
-
-INSERT INTO "AsyncDataTable"
-(
-	"Id"
-)
-VALUES
-(
-	:Id
-)
-
-BeforeExecute
--- Oracle.12.Managed Oracle.Managed Oracle12
-DECLARE @Id Int32
-SET     @Id = 4
-
-INSERT INTO "AsyncDataTable"
-(
-	"Id"
-)
-VALUES
-(
-	:Id
-)
-
-BeforeExecute
--- Oracle.12.Managed Oracle.Managed Oracle12
-DECLARE @Id Int32
-SET     @Id = 5
-
-INSERT INTO "AsyncDataTable"
-(
-	"Id"
-)
-VALUES
-(
-	:Id
-)
-
-BeforeExecute
--- Oracle.12.Managed Oracle.Managed Oracle12
-DECLARE @Id Int32
-SET     @Id = 6
-
-INSERT INTO "AsyncDataTable"
-(
-	"Id"
-)
-VALUES
-(
-	:Id
-)
-
-BeforeExecute
--- Oracle.12.Managed Oracle.Managed Oracle12
-DECLARE @Id Int32
-SET     @Id = 7
-
-INSERT INTO "AsyncDataTable"
-(
-	"Id"
-)
-VALUES
-(
-	:Id
-)
-
-BeforeExecute
--- Oracle.12.Managed Oracle.Managed Oracle12
-DECLARE @Id Int32
-SET     @Id = 8
-
-INSERT INTO "AsyncDataTable"
-(
-	"Id"
-)
-VALUES
-(
-	:Id
-)
-
-BeforeExecute
--- Oracle.12.Managed Oracle.Managed Oracle12
-DECLARE @Id Int32
-SET     @Id = 9
-
-INSERT INTO "AsyncDataTable"
-(
-	"Id"
-)
-VALUES
-(
-	:Id
-)
-
-BeforeExecute
--- Oracle.12.Managed Oracle.Managed Oracle12
-DECLARE @Id Int32
-SET     @Id = 10
-
-INSERT INTO "AsyncDataTable"
-(
-	"Id"
-)
-VALUES
-(
-	:Id
-)
-
-BeforeExecute
--- Oracle.12.Managed Oracle.Managed Oracle12
-
-BEGIN
-	EXECUTE IMMEDIATE 'DROP TABLE "AsyncDataTable"';
-EXCEPTION
-	WHEN OTHERS THEN
-		IF SQLCODE != -942 THEN
-			RAISE;
-		END IF;
-END;
+			THEN 1
+		ELSE 0
+	END
+FROM SYS.DUAL
 
