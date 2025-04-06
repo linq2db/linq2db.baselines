@@ -7,7 +7,8 @@ SELECT
 FROM
 	[ComplexPredicate] [r]
 WHERE
-	IIF([r].[Value] = '123', True, False) = IIF([r].[Value] = '1' OR [r].[Value] = 'test' AND ([r].[Value] <> '1' OR [r].[Value] IS NULL), True, False)
+	IIF([r].[Value] = '123', True, False) = IIF([r].[Value] = '1' OR [r].[Value] = 'test' AND ([r].[Value] <> '1' OR [r].[Value] IS NULL), True, False) OR
+	([r].[Value] = '123') IS NULL AND ([r].[Value] = '1' OR [r].[Value] = 'test' AND ([r].[Value] <> '1' OR [r].[Value] IS NULL)) IS NULL
 ORDER BY
 	[r].[Id]
 
