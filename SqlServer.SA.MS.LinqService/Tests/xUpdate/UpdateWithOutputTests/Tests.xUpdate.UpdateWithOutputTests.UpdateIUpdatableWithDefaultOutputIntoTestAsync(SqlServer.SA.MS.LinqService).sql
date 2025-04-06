@@ -1,4 +1,25 @@
 ﻿BeforeExecute
+-- SqlServer.SA.MS SqlServer.2019 (asynchronously)
+
+UPDATE
+	[TableWithData]
+SET
+	[Value] = [TableWithData].[Value] + 1,
+	[ValueStr] = [TableWithData].[ValueStr] + N'Upd'
+OUTPUT
+	INSERTED.[Id],
+	INSERTED.[Value],
+	INSERTED.[ValueStr]
+INTO [destination]
+(
+	[Id],
+	[Value],
+	[ValueStr]
+)
+WHERE
+	[TableWithData].[Id] > 3
+
+BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
 
 SELECT

@@ -1,20 +1,4 @@
 ﻿BeforeExecute
---  TestNoopProvider TestNoop (asynchronously)
-
-SELECT
-	1
-FROM
-	TestEntity t1
-
-BeforeExecute
---  TestNoopProvider TestNoop (asynchronously)
-
-SELECT
-	1
-FROM
-	TestEntity t1
-
-BeforeExecute
 -- PostgreSQL.17 PostgreSQL.15 PostgreSQL
 
 SELECT
