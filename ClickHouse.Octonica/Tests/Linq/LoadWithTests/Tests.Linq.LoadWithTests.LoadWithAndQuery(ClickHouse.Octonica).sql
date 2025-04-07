@@ -36,9 +36,9 @@ BeforeExecute
 SELECT
 	m_2.Id,
 	m_2.Id_1,
-	d_1.Id,
-	d_1.Value,
-	d_1.ParentId
+	d_2.Id,
+	d_2.Value_1,
+	d_2.ParentId
 FROM
 	(
 		SELECT DISTINCT
@@ -55,7 +55,17 @@ FROM
 			) t1
 				INNER JOIN SubItem1 d ON t1.Id = d.ParentId
 	) m_2
-		INNER JOIN SubItem1_Sub d_1 ON m_2.Id = d_1.ParentId
+		INNER JOIN (
+			SELECT
+				d_1.Id as Id,
+				d_1.Value as Value_1,
+				d_1.ParentId as ParentId,
+				ROW_NUMBER() OVER (PARTITION BY d_1.ParentId ORDER BY d_1.ParentId) as rn
+			FROM
+				SubItem1_Sub d_1
+			WHERE
+				d_1.Id = 1
+		) d_2 ON m_2.Id = d_2.ParentId AND d_2.rn <= 2
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
