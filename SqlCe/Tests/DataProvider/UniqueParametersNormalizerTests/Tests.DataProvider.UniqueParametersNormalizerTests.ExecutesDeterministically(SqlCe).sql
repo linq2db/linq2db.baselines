@@ -62,18 +62,3 @@ FROM
 WHERE
 	[row1_2].[Field1] LIKE @search_2 ESCAPE '~'
 
-BeforeExecute
--- SqlCe (asynchronously)
-
-DROP TABLE [table3]
-
-BeforeExecute
--- SqlCe (asynchronously)
-
-DROP TABLE [table2]
-
-BeforeExecute
--- SqlCe (asynchronously)
-
-DROP TABLE [table1]
-
