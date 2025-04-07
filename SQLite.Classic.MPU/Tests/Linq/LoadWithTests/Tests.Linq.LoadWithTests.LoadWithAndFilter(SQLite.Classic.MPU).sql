@@ -127,7 +127,9 @@ FROM
 			[d].[Value] = [d].[Value] OR [d].[Value] IS NULL AND [d].[Value] IS NULL
 	) [m_2]
 		INNER JOIN [SubItem1_Sub] [d_1] ON [m_2].[Id] = [d_1].[ParentId]
-		LEFT JOIN [SubItem1] [a_ParentSubItem] ON [d_1].[ParentId] = [a_ParentSubItem].[Id]
+		LEFT JOIN [SubItem1] [a_ParentSubItem] ON [d_1].[ParentId] = [a_ParentSubItem].[Id] AND ([a_ParentSubItem].[Value] = [a_ParentSubItem].[Value] OR [a_ParentSubItem].[Value] IS NULL AND [a_ParentSubItem].[Value] IS NULL)
+WHERE
+	[d_1].[Value] = [d_1].[Value] OR [d_1].[Value] IS NULL AND [d_1].[Value] IS NULL
 
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
