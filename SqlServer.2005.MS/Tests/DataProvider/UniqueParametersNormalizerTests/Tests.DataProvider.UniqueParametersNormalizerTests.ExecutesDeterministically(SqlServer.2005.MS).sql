@@ -62,21 +62,3 @@ FROM
 WHERE
 	[row1_2].[Field1] LIKE @search_2 ESCAPE N'~'
 
-BeforeExecute
--- SqlServer.2005.MS SqlServer.2005 (asynchronously)
-
-IF (OBJECT_ID(N'[table3]', N'U') IS NOT NULL)
-	DROP TABLE [table3]
-
-BeforeExecute
--- SqlServer.2005.MS SqlServer.2005 (asynchronously)
-
-IF (OBJECT_ID(N'[table2]', N'U') IS NOT NULL)
-	DROP TABLE [table2]
-
-BeforeExecute
--- SqlServer.2005.MS SqlServer.2005 (asynchronously)
-
-IF (OBJECT_ID(N'[table1]', N'U') IS NOT NULL)
-	DROP TABLE [table1]
-
