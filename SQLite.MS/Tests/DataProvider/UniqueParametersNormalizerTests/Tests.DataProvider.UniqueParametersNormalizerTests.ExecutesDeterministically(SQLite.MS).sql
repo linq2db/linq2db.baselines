@@ -62,18 +62,3 @@ FROM
 WHERE
 	[row1_2].[Field1] LIKE @search_2 ESCAPE '~'
 
-BeforeExecute
--- SQLite.MS SQLite (asynchronously)
-
-DROP TABLE IF EXISTS [table3]
-
-BeforeExecute
--- SQLite.MS SQLite (asynchronously)
-
-DROP TABLE IF EXISTS [table2]
-
-BeforeExecute
--- SQLite.MS SQLite (asynchronously)
-
-DROP TABLE IF EXISTS [table1]
-
