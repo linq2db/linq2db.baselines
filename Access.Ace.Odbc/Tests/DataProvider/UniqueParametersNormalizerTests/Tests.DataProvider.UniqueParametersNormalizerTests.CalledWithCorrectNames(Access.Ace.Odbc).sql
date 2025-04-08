@@ -30,18 +30,3 @@ FROM
 WHERE
 	[row1_2].[Field1] LIKE ?
 
-BeforeExecute
--- Access.Ace.Odbc AccessODBC (asynchronously)
-
-DROP TABLE [table3]
-
-BeforeExecute
--- Access.Ace.Odbc AccessODBC (asynchronously)
-
-DROP TABLE [table2]
-
-BeforeExecute
--- Access.Ace.Odbc AccessODBC (asynchronously)
-
-DROP TABLE [table1]
-

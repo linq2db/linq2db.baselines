@@ -1,20 +1,26 @@
 ﻿BeforeExecute
--- SQLite.Classic.MPM SQLite.Classic SQLite
+-- SQLite.Classic.MPM SQLite.Classic SQLite (asynchronously)
+DECLARE @Value  -- Int32
+SET     @Value = 100
+DECLARE @value_1  -- Int32
+SET     @value_1 = 1
+DECLARE @ValueStr NVarChar(8) -- String
+SET     @ValueStr = 'SomeStr1'
 
-DROP TABLE IF EXISTS [TableWithData]
-
-BeforeExecute
--- SQLite.Classic.MPM SQLite.Classic SQLite
-
-CREATE TABLE IF NOT EXISTS [TableWithData]
+INSERT INTO [TableWithData]
 (
-	[Id]       INTEGER      NOT NULL,
-	[Value]    INTEGER      NOT NULL,
-	[ValueStr] NVarChar(50)     NULL
+	[Value],
+	[Id],
+	[ValueStr]
 )
-
-BeforeExecute
--- SQLite.Classic.MPM SQLite.Classic SQLite
-
-DROP TABLE IF EXISTS [TableWithData]
+VALUES
+(
+	@Value,
+	@value_1,
+	@ValueStr
+)
+RETURNING
+	[TableWithData].[Id],
+	[TableWithData].[Value],
+	[TableWithData].[ValueStr]
 

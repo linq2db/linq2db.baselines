@@ -31,3 +31,106 @@ VALUES
 
 SELECT SCOPE_IDENTITY()
 
+BeforeExecute
+-- SqlServer.2022.MS SqlServer.2022 (asynchronously)
+DECLARE @id2 Int -- Int32
+SET     @id2 = 5
+DECLARE @i Int -- Int32
+SET     @i = 0
+DECLARE @id Int -- Int32
+SET     @id = 5
+
+MERGE INTO [Patient] [t1]
+USING (SELECT @id2 AS [PersonID]) [s] ON
+(
+	[t1].[PersonID] = [s].[PersonID]
+)
+WHEN MATCHED THEN
+	UPDATE 
+	SET
+		[Diagnosis] = CAST(Len([t1].[Diagnosis]) + @i AS NVarChar(11))
+WHEN NOT MATCHED THEN
+	INSERT
+	(
+		[PersonID],
+		[Diagnosis]
+	)
+	VALUES
+	(
+		@id,
+		N'abc'
+	);
+
+BeforeExecute
+-- SqlServer.2022.MS SqlServer.2022 (asynchronously)
+DECLARE @id2 Int -- Int32
+SET     @id2 = 5
+DECLARE @i Int -- Int32
+SET     @i = 1
+DECLARE @id Int -- Int32
+SET     @id = 5
+
+MERGE INTO [Patient] [t1]
+USING (SELECT @id2 AS [PersonID]) [s] ON
+(
+	[t1].[PersonID] = [s].[PersonID]
+)
+WHEN MATCHED THEN
+	UPDATE 
+	SET
+		[Diagnosis] = CAST(Len([t1].[Diagnosis]) + @i AS NVarChar(11))
+WHEN NOT MATCHED THEN
+	INSERT
+	(
+		[PersonID],
+		[Diagnosis]
+	)
+	VALUES
+	(
+		@id,
+		N'abc'
+	);
+
+BeforeExecute
+-- SqlServer.2022.MS SqlServer.2022 (asynchronously)
+DECLARE @id2 Int -- Int32
+SET     @id2 = 5
+DECLARE @i Int -- Int32
+SET     @i = 2
+DECLARE @id Int -- Int32
+SET     @id = 5
+
+MERGE INTO [Patient] [t1]
+USING (SELECT @id2 AS [PersonID]) [s] ON
+(
+	[t1].[PersonID] = [s].[PersonID]
+)
+WHEN MATCHED THEN
+	UPDATE 
+	SET
+		[Diagnosis] = CAST(Len([t1].[Diagnosis]) + @i AS NVarChar(11))
+WHEN NOT MATCHED THEN
+	INSERT
+	(
+		[PersonID],
+		[Diagnosis]
+	)
+	VALUES
+	(
+		@id,
+		N'abc'
+	);
+
+BeforeExecute
+-- SqlServer.2022.MS SqlServer.2022 (asynchronously)
+DECLARE @id Int -- Int32
+SET     @id = 5
+
+SELECT TOP (2)
+	[p].[PersonID],
+	[p].[Diagnosis]
+FROM
+	[Patient] [p]
+WHERE
+	[p].[PersonID] = @id
+

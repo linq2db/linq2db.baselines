@@ -30,18 +30,3 @@ FROM
 WHERE
 	"row1_2"."Field1" LIKE ? ESCAPE '~'
 
-BeforeExecute
--- SapHana.Odbc SapHanaOdbc (asynchronously)
-
-DROP TABLE "table3"
-
-BeforeExecute
--- SapHana.Odbc SapHanaOdbc (asynchronously)
-
-DROP TABLE "table2"
-
-BeforeExecute
--- SapHana.Odbc SapHanaOdbc (asynchronously)
-
-DROP TABLE "table1"
-

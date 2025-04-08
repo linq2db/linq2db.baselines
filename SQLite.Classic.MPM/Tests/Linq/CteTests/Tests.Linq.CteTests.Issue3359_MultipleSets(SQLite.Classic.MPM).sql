@@ -1,6 +1,11 @@
 ﻿BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
+select sqlite_version();
+
+BeforeExecute
+-- SQLite.Classic.MPM SQLite.Classic SQLite
+
 WITH [cte] ([FirstName], [LastName])
 AS
 (

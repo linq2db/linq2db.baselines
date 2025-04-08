@@ -30,18 +30,3 @@ FROM
 WHERE
 	[row1_2].[Field1] LIKE @search_2 ESCAPE N'~'
 
-BeforeExecute
--- SqlServer.2016.MS SqlServer.2016 (asynchronously)
-
-DROP TABLE IF EXISTS [table3]
-
-BeforeExecute
--- SqlServer.2016.MS SqlServer.2016 (asynchronously)
-
-DROP TABLE IF EXISTS [table2]
-
-BeforeExecute
--- SqlServer.2016.MS SqlServer.2016 (asynchronously)
-
-DROP TABLE IF EXISTS [table1]
-

@@ -25,6 +25,21 @@ RETURNING
 	"PersonID"
 
 BeforeExecute
+-- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL (asynchronously)
+
+SELECT
+	p."FirstName",
+	p."PersonID",
+	p."LastName",
+	p."MiddleName",
+	p."Gender"
+FROM
+	"Person" p
+WHERE
+	p."FirstName" = 'John' AND p."LastName" = 'Shepard'
+LIMIT 2
+
+BeforeExecute
 -- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
 
 DELETE FROM

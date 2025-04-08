@@ -23,9 +23,3 @@ FROM
 WHERE
 	[s].[Id] > 3
 
-BeforeExecute
--- SqlServer.2008.MS SqlServer.2008 (asynchronously)
-
-IF (OBJECT_ID(N'[TableWithData]', N'U') IS NOT NULL)
-	DROP TABLE [TableWithData]
-
