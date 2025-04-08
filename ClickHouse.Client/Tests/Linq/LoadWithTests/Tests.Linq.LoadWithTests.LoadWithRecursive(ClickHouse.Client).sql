@@ -6,7 +6,10 @@ SELECT
 	m_2.Id_1,
 	d_1.Id,
 	d_1.Value,
-	d_1.ParentId
+	d_1.ParentId,
+	a_ParentSubItem.Id,
+	a_ParentSubItem.Value,
+	a_ParentSubItem.ParentId
 FROM
 	(
 		SELECT DISTINCT
@@ -25,6 +28,7 @@ FROM
 				INNER JOIN SubItem1 d ON t1.Id = d.ParentId
 	) m_2
 		INNER JOIN SubItem1_Sub d_1 ON m_2.Id = d_1.ParentId
+		LEFT JOIN SubItem1 a_ParentSubItem ON d_1.ParentId = a_ParentSubItem.Id
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
@@ -86,7 +90,10 @@ SELECT
 	m_2.Id_1,
 	d_1.Id,
 	d_1.Value,
-	d_1.ParentId
+	d_1.ParentId,
+	a_ParentSubItem.Id,
+	a_ParentSubItem.Value,
+	a_ParentSubItem.ParentId
 FROM
 	(
 		SELECT DISTINCT
@@ -105,6 +112,7 @@ FROM
 				INNER JOIN SubItem1 d ON t1.Id = d.ParentId
 	) m_2
 		INNER JOIN SubItem1_Sub d_1 ON m_2.Id = d_1.ParentId
+		LEFT JOIN SubItem1 a_ParentSubItem ON d_1.ParentId = a_ParentSubItem.Id
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse

@@ -103,7 +103,7 @@ SELECT
 	[m_2].[cond],
 	[m_2].[Id],
 	[d_1].[Id],
-	[d_1].[Value],
+	[d_1].[Value_1],
 	[d_1].[ParentId]
 FROM
 	(
@@ -122,7 +122,21 @@ FROM
 				INNER JOIN [SubItem1] [d] ON [t1].[Id] = [d].[ParentId]
 				LEFT JOIN [MainItem] [a_Parent] ON [d].[ParentId] = [a_Parent].[Id]
 	) [m_2]
-		INNER JOIN [SubItem2] [d_1] ON [m_2].[cond] = [d_1].[ParentId] OR [m_2].[cond] IS NULL AND [d_1].[ParentId] IS NULL
+		CROSS APPLY (
+			SELECT TOP (2)
+				[e].[Value] as [Value_1],
+				[e].[Id],
+				[e].[ParentId]
+			FROM
+				[SubItem2] [e]
+			WHERE
+				([m_2].[cond] = [e].[ParentId] OR [m_2].[cond] IS NULL AND [e].[ParentId] IS NULL) AND
+				[e].[ParentId] % 2 = 0
+			ORDER BY
+				[e].[Id]
+		) [d_1]
+WHERE
+	[d_1].[Value_1] LIKE N'Sub2~_%' ESCAPE N'~'
 
 BeforeExecute
 -- SqlServer.Contained SqlServer.2019
@@ -170,7 +184,7 @@ SELECT
 	[m_2].[cond],
 	[m_2].[Id],
 	[d_1].[Id],
-	[d_1].[Value],
+	[d_1].[Value_1],
 	[d_1].[ParentId]
 FROM
 	(
@@ -189,7 +203,21 @@ FROM
 				INNER JOIN [SubItem1] [d] ON [t1].[Id] = [d].[ParentId]
 				LEFT JOIN [MainItem] [a_Parent] ON [d].[ParentId] = [a_Parent].[Id]
 	) [m_2]
-		INNER JOIN [SubItem2] [d_1] ON [m_2].[cond] = [d_1].[ParentId] OR [m_2].[cond] IS NULL AND [d_1].[ParentId] IS NULL
+		CROSS APPLY (
+			SELECT TOP (2)
+				[e].[Value] as [Value_1],
+				[e].[Id],
+				[e].[ParentId]
+			FROM
+				[SubItem2] [e]
+			WHERE
+				([m_2].[cond] = [e].[ParentId] OR [m_2].[cond] IS NULL AND [e].[ParentId] IS NULL) AND
+				[e].[ParentId] % 2 = 0
+			ORDER BY
+				[e].[Id]
+		) [d_1]
+WHERE
+	[d_1].[Value_1] LIKE N'Sub2~_%' ESCAPE N'~'
 
 BeforeExecute
 -- SqlServer.Contained SqlServer.2019
