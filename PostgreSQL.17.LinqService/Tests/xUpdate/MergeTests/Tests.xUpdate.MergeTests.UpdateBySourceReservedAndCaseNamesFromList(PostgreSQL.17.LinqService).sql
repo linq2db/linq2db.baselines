@@ -236,7 +236,7 @@ BeforeExecute
 
 MERGE INTO "TestMerge1" "Target"
 USING (VALUES
-	(3), (4), (6), (5)
+	(4), (3), (5), (6)
 ) "Source"
 (
 	"source_From"
