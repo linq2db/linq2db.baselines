@@ -52,27 +52,27 @@ INSERT INTO [tempdb]..[#TestEmployees]
 	[PhotoPath]
 )
 SELECT
-	[e].[IsDeleted],
-	[e].[EmployeeID],
-	[e].[LastName],
-	[e].[FirstName],
-	[e].[Title],
-	[e].[TitleOfCourtesy],
-	[e].[BirthDate],
-	[e].[HireDate],
-	[e].[Address],
-	[e].[City],
-	[e].[Region],
-	[e].[PostalCode],
-	[e].[Country],
-	[e].[HomePhone],
-	[e].[Extension],
-	[e].[Photo],
-	[e].[Notes],
-	[e].[ReportsTo],
-	[e].[PhotoPath]
+	[t1].[IsDeleted],
+	[t1].[EmployeeID],
+	[t1].[LastName],
+	[t1].[FirstName],
+	[t1].[Title],
+	[t1].[TitleOfCourtesy],
+	[t1].[BirthDate],
+	[t1].[HireDate],
+	[t1].[Address],
+	[t1].[City],
+	[t1].[Region],
+	[t1].[PostalCode],
+	[t1].[Country],
+	[t1].[HomePhone],
+	[t1].[Extension],
+	[t1].[Photo],
+	[t1].[Notes],
+	[t1].[ReportsTo],
+	[t1].[PhotoPath]
 FROM
-	[Employees] [e]
+	[Employees] [t1]
 
 
 
