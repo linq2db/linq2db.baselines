@@ -6,12 +6,12 @@ SELECT
 FROM
 	(
 		SELECT
-			toString(x.Value1) as StrValue
+			lowerUTF8(toString(x.Value1)) as StrValue
 		FROM
 			Parent x
 		UNION ALL
 		SELECT
-			toString(a_Parent1.Value1) as StrValue
+			lowerUTF8(toString(a_Parent1.Value1)) as StrValue
 		FROM
 			Parent t1
 				INNER JOIN Child c_1 ON t1.ParentID = c_1.ParentID
