@@ -6,12 +6,12 @@ SELECT
 FROM
 	(
 		SELECT
-			CAST([x].[Value1] AS NVarChar(11)) as [StrValue]
+			Lower(substr(hex([x].[Value1]), 7, 2) || substr(hex([x].[Value1]), 5, 2) || substr(hex([x].[Value1]), 3, 2) || substr(hex([x].[Value1]), 1, 2) || '-' || substr(hex([x].[Value1]), 11, 2) || substr(hex([x].[Value1]), 9, 2) || '-' || substr(hex([x].[Value1]), 15, 2) || substr(hex([x].[Value1]), 13, 2) || '-' || substr(hex([x].[Value1]), 17, 4) || '-' || substr(hex([x].[Value1]), 21, 12)) as [StrValue]
 		FROM
 			[Parent] [x]
 		UNION ALL
 		SELECT
-			CAST([a_Parent1].[Value1] AS NVarChar(11)) as [StrValue]
+			Lower(substr(hex([a_Parent1].[Value1]), 7, 2) || substr(hex([a_Parent1].[Value1]), 5, 2) || substr(hex([a_Parent1].[Value1]), 3, 2) || substr(hex([a_Parent1].[Value1]), 1, 2) || '-' || substr(hex([a_Parent1].[Value1]), 11, 2) || substr(hex([a_Parent1].[Value1]), 9, 2) || '-' || substr(hex([a_Parent1].[Value1]), 15, 2) || substr(hex([a_Parent1].[Value1]), 13, 2) || '-' || substr(hex([a_Parent1].[Value1]), 17, 4) || '-' || substr(hex([a_Parent1].[Value1]), 21, 12)) as [StrValue]
 		FROM
 			[Parent] [t1]
 				INNER JOIN [Child] [c_1] ON [t1].[ParentID] = [c_1].[ParentID]
