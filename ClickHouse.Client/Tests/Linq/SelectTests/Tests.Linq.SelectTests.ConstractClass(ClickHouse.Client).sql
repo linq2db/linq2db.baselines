@@ -3,7 +3,7 @@
 
 SELECT
 	f.ParentID,
-	f.Value1
+	lowerUTF8(toString(f.Value1))
 FROM
 	Parent f
 
