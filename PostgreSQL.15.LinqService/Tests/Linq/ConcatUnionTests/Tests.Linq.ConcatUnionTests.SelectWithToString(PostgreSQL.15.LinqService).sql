@@ -6,12 +6,12 @@ SELECT
 FROM
 	(
 		SELECT
-			x."Value1"::text as "StrValue"
+			x."Value1"::VarChar(11) as "StrValue"
 		FROM
 			"Parent" x
 		UNION ALL
 		SELECT
-			"a_Parent1"."Value1"::text as "StrValue"
+			"a_Parent1"."Value1"::VarChar(11) as "StrValue"
 		FROM
 			"Parent" t1
 				INNER JOIN "Child" c_1 ON t1."ParentID" = c_1."ParentID"
