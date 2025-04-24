@@ -258,6 +258,6 @@ VALUES
 )
 RETURNING
 	"Source"."source_Field1",
-	"Source"."source_Field1"::text,
+	"Source"."source_Field1"::VarChar(11),
 	"Target"."Id"::text
 
