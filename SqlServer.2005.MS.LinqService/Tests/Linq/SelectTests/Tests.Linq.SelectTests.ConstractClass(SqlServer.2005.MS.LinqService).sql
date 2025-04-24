@@ -3,7 +3,7 @@
 
 SELECT
 	[f].[ParentID],
-	[f].[Value1]
+	Lower(CAST([f].[Value1] AS Char(11)))
 FROM
 	[Parent] [f]
 
