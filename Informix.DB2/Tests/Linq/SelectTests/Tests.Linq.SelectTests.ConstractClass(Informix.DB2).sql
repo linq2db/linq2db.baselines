@@ -3,7 +3,7 @@
 
 SELECT
 	f.ParentID,
-	f.Value1
+	Lower(To_Char(f.Value1))
 FROM
 	Parent f
 
