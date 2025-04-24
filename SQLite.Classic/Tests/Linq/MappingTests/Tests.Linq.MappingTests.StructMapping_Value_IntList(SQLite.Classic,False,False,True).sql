@@ -18,5 +18,5 @@ WHERE
 	CAST([i].[Value1] AS INTEGER) = @cond_1 OR
 	CAST([i].[Value1] AS INTEGER) = @cond_2 OR
 	CAST([i].[Value1] AS INTEGER) = @cond_3 OR
-	CAST([i].[Value1] AS INTEGER) IS NULL AND @cond_3 IS NULL
+	[i].[Value1] IS NULL AND @cond_3 IS NULL
 
