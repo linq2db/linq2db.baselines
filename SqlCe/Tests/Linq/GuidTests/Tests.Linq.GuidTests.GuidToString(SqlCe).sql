@@ -2,7 +2,7 @@
 -- SqlCe
 
 SELECT TOP (1)
-	[t].[Id]
+	Lower(CAST([t].[Id] AS NChar(36))) as [c1]
 FROM
 	[TableWithGuid] [t]
 
@@ -15,7 +15,7 @@ SELECT
 FROM
 	[TableWithGuid] [t]
 WHERE
-	CAST([t].[Id] AS NVarChar(36)) LIKE '%63d-0f%' ESCAPE '~'
+	Lower(CAST([t].[Id] AS NChar(36))) LIKE '%63d-0f%' ESCAPE '~'
 
 BeforeExecute
 -- SqlCe
@@ -26,7 +26,7 @@ SELECT
 FROM
 	[TableWithGuid] [t]
 WHERE
-	CAST([t].[Id] AS NVarChar(36)) LIKE 'bc7b6%' ESCAPE '~'
+	Lower(CAST([t].[Id] AS NChar(36))) LIKE 'bc7b6%' ESCAPE '~'
 
 BeforeExecute
 -- SqlCe
@@ -37,7 +37,7 @@ SELECT
 FROM
 	[TableWithGuid] [t]
 WHERE
-	CAST([t].[Id] AS NVarChar(36)) LIKE '%8f4-53%' ESCAPE '~'
+	Lower(CAST([t].[Id] AS NChar(36))) LIKE '%8f4-53%' ESCAPE '~'
 
 BeforeExecute
 -- SqlCe
@@ -48,5 +48,5 @@ SELECT
 FROM
 	[TableWithGuid] [t]
 WHERE
-	Lower(CAST([t].[Id] AS NVarChar(36))) LIKE '8f4-53%' ESCAPE '~'
+	Lower(CAST([t].[Id] AS NChar(36))) LIKE '8f4-53%' ESCAPE '~'
 
