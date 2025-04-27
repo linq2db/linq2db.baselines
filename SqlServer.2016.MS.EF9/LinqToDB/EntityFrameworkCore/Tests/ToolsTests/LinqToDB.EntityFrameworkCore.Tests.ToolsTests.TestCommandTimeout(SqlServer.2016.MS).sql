@@ -14,7 +14,7 @@
 					END
 
 
---  SqlServer.2016
+-- SqlServer.2016
 DECLARE @commandExecutionTime Int -- Int32
 SET     @commandExecutionTime = 5
 
