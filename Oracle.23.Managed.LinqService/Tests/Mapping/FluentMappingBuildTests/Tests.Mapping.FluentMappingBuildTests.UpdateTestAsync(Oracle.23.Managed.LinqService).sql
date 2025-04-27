@@ -2,25 +2,12 @@
 -- Oracle.23.Managed Oracle.Managed Oracle12 (asynchronously)
 
 BEGIN
-	EXECUTE IMMEDIATE 'DROP TABLE "FluentTemp"';
-EXCEPTION
-	WHEN OTHERS THEN
-		IF SQLCODE != -942 THEN
-			RAISE;
-		END IF;
-END;
-
-BeforeExecute
--- Oracle.23.Managed Oracle.Managed Oracle12
-
-BEGIN
 	EXECUTE IMMEDIATE '
 		CREATE TABLE "FluentTemp"
 		(
-			ID     Int         NOT NULL,
-			"Name" VarChar(20)     NULL,
-
-			CONSTRAINT "PK_FluentTemp" PRIMARY KEY (ID)
+			ID         Int         NOT NULL,
+			"Value"    VarChar(20)     NULL,
+			"LastName" VarChar(20)     NULL
 		)
 	';
 EXCEPTION
@@ -31,47 +18,41 @@ EXCEPTION
 END;
 
 BeforeExecute
--- Oracle.23.Managed Oracle.Managed Oracle12
+-- Oracle.23.Managed Oracle.Managed Oracle12 (asynchronously)
 DECLARE @ID Int32
 SET     @ID = 1
 DECLARE @Name Varchar2(4) -- String
 SET     @Name = 'John'
+DECLARE @LastName Varchar2(3) -- String
+SET     @LastName = 'Doe'
 
 INSERT INTO "FluentTemp"
 (
 	ID,
-	"Name"
+	"Value",
+	"LastName"
 )
 VALUES
 (
 	:ID,
-	:Name
+	:Name,
+	:LastName
 )
 
 BeforeExecute
 -- Oracle.23.Managed Oracle.Managed Oracle12 (asynchronously)
+DECLARE @Name Varchar2(7) -- String
+SET     @Name = 'John II'
+DECLARE @LastName Varchar2(4) -- String
+SET     @LastName = 'Dory'
 
-MERGE INTO "FluentTemp" Target
-USING (
-	SELECT 1 AS "source_ID", 'John II' AS "source_Name" FROM sys.dual) "Source"
-ON (Target.ID = "Source"."source_ID")
-
-WHEN MATCHED THEN
 UPDATE
+	"FluentTemp" t
 SET
-	"Name" = "Source"."source_Name"
-
-WHEN NOT MATCHED THEN
-INSERT
-(
-	ID,
-	"Name"
-)
-VALUES
-(
-	"Source"."source_ID",
-	"Source"."source_Name"
-)
+	"Value" = :Name,
+	"LastName" = :LastName
+WHERE
+	t.ID = 1
 
 BeforeExecute
 -- Oracle.23.Managed Oracle.Managed Oracle12 (asynchronously)
