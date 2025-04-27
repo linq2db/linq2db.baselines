@@ -30,7 +30,7 @@ ORDER BY "o"."OrderID", "t0"."EmployeeID", "t0"."TerritoryID", "t2"."OrderID", "
 BeginTransactionAsync(Serializable)
 
 
---  SQLite.MS SQLite (asynchronously)
+-- SQLite.MS SQLite (asynchronously)
 
 SELECT
 	[m_1].[EmployeeId],
@@ -49,7 +49,7 @@ FROM
 
 
 
---  SQLite.MS SQLite (asynchronously)
+-- SQLite.MS SQLite (asynchronously)
 
 SELECT
 	[m_1].[OrderId],
@@ -85,7 +85,7 @@ FROM
 DisposeTransactionAsync
 
 
---  SQLite.MS SQLite (asynchronously)
+-- SQLite.MS SQLite (asynchronously)
 
 SELECT
 	[e].[IsDeleted],
