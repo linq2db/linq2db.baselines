@@ -1,4 +1,4 @@
-﻿--  MySql.5.7.MySqlConnector MySql57
+﻿-- MySql.5.7.MySqlConnector MySql57
 DECLARE @value VarChar(8) -- String
 SET     @value = 'anything'
 
