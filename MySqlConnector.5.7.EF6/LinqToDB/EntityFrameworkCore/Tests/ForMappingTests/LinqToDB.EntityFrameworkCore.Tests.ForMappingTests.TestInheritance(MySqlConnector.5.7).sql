@@ -32,7 +32,7 @@ FROM `WithInheritance`
 WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
 
 
---  MySql.5.7.MySqlConnector MySql57
+-- MySql.5.7.MySqlConnector MySql57
 
 SELECT
 	`t1`.`Discriminator`,

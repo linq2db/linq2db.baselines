@@ -3,7 +3,7 @@ FROM `Products` AS `p`
 INNER JOIN `Order Details` AS `o` ON `p`.`ProductID` = `o`.`ProductID`
 
 
---  MySql.5.7.MySqlConnector MySql57
+-- MySql.5.7.MySqlConnector MySql57
 
 SELECT
 	`p`.`IsDeleted`,
@@ -44,7 +44,7 @@ INNER JOIN (
 WHERE (@__ef_filter__p_0 OR NOT (`p`.`IsDeleted`)) OR NOT (`p`.`IsDeleted`)
 
 
---  MySql.5.7.MySqlConnector MySql57
+-- MySql.5.7.MySqlConnector MySql57
 
 SELECT
 	`p`.`IsDeleted`,
