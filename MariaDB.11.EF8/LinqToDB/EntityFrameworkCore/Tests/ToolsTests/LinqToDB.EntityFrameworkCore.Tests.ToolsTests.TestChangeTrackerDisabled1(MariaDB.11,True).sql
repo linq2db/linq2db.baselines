@@ -1,7 +1,7 @@
 ﻿BeginTransactionAsync(RepeatableRead)
 
 
---  MariaDB.10.MySqlConnector MySql (asynchronously)
+-- MariaDB.10.MySqlConnector MySql (asynchronously)
 
 SELECT
 	`m_1`.`ProductId`,
@@ -38,7 +38,7 @@ WHERE
 
 
 
---  MariaDB.10.MySqlConnector MySql (asynchronously)
+-- MariaDB.10.MySqlConnector MySql (asynchronously)
 
 SELECT
 	`m_1`.`OrderID`,
@@ -73,7 +73,7 @@ WHERE
 DisposeTransactionAsync
 
 
---  MariaDB.10.MySqlConnector MySql (asynchronously)
+-- MariaDB.10.MySqlConnector MySql (asynchronously)
 
 SELECT
 	`e`.`IsDeleted`,
