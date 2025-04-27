@@ -1,5 +1,5 @@
 ﻿BeforeExecute
---  SqlServer.2019
+-- SqlServer.2019
 
 SELECT
 	[t1].[Decimal1],
