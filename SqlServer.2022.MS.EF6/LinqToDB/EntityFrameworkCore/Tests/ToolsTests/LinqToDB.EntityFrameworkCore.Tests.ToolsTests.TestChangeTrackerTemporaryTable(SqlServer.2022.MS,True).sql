@@ -1,4 +1,4 @@
-﻿--  SqlServer.2022 (asynchronously)
+﻿-- SqlServer.2022 (asynchronously)
 
 CREATE TABLE [tempdb]..[#Orders]
 (
@@ -23,7 +23,7 @@ CREATE TABLE [tempdb]..[#Orders]
 
 
 
---  SqlServer.2022 (asynchronously)
+-- SqlServer.2022 (asynchronously)
 
 INSERT INTO [tempdb]..[#Orders]
 (
@@ -66,7 +66,7 @@ WHERE
 
 
 
---  SqlServer.2022
+-- SqlServer.2022
 DECLARE @take Int -- Int32
 SET     @take = 2
 
@@ -93,7 +93,7 @@ WHERE
 
 
 
---  SqlServer.2022
+-- SqlServer.2022
 
 DROP TABLE IF EXISTS [tempdb]..[#Orders]
 
