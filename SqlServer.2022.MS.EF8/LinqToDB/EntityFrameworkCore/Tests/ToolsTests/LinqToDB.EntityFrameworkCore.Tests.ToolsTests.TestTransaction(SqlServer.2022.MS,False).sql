@@ -6,7 +6,7 @@ FROM [Products] AS [p]
 WHERE (@__ef_filter__p_0 = CAST(1 AS bit) OR [p].[IsDeleted] = CAST(0 AS bit) OR [p].[IsDeleted] = CAST(0 AS bit)) AND [p].[ProductName] LIKE N'U%'
 
 
---  SqlServer.2022 (asynchronously)
+-- SqlServer.2022 (asynchronously)
 
 SELECT
 	MAX([e].[QuantityPerUnit])
@@ -17,7 +17,7 @@ WHERE
 
 
 
---  SqlServer.2022
+-- SqlServer.2022
 
 DELETE [e]
 FROM
