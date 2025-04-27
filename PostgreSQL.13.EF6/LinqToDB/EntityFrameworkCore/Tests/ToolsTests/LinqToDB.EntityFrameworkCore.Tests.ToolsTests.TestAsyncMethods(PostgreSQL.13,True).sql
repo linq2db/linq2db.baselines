@@ -23,7 +23,7 @@ SELECT EXISTS (
     WHERE ((@__ef_filter__p_0 OR NOT (p."IsDeleted")) OR NOT (p."IsDeleted")) AND (strpos(p."ProductName", 'a') > 0))
 
 
---  PostgreSQL.9.5 PostgreSQL (asynchronously)
+-- PostgreSQL.9.5 PostgreSQL (asynchronously)
 
 SELECT
 	e."IsDeleted",
@@ -44,7 +44,7 @@ WHERE
 
 
 
---  PostgreSQL.9.5 PostgreSQL (asynchronously)
+-- PostgreSQL.9.5 PostgreSQL (asynchronously)
 
 SELECT
 	e."IsDeleted",
@@ -65,7 +65,7 @@ WHERE
 
 
 
---  PostgreSQL.9.5 PostgreSQL (asynchronously)
+-- PostgreSQL.9.5 PostgreSQL (asynchronously)
 
 SELECT
 	e."IsDeleted",
@@ -86,7 +86,7 @@ WHERE
 
 
 
---  PostgreSQL.9.5 PostgreSQL (asynchronously)
+-- PostgreSQL.9.5 PostgreSQL (asynchronously)
 
 SELECT
 	EXISTS(
