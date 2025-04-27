@@ -1,4 +1,4 @@
-﻿--  SqlServer.2022
+﻿-- SqlServer.2022
 
 CREATE TABLE [tempdb]..[#WithIdentity]
 (
@@ -10,7 +10,7 @@ CREATE TABLE [tempdb]..[#WithIdentity]
 
 
 
---  SqlServer.2022
+-- SqlServer.2022
 
 CREATE TABLE [tempdb]..[#NoIdentity]
 (
@@ -22,13 +22,13 @@ CREATE TABLE [tempdb]..[#NoIdentity]
 
 
 
---  SqlServer.2022
+-- SqlServer.2022
 
 DROP TABLE IF EXISTS [tempdb]..[#NoIdentity]
 
 
 
---  SqlServer.2022
+-- SqlServer.2022
 
 DROP TABLE IF EXISTS [tempdb]..[#WithIdentity]
 
