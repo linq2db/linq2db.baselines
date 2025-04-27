@@ -11,7 +11,7 @@ ORDER BY e.id, s.entity_id, s.item_id
 BeginTransaction(RepeatableRead)
 
 
---  PostgreSQL.15 PostgreSQL
+-- PostgreSQL.15 PostgreSQL
 
 SELECT
 	m_1.id,
@@ -29,7 +29,7 @@ FROM
 DisposeTransaction
 
 
---  PostgreSQL.15 PostgreSQL
+-- PostgreSQL.15 PostgreSQL
 
 SELECT
 	t1.id,
