@@ -30,7 +30,7 @@ ORDER BY o."OrderID", e0."EmployeeID", e2."EmployeeID", e2."TerritoryID", s."Ord
 BeginTransactionAsync(RepeatableRead)
 
 
---  PostgreSQL.9.5 PostgreSQL (asynchronously)
+-- PostgreSQL.9.5 PostgreSQL (asynchronously)
 
 SELECT
 	m_1."EmployeeId",
@@ -49,7 +49,7 @@ FROM
 
 
 
---  PostgreSQL.9.5 PostgreSQL (asynchronously)
+-- PostgreSQL.9.5 PostgreSQL (asynchronously)
 
 SELECT
 	m_1."OrderId",
@@ -85,7 +85,7 @@ FROM
 DisposeTransactionAsync
 
 
---  PostgreSQL.9.5 PostgreSQL (asynchronously)
+-- PostgreSQL.9.5 PostgreSQL (asynchronously)
 
 SELECT
 	e."IsDeleted",

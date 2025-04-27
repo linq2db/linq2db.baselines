@@ -10,7 +10,7 @@ ORDER BY
 	t1."ChildID"
 
 BeforeExecute
---  PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.9.5 PostgreSQL
 
 SELECT
 	t1."ParentID",
