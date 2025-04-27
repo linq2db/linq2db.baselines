@@ -1,4 +1,9 @@
 ﻿BeforeExecute
+-- SqlServer.2022.MS SqlServer.2022 (asynchronously)
+
+DROP TABLE IF EXISTS [FluentTemp]
+
+BeforeExecute
 -- SqlServer.2022.MS SqlServer.2022
 
 IF (OBJECT_ID(N'[FluentTemp]', N'U') IS NULL)
@@ -27,4 +32,40 @@ VALUES
 	@ID,
 	@Name
 )
+
+BeforeExecute
+-- SqlServer.2022.MS SqlServer.2022 (asynchronously)
+
+MERGE INTO [FluentTemp] [Target]
+USING (VALUES
+	(1,N'John II')
+) [Source]
+(
+	[source_ID],
+	[source_Name]
+)
+ON ([Target].[ID] = [Source].[source_ID])
+
+WHEN MATCHED THEN
+UPDATE
+SET
+	[Name] = [Source].[source_Name]
+
+WHEN NOT MATCHED THEN
+INSERT
+(
+	[ID],
+	[Name]
+)
+VALUES
+(
+	[Source].[source_ID],
+	[Source].[source_Name]
+)
+;
+
+BeforeExecute
+-- SqlServer.2022.MS SqlServer.2022 (asynchronously)
+
+DROP TABLE IF EXISTS [FluentTemp]
 
