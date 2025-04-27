@@ -1,5 +1,5 @@
 ﻿BeforeExecute
---  Access.Jet.OleDb AccessOleDb
+-- Access.Jet.OleDb AccessOleDb
 
 CREATE TABLE [TestDatabase].[CreateTableTest]
 (
@@ -9,7 +9,7 @@ CREATE TABLE [TestDatabase].[CreateTableTest]
 )
 
 BeforeExecute
---  Access.Jet.OleDb AccessOleDb
+-- Access.Jet.OleDb AccessOleDb
 
 DROP TABLE [TestDatabase].[CreateTableTest]
 
