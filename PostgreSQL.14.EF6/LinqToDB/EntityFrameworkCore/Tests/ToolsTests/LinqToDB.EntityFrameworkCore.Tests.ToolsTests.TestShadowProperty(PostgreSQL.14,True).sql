@@ -6,7 +6,7 @@ FROM "Products" AS p
 WHERE (@__ef_filter__p_0 OR NOT (p."IsDeleted")) OR NOT (p."IsDeleted")
 
 
---  PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.9.5 PostgreSQL
 
 SELECT
 	p."QuantityPerUnit"
