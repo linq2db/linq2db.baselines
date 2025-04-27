@@ -1,4 +1,4 @@
-﻿--  MariaDB.10.MySqlConnector MySql (asynchronously)
+﻿-- MariaDB.10.MySqlConnector MySql (asynchronously)
 DECLARE @test Int32
 SET     @test = 1
 

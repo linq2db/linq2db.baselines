@@ -18,7 +18,7 @@ WHERE (((@__ef_filter__p_0 OR NOT (`p`.`IsDeleted`)) OR NOT (`p`.`IsDeleted`)) A
 ORDER BY `p`.`ProductID`
 
 
---  MariaDB.10.MySqlConnector MySql
+-- MariaDB.10.MySqlConnector MySql
 
 SELECT
 	`e`.`IsDeleted`,
