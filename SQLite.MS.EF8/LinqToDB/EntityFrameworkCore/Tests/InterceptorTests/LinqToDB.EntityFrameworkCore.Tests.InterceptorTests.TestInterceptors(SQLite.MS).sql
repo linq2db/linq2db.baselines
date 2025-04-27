@@ -1,4 +1,4 @@
-﻿--  SQLite.MS SQLite
+﻿-- SQLite.MS SQLite
 DECLARE @take  -- Int32
 SET     @take = 2
 

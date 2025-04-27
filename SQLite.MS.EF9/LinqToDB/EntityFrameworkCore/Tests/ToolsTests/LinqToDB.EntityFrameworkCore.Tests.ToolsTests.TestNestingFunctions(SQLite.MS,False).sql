@@ -18,7 +18,7 @@ WHERE (@__ef_filter__p_0 OR NOT ("p"."IsDeleted") OR NOT ("p"."IsDeleted")) AND 
 ORDER BY "p"."ProductID"
 
 
---  SQLite.MS SQLite
+-- SQLite.MS SQLite
 
 SELECT
 	[e].[IsDeleted],
