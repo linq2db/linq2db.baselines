@@ -1,7 +1,7 @@
 ﻿BeginTransaction(Serializable)
 
 
---  SQLite.MS SQLite
+-- SQLite.MS SQLite
 
 SELECT
 	[m_1].[OrderID],
@@ -35,7 +35,7 @@ WHERE
 DisposeTransaction
 
 
---  SQLite.MS SQLite
+-- SQLite.MS SQLite
 
 SELECT
 	[e].[IsDeleted],

@@ -25,7 +25,7 @@ ORDER BY "o"."OrderID", "t"."OrderID", "t"."ProductID", "t0"."ProductID", "t1"."
 BeginTransaction(Serializable)
 
 
---  SQLite.MS SQLite
+-- SQLite.MS SQLite
 
 SELECT
 	[m_1].[ProductId],
@@ -48,7 +48,7 @@ FROM
 DisposeTransaction
 
 
---  SQLite.MS SQLite
+-- SQLite.MS SQLite
 
 SELECT
 	[a_Product].[ProductID],
