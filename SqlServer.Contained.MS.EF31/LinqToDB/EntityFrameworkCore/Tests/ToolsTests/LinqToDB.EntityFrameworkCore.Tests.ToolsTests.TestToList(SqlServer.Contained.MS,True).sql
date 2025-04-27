@@ -1,7 +1,7 @@
 ﻿BeginTransaction(RepeatableRead)
 
 
---  SqlServer.2019
+-- SqlServer.2019
 
 SELECT
 	[m_1].[OrderID],
@@ -35,7 +35,7 @@ WHERE
 DisposeTransaction
 
 
---  SqlServer.2019
+-- SqlServer.2019
 
 SELECT
 	[e].[IsDeleted],
