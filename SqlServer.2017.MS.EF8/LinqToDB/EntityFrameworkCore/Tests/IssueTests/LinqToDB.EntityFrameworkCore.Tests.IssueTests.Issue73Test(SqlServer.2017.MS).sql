@@ -4,7 +4,7 @@ LEFT JOIN [Issue73Entities] AS [i0] ON [i].[ParentId] = [i0].[Id]
 WHERE [i].[Name] = N'Name1_3'
 
 
---  SqlServer.2017
+-- SqlServer.2017
 
 SELECT
 	[a_Parent].[Name] + N'>' + [x].[Name]

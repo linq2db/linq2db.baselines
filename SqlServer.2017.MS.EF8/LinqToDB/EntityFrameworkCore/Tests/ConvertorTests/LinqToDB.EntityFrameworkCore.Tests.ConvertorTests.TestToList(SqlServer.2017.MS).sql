@@ -1,4 +1,4 @@
-﻿--  SqlServer.2017
+﻿-- SqlServer.2017
 DECLARE @Id BigInt -- Int64
 SET     @Id = 1
 DECLARE @PermanentId UniqueIdentifier -- Guid
@@ -31,7 +31,7 @@ SELECT SCOPE_IDENTITY()
 
 
 
---  SqlServer.2017
+-- SqlServer.2017
 DECLARE @Id BigInt -- Int64
 SET     @Id = 2
 DECLARE @PermanentId UniqueIdentifier -- Guid
@@ -64,7 +64,7 @@ SELECT SCOPE_IDENTITY()
 
 
 
---  SqlServer.2017
+-- SqlServer.2017
 DECLARE @Id BigInt -- Int64
 SET     @Id = 3
 DECLARE @PermanentId UniqueIdentifier -- Guid
@@ -102,7 +102,7 @@ FROM [Subdivisions] AS [s]
 WHERE CAST([s].[Id] AS bigint) = CAST(1 AS bigint)
 
 
---  SqlServer.2017
+-- SqlServer.2017
 
 SELECT
 	[s].[Id],
@@ -117,7 +117,7 @@ WHERE
 
 
 
---  SqlServer.2017
+-- SqlServer.2017
 DECLARE @id BigInt -- Int64
 SET     @id = 1
 
@@ -134,7 +134,7 @@ WHERE
 
 
 
---  SqlServer.2017
+-- SqlServer.2017
 
 SELECT
 	[s].[Id],
@@ -149,7 +149,7 @@ WHERE
 
 
 
---  SqlServer.2017
+-- SqlServer.2017
 
 SELECT
 	[t1].[Id],
