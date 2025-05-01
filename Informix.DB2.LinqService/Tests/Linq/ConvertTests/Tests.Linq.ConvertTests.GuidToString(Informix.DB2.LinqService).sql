@@ -8,5 +8,5 @@ SELECT
 FROM
 	LinqDataTypes t
 WHERE
-	Lower(t.GuidValue::NVarChar(255)) = @guid
+	Lower(To_Char(t.GuidValue)) = @guid
 
