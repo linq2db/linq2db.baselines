@@ -94,6 +94,11 @@ EXEC('SELECT * FROM [TestData].[dbo].[GetParentByID](NULL)')
 BeforeExecute
 -- SqlServer.2022
 
+EXEC('SELECT * FROM [TestData].[dbo].[Issue1294](NULL,NULL)')
+
+BeforeExecute
+-- SqlServer.2022
+
 [TestData].[dbo].[Issue1897]
 
 BeforeExecute
@@ -392,6 +397,11 @@ BeforeExecute
 -- SqlServer.2022
 
 EXEC('SELECT * FROM [TestData].[dbo].[GetParentByID](NULL)')
+
+BeforeExecute
+-- SqlServer.2022
+
+EXEC('SELECT * FROM [TestData].[dbo].[Issue1294](NULL,NULL)')
 
 BeforeExecute
 -- SqlServer.2022
