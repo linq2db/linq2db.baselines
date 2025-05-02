@@ -15,6 +15,8 @@ FROM
 
 BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
+DECLARE @p Int32
+SET     @p = 15
 
 SELECT
 	`e`.`ID`,
@@ -55,7 +57,7 @@ FROM
 					FROM
 						`LinqDataTypes` `t5`
 				) `t6`
-			LIMIT 15
+			LIMIT @p
 		) `p` ON `p`.`ID` = `e`.`ID`
 ORDER BY
 	`e`.`ID`,

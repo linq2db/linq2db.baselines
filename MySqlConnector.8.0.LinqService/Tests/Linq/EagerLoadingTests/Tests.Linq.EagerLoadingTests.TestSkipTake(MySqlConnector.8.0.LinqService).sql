@@ -17,6 +17,10 @@ FROM
 
 BeforeExecute
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
+DECLARE @p Int32
+SET     @p = 1
+DECLARE @p_1 Int32
+SET     @p_1 = 2
 
 SELECT
 	`m_2`.`Id1`,
@@ -41,7 +45,7 @@ FROM
 				`m_2`.`Id1` = `d`.`MasterId`
 			ORDER BY
 				`d`.`DetailId`
-			LIMIT 1, 2
+			LIMIT @p, @p_1
 		) `d_1` ON 1=1
 
 BeforeExecute
