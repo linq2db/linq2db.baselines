@@ -94,6 +94,11 @@ SELECT * FROM [TestDataMS].[dbo].[GetParentByID](NULL)
 BeforeExecute
 -- SqlServer.2016.MS SqlServer.2016
 
+SELECT * FROM [TestDataMS].[dbo].[Issue1294](NULL,NULL)
+
+BeforeExecute
+-- SqlServer.2016.MS SqlServer.2016
+
 [TestDataMS].[dbo].[Issue1897]
 
 BeforeExecute
@@ -392,6 +397,11 @@ BeforeExecute
 -- SqlServer.2016.MS SqlServer.2016
 
 SELECT * FROM [TestDataMS].[dbo].[GetParentByID](NULL)
+
+BeforeExecute
+-- SqlServer.2016.MS SqlServer.2016
+
+SELECT * FROM [TestDataMS].[dbo].[Issue1294](NULL,NULL)
 
 BeforeExecute
 -- SqlServer.2016.MS SqlServer.2016
