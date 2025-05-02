@@ -17,6 +17,8 @@ BeforeExecute
 -- PostgreSQL.15 PostgreSQL
 DECLARE @take Integer -- Int32
 SET     @take = 15
+DECLARE @p Integer -- Int32
+SET     @p = 15
 
 SELECT
 	e."ID",
@@ -57,7 +59,7 @@ FROM
 					FROM
 						"LinqDataTypes" t5
 				) t6
-			LIMIT :take
+			LIMIT :p
 		) p ON p."ID" = e."ID"
 ORDER BY
 	e."ID",

@@ -19,6 +19,10 @@ FROM
 
 BeforeExecute
 -- PostgreSQL.15 PostgreSQL
+DECLARE @p Integer -- Int32
+SET     @p = 2
+DECLARE @p_1 Integer -- Int32
+SET     @p_1 = 1
 
 SELECT
 	m_2."Id1",
@@ -43,7 +47,7 @@ FROM
 				m_2."Id1" = d."MasterId"
 			ORDER BY
 				d."DetailId"
-			LIMIT 2 OFFSET 1 
+			LIMIT :p OFFSET :p_1 
 		) d_1 ON 1=1
 
 BeforeExecute
