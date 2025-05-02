@@ -2,6 +2,8 @@
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 DECLARE @take Integer -- Int32
 SET     @take = 1
+DECLARE @p Integer -- Int32
+SET     @p = 1
 
 SELECT
 	t2."FirstName",
@@ -42,6 +44,6 @@ FROM
 			"Person" t3
 		ORDER BY
 			t3."LastName"
-		LIMIT :take
+		LIMIT :p
 	) t4
 
