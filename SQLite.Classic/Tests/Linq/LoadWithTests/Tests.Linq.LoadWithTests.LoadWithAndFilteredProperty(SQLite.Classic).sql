@@ -2,6 +2,8 @@
 BeginTransaction(Serializable)
 BeforeExecute
 -- SQLite.Classic SQLite
+DECLARE @p  -- Int32
+SET     @p = 2
 
 SELECT
 	[m_2].[Id],
@@ -27,7 +29,7 @@ FROM
 				[SubItem1] [d]
 			WHERE
 				[d].[ParentId] % 2 = 0
-		) [d_1] ON [m_2].[Id] = [d_1].[ParentId] AND [d_1].[rn] <= 2
+		) [d_1] ON [m_2].[Id] = [d_1].[ParentId] AND [d_1].[rn] <= @p
 
 BeforeExecute
 DisposeTransaction
@@ -48,6 +50,8 @@ BeforeExecute
 BeginTransaction(Serializable)
 BeforeExecute
 -- SQLite.Classic SQLite
+DECLARE @p  -- Int32
+SET     @p = 2
 
 SELECT
 	[m_2].[Id],
@@ -73,7 +77,7 @@ FROM
 				[SubItem1] [d]
 			WHERE
 				[d].[ParentId] % 2 = 0
-		) [d_1] ON [m_2].[Id] = [d_1].[ParentId] AND [d_1].[rn] <= 2
+		) [d_1] ON [m_2].[Id] = [d_1].[ParentId] AND [d_1].[rn] <= @p
 
 BeforeExecute
 DisposeTransaction
@@ -94,6 +98,8 @@ BeforeExecute
 BeginTransaction(Serializable)
 BeforeExecute
 -- SQLite.Classic SQLite
+DECLARE @p  -- Int32
+SET     @p = 2
 
 SELECT
 	[m_2].[cond],
@@ -128,7 +134,7 @@ FROM
 				[SubItem2] [d_1]
 			WHERE
 				[d_1].[ParentId] % 2 = 0
-		) [d_2] ON ([m_2].[cond] = [d_2].[ParentId] OR [m_2].[cond] IS NULL AND [d_2].[ParentId] IS NULL) AND [d_2].[rn] <= 2
+		) [d_2] ON ([m_2].[cond] = [d_2].[ParentId] OR [m_2].[cond] IS NULL AND [d_2].[ParentId] IS NULL) AND [d_2].[rn] <= @p
 
 BeforeExecute
 -- SQLite.Classic SQLite
@@ -171,6 +177,8 @@ BeforeExecute
 BeginTransaction(Serializable)
 BeforeExecute
 -- SQLite.Classic SQLite
+DECLARE @p  -- Int32
+SET     @p = 2
 
 SELECT
 	[m_2].[cond],
@@ -205,7 +213,7 @@ FROM
 				[SubItem2] [d_1]
 			WHERE
 				[d_1].[ParentId] % 2 = 0
-		) [d_2] ON ([m_2].[cond] = [d_2].[ParentId] OR [m_2].[cond] IS NULL AND [d_2].[ParentId] IS NULL) AND [d_2].[rn] <= 2
+		) [d_2] ON ([m_2].[cond] = [d_2].[ParentId] OR [m_2].[cond] IS NULL AND [d_2].[ParentId] IS NULL) AND [d_2].[rn] <= @p
 
 BeforeExecute
 -- SQLite.Classic SQLite

@@ -2,6 +2,8 @@
 BeginTransaction(Serializable)
 BeforeExecute
 -- Northwind.SQLite SQLite.Classic SQLite
+DECLARE @p  -- Int32
+SET     @p = 5
 
 SELECT
 	[m_1].[CustomerID],
@@ -40,7 +42,7 @@ FROM
 				ROW_NUMBER() OVER (PARTITION BY [d].[CustomerID] ORDER BY [d].[OrderDate] DESC) as [rn]
 			FROM
 				[Orders] [d]
-		) [d_1] ON [m_1].[CustomerID] = [d_1].[CustomerID] AND [d_1].[rn] <= 5
+		) [d_1] ON [m_1].[CustomerID] = [d_1].[CustomerID] AND [d_1].[rn] <= @p
 
 BeforeExecute
 DisposeTransaction

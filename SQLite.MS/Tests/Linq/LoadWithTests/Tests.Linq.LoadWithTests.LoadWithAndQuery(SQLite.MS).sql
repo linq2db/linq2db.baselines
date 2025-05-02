@@ -38,6 +38,8 @@ BeforeExecute
 BeginTransaction(Serializable)
 BeforeExecute
 -- SQLite.MS SQLite
+DECLARE @p  -- Int32
+SET     @p = 2
 
 SELECT
 	[m_2].[Id],
@@ -71,7 +73,7 @@ FROM
 				[SubItem1_Sub] [d_1]
 			WHERE
 				[d_1].[Id] = 1
-		) [d_2] ON [m_2].[Id] = [d_2].[ParentId] AND [d_2].[rn] <= 2
+		) [d_2] ON [m_2].[Id] = [d_2].[ParentId] AND [d_2].[rn] <= @p
 
 BeforeExecute
 -- SQLite.MS SQLite

@@ -2,8 +2,8 @@
 BeginTransaction(Serializable)
 BeforeExecute
 -- SQLite.MS SQLite
-DECLARE @take  -- Int32
-SET     @take = 20
+DECLARE @p  -- Int32
+SET     @p = 20
 
 SELECT
 	[m_1].[DetailId],
@@ -20,7 +20,7 @@ FROM
 					*
 				FROM
 					[MasterClass] [t1]
-				LIMIT @take
+				LIMIT @p
 			) [t2]
 				CROSS JOIN [DetailClass] [d]
 	) [m_1]
@@ -28,8 +28,8 @@ FROM
 
 BeforeExecute
 -- SQLite.MS SQLite
-DECLARE @take  -- Int32
-SET     @take = 20
+DECLARE @p  -- Int32
+SET     @p = 20
 
 SELECT
 	[m_1].[DetailId],
@@ -46,7 +46,7 @@ FROM
 					*
 				FROM
 					[MasterClass] [t1]
-				LIMIT @take
+				LIMIT @p
 			) [t2]
 				CROSS JOIN [DetailClass] [d]
 	) [m_1]
@@ -56,8 +56,8 @@ BeforeExecute
 DisposeTransaction
 BeforeExecute
 -- SQLite.MS SQLite
-DECLARE @take  -- Int32
-SET     @take = 20
+DECLARE @p  -- Int32
+SET     @p = 20
 
 SELECT
 	[d].[DetailId],
@@ -69,7 +69,7 @@ FROM
 			*
 		FROM
 			[MasterClass] [t1]
-		LIMIT @take
+		LIMIT @p
 	) [m_1]
 		CROSS JOIN [DetailClass] [d]
 
