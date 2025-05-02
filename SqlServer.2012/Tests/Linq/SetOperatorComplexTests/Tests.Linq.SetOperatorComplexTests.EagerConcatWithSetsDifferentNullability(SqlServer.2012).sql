@@ -80,6 +80,8 @@ FROM
 
 BeforeExecute
 -- SqlServer.2012
+DECLARE @p Int -- Int32
+SET     @p = 2
 
 SELECT
 	[m_1].[BookId],
@@ -117,7 +119,7 @@ FROM
 					[t2].[AuthorId] IS NULL
 			) [t3]
 				CROSS APPLY (
-					SELECT TOP (2)
+					SELECT TOP (@p)
 						[a_Book_1].[BookId]
 					FROM
 						[BookAuthor] [d]
@@ -131,6 +133,8 @@ FROM
 
 BeforeExecute
 -- SqlServer.2012
+DECLARE @p Int -- Int32
+SET     @p = 2
 
 SELECT
 	[m_1].[c1],
@@ -165,7 +169,7 @@ FROM
 			[t2].[AuthorId] IS NULL
 	) [m_1]
 		CROSS APPLY (
-			SELECT TOP (2)
+			SELECT TOP (@p)
 				[a_Book_1].[Discriminator] as [cond],
 				[a_Book_1].[BookId],
 				[a_Book_1].[BookName],
