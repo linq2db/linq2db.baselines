@@ -17,8 +17,8 @@ BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @take Int -- Int32
 SET     @take = 15
-DECLARE @take Int -- Int32
-SET     @take = 15
+DECLARE @p Int -- Int32
+SET     @p = 15
 
 SELECT
 	"e"."ID",

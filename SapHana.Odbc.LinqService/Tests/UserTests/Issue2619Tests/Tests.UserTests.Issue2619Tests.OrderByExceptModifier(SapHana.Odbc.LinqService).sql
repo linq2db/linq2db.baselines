@@ -2,8 +2,8 @@
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @take Int -- Int32
 SET     @take = 1
-DECLARE @take Int -- Int32
-SET     @take = 1
+DECLARE @p Int -- Int32
+SET     @p = 1
 
 SELECT
 	"t2"."FirstName",
