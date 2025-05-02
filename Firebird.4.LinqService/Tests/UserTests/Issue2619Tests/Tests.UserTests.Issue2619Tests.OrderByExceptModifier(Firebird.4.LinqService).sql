@@ -2,6 +2,8 @@
 -- Firebird.4 Firebird4
 DECLARE @take Integer -- Int32
 SET     @take = 1
+DECLARE @p Integer -- Int32
+SET     @p = 1
 
 SELECT DISTINCT
 	"t2"."FirstName",
@@ -39,7 +41,7 @@ WHERE
 					"Person" "t3"
 				ORDER BY
 					"t3"."LastName"
-				FETCH NEXT @take ROWS ONLY
+				FETCH NEXT @p ROWS ONLY
 			) "t4"
 		WHERE
 			"t2"."FirstName" = "t4"."FirstName" AND
