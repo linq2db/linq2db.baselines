@@ -2,10 +2,10 @@
 BeginTransaction(RepeatableRead)
 BeforeExecute
 -- Firebird.2.5 Firebird
-DECLARE @take Integer -- Int32
-SET     @take = 10
-DECLARE @skip Integer -- Int32
-SET     @skip = 100
+DECLARE @p Integer -- Int32
+SET     @p = 10
+DECLARE @p_1 Integer -- Int32
+SET     @p_1 = 100
 
 SELECT
 	"m_1"."Id",
@@ -26,7 +26,7 @@ FROM
 					"t1"."Id"
 				FROM
 					(
-						SELECT FIRST @take SKIP @skip
+						SELECT FIRST @p SKIP @p_1
 							"x"."Id"
 						FROM
 							"Order" "x"
@@ -42,10 +42,10 @@ FROM
 
 BeforeExecute
 -- Firebird.2.5 Firebird
-DECLARE @take Integer -- Int32
-SET     @take = 10
-DECLARE @skip Integer -- Int32
-SET     @skip = 100
+DECLARE @p Integer -- Int32
+SET     @p = 10
+DECLARE @p_1 Integer -- Int32
+SET     @p_1 = 100
 
 SELECT
 	"m_1"."Id",
@@ -57,7 +57,7 @@ FROM
 			"t1"."Id"
 		FROM
 			(
-				SELECT FIRST @take SKIP @skip
+				SELECT FIRST @p SKIP @p_1
 					"x"."Id"
 				FROM
 					"Order" "x"
@@ -73,12 +73,12 @@ BeforeExecute
 DisposeTransaction
 BeforeExecute
 -- Firebird.2.5 Firebird
-DECLARE @take Integer -- Int32
-SET     @take = 10
-DECLARE @skip Integer -- Int32
-SET     @skip = 100
+DECLARE @p Integer -- Int32
+SET     @p = 10
+DECLARE @p_1 Integer -- Int32
+SET     @p_1 = 100
 
-SELECT FIRST @take SKIP @skip
+SELECT FIRST @p SKIP @p_1
 	"x"."Id",
 	"x"."Name"
 FROM
