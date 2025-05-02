@@ -117,6 +117,11 @@ EXEC('SELECT * FROM [TestDataMSSA].[dbo].[GetParentByID](NULL)')
 
 BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
+
+EXEC('SELECT * FROM [TestDataMSSA].[dbo].[Issue1294](NULL,NULL)')
+
+BeforeExecute
+-- SqlServer.SA.MS SqlServer.2019
 DECLARE @tsql NVarChar(4000) -- String
 SET     @tsql = N'exec [TestDataMSSA].[dbo].[Issue1897] '
 DECLARE @params NVarChar(4000) -- String

@@ -41,6 +41,8 @@ FROM
 
 BeforeExecute
 -- SqlServer.Contained SqlServer.2019
+DECLARE @p Int -- Int32
+SET     @p = 2
 
 SELECT
 	[m_1].[c1],
@@ -76,7 +78,7 @@ FROM
 			[t3].[cond] = N'Novel'
 	) [m_1]
 		CROSS APPLY (
-			SELECT TOP (2)
+			SELECT TOP (@p)
 				[a_Author].[AuthorId],
 				[a_Author].[AuthorName]
 			FROM

@@ -94,6 +94,11 @@ EXEC('SELECT * FROM [TestDataSA].[dbo].[GetParentByID](NULL)')
 BeforeExecute
 -- SqlServer.SA SqlServer.2019
 
+EXEC('SELECT * FROM [TestDataSA].[dbo].[Issue1294](NULL,NULL)')
+
+BeforeExecute
+-- SqlServer.SA SqlServer.2019
+
 [TestDataSA].[dbo].[Issue1897]
 
 BeforeExecute
@@ -392,6 +397,11 @@ BeforeExecute
 -- SqlServer.SA SqlServer.2019
 
 EXEC('SELECT * FROM [TestDataSA].[dbo].[GetParentByID](NULL)')
+
+BeforeExecute
+-- SqlServer.SA SqlServer.2019
+
+EXEC('SELECT * FROM [TestDataSA].[dbo].[Issue1294](NULL,NULL)')
 
 BeforeExecute
 -- SqlServer.SA SqlServer.2019

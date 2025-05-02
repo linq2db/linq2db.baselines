@@ -101,6 +101,11 @@ EXEC('SELECT * FROM [TestDataMSContained].[dbo].[GetParentByID](NULL)')
 
 BeforeExecute
 -- SqlServer.Contained.MS SqlServer.2019
+
+EXEC('SELECT * FROM [TestDataMSContained].[dbo].[Issue1294](NULL,NULL)')
+
+BeforeExecute
+-- SqlServer.Contained.MS SqlServer.2019
 DECLARE @tsql NVarChar(4000) -- String
 SET     @tsql = N'exec [TestDataMSContained].[dbo].[Issue1897] '
 DECLARE @params NVarChar(4000) -- String

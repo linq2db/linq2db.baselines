@@ -2,6 +2,8 @@
 -- SqlServer.SA SqlServer.2019
 DECLARE @take Int -- Int32
 SET     @take = 1
+DECLARE @p Int -- Int32
+SET     @p = 1
 
 SELECT
 	[t2].[FirstName],
@@ -31,7 +33,7 @@ SELECT
 	[t4].[Gender]
 FROM
 	(
-		SELECT TOP (@take)
+		SELECT TOP (@p)
 			[t3].[FirstName],
 			[t3].[PersonID] as [ID],
 			[t3].[LastName],

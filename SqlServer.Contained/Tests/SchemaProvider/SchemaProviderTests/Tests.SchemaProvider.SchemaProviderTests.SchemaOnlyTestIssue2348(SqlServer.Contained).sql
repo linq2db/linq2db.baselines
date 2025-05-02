@@ -94,6 +94,11 @@ EXEC('SELECT * FROM [TestDataContained].[dbo].[GetParentByID](NULL)')
 BeforeExecute
 -- SqlServer.Contained SqlServer.2019
 
+EXEC('SELECT * FROM [TestDataContained].[dbo].[Issue1294](NULL,NULL)')
+
+BeforeExecute
+-- SqlServer.Contained SqlServer.2019
+
 [TestDataContained].[dbo].[Issue1897]
 
 BeforeExecute
@@ -392,6 +397,11 @@ BeforeExecute
 -- SqlServer.Contained SqlServer.2019
 
 EXEC('SELECT * FROM [TestDataContained].[dbo].[GetParentByID](NULL)')
+
+BeforeExecute
+-- SqlServer.Contained SqlServer.2019
+
+EXEC('SELECT * FROM [TestDataContained].[dbo].[Issue1294](NULL,NULL)')
 
 BeforeExecute
 -- SqlServer.Contained SqlServer.2019

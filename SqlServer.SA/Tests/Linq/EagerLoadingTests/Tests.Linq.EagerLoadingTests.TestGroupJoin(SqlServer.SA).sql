@@ -31,6 +31,8 @@ BeforeExecute
 -- SqlServer.SA SqlServer.2019
 DECLARE @take Int -- Int32
 SET     @take = 20
+DECLARE @p Int -- Int32
+SET     @p = 10
 
 SELECT
 	[m_2].[DetailId],
@@ -53,7 +55,7 @@ FROM
 				INNER JOIN [DetailClass] [dd] ON [t1].[Id1] = [dd].[MasterId]
 	) [m_2]
 		CROSS APPLY (
-			SELECT TOP (10)
+			SELECT TOP (@p)
 				[d].[SubDetailId],
 				[d].[DetailId],
 				[d].[SubDetailValue]
@@ -69,6 +71,8 @@ BeforeExecute
 -- SqlServer.SA SqlServer.2019
 DECLARE @take Int -- Int32
 SET     @take = 20
+DECLARE @p Int -- Int32
+SET     @p = 10
 
 SELECT
 	[m_2].[MasterId],
@@ -92,7 +96,7 @@ FROM
 				INNER JOIN [DetailClass] [dd] ON [t1].[Id1] = [dd].[MasterId]
 	) [m_2]
 		CROSS APPLY (
-			SELECT TOP (10)
+			SELECT TOP (@p)
 				[d].[Id1],
 				[d].[Id2],
 				[d].[Value] as [Value_1],

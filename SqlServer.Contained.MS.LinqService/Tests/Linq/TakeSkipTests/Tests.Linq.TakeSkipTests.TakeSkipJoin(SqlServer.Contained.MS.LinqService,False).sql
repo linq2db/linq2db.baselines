@@ -15,6 +15,8 @@ FROM
 
 BeforeExecute
 -- SqlServer.Contained.MS SqlServer.2019
+DECLARE @p Int -- Int32
+SET     @p = 15
 
 SELECT
 	[e].[ID],
@@ -37,7 +39,7 @@ FROM
 			) [t3]
 	) [e]
 		LEFT JOIN (
-			SELECT TOP (15)
+			SELECT TOP (@p)
 				[t6].[ID],
 				[t6].[SmallIntValue]
 			FROM

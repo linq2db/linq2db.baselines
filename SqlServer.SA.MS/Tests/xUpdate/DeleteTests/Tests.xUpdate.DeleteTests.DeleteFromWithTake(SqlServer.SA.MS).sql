@@ -56,6 +56,8 @@ BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
 DECLARE @take Int -- Int32
 SET     @take = 2
+DECLARE @p Int -- Int32
+SET     @p = 2
 
 DELETE [p]
 FROM
@@ -75,7 +77,7 @@ WHERE
 			[t1].[ParentID]
 		FROM
 			(
-				SELECT TOP (@take)
+				SELECT TOP (@p)
 					[c_2].[ParentID]
 				FROM
 					[Parent] [c_2]
