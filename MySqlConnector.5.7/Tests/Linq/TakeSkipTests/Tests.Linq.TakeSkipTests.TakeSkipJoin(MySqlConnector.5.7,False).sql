@@ -15,6 +15,8 @@ FROM
 
 BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
+DECLARE @p Int32
+SET     @p = 15
 
 SELECT
 	`e`.`ID`,
@@ -55,7 +57,7 @@ FROM
 					FROM
 						`LinqDataTypes` `t5`
 				) `t6`
-			LIMIT 15
+			LIMIT @p
 		) `p` ON `p`.`ID` = `e`.`ID`
 ORDER BY
 	`e`.`ID`,
