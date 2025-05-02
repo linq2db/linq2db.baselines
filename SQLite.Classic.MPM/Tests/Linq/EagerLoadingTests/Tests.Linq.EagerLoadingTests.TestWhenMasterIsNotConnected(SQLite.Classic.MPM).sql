@@ -14,8 +14,8 @@ BeforeExecute
 DisposeTransaction
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-DECLARE @take  -- Int32
-SET     @take = 11
+DECLARE @p  -- Int32
+SET     @p = 11
 
 SELECT
 	COUNT(*)
@@ -25,7 +25,7 @@ FROM
 			[g_1].[Id1] as [Key_1]
 		FROM
 			[MasterManyId] [g_1]
-		LIMIT @take
+		LIMIT @p
 	) [g_2]
 GROUP BY
 	[g_2].[Key_1]
