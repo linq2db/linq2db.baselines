@@ -15,6 +15,8 @@ FROM
 
 BeforeExecute
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql
+DECLARE @p Int32
+SET     @p = 15
 
 SELECT
 	`e`.`ID`,
@@ -55,7 +57,7 @@ FROM
 					FROM
 						`LinqDataTypes` `t5`
 				) `t6`
-			LIMIT 15
+			LIMIT @p
 		) `p` ON `p`.`ID` = `e`.`ID`
 ORDER BY
 	`e`.`ID`,

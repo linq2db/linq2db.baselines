@@ -2,6 +2,8 @@
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql
 DECLARE @take Int32
 SET     @take = 1
+DECLARE @p Int32
+SET     @p = 1
 
 SELECT
 	`t2`.`FirstName`,
@@ -42,6 +44,6 @@ FROM
 			`Person` `t3`
 		ORDER BY
 			`t3`.`LastName`
-		LIMIT @take
+		LIMIT @p
 	) `t4`
 
