@@ -2,6 +2,8 @@
 BeginTransaction(RepeatableRead)
 BeforeExecute
 -- SqlServer.Northwind.MS SqlServer.2019
+DECLARE @p Int -- Int32
+SET     @p = 5
 
 SELECT
 	[m_1].[CustomerID],
@@ -22,7 +24,7 @@ SELECT
 FROM
 	[Customers] [m_1]
 		CROSS APPLY (
-			SELECT TOP (5)
+			SELECT TOP (@p)
 				[d].[OrderID],
 				[d].[CustomerID],
 				[d].[EmployeeID],
