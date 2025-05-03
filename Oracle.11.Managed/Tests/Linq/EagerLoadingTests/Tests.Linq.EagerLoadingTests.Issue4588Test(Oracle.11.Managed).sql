@@ -2,10 +2,10 @@
 BeginTransaction(ReadCommitted)
 BeforeExecute
 -- Oracle.11.Managed Oracle11
-DECLARE @skip Int32
-SET     @skip = 100
-DECLARE @take Int32
-SET     @take = 10
+DECLARE @p Int32
+SET     @p = 100
+DECLARE @p_1 Int32
+SET     @p_1 = 10
 
 SELECT
 	m_1."Id",
@@ -45,10 +45,10 @@ FROM
 											x."Id"
 									) t1
 								WHERE
-									ROWNUM <= (:skip + :take)
+									ROWNUM <= (:p + :p_1)
 							) t2
 						WHERE
-							t2.RN > :skip
+							t2.RN > :p
 					) t3
 			) t4
 				INNER JOIN "SubOrder" d ON t4."Id" = d."OrderId"
@@ -57,10 +57,10 @@ FROM
 
 BeforeExecute
 -- Oracle.11.Managed Oracle11
-DECLARE @skip Int32
-SET     @skip = 100
-DECLARE @take Int32
-SET     @take = 10
+DECLARE @p Int32
+SET     @p = 100
+DECLARE @p_1 Int32
+SET     @p_1 = 10
 
 SELECT
 	m_1."Id",
@@ -91,10 +91,10 @@ FROM
 									x."Id"
 							) t1
 						WHERE
-							ROWNUM <= (:skip + :take)
+							ROWNUM <= (:p + :p_1)
 					) t2
 				WHERE
-					t2.RN > :skip
+					t2.RN > :p
 			) t3
 	) m_1
 		INNER JOIN "SubOrder" d ON m_1."Id" = d."OrderId"
@@ -103,10 +103,10 @@ BeforeExecute
 DisposeTransaction
 BeforeExecute
 -- Oracle.11.Managed Oracle11
-DECLARE @skip Int32
-SET     @skip = 100
-DECLARE @take Int32
-SET     @take = 10
+DECLARE @p Int32
+SET     @p = 100
+DECLARE @p_1 Int32
+SET     @p_1 = 10
 
 SELECT
 	t2."Id",
@@ -130,10 +130,10 @@ FROM
 					x."Id"
 			) t1
 		WHERE
-			ROWNUM <= (:skip + :take)
+			ROWNUM <= (:p + :p_1)
 	) t2
 WHERE
-	t2.RN > :skip
+	t2.RN > :p
 ORDER BY
 	t2."Id"
 

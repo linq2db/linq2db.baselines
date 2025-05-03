@@ -17,6 +17,8 @@ BeforeExecute
 -- Oracle.11.Managed Oracle11
 DECLARE @take Int32
 SET     @take = 15
+DECLARE @p Int32
+SET     @p = 15
 
 SELECT
 	e.ID,
@@ -59,7 +61,7 @@ FROM
 						"LinqDataTypes" t5
 				) t6
 			WHERE
-				ROWNUM <= :take
+				ROWNUM <= :p
 		) p ON p.ID = e.ID
 ORDER BY
 	e.ID,
