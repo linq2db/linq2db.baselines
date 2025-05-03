@@ -19,6 +19,10 @@ FROM
 
 BeforeExecute
 -- Oracle.18.Managed Oracle.Managed Oracle12
+DECLARE @p Int32
+SET     @p = 1
+DECLARE @p_1 Int32
+SET     @p_1 = 2
 
 SELECT
 	m_2."Id1",
@@ -43,7 +47,7 @@ FROM
 				m_2."Id1" = d."MasterId"
 			ORDER BY
 				d."DetailId"
-			OFFSET 1 ROWS FETCH NEXT 2 ROWS ONLY 
+			OFFSET :p ROWS FETCH NEXT :p_1 ROWS ONLY 
 		) d_1
 
 BeforeExecute
