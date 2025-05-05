@@ -2,8 +2,8 @@
 BeginTransaction(Serializable)
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @p  -- Int32
-SET     @p = 20
+DECLARE @take  -- Int32
+SET     @take = 20
 
 SELECT
 	[m_2].[MasterId],
@@ -23,7 +23,7 @@ FROM
 					[MasterClass] [m_1]
 				ORDER BY
 					[m_1].[Id2] DESC
-				LIMIT @p
+				LIMIT @take
 			) [t1]
 				INNER JOIN [DetailClass] [dd] ON [t1].[Id1] = [dd].[MasterId]
 	) [m_2]
@@ -33,8 +33,8 @@ BeforeExecute
 DisposeTransaction
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @p  -- Int32
-SET     @p = 20
+DECLARE @take  -- Int32
+SET     @take = 20
 
 SELECT
 	[t1].[Id1],
@@ -55,7 +55,7 @@ FROM
 			[MasterClass] [m_1]
 		ORDER BY
 			[m_1].[Id2] DESC
-		LIMIT @p
+		LIMIT @take
 	) [t1]
 		INNER JOIN [DetailClass] [dd] ON [t1].[Id1] = [dd].[MasterId]
 

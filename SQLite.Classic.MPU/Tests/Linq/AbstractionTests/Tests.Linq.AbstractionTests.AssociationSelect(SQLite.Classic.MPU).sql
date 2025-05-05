@@ -2,8 +2,6 @@
 BeginTransaction(Serializable)
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @p  -- Int32
-SET     @p = 2
 
 SELECT
 	[m_1].[Id],
@@ -32,7 +30,7 @@ FROM
 					LEFT JOIN [SubEntitity] [a_SubItem] ON [d].[SubId] = [a_SubItem].[Id]
 			WHERE
 				[d].[ParentId] % 3 = 0
-		) [d_1] ON [m_1].[Id] = [d_1].[ParentId] AND [d_1].[rn] <= @p
+		) [d_1] ON [m_1].[Id] = [d_1].[ParentId] AND [d_1].[rn] <= 2
 
 BeforeExecute
 DisposeTransaction
@@ -49,8 +47,6 @@ BeforeExecute
 BeginTransaction(Serializable)
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @p  -- Int32
-SET     @p = 2
 
 SELECT
 	[m_1].[Id],
@@ -79,7 +75,7 @@ FROM
 					LEFT JOIN [SubEntitity] [a_SubItem] ON [d].[SubId] = [a_SubItem].[Id]
 			WHERE
 				[d].[ParentId] % 3 = 0
-		) [d_1] ON [m_1].[Id] = [d_1].[ParentId] AND [d_1].[rn] <= @p
+		) [d_1] ON [m_1].[Id] = [d_1].[ParentId] AND [d_1].[rn] <= 2
 
 BeforeExecute
 DisposeTransaction
