@@ -17,10 +17,6 @@ FROM
 
 BeforeExecute
 -- SqlServer.2005
-DECLARE @p Int -- Int32
-SET     @p = 1
-DECLARE @p_1 Int -- Int32
-SET     @p_1 = 2
 
 SELECT
 	[m_2].[Id1],
@@ -52,7 +48,7 @@ FROM
 						[m_2].[Id1] = [d].[MasterId]
 				) [t1]
 			WHERE
-				[t1].[RN] > @p AND [t1].[RN] <= (@p + @p_1)
+				[t1].[RN] > 1 AND [t1].[RN] <= 3
 		) [d_1]
 
 BeforeExecute

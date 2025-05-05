@@ -213,11 +213,6 @@ SELECT * FROM [TestDataMS].[dbo].[GetParentByID](NULL)
 BeforeExecute
 -- SqlServer.2005.MS SqlServer.2005
 
-SELECT * FROM [TestDataMS].[dbo].[Issue1294](NULL,NULL)
-
-BeforeExecute
--- SqlServer.2005.MS SqlServer.2005
-
 [TestDataMS].[dbo].[Issue1897]
 
 BeforeExecute

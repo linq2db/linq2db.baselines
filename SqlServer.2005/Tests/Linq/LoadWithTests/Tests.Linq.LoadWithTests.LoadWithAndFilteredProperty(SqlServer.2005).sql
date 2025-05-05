@@ -2,8 +2,6 @@
 BeginTransaction(RepeatableRead)
 BeforeExecute
 -- SqlServer.2005
-DECLARE @p Int -- Int32
-SET     @p = 2
 
 SELECT
 	[m_2].[Id],
@@ -20,7 +18,7 @@ FROM
 			[m_1].[Id] > 1
 	) [m_2]
 		CROSS APPLY (
-			SELECT TOP (@p)
+			SELECT TOP (2)
 				[d].[Id],
 				[d].[Value] as [Value_1],
 				[d].[ParentId]
@@ -51,8 +49,6 @@ BeforeExecute
 BeginTransaction(RepeatableRead)
 BeforeExecute
 -- SqlServer.2005
-DECLARE @p Int -- Int32
-SET     @p = 2
 
 SELECT
 	[m_2].[Id],
@@ -69,7 +65,7 @@ FROM
 			[m_1].[Id] > 1
 	) [m_2]
 		CROSS APPLY (
-			SELECT TOP (@p)
+			SELECT TOP (2)
 				[e].[Value] as [Value_1],
 				[e].[Id],
 				[e].[ParentId]
@@ -102,8 +98,6 @@ BeforeExecute
 BeginTransaction(RepeatableRead)
 BeforeExecute
 -- SqlServer.2005
-DECLARE @p Int -- Int32
-SET     @p = 2
 
 SELECT
 	[m_2].[cond],
@@ -129,7 +123,7 @@ FROM
 				LEFT JOIN [MainItem] [a_Parent] ON [d].[ParentId] = [a_Parent].[Id]
 	) [m_2]
 		CROSS APPLY (
-			SELECT TOP (@p)
+			SELECT TOP (2)
 				[e].[Value] as [Value_1],
 				[e].[Id],
 				[e].[ParentId]
@@ -185,8 +179,6 @@ BeforeExecute
 BeginTransaction(RepeatableRead)
 BeforeExecute
 -- SqlServer.2005
-DECLARE @p Int -- Int32
-SET     @p = 2
 
 SELECT
 	[m_2].[cond],
@@ -212,7 +204,7 @@ FROM
 				LEFT JOIN [MainItem] [a_Parent] ON [d].[ParentId] = [a_Parent].[Id]
 	) [m_2]
 		CROSS APPLY (
-			SELECT TOP (@p)
+			SELECT TOP (2)
 				[e].[Value] as [Value_1],
 				[e].[Id],
 				[e].[ParentId]
