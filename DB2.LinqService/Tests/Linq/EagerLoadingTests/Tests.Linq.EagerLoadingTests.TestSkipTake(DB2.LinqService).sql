@@ -17,10 +17,6 @@ FROM
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
-DECLARE @p Integer(4) -- Int32
-SET     @p = 1
-DECLARE @p_1 Integer(4) -- Int32
-SET     @p_1 = 2
 
 SELECT
 	"m_2"."Id1",
@@ -42,7 +38,7 @@ FROM
 				ROW_NUMBER() OVER (PARTITION BY "d"."MasterId" ORDER BY "d"."DetailId") as "rn"
 			FROM
 				"DetailClass" "d"
-		) "d_1" ON "m_2"."Id1" = "d_1"."MasterId" AND "d_1"."rn" > CAST(@p AS Int) AND "d_1"."rn" <= (CAST(@p AS Int) + CAST(@p_1 AS Int))
+		) "d_1" ON "m_2"."Id1" = "d_1"."MasterId" AND "d_1"."rn" > 1 AND "d_1"."rn" <= 3
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW

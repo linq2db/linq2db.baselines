@@ -2,8 +2,8 @@
 BeginTransaction(RepeatableRead)
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
-DECLARE @p Integer(4) -- Int32
-SET     @p = 10
+DECLARE @take Integer(4) -- Int32
+SET     @take = 10
 
 SELECT
 	"m_1"."Id",
@@ -32,7 +32,7 @@ FROM
 							"x"."Name" LIKE 'cat%' ESCAPE '~'
 						ORDER BY
 							"x"."Id"
-						OFFSET 100 ROWS FETCH NEXT @p ROWS ONLY 
+						OFFSET 100 ROWS FETCH NEXT @take ROWS ONLY 
 					) "t1"
 			) "t2"
 				INNER JOIN "SubOrder" "d" ON "t2"."Id" = "d"."OrderId"
@@ -41,8 +41,8 @@ FROM
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
-DECLARE @p Integer(4) -- Int32
-SET     @p = 10
+DECLARE @take Integer(4) -- Int32
+SET     @take = 10
 
 SELECT
 	"m_1"."Id",
@@ -62,7 +62,7 @@ FROM
 					"x"."Name" LIKE 'cat%' ESCAPE '~'
 				ORDER BY
 					"x"."Id"
-				OFFSET 100 ROWS FETCH NEXT @p ROWS ONLY 
+				OFFSET 100 ROWS FETCH NEXT @take ROWS ONLY 
 			) "t1"
 	) "m_1"
 		INNER JOIN "SubOrder" "d" ON "m_1"."Id" = "d"."OrderId"
@@ -71,8 +71,8 @@ BeforeExecute
 DisposeTransaction
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
-DECLARE @p Integer(4) -- Int32
-SET     @p = 10
+DECLARE @take Integer(4) -- Int32
+SET     @take = 10
 
 SELECT
 	"x"."Id",
@@ -83,5 +83,5 @@ WHERE
 	"x"."Name" LIKE 'cat%' ESCAPE '~'
 ORDER BY
 	"x"."Id"
-OFFSET 100 ROWS FETCH NEXT @p ROWS ONLY 
+OFFSET 100 ROWS FETCH NEXT @take ROWS ONLY 
 
