@@ -2,8 +2,6 @@
 -- SqlCe
 DECLARE @take Int -- Int32
 SET     @take = 1
-DECLARE @p Int -- Int32
-SET     @p = 1
 
 SELECT DISTINCT
 	[t2].[FirstName],
@@ -30,7 +28,7 @@ WHERE
 			*
 		FROM
 			(
-				SELECT TOP (@p)
+				SELECT TOP (@take)
 					[t3].[FirstName],
 					[t3].[PersonID] as [ID],
 					[t3].[LastName],
