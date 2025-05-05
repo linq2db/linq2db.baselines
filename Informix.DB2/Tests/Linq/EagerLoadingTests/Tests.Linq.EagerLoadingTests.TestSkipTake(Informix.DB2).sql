@@ -19,10 +19,6 @@ FROM
 
 BeforeExecute
 -- Informix.DB2 Informix
-DECLARE @p Integer(4) -- Int32
-SET     @p = 1
-DECLARE @p_1 Integer(4) -- Int32
-SET     @p_1 = 2
 
 SELECT
 	m_2.Id1,
@@ -44,7 +40,7 @@ FROM
 				ROW_NUMBER() OVER (PARTITION BY d.MasterId ORDER BY d.DetailId) as rn
 			FROM
 				DetailClass d
-		) d_1 ON m_2.Id1 = d_1.MasterId AND d_1.rn > @p::Int AND d_1.rn <= (@p::Int + @p_1::Int)
+		) d_1 ON m_2.Id1 = d_1.MasterId AND d_1.rn > 1 AND d_1.rn <= 3
 
 BeforeExecute
 DisposeTransaction

@@ -2,8 +2,6 @@
 -- Informix.DB2 Informix
 DECLARE @take Integer(4) -- Int32
 SET     @take = 1
-DECLARE @p Integer(4) -- Int32
-SET     @p = 1
 
 SELECT
 	t2.FirstName,
@@ -33,7 +31,7 @@ SELECT
 	t4.Gender
 FROM
 	(
-		SELECT FIRST @p
+		SELECT FIRST @take
 			t3.FirstName,
 			t3.PersonID as ID,
 			t3.LastName,
