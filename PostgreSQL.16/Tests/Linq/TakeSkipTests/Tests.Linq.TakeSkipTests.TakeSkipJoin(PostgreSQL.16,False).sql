@@ -15,8 +15,6 @@ FROM
 
 BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
-DECLARE @p Integer -- Int32
-SET     @p = 15
 
 SELECT
 	e."ID",
@@ -57,7 +55,7 @@ FROM
 					FROM
 						"LinqDataTypes" t5
 				) t6
-			LIMIT :p
+			LIMIT 15
 		) p ON p."ID" = e."ID"
 ORDER BY
 	e."ID",
