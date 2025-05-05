@@ -19,10 +19,6 @@ FROM
 
 BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
-DECLARE @p Int32
-SET     @p = 1
-DECLARE @p_1 Int32
-SET     @p_1 = 2
 
 SELECT
 	`m_2`.`Id1`,
@@ -47,7 +43,7 @@ FROM
 				`m_2`.`Id1` = `d`.`MasterId`
 			ORDER BY
 				`d`.`DetailId`
-			LIMIT @p, @p_1
+			LIMIT 1, 2
 		) `d_1` ON 1=1
 
 BeforeExecute
