@@ -41,8 +41,6 @@ FROM
 
 BeforeExecute
 -- SqlServer.2022.MS SqlServer.2022
-DECLARE @p Int -- Int32
-SET     @p = 2
 
 SELECT
 	[m_1].[c1],
@@ -78,7 +76,7 @@ FROM
 			[t3].[cond] = N'Novel'
 	) [m_1]
 		CROSS APPLY (
-			SELECT TOP (@p)
+			SELECT TOP (2)
 				[a_Author].[AuthorId],
 				[a_Author].[AuthorName]
 			FROM

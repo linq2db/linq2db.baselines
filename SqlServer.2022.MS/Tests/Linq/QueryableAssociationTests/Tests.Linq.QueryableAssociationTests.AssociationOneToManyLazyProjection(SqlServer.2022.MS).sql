@@ -21,8 +21,6 @@ BeforeExecute
 -- SqlServer.2022.MS SqlServer.2022
 DECLARE @take Int -- Int32
 SET     @take = 2
-DECLARE @p Int -- Int32
-SET     @p = 1
 
 SELECT
 	[m_1].[Id],
@@ -55,7 +53,7 @@ FROM
 			) [t3]
 	) [m_1]
 		CROSS APPLY (
-			SELECT TOP (@p)
+			SELECT TOP (1)
 				[d].[Id],
 				[d].[StrValue] + N'_A' as [StrValue]
 			FROM
