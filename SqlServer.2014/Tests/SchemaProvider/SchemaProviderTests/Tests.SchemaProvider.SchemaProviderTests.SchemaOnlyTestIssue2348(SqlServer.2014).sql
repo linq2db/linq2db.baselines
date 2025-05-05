@@ -94,11 +94,6 @@ SELECT * FROM [TestData].[dbo].[GetParentByID](NULL)
 BeforeExecute
 -- SqlServer.2014
 
-SELECT * FROM [TestData].[dbo].[Issue1294](NULL,NULL)
-
-BeforeExecute
--- SqlServer.2014
-
 [TestData].[dbo].[Issue1897]
 
 BeforeExecute
@@ -397,11 +392,6 @@ BeforeExecute
 -- SqlServer.2014
 
 SELECT * FROM [TestData].[dbo].[GetParentByID](NULL)
-
-BeforeExecute
--- SqlServer.2014
-
-SELECT * FROM [TestData].[dbo].[Issue1294](NULL,NULL)
 
 BeforeExecute
 -- SqlServer.2014

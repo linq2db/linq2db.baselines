@@ -212,11 +212,6 @@ SELECT * FROM [TestDataMS].[dbo].[GetParentByID](NULL)
 
 BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014
-
-SELECT * FROM [TestDataMS].[dbo].[Issue1294](NULL,NULL)
-
-BeforeExecute
--- SqlServer.2014.MS SqlServer.2014
 DECLARE @tsql NVarChar(4000) -- String
 SET     @tsql = N'exec [TestDataMS].[dbo].[Issue1897] '
 DECLARE @params NVarChar(4000) -- String
