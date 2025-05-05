@@ -15,8 +15,6 @@ FROM
 
 BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12
-DECLARE @p Int32
-SET     @p = 15
 
 SELECT
 	e.ID,
@@ -57,7 +55,7 @@ FROM
 					FROM
 						"LinqDataTypes" t5
 				) t6
-			FETCH NEXT :p ROWS ONLY
+			FETCH NEXT 15 ROWS ONLY
 		) p ON p.ID = e.ID
 ORDER BY
 	e.ID,
