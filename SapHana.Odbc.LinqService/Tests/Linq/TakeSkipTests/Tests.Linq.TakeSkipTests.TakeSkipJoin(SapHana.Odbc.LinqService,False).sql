@@ -15,8 +15,6 @@ FROM
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @p Int -- Int32
-SET     @p = 15
 
 SELECT
 	"e"."ID",
@@ -57,7 +55,7 @@ FROM
 					FROM
 						"LinqDataTypes" "t5"
 				) "t6"
-			LIMIT ?
+			LIMIT 15
 		) "p" ON "p"."ID" = "e"."ID"
 ORDER BY
 	"e"."ID",
