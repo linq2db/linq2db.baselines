@@ -1,4 +1,4 @@
-﻿--  SqlServer.2017
+﻿-- SqlServer.2017
 DECLARE @test Int -- Int32
 SET     @test = 1
 

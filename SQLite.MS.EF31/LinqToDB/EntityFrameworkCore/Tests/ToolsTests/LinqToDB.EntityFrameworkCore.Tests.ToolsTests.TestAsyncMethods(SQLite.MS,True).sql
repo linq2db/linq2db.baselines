@@ -23,7 +23,7 @@ SELECT EXISTS (
     WHERE (@__ef_filter__p_0 OR NOT ("p"."IsDeleted")) AND (('a' = '') OR (instr("p"."ProductName", 'a') > 0)))
 
 
---  SQLite.MS SQLite (asynchronously)
+-- SQLite.MS SQLite (asynchronously)
 
 SELECT
 	[e].[IsDeleted],
@@ -44,7 +44,7 @@ WHERE
 
 
 
---  SQLite.MS SQLite (asynchronously)
+-- SQLite.MS SQLite (asynchronously)
 
 SELECT
 	[e].[IsDeleted],
@@ -65,7 +65,7 @@ WHERE
 
 
 
---  SQLite.MS SQLite (asynchronously)
+-- SQLite.MS SQLite (asynchronously)
 
 SELECT
 	[e].[IsDeleted],
@@ -86,7 +86,7 @@ WHERE
 
 
 
---  SQLite.MS SQLite (asynchronously)
+-- SQLite.MS SQLite (asynchronously)
 
 SELECT
 	EXISTS(

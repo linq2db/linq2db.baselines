@@ -32,7 +32,7 @@ FROM `IssueEnum`
 WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
 
 
---  MariaDB.10.MySqlConnector MySql (asynchronously)
+-- MariaDB.10.MySqlConnector MySql (asynchronously)
 
 SELECT
 	`t1`.`Id`,

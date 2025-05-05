@@ -1,4 +1,4 @@
-﻿--  SQLite.MS SQLite
+﻿-- SQLite.MS SQLite
 DECLARE @value NVarChar(10) -- String
 SET     @value = '%anything%'
 

@@ -1,5 +1,5 @@
 ﻿BeforeExecute
---  SqlCe
+-- SqlCe
 
 CREATE TABLE [CreateTableTest]
 (
@@ -9,7 +9,7 @@ CREATE TABLE [CreateTableTest]
 )
 
 BeforeExecute
---  SqlCe
+-- SqlCe
 
 DROP TABLE [CreateTableTest]
 

@@ -8,7 +8,7 @@ OUTPUT INSERTED.[ID]
 VALUES (@p0, @p1, @p2, @p3, @p4, @p5);
 
 
---  SqlServer.2016 (asynchronously)
+-- SqlServer.2016 (asynchronously)
 DECLARE @field64 Decimal
 SET     @field64 = 5
 

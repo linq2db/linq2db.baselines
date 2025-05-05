@@ -18,7 +18,7 @@ VALUES (@p4)
 RETURNING "Id";
 
 
---  PostgreSQL.15 PostgreSQL (asynchronously)
+-- PostgreSQL.15 PostgreSQL (asynchronously)
 
 SELECT
 	t1."Id",

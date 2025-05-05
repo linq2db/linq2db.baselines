@@ -23,7 +23,7 @@ SELECT EXISTS (
     WHERE ((@__ef_filter__p_0 OR NOT (`p`.`IsDeleted`)) OR NOT (`p`.`IsDeleted`)) AND (`p`.`ProductName` LIKE '%a%'))
 
 
---  MySql.8.0.MySqlConnector MySql80 (asynchronously)
+-- MySql.8.0.MySqlConnector MySql80 (asynchronously)
 
 SELECT
 	`e`.`IsDeleted`,
@@ -44,7 +44,7 @@ WHERE
 
 
 
---  MySql.8.0.MySqlConnector MySql80 (asynchronously)
+-- MySql.8.0.MySqlConnector MySql80 (asynchronously)
 
 SELECT
 	`e`.`IsDeleted`,
@@ -65,7 +65,7 @@ WHERE
 
 
 
---  MySql.8.0.MySqlConnector MySql80 (asynchronously)
+-- MySql.8.0.MySqlConnector MySql80 (asynchronously)
 
 SELECT
 	`e`.`IsDeleted`,
@@ -86,7 +86,7 @@ WHERE
 
 
 
---  MySql.8.0.MySqlConnector MySql80 (asynchronously)
+-- MySql.8.0.MySqlConnector MySql80 (asynchronously)
 
 SELECT
 	EXISTS(
