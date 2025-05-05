@@ -17,10 +17,6 @@ FROM
 
 BeforeExecute
 -- SqlServer.2016.MS SqlServer.2016
-DECLARE @p Int -- Int32
-SET     @p = 1
-DECLARE @p_1 Int -- Int32
-SET     @p_1 = 2
 
 SELECT
 	[m_2].[Id1],
@@ -45,7 +41,7 @@ FROM
 				[m_2].[Id1] = [d].[MasterId]
 			ORDER BY
 				[d].[DetailId]
-			OFFSET @p ROWS FETCH NEXT @p_1 ROWS ONLY 
+			OFFSET 1 ROWS FETCH NEXT 2 ROWS ONLY 
 		) [d_1]
 
 BeforeExecute

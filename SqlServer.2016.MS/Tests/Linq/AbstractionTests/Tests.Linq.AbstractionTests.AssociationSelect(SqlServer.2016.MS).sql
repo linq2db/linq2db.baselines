@@ -2,8 +2,6 @@
 BeginTransaction(RepeatableRead)
 BeforeExecute
 -- SqlServer.2016.MS SqlServer.2016
-DECLARE @p Int -- Int32
-SET     @p = 2
 
 SELECT
 	[m_1].[Id],
@@ -20,7 +18,7 @@ FROM
 			[SampleClass1] [t1]
 	) [m_1]
 		CROSS APPLY (
-			SELECT TOP (@p)
+			SELECT TOP (2)
 				[a_SubItem].[Id] as [cond],
 				[a_SubItem].[Value] as [Value_1],
 				[d].[Id],
@@ -50,8 +48,6 @@ BeforeExecute
 BeginTransaction(RepeatableRead)
 BeforeExecute
 -- SqlServer.2016.MS SqlServer.2016
-DECLARE @p Int -- Int32
-SET     @p = 2
 
 SELECT
 	[m_1].[Id],
@@ -68,7 +64,7 @@ FROM
 			[SampleClass2] [t1]
 	) [m_1]
 		CROSS APPLY (
-			SELECT TOP (@p)
+			SELECT TOP (2)
 				[a_SubItem].[Id] as [cond],
 				[a_SubItem].[Value] as [Value_1],
 				[d].[Id],
