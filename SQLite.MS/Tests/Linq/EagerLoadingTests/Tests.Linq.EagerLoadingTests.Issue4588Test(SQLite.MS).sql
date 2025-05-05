@@ -2,10 +2,10 @@
 BeginTransaction(Serializable)
 BeforeExecute
 -- SQLite.MS SQLite
-DECLARE @p  -- Int32
-SET     @p = 10
-DECLARE @p_1  -- Int32
-SET     @p_1 = 100
+DECLARE @take  -- Int32
+SET     @take = 10
+DECLARE @skip  -- Int32
+SET     @skip = 100
 
 SELECT
 	[m_1].[Id],
@@ -34,7 +34,7 @@ FROM
 							[x].[Name] LIKE 'cat%' ESCAPE '~'
 						ORDER BY
 							[x].[Id]
-						LIMIT @p OFFSET @p_1
+						LIMIT @take OFFSET @skip
 					) [t1]
 			) [t2]
 				INNER JOIN [SubOrder] [d] ON [t2].[Id] = [d].[OrderId]
@@ -43,10 +43,10 @@ FROM
 
 BeforeExecute
 -- SQLite.MS SQLite
-DECLARE @p  -- Int32
-SET     @p = 10
-DECLARE @p_1  -- Int32
-SET     @p_1 = 100
+DECLARE @take  -- Int32
+SET     @take = 10
+DECLARE @skip  -- Int32
+SET     @skip = 100
 
 SELECT
 	[m_1].[Id],
@@ -66,7 +66,7 @@ FROM
 					[x].[Name] LIKE 'cat%' ESCAPE '~'
 				ORDER BY
 					[x].[Id]
-				LIMIT @p OFFSET @p_1
+				LIMIT @take OFFSET @skip
 			) [t1]
 	) [m_1]
 		INNER JOIN [SubOrder] [d] ON [m_1].[Id] = [d].[OrderId]
@@ -75,10 +75,10 @@ BeforeExecute
 DisposeTransaction
 BeforeExecute
 -- SQLite.MS SQLite
-DECLARE @p  -- Int32
-SET     @p = 10
-DECLARE @p_1  -- Int32
-SET     @p_1 = 100
+DECLARE @take  -- Int32
+SET     @take = 10
+DECLARE @skip  -- Int32
+SET     @skip = 100
 
 SELECT
 	[x].[Id],
@@ -89,5 +89,5 @@ WHERE
 	[x].[Name] LIKE 'cat%' ESCAPE '~'
 ORDER BY
 	[x].[Id]
-LIMIT @p OFFSET @p_1
+LIMIT @take OFFSET @skip
 
