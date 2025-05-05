@@ -2,8 +2,6 @@
 -- Oracle.11.Managed Oracle11
 DECLARE @take Int32
 SET     @take = 1
-DECLARE @p Int32
-SET     @p = 1
 
 SELECT
 	t3."FirstName",
@@ -64,6 +62,6 @@ FROM
 					t4."LastName"
 			) t5
 		WHERE
-			ROWNUM <= :p
+			ROWNUM <= :take
 	) t6
 
