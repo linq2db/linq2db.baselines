@@ -17,8 +17,6 @@ BeforeExecute
 -- Firebird.4 Firebird4
 DECLARE @take Integer -- Int32
 SET     @take = 15
-DECLARE @p Integer -- Int32
-SET     @p = 15
 
 SELECT
 	"e".ID,
@@ -59,7 +57,7 @@ FROM
 					FROM
 						"LinqDataTypes" "t5"
 				) "t6"
-			FETCH NEXT @p ROWS ONLY
+			FETCH NEXT @take ROWS ONLY
 		) "p" ON "p".ID = "e".ID
 ORDER BY
 	"e".ID,
