@@ -15,8 +15,6 @@ FROM
 
 BeforeExecute
 -- Firebird.2.5 Firebird
-DECLARE @p Integer -- Int32
-SET     @p = 15
 
 SELECT
 	"e".ID,
@@ -39,7 +37,7 @@ FROM
 			) "t3"
 	) "e"
 		LEFT JOIN (
-			SELECT FIRST @p
+			SELECT FIRST 15
 				"t6".ID,
 				"t6"."SmallIntValue"
 			FROM
