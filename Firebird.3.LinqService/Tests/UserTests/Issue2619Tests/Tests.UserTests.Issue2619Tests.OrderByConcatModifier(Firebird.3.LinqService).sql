@@ -2,8 +2,6 @@
 -- Firebird.3 Firebird3
 DECLARE @take Integer -- Int32
 SET     @take = 1
-DECLARE @p Integer -- Int32
-SET     @p = 1
 
 SELECT
 	"t2"."FirstName",
@@ -44,6 +42,6 @@ FROM
 			"Person" "t3"
 		ORDER BY
 			"t3"."LastName"
-		FETCH NEXT @p ROWS ONLY
+		FETCH NEXT @take ROWS ONLY
 	) "t4"
 

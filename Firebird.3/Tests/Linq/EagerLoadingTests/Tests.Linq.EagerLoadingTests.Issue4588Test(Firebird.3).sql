@@ -2,10 +2,10 @@
 BeginTransaction(RepeatableRead)
 BeforeExecute
 -- Firebird.3 Firebird3
-DECLARE @p Integer -- Int32
-SET     @p = 100
-DECLARE @p_1 Integer -- Int32
-SET     @p_1 = 10
+DECLARE @skip Integer -- Int32
+SET     @skip = 100
+DECLARE @take Integer -- Int32
+SET     @take = 10
 
 SELECT
 	"m_1"."Id",
@@ -34,7 +34,7 @@ FROM
 							"x"."Name" STARTING WITH 'cat'
 						ORDER BY
 							"x"."Id"
-						OFFSET @p ROWS FETCH NEXT @p_1 ROWS ONLY 
+						OFFSET @skip ROWS FETCH NEXT @take ROWS ONLY 
 					) "t1"
 			) "t2"
 				INNER JOIN "SubOrder" "d" ON "t2"."Id" = "d"."OrderId"
@@ -43,10 +43,10 @@ FROM
 
 BeforeExecute
 -- Firebird.3 Firebird3
-DECLARE @p Integer -- Int32
-SET     @p = 100
-DECLARE @p_1 Integer -- Int32
-SET     @p_1 = 10
+DECLARE @skip Integer -- Int32
+SET     @skip = 100
+DECLARE @take Integer -- Int32
+SET     @take = 10
 
 SELECT
 	"m_1"."Id",
@@ -66,7 +66,7 @@ FROM
 					"x"."Name" STARTING WITH 'cat'
 				ORDER BY
 					"x"."Id"
-				OFFSET @p ROWS FETCH NEXT @p_1 ROWS ONLY 
+				OFFSET @skip ROWS FETCH NEXT @take ROWS ONLY 
 			) "t1"
 	) "m_1"
 		INNER JOIN "SubOrder" "d" ON "m_1"."Id" = "d"."OrderId"
@@ -75,10 +75,10 @@ BeforeExecute
 DisposeTransaction
 BeforeExecute
 -- Firebird.3 Firebird3
-DECLARE @p Integer -- Int32
-SET     @p = 100
-DECLARE @p_1 Integer -- Int32
-SET     @p_1 = 10
+DECLARE @skip Integer -- Int32
+SET     @skip = 100
+DECLARE @take Integer -- Int32
+SET     @take = 10
 
 SELECT
 	"x"."Id",
@@ -89,5 +89,5 @@ WHERE
 	"x"."Name" STARTING WITH 'cat'
 ORDER BY
 	"x"."Id"
-OFFSET @p ROWS FETCH NEXT @p_1 ROWS ONLY 
+OFFSET @skip ROWS FETCH NEXT @take ROWS ONLY 
 
