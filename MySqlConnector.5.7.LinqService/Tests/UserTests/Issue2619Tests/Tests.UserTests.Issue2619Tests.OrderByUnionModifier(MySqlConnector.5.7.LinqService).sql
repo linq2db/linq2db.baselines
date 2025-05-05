@@ -2,8 +2,6 @@
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 DECLARE @take Int32
 SET     @take = 1
-DECLARE @p Int32
-SET     @p = 1
 
 SELECT
 	`t2`.`FirstName`,
@@ -44,6 +42,6 @@ FROM
 			`Person` `t3`
 		ORDER BY
 			`t3`.`LastName`
-		LIMIT @p
+		LIMIT @take
 	) `t4`
 
