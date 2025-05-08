@@ -13,7 +13,7 @@ WHERE
 			*
 		FROM
 			(
-				SELECT -10 AS X, 10 AS Y FROM sys.dual) t
+				SELECT -10 AS X, -10 AS X0, 10 AS Y FROM sys.dual) t
 		WHERE
 			x."position".x > t.X
 	)
