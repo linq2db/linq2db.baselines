@@ -12,9 +12,9 @@ WHERE
 			*
 		FROM
 			(
-				SELECT 3 AS [Id], N'Janet' AS [Value]
+				SELECT 3 AS [Id], N'Janet' AS [Value], 3 AS [Id0], N'Janet' AS [Value0]
 				UNION ALL
-				SELECT 4, N'Doe') [r]
+				SELECT 4, N'Doe', 4, N'Doe') [r]
 		WHERE
 			[t].[Id] = [r].[Id] AND ([t].[Value] = [r].[Value] OR [t].[Value] IS NULL AND [r].[Value] IS NULL)
 	)
