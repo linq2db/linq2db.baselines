@@ -19,10 +19,10 @@ AS
 		[t1].[Gender]
 	FROM
 		(
-			SELECT NULL [ID], NULL [FirstName], NULL [LastName], NULL [MiddleName], NULL [Gender] WHERE 1 = 0
+			SELECT NULL [ID], NULL [FirstName], NULL [ID0], NULL [LastName], NULL [MiddleName], NULL [Gender] WHERE 1 = 0
 			UNION ALL
 			VALUES
-				(10,'FN1','LN1',NULL,'M'), (11,'FN2',NULL,NULL,'F')
+				(10,'FN1',10,'LN1',NULL,'M'), (11,'FN2',11,NULL,NULL,'F')
 			) [t1]
 )
 SELECT
