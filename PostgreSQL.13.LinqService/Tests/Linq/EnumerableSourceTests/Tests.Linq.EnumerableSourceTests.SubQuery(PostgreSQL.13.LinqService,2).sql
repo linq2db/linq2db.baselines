@@ -12,8 +12,8 @@ WHERE
 			*
 		FROM
 			(VALUES
-				(3,'Janet'), (4,'Doe')
-			) r("Id", "Value")
+				(3,'Janet',3,'Janet'), (4,'Doe',4,'Doe')
+			) r("Id", "Value", "Id0", "Value0")
 		WHERE
 			t."Id" = r."Id" AND (t."Value" = r."Value" OR t."Value" IS NULL AND r."Value" IS NULL)
 	)
