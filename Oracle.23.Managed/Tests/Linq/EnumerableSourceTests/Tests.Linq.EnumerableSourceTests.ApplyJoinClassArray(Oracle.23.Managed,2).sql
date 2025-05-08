@@ -9,10 +9,8 @@ SELECT
 	p."Gender"
 FROM
 	"Person" p
-		CROSS APPLY (
-			SELECT 1 AS "PersonID", 'Janet' AS "LastName", p."FirstName" AS "FirstName" FROM sys.dual
+		INNER JOIN (
+			SELECT 'Janet' AS "LastName" FROM sys.dual
 			UNION ALL
-			SELECT 2, 'Doe', NULL FROM sys.dual) n
-WHERE
-	p."LastName" = n."LastName"
+			SELECT 'Doe' FROM sys.dual) n ON p."LastName" = n."LastName"
 

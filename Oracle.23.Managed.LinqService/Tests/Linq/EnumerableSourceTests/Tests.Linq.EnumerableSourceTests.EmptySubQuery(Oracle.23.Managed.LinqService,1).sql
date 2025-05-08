@@ -11,7 +11,7 @@ WHERE
 		SELECT
 			*
 		FROM
-			(SELECT NULL "Id", NULL "Value" FROM sys.dual WHERE 1 = 0) r
+			(SELECT NULL "Id", NULL "Value", NULL "Id0", NULL "Value0" FROM sys.dual WHERE 1 = 0) r
 		WHERE
 			t."Id" = r."Id" AND (t."Value" = r."Value" OR t."Value" IS NULL AND r."Value" IS NULL)
 	)
