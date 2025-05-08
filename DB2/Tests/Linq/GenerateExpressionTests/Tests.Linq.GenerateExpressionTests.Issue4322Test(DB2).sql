@@ -11,8 +11,8 @@ WHERE
 			*
 		FROM
 			(VALUES
-				(-10,10)
-			) "t"(X, Y)
+				(-10,-10,10)
+			) "t"(X, X0, Y)
 		WHERE
 			"x"."position".x > "t".X
 	)
