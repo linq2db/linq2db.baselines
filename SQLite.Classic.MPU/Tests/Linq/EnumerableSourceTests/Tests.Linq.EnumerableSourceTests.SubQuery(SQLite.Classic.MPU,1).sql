@@ -12,10 +12,10 @@ WHERE
 			*
 		FROM
 			(
-				SELECT NULL [Id], NULL [Value] WHERE 1 = 0
+				SELECT NULL [Id], NULL [Value], NULL [Id0], NULL [Value0] WHERE 1 = 0
 				UNION ALL
 				VALUES
-					(2,'Janet'), (3,'Doe')
+					(2,'Janet',2,'Janet'), (3,'Doe',3,'Doe')
 				) [r]
 		WHERE
 			[t].[Id] = [r].[Id] AND ([t].[Value] = [r].[Value] OR [t].[Value] IS NULL AND [r].[Value] IS NULL)
