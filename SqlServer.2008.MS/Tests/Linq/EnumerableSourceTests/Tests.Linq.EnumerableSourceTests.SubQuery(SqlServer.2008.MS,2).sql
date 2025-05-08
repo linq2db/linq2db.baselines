@@ -12,8 +12,8 @@ WHERE
 			*
 		FROM
 			(VALUES
-				(3,N'Janet'), (4,N'Doe')
-			) [r]([Id], [Value])
+				(3,N'Janet',3,N'Janet'), (4,N'Doe',4,N'Doe')
+			) [r]([Id], [Value], [Id0], [Value0])
 		WHERE
 			[t].[Id] = [r].[Id] AND ([t].[Value] = [r].[Value] OR [t].[Value] IS NULL AND [r].[Value] IS NULL)
 	)
