@@ -12,9 +12,9 @@ WHERE
 			*
 		FROM
 			(
-				SELECT 3 AS "Id", 'Janet' AS "Value" FROM DUMMY
+				SELECT 3 AS "Id", 'Janet' AS "Value", 3 AS "Id0", 'Janet' AS "Value0" FROM DUMMY
 				UNION ALL
-				SELECT 4, 'Doe' FROM DUMMY) "r"
+				SELECT 4, 'Doe', 4, 'Doe' FROM DUMMY) "r"
 		WHERE
 			"t"."Id" = "r"."Id" AND ("t"."Value" = "r"."Value" OR "t"."Value" IS NULL AND "r"."Value" IS NULL)
 	)

@@ -11,9 +11,9 @@ SELECT
 	"t1"."Value"
 FROM
 	(
-		SELECT 3 AS "Id", 'Janet' AS "Value" FROM DUMMY
+		SELECT 3 AS "Id", 3 AS "Id0", 'Janet' AS "Value" FROM DUMMY
 		UNION ALL
-		SELECT 4, 'Doe' FROM DUMMY) "t1"
+		SELECT 4, 4, 'Doe' FROM DUMMY) "t1"
 		LEFT JOIN "TableToInsert" "t" ON "t"."Id" = "t1"."Id"
 WHERE
 	"t"."Id" IS NULL
@@ -31,9 +31,9 @@ SELECT
 	"t1"."Value"
 FROM
 	(
-		SELECT 3 AS "Id", 'Janet' AS "Value" FROM DUMMY
+		SELECT 3 AS "Id", 3 AS "Id0", 'Janet' AS "Value" FROM DUMMY
 		UNION ALL
-		SELECT 4, 'Doe' FROM DUMMY) "t1"
+		SELECT 4, 4, 'Doe' FROM DUMMY) "t1"
 		LEFT JOIN "TableToInsert" "t" ON "t"."Id" = "t1"."Id"
 WHERE
 	"t"."Id" IS NULL

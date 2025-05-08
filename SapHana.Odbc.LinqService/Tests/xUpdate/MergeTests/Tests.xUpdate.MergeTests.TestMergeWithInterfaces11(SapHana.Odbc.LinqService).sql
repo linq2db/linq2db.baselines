@@ -6,7 +6,7 @@ USING (
 	SELECT 1 AS "source_Id" FROM DUMMY) "Source"
 ON ("Target"."Id" = "Source"."source_Id")
 
-WHEN MATCHED AND "Target"."Id" <> "Source"."source_Id" THEN
+WHEN MATCHED AND "Target"."Id" <> "Source"."source_Id" OR "Source"."source_Id" IS NULL THEN
 UPDATE
 SET
 	"Id" = 2,
