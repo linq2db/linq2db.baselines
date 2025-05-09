@@ -12,9 +12,9 @@ WHERE
 			*
 		FROM
 			(
-				SELECT 2 AS "Id", CAST('Janet' AS VARCHAR(5)) AS "Value", 2 AS "Id0", CAST('Janet' AS VARCHAR(5)) AS "Value0" FROM rdb$database
+				SELECT 2 AS "Id", CAST('Janet' AS VARCHAR(5)) AS "Value" FROM rdb$database
 				UNION ALL
-				SELECT 3, CAST('Doe' AS VARCHAR(3)), 3, CAST('Doe' AS VARCHAR(3)) FROM rdb$database) "r"
+				SELECT 3, CAST('Doe' AS VARCHAR(3)) FROM rdb$database) "r"
 		WHERE
 			"t"."Id" = "r"."Id" AND ("t"."Value" = "r"."Value" OR "t"."Value" IS NULL AND "r"."Value" IS NULL)
 	)
