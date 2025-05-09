@@ -22,10 +22,10 @@ FROM
 			[Parent] [t1]
 	) [m_1]
 		INNER JOIN (
-			SELECT NULL [ParentID], NULL [ParentID0] WHERE 1 = 0
+			SELECT NULL [ParentID] WHERE 1 = 0
 			UNION ALL
 			VALUES
-				(1,1), (2,2), (3,3), (4,4), (5,5), (6,6), (7,7)
+				(1), (2), (3), (4), (5), (6), (7)
 			) [d] ON [d].[ParentID] = [m_1].[ParentID]
 
 BeforeExecute
