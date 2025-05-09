@@ -11,9 +11,9 @@ SELECT
 	[t1].[Value] as [Value_1]
 FROM
 	(
-		SELECT 2 AS [Id], 2 AS [Id0], 'Janet' AS [Value]
+		SELECT 2 AS [Id], 'Janet' AS [Value]
 		UNION ALL
-		SELECT 3 AS [Id], 3 AS [Id0], 'Doe' AS [Value]) [t1]
+		SELECT 3 AS [Id], 'Doe' AS [Value]) [t1]
 		LEFT JOIN [TableToInsert] [t] ON [t].[Id] = [t1].[Id]
 WHERE
 	[t].[Id] IS NULL
@@ -31,9 +31,9 @@ SELECT
 	[t1].[Value] as [Value_1]
 FROM
 	(
-		SELECT 2 AS [Id], 2 AS [Id0], 'Janet' AS [Value]
+		SELECT 2 AS [Id], 'Janet' AS [Value]
 		UNION ALL
-		SELECT 3 AS [Id], 3 AS [Id0], 'Doe' AS [Value]) [t1]
+		SELECT 3 AS [Id], 'Doe' AS [Value]) [t1]
 		LEFT JOIN [TableToInsert] [t] ON [t].[Id] = [t1].[Id]
 WHERE
 	[t].[Id] IS NULL
