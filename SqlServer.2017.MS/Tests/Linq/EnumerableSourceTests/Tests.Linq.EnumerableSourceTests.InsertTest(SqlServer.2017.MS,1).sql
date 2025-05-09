@@ -11,8 +11,8 @@ SELECT
 	[t1].[Value]
 FROM
 	(VALUES
-		(2,2,N'Janet'), (3,3,N'Doe')
-	) [t1]([Id], [Id0], [Value])
+		(2,N'Janet'), (3,N'Doe')
+	) [t1]([Id], [Value])
 		LEFT JOIN [TableToInsert] [t] ON [t].[Id] = [t1].[Id]
 WHERE
 	[t].[Id] IS NULL
@@ -30,8 +30,8 @@ SELECT
 	[t1].[Value]
 FROM
 	(VALUES
-		(2,2,N'Janet'), (3,3,N'Doe')
-	) [t1]([Id], [Id0], [Value])
+		(2,N'Janet'), (3,N'Doe')
+	) [t1]([Id], [Value])
 		LEFT JOIN [TableToInsert] [t] ON [t].[Id] = [t1].[Id]
 WHERE
 	[t].[Id] IS NULL
