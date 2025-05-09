@@ -19,9 +19,9 @@ AS
 		`t1`.`Gender`
 	FROM
 		(
-			SELECT 10 AS `ID`, 'FN1' AS `FirstName`, 10 AS `ID0`, 'LN1' AS `LastName`, NULL AS `MiddleName`, 'M' AS `Gender`
+			SELECT 10 AS `ID`, 'FN1' AS `FirstName`, 'LN1' AS `LastName`, NULL AS `MiddleName`, 'M' AS `Gender`
 			UNION ALL
-			SELECT 11, 'FN2', 11, NULL, NULL, 'F') `t1`
+			SELECT 11, 'FN2', NULL, NULL, 'F') `t1`
 )
 SELECT
 	`p`.`FirstName`,
