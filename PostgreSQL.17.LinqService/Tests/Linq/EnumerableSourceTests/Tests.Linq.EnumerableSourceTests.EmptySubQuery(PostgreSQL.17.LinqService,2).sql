@@ -11,7 +11,7 @@ WHERE
 		SELECT
 			*
 		FROM
-			(SELECT NULL::Int "Id", NULL::text "Value", NULL::Int "Id0", NULL::text "Value0" WHERE 1 = 0) r("Id", "Value", "Id0", "Value0")
+			(SELECT NULL::Int "Id", NULL::text "Value" WHERE 1 = 0) r("Id", "Value")
 		WHERE
 			t."Id" = r."Id" AND (t."Value" = r."Value" OR t."Value" IS NULL AND r."Value" IS NULL)
 	)
