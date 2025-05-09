@@ -12,9 +12,9 @@ WHERE
 			*
 		FROM
 			(
-				SELECT 3 AS `Id`, 'Janet' AS `Value`, 3 AS `Id0`, 'Janet' AS `Value0`
+				SELECT 3 AS `Id`, 'Janet' AS `Value`
 				UNION ALL
-				SELECT 4, 'Doe', 4, 'Doe') `r`
+				SELECT 4, 'Doe') `r`
 		WHERE
 			`t`.`Id` = `r`.`Id` AND (`t`.`Value` = `r`.`Value` OR `t`.`Value` IS NULL AND `r`.`Value` IS NULL)
 	)
