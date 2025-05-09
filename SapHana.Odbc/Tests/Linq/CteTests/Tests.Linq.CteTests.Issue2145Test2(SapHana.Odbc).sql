@@ -19,9 +19,9 @@ AS
 		"t1"."Gender"
 	FROM
 		(
-			SELECT 10 AS "ID", 'FN1' AS "FirstName", 10 AS "ID0", 'LN1' AS "LastName", NULL AS "MiddleName", 'M' AS "Gender" FROM DUMMY
+			SELECT 10 AS "ID", 'FN1' AS "FirstName", 'LN1' AS "LastName", NULL AS "MiddleName", 'M' AS "Gender" FROM DUMMY
 			UNION ALL
-			SELECT 11, 'FN2', 11, NULL, NULL, 'F' FROM DUMMY) "t1"
+			SELECT 11, 'FN2', NULL, NULL, 'F' FROM DUMMY) "t1"
 )
 SELECT
 	"p"."FirstName",
