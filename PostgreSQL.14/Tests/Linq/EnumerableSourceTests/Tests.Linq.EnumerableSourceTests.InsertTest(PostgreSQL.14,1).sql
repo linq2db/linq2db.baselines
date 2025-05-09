@@ -11,8 +11,8 @@ SELECT
 	t1."Value"
 FROM
 	(VALUES
-		(2,2,'Janet'), (3,3,'Doe')
-	) t1("Id", "Id0", "Value")
+		(2,'Janet'), (3,'Doe')
+	) t1("Id", "Value")
 		LEFT JOIN "TableToInsert" t ON t."Id" = t1."Id"
 WHERE
 	t."Id" IS NULL
@@ -30,8 +30,8 @@ SELECT
 	t1."Value"
 FROM
 	(VALUES
-		(2,2,'Janet'), (3,3,'Doe')
-	) t1("Id", "Id0", "Value")
+		(2,'Janet'), (3,'Doe')
+	) t1("Id", "Value")
 		LEFT JOIN "TableToInsert" t ON t."Id" = t1."Id"
 WHERE
 	t."Id" IS NULL

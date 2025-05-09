@@ -19,9 +19,8 @@ AS
 		t1."Gender"
 	FROM
 		(VALUES
-			(10,'FN1',10,'LN1',NULL::text,'M'),
-			(11,'FN2',11,NULL,NULL,'F')
-		) t1("ID", "FirstName", "ID0", "LastName", "MiddleName", "Gender")
+			(10,'FN1','LN1',NULL::text,'M'), (11,'FN2',NULL,NULL,'F')
+		) t1("ID", "FirstName", "LastName", "MiddleName", "Gender")
 )
 SELECT
 	p."FirstName",
