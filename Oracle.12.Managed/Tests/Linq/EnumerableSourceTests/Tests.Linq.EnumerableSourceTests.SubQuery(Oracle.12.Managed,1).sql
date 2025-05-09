@@ -12,9 +12,9 @@ WHERE
 			*
 		FROM
 			(
-				SELECT 2 AS "Id", 'Janet' AS "Value", 2 AS "Id0", 'Janet' AS "Value0" FROM sys.dual
+				SELECT 2 AS "Id", 'Janet' AS "Value" FROM sys.dual
 				UNION ALL
-				SELECT 3, 'Doe', 3, 'Doe' FROM sys.dual) r
+				SELECT 3, 'Doe' FROM sys.dual) r
 		WHERE
 			t."Id" = r."Id" AND (t."Value" = r."Value" OR t."Value" IS NULL AND r."Value" IS NULL)
 	)
