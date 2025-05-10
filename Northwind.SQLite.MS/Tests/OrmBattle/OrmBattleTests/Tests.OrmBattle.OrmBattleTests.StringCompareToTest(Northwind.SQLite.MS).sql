@@ -16,6 +16,6 @@ SELECT
 FROM
 	[Customers] [c_1]
 WHERE
-	[c_1].[City] >= 'Seattle'
+	[c_1].[City] >= 'Seattle' OR [c_1].[City] IS NULL
 LIMIT 1
 
