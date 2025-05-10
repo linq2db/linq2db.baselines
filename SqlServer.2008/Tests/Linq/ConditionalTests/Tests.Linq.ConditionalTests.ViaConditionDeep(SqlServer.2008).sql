@@ -26,9 +26,10 @@ WHERE
 		ELSE [x].[StringProp] + N'2'
 	END LIKE N'%2' ESCAPE N'~' AND
 	CASE
-		WHEN [x].[StringProp] = N'1' OR [x].[StringProp] IS NULL
+		WHEN [x].[StringProp] = N'1' AND [x].[StringProp] IS NOT NULL OR [x].[StringProp] IS NULL
 			THEN NULL
-		WHEN [x].[StringProp] = N'2' THEN 1
+		WHEN [x].[StringProp] = N'2' AND [x].[StringProp] IS NOT NULL
+			THEN 1
 		ELSE 2
 	END = 2
 
