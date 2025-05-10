@@ -7,8 +7,6 @@ SELECT
 	`i`.`StrValueNullable`
 FROM
 	`Isue2424Table` `i`
-WHERE
-	`i`.`StrValue` >= '0'
 
 BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
@@ -30,7 +28,7 @@ SELECT
 FROM
 	`Isue2424Table` `i`
 WHERE
-	`i`.`StrValue` >= '1'
+	`i`.`StrValueNullable` >= '1'
 
 BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
@@ -52,7 +50,7 @@ SELECT
 FROM
 	`Isue2424Table` `i`
 WHERE
-	`i`.`StrValue` >= '3'
+	`i`.`StrValueNullable` >= '3'
 
 BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
@@ -74,7 +72,7 @@ SELECT
 FROM
 	`Isue2424Table` `i`
 WHERE
-	`i`.`StrValue` >= '5'
+	`i`.`StrValueNullable` >= '5'
 
 BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
@@ -96,7 +94,7 @@ SELECT
 FROM
 	`Isue2424Table` `i`
 WHERE
-	`i`.`StrValue` <= '0'
+	`i`.`StrValueNullable` IS NULL OR `i`.`StrValueNullable` IS NULL
 
 BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
@@ -118,7 +116,7 @@ SELECT
 FROM
 	`Isue2424Table` `i`
 WHERE
-	`i`.`StrValue` <= '1'
+	`i`.`StrValueNullable` <= '1' OR `i`.`StrValueNullable` IS NULL
 
 BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
@@ -140,7 +138,7 @@ SELECT
 FROM
 	`Isue2424Table` `i`
 WHERE
-	`i`.`StrValue` <= '3'
+	`i`.`StrValueNullable` <= '3' OR `i`.`StrValueNullable` IS NULL
 
 BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
@@ -162,7 +160,7 @@ SELECT
 FROM
 	`Isue2424Table` `i`
 WHERE
-	`i`.`StrValue` <= '5'
+	`i`.`StrValueNullable` <= '5' OR `i`.`StrValueNullable` IS NULL
 
 BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
@@ -184,7 +182,7 @@ SELECT
 FROM
 	`Isue2424Table` `i`
 WHERE
-	`i`.`StrValue` > '0'
+	`i`.`StrValueNullable` IS NOT NULL OR `i`.`StrValueNullable` IS NOT NULL
 
 BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
@@ -206,7 +204,7 @@ SELECT
 FROM
 	`Isue2424Table` `i`
 WHERE
-	`i`.`StrValue` > '1'
+	`i`.`StrValueNullable` > '1'
 
 BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
@@ -228,7 +226,7 @@ SELECT
 FROM
 	`Isue2424Table` `i`
 WHERE
-	`i`.`StrValue` > '3'
+	`i`.`StrValueNullable` > '3'
 
 BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
@@ -250,7 +248,7 @@ SELECT
 FROM
 	`Isue2424Table` `i`
 WHERE
-	`i`.`StrValue` > '5'
+	`i`.`StrValueNullable` > '5'
 
 BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
@@ -272,7 +270,7 @@ SELECT
 FROM
 	`Isue2424Table` `i`
 WHERE
-	`i`.`StrValue` < '0'
+	1 = 0
 
 BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
@@ -294,7 +292,7 @@ SELECT
 FROM
 	`Isue2424Table` `i`
 WHERE
-	`i`.`StrValue` < '1'
+	`i`.`StrValueNullable` < '1' OR `i`.`StrValueNullable` IS NULL
 
 BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
@@ -316,7 +314,7 @@ SELECT
 FROM
 	`Isue2424Table` `i`
 WHERE
-	`i`.`StrValue` < '3'
+	`i`.`StrValueNullable` < '3' OR `i`.`StrValueNullable` IS NULL
 
 BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
@@ -338,7 +336,7 @@ SELECT
 FROM
 	`Isue2424Table` `i`
 WHERE
-	`i`.`StrValue` < '5'
+	`i`.`StrValueNullable` < '5' OR `i`.`StrValueNullable` IS NULL
 
 BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
@@ -360,7 +358,7 @@ SELECT
 FROM
 	`Isue2424Table` `i`
 WHERE
-	`i`.`StrValue` = '0'
+	`i`.`StrValueNullable` IS NULL
 
 BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
@@ -382,7 +380,7 @@ SELECT
 FROM
 	`Isue2424Table` `i`
 WHERE
-	`i`.`StrValue` = '1'
+	`i`.`StrValueNullable` = '1'
 
 BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
@@ -404,7 +402,7 @@ SELECT
 FROM
 	`Isue2424Table` `i`
 WHERE
-	`i`.`StrValue` = '3'
+	`i`.`StrValueNullable` = '3'
 
 BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
@@ -426,7 +424,7 @@ SELECT
 FROM
 	`Isue2424Table` `i`
 WHERE
-	`i`.`StrValue` = '5'
+	`i`.`StrValueNullable` = '5'
 
 BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
@@ -448,7 +446,7 @@ SELECT
 FROM
 	`Isue2424Table` `i`
 WHERE
-	`i`.`StrValue` <> '0'
+	`i`.`StrValueNullable` IS NOT NULL
 
 BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
@@ -470,7 +468,7 @@ SELECT
 FROM
 	`Isue2424Table` `i`
 WHERE
-	`i`.`StrValue` <> '1'
+	`i`.`StrValueNullable` <> '1' OR `i`.`StrValueNullable` IS NULL
 
 BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
@@ -492,7 +490,7 @@ SELECT
 FROM
 	`Isue2424Table` `i`
 WHERE
-	`i`.`StrValue` <> '3'
+	`i`.`StrValueNullable` <> '3' OR `i`.`StrValueNullable` IS NULL
 
 BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
@@ -514,7 +512,7 @@ SELECT
 FROM
 	`Isue2424Table` `i`
 WHERE
-	`i`.`StrValue` <> '5'
+	`i`.`StrValueNullable` <> '5' OR `i`.`StrValueNullable` IS NULL
 
 BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
