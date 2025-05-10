@@ -15,7 +15,7 @@ FROM
 			FROM
 				"Child" "a_Children"
 			WHERE
-				"a_Parent"."ParentID" = "a_Children"."ParentID"
+				"a_Parent"."ParentID" IS NOT NULL AND "a_Parent"."ParentID" = "a_Children"."ParentID"
 			ORDER BY
 				"a_Children"."ChildID"
 			FETCH NEXT 1 ROWS ONLY

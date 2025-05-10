@@ -21,9 +21,8 @@ FROM
 						"Card" "t"
 					WHERE
 						"t"."OwnerId" = "a_Owner"."Id"
-				) as "CountOfTCards",
-				"a_Owner"."Id"
+				) as "CountOfTCards"
 			FROM
 				"Client" "a_Owner"
-		) "t1" ON "t1"."Id" = "t2"."OwnerId"
+		) "t1" ON "t1"."cond" = "t2"."OwnerId"
 

@@ -6,7 +6,7 @@ UPDATE
 SET
 	TRANS_CHANNEL = (
 		SELECT
-			"channel_1"."Trans_Channel"
+			Coalesce("channel_1"."Trans_Channel", 0)
 		FROM
 			"Issue2815Table1" "ext_1"
 				LEFT JOIN "Issue2815Table2" "source_1" ON "source_1".ISO = "ext_1".SRC_BIC
