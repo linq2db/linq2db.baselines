@@ -1264,7 +1264,7 @@ SELECT
 FROM
 	[OptimizationData] [x]
 WHERE
-	IIF([x].[StringValueNullable] IS NOT NULL, IIF([x].[StringValueNullable] = '2' AND [x].[StringValueNullable] IS NOT NULL, 2, 10), IIF([x].[StringValueNullable] IS NULL, 3, 1)) = 2
+	IIF([x].[StringValueNullable] IS NOT NULL, IIF([x].[StringValueNullable] = '2', 2, 10), IIF([x].[StringValueNullable] IS NULL, 3, 1)) = 2
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
@@ -1294,7 +1294,7 @@ SELECT
 FROM
 	[OptimizationData] [x_with_not]
 WHERE
-	IIF([x_with_not].[StringValueNullable] IS NOT NULL, IIF([x_with_not].[StringValueNullable] = '2' AND [x_with_not].[StringValueNullable] IS NOT NULL, 2, 10), IIF([x_with_not].[StringValueNullable] IS NULL, 3, 1)) <> 2
+	IIF([x_with_not].[StringValueNullable] IS NOT NULL, IIF([x_with_not].[StringValueNullable] = '2', 2, 10), IIF([x_with_not].[StringValueNullable] IS NULL, 3, 1)) <> 2
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
@@ -1324,7 +1324,7 @@ SELECT
 FROM
 	[OptimizationData] [swap]
 WHERE
-	2 = IIF([swap].[StringValueNullable] IS NOT NULL, IIF([swap].[StringValueNullable] = '2' AND [swap].[StringValueNullable] IS NOT NULL, 2, 10), IIF([swap].[StringValueNullable] IS NULL, 3, 1))
+	2 = IIF([swap].[StringValueNullable] IS NOT NULL, IIF([swap].[StringValueNullable] = '2', 2, 10), IIF([swap].[StringValueNullable] IS NULL, 3, 1))
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
@@ -1354,7 +1354,7 @@ SELECT
 FROM
 	[OptimizationData] [swap_with_not]
 WHERE
-	2 <> IIF([swap_with_not].[StringValueNullable] IS NOT NULL, IIF([swap_with_not].[StringValueNullable] = '2' AND [swap_with_not].[StringValueNullable] IS NOT NULL, 2, 10), IIF([swap_with_not].[StringValueNullable] IS NULL, 3, 1))
+	2 <> IIF([swap_with_not].[StringValueNullable] IS NOT NULL, IIF([swap_with_not].[StringValueNullable] = '2', 2, 10), IIF([swap_with_not].[StringValueNullable] IS NULL, 3, 1))
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
