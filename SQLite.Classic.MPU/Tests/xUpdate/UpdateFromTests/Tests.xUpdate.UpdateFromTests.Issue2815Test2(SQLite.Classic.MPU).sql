@@ -19,7 +19,7 @@ WHERE
 	[channel].[BIC] = [Issue2815Table1].[SRC_BIC] AND
 	[channel].[Sepa] = CASE
 		WHEN [source].[SEPA] AND [destination].[SEPA] THEN CASE
-			WHEN [source].[ISO] = [destination].[ISO] OR [source].[ISO] IS NULL AND [destination].[ISO] IS NULL
+			WHEN ([source].[ISO] = [destination].[ISO] OR [source].[ISO] IS NULL AND [destination].[ISO] IS NULL) AND NOT ([source].[ISO] IS NULL AND [destination].[ISO] IS NOT NULL) AND NOT ([destination].[ISO] IS NULL AND [source].[ISO] IS NOT NULL)
 				THEN 0
 			ELSE 1
 		END
