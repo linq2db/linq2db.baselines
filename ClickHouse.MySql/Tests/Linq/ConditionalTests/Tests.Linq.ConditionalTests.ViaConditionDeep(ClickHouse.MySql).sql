@@ -21,9 +21,8 @@ WHERE
 		ELSE concat(x.StringProp, '2')
 	END, '2') AND
 	CASE
-		WHEN x.StringProp = '1' AND x.StringProp IS NOT NULL OR x.StringProp IS NULL
-			THEN NULL
-		WHEN x.StringProp = '2' AND x.StringProp IS NOT NULL THEN 1
+		WHEN x.StringProp = '1' OR x.StringProp IS NULL THEN NULL
+		WHEN x.StringProp = '2' THEN 1
 		ELSE 2
 	END = 2
 
