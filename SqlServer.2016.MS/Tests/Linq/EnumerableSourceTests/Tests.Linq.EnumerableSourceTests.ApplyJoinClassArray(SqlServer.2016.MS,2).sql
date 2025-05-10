@@ -9,9 +9,7 @@ SELECT
 	[p].[Gender]
 FROM
 	[Person] [p]
-		CROSS APPLY (VALUES
-			(1,N'Janet',[p].[FirstName]), (2,N'Doe',NULL)
-		) [n]([PersonID], [LastName], [FirstName])
-WHERE
-	[p].[LastName] = [n].[LastName]
+		INNER JOIN (VALUES
+			(N'Janet'), (N'Doe')
+		) [n]([LastName]) ON [p].[LastName] = [n].[LastName]
 
