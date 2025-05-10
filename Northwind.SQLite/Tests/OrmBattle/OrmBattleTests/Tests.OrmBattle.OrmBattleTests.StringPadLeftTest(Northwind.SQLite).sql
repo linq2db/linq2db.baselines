@@ -17,8 +17,7 @@ FROM
 	[Customers] [c_1]
 WHERE
 	'123' || CASE
-		WHEN Length([c_1].[City]) > 8 AND [c_1].[City] IS NOT NULL
-			THEN [c_1].[City]
+		WHEN Length([c_1].[City]) > 8 THEN [c_1].[City]
 		ELSE Replicate(' ', 8 - Length([c_1].[City])) || [c_1].[City]
 	END = '123 Seattle'
 LIMIT 1
