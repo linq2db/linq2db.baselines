@@ -9,6 +9,7 @@ SELECT
 FROM
 	"TableWithGuid" "x"
 WHERE
-	"x"."NullableGuid" IS NULL AND "x"."Id" = ?
+	CAST("x"."NullableGuid" AS NVarChar(36)) IS NULL AND
+	"x"."Id" = ?
 LIMIT 2
 
