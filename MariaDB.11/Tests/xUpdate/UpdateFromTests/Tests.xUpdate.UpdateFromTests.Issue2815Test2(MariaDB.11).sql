@@ -7,7 +7,7 @@ UPDATE
 		LEFT JOIN `Issue2815Table2` `destination` ON `destination`.`ISO` = `ext`.`DES_BIC`
 		LEFT JOIN `Issue2815Table3` `channel` ON `channel`.`TreasuryCenter` = `ext`.`TREA_CENT` AND `channel`.`BIC` = `ext`.`SRC_BIC` AND `channel`.`Sepa` = CASE
 			WHEN `source`.`SEPA` AND `destination`.`SEPA` THEN CASE
-				WHEN `source`.`ISO` = `destination`.`ISO` OR `source`.`ISO` IS NULL AND `destination`.`ISO` IS NULL
+				WHEN (`source`.`ISO` = `destination`.`ISO` OR `source`.`ISO` IS NULL AND `destination`.`ISO` IS NULL) AND NOT (`source`.`ISO` IS NULL AND `destination`.`ISO` IS NOT NULL) AND NOT (`destination`.`ISO` IS NULL AND `source`.`ISO` IS NOT NULL)
 					THEN 0
 				ELSE 1
 			END
