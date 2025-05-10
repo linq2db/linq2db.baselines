@@ -11,15 +11,18 @@ GROUP BY
 	`a_Parent`.`Value1`
 HAVING
 	COUNT(CASE
-		WHEN `g_1`.`ChildID` >= 20 THEN 1
+		WHEN `g_1`.`ChildID` >= 20 AND `g_1`.`ChildID` IS NOT NULL
+			THEN 1
 		ELSE NULL
 	END) > 2 AND
 	SUM(CASE
-		WHEN `g_1`.`ChildID` >= 19 THEN `g_1`.`ParentID`
+		WHEN `g_1`.`ChildID` >= 19 AND `g_1`.`ChildID` IS NOT NULL
+			THEN `g_1`.`ParentID`
 		ELSE NULL
 	END) > 0 AND
 	MAX(CASE
-		WHEN `g_1`.`ChildID` >= 19 THEN `g_1`.`ParentID`
+		WHEN `g_1`.`ChildID` >= 19 AND `g_1`.`ChildID` IS NOT NULL
+			THEN `g_1`.`ParentID`
 		ELSE NULL
 	END) > 0
 
