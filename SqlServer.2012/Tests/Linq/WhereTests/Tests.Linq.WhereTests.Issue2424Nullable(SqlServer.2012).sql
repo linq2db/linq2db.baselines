@@ -7,8 +7,6 @@ SELECT
 	[i].[StrValueNullable]
 FROM
 	[Isue2424Table] [i]
-WHERE
-	[i].[StrValue] >= N'0'
 
 BeforeExecute
 -- SqlServer.2012
@@ -30,7 +28,7 @@ SELECT
 FROM
 	[Isue2424Table] [i]
 WHERE
-	[i].[StrValue] >= N'1'
+	[i].[StrValueNullable] >= N'1'
 
 BeforeExecute
 -- SqlServer.2012
@@ -52,7 +50,7 @@ SELECT
 FROM
 	[Isue2424Table] [i]
 WHERE
-	[i].[StrValue] >= N'3'
+	[i].[StrValueNullable] >= N'3'
 
 BeforeExecute
 -- SqlServer.2012
@@ -74,7 +72,7 @@ SELECT
 FROM
 	[Isue2424Table] [i]
 WHERE
-	[i].[StrValue] >= N'5'
+	[i].[StrValueNullable] >= N'5'
 
 BeforeExecute
 -- SqlServer.2012
@@ -96,7 +94,7 @@ SELECT
 FROM
 	[Isue2424Table] [i]
 WHERE
-	[i].[StrValue] <= N'0'
+	[i].[StrValueNullable] IS NULL OR [i].[StrValueNullable] IS NULL
 
 BeforeExecute
 -- SqlServer.2012
@@ -118,7 +116,7 @@ SELECT
 FROM
 	[Isue2424Table] [i]
 WHERE
-	[i].[StrValue] <= N'1'
+	[i].[StrValueNullable] <= N'1' OR [i].[StrValueNullable] IS NULL
 
 BeforeExecute
 -- SqlServer.2012
@@ -140,7 +138,7 @@ SELECT
 FROM
 	[Isue2424Table] [i]
 WHERE
-	[i].[StrValue] <= N'3'
+	[i].[StrValueNullable] <= N'3' OR [i].[StrValueNullable] IS NULL
 
 BeforeExecute
 -- SqlServer.2012
@@ -162,7 +160,7 @@ SELECT
 FROM
 	[Isue2424Table] [i]
 WHERE
-	[i].[StrValue] <= N'5'
+	[i].[StrValueNullable] <= N'5' OR [i].[StrValueNullable] IS NULL
 
 BeforeExecute
 -- SqlServer.2012
@@ -184,7 +182,7 @@ SELECT
 FROM
 	[Isue2424Table] [i]
 WHERE
-	[i].[StrValue] > N'0'
+	[i].[StrValueNullable] IS NOT NULL OR [i].[StrValueNullable] IS NOT NULL
 
 BeforeExecute
 -- SqlServer.2012
@@ -206,7 +204,7 @@ SELECT
 FROM
 	[Isue2424Table] [i]
 WHERE
-	[i].[StrValue] > N'1'
+	[i].[StrValueNullable] > N'1'
 
 BeforeExecute
 -- SqlServer.2012
@@ -228,7 +226,7 @@ SELECT
 FROM
 	[Isue2424Table] [i]
 WHERE
-	[i].[StrValue] > N'3'
+	[i].[StrValueNullable] > N'3'
 
 BeforeExecute
 -- SqlServer.2012
@@ -250,7 +248,7 @@ SELECT
 FROM
 	[Isue2424Table] [i]
 WHERE
-	[i].[StrValue] > N'5'
+	[i].[StrValueNullable] > N'5'
 
 BeforeExecute
 -- SqlServer.2012
@@ -272,7 +270,7 @@ SELECT
 FROM
 	[Isue2424Table] [i]
 WHERE
-	[i].[StrValue] < N'0'
+	1 = 0
 
 BeforeExecute
 -- SqlServer.2012
@@ -294,7 +292,7 @@ SELECT
 FROM
 	[Isue2424Table] [i]
 WHERE
-	[i].[StrValue] < N'1'
+	[i].[StrValueNullable] < N'1' OR [i].[StrValueNullable] IS NULL
 
 BeforeExecute
 -- SqlServer.2012
@@ -316,7 +314,7 @@ SELECT
 FROM
 	[Isue2424Table] [i]
 WHERE
-	[i].[StrValue] < N'3'
+	[i].[StrValueNullable] < N'3' OR [i].[StrValueNullable] IS NULL
 
 BeforeExecute
 -- SqlServer.2012
@@ -338,7 +336,7 @@ SELECT
 FROM
 	[Isue2424Table] [i]
 WHERE
-	[i].[StrValue] < N'5'
+	[i].[StrValueNullable] < N'5' OR [i].[StrValueNullable] IS NULL
 
 BeforeExecute
 -- SqlServer.2012
@@ -360,7 +358,7 @@ SELECT
 FROM
 	[Isue2424Table] [i]
 WHERE
-	[i].[StrValue] = N'0'
+	[i].[StrValueNullable] IS NULL
 
 BeforeExecute
 -- SqlServer.2012
@@ -382,7 +380,7 @@ SELECT
 FROM
 	[Isue2424Table] [i]
 WHERE
-	[i].[StrValue] = N'1'
+	[i].[StrValueNullable] = N'1'
 
 BeforeExecute
 -- SqlServer.2012
@@ -404,7 +402,7 @@ SELECT
 FROM
 	[Isue2424Table] [i]
 WHERE
-	[i].[StrValue] = N'3'
+	[i].[StrValueNullable] = N'3'
 
 BeforeExecute
 -- SqlServer.2012
@@ -426,7 +424,7 @@ SELECT
 FROM
 	[Isue2424Table] [i]
 WHERE
-	[i].[StrValue] = N'5'
+	[i].[StrValueNullable] = N'5'
 
 BeforeExecute
 -- SqlServer.2012
@@ -448,7 +446,7 @@ SELECT
 FROM
 	[Isue2424Table] [i]
 WHERE
-	[i].[StrValue] <> N'0'
+	[i].[StrValueNullable] IS NOT NULL
 
 BeforeExecute
 -- SqlServer.2012
@@ -470,7 +468,7 @@ SELECT
 FROM
 	[Isue2424Table] [i]
 WHERE
-	[i].[StrValue] <> N'1'
+	[i].[StrValueNullable] <> N'1' OR [i].[StrValueNullable] IS NULL
 
 BeforeExecute
 -- SqlServer.2012
@@ -492,7 +490,7 @@ SELECT
 FROM
 	[Isue2424Table] [i]
 WHERE
-	[i].[StrValue] <> N'3'
+	[i].[StrValueNullable] <> N'3' OR [i].[StrValueNullable] IS NULL
 
 BeforeExecute
 -- SqlServer.2012
@@ -514,7 +512,7 @@ SELECT
 FROM
 	[Isue2424Table] [i]
 WHERE
-	[i].[StrValue] <> N'5'
+	[i].[StrValueNullable] <> N'5' OR [i].[StrValueNullable] IS NULL
 
 BeforeExecute
 -- SqlServer.2012
