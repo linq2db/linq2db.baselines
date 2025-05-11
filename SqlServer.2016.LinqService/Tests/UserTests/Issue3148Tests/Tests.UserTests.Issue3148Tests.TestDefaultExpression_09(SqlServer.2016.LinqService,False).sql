@@ -19,9 +19,9 @@ FROM
 		) [t1]
 		OUTER APPLY (
 			SELECT TOP (1)
-				[a_GrandChildren_1].[ParentID],
-				[a_GrandChildren_1].[ChildID],
-				[a_GrandChildren_1].[GrandChildID]
+				NULL as [ParentID],
+				NULL as [ChildID],
+				NULL as [GrandChildID]
 			FROM
 				[GrandChild] [a_GrandChildren_1]
 			WHERE
@@ -67,9 +67,9 @@ FROM
 		) [t1]
 		OUTER APPLY (
 			SELECT TOP (1)
-				[a_GrandChildren_1].[ParentID],
-				[a_GrandChildren_1].[ChildID],
-				[a_GrandChildren_1].[GrandChildID]
+				NULL as [ParentID],
+				NULL as [ChildID],
+				NULL as [GrandChildID]
 			FROM
 				[GrandChild] [a_GrandChildren_1]
 			WHERE
