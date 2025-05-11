@@ -14,7 +14,7 @@ SET
 				LEFT JOIN "Issue2815Table3" "channel_1" ON "channel_1"."TreasuryCenter" = "ext_1"."TREA_CENT" AND "channel_1"."BIC" = "ext_1"."SRC_BIC" AND "channel_1"."Sepa" = CASE
 					WHEN "source_1"."SEPA" = 1 AND "destination_1"."SEPA" = 1
 						THEN CASE
-						WHEN ("source_1"."ISO" = "destination_1"."ISO" OR "source_1"."ISO" IS NULL AND "destination_1"."ISO" IS NULL) AND NOT ("source_1"."ISO" IS NULL AND "destination_1"."ISO" IS NOT NULL) AND NOT ("destination_1"."ISO" IS NULL AND "source_1"."ISO" IS NOT NULL)
+						WHEN "source_1"."ISO" = "destination_1"."ISO" OR "source_1"."ISO" IS NULL AND "destination_1"."ISO" IS NULL
 							THEN 0
 						ELSE 1
 					END
@@ -40,7 +40,7 @@ SET
 				LEFT JOIN "Issue2815Table3" "channel_2" ON "channel_2"."TreasuryCenter" = "ext_2"."TREA_CENT" AND "channel_2"."BIC" = "ext_2"."SRC_BIC" AND "channel_2"."Sepa" = CASE
 					WHEN "source_2"."SEPA" = 1 AND "destination_2"."SEPA" = 1
 						THEN CASE
-						WHEN ("source_2"."ISO" = "destination_2"."ISO" OR "source_2"."ISO" IS NULL AND "destination_2"."ISO" IS NULL) AND NOT ("source_2"."ISO" IS NULL AND "destination_2"."ISO" IS NOT NULL) AND NOT ("destination_2"."ISO" IS NULL AND "source_2"."ISO" IS NOT NULL)
+						WHEN "source_2"."ISO" = "destination_2"."ISO" OR "source_2"."ISO" IS NULL AND "destination_2"."ISO" IS NULL
 							THEN 0
 						ELSE 1
 					END
@@ -66,7 +66,7 @@ WHERE
 				LEFT JOIN "Issue2815Table2" "destination" ON "destination"."ISO" = "ext"."DES_BIC"
 				LEFT JOIN "Issue2815Table3" "channel" ON "channel"."TreasuryCenter" = "ext"."TREA_CENT" AND "channel"."BIC" = "ext"."SRC_BIC" AND "channel"."Sepa" = CASE
 					WHEN "source"."SEPA" = 1 AND "destination"."SEPA" = 1 THEN CASE
-						WHEN ("source"."ISO" = "destination"."ISO" OR "source"."ISO" IS NULL AND "destination"."ISO" IS NULL) AND NOT ("source"."ISO" IS NULL AND "destination"."ISO" IS NOT NULL) AND NOT ("destination"."ISO" IS NULL AND "source"."ISO" IS NOT NULL)
+						WHEN "source"."ISO" = "destination"."ISO" OR "source"."ISO" IS NULL AND "destination"."ISO" IS NULL
 							THEN 0
 						ELSE 1
 					END
