@@ -11,7 +11,7 @@ UPDATE
 SET
 	"Value" = "Source"."Value_1"
 WHERE
-	Target."Id" <> "Source"."source_Id" OR "Source"."source_Id" IS NULL
+	Target."Id" <> "Source"."source_Id"
 DELETE WHERE
-	Target."Id" <> "Source"."source_Id" OR "Source"."source_Id" IS NULL
+	Target."Id" <> "Source"."source_Id"
 
