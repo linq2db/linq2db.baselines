@@ -8,5 +8,5 @@ SELECT
 FROM
 	MappingTestClass t
 WHERE
-	bitAnd(t.Flags, toInt32(1)) <> 0 OR t.Flags IS NULL
+	bitAnd(t.Flags, toInt32(1)) <> 0
 
