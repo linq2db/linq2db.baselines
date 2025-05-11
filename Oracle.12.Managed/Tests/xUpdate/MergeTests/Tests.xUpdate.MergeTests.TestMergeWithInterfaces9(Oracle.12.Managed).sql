@@ -11,5 +11,5 @@ UPDATE
 SET
 	"Value" = "Source"."source_Value"
 WHERE
-	Target."Id" <> "Source"."source_Id" OR "Source"."source_Id" IS NULL
+	Target."Id" <> "Source"."source_Id"
 
