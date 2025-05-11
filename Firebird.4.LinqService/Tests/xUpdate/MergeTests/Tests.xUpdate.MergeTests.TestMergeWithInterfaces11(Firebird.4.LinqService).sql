@@ -9,7 +9,7 @@ USING (
 )
 ON ("Target"."Id" = "Source"."source_Id")
 
-WHEN MATCHED AND "Target"."Id" <> "Source"."source_Id" OR "Source"."source_Id" IS NULL THEN
+WHEN MATCHED AND "Target"."Id" <> "Source"."source_Id" THEN
 UPDATE
 SET
 	"Id" = 2,
