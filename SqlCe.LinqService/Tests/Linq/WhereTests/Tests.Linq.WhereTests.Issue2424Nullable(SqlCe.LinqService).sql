@@ -7,8 +7,6 @@ SELECT
 	[i].[StrValueNullable]
 FROM
 	[Isue2424Table] [i]
-WHERE
-	[i].[StrValue] >= '0'
 
 BeforeExecute
 -- SqlCe
@@ -30,7 +28,7 @@ SELECT
 FROM
 	[Isue2424Table] [i]
 WHERE
-	[i].[StrValue] >= '1'
+	[i].[StrValueNullable] >= '1'
 
 BeforeExecute
 -- SqlCe
@@ -52,7 +50,7 @@ SELECT
 FROM
 	[Isue2424Table] [i]
 WHERE
-	[i].[StrValue] >= '3'
+	[i].[StrValueNullable] >= '3'
 
 BeforeExecute
 -- SqlCe
@@ -74,7 +72,7 @@ SELECT
 FROM
 	[Isue2424Table] [i]
 WHERE
-	[i].[StrValue] >= '5'
+	[i].[StrValueNullable] >= '5'
 
 BeforeExecute
 -- SqlCe
@@ -96,7 +94,7 @@ SELECT
 FROM
 	[Isue2424Table] [i]
 WHERE
-	[i].[StrValue] <= '0'
+	[i].[StrValueNullable] IS NULL OR [i].[StrValueNullable] IS NULL
 
 BeforeExecute
 -- SqlCe
@@ -118,7 +116,7 @@ SELECT
 FROM
 	[Isue2424Table] [i]
 WHERE
-	[i].[StrValue] <= '1'
+	[i].[StrValueNullable] <= '1' OR [i].[StrValueNullable] IS NULL
 
 BeforeExecute
 -- SqlCe
@@ -140,7 +138,7 @@ SELECT
 FROM
 	[Isue2424Table] [i]
 WHERE
-	[i].[StrValue] <= '3'
+	[i].[StrValueNullable] <= '3' OR [i].[StrValueNullable] IS NULL
 
 BeforeExecute
 -- SqlCe
@@ -162,7 +160,7 @@ SELECT
 FROM
 	[Isue2424Table] [i]
 WHERE
-	[i].[StrValue] <= '5'
+	[i].[StrValueNullable] <= '5' OR [i].[StrValueNullable] IS NULL
 
 BeforeExecute
 -- SqlCe
@@ -184,7 +182,7 @@ SELECT
 FROM
 	[Isue2424Table] [i]
 WHERE
-	[i].[StrValue] > '0'
+	[i].[StrValueNullable] IS NOT NULL OR [i].[StrValueNullable] IS NOT NULL
 
 BeforeExecute
 -- SqlCe
@@ -206,7 +204,7 @@ SELECT
 FROM
 	[Isue2424Table] [i]
 WHERE
-	[i].[StrValue] > '1'
+	[i].[StrValueNullable] > '1'
 
 BeforeExecute
 -- SqlCe
@@ -228,7 +226,7 @@ SELECT
 FROM
 	[Isue2424Table] [i]
 WHERE
-	[i].[StrValue] > '3'
+	[i].[StrValueNullable] > '3'
 
 BeforeExecute
 -- SqlCe
@@ -250,7 +248,7 @@ SELECT
 FROM
 	[Isue2424Table] [i]
 WHERE
-	[i].[StrValue] > '5'
+	[i].[StrValueNullable] > '5'
 
 BeforeExecute
 -- SqlCe
@@ -272,7 +270,7 @@ SELECT
 FROM
 	[Isue2424Table] [i]
 WHERE
-	[i].[StrValue] < '0'
+	1 = 0
 
 BeforeExecute
 -- SqlCe
@@ -294,7 +292,7 @@ SELECT
 FROM
 	[Isue2424Table] [i]
 WHERE
-	[i].[StrValue] < '1'
+	[i].[StrValueNullable] < '1' OR [i].[StrValueNullable] IS NULL
 
 BeforeExecute
 -- SqlCe
@@ -316,7 +314,7 @@ SELECT
 FROM
 	[Isue2424Table] [i]
 WHERE
-	[i].[StrValue] < '3'
+	[i].[StrValueNullable] < '3' OR [i].[StrValueNullable] IS NULL
 
 BeforeExecute
 -- SqlCe
@@ -338,7 +336,7 @@ SELECT
 FROM
 	[Isue2424Table] [i]
 WHERE
-	[i].[StrValue] < '5'
+	[i].[StrValueNullable] < '5' OR [i].[StrValueNullable] IS NULL
 
 BeforeExecute
 -- SqlCe
@@ -360,7 +358,7 @@ SELECT
 FROM
 	[Isue2424Table] [i]
 WHERE
-	[i].[StrValue] = '0'
+	[i].[StrValueNullable] IS NULL
 
 BeforeExecute
 -- SqlCe
@@ -382,7 +380,7 @@ SELECT
 FROM
 	[Isue2424Table] [i]
 WHERE
-	[i].[StrValue] = '1'
+	[i].[StrValueNullable] = '1'
 
 BeforeExecute
 -- SqlCe
@@ -404,7 +402,7 @@ SELECT
 FROM
 	[Isue2424Table] [i]
 WHERE
-	[i].[StrValue] = '3'
+	[i].[StrValueNullable] = '3'
 
 BeforeExecute
 -- SqlCe
@@ -426,7 +424,7 @@ SELECT
 FROM
 	[Isue2424Table] [i]
 WHERE
-	[i].[StrValue] = '5'
+	[i].[StrValueNullable] = '5'
 
 BeforeExecute
 -- SqlCe
@@ -448,7 +446,7 @@ SELECT
 FROM
 	[Isue2424Table] [i]
 WHERE
-	[i].[StrValue] <> '0'
+	[i].[StrValueNullable] IS NOT NULL
 
 BeforeExecute
 -- SqlCe
@@ -470,7 +468,7 @@ SELECT
 FROM
 	[Isue2424Table] [i]
 WHERE
-	[i].[StrValue] <> '1'
+	[i].[StrValueNullable] <> '1' OR [i].[StrValueNullable] IS NULL
 
 BeforeExecute
 -- SqlCe
@@ -492,7 +490,7 @@ SELECT
 FROM
 	[Isue2424Table] [i]
 WHERE
-	[i].[StrValue] <> '3'
+	[i].[StrValueNullable] <> '3' OR [i].[StrValueNullable] IS NULL
 
 BeforeExecute
 -- SqlCe
@@ -514,7 +512,7 @@ SELECT
 FROM
 	[Isue2424Table] [i]
 WHERE
-	[i].[StrValue] <> '5'
+	[i].[StrValueNullable] <> '5' OR [i].[StrValueNullable] IS NULL
 
 BeforeExecute
 -- SqlCe

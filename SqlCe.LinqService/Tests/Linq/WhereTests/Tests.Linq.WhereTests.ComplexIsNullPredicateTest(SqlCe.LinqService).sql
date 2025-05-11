@@ -9,26 +9,12 @@ FROM
 WHERE
 	CASE
 		WHEN [r].[Value] = '123' AND [r].[Value] IS NOT NULL THEN 1
-		WHEN [r].[Value] <> '123' OR [r].[Value] IS NULL THEN 0
-		ELSE NULL
+		ELSE 0
 	END = CASE
 		WHEN [r].[Value] = '1' AND [r].[Value] IS NOT NULL OR [r].[Value] = 'test' AND [r].[Value] IS NOT NULL AND ([r].[Value] <> '1' OR [r].[Value] IS NULL)
 			THEN 1
-		WHEN NOT ([r].[Value] = '1' AND [r].[Value] IS NOT NULL OR [r].[Value] = 'test' AND [r].[Value] IS NOT NULL AND ([r].[Value] <> '1' OR [r].[Value] IS NULL))
-			THEN 0
-		ELSE NULL
-	END OR
-	CASE
-		WHEN [r].[Value] = '123' AND [r].[Value] IS NOT NULL THEN 1
-		WHEN [r].[Value] <> '123' OR [r].[Value] IS NULL THEN 0
-		ELSE NULL
-	END IS NULL AND CASE
-		WHEN [r].[Value] = '1' AND [r].[Value] IS NOT NULL OR [r].[Value] = 'test' AND [r].[Value] IS NOT NULL AND ([r].[Value] <> '1' OR [r].[Value] IS NULL)
-			THEN 1
-		WHEN NOT ([r].[Value] = '1' AND [r].[Value] IS NOT NULL OR [r].[Value] = 'test' AND [r].[Value] IS NOT NULL AND ([r].[Value] <> '1' OR [r].[Value] IS NULL))
-			THEN 0
-		ELSE NULL
-	END IS NULL
+		ELSE 0
+	END
 ORDER BY
 	[r].[Id]
 
