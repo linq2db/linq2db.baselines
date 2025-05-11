@@ -12,5 +12,5 @@ SET
 	"Value" = "Source"."Value_1"
 
 DELETE WHERE
-	Target."Id" <> "Source"."source_Id" OR "Source"."source_Id" IS NULL
+	Target."Id" <> "Source"."source_Id"
 
