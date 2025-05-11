@@ -949,8 +949,7 @@ SELECT
 	END::BOOLEAN,
 	CASE
 		WHEN CASE
-			WHEN r.BooleanN = 'f'::BOOLEAN AND r.BooleanN IS NOT NULL
-				THEN r.Int32N
+			WHEN r.BooleanN = 'f'::BOOLEAN THEN r.Int32N
 			ELSE r.Int32
 		END = 0
 			THEN 't'::BOOLEAN
@@ -966,8 +965,7 @@ SELECT
 	END::BOOLEAN,
 	CASE
 		WHEN CASE
-			WHEN r.BooleanN = 'f'::BOOLEAN AND r.BooleanN IS NOT NULL
-				THEN r.DecimalN
+			WHEN r.BooleanN = 'f'::BOOLEAN THEN r.DecimalN
 			ELSE r."Decimal"
 		END = 0
 			THEN 't'::BOOLEAN
@@ -983,8 +981,7 @@ SELECT
 	END::BOOLEAN,
 	CASE
 		WHEN CASE
-			WHEN r.BooleanN = 'f'::BOOLEAN AND r.BooleanN IS NOT NULL
-				THEN r.DoubleN
+			WHEN r.BooleanN = 'f'::BOOLEAN THEN r.DoubleN
 			ELSE r."Double"
 		END = 0
 			THEN 't'::BOOLEAN
@@ -1018,8 +1015,7 @@ SELECT
 	END::BOOLEAN,
 	CASE
 		WHEN CASE
-			WHEN r.BooleanN = 'f'::BOOLEAN AND r.BooleanN IS NOT NULL
-				THEN r.Int32N
+			WHEN r.BooleanN = 'f'::BOOLEAN THEN r.Int32N
 			ELSE r.Int32
 		END > 0
 			THEN 't'::BOOLEAN
@@ -1035,8 +1031,7 @@ SELECT
 	END::BOOLEAN,
 	CASE
 		WHEN CASE
-			WHEN r.BooleanN = 'f'::BOOLEAN AND r.BooleanN IS NOT NULL
-				THEN r.DecimalN
+			WHEN r.BooleanN = 'f'::BOOLEAN THEN r.DecimalN
 			ELSE r."Decimal"
 		END > 0
 			THEN 't'::BOOLEAN
@@ -1052,8 +1047,7 @@ SELECT
 	END::BOOLEAN,
 	CASE
 		WHEN CASE
-			WHEN r.BooleanN = 'f'::BOOLEAN AND r.BooleanN IS NOT NULL
-				THEN r.DoubleN
+			WHEN r.BooleanN = 'f'::BOOLEAN THEN r.DoubleN
 			ELSE r."Double"
 		END > 0
 			THEN 't'::BOOLEAN
@@ -1087,8 +1081,7 @@ SELECT
 	END::BOOLEAN,
 	CASE
 		WHEN CASE
-			WHEN r.BooleanN = 'f'::BOOLEAN AND r.BooleanN IS NOT NULL
-				THEN r.Int32N
+			WHEN r.BooleanN = 'f'::BOOLEAN THEN r.Int32N
 			ELSE r.Int32
 		END >= 0
 			THEN 't'::BOOLEAN
@@ -1104,8 +1097,7 @@ SELECT
 	END::BOOLEAN,
 	CASE
 		WHEN CASE
-			WHEN r.BooleanN = 'f'::BOOLEAN AND r.BooleanN IS NOT NULL
-				THEN r.DecimalN
+			WHEN r.BooleanN = 'f'::BOOLEAN THEN r.DecimalN
 			ELSE r."Decimal"
 		END >= 0
 			THEN 't'::BOOLEAN
@@ -1121,8 +1113,7 @@ SELECT
 	END::BOOLEAN,
 	CASE
 		WHEN CASE
-			WHEN r.BooleanN = 'f'::BOOLEAN AND r.BooleanN IS NOT NULL
-				THEN r.DoubleN
+			WHEN r.BooleanN = 'f'::BOOLEAN THEN r.DoubleN
 			ELSE r."Double"
 		END >= 0
 			THEN 't'::BOOLEAN
@@ -1156,8 +1147,7 @@ SELECT
 	END::BOOLEAN,
 	CASE
 		WHEN CASE
-			WHEN r.BooleanN = 'f'::BOOLEAN AND r.BooleanN IS NOT NULL
-				THEN r.Int32N
+			WHEN r.BooleanN = 'f'::BOOLEAN THEN r.Int32N
 			ELSE r.Int32
 		END < 0
 			THEN 't'::BOOLEAN
@@ -1173,8 +1163,7 @@ SELECT
 	END::BOOLEAN,
 	CASE
 		WHEN CASE
-			WHEN r.BooleanN = 'f'::BOOLEAN AND r.BooleanN IS NOT NULL
-				THEN r.DecimalN
+			WHEN r.BooleanN = 'f'::BOOLEAN THEN r.DecimalN
 			ELSE r."Decimal"
 		END < 0
 			THEN 't'::BOOLEAN
@@ -1190,8 +1179,7 @@ SELECT
 	END::BOOLEAN,
 	CASE
 		WHEN CASE
-			WHEN r.BooleanN = 'f'::BOOLEAN AND r.BooleanN IS NOT NULL
-				THEN r.DoubleN
+			WHEN r.BooleanN = 'f'::BOOLEAN THEN r.DoubleN
 			ELSE r."Double"
 		END < 0
 			THEN 't'::BOOLEAN
@@ -1225,8 +1213,7 @@ SELECT
 	END::BOOLEAN,
 	CASE
 		WHEN CASE
-			WHEN r.BooleanN = 'f'::BOOLEAN AND r.BooleanN IS NOT NULL
-				THEN r.Int32N
+			WHEN r.BooleanN = 'f'::BOOLEAN THEN r.Int32N
 			ELSE r.Int32
 		END <= 0
 			THEN 't'::BOOLEAN
@@ -1242,8 +1229,7 @@ SELECT
 	END::BOOLEAN,
 	CASE
 		WHEN CASE
-			WHEN r.BooleanN = 'f'::BOOLEAN AND r.BooleanN IS NOT NULL
-				THEN r.DecimalN
+			WHEN r.BooleanN = 'f'::BOOLEAN THEN r.DecimalN
 			ELSE r."Decimal"
 		END <= 0
 			THEN 't'::BOOLEAN
@@ -1259,8 +1245,7 @@ SELECT
 	END::BOOLEAN,
 	CASE
 		WHEN CASE
-			WHEN r.BooleanN = 'f'::BOOLEAN AND r.BooleanN IS NOT NULL
-				THEN r.DoubleN
+			WHEN r.BooleanN = 'f'::BOOLEAN THEN r.DoubleN
 			ELSE r."Double"
 		END <= 0
 			THEN 't'::BOOLEAN
@@ -1299,8 +1284,7 @@ SELECT
 	END::BOOLEAN,
 	CASE
 		WHEN CASE
-			WHEN r_1.BooleanN = 'f'::BOOLEAN AND r_1.BooleanN IS NOT NULL
-				THEN r_1.Int32N
+			WHEN r_1.BooleanN = 'f'::BOOLEAN THEN r_1.Int32N
 			ELSE r_1.Int32
 		END = 0
 			THEN 't'::BOOLEAN
@@ -1316,8 +1300,7 @@ SELECT
 	END::BOOLEAN,
 	CASE
 		WHEN CASE
-			WHEN r_1.BooleanN = 'f'::BOOLEAN AND r_1.BooleanN IS NOT NULL
-				THEN r_1.DecimalN
+			WHEN r_1.BooleanN = 'f'::BOOLEAN THEN r_1.DecimalN
 			ELSE r_1."Decimal"
 		END = 0
 			THEN 't'::BOOLEAN
@@ -1333,8 +1316,7 @@ SELECT
 	END::BOOLEAN,
 	CASE
 		WHEN CASE
-			WHEN r_1.BooleanN = 'f'::BOOLEAN AND r_1.BooleanN IS NOT NULL
-				THEN r_1.DoubleN
+			WHEN r_1.BooleanN = 'f'::BOOLEAN THEN r_1.DoubleN
 			ELSE r_1."Double"
 		END = 0
 			THEN 't'::BOOLEAN
@@ -1368,8 +1350,7 @@ SELECT
 	END::BOOLEAN,
 	CASE
 		WHEN CASE
-			WHEN r_1.BooleanN = 'f'::BOOLEAN AND r_1.BooleanN IS NOT NULL
-				THEN r_1.Int32N
+			WHEN r_1.BooleanN = 'f'::BOOLEAN THEN r_1.Int32N
 			ELSE r_1.Int32
 		END > 0
 			THEN 't'::BOOLEAN
@@ -1385,8 +1366,7 @@ SELECT
 	END::BOOLEAN,
 	CASE
 		WHEN CASE
-			WHEN r_1.BooleanN = 'f'::BOOLEAN AND r_1.BooleanN IS NOT NULL
-				THEN r_1.DecimalN
+			WHEN r_1.BooleanN = 'f'::BOOLEAN THEN r_1.DecimalN
 			ELSE r_1."Decimal"
 		END > 0
 			THEN 't'::BOOLEAN
@@ -1402,8 +1382,7 @@ SELECT
 	END::BOOLEAN,
 	CASE
 		WHEN CASE
-			WHEN r_1.BooleanN = 'f'::BOOLEAN AND r_1.BooleanN IS NOT NULL
-				THEN r_1.DoubleN
+			WHEN r_1.BooleanN = 'f'::BOOLEAN THEN r_1.DoubleN
 			ELSE r_1."Double"
 		END > 0
 			THEN 't'::BOOLEAN
@@ -1437,8 +1416,7 @@ SELECT
 	END::BOOLEAN,
 	CASE
 		WHEN CASE
-			WHEN r_1.BooleanN = 'f'::BOOLEAN AND r_1.BooleanN IS NOT NULL
-				THEN r_1.Int32N
+			WHEN r_1.BooleanN = 'f'::BOOLEAN THEN r_1.Int32N
 			ELSE r_1.Int32
 		END >= 0
 			THEN 't'::BOOLEAN
@@ -1454,8 +1432,7 @@ SELECT
 	END::BOOLEAN,
 	CASE
 		WHEN CASE
-			WHEN r_1.BooleanN = 'f'::BOOLEAN AND r_1.BooleanN IS NOT NULL
-				THEN r_1.DecimalN
+			WHEN r_1.BooleanN = 'f'::BOOLEAN THEN r_1.DecimalN
 			ELSE r_1."Decimal"
 		END >= 0
 			THEN 't'::BOOLEAN
@@ -1471,8 +1448,7 @@ SELECT
 	END::BOOLEAN,
 	CASE
 		WHEN CASE
-			WHEN r_1.BooleanN = 'f'::BOOLEAN AND r_1.BooleanN IS NOT NULL
-				THEN r_1.DoubleN
+			WHEN r_1.BooleanN = 'f'::BOOLEAN THEN r_1.DoubleN
 			ELSE r_1."Double"
 		END >= 0
 			THEN 't'::BOOLEAN
@@ -1506,8 +1482,7 @@ SELECT
 	END::BOOLEAN,
 	CASE
 		WHEN CASE
-			WHEN r_1.BooleanN = 'f'::BOOLEAN AND r_1.BooleanN IS NOT NULL
-				THEN r_1.Int32N
+			WHEN r_1.BooleanN = 'f'::BOOLEAN THEN r_1.Int32N
 			ELSE r_1.Int32
 		END < 0
 			THEN 't'::BOOLEAN
@@ -1523,8 +1498,7 @@ SELECT
 	END::BOOLEAN,
 	CASE
 		WHEN CASE
-			WHEN r_1.BooleanN = 'f'::BOOLEAN AND r_1.BooleanN IS NOT NULL
-				THEN r_1.DecimalN
+			WHEN r_1.BooleanN = 'f'::BOOLEAN THEN r_1.DecimalN
 			ELSE r_1."Decimal"
 		END < 0
 			THEN 't'::BOOLEAN
@@ -1540,8 +1514,7 @@ SELECT
 	END::BOOLEAN,
 	CASE
 		WHEN CASE
-			WHEN r_1.BooleanN = 'f'::BOOLEAN AND r_1.BooleanN IS NOT NULL
-				THEN r_1.DoubleN
+			WHEN r_1.BooleanN = 'f'::BOOLEAN THEN r_1.DoubleN
 			ELSE r_1."Double"
 		END < 0
 			THEN 't'::BOOLEAN
@@ -1575,8 +1548,7 @@ SELECT
 	END::BOOLEAN,
 	CASE
 		WHEN CASE
-			WHEN r_1.BooleanN = 'f'::BOOLEAN AND r_1.BooleanN IS NOT NULL
-				THEN r_1.Int32N
+			WHEN r_1.BooleanN = 'f'::BOOLEAN THEN r_1.Int32N
 			ELSE r_1.Int32
 		END <= 0
 			THEN 't'::BOOLEAN
@@ -1592,8 +1564,7 @@ SELECT
 	END::BOOLEAN,
 	CASE
 		WHEN CASE
-			WHEN r_1.BooleanN = 'f'::BOOLEAN AND r_1.BooleanN IS NOT NULL
-				THEN r_1.DecimalN
+			WHEN r_1.BooleanN = 'f'::BOOLEAN THEN r_1.DecimalN
 			ELSE r_1."Decimal"
 		END <= 0
 			THEN 't'::BOOLEAN
@@ -1609,8 +1580,7 @@ SELECT
 	END::BOOLEAN,
 	CASE
 		WHEN CASE
-			WHEN r_1.BooleanN = 'f'::BOOLEAN AND r_1.BooleanN IS NOT NULL
-				THEN r_1.DoubleN
+			WHEN r_1.BooleanN = 'f'::BOOLEAN THEN r_1.DoubleN
 			ELSE r_1."Double"
 		END <= 0
 			THEN 't'::BOOLEAN
@@ -2538,8 +2508,7 @@ SELECT
 	END::BOOLEAN,
 	CASE
 		WHEN CASE
-			WHEN r.BooleanN = 'f'::BOOLEAN AND r.BooleanN IS NOT NULL
-				THEN r.Int32N
+			WHEN r.BooleanN = 'f'::BOOLEAN THEN r.Int32N
 			ELSE r.Int32
 		END = 0
 			THEN 't'::BOOLEAN
@@ -2555,8 +2524,7 @@ SELECT
 	END::BOOLEAN,
 	CASE
 		WHEN CASE
-			WHEN r.BooleanN = 'f'::BOOLEAN AND r.BooleanN IS NOT NULL
-				THEN r.DecimalN
+			WHEN r.BooleanN = 'f'::BOOLEAN THEN r.DecimalN
 			ELSE r."Decimal"
 		END = 0
 			THEN 't'::BOOLEAN
@@ -2572,8 +2540,7 @@ SELECT
 	END::BOOLEAN,
 	CASE
 		WHEN CASE
-			WHEN r.BooleanN = 'f'::BOOLEAN AND r.BooleanN IS NOT NULL
-				THEN r.DoubleN
+			WHEN r.BooleanN = 'f'::BOOLEAN THEN r.DoubleN
 			ELSE r."Double"
 		END = 0
 			THEN 't'::BOOLEAN
@@ -2607,8 +2574,7 @@ SELECT
 	END::BOOLEAN,
 	CASE
 		WHEN CASE
-			WHEN r.BooleanN = 'f'::BOOLEAN AND r.BooleanN IS NOT NULL
-				THEN r.Int32N
+			WHEN r.BooleanN = 'f'::BOOLEAN THEN r.Int32N
 			ELSE r.Int32
 		END > 0
 			THEN 't'::BOOLEAN
@@ -2624,8 +2590,7 @@ SELECT
 	END::BOOLEAN,
 	CASE
 		WHEN CASE
-			WHEN r.BooleanN = 'f'::BOOLEAN AND r.BooleanN IS NOT NULL
-				THEN r.DecimalN
+			WHEN r.BooleanN = 'f'::BOOLEAN THEN r.DecimalN
 			ELSE r."Decimal"
 		END > 0
 			THEN 't'::BOOLEAN
@@ -2641,8 +2606,7 @@ SELECT
 	END::BOOLEAN,
 	CASE
 		WHEN CASE
-			WHEN r.BooleanN = 'f'::BOOLEAN AND r.BooleanN IS NOT NULL
-				THEN r.DoubleN
+			WHEN r.BooleanN = 'f'::BOOLEAN THEN r.DoubleN
 			ELSE r."Double"
 		END > 0
 			THEN 't'::BOOLEAN
@@ -2676,8 +2640,7 @@ SELECT
 	END::BOOLEAN,
 	CASE
 		WHEN CASE
-			WHEN r.BooleanN = 'f'::BOOLEAN AND r.BooleanN IS NOT NULL
-				THEN r.Int32N
+			WHEN r.BooleanN = 'f'::BOOLEAN THEN r.Int32N
 			ELSE r.Int32
 		END >= 0
 			THEN 't'::BOOLEAN
@@ -2693,8 +2656,7 @@ SELECT
 	END::BOOLEAN,
 	CASE
 		WHEN CASE
-			WHEN r.BooleanN = 'f'::BOOLEAN AND r.BooleanN IS NOT NULL
-				THEN r.DecimalN
+			WHEN r.BooleanN = 'f'::BOOLEAN THEN r.DecimalN
 			ELSE r."Decimal"
 		END >= 0
 			THEN 't'::BOOLEAN
@@ -2710,8 +2672,7 @@ SELECT
 	END::BOOLEAN,
 	CASE
 		WHEN CASE
-			WHEN r.BooleanN = 'f'::BOOLEAN AND r.BooleanN IS NOT NULL
-				THEN r.DoubleN
+			WHEN r.BooleanN = 'f'::BOOLEAN THEN r.DoubleN
 			ELSE r."Double"
 		END >= 0
 			THEN 't'::BOOLEAN
@@ -2745,8 +2706,7 @@ SELECT
 	END::BOOLEAN,
 	CASE
 		WHEN CASE
-			WHEN r.BooleanN = 'f'::BOOLEAN AND r.BooleanN IS NOT NULL
-				THEN r.Int32N
+			WHEN r.BooleanN = 'f'::BOOLEAN THEN r.Int32N
 			ELSE r.Int32
 		END < 0
 			THEN 't'::BOOLEAN
@@ -2762,8 +2722,7 @@ SELECT
 	END::BOOLEAN,
 	CASE
 		WHEN CASE
-			WHEN r.BooleanN = 'f'::BOOLEAN AND r.BooleanN IS NOT NULL
-				THEN r.DecimalN
+			WHEN r.BooleanN = 'f'::BOOLEAN THEN r.DecimalN
 			ELSE r."Decimal"
 		END < 0
 			THEN 't'::BOOLEAN
@@ -2779,8 +2738,7 @@ SELECT
 	END::BOOLEAN,
 	CASE
 		WHEN CASE
-			WHEN r.BooleanN = 'f'::BOOLEAN AND r.BooleanN IS NOT NULL
-				THEN r.DoubleN
+			WHEN r.BooleanN = 'f'::BOOLEAN THEN r.DoubleN
 			ELSE r."Double"
 		END < 0
 			THEN 't'::BOOLEAN
@@ -2814,8 +2772,7 @@ SELECT
 	END::BOOLEAN,
 	CASE
 		WHEN CASE
-			WHEN r.BooleanN = 'f'::BOOLEAN AND r.BooleanN IS NOT NULL
-				THEN r.Int32N
+			WHEN r.BooleanN = 'f'::BOOLEAN THEN r.Int32N
 			ELSE r.Int32
 		END <= 0
 			THEN 't'::BOOLEAN
@@ -2831,8 +2788,7 @@ SELECT
 	END::BOOLEAN,
 	CASE
 		WHEN CASE
-			WHEN r.BooleanN = 'f'::BOOLEAN AND r.BooleanN IS NOT NULL
-				THEN r.DecimalN
+			WHEN r.BooleanN = 'f'::BOOLEAN THEN r.DecimalN
 			ELSE r."Decimal"
 		END <= 0
 			THEN 't'::BOOLEAN
@@ -2848,8 +2804,7 @@ SELECT
 	END::BOOLEAN,
 	CASE
 		WHEN CASE
-			WHEN r.BooleanN = 'f'::BOOLEAN AND r.BooleanN IS NOT NULL
-				THEN r.DoubleN
+			WHEN r.BooleanN = 'f'::BOOLEAN THEN r.DoubleN
 			ELSE r."Double"
 		END <= 0
 			THEN 't'::BOOLEAN
@@ -2888,8 +2843,7 @@ SELECT
 	END::BOOLEAN,
 	CASE
 		WHEN CASE
-			WHEN r_1.BooleanN = 'f'::BOOLEAN AND r_1.BooleanN IS NOT NULL
-				THEN r_1.Int32N
+			WHEN r_1.BooleanN = 'f'::BOOLEAN THEN r_1.Int32N
 			ELSE r_1.Int32
 		END = 0
 			THEN 't'::BOOLEAN
@@ -2905,8 +2859,7 @@ SELECT
 	END::BOOLEAN,
 	CASE
 		WHEN CASE
-			WHEN r_1.BooleanN = 'f'::BOOLEAN AND r_1.BooleanN IS NOT NULL
-				THEN r_1.DecimalN
+			WHEN r_1.BooleanN = 'f'::BOOLEAN THEN r_1.DecimalN
 			ELSE r_1."Decimal"
 		END = 0
 			THEN 't'::BOOLEAN
@@ -2922,8 +2875,7 @@ SELECT
 	END::BOOLEAN,
 	CASE
 		WHEN CASE
-			WHEN r_1.BooleanN = 'f'::BOOLEAN AND r_1.BooleanN IS NOT NULL
-				THEN r_1.DoubleN
+			WHEN r_1.BooleanN = 'f'::BOOLEAN THEN r_1.DoubleN
 			ELSE r_1."Double"
 		END = 0
 			THEN 't'::BOOLEAN
@@ -2957,8 +2909,7 @@ SELECT
 	END::BOOLEAN,
 	CASE
 		WHEN CASE
-			WHEN r_1.BooleanN = 'f'::BOOLEAN AND r_1.BooleanN IS NOT NULL
-				THEN r_1.Int32N
+			WHEN r_1.BooleanN = 'f'::BOOLEAN THEN r_1.Int32N
 			ELSE r_1.Int32
 		END > 0
 			THEN 't'::BOOLEAN
@@ -2974,8 +2925,7 @@ SELECT
 	END::BOOLEAN,
 	CASE
 		WHEN CASE
-			WHEN r_1.BooleanN = 'f'::BOOLEAN AND r_1.BooleanN IS NOT NULL
-				THEN r_1.DecimalN
+			WHEN r_1.BooleanN = 'f'::BOOLEAN THEN r_1.DecimalN
 			ELSE r_1."Decimal"
 		END > 0
 			THEN 't'::BOOLEAN
@@ -2991,8 +2941,7 @@ SELECT
 	END::BOOLEAN,
 	CASE
 		WHEN CASE
-			WHEN r_1.BooleanN = 'f'::BOOLEAN AND r_1.BooleanN IS NOT NULL
-				THEN r_1.DoubleN
+			WHEN r_1.BooleanN = 'f'::BOOLEAN THEN r_1.DoubleN
 			ELSE r_1."Double"
 		END > 0
 			THEN 't'::BOOLEAN
@@ -3026,8 +2975,7 @@ SELECT
 	END::BOOLEAN,
 	CASE
 		WHEN CASE
-			WHEN r_1.BooleanN = 'f'::BOOLEAN AND r_1.BooleanN IS NOT NULL
-				THEN r_1.Int32N
+			WHEN r_1.BooleanN = 'f'::BOOLEAN THEN r_1.Int32N
 			ELSE r_1.Int32
 		END >= 0
 			THEN 't'::BOOLEAN
@@ -3043,8 +2991,7 @@ SELECT
 	END::BOOLEAN,
 	CASE
 		WHEN CASE
-			WHEN r_1.BooleanN = 'f'::BOOLEAN AND r_1.BooleanN IS NOT NULL
-				THEN r_1.DecimalN
+			WHEN r_1.BooleanN = 'f'::BOOLEAN THEN r_1.DecimalN
 			ELSE r_1."Decimal"
 		END >= 0
 			THEN 't'::BOOLEAN
@@ -3060,8 +3007,7 @@ SELECT
 	END::BOOLEAN,
 	CASE
 		WHEN CASE
-			WHEN r_1.BooleanN = 'f'::BOOLEAN AND r_1.BooleanN IS NOT NULL
-				THEN r_1.DoubleN
+			WHEN r_1.BooleanN = 'f'::BOOLEAN THEN r_1.DoubleN
 			ELSE r_1."Double"
 		END >= 0
 			THEN 't'::BOOLEAN
@@ -3095,8 +3041,7 @@ SELECT
 	END::BOOLEAN,
 	CASE
 		WHEN CASE
-			WHEN r_1.BooleanN = 'f'::BOOLEAN AND r_1.BooleanN IS NOT NULL
-				THEN r_1.Int32N
+			WHEN r_1.BooleanN = 'f'::BOOLEAN THEN r_1.Int32N
 			ELSE r_1.Int32
 		END < 0
 			THEN 't'::BOOLEAN
@@ -3112,8 +3057,7 @@ SELECT
 	END::BOOLEAN,
 	CASE
 		WHEN CASE
-			WHEN r_1.BooleanN = 'f'::BOOLEAN AND r_1.BooleanN IS NOT NULL
-				THEN r_1.DecimalN
+			WHEN r_1.BooleanN = 'f'::BOOLEAN THEN r_1.DecimalN
 			ELSE r_1."Decimal"
 		END < 0
 			THEN 't'::BOOLEAN
@@ -3129,8 +3073,7 @@ SELECT
 	END::BOOLEAN,
 	CASE
 		WHEN CASE
-			WHEN r_1.BooleanN = 'f'::BOOLEAN AND r_1.BooleanN IS NOT NULL
-				THEN r_1.DoubleN
+			WHEN r_1.BooleanN = 'f'::BOOLEAN THEN r_1.DoubleN
 			ELSE r_1."Double"
 		END < 0
 			THEN 't'::BOOLEAN
@@ -3164,8 +3107,7 @@ SELECT
 	END::BOOLEAN,
 	CASE
 		WHEN CASE
-			WHEN r_1.BooleanN = 'f'::BOOLEAN AND r_1.BooleanN IS NOT NULL
-				THEN r_1.Int32N
+			WHEN r_1.BooleanN = 'f'::BOOLEAN THEN r_1.Int32N
 			ELSE r_1.Int32
 		END <= 0
 			THEN 't'::BOOLEAN
@@ -3181,8 +3123,7 @@ SELECT
 	END::BOOLEAN,
 	CASE
 		WHEN CASE
-			WHEN r_1.BooleanN = 'f'::BOOLEAN AND r_1.BooleanN IS NOT NULL
-				THEN r_1.DecimalN
+			WHEN r_1.BooleanN = 'f'::BOOLEAN THEN r_1.DecimalN
 			ELSE r_1."Decimal"
 		END <= 0
 			THEN 't'::BOOLEAN
@@ -3198,8 +3139,7 @@ SELECT
 	END::BOOLEAN,
 	CASE
 		WHEN CASE
-			WHEN r_1.BooleanN = 'f'::BOOLEAN AND r_1.BooleanN IS NOT NULL
-				THEN r_1.DoubleN
+			WHEN r_1.BooleanN = 'f'::BOOLEAN THEN r_1.DoubleN
 			ELSE r_1."Double"
 		END <= 0
 			THEN 't'::BOOLEAN

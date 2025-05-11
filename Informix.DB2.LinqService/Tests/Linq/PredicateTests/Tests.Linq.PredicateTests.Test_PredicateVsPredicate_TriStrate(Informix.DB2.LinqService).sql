@@ -52,15 +52,7 @@ WHERE
 		WHEN NOT (r.Value4 = r.Value2) THEN 'f'::BOOLEAN
 		ELSE NULL
 	END OR
-	CASE
-		WHEN (r.Value1 = r.Value5) THEN 't'::BOOLEAN
-		WHEN NOT (r.Value1 = r.Value5) THEN 'f'::BOOLEAN
-		ELSE NULL
-	END IS NULL AND CASE
-		WHEN (r.Value4 = r.Value2) THEN 't'::BOOLEAN
-		WHEN NOT (r.Value4 = r.Value2) THEN 'f'::BOOLEAN
-		ELSE NULL
-	END IS NULL
+	(r.Value1 IS NULL OR r.Value5 IS NULL) AND (r.Value4 IS NULL OR r.Value2 IS NULL)
 
 BeforeExecute
 -- Informix.DB2 Informix
@@ -94,11 +86,7 @@ WHERE
 		WHEN NOT (r.Value4 = r.Value5) THEN 'f'::BOOLEAN
 		ELSE NULL
 	END OR
-	CASE
-		WHEN (r.Value4 = r.Value5) THEN 't'::BOOLEAN
-		WHEN NOT (r.Value4 = r.Value5) THEN 'f'::BOOLEAN
-		ELSE NULL
-	END IS NULL
+	r.Value4 IS NULL OR r.Value5 IS NULL
 
 BeforeExecute
 -- Informix.DB2 Informix
@@ -133,24 +121,8 @@ WHERE
 		WHEN NOT (r.Value4 = r.Value2) THEN 'f'::BOOLEAN
 		ELSE NULL
 	END OR
-	CASE
-		WHEN (r.Value1 = r.Value5) THEN 't'::BOOLEAN
-		WHEN NOT (r.Value1 = r.Value5) THEN 'f'::BOOLEAN
-		ELSE NULL
-	END IS NULL AND CASE
-		WHEN (r.Value4 = r.Value2) THEN 't'::BOOLEAN
-		WHEN NOT (r.Value4 = r.Value2) THEN 'f'::BOOLEAN
-		ELSE NULL
-	END IS NOT NULL OR
-	CASE
-		WHEN (r.Value1 = r.Value5) THEN 't'::BOOLEAN
-		WHEN NOT (r.Value1 = r.Value5) THEN 'f'::BOOLEAN
-		ELSE NULL
-	END IS NOT NULL AND CASE
-		WHEN (r.Value4 = r.Value2) THEN 't'::BOOLEAN
-		WHEN NOT (r.Value4 = r.Value2) THEN 'f'::BOOLEAN
-		ELSE NULL
-	END IS NULL
+	(r.Value1 IS NULL OR r.Value5 IS NULL) AND NOT (r.Value4 IS NULL OR r.Value2 IS NULL) OR
+	NOT (r.Value1 IS NULL OR r.Value5 IS NULL) AND (r.Value4 IS NULL OR r.Value2 IS NULL)
 
 BeforeExecute
 -- Informix.DB2 Informix
@@ -249,15 +221,7 @@ WHERE
 		WHEN NOT (r.Value5 = r.Value4) THEN 'f'::BOOLEAN
 		ELSE NULL
 	END OR
-	CASE
-		WHEN (r.Value4 = r.Value5) THEN 't'::BOOLEAN
-		WHEN NOT (r.Value4 = r.Value5) THEN 'f'::BOOLEAN
-		ELSE NULL
-	END IS NULL AND CASE
-		WHEN (r.Value5 = r.Value4) THEN 't'::BOOLEAN
-		WHEN NOT (r.Value5 = r.Value4) THEN 'f'::BOOLEAN
-		ELSE NULL
-	END IS NULL
+	(r.Value4 IS NULL OR r.Value5 IS NULL) AND (r.Value5 IS NULL OR r.Value4 IS NULL)
 
 BeforeExecute
 -- Informix.DB2 Informix
@@ -292,24 +256,8 @@ WHERE
 		WHEN NOT (r.Value5 = r.Value4) THEN 'f'::BOOLEAN
 		ELSE NULL
 	END OR
-	CASE
-		WHEN (r.Value4 = r.Value5) THEN 't'::BOOLEAN
-		WHEN NOT (r.Value4 = r.Value5) THEN 'f'::BOOLEAN
-		ELSE NULL
-	END IS NULL AND CASE
-		WHEN (r.Value5 = r.Value4) THEN 't'::BOOLEAN
-		WHEN NOT (r.Value5 = r.Value4) THEN 'f'::BOOLEAN
-		ELSE NULL
-	END IS NOT NULL OR
-	CASE
-		WHEN (r.Value4 = r.Value5) THEN 't'::BOOLEAN
-		WHEN NOT (r.Value4 = r.Value5) THEN 'f'::BOOLEAN
-		ELSE NULL
-	END IS NOT NULL AND CASE
-		WHEN (r.Value5 = r.Value4) THEN 't'::BOOLEAN
-		WHEN NOT (r.Value5 = r.Value4) THEN 'f'::BOOLEAN
-		ELSE NULL
-	END IS NULL
+	(r.Value4 IS NULL OR r.Value5 IS NULL) AND NOT (r.Value5 IS NULL OR r.Value4 IS NULL) OR
+	NOT (r.Value4 IS NULL OR r.Value5 IS NULL) AND (r.Value5 IS NULL OR r.Value4 IS NULL)
 
 BeforeExecute
 -- Informix.DB2 Informix
@@ -370,22 +318,12 @@ FROM
 WHERE
 	CASE
 		WHEN r.Value1 >= r.Value5 AND r.Value5 IS NOT NULL THEN 't'::BOOLEAN
-		WHEN r.Value1 < r.Value5 OR r.Value5 IS NULL THEN 'f'::BOOLEAN
-		ELSE NULL
+		ELSE 'f'::BOOLEAN
 	END = CASE
 		WHEN (r.Value4 <> r.Value2) THEN 't'::BOOLEAN
 		WHEN NOT (r.Value4 <> r.Value2) THEN 'f'::BOOLEAN
 		ELSE NULL
-	END OR
-	CASE
-		WHEN r.Value1 >= r.Value5 AND r.Value5 IS NOT NULL THEN 't'::BOOLEAN
-		WHEN r.Value1 < r.Value5 OR r.Value5 IS NULL THEN 'f'::BOOLEAN
-		ELSE NULL
-	END IS NULL AND CASE
-		WHEN (r.Value4 <> r.Value2) THEN 't'::BOOLEAN
-		WHEN NOT (r.Value4 <> r.Value2) THEN 'f'::BOOLEAN
-		ELSE NULL
-	END IS NULL
+	END
 
 BeforeExecute
 -- Informix.DB2 Informix
@@ -419,11 +357,7 @@ WHERE
 		WHEN NOT (r.Value4 <> r.Value5) THEN 'f'::BOOLEAN
 		ELSE NULL
 	END OR
-	CASE
-		WHEN (r.Value4 <> r.Value5) THEN 't'::BOOLEAN
-		WHEN NOT (r.Value4 <> r.Value5) THEN 'f'::BOOLEAN
-		ELSE NULL
-	END IS NULL
+	r.Value4 IS NULL OR r.Value5 IS NULL
 
 BeforeExecute
 -- Informix.DB2 Informix
@@ -451,31 +385,13 @@ FROM
 WHERE
 	CASE
 		WHEN r.Value1 >= r.Value5 AND r.Value5 IS NOT NULL THEN 't'::BOOLEAN
-		WHEN r.Value1 < r.Value5 OR r.Value5 IS NULL THEN 'f'::BOOLEAN
-		ELSE NULL
+		ELSE 'f'::BOOLEAN
 	END <> CASE
 		WHEN (r.Value4 <> r.Value2) THEN 't'::BOOLEAN
 		WHEN NOT (r.Value4 <> r.Value2) THEN 'f'::BOOLEAN
 		ELSE NULL
 	END OR
-	CASE
-		WHEN r.Value1 >= r.Value5 AND r.Value5 IS NOT NULL THEN 't'::BOOLEAN
-		WHEN r.Value1 < r.Value5 OR r.Value5 IS NULL THEN 'f'::BOOLEAN
-		ELSE NULL
-	END IS NULL AND CASE
-		WHEN (r.Value4 <> r.Value2) THEN 't'::BOOLEAN
-		WHEN NOT (r.Value4 <> r.Value2) THEN 'f'::BOOLEAN
-		ELSE NULL
-	END IS NOT NULL OR
-	CASE
-		WHEN r.Value1 >= r.Value5 AND r.Value5 IS NOT NULL THEN 't'::BOOLEAN
-		WHEN r.Value1 < r.Value5 OR r.Value5 IS NULL THEN 'f'::BOOLEAN
-		ELSE NULL
-	END IS NOT NULL AND CASE
-		WHEN (r.Value4 <> r.Value2) THEN 't'::BOOLEAN
-		WHEN NOT (r.Value4 <> r.Value2) THEN 'f'::BOOLEAN
-		ELSE NULL
-	END IS NULL
+	r.Value4 IS NULL OR r.Value2 IS NULL
 
 BeforeExecute
 -- Informix.DB2 Informix
@@ -568,25 +484,12 @@ WHERE
 	CASE
 		WHEN r.Value4 >= r.Value5 AND r.Value4 IS NOT NULL AND r.Value5 IS NOT NULL
 			THEN 't'::BOOLEAN
-		WHEN r.Value4 < r.Value5 OR r.Value4 IS NULL OR r.Value5 IS NULL
-			THEN 'f'::BOOLEAN
-		ELSE NULL
+		ELSE 'f'::BOOLEAN
 	END = CASE
 		WHEN (r.Value5 <> r.Value4) THEN 't'::BOOLEAN
 		WHEN NOT (r.Value5 <> r.Value4) THEN 'f'::BOOLEAN
 		ELSE NULL
-	END OR
-	CASE
-		WHEN r.Value4 >= r.Value5 AND r.Value4 IS NOT NULL AND r.Value5 IS NOT NULL
-			THEN 't'::BOOLEAN
-		WHEN r.Value4 < r.Value5 OR r.Value4 IS NULL OR r.Value5 IS NULL
-			THEN 'f'::BOOLEAN
-		ELSE NULL
-	END IS NULL AND CASE
-		WHEN (r.Value5 <> r.Value4) THEN 't'::BOOLEAN
-		WHEN NOT (r.Value5 <> r.Value4) THEN 'f'::BOOLEAN
-		ELSE NULL
-	END IS NULL
+	END
 
 BeforeExecute
 -- Informix.DB2 Informix
@@ -615,36 +518,13 @@ WHERE
 	CASE
 		WHEN r.Value4 >= r.Value5 AND r.Value4 IS NOT NULL AND r.Value5 IS NOT NULL
 			THEN 't'::BOOLEAN
-		WHEN r.Value4 < r.Value5 OR r.Value4 IS NULL OR r.Value5 IS NULL
-			THEN 'f'::BOOLEAN
-		ELSE NULL
+		ELSE 'f'::BOOLEAN
 	END <> CASE
 		WHEN (r.Value5 <> r.Value4) THEN 't'::BOOLEAN
 		WHEN NOT (r.Value5 <> r.Value4) THEN 'f'::BOOLEAN
 		ELSE NULL
 	END OR
-	CASE
-		WHEN r.Value4 >= r.Value5 AND r.Value4 IS NOT NULL AND r.Value5 IS NOT NULL
-			THEN 't'::BOOLEAN
-		WHEN r.Value4 < r.Value5 OR r.Value4 IS NULL OR r.Value5 IS NULL
-			THEN 'f'::BOOLEAN
-		ELSE NULL
-	END IS NULL AND CASE
-		WHEN (r.Value5 <> r.Value4) THEN 't'::BOOLEAN
-		WHEN NOT (r.Value5 <> r.Value4) THEN 'f'::BOOLEAN
-		ELSE NULL
-	END IS NOT NULL OR
-	CASE
-		WHEN r.Value4 >= r.Value5 AND r.Value4 IS NOT NULL AND r.Value5 IS NOT NULL
-			THEN 't'::BOOLEAN
-		WHEN r.Value4 < r.Value5 OR r.Value4 IS NULL OR r.Value5 IS NULL
-			THEN 'f'::BOOLEAN
-		ELSE NULL
-	END IS NOT NULL AND CASE
-		WHEN (r.Value5 <> r.Value4) THEN 't'::BOOLEAN
-		WHEN NOT (r.Value5 <> r.Value4) THEN 'f'::BOOLEAN
-		ELSE NULL
-	END IS NULL
+	r.Value5 IS NULL OR r.Value4 IS NULL
 
 BeforeExecute
 -- Informix.DB2 Informix

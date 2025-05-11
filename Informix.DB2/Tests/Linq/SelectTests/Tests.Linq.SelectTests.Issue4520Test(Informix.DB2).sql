@@ -5,8 +5,7 @@ SELECT
 	CASE
 		WHEN NOT CASE
 			WHEN i.BoolValue IS NOT NULL THEN CASE
-				WHEN i.BoolValue = 't'::BOOLEAN AND i.BoolValue IS NOT NULL
-					THEN 't'::BOOLEAN
+				WHEN i.BoolValue = 't'::BOOLEAN THEN 't'::BOOLEAN
 				WHEN i.BoolValue = 'f'::BOOLEAN OR i.BoolValue IS NULL THEN 'f'::BOOLEAN
 				ELSE NULL
 			END
