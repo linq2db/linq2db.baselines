@@ -6,5 +6,5 @@ SELECT
 FROM
 	"LinqDataTypes" p
 WHERE
-	LENGTH(p."ID"::SmallInt::text) > 0
+	Length(p."ID"::SmallInt::text) > 0
 

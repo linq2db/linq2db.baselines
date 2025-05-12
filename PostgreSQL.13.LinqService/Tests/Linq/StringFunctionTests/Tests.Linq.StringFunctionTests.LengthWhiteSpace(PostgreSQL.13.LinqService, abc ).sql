@@ -2,8 +2,10 @@
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
 DECLARE @stringValue Text(5) -- String
 SET     @stringValue = ' abc '
+DECLARE @stringValue_1 Integer -- Int32
+SET     @stringValue_1 = 5
 
 SELECT
 	:stringValue,
-	LENGTH(:stringValue)
+	:stringValue_1
 
