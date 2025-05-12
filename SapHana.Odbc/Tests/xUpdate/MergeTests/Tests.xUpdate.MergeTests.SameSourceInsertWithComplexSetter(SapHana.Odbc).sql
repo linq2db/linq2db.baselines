@@ -220,8 +220,8 @@ VALUES
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @name Int -- Int32
-SET     @name = 4
+DECLARE @name NVarChar(4) -- String
+SET     @name = 'test'
 DECLARE @idx Int -- Int32
 SET     @idx = 6
 
@@ -249,7 +249,7 @@ VALUES
 (
 	10 + "Source"."source_Id",
 	123,
-	? + ?,
+	LENGTH(?) + ?,
 	"Source"."source_Field2",
 	999,
 	888

@@ -26,15 +26,15 @@ VALUES
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @name Int -- Int32
-SET     @name = 8
+DECLARE @name NVarChar(8) -- String
+SET     @name = 'Update14'
 DECLARE @idx Int -- Int32
 SET     @idx = 4
 
 UPDATE
 	"Person" "t1"
 SET
-	"LastName" = CAST(? + ? AS NVarChar(11))
+	"LastName" = CAST(LENGTH(?) + ? AS NVarChar(11))
 WHERE
 	"t1"."FirstName" LIKE 'Update14%' ESCAPE '~'
 

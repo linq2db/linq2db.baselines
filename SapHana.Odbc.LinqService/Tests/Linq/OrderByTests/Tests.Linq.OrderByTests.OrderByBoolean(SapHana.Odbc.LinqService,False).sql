@@ -11,7 +11,7 @@ FROM
 	"Person" "t1"
 ORDER BY
 	CASE
-		WHEN Length("t1"."FirstName") > 4 THEN 1
+		WHEN LENGTH("t1"."FirstName") > 4 THEN 1
 		ELSE 0
 	END
 
