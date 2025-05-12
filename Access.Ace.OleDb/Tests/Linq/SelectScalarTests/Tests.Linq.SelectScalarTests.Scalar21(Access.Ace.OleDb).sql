@@ -2,7 +2,7 @@
 -- Access.Ace.OleDb AccessOleDb
 
 SELECT
-	LEN([p].[FirstName])
+	Len([p].[FirstName])
 FROM
 	[Person] [p]
 

@@ -2,7 +2,7 @@
 -- Access.Ace.Odbc AccessODBC
 
 SELECT
-	LEN([p].[FirstName]) + LEN('')
+	Len([p].[FirstName])
 FROM
 	[Person] [p]
 

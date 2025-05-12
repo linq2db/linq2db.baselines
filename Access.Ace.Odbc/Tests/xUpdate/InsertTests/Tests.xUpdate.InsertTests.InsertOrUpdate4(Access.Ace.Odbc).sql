@@ -64,7 +64,7 @@ SET     @id = 5
 UPDATE
 	[Patient] [t1]
 SET
-	[t1].[Diagnosis] = IIF([t1].[Diagnosis] IS NOT NULL, CStr(LEN([t1].[Diagnosis]) + ?), NULL)
+	[t1].[Diagnosis] = IIF([t1].[Diagnosis] IS NOT NULL, CStr(Len([t1].[Diagnosis]) + ?), NULL)
 WHERE
 	[t1].[PersonID] = ?
 
@@ -72,8 +72,8 @@ BeforeExecute
 -- Access.Ace.Odbc AccessODBC
 DECLARE @id Int -- Int32
 SET     @id = 5
-DECLARE @diagnosis NVarChar(3) -- String
-SET     @diagnosis = 'abc'
+DECLARE @diagnosis Int -- Int32
+SET     @diagnosis = 3
 DECLARE @i Int -- Int32
 SET     @i = 0
 
@@ -85,7 +85,7 @@ INSERT INTO [Patient]
 VALUES
 (
 	?,
-	CStr(LEN(?) + ?)
+	CStr(? + ?)
 )
 
 BeforeExecute
@@ -98,7 +98,7 @@ SET     @id = 5
 UPDATE
 	[Patient] [t1]
 SET
-	[t1].[Diagnosis] = IIF([t1].[Diagnosis] IS NOT NULL, CStr(LEN([t1].[Diagnosis]) + ?), NULL)
+	[t1].[Diagnosis] = IIF([t1].[Diagnosis] IS NOT NULL, CStr(Len([t1].[Diagnosis]) + ?), NULL)
 WHERE
 	[t1].[PersonID] = ?
 
@@ -112,7 +112,7 @@ SET     @id = 5
 UPDATE
 	[Patient] [t1]
 SET
-	[t1].[Diagnosis] = IIF([t1].[Diagnosis] IS NOT NULL, CStr(LEN([t1].[Diagnosis]) + ?), NULL)
+	[t1].[Diagnosis] = IIF([t1].[Diagnosis] IS NOT NULL, CStr(Len([t1].[Diagnosis]) + ?), NULL)
 WHERE
 	[t1].[PersonID] = ?
 

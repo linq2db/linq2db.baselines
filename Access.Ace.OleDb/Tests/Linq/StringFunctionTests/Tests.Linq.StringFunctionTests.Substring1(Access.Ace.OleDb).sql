@@ -10,6 +10,6 @@ SELECT
 FROM
 	[Person] [p]
 WHERE
-	Mid([p].[FirstName], 2, LEN([p].[FirstName]) - 1) = 'ohn' AND
+	Mid([p].[FirstName], 2, Len([p].[FirstName]) - 1) = 'ohn' AND
 	[p].[PersonID] = 1
 

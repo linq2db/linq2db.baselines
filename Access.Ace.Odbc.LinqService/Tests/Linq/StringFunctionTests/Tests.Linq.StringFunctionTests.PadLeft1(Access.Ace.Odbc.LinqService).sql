@@ -10,6 +10,6 @@ SELECT
 FROM
 	[Person] [p]
 WHERE
-	'123' + IIF(LEN([p].[FirstName]) >= 6, [p].[FirstName], STRING(6 - LEN([p].[FirstName]), ' ') + [p].[FirstName]) = '123  John' AND
+	'123' + IIF(Len([p].[FirstName]) >= 6, [p].[FirstName], STRING(6 - Len([p].[FirstName]), ' ') + [p].[FirstName]) = '123  John' AND
 	[p].[PersonID] = 1
 

@@ -7,7 +7,7 @@ SELECT
 FROM
 	(
 		SELECT
-			IIF(LEN([p].[FirstName]) >= [p].[PersonID], [p].[FirstName], STRING([p].[PersonID] - LEN([p].[FirstName]), '.') + [p].[FirstName]) as [FirstName],
+			IIF(Len([p].[FirstName]) >= [p].[PersonID], [p].[FirstName], STRING([p].[PersonID] - Len([p].[FirstName]), '.') + [p].[FirstName]) as [FirstName],
 			[p].[PersonID] as [ID]
 		FROM
 			[Person] [p]

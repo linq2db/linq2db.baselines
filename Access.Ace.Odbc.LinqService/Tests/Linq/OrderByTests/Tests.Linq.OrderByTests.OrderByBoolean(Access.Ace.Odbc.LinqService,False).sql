@@ -10,7 +10,7 @@ SELECT
 FROM
 	[Person] [t1]
 ORDER BY
-	LEN([t1].[FirstName]) > 4
+	Len([t1].[FirstName]) > 4
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC

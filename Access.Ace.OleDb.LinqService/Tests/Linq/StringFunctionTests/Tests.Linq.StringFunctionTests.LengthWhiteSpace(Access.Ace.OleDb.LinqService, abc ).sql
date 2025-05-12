@@ -2,10 +2,10 @@
 -- Access.Ace.OleDb AccessOleDb
 DECLARE @stringValue VarWChar(5) -- String
 SET     @stringValue = ' abc '
-DECLARE @stringValue_1 VarWChar(5) -- String
-SET     @stringValue_1 = ' abc '
+DECLARE @stringValue_1 Integer -- Int32
+SET     @stringValue_1 = 5
 
 SELECT
 	CVar(@stringValue),
-	LEN(CVar(@stringValue_1))
+	CVar(@stringValue_1)
 
