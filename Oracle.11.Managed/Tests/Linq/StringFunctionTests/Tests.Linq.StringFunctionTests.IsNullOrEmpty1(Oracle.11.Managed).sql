@@ -10,5 +10,5 @@ SELECT
 FROM
 	"Person" p
 WHERE
-	Length(p."FirstName") <> 0 AND p."PersonID" = 1
+	LENGTH(p."FirstName") <> 0 AND p."PersonID" = 1
 

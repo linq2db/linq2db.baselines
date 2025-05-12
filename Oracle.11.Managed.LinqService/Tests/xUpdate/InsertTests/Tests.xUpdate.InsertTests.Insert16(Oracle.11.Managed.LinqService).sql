@@ -8,8 +8,8 @@ WHERE
 
 BeforeExecute
 -- Oracle.11.Managed Oracle11
-DECLARE @name Int32
-SET     @name = 8
+DECLARE @name Varchar2(8) -- String
+SET     @name = 'Insert16'
 DECLARE @idx Int32
 SET     @idx = 4
 
@@ -22,7 +22,7 @@ INSERT INTO "Person"
 VALUES
 (
 	'Insert16',
-	CAST(:name + :idx AS VarChar(255)),
+	CAST(LENGTH(:name) + :idx AS VarChar(255)),
 	'M'
 )
 
