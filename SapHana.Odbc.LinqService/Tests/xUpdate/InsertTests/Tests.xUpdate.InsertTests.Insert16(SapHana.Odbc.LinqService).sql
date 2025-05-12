@@ -8,8 +8,8 @@ WHERE
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @name NVarChar(8) -- String
-SET     @name = 'Insert16'
+DECLARE @name Int -- Int32
+SET     @name = 8
 DECLARE @idx Int -- Int32
 SET     @idx = 4
 
@@ -22,7 +22,7 @@ INSERT INTO "Person"
 VALUES
 (
 	'Insert16',
-	CAST(LENGTH(?) + ? AS NVarChar(11)),
+	CAST(? + ? AS NVarChar(11)),
 	'M'
 )
 

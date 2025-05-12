@@ -10,6 +10,6 @@ SELECT
 FROM
 	"Person" "p"
 WHERE
-	Left("p"."FirstName", 2) || '123' || RIGHT("p"."FirstName", LENGTH("p"."FirstName") - 3) = 'Jo123n' AND
+	Left("p"."FirstName", 2) || '123' || RIGHT("p"."FirstName", Length("p"."FirstName") - 3) = 'Jo123n' AND
 	"p"."PersonID" = 1
 

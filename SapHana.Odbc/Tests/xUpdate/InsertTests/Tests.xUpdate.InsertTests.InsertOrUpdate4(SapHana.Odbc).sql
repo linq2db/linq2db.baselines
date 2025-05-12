@@ -87,7 +87,7 @@ SET     @id = 5
 UPDATE
 	"Patient" "t1"
 SET
-	"Diagnosis" = CAST(LENGTH("t1"."Diagnosis") + ? AS NVarChar(11))
+	"Diagnosis" = CAST(Length("t1"."Diagnosis") + ? AS NVarChar(11))
 WHERE
 	"t1"."PersonID" = ?
 
@@ -95,8 +95,8 @@ BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @id Int -- Int32
 SET     @id = 5
-DECLARE @diagnosis NVarChar(3) -- String
-SET     @diagnosis = 'abc'
+DECLARE @diagnosis Int -- Int32
+SET     @diagnosis = 3
 DECLARE @i Int -- Int32
 SET     @i = 0
 
@@ -108,7 +108,7 @@ INSERT INTO "Patient"
 VALUES
 (
 	?,
-	CAST(LENGTH(?) + ? AS NVarChar(11))
+	CAST(? + ? AS NVarChar(11))
 )
 
 BeforeExecute
@@ -121,7 +121,7 @@ SET     @id = 5
 UPDATE
 	"Patient" "t1"
 SET
-	"Diagnosis" = CAST(LENGTH("t1"."Diagnosis") + ? AS NVarChar(11))
+	"Diagnosis" = CAST(Length("t1"."Diagnosis") + ? AS NVarChar(11))
 WHERE
 	"t1"."PersonID" = ?
 
@@ -135,7 +135,7 @@ SET     @id = 5
 UPDATE
 	"Patient" "t1"
 SET
-	"Diagnosis" = CAST(LENGTH("t1"."Diagnosis") + ? AS NVarChar(11))
+	"Diagnosis" = CAST(Length("t1"."Diagnosis") + ? AS NVarChar(11))
 WHERE
 	"t1"."PersonID" = ?
 
