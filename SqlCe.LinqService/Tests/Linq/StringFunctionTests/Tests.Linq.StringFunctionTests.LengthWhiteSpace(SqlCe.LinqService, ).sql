@@ -5,5 +5,5 @@ SET     @stringValue = ' '
 
 SELECT
 	@stringValue as [c1],
-	LEN(@stringValue + '.') - 1 as [c2]
+	1 as [c2]
 

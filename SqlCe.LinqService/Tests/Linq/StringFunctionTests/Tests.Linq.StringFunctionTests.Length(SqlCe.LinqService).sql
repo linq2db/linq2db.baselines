@@ -10,6 +10,5 @@ SELECT
 FROM
 	[Person] [p]
 WHERE
-	LEN([p].[FirstName] + '.') - 1 = LEN('John.') - 1 AND
-	[p].[PersonID] = 1
+	LEN([p].[FirstName] + '.') = 5 AND [p].[PersonID] = 1
 
