@@ -10,7 +10,7 @@ SELECT
 FROM
 	Person t1
 ORDER BY
-	LENGTH(t1.FirstName || '.') > 2
+	Length(t1.FirstName || '.') > 2
 
 BeforeExecute
 -- Informix.DB2 Informix

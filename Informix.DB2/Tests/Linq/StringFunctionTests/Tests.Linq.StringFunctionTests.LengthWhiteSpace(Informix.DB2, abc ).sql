@@ -5,6 +5,6 @@ SET     @stringValue = ' abc '
 
 SELECT
 	@stringValue::NVarChar(5),
-	LENGTH(@stringValue::NVarChar(5) || '.') - 1
+	5
 FROM table(set{1})
 

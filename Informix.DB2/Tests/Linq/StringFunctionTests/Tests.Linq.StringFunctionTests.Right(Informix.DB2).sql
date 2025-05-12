@@ -10,6 +10,6 @@ SELECT
 FROM
 	Person p
 WHERE
-	Substr(p.FirstName, LENGTH(p.FirstName || '.') - 3, 3) = 'ohn' AND
+	Substr(p.FirstName, Length(p.FirstName || '.') - 3, 3) = 'ohn' AND
 	p.PersonID = 1
 

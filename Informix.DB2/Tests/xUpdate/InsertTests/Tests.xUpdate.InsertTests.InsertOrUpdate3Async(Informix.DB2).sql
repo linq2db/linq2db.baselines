@@ -69,7 +69,7 @@ SET     @id = 5
 UPDATE
 	Patient t1
 SET
-	Diagnosis = To_Char(LENGTH(t1.Diagnosis || '.') - 1 + @i::Int)
+	Diagnosis = To_Char(Length(t1.Diagnosis || '.') - 1 + @i::Int)
 WHERE
 	t1.PersonID = @id::Int
 
@@ -99,7 +99,7 @@ SET     @id = 5
 UPDATE
 	Patient t1
 SET
-	Diagnosis = To_Char(LENGTH(t1.Diagnosis || '.') - 1 + @i::Int)
+	Diagnosis = To_Char(Length(t1.Diagnosis || '.') - 1 + @i::Int)
 WHERE
 	t1.PersonID = @id::Int
 
@@ -113,7 +113,7 @@ SET     @id = 5
 UPDATE
 	Patient t1
 SET
-	Diagnosis = To_Char(LENGTH(t1.Diagnosis || '.') - 1 + @i::Int)
+	Diagnosis = To_Char(Length(t1.Diagnosis || '.') - 1 + @i::Int)
 WHERE
 	t1.PersonID = @id::Int
 

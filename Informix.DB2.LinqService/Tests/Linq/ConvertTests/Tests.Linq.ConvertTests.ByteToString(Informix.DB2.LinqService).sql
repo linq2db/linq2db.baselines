@@ -6,5 +6,5 @@ SELECT
 FROM
 	LinqDataTypes p
 WHERE
-	LENGTH(To_Char(p.ID::SmallInt) || '.') > 1
+	Length(To_Char(p.ID::SmallInt) || '.') > 1
 

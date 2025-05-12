@@ -10,6 +10,5 @@ SELECT
 FROM
 	Person p
 WHERE
-	LENGTH(p.FirstName || '.') - 1 = LENGTH('John.') - 1 AND
-	p.PersonID = 1
+	Length(p.FirstName || '.') = 5 AND p.PersonID = 1
 
