@@ -10,7 +10,7 @@ SELECT
 FROM
 	"Person" t1
 ORDER BY
-	Length(t1."FirstName") > 4
+	LENGTH(t1."FirstName") > 4
 
 BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
