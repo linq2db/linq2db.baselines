@@ -6,7 +6,7 @@ UPDATE
 SET
 	[u].[col1] = [x].[col1],
 	[u].[col2] = [x].[col2],
-	[u].[col3] = REPLACE([x].[col3], N'auth.', N''),
+	[u].[col3] = Replace([x].[col3], N'auth.', N''),
 	[u].[col4] = [x].[col4],
 	[u].[col5] = CASE
 		WHEN [x].[col3] = N'empty' THEN N'1'
@@ -19,7 +19,7 @@ SET
 FROM
 	[gt_s_one_target] [u],
 	[gt_s_one] [x]
-		LEFT JOIN [access_mode] [y1] ON Upper(REPLACE([x].[col3], N'auth.', N'')) = Upper([y1].[code]) OR [x].[col3] IS NULL AND [y1].[code] IS NULL
+		LEFT JOIN [access_mode] [y1] ON Upper(Replace([x].[col3], N'auth.', N'')) = Upper([y1].[code]) OR [x].[col3] IS NULL AND [y1].[code] IS NULL
 WHERE
 	[x].[id] = [u].[id]
 
