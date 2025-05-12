@@ -6,5 +6,5 @@ SELECT
 FROM
 	"LinqDataTypes" p
 WHERE
-	Length(p."MoneyValue"::text) > 0
+	LENGTH(p."MoneyValue"::text) > 0
 
