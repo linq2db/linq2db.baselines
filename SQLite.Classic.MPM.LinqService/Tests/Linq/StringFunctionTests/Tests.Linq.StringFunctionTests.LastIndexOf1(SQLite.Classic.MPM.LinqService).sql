@@ -10,6 +10,6 @@ SELECT
 FROM
 	[Person] [p]
 WHERE
-	Length([p].[LastName]) - CharIndex('p', Reverse([p].[LastName])) = 2 AND
+	(LENGTH([p].[LastName]) - CharIndex('p', Reverse([p].[LastName]))) - LENGTH('p') = 1 AND
 	CharIndex('p', [p].[LastName]) <> 0 AND [p].[PersonID] = 1
 

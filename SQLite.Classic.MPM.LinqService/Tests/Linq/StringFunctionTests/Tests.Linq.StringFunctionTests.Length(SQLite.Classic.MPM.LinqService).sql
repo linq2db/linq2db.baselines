@@ -1,7 +1,5 @@
 ﻿BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-DECLARE @Length  -- Int32
-SET     @Length = 4
 
 SELECT
 	[p].[FirstName],
@@ -12,5 +10,5 @@ SELECT
 FROM
 	[Person] [p]
 WHERE
-	Length([p].[FirstName]) = @Length AND [p].[PersonID] = 1
+	LENGTH([p].[FirstName]) = LENGTH('John') AND [p].[PersonID] = 1
 
