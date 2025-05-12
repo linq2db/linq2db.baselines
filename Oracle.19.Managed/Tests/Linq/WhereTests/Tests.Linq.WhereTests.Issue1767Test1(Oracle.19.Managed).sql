@@ -1,0 +1,20 @@
+﻿BeforeExecute
+-- Oracle.19.Managed Oracle.Managed Oracle12
+
+SELECT
+	p."ParentID",
+	p."Value1"
+FROM
+	"Parent" p
+WHERE
+	p."Value1" IS NOT NULL AND p."Value1" <> 1
+
+BeforeExecute
+-- Oracle.19.Managed Oracle.Managed Oracle12
+
+SELECT
+	t1."ParentID",
+	t1."Value1"
+FROM
+	"Parent" t1
+
