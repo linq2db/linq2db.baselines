@@ -2,7 +2,7 @@
 -- Oracle.11.Managed Oracle11
 
 SELECT
-	LENGTH(p."FirstName")
+	Length(p."FirstName")
 FROM
 	"Person" p
 
