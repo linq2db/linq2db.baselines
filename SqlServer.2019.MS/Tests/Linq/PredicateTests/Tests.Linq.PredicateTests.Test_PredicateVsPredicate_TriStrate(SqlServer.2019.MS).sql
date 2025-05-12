@@ -469,7 +469,7 @@ SELECT
 FROM
 	[BooleanTable] [r]
 WHERE
-	IIF([r].[Value4] >= [r].[Value5] AND [r].[Value4] IS NOT NULL AND [r].[Value5] IS NOT NULL, 1, 0) <> CASE
+	IIF([r].[Value4] >= [r].[Value5], 1, 0) <> CASE
 		WHEN ([r].[Value5] <> [r].[Value4]) THEN 1
 		WHEN NOT ([r].[Value5] <> [r].[Value4]) THEN 0
 		ELSE NULL
