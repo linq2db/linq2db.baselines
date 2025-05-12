@@ -19,6 +19,7 @@ SELECT TOP (1)
 	[t1].[is_sparse],
 	[t1].[is_percent_growth],
 	[t1].[is_name_reserved],
+	[t1].[is_persistent_log_buffer],
 	[t1].[create_lsn],
 	[t1].[drop_lsn],
 	[t1].[read_only_lsn],
