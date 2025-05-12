@@ -1,7 +1,5 @@
 ﻿BeforeExecute
 -- Sybase.Managed Sybase
-DECLARE @Length Integer -- Int32
-SET     @Length = 4
 
 SELECT
 	[p].[FirstName],
@@ -12,5 +10,9 @@ SELECT
 FROM
 	[Person] [p]
 WHERE
-	Len([p].[FirstName]) = @Length AND [p].[PersonID] = 1
+	CASE
+		WHEN '' = [p].[FirstName] THEN 0
+		ELSE CHAR_LENGTH([p].[FirstName])
+	END = CHAR_LENGTH('John') AND
+	[p].[PersonID] = 1
 

@@ -2,5 +2,5 @@
 -- Sybase.Managed Sybase
 
 SELECT
-	Len('1')
+	1
 
