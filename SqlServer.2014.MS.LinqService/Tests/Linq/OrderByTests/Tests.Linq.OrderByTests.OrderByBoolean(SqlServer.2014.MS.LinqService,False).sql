@@ -10,7 +10,7 @@ SELECT
 FROM
 	[Person] [t1]
 ORDER BY
-	IIF(Len([t1].[FirstName]) > 4, 1, 0)
+	IIF(LEN([t1].[FirstName] + N'.') > 5, 1, 0)
 
 BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014
