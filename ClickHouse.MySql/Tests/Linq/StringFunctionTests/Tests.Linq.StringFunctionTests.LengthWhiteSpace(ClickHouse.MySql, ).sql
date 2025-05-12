@@ -2,5 +2,6 @@
 -- ClickHouse.MySql ClickHouse
 
 SELECT
-	1
+	' ',
+	CHAR_LENGTH(' ')
 
