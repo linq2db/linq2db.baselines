@@ -3,7 +3,7 @@
 
 SELECT
 	CASE
-		WHEN LENGTH(p."FirstName") = 0 THEN 1
+		WHEN Length(p."FirstName") = 0 THEN 1
 		ELSE 0
 	END
 FROM
