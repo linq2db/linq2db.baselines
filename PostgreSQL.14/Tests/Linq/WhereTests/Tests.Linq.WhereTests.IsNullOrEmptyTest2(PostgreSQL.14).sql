@@ -6,7 +6,7 @@ SELECT
 FROM
 	"Person" nm
 WHERE
-	LENGTH(nm."FirstName") <> 0
+	Length(nm."FirstName") <> 0
 
 BeforeExecute
 -- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
