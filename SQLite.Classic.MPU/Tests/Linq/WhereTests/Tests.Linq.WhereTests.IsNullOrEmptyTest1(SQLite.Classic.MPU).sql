@@ -6,7 +6,7 @@ SELECT
 FROM
 	[Person] [nm]
 WHERE
-	NOT ([nm].[MiddleName] IS NULL OR Length([nm].[MiddleName]) = 0 AND [nm].[MiddleName] IS NOT NULL)
+	NOT ([nm].[MiddleName] IS NULL OR Length([nm].[MiddleName]) = 0)
 
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
