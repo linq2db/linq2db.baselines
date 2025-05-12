@@ -2,7 +2,7 @@
 -- Access.Jet.OleDb AccessOleDb
 
 SELECT
-	Len([p].[FirstName]) = 0
+	LEN([p].[FirstName]) = 0
 FROM
 	[Person] [p]
 WHERE

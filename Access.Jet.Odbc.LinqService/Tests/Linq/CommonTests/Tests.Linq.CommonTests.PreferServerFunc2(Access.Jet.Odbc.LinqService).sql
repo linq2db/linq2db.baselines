@@ -1,10 +1,8 @@
 ﻿BeforeExecute
 -- Access.Jet.Odbc AccessODBC
-DECLARE @Length Int -- Int32
-SET     @Length = 0
 
 SELECT
-	Len([p].[FirstName]) + CVar(?)
+	LEN([p].[FirstName]) + LEN('')
 FROM
 	[Person] [p]
 

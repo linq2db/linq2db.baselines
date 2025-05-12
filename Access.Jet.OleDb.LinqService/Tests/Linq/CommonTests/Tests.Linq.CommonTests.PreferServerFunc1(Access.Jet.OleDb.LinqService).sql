@@ -2,7 +2,7 @@
 -- Access.Jet.OleDb AccessOleDb
 
 SELECT
-	Len([p].[FirstName])
+	LEN([p].[FirstName])
 FROM
 	[Person] [p]
 
