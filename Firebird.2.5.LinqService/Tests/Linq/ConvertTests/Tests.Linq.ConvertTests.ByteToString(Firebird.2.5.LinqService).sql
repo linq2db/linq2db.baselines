@@ -6,5 +6,5 @@ SELECT
 FROM
 	"LinqDataTypes" "p"
 WHERE
-	Char_Length(CAST("p".ID AS SmallInt)) > 0
+	CHAR_LENGTH(CAST("p".ID AS SmallInt)) > 0
 
