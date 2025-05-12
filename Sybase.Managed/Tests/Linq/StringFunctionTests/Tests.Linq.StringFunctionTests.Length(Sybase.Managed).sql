@@ -10,9 +10,6 @@ SELECT
 FROM
 	[Person] [p]
 WHERE
-	CASE
-		WHEN '' = [p].[FirstName] THEN 0
-		ELSE CHAR_LENGTH([p].[FirstName])
-	END = CHAR_LENGTH('John') AND
+	CHAR_LENGTH([p].[FirstName]) = 4 AND '' <> [p].[FirstName] AND
 	[p].[PersonID] = 1
 

@@ -37,8 +37,8 @@ DECLARE @i Integer -- Int32
 SET     @i = 0
 DECLARE @id Integer -- Int32
 SET     @id = 5
-DECLARE @diagnosis UniVarChar(3) -- String
-SET     @diagnosis = 'abc'
+DECLARE @diagnosis Integer -- Int32
+SET     @diagnosis = 3
 
 UPDATE
 	[Patient]
@@ -62,7 +62,7 @@ BEGIN
 	VALUES
 	(
 		@id,
-		CAST(CHAR_LENGTH(@diagnosis) + @i AS NVarChar(11))
+		CAST(@diagnosis + @i AS NVarChar(11))
 	)
 END
 
@@ -72,8 +72,8 @@ DECLARE @i Integer -- Int32
 SET     @i = 1
 DECLARE @id Integer -- Int32
 SET     @id = 5
-DECLARE @diagnosis UniVarChar(3) -- String
-SET     @diagnosis = 'abc'
+DECLARE @diagnosis Integer -- Int32
+SET     @diagnosis = 3
 
 UPDATE
 	[Patient]
@@ -97,7 +97,7 @@ BEGIN
 	VALUES
 	(
 		@id,
-		CAST(CHAR_LENGTH(@diagnosis) + @i AS NVarChar(11))
+		CAST(@diagnosis + @i AS NVarChar(11))
 	)
 END
 
@@ -107,8 +107,8 @@ DECLARE @i Integer -- Int32
 SET     @i = 2
 DECLARE @id Integer -- Int32
 SET     @id = 5
-DECLARE @diagnosis UniVarChar(3) -- String
-SET     @diagnosis = 'abc'
+DECLARE @diagnosis Integer -- Int32
+SET     @diagnosis = 3
 
 UPDATE
 	[Patient]
@@ -132,7 +132,7 @@ BEGIN
 	VALUES
 	(
 		@id,
-		CAST(CHAR_LENGTH(@diagnosis) + @i AS NVarChar(11))
+		CAST(@diagnosis + @i AS NVarChar(11))
 	)
 END
 
