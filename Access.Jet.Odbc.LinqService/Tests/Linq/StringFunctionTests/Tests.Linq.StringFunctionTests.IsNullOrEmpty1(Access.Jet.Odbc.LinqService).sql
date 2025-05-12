@@ -10,5 +10,5 @@ SELECT
 FROM
 	[Person] [p]
 WHERE
-	LEN([p].[FirstName]) <> 0 AND [p].[PersonID] = 1
+	Len([p].[FirstName]) <> 0 AND [p].[PersonID] = 1
 

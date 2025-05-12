@@ -6,5 +6,5 @@ SELECT
 FROM
 	[LinqDataTypes] [p]
 WHERE
-	LEN(CStr([p].[ID])) > 0
+	Len(CStr([p].[ID])) > 0
 

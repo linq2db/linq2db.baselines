@@ -6,7 +6,7 @@ SELECT
 FROM
 	[Person] [nm]
 WHERE
-	LEN([nm].[FirstName]) <> 0
+	Len([nm].[FirstName]) <> 0
 
 BeforeExecute
 -- Access.Jet.OleDb AccessOleDb

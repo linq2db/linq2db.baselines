@@ -6,7 +6,7 @@ SELECT
 FROM
 	(
 		SELECT
-			LEN([p].[MiddleName]) as [Length_1],
+			Len([p].[MiddleName]) as [Length_1],
 			[p].[MiddleName]
 		FROM
 			[Person] [p]

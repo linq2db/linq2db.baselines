@@ -64,7 +64,7 @@ SET     @id = 5
 UPDATE
 	[Patient] [t1]
 SET
-	[t1].[Diagnosis] = IIF([t1].[Diagnosis] IS NOT NULL, CStr(LEN([t1].[Diagnosis]) + @i), NULL)
+	[t1].[Diagnosis] = IIF([t1].[Diagnosis] IS NOT NULL, CStr(Len([t1].[Diagnosis]) + @i), NULL)
 WHERE
 	[t1].[PersonID] = @id
 
@@ -72,8 +72,8 @@ BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
 DECLARE @id Integer -- Int32
 SET     @id = 5
-DECLARE @diagnosis VarWChar(3) -- String
-SET     @diagnosis = 'abc'
+DECLARE @diagnosis Integer -- Int32
+SET     @diagnosis = 3
 DECLARE @i Integer -- Int32
 SET     @i = 0
 
@@ -85,7 +85,7 @@ INSERT INTO [Patient]
 VALUES
 (
 	@id,
-	CStr(LEN(@diagnosis) + @i)
+	CStr(@diagnosis + @i)
 )
 
 BeforeExecute
@@ -98,7 +98,7 @@ SET     @id = 5
 UPDATE
 	[Patient] [t1]
 SET
-	[t1].[Diagnosis] = IIF([t1].[Diagnosis] IS NOT NULL, CStr(LEN([t1].[Diagnosis]) + @i), NULL)
+	[t1].[Diagnosis] = IIF([t1].[Diagnosis] IS NOT NULL, CStr(Len([t1].[Diagnosis]) + @i), NULL)
 WHERE
 	[t1].[PersonID] = @id
 
@@ -112,7 +112,7 @@ SET     @id = 5
 UPDATE
 	[Patient] [t1]
 SET
-	[t1].[Diagnosis] = IIF([t1].[Diagnosis] IS NOT NULL, CStr(LEN([t1].[Diagnosis]) + @i), NULL)
+	[t1].[Diagnosis] = IIF([t1].[Diagnosis] IS NOT NULL, CStr(Len([t1].[Diagnosis]) + @i), NULL)
 WHERE
 	[t1].[PersonID] = @id
 
