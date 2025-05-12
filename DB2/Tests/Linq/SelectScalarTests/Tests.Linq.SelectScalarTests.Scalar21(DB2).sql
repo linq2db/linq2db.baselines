@@ -2,7 +2,7 @@
 -- DB2 DB2.LUW DB2LUW
 
 SELECT
-	CHARACTER_LENGTH("p"."FirstName",CODEUNITS32)
+	CHAR_LENGTH("p"."FirstName")
 FROM
 	"Person" "p"
 
