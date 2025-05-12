@@ -49,7 +49,7 @@ VALUES
 	'abc'
 )
 ON CONFLICT ("PersonID") DO UPDATE SET
-	"Diagnosis" = (LENGTH(t1."Diagnosis") + :i)::text
+	"Diagnosis" = (Length(t1."Diagnosis") + :i)::text
 
 BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL (asynchronously)
@@ -69,7 +69,7 @@ VALUES
 	'abc'
 )
 ON CONFLICT ("PersonID") DO UPDATE SET
-	"Diagnosis" = (LENGTH(t1."Diagnosis") + :i)::text
+	"Diagnosis" = (Length(t1."Diagnosis") + :i)::text
 
 BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL (asynchronously)
@@ -89,7 +89,7 @@ VALUES
 	'abc'
 )
 ON CONFLICT ("PersonID") DO UPDATE SET
-	"Diagnosis" = (LENGTH(t1."Diagnosis") + :i)::text
+	"Diagnosis" = (Length(t1."Diagnosis") + :i)::text
 
 BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL (asynchronously)

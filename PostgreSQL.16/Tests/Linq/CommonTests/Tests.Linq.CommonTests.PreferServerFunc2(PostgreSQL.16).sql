@@ -2,7 +2,7 @@
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 
 SELECT
-	LENGTH(p."FirstName") + LENGTH('')
+	Length(p."FirstName")
 FROM
 	"Person" p
 

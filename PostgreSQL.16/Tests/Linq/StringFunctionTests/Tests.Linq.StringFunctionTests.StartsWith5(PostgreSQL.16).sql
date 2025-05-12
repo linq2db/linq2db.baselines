@@ -11,5 +11,5 @@ FROM
 	"Person" p1,
 	"Person" p2
 WHERE
-	p1."PersonID" = p2."PersonID" AND REPLACE(p1."FirstName", 'J', '%') LIKE Replace(Replace(Replace(Replace(Replace(Replace(Replace(Replace(REPLACE(p2."FirstName", 'J', '%'), '~', '~~'), '%', '~%'), '_', '~_'), '?', '~?'), '*', '~*'), '#', '~#'), '[', '~['), ']', '~]') || '%' ESCAPE '~'
+	p1."PersonID" = p2."PersonID" AND Replace(p1."FirstName", 'J', '%') LIKE Replace(Replace(Replace(Replace(Replace(Replace(Replace(Replace(Replace(p2."FirstName", 'J', '%'), '~', '~~'), '%', '~%'), '_', '~_'), '?', '~?'), '*', '~*'), '#', '~#'), '[', '~['), ']', '~]') || '%' ESCAPE '~'
 
