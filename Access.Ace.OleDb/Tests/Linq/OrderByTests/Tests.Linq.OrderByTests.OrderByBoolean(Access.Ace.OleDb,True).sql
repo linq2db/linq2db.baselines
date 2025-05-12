@@ -10,7 +10,7 @@ SELECT
 FROM
 	[Person] [t1]
 ORDER BY
-	Len([t1].[FirstName]) > 1
+	LEN([t1].[FirstName]) > 1
 
 BeforeExecute
 -- Access.Ace.OleDb AccessOleDb
