@@ -80,7 +80,7 @@ FROM
 			"Stone" sG
 		WHERE
 			sG."Enabled" = 1 AND sG."Name" NOT LIKE 'level - %' ESCAPE '~' AND
-			LENGTH(sG."ImageFullUrl") > 0
+			Length(sG."ImageFullUrl") > 0
 		GROUP BY
 			sG."Name"
 	) sG_1
@@ -95,7 +95,7 @@ FROM
 			WHERE
 				s."Enabled" = 1 AND
 				s."Name" NOT LIKE 'level - %' ESCAPE '~' AND
-				LENGTH(s."ImageFullUrl") > 0 AND
+				Length(s."ImageFullUrl") > 0 AND
 				sG_1."Name" = s."Name"
 			FETCH NEXT 1 ROWS ONLY
 		) t1
