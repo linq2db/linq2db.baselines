@@ -6,5 +6,5 @@ SELECT
 FROM
 	"LinqDataTypes" p
 WHERE
-	LENGTH(CAST(CAST(p.ID AS Number(3)) AS VarChar(255))) > 0
+	Length(CAST(CAST(p.ID AS Number(3)) AS VarChar(255))) > 0
 
