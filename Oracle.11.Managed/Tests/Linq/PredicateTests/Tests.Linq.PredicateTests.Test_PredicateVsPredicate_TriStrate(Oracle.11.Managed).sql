@@ -518,8 +518,7 @@ FROM
 	"BooleanTable" r
 WHERE
 	CASE
-		WHEN r."Value4" >= r."Value5" AND r."Value4" IS NOT NULL AND r."Value5" IS NOT NULL
-			THEN 1
+		WHEN r."Value4" >= r."Value5" THEN 1
 		ELSE 0
 	END <> CASE
 		WHEN (r."Value5" <> r."Value4") THEN 1
