@@ -9,8 +9,8 @@ FROM
 		LEFT JOIN "Parent" "a_Parent" ON x."ParentID" = "a_Parent"."ParentID"
 		LEFT JOIN LATERAL (
 			SELECT
-				"a_Parent_1"."ParentID",
-				"a_Parent_1"."Value1"
+				0 as "ParentID",
+				NULL::Int as "Value1"
 			FROM
 				"GrandChild" "a_GrandChildren"
 					LEFT JOIN "Child" "a_Child" ON "a_GrandChildren"."ParentID" = "a_Child"."ParentID" AND "a_GrandChildren"."ChildID" = "a_Child"."ChildID"
@@ -20,7 +20,7 @@ FROM
 			LIMIT 1
 		) t1 ON 1=1
 WHERE
-	NOT (("a_Parent"."ParentID" = t1."ParentID" OR "a_Parent"."ParentID" IS NULL AND t1."ParentID" IS NULL) AND ("a_Parent"."Value1" = t1."Value1" OR "a_Parent"."Value1" IS NULL AND t1."Value1" IS NULL)) AND
+	NOT (("a_Parent"."ParentID" = t1."ParentID" OR "a_Parent"."ParentID" IS NULL AND t1."ParentID" IS NULL) AND NOT ("a_Parent"."ParentID" IS NULL AND t1."ParentID" IS NOT NULL) AND NOT (t1."ParentID" IS NULL AND "a_Parent"."ParentID" IS NOT NULL) AND ("a_Parent"."Value1" = t1."Value1" OR "a_Parent"."Value1" IS NULL AND t1."Value1" IS NULL) AND NOT ("a_Parent"."Value1" IS NULL AND t1."Value1" IS NOT NULL) AND NOT (t1."Value1" IS NULL AND "a_Parent"."Value1" IS NOT NULL)) AND
 	(x."ParentID" <> (
 		SELECT
 			CASE
@@ -56,8 +56,8 @@ FROM
 		LEFT JOIN "Parent" "a_Parent" ON x."ParentID" = "a_Parent"."ParentID"
 		LEFT JOIN LATERAL (
 			SELECT
-				"a_Parent_1"."ParentID",
-				"a_Parent_1"."Value1"
+				0 as "ParentID",
+				NULL::Int as "Value1"
 			FROM
 				"GrandChild" "a_GrandChildren"
 					LEFT JOIN "Child" "a_Child" ON "a_GrandChildren"."ParentID" = "a_Child"."ParentID" AND "a_GrandChildren"."ChildID" = "a_Child"."ChildID"
@@ -67,7 +67,7 @@ FROM
 			LIMIT 1
 		) t1 ON 1=1
 WHERE
-	NOT (("a_Parent"."ParentID" = t1."ParentID" OR "a_Parent"."ParentID" IS NULL AND t1."ParentID" IS NULL) AND ("a_Parent"."Value1" = t1."Value1" OR "a_Parent"."Value1" IS NULL AND t1."Value1" IS NULL)) AND
+	NOT (("a_Parent"."ParentID" = t1."ParentID" OR "a_Parent"."ParentID" IS NULL AND t1."ParentID" IS NULL) AND NOT ("a_Parent"."ParentID" IS NULL AND t1."ParentID" IS NOT NULL) AND NOT (t1."ParentID" IS NULL AND "a_Parent"."ParentID" IS NOT NULL) AND ("a_Parent"."Value1" = t1."Value1" OR "a_Parent"."Value1" IS NULL AND t1."Value1" IS NULL) AND NOT ("a_Parent"."Value1" IS NULL AND t1."Value1" IS NOT NULL) AND NOT (t1."Value1" IS NULL AND "a_Parent"."Value1" IS NOT NULL)) AND
 	(x."ParentID" <> (
 		SELECT
 			CASE
