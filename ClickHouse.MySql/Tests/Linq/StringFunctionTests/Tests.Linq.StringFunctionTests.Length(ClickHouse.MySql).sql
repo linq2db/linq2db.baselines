@@ -10,6 +10,5 @@ SELECT
 FROM
 	Person p
 WHERE
-	CHAR_LENGTH(p.FirstName) = CHAR_LENGTH('John') AND
-	p.PersonID = 1
+	lengthUTF8(p.FirstName) = 4 AND p.PersonID = 1
 

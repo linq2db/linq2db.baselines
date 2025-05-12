@@ -2,7 +2,7 @@
 -- ClickHouse.MySql ClickHouse
 
 SELECT
-	CHAR_LENGTH(p.FirstName) + CHAR_LENGTH('')
+	lengthUTF8(p.FirstName)
 FROM
 	Person p
 
