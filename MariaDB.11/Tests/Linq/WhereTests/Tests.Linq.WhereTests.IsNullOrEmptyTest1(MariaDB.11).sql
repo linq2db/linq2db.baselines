@@ -6,7 +6,7 @@ SELECT
 FROM
 	`Person` `nm`
 WHERE
-	NOT (`nm`.`MiddleName` IS NULL OR Char_Length(`nm`.`MiddleName`) = 0 AND `nm`.`MiddleName` IS NOT NULL)
+	NOT (`nm`.`MiddleName` IS NULL OR Char_Length(`nm`.`MiddleName`) = 0)
 
 BeforeExecute
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql
