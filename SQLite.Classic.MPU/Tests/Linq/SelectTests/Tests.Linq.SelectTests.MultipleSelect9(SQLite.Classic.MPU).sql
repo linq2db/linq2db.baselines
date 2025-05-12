@@ -2,7 +2,7 @@
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
 SELECT
-	([p5].[PersonID] * LENGTH('22')) / 2,
+	([p5].[PersonID] * 2) / 2,
 	[p5].[FirstName]
 FROM
 	[Person] [p5]

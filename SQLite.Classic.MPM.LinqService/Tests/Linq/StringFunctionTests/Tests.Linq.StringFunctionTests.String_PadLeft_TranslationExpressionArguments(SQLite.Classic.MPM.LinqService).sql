@@ -8,8 +8,8 @@ FROM
 	(
 		SELECT
 			CASE
-				WHEN LENGTH([p].[FirstName]) >= [p].[PersonID] THEN [p].[FirstName]
-				ELSE SUBSTR(REPLACE(HEX(ZEROBLOB([p].[PersonID])), '0', '.'), 1, [p].[PersonID] - LENGTH([p].[FirstName])) || [p].[FirstName]
+				WHEN Length([p].[FirstName]) >= [p].[PersonID] THEN [p].[FirstName]
+				ELSE SUBSTR(REPLACE(HEX(ZEROBLOB([p].[PersonID])), '0', '.'), 1, [p].[PersonID] - Length([p].[FirstName])) || [p].[FirstName]
 			END as [FirstName],
 			[p].[PersonID] as [ID]
 		FROM

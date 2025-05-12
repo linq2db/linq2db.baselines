@@ -38,8 +38,8 @@ BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 DECLARE @id  -- Int32
 SET     @id = 5
-DECLARE @diagnosis NVarChar(3) -- String
-SET     @diagnosis = 'abc'
+DECLARE @diagnosis  -- Int32
+SET     @diagnosis = 3
 DECLARE @i  -- Int32
 SET     @i = 0
 
@@ -51,17 +51,17 @@ INSERT INTO [Patient] AS [t1]
 VALUES
 (
 	@id,
-	CAST(LENGTH(@diagnosis) + @i AS NVarChar(11))
+	CAST(@diagnosis + @i AS NVarChar(11))
 )
 ON CONFLICT ([PersonID]) DO UPDATE SET
-	[Diagnosis] = CAST(LENGTH([t1].[Diagnosis]) + @i AS NVarChar(11))
+	[Diagnosis] = CAST(Length([t1].[Diagnosis]) + @i AS NVarChar(11))
 
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 DECLARE @id  -- Int32
 SET     @id = 5
-DECLARE @diagnosis NVarChar(3) -- String
-SET     @diagnosis = 'abc'
+DECLARE @diagnosis  -- Int32
+SET     @diagnosis = 3
 DECLARE @i  -- Int32
 SET     @i = 1
 
@@ -73,17 +73,17 @@ INSERT INTO [Patient] AS [t1]
 VALUES
 (
 	@id,
-	CAST(LENGTH(@diagnosis) + @i AS NVarChar(11))
+	CAST(@diagnosis + @i AS NVarChar(11))
 )
 ON CONFLICT ([PersonID]) DO UPDATE SET
-	[Diagnosis] = CAST(LENGTH([t1].[Diagnosis]) + @i AS NVarChar(11))
+	[Diagnosis] = CAST(Length([t1].[Diagnosis]) + @i AS NVarChar(11))
 
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 DECLARE @id  -- Int32
 SET     @id = 5
-DECLARE @diagnosis NVarChar(3) -- String
-SET     @diagnosis = 'abc'
+DECLARE @diagnosis  -- Int32
+SET     @diagnosis = 3
 DECLARE @i  -- Int32
 SET     @i = 2
 
@@ -95,10 +95,10 @@ INSERT INTO [Patient] AS [t1]
 VALUES
 (
 	@id,
-	CAST(LENGTH(@diagnosis) + @i AS NVarChar(11))
+	CAST(@diagnosis + @i AS NVarChar(11))
 )
 ON CONFLICT ([PersonID]) DO UPDATE SET
-	[Diagnosis] = CAST(LENGTH([t1].[Diagnosis]) + @i AS NVarChar(11))
+	[Diagnosis] = CAST(Length([t1].[Diagnosis]) + @i AS NVarChar(11))
 
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite

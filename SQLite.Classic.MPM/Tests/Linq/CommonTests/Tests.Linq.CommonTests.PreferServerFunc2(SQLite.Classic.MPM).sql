@@ -2,7 +2,7 @@
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
 SELECT
-	LENGTH([p].[FirstName]) + LENGTH('')
+	Length([p].[FirstName])
 FROM
 	[Person] [p]
 

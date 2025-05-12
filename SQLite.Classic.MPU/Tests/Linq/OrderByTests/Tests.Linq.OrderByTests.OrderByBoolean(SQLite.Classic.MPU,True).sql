@@ -10,7 +10,7 @@ SELECT
 FROM
 	[Person] [t1]
 ORDER BY
-	LENGTH([t1].[FirstName]) > 1
+	Length([t1].[FirstName]) > 1
 
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
