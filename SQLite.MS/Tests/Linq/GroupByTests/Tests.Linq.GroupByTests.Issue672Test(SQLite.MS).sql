@@ -80,7 +80,7 @@ FROM
 			[Stone] [sG]
 		WHERE
 			[sG].[Enabled] = 1 AND [sG].[Name] NOT LIKE 'level - %' ESCAPE '~' AND
-			Length([sG].[ImageFullUrl]) > 0
+			LENGTH([sG].[ImageFullUrl]) > 0
 		GROUP BY
 			[sG].[Name]
 	) [sG_1]
@@ -95,6 +95,6 @@ FROM
 				[Stone] [s]
 			WHERE
 				[s].[Enabled] = 1 AND [s].[Name] NOT LIKE 'level - %' ESCAPE '~' AND
-				Length([s].[ImageFullUrl]) > 0
+				LENGTH([s].[ImageFullUrl]) > 0
 		) [t1] ON [sG_1].[Name] = [t1].[Name] AND [t1].[rn] <= 1
 
