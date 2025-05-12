@@ -2,14 +2,14 @@
 -- ClickHouse.Client ClickHouse
 
 SELECT
-	n.PersonID,
+	n.ID,
 	n.FirstName
 FROM
 	Person t1
 		INNER JOIN (
-			SELECT 2 AS PersonID, 'Janet' AS FirstName
+			SELECT 2 AS ID, 'Janet' AS FirstName
 			UNION ALL
-			SELECT 3, 'Doe') n ON t1.PersonID = n.PersonID
+			SELECT 3, 'Doe') n ON t1.PersonID = n.ID
 ORDER BY
-	n.PersonID
+	n.ID
 

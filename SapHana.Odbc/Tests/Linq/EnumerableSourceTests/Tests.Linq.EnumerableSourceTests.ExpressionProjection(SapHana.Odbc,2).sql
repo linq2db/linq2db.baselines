@@ -6,14 +6,14 @@ DECLARE @ID Int -- Int32
 SET     @ID = 4
 
 SELECT
-	"n"."PersonID",
+	"n"."ID",
 	"n"."FirstName"
 FROM
 	"Person" "t1"
 		INNER JOIN (
-			SELECT ? AS "PersonID", 'Janet' AS "FirstName" FROM DUMMY
+			SELECT ? AS "ID", 'Janet' AS "FirstName" FROM DUMMY
 			UNION ALL
-			SELECT ?, 'Doe' FROM DUMMY) "n" ON "t1"."PersonID" = "n"."PersonID"
+			SELECT ?, 'Doe' FROM DUMMY) "n" ON "t1"."PersonID" = "n"."ID"
 ORDER BY
-	"n"."PersonID"
+	"n"."ID"
 
