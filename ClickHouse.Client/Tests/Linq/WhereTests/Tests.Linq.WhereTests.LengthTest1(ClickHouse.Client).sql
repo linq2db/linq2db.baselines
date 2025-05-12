@@ -6,7 +6,7 @@ SELECT
 FROM
 	(
 		SELECT
-			CHAR_LENGTH(p.MiddleName) as Length_1,
+			lengthUTF8(p.MiddleName) as Length_1,
 			p.MiddleName as MiddleName
 		FROM
 			Person p
