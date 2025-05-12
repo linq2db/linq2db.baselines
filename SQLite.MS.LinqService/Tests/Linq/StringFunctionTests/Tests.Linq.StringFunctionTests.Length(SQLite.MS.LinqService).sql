@@ -10,5 +10,5 @@ SELECT
 FROM
 	[Person] [p]
 WHERE
-	LENGTH([p].[FirstName]) = LENGTH('John') AND [p].[PersonID] = 1
+	Length([p].[FirstName]) = 4 AND [p].[PersonID] = 1
 

@@ -52,7 +52,7 @@ VALUES
 	'abc'
 )
 ON CONFLICT ([PersonID]) DO UPDATE SET
-	[Diagnosis] = CAST(LENGTH([t1].[Diagnosis]) + @i AS NVarChar(11))
+	[Diagnosis] = CAST(Length([t1].[Diagnosis]) + @i AS NVarChar(11))
 
 BeforeExecute
 -- SQLite.MS SQLite
@@ -72,7 +72,7 @@ VALUES
 	'abc'
 )
 ON CONFLICT ([PersonID]) DO UPDATE SET
-	[Diagnosis] = CAST(LENGTH([t1].[Diagnosis]) + @i AS NVarChar(11))
+	[Diagnosis] = CAST(Length([t1].[Diagnosis]) + @i AS NVarChar(11))
 
 BeforeExecute
 -- SQLite.MS SQLite
@@ -92,7 +92,7 @@ VALUES
 	'abc'
 )
 ON CONFLICT ([PersonID]) DO UPDATE SET
-	[Diagnosis] = CAST(LENGTH([t1].[Diagnosis]) + @i AS NVarChar(11))
+	[Diagnosis] = CAST(Length([t1].[Diagnosis]) + @i AS NVarChar(11))
 
 BeforeExecute
 -- SQLite.MS SQLite

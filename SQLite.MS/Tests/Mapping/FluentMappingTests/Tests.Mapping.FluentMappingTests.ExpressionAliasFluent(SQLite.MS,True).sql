@@ -1,7 +1,7 @@
 ﻿SELECT
 	[p].[FIRST_NAME] as [Name],
 	5 as [AGE],
-	5000 + LENGTH([p].[FIRST_NAME]) * 10 as [MONEY]
+	5000 + Length([p].[FIRST_NAME]) * 10 as [MONEY]
 FROM
 	[PERSON] [p]
 WHERE
@@ -9,7 +9,7 @@ WHERE
 
 SELECT
 	[q].[FIRST_NAME] as [Name],
-	5000 + LENGTH([q].[FIRST_NAME]) * 10 as [MONEY]
+	5000 + Length([q].[FIRST_NAME]) * 10 as [MONEY]
 FROM
 	[PERSON] [q]
 WHERE

@@ -16,6 +16,6 @@ SELECT
 FROM
 	[Customers] [c_1]
 WHERE
-	LENGTH([c_1].[City]) = 7
+	Length([c_1].[City]) = 7
 LIMIT 1
 
