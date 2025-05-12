@@ -1,7 +1,5 @@
 ﻿BeforeExecute
 -- SqlServer.Contained.MS SqlServer.2019
-DECLARE @Length Int -- Int32
-SET     @Length = 4
 
 SELECT
 	[p].[FirstName],
@@ -12,5 +10,6 @@ SELECT
 FROM
 	[Person] [p]
 WHERE
-	Len([p].[FirstName]) = @Length AND [p].[PersonID] = 1
+	LEN([p].[FirstName] + N'.') - 1 = LEN(N'John.') - 1 AND
+	[p].[PersonID] = 1
 
