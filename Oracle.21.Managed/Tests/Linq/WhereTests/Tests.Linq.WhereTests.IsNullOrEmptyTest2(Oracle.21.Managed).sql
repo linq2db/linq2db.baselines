@@ -6,7 +6,7 @@ SELECT
 FROM
 	"Person" nm
 WHERE
-	Length(nm."FirstName") <> 0
+	LENGTH(nm."FirstName") <> 0
 
 BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
