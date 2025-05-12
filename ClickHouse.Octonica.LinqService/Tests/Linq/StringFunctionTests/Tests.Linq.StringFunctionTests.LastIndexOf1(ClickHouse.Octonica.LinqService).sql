@@ -10,6 +10,6 @@ SELECT
 FROM
 	Person p
 WHERE
-	(CHAR_LENGTH(p.LastName) - positionUTF8(reverseUTF8(p.LastName), 'p')) - CHAR_LENGTH('p') = 1 AND
+	lengthUTF8(p.LastName) - positionUTF8(reverseUTF8(p.LastName), 'p') = 2 AND
 	positionUTF8(p.LastName, 'p') <> 0 AND p.PersonID = 1
 

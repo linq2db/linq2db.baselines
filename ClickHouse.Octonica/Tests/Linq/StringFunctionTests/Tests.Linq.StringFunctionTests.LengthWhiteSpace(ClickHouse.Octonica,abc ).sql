@@ -3,5 +3,5 @@
 
 SELECT
 	'abc ',
-	CHAR_LENGTH('abc ')
+	4
 

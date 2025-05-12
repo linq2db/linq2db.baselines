@@ -3,5 +3,5 @@
 
 SELECT
 	' ',
-	CHAR_LENGTH(' ')
+	1
 
