@@ -5,5 +5,5 @@ SET     @stringValue = N' abc '
 
 SELECT
 	@stringValue,
-	LEN(@stringValue + N'.') - 1
+	5
 

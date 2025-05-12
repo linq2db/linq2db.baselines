@@ -10,6 +10,6 @@ SELECT
 FROM
 	[Person] [p]
 WHERE
-	REPLACE([p].[FirstName], N'hn', N'lie') = N'Jolie' AND
+	Replace([p].[FirstName], N'hn', N'lie') = N'Jolie' AND
 	[p].[PersonID] = 1
 
