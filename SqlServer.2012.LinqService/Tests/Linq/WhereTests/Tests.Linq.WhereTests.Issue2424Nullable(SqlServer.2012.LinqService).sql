@@ -94,7 +94,7 @@ SELECT
 FROM
 	[Isue2424Table] [i]
 WHERE
-	[i].[StrValueNullable] IS NULL OR [i].[StrValueNullable] IS NULL
+	[i].[StrValueNullable] IS NULL
 
 BeforeExecute
 -- SqlServer.2012
