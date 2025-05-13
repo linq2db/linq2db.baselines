@@ -44,7 +44,14 @@ FROM
 				[Orders] [a_Orders_1]
 			WHERE
 				[d].[CustomerID] = [a_Orders_1].[CustomerID]
-		) >= 80, 1, 0)
+		) >= 80 AND (
+			SELECT
+				AVG([a_Orders_1].[Freight]) as [AVG_1]
+			FROM
+				[Orders] [a_Orders_1]
+			WHERE
+				[d].[CustomerID] = [a_Orders_1].[CustomerID]
+		) IS NOT NULL, 1, 0)
 
 BeforeExecute
 DisposeTransaction
