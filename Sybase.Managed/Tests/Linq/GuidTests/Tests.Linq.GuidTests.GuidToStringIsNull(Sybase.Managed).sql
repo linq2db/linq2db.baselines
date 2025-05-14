@@ -9,6 +9,5 @@ SELECT TOP 2
 FROM
 	[TableWithGuid] [x]
 WHERE
-	CAST([x].[NullableGuid] AS NVarChar(36)) IS NULL AND
-	[x].[Id] = @Guid1
+	[x].[NullableGuid] IS NULL AND [x].[Id] = @Guid1
 
