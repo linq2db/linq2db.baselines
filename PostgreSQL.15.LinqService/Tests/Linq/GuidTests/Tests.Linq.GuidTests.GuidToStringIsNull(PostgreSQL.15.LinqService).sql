@@ -9,6 +9,6 @@ SELECT
 FROM
 	"TableWithGuid" x
 WHERE
-	x."NullableGuid"::VarChar(36) IS NULL AND x."Id" = :Guid1
+	x."NullableGuid" IS NULL AND x."Id" = :Guid1
 LIMIT 2
 
