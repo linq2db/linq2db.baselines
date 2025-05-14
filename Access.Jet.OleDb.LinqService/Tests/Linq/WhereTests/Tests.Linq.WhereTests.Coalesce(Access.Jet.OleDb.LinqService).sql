@@ -10,6 +10,6 @@ SELECT
 FROM
 	[Person] [p]
 WHERE
-	[p].[PersonID] = 1 AND ([p].[MiddleName] IS NULL OR [p].[MiddleName] = 'None' AND [p].[MiddleName] IS NOT NULL) AND
+	[p].[PersonID] = 1 AND ([p].[MiddleName] IS NULL OR [p].[MiddleName] = 'None') AND
 	[p].[FirstName] = 'John'
 
