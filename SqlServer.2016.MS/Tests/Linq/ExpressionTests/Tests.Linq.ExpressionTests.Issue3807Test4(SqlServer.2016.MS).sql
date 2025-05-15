@@ -2,8 +2,6 @@
 BeginTransaction(RepeatableRead)
 BeforeExecute
 -- SqlServer.2016.MS SqlServer.2016
-DECLARE @p NChar(1) -- StringFixedLength
-SET     @p = N','
 
 SELECT
 	[m_1].[ArrayString],
@@ -19,19 +17,17 @@ FROM
 				SELECT
 					*
 				FROM
-					[STRING_SPLIT]([a].[ArrayString], @p) [i]
+					[STRING_SPLIT]([a].[ArrayString], N',') [i]
 				WHERE
 					[i].[value] = N'two'
 			)
 	) [m_1]
-		CROSS APPLY [STRING_SPLIT]([m_1].[ArrayString], @p) [d]
+		CROSS APPLY [STRING_SPLIT]([m_1].[ArrayString], N',') [d]
 
 BeforeExecute
 DisposeTransaction
 BeforeExecute
 -- SqlServer.2016.MS SqlServer.2016
-DECLARE @p NChar(1) -- StringFixedLength
-SET     @p = N','
 
 SELECT
 	[r].[Id],
@@ -43,7 +39,7 @@ WHERE
 		SELECT
 			*
 		FROM
-			[STRING_SPLIT]([r].[ArrayString], @p) [i]
+			[STRING_SPLIT]([r].[ArrayString], N',') [i]
 		WHERE
 			[i].[value] = N'two'
 	)
