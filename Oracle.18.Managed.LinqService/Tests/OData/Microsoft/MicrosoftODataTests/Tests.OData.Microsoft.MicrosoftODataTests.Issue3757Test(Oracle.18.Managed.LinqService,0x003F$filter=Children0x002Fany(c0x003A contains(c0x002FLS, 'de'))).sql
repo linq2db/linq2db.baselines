@@ -23,7 +23,11 @@ FROM
 				FROM
 					"Issue3757Level2" c_1
 				WHERE
-					l1.ID = c_1."ParentId" AND l1."ValS" LIKE :TypedProperty ESCAPE '~' AND
+					l1.ID = c_1."ParentId" AND CASE
+						WHEN l1."ValS" LIKE :TypedProperty ESCAPE '~' THEN 1
+						WHEN l1."ValS" NOT LIKE :TypedProperty ESCAPE '~' THEN 0
+						ELSE NULL
+					END = 1 AND
 					l1."ValS" IS NOT NULL
 			)
 	) m_1
@@ -48,7 +52,11 @@ WHERE
 		FROM
 			"Issue3757Level2" c_1
 		WHERE
-			it.ID = c_1."ParentId" AND it."ValS" LIKE :TypedProperty ESCAPE '~' AND
+			it.ID = c_1."ParentId" AND CASE
+				WHEN it."ValS" LIKE :TypedProperty ESCAPE '~' THEN 1
+				WHEN it."ValS" NOT LIKE :TypedProperty ESCAPE '~' THEN 0
+				ELSE NULL
+			END = 1 AND
 			it."ValS" IS NOT NULL
 	)
 
