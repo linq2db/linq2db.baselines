@@ -2,7 +2,11 @@
 -- SqlServer.2022
 
 SELECT
-	IIF(([i].[BoolValue] = 0 OR [i].[BoolValue] IS NULL) AND ([i].[IntValue] = (
+	IIF((CASE
+		WHEN [i].[BoolValue] = 1 THEN 1
+		WHEN [i].[BoolValue] = 0 THEN 0
+		ELSE NULL
+	END = 0 OR [i].[BoolValue] IS NULL) AND ([i].[IntValue] = (
 		SELECT TOP (1)
 			[p].[IntValue]
 		FROM

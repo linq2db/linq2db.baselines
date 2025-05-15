@@ -65,7 +65,7 @@ WHERE
 	[e].[Code] = N'Child2' OR
 	[e].[Code] = N'Child' OR
 	[e].[Code] = N'BaseChild' OR
-	[e].[Id] = 0 AND NOT ([e].[Code] = N'Child2' OR [e].[Code] = N'Child' OR [e].[Code] = N'BaseChild')
+	[e].[Id] = 0
 ORDER BY
 	[e].[Id]
 
