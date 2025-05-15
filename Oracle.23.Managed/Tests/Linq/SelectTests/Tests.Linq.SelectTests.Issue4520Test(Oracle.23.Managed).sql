@@ -3,11 +3,7 @@
 
 SELECT
 	CASE
-		WHEN (CASE
-			WHEN i."BoolValue" = 1 THEN 1
-			WHEN i."BoolValue" = 0 THEN 0
-			ELSE NULL
-		END = 0 OR i."BoolValue" IS NULL) AND (i."IntValue" = (
+		WHEN (i."BoolValue" = 0 OR i."BoolValue" IS NULL) AND (i."IntValue" = (
 			SELECT
 				p."IntValue"
 			FROM
