@@ -17,6 +17,6 @@ FROM
 	[Customers] [c_1]
 WHERE
 	4 - CharIndex('t', Reverse(Substr([c_1].[City], 2, 3))) = 3 AND
-	CharIndex('t', LeftStr([c_1].[City], 4), 2) <> 0
+	(CharIndex('t', LeftStr([c_1].[City], 4), 2) <> 0 OR [c_1].[City] IS NULL)
 LIMIT 1
 
