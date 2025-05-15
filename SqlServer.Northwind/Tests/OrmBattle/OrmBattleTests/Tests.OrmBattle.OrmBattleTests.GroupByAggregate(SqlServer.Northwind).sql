@@ -37,21 +37,14 @@ FROM
 		GROUP BY
 			[t2].[Key_1]
 	) [m_1]
-		INNER JOIN [Customers] [d] ON IIF([m_1].[Key_1] = 1, 1, 0) = IIF((
+		INNER JOIN [Customers] [d] ON [m_1].[Key_1] = IIF((
 			SELECT
 				AVG([a_Orders_1].[Freight]) as [AVG_1]
 			FROM
 				[Orders] [a_Orders_1]
 			WHERE
 				[d].[CustomerID] = [a_Orders_1].[CustomerID]
-		) >= 80 AND (
-			SELECT
-				AVG([a_Orders_1].[Freight]) as [AVG_1]
-			FROM
-				[Orders] [a_Orders_1]
-			WHERE
-				[d].[CustomerID] = [a_Orders_1].[CustomerID]
-		) IS NOT NULL, 1, 0)
+		) >= 80, 1, 0)
 
 BeforeExecute
 DisposeTransaction
