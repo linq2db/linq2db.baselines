@@ -7,5 +7,10 @@ SELECT
 FROM
 	[WhereWithString] [x]
 WHERE
-	[x].[StringValue] LIKE N'%Str%' ESCAPE N'~' AND [x].[StringValue] IS NOT NULL
+	CASE
+		WHEN [x].[StringValue] LIKE N'%Str%' ESCAPE N'~' THEN 1
+		WHEN [x].[StringValue] NOT LIKE N'%Str%' ESCAPE N'~' THEN 0
+		ELSE NULL
+	END = 1 AND
+	[x].[StringValue] IS NOT NULL
 
