@@ -8,10 +8,10 @@ FROM
 	[ComplexPredicate] [r]
 WHERE
 	CASE
-		WHEN [r].[Value] = N'123' AND [r].[Value] IS NOT NULL THEN 1
+		WHEN [r].[Value] = N'123' THEN 1
 		ELSE 0
 	END = CASE
-		WHEN [r].[Value] = N'1' AND [r].[Value] IS NOT NULL OR [r].[Value] = N'test' AND [r].[Value] IS NOT NULL AND ([r].[Value] <> N'1' OR [r].[Value] IS NULL)
+		WHEN [r].[Value] = N'1' OR [r].[Value] = N'test' AND ([r].[Value] <> N'1' OR [r].[Value] IS NULL)
 			THEN 1
 		ELSE 0
 	END
