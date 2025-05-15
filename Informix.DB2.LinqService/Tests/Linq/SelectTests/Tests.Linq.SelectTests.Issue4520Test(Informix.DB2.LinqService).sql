@@ -13,7 +13,7 @@ SELECT
 		END AND (i.IntValue = t1.cond OR i.IntValue IS NULL AND t1.cond IS NULL)
 			THEN 't'::BOOLEAN
 		ELSE 'f'::BOOLEAN
-	END
+	END::BOOLEAN
 FROM
 	LinqDataTypes i
 		LEFT JOIN (

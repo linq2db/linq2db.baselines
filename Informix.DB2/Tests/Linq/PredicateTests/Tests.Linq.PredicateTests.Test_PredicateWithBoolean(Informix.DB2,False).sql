@@ -15,10 +15,7 @@ WHERE
 	CASE
 		WHEN r.Value1 = r.Value2 THEN 't'::BOOLEAN
 		ELSE 'f'::BOOLEAN
-	END = CASE
-		WHEN @True::BOOLEAN THEN 't'::BOOLEAN
-		ELSE 'f'::BOOLEAN
-	END
+	END = @True
 
 BeforeExecute
 -- Informix.DB2 Informix
@@ -34,6 +31,8 @@ FROM
 
 BeforeExecute
 -- Informix.DB2 Informix
+DECLARE @TrueN Char(1) -- StringFixedLength
+SET     @TrueN = 't'
 
 SELECT
 	r.Id,
@@ -44,7 +43,10 @@ SELECT
 FROM
 	BooleanTable r
 WHERE
-	r.Value1 = r.Value2
+	CASE
+		WHEN r.Value1 = r.Value2 THEN 't'::BOOLEAN
+		ELSE 'f'::BOOLEAN
+	END = @TrueN
 
 BeforeExecute
 -- Informix.DB2 Informix
@@ -73,12 +75,9 @@ FROM
 	BooleanTable r
 WHERE
 	CASE
-		WHEN r.Value1 = r.Value4 AND r.Value4 IS NOT NULL THEN 't'::BOOLEAN
+		WHEN r.Value1 = r.Value4 THEN 't'::BOOLEAN
 		ELSE 'f'::BOOLEAN
-	END = CASE
-		WHEN @False::BOOLEAN THEN 't'::BOOLEAN
-		ELSE 'f'::BOOLEAN
-	END
+	END = @False
 
 BeforeExecute
 -- Informix.DB2 Informix
@@ -94,6 +93,8 @@ FROM
 
 BeforeExecute
 -- Informix.DB2 Informix
+DECLARE @FalseN Char(1) -- StringFixedLength
+SET     @FalseN = 'f'
 
 SELECT
 	r.Id,
@@ -104,7 +105,10 @@ SELECT
 FROM
 	BooleanTable r
 WHERE
-	r.Value1 <> r.Value2
+	CASE
+		WHEN r.Value1 = r.Value2 THEN 't'::BOOLEAN
+		ELSE 'f'::BOOLEAN
+	END = @FalseN
 
 BeforeExecute
 -- Informix.DB2 Informix
@@ -159,12 +163,9 @@ FROM
 	BooleanTable r
 WHERE
 	CASE
-		WHEN r.Value1 = r.Value4 AND r.Value4 IS NOT NULL THEN 't'::BOOLEAN
+		WHEN r.Value1 = r.Value4 THEN 't'::BOOLEAN
 		ELSE 'f'::BOOLEAN
-	END = CASE
-		WHEN @True::BOOLEAN THEN 't'::BOOLEAN
-		ELSE 'f'::BOOLEAN
-	END
+	END = @True
 
 BeforeExecute
 -- Informix.DB2 Informix
@@ -180,6 +181,8 @@ FROM
 
 BeforeExecute
 -- Informix.DB2 Informix
+DECLARE @TrueN Char(1) -- StringFixedLength
+SET     @TrueN = 't'
 
 SELECT
 	r.Id,
@@ -190,7 +193,10 @@ SELECT
 FROM
 	BooleanTable r
 WHERE
-	r.Value1 = r.Value4 AND r.Value4 IS NOT NULL
+	CASE
+		WHEN r.Value1 = r.Value4 THEN 't'::BOOLEAN
+		ELSE 'f'::BOOLEAN
+	END = @TrueN
 
 BeforeExecute
 -- Informix.DB2 Informix
@@ -219,12 +225,9 @@ FROM
 	BooleanTable r
 WHERE
 	CASE
-		WHEN r.Value1 = r.Value4 AND r.Value4 IS NOT NULL THEN 't'::BOOLEAN
+		WHEN r.Value1 = r.Value4 THEN 't'::BOOLEAN
 		ELSE 'f'::BOOLEAN
-	END = CASE
-		WHEN @False::BOOLEAN THEN 't'::BOOLEAN
-		ELSE 'f'::BOOLEAN
-	END
+	END = @False
 
 BeforeExecute
 -- Informix.DB2 Informix
@@ -240,6 +243,8 @@ FROM
 
 BeforeExecute
 -- Informix.DB2 Informix
+DECLARE @FalseN Char(1) -- StringFixedLength
+SET     @FalseN = 'f'
 
 SELECT
 	r.Id,
@@ -250,7 +255,10 @@ SELECT
 FROM
 	BooleanTable r
 WHERE
-	NOT (r.Value1 = r.Value4 AND r.Value4 IS NOT NULL)
+	CASE
+		WHEN r.Value1 = r.Value4 THEN 't'::BOOLEAN
+		ELSE 'f'::BOOLEAN
+	END = @FalseN
 
 BeforeExecute
 -- Informix.DB2 Informix
@@ -305,13 +313,10 @@ FROM
 	BooleanTable r
 WHERE
 	CASE
-		WHEN (r.Value5 = r.Value4 OR r.Value5 IS NULL AND r.Value4 IS NULL) AND NOT (r.Value5 IS NULL AND r.Value4 IS NOT NULL) AND NOT (r.Value4 IS NULL AND r.Value5 IS NOT NULL)
+		WHEN r.Value5 = r.Value4 OR r.Value5 IS NULL AND r.Value4 IS NULL
 			THEN 't'::BOOLEAN
 		ELSE 'f'::BOOLEAN
-	END = CASE
-		WHEN @True::BOOLEAN THEN 't'::BOOLEAN
-		ELSE 'f'::BOOLEAN
-	END
+	END = @True
 
 BeforeExecute
 -- Informix.DB2 Informix
@@ -327,6 +332,8 @@ FROM
 
 BeforeExecute
 -- Informix.DB2 Informix
+DECLARE @TrueN Char(1) -- StringFixedLength
+SET     @TrueN = 't'
 
 SELECT
 	r.Id,
@@ -337,9 +344,11 @@ SELECT
 FROM
 	BooleanTable r
 WHERE
-	(r.Value5 = r.Value4 OR r.Value5 IS NULL AND r.Value4 IS NULL) AND
-	NOT (r.Value5 IS NULL AND r.Value4 IS NOT NULL) AND
-	NOT (r.Value4 IS NULL AND r.Value5 IS NOT NULL)
+	CASE
+		WHEN r.Value5 = r.Value4 OR r.Value5 IS NULL AND r.Value4 IS NULL
+			THEN 't'::BOOLEAN
+		ELSE 'f'::BOOLEAN
+	END = @TrueN
 
 BeforeExecute
 -- Informix.DB2 Informix
@@ -368,13 +377,10 @@ FROM
 	BooleanTable r
 WHERE
 	CASE
-		WHEN (r.Value5 = r.Value4 OR r.Value5 IS NULL AND r.Value4 IS NULL) AND NOT (r.Value5 IS NULL AND r.Value4 IS NOT NULL) AND NOT (r.Value4 IS NULL AND r.Value5 IS NOT NULL)
+		WHEN r.Value5 = r.Value4 OR r.Value5 IS NULL AND r.Value4 IS NULL
 			THEN 't'::BOOLEAN
 		ELSE 'f'::BOOLEAN
-	END = CASE
-		WHEN @False::BOOLEAN THEN 't'::BOOLEAN
-		ELSE 'f'::BOOLEAN
-	END
+	END = @False
 
 BeforeExecute
 -- Informix.DB2 Informix
@@ -390,6 +396,8 @@ FROM
 
 BeforeExecute
 -- Informix.DB2 Informix
+DECLARE @FalseN Char(1) -- StringFixedLength
+SET     @FalseN = 'f'
 
 SELECT
 	r.Id,
@@ -400,7 +408,11 @@ SELECT
 FROM
 	BooleanTable r
 WHERE
-	NOT ((r.Value5 = r.Value4 OR r.Value5 IS NULL AND r.Value4 IS NULL) AND NOT (r.Value5 IS NULL AND r.Value4 IS NOT NULL) AND NOT (r.Value4 IS NULL AND r.Value5 IS NOT NULL))
+	CASE
+		WHEN r.Value5 = r.Value4 OR r.Value5 IS NULL AND r.Value4 IS NULL
+			THEN 't'::BOOLEAN
+		ELSE 'f'::BOOLEAN
+	END = @FalseN
 
 BeforeExecute
 -- Informix.DB2 Informix
@@ -457,10 +469,7 @@ WHERE
 	CASE
 		WHEN r.Value1 = r.Value2 THEN 't'::BOOLEAN
 		ELSE 'f'::BOOLEAN
-	END <> CASE
-		WHEN @True::BOOLEAN THEN 't'::BOOLEAN
-		ELSE 'f'::BOOLEAN
-	END
+	END <> @True
 
 BeforeExecute
 -- Informix.DB2 Informix
@@ -476,6 +485,8 @@ FROM
 
 BeforeExecute
 -- Informix.DB2 Informix
+DECLARE @TrueN Char(1) -- StringFixedLength
+SET     @TrueN = 't'
 
 SELECT
 	r.Id,
@@ -486,7 +497,10 @@ SELECT
 FROM
 	BooleanTable r
 WHERE
-	r.Value1 <> r.Value2
+	CASE
+		WHEN r.Value1 = r.Value2 THEN 't'::BOOLEAN
+		ELSE 'f'::BOOLEAN
+	END <> @TrueN
 
 BeforeExecute
 -- Informix.DB2 Informix
@@ -517,10 +531,7 @@ WHERE
 	CASE
 		WHEN r.Value1 = r.Value2 THEN 't'::BOOLEAN
 		ELSE 'f'::BOOLEAN
-	END <> CASE
-		WHEN @False::BOOLEAN THEN 't'::BOOLEAN
-		ELSE 'f'::BOOLEAN
-	END
+	END <> @False
 
 BeforeExecute
 -- Informix.DB2 Informix
@@ -536,6 +547,8 @@ FROM
 
 BeforeExecute
 -- Informix.DB2 Informix
+DECLARE @FalseN Char(1) -- StringFixedLength
+SET     @FalseN = 'f'
 
 SELECT
 	r.Id,
@@ -546,7 +559,10 @@ SELECT
 FROM
 	BooleanTable r
 WHERE
-	r.Value1 = r.Value2
+	CASE
+		WHEN r.Value1 = r.Value2 THEN 't'::BOOLEAN
+		ELSE 'f'::BOOLEAN
+	END <> @FalseN
 
 BeforeExecute
 -- Informix.DB2 Informix
@@ -599,12 +615,9 @@ FROM
 	BooleanTable r
 WHERE
 	CASE
-		WHEN r.Value1 = r.Value4 AND r.Value4 IS NOT NULL THEN 't'::BOOLEAN
+		WHEN r.Value1 = r.Value4 THEN 't'::BOOLEAN
 		ELSE 'f'::BOOLEAN
-	END <> CASE
-		WHEN @True::BOOLEAN THEN 't'::BOOLEAN
-		ELSE 'f'::BOOLEAN
-	END
+	END <> @True
 
 BeforeExecute
 -- Informix.DB2 Informix
@@ -620,6 +633,8 @@ FROM
 
 BeforeExecute
 -- Informix.DB2 Informix
+DECLARE @TrueN Char(1) -- StringFixedLength
+SET     @TrueN = 't'
 
 SELECT
 	r.Id,
@@ -630,7 +645,10 @@ SELECT
 FROM
 	BooleanTable r
 WHERE
-	NOT (r.Value1 = r.Value4 AND r.Value4 IS NOT NULL)
+	CASE
+		WHEN r.Value1 = r.Value4 THEN 't'::BOOLEAN
+		ELSE 'f'::BOOLEAN
+	END <> @TrueN
 
 BeforeExecute
 -- Informix.DB2 Informix
@@ -659,12 +677,9 @@ FROM
 	BooleanTable r
 WHERE
 	CASE
-		WHEN r.Value1 = r.Value4 AND r.Value4 IS NOT NULL THEN 't'::BOOLEAN
+		WHEN r.Value1 = r.Value4 THEN 't'::BOOLEAN
 		ELSE 'f'::BOOLEAN
-	END <> CASE
-		WHEN @False::BOOLEAN THEN 't'::BOOLEAN
-		ELSE 'f'::BOOLEAN
-	END
+	END <> @False
 
 BeforeExecute
 -- Informix.DB2 Informix
@@ -680,6 +695,8 @@ FROM
 
 BeforeExecute
 -- Informix.DB2 Informix
+DECLARE @FalseN Char(1) -- StringFixedLength
+SET     @FalseN = 'f'
 
 SELECT
 	r.Id,
@@ -690,7 +707,10 @@ SELECT
 FROM
 	BooleanTable r
 WHERE
-	r.Value1 = r.Value4 AND r.Value4 IS NOT NULL
+	CASE
+		WHEN r.Value1 = r.Value4 THEN 't'::BOOLEAN
+		ELSE 'f'::BOOLEAN
+	END <> @FalseN
 
 BeforeExecute
 -- Informix.DB2 Informix
@@ -743,13 +763,10 @@ FROM
 	BooleanTable r
 WHERE
 	CASE
-		WHEN (r.Value5 = r.Value4 OR r.Value5 IS NULL AND r.Value4 IS NULL) AND NOT (r.Value5 IS NULL AND r.Value4 IS NOT NULL) AND NOT (r.Value4 IS NULL AND r.Value5 IS NOT NULL)
+		WHEN r.Value5 = r.Value4 OR r.Value5 IS NULL AND r.Value4 IS NULL
 			THEN 't'::BOOLEAN
 		ELSE 'f'::BOOLEAN
-	END <> CASE
-		WHEN @True::BOOLEAN THEN 't'::BOOLEAN
-		ELSE 'f'::BOOLEAN
-	END
+	END <> @True
 
 BeforeExecute
 -- Informix.DB2 Informix
@@ -765,6 +782,8 @@ FROM
 
 BeforeExecute
 -- Informix.DB2 Informix
+DECLARE @TrueN Char(1) -- StringFixedLength
+SET     @TrueN = 't'
 
 SELECT
 	r.Id,
@@ -775,7 +794,11 @@ SELECT
 FROM
 	BooleanTable r
 WHERE
-	NOT ((r.Value5 = r.Value4 OR r.Value5 IS NULL AND r.Value4 IS NULL) AND NOT (r.Value5 IS NULL AND r.Value4 IS NOT NULL) AND NOT (r.Value4 IS NULL AND r.Value5 IS NOT NULL))
+	CASE
+		WHEN r.Value5 = r.Value4 OR r.Value5 IS NULL AND r.Value4 IS NULL
+			THEN 't'::BOOLEAN
+		ELSE 'f'::BOOLEAN
+	END <> @TrueN
 
 BeforeExecute
 -- Informix.DB2 Informix
@@ -804,13 +827,10 @@ FROM
 	BooleanTable r
 WHERE
 	CASE
-		WHEN (r.Value5 = r.Value4 OR r.Value5 IS NULL AND r.Value4 IS NULL) AND NOT (r.Value5 IS NULL AND r.Value4 IS NOT NULL) AND NOT (r.Value4 IS NULL AND r.Value5 IS NOT NULL)
+		WHEN r.Value5 = r.Value4 OR r.Value5 IS NULL AND r.Value4 IS NULL
 			THEN 't'::BOOLEAN
 		ELSE 'f'::BOOLEAN
-	END <> CASE
-		WHEN @False::BOOLEAN THEN 't'::BOOLEAN
-		ELSE 'f'::BOOLEAN
-	END
+	END <> @False
 
 BeforeExecute
 -- Informix.DB2 Informix
@@ -826,6 +846,8 @@ FROM
 
 BeforeExecute
 -- Informix.DB2 Informix
+DECLARE @FalseN Char(1) -- StringFixedLength
+SET     @FalseN = 'f'
 
 SELECT
 	r.Id,
@@ -836,9 +858,11 @@ SELECT
 FROM
 	BooleanTable r
 WHERE
-	(r.Value5 = r.Value4 OR r.Value5 IS NULL AND r.Value4 IS NULL) AND
-	NOT (r.Value5 IS NULL AND r.Value4 IS NOT NULL) AND
-	NOT (r.Value4 IS NULL AND r.Value5 IS NOT NULL)
+	CASE
+		WHEN r.Value5 = r.Value4 OR r.Value5 IS NULL AND r.Value4 IS NULL
+			THEN 't'::BOOLEAN
+		ELSE 'f'::BOOLEAN
+	END <> @FalseN
 
 BeforeExecute
 -- Informix.DB2 Informix
@@ -893,10 +917,7 @@ WHERE
 	CASE
 		WHEN r.Value1 > r.Value2 THEN 't'::BOOLEAN
 		ELSE 'f'::BOOLEAN
-	END = CASE
-		WHEN @True::BOOLEAN THEN 't'::BOOLEAN
-		ELSE 'f'::BOOLEAN
-	END
+	END = @True
 
 BeforeExecute
 -- Informix.DB2 Informix
@@ -912,6 +933,8 @@ FROM
 
 BeforeExecute
 -- Informix.DB2 Informix
+DECLARE @TrueN Char(1) -- StringFixedLength
+SET     @TrueN = 't'
 
 SELECT
 	r.Id,
@@ -922,7 +945,10 @@ SELECT
 FROM
 	BooleanTable r
 WHERE
-	r.Value1 > r.Value2
+	CASE
+		WHEN r.Value1 > r.Value2 THEN 't'::BOOLEAN
+		ELSE 'f'::BOOLEAN
+	END = @TrueN
 
 BeforeExecute
 -- Informix.DB2 Informix
@@ -953,10 +979,7 @@ WHERE
 	CASE
 		WHEN r.Value1 > r.Value2 THEN 't'::BOOLEAN
 		ELSE 'f'::BOOLEAN
-	END = CASE
-		WHEN @False::BOOLEAN THEN 't'::BOOLEAN
-		ELSE 'f'::BOOLEAN
-	END
+	END = @False
 
 BeforeExecute
 -- Informix.DB2 Informix
@@ -972,6 +995,8 @@ FROM
 
 BeforeExecute
 -- Informix.DB2 Informix
+DECLARE @FalseN Char(1) -- StringFixedLength
+SET     @FalseN = 'f'
 
 SELECT
 	r.Id,
@@ -982,7 +1007,10 @@ SELECT
 FROM
 	BooleanTable r
 WHERE
-	r.Value1 <= r.Value2
+	CASE
+		WHEN r.Value1 > r.Value2 THEN 't'::BOOLEAN
+		ELSE 'f'::BOOLEAN
+	END = @FalseN
 
 BeforeExecute
 -- Informix.DB2 Informix
@@ -1037,12 +1065,9 @@ FROM
 	BooleanTable r
 WHERE
 	CASE
-		WHEN r.Value1 > r.Value4 AND r.Value4 IS NOT NULL THEN 't'::BOOLEAN
+		WHEN r.Value1 > r.Value4 THEN 't'::BOOLEAN
 		ELSE 'f'::BOOLEAN
-	END = CASE
-		WHEN @True::BOOLEAN THEN 't'::BOOLEAN
-		ELSE 'f'::BOOLEAN
-	END
+	END = @True
 
 BeforeExecute
 -- Informix.DB2 Informix
@@ -1058,6 +1083,8 @@ FROM
 
 BeforeExecute
 -- Informix.DB2 Informix
+DECLARE @TrueN Char(1) -- StringFixedLength
+SET     @TrueN = 't'
 
 SELECT
 	r.Id,
@@ -1068,7 +1095,10 @@ SELECT
 FROM
 	BooleanTable r
 WHERE
-	r.Value1 > r.Value4 AND r.Value4 IS NOT NULL
+	CASE
+		WHEN r.Value1 > r.Value4 THEN 't'::BOOLEAN
+		ELSE 'f'::BOOLEAN
+	END = @TrueN
 
 BeforeExecute
 -- Informix.DB2 Informix
@@ -1097,12 +1127,9 @@ FROM
 	BooleanTable r
 WHERE
 	CASE
-		WHEN r.Value1 > r.Value4 AND r.Value4 IS NOT NULL THEN 't'::BOOLEAN
+		WHEN r.Value1 > r.Value4 THEN 't'::BOOLEAN
 		ELSE 'f'::BOOLEAN
-	END = CASE
-		WHEN @False::BOOLEAN THEN 't'::BOOLEAN
-		ELSE 'f'::BOOLEAN
-	END
+	END = @False
 
 BeforeExecute
 -- Informix.DB2 Informix
@@ -1118,6 +1145,8 @@ FROM
 
 BeforeExecute
 -- Informix.DB2 Informix
+DECLARE @FalseN Char(1) -- StringFixedLength
+SET     @FalseN = 'f'
 
 SELECT
 	r.Id,
@@ -1128,7 +1157,10 @@ SELECT
 FROM
 	BooleanTable r
 WHERE
-	NOT (r.Value1 > r.Value4 AND r.Value4 IS NOT NULL)
+	CASE
+		WHEN r.Value1 > r.Value4 THEN 't'::BOOLEAN
+		ELSE 'f'::BOOLEAN
+	END = @FalseN
 
 BeforeExecute
 -- Informix.DB2 Informix
@@ -1183,13 +1215,9 @@ FROM
 	BooleanTable r
 WHERE
 	CASE
-		WHEN r.Value5 > r.Value4 AND r.Value5 IS NOT NULL AND r.Value4 IS NOT NULL
-			THEN 't'::BOOLEAN
+		WHEN r.Value5 > r.Value4 THEN 't'::BOOLEAN
 		ELSE 'f'::BOOLEAN
-	END = CASE
-		WHEN @True::BOOLEAN THEN 't'::BOOLEAN
-		ELSE 'f'::BOOLEAN
-	END
+	END = @True
 
 BeforeExecute
 -- Informix.DB2 Informix
@@ -1205,6 +1233,8 @@ FROM
 
 BeforeExecute
 -- Informix.DB2 Informix
+DECLARE @TrueN Char(1) -- StringFixedLength
+SET     @TrueN = 't'
 
 SELECT
 	r.Id,
@@ -1215,7 +1245,10 @@ SELECT
 FROM
 	BooleanTable r
 WHERE
-	r.Value5 > r.Value4 AND r.Value5 IS NOT NULL AND r.Value4 IS NOT NULL
+	CASE
+		WHEN r.Value5 > r.Value4 THEN 't'::BOOLEAN
+		ELSE 'f'::BOOLEAN
+	END = @TrueN
 
 BeforeExecute
 -- Informix.DB2 Informix
@@ -1244,13 +1277,9 @@ FROM
 	BooleanTable r
 WHERE
 	CASE
-		WHEN r.Value5 > r.Value4 AND r.Value5 IS NOT NULL AND r.Value4 IS NOT NULL
-			THEN 't'::BOOLEAN
+		WHEN r.Value5 > r.Value4 THEN 't'::BOOLEAN
 		ELSE 'f'::BOOLEAN
-	END = CASE
-		WHEN @False::BOOLEAN THEN 't'::BOOLEAN
-		ELSE 'f'::BOOLEAN
-	END
+	END = @False
 
 BeforeExecute
 -- Informix.DB2 Informix
@@ -1266,6 +1295,8 @@ FROM
 
 BeforeExecute
 -- Informix.DB2 Informix
+DECLARE @FalseN Char(1) -- StringFixedLength
+SET     @FalseN = 'f'
 
 SELECT
 	r.Id,
@@ -1276,7 +1307,10 @@ SELECT
 FROM
 	BooleanTable r
 WHERE
-	NOT (r.Value5 > r.Value4 AND r.Value5 IS NOT NULL AND r.Value4 IS NOT NULL)
+	CASE
+		WHEN r.Value5 > r.Value4 THEN 't'::BOOLEAN
+		ELSE 'f'::BOOLEAN
+	END = @FalseN
 
 BeforeExecute
 -- Informix.DB2 Informix
@@ -1333,10 +1367,7 @@ WHERE
 	CASE
 		WHEN r.Value1 > r.Value2 THEN 't'::BOOLEAN
 		ELSE 'f'::BOOLEAN
-	END <> CASE
-		WHEN @True::BOOLEAN THEN 't'::BOOLEAN
-		ELSE 'f'::BOOLEAN
-	END
+	END <> @True
 
 BeforeExecute
 -- Informix.DB2 Informix
@@ -1352,6 +1383,8 @@ FROM
 
 BeforeExecute
 -- Informix.DB2 Informix
+DECLARE @TrueN Char(1) -- StringFixedLength
+SET     @TrueN = 't'
 
 SELECT
 	r.Id,
@@ -1362,7 +1395,10 @@ SELECT
 FROM
 	BooleanTable r
 WHERE
-	r.Value1 <= r.Value2
+	CASE
+		WHEN r.Value1 > r.Value2 THEN 't'::BOOLEAN
+		ELSE 'f'::BOOLEAN
+	END <> @TrueN
 
 BeforeExecute
 -- Informix.DB2 Informix
@@ -1393,10 +1429,7 @@ WHERE
 	CASE
 		WHEN r.Value1 > r.Value2 THEN 't'::BOOLEAN
 		ELSE 'f'::BOOLEAN
-	END <> CASE
-		WHEN @False::BOOLEAN THEN 't'::BOOLEAN
-		ELSE 'f'::BOOLEAN
-	END
+	END <> @False
 
 BeforeExecute
 -- Informix.DB2 Informix
@@ -1412,6 +1445,8 @@ FROM
 
 BeforeExecute
 -- Informix.DB2 Informix
+DECLARE @FalseN Char(1) -- StringFixedLength
+SET     @FalseN = 'f'
 
 SELECT
 	r.Id,
@@ -1422,7 +1457,10 @@ SELECT
 FROM
 	BooleanTable r
 WHERE
-	r.Value1 > r.Value2
+	CASE
+		WHEN r.Value1 > r.Value2 THEN 't'::BOOLEAN
+		ELSE 'f'::BOOLEAN
+	END <> @FalseN
 
 BeforeExecute
 -- Informix.DB2 Informix
@@ -1475,12 +1513,9 @@ FROM
 	BooleanTable r
 WHERE
 	CASE
-		WHEN r.Value1 > r.Value4 AND r.Value4 IS NOT NULL THEN 't'::BOOLEAN
+		WHEN r.Value1 > r.Value4 THEN 't'::BOOLEAN
 		ELSE 'f'::BOOLEAN
-	END <> CASE
-		WHEN @True::BOOLEAN THEN 't'::BOOLEAN
-		ELSE 'f'::BOOLEAN
-	END
+	END <> @True
 
 BeforeExecute
 -- Informix.DB2 Informix
@@ -1496,6 +1531,8 @@ FROM
 
 BeforeExecute
 -- Informix.DB2 Informix
+DECLARE @TrueN Char(1) -- StringFixedLength
+SET     @TrueN = 't'
 
 SELECT
 	r.Id,
@@ -1506,7 +1543,10 @@ SELECT
 FROM
 	BooleanTable r
 WHERE
-	NOT (r.Value1 > r.Value4 AND r.Value4 IS NOT NULL)
+	CASE
+		WHEN r.Value1 > r.Value4 THEN 't'::BOOLEAN
+		ELSE 'f'::BOOLEAN
+	END <> @TrueN
 
 BeforeExecute
 -- Informix.DB2 Informix
@@ -1535,12 +1575,9 @@ FROM
 	BooleanTable r
 WHERE
 	CASE
-		WHEN r.Value1 > r.Value4 AND r.Value4 IS NOT NULL THEN 't'::BOOLEAN
+		WHEN r.Value1 > r.Value4 THEN 't'::BOOLEAN
 		ELSE 'f'::BOOLEAN
-	END <> CASE
-		WHEN @False::BOOLEAN THEN 't'::BOOLEAN
-		ELSE 'f'::BOOLEAN
-	END
+	END <> @False
 
 BeforeExecute
 -- Informix.DB2 Informix
@@ -1556,6 +1593,8 @@ FROM
 
 BeforeExecute
 -- Informix.DB2 Informix
+DECLARE @FalseN Char(1) -- StringFixedLength
+SET     @FalseN = 'f'
 
 SELECT
 	r.Id,
@@ -1566,7 +1605,10 @@ SELECT
 FROM
 	BooleanTable r
 WHERE
-	r.Value1 > r.Value4 AND r.Value4 IS NOT NULL
+	CASE
+		WHEN r.Value1 > r.Value4 THEN 't'::BOOLEAN
+		ELSE 'f'::BOOLEAN
+	END <> @FalseN
 
 BeforeExecute
 -- Informix.DB2 Informix
@@ -1619,13 +1661,9 @@ FROM
 	BooleanTable r
 WHERE
 	CASE
-		WHEN r.Value5 > r.Value4 AND r.Value5 IS NOT NULL AND r.Value4 IS NOT NULL
-			THEN 't'::BOOLEAN
+		WHEN r.Value5 > r.Value4 THEN 't'::BOOLEAN
 		ELSE 'f'::BOOLEAN
-	END <> CASE
-		WHEN @True::BOOLEAN THEN 't'::BOOLEAN
-		ELSE 'f'::BOOLEAN
-	END
+	END <> @True
 
 BeforeExecute
 -- Informix.DB2 Informix
@@ -1641,6 +1679,8 @@ FROM
 
 BeforeExecute
 -- Informix.DB2 Informix
+DECLARE @TrueN Char(1) -- StringFixedLength
+SET     @TrueN = 't'
 
 SELECT
 	r.Id,
@@ -1651,7 +1691,10 @@ SELECT
 FROM
 	BooleanTable r
 WHERE
-	NOT (r.Value5 > r.Value4 AND r.Value5 IS NOT NULL AND r.Value4 IS NOT NULL)
+	CASE
+		WHEN r.Value5 > r.Value4 THEN 't'::BOOLEAN
+		ELSE 'f'::BOOLEAN
+	END <> @TrueN
 
 BeforeExecute
 -- Informix.DB2 Informix
@@ -1680,13 +1723,9 @@ FROM
 	BooleanTable r
 WHERE
 	CASE
-		WHEN r.Value5 > r.Value4 AND r.Value5 IS NOT NULL AND r.Value4 IS NOT NULL
-			THEN 't'::BOOLEAN
+		WHEN r.Value5 > r.Value4 THEN 't'::BOOLEAN
 		ELSE 'f'::BOOLEAN
-	END <> CASE
-		WHEN @False::BOOLEAN THEN 't'::BOOLEAN
-		ELSE 'f'::BOOLEAN
-	END
+	END <> @False
 
 BeforeExecute
 -- Informix.DB2 Informix
@@ -1702,6 +1741,8 @@ FROM
 
 BeforeExecute
 -- Informix.DB2 Informix
+DECLARE @FalseN Char(1) -- StringFixedLength
+SET     @FalseN = 'f'
 
 SELECT
 	r.Id,
@@ -1712,7 +1753,10 @@ SELECT
 FROM
 	BooleanTable r
 WHERE
-	r.Value5 > r.Value4 AND r.Value5 IS NOT NULL AND r.Value4 IS NOT NULL
+	CASE
+		WHEN r.Value5 > r.Value4 THEN 't'::BOOLEAN
+		ELSE 'f'::BOOLEAN
+	END <> @FalseN
 
 BeforeExecute
 -- Informix.DB2 Informix
@@ -1767,10 +1811,7 @@ WHERE
 	CASE
 		WHEN r.Value1 >= r.Value2 THEN 't'::BOOLEAN
 		ELSE 'f'::BOOLEAN
-	END = CASE
-		WHEN @True::BOOLEAN THEN 't'::BOOLEAN
-		ELSE 'f'::BOOLEAN
-	END
+	END = @True
 
 BeforeExecute
 -- Informix.DB2 Informix
@@ -1786,6 +1827,8 @@ FROM
 
 BeforeExecute
 -- Informix.DB2 Informix
+DECLARE @TrueN Char(1) -- StringFixedLength
+SET     @TrueN = 't'
 
 SELECT
 	r.Id,
@@ -1796,7 +1839,10 @@ SELECT
 FROM
 	BooleanTable r
 WHERE
-	r.Value1 >= r.Value2
+	CASE
+		WHEN r.Value1 >= r.Value2 THEN 't'::BOOLEAN
+		ELSE 'f'::BOOLEAN
+	END = @TrueN
 
 BeforeExecute
 -- Informix.DB2 Informix
@@ -1827,10 +1873,7 @@ WHERE
 	CASE
 		WHEN r.Value1 >= r.Value2 THEN 't'::BOOLEAN
 		ELSE 'f'::BOOLEAN
-	END = CASE
-		WHEN @False::BOOLEAN THEN 't'::BOOLEAN
-		ELSE 'f'::BOOLEAN
-	END
+	END = @False
 
 BeforeExecute
 -- Informix.DB2 Informix
@@ -1846,6 +1889,8 @@ FROM
 
 BeforeExecute
 -- Informix.DB2 Informix
+DECLARE @FalseN Char(1) -- StringFixedLength
+SET     @FalseN = 'f'
 
 SELECT
 	r.Id,
@@ -1856,7 +1901,10 @@ SELECT
 FROM
 	BooleanTable r
 WHERE
-	r.Value1 < r.Value2
+	CASE
+		WHEN r.Value1 >= r.Value2 THEN 't'::BOOLEAN
+		ELSE 'f'::BOOLEAN
+	END = @FalseN
 
 BeforeExecute
 -- Informix.DB2 Informix
@@ -1911,12 +1959,9 @@ FROM
 	BooleanTable r
 WHERE
 	CASE
-		WHEN r.Value1 >= r.Value4 AND r.Value4 IS NOT NULL THEN 't'::BOOLEAN
+		WHEN r.Value1 >= r.Value4 THEN 't'::BOOLEAN
 		ELSE 'f'::BOOLEAN
-	END = CASE
-		WHEN @True::BOOLEAN THEN 't'::BOOLEAN
-		ELSE 'f'::BOOLEAN
-	END
+	END = @True
 
 BeforeExecute
 -- Informix.DB2 Informix
@@ -1932,6 +1977,8 @@ FROM
 
 BeforeExecute
 -- Informix.DB2 Informix
+DECLARE @TrueN Char(1) -- StringFixedLength
+SET     @TrueN = 't'
 
 SELECT
 	r.Id,
@@ -1942,7 +1989,10 @@ SELECT
 FROM
 	BooleanTable r
 WHERE
-	r.Value1 >= r.Value4 AND r.Value4 IS NOT NULL
+	CASE
+		WHEN r.Value1 >= r.Value4 THEN 't'::BOOLEAN
+		ELSE 'f'::BOOLEAN
+	END = @TrueN
 
 BeforeExecute
 -- Informix.DB2 Informix
@@ -1971,12 +2021,9 @@ FROM
 	BooleanTable r
 WHERE
 	CASE
-		WHEN r.Value1 >= r.Value4 AND r.Value4 IS NOT NULL THEN 't'::BOOLEAN
+		WHEN r.Value1 >= r.Value4 THEN 't'::BOOLEAN
 		ELSE 'f'::BOOLEAN
-	END = CASE
-		WHEN @False::BOOLEAN THEN 't'::BOOLEAN
-		ELSE 'f'::BOOLEAN
-	END
+	END = @False
 
 BeforeExecute
 -- Informix.DB2 Informix
@@ -1992,6 +2039,8 @@ FROM
 
 BeforeExecute
 -- Informix.DB2 Informix
+DECLARE @FalseN Char(1) -- StringFixedLength
+SET     @FalseN = 'f'
 
 SELECT
 	r.Id,
@@ -2002,7 +2051,10 @@ SELECT
 FROM
 	BooleanTable r
 WHERE
-	NOT (r.Value1 >= r.Value4 AND r.Value4 IS NOT NULL)
+	CASE
+		WHEN r.Value1 >= r.Value4 THEN 't'::BOOLEAN
+		ELSE 'f'::BOOLEAN
+	END = @FalseN
 
 BeforeExecute
 -- Informix.DB2 Informix
@@ -2057,13 +2109,9 @@ FROM
 	BooleanTable r
 WHERE
 	CASE
-		WHEN r.Value5 >= r.Value4 AND r.Value5 IS NOT NULL AND r.Value4 IS NOT NULL
-			THEN 't'::BOOLEAN
+		WHEN r.Value5 >= r.Value4 THEN 't'::BOOLEAN
 		ELSE 'f'::BOOLEAN
-	END = CASE
-		WHEN @True::BOOLEAN THEN 't'::BOOLEAN
-		ELSE 'f'::BOOLEAN
-	END
+	END = @True
 
 BeforeExecute
 -- Informix.DB2 Informix
@@ -2079,6 +2127,8 @@ FROM
 
 BeforeExecute
 -- Informix.DB2 Informix
+DECLARE @TrueN Char(1) -- StringFixedLength
+SET     @TrueN = 't'
 
 SELECT
 	r.Id,
@@ -2089,7 +2139,10 @@ SELECT
 FROM
 	BooleanTable r
 WHERE
-	r.Value5 >= r.Value4 AND r.Value5 IS NOT NULL AND r.Value4 IS NOT NULL
+	CASE
+		WHEN r.Value5 >= r.Value4 THEN 't'::BOOLEAN
+		ELSE 'f'::BOOLEAN
+	END = @TrueN
 
 BeforeExecute
 -- Informix.DB2 Informix
@@ -2118,13 +2171,9 @@ FROM
 	BooleanTable r
 WHERE
 	CASE
-		WHEN r.Value5 >= r.Value4 AND r.Value5 IS NOT NULL AND r.Value4 IS NOT NULL
-			THEN 't'::BOOLEAN
+		WHEN r.Value5 >= r.Value4 THEN 't'::BOOLEAN
 		ELSE 'f'::BOOLEAN
-	END = CASE
-		WHEN @False::BOOLEAN THEN 't'::BOOLEAN
-		ELSE 'f'::BOOLEAN
-	END
+	END = @False
 
 BeforeExecute
 -- Informix.DB2 Informix
@@ -2140,6 +2189,8 @@ FROM
 
 BeforeExecute
 -- Informix.DB2 Informix
+DECLARE @FalseN Char(1) -- StringFixedLength
+SET     @FalseN = 'f'
 
 SELECT
 	r.Id,
@@ -2150,7 +2201,10 @@ SELECT
 FROM
 	BooleanTable r
 WHERE
-	NOT (r.Value5 >= r.Value4 AND r.Value5 IS NOT NULL AND r.Value4 IS NOT NULL)
+	CASE
+		WHEN r.Value5 >= r.Value4 THEN 't'::BOOLEAN
+		ELSE 'f'::BOOLEAN
+	END = @FalseN
 
 BeforeExecute
 -- Informix.DB2 Informix
@@ -2207,10 +2261,7 @@ WHERE
 	CASE
 		WHEN r.Value1 >= r.Value2 THEN 't'::BOOLEAN
 		ELSE 'f'::BOOLEAN
-	END <> CASE
-		WHEN @True::BOOLEAN THEN 't'::BOOLEAN
-		ELSE 'f'::BOOLEAN
-	END
+	END <> @True
 
 BeforeExecute
 -- Informix.DB2 Informix
@@ -2226,6 +2277,8 @@ FROM
 
 BeforeExecute
 -- Informix.DB2 Informix
+DECLARE @TrueN Char(1) -- StringFixedLength
+SET     @TrueN = 't'
 
 SELECT
 	r.Id,
@@ -2236,7 +2289,10 @@ SELECT
 FROM
 	BooleanTable r
 WHERE
-	r.Value1 < r.Value2
+	CASE
+		WHEN r.Value1 >= r.Value2 THEN 't'::BOOLEAN
+		ELSE 'f'::BOOLEAN
+	END <> @TrueN
 
 BeforeExecute
 -- Informix.DB2 Informix
@@ -2267,10 +2323,7 @@ WHERE
 	CASE
 		WHEN r.Value1 >= r.Value2 THEN 't'::BOOLEAN
 		ELSE 'f'::BOOLEAN
-	END <> CASE
-		WHEN @False::BOOLEAN THEN 't'::BOOLEAN
-		ELSE 'f'::BOOLEAN
-	END
+	END <> @False
 
 BeforeExecute
 -- Informix.DB2 Informix
@@ -2286,6 +2339,8 @@ FROM
 
 BeforeExecute
 -- Informix.DB2 Informix
+DECLARE @FalseN Char(1) -- StringFixedLength
+SET     @FalseN = 'f'
 
 SELECT
 	r.Id,
@@ -2296,7 +2351,10 @@ SELECT
 FROM
 	BooleanTable r
 WHERE
-	r.Value1 >= r.Value2
+	CASE
+		WHEN r.Value1 >= r.Value2 THEN 't'::BOOLEAN
+		ELSE 'f'::BOOLEAN
+	END <> @FalseN
 
 BeforeExecute
 -- Informix.DB2 Informix
@@ -2349,12 +2407,9 @@ FROM
 	BooleanTable r
 WHERE
 	CASE
-		WHEN r.Value1 >= r.Value4 AND r.Value4 IS NOT NULL THEN 't'::BOOLEAN
+		WHEN r.Value1 >= r.Value4 THEN 't'::BOOLEAN
 		ELSE 'f'::BOOLEAN
-	END <> CASE
-		WHEN @True::BOOLEAN THEN 't'::BOOLEAN
-		ELSE 'f'::BOOLEAN
-	END
+	END <> @True
 
 BeforeExecute
 -- Informix.DB2 Informix
@@ -2370,6 +2425,8 @@ FROM
 
 BeforeExecute
 -- Informix.DB2 Informix
+DECLARE @TrueN Char(1) -- StringFixedLength
+SET     @TrueN = 't'
 
 SELECT
 	r.Id,
@@ -2380,7 +2437,10 @@ SELECT
 FROM
 	BooleanTable r
 WHERE
-	NOT (r.Value1 >= r.Value4 AND r.Value4 IS NOT NULL)
+	CASE
+		WHEN r.Value1 >= r.Value4 THEN 't'::BOOLEAN
+		ELSE 'f'::BOOLEAN
+	END <> @TrueN
 
 BeforeExecute
 -- Informix.DB2 Informix
@@ -2409,12 +2469,9 @@ FROM
 	BooleanTable r
 WHERE
 	CASE
-		WHEN r.Value1 >= r.Value4 AND r.Value4 IS NOT NULL THEN 't'::BOOLEAN
+		WHEN r.Value1 >= r.Value4 THEN 't'::BOOLEAN
 		ELSE 'f'::BOOLEAN
-	END <> CASE
-		WHEN @False::BOOLEAN THEN 't'::BOOLEAN
-		ELSE 'f'::BOOLEAN
-	END
+	END <> @False
 
 BeforeExecute
 -- Informix.DB2 Informix
@@ -2430,6 +2487,8 @@ FROM
 
 BeforeExecute
 -- Informix.DB2 Informix
+DECLARE @FalseN Char(1) -- StringFixedLength
+SET     @FalseN = 'f'
 
 SELECT
 	r.Id,
@@ -2440,7 +2499,10 @@ SELECT
 FROM
 	BooleanTable r
 WHERE
-	r.Value1 >= r.Value4 AND r.Value4 IS NOT NULL
+	CASE
+		WHEN r.Value1 >= r.Value4 THEN 't'::BOOLEAN
+		ELSE 'f'::BOOLEAN
+	END <> @FalseN
 
 BeforeExecute
 -- Informix.DB2 Informix
@@ -2493,13 +2555,9 @@ FROM
 	BooleanTable r
 WHERE
 	CASE
-		WHEN r.Value5 >= r.Value4 AND r.Value5 IS NOT NULL AND r.Value4 IS NOT NULL
-			THEN 't'::BOOLEAN
+		WHEN r.Value5 >= r.Value4 THEN 't'::BOOLEAN
 		ELSE 'f'::BOOLEAN
-	END <> CASE
-		WHEN @True::BOOLEAN THEN 't'::BOOLEAN
-		ELSE 'f'::BOOLEAN
-	END
+	END <> @True
 
 BeforeExecute
 -- Informix.DB2 Informix
@@ -2515,6 +2573,8 @@ FROM
 
 BeforeExecute
 -- Informix.DB2 Informix
+DECLARE @TrueN Char(1) -- StringFixedLength
+SET     @TrueN = 't'
 
 SELECT
 	r.Id,
@@ -2525,7 +2585,10 @@ SELECT
 FROM
 	BooleanTable r
 WHERE
-	NOT (r.Value5 >= r.Value4 AND r.Value5 IS NOT NULL AND r.Value4 IS NOT NULL)
+	CASE
+		WHEN r.Value5 >= r.Value4 THEN 't'::BOOLEAN
+		ELSE 'f'::BOOLEAN
+	END <> @TrueN
 
 BeforeExecute
 -- Informix.DB2 Informix
@@ -2554,13 +2617,9 @@ FROM
 	BooleanTable r
 WHERE
 	CASE
-		WHEN r.Value5 >= r.Value4 AND r.Value5 IS NOT NULL AND r.Value4 IS NOT NULL
-			THEN 't'::BOOLEAN
+		WHEN r.Value5 >= r.Value4 THEN 't'::BOOLEAN
 		ELSE 'f'::BOOLEAN
-	END <> CASE
-		WHEN @False::BOOLEAN THEN 't'::BOOLEAN
-		ELSE 'f'::BOOLEAN
-	END
+	END <> @False
 
 BeforeExecute
 -- Informix.DB2 Informix
@@ -2576,6 +2635,8 @@ FROM
 
 BeforeExecute
 -- Informix.DB2 Informix
+DECLARE @FalseN Char(1) -- StringFixedLength
+SET     @FalseN = 'f'
 
 SELECT
 	r.Id,
@@ -2586,7 +2647,10 @@ SELECT
 FROM
 	BooleanTable r
 WHERE
-	r.Value5 >= r.Value4 AND r.Value5 IS NOT NULL AND r.Value4 IS NOT NULL
+	CASE
+		WHEN r.Value5 >= r.Value4 THEN 't'::BOOLEAN
+		ELSE 'f'::BOOLEAN
+	END <> @FalseN
 
 BeforeExecute
 -- Informix.DB2 Informix
@@ -2641,10 +2705,7 @@ WHERE
 	CASE
 		WHEN r.Value1 < r.Value2 THEN 't'::BOOLEAN
 		ELSE 'f'::BOOLEAN
-	END = CASE
-		WHEN @True::BOOLEAN THEN 't'::BOOLEAN
-		ELSE 'f'::BOOLEAN
-	END
+	END = @True
 
 BeforeExecute
 -- Informix.DB2 Informix
@@ -2660,6 +2721,8 @@ FROM
 
 BeforeExecute
 -- Informix.DB2 Informix
+DECLARE @TrueN Char(1) -- StringFixedLength
+SET     @TrueN = 't'
 
 SELECT
 	r.Id,
@@ -2670,7 +2733,10 @@ SELECT
 FROM
 	BooleanTable r
 WHERE
-	r.Value1 < r.Value2
+	CASE
+		WHEN r.Value1 < r.Value2 THEN 't'::BOOLEAN
+		ELSE 'f'::BOOLEAN
+	END = @TrueN
 
 BeforeExecute
 -- Informix.DB2 Informix
@@ -2701,10 +2767,7 @@ WHERE
 	CASE
 		WHEN r.Value1 < r.Value2 THEN 't'::BOOLEAN
 		ELSE 'f'::BOOLEAN
-	END = CASE
-		WHEN @False::BOOLEAN THEN 't'::BOOLEAN
-		ELSE 'f'::BOOLEAN
-	END
+	END = @False
 
 BeforeExecute
 -- Informix.DB2 Informix
@@ -2720,6 +2783,8 @@ FROM
 
 BeforeExecute
 -- Informix.DB2 Informix
+DECLARE @FalseN Char(1) -- StringFixedLength
+SET     @FalseN = 'f'
 
 SELECT
 	r.Id,
@@ -2730,7 +2795,10 @@ SELECT
 FROM
 	BooleanTable r
 WHERE
-	r.Value1 >= r.Value2
+	CASE
+		WHEN r.Value1 < r.Value2 THEN 't'::BOOLEAN
+		ELSE 'f'::BOOLEAN
+	END = @FalseN
 
 BeforeExecute
 -- Informix.DB2 Informix
@@ -2785,12 +2853,9 @@ FROM
 	BooleanTable r
 WHERE
 	CASE
-		WHEN r.Value1 < r.Value4 AND r.Value4 IS NOT NULL THEN 't'::BOOLEAN
+		WHEN r.Value1 < r.Value4 THEN 't'::BOOLEAN
 		ELSE 'f'::BOOLEAN
-	END = CASE
-		WHEN @True::BOOLEAN THEN 't'::BOOLEAN
-		ELSE 'f'::BOOLEAN
-	END
+	END = @True
 
 BeforeExecute
 -- Informix.DB2 Informix
@@ -2806,6 +2871,8 @@ FROM
 
 BeforeExecute
 -- Informix.DB2 Informix
+DECLARE @TrueN Char(1) -- StringFixedLength
+SET     @TrueN = 't'
 
 SELECT
 	r.Id,
@@ -2816,7 +2883,10 @@ SELECT
 FROM
 	BooleanTable r
 WHERE
-	r.Value1 < r.Value4 AND r.Value4 IS NOT NULL
+	CASE
+		WHEN r.Value1 < r.Value4 THEN 't'::BOOLEAN
+		ELSE 'f'::BOOLEAN
+	END = @TrueN
 
 BeforeExecute
 -- Informix.DB2 Informix
@@ -2845,12 +2915,9 @@ FROM
 	BooleanTable r
 WHERE
 	CASE
-		WHEN r.Value1 < r.Value4 AND r.Value4 IS NOT NULL THEN 't'::BOOLEAN
+		WHEN r.Value1 < r.Value4 THEN 't'::BOOLEAN
 		ELSE 'f'::BOOLEAN
-	END = CASE
-		WHEN @False::BOOLEAN THEN 't'::BOOLEAN
-		ELSE 'f'::BOOLEAN
-	END
+	END = @False
 
 BeforeExecute
 -- Informix.DB2 Informix
@@ -2866,6 +2933,8 @@ FROM
 
 BeforeExecute
 -- Informix.DB2 Informix
+DECLARE @FalseN Char(1) -- StringFixedLength
+SET     @FalseN = 'f'
 
 SELECT
 	r.Id,
@@ -2876,7 +2945,10 @@ SELECT
 FROM
 	BooleanTable r
 WHERE
-	NOT (r.Value1 < r.Value4 AND r.Value4 IS NOT NULL)
+	CASE
+		WHEN r.Value1 < r.Value4 THEN 't'::BOOLEAN
+		ELSE 'f'::BOOLEAN
+	END = @FalseN
 
 BeforeExecute
 -- Informix.DB2 Informix
@@ -2931,13 +3003,9 @@ FROM
 	BooleanTable r
 WHERE
 	CASE
-		WHEN r.Value5 < r.Value4 AND r.Value5 IS NOT NULL AND r.Value4 IS NOT NULL
-			THEN 't'::BOOLEAN
+		WHEN r.Value5 < r.Value4 THEN 't'::BOOLEAN
 		ELSE 'f'::BOOLEAN
-	END = CASE
-		WHEN @True::BOOLEAN THEN 't'::BOOLEAN
-		ELSE 'f'::BOOLEAN
-	END
+	END = @True
 
 BeforeExecute
 -- Informix.DB2 Informix
@@ -2953,6 +3021,8 @@ FROM
 
 BeforeExecute
 -- Informix.DB2 Informix
+DECLARE @TrueN Char(1) -- StringFixedLength
+SET     @TrueN = 't'
 
 SELECT
 	r.Id,
@@ -2963,7 +3033,10 @@ SELECT
 FROM
 	BooleanTable r
 WHERE
-	r.Value5 < r.Value4 AND r.Value5 IS NOT NULL AND r.Value4 IS NOT NULL
+	CASE
+		WHEN r.Value5 < r.Value4 THEN 't'::BOOLEAN
+		ELSE 'f'::BOOLEAN
+	END = @TrueN
 
 BeforeExecute
 -- Informix.DB2 Informix
@@ -2992,13 +3065,9 @@ FROM
 	BooleanTable r
 WHERE
 	CASE
-		WHEN r.Value5 < r.Value4 AND r.Value5 IS NOT NULL AND r.Value4 IS NOT NULL
-			THEN 't'::BOOLEAN
+		WHEN r.Value5 < r.Value4 THEN 't'::BOOLEAN
 		ELSE 'f'::BOOLEAN
-	END = CASE
-		WHEN @False::BOOLEAN THEN 't'::BOOLEAN
-		ELSE 'f'::BOOLEAN
-	END
+	END = @False
 
 BeforeExecute
 -- Informix.DB2 Informix
@@ -3014,6 +3083,8 @@ FROM
 
 BeforeExecute
 -- Informix.DB2 Informix
+DECLARE @FalseN Char(1) -- StringFixedLength
+SET     @FalseN = 'f'
 
 SELECT
 	r.Id,
@@ -3024,7 +3095,10 @@ SELECT
 FROM
 	BooleanTable r
 WHERE
-	NOT (r.Value5 < r.Value4 AND r.Value5 IS NOT NULL AND r.Value4 IS NOT NULL)
+	CASE
+		WHEN r.Value5 < r.Value4 THEN 't'::BOOLEAN
+		ELSE 'f'::BOOLEAN
+	END = @FalseN
 
 BeforeExecute
 -- Informix.DB2 Informix
@@ -3081,10 +3155,7 @@ WHERE
 	CASE
 		WHEN r.Value1 < r.Value2 THEN 't'::BOOLEAN
 		ELSE 'f'::BOOLEAN
-	END <> CASE
-		WHEN @True::BOOLEAN THEN 't'::BOOLEAN
-		ELSE 'f'::BOOLEAN
-	END
+	END <> @True
 
 BeforeExecute
 -- Informix.DB2 Informix
@@ -3100,6 +3171,8 @@ FROM
 
 BeforeExecute
 -- Informix.DB2 Informix
+DECLARE @TrueN Char(1) -- StringFixedLength
+SET     @TrueN = 't'
 
 SELECT
 	r.Id,
@@ -3110,7 +3183,10 @@ SELECT
 FROM
 	BooleanTable r
 WHERE
-	r.Value1 >= r.Value2
+	CASE
+		WHEN r.Value1 < r.Value2 THEN 't'::BOOLEAN
+		ELSE 'f'::BOOLEAN
+	END <> @TrueN
 
 BeforeExecute
 -- Informix.DB2 Informix
@@ -3141,10 +3217,7 @@ WHERE
 	CASE
 		WHEN r.Value1 < r.Value2 THEN 't'::BOOLEAN
 		ELSE 'f'::BOOLEAN
-	END <> CASE
-		WHEN @False::BOOLEAN THEN 't'::BOOLEAN
-		ELSE 'f'::BOOLEAN
-	END
+	END <> @False
 
 BeforeExecute
 -- Informix.DB2 Informix
@@ -3160,6 +3233,8 @@ FROM
 
 BeforeExecute
 -- Informix.DB2 Informix
+DECLARE @FalseN Char(1) -- StringFixedLength
+SET     @FalseN = 'f'
 
 SELECT
 	r.Id,
@@ -3170,7 +3245,10 @@ SELECT
 FROM
 	BooleanTable r
 WHERE
-	r.Value1 < r.Value2
+	CASE
+		WHEN r.Value1 < r.Value2 THEN 't'::BOOLEAN
+		ELSE 'f'::BOOLEAN
+	END <> @FalseN
 
 BeforeExecute
 -- Informix.DB2 Informix
@@ -3223,12 +3301,9 @@ FROM
 	BooleanTable r
 WHERE
 	CASE
-		WHEN r.Value1 < r.Value4 AND r.Value4 IS NOT NULL THEN 't'::BOOLEAN
+		WHEN r.Value1 < r.Value4 THEN 't'::BOOLEAN
 		ELSE 'f'::BOOLEAN
-	END <> CASE
-		WHEN @True::BOOLEAN THEN 't'::BOOLEAN
-		ELSE 'f'::BOOLEAN
-	END
+	END <> @True
 
 BeforeExecute
 -- Informix.DB2 Informix
@@ -3244,6 +3319,8 @@ FROM
 
 BeforeExecute
 -- Informix.DB2 Informix
+DECLARE @TrueN Char(1) -- StringFixedLength
+SET     @TrueN = 't'
 
 SELECT
 	r.Id,
@@ -3254,7 +3331,10 @@ SELECT
 FROM
 	BooleanTable r
 WHERE
-	NOT (r.Value1 < r.Value4 AND r.Value4 IS NOT NULL)
+	CASE
+		WHEN r.Value1 < r.Value4 THEN 't'::BOOLEAN
+		ELSE 'f'::BOOLEAN
+	END <> @TrueN
 
 BeforeExecute
 -- Informix.DB2 Informix
@@ -3283,12 +3363,9 @@ FROM
 	BooleanTable r
 WHERE
 	CASE
-		WHEN r.Value1 < r.Value4 AND r.Value4 IS NOT NULL THEN 't'::BOOLEAN
+		WHEN r.Value1 < r.Value4 THEN 't'::BOOLEAN
 		ELSE 'f'::BOOLEAN
-	END <> CASE
-		WHEN @False::BOOLEAN THEN 't'::BOOLEAN
-		ELSE 'f'::BOOLEAN
-	END
+	END <> @False
 
 BeforeExecute
 -- Informix.DB2 Informix
@@ -3304,6 +3381,8 @@ FROM
 
 BeforeExecute
 -- Informix.DB2 Informix
+DECLARE @FalseN Char(1) -- StringFixedLength
+SET     @FalseN = 'f'
 
 SELECT
 	r.Id,
@@ -3314,7 +3393,10 @@ SELECT
 FROM
 	BooleanTable r
 WHERE
-	r.Value1 < r.Value4 AND r.Value4 IS NOT NULL
+	CASE
+		WHEN r.Value1 < r.Value4 THEN 't'::BOOLEAN
+		ELSE 'f'::BOOLEAN
+	END <> @FalseN
 
 BeforeExecute
 -- Informix.DB2 Informix
@@ -3367,13 +3449,9 @@ FROM
 	BooleanTable r
 WHERE
 	CASE
-		WHEN r.Value5 < r.Value4 AND r.Value5 IS NOT NULL AND r.Value4 IS NOT NULL
-			THEN 't'::BOOLEAN
+		WHEN r.Value5 < r.Value4 THEN 't'::BOOLEAN
 		ELSE 'f'::BOOLEAN
-	END <> CASE
-		WHEN @True::BOOLEAN THEN 't'::BOOLEAN
-		ELSE 'f'::BOOLEAN
-	END
+	END <> @True
 
 BeforeExecute
 -- Informix.DB2 Informix
@@ -3389,6 +3467,8 @@ FROM
 
 BeforeExecute
 -- Informix.DB2 Informix
+DECLARE @TrueN Char(1) -- StringFixedLength
+SET     @TrueN = 't'
 
 SELECT
 	r.Id,
@@ -3399,7 +3479,10 @@ SELECT
 FROM
 	BooleanTable r
 WHERE
-	NOT (r.Value5 < r.Value4 AND r.Value5 IS NOT NULL AND r.Value4 IS NOT NULL)
+	CASE
+		WHEN r.Value5 < r.Value4 THEN 't'::BOOLEAN
+		ELSE 'f'::BOOLEAN
+	END <> @TrueN
 
 BeforeExecute
 -- Informix.DB2 Informix
@@ -3428,13 +3511,9 @@ FROM
 	BooleanTable r
 WHERE
 	CASE
-		WHEN r.Value5 < r.Value4 AND r.Value5 IS NOT NULL AND r.Value4 IS NOT NULL
-			THEN 't'::BOOLEAN
+		WHEN r.Value5 < r.Value4 THEN 't'::BOOLEAN
 		ELSE 'f'::BOOLEAN
-	END <> CASE
-		WHEN @False::BOOLEAN THEN 't'::BOOLEAN
-		ELSE 'f'::BOOLEAN
-	END
+	END <> @False
 
 BeforeExecute
 -- Informix.DB2 Informix
@@ -3450,6 +3529,8 @@ FROM
 
 BeforeExecute
 -- Informix.DB2 Informix
+DECLARE @FalseN Char(1) -- StringFixedLength
+SET     @FalseN = 'f'
 
 SELECT
 	r.Id,
@@ -3460,7 +3541,10 @@ SELECT
 FROM
 	BooleanTable r
 WHERE
-	r.Value5 < r.Value4 AND r.Value5 IS NOT NULL AND r.Value4 IS NOT NULL
+	CASE
+		WHEN r.Value5 < r.Value4 THEN 't'::BOOLEAN
+		ELSE 'f'::BOOLEAN
+	END <> @FalseN
 
 BeforeExecute
 -- Informix.DB2 Informix
@@ -3515,10 +3599,7 @@ WHERE
 	CASE
 		WHEN r.Value1 <= r.Value2 THEN 't'::BOOLEAN
 		ELSE 'f'::BOOLEAN
-	END = CASE
-		WHEN @True::BOOLEAN THEN 't'::BOOLEAN
-		ELSE 'f'::BOOLEAN
-	END
+	END = @True
 
 BeforeExecute
 -- Informix.DB2 Informix
@@ -3534,6 +3615,8 @@ FROM
 
 BeforeExecute
 -- Informix.DB2 Informix
+DECLARE @TrueN Char(1) -- StringFixedLength
+SET     @TrueN = 't'
 
 SELECT
 	r.Id,
@@ -3544,7 +3627,10 @@ SELECT
 FROM
 	BooleanTable r
 WHERE
-	r.Value1 <= r.Value2
+	CASE
+		WHEN r.Value1 <= r.Value2 THEN 't'::BOOLEAN
+		ELSE 'f'::BOOLEAN
+	END = @TrueN
 
 BeforeExecute
 -- Informix.DB2 Informix
@@ -3575,10 +3661,7 @@ WHERE
 	CASE
 		WHEN r.Value1 <= r.Value2 THEN 't'::BOOLEAN
 		ELSE 'f'::BOOLEAN
-	END = CASE
-		WHEN @False::BOOLEAN THEN 't'::BOOLEAN
-		ELSE 'f'::BOOLEAN
-	END
+	END = @False
 
 BeforeExecute
 -- Informix.DB2 Informix
@@ -3594,6 +3677,8 @@ FROM
 
 BeforeExecute
 -- Informix.DB2 Informix
+DECLARE @FalseN Char(1) -- StringFixedLength
+SET     @FalseN = 'f'
 
 SELECT
 	r.Id,
@@ -3604,7 +3689,10 @@ SELECT
 FROM
 	BooleanTable r
 WHERE
-	r.Value1 > r.Value2
+	CASE
+		WHEN r.Value1 <= r.Value2 THEN 't'::BOOLEAN
+		ELSE 'f'::BOOLEAN
+	END = @FalseN
 
 BeforeExecute
 -- Informix.DB2 Informix
@@ -3659,12 +3747,9 @@ FROM
 	BooleanTable r
 WHERE
 	CASE
-		WHEN r.Value1 <= r.Value4 AND r.Value4 IS NOT NULL THEN 't'::BOOLEAN
+		WHEN r.Value1 <= r.Value4 THEN 't'::BOOLEAN
 		ELSE 'f'::BOOLEAN
-	END = CASE
-		WHEN @True::BOOLEAN THEN 't'::BOOLEAN
-		ELSE 'f'::BOOLEAN
-	END
+	END = @True
 
 BeforeExecute
 -- Informix.DB2 Informix
@@ -3680,6 +3765,8 @@ FROM
 
 BeforeExecute
 -- Informix.DB2 Informix
+DECLARE @TrueN Char(1) -- StringFixedLength
+SET     @TrueN = 't'
 
 SELECT
 	r.Id,
@@ -3690,7 +3777,10 @@ SELECT
 FROM
 	BooleanTable r
 WHERE
-	r.Value1 <= r.Value4 AND r.Value4 IS NOT NULL
+	CASE
+		WHEN r.Value1 <= r.Value4 THEN 't'::BOOLEAN
+		ELSE 'f'::BOOLEAN
+	END = @TrueN
 
 BeforeExecute
 -- Informix.DB2 Informix
@@ -3719,12 +3809,9 @@ FROM
 	BooleanTable r
 WHERE
 	CASE
-		WHEN r.Value1 <= r.Value4 AND r.Value4 IS NOT NULL THEN 't'::BOOLEAN
+		WHEN r.Value1 <= r.Value4 THEN 't'::BOOLEAN
 		ELSE 'f'::BOOLEAN
-	END = CASE
-		WHEN @False::BOOLEAN THEN 't'::BOOLEAN
-		ELSE 'f'::BOOLEAN
-	END
+	END = @False
 
 BeforeExecute
 -- Informix.DB2 Informix
@@ -3740,6 +3827,8 @@ FROM
 
 BeforeExecute
 -- Informix.DB2 Informix
+DECLARE @FalseN Char(1) -- StringFixedLength
+SET     @FalseN = 'f'
 
 SELECT
 	r.Id,
@@ -3750,7 +3839,10 @@ SELECT
 FROM
 	BooleanTable r
 WHERE
-	NOT (r.Value1 <= r.Value4 AND r.Value4 IS NOT NULL)
+	CASE
+		WHEN r.Value1 <= r.Value4 THEN 't'::BOOLEAN
+		ELSE 'f'::BOOLEAN
+	END = @FalseN
 
 BeforeExecute
 -- Informix.DB2 Informix
@@ -3805,13 +3897,9 @@ FROM
 	BooleanTable r
 WHERE
 	CASE
-		WHEN r.Value5 <= r.Value4 AND r.Value5 IS NOT NULL AND r.Value4 IS NOT NULL
-			THEN 't'::BOOLEAN
+		WHEN r.Value5 <= r.Value4 THEN 't'::BOOLEAN
 		ELSE 'f'::BOOLEAN
-	END = CASE
-		WHEN @True::BOOLEAN THEN 't'::BOOLEAN
-		ELSE 'f'::BOOLEAN
-	END
+	END = @True
 
 BeforeExecute
 -- Informix.DB2 Informix
@@ -3827,6 +3915,8 @@ FROM
 
 BeforeExecute
 -- Informix.DB2 Informix
+DECLARE @TrueN Char(1) -- StringFixedLength
+SET     @TrueN = 't'
 
 SELECT
 	r.Id,
@@ -3837,7 +3927,10 @@ SELECT
 FROM
 	BooleanTable r
 WHERE
-	r.Value5 <= r.Value4 AND r.Value5 IS NOT NULL AND r.Value4 IS NOT NULL
+	CASE
+		WHEN r.Value5 <= r.Value4 THEN 't'::BOOLEAN
+		ELSE 'f'::BOOLEAN
+	END = @TrueN
 
 BeforeExecute
 -- Informix.DB2 Informix
@@ -3866,13 +3959,9 @@ FROM
 	BooleanTable r
 WHERE
 	CASE
-		WHEN r.Value5 <= r.Value4 AND r.Value5 IS NOT NULL AND r.Value4 IS NOT NULL
-			THEN 't'::BOOLEAN
+		WHEN r.Value5 <= r.Value4 THEN 't'::BOOLEAN
 		ELSE 'f'::BOOLEAN
-	END = CASE
-		WHEN @False::BOOLEAN THEN 't'::BOOLEAN
-		ELSE 'f'::BOOLEAN
-	END
+	END = @False
 
 BeforeExecute
 -- Informix.DB2 Informix
@@ -3888,6 +3977,8 @@ FROM
 
 BeforeExecute
 -- Informix.DB2 Informix
+DECLARE @FalseN Char(1) -- StringFixedLength
+SET     @FalseN = 'f'
 
 SELECT
 	r.Id,
@@ -3898,7 +3989,10 @@ SELECT
 FROM
 	BooleanTable r
 WHERE
-	NOT (r.Value5 <= r.Value4 AND r.Value5 IS NOT NULL AND r.Value4 IS NOT NULL)
+	CASE
+		WHEN r.Value5 <= r.Value4 THEN 't'::BOOLEAN
+		ELSE 'f'::BOOLEAN
+	END = @FalseN
 
 BeforeExecute
 -- Informix.DB2 Informix
@@ -3955,10 +4049,7 @@ WHERE
 	CASE
 		WHEN r.Value1 <= r.Value2 THEN 't'::BOOLEAN
 		ELSE 'f'::BOOLEAN
-	END <> CASE
-		WHEN @True::BOOLEAN THEN 't'::BOOLEAN
-		ELSE 'f'::BOOLEAN
-	END
+	END <> @True
 
 BeforeExecute
 -- Informix.DB2 Informix
@@ -3974,6 +4065,8 @@ FROM
 
 BeforeExecute
 -- Informix.DB2 Informix
+DECLARE @TrueN Char(1) -- StringFixedLength
+SET     @TrueN = 't'
 
 SELECT
 	r.Id,
@@ -3984,7 +4077,10 @@ SELECT
 FROM
 	BooleanTable r
 WHERE
-	r.Value1 > r.Value2
+	CASE
+		WHEN r.Value1 <= r.Value2 THEN 't'::BOOLEAN
+		ELSE 'f'::BOOLEAN
+	END <> @TrueN
 
 BeforeExecute
 -- Informix.DB2 Informix
@@ -4015,10 +4111,7 @@ WHERE
 	CASE
 		WHEN r.Value1 <= r.Value2 THEN 't'::BOOLEAN
 		ELSE 'f'::BOOLEAN
-	END <> CASE
-		WHEN @False::BOOLEAN THEN 't'::BOOLEAN
-		ELSE 'f'::BOOLEAN
-	END
+	END <> @False
 
 BeforeExecute
 -- Informix.DB2 Informix
@@ -4034,6 +4127,8 @@ FROM
 
 BeforeExecute
 -- Informix.DB2 Informix
+DECLARE @FalseN Char(1) -- StringFixedLength
+SET     @FalseN = 'f'
 
 SELECT
 	r.Id,
@@ -4044,7 +4139,10 @@ SELECT
 FROM
 	BooleanTable r
 WHERE
-	r.Value1 <= r.Value2
+	CASE
+		WHEN r.Value1 <= r.Value2 THEN 't'::BOOLEAN
+		ELSE 'f'::BOOLEAN
+	END <> @FalseN
 
 BeforeExecute
 -- Informix.DB2 Informix
@@ -4097,12 +4195,9 @@ FROM
 	BooleanTable r
 WHERE
 	CASE
-		WHEN r.Value1 <= r.Value4 AND r.Value4 IS NOT NULL THEN 't'::BOOLEAN
+		WHEN r.Value1 <= r.Value4 THEN 't'::BOOLEAN
 		ELSE 'f'::BOOLEAN
-	END <> CASE
-		WHEN @True::BOOLEAN THEN 't'::BOOLEAN
-		ELSE 'f'::BOOLEAN
-	END
+	END <> @True
 
 BeforeExecute
 -- Informix.DB2 Informix
@@ -4118,6 +4213,8 @@ FROM
 
 BeforeExecute
 -- Informix.DB2 Informix
+DECLARE @TrueN Char(1) -- StringFixedLength
+SET     @TrueN = 't'
 
 SELECT
 	r.Id,
@@ -4128,7 +4225,10 @@ SELECT
 FROM
 	BooleanTable r
 WHERE
-	NOT (r.Value1 <= r.Value4 AND r.Value4 IS NOT NULL)
+	CASE
+		WHEN r.Value1 <= r.Value4 THEN 't'::BOOLEAN
+		ELSE 'f'::BOOLEAN
+	END <> @TrueN
 
 BeforeExecute
 -- Informix.DB2 Informix
@@ -4157,12 +4257,9 @@ FROM
 	BooleanTable r
 WHERE
 	CASE
-		WHEN r.Value1 <= r.Value4 AND r.Value4 IS NOT NULL THEN 't'::BOOLEAN
+		WHEN r.Value1 <= r.Value4 THEN 't'::BOOLEAN
 		ELSE 'f'::BOOLEAN
-	END <> CASE
-		WHEN @False::BOOLEAN THEN 't'::BOOLEAN
-		ELSE 'f'::BOOLEAN
-	END
+	END <> @False
 
 BeforeExecute
 -- Informix.DB2 Informix
@@ -4178,6 +4275,8 @@ FROM
 
 BeforeExecute
 -- Informix.DB2 Informix
+DECLARE @FalseN Char(1) -- StringFixedLength
+SET     @FalseN = 'f'
 
 SELECT
 	r.Id,
@@ -4188,7 +4287,10 @@ SELECT
 FROM
 	BooleanTable r
 WHERE
-	r.Value1 <= r.Value4 AND r.Value4 IS NOT NULL
+	CASE
+		WHEN r.Value1 <= r.Value4 THEN 't'::BOOLEAN
+		ELSE 'f'::BOOLEAN
+	END <> @FalseN
 
 BeforeExecute
 -- Informix.DB2 Informix
@@ -4241,13 +4343,9 @@ FROM
 	BooleanTable r
 WHERE
 	CASE
-		WHEN r.Value5 <= r.Value4 AND r.Value5 IS NOT NULL AND r.Value4 IS NOT NULL
-			THEN 't'::BOOLEAN
+		WHEN r.Value5 <= r.Value4 THEN 't'::BOOLEAN
 		ELSE 'f'::BOOLEAN
-	END <> CASE
-		WHEN @True::BOOLEAN THEN 't'::BOOLEAN
-		ELSE 'f'::BOOLEAN
-	END
+	END <> @True
 
 BeforeExecute
 -- Informix.DB2 Informix
@@ -4263,6 +4361,8 @@ FROM
 
 BeforeExecute
 -- Informix.DB2 Informix
+DECLARE @TrueN Char(1) -- StringFixedLength
+SET     @TrueN = 't'
 
 SELECT
 	r.Id,
@@ -4273,7 +4373,10 @@ SELECT
 FROM
 	BooleanTable r
 WHERE
-	NOT (r.Value5 <= r.Value4 AND r.Value5 IS NOT NULL AND r.Value4 IS NOT NULL)
+	CASE
+		WHEN r.Value5 <= r.Value4 THEN 't'::BOOLEAN
+		ELSE 'f'::BOOLEAN
+	END <> @TrueN
 
 BeforeExecute
 -- Informix.DB2 Informix
@@ -4302,13 +4405,9 @@ FROM
 	BooleanTable r
 WHERE
 	CASE
-		WHEN r.Value5 <= r.Value4 AND r.Value5 IS NOT NULL AND r.Value4 IS NOT NULL
-			THEN 't'::BOOLEAN
+		WHEN r.Value5 <= r.Value4 THEN 't'::BOOLEAN
 		ELSE 'f'::BOOLEAN
-	END <> CASE
-		WHEN @False::BOOLEAN THEN 't'::BOOLEAN
-		ELSE 'f'::BOOLEAN
-	END
+	END <> @False
 
 BeforeExecute
 -- Informix.DB2 Informix
@@ -4324,6 +4423,8 @@ FROM
 
 BeforeExecute
 -- Informix.DB2 Informix
+DECLARE @FalseN Char(1) -- StringFixedLength
+SET     @FalseN = 'f'
 
 SELECT
 	r.Id,
@@ -4334,7 +4435,10 @@ SELECT
 FROM
 	BooleanTable r
 WHERE
-	r.Value5 <= r.Value4 AND r.Value5 IS NOT NULL AND r.Value4 IS NOT NULL
+	CASE
+		WHEN r.Value5 <= r.Value4 THEN 't'::BOOLEAN
+		ELSE 'f'::BOOLEAN
+	END <> @FalseN
 
 BeforeExecute
 -- Informix.DB2 Informix

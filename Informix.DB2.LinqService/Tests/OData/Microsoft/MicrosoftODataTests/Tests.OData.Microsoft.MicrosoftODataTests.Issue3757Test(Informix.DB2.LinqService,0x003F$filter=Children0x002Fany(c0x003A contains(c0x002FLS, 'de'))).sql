@@ -21,7 +21,11 @@ FROM
 				FROM
 					Issue3757Level2 c_1
 				WHERE
-					l1.ID = c_1.ParentId AND l1.ValS LIKE '%de%' ESCAPE '~' AND
+					l1.ID = c_1.ParentId AND CASE
+						WHEN l1.ValS LIKE '%de%' ESCAPE '~' THEN 't'::BOOLEAN
+						WHEN NOT l1.ValS LIKE '%de%' ESCAPE '~' THEN 'f'::BOOLEAN
+						ELSE NULL
+					END = 't'::BOOLEAN AND
 					l1.ValS IS NOT NULL
 			)
 	) m_1
@@ -44,7 +48,11 @@ WHERE
 		FROM
 			Issue3757Level2 c_1
 		WHERE
-			it.ID = c_1.ParentId AND it.ValS LIKE '%de%' ESCAPE '~' AND
+			it.ID = c_1.ParentId AND CASE
+				WHEN it.ValS LIKE '%de%' ESCAPE '~' THEN 't'::BOOLEAN
+				WHEN NOT it.ValS LIKE '%de%' ESCAPE '~' THEN 'f'::BOOLEAN
+				ELSE NULL
+			END = 't'::BOOLEAN AND
 			it.ValS IS NOT NULL
 	)
 
