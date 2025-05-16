@@ -9,8 +9,8 @@ FROM
 		LEFT JOIN [Parent] [a_Parent] ON [x].[ParentID] = [a_Parent].[ParentID]
 		OUTER APPLY (
 			SELECT TOP (1)
-				0 as [ParentID],
-				NULL as [Value1]
+				[a_Parent_1].[ParentID],
+				[a_Parent_1].[Value1]
 			FROM
 				[GrandChild] [a_GrandChildren]
 					LEFT JOIN [Child] [a_Child] ON [a_GrandChildren].[ParentID] = [a_Child].[ParentID] AND [a_GrandChildren].[ChildID] = [a_Child].[ChildID]
@@ -47,8 +47,8 @@ FROM
 		LEFT JOIN [Parent] [a_Parent] ON [x].[ParentID] = [a_Parent].[ParentID]
 		OUTER APPLY (
 			SELECT TOP (1)
-				0 as [ParentID],
-				NULL as [Value1]
+				[a_Parent_1].[ParentID],
+				[a_Parent_1].[Value1]
 			FROM
 				[GrandChild] [a_GrandChildren]
 					LEFT JOIN [Child] [a_Child] ON [a_GrandChildren].[ParentID] = [a_Child].[ParentID] AND [a_GrandChildren].[ChildID] = [a_Child].[ChildID]
