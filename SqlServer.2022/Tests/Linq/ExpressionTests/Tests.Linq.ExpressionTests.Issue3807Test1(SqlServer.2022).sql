@@ -2,8 +2,6 @@
 BeginTransaction(RepeatableRead)
 BeforeExecute
 -- SqlServer.2022
-DECLARE @p NChar(1) -- StringFixedLength
-SET     @p = N','
 
 SELECT
 	[m_1].[ArrayString],
@@ -15,7 +13,7 @@ FROM
 		FROM
 			[Issue3807Table] [a]
 	) [m_1]
-		CROSS APPLY [STRING_SPLIT]([m_1].[ArrayString], @p) [d]
+		CROSS APPLY [STRING_SPLIT]([m_1].[ArrayString], N',') [d]
 
 BeforeExecute
 DisposeTransaction
