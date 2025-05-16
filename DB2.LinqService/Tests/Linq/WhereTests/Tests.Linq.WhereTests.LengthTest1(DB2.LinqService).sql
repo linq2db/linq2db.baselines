@@ -4,15 +4,10 @@
 SELECT
 	"nm"."MiddleName"
 FROM
-	(
-		SELECT
-			CHARACTER_LENGTH("p"."MiddleName",CODEUNITS32) as "Value_1",
-			"p"."MiddleName"
-		FROM
-			"Person" "p"
-	) "nm"
+	"Person" "nm"
 WHERE
-	"nm"."Value_1" <> 0 OR "nm"."Value_1" IS NULL
+	CHARACTER_LENGTH("nm"."MiddleName",CODEUNITS32) <> 0 OR
+	"nm"."MiddleName" IS NULL
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW

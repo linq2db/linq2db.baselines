@@ -23,8 +23,3 @@ FROM
 WHERE
 	[s].[Id] > 3
 
-BeforeExecute
--- SqlServer.2019.MS SqlServer.2019 (asynchronously)
-
-DROP TABLE IF EXISTS [TableWithData]
-

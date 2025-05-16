@@ -15,5 +15,5 @@ FROM
 				[a_Association].[Id] = [x].[Id]
 		) [t1]
 WHERE
-	[t1].[Association] IS NOT NULL AND ([t1].[Association] <> 'unknown' OR [t1].[Association] IS NULL)
+	[t1].[Association] IS NOT NULL AND [t1].[Association] <> 'unknown'
 

@@ -3,10 +3,7 @@
 
 SELECT
 	"x"."Id",
-	CASE
-		WHEN "x"."StringProp" = '1' OR "x"."StringProp" IS NULL THEN 1
-		ELSE 0
-	END,
+	CAST("x"."StringProp" = '1' OR "x"."StringProp" IS NULL AS smallint),
 	CASE
 		WHEN "x"."StringProp" = '2' THEN 1
 		ELSE 0
