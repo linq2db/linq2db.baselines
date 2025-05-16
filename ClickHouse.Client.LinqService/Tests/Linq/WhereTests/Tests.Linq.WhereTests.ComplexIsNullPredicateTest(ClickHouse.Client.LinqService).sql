@@ -7,14 +7,7 @@ SELECT
 FROM
 	ComplexPredicate r
 WHERE
-	CASE
-		WHEN r.Value = '123' THEN true
-		ELSE false
-	END = CASE
-		WHEN r.Value = '1' OR r.Value = 'test' AND (r.Value <> '1' OR r.Value IS NULL)
-			THEN true
-		ELSE false
-	END
+	(r.Value = '123' AND r.Value IS NOT NULL) = (r.Value = '1' AND r.Value IS NOT NULL OR r.Value = 'test' AND r.Value IS NOT NULL AND (r.Value <> '1' OR r.Value IS NULL))
 ORDER BY
 	r.Id
 
