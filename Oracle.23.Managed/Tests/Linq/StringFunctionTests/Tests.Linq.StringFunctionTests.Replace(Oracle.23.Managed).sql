@@ -10,5 +10,5 @@ SELECT
 FROM
 	"Person" p
 WHERE
-	REPLACE(p."FirstName", 'hn', 'lie') = 'Jolie' AND p."PersonID" = 1
+	Replace(p."FirstName", 'hn', 'lie') = 'Jolie' AND p."PersonID" = 1
 

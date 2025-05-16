@@ -34,7 +34,7 @@ SELECT
 FROM
 	[CollatedTable] [r]
 WHERE
-	Convert(VARBINARY(8000), SUBSTRING([r].[CaseSensitive], LEN([r].[CaseSensitive]) - 7, 8)) = Convert(VARBINARY(8000), 'stString')
+	Convert(VARBINARY(8000), SUBSTRING([r].[CaseSensitive], (LEN([r].[CaseSensitive]) - LEN('stString')) + 1, LEN('stString'))) = Convert(VARBINARY(8000), 'stString')
 
 BeforeExecute
 -- SqlCe
@@ -44,7 +44,7 @@ SELECT
 FROM
 	[CollatedTable] [r]
 WHERE
-	Convert(VARBINARY(8000), SUBSTRING([r].[CaseInsensitive], LEN([r].[CaseInsensitive]) - 7, 8)) = Convert(VARBINARY(8000), 'stString')
+	Convert(VARBINARY(8000), SUBSTRING([r].[CaseInsensitive], (LEN([r].[CaseInsensitive]) - LEN('stString')) + 1, LEN('stString'))) = Convert(VARBINARY(8000), 'stString')
 
 BeforeExecute
 -- SqlCe
@@ -54,7 +54,7 @@ SELECT
 FROM
 	[CollatedTable] [r]
 WHERE
-	Convert(VARBINARY(8000), SUBSTRING([r].[CaseSensitive], LEN([r].[CaseSensitive]) - 7, 8)) = Convert(VARBINARY(8000), 'ststring')
+	Convert(VARBINARY(8000), SUBSTRING([r].[CaseSensitive], (LEN([r].[CaseSensitive]) - LEN('ststring')) + 1, LEN('ststring'))) = Convert(VARBINARY(8000), 'ststring')
 
 BeforeExecute
 -- SqlCe
@@ -64,5 +64,5 @@ SELECT
 FROM
 	[CollatedTable] [r]
 WHERE
-	Convert(VARBINARY(8000), SUBSTRING([r].[CaseInsensitive], LEN([r].[CaseInsensitive]) - 7, 8)) = Convert(VARBINARY(8000), 'ststring')
+	Convert(VARBINARY(8000), SUBSTRING([r].[CaseInsensitive], (LEN([r].[CaseInsensitive]) - LEN('ststring')) + 1, LEN('ststring'))) = Convert(VARBINARY(8000), 'ststring')
 

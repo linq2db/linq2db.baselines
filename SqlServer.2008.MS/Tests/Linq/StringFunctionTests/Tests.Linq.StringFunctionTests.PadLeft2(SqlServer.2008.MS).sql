@@ -11,8 +11,8 @@ FROM
 	[Person] [p]
 WHERE
 	N'123' + CASE
-		WHEN Len([p].[FirstName]) > 6 THEN [p].[FirstName]
-		ELSE Replicate(N'*', 6 - Len([p].[FirstName])) + [p].[FirstName]
+		WHEN LEN([p].[FirstName] + N'.') >= 7 THEN [p].[FirstName]
+		ELSE REPLICATE(N'*', 6 - (LEN([p].[FirstName] + N'.') - 1)) + [p].[FirstName]
 	END = N'123**John' AND
 	[p].[PersonID] = 1
 

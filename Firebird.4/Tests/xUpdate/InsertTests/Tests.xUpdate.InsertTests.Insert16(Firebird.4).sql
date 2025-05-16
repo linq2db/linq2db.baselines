@@ -8,8 +8,8 @@ WHERE
 
 BeforeExecute
 -- Firebird.4 Firebird4
-DECLARE @name VarChar(8) -- String
-SET     @name = 'Insert16'
+DECLARE @name Integer -- Int32
+SET     @name = 8
 DECLARE @idx Integer -- Int32
 SET     @idx = 4
 
@@ -22,7 +22,7 @@ INSERT INTO "Person"
 VALUES
 (
 	'Insert16',
-	Char_Length(CAST(@name AS VARCHAR(8))) + CAST(@idx AS Int),
+	CAST(@name AS Int) + CAST(@idx AS Int),
 	'M'
 )
 

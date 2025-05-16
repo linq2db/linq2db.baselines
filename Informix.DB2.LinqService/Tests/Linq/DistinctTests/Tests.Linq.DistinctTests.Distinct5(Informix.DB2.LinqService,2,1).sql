@@ -1,9 +1,11 @@
 ﻿BeforeExecute
 -- Informix.DB2 Informix
+DECLARE @Value1 Integer(4) -- Int32
+SET     @Value1 = 3
 
 SELECT DISTINCT
 	Nvl(p.Value1, Mod(p.ParentID, 2)),
-	3
+	@Value1::Int
 FROM
 	Parent p
 
@@ -18,10 +20,12 @@ FROM
 
 BeforeExecute
 -- Informix.DB2 Informix
+DECLARE @Value1 Integer(4) -- Int32
+SET     @Value1 = 3
 
 SELECT DISTINCT
 	Nvl(p.Value1, Mod(p.ParentID, 2)),
-	3
+	@Value1::Int
 FROM
 	Parent p
 

@@ -2,7 +2,7 @@
 -- Access.Ace.Odbc AccessODBC
 
 SELECT
-	REPLACE(CStr([p].[MoneyValue]), CStr(','), CStr('.'))
+	Replace(CStr([p].[MoneyValue]), CStr(','), CStr('.'))
 FROM
 	[LinqDataTypes] [p]
 WHERE

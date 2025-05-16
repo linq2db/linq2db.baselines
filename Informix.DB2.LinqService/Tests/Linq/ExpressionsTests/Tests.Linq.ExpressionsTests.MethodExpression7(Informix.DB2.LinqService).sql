@@ -1,5 +1,7 @@
 ﻿BeforeExecute
 -- Informix.DB2 Informix
+DECLARE @n Integer(4) -- Int32
+SET     @n = 2
 
 SELECT
 	(
@@ -9,7 +11,7 @@ SELECT
 			Child c_1
 		WHERE
 			c_1.ParentID = p.ParentID
-	) + 2
+	) + @n::Int
 FROM
 	Parent p
 

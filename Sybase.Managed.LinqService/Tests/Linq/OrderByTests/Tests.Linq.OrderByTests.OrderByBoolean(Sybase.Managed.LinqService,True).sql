@@ -11,7 +11,8 @@ FROM
 	[Person] [t1]
 ORDER BY
 	CASE
-		WHEN Len([t1].[FirstName]) > 1 THEN 1
+		WHEN CHAR_LENGTH([t1].[FirstName]) > 1 AND '' <> [t1].[FirstName]
+			THEN 1
 		ELSE 0
 	END
 

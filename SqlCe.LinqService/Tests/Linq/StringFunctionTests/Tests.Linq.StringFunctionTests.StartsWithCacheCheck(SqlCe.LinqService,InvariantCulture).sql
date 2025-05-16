@@ -10,61 +10,53 @@ WHERE
 
 BeforeExecute
 -- SqlCe
-DECLARE @nameToCheck Int -- Int32
-SET     @nameToCheck = 3
-DECLARE @nameToCheck_1 NVarChar(3) -- String
-SET     @nameToCheck_1 = 'Joh'
+DECLARE @nameToCheck NVarChar(3) -- String
+SET     @nameToCheck = 'Joh'
 
 SELECT
 	COUNT(*) as [COUNT_1]
 FROM
 	[Person] [p]
 WHERE
-	Convert(VARBINARY(8000), SUBSTRING([p].[FirstName], 1, @nameToCheck)) = Convert(VARBINARY(8000), @nameToCheck_1) AND
+	Convert(VARBINARY(8000), SUBSTRING([p].[FirstName], 1, LEN(@nameToCheck))) = Convert(VARBINARY(8000), @nameToCheck) AND
 	[p].[PersonID] = 1
 
 BeforeExecute
 -- SqlCe
-DECLARE @nameToCheck Int -- Int32
-SET     @nameToCheck = 3
-DECLARE @nameToCheck_1 NVarChar(3) -- String
-SET     @nameToCheck_1 = 'Joh'
+DECLARE @nameToCheck NVarChar(3) -- String
+SET     @nameToCheck = 'Joh'
 
 SELECT
 	COUNT(*) as [COUNT_1]
 FROM
 	[Person] [p]
 WHERE
-	Convert(VARBINARY(8000), SUBSTRING([p].[FirstName], 1, @nameToCheck)) <> Convert(VARBINARY(8000), @nameToCheck_1) AND
+	Convert(VARBINARY(8000), SUBSTRING([p].[FirstName], 1, LEN(@nameToCheck))) <> Convert(VARBINARY(8000), @nameToCheck) AND
 	[p].[PersonID] = 1
 
 BeforeExecute
 -- SqlCe
-DECLARE @nameToCheck Int -- Int32
-SET     @nameToCheck = 3
-DECLARE @nameToCheck_1 NVarChar(3) -- String
-SET     @nameToCheck_1 = 'JOH'
+DECLARE @nameToCheck NVarChar(3) -- String
+SET     @nameToCheck = 'JOH'
 
 SELECT
 	COUNT(*) as [COUNT_1]
 FROM
 	[Person] [p]
 WHERE
-	Convert(VARBINARY(8000), SUBSTRING([p].[FirstName], 1, @nameToCheck)) = Convert(VARBINARY(8000), @nameToCheck_1) AND
+	Convert(VARBINARY(8000), SUBSTRING([p].[FirstName], 1, LEN(@nameToCheck))) = Convert(VARBINARY(8000), @nameToCheck) AND
 	[p].[PersonID] = 1
 
 BeforeExecute
 -- SqlCe
-DECLARE @nameToCheck Int -- Int32
-SET     @nameToCheck = 3
-DECLARE @nameToCheck_1 NVarChar(3) -- String
-SET     @nameToCheck_1 = 'JOH'
+DECLARE @nameToCheck NVarChar(3) -- String
+SET     @nameToCheck = 'JOH'
 
 SELECT
 	COUNT(*) as [COUNT_1]
 FROM
 	[Person] [p]
 WHERE
-	Convert(VARBINARY(8000), SUBSTRING([p].[FirstName], 1, @nameToCheck)) <> Convert(VARBINARY(8000), @nameToCheck_1) AND
+	Convert(VARBINARY(8000), SUBSTRING([p].[FirstName], 1, LEN(@nameToCheck))) <> Convert(VARBINARY(8000), @nameToCheck) AND
 	[p].[PersonID] = 1
 

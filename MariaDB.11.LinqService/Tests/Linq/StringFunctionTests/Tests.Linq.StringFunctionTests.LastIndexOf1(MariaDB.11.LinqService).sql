@@ -10,6 +10,6 @@ SELECT
 FROM
 	`Person` `p`
 WHERE
-	(Char_Length(`p`.`LastName`) - Locate('p', Reverse(`p`.`LastName`))) - Char_Length('p') = 1 AND
+	CHAR_LENGTH(`p`.`LastName`) - Locate('p', Reverse(`p`.`LastName`)) = 2 AND
 	Locate('p', `p`.`LastName`) <> 0 AND `p`.`PersonID` = 1
 

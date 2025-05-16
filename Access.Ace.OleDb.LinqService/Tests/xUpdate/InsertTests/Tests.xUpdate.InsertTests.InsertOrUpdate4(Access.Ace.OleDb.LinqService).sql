@@ -72,8 +72,8 @@ BeforeExecute
 -- Access.Ace.OleDb AccessOleDb
 DECLARE @id Integer -- Int32
 SET     @id = 5
-DECLARE @diagnosis VarWChar(3) -- String
-SET     @diagnosis = 'abc'
+DECLARE @diagnosis Integer -- Int32
+SET     @diagnosis = 3
 DECLARE @i Integer -- Int32
 SET     @i = 0
 
@@ -85,7 +85,7 @@ INSERT INTO [Patient]
 VALUES
 (
 	@id,
-	CStr(Len(@diagnosis) + @i)
+	CStr(@diagnosis + @i)
 )
 
 BeforeExecute

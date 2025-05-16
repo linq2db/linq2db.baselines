@@ -11,8 +11,12 @@ FROM
 	[Person] [p]
 WHERE
 	'123' + CASE
-		WHEN Len([p].[FirstName]) > 6 THEN [p].[FirstName]
-		ELSE Replicate(' ', 6 - Len([p].[FirstName])) + [p].[FirstName]
+		WHEN CHAR_LENGTH([p].[FirstName]) > 6 AND '' <> [p].[FirstName]
+			THEN [p].[FirstName]
+		ELSE Replicate(' ', 6 - CASE
+			WHEN '' = [p].[FirstName] THEN 0
+			ELSE CHAR_LENGTH([p].[FirstName])
+		END) + [p].[FirstName]
 	END = '123  John' AND
 	[p].[PersonID] = 1
 

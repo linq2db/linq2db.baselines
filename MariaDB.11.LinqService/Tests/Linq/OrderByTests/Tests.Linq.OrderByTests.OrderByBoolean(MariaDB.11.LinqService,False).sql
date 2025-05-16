@@ -10,7 +10,7 @@ SELECT
 FROM
 	`Person` `t1`
 ORDER BY
-	Char_Length(`t1`.`FirstName`) > 4
+	CHAR_LENGTH(`t1`.`FirstName`) > 4
 
 BeforeExecute
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql

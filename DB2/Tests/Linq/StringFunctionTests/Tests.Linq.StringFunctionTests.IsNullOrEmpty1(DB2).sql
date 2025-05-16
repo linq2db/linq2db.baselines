@@ -10,6 +10,5 @@ SELECT
 FROM
 	"Person" "p"
 WHERE
-	CHARACTER_LENGTH("p"."FirstName",CODEUNITS32) <> 0 AND
-	"p"."PersonID" = 1
+	CHAR_LENGTH("p"."FirstName") <> 0 AND "p"."PersonID" = 1
 

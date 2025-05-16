@@ -9,8 +9,6 @@ WHERE
 
 BeforeExecute
 -- SqlServer.2019
-DECLARE @name NVarChar(4000) -- String
-SET     @name = N'Insert16'
 DECLARE @idx Int -- Int32
 SET     @idx = 4
 
@@ -23,7 +21,7 @@ INSERT INTO [Person]
 VALUES
 (
 	N'Insert16',
-	CAST(Len(@name) + @idx AS NVarChar(11)),
+	CAST(8 + @idx AS NVarChar(11)),
 	'M'
 )
 

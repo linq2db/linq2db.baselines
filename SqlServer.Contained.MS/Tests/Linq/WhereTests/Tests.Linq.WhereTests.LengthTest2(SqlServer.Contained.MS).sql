@@ -6,7 +6,7 @@ SELECT
 FROM
 	[Person] [nm]
 WHERE
-	Len([nm].[FirstName]) <> 0
+	LEN([nm].[FirstName] + N'.') <> 1
 
 BeforeExecute
 -- SqlServer.Contained.MS SqlServer.2019

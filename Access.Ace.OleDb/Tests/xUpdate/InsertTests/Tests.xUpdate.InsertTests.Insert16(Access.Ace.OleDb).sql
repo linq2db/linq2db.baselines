@@ -8,8 +8,8 @@ WHERE
 
 BeforeExecute
 -- Access.Ace.OleDb AccessOleDb
-DECLARE @name VarWChar(8) -- String
-SET     @name = 'Insert16'
+DECLARE @name Integer -- Int32
+SET     @name = 8
 DECLARE @idx Integer -- Int32
 SET     @idx = 4
 
@@ -22,7 +22,7 @@ INSERT INTO [Person]
 VALUES
 (
 	'Insert16',
-	CStr(Len(@name) + @idx),
+	CStr(@name + @idx),
 	'M'
 )
 

@@ -10,7 +10,7 @@ SELECT
 FROM
 	[Person] [r]
 WHERE
-	[r].[LastName] LIKE '%x' ESCAPE '~' AND Substr([r].[LastName], -1) = 'x'
+	[r].[LastName] LIKE '%x' ESCAPE '~' AND Substr([r].[LastName], Length('x') * -1) = 'x'
 
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
@@ -24,5 +24,5 @@ SELECT
 FROM
 	[Person] [r]
 WHERE
-	[r].[LastName] LIKE '%x' ESCAPE '~' AND Substr([r].[LastName], -1) = 'x'
+	[r].[LastName] LIKE '%x' ESCAPE '~' AND Substr([r].[LastName], Length('x') * -1) = 'x'
 

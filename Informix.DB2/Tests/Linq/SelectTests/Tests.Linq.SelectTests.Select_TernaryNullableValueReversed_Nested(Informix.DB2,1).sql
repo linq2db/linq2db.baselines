@@ -1,7 +1,9 @@
 ﻿BeforeExecute
 -- Informix.DB2 Informix
+DECLARE @value Integer(4) -- Int32
+SET     @value = 1
 
 SELECT
-	1
+	@value::Int
 FROM table(set{1})
 

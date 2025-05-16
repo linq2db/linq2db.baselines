@@ -1,7 +1,5 @@
 ﻿BeforeExecute
 -- Firebird.4 Firebird4
-DECLARE @Length Integer -- Int32
-SET     @Length = 4
 
 SELECT
 	"p"."FirstName",
@@ -12,5 +10,5 @@ SELECT
 FROM
 	"Person" "p"
 WHERE
-	Char_Length("p"."FirstName") = @Length AND "p"."PersonID" = 1
+	CHAR_LENGTH("p"."FirstName") = 4 AND "p"."PersonID" = 1
 

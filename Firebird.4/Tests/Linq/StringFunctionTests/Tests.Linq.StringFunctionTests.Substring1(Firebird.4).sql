@@ -10,6 +10,6 @@ SELECT
 FROM
 	"Person" "p"
 WHERE
-	Substring("p"."FirstName" from 2 for (Char_Length("p"."FirstName") - 1)) = 'ohn' AND
+	Substring("p"."FirstName" from 2 for (CHAR_LENGTH("p"."FirstName") - 1)) = 'ohn' AND
 	"p"."PersonID" = 1
 

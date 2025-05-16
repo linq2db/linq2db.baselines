@@ -11,7 +11,7 @@ FROM
 	[Person] [t1]
 ORDER BY
 	CASE
-		WHEN Len([t1].[FirstName]) > 1 THEN 1
+		WHEN LEN([t1].[FirstName] + '.') > 2 THEN 1
 		ELSE 0
 	END
 

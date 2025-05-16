@@ -2,5 +2,5 @@
 -- Access.Jet.OleDb AccessOleDb
 
 SELECT
-	Len('1')
+	1
 

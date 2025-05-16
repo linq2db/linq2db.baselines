@@ -37,13 +37,11 @@ DECLARE @i Int -- Int32
 SET     @i = 0
 DECLARE @id Int -- Int32
 SET     @id = 5
-DECLARE @diagnosis NVarChar(4000) -- String
-SET     @diagnosis = N'abc'
 
 UPDATE
 	[Patient]
 SET
-	[Diagnosis] = CAST(Len([t1].[Diagnosis]) + @i AS NVarChar(11))
+	[Diagnosis] = CAST(LEN([t1].[Diagnosis] + N'.') - 1 + @i AS NVarChar(11))
 FROM
 	[Patient] [t1]
 WHERE
@@ -59,7 +57,7 @@ BEGIN
 	VALUES
 	(
 		@id,
-		CAST(Len(@diagnosis) + @i AS NVarChar(11))
+		CAST(3 + @i AS NVarChar(11))
 	)
 END
 
@@ -69,13 +67,11 @@ DECLARE @i Int -- Int32
 SET     @i = 1
 DECLARE @id Int -- Int32
 SET     @id = 5
-DECLARE @diagnosis NVarChar(4000) -- String
-SET     @diagnosis = N'abc'
 
 UPDATE
 	[Patient]
 SET
-	[Diagnosis] = CAST(Len([t1].[Diagnosis]) + @i AS NVarChar(11))
+	[Diagnosis] = CAST(LEN([t1].[Diagnosis] + N'.') - 1 + @i AS NVarChar(11))
 FROM
 	[Patient] [t1]
 WHERE
@@ -91,7 +87,7 @@ BEGIN
 	VALUES
 	(
 		@id,
-		CAST(Len(@diagnosis) + @i AS NVarChar(11))
+		CAST(3 + @i AS NVarChar(11))
 	)
 END
 
@@ -101,13 +97,11 @@ DECLARE @i Int -- Int32
 SET     @i = 2
 DECLARE @id Int -- Int32
 SET     @id = 5
-DECLARE @diagnosis NVarChar(4000) -- String
-SET     @diagnosis = N'abc'
 
 UPDATE
 	[Patient]
 SET
-	[Diagnosis] = CAST(Len([t1].[Diagnosis]) + @i AS NVarChar(11))
+	[Diagnosis] = CAST(LEN([t1].[Diagnosis] + N'.') - 1 + @i AS NVarChar(11))
 FROM
 	[Patient] [t1]
 WHERE
@@ -123,7 +117,7 @@ BEGIN
 	VALUES
 	(
 		@id,
-		CAST(Len(@diagnosis) + @i AS NVarChar(11))
+		CAST(3 + @i AS NVarChar(11))
 	)
 END
 

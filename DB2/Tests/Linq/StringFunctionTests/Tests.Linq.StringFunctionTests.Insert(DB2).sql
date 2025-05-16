@@ -11,8 +11,8 @@ FROM
 	"Person" "p"
 WHERE
 	CASE
-		WHEN CHARACTER_LENGTH("p"."FirstName",CODEUNITS32) = 2 THEN "p"."FirstName" || '123'
-		ELSE Left("p"."FirstName", 2) || '123' || RIGHT("p"."FirstName", CHARACTER_LENGTH("p"."FirstName",CODEUNITS32) - 2)
+		WHEN CHAR_LENGTH("p"."FirstName") = 2 THEN "p"."FirstName" || '123'
+		ELSE Left("p"."FirstName", 2) || '123' || RIGHT("p"."FirstName", CHAR_LENGTH("p"."FirstName") - 2)
 	END = 'Jo123hn' AND
 	"p"."PersonID" = 1
 

@@ -6,13 +6,13 @@ SELECT
 FROM
 	(
 		SELECT
-			Length(p."MiddleName") as "Value_1",
+			Length(p."MiddleName") as "Length_1",
 			p."MiddleName"
 		FROM
 			"Person" p
 	) nm
 WHERE
-	nm."Value_1" <> 0 OR nm."Value_1" IS NULL
+	nm."Length_1" <> 0 OR nm."Length_1" IS NULL
 
 BeforeExecute
 -- Oracle.18.Managed Oracle.Managed Oracle12

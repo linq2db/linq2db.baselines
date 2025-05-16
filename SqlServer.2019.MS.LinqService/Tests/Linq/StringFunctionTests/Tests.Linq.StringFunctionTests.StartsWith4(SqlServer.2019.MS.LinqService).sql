@@ -11,5 +11,5 @@ FROM
 	[Person] [p1],
 	[Person] [p2]
 WHERE
-	[p1].[PersonID] = [p2].[PersonID] AND [p1].[FirstName] LIKE REPLACE([p2].[FirstName], N'%', N'~%') ESCAPE N'~'
+	[p1].[PersonID] = [p2].[PersonID] AND [p1].[FirstName] LIKE Replace([p2].[FirstName], N'%', N'~%') ESCAPE N'~'
 

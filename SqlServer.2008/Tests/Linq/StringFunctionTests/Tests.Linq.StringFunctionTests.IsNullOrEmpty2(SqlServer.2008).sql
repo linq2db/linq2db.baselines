@@ -3,7 +3,7 @@
 
 SELECT
 	CASE
-		WHEN Len([p].[FirstName]) = 0 THEN 1
+		WHEN LEN([p].[FirstName] + N'.') = 1 THEN 1
 		ELSE 0
 	END
 FROM

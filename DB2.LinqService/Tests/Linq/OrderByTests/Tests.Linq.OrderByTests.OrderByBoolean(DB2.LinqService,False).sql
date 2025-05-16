@@ -10,7 +10,7 @@ SELECT
 FROM
 	"Person" "t1"
 ORDER BY
-	CHARACTER_LENGTH("t1"."FirstName",CODEUNITS32) > 4
+	CHAR_LENGTH("t1"."FirstName") > 4
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW

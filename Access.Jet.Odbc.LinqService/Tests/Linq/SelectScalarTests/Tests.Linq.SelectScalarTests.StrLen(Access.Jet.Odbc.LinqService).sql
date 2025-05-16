@@ -2,5 +2,5 @@
 -- Access.Jet.Odbc AccessODBC
 
 SELECT
-	Len('1')
+	1
 

@@ -10,7 +10,7 @@ SELECT
 FROM
 	Person t1
 ORDER BY
-	CHAR_LENGTH(t1.FirstName) > 4
+	lengthUTF8(t1.FirstName) > 4
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse

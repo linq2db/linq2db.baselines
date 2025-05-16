@@ -1,9 +1,11 @@
 ﻿BeforeExecute
 -- Informix.DB2 Informix
+DECLARE @Value1 Integer(4) -- Int32
+SET     @Value1 = 4
 
 SELECT DISTINCT
 	Nvl(p.Value1, p.ParentID + 1),
-	4
+	@Value1::Int
 FROM
 	Parent p
 

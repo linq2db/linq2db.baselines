@@ -2,7 +2,7 @@
 -- Firebird.5 Firebird4
 
 SELECT
-	Char_Length("p"."FirstName")
+	CHAR_LENGTH("p"."FirstName")
 FROM
 	"Person" "p"
 
