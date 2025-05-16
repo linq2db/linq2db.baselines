@@ -10,7 +10,7 @@ ORDER BY
 	[t1].[ChildID]
 
 BeforeExecute
---  Access.Ace.Odbc AccessODBC
+-- Access.Ace.Odbc AccessODBC
 
 SELECT
 	[t1].[ParentID],

@@ -25,7 +25,7 @@ ORDER BY `o`.`OrderID`, `t`.`OrderID`, `t`.`ProductID`, `t0`.`ProductID`, `t1`.`
 BeginTransaction(RepeatableRead)
 
 
---  MySql.5.7.MySqlConnector MySql57
+-- MySql.5.7.MySqlConnector MySql57
 
 SELECT
 	`m_1`.`ProductId`,
@@ -48,7 +48,7 @@ FROM
 DisposeTransaction
 
 
---  MySql.5.7.MySqlConnector MySql57
+-- MySql.5.7.MySqlConnector MySql57
 
 SELECT
 	`a_Product`.`ProductID`,

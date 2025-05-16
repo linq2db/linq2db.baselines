@@ -1,4 +1,4 @@
-﻿--  MariaDB.10.MySqlConnector MySql
+﻿-- MariaDB.10.MySqlConnector MySql
 DECLARE @Id Int64
 SET     @Id = 1
 DECLARE @PermanentId Guid
@@ -29,13 +29,13 @@ VALUES
 
 
 
---  MariaDB.10.MySqlConnector MySql
+-- MariaDB.10.MySqlConnector MySql
 
 SELECT LAST_INSERT_ID()
 
 
 
---  MariaDB.10.MySqlConnector MySql
+-- MariaDB.10.MySqlConnector MySql
 DECLARE @Id Int64
 SET     @Id = 2
 DECLARE @PermanentId Guid
@@ -66,13 +66,13 @@ VALUES
 
 
 
---  MariaDB.10.MySqlConnector MySql
+-- MariaDB.10.MySqlConnector MySql
 
 SELECT LAST_INSERT_ID()
 
 
 
---  MariaDB.10.MySqlConnector MySql
+-- MariaDB.10.MySqlConnector MySql
 DECLARE @Id Int64
 SET     @Id = 3
 DECLARE @PermanentId Guid
@@ -103,7 +103,7 @@ VALUES
 
 
 
---  MariaDB.10.MySqlConnector MySql
+-- MariaDB.10.MySqlConnector MySql
 
 SELECT LAST_INSERT_ID()
 
@@ -114,7 +114,7 @@ FROM `Subdivisions` AS `s`
 WHERE CAST(`s`.`Id` AS signed) = 1
 
 
---  MariaDB.10.MySqlConnector MySql
+-- MariaDB.10.MySqlConnector MySql
 
 SELECT
 	`s`.`Id`,
@@ -129,7 +129,7 @@ WHERE
 
 
 
---  MariaDB.10.MySqlConnector MySql
+-- MariaDB.10.MySqlConnector MySql
 DECLARE @id Int64
 SET     @id = 1
 
@@ -146,7 +146,7 @@ WHERE
 
 
 
---  MariaDB.10.MySqlConnector MySql
+-- MariaDB.10.MySqlConnector MySql
 
 SELECT
 	`s`.`Id`,
@@ -161,7 +161,7 @@ WHERE
 
 
 
---  MariaDB.10.MySqlConnector MySql
+-- MariaDB.10.MySqlConnector MySql
 
 SELECT
 	`t1`.`Id`,

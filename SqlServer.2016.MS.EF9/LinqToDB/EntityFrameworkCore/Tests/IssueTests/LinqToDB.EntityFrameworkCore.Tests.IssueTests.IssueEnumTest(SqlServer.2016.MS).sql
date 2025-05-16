@@ -15,7 +15,7 @@ VALUES (i.[Value])
 OUTPUT INSERTED.[Id], i._Position;
 
 
---  SqlServer.2016 (asynchronously)
+-- SqlServer.2016 (asynchronously)
 
 SELECT
 	[t1].[Id],

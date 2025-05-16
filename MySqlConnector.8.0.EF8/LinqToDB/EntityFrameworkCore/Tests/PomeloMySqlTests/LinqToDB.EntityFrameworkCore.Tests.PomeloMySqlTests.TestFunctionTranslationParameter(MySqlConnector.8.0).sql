@@ -1,4 +1,4 @@
-﻿--  MySql.8.0.MySqlConnector MySql80
+﻿-- MySql.8.0.MySqlConnector MySql80
 DECLARE @value VarChar(8) -- String
 SET     @value = 'anything'
 
