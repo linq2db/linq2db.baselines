@@ -7,7 +7,7 @@ FROM
 	[Patient] [r]
 WHERE
 	[r].[Diagnosis] LIKE '%Persecution' ESCAPE '~' AND
-	Substr([r].[Diagnosis], Length('Persecution') * -1) = 'Persecution'
+	Substr([r].[Diagnosis], -11) = 'Persecution'
 
 BeforeExecute
 -- SQLite.Classic SQLite
@@ -18,7 +18,7 @@ FROM
 	[Patient] [r]
 WHERE
 	[r].[Diagnosis] LIKE '%persecution' ESCAPE '~' AND
-	Substr([r].[Diagnosis], Length('persecution') * -1) = 'persecution'
+	Substr([r].[Diagnosis], -11) = 'persecution'
 
 BeforeExecute
 -- SQLite.Classic SQLite
