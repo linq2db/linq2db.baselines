@@ -20,7 +20,7 @@ FROM
 			LIMIT 1
 		) t1 ON 1=1
 WHERE
-	NOT (("a_Parent"."ParentID" = t1."ParentID" OR "a_Parent"."ParentID" IS NULL AND t1."ParentID" IS NULL) AND ("a_Parent"."Value1" = t1."Value1" OR "a_Parent"."Value1" IS NULL AND t1."Value1" IS NULL)) AND
+	NOT (("a_Parent"."ParentID" = t1."ParentID" OR "a_Parent"."ParentID" IS NULL AND t1."ParentID" IS NULL) AND NOT ("a_Parent"."ParentID" IS NULL AND t1."ParentID" IS NOT NULL) AND NOT ("a_Parent"."ParentID" IS NOT NULL AND t1."ParentID" IS NULL) AND ("a_Parent"."Value1" = t1."Value1" OR "a_Parent"."Value1" IS NULL AND t1."Value1" IS NULL) AND NOT ("a_Parent"."Value1" IS NULL AND t1."Value1" IS NOT NULL) AND NOT ("a_Parent"."Value1" IS NOT NULL AND t1."Value1" IS NULL)) AND
 	(x."ParentID" <> (
 		SELECT
 			CASE
@@ -67,7 +67,7 @@ FROM
 			LIMIT 1
 		) t1 ON 1=1
 WHERE
-	NOT (("a_Parent"."ParentID" = t1."ParentID" OR "a_Parent"."ParentID" IS NULL AND t1."ParentID" IS NULL) AND ("a_Parent"."Value1" = t1."Value1" OR "a_Parent"."Value1" IS NULL AND t1."Value1" IS NULL)) AND
+	NOT (("a_Parent"."ParentID" = t1."ParentID" OR "a_Parent"."ParentID" IS NULL AND t1."ParentID" IS NULL) AND NOT ("a_Parent"."ParentID" IS NULL AND t1."ParentID" IS NOT NULL) AND NOT ("a_Parent"."ParentID" IS NOT NULL AND t1."ParentID" IS NULL) AND ("a_Parent"."Value1" = t1."Value1" OR "a_Parent"."Value1" IS NULL AND t1."Value1" IS NULL) AND NOT ("a_Parent"."Value1" IS NULL AND t1."Value1" IS NOT NULL) AND NOT ("a_Parent"."Value1" IS NOT NULL AND t1."Value1" IS NULL)) AND
 	(x."ParentID" <> (
 		SELECT
 			CASE
