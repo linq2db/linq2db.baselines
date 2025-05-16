@@ -6,7 +6,7 @@ SELECT
 FROM
 	"Person" "nm"
 WHERE
-	Char_Length("nm"."FirstName") <> 0
+	CHAR_LENGTH("nm"."FirstName") <> 0
 
 BeforeExecute
 -- Firebird.3 Firebird3

@@ -10,7 +10,7 @@ SELECT
 FROM
 	`Person` `t1`
 ORDER BY
-	Char_Length(`t1`.`FirstName`) > 4
+	CHAR_LENGTH(`t1`.`FirstName`) > 4
 
 BeforeExecute
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
