@@ -37,7 +37,7 @@ FROM
 		GROUP BY
 			[t2].[Key_1]
 	) [m_1]
-		INNER JOIN [Customers] [d] ON [m_1].[Key_1] = IIF((
+		INNER JOIN [Customers] [d] ON IIF([m_1].[Key_1] = 1, 1, 0) = IIF((
 			SELECT
 				AVG([a_Orders_1].[Freight]) as [AVG_1]
 			FROM
