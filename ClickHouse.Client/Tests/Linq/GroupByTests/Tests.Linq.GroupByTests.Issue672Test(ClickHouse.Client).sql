@@ -62,7 +62,7 @@ FROM
 			Stone sG
 		WHERE
 			sG.Enabled = true AND NOT startsWith(sG.Name, 'level - ') AND
-			CHAR_LENGTH(sG.ImageFullUrl) > 0
+			lengthUTF8(sG.ImageFullUrl) > 0
 		GROUP BY
 			sG.Name
 	) sG_1
@@ -77,6 +77,6 @@ FROM
 				Stone s
 			WHERE
 				s.Enabled = true AND NOT startsWith(s.Name, 'level - ') AND
-				CHAR_LENGTH(s.ImageFullUrl) > 0
+				lengthUTF8(s.ImageFullUrl) > 0
 		) t1 ON sG_1.Name = t1.Name AND t1.rn <= 1
 

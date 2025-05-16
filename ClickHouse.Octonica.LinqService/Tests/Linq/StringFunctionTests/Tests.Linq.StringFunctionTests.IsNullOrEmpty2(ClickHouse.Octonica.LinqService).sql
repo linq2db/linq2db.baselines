@@ -2,7 +2,7 @@
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
-	CHAR_LENGTH(p.FirstName) = 0
+	lengthUTF8(p.FirstName) = 0
 FROM
 	Person p
 WHERE
