@@ -34,7 +34,7 @@ SELECT
 FROM
 	[CollatedTable] [r]
 WHERE
-	[r].[CaseSensitive] LIKE 'TestSt%' ESCAPE '~' AND Substr([r].[CaseSensitive], 1, 6) = 'TestSt'
+	[r].[CaseSensitive] LIKE 'TestSt%' ESCAPE '~' AND Substr([r].[CaseSensitive], 1, Length('TestSt')) = 'TestSt'
 
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
@@ -45,7 +45,7 @@ FROM
 	[CollatedTable] [r]
 WHERE
 	[r].[CaseInsensitive] LIKE 'TestSt%' ESCAPE '~' AND
-	Substr([r].[CaseInsensitive], 1, 6) = 'TestSt'
+	Substr([r].[CaseInsensitive], 1, Length('TestSt')) = 'TestSt'
 
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
@@ -55,7 +55,7 @@ SELECT
 FROM
 	[CollatedTable] [r]
 WHERE
-	[r].[CaseSensitive] LIKE 'testst%' ESCAPE '~' AND Substr([r].[CaseSensitive], 1, 6) = 'testst'
+	[r].[CaseSensitive] LIKE 'testst%' ESCAPE '~' AND Substr([r].[CaseSensitive], 1, Length('testst')) = 'testst'
 
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
@@ -66,5 +66,5 @@ FROM
 	[CollatedTable] [r]
 WHERE
 	[r].[CaseInsensitive] LIKE 'testst%' ESCAPE '~' AND
-	Substr([r].[CaseInsensitive], 1, 6) = 'testst'
+	Substr([r].[CaseInsensitive], 1, Length('testst')) = 'testst'
 

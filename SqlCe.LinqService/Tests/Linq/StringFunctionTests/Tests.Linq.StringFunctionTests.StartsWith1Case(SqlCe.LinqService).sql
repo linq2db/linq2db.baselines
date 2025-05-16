@@ -6,7 +6,7 @@ SELECT
 FROM
 	[Person] [p]
 WHERE
-	Convert(VARBINARY(8000), SUBSTRING([p].[FirstName], 1, 2)) = Convert(VARBINARY(8000), 'Jo') AND
+	Convert(VARBINARY(8000), SUBSTRING([p].[FirstName], 1, LEN('Jo'))) = Convert(VARBINARY(8000), 'Jo') AND
 	[p].[PersonID] = 1
 
 BeforeExecute
@@ -17,7 +17,7 @@ SELECT
 FROM
 	[Person] [p]
 WHERE
-	Convert(VARBINARY(8000), SUBSTRING([p].[FirstName], 1, 2)) = Convert(VARBINARY(8000), 'jo') AND
+	Convert(VARBINARY(8000), SUBSTRING([p].[FirstName], 1, LEN('jo'))) = Convert(VARBINARY(8000), 'jo') AND
 	[p].[PersonID] = 1
 
 BeforeExecute
@@ -28,6 +28,6 @@ SELECT
 FROM
 	[Person] [p]
 WHERE
-	Convert(VARBINARY(8000), SUBSTRING([p].[FirstName], 1, 2)) <> Convert(VARBINARY(8000), 'Jo') AND
+	Convert(VARBINARY(8000), SUBSTRING([p].[FirstName], 1, LEN('Jo'))) <> Convert(VARBINARY(8000), 'Jo') AND
 	[p].[PersonID] = 1
 
