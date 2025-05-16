@@ -1,7 +1,5 @@
 ﻿BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
-DECLARE @True Int16
-SET     @True = 1
 
 SELECT
 	r."Id",
@@ -12,10 +10,7 @@ SELECT
 FROM
 	"BooleanTable" r
 WHERE
-	CASE
-		WHEN r."Value1" = r."Value2" THEN 1
-		ELSE 0
-	END = :True
+	r."Value1" = r."Value2"
 
 BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
@@ -62,8 +57,6 @@ FROM
 
 BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
-DECLARE @False Int16
-SET     @False = 0
 
 SELECT
 	r."Id",
@@ -74,10 +67,7 @@ SELECT
 FROM
 	"BooleanTable" r
 WHERE
-	CASE
-		WHEN r."Value1" = r."Value4" THEN 1
-		ELSE 0
-	END = :False
+	r."Value1" <> r."Value4" OR r."Value4" IS NULL
 
 BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
@@ -150,8 +140,6 @@ FROM
 
 BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
-DECLARE @True Int16
-SET     @True = 1
 
 SELECT
 	r."Id",
@@ -162,10 +150,7 @@ SELECT
 FROM
 	"BooleanTable" r
 WHERE
-	CASE
-		WHEN r."Value1" = r."Value4" THEN 1
-		ELSE 0
-	END = :True
+	r."Value1" = r."Value4"
 
 BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
@@ -212,8 +197,6 @@ FROM
 
 BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
-DECLARE @False Int16
-SET     @False = 0
 
 SELECT
 	r."Id",
@@ -224,10 +207,7 @@ SELECT
 FROM
 	"BooleanTable" r
 WHERE
-	CASE
-		WHEN r."Value1" = r."Value4" THEN 1
-		ELSE 0
-	END = :False
+	r."Value1" <> r."Value4" OR r."Value4" IS NULL
 
 BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
@@ -300,8 +280,6 @@ FROM
 
 BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
-DECLARE @True Int16
-SET     @True = 1
 
 SELECT
 	r."Id",
@@ -312,11 +290,7 @@ SELECT
 FROM
 	"BooleanTable" r
 WHERE
-	CASE
-		WHEN r."Value5" = r."Value4" OR r."Value5" IS NULL AND r."Value4" IS NULL
-			THEN 1
-		ELSE 0
-	END = :True
+	r."Value5" = r."Value4" OR r."Value5" IS NULL AND r."Value4" IS NULL
 
 BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
@@ -364,8 +338,6 @@ FROM
 
 BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
-DECLARE @False Int16
-SET     @False = 0
 
 SELECT
 	r."Id",
@@ -376,11 +348,8 @@ SELECT
 FROM
 	"BooleanTable" r
 WHERE
-	CASE
-		WHEN r."Value5" = r."Value4" OR r."Value5" IS NULL AND r."Value4" IS NULL
-			THEN 1
-		ELSE 0
-	END = :False
+	r."Value5" <> r."Value4" OR r."Value5" IS NULL AND r."Value4" IS NOT NULL OR
+	r."Value5" IS NOT NULL AND r."Value4" IS NULL
 
 BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
@@ -454,8 +423,6 @@ FROM
 
 BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
-DECLARE @True Int16
-SET     @True = 1
 
 SELECT
 	r."Id",
@@ -466,10 +433,7 @@ SELECT
 FROM
 	"BooleanTable" r
 WHERE
-	CASE
-		WHEN r."Value1" = r."Value2" THEN 1
-		ELSE 0
-	END <> :True
+	r."Value1" <> r."Value2"
 
 BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
@@ -516,8 +480,6 @@ FROM
 
 BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
-DECLARE @False Int16
-SET     @False = 0
 
 SELECT
 	r."Id",
@@ -528,10 +490,7 @@ SELECT
 FROM
 	"BooleanTable" r
 WHERE
-	CASE
-		WHEN r."Value1" = r."Value2" THEN 1
-		ELSE 0
-	END <> :False
+	r."Value1" = r."Value2"
 
 BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
@@ -602,8 +561,6 @@ FROM
 
 BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
-DECLARE @True Int16
-SET     @True = 1
 
 SELECT
 	r."Id",
@@ -614,10 +571,7 @@ SELECT
 FROM
 	"BooleanTable" r
 WHERE
-	CASE
-		WHEN r."Value1" = r."Value4" THEN 1
-		ELSE 0
-	END <> :True
+	r."Value1" <> r."Value4" OR r."Value4" IS NULL
 
 BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
@@ -664,8 +618,6 @@ FROM
 
 BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
-DECLARE @False Int16
-SET     @False = 0
 
 SELECT
 	r."Id",
@@ -676,10 +628,7 @@ SELECT
 FROM
 	"BooleanTable" r
 WHERE
-	CASE
-		WHEN r."Value1" = r."Value4" THEN 1
-		ELSE 0
-	END <> :False
+	r."Value1" = r."Value4"
 
 BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
@@ -750,8 +699,6 @@ FROM
 
 BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
-DECLARE @True Int16
-SET     @True = 1
 
 SELECT
 	r."Id",
@@ -762,11 +709,8 @@ SELECT
 FROM
 	"BooleanTable" r
 WHERE
-	CASE
-		WHEN r."Value5" = r."Value4" OR r."Value5" IS NULL AND r."Value4" IS NULL
-			THEN 1
-		ELSE 0
-	END <> :True
+	r."Value5" <> r."Value4" OR r."Value5" IS NULL AND r."Value4" IS NOT NULL OR
+	r."Value5" IS NOT NULL AND r."Value4" IS NULL
 
 BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
@@ -814,8 +758,6 @@ FROM
 
 BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
-DECLARE @False Int16
-SET     @False = 0
 
 SELECT
 	r."Id",
@@ -826,11 +768,7 @@ SELECT
 FROM
 	"BooleanTable" r
 WHERE
-	CASE
-		WHEN r."Value5" = r."Value4" OR r."Value5" IS NULL AND r."Value4" IS NULL
-			THEN 1
-		ELSE 0
-	END <> :False
+	r."Value5" = r."Value4" OR r."Value5" IS NULL AND r."Value4" IS NULL
 
 BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
@@ -902,8 +840,6 @@ FROM
 
 BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
-DECLARE @True Int16
-SET     @True = 1
 
 SELECT
 	r."Id",
@@ -914,10 +850,7 @@ SELECT
 FROM
 	"BooleanTable" r
 WHERE
-	CASE
-		WHEN r."Value1" > r."Value2" THEN 1
-		ELSE 0
-	END = :True
+	r."Value1" > r."Value2"
 
 BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
@@ -964,8 +897,6 @@ FROM
 
 BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
-DECLARE @False Int16
-SET     @False = 0
 
 SELECT
 	r."Id",
@@ -976,10 +907,7 @@ SELECT
 FROM
 	"BooleanTable" r
 WHERE
-	CASE
-		WHEN r."Value1" > r."Value2" THEN 1
-		ELSE 0
-	END = :False
+	r."Value1" <= r."Value2"
 
 BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
@@ -1052,8 +980,6 @@ FROM
 
 BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
-DECLARE @True Int16
-SET     @True = 1
 
 SELECT
 	r."Id",
@@ -1064,10 +990,7 @@ SELECT
 FROM
 	"BooleanTable" r
 WHERE
-	CASE
-		WHEN r."Value1" > r."Value4" THEN 1
-		ELSE 0
-	END = :True
+	r."Value1" > r."Value4"
 
 BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
@@ -1114,8 +1037,6 @@ FROM
 
 BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
-DECLARE @False Int16
-SET     @False = 0
 
 SELECT
 	r."Id",
@@ -1126,10 +1047,7 @@ SELECT
 FROM
 	"BooleanTable" r
 WHERE
-	CASE
-		WHEN r."Value1" > r."Value4" THEN 1
-		ELSE 0
-	END = :False
+	r."Value1" <= r."Value4" OR r."Value4" IS NULL
 
 BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
@@ -1202,8 +1120,6 @@ FROM
 
 BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
-DECLARE @True Int16
-SET     @True = 1
 
 SELECT
 	r."Id",
@@ -1214,10 +1130,7 @@ SELECT
 FROM
 	"BooleanTable" r
 WHERE
-	CASE
-		WHEN r."Value5" > r."Value4" THEN 1
-		ELSE 0
-	END = :True
+	r."Value5" > r."Value4"
 
 BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
@@ -1264,8 +1177,6 @@ FROM
 
 BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
-DECLARE @False Int16
-SET     @False = 0
 
 SELECT
 	r."Id",
@@ -1276,10 +1187,7 @@ SELECT
 FROM
 	"BooleanTable" r
 WHERE
-	CASE
-		WHEN r."Value5" > r."Value4" THEN 1
-		ELSE 0
-	END = :False
+	r."Value5" <= r."Value4" OR r."Value5" IS NULL OR r."Value4" IS NULL
 
 BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
@@ -1352,8 +1260,6 @@ FROM
 
 BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
-DECLARE @True Int16
-SET     @True = 1
 
 SELECT
 	r."Id",
@@ -1364,10 +1270,7 @@ SELECT
 FROM
 	"BooleanTable" r
 WHERE
-	CASE
-		WHEN r."Value1" > r."Value2" THEN 1
-		ELSE 0
-	END <> :True
+	r."Value1" <= r."Value2"
 
 BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
@@ -1414,8 +1317,6 @@ FROM
 
 BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
-DECLARE @False Int16
-SET     @False = 0
 
 SELECT
 	r."Id",
@@ -1426,10 +1327,7 @@ SELECT
 FROM
 	"BooleanTable" r
 WHERE
-	CASE
-		WHEN r."Value1" > r."Value2" THEN 1
-		ELSE 0
-	END <> :False
+	r."Value1" > r."Value2"
 
 BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
@@ -1500,8 +1398,6 @@ FROM
 
 BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
-DECLARE @True Int16
-SET     @True = 1
 
 SELECT
 	r."Id",
@@ -1512,10 +1408,7 @@ SELECT
 FROM
 	"BooleanTable" r
 WHERE
-	CASE
-		WHEN r."Value1" > r."Value4" THEN 1
-		ELSE 0
-	END <> :True
+	r."Value1" <= r."Value4" OR r."Value4" IS NULL
 
 BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
@@ -1562,8 +1455,6 @@ FROM
 
 BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
-DECLARE @False Int16
-SET     @False = 0
 
 SELECT
 	r."Id",
@@ -1574,10 +1465,7 @@ SELECT
 FROM
 	"BooleanTable" r
 WHERE
-	CASE
-		WHEN r."Value1" > r."Value4" THEN 1
-		ELSE 0
-	END <> :False
+	r."Value1" > r."Value4"
 
 BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
@@ -1648,8 +1536,6 @@ FROM
 
 BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
-DECLARE @True Int16
-SET     @True = 1
 
 SELECT
 	r."Id",
@@ -1660,10 +1546,7 @@ SELECT
 FROM
 	"BooleanTable" r
 WHERE
-	CASE
-		WHEN r."Value5" > r."Value4" THEN 1
-		ELSE 0
-	END <> :True
+	r."Value5" <= r."Value4" OR r."Value5" IS NULL OR r."Value4" IS NULL
 
 BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
@@ -1710,8 +1593,6 @@ FROM
 
 BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
-DECLARE @False Int16
-SET     @False = 0
 
 SELECT
 	r."Id",
@@ -1722,10 +1603,7 @@ SELECT
 FROM
 	"BooleanTable" r
 WHERE
-	CASE
-		WHEN r."Value5" > r."Value4" THEN 1
-		ELSE 0
-	END <> :False
+	r."Value5" > r."Value4"
 
 BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
@@ -1796,8 +1674,6 @@ FROM
 
 BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
-DECLARE @True Int16
-SET     @True = 1
 
 SELECT
 	r."Id",
@@ -1808,10 +1684,7 @@ SELECT
 FROM
 	"BooleanTable" r
 WHERE
-	CASE
-		WHEN r."Value1" >= r."Value2" THEN 1
-		ELSE 0
-	END = :True
+	r."Value1" >= r."Value2"
 
 BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
@@ -1858,8 +1731,6 @@ FROM
 
 BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
-DECLARE @False Int16
-SET     @False = 0
 
 SELECT
 	r."Id",
@@ -1870,10 +1741,7 @@ SELECT
 FROM
 	"BooleanTable" r
 WHERE
-	CASE
-		WHEN r."Value1" >= r."Value2" THEN 1
-		ELSE 0
-	END = :False
+	r."Value1" < r."Value2"
 
 BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
@@ -1946,8 +1814,6 @@ FROM
 
 BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
-DECLARE @True Int16
-SET     @True = 1
 
 SELECT
 	r."Id",
@@ -1958,10 +1824,7 @@ SELECT
 FROM
 	"BooleanTable" r
 WHERE
-	CASE
-		WHEN r."Value1" >= r."Value4" THEN 1
-		ELSE 0
-	END = :True
+	r."Value1" >= r."Value4"
 
 BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
@@ -2008,8 +1871,6 @@ FROM
 
 BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
-DECLARE @False Int16
-SET     @False = 0
 
 SELECT
 	r."Id",
@@ -2020,10 +1881,7 @@ SELECT
 FROM
 	"BooleanTable" r
 WHERE
-	CASE
-		WHEN r."Value1" >= r."Value4" THEN 1
-		ELSE 0
-	END = :False
+	r."Value1" < r."Value4" OR r."Value4" IS NULL
 
 BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
@@ -2096,8 +1954,6 @@ FROM
 
 BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
-DECLARE @True Int16
-SET     @True = 1
 
 SELECT
 	r."Id",
@@ -2108,10 +1964,7 @@ SELECT
 FROM
 	"BooleanTable" r
 WHERE
-	CASE
-		WHEN r."Value5" >= r."Value4" THEN 1
-		ELSE 0
-	END = :True
+	r."Value5" >= r."Value4"
 
 BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
@@ -2158,8 +2011,6 @@ FROM
 
 BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
-DECLARE @False Int16
-SET     @False = 0
 
 SELECT
 	r."Id",
@@ -2170,10 +2021,7 @@ SELECT
 FROM
 	"BooleanTable" r
 WHERE
-	CASE
-		WHEN r."Value5" >= r."Value4" THEN 1
-		ELSE 0
-	END = :False
+	r."Value5" < r."Value4" OR r."Value5" IS NULL OR r."Value4" IS NULL
 
 BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
@@ -2246,8 +2094,6 @@ FROM
 
 BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
-DECLARE @True Int16
-SET     @True = 1
 
 SELECT
 	r."Id",
@@ -2258,10 +2104,7 @@ SELECT
 FROM
 	"BooleanTable" r
 WHERE
-	CASE
-		WHEN r."Value1" >= r."Value2" THEN 1
-		ELSE 0
-	END <> :True
+	r."Value1" < r."Value2"
 
 BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
@@ -2308,8 +2151,6 @@ FROM
 
 BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
-DECLARE @False Int16
-SET     @False = 0
 
 SELECT
 	r."Id",
@@ -2320,10 +2161,7 @@ SELECT
 FROM
 	"BooleanTable" r
 WHERE
-	CASE
-		WHEN r."Value1" >= r."Value2" THEN 1
-		ELSE 0
-	END <> :False
+	r."Value1" >= r."Value2"
 
 BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
@@ -2394,8 +2232,6 @@ FROM
 
 BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
-DECLARE @True Int16
-SET     @True = 1
 
 SELECT
 	r."Id",
@@ -2406,10 +2242,7 @@ SELECT
 FROM
 	"BooleanTable" r
 WHERE
-	CASE
-		WHEN r."Value1" >= r."Value4" THEN 1
-		ELSE 0
-	END <> :True
+	r."Value1" < r."Value4" OR r."Value4" IS NULL
 
 BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
@@ -2456,8 +2289,6 @@ FROM
 
 BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
-DECLARE @False Int16
-SET     @False = 0
 
 SELECT
 	r."Id",
@@ -2468,10 +2299,7 @@ SELECT
 FROM
 	"BooleanTable" r
 WHERE
-	CASE
-		WHEN r."Value1" >= r."Value4" THEN 1
-		ELSE 0
-	END <> :False
+	r."Value1" >= r."Value4"
 
 BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
@@ -2542,8 +2370,6 @@ FROM
 
 BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
-DECLARE @True Int16
-SET     @True = 1
 
 SELECT
 	r."Id",
@@ -2554,10 +2380,7 @@ SELECT
 FROM
 	"BooleanTable" r
 WHERE
-	CASE
-		WHEN r."Value5" >= r."Value4" THEN 1
-		ELSE 0
-	END <> :True
+	r."Value5" < r."Value4" OR r."Value5" IS NULL OR r."Value4" IS NULL
 
 BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
@@ -2604,8 +2427,6 @@ FROM
 
 BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
-DECLARE @False Int16
-SET     @False = 0
 
 SELECT
 	r."Id",
@@ -2616,10 +2437,7 @@ SELECT
 FROM
 	"BooleanTable" r
 WHERE
-	CASE
-		WHEN r."Value5" >= r."Value4" THEN 1
-		ELSE 0
-	END <> :False
+	r."Value5" >= r."Value4"
 
 BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
@@ -2690,8 +2508,6 @@ FROM
 
 BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
-DECLARE @True Int16
-SET     @True = 1
 
 SELECT
 	r."Id",
@@ -2702,10 +2518,7 @@ SELECT
 FROM
 	"BooleanTable" r
 WHERE
-	CASE
-		WHEN r."Value1" < r."Value2" THEN 1
-		ELSE 0
-	END = :True
+	r."Value1" < r."Value2"
 
 BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
@@ -2752,8 +2565,6 @@ FROM
 
 BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
-DECLARE @False Int16
-SET     @False = 0
 
 SELECT
 	r."Id",
@@ -2764,10 +2575,7 @@ SELECT
 FROM
 	"BooleanTable" r
 WHERE
-	CASE
-		WHEN r."Value1" < r."Value2" THEN 1
-		ELSE 0
-	END = :False
+	r."Value1" >= r."Value2"
 
 BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
@@ -2840,8 +2648,6 @@ FROM
 
 BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
-DECLARE @True Int16
-SET     @True = 1
 
 SELECT
 	r."Id",
@@ -2852,10 +2658,7 @@ SELECT
 FROM
 	"BooleanTable" r
 WHERE
-	CASE
-		WHEN r."Value1" < r."Value4" THEN 1
-		ELSE 0
-	END = :True
+	r."Value1" < r."Value4"
 
 BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
@@ -2902,8 +2705,6 @@ FROM
 
 BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
-DECLARE @False Int16
-SET     @False = 0
 
 SELECT
 	r."Id",
@@ -2914,10 +2715,7 @@ SELECT
 FROM
 	"BooleanTable" r
 WHERE
-	CASE
-		WHEN r."Value1" < r."Value4" THEN 1
-		ELSE 0
-	END = :False
+	r."Value1" >= r."Value4" OR r."Value4" IS NULL
 
 BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
@@ -2990,8 +2788,6 @@ FROM
 
 BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
-DECLARE @True Int16
-SET     @True = 1
 
 SELECT
 	r."Id",
@@ -3002,10 +2798,7 @@ SELECT
 FROM
 	"BooleanTable" r
 WHERE
-	CASE
-		WHEN r."Value5" < r."Value4" THEN 1
-		ELSE 0
-	END = :True
+	r."Value5" < r."Value4"
 
 BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
@@ -3052,8 +2845,6 @@ FROM
 
 BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
-DECLARE @False Int16
-SET     @False = 0
 
 SELECT
 	r."Id",
@@ -3064,10 +2855,7 @@ SELECT
 FROM
 	"BooleanTable" r
 WHERE
-	CASE
-		WHEN r."Value5" < r."Value4" THEN 1
-		ELSE 0
-	END = :False
+	r."Value5" >= r."Value4" OR r."Value5" IS NULL OR r."Value4" IS NULL
 
 BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
@@ -3140,8 +2928,6 @@ FROM
 
 BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
-DECLARE @True Int16
-SET     @True = 1
 
 SELECT
 	r."Id",
@@ -3152,10 +2938,7 @@ SELECT
 FROM
 	"BooleanTable" r
 WHERE
-	CASE
-		WHEN r."Value1" < r."Value2" THEN 1
-		ELSE 0
-	END <> :True
+	r."Value1" >= r."Value2"
 
 BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
@@ -3202,8 +2985,6 @@ FROM
 
 BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
-DECLARE @False Int16
-SET     @False = 0
 
 SELECT
 	r."Id",
@@ -3214,10 +2995,7 @@ SELECT
 FROM
 	"BooleanTable" r
 WHERE
-	CASE
-		WHEN r."Value1" < r."Value2" THEN 1
-		ELSE 0
-	END <> :False
+	r."Value1" < r."Value2"
 
 BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
@@ -3288,8 +3066,6 @@ FROM
 
 BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
-DECLARE @True Int16
-SET     @True = 1
 
 SELECT
 	r."Id",
@@ -3300,10 +3076,7 @@ SELECT
 FROM
 	"BooleanTable" r
 WHERE
-	CASE
-		WHEN r."Value1" < r."Value4" THEN 1
-		ELSE 0
-	END <> :True
+	r."Value1" >= r."Value4" OR r."Value4" IS NULL
 
 BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
@@ -3350,8 +3123,6 @@ FROM
 
 BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
-DECLARE @False Int16
-SET     @False = 0
 
 SELECT
 	r."Id",
@@ -3362,10 +3133,7 @@ SELECT
 FROM
 	"BooleanTable" r
 WHERE
-	CASE
-		WHEN r."Value1" < r."Value4" THEN 1
-		ELSE 0
-	END <> :False
+	r."Value1" < r."Value4"
 
 BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
@@ -3436,8 +3204,6 @@ FROM
 
 BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
-DECLARE @True Int16
-SET     @True = 1
 
 SELECT
 	r."Id",
@@ -3448,10 +3214,7 @@ SELECT
 FROM
 	"BooleanTable" r
 WHERE
-	CASE
-		WHEN r."Value5" < r."Value4" THEN 1
-		ELSE 0
-	END <> :True
+	r."Value5" >= r."Value4" OR r."Value5" IS NULL OR r."Value4" IS NULL
 
 BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
@@ -3498,8 +3261,6 @@ FROM
 
 BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
-DECLARE @False Int16
-SET     @False = 0
 
 SELECT
 	r."Id",
@@ -3510,10 +3271,7 @@ SELECT
 FROM
 	"BooleanTable" r
 WHERE
-	CASE
-		WHEN r."Value5" < r."Value4" THEN 1
-		ELSE 0
-	END <> :False
+	r."Value5" < r."Value4"
 
 BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
@@ -3584,8 +3342,6 @@ FROM
 
 BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
-DECLARE @True Int16
-SET     @True = 1
 
 SELECT
 	r."Id",
@@ -3596,10 +3352,7 @@ SELECT
 FROM
 	"BooleanTable" r
 WHERE
-	CASE
-		WHEN r."Value1" <= r."Value2" THEN 1
-		ELSE 0
-	END = :True
+	r."Value1" <= r."Value2"
 
 BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
@@ -3646,8 +3399,6 @@ FROM
 
 BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
-DECLARE @False Int16
-SET     @False = 0
 
 SELECT
 	r."Id",
@@ -3658,10 +3409,7 @@ SELECT
 FROM
 	"BooleanTable" r
 WHERE
-	CASE
-		WHEN r."Value1" <= r."Value2" THEN 1
-		ELSE 0
-	END = :False
+	r."Value1" > r."Value2"
 
 BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
@@ -3734,8 +3482,6 @@ FROM
 
 BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
-DECLARE @True Int16
-SET     @True = 1
 
 SELECT
 	r."Id",
@@ -3746,10 +3492,7 @@ SELECT
 FROM
 	"BooleanTable" r
 WHERE
-	CASE
-		WHEN r."Value1" <= r."Value4" THEN 1
-		ELSE 0
-	END = :True
+	r."Value1" <= r."Value4"
 
 BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
@@ -3796,8 +3539,6 @@ FROM
 
 BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
-DECLARE @False Int16
-SET     @False = 0
 
 SELECT
 	r."Id",
@@ -3808,10 +3549,7 @@ SELECT
 FROM
 	"BooleanTable" r
 WHERE
-	CASE
-		WHEN r."Value1" <= r."Value4" THEN 1
-		ELSE 0
-	END = :False
+	r."Value1" > r."Value4" OR r."Value4" IS NULL
 
 BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
@@ -3884,8 +3622,6 @@ FROM
 
 BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
-DECLARE @True Int16
-SET     @True = 1
 
 SELECT
 	r."Id",
@@ -3896,10 +3632,7 @@ SELECT
 FROM
 	"BooleanTable" r
 WHERE
-	CASE
-		WHEN r."Value5" <= r."Value4" THEN 1
-		ELSE 0
-	END = :True
+	r."Value5" <= r."Value4"
 
 BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
@@ -3946,8 +3679,6 @@ FROM
 
 BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
-DECLARE @False Int16
-SET     @False = 0
 
 SELECT
 	r."Id",
@@ -3958,10 +3689,7 @@ SELECT
 FROM
 	"BooleanTable" r
 WHERE
-	CASE
-		WHEN r."Value5" <= r."Value4" THEN 1
-		ELSE 0
-	END = :False
+	r."Value5" > r."Value4" OR r."Value5" IS NULL OR r."Value4" IS NULL
 
 BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
@@ -4034,8 +3762,6 @@ FROM
 
 BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
-DECLARE @True Int16
-SET     @True = 1
 
 SELECT
 	r."Id",
@@ -4046,10 +3772,7 @@ SELECT
 FROM
 	"BooleanTable" r
 WHERE
-	CASE
-		WHEN r."Value1" <= r."Value2" THEN 1
-		ELSE 0
-	END <> :True
+	r."Value1" > r."Value2"
 
 BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
@@ -4096,8 +3819,6 @@ FROM
 
 BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
-DECLARE @False Int16
-SET     @False = 0
 
 SELECT
 	r."Id",
@@ -4108,10 +3829,7 @@ SELECT
 FROM
 	"BooleanTable" r
 WHERE
-	CASE
-		WHEN r."Value1" <= r."Value2" THEN 1
-		ELSE 0
-	END <> :False
+	r."Value1" <= r."Value2"
 
 BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
@@ -4182,8 +3900,6 @@ FROM
 
 BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
-DECLARE @True Int16
-SET     @True = 1
 
 SELECT
 	r."Id",
@@ -4194,10 +3910,7 @@ SELECT
 FROM
 	"BooleanTable" r
 WHERE
-	CASE
-		WHEN r."Value1" <= r."Value4" THEN 1
-		ELSE 0
-	END <> :True
+	r."Value1" > r."Value4" OR r."Value4" IS NULL
 
 BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
@@ -4244,8 +3957,6 @@ FROM
 
 BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
-DECLARE @False Int16
-SET     @False = 0
 
 SELECT
 	r."Id",
@@ -4256,10 +3967,7 @@ SELECT
 FROM
 	"BooleanTable" r
 WHERE
-	CASE
-		WHEN r."Value1" <= r."Value4" THEN 1
-		ELSE 0
-	END <> :False
+	r."Value1" <= r."Value4"
 
 BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
@@ -4330,8 +4038,6 @@ FROM
 
 BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
-DECLARE @True Int16
-SET     @True = 1
 
 SELECT
 	r."Id",
@@ -4342,10 +4048,7 @@ SELECT
 FROM
 	"BooleanTable" r
 WHERE
-	CASE
-		WHEN r."Value5" <= r."Value4" THEN 1
-		ELSE 0
-	END <> :True
+	r."Value5" > r."Value4" OR r."Value5" IS NULL OR r."Value4" IS NULL
 
 BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
@@ -4392,8 +4095,6 @@ FROM
 
 BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
-DECLARE @False Int16
-SET     @False = 0
 
 SELECT
 	r."Id",
@@ -4404,10 +4105,7 @@ SELECT
 FROM
 	"BooleanTable" r
 WHERE
-	CASE
-		WHEN r."Value5" <= r."Value4" THEN 1
-		ELSE 0
-	END <> :False
+	r."Value5" <= r."Value4"
 
 BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
