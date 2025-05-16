@@ -26,15 +26,15 @@ VALUES
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
-DECLARE @name VarChar(8) -- String
-SET     @name = 'Update14'
+DECLARE @name Integer(4) -- Int32
+SET     @name = 8
 DECLARE @idx Integer(4) -- Int32
 SET     @idx = 4
 
 UPDATE
 	"Person" "t1"
 SET
-	"LastName" = RTrim(Char(CHARACTER_LENGTH(CAST(@name AS NVarChar(8)),CODEUNITS32) + CAST(@idx AS Int)))
+	"LastName" = RTrim(Char(CAST(@name AS Int) + CAST(@idx AS Int)))
 WHERE
 	"t1"."FirstName" LIKE 'Update14%' ESCAPE '~'
 

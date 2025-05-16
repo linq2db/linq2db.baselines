@@ -1,7 +1,5 @@
 ﻿BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
-DECLARE @Length Integer -- Int32
-SET     @Length = 4
 
 SELECT
 	p."FirstName",
@@ -12,5 +10,5 @@ SELECT
 FROM
 	"Person" p
 WHERE
-	Length(p."FirstName") = :Length AND p."PersonID" = 1
+	Length(p."FirstName") = 4 AND p."PersonID" = 1
 

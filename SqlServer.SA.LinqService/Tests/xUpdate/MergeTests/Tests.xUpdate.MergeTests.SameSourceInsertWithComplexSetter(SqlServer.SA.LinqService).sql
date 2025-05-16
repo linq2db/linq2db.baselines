@@ -222,8 +222,6 @@ VALUES
 
 BeforeExecute
 -- SqlServer.SA SqlServer.2019
-DECLARE @name NVarChar(4000) -- String
-SET     @name = N'test'
 DECLARE @idx Int -- Int32
 SET     @idx = 6
 
@@ -255,7 +253,7 @@ VALUES
 (
 	10 + [Source].[source_Id],
 	123,
-	Len(@name) + @idx,
+	4 + @idx,
 	[Source].[source_Field2],
 	999,
 	888

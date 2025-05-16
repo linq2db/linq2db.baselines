@@ -220,8 +220,8 @@ VALUES
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
-DECLARE @name VarChar(4) -- String
-SET     @name = 'test'
+DECLARE @name Integer(4) -- Int32
+SET     @name = 4
 DECLARE @idx Integer(4) -- Int32
 SET     @idx = 6
 
@@ -253,7 +253,7 @@ VALUES
 (
 	10 + "Source"."source_Id",
 	123,
-	CHARACTER_LENGTH(CAST(@name AS NVarChar(4)),CODEUNITS32) + CAST(@idx AS Int),
+	CAST(@name AS Int) + CAST(@idx AS Int),
 	"Source"."source_Field2",
 	999,
 	888

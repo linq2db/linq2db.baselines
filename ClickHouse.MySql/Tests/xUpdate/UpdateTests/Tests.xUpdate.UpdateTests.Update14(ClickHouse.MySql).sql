@@ -24,7 +24,7 @@ BeforeExecute
 ALTER TABLE
 	Person
 UPDATE
-	LastName = toString(CHAR_LENGTH('Update14') + 4)
+	LastName = toString(12)
 WHERE
 	startsWith(FirstName, 'Update14')
 

@@ -38,8 +38,8 @@ BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
 DECLARE @id Int32
 SET     @id = 5
-DECLARE @diagnosis VarChar(3) -- String
-SET     @diagnosis = 'abc'
+DECLARE @diagnosis Int32
+SET     @diagnosis = 3
 DECLARE @i Int32
 SET     @i = 0
 
@@ -51,17 +51,17 @@ INSERT INTO `Patient`
 VALUES
 (
 	@id,
-	CAST(Char_Length(@diagnosis) + @i AS CHAR(11))
+	CAST(@diagnosis + @i AS CHAR(11))
 )
 ON DUPLICATE KEY UPDATE
-	`Diagnosis` = CAST(Char_Length(`Diagnosis`) + @i AS CHAR(11))
+	`Diagnosis` = CAST(CHAR_LENGTH(`Diagnosis`) + @i AS CHAR(11))
 
 BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
 DECLARE @id Int32
 SET     @id = 5
-DECLARE @diagnosis VarChar(3) -- String
-SET     @diagnosis = 'abc'
+DECLARE @diagnosis Int32
+SET     @diagnosis = 3
 DECLARE @i Int32
 SET     @i = 1
 
@@ -73,17 +73,17 @@ INSERT INTO `Patient`
 VALUES
 (
 	@id,
-	CAST(Char_Length(@diagnosis) + @i AS CHAR(11))
+	CAST(@diagnosis + @i AS CHAR(11))
 )
 ON DUPLICATE KEY UPDATE
-	`Diagnosis` = CAST(Char_Length(`Diagnosis`) + @i AS CHAR(11))
+	`Diagnosis` = CAST(CHAR_LENGTH(`Diagnosis`) + @i AS CHAR(11))
 
 BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
 DECLARE @id Int32
 SET     @id = 5
-DECLARE @diagnosis VarChar(3) -- String
-SET     @diagnosis = 'abc'
+DECLARE @diagnosis Int32
+SET     @diagnosis = 3
 DECLARE @i Int32
 SET     @i = 2
 
@@ -95,10 +95,10 @@ INSERT INTO `Patient`
 VALUES
 (
 	@id,
-	CAST(Char_Length(@diagnosis) + @i AS CHAR(11))
+	CAST(@diagnosis + @i AS CHAR(11))
 )
 ON DUPLICATE KEY UPDATE
-	`Diagnosis` = CAST(Char_Length(`Diagnosis`) + @i AS CHAR(11))
+	`Diagnosis` = CAST(CHAR_LENGTH(`Diagnosis`) + @i AS CHAR(11))
 
 BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
