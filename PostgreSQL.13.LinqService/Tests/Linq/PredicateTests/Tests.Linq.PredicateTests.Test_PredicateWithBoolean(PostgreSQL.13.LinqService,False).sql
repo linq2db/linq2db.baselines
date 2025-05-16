@@ -1,7 +1,5 @@
 ﻿BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
-DECLARE @True Boolean
-SET     @True = True
 
 SELECT
 	r."Id",
@@ -12,7 +10,7 @@ SELECT
 FROM
 	"BooleanTable" r
 WHERE
-	(r."Value1" = r."Value2") = (:True)
+	r."Value1" = r."Value2"
 
 BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
@@ -54,8 +52,6 @@ FROM
 
 BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
-DECLARE @False Boolean
-SET     @False = False
 
 SELECT
 	r."Id",
@@ -66,7 +62,7 @@ SELECT
 FROM
 	"BooleanTable" r
 WHERE
-	(r."Value1" = r."Value4" AND r."Value4" IS NOT NULL) = (:False)
+	r."Value1" <> r."Value4" OR r."Value4" IS NULL
 
 BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
@@ -134,8 +130,6 @@ FROM
 
 BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
-DECLARE @True Boolean
-SET     @True = True
 
 SELECT
 	r."Id",
@@ -146,7 +140,7 @@ SELECT
 FROM
 	"BooleanTable" r
 WHERE
-	(r."Value1" = r."Value4" AND r."Value4" IS NOT NULL) = (:True)
+	r."Value1" = r."Value4"
 
 BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
@@ -188,8 +182,6 @@ FROM
 
 BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
-DECLARE @False Boolean
-SET     @False = False
 
 SELECT
 	r."Id",
@@ -200,7 +192,7 @@ SELECT
 FROM
 	"BooleanTable" r
 WHERE
-	(r."Value1" = r."Value4" AND r."Value4" IS NOT NULL) = (:False)
+	r."Value1" <> r."Value4" OR r."Value4" IS NULL
 
 BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
@@ -268,8 +260,6 @@ FROM
 
 BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
-DECLARE @True Boolean
-SET     @True = True
 
 SELECT
 	r."Id",
@@ -280,7 +270,7 @@ SELECT
 FROM
 	"BooleanTable" r
 WHERE
-	((r."Value5" = r."Value4" OR r."Value5" IS NULL AND r."Value4" IS NULL) AND NOT (r."Value5" IS NULL AND r."Value4" IS NOT NULL) AND NOT (r."Value4" IS NULL AND r."Value5" IS NOT NULL)) = (:True)
+	r."Value5" = r."Value4" OR r."Value5" IS NULL AND r."Value4" IS NULL
 
 BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
@@ -324,8 +314,6 @@ FROM
 
 BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
-DECLARE @False Boolean
-SET     @False = False
 
 SELECT
 	r."Id",
@@ -336,7 +324,8 @@ SELECT
 FROM
 	"BooleanTable" r
 WHERE
-	((r."Value5" = r."Value4" OR r."Value5" IS NULL AND r."Value4" IS NULL) AND NOT (r."Value5" IS NULL AND r."Value4" IS NOT NULL) AND NOT (r."Value4" IS NULL AND r."Value5" IS NOT NULL)) = (:False)
+	r."Value5" <> r."Value4" OR r."Value5" IS NULL AND r."Value4" IS NOT NULL OR
+	r."Value5" IS NOT NULL AND r."Value4" IS NULL
 
 BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
@@ -404,8 +393,6 @@ FROM
 
 BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
-DECLARE @True Boolean
-SET     @True = True
 
 SELECT
 	r."Id",
@@ -416,7 +403,7 @@ SELECT
 FROM
 	"BooleanTable" r
 WHERE
-	(r."Value1" = r."Value2") <> (:True)
+	r."Value1" <> r."Value2"
 
 BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
@@ -458,8 +445,6 @@ FROM
 
 BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
-DECLARE @False Boolean
-SET     @False = False
 
 SELECT
 	r."Id",
@@ -470,7 +455,7 @@ SELECT
 FROM
 	"BooleanTable" r
 WHERE
-	(r."Value1" = r."Value2") <> (:False)
+	r."Value1" = r."Value2"
 
 BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
@@ -536,8 +521,6 @@ FROM
 
 BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
-DECLARE @True Boolean
-SET     @True = True
 
 SELECT
 	r."Id",
@@ -548,7 +531,7 @@ SELECT
 FROM
 	"BooleanTable" r
 WHERE
-	(r."Value1" = r."Value4" AND r."Value4" IS NOT NULL) <> (:True)
+	r."Value1" <> r."Value4" OR r."Value4" IS NULL
 
 BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
@@ -590,8 +573,6 @@ FROM
 
 BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
-DECLARE @False Boolean
-SET     @False = False
 
 SELECT
 	r."Id",
@@ -602,7 +583,7 @@ SELECT
 FROM
 	"BooleanTable" r
 WHERE
-	(r."Value1" = r."Value4" AND r."Value4" IS NOT NULL) <> (:False)
+	r."Value1" = r."Value4"
 
 BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
@@ -668,8 +649,6 @@ FROM
 
 BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
-DECLARE @True Boolean
-SET     @True = True
 
 SELECT
 	r."Id",
@@ -680,7 +659,8 @@ SELECT
 FROM
 	"BooleanTable" r
 WHERE
-	((r."Value5" = r."Value4" OR r."Value5" IS NULL AND r."Value4" IS NULL) AND NOT (r."Value5" IS NULL AND r."Value4" IS NOT NULL) AND NOT (r."Value4" IS NULL AND r."Value5" IS NOT NULL)) <> (:True)
+	r."Value5" <> r."Value4" OR r."Value5" IS NULL AND r."Value4" IS NOT NULL OR
+	r."Value5" IS NOT NULL AND r."Value4" IS NULL
 
 BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
@@ -722,8 +702,6 @@ FROM
 
 BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
-DECLARE @False Boolean
-SET     @False = False
 
 SELECT
 	r."Id",
@@ -734,7 +712,7 @@ SELECT
 FROM
 	"BooleanTable" r
 WHERE
-	((r."Value5" = r."Value4" OR r."Value5" IS NULL AND r."Value4" IS NULL) AND NOT (r."Value5" IS NULL AND r."Value4" IS NOT NULL) AND NOT (r."Value4" IS NULL AND r."Value5" IS NOT NULL)) <> (:False)
+	r."Value5" = r."Value4" OR r."Value5" IS NULL AND r."Value4" IS NULL
 
 BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
@@ -802,8 +780,6 @@ FROM
 
 BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
-DECLARE @True Boolean
-SET     @True = True
 
 SELECT
 	r."Id",
@@ -814,7 +790,7 @@ SELECT
 FROM
 	"BooleanTable" r
 WHERE
-	(r."Value1" > r."Value2") = (:True)
+	r."Value1" > r."Value2"
 
 BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
@@ -856,8 +832,6 @@ FROM
 
 BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
-DECLARE @False Boolean
-SET     @False = False
 
 SELECT
 	r."Id",
@@ -868,7 +842,7 @@ SELECT
 FROM
 	"BooleanTable" r
 WHERE
-	(r."Value1" > r."Value2") = (:False)
+	r."Value1" <= r."Value2"
 
 BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
@@ -936,8 +910,6 @@ FROM
 
 BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
-DECLARE @True Boolean
-SET     @True = True
 
 SELECT
 	r."Id",
@@ -948,7 +920,7 @@ SELECT
 FROM
 	"BooleanTable" r
 WHERE
-	(r."Value1" > r."Value4" AND r."Value4" IS NOT NULL) = (:True)
+	r."Value1" > r."Value4"
 
 BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
@@ -990,8 +962,6 @@ FROM
 
 BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
-DECLARE @False Boolean
-SET     @False = False
 
 SELECT
 	r."Id",
@@ -1002,7 +972,7 @@ SELECT
 FROM
 	"BooleanTable" r
 WHERE
-	(r."Value1" > r."Value4" AND r."Value4" IS NOT NULL) = (:False)
+	r."Value1" <= r."Value4" OR r."Value4" IS NULL
 
 BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
@@ -1070,8 +1040,6 @@ FROM
 
 BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
-DECLARE @True Boolean
-SET     @True = True
 
 SELECT
 	r."Id",
@@ -1082,7 +1050,7 @@ SELECT
 FROM
 	"BooleanTable" r
 WHERE
-	(r."Value5" > r."Value4" AND r."Value5" IS NOT NULL AND r."Value4" IS NOT NULL) = (:True)
+	r."Value5" > r."Value4"
 
 BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
@@ -1125,8 +1093,6 @@ FROM
 
 BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
-DECLARE @False Boolean
-SET     @False = False
 
 SELECT
 	r."Id",
@@ -1137,7 +1103,7 @@ SELECT
 FROM
 	"BooleanTable" r
 WHERE
-	(r."Value5" > r."Value4" AND r."Value5" IS NOT NULL AND r."Value4" IS NOT NULL) = (:False)
+	r."Value5" <= r."Value4" OR r."Value5" IS NULL OR r."Value4" IS NULL
 
 BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
@@ -1205,8 +1171,6 @@ FROM
 
 BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
-DECLARE @True Boolean
-SET     @True = True
 
 SELECT
 	r."Id",
@@ -1217,7 +1181,7 @@ SELECT
 FROM
 	"BooleanTable" r
 WHERE
-	(r."Value1" > r."Value2") <> (:True)
+	r."Value1" <= r."Value2"
 
 BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
@@ -1259,8 +1223,6 @@ FROM
 
 BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
-DECLARE @False Boolean
-SET     @False = False
 
 SELECT
 	r."Id",
@@ -1271,7 +1233,7 @@ SELECT
 FROM
 	"BooleanTable" r
 WHERE
-	(r."Value1" > r."Value2") <> (:False)
+	r."Value1" > r."Value2"
 
 BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
@@ -1337,8 +1299,6 @@ FROM
 
 BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
-DECLARE @True Boolean
-SET     @True = True
 
 SELECT
 	r."Id",
@@ -1349,7 +1309,7 @@ SELECT
 FROM
 	"BooleanTable" r
 WHERE
-	(r."Value1" > r."Value4" AND r."Value4" IS NOT NULL) <> (:True)
+	r."Value1" <= r."Value4" OR r."Value4" IS NULL
 
 BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
@@ -1391,8 +1351,6 @@ FROM
 
 BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
-DECLARE @False Boolean
-SET     @False = False
 
 SELECT
 	r."Id",
@@ -1403,7 +1361,7 @@ SELECT
 FROM
 	"BooleanTable" r
 WHERE
-	(r."Value1" > r."Value4" AND r."Value4" IS NOT NULL) <> (:False)
+	r."Value1" > r."Value4"
 
 BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
@@ -1469,8 +1427,6 @@ FROM
 
 BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
-DECLARE @True Boolean
-SET     @True = True
 
 SELECT
 	r."Id",
@@ -1481,7 +1437,7 @@ SELECT
 FROM
 	"BooleanTable" r
 WHERE
-	(r."Value5" > r."Value4" AND r."Value5" IS NOT NULL AND r."Value4" IS NOT NULL) <> (:True)
+	r."Value5" <= r."Value4" OR r."Value5" IS NULL OR r."Value4" IS NULL
 
 BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
@@ -1523,8 +1479,6 @@ FROM
 
 BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
-DECLARE @False Boolean
-SET     @False = False
 
 SELECT
 	r."Id",
@@ -1535,7 +1489,7 @@ SELECT
 FROM
 	"BooleanTable" r
 WHERE
-	(r."Value5" > r."Value4" AND r."Value5" IS NOT NULL AND r."Value4" IS NOT NULL) <> (:False)
+	r."Value5" > r."Value4"
 
 BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
@@ -1602,8 +1556,6 @@ FROM
 
 BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
-DECLARE @True Boolean
-SET     @True = True
 
 SELECT
 	r."Id",
@@ -1614,7 +1566,7 @@ SELECT
 FROM
 	"BooleanTable" r
 WHERE
-	(r."Value1" >= r."Value2") = (:True)
+	r."Value1" >= r."Value2"
 
 BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
@@ -1656,8 +1608,6 @@ FROM
 
 BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
-DECLARE @False Boolean
-SET     @False = False
 
 SELECT
 	r."Id",
@@ -1668,7 +1618,7 @@ SELECT
 FROM
 	"BooleanTable" r
 WHERE
-	(r."Value1" >= r."Value2") = (:False)
+	r."Value1" < r."Value2"
 
 BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
@@ -1736,8 +1686,6 @@ FROM
 
 BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
-DECLARE @True Boolean
-SET     @True = True
 
 SELECT
 	r."Id",
@@ -1748,7 +1696,7 @@ SELECT
 FROM
 	"BooleanTable" r
 WHERE
-	(r."Value1" >= r."Value4" AND r."Value4" IS NOT NULL) = (:True)
+	r."Value1" >= r."Value4"
 
 BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
@@ -1790,8 +1738,6 @@ FROM
 
 BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
-DECLARE @False Boolean
-SET     @False = False
 
 SELECT
 	r."Id",
@@ -1802,7 +1748,7 @@ SELECT
 FROM
 	"BooleanTable" r
 WHERE
-	(r."Value1" >= r."Value4" AND r."Value4" IS NOT NULL) = (:False)
+	r."Value1" < r."Value4" OR r."Value4" IS NULL
 
 BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
@@ -1870,8 +1816,6 @@ FROM
 
 BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
-DECLARE @True Boolean
-SET     @True = True
 
 SELECT
 	r."Id",
@@ -1882,7 +1826,7 @@ SELECT
 FROM
 	"BooleanTable" r
 WHERE
-	(r."Value5" >= r."Value4" AND r."Value5" IS NOT NULL AND r."Value4" IS NOT NULL) = (:True)
+	r."Value5" >= r."Value4"
 
 BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
@@ -1925,8 +1869,6 @@ FROM
 
 BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
-DECLARE @False Boolean
-SET     @False = False
 
 SELECT
 	r."Id",
@@ -1937,7 +1879,7 @@ SELECT
 FROM
 	"BooleanTable" r
 WHERE
-	(r."Value5" >= r."Value4" AND r."Value5" IS NOT NULL AND r."Value4" IS NOT NULL) = (:False)
+	r."Value5" < r."Value4" OR r."Value5" IS NULL OR r."Value4" IS NULL
 
 BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
@@ -2005,8 +1947,6 @@ FROM
 
 BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
-DECLARE @True Boolean
-SET     @True = True
 
 SELECT
 	r."Id",
@@ -2017,7 +1957,7 @@ SELECT
 FROM
 	"BooleanTable" r
 WHERE
-	(r."Value1" >= r."Value2") <> (:True)
+	r."Value1" < r."Value2"
 
 BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
@@ -2059,8 +1999,6 @@ FROM
 
 BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
-DECLARE @False Boolean
-SET     @False = False
 
 SELECT
 	r."Id",
@@ -2071,7 +2009,7 @@ SELECT
 FROM
 	"BooleanTable" r
 WHERE
-	(r."Value1" >= r."Value2") <> (:False)
+	r."Value1" >= r."Value2"
 
 BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
@@ -2137,8 +2075,6 @@ FROM
 
 BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
-DECLARE @True Boolean
-SET     @True = True
 
 SELECT
 	r."Id",
@@ -2149,7 +2085,7 @@ SELECT
 FROM
 	"BooleanTable" r
 WHERE
-	(r."Value1" >= r."Value4" AND r."Value4" IS NOT NULL) <> (:True)
+	r."Value1" < r."Value4" OR r."Value4" IS NULL
 
 BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
@@ -2191,8 +2127,6 @@ FROM
 
 BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
-DECLARE @False Boolean
-SET     @False = False
 
 SELECT
 	r."Id",
@@ -2203,7 +2137,7 @@ SELECT
 FROM
 	"BooleanTable" r
 WHERE
-	(r."Value1" >= r."Value4" AND r."Value4" IS NOT NULL) <> (:False)
+	r."Value1" >= r."Value4"
 
 BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
@@ -2269,8 +2203,6 @@ FROM
 
 BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
-DECLARE @True Boolean
-SET     @True = True
 
 SELECT
 	r."Id",
@@ -2281,7 +2213,7 @@ SELECT
 FROM
 	"BooleanTable" r
 WHERE
-	(r."Value5" >= r."Value4" AND r."Value5" IS NOT NULL AND r."Value4" IS NOT NULL) <> (:True)
+	r."Value5" < r."Value4" OR r."Value5" IS NULL OR r."Value4" IS NULL
 
 BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
@@ -2323,8 +2255,6 @@ FROM
 
 BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
-DECLARE @False Boolean
-SET     @False = False
 
 SELECT
 	r."Id",
@@ -2335,7 +2265,7 @@ SELECT
 FROM
 	"BooleanTable" r
 WHERE
-	(r."Value5" >= r."Value4" AND r."Value5" IS NOT NULL AND r."Value4" IS NOT NULL) <> (:False)
+	r."Value5" >= r."Value4"
 
 BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
@@ -2402,8 +2332,6 @@ FROM
 
 BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
-DECLARE @True Boolean
-SET     @True = True
 
 SELECT
 	r."Id",
@@ -2414,7 +2342,7 @@ SELECT
 FROM
 	"BooleanTable" r
 WHERE
-	(r."Value1" < r."Value2") = (:True)
+	r."Value1" < r."Value2"
 
 BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
@@ -2456,8 +2384,6 @@ FROM
 
 BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
-DECLARE @False Boolean
-SET     @False = False
 
 SELECT
 	r."Id",
@@ -2468,7 +2394,7 @@ SELECT
 FROM
 	"BooleanTable" r
 WHERE
-	(r."Value1" < r."Value2") = (:False)
+	r."Value1" >= r."Value2"
 
 BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
@@ -2536,8 +2462,6 @@ FROM
 
 BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
-DECLARE @True Boolean
-SET     @True = True
 
 SELECT
 	r."Id",
@@ -2548,7 +2472,7 @@ SELECT
 FROM
 	"BooleanTable" r
 WHERE
-	(r."Value1" < r."Value4" AND r."Value4" IS NOT NULL) = (:True)
+	r."Value1" < r."Value4"
 
 BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
@@ -2590,8 +2514,6 @@ FROM
 
 BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
-DECLARE @False Boolean
-SET     @False = False
 
 SELECT
 	r."Id",
@@ -2602,7 +2524,7 @@ SELECT
 FROM
 	"BooleanTable" r
 WHERE
-	(r."Value1" < r."Value4" AND r."Value4" IS NOT NULL) = (:False)
+	r."Value1" >= r."Value4" OR r."Value4" IS NULL
 
 BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
@@ -2670,8 +2592,6 @@ FROM
 
 BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
-DECLARE @True Boolean
-SET     @True = True
 
 SELECT
 	r."Id",
@@ -2682,7 +2602,7 @@ SELECT
 FROM
 	"BooleanTable" r
 WHERE
-	(r."Value5" < r."Value4" AND r."Value5" IS NOT NULL AND r."Value4" IS NOT NULL) = (:True)
+	r."Value5" < r."Value4"
 
 BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
@@ -2725,8 +2645,6 @@ FROM
 
 BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
-DECLARE @False Boolean
-SET     @False = False
 
 SELECT
 	r."Id",
@@ -2737,7 +2655,7 @@ SELECT
 FROM
 	"BooleanTable" r
 WHERE
-	(r."Value5" < r."Value4" AND r."Value5" IS NOT NULL AND r."Value4" IS NOT NULL) = (:False)
+	r."Value5" >= r."Value4" OR r."Value5" IS NULL OR r."Value4" IS NULL
 
 BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
@@ -2805,8 +2723,6 @@ FROM
 
 BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
-DECLARE @True Boolean
-SET     @True = True
 
 SELECT
 	r."Id",
@@ -2817,7 +2733,7 @@ SELECT
 FROM
 	"BooleanTable" r
 WHERE
-	(r."Value1" < r."Value2") <> (:True)
+	r."Value1" >= r."Value2"
 
 BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
@@ -2859,8 +2775,6 @@ FROM
 
 BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
-DECLARE @False Boolean
-SET     @False = False
 
 SELECT
 	r."Id",
@@ -2871,7 +2785,7 @@ SELECT
 FROM
 	"BooleanTable" r
 WHERE
-	(r."Value1" < r."Value2") <> (:False)
+	r."Value1" < r."Value2"
 
 BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
@@ -2937,8 +2851,6 @@ FROM
 
 BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
-DECLARE @True Boolean
-SET     @True = True
 
 SELECT
 	r."Id",
@@ -2949,7 +2861,7 @@ SELECT
 FROM
 	"BooleanTable" r
 WHERE
-	(r."Value1" < r."Value4" AND r."Value4" IS NOT NULL) <> (:True)
+	r."Value1" >= r."Value4" OR r."Value4" IS NULL
 
 BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
@@ -2991,8 +2903,6 @@ FROM
 
 BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
-DECLARE @False Boolean
-SET     @False = False
 
 SELECT
 	r."Id",
@@ -3003,7 +2913,7 @@ SELECT
 FROM
 	"BooleanTable" r
 WHERE
-	(r."Value1" < r."Value4" AND r."Value4" IS NOT NULL) <> (:False)
+	r."Value1" < r."Value4"
 
 BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
@@ -3069,8 +2979,6 @@ FROM
 
 BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
-DECLARE @True Boolean
-SET     @True = True
 
 SELECT
 	r."Id",
@@ -3081,7 +2989,7 @@ SELECT
 FROM
 	"BooleanTable" r
 WHERE
-	(r."Value5" < r."Value4" AND r."Value5" IS NOT NULL AND r."Value4" IS NOT NULL) <> (:True)
+	r."Value5" >= r."Value4" OR r."Value5" IS NULL OR r."Value4" IS NULL
 
 BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
@@ -3123,8 +3031,6 @@ FROM
 
 BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
-DECLARE @False Boolean
-SET     @False = False
 
 SELECT
 	r."Id",
@@ -3135,7 +3041,7 @@ SELECT
 FROM
 	"BooleanTable" r
 WHERE
-	(r."Value5" < r."Value4" AND r."Value5" IS NOT NULL AND r."Value4" IS NOT NULL) <> (:False)
+	r."Value5" < r."Value4"
 
 BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
@@ -3187,34 +3093,6 @@ SELECT
 	r."Value5"
 FROM
 	"BooleanTable" r
-
-BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
-
-SELECT
-	t1."Id",
-	t1."Value1",
-	t1."Value2",
-	t1."Value4",
-	t1."Value5"
-FROM
-	"BooleanTable" t1
-
-BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
-DECLARE @True Boolean
-SET     @True = True
-
-SELECT
-	r."Id",
-	r."Value1",
-	r."Value2",
-	r."Value4",
-	r."Value5"
-FROM
-	"BooleanTable" r
-WHERE
-	(r."Value1" <= r."Value2") = (:True)
 
 BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
@@ -3256,8 +3134,6 @@ FROM
 
 BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
-DECLARE @False Boolean
-SET     @False = False
 
 SELECT
 	r."Id",
@@ -3268,7 +3144,33 @@ SELECT
 FROM
 	"BooleanTable" r
 WHERE
-	(r."Value1" <= r."Value2") = (:False)
+	r."Value1" <= r."Value2"
+
+BeforeExecute
+-- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+
+SELECT
+	t1."Id",
+	t1."Value1",
+	t1."Value2",
+	t1."Value4",
+	t1."Value5"
+FROM
+	"BooleanTable" t1
+
+BeforeExecute
+-- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+
+SELECT
+	r."Id",
+	r."Value1",
+	r."Value2",
+	r."Value4",
+	r."Value5"
+FROM
+	"BooleanTable" r
+WHERE
+	r."Value1" > r."Value2"
 
 BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
@@ -3336,8 +3238,6 @@ FROM
 
 BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
-DECLARE @True Boolean
-SET     @True = True
 
 SELECT
 	r."Id",
@@ -3348,7 +3248,7 @@ SELECT
 FROM
 	"BooleanTable" r
 WHERE
-	(r."Value1" <= r."Value4" AND r."Value4" IS NOT NULL) = (:True)
+	r."Value1" <= r."Value4"
 
 BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
@@ -3390,8 +3290,6 @@ FROM
 
 BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
-DECLARE @False Boolean
-SET     @False = False
 
 SELECT
 	r."Id",
@@ -3402,7 +3300,7 @@ SELECT
 FROM
 	"BooleanTable" r
 WHERE
-	(r."Value1" <= r."Value4" AND r."Value4" IS NOT NULL) = (:False)
+	r."Value1" > r."Value4" OR r."Value4" IS NULL
 
 BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
@@ -3470,8 +3368,6 @@ FROM
 
 BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
-DECLARE @True Boolean
-SET     @True = True
 
 SELECT
 	r."Id",
@@ -3482,7 +3378,7 @@ SELECT
 FROM
 	"BooleanTable" r
 WHERE
-	(r."Value5" <= r."Value4" AND r."Value5" IS NOT NULL AND r."Value4" IS NOT NULL) = (:True)
+	r."Value5" <= r."Value4"
 
 BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
@@ -3525,8 +3421,6 @@ FROM
 
 BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
-DECLARE @False Boolean
-SET     @False = False
 
 SELECT
 	r."Id",
@@ -3537,7 +3431,7 @@ SELECT
 FROM
 	"BooleanTable" r
 WHERE
-	(r."Value5" <= r."Value4" AND r."Value5" IS NOT NULL AND r."Value4" IS NOT NULL) = (:False)
+	r."Value5" > r."Value4" OR r."Value5" IS NULL OR r."Value4" IS NULL
 
 BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
@@ -3605,8 +3499,6 @@ FROM
 
 BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
-DECLARE @True Boolean
-SET     @True = True
 
 SELECT
 	r."Id",
@@ -3617,7 +3509,7 @@ SELECT
 FROM
 	"BooleanTable" r
 WHERE
-	(r."Value1" <= r."Value2") <> (:True)
+	r."Value1" > r."Value2"
 
 BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
@@ -3659,8 +3551,6 @@ FROM
 
 BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
-DECLARE @False Boolean
-SET     @False = False
 
 SELECT
 	r."Id",
@@ -3671,7 +3561,7 @@ SELECT
 FROM
 	"BooleanTable" r
 WHERE
-	(r."Value1" <= r."Value2") <> (:False)
+	r."Value1" <= r."Value2"
 
 BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
@@ -3737,8 +3627,6 @@ FROM
 
 BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
-DECLARE @True Boolean
-SET     @True = True
 
 SELECT
 	r."Id",
@@ -3749,7 +3637,7 @@ SELECT
 FROM
 	"BooleanTable" r
 WHERE
-	(r."Value1" <= r."Value4" AND r."Value4" IS NOT NULL) <> (:True)
+	r."Value1" > r."Value4" OR r."Value4" IS NULL
 
 BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
@@ -3791,8 +3679,6 @@ FROM
 
 BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
-DECLARE @False Boolean
-SET     @False = False
 
 SELECT
 	r."Id",
@@ -3803,7 +3689,7 @@ SELECT
 FROM
 	"BooleanTable" r
 WHERE
-	(r."Value1" <= r."Value4" AND r."Value4" IS NOT NULL) <> (:False)
+	r."Value1" <= r."Value4"
 
 BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
@@ -3869,8 +3755,6 @@ FROM
 
 BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
-DECLARE @True Boolean
-SET     @True = True
 
 SELECT
 	r."Id",
@@ -3881,7 +3765,7 @@ SELECT
 FROM
 	"BooleanTable" r
 WHERE
-	(r."Value5" <= r."Value4" AND r."Value5" IS NOT NULL AND r."Value4" IS NOT NULL) <> (:True)
+	r."Value5" > r."Value4" OR r."Value5" IS NULL OR r."Value4" IS NULL
 
 BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
@@ -3923,8 +3807,6 @@ FROM
 
 BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
-DECLARE @False Boolean
-SET     @False = False
 
 SELECT
 	r."Id",
@@ -3935,7 +3817,7 @@ SELECT
 FROM
 	"BooleanTable" r
 WHERE
-	(r."Value5" <= r."Value4" AND r."Value5" IS NOT NULL AND r."Value4" IS NOT NULL) <> (:False)
+	r."Value5" <= r."Value4"
 
 BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
