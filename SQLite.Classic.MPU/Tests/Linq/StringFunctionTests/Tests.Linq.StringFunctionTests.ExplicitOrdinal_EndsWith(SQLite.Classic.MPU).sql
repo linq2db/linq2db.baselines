@@ -35,7 +35,7 @@ FROM
 	[CollatedTable] [r]
 WHERE
 	[r].[CaseSensitive] LIKE '%stString' ESCAPE '~' AND
-	Substr([r].[CaseSensitive], Length('stString') * -1) = 'stString'
+	Substr([r].[CaseSensitive], -8) = 'stString'
 
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
@@ -46,7 +46,7 @@ FROM
 	[CollatedTable] [r]
 WHERE
 	[r].[CaseInsensitive] LIKE '%stString' ESCAPE '~' AND
-	Substr([r].[CaseInsensitive], Length('stString') * -1) = 'stString'
+	Substr([r].[CaseInsensitive], -8) = 'stString'
 
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
@@ -57,7 +57,7 @@ FROM
 	[CollatedTable] [r]
 WHERE
 	[r].[CaseSensitive] LIKE '%ststring' ESCAPE '~' AND
-	Substr([r].[CaseSensitive], Length('ststring') * -1) = 'ststring'
+	Substr([r].[CaseSensitive], -8) = 'ststring'
 
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
@@ -68,5 +68,5 @@ FROM
 	[CollatedTable] [r]
 WHERE
 	[r].[CaseInsensitive] LIKE '%ststring' ESCAPE '~' AND
-	Substr([r].[CaseInsensitive], Length('ststring') * -1) = 'ststring'
+	Substr([r].[CaseInsensitive], -8) = 'ststring'
 
