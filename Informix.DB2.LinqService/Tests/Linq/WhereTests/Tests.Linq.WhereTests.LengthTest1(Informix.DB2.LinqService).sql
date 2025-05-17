@@ -6,7 +6,7 @@ SELECT
 FROM
 	(
 		SELECT
-			Length(p.MiddleName || '.') - 1 as Length_1,
+			CHAR_LENGTH(p.MiddleName || '.') - 1 as Length_1,
 			p.MiddleName
 		FROM
 			Person p

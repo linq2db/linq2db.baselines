@@ -3,7 +3,7 @@
 
 SELECT FIRST 2
 	t.Str,
-	Length(t.Str || '.') - 1
+	CHAR_LENGTH(t.Str || '.') - 1
 FROM
 	TestLengthModel t
 

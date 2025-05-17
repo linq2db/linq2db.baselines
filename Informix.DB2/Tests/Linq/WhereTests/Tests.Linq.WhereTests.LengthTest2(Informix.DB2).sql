@@ -6,7 +6,7 @@ SELECT
 FROM
 	Person nm
 WHERE
-	Length(nm.FirstName || '.') <> 1
+	CHAR_LENGTH(nm.FirstName || '.') <> 1
 
 BeforeExecute
 -- Informix.DB2 Informix

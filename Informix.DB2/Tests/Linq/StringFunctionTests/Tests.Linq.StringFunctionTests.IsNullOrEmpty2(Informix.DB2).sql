@@ -2,7 +2,7 @@
 -- Informix.DB2 Informix
 
 SELECT
-	Length(p.FirstName || '.') = 1
+	CHAR_LENGTH(p.FirstName || '.') = 1
 FROM
 	Person p
 WHERE

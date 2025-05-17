@@ -10,7 +10,7 @@ SELECT
 FROM
 	Person t1
 ORDER BY
-	Length(t1.FirstName || '.') > 5
+	CHAR_LENGTH(t1.FirstName || '.') > 5
 
 BeforeExecute
 -- Informix.DB2 Informix
