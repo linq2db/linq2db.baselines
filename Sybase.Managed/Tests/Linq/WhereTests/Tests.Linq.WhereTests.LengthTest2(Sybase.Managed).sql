@@ -6,7 +6,7 @@ SELECT
 FROM
 	[Person] [nm]
 WHERE
-	CHAR_LENGTH([nm].[FirstName]) <> 0 AND '' <> [nm].[FirstName]
+	CHAR_LENGTH([nm].[FirstName]) <> 0
 
 BeforeExecute
 -- Sybase.Managed Sybase
