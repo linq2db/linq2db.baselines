@@ -222,6 +222,8 @@ VALUES
 
 BeforeExecute
 -- SqlServer.2008.MS SqlServer.2008
+DECLARE @name Int -- Int32
+SET     @name = 4
 DECLARE @idx Int -- Int32
 SET     @idx = 6
 
@@ -249,7 +251,7 @@ WHEN MATCHED THEN
 UPDATE
 SET
 	[Field1] = [Target].[Field1] + [Source].[source_Field1],
-	[Field2] = 4 + @idx,
+	[Field2] = @name + @idx,
 	[Field3] = [Target].[Field3] + [Source].[source_Field3],
 	[Field4] = [Target].[Field4] + [Source].[source_Field4],
 	[Field5] = [Target].[Field5] + [Source].[source_Field5]
