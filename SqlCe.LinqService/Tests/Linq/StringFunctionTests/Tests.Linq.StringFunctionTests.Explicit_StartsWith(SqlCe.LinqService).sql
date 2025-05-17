@@ -6,7 +6,7 @@ SELECT
 FROM
 	[Patient] [r]
 WHERE
-	Convert(VARBINARY(8000), SUBSTRING([r].[Diagnosis], 1, LEN('Hall'))) = Convert(VARBINARY(8000), 'Hall')
+	Convert(VARBINARY(8000), SUBSTRING([r].[Diagnosis], 1, 4)) = Convert(VARBINARY(8000), 'Hall')
 
 BeforeExecute
 -- SqlCe
@@ -16,7 +16,7 @@ SELECT
 FROM
 	[Patient] [r]
 WHERE
-	Convert(VARBINARY(8000), SUBSTRING([r].[Diagnosis], 1, LEN('hall'))) = Convert(VARBINARY(8000), 'hall')
+	Convert(VARBINARY(8000), SUBSTRING([r].[Diagnosis], 1, 4)) = Convert(VARBINARY(8000), 'hall')
 
 BeforeExecute
 -- SqlCe
