@@ -37,6 +37,8 @@ DECLARE @id Int -- Int32
 SET     @id = 5
 DECLARE @i Int -- Int32
 SET     @i = 0
+DECLARE @diagnosis Int -- Int32
+SET     @diagnosis = 3
 
 MERGE INTO [Patient] [t1]
 USING (SELECT @id AS [PersonID]) [s] ON
@@ -56,7 +58,7 @@ WHEN NOT MATCHED THEN
 	VALUES
 	(
 		@id,
-		CAST(3 + @i AS NVarChar(11))
+		CAST(@diagnosis + @i AS NVarChar(11))
 	);
 
 BeforeExecute
@@ -65,6 +67,8 @@ DECLARE @id Int -- Int32
 SET     @id = 5
 DECLARE @i Int -- Int32
 SET     @i = 1
+DECLARE @diagnosis Int -- Int32
+SET     @diagnosis = 3
 
 MERGE INTO [Patient] [t1]
 USING (SELECT @id AS [PersonID]) [s] ON
@@ -84,7 +88,7 @@ WHEN NOT MATCHED THEN
 	VALUES
 	(
 		@id,
-		CAST(3 + @i AS NVarChar(11))
+		CAST(@diagnosis + @i AS NVarChar(11))
 	);
 
 BeforeExecute
@@ -93,6 +97,8 @@ DECLARE @id Int -- Int32
 SET     @id = 5
 DECLARE @i Int -- Int32
 SET     @i = 2
+DECLARE @diagnosis Int -- Int32
+SET     @diagnosis = 3
 
 MERGE INTO [Patient] [t1]
 USING (SELECT @id AS [PersonID]) [s] ON
@@ -112,7 +118,7 @@ WHEN NOT MATCHED THEN
 	VALUES
 	(
 		@id,
-		CAST(3 + @i AS NVarChar(11))
+		CAST(@diagnosis + @i AS NVarChar(11))
 	);
 
 BeforeExecute
