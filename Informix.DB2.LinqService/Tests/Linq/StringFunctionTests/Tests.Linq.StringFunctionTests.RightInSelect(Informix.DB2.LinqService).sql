@@ -2,7 +2,7 @@
 -- Informix.DB2 Informix
 
 SELECT
-	Substr(p.FirstName, Length(p.FirstName || '.') - 3, 3)
+	Substr(p.FirstName, CHAR_LENGTH(p.FirstName || '.') - 3, 3)
 FROM
 	Person p
 WHERE

@@ -6,10 +6,7 @@ SELECT
 FROM
 	(
 		SELECT
-			CASE
-				WHEN '' = [p].[MiddleName] THEN 0
-				ELSE CHAR_LENGTH([p].[MiddleName])
-			END as [Length_1],
+			CHAR_LENGTH([p].[MiddleName]) as [Length_1],
 			[p].[MiddleName]
 		FROM
 			[Person] [p]

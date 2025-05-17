@@ -10,5 +10,5 @@ SELECT
 FROM
 	Person p
 WHERE
-	Length(p.FirstName || '.') = 5 AND p.PersonID = 1
+	CHAR_LENGTH(p.FirstName || '.') = 5 AND p.PersonID = 1
 

@@ -9,6 +9,8 @@ WHERE
 
 BeforeExecute
 -- SqlServer.2016.MS SqlServer.2016
+DECLARE @name Int -- Int32
+SET     @name = 8
 DECLARE @idx Int -- Int32
 SET     @idx = 4
 
@@ -21,7 +23,7 @@ INSERT INTO [Person]
 VALUES
 (
 	N'Insert16',
-	CAST(8 + @idx AS NVarChar(11)),
+	CAST(@name + @idx AS NVarChar(11)),
 	'M'
 )
 

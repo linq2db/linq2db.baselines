@@ -8,6 +8,8 @@ WHERE
 
 BeforeExecute
 -- Informix.DB2 Informix
+DECLARE @name Integer(4) -- Int32
+SET     @name = 8
 DECLARE @idx Integer(4) -- Int32
 SET     @idx = 4
 
@@ -20,7 +22,7 @@ INSERT INTO Person
 VALUES
 (
 	'Insert16',
-	To_Char(8 + @idx::Int),
+	To_Char(@name::Int + @idx::Int),
 	'M'
 )
 

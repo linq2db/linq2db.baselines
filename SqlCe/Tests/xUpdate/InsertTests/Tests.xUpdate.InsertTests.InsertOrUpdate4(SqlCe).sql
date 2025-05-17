@@ -52,6 +52,8 @@ BeforeExecute
 -- SqlCe
 DECLARE @id Int -- Int32
 SET     @id = 5
+DECLARE @diagnosis Int -- Int32
+SET     @diagnosis = 3
 DECLARE @i Int -- Int32
 SET     @i = 0
 
@@ -63,7 +65,7 @@ INSERT INTO [Patient]
 VALUES
 (
 	@id,
-	CAST(3 + @i AS NVarChar(11))
+	CAST(@diagnosis + @i AS NVarChar(11))
 )
 
 BeforeExecute

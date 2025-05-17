@@ -80,7 +80,7 @@ FROM
 			Stone sG
 		WHERE
 			sG.Enabled = 't'::BOOLEAN AND NOT sG.Name LIKE 'level - %' ESCAPE '~' AND
-			Length(sG.ImageFullUrl || '.') - 1 > 0
+			CHAR_LENGTH(sG.ImageFullUrl || '.') - 1 > 0
 		GROUP BY
 			sG.Name
 	) sG_1
@@ -95,6 +95,6 @@ FROM
 				Stone s
 			WHERE
 				s.Enabled = 't'::BOOLEAN AND NOT s.Name LIKE 'level - %' ESCAPE '~' AND
-				Length(s.ImageFullUrl || '.') - 1 > 0
+				CHAR_LENGTH(s.ImageFullUrl || '.') - 1 > 0
 		) t1 ON sG_1.Name = t1.Name AND t1.rn <= 1
 

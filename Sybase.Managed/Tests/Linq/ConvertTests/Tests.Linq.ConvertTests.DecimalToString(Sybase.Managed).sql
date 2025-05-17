@@ -6,6 +6,5 @@ SELECT
 FROM
 	[LinqDataTypes] [p]
 WHERE
-	CHAR_LENGTH(CAST([p].[MoneyValue] AS NVarChar(31))) > 0 AND
-	'' <> CAST([p].[MoneyValue] AS NVarChar(31))
+	CHAR_LENGTH(CAST([p].[MoneyValue] AS NVarChar(31))) > 0
 

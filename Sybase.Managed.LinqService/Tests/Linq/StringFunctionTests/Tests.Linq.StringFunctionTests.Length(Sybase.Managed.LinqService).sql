@@ -10,6 +10,5 @@ SELECT
 FROM
 	[Person] [p]
 WHERE
-	CHAR_LENGTH([p].[FirstName]) = 4 AND '' <> [p].[FirstName] AND
-	[p].[PersonID] = 1
+	CHAR_LENGTH([p].[FirstName]) = 4 AND [p].[PersonID] = 1
 

@@ -2,10 +2,7 @@
 -- Sybase.Managed Sybase
 
 SELECT
-	CASE
-		WHEN '' = [p].[FirstName] THEN 0
-		ELSE CHAR_LENGTH([p].[FirstName])
-	END
+	CHAR_LENGTH([p].[FirstName])
 FROM
 	[Person] [p]
 
