@@ -1,6 +1,6 @@
 ﻿BeforeExecute
 -- Access.Ace.OleDb AccessOleDb
-DECLARE @param Integer(2, 0) -- Int32
+DECLARE @param VarChar(2, 0) -- AnsiString
 SET     @param = 33
 DECLARE @param_1 VarChar(2, 0) -- AnsiString
 SET     @param_1 = 33

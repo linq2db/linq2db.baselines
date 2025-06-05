@@ -1,8 +1,8 @@
 ﻿BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @param Int -- Int32
+DECLARE @param Double
 SET     @param = 33
-DECLARE @param VarChar -- AnsiString
+DECLARE @param Double
 SET     @param = 33
 DECLARE @param Double
 SET     @param = 33
