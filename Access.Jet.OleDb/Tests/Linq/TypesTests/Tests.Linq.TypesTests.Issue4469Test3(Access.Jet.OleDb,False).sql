@@ -1,8 +1,8 @@
 ﻿BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
-DECLARE @param Integer -- Int32
+DECLARE @param Double
 SET     @param = 33
-DECLARE @param_1 VarChar -- AnsiString
+DECLARE @param_1 Double
 SET     @param_1 = 33
 DECLARE @param_2 Double
 SET     @param_2 = 33
