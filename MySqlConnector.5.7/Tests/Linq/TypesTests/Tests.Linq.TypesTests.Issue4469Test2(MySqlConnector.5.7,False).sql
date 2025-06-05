@@ -1,6 +1,6 @@
 ﻿BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-DECLARE @param Int32
+DECLARE @param NewDecimal(2, 0) -- Decimal
 SET     @param = 33
 DECLARE @param_1 NewDecimal(2, 0) -- Decimal
 SET     @param_1 = 33
