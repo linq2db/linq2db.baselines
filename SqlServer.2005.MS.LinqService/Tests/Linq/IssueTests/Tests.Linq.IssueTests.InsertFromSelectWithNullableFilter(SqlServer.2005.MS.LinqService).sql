@@ -22,7 +22,7 @@ FROM
 
 BeforeExecute
 -- SqlServer.2005.MS SqlServer.2005
-DECLARE @cond SmallInt -- Int16
+DECLARE @cond Int -- Int32
 SET     @cond = 1234
 
 INSERT INTO [InsertIssueTest]
