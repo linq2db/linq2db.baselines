@@ -22,7 +22,7 @@ FROM
 
 BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
-DECLARE @cond Smallint -- Int16
+DECLARE @cond Integer -- Int32
 SET     @cond = 1234
 
 INSERT INTO "InsertIssueTest"
