@@ -25,7 +25,7 @@ BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 DECLARE @Property NVarChar(6) -- String
 SET     @Property = 'banana'
-DECLARE @filter  -- Int32
+DECLARE @filter  -- Object
 SET     @filter = 1
 
 UPDATE
