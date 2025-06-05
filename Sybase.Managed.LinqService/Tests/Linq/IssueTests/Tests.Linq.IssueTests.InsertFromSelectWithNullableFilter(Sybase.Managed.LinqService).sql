@@ -22,7 +22,7 @@ FROM
 
 BeforeExecute
 -- Sybase.Managed Sybase
-DECLARE @cond SmallInt -- Int16
+DECLARE @cond Integer -- Int32
 SET     @cond = 1234
 
 INSERT INTO [InsertIssueTest]
