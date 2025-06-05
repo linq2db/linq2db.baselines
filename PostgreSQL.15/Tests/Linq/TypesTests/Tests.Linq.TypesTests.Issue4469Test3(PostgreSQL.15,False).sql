@@ -1,16 +1,14 @@
 ﻿BeforeExecute
 -- PostgreSQL.15 PostgreSQL
-DECLARE @param Integer -- Int32
+DECLARE @param Double
 SET     @param = 33
-DECLARE @param_1 Numeric -- Decimal
+DECLARE @param_1 Double
 SET     @param_1 = 33
-DECLARE @param_2 Double
-SET     @param_2 = 33
 
 SELECT
 	v."Integer"::Float / :param,
 	v."Decimal"::Float / :param_1,
-	v."Double" / :param_2
+	v."Double" / :param
 FROM
 	"Issue4469Table" v
 LIMIT 2
