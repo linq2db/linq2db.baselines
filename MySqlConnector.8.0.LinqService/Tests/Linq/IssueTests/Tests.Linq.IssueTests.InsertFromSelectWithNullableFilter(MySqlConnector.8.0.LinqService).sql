@@ -22,7 +22,7 @@ FROM
 
 BeforeExecute
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-DECLARE @cond Int16
+DECLARE @cond Int32
 SET     @cond = 1234
 
 INSERT INTO `InsertIssueTest`
