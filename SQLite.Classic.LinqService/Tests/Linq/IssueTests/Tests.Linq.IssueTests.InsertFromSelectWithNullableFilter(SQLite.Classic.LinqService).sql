@@ -22,7 +22,7 @@ FROM
 
 BeforeExecute
 -- SQLite.Classic SQLite
-DECLARE @cond  -- Int16
+DECLARE @cond  -- Int32
 SET     @cond = 1234
 
 INSERT INTO [InsertIssueTest]
