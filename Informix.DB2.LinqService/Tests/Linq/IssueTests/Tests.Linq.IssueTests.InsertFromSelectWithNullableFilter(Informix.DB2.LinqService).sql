@@ -22,7 +22,7 @@ FROM
 
 BeforeExecute
 -- Informix.DB2 Informix
-DECLARE @cond SmallInt(2) -- Int16
+DECLARE @cond Integer(2) -- Int32
 SET     @cond = 1234
 
 INSERT INTO InsertIssueTest
