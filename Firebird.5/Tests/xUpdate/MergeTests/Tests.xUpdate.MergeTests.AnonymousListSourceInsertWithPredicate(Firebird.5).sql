@@ -245,14 +245,6 @@ USING (
 	SELECT 5, 10, 4, NULL, NULL, NULL FROM rdb$database
 	UNION ALL
 	SELECT 6, NULL, NULL, NULL, 216, NULL FROM rdb$database) "Source"
-(
-	"source_Key",
-	"source_Field01",
-	"source_Field02",
-	"source_Field03",
-	"source_Field04",
-	"source_Field05"
-)
 ON ("Target"."Id" = "Source"."source_Key")
 
 WHEN NOT MATCHED AND "Source"."source_Field04" = 216 THEN

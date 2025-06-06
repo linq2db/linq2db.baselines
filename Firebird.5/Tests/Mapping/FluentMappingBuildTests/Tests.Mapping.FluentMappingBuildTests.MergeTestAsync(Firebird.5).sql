@@ -46,10 +46,6 @@ BeforeExecute
 MERGE INTO "FluentTemp" "Target"
 USING (
 	SELECT 1 AS "source_ID", CAST('John II' AS VARCHAR(7)) AS "source_Name" FROM rdb$database) "Source"
-(
-	"source_ID",
-	"source_Name"
-)
 ON ("Target".ID = "Source"."source_ID")
 
 WHEN MATCHED THEN

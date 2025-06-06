@@ -53,11 +53,6 @@ USING (
 	WHERE
 		"t".ID = @id
 ) "Source"
-(
-	"source_ID",
-	"source_charDataType",
-	"source_ncharDataType"
-)
 ON ("Target".ID = "Source"."source_ID")
 
 WHEN MATCHED THEN

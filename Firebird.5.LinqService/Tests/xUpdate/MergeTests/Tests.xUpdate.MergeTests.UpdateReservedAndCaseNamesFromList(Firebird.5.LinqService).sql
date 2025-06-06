@@ -243,14 +243,6 @@ USING (
 	SELECT 5, 10, 4, NULL, NULL, NULL FROM rdb$database
 	UNION ALL
 	SELECT 6, NULL, NULL, NULL, 216, NULL FROM rdb$database) "Source"
-(
-	"source_in",
-	"source_join",
-	"source_outer",
-	"source_inner",
-	"source_with",
-	"source_left"
-)
 ON ("Target"."Id" = "Source"."source_in")
 
 WHEN MATCHED AND "Source"."source_with" = 214 THEN

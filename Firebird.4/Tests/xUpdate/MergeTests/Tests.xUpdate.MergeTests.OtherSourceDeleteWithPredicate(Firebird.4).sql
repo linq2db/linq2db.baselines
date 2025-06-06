@@ -228,9 +228,6 @@ USING (
 	FROM
 		"TestMerge2" "t1"
 ) "Source"
-(
-	"source_OtherId"
-)
 ON ("Source"."source_OtherId" = "Target"."Id")
 WHEN MATCHED AND "Target"."Id" = 4 THEN DELETE
 

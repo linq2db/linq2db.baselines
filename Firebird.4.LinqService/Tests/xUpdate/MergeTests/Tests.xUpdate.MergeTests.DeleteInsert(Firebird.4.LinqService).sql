@@ -231,12 +231,6 @@ USING (
 	FROM
 		"TestMerge2" "t1"
 ) "Source"
-(
-	"source_Id",
-	"source_Field1",
-	"source_Field2",
-	"source_Field4"
-)
 ON ("Target"."Id" = "Source"."source_Id")
 WHEN MATCHED THEN DELETE
 

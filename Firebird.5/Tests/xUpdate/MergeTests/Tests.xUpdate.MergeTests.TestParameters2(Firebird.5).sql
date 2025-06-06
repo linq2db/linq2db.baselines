@@ -251,9 +251,6 @@ USING (
 	SELECT 5 FROM rdb$database
 	UNION ALL
 	SELECT 6 FROM rdb$database) "Source"
-(
-	"source_Id"
-)
 ON ("Target"."Id" = "Source"."source_Id" OR "Target"."Id" = @Val4)
 
 WHEN NOT MATCHED BY SOURCE AND "Target"."Id" = CAST(@Val3 AS Int) THEN UPDATE

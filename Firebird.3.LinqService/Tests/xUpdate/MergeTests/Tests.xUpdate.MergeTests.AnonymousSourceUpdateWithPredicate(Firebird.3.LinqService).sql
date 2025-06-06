@@ -233,14 +233,6 @@ USING (
 	FROM
 		"TestMerge2" "t1"
 ) "Source"
-(
-	"source_Key",
-	"source_Field01",
-	"source_Field02",
-	"source_Field03",
-	"source_Field04",
-	"source_Field05"
-)
 ON ("Target"."Id" = "Source"."source_Key")
 
 WHEN MATCHED AND "Source"."source_Field04" = 214 THEN

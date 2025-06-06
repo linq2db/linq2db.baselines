@@ -223,17 +223,10 @@ BeforeExecute
 
 MERGE INTO "TestMerge1" "Target"
 USING (
-	SELECT NULL, NULL, NULL, NULL, NULL
+	SELECT NULL "source_Id", NULL "source_Field3", NULL "source_Field1", NULL "source_Field2", NULL "source_Field4"
 	FROM rdb$database	WHERE 1 = 0
 )
  "Source"
-(
-	"source_Id",
-	"source_Field3",
-	"source_Field1",
-	"source_Field2",
-	"source_Field4"
-)
 ON ("Target"."Id" = "Source"."source_Id" AND "Source"."source_Field3" IS NOT NULL)
 
 WHEN NOT MATCHED THEN

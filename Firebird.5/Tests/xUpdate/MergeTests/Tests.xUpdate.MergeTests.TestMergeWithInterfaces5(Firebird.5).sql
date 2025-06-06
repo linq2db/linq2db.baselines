@@ -9,10 +9,6 @@ USING (
 	FROM
 		"ReviewIndexes" "t1"
 ) "Source"
-(
-	"source_Id",
-	"source_Value"
-)
 ON ("Target"."Id" = "Source"."source_Id")
 
 WHEN MATCHED THEN

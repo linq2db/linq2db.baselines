@@ -223,13 +223,10 @@ BeforeExecute
 
 MERGE INTO "TestMerge1" "Target"
 USING (
-	SELECT NULL
+	SELECT NULL "source_ID"
 	FROM rdb$database	WHERE 1 = 0
 )
  "Source"
-(
-	"source_ID"
-)
 ON ("Target"."Id" = "Source"."source_ID")
 
 WHEN NOT MATCHED THEN

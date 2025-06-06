@@ -231,10 +231,6 @@ USING (
 	FROM
 		"TestMerge2" "t1"
 ) "Source"
-(
-	"source_Id",
-	"source_Val"
-)
 ON ("Target"."Id" = "Source"."source_Id" AND "Source"."source_Val" IS NOT NULL)
 
 WHEN MATCHED THEN

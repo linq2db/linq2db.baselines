@@ -722,12 +722,6 @@ USING (
 	SELECT 253, 254, 255, 257 FROM rdb$database
 	UNION ALL
 	SELECT 254, 255, 256, 258 FROM rdb$database) "Source"
-(
-	"source_Id",
-	"source_Field1",
-	"source_Field2",
-	"source_Field4"
-)
 ON ("Target"."Id" = "Source"."source_Id")
 
 WHEN NOT MATCHED THEN

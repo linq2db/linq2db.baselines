@@ -5,9 +5,9 @@ SELECT
 	t."Id",
 	(
 		SELECT
-			t1
+			t1.value
 		FROM
-			UNNEST(t."StrArray") t1
+			UNNEST(t."StrArray") t1(value)
 		LIMIT 1
 	)
 FROM

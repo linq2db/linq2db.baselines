@@ -25,6 +25,6 @@ WHERE
 						THEN true
 						ELSE false
 					END AS result
-			) t1
+			) t1(value)
 	)
 

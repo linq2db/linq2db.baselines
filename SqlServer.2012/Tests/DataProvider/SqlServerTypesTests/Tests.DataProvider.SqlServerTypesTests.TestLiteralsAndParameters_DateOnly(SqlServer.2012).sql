@@ -18,7 +18,7 @@ SELECT
 FROM
 	(
 		select 1 as one
-	) [x]
+	) [x]([value])
 		CROSS JOIN (VALUES
 			(@value)
 		) [y]([Value])
@@ -43,7 +43,7 @@ SELECT
 FROM
 	(
 		select 1 as one
-	) [x]
+	) [x]([value])
 		CROSS JOIN (VALUES
 			(@value)
 		) [y]([Value])
@@ -68,7 +68,7 @@ SELECT
 FROM
 	(
 		select 1 as one
-	) [x]
+	) [x]([value])
 		CROSS JOIN (VALUES
 			(@value)
 		) [y]([Value])
@@ -93,7 +93,7 @@ SELECT
 FROM
 	(
 		select 1 as one
-	) [x]
+	) [x]([value])
 		CROSS JOIN (VALUES
 			(@value)
 		) [y]([Value])
@@ -118,7 +118,7 @@ SELECT
 FROM
 	(
 		select 1 as one
-	) [x]
+	) [x]([value])
 		CROSS JOIN (VALUES
 			(@value)
 		) [y]([Value])
@@ -143,7 +143,7 @@ SELECT
 FROM
 	(
 		select 1 as one
-	) [x]
+	) [x]([value])
 		CROSS JOIN (VALUES
 			(@value)
 		) [y]([Value])
@@ -168,7 +168,7 @@ SELECT
 FROM
 	(
 		select 1 as one
-	) [x]
+	) [x]([value])
 		CROSS JOIN (VALUES
 			(@value)
 		) [y]([Value])
@@ -193,7 +193,7 @@ SELECT
 FROM
 	(
 		select 1 as one
-	) [x]
+	) [x]([value])
 		CROSS JOIN (VALUES
 			(@value)
 		) [y]([Value])

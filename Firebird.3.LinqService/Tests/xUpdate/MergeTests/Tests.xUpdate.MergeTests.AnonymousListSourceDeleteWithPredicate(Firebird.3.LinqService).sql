@@ -243,9 +243,6 @@ USING (
 	SELECT 5 FROM rdb$database
 	UNION ALL
 	SELECT 6 FROM rdb$database) "Source"
-(
-	"source_Key"
-)
 ON ("Source"."source_Key" = "Target"."Id")
 WHEN MATCHED AND "Source"."source_Key" = 4 THEN DELETE
 

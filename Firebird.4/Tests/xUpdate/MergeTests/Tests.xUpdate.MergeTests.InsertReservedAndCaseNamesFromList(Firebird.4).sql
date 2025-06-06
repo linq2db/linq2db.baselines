@@ -243,14 +243,6 @@ USING (
 	SELECT 5, 10, 4, NULL, NULL, NULL FROM rdb$database
 	UNION ALL
 	SELECT 6, NULL, NULL, NULL, 216, NULL FROM rdb$database) "Source"
-(
-	"source_as",
-	"source_take",
-	"source_skip",
-	"source_Skip_1",
-	"source_insert",
-	"source_SELECT"
-)
 ON ("Target"."Id" = "Source"."source_as")
 
 WHEN NOT MATCHED AND "Source"."source_insert" = 216 THEN
