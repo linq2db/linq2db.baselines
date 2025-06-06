@@ -6,7 +6,7 @@ SET     @offset = -1
 UPDATE
 	"Issue4963Table" "t1"
 SET
-	"Field" = CAST(CAST("t1"."Field" AS Int) + @offset AS SmallInt)
+	"Field" = CAST(CAST("t1"."Field" AS Int) + CAST(@offset AS Int) AS SmallInt)
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
