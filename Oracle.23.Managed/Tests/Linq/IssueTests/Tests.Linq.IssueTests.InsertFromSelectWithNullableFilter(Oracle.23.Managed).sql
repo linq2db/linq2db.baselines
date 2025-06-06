@@ -22,8 +22,8 @@ FROM
 
 BeforeExecute
 -- Oracle.23.Managed Oracle.Managed Oracle12
-DECLARE @cond Int32
-SET     @cond = 1234
+DECLARE @p Int32
+SET     @p = 1234
 
 INSERT INTO "InsertIssueTest"
 (
@@ -41,7 +41,7 @@ FROM
 			"InsertIssueTest" t1
 				INNER JOIN "InsertIssueTest" a_Association ON t1.ID = a_Association."intDataType"
 		WHERE
-			CAST(t1.ID AS Int) = :cond
+			CAST(t1.ID AS Int) = :p
 	) t2
 
 BeforeExecute
