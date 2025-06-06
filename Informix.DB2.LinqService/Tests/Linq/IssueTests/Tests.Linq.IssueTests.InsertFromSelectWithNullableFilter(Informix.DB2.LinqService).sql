@@ -22,8 +22,8 @@ FROM
 
 BeforeExecute
 -- Informix.DB2 Informix
-DECLARE @cond Integer(2) -- Int32
-SET     @cond = 1234
+DECLARE @p Integer(4) -- Int32
+SET     @p = 1234
 
 INSERT INTO InsertIssueTest
 (
@@ -41,7 +41,7 @@ FROM
 			InsertIssueTest t1
 				INNER JOIN InsertIssueTest a_Association ON t1.ID = a_Association.intDataType
 		WHERE
-			t1.ID = @cond
+			t1.ID = @p
 	) t2
 
 BeforeExecute
