@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- MySql.8.0 MySql.8.0.MySql.Data MySql80
+-- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 
 SELECT
 	`p`.`FirstName`,
@@ -10,6 +10,6 @@ SELECT
 FROM
 	`Person` `p`
 		INNER JOIN (
-			SELECT 1 AS "value" FROM Person
+			SELECT 1 FROM Person
 		) `s`(`value`) ON `s`.`value` = `p`.`PersonID`
 
