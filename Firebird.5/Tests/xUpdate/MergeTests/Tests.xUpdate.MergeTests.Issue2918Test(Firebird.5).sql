@@ -28,10 +28,6 @@ USING (
 				"patr_1"."UserId" = @userId AND "patr_1"."PatentId" = "pa"."PatentId"
 		)
 ) "Source"
-(
-	"source_PatentId",
-	"source_TechnicalReviewersText"
-)
 ON ("Target"."PatentId" = "Source"."source_PatentId")
 
 WHEN MATCHED THEN

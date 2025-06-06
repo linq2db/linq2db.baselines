@@ -231,12 +231,6 @@ USING (
 	FROM
 		"TestMerge2" "t1"
 ) "Source"
-(
-	"source_Id",
-	"source_Field1",
-	"source_Field2",
-	"source_Field3"
-)
 ON ("Source"."source_Id" = 3)
 
 WHEN MATCHED THEN

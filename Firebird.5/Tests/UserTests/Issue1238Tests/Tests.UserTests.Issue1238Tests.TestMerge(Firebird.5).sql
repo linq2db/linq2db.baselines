@@ -12,11 +12,6 @@ BeforeExecute
 MERGE INTO "InheritanceParent" "Target"
 USING (
 	SELECT 143 AS "source_Key1", NULL AS "source_Key2", 1 AS "source_Data" FROM rdb$database) "Source"
-(
-	"source_Key1",
-	"source_Key2",
-	"source_Data"
-)
 ON ("Target"."InheritanceParentId" = "Source"."source_Key1" AND
 ("Target"."Name" = "Source"."source_Key2" OR "Target"."Name" IS NULL AND "Source"."source_Key2" IS NULL))
 
@@ -53,11 +48,6 @@ BeforeExecute
 MERGE INTO "InheritanceParent" "Target"
 USING (
 	SELECT 143 AS "source_Key1", NULL AS "source_Key2", 1 AS "source_Data" FROM rdb$database) "Source"
-(
-	"source_Key1",
-	"source_Key2",
-	"source_Data"
-)
 ON ("Target"."InheritanceParentId" = "Source"."source_Key1" AND
 ("Target"."Name" = "Source"."source_Key2" OR "Target"."Name" IS NULL AND "Source"."source_Key2" IS NULL))
 
