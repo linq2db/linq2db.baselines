@@ -8,10 +8,8 @@ SELECT
 	`p`.`MiddleName`,
 	`p`.`Gender`
 FROM
-	`Person` `p`,
-	(
-		SELECT 1 AS "value" FROM Person
-	) `s`
-WHERE
-	`s`.`value` = 1
+	`Person` `p`
+		INNER JOIN (
+			SELECT 1 AS "value" FROM Person
+		) `s` ON `s`.`value` = `p`.`PersonID`
 
