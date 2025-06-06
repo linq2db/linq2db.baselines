@@ -109,11 +109,6 @@ USING (
 		"Parent" "r"
 			CROSS JOIN "Child" "t2"
 ) "Source"
-(
-	"source_ResultId",
-	"source_LeftId",
-	"source_RightId"
-)
 ON ("Target"."GrandChildID" = "Source"."source_ResultId")
 
 WHEN NOT MATCHED THEN

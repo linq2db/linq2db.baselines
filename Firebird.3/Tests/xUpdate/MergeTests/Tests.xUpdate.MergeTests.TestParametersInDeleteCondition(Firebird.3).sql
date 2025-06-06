@@ -230,9 +230,6 @@ USING (
 	FROM
 		"TestMerge2" "t1"
 ) "Source"
-(
-	"source_Id"
-)
 ON ("Target"."Id" = "Source"."source_Id")
 WHEN MATCHED AND "Source"."source_Id" = CAST(@param AS Int) THEN DELETE
 

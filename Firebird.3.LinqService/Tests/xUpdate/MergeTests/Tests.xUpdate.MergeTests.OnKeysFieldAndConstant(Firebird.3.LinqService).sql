@@ -230,9 +230,6 @@ USING (
 	WHERE
 		"s"."Field1" IS NOT NULL AND "s"."Field2" IS NOT NULL
 ) "Source"
-(
-	"source_Field1"
-)
 ON (("Target"."Field1" = "Source"."source_Field1" OR "Target"."Field1" IS NULL AND "Source"."source_Field1" IS NULL) AND
 "Target"."Field2" = 6)
 

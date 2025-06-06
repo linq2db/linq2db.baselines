@@ -6,10 +6,6 @@ USING (
 	SELECT 1 AS "source_Id", 1 AS "source_Value" FROM rdb$database
 	UNION ALL
 	SELECT 2, 2 FROM rdb$database) "Source"
-(
-	"source_Id",
-	"source_Value"
-)
 ON ("Target"."Id" = "Source"."source_Id")
 
 WHEN MATCHED THEN
@@ -50,10 +46,6 @@ USING (
 	SELECT 2, 4 FROM rdb$database
 	UNION ALL
 	SELECT 3, 3 FROM rdb$database) "Source"
-(
-	"source_Id",
-	"source_Value"
-)
 ON ("Target"."Id" = "Source"."source_Id")
 
 WHEN MATCHED THEN

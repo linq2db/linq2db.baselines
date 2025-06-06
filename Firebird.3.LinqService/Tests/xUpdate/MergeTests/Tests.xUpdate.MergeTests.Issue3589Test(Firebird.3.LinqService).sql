@@ -234,13 +234,6 @@ USING (
 	WHERE
 		"r"."Id" = 1
 ) "Source"
-(
-	"source_Id",
-	"source_Field1",
-	"source_Field2",
-	"source_Field4",
-	"source_Field3"
-)
 ON (1 = 1)
 
 WHEN NOT MATCHED THEN

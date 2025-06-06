@@ -21,12 +21,6 @@ USING (
 			LEFT JOIN "Patient" "Target_1" ON "Target_1"."PersonID" = "t1"."PersonID" AND "t1"."Diagnosis" LIKE '%very%' ESCAPE '~'
 			LEFT JOIN "Person" "a_Person_1" ON "Target_1"."PersonID" = "a_Person_1"."PersonID"
 ) "Source"
-(
-	"source_PersonID",
-	"source_Diagnosis",
-	"source_Person_FirstName",
-	"target_Person_FirstName"
-)
 ON ("Target"."PersonID" = "Source"."source_PersonID" AND
 "Source"."source_Diagnosis" LIKE '%very%' ESCAPE '~')
 WHEN MATCHED AND "Source"."source_Person_FirstName" = 'first 4' AND
