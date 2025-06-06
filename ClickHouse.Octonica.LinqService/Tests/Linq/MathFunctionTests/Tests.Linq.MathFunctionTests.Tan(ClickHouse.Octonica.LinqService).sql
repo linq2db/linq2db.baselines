@@ -6,7 +6,7 @@ SELECT
 FROM
 	(
 		SELECT
-			Floor(Tan(toFloat64(p.MoneyValue) / toFloat64(toDecimal64('15', 10))) * toFloat64(15)) as Value_1
+			Floor(Tan(toFloat64(p.MoneyValue) / toFloat64(15)) * toFloat64(15)) as Value_1
 		FROM
 			LinqDataTypes p
 	) t
