@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2016
+-- SqlServer.2016.MS SqlServer.2016
 
 SELECT
 	[p].[FirstName],
@@ -10,6 +10,6 @@ SELECT
 FROM
 	[Person] [p]
 		INNER JOIN (
-			SELECT 1 AS "value" FROM Person
+			SELECT 1 FROM Person
 		) [s]([value]) ON [s].[value] = [p].[PersonID]
 
