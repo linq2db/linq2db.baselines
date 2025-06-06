@@ -22,8 +22,8 @@ FROM
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @cond Int -- Int32
-SET     @cond = 1234
+DECLARE @p Int -- Int32
+SET     @p = 1234
 
 INSERT INTO "InsertIssueTest"
 (
