@@ -3,17 +3,10 @@
 
 MERGE INTO "Person" "Target"
 USING (
-	SELECT NULL, NULL, NULL, NULL, NULL
+	SELECT NULL "source_ID", NULL "source_FirstName", NULL "source_LastName", NULL "source_MiddleName", NULL "source_Gender"
 	FROM rdb$database	WHERE 1 = 0
 )
  "Source"
-(
-	"source_ID",
-	"source_FirstName",
-	"source_LastName",
-	"source_MiddleName",
-	"source_Gender"
-)
 ON ("Target"."PersonID" = "Source"."source_ID")
 
 WHEN MATCHED THEN
