@@ -8,9 +8,6 @@ USING (
 	SELECT 2 FROM rdb$database
 	UNION ALL
 	SELECT 3 FROM rdb$database) "Source"
-(
-	"source_ID"
-)
 ON ("Target".ID = "Source"."source_ID")
 
 WHEN NOT MATCHED THEN

@@ -17,10 +17,6 @@ USING (
 		"Person" "t1"
 			INNER JOIN "Patient" "a_Patient" ON "t1"."PersonID" = "a_Patient"."PersonID"
 ) "Source"
-(
-	"source_ID",
-	"source_Patient_Diagnosis"
-)
 ON ("Target"."PersonID" = "Source"."source_ID" AND "Target"."FirstName" <> 'first 3')
 
 WHEN NOT MATCHED THEN

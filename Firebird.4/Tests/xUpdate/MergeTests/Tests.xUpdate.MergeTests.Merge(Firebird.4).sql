@@ -17,18 +17,6 @@ USING (
 	FROM
 		"LinqDataTypes" "t1"
 ) "Source"
-(
-	"source_ID",
-	"source_MoneyValue",
-	"source_DateTimeValue",
-	"source_DateTimeValue2",
-	"source_BoolValue",
-	"source_GuidValue",
-	"source_SmallIntValue",
-	"source_IntValue",
-	"source_BigIntValue",
-	"source_StringValue"
-)
 ON ("Target".ID = "Source"."source_ID")
 
 WHEN MATCHED THEN
