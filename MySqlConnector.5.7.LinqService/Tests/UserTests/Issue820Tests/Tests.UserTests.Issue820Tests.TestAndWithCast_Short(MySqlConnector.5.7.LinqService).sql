@@ -1,6 +1,6 @@
 ﻿BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-DECLARE @param Int16
+DECLARE @param Int32
 SET     @param = 1
 
 SELECT
