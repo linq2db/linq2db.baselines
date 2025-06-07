@@ -16,7 +16,7 @@ UPDATE
 SET
 	Value1 = (
 		SELECT
-			(UpdatedEntities.Value1 * t2.Value1) * @int1::Int
+			(UpdatedEntities.Value1 * t2.Value1) * @int1
 		FROM
 			(
 				SELECT FIRST @take
@@ -33,7 +33,7 @@ SET
 	),
 	Value2 = (
 		SELECT
-			(UpdatedEntities.Value2 * t3.Value2) * @int2::Int
+			(UpdatedEntities.Value2 * t3.Value2) * @int2
 		FROM
 			(
 				SELECT FIRST @take
@@ -50,7 +50,7 @@ SET
 	),
 	Value3 = (
 		SELECT
-			(UpdatedEntities.Value3 * t4.Value3) * @int3::Int
+			(UpdatedEntities.Value3 * t4.Value3) * @int3
 		FROM
 			(
 				SELECT FIRST @take

@@ -18,7 +18,7 @@ FROM
 		WHERE
 			p.ParentID = 1
 	) m_1
-		INNER JOIN Child d ON m_1.ParentID = d.ParentID - @n::Int
+		INNER JOIN Child d ON m_1.ParentID = d.ParentID - @n
 
 BeforeExecute
 DisposeTransaction
