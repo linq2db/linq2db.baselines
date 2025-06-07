@@ -4,7 +4,7 @@ DECLARE @Length Int -- Int32
 SET     @Length = 0
 
 SELECT
-	Len([p].[FirstName]) + CVar(?)
+	Len([p].[FirstName]) + ?
 FROM
 	[Person] [p]
 
