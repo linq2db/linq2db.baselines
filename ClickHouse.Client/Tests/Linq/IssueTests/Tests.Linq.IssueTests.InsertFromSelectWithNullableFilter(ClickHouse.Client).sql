@@ -39,7 +39,7 @@ FROM
 			InsertIssueTest t1
 				INNER JOIN InsertIssueTest a_Association ON t1.ID = a_Association.intDataType
 		WHERE
-			t1.ID = toInt16(1234)
+			t1.ID = 1234
 	) t2
 
 BeforeExecute
