@@ -249,7 +249,7 @@ WHEN MATCHED THEN
 UPDATE
 SET
 	"Field1" = "Target"."Field1" + "Source"."source_Field1",
-	"Field2" = CHARACTER_LENGTH(CAST(@name AS NVarChar(4)),CODEUNITS32) + CAST(@idx AS Int),
+	"Field2" = CHARACTER_LENGTH(@name,CODEUNITS32) + @idx,
 	"Field3" = "Target"."Field3" + "Source"."source_Field3",
 	"Field4" = "Target"."Field4" + "Source"."source_Field4",
 	"Field5" = "Target"."Field5" + "Source"."source_Field5"

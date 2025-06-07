@@ -8,9 +8,9 @@ DECLARE @param_2 (2, 0) -- Decimal
 SET     @param_2 = 33
 
 SELECT
-	Decimal("v"."Integer", 18, 10) / CAST(@param AS Int),
-	"v"."Decimal" / CAST(@param_1 AS Decimal(10, 5)),
-	"v"."Double" / CAST(@param_2 AS Decimal(18, 10))
+	Decimal("v"."Integer", 18, 10) / @param,
+	"v"."Decimal" / @param_1,
+	"v"."Double" / @param_2
 FROM
 	"Issue4469Table" "v"
 FETCH NEXT 2 ROWS ONLY

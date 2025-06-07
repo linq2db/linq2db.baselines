@@ -15,7 +15,7 @@ WHERE
 		FROM
 			"Child" "c_1"
 		WHERE
-			"p"."ParentID" + CAST(@n AS Int) = "c_1"."ParentID"
+			"p"."ParentID" + @n = "c_1"."ParentID"
 	)
 
 BeforeExecute
