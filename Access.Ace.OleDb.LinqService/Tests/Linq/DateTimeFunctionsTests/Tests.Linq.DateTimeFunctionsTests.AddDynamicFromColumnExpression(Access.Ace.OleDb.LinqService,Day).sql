@@ -6,7 +6,7 @@ DECLARE @part2 Integer -- Int32
 SET     @part2 = 4
 
 SELECT
-	DateAdd('d', ([t].[SmallIntValue] + CVar(@part1)) - CVar(@part2), [t].[DateTimeValue])
+	DateAdd('d', ([t].[SmallIntValue] + @part1) - @part2, [t].[DateTimeValue])
 FROM
 	[LinqDataTypes] [t]
 

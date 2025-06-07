@@ -52,7 +52,7 @@ SELECT
 FROM
 	[LinqDataTypes] [t]
 WHERE
-	[t].[ID] = 5000 AND DateAdd('d', ([t].[SmallIntValue] + CVar(?)) - CVar(?), [t].[DateTimeValue]) > DateSerial(2018, 1, 2)
+	[t].[ID] = 5000 AND DateAdd('d', ([t].[SmallIntValue] + ?) - ?, [t].[DateTimeValue]) > DateSerial(2018, 1, 2)
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
