@@ -52,7 +52,7 @@ SELECT
 FROM
 	"LinqDataTypes" "t"
 WHERE
-	"t".ID = 5000 AND "t"."DateTimeValue" + (("t"."SmallIntValue" + CAST(@part1 AS Int)) - CAST(@part2 AS Int)) DAY < CAST('2018-01-02' AS timestamp)
+	"t".ID = 5000 AND "t"."DateTimeValue" + (("t"."SmallIntValue" + @part1) - @part2) DAY < CAST('2018-01-02' AS timestamp)
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW

@@ -4,7 +4,7 @@ DECLARE @month Integer(4) -- Int32
 SET     @month = 1
 
 SELECT
-	CAST(LPad(2010 + "t".ID, 4, '0') || '-' || LPad(CAST(@month AS Int), 2, '0') || '-01' AS Date)
+	CAST(LPad(2010 + "t".ID, 4, '0') || '-' || LPad(@month, 2, '0') || '-01' AS Date)
 FROM
 	"LinqDataTypes" "t"
 
