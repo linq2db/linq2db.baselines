@@ -16,9 +16,9 @@ UPDATE
 SET
 	("Value1", "Value2", "Value3") = (
 		SELECT
-			("UpdatedEntities"."Value1" * "t2"."Value1") * CAST(@int1 AS Int),
-			("UpdatedEntities"."Value2" * "t2"."Value2") * CAST(@int2 AS Int),
-			("UpdatedEntities"."Value3" * "t2"."Value3") * CAST(@int3 AS Int)
+			("UpdatedEntities"."Value1" * "t2"."Value1") * @int1,
+			("UpdatedEntities"."Value2" * "t2"."Value2") * @int2,
+			("UpdatedEntities"."Value3" * "t2"."Value3") * @int3
 		FROM
 			(
 				SELECT

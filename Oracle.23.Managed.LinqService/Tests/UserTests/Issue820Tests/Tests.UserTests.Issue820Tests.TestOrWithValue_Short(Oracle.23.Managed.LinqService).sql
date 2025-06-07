@@ -8,7 +8,7 @@ FROM
 
 BeforeExecute
 -- Oracle.23.Managed Oracle.Managed Oracle12
-DECLARE @param Int16
+DECLARE @param Int32
 SET     @param = 1
 
 SELECT

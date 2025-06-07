@@ -1,6 +1,6 @@
 ﻿BeforeExecute
 -- SqlServer.2016.MS SqlServer.2016
-DECLARE @param SmallInt -- Int16
+DECLARE @param Int -- Int32
 SET     @param = 1
 
 SELECT

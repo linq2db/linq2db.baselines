@@ -6,10 +6,10 @@ DECLARE @n_1 Integer -- Int32
 SET     @n_1 = 1
 
 SELECT
-	([p].[PersonID] + CVar(@n)) - 1,
+	([p].[PersonID] + @n) - 1,
 	[p].[FirstName]
 FROM
 	[Person] [p]
 WHERE
-	[p].[PersonID] + CVar(@n_1) = 2
+	[p].[PersonID] + @n_1 = 2
 

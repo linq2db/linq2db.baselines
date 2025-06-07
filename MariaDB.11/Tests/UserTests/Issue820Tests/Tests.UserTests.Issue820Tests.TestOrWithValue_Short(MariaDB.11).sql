@@ -8,7 +8,7 @@ FROM
 
 BeforeExecute
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql
-DECLARE @param Int16
+DECLARE @param Int32
 SET     @param = 1
 
 SELECT

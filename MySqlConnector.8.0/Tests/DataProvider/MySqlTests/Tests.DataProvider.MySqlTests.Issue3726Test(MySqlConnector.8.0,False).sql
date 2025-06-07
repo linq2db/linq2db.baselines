@@ -24,7 +24,7 @@ BeforeExecute
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 DECLARE @Value2 VarChar(3) -- String
 SET     @Value2 = 'Baz'
-DECLARE @bar UInt32
+DECLARE @bar Int64
 SET     @bar = 123
 
 UPDATE

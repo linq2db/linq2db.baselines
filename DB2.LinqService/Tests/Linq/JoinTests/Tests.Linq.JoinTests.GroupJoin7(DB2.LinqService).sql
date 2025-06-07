@@ -16,7 +16,7 @@ FROM
 		WHERE
 			"p"."ParentID" = 1
 	) "m_1"
-		INNER JOIN "Child" "d" ON "m_1"."ParentID" = "d"."ParentID" - CAST(@n AS Int)
+		INNER JOIN "Child" "d" ON "m_1"."ParentID" = "d"."ParentID" - @n
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW

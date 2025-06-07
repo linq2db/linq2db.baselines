@@ -22,7 +22,7 @@ INSERT INTO TableWithIdentity
 	"Value"
 )
 SELECT
-	t1."Value" + @addition::Int
+	t1."Value" + @addition
 FROM
 	TableWithIdentitySrc t1
 

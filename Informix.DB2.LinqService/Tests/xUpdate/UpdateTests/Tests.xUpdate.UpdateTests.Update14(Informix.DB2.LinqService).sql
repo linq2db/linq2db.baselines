@@ -34,7 +34,7 @@ SET     @idx = 4
 UPDATE
 	Person t1
 SET
-	LastName = To_Char(CHAR_LENGTH(@name::NVarChar(8)) + @idx::Int)
+	LastName = To_Char(CHAR_LENGTH(@name) + @idx)
 WHERE
 	t1.FirstName LIKE 'Update14%' ESCAPE '~'
 

@@ -1,6 +1,6 @@
 ﻿BeforeExecute
 -- Sybase.Managed Sybase
-DECLARE @param SmallInt -- Int16
+DECLARE @param Integer -- Int32
 SET     @param = 1
 
 SELECT

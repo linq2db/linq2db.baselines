@@ -4,7 +4,7 @@ DECLARE @Value Integer(4) -- Int32
 SET     @Value = -1
 
 SELECT
-	DATE("t"."DateTimeValue" + (CAST(@Value AS Int) * 7) DAY)
+	DATE("t"."DateTimeValue" + (@Value * 7) DAY)
 FROM
 	"LinqDataTypes" "t"
 

@@ -4,7 +4,7 @@ DECLARE @Value Integer(4) -- Int32
 SET     @Value = -1
 
 SELECT
-	DATE("t"."DateTimeValue" + (CAST(@Value AS Int) * 3) MONTH)
+	DATE("t"."DateTimeValue" + (@Value * 3) MONTH)
 FROM
 	"LinqDataTypes" "t"
 

@@ -52,7 +52,7 @@ USING (SELECT CAST(@id AS Int) AS "PersonID" FROM SYSIBM.SYSDUMMY1 FETCH FIRST 1
 WHEN MATCHED THEN
 	UPDATE 
 	SET
-		"Diagnosis" = RTrim(Char(CHARACTER_LENGTH("t1"."Diagnosis",CODEUNITS32) + CAST(@i AS Int)))
+		"Diagnosis" = RTrim(Char(CHARACTER_LENGTH("t1"."Diagnosis",CODEUNITS32) + @i))
 WHEN NOT MATCHED THEN
 	INSERT
 	(
@@ -62,7 +62,7 @@ WHEN NOT MATCHED THEN
 	VALUES
 	(
 		CAST(@id AS Int),
-		RTrim(Char(CHARACTER_LENGTH(CAST(@diagnosis AS NVarChar(3)),CODEUNITS32) + CAST(@i AS Int)))
+		RTrim(Char(CHARACTER_LENGTH(@diagnosis,CODEUNITS32) + @i))
 	)
 
 BeforeExecute
@@ -82,7 +82,7 @@ USING (SELECT CAST(@id AS Int) AS "PersonID" FROM SYSIBM.SYSDUMMY1 FETCH FIRST 1
 WHEN MATCHED THEN
 	UPDATE 
 	SET
-		"Diagnosis" = RTrim(Char(CHARACTER_LENGTH("t1"."Diagnosis",CODEUNITS32) + CAST(@i AS Int)))
+		"Diagnosis" = RTrim(Char(CHARACTER_LENGTH("t1"."Diagnosis",CODEUNITS32) + @i))
 WHEN NOT MATCHED THEN
 	INSERT
 	(
@@ -92,7 +92,7 @@ WHEN NOT MATCHED THEN
 	VALUES
 	(
 		CAST(@id AS Int),
-		RTrim(Char(CHARACTER_LENGTH(CAST(@diagnosis AS NVarChar(3)),CODEUNITS32) + CAST(@i AS Int)))
+		RTrim(Char(CHARACTER_LENGTH(@diagnosis,CODEUNITS32) + @i))
 	)
 
 BeforeExecute
@@ -112,7 +112,7 @@ USING (SELECT CAST(@id AS Int) AS "PersonID" FROM SYSIBM.SYSDUMMY1 FETCH FIRST 1
 WHEN MATCHED THEN
 	UPDATE 
 	SET
-		"Diagnosis" = RTrim(Char(CHARACTER_LENGTH("t1"."Diagnosis",CODEUNITS32) + CAST(@i AS Int)))
+		"Diagnosis" = RTrim(Char(CHARACTER_LENGTH("t1"."Diagnosis",CODEUNITS32) + @i))
 WHEN NOT MATCHED THEN
 	INSERT
 	(
@@ -122,7 +122,7 @@ WHEN NOT MATCHED THEN
 	VALUES
 	(
 		CAST(@id AS Int),
-		RTrim(Char(CHARACTER_LENGTH(CAST(@diagnosis AS NVarChar(3)),CODEUNITS32) + CAST(@i AS Int)))
+		RTrim(Char(CHARACTER_LENGTH(@diagnosis,CODEUNITS32) + @i))
 	)
 
 BeforeExecute

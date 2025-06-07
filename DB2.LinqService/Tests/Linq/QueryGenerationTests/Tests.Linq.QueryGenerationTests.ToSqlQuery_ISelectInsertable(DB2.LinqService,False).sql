@@ -22,7 +22,7 @@ INSERT INTO "TableWithIdentity"
 	"Value"
 )
 SELECT
-	"t1"."Value" + CAST(@addition AS Int)
+	"t1"."Value" + @addition
 FROM
 	"TableWithIdentitySrc" "t1"
 

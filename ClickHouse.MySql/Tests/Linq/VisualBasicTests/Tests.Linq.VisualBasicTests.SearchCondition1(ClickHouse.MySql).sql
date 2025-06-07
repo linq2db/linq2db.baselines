@@ -13,5 +13,5 @@ SELECT
 FROM
 	LinqDataTypes t
 WHERE
-	NOT t.BoolValue AND (t.SmallIntValue = toInt16(5) OR t.SmallIntValue = toInt16(7) OR bitOr(t.SmallIntValue, toInt16(2)) = 10)
+	NOT t.BoolValue AND (t.SmallIntValue = toInt16(5) OR t.SmallIntValue = toInt16(7) OR bitOr(t.SmallIntValue, 2) = 10)
 

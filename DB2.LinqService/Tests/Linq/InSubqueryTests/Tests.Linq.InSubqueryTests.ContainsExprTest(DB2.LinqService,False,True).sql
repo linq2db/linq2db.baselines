@@ -9,7 +9,7 @@ SELECT
 FROM
 	"Parent" "p"
 WHERE
-	"p"."ParentID" + CAST(@n AS Int) IN (
+	"p"."ParentID" + @n IN (
 		SELECT
 			"c_1"."ParentID"
 		FROM

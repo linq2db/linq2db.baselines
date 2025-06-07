@@ -23,7 +23,7 @@ SELECT
 FROM
 	LinqDataTypes t1
 WHERE
-	toInt16(1) = t1.SmallIntValue
+	1 = t1.SmallIntValue
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse

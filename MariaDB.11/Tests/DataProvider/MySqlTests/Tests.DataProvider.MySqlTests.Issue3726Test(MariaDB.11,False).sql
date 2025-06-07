@@ -24,7 +24,7 @@ BeforeExecute
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql
 DECLARE @Value2 VarChar(3) -- String
 SET     @Value2 = 'Baz'
-DECLARE @bar UInt32
+DECLARE @bar Int64
 SET     @bar = 123
 
 UPDATE

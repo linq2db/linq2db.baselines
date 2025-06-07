@@ -4,7 +4,7 @@ DECLARE @p Integer(4) -- Int32
 SET     @p = 226
 
 SELECT
-	"t"."DateTimeValue" + (CAST(@p AS Int) * 1000) MICROSECONDS
+	"t"."DateTimeValue" + (@p * 1000) MICROSECONDS
 FROM
 	"LinqDataTypes" "t"
 

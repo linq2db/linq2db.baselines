@@ -4,7 +4,7 @@ DECLARE @Value Integer(4) -- Int32
 SET     @Value = 11
 
 SELECT
-	DATE("t"."DateTimeValue" + CAST(@Value AS Int) YEAR)
+	DATE("t"."DateTimeValue" + @Value YEAR)
 FROM
 	"LinqDataTypes" "t"
 

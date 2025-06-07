@@ -11,7 +11,7 @@ SELECT
 			"Child" "c_1"
 		WHERE
 			"c_1"."ParentID" = "p"."ParentID"
-	) + CAST(@n AS Int)
+	) + @n
 FROM
 	"Parent" "p"
 
