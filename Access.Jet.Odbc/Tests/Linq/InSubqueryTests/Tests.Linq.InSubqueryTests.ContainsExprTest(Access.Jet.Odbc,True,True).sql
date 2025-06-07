@@ -15,7 +15,7 @@ WHERE
 		FROM
 			[Child] [c_1]
 		WHERE
-			[p].[ParentID] + CVar(?) = [c_1].[ParentID]
+			[p].[ParentID] + ? = [c_1].[ParentID]
 	)
 
 BeforeExecute
