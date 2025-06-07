@@ -2,7 +2,7 @@
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 DECLARE @param  -- Double
 SET     @param = 33
-DECLARE @param_1  -- Double
+DECLARE @param_1 Decimal
 SET     @param_1 = 33
 
 SELECT
