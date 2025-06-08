@@ -22,8 +22,8 @@ FROM
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
-DECLARE @p Integer(4) -- Int32
-SET     @p = 1234
+DECLARE @cond SmallInt(2) -- Int16
+SET     @cond = 1234
 
 INSERT INTO "InsertIssueTest"
 (
@@ -41,7 +41,7 @@ FROM
 			"InsertIssueTest" "t1"
 				INNER JOIN "InsertIssueTest" "a_Association" ON "t1".ID = "a_Association"."intDataType"
 		WHERE
-			"t1".ID = @p
+			"t1".ID = @cond
 	) "t2"
 
 BeforeExecute
