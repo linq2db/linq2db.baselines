@@ -1,12 +1,12 @@
 ﻿BeforeExecute
 -- Firebird.2.5 Firebird
-DECLARE @offset Integer -- Int32
+DECLARE @offset SmallInt -- Int16
 SET     @offset = -1
 
 UPDATE
 	"Issue4963Table" "t1"
 SET
-	"Field" = CAST(CAST("t1"."Field" AS Int) + CAST(@offset AS Int) AS SmallInt)
+	"Field" = CAST(CAST("t1"."Field" AS Int) + CAST(@offset AS SmallInt) AS SmallInt)
 
 BeforeExecute
 -- Firebird.2.5 Firebird
