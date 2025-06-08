@@ -8,7 +8,7 @@ FROM
 
 BeforeExecute
 -- PostgreSQL.15 PostgreSQL
-DECLARE @param Integer -- Int32
+DECLARE @param Smallint -- Int16
 SET     @param = 1
 
 SELECT
