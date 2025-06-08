@@ -1,6 +1,6 @@
 ﻿BeforeExecute
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql
-DECLARE @param Int32
+DECLARE @param Int16
 SET     @param = 1
 
 SELECT

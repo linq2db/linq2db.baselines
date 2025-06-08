@@ -1,6 +1,6 @@
 ﻿BeforeExecute
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql
-DECLARE @offset Int32
+DECLARE @offset UByte -- Byte
 SET     @offset = -1
 
 UPDATE
