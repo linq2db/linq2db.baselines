@@ -1,6 +1,6 @@
 ﻿BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
-DECLARE @offset Integer -- Int32
+DECLARE @offset Smallint -- Int16
 SET     @offset = -1
 
 UPDATE
