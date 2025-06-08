@@ -1,6 +1,6 @@
 ﻿BeforeExecute
 -- Firebird.5 Firebird4
-DECLARE @param Integer -- Int32
+DECLARE @param SmallInt -- Int16
 SET     @param = 1
 
 SELECT
