@@ -1,6 +1,6 @@
 ﻿BeforeExecute
 -- Oracle.11.Managed Oracle11
-DECLARE @param Int32
+DECLARE @param Int16
 SET     @param = 1
 
 SELECT

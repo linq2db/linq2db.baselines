@@ -1,6 +1,6 @@
 ﻿BeforeExecute
 -- Oracle.11.Managed Oracle11
-DECLARE @offset Int32
+DECLARE @offset Int16
 SET     @offset = -1
 
 UPDATE
