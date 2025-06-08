@@ -1,6 +1,6 @@
 ﻿BeforeExecute
 -- Informix.DB2 Informix
-DECLARE @offset Integer(4) -- Int32
+DECLARE @offset SmallInt(4) -- Int16
 SET     @offset = -1
 
 UPDATE

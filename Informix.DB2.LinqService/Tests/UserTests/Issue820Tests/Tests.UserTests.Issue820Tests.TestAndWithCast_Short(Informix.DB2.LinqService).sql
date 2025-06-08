@@ -1,6 +1,6 @@
 ﻿BeforeExecute
 -- Informix.DB2 Informix
-DECLARE @param Integer(4) -- Int32
+DECLARE @param SmallInt(2) -- Int16
 SET     @param = 1
 
 SELECT
