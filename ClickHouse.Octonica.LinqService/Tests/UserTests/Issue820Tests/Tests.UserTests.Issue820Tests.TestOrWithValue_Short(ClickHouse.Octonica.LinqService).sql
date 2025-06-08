@@ -23,7 +23,7 @@ SELECT
 FROM
 	LinqDataTypes t1
 WHERE
-	1 = t1.SmallIntValue
+	toInt16(1) = t1.SmallIntValue
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
