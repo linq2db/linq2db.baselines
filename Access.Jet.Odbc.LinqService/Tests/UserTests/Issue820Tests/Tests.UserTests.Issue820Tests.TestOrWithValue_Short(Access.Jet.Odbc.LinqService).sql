@@ -8,7 +8,7 @@ FROM
 
 BeforeExecute
 -- Access.Jet.Odbc AccessODBC
-DECLARE @param Int -- Int32
+DECLARE @param SmallInt -- Int16
 SET     @param = 1
 
 SELECT

@@ -1,6 +1,6 @@
 ﻿BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
-DECLARE @value BigInt -- Int64
+DECLARE @value UnsignedInt -- UInt32
 SET     @value = 0
 
 SELECT
