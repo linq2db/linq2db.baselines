@@ -2,7 +2,7 @@
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @param Double
 SET     @param = 33
-DECLARE @param Decimal
+DECLARE @param Double
 SET     @param = 33
 DECLARE @param Double
 SET     @param = 33
