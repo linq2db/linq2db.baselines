@@ -8,7 +8,7 @@ FROM
 
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @param  -- Int32
+DECLARE @param  -- Int16
 SET     @param = 1
 
 SELECT
