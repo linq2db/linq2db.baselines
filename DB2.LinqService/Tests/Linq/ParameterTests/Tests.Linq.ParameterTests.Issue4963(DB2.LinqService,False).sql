@@ -1,6 +1,6 @@
 ﻿BeforeExecute
 -- DB2 DB2.LUW DB2LUW
-DECLARE @offset SmallInt(4) -- Int16
+DECLARE @offset Integer(4) -- Int32
 SET     @offset = -1
 
 UPDATE
