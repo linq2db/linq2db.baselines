@@ -8,7 +8,7 @@ FROM
 
 BeforeExecute
 -- SqlServer.2017.MS SqlServer.2017
-DECLARE @param Int -- Int32
+DECLARE @param SmallInt -- Int16
 SET     @param = 1
 
 SELECT

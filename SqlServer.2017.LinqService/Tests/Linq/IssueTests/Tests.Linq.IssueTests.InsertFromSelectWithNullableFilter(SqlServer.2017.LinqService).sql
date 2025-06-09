@@ -22,8 +22,8 @@ FROM
 
 BeforeExecute
 -- SqlServer.2017
-DECLARE @p Int -- Int32
-SET     @p = 1234
+DECLARE @cond SmallInt -- Int16
+SET     @cond = 1234
 
 INSERT INTO [InsertIssueTest]
 (
@@ -41,7 +41,7 @@ FROM
 			[InsertIssueTest] [t1]
 				INNER JOIN [InsertIssueTest] [a_Association] ON [t1].[ID] = [a_Association].[intDataType]
 		WHERE
-			[t1].[ID] = @p
+			[t1].[ID] = @cond
 	) [t2]
 
 BeforeExecute
