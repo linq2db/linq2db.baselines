@@ -8,7 +8,7 @@ FROM
 
 BeforeExecute
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
-DECLARE @param Int32
+DECLARE @param Int16
 SET     @param = 1
 
 SELECT
