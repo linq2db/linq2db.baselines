@@ -24,7 +24,7 @@ BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
 DECLARE @Value2 VarChar(3) -- String
 SET     @Value2 = 'Baz'
-DECLARE @bar Int64
+DECLARE @bar Int32
 SET     @bar = 123
 
 UPDATE

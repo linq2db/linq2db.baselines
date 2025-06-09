@@ -1,6 +1,6 @@
 ﻿BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
-DECLARE @param Int32
+DECLARE @param Int16
 SET     @param = 1
 
 SELECT
