@@ -17,7 +17,7 @@ SELECT
 FROM
 	`LinqDataTypes` `t1`
 WHERE
-	CAST(@param AS SIGNED) = `t1`.`SmallIntValue`
+	@param = `t1`.`SmallIntValue`
 
 BeforeExecute
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
