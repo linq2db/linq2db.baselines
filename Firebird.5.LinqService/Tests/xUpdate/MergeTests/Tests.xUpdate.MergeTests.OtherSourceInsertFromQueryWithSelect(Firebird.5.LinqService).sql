@@ -233,6 +233,14 @@ USING (
 	FROM
 		"TestMerge2" "t1"
 ) "Source"
+(
+	"source_OtherId",
+	"source_OtherField3",
+	"source_OtherField2",
+	"source_OtherField1",
+	"source_OtherField4",
+	"source_OtherField5"
+)
 ON ("Target"."Id" = "Source"."source_OtherId")
 
 WHEN NOT MATCHED THEN

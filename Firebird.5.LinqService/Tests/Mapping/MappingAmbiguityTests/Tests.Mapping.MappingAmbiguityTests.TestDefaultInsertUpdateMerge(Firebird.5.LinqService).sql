@@ -14,6 +14,15 @@ USING (
 	FROM
 		"TestTable" "Target_1"
 ) "Source"
+(
+	"source_ID",
+	"source_Field1",
+	"source_Field2",
+	"source_Field3",
+	"source_Field4",
+	"source_field1_1",
+	"source_Field5"
+)
 ON ("Target".ID = "Source"."source_ID")
 
 WHEN NOT MATCHED THEN

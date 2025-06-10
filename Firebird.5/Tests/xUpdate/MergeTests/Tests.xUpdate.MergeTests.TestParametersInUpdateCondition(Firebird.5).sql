@@ -233,6 +233,12 @@ USING (
 	FROM
 		"TestMerge2" "t1"
 ) "Source"
+(
+	"source_Id",
+	"source_Field1",
+	"source_Field2",
+	"source_Field3"
+)
 ON ("Target"."Id" = "Source"."source_Id")
 
 WHEN MATCHED AND "Target"."Id" = CAST(@param AS Int) THEN

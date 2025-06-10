@@ -90,6 +90,13 @@ USING (
 	WHERE
 		"a_Patient"."PersonID" = CAST(@PersonID AS Int)
 ) "Source"
+(
+	"source_ID",
+	"source_FirstName",
+	"source_LastName",
+	"source_MiddleName",
+	"source_Gender"
+)
 ON ("Target"."PersonID" = "Source"."source_ID")
 
 WHEN MATCHED THEN

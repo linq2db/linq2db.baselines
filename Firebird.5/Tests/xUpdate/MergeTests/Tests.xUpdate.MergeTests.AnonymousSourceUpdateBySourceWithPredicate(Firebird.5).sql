@@ -228,6 +228,9 @@ USING (
 	FROM
 		"TestMerge2" "t1"
 ) "Source"
+(
+	"source_Key"
+)
 ON ("Target"."Id" = "Source"."source_Key")
 
 WHEN NOT MATCHED BY SOURCE AND "Target"."Field1" = 2 THEN UPDATE

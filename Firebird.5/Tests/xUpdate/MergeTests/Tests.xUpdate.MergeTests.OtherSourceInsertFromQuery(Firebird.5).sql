@@ -235,6 +235,14 @@ USING (
 	WHERE
 		"t1"."Id" = 5
 ) "Source"
+(
+	"source_OtherId",
+	"source_OtherField3",
+	"source_OtherField5",
+	"source_OtherField4",
+	"source_OtherField2",
+	"source_OtherField1"
+)
 ON ("Target"."Id" = "Source"."source_OtherId" AND "Source"."source_OtherField3" IS NOT NULL)
 
 WHEN NOT MATCHED THEN

@@ -243,6 +243,9 @@ USING (
 	SELECT 5 FROM rdb$database
 	UNION ALL
 	SELECT 6 FROM rdb$database) "Source"
+(
+	"source_From"
+)
 ON ("Target"."Id" = "Source"."source_From")
 
 WHEN NOT MATCHED BY SOURCE AND "Target"."Field1" = 2 THEN UPDATE

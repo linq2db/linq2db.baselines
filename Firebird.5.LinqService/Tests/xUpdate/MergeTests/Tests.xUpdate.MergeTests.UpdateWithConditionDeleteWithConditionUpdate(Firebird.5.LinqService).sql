@@ -245,6 +245,12 @@ USING (
 	SELECT 6, NULL, NULL, NULL FROM rdb$database
 	UNION ALL
 	SELECT 1, 123, NULL, NULL FROM rdb$database) "Source"
+(
+	"source_Id",
+	"source_Field1",
+	"source_Field2",
+	"source_Field3"
+)
 ON ("Target"."Id" = "Source"."source_Id")
 
 WHEN MATCHED AND "Target"."Id" = 3 THEN

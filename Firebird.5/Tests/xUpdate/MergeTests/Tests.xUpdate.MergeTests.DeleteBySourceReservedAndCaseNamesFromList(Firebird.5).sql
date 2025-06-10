@@ -243,6 +243,9 @@ USING (
 	SELECT 5 FROM rdb$database
 	UNION ALL
 	SELECT 6 FROM rdb$database) "Source"
+(
+	"source_INSERT"
+)
 ON ("Source"."source_INSERT" = "Target"."Id")
 
 WHEN NOT MATCHED BY SOURCE AND "Target"."Id" = 2 THEN DELETE

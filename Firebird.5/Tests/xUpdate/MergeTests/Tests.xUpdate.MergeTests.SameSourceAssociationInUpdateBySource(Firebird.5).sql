@@ -15,6 +15,9 @@ USING (
 	FROM
 		"Person" "t1"
 ) "Source"
+(
+	"source_ID"
+)
 ON ("Target"."PersonID" = "Source"."source_ID" + 10)
 
 WHEN NOT MATCHED BY SOURCE AND "Target"."FirstName" = 'first 3' THEN UPDATE

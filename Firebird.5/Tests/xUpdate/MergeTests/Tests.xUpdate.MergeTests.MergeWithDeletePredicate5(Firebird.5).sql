@@ -23,6 +23,10 @@ USING (
 				"a_Child"."ChildID" = 22
 		)
 ) "Source"
+(
+	"source_ParentID",
+	"source_ChildID"
+)
 ON ("Target"."ParentID" = "Source"."source_ParentID" AND
 "Target"."ChildID" = "Source"."source_ChildID")
 

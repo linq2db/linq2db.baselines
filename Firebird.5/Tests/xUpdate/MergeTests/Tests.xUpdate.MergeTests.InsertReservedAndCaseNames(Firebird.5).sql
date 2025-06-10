@@ -233,6 +233,14 @@ USING (
 	FROM
 		"TestMerge2" "t1"
 ) "Source"
+(
+	"source_field",
+	"source_Field_1",
+	"source_and",
+	"source_Target",
+	"source_Source",
+	"source_case"
+)
 ON ("Target"."Id" = "Source"."source_field")
 
 WHEN NOT MATCHED AND "Source"."source_Source" = 216 THEN
