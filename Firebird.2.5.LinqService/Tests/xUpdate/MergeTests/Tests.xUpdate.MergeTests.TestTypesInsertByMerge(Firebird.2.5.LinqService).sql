@@ -32,6 +32,23 @@ USING (
 	UNION ALL
 	SELECT 4, -123, 987, CAST(@FieldBoolean_3 AS CHAR(1)), CAST('`~!@#$%^&*()_+{}|[]\' AS VARCHAR(20)), CAST(_utf8 x'3C3E3F2F2E2C3B27D189D0A9223A' AS VARCHAR(14)), '', '
 ', 1.17549996E-38, CAST('2098-10-12 21:14:15.997' AS timestamp), X'FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF', 99999999.9999999999, CAST('2110-11-23' AS timestamp), CAST('' AS VARCHAR(1)), 2147483647 FROM rdb$database) "Source"
+(
+	"source_Id",
+	"source_FieldInt32",
+	"source_FieldInt64",
+	"source_FieldBoolean",
+	"source_FieldString",
+	"source_FieldNString",
+	"source_FieldChar",
+	"source_FieldNChar",
+	"source_FieldFloat",
+	"source_FieldDateTime",
+	"source_FieldGuid",
+	"source_FieldDecimal",
+	"source_FieldDate",
+	"source_FieldEnumString",
+	"source_FieldEnumNumber"
+)
 ON ("Target"."Id" = "Source"."source_Id")
 
 WHEN NOT MATCHED THEN
@@ -94,6 +111,23 @@ USING (
 	UNION ALL
 	SELECT 6, 2147483647, 9223372036854775807, CAST(@FieldBoolean_3 AS CHAR(1)), CAST('test
 	  ' AS VARCHAR(12)), CAST(_utf8 x'D099D0A6D0A3D09AD0A9D18BD0B2D0B0D0BFD180D0BC0D0A71200D20' AS VARCHAR(28)), '-', '~', 3.40282002E+38, CAST('2001-10-12 21:14:15.167' AS timestamp), X'FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF', -99999999.9999999999, CAST('2123-11-23' AS timestamp), CAST(_utf8 x'00' AS VARCHAR(1)), 0 FROM rdb$database) "Source"
+(
+	"source_Id",
+	"source_FieldInt32",
+	"source_FieldInt64",
+	"source_FieldBoolean",
+	"source_FieldString",
+	"source_FieldNString",
+	"source_FieldChar",
+	"source_FieldNChar",
+	"source_FieldFloat",
+	"source_FieldDateTime",
+	"source_FieldGuid",
+	"source_FieldDecimal",
+	"source_FieldDate",
+	"source_FieldEnumString",
+	"source_FieldEnumNumber"
+)
 ON ("Target"."Id" = "Source"."source_Id")
 
 WHEN NOT MATCHED THEN

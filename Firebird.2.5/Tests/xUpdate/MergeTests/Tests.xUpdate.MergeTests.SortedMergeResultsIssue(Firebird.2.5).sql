@@ -107,6 +107,9 @@ USING (
 		"Parent" "t1"
 			CROSS JOIN "Child" "t2"
 ) "Source"
+(
+	"source_RightId"
+)
 ON ("Target"."GrandChildID" = "Source"."source_RightId")
 
 WHEN NOT MATCHED THEN

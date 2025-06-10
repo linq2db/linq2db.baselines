@@ -251,6 +251,10 @@ USING (
 	SELECT 5, CAST(@value_2 AS Time) FROM rdb$database
 	UNION ALL
 	SELECT 6, CAST(@value_3 AS Time) FROM rdb$database) "Source"
+(
+	"source_Id",
+	"source_Val"
+)
 ON ("Target"."Id" = "Source"."source_Id" AND "Source"."source_Val" IS NOT NULL)
 
 WHEN MATCHED THEN

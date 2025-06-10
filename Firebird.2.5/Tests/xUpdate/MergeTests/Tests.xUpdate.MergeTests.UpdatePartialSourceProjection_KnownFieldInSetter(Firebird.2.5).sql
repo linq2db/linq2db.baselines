@@ -229,6 +229,10 @@ USING (
 	FROM
 		"TestMerge2" "s"
 ) "Source"
+(
+	"source_Id",
+	"source_Field1"
+)
 ON ("Target"."Id" = "Source"."source_Id")
 
 WHEN MATCHED THEN
