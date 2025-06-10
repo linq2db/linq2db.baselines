@@ -17,7 +17,7 @@ SELECT
 FROM
 	"LinqDataTypes" "t1"
 WHERE
-	CAST(? AS Integer) = "t1"."SmallIntValue"
+	? = "t1"."SmallIntValue"
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
