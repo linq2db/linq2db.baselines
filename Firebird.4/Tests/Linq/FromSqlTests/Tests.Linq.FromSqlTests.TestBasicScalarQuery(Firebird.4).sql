@@ -11,5 +11,5 @@ FROM
 	"Person" "p"
 		INNER JOIN (
 			SELECT 1 AS "value" FROM "Person"
-		) "s" ON "s"."value" = "p"."PersonID"
+		) "s"("value") ON "s"."value" = "p"."PersonID"
 

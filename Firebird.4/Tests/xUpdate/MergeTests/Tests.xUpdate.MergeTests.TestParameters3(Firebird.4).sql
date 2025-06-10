@@ -240,6 +240,11 @@ USING (
 	WHERE
 		"t1"."Id" <> CAST(@Val5 AS Int)
 ) "Source"
+(
+	"source_Id",
+	"source_Field1",
+	"source_Field7"
+)
 ON ("Target"."Id" = "Source"."source_Id")
 
 WHEN NOT MATCHED AND "Source"."source_Field7" = CAST(@Val1 AS Int) + "Source"."source_Id" THEN

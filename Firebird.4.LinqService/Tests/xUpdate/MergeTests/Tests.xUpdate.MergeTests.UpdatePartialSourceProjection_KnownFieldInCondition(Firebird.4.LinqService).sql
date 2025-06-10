@@ -230,6 +230,11 @@ USING (
 	FROM
 		"TestMerge2" "s"
 ) "Source"
+(
+	"source_OtherId",
+	"source_OtherField1",
+	"source_OtherField4"
+)
 ON ("Target"."Id" = "Source"."source_OtherId")
 
 WHEN MATCHED AND "Source"."source_OtherField4" = 214 THEN

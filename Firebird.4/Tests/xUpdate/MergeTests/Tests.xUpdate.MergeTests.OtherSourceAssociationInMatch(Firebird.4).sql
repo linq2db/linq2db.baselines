@@ -17,6 +17,10 @@ USING (
 		"Person" "t1"
 			INNER JOIN "Patient" "a_Patient" ON "t1"."PersonID" = "a_Patient"."PersonID"
 ) "Source"
+(
+	"source_ID",
+	"source_Patient_Diagnosis"
+)
 ON (EXISTS(
 	SELECT
 		*

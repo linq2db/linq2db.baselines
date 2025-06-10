@@ -232,6 +232,12 @@ USING (
 		"TestMerge1" "t1"
 			CROSS JOIN "TestMerge2" "t2"
 ) "Source"
+(
+	"source_Id",
+	"source_Field1",
+	"source_Field2",
+	"source_Field4"
+)
 ON ("Target"."Id" = "Source"."source_Id")
 
 WHEN NOT MATCHED THEN
