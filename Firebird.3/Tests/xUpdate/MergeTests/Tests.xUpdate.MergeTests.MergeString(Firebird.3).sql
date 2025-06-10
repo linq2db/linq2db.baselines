@@ -19,6 +19,12 @@ BeforeExecute
 MERGE INTO "AllTypes" "Target"
 USING (
 	SELECT 3 AS "source_ID", _utf8 x'00' AS "source_charDataType", CAST(_utf8 x'00' AS CHAR(1)) AS "source_ncharDataType", CAST(_utf8 x'74657374006974' AS VARCHAR(7)) AS "source_nvarcharDataType" FROM rdb$database) "Source"
+(
+	"source_ID",
+	"source_charDataType",
+	"source_ncharDataType",
+	"source_nvarcharDataType"
+)
 ON ("Target".ID = "Source"."source_ID")
 
 WHEN NOT MATCHED THEN

@@ -243,6 +243,9 @@ USING (
 	SELECT 5 FROM rdb$database
 	UNION ALL
 	SELECT 6 FROM rdb$database) "Source"
+(
+	"source_update"
+)
 ON ("Source"."source_update" = "Target"."Id")
 WHEN MATCHED AND "Source"."source_update" = 4 THEN DELETE
 
