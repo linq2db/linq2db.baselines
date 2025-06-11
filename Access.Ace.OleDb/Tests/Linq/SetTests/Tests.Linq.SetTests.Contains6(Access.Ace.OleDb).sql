@@ -9,7 +9,7 @@ SELECT
 FROM
 	[Parent] [p]
 WHERE
-	[p].[ParentID] + CVar(@n) IN (
+	[p].[ParentID] + @n IN (
 		SELECT
 			[c_1].[ParentID]
 		FROM

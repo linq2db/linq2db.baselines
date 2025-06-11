@@ -235,7 +235,7 @@ USING (
 	"source_Id",
 	"source_Val"
 )
-ON ("Target"."Id" = "Source"."source_Id" AND "Source"."source_Val" IS NOT NULL)
+ON ("Target"."Id" = "Source"."source_Id")
 
 WHEN MATCHED THEN
 UPDATE

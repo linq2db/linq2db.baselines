@@ -24,7 +24,7 @@ INSERT INTO TableWithIdentity
 )
 SELECT
 	345,
-	t1."Value" + @addition::Int
+	t1."Value" + @addition
 FROM
 	TableWithIdentitySrc t1
 

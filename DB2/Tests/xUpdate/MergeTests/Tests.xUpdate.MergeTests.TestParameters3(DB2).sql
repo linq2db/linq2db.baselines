@@ -238,7 +238,7 @@ USING (
 	FROM
 		"TestMerge2" "t1"
 	WHERE
-		"t1"."Id" <> CAST(@Val5 AS Int)
+		"t1"."Id" <> @Val5
 ) "Source"
 (
 	"source_Id",
@@ -247,7 +247,7 @@ USING (
 )
 ON ("Target"."Id" = "Source"."source_Id")
 
-WHEN NOT MATCHED AND "Source"."source_Field7" = CAST(@Val1 AS Int) + "Source"."source_Id" THEN
+WHEN NOT MATCHED AND "Source"."source_Field7" = @Val1 + "Source"."source_Id" THEN
 INSERT
 (
 	"Id",
@@ -255,13 +255,13 @@ INSERT
 )
 VALUES
 (
-	"Source"."source_Id" + CAST(@Val5 AS Int),
+	"Source"."source_Id" + @Val5,
 	"Source"."source_Field1"
 )
 
 WHEN MATCHED AND "Source"."source_Id" = @Val3 THEN
 UPDATE
 SET
-	"Field4" = CAST(@Val5 AS Int)
+	"Field4" = @Val5
 WHEN MATCHED AND "Target"."Field3" <> CAST(@Val2 AS Int) OR "Target"."Field3" IS NULL THEN DELETE
 

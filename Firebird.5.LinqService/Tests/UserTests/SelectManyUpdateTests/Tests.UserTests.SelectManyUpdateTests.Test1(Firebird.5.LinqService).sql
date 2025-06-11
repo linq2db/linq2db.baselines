@@ -1,12 +1,12 @@
 ﻿BeforeExecute
 -- Firebird.5 Firebird4
-DECLARE @Value1 Integer -- Int32
+DECLARE @Value1 BigInt -- Int64
 SET     @Value1 = NULL
 
 UPDATE
 	"Parent"
 SET
-	"Value1" = CAST(@Value1 AS Int)
+	"Value1" = CAST(@Value1 AS BigInt)
 WHERE
 	EXISTS(
 		SELECT

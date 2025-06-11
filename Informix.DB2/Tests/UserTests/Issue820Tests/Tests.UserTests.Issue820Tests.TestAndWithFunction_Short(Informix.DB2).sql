@@ -17,7 +17,7 @@ SELECT
 FROM
 	LinqDataTypes t1
 WHERE
-	@param::Int = t1.SmallIntValue
+	@param = t1.SmallIntValue
 
 BeforeExecute
 -- Informix.DB2 Informix
