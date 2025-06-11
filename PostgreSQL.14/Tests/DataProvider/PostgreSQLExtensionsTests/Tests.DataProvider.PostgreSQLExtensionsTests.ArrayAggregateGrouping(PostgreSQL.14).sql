@@ -11,10 +11,10 @@ FROM
 		SELECT
 			g_1."Id" / 3 as "Key_1",
 			g_1."Id",
-			v as v
+			v.value as v
 		FROM
 			"SampleClass" g_1
-				INNER JOIN LATERAL UNNEST(g_1."StrArray") v ON 1=1
+				INNER JOIN LATERAL UNNEST(g_1."StrArray") v(value) ON 1=1
 	) g_2
 GROUP BY
 	g_2."Key_1"
@@ -23,26 +23,26 @@ BeforeExecute
 -- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
 
 SELECT
-	ARRAY_AGG(v)
+	ARRAY_AGG(v.value)
 FROM
 	"SampleClass" t1
-		INNER JOIN LATERAL UNNEST(t1."StrArray") v ON 1=1
+		INNER JOIN LATERAL UNNEST(t1."StrArray") v(value) ON 1=1
 
 BeforeExecute
 -- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
 
 SELECT
-	ARRAY_AGG(DISTINCT v)
+	ARRAY_AGG(DISTINCT v.value)
 FROM
 	"SampleClass" t1
-		INNER JOIN LATERAL UNNEST(t1."StrArray") v ON 1=1
+		INNER JOIN LATERAL UNNEST(t1."StrArray") v(value) ON 1=1
 
 BeforeExecute
 -- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
 
 SELECT
-	ARRAY_AGG(v ORDER BY v)
+	ARRAY_AGG(v.value ORDER BY v.value)
 FROM
 	"SampleClass" t1
-		INNER JOIN LATERAL UNNEST(t1."StrArray") v ON 1=1
+		INNER JOIN LATERAL UNNEST(t1."StrArray") v(value) ON 1=1
 
