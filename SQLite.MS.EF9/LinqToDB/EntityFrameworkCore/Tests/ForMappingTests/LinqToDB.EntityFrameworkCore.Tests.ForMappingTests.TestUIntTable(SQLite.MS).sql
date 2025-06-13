@@ -6,7 +6,7 @@ VALUES (@p0, @p1, @p2, @p3, @p4, @p5)
 RETURNING "ID";
 
 
---  SQLite.MS SQLite (asynchronously)
+-- SQLite.MS SQLite (asynchronously)
 DECLARE @field64 Decimal
 SET     @field64 = 5
 

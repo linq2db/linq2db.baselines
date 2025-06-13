@@ -1,4 +1,4 @@
-﻿--  MySql.8.0.MySqlConnector MySql80 (asynchronously)
+﻿-- MySql.8.0.MySqlConnector MySql80 (asynchronously)
 DECLARE @test Int32
 SET     @test = 1
 

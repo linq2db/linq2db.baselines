@@ -35,7 +35,7 @@ ORDER BY [o].[OrderID], [t2].[EmployeeID], [t2].[TerritoryID], [t2].[TerritoryID
 BeginTransactionAsync(RepeatableRead)
 
 
---  SqlServer.2016 (asynchronously)
+-- SqlServer.2016 (asynchronously)
 
 SELECT
 	[m_1].[EmployeeId],
@@ -64,7 +64,7 @@ WHERE
 
 
 
---  SqlServer.2016 (asynchronously)
+-- SqlServer.2016 (asynchronously)
 
 SELECT
 	[m_1].[OrderId],
@@ -105,7 +105,7 @@ WHERE
 DisposeTransactionAsync
 
 
---  SqlServer.2016 (asynchronously)
+-- SqlServer.2016 (asynchronously)
 
 SELECT
 	[a_Employee].[IsDeleted],

@@ -7,7 +7,7 @@ LEFT JOIN [PatentAssessment] AS [p0] ON [p].[Id] = [p0].[PatentId]
 WHERE [p0].[PatentId] IS NULL OR [p0].[TechnicalReviewerId] <> @__userId_0 OR [p0].[TechnicalReviewerId] IS NULL
 
 
---  SqlServer.2022
+-- SqlServer.2022
 DECLARE @userId Int -- Int32
 SET     @userId = 1
 

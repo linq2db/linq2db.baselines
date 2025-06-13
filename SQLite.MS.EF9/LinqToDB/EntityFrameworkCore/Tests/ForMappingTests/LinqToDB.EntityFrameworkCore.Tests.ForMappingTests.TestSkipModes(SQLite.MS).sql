@@ -5,7 +5,7 @@ INSERT INTO "SkipModes" ("Id", "InsertOnly")
 VALUES (@p0, @p1);
 
 
---  SQLite.MS SQLite
+-- SQLite.MS SQLite
 DECLARE @Id  -- Int32
 SET     @Id = 2
 DECLARE @InsertOnly  -- Int32
@@ -24,7 +24,7 @@ VALUES
 
 
 
---  SQLite.MS SQLite
+-- SQLite.MS SQLite
 
 SELECT
 	[t1].[Id],
@@ -46,7 +46,7 @@ WHERE "Id" = @p1
 RETURNING 1;
 
 
---  SQLite.MS SQLite
+-- SQLite.MS SQLite
 DECLARE @UpdateOnly  -- Int32
 SET     @UpdateOnly = 12
 DECLARE @Id  -- Int32
@@ -61,7 +61,7 @@ WHERE
 
 
 
---  SQLite.MS SQLite
+-- SQLite.MS SQLite
 
 SELECT
 	[t1].[Id],

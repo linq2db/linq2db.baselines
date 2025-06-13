@@ -1,4 +1,4 @@
-﻿--  MySql.5.7.MySqlConnector MySql57
+﻿-- MySql.5.7.MySqlConnector MySql57
 DECLARE @BlogType VarChar(9) -- String
 SET     @BlogType = 'blog_base'
 DECLARE @Url VarChar(7) -- String
@@ -17,7 +17,7 @@ VALUES
 
 
 
---  MySql.5.7.MySqlConnector MySql57
+-- MySql.5.7.MySqlConnector MySql57
 DECLARE @BlogType VarChar(8) -- String
 SET     @BlogType = 'blog_rss'
 DECLARE @Url VarChar(6) -- String

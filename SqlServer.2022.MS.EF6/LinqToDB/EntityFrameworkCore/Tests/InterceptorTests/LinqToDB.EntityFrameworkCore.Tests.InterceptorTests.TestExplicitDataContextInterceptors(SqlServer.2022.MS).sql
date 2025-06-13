@@ -1,4 +1,4 @@
-﻿--  SqlServer.2022
+﻿-- SqlServer.2022
 DECLARE @take Int -- Int32
 SET     @take = 2
 
@@ -23,7 +23,7 @@ ORDER BY
 
 
 
---  SqlServer.2022
+-- SqlServer.2022
 DECLARE @take Int -- Int32
 SET     @take = 2
 

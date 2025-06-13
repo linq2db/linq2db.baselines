@@ -38,7 +38,7 @@ VALUES (@p0)
 RETURNING "Id";
 
 
---  SQLite.MS SQLite
+-- SQLite.MS SQLite
 
 SELECT
 	[t1].[Discriminator],

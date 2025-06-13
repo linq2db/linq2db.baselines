@@ -10,7 +10,7 @@ ORDER BY
 	t1.ChildID
 
 BeforeExecute
---  ClickHouse.Client ClickHouse
+-- ClickHouse.Client ClickHouse
 
 SELECT
 	t1.ParentID,

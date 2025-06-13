@@ -25,7 +25,7 @@ ORDER BY "o"."OrderID", "s"."OrderID", "s"."ProductID", "s"."ProductID0", "s"."O
 BeginTransactionAsync(Serializable)
 
 
---  SQLite.MS SQLite (asynchronously)
+-- SQLite.MS SQLite (asynchronously)
 
 SELECT
 	[m_1].[ProductId],
@@ -55,7 +55,7 @@ FROM
 
 
 
---  SQLite.MS SQLite (asynchronously)
+-- SQLite.MS SQLite (asynchronously)
 
 SELECT
 	[m_1].[OrderID],
@@ -86,7 +86,7 @@ FROM
 DisposeTransactionAsync
 
 
---  SQLite.MS SQLite (asynchronously)
+-- SQLite.MS SQLite (asynchronously)
 
 SELECT
 	[e].[IsDeleted],

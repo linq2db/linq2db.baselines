@@ -38,7 +38,7 @@ VALUES (@p0)
 RETURNING "Id";
 
 
---  SQLite.MS SQLite (asynchronously)
+-- SQLite.MS SQLite (asynchronously)
 
 SELECT
 	[t1].[Id],

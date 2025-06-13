@@ -9,7 +9,7 @@ FROM [UIntTable]
 WHERE @@ROWCOUNT = 1 AND [ID] = scope_identity();
 
 
---  SqlServer.2019 (asynchronously)
+-- SqlServer.2019 (asynchronously)
 DECLARE @field64 Decimal
 SET     @field64 = 5
 

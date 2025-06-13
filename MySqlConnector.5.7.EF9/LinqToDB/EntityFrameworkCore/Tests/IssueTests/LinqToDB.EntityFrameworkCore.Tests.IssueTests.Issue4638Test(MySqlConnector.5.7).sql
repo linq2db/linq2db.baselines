@@ -1,7 +1,7 @@
 ﻿BeginTransaction(RepeatableRead)
 
 
---  MySql.5.7.MySqlConnector MySql57
+-- MySql.5.7.MySqlConnector MySql57
 
 SELECT
 	`m_1`.`Key_1`,
@@ -23,7 +23,7 @@ ORDER BY
 
 
 
---  MySql.5.7.MySqlConnector MySql57
+-- MySql.5.7.MySqlConnector MySql57
 
 SELECT
 	`p`.`AclNameId`

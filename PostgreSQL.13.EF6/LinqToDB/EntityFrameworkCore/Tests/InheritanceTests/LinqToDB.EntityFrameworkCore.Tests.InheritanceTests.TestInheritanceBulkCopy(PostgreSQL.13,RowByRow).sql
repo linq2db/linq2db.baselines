@@ -1,4 +1,4 @@
-﻿--  PostgreSQL.9.5 PostgreSQL
+﻿-- PostgreSQL.9.5 PostgreSQL
 DECLARE @BlogType Varchar(9) -- String
 SET     @BlogType = 'blog_base'
 DECLARE @Url Text(7) -- String
@@ -17,7 +17,7 @@ VALUES
 
 
 
---  PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.9.5 PostgreSQL
 DECLARE @BlogType Varchar(8) -- String
 SET     @BlogType = 'blog_rss'
 DECLARE @Url Text(6) -- String
