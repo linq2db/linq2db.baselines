@@ -32,7 +32,7 @@ WHERE
 		)
 			THEN False
 		ELSE True
-	END
+	END = True
 
 BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
@@ -68,5 +68,5 @@ WHERE
 		)
 			THEN False
 		ELSE True
-	END
+	END = True
 
