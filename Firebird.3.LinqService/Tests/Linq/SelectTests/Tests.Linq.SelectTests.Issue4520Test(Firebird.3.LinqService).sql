@@ -6,23 +6,19 @@ SELECT
 		WHEN NOT CASE
 			WHEN "i"."BoolValue" IS NOT NULL THEN "i"."BoolValue"
 			ELSE FALSE
-		END AND ("i"."IntValue" = (
-			SELECT
-				"p"."IntValue"
-			FROM
-				"LinqDataTypes" "p"
-			WHERE
-				"p".ID = 2
-			FETCH NEXT 1 ROWS ONLY
-		) OR "i"."IntValue" IS NULL AND (
-			SELECT
-				"p"."IntValue"
-			FROM
-				"LinqDataTypes" "p"
-			WHERE
-				"p".ID = 2
-			FETCH NEXT 1 ROWS ONLY
-		) IS NULL)
+		END AND CASE
+			WHEN "i"."IntValue" <> (
+				SELECT
+					"p"."IntValue"
+				FROM
+					"LinqDataTypes" "p"
+				WHERE
+					"p".ID = 2
+				FETCH NEXT 1 ROWS ONLY
+			)
+				THEN FALSE
+			ELSE TRUE
+		END
 			THEN TRUE
 		ELSE FALSE
 	END
