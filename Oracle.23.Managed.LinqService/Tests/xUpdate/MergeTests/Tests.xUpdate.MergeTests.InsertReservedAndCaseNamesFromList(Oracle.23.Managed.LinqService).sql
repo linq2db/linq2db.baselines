@@ -236,13 +236,13 @@ BeforeExecute
 
 MERGE INTO "TestMerge1" Target
 USING (
-	SELECT 5 AS "source_as", 10 AS "source_take", 4 AS "source_skip", NULL AS "source_Skip_1", NULL AS "source_insert", NULL AS "source_SELECT" FROM sys.dual
+	SELECT 3 AS "source_as", NULL AS "source_take", 3 AS "source_skip", NULL AS "source_Skip_1", NULL AS "source_insert", NULL AS "source_SELECT" FROM sys.dual
 	UNION ALL
-	SELECT 6, NULL, NULL, NULL, 216, NULL FROM sys.dual
+	SELECT 4, 5, 7, NULL, 214, NULL FROM sys.dual
 	UNION ALL
-	SELECT 3, NULL, 3, NULL, NULL, NULL FROM sys.dual
+	SELECT 5, 10, 4, NULL, NULL, NULL FROM sys.dual
 	UNION ALL
-	SELECT 4, 5, 7, NULL, 214, NULL FROM sys.dual) "Source"
+	SELECT 6, NULL, NULL, NULL, 216, NULL FROM sys.dual) "Source"
 ON (Target."Id" = "Source"."source_as")
 
 WHEN NOT MATCHED THEN
