@@ -30,7 +30,7 @@ WHERE
 		)
 			THEN 0
 		ELSE 1
-	END
+	END = 1
 
 BeforeExecute
 -- SQLite.Classic SQLite
@@ -64,5 +64,5 @@ WHERE
 		)
 			THEN 0
 		ELSE 1
-	END
+	END = 1
 

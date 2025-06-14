@@ -52,7 +52,7 @@ FROM
 			) = 33.25
 				THEN 1
 			ELSE 0
-		END)
+		END = 1)
 
 BeforeExecute
 DisposeTransaction

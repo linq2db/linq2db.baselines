@@ -34,7 +34,7 @@ FROM
 						) = 33.25
 							THEN 0
 						ELSE 1
-					END as [Key_1]
+					END = 1 as [Key_1]
 				FROM
 					[Customers] [t1]
 			) [t2]
@@ -52,7 +52,7 @@ FROM
 			) = 33.25
 				THEN 0
 			ELSE 1
-		END)
+		END = 1)
 
 BeforeExecute
 DisposeTransaction
@@ -75,7 +75,7 @@ FROM
 				) = 33.25
 					THEN 0
 				ELSE 1
-			END as [Key_1]
+			END = 1 as [Key_1]
 		FROM
 			[Customers] [t1]
 	) [t2]
