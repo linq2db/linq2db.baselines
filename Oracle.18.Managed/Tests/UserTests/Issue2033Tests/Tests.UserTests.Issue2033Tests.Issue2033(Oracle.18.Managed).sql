@@ -15,11 +15,11 @@ AS
 			INNER JOIN NC_GROUP_MEMBER ncGroupMember ON ncCode.HANDLE = ncGroupMember.NC_CODE_OR_GROUP_GBO
 	WHERE
 		ncGroupMember.NC_GROUP_BO = 'NCGroupBO:' || ncCode.SITE || ',CATAN_AUTO' OR
-		ncGroupMember.NC_GROUP_BO IS NULL AND 'NCGroupBO:' || ncCode.SITE || ',CATAN_AUTO' IS NULL OR
+		ncGroupMember.NC_GROUP_BO IS NULL AND ncCode.SITE IS NULL OR
 		ncGroupMember.NC_GROUP_BO = 'NCGroupBO:' || ncCode.SITE || ',CATAN_MAN' OR
-		ncGroupMember.NC_GROUP_BO IS NULL AND 'NCGroupBO:' || ncCode.SITE || ',CATAN_MAN' IS NULL OR
+		ncGroupMember.NC_GROUP_BO IS NULL AND ncCode.SITE IS NULL OR
 		ncGroupMember.NC_GROUP_BO = 'NCGroupBO:' || ncCode.SITE || ',CATAN_ALL' OR
-		ncGroupMember.NC_GROUP_BO IS NULL AND 'NCGroupBO:' || ncCode.SITE || ',CATAN_ALL' IS NULL
+		ncGroupMember.NC_GROUP_BO IS NULL AND ncCode.SITE IS NULL
 ),
 "FindProductionFailedNcData"
 (
