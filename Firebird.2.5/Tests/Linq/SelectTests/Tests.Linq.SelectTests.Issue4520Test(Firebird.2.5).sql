@@ -3,21 +3,18 @@
 
 SELECT
 	CASE
-		WHEN "i"."BoolValue" = '0' AND "i"."BoolValue" IS NOT NULL AND ("i"."IntValue" = (
-			SELECT FIRST 1
-				"p"."IntValue"
-			FROM
-				"LinqDataTypes" "p"
-			WHERE
-				"p".ID = 2
-		) OR "i"."IntValue" IS NULL AND (
-			SELECT FIRST 1
-				"p"."IntValue"
-			FROM
-				"LinqDataTypes" "p"
-			WHERE
-				"p".ID = 2
-		) IS NULL)
+		WHEN "i"."BoolValue" = '0' AND "i"."BoolValue" IS NOT NULL AND CASE
+			WHEN "i"."IntValue" <> (
+				SELECT FIRST 1
+					"p"."IntValue"
+				FROM
+					"LinqDataTypes" "p"
+				WHERE
+					"p".ID = 2
+			)
+				THEN '0'
+			ELSE '1'
+		END = '1'
 			THEN '1'
 		ELSE '0'
 	END

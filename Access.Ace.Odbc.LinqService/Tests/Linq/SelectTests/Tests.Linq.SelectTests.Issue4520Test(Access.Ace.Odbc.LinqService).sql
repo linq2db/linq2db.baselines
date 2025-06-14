@@ -2,21 +2,14 @@
 -- Access.Ace.Odbc AccessODBC
 
 SELECT
-	IIF(NOT IIF([i].[BoolValue] IS NOT NULL, [i].[BoolValue], False) AND ([i].[IntValue] = (
+	IIF(NOT IIF([i].[BoolValue] IS NOT NULL, [i].[BoolValue], False) AND IIF([i].[IntValue] <> (
 		SELECT TOP 1
 			[p].[IntValue]
 		FROM
 			[LinqDataTypes] [p]
 		WHERE
 			[p].[ID] = 2
-	) OR [i].[IntValue] IS NULL AND (
-		SELECT TOP 1
-			[p].[IntValue]
-		FROM
-			[LinqDataTypes] [p]
-		WHERE
-			[p].[ID] = 2
-	) IS NULL), True, False)
+	), False, True) = True, True, False)
 FROM
 	[LinqDataTypes] [i]
 WHERE
