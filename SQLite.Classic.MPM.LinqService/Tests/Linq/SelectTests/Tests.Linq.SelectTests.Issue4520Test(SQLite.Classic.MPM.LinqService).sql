@@ -18,7 +18,7 @@ SELECT
 			)
 				THEN 0
 			ELSE 1
-		END
+		END = 1
 			THEN 1
 		ELSE 0
 	END
