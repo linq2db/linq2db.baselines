@@ -31,9 +31,9 @@ FROM
 								[Orders] [a_Orders]
 							WHERE
 								[t1].[CustomerID] = [a_Orders].[CustomerID]
-						) >= 80
-							THEN 1
-						ELSE 0
+						) = 33.25
+							THEN 0
+						ELSE 1
 					END as [Key_1]
 				FROM
 					[Customers] [t1]
@@ -49,9 +49,9 @@ FROM
 					[Orders] [a_Orders_1]
 				WHERE
 					[d].[CustomerID] = [a_Orders_1].[CustomerID]
-			) >= 80
-				THEN 1
-			ELSE 0
+			) = 33.25
+				THEN 0
+			ELSE 1
 		END)
 
 BeforeExecute
@@ -72,9 +72,9 @@ FROM
 						[Orders] [a_Orders]
 					WHERE
 						[t1].[CustomerID] = [a_Orders].[CustomerID]
-				) >= 80
-					THEN 1
-				ELSE 0
+				) = 33.25
+					THEN 0
+				ELSE 1
 			END as [Key_1]
 		FROM
 			[Customers] [t1]

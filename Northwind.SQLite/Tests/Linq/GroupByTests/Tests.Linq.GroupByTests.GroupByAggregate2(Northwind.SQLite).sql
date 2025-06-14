@@ -41,21 +41,18 @@ FROM
 		GROUP BY
 			[t2].[Key_1]
 	) [m_1]
-		INNER JOIN [Customers] [d] ON ([m_1].[Key_1]) = ((
-			SELECT
-				AVG([a_Orders_1].[Freight]) as [AVG_1]
-			FROM
-				[Orders] [a_Orders_1]
-			WHERE
-				[d].[CustomerID] = [a_Orders_1].[CustomerID]
-		) >= 80 AND (
-			SELECT
-				AVG([a_Orders_1].[Freight]) as [AVG_1]
-			FROM
-				[Orders] [a_Orders_1]
-			WHERE
-				[d].[CustomerID] = [a_Orders_1].[CustomerID]
-		) IS NOT NULL)
+		INNER JOIN [Customers] [d] ON ([m_1].[Key_1]) = (CASE
+			WHEN (
+				SELECT
+					AVG([a_Orders_1].[Freight]) as [AVG_1]
+				FROM
+					[Orders] [a_Orders_1]
+				WHERE
+					[d].[CustomerID] = [a_Orders_1].[CustomerID]
+			) >= 80
+				THEN 1
+			ELSE 0
+		END)
 
 BeforeExecute
 DisposeTransaction
