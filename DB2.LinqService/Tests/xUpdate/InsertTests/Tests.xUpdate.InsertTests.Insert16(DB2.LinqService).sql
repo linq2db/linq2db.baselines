@@ -22,7 +22,7 @@ INSERT INTO "Person"
 VALUES
 (
 	'Insert16',
-	RTrim(Char(CHARACTER_LENGTH(CAST(@name AS NVarChar(8)),CODEUNITS32) + CAST(@idx AS Int))),
+	RTrim(Char(CHARACTER_LENGTH(@name,CODEUNITS32) + @idx)),
 	'M'
 )
 

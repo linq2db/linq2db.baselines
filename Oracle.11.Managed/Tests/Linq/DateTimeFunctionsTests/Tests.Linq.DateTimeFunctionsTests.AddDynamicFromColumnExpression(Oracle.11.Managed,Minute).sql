@@ -1,6 +1,6 @@
 ﻿BeforeExecute
 -- Oracle.11.Managed Oracle11
-DECLARE @part1 Int16
+DECLARE @part1 Int32
 SET     @part1 = 4
 DECLARE @part2 Int32
 SET     @part2 = 4

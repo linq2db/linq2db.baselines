@@ -42,7 +42,7 @@ VALUES
 
 BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-DECLARE @part1 Int16
+DECLARE @part1 Int32
 SET     @part1 = 4
 DECLARE @part2 Int32
 SET     @part2 = 4

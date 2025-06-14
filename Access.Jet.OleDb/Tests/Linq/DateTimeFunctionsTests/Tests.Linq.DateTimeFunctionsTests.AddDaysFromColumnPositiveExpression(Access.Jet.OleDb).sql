@@ -42,7 +42,7 @@ VALUES
 
 BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
-DECLARE @part1 SmallInt -- Int16
+DECLARE @part1 Integer -- Int32
 SET     @part1 = 4
 DECLARE @part2 Integer -- Int32
 SET     @part2 = 4
@@ -52,7 +52,7 @@ SELECT
 FROM
 	[LinqDataTypes] [t]
 WHERE
-	[t].[ID] = 5000 AND DateAdd('d', ([t].[SmallIntValue] + CVar(@part1)) - CVar(@part2), [t].[DateTimeValue]) > DateSerial(2018, 1, 2)
+	[t].[ID] = 5000 AND DateAdd('d', ([t].[SmallIntValue] + @part1) - @part2, [t].[DateTimeValue]) > DateSerial(2018, 1, 2)
 
 BeforeExecute
 -- Access.Jet.OleDb AccessOleDb

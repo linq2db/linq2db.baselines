@@ -1,6 +1,6 @@
 ﻿BeforeExecute
 -- SqlServer.Contained.MS SqlServer.2019
-DECLARE @Value1 Int -- Int32
+DECLARE @Value1 BigInt -- Int64
 SET     @Value1 = NULL
 
 UPDATE

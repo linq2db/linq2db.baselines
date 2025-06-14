@@ -1,6 +1,6 @@
 ﻿BeforeExecute
 -- SqlServer.2005.MS SqlServer.2005
-DECLARE @Value1 Int -- Int32
+DECLARE @Value1 BigInt -- Int64
 SET     @Value1 = NULL
 
 UPDATE

@@ -6,7 +6,7 @@ DECLARE @Value1 Integer(4) -- Int32
 SET     @Value1 = 4
 
 SELECT DISTINCT
-	Coalesce("p"."Value1", "p"."ParentID" + CAST(@ParentID AS Int)),
+	Coalesce("p"."Value1", "p"."ParentID" + @ParentID),
 	CAST(@Value1 AS Int)
 FROM
 	"Parent" "p"

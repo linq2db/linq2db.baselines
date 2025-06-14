@@ -3,14 +3,14 @@
 
 SELECT
 	t."Id" / 3,
-	ARRAY_AGG(v) OVER(PARTITION BY (t."Id" / 3), (t."Id" / 2)),
-	ARRAY_AGG(v) OVER(PARTITION BY (t."Id" / 3), (t."Id" / 2)),
-	ARRAY_AGG(ALL v) OVER(PARTITION BY (t."Id" / 3)),
-	ARRAY_AGG(v) FILTER (WHERE (v LIKE 'V0%' ESCAPE '~')) OVER(PARTITION BY (t."Id" / 3)),
-	ARRAY_AGG(ALL v) FILTER (WHERE (v LIKE 'V0%' ESCAPE '~')) OVER(PARTITION BY (t."Id" / 3)),
-	ARRAY_AGG(ALL v) FILTER (WHERE (v LIKE 'V0%' ESCAPE '~')) OVER(PARTITION BY (t."Id" / 3) ORDER BY t."Id", (t."Id" - 1)),
+	ARRAY_AGG(v.value) OVER(PARTITION BY (t."Id" / 3), (t."Id" / 2)),
+	ARRAY_AGG(v.value) OVER(PARTITION BY (t."Id" / 3), (t."Id" / 2)),
+	ARRAY_AGG(ALL v.value) OVER(PARTITION BY (t."Id" / 3)),
+	ARRAY_AGG(v.value) FILTER (WHERE (v.value LIKE 'V0%' ESCAPE '~')) OVER(PARTITION BY (t."Id" / 3)),
+	ARRAY_AGG(ALL v.value) FILTER (WHERE (v.value LIKE 'V0%' ESCAPE '~')) OVER(PARTITION BY (t."Id" / 3)),
+	ARRAY_AGG(ALL v.value) FILTER (WHERE (v.value LIKE 'V0%' ESCAPE '~')) OVER(PARTITION BY (t."Id" / 3) ORDER BY t."Id", (t."Id" - 1)),
 	ROW_NUMBER() OVER(PARTITION BY (t."Id" / 3) ORDER BY t."Id")
 FROM
 	"SampleClass" t
-		INNER JOIN LATERAL UNNEST(t."StrArray") v ON 1=1
+		INNER JOIN LATERAL UNNEST(t."StrArray") v(value) ON 1=1
 

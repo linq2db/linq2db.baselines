@@ -1,8 +1,8 @@
 ﻿BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @param Int -- Int32
+DECLARE @param Double
 SET     @param = 33
-DECLARE @param Decimal
+DECLARE @param Double
 SET     @param = 33
 DECLARE @param Double
 SET     @param = 33
