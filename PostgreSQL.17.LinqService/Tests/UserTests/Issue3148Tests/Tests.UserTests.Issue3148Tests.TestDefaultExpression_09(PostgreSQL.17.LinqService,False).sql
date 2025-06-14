@@ -30,7 +30,7 @@ FROM
 			LIMIT 1
 		) t2 ON 1=1
 WHERE
-	NOT ((t1."ParentID" = t2."ParentID" OR t1."ParentID" IS NULL AND t2."ParentID" IS NULL) AND (t1."ChildID" = t2."ChildID" OR t1."ChildID" IS NULL AND t2."ChildID" IS NULL) AND (t1."GrandChildID" = t2."GrandChildID" OR t1."GrandChildID" IS NULL AND t2."GrandChildID" IS NULL)) AND
+	NOT ((t1."ParentID" = t2."ParentID" OR t1."ParentID" IS NULL AND t2."ParentID" IS NULL) AND NOT (t1."ParentID" IS NULL AND t2."ParentID" IS NOT NULL) AND NOT (t1."ParentID" IS NOT NULL AND t2."ParentID" IS NULL) AND (t1."ChildID" = t2."ChildID" OR t1."ChildID" IS NULL AND t2."ChildID" IS NULL) AND NOT (t1."ChildID" IS NULL AND t2."ChildID" IS NOT NULL) AND NOT (t1."ChildID" IS NOT NULL AND t2."ChildID" IS NULL) AND (t1."GrandChildID" = t2."GrandChildID" OR t1."GrandChildID" IS NULL AND t2."GrandChildID" IS NULL) AND NOT (t1."GrandChildID" IS NULL AND t2."GrandChildID" IS NOT NULL) AND NOT (t1."GrandChildID" IS NOT NULL AND t2."GrandChildID" IS NULL)) AND
 	(x."ParentID" <> (
 		SELECT
 			CASE
@@ -87,7 +87,7 @@ FROM
 			LIMIT 1
 		) t2 ON 1=1
 WHERE
-	NOT ((t1."ParentID" = t2."ParentID" OR t1."ParentID" IS NULL AND t2."ParentID" IS NULL) AND (t1."ChildID" = t2."ChildID" OR t1."ChildID" IS NULL AND t2."ChildID" IS NULL) AND (t1."GrandChildID" = t2."GrandChildID" OR t1."GrandChildID" IS NULL AND t2."GrandChildID" IS NULL)) AND
+	NOT ((t1."ParentID" = t2."ParentID" OR t1."ParentID" IS NULL AND t2."ParentID" IS NULL) AND NOT (t1."ParentID" IS NULL AND t2."ParentID" IS NOT NULL) AND NOT (t1."ParentID" IS NOT NULL AND t2."ParentID" IS NULL) AND (t1."ChildID" = t2."ChildID" OR t1."ChildID" IS NULL AND t2."ChildID" IS NULL) AND NOT (t1."ChildID" IS NULL AND t2."ChildID" IS NOT NULL) AND NOT (t1."ChildID" IS NOT NULL AND t2."ChildID" IS NULL) AND (t1."GrandChildID" = t2."GrandChildID" OR t1."GrandChildID" IS NULL AND t2."GrandChildID" IS NULL) AND NOT (t1."GrandChildID" IS NULL AND t2."GrandChildID" IS NOT NULL) AND NOT (t1."GrandChildID" IS NOT NULL AND t2."GrandChildID" IS NULL)) AND
 	(x."ParentID" <> (
 		SELECT
 			CASE
