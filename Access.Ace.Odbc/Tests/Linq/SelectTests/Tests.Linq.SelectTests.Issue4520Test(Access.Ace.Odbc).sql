@@ -9,7 +9,7 @@ SELECT
 			[LinqDataTypes] [p]
 		WHERE
 			[p].[ID] = 2
-	), False, True), True, False)
+	), False, True) = True, True, False)
 FROM
 	[LinqDataTypes] [i]
 WHERE
