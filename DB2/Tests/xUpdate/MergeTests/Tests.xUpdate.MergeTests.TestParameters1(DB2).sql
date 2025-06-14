@@ -230,8 +230,8 @@ DECLARE @Val1 Integer(4) -- Int32
 SET     @Val1 = 1
 DECLARE @Val3 Integer(4) -- Int32
 SET     @Val3 = 3
-DECLARE @p Integer(4) -- Int32
-SET     @p = 125
+DECLARE @cond Integer(4) -- Int32
+SET     @cond = 125
 
 MERGE INTO "TestMerge1" "Target"
 USING (
@@ -242,7 +242,7 @@ USING (
 	FROM
 		"TestMerge2" "t1"
 	WHERE
-		"t1"."Id" <> CAST(@Val5 AS Int)
+		"t1"."Id" <> @Val5
 ) "Source"
 (
 	"source_Id",
@@ -251,7 +251,7 @@ USING (
 )
 ON ("Target"."Id" = "Source"."source_Id" OR "Target"."Id" = @Val4)
 
-WHEN NOT MATCHED AND "Source"."source_Field7" = CAST(@Val1 AS Int) + "Source"."source_Id" THEN
+WHEN NOT MATCHED AND "Source"."source_Field7" = @Val1 + "Source"."source_Id" THEN
 INSERT
 (
 	"Id",
@@ -259,13 +259,13 @@ INSERT
 )
 VALUES
 (
-	"Source"."source_Id" + CAST(@Val5 AS Int),
+	"Source"."source_Id" + @Val5,
 	"Source"."source_Field1"
 )
 
 WHEN MATCHED AND "Source"."source_Id" = @Val3 THEN
 UPDATE
 SET
-	"Field4" = CAST(@Val5 AS Int)
-WHEN MATCHED AND "Target"."Field3" = @p THEN DELETE
+	"Field4" = @Val5
+WHEN MATCHED AND "Target"."Field3" = @cond THEN DELETE
 

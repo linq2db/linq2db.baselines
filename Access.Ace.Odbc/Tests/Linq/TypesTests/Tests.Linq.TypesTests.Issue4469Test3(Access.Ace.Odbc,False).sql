@@ -1,16 +1,16 @@
 ﻿BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @param Int -- Int32
+DECLARE @param Double
 SET     @param = 33
-DECLARE @param VarChar -- AnsiString
+DECLARE @param Double
 SET     @param = 33
 DECLARE @param Double
 SET     @param = 33
 
 SELECT TOP 2
-	[v].[Integer] / CVar(?),
-	[v].[Decimal] / CVar(?),
-	[v].[Double] / CVar(?)
+	[v].[Integer] / ?,
+	[v].[Decimal] / ?,
+	[v].[Double] / ?
 FROM
 	[Issue4469Table] [v]
 

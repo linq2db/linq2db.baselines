@@ -1,6 +1,6 @@
 ﻿BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
-DECLARE @value Int64
+DECLARE @value UInt32
 SET     @value = 0
 
 SELECT

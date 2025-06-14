@@ -4,7 +4,7 @@ DECLARE @Value Integer(4) -- Int32
 SET     @Value = 1
 
 SELECT
-	Extract(hour from ("t"."DateTimeValue" + CAST(@Value AS Int) HOUR))
+	Extract(hour from ("t"."DateTimeValue" + @Value HOUR))
 FROM
 	"LinqDataTypes" "t"
 

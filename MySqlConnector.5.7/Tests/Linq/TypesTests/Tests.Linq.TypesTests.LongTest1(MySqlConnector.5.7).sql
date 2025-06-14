@@ -1,6 +1,6 @@
 ﻿BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-DECLARE @value Int64
+DECLARE @value UInt32
 SET     @value = 0
 
 SELECT

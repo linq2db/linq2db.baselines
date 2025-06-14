@@ -2,7 +2,7 @@
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
 DECLARE @iteration Integer -- Int32
 SET     @iteration = 2
-DECLARE @Value1 Varchar(2) -- String
+DECLARE @Value1 Text(2) -- String
 SET     @Value1 = '[]'
 DECLARE @Enum Varchar(6) -- String
 SET     @Enum = 'Value1'

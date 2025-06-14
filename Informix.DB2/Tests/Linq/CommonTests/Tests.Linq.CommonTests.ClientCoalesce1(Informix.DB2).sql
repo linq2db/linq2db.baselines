@@ -6,7 +6,7 @@ SELECT
 FROM
 	Parent x
 WHERE
-	Nvl(x.Value1, NULL) > 10
+	Nvl(x.Value1, 100) > 10
 
 BeforeExecute
 -- Informix.DB2 Informix

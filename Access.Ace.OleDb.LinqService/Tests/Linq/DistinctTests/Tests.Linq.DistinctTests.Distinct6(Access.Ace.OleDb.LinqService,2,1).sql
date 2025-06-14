@@ -6,7 +6,7 @@ DECLARE @Value1 Integer -- Int32
 SET     @Value1 = 3
 
 SELECT DISTINCT
-	IIF([p].[Value1] IS NULL, [p].[ParentID] + CVar(@ParentID), [p].[Value1]),
+	IIF([p].[Value1] IS NULL, [p].[ParentID] + @ParentID, [p].[Value1]),
 	CVar(@Value1)
 FROM
 	[Parent] [p]

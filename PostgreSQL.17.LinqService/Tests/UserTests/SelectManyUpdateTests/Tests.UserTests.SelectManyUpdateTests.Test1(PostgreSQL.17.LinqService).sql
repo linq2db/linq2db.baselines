@@ -1,6 +1,6 @@
 ﻿BeforeExecute
 -- PostgreSQL.17 PostgreSQL.15 PostgreSQL
-DECLARE @Value1 Integer -- Int32
+DECLARE @Value1 Bigint -- Int64
 SET     @Value1 = NULL
 
 UPDATE

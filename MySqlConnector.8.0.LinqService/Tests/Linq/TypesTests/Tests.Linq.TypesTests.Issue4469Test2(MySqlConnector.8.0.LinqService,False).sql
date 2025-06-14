@@ -1,16 +1,14 @@
 ﻿BeforeExecute
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-DECLARE @param Int32
+DECLARE @param NewDecimal(2, 0) -- Decimal
 SET     @param = 33
 DECLARE @param_1 NewDecimal(2, 0) -- Decimal
 SET     @param_1 = 33
-DECLARE @param_2 NewDecimal(2, 0) -- Decimal
-SET     @param_2 = 33
 
 SELECT
 	CAST(`v`.`Integer` AS DECIMAL(29, 10)) / @param,
 	`v`.`Decimal` / @param_1,
-	`v`.`Double` / @param_2
+	`v`.`Double` / @param
 FROM
 	`Issue4469Table` `v`
 LIMIT 2
