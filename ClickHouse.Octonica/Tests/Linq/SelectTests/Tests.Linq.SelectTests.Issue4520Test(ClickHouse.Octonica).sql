@@ -18,7 +18,7 @@ SELECT
 			)
 				THEN false
 			ELSE true
-		END
+		END = true
 			THEN true
 		ELSE false
 	END
