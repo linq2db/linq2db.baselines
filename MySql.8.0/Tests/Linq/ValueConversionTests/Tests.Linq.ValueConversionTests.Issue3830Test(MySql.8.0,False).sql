@@ -42,8 +42,7 @@ SELECT
 FROM
 	`Issue3830TestTable` `r`
 WHERE
-	(`r`.`Bool3` IS NULL OR `r`.`Bool3` IS NULL) AND `r`.`Bool1` = @Bool1 AND
-	`r`.`Bool2` IS NULL
+	`r`.`Bool3` IS NULL AND `r`.`Bool1` = @Bool1 AND `r`.`Bool2` IS NULL
 
 BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
@@ -180,8 +179,7 @@ SELECT
 FROM
 	`Issue3830TestTable` `r`
 WHERE
-	(`r`.`Bool3` IS NULL OR `r`.`Bool3` IS NULL) AND `r`.`Bool1` = @Bool1 AND
-	`r`.`Bool2` = @Bool2
+	`r`.`Bool3` IS NULL AND `r`.`Bool1` = @Bool1 AND `r`.`Bool2` = @Bool2
 
 BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80

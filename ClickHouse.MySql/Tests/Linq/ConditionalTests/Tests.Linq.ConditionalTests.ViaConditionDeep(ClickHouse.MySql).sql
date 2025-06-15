@@ -3,10 +3,7 @@
 
 SELECT
 	x.Id,
-	CASE
-		WHEN x.StringProp = '1' OR x.StringProp IS NULL THEN true
-		ELSE false
-	END,
+	x.StringProp = '1' OR x.StringProp IS NULL,
 	CASE
 		WHEN x.StringProp = '2' THEN true
 		ELSE false

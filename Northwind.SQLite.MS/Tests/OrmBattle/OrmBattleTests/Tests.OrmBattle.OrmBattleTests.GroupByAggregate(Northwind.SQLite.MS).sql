@@ -41,10 +41,7 @@ FROM
 		GROUP BY
 			[t2].[Key_1]
 	) [m_1]
-		INNER JOIN [Customers] [d] ON CASE
-			WHEN [m_1].[Key_1] = 1 THEN 1
-			ELSE 0
-		END = CASE
+		INNER JOIN [Customers] [d] ON ([m_1].[Key_1]) = (CASE
 			WHEN (
 				SELECT
 					AVG([a_Orders_1].[Freight]) as [AVG_1]
@@ -55,7 +52,7 @@ FROM
 			) >= 80
 				THEN 1
 			ELSE 0
-		END
+		END)
 
 BeforeExecute
 DisposeTransaction
