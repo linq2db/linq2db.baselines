@@ -7,7 +7,10 @@ SELECT
 FROM
 	[ConditionalData] [x]
 WHERE
-	1 = 0
+	CASE
+		WHEN [x].[StringProp] LIKE '%1%' ESCAPE '~' THEN '1'
+		ELSE '2'
+	END = '-1'
 
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
