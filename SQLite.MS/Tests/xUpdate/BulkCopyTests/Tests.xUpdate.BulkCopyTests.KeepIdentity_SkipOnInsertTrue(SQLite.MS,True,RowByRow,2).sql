@@ -25,7 +25,7 @@ SELECT last_insert_rowid()
 BeforeExecute
 -- SQLite.MS SQLite
 DECLARE @lastId  -- Int32
-SET     @lastId = 3
+SET     @lastId = 452
 
 DELETE FROM
 	[AllTypes]
