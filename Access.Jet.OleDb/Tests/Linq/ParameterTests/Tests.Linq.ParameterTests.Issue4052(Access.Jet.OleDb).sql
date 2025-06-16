@@ -12,5 +12,5 @@ SELECT
 FROM
 	[Person] [c_1]
 WHERE
-	[c_1].[PersonID] = @ID AND (LCase(Trim([c_1].[MiddleName])) = '' OR [c_1].[MiddleName] IS NULL)
+	[c_1].[PersonID] = @ID AND ([c_1].[MiddleName] IS NULL OR LCase(Trim([c_1].[MiddleName])) = '')
 

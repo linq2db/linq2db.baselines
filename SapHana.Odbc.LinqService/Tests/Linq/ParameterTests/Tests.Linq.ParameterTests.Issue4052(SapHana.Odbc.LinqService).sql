@@ -12,5 +12,5 @@ SELECT
 FROM
 	"Person" "c_1"
 WHERE
-	"c_1"."PersonID" = ? AND (Lower(Trim("c_1"."MiddleName")) = '' OR "c_1"."MiddleName" IS NULL)
+	"c_1"."PersonID" = ? AND ("c_1"."MiddleName" IS NULL OR Lower(Trim("c_1"."MiddleName")) = '')
 
