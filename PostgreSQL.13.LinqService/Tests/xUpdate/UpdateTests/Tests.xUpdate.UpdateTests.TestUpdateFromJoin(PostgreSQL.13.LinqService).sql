@@ -6,7 +6,7 @@ UPDATE
 SET
 	col1 = gt_s_one.col1,
 	col2 = gt_s_one.col2,
-	col3 = REPLACE(gt_s_one.col3, 'auth.', ''),
+	col3 = Replace(gt_s_one.col3, 'auth.', ''),
 	col4 = gt_s_one.col4,
 	col5 = CASE
 		WHEN gt_s_one.col3 = 'empty' THEN '1'
@@ -19,6 +19,6 @@ SET
 FROM
 	access_mode y1
 WHERE
-	Upper(REPLACE(gt_s_one.col3, 'auth.', '')) = Upper(y1.code) OR
+	Upper(Replace(gt_s_one.col3, 'auth.', '')) = Upper(y1.code) OR
 	gt_s_one.col3 IS NULL AND y1.code IS NULL
 
