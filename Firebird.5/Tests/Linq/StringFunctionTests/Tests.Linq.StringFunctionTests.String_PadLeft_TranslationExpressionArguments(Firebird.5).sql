@@ -2,17 +2,21 @@
 -- Firebird.5 Firebird4
 
 SELECT
-	"nm"."MiddleName"
+	"s".ID,
+	"s"."FirstName"
 FROM
 	(
 		SELECT
-			CHAR_LENGTH("p"."MiddleName") as "Length_1",
-			"p"."MiddleName"
+			CASE
+				WHEN CHAR_LENGTH("p"."FirstName") >= "p"."PersonID" THEN "p"."FirstName"
+				ELSE LPAD("p"."FirstName", "p"."PersonID", '.')
+			END as "FirstName",
+			"p"."PersonID" as ID
 		FROM
 			"Person" "p"
-	) "nm"
+	) "s"
 WHERE
-	"nm"."Length_1" <> 0 OR "nm"."Length_1" IS NULL
+	"s"."FirstName" <> ''
 
 BeforeExecute
 -- Firebird.5 Firebird4
