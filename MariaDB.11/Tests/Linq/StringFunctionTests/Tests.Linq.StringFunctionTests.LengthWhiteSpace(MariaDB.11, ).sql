@@ -2,9 +2,9 @@
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql
 
 SELECT
-	CHAR_LENGTH(`p`.`FirstName`) = 0
+	`t`.`Str`,
+	CHAR_LENGTH(`t`.`Str`)
 FROM
-	`Person` `p`
-WHERE
-	`p`.`PersonID` = 1
+	`TestLengthModel` `t`
+LIMIT 2
 
