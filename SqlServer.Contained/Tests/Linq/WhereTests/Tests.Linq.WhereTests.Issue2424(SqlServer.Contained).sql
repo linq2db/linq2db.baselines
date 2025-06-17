@@ -1,230 +1,53 @@
 ﻿BeforeExecute
 -- SqlServer.Contained SqlServer.2019
 
-SELECT
+SELECT TOP (2)
 	[i].[Id],
-	[i].[StrValue],
-	[i].[StrValueNullable]
+	[i].[StrValue]
 FROM
 	[Isue2424Table] [i]
 WHERE
-	[i].[StrValue] >= N'0'
+	[i].[StrValue] >= N'4'
 
 BeforeExecute
 -- SqlServer.Contained SqlServer.2019
 
-SELECT
-	[t1].[Id],
-	[t1].[StrValue],
-	[t1].[StrValueNullable]
-FROM
-	[Isue2424Table] [t1]
-
-BeforeExecute
--- SqlServer.Contained SqlServer.2019
-
-SELECT
+SELECT TOP (2)
 	[i].[Id],
-	[i].[StrValue],
-	[i].[StrValueNullable]
+	[i].[StrValue]
 FROM
 	[Isue2424Table] [i]
 WHERE
-	[i].[StrValue] >= N'1'
+	[i].[StrValue] >= N'4'
 
 BeforeExecute
 -- SqlServer.Contained SqlServer.2019
 
-SELECT
-	[t1].[Id],
-	[t1].[StrValue],
-	[t1].[StrValueNullable]
-FROM
-	[Isue2424Table] [t1]
-
-BeforeExecute
--- SqlServer.Contained SqlServer.2019
-
-SELECT
+SELECT TOP (2)
 	[i].[Id],
-	[i].[StrValue],
-	[i].[StrValueNullable]
+	[i].[StrValue]
 FROM
 	[Isue2424Table] [i]
 WHERE
-	[i].[StrValue] >= N'3'
+	[i].[StrValue] <= N'2'
 
 BeforeExecute
 -- SqlServer.Contained SqlServer.2019
 
-SELECT
-	[t1].[Id],
-	[t1].[StrValue],
-	[t1].[StrValueNullable]
-FROM
-	[Isue2424Table] [t1]
-
-BeforeExecute
--- SqlServer.Contained SqlServer.2019
-
-SELECT
+SELECT TOP (2)
 	[i].[Id],
-	[i].[StrValue],
-	[i].[StrValueNullable]
+	[i].[StrValue]
 FROM
 	[Isue2424Table] [i]
 WHERE
-	[i].[StrValue] >= N'5'
+	[i].[StrValue] <= N'2'
 
 BeforeExecute
 -- SqlServer.Contained SqlServer.2019
 
-SELECT
-	[t1].[Id],
-	[t1].[StrValue],
-	[t1].[StrValueNullable]
-FROM
-	[Isue2424Table] [t1]
-
-BeforeExecute
--- SqlServer.Contained SqlServer.2019
-
-SELECT
+SELECT TOP (2)
 	[i].[Id],
-	[i].[StrValue],
-	[i].[StrValueNullable]
-FROM
-	[Isue2424Table] [i]
-WHERE
-	[i].[StrValue] <= N'0'
-
-BeforeExecute
--- SqlServer.Contained SqlServer.2019
-
-SELECT
-	[t1].[Id],
-	[t1].[StrValue],
-	[t1].[StrValueNullable]
-FROM
-	[Isue2424Table] [t1]
-
-BeforeExecute
--- SqlServer.Contained SqlServer.2019
-
-SELECT
-	[i].[Id],
-	[i].[StrValue],
-	[i].[StrValueNullable]
-FROM
-	[Isue2424Table] [i]
-WHERE
-	[i].[StrValue] <= N'1'
-
-BeforeExecute
--- SqlServer.Contained SqlServer.2019
-
-SELECT
-	[t1].[Id],
-	[t1].[StrValue],
-	[t1].[StrValueNullable]
-FROM
-	[Isue2424Table] [t1]
-
-BeforeExecute
--- SqlServer.Contained SqlServer.2019
-
-SELECT
-	[i].[Id],
-	[i].[StrValue],
-	[i].[StrValueNullable]
-FROM
-	[Isue2424Table] [i]
-WHERE
-	[i].[StrValue] <= N'3'
-
-BeforeExecute
--- SqlServer.Contained SqlServer.2019
-
-SELECT
-	[t1].[Id],
-	[t1].[StrValue],
-	[t1].[StrValueNullable]
-FROM
-	[Isue2424Table] [t1]
-
-BeforeExecute
--- SqlServer.Contained SqlServer.2019
-
-SELECT
-	[i].[Id],
-	[i].[StrValue],
-	[i].[StrValueNullable]
-FROM
-	[Isue2424Table] [i]
-WHERE
-	[i].[StrValue] <= N'5'
-
-BeforeExecute
--- SqlServer.Contained SqlServer.2019
-
-SELECT
-	[t1].[Id],
-	[t1].[StrValue],
-	[t1].[StrValueNullable]
-FROM
-	[Isue2424Table] [t1]
-
-BeforeExecute
--- SqlServer.Contained SqlServer.2019
-
-SELECT
-	[i].[Id],
-	[i].[StrValue],
-	[i].[StrValueNullable]
-FROM
-	[Isue2424Table] [i]
-WHERE
-	[i].[StrValue] > N'0'
-
-BeforeExecute
--- SqlServer.Contained SqlServer.2019
-
-SELECT
-	[t1].[Id],
-	[t1].[StrValue],
-	[t1].[StrValueNullable]
-FROM
-	[Isue2424Table] [t1]
-
-BeforeExecute
--- SqlServer.Contained SqlServer.2019
-
-SELECT
-	[i].[Id],
-	[i].[StrValue],
-	[i].[StrValueNullable]
-FROM
-	[Isue2424Table] [i]
-WHERE
-	[i].[StrValue] > N'1'
-
-BeforeExecute
--- SqlServer.Contained SqlServer.2019
-
-SELECT
-	[t1].[Id],
-	[t1].[StrValue],
-	[t1].[StrValueNullable]
-FROM
-	[Isue2424Table] [t1]
-
-BeforeExecute
--- SqlServer.Contained SqlServer.2019
-
-SELECT
-	[i].[Id],
-	[i].[StrValue],
-	[i].[StrValueNullable]
+	[i].[StrValue]
 FROM
 	[Isue2424Table] [i]
 WHERE
@@ -233,86 +56,20 @@ WHERE
 BeforeExecute
 -- SqlServer.Contained SqlServer.2019
 
-SELECT
-	[t1].[Id],
-	[t1].[StrValue],
-	[t1].[StrValueNullable]
-FROM
-	[Isue2424Table] [t1]
-
-BeforeExecute
--- SqlServer.Contained SqlServer.2019
-
-SELECT
+SELECT TOP (2)
 	[i].[Id],
-	[i].[StrValue],
-	[i].[StrValueNullable]
+	[i].[StrValue]
 FROM
 	[Isue2424Table] [i]
 WHERE
-	[i].[StrValue] > N'5'
+	[i].[StrValue] > N'3'
 
 BeforeExecute
 -- SqlServer.Contained SqlServer.2019
 
-SELECT
-	[t1].[Id],
-	[t1].[StrValue],
-	[t1].[StrValueNullable]
-FROM
-	[Isue2424Table] [t1]
-
-BeforeExecute
--- SqlServer.Contained SqlServer.2019
-
-SELECT
+SELECT TOP (2)
 	[i].[Id],
-	[i].[StrValue],
-	[i].[StrValueNullable]
-FROM
-	[Isue2424Table] [i]
-WHERE
-	[i].[StrValue] < N'0'
-
-BeforeExecute
--- SqlServer.Contained SqlServer.2019
-
-SELECT
-	[t1].[Id],
-	[t1].[StrValue],
-	[t1].[StrValueNullable]
-FROM
-	[Isue2424Table] [t1]
-
-BeforeExecute
--- SqlServer.Contained SqlServer.2019
-
-SELECT
-	[i].[Id],
-	[i].[StrValue],
-	[i].[StrValueNullable]
-FROM
-	[Isue2424Table] [i]
-WHERE
-	[i].[StrValue] < N'1'
-
-BeforeExecute
--- SqlServer.Contained SqlServer.2019
-
-SELECT
-	[t1].[Id],
-	[t1].[StrValue],
-	[t1].[StrValueNullable]
-FROM
-	[Isue2424Table] [t1]
-
-BeforeExecute
--- SqlServer.Contained SqlServer.2019
-
-SELECT
-	[i].[Id],
-	[i].[StrValue],
-	[i].[StrValueNullable]
+	[i].[StrValue]
 FROM
 	[Isue2424Table] [i]
 WHERE
@@ -321,86 +78,20 @@ WHERE
 BeforeExecute
 -- SqlServer.Contained SqlServer.2019
 
-SELECT
-	[t1].[Id],
-	[t1].[StrValue],
-	[t1].[StrValueNullable]
-FROM
-	[Isue2424Table] [t1]
-
-BeforeExecute
--- SqlServer.Contained SqlServer.2019
-
-SELECT
+SELECT TOP (2)
 	[i].[Id],
-	[i].[StrValue],
-	[i].[StrValueNullable]
+	[i].[StrValue]
 FROM
 	[Isue2424Table] [i]
 WHERE
-	[i].[StrValue] < N'5'
+	[i].[StrValue] < N'3'
 
 BeforeExecute
 -- SqlServer.Contained SqlServer.2019
 
-SELECT
-	[t1].[Id],
-	[t1].[StrValue],
-	[t1].[StrValueNullable]
-FROM
-	[Isue2424Table] [t1]
-
-BeforeExecute
--- SqlServer.Contained SqlServer.2019
-
-SELECT
+SELECT TOP (2)
 	[i].[Id],
-	[i].[StrValue],
-	[i].[StrValueNullable]
-FROM
-	[Isue2424Table] [i]
-WHERE
-	[i].[StrValue] = N'0'
-
-BeforeExecute
--- SqlServer.Contained SqlServer.2019
-
-SELECT
-	[t1].[Id],
-	[t1].[StrValue],
-	[t1].[StrValueNullable]
-FROM
-	[Isue2424Table] [t1]
-
-BeforeExecute
--- SqlServer.Contained SqlServer.2019
-
-SELECT
-	[i].[Id],
-	[i].[StrValue],
-	[i].[StrValueNullable]
-FROM
-	[Isue2424Table] [i]
-WHERE
-	[i].[StrValue] = N'1'
-
-BeforeExecute
--- SqlServer.Contained SqlServer.2019
-
-SELECT
-	[t1].[Id],
-	[t1].[StrValue],
-	[t1].[StrValueNullable]
-FROM
-	[Isue2424Table] [t1]
-
-BeforeExecute
--- SqlServer.Contained SqlServer.2019
-
-SELECT
-	[i].[Id],
-	[i].[StrValue],
-	[i].[StrValueNullable]
+	[i].[StrValue]
 FROM
 	[Isue2424Table] [i]
 WHERE
@@ -409,120 +100,143 @@ WHERE
 BeforeExecute
 -- SqlServer.Contained SqlServer.2019
 
-SELECT
-	[t1].[Id],
-	[t1].[StrValue],
-	[t1].[StrValueNullable]
-FROM
-	[Isue2424Table] [t1]
-
-BeforeExecute
--- SqlServer.Contained SqlServer.2019
-
-SELECT
+SELECT TOP (2)
 	[i].[Id],
-	[i].[StrValue],
-	[i].[StrValueNullable]
+	[i].[StrValue]
 FROM
 	[Isue2424Table] [i]
 WHERE
-	[i].[StrValue] = N'5'
+	[i].[StrValue] = N'3'
 
 BeforeExecute
 -- SqlServer.Contained SqlServer.2019
 
-SELECT
-	[t1].[Id],
-	[t1].[StrValue],
-	[t1].[StrValueNullable]
-FROM
-	[Isue2424Table] [t1]
-
-BeforeExecute
--- SqlServer.Contained SqlServer.2019
-
-SELECT
+SELECT TOP (2)
 	[i].[Id],
-	[i].[StrValue],
-	[i].[StrValueNullable]
+	[i].[StrValue]
 FROM
 	[Isue2424Table] [i]
 WHERE
-	[i].[StrValue] <> N'0'
+	[i].[StrValue] <= N'2'
 
 BeforeExecute
 -- SqlServer.Contained SqlServer.2019
 
-SELECT
-	[t1].[Id],
-	[t1].[StrValue],
-	[t1].[StrValueNullable]
-FROM
-	[Isue2424Table] [t1]
-
-BeforeExecute
--- SqlServer.Contained SqlServer.2019
-
-SELECT
+SELECT TOP (2)
 	[i].[Id],
-	[i].[StrValue],
-	[i].[StrValueNullable]
+	[i].[StrValue]
 FROM
 	[Isue2424Table] [i]
 WHERE
-	[i].[StrValue] <> N'1'
+	[i].[StrValue] <= N'2'
 
 BeforeExecute
 -- SqlServer.Contained SqlServer.2019
 
-SELECT
-	[t1].[Id],
-	[t1].[StrValue],
-	[t1].[StrValueNullable]
-FROM
-	[Isue2424Table] [t1]
-
-BeforeExecute
--- SqlServer.Contained SqlServer.2019
-
-SELECT
+SELECT TOP (2)
 	[i].[Id],
-	[i].[StrValue],
-	[i].[StrValueNullable]
+	[i].[StrValue]
 FROM
 	[Isue2424Table] [i]
 WHERE
-	[i].[StrValue] <> N'3'
+	[i].[StrValue] >= N'4'
 
 BeforeExecute
 -- SqlServer.Contained SqlServer.2019
 
-SELECT
-	[t1].[Id],
-	[t1].[StrValue],
-	[t1].[StrValueNullable]
-FROM
-	[Isue2424Table] [t1]
-
-BeforeExecute
--- SqlServer.Contained SqlServer.2019
-
-SELECT
+SELECT TOP (2)
 	[i].[Id],
-	[i].[StrValue],
-	[i].[StrValueNullable]
+	[i].[StrValue]
 FROM
 	[Isue2424Table] [i]
 WHERE
-	[i].[StrValue] <> N'5'
+	[i].[StrValue] >= N'4'
 
 BeforeExecute
 -- SqlServer.Contained SqlServer.2019
 
-SELECT
-	[t1].[Id],
-	[t1].[StrValue],
-	[t1].[StrValueNullable]
+SELECT TOP (2)
+	[i].[Id],
+	[i].[StrValue]
 FROM
-	[Isue2424Table] [t1]
+	[Isue2424Table] [i]
+WHERE
+	[i].[StrValue] < N'3'
+
+BeforeExecute
+-- SqlServer.Contained SqlServer.2019
+
+SELECT TOP (2)
+	[i].[Id],
+	[i].[StrValue]
+FROM
+	[Isue2424Table] [i]
+WHERE
+	[i].[StrValue] < N'3'
+
+BeforeExecute
+-- SqlServer.Contained SqlServer.2019
+
+SELECT TOP (2)
+	[i].[Id],
+	[i].[StrValue]
+FROM
+	[Isue2424Table] [i]
+WHERE
+	[i].[StrValue] > N'3'
+
+BeforeExecute
+-- SqlServer.Contained SqlServer.2019
+
+SELECT TOP (2)
+	[i].[Id],
+	[i].[StrValue]
+FROM
+	[Isue2424Table] [i]
+WHERE
+	[i].[StrValue] > N'3'
+
+BeforeExecute
+-- SqlServer.Contained SqlServer.2019
+
+SELECT TOP (2)
+	[i].[Id],
+	[i].[StrValue]
+FROM
+	[Isue2424Table] [i]
+WHERE
+	[i].[StrValue] >= N'5'
+
+BeforeExecute
+-- SqlServer.Contained SqlServer.2019
+
+SELECT TOP (2)
+	[i].[Id],
+	[i].[StrValue]
+FROM
+	[Isue2424Table] [i]
+WHERE
+	[i].[StrValue] >= N'5'
+
+BeforeExecute
+-- SqlServer.Contained SqlServer.2019
+
+SELECT TOP (2)
+	[i].[Id],
+	[i].[StrValue]
+FROM
+	[Isue2424Table] [i]
+WHERE
+	[i].[StrValue] <= N'1'
+
+BeforeExecute
+-- SqlServer.Contained SqlServer.2019
+
+SELECT TOP (2)
+	[i].[Id],
+	[i].[StrValue]
+FROM
+	[Isue2424Table] [i]
+WHERE
+	[i].[StrValue] <= N'1'
 

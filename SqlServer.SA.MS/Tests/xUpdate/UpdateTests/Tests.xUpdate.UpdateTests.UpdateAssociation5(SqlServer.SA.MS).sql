@@ -25,5 +25,5 @@ FROM
 			[x].[ParentID] IN (10000, 20000)
 	) [t1]
 WHERE
-	[u].[ID] = [t1].[ID] AND [u].[BoolValue] = [t1].[BoolValue]
+	[u].[ID] = [t1].[ID] AND IIF([u].[BoolValue] = 1, 1, 0) = IIF([t1].[BoolValue] = 1, 1, 0)
 
