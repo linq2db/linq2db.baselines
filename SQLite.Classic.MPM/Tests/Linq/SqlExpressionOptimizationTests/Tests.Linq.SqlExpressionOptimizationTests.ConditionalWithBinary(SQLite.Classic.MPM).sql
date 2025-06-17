@@ -753,7 +753,7 @@ SELECT
 FROM
 	[OptimizationData] [x]
 WHERE
-	[x].[StringValueNullable] IS NOT NULL
+	[x].[StringValueNullable] IS NOT NULL AND [x].[StringValueNullable] IS NOT NULL
 
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
@@ -784,7 +784,7 @@ SELECT
 FROM
 	[OptimizationData] [x_with_not]
 WHERE
-	[x_with_not].[StringValueNullable] IS NULL
+	NOT ([x_with_not].[StringValueNullable] IS NOT NULL AND [x_with_not].[StringValueNullable] IS NOT NULL)
 
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
@@ -815,7 +815,7 @@ SELECT
 FROM
 	[OptimizationData] [swap]
 WHERE
-	[swap].[StringValueNullable] IS NOT NULL
+	[swap].[StringValueNullable] IS NOT NULL AND [swap].[StringValueNullable] IS NOT NULL
 
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
@@ -846,7 +846,7 @@ SELECT
 FROM
 	[OptimizationData] [swap_with_not]
 WHERE
-	[swap_with_not].[StringValueNullable] IS NULL
+	NOT ([swap_with_not].[StringValueNullable] IS NOT NULL AND [swap_with_not].[StringValueNullable] IS NOT NULL)
 
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
@@ -1121,7 +1121,7 @@ SELECT
 FROM
 	[OptimizationData] [x]
 WHERE
-	[x].[StringValueNullable] IS NULL
+	[x].[StringValueNullable] IS NULL OR [x].[StringValueNullable] IS NULL
 
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
@@ -1152,7 +1152,7 @@ SELECT
 FROM
 	[OptimizationData] [x_with_not]
 WHERE
-	[x_with_not].[StringValueNullable] IS NOT NULL
+	NOT ([x_with_not].[StringValueNullable] IS NULL OR [x_with_not].[StringValueNullable] IS NULL)
 
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
@@ -1183,7 +1183,7 @@ SELECT
 FROM
 	[OptimizationData] [x]
 WHERE
-	[x].[StringValueNullable] IS NULL
+	[x].[StringValueNullable] IS NULL OR [x].[StringValueNullable] IS NULL
 
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
@@ -1214,7 +1214,7 @@ SELECT
 FROM
 	[OptimizationData] [x_with_not]
 WHERE
-	[x_with_not].[StringValueNullable] IS NOT NULL
+	NOT ([x_with_not].[StringValueNullable] IS NULL OR [x_with_not].[StringValueNullable] IS NULL)
 
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
@@ -1245,7 +1245,7 @@ SELECT
 FROM
 	[OptimizationData] [swap]
 WHERE
-	[swap].[StringValueNullable] IS NULL
+	[swap].[StringValueNullable] IS NULL OR [swap].[StringValueNullable] IS NULL
 
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
@@ -1276,7 +1276,7 @@ SELECT
 FROM
 	[OptimizationData] [swap_with_not]
 WHERE
-	[swap_with_not].[StringValueNullable] IS NOT NULL
+	NOT ([swap_with_not].[StringValueNullable] IS NULL OR [swap_with_not].[StringValueNullable] IS NULL)
 
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite

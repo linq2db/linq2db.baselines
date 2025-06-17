@@ -3,7 +3,10 @@
 
 SELECT
 	[x].[Id],
-	[x].[StringProp] = '1' OR [x].[StringProp] IS NULL,
+	CASE
+		WHEN [x].[StringProp] = '1' OR [x].[StringProp] IS NULL THEN 1
+		ELSE 0
+	END,
 	CASE
 		WHEN [x].[StringProp] = '2' THEN 1
 		ELSE 0

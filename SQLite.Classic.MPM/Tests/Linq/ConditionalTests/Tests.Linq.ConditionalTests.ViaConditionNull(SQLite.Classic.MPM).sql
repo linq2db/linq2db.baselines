@@ -9,7 +9,7 @@ FROM
 	[ConditionalData] [x]
 		LEFT JOIN [ConditionalData] [p2] ON [p2].[Id] = [x].[Id] AND [p2].[StringProp] IS NOT NULL
 WHERE
-	[p2].[Id] IS NULL OR [p2].[StringProp] = '-1'
+	[p2].[Id] IS NULL OR [p2].[StringProp] = '-1' AND [p2].[Id] IS NOT NULL
 
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
