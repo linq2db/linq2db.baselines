@@ -2,17 +2,21 @@
 -- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
 
 SELECT
-	nm."MiddleName"
+	s."ID",
+	s."FirstName"
 FROM
 	(
 		SELECT
-			Length(p."MiddleName") as "Length_1",
-			p."MiddleName"
+			CASE
+				WHEN Length(p."FirstName") >= p."PersonID" THEN p."FirstName"
+				ELSE LPAD(p."FirstName", p."PersonID", '.')
+			END as "FirstName",
+			p."PersonID" as "ID"
 		FROM
 			"Person" p
-	) nm
+	) s
 WHERE
-	nm."Length_1" <> 0 OR nm."Length_1" IS NULL
+	s."FirstName" <> ''
 
 BeforeExecute
 -- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
