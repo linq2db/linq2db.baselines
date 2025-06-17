@@ -22,8 +22,7 @@ AS
 			FROM
 				[Employees] [e2]
 			WHERE
-				([e2].[ReportsTo] = [e].[ReportsTo] OR [e2].[ReportsTo] IS NULL AND [e].[ReportsTo] IS NULL) AND
-				[e2].[ReportsTo] IS NOT NULL
+				[e2].[ReportsTo] = [e].[ReportsTo] AND [e2].[ReportsTo] IS NOT NULL
 		)
 	FROM
 		[Employees] [e]
@@ -51,8 +50,7 @@ SELECT
 		FROM
 			[Employees] [e2_1]
 		WHERE
-			([e2_1].[ReportsTo] = [employee].[ReportsTo] OR [e2_1].[ReportsTo] IS NULL AND [employee].[ReportsTo] IS NULL) AND
-			[e2_1].[ReportsTo] IS NOT NULL
+			[e2_1].[ReportsTo] = [employee].[ReportsTo] AND [e2_1].[ReportsTo] IS NOT NULL
 	),
 	[manager_1].[LastName],
 	[manager_1].[FirstName],
@@ -69,8 +67,7 @@ FROM
 					FROM
 						[Employees] [e2]
 					WHERE
-						([e2].[ReportsTo] = [manager].[ReportsTo] OR [e2].[ReportsTo] IS NULL AND [manager].[ReportsTo] IS NULL) AND
-						[e2].[ReportsTo] IS NOT NULL
+						[e2].[ReportsTo] = [manager].[ReportsTo] AND [e2].[ReportsTo] IS NOT NULL
 				) as [NumberOfSubordinates],
 				[manager].[EmployeeID]
 			FROM

@@ -6,7 +6,7 @@ SELECT
 FROM
 	(
 		SELECT
-			IIF(-[p].[MoneyValue] >= 0, Int(-[p].[MoneyValue]), -Int(-(-[p].[MoneyValue]))) as [Value_1]
+			IIF(-[p].[MoneyValue] >= 0, Int(-[p].[MoneyValue]), -Int(1 * [p].[MoneyValue])) as [Value_1]
 		FROM
 			[LinqDataTypes] [p]
 	) [t]

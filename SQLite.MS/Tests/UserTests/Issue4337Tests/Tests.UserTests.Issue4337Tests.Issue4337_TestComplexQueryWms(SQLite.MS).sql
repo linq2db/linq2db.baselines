@@ -19,11 +19,7 @@ SELECT
 	[m_1].[CategoryDimensions],
 	[m_1].[CategoryQuality],
 	[m_1].[CategoryTemperature],
-	CASE
-		WHEN [a1].[Id] IS NOT NULL AND ([a1].[Id] <> X'00000000000000000000000000000000' OR [a1].[Id] IS NULL)
-			THEN 1
-		ELSE 0
-	END,
+	[a1].[Id] IS NOT NULL AND [a1].[Id] <> X'00000000000000000000000000000000',
 	[a1].[Id],
 	[c1].[Id],
 	[c1].[ResourceLabel],
@@ -77,11 +73,7 @@ SELECT
 					[y].[Id] = [x_11].[InfeedAdviceID] AND [y].[InfeedAdviceType] = 10
 			))
 	),
-	CASE
-		WHEN [a2].[Id] IS NOT NULL AND ([a2].[Id] <> X'00000000000000000000000000000000' OR [a2].[Id] IS NULL)
-			THEN 1
-		ELSE 0
-	END,
+	[a2].[Id] IS NOT NULL AND [a2].[Id] <> X'00000000000000000000000000000000',
 	[a2].[Id],
 	[c2].[Id],
 	[c2].[ResourceLabel],

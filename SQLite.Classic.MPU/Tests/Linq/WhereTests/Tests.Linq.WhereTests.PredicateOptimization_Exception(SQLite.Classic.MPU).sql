@@ -1,7 +1,5 @@
 ﻿BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @p4  -- Int32
-SET     @p4 = NULL
 
 SELECT
 	[p].[FirstName],
@@ -12,6 +10,5 @@ SELECT
 FROM
 	[Person] [p]
 WHERE
-	@p4 <= [p].[PersonID] AND [p].[PersonID] <= @p4 OR
-	@p4 <= [p].[PersonID] AND [p].[PersonID] <= @p4
+	1 = 0
 

@@ -4,15 +4,9 @@
 SELECT
 	"nm"."MiddleName"
 FROM
-	(
-		SELECT
-			CHAR_LENGTH("p"."MiddleName") as "Length_1",
-			"p"."MiddleName"
-		FROM
-			"Person" "p"
-	) "nm"
+	"Person" "nm"
 WHERE
-	"nm"."Length_1" <> 0 OR "nm"."Length_1" IS NULL
+	Char_Length("nm"."MiddleName") <> 0 OR "nm"."MiddleName" IS NULL
 
 BeforeExecute
 -- Firebird.3 Firebird3

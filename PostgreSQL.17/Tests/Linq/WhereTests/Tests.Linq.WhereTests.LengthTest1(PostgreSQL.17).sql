@@ -4,15 +4,9 @@
 SELECT
 	nm."MiddleName"
 FROM
-	(
-		SELECT
-			Length(p."MiddleName") as "Length_1",
-			p."MiddleName"
-		FROM
-			"Person" p
-	) nm
+	"Person" nm
 WHERE
-	nm."Length_1" <> 0 OR nm."Length_1" IS NULL
+	Length(nm."MiddleName") <> 0 OR nm."MiddleName" IS NULL
 
 BeforeExecute
 -- PostgreSQL.17 PostgreSQL.15 PostgreSQL
