@@ -2,17 +2,21 @@
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
-	nm.MiddleName
+	s.ID,
+	s.FirstName
 FROM
 	(
 		SELECT
-			lengthUTF8(p.MiddleName) as Length_1,
-			p.MiddleName as MiddleName
+			CASE
+				WHEN lengthUTF8(p.FirstName) >= p.PersonID THEN p.FirstName
+				ELSE LPAD(p.FirstName, p.PersonID, '.')
+			END as FirstName,
+			p.PersonID as ID
 		FROM
 			Person p
-	) nm
+	) s
 WHERE
-	nm.Length_1 <> 0 OR nm.Length_1 IS NULL
+	s.FirstName <> ''
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
