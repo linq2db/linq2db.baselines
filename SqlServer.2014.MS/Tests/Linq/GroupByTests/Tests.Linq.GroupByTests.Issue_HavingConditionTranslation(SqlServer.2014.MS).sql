@@ -9,5 +9,6 @@ FROM
 GROUP BY
 	[t1].[MiddleName]
 HAVING
-	[t1].[MiddleName] IS NULL OR [t1].[MiddleName] <> N'Unknown'
+	[t1].[MiddleName] IS NULL OR [t1].[MiddleName] <> N'Unknown' OR
+	[t1].[MiddleName] IS NULL
 

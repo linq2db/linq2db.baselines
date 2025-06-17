@@ -4,9 +4,15 @@
 SELECT
 	[nm].[MiddleName]
 FROM
-	[Person] [nm]
+	(
+		SELECT
+			LEN([p].[MiddleName] + N'.') - 1 as [Length_1],
+			[p].[MiddleName]
+		FROM
+			[Person] [p]
+	) [nm]
 WHERE
-	LEN([nm].[MiddleName] + N'.') - 1 <> 0 OR [nm].[MiddleName] IS NULL
+	[nm].[Length_1] <> 0 OR [nm].[Length_1] IS NULL
 
 BeforeExecute
 -- SqlServer.2014

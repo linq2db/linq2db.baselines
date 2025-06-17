@@ -7,7 +7,7 @@ SELECT
 FROM
 	[ComplexPredicate] [r]
 WHERE
-	IIF([r].[Value] = N'123', 1, 0) = IIF([r].[Value] = N'1' OR [r].[Value] = N'test', 1, 0)
+	IIF([r].[Value] = N'123', 1, 0) = IIF([r].[Value] = N'1' OR [r].[Value] = N'test' AND ([r].[Value] <> N'1' OR [r].[Value] IS NULL), 1, 0)
 ORDER BY
 	[r].[Id]
 
