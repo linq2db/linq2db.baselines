@@ -11,7 +11,8 @@ WHERE
 		WHEN [r].[Value] = N'123' THEN 1
 		ELSE 0
 	END = CASE
-		WHEN [r].[Value] = N'1' OR [r].[Value] = N'test' THEN 1
+		WHEN [r].[Value] = N'1' OR [r].[Value] = N'test' AND ([r].[Value] <> N'1' OR [r].[Value] IS NULL)
+			THEN 1
 		ELSE 0
 	END
 ORDER BY
