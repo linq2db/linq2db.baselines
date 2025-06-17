@@ -22,3 +22,8 @@ RETURNING
 	[TableWithData].[Value],
 	[TableWithData].[ValueStr]
 
+BeforeExecute
+-- SQLite.MS SQLite (asynchronously)
+
+DROP TABLE IF EXISTS [TableWithData]
+

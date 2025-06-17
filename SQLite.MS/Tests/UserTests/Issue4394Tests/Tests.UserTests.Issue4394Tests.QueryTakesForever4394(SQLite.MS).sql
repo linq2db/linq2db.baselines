@@ -19,7 +19,11 @@ SELECT
 	[m_1].[CategoryDimensions],
 	[m_1].[CategoryQuality],
 	[m_1].[CategoryTemperature],
-	[a1].[Id] IS NOT NULL AND [a1].[Id] <> X'00000000000000000000000000000000',
+	CASE
+		WHEN [a1].[Id] IS NOT NULL AND ([a1].[Id] <> X'00000000000000000000000000000000' OR [a1].[Id] IS NULL)
+			THEN 1
+		ELSE 0
+	END,
 	[a1].[Id],
 	[c1].[Id],
 	[c1].[ResourceLabel],
@@ -203,7 +207,11 @@ SELECT
 	[m_1].[CategoryDimensions],
 	[m_1].[CategoryQuality],
 	[m_1].[CategoryTemperature],
-	[a1].[Id] IS NOT NULL AND [a1].[Id] <> X'00000000000000000000000000000000',
+	CASE
+		WHEN [a1].[Id] IS NOT NULL AND ([a1].[Id] <> X'00000000000000000000000000000000' OR [a1].[Id] IS NULL)
+			THEN 1
+		ELSE 0
+	END,
 	[a1].[Id],
 	[c1].[Id],
 	[c1].[ResourceLabel],
@@ -257,7 +265,11 @@ SELECT
 					[y].[Id] = [x_11].[InfeedAdviceID] AND [y].[InfeedAdviceType] = 0
 			))
 	),
-	[a2].[Id] IS NOT NULL AND [a2].[Id] <> X'00000000000000000000000000000000',
+	CASE
+		WHEN [a2].[Id] IS NOT NULL AND ([a2].[Id] <> X'00000000000000000000000000000000' OR [a2].[Id] IS NULL)
+			THEN 1
+		ELSE 0
+	END,
 	[a2].[Id],
 	[c2].[Id],
 	[c2].[ResourceLabel],
@@ -311,7 +323,11 @@ SELECT
 					[y_1].[Id] = [x_14].[InfeedAdviceID] AND [y_1].[InfeedAdviceType] = 0
 			))
 	),
-	[a3].[Id] IS NOT NULL AND [a3].[Id] <> X'00000000000000000000000000000000',
+	CASE
+		WHEN [a3].[Id] IS NOT NULL AND ([a3].[Id] <> X'00000000000000000000000000000000' OR [a3].[Id] IS NULL)
+			THEN 1
+		ELSE 0
+	END,
 	[a3].[Id],
 	[c3].[Id],
 	[c3].[ResourceLabel],
@@ -365,7 +381,11 @@ SELECT
 					[y_2].[Id] = [x_17].[InfeedAdviceID] AND [y_2].[InfeedAdviceType] = 0
 			))
 	),
-	[a4].[Id] IS NOT NULL AND [a4].[Id] <> X'00000000000000000000000000000000',
+	CASE
+		WHEN [a4].[Id] IS NOT NULL AND ([a4].[Id] <> X'00000000000000000000000000000000' OR [a4].[Id] IS NULL)
+			THEN 1
+		ELSE 0
+	END,
 	[a4].[Id],
 	[c4].[Id],
 	[c4].[ResourceLabel],
@@ -419,7 +439,11 @@ SELECT
 					[y_3].[Id] = [x_20].[InfeedAdviceID] AND [y_3].[InfeedAdviceType] = 0
 			))
 	),
-	[a5].[Id] IS NOT NULL AND [a5].[Id] <> X'00000000000000000000000000000000',
+	CASE
+		WHEN [a5].[Id] IS NOT NULL AND ([a5].[Id] <> X'00000000000000000000000000000000' OR [a5].[Id] IS NULL)
+			THEN 1
+		ELSE 0
+	END,
 	[a5].[Id],
 	[c5].[Id],
 	[c5].[ResourceLabel],
@@ -473,7 +497,11 @@ SELECT
 					[y_4].[Id] = [x_23].[InfeedAdviceID] AND [y_4].[InfeedAdviceType] = 0
 			))
 	),
-	[a6].[Id] IS NOT NULL AND [a6].[Id] <> X'00000000000000000000000000000000',
+	CASE
+		WHEN [a6].[Id] IS NOT NULL AND ([a6].[Id] <> X'00000000000000000000000000000000' OR [a6].[Id] IS NULL)
+			THEN 1
+		ELSE 0
+	END,
 	[a6].[Id],
 	[c6].[Id],
 	[c6].[ResourceLabel],
@@ -527,7 +555,11 @@ SELECT
 					[y_5].[Id] = [x_26].[InfeedAdviceID] AND [y_5].[InfeedAdviceType] = 0
 			))
 	),
-	[a7].[Id] IS NOT NULL AND [a7].[Id] <> X'00000000000000000000000000000000',
+	CASE
+		WHEN [a7].[Id] IS NOT NULL AND ([a7].[Id] <> X'00000000000000000000000000000000' OR [a7].[Id] IS NULL)
+			THEN 1
+		ELSE 0
+	END,
 	[a7].[Id],
 	[c7].[Id],
 	[c7].[ResourceLabel],
@@ -581,7 +613,11 @@ SELECT
 					[y_6].[Id] = [x_29].[InfeedAdviceID] AND [y_6].[InfeedAdviceType] = 0
 			))
 	),
-	[a8].[Id] IS NOT NULL AND [a8].[Id] <> X'00000000000000000000000000000000',
+	CASE
+		WHEN [a8].[Id] IS NOT NULL AND ([a8].[Id] <> X'00000000000000000000000000000000' OR [a8].[Id] IS NULL)
+			THEN 1
+		ELSE 0
+	END,
 	[a8].[Id],
 	[c8].[Id],
 	[c8].[ResourceLabel],
