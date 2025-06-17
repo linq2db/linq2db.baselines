@@ -26,15 +26,15 @@ VALUES
 
 BeforeExecute
 -- Sybase.Managed Sybase
-DECLARE @name UniVarChar(8) -- String
-SET     @name = 'Update14'
+DECLARE @name Integer -- Int32
+SET     @name = 8
 DECLARE @idx Integer -- Int32
 SET     @idx = 4
 
 UPDATE
 	[Person]
 SET
-	[LastName] = CAST(Len(@name) + @idx AS NVarChar(11))
+	[LastName] = CAST(@name + @idx AS NVarChar(11))
 WHERE
 	[Person].[FirstName] LIKE 'Update14%' ESCAPE '~'
 
