@@ -222,8 +222,8 @@ VALUES
 
 BeforeExecute
 -- SqlServer.2008.MS SqlServer.2008
-DECLARE @name NVarChar(4000) -- String
-SET     @name = N'test'
+DECLARE @name Int -- Int32
+SET     @name = 4
 DECLARE @idx Int -- Int32
 SET     @idx = 6
 
@@ -255,7 +255,7 @@ VALUES
 (
 	10 + [Source].[source_Id],
 	123,
-	Len(@name) + @idx,
+	@name + @idx,
 	[Source].[source_Field2],
 	999,
 	888
