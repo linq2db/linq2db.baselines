@@ -4,9 +4,15 @@
 SELECT
 	[nm].[MiddleName]
 FROM
-	[Person] [nm]
+	(
+		SELECT
+			Len([p].[MiddleName]) as [Length_1],
+			[p].[MiddleName]
+		FROM
+			[Person] [p]
+	) [nm]
 WHERE
-	Len([nm].[MiddleName]) <> 0 OR [nm].[MiddleName] IS NULL
+	[nm].[Length_1] <> 0 OR [nm].[Length_1] IS NULL
 
 BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
