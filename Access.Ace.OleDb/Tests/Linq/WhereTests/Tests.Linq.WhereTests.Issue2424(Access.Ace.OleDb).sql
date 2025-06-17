@@ -1,230 +1,53 @@
 ﻿BeforeExecute
 -- Access.Ace.OleDb AccessOleDb
 
-SELECT
+SELECT TOP 2
 	[i].[Id],
-	[i].[StrValue],
-	[i].[StrValueNullable]
+	[i].[StrValue]
 FROM
 	[Isue2424Table] [i]
 WHERE
-	[i].[StrValue] >= '0'
+	[i].[StrValue] >= '4'
 
 BeforeExecute
 -- Access.Ace.OleDb AccessOleDb
 
-SELECT
-	[t1].[Id],
-	[t1].[StrValue],
-	[t1].[StrValueNullable]
-FROM
-	[Isue2424Table] [t1]
-
-BeforeExecute
--- Access.Ace.OleDb AccessOleDb
-
-SELECT
+SELECT TOP 2
 	[i].[Id],
-	[i].[StrValue],
-	[i].[StrValueNullable]
+	[i].[StrValue]
 FROM
 	[Isue2424Table] [i]
 WHERE
-	[i].[StrValue] >= '1'
+	[i].[StrValue] >= '4'
 
 BeforeExecute
 -- Access.Ace.OleDb AccessOleDb
 
-SELECT
-	[t1].[Id],
-	[t1].[StrValue],
-	[t1].[StrValueNullable]
-FROM
-	[Isue2424Table] [t1]
-
-BeforeExecute
--- Access.Ace.OleDb AccessOleDb
-
-SELECT
+SELECT TOP 2
 	[i].[Id],
-	[i].[StrValue],
-	[i].[StrValueNullable]
+	[i].[StrValue]
 FROM
 	[Isue2424Table] [i]
 WHERE
-	[i].[StrValue] >= '3'
+	[i].[StrValue] <= '2'
 
 BeforeExecute
 -- Access.Ace.OleDb AccessOleDb
 
-SELECT
-	[t1].[Id],
-	[t1].[StrValue],
-	[t1].[StrValueNullable]
-FROM
-	[Isue2424Table] [t1]
-
-BeforeExecute
--- Access.Ace.OleDb AccessOleDb
-
-SELECT
+SELECT TOP 2
 	[i].[Id],
-	[i].[StrValue],
-	[i].[StrValueNullable]
+	[i].[StrValue]
 FROM
 	[Isue2424Table] [i]
 WHERE
-	[i].[StrValue] >= '5'
+	[i].[StrValue] <= '2'
 
 BeforeExecute
 -- Access.Ace.OleDb AccessOleDb
 
-SELECT
-	[t1].[Id],
-	[t1].[StrValue],
-	[t1].[StrValueNullable]
-FROM
-	[Isue2424Table] [t1]
-
-BeforeExecute
--- Access.Ace.OleDb AccessOleDb
-
-SELECT
+SELECT TOP 2
 	[i].[Id],
-	[i].[StrValue],
-	[i].[StrValueNullable]
-FROM
-	[Isue2424Table] [i]
-WHERE
-	[i].[StrValue] <= '0'
-
-BeforeExecute
--- Access.Ace.OleDb AccessOleDb
-
-SELECT
-	[t1].[Id],
-	[t1].[StrValue],
-	[t1].[StrValueNullable]
-FROM
-	[Isue2424Table] [t1]
-
-BeforeExecute
--- Access.Ace.OleDb AccessOleDb
-
-SELECT
-	[i].[Id],
-	[i].[StrValue],
-	[i].[StrValueNullable]
-FROM
-	[Isue2424Table] [i]
-WHERE
-	[i].[StrValue] <= '1'
-
-BeforeExecute
--- Access.Ace.OleDb AccessOleDb
-
-SELECT
-	[t1].[Id],
-	[t1].[StrValue],
-	[t1].[StrValueNullable]
-FROM
-	[Isue2424Table] [t1]
-
-BeforeExecute
--- Access.Ace.OleDb AccessOleDb
-
-SELECT
-	[i].[Id],
-	[i].[StrValue],
-	[i].[StrValueNullable]
-FROM
-	[Isue2424Table] [i]
-WHERE
-	[i].[StrValue] <= '3'
-
-BeforeExecute
--- Access.Ace.OleDb AccessOleDb
-
-SELECT
-	[t1].[Id],
-	[t1].[StrValue],
-	[t1].[StrValueNullable]
-FROM
-	[Isue2424Table] [t1]
-
-BeforeExecute
--- Access.Ace.OleDb AccessOleDb
-
-SELECT
-	[i].[Id],
-	[i].[StrValue],
-	[i].[StrValueNullable]
-FROM
-	[Isue2424Table] [i]
-WHERE
-	[i].[StrValue] <= '5'
-
-BeforeExecute
--- Access.Ace.OleDb AccessOleDb
-
-SELECT
-	[t1].[Id],
-	[t1].[StrValue],
-	[t1].[StrValueNullable]
-FROM
-	[Isue2424Table] [t1]
-
-BeforeExecute
--- Access.Ace.OleDb AccessOleDb
-
-SELECT
-	[i].[Id],
-	[i].[StrValue],
-	[i].[StrValueNullable]
-FROM
-	[Isue2424Table] [i]
-WHERE
-	[i].[StrValue] > '0'
-
-BeforeExecute
--- Access.Ace.OleDb AccessOleDb
-
-SELECT
-	[t1].[Id],
-	[t1].[StrValue],
-	[t1].[StrValueNullable]
-FROM
-	[Isue2424Table] [t1]
-
-BeforeExecute
--- Access.Ace.OleDb AccessOleDb
-
-SELECT
-	[i].[Id],
-	[i].[StrValue],
-	[i].[StrValueNullable]
-FROM
-	[Isue2424Table] [i]
-WHERE
-	[i].[StrValue] > '1'
-
-BeforeExecute
--- Access.Ace.OleDb AccessOleDb
-
-SELECT
-	[t1].[Id],
-	[t1].[StrValue],
-	[t1].[StrValueNullable]
-FROM
-	[Isue2424Table] [t1]
-
-BeforeExecute
--- Access.Ace.OleDb AccessOleDb
-
-SELECT
-	[i].[Id],
-	[i].[StrValue],
-	[i].[StrValueNullable]
+	[i].[StrValue]
 FROM
 	[Isue2424Table] [i]
 WHERE
@@ -233,86 +56,20 @@ WHERE
 BeforeExecute
 -- Access.Ace.OleDb AccessOleDb
 
-SELECT
-	[t1].[Id],
-	[t1].[StrValue],
-	[t1].[StrValueNullable]
-FROM
-	[Isue2424Table] [t1]
-
-BeforeExecute
--- Access.Ace.OleDb AccessOleDb
-
-SELECT
+SELECT TOP 2
 	[i].[Id],
-	[i].[StrValue],
-	[i].[StrValueNullable]
+	[i].[StrValue]
 FROM
 	[Isue2424Table] [i]
 WHERE
-	[i].[StrValue] > '5'
+	[i].[StrValue] > '3'
 
 BeforeExecute
 -- Access.Ace.OleDb AccessOleDb
 
-SELECT
-	[t1].[Id],
-	[t1].[StrValue],
-	[t1].[StrValueNullable]
-FROM
-	[Isue2424Table] [t1]
-
-BeforeExecute
--- Access.Ace.OleDb AccessOleDb
-
-SELECT
+SELECT TOP 2
 	[i].[Id],
-	[i].[StrValue],
-	[i].[StrValueNullable]
-FROM
-	[Isue2424Table] [i]
-WHERE
-	[i].[StrValue] < '0'
-
-BeforeExecute
--- Access.Ace.OleDb AccessOleDb
-
-SELECT
-	[t1].[Id],
-	[t1].[StrValue],
-	[t1].[StrValueNullable]
-FROM
-	[Isue2424Table] [t1]
-
-BeforeExecute
--- Access.Ace.OleDb AccessOleDb
-
-SELECT
-	[i].[Id],
-	[i].[StrValue],
-	[i].[StrValueNullable]
-FROM
-	[Isue2424Table] [i]
-WHERE
-	[i].[StrValue] < '1'
-
-BeforeExecute
--- Access.Ace.OleDb AccessOleDb
-
-SELECT
-	[t1].[Id],
-	[t1].[StrValue],
-	[t1].[StrValueNullable]
-FROM
-	[Isue2424Table] [t1]
-
-BeforeExecute
--- Access.Ace.OleDb AccessOleDb
-
-SELECT
-	[i].[Id],
-	[i].[StrValue],
-	[i].[StrValueNullable]
+	[i].[StrValue]
 FROM
 	[Isue2424Table] [i]
 WHERE
@@ -321,86 +78,20 @@ WHERE
 BeforeExecute
 -- Access.Ace.OleDb AccessOleDb
 
-SELECT
-	[t1].[Id],
-	[t1].[StrValue],
-	[t1].[StrValueNullable]
-FROM
-	[Isue2424Table] [t1]
-
-BeforeExecute
--- Access.Ace.OleDb AccessOleDb
-
-SELECT
+SELECT TOP 2
 	[i].[Id],
-	[i].[StrValue],
-	[i].[StrValueNullable]
+	[i].[StrValue]
 FROM
 	[Isue2424Table] [i]
 WHERE
-	[i].[StrValue] < '5'
+	[i].[StrValue] < '3'
 
 BeforeExecute
 -- Access.Ace.OleDb AccessOleDb
 
-SELECT
-	[t1].[Id],
-	[t1].[StrValue],
-	[t1].[StrValueNullable]
-FROM
-	[Isue2424Table] [t1]
-
-BeforeExecute
--- Access.Ace.OleDb AccessOleDb
-
-SELECT
+SELECT TOP 2
 	[i].[Id],
-	[i].[StrValue],
-	[i].[StrValueNullable]
-FROM
-	[Isue2424Table] [i]
-WHERE
-	[i].[StrValue] = '0'
-
-BeforeExecute
--- Access.Ace.OleDb AccessOleDb
-
-SELECT
-	[t1].[Id],
-	[t1].[StrValue],
-	[t1].[StrValueNullable]
-FROM
-	[Isue2424Table] [t1]
-
-BeforeExecute
--- Access.Ace.OleDb AccessOleDb
-
-SELECT
-	[i].[Id],
-	[i].[StrValue],
-	[i].[StrValueNullable]
-FROM
-	[Isue2424Table] [i]
-WHERE
-	[i].[StrValue] = '1'
-
-BeforeExecute
--- Access.Ace.OleDb AccessOleDb
-
-SELECT
-	[t1].[Id],
-	[t1].[StrValue],
-	[t1].[StrValueNullable]
-FROM
-	[Isue2424Table] [t1]
-
-BeforeExecute
--- Access.Ace.OleDb AccessOleDb
-
-SELECT
-	[i].[Id],
-	[i].[StrValue],
-	[i].[StrValueNullable]
+	[i].[StrValue]
 FROM
 	[Isue2424Table] [i]
 WHERE
@@ -409,120 +100,143 @@ WHERE
 BeforeExecute
 -- Access.Ace.OleDb AccessOleDb
 
-SELECT
-	[t1].[Id],
-	[t1].[StrValue],
-	[t1].[StrValueNullable]
-FROM
-	[Isue2424Table] [t1]
-
-BeforeExecute
--- Access.Ace.OleDb AccessOleDb
-
-SELECT
+SELECT TOP 2
 	[i].[Id],
-	[i].[StrValue],
-	[i].[StrValueNullable]
+	[i].[StrValue]
 FROM
 	[Isue2424Table] [i]
 WHERE
-	[i].[StrValue] = '5'
+	[i].[StrValue] = '3'
 
 BeforeExecute
 -- Access.Ace.OleDb AccessOleDb
 
-SELECT
-	[t1].[Id],
-	[t1].[StrValue],
-	[t1].[StrValueNullable]
-FROM
-	[Isue2424Table] [t1]
-
-BeforeExecute
--- Access.Ace.OleDb AccessOleDb
-
-SELECT
+SELECT TOP 2
 	[i].[Id],
-	[i].[StrValue],
-	[i].[StrValueNullable]
+	[i].[StrValue]
 FROM
 	[Isue2424Table] [i]
 WHERE
-	[i].[StrValue] <> '0'
+	[i].[StrValue] <= '2'
 
 BeforeExecute
 -- Access.Ace.OleDb AccessOleDb
 
-SELECT
-	[t1].[Id],
-	[t1].[StrValue],
-	[t1].[StrValueNullable]
-FROM
-	[Isue2424Table] [t1]
-
-BeforeExecute
--- Access.Ace.OleDb AccessOleDb
-
-SELECT
+SELECT TOP 2
 	[i].[Id],
-	[i].[StrValue],
-	[i].[StrValueNullable]
+	[i].[StrValue]
 FROM
 	[Isue2424Table] [i]
 WHERE
-	[i].[StrValue] <> '1'
+	[i].[StrValue] <= '2'
 
 BeforeExecute
 -- Access.Ace.OleDb AccessOleDb
 
-SELECT
-	[t1].[Id],
-	[t1].[StrValue],
-	[t1].[StrValueNullable]
-FROM
-	[Isue2424Table] [t1]
-
-BeforeExecute
--- Access.Ace.OleDb AccessOleDb
-
-SELECT
+SELECT TOP 2
 	[i].[Id],
-	[i].[StrValue],
-	[i].[StrValueNullable]
+	[i].[StrValue]
 FROM
 	[Isue2424Table] [i]
 WHERE
-	[i].[StrValue] <> '3'
+	[i].[StrValue] >= '4'
 
 BeforeExecute
 -- Access.Ace.OleDb AccessOleDb
 
-SELECT
-	[t1].[Id],
-	[t1].[StrValue],
-	[t1].[StrValueNullable]
-FROM
-	[Isue2424Table] [t1]
-
-BeforeExecute
--- Access.Ace.OleDb AccessOleDb
-
-SELECT
+SELECT TOP 2
 	[i].[Id],
-	[i].[StrValue],
-	[i].[StrValueNullable]
+	[i].[StrValue]
 FROM
 	[Isue2424Table] [i]
 WHERE
-	[i].[StrValue] <> '5'
+	[i].[StrValue] >= '4'
 
 BeforeExecute
 -- Access.Ace.OleDb AccessOleDb
 
-SELECT
-	[t1].[Id],
-	[t1].[StrValue],
-	[t1].[StrValueNullable]
+SELECT TOP 2
+	[i].[Id],
+	[i].[StrValue]
 FROM
-	[Isue2424Table] [t1]
+	[Isue2424Table] [i]
+WHERE
+	[i].[StrValue] < '3'
+
+BeforeExecute
+-- Access.Ace.OleDb AccessOleDb
+
+SELECT TOP 2
+	[i].[Id],
+	[i].[StrValue]
+FROM
+	[Isue2424Table] [i]
+WHERE
+	[i].[StrValue] < '3'
+
+BeforeExecute
+-- Access.Ace.OleDb AccessOleDb
+
+SELECT TOP 2
+	[i].[Id],
+	[i].[StrValue]
+FROM
+	[Isue2424Table] [i]
+WHERE
+	[i].[StrValue] > '3'
+
+BeforeExecute
+-- Access.Ace.OleDb AccessOleDb
+
+SELECT TOP 2
+	[i].[Id],
+	[i].[StrValue]
+FROM
+	[Isue2424Table] [i]
+WHERE
+	[i].[StrValue] > '3'
+
+BeforeExecute
+-- Access.Ace.OleDb AccessOleDb
+
+SELECT TOP 2
+	[i].[Id],
+	[i].[StrValue]
+FROM
+	[Isue2424Table] [i]
+WHERE
+	[i].[StrValue] >= '5'
+
+BeforeExecute
+-- Access.Ace.OleDb AccessOleDb
+
+SELECT TOP 2
+	[i].[Id],
+	[i].[StrValue]
+FROM
+	[Isue2424Table] [i]
+WHERE
+	[i].[StrValue] >= '5'
+
+BeforeExecute
+-- Access.Ace.OleDb AccessOleDb
+
+SELECT TOP 2
+	[i].[Id],
+	[i].[StrValue]
+FROM
+	[Isue2424Table] [i]
+WHERE
+	[i].[StrValue] <= '1'
+
+BeforeExecute
+-- Access.Ace.OleDb AccessOleDb
+
+SELECT TOP 2
+	[i].[Id],
+	[i].[StrValue]
+FROM
+	[Isue2424Table] [i]
+WHERE
+	[i].[StrValue] <= '1'
 
