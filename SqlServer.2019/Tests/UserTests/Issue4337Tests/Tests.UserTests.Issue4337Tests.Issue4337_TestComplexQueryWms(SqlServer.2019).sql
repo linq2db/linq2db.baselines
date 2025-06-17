@@ -19,7 +19,7 @@ SELECT
 	[m_1].[CategoryDimensions],
 	[m_1].[CategoryQuality],
 	[m_1].[CategoryTemperature],
-	IIF([a1].[Id] IS NOT NULL AND ([a1].[Id] <> '00000000-0000-0000-0000-000000000000' OR [a1].[Id] IS NULL), 1, 0),
+	IIF([a1].[Id] IS NOT NULL AND [a1].[Id] <> '00000000-0000-0000-0000-000000000000', 1, 0),
 	[a1].[Id],
 	[c1].[Id],
 	[c1].[ResourceLabel],
@@ -73,7 +73,7 @@ SELECT
 					[y].[Id] = [x_11].[InfeedAdviceID] AND [y].[InfeedAdviceType] = 10
 			))
 	), 1, 0),
-	IIF([a2].[Id] IS NOT NULL AND ([a2].[Id] <> '00000000-0000-0000-0000-000000000000' OR [a2].[Id] IS NULL), 1, 0),
+	IIF([a2].[Id] IS NOT NULL AND [a2].[Id] <> '00000000-0000-0000-0000-000000000000', 1, 0),
 	[a2].[Id],
 	[c2].[Id],
 	[c2].[ResourceLabel],

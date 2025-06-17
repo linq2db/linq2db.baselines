@@ -22,11 +22,3 @@ RETURNING
 	"s"."Value",
 	"s"."ValueStr"
 
-BeforeExecute
--- Firebird.5 Firebird4 (asynchronously)
-
-EXECUTE BLOCK AS BEGIN
-	IF (EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'TableWithData')) THEN
-		EXECUTE STATEMENT 'DROP TABLE "TableWithData"';
-END
-

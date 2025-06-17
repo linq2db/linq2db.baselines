@@ -41,8 +41,7 @@ SELECT
 FROM
 	"Issue3830TestTable" "r"
 WHERE
-	("r"."Bool3" IS NULL OR "r"."Bool3" IS NULL) AND "r"."Bool1" = ? AND
-	"r"."Bool2" IS NULL
+	"r"."Bool3" IS NULL AND "r"."Bool1" = ? AND "r"."Bool2" IS NULL
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
@@ -176,8 +175,7 @@ SELECT
 FROM
 	"Issue3830TestTable" "r"
 WHERE
-	("r"."Bool3" IS NULL OR "r"."Bool3" IS NULL) AND "r"."Bool1" = ? AND
-	"r"."Bool2" = ?
+	"r"."Bool3" IS NULL AND "r"."Bool1" = ? AND "r"."Bool2" = ?
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc

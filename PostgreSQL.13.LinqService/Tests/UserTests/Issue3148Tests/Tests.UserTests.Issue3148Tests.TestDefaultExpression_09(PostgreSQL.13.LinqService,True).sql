@@ -30,30 +30,23 @@ FROM
 			LIMIT 1
 		) t2 ON 1=1
 WHERE
-	NOT ((t1."ParentID" = t2."ParentID" OR t1."ParentID" IS NULL AND t2."ParentID" IS NULL) AND (t1."ChildID" = t2."ChildID" OR t1."ChildID" IS NULL AND t2."ChildID" IS NULL) AND (t1."GrandChildID" = t2."GrandChildID" OR t1."GrandChildID" IS NULL AND t2."GrandChildID" IS NULL)) AND
-	(x."ParentID" <> (
-		SELECT
-			CASE
-				WHEN "a_Children"."ChildID" IS NOT NULL THEN "a_Children"."ChildID"
-				ELSE 0
-			END
-		FROM
-			"Child" "a_Children"
-		WHERE
-			"a_Parent"."ParentID" = "a_Children"."ParentID"
-		LIMIT 1
-	) OR (
-		SELECT
-			CASE
-				WHEN "a_Children"."ChildID" IS NOT NULL THEN "a_Children"."ChildID"
-				ELSE 0
-			END
-		FROM
-			"Child" "a_Children"
-		WHERE
-			"a_Parent"."ParentID" = "a_Children"."ParentID"
-		LIMIT 1
-	) IS NULL)
+	NOT ((t1."ParentID" = t2."ParentID" OR t1."ParentID" IS NULL AND t2."ParentID" IS NULL) AND NOT (t1."ParentID" IS NULL AND t2."ParentID" IS NOT NULL) AND NOT (t1."ParentID" IS NOT NULL AND t2."ParentID" IS NULL) AND (t1."ChildID" = t2."ChildID" OR t1."ChildID" IS NULL AND t2."ChildID" IS NULL) AND NOT (t1."ChildID" IS NULL AND t2."ChildID" IS NOT NULL) AND NOT (t1."ChildID" IS NOT NULL AND t2."ChildID" IS NULL) AND (t1."GrandChildID" = t2."GrandChildID" OR t1."GrandChildID" IS NULL AND t2."GrandChildID" IS NULL) AND NOT (t1."GrandChildID" IS NULL AND t2."GrandChildID" IS NOT NULL) AND NOT (t1."GrandChildID" IS NOT NULL AND t2."GrandChildID" IS NULL)) AND
+	CASE
+		WHEN x."ParentID" = (
+			SELECT
+				CASE
+					WHEN "a_Children"."ChildID" IS NOT NULL THEN "a_Children"."ChildID"
+					ELSE 0
+				END
+			FROM
+				"Child" "a_Children"
+			WHERE
+				"a_Parent"."ParentID" = "a_Children"."ParentID"
+			LIMIT 1
+		)
+			THEN False
+		ELSE True
+	END
 
 BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
@@ -87,28 +80,21 @@ FROM
 			LIMIT 1
 		) t2 ON 1=1
 WHERE
-	NOT ((t1."ParentID" = t2."ParentID" OR t1."ParentID" IS NULL AND t2."ParentID" IS NULL) AND (t1."ChildID" = t2."ChildID" OR t1."ChildID" IS NULL AND t2."ChildID" IS NULL) AND (t1."GrandChildID" = t2."GrandChildID" OR t1."GrandChildID" IS NULL AND t2."GrandChildID" IS NULL)) AND
-	(x."ParentID" <> (
-		SELECT
-			CASE
-				WHEN "a_Children"."ChildID" IS NOT NULL THEN "a_Children"."ChildID"
-				ELSE 0
-			END
-		FROM
-			"Child" "a_Children"
-		WHERE
-			"a_Parent"."ParentID" = "a_Children"."ParentID"
-		LIMIT 1
-	) OR (
-		SELECT
-			CASE
-				WHEN "a_Children"."ChildID" IS NOT NULL THEN "a_Children"."ChildID"
-				ELSE 0
-			END
-		FROM
-			"Child" "a_Children"
-		WHERE
-			"a_Parent"."ParentID" = "a_Children"."ParentID"
-		LIMIT 1
-	) IS NULL)
+	NOT ((t1."ParentID" = t2."ParentID" OR t1."ParentID" IS NULL AND t2."ParentID" IS NULL) AND NOT (t1."ParentID" IS NULL AND t2."ParentID" IS NOT NULL) AND NOT (t1."ParentID" IS NOT NULL AND t2."ParentID" IS NULL) AND (t1."ChildID" = t2."ChildID" OR t1."ChildID" IS NULL AND t2."ChildID" IS NULL) AND NOT (t1."ChildID" IS NULL AND t2."ChildID" IS NOT NULL) AND NOT (t1."ChildID" IS NOT NULL AND t2."ChildID" IS NULL) AND (t1."GrandChildID" = t2."GrandChildID" OR t1."GrandChildID" IS NULL AND t2."GrandChildID" IS NULL) AND NOT (t1."GrandChildID" IS NULL AND t2."GrandChildID" IS NOT NULL) AND NOT (t1."GrandChildID" IS NOT NULL AND t2."GrandChildID" IS NULL)) AND
+	CASE
+		WHEN x."ParentID" = (
+			SELECT
+				CASE
+					WHEN "a_Children"."ChildID" IS NOT NULL THEN "a_Children"."ChildID"
+					ELSE 0
+				END
+			FROM
+				"Child" "a_Children"
+			WHERE
+				"a_Parent"."ParentID" = "a_Children"."ParentID"
+			LIMIT 1
+		)
+			THEN False
+		ELSE True
+	END
 
