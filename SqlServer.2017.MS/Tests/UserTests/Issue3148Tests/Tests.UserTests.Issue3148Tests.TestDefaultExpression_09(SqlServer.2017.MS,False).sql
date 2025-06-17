@@ -29,15 +29,22 @@ FROM
 				[x].[ChildID] = [a_GrandChildren_1].[ChildID]
 		) [t2]
 WHERE
-	NOT (([t1].[ParentID] = [t2].[ParentID] OR [t1].[ParentID] IS NULL AND [t2].[ParentID] IS NULL) AND NOT ([t1].[ParentID] IS NULL AND [t2].[ParentID] IS NOT NULL) AND NOT ([t1].[ParentID] IS NOT NULL AND [t2].[ParentID] IS NULL) AND ([t1].[ChildID] = [t2].[ChildID] OR [t1].[ChildID] IS NULL AND [t2].[ChildID] IS NULL) AND NOT ([t1].[ChildID] IS NULL AND [t2].[ChildID] IS NOT NULL) AND NOT ([t1].[ChildID] IS NOT NULL AND [t2].[ChildID] IS NULL) AND ([t1].[GrandChildID] = [t2].[GrandChildID] OR [t1].[GrandChildID] IS NULL AND [t2].[GrandChildID] IS NULL) AND NOT ([t1].[GrandChildID] IS NULL AND [t2].[GrandChildID] IS NOT NULL) AND NOT ([t1].[GrandChildID] IS NOT NULL AND [t2].[GrandChildID] IS NULL)) AND
-	IIF([x].[ParentID] = (
+	NOT (([t1].[ParentID] = [t2].[ParentID] OR [t1].[ParentID] IS NULL AND [t2].[ParentID] IS NULL) AND ([t1].[ChildID] = [t2].[ChildID] OR [t1].[ChildID] IS NULL AND [t2].[ChildID] IS NULL) AND ([t1].[GrandChildID] = [t2].[GrandChildID] OR [t1].[GrandChildID] IS NULL AND [t2].[GrandChildID] IS NULL)) AND
+	([x].[ParentID] <> (
 		SELECT TOP (1)
 			IIF([a_Children].[ChildID] IS NOT NULL, [a_Children].[ChildID], 0)
 		FROM
 			[Child] [a_Children]
 		WHERE
 			[a_Parent].[ParentID] = [a_Children].[ParentID]
-	), 0, 1) = 1
+	) OR (
+		SELECT TOP (1)
+			IIF([a_Children].[ChildID] IS NOT NULL, [a_Children].[ChildID], 0)
+		FROM
+			[Child] [a_Children]
+		WHERE
+			[a_Parent].[ParentID] = [a_Children].[ParentID]
+	) IS NULL)
 
 BeforeExecute
 -- SqlServer.2017.MS SqlServer.2017
@@ -70,13 +77,20 @@ FROM
 				[x].[ChildID] = [a_GrandChildren_1].[ChildID]
 		) [t2]
 WHERE
-	NOT (([t1].[ParentID] = [t2].[ParentID] OR [t1].[ParentID] IS NULL AND [t2].[ParentID] IS NULL) AND NOT ([t1].[ParentID] IS NULL AND [t2].[ParentID] IS NOT NULL) AND NOT ([t1].[ParentID] IS NOT NULL AND [t2].[ParentID] IS NULL) AND ([t1].[ChildID] = [t2].[ChildID] OR [t1].[ChildID] IS NULL AND [t2].[ChildID] IS NULL) AND NOT ([t1].[ChildID] IS NULL AND [t2].[ChildID] IS NOT NULL) AND NOT ([t1].[ChildID] IS NOT NULL AND [t2].[ChildID] IS NULL) AND ([t1].[GrandChildID] = [t2].[GrandChildID] OR [t1].[GrandChildID] IS NULL AND [t2].[GrandChildID] IS NULL) AND NOT ([t1].[GrandChildID] IS NULL AND [t2].[GrandChildID] IS NOT NULL) AND NOT ([t1].[GrandChildID] IS NOT NULL AND [t2].[GrandChildID] IS NULL)) AND
-	IIF([x].[ParentID] = (
+	NOT (([t1].[ParentID] = [t2].[ParentID] OR [t1].[ParentID] IS NULL AND [t2].[ParentID] IS NULL) AND ([t1].[ChildID] = [t2].[ChildID] OR [t1].[ChildID] IS NULL AND [t2].[ChildID] IS NULL) AND ([t1].[GrandChildID] = [t2].[GrandChildID] OR [t1].[GrandChildID] IS NULL AND [t2].[GrandChildID] IS NULL)) AND
+	([x].[ParentID] <> (
 		SELECT TOP (1)
 			IIF([a_Children].[ChildID] IS NOT NULL, [a_Children].[ChildID], 0)
 		FROM
 			[Child] [a_Children]
 		WHERE
 			[a_Parent].[ParentID] = [a_Children].[ParentID]
-	), 0, 1) = 1
+	) OR (
+		SELECT TOP (1)
+			IIF([a_Children].[ChildID] IS NOT NULL, [a_Children].[ChildID], 0)
+		FROM
+			[Child] [a_Children]
+		WHERE
+			[a_Parent].[ParentID] = [a_Children].[ParentID]
+	) IS NULL)
 
