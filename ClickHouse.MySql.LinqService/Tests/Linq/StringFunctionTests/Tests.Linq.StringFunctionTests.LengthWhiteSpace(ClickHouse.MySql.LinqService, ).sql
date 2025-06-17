@@ -2,9 +2,9 @@
 -- ClickHouse.MySql ClickHouse
 
 SELECT
-	lengthUTF8(p.FirstName) = 0
+	t.Str,
+	lengthUTF8(t.Str)
 FROM
-	Person p
-WHERE
-	p.PersonID = 1
+	TestLengthModel t
+LIMIT 2
 
