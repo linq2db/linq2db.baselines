@@ -19,22 +19,28 @@ FROM
 				[x].[ParentID] = [a_GrandChildren].[ParentID] AND [x].[ChildID] = [a_GrandChildren].[ChildID]
 		) [t1]
 WHERE
-	NOT (([a_Parent].[ParentID] = [t1].[ParentID] OR [a_Parent].[ParentID] IS NULL AND [t1].[ParentID] IS NULL) AND NOT ([a_Parent].[ParentID] IS NULL AND [t1].[ParentID] IS NOT NULL) AND NOT ([a_Parent].[ParentID] IS NOT NULL AND [t1].[ParentID] IS NULL) AND ([a_Parent].[Value1] = [t1].[Value1] OR [a_Parent].[Value1] IS NULL AND [t1].[Value1] IS NULL) AND NOT ([a_Parent].[Value1] IS NULL AND [t1].[Value1] IS NOT NULL) AND NOT ([a_Parent].[Value1] IS NOT NULL AND [t1].[Value1] IS NULL)) AND
-	CASE
-		WHEN [x].[ParentID] = (
-			SELECT TOP (1)
-				CASE
-					WHEN [a_Children].[ChildID] IS NOT NULL THEN [a_Children].[ChildID]
-					ELSE 0
-				END
-			FROM
-				[Child] [a_Children]
-			WHERE
-				[a_Parent].[ParentID] = [a_Children].[ParentID]
-		)
-			THEN 0
-		ELSE 1
-	END = 1
+	NOT (([a_Parent].[ParentID] = [t1].[ParentID] OR [a_Parent].[ParentID] IS NULL AND [t1].[ParentID] IS NULL) AND ([a_Parent].[Value1] = [t1].[Value1] OR [a_Parent].[Value1] IS NULL AND [t1].[Value1] IS NULL)) AND
+	([x].[ParentID] <> (
+		SELECT TOP (1)
+			CASE
+				WHEN [a_Children].[ChildID] IS NOT NULL THEN [a_Children].[ChildID]
+				ELSE 0
+			END
+		FROM
+			[Child] [a_Children]
+		WHERE
+			[a_Parent].[ParentID] = [a_Children].[ParentID]
+	) OR (
+		SELECT TOP (1)
+			CASE
+				WHEN [a_Children].[ChildID] IS NOT NULL THEN [a_Children].[ChildID]
+				ELSE 0
+			END
+		FROM
+			[Child] [a_Children]
+		WHERE
+			[a_Parent].[ParentID] = [a_Children].[ParentID]
+	) IS NULL)
 
 BeforeExecute
 -- SqlServer.2008
@@ -57,20 +63,26 @@ FROM
 				[x].[ParentID] = [a_GrandChildren].[ParentID] AND [x].[ChildID] = [a_GrandChildren].[ChildID]
 		) [t1]
 WHERE
-	NOT (([a_Parent].[ParentID] = [t1].[ParentID] OR [a_Parent].[ParentID] IS NULL AND [t1].[ParentID] IS NULL) AND NOT ([a_Parent].[ParentID] IS NULL AND [t1].[ParentID] IS NOT NULL) AND NOT ([a_Parent].[ParentID] IS NOT NULL AND [t1].[ParentID] IS NULL) AND ([a_Parent].[Value1] = [t1].[Value1] OR [a_Parent].[Value1] IS NULL AND [t1].[Value1] IS NULL) AND NOT ([a_Parent].[Value1] IS NULL AND [t1].[Value1] IS NOT NULL) AND NOT ([a_Parent].[Value1] IS NOT NULL AND [t1].[Value1] IS NULL)) AND
-	CASE
-		WHEN [x].[ParentID] = (
-			SELECT TOP (1)
-				CASE
-					WHEN [a_Children].[ChildID] IS NOT NULL THEN [a_Children].[ChildID]
-					ELSE 0
-				END
-			FROM
-				[Child] [a_Children]
-			WHERE
-				[a_Parent].[ParentID] = [a_Children].[ParentID]
-		)
-			THEN 0
-		ELSE 1
-	END = 1
+	NOT (([a_Parent].[ParentID] = [t1].[ParentID] OR [a_Parent].[ParentID] IS NULL AND [t1].[ParentID] IS NULL) AND ([a_Parent].[Value1] = [t1].[Value1] OR [a_Parent].[Value1] IS NULL AND [t1].[Value1] IS NULL)) AND
+	([x].[ParentID] <> (
+		SELECT TOP (1)
+			CASE
+				WHEN [a_Children].[ChildID] IS NOT NULL THEN [a_Children].[ChildID]
+				ELSE 0
+			END
+		FROM
+			[Child] [a_Children]
+		WHERE
+			[a_Parent].[ParentID] = [a_Children].[ParentID]
+	) OR (
+		SELECT TOP (1)
+			CASE
+				WHEN [a_Children].[ChildID] IS NOT NULL THEN [a_Children].[ChildID]
+				ELSE 0
+			END
+		FROM
+			[Child] [a_Children]
+		WHERE
+			[a_Parent].[ParentID] = [a_Children].[ParentID]
+	) IS NULL)
 
