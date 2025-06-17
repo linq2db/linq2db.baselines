@@ -2,7 +2,9 @@
 -- ClickHouse.Client ClickHouse
 
 SELECT
-	lengthUTF8(p.FirstName)
+	t.Str,
+	lengthUTF8(t.Str)
 FROM
-	Person p
+	TestLengthModel t
+LIMIT 2
 
