@@ -16,5 +16,5 @@ FROM
 			LIMIT 1
 		) "t1" ON 1=1
 WHERE
-	"t1"."Association" IS NOT NULL AND "t1"."Association" <> 'unknown'
+	"t1"."Association" IS NOT NULL AND ("t1"."Association" <> 'unknown' OR "t1"."Association" IS NULL)
 

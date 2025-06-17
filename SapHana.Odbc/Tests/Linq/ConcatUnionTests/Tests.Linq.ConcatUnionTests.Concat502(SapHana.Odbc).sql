@@ -28,5 +28,6 @@ FROM
 			"c_1"."ParentID" = 3
 	) "p_1"
 WHERE
-	"p_1"."Value1" <> 2 OR "p_1"."Value1" IS NULL OR "p_1"."cond" IS NULL
+	("p_1"."Value1" <> 2 OR "p_1"."Value1" IS NULL) AND "p_1"."cond" IS NOT NULL OR
+	"p_1"."cond" IS NULL
 
