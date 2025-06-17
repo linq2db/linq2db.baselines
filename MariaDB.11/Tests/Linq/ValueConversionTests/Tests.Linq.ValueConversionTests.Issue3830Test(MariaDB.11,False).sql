@@ -42,7 +42,8 @@ SELECT
 FROM
 	`Issue3830TestTable` `r`
 WHERE
-	`r`.`Bool3` IS NULL AND `r`.`Bool1` = @Bool1 AND `r`.`Bool2` IS NULL
+	(`r`.`Bool3` IS NULL OR `r`.`Bool3` IS NULL) AND `r`.`Bool1` = @Bool1 AND
+	`r`.`Bool2` IS NULL
 
 BeforeExecute
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql
@@ -179,7 +180,8 @@ SELECT
 FROM
 	`Issue3830TestTable` `r`
 WHERE
-	`r`.`Bool3` IS NULL AND `r`.`Bool1` = @Bool1 AND `r`.`Bool2` = @Bool2
+	(`r`.`Bool3` IS NULL OR `r`.`Bool3` IS NULL) AND `r`.`Bool1` = @Bool1 AND
+	`r`.`Bool2` = @Bool2
 
 BeforeExecute
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql
