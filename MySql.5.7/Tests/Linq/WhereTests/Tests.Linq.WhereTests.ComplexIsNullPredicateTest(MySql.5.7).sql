@@ -7,7 +7,14 @@ SELECT
 FROM
 	`ComplexPredicate` `r`
 WHERE
-	(`r`.`Value` = '123' AND `r`.`Value` IS NOT NULL) = (`r`.`Value` = '1' AND `r`.`Value` IS NOT NULL OR `r`.`Value` = 'test' AND `r`.`Value` IS NOT NULL)
+	CASE
+		WHEN `r`.`Value` = '123' THEN 1
+		ELSE 0
+	END = CASE
+		WHEN `r`.`Value` = '1' OR `r`.`Value` = 'test' AND (`r`.`Value` <> '1' OR `r`.`Value` IS NULL)
+			THEN 1
+		ELSE 0
+	END
 ORDER BY
 	`r`.`Id`
 
