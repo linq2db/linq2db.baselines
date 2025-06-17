@@ -26,15 +26,15 @@ VALUES
 
 BeforeExecute
 -- SqlCe
-DECLARE @name NVarChar(8) -- String
-SET     @name = 'Update14'
+DECLARE @name Int -- Int32
+SET     @name = 8
 DECLARE @idx Int -- Int32
 SET     @idx = 4
 
 UPDATE
 	[Person]
 SET
-	[LastName] = CAST(Len(@name) + @idx AS NVarChar(11))
+	[LastName] = CAST(@name + @idx AS NVarChar(11))
 WHERE
 	[Person].[FirstName] LIKE 'Update14%' ESCAPE '~'
 
