@@ -2,17 +2,18 @@
 -- Access.Ace.Odbc AccessODBC
 
 SELECT
-	[nm].[MiddleName]
+	[s].[ID],
+	[s].[FirstName]
 FROM
 	(
 		SELECT
-			Len([p].[MiddleName]) as [Length_1],
-			[p].[MiddleName]
+			IIF(Len([p].[FirstName]) >= [p].[PersonID], [p].[FirstName], STRING([p].[PersonID] - Len([p].[FirstName]), '.') + [p].[FirstName]) as [FirstName],
+			[p].[PersonID] as [ID]
 		FROM
 			[Person] [p]
-	) [nm]
+	) [s]
 WHERE
-	[nm].[Length_1] <> 0 OR [nm].[Length_1] IS NULL
+	[s].[FirstName] <> ''
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
