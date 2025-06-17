@@ -238,15 +238,15 @@ BeforeExecute
 
 MERGE INTO [TestMerge1] [Target]
 USING (
-	SELECT 1 AS [source_Id], 123 AS [source_Field1], NULL AS [source_Field2], NULL AS [source_Field4], NULL AS [source_Field3]
-	UNION ALL
-	SELECT 3, NULL, 3, NULL, NULL
+	SELECT 3 AS [source_Id], NULL AS [source_Field1], 3 AS [source_Field2], NULL AS [source_Field4], NULL AS [source_Field3]
 	UNION ALL
 	SELECT 4, 5, 7, 214, NULL
 	UNION ALL
 	SELECT 5, 10, 4, NULL, NULL
 	UNION ALL
-	SELECT 6, NULL, NULL, 216, NULL) [Source]
+	SELECT 6, NULL, NULL, 216, NULL
+	UNION ALL
+	SELECT 1, 123, NULL, NULL, NULL) [Source]
 (
 	[source_Id],
 	[source_Field1],
