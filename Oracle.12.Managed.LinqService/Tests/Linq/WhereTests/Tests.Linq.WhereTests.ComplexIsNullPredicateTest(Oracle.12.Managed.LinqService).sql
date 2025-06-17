@@ -11,7 +11,8 @@ WHERE
 		WHEN r."Value" = '123' THEN 1
 		ELSE 0
 	END = CASE
-		WHEN r."Value" = '1' OR r."Value" = 'test' THEN 1
+		WHEN r."Value" = '1' OR r."Value" = 'test' AND (r."Value" <> '1' OR r."Value" IS NULL)
+			THEN 1
 		ELSE 0
 	END
 ORDER BY
