@@ -4,9 +4,15 @@
 SELECT
 	nm.MiddleName
 FROM
-	Person nm
+	(
+		SELECT
+			lengthUTF8(p.MiddleName) as Length_1,
+			p.MiddleName as MiddleName
+		FROM
+			Person p
+	) nm
 WHERE
-	lengthUTF8(nm.MiddleName) <> 0 OR nm.MiddleName IS NULL
+	nm.Length_1 <> 0 OR nm.Length_1 IS NULL
 
 BeforeExecute
 -- ClickHouse.Client ClickHouse
