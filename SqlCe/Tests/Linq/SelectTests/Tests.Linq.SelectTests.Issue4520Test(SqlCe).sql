@@ -3,7 +3,7 @@
 
 SELECT
 	CASE
-		WHEN ([i].[BoolValue] IS NULL OR [i].[BoolValue] = 0) AND ([i].[IntValue] = [t1].[cond] OR [i].[IntValue] IS NULL AND [t1].[cond] IS NULL)
+		WHEN ([i].[BoolValue] = 0 AND [i].[BoolValue] IS NOT NULL OR [i].[BoolValue] IS NULL) AND ([i].[IntValue] = [t1].[cond] OR [i].[IntValue] IS NULL AND [t1].[cond] IS NULL)
 			THEN 1
 		ELSE 0
 	END as [cond]

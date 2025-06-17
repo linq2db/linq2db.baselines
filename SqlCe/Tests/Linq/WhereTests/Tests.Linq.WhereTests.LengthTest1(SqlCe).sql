@@ -4,9 +4,15 @@
 SELECT
 	[nm].[MiddleName]
 FROM
-	[Person] [nm]
+	(
+		SELECT
+			LEN([p].[MiddleName] + '.') - 1 as [Length_1],
+			[p].[MiddleName]
+		FROM
+			[Person] [p]
+	) [nm]
 WHERE
-	LEN([nm].[MiddleName] + '.') - 1 <> 0 OR [nm].[MiddleName] IS NULL
+	[nm].[Length_1] <> 0 OR [nm].[Length_1] IS NULL
 
 BeforeExecute
 -- SqlCe
