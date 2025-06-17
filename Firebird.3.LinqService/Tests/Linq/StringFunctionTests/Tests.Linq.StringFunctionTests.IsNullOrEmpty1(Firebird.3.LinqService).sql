@@ -10,5 +10,5 @@ SELECT
 FROM
 	"Person" "p"
 WHERE
-	Char_Length("p"."FirstName") <> 0 AND "p"."PersonID" = 1
+	CHAR_LENGTH("p"."FirstName") <> 0 AND "p"."PersonID" = 1
 
