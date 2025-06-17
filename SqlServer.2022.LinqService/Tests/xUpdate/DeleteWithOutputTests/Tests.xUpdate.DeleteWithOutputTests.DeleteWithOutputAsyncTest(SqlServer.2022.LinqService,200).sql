@@ -23,3 +23,8 @@ FROM
 WHERE
 	[s].[Id] > 3
 
+BeforeExecute
+-- SqlServer.2022 (asynchronously)
+
+DROP TABLE IF EXISTS [TableWithData]
+
