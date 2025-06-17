@@ -6,7 +6,7 @@ SELECT
 FROM
 	"Person" "nm"
 WHERE
-	CHARACTER_LENGTH("nm"."FirstName",CODEUNITS32) <> 0
+	CHAR_LENGTH("nm"."FirstName") <> 0
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW

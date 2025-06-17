@@ -6,5 +6,5 @@ SELECT
 FROM
 	LinqDataTypes p
 WHERE
-	CHAR_LENGTH(toString(toUInt8(p.ID))) > 0
+	lengthUTF8(toString(toUInt8(p.ID))) > 0
 

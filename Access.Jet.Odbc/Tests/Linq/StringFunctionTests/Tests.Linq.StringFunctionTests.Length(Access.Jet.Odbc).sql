@@ -1,7 +1,5 @@
 ﻿BeforeExecute
 -- Access.Jet.Odbc AccessODBC
-DECLARE @Length Int -- Int32
-SET     @Length = 4
 
 SELECT
 	[p].[FirstName],
@@ -12,5 +10,5 @@ SELECT
 FROM
 	[Person] [p]
 WHERE
-	Len([p].[FirstName]) = ? AND [p].[PersonID] = 1
+	Len([p].[FirstName]) = 4 AND [p].[PersonID] = 1
 

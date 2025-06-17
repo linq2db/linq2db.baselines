@@ -26,15 +26,15 @@ VALUES
 
 BeforeExecute
 -- Informix.DB2 Informix
-DECLARE @name VarChar(8) -- String
-SET     @name = 'Update14'
+DECLARE @name Integer(4) -- Int32
+SET     @name = 8
 DECLARE @idx Integer(4) -- Int32
 SET     @idx = 4
 
 UPDATE
 	Person t1
 SET
-	LastName = To_Char(CHAR_LENGTH(@name) + @idx)
+	LastName = To_Char(@name::Int + @idx::Int)
 WHERE
 	t1.FirstName LIKE 'Update14%' ESCAPE '~'
 

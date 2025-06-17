@@ -18,7 +18,7 @@ INSERT INTO Person
 VALUES
 (
 	'Insert16',
-	toString(CHAR_LENGTH('Insert16') + 4),
+	toString(12),
 	'M'
 )
 

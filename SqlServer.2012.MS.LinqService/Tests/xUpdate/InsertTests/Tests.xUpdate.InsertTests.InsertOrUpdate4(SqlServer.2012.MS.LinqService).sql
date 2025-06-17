@@ -37,8 +37,8 @@ DECLARE @id Int -- Int32
 SET     @id = 5
 DECLARE @i Int -- Int32
 SET     @i = 0
-DECLARE @diagnosis NVarChar(4000) -- String
-SET     @diagnosis = N'abc'
+DECLARE @diagnosis Int -- Int32
+SET     @diagnosis = 3
 
 MERGE INTO [Patient] [t1]
 USING (SELECT @id AS [PersonID]) [s] ON
@@ -48,7 +48,7 @@ USING (SELECT @id AS [PersonID]) [s] ON
 WHEN MATCHED THEN
 	UPDATE 
 	SET
-		[Diagnosis] = CAST(Len([t1].[Diagnosis]) + @i AS NVarChar(11))
+		[Diagnosis] = CAST(LEN([t1].[Diagnosis] + N'.') - 1 + @i AS NVarChar(11))
 WHEN NOT MATCHED THEN
 	INSERT
 	(
@@ -58,7 +58,7 @@ WHEN NOT MATCHED THEN
 	VALUES
 	(
 		@id,
-		CAST(Len(@diagnosis) + @i AS NVarChar(11))
+		CAST(@diagnosis + @i AS NVarChar(11))
 	);
 
 BeforeExecute
@@ -67,8 +67,8 @@ DECLARE @id Int -- Int32
 SET     @id = 5
 DECLARE @i Int -- Int32
 SET     @i = 1
-DECLARE @diagnosis NVarChar(4000) -- String
-SET     @diagnosis = N'abc'
+DECLARE @diagnosis Int -- Int32
+SET     @diagnosis = 3
 
 MERGE INTO [Patient] [t1]
 USING (SELECT @id AS [PersonID]) [s] ON
@@ -78,7 +78,7 @@ USING (SELECT @id AS [PersonID]) [s] ON
 WHEN MATCHED THEN
 	UPDATE 
 	SET
-		[Diagnosis] = CAST(Len([t1].[Diagnosis]) + @i AS NVarChar(11))
+		[Diagnosis] = CAST(LEN([t1].[Diagnosis] + N'.') - 1 + @i AS NVarChar(11))
 WHEN NOT MATCHED THEN
 	INSERT
 	(
@@ -88,7 +88,7 @@ WHEN NOT MATCHED THEN
 	VALUES
 	(
 		@id,
-		CAST(Len(@diagnosis) + @i AS NVarChar(11))
+		CAST(@diagnosis + @i AS NVarChar(11))
 	);
 
 BeforeExecute
@@ -97,8 +97,8 @@ DECLARE @id Int -- Int32
 SET     @id = 5
 DECLARE @i Int -- Int32
 SET     @i = 2
-DECLARE @diagnosis NVarChar(4000) -- String
-SET     @diagnosis = N'abc'
+DECLARE @diagnosis Int -- Int32
+SET     @diagnosis = 3
 
 MERGE INTO [Patient] [t1]
 USING (SELECT @id AS [PersonID]) [s] ON
@@ -108,7 +108,7 @@ USING (SELECT @id AS [PersonID]) [s] ON
 WHEN MATCHED THEN
 	UPDATE 
 	SET
-		[Diagnosis] = CAST(Len([t1].[Diagnosis]) + @i AS NVarChar(11))
+		[Diagnosis] = CAST(LEN([t1].[Diagnosis] + N'.') - 1 + @i AS NVarChar(11))
 WHEN NOT MATCHED THEN
 	INSERT
 	(
@@ -118,7 +118,7 @@ WHEN NOT MATCHED THEN
 	VALUES
 	(
 		@id,
-		CAST(Len(@diagnosis) + @i AS NVarChar(11))
+		CAST(@diagnosis + @i AS NVarChar(11))
 	);
 
 BeforeExecute

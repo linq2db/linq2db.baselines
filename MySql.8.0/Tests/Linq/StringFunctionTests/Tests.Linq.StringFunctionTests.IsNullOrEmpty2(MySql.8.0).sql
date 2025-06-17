@@ -2,7 +2,7 @@
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
 
 SELECT
-	Char_Length(`p`.`FirstName`) = 0
+	CHAR_LENGTH(`p`.`FirstName`) = 0
 FROM
 	`Person` `p`
 WHERE

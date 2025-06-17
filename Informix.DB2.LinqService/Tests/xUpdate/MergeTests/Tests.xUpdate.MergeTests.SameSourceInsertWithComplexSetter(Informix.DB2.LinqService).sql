@@ -220,8 +220,8 @@ VALUES
 
 BeforeExecute
 -- Informix.DB2 Informix
-DECLARE @name VarChar(4) -- String
-SET     @name = 'test'
+DECLARE @name Integer(4) -- Int32
+SET     @name = 4
 DECLARE @idx Integer(4) -- Int32
 SET     @idx = 6
 
@@ -253,7 +253,7 @@ VALUES
 (
 	10 + Source.source_Id,
 	123,
-	CHAR_LENGTH(@name) + @idx,
+	@name::Int + @idx::Int,
 	Source.source_Field2,
 	999,
 	888

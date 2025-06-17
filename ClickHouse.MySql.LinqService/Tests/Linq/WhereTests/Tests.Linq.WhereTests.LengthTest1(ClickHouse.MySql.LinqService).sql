@@ -6,13 +6,13 @@ SELECT
 FROM
 	(
 		SELECT
-			CHAR_LENGTH(p.MiddleName) as Value_1,
+			lengthUTF8(p.MiddleName) as Length_1,
 			p.MiddleName as MiddleName
 		FROM
 			Person p
 	) nm
 WHERE
-	nm.Value_1 <> 0 OR nm.Value_1 IS NULL
+	nm.Length_1 <> 0 OR nm.Length_1 IS NULL
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse

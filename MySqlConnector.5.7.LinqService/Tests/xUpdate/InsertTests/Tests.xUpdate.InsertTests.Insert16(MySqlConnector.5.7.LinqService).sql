@@ -9,8 +9,8 @@ WHERE
 
 BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-DECLARE @name VarChar(8) -- String
-SET     @name = 'Insert16'
+DECLARE @name Int32
+SET     @name = 8
 DECLARE @idx Int32
 SET     @idx = 4
 
@@ -23,7 +23,7 @@ INSERT INTO `Person`
 VALUES
 (
 	'Insert16',
-	CAST(Char_Length(@name) + @idx AS CHAR(11)),
+	CAST(@name + @idx AS CHAR(11)),
 	'M'
 )
 

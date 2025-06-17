@@ -2,7 +2,7 @@
 -- Sybase.Managed Sybase
 
 SELECT
-	Len([p].[FirstName])
+	CHAR_LENGTH([p].[FirstName])
 FROM
 	[Person] [p]
 

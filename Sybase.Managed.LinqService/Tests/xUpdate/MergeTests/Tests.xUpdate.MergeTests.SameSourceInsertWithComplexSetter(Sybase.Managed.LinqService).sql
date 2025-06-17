@@ -222,8 +222,8 @@ VALUES
 
 BeforeExecute
 -- Sybase.Managed Sybase
-DECLARE @name UniVarChar(4) -- String
-SET     @name = 'test'
+DECLARE @name Integer -- Int32
+SET     @name = 4
 DECLARE @idx Integer -- Int32
 SET     @idx = 6
 
@@ -255,7 +255,7 @@ VALUES
 (
 	10 + [Source].[source_Id],
 	123,
-	Len(@name) + @idx,
+	@name + @idx,
 	[Source].[source_Field2],
 	999,
 	888
