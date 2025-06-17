@@ -2,7 +2,9 @@
 -- PostgreSQL.15 PostgreSQL
 
 SELECT
-	Length(p."FirstName")
+	t."Str",
+	Length(t."Str")
 FROM
-	"Person" p
+	"TestLengthModel" t
+LIMIT 2
 
