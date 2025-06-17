@@ -6,7 +6,7 @@ SELECT
 FROM
 	`Person` `nm`
 WHERE
-	Char_Length(`nm`.`MiddleName`) <> 0 OR `nm`.`MiddleName` IS NULL
+	CHAR_LENGTH(`nm`.`MiddleName`) <> 0 OR `nm`.`MiddleName` IS NULL
 
 BeforeExecute
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57

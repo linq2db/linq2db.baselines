@@ -6,7 +6,7 @@ SELECT
 FROM
 	[Person] [nm]
 WHERE
-	Len([nm].[MiddleName]) <> 0 OR [nm].[MiddleName] IS NULL
+	LEN([nm].[MiddleName] + N'.') - 1 <> 0 OR [nm].[MiddleName] IS NULL
 
 BeforeExecute
 -- SqlServer.SA SqlServer.2019

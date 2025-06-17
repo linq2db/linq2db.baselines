@@ -6,7 +6,7 @@ SELECT
 FROM
 	Person nm
 WHERE
-	CHAR_LENGTH(nm.MiddleName) <> 0 OR nm.MiddleName IS NULL
+	lengthUTF8(nm.MiddleName) <> 0 OR nm.MiddleName IS NULL
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
