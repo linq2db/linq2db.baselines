@@ -3,7 +3,10 @@
 
 SELECT
 	x."Id",
-	x."StringProp" = '1' OR x."StringProp" IS NULL,
+	CASE
+		WHEN x."StringProp" = '1' OR x."StringProp" IS NULL THEN True
+		ELSE False
+	END,
 	CASE
 		WHEN x."StringProp" = '2' THEN True
 		ELSE False

@@ -41,7 +41,8 @@ SELECT
 FROM
 	"Issue3830TestTable" r
 WHERE
-	r."Bool3" IS NULL AND r."Bool1" = :Bool1 AND r."Bool2" IS NULL
+	(r."Bool3" IS NULL OR r."Bool3" IS NULL) AND r."Bool1" = :Bool1 AND
+	r."Bool2" IS NULL
 
 BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
@@ -178,7 +179,8 @@ SELECT
 FROM
 	"Issue3830TestTable" r
 WHERE
-	r."Bool3" IS NULL AND r."Bool1" = :Bool1 AND r."Bool2" = :Bool2
+	(r."Bool3" IS NULL OR r."Bool3" IS NULL) AND r."Bool1" = :Bool1 AND
+	r."Bool2" = :Bool2
 
 BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
