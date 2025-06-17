@@ -6,13 +6,13 @@ SELECT
 FROM
 	(
 		SELECT
-			Len([p].[MiddleName]) as [Value_1],
+			LEN([p].[MiddleName] + N'.') - 1 as [Length_1],
 			[p].[MiddleName]
 		FROM
 			[Person] [p]
 	) [nm]
 WHERE
-	[nm].[Value_1] <> 0 OR [nm].[Value_1] IS NULL
+	[nm].[Length_1] <> 0 OR [nm].[Length_1] IS NULL
 
 BeforeExecute
 -- SqlServer.Contained.MS SqlServer.2019
