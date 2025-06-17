@@ -2,8 +2,9 @@
 -- PostgreSQL.17 PostgreSQL.15 PostgreSQL
 
 SELECT
-	(p5."PersonID" * 2) / 2,
-	p5."FirstName"
+	t."Str",
+	Length(t."Str")
 FROM
-	"Person" p5
+	"TestLengthModel" t
+LIMIT 2
 
