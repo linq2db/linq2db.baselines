@@ -6,8 +6,7 @@ SELECT
 FROM
 	"Person" "nm"
 WHERE
-	CHARACTER_LENGTH("nm"."MiddleName",CODEUNITS32) <> 0 OR
-	"nm"."MiddleName" IS NULL
+	CHAR_LENGTH("nm"."MiddleName") <> 0 OR "nm"."MiddleName" IS NULL
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
