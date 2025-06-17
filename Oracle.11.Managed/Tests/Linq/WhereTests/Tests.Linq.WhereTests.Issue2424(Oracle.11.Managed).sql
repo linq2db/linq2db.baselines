@@ -3,526 +3,240 @@
 
 SELECT
 	i."Id",
-	i."StrValue",
-	i."StrValueNullable"
+	i."StrValue"
 FROM
 	"Isue2424Table" i
 WHERE
-	i."StrValue" >= '0'
-
-BeforeExecute
--- Oracle.11.Managed Oracle11
-
-SELECT
-	t1."Id",
-	t1."StrValue",
-	t1."StrValueNullable"
-FROM
-	"Isue2424Table" t1
+	i."StrValue" >= '4' AND ROWNUM <= 2
 
 BeforeExecute
 -- Oracle.11.Managed Oracle11
 
 SELECT
 	i."Id",
-	i."StrValue",
-	i."StrValueNullable"
+	i."StrValue"
 FROM
 	"Isue2424Table" i
 WHERE
-	i."StrValue" >= '1'
-
-BeforeExecute
--- Oracle.11.Managed Oracle11
-
-SELECT
-	t1."Id",
-	t1."StrValue",
-	t1."StrValueNullable"
-FROM
-	"Isue2424Table" t1
+	i."StrValue" >= '4' AND ROWNUM <= 2
 
 BeforeExecute
 -- Oracle.11.Managed Oracle11
 
 SELECT
 	i."Id",
-	i."StrValue",
-	i."StrValueNullable"
+	i."StrValue"
 FROM
 	"Isue2424Table" i
 WHERE
-	i."StrValue" >= '3'
-
-BeforeExecute
--- Oracle.11.Managed Oracle11
-
-SELECT
-	t1."Id",
-	t1."StrValue",
-	t1."StrValueNullable"
-FROM
-	"Isue2424Table" t1
+	i."StrValue" <= '2' AND ROWNUM <= 2
 
 BeforeExecute
 -- Oracle.11.Managed Oracle11
 
 SELECT
 	i."Id",
-	i."StrValue",
-	i."StrValueNullable"
+	i."StrValue"
 FROM
 	"Isue2424Table" i
 WHERE
-	i."StrValue" >= '5'
-
-BeforeExecute
--- Oracle.11.Managed Oracle11
-
-SELECT
-	t1."Id",
-	t1."StrValue",
-	t1."StrValueNullable"
-FROM
-	"Isue2424Table" t1
+	i."StrValue" <= '2' AND ROWNUM <= 2
 
 BeforeExecute
 -- Oracle.11.Managed Oracle11
 
 SELECT
 	i."Id",
-	i."StrValue",
-	i."StrValueNullable"
+	i."StrValue"
 FROM
 	"Isue2424Table" i
 WHERE
-	i."StrValue" <= '0'
-
-BeforeExecute
--- Oracle.11.Managed Oracle11
-
-SELECT
-	t1."Id",
-	t1."StrValue",
-	t1."StrValueNullable"
-FROM
-	"Isue2424Table" t1
+	i."StrValue" > '3' AND ROWNUM <= 2
 
 BeforeExecute
 -- Oracle.11.Managed Oracle11
 
 SELECT
 	i."Id",
-	i."StrValue",
-	i."StrValueNullable"
+	i."StrValue"
 FROM
 	"Isue2424Table" i
 WHERE
-	i."StrValue" <= '1'
-
-BeforeExecute
--- Oracle.11.Managed Oracle11
-
-SELECT
-	t1."Id",
-	t1."StrValue",
-	t1."StrValueNullable"
-FROM
-	"Isue2424Table" t1
+	i."StrValue" > '3' AND ROWNUM <= 2
 
 BeforeExecute
 -- Oracle.11.Managed Oracle11
 
 SELECT
 	i."Id",
-	i."StrValue",
-	i."StrValueNullable"
+	i."StrValue"
 FROM
 	"Isue2424Table" i
 WHERE
-	i."StrValue" <= '3'
-
-BeforeExecute
--- Oracle.11.Managed Oracle11
-
-SELECT
-	t1."Id",
-	t1."StrValue",
-	t1."StrValueNullable"
-FROM
-	"Isue2424Table" t1
+	i."StrValue" < '3' AND ROWNUM <= 2
 
 BeforeExecute
 -- Oracle.11.Managed Oracle11
 
 SELECT
 	i."Id",
-	i."StrValue",
-	i."StrValueNullable"
+	i."StrValue"
 FROM
 	"Isue2424Table" i
 WHERE
-	i."StrValue" <= '5'
-
-BeforeExecute
--- Oracle.11.Managed Oracle11
-
-SELECT
-	t1."Id",
-	t1."StrValue",
-	t1."StrValueNullable"
-FROM
-	"Isue2424Table" t1
+	i."StrValue" < '3' AND ROWNUM <= 2
 
 BeforeExecute
 -- Oracle.11.Managed Oracle11
 
 SELECT
 	i."Id",
-	i."StrValue",
-	i."StrValueNullable"
+	i."StrValue"
 FROM
 	"Isue2424Table" i
 WHERE
-	i."StrValue" > '0'
-
-BeforeExecute
--- Oracle.11.Managed Oracle11
-
-SELECT
-	t1."Id",
-	t1."StrValue",
-	t1."StrValueNullable"
-FROM
-	"Isue2424Table" t1
+	i."StrValue" = '3' AND ROWNUM <= 2
 
 BeforeExecute
 -- Oracle.11.Managed Oracle11
 
 SELECT
 	i."Id",
-	i."StrValue",
-	i."StrValueNullable"
+	i."StrValue"
 FROM
 	"Isue2424Table" i
 WHERE
-	i."StrValue" > '1'
-
-BeforeExecute
--- Oracle.11.Managed Oracle11
-
-SELECT
-	t1."Id",
-	t1."StrValue",
-	t1."StrValueNullable"
-FROM
-	"Isue2424Table" t1
+	i."StrValue" = '3' AND ROWNUM <= 2
 
 BeforeExecute
 -- Oracle.11.Managed Oracle11
 
 SELECT
 	i."Id",
-	i."StrValue",
-	i."StrValueNullable"
+	i."StrValue"
 FROM
 	"Isue2424Table" i
 WHERE
-	i."StrValue" > '3'
-
-BeforeExecute
--- Oracle.11.Managed Oracle11
-
-SELECT
-	t1."Id",
-	t1."StrValue",
-	t1."StrValueNullable"
-FROM
-	"Isue2424Table" t1
+	i."StrValue" <= '2' AND ROWNUM <= 2
 
 BeforeExecute
 -- Oracle.11.Managed Oracle11
 
 SELECT
 	i."Id",
-	i."StrValue",
-	i."StrValueNullable"
+	i."StrValue"
 FROM
 	"Isue2424Table" i
 WHERE
-	i."StrValue" > '5'
-
-BeforeExecute
--- Oracle.11.Managed Oracle11
-
-SELECT
-	t1."Id",
-	t1."StrValue",
-	t1."StrValueNullable"
-FROM
-	"Isue2424Table" t1
+	i."StrValue" <= '2' AND ROWNUM <= 2
 
 BeforeExecute
 -- Oracle.11.Managed Oracle11
 
 SELECT
 	i."Id",
-	i."StrValue",
-	i."StrValueNullable"
+	i."StrValue"
 FROM
 	"Isue2424Table" i
 WHERE
-	i."StrValue" < '0'
-
-BeforeExecute
--- Oracle.11.Managed Oracle11
-
-SELECT
-	t1."Id",
-	t1."StrValue",
-	t1."StrValueNullable"
-FROM
-	"Isue2424Table" t1
+	i."StrValue" >= '4' AND ROWNUM <= 2
 
 BeforeExecute
 -- Oracle.11.Managed Oracle11
 
 SELECT
 	i."Id",
-	i."StrValue",
-	i."StrValueNullable"
+	i."StrValue"
 FROM
 	"Isue2424Table" i
 WHERE
-	i."StrValue" < '1'
-
-BeforeExecute
--- Oracle.11.Managed Oracle11
-
-SELECT
-	t1."Id",
-	t1."StrValue",
-	t1."StrValueNullable"
-FROM
-	"Isue2424Table" t1
+	i."StrValue" >= '4' AND ROWNUM <= 2
 
 BeforeExecute
 -- Oracle.11.Managed Oracle11
 
 SELECT
 	i."Id",
-	i."StrValue",
-	i."StrValueNullable"
+	i."StrValue"
 FROM
 	"Isue2424Table" i
 WHERE
-	i."StrValue" < '3'
-
-BeforeExecute
--- Oracle.11.Managed Oracle11
-
-SELECT
-	t1."Id",
-	t1."StrValue",
-	t1."StrValueNullable"
-FROM
-	"Isue2424Table" t1
+	i."StrValue" < '3' AND ROWNUM <= 2
 
 BeforeExecute
 -- Oracle.11.Managed Oracle11
 
 SELECT
 	i."Id",
-	i."StrValue",
-	i."StrValueNullable"
+	i."StrValue"
 FROM
 	"Isue2424Table" i
 WHERE
-	i."StrValue" < '5'
-
-BeforeExecute
--- Oracle.11.Managed Oracle11
-
-SELECT
-	t1."Id",
-	t1."StrValue",
-	t1."StrValueNullable"
-FROM
-	"Isue2424Table" t1
+	i."StrValue" < '3' AND ROWNUM <= 2
 
 BeforeExecute
 -- Oracle.11.Managed Oracle11
 
 SELECT
 	i."Id",
-	i."StrValue",
-	i."StrValueNullable"
+	i."StrValue"
 FROM
 	"Isue2424Table" i
 WHERE
-	i."StrValue" = '0'
-
-BeforeExecute
--- Oracle.11.Managed Oracle11
-
-SELECT
-	t1."Id",
-	t1."StrValue",
-	t1."StrValueNullable"
-FROM
-	"Isue2424Table" t1
+	i."StrValue" > '3' AND ROWNUM <= 2
 
 BeforeExecute
 -- Oracle.11.Managed Oracle11
 
 SELECT
 	i."Id",
-	i."StrValue",
-	i."StrValueNullable"
+	i."StrValue"
 FROM
 	"Isue2424Table" i
 WHERE
-	i."StrValue" = '1'
-
-BeforeExecute
--- Oracle.11.Managed Oracle11
-
-SELECT
-	t1."Id",
-	t1."StrValue",
-	t1."StrValueNullable"
-FROM
-	"Isue2424Table" t1
+	i."StrValue" > '3' AND ROWNUM <= 2
 
 BeforeExecute
 -- Oracle.11.Managed Oracle11
 
 SELECT
 	i."Id",
-	i."StrValue",
-	i."StrValueNullable"
+	i."StrValue"
 FROM
 	"Isue2424Table" i
 WHERE
-	i."StrValue" = '3'
-
-BeforeExecute
--- Oracle.11.Managed Oracle11
-
-SELECT
-	t1."Id",
-	t1."StrValue",
-	t1."StrValueNullable"
-FROM
-	"Isue2424Table" t1
+	i."StrValue" >= '5' AND ROWNUM <= 2
 
 BeforeExecute
 -- Oracle.11.Managed Oracle11
 
 SELECT
 	i."Id",
-	i."StrValue",
-	i."StrValueNullable"
+	i."StrValue"
 FROM
 	"Isue2424Table" i
 WHERE
-	i."StrValue" = '5'
-
-BeforeExecute
--- Oracle.11.Managed Oracle11
-
-SELECT
-	t1."Id",
-	t1."StrValue",
-	t1."StrValueNullable"
-FROM
-	"Isue2424Table" t1
+	i."StrValue" >= '5' AND ROWNUM <= 2
 
 BeforeExecute
 -- Oracle.11.Managed Oracle11
 
 SELECT
 	i."Id",
-	i."StrValue",
-	i."StrValueNullable"
+	i."StrValue"
 FROM
 	"Isue2424Table" i
 WHERE
-	i."StrValue" <> '0'
-
-BeforeExecute
--- Oracle.11.Managed Oracle11
-
-SELECT
-	t1."Id",
-	t1."StrValue",
-	t1."StrValueNullable"
-FROM
-	"Isue2424Table" t1
+	i."StrValue" <= '1' AND ROWNUM <= 2
 
 BeforeExecute
 -- Oracle.11.Managed Oracle11
 
 SELECT
 	i."Id",
-	i."StrValue",
-	i."StrValueNullable"
+	i."StrValue"
 FROM
 	"Isue2424Table" i
 WHERE
-	i."StrValue" <> '1'
-
-BeforeExecute
--- Oracle.11.Managed Oracle11
-
-SELECT
-	t1."Id",
-	t1."StrValue",
-	t1."StrValueNullable"
-FROM
-	"Isue2424Table" t1
-
-BeforeExecute
--- Oracle.11.Managed Oracle11
-
-SELECT
-	i."Id",
-	i."StrValue",
-	i."StrValueNullable"
-FROM
-	"Isue2424Table" i
-WHERE
-	i."StrValue" <> '3'
-
-BeforeExecute
--- Oracle.11.Managed Oracle11
-
-SELECT
-	t1."Id",
-	t1."StrValue",
-	t1."StrValueNullable"
-FROM
-	"Isue2424Table" t1
-
-BeforeExecute
--- Oracle.11.Managed Oracle11
-
-SELECT
-	i."Id",
-	i."StrValue",
-	i."StrValueNullable"
-FROM
-	"Isue2424Table" i
-WHERE
-	i."StrValue" <> '5'
-
-BeforeExecute
--- Oracle.11.Managed Oracle11
-
-SELECT
-	t1."Id",
-	t1."StrValue",
-	t1."StrValueNullable"
-FROM
-	"Isue2424Table" t1
+	i."StrValue" <= '1' AND ROWNUM <= 2
 
