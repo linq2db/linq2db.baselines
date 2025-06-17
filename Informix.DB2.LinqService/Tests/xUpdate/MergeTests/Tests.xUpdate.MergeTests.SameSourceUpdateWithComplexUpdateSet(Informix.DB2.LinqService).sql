@@ -220,8 +220,8 @@ VALUES
 
 BeforeExecute
 -- Informix.DB2 Informix
-DECLARE @name VarChar(4) -- String
-SET     @name = 'test'
+DECLARE @name Integer(4) -- Int32
+SET     @name = 4
 DECLARE @idx Integer(4) -- Int32
 SET     @idx = 6
 
@@ -249,7 +249,7 @@ WHEN MATCHED THEN
 UPDATE
 SET
 	Field1 = Target.Field1 + Source.source_Field1,
-	Field2 = CHAR_LENGTH(@name) + @idx,
+	Field2 = @name::Int + @idx::Int,
 	Field3 = Target.Field3 + Source.source_Field3,
 	Field4 = Target.Field4 + Source.source_Field4,
 	Field5 = Target.Field5 + Source.source_Field5

@@ -10,5 +10,5 @@ SELECT
 FROM
 	Person p
 WHERE
-	CHAR_LENGTH(p.FirstName) <> 0 AND p.PersonID = 1
+	CHAR_LENGTH(p.FirstName || '.') <> 1 AND p.PersonID = 1
 

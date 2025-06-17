@@ -10,6 +10,6 @@ SELECT
 FROM
 	Person p
 WHERE
-	Substr(p.FirstName, 1, 1) || Substr(p.FirstName, CHAR_LENGTH(p.FirstName) - (CHAR_LENGTH(p.FirstName) - 3) + 1, CHAR_LENGTH(p.FirstName) - 3) = 'Jn' AND
+	Substr(p.FirstName, 1, 1) || Substr(p.FirstName, (CHAR_LENGTH(p.FirstName || '.') - 1) - (CHAR_LENGTH(p.FirstName || '.') - 4) + 1, CHAR_LENGTH(p.FirstName || '.') - 4) = 'Jn' AND
 	p.PersonID = 1
 
