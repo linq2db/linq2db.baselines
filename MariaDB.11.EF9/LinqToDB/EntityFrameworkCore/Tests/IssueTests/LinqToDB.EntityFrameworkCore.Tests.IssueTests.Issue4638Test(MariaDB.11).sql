@@ -1,7 +1,7 @@
 ﻿BeginTransaction(RepeatableRead)
 
 
---  MariaDB.10.MySqlConnector MySql
+-- MariaDB.10.MySqlConnector MySql
 
 SELECT
 	`m_1`.`Key_1`,
@@ -23,7 +23,7 @@ ORDER BY
 
 
 
---  MariaDB.10.MySqlConnector MySql
+-- MariaDB.10.MySqlConnector MySql
 
 SELECT
 	`p`.`AclNameId`

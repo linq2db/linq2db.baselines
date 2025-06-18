@@ -25,7 +25,7 @@ ORDER BY `o`.`OrderID`, `t`.`OrderID`, `t`.`ProductID`, `t0`.`ProductID`, `t1`.`
 BeginTransaction(RepeatableRead)
 
 
---  MariaDB.10.MySqlConnector MySql
+-- MariaDB.10.MySqlConnector MySql
 
 SELECT
 	`m_1`.`ProductId`,
@@ -48,7 +48,7 @@ FROM
 DisposeTransaction
 
 
---  MariaDB.10.MySqlConnector MySql
+-- MariaDB.10.MySqlConnector MySql
 
 SELECT
 	`a_Product`.`ProductID`,
