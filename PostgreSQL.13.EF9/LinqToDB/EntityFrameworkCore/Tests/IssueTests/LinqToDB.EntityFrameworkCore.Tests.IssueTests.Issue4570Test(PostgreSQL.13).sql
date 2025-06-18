@@ -1,4 +1,4 @@
-﻿--  PostgreSQL.9.5 PostgreSQL
+﻿-- PostgreSQL.9.5 PostgreSQL
 
 SELECT
 	1
