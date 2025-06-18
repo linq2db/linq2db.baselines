@@ -21,7 +21,8 @@ FROM
 				FROM
 					"Child" a_1
 				WHERE
-					"a_ParentTest"."ParentID" = a_1."ParentID" AND a_1."ChildID" = 11
+					"a_ParentTest"."ParentID" IS NOT NULL AND "a_ParentTest"."ParentID" = a_1."ParentID" AND
+					a_1."ChildID" = 11
 			)
 	) m_1
 		INNER JOIN "Child" d ON m_1."ParentID" = d."ParentID"
@@ -46,6 +47,7 @@ WHERE
 		FROM
 			"Child" a_1
 		WHERE
-			"a_ParentTest"."ParentID" = a_1."ParentID" AND a_1."ChildID" = 11
+			"a_ParentTest"."ParentID" IS NOT NULL AND "a_ParentTest"."ParentID" = a_1."ParentID" AND
+			a_1."ChildID" = 11
 	)
 
