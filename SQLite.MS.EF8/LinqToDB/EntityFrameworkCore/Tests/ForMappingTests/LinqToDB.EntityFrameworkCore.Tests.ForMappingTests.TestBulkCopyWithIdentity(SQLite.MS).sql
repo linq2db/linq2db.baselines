@@ -1,4 +1,4 @@
-﻿--  SQLite.MS SQLite
+﻿-- SQLite.MS SQLite
 
 CREATE TEMPORARY TABLE temp.[WithIdentity]
 (
@@ -8,7 +8,7 @@ CREATE TEMPORARY TABLE temp.[WithIdentity]
 
 
 
---  SQLite.MS SQLite
+-- SQLite.MS SQLite
 
 INSERT INTO temp.[WithIdentity]
 (
@@ -20,7 +20,7 @@ VALUES
 
 
 
---  SQLite.MS SQLite
+-- SQLite.MS SQLite
 
 SELECT
 	[t1].[Id],
@@ -30,7 +30,7 @@ FROM
 
 
 
---  SQLite.MS SQLite
+-- SQLite.MS SQLite
 
 DROP TABLE IF EXISTS temp.[WithIdentity]
 
