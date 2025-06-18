@@ -6,7 +6,7 @@ SELECT
 FROM
 	[Person] [nm]
 WHERE
-	NOT ([nm].[MiddleName] IS NULL OR Len([nm].[MiddleName]) = 0)
+	NOT ([nm].[MiddleName] IS NULL OR Len([nm].[MiddleName]) = 0 AND [nm].[MiddleName] IS NOT NULL)
 
 BeforeExecute
 -- Access.Jet.Odbc AccessODBC
