@@ -4,7 +4,7 @@
 DROP TABLE IF EXISTS "User";DROP TYPE IF EXISTS user_type_enum;CREATE TYPE user_type_enum AS ENUM('org', 'org_user');
 
 BeforeExecute
---  PostgreSQL.15 PostgreSQL
+-- PostgreSQL.15 PostgreSQL
 DECLARE @Id Integer -- Int32
 SET     @Id = 1
 
@@ -18,7 +18,7 @@ ORDER BY
 	x."Id"
 
 BeforeExecute
---  PostgreSQL.15 PostgreSQL
+-- PostgreSQL.15 PostgreSQL
 DECLARE @Id Integer -- Int32
 SET     @Id = 4
 DECLARE @OrganizationId Integer -- Int32
