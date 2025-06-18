@@ -35,7 +35,7 @@ ORDER BY `p`.`ProductID`, `s1`.`OrderID0`, `s1`.`ProductID`, `s1`.`OrderID`, `s1
 BeginTransactionAsync(RepeatableRead)
 
 
---  MySql.5.7.MySqlConnector MySql57 (asynchronously)
+-- MySql.5.7.MySqlConnector MySql57 (asynchronously)
 
 SELECT
 	`m_1`.`SupplierId`,
@@ -81,7 +81,7 @@ WHERE
 
 
 
---  MySql.5.7.MySqlConnector MySql57 (asynchronously)
+-- MySql.5.7.MySqlConnector MySql57 (asynchronously)
 
 SELECT
 	`m_1`.`ProductID`,
@@ -119,7 +119,7 @@ WHERE
 DisposeTransactionAsync
 
 
---  MySql.5.7.MySqlConnector MySql57 (asynchronously)
+-- MySql.5.7.MySqlConnector MySql57 (asynchronously)
 
 SELECT
 	`p`.`ProductName`,

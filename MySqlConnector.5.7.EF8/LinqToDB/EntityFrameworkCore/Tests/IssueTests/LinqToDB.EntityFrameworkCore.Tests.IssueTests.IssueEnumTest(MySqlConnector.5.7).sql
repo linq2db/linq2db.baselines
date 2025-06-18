@@ -32,7 +32,7 @@ FROM `IssueEnum`
 WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
 
 
---  MySql.5.7.MySqlConnector MySql57 (asynchronously)
+-- MySql.5.7.MySqlConnector MySql57 (asynchronously)
 
 SELECT
 	`t1`.`Id`,
