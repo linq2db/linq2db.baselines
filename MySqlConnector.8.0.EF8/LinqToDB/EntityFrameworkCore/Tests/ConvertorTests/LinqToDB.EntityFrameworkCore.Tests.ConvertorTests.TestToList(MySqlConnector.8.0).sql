@@ -1,4 +1,4 @@
-﻿--  MySql.8.0.MySqlConnector MySql80
+﻿-- MySql.8.0.MySqlConnector MySql80
 DECLARE @Id Int64
 SET     @Id = 1
 DECLARE @PermanentId Guid
@@ -29,13 +29,13 @@ VALUES
 
 
 
---  MySql.8.0.MySqlConnector MySql80
+-- MySql.8.0.MySqlConnector MySql80
 
 SELECT LAST_INSERT_ID()
 
 
 
---  MySql.8.0.MySqlConnector MySql80
+-- MySql.8.0.MySqlConnector MySql80
 DECLARE @Id Int64
 SET     @Id = 2
 DECLARE @PermanentId Guid
@@ -66,13 +66,13 @@ VALUES
 
 
 
---  MySql.8.0.MySqlConnector MySql80
+-- MySql.8.0.MySqlConnector MySql80
 
 SELECT LAST_INSERT_ID()
 
 
 
---  MySql.8.0.MySqlConnector MySql80
+-- MySql.8.0.MySqlConnector MySql80
 DECLARE @Id Int64
 SET     @Id = 3
 DECLARE @PermanentId Guid
@@ -103,7 +103,7 @@ VALUES
 
 
 
---  MySql.8.0.MySqlConnector MySql80
+-- MySql.8.0.MySqlConnector MySql80
 
 SELECT LAST_INSERT_ID()
 
@@ -114,7 +114,7 @@ FROM `Subdivisions` AS `s`
 WHERE CAST(`s`.`Id` AS signed) = 1
 
 
---  MySql.8.0.MySqlConnector MySql80
+-- MySql.8.0.MySqlConnector MySql80
 
 SELECT
 	`s`.`Id`,
@@ -129,7 +129,7 @@ WHERE
 
 
 
---  MySql.8.0.MySqlConnector MySql80
+-- MySql.8.0.MySqlConnector MySql80
 DECLARE @id Int64
 SET     @id = 1
 
@@ -146,7 +146,7 @@ WHERE
 
 
 
---  MySql.8.0.MySqlConnector MySql80
+-- MySql.8.0.MySqlConnector MySql80
 
 SELECT
 	`s`.`Id`,
@@ -161,7 +161,7 @@ WHERE
 
 
 
---  MySql.8.0.MySqlConnector MySql80
+-- MySql.8.0.MySqlConnector MySql80
 
 SELECT
 	`t1`.`Id`,
