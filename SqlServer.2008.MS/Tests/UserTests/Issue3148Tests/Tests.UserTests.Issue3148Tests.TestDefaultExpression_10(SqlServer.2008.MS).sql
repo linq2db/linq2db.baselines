@@ -26,7 +26,7 @@ WHERE
 			FROM
 				[Child] [a_Children]
 			WHERE
-				[a_Parent].[ParentID] = [a_Children].[ParentID]
+				[a_Parent].[ParentID] IS NOT NULL AND [a_Parent].[ParentID] = [a_Children].[ParentID]
 		)
 			THEN 0
 		ELSE 1
@@ -60,7 +60,7 @@ WHERE
 			FROM
 				[Child] [a_Children]
 			WHERE
-				[a_Parent].[ParentID] = [a_Children].[ParentID]
+				[a_Parent].[ParentID] IS NOT NULL AND [a_Parent].[ParentID] = [a_Children].[ParentID]
 		)
 			THEN 0
 		ELSE 1
