@@ -14,7 +14,7 @@
 					END
 
 
---  SqlServer.2022
+-- SqlServer.2022
 DECLARE @commandExecutionTime Int -- Int32
 SET     @commandExecutionTime = 5
 

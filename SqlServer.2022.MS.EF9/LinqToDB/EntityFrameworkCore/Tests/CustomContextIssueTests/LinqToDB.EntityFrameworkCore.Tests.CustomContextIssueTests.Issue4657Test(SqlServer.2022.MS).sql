@@ -1,4 +1,4 @@
-﻿--  SqlServer.2022
+﻿-- SqlServer.2022
 
 CREATE TABLE [tempdb]..[#Issue4657TempTable1]
 (
@@ -12,7 +12,7 @@ INSERT BULK [tempdb]..[#Issue4657TempTable1](Id, Code)
 
 
 
---  SqlServer.2022
+-- SqlServer.2022
 
 CREATE TABLE [tempdb]..[#Issue4657TempTable2]
 (
@@ -26,7 +26,7 @@ INSERT BULK [tempdb]..[#Issue4657TempTable2](Id, Code)
 
 
 
---  SqlServer.2022
+-- SqlServer.2022
 
 WITH [CTE_1] ([Id], [Code])
 AS
@@ -72,13 +72,13 @@ INTO [tempdb]..[#Issue4657TempTable2]
 
 
 
---  SqlServer.2022
+-- SqlServer.2022
 
 DROP TABLE IF EXISTS [tempdb]..[#Issue4657TempTable2]
 
 
 
---  SqlServer.2022
+-- SqlServer.2022
 
 DROP TABLE IF EXISTS [tempdb]..[#Issue4657TempTable1]
 
