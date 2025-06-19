@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 BeginTransaction(RepeatableRead)
 BeforeExecute
---  Firebird.5 Firebird4
+-- Firebird.5 Firebird4
 
 SELECT
 	"m_1"."ParentID",
@@ -24,7 +24,7 @@ FROM
 		INNER JOIN "Child" "d" ON "m_1"."ParentID" = "d"."ParentID"
 
 BeforeExecute
---  Firebird.5 Firebird4
+-- Firebird.5 Firebird4
 
 SELECT
 	"t1"."ParentID",
