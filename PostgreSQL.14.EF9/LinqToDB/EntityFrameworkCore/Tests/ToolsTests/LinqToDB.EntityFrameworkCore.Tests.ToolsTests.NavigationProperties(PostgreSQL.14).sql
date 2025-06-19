@@ -25,7 +25,7 @@ ORDER BY o."OrderID", o1."OrderID", o1."ProductID", p0."ProductID", o3."OrderId"
 BeginTransaction(RepeatableRead)
 
 
---  PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.9.5 PostgreSQL
 
 SELECT
 	m_1."ProductId",
@@ -48,7 +48,7 @@ FROM
 DisposeTransaction
 
 
---  PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.9.5 PostgreSQL
 
 SELECT
 	"a_Product"."ProductID",
