@@ -1,4 +1,4 @@
-﻿--  PostgreSQL.15 PostgreSQL
+﻿-- PostgreSQL.15 PostgreSQL
 DECLARE @dt Timestamp -- DateTime2
 SET     @dt = '2020-02-29 17:54:55.123'::timestamp
 
@@ -16,7 +16,7 @@ WHERE
 
 
 
---  PostgreSQL.15 PostgreSQL
+-- PostgreSQL.15 PostgreSQL
 DECLARE @ldt Timestamp -- DateTime2
 SET     @ldt = 02/29/2020 17:54:55
 
@@ -34,7 +34,7 @@ WHERE
 
 
 
---  PostgreSQL.15 PostgreSQL
+-- PostgreSQL.15 PostgreSQL
 DECLARE @dt TimestampTz -- DateTime
 SET     @dt = '2020-02-29 17:54:55.123'::timestamp
 
@@ -52,7 +52,7 @@ WHERE
 
 
 
---  PostgreSQL.15 PostgreSQL
+-- PostgreSQL.15 PostgreSQL
 DECLARE @dto TimestampTz -- DateTime
 SET     @dto = '2020-02-29T17:14:55.1231234+00:00'
 
@@ -70,7 +70,7 @@ WHERE
 
 
 
---  PostgreSQL.15 PostgreSQL
+-- PostgreSQL.15 PostgreSQL
 DECLARE @ins TimestampTz -- DateTime
 SET     @ins = 2020-02-29T17:14:55Z
 

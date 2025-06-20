@@ -35,7 +35,7 @@ ORDER BY `p`.`ProductID`, `s1`.`OrderID0`, `s1`.`ProductID`, `s1`.`OrderID`, `s1
 BeginTransactionAsync(RepeatableRead)
 
 
---  MariaDB.10.MySqlConnector MySql (asynchronously)
+-- MariaDB.10.MySqlConnector MySql (asynchronously)
 
 SELECT
 	`m_1`.`SupplierId`,
@@ -81,7 +81,7 @@ WHERE
 
 
 
---  MariaDB.10.MySqlConnector MySql (asynchronously)
+-- MariaDB.10.MySqlConnector MySql (asynchronously)
 
 SELECT
 	`m_1`.`ProductID`,
@@ -119,7 +119,7 @@ WHERE
 DisposeTransactionAsync
 
 
---  MariaDB.10.MySqlConnector MySql (asynchronously)
+-- MariaDB.10.MySqlConnector MySql (asynchronously)
 
 SELECT
 	`p`.`ProductName`,

@@ -1,5 +1,5 @@
 ﻿BeforeExecute
---  SQLite.Classic SQLite
+-- SQLite.Classic SQLite
 
 CREATE TABLE [TypeA]
 (
@@ -7,7 +7,7 @@ CREATE TABLE [TypeA]
 )
 
 BeforeExecute
---  SQLite.Classic SQLite
+-- SQLite.Classic SQLite
 
 CREATE TABLE [TypeB]
 (
@@ -15,7 +15,7 @@ CREATE TABLE [TypeB]
 )
 
 BeforeExecute
---  SQLite.MS SQLite
+-- SQLite.MS SQLite
 
 CREATE TABLE [TypeA]
 (
@@ -23,7 +23,7 @@ CREATE TABLE [TypeA]
 )
 
 BeforeExecute
---  SQLite.MS SQLite
+-- SQLite.MS SQLite
 
 CREATE TABLE [TypeB]
 (
@@ -31,7 +31,7 @@ CREATE TABLE [TypeB]
 )
 
 BeforeExecute
---  SQLite.Classic SQLite
+-- SQLite.Classic SQLite
 
 CREATE TABLE [TypeA]
 (
@@ -39,7 +39,7 @@ CREATE TABLE [TypeA]
 )
 
 BeforeExecute
---  SQLite.Classic SQLite
+-- SQLite.Classic SQLite
 
 CREATE TABLE [TypeB]
 (
@@ -47,7 +47,7 @@ CREATE TABLE [TypeB]
 )
 
 BeforeExecute
---  SQLite.MS SQLite
+-- SQLite.MS SQLite
 
 CREATE TABLE [TypeA]
 (
@@ -55,7 +55,7 @@ CREATE TABLE [TypeA]
 )
 
 BeforeExecute
---  SQLite.MS SQLite
+-- SQLite.MS SQLite
 
 CREATE TABLE [TypeB]
 (

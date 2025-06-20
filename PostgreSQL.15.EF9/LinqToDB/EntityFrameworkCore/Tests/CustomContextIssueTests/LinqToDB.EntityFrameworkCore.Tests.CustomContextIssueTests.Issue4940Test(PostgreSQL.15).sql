@@ -1,4 +1,4 @@
-﻿--  PostgreSQL.15 PostgreSQL
+﻿-- PostgreSQL.15 PostgreSQL
 
 CREATE TEMPORARY TABLE issue_4940_temp_table
 (
@@ -11,7 +11,7 @@ ON COMMIT PRESERVE ROWS
 
 
 
---  PostgreSQL.15 PostgreSQL
+-- PostgreSQL.15 PostgreSQL
 
 INSERT INTO issue_4940_temp_table
 (
@@ -26,7 +26,7 @@ VALUES
 
 
 
---  PostgreSQL.15 PostgreSQL
+-- PostgreSQL.15 PostgreSQL
 DECLARE @Id Integer -- Int32
 SET     @Id = 1
 DECLARE @Source Text(6) -- String
@@ -53,7 +53,7 @@ VALUES
 
 
 
---  PostgreSQL.15 PostgreSQL
+-- PostgreSQL.15 PostgreSQL
 DECLARE @Id Integer -- Int32
 SET     @Id = 2
 DECLARE @Source Text(6) -- String
@@ -84,7 +84,7 @@ INSERT BULK "Issue4940DBRecords"(Id, Source, Status, NullableStatus)
 
 
 
---  PostgreSQL.15 PostgreSQL
+-- PostgreSQL.15 PostgreSQL
 
 MERGE INTO "Issue4940DBRecords" "Target"
 USING (VALUES
@@ -125,7 +125,7 @@ SET
 
 
 
---  PostgreSQL.15 PostgreSQL (asynchronously)
+-- PostgreSQL.15 PostgreSQL (asynchronously)
 
 SELECT
 	t1."Id",
@@ -139,7 +139,7 @@ ORDER BY
 
 
 
---  PostgreSQL.15 PostgreSQL (asynchronously)
+-- PostgreSQL.15 PostgreSQL (asynchronously)
 
 SELECT
 	t1."Id",

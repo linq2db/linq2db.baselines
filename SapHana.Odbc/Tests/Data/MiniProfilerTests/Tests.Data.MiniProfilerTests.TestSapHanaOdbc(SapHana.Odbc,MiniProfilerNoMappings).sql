@@ -1,15 +1,15 @@
 ﻿BeforeExecute
---  SapHana.Odbc SapHanaOdbc
+-- SapHana.Odbc SapHanaOdbc
 
 SELECT CURRENT_SCHEMA FROM DUMMY
 
 BeforeExecute
---  SapHana.Odbc SapHanaOdbc
+-- SapHana.Odbc SapHanaOdbc
 
 SELECT 1 FROM _SYS_BI.BIMC_ALL_CUBES LIMIT 1
 
 BeforeExecute
---  SapHana.Odbc SapHanaOdbc
+-- SapHana.Odbc SapHanaOdbc
 
 
 				SELECT
@@ -56,7 +56,7 @@ BeforeExecute
 				WHERE s.HAS_PRIVILEGES = 'TRUE'
 
 BeforeExecute
---  SapHana.Odbc SapHanaOdbc
+-- SapHana.Odbc SapHanaOdbc
 
 
 				SELECT
@@ -69,7 +69,7 @@ BeforeExecute
 				FROM INDEX_COLUMNS
 
 BeforeExecute
---  SapHana.Odbc SapHanaOdbc
+-- SapHana.Odbc SapHanaOdbc
 
 
 				SELECT
@@ -116,7 +116,7 @@ BeforeExecute
 				WHERE s.HAS_PRIVILEGES = 'TRUE'
 
 BeforeExecute
---  SapHana.Odbc SapHanaOdbc
+-- SapHana.Odbc SapHanaOdbc
 
 
 				SELECT
@@ -130,7 +130,7 @@ BeforeExecute
 				WHERE SCHEMA_NAME IN ('TESTDB')
 
 BeforeExecute
---  SapHana.Odbc SapHanaOdbc
+-- SapHana.Odbc SapHanaOdbc
 
 
 				SELECT
@@ -147,7 +147,7 @@ BeforeExecute
 				WHERE v.VIEW_TYPE = 'CALC' AND v.IS_VALID = 'TRUE' AND v.SCHEMA_NAME IN ('TESTDB')
 
 BeforeExecute
---  SapHana.Odbc SapHanaOdbc
+-- SapHana.Odbc SapHanaOdbc
 
 
 				SELECT
@@ -164,7 +164,7 @@ BeforeExecute
 				ORDER BY v.VIEW_NAME, p."ORDER"
 
 BeforeExecute
---  SapHana.Odbc SapHanaOdbc
+-- SapHana.Odbc SapHanaOdbc
 
 
 				SELECT
@@ -211,7 +211,7 @@ BeforeExecute
 				WHERE s.HAS_PRIVILEGES = 'TRUE'
 
 BeforeExecute
---  SapHana.Odbc SapHanaOdbc
+-- SapHana.Odbc SapHanaOdbc
 
 
 				SELECT
@@ -233,7 +233,7 @@ BeforeExecute
 				WHERE F.SCHEMA_NAME IN ('TESTDB')
 
 BeforeExecute
---  SapHana.Odbc SapHanaOdbc
+-- SapHana.Odbc SapHanaOdbc
 
 
 				SELECT

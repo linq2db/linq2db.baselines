@@ -1,4 +1,4 @@
-﻿--  SqlServer.2019
+﻿-- SqlServer.2019
 DECLARE @BlogType NVarChar(200) -- String
 SET     @BlogType = N'blog_base'
 DECLARE @Url NVarChar(4000) -- String
@@ -17,7 +17,7 @@ VALUES
 
 
 
---  SqlServer.2019
+-- SqlServer.2019
 DECLARE @BlogType NVarChar(200) -- String
 SET     @BlogType = N'blog_rss'
 DECLARE @Url NVarChar(4000) -- String

@@ -10,7 +10,7 @@ ORDER BY
 	`t1`.`ChildID`
 
 BeforeExecute
---  MySql.5.7.MySqlConnector MySql57
+-- MySql.5.7.MySqlConnector MySql57
 
 SELECT
 	`t1`.`ParentID`,

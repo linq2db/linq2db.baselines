@@ -12,7 +12,7 @@ VALUES (@p6, @p7, @p8)
 RETURNING "Id";
 
 
---  PostgreSQL.15 PostgreSQL (asynchronously)
+-- PostgreSQL.15 PostgreSQL (asynchronously)
 
 INSERT INTO "Issue4783DBRecords"
 (
@@ -27,7 +27,7 @@ VALUES
 
 
 
---  PostgreSQL.15 PostgreSQL (asynchronously)
+-- PostgreSQL.15 PostgreSQL (asynchronously)
 
 SELECT
 	t1."Id",

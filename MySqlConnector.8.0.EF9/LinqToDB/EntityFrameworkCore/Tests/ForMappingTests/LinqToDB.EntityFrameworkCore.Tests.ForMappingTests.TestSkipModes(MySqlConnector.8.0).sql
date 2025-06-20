@@ -6,7 +6,7 @@ INSERT INTO `SkipModes` (`Id`, `InsertOnly`)
 VALUES (@p0, @p1);
 
 
---  MySql.8.0.MySqlConnector MySql80
+-- MySql.8.0.MySqlConnector MySql80
 DECLARE @Id Int32
 SET     @Id = 2
 DECLARE @InsertOnly Int32
@@ -25,7 +25,7 @@ VALUES
 
 
 
---  MySql.8.0.MySqlConnector MySql80
+-- MySql.8.0.MySqlConnector MySql80
 
 SELECT
 	`t1`.`Id`,
@@ -48,7 +48,7 @@ WHERE `Id` = @p1;
 SELECT ROW_COUNT();
 
 
---  MySql.8.0.MySqlConnector MySql80
+-- MySql.8.0.MySqlConnector MySql80
 DECLARE @UpdateOnly Int32
 SET     @UpdateOnly = 12
 DECLARE @Id Int32
@@ -63,7 +63,7 @@ WHERE
 
 
 
---  MySql.8.0.MySqlConnector MySql80
+-- MySql.8.0.MySqlConnector MySql80
 
 SELECT
 	`t1`.`Id`,
