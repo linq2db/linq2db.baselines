@@ -17,7 +17,7 @@ FROM
 				a_SubDatas."Id"
 			FROM
 				"SubData2" a_SubDatas
-		) t1 ON a_SubData."Id" = t1."Id" AND t1."rn" <= 1
+		) t1 ON a_SubData."Id" IS NOT NULL AND a_SubData."Id" = t1."Id" AND t1."rn" <= 1
 ORDER BY
 	i."Id"
 

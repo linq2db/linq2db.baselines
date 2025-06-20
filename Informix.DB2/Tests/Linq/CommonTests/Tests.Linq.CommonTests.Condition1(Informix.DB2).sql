@@ -4,7 +4,7 @@
 SELECT
 	CASE
 		WHEN CHAR_LENGTH(p.FirstName || '.') <> 1 THEN p.FirstName
-		WHEN NOT (p.MiddleName IS NULL OR CHAR_LENGTH(p.MiddleName || '.') - 1 = 0)
+		WHEN NOT (p.MiddleName IS NULL OR CHAR_LENGTH(p.MiddleName || '.') = 1 AND p.MiddleName IS NOT NULL)
 			THEN p.MiddleName
 		ELSE p.LastName
 	END

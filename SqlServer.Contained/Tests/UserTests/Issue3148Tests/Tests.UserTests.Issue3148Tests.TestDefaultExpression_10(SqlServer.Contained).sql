@@ -25,7 +25,7 @@ WHERE
 		FROM
 			[Child] [a_Children]
 		WHERE
-			[a_Parent].[ParentID] = [a_Children].[ParentID]
+			[a_Parent].[ParentID] IS NOT NULL AND [a_Parent].[ParentID] = [a_Children].[ParentID]
 	), 0, 1) = 1
 
 BeforeExecute
@@ -55,6 +55,6 @@ WHERE
 		FROM
 			[Child] [a_Children]
 		WHERE
-			[a_Parent].[ParentID] = [a_Children].[ParentID]
+			[a_Parent].[ParentID] IS NOT NULL AND [a_Parent].[ParentID] = [a_Children].[ParentID]
 	), 0, 1) = 1
 

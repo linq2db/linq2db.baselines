@@ -20,8 +20,7 @@ FROM
 			[Issue1983Person] [p]
 	) [cu]
 WHERE
-	[cu].[CountOfCards] = 0 OR [cu].[CountOfCards] <> 0 OR
-	[cu].[CountOfCards] IS NULL
+	[cu].[CountOfCards] = 0 OR [cu].[CountOfCards] <> 0
 
 BeforeExecute
 -- SQLite.MS SQLite

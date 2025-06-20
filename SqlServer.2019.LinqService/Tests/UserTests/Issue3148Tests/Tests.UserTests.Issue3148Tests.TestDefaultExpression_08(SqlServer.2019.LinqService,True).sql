@@ -22,11 +22,11 @@ WHERE
 	NOT (([a_Parent].[ParentID] = [t1].[ParentID] OR [a_Parent].[ParentID] IS NULL AND [t1].[ParentID] IS NULL) AND NOT ([a_Parent].[ParentID] IS NULL AND [t1].[ParentID] IS NOT NULL) AND NOT ([a_Parent].[ParentID] IS NOT NULL AND [t1].[ParentID] IS NULL) AND ([a_Parent].[Value1] = [t1].[Value1] OR [a_Parent].[Value1] IS NULL AND [t1].[Value1] IS NULL) AND NOT ([a_Parent].[Value1] IS NULL AND [t1].[Value1] IS NOT NULL) AND NOT ([a_Parent].[Value1] IS NOT NULL AND [t1].[Value1] IS NULL)) AND
 	IIF([x].[ParentID] = (
 		SELECT TOP (1)
-			IIF([a_Children].[ChildID] IS NOT NULL, [a_Children].[ChildID], 0)
+			[a_Children].[ChildID]
 		FROM
 			[Child] [a_Children]
 		WHERE
-			[a_Parent].[ParentID] = [a_Children].[ParentID]
+			[a_Parent].[ParentID] IS NOT NULL AND [a_Parent].[ParentID] = [a_Children].[ParentID]
 	), 0, 1) = 1
 
 BeforeExecute
@@ -53,10 +53,10 @@ WHERE
 	NOT (([a_Parent].[ParentID] = [t1].[ParentID] OR [a_Parent].[ParentID] IS NULL AND [t1].[ParentID] IS NULL) AND NOT ([a_Parent].[ParentID] IS NULL AND [t1].[ParentID] IS NOT NULL) AND NOT ([a_Parent].[ParentID] IS NOT NULL AND [t1].[ParentID] IS NULL) AND ([a_Parent].[Value1] = [t1].[Value1] OR [a_Parent].[Value1] IS NULL AND [t1].[Value1] IS NULL) AND NOT ([a_Parent].[Value1] IS NULL AND [t1].[Value1] IS NOT NULL) AND NOT ([a_Parent].[Value1] IS NOT NULL AND [t1].[Value1] IS NULL)) AND
 	IIF([x].[ParentID] = (
 		SELECT TOP (1)
-			IIF([a_Children].[ChildID] IS NOT NULL, [a_Children].[ChildID], 0)
+			[a_Children].[ChildID]
 		FROM
 			[Child] [a_Children]
 		WHERE
-			[a_Parent].[ParentID] = [a_Children].[ParentID]
+			[a_Parent].[ParentID] IS NOT NULL AND [a_Parent].[ParentID] = [a_Children].[ParentID]
 	), 0, 1) = 1
 

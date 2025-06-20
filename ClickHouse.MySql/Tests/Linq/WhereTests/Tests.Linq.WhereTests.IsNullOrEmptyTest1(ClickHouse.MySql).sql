@@ -6,7 +6,7 @@ SELECT
 FROM
 	Person nm
 WHERE
-	NOT (nm.MiddleName IS NULL OR lengthUTF8(nm.MiddleName) = 0)
+	NOT (nm.MiddleName IS NULL OR lengthUTF8(nm.MiddleName) = 0 AND nm.MiddleName IS NOT NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse

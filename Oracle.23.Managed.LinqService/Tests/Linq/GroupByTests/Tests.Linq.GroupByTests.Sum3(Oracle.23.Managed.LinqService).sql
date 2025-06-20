@@ -2,14 +2,7 @@
 -- Oracle.23.Managed Oracle.Managed Oracle12
 
 SELECT
-	(
-		SELECT
-			SUM(a_Children."ChildID")
-		FROM
-			"Child" a_Children
-		WHERE
-			g_2."ParentID" = a_Children."ParentID"
-	)
+	t1.SUM_1
 FROM
 	(
 		SELECT
@@ -21,4 +14,12 @@ FROM
 			a_Parent."ParentID",
 			a_Parent."Value1"
 	) g_2
+		OUTER APPLY (
+			SELECT
+				SUM(a_Children."ChildID") as SUM_1
+			FROM
+				"Child" a_Children
+			WHERE
+				g_2."ParentID" IS NOT NULL AND g_2."ParentID" = a_Children."ParentID"
+		) t1
 

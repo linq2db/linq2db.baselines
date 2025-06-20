@@ -11,7 +11,7 @@ SELECT
 			FROM
 				"SubData2" "a_SubDatas"
 			WHERE
-				"a_SubData"."Id" = "a_SubDatas"."Id"
+				"a_SubData"."Id" IS NOT NULL AND "a_SubData"."Id" = "a_SubDatas"."Id"
 		)
 	END
 FROM

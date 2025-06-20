@@ -22,7 +22,8 @@ FROM
 				FROM
 					"Table4" "id"
 				WHERE
-					"a_Table3".ID = "id".ID3 AND "id".ID = "r".ID
+					"a_Table3".ID IS NOT NULL AND "a_Table3".ID = "id".ID3 AND
+					"id".ID = "r".ID
 			)
 	) "m_1"
 		INNER JOIN "Table4" "d" ON "m_1".ID = "d".ID3 OR "m_1".ID IS NULL AND "d".ID3 IS NULL
@@ -49,7 +50,8 @@ WHERE
 		FROM
 			"Table4" "id"
 		WHERE
-			"a_Table3".ID = "id".ID3 AND "id".ID = "r".ID
+			"a_Table3".ID IS NOT NULL AND "a_Table3".ID = "id".ID3 AND
+			"id".ID = "r".ID
 	)
 
 BeforeExecute

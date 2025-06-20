@@ -16,6 +16,7 @@ WHERE
 		FROM
 			"Table4" id
 		WHERE
-			a_Table3.ID = id.ID3 AND id.ID = r.ID
+			a_Table3.ID IS NOT NULL AND a_Table3.ID = id.ID3 AND
+			id.ID = r.ID
 	)
 

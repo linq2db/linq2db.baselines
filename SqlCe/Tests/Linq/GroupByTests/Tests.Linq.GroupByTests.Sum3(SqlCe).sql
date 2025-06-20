@@ -20,6 +20,6 @@ FROM
 			FROM
 				[Child] [a_Children]
 			WHERE
-				[g_2].[ParentID] = [a_Children].[ParentID]
+				[g_2].[ParentID] IS NOT NULL AND [g_2].[ParentID] = [a_Children].[ParentID]
 		) [t1]
 

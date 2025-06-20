@@ -24,6 +24,6 @@ WHERE
 		FROM
 			[EmployeeTerritories] [a_EmployeeTerritories]
 		WHERE
-			[g_2].[EmployeeID] = [a_EmployeeTerritories].[EmployeeID]
+			[g_2].[EmployeeID] IS NOT NULL AND [g_2].[EmployeeID] = [a_EmployeeTerritories].[EmployeeID]
 	) > 1
 

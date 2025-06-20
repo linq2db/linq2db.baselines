@@ -23,14 +23,11 @@ WHERE
 	CASE
 		WHEN [x].[ParentID] = (
 			SELECT TOP (1)
-				CASE
-					WHEN [a_Children].[ChildID] IS NOT NULL THEN [a_Children].[ChildID]
-					ELSE 0
-				END
+				[a_Children].[ChildID]
 			FROM
 				[Child] [a_Children]
 			WHERE
-				[a_Parent].[ParentID] = [a_Children].[ParentID]
+				[a_Parent].[ParentID] IS NOT NULL AND [a_Parent].[ParentID] = [a_Children].[ParentID]
 		)
 			THEN 0
 		ELSE 1
@@ -61,14 +58,11 @@ WHERE
 	CASE
 		WHEN [x].[ParentID] = (
 			SELECT TOP (1)
-				CASE
-					WHEN [a_Children].[ChildID] IS NOT NULL THEN [a_Children].[ChildID]
-					ELSE 0
-				END
+				[a_Children].[ChildID]
 			FROM
 				[Child] [a_Children]
 			WHERE
-				[a_Parent].[ParentID] = [a_Children].[ParentID]
+				[a_Parent].[ParentID] IS NOT NULL AND [a_Parent].[ParentID] = [a_Children].[ParentID]
 		)
 			THEN 0
 		ELSE 1

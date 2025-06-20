@@ -34,14 +34,11 @@ WHERE
 	CASE
 		WHEN x."ParentID" = (
 			SELECT
-				CASE
-					WHEN "a_Children"."ChildID" IS NOT NULL THEN "a_Children"."ChildID"
-					ELSE 0
-				END
+				"a_Children"."ChildID"
 			FROM
 				"Child" "a_Children"
 			WHERE
-				"a_Parent"."ParentID" = "a_Children"."ParentID"
+				"a_Parent"."ParentID" IS NOT NULL AND "a_Parent"."ParentID" = "a_Children"."ParentID"
 			LIMIT 1
 		)
 			THEN False
@@ -84,14 +81,11 @@ WHERE
 	CASE
 		WHEN x."ParentID" = (
 			SELECT
-				CASE
-					WHEN "a_Children"."ChildID" IS NOT NULL THEN "a_Children"."ChildID"
-					ELSE 0
-				END
+				"a_Children"."ChildID"
 			FROM
 				"Child" "a_Children"
 			WHERE
-				"a_Parent"."ParentID" = "a_Children"."ParentID"
+				"a_Parent"."ParentID" IS NOT NULL AND "a_Parent"."ParentID" = "a_Children"."ParentID"
 			LIMIT 1
 		)
 			THEN False

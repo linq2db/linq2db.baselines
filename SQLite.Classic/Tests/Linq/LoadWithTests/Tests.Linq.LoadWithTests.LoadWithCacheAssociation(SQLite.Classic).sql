@@ -17,6 +17,6 @@ WHERE
 		FROM
 			[SubItem1] [a_SubItems1]
 		WHERE
-			[a_MainItem].[Id] = [a_SubItems1].[ParentId]
+			[a_MainItem].[Id] IS NOT NULL AND [a_MainItem].[Id] = [a_SubItems1].[ParentId]
 	) > 1
 

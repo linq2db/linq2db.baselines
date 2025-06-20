@@ -8,13 +8,13 @@ DECLARE @id1 Int -- Int32
 SET     @id1 = 1
 
 SELECT
-	"t1"."ParentID",
+	"t1"."Left_1",
 	"right_2"."Right_1"
 FROM
 	(
 		SELECT
 			"p"."Value1",
-			"p"."ParentID"
+			"p"."ParentID" as "Left_1"
 		FROM
 			"Parent" "p"
 		WHERE
@@ -31,5 +31,5 @@ FROM
 				"right_1"."ParentID" <> ? AND "right2"."ParentID" <> ?
 		) "right_2" ON "right_2"."c1" = "t1"."Value1" OR "right_2"."c1" IS NULL AND "t1"."Value1" IS NULL
 ORDER BY
-	"t1"."ParentID"
+	"t1"."Left_1"
 

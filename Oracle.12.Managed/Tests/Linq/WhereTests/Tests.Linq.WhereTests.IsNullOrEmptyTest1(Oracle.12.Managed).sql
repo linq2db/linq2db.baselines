@@ -6,7 +6,7 @@ SELECT
 FROM
 	"Person" nm
 WHERE
-	NOT (nm."MiddleName" IS NULL OR Length(nm."MiddleName") = 0)
+	NOT (nm."MiddleName" IS NULL OR Length(nm."MiddleName") = 0 AND nm."MiddleName" IS NOT NULL)
 
 BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12

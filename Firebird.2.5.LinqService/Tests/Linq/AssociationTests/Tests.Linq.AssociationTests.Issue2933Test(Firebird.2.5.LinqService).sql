@@ -9,7 +9,7 @@ SELECT
 		FROM
 			"Issue2933Pet" "a_PetIds"
 		WHERE
-			"a_Person"."Id" = "a_PetIds"."PersonId"
+			"a_Person"."Id" IS NOT NULL AND "a_Person"."Id" = "a_PetIds"."PersonId"
 	)
 FROM
 	"Issue2933Car" "x"
