@@ -6,12 +6,12 @@ DECLARE @id2 Integer(4) -- Int32
 SET     @id2 = 2
 
 SELECT
-	t1.ParentID,
-	right_2.cond
+	t1.Left_1,
+	right_2.Right_1
 FROM
 	(
 		SELECT
-			p.ParentID
+			p.ParentID as Left_1
 		FROM
 			Parent p
 		WHERE
@@ -19,13 +19,12 @@ FROM
 	) t1
 		FULL JOIN (
 			SELECT
-				right_1.ParentID as cond,
-				right_1.ParentID
+				right_1.ParentID as Right_1
 			FROM
 				Parent right_1
 			WHERE
 				right_1.ParentID <> @id2
-		) right_2 ON right_2.ParentID = t1.ParentID
+		) right_2 ON right_2.Right_1 = t1.Left_1
 ORDER BY
-	t1.ParentID
+	t1.Left_1
 
