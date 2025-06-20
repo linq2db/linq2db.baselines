@@ -13,7 +13,7 @@ FROM
 			FROM
 				"Issue2933Pet" "a_PetIds"
 			WHERE
-				"a_Person"."Id" = "a_PetIds"."PersonId"
+				"a_Person"."Id" IS NOT NULL AND "a_Person"."Id" = "a_PetIds"."PersonId"
 			LIMIT 1
 		) "t1" ON 1=1
 
