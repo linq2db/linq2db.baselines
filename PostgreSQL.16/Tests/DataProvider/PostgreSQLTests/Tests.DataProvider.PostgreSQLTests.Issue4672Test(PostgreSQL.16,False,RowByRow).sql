@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- PostgreSQL.15 PostgreSQL
+-- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 DECLARE @Interval Interval -- Object
 SET     @Interval = P-4DT-6H-5M-4S-876s-876600n
 
@@ -13,7 +13,7 @@ VALUES
 )
 
 BeforeExecute
--- PostgreSQL.15 PostgreSQL
+-- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 
 SELECT
 	t1."Id",

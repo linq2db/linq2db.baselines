@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- PostgreSQL.15 PostgreSQL
+-- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 
 MERGE INTO "Issue4556Table1" "Target"
 USING (
@@ -33,7 +33,7 @@ VALUES
 )
 
 BeforeExecute
--- PostgreSQL.15 PostgreSQL
+-- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 DECLARE @value Json -- Object
 SET     @value = {[key1, value1]}
 DECLARE @value_1 Jsonb -- Object
