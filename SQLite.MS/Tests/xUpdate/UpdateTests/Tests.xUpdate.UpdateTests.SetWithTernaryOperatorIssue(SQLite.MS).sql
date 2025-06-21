@@ -49,7 +49,7 @@ WHERE
 BeforeExecute
 -- SQLite.MS SQLite
 DECLARE @id  -- Int32
-SET     @id = 10
+SET     @id = 5
 
 SELECT
 	[t1].[PersonID],
