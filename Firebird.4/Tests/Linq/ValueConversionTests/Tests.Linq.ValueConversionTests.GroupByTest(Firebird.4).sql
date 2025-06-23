@@ -20,7 +20,7 @@ SELECT
 FROM
 	"ValueConversion" "m_1"
 WHERE
-	@testedList = "m_1"."Value2" AND @testedList = "m_1"."Value2"
+	@testedList = "m_1"."Value2"
 
 BeforeExecute
 DisposeTransaction
