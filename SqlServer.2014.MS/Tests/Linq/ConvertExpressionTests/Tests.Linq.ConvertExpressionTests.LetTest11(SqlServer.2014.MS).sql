@@ -2,14 +2,14 @@
 -- SqlServer.2014.MS SqlServer.2014
 
 SELECT
-	IIF([t1].[ParentID] IS NULL, 0, [t1].[ParentID]),
+	IIF([t1].[cond] IS NULL, 0, [t1].[cond]),
 	[t2].[ParentID],
 	[t2].[ChildID]
 FROM
 	[Parent] [p]
 		LEFT JOIN (
 			SELECT TOP (1)
-				[c_1].[ParentID]
+				[c_1].[ParentID] as [cond]
 			FROM
 				[Child] [c_1]
 			WHERE
