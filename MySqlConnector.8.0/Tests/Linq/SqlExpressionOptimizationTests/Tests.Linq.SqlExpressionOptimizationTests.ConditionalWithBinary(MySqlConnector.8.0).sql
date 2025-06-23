@@ -722,7 +722,7 @@ SELECT
 FROM
 	`OptimizationData` `swap_with_not`
 WHERE
-	`swap_with_not`.`BoolValue` = 0
+	NOT `swap_with_not`.`BoolValue` = 1
 
 BeforeExecute
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80

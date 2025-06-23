@@ -15,8 +15,8 @@ SELECT
 FROM
 	`Person` `m_1`
 WHERE
-	(`m_1`.`PersonID` = @id AND `m_1`.`LastName` <> @name OR `m_1`.`FirstName` <> @name AND `m_1`.`PersonID` - 1 = @id) AND
-	(`m_1`.`PersonID` = @id AND `m_1`.`LastName` <> @name OR `m_1`.`FirstName` <> @name AND `m_1`.`PersonID` - 1 = @id)
+	`m_1`.`PersonID` = @id AND `m_1`.`LastName` <> @name OR
+	`m_1`.`FirstName` <> @name AND `m_1`.`PersonID` - 1 = @id
 
 BeforeExecute
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
