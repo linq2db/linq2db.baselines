@@ -26,7 +26,7 @@ SELECT
 FROM
 	Src s
 WHERE
-	s.Int = 4
+	NOT s.Int <> 4
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse

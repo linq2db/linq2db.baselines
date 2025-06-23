@@ -722,7 +722,7 @@ SELECT
 FROM
 	OptimizationData swap_with_not
 WHERE
-	swap_with_not.BoolValue = false
+	NOT swap_with_not.BoolValue = true
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse

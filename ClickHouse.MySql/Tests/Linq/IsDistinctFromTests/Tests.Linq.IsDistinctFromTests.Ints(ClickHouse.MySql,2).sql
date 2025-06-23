@@ -26,7 +26,7 @@ SELECT
 FROM
 	Src s
 WHERE
-	s.Int = 2
+	NOT s.Int <> 2
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
