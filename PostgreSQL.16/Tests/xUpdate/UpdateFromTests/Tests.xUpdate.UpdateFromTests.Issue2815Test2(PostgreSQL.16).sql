@@ -19,8 +19,7 @@ WHERE
 	channel."BIC" = "Issue2815Table1"."SRC_BIC" AND
 	channel."Sepa" = CASE
 		WHEN source."SEPA" AND destination."SEPA" THEN CASE
-			WHEN source."ISO" = destination."ISO" OR source."ISO" IS NULL AND destination."ISO" IS NULL
-				THEN 0
+			WHEN source."ISO" = destination."ISO" THEN 0
 			ELSE 1
 		END
 		ELSE 2
