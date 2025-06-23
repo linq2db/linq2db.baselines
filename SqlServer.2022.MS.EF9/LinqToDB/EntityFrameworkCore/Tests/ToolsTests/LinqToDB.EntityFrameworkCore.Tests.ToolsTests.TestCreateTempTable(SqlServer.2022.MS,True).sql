@@ -74,7 +74,7 @@ SELECT
 FROM
 	[Employees] [e]
 WHERE
-	[e].[IsDeleted] = 0 OR [e].[IsDeleted] = 0
+	[e].[IsDeleted] = 0
 
 
 
@@ -85,7 +85,7 @@ SELECT
 FROM
 	[tempdb]..[#TestEmployees] [e]
 WHERE
-	[e].[IsDeleted] = 0 OR [e].[IsDeleted] = 0
+	[e].[IsDeleted] = 0
 
 
 

@@ -43,7 +43,7 @@ SELECT
 FROM
 	[Products] [e]
 WHERE
-	([e].[IsDeleted] = 0 OR [e].[IsDeleted] = 0) AND [e].[ProductName] LIKE N'%a%' ESCAPE N'~'
+	[e].[IsDeleted] = 0 AND [e].[ProductName] LIKE N'%a%' ESCAPE N'~'
 
 
 
@@ -64,7 +64,7 @@ SELECT
 FROM
 	[Products] [e]
 WHERE
-	([e].[IsDeleted] = 0 OR [e].[IsDeleted] = 0) AND [e].[ProductName] LIKE N'%a%' ESCAPE N'~'
+	[e].[IsDeleted] = 0 AND [e].[ProductName] LIKE N'%a%' ESCAPE N'~'
 
 
 
@@ -85,7 +85,7 @@ SELECT
 FROM
 	[Products] [e]
 WHERE
-	([e].[IsDeleted] = 0 OR [e].[IsDeleted] = 0) AND [e].[ProductName] LIKE N'%a%' ESCAPE N'~'
+	[e].[IsDeleted] = 0 AND [e].[ProductName] LIKE N'%a%' ESCAPE N'~'
 
 
 
@@ -98,7 +98,7 @@ SELECT
 		FROM
 			[Products] [e]
 		WHERE
-			([e].[IsDeleted] = 0 OR [e].[IsDeleted] = 0) AND [e].[ProductName] LIKE N'%a%' ESCAPE N'~'
+			[e].[IsDeleted] = 0 AND [e].[ProductName] LIKE N'%a%' ESCAPE N'~'
 	), 1, 0)
 
 
