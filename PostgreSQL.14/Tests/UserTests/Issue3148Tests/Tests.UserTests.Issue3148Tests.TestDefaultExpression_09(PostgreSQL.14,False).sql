@@ -20,9 +20,9 @@ FROM
 		) t1 ON 1=1
 		LEFT JOIN LATERAL (
 			SELECT
-				"a_GrandChildren_1"."ParentID",
-				"a_GrandChildren_1"."ChildID",
-				"a_GrandChildren_1"."GrandChildID"
+				NULL::Int as "ParentID",
+				NULL::Int as "ChildID",
+				NULL::Int as "GrandChildID"
 			FROM
 				"GrandChild" "a_GrandChildren_1"
 			WHERE
@@ -34,10 +34,7 @@ WHERE
 	CASE
 		WHEN x."ParentID" = (
 			SELECT
-				CASE
-					WHEN "a_Children"."ChildID" IS NOT NULL THEN "a_Children"."ChildID"
-					ELSE 0
-				END
+				"a_Children"."ChildID"
 			FROM
 				"Child" "a_Children"
 			WHERE
@@ -70,9 +67,9 @@ FROM
 		) t1 ON 1=1
 		LEFT JOIN LATERAL (
 			SELECT
-				"a_GrandChildren_1"."ParentID",
-				"a_GrandChildren_1"."ChildID",
-				"a_GrandChildren_1"."GrandChildID"
+				NULL::Int as "ParentID",
+				NULL::Int as "ChildID",
+				NULL::Int as "GrandChildID"
 			FROM
 				"GrandChild" "a_GrandChildren_1"
 			WHERE
@@ -84,10 +81,7 @@ WHERE
 	CASE
 		WHEN x."ParentID" = (
 			SELECT
-				CASE
-					WHEN "a_Children"."ChildID" IS NOT NULL THEN "a_Children"."ChildID"
-					ELSE 0
-				END
+				"a_Children"."ChildID"
 			FROM
 				"Child" "a_Children"
 			WHERE

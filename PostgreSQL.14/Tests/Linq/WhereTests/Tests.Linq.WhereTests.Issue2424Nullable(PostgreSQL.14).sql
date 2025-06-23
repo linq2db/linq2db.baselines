@@ -182,7 +182,7 @@ SELECT
 FROM
 	"Isue2424Table" i
 WHERE
-	i."StrValueNullable" IS NOT NULL OR i."StrValueNullable" IS NOT NULL
+	i."StrValueNullable" IS NOT NULL
 
 BeforeExecute
 -- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
