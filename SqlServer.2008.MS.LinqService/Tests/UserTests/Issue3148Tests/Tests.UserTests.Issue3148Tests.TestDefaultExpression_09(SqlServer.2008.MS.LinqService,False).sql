@@ -19,9 +19,9 @@ FROM
 		) [t1]
 		OUTER APPLY (
 			SELECT TOP (1)
-				[a_GrandChildren_1].[ParentID],
-				[a_GrandChildren_1].[ChildID],
-				[a_GrandChildren_1].[GrandChildID]
+				NULL as [ParentID],
+				NULL as [ChildID],
+				NULL as [GrandChildID]
 			FROM
 				[GrandChild] [a_GrandChildren_1]
 			WHERE
@@ -33,10 +33,7 @@ WHERE
 	CASE
 		WHEN [x].[ParentID] = (
 			SELECT TOP (1)
-				CASE
-					WHEN [a_Children].[ChildID] IS NOT NULL THEN [a_Children].[ChildID]
-					ELSE 0
-				END
+				[a_Children].[ChildID]
 			FROM
 				[Child] [a_Children]
 			WHERE
@@ -67,9 +64,9 @@ FROM
 		) [t1]
 		OUTER APPLY (
 			SELECT TOP (1)
-				[a_GrandChildren_1].[ParentID],
-				[a_GrandChildren_1].[ChildID],
-				[a_GrandChildren_1].[GrandChildID]
+				NULL as [ParentID],
+				NULL as [ChildID],
+				NULL as [GrandChildID]
 			FROM
 				[GrandChild] [a_GrandChildren_1]
 			WHERE
@@ -81,10 +78,7 @@ WHERE
 	CASE
 		WHEN [x].[ParentID] = (
 			SELECT TOP (1)
-				CASE
-					WHEN [a_Children].[ChildID] IS NOT NULL THEN [a_Children].[ChildID]
-					ELSE 0
-				END
+				[a_Children].[ChildID]
 			FROM
 				[Child] [a_Children]
 			WHERE

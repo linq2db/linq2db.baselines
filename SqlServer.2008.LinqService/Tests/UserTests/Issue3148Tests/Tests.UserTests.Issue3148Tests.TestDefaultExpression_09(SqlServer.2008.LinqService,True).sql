@@ -19,9 +19,7 @@ FROM
 		) [t1]
 		OUTER APPLY (
 			SELECT TOP (1)
-				[a_GrandChildren_1].[ParentID],
-				[a_GrandChildren_1].[ChildID],
-				[a_GrandChildren_1].[GrandChildID]
+				NULL as [ParentID]
 			FROM
 				[GrandChild] [a_GrandChildren_1]
 			WHERE
@@ -29,14 +27,11 @@ FROM
 				[x].[ChildID] = [a_GrandChildren_1].[ChildID]
 		) [t2]
 WHERE
-	NOT (([t1].[ParentID] = [t2].[ParentID] OR [t1].[ParentID] IS NULL AND [t2].[ParentID] IS NULL) AND NOT ([t1].[ParentID] IS NULL AND [t2].[ParentID] IS NOT NULL) AND NOT ([t1].[ParentID] IS NOT NULL AND [t2].[ParentID] IS NULL) AND ([t1].[ChildID] = [t2].[ChildID] OR [t1].[ChildID] IS NULL AND [t2].[ChildID] IS NULL) AND NOT ([t1].[ChildID] IS NULL AND [t2].[ChildID] IS NOT NULL) AND NOT ([t1].[ChildID] IS NOT NULL AND [t2].[ChildID] IS NULL) AND ([t1].[GrandChildID] = [t2].[GrandChildID] OR [t1].[GrandChildID] IS NULL AND [t2].[GrandChildID] IS NULL) AND NOT ([t1].[GrandChildID] IS NULL AND [t2].[GrandChildID] IS NOT NULL) AND NOT ([t1].[GrandChildID] IS NOT NULL AND [t2].[GrandChildID] IS NULL)) AND
+	NOT (([t1].[ParentID] = [t2].[ParentID] OR [t1].[ParentID] IS NULL AND [t2].[ParentID] IS NULL) AND NOT ([t1].[ParentID] IS NULL AND [t2].[ParentID] IS NOT NULL) AND NOT ([t1].[ParentID] IS NOT NULL AND [t2].[ParentID] IS NULL) AND ([t1].[ChildID] = [t2].[ParentID] OR [t1].[ChildID] IS NULL AND [t2].[ParentID] IS NULL) AND NOT ([t1].[ChildID] IS NULL AND [t2].[ParentID] IS NOT NULL) AND NOT ([t1].[ChildID] IS NOT NULL AND [t2].[ParentID] IS NULL) AND ([t1].[GrandChildID] = [t2].[ParentID] OR [t1].[GrandChildID] IS NULL AND [t2].[ParentID] IS NULL) AND NOT ([t1].[GrandChildID] IS NULL AND [t2].[ParentID] IS NOT NULL) AND NOT ([t1].[GrandChildID] IS NOT NULL AND [t2].[ParentID] IS NULL)) AND
 	CASE
 		WHEN [x].[ParentID] = (
 			SELECT TOP (1)
-				CASE
-					WHEN [a_Children].[ChildID] IS NOT NULL THEN [a_Children].[ChildID]
-					ELSE 0
-				END
+				[a_Children].[ChildID]
 			FROM
 				[Child] [a_Children]
 			WHERE
@@ -67,9 +62,7 @@ FROM
 		) [t1]
 		OUTER APPLY (
 			SELECT TOP (1)
-				[a_GrandChildren_1].[ParentID],
-				[a_GrandChildren_1].[ChildID],
-				[a_GrandChildren_1].[GrandChildID]
+				NULL as [ParentID]
 			FROM
 				[GrandChild] [a_GrandChildren_1]
 			WHERE
@@ -77,14 +70,11 @@ FROM
 				[x].[ChildID] = [a_GrandChildren_1].[ChildID]
 		) [t2]
 WHERE
-	NOT (([t1].[ParentID] = [t2].[ParentID] OR [t1].[ParentID] IS NULL AND [t2].[ParentID] IS NULL) AND NOT ([t1].[ParentID] IS NULL AND [t2].[ParentID] IS NOT NULL) AND NOT ([t1].[ParentID] IS NOT NULL AND [t2].[ParentID] IS NULL) AND ([t1].[ChildID] = [t2].[ChildID] OR [t1].[ChildID] IS NULL AND [t2].[ChildID] IS NULL) AND NOT ([t1].[ChildID] IS NULL AND [t2].[ChildID] IS NOT NULL) AND NOT ([t1].[ChildID] IS NOT NULL AND [t2].[ChildID] IS NULL) AND ([t1].[GrandChildID] = [t2].[GrandChildID] OR [t1].[GrandChildID] IS NULL AND [t2].[GrandChildID] IS NULL) AND NOT ([t1].[GrandChildID] IS NULL AND [t2].[GrandChildID] IS NOT NULL) AND NOT ([t1].[GrandChildID] IS NOT NULL AND [t2].[GrandChildID] IS NULL)) AND
+	NOT (([t1].[ParentID] = [t2].[ParentID] OR [t1].[ParentID] IS NULL AND [t2].[ParentID] IS NULL) AND NOT ([t1].[ParentID] IS NULL AND [t2].[ParentID] IS NOT NULL) AND NOT ([t1].[ParentID] IS NOT NULL AND [t2].[ParentID] IS NULL) AND ([t1].[ChildID] = [t2].[ParentID] OR [t1].[ChildID] IS NULL AND [t2].[ParentID] IS NULL) AND NOT ([t1].[ChildID] IS NULL AND [t2].[ParentID] IS NOT NULL) AND NOT ([t1].[ChildID] IS NOT NULL AND [t2].[ParentID] IS NULL) AND ([t1].[GrandChildID] = [t2].[ParentID] OR [t1].[GrandChildID] IS NULL AND [t2].[ParentID] IS NULL) AND NOT ([t1].[GrandChildID] IS NULL AND [t2].[ParentID] IS NOT NULL) AND NOT ([t1].[GrandChildID] IS NOT NULL AND [t2].[ParentID] IS NULL)) AND
 	CASE
 		WHEN [x].[ParentID] = (
 			SELECT TOP (1)
-				CASE
-					WHEN [a_Children].[ChildID] IS NOT NULL THEN [a_Children].[ChildID]
-					ELSE 0
-				END
+				[a_Children].[ChildID]
 			FROM
 				[Child] [a_Children]
 			WHERE
