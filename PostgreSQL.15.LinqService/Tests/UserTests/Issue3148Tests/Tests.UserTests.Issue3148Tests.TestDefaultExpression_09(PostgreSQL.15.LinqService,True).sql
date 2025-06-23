@@ -20,9 +20,7 @@ FROM
 		) t1 ON 1=1
 		LEFT JOIN LATERAL (
 			SELECT
-				"a_GrandChildren_1"."ParentID",
-				"a_GrandChildren_1"."ChildID",
-				"a_GrandChildren_1"."GrandChildID"
+				NULL::Int as "ParentID"
 			FROM
 				"GrandChild" "a_GrandChildren_1"
 			WHERE
@@ -30,14 +28,11 @@ FROM
 			LIMIT 1
 		) t2 ON 1=1
 WHERE
-	NOT ((t1."ParentID" = t2."ParentID" OR t1."ParentID" IS NULL AND t2."ParentID" IS NULL) AND NOT (t1."ParentID" IS NULL AND t2."ParentID" IS NOT NULL) AND NOT (t1."ParentID" IS NOT NULL AND t2."ParentID" IS NULL) AND (t1."ChildID" = t2."ChildID" OR t1."ChildID" IS NULL AND t2."ChildID" IS NULL) AND NOT (t1."ChildID" IS NULL AND t2."ChildID" IS NOT NULL) AND NOT (t1."ChildID" IS NOT NULL AND t2."ChildID" IS NULL) AND (t1."GrandChildID" = t2."GrandChildID" OR t1."GrandChildID" IS NULL AND t2."GrandChildID" IS NULL) AND NOT (t1."GrandChildID" IS NULL AND t2."GrandChildID" IS NOT NULL) AND NOT (t1."GrandChildID" IS NOT NULL AND t2."GrandChildID" IS NULL)) AND
+	NOT ((t1."ParentID" = t2."ParentID" OR t1."ParentID" IS NULL AND t2."ParentID" IS NULL) AND NOT (t1."ParentID" IS NULL AND t2."ParentID" IS NOT NULL) AND NOT (t1."ParentID" IS NOT NULL AND t2."ParentID" IS NULL) AND (t1."ChildID" = t2."ParentID" OR t1."ChildID" IS NULL AND t2."ParentID" IS NULL) AND NOT (t1."ChildID" IS NULL AND t2."ParentID" IS NOT NULL) AND NOT (t1."ChildID" IS NOT NULL AND t2."ParentID" IS NULL) AND (t1."GrandChildID" = t2."ParentID" OR t1."GrandChildID" IS NULL AND t2."ParentID" IS NULL) AND NOT (t1."GrandChildID" IS NULL AND t2."ParentID" IS NOT NULL) AND NOT (t1."GrandChildID" IS NOT NULL AND t2."ParentID" IS NULL)) AND
 	CASE
 		WHEN x."ParentID" = (
 			SELECT
-				CASE
-					WHEN "a_Children"."ChildID" IS NOT NULL THEN "a_Children"."ChildID"
-					ELSE 0
-				END
+				"a_Children"."ChildID"
 			FROM
 				"Child" "a_Children"
 			WHERE
@@ -70,9 +65,7 @@ FROM
 		) t1 ON 1=1
 		LEFT JOIN LATERAL (
 			SELECT
-				"a_GrandChildren_1"."ParentID",
-				"a_GrandChildren_1"."ChildID",
-				"a_GrandChildren_1"."GrandChildID"
+				NULL::Int as "ParentID"
 			FROM
 				"GrandChild" "a_GrandChildren_1"
 			WHERE
@@ -80,14 +73,11 @@ FROM
 			LIMIT 1
 		) t2 ON 1=1
 WHERE
-	NOT ((t1."ParentID" = t2."ParentID" OR t1."ParentID" IS NULL AND t2."ParentID" IS NULL) AND NOT (t1."ParentID" IS NULL AND t2."ParentID" IS NOT NULL) AND NOT (t1."ParentID" IS NOT NULL AND t2."ParentID" IS NULL) AND (t1."ChildID" = t2."ChildID" OR t1."ChildID" IS NULL AND t2."ChildID" IS NULL) AND NOT (t1."ChildID" IS NULL AND t2."ChildID" IS NOT NULL) AND NOT (t1."ChildID" IS NOT NULL AND t2."ChildID" IS NULL) AND (t1."GrandChildID" = t2."GrandChildID" OR t1."GrandChildID" IS NULL AND t2."GrandChildID" IS NULL) AND NOT (t1."GrandChildID" IS NULL AND t2."GrandChildID" IS NOT NULL) AND NOT (t1."GrandChildID" IS NOT NULL AND t2."GrandChildID" IS NULL)) AND
+	NOT ((t1."ParentID" = t2."ParentID" OR t1."ParentID" IS NULL AND t2."ParentID" IS NULL) AND NOT (t1."ParentID" IS NULL AND t2."ParentID" IS NOT NULL) AND NOT (t1."ParentID" IS NOT NULL AND t2."ParentID" IS NULL) AND (t1."ChildID" = t2."ParentID" OR t1."ChildID" IS NULL AND t2."ParentID" IS NULL) AND NOT (t1."ChildID" IS NULL AND t2."ParentID" IS NOT NULL) AND NOT (t1."ChildID" IS NOT NULL AND t2."ParentID" IS NULL) AND (t1."GrandChildID" = t2."ParentID" OR t1."GrandChildID" IS NULL AND t2."ParentID" IS NULL) AND NOT (t1."GrandChildID" IS NULL AND t2."ParentID" IS NOT NULL) AND NOT (t1."GrandChildID" IS NOT NULL AND t2."ParentID" IS NULL)) AND
 	CASE
 		WHEN x."ParentID" = (
 			SELECT
-				CASE
-					WHEN "a_Children"."ChildID" IS NOT NULL THEN "a_Children"."ChildID"
-					ELSE 0
-				END
+				"a_Children"."ChildID"
 			FROM
 				"Child" "a_Children"
 			WHERE
