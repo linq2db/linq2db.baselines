@@ -698,7 +698,7 @@ SELECT
 FROM
 	[OptimizationData] [swap_with_not]
 WHERE
-	[swap_with_not].[BoolValue] = False
+	NOT [swap_with_not].[BoolValue] = True
 
 BeforeExecute
 -- Access.Ace.OleDb AccessOleDb

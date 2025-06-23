@@ -32,7 +32,7 @@ SELECT
 FROM
 	[Src] [s]
 WHERE
-	[s].[Int] = @value
+	NOT [s].[Int] <> @value
 
 BeforeExecute
 -- Access.Ace.OleDb AccessOleDb

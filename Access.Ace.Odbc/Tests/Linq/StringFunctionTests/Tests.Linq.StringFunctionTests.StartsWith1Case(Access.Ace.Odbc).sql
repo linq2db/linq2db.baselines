@@ -28,6 +28,6 @@ SELECT
 FROM
 	[Person] [p]
 WHERE
-	([p].[FirstName] NOT LIKE 'Jo%' OR InStr(1, [p].[FirstName], 'Jo', 0) <> 1) AND
+	([p].[FirstName] NOT LIKE 'Jo%' OR NOT InStr(1, [p].[FirstName], 'Jo', 0) = 1) AND
 	[p].[PersonID] = 1
 

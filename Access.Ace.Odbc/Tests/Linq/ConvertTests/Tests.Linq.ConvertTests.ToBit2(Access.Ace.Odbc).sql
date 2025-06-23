@@ -13,5 +13,5 @@ SELECT
 FROM
 	[LinqDataTypes] [t]
 WHERE
-	[t].[MoneyValue] = 4.5
+	NOT [t].[MoneyValue] <> 4.5
 

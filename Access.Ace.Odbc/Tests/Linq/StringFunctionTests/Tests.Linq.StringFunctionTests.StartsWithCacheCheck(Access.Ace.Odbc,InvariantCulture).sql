@@ -35,7 +35,7 @@ SELECT
 FROM
 	[Person] [p]
 WHERE
-	([p].[FirstName] NOT LIKE ? OR InStr(1, [p].[FirstName], ?, 0) <> 1) AND
+	([p].[FirstName] NOT LIKE ? OR NOT InStr(1, [p].[FirstName], ?, 0) = 1) AND
 	[p].[PersonID] = 1
 
 BeforeExecute
@@ -65,6 +65,6 @@ SELECT
 FROM
 	[Person] [p]
 WHERE
-	([p].[FirstName] NOT LIKE ? OR InStr(1, [p].[FirstName], ?, 0) <> 1) AND
+	([p].[FirstName] NOT LIKE ? OR NOT InStr(1, [p].[FirstName], ?, 0) = 1) AND
 	[p].[PersonID] = 1
 

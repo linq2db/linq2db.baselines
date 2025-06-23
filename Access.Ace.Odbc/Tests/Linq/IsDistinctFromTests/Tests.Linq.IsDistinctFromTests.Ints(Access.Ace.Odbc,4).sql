@@ -32,7 +32,7 @@ SELECT
 FROM
 	[Src] [s]
 WHERE
-	[s].[Int] = ?
+	NOT [s].[Int] <> ?
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
