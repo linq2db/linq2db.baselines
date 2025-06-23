@@ -13,5 +13,5 @@ SELECT
 FROM
 	LinqDataTypes t
 WHERE
-	t.MoneyValue = toDecimal128('4.5', 10)
+	NOT t.MoneyValue <> toDecimal128('4.5', 10)
 
