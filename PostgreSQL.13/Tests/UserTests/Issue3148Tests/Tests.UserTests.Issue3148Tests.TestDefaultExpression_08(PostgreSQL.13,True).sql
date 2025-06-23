@@ -9,8 +9,8 @@ FROM
 		LEFT JOIN "Parent" "a_Parent" ON x."ParentID" = "a_Parent"."ParentID"
 		LEFT JOIN LATERAL (
 			SELECT
-				"a_Parent_1"."ParentID",
-				"a_Parent_1"."Value1"
+				0 as "ParentID",
+				NULL::Int as "Value1"
 			FROM
 				"GrandChild" "a_GrandChildren"
 					LEFT JOIN "Child" "a_Child" ON "a_GrandChildren"."ParentID" = "a_Child"."ParentID" AND "a_GrandChildren"."ChildID" = "a_Child"."ChildID"
@@ -24,10 +24,7 @@ WHERE
 	CASE
 		WHEN x."ParentID" = (
 			SELECT
-				CASE
-					WHEN "a_Children"."ChildID" IS NOT NULL THEN "a_Children"."ChildID"
-					ELSE 0
-				END
+				"a_Children"."ChildID"
 			FROM
 				"Child" "a_Children"
 			WHERE
@@ -49,8 +46,8 @@ FROM
 		LEFT JOIN "Parent" "a_Parent" ON x."ParentID" = "a_Parent"."ParentID"
 		LEFT JOIN LATERAL (
 			SELECT
-				"a_Parent_1"."ParentID",
-				"a_Parent_1"."Value1"
+				0 as "ParentID",
+				NULL::Int as "Value1"
 			FROM
 				"GrandChild" "a_GrandChildren"
 					LEFT JOIN "Child" "a_Child" ON "a_GrandChildren"."ParentID" = "a_Child"."ParentID" AND "a_GrandChildren"."ChildID" = "a_Child"."ChildID"
@@ -64,10 +61,7 @@ WHERE
 	CASE
 		WHEN x."ParentID" = (
 			SELECT
-				CASE
-					WHEN "a_Children"."ChildID" IS NOT NULL THEN "a_Children"."ChildID"
-					ELSE 0
-				END
+				"a_Children"."ChildID"
 			FROM
 				"Child" "a_Children"
 			WHERE

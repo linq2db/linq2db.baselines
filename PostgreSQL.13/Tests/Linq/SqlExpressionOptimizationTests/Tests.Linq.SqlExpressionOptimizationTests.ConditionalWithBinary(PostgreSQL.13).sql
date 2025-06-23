@@ -722,7 +722,7 @@ SELECT
 FROM
 	"OptimizationData" swap_with_not
 WHERE
-	swap_with_not."BoolValue" = False
+	NOT swap_with_not."BoolValue" = True
 
 BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
