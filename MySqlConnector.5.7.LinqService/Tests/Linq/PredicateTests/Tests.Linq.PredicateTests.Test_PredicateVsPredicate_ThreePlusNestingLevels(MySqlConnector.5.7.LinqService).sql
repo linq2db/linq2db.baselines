@@ -36,7 +36,7 @@ SELECT
 FROM
 	`BooleanTable` `r`
 WHERE
-	(`r`.`Value1` = `r`.`Value2`) <> (`r`.`Value4` <> `r`.`Value1` OR `r`.`Value4` IS NULL)
+	(`r`.`Value1` = `r`.`Value2`) <> (NOT (`r`.`Value4` = `r`.`Value1` AND `r`.`Value4` IS NOT NULL))
 
 BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
@@ -114,7 +114,7 @@ SELECT
 FROM
 	`BooleanTable` `r`
 WHERE
-	(`r`.`Value1` = `r`.`Value2`) <> (`r`.`Value4` <> `r`.`Value1` OR `r`.`Value4` IS NULL)
+	(`r`.`Value1` = `r`.`Value2`) <> (NOT (`r`.`Value4` = `r`.`Value1` AND `r`.`Value4` IS NOT NULL))
 
 BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
