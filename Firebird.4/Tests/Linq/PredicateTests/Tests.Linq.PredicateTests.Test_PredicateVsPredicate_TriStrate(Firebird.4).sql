@@ -409,7 +409,7 @@ SELECT
 FROM
 	"BooleanTable" "r"
 WHERE
-	("r"."Value4" >= "r"."Value5") <> (("r"."Value5" <> "r"."Value4")) OR
+	("r"."Value4" >= "r"."Value5" AND "r"."Value4" IS NOT NULL AND "r"."Value5" IS NOT NULL) <> (("r"."Value5" <> "r"."Value4")) OR
 	"r"."Value5" IS NULL OR "r"."Value4" IS NULL
 
 BeforeExecute
