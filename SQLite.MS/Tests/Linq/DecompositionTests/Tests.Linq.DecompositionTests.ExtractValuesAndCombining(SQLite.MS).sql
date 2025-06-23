@@ -2,29 +2,16 @@
 -- SQLite.MS SQLite
 
 SELECT
-	[x].[cond],
+	[x].[Kind] = 1 OR [x].[Kind] = 2,
 	[x].[Kind],
-	[x].[ItemCode],
+	Substr([x].[ItemCode], 1, 2),
 	[x].[Color],
-	[x].[ItemCode_1],
-	[x].[Style_1]
+	Substr([x].[ItemCode], 3, 2),
+	[x].[Style]
 FROM
-	(
-		SELECT
-			[i].[Kind] = 1 OR [i].[Kind] = 2 as [cond],
-			[i].[Kind] = 1 as [cond_1],
-			Substr([i].[ItemCode], 1, 2) as [ItemCode],
-			[i].[Color],
-			[i].[Kind],
-			Substr([i].[ItemCode], 3, 2) as [ItemCode_1],
-			[i].[Style] as [Style_1]
-		FROM
-			[Item] [i]
-		WHERE
-			[i].[Kind] = 1 OR [i].[Kind] = 2
-	) [x]
+	[Item] [x]
 WHERE
-	NOT ([x].[cond] AND [x].[cond_1] OR NOT [x].[cond])
+	([x].[Kind] = 1 OR [x].[Kind] = 2) AND [x].[Kind] <> 1
 
 BeforeExecute
 -- SQLite.MS SQLite
@@ -218,7 +205,7 @@ FROM
 			[t1].[cond]
 	) [x_1]
 WHERE
-	NOT ([x_1].[Color] AND [x_1].[Color_1] IS NOT NULL AND [x_1].[Color_1] OR NOT [x_1].[Color])
+	NOT ([x_1].[Color_1] IS NOT NULL AND [x_1].[Color_1])
 
 BeforeExecute
 -- SQLite.MS SQLite
@@ -304,8 +291,7 @@ FROM
 			[t1].[cond]
 	) [x_1]
 WHERE
-	[x_1].[Color] AND [x_1].[Color_1] IS NOT NULL AND [x_1].[Color_1] OR
-	NOT [x_1].[Color]
+	[x_1].[Color_1] IS NOT NULL AND [x_1].[Color_1]
 
 BeforeExecute
 -- SQLite.MS SQLite
@@ -391,7 +377,7 @@ FROM
 			[t1].[cond]
 	) [x_1]
 WHERE
-	NOT ([x_1].[Size_1] AND [x_1].[Color] IS NULL AND [x_1].[Size_2] OR NOT [x_1].[Size_1])
+	NOT ([x_1].[Color] IS NULL AND [x_1].[Size_2])
 
 BeforeExecute
 -- SQLite.MS SQLite
@@ -477,8 +463,7 @@ FROM
 			[t1].[cond]
 	) [x_1]
 WHERE
-	[x_1].[Size_1] AND [x_1].[Color] IS NULL AND [x_1].[Size_2] OR
-	NOT [x_1].[Size_1]
+	[x_1].[Color] IS NULL AND [x_1].[Size_2]
 
 BeforeExecute
 -- SQLite.MS SQLite
