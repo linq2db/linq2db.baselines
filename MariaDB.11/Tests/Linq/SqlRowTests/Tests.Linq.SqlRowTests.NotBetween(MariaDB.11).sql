@@ -26,7 +26,7 @@ SELECT
 FROM
 	`Ints` `i`
 WHERE
-	(`i`.`One`, `i`.`Two`) < (`i`.`One`, `i`.`Three`)
+	NOT (`i`.`One`, `i`.`Two`) >= (`i`.`One`, `i`.`Three`)
 
 BeforeExecute
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql

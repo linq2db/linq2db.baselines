@@ -722,7 +722,7 @@ SELECT
 FROM
 	`OptimizationData` `swap_with_not`
 WHERE
-	`swap_with_not`.`BoolValue` = 0
+	NOT `swap_with_not`.`BoolValue` = 1
 
 BeforeExecute
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql
