@@ -722,7 +722,7 @@ SELECT
 FROM
 	"OptimizationData" "swap_with_not"
 WHERE
-	"swap_with_not"."BoolValue" = FALSE
+	NOT "swap_with_not"."BoolValue" = TRUE
 
 BeforeExecute
 -- Firebird.5 Firebird4

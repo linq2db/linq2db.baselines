@@ -36,7 +36,7 @@ SELECT
 FROM
 	"BooleanTable" "r"
 WHERE
-	("r"."Value1" = "r"."Value2") <> ("r"."Value4" <> "r"."Value1" OR "r"."Value4" IS NULL)
+	("r"."Value1" = "r"."Value2") <> (NOT ("r"."Value4" = "r"."Value1" AND "r"."Value4" IS NOT NULL))
 
 BeforeExecute
 -- Firebird.5 Firebird4
@@ -114,7 +114,7 @@ SELECT
 FROM
 	"BooleanTable" "r"
 WHERE
-	("r"."Value1" = "r"."Value2") <> ("r"."Value4" <> "r"."Value1" OR "r"."Value4" IS NULL)
+	("r"."Value1" = "r"."Value2") <> (NOT ("r"."Value4" = "r"."Value1" AND "r"."Value4" IS NOT NULL))
 
 BeforeExecute
 -- Firebird.5 Firebird4
@@ -140,7 +140,7 @@ SELECT
 FROM
 	"BooleanTable" "r"
 WHERE
-	(("r"."Value1" = "r"."Value2") = ("r"."Value2" <> "r"."Value4" OR "r"."Value4" IS NULL)) = ("r"."Value1" = "r"."Value4" AND "r"."Value4" IS NOT NULL)
+	NOT (("r"."Value1" = "r"."Value2") = ("r"."Value2" <> "r"."Value4" OR "r"."Value4" IS NULL)) <> ("r"."Value1" = "r"."Value4" AND "r"."Value4" IS NOT NULL)
 
 BeforeExecute
 -- Firebird.5 Firebird4
