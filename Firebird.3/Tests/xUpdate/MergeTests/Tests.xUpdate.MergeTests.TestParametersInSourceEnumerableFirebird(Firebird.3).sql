@@ -244,13 +244,13 @@ SET     @value_3 = 00:05:00
 
 MERGE INTO "TestMerge1" "Target"
 USING (
-	SELECT 4 AS "source_Id", CAST(@value AS Time) AS "source_Val" FROM rdb$database
+	SELECT 3 AS "source_Id", CAST(@value AS Time) AS "source_Val" FROM rdb$database
 	UNION ALL
-	SELECT 5, CAST(@value_1 AS Time) FROM rdb$database
+	SELECT 4, CAST(@value_1 AS Time) FROM rdb$database
 	UNION ALL
-	SELECT 6, CAST(@value_2 AS Time) FROM rdb$database
+	SELECT 5, CAST(@value_2 AS Time) FROM rdb$database
 	UNION ALL
-	SELECT 3, CAST(@value_3 AS Time) FROM rdb$database) "Source"
+	SELECT 6, CAST(@value_3 AS Time) FROM rdb$database) "Source"
 (
 	"source_Id",
 	"source_Val"
