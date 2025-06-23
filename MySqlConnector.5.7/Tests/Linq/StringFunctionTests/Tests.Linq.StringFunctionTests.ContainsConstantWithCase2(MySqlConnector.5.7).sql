@@ -16,5 +16,5 @@ SELECT
 FROM
 	`Person` `p`
 WHERE
-	LOCATE('Joh', `p`.`FirstName`) <= 0 AND `p`.`PersonID` = 1
+	NOT LOCATE('Joh', `p`.`FirstName`) > 0 AND `p`.`PersonID` = 1
 

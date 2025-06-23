@@ -26,7 +26,7 @@ SELECT
 FROM
 	`Ints` `i`
 WHERE
-	(`i`.`One`, `i`.`Two`) < (`i`.`One`, `i`.`Three`)
+	NOT (`i`.`One`, `i`.`Two`) >= (`i`.`One`, `i`.`Three`)
 
 BeforeExecute
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57

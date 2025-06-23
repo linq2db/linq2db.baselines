@@ -1,5 +1,7 @@
 ﻿BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
+DECLARE @True Bool -- Boolean
+SET     @True = 1
 
 SELECT
 	`r`.`Id`,
@@ -10,7 +12,7 @@ SELECT
 FROM
 	`BooleanTable` `r`
 WHERE
-	`r`.`Value1` = `r`.`Value2`
+	(`r`.`Value1` = `r`.`Value2`) = (@True)
 
 BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
@@ -52,6 +54,8 @@ FROM
 
 BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
+DECLARE @False Bool -- Boolean
+SET     @False = 0
 
 SELECT
 	`r`.`Id`,
@@ -62,7 +66,7 @@ SELECT
 FROM
 	`BooleanTable` `r`
 WHERE
-	`r`.`Value1` <> `r`.`Value4` OR `r`.`Value4` IS NULL
+	(`r`.`Value1` = `r`.`Value4` AND `r`.`Value4` IS NOT NULL) = (@False)
 
 BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
@@ -88,7 +92,7 @@ SELECT
 FROM
 	`BooleanTable` `r`
 WHERE
-	`r`.`Value1` <> `r`.`Value2`
+	NOT `r`.`Value1` = `r`.`Value2`
 
 BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
@@ -130,6 +134,8 @@ FROM
 
 BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
+DECLARE @True Bool -- Boolean
+SET     @True = 1
 
 SELECT
 	`r`.`Id`,
@@ -140,7 +146,7 @@ SELECT
 FROM
 	`BooleanTable` `r`
 WHERE
-	`r`.`Value1` = `r`.`Value4`
+	(`r`.`Value1` = `r`.`Value4` AND `r`.`Value4` IS NOT NULL) = (@True)
 
 BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
@@ -182,6 +188,8 @@ FROM
 
 BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
+DECLARE @False Bool -- Boolean
+SET     @False = 0
 
 SELECT
 	`r`.`Id`,
@@ -192,7 +200,7 @@ SELECT
 FROM
 	`BooleanTable` `r`
 WHERE
-	`r`.`Value1` <> `r`.`Value4` OR `r`.`Value4` IS NULL
+	(`r`.`Value1` = `r`.`Value4` AND `r`.`Value4` IS NOT NULL) = (@False)
 
 BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
@@ -260,6 +268,8 @@ FROM
 
 BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
+DECLARE @True Bool -- Boolean
+SET     @True = 1
 
 SELECT
 	`r`.`Id`,
@@ -270,7 +280,7 @@ SELECT
 FROM
 	`BooleanTable` `r`
 WHERE
-	`r`.`Value5` = `r`.`Value4` OR `r`.`Value5` IS NULL AND `r`.`Value4` IS NULL
+	((`r`.`Value5` = `r`.`Value4` OR `r`.`Value5` IS NULL AND `r`.`Value4` IS NULL) AND NOT (`r`.`Value5` IS NULL AND `r`.`Value4` IS NOT NULL) AND NOT (`r`.`Value5` IS NOT NULL AND `r`.`Value4` IS NULL)) = (@True)
 
 BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
@@ -314,6 +324,8 @@ FROM
 
 BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
+DECLARE @False Bool -- Boolean
+SET     @False = 0
 
 SELECT
 	`r`.`Id`,
@@ -324,8 +336,7 @@ SELECT
 FROM
 	`BooleanTable` `r`
 WHERE
-	`r`.`Value5` <> `r`.`Value4` OR `r`.`Value5` IS NULL AND `r`.`Value4` IS NOT NULL OR
-	`r`.`Value5` IS NOT NULL AND `r`.`Value4` IS NULL
+	((`r`.`Value5` = `r`.`Value4` OR `r`.`Value5` IS NULL AND `r`.`Value4` IS NULL) AND NOT (`r`.`Value5` IS NULL AND `r`.`Value4` IS NOT NULL) AND NOT (`r`.`Value5` IS NOT NULL AND `r`.`Value4` IS NULL)) = (@False)
 
 BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
@@ -393,6 +404,8 @@ FROM
 
 BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
+DECLARE @True Bool -- Boolean
+SET     @True = 1
 
 SELECT
 	`r`.`Id`,
@@ -403,7 +416,7 @@ SELECT
 FROM
 	`BooleanTable` `r`
 WHERE
-	`r`.`Value1` <> `r`.`Value2`
+	(`r`.`Value1` = `r`.`Value2`) <> (@True)
 
 BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
@@ -429,7 +442,35 @@ SELECT
 FROM
 	`BooleanTable` `r`
 WHERE
-	`r`.`Value1` <> `r`.`Value2`
+	NOT `r`.`Value1` = `r`.`Value2`
+
+BeforeExecute
+-- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
+
+SELECT
+	`t1`.`Id`,
+	`t1`.`Value1`,
+	`t1`.`Value2`,
+	`t1`.`Value4`,
+	`t1`.`Value5`
+FROM
+	`BooleanTable` `t1`
+
+BeforeExecute
+-- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
+DECLARE @False Bool -- Boolean
+SET     @False = 0
+
+SELECT
+	`r`.`Id`,
+	`r`.`Value1`,
+	`r`.`Value2`,
+	`r`.`Value4`,
+	`r`.`Value5`
+FROM
+	`BooleanTable` `r`
+WHERE
+	(`r`.`Value1` = `r`.`Value2`) <> (@False)
 
 BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
@@ -480,8 +521,6 @@ SELECT
 	`r`.`Value5`
 FROM
 	`BooleanTable` `r`
-WHERE
-	`r`.`Value1` = `r`.`Value2`
 
 BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
@@ -497,30 +536,8 @@ FROM
 
 BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-
-SELECT
-	`r`.`Id`,
-	`r`.`Value1`,
-	`r`.`Value2`,
-	`r`.`Value4`,
-	`r`.`Value5`
-FROM
-	`BooleanTable` `r`
-
-BeforeExecute
--- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-
-SELECT
-	`t1`.`Id`,
-	`t1`.`Value1`,
-	`t1`.`Value2`,
-	`t1`.`Value4`,
-	`t1`.`Value5`
-FROM
-	`BooleanTable` `t1`
-
-BeforeExecute
--- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
+DECLARE @True Bool -- Boolean
+SET     @True = 1
 
 SELECT
 	`r`.`Id`,
@@ -531,7 +548,7 @@ SELECT
 FROM
 	`BooleanTable` `r`
 WHERE
-	`r`.`Value1` <> `r`.`Value4` OR `r`.`Value4` IS NULL
+	(`r`.`Value1` = `r`.`Value4` AND `r`.`Value4` IS NOT NULL) <> (@True)
 
 BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
@@ -573,6 +590,8 @@ FROM
 
 BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
+DECLARE @False Bool -- Boolean
+SET     @False = 0
 
 SELECT
 	`r`.`Id`,
@@ -583,7 +602,7 @@ SELECT
 FROM
 	`BooleanTable` `r`
 WHERE
-	`r`.`Value1` = `r`.`Value4`
+	(`r`.`Value1` = `r`.`Value4` AND `r`.`Value4` IS NOT NULL) <> (@False)
 
 BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
@@ -649,6 +668,8 @@ FROM
 
 BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
+DECLARE @True Bool -- Boolean
+SET     @True = 1
 
 SELECT
 	`r`.`Id`,
@@ -659,8 +680,7 @@ SELECT
 FROM
 	`BooleanTable` `r`
 WHERE
-	`r`.`Value5` <> `r`.`Value4` OR `r`.`Value5` IS NULL AND `r`.`Value4` IS NOT NULL OR
-	`r`.`Value5` IS NOT NULL AND `r`.`Value4` IS NULL
+	((`r`.`Value5` = `r`.`Value4` OR `r`.`Value5` IS NULL AND `r`.`Value4` IS NULL) AND NOT (`r`.`Value5` IS NULL AND `r`.`Value4` IS NOT NULL) AND NOT (`r`.`Value5` IS NOT NULL AND `r`.`Value4` IS NULL)) <> (@True)
 
 BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
@@ -702,6 +722,8 @@ FROM
 
 BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
+DECLARE @False Bool -- Boolean
+SET     @False = 0
 
 SELECT
 	`r`.`Id`,
@@ -712,7 +734,7 @@ SELECT
 FROM
 	`BooleanTable` `r`
 WHERE
-	`r`.`Value5` = `r`.`Value4` OR `r`.`Value5` IS NULL AND `r`.`Value4` IS NULL
+	((`r`.`Value5` = `r`.`Value4` OR `r`.`Value5` IS NULL AND `r`.`Value4` IS NULL) AND NOT (`r`.`Value5` IS NULL AND `r`.`Value4` IS NOT NULL) AND NOT (`r`.`Value5` IS NOT NULL AND `r`.`Value4` IS NULL)) <> (@False)
 
 BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
@@ -780,6 +802,8 @@ FROM
 
 BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
+DECLARE @True Bool -- Boolean
+SET     @True = 1
 
 SELECT
 	`r`.`Id`,
@@ -790,7 +814,7 @@ SELECT
 FROM
 	`BooleanTable` `r`
 WHERE
-	`r`.`Value1` > `r`.`Value2`
+	(`r`.`Value1` > `r`.`Value2`) = (@True)
 
 BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
@@ -832,6 +856,8 @@ FROM
 
 BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
+DECLARE @False Bool -- Boolean
+SET     @False = 0
 
 SELECT
 	`r`.`Id`,
@@ -842,7 +868,7 @@ SELECT
 FROM
 	`BooleanTable` `r`
 WHERE
-	`r`.`Value1` <= `r`.`Value2`
+	(`r`.`Value1` > `r`.`Value2`) = (@False)
 
 BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
@@ -868,7 +894,7 @@ SELECT
 FROM
 	`BooleanTable` `r`
 WHERE
-	`r`.`Value1` <= `r`.`Value2`
+	NOT `r`.`Value1` > `r`.`Value2`
 
 BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
@@ -910,6 +936,8 @@ FROM
 
 BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
+DECLARE @True Bool -- Boolean
+SET     @True = 1
 
 SELECT
 	`r`.`Id`,
@@ -920,7 +948,7 @@ SELECT
 FROM
 	`BooleanTable` `r`
 WHERE
-	`r`.`Value1` > `r`.`Value4`
+	(`r`.`Value1` > `r`.`Value4` AND `r`.`Value4` IS NOT NULL) = (@True)
 
 BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
@@ -962,6 +990,8 @@ FROM
 
 BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
+DECLARE @False Bool -- Boolean
+SET     @False = 0
 
 SELECT
 	`r`.`Id`,
@@ -972,7 +1002,7 @@ SELECT
 FROM
 	`BooleanTable` `r`
 WHERE
-	`r`.`Value1` <= `r`.`Value4` OR `r`.`Value4` IS NULL
+	(`r`.`Value1` > `r`.`Value4` AND `r`.`Value4` IS NOT NULL) = (@False)
 
 BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
@@ -1040,6 +1070,8 @@ FROM
 
 BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
+DECLARE @True Bool -- Boolean
+SET     @True = 1
 
 SELECT
 	`r`.`Id`,
@@ -1050,7 +1082,7 @@ SELECT
 FROM
 	`BooleanTable` `r`
 WHERE
-	`r`.`Value5` > `r`.`Value4`
+	(`r`.`Value5` > `r`.`Value4` AND `r`.`Value5` IS NOT NULL AND `r`.`Value4` IS NOT NULL) = (@True)
 
 BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
@@ -1093,6 +1125,8 @@ FROM
 
 BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
+DECLARE @False Bool -- Boolean
+SET     @False = 0
 
 SELECT
 	`r`.`Id`,
@@ -1103,8 +1137,7 @@ SELECT
 FROM
 	`BooleanTable` `r`
 WHERE
-	`r`.`Value5` <= `r`.`Value4` OR `r`.`Value5` IS NULL OR
-	`r`.`Value4` IS NULL
+	(`r`.`Value5` > `r`.`Value4` AND `r`.`Value5` IS NOT NULL AND `r`.`Value4` IS NOT NULL) = (@False)
 
 BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
@@ -1172,6 +1205,8 @@ FROM
 
 BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
+DECLARE @True Bool -- Boolean
+SET     @True = 1
 
 SELECT
 	`r`.`Id`,
@@ -1182,7 +1217,7 @@ SELECT
 FROM
 	`BooleanTable` `r`
 WHERE
-	`r`.`Value1` <= `r`.`Value2`
+	(`r`.`Value1` > `r`.`Value2`) <> (@True)
 
 BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
@@ -1208,7 +1243,35 @@ SELECT
 FROM
 	`BooleanTable` `r`
 WHERE
-	`r`.`Value1` <= `r`.`Value2`
+	NOT `r`.`Value1` > `r`.`Value2`
+
+BeforeExecute
+-- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
+
+SELECT
+	`t1`.`Id`,
+	`t1`.`Value1`,
+	`t1`.`Value2`,
+	`t1`.`Value4`,
+	`t1`.`Value5`
+FROM
+	`BooleanTable` `t1`
+
+BeforeExecute
+-- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
+DECLARE @False Bool -- Boolean
+SET     @False = 0
+
+SELECT
+	`r`.`Id`,
+	`r`.`Value1`,
+	`r`.`Value2`,
+	`r`.`Value4`,
+	`r`.`Value5`
+FROM
+	`BooleanTable` `r`
+WHERE
+	(`r`.`Value1` > `r`.`Value2`) <> (@False)
 
 BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
@@ -1259,8 +1322,6 @@ SELECT
 	`r`.`Value5`
 FROM
 	`BooleanTable` `r`
-WHERE
-	`r`.`Value1` > `r`.`Value2`
 
 BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
@@ -1276,30 +1337,8 @@ FROM
 
 BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-
-SELECT
-	`r`.`Id`,
-	`r`.`Value1`,
-	`r`.`Value2`,
-	`r`.`Value4`,
-	`r`.`Value5`
-FROM
-	`BooleanTable` `r`
-
-BeforeExecute
--- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-
-SELECT
-	`t1`.`Id`,
-	`t1`.`Value1`,
-	`t1`.`Value2`,
-	`t1`.`Value4`,
-	`t1`.`Value5`
-FROM
-	`BooleanTable` `t1`
-
-BeforeExecute
--- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
+DECLARE @True Bool -- Boolean
+SET     @True = 1
 
 SELECT
 	`r`.`Id`,
@@ -1310,7 +1349,7 @@ SELECT
 FROM
 	`BooleanTable` `r`
 WHERE
-	`r`.`Value1` <= `r`.`Value4` OR `r`.`Value4` IS NULL
+	(`r`.`Value1` > `r`.`Value4` AND `r`.`Value4` IS NOT NULL) <> (@True)
 
 BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
@@ -1352,6 +1391,8 @@ FROM
 
 BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
+DECLARE @False Bool -- Boolean
+SET     @False = 0
 
 SELECT
 	`r`.`Id`,
@@ -1362,7 +1403,7 @@ SELECT
 FROM
 	`BooleanTable` `r`
 WHERE
-	`r`.`Value1` > `r`.`Value4`
+	(`r`.`Value1` > `r`.`Value4` AND `r`.`Value4` IS NOT NULL) <> (@False)
 
 BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
@@ -1428,6 +1469,8 @@ FROM
 
 BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
+DECLARE @True Bool -- Boolean
+SET     @True = 1
 
 SELECT
 	`r`.`Id`,
@@ -1438,8 +1481,7 @@ SELECT
 FROM
 	`BooleanTable` `r`
 WHERE
-	`r`.`Value5` <= `r`.`Value4` OR `r`.`Value5` IS NULL OR
-	`r`.`Value4` IS NULL
+	(`r`.`Value5` > `r`.`Value4` AND `r`.`Value5` IS NOT NULL AND `r`.`Value4` IS NOT NULL) <> (@True)
 
 BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
@@ -1481,6 +1523,8 @@ FROM
 
 BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
+DECLARE @False Bool -- Boolean
+SET     @False = 0
 
 SELECT
 	`r`.`Id`,
@@ -1491,7 +1535,7 @@ SELECT
 FROM
 	`BooleanTable` `r`
 WHERE
-	`r`.`Value5` > `r`.`Value4`
+	(`r`.`Value5` > `r`.`Value4` AND `r`.`Value5` IS NOT NULL AND `r`.`Value4` IS NOT NULL) <> (@False)
 
 BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
@@ -1558,6 +1602,8 @@ FROM
 
 BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
+DECLARE @True Bool -- Boolean
+SET     @True = 1
 
 SELECT
 	`r`.`Id`,
@@ -1568,7 +1614,7 @@ SELECT
 FROM
 	`BooleanTable` `r`
 WHERE
-	`r`.`Value1` >= `r`.`Value2`
+	(`r`.`Value1` >= `r`.`Value2`) = (@True)
 
 BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
@@ -1610,6 +1656,8 @@ FROM
 
 BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
+DECLARE @False Bool -- Boolean
+SET     @False = 0
 
 SELECT
 	`r`.`Id`,
@@ -1620,7 +1668,7 @@ SELECT
 FROM
 	`BooleanTable` `r`
 WHERE
-	`r`.`Value1` < `r`.`Value2`
+	(`r`.`Value1` >= `r`.`Value2`) = (@False)
 
 BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
@@ -1646,7 +1694,7 @@ SELECT
 FROM
 	`BooleanTable` `r`
 WHERE
-	`r`.`Value1` < `r`.`Value2`
+	NOT `r`.`Value1` >= `r`.`Value2`
 
 BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
@@ -1688,6 +1736,8 @@ FROM
 
 BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
+DECLARE @True Bool -- Boolean
+SET     @True = 1
 
 SELECT
 	`r`.`Id`,
@@ -1698,7 +1748,7 @@ SELECT
 FROM
 	`BooleanTable` `r`
 WHERE
-	`r`.`Value1` >= `r`.`Value4`
+	(`r`.`Value1` >= `r`.`Value4` AND `r`.`Value4` IS NOT NULL) = (@True)
 
 BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
@@ -1740,6 +1790,8 @@ FROM
 
 BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
+DECLARE @False Bool -- Boolean
+SET     @False = 0
 
 SELECT
 	`r`.`Id`,
@@ -1750,7 +1802,7 @@ SELECT
 FROM
 	`BooleanTable` `r`
 WHERE
-	`r`.`Value1` < `r`.`Value4` OR `r`.`Value4` IS NULL
+	(`r`.`Value1` >= `r`.`Value4` AND `r`.`Value4` IS NOT NULL) = (@False)
 
 BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
@@ -1818,6 +1870,8 @@ FROM
 
 BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
+DECLARE @True Bool -- Boolean
+SET     @True = 1
 
 SELECT
 	`r`.`Id`,
@@ -1828,7 +1882,7 @@ SELECT
 FROM
 	`BooleanTable` `r`
 WHERE
-	`r`.`Value5` >= `r`.`Value4`
+	(`r`.`Value5` >= `r`.`Value4` AND `r`.`Value5` IS NOT NULL AND `r`.`Value4` IS NOT NULL) = (@True)
 
 BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
@@ -1871,6 +1925,8 @@ FROM
 
 BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
+DECLARE @False Bool -- Boolean
+SET     @False = 0
 
 SELECT
 	`r`.`Id`,
@@ -1881,8 +1937,7 @@ SELECT
 FROM
 	`BooleanTable` `r`
 WHERE
-	`r`.`Value5` < `r`.`Value4` OR `r`.`Value5` IS NULL OR
-	`r`.`Value4` IS NULL
+	(`r`.`Value5` >= `r`.`Value4` AND `r`.`Value5` IS NOT NULL AND `r`.`Value4` IS NOT NULL) = (@False)
 
 BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
@@ -1950,6 +2005,8 @@ FROM
 
 BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
+DECLARE @True Bool -- Boolean
+SET     @True = 1
 
 SELECT
 	`r`.`Id`,
@@ -1960,7 +2017,7 @@ SELECT
 FROM
 	`BooleanTable` `r`
 WHERE
-	`r`.`Value1` < `r`.`Value2`
+	(`r`.`Value1` >= `r`.`Value2`) <> (@True)
 
 BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
@@ -1986,7 +2043,35 @@ SELECT
 FROM
 	`BooleanTable` `r`
 WHERE
-	`r`.`Value1` < `r`.`Value2`
+	NOT `r`.`Value1` >= `r`.`Value2`
+
+BeforeExecute
+-- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
+
+SELECT
+	`t1`.`Id`,
+	`t1`.`Value1`,
+	`t1`.`Value2`,
+	`t1`.`Value4`,
+	`t1`.`Value5`
+FROM
+	`BooleanTable` `t1`
+
+BeforeExecute
+-- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
+DECLARE @False Bool -- Boolean
+SET     @False = 0
+
+SELECT
+	`r`.`Id`,
+	`r`.`Value1`,
+	`r`.`Value2`,
+	`r`.`Value4`,
+	`r`.`Value5`
+FROM
+	`BooleanTable` `r`
+WHERE
+	(`r`.`Value1` >= `r`.`Value2`) <> (@False)
 
 BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
@@ -2037,8 +2122,6 @@ SELECT
 	`r`.`Value5`
 FROM
 	`BooleanTable` `r`
-WHERE
-	`r`.`Value1` >= `r`.`Value2`
 
 BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
@@ -2054,30 +2137,8 @@ FROM
 
 BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-
-SELECT
-	`r`.`Id`,
-	`r`.`Value1`,
-	`r`.`Value2`,
-	`r`.`Value4`,
-	`r`.`Value5`
-FROM
-	`BooleanTable` `r`
-
-BeforeExecute
--- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-
-SELECT
-	`t1`.`Id`,
-	`t1`.`Value1`,
-	`t1`.`Value2`,
-	`t1`.`Value4`,
-	`t1`.`Value5`
-FROM
-	`BooleanTable` `t1`
-
-BeforeExecute
--- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
+DECLARE @True Bool -- Boolean
+SET     @True = 1
 
 SELECT
 	`r`.`Id`,
@@ -2088,7 +2149,7 @@ SELECT
 FROM
 	`BooleanTable` `r`
 WHERE
-	`r`.`Value1` < `r`.`Value4` OR `r`.`Value4` IS NULL
+	(`r`.`Value1` >= `r`.`Value4` AND `r`.`Value4` IS NOT NULL) <> (@True)
 
 BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
@@ -2130,6 +2191,8 @@ FROM
 
 BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
+DECLARE @False Bool -- Boolean
+SET     @False = 0
 
 SELECT
 	`r`.`Id`,
@@ -2140,7 +2203,7 @@ SELECT
 FROM
 	`BooleanTable` `r`
 WHERE
-	`r`.`Value1` >= `r`.`Value4`
+	(`r`.`Value1` >= `r`.`Value4` AND `r`.`Value4` IS NOT NULL) <> (@False)
 
 BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
@@ -2206,6 +2269,8 @@ FROM
 
 BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
+DECLARE @True Bool -- Boolean
+SET     @True = 1
 
 SELECT
 	`r`.`Id`,
@@ -2216,8 +2281,7 @@ SELECT
 FROM
 	`BooleanTable` `r`
 WHERE
-	`r`.`Value5` < `r`.`Value4` OR `r`.`Value5` IS NULL OR
-	`r`.`Value4` IS NULL
+	(`r`.`Value5` >= `r`.`Value4` AND `r`.`Value5` IS NOT NULL AND `r`.`Value4` IS NOT NULL) <> (@True)
 
 BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
@@ -2259,6 +2323,8 @@ FROM
 
 BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
+DECLARE @False Bool -- Boolean
+SET     @False = 0
 
 SELECT
 	`r`.`Id`,
@@ -2269,7 +2335,7 @@ SELECT
 FROM
 	`BooleanTable` `r`
 WHERE
-	`r`.`Value5` >= `r`.`Value4`
+	(`r`.`Value5` >= `r`.`Value4` AND `r`.`Value5` IS NOT NULL AND `r`.`Value4` IS NOT NULL) <> (@False)
 
 BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
@@ -2336,6 +2402,8 @@ FROM
 
 BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
+DECLARE @True Bool -- Boolean
+SET     @True = 1
 
 SELECT
 	`r`.`Id`,
@@ -2346,7 +2414,7 @@ SELECT
 FROM
 	`BooleanTable` `r`
 WHERE
-	`r`.`Value1` < `r`.`Value2`
+	(`r`.`Value1` < `r`.`Value2`) = (@True)
 
 BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
@@ -2388,6 +2456,8 @@ FROM
 
 BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
+DECLARE @False Bool -- Boolean
+SET     @False = 0
 
 SELECT
 	`r`.`Id`,
@@ -2398,7 +2468,7 @@ SELECT
 FROM
 	`BooleanTable` `r`
 WHERE
-	`r`.`Value1` >= `r`.`Value2`
+	(`r`.`Value1` < `r`.`Value2`) = (@False)
 
 BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
@@ -2424,7 +2494,7 @@ SELECT
 FROM
 	`BooleanTable` `r`
 WHERE
-	`r`.`Value1` >= `r`.`Value2`
+	NOT `r`.`Value1` < `r`.`Value2`
 
 BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
@@ -2466,6 +2536,8 @@ FROM
 
 BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
+DECLARE @True Bool -- Boolean
+SET     @True = 1
 
 SELECT
 	`r`.`Id`,
@@ -2476,7 +2548,7 @@ SELECT
 FROM
 	`BooleanTable` `r`
 WHERE
-	`r`.`Value1` < `r`.`Value4`
+	(`r`.`Value1` < `r`.`Value4` AND `r`.`Value4` IS NOT NULL) = (@True)
 
 BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
@@ -2518,6 +2590,8 @@ FROM
 
 BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
+DECLARE @False Bool -- Boolean
+SET     @False = 0
 
 SELECT
 	`r`.`Id`,
@@ -2528,7 +2602,7 @@ SELECT
 FROM
 	`BooleanTable` `r`
 WHERE
-	`r`.`Value1` >= `r`.`Value4` OR `r`.`Value4` IS NULL
+	(`r`.`Value1` < `r`.`Value4` AND `r`.`Value4` IS NOT NULL) = (@False)
 
 BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
@@ -2596,6 +2670,8 @@ FROM
 
 BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
+DECLARE @True Bool -- Boolean
+SET     @True = 1
 
 SELECT
 	`r`.`Id`,
@@ -2606,7 +2682,7 @@ SELECT
 FROM
 	`BooleanTable` `r`
 WHERE
-	`r`.`Value5` < `r`.`Value4`
+	(`r`.`Value5` < `r`.`Value4` AND `r`.`Value5` IS NOT NULL AND `r`.`Value4` IS NOT NULL) = (@True)
 
 BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
@@ -2649,6 +2725,8 @@ FROM
 
 BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
+DECLARE @False Bool -- Boolean
+SET     @False = 0
 
 SELECT
 	`r`.`Id`,
@@ -2659,8 +2737,7 @@ SELECT
 FROM
 	`BooleanTable` `r`
 WHERE
-	`r`.`Value5` >= `r`.`Value4` OR `r`.`Value5` IS NULL OR
-	`r`.`Value4` IS NULL
+	(`r`.`Value5` < `r`.`Value4` AND `r`.`Value5` IS NOT NULL AND `r`.`Value4` IS NOT NULL) = (@False)
 
 BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
@@ -2728,6 +2805,8 @@ FROM
 
 BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
+DECLARE @True Bool -- Boolean
+SET     @True = 1
 
 SELECT
 	`r`.`Id`,
@@ -2738,7 +2817,7 @@ SELECT
 FROM
 	`BooleanTable` `r`
 WHERE
-	`r`.`Value1` >= `r`.`Value2`
+	(`r`.`Value1` < `r`.`Value2`) <> (@True)
 
 BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
@@ -2764,7 +2843,35 @@ SELECT
 FROM
 	`BooleanTable` `r`
 WHERE
-	`r`.`Value1` >= `r`.`Value2`
+	NOT `r`.`Value1` < `r`.`Value2`
+
+BeforeExecute
+-- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
+
+SELECT
+	`t1`.`Id`,
+	`t1`.`Value1`,
+	`t1`.`Value2`,
+	`t1`.`Value4`,
+	`t1`.`Value5`
+FROM
+	`BooleanTable` `t1`
+
+BeforeExecute
+-- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
+DECLARE @False Bool -- Boolean
+SET     @False = 0
+
+SELECT
+	`r`.`Id`,
+	`r`.`Value1`,
+	`r`.`Value2`,
+	`r`.`Value4`,
+	`r`.`Value5`
+FROM
+	`BooleanTable` `r`
+WHERE
+	(`r`.`Value1` < `r`.`Value2`) <> (@False)
 
 BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
@@ -2815,8 +2922,6 @@ SELECT
 	`r`.`Value5`
 FROM
 	`BooleanTable` `r`
-WHERE
-	`r`.`Value1` < `r`.`Value2`
 
 BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
@@ -2832,30 +2937,8 @@ FROM
 
 BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-
-SELECT
-	`r`.`Id`,
-	`r`.`Value1`,
-	`r`.`Value2`,
-	`r`.`Value4`,
-	`r`.`Value5`
-FROM
-	`BooleanTable` `r`
-
-BeforeExecute
--- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-
-SELECT
-	`t1`.`Id`,
-	`t1`.`Value1`,
-	`t1`.`Value2`,
-	`t1`.`Value4`,
-	`t1`.`Value5`
-FROM
-	`BooleanTable` `t1`
-
-BeforeExecute
--- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
+DECLARE @True Bool -- Boolean
+SET     @True = 1
 
 SELECT
 	`r`.`Id`,
@@ -2866,7 +2949,7 @@ SELECT
 FROM
 	`BooleanTable` `r`
 WHERE
-	`r`.`Value1` >= `r`.`Value4` OR `r`.`Value4` IS NULL
+	(`r`.`Value1` < `r`.`Value4` AND `r`.`Value4` IS NOT NULL) <> (@True)
 
 BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
@@ -2908,6 +2991,8 @@ FROM
 
 BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
+DECLARE @False Bool -- Boolean
+SET     @False = 0
 
 SELECT
 	`r`.`Id`,
@@ -2918,7 +3003,7 @@ SELECT
 FROM
 	`BooleanTable` `r`
 WHERE
-	`r`.`Value1` < `r`.`Value4`
+	(`r`.`Value1` < `r`.`Value4` AND `r`.`Value4` IS NOT NULL) <> (@False)
 
 BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
@@ -2984,6 +3069,8 @@ FROM
 
 BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
+DECLARE @True Bool -- Boolean
+SET     @True = 1
 
 SELECT
 	`r`.`Id`,
@@ -2994,8 +3081,7 @@ SELECT
 FROM
 	`BooleanTable` `r`
 WHERE
-	`r`.`Value5` >= `r`.`Value4` OR `r`.`Value5` IS NULL OR
-	`r`.`Value4` IS NULL
+	(`r`.`Value5` < `r`.`Value4` AND `r`.`Value5` IS NOT NULL AND `r`.`Value4` IS NOT NULL) <> (@True)
 
 BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
@@ -3037,6 +3123,8 @@ FROM
 
 BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
+DECLARE @False Bool -- Boolean
+SET     @False = 0
 
 SELECT
 	`r`.`Id`,
@@ -3047,7 +3135,7 @@ SELECT
 FROM
 	`BooleanTable` `r`
 WHERE
-	`r`.`Value5` < `r`.`Value4`
+	(`r`.`Value5` < `r`.`Value4` AND `r`.`Value5` IS NOT NULL AND `r`.`Value4` IS NOT NULL) <> (@False)
 
 BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
@@ -3114,6 +3202,8 @@ FROM
 
 BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
+DECLARE @True Bool -- Boolean
+SET     @True = 1
 
 SELECT
 	`r`.`Id`,
@@ -3124,7 +3214,7 @@ SELECT
 FROM
 	`BooleanTable` `r`
 WHERE
-	`r`.`Value1` <= `r`.`Value2`
+	(`r`.`Value1` <= `r`.`Value2`) = (@True)
 
 BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
@@ -3166,6 +3256,8 @@ FROM
 
 BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
+DECLARE @False Bool -- Boolean
+SET     @False = 0
 
 SELECT
 	`r`.`Id`,
@@ -3176,7 +3268,7 @@ SELECT
 FROM
 	`BooleanTable` `r`
 WHERE
-	`r`.`Value1` > `r`.`Value2`
+	(`r`.`Value1` <= `r`.`Value2`) = (@False)
 
 BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
@@ -3202,7 +3294,7 @@ SELECT
 FROM
 	`BooleanTable` `r`
 WHERE
-	`r`.`Value1` > `r`.`Value2`
+	NOT `r`.`Value1` <= `r`.`Value2`
 
 BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
@@ -3244,6 +3336,8 @@ FROM
 
 BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
+DECLARE @True Bool -- Boolean
+SET     @True = 1
 
 SELECT
 	`r`.`Id`,
@@ -3254,7 +3348,7 @@ SELECT
 FROM
 	`BooleanTable` `r`
 WHERE
-	`r`.`Value1` <= `r`.`Value4`
+	(`r`.`Value1` <= `r`.`Value4` AND `r`.`Value4` IS NOT NULL) = (@True)
 
 BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
@@ -3296,6 +3390,8 @@ FROM
 
 BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
+DECLARE @False Bool -- Boolean
+SET     @False = 0
 
 SELECT
 	`r`.`Id`,
@@ -3306,7 +3402,7 @@ SELECT
 FROM
 	`BooleanTable` `r`
 WHERE
-	`r`.`Value1` > `r`.`Value4` OR `r`.`Value4` IS NULL
+	(`r`.`Value1` <= `r`.`Value4` AND `r`.`Value4` IS NOT NULL) = (@False)
 
 BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
@@ -3374,6 +3470,8 @@ FROM
 
 BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
+DECLARE @True Bool -- Boolean
+SET     @True = 1
 
 SELECT
 	`r`.`Id`,
@@ -3384,7 +3482,7 @@ SELECT
 FROM
 	`BooleanTable` `r`
 WHERE
-	`r`.`Value5` <= `r`.`Value4`
+	(`r`.`Value5` <= `r`.`Value4` AND `r`.`Value5` IS NOT NULL AND `r`.`Value4` IS NOT NULL) = (@True)
 
 BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
@@ -3427,6 +3525,8 @@ FROM
 
 BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
+DECLARE @False Bool -- Boolean
+SET     @False = 0
 
 SELECT
 	`r`.`Id`,
@@ -3437,8 +3537,7 @@ SELECT
 FROM
 	`BooleanTable` `r`
 WHERE
-	`r`.`Value5` > `r`.`Value4` OR `r`.`Value5` IS NULL OR
-	`r`.`Value4` IS NULL
+	(`r`.`Value5` <= `r`.`Value4` AND `r`.`Value5` IS NOT NULL AND `r`.`Value4` IS NOT NULL) = (@False)
 
 BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
@@ -3506,6 +3605,8 @@ FROM
 
 BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
+DECLARE @True Bool -- Boolean
+SET     @True = 1
 
 SELECT
 	`r`.`Id`,
@@ -3516,7 +3617,7 @@ SELECT
 FROM
 	`BooleanTable` `r`
 WHERE
-	`r`.`Value1` > `r`.`Value2`
+	(`r`.`Value1` <= `r`.`Value2`) <> (@True)
 
 BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
@@ -3542,7 +3643,35 @@ SELECT
 FROM
 	`BooleanTable` `r`
 WHERE
-	`r`.`Value1` > `r`.`Value2`
+	NOT `r`.`Value1` <= `r`.`Value2`
+
+BeforeExecute
+-- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
+
+SELECT
+	`t1`.`Id`,
+	`t1`.`Value1`,
+	`t1`.`Value2`,
+	`t1`.`Value4`,
+	`t1`.`Value5`
+FROM
+	`BooleanTable` `t1`
+
+BeforeExecute
+-- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
+DECLARE @False Bool -- Boolean
+SET     @False = 0
+
+SELECT
+	`r`.`Id`,
+	`r`.`Value1`,
+	`r`.`Value2`,
+	`r`.`Value4`,
+	`r`.`Value5`
+FROM
+	`BooleanTable` `r`
+WHERE
+	(`r`.`Value1` <= `r`.`Value2`) <> (@False)
 
 BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
@@ -3593,8 +3722,6 @@ SELECT
 	`r`.`Value5`
 FROM
 	`BooleanTable` `r`
-WHERE
-	`r`.`Value1` <= `r`.`Value2`
 
 BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
@@ -3610,30 +3737,8 @@ FROM
 
 BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-
-SELECT
-	`r`.`Id`,
-	`r`.`Value1`,
-	`r`.`Value2`,
-	`r`.`Value4`,
-	`r`.`Value5`
-FROM
-	`BooleanTable` `r`
-
-BeforeExecute
--- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-
-SELECT
-	`t1`.`Id`,
-	`t1`.`Value1`,
-	`t1`.`Value2`,
-	`t1`.`Value4`,
-	`t1`.`Value5`
-FROM
-	`BooleanTable` `t1`
-
-BeforeExecute
--- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
+DECLARE @True Bool -- Boolean
+SET     @True = 1
 
 SELECT
 	`r`.`Id`,
@@ -3644,7 +3749,7 @@ SELECT
 FROM
 	`BooleanTable` `r`
 WHERE
-	`r`.`Value1` > `r`.`Value4` OR `r`.`Value4` IS NULL
+	(`r`.`Value1` <= `r`.`Value4` AND `r`.`Value4` IS NOT NULL) <> (@True)
 
 BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
@@ -3686,6 +3791,8 @@ FROM
 
 BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
+DECLARE @False Bool -- Boolean
+SET     @False = 0
 
 SELECT
 	`r`.`Id`,
@@ -3696,7 +3803,7 @@ SELECT
 FROM
 	`BooleanTable` `r`
 WHERE
-	`r`.`Value1` <= `r`.`Value4`
+	(`r`.`Value1` <= `r`.`Value4` AND `r`.`Value4` IS NOT NULL) <> (@False)
 
 BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
@@ -3762,6 +3869,8 @@ FROM
 
 BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
+DECLARE @True Bool -- Boolean
+SET     @True = 1
 
 SELECT
 	`r`.`Id`,
@@ -3772,8 +3881,7 @@ SELECT
 FROM
 	`BooleanTable` `r`
 WHERE
-	`r`.`Value5` > `r`.`Value4` OR `r`.`Value5` IS NULL OR
-	`r`.`Value4` IS NULL
+	(`r`.`Value5` <= `r`.`Value4` AND `r`.`Value5` IS NOT NULL AND `r`.`Value4` IS NOT NULL) <> (@True)
 
 BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
@@ -3815,6 +3923,8 @@ FROM
 
 BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
+DECLARE @False Bool -- Boolean
+SET     @False = 0
 
 SELECT
 	`r`.`Id`,
@@ -3825,7 +3935,7 @@ SELECT
 FROM
 	`BooleanTable` `r`
 WHERE
-	`r`.`Value5` <= `r`.`Value4`
+	(`r`.`Value5` <= `r`.`Value4` AND `r`.`Value5` IS NOT NULL AND `r`.`Value4` IS NOT NULL) <> (@False)
 
 BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57

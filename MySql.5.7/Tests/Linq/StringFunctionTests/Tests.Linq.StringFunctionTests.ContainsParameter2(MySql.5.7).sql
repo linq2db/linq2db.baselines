@@ -12,5 +12,5 @@ SELECT
 FROM
 	`Person` `p`
 WHERE
-	LOCATE(@str, `p`.`FirstName`) <= 0 AND `p`.`PersonID` = 1
+	NOT LOCATE(@str, `p`.`FirstName`) > 0 AND `p`.`PersonID` = 1
 

@@ -16,5 +16,5 @@ SELECT
 FROM
 	`Person` `p`
 WHERE
-	`p`.`PersonID` = 1 AND LOCATE('n', '123n456') <= 0
+	`p`.`PersonID` = 1 AND NOT LOCATE('n', '123n456') > 0
 
