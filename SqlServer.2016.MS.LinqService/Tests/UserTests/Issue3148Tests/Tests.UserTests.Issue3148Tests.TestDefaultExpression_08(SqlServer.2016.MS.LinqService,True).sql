@@ -9,8 +9,8 @@ FROM
 		LEFT JOIN [Parent] [a_Parent] ON [x].[ParentID] = [a_Parent].[ParentID]
 		OUTER APPLY (
 			SELECT TOP (1)
-				[a_Parent_1].[ParentID],
-				[a_Parent_1].[Value1]
+				0 as [ParentID],
+				NULL as [Value1]
 			FROM
 				[GrandChild] [a_GrandChildren]
 					LEFT JOIN [Child] [a_Child] ON [a_GrandChildren].[ParentID] = [a_Child].[ParentID] AND [a_GrandChildren].[ChildID] = [a_Child].[ChildID]
@@ -22,7 +22,7 @@ WHERE
 	NOT (([a_Parent].[ParentID] = [t1].[ParentID] OR [a_Parent].[ParentID] IS NULL AND [t1].[ParentID] IS NULL) AND NOT ([a_Parent].[ParentID] IS NULL AND [t1].[ParentID] IS NOT NULL) AND NOT ([a_Parent].[ParentID] IS NOT NULL AND [t1].[ParentID] IS NULL) AND ([a_Parent].[Value1] = [t1].[Value1] OR [a_Parent].[Value1] IS NULL AND [t1].[Value1] IS NULL) AND NOT ([a_Parent].[Value1] IS NULL AND [t1].[Value1] IS NOT NULL) AND NOT ([a_Parent].[Value1] IS NOT NULL AND [t1].[Value1] IS NULL)) AND
 	IIF([x].[ParentID] = (
 		SELECT TOP (1)
-			IIF([a_Children].[ChildID] IS NOT NULL, [a_Children].[ChildID], 0)
+			[a_Children].[ChildID]
 		FROM
 			[Child] [a_Children]
 		WHERE
@@ -40,8 +40,8 @@ FROM
 		LEFT JOIN [Parent] [a_Parent] ON [x].[ParentID] = [a_Parent].[ParentID]
 		OUTER APPLY (
 			SELECT TOP (1)
-				[a_Parent_1].[ParentID],
-				[a_Parent_1].[Value1]
+				0 as [ParentID],
+				NULL as [Value1]
 			FROM
 				[GrandChild] [a_GrandChildren]
 					LEFT JOIN [Child] [a_Child] ON [a_GrandChildren].[ParentID] = [a_Child].[ParentID] AND [a_GrandChildren].[ChildID] = [a_Child].[ChildID]
@@ -53,7 +53,7 @@ WHERE
 	NOT (([a_Parent].[ParentID] = [t1].[ParentID] OR [a_Parent].[ParentID] IS NULL AND [t1].[ParentID] IS NULL) AND NOT ([a_Parent].[ParentID] IS NULL AND [t1].[ParentID] IS NOT NULL) AND NOT ([a_Parent].[ParentID] IS NOT NULL AND [t1].[ParentID] IS NULL) AND ([a_Parent].[Value1] = [t1].[Value1] OR [a_Parent].[Value1] IS NULL AND [t1].[Value1] IS NULL) AND NOT ([a_Parent].[Value1] IS NULL AND [t1].[Value1] IS NOT NULL) AND NOT ([a_Parent].[Value1] IS NOT NULL AND [t1].[Value1] IS NULL)) AND
 	IIF([x].[ParentID] = (
 		SELECT TOP (1)
-			IIF([a_Children].[ChildID] IS NOT NULL, [a_Children].[ChildID], 0)
+			[a_Children].[ChildID]
 		FROM
 			[Child] [a_Children]
 		WHERE

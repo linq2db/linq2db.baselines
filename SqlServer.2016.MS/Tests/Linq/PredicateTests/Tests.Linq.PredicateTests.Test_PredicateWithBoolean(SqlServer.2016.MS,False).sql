@@ -1,5 +1,7 @@
 ﻿BeforeExecute
 -- SqlServer.2016.MS SqlServer.2016
+DECLARE @True Bit -- Boolean
+SET     @True = 1
 
 SELECT
 	[r].[Id],
@@ -10,7 +12,7 @@ SELECT
 FROM
 	[BooleanTable] [r]
 WHERE
-	[r].[Value1] = [r].[Value2]
+	IIF([r].[Value1] = [r].[Value2], 1, 0) = @True
 
 BeforeExecute
 -- SqlServer.2016.MS SqlServer.2016
@@ -54,6 +56,8 @@ FROM
 
 BeforeExecute
 -- SqlServer.2016.MS SqlServer.2016
+DECLARE @False Bit -- Boolean
+SET     @False = 0
 
 SELECT
 	[r].[Id],
@@ -64,7 +68,7 @@ SELECT
 FROM
 	[BooleanTable] [r]
 WHERE
-	[r].[Value1] <> [r].[Value4] OR [r].[Value4] IS NULL
+	IIF([r].[Value1] = [r].[Value4], 1, 0) = @False
 
 BeforeExecute
 -- SqlServer.2016.MS SqlServer.2016
@@ -134,6 +138,8 @@ FROM
 
 BeforeExecute
 -- SqlServer.2016.MS SqlServer.2016
+DECLARE @True Bit -- Boolean
+SET     @True = 1
 
 SELECT
 	[r].[Id],
@@ -144,7 +150,7 @@ SELECT
 FROM
 	[BooleanTable] [r]
 WHERE
-	[r].[Value1] = [r].[Value4]
+	IIF([r].[Value1] = [r].[Value4], 1, 0) = @True
 
 BeforeExecute
 -- SqlServer.2016.MS SqlServer.2016
@@ -188,6 +194,8 @@ FROM
 
 BeforeExecute
 -- SqlServer.2016.MS SqlServer.2016
+DECLARE @False Bit -- Boolean
+SET     @False = 0
 
 SELECT
 	[r].[Id],
@@ -198,7 +206,7 @@ SELECT
 FROM
 	[BooleanTable] [r]
 WHERE
-	[r].[Value1] <> [r].[Value4] OR [r].[Value4] IS NULL
+	IIF([r].[Value1] = [r].[Value4], 1, 0) = @False
 
 BeforeExecute
 -- SqlServer.2016.MS SqlServer.2016
@@ -268,6 +276,8 @@ FROM
 
 BeforeExecute
 -- SqlServer.2016.MS SqlServer.2016
+DECLARE @True Bit -- Boolean
+SET     @True = 1
 
 SELECT
 	[r].[Id],
@@ -278,7 +288,7 @@ SELECT
 FROM
 	[BooleanTable] [r]
 WHERE
-	[r].[Value5] = [r].[Value4] OR [r].[Value5] IS NULL AND [r].[Value4] IS NULL
+	IIF([r].[Value5] = [r].[Value4] OR [r].[Value5] IS NULL AND [r].[Value4] IS NULL, 1, 0) = @True
 
 BeforeExecute
 -- SqlServer.2016.MS SqlServer.2016
@@ -322,6 +332,8 @@ FROM
 
 BeforeExecute
 -- SqlServer.2016.MS SqlServer.2016
+DECLARE @False Bit -- Boolean
+SET     @False = 0
 
 SELECT
 	[r].[Id],
@@ -332,8 +344,7 @@ SELECT
 FROM
 	[BooleanTable] [r]
 WHERE
-	[r].[Value5] <> [r].[Value4] OR [r].[Value5] IS NULL AND [r].[Value4] IS NOT NULL OR
-	[r].[Value5] IS NOT NULL AND [r].[Value4] IS NULL
+	IIF([r].[Value5] = [r].[Value4] OR [r].[Value5] IS NULL AND [r].[Value4] IS NULL, 1, 0) = @False
 
 BeforeExecute
 -- SqlServer.2016.MS SqlServer.2016
@@ -403,6 +414,8 @@ FROM
 
 BeforeExecute
 -- SqlServer.2016.MS SqlServer.2016
+DECLARE @True Bit -- Boolean
+SET     @True = 1
 
 SELECT
 	[r].[Id],
@@ -413,7 +426,7 @@ SELECT
 FROM
 	[BooleanTable] [r]
 WHERE
-	[r].[Value1] <> [r].[Value2]
+	IIF([r].[Value1] = [r].[Value2], 1, 0) <> @True
 
 BeforeExecute
 -- SqlServer.2016.MS SqlServer.2016
@@ -457,6 +470,8 @@ FROM
 
 BeforeExecute
 -- SqlServer.2016.MS SqlServer.2016
+DECLARE @False Bit -- Boolean
+SET     @False = 0
 
 SELECT
 	[r].[Id],
@@ -467,7 +482,7 @@ SELECT
 FROM
 	[BooleanTable] [r]
 WHERE
-	[r].[Value1] = [r].[Value2]
+	IIF([r].[Value1] = [r].[Value2], 1, 0) <> @False
 
 BeforeExecute
 -- SqlServer.2016.MS SqlServer.2016
@@ -535,6 +550,8 @@ FROM
 
 BeforeExecute
 -- SqlServer.2016.MS SqlServer.2016
+DECLARE @True Bit -- Boolean
+SET     @True = 1
 
 SELECT
 	[r].[Id],
@@ -545,7 +562,7 @@ SELECT
 FROM
 	[BooleanTable] [r]
 WHERE
-	[r].[Value1] <> [r].[Value4] OR [r].[Value4] IS NULL
+	IIF([r].[Value1] = [r].[Value4], 1, 0) <> @True
 
 BeforeExecute
 -- SqlServer.2016.MS SqlServer.2016
@@ -589,6 +606,8 @@ FROM
 
 BeforeExecute
 -- SqlServer.2016.MS SqlServer.2016
+DECLARE @False Bit -- Boolean
+SET     @False = 0
 
 SELECT
 	[r].[Id],
@@ -599,7 +618,7 @@ SELECT
 FROM
 	[BooleanTable] [r]
 WHERE
-	[r].[Value1] = [r].[Value4]
+	IIF([r].[Value1] = [r].[Value4], 1, 0) <> @False
 
 BeforeExecute
 -- SqlServer.2016.MS SqlServer.2016
@@ -667,6 +686,8 @@ FROM
 
 BeforeExecute
 -- SqlServer.2016.MS SqlServer.2016
+DECLARE @True Bit -- Boolean
+SET     @True = 1
 
 SELECT
 	[r].[Id],
@@ -677,8 +698,7 @@ SELECT
 FROM
 	[BooleanTable] [r]
 WHERE
-	[r].[Value5] <> [r].[Value4] OR [r].[Value5] IS NULL AND [r].[Value4] IS NOT NULL OR
-	[r].[Value5] IS NOT NULL AND [r].[Value4] IS NULL
+	IIF([r].[Value5] = [r].[Value4] OR [r].[Value5] IS NULL AND [r].[Value4] IS NULL, 1, 0) <> @True
 
 BeforeExecute
 -- SqlServer.2016.MS SqlServer.2016
@@ -722,6 +742,8 @@ FROM
 
 BeforeExecute
 -- SqlServer.2016.MS SqlServer.2016
+DECLARE @False Bit -- Boolean
+SET     @False = 0
 
 SELECT
 	[r].[Id],
@@ -732,7 +754,7 @@ SELECT
 FROM
 	[BooleanTable] [r]
 WHERE
-	[r].[Value5] = [r].[Value4] OR [r].[Value5] IS NULL AND [r].[Value4] IS NULL
+	IIF([r].[Value5] = [r].[Value4] OR [r].[Value5] IS NULL AND [r].[Value4] IS NULL, 1, 0) <> @False
 
 BeforeExecute
 -- SqlServer.2016.MS SqlServer.2016
@@ -800,6 +822,8 @@ FROM
 
 BeforeExecute
 -- SqlServer.2016.MS SqlServer.2016
+DECLARE @True Bit -- Boolean
+SET     @True = 1
 
 SELECT
 	[r].[Id],
@@ -810,7 +834,7 @@ SELECT
 FROM
 	[BooleanTable] [r]
 WHERE
-	[r].[Value1] > [r].[Value2]
+	IIF([r].[Value1] > [r].[Value2], 1, 0) = @True
 
 BeforeExecute
 -- SqlServer.2016.MS SqlServer.2016
@@ -854,6 +878,8 @@ FROM
 
 BeforeExecute
 -- SqlServer.2016.MS SqlServer.2016
+DECLARE @False Bit -- Boolean
+SET     @False = 0
 
 SELECT
 	[r].[Id],
@@ -864,7 +890,7 @@ SELECT
 FROM
 	[BooleanTable] [r]
 WHERE
-	[r].[Value1] <= [r].[Value2]
+	IIF([r].[Value1] > [r].[Value2], 1, 0) = @False
 
 BeforeExecute
 -- SqlServer.2016.MS SqlServer.2016
@@ -934,6 +960,8 @@ FROM
 
 BeforeExecute
 -- SqlServer.2016.MS SqlServer.2016
+DECLARE @True Bit -- Boolean
+SET     @True = 1
 
 SELECT
 	[r].[Id],
@@ -944,7 +972,7 @@ SELECT
 FROM
 	[BooleanTable] [r]
 WHERE
-	[r].[Value1] > [r].[Value4]
+	IIF([r].[Value1] > [r].[Value4], 1, 0) = @True
 
 BeforeExecute
 -- SqlServer.2016.MS SqlServer.2016
@@ -988,6 +1016,8 @@ FROM
 
 BeforeExecute
 -- SqlServer.2016.MS SqlServer.2016
+DECLARE @False Bit -- Boolean
+SET     @False = 0
 
 SELECT
 	[r].[Id],
@@ -998,7 +1028,7 @@ SELECT
 FROM
 	[BooleanTable] [r]
 WHERE
-	[r].[Value1] <= [r].[Value4] OR [r].[Value4] IS NULL
+	IIF([r].[Value1] > [r].[Value4], 1, 0) = @False
 
 BeforeExecute
 -- SqlServer.2016.MS SqlServer.2016
@@ -1068,6 +1098,8 @@ FROM
 
 BeforeExecute
 -- SqlServer.2016.MS SqlServer.2016
+DECLARE @True Bit -- Boolean
+SET     @True = 1
 
 SELECT
 	[r].[Id],
@@ -1078,7 +1110,7 @@ SELECT
 FROM
 	[BooleanTable] [r]
 WHERE
-	[r].[Value5] > [r].[Value4]
+	IIF([r].[Value5] > [r].[Value4], 1, 0) = @True
 
 BeforeExecute
 -- SqlServer.2016.MS SqlServer.2016
@@ -1122,6 +1154,8 @@ FROM
 
 BeforeExecute
 -- SqlServer.2016.MS SqlServer.2016
+DECLARE @False Bit -- Boolean
+SET     @False = 0
 
 SELECT
 	[r].[Id],
@@ -1132,8 +1166,7 @@ SELECT
 FROM
 	[BooleanTable] [r]
 WHERE
-	[r].[Value5] <= [r].[Value4] OR [r].[Value5] IS NULL OR
-	[r].[Value4] IS NULL
+	IIF([r].[Value5] > [r].[Value4], 1, 0) = @False
 
 BeforeExecute
 -- SqlServer.2016.MS SqlServer.2016
@@ -1203,6 +1236,8 @@ FROM
 
 BeforeExecute
 -- SqlServer.2016.MS SqlServer.2016
+DECLARE @True Bit -- Boolean
+SET     @True = 1
 
 SELECT
 	[r].[Id],
@@ -1213,7 +1248,7 @@ SELECT
 FROM
 	[BooleanTable] [r]
 WHERE
-	[r].[Value1] <= [r].[Value2]
+	IIF([r].[Value1] > [r].[Value2], 1, 0) <> @True
 
 BeforeExecute
 -- SqlServer.2016.MS SqlServer.2016
@@ -1257,6 +1292,8 @@ FROM
 
 BeforeExecute
 -- SqlServer.2016.MS SqlServer.2016
+DECLARE @False Bit -- Boolean
+SET     @False = 0
 
 SELECT
 	[r].[Id],
@@ -1267,7 +1304,7 @@ SELECT
 FROM
 	[BooleanTable] [r]
 WHERE
-	[r].[Value1] > [r].[Value2]
+	IIF([r].[Value1] > [r].[Value2], 1, 0) <> @False
 
 BeforeExecute
 -- SqlServer.2016.MS SqlServer.2016
@@ -1335,6 +1372,8 @@ FROM
 
 BeforeExecute
 -- SqlServer.2016.MS SqlServer.2016
+DECLARE @True Bit -- Boolean
+SET     @True = 1
 
 SELECT
 	[r].[Id],
@@ -1345,7 +1384,7 @@ SELECT
 FROM
 	[BooleanTable] [r]
 WHERE
-	[r].[Value1] <= [r].[Value4] OR [r].[Value4] IS NULL
+	IIF([r].[Value1] > [r].[Value4], 1, 0) <> @True
 
 BeforeExecute
 -- SqlServer.2016.MS SqlServer.2016
@@ -1389,6 +1428,8 @@ FROM
 
 BeforeExecute
 -- SqlServer.2016.MS SqlServer.2016
+DECLARE @False Bit -- Boolean
+SET     @False = 0
 
 SELECT
 	[r].[Id],
@@ -1399,7 +1440,7 @@ SELECT
 FROM
 	[BooleanTable] [r]
 WHERE
-	[r].[Value1] > [r].[Value4]
+	IIF([r].[Value1] > [r].[Value4], 1, 0) <> @False
 
 BeforeExecute
 -- SqlServer.2016.MS SqlServer.2016
@@ -1467,6 +1508,8 @@ FROM
 
 BeforeExecute
 -- SqlServer.2016.MS SqlServer.2016
+DECLARE @True Bit -- Boolean
+SET     @True = 1
 
 SELECT
 	[r].[Id],
@@ -1477,8 +1520,7 @@ SELECT
 FROM
 	[BooleanTable] [r]
 WHERE
-	[r].[Value5] <= [r].[Value4] OR [r].[Value5] IS NULL OR
-	[r].[Value4] IS NULL
+	IIF([r].[Value5] > [r].[Value4], 1, 0) <> @True
 
 BeforeExecute
 -- SqlServer.2016.MS SqlServer.2016
@@ -1522,6 +1564,8 @@ FROM
 
 BeforeExecute
 -- SqlServer.2016.MS SqlServer.2016
+DECLARE @False Bit -- Boolean
+SET     @False = 0
 
 SELECT
 	[r].[Id],
@@ -1532,7 +1576,7 @@ SELECT
 FROM
 	[BooleanTable] [r]
 WHERE
-	[r].[Value5] > [r].[Value4]
+	IIF([r].[Value5] > [r].[Value4], 1, 0) <> @False
 
 BeforeExecute
 -- SqlServer.2016.MS SqlServer.2016
@@ -1600,6 +1644,8 @@ FROM
 
 BeforeExecute
 -- SqlServer.2016.MS SqlServer.2016
+DECLARE @True Bit -- Boolean
+SET     @True = 1
 
 SELECT
 	[r].[Id],
@@ -1610,7 +1656,7 @@ SELECT
 FROM
 	[BooleanTable] [r]
 WHERE
-	[r].[Value1] >= [r].[Value2]
+	IIF([r].[Value1] >= [r].[Value2], 1, 0) = @True
 
 BeforeExecute
 -- SqlServer.2016.MS SqlServer.2016
@@ -1654,6 +1700,8 @@ FROM
 
 BeforeExecute
 -- SqlServer.2016.MS SqlServer.2016
+DECLARE @False Bit -- Boolean
+SET     @False = 0
 
 SELECT
 	[r].[Id],
@@ -1664,7 +1712,7 @@ SELECT
 FROM
 	[BooleanTable] [r]
 WHERE
-	[r].[Value1] < [r].[Value2]
+	IIF([r].[Value1] >= [r].[Value2], 1, 0) = @False
 
 BeforeExecute
 -- SqlServer.2016.MS SqlServer.2016
@@ -1734,6 +1782,8 @@ FROM
 
 BeforeExecute
 -- SqlServer.2016.MS SqlServer.2016
+DECLARE @True Bit -- Boolean
+SET     @True = 1
 
 SELECT
 	[r].[Id],
@@ -1744,7 +1794,7 @@ SELECT
 FROM
 	[BooleanTable] [r]
 WHERE
-	[r].[Value1] >= [r].[Value4]
+	IIF([r].[Value1] >= [r].[Value4], 1, 0) = @True
 
 BeforeExecute
 -- SqlServer.2016.MS SqlServer.2016
@@ -1788,6 +1838,8 @@ FROM
 
 BeforeExecute
 -- SqlServer.2016.MS SqlServer.2016
+DECLARE @False Bit -- Boolean
+SET     @False = 0
 
 SELECT
 	[r].[Id],
@@ -1798,7 +1850,7 @@ SELECT
 FROM
 	[BooleanTable] [r]
 WHERE
-	[r].[Value1] < [r].[Value4] OR [r].[Value4] IS NULL
+	IIF([r].[Value1] >= [r].[Value4], 1, 0) = @False
 
 BeforeExecute
 -- SqlServer.2016.MS SqlServer.2016
@@ -1868,6 +1920,8 @@ FROM
 
 BeforeExecute
 -- SqlServer.2016.MS SqlServer.2016
+DECLARE @True Bit -- Boolean
+SET     @True = 1
 
 SELECT
 	[r].[Id],
@@ -1878,7 +1932,7 @@ SELECT
 FROM
 	[BooleanTable] [r]
 WHERE
-	[r].[Value5] >= [r].[Value4]
+	IIF([r].[Value5] >= [r].[Value4], 1, 0) = @True
 
 BeforeExecute
 -- SqlServer.2016.MS SqlServer.2016
@@ -1922,6 +1976,8 @@ FROM
 
 BeforeExecute
 -- SqlServer.2016.MS SqlServer.2016
+DECLARE @False Bit -- Boolean
+SET     @False = 0
 
 SELECT
 	[r].[Id],
@@ -1932,8 +1988,7 @@ SELECT
 FROM
 	[BooleanTable] [r]
 WHERE
-	[r].[Value5] < [r].[Value4] OR [r].[Value5] IS NULL OR
-	[r].[Value4] IS NULL
+	IIF([r].[Value5] >= [r].[Value4], 1, 0) = @False
 
 BeforeExecute
 -- SqlServer.2016.MS SqlServer.2016
@@ -2003,6 +2058,8 @@ FROM
 
 BeforeExecute
 -- SqlServer.2016.MS SqlServer.2016
+DECLARE @True Bit -- Boolean
+SET     @True = 1
 
 SELECT
 	[r].[Id],
@@ -2013,7 +2070,7 @@ SELECT
 FROM
 	[BooleanTable] [r]
 WHERE
-	[r].[Value1] < [r].[Value2]
+	IIF([r].[Value1] >= [r].[Value2], 1, 0) <> @True
 
 BeforeExecute
 -- SqlServer.2016.MS SqlServer.2016
@@ -2057,6 +2114,8 @@ FROM
 
 BeforeExecute
 -- SqlServer.2016.MS SqlServer.2016
+DECLARE @False Bit -- Boolean
+SET     @False = 0
 
 SELECT
 	[r].[Id],
@@ -2067,7 +2126,7 @@ SELECT
 FROM
 	[BooleanTable] [r]
 WHERE
-	[r].[Value1] >= [r].[Value2]
+	IIF([r].[Value1] >= [r].[Value2], 1, 0) <> @False
 
 BeforeExecute
 -- SqlServer.2016.MS SqlServer.2016
@@ -2135,6 +2194,8 @@ FROM
 
 BeforeExecute
 -- SqlServer.2016.MS SqlServer.2016
+DECLARE @True Bit -- Boolean
+SET     @True = 1
 
 SELECT
 	[r].[Id],
@@ -2145,7 +2206,7 @@ SELECT
 FROM
 	[BooleanTable] [r]
 WHERE
-	[r].[Value1] < [r].[Value4] OR [r].[Value4] IS NULL
+	IIF([r].[Value1] >= [r].[Value4], 1, 0) <> @True
 
 BeforeExecute
 -- SqlServer.2016.MS SqlServer.2016
@@ -2189,6 +2250,8 @@ FROM
 
 BeforeExecute
 -- SqlServer.2016.MS SqlServer.2016
+DECLARE @False Bit -- Boolean
+SET     @False = 0
 
 SELECT
 	[r].[Id],
@@ -2199,7 +2262,7 @@ SELECT
 FROM
 	[BooleanTable] [r]
 WHERE
-	[r].[Value1] >= [r].[Value4]
+	IIF([r].[Value1] >= [r].[Value4], 1, 0) <> @False
 
 BeforeExecute
 -- SqlServer.2016.MS SqlServer.2016
@@ -2267,6 +2330,8 @@ FROM
 
 BeforeExecute
 -- SqlServer.2016.MS SqlServer.2016
+DECLARE @True Bit -- Boolean
+SET     @True = 1
 
 SELECT
 	[r].[Id],
@@ -2277,8 +2342,7 @@ SELECT
 FROM
 	[BooleanTable] [r]
 WHERE
-	[r].[Value5] < [r].[Value4] OR [r].[Value5] IS NULL OR
-	[r].[Value4] IS NULL
+	IIF([r].[Value5] >= [r].[Value4], 1, 0) <> @True
 
 BeforeExecute
 -- SqlServer.2016.MS SqlServer.2016
@@ -2322,6 +2386,8 @@ FROM
 
 BeforeExecute
 -- SqlServer.2016.MS SqlServer.2016
+DECLARE @False Bit -- Boolean
+SET     @False = 0
 
 SELECT
 	[r].[Id],
@@ -2332,7 +2398,7 @@ SELECT
 FROM
 	[BooleanTable] [r]
 WHERE
-	[r].[Value5] >= [r].[Value4]
+	IIF([r].[Value5] >= [r].[Value4], 1, 0) <> @False
 
 BeforeExecute
 -- SqlServer.2016.MS SqlServer.2016
@@ -2400,6 +2466,8 @@ FROM
 
 BeforeExecute
 -- SqlServer.2016.MS SqlServer.2016
+DECLARE @True Bit -- Boolean
+SET     @True = 1
 
 SELECT
 	[r].[Id],
@@ -2410,7 +2478,7 @@ SELECT
 FROM
 	[BooleanTable] [r]
 WHERE
-	[r].[Value1] < [r].[Value2]
+	IIF([r].[Value1] < [r].[Value2], 1, 0) = @True
 
 BeforeExecute
 -- SqlServer.2016.MS SqlServer.2016
@@ -2454,6 +2522,8 @@ FROM
 
 BeforeExecute
 -- SqlServer.2016.MS SqlServer.2016
+DECLARE @False Bit -- Boolean
+SET     @False = 0
 
 SELECT
 	[r].[Id],
@@ -2464,7 +2534,7 @@ SELECT
 FROM
 	[BooleanTable] [r]
 WHERE
-	[r].[Value1] >= [r].[Value2]
+	IIF([r].[Value1] < [r].[Value2], 1, 0) = @False
 
 BeforeExecute
 -- SqlServer.2016.MS SqlServer.2016
@@ -2534,6 +2604,8 @@ FROM
 
 BeforeExecute
 -- SqlServer.2016.MS SqlServer.2016
+DECLARE @True Bit -- Boolean
+SET     @True = 1
 
 SELECT
 	[r].[Id],
@@ -2544,7 +2616,7 @@ SELECT
 FROM
 	[BooleanTable] [r]
 WHERE
-	[r].[Value1] < [r].[Value4]
+	IIF([r].[Value1] < [r].[Value4], 1, 0) = @True
 
 BeforeExecute
 -- SqlServer.2016.MS SqlServer.2016
@@ -2588,6 +2660,8 @@ FROM
 
 BeforeExecute
 -- SqlServer.2016.MS SqlServer.2016
+DECLARE @False Bit -- Boolean
+SET     @False = 0
 
 SELECT
 	[r].[Id],
@@ -2598,7 +2672,7 @@ SELECT
 FROM
 	[BooleanTable] [r]
 WHERE
-	[r].[Value1] >= [r].[Value4] OR [r].[Value4] IS NULL
+	IIF([r].[Value1] < [r].[Value4], 1, 0) = @False
 
 BeforeExecute
 -- SqlServer.2016.MS SqlServer.2016
@@ -2668,6 +2742,8 @@ FROM
 
 BeforeExecute
 -- SqlServer.2016.MS SqlServer.2016
+DECLARE @True Bit -- Boolean
+SET     @True = 1
 
 SELECT
 	[r].[Id],
@@ -2678,7 +2754,7 @@ SELECT
 FROM
 	[BooleanTable] [r]
 WHERE
-	[r].[Value5] < [r].[Value4]
+	IIF([r].[Value5] < [r].[Value4], 1, 0) = @True
 
 BeforeExecute
 -- SqlServer.2016.MS SqlServer.2016
@@ -2722,6 +2798,8 @@ FROM
 
 BeforeExecute
 -- SqlServer.2016.MS SqlServer.2016
+DECLARE @False Bit -- Boolean
+SET     @False = 0
 
 SELECT
 	[r].[Id],
@@ -2732,8 +2810,7 @@ SELECT
 FROM
 	[BooleanTable] [r]
 WHERE
-	[r].[Value5] >= [r].[Value4] OR [r].[Value5] IS NULL OR
-	[r].[Value4] IS NULL
+	IIF([r].[Value5] < [r].[Value4], 1, 0) = @False
 
 BeforeExecute
 -- SqlServer.2016.MS SqlServer.2016
@@ -2803,6 +2880,8 @@ FROM
 
 BeforeExecute
 -- SqlServer.2016.MS SqlServer.2016
+DECLARE @True Bit -- Boolean
+SET     @True = 1
 
 SELECT
 	[r].[Id],
@@ -2813,7 +2892,7 @@ SELECT
 FROM
 	[BooleanTable] [r]
 WHERE
-	[r].[Value1] >= [r].[Value2]
+	IIF([r].[Value1] < [r].[Value2], 1, 0) <> @True
 
 BeforeExecute
 -- SqlServer.2016.MS SqlServer.2016
@@ -2857,6 +2936,8 @@ FROM
 
 BeforeExecute
 -- SqlServer.2016.MS SqlServer.2016
+DECLARE @False Bit -- Boolean
+SET     @False = 0
 
 SELECT
 	[r].[Id],
@@ -2867,7 +2948,7 @@ SELECT
 FROM
 	[BooleanTable] [r]
 WHERE
-	[r].[Value1] < [r].[Value2]
+	IIF([r].[Value1] < [r].[Value2], 1, 0) <> @False
 
 BeforeExecute
 -- SqlServer.2016.MS SqlServer.2016
@@ -2935,6 +3016,8 @@ FROM
 
 BeforeExecute
 -- SqlServer.2016.MS SqlServer.2016
+DECLARE @True Bit -- Boolean
+SET     @True = 1
 
 SELECT
 	[r].[Id],
@@ -2945,7 +3028,7 @@ SELECT
 FROM
 	[BooleanTable] [r]
 WHERE
-	[r].[Value1] >= [r].[Value4] OR [r].[Value4] IS NULL
+	IIF([r].[Value1] < [r].[Value4], 1, 0) <> @True
 
 BeforeExecute
 -- SqlServer.2016.MS SqlServer.2016
@@ -2989,6 +3072,8 @@ FROM
 
 BeforeExecute
 -- SqlServer.2016.MS SqlServer.2016
+DECLARE @False Bit -- Boolean
+SET     @False = 0
 
 SELECT
 	[r].[Id],
@@ -2999,7 +3084,7 @@ SELECT
 FROM
 	[BooleanTable] [r]
 WHERE
-	[r].[Value1] < [r].[Value4]
+	IIF([r].[Value1] < [r].[Value4], 1, 0) <> @False
 
 BeforeExecute
 -- SqlServer.2016.MS SqlServer.2016
@@ -3067,6 +3152,8 @@ FROM
 
 BeforeExecute
 -- SqlServer.2016.MS SqlServer.2016
+DECLARE @True Bit -- Boolean
+SET     @True = 1
 
 SELECT
 	[r].[Id],
@@ -3077,8 +3164,7 @@ SELECT
 FROM
 	[BooleanTable] [r]
 WHERE
-	[r].[Value5] >= [r].[Value4] OR [r].[Value5] IS NULL OR
-	[r].[Value4] IS NULL
+	IIF([r].[Value5] < [r].[Value4], 1, 0) <> @True
 
 BeforeExecute
 -- SqlServer.2016.MS SqlServer.2016
@@ -3122,6 +3208,8 @@ FROM
 
 BeforeExecute
 -- SqlServer.2016.MS SqlServer.2016
+DECLARE @False Bit -- Boolean
+SET     @False = 0
 
 SELECT
 	[r].[Id],
@@ -3132,7 +3220,7 @@ SELECT
 FROM
 	[BooleanTable] [r]
 WHERE
-	[r].[Value5] < [r].[Value4]
+	IIF([r].[Value5] < [r].[Value4], 1, 0) <> @False
 
 BeforeExecute
 -- SqlServer.2016.MS SqlServer.2016
@@ -3200,6 +3288,8 @@ FROM
 
 BeforeExecute
 -- SqlServer.2016.MS SqlServer.2016
+DECLARE @True Bit -- Boolean
+SET     @True = 1
 
 SELECT
 	[r].[Id],
@@ -3210,7 +3300,7 @@ SELECT
 FROM
 	[BooleanTable] [r]
 WHERE
-	[r].[Value1] <= [r].[Value2]
+	IIF([r].[Value1] <= [r].[Value2], 1, 0) = @True
 
 BeforeExecute
 -- SqlServer.2016.MS SqlServer.2016
@@ -3254,6 +3344,8 @@ FROM
 
 BeforeExecute
 -- SqlServer.2016.MS SqlServer.2016
+DECLARE @False Bit -- Boolean
+SET     @False = 0
 
 SELECT
 	[r].[Id],
@@ -3264,7 +3356,7 @@ SELECT
 FROM
 	[BooleanTable] [r]
 WHERE
-	[r].[Value1] > [r].[Value2]
+	IIF([r].[Value1] <= [r].[Value2], 1, 0) = @False
 
 BeforeExecute
 -- SqlServer.2016.MS SqlServer.2016
@@ -3334,6 +3426,8 @@ FROM
 
 BeforeExecute
 -- SqlServer.2016.MS SqlServer.2016
+DECLARE @True Bit -- Boolean
+SET     @True = 1
 
 SELECT
 	[r].[Id],
@@ -3344,7 +3438,7 @@ SELECT
 FROM
 	[BooleanTable] [r]
 WHERE
-	[r].[Value1] <= [r].[Value4]
+	IIF([r].[Value1] <= [r].[Value4], 1, 0) = @True
 
 BeforeExecute
 -- SqlServer.2016.MS SqlServer.2016
@@ -3388,6 +3482,8 @@ FROM
 
 BeforeExecute
 -- SqlServer.2016.MS SqlServer.2016
+DECLARE @False Bit -- Boolean
+SET     @False = 0
 
 SELECT
 	[r].[Id],
@@ -3398,7 +3494,7 @@ SELECT
 FROM
 	[BooleanTable] [r]
 WHERE
-	[r].[Value1] > [r].[Value4] OR [r].[Value4] IS NULL
+	IIF([r].[Value1] <= [r].[Value4], 1, 0) = @False
 
 BeforeExecute
 -- SqlServer.2016.MS SqlServer.2016
@@ -3468,6 +3564,8 @@ FROM
 
 BeforeExecute
 -- SqlServer.2016.MS SqlServer.2016
+DECLARE @True Bit -- Boolean
+SET     @True = 1
 
 SELECT
 	[r].[Id],
@@ -3478,7 +3576,7 @@ SELECT
 FROM
 	[BooleanTable] [r]
 WHERE
-	[r].[Value5] <= [r].[Value4]
+	IIF([r].[Value5] <= [r].[Value4], 1, 0) = @True
 
 BeforeExecute
 -- SqlServer.2016.MS SqlServer.2016
@@ -3522,6 +3620,8 @@ FROM
 
 BeforeExecute
 -- SqlServer.2016.MS SqlServer.2016
+DECLARE @False Bit -- Boolean
+SET     @False = 0
 
 SELECT
 	[r].[Id],
@@ -3532,8 +3632,7 @@ SELECT
 FROM
 	[BooleanTable] [r]
 WHERE
-	[r].[Value5] > [r].[Value4] OR [r].[Value5] IS NULL OR
-	[r].[Value4] IS NULL
+	IIF([r].[Value5] <= [r].[Value4], 1, 0) = @False
 
 BeforeExecute
 -- SqlServer.2016.MS SqlServer.2016
@@ -3603,6 +3702,8 @@ FROM
 
 BeforeExecute
 -- SqlServer.2016.MS SqlServer.2016
+DECLARE @True Bit -- Boolean
+SET     @True = 1
 
 SELECT
 	[r].[Id],
@@ -3613,7 +3714,7 @@ SELECT
 FROM
 	[BooleanTable] [r]
 WHERE
-	[r].[Value1] > [r].[Value2]
+	IIF([r].[Value1] <= [r].[Value2], 1, 0) <> @True
 
 BeforeExecute
 -- SqlServer.2016.MS SqlServer.2016
@@ -3657,6 +3758,8 @@ FROM
 
 BeforeExecute
 -- SqlServer.2016.MS SqlServer.2016
+DECLARE @False Bit -- Boolean
+SET     @False = 0
 
 SELECT
 	[r].[Id],
@@ -3667,7 +3770,7 @@ SELECT
 FROM
 	[BooleanTable] [r]
 WHERE
-	[r].[Value1] <= [r].[Value2]
+	IIF([r].[Value1] <= [r].[Value2], 1, 0) <> @False
 
 BeforeExecute
 -- SqlServer.2016.MS SqlServer.2016
@@ -3735,6 +3838,8 @@ FROM
 
 BeforeExecute
 -- SqlServer.2016.MS SqlServer.2016
+DECLARE @True Bit -- Boolean
+SET     @True = 1
 
 SELECT
 	[r].[Id],
@@ -3745,7 +3850,7 @@ SELECT
 FROM
 	[BooleanTable] [r]
 WHERE
-	[r].[Value1] > [r].[Value4] OR [r].[Value4] IS NULL
+	IIF([r].[Value1] <= [r].[Value4], 1, 0) <> @True
 
 BeforeExecute
 -- SqlServer.2016.MS SqlServer.2016
@@ -3789,6 +3894,8 @@ FROM
 
 BeforeExecute
 -- SqlServer.2016.MS SqlServer.2016
+DECLARE @False Bit -- Boolean
+SET     @False = 0
 
 SELECT
 	[r].[Id],
@@ -3799,7 +3906,7 @@ SELECT
 FROM
 	[BooleanTable] [r]
 WHERE
-	[r].[Value1] <= [r].[Value4]
+	IIF([r].[Value1] <= [r].[Value4], 1, 0) <> @False
 
 BeforeExecute
 -- SqlServer.2016.MS SqlServer.2016
@@ -3867,6 +3974,8 @@ FROM
 
 BeforeExecute
 -- SqlServer.2016.MS SqlServer.2016
+DECLARE @True Bit -- Boolean
+SET     @True = 1
 
 SELECT
 	[r].[Id],
@@ -3877,8 +3986,7 @@ SELECT
 FROM
 	[BooleanTable] [r]
 WHERE
-	[r].[Value5] > [r].[Value4] OR [r].[Value5] IS NULL OR
-	[r].[Value4] IS NULL
+	IIF([r].[Value5] <= [r].[Value4], 1, 0) <> @True
 
 BeforeExecute
 -- SqlServer.2016.MS SqlServer.2016
@@ -3922,6 +4030,8 @@ FROM
 
 BeforeExecute
 -- SqlServer.2016.MS SqlServer.2016
+DECLARE @False Bit -- Boolean
+SET     @False = 0
 
 SELECT
 	[r].[Id],
@@ -3932,7 +4042,7 @@ SELECT
 FROM
 	[BooleanTable] [r]
 WHERE
-	[r].[Value5] <= [r].[Value4]
+	IIF([r].[Value5] <= [r].[Value4], 1, 0) <> @False
 
 BeforeExecute
 -- SqlServer.2016.MS SqlServer.2016
