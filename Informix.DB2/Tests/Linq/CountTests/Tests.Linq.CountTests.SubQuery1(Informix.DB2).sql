@@ -9,8 +9,7 @@ SELECT
 		FROM
 			Child a_Children
 		WHERE
-			p.ParentID = a_Children.ParentID AND a_Children.ParentID = p.ParentID AND
-			a_Children.ChildID::Decimal <> 0
+			p.ParentID = a_Children.ParentID AND a_Children.ChildID::Decimal <> 0
 	)
 FROM
 	Parent p
