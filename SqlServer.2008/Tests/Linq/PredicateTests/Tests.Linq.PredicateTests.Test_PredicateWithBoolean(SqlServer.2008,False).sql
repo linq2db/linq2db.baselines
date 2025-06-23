@@ -1,5 +1,7 @@
 ﻿BeforeExecute
 -- SqlServer.2008
+DECLARE @True Bit -- Boolean
+SET     @True = 1
 
 SELECT
 	[r].[Id],
@@ -10,7 +12,10 @@ SELECT
 FROM
 	[BooleanTable] [r]
 WHERE
-	[r].[Value1] = [r].[Value2]
+	CASE
+		WHEN [r].[Value1] = [r].[Value2] THEN 1
+		ELSE 0
+	END = @True
 
 BeforeExecute
 -- SqlServer.2008
@@ -57,6 +62,8 @@ FROM
 
 BeforeExecute
 -- SqlServer.2008
+DECLARE @False Bit -- Boolean
+SET     @False = 0
 
 SELECT
 	[r].[Id],
@@ -67,7 +74,10 @@ SELECT
 FROM
 	[BooleanTable] [r]
 WHERE
-	[r].[Value1] <> [r].[Value4] OR [r].[Value4] IS NULL
+	CASE
+		WHEN [r].[Value1] = [r].[Value4] THEN 1
+		ELSE 0
+	END = @False
 
 BeforeExecute
 -- SqlServer.2008
@@ -140,6 +150,8 @@ FROM
 
 BeforeExecute
 -- SqlServer.2008
+DECLARE @True Bit -- Boolean
+SET     @True = 1
 
 SELECT
 	[r].[Id],
@@ -150,7 +162,10 @@ SELECT
 FROM
 	[BooleanTable] [r]
 WHERE
-	[r].[Value1] = [r].[Value4]
+	CASE
+		WHEN [r].[Value1] = [r].[Value4] THEN 1
+		ELSE 0
+	END = @True
 
 BeforeExecute
 -- SqlServer.2008
@@ -197,6 +212,8 @@ FROM
 
 BeforeExecute
 -- SqlServer.2008
+DECLARE @False Bit -- Boolean
+SET     @False = 0
 
 SELECT
 	[r].[Id],
@@ -207,7 +224,10 @@ SELECT
 FROM
 	[BooleanTable] [r]
 WHERE
-	[r].[Value1] <> [r].[Value4] OR [r].[Value4] IS NULL
+	CASE
+		WHEN [r].[Value1] = [r].[Value4] THEN 1
+		ELSE 0
+	END = @False
 
 BeforeExecute
 -- SqlServer.2008
@@ -280,6 +300,8 @@ FROM
 
 BeforeExecute
 -- SqlServer.2008
+DECLARE @True Bit -- Boolean
+SET     @True = 1
 
 SELECT
 	[r].[Id],
@@ -290,7 +312,11 @@ SELECT
 FROM
 	[BooleanTable] [r]
 WHERE
-	[r].[Value5] = [r].[Value4] OR [r].[Value5] IS NULL AND [r].[Value4] IS NULL
+	CASE
+		WHEN [r].[Value5] = [r].[Value4] OR [r].[Value5] IS NULL AND [r].[Value4] IS NULL
+			THEN 1
+		ELSE 0
+	END = @True
 
 BeforeExecute
 -- SqlServer.2008
@@ -338,6 +364,8 @@ FROM
 
 BeforeExecute
 -- SqlServer.2008
+DECLARE @False Bit -- Boolean
+SET     @False = 0
 
 SELECT
 	[r].[Id],
@@ -348,8 +376,11 @@ SELECT
 FROM
 	[BooleanTable] [r]
 WHERE
-	[r].[Value5] <> [r].[Value4] OR [r].[Value5] IS NULL AND [r].[Value4] IS NOT NULL OR
-	[r].[Value5] IS NOT NULL AND [r].[Value4] IS NULL
+	CASE
+		WHEN [r].[Value5] = [r].[Value4] OR [r].[Value5] IS NULL AND [r].[Value4] IS NULL
+			THEN 1
+		ELSE 0
+	END = @False
 
 BeforeExecute
 -- SqlServer.2008
@@ -423,6 +454,8 @@ FROM
 
 BeforeExecute
 -- SqlServer.2008
+DECLARE @True Bit -- Boolean
+SET     @True = 1
 
 SELECT
 	[r].[Id],
@@ -433,7 +466,10 @@ SELECT
 FROM
 	[BooleanTable] [r]
 WHERE
-	[r].[Value1] <> [r].[Value2]
+	CASE
+		WHEN [r].[Value1] = [r].[Value2] THEN 1
+		ELSE 0
+	END <> @True
 
 BeforeExecute
 -- SqlServer.2008
@@ -480,6 +516,8 @@ FROM
 
 BeforeExecute
 -- SqlServer.2008
+DECLARE @False Bit -- Boolean
+SET     @False = 0
 
 SELECT
 	[r].[Id],
@@ -490,7 +528,10 @@ SELECT
 FROM
 	[BooleanTable] [r]
 WHERE
-	[r].[Value1] = [r].[Value2]
+	CASE
+		WHEN [r].[Value1] = [r].[Value2] THEN 1
+		ELSE 0
+	END <> @False
 
 BeforeExecute
 -- SqlServer.2008
@@ -561,6 +602,8 @@ FROM
 
 BeforeExecute
 -- SqlServer.2008
+DECLARE @True Bit -- Boolean
+SET     @True = 1
 
 SELECT
 	[r].[Id],
@@ -571,7 +614,10 @@ SELECT
 FROM
 	[BooleanTable] [r]
 WHERE
-	[r].[Value1] <> [r].[Value4] OR [r].[Value4] IS NULL
+	CASE
+		WHEN [r].[Value1] = [r].[Value4] THEN 1
+		ELSE 0
+	END <> @True
 
 BeforeExecute
 -- SqlServer.2008
@@ -618,6 +664,8 @@ FROM
 
 BeforeExecute
 -- SqlServer.2008
+DECLARE @False Bit -- Boolean
+SET     @False = 0
 
 SELECT
 	[r].[Id],
@@ -628,7 +676,10 @@ SELECT
 FROM
 	[BooleanTable] [r]
 WHERE
-	[r].[Value1] = [r].[Value4]
+	CASE
+		WHEN [r].[Value1] = [r].[Value4] THEN 1
+		ELSE 0
+	END <> @False
 
 BeforeExecute
 -- SqlServer.2008
@@ -699,6 +750,8 @@ FROM
 
 BeforeExecute
 -- SqlServer.2008
+DECLARE @True Bit -- Boolean
+SET     @True = 1
 
 SELECT
 	[r].[Id],
@@ -709,8 +762,11 @@ SELECT
 FROM
 	[BooleanTable] [r]
 WHERE
-	[r].[Value5] <> [r].[Value4] OR [r].[Value5] IS NULL AND [r].[Value4] IS NOT NULL OR
-	[r].[Value5] IS NOT NULL AND [r].[Value4] IS NULL
+	CASE
+		WHEN [r].[Value5] = [r].[Value4] OR [r].[Value5] IS NULL AND [r].[Value4] IS NULL
+			THEN 1
+		ELSE 0
+	END <> @True
 
 BeforeExecute
 -- SqlServer.2008
@@ -758,6 +814,8 @@ FROM
 
 BeforeExecute
 -- SqlServer.2008
+DECLARE @False Bit -- Boolean
+SET     @False = 0
 
 SELECT
 	[r].[Id],
@@ -768,7 +826,11 @@ SELECT
 FROM
 	[BooleanTable] [r]
 WHERE
-	[r].[Value5] = [r].[Value4] OR [r].[Value5] IS NULL AND [r].[Value4] IS NULL
+	CASE
+		WHEN [r].[Value5] = [r].[Value4] OR [r].[Value5] IS NULL AND [r].[Value4] IS NULL
+			THEN 1
+		ELSE 0
+	END <> @False
 
 BeforeExecute
 -- SqlServer.2008
@@ -840,6 +902,8 @@ FROM
 
 BeforeExecute
 -- SqlServer.2008
+DECLARE @True Bit -- Boolean
+SET     @True = 1
 
 SELECT
 	[r].[Id],
@@ -850,7 +914,10 @@ SELECT
 FROM
 	[BooleanTable] [r]
 WHERE
-	[r].[Value1] > [r].[Value2]
+	CASE
+		WHEN [r].[Value1] > [r].[Value2] THEN 1
+		ELSE 0
+	END = @True
 
 BeforeExecute
 -- SqlServer.2008
@@ -897,6 +964,8 @@ FROM
 
 BeforeExecute
 -- SqlServer.2008
+DECLARE @False Bit -- Boolean
+SET     @False = 0
 
 SELECT
 	[r].[Id],
@@ -907,7 +976,10 @@ SELECT
 FROM
 	[BooleanTable] [r]
 WHERE
-	[r].[Value1] <= [r].[Value2]
+	CASE
+		WHEN [r].[Value1] > [r].[Value2] THEN 1
+		ELSE 0
+	END = @False
 
 BeforeExecute
 -- SqlServer.2008
@@ -980,6 +1052,8 @@ FROM
 
 BeforeExecute
 -- SqlServer.2008
+DECLARE @True Bit -- Boolean
+SET     @True = 1
 
 SELECT
 	[r].[Id],
@@ -990,7 +1064,10 @@ SELECT
 FROM
 	[BooleanTable] [r]
 WHERE
-	[r].[Value1] > [r].[Value4]
+	CASE
+		WHEN [r].[Value1] > [r].[Value4] THEN 1
+		ELSE 0
+	END = @True
 
 BeforeExecute
 -- SqlServer.2008
@@ -1037,6 +1114,8 @@ FROM
 
 BeforeExecute
 -- SqlServer.2008
+DECLARE @False Bit -- Boolean
+SET     @False = 0
 
 SELECT
 	[r].[Id],
@@ -1047,7 +1126,10 @@ SELECT
 FROM
 	[BooleanTable] [r]
 WHERE
-	[r].[Value1] <= [r].[Value4] OR [r].[Value4] IS NULL
+	CASE
+		WHEN [r].[Value1] > [r].[Value4] THEN 1
+		ELSE 0
+	END = @False
 
 BeforeExecute
 -- SqlServer.2008
@@ -1120,6 +1202,8 @@ FROM
 
 BeforeExecute
 -- SqlServer.2008
+DECLARE @True Bit -- Boolean
+SET     @True = 1
 
 SELECT
 	[r].[Id],
@@ -1130,7 +1214,10 @@ SELECT
 FROM
 	[BooleanTable] [r]
 WHERE
-	[r].[Value5] > [r].[Value4]
+	CASE
+		WHEN [r].[Value5] > [r].[Value4] THEN 1
+		ELSE 0
+	END = @True
 
 BeforeExecute
 -- SqlServer.2008
@@ -1177,6 +1264,8 @@ FROM
 
 BeforeExecute
 -- SqlServer.2008
+DECLARE @False Bit -- Boolean
+SET     @False = 0
 
 SELECT
 	[r].[Id],
@@ -1187,8 +1276,10 @@ SELECT
 FROM
 	[BooleanTable] [r]
 WHERE
-	[r].[Value5] <= [r].[Value4] OR [r].[Value5] IS NULL OR
-	[r].[Value4] IS NULL
+	CASE
+		WHEN [r].[Value5] > [r].[Value4] THEN 1
+		ELSE 0
+	END = @False
 
 BeforeExecute
 -- SqlServer.2008
@@ -1261,6 +1352,8 @@ FROM
 
 BeforeExecute
 -- SqlServer.2008
+DECLARE @True Bit -- Boolean
+SET     @True = 1
 
 SELECT
 	[r].[Id],
@@ -1271,7 +1364,10 @@ SELECT
 FROM
 	[BooleanTable] [r]
 WHERE
-	[r].[Value1] <= [r].[Value2]
+	CASE
+		WHEN [r].[Value1] > [r].[Value2] THEN 1
+		ELSE 0
+	END <> @True
 
 BeforeExecute
 -- SqlServer.2008
@@ -1318,6 +1414,8 @@ FROM
 
 BeforeExecute
 -- SqlServer.2008
+DECLARE @False Bit -- Boolean
+SET     @False = 0
 
 SELECT
 	[r].[Id],
@@ -1328,7 +1426,10 @@ SELECT
 FROM
 	[BooleanTable] [r]
 WHERE
-	[r].[Value1] > [r].[Value2]
+	CASE
+		WHEN [r].[Value1] > [r].[Value2] THEN 1
+		ELSE 0
+	END <> @False
 
 BeforeExecute
 -- SqlServer.2008
@@ -1399,6 +1500,8 @@ FROM
 
 BeforeExecute
 -- SqlServer.2008
+DECLARE @True Bit -- Boolean
+SET     @True = 1
 
 SELECT
 	[r].[Id],
@@ -1409,7 +1512,10 @@ SELECT
 FROM
 	[BooleanTable] [r]
 WHERE
-	[r].[Value1] <= [r].[Value4] OR [r].[Value4] IS NULL
+	CASE
+		WHEN [r].[Value1] > [r].[Value4] THEN 1
+		ELSE 0
+	END <> @True
 
 BeforeExecute
 -- SqlServer.2008
@@ -1456,6 +1562,8 @@ FROM
 
 BeforeExecute
 -- SqlServer.2008
+DECLARE @False Bit -- Boolean
+SET     @False = 0
 
 SELECT
 	[r].[Id],
@@ -1466,7 +1574,10 @@ SELECT
 FROM
 	[BooleanTable] [r]
 WHERE
-	[r].[Value1] > [r].[Value4]
+	CASE
+		WHEN [r].[Value1] > [r].[Value4] THEN 1
+		ELSE 0
+	END <> @False
 
 BeforeExecute
 -- SqlServer.2008
@@ -1537,6 +1648,8 @@ FROM
 
 BeforeExecute
 -- SqlServer.2008
+DECLARE @True Bit -- Boolean
+SET     @True = 1
 
 SELECT
 	[r].[Id],
@@ -1547,8 +1660,10 @@ SELECT
 FROM
 	[BooleanTable] [r]
 WHERE
-	[r].[Value5] <= [r].[Value4] OR [r].[Value5] IS NULL OR
-	[r].[Value4] IS NULL
+	CASE
+		WHEN [r].[Value5] > [r].[Value4] THEN 1
+		ELSE 0
+	END <> @True
 
 BeforeExecute
 -- SqlServer.2008
@@ -1595,6 +1710,8 @@ FROM
 
 BeforeExecute
 -- SqlServer.2008
+DECLARE @False Bit -- Boolean
+SET     @False = 0
 
 SELECT
 	[r].[Id],
@@ -1605,7 +1722,10 @@ SELECT
 FROM
 	[BooleanTable] [r]
 WHERE
-	[r].[Value5] > [r].[Value4]
+	CASE
+		WHEN [r].[Value5] > [r].[Value4] THEN 1
+		ELSE 0
+	END <> @False
 
 BeforeExecute
 -- SqlServer.2008
@@ -1676,6 +1796,8 @@ FROM
 
 BeforeExecute
 -- SqlServer.2008
+DECLARE @True Bit -- Boolean
+SET     @True = 1
 
 SELECT
 	[r].[Id],
@@ -1686,7 +1808,10 @@ SELECT
 FROM
 	[BooleanTable] [r]
 WHERE
-	[r].[Value1] >= [r].[Value2]
+	CASE
+		WHEN [r].[Value1] >= [r].[Value2] THEN 1
+		ELSE 0
+	END = @True
 
 BeforeExecute
 -- SqlServer.2008
@@ -1733,6 +1858,8 @@ FROM
 
 BeforeExecute
 -- SqlServer.2008
+DECLARE @False Bit -- Boolean
+SET     @False = 0
 
 SELECT
 	[r].[Id],
@@ -1743,7 +1870,10 @@ SELECT
 FROM
 	[BooleanTable] [r]
 WHERE
-	[r].[Value1] < [r].[Value2]
+	CASE
+		WHEN [r].[Value1] >= [r].[Value2] THEN 1
+		ELSE 0
+	END = @False
 
 BeforeExecute
 -- SqlServer.2008
@@ -1816,6 +1946,8 @@ FROM
 
 BeforeExecute
 -- SqlServer.2008
+DECLARE @True Bit -- Boolean
+SET     @True = 1
 
 SELECT
 	[r].[Id],
@@ -1826,7 +1958,10 @@ SELECT
 FROM
 	[BooleanTable] [r]
 WHERE
-	[r].[Value1] >= [r].[Value4]
+	CASE
+		WHEN [r].[Value1] >= [r].[Value4] THEN 1
+		ELSE 0
+	END = @True
 
 BeforeExecute
 -- SqlServer.2008
@@ -1873,6 +2008,8 @@ FROM
 
 BeforeExecute
 -- SqlServer.2008
+DECLARE @False Bit -- Boolean
+SET     @False = 0
 
 SELECT
 	[r].[Id],
@@ -1883,7 +2020,10 @@ SELECT
 FROM
 	[BooleanTable] [r]
 WHERE
-	[r].[Value1] < [r].[Value4] OR [r].[Value4] IS NULL
+	CASE
+		WHEN [r].[Value1] >= [r].[Value4] THEN 1
+		ELSE 0
+	END = @False
 
 BeforeExecute
 -- SqlServer.2008
@@ -1956,6 +2096,8 @@ FROM
 
 BeforeExecute
 -- SqlServer.2008
+DECLARE @True Bit -- Boolean
+SET     @True = 1
 
 SELECT
 	[r].[Id],
@@ -1966,7 +2108,10 @@ SELECT
 FROM
 	[BooleanTable] [r]
 WHERE
-	[r].[Value5] >= [r].[Value4]
+	CASE
+		WHEN [r].[Value5] >= [r].[Value4] THEN 1
+		ELSE 0
+	END = @True
 
 BeforeExecute
 -- SqlServer.2008
@@ -2013,6 +2158,8 @@ FROM
 
 BeforeExecute
 -- SqlServer.2008
+DECLARE @False Bit -- Boolean
+SET     @False = 0
 
 SELECT
 	[r].[Id],
@@ -2023,8 +2170,10 @@ SELECT
 FROM
 	[BooleanTable] [r]
 WHERE
-	[r].[Value5] < [r].[Value4] OR [r].[Value5] IS NULL OR
-	[r].[Value4] IS NULL
+	CASE
+		WHEN [r].[Value5] >= [r].[Value4] THEN 1
+		ELSE 0
+	END = @False
 
 BeforeExecute
 -- SqlServer.2008
@@ -2097,6 +2246,8 @@ FROM
 
 BeforeExecute
 -- SqlServer.2008
+DECLARE @True Bit -- Boolean
+SET     @True = 1
 
 SELECT
 	[r].[Id],
@@ -2107,7 +2258,10 @@ SELECT
 FROM
 	[BooleanTable] [r]
 WHERE
-	[r].[Value1] < [r].[Value2]
+	CASE
+		WHEN [r].[Value1] >= [r].[Value2] THEN 1
+		ELSE 0
+	END <> @True
 
 BeforeExecute
 -- SqlServer.2008
@@ -2154,6 +2308,8 @@ FROM
 
 BeforeExecute
 -- SqlServer.2008
+DECLARE @False Bit -- Boolean
+SET     @False = 0
 
 SELECT
 	[r].[Id],
@@ -2164,7 +2320,10 @@ SELECT
 FROM
 	[BooleanTable] [r]
 WHERE
-	[r].[Value1] >= [r].[Value2]
+	CASE
+		WHEN [r].[Value1] >= [r].[Value2] THEN 1
+		ELSE 0
+	END <> @False
 
 BeforeExecute
 -- SqlServer.2008
@@ -2235,6 +2394,8 @@ FROM
 
 BeforeExecute
 -- SqlServer.2008
+DECLARE @True Bit -- Boolean
+SET     @True = 1
 
 SELECT
 	[r].[Id],
@@ -2245,7 +2406,10 @@ SELECT
 FROM
 	[BooleanTable] [r]
 WHERE
-	[r].[Value1] < [r].[Value4] OR [r].[Value4] IS NULL
+	CASE
+		WHEN [r].[Value1] >= [r].[Value4] THEN 1
+		ELSE 0
+	END <> @True
 
 BeforeExecute
 -- SqlServer.2008
@@ -2292,6 +2456,8 @@ FROM
 
 BeforeExecute
 -- SqlServer.2008
+DECLARE @False Bit -- Boolean
+SET     @False = 0
 
 SELECT
 	[r].[Id],
@@ -2302,7 +2468,10 @@ SELECT
 FROM
 	[BooleanTable] [r]
 WHERE
-	[r].[Value1] >= [r].[Value4]
+	CASE
+		WHEN [r].[Value1] >= [r].[Value4] THEN 1
+		ELSE 0
+	END <> @False
 
 BeforeExecute
 -- SqlServer.2008
@@ -2373,6 +2542,8 @@ FROM
 
 BeforeExecute
 -- SqlServer.2008
+DECLARE @True Bit -- Boolean
+SET     @True = 1
 
 SELECT
 	[r].[Id],
@@ -2383,8 +2554,10 @@ SELECT
 FROM
 	[BooleanTable] [r]
 WHERE
-	[r].[Value5] < [r].[Value4] OR [r].[Value5] IS NULL OR
-	[r].[Value4] IS NULL
+	CASE
+		WHEN [r].[Value5] >= [r].[Value4] THEN 1
+		ELSE 0
+	END <> @True
 
 BeforeExecute
 -- SqlServer.2008
@@ -2431,6 +2604,8 @@ FROM
 
 BeforeExecute
 -- SqlServer.2008
+DECLARE @False Bit -- Boolean
+SET     @False = 0
 
 SELECT
 	[r].[Id],
@@ -2441,7 +2616,10 @@ SELECT
 FROM
 	[BooleanTable] [r]
 WHERE
-	[r].[Value5] >= [r].[Value4]
+	CASE
+		WHEN [r].[Value5] >= [r].[Value4] THEN 1
+		ELSE 0
+	END <> @False
 
 BeforeExecute
 -- SqlServer.2008
@@ -2512,6 +2690,8 @@ FROM
 
 BeforeExecute
 -- SqlServer.2008
+DECLARE @True Bit -- Boolean
+SET     @True = 1
 
 SELECT
 	[r].[Id],
@@ -2522,7 +2702,10 @@ SELECT
 FROM
 	[BooleanTable] [r]
 WHERE
-	[r].[Value1] < [r].[Value2]
+	CASE
+		WHEN [r].[Value1] < [r].[Value2] THEN 1
+		ELSE 0
+	END = @True
 
 BeforeExecute
 -- SqlServer.2008
@@ -2569,6 +2752,8 @@ FROM
 
 BeforeExecute
 -- SqlServer.2008
+DECLARE @False Bit -- Boolean
+SET     @False = 0
 
 SELECT
 	[r].[Id],
@@ -2579,7 +2764,10 @@ SELECT
 FROM
 	[BooleanTable] [r]
 WHERE
-	[r].[Value1] >= [r].[Value2]
+	CASE
+		WHEN [r].[Value1] < [r].[Value2] THEN 1
+		ELSE 0
+	END = @False
 
 BeforeExecute
 -- SqlServer.2008
@@ -2652,6 +2840,8 @@ FROM
 
 BeforeExecute
 -- SqlServer.2008
+DECLARE @True Bit -- Boolean
+SET     @True = 1
 
 SELECT
 	[r].[Id],
@@ -2662,7 +2852,10 @@ SELECT
 FROM
 	[BooleanTable] [r]
 WHERE
-	[r].[Value1] < [r].[Value4]
+	CASE
+		WHEN [r].[Value1] < [r].[Value4] THEN 1
+		ELSE 0
+	END = @True
 
 BeforeExecute
 -- SqlServer.2008
@@ -2709,6 +2902,8 @@ FROM
 
 BeforeExecute
 -- SqlServer.2008
+DECLARE @False Bit -- Boolean
+SET     @False = 0
 
 SELECT
 	[r].[Id],
@@ -2719,7 +2914,10 @@ SELECT
 FROM
 	[BooleanTable] [r]
 WHERE
-	[r].[Value1] >= [r].[Value4] OR [r].[Value4] IS NULL
+	CASE
+		WHEN [r].[Value1] < [r].[Value4] THEN 1
+		ELSE 0
+	END = @False
 
 BeforeExecute
 -- SqlServer.2008
@@ -2792,6 +2990,8 @@ FROM
 
 BeforeExecute
 -- SqlServer.2008
+DECLARE @True Bit -- Boolean
+SET     @True = 1
 
 SELECT
 	[r].[Id],
@@ -2802,7 +3002,10 @@ SELECT
 FROM
 	[BooleanTable] [r]
 WHERE
-	[r].[Value5] < [r].[Value4]
+	CASE
+		WHEN [r].[Value5] < [r].[Value4] THEN 1
+		ELSE 0
+	END = @True
 
 BeforeExecute
 -- SqlServer.2008
@@ -2849,6 +3052,8 @@ FROM
 
 BeforeExecute
 -- SqlServer.2008
+DECLARE @False Bit -- Boolean
+SET     @False = 0
 
 SELECT
 	[r].[Id],
@@ -2859,8 +3064,10 @@ SELECT
 FROM
 	[BooleanTable] [r]
 WHERE
-	[r].[Value5] >= [r].[Value4] OR [r].[Value5] IS NULL OR
-	[r].[Value4] IS NULL
+	CASE
+		WHEN [r].[Value5] < [r].[Value4] THEN 1
+		ELSE 0
+	END = @False
 
 BeforeExecute
 -- SqlServer.2008
@@ -2933,6 +3140,8 @@ FROM
 
 BeforeExecute
 -- SqlServer.2008
+DECLARE @True Bit -- Boolean
+SET     @True = 1
 
 SELECT
 	[r].[Id],
@@ -2943,7 +3152,10 @@ SELECT
 FROM
 	[BooleanTable] [r]
 WHERE
-	[r].[Value1] >= [r].[Value2]
+	CASE
+		WHEN [r].[Value1] < [r].[Value2] THEN 1
+		ELSE 0
+	END <> @True
 
 BeforeExecute
 -- SqlServer.2008
@@ -2990,6 +3202,8 @@ FROM
 
 BeforeExecute
 -- SqlServer.2008
+DECLARE @False Bit -- Boolean
+SET     @False = 0
 
 SELECT
 	[r].[Id],
@@ -3000,7 +3214,10 @@ SELECT
 FROM
 	[BooleanTable] [r]
 WHERE
-	[r].[Value1] < [r].[Value2]
+	CASE
+		WHEN [r].[Value1] < [r].[Value2] THEN 1
+		ELSE 0
+	END <> @False
 
 BeforeExecute
 -- SqlServer.2008
@@ -3071,6 +3288,8 @@ FROM
 
 BeforeExecute
 -- SqlServer.2008
+DECLARE @True Bit -- Boolean
+SET     @True = 1
 
 SELECT
 	[r].[Id],
@@ -3081,7 +3300,10 @@ SELECT
 FROM
 	[BooleanTable] [r]
 WHERE
-	[r].[Value1] >= [r].[Value4] OR [r].[Value4] IS NULL
+	CASE
+		WHEN [r].[Value1] < [r].[Value4] THEN 1
+		ELSE 0
+	END <> @True
 
 BeforeExecute
 -- SqlServer.2008
@@ -3128,6 +3350,8 @@ FROM
 
 BeforeExecute
 -- SqlServer.2008
+DECLARE @False Bit -- Boolean
+SET     @False = 0
 
 SELECT
 	[r].[Id],
@@ -3138,7 +3362,10 @@ SELECT
 FROM
 	[BooleanTable] [r]
 WHERE
-	[r].[Value1] < [r].[Value4]
+	CASE
+		WHEN [r].[Value1] < [r].[Value4] THEN 1
+		ELSE 0
+	END <> @False
 
 BeforeExecute
 -- SqlServer.2008
@@ -3209,6 +3436,8 @@ FROM
 
 BeforeExecute
 -- SqlServer.2008
+DECLARE @True Bit -- Boolean
+SET     @True = 1
 
 SELECT
 	[r].[Id],
@@ -3219,8 +3448,10 @@ SELECT
 FROM
 	[BooleanTable] [r]
 WHERE
-	[r].[Value5] >= [r].[Value4] OR [r].[Value5] IS NULL OR
-	[r].[Value4] IS NULL
+	CASE
+		WHEN [r].[Value5] < [r].[Value4] THEN 1
+		ELSE 0
+	END <> @True
 
 BeforeExecute
 -- SqlServer.2008
@@ -3267,6 +3498,8 @@ FROM
 
 BeforeExecute
 -- SqlServer.2008
+DECLARE @False Bit -- Boolean
+SET     @False = 0
 
 SELECT
 	[r].[Id],
@@ -3277,7 +3510,10 @@ SELECT
 FROM
 	[BooleanTable] [r]
 WHERE
-	[r].[Value5] < [r].[Value4]
+	CASE
+		WHEN [r].[Value5] < [r].[Value4] THEN 1
+		ELSE 0
+	END <> @False
 
 BeforeExecute
 -- SqlServer.2008
@@ -3348,6 +3584,8 @@ FROM
 
 BeforeExecute
 -- SqlServer.2008
+DECLARE @True Bit -- Boolean
+SET     @True = 1
 
 SELECT
 	[r].[Id],
@@ -3358,7 +3596,10 @@ SELECT
 FROM
 	[BooleanTable] [r]
 WHERE
-	[r].[Value1] <= [r].[Value2]
+	CASE
+		WHEN [r].[Value1] <= [r].[Value2] THEN 1
+		ELSE 0
+	END = @True
 
 BeforeExecute
 -- SqlServer.2008
@@ -3405,6 +3646,8 @@ FROM
 
 BeforeExecute
 -- SqlServer.2008
+DECLARE @False Bit -- Boolean
+SET     @False = 0
 
 SELECT
 	[r].[Id],
@@ -3415,7 +3658,10 @@ SELECT
 FROM
 	[BooleanTable] [r]
 WHERE
-	[r].[Value1] > [r].[Value2]
+	CASE
+		WHEN [r].[Value1] <= [r].[Value2] THEN 1
+		ELSE 0
+	END = @False
 
 BeforeExecute
 -- SqlServer.2008
@@ -3488,6 +3734,8 @@ FROM
 
 BeforeExecute
 -- SqlServer.2008
+DECLARE @True Bit -- Boolean
+SET     @True = 1
 
 SELECT
 	[r].[Id],
@@ -3498,7 +3746,10 @@ SELECT
 FROM
 	[BooleanTable] [r]
 WHERE
-	[r].[Value1] <= [r].[Value4]
+	CASE
+		WHEN [r].[Value1] <= [r].[Value4] THEN 1
+		ELSE 0
+	END = @True
 
 BeforeExecute
 -- SqlServer.2008
@@ -3545,6 +3796,8 @@ FROM
 
 BeforeExecute
 -- SqlServer.2008
+DECLARE @False Bit -- Boolean
+SET     @False = 0
 
 SELECT
 	[r].[Id],
@@ -3555,7 +3808,10 @@ SELECT
 FROM
 	[BooleanTable] [r]
 WHERE
-	[r].[Value1] > [r].[Value4] OR [r].[Value4] IS NULL
+	CASE
+		WHEN [r].[Value1] <= [r].[Value4] THEN 1
+		ELSE 0
+	END = @False
 
 BeforeExecute
 -- SqlServer.2008
@@ -3628,6 +3884,8 @@ FROM
 
 BeforeExecute
 -- SqlServer.2008
+DECLARE @True Bit -- Boolean
+SET     @True = 1
 
 SELECT
 	[r].[Id],
@@ -3638,7 +3896,10 @@ SELECT
 FROM
 	[BooleanTable] [r]
 WHERE
-	[r].[Value5] <= [r].[Value4]
+	CASE
+		WHEN [r].[Value5] <= [r].[Value4] THEN 1
+		ELSE 0
+	END = @True
 
 BeforeExecute
 -- SqlServer.2008
@@ -3685,6 +3946,8 @@ FROM
 
 BeforeExecute
 -- SqlServer.2008
+DECLARE @False Bit -- Boolean
+SET     @False = 0
 
 SELECT
 	[r].[Id],
@@ -3695,8 +3958,10 @@ SELECT
 FROM
 	[BooleanTable] [r]
 WHERE
-	[r].[Value5] > [r].[Value4] OR [r].[Value5] IS NULL OR
-	[r].[Value4] IS NULL
+	CASE
+		WHEN [r].[Value5] <= [r].[Value4] THEN 1
+		ELSE 0
+	END = @False
 
 BeforeExecute
 -- SqlServer.2008
@@ -3769,6 +4034,8 @@ FROM
 
 BeforeExecute
 -- SqlServer.2008
+DECLARE @True Bit -- Boolean
+SET     @True = 1
 
 SELECT
 	[r].[Id],
@@ -3779,7 +4046,10 @@ SELECT
 FROM
 	[BooleanTable] [r]
 WHERE
-	[r].[Value1] > [r].[Value2]
+	CASE
+		WHEN [r].[Value1] <= [r].[Value2] THEN 1
+		ELSE 0
+	END <> @True
 
 BeforeExecute
 -- SqlServer.2008
@@ -3826,6 +4096,8 @@ FROM
 
 BeforeExecute
 -- SqlServer.2008
+DECLARE @False Bit -- Boolean
+SET     @False = 0
 
 SELECT
 	[r].[Id],
@@ -3836,7 +4108,10 @@ SELECT
 FROM
 	[BooleanTable] [r]
 WHERE
-	[r].[Value1] <= [r].[Value2]
+	CASE
+		WHEN [r].[Value1] <= [r].[Value2] THEN 1
+		ELSE 0
+	END <> @False
 
 BeforeExecute
 -- SqlServer.2008
@@ -3907,6 +4182,8 @@ FROM
 
 BeforeExecute
 -- SqlServer.2008
+DECLARE @True Bit -- Boolean
+SET     @True = 1
 
 SELECT
 	[r].[Id],
@@ -3917,7 +4194,10 @@ SELECT
 FROM
 	[BooleanTable] [r]
 WHERE
-	[r].[Value1] > [r].[Value4] OR [r].[Value4] IS NULL
+	CASE
+		WHEN [r].[Value1] <= [r].[Value4] THEN 1
+		ELSE 0
+	END <> @True
 
 BeforeExecute
 -- SqlServer.2008
@@ -3964,6 +4244,8 @@ FROM
 
 BeforeExecute
 -- SqlServer.2008
+DECLARE @False Bit -- Boolean
+SET     @False = 0
 
 SELECT
 	[r].[Id],
@@ -3974,7 +4256,10 @@ SELECT
 FROM
 	[BooleanTable] [r]
 WHERE
-	[r].[Value1] <= [r].[Value4]
+	CASE
+		WHEN [r].[Value1] <= [r].[Value4] THEN 1
+		ELSE 0
+	END <> @False
 
 BeforeExecute
 -- SqlServer.2008
@@ -4045,6 +4330,8 @@ FROM
 
 BeforeExecute
 -- SqlServer.2008
+DECLARE @True Bit -- Boolean
+SET     @True = 1
 
 SELECT
 	[r].[Id],
@@ -4055,8 +4342,10 @@ SELECT
 FROM
 	[BooleanTable] [r]
 WHERE
-	[r].[Value5] > [r].[Value4] OR [r].[Value5] IS NULL OR
-	[r].[Value4] IS NULL
+	CASE
+		WHEN [r].[Value5] <= [r].[Value4] THEN 1
+		ELSE 0
+	END <> @True
 
 BeforeExecute
 -- SqlServer.2008
@@ -4103,6 +4392,8 @@ FROM
 
 BeforeExecute
 -- SqlServer.2008
+DECLARE @False Bit -- Boolean
+SET     @False = 0
 
 SELECT
 	[r].[Id],
@@ -4113,7 +4404,10 @@ SELECT
 FROM
 	[BooleanTable] [r]
 WHERE
-	[r].[Value5] <= [r].[Value4]
+	CASE
+		WHEN [r].[Value5] <= [r].[Value4] THEN 1
+		ELSE 0
+	END <> @False
 
 BeforeExecute
 -- SqlServer.2008
