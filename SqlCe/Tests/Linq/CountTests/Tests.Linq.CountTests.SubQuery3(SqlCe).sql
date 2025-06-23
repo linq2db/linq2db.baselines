@@ -22,7 +22,7 @@ FROM
 			FROM
 				[Child] [c_1]
 			WHERE
-				[p].[ParentID] = [c_1].[ParentID] AND [c_1].[ParentID] = [p].[ParentID]
+				[p].[ParentID] = [c_1].[ParentID]
 		) [t2]
 WHERE
 	[p].[ParentID] <> 5
