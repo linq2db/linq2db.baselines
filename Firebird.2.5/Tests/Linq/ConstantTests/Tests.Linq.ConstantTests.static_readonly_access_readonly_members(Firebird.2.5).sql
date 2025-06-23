@@ -9,7 +9,7 @@ SELECT
 FROM
 	"TestConstantsData" "e"
 WHERE
-	"e"."Id" = 1 AND "e"."Id" = 1
+	"e"."Id" = 1
 
 BeforeExecute
 -- Firebird.2.5 Firebird
@@ -33,7 +33,7 @@ SELECT
 FROM
 	"TestConstantsData" "e"
 WHERE
-	"e"."Id" = 1 AND "e"."Id" = 1
+	"e"."Id" = 1
 
 BeforeExecute
 -- Firebird.2.5 Firebird
