@@ -9,5 +9,5 @@ FROM
 	[MasterClass] [m_1]
 		INNER JOIN [MasterClass] [d] ON [d].[Id] = [m_1].[Id]
 WHERE
-	NOT [m_1].[IsDeleted] AND NOT [d].[IsDeleted]
+	NOT [m_1].[IsDeleted]
 
