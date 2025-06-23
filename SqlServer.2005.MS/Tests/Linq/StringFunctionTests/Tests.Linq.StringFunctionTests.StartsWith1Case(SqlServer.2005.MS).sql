@@ -28,6 +28,6 @@ SELECT
 FROM
 	[Person] [p]
 WHERE
-	([p].[FirstName] NOT LIKE N'Jo%' ESCAPE N'~' OR Convert(VarBinary(8000), LEFT([p].[FirstName], LEN(N'Jo'))) <> Convert(VarBinary(8000), N'Jo')) AND
+	([p].[FirstName] NOT LIKE N'Jo%' ESCAPE N'~' OR NOT Convert(VarBinary(8000), LEFT([p].[FirstName], LEN(N'Jo'))) = Convert(VarBinary(8000), N'Jo')) AND
 	[p].[PersonID] = 1
 
