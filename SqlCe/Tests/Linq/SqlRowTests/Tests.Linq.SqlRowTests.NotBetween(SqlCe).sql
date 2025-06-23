@@ -26,7 +26,7 @@ SELECT
 FROM
 	[Ints] [i]
 WHERE
-	[i].[Two] < [i].[Three]
+	NOT [i].[Two] >= [i].[Three]
 
 BeforeExecute
 -- SqlCe

@@ -35,7 +35,7 @@ SELECT
 FROM
 	[Person] [p]
 WHERE
-	Convert(VARBINARY(8000), SUBSTRING([p].[FirstName], 1, @nameToCheck)) <> Convert(VARBINARY(8000), @nameToCheck_1) AND
+	NOT Convert(VARBINARY(8000), SUBSTRING([p].[FirstName], 1, @nameToCheck)) = Convert(VARBINARY(8000), @nameToCheck_1) AND
 	[p].[PersonID] = 1
 
 BeforeExecute
@@ -65,6 +65,6 @@ SELECT
 FROM
 	[Person] [p]
 WHERE
-	Convert(VARBINARY(8000), SUBSTRING([p].[FirstName], 1, @nameToCheck)) <> Convert(VARBINARY(8000), @nameToCheck_1) AND
+	NOT Convert(VARBINARY(8000), SUBSTRING([p].[FirstName], 1, @nameToCheck)) = Convert(VARBINARY(8000), @nameToCheck_1) AND
 	[p].[PersonID] = 1
 
