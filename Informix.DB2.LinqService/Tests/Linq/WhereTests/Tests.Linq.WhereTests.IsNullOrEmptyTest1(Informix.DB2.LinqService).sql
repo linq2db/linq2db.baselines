@@ -6,7 +6,7 @@ SELECT
 FROM
 	Person nm
 WHERE
-	NOT (nm.MiddleName IS NULL OR CHAR_LENGTH(nm.MiddleName || '.') - 1 = 0)
+	NOT (nm.MiddleName IS NULL OR CHAR_LENGTH(nm.MiddleName || '.') = 1)
 
 BeforeExecute
 -- Informix.DB2 Informix
