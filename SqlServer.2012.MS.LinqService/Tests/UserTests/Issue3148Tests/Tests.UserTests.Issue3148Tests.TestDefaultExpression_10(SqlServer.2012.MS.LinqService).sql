@@ -18,7 +18,6 @@ FROM
 				[x].[ParentID] = [a_GrandChildren].[ParentID] AND [x].[ChildID] = [a_GrandChildren].[ChildID]
 		) [t1]
 WHERE
-	([t1].[ParentID] = [t1].[ParentID] OR [t1].[ParentID] IS NULL AND [t1].[ParentID] IS NULL OR [t1].[ChildID] = [t1].[ChildID] OR [t1].[ChildID] IS NULL AND [t1].[ChildID] IS NULL OR [t1].[GrandChildID] = [t1].[GrandChildID] OR [t1].[GrandChildID] IS NULL AND [t1].[GrandChildID] IS NULL) AND
 	IIF([x].[ParentID] = (
 		SELECT TOP (1)
 			[a_Children].[ChildID]
@@ -48,7 +47,6 @@ FROM
 				[x].[ParentID] = [a_GrandChildren].[ParentID] AND [x].[ChildID] = [a_GrandChildren].[ChildID]
 		) [t1]
 WHERE
-	([t1].[ParentID] = [t1].[ParentID] OR [t1].[ParentID] IS NULL AND [t1].[ParentID] IS NULL OR [t1].[ChildID] = [t1].[ChildID] OR [t1].[ChildID] IS NULL AND [t1].[ChildID] IS NULL OR [t1].[GrandChildID] = [t1].[GrandChildID] OR [t1].[GrandChildID] IS NULL AND [t1].[GrandChildID] IS NULL) AND
 	IIF([x].[ParentID] = (
 		SELECT TOP (1)
 			[a_Children].[ChildID]
