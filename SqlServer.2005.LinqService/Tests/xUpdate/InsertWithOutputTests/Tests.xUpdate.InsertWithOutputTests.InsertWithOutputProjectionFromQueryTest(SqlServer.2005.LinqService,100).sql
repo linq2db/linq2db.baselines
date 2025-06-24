@@ -11,11 +11,11 @@ INSERT INTO [DestinationTable]
 )
 OUTPUT
 	INSERTED.[Id] + 1,
-	INSERTED.[ValueStr] + CAST(1 AS VarChar(11))
+	INSERTED.[ValueStr] + CAST(1 AS NVarChar(11))
 SELECT
 	[s].[Id] + 100 + @param,
 	[s].[Value] + 100,
-	[s].[ValueStr] + CAST(100 AS VarChar(11))
+	[s].[ValueStr] + CAST(100 AS NVarChar(11))
 FROM
 	[TableWithData] [s]
 WHERE
@@ -36,7 +36,7 @@ BeforeExecute
 
 SELECT
 	[t].[Id] + 1,
-	[t].[ValueStr] + CAST(1 AS VarChar(11))
+	[t].[ValueStr] + CAST(1 AS NVarChar(11))
 FROM
 	[DestinationTable] [t]
 
