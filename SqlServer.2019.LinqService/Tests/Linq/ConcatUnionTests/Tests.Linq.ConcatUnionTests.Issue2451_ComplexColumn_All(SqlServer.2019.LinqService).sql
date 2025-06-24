@@ -7,7 +7,7 @@ FROM
 	[Person] [p]
 UNION ALL
 SELECT
-	[p_1].[FirstName] + '/' + [p_1].[LastName]
+	[p_1].[FirstName] + N'/' + [p_1].[LastName]
 FROM
 	[Person] [p_1]
 
@@ -15,7 +15,7 @@ BeforeExecute
 -- SqlServer.2019
 
 SELECT
-	[p].[FirstName] + '/' + [p].[LastName]
+	[p].[FirstName] + N'/' + [p].[LastName]
 FROM
 	[Person] [p]
 UNION ALL
