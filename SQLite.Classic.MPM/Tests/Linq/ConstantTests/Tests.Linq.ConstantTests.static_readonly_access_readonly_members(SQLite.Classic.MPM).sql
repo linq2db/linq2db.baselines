@@ -9,7 +9,7 @@ SELECT
 FROM
 	[TestConstantsData] [e]
 WHERE
-	[e].[Id] = 1 AND [e].[Id] = 1
+	[e].[Id] = 1
 
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
@@ -33,7 +33,7 @@ SELECT
 FROM
 	[TestConstantsData] [e]
 WHERE
-	[e].[Id] = 1 AND [e].[Id] = 1
+	[e].[Id] = 1
 
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
