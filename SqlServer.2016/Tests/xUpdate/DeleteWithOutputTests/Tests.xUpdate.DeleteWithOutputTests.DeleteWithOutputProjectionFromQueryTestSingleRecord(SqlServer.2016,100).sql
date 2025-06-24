@@ -16,7 +16,7 @@ BeforeExecute
 DELETE [s]
 OUTPUT
 	DELETED.[Id] + 1,
-	DELETED.[ValueStr] + CAST(1 AS VarChar(11)),
+	DELETED.[ValueStr] + CAST(1 AS NVarChar(11)),
 	IIF(DELETED.[ValueStr] IS NOT NULL, 1, 0)
 FROM
 	[TableWithData] [s]
