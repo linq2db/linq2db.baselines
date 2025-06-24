@@ -1,11 +1,6 @@
 ﻿BeforeExecute
 -- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
 
-ALTER SEQUENCE sequencetestseq RESTART WITH 1
-
-BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
-
 DELETE FROM
 	"SequenceTest3" t1
 WHERE

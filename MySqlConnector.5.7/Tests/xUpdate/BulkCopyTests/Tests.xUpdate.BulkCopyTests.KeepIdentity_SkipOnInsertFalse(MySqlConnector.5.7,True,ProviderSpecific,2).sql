@@ -1,10 +1,5 @@
 ﻿BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-
-ALTER TABLE `AllTypes` AUTO_INCREMENT = 3
-
-BeforeExecute
--- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 DECLARE @Value Int32
 SET     @Value = 0
 

@@ -1,10 +1,5 @@
 ﻿BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-
-UPDATE sqlite_sequence SET seq = 2 WHERE name = 'AllTypes'
-
-BeforeExecute
--- SQLite.Classic.MPM SQLite.Classic SQLite
 DECLARE @Value  -- Int32
 SET     @Value = 0
 

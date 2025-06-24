@@ -1,9 +1,4 @@
 ﻿BeforeExecute
--- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
-ALTER TABLE Person AUTO_INCREMENT = 5
-
-BeforeExecute
 BeginTransaction
 BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80

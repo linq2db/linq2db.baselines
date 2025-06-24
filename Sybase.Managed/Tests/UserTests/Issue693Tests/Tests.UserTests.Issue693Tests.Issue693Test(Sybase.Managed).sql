@@ -1,10 +1,5 @@
 ﻿BeforeExecute
 -- Sybase.Managed Sybase
-
-sp_chgattribute Person, 'identity_burn_max', 0, '4'
-
-BeforeExecute
--- Sybase.Managed Sybase
 DECLARE @Gender UniChar(1) -- StringFixedLength
 SET     @Gender = 'M'
 DECLARE @FirstName UniVarChar(1) -- String

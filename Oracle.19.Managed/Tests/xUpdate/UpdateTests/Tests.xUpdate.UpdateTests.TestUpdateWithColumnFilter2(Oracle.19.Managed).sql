@@ -1,15 +1,5 @@
 ﻿BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12
-
-DROP SEQUENCE "PersonSeq"
-
-BeforeExecute
--- Oracle.19.Managed Oracle.Managed Oracle12
-
-CREATE SEQUENCE "PersonSeq" MINVALUE 1 START WITH 5
-
-BeforeExecute
--- Oracle.19.Managed Oracle.Managed Oracle12
 DECLARE @FirstName Varchar2(18) -- String
 SET     @FirstName = 'UpdateColumnFilter'
 DECLARE @LastName Varchar2(8) -- String

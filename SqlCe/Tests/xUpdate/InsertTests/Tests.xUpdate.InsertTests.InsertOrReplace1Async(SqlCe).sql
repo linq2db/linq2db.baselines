@@ -1,10 +1,5 @@
 ﻿BeforeExecute
 -- SqlCe
-
-ALTER TABLE Person ALTER COLUMN PersonID IDENTITY(5,1)
-
-BeforeExecute
--- SqlCe
 DECLARE @FirstName NVarChar(4) -- String
 SET     @FirstName = 'John'
 DECLARE @LastName NVarChar(7) -- String

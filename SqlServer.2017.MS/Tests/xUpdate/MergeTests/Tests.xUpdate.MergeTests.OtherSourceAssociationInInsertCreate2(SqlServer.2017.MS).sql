@@ -1,9 +1,4 @@
 ﻿BeforeExecute
--- SqlServer.2017.MS SqlServer.2017
-
-DBCC CHECKIDENT ('Person', RESEED, 4)
-
-BeforeExecute
 BeginTransaction
 BeforeExecute
 -- SqlServer.2017.MS SqlServer.2017

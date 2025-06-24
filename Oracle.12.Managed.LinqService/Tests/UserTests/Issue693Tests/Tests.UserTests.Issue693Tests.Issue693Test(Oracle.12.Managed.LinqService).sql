@@ -1,15 +1,5 @@
 ﻿BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12
-
-DROP SEQUENCE "PersonSeq"
-
-BeforeExecute
--- Oracle.12.Managed Oracle.Managed Oracle12
-
-CREATE SEQUENCE "PersonSeq" MINVALUE 1 START WITH 5
-
-BeforeExecute
--- Oracle.12.Managed Oracle.Managed Oracle12
 DECLARE @Gender Varchar2(1) -- String
 SET     @Gender = 'M'
 DECLARE @FirstName Varchar2(1) -- String

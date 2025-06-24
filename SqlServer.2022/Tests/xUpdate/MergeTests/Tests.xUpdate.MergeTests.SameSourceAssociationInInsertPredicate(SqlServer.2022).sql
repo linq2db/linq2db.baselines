@@ -1,9 +1,4 @@
 ﻿BeforeExecute
--- SqlServer.2022
-
-DBCC CHECKIDENT ('Person', RESEED, 4)
-
-BeforeExecute
 BeginTransaction
 BeforeExecute
 -- SqlServer.2022

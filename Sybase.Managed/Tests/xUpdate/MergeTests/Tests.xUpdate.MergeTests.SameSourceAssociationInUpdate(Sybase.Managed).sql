@@ -1,9 +1,4 @@
 ﻿BeforeExecute
--- Sybase.Managed Sybase
-
-sp_chgattribute Person, 'identity_burn_max', 0, '4'
-
-BeforeExecute
 BeginTransaction
 BeforeExecute
 -- Sybase.Managed Sybase

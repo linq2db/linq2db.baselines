@@ -1,10 +1,5 @@
 ﻿BeforeExecute
 -- SqlServer.Contained SqlServer.2019
-
-DBCC CHECKIDENT ('Person', RESEED, 4)
-
-BeforeExecute
--- SqlServer.Contained SqlServer.2019
 DECLARE @FirstName NVarChar(4000) -- String
 SET     @FirstName = N'UpdateColumnFilterUpdated'
 DECLARE @LastName NVarChar(4000) -- String

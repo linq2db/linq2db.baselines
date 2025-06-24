@@ -1,10 +1,5 @@
 ﻿BeforeExecute
 -- DB2 DB2.LUW DB2LUW
-
-ALTER TABLE "Person" ALTER COLUMN "PersonID" RESTART WITH 5
-
-BeforeExecute
--- DB2 DB2.LUW DB2LUW
 DECLARE @FirstName VarChar(3) -- String
 SET     @FirstName = '123'
 DECLARE @LastName VarChar(3) -- String

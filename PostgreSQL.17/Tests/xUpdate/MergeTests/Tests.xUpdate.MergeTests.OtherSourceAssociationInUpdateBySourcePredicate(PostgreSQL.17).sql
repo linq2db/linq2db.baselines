@@ -1,9 +1,4 @@
 ﻿BeforeExecute
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
-
-ALTER SEQUENCE "Person_PersonID_seq" RESTART WITH 5
-
-BeforeExecute
 BeginTransaction
 BeforeExecute
 -- PostgreSQL.17 PostgreSQL.15 PostgreSQL

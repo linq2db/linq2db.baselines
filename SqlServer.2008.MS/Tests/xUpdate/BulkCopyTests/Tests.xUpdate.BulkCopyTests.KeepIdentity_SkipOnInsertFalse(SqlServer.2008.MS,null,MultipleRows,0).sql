@@ -1,10 +1,5 @@
 ﻿BeforeExecute
 -- SqlServer.2008.MS SqlServer.2008
-
-DBCC CHECKIDENT ('AllTypes', RESEED, 2)
-
-BeforeExecute
--- SqlServer.2008.MS SqlServer.2008
 DECLARE @Value Int -- Int32
 SET     @Value = 0
 

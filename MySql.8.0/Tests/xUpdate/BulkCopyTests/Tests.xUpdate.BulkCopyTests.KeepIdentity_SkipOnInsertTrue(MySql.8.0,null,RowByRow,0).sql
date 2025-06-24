@@ -1,10 +1,5 @@
 ﻿BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
-ALTER TABLE `AllTypes` AUTO_INCREMENT = 3
-
-BeforeExecute
--- MySql.8.0 MySql.8.0.MySql.Data MySql80
 DECLARE @Value Int32
 SET     @Value = 0
 

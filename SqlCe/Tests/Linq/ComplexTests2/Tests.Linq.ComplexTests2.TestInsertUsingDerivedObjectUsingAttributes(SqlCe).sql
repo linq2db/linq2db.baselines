@@ -1,10 +1,5 @@
 ﻿BeforeExecute
 -- SqlCe
-
-ALTER TABLE Person ALTER COLUMN PersonID IDENTITY(5,1)
-
-BeforeExecute
--- SqlCe
 DECLARE @FirstName NVarChar(21) -- String
 SET     @FirstName = 'test_inherited_insert'
 DECLARE @LastName NVarChar(4) -- String

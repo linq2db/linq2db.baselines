@@ -1,10 +1,5 @@
 ﻿BeforeExecute
 -- SQLite.MS SQLite
-
-UPDATE sqlite_sequence SET seq = 2 WHERE name = 'AllTypes'
-
-BeforeExecute
--- SQLite.MS SQLite
 DECLARE @Value  -- Int32
 SET     @Value = 0
 
@@ -25,7 +20,7 @@ SELECT last_insert_rowid()
 BeforeExecute
 -- SQLite.MS SQLite
 DECLARE @lastId  -- Int32
-SET     @lastId = 187
+SET     @lastId = 3
 
 DELETE FROM
 	[AllTypes]

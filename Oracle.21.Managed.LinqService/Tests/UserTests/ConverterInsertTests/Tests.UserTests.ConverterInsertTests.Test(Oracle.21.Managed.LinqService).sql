@@ -1,15 +1,5 @@
 ﻿BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
-
-DROP SEQUENCE "PersonSeq"
-
-BeforeExecute
--- Oracle.21.Managed Oracle.Managed Oracle12
-
-CREATE SEQUENCE "PersonSeq" MINVALUE 1 START WITH 5
-
-BeforeExecute
--- Oracle.21.Managed Oracle.Managed Oracle12
 DECLARE @FirstName NVarchar2(3) -- String
 SET     @FirstName = '123'
 DECLARE @LastName Varchar2(3) -- String

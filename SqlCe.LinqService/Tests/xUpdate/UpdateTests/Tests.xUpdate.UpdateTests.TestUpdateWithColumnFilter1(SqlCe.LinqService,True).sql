@@ -1,10 +1,5 @@
 ﻿BeforeExecute
 -- SqlCe
-
-ALTER TABLE Person ALTER COLUMN PersonID IDENTITY(5,1)
-
-BeforeExecute
--- SqlCe
 DECLARE @FirstName NVarChar(25) -- String
 SET     @FirstName = 'UpdateColumnFilterUpdated'
 DECLARE @LastName NVarChar(8) -- String

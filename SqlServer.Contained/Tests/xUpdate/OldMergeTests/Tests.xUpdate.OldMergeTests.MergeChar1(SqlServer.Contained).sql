@@ -1,9 +1,4 @@
 ﻿BeforeExecute
--- SqlServer.Contained SqlServer.2019
-
-DBCC CHECKIDENT ('AllTypes', RESEED, 2)
-
-BeforeExecute
 BeginTransaction
 BeforeExecute
 -- SqlServer.Contained SqlServer.2019

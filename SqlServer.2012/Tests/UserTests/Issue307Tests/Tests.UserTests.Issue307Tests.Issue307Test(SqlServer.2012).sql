@@ -1,10 +1,5 @@
 ﻿BeforeExecute
 -- SqlServer.2012
-
-DBCC CHECKIDENT ('Person', RESEED, 4)
-
-BeforeExecute
--- SqlServer.2012
 DECLARE @Gender NChar(1) -- StringFixedLength
 SET     @Gender = N'M'
 DECLARE @FirstName NVarChar(4000) -- String
