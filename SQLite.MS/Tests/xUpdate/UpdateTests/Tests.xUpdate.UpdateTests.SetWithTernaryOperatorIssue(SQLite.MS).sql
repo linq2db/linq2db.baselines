@@ -1,10 +1,5 @@
 ﻿BeforeExecute
 -- SQLite.MS SQLite
-
-UPDATE sqlite_sequence SET seq = 4 WHERE name = 'Person'
-
-BeforeExecute
--- SQLite.MS SQLite
 DECLARE @Gender NChar(1) -- StringFixedLength
 SET     @Gender = 'M'
 DECLARE @Name_FirstName NVarChar(13) -- String
@@ -49,7 +44,7 @@ WHERE
 BeforeExecute
 -- SQLite.MS SQLite
 DECLARE @id  -- Int32
-SET     @id = 10
+SET     @id = 5
 
 SELECT
 	[t1].[PersonID],

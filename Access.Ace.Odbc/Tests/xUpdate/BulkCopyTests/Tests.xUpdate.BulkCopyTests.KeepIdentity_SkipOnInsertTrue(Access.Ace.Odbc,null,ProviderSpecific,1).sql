@@ -1,10 +1,5 @@
 ﻿BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-
-ALTER TABLE AllTypes ALTER COLUMN ID COUNTER(3, 1)
-
-BeforeExecute
--- Access.Ace.Odbc AccessODBC
 DECLARE @Value Int -- Int32
 SET     @Value = 0
 

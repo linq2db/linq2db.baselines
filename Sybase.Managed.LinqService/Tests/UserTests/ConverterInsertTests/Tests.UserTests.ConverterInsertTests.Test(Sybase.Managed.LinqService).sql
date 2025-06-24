@@ -1,10 +1,5 @@
 ﻿BeforeExecute
 -- Sybase.Managed Sybase
-
-sp_chgattribute Person, 'identity_burn_max', 0, '4'
-
-BeforeExecute
--- Sybase.Managed Sybase
 DECLARE @FirstName UniVarChar(3) -- String
 SET     @FirstName = '123'
 DECLARE @LastName UniVarChar(3) -- String

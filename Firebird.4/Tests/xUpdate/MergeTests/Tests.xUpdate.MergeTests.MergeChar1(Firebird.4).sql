@@ -1,9 +1,4 @@
 ﻿BeforeExecute
--- Firebird.4 Firebird4
-
-SET GENERATOR "AllTypesID" TO 2
-
-BeforeExecute
 BeginTransaction
 BeforeExecute
 -- Firebird.4 Firebird4

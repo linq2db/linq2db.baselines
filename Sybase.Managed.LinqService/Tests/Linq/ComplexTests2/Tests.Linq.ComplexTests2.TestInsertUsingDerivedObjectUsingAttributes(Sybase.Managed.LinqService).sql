@@ -1,10 +1,5 @@
 ﻿BeforeExecute
 -- Sybase.Managed Sybase
-
-sp_chgattribute Person, 'identity_burn_max', 0, '4'
-
-BeforeExecute
--- Sybase.Managed Sybase
 DECLARE @FirstName UniVarChar(21) -- String
 SET     @FirstName = 'test_inherited_insert'
 DECLARE @LastName UniVarChar(4) -- String

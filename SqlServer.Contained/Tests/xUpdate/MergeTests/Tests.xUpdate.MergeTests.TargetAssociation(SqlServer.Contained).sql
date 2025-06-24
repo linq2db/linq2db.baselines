@@ -1,9 +1,4 @@
 ﻿BeforeExecute
--- SqlServer.Contained SqlServer.2019
-
-DBCC CHECKIDENT ('Person', RESEED, 4)
-
-BeforeExecute
 BeginTransaction
 BeforeExecute
 -- SqlServer.Contained SqlServer.2019

@@ -1,15 +1,5 @@
 ﻿BeforeExecute
 -- Oracle.18.Managed Oracle.Managed Oracle12
-
-DROP SEQUENCE "AllTypesSeq"
-
-BeforeExecute
--- Oracle.18.Managed Oracle.Managed Oracle12
-
-CREATE SEQUENCE "AllTypesSeq" MINVALUE 1 START WITH 3
-
-BeforeExecute
--- Oracle.18.Managed Oracle.Managed Oracle12
 DECLARE @Value Int32
 SET     @Value = 0
 DECLARE @IDENTITY_PARAMETER Decimal

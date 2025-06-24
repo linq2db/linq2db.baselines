@@ -1,10 +1,5 @@
 ﻿BeforeExecute
 -- Firebird.4 Firebird4
-
-SET GENERATOR "PersonID" TO 4
-
-BeforeExecute
--- Firebird.4 Firebird4
 DECLARE @FirstName VarChar(4) -- String
 SET     @FirstName = 'test'
 DECLARE @LastName VarChar(7) -- String

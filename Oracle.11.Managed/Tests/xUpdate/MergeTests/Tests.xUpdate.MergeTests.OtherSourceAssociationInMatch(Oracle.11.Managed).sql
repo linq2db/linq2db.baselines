@@ -1,14 +1,4 @@
 ﻿BeforeExecute
--- Oracle.11.Managed Oracle11
-
-DROP SEQUENCE "PersonSeq"
-
-BeforeExecute
--- Oracle.11.Managed Oracle11
-
-CREATE SEQUENCE "PersonSeq" MINVALUE 1 START WITH 5
-
-BeforeExecute
 BeginTransaction
 BeforeExecute
 -- Oracle.11.Managed Oracle11

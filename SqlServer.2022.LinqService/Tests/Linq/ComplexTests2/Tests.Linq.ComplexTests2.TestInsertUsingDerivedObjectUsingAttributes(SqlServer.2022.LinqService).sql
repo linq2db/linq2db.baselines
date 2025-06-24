@@ -1,10 +1,5 @@
 ﻿BeforeExecute
 -- SqlServer.2022
-
-DBCC CHECKIDENT ('Person', RESEED, 4)
-
-BeforeExecute
--- SqlServer.2022
 DECLARE @FirstName NVarChar(4000) -- String
 SET     @FirstName = N'test_inherited_insert'
 DECLARE @LastName NVarChar(4000) -- String
