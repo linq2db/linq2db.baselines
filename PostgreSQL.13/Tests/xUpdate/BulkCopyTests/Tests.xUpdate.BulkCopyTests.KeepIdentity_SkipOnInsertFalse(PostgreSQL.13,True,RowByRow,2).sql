@@ -1,10 +1,5 @@
 ﻿BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
-
-ALTER SEQUENCE "AllTypes_ID_seq" RESTART WITH 3
-
-BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
 DECLARE @Value Integer -- Int32
 SET     @Value = 0
 

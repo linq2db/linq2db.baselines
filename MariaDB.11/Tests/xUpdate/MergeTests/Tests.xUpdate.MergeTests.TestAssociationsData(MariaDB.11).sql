@@ -1,9 +1,4 @@
 ﻿BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
-
-ALTER TABLE Person AUTO_INCREMENT = 5
-
-BeforeExecute
 BeginTransaction
 BeforeExecute
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql

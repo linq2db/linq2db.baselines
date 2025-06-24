@@ -1,9 +1,4 @@
 ﻿BeforeExecute
--- Firebird.4 Firebird4
-
-SET GENERATOR "PersonID" TO 4
-
-BeforeExecute
 BeginTransaction
 BeforeExecute
 -- Firebird.4 Firebird4

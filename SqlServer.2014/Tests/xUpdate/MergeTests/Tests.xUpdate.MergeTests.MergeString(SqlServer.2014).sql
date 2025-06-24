@@ -1,9 +1,4 @@
 ﻿BeforeExecute
--- SqlServer.2014
-
-DBCC CHECKIDENT ('AllTypes', RESEED, 2)
-
-BeforeExecute
 BeginTransaction
 BeforeExecute
 -- SqlServer.2014

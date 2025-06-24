@@ -1,9 +1,4 @@
 ﻿BeforeExecute
--- Firebird.3 Firebird3
-
-SET GENERATOR "AllTypesID" TO 2
-
-BeforeExecute
 BeginTransaction
 BeforeExecute
 -- Firebird.3 Firebird3

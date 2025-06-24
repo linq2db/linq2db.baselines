@@ -1,10 +1,5 @@
 ﻿BeforeExecute
 -- SqlCe
-
-ALTER TABLE AllTypes ALTER COLUMN ID IDENTITY(3,1)
-
-BeforeExecute
--- SqlCe
 DECLARE @Value Int -- Int32
 SET     @Value = 0
 

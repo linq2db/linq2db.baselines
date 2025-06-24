@@ -1,14 +1,4 @@
 ﻿BeforeExecute
--- Oracle.11.Managed Oracle11
-
-DROP SEQUENCE "AllTypesSeq"
-
-BeforeExecute
--- Oracle.11.Managed Oracle11
-
-CREATE SEQUENCE "AllTypesSeq" MINVALUE 1 START WITH 3
-
-BeforeExecute
 BeginTransaction
 BeforeExecute
 -- Oracle.11.Managed Oracle11

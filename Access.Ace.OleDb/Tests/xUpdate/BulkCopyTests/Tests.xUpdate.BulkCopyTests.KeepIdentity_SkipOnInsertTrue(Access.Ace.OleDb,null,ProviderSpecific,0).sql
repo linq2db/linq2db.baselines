@@ -1,10 +1,5 @@
 ﻿BeforeExecute
 -- Access.Ace.OleDb AccessOleDb
-
-ALTER TABLE AllTypes ALTER COLUMN ID COUNTER(3, 1)
-
-BeforeExecute
--- Access.Ace.OleDb AccessOleDb
 DECLARE @Value Integer -- Int32
 SET     @Value = 0
 

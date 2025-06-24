@@ -1,10 +1,5 @@
 ﻿BeforeExecute
 -- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
-
-ALTER SEQUENCE "Person_PersonID_seq" RESTART WITH 5
-
-BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
 DECLARE @FirstName Text(18) -- String
 SET     @FirstName = 'UpdateColumnFilter'
 DECLARE @LastName Text(8) -- String
