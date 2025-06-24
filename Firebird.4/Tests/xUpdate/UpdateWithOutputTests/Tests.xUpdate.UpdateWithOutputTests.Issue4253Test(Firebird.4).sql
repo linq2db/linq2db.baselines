@@ -6,7 +6,7 @@ UPDATE
 SET
 	"Name" = (
 		SELECT
-			"Issue4193Person"."Name" || CAST("r_1"."SalaryId" AS VarChar(11) CHARACTER SET UNICODE_FSS)
+			"Issue4193Person"."Name" || "r_1"."SalaryId"
 		FROM
 			"Issue4193Person" "p_1"
 				INNER JOIN "Issue4193Employee" "r_1" ON "p_1"."EmployeeId" = "r_1"."Id"
