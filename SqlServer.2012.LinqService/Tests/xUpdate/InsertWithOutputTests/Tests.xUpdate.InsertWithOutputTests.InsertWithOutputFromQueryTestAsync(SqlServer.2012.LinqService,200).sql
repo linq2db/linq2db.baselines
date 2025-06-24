@@ -16,7 +16,7 @@ OUTPUT
 SELECT
 	[s].[Id] + @param,
 	[s].[Value] + @param,
-	[s].[ValueStr] + CAST(@param AS VarChar(11))
+	[s].[ValueStr] + CAST(@param AS NVarChar(11))
 FROM
 	[TableWithData] [s]
 WHERE
@@ -30,7 +30,7 @@ SET     @param = 200
 SELECT
 	[s].[Id] + @param,
 	[s].[Value] + @param,
-	[s].[ValueStr] + CAST(@param AS VarChar(11))
+	[s].[ValueStr] + CAST(@param AS NVarChar(11))
 FROM
 	[TableWithData] [s]
 WHERE
