@@ -52,7 +52,7 @@ SET     @MiddleName = 'updated name'
 DECLARE @Gender Char(1) -- AnsiStringFixedLength
 SET     @Gender = 'M'
 DECLARE @ID  -- Int32
-SET     @ID = 14
+SET     @ID = 5
 
 UPDATE
 	[Person]
