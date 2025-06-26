@@ -48,9 +48,7 @@ SELECT
 FROM
 	[EnumCharTable] [t]
 WHERE
-	[t].[EnumValue] IS NULL AND
-	[t].[EnumValue] IS NULL AND
-	[t].[IntValue] IS NULL AND
+	[t].[EnumValue] IS NULL AND [t].[IntValue] IS NULL AND
 	[t].[DoubleValue] IS NULL
 
 BeforeExecute
@@ -61,8 +59,6 @@ SELECT
 FROM
 	[EnumCharTable] [t]
 WHERE
-	[t].[EnumValue] IS NULL AND
-	[t].[EnumValue] IS NULL AND
-	[t].[IntValue] IS NULL AND
+	[t].[EnumValue] IS NULL AND [t].[IntValue] IS NULL AND
 	[t].[DoubleValue] IS NULL
 
