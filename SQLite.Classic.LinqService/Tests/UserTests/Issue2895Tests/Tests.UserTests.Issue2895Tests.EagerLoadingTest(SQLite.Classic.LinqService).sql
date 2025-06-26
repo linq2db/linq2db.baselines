@@ -22,11 +22,11 @@ FROM
 							LEFT JOIN [Email] [a_Email] ON [a_EmailAdminAssociations].[EmailId] = [a_Email].[Id]
 							LEFT JOIN [InternalEmail] [a_InternalEmail] ON [a_Email].[Id] = [a_InternalEmail].[Id]
 							LEFT JOIN [Email] [a_Email_1] ON [a_InternalEmail].[Id] = [a_Email_1].[Id]
-				) [t1] ON [a_Admin].[Id] = [t1].[AdminId] AND [t1].[rn] <= 1
+				) [t1] ON [a_Admin].[Id] IS NOT NULL AND [a_Admin].[Id] = [t1].[AdminId] AND [t1].[rn] <= 1
 	) [m_1]
 		INNER JOIN [EmailAttachmentAssociation] [d] ON [m_1].[Id] = [d].[EmailId]
 		LEFT JOIN [Attachment] [a_Attachment] ON [d].[AttachmentId] = [a_Attachment].[Id]
-		INNER JOIN [Document] [a_Documents] ON [a_Attachment].[Id] = [a_Documents].[AttachmentId]
+		INNER JOIN [Document] [a_Documents] ON [a_Attachment].[Id] IS NOT NULL AND [a_Attachment].[Id] = [a_Documents].[AttachmentId]
 
 BeforeExecute
 -- SQLite.Classic SQLite
@@ -49,5 +49,5 @@ FROM
 					LEFT JOIN [Email] [a_Email] ON [a_EmailAdminAssociations].[EmailId] = [a_Email].[Id]
 					LEFT JOIN [InternalEmail] [a_InternalEmail] ON [a_Email].[Id] = [a_InternalEmail].[Id]
 					LEFT JOIN [Email] [a_Email_1] ON [a_InternalEmail].[Id] = [a_Email_1].[Id]
-		) [t1] ON [a_Admin].[Id] = [t1].[AdminId] AND [t1].[rn] <= 1
+		) [t1] ON [a_Admin].[Id] IS NOT NULL AND [a_Admin].[Id] = [t1].[AdminId] AND [t1].[rn] <= 1
 
