@@ -22,5 +22,5 @@ WHERE
 RETURNING
 	"s"."Id" + CAST(@param AS Int),
 	"s"."Value" + CAST(@param AS Int),
-	"s"."ValueStr" || CAST(@param AS VarChar(11) CHARACTER SET UNICODE_FSS)
+	"s"."ValueStr" || CAST(CAST(@param AS Int) AS VARCHAR(8191))
 

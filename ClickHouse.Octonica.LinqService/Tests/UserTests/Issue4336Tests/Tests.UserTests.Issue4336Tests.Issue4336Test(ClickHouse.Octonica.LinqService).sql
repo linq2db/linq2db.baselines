@@ -8,9 +8,9 @@ SELECT
 	r.MaxCapacity,
 	r.Quantity,
 	r.MaxCapacity - r.Quantity,
-	v2_1.MaxCapacity,
-	v2_1.Quantity,
-	v2_1.FreeCapacity
+	COALESCE(t1.PeriodOrderLimit,0),
+	t1.Quantity,
+	COALESCE(t1.PeriodOrderLimit,0) - t1.Quantity
 FROM
 	(
 		SELECT
@@ -18,7 +18,7 @@ FROM
 			vpc.CategoryId as CategoryId,
 			pop.ProductId as ProductId,
 			COALESCE(pcc.PeriodOrderLimit,0) as MaxCapacity,
-			COALESCE(vsp_1.Quantity,0) as Quantity
+			COALESCE(COALESCE(vsp.SUM_1,0),0) as Quantity
 		FROM
 			OrderPeriod op
 				INNER JOIN ProductsPerOrderPeriod pop ON op.Id = pop.OrderPeriodId
@@ -26,35 +26,27 @@ FROM
 				LEFT JOIN ProductCategory pcc ON pcc.Id = vpc.CategoryId
 				LEFT JOIN (
 					SELECT
-						vsp.Id as Id,
-						vsp.ProductId as ProductId,
-						COALESCE(vsp.SUM_1,0) as Quantity
+						agroup.Id as Id,
+						oi.ProductId as ProductId,
+						sumOrNull(COALESCE(oi.Quantity,toInt16(0))) as SUM_1
 					FROM
-						(
-							SELECT
-								agroup.Id as Id,
-								oi.ProductId as ProductId,
-								sumOrNull(COALESCE(oi.Quantity,toInt16(0))) as SUM_1
-							FROM
-								OrderPeriod agroup
-									LEFT JOIN OrderHeader oh ON agroup.Id = oh.PeriodId
-									LEFT JOIN OrderItem oi ON oh.Id = oi.OrderHeaderId
-							GROUP BY
-								agroup.Id,
-								oi.ProductId
-						) vsp
-				) vsp_1 ON vsp_1.Id = op.Id AND vsp_1.ProductId = pop.ProductId
+						OrderPeriod agroup
+							LEFT JOIN OrderHeader oh ON agroup.Id = oh.PeriodId
+							LEFT JOIN OrderItem oi ON oh.Id = oi.OrderHeaderId
+					GROUP BY
+						agroup.Id,
+						oi.ProductId
+				) vsp ON vsp.Id = op.Id AND vsp.ProductId = pop.ProductId
 	) r
 		LEFT JOIN (
 			SELECT
-				COALESCE(vpcc.PeriodOrderLimit,0) as MaxCapacity,
-				vsopc.Quantity as Quantity,
-				COALESCE(vpcc.PeriodOrderLimit,0) - vsopc.Quantity as FreeCapacity,
 				v2.Id as Id,
-				vpcc.Id as Id_1
+				vpcc.Id as Id_1,
+				vpcc.PeriodOrderLimit as PeriodOrderLimit,
+				vsopc.Quantity as Quantity
 			FROM
 				OrderPeriod v2
-					CROSS JOIN ProductCategory vpcc
+					INNER JOIN ProductCategory vpcc ON 1=1
 					LEFT JOIN (
 						SELECT
 							agroup_1.Id as Id,
@@ -69,6 +61,6 @@ FROM
 							agroup_1.Id,
 							p.CategoryId
 					) vsopc ON vsopc.Id = v2.Id AND vsopc.CategoryId = vpcc.Id
-		) v2_1 ON v2_1.Id = r.OrderPeriodId AND v2_1.Id_1 = r.CategoryId
+		) t1 ON t1.Id = r.OrderPeriodId AND t1.Id_1 = r.CategoryId
 LIMIT 10
 

@@ -4,7 +4,7 @@
 UPDATE
 	[p]
 SET
-	[p].[Name] = [p].[Name] + CAST([r].[SalaryId] AS VarChar(11))
+	[p].[Name] = [p].[Name] + CAST([r].[SalaryId] AS NVarChar(11))
 OUTPUT
 	INSERTED.[EmployeeId]
 FROM
