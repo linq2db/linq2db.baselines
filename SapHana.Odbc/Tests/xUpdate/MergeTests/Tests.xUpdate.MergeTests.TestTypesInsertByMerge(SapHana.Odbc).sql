@@ -21,7 +21,7 @@ SET     @value = 00:00:00
 
 MERGE INTO "TestMerge1" "Target"
 USING (
-	SELECT 1 AS "source_Id", NULL AS "source_FieldInt32", NULL AS "source_FieldInt64", NULL AS "source_FieldBoolean", NULL AS "source_FieldString", NULL AS "source_FieldNString", NULL AS "source_FieldChar", NULL AS "source_FieldNChar", NULL AS "source_FieldFloat", NULL AS "source_FieldDouble", NULL AS "source_FieldDateTime", NULL AS "source_FieldBinary", NULL AS "source_FieldGuid", NULL AS "source_FieldDecimal", NULL AS "source_FieldDate", NULL AS "source_FieldTime", NULL AS "source_FieldEnumString", NULL AS "source_FieldEnumNumber" FROM DUMMY
+	SELECT 1 AS "Id", NULL AS "FieldInt32", NULL AS "FieldInt64", NULL AS "FieldBoolean", NULL AS "FieldString", NULL AS "FieldNString", NULL AS "FieldChar", NULL AS "FieldNChar", NULL AS "FieldFloat", NULL AS "FieldDouble", NULL AS "FieldDateTime", NULL AS "FieldBinary", NULL AS "FieldGuid", NULL AS "FieldDecimal", NULL AS "FieldDate", NULL AS "FieldTime", NULL AS "FieldEnumString", NULL AS "FieldEnumNumber" FROM DUMMY
 	UNION ALL
 	SELECT 2, -2147483647, -9223372036854775807, 1, 'normal strinG', 'всЁ нормально', '*', 'ё', -3.40282002E+38, -1.7976931348623157E+308, '2000-11-12 21:14:15.167', x'', '00000000-0000-0000-0000-000000000000', 12345678.9012345678, '2000-11-23', ?, 'FIRST', NULL FROM DUMMY
 	UNION ALL
@@ -31,7 +31,7 @@ q', '&', '>', 3.40282002E+38, 1.7976931348623157E+308, '2001-10-12 21:14:15.167'
 	UNION ALL
 	SELECT 4, -123, 987, NULL, '`~!@#$%^&*()_+{}|[]\', '<>?/.,;''щЩ":', '', '
 ', 1.17549996E-38, -2.2250738585072014E-308, '2098-10-12 21:14:15.997', x'FFC864321400', 'ffffffff-ffff-ffff-ffff-ffffffffffff', 99999999.9999999999, '2110-11-23', ?, '', 2147483647 FROM DUMMY) "Source"
-ON ("Target"."Id" = "Source"."source_Id")
+ON ("Target"."Id" = "Source"."Id")
 
 WHEN NOT MATCHED THEN
 INSERT
@@ -57,24 +57,24 @@ INSERT
 )
 VALUES
 (
-	"Source"."source_Id",
-	"Source"."source_FieldInt32",
-	"Source"."source_FieldInt64",
-	"Source"."source_FieldBoolean",
-	"Source"."source_FieldString",
-	"Source"."source_FieldNString",
-	"Source"."source_FieldChar",
-	"Source"."source_FieldNChar",
-	"Source"."source_FieldFloat",
-	"Source"."source_FieldDouble",
-	"Source"."source_FieldDateTime",
-	"Source"."source_FieldBinary",
-	"Source"."source_FieldGuid",
-	"Source"."source_FieldDecimal",
-	"Source"."source_FieldDate",
-	"Source"."source_FieldTime",
-	"Source"."source_FieldEnumString",
-	"Source"."source_FieldEnumNumber"
+	"Source"."Id",
+	"Source"."FieldInt32",
+	"Source"."FieldInt64",
+	"Source"."FieldBoolean",
+	"Source"."FieldString",
+	"Source"."FieldNString",
+	"Source"."FieldChar",
+	"Source"."FieldNChar",
+	"Source"."FieldFloat",
+	"Source"."FieldDouble",
+	"Source"."FieldDateTime",
+	"Source"."FieldBinary",
+	"Source"."FieldGuid",
+	"Source"."FieldDecimal",
+	"Source"."FieldDate",
+	"Source"."FieldTime",
+	"Source"."FieldEnumString",
+	"Source"."FieldEnumNumber"
 )
 
 BeforeExecute
@@ -90,7 +90,7 @@ SET     @value = 22:44:33
 
 MERGE INTO "TestMerge2" "Target"
 USING (
-	SELECT 3 AS "source_Id", -123 AS "source_FieldInt32", 987 AS "source_FieldInt64", NULL AS "source_FieldBoolean", '<>?/.,;''zZ":' AS "source_FieldString", '`~!@#$%^&*()_+{}|[]\' AS "source_FieldNString", '' AS "source_FieldChar", '' AS "source_FieldNChar", -1.17549996E-38 AS "source_FieldFloat", 2.2250738585072014E-308 AS "source_FieldDouble", '2098-10-12 21:14:15.907' AS "source_FieldDateTime", x'FFC864321400' AS "source_FieldBinary", 'ffffffff-ffff-ffff-ffff-ffffffffffff' AS "source_FieldGuid", -0.123 AS "source_FieldDecimal", '2111-11-23' AS "source_FieldDate", ? AS "source_FieldTime", NULL AS "source_FieldEnumString", -2147483647 AS "source_FieldEnumNumber" FROM DUMMY
+	SELECT 3 AS "Id", -123 AS "FieldInt32", 987 AS "FieldInt64", NULL AS "FieldBoolean", '<>?/.,;''zZ":' AS "FieldString", '`~!@#$%^&*()_+{}|[]\' AS "FieldNString", '' AS "FieldChar", '' AS "FieldNChar", -1.17549996E-38 AS "FieldFloat", 2.2250738585072014E-308 AS "FieldDouble", '2098-10-12 21:14:15.907' AS "FieldDateTime", x'FFC864321400' AS "FieldBinary", 'ffffffff-ffff-ffff-ffff-ffffffffffff' AS "FieldGuid", -0.123 AS "FieldDecimal", '2111-11-23' AS "FieldDate", ? AS "FieldTime", NULL AS "FieldEnumString", -2147483647 AS "FieldEnumNumber" FROM DUMMY
 	UNION ALL
 	SELECT 4, 2147483647, 9223372036854775807, 0, 'test
 	', 'ЙЦУКЩывапрм
@@ -101,7 +101,7 @@ q', '1', ' ', 3.40282002E+38, 1.7976931348623157E+308, '2001-10-12 21:14:15.167'
 	SELECT 6, 2147483647, 9223372036854775807, 0, 'test
 	  ', 'ЙЦУКЩывапрм
 q  ', '-', '~', 3.40282002E+38, 1.7976931348623157E+308, '2001-10-12 21:14:15.167', x'000102030004', 'ffffffff-ffff-ffff-ffff-ffffffffffff', -99999999.9999999999, '2123-11-23', ?, '', 0 FROM DUMMY) "Source"
-ON ("Target"."Id" = "Source"."source_Id")
+ON ("Target"."Id" = "Source"."Id")
 
 WHEN NOT MATCHED THEN
 INSERT
@@ -127,24 +127,24 @@ INSERT
 )
 VALUES
 (
-	"Source"."source_Id",
-	"Source"."source_FieldInt32",
-	"Source"."source_FieldInt64",
-	"Source"."source_FieldBoolean",
-	"Source"."source_FieldString",
-	"Source"."source_FieldNString",
-	"Source"."source_FieldChar",
-	"Source"."source_FieldNChar",
-	"Source"."source_FieldFloat",
-	"Source"."source_FieldDouble",
-	"Source"."source_FieldDateTime",
-	"Source"."source_FieldBinary",
-	"Source"."source_FieldGuid",
-	"Source"."source_FieldDecimal",
-	"Source"."source_FieldDate",
-	"Source"."source_FieldTime",
-	"Source"."source_FieldEnumString",
-	"Source"."source_FieldEnumNumber"
+	"Source"."Id",
+	"Source"."FieldInt32",
+	"Source"."FieldInt64",
+	"Source"."FieldBoolean",
+	"Source"."FieldString",
+	"Source"."FieldNString",
+	"Source"."FieldChar",
+	"Source"."FieldNChar",
+	"Source"."FieldFloat",
+	"Source"."FieldDouble",
+	"Source"."FieldDateTime",
+	"Source"."FieldBinary",
+	"Source"."FieldGuid",
+	"Source"."FieldDecimal",
+	"Source"."FieldDate",
+	"Source"."FieldTime",
+	"Source"."FieldEnumString",
+	"Source"."FieldEnumNumber"
 )
 
 BeforeExecute

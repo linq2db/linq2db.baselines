@@ -223,11 +223,11 @@ BeforeExecute
 
 MERGE INTO "TestMerge1" "Target"
 USING (
-	SELECT NULL "source_Id", NULL "source_Field3", NULL "source_Field1", NULL "source_Field2", NULL "source_Field4"
+	SELECT NULL "Id", NULL "Field3", NULL "Field1", NULL "Field2", NULL "Field4"
 	FROM DUMMY	WHERE 1 = 0
 )
  "Source"
-ON ("Target"."Id" = "Source"."source_Id" AND "Source"."source_Field3" IS NOT NULL)
+ON ("Target"."Id" = "Source"."Id" AND "Source"."Field3" IS NOT NULL)
 
 WHEN NOT MATCHED THEN
 INSERT
@@ -239,10 +239,10 @@ INSERT
 )
 VALUES
 (
-	"Source"."source_Id",
-	"Source"."source_Field1",
-	"Source"."source_Field2",
-	"Source"."source_Field4"
+	"Source"."Id",
+	"Source"."Field1",
+	"Source"."Field2",
+	"Source"."Field4"
 )
 
 BeforeExecute

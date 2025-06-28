@@ -223,7 +223,7 @@ BeforeExecute
 
 MERGE INTO "TestMerge1" "Target"
 USING (
-	SELECT 5 AS "source_Id", 6 AS "source_Field1", 7 AS "source_Field2", 9 AS "source_Field4" FROM DUMMY
+	SELECT 5 AS "Id", 6 AS "Field1", 7 AS "Field2", 9 AS "Field4" FROM DUMMY
 	UNION ALL
 	SELECT 6, 7, 8, 10 FROM DUMMY
 	UNION ALL
@@ -322,7 +322,7 @@ USING (
 	SELECT 53, 54, 55, 57 FROM DUMMY
 	UNION ALL
 	SELECT 54, 55, 56, 58 FROM DUMMY) "Source"
-ON ("Target"."Id" = "Source"."source_Id")
+ON ("Target"."Id" = "Source"."Id")
 
 WHEN NOT MATCHED THEN
 INSERT
@@ -334,10 +334,10 @@ INSERT
 )
 VALUES
 (
-	"Source"."source_Id",
-	"Source"."source_Field1",
-	"Source"."source_Field2",
-	"Source"."source_Field4"
+	"Source"."Id",
+	"Source"."Field1",
+	"Source"."Field2",
+	"Source"."Field4"
 )
 
 BeforeExecute
