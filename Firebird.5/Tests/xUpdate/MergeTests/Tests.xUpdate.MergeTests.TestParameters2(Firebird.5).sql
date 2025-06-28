@@ -244,7 +244,7 @@ SET     @Val2 = 2
 
 MERGE INTO "TestMerge1" "Target"
 USING (
-	SELECT 3 AS "source_Id" FROM rdb$database
+	SELECT 3 AS "Id" FROM rdb$database
 	UNION ALL
 	SELECT 4 FROM rdb$database
 	UNION ALL
@@ -252,9 +252,9 @@ USING (
 	UNION ALL
 	SELECT 6 FROM rdb$database) "Source"
 (
-	"source_Id"
+	"Id"
 )
-ON ("Target"."Id" = "Source"."source_Id" OR "Target"."Id" = @Val4)
+ON ("Target"."Id" = "Source"."Id" OR "Target"."Id" = @Val4)
 
 WHEN NOT MATCHED BY SOURCE AND "Target"."Id" = CAST(@Val3 AS Int) THEN UPDATE
 SET

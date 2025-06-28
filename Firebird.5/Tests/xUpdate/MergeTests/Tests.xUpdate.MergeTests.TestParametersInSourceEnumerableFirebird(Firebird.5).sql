@@ -244,7 +244,7 @@ SET     @value_3 = 00:05:00
 
 MERGE INTO "TestMerge1" "Target"
 USING (
-	SELECT 3 AS "source_Id", CAST(@value AS Time) AS "source_Val" FROM rdb$database
+	SELECT 3 AS "Id", CAST(@value AS Time) AS "Val" FROM rdb$database
 	UNION ALL
 	SELECT 4, CAST(@value_1 AS Time) FROM rdb$database
 	UNION ALL
@@ -252,10 +252,10 @@ USING (
 	UNION ALL
 	SELECT 6, CAST(@value_3 AS Time) FROM rdb$database) "Source"
 (
-	"source_Id",
-	"source_Val"
+	"Id",
+	"Val"
 )
-ON ("Target"."Id" = "Source"."source_Id" AND "Source"."source_Val" IS NOT NULL)
+ON ("Target"."Id" = "Source"."Id" AND "Source"."Val" IS NOT NULL)
 
 WHEN MATCHED THEN
 UPDATE
