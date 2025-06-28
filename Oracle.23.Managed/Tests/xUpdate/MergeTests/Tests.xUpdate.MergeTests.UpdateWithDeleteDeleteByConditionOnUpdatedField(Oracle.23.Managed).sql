@@ -224,17 +224,17 @@ BeforeExecute
 MERGE INTO "TestMerge1" Target
 USING (
 	SELECT
-		t1."Id" as "source_OtherId",
-		t1."Field1" as "source_OtherField1"
+		t1."Id" as "OtherId",
+		t1."Field1" as "OtherField1"
 	FROM
 		"TestMerge2" t1
 ) "Source"
-ON (Target."Id" = "Source"."source_OtherId")
+ON (Target."Id" = "Source"."OtherId")
 
 WHEN MATCHED THEN
 UPDATE
 SET
-	"Field1" = Target."Field1" + "Source"."source_OtherField1" + 345
+	"Field1" = Target."Field1" + "Source"."OtherField1" + 345
 
 DELETE WHERE
 	Target."Field1" = 355
