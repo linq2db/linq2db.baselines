@@ -243,16 +243,16 @@ USING (VALUES
 	(6,NULL,NULL,NULL,216,NULL)
 ) "Source"
 (
-	"source_Key",
-	"source_Field01",
-	"source_Field02",
-	"source_Field03",
-	"source_Field04",
-	"source_Field05"
+	"Key_1",
+	"Field01",
+	"Field02",
+	"Field03",
+	"Field04",
+	"Field05"
 )
-ON ("Target"."Id" = "Source"."source_Key")
+ON ("Target"."Id" = "Source"."Key_1")
 
-WHEN NOT MATCHED AND "Source"."source_Field04" = 216 THEN
+WHEN NOT MATCHED AND "Source"."Field04" = 216 THEN
 INSERT
 (
 	"Id",
@@ -264,12 +264,12 @@ INSERT
 )
 VALUES
 (
-	"Source"."source_Key",
-	"Source"."source_Field01",
-	"Source"."source_Field02",
-	"Source"."source_Field03",
-	"Source"."source_Field04",
-	"Source"."source_Field05"
+	"Source"."Key_1",
+	"Source"."Field01",
+	"Source"."Field02",
+	"Source"."Field03",
+	"Source"."Field04",
+	"Source"."Field05"
 )
 
 BeforeExecute

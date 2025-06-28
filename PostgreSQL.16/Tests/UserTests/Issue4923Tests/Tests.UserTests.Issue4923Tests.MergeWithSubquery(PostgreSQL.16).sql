@@ -4,8 +4,8 @@
 MERGE INTO "User" "Target"
 USING (
 	SELECT
-		t1."Name" as "source_Name",
-		t1."DepartmentName" as "source_DepartmentName",
+		t1."Name",
+		t1."DepartmentName",
 		(
 			SELECT
 				d."Id"
@@ -21,11 +21,11 @@ USING (
 		) t1("Name", "DepartmentName")
 ) "Source"
 (
-	"source_Name",
-	"source_DepartmentName",
+	"Name",
+	"DepartmentName",
 	"Id"
 )
-ON ("Target"."Name" = "Source"."source_Name" OR "Target"."Name" IS NULL AND "Source"."source_Name" IS NULL)
+ON ("Target"."Name" = "Source"."Name" OR "Target"."Name" IS NULL AND "Source"."Name" IS NULL)
 
 WHEN NOT MATCHED THEN
 INSERT
@@ -35,7 +35,7 @@ INSERT
 )
 VALUES
 (
-	"Source"."source_Name",
+	"Source"."Name",
 	"Source"."Id"
 )
 

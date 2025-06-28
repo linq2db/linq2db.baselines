@@ -1,24 +1,15 @@
 ﻿BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 
-MERGE INTO "ReviewIndexes" "Target"
-USING (
-	SELECT
-		t1."Id",
-		t1."Value" as "Value_1"
-	FROM
-		"ReviewIndexes" t1
+MERGE INTO "MyChildClass" "Target"
+USING (VALUES
+	(1,10), (2,20), (3,30), (4,40)
 ) "Source"
 (
 	"Id",
 	"Value_1"
 )
 ON ("Target"."Id" = "Source"."Id")
-
-WHEN MATCHED THEN
-UPDATE
-SET
-	"Value" = "Source"."Value_1"
 
 WHEN NOT MATCHED THEN
 INSERT

@@ -34,9 +34,9 @@ USING (VALUES
 	(22), (23)
 ) "Source"
 (
-	"source_Field"
+	"Field"
 )
-ON ("Target"."Field" = "Source"."source_Field" OR "Target"."Field" IS NULL AND "Source"."source_Field" IS NULL)
+ON ("Target"."Field" = "Source"."Field" OR "Target"."Field" IS NULL AND "Source"."Field" IS NULL)
 
 WHEN NOT MATCHED THEN
 INSERT
@@ -45,7 +45,7 @@ INSERT
 )
 VALUES
 (
-	"Source"."source_Field"
+	"Source"."Field"
 )
 
 BeforeExecute
