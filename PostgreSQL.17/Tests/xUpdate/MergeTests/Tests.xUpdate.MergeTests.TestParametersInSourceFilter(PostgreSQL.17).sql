@@ -226,27 +226,27 @@ SET     @param = 3
 MERGE INTO "TestMerge1" "Target"
 USING (
 	SELECT
-		t1."Id" as "source_Id",
-		t1."Field1" as "source_Field1",
-		t1."Field2" as "source_Field2",
-		t1."Field3" as "source_Field3"
+		t1."Id",
+		t1."Field1",
+		t1."Field2",
+		t1."Field3"
 	FROM
 		"TestMerge2" t1
 	WHERE
 		t1."Id" = :param
 ) "Source"
 (
-	"source_Id",
-	"source_Field1",
-	"source_Field2",
-	"source_Field3"
+	"Id",
+	"Field1",
+	"Field2",
+	"Field3"
 )
-ON ("Target"."Id" = "Source"."source_Id")
+ON ("Target"."Id" = "Source"."Id")
 
 WHEN MATCHED THEN
 UPDATE
 SET
-	"Field1" = "Source"."source_Field1",
-	"Field2" = "Source"."source_Field2",
-	"Field3" = "Source"."source_Field3"
+	"Field1" = "Source"."Field1",
+	"Field2" = "Source"."Field2",
+	"Field3" = "Source"."Field3"
 

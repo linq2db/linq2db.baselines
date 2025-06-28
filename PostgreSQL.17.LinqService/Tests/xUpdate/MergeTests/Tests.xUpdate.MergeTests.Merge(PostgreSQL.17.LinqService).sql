@@ -4,45 +4,45 @@
 MERGE INTO "LinqDataTypes" "Target"
 USING (
 	SELECT
-		t1."ID" as "source_ID",
-		t1."MoneyValue" as "source_MoneyValue",
-		t1."DateTimeValue" as "source_DateTimeValue",
-		t1."DateTimeValue2" as "source_DateTimeValue2",
-		t1."BoolValue" as "source_BoolValue",
-		t1."GuidValue" as "source_GuidValue",
-		t1."SmallIntValue" as "source_SmallIntValue",
-		t1."IntValue" as "source_IntValue",
-		t1."BigIntValue" as "source_BigIntValue",
-		t1."StringValue" as "source_StringValue"
+		t1."ID",
+		t1."MoneyValue",
+		t1."DateTimeValue",
+		t1."DateTimeValue2",
+		t1."BoolValue",
+		t1."GuidValue",
+		t1."SmallIntValue",
+		t1."IntValue",
+		t1."BigIntValue",
+		t1."StringValue"
 	FROM
 		"LinqDataTypes" t1
 ) "Source"
 (
-	"source_ID",
-	"source_MoneyValue",
-	"source_DateTimeValue",
-	"source_DateTimeValue2",
-	"source_BoolValue",
-	"source_GuidValue",
-	"source_SmallIntValue",
-	"source_IntValue",
-	"source_BigIntValue",
-	"source_StringValue"
+	"ID",
+	"MoneyValue",
+	"DateTimeValue",
+	"DateTimeValue2",
+	"BoolValue",
+	"GuidValue",
+	"SmallIntValue",
+	"IntValue",
+	"BigIntValue",
+	"StringValue"
 )
-ON ("Target"."ID" = "Source"."source_ID")
+ON ("Target"."ID" = "Source"."ID")
 
 WHEN MATCHED THEN
 UPDATE
 SET
-	"MoneyValue" = "Source"."source_MoneyValue",
-	"DateTimeValue" = "Source"."source_DateTimeValue",
-	"DateTimeValue2" = "Source"."source_DateTimeValue2",
-	"BoolValue" = "Source"."source_BoolValue",
-	"GuidValue" = "Source"."source_GuidValue",
-	"SmallIntValue" = "Source"."source_SmallIntValue",
-	"IntValue" = "Source"."source_IntValue",
-	"BigIntValue" = "Source"."source_BigIntValue",
-	"StringValue" = "Source"."source_StringValue"
+	"MoneyValue" = "Source"."MoneyValue",
+	"DateTimeValue" = "Source"."DateTimeValue",
+	"DateTimeValue2" = "Source"."DateTimeValue2",
+	"BoolValue" = "Source"."BoolValue",
+	"GuidValue" = "Source"."GuidValue",
+	"SmallIntValue" = "Source"."SmallIntValue",
+	"IntValue" = "Source"."IntValue",
+	"BigIntValue" = "Source"."BigIntValue",
+	"StringValue" = "Source"."StringValue"
 
 WHEN NOT MATCHED THEN
 INSERT
@@ -60,15 +60,15 @@ INSERT
 )
 VALUES
 (
-	"Source"."source_ID",
-	"Source"."source_MoneyValue",
-	"Source"."source_DateTimeValue",
-	"Source"."source_DateTimeValue2",
-	"Source"."source_BoolValue",
-	"Source"."source_GuidValue",
-	"Source"."source_SmallIntValue",
-	"Source"."source_IntValue",
-	"Source"."source_BigIntValue",
-	"Source"."source_StringValue"
+	"Source"."ID",
+	"Source"."MoneyValue",
+	"Source"."DateTimeValue",
+	"Source"."DateTimeValue2",
+	"Source"."BoolValue",
+	"Source"."GuidValue",
+	"Source"."SmallIntValue",
+	"Source"."IntValue",
+	"Source"."BigIntValue",
+	"Source"."StringValue"
 )
 
