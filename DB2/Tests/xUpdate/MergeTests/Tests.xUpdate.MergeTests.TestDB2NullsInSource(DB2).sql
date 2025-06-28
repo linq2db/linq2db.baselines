@@ -7,26 +7,26 @@ USING (VALUES
 	(2,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL)
 ) "Source"
 (
-	"source_Id",
-	"source_FieldInt32",
-	"source_FieldInt64",
-	"source_FieldBoolean",
-	"source_FieldString",
-	"source_FieldNString",
-	"source_FieldChar",
-	"source_FieldNChar",
-	"source_FieldFloat",
-	"source_FieldDouble",
-	"source_FieldDateTime",
-	"source_FieldBinary",
-	"source_FieldGuid",
-	"source_FieldDecimal",
-	"source_FieldDate",
-	"source_FieldTime",
-	"source_FieldEnumString",
-	"source_FieldEnumNumber"
+	"Id",
+	"FieldInt32",
+	"FieldInt64",
+	"FieldBoolean",
+	"FieldString",
+	"FieldNString",
+	"FieldChar",
+	"FieldNChar",
+	"FieldFloat",
+	"FieldDouble",
+	"FieldDateTime",
+	"FieldBinary",
+	"FieldGuid",
+	"FieldDecimal",
+	"FieldDate",
+	"FieldTime",
+	"FieldEnumString",
+	"FieldEnumNumber"
 )
-ON ("Target"."Id" = "Source"."source_Id")
+ON ("Target"."Id" = "Source"."Id")
 
 WHEN NOT MATCHED THEN
 INSERT
@@ -52,23 +52,23 @@ INSERT
 )
 VALUES
 (
-	"Source"."source_Id",
-	"Source"."source_FieldInt32",
-	"Source"."source_FieldInt64",
-	"Source"."source_FieldBoolean",
-	"Source"."source_FieldString",
-	"Source"."source_FieldNString",
-	"Source"."source_FieldChar",
-	"Source"."source_FieldNChar",
-	"Source"."source_FieldFloat",
-	"Source"."source_FieldDouble",
-	"Source"."source_FieldDateTime",
-	"Source"."source_FieldBinary",
-	"Source"."source_FieldGuid",
-	"Source"."source_FieldDecimal",
-	"Source"."source_FieldDate",
-	"Source"."source_FieldTime",
-	"Source"."source_FieldEnumString",
-	"Source"."source_FieldEnumNumber"
+	"Source"."Id",
+	"Source"."FieldInt32",
+	"Source"."FieldInt64",
+	"Source"."FieldBoolean",
+	"Source"."FieldString",
+	"Source"."FieldNString",
+	"Source"."FieldChar",
+	"Source"."FieldNChar",
+	"Source"."FieldFloat",
+	"Source"."FieldDouble",
+	"Source"."FieldDateTime",
+	"Source"."FieldBinary",
+	"Source"."FieldGuid",
+	"Source"."FieldDecimal",
+	"Source"."FieldDate",
+	"Source"."FieldTime",
+	"Source"."FieldEnumString",
+	"Source"."FieldEnumNumber"
 )
 

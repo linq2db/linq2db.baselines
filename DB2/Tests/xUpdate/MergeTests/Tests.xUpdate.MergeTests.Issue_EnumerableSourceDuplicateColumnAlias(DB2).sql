@@ -1,9 +1,9 @@
 ﻿BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
-MERGE INTO "ReviewIndexes" "Target"
+MERGE INTO "MyChildClass" "Target"
 USING (VALUES
-	(1,'2')
+	(1,10), (2,20), (3,30), (4,40)
 ) "Source"
 (
 	"Id",
@@ -11,7 +11,7 @@ USING (VALUES
 )
 ON ("Target"."Id" = "Source"."Id")
 
-WHEN NOT MATCHED AND "Source"."Id" > 1 THEN
+WHEN NOT MATCHED THEN
 INSERT
 (
 	"Id",
