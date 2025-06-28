@@ -40,16 +40,16 @@ AS
 MERGE INTO [CTE_1] [Target]
 USING (
 	SELECT
-		[t2].[Id] as [source_Id],
-		[t2].[Code] as [source_Code]
+		[t2].[Id],
+		[t2].[Code]
 	FROM
 		[tempdb]..[#Issue4657TempTable1] [t2]
 ) [Source]
 (
-	[source_Id],
-	[source_Code]
+	[Id],
+	[Code]
 )
-ON ([Target].[Id] = [Source].[source_Id])
+ON ([Target].[Id] = [Source].[Id])
 
 WHEN NOT MATCHED THEN
 INSERT
@@ -58,7 +58,7 @@ INSERT
 )
 VALUES
 (
-	[Source].[source_Code]
+	[Source].[Code]
 )
 OUTPUT
 	INSERTED.[Id],
