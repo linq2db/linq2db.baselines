@@ -2,7 +2,7 @@
 -- Oracle.18.Managed Oracle.Managed Oracle12 (asynchronously)
 
 INSERT ALL
-WHEN "source_N" > 40 THEN
+WHEN N > 40 THEN
 	INTO "Dest1"
 	(
 		ID,
@@ -10,10 +10,10 @@ WHEN "source_N" > 40 THEN
 	)
 	VALUES
 	(
-		"source_ID" + 1,
-		"source_N"
+		ID + 1,
+		N
 	)
-WHEN "source_N" < 40 THEN
+WHEN N < 40 THEN
 	INTO "Dest1"
 	(
 		ID,
@@ -21,8 +21,8 @@ WHEN "source_N" < 40 THEN
 	)
 	VALUES
 	(
-		"source_ID" + 2,
-		"source_N"
+		ID + 2,
+		N
 	)
 WHEN 1 = 1 THEN
 	INTO "Dest2"
@@ -32,12 +32,12 @@ WHEN 1 = 1 THEN
 	)
 	VALUES
 	(
-		"source_ID" + 3,
-		"source_ID" + 1
+		ID + 3,
+		ID + 1
 	)
 SELECT
-	42 as "source_N",
-	1000 as "source_ID"
+	42 as N,
+	1000 as ID
 FROM SYS.DUAL
 
 BeforeExecute
