@@ -15,17 +15,17 @@ USING (VALUES
 	(143,NULL,1)
 ) [Source]
 (
-	[source_Key1],
-	[source_Key2],
-	[source_Data]
+	[Key1],
+	[Key2],
+	[Data_1]
 )
-ON ([Target].[InheritanceParentId] = [Source].[source_Key1] AND
-([Target].[Name] = [Source].[source_Key2] OR [Target].[Name] IS NULL AND [Source].[source_Key2] IS NULL))
+ON ([Target].[InheritanceParentId] = [Source].[Key1] AND
+([Target].[Name] = [Source].[Key2] OR [Target].[Name] IS NULL AND [Source].[Key2] IS NULL))
 
 WHEN MATCHED THEN
 UPDATE
 SET
-	[TypeDiscriminator] = [Source].[source_Data]
+	[TypeDiscriminator] = [Source].[Data_1]
 
 WHEN NOT MATCHED THEN
 INSERT
@@ -36,9 +36,9 @@ INSERT
 )
 VALUES
 (
-	[Source].[source_Key1],
-	[Source].[source_Key2],
-	[Source].[source_Data]
+	[Source].[Key1],
+	[Source].[Key2],
+	[Source].[Data_1]
 )
 ;
 
@@ -58,17 +58,17 @@ USING (VALUES
 	(143,NULL,1)
 ) [Source]
 (
-	[source_Key1],
-	[source_Key2],
-	[source_Data]
+	[Key1],
+	[Key2],
+	[Data_1]
 )
-ON ([Target].[InheritanceParentId] = [Source].[source_Key1] AND
-([Target].[Name] = [Source].[source_Key2] OR [Target].[Name] IS NULL AND [Source].[source_Key2] IS NULL))
+ON ([Target].[InheritanceParentId] = [Source].[Key1] AND
+([Target].[Name] = [Source].[Key2] OR [Target].[Name] IS NULL AND [Source].[Key2] IS NULL))
 
 WHEN MATCHED THEN
 UPDATE
 SET
-	[TypeDiscriminator] = [Source].[source_Data]
+	[TypeDiscriminator] = [Source].[Data_1]
 
 WHEN NOT MATCHED THEN
 INSERT
@@ -79,9 +79,9 @@ INSERT
 )
 VALUES
 (
-	[Source].[source_Key1],
-	[Source].[source_Key2],
-	[Source].[source_Data]
+	[Source].[Key1],
+	[Source].[Key2],
+	[Source].[Data_1]
 )
 ;
 
