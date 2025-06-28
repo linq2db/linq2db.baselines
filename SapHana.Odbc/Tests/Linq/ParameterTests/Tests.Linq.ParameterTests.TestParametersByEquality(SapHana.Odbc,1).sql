@@ -4,8 +4,6 @@ DECLARE @personId Int -- Int32
 SET     @personId = 1
 DECLARE @personId Int -- Int32
 SET     @personId = 1
-DECLARE @personId Int -- Int32
-SET     @personId = 1
 
 SELECT
 	"p"."FirstName",
@@ -21,12 +19,10 @@ SELECT
 FROM
 	"Person" "p"
 WHERE
-	"p"."PersonID" = ? AND "p"."PersonID" = ? AND "p"."PersonID" = ?
+	"p"."PersonID" = ? AND "p"."PersonID" = ?
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @personId Int -- Int32
-SET     @personId = 1
 DECLARE @personId Int -- Int32
 SET     @personId = 1
 DECLARE @personId Int -- Int32
@@ -46,5 +42,5 @@ SELECT
 FROM
 	"Person" "p"
 WHERE
-	"p"."PersonID" = ? AND "p"."PersonID" = ? AND "p"."PersonID" = ?
+	"p"."PersonID" = ? AND "p"."PersonID" = ?
 

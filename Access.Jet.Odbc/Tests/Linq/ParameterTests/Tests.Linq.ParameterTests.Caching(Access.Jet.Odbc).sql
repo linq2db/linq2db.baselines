@@ -2,8 +2,6 @@
 -- Access.Jet.Odbc AccessODBC
 DECLARE @p Int -- Int32
 SET     @p = 1
-DECLARE @p Int -- Int32
-SET     @p = 1
 
 SELECT
 	[x].[ParentID],
@@ -11,7 +9,7 @@ SELECT
 FROM
 	[Parent] [x]
 WHERE
-	[x].[ParentID] = ? OR [x].[ParentID] = ?
+	[x].[ParentID] = ?
 
 BeforeExecute
 -- Access.Jet.Odbc AccessODBC

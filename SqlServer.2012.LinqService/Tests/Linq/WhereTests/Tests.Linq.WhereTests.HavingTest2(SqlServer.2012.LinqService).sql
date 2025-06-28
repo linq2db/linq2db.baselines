@@ -8,5 +8,5 @@ FROM
 GROUP BY
 	[c_1].[ParentID]
 HAVING
-	COUNT(*) > 1 AND COUNT(*) > 1
+	COUNT(*) > 1
 
