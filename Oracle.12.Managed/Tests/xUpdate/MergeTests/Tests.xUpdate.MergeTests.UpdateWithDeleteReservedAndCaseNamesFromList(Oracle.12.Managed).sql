@@ -236,25 +236,25 @@ BeforeExecute
 
 MERGE INTO "TestMerge1" Target
 USING (
-	SELECT 5 AS "source_in", 10 AS "source_join", 4 AS "source_outer", NULL AS "source_inner", NULL AS "source_with", NULL AS "source_left" FROM sys.dual
+	SELECT 5 AS "in_1", 10 AS "join_1", 4 AS "outer_1", NULL AS "inner_1", NULL AS "with_1", NULL AS "left_1" FROM sys.dual
 	UNION ALL
 	SELECT 6, NULL, NULL, NULL, 216, NULL FROM sys.dual
 	UNION ALL
 	SELECT 3, NULL, 3, NULL, NULL, NULL FROM sys.dual
 	UNION ALL
 	SELECT 4, 5, 7, NULL, 214, NULL FROM sys.dual) "Source"
-ON (Target."Id" = "Source"."source_in")
+ON (Target."Id" = "Source"."in_1")
 
 WHEN MATCHED THEN
 UPDATE
 SET
-	"Field1" = "Source"."source_join",
-	"Field2" = "Source"."source_outer",
-	"Field3" = "Source"."source_inner",
-	"Field4" = "Source"."source_with",
-	"Field5" = "Source"."source_left"
+	"Field1" = "Source"."join_1",
+	"Field2" = "Source"."outer_1",
+	"Field3" = "Source"."inner_1",
+	"Field4" = "Source"."with_1",
+	"Field5" = "Source"."left_1"
 WHERE
-	"Source"."source_with" = 214 OR Target."Id" = 3
+	"Source"."with_1" = 214 OR Target."Id" = 3
 DELETE WHERE
 	Target."Id" = 3
 
