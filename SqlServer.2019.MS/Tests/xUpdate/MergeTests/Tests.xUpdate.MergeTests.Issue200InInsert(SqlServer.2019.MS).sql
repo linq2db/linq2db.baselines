@@ -25,12 +25,12 @@ USING (VALUES
 	(DATETIME2FROMPARTS(2020, 2, 29, 17, 54, 55, 1231235, 7),DATETIMEOFFSETFROMPARTS(2020, 2, 29, 17, 54, 55, 1231235, 0, 40, 7),2)
 ) [Source]
 (
-	[source_datetime2DataType],
-	[source_datetimeoffsetDataType],
-	[source_ID]
+	[datetime2DataType],
+	[datetimeoffsetDataType],
+	[ID]
 )
-ON ([Source].[source_datetime2DataType] = @datetime2DataType AND
-[Source].[source_datetimeoffsetDataType] = @datetimeoffsetDataType)
+ON ([Source].[datetime2DataType] = @datetime2DataType AND
+[Source].[datetimeoffsetDataType] = @datetimeoffsetDataType)
 
 WHEN NOT MATCHED THEN
 INSERT
@@ -41,7 +41,7 @@ INSERT
 )
 VALUES
 (
-	[Source].[source_ID],
+	[Source].[ID],
 	@dto2,
 	@dt2
 )
