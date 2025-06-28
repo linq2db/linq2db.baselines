@@ -42,15 +42,15 @@ USING (VALUES
 	(1,N'John II')
 ) [Source]
 (
-	[source_ID],
-	[source_Name]
+	[ID],
+	[Name]
 )
-ON ([Target].[ID] = [Source].[source_ID])
+ON ([Target].[ID] = [Source].[ID])
 
 WHEN MATCHED THEN
 UPDATE
 SET
-	[Name] = [Source].[source_Name]
+	[Name] = [Source].[Name]
 
 WHEN NOT MATCHED THEN
 INSERT
@@ -60,8 +60,8 @@ INSERT
 )
 VALUES
 (
-	[Source].[source_ID],
-	[Source].[source_Name]
+	[Source].[ID],
+	[Source].[Name]
 )
 ;
 
