@@ -15,7 +15,7 @@ BeforeExecute
 
 MERGE INTO "TestMerge1" "Target"
 USING (
-	SELECT 1 AS "source_Id", NULL AS "source_FieldInt32", NULL AS "source_FieldInt64", NULL AS "source_FieldBoolean", NULL AS "source_FieldString", NULL AS "source_FieldNString", NULL AS "source_FieldChar", NULL AS "source_FieldNChar", NULL AS "source_FieldFloat", NULL AS "source_FieldDateTime", NULL AS "source_FieldGuid", NULL AS "source_FieldDecimal", NULL AS "source_FieldDate", NULL AS "source_FieldEnumString", NULL AS "source_FieldEnumNumber" FROM rdb$database
+	SELECT 1 AS "Id", NULL AS "FieldInt32", NULL AS "FieldInt64", NULL AS "FieldBoolean", NULL AS "FieldString", NULL AS "FieldNString", NULL AS "FieldChar", NULL AS "FieldNChar", NULL AS "FieldFloat", NULL AS "FieldDateTime", NULL AS "FieldGuid", NULL AS "FieldDecimal", NULL AS "FieldDate", NULL AS "FieldEnumString", NULL AS "FieldEnumNumber" FROM rdb$database
 	UNION ALL
 	SELECT 2, -2147483647, -9223372036854775807, TRUE, CAST('normal strinG' AS VARCHAR(13)), CAST(_utf8 x'D0B2D181D08120D0BDD0BED180D0BCD0B0D0BBD18CD0BDD0BE' AS VARCHAR(25)), '*', _utf8 x'D191', -3.40282002E+38, CAST('2000-11-12 21:14:15.167' AS timestamp), X'00000000000000000000000000000000', 12345678.9012345678, CAST('2000-11-23' AS timestamp), CAST('FIRST' AS VARCHAR(5)), NULL FROM rdb$database
 	UNION ALL
@@ -25,23 +25,23 @@ USING (
 	SELECT 4, -123, 987, NULL, CAST('`~!@#$%^&*()_+{}|[]\' AS VARCHAR(20)), CAST(_utf8 x'3C3E3F2F2E2C3B27D189D0A9223A' AS VARCHAR(14)), '', '
 ', 1.17549996E-38, CAST('2098-10-12 21:14:15.997' AS timestamp), X'FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF', 99999999.9999999999, CAST('2110-11-23' AS timestamp), CAST('' AS VARCHAR(1)), 2147483647 FROM rdb$database) "Source"
 (
-	"source_Id",
-	"source_FieldInt32",
-	"source_FieldInt64",
-	"source_FieldBoolean",
-	"source_FieldString",
-	"source_FieldNString",
-	"source_FieldChar",
-	"source_FieldNChar",
-	"source_FieldFloat",
-	"source_FieldDateTime",
-	"source_FieldGuid",
-	"source_FieldDecimal",
-	"source_FieldDate",
-	"source_FieldEnumString",
-	"source_FieldEnumNumber"
+	"Id",
+	"FieldInt32",
+	"FieldInt64",
+	"FieldBoolean",
+	"FieldString",
+	"FieldNString",
+	"FieldChar",
+	"FieldNChar",
+	"FieldFloat",
+	"FieldDateTime",
+	"FieldGuid",
+	"FieldDecimal",
+	"FieldDate",
+	"FieldEnumString",
+	"FieldEnumNumber"
 )
-ON ("Target"."Id" = "Source"."source_Id")
+ON ("Target"."Id" = "Source"."Id")
 
 WHEN NOT MATCHED THEN
 INSERT
@@ -64,21 +64,21 @@ INSERT
 )
 VALUES
 (
-	"Source"."source_Id",
-	"Source"."source_FieldInt32",
-	"Source"."source_FieldInt64",
-	"Source"."source_FieldBoolean",
-	"Source"."source_FieldString",
-	"Source"."source_FieldNString",
-	"Source"."source_FieldChar",
-	"Source"."source_FieldNChar",
-	"Source"."source_FieldFloat",
-	"Source"."source_FieldDateTime",
-	"Source"."source_FieldGuid",
-	"Source"."source_FieldDecimal",
-	"Source"."source_FieldDate",
-	"Source"."source_FieldEnumString",
-	"Source"."source_FieldEnumNumber"
+	"Source"."Id",
+	"Source"."FieldInt32",
+	"Source"."FieldInt64",
+	"Source"."FieldBoolean",
+	"Source"."FieldString",
+	"Source"."FieldNString",
+	"Source"."FieldChar",
+	"Source"."FieldNChar",
+	"Source"."FieldFloat",
+	"Source"."FieldDateTime",
+	"Source"."FieldGuid",
+	"Source"."FieldDecimal",
+	"Source"."FieldDate",
+	"Source"."FieldEnumString",
+	"Source"."FieldEnumNumber"
 )
 
 BeforeExecute
@@ -86,7 +86,7 @@ BeforeExecute
 
 MERGE INTO "TestMerge2" "Target"
 USING (
-	SELECT 3 AS "source_Id", -123 AS "source_FieldInt32", 987 AS "source_FieldInt64", NULL AS "source_FieldBoolean", CAST('<>?/.,;''zZ":' AS VARCHAR(12)) AS "source_FieldString", CAST('`~!@#$%^&*()_+{}|[]\' AS VARCHAR(20)) AS "source_FieldNString", '' AS "source_FieldChar", '' AS "source_FieldNChar", -1.17549996E-38 AS "source_FieldFloat", CAST('2098-10-12 21:14:15.907' AS timestamp) AS "source_FieldDateTime", X'FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF' AS "source_FieldGuid", -0.123 AS "source_FieldDecimal", CAST('2111-11-23' AS timestamp) AS "source_FieldDate", NULL AS "source_FieldEnumString", -2147483647 AS "source_FieldEnumNumber" FROM rdb$database
+	SELECT 3 AS "Id", -123 AS "FieldInt32", 987 AS "FieldInt64", NULL AS "FieldBoolean", CAST('<>?/.,;''zZ":' AS VARCHAR(12)) AS "FieldString", CAST('`~!@#$%^&*()_+{}|[]\' AS VARCHAR(20)) AS "FieldNString", '' AS "FieldChar", '' AS "FieldNChar", -1.17549996E-38 AS "FieldFloat", CAST('2098-10-12 21:14:15.907' AS timestamp) AS "FieldDateTime", X'FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF' AS "FieldGuid", -0.123 AS "FieldDecimal", CAST('2111-11-23' AS timestamp) AS "FieldDate", NULL AS "FieldEnumString", -2147483647 AS "FieldEnumNumber" FROM rdb$database
 	UNION ALL
 	SELECT 4, 2147483647, 9223372036854775807, FALSE, CAST('test
 	' AS VARCHAR(9)), CAST(_utf8 x'D099D0A6D0A3D09AD0A9D18BD0B2D0B0D0BFD180D0BC0D0A71' AS VARCHAR(25)), '1', ' ', 3.40282002E+38, CAST('2001-10-12 21:14:15.167' AS timestamp), X'FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF', -99999999.9999999999, CAST('2123-11-23' AS timestamp), CAST(_utf8 x'00' AS VARCHAR(1)), 0 FROM rdb$database
@@ -96,23 +96,23 @@ USING (
 	SELECT 6, 2147483647, 9223372036854775807, FALSE, CAST('test
 	  ' AS VARCHAR(12)), CAST(_utf8 x'D099D0A6D0A3D09AD0A9D18BD0B2D0B0D0BFD180D0BC0D0A71200D20' AS VARCHAR(28)), '-', '~', 3.40282002E+38, CAST('2001-10-12 21:14:15.167' AS timestamp), X'FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF', -99999999.9999999999, CAST('2123-11-23' AS timestamp), CAST(_utf8 x'00' AS VARCHAR(1)), 0 FROM rdb$database) "Source"
 (
-	"source_Id",
-	"source_FieldInt32",
-	"source_FieldInt64",
-	"source_FieldBoolean",
-	"source_FieldString",
-	"source_FieldNString",
-	"source_FieldChar",
-	"source_FieldNChar",
-	"source_FieldFloat",
-	"source_FieldDateTime",
-	"source_FieldGuid",
-	"source_FieldDecimal",
-	"source_FieldDate",
-	"source_FieldEnumString",
-	"source_FieldEnumNumber"
+	"Id",
+	"FieldInt32",
+	"FieldInt64",
+	"FieldBoolean",
+	"FieldString",
+	"FieldNString",
+	"FieldChar",
+	"FieldNChar",
+	"FieldFloat",
+	"FieldDateTime",
+	"FieldGuid",
+	"FieldDecimal",
+	"FieldDate",
+	"FieldEnumString",
+	"FieldEnumNumber"
 )
-ON ("Target"."Id" = "Source"."source_Id")
+ON ("Target"."Id" = "Source"."Id")
 
 WHEN NOT MATCHED THEN
 INSERT
@@ -135,21 +135,21 @@ INSERT
 )
 VALUES
 (
-	"Source"."source_Id",
-	"Source"."source_FieldInt32",
-	"Source"."source_FieldInt64",
-	"Source"."source_FieldBoolean",
-	"Source"."source_FieldString",
-	"Source"."source_FieldNString",
-	"Source"."source_FieldChar",
-	"Source"."source_FieldNChar",
-	"Source"."source_FieldFloat",
-	"Source"."source_FieldDateTime",
-	"Source"."source_FieldGuid",
-	"Source"."source_FieldDecimal",
-	"Source"."source_FieldDate",
-	"Source"."source_FieldEnumString",
-	"Source"."source_FieldEnumNumber"
+	"Source"."Id",
+	"Source"."FieldInt32",
+	"Source"."FieldInt64",
+	"Source"."FieldBoolean",
+	"Source"."FieldString",
+	"Source"."FieldNString",
+	"Source"."FieldChar",
+	"Source"."FieldNChar",
+	"Source"."FieldFloat",
+	"Source"."FieldDateTime",
+	"Source"."FieldGuid",
+	"Source"."FieldDecimal",
+	"Source"."FieldDate",
+	"Source"."FieldEnumString",
+	"Source"."FieldEnumNumber"
 )
 
 BeforeExecute
