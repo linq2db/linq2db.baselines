@@ -304,8 +304,7 @@ FROM
 			[t1].[cond] = 1
 	) [x_1]
 WHERE
-	[x_1].[Color] = 1 AND [x_1].[Color_1] IS NOT NULL AND [x_1].[Color_1] = 1 OR
-	[x_1].[Color] = 0
+	[x_1].[Color] = 1 AND [x_1].[Color_1] = 1 OR [x_1].[Color] = 0
 
 BeforeExecute
 -- SqlServer.SA SqlServer.2019

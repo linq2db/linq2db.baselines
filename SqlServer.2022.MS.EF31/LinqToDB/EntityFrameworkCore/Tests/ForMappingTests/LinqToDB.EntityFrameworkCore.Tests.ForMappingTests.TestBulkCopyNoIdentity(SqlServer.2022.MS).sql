@@ -1,4 +1,4 @@
-﻿--  SqlServer.2022
+﻿-- SqlServer.2022
 
 CREATE TABLE [tempdb]..[#NoIdentity]
 (
@@ -14,7 +14,7 @@ INSERT BULK [tempdb]..[#NoIdentity](Id, Name)
 
 
 
---  SqlServer.2022
+-- SqlServer.2022
 
 SELECT
 	[t1].[Id],
@@ -24,7 +24,7 @@ FROM
 
 
 
---  SqlServer.2022
+-- SqlServer.2022
 
 DROP TABLE IF EXISTS [tempdb]..[#NoIdentity]
 

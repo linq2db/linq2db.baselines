@@ -166,7 +166,7 @@ SELECT
 FROM
 	"BooleanTable" "r"
 WHERE
-	"r"."Value1" = "r"."Value4" AND "r"."Value4" IS NOT NULL
+	"r"."Value1" = "r"."Value4"
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
@@ -609,7 +609,7 @@ SELECT
 FROM
 	"BooleanTable" "r"
 WHERE
-	"r"."Value1" = "r"."Value4" AND "r"."Value4" IS NOT NULL
+	"r"."Value1" = "r"."Value4"
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
