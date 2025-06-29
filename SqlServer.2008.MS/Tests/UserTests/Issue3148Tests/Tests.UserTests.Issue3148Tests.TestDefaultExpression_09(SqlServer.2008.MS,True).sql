@@ -33,10 +33,7 @@ WHERE
 	CASE
 		WHEN [x].[ParentID] = (
 			SELECT TOP (1)
-				CASE
-					WHEN [a_Children].[ChildID] IS NOT NULL THEN [a_Children].[ChildID]
-					ELSE 0
-				END
+				[a_Children].[ChildID]
 			FROM
 				[Child] [a_Children]
 			WHERE
@@ -81,10 +78,7 @@ WHERE
 	CASE
 		WHEN [x].[ParentID] = (
 			SELECT TOP (1)
-				CASE
-					WHEN [a_Children].[ChildID] IS NOT NULL THEN [a_Children].[ChildID]
-					ELSE 0
-				END
+				[a_Children].[ChildID]
 			FROM
 				[Child] [a_Children]
 			WHERE

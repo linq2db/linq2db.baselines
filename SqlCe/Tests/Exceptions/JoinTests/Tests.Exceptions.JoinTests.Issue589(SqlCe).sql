@@ -20,6 +20,7 @@ FROM
 						LEFT JOIN [Child] [a_Child] ON [grandChild1].[ChildID] = [a_Child].[ChildID]
 					ON [parent1].[ParentID] = [a_Child].[ParentID]
 			WHERE
-				[grandChild1].[ParentID] = [a_Parent].[ParentID]
+				[grandChild1].[ParentID] = [a_Parent].[ParentID] OR
+				[grandChild1].[ParentID] IS NULL AND [a_Parent].[ParentID] IS NULL
 		) [pf_1]
 

@@ -148,7 +148,7 @@ FROM
 			`Item` `x`
 	) `x_1`
 WHERE
-	NOT (`x_1`.`cond` AND NOT `x_1`.`cond_1` OR NOT `x_1`.`cond` AND (`x_1`.`cond_2` AND `x_1`.`cond_3` OR NOT `x_1`.`cond_2`))
+	NOT (NOT `x_1`.`cond` AND (`x_1`.`cond_2` AND `x_1`.`cond_3` OR NOT `x_1`.`cond_2`))
 
 BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
@@ -193,7 +193,7 @@ FROM
 			`Item` `x`
 	) `x_1`
 WHERE
-	`x_1`.`cond` AND NOT `x_1`.`cond_1` OR NOT `x_1`.`cond` AND (`x_1`.`cond_2` AND `x_1`.`cond_3` OR NOT `x_1`.`cond_2`)
+	NOT `x_1`.`cond` AND (`x_1`.`cond_2` AND `x_1`.`cond_3` OR NOT `x_1`.`cond_2`)
 
 BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57

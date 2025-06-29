@@ -22,5 +22,5 @@ SELECT
 FROM
 	`LinqDataTypes` `ia`
 		LEFT JOIN `LinqDataTypes` `a_A1` ON `ia`.`GuidValue` = `a_A1`.`GuidValue` AND `a_A1`.`ID` = 2
-		LEFT JOIN `LinqDataTypes` `a_A2` ON `ia`.`GuidValue` = `a_A2`.`GuidValue` AND (`a_A2`.`ID` <> 2 OR `a_A2`.`ID` IS NULL)
+		LEFT JOIN `LinqDataTypes` `a_A2` ON `ia`.`GuidValue` = `a_A2`.`GuidValue` AND `a_A2`.`ID` <> 2
 
