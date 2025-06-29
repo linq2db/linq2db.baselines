@@ -166,7 +166,7 @@ SELECT
 FROM
 	"BooleanTable" r
 WHERE
-	r."Value1" = r."Value4" AND r."Value4" IS NOT NULL
+	r."Value1" = r."Value4"
 
 BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
@@ -609,7 +609,7 @@ SELECT
 FROM
 	"BooleanTable" r
 WHERE
-	r."Value1" = r."Value4" AND r."Value4" IS NOT NULL
+	r."Value1" = r."Value4"
 
 BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12

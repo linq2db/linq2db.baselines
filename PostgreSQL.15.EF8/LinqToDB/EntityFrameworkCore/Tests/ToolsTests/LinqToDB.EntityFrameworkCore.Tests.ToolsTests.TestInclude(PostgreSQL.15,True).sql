@@ -52,15 +52,14 @@ FROM
 			"a_Employee"."EmployeeID" as "EmployeeId"
 		FROM
 			"Orders" e
-				LEFT JOIN "Employees" "a_Employee" ON e."EmployeeID" = "a_Employee"."EmployeeID" AND (NOT "a_Employee"."IsDeleted" OR NOT "a_Employee"."IsDeleted")
+				LEFT JOIN "Employees" "a_Employee" ON e."EmployeeID" = "a_Employee"."EmployeeID" AND NOT "a_Employee"."IsDeleted"
 		WHERE
-			NOT e."IsDeleted" OR NOT e."IsDeleted"
+			NOT e."IsDeleted"
 	) m_1
 		INNER JOIN "EmployeeTerritories" d ON m_1."EmployeeId" = d."EmployeeID"
 		INNER JOIN "Territories" "a_Territory" ON d."TerritoryID" = "a_Territory"."TerritoryID"
 WHERE
-	(NOT "a_Territory"."IsDeleted" OR NOT "a_Territory"."IsDeleted") AND
-	(NOT d."IsDeleted" OR NOT d."IsDeleted")
+	NOT "a_Territory"."IsDeleted" AND NOT d."IsDeleted"
 
 
 
@@ -92,13 +91,12 @@ FROM
 		FROM
 			"Orders" e
 		WHERE
-			NOT e."IsDeleted" OR NOT e."IsDeleted"
+			NOT e."IsDeleted"
 	) m_1
 		INNER JOIN "Order Details" d ON m_1."OrderId" = d."OrderID"
 		INNER JOIN "Products" "a_Product" ON d."ProductID" = "a_Product"."ProductID"
 WHERE
-	(NOT "a_Product"."IsDeleted" OR NOT "a_Product"."IsDeleted") AND
-	(NOT d."IsDeleted" OR NOT d."IsDeleted")
+	NOT "a_Product"."IsDeleted" AND NOT d."IsDeleted"
 
 
 
@@ -144,9 +142,9 @@ SELECT
 	"a_Employee"."PhotoPath"
 FROM
 	"Orders" e
-		LEFT JOIN "Employees" "a_Employee" ON e."EmployeeID" = "a_Employee"."EmployeeID" AND (NOT "a_Employee"."IsDeleted" OR NOT "a_Employee"."IsDeleted")
+		LEFT JOIN "Employees" "a_Employee" ON e."EmployeeID" = "a_Employee"."EmployeeID" AND NOT "a_Employee"."IsDeleted"
 WHERE
-	NOT e."IsDeleted" OR NOT e."IsDeleted"
+	NOT e."IsDeleted"
 
 
 

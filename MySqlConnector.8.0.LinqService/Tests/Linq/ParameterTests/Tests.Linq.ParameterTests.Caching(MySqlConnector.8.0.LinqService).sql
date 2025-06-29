@@ -9,7 +9,7 @@ SELECT
 FROM
 	`Parent` `x`
 WHERE
-	`x`.`ParentID` = @p OR `x`.`ParentID` = @p
+	`x`.`ParentID` = @p
 
 BeforeExecute
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80

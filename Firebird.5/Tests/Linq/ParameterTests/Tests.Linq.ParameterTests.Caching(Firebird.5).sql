@@ -9,7 +9,7 @@ SELECT
 FROM
 	"Parent" "x"
 WHERE
-	"x"."ParentID" = @p OR "x"."ParentID" = @p
+	"x"."ParentID" = @p
 
 BeforeExecute
 -- Firebird.5 Firebird4

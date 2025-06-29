@@ -18,7 +18,7 @@ UPDATE
 SET
 	`e`.`CompanyName` = @CompanyName
 WHERE
-	(NOT `e`.`IsDeleted` OR NOT `e`.`IsDeleted`) AND `e`.`CustomerID` = @CustomerId
+	NOT `e`.`IsDeleted` AND `e`.`CustomerID` = @CustomerId
 
 
 

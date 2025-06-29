@@ -13,7 +13,7 @@ SELECT
 FROM
 	"Products" e
 WHERE
-	(NOT e."IsDeleted" OR NOT e."IsDeleted") AND e."ProductName" LIKE 'U%' ESCAPE '~'
+	NOT e."IsDeleted" AND e."ProductName" LIKE 'U%' ESCAPE '~'
 
 
 
@@ -22,7 +22,7 @@ WHERE
 DELETE FROM
 	"Products" e
 WHERE
-	(NOT e."IsDeleted" OR NOT e."IsDeleted") AND e."ProductName" = 'a'
+	NOT e."IsDeleted" AND e."ProductName" = 'a'
 
 
 

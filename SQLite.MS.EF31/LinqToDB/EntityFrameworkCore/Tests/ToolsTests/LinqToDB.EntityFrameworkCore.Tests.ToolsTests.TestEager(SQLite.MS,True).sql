@@ -35,7 +35,7 @@ ORDER BY "o"."OrderID", "t2"."EmployeeID", "t2"."TerritoryID", "t2"."TerritoryID
 BeginTransactionAsync(Serializable)
 
 
---  SQLite.MS SQLite (asynchronously)
+-- SQLite.MS SQLite (asynchronously)
 
 SELECT
 	[m_1].[EmployeeId],
@@ -59,12 +59,11 @@ FROM
 		INNER JOIN [EmployeeTerritories] [d] ON [m_1].[EmployeeId] = [d].[EmployeeID]
 		INNER JOIN [Territories] [e_1] ON [d].[TerritoryID] = [e_1].[TerritoryID]
 WHERE
-	NOT [e_1].[IsDeleted] AND NOT [e_1].[IsDeleted] AND
-	NOT [d].[IsDeleted]
+	NOT [e_1].[IsDeleted] AND NOT [d].[IsDeleted]
 
 
 
---  SQLite.MS SQLite (asynchronously)
+-- SQLite.MS SQLite (asynchronously)
 
 SELECT
 	[m_1].[OrderId],
@@ -97,15 +96,14 @@ FROM
 		INNER JOIN [Order Details] [d] ON [m_1].[OrderId] = [d].[OrderID]
 		INNER JOIN [Products] [e_1] ON [d].[ProductID] = [e_1].[ProductID]
 WHERE
-	NOT [e_1].[IsDeleted] AND NOT [e_1].[IsDeleted] AND
-	NOT [d].[IsDeleted]
+	NOT [e_1].[IsDeleted] AND NOT [d].[IsDeleted]
 
 
 
 DisposeTransactionAsync
 
 
---  SQLite.MS SQLite (asynchronously)
+-- SQLite.MS SQLite (asynchronously)
 
 SELECT
 	[a_Employee].[IsDeleted],

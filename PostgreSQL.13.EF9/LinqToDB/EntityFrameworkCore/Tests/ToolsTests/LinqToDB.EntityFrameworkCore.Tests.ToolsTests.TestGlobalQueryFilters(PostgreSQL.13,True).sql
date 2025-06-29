@@ -27,7 +27,7 @@ FROM
 	"Products" p
 		INNER JOIN "Order Details" d ON p."ProductID" = d."ProductID"
 WHERE
-	NOT d."IsDeleted" OR NOT d."IsDeleted"
+	NOT d."IsDeleted"
 
 
 
@@ -68,7 +68,7 @@ FROM
 	"Products" p
 		INNER JOIN "Order Details" d ON p."ProductID" = d."ProductID"
 WHERE
-	(NOT p."IsDeleted" OR NOT p."IsDeleted") AND (NOT d."IsDeleted" OR NOT d."IsDeleted")
+	NOT p."IsDeleted" AND NOT d."IsDeleted"
 
 
 

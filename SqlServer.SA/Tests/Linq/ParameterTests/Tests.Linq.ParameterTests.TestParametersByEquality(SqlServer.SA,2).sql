@@ -19,8 +19,7 @@ SELECT
 FROM
 	[Person] [p]
 WHERE
-	[p].[PersonID] = @personId AND [p].[PersonID] = @personId AND
-	[p].[PersonID] = @personId_1
+	[p].[PersonID] = @personId AND [p].[PersonID] = @personId_1
 
 BeforeExecute
 -- SqlServer.SA SqlServer.2019
@@ -43,6 +42,5 @@ SELECT
 FROM
 	[Person] [p]
 WHERE
-	[p].[PersonID] = @personId AND [p].[PersonID] = @personId AND
-	[p].[PersonID] = @personId_1
+	[p].[PersonID] = @personId AND [p].[PersonID] = @personId_1
 

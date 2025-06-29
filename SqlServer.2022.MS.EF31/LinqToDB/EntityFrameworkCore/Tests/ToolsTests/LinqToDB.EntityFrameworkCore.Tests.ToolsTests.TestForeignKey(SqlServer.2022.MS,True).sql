@@ -11,7 +11,7 @@ LEFT JOIN (
 WHERE (@__ef_filter__p_0 = CAST(1 AS bit)) OR ([e].[IsDeleted] <> CAST(1 AS bit))
 
 
---  SqlServer.2022
+-- SqlServer.2022
 
 SELECT
 	[e].[IsDeleted],

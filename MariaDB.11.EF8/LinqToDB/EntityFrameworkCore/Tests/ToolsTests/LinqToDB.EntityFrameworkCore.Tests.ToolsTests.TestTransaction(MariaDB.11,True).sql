@@ -13,7 +13,7 @@ SELECT
 FROM
 	`Products` `e`
 WHERE
-	(NOT `e`.`IsDeleted` OR NOT `e`.`IsDeleted`) AND `e`.`ProductName` LIKE 'U%' ESCAPE '~'
+	NOT `e`.`IsDeleted` AND `e`.`ProductName` LIKE 'U%' ESCAPE '~'
 
 
 
@@ -23,8 +23,7 @@ DELETE
 FROM
 	`Products`
 WHERE
-	(NOT `Products`.`IsDeleted` OR NOT `Products`.`IsDeleted`) AND
-	`Products`.`ProductName` = 'a'
+	NOT `Products`.`IsDeleted` AND `Products`.`ProductName` = 'a'
 
 
 

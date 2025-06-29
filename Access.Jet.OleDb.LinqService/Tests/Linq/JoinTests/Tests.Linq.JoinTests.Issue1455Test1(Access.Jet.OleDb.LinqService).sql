@@ -254,8 +254,8 @@ FROM
 					[al_group].[AlertCode],
 					[al_group].[CreationDate]
 			) [al_group_1]
-				LEFT JOIN [Trade] [trade_1] ON ([al_group_1].[AlertKey] = IIF([trade_1].[DealId] IS NOT NULL, CStr([trade_1].[DealId]), NULL)))
-				LEFT JOIN [Nomin] [nomin_1] ON ([al_group_1].[AlertKey] = IIF([nomin_1].[CargoId] IS NOT NULL, CStr([nomin_1].[CargoId]), NULL))
+				LEFT JOIN [Trade] [trade_1] ON ([al_group_1].[AlertKey] = CStr([trade_1].[DealId])))
+				LEFT JOIN [Nomin] [nomin_1] ON ([al_group_1].[AlertKey] = CStr([nomin_1].[CargoId]))
 		WHERE
 			[nomin_1].[DeliveryCounterParty] LIKE @cpty_21 OR [trade_1].[CounterParty] LIKE @cpty_22 OR
 			[al_group_1].[AlertCode] LIKE @cpty_23

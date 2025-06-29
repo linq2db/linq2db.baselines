@@ -15,7 +15,7 @@ FROM
 			"LinqDataTypes" x
 				INNER JOIN "LinqDataTypes" o ON x."IntValue" = o."IntValue" OR x."IntValue" IS NULL AND o."IntValue" IS NULL
 				INNER JOIN "LinqDataTypes" u ON o."IntValue" = u."IntValue" OR o."IntValue" IS NULL AND u."IntValue" IS NULL
-				INNER JOIN "LinqDataTypes" r ON (u."IntValue" = r."IntValue" OR u."IntValue" IS NULL AND r."IntValue" IS NULL) AND (u."IntValue" = r."IntValue" OR u."IntValue" IS NULL AND r."IntValue" IS NULL) AND r."BoolValue" = False
+				INNER JOIN "LinqDataTypes" r ON (u."IntValue" = r."IntValue" OR u."IntValue" IS NULL AND r."IntValue" IS NULL) AND r."BoolValue" = False
 				INNER JOIN "LinqDataTypes" f ON r."IntValue" = f."IntValue" OR r."IntValue" IS NULL AND f."IntValue" IS NULL
 		WHERE
 			x."BoolValue" = False AND

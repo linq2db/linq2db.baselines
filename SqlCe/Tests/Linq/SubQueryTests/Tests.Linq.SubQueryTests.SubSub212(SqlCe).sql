@@ -13,7 +13,6 @@ FROM
 				[GrandChild] [a_GrandChildren]
 			WHERE
 				[a_Parent].[ParentID] = [a_GrandChildren].[ParentID] AND
-				[a_GrandChildren].[ParentID] + 1 < [p1].[ParentID] + 2 AND
 				[a_GrandChildren].[ParentID] + 1 < [p1].[ParentID] + 2
 		) [t1]
 WHERE

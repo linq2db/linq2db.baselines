@@ -1,4 +1,4 @@
-﻿--  SqlServer.2019
+﻿-- SqlServer.2019
 DECLARE @test Int -- Int32
 SET     @test = 1
 
