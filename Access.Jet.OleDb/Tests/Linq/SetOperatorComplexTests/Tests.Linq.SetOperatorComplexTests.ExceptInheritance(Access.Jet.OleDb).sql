@@ -2,28 +2,17 @@
 -- Access.Jet.OleDb AccessOleDb
 
 SELECT DISTINCT
-	[t1].[cond],
-	[t1].[Discriminator],
-	[t1].[BookName],
-	[t1].[NovelScore],
-	[t1].[RomanScore]
+	[a_Book].[BookId],
+	[a_Book].[Discriminator],
+	[a_Book].[BookName],
+	[a_Book].[NovelScore],
+	[a_Book].[RomanScore]
 FROM
-	(
-		SELECT
-			[a_Book].[BookId] as [cond],
-			[a_Book].[Discriminator],
-			[a_Book].[BookName],
-			[a_Book].[RomanScore],
-			[a_Book].[NovelScore]
-		FROM
-			([Author] [a]
-				INNER JOIN [BookAuthor] [b] ON ([b].[FkAuthorId] = [a].[AuthorId]))
-				LEFT JOIN [Book] [a_Book] ON ([b].[FkBookId] = [a_Book].[BookId])
-		WHERE
-			[a_Book].[Discriminator] = 'Roman'
-	) [t1]
+	([Author] [t1]
+		INNER JOIN [BookAuthor] [b] ON ([b].[FkAuthorId] = [t1].[AuthorId]))
+		LEFT JOIN [Book] [a_Book] ON ([b].[FkBookId] = [a_Book].[BookId])
 WHERE
-	NOT EXISTS(
+	[a_Book].[Discriminator] = 'Roman' AND NOT EXISTS(
 		SELECT
 			*
 		FROM
@@ -32,12 +21,11 @@ WHERE
 				LEFT JOIN [Book] [a_Book_1] ON ([b_1].[FkBookId] = [a_Book_1].[BookId])
 		WHERE
 			[a_Book_1].[Discriminator] = 'Novel' AND
-			([t1].[cond] = [a_Book_1].[BookId] OR [t1].[cond] IS NULL AND [a_Book_1].[BookId] IS NULL) AND
-			([t1].[cond] = [a_Book_1].[BookId] OR [t1].[cond] IS NULL AND [a_Book_1].[BookId] IS NULL) AND
-			([t1].[Discriminator] = [a_Book_1].[Discriminator] OR [t1].[Discriminator] IS NULL AND [a_Book_1].[Discriminator] IS NULL) AND
-			([t1].[BookName] = [a_Book_1].[BookName] OR [t1].[BookName] IS NULL AND [a_Book_1].[BookName] IS NULL) AND
-			([t1].[RomanScore] = [a_Book_1].[RomanScore] OR [t1].[RomanScore] IS NULL AND [a_Book_1].[RomanScore] IS NULL) AND
-			([t1].[NovelScore] = [a_Book_1].[NovelScore] OR [t1].[NovelScore] IS NULL AND [a_Book_1].[NovelScore] IS NULL)
+			([a_Book].[BookId] = [a_Book_1].[BookId] OR [a_Book].[BookId] IS NULL AND [a_Book_1].[BookId] IS NULL) AND
+			([a_Book].[Discriminator] = [a_Book_1].[Discriminator] OR [a_Book].[Discriminator] IS NULL AND [a_Book_1].[Discriminator] IS NULL) AND
+			([a_Book].[BookName] = [a_Book_1].[BookName] OR [a_Book].[BookName] IS NULL AND [a_Book_1].[BookName] IS NULL) AND
+			([a_Book].[RomanScore] = [a_Book_1].[RomanScore] OR [a_Book].[RomanScore] IS NULL AND [a_Book_1].[RomanScore] IS NULL) AND
+			([a_Book].[NovelScore] = [a_Book_1].[NovelScore] OR [a_Book].[NovelScore] IS NULL AND [a_Book_1].[NovelScore] IS NULL)
 	)
 
 BeforeExecute

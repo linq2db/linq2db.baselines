@@ -936,9 +936,18 @@ SELECT
 		WHEN r.DoubleN = 0 THEN 't'::BOOLEAN
 		ELSE 'f'::BOOLEAN
 	END::BOOLEAN,
-	Nvl(r.Int32N, r.Int32) = 0,
-	Nvl(r.DecimalN, r."Decimal") = 0,
-	Nvl(r.DoubleN, r."Double") = 0,
+	CASE
+		WHEN Nvl(r.Int32N, r.Int32) = 0 THEN 't'::BOOLEAN
+		ELSE 'f'::BOOLEAN
+	END::BOOLEAN,
+	CASE
+		WHEN Nvl(r.DecimalN, r."Decimal") = 0 THEN 't'::BOOLEAN
+		ELSE 'f'::BOOLEAN
+	END::BOOLEAN,
+	CASE
+		WHEN Nvl(r.DoubleN, r."Double") = 0 THEN 't'::BOOLEAN
+		ELSE 'f'::BOOLEAN
+	END::BOOLEAN,
 	CASE
 		WHEN CASE
 			WHEN r."Boolean" THEN r.Int32N
@@ -1002,9 +1011,18 @@ SELECT
 		WHEN r.DoubleN > 0 THEN 't'::BOOLEAN
 		ELSE 'f'::BOOLEAN
 	END::BOOLEAN,
-	Nvl(r.Int32N, r.Int32) > 0,
-	Nvl(r.DecimalN, r."Decimal") > 0,
-	Nvl(r.DoubleN, r."Double") > 0,
+	CASE
+		WHEN Nvl(r.Int32N, r.Int32) > 0 THEN 't'::BOOLEAN
+		ELSE 'f'::BOOLEAN
+	END::BOOLEAN,
+	CASE
+		WHEN Nvl(r.DecimalN, r."Decimal") > 0 THEN 't'::BOOLEAN
+		ELSE 'f'::BOOLEAN
+	END::BOOLEAN,
+	CASE
+		WHEN Nvl(r.DoubleN, r."Double") > 0 THEN 't'::BOOLEAN
+		ELSE 'f'::BOOLEAN
+	END::BOOLEAN,
 	CASE
 		WHEN CASE
 			WHEN r."Boolean" THEN r.Int32N
@@ -1068,9 +1086,18 @@ SELECT
 		WHEN r.DoubleN >= 0 THEN 't'::BOOLEAN
 		ELSE 'f'::BOOLEAN
 	END::BOOLEAN,
-	Nvl(r.Int32N, r.Int32) >= 0,
-	Nvl(r.DecimalN, r."Decimal") >= 0,
-	Nvl(r.DoubleN, r."Double") >= 0,
+	CASE
+		WHEN Nvl(r.Int32N, r.Int32) >= 0 THEN 't'::BOOLEAN
+		ELSE 'f'::BOOLEAN
+	END::BOOLEAN,
+	CASE
+		WHEN Nvl(r.DecimalN, r."Decimal") >= 0 THEN 't'::BOOLEAN
+		ELSE 'f'::BOOLEAN
+	END::BOOLEAN,
+	CASE
+		WHEN Nvl(r.DoubleN, r."Double") >= 0 THEN 't'::BOOLEAN
+		ELSE 'f'::BOOLEAN
+	END::BOOLEAN,
 	CASE
 		WHEN CASE
 			WHEN r."Boolean" THEN r.Int32N
@@ -1134,9 +1161,18 @@ SELECT
 		WHEN r.DoubleN < 0 THEN 't'::BOOLEAN
 		ELSE 'f'::BOOLEAN
 	END::BOOLEAN,
-	Nvl(r.Int32N, r.Int32) < 0,
-	Nvl(r.DecimalN, r."Decimal") < 0,
-	Nvl(r.DoubleN, r."Double") < 0,
+	CASE
+		WHEN Nvl(r.Int32N, r.Int32) < 0 THEN 't'::BOOLEAN
+		ELSE 'f'::BOOLEAN
+	END::BOOLEAN,
+	CASE
+		WHEN Nvl(r.DecimalN, r."Decimal") < 0 THEN 't'::BOOLEAN
+		ELSE 'f'::BOOLEAN
+	END::BOOLEAN,
+	CASE
+		WHEN Nvl(r.DoubleN, r."Double") < 0 THEN 't'::BOOLEAN
+		ELSE 'f'::BOOLEAN
+	END::BOOLEAN,
 	CASE
 		WHEN CASE
 			WHEN r."Boolean" THEN r.Int32N
@@ -1200,9 +1236,18 @@ SELECT
 		WHEN r.DoubleN <= 0 THEN 't'::BOOLEAN
 		ELSE 'f'::BOOLEAN
 	END::BOOLEAN,
-	Nvl(r.Int32N, r.Int32) <= 0,
-	Nvl(r.DecimalN, r."Decimal") <= 0,
-	Nvl(r.DoubleN, r."Double") <= 0,
+	CASE
+		WHEN Nvl(r.Int32N, r.Int32) <= 0 THEN 't'::BOOLEAN
+		ELSE 'f'::BOOLEAN
+	END::BOOLEAN,
+	CASE
+		WHEN Nvl(r.DecimalN, r."Decimal") <= 0 THEN 't'::BOOLEAN
+		ELSE 'f'::BOOLEAN
+	END::BOOLEAN,
+	CASE
+		WHEN Nvl(r.DoubleN, r."Double") <= 0 THEN 't'::BOOLEAN
+		ELSE 'f'::BOOLEAN
+	END::BOOLEAN,
 	CASE
 		WHEN CASE
 			WHEN r."Boolean" THEN r.Int32N
@@ -1271,9 +1316,18 @@ SELECT
 		WHEN r_1.DoubleN = 0 THEN 't'::BOOLEAN
 		ELSE 'f'::BOOLEAN
 	END::BOOLEAN,
-	Nvl(r_1.Int32N, r_1.Int32) = 0,
-	Nvl(r_1.DecimalN, r_1."Decimal") = 0,
-	Nvl(r_1.DoubleN, r_1."Double") = 0,
+	CASE
+		WHEN Nvl(r_1.Int32N, r_1.Int32) = 0 THEN 't'::BOOLEAN
+		ELSE 'f'::BOOLEAN
+	END::BOOLEAN,
+	CASE
+		WHEN Nvl(r_1.DecimalN, r_1."Decimal") = 0 THEN 't'::BOOLEAN
+		ELSE 'f'::BOOLEAN
+	END::BOOLEAN,
+	CASE
+		WHEN Nvl(r_1.DoubleN, r_1."Double") = 0 THEN 't'::BOOLEAN
+		ELSE 'f'::BOOLEAN
+	END::BOOLEAN,
 	CASE
 		WHEN CASE
 			WHEN r_1."Boolean" THEN r_1.Int32N
@@ -1337,9 +1391,18 @@ SELECT
 		WHEN r_1.DoubleN > 0 THEN 't'::BOOLEAN
 		ELSE 'f'::BOOLEAN
 	END::BOOLEAN,
-	Nvl(r_1.Int32N, r_1.Int32) > 0,
-	Nvl(r_1.DecimalN, r_1."Decimal") > 0,
-	Nvl(r_1.DoubleN, r_1."Double") > 0,
+	CASE
+		WHEN Nvl(r_1.Int32N, r_1.Int32) > 0 THEN 't'::BOOLEAN
+		ELSE 'f'::BOOLEAN
+	END::BOOLEAN,
+	CASE
+		WHEN Nvl(r_1.DecimalN, r_1."Decimal") > 0 THEN 't'::BOOLEAN
+		ELSE 'f'::BOOLEAN
+	END::BOOLEAN,
+	CASE
+		WHEN Nvl(r_1.DoubleN, r_1."Double") > 0 THEN 't'::BOOLEAN
+		ELSE 'f'::BOOLEAN
+	END::BOOLEAN,
 	CASE
 		WHEN CASE
 			WHEN r_1."Boolean" THEN r_1.Int32N
@@ -1403,9 +1466,18 @@ SELECT
 		WHEN r_1.DoubleN >= 0 THEN 't'::BOOLEAN
 		ELSE 'f'::BOOLEAN
 	END::BOOLEAN,
-	Nvl(r_1.Int32N, r_1.Int32) >= 0,
-	Nvl(r_1.DecimalN, r_1."Decimal") >= 0,
-	Nvl(r_1.DoubleN, r_1."Double") >= 0,
+	CASE
+		WHEN Nvl(r_1.Int32N, r_1.Int32) >= 0 THEN 't'::BOOLEAN
+		ELSE 'f'::BOOLEAN
+	END::BOOLEAN,
+	CASE
+		WHEN Nvl(r_1.DecimalN, r_1."Decimal") >= 0 THEN 't'::BOOLEAN
+		ELSE 'f'::BOOLEAN
+	END::BOOLEAN,
+	CASE
+		WHEN Nvl(r_1.DoubleN, r_1."Double") >= 0 THEN 't'::BOOLEAN
+		ELSE 'f'::BOOLEAN
+	END::BOOLEAN,
 	CASE
 		WHEN CASE
 			WHEN r_1."Boolean" THEN r_1.Int32N
@@ -1469,9 +1541,18 @@ SELECT
 		WHEN r_1.DoubleN < 0 THEN 't'::BOOLEAN
 		ELSE 'f'::BOOLEAN
 	END::BOOLEAN,
-	Nvl(r_1.Int32N, r_1.Int32) < 0,
-	Nvl(r_1.DecimalN, r_1."Decimal") < 0,
-	Nvl(r_1.DoubleN, r_1."Double") < 0,
+	CASE
+		WHEN Nvl(r_1.Int32N, r_1.Int32) < 0 THEN 't'::BOOLEAN
+		ELSE 'f'::BOOLEAN
+	END::BOOLEAN,
+	CASE
+		WHEN Nvl(r_1.DecimalN, r_1."Decimal") < 0 THEN 't'::BOOLEAN
+		ELSE 'f'::BOOLEAN
+	END::BOOLEAN,
+	CASE
+		WHEN Nvl(r_1.DoubleN, r_1."Double") < 0 THEN 't'::BOOLEAN
+		ELSE 'f'::BOOLEAN
+	END::BOOLEAN,
 	CASE
 		WHEN CASE
 			WHEN r_1."Boolean" THEN r_1.Int32N
@@ -1535,9 +1616,18 @@ SELECT
 		WHEN r_1.DoubleN <= 0 THEN 't'::BOOLEAN
 		ELSE 'f'::BOOLEAN
 	END::BOOLEAN,
-	Nvl(r_1.Int32N, r_1.Int32) <= 0,
-	Nvl(r_1.DecimalN, r_1."Decimal") <= 0,
-	Nvl(r_1.DoubleN, r_1."Double") <= 0,
+	CASE
+		WHEN Nvl(r_1.Int32N, r_1.Int32) <= 0 THEN 't'::BOOLEAN
+		ELSE 'f'::BOOLEAN
+	END::BOOLEAN,
+	CASE
+		WHEN Nvl(r_1.DecimalN, r_1."Decimal") <= 0 THEN 't'::BOOLEAN
+		ELSE 'f'::BOOLEAN
+	END::BOOLEAN,
+	CASE
+		WHEN Nvl(r_1.DoubleN, r_1."Double") <= 0 THEN 't'::BOOLEAN
+		ELSE 'f'::BOOLEAN
+	END::BOOLEAN,
 	CASE
 		WHEN CASE
 			WHEN r_1."Boolean" THEN r_1.Int32N
@@ -2495,9 +2585,18 @@ SELECT
 		WHEN r.DoubleN = 0 THEN 't'::BOOLEAN
 		ELSE 'f'::BOOLEAN
 	END::BOOLEAN,
-	Nvl(r.Int32N, r.Int32) = 0,
-	Nvl(r.DecimalN, r."Decimal") = 0,
-	Nvl(r.DoubleN, r."Double") = 0,
+	CASE
+		WHEN Nvl(r.Int32N, r.Int32) = 0 THEN 't'::BOOLEAN
+		ELSE 'f'::BOOLEAN
+	END::BOOLEAN,
+	CASE
+		WHEN Nvl(r.DecimalN, r."Decimal") = 0 THEN 't'::BOOLEAN
+		ELSE 'f'::BOOLEAN
+	END::BOOLEAN,
+	CASE
+		WHEN Nvl(r.DoubleN, r."Double") = 0 THEN 't'::BOOLEAN
+		ELSE 'f'::BOOLEAN
+	END::BOOLEAN,
 	CASE
 		WHEN CASE
 			WHEN r."Boolean" THEN r.Int32N
@@ -2561,9 +2660,18 @@ SELECT
 		WHEN r.DoubleN > 0 THEN 't'::BOOLEAN
 		ELSE 'f'::BOOLEAN
 	END::BOOLEAN,
-	Nvl(r.Int32N, r.Int32) > 0,
-	Nvl(r.DecimalN, r."Decimal") > 0,
-	Nvl(r.DoubleN, r."Double") > 0,
+	CASE
+		WHEN Nvl(r.Int32N, r.Int32) > 0 THEN 't'::BOOLEAN
+		ELSE 'f'::BOOLEAN
+	END::BOOLEAN,
+	CASE
+		WHEN Nvl(r.DecimalN, r."Decimal") > 0 THEN 't'::BOOLEAN
+		ELSE 'f'::BOOLEAN
+	END::BOOLEAN,
+	CASE
+		WHEN Nvl(r.DoubleN, r."Double") > 0 THEN 't'::BOOLEAN
+		ELSE 'f'::BOOLEAN
+	END::BOOLEAN,
 	CASE
 		WHEN CASE
 			WHEN r."Boolean" THEN r.Int32N
@@ -2627,9 +2735,18 @@ SELECT
 		WHEN r.DoubleN >= 0 THEN 't'::BOOLEAN
 		ELSE 'f'::BOOLEAN
 	END::BOOLEAN,
-	Nvl(r.Int32N, r.Int32) >= 0,
-	Nvl(r.DecimalN, r."Decimal") >= 0,
-	Nvl(r.DoubleN, r."Double") >= 0,
+	CASE
+		WHEN Nvl(r.Int32N, r.Int32) >= 0 THEN 't'::BOOLEAN
+		ELSE 'f'::BOOLEAN
+	END::BOOLEAN,
+	CASE
+		WHEN Nvl(r.DecimalN, r."Decimal") >= 0 THEN 't'::BOOLEAN
+		ELSE 'f'::BOOLEAN
+	END::BOOLEAN,
+	CASE
+		WHEN Nvl(r.DoubleN, r."Double") >= 0 THEN 't'::BOOLEAN
+		ELSE 'f'::BOOLEAN
+	END::BOOLEAN,
 	CASE
 		WHEN CASE
 			WHEN r."Boolean" THEN r.Int32N
@@ -2693,9 +2810,18 @@ SELECT
 		WHEN r.DoubleN < 0 THEN 't'::BOOLEAN
 		ELSE 'f'::BOOLEAN
 	END::BOOLEAN,
-	Nvl(r.Int32N, r.Int32) < 0,
-	Nvl(r.DecimalN, r."Decimal") < 0,
-	Nvl(r.DoubleN, r."Double") < 0,
+	CASE
+		WHEN Nvl(r.Int32N, r.Int32) < 0 THEN 't'::BOOLEAN
+		ELSE 'f'::BOOLEAN
+	END::BOOLEAN,
+	CASE
+		WHEN Nvl(r.DecimalN, r."Decimal") < 0 THEN 't'::BOOLEAN
+		ELSE 'f'::BOOLEAN
+	END::BOOLEAN,
+	CASE
+		WHEN Nvl(r.DoubleN, r."Double") < 0 THEN 't'::BOOLEAN
+		ELSE 'f'::BOOLEAN
+	END::BOOLEAN,
 	CASE
 		WHEN CASE
 			WHEN r."Boolean" THEN r.Int32N
@@ -2759,9 +2885,18 @@ SELECT
 		WHEN r.DoubleN <= 0 THEN 't'::BOOLEAN
 		ELSE 'f'::BOOLEAN
 	END::BOOLEAN,
-	Nvl(r.Int32N, r.Int32) <= 0,
-	Nvl(r.DecimalN, r."Decimal") <= 0,
-	Nvl(r.DoubleN, r."Double") <= 0,
+	CASE
+		WHEN Nvl(r.Int32N, r.Int32) <= 0 THEN 't'::BOOLEAN
+		ELSE 'f'::BOOLEAN
+	END::BOOLEAN,
+	CASE
+		WHEN Nvl(r.DecimalN, r."Decimal") <= 0 THEN 't'::BOOLEAN
+		ELSE 'f'::BOOLEAN
+	END::BOOLEAN,
+	CASE
+		WHEN Nvl(r.DoubleN, r."Double") <= 0 THEN 't'::BOOLEAN
+		ELSE 'f'::BOOLEAN
+	END::BOOLEAN,
 	CASE
 		WHEN CASE
 			WHEN r."Boolean" THEN r.Int32N
@@ -2830,9 +2965,18 @@ SELECT
 		WHEN r_1.DoubleN = 0 THEN 't'::BOOLEAN
 		ELSE 'f'::BOOLEAN
 	END::BOOLEAN,
-	Nvl(r_1.Int32N, r_1.Int32) = 0,
-	Nvl(r_1.DecimalN, r_1."Decimal") = 0,
-	Nvl(r_1.DoubleN, r_1."Double") = 0,
+	CASE
+		WHEN Nvl(r_1.Int32N, r_1.Int32) = 0 THEN 't'::BOOLEAN
+		ELSE 'f'::BOOLEAN
+	END::BOOLEAN,
+	CASE
+		WHEN Nvl(r_1.DecimalN, r_1."Decimal") = 0 THEN 't'::BOOLEAN
+		ELSE 'f'::BOOLEAN
+	END::BOOLEAN,
+	CASE
+		WHEN Nvl(r_1.DoubleN, r_1."Double") = 0 THEN 't'::BOOLEAN
+		ELSE 'f'::BOOLEAN
+	END::BOOLEAN,
 	CASE
 		WHEN CASE
 			WHEN r_1."Boolean" THEN r_1.Int32N
@@ -2896,9 +3040,18 @@ SELECT
 		WHEN r_1.DoubleN > 0 THEN 't'::BOOLEAN
 		ELSE 'f'::BOOLEAN
 	END::BOOLEAN,
-	Nvl(r_1.Int32N, r_1.Int32) > 0,
-	Nvl(r_1.DecimalN, r_1."Decimal") > 0,
-	Nvl(r_1.DoubleN, r_1."Double") > 0,
+	CASE
+		WHEN Nvl(r_1.Int32N, r_1.Int32) > 0 THEN 't'::BOOLEAN
+		ELSE 'f'::BOOLEAN
+	END::BOOLEAN,
+	CASE
+		WHEN Nvl(r_1.DecimalN, r_1."Decimal") > 0 THEN 't'::BOOLEAN
+		ELSE 'f'::BOOLEAN
+	END::BOOLEAN,
+	CASE
+		WHEN Nvl(r_1.DoubleN, r_1."Double") > 0 THEN 't'::BOOLEAN
+		ELSE 'f'::BOOLEAN
+	END::BOOLEAN,
 	CASE
 		WHEN CASE
 			WHEN r_1."Boolean" THEN r_1.Int32N
@@ -2962,9 +3115,18 @@ SELECT
 		WHEN r_1.DoubleN >= 0 THEN 't'::BOOLEAN
 		ELSE 'f'::BOOLEAN
 	END::BOOLEAN,
-	Nvl(r_1.Int32N, r_1.Int32) >= 0,
-	Nvl(r_1.DecimalN, r_1."Decimal") >= 0,
-	Nvl(r_1.DoubleN, r_1."Double") >= 0,
+	CASE
+		WHEN Nvl(r_1.Int32N, r_1.Int32) >= 0 THEN 't'::BOOLEAN
+		ELSE 'f'::BOOLEAN
+	END::BOOLEAN,
+	CASE
+		WHEN Nvl(r_1.DecimalN, r_1."Decimal") >= 0 THEN 't'::BOOLEAN
+		ELSE 'f'::BOOLEAN
+	END::BOOLEAN,
+	CASE
+		WHEN Nvl(r_1.DoubleN, r_1."Double") >= 0 THEN 't'::BOOLEAN
+		ELSE 'f'::BOOLEAN
+	END::BOOLEAN,
 	CASE
 		WHEN CASE
 			WHEN r_1."Boolean" THEN r_1.Int32N
@@ -3028,9 +3190,18 @@ SELECT
 		WHEN r_1.DoubleN < 0 THEN 't'::BOOLEAN
 		ELSE 'f'::BOOLEAN
 	END::BOOLEAN,
-	Nvl(r_1.Int32N, r_1.Int32) < 0,
-	Nvl(r_1.DecimalN, r_1."Decimal") < 0,
-	Nvl(r_1.DoubleN, r_1."Double") < 0,
+	CASE
+		WHEN Nvl(r_1.Int32N, r_1.Int32) < 0 THEN 't'::BOOLEAN
+		ELSE 'f'::BOOLEAN
+	END::BOOLEAN,
+	CASE
+		WHEN Nvl(r_1.DecimalN, r_1."Decimal") < 0 THEN 't'::BOOLEAN
+		ELSE 'f'::BOOLEAN
+	END::BOOLEAN,
+	CASE
+		WHEN Nvl(r_1.DoubleN, r_1."Double") < 0 THEN 't'::BOOLEAN
+		ELSE 'f'::BOOLEAN
+	END::BOOLEAN,
 	CASE
 		WHEN CASE
 			WHEN r_1."Boolean" THEN r_1.Int32N
@@ -3094,9 +3265,18 @@ SELECT
 		WHEN r_1.DoubleN <= 0 THEN 't'::BOOLEAN
 		ELSE 'f'::BOOLEAN
 	END::BOOLEAN,
-	Nvl(r_1.Int32N, r_1.Int32) <= 0,
-	Nvl(r_1.DecimalN, r_1."Decimal") <= 0,
-	Nvl(r_1.DoubleN, r_1."Double") <= 0,
+	CASE
+		WHEN Nvl(r_1.Int32N, r_1.Int32) <= 0 THEN 't'::BOOLEAN
+		ELSE 'f'::BOOLEAN
+	END::BOOLEAN,
+	CASE
+		WHEN Nvl(r_1.DecimalN, r_1."Decimal") <= 0 THEN 't'::BOOLEAN
+		ELSE 'f'::BOOLEAN
+	END::BOOLEAN,
+	CASE
+		WHEN Nvl(r_1.DoubleN, r_1."Double") <= 0 THEN 't'::BOOLEAN
+		ELSE 'f'::BOOLEAN
+	END::BOOLEAN,
 	CASE
 		WHEN CASE
 			WHEN r_1."Boolean" THEN r_1.Int32N
