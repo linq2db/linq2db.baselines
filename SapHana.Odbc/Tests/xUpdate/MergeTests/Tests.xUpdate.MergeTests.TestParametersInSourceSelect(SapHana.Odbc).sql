@@ -226,17 +226,17 @@ SET     @param = 3
 MERGE INTO "TestMerge1" "Target"
 USING (
 	SELECT
-		"t1"."Id" as "source_Id",
-		? as "source_Val"
+		"t1"."Id",
+		? as "Val"
 	FROM
 		"TestMerge2" "t1"
 ) "Source"
-ON ("Target"."Id" = "Source"."source_Id" AND "Target"."Id" = "Source"."source_Val")
+ON ("Target"."Id" = "Source"."Id" AND "Target"."Id" = "Source"."Val")
 
 WHEN MATCHED THEN
 UPDATE
 SET
-	"Field1" = "Source"."source_Val" + 111
+	"Field1" = "Source"."Val" + 111
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc

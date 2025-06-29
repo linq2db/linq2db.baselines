@@ -6,7 +6,7 @@ SET     @userId = 1
 MERGE INTO "PatentAssessment" "Target"
 USING (
 	SELECT
-		"pa"."PatentId" as "source_PatentId",
+		"pa"."PatentId",
 		(
 			SELECT
 				LIST("a_User"."DisplayName", '; ')
@@ -15,7 +15,7 @@ USING (
 					LEFT JOIN "User" "a_User" ON "patr"."UserId" = "a_User"."Id"
 			WHERE
 				"patr"."PatentId" = "pa"."PatentId"
-		) as "source_TechnicalReviewersText"
+		) as "TechnicalReviewersText"
 	FROM
 		"PatentAssessment" "pa"
 	WHERE
@@ -29,13 +29,13 @@ USING (
 		)
 ) "Source"
 (
-	"source_PatentId",
-	"source_TechnicalReviewersText"
+	"PatentId",
+	"TechnicalReviewersText"
 )
-ON ("Target"."PatentId" = "Source"."source_PatentId")
+ON ("Target"."PatentId" = "Source"."PatentId")
 
 WHEN MATCHED THEN
 UPDATE
 SET
-	"TechnicalReviewersText" = "Source"."source_TechnicalReviewersText"
+	"TechnicalReviewersText" = "Source"."TechnicalReviewersText"
 

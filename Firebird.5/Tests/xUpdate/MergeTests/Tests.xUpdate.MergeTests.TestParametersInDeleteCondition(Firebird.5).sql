@@ -226,13 +226,13 @@ SET     @param = 4
 MERGE INTO "TestMerge1" "Target"
 USING (
 	SELECT
-		"t1"."Id" as "source_Id"
+		"t1"."Id"
 	FROM
 		"TestMerge2" "t1"
 ) "Source"
 (
-	"source_Id"
+	"Id"
 )
-ON ("Target"."Id" = "Source"."source_Id")
-WHEN MATCHED AND "Source"."source_Id" = CAST(@param AS Int) THEN DELETE
+ON ("Target"."Id" = "Source"."Id")
+WHEN MATCHED AND "Source"."Id" = CAST(@param AS Int) THEN DELETE
 

@@ -249,9 +249,9 @@ USING (VALUES
 	(3), (4), (5), (6)
 ) [Source]
 (
-	[source_Id]
+	[Id]
 )
-ON ([Target].[Id] = [Source].[source_Id] OR [Target].[Id] = @Val4)
+ON ([Target].[Id] = [Source].[Id] OR [Target].[Id] = @Val4)
 
 WHEN NOT MATCHED By Source AND [Target].[Id] = @Val3 THEN UPDATE
 SET

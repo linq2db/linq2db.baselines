@@ -247,10 +247,10 @@ USING (VALUES
 	(3,@value), (4,@value_1), (5,@value_2), (6,@value_3)
 ) "Source"
 (
-	"source_Id",
-	"source_Field"
+	"Id",
+	"Field"
 )
-ON ("Target"."Id" = "Source"."source_Id")
+ON ("Target"."Id" = "Source"."Id")
 WHEN MATCHED AND "Target"."Field3" <> 1 OR "Target"."Field3" IS NULL OR
-"Source"."source_Field" IS NOT NULL THEN DELETE
+"Source"."Field" IS NOT NULL THEN DELETE
 

@@ -224,15 +224,15 @@ BeforeExecute
 MERGE INTO "TestMerge1" "Target"
 USING (
 	SELECT
-		t1."Id" as source_select
+		t1."Id" as select_1
 	FROM
 		"TestMerge2" t1
 ) "Source"
 (
-	source_select
+	select_1
 )
-ON ("Source".source_select = "Target"."Id")
-WHEN MATCHED AND "Source".source_select = 4 THEN DELETE
+ON ("Source".select_1 = "Target"."Id")
+WHEN MATCHED AND "Source".select_1 = 4 THEN DELETE
 
 BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL

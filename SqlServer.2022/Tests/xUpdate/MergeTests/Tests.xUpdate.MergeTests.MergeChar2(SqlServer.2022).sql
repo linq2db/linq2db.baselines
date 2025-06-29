@@ -8,19 +8,19 @@ USING (VALUES
 	(10,char(0),char(0),NULL)
 ) [Source]
 (
-	[source_ID],
-	[source_charDataType],
-	[source_ncharDataType],
-	[source_nvarcharDataType]
+	[ID],
+	[charDataType],
+	[ncharDataType],
+	[nvarcharDataType]
 )
-ON ([Target].[ID] = [Source].[source_ID])
+ON ([Target].[ID] = [Source].[ID])
 
 WHEN MATCHED THEN
 UPDATE
 SET
-	[charDataType] = [Source].[source_charDataType],
-	[ncharDataType] = [Source].[source_ncharDataType],
-	[nvarcharDataType] = [Source].[source_nvarcharDataType]
+	[charDataType] = [Source].[charDataType],
+	[ncharDataType] = [Source].[ncharDataType],
+	[nvarcharDataType] = [Source].[nvarcharDataType]
 
 WHEN NOT MATCHED THEN
 INSERT
@@ -31,9 +31,9 @@ INSERT
 )
 VALUES
 (
-	[Source].[source_charDataType],
-	[Source].[source_ncharDataType],
-	[Source].[source_nvarcharDataType]
+	[Source].[charDataType],
+	[Source].[ncharDataType],
+	[Source].[nvarcharDataType]
 )
 ;
 

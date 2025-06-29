@@ -224,21 +224,21 @@ BeforeExecute
 MERGE INTO "TestMerge1" "Target"
 USING (
 	SELECT
-		"Target_1"."Id" as "source_Id",
-		"Target_1"."Field2" as "source_Field2"
+		"Target_1"."Id",
+		"Target_1"."Field2"
 	FROM
 		"TestMerge1" "Target_1"
 ) "Source"
 (
-	"source_Id",
-	"source_Field2"
+	"Id",
+	"Field2"
 )
-ON ("Target"."Id" = "Source"."source_Id")
+ON ("Target"."Id" = "Source"."Id")
 
 WHEN MATCHED THEN
 UPDATE
 SET
-	"Field1" = "Target"."Field1" + "Source"."source_Field2"
+	"Field1" = "Target"."Field1" + "Source"."Field2"
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW

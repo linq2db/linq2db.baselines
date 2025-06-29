@@ -26,27 +26,27 @@ q',N'&',N'>',3.40282002E+38,1.7976931348623157E+308,DATETIME2FROMPARTS(2001, 10,
 ',1.17549996E-38,-2.2250738585072014E-308,DATETIME2FROMPARTS(2098, 10, 12, 21, 14, 15, 9970000, 7),DATETIMEOFFSETFROMPARTS(2001, 11, 22, 13, 14, 16, 1224567, 1, 39, 7),0xFFC864321400,'ffffffff-ffff-ffff-ffff-ffffffffffff',99999999.9999999999,DATETIME2FROMPARTS(2110, 11, 23, 0, 0, 0, 0, 7),TIMEFROMPARTS(0, 0, 0, 0, 7),N'',2147483647)
 ) [Source]
 (
-	[source_Id],
-	[source_FieldInt32],
-	[source_FieldInt64],
-	[source_FieldBoolean],
-	[source_FieldString],
-	[source_FieldNString],
-	[source_FieldChar],
-	[source_FieldNChar],
-	[source_FieldFloat],
-	[source_FieldDouble],
-	[source_FieldDateTime],
-	[source_FieldDateTime2],
-	[source_FieldBinary],
-	[source_FieldGuid],
-	[source_FieldDecimal],
-	[source_FieldDate],
-	[source_FieldTime],
-	[source_FieldEnumString],
-	[source_FieldEnumNumber]
+	[Id],
+	[FieldInt32],
+	[FieldInt64],
+	[FieldBoolean],
+	[FieldString],
+	[FieldNString],
+	[FieldChar],
+	[FieldNChar],
+	[FieldFloat],
+	[FieldDouble],
+	[FieldDateTime],
+	[FieldDateTime2],
+	[FieldBinary],
+	[FieldGuid],
+	[FieldDecimal],
+	[FieldDate],
+	[FieldTime],
+	[FieldEnumString],
+	[FieldEnumNumber]
 )
-ON ([Target].[Id] = [Source].[source_Id])
+ON ([Target].[Id] = [Source].[Id])
 
 WHEN NOT MATCHED THEN
 INSERT
@@ -73,25 +73,25 @@ INSERT
 )
 VALUES
 (
-	[Source].[source_Id],
-	[Source].[source_FieldInt32],
-	[Source].[source_FieldInt64],
-	[Source].[source_FieldBoolean],
-	[Source].[source_FieldString],
-	[Source].[source_FieldNString],
-	[Source].[source_FieldChar],
-	[Source].[source_FieldNChar],
-	[Source].[source_FieldFloat],
-	[Source].[source_FieldDouble],
-	[Source].[source_FieldDateTime],
-	[Source].[source_FieldDateTime2],
-	[Source].[source_FieldBinary],
-	[Source].[source_FieldGuid],
-	[Source].[source_FieldDecimal],
-	[Source].[source_FieldDate],
-	[Source].[source_FieldTime],
-	[Source].[source_FieldEnumString],
-	[Source].[source_FieldEnumNumber]
+	[Source].[Id],
+	[Source].[FieldInt32],
+	[Source].[FieldInt64],
+	[Source].[FieldBoolean],
+	[Source].[FieldString],
+	[Source].[FieldNString],
+	[Source].[FieldChar],
+	[Source].[FieldNChar],
+	[Source].[FieldFloat],
+	[Source].[FieldDouble],
+	[Source].[FieldDateTime],
+	[Source].[FieldDateTime2],
+	[Source].[FieldBinary],
+	[Source].[FieldGuid],
+	[Source].[FieldDecimal],
+	[Source].[FieldDate],
+	[Source].[FieldTime],
+	[Source].[FieldEnumString],
+	[Source].[FieldEnumNumber]
 )
 ;
 
@@ -110,27 +110,27 @@ q',N'1',N' ',3.40282002E+38,1.7976931348623157E+308,DATETIME2FROMPARTS(2001, 10,
 q  ',N'-',N'~',3.40282002E+38,1.7976931348623157E+308,DATETIME2FROMPARTS(2001, 10, 12, 21, 14, 15, 1670000, 7),DATETIMEOFFSETFROMPARTS(2001, 11, 22, 13, 14, 15, 9990000, 0, -15, 7),0x000102030004,'ffffffff-ffff-ffff-ffff-ffffffffffff',-99999999.9999999999,DATETIME2FROMPARTS(2123, 11, 23, 0, 0, 0, 0, 7),TIMEFROMPARTS(22, 44, 33, 0, 7),char(0),0)
 ) [Source]
 (
-	[source_Id],
-	[source_FieldInt32],
-	[source_FieldInt64],
-	[source_FieldBoolean],
-	[source_FieldString],
-	[source_FieldNString],
-	[source_FieldChar],
-	[source_FieldNChar],
-	[source_FieldFloat],
-	[source_FieldDouble],
-	[source_FieldDateTime],
-	[source_FieldDateTime2],
-	[source_FieldBinary],
-	[source_FieldGuid],
-	[source_FieldDecimal],
-	[source_FieldDate],
-	[source_FieldTime],
-	[source_FieldEnumString],
-	[source_FieldEnumNumber]
+	[Id],
+	[FieldInt32],
+	[FieldInt64],
+	[FieldBoolean],
+	[FieldString],
+	[FieldNString],
+	[FieldChar],
+	[FieldNChar],
+	[FieldFloat],
+	[FieldDouble],
+	[FieldDateTime],
+	[FieldDateTime2],
+	[FieldBinary],
+	[FieldGuid],
+	[FieldDecimal],
+	[FieldDate],
+	[FieldTime],
+	[FieldEnumString],
+	[FieldEnumNumber]
 )
-ON ([Target].[Id] = [Source].[source_Id])
+ON ([Target].[Id] = [Source].[Id])
 
 WHEN NOT MATCHED THEN
 INSERT
@@ -157,25 +157,25 @@ INSERT
 )
 VALUES
 (
-	[Source].[source_Id],
-	[Source].[source_FieldInt32],
-	[Source].[source_FieldInt64],
-	[Source].[source_FieldBoolean],
-	[Source].[source_FieldString],
-	[Source].[source_FieldNString],
-	[Source].[source_FieldChar],
-	[Source].[source_FieldNChar],
-	[Source].[source_FieldFloat],
-	[Source].[source_FieldDouble],
-	[Source].[source_FieldDateTime],
-	[Source].[source_FieldDateTime2],
-	[Source].[source_FieldBinary],
-	[Source].[source_FieldGuid],
-	[Source].[source_FieldDecimal],
-	[Source].[source_FieldDate],
-	[Source].[source_FieldTime],
-	[Source].[source_FieldEnumString],
-	[Source].[source_FieldEnumNumber]
+	[Source].[Id],
+	[Source].[FieldInt32],
+	[Source].[FieldInt64],
+	[Source].[FieldBoolean],
+	[Source].[FieldString],
+	[Source].[FieldNString],
+	[Source].[FieldChar],
+	[Source].[FieldNChar],
+	[Source].[FieldFloat],
+	[Source].[FieldDouble],
+	[Source].[FieldDateTime],
+	[Source].[FieldDateTime2],
+	[Source].[FieldBinary],
+	[Source].[FieldGuid],
+	[Source].[FieldDecimal],
+	[Source].[FieldDate],
+	[Source].[FieldTime],
+	[Source].[FieldEnumString],
+	[Source].[FieldEnumNumber]
 )
 ;
 

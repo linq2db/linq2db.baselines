@@ -224,15 +224,15 @@ BeforeExecute
 MERGE INTO "TestMerge1" "Target"
 USING (
 	SELECT
-		"t1"."Id" as "source_Key"
+		"t1"."Id" as "Key_1"
 	FROM
 		"TestMerge2" "t1"
 ) "Source"
 (
-	"source_Key"
+	"Key_1"
 )
-ON ("Source"."source_Key" = "Target"."Id")
-WHEN MATCHED AND "Source"."source_Key" = 4 THEN DELETE
+ON ("Source"."Key_1" = "Target"."Id")
+WHEN MATCHED AND "Source"."Key_1" = 4 THEN DELETE
 
 BeforeExecute
 -- Firebird.5 Firebird4

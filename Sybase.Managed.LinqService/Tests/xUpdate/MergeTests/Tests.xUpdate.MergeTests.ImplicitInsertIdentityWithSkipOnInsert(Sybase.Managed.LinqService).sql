@@ -32,13 +32,13 @@ BeforeExecute
 
 MERGE INTO [TestMergeIdentity] [Target]
 USING (
-	SELECT 22 AS [source_Field]
+	SELECT 22 AS [Field]
 	UNION ALL
 	SELECT 23) [Source]
 (
-	[source_Field]
+	[Field]
 )
-ON ([Target].[Field] = [Source].[source_Field] OR [Target].[Field] IS NULL AND [Source].[source_Field] IS NULL)
+ON ([Target].[Field] = [Source].[Field] OR [Target].[Field] IS NULL AND [Source].[Field] IS NULL)
 
 WHEN NOT MATCHED THEN
 INSERT
@@ -47,7 +47,7 @@ INSERT
 )
 VALUES
 (
-	[Source].[source_Field]
+	[Source].[Field]
 )
 
 BeforeExecute

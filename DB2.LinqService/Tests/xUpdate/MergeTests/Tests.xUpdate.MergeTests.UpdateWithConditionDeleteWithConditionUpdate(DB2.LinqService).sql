@@ -240,20 +240,20 @@ USING (VALUES
 	(6,NULL,NULL,NULL), (1,123,NULL,NULL)
 ) "Source"
 (
-	"source_Id",
-	"source_Field1",
-	"source_Field2",
-	"source_Field3"
+	"Id",
+	"Field1",
+	"Field2",
+	"Field3"
 )
-ON ("Target"."Id" = "Source"."source_Id")
+ON ("Target"."Id" = "Source"."Id")
 
 WHEN MATCHED AND "Target"."Id" = 3 THEN
 UPDATE
 SET
-	"Field1" = "Source"."source_Field1",
-	"Field2" = "Source"."source_Field2",
-	"Field3" = "Source"."source_Field3"
-WHEN MATCHED AND "Source"."source_Id" = 1 THEN DELETE
+	"Field1" = "Source"."Field1",
+	"Field2" = "Source"."Field2",
+	"Field3" = "Source"."Field3"
+WHEN MATCHED AND "Source"."Id" = 1 THEN DELETE
 
 WHEN MATCHED THEN
 UPDATE

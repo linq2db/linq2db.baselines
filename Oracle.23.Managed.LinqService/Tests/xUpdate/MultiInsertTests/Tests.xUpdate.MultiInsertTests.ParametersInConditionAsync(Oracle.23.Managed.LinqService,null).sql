@@ -17,7 +17,7 @@ WHEN 1 = 1 THEN
 	VALUES
 	(
 		:id1,
-		"source_Value"
+		"Value_1"
 	)
 WHEN 1 = 0 THEN
 	INTO "Dest1"
@@ -28,10 +28,10 @@ WHEN 1 = 0 THEN
 	VALUES
 	(
 		:id2,
-		"source_Value"
+		"Value_1"
 	)
 SELECT
-	:value as "source_Value"
+	:value as "Value_1"
 FROM SYS.DUAL
 
 BeforeExecute

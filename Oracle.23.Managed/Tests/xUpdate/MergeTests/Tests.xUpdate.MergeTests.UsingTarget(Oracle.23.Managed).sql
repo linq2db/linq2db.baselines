@@ -224,17 +224,17 @@ BeforeExecute
 MERGE INTO "TestMerge1" Target
 USING (
 	SELECT
-		Target_1."Id" as "source_Id",
-		Target_1."Field2" as "source_Field2"
+		Target_1."Id",
+		Target_1."Field2"
 	FROM
 		"TestMerge1" Target_1
 ) "Source"
-ON (Target."Id" = "Source"."source_Id")
+ON (Target."Id" = "Source"."Id")
 
 WHEN MATCHED THEN
 UPDATE
 SET
-	"Field1" = Target."Field1" + "Source"."source_Field2"
+	"Field1" = Target."Field1" + "Source"."Field2"
 
 BeforeExecute
 -- Oracle.23.Managed Oracle.Managed Oracle12

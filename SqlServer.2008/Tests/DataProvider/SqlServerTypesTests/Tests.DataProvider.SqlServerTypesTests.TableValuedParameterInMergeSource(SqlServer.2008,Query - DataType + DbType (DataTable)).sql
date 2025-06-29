@@ -15,18 +15,18 @@ SET     @p =
 MERGE INTO [tempdb]..[#TestMergeTVPTable] [Target]
 USING (
 	SELECT
-		[t1].[Id] as [source_Id],
-		[t1].[Name] as [source_Name]
+		[t1].[Id],
+		[t1].[Name]
 	FROM
 		@p [t1]
 	WHERE
 		[t1].[Id] IS NOT NULL
 ) [Source]
 (
-	[source_Id],
-	[source_Name]
+	[Id],
+	[Name]
 )
-ON ([Target].[Id] = [Source].[source_Id])
+ON ([Target].[Id] = [Source].[Id])
 
 WHEN NOT MATCHED THEN
 INSERT
@@ -36,8 +36,8 @@ INSERT
 )
 VALUES
 (
-	[Source].[source_Id],
-	[Source].[source_Name]
+	[Source].[Id],
+	[Source].[Name]
 )
 ;
 

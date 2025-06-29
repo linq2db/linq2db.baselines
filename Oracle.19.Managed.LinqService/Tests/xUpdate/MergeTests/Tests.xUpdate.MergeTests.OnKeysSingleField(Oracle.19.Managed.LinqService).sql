@@ -224,13 +224,13 @@ BeforeExecute
 MERGE INTO "TestMerge1" Target
 USING (
 	SELECT
-		s."Field1" - 5 as "source_Field1"
+		s."Field1" - 5 as "Field1"
 	FROM
 		"TestMerge2" s
 	WHERE
 		s."Field1" IS NOT NULL
 ) "Source"
-ON (Target."Field1" = "Source"."source_Field1" OR Target."Field1" IS NULL AND "Source"."source_Field1" IS NULL)
+ON (Target."Field1" = "Source"."Field1" OR Target."Field1" IS NULL AND "Source"."Field1" IS NULL)
 
 WHEN MATCHED THEN
 UPDATE

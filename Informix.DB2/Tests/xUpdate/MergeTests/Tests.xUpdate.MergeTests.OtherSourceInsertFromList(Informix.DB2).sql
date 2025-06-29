@@ -223,7 +223,7 @@ BeforeExecute
 
 MERGE INTO TestMerge1 Target
 USING (
-	SELECT 3::Int AS source_OtherId, NULL::Int AS source_OtherField1, NULL::Int AS source_OtherField5, 3::Int AS source_OtherField2, NULL::Int AS source_OtherField4, 113::Int AS source_OtherField3 FROM table(set{1})
+	SELECT 3::Int AS OtherId, NULL::Int AS OtherField1, NULL::Int AS OtherField5, 3::Int AS OtherField2, NULL::Int AS OtherField4, 113::Int AS OtherField3 FROM table(set{1})
 	UNION ALL
 	SELECT 4::Int, 5::Int, NULL::Int, 7::Int, 214::Int, NULL::Int FROM table(set{1})
 	UNION ALL
@@ -231,14 +231,14 @@ USING (
 	UNION ALL
 	SELECT 6::Int, NULL::Int, 316::Int, NULL::Int, 216::Int, 116::Int FROM table(set{1})) Source
 (
-	source_OtherId,
-	source_OtherField1,
-	source_OtherField5,
-	source_OtherField2,
-	source_OtherField4,
-	source_OtherField3
+	OtherId,
+	OtherField1,
+	OtherField5,
+	OtherField2,
+	OtherField4,
+	OtherField3
 )
-ON (Target.Id = Source.source_OtherId)
+ON (Target.Id = Source.OtherId)
 
 WHEN NOT MATCHED THEN
 INSERT
@@ -252,12 +252,12 @@ INSERT
 )
 VALUES
 (
-	Source.source_OtherId,
-	Source.source_OtherField1,
-	Source.source_OtherField5,
-	Source.source_OtherField2,
-	Source.source_OtherField4,
-	Source.source_OtherField3
+	Source.OtherId,
+	Source.OtherField1,
+	Source.OtherField5,
+	Source.OtherField2,
+	Source.OtherField4,
+	Source.OtherField3
 )
 
 BeforeExecute

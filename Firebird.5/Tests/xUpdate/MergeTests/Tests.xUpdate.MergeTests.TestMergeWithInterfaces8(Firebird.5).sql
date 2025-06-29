@@ -3,13 +3,13 @@
 
 MERGE INTO "ReviewIndexes" "Target"
 USING (
-	SELECT 1 AS "source_Id" FROM rdb$database) "Source"
+	SELECT 1 AS "Id" FROM rdb$database) "Source"
 (
-	"source_Id"
+	"Id"
 )
-ON ("Target"."Id" = "Source"."source_Id")
+ON ("Target"."Id" = "Source"."Id")
 
-WHEN NOT MATCHED AND "Source"."source_Id" > 1 THEN
+WHEN NOT MATCHED AND "Source"."Id" > 1 THEN
 INSERT
 (
 	"Id",

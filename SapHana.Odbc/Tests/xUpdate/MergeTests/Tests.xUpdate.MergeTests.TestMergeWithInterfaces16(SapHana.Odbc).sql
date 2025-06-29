@@ -3,7 +3,7 @@
 
 MERGE INTO "ReviewIndexes" "Target"
 USING (
-	SELECT 1 AS "source_Id" FROM DUMMY) "Source"
-ON ("Target"."Id" = "Source"."source_Id")
+	SELECT 1 AS "Id" FROM DUMMY) "Source"
+ON ("Target"."Id" = "Source"."Id")
 WHEN MATCHED THEN DELETE
 

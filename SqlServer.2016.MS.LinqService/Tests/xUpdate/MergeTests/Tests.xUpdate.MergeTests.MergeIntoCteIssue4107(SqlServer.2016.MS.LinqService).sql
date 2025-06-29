@@ -15,14 +15,14 @@ AS
 MERGE INTO [CTE_1] [Target]
 USING (
 	SELECT
-		[t1].[ChildID] as [source_ChildID]
+		[t1].[ChildID]
 	FROM
 		[Child] [t1]
 ) [Source]
 (
-	[source_ChildID]
+	[ChildID]
 )
-ON ([Target].[ID] = [Source].[source_ChildID])
+ON ([Target].[ID] = [Source].[ChildID])
 
 WHEN MATCHED THEN
 UPDATE

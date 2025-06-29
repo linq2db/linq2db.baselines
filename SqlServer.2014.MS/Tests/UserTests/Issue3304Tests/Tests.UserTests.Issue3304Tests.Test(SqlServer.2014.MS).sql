@@ -8,12 +8,12 @@ USING (VALUES
 	('bc7b663d-0fde-4327-8f92-5d8cc3a11d11',@Version,NULL,NULL)
 ) [Source]
 (
-	[source_UserId],
-	[source_Version],
-	[source_UpdatedOn],
-	[source_Value]
+	[UserId],
+	[Version_1],
+	[UpdatedOn],
+	[Value_1]
 )
-ON ([Target].[UserId] = [Source].[source_UserId])
+ON ([Target].[UserId] = [Source].[UserId])
 
 WHEN NOT MATCHED THEN
 INSERT
@@ -25,10 +25,10 @@ INSERT
 )
 VALUES
 (
-	[Source].[source_Version],
-	[Source].[source_UpdatedOn],
-	[Source].[source_UserId],
-	[Source].[source_Value]
+	[Source].[Version_1],
+	[Source].[UpdatedOn],
+	[Source].[UserId],
+	[Source].[Value_1]
 )
 ;
 

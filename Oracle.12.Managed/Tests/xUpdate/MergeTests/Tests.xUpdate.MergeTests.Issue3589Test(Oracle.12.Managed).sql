@@ -224,11 +224,11 @@ BeforeExecute
 MERGE INTO "TestMerge1" Target
 USING (
 	SELECT
-		r."Id" as "source_Id",
-		r."Field1" as "source_Field1",
-		r."Field2" as "source_Field2",
-		r."Field4" as "source_Field4",
-		r."Field3" as "source_Field3"
+		r."Id",
+		r."Field1",
+		r."Field2",
+		r."Field4",
+		r."Field3"
 	FROM
 		"TestMerge2" r
 	WHERE
@@ -246,16 +246,16 @@ INSERT
 )
 VALUES
 (
-	"Source"."source_Id",
-	"Source"."source_Field1",
-	"Source"."source_Field2",
-	"Source"."source_Field4"
+	"Source"."Id",
+	"Source"."Field1",
+	"Source"."Field2",
+	"Source"."Field4"
 )
 
 WHEN MATCHED THEN
 UPDATE
 SET
-	"Field1" = "Source"."source_Field1",
-	"Field2" = "Source"."source_Field2",
-	"Field3" = "Source"."source_Field3"
+	"Field1" = "Source"."Field1",
+	"Field2" = "Source"."Field2",
+	"Field3" = "Source"."Field3"
 

@@ -239,10 +239,10 @@ USING (VALUES
 	(3), (4), (5), (6)
 ) "Source"
 (
-	source_update
+	update_1
 )
-ON ("Source".source_update = "Target"."Id")
-WHEN MATCHED AND "Source".source_update = 4 THEN DELETE
+ON ("Source".update_1 = "Target"."Id")
+WHEN MATCHED AND "Source".update_1 = 4 THEN DELETE
 
 BeforeExecute
 -- PostgreSQL.17 PostgreSQL.15 PostgreSQL

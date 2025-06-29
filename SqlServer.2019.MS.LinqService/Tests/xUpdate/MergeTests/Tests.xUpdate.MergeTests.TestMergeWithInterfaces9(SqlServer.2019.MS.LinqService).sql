@@ -6,14 +6,14 @@ USING (VALUES
 	(1,N'2')
 ) [Source]
 (
-	[source_Id],
-	[source_Value]
+	[Id],
+	[Value_1]
 )
-ON ([Target].[Id] = [Source].[source_Id])
+ON ([Target].[Id] = [Source].[Id])
 
-WHEN MATCHED AND [Target].[Id] <> [Source].[source_Id] THEN
+WHEN MATCHED AND [Target].[Id] <> [Source].[Id] THEN
 UPDATE
 SET
-	[Value] = [Source].[source_Value]
+	[Value] = [Source].[Value_1]
 ;
 

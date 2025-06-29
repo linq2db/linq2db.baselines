@@ -240,11 +240,11 @@ USING (VALUES
 	(11), (22)
 ) [Source]
 (
-	[source_Value1]
+	[Value1]
 )
-ON ([Target].[ParentID] = [Source].[source_Value1])
+ON ([Target].[ParentID] = [Source].[Value1])
 
-WHEN NOT MATCHED AND [Source].[source_Value1] = -123 THEN
+WHEN NOT MATCHED AND [Source].[Value1] = -123 THEN
 INSERT
 (
 	[ParentID],
@@ -253,7 +253,7 @@ INSERT
 VALUES
 (
 	10,
-	[Source].[source_Value1]
+	[Source].[Value1]
 )
 ;
 

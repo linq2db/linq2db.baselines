@@ -41,17 +41,17 @@ BeforeExecute
 
 MERGE INTO [FluentTemp] [Target]
 USING (
-	SELECT 1 AS [source_ID], 'John II' AS [source_Name]) [Source]
+	SELECT 1 AS [ID], 'John II' AS [Name]) [Source]
 (
-	[source_ID],
-	[source_Name]
+	[ID],
+	[Name]
 )
-ON ([Target].[ID] = [Source].[source_ID])
+ON ([Target].[ID] = [Source].[ID])
 
 WHEN MATCHED THEN
 UPDATE
 SET
-	[Name] = [Source].[source_Name]
+	[Name] = [Source].[Name]
 
 WHEN NOT MATCHED THEN
 INSERT
@@ -61,8 +61,8 @@ INSERT
 )
 VALUES
 (
-	[Source].[source_ID],
-	[Source].[source_Name]
+	[Source].[ID],
+	[Source].[Name]
 )
 
 BeforeExecute

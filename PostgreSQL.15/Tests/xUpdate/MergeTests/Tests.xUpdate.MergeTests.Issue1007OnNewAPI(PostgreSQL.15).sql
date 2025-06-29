@@ -34,7 +34,7 @@ USING (VALUES
 	(10)
 ) "Source"
 (
-	"source_Field"
+	"Field"
 )
 ON ("Target"."Field" IS NULL)
 
@@ -45,13 +45,13 @@ INSERT
 )
 VALUES
 (
-	"Source"."source_Field"
+	"Source"."Field"
 )
 
 WHEN MATCHED THEN
 UPDATE
 SET
-	"Field" = "Source"."source_Field"
+	"Field" = "Source"."Field"
 
 BeforeExecute
 -- PostgreSQL.15 PostgreSQL

@@ -226,20 +226,20 @@ BeforeExecute
 MERGE INTO [TestMerge1] [Target]
 USING (
 	SELECT
-		[t1].[Id] as [source_Id],
-		[t1].[Field3] as [source_Field1],
-		[t1].[Field4] as [source_Field2],
-		[t1].[Id] + [t1].[Id] + [t1].[Id] as [source_Field4]
+		[t1].[Id],
+		[t1].[Field3] as [Field1],
+		[t1].[Field4] as [Field2],
+		[t1].[Id] + [t1].[Id] + [t1].[Id] as [Field4]
 	FROM
 		[TestMerge2] [t1]
 ) [Source]
 (
-	[source_Id],
-	[source_Field1],
-	[source_Field2],
-	[source_Field4]
+	[Id],
+	[Field1],
+	[Field2],
+	[Field4]
 )
-ON ([Target].[Id] = [Source].[source_Id] - 1)
+ON ([Target].[Id] = [Source].[Id] - 1)
 
 WHEN NOT MATCHED THEN
 INSERT
@@ -251,10 +251,10 @@ INSERT
 )
 VALUES
 (
-	[Source].[source_Id],
-	[Source].[source_Field1],
-	[Source].[source_Field2],
-	[Source].[source_Field4]
+	[Source].[Id],
+	[Source].[Field1],
+	[Source].[Field2],
+	[Source].[Field4]
 )
 ;
 

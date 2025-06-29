@@ -8,7 +8,7 @@ DECLARE @id2 Int32
 SET     @id2 = 4000
 
 INSERT ALL
-WHEN "source_Value" IS NULL THEN
+WHEN "Value_1" IS NULL THEN
 	INTO "Dest1"
 	(
 		ID,
@@ -19,7 +19,7 @@ WHEN "source_Value" IS NULL THEN
 		:id1,
 		:value
 	)
-WHEN "source_Value" IS NOT NULL THEN
+WHEN "Value_1" IS NOT NULL THEN
 	INTO "Dest1"
 	(
 		ID,
@@ -31,7 +31,7 @@ WHEN "source_Value" IS NOT NULL THEN
 		:value
 	)
 SELECT
-	:value as "source_Value"
+	:value as "Value_1"
 FROM SYS.DUAL
 
 BeforeExecute
