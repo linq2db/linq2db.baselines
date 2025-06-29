@@ -230,9 +230,9 @@ USING (
 )
  [Source]
 (
-	[source_ID]
+	[ID]
 )
-ON ([Target].[Id] = [Source].[source_ID])
+ON ([Target].[Id] = [Source].[ID])
 
 WHEN NOT MATCHED THEN
 INSERT
@@ -241,7 +241,7 @@ INSERT
 )
 VALUES
 (
-	[Source].[source_ID]
+	[Source].[ID]
 )
 ;
 

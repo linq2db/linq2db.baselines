@@ -224,14 +224,14 @@ BeforeExecute
 MERGE INTO "TestMerge1" "Target"
 USING (
 	SELECT
-		t1."Id" as "source_OtherId"
+		t1."Id" as "OtherId"
 	FROM
 		"TestMerge2" t1
 ) "Source"
 (
-	"source_OtherId"
+	"OtherId"
 )
-ON ("Source"."source_OtherId" = "Target"."Id")
+ON ("Source"."OtherId" = "Target"."Id")
 WHEN MATCHED AND "Target"."Id" = 4 THEN DELETE
 
 BeforeExecute

@@ -8,7 +8,7 @@ DECLARE @value Varchar2 -- String
 SET     @value = NULL
 
 INSERT ALL
-WHEN "source_Value" IS NULL THEN
+WHEN "Value_1" IS NULL THEN
 	INTO "Dest1"
 	(
 		ID,
@@ -17,9 +17,9 @@ WHEN "source_Value" IS NULL THEN
 	VALUES
 	(
 		:id1,
-		"source_Value"
+		"Value_1"
 	)
-WHEN "source_Value" IS NOT NULL THEN
+WHEN "Value_1" IS NOT NULL THEN
 	INTO "Dest1"
 	(
 		ID,
@@ -28,10 +28,10 @@ WHEN "source_Value" IS NOT NULL THEN
 	VALUES
 	(
 		:id2,
-		"source_Value"
+		"Value_1"
 	)
 SELECT
-	:value as "source_Value"
+	:value as "Value_1"
 FROM SYS.DUAL
 
 BeforeExecute

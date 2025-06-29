@@ -3,12 +3,12 @@
 
 MERGE INTO "PKOnlyTable" Target
 USING (
-	SELECT 1 AS "source_ID" FROM sys.dual
+	SELECT 1 AS ID FROM sys.dual
 	UNION ALL
 	SELECT 2 FROM sys.dual
 	UNION ALL
 	SELECT 3 FROM sys.dual) "Source"
-ON (Target.ID = "Source"."source_ID")
+ON (Target.ID = "Source".ID)
 
 WHEN NOT MATCHED THEN
 INSERT
@@ -17,7 +17,7 @@ INSERT
 )
 VALUES
 (
-	"Source"."source_ID"
+	"Source".ID
 )
 
 BeforeExecute

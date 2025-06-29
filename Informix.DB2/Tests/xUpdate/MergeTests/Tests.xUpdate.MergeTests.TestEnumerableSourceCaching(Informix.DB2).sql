@@ -3,19 +3,19 @@
 
 MERGE INTO CacheTestTable Target
 USING (
-	SELECT 1::Int AS source_Id, 1::Int AS source_Value FROM table(set{1})
+	SELECT 1::Int AS Id, 1::Int AS Value_1 FROM table(set{1})
 	UNION ALL
 	SELECT 2::Int, 2::Int FROM table(set{1})) Source
 (
-	source_Id,
-	source_Value
+	Id,
+	Value_1
 )
-ON (Target.Id = Source.source_Id)
+ON (Target.Id = Source.Id)
 
 WHEN MATCHED THEN
 UPDATE
 SET
-	"Value" = Source.source_Value
+	"Value" = Source.Value_1
 
 WHEN NOT MATCHED THEN
 INSERT
@@ -25,8 +25,8 @@ INSERT
 )
 VALUES
 (
-	Source.source_Id,
-	Source.source_Value
+	Source.Id,
+	Source.Value_1
 )
 
 BeforeExecute
@@ -45,21 +45,21 @@ BeforeExecute
 
 MERGE INTO CacheTestTable Target
 USING (
-	SELECT 1::Int AS source_Id, 1::Int AS source_Value FROM table(set{1})
+	SELECT 1::Int AS Id, 1::Int AS Value_1 FROM table(set{1})
 	UNION ALL
 	SELECT 2::Int, 4::Int FROM table(set{1})
 	UNION ALL
 	SELECT 3::Int, 3::Int FROM table(set{1})) Source
 (
-	source_Id,
-	source_Value
+	Id,
+	Value_1
 )
-ON (Target.Id = Source.source_Id)
+ON (Target.Id = Source.Id)
 
 WHEN MATCHED THEN
 UPDATE
 SET
-	"Value" = Source.source_Value
+	"Value" = Source.Value_1
 
 WHEN NOT MATCHED THEN
 INSERT
@@ -69,8 +69,8 @@ INSERT
 )
 VALUES
 (
-	Source.source_Id,
-	Source.source_Value
+	Source.Id,
+	Source.Value_1
 )
 
 BeforeExecute

@@ -3,19 +3,19 @@
 
 MERGE INTO "Person" "Target"
 USING (
-	SELECT NULL "source_ID", NULL "source_FirstName", NULL "source_LastName", NULL "source_MiddleName", NULL "source_Gender"
+	SELECT NULL "ID", NULL "FirstName", NULL "LastName", NULL "MiddleName", NULL "Gender"
 	FROM DUMMY	WHERE 1 = 0
 )
  "Source"
-ON ("Target"."PersonID" = "Source"."source_ID")
+ON ("Target"."PersonID" = "Source"."ID")
 
 WHEN MATCHED THEN
 UPDATE
 SET
-	"FirstName" = "Source"."source_FirstName",
-	"LastName" = "Source"."source_LastName",
-	"MiddleName" = "Source"."source_MiddleName",
-	"Gender" = "Source"."source_Gender"
+	"FirstName" = "Source"."FirstName",
+	"LastName" = "Source"."LastName",
+	"MiddleName" = "Source"."MiddleName",
+	"Gender" = "Source"."Gender"
 
 WHEN NOT MATCHED THEN
 INSERT
@@ -27,9 +27,9 @@ INSERT
 )
 VALUES
 (
-	"Source"."source_FirstName",
-	"Source"."source_LastName",
-	"Source"."source_MiddleName",
-	"Source"."source_Gender"
+	"Source"."FirstName",
+	"Source"."LastName",
+	"Source"."MiddleName",
+	"Source"."Gender"
 )
 

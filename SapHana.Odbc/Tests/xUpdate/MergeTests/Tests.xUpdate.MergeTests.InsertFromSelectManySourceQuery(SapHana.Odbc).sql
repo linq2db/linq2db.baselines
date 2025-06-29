@@ -102,14 +102,14 @@ BeforeExecute
 MERGE INTO "GrandChild" "Target"
 USING (
 	SELECT
-		"r"."ParentID" + "t2"."ChildID" as "source_ResultId",
-		"r"."ParentID" as "source_LeftId",
-		"t2"."ChildID" as "source_RightId"
+		"r"."ParentID" + "t2"."ChildID" as "ResultId",
+		"r"."ParentID" as "LeftId",
+		"t2"."ChildID" as "RightId"
 	FROM
 		"Parent" "r"
 			CROSS JOIN "Child" "t2"
 ) "Source"
-ON ("Target"."GrandChildID" = "Source"."source_ResultId")
+ON ("Target"."GrandChildID" = "Source"."ResultId")
 
 WHEN NOT MATCHED THEN
 INSERT
@@ -120,9 +120,9 @@ INSERT
 )
 VALUES
 (
-	"Source"."source_ResultId",
-	"Source"."source_LeftId",
-	"Source"."source_RightId"
+	"Source"."ResultId",
+	"Source"."LeftId",
+	"Source"."RightId"
 )
 
 BeforeExecute

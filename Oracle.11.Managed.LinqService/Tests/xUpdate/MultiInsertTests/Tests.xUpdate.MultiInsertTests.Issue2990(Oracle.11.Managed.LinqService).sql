@@ -10,11 +10,11 @@ WHEN 1 = 1 THEN
 	)
 	VALUES
 	(
-		"source_A",
-		"source_B"
+		A,
+		B
 	)
 SELECT
-	s.ID as "source_A",
+	s.ID as A,
 	(
 		SELECT
 			x.ID
@@ -22,7 +22,7 @@ SELECT
 			"Dest2" x
 		WHERE
 			x.ID > 5 AND ROWNUM <= 1
-	) as "source_B"
+	) as B
 FROM
 	"TestSource" s
 

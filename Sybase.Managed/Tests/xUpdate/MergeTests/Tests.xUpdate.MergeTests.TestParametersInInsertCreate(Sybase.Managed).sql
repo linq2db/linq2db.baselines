@@ -228,16 +228,16 @@ SET     @val = 123
 MERGE INTO [TestMerge1] [Target]
 USING (
 	SELECT
-		[t1].[Id] as [source_Id]
+		[t1].[Id]
 	FROM
 		[TestMerge2] [t1]
 ) [Source]
 (
-	[source_Id]
+	[Id]
 )
-ON ([Target].[Id] = [Source].[source_Id])
+ON ([Target].[Id] = [Source].[Id])
 
-WHEN NOT MATCHED AND [Source].[source_Id] = 5 THEN
+WHEN NOT MATCHED AND [Source].[Id] = 5 THEN
 INSERT
 (
 	[Id],
@@ -245,7 +245,7 @@ INSERT
 )
 VALUES
 (
-	[Source].[source_Id],
+	[Source].[Id],
 	@val
 )
 

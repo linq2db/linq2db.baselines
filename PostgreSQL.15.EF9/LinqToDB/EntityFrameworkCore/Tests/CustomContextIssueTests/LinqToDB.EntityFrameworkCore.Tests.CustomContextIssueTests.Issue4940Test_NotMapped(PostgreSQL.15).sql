@@ -65,12 +65,12 @@ USING (VALUES
 	('Merge',7,'open'::issue4940db_status,NULL)
 ) "Source"
 (
-	"source_Source",
-	"source_Id",
-	"source_Status",
-	"source_NullableStatus"
+	"Source",
+	"Id",
+	"Status",
+	"NullableStatus"
 )
-ON ("Target"."Source" = "Source"."source_Source" OR "Target"."Source" IS NULL AND "Source"."source_Source" IS NULL)
+ON ("Target"."Source" = "Source"."Source" OR "Target"."Source" IS NULL AND "Source"."Source" IS NULL)
 
 WHEN NOT MATCHED THEN
 INSERT
@@ -82,19 +82,19 @@ INSERT
 )
 VALUES
 (
-	"Source"."source_Id",
-	"Source"."source_Source",
-	"Source"."source_Status",
-	"Source"."source_NullableStatus"
+	"Source"."Id",
+	"Source"."Source",
+	"Source"."Status",
+	"Source"."NullableStatus"
 )
 
 WHEN MATCHED THEN
 UPDATE
 SET
-	"Id" = "Source"."source_Id",
-	"Source" = "Source"."source_Source",
-	"Status" = "Source"."source_Status",
-	"NullableStatus" = "Source"."source_NullableStatus"
+	"Id" = "Source"."Id",
+	"Source" = "Source"."Source",
+	"Status" = "Source"."Status",
+	"NullableStatus" = "Source"."NullableStatus"
 
 
 

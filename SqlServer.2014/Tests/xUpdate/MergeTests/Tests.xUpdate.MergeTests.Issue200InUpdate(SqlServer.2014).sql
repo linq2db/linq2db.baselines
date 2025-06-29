@@ -16,11 +16,11 @@ USING (VALUES
 	(0,DATETIMEOFFSETFROMPARTS(2020, 2, 29, 17, 54, 55, 1231235, 0, 40, 7),DATETIME2FROMPARTS(2020, 2, 29, 17, 54, 55, 1231235, 7))
 ) [Source]
 (
-	[source_ID],
-	[source_datetimeoffsetDataType],
-	[source_datetime2DataType]
+	[ID],
+	[datetimeoffsetDataType],
+	[datetime2DataType]
 )
-ON ([Target].[ID] = [Source].[source_ID])
+ON ([Target].[ID] = [Source].[ID])
 
 WHEN NOT MATCHED THEN
 INSERT
@@ -30,8 +30,8 @@ INSERT
 )
 VALUES
 (
-	[Source].[source_datetimeoffsetDataType],
-	[Source].[source_datetime2DataType]
+	[Source].[datetimeoffsetDataType],
+	[Source].[datetime2DataType]
 )
 ;
 
@@ -52,11 +52,11 @@ USING (VALUES
 	(DATETIME2FROMPARTS(2020, 2, 29, 17, 54, 55, 1231235, 7),DATETIMEOFFSETFROMPARTS(2020, 2, 29, 17, 54, 55, 1231235, 0, 40, 7))
 ) [Source]
 (
-	[source_datetime2DataType],
-	[source_datetimeoffsetDataType]
+	[datetime2DataType],
+	[datetimeoffsetDataType]
 )
-ON (([Target].[datetime2DataType] = [Source].[source_datetime2DataType] OR [Target].[datetime2DataType] IS NULL AND [Source].[source_datetime2DataType] IS NULL) AND
-([Target].[datetimeoffsetDataType] = [Source].[source_datetimeoffsetDataType] OR [Target].[datetimeoffsetDataType] IS NULL AND [Source].[source_datetimeoffsetDataType] IS NULL) AND
+ON (([Target].[datetime2DataType] = [Source].[datetime2DataType] OR [Target].[datetime2DataType] IS NULL AND [Source].[datetime2DataType] IS NULL) AND
+([Target].[datetimeoffsetDataType] = [Source].[datetimeoffsetDataType] OR [Target].[datetimeoffsetDataType] IS NULL AND [Source].[datetimeoffsetDataType] IS NULL) AND
 [Target].[datetime2DataType] = @datetime2DataType AND
 [Target].[datetimeoffsetDataType] = @datetimeoffsetDataType)
 

@@ -228,12 +228,12 @@ USING (VALUES
 	(3,NULL,3,NULL), (4,5,7,214), (5,10,4,NULL), (6,NULL,NULL,216)
 ) [Source]
 (
-	[source_Id],
-	[source_Field1],
-	[source_Field2],
-	[source_Field4]
+	[Id],
+	[Field1],
+	[Field2],
+	[Field4]
 )
-ON ([Target].[Id] = [Source].[source_Id] OR [Source].[source_Field1] IS NOT NULL)
+ON ([Target].[Id] = [Source].[Id] OR [Source].[Field1] IS NOT NULL)
 
 WHEN NOT MATCHED THEN
 INSERT
@@ -245,10 +245,10 @@ INSERT
 )
 VALUES
 (
-	[Source].[source_Id],
-	[Source].[source_Field1],
-	[Source].[source_Field2],
-	[Source].[source_Field4]
+	[Source].[Id],
+	[Source].[Field1],
+	[Source].[Field2],
+	[Source].[Field4]
 )
 ;
 

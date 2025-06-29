@@ -6,15 +6,15 @@ USING (VALUES
 	(1,'***OOO***'), (2,'***SSS***')
 ) "Source"
 (
-	"source_ID",
-	"source_Data"
+	ID,
+	"Data_1"
 )
-ON ("Target".ID = "Source"."source_ID")
+ON ("Target".ID = "Source".ID)
 
 WHEN MATCHED THEN
 UPDATE
 SET
-	"Data" = "Source"."source_Data"
+	"Data" = "Source"."Data_1"
 
 WHEN NOT MATCHED THEN
 INSERT
@@ -24,8 +24,8 @@ INSERT
 )
 VALUES
 (
-	"Source"."source_ID",
-	"Source"."source_Data"
+	"Source".ID,
+	"Source"."Data_1"
 )
 
 BeforeExecute
@@ -36,15 +36,15 @@ USING (VALUES
 	(3,'***III***')
 ) "Source"
 (
-	"source_ID",
-	"source_Data"
+	ID,
+	"Data_1"
 )
-ON ("Target".ID = "Source"."source_ID")
+ON ("Target".ID = "Source".ID)
 
 WHEN MATCHED THEN
 UPDATE
 SET
-	"Data" = "Source"."source_Data"
+	"Data" = "Source"."Data_1"
 
 WHEN NOT MATCHED THEN
 INSERT
@@ -54,8 +54,8 @@ INSERT
 )
 VALUES
 (
-	"Source"."source_ID",
-	"Source"."source_Data"
+	"Source".ID,
+	"Source"."Data_1"
 )
 
 BeforeExecute

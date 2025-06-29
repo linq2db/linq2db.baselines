@@ -6,8 +6,8 @@ BeforeExecute
 MERGE INTO [Child] [Target]
 USING (
 	SELECT
-		[t].[ParentID] as [source_ParentID],
-		[t].[ChildID] as [source_ChildID]
+		[t].[ParentID],
+		[t].[ChildID]
 	FROM
 		[Child] [t]
 			LEFT JOIN [Parent] [a_Parent] ON [t].[ParentID] = [a_Parent].[ParentID]
@@ -24,11 +24,10 @@ USING (
 		)
 ) [Source]
 (
-	[source_ParentID],
-	[source_ChildID]
+	[ParentID],
+	[ChildID]
 )
-ON ([Target].[ParentID] = [Source].[source_ParentID] AND
-[Target].[ChildID] = [Source].[source_ChildID])
+ON ([Target].[ParentID] = [Source].[ParentID] AND [Target].[ChildID] = [Source].[ChildID])
 
 WHEN NOT MATCHED THEN
 INSERT
@@ -38,8 +37,8 @@ INSERT
 )
 VALUES
 (
-	[Source].[source_ParentID],
-	[Source].[source_ChildID]
+	[Source].[ParentID],
+	[Source].[ChildID]
 )
 WHEN NOT MATCHED BY SOURCE AND (
 	SELECT

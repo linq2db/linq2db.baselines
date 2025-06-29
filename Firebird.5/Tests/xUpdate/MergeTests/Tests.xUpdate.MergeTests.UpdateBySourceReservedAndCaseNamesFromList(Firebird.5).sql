@@ -236,7 +236,7 @@ BeforeExecute
 
 MERGE INTO "TestMerge1" "Target"
 USING (
-	SELECT 3 AS "source_From" FROM rdb$database
+	SELECT 3 AS "From_1" FROM rdb$database
 	UNION ALL
 	SELECT 4 FROM rdb$database
 	UNION ALL
@@ -244,9 +244,9 @@ USING (
 	UNION ALL
 	SELECT 6 FROM rdb$database) "Source"
 (
-	"source_From"
+	"From_1"
 )
-ON ("Target"."Id" = "Source"."source_From")
+ON ("Target"."Id" = "Source"."From_1")
 
 WHEN NOT MATCHED BY SOURCE AND "Target"."Field1" = 2 THEN UPDATE
 SET

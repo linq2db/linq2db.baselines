@@ -226,14 +226,14 @@ BeforeExecute
 MERGE INTO [TestMerge1] [Target]
 USING (
 	SELECT
-		[s].[Id] as [source_OtherId]
+		[s].[Id] as [OtherId]
 	FROM
 		[TestMerge2] [s]
 ) [Source]
 (
-	[source_OtherId]
+	[OtherId]
 )
-ON ([Target].[Id] = [Source].[source_OtherId])
+ON ([Target].[Id] = [Source].[OtherId])
 
 WHEN NOT MATCHED BY SOURCE THEN UPDATE
 SET

@@ -224,23 +224,23 @@ BeforeExecute
 MERGE INTO "TestMerge1" "Target"
 USING (
 	SELECT
-		"t1"."Id" as "source_Id",
-		"t1"."Field5" as "source_Field5",
-		"t1"."Field2" as "source_Field2"
+		"t1"."Id",
+		"t1"."Field5",
+		"t1"."Field2"
 	FROM
 		"TestMerge2" "t1"
 ) "Source"
 (
-	"source_Id",
-	"source_Field5",
-	"source_Field2"
+	"Id",
+	"Field5",
+	"Field2"
 )
-ON ("Target"."Id" = "Source"."source_Id")
+ON ("Target"."Id" = "Source"."Id")
 
-WHEN MATCHED AND "Source"."source_Id" = 3 THEN
+WHEN MATCHED AND "Source"."Id" = 3 THEN
 UPDATE
 SET
-	"Field1" = "Target"."Field1" + "Source"."source_Field5"
+	"Field1" = "Target"."Field1" + "Source"."Field5"
 RETURNING
-	"Source"."source_Field2"
+	"Source"."Field2"
 

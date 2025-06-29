@@ -223,14 +223,14 @@ BeforeExecute
 
 MERGE INTO "TestMerge1" Target
 USING (
-	SELECT 3 AS "source_OtherId", NULL AS "source_OtherField1", NULL AS "source_OtherField5", 3 AS "source_OtherField2", NULL AS "source_OtherField4", 113 AS "source_OtherField3" FROM sys.dual
+	SELECT 3 AS "OtherId", NULL AS "OtherField1", NULL AS "OtherField5", 3 AS "OtherField2", NULL AS "OtherField4", 113 AS "OtherField3" FROM sys.dual
 	UNION ALL
 	SELECT 4, 5, NULL, 7, 214, NULL FROM sys.dual
 	UNION ALL
 	SELECT 5, 10, 315, 4, NULL, NULL FROM sys.dual
 	UNION ALL
 	SELECT 6, NULL, 316, NULL, 216, 116 FROM sys.dual) "Source"
-ON (Target."Id" = "Source"."source_OtherId")
+ON (Target."Id" = "Source"."OtherId")
 
 WHEN NOT MATCHED THEN
 INSERT
@@ -244,12 +244,12 @@ INSERT
 )
 VALUES
 (
-	"Source"."source_OtherId",
-	"Source"."source_OtherField1",
-	"Source"."source_OtherField5",
-	"Source"."source_OtherField2",
-	"Source"."source_OtherField4",
-	"Source"."source_OtherField3"
+	"Source"."OtherId",
+	"Source"."OtherField1",
+	"Source"."OtherField5",
+	"Source"."OtherField2",
+	"Source"."OtherField4",
+	"Source"."OtherField3"
 )
 
 BeforeExecute

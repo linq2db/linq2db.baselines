@@ -6,13 +6,13 @@ BeforeExecute
 MERGE INTO "Person" Target
 USING (
 	SELECT
-		t1."PersonID" as "source_ID",
-		a_Patient."Diagnosis" as "source_Patient_Diagnosis"
+		t1."PersonID" as ID,
+		a_Patient."Diagnosis" as "Patient_Diagnosis"
 	FROM
 		"Person" t1
 			INNER JOIN "Patient" a_Patient ON t1."PersonID" = a_Patient."PersonID"
 ) "Source"
-ON (Target."PersonID" = "Source"."source_ID" AND Target."FirstName" <> 'first 3')
+ON (Target."PersonID" = "Source".ID AND Target."FirstName" <> 'first 3')
 
 WHEN NOT MATCHED THEN
 INSERT
@@ -27,7 +27,7 @@ VALUES
 	'Inserted 2',
 	'M'
 )
- WHERE "Source"."source_Patient_Diagnosis" LIKE '%sick%' ESCAPE '~'
+ WHERE "Source"."Patient_Diagnosis" LIKE '%sick%' ESCAPE '~'
 
 BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12

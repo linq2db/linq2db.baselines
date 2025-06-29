@@ -226,16 +226,16 @@ SET     @param = CAST('2020-02-29 17:54:55.123' AS timestamp)
 MERGE INTO "TestMerge1" "Target"
 USING (
 	SELECT
-		"t1"."Id" as "source_Id",
-		CAST(@param AS TimeStamp) as "source_Val"
+		"t1"."Id",
+		CAST(@param AS TimeStamp) as "Val"
 	FROM
 		"TestMerge2" "t1"
 ) "Source"
 (
-	"source_Id",
-	"source_Val"
+	"Id",
+	"Val"
 )
-ON ("Target"."Id" = "Source"."source_Id")
+ON ("Target"."Id" = "Source"."Id")
 
 WHEN MATCHED THEN
 UPDATE

@@ -241,23 +241,23 @@ USING (VALUES
 	(6,NULL,NULL,NULL,216,NULL)
 ) "Source"
 (
-	"source_Key",
-	"source_Field01",
-	"source_Field02",
-	"source_Field03",
-	"source_Field04",
-	"source_Field05"
+	"Key_1",
+	"Field01",
+	"Field02",
+	"Field03",
+	"Field04",
+	"Field05"
 )
-ON ("Target"."Id" = "Source"."source_Key")
+ON ("Target"."Id" = "Source"."Key_1")
 
-WHEN MATCHED AND "Source"."source_Field04" = 214 THEN
+WHEN MATCHED AND "Source"."Field04" = 214 THEN
 UPDATE
 SET
-	"Field1" = "Source"."source_Field01",
-	"Field2" = "Source"."source_Field02",
-	"Field3" = "Source"."source_Field03",
-	"Field4" = "Source"."source_Field04",
-	"Field5" = "Source"."source_Field05"
+	"Field1" = "Source"."Field01",
+	"Field2" = "Source"."Field02",
+	"Field3" = "Source"."Field03",
+	"Field4" = "Source"."Field04",
+	"Field5" = "Source"."Field05"
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW

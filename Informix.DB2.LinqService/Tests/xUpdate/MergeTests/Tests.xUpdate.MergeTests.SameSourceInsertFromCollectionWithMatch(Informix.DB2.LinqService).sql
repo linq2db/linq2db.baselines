@@ -223,7 +223,7 @@ BeforeExecute
 
 MERGE INTO TestMerge1 Target
 USING (
-	SELECT 3::Int AS source_Id, NULL::Int AS source_Field1, 3::Int AS source_Field2, NULL::Int AS source_Field4 FROM table(set{1})
+	SELECT 3::Int AS Id, NULL::Int AS Field1, 3::Int AS Field2, NULL::Int AS Field4 FROM table(set{1})
 	UNION ALL
 	SELECT 4::Int, 5::Int, 7::Int, 214::Int FROM table(set{1})
 	UNION ALL
@@ -231,12 +231,12 @@ USING (
 	UNION ALL
 	SELECT 6::Int, NULL::Int, NULL::Int, 216::Int FROM table(set{1})) Source
 (
-	source_Id,
-	source_Field1,
-	source_Field2,
-	source_Field4
+	Id,
+	Field1,
+	Field2,
+	Field4
 )
-ON (Target.Id = Source.source_Id OR Source.source_Field1 IS NOT NULL)
+ON (Target.Id = Source.Id OR Source.Field1 IS NOT NULL)
 
 WHEN NOT MATCHED THEN
 INSERT
@@ -248,10 +248,10 @@ INSERT
 )
 VALUES
 (
-	Source.source_Id,
-	Source.source_Field1,
-	Source.source_Field2,
-	Source.source_Field4
+	Source.Id,
+	Source.Field1,
+	Source.Field2,
+	Source.Field4
 )
 
 BeforeExecute

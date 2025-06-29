@@ -223,7 +223,7 @@ BeforeExecute
 
 MERGE INTO "TestMerge1" "Target"
 USING (
-	SELECT 3 AS "source_OtherId", NULL AS "source_OtherField1", NULL AS "source_OtherField5", 3 AS "source_OtherField2", NULL AS "source_OtherField4", 113 AS "source_OtherField3" FROM rdb$database
+	SELECT 3 AS "OtherId", NULL AS "OtherField1", NULL AS "OtherField5", 3 AS "OtherField2", NULL AS "OtherField4", 113 AS "OtherField3" FROM rdb$database
 	UNION ALL
 	SELECT 4, 5, NULL, 7, 214, NULL FROM rdb$database
 	UNION ALL
@@ -231,14 +231,14 @@ USING (
 	UNION ALL
 	SELECT 6, NULL, 316, NULL, 216, 116 FROM rdb$database) "Source"
 (
-	"source_OtherId",
-	"source_OtherField1",
-	"source_OtherField5",
-	"source_OtherField2",
-	"source_OtherField4",
-	"source_OtherField3"
+	"OtherId",
+	"OtherField1",
+	"OtherField5",
+	"OtherField2",
+	"OtherField4",
+	"OtherField3"
 )
-ON ("Target"."Id" = "Source"."source_OtherId")
+ON ("Target"."Id" = "Source"."OtherId")
 
 WHEN NOT MATCHED THEN
 INSERT
@@ -252,12 +252,12 @@ INSERT
 )
 VALUES
 (
-	"Source"."source_OtherId",
-	"Source"."source_OtherField1",
-	"Source"."source_OtherField5",
-	"Source"."source_OtherField2",
-	"Source"."source_OtherField4",
-	"Source"."source_OtherField3"
+	"Source"."OtherId",
+	"Source"."OtherField1",
+	"Source"."OtherField5",
+	"Source"."OtherField2",
+	"Source"."OtherField4",
+	"Source"."OtherField3"
 )
 
 BeforeExecute

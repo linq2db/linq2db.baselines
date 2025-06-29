@@ -236,27 +236,27 @@ BeforeExecute
 
 MERGE INTO "TestMerge1" Target
 USING (
-	SELECT 5 AS "source_Key", 10 AS "source_Field01", 4 AS "source_Field02", NULL AS "source_Field03", NULL AS "source_Field04", NULL AS "source_Field05" FROM sys.dual
+	SELECT 5 AS "Key_1", 10 AS "Field01", 4 AS "Field02", NULL AS "Field03", NULL AS "Field04", NULL AS "Field05" FROM sys.dual
 	UNION ALL
 	SELECT 6, NULL, NULL, NULL, 216, NULL FROM sys.dual
 	UNION ALL
 	SELECT 3, NULL, 3, NULL, NULL, NULL FROM sys.dual
 	UNION ALL
 	SELECT 4, 5, 7, NULL, 214, NULL FROM sys.dual) "Source"
-ON (Target."Id" = "Source"."source_Key")
+ON (Target."Id" = "Source"."Key_1")
 
 WHEN MATCHED THEN
 UPDATE
 SET
-	"Field1" = "Source"."source_Field01",
-	"Field2" = "Source"."source_Field02",
-	"Field3" = "Source"."source_Field03",
-	"Field4" = "Source"."source_Field04",
-	"Field5" = "Source"."source_Field05"
+	"Field1" = "Source"."Field01",
+	"Field2" = "Source"."Field02",
+	"Field3" = "Source"."Field03",
+	"Field4" = "Source"."Field04",
+	"Field5" = "Source"."Field05"
 WHERE
-	"Source"."source_Field04" = 214 OR "Source"."source_Key" = 3
+	"Source"."Field04" = 214 OR "Source"."Key_1" = 3
 DELETE WHERE
-	"Source"."source_Key" = 3
+	"Source"."Key_1" = 3
 
 BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12

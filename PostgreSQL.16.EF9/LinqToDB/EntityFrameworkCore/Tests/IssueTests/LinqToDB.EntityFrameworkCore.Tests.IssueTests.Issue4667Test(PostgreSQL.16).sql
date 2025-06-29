@@ -7,11 +7,11 @@ USING (VALUES
 	(1,'{"test" : 1}'::jsonb,:value::json)
 ) "Source"
 (
-	"source_Id",
-	"source_Payload",
-	"source_Headers"
+	"Id",
+	"Payload",
+	"Headers"
 )
-ON ("Target".id = "Source"."source_Id")
+ON ("Target".id = "Source"."Id")
 
 WHEN NOT MATCHED THEN
 INSERT
@@ -22,9 +22,9 @@ INSERT
 )
 VALUES
 (
-	"Source"."source_Id",
-	"Source"."source_Payload",
-	"Source"."source_Headers"
+	"Source"."Id",
+	"Source"."Payload",
+	"Source"."Headers"
 )
 
 

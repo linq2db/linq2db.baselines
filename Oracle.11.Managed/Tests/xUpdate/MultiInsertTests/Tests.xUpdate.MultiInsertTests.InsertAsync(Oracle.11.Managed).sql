@@ -9,8 +9,8 @@ INSERT ALL
 	)
 	VALUES
 	(
-		"source_ID" + 1,
-		"source_N"
+		ID + 1,
+		N
 	)
 	INTO "Dest1"
 	(
@@ -19,8 +19,8 @@ INSERT ALL
 	)
 	VALUES
 	(
-		"source_ID" + 2,
-		"source_N"
+		ID + 2,
+		N
 	)
 	INTO "Dest2"
 	(
@@ -29,12 +29,12 @@ INSERT ALL
 	)
 	VALUES
 	(
-		"source_ID" + 3,
-		"source_ID" + 1
+		ID + 3,
+		ID + 1
 	)
 SELECT
-	1000 as "source_ID",
-	42 as "source_N"
+	1000 as ID,
+	42 as N
 FROM SYS.DUAL
 
 BeforeExecute

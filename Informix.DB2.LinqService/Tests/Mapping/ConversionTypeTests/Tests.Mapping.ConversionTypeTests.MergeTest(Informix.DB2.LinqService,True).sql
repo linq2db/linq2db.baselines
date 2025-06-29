@@ -3,19 +3,19 @@
 
 MERGE INTO TrimTestTable Target
 USING (
-	SELECT 1::Int AS source_ID, '***OOO***'::NVarChar(50) AS source_Data FROM table(set{1})
+	SELECT 1::Int AS ID, '***OOO***'::NVarChar(50) AS Data_1 FROM table(set{1})
 	UNION ALL
 	SELECT 2::Int, '***SSS***'::NVarChar(50) FROM table(set{1})) Source
 (
-	source_ID,
-	source_Data
+	ID,
+	Data_1
 )
-ON (Target.ID = Source.source_ID)
+ON (Target.ID = Source.ID)
 
 WHEN MATCHED THEN
 UPDATE
 SET
-	"Data" = Source.source_Data
+	"Data" = Source.Data_1
 
 WHEN NOT MATCHED THEN
 INSERT
@@ -25,8 +25,8 @@ INSERT
 )
 VALUES
 (
-	Source.source_ID,
-	Source.source_Data
+	Source.ID,
+	Source.Data_1
 )
 
 BeforeExecute
@@ -34,17 +34,17 @@ BeforeExecute
 
 MERGE INTO TrimTestTable Target
 USING (
-	SELECT 3::Int AS source_ID, '***III***'::NVarChar(50) AS source_Data FROM table(set{1})) Source
+	SELECT 3::Int AS ID, '***III***'::NVarChar(50) AS Data_1 FROM table(set{1})) Source
 (
-	source_ID,
-	source_Data
+	ID,
+	Data_1
 )
-ON (Target.ID = Source.source_ID)
+ON (Target.ID = Source.ID)
 
 WHEN MATCHED THEN
 UPDATE
 SET
-	"Data" = Source.source_Data
+	"Data" = Source.Data_1
 
 WHEN NOT MATCHED THEN
 INSERT
@@ -54,8 +54,8 @@ INSERT
 )
 VALUES
 (
-	Source.source_ID,
-	Source.source_Data
+	Source.ID,
+	Source.Data_1
 )
 
 BeforeExecute

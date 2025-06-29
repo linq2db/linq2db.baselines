@@ -3,12 +3,12 @@
 
 MERGE INTO "PKOnlyTable" "Target"
 USING (
-	SELECT 1 AS "source_ID" FROM DUMMY
+	SELECT 1 AS "ID" FROM DUMMY
 	UNION ALL
 	SELECT 2 FROM DUMMY
 	UNION ALL
 	SELECT 3 FROM DUMMY) "Source"
-ON ("Target"."ID" = "Source"."source_ID")
+ON ("Target"."ID" = "Source"."ID")
 
 WHEN NOT MATCHED THEN
 INSERT
@@ -17,7 +17,7 @@ INSERT
 )
 VALUES
 (
-	"Source"."source_ID"
+	"Source"."ID"
 )
 
 BeforeExecute

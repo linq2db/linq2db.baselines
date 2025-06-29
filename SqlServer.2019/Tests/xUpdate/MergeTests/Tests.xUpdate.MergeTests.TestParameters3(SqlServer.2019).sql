@@ -234,22 +234,22 @@ SET     @Val3 = 3
 MERGE INTO [TestMerge1] [Target]
 USING (
 	SELECT
-		[t1].[Id] as [source_Id],
-		[t1].[Field1] as [source_Field1],
-		@Val2 as [source_Field7]
+		[t1].[Id],
+		[t1].[Field1],
+		@Val2 as [Field7]
 	FROM
 		[TestMerge2] [t1]
 	WHERE
 		[t1].[Id] <> @Val5
 ) [Source]
 (
-	[source_Id],
-	[source_Field1],
-	[source_Field7]
+	[Id],
+	[Field1],
+	[Field7]
 )
-ON ([Target].[Id] = [Source].[source_Id])
+ON ([Target].[Id] = [Source].[Id])
 
-WHEN NOT MATCHED AND [Source].[source_Field7] = @Val1 + [Source].[source_Id] THEN
+WHEN NOT MATCHED AND [Source].[Field7] = @Val1 + [Source].[Id] THEN
 INSERT
 (
 	[Id],
@@ -257,11 +257,11 @@ INSERT
 )
 VALUES
 (
-	[Source].[source_Id] + @Val5,
-	[Source].[source_Field1]
+	[Source].[Id] + @Val5,
+	[Source].[Field1]
 )
 
-WHEN MATCHED AND [Source].[source_Id] = @Val3 THEN
+WHEN MATCHED AND [Source].[Id] = @Val3 THEN
 UPDATE
 SET
 	[Field4] = @Val5

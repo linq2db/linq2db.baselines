@@ -238,14 +238,14 @@ BeforeExecute
 
 MERGE INTO "TestMerge1" Target
 USING (
-	SELECT 3 AS "source_Key", NULL AS "source_Field01", 3 AS "source_Field02", NULL AS "source_Field03", NULL AS "source_Field04", NULL AS "source_Field05" FROM sys.dual
+	SELECT 3 AS "Key_1", NULL AS "Field01", 3 AS "Field02", NULL AS "Field03", NULL AS "Field04", NULL AS "Field05" FROM sys.dual
 	UNION ALL
 	SELECT 4, 5, 7, NULL, 214, NULL FROM sys.dual
 	UNION ALL
 	SELECT 5, 10, 4, NULL, NULL, NULL FROM sys.dual
 	UNION ALL
 	SELECT 6, NULL, NULL, NULL, 216, NULL FROM sys.dual) "Source"
-ON (Target."Id" = "Source"."source_Key")
+ON (Target."Id" = "Source"."Key_1")
 
 WHEN NOT MATCHED THEN
 INSERT
@@ -259,14 +259,14 @@ INSERT
 )
 VALUES
 (
-	"Source"."source_Key",
-	"Source"."source_Field01",
-	"Source"."source_Field02",
-	"Source"."source_Field03",
-	"Source"."source_Field04",
-	"Source"."source_Field05"
+	"Source"."Key_1",
+	"Source"."Field01",
+	"Source"."Field02",
+	"Source"."Field03",
+	"Source"."Field04",
+	"Source"."Field05"
 )
- WHERE "Source"."source_Field04" = 216
+ WHERE "Source"."Field04" = 216
 
 BeforeExecute
 -- Oracle.11.Managed Oracle11

@@ -2,7 +2,7 @@
 -- Oracle.11.Managed Oracle11
 
 INSERT FIRST
-WHEN "source_N" < 40 THEN
+WHEN N < 40 THEN
 	INTO "Dest1"
 	(
 		ID,
@@ -10,8 +10,8 @@ WHEN "source_N" < 40 THEN
 	)
 	VALUES
 	(
-		"source_ID" + 1,
-		"source_N"
+		ID + 1,
+		N
 	)
 WHEN 1 = 0 THEN
 	INTO "Dest1"
@@ -21,8 +21,8 @@ WHEN 1 = 0 THEN
 	)
 	VALUES
 	(
-		"source_ID" + 2,
-		"source_N"
+		ID + 2,
+		N
 	)
 ELSE
 	INTO "Dest1"
@@ -32,12 +32,12 @@ ELSE
 	)
 	VALUES
 	(
-		"source_ID" + 3,
-		"source_N"
+		ID + 3,
+		N
 	)
 SELECT
-	42 as "source_N",
-	1000 as "source_ID"
+	42 as N,
+	1000 as ID
 FROM SYS.DUAL
 
 BeforeExecute
