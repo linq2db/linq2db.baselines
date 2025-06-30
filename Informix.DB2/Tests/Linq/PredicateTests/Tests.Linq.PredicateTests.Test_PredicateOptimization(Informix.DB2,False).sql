@@ -1,0 +1,780 @@
+﻿BeforeExecute
+-- Informix.DB2 Informix
+
+SELECT
+	r.Id,
+	r.Value1,
+	r.Value2,
+	r.Value4,
+	r.Value5
+FROM
+	BooleanTable r
+WHERE
+	r.Value1 = r.Value2
+
+BeforeExecute
+-- Informix.DB2 Informix
+
+SELECT
+	t1.Id,
+	t1.Value1,
+	t1.Value2,
+	t1.Value4,
+	t1.Value5
+FROM
+	BooleanTable t1
+
+BeforeExecute
+-- Informix.DB2 Informix
+
+SELECT
+	r.Id,
+	r.Value1,
+	r.Value2,
+	r.Value4,
+	r.Value5
+FROM
+	BooleanTable r
+WHERE
+	r.Value1 = r.Value5
+
+BeforeExecute
+-- Informix.DB2 Informix
+
+SELECT
+	t1.Id,
+	t1.Value1,
+	t1.Value2,
+	t1.Value4,
+	t1.Value5
+FROM
+	BooleanTable t1
+
+BeforeExecute
+-- Informix.DB2 Informix
+
+SELECT
+	r.Id,
+	r.Value1,
+	r.Value2,
+	r.Value4,
+	r.Value5
+FROM
+	BooleanTable r
+WHERE
+	r.Value1 = r.Value5
+
+BeforeExecute
+-- Informix.DB2 Informix
+
+SELECT
+	t1.Id,
+	t1.Value1,
+	t1.Value2,
+	t1.Value4,
+	t1.Value5
+FROM
+	BooleanTable t1
+
+BeforeExecute
+-- Informix.DB2 Informix
+
+SELECT
+	r.Id,
+	r.Value1,
+	r.Value2,
+	r.Value4,
+	r.Value5
+FROM
+	BooleanTable r
+WHERE
+	r.Value1 <> r.Value2
+
+BeforeExecute
+-- Informix.DB2 Informix
+
+SELECT
+	t1.Id,
+	t1.Value1,
+	t1.Value2,
+	t1.Value4,
+	t1.Value5
+FROM
+	BooleanTable t1
+
+BeforeExecute
+-- Informix.DB2 Informix
+
+SELECT
+	r.Id,
+	r.Value1,
+	r.Value2,
+	r.Value4,
+	r.Value5
+FROM
+	BooleanTable r
+WHERE
+	r.Value1 <> r.Value5 OR r.Value5 IS NULL
+
+BeforeExecute
+-- Informix.DB2 Informix
+
+SELECT
+	t1.Id,
+	t1.Value1,
+	t1.Value2,
+	t1.Value4,
+	t1.Value5
+FROM
+	BooleanTable t1
+
+BeforeExecute
+-- Informix.DB2 Informix
+
+SELECT
+	r.Id,
+	r.Value1,
+	r.Value2,
+	r.Value4,
+	r.Value5
+FROM
+	BooleanTable r
+WHERE
+	r.Value1 <> r.Value5 OR r.Value5 IS NULL
+
+BeforeExecute
+-- Informix.DB2 Informix
+
+SELECT
+	t1.Id,
+	t1.Value1,
+	t1.Value2,
+	t1.Value4,
+	t1.Value5
+FROM
+	BooleanTable t1
+
+BeforeExecute
+-- Informix.DB2 Informix
+
+SELECT
+	r.Id,
+	r.Value1,
+	r.Value2,
+	r.Value4,
+	r.Value5
+FROM
+	BooleanTable r
+WHERE
+	r.Value1 > r.Value2
+
+BeforeExecute
+-- Informix.DB2 Informix
+
+SELECT
+	t1.Id,
+	t1.Value1,
+	t1.Value2,
+	t1.Value4,
+	t1.Value5
+FROM
+	BooleanTable t1
+
+BeforeExecute
+-- Informix.DB2 Informix
+
+SELECT
+	r.Id,
+	r.Value1,
+	r.Value2,
+	r.Value4,
+	r.Value5
+FROM
+	BooleanTable r
+WHERE
+	r.Value1 > r.Value5
+
+BeforeExecute
+-- Informix.DB2 Informix
+
+SELECT
+	t1.Id,
+	t1.Value1,
+	t1.Value2,
+	t1.Value4,
+	t1.Value5
+FROM
+	BooleanTable t1
+
+BeforeExecute
+-- Informix.DB2 Informix
+
+SELECT
+	r.Id,
+	r.Value1,
+	r.Value2,
+	r.Value4,
+	r.Value5
+FROM
+	BooleanTable r
+WHERE
+	r.Value1 > r.Value5
+
+BeforeExecute
+-- Informix.DB2 Informix
+
+SELECT
+	t1.Id,
+	t1.Value1,
+	t1.Value2,
+	t1.Value4,
+	t1.Value5
+FROM
+	BooleanTable t1
+
+BeforeExecute
+-- Informix.DB2 Informix
+
+SELECT
+	r.Id,
+	r.Value1,
+	r.Value2,
+	r.Value4,
+	r.Value5
+FROM
+	BooleanTable r
+WHERE
+	r.Value1 = r.Value2
+
+BeforeExecute
+-- Informix.DB2 Informix
+
+SELECT
+	t1.Id,
+	t1.Value1,
+	t1.Value2,
+	t1.Value4,
+	t1.Value5
+FROM
+	BooleanTable t1
+
+BeforeExecute
+-- Informix.DB2 Informix
+
+SELECT
+	r.Id,
+	r.Value1,
+	r.Value2,
+	r.Value4,
+	r.Value5
+FROM
+	BooleanTable r
+WHERE
+	r.Value1 = r.Value5
+
+BeforeExecute
+-- Informix.DB2 Informix
+
+SELECT
+	t1.Id,
+	t1.Value1,
+	t1.Value2,
+	t1.Value4,
+	t1.Value5
+FROM
+	BooleanTable t1
+
+BeforeExecute
+-- Informix.DB2 Informix
+
+SELECT
+	r.Id,
+	r.Value1,
+	r.Value2,
+	r.Value4,
+	r.Value5
+FROM
+	BooleanTable r
+WHERE
+	r.Value1 = r.Value5
+
+BeforeExecute
+-- Informix.DB2 Informix
+
+SELECT
+	t1.Id,
+	t1.Value1,
+	t1.Value2,
+	t1.Value4,
+	t1.Value5
+FROM
+	BooleanTable t1
+
+BeforeExecute
+-- Informix.DB2 Informix
+
+SELECT
+	r.Id,
+	r.Value1,
+	r.Value2,
+	r.Value4,
+	r.Value5
+FROM
+	BooleanTable r
+WHERE
+	r.Value1 <> r.Value2
+
+BeforeExecute
+-- Informix.DB2 Informix
+
+SELECT
+	t1.Id,
+	t1.Value1,
+	t1.Value2,
+	t1.Value4,
+	t1.Value5
+FROM
+	BooleanTable t1
+
+BeforeExecute
+-- Informix.DB2 Informix
+
+SELECT
+	r.Id,
+	r.Value1,
+	r.Value2,
+	r.Value4,
+	r.Value5
+FROM
+	BooleanTable r
+WHERE
+	r.Value1 <> r.Value5 OR r.Value5 IS NULL
+
+BeforeExecute
+-- Informix.DB2 Informix
+
+SELECT
+	t1.Id,
+	t1.Value1,
+	t1.Value2,
+	t1.Value4,
+	t1.Value5
+FROM
+	BooleanTable t1
+
+BeforeExecute
+-- Informix.DB2 Informix
+
+SELECT
+	r.Id,
+	r.Value1,
+	r.Value2,
+	r.Value4,
+	r.Value5
+FROM
+	BooleanTable r
+WHERE
+	r.Value1 <> r.Value5 OR r.Value5 IS NULL
+
+BeforeExecute
+-- Informix.DB2 Informix
+
+SELECT
+	t1.Id,
+	t1.Value1,
+	t1.Value2,
+	t1.Value4,
+	t1.Value5
+FROM
+	BooleanTable t1
+
+BeforeExecute
+-- Informix.DB2 Informix
+
+SELECT
+	r.Id,
+	r.Value1,
+	r.Value2,
+	r.Value4,
+	r.Value5
+FROM
+	BooleanTable r
+WHERE
+	r.Value1 >= r.Value2
+
+BeforeExecute
+-- Informix.DB2 Informix
+
+SELECT
+	t1.Id,
+	t1.Value1,
+	t1.Value2,
+	t1.Value4,
+	t1.Value5
+FROM
+	BooleanTable t1
+
+BeforeExecute
+-- Informix.DB2 Informix
+
+SELECT
+	r.Id,
+	r.Value1,
+	r.Value2,
+	r.Value4,
+	r.Value5
+FROM
+	BooleanTable r
+WHERE
+	r.Value1 >= r.Value5
+
+BeforeExecute
+-- Informix.DB2 Informix
+
+SELECT
+	t1.Id,
+	t1.Value1,
+	t1.Value2,
+	t1.Value4,
+	t1.Value5
+FROM
+	BooleanTable t1
+
+BeforeExecute
+-- Informix.DB2 Informix
+
+SELECT
+	r.Id,
+	r.Value1,
+	r.Value2,
+	r.Value4,
+	r.Value5
+FROM
+	BooleanTable r
+WHERE
+	r.Value1 >= r.Value5
+
+BeforeExecute
+-- Informix.DB2 Informix
+
+SELECT
+	t1.Id,
+	t1.Value1,
+	t1.Value2,
+	t1.Value4,
+	t1.Value5
+FROM
+	BooleanTable t1
+
+BeforeExecute
+-- Informix.DB2 Informix
+
+SELECT
+	r.Id,
+	r.Value1,
+	r.Value2,
+	r.Value4,
+	r.Value5
+FROM
+	BooleanTable r
+WHERE
+	r.Value1 = r.Value2 OR r.Value1 = r.Value4
+
+BeforeExecute
+-- Informix.DB2 Informix
+
+SELECT
+	t1.Id,
+	t1.Value1,
+	t1.Value2,
+	t1.Value4,
+	t1.Value5
+FROM
+	BooleanTable t1
+
+BeforeExecute
+-- Informix.DB2 Informix
+
+SELECT
+	r.Id,
+	r.Value1,
+	r.Value2,
+	r.Value4,
+	r.Value5
+FROM
+	BooleanTable r
+WHERE
+	r.Value1 = r.Value5 OR r.Value1 = r.Value2
+
+BeforeExecute
+-- Informix.DB2 Informix
+
+SELECT
+	t1.Id,
+	t1.Value1,
+	t1.Value2,
+	t1.Value4,
+	t1.Value5
+FROM
+	BooleanTable t1
+
+BeforeExecute
+-- Informix.DB2 Informix
+
+SELECT
+	r.Id,
+	r.Value1,
+	r.Value2,
+	r.Value4,
+	r.Value5
+FROM
+	BooleanTable r
+WHERE
+	r.Value1 = r.Value5 OR r.Value1 = r.Value4
+
+BeforeExecute
+-- Informix.DB2 Informix
+
+SELECT
+	t1.Id,
+	t1.Value1,
+	t1.Value2,
+	t1.Value4,
+	t1.Value5
+FROM
+	BooleanTable t1
+
+BeforeExecute
+-- Informix.DB2 Informix
+
+SELECT
+	r.Id,
+	r.Value1,
+	r.Value2,
+	r.Value4,
+	r.Value5
+FROM
+	BooleanTable r
+WHERE
+	r.Value1 > r.Value2 OR r.Value1 <= r.Value2 AND r.Value1 > r.Value4
+
+BeforeExecute
+-- Informix.DB2 Informix
+
+SELECT
+	t1.Id,
+	t1.Value1,
+	t1.Value2,
+	t1.Value4,
+	t1.Value5
+FROM
+	BooleanTable t1
+
+BeforeExecute
+-- Informix.DB2 Informix
+
+SELECT
+	r.Id,
+	r.Value1,
+	r.Value2,
+	r.Value4,
+	r.Value5
+FROM
+	BooleanTable r
+WHERE
+	r.Value1 > r.Value5 OR r.Value1 <= r.Value5 AND r.Value1 > r.Value2
+
+BeforeExecute
+-- Informix.DB2 Informix
+
+SELECT
+	t1.Id,
+	t1.Value1,
+	t1.Value2,
+	t1.Value4,
+	t1.Value5
+FROM
+	BooleanTable t1
+
+BeforeExecute
+-- Informix.DB2 Informix
+
+SELECT
+	r.Id,
+	r.Value1,
+	r.Value2,
+	r.Value4,
+	r.Value5
+FROM
+	BooleanTable r
+WHERE
+	r.Value1 > r.Value5 OR r.Value1 <= r.Value5 AND r.Value1 > r.Value4
+
+BeforeExecute
+-- Informix.DB2 Informix
+
+SELECT
+	t1.Id,
+	t1.Value1,
+	t1.Value2,
+	t1.Value4,
+	t1.Value5
+FROM
+	BooleanTable t1
+
+BeforeExecute
+-- Informix.DB2 Informix
+
+SELECT
+	r.Id,
+	r.Value1,
+	r.Value2,
+	r.Value4,
+	r.Value5
+FROM
+	BooleanTable r
+WHERE
+	r.Value1 = r.Value2 AND r.Value1 = r.Value4
+
+BeforeExecute
+-- Informix.DB2 Informix
+
+SELECT
+	t1.Id,
+	t1.Value1,
+	t1.Value2,
+	t1.Value4,
+	t1.Value5
+FROM
+	BooleanTable t1
+
+BeforeExecute
+-- Informix.DB2 Informix
+
+SELECT
+	r.Id,
+	r.Value1,
+	r.Value2,
+	r.Value4,
+	r.Value5
+FROM
+	BooleanTable r
+WHERE
+	r.Value1 = r.Value5 AND r.Value1 = r.Value2
+
+BeforeExecute
+-- Informix.DB2 Informix
+
+SELECT
+	t1.Id,
+	t1.Value1,
+	t1.Value2,
+	t1.Value4,
+	t1.Value5
+FROM
+	BooleanTable t1
+
+BeforeExecute
+-- Informix.DB2 Informix
+
+SELECT
+	r.Id,
+	r.Value1,
+	r.Value2,
+	r.Value4,
+	r.Value5
+FROM
+	BooleanTable r
+WHERE
+	r.Value1 = r.Value5 AND r.Value1 = r.Value4
+
+BeforeExecute
+-- Informix.DB2 Informix
+
+SELECT
+	t1.Id,
+	t1.Value1,
+	t1.Value2,
+	t1.Value4,
+	t1.Value5
+FROM
+	BooleanTable t1
+
+BeforeExecute
+-- Informix.DB2 Informix
+
+SELECT
+	r.Id,
+	r.Value1,
+	r.Value2,
+	r.Value4,
+	r.Value5
+FROM
+	BooleanTable r
+WHERE
+	r.Value1 < r.Value2 AND (r.Value1 >= r.Value2 OR r.Value1 < r.Value4)
+
+BeforeExecute
+-- Informix.DB2 Informix
+
+SELECT
+	t1.Id,
+	t1.Value1,
+	t1.Value2,
+	t1.Value4,
+	t1.Value5
+FROM
+	BooleanTable t1
+
+BeforeExecute
+-- Informix.DB2 Informix
+
+SELECT
+	r.Id,
+	r.Value1,
+	r.Value2,
+	r.Value4,
+	r.Value5
+FROM
+	BooleanTable r
+WHERE
+	r.Value1 < r.Value5 AND (r.Value1 >= r.Value5 OR r.Value1 < r.Value2)
+
+BeforeExecute
+-- Informix.DB2 Informix
+
+SELECT
+	t1.Id,
+	t1.Value1,
+	t1.Value2,
+	t1.Value4,
+	t1.Value5
+FROM
+	BooleanTable t1
+
+BeforeExecute
+-- Informix.DB2 Informix
+
+SELECT
+	r.Id,
+	r.Value1,
+	r.Value2,
+	r.Value4,
+	r.Value5
+FROM
+	BooleanTable r
+WHERE
+	r.Value1 < r.Value5 AND (r.Value1 >= r.Value5 OR r.Value1 < r.Value4)
+
+BeforeExecute
+-- Informix.DB2 Informix
+
+SELECT
+	t1.Id,
+	t1.Value1,
+	t1.Value2,
+	t1.Value4,
+	t1.Value5
+FROM
+	BooleanTable t1
+

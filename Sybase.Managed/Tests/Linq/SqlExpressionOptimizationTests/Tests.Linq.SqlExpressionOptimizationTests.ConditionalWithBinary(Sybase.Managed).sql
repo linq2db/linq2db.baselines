@@ -1395,7 +1395,7 @@ SELECT
 FROM
 	[OptimizationData] [x]
 WHERE
-	[x].[IntVlaue] < 4 OR [x].[IntVlaue] <> 0 AND [x].[IntVlaue] >= 4
+	[x].[IntVlaue] < 4 OR [x].[IntVlaue] <> 0
 
 BeforeExecute
 -- Sybase.Managed Sybase
@@ -1424,7 +1424,7 @@ SELECT
 FROM
 	[OptimizationData] [x_with_not]
 WHERE
-	NOT ([x_with_not].[IntVlaue] < 4 OR [x_with_not].[IntVlaue] <> 0 AND [x_with_not].[IntVlaue] >= 4)
+	NOT ([x_with_not].[IntVlaue] < 4 OR [x_with_not].[IntVlaue] <> 0)
 
 BeforeExecute
 -- Sybase.Managed Sybase
@@ -1453,7 +1453,7 @@ SELECT
 FROM
 	[OptimizationData] [swap]
 WHERE
-	[swap].[IntVlaue] < 4 OR [swap].[IntVlaue] <> 0 AND [swap].[IntVlaue] >= 4
+	[swap].[IntVlaue] < 4 OR [swap].[IntVlaue] <> 0
 
 BeforeExecute
 -- Sybase.Managed Sybase
@@ -1482,7 +1482,7 @@ SELECT
 FROM
 	[OptimizationData] [swap_with_not]
 WHERE
-	NOT ([swap_with_not].[IntVlaue] < 4 OR [swap_with_not].[IntVlaue] <> 0 AND [swap_with_not].[IntVlaue] >= 4)
+	NOT ([swap_with_not].[IntVlaue] < 4 OR [swap_with_not].[IntVlaue] <> 0)
 
 BeforeExecute
 -- Sybase.Managed Sybase
@@ -1511,7 +1511,7 @@ SELECT
 FROM
 	[OptimizationData] [x]
 WHERE
-	[x].[IntVlaue] < 4 OR [x].[IntVlaue] > 0 AND [x].[IntVlaue] >= 4
+	[x].[IntVlaue] < 4 OR [x].[IntVlaue] > 0
 
 BeforeExecute
 -- Sybase.Managed Sybase
@@ -1540,7 +1540,7 @@ SELECT
 FROM
 	[OptimizationData] [x_with_not]
 WHERE
-	NOT ([x_with_not].[IntVlaue] < 4 OR [x_with_not].[IntVlaue] > 0 AND [x_with_not].[IntVlaue] >= 4)
+	NOT ([x_with_not].[IntVlaue] < 4 OR [x_with_not].[IntVlaue] > 0)
 
 BeforeExecute
 -- Sybase.Managed Sybase
@@ -1627,7 +1627,7 @@ SELECT
 FROM
 	[OptimizationData] [x]
 WHERE
-	[x].[IntVlaue] < 4 OR [x].[IntVlaue] >= 0 AND [x].[IntVlaue] >= 4
+	[x].[IntVlaue] < 4 OR [x].[IntVlaue] >= 0
 
 BeforeExecute
 -- Sybase.Managed Sybase
@@ -1656,7 +1656,7 @@ SELECT
 FROM
 	[OptimizationData] [x_with_not]
 WHERE
-	NOT ([x_with_not].[IntVlaue] < 4 OR [x_with_not].[IntVlaue] >= 0 AND [x_with_not].[IntVlaue] >= 4)
+	NOT ([x_with_not].[IntVlaue] < 4 OR [x_with_not].[IntVlaue] >= 0)
 
 BeforeExecute
 -- Sybase.Managed Sybase
@@ -1859,7 +1859,7 @@ SELECT
 FROM
 	[OptimizationData] [x]
 WHERE
-	[x].[IntVlaue] <> 0 AND [x].[IntVlaue] >= 4 OR [x].[IntVlaue] < 4
+	[x].[IntVlaue] <> 0 OR [x].[IntVlaue] < 4
 
 BeforeExecute
 -- Sybase.Managed Sybase
@@ -1888,7 +1888,7 @@ SELECT
 FROM
 	[OptimizationData] [x_with_not]
 WHERE
-	NOT ([x_with_not].[IntVlaue] <> 0 AND [x_with_not].[IntVlaue] >= 4 OR [x_with_not].[IntVlaue] < 4)
+	NOT ([x_with_not].[IntVlaue] <> 0 OR [x_with_not].[IntVlaue] < 4)
 
 BeforeExecute
 -- Sybase.Managed Sybase
@@ -1917,8 +1917,7 @@ SELECT
 FROM
 	[OptimizationData] [swap]
 WHERE
-	[swap].[IntVlaue] <> 0 AND [swap].[IntVlaue] >= 4 OR
-	[swap].[IntVlaue] < 4
+	[swap].[IntVlaue] <> 0 OR [swap].[IntVlaue] < 4
 
 BeforeExecute
 -- Sybase.Managed Sybase
@@ -1947,7 +1946,7 @@ SELECT
 FROM
 	[OptimizationData] [swap_with_not]
 WHERE
-	NOT ([swap_with_not].[IntVlaue] <> 0 AND [swap_with_not].[IntVlaue] >= 4 OR [swap_with_not].[IntVlaue] < 4)
+	NOT ([swap_with_not].[IntVlaue] <> 0 OR [swap_with_not].[IntVlaue] < 4)
 
 BeforeExecute
 -- Sybase.Managed Sybase
@@ -1976,7 +1975,7 @@ SELECT
 FROM
 	[OptimizationData] [x]
 WHERE
-	[x].[IntVlaue] > 0 AND [x].[IntVlaue] >= 4 OR [x].[IntVlaue] < 4
+	[x].[IntVlaue] > 0 OR [x].[IntVlaue] < 4
 
 BeforeExecute
 -- Sybase.Managed Sybase
@@ -2005,7 +2004,7 @@ SELECT
 FROM
 	[OptimizationData] [x_with_not]
 WHERE
-	NOT ([x_with_not].[IntVlaue] > 0 AND [x_with_not].[IntVlaue] >= 4 OR [x_with_not].[IntVlaue] < 4)
+	NOT ([x_with_not].[IntVlaue] > 0 OR [x_with_not].[IntVlaue] < 4)
 
 BeforeExecute
 -- Sybase.Managed Sybase
@@ -2092,7 +2091,7 @@ SELECT
 FROM
 	[OptimizationData] [x]
 WHERE
-	[x].[IntVlaue] >= 0 AND [x].[IntVlaue] >= 4 OR [x].[IntVlaue] < 4
+	[x].[IntVlaue] >= 0 OR [x].[IntVlaue] < 4
 
 BeforeExecute
 -- Sybase.Managed Sybase
@@ -2121,7 +2120,7 @@ SELECT
 FROM
 	[OptimizationData] [x_with_not]
 WHERE
-	NOT ([x_with_not].[IntVlaue] >= 0 AND [x_with_not].[IntVlaue] >= 4 OR [x_with_not].[IntVlaue] < 4)
+	NOT ([x_with_not].[IntVlaue] >= 0 OR [x_with_not].[IntVlaue] < 4)
 
 BeforeExecute
 -- Sybase.Managed Sybase
