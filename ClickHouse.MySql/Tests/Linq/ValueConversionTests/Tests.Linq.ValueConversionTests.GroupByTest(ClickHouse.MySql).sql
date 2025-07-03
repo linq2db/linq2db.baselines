@@ -16,7 +16,7 @@ SELECT
 FROM
 	ValueConversion m_1
 WHERE
-	'[{"Value":"Value1"}]' = m_1.Value2 AND '[{"Value":"Value1"}]' = m_1.Value2
+	'[{"Value":"Value1"}]' = m_1.Value2
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse

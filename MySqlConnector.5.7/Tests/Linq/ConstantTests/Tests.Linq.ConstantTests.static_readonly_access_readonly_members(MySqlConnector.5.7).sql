@@ -9,7 +9,7 @@ SELECT
 FROM
 	`TestConstantsData` `e`
 WHERE
-	`e`.`Id` = 1 AND `e`.`Id` = 1
+	`e`.`Id` = 1
 
 BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
@@ -33,7 +33,7 @@ SELECT
 FROM
 	`TestConstantsData` `e`
 WHERE
-	`e`.`Id` = 1 AND `e`.`Id` = 1
+	`e`.`Id` = 1
 
 BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57

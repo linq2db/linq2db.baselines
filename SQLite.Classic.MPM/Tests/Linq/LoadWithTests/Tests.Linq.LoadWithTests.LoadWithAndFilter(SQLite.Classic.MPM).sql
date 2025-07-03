@@ -123,13 +123,9 @@ FROM
 					[m_1].[Id] > 1
 			) [t1]
 				INNER JOIN [SubItem1] [d] ON [t1].[Id] = [d].[ParentId]
-		WHERE
-			[d].[Value] = [d].[Value] OR [d].[Value] IS NULL AND [d].[Value] IS NULL
 	) [m_2]
 		INNER JOIN [SubItem1_Sub] [d_1] ON [m_2].[Id] = [d_1].[ParentId]
-		LEFT JOIN [SubItem1] [a_ParentSubItem] ON [d_1].[ParentId] = [a_ParentSubItem].[Id] AND ([a_ParentSubItem].[Value] = [a_ParentSubItem].[Value] OR [a_ParentSubItem].[Value] IS NULL AND [a_ParentSubItem].[Value] IS NULL)
-WHERE
-	[d_1].[Value] = [d_1].[Value] OR [d_1].[Value] IS NULL AND [d_1].[Value] IS NULL
+		LEFT JOIN [SubItem1] [a_ParentSubItem] ON [d_1].[ParentId] = [a_ParentSubItem].[Id]
 
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
@@ -151,8 +147,6 @@ FROM
 			[m_1].[Id] > 1
 	) [m_2]
 		INNER JOIN [SubItem1] [d] ON [m_2].[Id] = [d].[ParentId]
-WHERE
-	[d].[Value] = [d].[Value] OR [d].[Value] IS NULL AND [d].[Value] IS NULL
 
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
@@ -177,8 +171,6 @@ FROM
 	) [m_2]
 		INNER JOIN [SubItem2] [d] ON [m_2].[Id] = [d].[ParentId]
 		LEFT JOIN [MainItem] [a_Parent] ON [d].[ParentId] = [a_Parent].[Id]
-WHERE
-	[d].[Value] = [d].[Value] OR [d].[Value] IS NULL AND [d].[Value] IS NULL
 
 BeforeExecute
 DisposeTransaction

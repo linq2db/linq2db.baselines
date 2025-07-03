@@ -9,7 +9,7 @@ SELECT
 FROM
 	`TestConstantsData` `e`
 WHERE
-	`e`.`Id` = 1 AND `e`.`Id` = 1
+	`e`.`Id` = 1
 
 BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
@@ -33,7 +33,7 @@ SELECT
 FROM
 	`TestConstantsData` `e`
 WHERE
-	`e`.`Id` = 1 AND `e`.`Id` = 1
+	`e`.`Id` = 1
 
 BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80

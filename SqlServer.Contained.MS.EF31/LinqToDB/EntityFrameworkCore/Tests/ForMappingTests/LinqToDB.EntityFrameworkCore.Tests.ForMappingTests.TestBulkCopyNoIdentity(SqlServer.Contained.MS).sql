@@ -1,4 +1,4 @@
-﻿--  SqlServer.2019
+﻿-- SqlServer.2019
 
 CREATE TABLE [tempdb]..[#NoIdentity]
 (
@@ -14,7 +14,7 @@ INSERT BULK [tempdb]..[#NoIdentity](Id, Name)
 
 
 
---  SqlServer.2019
+-- SqlServer.2019
 
 SELECT
 	[t1].[Id],
@@ -24,7 +24,7 @@ FROM
 
 
 
---  SqlServer.2019
+-- SqlServer.2019
 
 DROP TABLE IF EXISTS [tempdb]..[#NoIdentity]
 

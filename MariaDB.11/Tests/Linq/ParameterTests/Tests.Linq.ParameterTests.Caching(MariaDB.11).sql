@@ -9,7 +9,7 @@ SELECT
 FROM
 	`Parent` `x`
 WHERE
-	`x`.`ParentID` = @p OR `x`.`ParentID` = @p
+	`x`.`ParentID` = @p
 
 BeforeExecute
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql

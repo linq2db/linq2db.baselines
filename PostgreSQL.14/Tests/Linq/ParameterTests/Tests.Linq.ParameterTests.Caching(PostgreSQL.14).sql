@@ -9,7 +9,7 @@ SELECT
 FROM
 	"Parent" x
 WHERE
-	x."ParentID" = :p OR x."ParentID" = :p
+	x."ParentID" = :p
 
 BeforeExecute
 -- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL

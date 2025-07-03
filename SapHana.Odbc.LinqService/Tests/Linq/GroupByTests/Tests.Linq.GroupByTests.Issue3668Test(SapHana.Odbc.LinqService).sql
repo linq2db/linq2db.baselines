@@ -8,14 +8,6 @@ DECLARE @name NVarChar(4) -- String
 SET     @name = 'test'
 DECLARE @id Int -- Int32
 SET     @id = 1
-DECLARE @id Int -- Int32
-SET     @id = 1
-DECLARE @name NVarChar(4) -- String
-SET     @name = 'test'
-DECLARE @name NVarChar(4) -- String
-SET     @name = 'test'
-DECLARE @id Int -- Int32
-SET     @id = 1
 
 SELECT
 	"m_1"."PersonID",
@@ -27,8 +19,7 @@ SELECT
 FROM
 	"Person" "m_1"
 WHERE
-	("m_1"."PersonID" = ? AND "m_1"."LastName" <> ? OR "m_1"."FirstName" <> ? AND "m_1"."PersonID" - 1 = ?) AND
-	("m_1"."PersonID" = ? AND "m_1"."LastName" <> ? OR "m_1"."FirstName" <> ? AND "m_1"."PersonID" - 1 = ?)
+	"m_1"."PersonID" = ? AND "m_1"."LastName" <> ? OR "m_1"."FirstName" <> ? AND "m_1"."PersonID" - 1 = ?
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc

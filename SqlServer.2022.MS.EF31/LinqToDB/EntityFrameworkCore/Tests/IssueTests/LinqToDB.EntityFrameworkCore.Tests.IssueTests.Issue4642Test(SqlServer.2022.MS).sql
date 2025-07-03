@@ -1,13 +1,13 @@
-﻿--  SqlServer.2022 (asynchronously)
+﻿-- SqlServer.2022 (asynchronously)
 DECLARE @systemId VarChar(20) -- AnsiString
 SET     @systemId = N'system'
 
 MERGE INTO [Issue4642Table2] [Target]
 USING (
 	SELECT
-		[y].[Id] as [source_Id],
-		[y].[SystemId] as [source_SystemId],
-		[y].[Timestamp] as [source_Timestamp]
+		[y].[Id],
+		[y].[SystemId],
+		[y].[Timestamp] as [Timestamp_1]
 	FROM
 		[Issue4642Table1] [x]
 			INNER JOIN [Issue4642Table2] [y] ON [x].[Id] = [y].[Id]
@@ -15,16 +15,16 @@ USING (
 		[x].[Id] IN (1) AND [y].[SystemId] = @systemId
 ) [Source]
 (
-	[source_Id],
-	[source_SystemId],
-	[source_Timestamp]
+	[Id],
+	[SystemId],
+	[Timestamp_1]
 )
-ON ([Target].[Id] = [Source].[source_Id] AND [Target].[SystemId] = [Source].[source_SystemId])
+ON ([Target].[Id] = [Source].[Id] AND [Target].[SystemId] = [Source].[SystemId])
 
 WHEN MATCHED THEN
 UPDATE
 SET
-	[Timestamp] = [Source].[source_Timestamp]
+	[Timestamp] = [Source].[Timestamp_1]
 
 WHEN NOT MATCHED THEN
 INSERT
@@ -35,9 +35,9 @@ INSERT
 )
 VALUES
 (
-	[Source].[source_Id],
-	[Source].[source_SystemId],
-	[Source].[source_Timestamp]
+	[Source].[Id],
+	[Source].[SystemId],
+	[Source].[Timestamp_1]
 )
 OUTPUT
 	$action,

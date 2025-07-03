@@ -22,7 +22,7 @@ AS
 			FROM
 				[Employees] [e2]
 			WHERE
-				[e2].[ReportsTo] = [e].[ReportsTo] AND [e2].[ReportsTo] IS NOT NULL
+				[e2].[ReportsTo] = [e].[ReportsTo]
 		)
 	FROM
 		[Employees] [e]
@@ -50,7 +50,7 @@ SELECT
 		FROM
 			[Employees] [e2_1]
 		WHERE
-			[e2_1].[ReportsTo] = [employee].[ReportsTo] AND [e2_1].[ReportsTo] IS NOT NULL
+			[e2_1].[ReportsTo] = [employee].[ReportsTo]
 	),
 	[manager_1].[LastName],
 	[manager_1].[FirstName],
@@ -67,7 +67,7 @@ FROM
 					FROM
 						[Employees] [e2]
 					WHERE
-						[e2].[ReportsTo] = [manager].[ReportsTo] AND [e2].[ReportsTo] IS NOT NULL
+						[e2].[ReportsTo] = [manager].[ReportsTo]
 				) as [NumberOfSubordinates],
 				[manager].[EmployeeID]
 			FROM

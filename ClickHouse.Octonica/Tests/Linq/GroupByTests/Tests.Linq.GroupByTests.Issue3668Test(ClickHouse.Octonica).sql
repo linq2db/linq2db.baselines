@@ -11,8 +11,7 @@ SELECT
 FROM
 	Person m_1
 WHERE
-	(m_1.PersonID = 1 AND m_1.LastName <> 'test' OR m_1.FirstName <> 'test' AND m_1.PersonID = 2) AND
-	(m_1.PersonID = 1 AND m_1.LastName <> 'test' OR m_1.FirstName <> 'test' AND m_1.PersonID = 2)
+	m_1.PersonID = 1 AND m_1.LastName <> 'test' OR m_1.FirstName <> 'test' AND m_1.PersonID = 2
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse

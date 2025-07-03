@@ -166,7 +166,7 @@ SELECT
 FROM
 	[BooleanTable] [r]
 WHERE
-	[r].[Value1] = [r].[Value4] AND [r].[Value4] IS NOT NULL
+	[r].[Value1] = [r].[Value4]
 
 BeforeExecute
 -- SqlServer.Contained.MS SqlServer.2019
@@ -609,7 +609,7 @@ SELECT
 FROM
 	[BooleanTable] [r]
 WHERE
-	[r].[Value1] = [r].[Value4] AND [r].[Value4] IS NOT NULL
+	[r].[Value1] = [r].[Value4]
 
 BeforeExecute
 -- SqlServer.Contained.MS SqlServer.2019

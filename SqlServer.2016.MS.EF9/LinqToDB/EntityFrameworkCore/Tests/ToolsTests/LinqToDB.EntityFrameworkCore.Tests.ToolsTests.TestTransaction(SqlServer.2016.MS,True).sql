@@ -13,7 +13,7 @@ SELECT
 FROM
 	[Products] [e]
 WHERE
-	([e].[IsDeleted] = 0 OR [e].[IsDeleted] = 0) AND [e].[ProductName] LIKE N'U%' ESCAPE N'~'
+	[e].[IsDeleted] = 0 AND [e].[ProductName] LIKE N'U%' ESCAPE N'~'
 
 
 
@@ -23,7 +23,7 @@ DELETE [e]
 FROM
 	[Products] [e]
 WHERE
-	([e].[IsDeleted] = 0 OR [e].[IsDeleted] = 0) AND [e].[ProductName] = N'a'
+	[e].[IsDeleted] = 0 AND [e].[ProductName] = N'a'
 
 
 

@@ -9,7 +9,7 @@ SELECT
 FROM
 	[Parent] [x]
 WHERE
-	[x].[ParentID] = @p OR [x].[ParentID] = @p
+	[x].[ParentID] = @p
 
 BeforeExecute
 -- SqlServer.2016.MS SqlServer.2016

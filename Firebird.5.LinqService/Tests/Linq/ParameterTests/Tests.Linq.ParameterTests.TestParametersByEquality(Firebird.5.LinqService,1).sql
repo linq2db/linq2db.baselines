@@ -19,8 +19,7 @@ SELECT
 FROM
 	"Person" "p"
 WHERE
-	"p"."PersonID" = @personId AND "p"."PersonID" = @personId AND
-	"p"."PersonID" = @personId_1
+	"p"."PersonID" = @personId AND "p"."PersonID" = @personId_1
 
 BeforeExecute
 -- Firebird.5 Firebird4
@@ -43,6 +42,5 @@ SELECT
 FROM
 	"Person" "p"
 WHERE
-	"p"."PersonID" = @personId AND "p"."PersonID" = @personId AND
-	"p"."PersonID" = @personId_1
+	"p"."PersonID" = @personId AND "p"."PersonID" = @personId_1
 

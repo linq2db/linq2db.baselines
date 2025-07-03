@@ -19,7 +19,7 @@ SELECT
 FROM
 	[Customers] [m_1]
 WHERE
-	[m_1].[CompanyName] LIKE '%t%' ESCAPE '~' AND [m_1].[CompanyName] LIKE '%t%' ESCAPE '~'
+	[m_1].[CompanyName] LIKE '%t%' ESCAPE '~'
 
 BeforeExecute
 DisposeTransaction

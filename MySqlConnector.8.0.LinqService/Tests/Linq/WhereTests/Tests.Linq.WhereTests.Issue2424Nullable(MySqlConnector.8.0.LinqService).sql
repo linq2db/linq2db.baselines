@@ -182,7 +182,7 @@ SELECT
 FROM
 	`Isue2424Table` `i`
 WHERE
-	`i`.`StrValueNullable` IS NOT NULL OR `i`.`StrValueNullable` IS NOT NULL
+	`i`.`StrValueNullable` IS NOT NULL
 
 BeforeExecute
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80

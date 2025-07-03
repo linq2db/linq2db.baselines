@@ -182,7 +182,7 @@ SELECT
 FROM
 	Isue2424Table i
 WHERE
-	i.StrValueNullable IS NOT NULL OR i.StrValueNullable IS NOT NULL
+	i.StrValueNullable IS NOT NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse

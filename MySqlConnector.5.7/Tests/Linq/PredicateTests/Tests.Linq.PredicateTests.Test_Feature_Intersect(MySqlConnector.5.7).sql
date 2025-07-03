@@ -15,8 +15,6 @@ WHERE
 				SELECT
 					1
 				FROM DUAL
-				WHERE
-					`r`.`One` = `r`.`One` OR `r`.`One` IS NULL AND `r`.`One` IS NULL
 			)
 	)
 
@@ -37,8 +35,6 @@ WHERE
 				SELECT
 					1
 				FROM DUAL
-				WHERE
-					`r`.`Zero` = `r`.`Zero` OR `r`.`Zero` IS NULL AND `r`.`Zero` IS NULL
 			)
 	)
 
@@ -59,8 +55,6 @@ WHERE
 				SELECT
 					1
 				FROM DUAL
-				WHERE
-					`r`.`Null` = `r`.`Null` OR `r`.`Null` IS NULL AND `r`.`Null` IS NULL
 			)
 	)
 
@@ -147,8 +141,6 @@ WHERE
 				SELECT
 					1
 				FROM DUAL
-				WHERE
-					`r`.`One` = `r`.`One` OR `r`.`One` IS NULL AND `r`.`One` IS NULL
 			)
 	)
 
@@ -169,8 +161,6 @@ WHERE
 				SELECT
 					1
 				FROM DUAL
-				WHERE
-					`r`.`Zero` = `r`.`Zero` OR `r`.`Zero` IS NULL AND `r`.`Zero` IS NULL
 			)
 	)
 
@@ -191,8 +181,6 @@ WHERE
 				SELECT
 					1
 				FROM DUAL
-				WHERE
-					`r`.`Null` = `r`.`Null` OR `r`.`Null` IS NULL AND `r`.`Null` IS NULL
 			)
 	)
 

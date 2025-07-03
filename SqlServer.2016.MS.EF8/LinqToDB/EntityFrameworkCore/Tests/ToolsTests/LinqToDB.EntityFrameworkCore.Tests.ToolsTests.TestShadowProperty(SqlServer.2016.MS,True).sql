@@ -13,7 +13,7 @@ SELECT
 FROM
 	[Products] [p]
 WHERE
-	[p].[IsDeleted] = 0 OR [p].[IsDeleted] = 0
+	[p].[IsDeleted] = 0
 
 
 

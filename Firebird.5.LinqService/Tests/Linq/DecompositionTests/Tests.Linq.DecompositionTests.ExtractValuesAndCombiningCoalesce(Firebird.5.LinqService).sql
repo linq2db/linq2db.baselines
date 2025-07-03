@@ -57,7 +57,7 @@ FROM
 			"Item" "x"
 	) "x_1"
 WHERE
-	NOT ("x_1"."cond" AND ("x_1"."cond_1" AND "x_1"."cond_2" OR NOT "x_1"."cond_1") OR NOT "x_1"."cond" AND NOT "x_1"."cond_3")
+	NOT ("x_1"."cond" AND "x_1"."cond_2" OR NOT "x_1"."cond" AND NOT "x_1"."cond_3")
 
 BeforeExecute
 -- Firebird.5 Firebird4
@@ -102,8 +102,7 @@ FROM
 			"Item" "x"
 	) "x_1"
 WHERE
-	"x_1"."cond" AND ("x_1"."cond_1" AND "x_1"."cond_2" OR NOT "x_1"."cond_1") OR
-	NOT "x_1"."cond" AND NOT "x_1"."cond_3"
+	"x_1"."cond" AND "x_1"."cond_2" OR NOT "x_1"."cond" AND NOT "x_1"."cond_3"
 
 BeforeExecute
 -- Firebird.5 Firebird4
@@ -148,7 +147,7 @@ FROM
 			"Item" "x"
 	) "x_1"
 WHERE
-	NOT ("x_1"."cond" AND NOT "x_1"."cond_1" OR NOT "x_1"."cond" AND ("x_1"."cond_2" AND "x_1"."cond_3" OR NOT "x_1"."cond_2"))
+	NOT (NOT "x_1"."cond" AND ("x_1"."cond_3" OR NOT "x_1"."cond_2"))
 
 BeforeExecute
 -- Firebird.5 Firebird4
@@ -193,7 +192,7 @@ FROM
 			"Item" "x"
 	) "x_1"
 WHERE
-	"x_1"."cond" AND NOT "x_1"."cond_1" OR NOT "x_1"."cond" AND ("x_1"."cond_2" AND "x_1"."cond_3" OR NOT "x_1"."cond_2")
+	NOT "x_1"."cond" AND ("x_1"."cond_3" OR NOT "x_1"."cond_2")
 
 BeforeExecute
 -- Firebird.5 Firebird4

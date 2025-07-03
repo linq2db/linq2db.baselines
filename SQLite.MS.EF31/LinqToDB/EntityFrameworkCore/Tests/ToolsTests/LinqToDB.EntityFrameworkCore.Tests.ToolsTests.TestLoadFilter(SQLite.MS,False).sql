@@ -35,7 +35,7 @@ ORDER BY "p"."ProductID", "t3"."OrderID0", "t3"."ProductID", "t3"."OrderID", "t3
 BeginTransactionAsync(Serializable)
 
 
---  SQLite.MS SQLite (asynchronously)
+-- SQLite.MS SQLite (asynchronously)
 
 SELECT
 	[m_1].[SupplierId],
@@ -70,9 +70,7 @@ FROM
 				INNER JOIN [Products] [a_Product] ON [d].[ProductID] = [a_Product].[ProductID]
 				LEFT JOIN [Suppliers] [a_Supplier] ON [a_Product].[SupplierID] = [a_Supplier].[SupplierID] AND NOT [a_Supplier].[IsDeleted]
 		WHERE
-			NOT [e_1].[IsDeleted] AND
-			NOT [a_Product].[IsDeleted] AND
-			NOT [e_1].[IsDeleted] AND
+			NOT [e_1].[IsDeleted] AND NOT [a_Product].[IsDeleted] AND
 			NOT [d].[IsDeleted]
 	) [m_1]
 		INNER JOIN [Products] [d_1] ON [m_1].[SupplierId] = [d_1].[SupplierID] OR [m_1].[SupplierId] IS NULL AND [d_1].[SupplierID] IS NULL
@@ -81,7 +79,7 @@ WHERE
 
 
 
---  SQLite.MS SQLite (asynchronously)
+-- SQLite.MS SQLite (asynchronously)
 
 SELECT
 	[m_1].[ProductID],
@@ -108,18 +106,14 @@ FROM
 		INNER JOIN [Orders] [e] ON [d].[OrderID] = [e].[OrderID]
 		LEFT JOIN [Suppliers] [a_Supplier] ON [m_1].[SupplierID] = [a_Supplier].[SupplierID] AND NOT [a_Supplier].[IsDeleted]
 WHERE
-	NOT [m_1].[IsDeleted] AND
-	NOT [e].[IsDeleted] AND
-	NOT [m_1].[IsDeleted] AND
-	NOT [e].[IsDeleted] AND
-	NOT [d].[IsDeleted]
+	NOT [m_1].[IsDeleted] AND NOT [e].[IsDeleted] AND NOT [d].[IsDeleted]
 
 
 
 DisposeTransactionAsync
 
 
---  SQLite.MS SQLite (asynchronously)
+-- SQLite.MS SQLite (asynchronously)
 
 SELECT
 	[p].[ProductName],
