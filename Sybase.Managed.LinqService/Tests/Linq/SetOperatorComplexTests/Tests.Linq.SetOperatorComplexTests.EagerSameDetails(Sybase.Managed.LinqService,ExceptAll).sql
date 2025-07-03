@@ -22,10 +22,8 @@ FROM
 						INNER JOIN [BookAuthor] [b_1] ON [b_1].[FkAuthorId] = [t2].[AuthorId]
 						LEFT JOIN [Book] [a_Book_1] ON [b_1].[FkBookId] = [a_Book_1].[BookId]
 				WHERE
-					[a_Book_1].[Discriminator] = 'Novel' AND
-					[a_Book].[BookId] = [a_Book_1].[BookId] AND
-					([a_Book].[BookName] = [a_Book_1].[BookName] OR [a_Book].[BookName] IS NULL AND [a_Book_1].[BookName] IS NULL) AND
-					[a_Book].[BookId] = [a_Book_1].[BookId]
+					[a_Book_1].[Discriminator] = 'Novel' AND ([a_Book].[BookId] = [a_Book_1].[BookId] OR [a_Book].[BookId] IS NULL AND [a_Book_1].[BookId] IS NULL) AND
+					([a_Book].[BookName] = [a_Book_1].[BookName] OR [a_Book].[BookName] IS NULL AND [a_Book_1].[BookName] IS NULL)
 			)
 	) [m_1]
 		INNER JOIN [BookAuthor] [d] ON [d].[FkBookId] = [m_1].[BookId]
@@ -50,10 +48,8 @@ WHERE
 				INNER JOIN [BookAuthor] [b_1] ON [b_1].[FkAuthorId] = [t2].[AuthorId]
 				LEFT JOIN [Book] [a_Book_1] ON [b_1].[FkBookId] = [a_Book_1].[BookId]
 		WHERE
-			[a_Book_1].[Discriminator] = 'Novel' AND
-			[a_Book].[BookId] = [a_Book_1].[BookId] AND
-			([a_Book].[BookName] = [a_Book_1].[BookName] OR [a_Book].[BookName] IS NULL AND [a_Book_1].[BookName] IS NULL) AND
-			[a_Book].[BookId] = [a_Book_1].[BookId]
+			[a_Book_1].[Discriminator] = 'Novel' AND ([a_Book].[BookId] = [a_Book_1].[BookId] OR [a_Book].[BookId] IS NULL AND [a_Book_1].[BookId] IS NULL) AND
+			([a_Book].[BookName] = [a_Book_1].[BookName] OR [a_Book].[BookName] IS NULL AND [a_Book_1].[BookName] IS NULL)
 	)
 
 BeforeExecute
