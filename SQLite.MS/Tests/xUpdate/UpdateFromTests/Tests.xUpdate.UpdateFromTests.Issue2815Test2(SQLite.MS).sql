@@ -19,10 +19,25 @@ WHERE
 	[channel].[BIC] = [Issue2815Table1].[SRC_BIC] AND
 	[channel].[Sepa] = CASE
 		WHEN [source].[SEPA] AND [destination].[SEPA] THEN CASE
-			WHEN [source].[ISO] = [destination].[ISO] OR [source].[ISO] IS NULL AND [destination].[ISO] IS NULL
-				THEN 0
+			WHEN [source].[ISO] = [destination].[ISO] THEN 0
 			ELSE 1
 		END
 		ELSE 2
 	END
+
+BeforeExecute
+-- SQLite.MS SQLite
+
+SELECT
+	[t1].[SRC_BIC],
+	[t1].[DES_BIC],
+	[t1].[IDF],
+	[t1].[TREA_CENT],
+	[t1].[NOT_HANDLED],
+	[t1].[TRANS_CHANNEL]
+FROM
+	[Issue2815Table1] [t1]
+ORDER BY
+	[t1].[SRC_BIC],
+	[t1].[DES_BIC]
 
