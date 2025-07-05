@@ -18,7 +18,7 @@ FROM
 		LEFT JOIN (
 			SELECT
 				g_1.InvoiceID as InvoiceID,
-				sumOrNull(ili.BillingAmountOverride) as SUM_1
+				sum(ili.BillingAmountOverride) as SUM_1
 			FROM
 				Invoice g_1
 					INNER JOIN InvoiceLineItem ili ON ili.OwningInvoiceID = g_1.InvoiceID
@@ -61,7 +61,7 @@ FROM
 		LEFT JOIN (
 			SELECT
 				g_1.InvoiceID as InvoiceID,
-				sumOrNull(ili.BillingAmountOverride) as SUM_1
+				sum(ili.BillingAmountOverride) as SUM_1
 			FROM
 				Invoice g_1
 					INNER JOIN InvoiceLineItem ili ON ili.OwningInvoiceID = g_1.InvoiceID
