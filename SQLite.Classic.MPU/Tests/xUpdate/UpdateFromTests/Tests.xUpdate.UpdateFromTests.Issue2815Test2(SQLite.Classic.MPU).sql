@@ -25,3 +25,19 @@ WHERE
 		ELSE 2
 	END
 
+BeforeExecute
+-- SQLite.Classic.MPU SQLite.Classic SQLite
+
+SELECT
+	[t1].[SRC_BIC],
+	[t1].[DES_BIC],
+	[t1].[IDF],
+	[t1].[TREA_CENT],
+	[t1].[NOT_HANDLED],
+	[t1].[TRANS_CHANNEL]
+FROM
+	[Issue2815Table1] [t1]
+ORDER BY
+	[t1].[SRC_BIC],
+	[t1].[DES_BIC]
+
