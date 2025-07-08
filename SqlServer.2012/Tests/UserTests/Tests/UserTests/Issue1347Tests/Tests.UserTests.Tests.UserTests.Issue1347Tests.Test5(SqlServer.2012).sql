@@ -10,7 +10,7 @@ SELECT
 	[t3].[RPDestinationID],
 	[t3].[RPOrigDestinationID],
 	[t3].[OutfeedTransportOrderID],
-	[res_1].[Id]
+	[res_2].[Id]
 FROM
 	(
 		SELECT
@@ -39,13 +39,18 @@ FROM
 	) [t3]
 		LEFT JOIN (
 			SELECT
-				[res].[Id]
+				[res_1].[Id]
 			FROM
-				[WmsLoadCarrierDTO] [res]
-			UNION
-			SELECT
-				[t2].[Id]
-			FROM
-				[WMS_LoadCarrierA] [t2]
-		) [res_1] ON [t3].[ResourceID] = [res_1].[Id]
+				(
+					SELECT
+						[res].[Id]
+					FROM
+						[WmsLoadCarrierDTO] [res]
+					UNION
+					SELECT
+						[t2].[Id]
+					FROM
+						[WMS_LoadCarrierA] [t2]
+				) [res_1]
+		) [res_2] ON [t3].[ResourceID] = [res_2].[Id]
 

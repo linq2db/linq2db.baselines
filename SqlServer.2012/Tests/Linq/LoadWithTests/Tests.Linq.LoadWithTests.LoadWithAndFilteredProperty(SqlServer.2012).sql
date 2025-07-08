@@ -52,9 +52,9 @@ BeforeExecute
 
 SELECT
 	[m_2].[Id],
-	[d].[Id],
-	[d].[Value_1],
-	[d].[ParentId]
+	[d_1].[Id],
+	[d_1].[Value_1],
+	[d_1].[ParentId]
 FROM
 	(
 		SELECT DISTINCT
@@ -65,19 +65,26 @@ FROM
 			[m_1].[Id] > 1
 	) [m_2]
 		CROSS APPLY (
-			SELECT TOP (2)
-				[e].[Value] as [Value_1],
-				[e].[Id],
-				[e].[ParentId]
+			SELECT
+				[d].[Id],
+				[d].[Value_1],
+				[d].[ParentId]
 			FROM
-				[SubItem1] [e]
+				(
+					SELECT TOP (2)
+						[e].[Value] as [Value_1],
+						[e].[Id],
+						[e].[ParentId]
+					FROM
+						[SubItem1] [e]
+					WHERE
+						[m_2].[Id] = [e].[ParentId] AND [e].[ParentId] % 2 = 0
+					ORDER BY
+						[e].[Id]
+				) [d]
 			WHERE
-				[m_2].[Id] = [e].[ParentId] AND [e].[ParentId] % 2 = 0
-			ORDER BY
-				[e].[Id]
-		) [d]
-WHERE
-	[d].[Value_1] LIKE N'Sub1~_%' ESCAPE N'~'
+				[d].[Value_1] LIKE N'Sub1~_%' ESCAPE N'~'
+		) [d_1]
 
 BeforeExecute
 DisposeTransaction
@@ -102,9 +109,9 @@ BeforeExecute
 SELECT
 	[m_2].[cond],
 	[m_2].[Id],
-	[d_1].[Id],
-	[d_1].[Value_1],
-	[d_1].[ParentId]
+	[d_2].[Id],
+	[d_2].[Value_1],
+	[d_2].[ParentId]
 FROM
 	(
 		SELECT DISTINCT
@@ -123,20 +130,27 @@ FROM
 				LEFT JOIN [MainItem] [a_Parent] ON [d].[ParentId] = [a_Parent].[Id]
 	) [m_2]
 		CROSS APPLY (
-			SELECT TOP (2)
-				[e].[Value] as [Value_1],
-				[e].[Id],
-				[e].[ParentId]
+			SELECT
+				[d_1].[Id],
+				[d_1].[Value_1],
+				[d_1].[ParentId]
 			FROM
-				[SubItem2] [e]
+				(
+					SELECT TOP (2)
+						[e].[Value] as [Value_1],
+						[e].[Id],
+						[e].[ParentId]
+					FROM
+						[SubItem2] [e]
+					WHERE
+						([m_2].[cond] = [e].[ParentId] OR [m_2].[cond] IS NULL AND [e].[ParentId] IS NULL) AND
+						[e].[ParentId] % 2 = 0
+					ORDER BY
+						[e].[Id]
+				) [d_1]
 			WHERE
-				([m_2].[cond] = [e].[ParentId] OR [m_2].[cond] IS NULL AND [e].[ParentId] IS NULL) AND
-				[e].[ParentId] % 2 = 0
-			ORDER BY
-				[e].[Id]
-		) [d_1]
-WHERE
-	[d_1].[Value_1] LIKE N'Sub2~_%' ESCAPE N'~'
+				[d_1].[Value_1] LIKE N'Sub2~_%' ESCAPE N'~'
+		) [d_2]
 
 BeforeExecute
 -- SqlServer.2012
@@ -183,9 +197,9 @@ BeforeExecute
 SELECT
 	[m_2].[cond],
 	[m_2].[Id],
-	[d_1].[Id],
-	[d_1].[Value_1],
-	[d_1].[ParentId]
+	[d_2].[Id],
+	[d_2].[Value_1],
+	[d_2].[ParentId]
 FROM
 	(
 		SELECT DISTINCT
@@ -204,20 +218,27 @@ FROM
 				LEFT JOIN [MainItem] [a_Parent] ON [d].[ParentId] = [a_Parent].[Id]
 	) [m_2]
 		CROSS APPLY (
-			SELECT TOP (2)
-				[e].[Value] as [Value_1],
-				[e].[Id],
-				[e].[ParentId]
+			SELECT
+				[d_1].[Id],
+				[d_1].[Value_1],
+				[d_1].[ParentId]
 			FROM
-				[SubItem2] [e]
+				(
+					SELECT TOP (2)
+						[e].[Value] as [Value_1],
+						[e].[Id],
+						[e].[ParentId]
+					FROM
+						[SubItem2] [e]
+					WHERE
+						([m_2].[cond] = [e].[ParentId] OR [m_2].[cond] IS NULL AND [e].[ParentId] IS NULL) AND
+						[e].[ParentId] % 2 = 0
+					ORDER BY
+						[e].[Id]
+				) [d_1]
 			WHERE
-				([m_2].[cond] = [e].[ParentId] OR [m_2].[cond] IS NULL AND [e].[ParentId] IS NULL) AND
-				[e].[ParentId] % 2 = 0
-			ORDER BY
-				[e].[Id]
-		) [d_1]
-WHERE
-	[d_1].[Value_1] LIKE N'Sub2~_%' ESCAPE N'~'
+				[d_1].[Value_1] LIKE N'Sub2~_%' ESCAPE N'~'
+		) [d_2]
 
 BeforeExecute
 -- SqlServer.2012
