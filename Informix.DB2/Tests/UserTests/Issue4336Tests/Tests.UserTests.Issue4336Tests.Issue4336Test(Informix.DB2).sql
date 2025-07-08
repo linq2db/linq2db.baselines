@@ -55,6 +55,6 @@ FROM
 				GROUP BY
 					agroup_1.Id,
 					p.CategoryId
-			) vsopc ON vsopc.Id = v2.Id AND vsopc.CategoryId = vpcc.Id
+			) vsopc ON vsopc.Id = v2.Id AND (vsopc.CategoryId = vpcc.Id OR vsopc.CategoryId IS NULL AND vpcc.Id IS NULL)
 		ON v2.Id = r.OrderPeriodId AND vpcc.Id = r.CategoryId
 
