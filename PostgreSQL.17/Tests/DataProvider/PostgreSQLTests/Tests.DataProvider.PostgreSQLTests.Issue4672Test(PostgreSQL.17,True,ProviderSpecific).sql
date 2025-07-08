@@ -2,7 +2,7 @@
 INSERT BULK "Issue4672Table"(Interval)
 
 BeforeExecute
--- PostgreSQL.15 PostgreSQL
+-- PostgreSQL.17 PostgreSQL.15 PostgreSQL
 
 SELECT
 	t1."Id",
