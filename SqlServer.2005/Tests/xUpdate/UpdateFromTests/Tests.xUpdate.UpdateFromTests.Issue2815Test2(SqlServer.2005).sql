@@ -4,8 +4,8 @@
 UPDATE
 	[ext]
 SET
-	[ext].[TRANS_CHANNEL] = Coalesce([channel].[Trans_Channel], 0),
-	[ext].[IDF] = [channel].[Idf]
+	[ext].[TRANS_CHANNEL] = Coalesce([channel].[Trans_Channel], 1),
+	[ext].[IDF] = Coalesce([channel].[Idf], 0)
 FROM
 	[Issue2815Table1] [ext]
 		LEFT JOIN [Issue2815Table2] [source] ON [source].[ISO] = [ext].[SRC_BIC]
@@ -20,4 +20,20 @@ FROM
 		END
 WHERE
 	[ext].[NOT_HANDLED] = 2 AND [ext].[TRANS_CHANNEL] IS NULL
+
+BeforeExecute
+-- SqlServer.2005
+
+SELECT
+	[t1].[SRC_BIC],
+	[t1].[DES_BIC],
+	[t1].[IDF],
+	[t1].[TREA_CENT],
+	[t1].[NOT_HANDLED],
+	[t1].[TRANS_CHANNEL]
+FROM
+	[Issue2815Table1] [t1]
+ORDER BY
+	[t1].[SRC_BIC],
+	[t1].[DES_BIC]
 

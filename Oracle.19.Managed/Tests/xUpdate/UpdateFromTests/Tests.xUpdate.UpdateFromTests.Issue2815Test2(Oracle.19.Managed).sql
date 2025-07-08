@@ -6,8 +6,8 @@ UPDATE
 SET
 	(TRANS_CHANNEL, IDF) = (
 		SELECT
-			channel_1."Trans_Channel",
-			channel_1."Idf"
+			Coalesce(channel_1."Trans_Channel", 1),
+			Coalesce(channel_1."Idf", 0)
 		FROM
 			"Issue2815Table1" ext_1
 				LEFT JOIN "Issue2815Table2" source_1 ON source_1.ISO = ext_1.SRC_BIC
@@ -56,4 +56,20 @@ WHERE
 			"Issue2815Table1".NOT_HANDLED = ext.NOT_HANDLED AND
 			("Issue2815Table1".TRANS_CHANNEL = ext.TRANS_CHANNEL OR "Issue2815Table1".TRANS_CHANNEL IS NULL AND ext.TRANS_CHANNEL IS NULL)
 	)
+
+BeforeExecute
+-- Oracle.19.Managed Oracle.Managed Oracle12
+
+SELECT
+	t1.SRC_BIC,
+	t1.DES_BIC,
+	t1.IDF,
+	t1.TREA_CENT,
+	t1.NOT_HANDLED,
+	t1.TRANS_CHANNEL
+FROM
+	"Issue2815Table1" t1
+ORDER BY
+	t1.SRC_BIC,
+	t1.DES_BIC
 
