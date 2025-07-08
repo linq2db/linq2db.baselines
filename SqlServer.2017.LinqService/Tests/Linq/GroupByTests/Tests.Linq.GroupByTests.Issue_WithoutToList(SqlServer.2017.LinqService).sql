@@ -49,12 +49,12 @@ SET     @tz = N'UTC'
 
 SELECT
 	[m_1].[key_1],
-	[d].[Id],
-	[d].[Id_1],
-	[d].[count_1],
-	[d].[percents],
-	[d].[hours],
-	[d].[minutes]
+	[d_1].[Id],
+	[d_1].[Id_1],
+	[d_1].[count_1],
+	[d_1].[percents],
+	[d_1].[hours],
+	[d_1].[minutes]
 FROM
 	(
 		SELECT DISTINCT
@@ -68,12 +68,12 @@ FROM
 	) [m_1]
 		CROSS APPLY (
 			SELECT
+				[d].[Id],
+				[d].[Id_1],
 				COUNT(*) as [count_1],
-				[t3].[Id],
-				[t3].[Id_1],
-				[t3].[hours],
-				[t3].[minutes],
-				COUNT_BIG(*) * 100E0 / SUM(COUNT_BIG(*)) OVER() as [percents]
+				COUNT_BIG(*) * 100E0 / SUM(COUNT_BIG(*)) OVER() as [percents],
+				[d].[hours],
+				[d].[minutes]
 			FROM
 				(
 					SELECT
@@ -84,17 +84,15 @@ FROM
 					FROM
 						[TestAggregateTable] [t2]
 							LEFT JOIN [TestAggregateTable] [a_Reference_1] ON [t2].[ReferenceId] = [a_Reference_1].[Id]
-				) [t3]
+				) [d]
 			GROUP BY
-				[t3].[Id],
-				[t3].[Id_1],
-				[t3].[hours],
-				[t3].[minutes]
+				[d].[Id],
+				[d].[Id_1],
+				[d].[hours],
+				[d].[minutes]
 			HAVING
-				[t3].[Id_1] = [m_1].[key_1] OR [t3].[Id_1] IS NULL AND [m_1].[key_1] IS NULL
-		) [d]
-ORDER BY
-	[d].[count_1] DESC
+				[d].[Id_1] = [m_1].[key_1] OR [d].[Id_1] IS NULL AND [m_1].[key_1] IS NULL
+		) [d_1]
 
 BeforeExecute
 -- SqlServer.2017
