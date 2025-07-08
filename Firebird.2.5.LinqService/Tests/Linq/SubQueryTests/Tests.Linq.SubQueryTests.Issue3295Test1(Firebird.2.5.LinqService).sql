@@ -8,7 +8,7 @@ FROM
 	(
 		SELECT
 			CASE
-				WHEN "x_1"."PersonID" IS NOT NULL THEN "x_1"."c1"
+				WHEN "x_1"."PersonID" IS NOT NULL THEN "x_1"."Diagnosis"
 				ELSE 'abc'
 			END as "StatusName",
 			CASE
@@ -33,7 +33,7 @@ FROM
 							"Patient" "y_1"
 						WHERE
 							"y_1"."PersonID" = "x"."PersonID"
-					) as "c1",
+					) as "Diagnosis",
 					"x"."PersonID" as "PersonID_1"
 				FROM
 					"Person" "x"

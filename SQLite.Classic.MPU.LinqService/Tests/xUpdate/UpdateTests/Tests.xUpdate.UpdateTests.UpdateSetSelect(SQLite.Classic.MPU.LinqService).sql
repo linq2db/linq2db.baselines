@@ -14,11 +14,12 @@ UPDATE
 SET
 	[ParentID] = [c_2].[ParentID] + 1000
 FROM
-	[Child] [c_1],
-	[Child] [c_2]
+	[Parent] [p]
+		INNER JOIN [Child] [c_1] ON [p].[ParentID] = [c_1].[ParentID]
+		LEFT JOIN [Child] [c_2] ON [c_2].[ChildID] = 11
 WHERE
-	[Parent].[ParentID] = 1 AND [Parent].[ParentID] = [c_1].[ParentID] AND
-	[c_2].[ChildID] = 11
+	[p].[ParentID] = 1 AND [Parent].[ParentID] = [p].[ParentID] AND
+	([Parent].[Value1] = [p].[Value1] OR [Parent].[Value1] IS NULL AND [p].[Value1] IS NULL)
 
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite

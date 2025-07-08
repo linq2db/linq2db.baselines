@@ -40,10 +40,10 @@ FROM
 					"ItemValue" "a_Values"
 				WHERE
 					"x"."Id" = "a_Values"."ItemId"
-			) as "c1"
+			) as SUM_1
 		FROM
 			"Item" "x"
 	) "x_1"
 ORDER BY
-	"x_1"."c1"
+	"x_1".SUM_1
 

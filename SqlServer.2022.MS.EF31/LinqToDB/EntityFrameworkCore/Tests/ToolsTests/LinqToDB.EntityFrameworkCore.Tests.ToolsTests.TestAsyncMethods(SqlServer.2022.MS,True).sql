@@ -26,7 +26,7 @@ SELECT CASE
 END
 
 
---  SqlServer.2022 (asynchronously)
+-- SqlServer.2022 (asynchronously)
 
 SELECT
 	[e].[IsDeleted],
@@ -47,7 +47,7 @@ WHERE
 
 
 
---  SqlServer.2022 (asynchronously)
+-- SqlServer.2022 (asynchronously)
 
 SELECT
 	[e].[IsDeleted],
@@ -68,7 +68,7 @@ WHERE
 
 
 
---  SqlServer.2022 (asynchronously)
+-- SqlServer.2022 (asynchronously)
 
 SELECT
 	[e].[IsDeleted],
@@ -89,7 +89,7 @@ WHERE
 
 
 
---  SqlServer.2022 (asynchronously)
+-- SqlServer.2022 (asynchronously)
 
 SELECT
 	IIF(EXISTS(

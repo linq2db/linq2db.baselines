@@ -166,7 +166,7 @@ SELECT
 FROM
 	`BooleanTable` `r`
 WHERE
-	`r`.`Value1` = `r`.`Value4` AND `r`.`Value4` IS NOT NULL
+	`r`.`Value1` = `r`.`Value4`
 
 BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
@@ -609,7 +609,7 @@ SELECT
 FROM
 	`BooleanTable` `r`
 WHERE
-	`r`.`Value1` = `r`.`Value4` AND `r`.`Value4` IS NOT NULL
+	`r`.`Value1` = `r`.`Value4`
 
 BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57

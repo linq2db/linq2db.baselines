@@ -40,7 +40,7 @@ SELECT
 FROM
 	"Products" e
 WHERE
-	(NOT e."IsDeleted" OR NOT e."IsDeleted") AND e."ProductName" LIKE '%a%' ESCAPE '~'
+	NOT e."IsDeleted" AND e."ProductName" LIKE '%a%' ESCAPE '~'
 
 
 
@@ -61,7 +61,7 @@ SELECT
 FROM
 	"Products" e
 WHERE
-	(NOT e."IsDeleted" OR NOT e."IsDeleted") AND e."ProductName" LIKE '%a%' ESCAPE '~'
+	NOT e."IsDeleted" AND e."ProductName" LIKE '%a%' ESCAPE '~'
 
 
 
@@ -82,7 +82,7 @@ SELECT
 FROM
 	"Products" e
 WHERE
-	(NOT e."IsDeleted" OR NOT e."IsDeleted") AND e."ProductName" LIKE '%a%' ESCAPE '~'
+	NOT e."IsDeleted" AND e."ProductName" LIKE '%a%' ESCAPE '~'
 
 
 
@@ -95,7 +95,7 @@ SELECT
 		FROM
 			"Products" e
 		WHERE
-			(NOT e."IsDeleted" OR NOT e."IsDeleted") AND e."ProductName" LIKE '%a%' ESCAPE '~'
+			NOT e."IsDeleted" AND e."ProductName" LIKE '%a%' ESCAPE '~'
 	)
 
 

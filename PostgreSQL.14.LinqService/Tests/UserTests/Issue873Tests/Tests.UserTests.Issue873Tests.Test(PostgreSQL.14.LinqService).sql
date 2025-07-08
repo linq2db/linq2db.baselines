@@ -3,7 +3,7 @@
 
 SELECT
 	' ' || Coalesce(t1."Value1", 0)::text,
-	t1.c1,
+	t1."SUM_1",
 	EXISTS(
 		SELECT
 			*
@@ -34,12 +34,12 @@ FROM
 						LEFT JOIN "Parent" "a_Parent" ON c_1."ParentID" = "a_Parent"."ParentID"
 				WHERE
 					"a_Parent"."ParentID" = f."ParentID" AND ("a_Parent"."Value1" = f."Value1" OR "a_Parent"."Value1" IS NULL AND f."Value1" IS NULL)
-			) as c1,
+			) as "SUM_1",
 			f."ParentID"
 		FROM
 			"Parent" f
 	) t1
 WHERE
 	' ' || Coalesce(t1."Value1", 0)::text LIKE '%1%' ESCAPE '~' AND
-	t1.c1 > 0
+	t1."SUM_1" > 0
 

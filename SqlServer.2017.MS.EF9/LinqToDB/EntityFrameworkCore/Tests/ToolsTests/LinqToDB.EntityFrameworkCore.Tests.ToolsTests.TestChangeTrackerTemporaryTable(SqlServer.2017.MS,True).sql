@@ -62,7 +62,7 @@ SELECT
 FROM
 	[Orders] [e]
 WHERE
-	[e].[IsDeleted] = 0 OR [e].[IsDeleted] = 0
+	[e].[IsDeleted] = 0
 
 
 
@@ -89,7 +89,7 @@ SELECT TOP (@take)
 FROM
 	[tempdb]..[#Orders] [e]
 WHERE
-	[e].[IsDeleted] = 0 OR [e].[IsDeleted] = 0
+	[e].[IsDeleted] = 0
 
 
 

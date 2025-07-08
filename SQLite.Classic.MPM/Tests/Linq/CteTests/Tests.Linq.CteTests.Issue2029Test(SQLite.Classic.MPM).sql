@@ -17,9 +17,7 @@ AS
 		[ncGroupMember].[NC_GROUP_BO] = 'NCGroupBO:' || [ncCode].[SITE] || ',CATAN_AUTO' OR
 		[ncGroupMember].[NC_GROUP_BO] IS NULL AND [ncCode].[SITE] IS NULL OR
 		[ncGroupMember].[NC_GROUP_BO] = 'NCGroupBO:' || [ncCode].[SITE] || ',CATAN_MAN' OR
-		[ncGroupMember].[NC_GROUP_BO] IS NULL AND [ncCode].[SITE] IS NULL OR
-		[ncGroupMember].[NC_GROUP_BO] = 'NCGroupBO:' || [ncCode].[SITE] || ',CATAN_ALL' OR
-		[ncGroupMember].[NC_GROUP_BO] IS NULL AND [ncCode].[SITE] IS NULL
+		[ncGroupMember].[NC_GROUP_BO] = 'NCGroupBO:' || [ncCode].[SITE] || ',CATAN_ALL'
 )
 SELECT
 	[item_1].[NcCodeBo],

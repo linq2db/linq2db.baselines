@@ -7,7 +7,7 @@ SELECT
 FROM
 	(
 		SELECT
-			IIF([x_1].[PersonID] IS NOT NULL, [x_1].[c1], 'abc') as [StatusName],
+			IIF([x_1].[PersonID] IS NOT NULL, [x_1].[Diagnosis], 'abc') as [StatusName],
 			IIF([x_1].[PersonID] IS NOT NULL, [x_1].[PersonID], [x_1].[PersonID_1]) as [Id]
 		FROM
 			(
@@ -27,7 +27,7 @@ FROM
 							[Patient] [y_1]
 						WHERE
 							[y_1].[PersonID] = [x].[PersonID]
-					) as [c1],
+					) as [Diagnosis],
 					[x].[PersonID] as [PersonID_1]
 				FROM
 					[Person] [x]

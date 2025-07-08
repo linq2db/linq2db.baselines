@@ -48,17 +48,16 @@ FROM
 				FROM
 					[Orders] [e]
 				WHERE
-					[e].[IsDeleted] = 0 OR [e].[IsDeleted] = 0
+					[e].[IsDeleted] = 0
 			) [t1]
 				INNER JOIN [Order Details] [d] ON [t1].[OrderId] = [d].[OrderID]
 				INNER JOIN [Products] [a_Product] ON [d].[ProductID] = [a_Product].[ProductID]
 		WHERE
-			([a_Product].[IsDeleted] = 0 OR [a_Product].[IsDeleted] = 0) AND
-			([d].[IsDeleted] = 0 OR [d].[IsDeleted] = 0)
+			[a_Product].[IsDeleted] = 0 AND [d].[IsDeleted] = 0
 	) [m_1]
 		INNER JOIN [Order Details] [d_1] ON [m_1].[ProductId] = [d_1].[ProductID]
 WHERE
-	[d_1].[IsDeleted] = 0 OR [d_1].[IsDeleted] = 0
+	[d_1].[IsDeleted] = 0
 
 
 
@@ -88,9 +87,8 @@ FROM
 		INNER JOIN [Order Details] [d] ON [m_1].[OrderID] = [d].[OrderID]
 		INNER JOIN [Products] [a_Product] ON [d].[ProductID] = [a_Product].[ProductID]
 WHERE
-	([m_1].[IsDeleted] = 0 OR [m_1].[IsDeleted] = 0) AND
-	([a_Product].[IsDeleted] = 0 OR [a_Product].[IsDeleted] = 0) AND
-	([d].[IsDeleted] = 0 OR [d].[IsDeleted] = 0)
+	[m_1].[IsDeleted] = 0 AND [a_Product].[IsDeleted] = 0 AND
+	[d].[IsDeleted] = 0
 
 
 
@@ -118,7 +116,7 @@ SELECT
 FROM
 	[Orders] [e]
 WHERE
-	[e].[IsDeleted] = 0 OR [e].[IsDeleted] = 0
+	[e].[IsDeleted] = 0
 
 
 

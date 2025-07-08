@@ -1,4 +1,4 @@
-﻿--  SqlServer.2022
+﻿-- SqlServer.2022
 DECLARE @take Int -- Int32
 SET     @take = 10
 
@@ -20,7 +20,7 @@ FROM
 							[Issue4629Tags] [a_Tags]
 						WHERE
 							[p].[Id] = [a_Tags].[PostId]
-					) as [c1]
+					) as [SUM_1]
 				FROM
 					[Issue4629Posts] [p]
 			) [t1]
@@ -34,7 +34,7 @@ FROM
 					[t1].[Id] = [a_Tags_1].[PostId] AND [a_Tags_1].[Weight] > 1
 			) > 5
 		ORDER BY
-			[t1].[c1]
+			[t1].[SUM_1]
 	) [id]
 
 

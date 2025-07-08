@@ -8,21 +8,14 @@ SELECT
 FROM
 	GrandChild c_1
 WHERE
-	c_1.ParentID IS NOT NULL AND (c_1.ParentID IS NULL AND 1 IN (
+	c_1.ParentID IS NOT NULL AND c_1.ParentID IN (
 		SELECT
-			1
+			p.Value1
 		FROM
 			Parent p
 		WHERE
-			p.Value1 IS NOT NULL AND p.Value1 IS NULL
-	) OR c_1.ParentID IS NOT NULL AND c_1.ParentID IN (
-		SELECT
-			p_1.Value1
-		FROM
-			Parent p_1
-		WHERE
-			p_1.Value1 IS NOT NULL
-	))
+			p.Value1 IS NOT NULL
+	)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse

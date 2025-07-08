@@ -19,8 +19,7 @@ SELECT
 FROM
 	`Person` `p`
 WHERE
-	`p`.`PersonID` = @personId AND `p`.`PersonID` = @personId AND
-	`p`.`PersonID` = @personId_1
+	`p`.`PersonID` = @personId AND `p`.`PersonID` = @personId_1
 
 BeforeExecute
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql
@@ -43,6 +42,5 @@ SELECT
 FROM
 	`Person` `p`
 WHERE
-	`p`.`PersonID` = @personId AND `p`.`PersonID` = @personId AND
-	`p`.`PersonID` = @personId_1
+	`p`.`PersonID` = @personId AND `p`.`PersonID` = @personId_1
 

@@ -4,8 +4,6 @@ BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @testedList NVarChar(20) -- String
 SET     @testedList = '[{"Value":"Value1"}]'
-DECLARE @testedList NVarChar(20) -- String
-SET     @testedList = '[{"Value":"Value1"}]'
 
 SELECT
 	"m_1"."Id",
@@ -22,7 +20,7 @@ SELECT
 FROM
 	"ValueConversion" "m_1"
 WHERE
-	? = "m_1"."Value2" AND ? = "m_1"."Value2"
+	? = "m_1"."Value2"
 
 BeforeExecute
 DisposeTransaction

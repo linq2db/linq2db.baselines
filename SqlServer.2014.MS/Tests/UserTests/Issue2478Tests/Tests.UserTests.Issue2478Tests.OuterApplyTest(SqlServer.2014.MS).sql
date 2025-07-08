@@ -2,19 +2,17 @@
 -- SqlServer.2014.MS SqlServer.2014
 
 SELECT
-	[p].[ParentID],
-	IIF([c_2].[cond] IS NULL, 0, [c_2].[c1])
+	[t1].[ParentID],
+	(
+		SELECT
+			COUNT(*)
+		FROM
+			[Child] [c_1]
+		WHERE
+			[c_1].[ParentID] = [t1].[ParentID]
+	)
 FROM
-	[Parent] [p]
-		OUTER APPLY (
-			SELECT
-				COUNT(*) as [cond],
-				COUNT(*) as [c1]
-			FROM
-				[Child] [c_1]
-			WHERE
-				[c_1].[ParentID] = [p].[ParentID]
-		) [c_2]
+	[Parent] [t1]
 
 BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014
