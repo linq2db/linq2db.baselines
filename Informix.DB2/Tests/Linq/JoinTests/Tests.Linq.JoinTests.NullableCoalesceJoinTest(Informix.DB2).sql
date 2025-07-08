@@ -43,7 +43,7 @@ SELECT
 FROM
 	tmptbl1 t2
 		LEFT JOIN tmptbl2 t3 ON t2.ID = t3.ID
-		LEFT JOIN tmptbl3 t4 ON Nvl(t3."Value", t2."Value") = t4."Value" OR (t3."Value" IS NULL OR t2."Value" IS NULL) AND t4."Value" IS NULL
+		LEFT JOIN tmptbl3 t4 ON Nvl(t3."Value", t2."Value") = t4."Value" OR t3."Value" IS NULL AND t2."Value" IS NULL AND t4."Value" IS NULL
 
 BeforeExecute
 -- Informix.DB2 Informix
