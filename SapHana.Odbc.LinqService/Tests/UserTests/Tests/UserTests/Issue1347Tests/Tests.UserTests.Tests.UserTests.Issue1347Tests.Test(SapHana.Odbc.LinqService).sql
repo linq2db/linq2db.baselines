@@ -10,13 +10,13 @@ SELECT
 	"tp12"."RPDestinationID",
 	"tp12"."RPOrigDestinationID",
 	"tp12"."OutfeedTransportOrderID",
-	"res_1"."Id",
+	"res_2"."Id",
 	"source"."Id",
 	"sourceShelf"."Id",
 	"dest"."Id",
 	"destShelf"."Id",
 	"origdest"."Id",
-	"outfeed"."Id"
+	"outfeed_1"."Id"
 FROM
 	(
 		SELECT
@@ -50,24 +50,34 @@ FROM
 		LEFT JOIN "WmsResourcePointDTO" "origdest" ON "tp12"."RPOrigDestinationID" = "origdest"."Id"
 		LEFT JOIN (
 			SELECT
-				"res"."Id"
+				"res_1"."Id"
 			FROM
-				"WmsLoadCarrierDTO" "res"
-			UNION
-			SELECT
-				"t2"."Id"
-			FROM
-				"WMS_ResourceA" "t2"
-		) "res_1" ON "tp12"."ResourceID" = "res_1"."Id"
+				(
+					SELECT
+						"res"."Id"
+					FROM
+						"WmsLoadCarrierDTO" "res"
+					UNION
+					SELECT
+						"t2"."Id"
+					FROM
+						"WMS_ResourceA" "t2"
+				) "res_1"
+		) "res_2" ON "tp12"."ResourceID" = "res_2"."Id"
 		LEFT JOIN (
 			SELECT
-				"outfeed1"."Id"
+				"outfeed"."Id"
 			FROM
-				"OutfeedTransportOrderDTO" "outfeed1"
-			UNION
-			SELECT
-				"t3"."Id"
-			FROM
-				"WMS_OutfeedTransportOrderA" "t3"
-		) "outfeed" ON "tp12"."OutfeedTransportOrderID" = "outfeed"."Id"
+				(
+					SELECT
+						"outfeed1"."Id"
+					FROM
+						"OutfeedTransportOrderDTO" "outfeed1"
+					UNION
+					SELECT
+						"t3"."Id"
+					FROM
+						"WMS_OutfeedTransportOrderA" "t3"
+				) "outfeed"
+		) "outfeed_1" ON "tp12"."OutfeedTransportOrderID" = "outfeed_1"."Id"
 

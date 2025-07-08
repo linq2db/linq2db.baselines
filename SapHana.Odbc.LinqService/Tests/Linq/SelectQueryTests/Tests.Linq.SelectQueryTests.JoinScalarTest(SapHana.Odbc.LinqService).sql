@@ -4,7 +4,19 @@
 SELECT
 	"t"."Id",
 	"t"."Value",
-	1
+	"s_1"."c1"
 FROM
 	"SampleClass" "t"
+		INNER JOIN LATERAL (
+			SELECT
+				"s"."c1"
+			FROM
+				(
+					SELECT
+						1 as "c1"
+FROM DUMMY
+					WHERE
+						1 = "t"."Id"
+				) "s"
+		) "s_1" ON 1=1
 

@@ -22,7 +22,7 @@ SET     @take = 15
 
 SELECT
 	"e"."ID",
-	"p"."SmallIntValue"
+	"p_1"."SmallIntValue"
 FROM
 	(
 		SELECT
@@ -43,8 +43,8 @@ FROM
 	) "e"
 		LEFT JOIN (
 			SELECT
-				"t6"."ID",
-				"t6"."SmallIntValue"
+				"p"."SmallIntValue",
+				"p"."ID"
 			FROM
 				(
 					SELECT
@@ -58,10 +58,9 @@ FROM
 						"t5"."SmallIntValue"
 					FROM
 						"LinqDataTypes" "t5"
-				) "t6"
+				) "p"
 			LIMIT ?
-		) "p" ON "p"."ID" = "e"."ID"
+		) "p_1" ON "p_1"."ID" = "e"."ID"
 ORDER BY
-	"e"."ID",
-	"p"."ID"
+	"e"."ID"
 
