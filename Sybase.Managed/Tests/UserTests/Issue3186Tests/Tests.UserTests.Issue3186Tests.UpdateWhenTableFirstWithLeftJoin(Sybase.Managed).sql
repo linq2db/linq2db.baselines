@@ -7,14 +7,17 @@ UPDATE
 	[component_categories]
 SET
 	[is_deleted] = @is_deleted
-FROM
-	[element_services] [sr],
-	[Components] [cm]
 WHERE
-	[sr].[id] = 'TestProcessService' AND
-	[sr].[id] = [component_categories].[service_id] AND
-	[component_categories].[id] = [cm].[category_id] AND
-	[cm].[is_deleted] = 0
+	EXISTS(
+		SELECT
+			*
+		FROM
+			[component_categories] [ct]
+				INNER JOIN [element_services] [sr] ON [sr].[id] = [ct].[service_id]
+				LEFT JOIN [Components] [cm] ON [ct].[id] = [cm].[category_id] AND [cm].[is_deleted] = 0
+		WHERE
+			[sr].[id] = 'TestProcessService' AND [component_categories].[id] = [ct].[id]
+	)
 
 BeforeExecute
 -- Sybase.Managed Sybase
