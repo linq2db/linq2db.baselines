@@ -766,8 +766,7 @@ WHERE
 	[i].[Column2] = 2 AND
 	[t].[Column1] = @date AND
 	[t].[Column3] IS NOT NULL AND
-	([t].[Column7] <> 0 OR [t].[Column7] IS NULL) AND
-	[i].[Column2] = 2
+	([t].[Column7] <> 0 OR [t].[Column7] IS NULL)
 
 BeforeExecute
 -- SqlServer.2019.MS SqlServer.2019
@@ -995,8 +994,7 @@ WHERE
 	[i].[Column2] = 2 AND
 	[t].[Column1] = @date AND
 	[t].[Column3] IS NOT NULL AND
-	([t].[Column7] <> 0 OR [t].[Column7] IS NULL) AND
-	[i].[Column2] = 2
+	([t].[Column7] <> 0 OR [t].[Column7] IS NULL)
 
 BeforeExecute
 -- SqlServer.2019.MS SqlServer.2019
@@ -1229,8 +1227,7 @@ WHERE
 	[i].[Column2] = 2 AND
 	[t].[Column1] = @date AND
 	[t].[Column3] IS NOT NULL AND
-	([t].[Column7] <> 0 OR [t].[Column7] IS NULL) AND
-	[i].[Column2] = 2
+	([t].[Column7] <> 0 OR [t].[Column7] IS NULL)
 
 BeforeExecute
 -- SqlServer.2019.MS SqlServer.2019
@@ -2010,8 +2007,7 @@ WHERE
 	[i].[Column2] = 2 AND
 	[t].[Column1] = @date AND
 	[t].[Column3] IS NOT NULL AND
-	([t].[Column7] <> 0 OR [t].[Column7] IS NULL) AND
-	[i].[Column2] = 2
+	([t].[Column7] <> 0 OR [t].[Column7] IS NULL)
 
 BeforeExecute
 -- SqlServer.2019.MS SqlServer.2019
@@ -2239,8 +2235,7 @@ WHERE
 	[i].[Column2] = 2 AND
 	[t].[Column1] = @date AND
 	[t].[Column3] IS NOT NULL AND
-	([t].[Column7] <> 0 OR [t].[Column7] IS NULL) AND
-	[i].[Column2] = 2
+	([t].[Column7] <> 0 OR [t].[Column7] IS NULL)
 
 BeforeExecute
 -- SqlServer.2019.MS SqlServer.2019
@@ -2473,8 +2468,7 @@ WHERE
 	[i].[Column2] = 2 AND
 	[t].[Column1] = @date AND
 	[t].[Column3] IS NOT NULL AND
-	([t].[Column7] <> 0 OR [t].[Column7] IS NULL) AND
-	[i].[Column2] = 2
+	([t].[Column7] <> 0 OR [t].[Column7] IS NULL)
 
 BeforeExecute
 -- SqlServer.2019.MS SqlServer.2019
