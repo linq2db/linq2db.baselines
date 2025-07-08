@@ -20,7 +20,7 @@ SET     @take = 15
 
 SELECT
 	[e].[ID],
-	[p].[SmallIntValue]
+	[p_1].[SmallIntValue]
 FROM
 	(
 		SELECT TOP (@take)
@@ -40,8 +40,8 @@ FROM
 	) [e]
 		LEFT JOIN (
 			SELECT TOP (@take)
-				[t6].[ID],
-				[t6].[SmallIntValue]
+				[p].[SmallIntValue],
+				[p].[ID]
 			FROM
 				(
 					SELECT
@@ -55,9 +55,8 @@ FROM
 						[t5].[SmallIntValue]
 					FROM
 						[LinqDataTypes] [t5]
-				) [t6]
-		) [p] ON [p].[ID] = [e].[ID]
+				) [p]
+		) [p_1] ON [p_1].[ID] = [e].[ID]
 ORDER BY
-	[e].[ID],
-	[p].[ID]
+	[e].[ID]
 

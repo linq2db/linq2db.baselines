@@ -15,6 +15,4 @@ FROM
 			FROM
 				[Child] [c_1]
 		) [c_2] ON [o].[ParentID] = [c_2].[ParentID]
-ORDER BY
-	[c_2].[ChildID] DESC
 
