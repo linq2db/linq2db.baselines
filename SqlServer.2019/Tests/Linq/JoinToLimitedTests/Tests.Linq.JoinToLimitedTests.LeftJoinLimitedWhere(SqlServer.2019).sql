@@ -4,17 +4,23 @@
 SELECT
 	[o].[ParentID],
 	[o].[Value1],
-	[c_1].[ParentID],
-	[c_1].[ChildID]
+	[c_2].[ParentID],
+	[c_2].[ChildID]
 FROM
 	[Parent] [o]
 		LEFT JOIN (
-			SELECT TOP (1)
-				[x].[ParentID],
-				[x].[ChildID]
+			SELECT
+				[c_1].[ParentID],
+				[c_1].[ChildID]
 			FROM
-				[Child] [x]
-			ORDER BY
-				[x].[ChildID] DESC
-		) [c_1] ON [c_1].[ParentID] = [o].[ParentID]
+				(
+					SELECT TOP (1)
+						[x].[ParentID],
+						[x].[ChildID]
+					FROM
+						[Child] [x]
+					ORDER BY
+						[x].[ChildID] DESC
+				) [c_1]
+		) [c_2] ON [c_2].[ParentID] = [o].[ParentID]
 
