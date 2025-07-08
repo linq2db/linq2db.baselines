@@ -16,6 +16,4 @@ FROM
 				"Child" c_1
 			FETCH NEXT 1 ROWS ONLY
 		) c_2 ON o."ParentID" = c_2."ParentID"
-ORDER BY
-	c_2."ChildID" DESC
 
