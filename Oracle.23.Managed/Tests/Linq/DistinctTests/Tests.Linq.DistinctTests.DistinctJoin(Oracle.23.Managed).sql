@@ -3,7 +3,7 @@
 
 SELECT
 	e.ID,
-	p."SmallIntValue"
+	p_1."SmallIntValue"
 FROM
 	(
 		SELECT DISTINCT
@@ -13,10 +13,16 @@ FROM
 			"LinqDataTypes" t1
 	) e
 		LEFT JOIN (
-			SELECT DISTINCT
-				t2.ID,
-				t2."SmallIntValue"
+			SELECT
+				p."SmallIntValue",
+				p.ID
 			FROM
-				"LinqDataTypes" t2
-		) p ON p.ID = e.ID
+				(
+					SELECT DISTINCT
+						t2.ID,
+						t2."SmallIntValue"
+					FROM
+						"LinqDataTypes" t2
+				) p
+		) p_1 ON p_1.ID = e.ID
 
