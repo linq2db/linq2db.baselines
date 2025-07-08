@@ -12,13 +12,26 @@ SET
 		WHEN [gt_s_one].[col3] = 'empty' THEN '1'
 		ELSE '0'
 	END,
-	[col6] = CASE
-		WHEN [gt_s_one].[col3] = 'empty' THEN ''
-		ELSE CAST([y1].[id] AS NVarChar(11))
-	END
-FROM
-	[access_mode] [y1]
+	[col6] = (
+		SELECT
+			CASE
+				WHEN [gt_s_one].[col3] = 'empty' THEN ''
+				ELSE CAST([y1_1].[id] AS NVarChar(11))
+			END
+		FROM
+			[gt_s_one] [x_1]
+				LEFT JOIN [access_mode] [y1_1] ON Upper(Str_Replace([x_1].[col3], 'auth.', '')) = Upper([y1_1].[code]) OR [x_1].[col3] IS NULL AND [y1_1].[code] IS NULL
+		WHERE
+			[gt_s_one].[id] = [x_1].[id]
+	)
 WHERE
-	Upper(Str_Replace([gt_s_one].[col3], 'auth.', '')) = Upper([y1].[code]) OR
-	[gt_s_one].[col3] IS NULL AND [y1].[code] IS NULL
+	EXISTS(
+		SELECT
+			*
+		FROM
+			[gt_s_one] [x]
+				LEFT JOIN [access_mode] [y1] ON Upper(Str_Replace([x].[col3], 'auth.', '')) = Upper([y1].[code]) OR [x].[col3] IS NULL AND [y1].[code] IS NULL
+		WHERE
+			[gt_s_one].[id] = [x].[id]
+	)
 

@@ -42,12 +42,15 @@ SET     @id = 1001
 UPDATE
 	"Child"
 SET
-	"ChildID" = "Child"."ChildID" + 2
+	"ChildID" = c_1."ChildID" + 2
 FROM
-	"Parent" "a_Parent"
+	"Child" c_1
+		LEFT JOIN "Parent" "a_Parent" ON c_1."ParentID" = "a_Parent"."ParentID"
 WHERE
-	"Child"."ChildID" = :id AND "a_Parent"."Value1" = 1 AND
-	"Child"."ParentID" = "a_Parent"."ParentID"
+	c_1."ChildID" = :id AND
+	"a_Parent"."Value1" = 1 AND
+	"Child"."ParentID" = c_1."ParentID" AND
+	"Child"."ChildID" = c_1."ChildID"
 
 BeforeExecute
 -- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
