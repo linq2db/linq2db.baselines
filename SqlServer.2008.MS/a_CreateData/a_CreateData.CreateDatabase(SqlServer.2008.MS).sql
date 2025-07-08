@@ -635,6 +635,8 @@ CREATE TABLE AllTypes
 
 
 
+
+
 ) ON [PRIMARY]
 
 BeforeExecute
