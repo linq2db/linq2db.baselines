@@ -14,9 +14,9 @@ FROM
 			a_Parent.ParentID
 		FROM
 			Child m_1
-				LEFT JOIN Parent a_Parent ON m_1.ParentID = a_Parent.ParentID
+				INNER JOIN Parent a_Parent ON m_1.ParentID = a_Parent.ParentID
 		WHERE
-			a_Parent.ParentID IS NOT NULL AND m_1.ParentID > 0
+			m_1.ParentID > 0
 	) m_2
 ORDER BY
 	m_2.ChildID DESC
@@ -37,9 +37,9 @@ FROM
 			a_Parent.ParentID
 		FROM
 			Child m_1
-				LEFT JOIN Parent a_Parent ON m_1.ParentID = a_Parent.ParentID
+				INNER JOIN Parent a_Parent ON m_1.ParentID = a_Parent.ParentID
 		WHERE
-			a_Parent.ParentID IS NOT NULL AND m_1.ParentID > 0
+			m_1.ParentID > 0
 	) m_2
 ORDER BY
 	m_2.ChildID DESC

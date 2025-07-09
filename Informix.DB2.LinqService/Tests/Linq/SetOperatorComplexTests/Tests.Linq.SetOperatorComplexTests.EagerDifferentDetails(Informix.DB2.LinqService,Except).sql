@@ -14,11 +14,11 @@ FROM
 				SELECT
 					a_Book.BookId as Id,
 					a_Book.BookName,
-					a_Book.BookId as Id_1
+					NVL(a_Book.BookId, NULL) as Id_1
 				FROM
 					Author t1
 						INNER JOIN BookAuthor b ON b.FkAuthorId = t1.AuthorId
-						LEFT JOIN Book a_Book ON b.FkBookId = a_Book.BookId
+						INNER JOIN Book a_Book ON b.FkBookId = a_Book.BookId
 				WHERE
 					a_Book.Discriminator = 'Roman'
 				EXCEPT
@@ -29,7 +29,7 @@ FROM
 				FROM
 					Author t2
 						INNER JOIN BookAuthor b_1 ON b_1.FkAuthorId = t2.AuthorId
-						LEFT JOIN Book a_Book_1 ON b_1.FkBookId = a_Book_1.BookId
+						INNER JOIN Book a_Book_1 ON b_1.FkBookId = a_Book_1.BookId
 				WHERE
 					a_Book_1.Discriminator = 'Novel'
 			) t3
@@ -43,11 +43,11 @@ BeforeExecute
 SELECT
 	a_Book.BookId,
 	a_Book.BookName,
-	a_Book.BookId
+	NVL(a_Book.BookId, NULL)
 FROM
 	Author t1
 		INNER JOIN BookAuthor b ON b.FkAuthorId = t1.AuthorId
-		LEFT JOIN Book a_Book ON b.FkBookId = a_Book.BookId
+		INNER JOIN Book a_Book ON b.FkBookId = a_Book.BookId
 WHERE
 	a_Book.Discriminator = 'Roman'
 EXCEPT
@@ -58,7 +58,7 @@ SELECT
 FROM
 	Author t2
 		INNER JOIN BookAuthor b_1 ON b_1.FkAuthorId = t2.AuthorId
-		LEFT JOIN Book a_Book_1 ON b_1.FkBookId = a_Book_1.BookId
+		INNER JOIN Book a_Book_1 ON b_1.FkBookId = a_Book_1.BookId
 WHERE
 	a_Book_1.Discriminator = 'Novel'
 

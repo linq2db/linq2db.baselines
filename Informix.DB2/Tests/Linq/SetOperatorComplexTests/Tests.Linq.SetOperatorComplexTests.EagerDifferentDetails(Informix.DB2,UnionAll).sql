@@ -15,11 +15,11 @@ FROM
 			(
 				SELECT
 					0::Int as projection__set_id__,
-					a_Book.BookId as Id
+					NVL(a_Book.BookId, NULL) as Id
 				FROM
 					Author t1
 						INNER JOIN BookAuthor b ON b.FkAuthorId = t1.AuthorId
-						LEFT JOIN Book a_Book ON b.FkBookId = a_Book.BookId
+						INNER JOIN Book a_Book ON b.FkBookId = a_Book.BookId
 				WHERE
 					a_Book.Discriminator = 'Roman'
 				UNION ALL
@@ -29,7 +29,7 @@ FROM
 				FROM
 					Author t2
 						INNER JOIN BookAuthor b_1 ON b_1.FkAuthorId = t2.AuthorId
-						LEFT JOIN Book a_Book_1 ON b_1.FkBookId = a_Book_1.BookId
+						INNER JOIN Book a_Book_1 ON b_1.FkBookId = a_Book_1.BookId
 				WHERE
 					a_Book_1.Discriminator = 'Novel'
 			) t3
@@ -58,7 +58,7 @@ FROM
 				FROM
 					Author t1
 						INNER JOIN BookAuthor b ON b.FkAuthorId = t1.AuthorId
-						LEFT JOIN Book a_Book ON b.FkBookId = a_Book.BookId
+						INNER JOIN Book a_Book ON b.FkBookId = a_Book.BookId
 				WHERE
 					a_Book.Discriminator = 'Roman'
 				UNION ALL
@@ -68,7 +68,7 @@ FROM
 				FROM
 					Author t2
 						INNER JOIN BookAuthor b_1 ON b_1.FkAuthorId = t2.AuthorId
-						LEFT JOIN Book a_Book_1 ON b_1.FkBookId = a_Book_1.BookId
+						INNER JOIN Book a_Book_1 ON b_1.FkBookId = a_Book_1.BookId
 				WHERE
 					a_Book_1.Discriminator = 'Novel'
 			) t3
@@ -89,12 +89,12 @@ SELECT
 	a_Book.BookId,
 	a_Book.BookName,
 	0::Int,
-	a_Book.BookId,
+	NVL(a_Book.BookId, NULL),
 	NULL::Int
 FROM
 	Author t1
 		INNER JOIN BookAuthor b ON b.FkAuthorId = t1.AuthorId
-		LEFT JOIN Book a_Book ON b.FkBookId = a_Book.BookId
+		INNER JOIN Book a_Book ON b.FkBookId = a_Book.BookId
 WHERE
 	a_Book.Discriminator = 'Roman'
 UNION ALL
@@ -107,7 +107,7 @@ SELECT
 FROM
 	Author t2
 		INNER JOIN BookAuthor b_1 ON b_1.FkAuthorId = t2.AuthorId
-		LEFT JOIN Book a_Book_1 ON b_1.FkBookId = a_Book_1.BookId
+		INNER JOIN Book a_Book_1 ON b_1.FkBookId = a_Book_1.BookId
 WHERE
 	a_Book_1.Discriminator = 'Novel'
 
