@@ -38,13 +38,10 @@ UPDATE
 SET
 	"ChildID" = :ChildID
 FROM
-	"Child" c_1
-		LEFT JOIN "Parent" "a_Parent" ON c_1."ParentID" = "a_Parent"."ParentID"
+	"Parent" "a_Parent"
 WHERE
-	c_1."ChildID" = :id AND
-	"a_Parent"."Value1" = 1 AND
-	"Child"."ParentID" = c_1."ParentID" AND
-	"Child"."ChildID" = c_1."ChildID"
+	"Child"."ChildID" = :id AND "a_Parent"."Value1" = 1 AND
+	"Child"."ParentID" = "a_Parent"."ParentID"
 
 BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
