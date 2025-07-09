@@ -231,7 +231,7 @@ AS
 		[ai].[ChildID]
 	FROM
 		[Child] [ai]
-			LEFT JOIN [Parent] [a_Parent] ON [ai].[ParentID] = [a_Parent].[ParentID]
+			INNER JOIN [Parent] [a_Parent] ON [ai].[ParentID] = [a_Parent].[ParentID]
 	WHERE
 		[a_Parent].[Value1] = -99
 )
