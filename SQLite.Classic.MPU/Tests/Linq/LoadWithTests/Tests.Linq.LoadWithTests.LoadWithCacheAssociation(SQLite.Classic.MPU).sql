@@ -9,9 +9,9 @@ SELECT
 	[a_MainItem].[Value]
 FROM
 	[MainItem2] [m2]
-		LEFT JOIN [MainItem] [a_MainItem] ON [m2].[MainItemId] = [a_MainItem].[Id]
+		INNER JOIN [MainItem] [a_MainItem] ON [m2].[MainItemId] = [a_MainItem].[Id]
 WHERE
-	[a_MainItem].[Id] IS NOT NULL AND (
+	(
 		SELECT
 			COUNT(*)
 		FROM
