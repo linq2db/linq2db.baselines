@@ -8,7 +8,7 @@ SELECT
 	`t1`.`Value1`
 FROM
 	`Child` `s`
-		INNER JOIN (
+		LEFT JOIN (
 			SELECT
 				`c_1`.`ParentID`,
 				`c_1`.`ChildID`,
@@ -19,4 +19,6 @@ FROM
 				`Child` `c_1`
 					LEFT JOIN `Parent` `a_Parent` ON `c_1`.`ParentID` = `a_Parent`.`ParentID`
 		) `t1` ON `t1`.`ChildID` = `s`.`ChildID` AND `t1`.`rn` <= 1
+WHERE
+	`t1`.`ParentID` IS NOT NULL
 
