@@ -12,7 +12,7 @@ SELECT
 				*
 			FROM
 				[Child] [param]
-					LEFT JOIN [Parent] [a_Parent] ON [param].[ParentID] = [a_Parent].[ParentID]
+					INNER JOIN [Parent] [a_Parent] ON [param].[ParentID] = [a_Parent].[ParentID]
 			WHERE
 				[a_Parent].[ParentID] = @ParentID AND [a_Parent].[Value1] = @Value1
 		)
