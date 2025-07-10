@@ -41,7 +41,7 @@ SET     @id = 1001
 
 UPDATE
 	[Child] [c_1]
-		INNER JOIN [Parent] [a_Parent] ON ([c_1].[ParentID] = [a_Parent].[ParentID])
+		LEFT JOIN [Parent] [a_Parent] ON ([c_1].[ParentID] = [a_Parent].[ParentID])
 SET
 	[c_1].[ChildID] = [c_1].[ChildID] + 2
 WHERE

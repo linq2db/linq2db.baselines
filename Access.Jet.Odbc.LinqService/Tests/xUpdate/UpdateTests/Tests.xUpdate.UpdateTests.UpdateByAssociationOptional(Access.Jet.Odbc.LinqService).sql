@@ -13,7 +13,7 @@ UPDATE
 			[MainTable] [a_MainOptional],
 			[MainTable] [t1]
 	) [cross_1]
-		LEFT JOIN [AssociatedTable] [a_AssociatedOptional] ON ([cross_1].[Id] = [a_AssociatedOptional].[Id])
+		INNER JOIN [AssociatedTable] [a_AssociatedOptional] ON ([cross_1].[Id] = [a_AssociatedOptional].[Id])
 SET
 	[cross_1].[Field] = 'test'
 WHERE
