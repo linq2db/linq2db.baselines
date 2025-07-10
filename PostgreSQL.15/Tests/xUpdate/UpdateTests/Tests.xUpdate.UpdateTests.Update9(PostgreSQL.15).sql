@@ -34,16 +34,17 @@ SET     @id = 1001
 UPDATE
 	"Child"
 SET
-	"ChildID" = "Child"."ChildID" + 1,
+	"ChildID" = c_1."ChildID" + 1,
 	"ParentID" = p."ParentID"
 FROM
-	"Parent" "a_Parent",
-	"Parent" p
+	"Child" c_1
+		LEFT JOIN "Parent" "a_Parent" ON c_1."ParentID" = "a_Parent"."ParentID"
+		INNER JOIN "Parent" p ON c_1."ParentID" = p."ParentID"
 WHERE
-	"Child"."ChildID" = :id AND
+	c_1."ChildID" = :id AND
 	"a_Parent"."Value1" = 1 AND
-	"Child"."ParentID" = "a_Parent"."ParentID" AND
-	"Child"."ParentID" = p."ParentID"
+	"Child"."ParentID" = c_1."ParentID" AND
+	"Child"."ChildID" = c_1."ChildID"
 
 BeforeExecute
 -- PostgreSQL.15 PostgreSQL
