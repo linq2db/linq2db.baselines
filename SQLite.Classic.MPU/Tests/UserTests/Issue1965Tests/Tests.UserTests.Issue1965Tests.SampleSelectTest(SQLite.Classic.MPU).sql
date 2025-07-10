@@ -9,5 +9,7 @@ SELECT
 	[a_PersonData].[Age]
 FROM
 	[Chipcard] [ka]
-		INNER JOIN [Issue1965Person] [a_PersonData] ON [a_PersonData].[Id] = [ka].[PersonId]
+		LEFT JOIN [Issue1965Person] [a_PersonData] ON [a_PersonData].[Id] = [ka].[PersonId]
+WHERE
+	[a_PersonData].[Id] IS NOT NULL
 

@@ -7,7 +7,7 @@ SELECT
 	[a_PayRate].[Name]
 FROM
 	[Employees] [item_1]
-		INNER JOIN [PayRate] [a_PayRate] ON [item_1].[PayRateId] = [a_PayRate].[Id]
+		LEFT JOIN [PayRate] [a_PayRate] ON [item_1].[PayRateId] = [a_PayRate].[Id]
 WHERE
 	[a_PayRate].[Name] = 'test'
 

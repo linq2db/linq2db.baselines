@@ -11,7 +11,8 @@ SELECT
 	[a_Info].[MasterId]
 FROM
 	[MasterClass] [m_1]
-		INNER JOIN [InfoClass] [a_Info] ON [m_1].[Id] = [a_Info].[MasterId]
+		LEFT JOIN [InfoClass] [a_Info] ON [m_1].[Id] = [a_Info].[MasterId]
 WHERE
-	NOT [m_1].[IsDeleted] AND [a_Info].[IsDeleted] = 1
+	NOT [m_1].[IsDeleted] AND [a_Info].[Id] IS NOT NULL AND
+	[a_Info].[IsDeleted] = 1
 
