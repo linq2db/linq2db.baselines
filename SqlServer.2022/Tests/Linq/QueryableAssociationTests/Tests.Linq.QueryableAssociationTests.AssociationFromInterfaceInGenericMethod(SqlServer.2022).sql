@@ -31,7 +31,7 @@ FROM
 			[t].[Id]
 		FROM
 			[TreeItem] [t]
-				LEFT JOIN [TreeItem] [a_Parent] ON [t].[ParentId] = [a_Parent].[Id]
+				INNER JOIN [TreeItem] [a_Parent] ON [t].[ParentId] = [a_Parent].[Id]
 		WHERE
 			[a_Parent].[Id] > 0
 	) [m_1]
@@ -46,7 +46,7 @@ SELECT
 	[t].[Id]
 FROM
 	[TreeItem] [t]
-		LEFT JOIN [TreeItem] [a_Parent] ON [t].[ParentId] = [a_Parent].[Id]
+		INNER JOIN [TreeItem] [a_Parent] ON [t].[ParentId] = [a_Parent].[Id]
 WHERE
 	[a_Parent].[Id] > 0
 
