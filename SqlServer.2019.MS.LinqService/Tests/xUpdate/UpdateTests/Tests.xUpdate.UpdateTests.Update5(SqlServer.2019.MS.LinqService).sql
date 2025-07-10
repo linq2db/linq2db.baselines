@@ -39,7 +39,7 @@ SET
 	[c_1].[ChildID] = @ChildID
 FROM
 	[Child] [c_1]
-		INNER JOIN [Parent] [a_Parent] ON [c_1].[ParentID] = [a_Parent].[ParentID]
+		LEFT JOIN [Parent] [a_Parent] ON [c_1].[ParentID] = [a_Parent].[ParentID]
 WHERE
 	[c_1].[ChildID] = @id AND [a_Parent].[Value1] = 1
 
