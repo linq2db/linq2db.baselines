@@ -42,7 +42,7 @@ UPDATE
 			[Parent] [p]
 	) [cross_1]
 		INNER JOIN [Child] [c_2] ON ([cross_1].[ParentID] = [c_2].[ParentID]))
-		INNER JOIN [Parent] [a_Parent] ON ([c_2].[ParentID] = [a_Parent].[ParentID])
+		LEFT JOIN [Parent] [a_Parent] ON ([c_2].[ParentID] = [a_Parent].[ParentID])
 SET
 	[cross_1].[ChildID] = [c_2].[ChildID] + 1,
 	[cross_1].[ParentID_1] = [cross_1].[ParentID]
