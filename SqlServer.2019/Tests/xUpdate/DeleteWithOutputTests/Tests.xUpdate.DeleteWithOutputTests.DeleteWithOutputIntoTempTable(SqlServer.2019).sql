@@ -19,7 +19,7 @@ DELETE [s]
 OUTPUT
 	DELETED.[Id] + @param,
 	DELETED.[Value] + @param,
-	DELETED.[ValueStr] + CAST(@param AS VarChar(11))
+	DELETED.[ValueStr] + CAST(@param AS NVarChar(11))
 INTO [tempdb]..[#DestinationTable]
 (
 	[Id],

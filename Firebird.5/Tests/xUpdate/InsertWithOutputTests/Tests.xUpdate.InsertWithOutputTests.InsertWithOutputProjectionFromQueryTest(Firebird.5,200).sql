@@ -12,14 +12,14 @@ INSERT INTO "DestinationTable"
 SELECT
 	"s"."Id" + 100 + CAST(@param AS Int),
 	"s"."Value" + 100,
-	"s"."ValueStr" || CAST(100 AS VarChar(11) CHARACTER SET UNICODE_FSS)
+	"s"."ValueStr" || 100
 FROM
 	"TableWithData" "s"
 WHERE
 	"s"."Id" > 3
 RETURNING
 	"DestinationTable"."Id" + 1,
-	"DestinationTable"."ValueStr" || CAST(1 AS VarChar(11) CHARACTER SET UNICODE_FSS)
+	"DestinationTable"."ValueStr" || 1
 
 BeforeExecute
 -- Firebird.5 Firebird4
@@ -36,7 +36,7 @@ BeforeExecute
 
 SELECT
 	"t"."Id" + 1,
-	"t"."ValueStr" || CAST(1 AS VarChar(11) CHARACTER SET UNICODE_FSS)
+	"t"."ValueStr" || 1
 FROM
 	"DestinationTable" "t"
 
