@@ -20,8 +20,8 @@ ORDER BY
 		SELECT
 			COUNT(*)
 		FROM
-			[Issue2647Table] [ss2]
+			[Issue2647Table] [ss3]
 		WHERE
-			[ss2].[Id] = [t1].[Id]
+			[ss3].[Id] = [t1].[Id]
 	) DESC
 
