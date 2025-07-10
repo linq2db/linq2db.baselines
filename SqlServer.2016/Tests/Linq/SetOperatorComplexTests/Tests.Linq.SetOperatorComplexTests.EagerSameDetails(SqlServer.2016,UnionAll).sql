@@ -18,7 +18,7 @@ FROM
 				FROM
 					[Author] [t1]
 						INNER JOIN [BookAuthor] [b] ON [b].[FkAuthorId] = [t1].[AuthorId]
-						INNER JOIN [Book] [a_Book] ON [b].[FkBookId] = [a_Book].[BookId]
+						LEFT JOIN [Book] [a_Book] ON [b].[FkBookId] = [a_Book].[BookId]
 				WHERE
 					[a_Book].[Discriminator] = N'Roman'
 				UNION ALL
@@ -27,7 +27,7 @@ FROM
 				FROM
 					[Author] [t2]
 						INNER JOIN [BookAuthor] [b_1] ON [b_1].[FkAuthorId] = [t2].[AuthorId]
-						INNER JOIN [Book] [a_Book_1] ON [b_1].[FkBookId] = [a_Book_1].[BookId]
+						LEFT JOIN [Book] [a_Book_1] ON [b_1].[FkBookId] = [a_Book_1].[BookId]
 				WHERE
 					[a_Book_1].[Discriminator] = N'Novel'
 			) [t3]
@@ -47,7 +47,7 @@ SELECT
 FROM
 	[Author] [t1]
 		INNER JOIN [BookAuthor] [b] ON [b].[FkAuthorId] = [t1].[AuthorId]
-		INNER JOIN [Book] [a_Book] ON [b].[FkBookId] = [a_Book].[BookId]
+		LEFT JOIN [Book] [a_Book] ON [b].[FkBookId] = [a_Book].[BookId]
 WHERE
 	[a_Book].[Discriminator] = N'Roman'
 UNION ALL
@@ -58,7 +58,7 @@ SELECT
 FROM
 	[Author] [t2]
 		INNER JOIN [BookAuthor] [b_1] ON [b_1].[FkAuthorId] = [t2].[AuthorId]
-		INNER JOIN [Book] [a_Book_1] ON [b_1].[FkBookId] = [a_Book_1].[BookId]
+		LEFT JOIN [Book] [a_Book_1] ON [b_1].[FkBookId] = [a_Book_1].[BookId]
 WHERE
 	[a_Book_1].[Discriminator] = N'Novel'
 

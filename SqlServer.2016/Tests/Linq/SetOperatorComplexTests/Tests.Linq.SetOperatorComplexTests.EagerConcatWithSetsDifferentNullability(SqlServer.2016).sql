@@ -29,7 +29,7 @@ FROM
 						FROM
 							[Author] [t1]
 								INNER JOIN [BookAuthor] [b] ON [b].[FkAuthorId] = [t1].[AuthorId]
-								INNER JOIN [Book] [a_Book] ON [b].[FkBookId] = [a_Book].[BookId]
+								LEFT JOIN [Book] [a_Book] ON [b].[FkBookId] = [a_Book].[BookId]
 						WHERE
 							[a_Book].[Discriminator] = N'Novel'
 					) [t2]
@@ -68,7 +68,7 @@ FROM
 				FROM
 					[Author] [t1]
 						INNER JOIN [BookAuthor] [b] ON [b].[FkAuthorId] = [t1].[AuthorId]
-						INNER JOIN [Book] [a_Book] ON [b].[FkBookId] = [a_Book].[BookId]
+						LEFT JOIN [Book] [a_Book] ON [b].[FkBookId] = [a_Book].[BookId]
 				WHERE
 					[a_Book].[Discriminator] = N'Novel'
 			) [t2]
@@ -109,7 +109,7 @@ FROM
 						FROM
 							[Author] [t1]
 								INNER JOIN [BookAuthor] [b] ON [b].[FkAuthorId] = [t1].[AuthorId]
-								INNER JOIN [Book] [a_Book] ON [b].[FkBookId] = [a_Book].[BookId]
+								LEFT JOIN [Book] [a_Book] ON [b].[FkBookId] = [a_Book].[BookId]
 						WHERE
 							[a_Book].[Discriminator] = N'Novel'
 					) [t2]
@@ -157,7 +157,7 @@ FROM
 				FROM
 					[Author] [t1]
 						INNER JOIN [BookAuthor] [b] ON [b].[FkAuthorId] = [t1].[AuthorId]
-						INNER JOIN [Book] [a_Book] ON [b].[FkBookId] = [a_Book].[BookId]
+						LEFT JOIN [Book] [a_Book] ON [b].[FkBookId] = [a_Book].[BookId]
 				WHERE
 					[a_Book].[Discriminator] = N'Novel'
 			) [t2]
@@ -197,7 +197,7 @@ SELECT
 FROM
 	[Author] [t1]
 		INNER JOIN [BookAuthor] [b] ON [b].[FkAuthorId] = [t1].[AuthorId]
-		INNER JOIN [Book] [a_Book] ON [b].[FkBookId] = [a_Book].[BookId]
+		LEFT JOIN [Book] [a_Book] ON [b].[FkBookId] = [a_Book].[BookId]
 WHERE
 	[a_Book].[Discriminator] = N'Novel'
 
