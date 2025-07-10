@@ -14,6 +14,16 @@ WITH RECURSIVE CTE_1 AS
 CTE_2 AS
 (
 	SELECT
+		c_1.ParentID as Id1,
+		c_1.Value1 as Id2
+	FROM
+		Parent c_1
+	WHERE
+		c_1.Value1 IS NOT NULL
+),
+CTE_3 AS
+(
+	SELECT
 		t1.Id1,
 		t1.Id2
 	FROM
@@ -24,11 +34,11 @@ CTE_2 AS
 		record2.Id2 as Id2
 	FROM
 		CTE_1 t2
-			INNER JOIN CTE_1 record2 ON t2.Id2 = record2.Id1
+			INNER JOIN CTE_2 record2 ON t2.Id2 = record2.Id1
 )
 SELECT
 	t3.Id1,
 	t3.Id2
 FROM
-	CTE_2 t3
+	CTE_3 t3
 
