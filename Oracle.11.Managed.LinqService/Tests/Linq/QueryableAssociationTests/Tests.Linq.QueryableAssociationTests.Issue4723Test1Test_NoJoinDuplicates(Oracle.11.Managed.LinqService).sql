@@ -6,7 +6,7 @@ SELECT
 	t1."Association"
 FROM
 	"Issue4723Table1" x
-		LEFT JOIN (
+		INNER JOIN (
 			SELECT
 				a_Association."Value" as "Association",
 				ROW_NUMBER() OVER (PARTITION BY a_Association."Id" ORDER BY a_Association."Id") as "rn",
