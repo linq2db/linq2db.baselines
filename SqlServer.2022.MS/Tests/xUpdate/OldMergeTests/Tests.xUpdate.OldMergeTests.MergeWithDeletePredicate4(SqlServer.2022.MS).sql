@@ -22,7 +22,7 @@ USING (
 		[t].[Gender]
 	FROM
 		[Person] [t]
-			LEFT JOIN [Patient] [a_Patient] ON [t].[PersonID] = [a_Patient].[PersonID]
+			INNER JOIN [Patient] [a_Patient] ON [t].[PersonID] = [a_Patient].[PersonID]
 	WHERE
 		[a_Patient].[PersonID] = @patient
 ) [Source]
@@ -83,7 +83,7 @@ USING (
 		[t].[Gender]
 	FROM
 		[Person] [t]
-			LEFT JOIN [Patient] [a_Patient] ON [t].[PersonID] = [a_Patient].[PersonID]
+			INNER JOIN [Patient] [a_Patient] ON [t].[PersonID] = [a_Patient].[PersonID]
 	WHERE
 		[a_Patient].[PersonID] = @patient
 ) [Source]

@@ -6,7 +6,7 @@ SET     @id = 3
 UPDATE
 	`MainTable` `a_MainOptional`,
 	`MainTable` `t1`
-		LEFT JOIN `AssociatedTable` `a_AssociatedOptional` ON `t1`.`Id` = `a_AssociatedOptional`.`Id`
+		INNER JOIN `AssociatedTable` `a_AssociatedOptional` ON `t1`.`Id` = `a_AssociatedOptional`.`Id`
 SET
 	`a_MainOptional`.`Field` = 'test'
 WHERE

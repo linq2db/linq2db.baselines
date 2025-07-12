@@ -11,11 +11,11 @@ SELECT
 			subtype_1."Description"
 		FROM
 			"ItemAppType" itemtype
-				LEFT JOIN "AppType" type_1 ON type_1."AppTypeId" = itemtype."AppTypeId"
-				LEFT JOIN "AppSubType" subtype_1 ON subtype_1."AppTypeId" = type_1."AppTypeId"
+				INNER JOIN "AppType" type_1 ON type_1."AppTypeId" = itemtype."AppTypeId"
+				INNER JOIN "AppSubType" subtype_1 ON subtype_1."AppTypeId" = type_1."AppTypeId"
 		WHERE
 			itemtype."ItemId" = i."ItemId" AND type_1."AppTypeId" = itemtype."AppTypeId" AND
-			(subtype_1."AppTypeId" = type_1."AppTypeId" OR subtype_1."AppTypeId" IS NULL AND type_1."AppTypeId" IS NULL)
+			subtype_1."AppTypeId" = type_1."AppTypeId"
 		GROUP BY
 			subtype_1."Description",
 			subtype_1."AppSubTypeId"

@@ -28,7 +28,7 @@ FROM
 			[t2].[Id]
 		FROM
 			[cte] [t2]
-				LEFT JOIN [StackOverflowTable4] [r3_1] ON [t2].[Id] = [r3_1].[Id]
+				INNER JOIN [StackOverflowTable4] [r3_1] ON [t2].[Id] = [r3_1].[Id]
 		WHERE
 			[r3_1].[Value] IS NOT NULL
 	) [m_1]
@@ -58,7 +58,7 @@ SELECT
 	[t2].[Id]
 FROM
 	[cte] [t2]
-		LEFT JOIN [StackOverflowTable4] [r3_1] ON [t2].[Id] = [r3_1].[Id]
+		INNER JOIN [StackOverflowTable4] [r3_1] ON [t2].[Id] = [r3_1].[Id]
 WHERE
 	[r3_1].[Value] IS NOT NULL
 

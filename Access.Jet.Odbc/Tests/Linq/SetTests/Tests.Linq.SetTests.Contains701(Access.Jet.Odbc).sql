@@ -9,7 +9,7 @@ SELECT
 	COUNT(*) > 0
 FROM
 	[Child] [param]
-		LEFT JOIN [Parent] [a_Parent] ON ([param].[ParentID] = [a_Parent].[ParentID])
+		INNER JOIN [Parent] [a_Parent] ON ([param].[ParentID] = [a_Parent].[ParentID])
 WHERE
 	[a_Parent].[ParentID] = ? AND [a_Parent].[Value1] = ?
 

@@ -12,7 +12,7 @@ SELECT
 				*
 			FROM
 				[Person] [t7]
-					LEFT JOIN (
+					CROSS JOIN (
 						SELECT
 							COUNT(*) as [COUNT_1]
 						FROM
@@ -26,8 +26,8 @@ SELECT
 								WHERE
 									[t2].[PersonID] = @personId_1
 							)
-					) [t3] ON 1=1
-					LEFT JOIN (
+					) [t3]
+					CROSS JOIN (
 						SELECT
 							COUNT(*) as [COUNT_1]
 						FROM
@@ -41,7 +41,7 @@ SELECT
 								WHERE
 									[t5].[PersonID] = @personId
 							)
-					) [t6] ON 1=1
+					) [t6]
 			WHERE
 				[t3].[COUNT_1] = 0 AND [t6].[COUNT_1] = 0
 		)
