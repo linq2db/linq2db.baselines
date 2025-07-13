@@ -8,6 +8,4 @@ FROM
 	Position p
 WHERE
 	p.Group = 7
-ORDER BY
-	p.Id
 
