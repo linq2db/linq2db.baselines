@@ -1,0 +1,6 @@
+﻿BeforeExecute
+-- SqlServer.2017.MS SqlServer.2017
+
+SELECT
+	DATEADD(Year, 1, DATETIMEOFFSETFROMPARTS(2020, 2, 29, 17, 54, 55, 1231234, 0, 40, 7))
+
