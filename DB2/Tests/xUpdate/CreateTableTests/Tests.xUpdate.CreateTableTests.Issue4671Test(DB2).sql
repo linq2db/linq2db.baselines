@@ -1,0 +1,62 @@
+﻿BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+
+DECLARE GLOBAL TEMPORARY TABLE SESSION."Issue4671EntityTMP"
+(
+	"Id"    Int GENERATED ALWAYS AS IDENTITY NOT NULL,
+	"Value" Int                              NOT NULL
+)
+ON COMMIT PRESERVE ROWS
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+
+INSERT INTO "Issue4671Entity"
+(
+	"Value"
+)
+VALUES
+(
+	1
+)
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+
+INSERT INTO SESSION."Issue4671EntityTMP"
+(
+	"Value"
+)
+VALUES
+(
+	2
+)
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+
+SELECT
+	"t1"."Id",
+	"t1"."Value"
+FROM
+	"Issue4671Entity" "t1"
+FETCH NEXT 2 ROWS ONLY
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+
+SELECT
+	"t1"."Id",
+	"t1"."Value"
+FROM
+	SESSION."Issue4671EntityTMP" "t1"
+FETCH NEXT 2 ROWS ONLY
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+
+BEGIN
+	DECLARE CONTINUE HANDLER FOR SQLSTATE '42704' BEGIN END;
+	EXECUTE IMMEDIATE 'DROP TABLE SESSION."Issue4671EntityTMP"';
+END
+
