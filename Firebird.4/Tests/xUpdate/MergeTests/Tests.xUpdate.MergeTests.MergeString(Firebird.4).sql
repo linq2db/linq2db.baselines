@@ -1,9 +1,4 @@
 ﻿BeforeExecute
--- Firebird.4 Firebird4
-
-SET GENERATOR "AllTypesID" TO 2
-
-BeforeExecute
 BeginTransaction
 BeforeExecute
 -- Firebird.4 Firebird4
@@ -18,14 +13,14 @@ BeforeExecute
 
 MERGE INTO "AllTypes" "Target"
 USING (
-	SELECT 3 AS "source_ID", _utf8 x'00' AS "source_charDataType", CAST(_utf8 x'00' AS CHAR(1)) AS "source_ncharDataType", CAST(_utf8 x'74657374006974' AS VARCHAR(7)) AS "source_nvarcharDataType" FROM rdb$database) "Source"
+	SELECT 3 AS ID, _utf8 x'00' AS "charDataType", CAST(_utf8 x'00' AS CHAR(1)) AS "ncharDataType", CAST(_utf8 x'74657374006974' AS VARCHAR(7)) AS "nvarcharDataType" FROM rdb$database) "Source"
 (
-	"source_ID",
-	"source_charDataType",
-	"source_ncharDataType",
-	"source_nvarcharDataType"
+	ID,
+	"charDataType",
+	"ncharDataType",
+	"nvarcharDataType"
 )
-ON ("Target".ID = "Source"."source_ID")
+ON ("Target".ID = "Source".ID)
 
 WHEN NOT MATCHED THEN
 INSERT
@@ -36,9 +31,9 @@ INSERT
 )
 VALUES
 (
-	"Source"."source_charDataType",
-	"Source"."source_ncharDataType",
-	"Source"."source_nvarcharDataType"
+	"Source"."charDataType",
+	"Source"."ncharDataType",
+	"Source"."nvarcharDataType"
 )
 
 BeforeExecute

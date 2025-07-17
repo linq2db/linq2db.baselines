@@ -283,7 +283,7 @@ FROM
 					[RefResourceStorageShelfDTO] [b2]
 				WHERE
 					[a2].[Id] = [b2].[StorageShelfID]
-			) as [c1]
+			) as [ResourceID]
 		FROM
 			(
 				SELECT
@@ -315,15 +315,15 @@ FROM
 							[RefResourceStorageShelfDTO] [b1]
 						WHERE
 							[a1].[Id] = [b1].[StorageShelfID]
-					) as [c1]
+					) as [ResourceID]
 				FROM
 					[ChannelDTO] [c_1]
 						INNER JOIN [AisleDTO] [a] ON [c_1].[AisleID] = [a].[Id]
 						LEFT JOIN [MaterialDTO] [m_1] ON [c_1].[MaterialID] = [m_1].[Id]
 						LEFT JOIN [StorageShelfDTO] [a1] ON [c_1].[Id] = [a1].[ChannelID] AND 1 = [a1].[DepthCoordinate]
 			) [t1]
-				LEFT JOIN [WmsLoadCarrierDTO] [c1] ON [c1].[Id] = [t1].[c1]
-				LEFT JOIN [CTE_1] [i1] ON [i1].[IR_ResourceID] = [t1].[c1] AND [i1].[RN] = 1
+				LEFT JOIN [WmsLoadCarrierDTO] [c1] ON [c1].[Id] = [t1].[ResourceID]
+				LEFT JOIN [CTE_1] [i1] ON [i1].[IR_ResourceID] = [t1].[ResourceID] AND [i1].[RN] = 1
 				LEFT JOIN [MaterialDTO] [m1] ON [m1].[Id] = [i1].[IR_MaterialID]
 				LEFT JOIN [StorageShelfDTO] [a2] ON [t1].[Id] = [a2].[ChannelID] AND 2 = [a2].[DepthCoordinate]
 	) [x]

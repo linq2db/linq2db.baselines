@@ -74,7 +74,7 @@ DECLARE @MiddleName NVarChar(4) -- String
 SET     @MiddleName = 'None'
 DECLARE @Gender Char(1) -- AnsiStringFixedLength
 SET     @Gender = 'M'
-DECLARE @ID  -- Int32
+DECLARE @ID Int -- Int32
 SET     @ID = 1
 
 UPDATE

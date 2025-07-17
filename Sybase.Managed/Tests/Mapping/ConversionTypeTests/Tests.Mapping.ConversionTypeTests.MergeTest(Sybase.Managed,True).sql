@@ -3,19 +3,19 @@
 
 MERGE INTO [TrimTestTable] [Target]
 USING (
-	SELECT 1 AS [source_ID], '***OOO***' AS [source_Data]
+	SELECT 1 AS [ID], '***OOO***' AS [Data_1]
 	UNION ALL
 	SELECT 2, '***SSS***') [Source]
 (
-	[source_ID],
-	[source_Data]
+	[ID],
+	[Data_1]
 )
-ON ([Target].[ID] = [Source].[source_ID])
+ON ([Target].[ID] = [Source].[ID])
 
 WHEN MATCHED THEN
 UPDATE
 SET
-	[Data] = [Source].[source_Data]
+	[Data] = [Source].[Data_1]
 
 WHEN NOT MATCHED THEN
 INSERT
@@ -25,8 +25,8 @@ INSERT
 )
 VALUES
 (
-	[Source].[source_ID],
-	[Source].[source_Data]
+	[Source].[ID],
+	[Source].[Data_1]
 )
 
 BeforeExecute
@@ -34,17 +34,17 @@ BeforeExecute
 
 MERGE INTO [TrimTestTable] [Target]
 USING (
-	SELECT 3 AS [source_ID], '***III***' AS [source_Data]) [Source]
+	SELECT 3 AS [ID], '***III***' AS [Data_1]) [Source]
 (
-	[source_ID],
-	[source_Data]
+	[ID],
+	[Data_1]
 )
-ON ([Target].[ID] = [Source].[source_ID])
+ON ([Target].[ID] = [Source].[ID])
 
 WHEN MATCHED THEN
 UPDATE
 SET
-	[Data] = [Source].[source_Data]
+	[Data] = [Source].[Data_1]
 
 WHEN NOT MATCHED THEN
 INSERT
@@ -54,8 +54,8 @@ INSERT
 )
 VALUES
 (
-	[Source].[source_ID],
-	[Source].[source_Data]
+	[Source].[ID],
+	[Source].[Data_1]
 )
 
 BeforeExecute

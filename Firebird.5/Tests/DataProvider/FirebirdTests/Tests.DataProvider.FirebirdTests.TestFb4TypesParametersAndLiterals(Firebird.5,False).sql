@@ -1,6 +1,6 @@
 ﻿BeforeExecute
 -- Firebird.5 Firebird4
-DECLARE @DecFloat16 Dec34 -- Object
+DECLARE @DecFloat16 Decimal
 SET     @DecFloat16 = 1234567890123456E5
 
 SELECT
@@ -12,7 +12,7 @@ WHERE
 
 BeforeExecute
 -- Firebird.5 Firebird4
-DECLARE @DecFloat30 Dec34 -- Object
+DECLARE @DecFloat30 Decimal
 SET     @DecFloat30 = 1234567890123456789012345678901234E15
 
 SELECT
@@ -24,7 +24,7 @@ WHERE
 
 BeforeExecute
 -- Firebird.5 Firebird4
-DECLARE @DecFloat34 Dec34 -- Object
+DECLARE @DecFloat34 Decimal
 SET     @DecFloat34 = 1234567890123456789012345678901235E15
 
 SELECT
@@ -36,7 +36,7 @@ WHERE
 
 BeforeExecute
 -- Firebird.5 Firebird4
-DECLARE @DecFloat Dec34 -- Object
+DECLARE @DecFloat Decimal
 SET     @DecFloat = 1234567890123456789012345678901236E15
 
 SELECT

@@ -20,7 +20,7 @@ DELETE FROM
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @Id  -- Int32
+DECLARE @Id Int -- Int32
 SET     @Id = 1
 
 INSERT INTO "Parent"
@@ -34,7 +34,7 @@ VALUES
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @Id  -- Int32
+DECLARE @Id Int -- Int32
 SET     @Id = 2
 
 INSERT INTO "Parent"
@@ -48,7 +48,7 @@ VALUES
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @Id  -- Int32
+DECLARE @Id Int -- Int32
 SET     @Id = 10
 
 INSERT INTO "Child"
@@ -62,7 +62,7 @@ VALUES
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @Id  -- Int32
+DECLARE @Id Int -- Int32
 SET     @Id = 20
 
 INSERT INTO "Child"
@@ -76,11 +76,11 @@ VALUES
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @Id  -- Int32
+DECLARE @Id Int -- Int32
 SET     @Id = 11
-DECLARE @LeftId  -- Int32
+DECLARE @LeftId Int -- Int32
 SET     @LeftId = 100
-DECLARE @RightId  -- Int32
+DECLARE @RightId Int -- Int32
 SET     @RightId = 200
 
 INSERT INTO "GrandChild"
@@ -102,14 +102,14 @@ BeforeExecute
 MERGE INTO "GrandChild" "Target"
 USING (
 	SELECT
-		"r"."ParentID" + "t2"."ChildID" as "source_ResultId",
-		"r"."ParentID" as "source_LeftId",
-		"t2"."ChildID" as "source_RightId"
+		"r"."ParentID" + "t2"."ChildID" as "ResultId",
+		"r"."ParentID" as "LeftId",
+		"t2"."ChildID" as "RightId"
 	FROM
 		"Parent" "r"
 			CROSS JOIN "Child" "t2"
 ) "Source"
-ON ("Target"."GrandChildID" = "Source"."source_ResultId")
+ON ("Target"."GrandChildID" = "Source"."ResultId")
 
 WHEN NOT MATCHED THEN
 INSERT
@@ -120,9 +120,9 @@ INSERT
 )
 VALUES
 (
-	"Source"."source_ResultId",
-	"Source"."source_LeftId",
-	"Source"."source_RightId"
+	"Source"."ResultId",
+	"Source"."LeftId",
+	"Source"."RightId"
 )
 
 BeforeExecute

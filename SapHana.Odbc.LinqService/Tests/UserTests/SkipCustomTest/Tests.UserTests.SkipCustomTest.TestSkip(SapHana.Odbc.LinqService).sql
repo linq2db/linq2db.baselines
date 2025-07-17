@@ -1,10 +1,10 @@
 ﻿BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @Id  -- Int32
+DECLARE @Id Int -- Int32
 SET     @Id = 1
 DECLARE @Name NVarChar(4) -- String
 SET     @Name = 'John'
-DECLARE @Age  -- Int32
+DECLARE @Age Int -- Int32
 SET     @Age = 15
 
 INSERT INTO "PR_1598_SkipCustom_Table"
@@ -35,7 +35,7 @@ LIMIT 1
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @Id  -- Int32
+DECLARE @Id Int -- Int32
 SET     @Id = 2
 DECLARE @Name NVarChar(3) -- String
 SET     @Name = 'Max'

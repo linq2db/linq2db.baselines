@@ -236,20 +236,20 @@ BeforeExecute
 
 MERGE INTO "TestMerge1" "Target"
 USING (VALUES
-	(3,NULL,3,NULL,CAST(NULL AS Int)), (4,5,7,214,NULL),
-	(5,10,4,NULL,NULL), (6,NULL,NULL,216,NULL),
-	(1,123,NULL,NULL,NULL)
+	(1,123,NULL,NULL,CAST(NULL AS Int)),
+	(3,NULL,3,NULL,NULL), (4,5,7,214,NULL), (5,10,4,NULL,NULL),
+	(6,NULL,NULL,216,NULL)
 ) "Source"
 (
-	"source_Id",
-	"source_Field1",
-	"source_Field2",
-	"source_Field4",
-	"source_Field3"
+	"Id",
+	"Field1",
+	"Field2",
+	"Field4",
+	"Field3"
 )
-ON ("Target"."Id" = "Source"."source_Id")
+ON ("Target"."Id" = "Source"."Id")
 
-WHEN NOT MATCHED AND "Source"."source_Id" = 5 THEN
+WHEN NOT MATCHED AND "Source"."Id" = 5 THEN
 INSERT
 (
 	"Id",
@@ -259,10 +259,10 @@ INSERT
 )
 VALUES
 (
-	"Source"."source_Id",
-	"Source"."source_Field1",
-	"Source"."source_Field2",
-	"Source"."source_Field4"
+	"Source"."Id",
+	"Source"."Field1",
+	"Source"."Field2",
+	"Source"."Field4"
 )
 
 WHEN NOT MATCHED THEN
@@ -275,18 +275,18 @@ INSERT
 )
 VALUES
 (
-	"Source"."source_Id",
-	"Source"."source_Field1",
-	"Source"."source_Field2",
-	"Source"."source_Field4"
+	"Source"."Id",
+	"Source"."Field1",
+	"Source"."Field2",
+	"Source"."Field4"
 )
 
 WHEN MATCHED AND "Target"."Id" = 3 THEN
 UPDATE
 SET
-	"Field1" = "Source"."source_Field1",
-	"Field2" = "Source"."source_Field2",
-	"Field3" = "Source"."source_Field3"
+	"Field1" = "Source"."Field1",
+	"Field2" = "Source"."Field2",
+	"Field3" = "Source"."Field3"
 WHEN MATCHED AND "Target"."Id" = 4 THEN DELETE
 WHEN MATCHED THEN DELETE
 

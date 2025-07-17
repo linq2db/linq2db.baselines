@@ -1,8 +1,8 @@
 ﻿BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @id  -- Int32
+DECLARE @id Int -- Int32
 SET     @id = 3
-DECLARE @id1  -- Int32
+DECLARE @id1 Int -- Int32
 SET     @id1 = 3
 
 SELECT
@@ -19,8 +19,7 @@ WHERE
 				INNER JOIN "GrandChild" "a_Child" ON "a_ManyToMany"."ChildID" = "a_Child"."ChildID"
 				LEFT JOIN "Parent" "a_Parent" ON "a_Child"."ParentID" = "a_Parent"."ParentID"
 		WHERE
-			"li"."ParentID" = ? AND "a_Parent"."ParentID" IS NOT NULL AND
-			"a_Parent"."ParentID" = ?
+			"li"."ParentID" = ? AND "a_Parent"."ParentID" = ?
 	)
 ORDER BY
 	"t1"."ChildID"

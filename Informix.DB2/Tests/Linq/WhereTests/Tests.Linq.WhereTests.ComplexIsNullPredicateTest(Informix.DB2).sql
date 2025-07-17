@@ -11,8 +11,7 @@ WHERE
 		WHEN r."Value" = '123' THEN 't'::BOOLEAN
 		ELSE 'f'::BOOLEAN
 	END = CASE
-		WHEN r."Value" = '1' OR r."Value" = 'test' AND (r."Value" <> '1' OR r."Value" IS NULL)
-			THEN 't'::BOOLEAN
+		WHEN r."Value" = '1' OR r."Value" = 'test' THEN 't'::BOOLEAN
 		ELSE 'f'::BOOLEAN
 	END
 ORDER BY

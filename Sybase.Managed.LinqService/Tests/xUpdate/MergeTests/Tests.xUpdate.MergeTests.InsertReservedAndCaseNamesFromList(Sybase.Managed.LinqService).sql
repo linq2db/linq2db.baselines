@@ -238,7 +238,7 @@ BeforeExecute
 
 MERGE INTO [TestMerge1] [Target]
 USING (
-	SELECT 3 AS [source_as], NULL AS [source_take], 3 AS [source_skip], NULL AS [source_Skip_1], NULL AS [source_insert], NULL AS [source_SELECT]
+	SELECT 3 AS [as_1], NULL AS [take], 3 AS [skip], NULL AS [Skip_1], NULL AS [insert_1], NULL AS [SELECT_1]
 	UNION ALL
 	SELECT 4, 5, 7, NULL, 214, NULL
 	UNION ALL
@@ -246,16 +246,16 @@ USING (
 	UNION ALL
 	SELECT 6, NULL, NULL, NULL, 216, NULL) [Source]
 (
-	[source_as],
-	[source_take],
-	[source_skip],
-	[source_Skip_1],
-	[source_insert],
-	[source_SELECT]
+	[as_1],
+	[take],
+	[skip],
+	[Skip_1],
+	[insert_1],
+	[SELECT_1]
 )
-ON ([Target].[Id] = [Source].[source_as])
+ON ([Target].[Id] = [Source].[as_1])
 
-WHEN NOT MATCHED AND [Source].[source_insert] = 216 THEN
+WHEN NOT MATCHED AND [Source].[insert_1] = 216 THEN
 INSERT
 (
 	[Id],
@@ -267,12 +267,12 @@ INSERT
 )
 VALUES
 (
-	[Source].[source_as],
-	[Source].[source_take],
-	[Source].[source_skip],
-	[Source].[source_Skip_1],
-	[Source].[source_insert],
-	[Source].[source_SELECT]
+	[Source].[as_1],
+	[Source].[take],
+	[Source].[skip],
+	[Source].[Skip_1],
+	[Source].[insert_1],
+	[Source].[SELECT_1]
 )
 
 BeforeExecute

@@ -226,16 +226,16 @@ SET     @param = 123
 MERGE INTO "TestMerge1" "Target"
 USING (
 	SELECT
-		t1."Id" as "source_Id"
+		t1."Id"
 	FROM
 		"TestMerge2" t1
 ) "Source"
 (
-	"source_Id"
+	"Id"
 )
-ON ("Target"."Id" = "Source"."source_Id")
+ON ("Target"."Id" = "Source"."Id")
 
-WHEN MATCHED AND "Source"."source_Id" = 4 THEN
+WHEN MATCHED AND "Source"."Id" = 4 THEN
 UPDATE
 SET
 	"Field1" = :param

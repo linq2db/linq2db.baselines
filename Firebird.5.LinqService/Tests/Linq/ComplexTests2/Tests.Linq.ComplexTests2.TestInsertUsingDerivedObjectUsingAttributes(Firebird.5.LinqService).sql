@@ -1,10 +1,5 @@
 ﻿BeforeExecute
 -- Firebird.5 Firebird4
-
-SET GENERATOR "PersonID" TO 4
-
-BeforeExecute
--- Firebird.5 Firebird4
 DECLARE @FirstName VarChar(21) -- String
 SET     @FirstName = 'test_inherited_insert'
 DECLARE @LastName VarChar(4) -- String

@@ -478,7 +478,7 @@ VALUES
 (3,2,3,'InheritanceParent2')
 
 BeforeExecute
---  SQLite.Classic SQLite
+-- SQLite.Classic SQLite
 DECLARE @binaryDataType Binary(1)
 SET     @binaryDataType = X'01'
 DECLARE @varbinaryDataType Binary(1)

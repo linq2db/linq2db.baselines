@@ -26,15 +26,15 @@ VALUES
 
 BeforeExecute
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-DECLARE @name VarChar(8) -- String
-SET     @name = 'Update14'
+DECLARE @name Int32
+SET     @name = 8
 DECLARE @idx Int32
 SET     @idx = 4
 
 UPDATE
 	`Person` `t1`
 SET
-	`t1`.`LastName` = CAST(Char_Length(@name) + @idx AS CHAR(11))
+	`t1`.`LastName` = CAST(@name + @idx AS CHAR(11))
 WHERE
 	`t1`.`FirstName` LIKE 'Update14%' ESCAPE '~'
 

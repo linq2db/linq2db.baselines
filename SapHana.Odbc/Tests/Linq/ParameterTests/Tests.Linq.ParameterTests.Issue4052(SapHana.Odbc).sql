@@ -1,6 +1,6 @@
 ﻿BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @ID  -- Int32
+DECLARE @ID Int -- Int32
 SET     @ID = 1
 
 SELECT
@@ -12,5 +12,5 @@ SELECT
 FROM
 	"Person" "c_1"
 WHERE
-	"c_1"."PersonID" = ? AND (Lower(Trim("c_1"."MiddleName")) = '' AND "c_1"."MiddleName" IS NOT NULL OR "c_1"."MiddleName" IS NULL)
+	"c_1"."PersonID" = ? AND ("c_1"."MiddleName" IS NULL OR Lower(Trim("c_1"."MiddleName")) = '')
 

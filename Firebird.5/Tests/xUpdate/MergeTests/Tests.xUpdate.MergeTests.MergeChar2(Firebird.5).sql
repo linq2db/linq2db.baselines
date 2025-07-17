@@ -5,21 +5,21 @@ BeforeExecute
 
 MERGE INTO "AllTypes" "Target"
 USING (
-	SELECT 10 AS "source_ID", _utf8 x'00' AS "source_charDataType", CAST(_utf8 x'00' AS CHAR(1)) AS "source_ncharDataType", NULL AS "source_nvarcharDataType" FROM rdb$database) "Source"
+	SELECT 10 AS ID, _utf8 x'00' AS "charDataType", CAST(_utf8 x'00' AS CHAR(1)) AS "ncharDataType", NULL AS "nvarcharDataType" FROM rdb$database) "Source"
 (
-	"source_ID",
-	"source_charDataType",
-	"source_ncharDataType",
-	"source_nvarcharDataType"
+	ID,
+	"charDataType",
+	"ncharDataType",
+	"nvarcharDataType"
 )
-ON ("Target".ID = "Source"."source_ID")
+ON ("Target".ID = "Source".ID)
 
 WHEN MATCHED THEN
 UPDATE
 SET
-	"charDataType" = "Source"."source_charDataType",
-	"ncharDataType" = "Source"."source_ncharDataType",
-	"nvarcharDataType" = "Source"."source_nvarcharDataType"
+	"charDataType" = "Source"."charDataType",
+	"ncharDataType" = "Source"."ncharDataType",
+	"nvarcharDataType" = "Source"."nvarcharDataType"
 
 WHEN NOT MATCHED THEN
 INSERT
@@ -30,9 +30,9 @@ INSERT
 )
 VALUES
 (
-	"Source"."source_charDataType",
-	"Source"."source_ncharDataType",
-	"Source"."source_nvarcharDataType"
+	"Source"."charDataType",
+	"Source"."ncharDataType",
+	"Source"."nvarcharDataType"
 )
 
 BeforeExecute

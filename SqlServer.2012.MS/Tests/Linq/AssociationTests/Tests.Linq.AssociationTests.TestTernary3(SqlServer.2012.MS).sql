@@ -2,7 +2,6 @@
 -- SqlServer.2012.MS SqlServer.2012
 
 SELECT
-	[a_Middle].[ParentID],
 	[a_Bottom1].[ParentID],
 	[a_Bottom1].[ChildID],
 	[a_Bottom1].[GrandChildID]

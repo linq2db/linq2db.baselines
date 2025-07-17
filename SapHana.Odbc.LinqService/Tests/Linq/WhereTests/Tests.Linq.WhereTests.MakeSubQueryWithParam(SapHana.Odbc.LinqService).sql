@@ -1,8 +1,8 @@
 ﻿BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @n  -- Int32
+DECLARE @n Int -- Int32
 SET     @n = 1
-DECLARE @n  -- Int32
+DECLARE @n Int -- Int32
 SET     @n = 1
 
 SELECT

@@ -2,7 +2,6 @@
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql
 
 SELECT
-	`a_Middle`.`ParentID`,
 	`a_Bottom1`.`ParentID`,
 	`a_Bottom1`.`ChildID`,
 	`a_Bottom1`.`GrandChildID`

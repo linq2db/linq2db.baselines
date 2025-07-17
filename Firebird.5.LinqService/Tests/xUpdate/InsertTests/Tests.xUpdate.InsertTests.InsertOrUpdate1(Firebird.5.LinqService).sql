@@ -1,10 +1,5 @@
 ﻿BeforeExecute
 -- Firebird.5 Firebird4
-
-SET GENERATOR "PersonID" TO 4
-
-BeforeExecute
--- Firebird.5 Firebird4
 DECLARE @FirstName VarChar(4) -- String
 SET     @FirstName = 'John'
 DECLARE @LastName VarChar(7) -- String
@@ -48,7 +43,7 @@ USING (SELECT CAST(@id AS Int) AS "PersonID" FROM rdb$database) "s" ON
 WHEN MATCHED THEN
 	UPDATE 
 	SET
-		"Diagnosis" = Char_Length("t1"."Diagnosis") + CAST(@i AS Int)
+		"Diagnosis" = CHAR_LENGTH("t1"."Diagnosis") + CAST(@i AS Int)
 WHEN NOT MATCHED THEN
 	INSERT
 	(
@@ -76,7 +71,7 @@ USING (SELECT CAST(@id AS Int) AS "PersonID" FROM rdb$database) "s" ON
 WHEN MATCHED THEN
 	UPDATE 
 	SET
-		"Diagnosis" = Char_Length("t1"."Diagnosis") + CAST(@i AS Int)
+		"Diagnosis" = CHAR_LENGTH("t1"."Diagnosis") + CAST(@i AS Int)
 WHEN NOT MATCHED THEN
 	INSERT
 	(
@@ -104,7 +99,7 @@ USING (SELECT CAST(@id AS Int) AS "PersonID" FROM rdb$database) "s" ON
 WHEN MATCHED THEN
 	UPDATE 
 	SET
-		"Diagnosis" = Char_Length("t1"."Diagnosis") + CAST(@i AS Int)
+		"Diagnosis" = CHAR_LENGTH("t1"."Diagnosis") + CAST(@i AS Int)
 WHEN NOT MATCHED THEN
 	INSERT
 	(

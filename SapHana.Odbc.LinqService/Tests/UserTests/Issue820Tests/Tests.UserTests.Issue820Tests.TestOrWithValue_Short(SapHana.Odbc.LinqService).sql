@@ -8,7 +8,7 @@ FROM
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @param  -- Int16
+DECLARE @param SmallInt -- Int16
 SET     @param = 1
 
 SELECT

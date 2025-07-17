@@ -1,10 +1,5 @@
 ﻿BeforeExecute
 -- SqlServer.2005
-
-DBCC CHECKIDENT ('Person', RESEED, 4)
-
-BeforeExecute
--- SqlServer.2005
 DECLARE @FirstName NVarChar(4000) -- String
 SET     @FirstName = N'John'
 DECLARE @LastName NVarChar(4000) -- String
@@ -41,7 +36,7 @@ SET     @id = 5
 UPDATE
 	[Patient]
 SET
-	[Diagnosis] = CAST(Len([t1].[Diagnosis]) + @i AS NVarChar(11))
+	[Diagnosis] = CAST(LEN([t1].[Diagnosis] + N'.') - 1 + @i AS NVarChar(11))
 FROM
 	[Patient] [t1]
 WHERE
@@ -71,7 +66,7 @@ SET     @id = 5
 UPDATE
 	[Patient]
 SET
-	[Diagnosis] = CAST(Len([t1].[Diagnosis]) + @i AS NVarChar(11))
+	[Diagnosis] = CAST(LEN([t1].[Diagnosis] + N'.') - 1 + @i AS NVarChar(11))
 FROM
 	[Patient] [t1]
 WHERE
@@ -101,7 +96,7 @@ SET     @id = 5
 UPDATE
 	[Patient]
 SET
-	[Diagnosis] = CAST(Len([t1].[Diagnosis]) + @i AS NVarChar(11))
+	[Diagnosis] = CAST(LEN([t1].[Diagnosis] + N'.') - 1 + @i AS NVarChar(11))
 FROM
 	[Patient] [t1]
 WHERE

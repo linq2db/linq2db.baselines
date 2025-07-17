@@ -2,7 +2,7 @@
 -- Firebird.3 Firebird3
 
 SELECT
-	'I-' || CAST("x"."PersonID" AS VarChar(11) CHARACTER SET UNICODE_FSS),
+	'I-' || "x"."PersonID",
 	"x"."FirstName"
 FROM
 	"Person" "x"

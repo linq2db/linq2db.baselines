@@ -1,34 +1,34 @@
 ﻿BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @int1  -- Int32
+DECLARE @int1 Int -- Int32
 SET     @int1 = 11
-DECLARE @someId  -- Int32
+DECLARE @someId Int -- Int32
 SET     @someId = 100
-DECLARE @take  -- Int32
+DECLARE @take Int -- Int32
 SET     @take = 2
-DECLARE @skip  -- Int32
+DECLARE @skip Int -- Int32
 SET     @skip = 1
-DECLARE @int2  -- Int32
+DECLARE @int2 Int -- Int32
 SET     @int2 = 22
-DECLARE @someId  -- Int32
+DECLARE @someId Int -- Int32
 SET     @someId = 100
-DECLARE @take  -- Int32
+DECLARE @take Int -- Int32
 SET     @take = 2
-DECLARE @skip  -- Int32
+DECLARE @skip Int -- Int32
 SET     @skip = 1
-DECLARE @int3  -- Int32
+DECLARE @int3 Int -- Int32
 SET     @int3 = 33
-DECLARE @someId  -- Int32
+DECLARE @someId Int -- Int32
 SET     @someId = 100
-DECLARE @take  -- Int32
+DECLARE @take Int -- Int32
 SET     @take = 2
-DECLARE @skip  -- Int32
+DECLARE @skip Int -- Int32
 SET     @skip = 1
-DECLARE @someId  -- Int32
+DECLARE @someId Int -- Int32
 SET     @someId = 100
-DECLARE @take  -- Int32
+DECLARE @take Int -- Int32
 SET     @take = 2
-DECLARE @skip  -- Int32
+DECLARE @skip Int -- Int32
 SET     @skip = 1
 
 UPDATE

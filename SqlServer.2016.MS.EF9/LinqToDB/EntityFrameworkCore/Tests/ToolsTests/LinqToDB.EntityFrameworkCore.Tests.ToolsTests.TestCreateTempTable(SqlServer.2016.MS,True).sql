@@ -1,4 +1,4 @@
-﻿--  SqlServer.2016
+﻿-- SqlServer.2016
 
 CREATE TABLE [tempdb]..[#TestEmployees]
 (
@@ -27,7 +27,7 @@ CREATE TABLE [tempdb]..[#TestEmployees]
 
 
 
---  SqlServer.2016
+-- SqlServer.2016
 
 INSERT INTO [tempdb]..[#TestEmployees]
 (
@@ -74,18 +74,18 @@ SELECT
 FROM
 	[Employees] [e]
 WHERE
-	[e].[IsDeleted] = 0 OR [e].[IsDeleted] = 0
+	[e].[IsDeleted] = 0
 
 
 
---  SqlServer.2016
+-- SqlServer.2016
 
 SELECT
 	COUNT(*)
 FROM
 	[tempdb]..[#TestEmployees] [e]
 WHERE
-	[e].[IsDeleted] = 0 OR [e].[IsDeleted] = 0
+	[e].[IsDeleted] = 0
 
 
 
@@ -97,7 +97,7 @@ FROM [Employees] AS [e]
 WHERE @__ef_filter__p_0 = CAST(1 AS bit) OR [e].[IsDeleted] = CAST(0 AS bit) OR [e].[IsDeleted] = CAST(0 AS bit)
 
 
---  SqlServer.2016
+-- SqlServer.2016
 
 DROP TABLE IF EXISTS [tempdb]..[#TestEmployees]
 

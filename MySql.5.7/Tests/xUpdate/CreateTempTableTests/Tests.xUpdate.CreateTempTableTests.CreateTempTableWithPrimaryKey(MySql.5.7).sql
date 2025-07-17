@@ -11,5 +11,5 @@ CREATE TEMPORARY TABLE `TableWithPrimaryKey`
 BeforeExecute
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
 
-DROP TABLE IF EXISTS `TableWithPrimaryKey`
+DROP TEMPORARY TABLE IF EXISTS `TableWithPrimaryKey`
 

@@ -1,6 +1,6 @@
 ﻿BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @parentId  -- Int32
+DECLARE @parentId Int -- Int32
 SET     @parentId = 12
 
 SELECT

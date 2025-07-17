@@ -4,13 +4,13 @@ DECLARE @take Integer(4) -- Int32
 SET     @take = 100
 
 SELECT FIRST @take
-	t1.PersonID,
-	t1.PersonID
+	r.PersonID,
+	r.PersonID
 FROM
-	Person t1
+	Person r
 GROUP BY
-	t1.PersonID,
-	t1.PersonID
+	r.PersonID,
+	r.PersonID
 ORDER BY
-	t1.PersonID
+	r.PersonID
 

@@ -1,10 +1,5 @@
 ﻿BeforeExecute
 -- SQLite.MS SQLite
-
-UPDATE sqlite_sequence SET seq = 4 WHERE name = 'Person'
-
-BeforeExecute
--- SQLite.MS SQLite
 DECLARE @FirstName NVarChar(25) -- String
 SET     @FirstName = 'UpdateColumnFilterUpdated'
 DECLARE @LastName NVarChar(8) -- String
@@ -55,7 +50,7 @@ SET     @LastName = 'whatever'
 DECLARE @Gender Char(1) -- AnsiStringFixedLength
 SET     @Gender = 'M'
 DECLARE @ID  -- Int32
-SET     @ID = 15
+SET     @ID = 5
 
 UPDATE
 	[Person]

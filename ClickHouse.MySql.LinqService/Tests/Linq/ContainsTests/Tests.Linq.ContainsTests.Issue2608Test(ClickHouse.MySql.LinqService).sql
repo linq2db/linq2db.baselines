@@ -11,7 +11,7 @@ FROM
 			LinqDataTypes x
 				INNER JOIN LinqDataTypes o ON x.IntValue = o.IntValue
 				INNER JOIN LinqDataTypes u ON o.IntValue = u.IntValue
-				INNER JOIN LinqDataTypes r ON u.IntValue = r.IntValue AND u.IntValue = r.IntValue AND r.BoolValue = false
+				INNER JOIN LinqDataTypes r ON u.IntValue = r.IntValue AND r.BoolValue = false
 				INNER JOIN LinqDataTypes f ON r.IntValue = f.IntValue
 		WHERE
 			x.BoolValue = false AND

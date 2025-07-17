@@ -236,7 +236,7 @@ BeforeExecute
 
 MERGE INTO "TestMerge1" "Target"
 USING (
-	SELECT 3 AS "source_Key" FROM rdb$database
+	SELECT 3 AS "Key_1" FROM rdb$database
 	UNION ALL
 	SELECT 4 FROM rdb$database
 	UNION ALL
@@ -244,10 +244,10 @@ USING (
 	UNION ALL
 	SELECT 6 FROM rdb$database) "Source"
 (
-	"source_Key"
+	"Key_1"
 )
-ON ("Source"."source_Key" = "Target"."Id")
-WHEN MATCHED AND "Source"."source_Key" = 4 THEN DELETE
+ON ("Source"."Key_1" = "Target"."Id")
+WHEN MATCHED AND "Source"."Key_1" = 4 THEN DELETE
 
 BeforeExecute
 -- Firebird.5 Firebird4

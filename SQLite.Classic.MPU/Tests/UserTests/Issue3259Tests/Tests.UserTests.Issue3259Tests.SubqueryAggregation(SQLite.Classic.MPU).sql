@@ -2,10 +2,10 @@
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
 SELECT
-	[t5].[SUM_1],
-	[t5].[SumCustom],
-	[t5].[SumCustom_1],
-	[t5].[SUM_2]
+	[t5].[WithParentReference],
+	[t5].[WithParentReferenceCustom1],
+	[t5].[WithParentReferenceCustom2],
+	[t5].[WithoutParentReference]
 FROM
 	(
 		SELECT
@@ -34,7 +34,7 @@ FROM
 							WHERE
 								[a_Employee].[EmployeeId] = [e].[EmployeeId]
 						) [d] ON 1=1
-			) as [SUM_1],
+			) as [WithParentReference],
 			(
 				SELECT
 					Sum(CASE
@@ -60,7 +60,7 @@ FROM
 							WHERE
 								[a_Employee].[EmployeeId] = [e_1].[EmployeeId]
 						) [d_1] ON 1=1
-			) as [SumCustom],
+			) as [WithParentReferenceCustom1],
 			(
 				SELECT
 					Sum(CASE
@@ -86,7 +86,7 @@ FROM
 							WHERE
 								[a_Employee].[EmployeeId] = [e_2].[EmployeeId]
 						) [d_2] ON 1=1
-			) as [SumCustom_1],
+			) as [WithParentReferenceCustom2],
 			(
 				SELECT
 					SUM(CASE
@@ -112,14 +112,14 @@ FROM
 							WHERE
 								[a_Employee].[EmployeeId] = [e_3].[EmployeeId]
 						) [d_3] ON 1=1
-			) as [SUM_2]
+			) as [WithoutParentReference]
 		FROM
 			[EmployeeTimeOffBalance] [tracking]
 				INNER JOIN [Employee] [a_Employee] ON [tracking].[EmployeeId] = [a_Employee].[EmployeeId]
 	) [t5]
 ORDER BY
-	Coalesce([t5].[SUM_1], 0),
-	Coalesce([t5].[SumCustom], 0),
-	Coalesce([t5].[SumCustom_1], 0),
-	Coalesce([t5].[SUM_2], 0) DESC
+	Coalesce([t5].[WithParentReference], 0),
+	Coalesce([t5].[WithParentReferenceCustom1], 0),
+	Coalesce([t5].[WithParentReferenceCustom2], 0),
+	Coalesce([t5].[WithoutParentReference], 0) DESC
 

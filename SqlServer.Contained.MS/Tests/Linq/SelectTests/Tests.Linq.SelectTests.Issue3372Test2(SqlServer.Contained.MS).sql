@@ -3,7 +3,7 @@
 
 SELECT
 	[e].[FirstName],
-	IIF([a_Patient].[PersonID] IS NOT NULL AND [a_Person].[PersonID] IS NOT NULL AND [a_Person].[MiddleName] IS NOT NULL, 1, 0),
+	IIF([a_Person].[PersonID] IS NOT NULL AND [a_Person].[MiddleName] IS NOT NULL, 1, 0),
 	[a_Person].[MiddleName]
 FROM
 	[Person] [e]

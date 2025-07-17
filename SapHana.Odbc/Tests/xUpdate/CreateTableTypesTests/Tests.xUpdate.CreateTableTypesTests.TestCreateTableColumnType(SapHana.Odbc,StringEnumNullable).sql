@@ -1,6 +1,6 @@
 ﻿BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @Id  -- Int32
+DECLARE @Id Int -- Int32
 SET     @Id = 1
 DECLARE @StringEnumNullable NVarChar -- String
 SET     @StringEnumNullable = NULL
@@ -18,7 +18,7 @@ VALUES
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @Id  -- Int32
+DECLARE @Id Int -- Int32
 SET     @Id = 2
 DECLARE @StringEnumNullable NVarChar(2) -- String
 SET     @StringEnumNullable = '40'

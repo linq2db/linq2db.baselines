@@ -35,7 +35,7 @@ ORDER BY `o`.`OrderID`, `t`.`EmployeeID`, `t1`.`EmployeeID`, `t1`.`TerritoryID`,
 BeginTransactionAsync(RepeatableRead)
 
 
---  MySql.8.0.MySqlConnector MySql80 (asynchronously)
+-- MySql.8.0.MySqlConnector MySql80 (asynchronously)
 
 SELECT
 	`m_1`.`EmployeeId`,
@@ -52,20 +52,18 @@ FROM
 			`a_Employee`.`EmployeeID` as `EmployeeId`
 		FROM
 			`Orders` `e`
-				LEFT JOIN `Employees` `a_Employee` ON `e`.`EmployeeID` = `a_Employee`.`EmployeeID` AND (NOT `a_Employee`.`IsDeleted` OR NOT `a_Employee`.`IsDeleted`)
+				LEFT JOIN `Employees` `a_Employee` ON `e`.`EmployeeID` = `a_Employee`.`EmployeeID` AND NOT `a_Employee`.`IsDeleted`
 		WHERE
-			NOT `e`.`IsDeleted` OR NOT `e`.`IsDeleted`
+			NOT `e`.`IsDeleted`
 	) `m_1`
 		INNER JOIN `EmployeeTerritories` `d` ON `m_1`.`EmployeeId` = `d`.`EmployeeID`
 		INNER JOIN `Territories` `e_1` ON `d`.`TerritoryID` = `e_1`.`TerritoryID`
 WHERE
-	(NOT `e_1`.`IsDeleted` OR NOT `e_1`.`IsDeleted`) AND
-	(NOT `e_1`.`IsDeleted` OR NOT `e_1`.`IsDeleted`) AND
-	(NOT `d`.`IsDeleted` OR NOT `d`.`IsDeleted`)
+	NOT `e_1`.`IsDeleted` AND NOT `d`.`IsDeleted`
 
 
 
---  MySql.8.0.MySqlConnector MySql80 (asynchronously)
+-- MySql.8.0.MySqlConnector MySql80 (asynchronously)
 
 SELECT
 	`m_1`.`OrderId`,
@@ -93,21 +91,19 @@ FROM
 		FROM
 			`Orders` `e`
 		WHERE
-			NOT `e`.`IsDeleted` OR NOT `e`.`IsDeleted`
+			NOT `e`.`IsDeleted`
 	) `m_1`
 		INNER JOIN `Order Details` `d` ON `m_1`.`OrderId` = `d`.`OrderID`
 		INNER JOIN `Products` `e_1` ON `d`.`ProductID` = `e_1`.`ProductID`
 WHERE
-	(NOT `e_1`.`IsDeleted` OR NOT `e_1`.`IsDeleted`) AND
-	(NOT `e_1`.`IsDeleted` OR NOT `e_1`.`IsDeleted`) AND
-	(NOT `d`.`IsDeleted` OR NOT `d`.`IsDeleted`)
+	NOT `e_1`.`IsDeleted` AND NOT `d`.`IsDeleted`
 
 
 
 DisposeTransactionAsync
 
 
---  MySql.8.0.MySqlConnector MySql80 (asynchronously)
+-- MySql.8.0.MySqlConnector MySql80 (asynchronously)
 
 SELECT
 	`a_Employee`.`IsDeleted`,
@@ -132,9 +128,9 @@ SELECT
 	`o`.`OrderID`
 FROM
 	`Orders` `o`
-		LEFT JOIN `Employees` `a_Employee` ON `o`.`EmployeeID` = `a_Employee`.`EmployeeID` AND (NOT `a_Employee`.`IsDeleted` OR NOT `a_Employee`.`IsDeleted`)
+		LEFT JOIN `Employees` `a_Employee` ON `o`.`EmployeeID` = `a_Employee`.`EmployeeID` AND NOT `a_Employee`.`IsDeleted`
 WHERE
-	NOT `o`.`IsDeleted` OR NOT `o`.`IsDeleted`
+	NOT `o`.`IsDeleted`
 
 
 

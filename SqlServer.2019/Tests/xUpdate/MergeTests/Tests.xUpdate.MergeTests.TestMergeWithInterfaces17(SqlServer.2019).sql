@@ -6,9 +6,9 @@ USING (VALUES
 	(1)
 ) [Source]
 (
-	[source_Id]
+	[Id]
 )
-ON ([Target].[Id] = [Source].[source_Id])
-WHEN MATCHED AND [Target].[Id] = [Source].[source_Id] THEN DELETE
+ON ([Target].[Id] = [Source].[Id])
+WHEN MATCHED AND [Target].[Id] = [Source].[Id] THEN DELETE
 ;
 

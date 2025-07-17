@@ -1,10 +1,5 @@
 ﻿BeforeExecute
 -- Sybase.Managed Sybase
-
-sp_chgattribute Person, 'identity_burn_max', 0, '4'
-
-BeforeExecute
--- Sybase.Managed Sybase
 DECLARE @FirstName UniVarChar(4) -- String
 SET     @FirstName = 'John'
 DECLARE @LastName UniVarChar(7) -- String
@@ -37,13 +32,13 @@ DECLARE @i Integer -- Int32
 SET     @i = 0
 DECLARE @id Integer -- Int32
 SET     @id = 5
-DECLARE @diagnosis UniVarChar(3) -- String
-SET     @diagnosis = 'abc'
+DECLARE @diagnosis Integer -- Int32
+SET     @diagnosis = 3
 
 UPDATE
 	[Patient]
 SET
-	[Diagnosis] = CAST(Len([t1].[Diagnosis]) + @i AS NVarChar(11))
+	[Diagnosis] = CAST(CHAR_LENGTH([t1].[Diagnosis]) + @i AS NVarChar(11))
 FROM
 	[Patient] [t1]
 WHERE
@@ -59,7 +54,7 @@ BEGIN
 	VALUES
 	(
 		@id,
-		CAST(Len(@diagnosis) + @i AS NVarChar(11))
+		CAST(@diagnosis + @i AS NVarChar(11))
 	)
 END
 
@@ -69,13 +64,13 @@ DECLARE @i Integer -- Int32
 SET     @i = 1
 DECLARE @id Integer -- Int32
 SET     @id = 5
-DECLARE @diagnosis UniVarChar(3) -- String
-SET     @diagnosis = 'abc'
+DECLARE @diagnosis Integer -- Int32
+SET     @diagnosis = 3
 
 UPDATE
 	[Patient]
 SET
-	[Diagnosis] = CAST(Len([t1].[Diagnosis]) + @i AS NVarChar(11))
+	[Diagnosis] = CAST(CHAR_LENGTH([t1].[Diagnosis]) + @i AS NVarChar(11))
 FROM
 	[Patient] [t1]
 WHERE
@@ -91,7 +86,7 @@ BEGIN
 	VALUES
 	(
 		@id,
-		CAST(Len(@diagnosis) + @i AS NVarChar(11))
+		CAST(@diagnosis + @i AS NVarChar(11))
 	)
 END
 
@@ -101,13 +96,13 @@ DECLARE @i Integer -- Int32
 SET     @i = 2
 DECLARE @id Integer -- Int32
 SET     @id = 5
-DECLARE @diagnosis UniVarChar(3) -- String
-SET     @diagnosis = 'abc'
+DECLARE @diagnosis Integer -- Int32
+SET     @diagnosis = 3
 
 UPDATE
 	[Patient]
 SET
-	[Diagnosis] = CAST(Len([t1].[Diagnosis]) + @i AS NVarChar(11))
+	[Diagnosis] = CAST(CHAR_LENGTH([t1].[Diagnosis]) + @i AS NVarChar(11))
 FROM
 	[Patient] [t1]
 WHERE
@@ -123,7 +118,7 @@ BEGIN
 	VALUES
 	(
 		@id,
-		CAST(Len(@diagnosis) + @i AS NVarChar(11))
+		CAST(@diagnosis + @i AS NVarChar(11))
 	)
 END
 

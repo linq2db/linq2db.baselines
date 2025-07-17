@@ -1,9 +1,4 @@
 ﻿BeforeExecute
--- SqlServer.2014.MS SqlServer.2014
-
-DBCC CHECKIDENT ('Person', RESEED, 4)
-
-BeforeExecute
 BeginTransaction
 BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014
@@ -11,10 +6,10 @@ BeforeExecute
 MERGE INTO [Patient] [Target]
 USING (
 	SELECT
-		[t1].[PersonID] as [source_PersonID],
-		[t1].[Diagnosis] as [source_Diagnosis],
-		[a_Person].[FirstName] as [source_Person_FirstName],
-		[a_Person_1].[FirstName] as [target_Person_FirstName]
+		[t1].[PersonID],
+		[t1].[Diagnosis],
+		[a_Person].[FirstName] as [Person_FirstName],
+		[a_Person_1].[FirstName] as [Person_FirstName_1]
 	FROM
 		[Patient] [t1]
 			LEFT JOIN [Person] [a_Person] ON [t1].[PersonID] = [a_Person].[PersonID]
@@ -22,15 +17,13 @@ USING (
 			LEFT JOIN [Person] [a_Person_1] ON [Target_1].[PersonID] = [a_Person_1].[PersonID]
 ) [Source]
 (
-	[source_PersonID],
-	[source_Diagnosis],
-	[source_Person_FirstName],
-	[target_Person_FirstName]
+	[PersonID],
+	[Diagnosis],
+	[Person_FirstName],
+	[Person_FirstName_1]
 )
-ON ([Target].[PersonID] = [Source].[source_PersonID] AND
-[Source].[source_Diagnosis] LIKE N'%very%' ESCAPE N'~')
-WHEN MATCHED AND [Source].[source_Person_FirstName] = N'first 4' AND
-[Source].[target_Person_FirstName] = N'first 4' THEN DELETE
+ON ([Target].[PersonID] = [Source].[PersonID] AND [Source].[Diagnosis] LIKE N'%very%' ESCAPE N'~')
+WHEN MATCHED AND [Source].[Person_FirstName] = N'first 4' AND [Source].[Person_FirstName_1] = N'first 4' THEN DELETE
 ;
 
 BeforeExecute

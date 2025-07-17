@@ -2,7 +2,6 @@
 -- DB2 DB2.LUW DB2LUW
 
 SELECT
-	"a_Middle"."ParentID",
 	"a_Bottom"."ParentID",
 	"a_Bottom"."ChildID",
 	"a_Bottom"."GrandChildID"

@@ -1,165 +1,19 @@
 ﻿BeforeExecute
--- Sybase.Managed Sybase
+-- Sybase.Managed Sybase (asynchronously)
+DECLARE @p Integer -- Int32
+SET     @p = 2
 
-IF (OBJECT_ID(N'AsyncDataTable') IS NOT NULL)
-	DROP TABLE [AsyncDataTable]
-
-BeforeExecute
--- Sybase.Managed Sybase
-
-IF (OBJECT_ID(N'AsyncDataTable') IS NULL)
-	EXECUTE('
-		CREATE TABLE [AsyncDataTable]
-		(
-			[Id] Int NOT NULL,
-
-			CONSTRAINT [PK_AsyncDataTable] PRIMARY KEY CLUSTERED ([Id])
+SELECT
+	CASE
+		WHEN EXISTS(
+			SELECT
+				*
+			FROM
+				[AsyncDataTable] [c_1]
+			WHERE
+				[c_1].[Id] = @p
 		)
-	')
-
-BeforeExecute
--- Sybase.Managed Sybase
-DECLARE @Id Integer -- Int32
-SET     @Id = 1
-
-INSERT INTO [AsyncDataTable]
-(
-	[Id]
-)
-VALUES
-(
-	@Id
-)
-
-BeforeExecute
--- Sybase.Managed Sybase
-DECLARE @Id Integer -- Int32
-SET     @Id = 2
-
-INSERT INTO [AsyncDataTable]
-(
-	[Id]
-)
-VALUES
-(
-	@Id
-)
-
-BeforeExecute
--- Sybase.Managed Sybase
-DECLARE @Id Integer -- Int32
-SET     @Id = 3
-
-INSERT INTO [AsyncDataTable]
-(
-	[Id]
-)
-VALUES
-(
-	@Id
-)
-
-BeforeExecute
--- Sybase.Managed Sybase
-DECLARE @Id Integer -- Int32
-SET     @Id = 4
-
-INSERT INTO [AsyncDataTable]
-(
-	[Id]
-)
-VALUES
-(
-	@Id
-)
-
-BeforeExecute
--- Sybase.Managed Sybase
-DECLARE @Id Integer -- Int32
-SET     @Id = 5
-
-INSERT INTO [AsyncDataTable]
-(
-	[Id]
-)
-VALUES
-(
-	@Id
-)
-
-BeforeExecute
--- Sybase.Managed Sybase
-DECLARE @Id Integer -- Int32
-SET     @Id = 6
-
-INSERT INTO [AsyncDataTable]
-(
-	[Id]
-)
-VALUES
-(
-	@Id
-)
-
-BeforeExecute
--- Sybase.Managed Sybase
-DECLARE @Id Integer -- Int32
-SET     @Id = 7
-
-INSERT INTO [AsyncDataTable]
-(
-	[Id]
-)
-VALUES
-(
-	@Id
-)
-
-BeforeExecute
--- Sybase.Managed Sybase
-DECLARE @Id Integer -- Int32
-SET     @Id = 8
-
-INSERT INTO [AsyncDataTable]
-(
-	[Id]
-)
-VALUES
-(
-	@Id
-)
-
-BeforeExecute
--- Sybase.Managed Sybase
-DECLARE @Id Integer -- Int32
-SET     @Id = 9
-
-INSERT INTO [AsyncDataTable]
-(
-	[Id]
-)
-VALUES
-(
-	@Id
-)
-
-BeforeExecute
--- Sybase.Managed Sybase
-DECLARE @Id Integer -- Int32
-SET     @Id = 10
-
-INSERT INTO [AsyncDataTable]
-(
-	[Id]
-)
-VALUES
-(
-	@Id
-)
-
-BeforeExecute
--- Sybase.Managed Sybase
-
-IF (OBJECT_ID(N'AsyncDataTable') IS NOT NULL)
-	DROP TABLE [AsyncDataTable]
+			THEN 1
+		ELSE 0
+	END
 

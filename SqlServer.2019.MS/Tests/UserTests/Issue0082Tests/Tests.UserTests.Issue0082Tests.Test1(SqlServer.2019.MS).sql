@@ -35,7 +35,7 @@ BeforeExecute
 
 SELECT
 	[x_1].[ParentID],
-	[x_1].[COUNT_1],
+	[x_1].[CountResult],
 	[x_1].[SUM_1]
 FROM
 	(
@@ -47,7 +47,7 @@ FROM
 					[Child] [od]
 				WHERE
 					[x].[ParentID] = [od].[ParentID]
-			) as [COUNT_1],
+			) as [CountResult],
 			[x].[ParentID],
 			(
 				SELECT
@@ -61,5 +61,5 @@ FROM
 			[Parent] [x]
 	) [x_1]
 WHERE
-	[x_1].[COUNT_1] > 0
+	[x_1].[CountResult] > 0
 

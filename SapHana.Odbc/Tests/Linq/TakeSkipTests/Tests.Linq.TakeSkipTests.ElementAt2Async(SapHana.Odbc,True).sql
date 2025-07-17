@@ -1,6 +1,6 @@
 ﻿BeforeExecute
 -- SapHana.Odbc SapHanaOdbc (asynchronously)
-DECLARE @n  -- Int32
+DECLARE @n Int -- Int32
 SET     @n = 3
 
 SELECT

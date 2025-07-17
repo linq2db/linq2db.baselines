@@ -1,4 +1,4 @@
-﻿--  MariaDB.10.MySqlConnector MySql (asynchronously)
+﻿-- MariaDB.10.MySqlConnector MySql (asynchronously)
 
 SELECT
 	`e`.`IsDeleted`,
@@ -16,7 +16,7 @@ SELECT
 FROM
 	`Customers` `e`
 WHERE
-	(NOT `e`.`IsDeleted` OR NOT `e`.`IsDeleted`) AND `e`.`City` IS NOT NULL
+	NOT `e`.`IsDeleted` AND `e`.`City` IS NOT NULL
 
 
 

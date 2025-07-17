@@ -3,8 +3,8 @@
 
 SELECT
 	CASE
-		WHEN t2."ParentID_1" IS NULL THEN 0
-		ELSE t2."ParentID_1"
+		WHEN t2."cond" IS NULL THEN 0
+		ELSE t2."cond"
 	END,
 	(
 		SELECT
@@ -43,7 +43,6 @@ SELECT
 FROM
 	(
 		SELECT
-			p."ParentID",
 			(
 				SELECT
 					t1."ParentID"
@@ -60,7 +59,8 @@ FROM
 					) t1
 				WHERE
 					ROWNUM <= 1
-			) as "ParentID_1"
+			) as "cond",
+			p."ParentID"
 		FROM
 			"Parent" p
 	) t2

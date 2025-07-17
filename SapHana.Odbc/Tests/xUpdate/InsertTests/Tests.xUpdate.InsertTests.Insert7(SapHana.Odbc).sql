@@ -8,9 +8,9 @@ WHERE
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @id  -- Int32
+DECLARE @id Int -- Int32
 SET     @id = 1001
-DECLARE @ParentID  -- Int32
+DECLARE @ParentID Int -- Int32
 SET     @ParentID = 1
 
 INSERT INTO "Child"
@@ -26,7 +26,7 @@ VALUES
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @id  -- Int32
+DECLARE @id Int -- Int32
 SET     @id = 1001
 
 SELECT

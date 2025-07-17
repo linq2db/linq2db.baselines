@@ -1,10 +1,5 @@
 ﻿BeforeExecute
 -- SqlServer.2008
-
-DBCC CHECKIDENT ('Person', RESEED, 4)
-
-BeforeExecute
--- SqlServer.2008
 DECLARE @FirstName NVarChar(4000) -- String
 SET     @FirstName = N'John'
 DECLARE @LastName NVarChar(4000) -- String
@@ -46,7 +41,7 @@ USING (SELECT @id AS [PersonID]) [s] ON
 WHEN MATCHED THEN
 	UPDATE 
 	SET
-		[Diagnosis] = CAST(Len([t1].[Diagnosis]) + @i AS NVarChar(11))
+		[Diagnosis] = CAST(LEN([t1].[Diagnosis] + N'.') - 1 + @i AS NVarChar(11))
 WHEN NOT MATCHED THEN
 	INSERT
 	(
@@ -74,7 +69,7 @@ USING (SELECT @id AS [PersonID]) [s] ON
 WHEN MATCHED THEN
 	UPDATE 
 	SET
-		[Diagnosis] = CAST(Len([t1].[Diagnosis]) + @i AS NVarChar(11))
+		[Diagnosis] = CAST(LEN([t1].[Diagnosis] + N'.') - 1 + @i AS NVarChar(11))
 WHEN NOT MATCHED THEN
 	INSERT
 	(
@@ -102,7 +97,7 @@ USING (SELECT @id AS [PersonID]) [s] ON
 WHEN MATCHED THEN
 	UPDATE 
 	SET
-		[Diagnosis] = CAST(Len([t1].[Diagnosis]) + @i AS NVarChar(11))
+		[Diagnosis] = CAST(LEN([t1].[Diagnosis] + N'.') - 1 + @i AS NVarChar(11))
 WHEN NOT MATCHED THEN
 	INSERT
 	(

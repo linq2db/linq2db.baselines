@@ -6,13 +6,13 @@ DELETE FROM
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @Id  -- Int32
+DECLARE @Id Int -- Int32
 SET     @Id = 1
-DECLARE @Field1  -- Int32
+DECLARE @Field1 Int -- Int32
 SET     @Field1 = NULL
-DECLARE @Field2  -- Int32
+DECLARE @Field2 Int -- Int32
 SET     @Field2 = NULL
-DECLARE @Field4  -- Int32
+DECLARE @Field4 Int -- Int32
 SET     @Field4 = NULL
 
 INSERT INTO "TestMerge1"
@@ -32,13 +32,13 @@ VALUES
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @Id  -- Int32
+DECLARE @Id Int -- Int32
 SET     @Id = 2
-DECLARE @Field1  -- Int32
+DECLARE @Field1 Int -- Int32
 SET     @Field1 = 2
-DECLARE @Field2  -- Int32
+DECLARE @Field2 Int -- Int32
 SET     @Field2 = NULL
-DECLARE @Field4  -- Int32
+DECLARE @Field4 Int -- Int32
 SET     @Field4 = NULL
 
 INSERT INTO "TestMerge1"
@@ -58,13 +58,13 @@ VALUES
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @Id  -- Int32
+DECLARE @Id Int -- Int32
 SET     @Id = 3
-DECLARE @Field1  -- Int32
+DECLARE @Field1 Int -- Int32
 SET     @Field1 = NULL
-DECLARE @Field2  -- Int32
+DECLARE @Field2 Int -- Int32
 SET     @Field2 = 3
-DECLARE @Field4  -- Int32
+DECLARE @Field4 Int -- Int32
 SET     @Field4 = 203
 
 INSERT INTO "TestMerge1"
@@ -84,13 +84,13 @@ VALUES
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @Id  -- Int32
+DECLARE @Id Int -- Int32
 SET     @Id = 4
-DECLARE @Field1  -- Int32
+DECLARE @Field1 Int -- Int32
 SET     @Field1 = 5
-DECLARE @Field2  -- Int32
+DECLARE @Field2 Int -- Int32
 SET     @Field2 = 6
-DECLARE @Field4  -- Int32
+DECLARE @Field4 Int -- Int32
 SET     @Field4 = NULL
 
 INSERT INTO "TestMerge1"
@@ -116,13 +116,13 @@ DELETE FROM
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @Id  -- Int32
+DECLARE @Id Int -- Int32
 SET     @Id = 3
-DECLARE @Field1  -- Int32
+DECLARE @Field1 Int -- Int32
 SET     @Field1 = NULL
-DECLARE @Field2  -- Int32
+DECLARE @Field2 Int -- Int32
 SET     @Field2 = 3
-DECLARE @Field4  -- Int32
+DECLARE @Field4 Int -- Int32
 SET     @Field4 = NULL
 
 INSERT INTO "TestMerge2"
@@ -142,13 +142,13 @@ VALUES
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @Id  -- Int32
+DECLARE @Id Int -- Int32
 SET     @Id = 4
-DECLARE @Field1  -- Int32
+DECLARE @Field1 Int -- Int32
 SET     @Field1 = 5
-DECLARE @Field2  -- Int32
+DECLARE @Field2 Int -- Int32
 SET     @Field2 = 7
-DECLARE @Field4  -- Int32
+DECLARE @Field4 Int -- Int32
 SET     @Field4 = 214
 
 INSERT INTO "TestMerge2"
@@ -168,13 +168,13 @@ VALUES
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @Id  -- Int32
+DECLARE @Id Int -- Int32
 SET     @Id = 5
-DECLARE @Field1  -- Int32
+DECLARE @Field1 Int -- Int32
 SET     @Field1 = 10
-DECLARE @Field2  -- Int32
+DECLARE @Field2 Int -- Int32
 SET     @Field2 = 4
-DECLARE @Field4  -- Int32
+DECLARE @Field4 Int -- Int32
 SET     @Field4 = NULL
 
 INSERT INTO "TestMerge2"
@@ -194,13 +194,13 @@ VALUES
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @Id  -- Int32
+DECLARE @Id Int -- Int32
 SET     @Id = 6
-DECLARE @Field1  -- Int32
+DECLARE @Field1 Int -- Int32
 SET     @Field1 = NULL
-DECLARE @Field2  -- Int32
+DECLARE @Field2 Int -- Int32
 SET     @Field2 = NULL
-DECLARE @Field4  -- Int32
+DECLARE @Field4 Int -- Int32
 SET     @Field4 = 216
 
 INSERT INTO "TestMerge2"
@@ -224,15 +224,15 @@ BeforeExecute
 MERGE INTO "TestMerge1" "Target"
 USING (
 	SELECT
-		"s"."Field1" as "source_Field1",
-		"s"."Field2" - 1 as "source_Field2"
+		"s"."Field1",
+		"s"."Field2" - 1 as "Field2"
 	FROM
 		"TestMerge2" "s"
 	WHERE
 		"s"."Field1" IS NOT NULL AND "s"."Field2" IS NOT NULL
 ) "Source"
-ON (("Target"."Field1" = "Source"."source_Field1" OR "Target"."Field1" IS NULL AND "Source"."source_Field1" IS NULL) AND
-("Target"."Field2" = "Source"."source_Field2" OR "Target"."Field2" IS NULL AND "Source"."source_Field2" IS NULL))
+ON (("Target"."Field1" = "Source"."Field1" OR "Target"."Field1" IS NULL AND "Source"."Field1" IS NULL) AND
+("Target"."Field2" = "Source"."Field2" OR "Target"."Field2" IS NULL AND "Source"."Field2" IS NULL))
 
 WHEN MATCHED THEN
 UPDATE

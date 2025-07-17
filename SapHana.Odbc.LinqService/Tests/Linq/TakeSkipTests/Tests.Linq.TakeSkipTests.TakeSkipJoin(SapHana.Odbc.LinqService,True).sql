@@ -15,9 +15,9 @@ FROM
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @take  -- Int32
+DECLARE @take Int -- Int32
 SET     @take = 15
-DECLARE @take  -- Int32
+DECLARE @take Int -- Int32
 SET     @take = 15
 
 SELECT

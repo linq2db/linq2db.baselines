@@ -1,9 +1,4 @@
 ﻿BeforeExecute
--- Firebird.4 Firebird4
-
-SET GENERATOR "PersonID" TO 4
-
-BeforeExecute
 BeginTransaction
 BeforeExecute
 -- Firebird.4 Firebird4
@@ -11,19 +6,19 @@ BeforeExecute
 MERGE INTO "Person" "Target"
 USING (
 	SELECT
-		"t1"."PersonID" as "source_ID",
-		"a_Patient"."Diagnosis" as "source_Patient_Diagnosis"
+		"t1"."PersonID" as ID,
+		"a_Patient"."Diagnosis" as "Patient_Diagnosis"
 	FROM
 		"Person" "t1"
 			INNER JOIN "Patient" "a_Patient" ON "t1"."PersonID" = "a_Patient"."PersonID"
 ) "Source"
 (
-	"source_ID",
-	"source_Patient_Diagnosis"
+	ID,
+	"Patient_Diagnosis"
 )
-ON ("Target"."PersonID" = "Source"."source_ID" AND "Target"."FirstName" <> 'first 3')
+ON ("Target"."PersonID" = "Source".ID AND "Target"."FirstName" <> 'first 3')
 
-WHEN NOT MATCHED AND "Source"."source_Patient_Diagnosis" LIKE '%sick%' ESCAPE '~' THEN
+WHEN NOT MATCHED AND "Source"."Patient_Diagnosis" LIKE '%sick%' ESCAPE '~' THEN
 INSERT
 (
 	"FirstName",

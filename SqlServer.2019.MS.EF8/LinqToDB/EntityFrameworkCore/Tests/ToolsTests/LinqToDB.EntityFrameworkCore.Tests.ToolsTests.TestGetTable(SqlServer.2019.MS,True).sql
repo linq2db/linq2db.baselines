@@ -1,4 +1,4 @@
-﻿--  SqlServer.2019 (asynchronously)
+﻿-- SqlServer.2019 (asynchronously)
 
 SELECT
 	[e].[IsDeleted],
@@ -16,7 +16,7 @@ SELECT
 FROM
 	[Customers] [e]
 WHERE
-	([e].[IsDeleted] = 0 OR [e].[IsDeleted] = 0) AND [e].[City] IS NOT NULL
+	[e].[IsDeleted] = 0 AND [e].[City] IS NOT NULL
 
 
 

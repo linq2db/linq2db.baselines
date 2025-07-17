@@ -1,8 +1,8 @@
 ﻿BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @userId  -- Int32
+DECLARE @userId Int -- Int32
 SET     @userId = 32
-DECLARE @childId  -- Int32
+DECLARE @childId Int -- Int32
 SET     @childId = 32
 
 SELECT

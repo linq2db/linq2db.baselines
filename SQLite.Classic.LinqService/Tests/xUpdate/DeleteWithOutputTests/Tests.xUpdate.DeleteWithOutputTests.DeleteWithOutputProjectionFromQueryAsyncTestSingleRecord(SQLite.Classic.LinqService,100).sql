@@ -10,3 +10,14 @@ FROM
 WHERE
 	[s].[Id] = 3
 
+BeforeExecute
+-- SQLite.Classic SQLite (asynchronously)
+
+DELETE FROM
+	[TableWithData]
+WHERE
+	[TableWithData].[Id] = 3
+RETURNING
+	[TableWithData].[Id] + 1,
+	[TableWithData].[ValueStr] || 1
+

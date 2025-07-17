@@ -14,10 +14,10 @@ CREATE TEMPORARY TABLE `TempTable`
 BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80 (asynchronously)
 
-DROP TABLE `TempTable`
+DROP TEMPORARY TABLE `TempTable`
 
 BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80 (asynchronously)
 
-DROP TABLE IF EXISTS `TempTable`
+DROP TEMPORARY TABLE IF EXISTS `TempTable`
 

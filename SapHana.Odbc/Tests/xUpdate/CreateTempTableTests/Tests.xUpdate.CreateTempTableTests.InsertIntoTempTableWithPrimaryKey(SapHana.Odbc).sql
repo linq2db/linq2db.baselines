@@ -10,7 +10,7 @@ CREATE COLUMN TABLE "TableWithPrimaryKey2"
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @Key  -- Int32
+DECLARE @Key Int -- Int32
 SET     @Key = 1
 
 INSERT INTO "TableWithPrimaryKey2"

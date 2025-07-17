@@ -8,5 +8,5 @@ SELECT
 FROM
 	"LinqDataTypes" "t"
 WHERE
-	Lower(Lower(Substr(Hex("t"."GuidValue"), 7, 2) || Substr(Hex("t"."GuidValue"), 5, 2) || Substr(Hex("t"."GuidValue"), 3, 2) || Substr(Hex("t"."GuidValue"), 1, 2) || '-' || Substr(Hex("t"."GuidValue"), 11, 2) || Substr(Hex("t"."GuidValue"), 9, 2) || '-' || Substr(Hex("t"."GuidValue"), 15, 2) || Substr(Hex("t"."GuidValue"), 13, 2) || '-' || Substr(Hex("t"."GuidValue"), 17, 4) || '-' || Substr(Hex("t"."GuidValue"), 21, 12))) = @guid
+	Lower(Lower(substr(hex("t"."GuidValue"), 7, 2) || substr(hex("t"."GuidValue"), 5, 2) || substr(hex("t"."GuidValue"), 3, 2) || substr(hex("t"."GuidValue"), 1, 2) || '-' || substr(hex("t"."GuidValue"), 11, 2) || substr(hex("t"."GuidValue"), 9, 2) || '-' || substr(hex("t"."GuidValue"), 15, 2) || substr(hex("t"."GuidValue"), 13, 2) || '-' || substr(hex("t"."GuidValue"), 17, 4) || '-' || substr(hex("t"."GuidValue"), 21, 12))) = @guid
 

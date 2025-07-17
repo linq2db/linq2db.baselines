@@ -194,13 +194,13 @@ WHERE
 		FROM
 			(
 				SELECT
-					t1."ParentID",
-					t1."Value1"
+					t1."Value1",
+					t1."ParentID"
 				FROM
 					(
 						SELECT
-							x."ParentID",
-							x."Value1"
+							x."Value1",
+							x."ParentID"
 						FROM
 							"Parent" x
 						WHERE

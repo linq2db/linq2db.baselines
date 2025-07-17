@@ -1,10 +1,5 @@
 ﻿BeforeExecute
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql
-
-ALTER TABLE Person AUTO_INCREMENT = 5
-
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
 DECLARE @FirstName VarChar(4) -- String
 SET     @FirstName = 'John'
 DECLARE @LastName VarChar(7) -- String
@@ -52,7 +47,7 @@ VALUES
 	'abc'
 )
 ON DUPLICATE KEY UPDATE
-	`Diagnosis` = CAST(Char_Length(`Diagnosis`) + @i AS CHAR(11))
+	`Diagnosis` = CAST(CHAR_LENGTH(`Diagnosis`) + @i AS CHAR(11))
 
 BeforeExecute
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql (asynchronously)
@@ -72,7 +67,7 @@ VALUES
 	'abc'
 )
 ON DUPLICATE KEY UPDATE
-	`Diagnosis` = CAST(Char_Length(`Diagnosis`) + @i AS CHAR(11))
+	`Diagnosis` = CAST(CHAR_LENGTH(`Diagnosis`) + @i AS CHAR(11))
 
 BeforeExecute
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql (asynchronously)
@@ -92,7 +87,7 @@ VALUES
 	'abc'
 )
 ON DUPLICATE KEY UPDATE
-	`Diagnosis` = CAST(Char_Length(`Diagnosis`) + @i AS CHAR(11))
+	`Diagnosis` = CAST(CHAR_LENGTH(`Diagnosis`) + @i AS CHAR(11))
 
 BeforeExecute
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql (asynchronously)

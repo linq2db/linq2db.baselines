@@ -2,7 +2,7 @@
 -- Access.Jet.OleDb AccessOleDb
 
 SELECT
-	(CStr(COUNT(*)) + ' items have not been processed, e.g. #' + IIF(MIN([s].[PersonID]) IS NOT NULL, CStr(MIN([s].[PersonID])), NULL)) + '.'
+	(CStr(COUNT(*)) + ' items have not been processed, e.g. #' + CStr(MIN([s].[PersonID]))) + '.'
 FROM
 	[Person] [s]
 WHERE

@@ -8,7 +8,7 @@ WHERE
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @arr Binary(4)
+DECLARE @arr VarBinary(4) -- Binary
 SET     @arr = x'01020304'
 
 INSERT INTO "LinqDataTypes"

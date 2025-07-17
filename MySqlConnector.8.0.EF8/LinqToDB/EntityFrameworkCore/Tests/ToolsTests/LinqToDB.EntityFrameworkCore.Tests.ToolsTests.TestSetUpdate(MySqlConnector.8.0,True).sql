@@ -7,7 +7,7 @@ WHERE (@__ef_filter__p_0 OR NOT (`c`.`IsDeleted`)) OR NOT (`c`.`IsDeleted`)
 LIMIT 1
 
 
---  MySql.8.0.MySqlConnector MySql80 (asynchronously)
+-- MySql.8.0.MySqlConnector MySql80 (asynchronously)
 DECLARE @CompanyName VarChar(19) -- String
 SET     @CompanyName = 'Alfreds Futterkiste'
 DECLARE @CustomerId VarChar(5) -- String
@@ -18,7 +18,7 @@ UPDATE
 SET
 	`e`.`CompanyName` = @CompanyName
 WHERE
-	(NOT `e`.`IsDeleted` OR NOT `e`.`IsDeleted`) AND `e`.`CustomerID` = @CustomerId
+	NOT `e`.`IsDeleted` AND `e`.`CustomerID` = @CustomerId
 
 
 

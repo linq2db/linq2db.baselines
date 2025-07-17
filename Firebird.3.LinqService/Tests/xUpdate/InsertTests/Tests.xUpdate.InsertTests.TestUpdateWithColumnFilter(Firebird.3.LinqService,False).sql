@@ -1,10 +1,5 @@
 ﻿BeforeExecute
 -- Firebird.3 Firebird3
-
-SET GENERATOR "PersonID" TO 4
-
-BeforeExecute
--- Firebird.3 Firebird3
 DECLARE @FirstName VarChar(18) -- String
 SET     @FirstName = 'InsertColumnFilter'
 DECLARE @LastName VarChar(8) -- String

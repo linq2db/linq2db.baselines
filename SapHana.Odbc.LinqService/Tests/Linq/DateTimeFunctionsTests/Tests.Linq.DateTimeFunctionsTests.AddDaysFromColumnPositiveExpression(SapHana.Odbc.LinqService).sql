@@ -1,18 +1,18 @@
 ﻿BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @ID  -- Int32
+DECLARE @ID Int -- Int32
 SET     @ID = 5000
 DECLARE @MoneyValue Decimal(1, 0)
 SET     @MoneyValue = 0
-DECLARE @DateTimeValue  -- DateTime
+DECLARE @DateTimeValue DateTime
 SET     @DateTimeValue = '2018-01-03'
-DECLARE @BoolValue  -- Byte
+DECLARE @BoolValue TinyInt(1) -- Byte
 SET     @BoolValue = 0
 DECLARE @GuidValue Char(36) -- AnsiStringFixedLength
 SET     @GuidValue = '00000000-0000-0000-0000-000000000000'
-DECLARE @BinaryValue Binary
+DECLARE @BinaryValue VarBinary -- Binary
 SET     @BinaryValue = NULL
-DECLARE @SmallIntValue  -- Int16
+DECLARE @SmallIntValue SmallInt -- Int16
 SET     @SmallIntValue = 2
 DECLARE @StringValue NVarChar -- String
 SET     @StringValue = NULL
@@ -42,9 +42,9 @@ VALUES
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @part1  -- Int16
+DECLARE @part1 Int -- Int32
 SET     @part1 = 4
-DECLARE @part2  -- Int32
+DECLARE @part2 Int -- Int32
 SET     @part2 = 4
 
 SELECT

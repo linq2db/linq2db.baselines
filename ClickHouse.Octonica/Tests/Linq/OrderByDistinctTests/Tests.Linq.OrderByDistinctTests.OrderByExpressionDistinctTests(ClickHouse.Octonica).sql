@@ -16,5 +16,7 @@ FROM
 	OrderByDistinctData x
 GROUP BY
 	x.DuplicateData
+ORDER BY
+	max(x.OrderData1 % 3)
 LIMIT 0, 3
 

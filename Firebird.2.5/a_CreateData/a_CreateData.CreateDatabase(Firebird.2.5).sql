@@ -1237,7 +1237,7 @@ SELECT 2,1,2,NULL FROM rdb$database UNION ALL
 SELECT 3,2,3,'InheritanceParent2' FROM rdb$database
 
 BeforeExecute
---  Firebird.2.5 Firebird
+-- Firebird.2.5 Firebird
 DECLARE @FIRSTNAME VarChar(255) -- String
 SET     @FIRSTNAME = _utf8 x'4AC3BC7267656E'
 DECLARE @LASTNAME VarChar(255) -- String

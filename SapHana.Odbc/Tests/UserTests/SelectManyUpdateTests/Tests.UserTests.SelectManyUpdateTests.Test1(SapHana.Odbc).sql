@@ -1,6 +1,6 @@
 ﻿BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @Value1  -- Int32
+DECLARE @Value1 BigInt -- Int64
 SET     @Value1 = NULL
 
 UPDATE

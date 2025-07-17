@@ -20,7 +20,7 @@ LIMIT 1
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @dt  -- DateTime
+DECLARE @dt DateTime
 SET     @dt = '2010-12-14 05:00:07.425'
 
 UPDATE
@@ -52,7 +52,7 @@ LIMIT 1
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @pdt  -- DateTime
+DECLARE @pdt DateTime
 SET     @pdt = '2001-01-11 01:11:21.100'
 
 UPDATE

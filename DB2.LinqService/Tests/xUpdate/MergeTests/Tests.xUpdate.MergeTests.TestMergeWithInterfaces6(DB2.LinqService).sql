@@ -6,12 +6,12 @@ USING (VALUES
 	(1,'2')
 ) "Source"
 (
-	"source_Id",
-	"source_Value"
+	"Id",
+	"Value_1"
 )
-ON ("Target"."Id" = "Source"."source_Id")
+ON ("Target"."Id" = "Source"."Id")
 
-WHEN NOT MATCHED AND "Source"."source_Id" > 1 THEN
+WHEN NOT MATCHED AND "Source"."Id" > 1 THEN
 INSERT
 (
 	"Id",
@@ -19,7 +19,7 @@ INSERT
 )
 VALUES
 (
-	"Source"."source_Id",
-	"Source"."source_Value"
+	"Source"."Id",
+	"Source"."Value_1"
 )
 

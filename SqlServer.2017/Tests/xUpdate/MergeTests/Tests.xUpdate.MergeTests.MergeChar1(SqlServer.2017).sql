@@ -1,9 +1,4 @@
 ﻿BeforeExecute
--- SqlServer.2017
-
-DBCC CHECKIDENT ('AllTypes', RESEED, 2)
-
-BeforeExecute
 BeginTransaction
 BeforeExecute
 -- SqlServer.2017
@@ -29,29 +24,29 @@ SET     @id = 3
 MERGE INTO [AllTypes] [Target]
 USING (
 	SELECT
-		[t].[ID] as [source_ID],
-		[t].[charDataType] as [source_charDataType],
-		[t].[ncharDataType] as [source_ncharDataType],
-		[t].[nvarcharDataType] as [source_nvarcharDataType]
+		[t].[ID],
+		[t].[charDataType],
+		[t].[ncharDataType],
+		[t].[nvarcharDataType]
 	FROM
 		[AllTypes] [t]
 	WHERE
 		[t].[ID] = @id
 ) [Source]
 (
-	[source_ID],
-	[source_charDataType],
-	[source_ncharDataType],
-	[source_nvarcharDataType]
+	[ID],
+	[charDataType],
+	[ncharDataType],
+	[nvarcharDataType]
 )
-ON ([Target].[ID] = [Source].[source_ID])
+ON ([Target].[ID] = [Source].[ID])
 
 WHEN MATCHED THEN
 UPDATE
 SET
-	[charDataType] = [Source].[source_charDataType],
-	[ncharDataType] = [Source].[source_ncharDataType],
-	[nvarcharDataType] = [Source].[source_nvarcharDataType]
+	[charDataType] = [Source].[charDataType],
+	[ncharDataType] = [Source].[ncharDataType],
+	[nvarcharDataType] = [Source].[nvarcharDataType]
 
 WHEN NOT MATCHED THEN
 INSERT
@@ -62,9 +57,9 @@ INSERT
 )
 VALUES
 (
-	[Source].[source_charDataType],
-	[Source].[source_ncharDataType],
-	[Source].[source_nvarcharDataType]
+	[Source].[charDataType],
+	[Source].[ncharDataType],
+	[Source].[nvarcharDataType]
 )
 ;
 

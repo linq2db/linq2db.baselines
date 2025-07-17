@@ -1,12 +1,12 @@
 ﻿BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @personId  -- Int32
+DECLARE @personId Int -- Int32
 SET     @personId = 0
-DECLARE @personId  -- Int32
+DECLARE @personId Int -- Int32
 SET     @personId = 2
-DECLARE @personId  -- Int32
+DECLARE @personId Int -- Int32
 SET     @personId = 2
-DECLARE @personId  -- Int32
+DECLARE @personId Int -- Int32
 SET     @personId = 0
 
 SELECT
@@ -15,39 +15,38 @@ SELECT
 			SELECT
 				*
 			FROM
-				"Person" "t7"
-					CROSS JOIN (
-						SELECT
-							COUNT("t1"."PersonID") as "cond"
-						FROM
-							"Patient" "t1"
-						WHERE
-							"t1"."PersonID" = ? AND "t1"."PersonID" NOT IN (
-								SELECT
-									"t2"."PersonID"
-								FROM
-									"Patient" "t2"
-								WHERE
-									"t2"."PersonID" = ?
-							)
-					) "t3"
-					CROSS JOIN (
-						SELECT
-							COUNT("t4"."PersonID") as "cond"
-						FROM
-							"Patient" "t4"
-						WHERE
-							"t4"."PersonID" = ? AND "t4"."PersonID" NOT IN (
-								SELECT
-									"t5"."PersonID"
-								FROM
-									"Patient" "t5"
-								WHERE
-									"t5"."PersonID" = ?
-							)
-					) "t6"
+				"Person" "t1"
 			WHERE
-				"t3"."cond" = 0 AND "t6"."cond" = 0
+				(
+					SELECT
+						COUNT("t2"."PersonID")
+					FROM
+						"Patient" "t2"
+					WHERE
+						"t2"."PersonID" = ? AND "t2"."PersonID" NOT IN (
+							SELECT
+								"t3"."PersonID"
+							FROM
+								"Patient" "t3"
+							WHERE
+								"t3"."PersonID" = ?
+						)
+				) = 0 AND
+				(
+					SELECT
+						COUNT("t4"."PersonID")
+					FROM
+						"Patient" "t4"
+					WHERE
+						"t4"."PersonID" = ? AND "t4"."PersonID" NOT IN (
+							SELECT
+								"t5"."PersonID"
+							FROM
+								"Patient" "t5"
+							WHERE
+								"t5"."PersonID" = ?
+						)
+				) = 0
 		)
 			THEN 1
 		ELSE 0

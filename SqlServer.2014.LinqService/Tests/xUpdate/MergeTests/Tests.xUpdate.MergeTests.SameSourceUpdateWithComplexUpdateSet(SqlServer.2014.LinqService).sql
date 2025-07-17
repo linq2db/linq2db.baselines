@@ -222,39 +222,39 @@ VALUES
 
 BeforeExecute
 -- SqlServer.2014
-DECLARE @name NVarChar(4000) -- String
-SET     @name = N'test'
+DECLARE @name Int -- Int32
+SET     @name = 4
 DECLARE @idx Int -- Int32
 SET     @idx = 6
 
 MERGE INTO [TestMerge1] [Target]
 USING (
 	SELECT
-		[t1].[Id] as [source_Id],
-		[t1].[Field1] as [source_Field1],
-		[t1].[Field3] as [source_Field3],
-		[t1].[Field4] as [source_Field4],
-		[t1].[Field5] as [source_Field5]
+		[t1].[Id],
+		[t1].[Field1],
+		[t1].[Field3],
+		[t1].[Field4],
+		[t1].[Field5]
 	FROM
 		[TestMerge2] [t1]
 ) [Source]
 (
-	[source_Id],
-	[source_Field1],
-	[source_Field3],
-	[source_Field4],
-	[source_Field5]
+	[Id],
+	[Field1],
+	[Field3],
+	[Field4],
+	[Field5]
 )
-ON ([Target].[Id] = [Source].[source_Id])
+ON ([Target].[Id] = [Source].[Id])
 
 WHEN MATCHED THEN
 UPDATE
 SET
-	[Field1] = [Target].[Field1] + [Source].[source_Field1],
-	[Field2] = Len(@name) + @idx,
-	[Field3] = [Target].[Field3] + [Source].[source_Field3],
-	[Field4] = [Target].[Field4] + [Source].[source_Field4],
-	[Field5] = [Target].[Field5] + [Source].[source_Field5]
+	[Field1] = [Target].[Field1] + [Source].[Field1],
+	[Field2] = @name + @idx,
+	[Field3] = [Target].[Field3] + [Source].[Field3],
+	[Field4] = [Target].[Field4] + [Source].[Field4],
+	[Field5] = [Target].[Field5] + [Source].[Field5]
 ;
 
 BeforeExecute

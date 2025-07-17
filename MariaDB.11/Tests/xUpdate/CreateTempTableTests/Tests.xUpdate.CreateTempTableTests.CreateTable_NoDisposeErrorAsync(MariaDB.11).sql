@@ -14,10 +14,10 @@ CREATE TEMPORARY TABLE `TempTable`
 BeforeExecute
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql (asynchronously)
 
-DROP TABLE `TempTable`
+DROP TEMPORARY TABLE `TempTable`
 
 BeforeExecute
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql (asynchronously)
 
-DROP TABLE IF EXISTS `TempTable`
+DROP TEMPORARY TABLE IF EXISTS `TempTable`
 

@@ -2,9 +2,9 @@
 -- SqlServer.2016
 
 SELECT
-	[x_16].[Id],
-	[x_16].[AisleID],
-	[x_16].[MaterialID],
+	[x_8].[Id],
+	[x_8].[AisleID],
+	[x_8].[MaterialID],
 	[a].[Id],
 	[a].[AisleNumber],
 	[a].[PlantID],
@@ -19,7 +19,7 @@ SELECT
 	[m_1].[CategoryDimensions],
 	[m_1].[CategoryQuality],
 	[m_1].[CategoryTemperature],
-	IIF([a1].[Id] IS NOT NULL AND ([a1].[Id] <> '00000000-0000-0000-0000-000000000000' OR [a1].[Id] IS NULL), 1, 0),
+	IIF([a1].[Id] IS NOT NULL AND [a1].[Id] <> '00000000-0000-0000-0000-000000000000', 1, 0),
 	[a1].[Id],
 	[c1].[Id],
 	[c1].[ResourceLabel],
@@ -45,196 +45,132 @@ SELECT
 		SELECT
 			COUNT(*)
 		FROM
-			[InventoryResourceDTO] [x_17]
+			[InventoryResourceDTO] [x_9]
 		WHERE
-			[x_17].[Status] < 0 AND [x_17].[ResourceID] = [c1].[Id]
+			[x_9].[Status] < 0 AND [x_9].[ResourceID] = [c1].[Id]
 	),
 	IIF(EXISTS(
 		SELECT
 			*
 		FROM
-			[RefOutfeedTransportOrderResourceDTO] [x_18]
+			[RefOutfeedTransportOrderResourceDTO] [x_10]
 		WHERE
-			[x_18].[ResourceID] = [c1].[Id]
+			[x_10].[ResourceID] = [c1].[Id]
 	), 1, 0),
 	IIF(EXISTS(
 		SELECT
 			*
 		FROM
-			[InventoryResourceDTO] [x_19]
+			[InventoryResourceDTO] [x_11]
 		WHERE
-			[x_19].[Status] < 0 AND [x_19].[ResourceID] = [c1].[Id] AND
-			([x_19].[InfeedAdviceID] IS NULL OR EXISTS(
+			[x_11].[Status] < 0 AND [x_11].[ResourceID] = [c1].[Id] AND
+			([x_11].[InfeedAdviceID] IS NULL OR EXISTS(
 				SELECT
 					*
 				FROM
 					[InfeedAdvicePositionDTO] [y]
 				WHERE
-					[y].[Id] = [x_19].[InfeedAdviceID] AND [y].[InfeedAdviceType] = 0
+					[y].[Id] = [x_11].[InfeedAdviceID] AND [y].[InfeedAdviceType] = 0
 			))
 	), 1, 0)
 FROM
-	[ChannelDTO] [x_16]
-		INNER JOIN [AisleDTO] [a] ON [x_16].[AisleID] = [a].[Id]
-		LEFT JOIN [MaterialDTO] [m_1] ON [x_16].[MaterialID] = [m_1].[Id]
-		LEFT JOIN [StorageShelfDTO] [a1] ON [x_16].[Id] = [a1].[ChannelID] AND 1 = [a1].[DepthCoordinate]
+	[ChannelDTO] [x_8]
+		INNER JOIN [AisleDTO] [a] ON [x_8].[AisleID] = [a].[Id]
+		LEFT JOIN [MaterialDTO] [m_1] ON [x_8].[MaterialID] = [m_1].[Id]
+		LEFT JOIN [StorageShelfDTO] [a1] ON [x_8].[Id] = [a1].[ChannelID] AND 1 = [a1].[DepthCoordinate]
 		LEFT JOIN [RefResourceStorageShelfDTO] [b1] ON [a1].[Id] = [b1].[StorageShelfID]
 		LEFT JOIN [WmsLoadCarrierDTO] [c1] ON [b1].[ResourceID] = [c1].[Id]
-		CROSS APPLY (
+		LEFT JOIN [InventoryResourceDTO] [i1] ON (
 			SELECT TOP (1)
-				*
+				[x].[Id]
 			FROM
 				[InventoryResourceDTO] [x]
 			WHERE
 				[x].[Status] < 0 AND [x].[ResourceID] = [b1].[ResourceID]
-		) [t1]
-		LEFT JOIN [InventoryResourceDTO] [i1] ON (
+		) = [i1].[Id] AND [i1].[Status] < 0
+		LEFT JOIN [MaterialDTO] [m1] ON [i1].[MaterialID] = [m1].[Id]
+		LEFT JOIN [StorageShelfDTO] [a2] ON [x_8].[Id] = [a2].[ChannelID] AND 2 = [a2].[DepthCoordinate]
+		LEFT JOIN [RefResourceStorageShelfDTO] [b2] ON [a2].[Id] = [b2].[StorageShelfID]
+		LEFT JOIN [WmsLoadCarrierDTO] [c2] ON [b2].[ResourceID] = [c2].[Id]
+		LEFT JOIN [InventoryResourceDTO] [i2] ON (
 			SELECT TOP (1)
 				[x_1].[Id]
 			FROM
 				[InventoryResourceDTO] [x_1]
 			WHERE
-				[x_1].[Status] < 0 AND [x_1].[ResourceID] = [b1].[ResourceID]
-		) = [i1].[Id] AND [i1].[Status] < 0
-		LEFT JOIN [MaterialDTO] [m1] ON [i1].[MaterialID] = [m1].[Id]
-		LEFT JOIN [StorageShelfDTO] [a2] ON [x_16].[Id] = [a2].[ChannelID] AND 2 = [a2].[DepthCoordinate]
-		LEFT JOIN [RefResourceStorageShelfDTO] [b2] ON [a2].[Id] = [b2].[StorageShelfID]
-		LEFT JOIN [WmsLoadCarrierDTO] [c2] ON [b2].[ResourceID] = [c2].[Id]
-		CROSS APPLY (
+				[x_1].[Status] < 0 AND [x_1].[ResourceID] = [b2].[ResourceID]
+		) = [i2].[Id] AND [i2].[Status] < 0
+		LEFT JOIN [MaterialDTO] [m2] ON [i2].[MaterialID] = [m2].[Id]
+		LEFT JOIN [StorageShelfDTO] [a3] ON [x_8].[Id] = [a3].[ChannelID] AND 3 = [a3].[DepthCoordinate]
+		LEFT JOIN [RefResourceStorageShelfDTO] [b3] ON [a3].[Id] = [b3].[StorageShelfID]
+		LEFT JOIN [WmsLoadCarrierDTO] [c3] ON [b3].[ResourceID] = [c3].[Id]
+		LEFT JOIN [InventoryResourceDTO] [i3] ON (
 			SELECT TOP (1)
-				*
+				[x_2].[Id]
 			FROM
 				[InventoryResourceDTO] [x_2]
 			WHERE
-				[x_2].[Status] < 0 AND [x_2].[ResourceID] = [b2].[ResourceID]
-		) [t2]
-		LEFT JOIN [InventoryResourceDTO] [i2] ON (
+				[x_2].[Status] < 0 AND [x_2].[ResourceID] = [b3].[ResourceID]
+		) = [i3].[Id] AND [i3].[Status] < 0
+		LEFT JOIN [MaterialDTO] [m3] ON [i3].[MaterialID] = [m3].[Id]
+		LEFT JOIN [StorageShelfDTO] [a4] ON [x_8].[Id] = [a4].[ChannelID] AND 4 = [a4].[DepthCoordinate]
+		LEFT JOIN [RefResourceStorageShelfDTO] [b4] ON [a4].[Id] = [b4].[StorageShelfID]
+		LEFT JOIN [WmsLoadCarrierDTO] [c4] ON [b4].[ResourceID] = [c4].[Id]
+		LEFT JOIN [InventoryResourceDTO] [i4] ON (
 			SELECT TOP (1)
 				[x_3].[Id]
 			FROM
 				[InventoryResourceDTO] [x_3]
 			WHERE
-				[x_3].[Status] < 0 AND [x_3].[ResourceID] = [b2].[ResourceID]
-		) = [i2].[Id] AND [i2].[Status] < 0
-		LEFT JOIN [MaterialDTO] [m2] ON [i2].[MaterialID] = [m2].[Id]
-		LEFT JOIN [StorageShelfDTO] [a3] ON [x_16].[Id] = [a3].[ChannelID] AND 3 = [a3].[DepthCoordinate]
-		LEFT JOIN [RefResourceStorageShelfDTO] [b3] ON [a3].[Id] = [b3].[StorageShelfID]
-		LEFT JOIN [WmsLoadCarrierDTO] [c3] ON [b3].[ResourceID] = [c3].[Id]
-		CROSS APPLY (
+				[x_3].[Status] < 0 AND [x_3].[ResourceID] = [b4].[ResourceID]
+		) = [i4].[Id] AND [i4].[Status] < 0
+		LEFT JOIN [MaterialDTO] [m4] ON [i4].[MaterialID] = [m4].[Id]
+		LEFT JOIN [StorageShelfDTO] [a5] ON [x_8].[Id] = [a5].[ChannelID] AND 5 = [a5].[DepthCoordinate]
+		LEFT JOIN [RefResourceStorageShelfDTO] [b5] ON [a5].[Id] = [b5].[StorageShelfID]
+		LEFT JOIN [WmsLoadCarrierDTO] [c5] ON [b5].[ResourceID] = [c5].[Id]
+		LEFT JOIN [InventoryResourceDTO] [i5] ON (
 			SELECT TOP (1)
-				*
+				[x_4].[Id]
 			FROM
 				[InventoryResourceDTO] [x_4]
 			WHERE
-				[x_4].[Status] < 0 AND [x_4].[ResourceID] = [b3].[ResourceID]
-		) [t3]
-		LEFT JOIN [InventoryResourceDTO] [i3] ON (
+				[x_4].[Status] < 0 AND [x_4].[ResourceID] = [b5].[ResourceID]
+		) = [i5].[Id] AND [i5].[Status] < 0
+		LEFT JOIN [MaterialDTO] [m5] ON [i5].[MaterialID] = [m5].[Id]
+		LEFT JOIN [StorageShelfDTO] [a6] ON [x_8].[Id] = [a6].[ChannelID] AND 6 = [a6].[DepthCoordinate]
+		LEFT JOIN [RefResourceStorageShelfDTO] [b6] ON [a6].[Id] = [b6].[StorageShelfID]
+		LEFT JOIN [WmsLoadCarrierDTO] [c6] ON [b6].[ResourceID] = [c6].[Id]
+		LEFT JOIN [InventoryResourceDTO] [i6] ON (
 			SELECT TOP (1)
 				[x_5].[Id]
 			FROM
 				[InventoryResourceDTO] [x_5]
 			WHERE
-				[x_5].[Status] < 0 AND [x_5].[ResourceID] = [b3].[ResourceID]
-		) = [i3].[Id] AND [i3].[Status] < 0
-		LEFT JOIN [MaterialDTO] [m3] ON [i3].[MaterialID] = [m3].[Id]
-		LEFT JOIN [StorageShelfDTO] [a4] ON [x_16].[Id] = [a4].[ChannelID] AND 4 = [a4].[DepthCoordinate]
-		LEFT JOIN [RefResourceStorageShelfDTO] [b4] ON [a4].[Id] = [b4].[StorageShelfID]
-		LEFT JOIN [WmsLoadCarrierDTO] [c4] ON [b4].[ResourceID] = [c4].[Id]
-		CROSS APPLY (
+				[x_5].[Status] < 0 AND [x_5].[ResourceID] = [b6].[ResourceID]
+		) = [i6].[Id] AND [i6].[Status] < 0
+		LEFT JOIN [MaterialDTO] [m6] ON [i6].[MaterialID] = [m6].[Id]
+		LEFT JOIN [StorageShelfDTO] [a7] ON [x_8].[Id] = [a7].[ChannelID] AND 7 = [a7].[DepthCoordinate]
+		LEFT JOIN [RefResourceStorageShelfDTO] [b7] ON [a7].[Id] = [b7].[StorageShelfID]
+		LEFT JOIN [WmsLoadCarrierDTO] [c7] ON [b7].[ResourceID] = [c7].[Id]
+		LEFT JOIN [InventoryResourceDTO] [i7] ON (
 			SELECT TOP (1)
-				*
+				[x_6].[Id]
 			FROM
 				[InventoryResourceDTO] [x_6]
 			WHERE
-				[x_6].[Status] < 0 AND [x_6].[ResourceID] = [b4].[ResourceID]
-		) [t4]
-		LEFT JOIN [InventoryResourceDTO] [i4] ON (
+				[x_6].[Status] < 0 AND [x_6].[ResourceID] = [b7].[ResourceID]
+		) = [i7].[Id] AND [i7].[Status] < 0
+		LEFT JOIN [MaterialDTO] [m7] ON [i7].[MaterialID] = [m7].[Id]
+		LEFT JOIN [StorageShelfDTO] [a8] ON [x_8].[Id] = [a8].[ChannelID] AND 8 = [a8].[DepthCoordinate]
+		LEFT JOIN [RefResourceStorageShelfDTO] [b8] ON [a8].[Id] = [b8].[StorageShelfID]
+		LEFT JOIN [WmsLoadCarrierDTO] [c8] ON [b8].[ResourceID] = [c8].[Id]
+		LEFT JOIN [InventoryResourceDTO] [i8] ON (
 			SELECT TOP (1)
 				[x_7].[Id]
 			FROM
 				[InventoryResourceDTO] [x_7]
 			WHERE
-				[x_7].[Status] < 0 AND [x_7].[ResourceID] = [b4].[ResourceID]
-		) = [i4].[Id] AND [i4].[Status] < 0
-		LEFT JOIN [MaterialDTO] [m4] ON [i4].[MaterialID] = [m4].[Id]
-		LEFT JOIN [StorageShelfDTO] [a5] ON [x_16].[Id] = [a5].[ChannelID] AND 5 = [a5].[DepthCoordinate]
-		LEFT JOIN [RefResourceStorageShelfDTO] [b5] ON [a5].[Id] = [b5].[StorageShelfID]
-		LEFT JOIN [WmsLoadCarrierDTO] [c5] ON [b5].[ResourceID] = [c5].[Id]
-		CROSS APPLY (
-			SELECT TOP (1)
-				*
-			FROM
-				[InventoryResourceDTO] [x_8]
-			WHERE
-				[x_8].[Status] < 0 AND [x_8].[ResourceID] = [b5].[ResourceID]
-		) [t5]
-		LEFT JOIN [InventoryResourceDTO] [i5] ON (
-			SELECT TOP (1)
-				[x_9].[Id]
-			FROM
-				[InventoryResourceDTO] [x_9]
-			WHERE
-				[x_9].[Status] < 0 AND [x_9].[ResourceID] = [b5].[ResourceID]
-		) = [i5].[Id] AND [i5].[Status] < 0
-		LEFT JOIN [MaterialDTO] [m5] ON [i5].[MaterialID] = [m5].[Id]
-		LEFT JOIN [StorageShelfDTO] [a6] ON [x_16].[Id] = [a6].[ChannelID] AND 6 = [a6].[DepthCoordinate]
-		LEFT JOIN [RefResourceStorageShelfDTO] [b6] ON [a6].[Id] = [b6].[StorageShelfID]
-		LEFT JOIN [WmsLoadCarrierDTO] [c6] ON [b6].[ResourceID] = [c6].[Id]
-		CROSS APPLY (
-			SELECT TOP (1)
-				*
-			FROM
-				[InventoryResourceDTO] [x_10]
-			WHERE
-				[x_10].[Status] < 0 AND [x_10].[ResourceID] = [b6].[ResourceID]
-		) [t6]
-		LEFT JOIN [InventoryResourceDTO] [i6] ON (
-			SELECT TOP (1)
-				[x_11].[Id]
-			FROM
-				[InventoryResourceDTO] [x_11]
-			WHERE
-				[x_11].[Status] < 0 AND [x_11].[ResourceID] = [b6].[ResourceID]
-		) = [i6].[Id] AND [i6].[Status] < 0
-		LEFT JOIN [MaterialDTO] [m6] ON [i6].[MaterialID] = [m6].[Id]
-		LEFT JOIN [StorageShelfDTO] [a7] ON [x_16].[Id] = [a7].[ChannelID] AND 7 = [a7].[DepthCoordinate]
-		LEFT JOIN [RefResourceStorageShelfDTO] [b7] ON [a7].[Id] = [b7].[StorageShelfID]
-		LEFT JOIN [WmsLoadCarrierDTO] [c7] ON [b7].[ResourceID] = [c7].[Id]
-		CROSS APPLY (
-			SELECT TOP (1)
-				*
-			FROM
-				[InventoryResourceDTO] [x_12]
-			WHERE
-				[x_12].[Status] < 0 AND [x_12].[ResourceID] = [b7].[ResourceID]
-		) [t7]
-		LEFT JOIN [InventoryResourceDTO] [i7] ON (
-			SELECT TOP (1)
-				[x_13].[Id]
-			FROM
-				[InventoryResourceDTO] [x_13]
-			WHERE
-				[x_13].[Status] < 0 AND [x_13].[ResourceID] = [b7].[ResourceID]
-		) = [i7].[Id] AND [i7].[Status] < 0
-		LEFT JOIN [MaterialDTO] [m7] ON [i7].[MaterialID] = [m7].[Id]
-		LEFT JOIN [StorageShelfDTO] [a8] ON [x_16].[Id] = [a8].[ChannelID] AND 8 = [a8].[DepthCoordinate]
-		LEFT JOIN [RefResourceStorageShelfDTO] [b8] ON [a8].[Id] = [b8].[StorageShelfID]
-		LEFT JOIN [WmsLoadCarrierDTO] [c8] ON [b8].[ResourceID] = [c8].[Id]
-		CROSS APPLY (
-			SELECT TOP (1)
-				*
-			FROM
-				[InventoryResourceDTO] [x_14]
-			WHERE
-				[x_14].[Status] < 0 AND [x_14].[ResourceID] = [b8].[ResourceID]
-		) [t8]
-		LEFT JOIN [InventoryResourceDTO] [i8] ON (
-			SELECT TOP (1)
-				[x_15].[Id]
-			FROM
-				[InventoryResourceDTO] [x_15]
-			WHERE
-				[x_15].[Status] < 0 AND [x_15].[ResourceID] = [b8].[ResourceID]
+				[x_7].[Status] < 0 AND [x_7].[ResourceID] = [b8].[ResourceID]
 		) = [i8].[Id] AND [i8].[Status] < 0
 		LEFT JOIN [MaterialDTO] [m8] ON [i8].[MaterialID] = [m8].[Id]
 
@@ -242,9 +178,9 @@ BeforeExecute
 -- SqlServer.2016
 
 SELECT
-	[x_16].[Id],
-	[x_16].[AisleID],
-	[x_16].[MaterialID],
+	[x_8].[Id],
+	[x_8].[AisleID],
+	[x_8].[MaterialID],
 	[a].[Id],
 	[a].[AisleNumber],
 	[a].[PlantID],
@@ -259,7 +195,7 @@ SELECT
 	[m_1].[CategoryDimensions],
 	[m_1].[CategoryQuality],
 	[m_1].[CategoryTemperature],
-	IIF([a1].[Id] IS NOT NULL AND ([a1].[Id] <> '00000000-0000-0000-0000-000000000000' OR [a1].[Id] IS NULL), 1, 0),
+	IIF([a1].[Id] IS NOT NULL AND [a1].[Id] <> '00000000-0000-0000-0000-000000000000', 1, 0),
 	[a1].[Id],
 	[c1].[Id],
 	[c1].[ResourceLabel],
@@ -285,35 +221,35 @@ SELECT
 		SELECT
 			COUNT(*)
 		FROM
-			[InventoryResourceDTO] [x_17]
+			[InventoryResourceDTO] [x_9]
 		WHERE
-			[x_17].[Status] < 0 AND [x_17].[ResourceID] = [c1].[Id]
+			[x_9].[Status] < 0 AND [x_9].[ResourceID] = [c1].[Id]
 	),
 	IIF(EXISTS(
 		SELECT
 			*
 		FROM
-			[RefOutfeedTransportOrderResourceDTO] [x_18]
+			[RefOutfeedTransportOrderResourceDTO] [x_10]
 		WHERE
-			[x_18].[ResourceID] = [c1].[Id]
+			[x_10].[ResourceID] = [c1].[Id]
 	), 1, 0),
 	IIF(EXISTS(
 		SELECT
 			*
 		FROM
-			[InventoryResourceDTO] [x_19]
+			[InventoryResourceDTO] [x_11]
 		WHERE
-			[x_19].[Status] < 0 AND [x_19].[ResourceID] = [c1].[Id] AND
-			([x_19].[InfeedAdviceID] IS NULL OR EXISTS(
+			[x_11].[Status] < 0 AND [x_11].[ResourceID] = [c1].[Id] AND
+			([x_11].[InfeedAdviceID] IS NULL OR EXISTS(
 				SELECT
 					*
 				FROM
 					[InfeedAdvicePositionDTO] [y]
 				WHERE
-					[y].[Id] = [x_19].[InfeedAdviceID] AND [y].[InfeedAdviceType] = 0
+					[y].[Id] = [x_11].[InfeedAdviceID] AND [y].[InfeedAdviceType] = 0
 			))
 	), 1, 0),
-	IIF([a2].[Id] IS NOT NULL AND ([a2].[Id] <> '00000000-0000-0000-0000-000000000000' OR [a2].[Id] IS NULL), 1, 0),
+	IIF([a2].[Id] IS NOT NULL AND [a2].[Id] <> '00000000-0000-0000-0000-000000000000', 1, 0),
 	[a2].[Id],
 	[c2].[Id],
 	[c2].[ResourceLabel],
@@ -339,35 +275,35 @@ SELECT
 		SELECT
 			COUNT(*)
 		FROM
-			[InventoryResourceDTO] [x_20]
+			[InventoryResourceDTO] [x_12]
 		WHERE
-			[x_20].[Status] < 0 AND [x_20].[ResourceID] = [c2].[Id]
+			[x_12].[Status] < 0 AND [x_12].[ResourceID] = [c2].[Id]
 	),
 	IIF(EXISTS(
 		SELECT
 			*
 		FROM
-			[RefOutfeedTransportOrderResourceDTO] [x_21]
+			[RefOutfeedTransportOrderResourceDTO] [x_13]
 		WHERE
-			[x_21].[ResourceID] = [c2].[Id]
+			[x_13].[ResourceID] = [c2].[Id]
 	), 1, 0),
 	IIF(EXISTS(
 		SELECT
 			*
 		FROM
-			[InventoryResourceDTO] [x_22]
+			[InventoryResourceDTO] [x_14]
 		WHERE
-			[x_22].[Status] < 0 AND [x_22].[ResourceID] = [c2].[Id] AND
-			([x_22].[InfeedAdviceID] IS NULL OR EXISTS(
+			[x_14].[Status] < 0 AND [x_14].[ResourceID] = [c2].[Id] AND
+			([x_14].[InfeedAdviceID] IS NULL OR EXISTS(
 				SELECT
 					*
 				FROM
 					[InfeedAdvicePositionDTO] [y_1]
 				WHERE
-					[y_1].[Id] = [x_22].[InfeedAdviceID] AND [y_1].[InfeedAdviceType] = 0
+					[y_1].[Id] = [x_14].[InfeedAdviceID] AND [y_1].[InfeedAdviceType] = 0
 			))
 	), 1, 0),
-	IIF([a3].[Id] IS NOT NULL AND ([a3].[Id] <> '00000000-0000-0000-0000-000000000000' OR [a3].[Id] IS NULL), 1, 0),
+	IIF([a3].[Id] IS NOT NULL AND [a3].[Id] <> '00000000-0000-0000-0000-000000000000', 1, 0),
 	[a3].[Id],
 	[c3].[Id],
 	[c3].[ResourceLabel],
@@ -393,35 +329,35 @@ SELECT
 		SELECT
 			COUNT(*)
 		FROM
-			[InventoryResourceDTO] [x_23]
+			[InventoryResourceDTO] [x_15]
 		WHERE
-			[x_23].[Status] < 0 AND [x_23].[ResourceID] = [c3].[Id]
+			[x_15].[Status] < 0 AND [x_15].[ResourceID] = [c3].[Id]
 	),
 	IIF(EXISTS(
 		SELECT
 			*
 		FROM
-			[RefOutfeedTransportOrderResourceDTO] [x_24]
+			[RefOutfeedTransportOrderResourceDTO] [x_16]
 		WHERE
-			[x_24].[ResourceID] = [c3].[Id]
+			[x_16].[ResourceID] = [c3].[Id]
 	), 1, 0),
 	IIF(EXISTS(
 		SELECT
 			*
 		FROM
-			[InventoryResourceDTO] [x_25]
+			[InventoryResourceDTO] [x_17]
 		WHERE
-			[x_25].[Status] < 0 AND [x_25].[ResourceID] = [c3].[Id] AND
-			([x_25].[InfeedAdviceID] IS NULL OR EXISTS(
+			[x_17].[Status] < 0 AND [x_17].[ResourceID] = [c3].[Id] AND
+			([x_17].[InfeedAdviceID] IS NULL OR EXISTS(
 				SELECT
 					*
 				FROM
 					[InfeedAdvicePositionDTO] [y_2]
 				WHERE
-					[y_2].[Id] = [x_25].[InfeedAdviceID] AND [y_2].[InfeedAdviceType] = 0
+					[y_2].[Id] = [x_17].[InfeedAdviceID] AND [y_2].[InfeedAdviceType] = 0
 			))
 	), 1, 0),
-	IIF([a4].[Id] IS NOT NULL AND ([a4].[Id] <> '00000000-0000-0000-0000-000000000000' OR [a4].[Id] IS NULL), 1, 0),
+	IIF([a4].[Id] IS NOT NULL AND [a4].[Id] <> '00000000-0000-0000-0000-000000000000', 1, 0),
 	[a4].[Id],
 	[c4].[Id],
 	[c4].[ResourceLabel],
@@ -447,35 +383,35 @@ SELECT
 		SELECT
 			COUNT(*)
 		FROM
-			[InventoryResourceDTO] [x_26]
+			[InventoryResourceDTO] [x_18]
 		WHERE
-			[x_26].[Status] < 0 AND [x_26].[ResourceID] = [c4].[Id]
+			[x_18].[Status] < 0 AND [x_18].[ResourceID] = [c4].[Id]
 	),
 	IIF(EXISTS(
 		SELECT
 			*
 		FROM
-			[RefOutfeedTransportOrderResourceDTO] [x_27]
+			[RefOutfeedTransportOrderResourceDTO] [x_19]
 		WHERE
-			[x_27].[ResourceID] = [c4].[Id]
+			[x_19].[ResourceID] = [c4].[Id]
 	), 1, 0),
 	IIF(EXISTS(
 		SELECT
 			*
 		FROM
-			[InventoryResourceDTO] [x_28]
+			[InventoryResourceDTO] [x_20]
 		WHERE
-			[x_28].[Status] < 0 AND [x_28].[ResourceID] = [c4].[Id] AND
-			([x_28].[InfeedAdviceID] IS NULL OR EXISTS(
+			[x_20].[Status] < 0 AND [x_20].[ResourceID] = [c4].[Id] AND
+			([x_20].[InfeedAdviceID] IS NULL OR EXISTS(
 				SELECT
 					*
 				FROM
 					[InfeedAdvicePositionDTO] [y_3]
 				WHERE
-					[y_3].[Id] = [x_28].[InfeedAdviceID] AND [y_3].[InfeedAdviceType] = 0
+					[y_3].[Id] = [x_20].[InfeedAdviceID] AND [y_3].[InfeedAdviceType] = 0
 			))
 	), 1, 0),
-	IIF([a5].[Id] IS NOT NULL AND ([a5].[Id] <> '00000000-0000-0000-0000-000000000000' OR [a5].[Id] IS NULL), 1, 0),
+	IIF([a5].[Id] IS NOT NULL AND [a5].[Id] <> '00000000-0000-0000-0000-000000000000', 1, 0),
 	[a5].[Id],
 	[c5].[Id],
 	[c5].[ResourceLabel],
@@ -501,35 +437,35 @@ SELECT
 		SELECT
 			COUNT(*)
 		FROM
-			[InventoryResourceDTO] [x_29]
+			[InventoryResourceDTO] [x_21]
 		WHERE
-			[x_29].[Status] < 0 AND [x_29].[ResourceID] = [c5].[Id]
+			[x_21].[Status] < 0 AND [x_21].[ResourceID] = [c5].[Id]
 	),
 	IIF(EXISTS(
 		SELECT
 			*
 		FROM
-			[RefOutfeedTransportOrderResourceDTO] [x_30]
+			[RefOutfeedTransportOrderResourceDTO] [x_22]
 		WHERE
-			[x_30].[ResourceID] = [c5].[Id]
+			[x_22].[ResourceID] = [c5].[Id]
 	), 1, 0),
 	IIF(EXISTS(
 		SELECT
 			*
 		FROM
-			[InventoryResourceDTO] [x_31]
+			[InventoryResourceDTO] [x_23]
 		WHERE
-			[x_31].[Status] < 0 AND [x_31].[ResourceID] = [c5].[Id] AND
-			([x_31].[InfeedAdviceID] IS NULL OR EXISTS(
+			[x_23].[Status] < 0 AND [x_23].[ResourceID] = [c5].[Id] AND
+			([x_23].[InfeedAdviceID] IS NULL OR EXISTS(
 				SELECT
 					*
 				FROM
 					[InfeedAdvicePositionDTO] [y_4]
 				WHERE
-					[y_4].[Id] = [x_31].[InfeedAdviceID] AND [y_4].[InfeedAdviceType] = 0
+					[y_4].[Id] = [x_23].[InfeedAdviceID] AND [y_4].[InfeedAdviceType] = 0
 			))
 	), 1, 0),
-	IIF([a6].[Id] IS NOT NULL AND ([a6].[Id] <> '00000000-0000-0000-0000-000000000000' OR [a6].[Id] IS NULL), 1, 0),
+	IIF([a6].[Id] IS NOT NULL AND [a6].[Id] <> '00000000-0000-0000-0000-000000000000', 1, 0),
 	[a6].[Id],
 	[c6].[Id],
 	[c6].[ResourceLabel],
@@ -555,35 +491,35 @@ SELECT
 		SELECT
 			COUNT(*)
 		FROM
-			[InventoryResourceDTO] [x_32]
+			[InventoryResourceDTO] [x_24]
 		WHERE
-			[x_32].[Status] < 0 AND [x_32].[ResourceID] = [c6].[Id]
+			[x_24].[Status] < 0 AND [x_24].[ResourceID] = [c6].[Id]
 	),
 	IIF(EXISTS(
 		SELECT
 			*
 		FROM
-			[RefOutfeedTransportOrderResourceDTO] [x_33]
+			[RefOutfeedTransportOrderResourceDTO] [x_25]
 		WHERE
-			[x_33].[ResourceID] = [c6].[Id]
+			[x_25].[ResourceID] = [c6].[Id]
 	), 1, 0),
 	IIF(EXISTS(
 		SELECT
 			*
 		FROM
-			[InventoryResourceDTO] [x_34]
+			[InventoryResourceDTO] [x_26]
 		WHERE
-			[x_34].[Status] < 0 AND [x_34].[ResourceID] = [c6].[Id] AND
-			([x_34].[InfeedAdviceID] IS NULL OR EXISTS(
+			[x_26].[Status] < 0 AND [x_26].[ResourceID] = [c6].[Id] AND
+			([x_26].[InfeedAdviceID] IS NULL OR EXISTS(
 				SELECT
 					*
 				FROM
 					[InfeedAdvicePositionDTO] [y_5]
 				WHERE
-					[y_5].[Id] = [x_34].[InfeedAdviceID] AND [y_5].[InfeedAdviceType] = 0
+					[y_5].[Id] = [x_26].[InfeedAdviceID] AND [y_5].[InfeedAdviceType] = 0
 			))
 	), 1, 0),
-	IIF([a7].[Id] IS NOT NULL AND ([a7].[Id] <> '00000000-0000-0000-0000-000000000000' OR [a7].[Id] IS NULL), 1, 0),
+	IIF([a7].[Id] IS NOT NULL AND [a7].[Id] <> '00000000-0000-0000-0000-000000000000', 1, 0),
 	[a7].[Id],
 	[c7].[Id],
 	[c7].[ResourceLabel],
@@ -609,35 +545,35 @@ SELECT
 		SELECT
 			COUNT(*)
 		FROM
-			[InventoryResourceDTO] [x_35]
+			[InventoryResourceDTO] [x_27]
 		WHERE
-			[x_35].[Status] < 0 AND [x_35].[ResourceID] = [c7].[Id]
+			[x_27].[Status] < 0 AND [x_27].[ResourceID] = [c7].[Id]
 	),
 	IIF(EXISTS(
 		SELECT
 			*
 		FROM
-			[RefOutfeedTransportOrderResourceDTO] [x_36]
+			[RefOutfeedTransportOrderResourceDTO] [x_28]
 		WHERE
-			[x_36].[ResourceID] = [c7].[Id]
+			[x_28].[ResourceID] = [c7].[Id]
 	), 1, 0),
 	IIF(EXISTS(
 		SELECT
 			*
 		FROM
-			[InventoryResourceDTO] [x_37]
+			[InventoryResourceDTO] [x_29]
 		WHERE
-			[x_37].[Status] < 0 AND [x_37].[ResourceID] = [c7].[Id] AND
-			([x_37].[InfeedAdviceID] IS NULL OR EXISTS(
+			[x_29].[Status] < 0 AND [x_29].[ResourceID] = [c7].[Id] AND
+			([x_29].[InfeedAdviceID] IS NULL OR EXISTS(
 				SELECT
 					*
 				FROM
 					[InfeedAdvicePositionDTO] [y_6]
 				WHERE
-					[y_6].[Id] = [x_37].[InfeedAdviceID] AND [y_6].[InfeedAdviceType] = 0
+					[y_6].[Id] = [x_29].[InfeedAdviceID] AND [y_6].[InfeedAdviceType] = 0
 			))
 	), 1, 0),
-	IIF([a8].[Id] IS NOT NULL AND ([a8].[Id] <> '00000000-0000-0000-0000-000000000000' OR [a8].[Id] IS NULL), 1, 0),
+	IIF([a8].[Id] IS NOT NULL AND [a8].[Id] <> '00000000-0000-0000-0000-000000000000', 1, 0),
 	[a8].[Id],
 	[c8].[Id],
 	[c8].[ResourceLabel],
@@ -663,196 +599,132 @@ SELECT
 		SELECT
 			COUNT(*)
 		FROM
-			[InventoryResourceDTO] [x_38]
+			[InventoryResourceDTO] [x_30]
 		WHERE
-			[x_38].[Status] < 0 AND [x_38].[ResourceID] = [c8].[Id]
+			[x_30].[Status] < 0 AND [x_30].[ResourceID] = [c8].[Id]
 	),
 	IIF(EXISTS(
 		SELECT
 			*
 		FROM
-			[RefOutfeedTransportOrderResourceDTO] [x_39]
+			[RefOutfeedTransportOrderResourceDTO] [x_31]
 		WHERE
-			[x_39].[ResourceID] = [c8].[Id]
+			[x_31].[ResourceID] = [c8].[Id]
 	), 1, 0),
 	IIF(EXISTS(
 		SELECT
 			*
 		FROM
-			[InventoryResourceDTO] [x_40]
+			[InventoryResourceDTO] [x_32]
 		WHERE
-			[x_40].[Status] < 0 AND [x_40].[ResourceID] = [c8].[Id] AND
-			([x_40].[InfeedAdviceID] IS NULL OR EXISTS(
+			[x_32].[Status] < 0 AND [x_32].[ResourceID] = [c8].[Id] AND
+			([x_32].[InfeedAdviceID] IS NULL OR EXISTS(
 				SELECT
 					*
 				FROM
 					[InfeedAdvicePositionDTO] [y_7]
 				WHERE
-					[y_7].[Id] = [x_40].[InfeedAdviceID] AND [y_7].[InfeedAdviceType] = 0
+					[y_7].[Id] = [x_32].[InfeedAdviceID] AND [y_7].[InfeedAdviceType] = 0
 			))
 	), 1, 0)
 FROM
-	[ChannelDTO] [x_16]
-		INNER JOIN [AisleDTO] [a] ON [x_16].[AisleID] = [a].[Id]
-		LEFT JOIN [MaterialDTO] [m_1] ON [x_16].[MaterialID] = [m_1].[Id]
-		LEFT JOIN [StorageShelfDTO] [a1] ON [x_16].[Id] = [a1].[ChannelID] AND 1 = [a1].[DepthCoordinate]
+	[ChannelDTO] [x_8]
+		INNER JOIN [AisleDTO] [a] ON [x_8].[AisleID] = [a].[Id]
+		LEFT JOIN [MaterialDTO] [m_1] ON [x_8].[MaterialID] = [m_1].[Id]
+		LEFT JOIN [StorageShelfDTO] [a1] ON [x_8].[Id] = [a1].[ChannelID] AND 1 = [a1].[DepthCoordinate]
 		LEFT JOIN [RefResourceStorageShelfDTO] [b1] ON [a1].[Id] = [b1].[StorageShelfID]
 		LEFT JOIN [WmsLoadCarrierDTO] [c1] ON [b1].[ResourceID] = [c1].[Id]
-		CROSS APPLY (
+		LEFT JOIN [InventoryResourceDTO] [i1] ON (
 			SELECT TOP (1)
-				*
+				[x].[Id]
 			FROM
 				[InventoryResourceDTO] [x]
 			WHERE
 				[x].[Status] < 0 AND [x].[ResourceID] = [b1].[ResourceID]
-		) [t1]
-		LEFT JOIN [InventoryResourceDTO] [i1] ON (
+		) = [i1].[Id] AND [i1].[Status] < 0
+		LEFT JOIN [MaterialDTO] [m1] ON [i1].[MaterialID] = [m1].[Id]
+		LEFT JOIN [StorageShelfDTO] [a2] ON [x_8].[Id] = [a2].[ChannelID] AND 2 = [a2].[DepthCoordinate]
+		LEFT JOIN [RefResourceStorageShelfDTO] [b2] ON [a2].[Id] = [b2].[StorageShelfID]
+		LEFT JOIN [WmsLoadCarrierDTO] [c2] ON [b2].[ResourceID] = [c2].[Id]
+		LEFT JOIN [InventoryResourceDTO] [i2] ON (
 			SELECT TOP (1)
 				[x_1].[Id]
 			FROM
 				[InventoryResourceDTO] [x_1]
 			WHERE
-				[x_1].[Status] < 0 AND [x_1].[ResourceID] = [b1].[ResourceID]
-		) = [i1].[Id] AND [i1].[Status] < 0
-		LEFT JOIN [MaterialDTO] [m1] ON [i1].[MaterialID] = [m1].[Id]
-		LEFT JOIN [StorageShelfDTO] [a2] ON [x_16].[Id] = [a2].[ChannelID] AND 2 = [a2].[DepthCoordinate]
-		LEFT JOIN [RefResourceStorageShelfDTO] [b2] ON [a2].[Id] = [b2].[StorageShelfID]
-		LEFT JOIN [WmsLoadCarrierDTO] [c2] ON [b2].[ResourceID] = [c2].[Id]
-		CROSS APPLY (
+				[x_1].[Status] < 0 AND [x_1].[ResourceID] = [b2].[ResourceID]
+		) = [i2].[Id] AND [i2].[Status] < 0
+		LEFT JOIN [MaterialDTO] [m2] ON [i2].[MaterialID] = [m2].[Id]
+		LEFT JOIN [StorageShelfDTO] [a3] ON [x_8].[Id] = [a3].[ChannelID] AND 3 = [a3].[DepthCoordinate]
+		LEFT JOIN [RefResourceStorageShelfDTO] [b3] ON [a3].[Id] = [b3].[StorageShelfID]
+		LEFT JOIN [WmsLoadCarrierDTO] [c3] ON [b3].[ResourceID] = [c3].[Id]
+		LEFT JOIN [InventoryResourceDTO] [i3] ON (
 			SELECT TOP (1)
-				*
+				[x_2].[Id]
 			FROM
 				[InventoryResourceDTO] [x_2]
 			WHERE
-				[x_2].[Status] < 0 AND [x_2].[ResourceID] = [b2].[ResourceID]
-		) [t2]
-		LEFT JOIN [InventoryResourceDTO] [i2] ON (
+				[x_2].[Status] < 0 AND [x_2].[ResourceID] = [b3].[ResourceID]
+		) = [i3].[Id] AND [i3].[Status] < 0
+		LEFT JOIN [MaterialDTO] [m3] ON [i3].[MaterialID] = [m3].[Id]
+		LEFT JOIN [StorageShelfDTO] [a4] ON [x_8].[Id] = [a4].[ChannelID] AND 4 = [a4].[DepthCoordinate]
+		LEFT JOIN [RefResourceStorageShelfDTO] [b4] ON [a4].[Id] = [b4].[StorageShelfID]
+		LEFT JOIN [WmsLoadCarrierDTO] [c4] ON [b4].[ResourceID] = [c4].[Id]
+		LEFT JOIN [InventoryResourceDTO] [i4] ON (
 			SELECT TOP (1)
 				[x_3].[Id]
 			FROM
 				[InventoryResourceDTO] [x_3]
 			WHERE
-				[x_3].[Status] < 0 AND [x_3].[ResourceID] = [b2].[ResourceID]
-		) = [i2].[Id] AND [i2].[Status] < 0
-		LEFT JOIN [MaterialDTO] [m2] ON [i2].[MaterialID] = [m2].[Id]
-		LEFT JOIN [StorageShelfDTO] [a3] ON [x_16].[Id] = [a3].[ChannelID] AND 3 = [a3].[DepthCoordinate]
-		LEFT JOIN [RefResourceStorageShelfDTO] [b3] ON [a3].[Id] = [b3].[StorageShelfID]
-		LEFT JOIN [WmsLoadCarrierDTO] [c3] ON [b3].[ResourceID] = [c3].[Id]
-		CROSS APPLY (
+				[x_3].[Status] < 0 AND [x_3].[ResourceID] = [b4].[ResourceID]
+		) = [i4].[Id] AND [i4].[Status] < 0
+		LEFT JOIN [MaterialDTO] [m4] ON [i4].[MaterialID] = [m4].[Id]
+		LEFT JOIN [StorageShelfDTO] [a5] ON [x_8].[Id] = [a5].[ChannelID] AND 5 = [a5].[DepthCoordinate]
+		LEFT JOIN [RefResourceStorageShelfDTO] [b5] ON [a5].[Id] = [b5].[StorageShelfID]
+		LEFT JOIN [WmsLoadCarrierDTO] [c5] ON [b5].[ResourceID] = [c5].[Id]
+		LEFT JOIN [InventoryResourceDTO] [i5] ON (
 			SELECT TOP (1)
-				*
+				[x_4].[Id]
 			FROM
 				[InventoryResourceDTO] [x_4]
 			WHERE
-				[x_4].[Status] < 0 AND [x_4].[ResourceID] = [b3].[ResourceID]
-		) [t3]
-		LEFT JOIN [InventoryResourceDTO] [i3] ON (
+				[x_4].[Status] < 0 AND [x_4].[ResourceID] = [b5].[ResourceID]
+		) = [i5].[Id] AND [i5].[Status] < 0
+		LEFT JOIN [MaterialDTO] [m5] ON [i5].[MaterialID] = [m5].[Id]
+		LEFT JOIN [StorageShelfDTO] [a6] ON [x_8].[Id] = [a6].[ChannelID] AND 6 = [a6].[DepthCoordinate]
+		LEFT JOIN [RefResourceStorageShelfDTO] [b6] ON [a6].[Id] = [b6].[StorageShelfID]
+		LEFT JOIN [WmsLoadCarrierDTO] [c6] ON [b6].[ResourceID] = [c6].[Id]
+		LEFT JOIN [InventoryResourceDTO] [i6] ON (
 			SELECT TOP (1)
 				[x_5].[Id]
 			FROM
 				[InventoryResourceDTO] [x_5]
 			WHERE
-				[x_5].[Status] < 0 AND [x_5].[ResourceID] = [b3].[ResourceID]
-		) = [i3].[Id] AND [i3].[Status] < 0
-		LEFT JOIN [MaterialDTO] [m3] ON [i3].[MaterialID] = [m3].[Id]
-		LEFT JOIN [StorageShelfDTO] [a4] ON [x_16].[Id] = [a4].[ChannelID] AND 4 = [a4].[DepthCoordinate]
-		LEFT JOIN [RefResourceStorageShelfDTO] [b4] ON [a4].[Id] = [b4].[StorageShelfID]
-		LEFT JOIN [WmsLoadCarrierDTO] [c4] ON [b4].[ResourceID] = [c4].[Id]
-		CROSS APPLY (
+				[x_5].[Status] < 0 AND [x_5].[ResourceID] = [b6].[ResourceID]
+		) = [i6].[Id] AND [i6].[Status] < 0
+		LEFT JOIN [MaterialDTO] [m6] ON [i6].[MaterialID] = [m6].[Id]
+		LEFT JOIN [StorageShelfDTO] [a7] ON [x_8].[Id] = [a7].[ChannelID] AND 7 = [a7].[DepthCoordinate]
+		LEFT JOIN [RefResourceStorageShelfDTO] [b7] ON [a7].[Id] = [b7].[StorageShelfID]
+		LEFT JOIN [WmsLoadCarrierDTO] [c7] ON [b7].[ResourceID] = [c7].[Id]
+		LEFT JOIN [InventoryResourceDTO] [i7] ON (
 			SELECT TOP (1)
-				*
+				[x_6].[Id]
 			FROM
 				[InventoryResourceDTO] [x_6]
 			WHERE
-				[x_6].[Status] < 0 AND [x_6].[ResourceID] = [b4].[ResourceID]
-		) [t4]
-		LEFT JOIN [InventoryResourceDTO] [i4] ON (
+				[x_6].[Status] < 0 AND [x_6].[ResourceID] = [b7].[ResourceID]
+		) = [i7].[Id] AND [i7].[Status] < 0
+		LEFT JOIN [MaterialDTO] [m7] ON [i7].[MaterialID] = [m7].[Id]
+		LEFT JOIN [StorageShelfDTO] [a8] ON [x_8].[Id] = [a8].[ChannelID] AND 8 = [a8].[DepthCoordinate]
+		LEFT JOIN [RefResourceStorageShelfDTO] [b8] ON [a8].[Id] = [b8].[StorageShelfID]
+		LEFT JOIN [WmsLoadCarrierDTO] [c8] ON [b8].[ResourceID] = [c8].[Id]
+		LEFT JOIN [InventoryResourceDTO] [i8] ON (
 			SELECT TOP (1)
 				[x_7].[Id]
 			FROM
 				[InventoryResourceDTO] [x_7]
 			WHERE
-				[x_7].[Status] < 0 AND [x_7].[ResourceID] = [b4].[ResourceID]
-		) = [i4].[Id] AND [i4].[Status] < 0
-		LEFT JOIN [MaterialDTO] [m4] ON [i4].[MaterialID] = [m4].[Id]
-		LEFT JOIN [StorageShelfDTO] [a5] ON [x_16].[Id] = [a5].[ChannelID] AND 5 = [a5].[DepthCoordinate]
-		LEFT JOIN [RefResourceStorageShelfDTO] [b5] ON [a5].[Id] = [b5].[StorageShelfID]
-		LEFT JOIN [WmsLoadCarrierDTO] [c5] ON [b5].[ResourceID] = [c5].[Id]
-		CROSS APPLY (
-			SELECT TOP (1)
-				*
-			FROM
-				[InventoryResourceDTO] [x_8]
-			WHERE
-				[x_8].[Status] < 0 AND [x_8].[ResourceID] = [b5].[ResourceID]
-		) [t5]
-		LEFT JOIN [InventoryResourceDTO] [i5] ON (
-			SELECT TOP (1)
-				[x_9].[Id]
-			FROM
-				[InventoryResourceDTO] [x_9]
-			WHERE
-				[x_9].[Status] < 0 AND [x_9].[ResourceID] = [b5].[ResourceID]
-		) = [i5].[Id] AND [i5].[Status] < 0
-		LEFT JOIN [MaterialDTO] [m5] ON [i5].[MaterialID] = [m5].[Id]
-		LEFT JOIN [StorageShelfDTO] [a6] ON [x_16].[Id] = [a6].[ChannelID] AND 6 = [a6].[DepthCoordinate]
-		LEFT JOIN [RefResourceStorageShelfDTO] [b6] ON [a6].[Id] = [b6].[StorageShelfID]
-		LEFT JOIN [WmsLoadCarrierDTO] [c6] ON [b6].[ResourceID] = [c6].[Id]
-		CROSS APPLY (
-			SELECT TOP (1)
-				*
-			FROM
-				[InventoryResourceDTO] [x_10]
-			WHERE
-				[x_10].[Status] < 0 AND [x_10].[ResourceID] = [b6].[ResourceID]
-		) [t6]
-		LEFT JOIN [InventoryResourceDTO] [i6] ON (
-			SELECT TOP (1)
-				[x_11].[Id]
-			FROM
-				[InventoryResourceDTO] [x_11]
-			WHERE
-				[x_11].[Status] < 0 AND [x_11].[ResourceID] = [b6].[ResourceID]
-		) = [i6].[Id] AND [i6].[Status] < 0
-		LEFT JOIN [MaterialDTO] [m6] ON [i6].[MaterialID] = [m6].[Id]
-		LEFT JOIN [StorageShelfDTO] [a7] ON [x_16].[Id] = [a7].[ChannelID] AND 7 = [a7].[DepthCoordinate]
-		LEFT JOIN [RefResourceStorageShelfDTO] [b7] ON [a7].[Id] = [b7].[StorageShelfID]
-		LEFT JOIN [WmsLoadCarrierDTO] [c7] ON [b7].[ResourceID] = [c7].[Id]
-		CROSS APPLY (
-			SELECT TOP (1)
-				*
-			FROM
-				[InventoryResourceDTO] [x_12]
-			WHERE
-				[x_12].[Status] < 0 AND [x_12].[ResourceID] = [b7].[ResourceID]
-		) [t7]
-		LEFT JOIN [InventoryResourceDTO] [i7] ON (
-			SELECT TOP (1)
-				[x_13].[Id]
-			FROM
-				[InventoryResourceDTO] [x_13]
-			WHERE
-				[x_13].[Status] < 0 AND [x_13].[ResourceID] = [b7].[ResourceID]
-		) = [i7].[Id] AND [i7].[Status] < 0
-		LEFT JOIN [MaterialDTO] [m7] ON [i7].[MaterialID] = [m7].[Id]
-		LEFT JOIN [StorageShelfDTO] [a8] ON [x_16].[Id] = [a8].[ChannelID] AND 8 = [a8].[DepthCoordinate]
-		LEFT JOIN [RefResourceStorageShelfDTO] [b8] ON [a8].[Id] = [b8].[StorageShelfID]
-		LEFT JOIN [WmsLoadCarrierDTO] [c8] ON [b8].[ResourceID] = [c8].[Id]
-		CROSS APPLY (
-			SELECT TOP (1)
-				*
-			FROM
-				[InventoryResourceDTO] [x_14]
-			WHERE
-				[x_14].[Status] < 0 AND [x_14].[ResourceID] = [b8].[ResourceID]
-		) [t8]
-		LEFT JOIN [InventoryResourceDTO] [i8] ON (
-			SELECT TOP (1)
-				[x_15].[Id]
-			FROM
-				[InventoryResourceDTO] [x_15]
-			WHERE
-				[x_15].[Status] < 0 AND [x_15].[ResourceID] = [b8].[ResourceID]
+				[x_7].[Status] < 0 AND [x_7].[ResourceID] = [b8].[ResourceID]
 		) = [i8].[Id] AND [i8].[Status] < 0
 		LEFT JOIN [MaterialDTO] [m8] ON [i8].[MaterialID] = [m8].[Id]
 

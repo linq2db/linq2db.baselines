@@ -25,7 +25,7 @@ FROM
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @cond  -- Int32
+DECLARE @cond Int -- Int32
 SET     @cond = 0
 
 SELECT
@@ -54,7 +54,7 @@ FROM
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @cond  -- Int32
+DECLARE @cond Int -- Int32
 SET     @cond = 1
 
 SELECT
@@ -108,7 +108,7 @@ FROM
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @cond  -- Int32
+DECLARE @cond Int -- Int32
 SET     @cond = 0
 
 SELECT
@@ -137,7 +137,7 @@ FROM
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @cond  -- Int32
+DECLARE @cond Int -- Int32
 SET     @cond = 1
 
 SELECT

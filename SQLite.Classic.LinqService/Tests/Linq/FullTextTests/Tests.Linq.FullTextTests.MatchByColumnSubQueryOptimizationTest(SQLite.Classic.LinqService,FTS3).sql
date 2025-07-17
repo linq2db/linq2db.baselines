@@ -7,12 +7,12 @@ SELECT
 FROM
 	[FTS3_TABLE] [r]
 WHERE
-	EXISTS(
+	[r].[rowid] IN (
 		SELECT
-			*
+			[r_1].[rowid]
 		FROM
 			[FTS3_TABLE] [r_1]
 		WHERE
-			[r_1].[text1] MATCH 'found' AND ([r].[rowid] = [r_1].[rowid] OR [r].[rowid] IS NULL AND [r_1].[rowid] IS NULL)
+			[r_1].[text1] MATCH 'found'
 	)
 

@@ -220,3 +220,56 @@ VALUES
 	@Field4
 )
 
+BeforeExecute
+-- SqlServer.2008 (asynchronously)
+
+MERGE INTO [TestMerge1] [Target]
+USING (
+	SELECT
+		[t1].[Id],
+		[t1].[Field1],
+		[t1].[Field2],
+		[t1].[Field4]
+	FROM
+		[TestMerge2] [t1]
+	WHERE
+		[t1].[Id] = 5
+) [Source]
+(
+	[Id],
+	[Field1],
+	[Field2],
+	[Field4]
+)
+ON ([Target].[Id] = [Source].[Id])
+
+WHEN NOT MATCHED THEN
+INSERT
+(
+	[Id],
+	[Field1],
+	[Field2],
+	[Field4]
+)
+VALUES
+(
+	[Source].[Id],
+	[Source].[Field1],
+	[Source].[Field2],
+	[Source].[Field4]
+)
+OUTPUT
+	DELETED.[Id],
+	DELETED.[Field1],
+	DELETED.[Field2],
+	DELETED.[Field3],
+	DELETED.[Field4],
+	DELETED.[Field5],
+	INSERTED.[Id],
+	INSERTED.[Field1],
+	INSERTED.[Field2],
+	INSERTED.[Field3],
+	INSERTED.[Field4],
+	INSERTED.[Field5]
+;
+

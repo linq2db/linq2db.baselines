@@ -1,15 +1,5 @@
 ﻿BeforeExecute
 -- Oracle.23.Managed Oracle.Managed Oracle12
-
-DROP SEQUENCE "AllTypesSeq"
-
-BeforeExecute
--- Oracle.23.Managed Oracle.Managed Oracle12
-
-CREATE SEQUENCE "AllTypesSeq" MINVALUE 1 START WITH 3
-
-BeforeExecute
--- Oracle.23.Managed Oracle.Managed Oracle12
 DECLARE @val Blob -- Object
 SET     @val = HEXTORAW('010203')
 DECLARE @val_1 Raw(3) -- Binary

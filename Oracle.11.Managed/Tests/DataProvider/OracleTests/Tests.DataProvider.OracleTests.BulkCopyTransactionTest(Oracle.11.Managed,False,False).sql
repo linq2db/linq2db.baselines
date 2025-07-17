@@ -1,3 +1,0 @@
-﻿BeforeExecute
-INSERT BULK BULKCOPYTABLE(ID)
-

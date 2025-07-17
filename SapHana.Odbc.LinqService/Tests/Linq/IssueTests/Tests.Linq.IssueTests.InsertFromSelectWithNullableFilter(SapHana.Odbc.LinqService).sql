@@ -22,7 +22,7 @@ FROM
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @cond  -- Int16
+DECLARE @cond SmallInt -- Int16
 SET     @cond = 1234
 
 INSERT INTO "InsertIssueTest"

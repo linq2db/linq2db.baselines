@@ -734,7 +734,7 @@ SELECT
 FROM
 	"TypeTable`2" r
 WHERE
-	r."Column"::jsonb = :value::jsonb AND r."ColumnNullable"::jsonb IS NULL
+	r."Column"::jsonb = :value::jsonb AND r."ColumnNullable" IS NULL
 
 BeforeExecute
 -- PostgreSQL.15 PostgreSQL
@@ -745,7 +745,7 @@ SELECT
 FROM
 	"TypeTable`2" r
 WHERE
-	r."Column"::jsonb = 'null'::jsonb AND r."ColumnNullable"::jsonb IS NULL
+	r."Column"::jsonb = 'null'::jsonb AND r."ColumnNullable" IS NULL
 
 BeforeExecute
 -- PostgreSQL.15 PostgreSQL
@@ -782,7 +782,7 @@ SELECT
 FROM
 	"TypeTable`2" r
 WHERE
-	r."Column"::jsonb = :value::jsonb AND r."ColumnNullable"::jsonb IS NULL
+	r."Column"::jsonb = :value::jsonb AND r."ColumnNullable" IS NULL
 
 BeforeExecute
 -- PostgreSQL.15 PostgreSQL
@@ -812,7 +812,7 @@ SELECT
 FROM
 	"TypeTable`2" r
 WHERE
-	r."Column"::jsonb = :value::jsonb AND r."ColumnNullable"::jsonb IS NULL
+	r."Column"::jsonb = :value::jsonb AND r."ColumnNullable" IS NULL
 
 BeforeExecute
 -- PostgreSQL.15 PostgreSQL
@@ -834,7 +834,7 @@ SELECT
 FROM
 	"TypeTable`2" r
 WHERE
-	r."Column"::jsonb = :value::jsonb AND r."ColumnNullable"::jsonb IS NULL
+	r."Column"::jsonb = :value::jsonb AND r."ColumnNullable" IS NULL
 
 BeforeExecute
 -- PostgreSQL.15 PostgreSQL (asynchronously)
@@ -856,7 +856,7 @@ SELECT
 FROM
 	"TypeTable`2" r
 WHERE
-	r."Column"::jsonb = :value::jsonb AND r."ColumnNullable"::jsonb IS NULL
+	r."Column"::jsonb = :value::jsonb AND r."ColumnNullable" IS NULL
 
 BeforeExecute
 -- PostgreSQL.15 PostgreSQL

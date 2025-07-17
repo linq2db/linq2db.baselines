@@ -1,10 +1,8 @@
 ﻿BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @id  -- Int32
+DECLARE @id Int -- Int32
 SET     @id = 1
-DECLARE @id  -- Int32
-SET     @id = 1
-DECLARE @id  -- Int32
+DECLARE @id Int -- Int32
 SET     @id = 1
 
 SELECT
@@ -12,5 +10,5 @@ SELECT
 FROM
 	"Person" "t1"
 WHERE
-	"t1"."PersonID" = ? OR "t1"."PersonID" <= ? OR "t1"."PersonID" = ?
+	"t1"."PersonID" = ? OR "t1"."PersonID" <= ?
 

@@ -6,13 +6,13 @@ DELETE FROM
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @Id  -- Int32
+DECLARE @Id Int -- Int32
 SET     @Id = 1
-DECLARE @Field1  -- Int32
+DECLARE @Field1 Int -- Int32
 SET     @Field1 = NULL
-DECLARE @Field2  -- Int32
+DECLARE @Field2 Int -- Int32
 SET     @Field2 = NULL
-DECLARE @Field4  -- Int32
+DECLARE @Field4 Int -- Int32
 SET     @Field4 = NULL
 
 INSERT INTO "TestMerge1"
@@ -32,13 +32,13 @@ VALUES
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @Id  -- Int32
+DECLARE @Id Int -- Int32
 SET     @Id = 2
-DECLARE @Field1  -- Int32
+DECLARE @Field1 Int -- Int32
 SET     @Field1 = 2
-DECLARE @Field2  -- Int32
+DECLARE @Field2 Int -- Int32
 SET     @Field2 = NULL
-DECLARE @Field4  -- Int32
+DECLARE @Field4 Int -- Int32
 SET     @Field4 = NULL
 
 INSERT INTO "TestMerge1"
@@ -58,13 +58,13 @@ VALUES
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @Id  -- Int32
+DECLARE @Id Int -- Int32
 SET     @Id = 3
-DECLARE @Field1  -- Int32
+DECLARE @Field1 Int -- Int32
 SET     @Field1 = NULL
-DECLARE @Field2  -- Int32
+DECLARE @Field2 Int -- Int32
 SET     @Field2 = 3
-DECLARE @Field4  -- Int32
+DECLARE @Field4 Int -- Int32
 SET     @Field4 = 203
 
 INSERT INTO "TestMerge1"
@@ -84,13 +84,13 @@ VALUES
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @Id  -- Int32
+DECLARE @Id Int -- Int32
 SET     @Id = 4
-DECLARE @Field1  -- Int32
+DECLARE @Field1 Int -- Int32
 SET     @Field1 = 5
-DECLARE @Field2  -- Int32
+DECLARE @Field2 Int -- Int32
 SET     @Field2 = 6
-DECLARE @Field4  -- Int32
+DECLARE @Field4 Int -- Int32
 SET     @Field4 = NULL
 
 INSERT INTO "TestMerge1"
@@ -116,13 +116,13 @@ DELETE FROM
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @Id  -- Int32
+DECLARE @Id Int -- Int32
 SET     @Id = 3
-DECLARE @Field1  -- Int32
+DECLARE @Field1 Int -- Int32
 SET     @Field1 = NULL
-DECLARE @Field2  -- Int32
+DECLARE @Field2 Int -- Int32
 SET     @Field2 = 3
-DECLARE @Field4  -- Int32
+DECLARE @Field4 Int -- Int32
 SET     @Field4 = NULL
 
 INSERT INTO "TestMerge2"
@@ -142,13 +142,13 @@ VALUES
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @Id  -- Int32
+DECLARE @Id Int -- Int32
 SET     @Id = 4
-DECLARE @Field1  -- Int32
+DECLARE @Field1 Int -- Int32
 SET     @Field1 = 5
-DECLARE @Field2  -- Int32
+DECLARE @Field2 Int -- Int32
 SET     @Field2 = 7
-DECLARE @Field4  -- Int32
+DECLARE @Field4 Int -- Int32
 SET     @Field4 = 214
 
 INSERT INTO "TestMerge2"
@@ -168,13 +168,13 @@ VALUES
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @Id  -- Int32
+DECLARE @Id Int -- Int32
 SET     @Id = 5
-DECLARE @Field1  -- Int32
+DECLARE @Field1 Int -- Int32
 SET     @Field1 = 10
-DECLARE @Field2  -- Int32
+DECLARE @Field2 Int -- Int32
 SET     @Field2 = 4
-DECLARE @Field4  -- Int32
+DECLARE @Field4 Int -- Int32
 SET     @Field4 = NULL
 
 INSERT INTO "TestMerge2"
@@ -194,13 +194,13 @@ VALUES
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @Id  -- Int32
+DECLARE @Id Int -- Int32
 SET     @Id = 6
-DECLARE @Field1  -- Int32
+DECLARE @Field1 Int -- Int32
 SET     @Field1 = NULL
-DECLARE @Field2  -- Int32
+DECLARE @Field2 Int -- Int32
 SET     @Field2 = NULL
-DECLARE @Field4  -- Int32
+DECLARE @Field4 Int -- Int32
 SET     @Field4 = 216
 
 INSERT INTO "TestMerge2"
@@ -224,16 +224,16 @@ BeforeExecute
 MERGE INTO "TestMerge1" "Target"
 USING (
 	SELECT
-		"t1"."Id" as "source_OtherId",
-		"t1"."Id" + "t1"."Id" as "source_OtherField3",
-		"t1"."Field2" as "source_OtherField2",
-		"t1"."Field1" as "source_OtherField1",
-		"t1"."Id" + "t1"."Id" as "source_OtherField4",
-		"t1"."Field5" as "source_OtherField5"
+		"t1"."Id" as "OtherId",
+		"t1"."Id" + "t1"."Id" as "OtherField3",
+		"t1"."Field2" as "OtherField2",
+		"t1"."Field1" as "OtherField1",
+		"t1"."Id" + "t1"."Id" as "OtherField4",
+		"t1"."Field5" as "OtherField5"
 	FROM
 		"TestMerge2" "t1"
 ) "Source"
-ON ("Target"."Id" = "Source"."source_OtherId")
+ON ("Target"."Id" = "Source"."OtherId")
 
 WHEN NOT MATCHED THEN
 INSERT
@@ -247,12 +247,12 @@ INSERT
 )
 VALUES
 (
-	"Source"."source_OtherId",
-	"Source"."source_OtherField3",
-	"Source"."source_OtherField2",
-	"Source"."source_OtherField1",
-	"Source"."source_OtherField4",
-	"Source"."source_OtherField5"
+	"Source"."OtherId",
+	"Source"."OtherField3",
+	"Source"."OtherField2",
+	"Source"."OtherField1",
+	"Source"."OtherField4",
+	"Source"."OtherField5"
 )
 
 BeforeExecute

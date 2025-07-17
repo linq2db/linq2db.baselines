@@ -31,7 +31,7 @@ FROM
 					[x].[InventoryResourceID] = [ir].[Id]
 			), 0) + (
 				SELECT
-					CAST(COUNT(*) AS Decimal(38, 17))
+					CAST(COUNT(*) AS Decimal(18, 10))
 				FROM
 					[RefOutfeedTransportOrderResourceDTO] [x_1]
 				WHERE
@@ -78,7 +78,7 @@ FROM
 			1 = 0
 		UNION
 		SELECT
-			CAST(0 AS Decimal(38, 17)) as [RefQty],
+			CAST(0 AS Decimal(18, 10)) as [RefQty],
 			[ir_1].[Quantity],
 			[ir_1].[Id],
 			[ir_1].[Status],

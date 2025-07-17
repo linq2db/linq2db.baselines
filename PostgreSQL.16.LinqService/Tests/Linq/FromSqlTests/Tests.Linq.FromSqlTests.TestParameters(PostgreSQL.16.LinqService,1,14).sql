@@ -2,6 +2,8 @@
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 DECLARE @p Bigint -- Int64
 SET     @p = 5
+DECLARE @p_1 Integer -- Int32
+SET     @p_1 = 14
 
 SELECT
 	c_1.value,
@@ -10,7 +12,7 @@ FROM
 	(
 		SELECT * FROM
 		sample_class
-		where id >= :p and id < 14
+		where id >= :p and id < :p_1
 	) c_1
 WHERE
 	c_1.id > 10

@@ -15,7 +15,7 @@ SELECT TOP (1)
 	CAST([x].[Prop_ushort] AS NVarChar(Max)),
 	CAST([x].[Prop_uint] AS NVarChar(Max)),
 	CAST([x].[Prop_ulong] AS NVarChar(Max)),
-	CAST([x].[Prop_Guid] AS NVarChar(36)),
+	Lower(CAST([x].[Prop_Guid] AS Char(36))),
 	CAST([x].[Prop_DateTime] AS NVarChar(27)),
 	CAST([x].[NullableProp_bool] AS NVarChar(1)),
 	CAST([x].[NullableProp_byte] AS NVarChar(3)),
@@ -30,7 +30,7 @@ SELECT TOP (1)
 	CAST([x].[NullableProp_ushort] AS NVarChar(Max)),
 	CAST([x].[NullableProp_uint] AS NVarChar(Max)),
 	CAST([x].[NullableProp_ulong] AS NVarChar(Max)),
-	CAST([x].[NullableProp_Guid] AS NVarChar(36)),
+	Lower(CAST([x].[NullableProp_Guid] AS Char(36))),
 	CAST([x].[NullableProp_DateTime] AS NVarChar(27))
 FROM
 	[ToStringConvertibleTypes] [x]
@@ -55,7 +55,7 @@ SELECT TOP (1)
 	[x].[Prop_ushort],
 	[x].[Prop_uint],
 	[x].[Prop_ulong],
-	[x].[Prop_Guid],
+	Lower(CAST([x].[Prop_Guid] AS Char(36))),
 	[x].[Prop_DateTime],
 	CASE
 		WHEN [x].[NullableProp_bool] IS NULL THEN N''
@@ -74,7 +74,7 @@ SELECT TOP (1)
 	[x].[NullableProp_ushort],
 	[x].[NullableProp_uint],
 	[x].[NullableProp_ulong],
-	[x].[NullableProp_Guid],
+	Lower(CAST([x].[NullableProp_Guid] AS Char(36))),
 	[x].[NullableProp_DateTime]
 FROM
 	[ToStringConvertibleTypes] [x]

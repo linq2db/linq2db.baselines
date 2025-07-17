@@ -1,10 +1,5 @@
 ﻿BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
-ALTER TABLE Person AUTO_INCREMENT = 5
-
-BeforeExecute
--- MySql.8.0 MySql.8.0.MySql.Data MySql80
 DECLARE @FirstName VarChar(4) -- String
 SET     @FirstName = 'John'
 DECLARE @LastName VarChar(7) -- String
@@ -52,7 +47,7 @@ VALUES
 	'abc'
 )
 ON DUPLICATE KEY UPDATE
-	`Diagnosis` = CAST(Char_Length(`Diagnosis`) + @i AS CHAR(11))
+	`Diagnosis` = CAST(CHAR_LENGTH(`Diagnosis`) + @i AS CHAR(11))
 
 BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80 (asynchronously)
@@ -72,7 +67,7 @@ VALUES
 	'abc'
 )
 ON DUPLICATE KEY UPDATE
-	`Diagnosis` = CAST(Char_Length(`Diagnosis`) + @i AS CHAR(11))
+	`Diagnosis` = CAST(CHAR_LENGTH(`Diagnosis`) + @i AS CHAR(11))
 
 BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80 (asynchronously)
@@ -92,7 +87,7 @@ VALUES
 	'abc'
 )
 ON DUPLICATE KEY UPDATE
-	`Diagnosis` = CAST(Char_Length(`Diagnosis`) + @i AS CHAR(11))
+	`Diagnosis` = CAST(CHAR_LENGTH(`Diagnosis`) + @i AS CHAR(11))
 
 BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80 (asynchronously)

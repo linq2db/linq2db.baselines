@@ -10,8 +10,8 @@ SET
 FROM
 	(
 		SELECT
-			x."EmployeeId",
-			x."Name"
+			x."Name",
+			x."EmployeeId"
 		FROM
 			"Issue4193Person" x
 		WHERE

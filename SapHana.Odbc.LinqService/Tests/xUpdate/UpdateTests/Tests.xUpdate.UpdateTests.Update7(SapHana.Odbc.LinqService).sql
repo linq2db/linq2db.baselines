@@ -1,8 +1,8 @@
 ﻿BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @ParentID  -- Int32
+DECLARE @ParentID Int -- Int32
 SET     @ParentID = 1001
-DECLARE @Value1  -- Int32
+DECLARE @Value1 Int -- Int32
 SET     @Value1 = 1
 
 INSERT INTO "Parent"
@@ -18,7 +18,7 @@ VALUES
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @id  -- Int32
+DECLARE @id Int -- Int32
 SET     @id = 1001
 
 SELECT
@@ -30,9 +30,9 @@ WHERE
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @Value1  -- Int32
+DECLARE @Value1 Int -- Int32
 SET     @Value1 = 2
-DECLARE @id  -- Int32
+DECLARE @id Int -- Int32
 SET     @id = 1001
 
 UPDATE
@@ -44,7 +44,7 @@ WHERE
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @id  -- Int32
+DECLARE @id Int -- Int32
 SET     @id = 1001
 
 SELECT
@@ -56,9 +56,9 @@ WHERE
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @Value1  -- Int32
+DECLARE @Value1 Int -- Int32
 SET     @Value1 = 3
-DECLARE @id  -- Int32
+DECLARE @id Int -- Int32
 SET     @id = 1001
 
 UPDATE
@@ -70,7 +70,7 @@ WHERE
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @id  -- Int32
+DECLARE @id Int -- Int32
 SET     @id = 1001
 
 SELECT

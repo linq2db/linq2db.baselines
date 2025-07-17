@@ -3,11 +3,7 @@
 
 SELECT
 	[c_1].[ParentID] as [cond],
-	CASE
-		WHEN [c_1].[ParentID] IS NOT NULL AND [a_Parent].[ParentID] IS NOT NULL
-			THEN 1
-		ELSE 0
-	END as [cond_1],
+	[a_Parent].[ParentID] as [cond_1],
 	[a_Parent].[Value1]
 FROM
 	[Parent] [t1]

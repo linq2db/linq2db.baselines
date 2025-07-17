@@ -6,7 +6,7 @@ FROM [Employees] AS [e]
 WHERE (@__ef_filter__p_0 = CAST(1 AS bit) OR [e].[IsDeleted] = CAST(0 AS bit) OR [e].[IsDeleted] = CAST(0 AS bit)) AND [e].[EmployeeID] = @__test_0
 
 
---  SqlServer.2019
+-- SqlServer.2019
 DECLARE @test Int -- Int32
 SET     @test = 1
 
@@ -33,7 +33,7 @@ SELECT
 FROM
 	[Employees] [e]
 WHERE
-	([e].[IsDeleted] = 0 OR [e].[IsDeleted] = 0) AND [e].[EmployeeID] = @test
+	[e].[IsDeleted] = 0 AND [e].[EmployeeID] = @test
 
 
 

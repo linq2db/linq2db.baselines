@@ -5,7 +5,7 @@ SELECT
 	[t11].[Field1]
 FROM
 	[Table5] [t1]
-		LEFT JOIN [Table5] [a_Table5Ref] ON [t1].[Field5] = [a_Table5Ref].[ProblematicalField]
+		INNER JOIN [Table5] [a_Table5Ref] ON [t1].[Field5] = [a_Table5Ref].[ProblematicalField]
 		INNER JOIN [Table4] [t2] ON [t1].[ProblematicalField] = [t2].[Field4]
 		INNER JOIN [Table1] [a_Table1s] ON [t2].[Field3] = [a_Table1s].[Field3]
 		LEFT JOIN [Table4] [a_Table4Ref] ON [a_Table1s].[Field3] = [a_Table4Ref].[Field3]

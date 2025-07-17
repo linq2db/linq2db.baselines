@@ -1,43 +1,11 @@
 ﻿BeforeExecute
--- SqlServer.2016
+-- SqlServer.2016 (asynchronously)
 
-DROP TABLE IF EXISTS [DynamicParent]
-
-BeforeExecute
--- SqlServer.2016
-
-IF (OBJECT_ID(N'[DynamicParent]', N'U') IS NULL)
-	CREATE TABLE [DynamicParent]
-	(
-		[ID] Int  NOT NULL IDENTITY,
-
-		CONSTRAINT [PK_DynamicParent] PRIMARY KEY CLUSTERED ([ID])
-	)
-
-BeforeExecute
--- SqlServer.2016
-
-DROP TABLE IF EXISTS [DynamicChild]
-
-BeforeExecute
--- SqlServer.2016
-
-IF (OBJECT_ID(N'[DynamicChild]', N'U') IS NULL)
-	CREATE TABLE [DynamicChild]
-	(
-		[ID]       Int  NOT NULL IDENTITY,
-		[ParentID] Int  NOT NULL,
-
-		CONSTRAINT [PK_DynamicChild] PRIMARY KEY CLUSTERED ([ID])
-	)
-
-BeforeExecute
--- SqlServer.2016
-
-DROP TABLE IF EXISTS [DynamicChild]
-
-BeforeExecute
--- SqlServer.2016
-
-DROP TABLE IF EXISTS [DynamicParent]
+SELECT
+	[it].[ID]
+FROM
+	[DynamicParent] [it]
+		INNER JOIN [DynamicChild] [a_Child] ON [it].[ID] = [a_Child].[ParentID]
+WHERE
+	[a_Child].[ID] = 123
 

@@ -27,6 +27,21 @@ RETURNING
 	"PersonID" INTO :IDENTITY_PARAMETER
 
 BeforeExecute
+-- Oracle.19.Managed Oracle.Managed Oracle12 (asynchronously)
+
+SELECT
+	p."FirstName",
+	p."PersonID" as ID,
+	p."LastName",
+	p."MiddleName",
+	p."Gender"
+FROM
+	"Person" p
+WHERE
+	p."FirstName" = 'John' AND p."LastName" = 'Shepard'
+FETCH NEXT 2 ROWS ONLY
+
+BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12
 
 DELETE FROM

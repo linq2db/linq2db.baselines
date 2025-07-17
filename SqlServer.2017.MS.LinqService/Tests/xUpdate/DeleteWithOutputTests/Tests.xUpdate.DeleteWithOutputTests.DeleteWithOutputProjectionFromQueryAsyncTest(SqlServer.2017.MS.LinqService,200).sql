@@ -10,3 +10,15 @@ FROM
 WHERE
 	[s].[Id] > 3
 
+BeforeExecute
+-- SqlServer.2017.MS SqlServer.2017 (asynchronously)
+
+DELETE [s]
+OUTPUT
+	DELETED.[Id] + 1,
+	DELETED.[ValueStr] + CAST(1 AS NVarChar(11))
+FROM
+	[TableWithData] [s]
+WHERE
+	[s].[Id] > 3
+

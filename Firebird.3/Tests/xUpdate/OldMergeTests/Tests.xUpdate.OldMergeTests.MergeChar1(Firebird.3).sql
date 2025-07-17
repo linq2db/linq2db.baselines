@@ -1,9 +1,4 @@
 ﻿BeforeExecute
--- Firebird.3 Firebird3
-
-SET GENERATOR "AllTypesID" TO 2
-
-BeforeExecute
 BeginTransaction
 BeforeExecute
 -- Firebird.3 Firebird3
@@ -45,26 +40,26 @@ SET     @id = 3
 MERGE INTO "AllTypes" "Target"
 USING (
 	SELECT
-		"t".ID as "source_ID",
-		"t"."charDataType" as "source_charDataType",
-		"t"."ncharDataType" as "source_ncharDataType"
+		"t".ID,
+		"t"."charDataType",
+		"t"."ncharDataType"
 	FROM
 		"AllTypes" "t"
 	WHERE
 		"t".ID = @id
 ) "Source"
 (
-	"source_ID",
-	"source_charDataType",
-	"source_ncharDataType"
+	ID,
+	"charDataType",
+	"ncharDataType"
 )
-ON ("Target".ID = "Source"."source_ID")
+ON ("Target".ID = "Source".ID)
 
 WHEN MATCHED THEN
 UPDATE
 SET
-	"charDataType" = "Source"."source_charDataType",
-	"ncharDataType" = "Source"."source_ncharDataType"
+	"charDataType" = "Source"."charDataType",
+	"ncharDataType" = "Source"."ncharDataType"
 
 WHEN NOT MATCHED THEN
 INSERT
@@ -74,8 +69,8 @@ INSERT
 )
 VALUES
 (
-	"Source"."source_charDataType",
-	"Source"."source_ncharDataType"
+	"Source"."charDataType",
+	"Source"."ncharDataType"
 )
 
 BeforeExecute

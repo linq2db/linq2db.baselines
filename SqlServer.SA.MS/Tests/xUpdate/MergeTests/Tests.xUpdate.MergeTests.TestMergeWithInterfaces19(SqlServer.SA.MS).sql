@@ -6,9 +6,9 @@ USING (VALUES
 	(1)
 ) [Source]
 (
-	[source_Id]
+	[Id]
 )
-ON ([Target].[Id] = [Source].[source_Id])
+ON ([Target].[Id] = [Source].[Id])
 
 WHEN NOT MATCHED By Source AND [Target].[Id] = 3 THEN UPDATE
 SET

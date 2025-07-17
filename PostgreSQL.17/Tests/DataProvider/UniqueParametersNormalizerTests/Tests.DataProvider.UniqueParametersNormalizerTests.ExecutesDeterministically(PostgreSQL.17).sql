@@ -62,18 +62,3 @@ FROM
 WHERE
 	row1_2."Field1" LIKE :search_2 ESCAPE '~'
 
-BeforeExecute
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL (asynchronously)
-
-DROP TABLE IF EXISTS table3
-
-BeforeExecute
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL (asynchronously)
-
-DROP TABLE IF EXISTS table2
-
-BeforeExecute
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL (asynchronously)
-
-DROP TABLE IF EXISTS table1
-

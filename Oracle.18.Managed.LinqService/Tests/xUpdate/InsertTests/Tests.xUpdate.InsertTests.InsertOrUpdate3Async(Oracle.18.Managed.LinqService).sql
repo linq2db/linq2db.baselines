@@ -1,15 +1,5 @@
 ﻿BeforeExecute
 -- Oracle.18.Managed Oracle.Managed Oracle12
-
-DROP SEQUENCE "PersonSeq"
-
-BeforeExecute
--- Oracle.18.Managed Oracle.Managed Oracle12
-
-CREATE SEQUENCE "PersonSeq" MINVALUE 1 START WITH 5
-
-BeforeExecute
--- Oracle.18.Managed Oracle.Managed Oracle12
 DECLARE @FirstName Varchar2(4) -- String
 SET     @FirstName = 'John'
 DECLARE @LastName Varchar2(7) -- String
@@ -37,4 +27,102 @@ VALUES
 )
 RETURNING 
 	"PersonID" INTO :IDENTITY_PARAMETER
+
+BeforeExecute
+-- Oracle.18.Managed Oracle.Managed Oracle12 (asynchronously)
+DECLARE @id Int32
+SET     @id = 5
+DECLARE @i Int32
+SET     @i = 0
+
+MERGE INTO "Patient" t1
+USING (SELECT :id AS "PersonID" FROM SYS.DUAL) s ON
+(
+	t1."PersonID" = s."PersonID"
+)
+WHEN MATCHED THEN
+	UPDATE 
+	SET
+		"Diagnosis" = CAST(Length(t1."Diagnosis") + :i AS VarChar(255))
+WHEN NOT MATCHED THEN
+	INSERT
+	(
+		"PersonID",
+		"Diagnosis"
+	)
+	VALUES
+	(
+		:id,
+		'abc'
+	)
+
+BeforeExecute
+-- Oracle.18.Managed Oracle.Managed Oracle12 (asynchronously)
+DECLARE @id Int32
+SET     @id = 5
+DECLARE @i Int32
+SET     @i = 1
+
+MERGE INTO "Patient" t1
+USING (SELECT :id AS "PersonID" FROM SYS.DUAL) s ON
+(
+	t1."PersonID" = s."PersonID"
+)
+WHEN MATCHED THEN
+	UPDATE 
+	SET
+		"Diagnosis" = CAST(Length(t1."Diagnosis") + :i AS VarChar(255))
+WHEN NOT MATCHED THEN
+	INSERT
+	(
+		"PersonID",
+		"Diagnosis"
+	)
+	VALUES
+	(
+		:id,
+		'abc'
+	)
+
+BeforeExecute
+-- Oracle.18.Managed Oracle.Managed Oracle12 (asynchronously)
+DECLARE @id Int32
+SET     @id = 5
+DECLARE @i Int32
+SET     @i = 2
+
+MERGE INTO "Patient" t1
+USING (SELECT :id AS "PersonID" FROM SYS.DUAL) s ON
+(
+	t1."PersonID" = s."PersonID"
+)
+WHEN MATCHED THEN
+	UPDATE 
+	SET
+		"Diagnosis" = CAST(Length(t1."Diagnosis") + :i AS VarChar(255))
+WHEN NOT MATCHED THEN
+	INSERT
+	(
+		"PersonID",
+		"Diagnosis"
+	)
+	VALUES
+	(
+		:id,
+		'abc'
+	)
+
+BeforeExecute
+-- Oracle.18.Managed Oracle.Managed Oracle12 (asynchronously)
+DECLARE @id Int32
+SET     @id = 5
+
+SELECT
+	p."PersonID",
+	p."Diagnosis"
+FROM
+	"Patient" p
+WHERE
+	p."PersonID" = :id
+FETCH NEXT 2 ROWS ONLY
 

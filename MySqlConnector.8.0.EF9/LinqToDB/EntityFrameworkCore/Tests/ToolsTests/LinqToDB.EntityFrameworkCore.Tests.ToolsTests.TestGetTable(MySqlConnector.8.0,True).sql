@@ -1,4 +1,4 @@
-﻿--  MySql.8.0.MySqlConnector MySql80 (asynchronously)
+﻿-- MySql.8.0.MySqlConnector MySql80 (asynchronously)
 
 SELECT
 	`e`.`IsDeleted`,
@@ -16,7 +16,7 @@ SELECT
 FROM
 	`Customers` `e`
 WHERE
-	(NOT `e`.`IsDeleted` OR NOT `e`.`IsDeleted`) AND `e`.`City` IS NOT NULL
+	NOT `e`.`IsDeleted` AND `e`.`City` IS NOT NULL
 
 
 

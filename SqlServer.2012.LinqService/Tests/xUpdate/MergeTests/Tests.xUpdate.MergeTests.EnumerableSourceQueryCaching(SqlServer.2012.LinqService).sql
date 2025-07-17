@@ -13,12 +13,12 @@ USING (VALUES
 	(0,1,2,4)
 ) [Source]
 (
-	[source_Id],
-	[source_Field1],
-	[source_Field2],
-	[source_Field4]
+	[Id],
+	[Field1],
+	[Field2],
+	[Field4]
 )
-ON ([Target].[Id] = [Source].[source_Id])
+ON ([Target].[Id] = [Source].[Id])
 
 WHEN NOT MATCHED THEN
 INSERT
@@ -30,10 +30,10 @@ INSERT
 )
 VALUES
 (
-	[Source].[source_Id],
-	[Source].[source_Field1],
-	[Source].[source_Field2],
-	[Source].[source_Field4]
+	[Source].[Id],
+	[Source].[Field1],
+	[Source].[Field2],
+	[Source].[Field4]
 )
 ;
 
@@ -67,12 +67,12 @@ USING (VALUES
 	(10,11,12,14)
 ) [Source]
 (
-	[source_Id],
-	[source_Field1],
-	[source_Field2],
-	[source_Field4]
+	[Id],
+	[Field1],
+	[Field2],
+	[Field4]
 )
-ON ([Target].[Id] = [Source].[source_Id])
+ON ([Target].[Id] = [Source].[Id])
 
 WHEN NOT MATCHED THEN
 INSERT
@@ -84,10 +84,10 @@ INSERT
 )
 VALUES
 (
-	[Source].[source_Id],
-	[Source].[source_Field1],
-	[Source].[source_Field2],
-	[Source].[source_Field4]
+	[Source].[Id],
+	[Source].[Field1],
+	[Source].[Field2],
+	[Source].[Field4]
 )
 ;
 
@@ -121,12 +121,12 @@ USING (VALUES
 	(20,21,22,24), (30,31,32,34)
 ) [Source]
 (
-	[source_Id],
-	[source_Field1],
-	[source_Field2],
-	[source_Field4]
+	[Id],
+	[Field1],
+	[Field2],
+	[Field4]
 )
-ON ([Target].[Id] = [Source].[source_Id])
+ON ([Target].[Id] = [Source].[Id])
 
 WHEN NOT MATCHED THEN
 INSERT
@@ -138,10 +138,10 @@ INSERT
 )
 VALUES
 (
-	[Source].[source_Id],
-	[Source].[source_Field1],
-	[Source].[source_Field2],
-	[Source].[source_Field4]
+	[Source].[Id],
+	[Source].[Field1],
+	[Source].[Field2],
+	[Source].[Field4]
 )
 ;
 

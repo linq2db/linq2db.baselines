@@ -1,6 +1,6 @@
 ﻿BeforeExecute
 -- SapHana.Odbc SapHanaOdbc (asynchronously)
-DECLARE @p  -- Int32
+DECLARE @p Int -- Int32
 SET     @p = 1
 
 SELECT
@@ -12,7 +12,7 @@ WHERE
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc (asynchronously)
-DECLARE @p  -- Int32
+DECLARE @p Int -- Int32
 SET     @p = -1
 
 SELECT

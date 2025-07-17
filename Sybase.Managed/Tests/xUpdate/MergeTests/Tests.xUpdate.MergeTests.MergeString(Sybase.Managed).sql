@@ -1,14 +1,4 @@
 ﻿BeforeExecute
--- Sybase.Managed Sybase
-
-sp_chgattribute AllTypes, 'identity_burn_max', 0, '2'
-
-BeforeExecute
--- Sybase.Managed Sybase
-
-sp_chgattribute KeepIdentityTest, 'identity_burn_max', 0, '0'
-
-BeforeExecute
 BeginTransaction
 BeforeExecute
 -- Sybase.Managed Sybase
@@ -23,14 +13,14 @@ BeforeExecute
 
 MERGE INTO [AllTypes] [Target]
 USING (
-	SELECT 3 AS [source_ID], char(0) AS [source_charDataType], char(0) AS [source_ncharDataType], 'test' + char(0) + 'it' AS [source_nvarcharDataType]) [Source]
+	SELECT 3 AS [ID], char(0) AS [charDataType], char(0) AS [ncharDataType], 'test' + char(0) + 'it' AS [nvarcharDataType]) [Source]
 (
-	[source_ID],
-	[source_charDataType],
-	[source_ncharDataType],
-	[source_nvarcharDataType]
+	[ID],
+	[charDataType],
+	[ncharDataType],
+	[nvarcharDataType]
 )
-ON ([Target].[ID] = [Source].[source_ID])
+ON ([Target].[ID] = [Source].[ID])
 
 WHEN NOT MATCHED THEN
 INSERT
@@ -41,9 +31,9 @@ INSERT
 )
 VALUES
 (
-	[Source].[source_charDataType],
-	[Source].[source_ncharDataType],
-	[Source].[source_nvarcharDataType]
+	[Source].[charDataType],
+	[Source].[ncharDataType],
+	[Source].[nvarcharDataType]
 )
 
 BeforeExecute

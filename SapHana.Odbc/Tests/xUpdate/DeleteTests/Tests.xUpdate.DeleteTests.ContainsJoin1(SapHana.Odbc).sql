@@ -1,8 +1,8 @@
 ﻿BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @ParentID  -- Int32
+DECLARE @ParentID Int -- Int32
 SET     @ParentID = 1000
-DECLARE @Value1  -- Int32
+DECLARE @Value1 Int -- Int32
 SET     @Value1 = NULL
 
 INSERT INTO "Parent"
@@ -18,9 +18,9 @@ VALUES
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @ParentID  -- Int32
+DECLARE @ParentID Int -- Int32
 SET     @ParentID = 1000
-DECLARE @ChildID  -- Int32
+DECLARE @ChildID Int -- Int32
 SET     @ChildID = 1000
 
 INSERT INTO "Child"
@@ -36,9 +36,9 @@ VALUES
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @ParentID  -- Int32
+DECLARE @ParentID Int -- Int32
 SET     @ParentID = 1000
-DECLARE @ChildID  -- Int32
+DECLARE @ChildID Int -- Int32
 SET     @ChildID = 1001
 
 INSERT INTO "Child"
@@ -54,9 +54,9 @@ VALUES
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @ParentID  -- Int32
+DECLARE @ParentID Int -- Int32
 SET     @ParentID = 1000
-DECLARE @ChildID  -- Int32
+DECLARE @ChildID Int -- Int32
 SET     @ChildID = 1002
 
 INSERT INTO "Child"
@@ -72,7 +72,7 @@ VALUES
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @id  -- Int32
+DECLARE @id Int -- Int32
 SET     @id = 1000
 
 DELETE FROM
@@ -93,7 +93,7 @@ WHERE
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @id  -- Int32
+DECLARE @id Int -- Int32
 SET     @id = 1000
 
 DELETE FROM

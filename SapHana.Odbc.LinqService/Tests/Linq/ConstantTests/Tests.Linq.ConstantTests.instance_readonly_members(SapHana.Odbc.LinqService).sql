@@ -1,8 +1,8 @@
 ﻿BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @Id  -- Int32
+DECLARE @Id Int -- Int32
 SET     @Id = 1
-DECLARE @InitOnlyId  -- Int32
+DECLARE @InitOnlyId Int -- Int32
 SET     @InitOnlyId = 1
 
 SELECT
@@ -28,9 +28,9 @@ FROM
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @Id  -- Int32
+DECLARE @Id Int -- Int32
 SET     @Id = 1
-DECLARE @InitOnlyId  -- Int32
+DECLARE @InitOnlyId Int -- Int32
 SET     @InitOnlyId = 1
 
 SELECT

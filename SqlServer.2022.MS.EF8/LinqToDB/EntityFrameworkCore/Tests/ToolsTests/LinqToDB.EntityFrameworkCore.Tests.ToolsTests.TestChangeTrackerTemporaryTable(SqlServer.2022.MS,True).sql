@@ -1,4 +1,4 @@
-﻿--  SqlServer.2022 (asynchronously)
+﻿-- SqlServer.2022 (asynchronously)
 
 CREATE TABLE [tempdb]..[#Orders]
 (
@@ -23,7 +23,7 @@ CREATE TABLE [tempdb]..[#Orders]
 
 
 
---  SqlServer.2022 (asynchronously)
+-- SqlServer.2022 (asynchronously)
 
 INSERT INTO [tempdb]..[#Orders]
 (
@@ -62,11 +62,11 @@ SELECT
 FROM
 	[Orders] [e]
 WHERE
-	[e].[IsDeleted] = 0 OR [e].[IsDeleted] = 0
+	[e].[IsDeleted] = 0
 
 
 
---  SqlServer.2022
+-- SqlServer.2022
 DECLARE @take Int -- Int32
 SET     @take = 2
 
@@ -89,11 +89,11 @@ SELECT TOP (@take)
 FROM
 	[tempdb]..[#Orders] [e]
 WHERE
-	[e].[IsDeleted] = 0 OR [e].[IsDeleted] = 0
+	[e].[IsDeleted] = 0
 
 
 
---  SqlServer.2022
+-- SqlServer.2022
 
 DROP TABLE IF EXISTS [tempdb]..[#Orders]
 

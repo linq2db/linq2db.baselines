@@ -1,9 +1,4 @@
 ﻿BeforeExecute
--- SqlServer.SA.MS SqlServer.2019
-
-DBCC CHECKIDENT ('AllTypes', RESEED, 2)
-
-BeforeExecute
 BeginTransaction
 BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
@@ -21,12 +16,12 @@ USING (VALUES
 	(3,char(0),char(0),N'test' + char(0) + N'it')
 ) [Source]
 (
-	[source_ID],
-	[source_charDataType],
-	[source_ncharDataType],
-	[source_nvarcharDataType]
+	[ID],
+	[charDataType],
+	[ncharDataType],
+	[nvarcharDataType]
 )
-ON ([Target].[ID] = [Source].[source_ID])
+ON ([Target].[ID] = [Source].[ID])
 
 WHEN NOT MATCHED THEN
 INSERT
@@ -37,9 +32,9 @@ INSERT
 )
 VALUES
 (
-	[Source].[source_charDataType],
-	[Source].[source_ncharDataType],
-	[Source].[source_nvarcharDataType]
+	[Source].[charDataType],
+	[Source].[ncharDataType],
+	[Source].[nvarcharDataType]
 )
 ;
 

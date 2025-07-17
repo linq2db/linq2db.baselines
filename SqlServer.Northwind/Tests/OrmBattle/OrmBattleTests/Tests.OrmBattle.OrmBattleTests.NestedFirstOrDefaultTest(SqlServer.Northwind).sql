@@ -3,7 +3,6 @@
 
 SELECT
 	[p].[ProductID],
-	[t1].[cond],
 	[t1].[OrderID],
 	[t1].[CustomerID],
 	[t1].[EmployeeID],
@@ -35,8 +34,7 @@ FROM
 				[a_Order].[ShipCity],
 				[a_Order].[ShipRegion],
 				[a_Order].[ShipPostalCode],
-				[a_Order].[ShipCountry],
-				[od].[OrderID] as [cond]
+				[a_Order].[ShipCountry]
 			FROM
 				[Order Details] [od]
 					LEFT JOIN [Products] [a_Product] ON [od].[ProductID] = [a_Product].[ProductID]

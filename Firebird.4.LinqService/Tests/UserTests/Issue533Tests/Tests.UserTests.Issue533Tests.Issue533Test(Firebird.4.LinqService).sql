@@ -1,10 +1,5 @@
 ﻿BeforeExecute
 -- Firebird.4 Firebird4
-
-SET GENERATOR "PersonID" TO 4
-
-BeforeExecute
--- Firebird.4 Firebird4
 DECLARE @Gender Char(1) -- String
 SET     @Gender = 'M'
 DECLARE @FirstName VarChar(12) -- String

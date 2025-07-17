@@ -1,8 +1,8 @@
 ﻿BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @Id  -- Int32
+DECLARE @Id Int -- Int32
 SET     @Id = 1
-DECLARE @BlobValue Binary(3)
+DECLARE @BlobValue VarBinary(3) -- Binary
 SET     @BlobValue = x'010203'
 
 INSERT INTO "BlobClass"

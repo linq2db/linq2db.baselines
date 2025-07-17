@@ -3,7 +3,7 @@
 
 SELECT
 	t_1.ParentID,
-	t_1.COUNT_1
+	t_1.count_1
 FROM
 	(
 		SELECT
@@ -14,11 +14,11 @@ FROM
 					Child c_1
 				WHERE
 					t.ParentID = c_1.ParentID
-			) as COUNT_1,
+			) as count_1,
 			t.ParentID
 		FROM
 			Parent t
 	) t_1
 WHERE
-	t_1.COUNT_1 > 0
+	t_1.count_1 > 0
 

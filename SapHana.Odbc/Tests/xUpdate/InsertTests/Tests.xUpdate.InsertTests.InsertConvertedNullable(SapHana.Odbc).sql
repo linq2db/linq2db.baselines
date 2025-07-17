@@ -8,7 +8,7 @@ WHERE
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @tt  -- Int64
+DECLARE @tt BigInt -- Int64
 SET     @tt = 600000000
 
 INSERT INTO "LinqDataTypes"

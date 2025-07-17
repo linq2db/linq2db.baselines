@@ -1,15 +1,5 @@
 ﻿BeforeExecute
 -- DB2 DB2.LUW DB2LUW
-
-ALTER TABLE AllTypes ALTER COLUMN ID RESTART WITH 3
-
-BeforeExecute
--- DB2 DB2.LUW DB2LUW
-
-ALTER TABLE "KeepIdentityTest" ALTER COLUMN "ID" RESTART WITH 1
-
-BeforeExecute
--- DB2 DB2.LUW DB2LUW
 DECLARE @Value Integer(4) -- Int32
 SET     @Value = 0
 

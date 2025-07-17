@@ -6,7 +6,7 @@ FROM `Employees` AS `e`
 WHERE ((@__ef_filter__p_0 OR NOT (`e`.`IsDeleted`)) OR NOT (`e`.`IsDeleted`)) AND (`e`.`EmployeeID` = @__test_0)
 
 
---  MariaDB.10.MySqlConnector MySql
+-- MariaDB.10.MySqlConnector MySql
 DECLARE @test Int32
 SET     @test = 1
 
@@ -33,7 +33,7 @@ SELECT
 FROM
 	`Employees` `e`
 WHERE
-	(NOT `e`.`IsDeleted` OR NOT `e`.`IsDeleted`) AND `e`.`EmployeeID` = @test
+	NOT `e`.`IsDeleted` AND `e`.`EmployeeID` = @test
 
 
 

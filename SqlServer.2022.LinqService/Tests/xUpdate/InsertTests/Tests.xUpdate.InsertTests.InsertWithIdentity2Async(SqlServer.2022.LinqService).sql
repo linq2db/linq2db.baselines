@@ -26,6 +26,20 @@ VALUES
 SELECT SCOPE_IDENTITY()
 
 BeforeExecute
+-- SqlServer.2022 (asynchronously)
+
+SELECT TOP (2)
+	[p].[FirstName],
+	[p].[PersonID],
+	[p].[LastName],
+	[p].[MiddleName],
+	[p].[Gender]
+FROM
+	[Person] [p]
+WHERE
+	[p].[FirstName] = N'John' AND [p].[LastName] = N'Shepard'
+
+BeforeExecute
 -- SqlServer.2022
 
 DELETE [t1]

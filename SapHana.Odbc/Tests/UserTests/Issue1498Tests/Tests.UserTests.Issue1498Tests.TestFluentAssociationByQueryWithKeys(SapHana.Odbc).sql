@@ -1,6 +1,6 @@
 ﻿BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @Id  -- Int32
+DECLARE @Id Int -- Int32
 SET     @Id = 6
 DECLARE @Title NVarChar(5) -- String
 SET     @Title = 'title'
@@ -22,9 +22,9 @@ VALUES
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @Id  -- Int32
+DECLARE @Id Int -- Int32
 SET     @Id = 60
-DECLARE @TopicId  -- Int32
+DECLARE @TopicId Int -- Int32
 SET     @TopicId = 6
 DECLARE @Text NVarChar(7) -- String
 SET     @Text = 'message'
@@ -44,9 +44,9 @@ VALUES
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @Id  -- Int32
+DECLARE @Id Int -- Int32
 SET     @Id = 61
-DECLARE @TopicId  -- Int32
+DECLARE @TopicId Int -- Int32
 SET     @TopicId = 7
 DECLARE @Text NVarChar(7) -- String
 SET     @Text = 'message'

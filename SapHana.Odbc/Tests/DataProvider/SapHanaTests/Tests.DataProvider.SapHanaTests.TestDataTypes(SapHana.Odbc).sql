@@ -5,14 +5,14 @@ SELECT "bigintDataType" FROM "AllTypes" WHERE "ID" = 1
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @p  -- Int64
+DECLARE @p BigInt -- Int64
 SET     @p = NULL
 
 SELECT "ID" FROM "AllTypes" WHERE "bigintDataType" IS NULL AND ? IS NULL
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @p  -- Int64
+DECLARE @p BigInt -- Int64
 SET     @p = NULL
 
 SELECT "ID" FROM "AllTypes" WHERE "bigintDataType" IS NULL AND ? IS NULL
@@ -31,21 +31,21 @@ SELECT "bigintDataType" FROM "AllTypes" WHERE "ID" = 2
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @p  -- Int64
+DECLARE @p BigInt -- Int64
 SET     @p = 123456789123456789
 
 SELECT "ID" FROM "AllTypes" WHERE "bigintDataType" = ?
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @p  -- Int64
+DECLARE @p BigInt -- Int64
 SET     @p = 123456789123456789
 
 SELECT "ID" FROM "AllTypes" WHERE "bigintDataType" = ?
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @p  -- Int64
+DECLARE @p BigInt -- Int64
 SET     @p = 123456789123456789
 
 SELECT "ID" FROM "AllTypes" WHERE "bigintDataType" = ?
@@ -57,14 +57,14 @@ SELECT "smallintDataType" FROM "AllTypes" WHERE "ID" = 1
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @p  -- Int16
+DECLARE @p SmallInt -- Int16
 SET     @p = NULL
 
 SELECT "ID" FROM "AllTypes" WHERE "smallintDataType" IS NULL AND ? IS NULL
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @p  -- Int16
+DECLARE @p SmallInt -- Int16
 SET     @p = NULL
 
 SELECT "ID" FROM "AllTypes" WHERE "smallintDataType" IS NULL AND ? IS NULL
@@ -83,21 +83,21 @@ SELECT "smallintDataType" FROM "AllTypes" WHERE "ID" = 2
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @p  -- Int16
+DECLARE @p SmallInt -- Int16
 SET     @p = 12345
 
 SELECT "ID" FROM "AllTypes" WHERE "smallintDataType" = ?
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @p  -- Int16
+DECLARE @p SmallInt -- Int16
 SET     @p = 12345
 
 SELECT "ID" FROM "AllTypes" WHERE "smallintDataType" = ?
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @p  -- Int16
+DECLARE @p SmallInt -- Int16
 SET     @p = 12345
 
 SELECT "ID" FROM "AllTypes" WHERE "smallintDataType" = ?
@@ -116,7 +116,7 @@ SELECT "ID" FROM "AllTypes" WHERE "decimalDataType" IS NULL AND ? IS NULL
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @p Decimal
+DECLARE @p Decimal(38, 10)
 SET     @p = NULL
 
 SELECT "ID" FROM "AllTypes" WHERE "decimalDataType" IS NULL AND ? IS NULL
@@ -135,22 +135,22 @@ SELECT "decimalDataType" FROM "AllTypes" WHERE "ID" = 2
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @p Decimal(7, 3)
-SET     @p = 1234.567
+DECLARE @p Decimal(14, 10)
+SET     @p = 1234.5670000000
 
 SELECT "ID" FROM "AllTypes" WHERE "decimalDataType" = ?
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @p Decimal(7, 3)
-SET     @p = 1234.567
+DECLARE @p Decimal(38, 10)
+SET     @p = 1234.5670000000
 
 SELECT "ID" FROM "AllTypes" WHERE "decimalDataType" = ?
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @p Decimal(7, 3)
-SET     @p = 1234.567
+DECLARE @p Decimal(14, 10)
+SET     @p = 1234.5670000000
 
 SELECT "ID" FROM "AllTypes" WHERE "decimalDataType" = ?
 
@@ -168,7 +168,7 @@ SELECT "ID" FROM "AllTypes" WHERE "smalldecimalDataType" IS NULL AND ? IS NULL
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @p Decimal
+DECLARE @p Decimal(38, 10)
 SET     @p = NULL
 
 SELECT "ID" FROM "AllTypes" WHERE "smalldecimalDataType" IS NULL AND ? IS NULL
@@ -194,7 +194,7 @@ SELECT "ID" FROM "AllTypes" WHERE "smalldecimalDataType" = ?
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @p Decimal(6, 3)
+DECLARE @p Decimal(38, 10)
 SET     @p = 123.456
 
 SELECT "ID" FROM "AllTypes" WHERE "smalldecimalDataType" = ?
@@ -213,14 +213,14 @@ SELECT "intDataType" FROM "AllTypes" WHERE "ID" = 1
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @p  -- Int32
+DECLARE @p Int -- Int32
 SET     @p = NULL
 
 SELECT "ID" FROM "AllTypes" WHERE "intDataType" IS NULL AND ? IS NULL
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @p  -- Int32
+DECLARE @p Int -- Int32
 SET     @p = NULL
 
 SELECT "ID" FROM "AllTypes" WHERE "intDataType" IS NULL AND ? IS NULL
@@ -239,21 +239,21 @@ SELECT "intDataType" FROM "AllTypes" WHERE "ID" = 2
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @p  -- Int32
+DECLARE @p Int -- Int32
 SET     @p = 123456789
 
 SELECT "ID" FROM "AllTypes" WHERE "intDataType" = ?
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @p  -- Int32
+DECLARE @p Int -- Int32
 SET     @p = 123456789
 
 SELECT "ID" FROM "AllTypes" WHERE "intDataType" = ?
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @p  -- Int32
+DECLARE @p Int -- Int32
 SET     @p = 123456789
 
 SELECT "ID" FROM "AllTypes" WHERE "intDataType" = ?
@@ -265,14 +265,14 @@ SELECT "tinyintDataType" FROM "AllTypes" WHERE "ID" = 1
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @p  -- Byte
+DECLARE @p TinyInt -- Byte
 SET     @p = NULL
 
 SELECT "ID" FROM "AllTypes" WHERE "tinyintDataType" IS NULL AND ? IS NULL
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @p  -- Byte
+DECLARE @p TinyInt -- Byte
 SET     @p = NULL
 
 SELECT "ID" FROM "AllTypes" WHERE "tinyintDataType" IS NULL AND ? IS NULL
@@ -291,21 +291,21 @@ SELECT "tinyintDataType" FROM "AllTypes" WHERE "ID" = 2
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @p  -- Byte
+DECLARE @p TinyInt(1) -- Byte
 SET     @p = 123
 
 SELECT "ID" FROM "AllTypes" WHERE "tinyintDataType" = ?
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @p  -- Byte
+DECLARE @p TinyInt(1) -- Byte
 SET     @p = 123
 
 SELECT "ID" FROM "AllTypes" WHERE "tinyintDataType" = ?
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @p  -- Byte
+DECLARE @p TinyInt(1) -- Byte
 SET     @p = 123
 
 SELECT "ID" FROM "AllTypes" WHERE "tinyintDataType" = ?
@@ -317,14 +317,14 @@ SELECT "floatDataType" FROM "AllTypes" WHERE "ID" = 1
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @p  -- Double
+DECLARE @p Double
 SET     @p = NULL
 
 SELECT "ID" FROM "AllTypes" WHERE "floatDataType" IS NULL AND ? IS NULL
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @p  -- Double
+DECLARE @p Double
 SET     @p = NULL
 
 SELECT "ID" FROM "AllTypes" WHERE "floatDataType" IS NULL AND ? IS NULL
@@ -343,21 +343,21 @@ SELECT "floatDataType" FROM "AllTypes" WHERE "ID" = 2
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @p  -- Double
+DECLARE @p Double
 SET     @p = 1234.567
 
 SELECT "ID" FROM "AllTypes" WHERE "floatDataType" = ?
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @p  -- Double
+DECLARE @p Double
 SET     @p = 1234.567
 
 SELECT "ID" FROM "AllTypes" WHERE "floatDataType" = ?
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @p  -- Double
+DECLARE @p Double
 SET     @p = 1234.567
 
 SELECT "ID" FROM "AllTypes" WHERE "floatDataType" = ?
@@ -369,14 +369,14 @@ SELECT "dateDataType" FROM "AllTypes" WHERE "ID" = 1
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @p  -- Date
+DECLARE @p Date
 SET     @p = NULL
 
 SELECT "ID" FROM "AllTypes" WHERE "dateDataType" IS NULL AND ? IS NULL
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @p  -- DateTime
+DECLARE @p DateTime
 SET     @p = NULL
 
 SELECT "ID" FROM "AllTypes" WHERE "dateDataType" IS NULL AND ? IS NULL
@@ -395,21 +395,21 @@ SELECT "dateDataType" FROM "AllTypes" WHERE "ID" = 2
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @p  -- Date
+DECLARE @p Date
 SET     @p = '2012-12-12'
 
 SELECT "ID" FROM "AllTypes" WHERE "dateDataType" = ?
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @p  -- DateTime
+DECLARE @p DateTime
 SET     @p = '2012-12-12'
 
 SELECT "ID" FROM "AllTypes" WHERE "dateDataType" = ?
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @p  -- DateTime
+DECLARE @p DateTime
 SET     @p = '2012-12-12'
 
 SELECT "ID" FROM "AllTypes" WHERE "dateDataType" = ?
@@ -421,14 +421,14 @@ SELECT "timeDataType" FROM "AllTypes" WHERE "ID" = 1
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @p  -- Time
+DECLARE @p Time
 SET     @p = NULL
 
 SELECT "ID" FROM "AllTypes" WHERE "timeDataType" IS NULL AND ? IS NULL
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @p  -- Time
+DECLARE @p Time
 SET     @p = NULL
 
 SELECT "ID" FROM "AllTypes" WHERE "timeDataType" IS NULL AND ? IS NULL
@@ -447,21 +447,21 @@ SELECT "timeDataType" FROM "AllTypes" WHERE "ID" = 2
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @p  -- Time
+DECLARE @p Time
 SET     @p = 12:12:12
 
 SELECT "ID" FROM "AllTypes" WHERE "timeDataType" = ?
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @p  -- Time
+DECLARE @p Time
 SET     @p = 12:12:12
 
 SELECT "ID" FROM "AllTypes" WHERE "timeDataType" = ?
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @p  -- Time
+DECLARE @p Time
 SET     @p = 12:12:12
 
 SELECT "ID" FROM "AllTypes" WHERE "timeDataType" = ?
@@ -473,14 +473,14 @@ SELECT "seconddateDataType" FROM "AllTypes" WHERE "ID" = 1
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @p  -- DateTime
+DECLARE @p DateTime
 SET     @p = NULL
 
 SELECT "ID" FROM "AllTypes" WHERE "seconddateDataType" IS NULL AND ? IS NULL
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @p  -- DateTime
+DECLARE @p DateTime
 SET     @p = NULL
 
 SELECT "ID" FROM "AllTypes" WHERE "seconddateDataType" IS NULL AND ? IS NULL
@@ -499,21 +499,21 @@ SELECT "seconddateDataType" FROM "AllTypes" WHERE "ID" = 2
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @p  -- DateTime
+DECLARE @p DateTime
 SET     @p = '2012-12-12 12:12:12'
 
 SELECT "ID" FROM "AllTypes" WHERE "seconddateDataType" = ?
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @p  -- DateTime
+DECLARE @p DateTime
 SET     @p = '2012-12-12 12:12:12'
 
 SELECT "ID" FROM "AllTypes" WHERE "seconddateDataType" = ?
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @p  -- DateTime
+DECLARE @p DateTime
 SET     @p = '2012-12-12 12:12:12'
 
 SELECT "ID" FROM "AllTypes" WHERE "seconddateDataType" = ?
@@ -532,7 +532,7 @@ SELECT "ID" FROM "AllTypes" WHERE "timestampDataType" IS NULL AND ? IS NULL
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @p  -- DateTime
+DECLARE @p DateTime
 SET     @p = NULL
 
 SELECT "ID" FROM "AllTypes" WHERE "timestampDataType" IS NULL AND ? IS NULL
@@ -558,14 +558,14 @@ SELECT "ID" FROM "AllTypes" WHERE "timestampDataType" = ?
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @p  -- DateTime
+DECLARE @p DateTime
 SET     @p = '2012-12-12 12:12:12.123'
 
 SELECT "ID" FROM "AllTypes" WHERE "timestampDataType" = ?
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @p  -- DateTime
+DECLARE @p DateTime
 SET     @p = '2012-12-12 12:12:12.123'
 
 SELECT "ID" FROM "AllTypes" WHERE "timestampDataType" = ?
@@ -1052,7 +1052,7 @@ SELECT "ID" FROM "AllTypes" WHERE "binaryDataType" IS NULL AND ? IS NULL
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @p Binary
+DECLARE @p VarBinary -- Binary
 SET     @p = NULL
 
 SELECT "ID" FROM "AllTypes" WHERE "binaryDataType" IS NULL AND ? IS NULL
@@ -1078,14 +1078,14 @@ SELECT "ID" FROM "AllTypes" WHERE "binaryDataType" = ?
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @p Binary(8)
+DECLARE @p VarBinary(8) -- Binary
 SET     @p = x'6162636465666768'
 
 SELECT "ID" FROM "AllTypes" WHERE "binaryDataType" = ?
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @p Binary(8)
+DECLARE @p VarBinary(8) -- Binary
 SET     @p = x'6162636465666768'
 
 SELECT "ID" FROM "AllTypes" WHERE "binaryDataType" = ?
@@ -1097,14 +1097,14 @@ SELECT "binaryDataType" FROM "AllTypes" WHERE "ID" = 1
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @p Binary
+DECLARE @p VarBinary -- Binary
 SET     @p = NULL
 
 SELECT "ID" FROM "AllTypes" WHERE "binaryDataType" IS NULL AND ? IS NULL
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @p Binary
+DECLARE @p VarBinary -- Binary
 SET     @p = NULL
 
 SELECT "ID" FROM "AllTypes" WHERE "binaryDataType" IS NULL AND ? IS NULL
@@ -1123,21 +1123,21 @@ SELECT "binaryDataType" FROM "AllTypes" WHERE "ID" = 2
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @p Binary(8)
+DECLARE @p VarBinary(8) -- Binary
 SET     @p = x'6162636465666768'
 
 SELECT "ID" FROM "AllTypes" WHERE "binaryDataType" = ?
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @p Binary(8)
+DECLARE @p VarBinary(8) -- Binary
 SET     @p = x'6162636465666768'
 
 SELECT "ID" FROM "AllTypes" WHERE "binaryDataType" = ?
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @p Binary(8)
+DECLARE @p VarBinary(8) -- Binary
 SET     @p = x'6162636465666768'
 
 SELECT "ID" FROM "AllTypes" WHERE "binaryDataType" = ?
@@ -1156,7 +1156,7 @@ SELECT "ID" FROM "AllTypes" WHERE "varbinaryDataType" IS NULL AND ? IS NULL
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @p Binary
+DECLARE @p VarBinary -- Binary
 SET     @p = NULL
 
 SELECT "ID" FROM "AllTypes" WHERE "varbinaryDataType" IS NULL AND ? IS NULL
@@ -1182,14 +1182,14 @@ SELECT "ID" FROM "AllTypes" WHERE "varbinaryDataType" = ?
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @p Binary(8)
+DECLARE @p VarBinary(8) -- Binary
 SET     @p = x'6162636465666768'
 
 SELECT "ID" FROM "AllTypes" WHERE "varbinaryDataType" = ?
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @p Binary(8)
+DECLARE @p VarBinary(8) -- Binary
 SET     @p = x'6162636465666768'
 
 SELECT "ID" FROM "AllTypes" WHERE "varbinaryDataType" = ?
@@ -1201,14 +1201,14 @@ SELECT "varbinaryDataType" FROM "AllTypes" WHERE "ID" = 1
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @p Binary
+DECLARE @p VarBinary -- Binary
 SET     @p = NULL
 
 SELECT "ID" FROM "AllTypes" WHERE "varbinaryDataType" IS NULL AND ? IS NULL
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @p Binary
+DECLARE @p VarBinary -- Binary
 SET     @p = NULL
 
 SELECT "ID" FROM "AllTypes" WHERE "varbinaryDataType" IS NULL AND ? IS NULL
@@ -1227,21 +1227,21 @@ SELECT "varbinaryDataType" FROM "AllTypes" WHERE "ID" = 2
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @p Binary(8)
+DECLARE @p VarBinary(8) -- Binary
 SET     @p = x'6162636465666768'
 
 SELECT "ID" FROM "AllTypes" WHERE "varbinaryDataType" = ?
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @p Binary(8)
+DECLARE @p VarBinary(8) -- Binary
 SET     @p = x'6162636465666768'
 
 SELECT "ID" FROM "AllTypes" WHERE "varbinaryDataType" = ?
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @p Binary(8)
+DECLARE @p VarBinary(8) -- Binary
 SET     @p = x'6162636465666768'
 
 SELECT "ID" FROM "AllTypes" WHERE "varbinaryDataType" = ?
@@ -1253,14 +1253,14 @@ SELECT "varbinaryDataType" FROM "AllTypes" WHERE "ID" = 1
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @p Binary
+DECLARE @p VarBinary -- Binary
 SET     @p = NULL
 
 SELECT "ID" FROM "AllTypes" WHERE "varbinaryDataType" IS NULL AND ? IS NULL
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @p Binary
+DECLARE @p VarBinary -- Binary
 SET     @p = NULL
 
 SELECT "ID" FROM "AllTypes" WHERE "varbinaryDataType" IS NULL AND ? IS NULL
@@ -1279,21 +1279,21 @@ SELECT "varbinaryDataType" FROM "AllTypes" WHERE "ID" = 2
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @p Binary(8)
+DECLARE @p VarBinary(8) -- Binary
 SET     @p = x'6162636465666768'
 
 SELECT "ID" FROM "AllTypes" WHERE "varbinaryDataType" = ?
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @p Binary(8)
+DECLARE @p VarBinary(8) -- Binary
 SET     @p = x'6162636465666768'
 
 SELECT "ID" FROM "AllTypes" WHERE "varbinaryDataType" = ?
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @p Binary(8)
+DECLARE @p VarBinary(8) -- Binary
 SET     @p = x'6162636465666768'
 
 SELECT "ID" FROM "AllTypes" WHERE "varbinaryDataType" = ?

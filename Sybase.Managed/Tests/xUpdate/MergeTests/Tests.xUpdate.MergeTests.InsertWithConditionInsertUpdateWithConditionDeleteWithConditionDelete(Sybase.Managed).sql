@@ -238,25 +238,25 @@ BeforeExecute
 
 MERGE INTO [TestMerge1] [Target]
 USING (
-	SELECT 3 AS [source_Id], NULL AS [source_Field1], 3 AS [source_Field2], NULL AS [source_Field4], NULL AS [source_Field3]
+	SELECT 1 AS [Id], 123 AS [Field1], NULL AS [Field2], NULL AS [Field4], NULL AS [Field3]
+	UNION ALL
+	SELECT 3, NULL, 3, NULL, NULL
 	UNION ALL
 	SELECT 4, 5, 7, 214, NULL
 	UNION ALL
 	SELECT 5, 10, 4, NULL, NULL
 	UNION ALL
-	SELECT 6, NULL, NULL, 216, NULL
-	UNION ALL
-	SELECT 1, 123, NULL, NULL, NULL) [Source]
+	SELECT 6, NULL, NULL, 216, NULL) [Source]
 (
-	[source_Id],
-	[source_Field1],
-	[source_Field2],
-	[source_Field4],
-	[source_Field3]
+	[Id],
+	[Field1],
+	[Field2],
+	[Field4],
+	[Field3]
 )
-ON ([Target].[Id] = [Source].[source_Id])
+ON ([Target].[Id] = [Source].[Id])
 
-WHEN NOT MATCHED AND [Source].[source_Id] = 5 THEN
+WHEN NOT MATCHED AND [Source].[Id] = 5 THEN
 INSERT
 (
 	[Id],
@@ -266,10 +266,10 @@ INSERT
 )
 VALUES
 (
-	[Source].[source_Id],
-	[Source].[source_Field1],
-	[Source].[source_Field2],
-	[Source].[source_Field4]
+	[Source].[Id],
+	[Source].[Field1],
+	[Source].[Field2],
+	[Source].[Field4]
 )
 
 WHEN NOT MATCHED THEN
@@ -282,18 +282,18 @@ INSERT
 )
 VALUES
 (
-	[Source].[source_Id],
-	[Source].[source_Field1],
-	[Source].[source_Field2],
-	[Source].[source_Field4]
+	[Source].[Id],
+	[Source].[Field1],
+	[Source].[Field2],
+	[Source].[Field4]
 )
 
 WHEN MATCHED AND [Target].[Id] = 3 THEN
 UPDATE
 SET
-	[Field1] = [Source].[source_Field1],
-	[Field2] = [Source].[source_Field2],
-	[Field3] = [Source].[source_Field3]
+	[Field1] = [Source].[Field1],
+	[Field2] = [Source].[Field2],
+	[Field3] = [Source].[Field3]
 WHEN MATCHED AND [Target].[Id] = 4 THEN DELETE
 WHEN MATCHED THEN DELETE
 

@@ -9,7 +9,7 @@ SELECT
 	p."Gender"
 FROM
 	"Person" p
-		INNER JOIN LATERAL (VALUES
-			(1,'Janet',p."FirstName"), (2,'Doe',NULL)
-		) n("PersonID", "LastName", "FirstName") ON p."LastName" = n."LastName"
+		INNER JOIN (VALUES
+			('Janet'), ('Doe')
+		) n("LastName") ON p."LastName" = n."LastName"
 

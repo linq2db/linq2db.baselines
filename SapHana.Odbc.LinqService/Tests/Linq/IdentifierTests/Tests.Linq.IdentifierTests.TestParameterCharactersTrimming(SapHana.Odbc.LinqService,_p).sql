@@ -1,6 +1,6 @@
 ﻿BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @_p  -- Int32
+DECLARE @_p Int -- Int32
 SET     @_p = 2
 
 UPDATE

@@ -1,30 +1,5 @@
 ﻿BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-
-ALTER TABLE Doctor DROP CONSTRAINT PersonDoctor
-
-BeforeExecute
--- Access.Ace.Odbc AccessODBC
-
-ALTER TABLE Patient DROP CONSTRAINT PersonPatient
-
-BeforeExecute
--- Access.Ace.Odbc AccessODBC
-
-ALTER TABLE Person ALTER COLUMN PersonID COUNTER(5, 1)
-
-BeforeExecute
--- Access.Ace.Odbc AccessODBC
-
-ALTER TABLE Doctor ADD CONSTRAINT PersonDoctor FOREIGN KEY (PersonID) REFERENCES Person ON UPDATE CASCADE ON DELETE CASCADE
-
-BeforeExecute
--- Access.Ace.Odbc AccessODBC
-
-ALTER TABLE Patient ADD CONSTRAINT PersonPatient FOREIGN KEY (PersonID) REFERENCES Person ON UPDATE CASCADE ON DELETE CASCADE
-
-BeforeExecute
--- Access.Ace.Odbc AccessODBC
 DECLARE @FirstName NVarChar(4) -- String
 SET     @FirstName = 'John'
 DECLARE @LastName NVarChar(7) -- String
@@ -72,8 +47,8 @@ BeforeExecute
 -- Access.Ace.Odbc AccessODBC
 DECLARE @id Int -- Int32
 SET     @id = 5
-DECLARE @diagnosis NVarChar(3) -- String
-SET     @diagnosis = 'abc'
+DECLARE @diagnosis Int -- Int32
+SET     @diagnosis = 3
 DECLARE @i Int -- Int32
 SET     @i = 0
 
@@ -85,7 +60,7 @@ INSERT INTO [Patient]
 VALUES
 (
 	?,
-	CStr(Len(?) + ?)
+	CStr(? + ?)
 )
 
 BeforeExecute

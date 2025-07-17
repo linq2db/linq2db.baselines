@@ -15,7 +15,7 @@ ORDER BY
 
 BeforeExecute
 -- SqlServer.2008.MS SqlServer.2008
-DECLARE @take BigInt -- Int64
+DECLARE @take Int -- Int32
 SET     @take = 12
 
 SELECT

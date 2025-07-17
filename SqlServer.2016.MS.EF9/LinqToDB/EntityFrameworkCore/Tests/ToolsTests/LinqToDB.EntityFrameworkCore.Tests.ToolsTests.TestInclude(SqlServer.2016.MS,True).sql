@@ -35,7 +35,7 @@ ORDER BY [o].[OrderID], [e0].[EmployeeID], [s].[EmployeeID], [s].[TerritoryID], 
 BeginTransactionAsync(RepeatableRead)
 
 
---  SqlServer.2016 (asynchronously)
+-- SqlServer.2016 (asynchronously)
 
 SELECT
 	[m_1].[EmployeeId],
@@ -52,19 +52,18 @@ FROM
 			[a_Employee].[EmployeeID] as [EmployeeId]
 		FROM
 			[Orders] [e]
-				LEFT JOIN [Employees] [a_Employee] ON [e].[EmployeeID] = [a_Employee].[EmployeeID] AND ([a_Employee].[IsDeleted] = 0 OR [a_Employee].[IsDeleted] = 0)
+				LEFT JOIN [Employees] [a_Employee] ON [e].[EmployeeID] = [a_Employee].[EmployeeID] AND [a_Employee].[IsDeleted] = 0
 		WHERE
-			[e].[IsDeleted] = 0 OR [e].[IsDeleted] = 0
+			[e].[IsDeleted] = 0
 	) [m_1]
 		INNER JOIN [EmployeeTerritories] [d] ON [m_1].[EmployeeId] = [d].[EmployeeID]
 		INNER JOIN [Territories] [a_Territory] ON [d].[TerritoryID] = [a_Territory].[TerritoryID]
 WHERE
-	([a_Territory].[IsDeleted] = 0 OR [a_Territory].[IsDeleted] = 0) AND
-	([d].[IsDeleted] = 0 OR [d].[IsDeleted] = 0)
+	[a_Territory].[IsDeleted] = 0 AND [d].[IsDeleted] = 0
 
 
 
---  SqlServer.2016 (asynchronously)
+-- SqlServer.2016 (asynchronously)
 
 SELECT
 	[m_1].[OrderId],
@@ -92,20 +91,19 @@ FROM
 		FROM
 			[Orders] [e]
 		WHERE
-			[e].[IsDeleted] = 0 OR [e].[IsDeleted] = 0
+			[e].[IsDeleted] = 0
 	) [m_1]
 		INNER JOIN [Order Details] [d] ON [m_1].[OrderId] = [d].[OrderID]
 		INNER JOIN [Products] [a_Product] ON [d].[ProductID] = [a_Product].[ProductID]
 WHERE
-	([a_Product].[IsDeleted] = 0 OR [a_Product].[IsDeleted] = 0) AND
-	([d].[IsDeleted] = 0 OR [d].[IsDeleted] = 0)
+	[a_Product].[IsDeleted] = 0 AND [d].[IsDeleted] = 0
 
 
 
 DisposeTransactionAsync
 
 
---  SqlServer.2016 (asynchronously)
+-- SqlServer.2016 (asynchronously)
 
 SELECT
 	[e].[IsDeleted],
@@ -144,9 +142,9 @@ SELECT
 	[a_Employee].[PhotoPath]
 FROM
 	[Orders] [e]
-		LEFT JOIN [Employees] [a_Employee] ON [e].[EmployeeID] = [a_Employee].[EmployeeID] AND ([a_Employee].[IsDeleted] = 0 OR [a_Employee].[IsDeleted] = 0)
+		LEFT JOIN [Employees] [a_Employee] ON [e].[EmployeeID] = [a_Employee].[EmployeeID] AND [a_Employee].[IsDeleted] = 0
 WHERE
-	[e].[IsDeleted] = 0 OR [e].[IsDeleted] = 0
+	[e].[IsDeleted] = 0
 
 
 

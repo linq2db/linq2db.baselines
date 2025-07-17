@@ -1,10 +1,5 @@
 ﻿BeforeExecute
 -- DB2 DB2.LUW DB2LUW
-
-ALTER TABLE "Person" ALTER COLUMN "PersonID" RESTART WITH 5
-
-BeforeExecute
--- DB2 DB2.LUW DB2LUW
 DECLARE @FirstName VarChar(4) -- String
 SET     @FirstName = 'John'
 DECLARE @LastName VarChar(7) -- String
@@ -41,8 +36,8 @@ DECLARE @id Integer(4) -- Int32
 SET     @id = 5
 DECLARE @i Integer(4) -- Int32
 SET     @i = 0
-DECLARE @diagnosis VarChar(3) -- String
-SET     @diagnosis = 'abc'
+DECLARE @diagnosis Integer(4) -- Int32
+SET     @diagnosis = 3
 
 MERGE INTO "Patient" "t1"
 USING (SELECT CAST(@id AS Int) AS "PersonID" FROM SYSIBM.SYSDUMMY1 FETCH FIRST 1 ROW ONLY) "s" ON
@@ -52,7 +47,7 @@ USING (SELECT CAST(@id AS Int) AS "PersonID" FROM SYSIBM.SYSDUMMY1 FETCH FIRST 1
 WHEN MATCHED THEN
 	UPDATE 
 	SET
-		"Diagnosis" = RTrim(Char(CHARACTER_LENGTH("t1"."Diagnosis",CODEUNITS32) + CAST(@i AS Int)))
+		"Diagnosis" = RTrim(Char(CHAR_LENGTH("t1"."Diagnosis") + @i))
 WHEN NOT MATCHED THEN
 	INSERT
 	(
@@ -62,7 +57,7 @@ WHEN NOT MATCHED THEN
 	VALUES
 	(
 		CAST(@id AS Int),
-		RTrim(Char(CHARACTER_LENGTH(CAST(@diagnosis AS NVarChar(3)),CODEUNITS32) + CAST(@i AS Int)))
+		RTrim(Char(@diagnosis + @i))
 	)
 
 BeforeExecute
@@ -71,8 +66,8 @@ DECLARE @id Integer(4) -- Int32
 SET     @id = 5
 DECLARE @i Integer(4) -- Int32
 SET     @i = 1
-DECLARE @diagnosis VarChar(3) -- String
-SET     @diagnosis = 'abc'
+DECLARE @diagnosis Integer(4) -- Int32
+SET     @diagnosis = 3
 
 MERGE INTO "Patient" "t1"
 USING (SELECT CAST(@id AS Int) AS "PersonID" FROM SYSIBM.SYSDUMMY1 FETCH FIRST 1 ROW ONLY) "s" ON
@@ -82,7 +77,7 @@ USING (SELECT CAST(@id AS Int) AS "PersonID" FROM SYSIBM.SYSDUMMY1 FETCH FIRST 1
 WHEN MATCHED THEN
 	UPDATE 
 	SET
-		"Diagnosis" = RTrim(Char(CHARACTER_LENGTH("t1"."Diagnosis",CODEUNITS32) + CAST(@i AS Int)))
+		"Diagnosis" = RTrim(Char(CHAR_LENGTH("t1"."Diagnosis") + @i))
 WHEN NOT MATCHED THEN
 	INSERT
 	(
@@ -92,7 +87,7 @@ WHEN NOT MATCHED THEN
 	VALUES
 	(
 		CAST(@id AS Int),
-		RTrim(Char(CHARACTER_LENGTH(CAST(@diagnosis AS NVarChar(3)),CODEUNITS32) + CAST(@i AS Int)))
+		RTrim(Char(@diagnosis + @i))
 	)
 
 BeforeExecute
@@ -101,8 +96,8 @@ DECLARE @id Integer(4) -- Int32
 SET     @id = 5
 DECLARE @i Integer(4) -- Int32
 SET     @i = 2
-DECLARE @diagnosis VarChar(3) -- String
-SET     @diagnosis = 'abc'
+DECLARE @diagnosis Integer(4) -- Int32
+SET     @diagnosis = 3
 
 MERGE INTO "Patient" "t1"
 USING (SELECT CAST(@id AS Int) AS "PersonID" FROM SYSIBM.SYSDUMMY1 FETCH FIRST 1 ROW ONLY) "s" ON
@@ -112,7 +107,7 @@ USING (SELECT CAST(@id AS Int) AS "PersonID" FROM SYSIBM.SYSDUMMY1 FETCH FIRST 1
 WHEN MATCHED THEN
 	UPDATE 
 	SET
-		"Diagnosis" = RTrim(Char(CHARACTER_LENGTH("t1"."Diagnosis",CODEUNITS32) + CAST(@i AS Int)))
+		"Diagnosis" = RTrim(Char(CHAR_LENGTH("t1"."Diagnosis") + @i))
 WHEN NOT MATCHED THEN
 	INSERT
 	(
@@ -122,7 +117,7 @@ WHEN NOT MATCHED THEN
 	VALUES
 	(
 		CAST(@id AS Int),
-		RTrim(Char(CHARACTER_LENGTH(CAST(@diagnosis AS NVarChar(3)),CODEUNITS32) + CAST(@i AS Int)))
+		RTrim(Char(@diagnosis + @i))
 	)
 
 BeforeExecute

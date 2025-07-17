@@ -6,7 +6,7 @@ SELECT
 FROM
 	[Person] [nm]
 WHERE
-	NOT ([nm].[MiddleName] IS NULL OR Len([nm].[MiddleName]) = 0)
+	NOT ([nm].[MiddleName] IS NULL OR LEN([nm].[MiddleName] + '.') = 1)
 
 BeforeExecute
 -- SqlCe

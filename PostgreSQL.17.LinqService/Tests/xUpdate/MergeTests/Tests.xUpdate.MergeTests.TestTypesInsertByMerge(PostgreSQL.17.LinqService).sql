@@ -36,27 +36,27 @@ q','&','>',3.40282002E+38,1.7976931348623157E+308,'2001-10-12 21:14:15.167'::tim
 ',1.17549996E-38,-2.2250738585072014E-308,'2098-10-12 21:14:15.997'::timestamp,:value_4,E'\\xFFC864321400'::bytea,'ffffffff-ffff-ffff-ffff-ffffffffffff'::uuid,99999999.9999999999,'2110-11-23'::date,:value_5,'',2147483647)
 ) "Source"
 (
-	"source_Id",
-	"source_FieldInt32",
-	"source_FieldInt64",
-	"source_FieldBoolean",
-	"source_FieldString",
-	"source_FieldNString",
-	"source_FieldChar",
-	"source_FieldNChar",
-	"source_FieldFloat",
-	"source_FieldDouble",
-	"source_FieldDateTime",
-	"source_FieldDateTime2",
-	"source_FieldBinary",
-	"source_FieldGuid",
-	"source_FieldDecimal",
-	"source_FieldDate",
-	"source_FieldTime",
-	"source_FieldEnumString",
-	"source_FieldEnumNumber"
+	"Id",
+	"FieldInt32",
+	"FieldInt64",
+	"FieldBoolean",
+	"FieldString",
+	"FieldNString",
+	"FieldChar",
+	"FieldNChar",
+	"FieldFloat",
+	"FieldDouble",
+	"FieldDateTime",
+	"FieldDateTime2",
+	"FieldBinary",
+	"FieldGuid",
+	"FieldDecimal",
+	"FieldDate",
+	"FieldTime",
+	"FieldEnumString",
+	"FieldEnumNumber"
 )
-ON ("Target"."Id" = "Source"."source_Id")
+ON ("Target"."Id" = "Source"."Id")
 
 WHEN NOT MATCHED THEN
 INSERT
@@ -83,25 +83,25 @@ INSERT
 )
 VALUES
 (
-	"Source"."source_Id",
-	"Source"."source_FieldInt32",
-	"Source"."source_FieldInt64",
-	"Source"."source_FieldBoolean",
-	"Source"."source_FieldString",
-	"Source"."source_FieldNString",
-	"Source"."source_FieldChar",
-	"Source"."source_FieldNChar",
-	"Source"."source_FieldFloat",
-	"Source"."source_FieldDouble",
-	"Source"."source_FieldDateTime",
-	"Source"."source_FieldDateTime2",
-	"Source"."source_FieldBinary",
-	"Source"."source_FieldGuid",
-	"Source"."source_FieldDecimal",
-	"Source"."source_FieldDate",
-	"Source"."source_FieldTime",
-	"Source"."source_FieldEnumString",
-	"Source"."source_FieldEnumNumber"
+	"Source"."Id",
+	"Source"."FieldInt32",
+	"Source"."FieldInt64",
+	"Source"."FieldBoolean",
+	"Source"."FieldString",
+	"Source"."FieldNString",
+	"Source"."FieldChar",
+	"Source"."FieldNChar",
+	"Source"."FieldFloat",
+	"Source"."FieldDouble",
+	"Source"."FieldDateTime",
+	"Source"."FieldDateTime2",
+	"Source"."FieldBinary",
+	"Source"."FieldGuid",
+	"Source"."FieldDecimal",
+	"Source"."FieldDate",
+	"Source"."FieldTime",
+	"Source"."FieldEnumString",
+	"Source"."FieldEnumNumber"
 )
 
 BeforeExecute
@@ -133,27 +133,27 @@ q','1',' ',3.40282002E+38,1.7976931348623157E+308,'2001-10-12 21:14:15.167'::tim
 q  ','-','~',3.40282002E+38,1.7976931348623157E+308,'2001-10-12 21:14:15.167'::timestamp,:value_5,E'\\x000102030004'::bytea,'ffffffff-ffff-ffff-ffff-ffffffffffff'::uuid,-99999999.9999999999,'2123-11-23'::date,:value_6,'',0)
 ) "Source"
 (
-	"source_Id",
-	"source_FieldInt32",
-	"source_FieldInt64",
-	"source_FieldBoolean",
-	"source_FieldString",
-	"source_FieldNString",
-	"source_FieldChar",
-	"source_FieldNChar",
-	"source_FieldFloat",
-	"source_FieldDouble",
-	"source_FieldDateTime",
-	"source_FieldDateTime2",
-	"source_FieldBinary",
-	"source_FieldGuid",
-	"source_FieldDecimal",
-	"source_FieldDate",
-	"source_FieldTime",
-	"source_FieldEnumString",
-	"source_FieldEnumNumber"
+	"Id",
+	"FieldInt32",
+	"FieldInt64",
+	"FieldBoolean",
+	"FieldString",
+	"FieldNString",
+	"FieldChar",
+	"FieldNChar",
+	"FieldFloat",
+	"FieldDouble",
+	"FieldDateTime",
+	"FieldDateTime2",
+	"FieldBinary",
+	"FieldGuid",
+	"FieldDecimal",
+	"FieldDate",
+	"FieldTime",
+	"FieldEnumString",
+	"FieldEnumNumber"
 )
-ON ("Target"."Id" = "Source"."source_Id")
+ON ("Target"."Id" = "Source"."Id")
 
 WHEN NOT MATCHED THEN
 INSERT
@@ -180,25 +180,25 @@ INSERT
 )
 VALUES
 (
-	"Source"."source_Id",
-	"Source"."source_FieldInt32",
-	"Source"."source_FieldInt64",
-	"Source"."source_FieldBoolean",
-	"Source"."source_FieldString",
-	"Source"."source_FieldNString",
-	"Source"."source_FieldChar",
-	"Source"."source_FieldNChar",
-	"Source"."source_FieldFloat",
-	"Source"."source_FieldDouble",
-	"Source"."source_FieldDateTime",
-	"Source"."source_FieldDateTime2",
-	"Source"."source_FieldBinary",
-	"Source"."source_FieldGuid",
-	"Source"."source_FieldDecimal",
-	"Source"."source_FieldDate",
-	"Source"."source_FieldTime",
-	"Source"."source_FieldEnumString",
-	"Source"."source_FieldEnumNumber"
+	"Source"."Id",
+	"Source"."FieldInt32",
+	"Source"."FieldInt64",
+	"Source"."FieldBoolean",
+	"Source"."FieldString",
+	"Source"."FieldNString",
+	"Source"."FieldChar",
+	"Source"."FieldNChar",
+	"Source"."FieldFloat",
+	"Source"."FieldDouble",
+	"Source"."FieldDateTime",
+	"Source"."FieldDateTime2",
+	"Source"."FieldBinary",
+	"Source"."FieldGuid",
+	"Source"."FieldDecimal",
+	"Source"."FieldDate",
+	"Source"."FieldTime",
+	"Source"."FieldEnumString",
+	"Source"."FieldEnumNumber"
 )
 
 BeforeExecute

@@ -1,6 +1,6 @@
 ﻿BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @group  -- Int32
+DECLARE @group Int -- Int32
 SET     @group = 7
 
 SELECT

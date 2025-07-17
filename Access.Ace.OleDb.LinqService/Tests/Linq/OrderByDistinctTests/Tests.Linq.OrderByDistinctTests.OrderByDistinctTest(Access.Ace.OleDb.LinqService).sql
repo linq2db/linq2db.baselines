@@ -15,6 +15,8 @@ FROM
 	[OrderByDistinctData] [x]
 GROUP BY
 	[x].[DuplicateData]
+ORDER BY
+	MAX([x].[OrderData1])
 
 BeforeExecute
 -- Access.Ace.OleDb AccessOleDb
@@ -33,4 +35,6 @@ FROM
 	[OrderByDistinctData] [x]
 GROUP BY
 	[x].[DuplicateData]
+ORDER BY
+	MIN([x].[OrderData1]) DESC
 

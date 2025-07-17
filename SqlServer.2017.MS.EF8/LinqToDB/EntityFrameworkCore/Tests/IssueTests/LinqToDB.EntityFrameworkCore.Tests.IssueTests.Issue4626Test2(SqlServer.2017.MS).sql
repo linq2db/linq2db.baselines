@@ -1,7 +1,7 @@
 ﻿BeginTransaction(RepeatableRead)
 
 
---  SqlServer.2017
+-- SqlServer.2017
 
 SELECT
 	[m_1].[Id],
@@ -28,7 +28,7 @@ FROM
 DisposeTransaction
 
 
---  SqlServer.2017
+-- SqlServer.2017
 
 SELECT
 	[c_1].[Id]

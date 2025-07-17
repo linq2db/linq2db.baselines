@@ -5,8 +5,8 @@ SELECT
 	`ch`.`ParentID`,
 	`ch`.`ChildID`
 FROM
-	`Parent` `p`
-		LEFT JOIN `Child` `ch` ON 1=1
+	`Parent` `p`,
+	`Child` `ch`
 WHERE
 	`p`.`ParentID` = `ch`.`ParentID`
 

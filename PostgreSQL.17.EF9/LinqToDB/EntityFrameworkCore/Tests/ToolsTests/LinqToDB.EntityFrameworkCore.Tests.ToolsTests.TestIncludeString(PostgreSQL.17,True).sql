@@ -30,7 +30,7 @@ ORDER BY o."OrderID", e0."EmployeeID", e2."EmployeeID", e2."TerritoryID", s."Ord
 BeginTransactionAsync(RepeatableRead)
 
 
---  PostgreSQL.15 PostgreSQL (asynchronously)
+-- PostgreSQL.15 PostgreSQL (asynchronously)
 
 SELECT
 	m_1."EmployeeId",
@@ -43,17 +43,17 @@ FROM
 			"a_Employee"."EmployeeID" as "EmployeeId"
 		FROM
 			"Orders" e
-				LEFT JOIN "Employees" "a_Employee" ON e."EmployeeID" = "a_Employee"."EmployeeID" AND (NOT "a_Employee"."IsDeleted" OR NOT "a_Employee"."IsDeleted")
+				LEFT JOIN "Employees" "a_Employee" ON e."EmployeeID" = "a_Employee"."EmployeeID" AND NOT "a_Employee"."IsDeleted"
 		WHERE
-			NOT e."IsDeleted" OR NOT e."IsDeleted"
+			NOT e."IsDeleted"
 	) m_1
 		INNER JOIN "EmployeeTerritories" d ON m_1."EmployeeId" = d."EmployeeID"
 WHERE
-	NOT d."IsDeleted" OR NOT d."IsDeleted"
+	NOT d."IsDeleted"
 
 
 
---  PostgreSQL.15 PostgreSQL (asynchronously)
+-- PostgreSQL.15 PostgreSQL (asynchronously)
 
 SELECT
 	m_1."OrderId",
@@ -81,20 +81,19 @@ FROM
 		FROM
 			"Orders" e
 		WHERE
-			NOT e."IsDeleted" OR NOT e."IsDeleted"
+			NOT e."IsDeleted"
 	) m_1
 		INNER JOIN "Order Details" d ON m_1."OrderId" = d."OrderID"
 		INNER JOIN "Products" "a_Product" ON d."ProductID" = "a_Product"."ProductID"
 WHERE
-	(NOT "a_Product"."IsDeleted" OR NOT "a_Product"."IsDeleted") AND
-	(NOT d."IsDeleted" OR NOT d."IsDeleted")
+	NOT "a_Product"."IsDeleted" AND NOT d."IsDeleted"
 
 
 
 DisposeTransactionAsync
 
 
---  PostgreSQL.15 PostgreSQL (asynchronously)
+-- PostgreSQL.15 PostgreSQL (asynchronously)
 
 SELECT
 	e."IsDeleted",
@@ -133,9 +132,9 @@ SELECT
 	"a_Employee"."PhotoPath"
 FROM
 	"Orders" e
-		LEFT JOIN "Employees" "a_Employee" ON e."EmployeeID" = "a_Employee"."EmployeeID" AND (NOT "a_Employee"."IsDeleted" OR NOT "a_Employee"."IsDeleted")
+		LEFT JOIN "Employees" "a_Employee" ON e."EmployeeID" = "a_Employee"."EmployeeID" AND NOT "a_Employee"."IsDeleted"
 WHERE
-	NOT e."IsDeleted" OR NOT e."IsDeleted"
+	NOT e."IsDeleted"
 
 
 

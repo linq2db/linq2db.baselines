@@ -6,13 +6,13 @@ DECLARE @ID_1 Integer -- Int32
 SET     @ID_1 = 3
 
 SELECT
-	n."PersonID",
+	n."ID",
 	n."FirstName"
 FROM
 	"Person" t1
 		INNER JOIN (VALUES
 			(:ID,'Janet'), (:ID_1,'Doe')
-		) n("PersonID", "FirstName") ON t1."PersonID" = n."PersonID"
+		) n("ID", "FirstName") ON t1."PersonID" = n."ID"
 ORDER BY
-	n."PersonID"
+	n."ID"
 

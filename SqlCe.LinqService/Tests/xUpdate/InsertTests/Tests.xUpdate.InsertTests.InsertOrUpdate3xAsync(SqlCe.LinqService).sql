@@ -1,10 +1,5 @@
 ﻿BeforeExecute
 -- SqlCe
-
-ALTER TABLE Person ALTER COLUMN PersonID IDENTITY(5,1)
-
-BeforeExecute
--- SqlCe
 DECLARE @FirstName NVarChar(4) -- String
 SET     @FirstName = 'John'
 DECLARE @LastName NVarChar(7) -- String
@@ -33,4 +28,75 @@ BeforeExecute
 -- SqlCe
 
 SELECT @@IDENTITY
+
+BeforeExecute
+-- SqlCe (asynchronously)
+DECLARE @i Int -- Int32
+SET     @i = 0
+DECLARE @id2 Int -- Int32
+SET     @id2 = 5
+
+UPDATE
+	[Patient]
+SET
+	[Diagnosis] = CAST(LEN([Patient].[Diagnosis] + '.') - 1 + @i AS NVarChar(11))
+WHERE
+	[Patient].[PersonID] = @id2
+
+BeforeExecute
+-- SqlCe (asynchronously)
+DECLARE @id Int -- Int32
+SET     @id = 5
+
+INSERT INTO [Patient]
+(
+	[PersonID],
+	[Diagnosis]
+)
+VALUES
+(
+	@id,
+	'abc'
+)
+
+BeforeExecute
+-- SqlCe (asynchronously)
+DECLARE @i Int -- Int32
+SET     @i = 1
+DECLARE @id2 Int -- Int32
+SET     @id2 = 5
+
+UPDATE
+	[Patient]
+SET
+	[Diagnosis] = CAST(LEN([Patient].[Diagnosis] + '.') - 1 + @i AS NVarChar(11))
+WHERE
+	[Patient].[PersonID] = @id2
+
+BeforeExecute
+-- SqlCe (asynchronously)
+DECLARE @i Int -- Int32
+SET     @i = 2
+DECLARE @id2 Int -- Int32
+SET     @id2 = 5
+
+UPDATE
+	[Patient]
+SET
+	[Diagnosis] = CAST(LEN([Patient].[Diagnosis] + '.') - 1 + @i AS NVarChar(11))
+WHERE
+	[Patient].[PersonID] = @id2
+
+BeforeExecute
+-- SqlCe (asynchronously)
+DECLARE @id Int -- Int32
+SET     @id = 5
+
+SELECT TOP (2)
+	[p].[PersonID],
+	[p].[Diagnosis]
+FROM
+	[Patient] [p]
+WHERE
+	[p].[PersonID] = @id
 

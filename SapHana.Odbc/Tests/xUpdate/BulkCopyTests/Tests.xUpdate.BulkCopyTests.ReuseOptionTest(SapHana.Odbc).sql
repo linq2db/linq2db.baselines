@@ -2,9 +2,9 @@
 BeginTransaction
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @ParentID  -- Int32
+DECLARE @ParentID Int -- Int32
 SET     @ParentID = 111001
-DECLARE @Value1  -- Int32
+DECLARE @Value1 Int -- Int32
 SET     @Value1 = NULL
 
 INSERT INTO "Parent"
@@ -20,9 +20,9 @@ VALUES
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @ParentID  -- Int32
+DECLARE @ParentID Int -- Int32
 SET     @ParentID = 111001
-DECLARE @ChildID  -- Int32
+DECLARE @ChildID Int -- Int32
 SET     @ChildID = 0
 
 INSERT INTO "Child"

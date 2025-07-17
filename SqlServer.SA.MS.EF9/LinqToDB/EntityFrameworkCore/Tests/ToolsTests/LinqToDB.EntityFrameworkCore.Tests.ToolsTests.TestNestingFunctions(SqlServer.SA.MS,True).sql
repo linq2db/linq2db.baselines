@@ -18,7 +18,7 @@ WHERE (@__ef_filter__p_0 = CAST(1 AS bit) OR [p].[IsDeleted] = CAST(0 AS bit) OR
 ORDER BY [p].[ProductID]
 
 
---  SqlServer.2019
+-- SqlServer.2019
 
 SELECT
 	[e].[IsDeleted],
@@ -47,25 +47,23 @@ FROM
 	[Products] [e],
 	[Products] [pd2]
 WHERE
-	([e].[IsDeleted] = 0 OR [e].[IsDeleted] = 0) AND
+	[e].[IsDeleted] = 0 AND
 	(
 		SELECT
 			COUNT(*)
 		FROM
 			[Order Details] [e_1]
 		WHERE
-			([e_1].[IsDeleted] = 0 OR [e_1].[IsDeleted] = 0) AND
-			[e].[ProductID] = [e_1].[ProductID]
+			[e_1].[IsDeleted] = 0 AND [e].[ProductID] = [e_1].[ProductID]
 	) > 0 AND
-	([pd2].[IsDeleted] = 0 OR [pd2].[IsDeleted] = 0) AND
+	[pd2].[IsDeleted] = 0 AND
 	(
 		SELECT
 			COUNT(*)
 		FROM
 			[Order Details] [e_2]
 		WHERE
-			([e_2].[IsDeleted] = 0 OR [e_2].[IsDeleted] = 0) AND
-			[pd2].[ProductID] = [e_2].[ProductID]
+			[e_2].[IsDeleted] = 0 AND [pd2].[ProductID] = [e_2].[ProductID]
 	) > 0 AND
 	[e].[ProductID] = [pd2].[ProductID]
 ORDER BY

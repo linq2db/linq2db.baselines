@@ -41,7 +41,7 @@ FROM
 			"InsertIssueTest" t1
 				INNER JOIN "InsertIssueTest" a_Association ON t1.ID = a_Association."intDataType"
 		WHERE
-			CAST(t1.ID AS Int) = :cond
+			t1.ID = :cond
 	) t2
 
 BeforeExecute

@@ -1,4 +1,4 @@
-﻿--  SqlServer.2019
+﻿-- SqlServer.2019
 
 SELECT
 	[e].[IsDeleted],
@@ -14,9 +14,9 @@ SELECT
 	[e].[Discontinued]
 FROM
 	[Products] [e]
-		LEFT JOIN [Products] [op] ON [op].[ProductID] <> [e].[ProductID] AND [op].[ProductName] = [e].[ProductName] AND ([op].[IsDeleted] = 0 OR [op].[IsDeleted] = 0)
+		LEFT JOIN [Products] [op] ON [op].[ProductID] <> [e].[ProductID] AND [op].[ProductName] = [e].[ProductName] AND [op].[IsDeleted] = 0
 WHERE
-	([e].[IsDeleted] = 0 OR [e].[IsDeleted] = 0) AND [op].[ProductID] IS NULL
+	[e].[IsDeleted] = 0 AND [op].[ProductID] IS NULL
 
 
 

@@ -38,5 +38,5 @@ DROP TABLE IF EXISTS `CreateIfNotExistsTable`
 BeforeExecute
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
 
-DROP TABLE IF EXISTS `CreateIfNotExistsTable`
+DROP TEMPORARY TABLE IF EXISTS `CreateIfNotExistsTable`
 

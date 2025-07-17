@@ -15,33 +15,33 @@ SET     @PersonID = 2
 MERGE INTO [Person] [Target]
 USING (
 	SELECT
-		[t].[PersonID] as [source_ID],
-		[t].[FirstName] as [source_FirstName],
-		[t].[LastName] as [source_LastName],
-		[t].[MiddleName] as [source_MiddleName],
-		[t].[Gender] as [source_Gender]
+		[t].[PersonID] as [ID],
+		[t].[FirstName],
+		[t].[LastName],
+		[t].[MiddleName],
+		[t].[Gender]
 	FROM
 		[Person] [t]
-			LEFT JOIN [Patient] [a_Patient] ON [t].[PersonID] = [a_Patient].[PersonID]
+			INNER JOIN [Patient] [a_Patient] ON [t].[PersonID] = [a_Patient].[PersonID]
 	WHERE
 		[a_Patient].[PersonID] = @PersonID
 ) [Source]
 (
-	[source_ID],
-	[source_FirstName],
-	[source_LastName],
-	[source_MiddleName],
-	[source_Gender]
+	[ID],
+	[FirstName],
+	[LastName],
+	[MiddleName],
+	[Gender]
 )
-ON ([Target].[PersonID] = [Source].[source_ID])
+ON ([Target].[PersonID] = [Source].[ID])
 
 WHEN MATCHED THEN
 UPDATE
 SET
-	[FirstName] = [Source].[source_FirstName],
-	[LastName] = [Source].[source_LastName],
-	[MiddleName] = [Source].[source_MiddleName],
-	[Gender] = [Source].[source_Gender]
+	[FirstName] = [Source].[FirstName],
+	[LastName] = [Source].[LastName],
+	[MiddleName] = [Source].[MiddleName],
+	[Gender] = [Source].[Gender]
 
 WHEN NOT MATCHED THEN
 INSERT
@@ -53,10 +53,10 @@ INSERT
 )
 VALUES
 (
-	[Source].[source_FirstName],
-	[Source].[source_LastName],
-	[Source].[source_MiddleName],
-	[Source].[source_Gender]
+	[Source].[FirstName],
+	[Source].[LastName],
+	[Source].[MiddleName],
+	[Source].[Gender]
 )
 WHEN NOT MATCHED BY SOURCE AND (
 	SELECT

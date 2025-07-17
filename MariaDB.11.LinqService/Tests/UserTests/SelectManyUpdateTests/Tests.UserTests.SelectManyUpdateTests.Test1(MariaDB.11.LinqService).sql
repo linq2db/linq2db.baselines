@@ -1,6 +1,6 @@
 ﻿BeforeExecute
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql
-DECLARE @Value1 Int32
+DECLARE @Value1 Int64
 SET     @Value1 = NULL
 
 UPDATE

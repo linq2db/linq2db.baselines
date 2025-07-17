@@ -2,7 +2,7 @@
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @Name NVarChar(4) -- String
 SET     @Name = 'John'
-DECLARE @Id  -- Int32
+DECLARE @Id Int -- Int32
 SET     @Id = 1
 
 UPDATE
@@ -14,7 +14,7 @@ WHERE
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @Id  -- Int32
+DECLARE @Id Int -- Int32
 SET     @Id = 1
 DECLARE @Name NVarChar(4) -- String
 SET     @Name = 'John'
@@ -47,7 +47,7 @@ BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @Name NVarChar(4) -- String
 SET     @Name = 'John'
-DECLARE @Id  -- Int32
+DECLARE @Id Int -- Int32
 SET     @Id = 1
 
 UPDATE

@@ -598,6 +598,31 @@ CREATE TABLE AllTypes
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 	datetime2DataType        varchar(50)       NULL,
 	datetimeoffsetDataType   varchar(50)       NULL,
 	datetimeoffset0DataType  varchar(50)       NULL,
@@ -610,6 +635,10 @@ CREATE TABLE AllTypes
 	datetimeoffset7DataType  varchar(50)       NULL,
 	dateDataType             varchar(50)       NULL,
 	timeDataType             varchar(50)       NULL
+
+
+
+
 
 
 

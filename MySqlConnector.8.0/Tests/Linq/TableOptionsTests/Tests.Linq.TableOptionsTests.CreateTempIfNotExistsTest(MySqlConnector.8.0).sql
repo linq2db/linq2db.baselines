@@ -38,5 +38,5 @@ DROP TABLE IF EXISTS `CreateIfNotExistsTable`
 BeforeExecute
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 
-DROP TABLE IF EXISTS `CreateIfNotExistsTable`
+DROP TEMPORARY TABLE IF EXISTS `CreateIfNotExistsTable`
 

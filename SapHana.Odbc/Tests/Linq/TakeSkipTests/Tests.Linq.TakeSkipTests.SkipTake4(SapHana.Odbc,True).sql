@@ -1,10 +1,10 @@
 ﻿BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @take  -- Int32
+DECLARE @take Int -- Int32
 SET     @take = 7
-DECLARE @skip  -- Int32
+DECLARE @skip Int -- Int32
 SET     @skip = 1
-DECLARE @skip  -- Int32
+DECLARE @skip Int -- Int32
 SET     @skip = 2
 
 SELECT

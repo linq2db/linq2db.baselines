@@ -1397,7 +1397,7 @@ SELECT @p
 
 BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
-DECLARE @p VarChar(1, 0) -- AnsiString
+DECLARE @p VarChar(18, 10) -- AnsiString
 SET     @p = 1
 
 SELECT @p
@@ -1448,7 +1448,7 @@ SELECT @p
 
 BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
-DECLARE @p VarChar(1, 0) -- AnsiString
+DECLARE @p VarChar(18, 10) -- AnsiString
 SET     @p = 1
 
 SELECT @p
@@ -1469,7 +1469,7 @@ SELECT @p
 
 BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
-DECLARE @p VarChar -- AnsiString
+DECLARE @p VarChar(18, 10) -- AnsiString
 SET     @p = NULL
 
 SELECT @p
@@ -1520,7 +1520,7 @@ SELECT @p
 
 BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
-DECLARE @p VarChar(1, 0) -- AnsiString
+DECLARE @p VarChar(18, 10) -- AnsiString
 SET     @p = 1
 
 SELECT @p
@@ -1571,7 +1571,7 @@ SELECT @p
 
 BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
-DECLARE @p VarChar(1, 0) -- AnsiString
+DECLARE @p VarChar(18, 10) -- AnsiString
 SET     @p = 1
 
 SELECT @p
@@ -1592,7 +1592,7 @@ SELECT @p
 
 BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
-DECLARE @p VarChar -- AnsiString
+DECLARE @p VarChar(18, 10) -- AnsiString
 SET     @p = NULL
 
 SELECT @p
@@ -1643,7 +1643,7 @@ SELECT @p
 
 BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
-DECLARE @p VarChar(1, 0) -- AnsiString
+DECLARE @p VarChar(18, 10) -- AnsiString
 SET     @p = 1
 
 SELECT @p
@@ -1694,7 +1694,7 @@ SELECT @p
 
 BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
-DECLARE @p VarChar(1, 0) -- AnsiString
+DECLARE @p VarChar(18, 10) -- AnsiString
 SET     @p = 1
 
 SELECT @p
@@ -1715,7 +1715,7 @@ SELECT @p
 
 BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
-DECLARE @p VarChar -- AnsiString
+DECLARE @p VarChar(18, 10) -- AnsiString
 SET     @p = NULL
 
 SELECT @p
@@ -1766,7 +1766,7 @@ SELECT @p
 
 BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
-DECLARE @p VarChar(1, 0) -- AnsiString
+DECLARE @p VarChar(18, 10) -- AnsiString
 SET     @p = 1
 
 SELECT @p
@@ -1817,7 +1817,7 @@ SELECT @p
 
 BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
-DECLARE @p VarChar(1, 0) -- AnsiString
+DECLARE @p VarChar(18, 10) -- AnsiString
 SET     @p = 1
 
 SELECT @p
@@ -1838,7 +1838,7 @@ SELECT @p
 
 BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
-DECLARE @p VarChar -- AnsiString
+DECLARE @p VarChar(18, 10) -- AnsiString
 SET     @p = NULL
 
 SELECT @p
@@ -2508,7 +2508,7 @@ SELECT @p
 
 BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
-DECLARE @p VarChar(29, 0) -- AnsiString
+DECLARE @p VarChar(18, 10) -- AnsiString
 SET     @p = -79228162514264337593543950335
 
 SELECT @p
@@ -2529,7 +2529,7 @@ SELECT @p
 
 BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
-DECLARE @p VarChar(29, 0) -- AnsiString
+DECLARE @p VarChar(18, 10) -- AnsiString
 SET     @p = 79228162514264337593543950335
 
 SELECT @p
@@ -2550,7 +2550,7 @@ SELECT @p
 
 BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
-DECLARE @p VarChar(10, 9) -- AnsiString
+DECLARE @p VarChar(18, 10) -- AnsiString
 SET     @p = 1.123456789
 
 SELECT @p
@@ -2571,7 +2571,7 @@ SELECT @p
 
 BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
-DECLARE @p VarChar(10, 9) -- AnsiString
+DECLARE @p VarChar(18, 10) -- AnsiString
 SET     @p = -1.123456789
 
 SELECT @p
@@ -2602,7 +2602,7 @@ SELECT @p
 
 BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
-DECLARE @p VarChar(15, 0) -- AnsiString
+DECLARE @p VarChar(18, 10) -- AnsiString
 SET     @p = -922337203685477
 
 SELECT @p
@@ -2633,7 +2633,7 @@ SELECT @p
 
 BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
-DECLARE @p VarChar(15, 0) -- AnsiString
+DECLARE @p VarChar(18, 10) -- AnsiString
 SET     @p = 922337203685477
 
 SELECT @p
@@ -2674,7 +2674,7 @@ SELECT @p
 
 BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
-DECLARE @p VarChar(6, 0) -- AnsiString
+DECLARE @p VarChar(18, 10) -- AnsiString
 SET     @p = -214748
 
 SELECT @p
@@ -2715,7 +2715,7 @@ SELECT @p
 
 BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
-DECLARE @p VarChar(6, 0) -- AnsiString
+DECLARE @p VarChar(18, 10) -- AnsiString
 SET     @p = 214748
 
 SELECT @p

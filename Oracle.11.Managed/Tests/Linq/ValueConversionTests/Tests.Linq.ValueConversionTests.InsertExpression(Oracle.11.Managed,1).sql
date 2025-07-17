@@ -2,7 +2,7 @@
 -- Oracle.11.Managed Oracle11
 DECLARE @iteration Int32
 SET     @iteration = 1
-DECLARE @Value1 NVarchar2(2) -- String
+DECLARE @Value1 Varchar2(2) -- String
 SET     @Value1 = '[]'
 DECLARE @Enum NVarchar2(6) -- String
 SET     @Enum = 'Value1'

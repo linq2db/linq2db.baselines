@@ -3,7 +3,7 @@
 
 SELECT
 	[x].[Id],
-	IIF([x].[StringProp] = '1' OR [x].[StringProp] IS NULL, True, False),
+	[x].[StringProp] = '1' OR [x].[StringProp] IS NULL,
 	IIF([x].[StringProp] = '2', True, False),
 	[x].[StringProp],
 	1,

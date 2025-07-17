@@ -2221,7 +2221,7 @@ VALUES
 )
 
 BeforeExecute
---  Access.Jet.OleDb AccessOleDb
+-- Access.Jet.OleDb AccessOleDb
 DECLARE @datetimeDataType Date -- DateTime
 SET     @datetimeDataType = #2012-12-12 12:12:12#
 DECLARE @binaryDataType VarBinary(4) -- Binary
@@ -4476,7 +4476,7 @@ VALUES
 )
 
 BeforeExecute
---  Access.Jet.OleDb AccessOleDb
+-- Access.Jet.OleDb AccessOleDb
 DECLARE @datetimeDataType Date -- DateTime
 SET     @datetimeDataType = #2012-12-12 12:12:12#
 DECLARE @binaryDataType VarBinary(4) -- Binary

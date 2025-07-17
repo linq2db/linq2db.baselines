@@ -1,6 +1,6 @@
 ﻿BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @Date  -- Date
+DECLARE @Date Date
 SET     @Date = '2021-01-01'
 
 INSERT INTO "DateOnlyTable"

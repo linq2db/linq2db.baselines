@@ -6,7 +6,7 @@ UPDATE
 SET
 	"TRANS_CHANNEL" = (
 		SELECT
-			"channel_1"."Trans_Channel"
+			Coalesce("channel_1"."Trans_Channel", 1)
 		FROM
 			"Issue2815Table1" "ext_1"
 				LEFT JOIN "Issue2815Table2" "source_1" ON "source_1"."ISO" = "ext_1"."SRC_BIC"
@@ -32,7 +32,7 @@ SET
 	),
 	"IDF" = (
 		SELECT
-			"channel_2"."Idf"
+			Coalesce("channel_2"."Idf", 0)
 		FROM
 			"Issue2815Table1" "ext_2"
 				LEFT JOIN "Issue2815Table2" "source_2" ON "source_2"."ISO" = "ext_2"."SRC_BIC"
@@ -82,4 +82,20 @@ WHERE
 			"Issue2815Table1"."NOT_HANDLED" = "ext"."NOT_HANDLED" AND
 			("Issue2815Table1"."TRANS_CHANNEL" = "ext"."TRANS_CHANNEL" OR "Issue2815Table1"."TRANS_CHANNEL" IS NULL AND "ext"."TRANS_CHANNEL" IS NULL)
 	)
+
+BeforeExecute
+-- SapHana.Odbc SapHanaOdbc
+
+SELECT
+	"t1"."SRC_BIC",
+	"t1"."DES_BIC",
+	"t1"."IDF",
+	"t1"."TREA_CENT",
+	"t1"."NOT_HANDLED",
+	"t1"."TRANS_CHANNEL"
+FROM
+	"Issue2815Table1" "t1"
+ORDER BY
+	"t1"."SRC_BIC",
+	"t1"."DES_BIC"
 

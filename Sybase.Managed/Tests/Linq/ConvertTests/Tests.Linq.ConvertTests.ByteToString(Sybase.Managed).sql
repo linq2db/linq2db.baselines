@@ -6,5 +6,5 @@ SELECT
 FROM
 	[LinqDataTypes] [p]
 WHERE
-	Len(CAST(CAST([p].[ID] AS TinyInt) AS NVarChar(3))) > 0
+	CHAR_LENGTH(CAST(CAST([p].[ID] AS TinyInt) AS NVarChar(3))) > 0
 

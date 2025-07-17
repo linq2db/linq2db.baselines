@@ -16,3 +16,21 @@ SELECT TOP (3)
 FROM
 	[Child] [ch]
 
+BeforeExecute
+-- SqlServer.2017.MS SqlServer.2017 (asynchronously)
+
+SELECT TOP (2)
+	[ch].[ParentID],
+	[ch].[ChildID]
+FROM
+	[Child] [ch]
+
+BeforeExecute
+-- SqlServer.2017.MS SqlServer.2017 (asynchronously)
+
+SELECT TOP (3)
+	[ch].[ParentID],
+	[ch].[ChildID]
+FROM
+	[Child] [ch]
+

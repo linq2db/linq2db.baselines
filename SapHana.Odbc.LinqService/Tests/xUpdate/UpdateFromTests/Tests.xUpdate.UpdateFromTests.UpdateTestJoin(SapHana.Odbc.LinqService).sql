@@ -1,18 +1,18 @@
 ﻿BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @int1  -- Int32
+DECLARE @int1 Int -- Int32
 SET     @int1 = 11
-DECLARE @someId  -- Int32
+DECLARE @someId Int -- Int32
 SET     @someId = 100
-DECLARE @int2  -- Int32
+DECLARE @int2 Int -- Int32
 SET     @int2 = 22
-DECLARE @someId  -- Int32
+DECLARE @someId Int -- Int32
 SET     @someId = 100
-DECLARE @int3  -- Int32
+DECLARE @int3 Int -- Int32
 SET     @int3 = 33
-DECLARE @someId  -- Int32
+DECLARE @someId Int -- Int32
 SET     @someId = 100
-DECLARE @someId  -- Int32
+DECLARE @someId Int -- Int32
 SET     @someId = 100
 
 UPDATE

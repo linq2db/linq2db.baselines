@@ -24,18 +24,3 @@ FROM
 WHERE
 	startsWith(row1_2.Field1, 'test')
 
-BeforeExecute
--- ClickHouse.Client ClickHouse (asynchronously)
-
-DROP TABLE IF EXISTS table3
-
-BeforeExecute
--- ClickHouse.Client ClickHouse (asynchronously)
-
-DROP TABLE IF EXISTS table2
-
-BeforeExecute
--- ClickHouse.Client ClickHouse (asynchronously)
-
-DROP TABLE IF EXISTS table1
-

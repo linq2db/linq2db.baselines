@@ -1,9 +1,4 @@
 ﻿BeforeExecute
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
-
-ALTER SEQUENCE "Person_PersonID_seq" RESTART WITH 5
-
-BeforeExecute
 BeginTransaction
 BeforeExecute
 -- PostgreSQL.17 PostgreSQL.15 PostgreSQL
@@ -11,14 +6,14 @@ BeforeExecute
 MERGE INTO "Person" "Target"
 USING (
 	SELECT
-		t1."PersonID" as "source_ID"
+		t1."PersonID" as "ID"
 	FROM
 		"Person" t1
 ) "Source"
 (
-	"source_ID"
+	"ID"
 )
-ON ("Target"."PersonID" = "Source"."source_ID" + 10)
+ON ("Target"."PersonID" = "Source"."ID" + 10)
 
 WHEN NOT MATCHED BY SOURCE AND ((
 	SELECT

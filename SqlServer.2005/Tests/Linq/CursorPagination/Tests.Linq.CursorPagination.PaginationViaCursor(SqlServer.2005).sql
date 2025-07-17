@@ -15,7 +15,7 @@ ORDER BY
 
 BeforeExecute
 -- SqlServer.2005
-DECLARE @take BigInt -- Int64
+DECLARE @take Int -- Int32
 SET     @take = 12
 
 SELECT

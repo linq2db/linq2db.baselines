@@ -35,7 +35,7 @@ BeforeExecute
 
 SELECT
 	"x"."ParentID",
-	"x"."COUNT_1",
+	"x"."CountResult",
 	"x"."SUM_1"
 FROM
 	(
@@ -47,7 +47,7 @@ FROM
 					"Child" "a_Children"
 				WHERE
 					"o"."ParentID" = "a_Children"."ParentID"
-			) as "COUNT_1",
+			) as "CountResult",
 			"o"."ParentID",
 			(
 				SELECT
@@ -61,5 +61,5 @@ FROM
 			"Parent" "o"
 	) "x"
 WHERE
-	"x"."COUNT_1" > 0
+	"x"."CountResult" > 0
 

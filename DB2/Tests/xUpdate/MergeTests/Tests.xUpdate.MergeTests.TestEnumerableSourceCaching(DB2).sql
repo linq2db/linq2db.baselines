@@ -6,15 +6,15 @@ USING (VALUES
 	(1,1), (2,2)
 ) "Source"
 (
-	"source_Id",
-	"source_Value"
+	"Id",
+	"Value_1"
 )
-ON ("Target"."Id" = "Source"."source_Id")
+ON ("Target"."Id" = "Source"."Id")
 
 WHEN MATCHED THEN
 UPDATE
 SET
-	"Value" = "Source"."source_Value"
+	"Value" = "Source"."Value_1"
 
 WHEN NOT MATCHED THEN
 INSERT
@@ -24,8 +24,8 @@ INSERT
 )
 VALUES
 (
-	"Source"."source_Id",
-	"Source"."source_Value"
+	"Source"."Id",
+	"Source"."Value_1"
 )
 
 BeforeExecute
@@ -47,15 +47,15 @@ USING (VALUES
 	(1,1), (2,4), (3,3)
 ) "Source"
 (
-	"source_Id",
-	"source_Value"
+	"Id",
+	"Value_1"
 )
-ON ("Target"."Id" = "Source"."source_Id")
+ON ("Target"."Id" = "Source"."Id")
 
 WHEN MATCHED THEN
 UPDATE
 SET
-	"Value" = "Source"."source_Value"
+	"Value" = "Source"."Value_1"
 
 WHEN NOT MATCHED THEN
 INSERT
@@ -65,8 +65,8 @@ INSERT
 )
 VALUES
 (
-	"Source"."source_Id",
-	"Source"."source_Value"
+	"Source"."Id",
+	"Source"."Value_1"
 )
 
 BeforeExecute

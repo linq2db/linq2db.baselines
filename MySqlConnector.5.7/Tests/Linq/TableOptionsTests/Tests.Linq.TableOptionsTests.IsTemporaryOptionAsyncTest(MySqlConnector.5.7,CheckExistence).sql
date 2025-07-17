@@ -104,10 +104,10 @@ TRUNCATE TABLE `temp_table2`
 BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 
-DROP TABLE IF EXISTS `temp_table2`
+DROP TEMPORARY TABLE IF EXISTS `temp_table2`
 
 BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 
-DROP TABLE IF EXISTS `temp_table1`
+DROP TEMPORARY TABLE IF EXISTS `temp_table1`
 

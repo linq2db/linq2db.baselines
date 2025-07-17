@@ -4,15 +4,9 @@
 SELECT
 	[nm].[MiddleName]
 FROM
-	(
-		SELECT
-			Len([p].[MiddleName]) as [Value_1],
-			[p].[MiddleName]
-		FROM
-			[Person] [p]
-	) [nm]
+	[Person] [nm]
 WHERE
-	[nm].[Value_1] <> 0 OR [nm].[Value_1] IS NULL
+	Len([nm].[MiddleName]) <> 0 OR [nm].[MiddleName] IS NULL
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC

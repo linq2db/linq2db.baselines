@@ -324,7 +324,7 @@ SELECT ID FROM ALLTYPES WHERE @p IS NULL AND decimalDataType IS NULL OR @p IS NO
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
-DECLARE @p Decimal
+DECLARE @p Decimal(18, 10)
 SET     @p = NULL
 
 SELECT ID FROM ALLTYPES WHERE @p IS NULL AND decimalDataType IS NULL OR @p IS NOT NULL AND decimalDataType = @p
@@ -376,7 +376,7 @@ SELECT ID FROM ALLTYPES WHERE @p IS NULL AND decfloatDataType IS NULL OR @p IS N
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
-DECLARE @p Decimal
+DECLARE @p Decimal(18, 10)
 SET     @p = NULL
 
 SELECT ID FROM ALLTYPES WHERE @p IS NULL AND decfloatDataType IS NULL OR @p IS NOT NULL AND decfloatDataType = @p

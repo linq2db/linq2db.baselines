@@ -30,18 +30,3 @@ FROM
 WHERE
 	`row1_2`.`Field1` LIKE @search_2 ESCAPE '~'
 
-BeforeExecute
--- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57 (asynchronously)
-
-DROP TABLE IF EXISTS `table3`
-
-BeforeExecute
--- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57 (asynchronously)
-
-DROP TABLE IF EXISTS `table2`
-
-BeforeExecute
--- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57 (asynchronously)
-
-DROP TABLE IF EXISTS `table1`
-

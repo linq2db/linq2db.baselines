@@ -15,7 +15,7 @@ SELECT
 FROM
 	Person p
 WHERE
-	p.PersonID = 1 AND p.PersonID = 1 AND p.PersonID = 1
+	p.PersonID = 1 AND p.PersonID = 1
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
@@ -34,5 +34,5 @@ SELECT
 FROM
 	Person p
 WHERE
-	p.PersonID = 1 AND p.PersonID = 1 AND p.PersonID = 2
+	p.PersonID = 1 AND p.PersonID = 2
 

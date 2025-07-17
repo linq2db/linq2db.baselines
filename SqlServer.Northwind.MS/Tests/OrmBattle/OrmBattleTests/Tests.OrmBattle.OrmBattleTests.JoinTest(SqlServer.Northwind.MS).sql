@@ -3,10 +3,9 @@
 
 SELECT
 	[p].[ProductName],
-	[s].[ContactName],
-	[s].[Phone]
+	[a_Supplier].[ContactName],
+	[a_Supplier].[Phone]
 FROM
 	[Products] [p]
-		LEFT JOIN [Suppliers] [a_Supplier] ON [p].[SupplierID] = [a_Supplier].[SupplierID]
-		INNER JOIN [Suppliers] [s] ON [a_Supplier].[SupplierID] = [s].[SupplierID]
+		INNER JOIN [Suppliers] [a_Supplier] ON [p].[SupplierID] = [a_Supplier].[SupplierID]
 

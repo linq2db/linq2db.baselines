@@ -1,20 +1,20 @@
 ﻿BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @i  -- Int32
+DECLARE @i Int -- Int32
 SET     @i = 1
 
 { CALL TEST_PROCEDURE (?) }
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @i  -- Int32
+DECLARE @i Int -- Int32
 SET     @i = 1
 
 { CALL TEST_PACKAGE1:TEST_PROCEDURE (?) }
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @i  -- Int32
+DECLARE @i Int -- Int32
 SET     @i = 1
 
 { CALL TEST_PACKAGE2:TEST_PROCEDURE (?) }
@@ -48,7 +48,7 @@ LIMIT 1
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @p  -- Int32
+DECLARE @p Int -- Int32
 SET     @p = 1
 
 SELECT
@@ -59,7 +59,7 @@ LIMIT 1
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @p  -- Int32
+DECLARE @p Int -- Int32
 SET     @p = 1
 
 SELECT
@@ -70,7 +70,7 @@ LIMIT 1
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @p  -- Int32
+DECLARE @p Int -- Int32
 SET     @p = 1
 
 SELECT

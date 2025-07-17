@@ -1,8 +1,8 @@
 ﻿BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @Id  -- Int32
+DECLARE @Id Int -- Int32
 SET     @Id = 1
-DECLARE @Int64Nullable  -- Int64
+DECLARE @Int64Nullable BigInt -- Int64
 SET     @Int64Nullable = NULL
 
 INSERT INTO "CreateTableTypes"
@@ -18,9 +18,9 @@ VALUES
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @Id  -- Int32
+DECLARE @Id Int -- Int32
 SET     @Id = 2
-DECLARE @Int64Nullable  -- Int64
+DECLARE @Int64Nullable BigInt -- Int64
 SET     @Int64Nullable = 4
 
 INSERT INTO "CreateTableTypes"

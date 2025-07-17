@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql (asynchronously)
 
-DROP TABLE IF EXISTS `TempTable`
+DROP TEMPORARY TABLE IF EXISTS `TempTable`
 
 BeforeExecute
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql (asynchronously)
@@ -33,5 +33,5 @@ FROM
 BeforeExecute
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql (asynchronously)
 
-DROP TABLE IF EXISTS `TempTable`
+DROP TEMPORARY TABLE IF EXISTS `TempTable`
 

@@ -8,3 +8,14 @@ OUTPUT INSERTED.[Id]
 VALUES (@p0, @p1);
 
 
+-- SqlServer.2022
+
+SELECT TOP (2)
+	[t1].[Id],
+	[t1].[Value],
+	[t1].[ValueN]
+FROM
+	[Issue4646Table] [t1]
+
+
+

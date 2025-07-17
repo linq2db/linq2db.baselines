@@ -733,14 +733,14 @@ SELECT "decfloat16DataType" FROM "AllTypes" WHERE ID = 1
 
 BeforeExecute
 -- Firebird.5 Firebird4
-DECLARE @p VarChar -- String
+DECLARE @p Decimal
 SET     @p = NULL
 
 SELECT ID FROM "AllTypes" WHERE @p IS NULL AND "decfloat16DataType" IS NULL OR @p IS NOT NULL AND "decfloat16DataType" = @p
 
 BeforeExecute
 -- Firebird.5 Firebird4
-DECLARE @p VarChar -- String
+DECLARE @p Decimal
 SET     @p = NULL
 
 SELECT ID FROM "AllTypes" WHERE @p IS NULL AND "decfloat16DataType" IS NULL OR @p IS NOT NULL AND "decfloat16DataType" = @p
@@ -759,21 +759,21 @@ SELECT "decfloat16DataType" FROM "AllTypes" WHERE ID = 2
 
 BeforeExecute
 -- Firebird.5 Firebird4
-DECLARE @p Dec34 -- Object
+DECLARE @p Decimal
 SET     @p = 1234567890123456E-6
 
 SELECT ID FROM "AllTypes" WHERE "decfloat16DataType" = @p
 
 BeforeExecute
 -- Firebird.5 Firebird4
-DECLARE @p Dec34 -- Object
+DECLARE @p Decimal
 SET     @p = 1234567890123456E-6
 
 SELECT ID FROM "AllTypes" WHERE "decfloat16DataType" = @p
 
 BeforeExecute
 -- Firebird.5 Firebird4
-DECLARE @p Dec34 -- Object
+DECLARE @p Decimal
 SET     @p = 1234567890123456E-6
 
 SELECT ID FROM "AllTypes" WHERE "decfloat16DataType" = @p
@@ -785,14 +785,14 @@ SELECT "decfloat34DataType" FROM "AllTypes" WHERE ID = 1
 
 BeforeExecute
 -- Firebird.5 Firebird4
-DECLARE @p VarChar -- String
+DECLARE @p Decimal
 SET     @p = NULL
 
 SELECT ID FROM "AllTypes" WHERE @p IS NULL AND "decfloat34DataType" IS NULL OR @p IS NOT NULL AND "decfloat34DataType" = @p
 
 BeforeExecute
 -- Firebird.5 Firebird4
-DECLARE @p VarChar -- String
+DECLARE @p Decimal
 SET     @p = NULL
 
 SELECT ID FROM "AllTypes" WHERE @p IS NULL AND "decfloat34DataType" IS NULL OR @p IS NOT NULL AND "decfloat34DataType" = @p
@@ -811,21 +811,21 @@ SELECT "decfloat34DataType" FROM "AllTypes" WHERE ID = 2
 
 BeforeExecute
 -- Firebird.5 Firebird4
-DECLARE @p Dec34 -- Object
+DECLARE @p Decimal
 SET     @p = 1234567890123456789012345678901234E-4
 
 SELECT ID FROM "AllTypes" WHERE "decfloat34DataType" = @p
 
 BeforeExecute
 -- Firebird.5 Firebird4
-DECLARE @p Dec34 -- Object
+DECLARE @p Decimal
 SET     @p = 1234567890123456789012345678901234E-4
 
 SELECT ID FROM "AllTypes" WHERE "decfloat34DataType" = @p
 
 BeforeExecute
 -- Firebird.5 Firebird4
-DECLARE @p Dec34 -- Object
+DECLARE @p Decimal
 SET     @p = 1234567890123456789012345678901234E-4
 
 SELECT ID FROM "AllTypes" WHERE "decfloat34DataType" = @p

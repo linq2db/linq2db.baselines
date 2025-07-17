@@ -2,13 +2,15 @@
 -- Access.Jet.Odbc AccessODBC
 DECLARE @p Int -- Int32
 SET     @p = 5
+DECLARE @p Int -- Int32
+SET     @p = 14
 
 SELECT
 	[c_1].[value],
 	[c_1].[id]
 FROM
 	(
-		SELECT * FROM [sample_class] where [id] >= ? and [id] < 14
+		SELECT * FROM [sample_class] where [id] >= ? and [id] < ?
 	) [c_1]
 WHERE
 	[c_1].[id] > 10

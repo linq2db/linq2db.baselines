@@ -26,15 +26,15 @@ VALUES
 
 BeforeExecute
 -- SqlServer.2012
-DECLARE @name NVarChar(4000) -- String
-SET     @name = N'Update14'
+DECLARE @name Int -- Int32
+SET     @name = 8
 DECLARE @idx Int -- Int32
 SET     @idx = 4
 
 UPDATE
 	[Person]
 SET
-	[LastName] = CAST(Len(@name) + @idx AS NVarChar(11))
+	[LastName] = CAST(@name + @idx AS NVarChar(11))
 WHERE
 	[Person].[FirstName] LIKE N'Update14%' ESCAPE N'~'
 

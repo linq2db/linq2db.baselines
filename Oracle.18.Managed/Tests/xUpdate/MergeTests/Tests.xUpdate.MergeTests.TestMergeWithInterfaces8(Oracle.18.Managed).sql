@@ -3,8 +3,8 @@
 
 MERGE INTO "ReviewIndexes" Target
 USING (
-	SELECT 1 AS "source_Id" FROM sys.dual) "Source"
-ON (Target."Id" = "Source"."source_Id")
+	SELECT 1 AS "Id" FROM sys.dual) "Source"
+ON (Target."Id" = "Source"."Id")
 
 WHEN NOT MATCHED THEN
 INSERT
@@ -17,5 +17,5 @@ VALUES
 	2,
 	'3'
 )
- WHERE "Source"."source_Id" > 1
+ WHERE "Source"."Id" > 1
 

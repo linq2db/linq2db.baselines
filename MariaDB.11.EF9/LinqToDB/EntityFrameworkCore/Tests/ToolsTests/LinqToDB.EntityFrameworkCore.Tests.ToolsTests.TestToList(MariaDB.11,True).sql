@@ -1,7 +1,7 @@
 ﻿BeginTransaction(RepeatableRead)
 
 
---  MariaDB.10.MySqlConnector MySql
+-- MariaDB.10.MySqlConnector MySql
 
 SELECT
 	`m_1`.`OrderID`,
@@ -27,16 +27,15 @@ FROM
 		INNER JOIN `Order Details` `d` ON `m_1`.`OrderID` = `d`.`OrderID`
 		INNER JOIN `Products` `a_Product` ON `d`.`ProductID` = `a_Product`.`ProductID`
 WHERE
-	(NOT `m_1`.`IsDeleted` OR NOT `m_1`.`IsDeleted`) AND
-	(NOT `a_Product`.`IsDeleted` OR NOT `a_Product`.`IsDeleted`) AND
-	(NOT `d`.`IsDeleted` OR NOT `d`.`IsDeleted`)
+	NOT `m_1`.`IsDeleted` AND NOT `a_Product`.`IsDeleted` AND
+	NOT `d`.`IsDeleted`
 
 
 
 DisposeTransaction
 
 
---  MariaDB.10.MySqlConnector MySql
+-- MariaDB.10.MySqlConnector MySql
 
 SELECT
 	`e`.`IsDeleted`,
@@ -57,7 +56,7 @@ SELECT
 FROM
 	`Orders` `e`
 WHERE
-	NOT `e`.`IsDeleted` OR NOT `e`.`IsDeleted`
+	NOT `e`.`IsDeleted`
 
 
 

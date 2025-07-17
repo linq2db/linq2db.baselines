@@ -18,7 +18,7 @@ WHERE (@__ef_filter__p_0 = CAST(1 AS bit) OR [p].[IsDeleted] = CAST(0 AS bit) OR
 ORDER BY [p].[ProductID]
 
 
---  SqlServer.2019
+-- SqlServer.2019
 
 SELECT
 	[e].[IsDeleted],

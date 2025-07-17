@@ -1,14 +1,4 @@
 ﻿BeforeExecute
--- Oracle.18.Managed Oracle.Managed Oracle12
-
-DROP SEQUENCE "PersonSeq"
-
-BeforeExecute
--- Oracle.18.Managed Oracle.Managed Oracle12
-
-CREATE SEQUENCE "PersonSeq" MINVALUE 1 START WITH 5
-
-BeforeExecute
 BeginTransaction
 BeforeExecute
 -- Oracle.18.Managed Oracle.Managed Oracle12
@@ -16,10 +6,10 @@ BeforeExecute
 MERGE INTO "Person" Target
 USING (
 	SELECT
-		t1."PersonID" as "source_ID",
-		t1."FirstName" as "source_FirstName",
-		a_Patient."Diagnosis" as "source_Patient_Diagnosis",
-		a_Patient_1."Diagnosis" as "target_Patient_Diagnosis"
+		t1."PersonID" as ID,
+		t1."FirstName",
+		a_Patient."Diagnosis" as "Patient_Diagnosis",
+		a_Patient_1."Diagnosis" as "Patient_Diagnosis_1"
 	FROM
 		"Person" t1
 			INNER JOIN "Patient" a_Patient ON t1."PersonID" = a_Patient."PersonID"
@@ -27,15 +17,15 @@ USING (
 				INNER JOIN "Patient" a_Patient_1 ON Target_1."PersonID" = a_Patient_1."PersonID"
 			ON Target_1."PersonID" = t1."PersonID" AND t1."FirstName" = 'first 4'
 ) "Source"
-ON (Target."PersonID" = "Source"."source_ID" AND "Source"."source_FirstName" = 'first 4')
+ON (Target."PersonID" = "Source".ID AND "Source"."FirstName" = 'first 4')
 
 WHEN MATCHED THEN
 UPDATE
 SET
 	"MiddleName" = 'Updated'
 WHERE
-	"Source"."source_Patient_Diagnosis" LIKE '%very%' ESCAPE '~' AND
-"Source"."target_Patient_Diagnosis" LIKE '%very%' ESCAPE '~'
+	"Source"."Patient_Diagnosis" LIKE '%very%' ESCAPE '~' AND
+"Source"."Patient_Diagnosis_1" LIKE '%very%' ESCAPE '~'
 
 BeforeExecute
 -- Oracle.18.Managed Oracle.Managed Oracle12

@@ -1,4 +1,4 @@
-﻿--  SqlServer.2022
+﻿-- SqlServer.2022
 
 SELECT
 	[p].[IsDeleted],
@@ -21,7 +21,7 @@ FROM
 	[Products] [p]
 		INNER JOIN [Categories] [c_1] ON [c_1].[CategoryID] = [p].[CategoryID]
 WHERE
-	([p].[IsDeleted] = 0 OR [p].[IsDeleted] = 0) AND ([c_1].[IsDeleted] = 0 OR [c_1].[IsDeleted] = 0)
+	[p].[IsDeleted] = 0 AND [c_1].[IsDeleted] = 0
 
 
 

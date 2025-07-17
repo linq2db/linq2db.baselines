@@ -6,7 +6,7 @@ FROM [Customers] AS [c]
 WHERE @__ef_filter__p_0 = CAST(1 AS bit) OR [c].[IsDeleted] = CAST(0 AS bit) OR [c].[IsDeleted] = CAST(0 AS bit)
 
 
---  SqlServer.2016 (asynchronously)
+-- SqlServer.2016 (asynchronously)
 DECLARE @CompanyName NVarChar(40) -- String
 SET     @CompanyName = N'Alfreds Futterkiste'
 DECLARE @CustomerId NVarChar(5) -- String
@@ -17,8 +17,7 @@ UPDATE
 SET
 	[CompanyName] = @CompanyName
 WHERE
-	([Customers].[IsDeleted] = 0 OR [Customers].[IsDeleted] = 0) AND
-	[Customers].[CustomerID] = @CustomerId
+	[Customers].[IsDeleted] = 0 AND [Customers].[CustomerID] = @CustomerId
 
 
 

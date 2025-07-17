@@ -576,6 +576,27 @@ CREATE TABLE AllTypes
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 	datetime2DataType        datetime2         NULL,
 	datetimeoffsetDataType   datetimeoffset    NULL,
 	datetimeoffset0DataType  datetimeoffset(0) NULL,
@@ -588,6 +609,10 @@ CREATE TABLE AllTypes
 	datetimeoffset7DataType  datetimeoffset(7) NULL,
 	dateDataType             date              NULL,
 	timeDataType             time              NULL
+
+
+
+
 
 
 

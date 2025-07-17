@@ -4,15 +4,9 @@
 SELECT
 	`nm`.`MiddleName`
 FROM
-	(
-		SELECT
-			Char_Length(`p`.`MiddleName`) as `Value_1`,
-			`p`.`MiddleName`
-		FROM
-			`Person` `p`
-	) `nm`
+	`Person` `nm`
 WHERE
-	`nm`.`Value_1` <> 0 OR `nm`.`Value_1` IS NULL
+	CHAR_LENGTH(`nm`.`MiddleName`) <> 0 OR `nm`.`MiddleName` IS NULL
 
 BeforeExecute
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80

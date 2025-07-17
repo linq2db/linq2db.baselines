@@ -62,18 +62,3 @@ FROM
 WHERE
 	[row1_2].[Field1] LIKE @search_2 ESCAPE N'~'
 
-BeforeExecute
--- SqlServer.SA.MS SqlServer.2019 (asynchronously)
-
-DROP TABLE IF EXISTS [table3]
-
-BeforeExecute
--- SqlServer.SA.MS SqlServer.2019 (asynchronously)
-
-DROP TABLE IF EXISTS [table2]
-
-BeforeExecute
--- SqlServer.SA.MS SqlServer.2019 (asynchronously)
-
-DROP TABLE IF EXISTS [table1]
-

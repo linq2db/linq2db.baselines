@@ -14,21 +14,22 @@ BeforeExecute
 -- SQLite.MS SQLite
 
 SELECT
-	[t2].[ID]
+	(
+		SELECT
+			[t1].[ID]
+		FROM
+			(
+				SELECT NULL [ID] WHERE 1 = 0
+				UNION ALL
+				VALUES
+					(1), (2), (3), (4)
+				) [t1]
+		WHERE
+			[t1].[ID] = [x].[PersonID]
+		LIMIT 1
+	)
 FROM
 	[Person] [x]
-		INNER JOIN (
-			SELECT
-				[t1].[ID],
-				ROW_NUMBER() OVER (PARTITION BY [t1].[ID] ORDER BY [t1].[ID]) as [rn]
-			FROM
-				(
-					SELECT NULL [ID] WHERE 1 = 0
-					UNION ALL
-					VALUES
-						(1), (2), (3), (4)
-					) [t1]
-		) [t2] ON [t2].[ID] = [x].[PersonID] AND [t2].[rn] <= 1
 
 BeforeExecute
 -- SQLite.MS SQLite

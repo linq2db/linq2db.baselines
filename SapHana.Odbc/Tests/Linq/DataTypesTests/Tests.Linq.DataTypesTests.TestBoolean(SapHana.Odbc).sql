@@ -1,8 +1,8 @@
 ﻿BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @Column  -- Byte
+DECLARE @Column TinyInt(1) -- Byte
 SET     @Column = 0
-DECLARE @ColumnNullable  -- Byte
+DECLARE @ColumnNullable TinyInt(1) -- Byte
 SET     @ColumnNullable = 1
 
 SELECT
@@ -34,11 +34,11 @@ DELETE FROM
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @Id  -- Int32
+DECLARE @Id Int -- Int32
 SET     @Id = 1
-DECLARE @Column  -- Byte
+DECLARE @Column TinyInt(1) -- Byte
 SET     @Column = 1
-DECLARE @ColumnNullable  -- Byte
+DECLARE @ColumnNullable TinyInt -- Byte
 SET     @ColumnNullable = NULL
 
 INSERT INTO "BooleanTable"
@@ -56,11 +56,11 @@ VALUES
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @Id  -- Int32
+DECLARE @Id Int -- Int32
 SET     @Id = 2
-DECLARE @Column  -- Byte
+DECLARE @Column TinyInt(1) -- Byte
 SET     @Column = 0
-DECLARE @ColumnNullable  -- Byte
+DECLARE @ColumnNullable TinyInt(1) -- Byte
 SET     @ColumnNullable = 1
 
 INSERT INTO "BooleanTable"
@@ -96,11 +96,11 @@ DELETE FROM
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @Id  -- Int32
+DECLARE @Id Int -- Int32
 SET     @Id = 1
-DECLARE @Column  -- Byte
+DECLARE @Column TinyInt(1) -- Byte
 SET     @Column = 1
-DECLARE @ColumnNullable  -- Byte
+DECLARE @ColumnNullable TinyInt -- Byte
 SET     @ColumnNullable = NULL
 
 INSERT INTO "BooleanTable"
@@ -118,11 +118,11 @@ VALUES
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @Id  -- Int32
+DECLARE @Id Int -- Int32
 SET     @Id = 2
-DECLARE @Column  -- Byte
+DECLARE @Column TinyInt(1) -- Byte
 SET     @Column = 0
-DECLARE @ColumnNullable  -- Byte
+DECLARE @ColumnNullable TinyInt(1) -- Byte
 SET     @ColumnNullable = 1
 
 INSERT INTO "BooleanTable"
@@ -158,11 +158,11 @@ DELETE FROM
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @Id  -- Int32
+DECLARE @Id Int -- Int32
 SET     @Id = 1
-DECLARE @Column  -- Byte
+DECLARE @Column TinyInt(1) -- Byte
 SET     @Column = 1
-DECLARE @ColumnNullable  -- Byte
+DECLARE @ColumnNullable TinyInt -- Byte
 SET     @ColumnNullable = NULL
 
 INSERT INTO "BooleanTable"
@@ -180,11 +180,11 @@ VALUES
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @Id  -- Int32
+DECLARE @Id Int -- Int32
 SET     @Id = 2
-DECLARE @Column  -- Byte
+DECLARE @Column TinyInt(1) -- Byte
 SET     @Column = 0
-DECLARE @ColumnNullable  -- Byte
+DECLARE @ColumnNullable TinyInt(1) -- Byte
 SET     @ColumnNullable = 1
 
 INSERT INTO "BooleanTable"

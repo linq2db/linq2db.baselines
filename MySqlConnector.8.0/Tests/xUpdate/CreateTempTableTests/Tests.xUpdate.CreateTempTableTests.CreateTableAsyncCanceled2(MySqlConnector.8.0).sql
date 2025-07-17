@@ -26,7 +26,7 @@ FROM
 BeforeExecute
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80 (asynchronously)
 
-DROP TABLE IF EXISTS `TempTable`
+DROP TEMPORARY TABLE IF EXISTS `TempTable`
 
 BeforeExecute
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80

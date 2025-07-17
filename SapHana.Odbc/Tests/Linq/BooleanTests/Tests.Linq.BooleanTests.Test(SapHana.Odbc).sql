@@ -1,6 +1,6 @@
 ﻿BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @True  -- Byte
+DECLARE @True TinyInt(1) -- Byte
 SET     @True = 1
 
 SELECT
@@ -36,7 +36,7 @@ FROM
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @False  -- Byte
+DECLARE @False TinyInt(1) -- Byte
 SET     @False = 0
 
 SELECT
@@ -72,7 +72,7 @@ FROM
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @TrueN  -- Byte
+DECLARE @TrueN TinyInt(1) -- Byte
 SET     @TrueN = 1
 
 SELECT
@@ -108,7 +108,7 @@ FROM
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @FalseN  -- Byte
+DECLARE @FalseN TinyInt(1) -- Byte
 SET     @FalseN = 0
 
 SELECT
@@ -178,7 +178,7 @@ FROM
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @True  -- Byte
+DECLARE @True TinyInt(1) -- Byte
 SET     @True = 1
 
 SELECT
@@ -214,7 +214,7 @@ FROM
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @False  -- Byte
+DECLARE @False TinyInt(1) -- Byte
 SET     @False = 0
 
 SELECT
@@ -250,7 +250,7 @@ FROM
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @TrueN  -- Byte
+DECLARE @TrueN TinyInt(1) -- Byte
 SET     @TrueN = 1
 
 SELECT
@@ -286,7 +286,7 @@ FROM
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @FalseN  -- Byte
+DECLARE @FalseN TinyInt(1) -- Byte
 SET     @FalseN = 0
 
 SELECT
@@ -356,7 +356,7 @@ FROM
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @True  -- Byte
+DECLARE @True TinyInt(1) -- Byte
 SET     @True = 1
 
 SELECT
@@ -392,7 +392,7 @@ FROM
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @False  -- Byte
+DECLARE @False TinyInt(1) -- Byte
 SET     @False = 0
 
 SELECT
@@ -428,7 +428,7 @@ FROM
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @TrueN  -- Byte
+DECLARE @TrueN TinyInt(1) -- Byte
 SET     @TrueN = 1
 
 SELECT
@@ -464,7 +464,7 @@ FROM
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @FalseN  -- Byte
+DECLARE @FalseN TinyInt(1) -- Byte
 SET     @FalseN = 0
 
 SELECT
@@ -532,7 +532,7 @@ FROM
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @True  -- Byte
+DECLARE @True TinyInt(1) -- Byte
 SET     @True = 1
 
 SELECT
@@ -568,7 +568,7 @@ FROM
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @False  -- Byte
+DECLARE @False TinyInt(1) -- Byte
 SET     @False = 0
 
 SELECT
@@ -604,7 +604,7 @@ FROM
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @TrueN  -- Byte
+DECLARE @TrueN TinyInt(1) -- Byte
 SET     @TrueN = 1
 
 SELECT
@@ -640,7 +640,7 @@ FROM
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @FalseN  -- Byte
+DECLARE @FalseN TinyInt(1) -- Byte
 SET     @FalseN = 0
 
 SELECT

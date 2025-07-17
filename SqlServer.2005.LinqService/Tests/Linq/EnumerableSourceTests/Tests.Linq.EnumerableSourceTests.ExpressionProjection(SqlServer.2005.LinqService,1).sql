@@ -6,14 +6,14 @@ DECLARE @ID_1 Int -- Int32
 SET     @ID_1 = 3
 
 SELECT
-	[n].[PersonID],
+	[n].[ID],
 	[n].[FirstName]
 FROM
 	[Person] [t1]
 		INNER JOIN (
-			SELECT @ID AS [PersonID], N'Janet' AS [FirstName]
+			SELECT @ID AS [ID], N'Janet' AS [FirstName]
 			UNION ALL
-			SELECT @ID_1, N'Doe') [n] ON [t1].[PersonID] = [n].[PersonID]
+			SELECT @ID_1, N'Doe') [n] ON [t1].[PersonID] = [n].[ID]
 ORDER BY
-	[n].[PersonID]
+	[n].[ID]
 

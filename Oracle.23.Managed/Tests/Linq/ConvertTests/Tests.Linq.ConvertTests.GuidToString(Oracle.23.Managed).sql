@@ -8,5 +8,5 @@ SELECT
 FROM
 	"LinqDataTypes" t
 WHERE
-	Lower(Lower(Substr(CAST(t."GuidValue" AS Char(36)), 7, 2) || Substr(CAST(t."GuidValue" AS Char(36)), 5, 2) || Substr(CAST(t."GuidValue" AS Char(36)), 3, 2) || Substr(CAST(t."GuidValue" AS Char(36)), 1, 2) || '-' || Substr(CAST(t."GuidValue" AS Char(36)), 11, 2) || Substr(CAST(t."GuidValue" AS Char(36)), 9, 2) || '-' || Substr(CAST(t."GuidValue" AS Char(36)), 15, 2) || Substr(CAST(t."GuidValue" AS Char(36)), 13, 2) || '-' || Substr(CAST(t."GuidValue" AS Char(36)), 17, 4) || '-' || Substr(CAST(t."GuidValue" AS Char(36)), 21, 12))) = :guid
+	Lower(Lower(SUBSTR(RAWTOHEX(t."GuidValue"), 7, 2) || SUBSTR(RAWTOHEX(t."GuidValue"), 5, 2) || SUBSTR(RAWTOHEX(t."GuidValue"), 3, 2) || SUBSTR(RAWTOHEX(t."GuidValue"), 1, 2) || '-' || SUBSTR(RAWTOHEX(t."GuidValue"), 11, 2) || SUBSTR(RAWTOHEX(t."GuidValue"), 9, 2) || '-' || SUBSTR(RAWTOHEX(t."GuidValue"), 15, 2) || SUBSTR(RAWTOHEX(t."GuidValue"), 13, 2) || '-' || SUBSTR(RAWTOHEX(t."GuidValue"), 17, 4) || '-' || SUBSTR(RAWTOHEX(t."GuidValue"), 21, 12))) = :guid
 

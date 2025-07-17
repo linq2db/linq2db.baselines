@@ -2,6 +2,8 @@
 -- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
 DECLARE @personId Integer -- Int32
 SET     @personId = 1
+DECLARE @personId_1 Integer -- Int32
+SET     @personId_1 = 1
 
 SELECT
 	p."FirstName",
@@ -17,8 +19,7 @@ SELECT
 FROM
 	"Person" p
 WHERE
-	p."PersonID" = :personId AND p."PersonID" = :personId AND
-	p."PersonID" = :personId
+	p."PersonID" = :personId AND p."PersonID" = :personId_1
 
 BeforeExecute
 -- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
@@ -41,6 +42,5 @@ SELECT
 FROM
 	"Person" p
 WHERE
-	p."PersonID" = :personId AND p."PersonID" = :personId AND
-	p."PersonID" = :personId_1
+	p."PersonID" = :personId AND p."PersonID" = :personId_1
 

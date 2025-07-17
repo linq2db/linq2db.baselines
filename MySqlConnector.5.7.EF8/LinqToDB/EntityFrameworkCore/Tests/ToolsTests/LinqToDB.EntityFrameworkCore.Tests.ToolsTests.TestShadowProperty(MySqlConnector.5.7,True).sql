@@ -6,14 +6,14 @@ FROM `Products` AS `p`
 WHERE (@__ef_filter__p_0 OR NOT (`p`.`IsDeleted`)) OR NOT (`p`.`IsDeleted`)
 
 
---  MySql.5.7.MySqlConnector MySql57
+-- MySql.5.7.MySqlConnector MySql57
 
 SELECT
 	`p`.`QuantityPerUnit`
 FROM
 	`Products` `p`
 WHERE
-	NOT `p`.`IsDeleted` OR NOT `p`.`IsDeleted`
+	NOT `p`.`IsDeleted`
 
 
 

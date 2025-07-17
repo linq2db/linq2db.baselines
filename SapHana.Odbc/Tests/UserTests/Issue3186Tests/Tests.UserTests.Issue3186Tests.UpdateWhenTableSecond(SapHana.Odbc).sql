@@ -1,6 +1,6 @@
 ﻿BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @is_deleted  -- Byte
+DECLARE @is_deleted TinyInt(1) -- Byte
 SET     @is_deleted = 1
 
 UPDATE

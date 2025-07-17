@@ -3,11 +3,11 @@
 
 MERGE INTO "ReviewIndexes" "Target"
 USING (
-	SELECT 1 AS "source_Id", '2' AS "source_Value" FROM DUMMY) "Source"
-ON ("Target"."Id" = "Source"."source_Id")
+	SELECT 1 AS "Id", '2' AS "Value_1" FROM DUMMY) "Source"
+ON ("Target"."Id" = "Source"."Id")
 
-WHEN MATCHED AND "Target"."Id" <> "Source"."source_Id" THEN
+WHEN MATCHED AND "Target"."Id" <> "Source"."Id" THEN
 UPDATE
 SET
-	"Value" = "Source"."source_Value"
+	"Value" = "Source"."Value_1"
 

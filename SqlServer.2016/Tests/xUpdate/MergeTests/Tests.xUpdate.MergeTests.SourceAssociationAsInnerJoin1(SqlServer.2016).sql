@@ -1,9 +1,4 @@
 ﻿BeforeExecute
--- SqlServer.2016
-
-DBCC CHECKIDENT ('Person', RESEED, 4)
-
-BeforeExecute
 BeginTransaction
 BeforeExecute
 -- SqlServer.2016
@@ -32,18 +27,18 @@ BeforeExecute
 MERGE INTO [Person] [Target]
 USING (
 	SELECT
-		[p].[PersonID] as [source_ID],
-		[a_Patient].[Diagnosis] as [source_Diagnosis]
+		[p].[PersonID] as [ID],
+		[a_Patient].[Diagnosis]
 	FROM
 		[Person] [p]
 			INNER JOIN [Patient] [a_Patient] ON [p].[PersonID] = [a_Patient].[PersonID]
 ) [Source]
 (
-	[source_ID],
-	[source_Diagnosis]
+	[ID],
+	[Diagnosis]
 )
-ON ([Target].[PersonID] = [Source].[source_ID])
-WHEN MATCHED AND [Source].[source_Diagnosis] <> N'sick' OR [Source].[source_Diagnosis] IS NULL THEN DELETE
+ON ([Target].[PersonID] = [Source].[ID])
+WHEN MATCHED AND [Source].[Diagnosis] <> N'sick' OR [Source].[Diagnosis] IS NULL THEN DELETE
 ;
 
 BeforeExecute

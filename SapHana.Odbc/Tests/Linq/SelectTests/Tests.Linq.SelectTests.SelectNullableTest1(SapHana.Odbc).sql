@@ -1,22 +1,22 @@
 ﻿BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @ID  -- Int32
+DECLARE @ID Int -- Int32
 SET     @ID = 1000
 DECLARE @MoneyValue Decimal(1, 0)
 SET     @MoneyValue = 0
-DECLARE @DateTimeValue  -- DateTime
+DECLARE @DateTimeValue DateTime
 SET     @DateTimeValue = NULL
-DECLARE @DateTimeValue2  -- DateTime
+DECLARE @DateTimeValue2 DateTime
 SET     @DateTimeValue2 = NULL
-DECLARE @BoolValue  -- Byte
+DECLARE @BoolValue TinyInt(1) -- Byte
 SET     @BoolValue = 0
 DECLARE @GuidValue Char(36) -- AnsiStringFixedLength
 SET     @GuidValue = NULL
-DECLARE @SmallIntValue  -- Int16
+DECLARE @SmallIntValue SmallInt -- Int16
 SET     @SmallIntValue = NULL
-DECLARE @IntValue  -- Int32
+DECLARE @IntValue Int -- Int32
 SET     @IntValue = NULL
-DECLARE @BigIntValue  -- Int64
+DECLARE @BigIntValue BigInt -- Int64
 SET     @BigIntValue = NULL
 DECLARE @StringValue NVarChar -- String
 SET     @StringValue = NULL

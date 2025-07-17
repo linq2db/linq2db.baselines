@@ -18,7 +18,7 @@ WHERE (@__ef_filter__p_0 OR NOT (p."IsDeleted") OR NOT (p."IsDeleted")) AND (
 ORDER BY p."ProductID"
 
 
---  PostgreSQL.15 PostgreSQL
+-- PostgreSQL.15 PostgreSQL
 
 SELECT
 	e."IsDeleted",
@@ -47,23 +47,23 @@ FROM
 	"Products" e,
 	"Products" pd2
 WHERE
-	(NOT e."IsDeleted" OR NOT e."IsDeleted") AND
+	NOT e."IsDeleted" AND
 	(
 		SELECT
 			COUNT(*)
 		FROM
 			"Order Details" e_1
 		WHERE
-			(NOT e_1."IsDeleted" OR NOT e_1."IsDeleted") AND e."ProductID" = e_1."ProductID"
+			NOT e_1."IsDeleted" AND e."ProductID" = e_1."ProductID"
 	) > 0 AND
-	(NOT pd2."IsDeleted" OR NOT pd2."IsDeleted") AND
+	NOT pd2."IsDeleted" AND
 	(
 		SELECT
 			COUNT(*)
 		FROM
 			"Order Details" e_2
 		WHERE
-			(NOT e_2."IsDeleted" OR NOT e_2."IsDeleted") AND pd2."ProductID" = e_2."ProductID"
+			NOT e_2."IsDeleted" AND pd2."ProductID" = e_2."ProductID"
 	) > 0 AND
 	e."ProductID" = pd2."ProductID"
 ORDER BY

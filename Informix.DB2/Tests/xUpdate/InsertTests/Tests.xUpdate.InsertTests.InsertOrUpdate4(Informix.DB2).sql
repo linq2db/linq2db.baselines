@@ -1,35 +1,5 @@
 ﻿BeforeExecute
 -- Informix.DB2 Informix
-
-INSERT INTO Person (PersonID, FirstName, LastName, MiddleName, Gender) VALUES (2147483647, '1', '2', '3', 'M')
-
-BeforeExecute
--- Informix.DB2 Informix
-
-DELETE FROM Person WHERE PersonID > 4
-
-BeforeExecute
--- Informix.DB2 Informix
-
-ALTER TABLE Person MODIFY (PersonID SERIAL(5))
-
-BeforeExecute
--- Informix.DB2 Informix
-
-ALTER TABLE Person ADD CONSTRAINT PRIMARY KEY (PersonID)
-
-BeforeExecute
--- Informix.DB2 Informix
-
-ALTER TABLE Patient ADD CONSTRAINT(FOREIGN KEY (PersonID) REFERENCES Person (PersonID))
-
-BeforeExecute
--- Informix.DB2 Informix
-
-ALTER TABLE Doctor ADD CONSTRAINT(FOREIGN KEY (PersonID) REFERENCES Person (PersonID))
-
-BeforeExecute
--- Informix.DB2 Informix
 DECLARE @FirstName VarChar(4) -- String
 SET     @FirstName = 'John'
 DECLARE @LastName VarChar(7) -- String
@@ -69,16 +39,16 @@ SET     @id = 5
 UPDATE
 	Patient t1
 SET
-	Diagnosis = To_Char(CHAR_LENGTH(t1.Diagnosis) + @i::Int)
+	Diagnosis = To_Char(CHAR_LENGTH(t1.Diagnosis || '.') - 1 + @i::Int)
 WHERE
-	t1.PersonID = @id
+	t1.PersonID = @id::Int
 
 BeforeExecute
 -- Informix.DB2 Informix
 DECLARE @id Integer(4) -- Int32
 SET     @id = 5
-DECLARE @diagnosis VarChar(3) -- String
-SET     @diagnosis = 'abc'
+DECLARE @diagnosis Integer(4) -- Int32
+SET     @diagnosis = 3
 DECLARE @i Integer(4) -- Int32
 SET     @i = 0
 
@@ -89,8 +59,8 @@ INSERT INTO Patient
 )
 VALUES
 (
-	@id,
-	To_Char(CHAR_LENGTH(@diagnosis::NVarChar(3)) + @i::Int)
+	@id::Int,
+	To_Char(@diagnosis::Int + @i::Int)
 )
 
 BeforeExecute
@@ -103,9 +73,9 @@ SET     @id = 5
 UPDATE
 	Patient t1
 SET
-	Diagnosis = To_Char(CHAR_LENGTH(t1.Diagnosis) + @i::Int)
+	Diagnosis = To_Char(CHAR_LENGTH(t1.Diagnosis || '.') - 1 + @i::Int)
 WHERE
-	t1.PersonID = @id
+	t1.PersonID = @id::Int
 
 BeforeExecute
 -- Informix.DB2 Informix
@@ -117,9 +87,9 @@ SET     @id = 5
 UPDATE
 	Patient t1
 SET
-	Diagnosis = To_Char(CHAR_LENGTH(t1.Diagnosis) + @i::Int)
+	Diagnosis = To_Char(CHAR_LENGTH(t1.Diagnosis || '.') - 1 + @i::Int)
 WHERE
-	t1.PersonID = @id
+	t1.PersonID = @id::Int
 
 BeforeExecute
 -- Informix.DB2 Informix

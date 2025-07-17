@@ -1,10 +1,5 @@
 ﻿BeforeExecute
 -- SqlServer.2008.MS SqlServer.2008
-
-DBCC CHECKIDENT ('Person', RESEED, 4)
-
-BeforeExecute
--- SqlServer.2008.MS SqlServer.2008
 DECLARE @FirstName NVarChar(4000) -- String
 SET     @FirstName = N'UpdateColumnFilter'
 DECLARE @LastName NVarChar(4000) -- String

@@ -19,6 +19,6 @@ WHERE
 	"s"."Id" = 3
 RETURNING
 	"s"."Id" + 1,
-	"s"."ValueStr" || CAST(1 AS VarChar(11) CHARACTER SET UNICODE_FSS),
+	"s"."ValueStr" || 1,
 	"s"."ValueStr" IS NOT NULL
 

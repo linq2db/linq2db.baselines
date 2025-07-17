@@ -3,14 +3,12 @@
 
 SELECT
 	[t2].[cond],
-	[t2].[cond_1],
 	[t2].[Id3]
 FROM
 	[TABLE1] [t1_1]
 		OUTER APPLY (
 			SELECT TOP (1)
-				1 as [cond],
-				[t1].[c1] as [cond_1],
+				[t1].[c1] as [cond],
 				[t1].[Id3]
 			FROM
 				[TABLE2] [x_1]

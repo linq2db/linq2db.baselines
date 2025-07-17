@@ -1,5 +1,5 @@
 ﻿BeforeExecute
---  PostgreSQL.15 PostgreSQL
+-- PostgreSQL.17 PostgreSQL.15 PostgreSQL
 
 MERGE INTO "Issue4556Table2" "Target"
 USING (
@@ -8,13 +8,13 @@ USING (
 )
  "Source"
 (
-	"source_Id",
-	"source_PayloadJson",
-	"source_PayloadJsonB",
-	"source_HeadersJson",
-	"source_HeadersJsonB"
+	"Id",
+	"PayloadJson",
+	"PayloadJsonB",
+	"HeadersJson",
+	"HeadersJsonB"
 )
-ON ("Target"."Id" = "Source"."source_Id")
+ON ("Target"."Id" = "Source"."Id")
 
 WHEN NOT MATCHED THEN
 INSERT
@@ -26,14 +26,14 @@ INSERT
 )
 VALUES
 (
-	"Source"."source_PayloadJson",
-	"Source"."source_PayloadJsonB",
-	"Source"."source_HeadersJson",
-	"Source"."source_HeadersJsonB"
+	"Source"."PayloadJson",
+	"Source"."PayloadJsonB",
+	"Source"."HeadersJson",
+	"Source"."HeadersJsonB"
 )
 
 BeforeExecute
---  PostgreSQL.15 PostgreSQL
+-- PostgreSQL.17 PostgreSQL.15 PostgreSQL
 DECLARE @value Json -- Object
 SET     @value = {[key1, value1]}
 DECLARE @value_1 Jsonb -- Object
@@ -49,13 +49,13 @@ USING (VALUES
 	(0,'"some string"','-124',:value_2,:value_3)
 ) "Source"
 (
-	"source_Id",
-	"source_PayloadJson",
-	"source_PayloadJsonB",
-	"source_HeadersJson",
-	"source_HeadersJsonB"
+	"Id",
+	"PayloadJson",
+	"PayloadJsonB",
+	"HeadersJson",
+	"HeadersJsonB"
 )
-ON ("Target"."Id" = "Source"."source_Id")
+ON ("Target"."Id" = "Source"."Id")
 
 WHEN NOT MATCHED THEN
 INSERT
@@ -67,9 +67,9 @@ INSERT
 )
 VALUES
 (
-	"Source"."source_PayloadJson",
-	"Source"."source_PayloadJsonB",
-	"Source"."source_HeadersJson",
-	"Source"."source_HeadersJsonB"
+	"Source"."PayloadJson",
+	"Source"."PayloadJsonB",
+	"Source"."HeadersJson",
+	"Source"."HeadersJsonB"
 )
 

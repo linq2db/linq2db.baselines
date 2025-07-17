@@ -11,14 +11,14 @@ BeforeExecute
 
 MERGE INTO "InheritanceParent" Target
 USING (
-	SELECT 143 AS "source_Key1", NULL AS "source_Key2", 1 AS "source_Data" FROM sys.dual) "Source"
-ON (Target."InheritanceParentId" = "Source"."source_Key1" AND
-(Target."Name" = "Source"."source_Key2" OR Target."Name" IS NULL AND "Source"."source_Key2" IS NULL))
+	SELECT 143 AS "Key1", NULL AS "Key2", 1 AS "Data_1" FROM sys.dual) "Source"
+ON (Target."InheritanceParentId" = "Source"."Key1" AND
+(Target."Name" = "Source"."Key2" OR Target."Name" IS NULL AND "Source"."Key2" IS NULL))
 
 WHEN MATCHED THEN
 UPDATE
 SET
-	"TypeDiscriminator" = "Source"."source_Data"
+	"TypeDiscriminator" = "Source"."Data_1"
 
 WHEN NOT MATCHED THEN
 INSERT
@@ -29,9 +29,9 @@ INSERT
 )
 VALUES
 (
-	"Source"."source_Key1",
-	"Source"."source_Key2",
-	"Source"."source_Data"
+	"Source"."Key1",
+	"Source"."Key2",
+	"Source"."Data_1"
 )
 
 BeforeExecute
@@ -47,14 +47,14 @@ BeforeExecute
 
 MERGE INTO "InheritanceParent" Target
 USING (
-	SELECT 143 AS "source_Key1", NULL AS "source_Key2", 1 AS "source_Data" FROM sys.dual) "Source"
-ON (Target."InheritanceParentId" = "Source"."source_Key1" AND
-(Target."Name" = "Source"."source_Key2" OR Target."Name" IS NULL AND "Source"."source_Key2" IS NULL))
+	SELECT 143 AS "Key1", NULL AS "Key2", 1 AS "Data_1" FROM sys.dual) "Source"
+ON (Target."InheritanceParentId" = "Source"."Key1" AND
+(Target."Name" = "Source"."Key2" OR Target."Name" IS NULL AND "Source"."Key2" IS NULL))
 
 WHEN MATCHED THEN
 UPDATE
 SET
-	"TypeDiscriminator" = "Source"."source_Data"
+	"TypeDiscriminator" = "Source"."Data_1"
 
 WHEN NOT MATCHED THEN
 INSERT
@@ -65,9 +65,9 @@ INSERT
 )
 VALUES
 (
-	"Source"."source_Key1",
-	"Source"."source_Key2",
-	"Source"."source_Data"
+	"Source"."Key1",
+	"Source"."Key2",
+	"Source"."Data_1"
 )
 
 BeforeExecute

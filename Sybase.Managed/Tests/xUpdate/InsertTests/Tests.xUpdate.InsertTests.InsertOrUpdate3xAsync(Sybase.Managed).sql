@@ -1,10 +1,5 @@
 ﻿BeforeExecute
 -- Sybase.Managed Sybase
-
-sp_chgattribute Person, 'identity_burn_max', 0, '4'
-
-BeforeExecute
--- Sybase.Managed Sybase
 DECLARE @FirstName UniVarChar(4) -- String
 SET     @FirstName = 'John'
 DECLARE @LastName UniVarChar(7) -- String
@@ -43,7 +38,7 @@ SET     @id = 5
 UPDATE
 	[Patient]
 SET
-	[Diagnosis] = CAST(Len([t1].[Diagnosis]) + @i AS NVarChar(11))
+	[Diagnosis] = CAST(CHAR_LENGTH([t1].[Diagnosis]) + @i AS NVarChar(11))
 FROM
 	[Patient] [t1]
 WHERE
@@ -75,7 +70,7 @@ SET     @id = 5
 UPDATE
 	[Patient]
 SET
-	[Diagnosis] = CAST(Len([t1].[Diagnosis]) + @i AS NVarChar(11))
+	[Diagnosis] = CAST(CHAR_LENGTH([t1].[Diagnosis]) + @i AS NVarChar(11))
 FROM
 	[Patient] [t1]
 WHERE
@@ -107,7 +102,7 @@ SET     @id = 5
 UPDATE
 	[Patient]
 SET
-	[Diagnosis] = CAST(Len([t1].[Diagnosis]) + @i AS NVarChar(11))
+	[Diagnosis] = CAST(CHAR_LENGTH([t1].[Diagnosis]) + @i AS NVarChar(11))
 FROM
 	[Patient] [t1]
 WHERE

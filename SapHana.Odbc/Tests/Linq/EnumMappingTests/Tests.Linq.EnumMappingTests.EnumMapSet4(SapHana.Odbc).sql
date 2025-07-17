@@ -1,6 +1,6 @@
 ﻿BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @p  -- Int32
+DECLARE @p Int -- Int32
 SET     @p = 102
 
 DELETE FROM
@@ -24,7 +24,7 @@ VALUES
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @TestField  -- Int64
+DECLARE @TestField BigInt -- Int64
 SET     @TestField = 12
 
 UPDATE
@@ -47,7 +47,7 @@ LIMIT 1
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @p  -- Int32
+DECLARE @p Int -- Int32
 SET     @p = 102
 
 DELETE FROM

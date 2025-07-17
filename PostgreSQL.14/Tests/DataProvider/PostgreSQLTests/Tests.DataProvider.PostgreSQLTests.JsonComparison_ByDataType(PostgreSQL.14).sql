@@ -25,8 +25,6 @@ SELECT
 	COUNT(*)
 FROM
 	"JsonComparisonTable1" r
-WHERE
-	r."Json"::jsonb = r."Json"::jsonb OR r."Json" IS NULL AND r."Json" IS NULL
 
 BeforeExecute
 -- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
@@ -45,8 +43,6 @@ SELECT
 	COUNT(*)
 FROM
 	"JsonComparisonTable1" r
-WHERE
-	r."Jsonb" = r."Jsonb" OR r."Jsonb" IS NULL AND r."Jsonb" IS NULL
 
 BeforeExecute
 -- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL

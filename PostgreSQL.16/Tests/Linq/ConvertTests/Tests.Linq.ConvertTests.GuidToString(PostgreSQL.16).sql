@@ -8,5 +8,5 @@ SELECT
 FROM
 	"LinqDataTypes" t
 WHERE
-	Lower(t."GuidValue"::text) = :guid
+	Lower(t."GuidValue"::VarChar(36)) = :guid
 

@@ -1,6 +1,6 @@
 ﻿BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @p  -- Int32
+DECLARE @p Int -- Int32
 SET     @p = 105
 
 DELETE FROM
@@ -10,9 +10,9 @@ WHERE
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @Id  -- Int32
+DECLARE @Id Int -- Int32
 SET     @Id = 101
-DECLARE @Value  -- Int32
+DECLARE @Value Int -- Int32
 SET     @Value = 11
 
 INSERT INTO "LinqDataTypes"
@@ -28,9 +28,9 @@ VALUES
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @Id  -- Int32
+DECLARE @Id Int -- Int32
 SET     @Id = 102
-DECLARE @Value  -- Int32
+DECLARE @Value Int -- Int32
 SET     @Value = 0
 
 INSERT INTO "LinqDataTypes"
@@ -46,9 +46,9 @@ VALUES
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @Id  -- Int32
+DECLARE @Id Int -- Int32
 SET     @Id = 103
-DECLARE @Value  -- Int32
+DECLARE @Value Int -- Int32
 SET     @Value = NULL
 
 INSERT INTO "LinqDataTypes"
@@ -64,9 +64,9 @@ VALUES
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @Id  -- Int32
+DECLARE @Id Int -- Int32
 SET     @Id = 104
-DECLARE @Value  -- Int32
+DECLARE @Value Int -- Int32
 SET     @Value = NULL
 
 INSERT INTO "LinqDataTypes"
@@ -109,7 +109,7 @@ ORDER BY
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @p  -- Int32
+DECLARE @p Int -- Int32
 SET     @p = 105
 
 DELETE FROM

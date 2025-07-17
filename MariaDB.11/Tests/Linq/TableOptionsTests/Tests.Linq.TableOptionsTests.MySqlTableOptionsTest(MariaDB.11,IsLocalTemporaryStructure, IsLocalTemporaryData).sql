@@ -10,5 +10,5 @@ CREATE TEMPORARY TABLE `TestTable`
 BeforeExecute
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql
 
-DROP TABLE IF EXISTS `TestTable`
+DROP TEMPORARY TABLE IF EXISTS `TestTable`
 

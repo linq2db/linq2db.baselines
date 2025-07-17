@@ -1,6 +1,6 @@
 ﻿BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @ChildID  -- Int32
+DECLARE @ChildID Int -- Int32
 SET     @ChildID = 10
 
 UPDATE

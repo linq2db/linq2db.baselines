@@ -1,4 +1,4 @@
-﻿--  SqlServer.2017
+﻿-- SqlServer.2017
 
 CREATE TABLE [tempdb]..[#WithIdentity]
 (
@@ -14,7 +14,7 @@ INSERT BULK [tempdb]..[#WithIdentity](Name)
 
 
 
---  SqlServer.2017
+-- SqlServer.2017
 
 SELECT
 	[t1].[Id],
@@ -24,7 +24,7 @@ FROM
 
 
 
---  SqlServer.2017
+-- SqlServer.2017
 
 DROP TABLE IF EXISTS [tempdb]..[#WithIdentity]
 

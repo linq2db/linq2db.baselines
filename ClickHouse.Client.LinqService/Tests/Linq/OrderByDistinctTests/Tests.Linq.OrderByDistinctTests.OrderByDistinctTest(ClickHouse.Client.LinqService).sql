@@ -16,6 +16,8 @@ FROM
 	OrderByDistinctData x
 GROUP BY
 	x.DuplicateData
+ORDER BY
+	max(x.OrderData1)
 LIMIT 0, 3
 
 BeforeExecute
@@ -36,5 +38,7 @@ FROM
 	OrderByDistinctData x
 GROUP BY
 	x.DuplicateData
+ORDER BY
+	min(x.OrderData1) DESC
 LIMIT 0, 3
 

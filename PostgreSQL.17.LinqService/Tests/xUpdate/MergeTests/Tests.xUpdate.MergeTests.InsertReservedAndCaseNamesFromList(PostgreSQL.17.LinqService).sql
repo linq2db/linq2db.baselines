@@ -236,20 +236,21 @@ BeforeExecute
 
 MERGE INTO "TestMerge1" "Target"
 USING (VALUES
-	(5,10,4,NULL::Int,NULL,NULL::Int), (3,NULL,3,NULL,NULL,NULL),
-	(4,5,7,NULL,214,NULL), (6,NULL,NULL,NULL,216,NULL)
+	(3,NULL,3,NULL::Int,NULL,NULL::Int),
+	(4,5,7,NULL,214,NULL), (5,10,4,NULL,NULL,NULL),
+	(6,NULL,NULL,NULL,216,NULL)
 ) "Source"
 (
-	source_as,
-	source_take,
-	source_skip,
-	"source_Skip_1",
-	source_insert,
-	"source_SELECT"
+	as_1,
+	take,
+	skip,
+	"Skip_1",
+	insert_1,
+	"SELECT_1"
 )
-ON ("Target"."Id" = "Source".source_as)
+ON ("Target"."Id" = "Source".as_1)
 
-WHEN NOT MATCHED AND "Source".source_insert = 216 THEN
+WHEN NOT MATCHED AND "Source".insert_1 = 216 THEN
 INSERT
 (
 	"Id",
@@ -261,12 +262,12 @@ INSERT
 )
 VALUES
 (
-	"Source".source_as,
-	"Source".source_take,
-	"Source".source_skip,
-	"Source"."source_Skip_1",
-	"Source".source_insert,
-	"Source"."source_SELECT"
+	"Source".as_1,
+	"Source".take,
+	"Source".skip,
+	"Source"."Skip_1",
+	"Source".insert_1,
+	"Source"."SELECT_1"
 )
 
 BeforeExecute

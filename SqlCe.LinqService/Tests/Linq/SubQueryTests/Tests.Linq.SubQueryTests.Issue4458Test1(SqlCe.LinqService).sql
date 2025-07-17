@@ -29,7 +29,7 @@ BeforeExecute
 
 SELECT
 	[i].[Id],
-	[t1].[SUM_1]
+	[t1].[TotalAvailable]
 FROM
 	[Issue4458Item] [i]
 		LEFT JOIN (
@@ -42,7 +42,7 @@ FROM
 		) [stock_1] ON [stock_1].[ItemId] = [i].[Id]
 		OUTER APPLY (
 			SELECT
-				SUM([s].[QuantityAvailable]) as [SUM_1]
+				SUM([s].[QuantityAvailable]) as [TotalAvailable]
 			FROM
 				[WarehouseStock] [s]
 			WHERE

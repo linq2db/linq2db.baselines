@@ -2,7 +2,7 @@
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
 
 SELECT
-	RTRIM(REPLACE(p."MoneyValue"::text, ',', '.'), '0.')
+	RTRIM(Replace(p."MoneyValue"::text, ',', '.'), '0.')
 FROM
 	"LinqDataTypes" p
 WHERE

@@ -5,8 +5,14 @@ SELECT
 	t."Id",
 	t."BoolValue"
 FROM
-	"WhereWithBool" t,
-	"WhereWithBool" x
+	"WhereWithBool" t
 WHERE
-	x."BoolValue" AND x."Id" = 1
+	(
+		SELECT
+			x."BoolValue"
+		FROM
+			"WhereWithBool" x
+		WHERE
+			x."Id" = 1
+	)
 

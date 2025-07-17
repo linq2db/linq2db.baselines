@@ -26,7 +26,7 @@ SELECT CASE
 END
 
 
---  SqlServer.2016 (asynchronously)
+-- SqlServer.2016 (asynchronously)
 
 SELECT
 	[e].[IsDeleted],
@@ -43,32 +43,11 @@ SELECT
 FROM
 	[Products] [e]
 WHERE
-	([e].[IsDeleted] = 0 OR [e].[IsDeleted] = 0) AND [e].[ProductName] LIKE N'%a%' ESCAPE N'~'
+	[e].[IsDeleted] = 0 AND [e].[ProductName] LIKE N'%a%' ESCAPE N'~'
 
 
 
---  SqlServer.2016 (asynchronously)
-
-SELECT
-	[e].[IsDeleted],
-	[e].[ProductID],
-	[e].[ProductName],
-	[e].[SupplierID],
-	[e].[CategoryID],
-	[e].[QuantityPerUnit],
-	[e].[UnitPrice],
-	[e].[UnitsInStock],
-	[e].[UnitsOnOrder],
-	[e].[ReorderLevel],
-	[e].[Discontinued]
-FROM
-	[Products] [e]
-WHERE
-	([e].[IsDeleted] = 0 OR [e].[IsDeleted] = 0) AND [e].[ProductName] LIKE N'%a%' ESCAPE N'~'
-
-
-
---  SqlServer.2016 (asynchronously)
+-- SqlServer.2016 (asynchronously)
 
 SELECT
 	[e].[IsDeleted],
@@ -85,11 +64,32 @@ SELECT
 FROM
 	[Products] [e]
 WHERE
-	([e].[IsDeleted] = 0 OR [e].[IsDeleted] = 0) AND [e].[ProductName] LIKE N'%a%' ESCAPE N'~'
+	[e].[IsDeleted] = 0 AND [e].[ProductName] LIKE N'%a%' ESCAPE N'~'
 
 
 
---  SqlServer.2016 (asynchronously)
+-- SqlServer.2016 (asynchronously)
+
+SELECT
+	[e].[IsDeleted],
+	[e].[ProductID],
+	[e].[ProductName],
+	[e].[SupplierID],
+	[e].[CategoryID],
+	[e].[QuantityPerUnit],
+	[e].[UnitPrice],
+	[e].[UnitsInStock],
+	[e].[UnitsOnOrder],
+	[e].[ReorderLevel],
+	[e].[Discontinued]
+FROM
+	[Products] [e]
+WHERE
+	[e].[IsDeleted] = 0 AND [e].[ProductName] LIKE N'%a%' ESCAPE N'~'
+
+
+
+-- SqlServer.2016 (asynchronously)
 
 SELECT
 	IIF(EXISTS(
@@ -98,7 +98,7 @@ SELECT
 		FROM
 			[Products] [e]
 		WHERE
-			([e].[IsDeleted] = 0 OR [e].[IsDeleted] = 0) AND [e].[ProductName] LIKE N'%a%' ESCAPE N'~'
+			[e].[IsDeleted] = 0 AND [e].[ProductName] LIKE N'%a%' ESCAPE N'~'
 	), 1, 0)
 
 

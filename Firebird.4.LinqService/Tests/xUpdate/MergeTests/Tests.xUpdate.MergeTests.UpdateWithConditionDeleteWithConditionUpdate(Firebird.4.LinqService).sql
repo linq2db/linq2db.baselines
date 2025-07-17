@@ -236,7 +236,7 @@ BeforeExecute
 
 MERGE INTO "TestMerge1" "Target"
 USING (
-	SELECT 3 AS "source_Id", NULL AS "source_Field1", 3 AS "source_Field2", NULL AS "source_Field3" FROM rdb$database
+	SELECT 3 AS "Id", NULL AS "Field1", 3 AS "Field2", NULL AS "Field3" FROM rdb$database
 	UNION ALL
 	SELECT 4, 5, 7, NULL FROM rdb$database
 	UNION ALL
@@ -246,20 +246,20 @@ USING (
 	UNION ALL
 	SELECT 1, 123, NULL, NULL FROM rdb$database) "Source"
 (
-	"source_Id",
-	"source_Field1",
-	"source_Field2",
-	"source_Field3"
+	"Id",
+	"Field1",
+	"Field2",
+	"Field3"
 )
-ON ("Target"."Id" = "Source"."source_Id")
+ON ("Target"."Id" = "Source"."Id")
 
 WHEN MATCHED AND "Target"."Id" = 3 THEN
 UPDATE
 SET
-	"Field1" = "Source"."source_Field1",
-	"Field2" = "Source"."source_Field2",
-	"Field3" = "Source"."source_Field3"
-WHEN MATCHED AND "Source"."source_Id" = 1 THEN DELETE
+	"Field1" = "Source"."Field1",
+	"Field2" = "Source"."Field2",
+	"Field3" = "Source"."Field3"
+WHEN MATCHED AND "Source"."Id" = 1 THEN DELETE
 
 WHEN MATCHED THEN
 UPDATE

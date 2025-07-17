@@ -1,10 +1,5 @@
 ﻿BeforeExecute
 -- DB2 DB2.LUW DB2LUW
-
-ALTER TABLE "Person" ALTER COLUMN "PersonID" RESTART WITH 5
-
-BeforeExecute
--- DB2 DB2.LUW DB2LUW
 DECLARE @FirstName VarChar(4) -- String
 SET     @FirstName = 'John'
 DECLARE @LastName VarChar(7) -- String
@@ -52,7 +47,7 @@ USING (SELECT CAST(@id2 AS Int) AS "PersonID" FROM SYSIBM.SYSDUMMY1 FETCH FIRST 
 WHEN MATCHED THEN
 	UPDATE 
 	SET
-		"Diagnosis" = RTrim(Char(CHARACTER_LENGTH("t1"."Diagnosis",CODEUNITS32) + CAST(@i AS Int)))
+		"Diagnosis" = RTrim(Char(CHAR_LENGTH("t1"."Diagnosis") + @i))
 WHEN NOT MATCHED THEN
 	INSERT
 	(
@@ -82,7 +77,7 @@ USING (SELECT CAST(@id2 AS Int) AS "PersonID" FROM SYSIBM.SYSDUMMY1 FETCH FIRST 
 WHEN MATCHED THEN
 	UPDATE 
 	SET
-		"Diagnosis" = RTrim(Char(CHARACTER_LENGTH("t1"."Diagnosis",CODEUNITS32) + CAST(@i AS Int)))
+		"Diagnosis" = RTrim(Char(CHAR_LENGTH("t1"."Diagnosis") + @i))
 WHEN NOT MATCHED THEN
 	INSERT
 	(
@@ -112,7 +107,7 @@ USING (SELECT CAST(@id2 AS Int) AS "PersonID" FROM SYSIBM.SYSDUMMY1 FETCH FIRST 
 WHEN MATCHED THEN
 	UPDATE 
 	SET
-		"Diagnosis" = RTrim(Char(CHARACTER_LENGTH("t1"."Diagnosis",CODEUNITS32) + CAST(@i AS Int)))
+		"Diagnosis" = RTrim(Char(CHAR_LENGTH("t1"."Diagnosis") + @i))
 WHEN NOT MATCHED THEN
 	INSERT
 	(

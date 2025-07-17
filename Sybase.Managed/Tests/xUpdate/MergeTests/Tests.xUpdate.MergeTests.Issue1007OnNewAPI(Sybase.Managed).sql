@@ -32,9 +32,9 @@ BeforeExecute
 
 MERGE INTO [TestMergeIdentity] [Target]
 USING (
-	SELECT 10 AS [source_Field]) [Source]
+	SELECT 10 AS [Field]) [Source]
 (
-	[source_Field]
+	[Field]
 )
 ON ([Target].[Field] IS NULL)
 
@@ -45,13 +45,13 @@ INSERT
 )
 VALUES
 (
-	[Source].[source_Field]
+	[Source].[Field]
 )
 
 WHEN MATCHED THEN
 UPDATE
 SET
-	[Field] = [Source].[source_Field]
+	[Field] = [Source].[Field]
 
 BeforeExecute
 -- Sybase.Managed Sybase

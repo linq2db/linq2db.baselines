@@ -1,10 +1,5 @@
 ﻿BeforeExecute
 -- SqlServer.SA SqlServer.2019
-
-DBCC CHECKIDENT ('Person', RESEED, 4)
-
-BeforeExecute
--- SqlServer.SA SqlServer.2019
 DECLARE @FirstName NVarChar(4000) -- String
 SET     @FirstName = N'John'
 DECLARE @LastName NVarChar(4000) -- String
@@ -30,4 +25,101 @@ VALUES
 )
 
 SELECT SCOPE_IDENTITY()
+
+BeforeExecute
+-- SqlServer.SA SqlServer.2019 (asynchronously)
+DECLARE @PersonID Int -- Int32
+SET     @PersonID = 5
+DECLARE @Diagnosis NVarChar(4000) -- String
+SET     @Diagnosis = N'abc0'
+
+MERGE INTO [Patient] [t1]
+USING (SELECT @PersonID AS [PersonID]) [s] ON
+(
+	[t1].[PersonID] = [s].[PersonID]
+)
+WHEN MATCHED THEN
+	UPDATE 
+	SET
+		[Diagnosis] = @Diagnosis
+WHEN NOT MATCHED THEN
+	INSERT
+	(
+		[PersonID],
+		[Diagnosis]
+	)
+	VALUES
+	(
+		@PersonID,
+		@Diagnosis
+	);
+
+BeforeExecute
+-- SqlServer.SA SqlServer.2019 (asynchronously)
+DECLARE @PersonID Int -- Int32
+SET     @PersonID = 5
+DECLARE @Diagnosis NVarChar(4000) -- String
+SET     @Diagnosis = N'abc1'
+
+MERGE INTO [Patient] [t1]
+USING (SELECT @PersonID AS [PersonID]) [s] ON
+(
+	[t1].[PersonID] = [s].[PersonID]
+)
+WHEN MATCHED THEN
+	UPDATE 
+	SET
+		[Diagnosis] = @Diagnosis
+WHEN NOT MATCHED THEN
+	INSERT
+	(
+		[PersonID],
+		[Diagnosis]
+	)
+	VALUES
+	(
+		@PersonID,
+		@Diagnosis
+	);
+
+BeforeExecute
+-- SqlServer.SA SqlServer.2019 (asynchronously)
+DECLARE @PersonID Int -- Int32
+SET     @PersonID = 5
+DECLARE @Diagnosis NVarChar(4000) -- String
+SET     @Diagnosis = N'abc2'
+
+MERGE INTO [Patient] [t1]
+USING (SELECT @PersonID AS [PersonID]) [s] ON
+(
+	[t1].[PersonID] = [s].[PersonID]
+)
+WHEN MATCHED THEN
+	UPDATE 
+	SET
+		[Diagnosis] = @Diagnosis
+WHEN NOT MATCHED THEN
+	INSERT
+	(
+		[PersonID],
+		[Diagnosis]
+	)
+	VALUES
+	(
+		@PersonID,
+		@Diagnosis
+	);
+
+BeforeExecute
+-- SqlServer.SA SqlServer.2019 (asynchronously)
+DECLARE @id Int -- Int32
+SET     @id = 5
+
+SELECT TOP (2)
+	[p].[PersonID],
+	[p].[Diagnosis]
+FROM
+	[Patient] [p]
+WHERE
+	[p].[PersonID] = @id
 

@@ -1,6 +1,6 @@
 ﻿BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @Minute  -- Int32
+DECLARE @Minute Int -- Int32
 SET     @Minute = -8
 
 SELECT

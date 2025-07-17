@@ -4,23 +4,23 @@ DECLARE @take Int32
 SET     @take = 100
 
 SELECT
-	t2.ID,
-	t2."sort_1"
+	t1.ID,
+	t1."sort_1"
 FROM
 	(
 		SELECT
-			t1."PersonID" as ID,
-			t1."PersonID" as "sort_1"
+			r."PersonID" as ID,
+			r."PersonID" as "sort_1"
 		FROM
-			"Person" t1
+			"Person" r
 		GROUP BY
-			t1."PersonID",
-			t1."PersonID"
+			r."PersonID",
+			r."PersonID"
 		ORDER BY
-			t1."PersonID"
-	) t2
+			r."PersonID"
+	) t1
 WHERE
 	ROWNUM <= :take
 ORDER BY
-	t2.ID
+	t1.ID
 

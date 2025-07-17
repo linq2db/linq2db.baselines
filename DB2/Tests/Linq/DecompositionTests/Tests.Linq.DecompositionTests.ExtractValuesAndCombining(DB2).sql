@@ -24,7 +24,7 @@ FROM
 			"i"."Kind" = 1 OR "i"."Kind" = 2
 	) "x"
 WHERE
-	NOT ("x"."cond" AND "x"."cond_1" OR NOT "x"."cond")
+	NOT ("x"."cond_1" OR NOT "x"."cond")
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
@@ -85,12 +85,12 @@ SELECT
 	"t1"."Color",
 	"t1"."ItemCode",
 	"t1"."Name",
-	CAST(NULL AS NVarChar(8168)),
+	CAST(NULL AS NVarChar(255)),
 	CAST(NULL AS NVarChar(255)),
 	"t1"."ItemCode_1",
 	"t1"."Name_1",
 	CAST(NULL AS smallint),
-	CAST(NULL AS NVarChar(8168)),
+	CAST(NULL AS NVarChar(255)),
 	CAST(NULL AS NVarChar(255))
 FROM
 	(
@@ -110,11 +110,11 @@ UNION ALL
 SELECT
 	"t2"."cond",
 	CAST(NULL AS smallint),
-	CAST(NULL AS NVarChar(8168)),
+	CAST(NULL AS NVarChar(255)),
 	CAST(NULL AS NVarChar(255)),
 	"t2"."ItemCode",
 	"t2"."Color",
-	CAST(NULL AS NVarChar(8168)),
+	CAST(NULL AS NVarChar(255)),
 	CAST(NULL AS NVarChar(255)),
 	"t2"."cond_1",
 	"t2"."ItemCode_1",
@@ -170,10 +170,10 @@ FROM
 			"x"."Color" as "Name",
 			"x"."ItemCode_1",
 			"x"."Style_1" as "Name_1",
-			CAST(NULL AS NVarChar(8168)) as "ItemCode_2",
+			CAST(NULL AS NVarChar(255)) as "ItemCode_2",
 			CAST(NULL AS NVarChar(255)) as "Name_2",
 			CAST(NULL AS smallint) as "Size_1",
-			CAST(NULL AS NVarChar(8168)) as "ItemCode_3",
+			CAST(NULL AS NVarChar(255)) as "ItemCode_3",
 			CAST(NULL AS NVarChar(255)) as "Name_3"
 		FROM
 			(
@@ -193,9 +193,9 @@ FROM
 		SELECT
 			"t1"."cond" as "Color",
 			CAST(NULL AS smallint) as "Color_1",
-			CAST(NULL AS NVarChar(8168)) as "ItemCode",
+			CAST(NULL AS NVarChar(255)) as "ItemCode",
 			CAST(NULL AS NVarChar(255)) as "Name",
-			CAST(NULL AS NVarChar(8168)) as "ItemCode_1",
+			CAST(NULL AS NVarChar(255)) as "ItemCode_1",
 			CAST(NULL AS NVarChar(255)) as "Name_1",
 			"t1"."ItemCode" as "ItemCode_2",
 			"t1"."Color" as "Name_2",
@@ -218,7 +218,7 @@ FROM
 			"t1"."cond"
 	) "x_1"
 WHERE
-	NOT ("x_1"."Color" AND "x_1"."Color_1" IS NOT NULL AND "x_1"."Color_1" OR NOT "x_1"."Color")
+	NOT ("x_1"."Color_1" IS NOT NULL AND "x_1"."Color_1" OR NOT "x_1"."Color")
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
@@ -256,10 +256,10 @@ FROM
 			"x"."Color" as "Name",
 			"x"."ItemCode_1",
 			"x"."Style_1" as "Name_1",
-			CAST(NULL AS NVarChar(8168)) as "ItemCode_2",
+			CAST(NULL AS NVarChar(255)) as "ItemCode_2",
 			CAST(NULL AS NVarChar(255)) as "Name_2",
 			CAST(NULL AS smallint) as "Size_1",
-			CAST(NULL AS NVarChar(8168)) as "ItemCode_3",
+			CAST(NULL AS NVarChar(255)) as "ItemCode_3",
 			CAST(NULL AS NVarChar(255)) as "Name_3"
 		FROM
 			(
@@ -279,9 +279,9 @@ FROM
 		SELECT
 			"t1"."cond" as "Color",
 			CAST(NULL AS smallint) as "Color_1",
-			CAST(NULL AS NVarChar(8168)) as "ItemCode",
+			CAST(NULL AS NVarChar(255)) as "ItemCode",
 			CAST(NULL AS NVarChar(255)) as "Name",
-			CAST(NULL AS NVarChar(8168)) as "ItemCode_1",
+			CAST(NULL AS NVarChar(255)) as "ItemCode_1",
 			CAST(NULL AS NVarChar(255)) as "Name_1",
 			"t1"."ItemCode" as "ItemCode_2",
 			"t1"."Color" as "Name_2",
@@ -304,7 +304,7 @@ FROM
 			"t1"."cond"
 	) "x_1"
 WHERE
-	"x_1"."Color" AND "x_1"."Color_1" IS NOT NULL AND "x_1"."Color_1" OR
+	"x_1"."Color_1" IS NOT NULL AND "x_1"."Color_1" OR
 	NOT "x_1"."Color"
 
 BeforeExecute
@@ -343,10 +343,10 @@ FROM
 			"x"."Color" as "Name",
 			"x"."ItemCode_1",
 			"x"."Style_1" as "Name_1",
-			CAST(NULL AS NVarChar(8168)) as "ItemCode_2",
+			CAST(NULL AS NVarChar(255)) as "ItemCode_2",
 			CAST(NULL AS NVarChar(255)) as "Name_2",
 			CAST(NULL AS smallint) as "Size_2",
-			CAST(NULL AS NVarChar(8168)) as "ItemCode_3",
+			CAST(NULL AS NVarChar(255)) as "ItemCode_3",
 			CAST(NULL AS NVarChar(255)) as "Name_3"
 		FROM
 			(
@@ -366,9 +366,9 @@ FROM
 		SELECT
 			"t1"."cond" as "Size_1",
 			CAST(NULL AS smallint) as "Color",
-			CAST(NULL AS NVarChar(8168)) as "ItemCode",
+			CAST(NULL AS NVarChar(255)) as "ItemCode",
 			CAST(NULL AS NVarChar(255)) as "Name",
-			CAST(NULL AS NVarChar(8168)) as "ItemCode_1",
+			CAST(NULL AS NVarChar(255)) as "ItemCode_1",
 			CAST(NULL AS NVarChar(255)) as "Name_1",
 			"t1"."ItemCode" as "ItemCode_2",
 			"t1"."Color" as "Name_2",
@@ -391,7 +391,7 @@ FROM
 			"t1"."cond"
 	) "x_1"
 WHERE
-	NOT ("x_1"."Size_1" AND "x_1"."Color" IS NULL AND "x_1"."Size_2" OR NOT "x_1"."Size_1")
+	NOT ("x_1"."Color" IS NULL AND "x_1"."Size_2" OR NOT "x_1"."Size_1")
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
@@ -429,10 +429,10 @@ FROM
 			"x"."Color" as "Name",
 			"x"."ItemCode_1",
 			"x"."Style_1" as "Name_1",
-			CAST(NULL AS NVarChar(8168)) as "ItemCode_2",
+			CAST(NULL AS NVarChar(255)) as "ItemCode_2",
 			CAST(NULL AS NVarChar(255)) as "Name_2",
 			CAST(NULL AS smallint) as "Size_2",
-			CAST(NULL AS NVarChar(8168)) as "ItemCode_3",
+			CAST(NULL AS NVarChar(255)) as "ItemCode_3",
 			CAST(NULL AS NVarChar(255)) as "Name_3"
 		FROM
 			(
@@ -452,9 +452,9 @@ FROM
 		SELECT
 			"t1"."cond" as "Size_1",
 			CAST(NULL AS smallint) as "Color",
-			CAST(NULL AS NVarChar(8168)) as "ItemCode",
+			CAST(NULL AS NVarChar(255)) as "ItemCode",
 			CAST(NULL AS NVarChar(255)) as "Name",
-			CAST(NULL AS NVarChar(8168)) as "ItemCode_1",
+			CAST(NULL AS NVarChar(255)) as "ItemCode_1",
 			CAST(NULL AS NVarChar(255)) as "Name_1",
 			"t1"."ItemCode" as "ItemCode_2",
 			"t1"."Color" as "Name_2",
@@ -477,8 +477,7 @@ FROM
 			"t1"."cond"
 	) "x_1"
 WHERE
-	"x_1"."Size_1" AND "x_1"."Color" IS NULL AND "x_1"."Size_2" OR
-	NOT "x_1"."Size_1"
+	"x_1"."Color" IS NULL AND "x_1"."Size_2" OR NOT "x_1"."Size_1"
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW

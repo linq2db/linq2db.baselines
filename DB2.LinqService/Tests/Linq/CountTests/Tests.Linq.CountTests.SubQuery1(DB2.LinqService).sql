@@ -9,8 +9,7 @@ SELECT
 		FROM
 			"Child" "a_Children"
 		WHERE
-			"p"."ParentID" = "a_Children"."ParentID" AND "a_Children"."ParentID" = "p"."ParentID" AND
-			CAST("a_Children"."ChildID" AS Decimal) <> 0
+			"p"."ParentID" = "a_Children"."ParentID" AND Decimal("a_Children"."ChildID", 18, 10) <> 0
 	)
 FROM
 	"Parent" "p"

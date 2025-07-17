@@ -29,11 +29,5 @@ FROM
 			[x].[ParentID] IN (10000, 20000)
 	) [t1]
 WHERE
-	[u].[ID] = [t1].[ID] AND CASE
-		WHEN [u].[BoolValue] = 1 THEN 1
-		ELSE 0
-	END = CASE
-		WHEN [t1].[BoolValue] = 1 THEN 1
-		ELSE 0
-	END
+	[u].[ID] = [t1].[ID] AND [u].[BoolValue] = [t1].[BoolValue]
 

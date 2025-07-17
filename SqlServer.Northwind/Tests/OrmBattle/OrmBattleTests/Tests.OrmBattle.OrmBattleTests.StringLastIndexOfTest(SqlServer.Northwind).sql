@@ -16,6 +16,6 @@ SELECT TOP (1)
 FROM
 	[Customers] [c_1]
 WHERE
-	(4 - CharIndex(N't', Reverse(Substring([c_1].[City], 2, 3)))) - Len(N't') + 1 = 3 AND
+	4 - CharIndex(N't', Reverse(Substring([c_1].[City], 2, 3))) = 3 AND
 	(CharIndex(N't', Left([c_1].[City], 4), 2) <> 0 OR [c_1].[City] IS NULL)
 

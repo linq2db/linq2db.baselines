@@ -36,21 +36,5 @@ WHERE
 	[x].[Int32N] = 4 OR
 	[x].[UInt32N] = 4 OR
 	[x].[Int64N] = 4 OR
-	[x].[UInt64N] = 4 OR
-	4 = [x].[Byte] OR
-	4 = [x].[SByte] OR
-	4 = [x].[Int16] OR
-	4 = [x].[UInt16] OR
-	4 = [x].[Int32] OR
-	4 = [x].[UInt32] OR
-	4 = [x].[Int64] OR
-	4 = [x].[UInt64] OR
-	4 = [x].[ByteN] OR
-	4 = [x].[SByteN] OR
-	4 = [x].[Int16N] OR
-	4 = [x].[UInt16N] OR
-	4 = [x].[Int32N] OR
-	4 = [x].[UInt32N] OR
-	4 = [x].[Int64N] OR
-	4 = [x].[UInt64N]
+	[x].[UInt64N] = 4
 

@@ -1,16 +1,6 @@
 ﻿BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12
 
-DROP SEQUENCE "AllTypesSeq"
-
-BeforeExecute
--- Oracle.21.Managed Oracle.Managed Oracle12
-
-CREATE SEQUENCE "AllTypesSeq" MINVALUE 1 START WITH 3
-
-BeforeExecute
--- Oracle.21.Managed Oracle.Managed Oracle12
-
 DELETE FROM
 	"AllTypes" t
 WHERE

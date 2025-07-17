@@ -1,8 +1,8 @@
 ﻿BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @year  -- Int32
+DECLARE @year Int -- Int32
 SET     @year = 2010
-DECLARE @year  -- Int32
+DECLARE @year Int -- Int32
 SET     @year = 2010
 
 SELECT

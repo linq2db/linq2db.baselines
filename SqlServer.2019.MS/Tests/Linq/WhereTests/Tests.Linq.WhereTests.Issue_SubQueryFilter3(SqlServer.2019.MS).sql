@@ -16,32 +16,30 @@ WHERE
 			*
 		FROM
 			[Person] [p]
-				CROSS APPLY (
-					SELECT TOP (1)
-						[d].[PersonID] as [cond]
-					FROM
-						[Person] [d]
-					WHERE
-						[d].[PersonID] = [patient_1].[PersonID]
-				) [t1]
 		WHERE
-			[p].[FirstName] LIKE @filter ESCAPE N'~' AND [p].[PersonID] = [t1].[cond]
+			[p].[FirstName] LIKE @filter ESCAPE N'~' AND [p].[PersonID] = (
+				SELECT TOP (1)
+					[d].[PersonID]
+				FROM
+					[Person] [d]
+				WHERE
+					[d].[PersonID] = [patient_1].[PersonID]
+			)
 	) AND
 	EXISTS(
 		SELECT
 			*
 		FROM
 			[Person] [p_1]
-				CROSS APPLY (
-					SELECT TOP (1)
-						[d_1].[PersonID] as [cond]
-					FROM
-						[Person] [d_1]
-					WHERE
-						[d_1].[PersonID] = [patient_1].[PersonID]
-				) [t2]
 		WHERE
-			[p_1].[FirstName] LIKE @filter_1 ESCAPE N'~' AND [p_1].[PersonID] = [t2].[cond]
+			[p_1].[FirstName] LIKE @filter_1 ESCAPE N'~' AND [p_1].[PersonID] = (
+				SELECT TOP (1)
+					[d_1].[PersonID]
+				FROM
+					[Person] [d_1]
+				WHERE
+					[d_1].[PersonID] = [patient_1].[PersonID]
+			)
 	)
 ORDER BY
 	[patient_1].[PersonID]

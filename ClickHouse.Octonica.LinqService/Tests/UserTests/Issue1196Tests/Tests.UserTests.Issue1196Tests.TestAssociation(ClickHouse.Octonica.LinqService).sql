@@ -52,7 +52,7 @@ SELECT
 	a_DocPrepareAssignment.DateRevoke
 FROM
 	Requests r
-		LEFT JOIN FirmInfo a_FirmInfo ON r.FirmId = a_FirmInfo.Id
+		INNER JOIN FirmInfo a_FirmInfo ON r.FirmId = a_FirmInfo.Id
 		INNER JOIN Requests a_Requests ON a_FirmInfo.Id = a_Requests.FirmId
 		LEFT JOIN Assignments a_DocPrepareAssignment ON a_DocPrepareAssignment.TargetId = a_Requests.Id
 WHERE
@@ -70,7 +70,7 @@ SELECT
 	a_DocPrepareAssignment.DateRevoke
 FROM
 	Requests r
-		LEFT JOIN FirmInfo a_FirmInfo ON r.FirmId = a_FirmInfo.Id
+		INNER JOIN FirmInfo a_FirmInfo ON r.FirmId = a_FirmInfo.Id
 		INNER JOIN Requests a_Requests ON a_FirmInfo.Id = a_Requests.FirmId
 		LEFT JOIN Assignments a_DocPrepareAssignment ON a_DocPrepareAssignment.TargetId = a_Requests.Id
 WHERE

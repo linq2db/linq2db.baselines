@@ -19,5 +19,5 @@ FROM
 BeforeExecute
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql
 
-DROP TABLE IF EXISTS `IsTemporaryTable`
+DROP TEMPORARY TABLE IF EXISTS `IsTemporaryTable`
 

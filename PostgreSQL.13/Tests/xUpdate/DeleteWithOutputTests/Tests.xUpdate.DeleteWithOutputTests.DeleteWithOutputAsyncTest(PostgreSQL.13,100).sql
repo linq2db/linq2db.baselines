@@ -22,8 +22,3 @@ RETURNING
 	s."Value",
 	s."ValueStr"
 
-BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL (asynchronously)
-
-DROP TABLE IF EXISTS "TableWithData"
-

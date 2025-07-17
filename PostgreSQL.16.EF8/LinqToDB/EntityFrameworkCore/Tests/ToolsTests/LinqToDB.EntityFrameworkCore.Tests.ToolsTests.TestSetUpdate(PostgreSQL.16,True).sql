@@ -7,7 +7,7 @@ WHERE @__ef_filter__p_0 OR NOT (c."IsDeleted") OR NOT (c."IsDeleted")
 LIMIT 1
 
 
---  PostgreSQL.15 PostgreSQL (asynchronously)
+-- PostgreSQL.15 PostgreSQL (asynchronously)
 DECLARE @CompanyName Varchar(19) -- String
 SET     @CompanyName = 'Alfreds Futterkiste'
 DECLARE @CustomerId Varchar(5) -- String
@@ -18,8 +18,7 @@ UPDATE
 SET
 	"CompanyName" = :CompanyName
 WHERE
-	(NOT "Customers"."IsDeleted" OR NOT "Customers"."IsDeleted") AND
-	"Customers"."CustomerID" = :CustomerId
+	NOT "Customers"."IsDeleted" AND "Customers"."CustomerID" = :CustomerId
 
 
 

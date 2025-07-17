@@ -1,4 +1,4 @@
-﻿--  SqlServer.2017
+﻿-- SqlServer.2017
 DECLARE @value NVarChar(60) -- String
 SET     @value = N'%anything%'
 

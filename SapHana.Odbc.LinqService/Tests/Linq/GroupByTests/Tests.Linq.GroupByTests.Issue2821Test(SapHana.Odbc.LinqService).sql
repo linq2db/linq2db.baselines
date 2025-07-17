@@ -1,12 +1,12 @@
 ﻿BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @currentDate  -- DateTime
+DECLARE @currentDate DateTime
 SET     @currentDate = '2020-02-29 17:54:55.123'
-DECLARE @currentDate  -- DateTime
+DECLARE @currentDate DateTime
 SET     @currentDate = '2020-02-29 17:54:55.123'
-DECLARE @currentDate  -- DateTime
+DECLARE @currentDate DateTime
 SET     @currentDate = '2020-02-29 17:54:55.123'
-DECLARE @currentDate  -- DateTime
+DECLARE @currentDate DateTime
 SET     @currentDate = '2020-02-29 17:54:55.123'
 
 SELECT

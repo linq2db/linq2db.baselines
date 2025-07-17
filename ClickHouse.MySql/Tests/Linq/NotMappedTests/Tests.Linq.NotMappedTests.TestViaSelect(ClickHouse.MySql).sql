@@ -8,7 +8,6 @@ SELECT
 	a_Association1_1.Id,
 	a_Association1_1.Value,
 	a_Association1_1.ParentId,
-	a_Association1_1.Id IS NOT NULL AND a_Association2.Id IS NOT NULL,
 	a_Association2.Id,
 	a_Association2.Value,
 	a_Association2.ParentId

@@ -52,7 +52,7 @@ VALUES
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @productId  -- Int32
+DECLARE @productId Int -- Int32
 SET     @productId = 1
 
 INSERT INTO "Issue4717Product"
@@ -72,7 +72,7 @@ VALUES
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @includedProductId  -- Int32
+DECLARE @includedProductId Int -- Int32
 SET     @includedProductId = 2
 
 INSERT INTO "Issue4717Product"
@@ -92,9 +92,9 @@ VALUES
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @productId  -- Int32
+DECLARE @productId Int -- Int32
 SET     @productId = 1
-DECLARE @includedProductId  -- Int32
+DECLARE @includedProductId Int -- Int32
 SET     @includedProductId = 2
 
 INSERT INTO "Issue4717ProductIncludedProductMapping"
@@ -112,7 +112,7 @@ VALUES
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @productId  -- Int32
+DECLARE @productId Int -- Int32
 SET     @productId = 1
 
 INSERT INTO "Issue4717WarehouseProductMapping"
@@ -130,7 +130,7 @@ VALUES
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @productId  -- Int32
+DECLARE @productId Int -- Int32
 SET     @productId = 1
 
 WITH "CTE_1" ("ProductId", "WarehouseId")

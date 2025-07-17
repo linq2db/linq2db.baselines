@@ -1,0 +1,7 @@
+﻿BeforeExecute
+-- PostgreSQL.18 PostgreSQL
+
+SELECT
+	CURRENT_TIMESTAMP
+LIMIT 1
+

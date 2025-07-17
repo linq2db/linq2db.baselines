@@ -3,7 +3,7 @@
 
 SELECT
 	c_1.ParentID,
-	c_1.ParentID IS NOT NULL AND a_Parent.ParentID IS NOT NULL,
+	a_Parent.ParentID,
 	a_Parent.Value1
 FROM
 	Parent t1

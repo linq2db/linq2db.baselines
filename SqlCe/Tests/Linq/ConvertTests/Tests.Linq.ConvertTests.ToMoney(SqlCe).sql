@@ -2,7 +2,7 @@
 -- SqlCe
 
 SELECT
-	CAST([t].[MoneyValue] AS Money) as [c1]
+	CAST([t].[MoneyValue] AS MONEY) as [c1]
 FROM
 	[LinqDataTypes] [t]
 

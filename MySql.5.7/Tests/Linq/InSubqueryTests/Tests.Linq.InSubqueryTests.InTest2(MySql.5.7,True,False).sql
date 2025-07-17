@@ -14,7 +14,7 @@ WHERE
 		FROM
 			`Parent` `p`
 		WHERE
-			`p`.`Value1` IS NOT NULL AND `c_1`.`ParentID` = `p`.`Value1`
+			`c_1`.`ParentID` = `p`.`Value1`
 	)
 
 BeforeExecute

@@ -30,39 +30,3 @@ FROM
 WHERE
 	row1_2."Field1" LIKE :search_2 ESCAPE '~'
 
-BeforeExecute
--- Oracle.23.Managed Oracle.Managed Oracle12 (asynchronously)
-
-BEGIN
-	EXECUTE IMMEDIATE 'DROP TABLE "table3"';
-EXCEPTION
-	WHEN OTHERS THEN
-		IF SQLCODE != -942 THEN
-			RAISE;
-		END IF;
-END;
-
-BeforeExecute
--- Oracle.23.Managed Oracle.Managed Oracle12 (asynchronously)
-
-BEGIN
-	EXECUTE IMMEDIATE 'DROP TABLE "table2"';
-EXCEPTION
-	WHEN OTHERS THEN
-		IF SQLCODE != -942 THEN
-			RAISE;
-		END IF;
-END;
-
-BeforeExecute
--- Oracle.23.Managed Oracle.Managed Oracle12 (asynchronously)
-
-BEGIN
-	EXECUTE IMMEDIATE 'DROP TABLE "table1"';
-EXCEPTION
-	WHEN OTHERS THEN
-		IF SQLCODE != -942 THEN
-			RAISE;
-		END IF;
-END;
-

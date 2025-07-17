@@ -1,6 +1,6 @@
 ﻿BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @filterValue  -- Int32
+DECLARE @filterValue Int -- Int32
 SET     @filterValue = 2
 
 SELECT

@@ -1,10 +1,10 @@
 ﻿BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @Id  -- Int32
+DECLARE @Id Int -- Int32
 SET     @Id = 1
-DECLARE @Type  -- Int32
+DECLARE @Type Int -- Int32
 SET     @Type = 1
-DECLARE @ChildId  -- Int32
+DECLARE @ChildId Int -- Int32
 SET     @ChildId = 2
 DECLARE @Name_First NVarChar(5) -- String
 SET     @Name_First = 'First'
@@ -43,15 +43,15 @@ LIMIT 2
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @Type  -- Int32
+DECLARE @Type Int -- Int32
 SET     @Type = 1
-DECLARE @ChildId  -- Int32
+DECLARE @ChildId Int -- Int32
 SET     @ChildId = 2
 DECLARE @Name_First NVarChar(6) -- String
 SET     @Name_First = 'First1'
 DECLARE @Name_Second NVarChar(6) -- String
 SET     @Name_Second = 'Second'
-DECLARE @Id  -- Int32
+DECLARE @Id Int -- Int32
 SET     @Id = 1
 
 UPDATE

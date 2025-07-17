@@ -241,9 +241,9 @@ USING (VALUES
 	(3), (4), (5), (6)
 ) [Source]
 (
-	[source_Key]
+	[Key_1]
 )
-ON ([Target].[Id] = [Source].[source_Key])
+ON ([Target].[Id] = [Source].[Key_1])
 
 WHEN NOT MATCHED BY SOURCE AND [Target].[Field1] = 2 THEN UPDATE
 SET

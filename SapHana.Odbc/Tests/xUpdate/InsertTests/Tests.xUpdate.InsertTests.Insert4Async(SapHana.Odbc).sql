@@ -8,7 +8,7 @@ WHERE
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc (asynchronously)
-DECLARE @id  -- Int32
+DECLARE @id Int -- Int32
 SET     @id = 1001
 
 INSERT INTO "Child"
@@ -26,7 +26,7 @@ WHERE
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc (asynchronously)
-DECLARE @id  -- Int32
+DECLARE @id Int -- Int32
 SET     @id = 1001
 
 SELECT

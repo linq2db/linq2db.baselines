@@ -238,7 +238,7 @@ BeforeExecute
 
 MERGE INTO [TestMerge1] [Target]
 USING (
-	SELECT 3 AS [source_in], NULL AS [source_join], 3 AS [source_outer], NULL AS [source_inner], NULL AS [source_with], NULL AS [source_left]
+	SELECT 3 AS [in_1], NULL AS [join_1], 3 AS [outer_1], NULL AS [inner_1], NULL AS [with_1], NULL AS [left_1]
 	UNION ALL
 	SELECT 4, 5, 7, NULL, 214, NULL
 	UNION ALL
@@ -246,23 +246,23 @@ USING (
 	UNION ALL
 	SELECT 6, NULL, NULL, NULL, 216, NULL) [Source]
 (
-	[source_in],
-	[source_join],
-	[source_outer],
-	[source_inner],
-	[source_with],
-	[source_left]
+	[in_1],
+	[join_1],
+	[outer_1],
+	[inner_1],
+	[with_1],
+	[left_1]
 )
-ON ([Target].[Id] = [Source].[source_in])
+ON ([Target].[Id] = [Source].[in_1])
 
-WHEN MATCHED AND [Source].[source_with] = 214 THEN
+WHEN MATCHED AND [Source].[with_1] = 214 THEN
 UPDATE
 SET
-	[Field1] = [Source].[source_join],
-	[Field2] = [Source].[source_outer],
-	[Field3] = [Source].[source_inner],
-	[Field4] = [Source].[source_with],
-	[Field5] = [Source].[source_left]
+	[Field1] = [Source].[join_1],
+	[Field2] = [Source].[outer_1],
+	[Field3] = [Source].[inner_1],
+	[Field4] = [Source].[with_1],
+	[Field5] = [Source].[left_1]
 
 BeforeExecute
 -- Sybase.Managed Sybase

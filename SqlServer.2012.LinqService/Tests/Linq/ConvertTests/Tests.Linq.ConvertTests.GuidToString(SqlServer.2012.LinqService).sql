@@ -8,5 +8,5 @@ SELECT
 FROM
 	[LinqDataTypes] [t]
 WHERE
-	Lower(CAST([t].[GuidValue] AS NVarChar(36))) = @guid
+	Lower(CAST([t].[GuidValue] AS Char(36))) = @guid
 

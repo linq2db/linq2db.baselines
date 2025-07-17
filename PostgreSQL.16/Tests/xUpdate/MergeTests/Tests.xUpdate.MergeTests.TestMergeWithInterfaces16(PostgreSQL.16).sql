@@ -6,8 +6,8 @@ USING (VALUES
 	(1)
 ) "Source"
 (
-	"source_Id"
+	"Id"
 )
-ON ("Target"."Id" = "Source"."source_Id")
+ON ("Target"."Id" = "Source"."Id")
 WHEN MATCHED THEN DELETE
 

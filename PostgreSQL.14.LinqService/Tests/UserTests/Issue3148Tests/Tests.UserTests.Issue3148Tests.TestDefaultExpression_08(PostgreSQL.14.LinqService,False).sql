@@ -9,41 +9,53 @@ FROM
 		LEFT JOIN "Parent" "a_Parent" ON x."ParentID" = "a_Parent"."ParentID"
 		LEFT JOIN LATERAL (
 			SELECT
-				"a_Parent_1"."ParentID",
-				"a_Parent_1"."Value1"
+				CASE
+					WHEN d.not_null IS NOT NULL THEN d."ParentID"
+					ELSE NULL
+				END as "ParentID",
+				CASE
+					WHEN d.not_null IS NOT NULL THEN d."Value1"
+					ELSE NULL
+				END as "Value1"
 			FROM
-				"GrandChild" "a_GrandChildren"
-					LEFT JOIN "Child" "a_Child" ON "a_GrandChildren"."ParentID" = "a_Child"."ParentID" AND "a_GrandChildren"."ChildID" = "a_Child"."ChildID"
-					LEFT JOIN "Parent" "a_Parent_1" ON "a_Child"."ParentID" = "a_Parent_1"."ParentID"
-			WHERE
-				x."ParentID" = "a_GrandChildren"."ParentID" AND x."ChildID" = "a_GrandChildren"."ChildID"
+				(
+					SELECT
+						1 as c1
+				) t1
+					LEFT JOIN (
+						SELECT
+							1 as not_null,
+							"a_Parent_1"."ParentID",
+							"a_Parent_1"."Value1"
+						FROM
+							"GrandChild" e
+								LEFT JOIN "Child" "a_Child" ON e."ParentID" = "a_Child"."ParentID" AND e."ChildID" = "a_Child"."ChildID"
+								LEFT JOIN "Parent" "a_Parent_1" ON "a_Child"."ParentID" = "a_Parent_1"."ParentID"
+						WHERE
+							x."ParentID" = e."ParentID" AND x."ChildID" = e."ChildID"
+					) d ON 1=1
 			LIMIT 1
-		) t1 ON 1=1
+		) t2 ON 1=1
 WHERE
-	NOT (("a_Parent"."ParentID" = t1."ParentID" OR "a_Parent"."ParentID" IS NULL AND t1."ParentID" IS NULL) AND ("a_Parent"."Value1" = t1."Value1" OR "a_Parent"."Value1" IS NULL AND t1."Value1" IS NULL)) AND
-	(x."ParentID" <> (
-		SELECT
-			CASE
-				WHEN "a_Children"."ChildID" IS NOT NULL THEN "a_Children"."ChildID"
-				ELSE 0
-			END
-		FROM
-			"Child" "a_Children"
-		WHERE
-			"a_Parent"."ParentID" = "a_Children"."ParentID"
-		LIMIT 1
-	) OR (
-		SELECT
-			CASE
-				WHEN "a_Children"."ChildID" IS NOT NULL THEN "a_Children"."ChildID"
-				ELSE 0
-			END
-		FROM
-			"Child" "a_Children"
-		WHERE
-			"a_Parent"."ParentID" = "a_Children"."ParentID"
-		LIMIT 1
-	) IS NULL)
+	NOT (("a_Parent"."ParentID" = t2."ParentID" OR "a_Parent"."ParentID" IS NULL AND t2."ParentID" IS NULL) AND NOT ("a_Parent"."ParentID" IS NULL AND t2."ParentID" IS NOT NULL) AND NOT ("a_Parent"."ParentID" IS NOT NULL AND t2."ParentID" IS NULL) AND ("a_Parent"."Value1" = t2."Value1" OR "a_Parent"."Value1" IS NULL AND t2."Value1" IS NULL) AND NOT ("a_Parent"."Value1" IS NULL AND t2."Value1" IS NOT NULL) AND NOT ("a_Parent"."Value1" IS NOT NULL AND t2."Value1" IS NULL)) AND
+	CASE
+		WHEN x."ParentID" = (
+			SELECT
+				CASE
+					WHEN d_1."ChildID" IS NOT NULL THEN d_1."ChildID"
+					ELSE 0
+				END
+			FROM
+				(
+					SELECT
+						1 as c1
+				) t3
+					LEFT JOIN "Child" d_1 ON "a_Parent"."ParentID" = d_1."ParentID"
+			LIMIT 1
+		)
+			THEN False
+		ELSE True
+	END
 
 BeforeExecute
 -- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
@@ -56,39 +68,51 @@ FROM
 		LEFT JOIN "Parent" "a_Parent" ON x."ParentID" = "a_Parent"."ParentID"
 		LEFT JOIN LATERAL (
 			SELECT
-				"a_Parent_1"."ParentID",
-				"a_Parent_1"."Value1"
+				CASE
+					WHEN d.not_null IS NOT NULL THEN d."ParentID"
+					ELSE NULL
+				END as "ParentID",
+				CASE
+					WHEN d.not_null IS NOT NULL THEN d."Value1"
+					ELSE NULL
+				END as "Value1"
 			FROM
-				"GrandChild" "a_GrandChildren"
-					LEFT JOIN "Child" "a_Child" ON "a_GrandChildren"."ParentID" = "a_Child"."ParentID" AND "a_GrandChildren"."ChildID" = "a_Child"."ChildID"
-					LEFT JOIN "Parent" "a_Parent_1" ON "a_Child"."ParentID" = "a_Parent_1"."ParentID"
-			WHERE
-				x."ParentID" = "a_GrandChildren"."ParentID" AND x."ChildID" = "a_GrandChildren"."ChildID"
+				(
+					SELECT
+						1 as c1
+				) t1
+					LEFT JOIN (
+						SELECT
+							1 as not_null,
+							"a_Parent_1"."ParentID",
+							"a_Parent_1"."Value1"
+						FROM
+							"GrandChild" e
+								LEFT JOIN "Child" "a_Child" ON e."ParentID" = "a_Child"."ParentID" AND e."ChildID" = "a_Child"."ChildID"
+								LEFT JOIN "Parent" "a_Parent_1" ON "a_Child"."ParentID" = "a_Parent_1"."ParentID"
+						WHERE
+							x."ParentID" = e."ParentID" AND x."ChildID" = e."ChildID"
+					) d ON 1=1
 			LIMIT 1
-		) t1 ON 1=1
+		) t2 ON 1=1
 WHERE
-	NOT (("a_Parent"."ParentID" = t1."ParentID" OR "a_Parent"."ParentID" IS NULL AND t1."ParentID" IS NULL) AND ("a_Parent"."Value1" = t1."Value1" OR "a_Parent"."Value1" IS NULL AND t1."Value1" IS NULL)) AND
-	(x."ParentID" <> (
-		SELECT
-			CASE
-				WHEN "a_Children"."ChildID" IS NOT NULL THEN "a_Children"."ChildID"
-				ELSE 0
-			END
-		FROM
-			"Child" "a_Children"
-		WHERE
-			"a_Parent"."ParentID" = "a_Children"."ParentID"
-		LIMIT 1
-	) OR (
-		SELECT
-			CASE
-				WHEN "a_Children"."ChildID" IS NOT NULL THEN "a_Children"."ChildID"
-				ELSE 0
-			END
-		FROM
-			"Child" "a_Children"
-		WHERE
-			"a_Parent"."ParentID" = "a_Children"."ParentID"
-		LIMIT 1
-	) IS NULL)
+	NOT (("a_Parent"."ParentID" = t2."ParentID" OR "a_Parent"."ParentID" IS NULL AND t2."ParentID" IS NULL) AND NOT ("a_Parent"."ParentID" IS NULL AND t2."ParentID" IS NOT NULL) AND NOT ("a_Parent"."ParentID" IS NOT NULL AND t2."ParentID" IS NULL) AND ("a_Parent"."Value1" = t2."Value1" OR "a_Parent"."Value1" IS NULL AND t2."Value1" IS NULL) AND NOT ("a_Parent"."Value1" IS NULL AND t2."Value1" IS NOT NULL) AND NOT ("a_Parent"."Value1" IS NOT NULL AND t2."Value1" IS NULL)) AND
+	CASE
+		WHEN x."ParentID" = (
+			SELECT
+				CASE
+					WHEN d_1."ChildID" IS NOT NULL THEN d_1."ChildID"
+					ELSE 0
+				END
+			FROM
+				(
+					SELECT
+						1 as c1
+				) t3
+					LEFT JOIN "Child" d_1 ON "a_Parent"."ParentID" = d_1."ParentID"
+			LIMIT 1
+		)
+			THEN False
+		ELSE True
+	END
 

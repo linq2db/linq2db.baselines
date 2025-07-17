@@ -1,10 +1,5 @@
 ﻿BeforeExecute
 -- Firebird.2.5 Firebird
-
-SET GENERATOR "PersonID" TO 4
-
-BeforeExecute
--- Firebird.2.5 Firebird
 DECLARE @FirstName VarChar(25) -- String
 SET     @FirstName = 'UpdateColumnFilterUpdated'
 DECLARE @LastName VarChar(8) -- String

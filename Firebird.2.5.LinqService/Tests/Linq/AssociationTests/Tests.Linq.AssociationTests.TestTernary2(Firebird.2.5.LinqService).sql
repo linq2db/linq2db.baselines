@@ -2,7 +2,6 @@
 -- Firebird.2.5 Firebird
 
 SELECT
-	"a_Middle"."ParentID",
 	"a_Bottom"."ParentID",
 	"a_Bottom"."ChildID",
 	"a_Bottom"."GrandChildID"

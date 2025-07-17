@@ -1,4 +1,4 @@
-﻿--  SQLite.MS SQLite
+﻿-- SQLite.MS SQLite
 
 SELECT
 	[e].[IsDeleted],
@@ -14,9 +14,9 @@ SELECT
 	[e].[Discontinued]
 FROM
 	[Products] [e]
-		LEFT JOIN [Products] [op] ON [op].[ProductID] <> [e].[ProductID] AND [op].[ProductName] = [e].[ProductName] AND (NOT [op].[IsDeleted] OR NOT [op].[IsDeleted])
+		LEFT JOIN [Products] [op] ON [op].[ProductID] <> [e].[ProductID] AND [op].[ProductName] = [e].[ProductName] AND NOT [op].[IsDeleted]
 WHERE
-	(NOT [e].[IsDeleted] OR NOT [e].[IsDeleted]) AND [op].[ProductID] IS NULL
+	NOT [e].[IsDeleted] AND [op].[ProductID] IS NULL
 
 
 

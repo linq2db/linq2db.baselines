@@ -6,24 +6,24 @@ FROM [Products] AS [p]
 WHERE (@__ef_filter__p_0 = CAST(1 AS bit) OR [p].[IsDeleted] = CAST(0 AS bit) OR [p].[IsDeleted] = CAST(0 AS bit)) AND [p].[ProductName] LIKE N'U%'
 
 
---  SqlServer.2017 (asynchronously)
+-- SqlServer.2017 (asynchronously)
 
 SELECT
 	MAX([e].[QuantityPerUnit])
 FROM
 	[Products] [e]
 WHERE
-	([e].[IsDeleted] = 0 OR [e].[IsDeleted] = 0) AND [e].[ProductName] LIKE N'U%' ESCAPE N'~'
+	[e].[IsDeleted] = 0 AND [e].[ProductName] LIKE N'U%' ESCAPE N'~'
 
 
 
---  SqlServer.2017
+-- SqlServer.2017
 
 DELETE [e]
 FROM
 	[Products] [e]
 WHERE
-	([e].[IsDeleted] = 0 OR [e].[IsDeleted] = 0) AND [e].[ProductName] = N'a'
+	[e].[IsDeleted] = 0 AND [e].[ProductName] = N'a'
 
 
 

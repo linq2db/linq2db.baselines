@@ -1,8 +1,8 @@
 ﻿BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @Value3  -- Int32
+DECLARE @Value3 Int -- Int32
 SET     @Value3 = 7
-DECLARE @id  -- Int32
+DECLARE @id Int -- Int32
 SET     @id = 1
 
 UPDATE
@@ -14,7 +14,7 @@ WHERE
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @id  -- Int32
+DECLARE @id Int -- Int32
 SET     @id = 1
 
 SELECT
@@ -27,9 +27,9 @@ LIMIT 2
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @Value3  -- Int32
+DECLARE @Value3 Int -- Int32
 SET     @Value3 = 8
-DECLARE @id  -- Int32
+DECLARE @id Int -- Int32
 SET     @id = 1
 
 UPDATE
@@ -41,7 +41,7 @@ WHERE
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @id  -- Int32
+DECLARE @id Int -- Int32
 SET     @id = 1
 
 SELECT

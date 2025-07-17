@@ -10,20 +10,19 @@ WHEN 1 = 1 THEN
 	)
 	VALUES
 	(
-		"source_A",
-		"source_B"
+		A,
+		B
 	)
 SELECT
-	s.ID as "source_A",
-	t1.ID as "source_B"
+	s.ID as A,
+	(
+		SELECT
+			x.ID
+		FROM
+			"Dest2" x
+		WHERE
+			x.ID > 5 AND ROWNUM <= 1
+	) as B
 FROM
 	"TestSource" s
-		CROSS JOIN (
-			SELECT
-				x.ID
-			FROM
-				"Dest2" x
-			WHERE
-				x.ID > 5 AND ROWNUM <= 1
-		) t1
 

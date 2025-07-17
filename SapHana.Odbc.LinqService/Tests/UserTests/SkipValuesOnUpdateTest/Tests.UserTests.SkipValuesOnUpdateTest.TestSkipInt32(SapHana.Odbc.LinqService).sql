@@ -1,10 +1,10 @@
 ﻿BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @Id  -- Int32
+DECLARE @Id Int -- Int32
 SET     @Id = 1
 DECLARE @Name NVarChar(5) -- String
 SET     @Name = 'Smith'
-DECLARE @Age  -- Int32
+DECLARE @Age Int -- Int32
 SET     @Age = 2
 
 INSERT INTO "PR_1598_Update_Table"
@@ -37,9 +37,9 @@ BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @Name NVarChar(6) -- String
 SET     @Name = 'Franki'
-DECLARE @Age  -- Int32
+DECLARE @Age Int -- Int32
 SET     @Age = 15
-DECLARE @Id  -- Int32
+DECLARE @Id Int -- Int32
 SET     @Id = 1
 
 UPDATE
@@ -67,7 +67,7 @@ BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @Name NVarChar(4) -- String
 SET     @Name = 'Jack'
-DECLARE @Id  -- Int32
+DECLARE @Id Int -- Int32
 SET     @Id = 1
 
 UPDATE

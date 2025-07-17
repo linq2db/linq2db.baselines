@@ -16,7 +16,7 @@ FROM
 		WHERE
 			[p].[ParentID] = 1
 	) [m_1]
-		INNER JOIN [Child] [d] ON ([m_1].[ParentID] = [d].[ParentID] - CVar(?))
+		INNER JOIN [Child] [d] ON ([m_1].[ParentID] = [d].[ParentID] - ?)
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC

@@ -1,6 +1,6 @@
 ﻿BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @var3  -- Int32
+DECLARE @var3 Int -- Int32
 SET     @var3 = 1
 
 WITH "CTE_1" ("ChildID", "ParentID")

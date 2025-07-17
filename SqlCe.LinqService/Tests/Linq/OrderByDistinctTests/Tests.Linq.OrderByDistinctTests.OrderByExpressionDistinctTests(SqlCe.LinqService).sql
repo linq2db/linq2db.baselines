@@ -23,10 +23,16 @@ SET     @take = 3
 SELECT
 	[x].[DuplicateData]
 FROM
-	[OrderByDistinctData] [x]
-GROUP BY
-	[x].[DuplicateData]
+	(
+		SELECT
+			MAX([g_1].[OrderData1] % 3) as [OrderData1],
+			[g_1].[DuplicateData]
+		FROM
+			[OrderByDistinctData] [g_1]
+		GROUP BY
+			[g_1].[DuplicateData]
+	) [x]
 ORDER BY
-	[x].[DuplicateData]
+	[x].[OrderData1]
 OFFSET @skip ROWS FETCH NEXT @take ROWS ONLY 
 

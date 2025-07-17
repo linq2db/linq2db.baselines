@@ -2,9 +2,9 @@
 -- ClickHouse.Client ClickHouse
 
 SELECT
-	trim(TRAILING '0.' FROM REPLACE(toString(p.MoneyValue), ',', '.'))
+	trim(TRAILING '0.' FROM Replace(toString(p.MoneyValue), ',', '.'))
 FROM
 	LinqDataTypes p
 WHERE
-	CHAR_LENGTH(toString(p.MoneyValue)) > 0
+	lengthUTF8(toString(p.MoneyValue)) > 0
 

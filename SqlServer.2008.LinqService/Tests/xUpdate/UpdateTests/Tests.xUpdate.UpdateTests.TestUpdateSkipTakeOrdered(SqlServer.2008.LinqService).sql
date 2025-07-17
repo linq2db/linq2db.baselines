@@ -193,9 +193,9 @@ FROM
 	[Parent] [u],
 	(
 		SELECT
+			[x].[Value1],
 			ROW_NUMBER() OVER (ORDER BY [x].[ParentID] DESC) as [RN],
-			[x].[ParentID],
-			[x].[Value1]
+			[x].[ParentID]
 		FROM
 			[Parent] [x]
 		WHERE
