@@ -4,7 +4,7 @@
 SET GLOBAL local_infile=ON
 
 BeforeExecute
-INSERT BULK `NeedS.esca Pin``g`(ne.eds `escaPing, Bit_1, Bit_2, Bit_3, Bit_4, Bit_5, needs escaping2, Binary_1, Binary_2, Binary_3, Binary_4, VarBinary_1, VarBinary_2, Blob_1, Blob_2, TinyBlob_1, TinyBlob_2, MediumBlob_1, MediumBlob_2, LongBlob_1, LongBlob_2
+INSERT BULK `NeedS.esca Pin``g`(ne.eds `escaPing, Bit_1, Bit_2, Bit_3, Bit_4, Bit_5, needs escaping2, Binary_1, Binary_2, Binary_3, Binary_4, VarBinary_1, VarBinary_2, Blob_1, Blob_2, TinyBlob_1, TinyBlob_2, MediumBlob_1, MediumBlob_2, LongBlob_1, LongBlob_2)
 
 BeforeExecute
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql

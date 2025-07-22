@@ -18,7 +18,7 @@ BeforeExecute
 SELECT LAST_INSERT_ID()
 
 BeforeExecute
-INSERT ASYNC BULK `AllTypes`(ID, intDataType
+INSERT ASYNC BULK `AllTypes`(ID, intDataType)
 
 BeforeExecute
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql

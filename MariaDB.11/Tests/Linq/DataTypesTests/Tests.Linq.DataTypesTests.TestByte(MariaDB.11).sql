@@ -129,7 +129,7 @@ FROM
 	`ByteTable`
 
 BeforeExecute
-INSERT BULK `ByteTable`(Id, Column, ColumnNullable
+INSERT BULK `ByteTable`(Id, Column, ColumnNullable)
 
 BeforeExecute
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql
