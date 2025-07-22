@@ -4,7 +4,7 @@ DECLARE @text VarChar(3) -- String
 SET     @text = '123'
 
 SELECT
-	Concat(`c_1`.`ChildID`, ',', Coalesce(@text, ''))
+	Concat(CAST(`c_1`.`ChildID` AS CHAR(11)), ',', Coalesce(@text, ''))
 FROM
 	`Child` `c_1`
 LIMIT 1
