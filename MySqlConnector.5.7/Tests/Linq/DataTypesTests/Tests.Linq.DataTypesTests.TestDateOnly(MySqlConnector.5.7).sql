@@ -129,7 +129,7 @@ FROM
 	`DateOnlyTable`
 
 BeforeExecute
-INSERT BULK `DateOnlyTable`(Id, Column, ColumnNullable
+INSERT BULK `DateOnlyTable`(Id, Column, ColumnNullable)
 
 BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57

@@ -129,7 +129,7 @@ FROM
 	`BigDecimalMySqlConnectorTable`
 
 BeforeExecute
-INSERT BULK `BigDecimalMySqlConnectorTable`(Id, Decimal, DecimalN
+INSERT BULK `BigDecimalMySqlConnectorTable`(Id, Decimal, DecimalN)
 
 BeforeExecute
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80

@@ -1,5 +1,5 @@
 ﻿BeforeExecute
-INSERT BULK `TPHTable`(Id, Discriminator, Value1, Value2, Value3, NullableBool
+INSERT BULK `TPHTable`(Id, Discriminator, Value1, Value2, Value3, NullableBool)
 
 BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57

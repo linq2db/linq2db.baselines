@@ -19,7 +19,7 @@ VALUES
 (2)
 
 BeforeExecute
-INSERT ASYNC BULK `SimpleBulkCopyTable`(Id
+INSERT ASYNC BULK `SimpleBulkCopyTable`(Id)
 
 BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57 (asynchronously)
@@ -42,5 +42,5 @@ VALUES
 (20)
 
 BeforeExecute
-INSERT ASYNC BULK `SimpleBulkCopyTable`(Id
+INSERT ASYNC BULK `SimpleBulkCopyTable`(Id)
 

@@ -19,7 +19,7 @@ VALUES
 (2)
 
 BeforeExecute
-INSERT ASYNC BULK `SimpleBulkCopyTable`(Id
+INSERT ASYNC BULK `SimpleBulkCopyTable`(Id)
 
 BeforeExecute
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql (asynchronously)
@@ -42,5 +42,5 @@ VALUES
 (20)
 
 BeforeExecute
-INSERT ASYNC BULK `SimpleBulkCopyTable`(Id
+INSERT ASYNC BULK `SimpleBulkCopyTable`(Id)
 

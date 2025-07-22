@@ -1,5 +1,5 @@
 ﻿BeforeExecute
-INSERT BULK `InheritanceFilter`(Id, Code, Child1Field, Child2Field, Grandchild11Field, Grandchild12Field, Grandchild21Field, Grandchild22Field
+INSERT BULK `InheritanceFilter`(Id, Code, Child1Field, Child2Field, Grandchild11Field, Grandchild12Field, Grandchild21Field, Grandchild22Field)
 
 BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
