@@ -11,10 +11,10 @@ BeforeExecute
 SELECT Max(`PersonID`) FROM `Person`
 
 BeforeExecute
-INSERT ASYNC BULK `Person`(FirstName, PersonID, LastName, MiddleName, Gender
+INSERT ASYNC BULK `Person`(FirstName, PersonID, LastName, MiddleName, Gender)
 
 BeforeExecute
-INSERT ASYNC BULK `Person`(FirstName, PersonID, LastName, MiddleName, Gender
+INSERT ASYNC BULK `Person`(FirstName, PersonID, LastName, MiddleName, Gender)
 
 BeforeExecute
 DisposeTransaction

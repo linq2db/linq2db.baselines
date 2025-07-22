@@ -4,5 +4,5 @@
 SET GLOBAL local_infile=ON
 
 BeforeExecute
-INSERT ASYNC BULK `SimpleBulkCopyTable`(Id
+INSERT ASYNC BULK `SimpleBulkCopyTable`(Id)
 
