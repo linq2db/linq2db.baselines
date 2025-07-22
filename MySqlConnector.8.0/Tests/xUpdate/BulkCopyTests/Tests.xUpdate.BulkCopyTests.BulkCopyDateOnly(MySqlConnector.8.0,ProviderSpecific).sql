@@ -1,5 +1,5 @@
 ﻿BeforeExecute
-INSERT BULK `DateOnlyTable`(Date
+INSERT BULK `DateOnlyTable`(Date)
 
 BeforeExecute
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80

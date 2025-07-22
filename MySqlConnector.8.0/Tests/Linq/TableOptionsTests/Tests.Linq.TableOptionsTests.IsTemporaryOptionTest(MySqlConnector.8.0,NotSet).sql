@@ -89,7 +89,7 @@ VALUES
 )
 
 BeforeExecute
-INSERT BULK `temp_table1`(ID, Value
+INSERT BULK `temp_table1`(ID, Value)
 
 BeforeExecute
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
