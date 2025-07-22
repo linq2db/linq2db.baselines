@@ -2,20 +2,20 @@
 
 SELECT
 	[p].[OrderID],
-	DateDiff(year, [p].[ShippedDate], [p].[OrderDate]),
-	IIF([p].[OrderDate] IS NULL, NULL, DateDiff(year, [p].[ShippedDate], [p].[OrderDate])),
-	DateDiff(month, [p].[ShippedDate], [p].[OrderDate]),
-	IIF([p].[OrderDate] IS NULL, NULL, DateDiff(month, [p].[ShippedDate], [p].[OrderDate])),
-	DateDiff(day, [p].[ShippedDate], [p].[OrderDate]),
-	IIF([p].[OrderDate] IS NULL, NULL, DateDiff(day, [p].[ShippedDate], [p].[OrderDate])),
-	DateDiff(hour, [p].[ShippedDate], [p].[OrderDate]),
-	IIF([p].[OrderDate] IS NULL, NULL, DateDiff(hour, [p].[ShippedDate], [p].[OrderDate])),
-	DateDiff(minute, [p].[ShippedDate], [p].[OrderDate]),
-	IIF([p].[OrderDate] IS NULL, NULL, DateDiff(minute, [p].[ShippedDate], [p].[OrderDate])),
-	DateDiff(second, [p].[ShippedDate], [p].[OrderDate]),
-	IIF([p].[OrderDate] IS NULL, NULL, DateDiff(second, [p].[ShippedDate], [p].[OrderDate])),
-	DateDiff(millisecond, [p].[ShippedDate], DateAdd(millisecond, 100, [p].[ShippedDate])),
-	IIF([p].[OrderDate] IS NULL, NULL, DateDiff(millisecond, [p].[ShippedDate], DateAdd(millisecond, 100, [p].[ShippedDate])))
+	DATEDIFF(year, [p].[ShippedDate], [p].[OrderDate]),
+	IIF([p].[OrderDate] IS NULL, NULL, DATEDIFF(year, [p].[ShippedDate], [p].[OrderDate])),
+	DATEDIFF(month, [p].[ShippedDate], [p].[OrderDate]),
+	IIF([p].[OrderDate] IS NULL, NULL, DATEDIFF(month, [p].[ShippedDate], [p].[OrderDate])),
+	DATEDIFF(day, [p].[ShippedDate], [p].[OrderDate]),
+	IIF([p].[OrderDate] IS NULL, NULL, DATEDIFF(day, [p].[ShippedDate], [p].[OrderDate])),
+	DATEDIFF(hour, [p].[ShippedDate], [p].[OrderDate]),
+	IIF([p].[OrderDate] IS NULL, NULL, DATEDIFF(hour, [p].[ShippedDate], [p].[OrderDate])),
+	DATEDIFF(minute, [p].[ShippedDate], [p].[OrderDate]),
+	IIF([p].[OrderDate] IS NULL, NULL, DATEDIFF(minute, [p].[ShippedDate], [p].[OrderDate])),
+	DATEDIFF(second, [p].[ShippedDate], [p].[OrderDate]),
+	IIF([p].[OrderDate] IS NULL, NULL, DATEDIFF(second, [p].[ShippedDate], [p].[OrderDate])),
+	DATEDIFF(millisecond, [p].[ShippedDate], DateAdd(millisecond, 100, [p].[ShippedDate])),
+	IIF([p].[OrderDate] IS NULL, NULL, DATEDIFF(millisecond, [p].[ShippedDate], DateAdd(millisecond, 100, [p].[ShippedDate])))
 FROM
 	[Orders] [p]
 
