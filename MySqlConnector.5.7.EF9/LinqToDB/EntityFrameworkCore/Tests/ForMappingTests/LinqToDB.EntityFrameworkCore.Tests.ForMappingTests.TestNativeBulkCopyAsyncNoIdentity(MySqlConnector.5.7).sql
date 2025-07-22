@@ -10,7 +10,7 @@ CREATE TEMPORARY TABLE `NoIdentity`
 
 
 
-INSERT ASYNC BULK `NoIdentity`(Id, Name
+INSERT ASYNC BULK `NoIdentity`(Id, Name)
 
 
 

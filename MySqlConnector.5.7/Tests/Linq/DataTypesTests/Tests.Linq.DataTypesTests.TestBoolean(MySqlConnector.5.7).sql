@@ -129,7 +129,7 @@ FROM
 	`BooleanTable`
 
 BeforeExecute
-INSERT BULK `BooleanTable`(Id, Column, ColumnNullable
+INSERT BULK `BooleanTable`(Id, Column, ColumnNullable)
 
 BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57

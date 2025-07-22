@@ -129,7 +129,7 @@ FROM
 	`ByteTable`
 
 BeforeExecute
-INSERT BULK `ByteTable`(Id, Column, ColumnNullable
+INSERT BULK `ByteTable`(Id, Column, ColumnNullable)
 
 BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
