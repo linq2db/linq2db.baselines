@@ -10,7 +10,7 @@ CREATE TEMPORARY TABLE `NoIdentity`
 
 
 
-INSERT BULK `NoIdentity`(Id, Name
+INSERT BULK `NoIdentity`(Id, Name)
 
 
 
