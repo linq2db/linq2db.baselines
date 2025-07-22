@@ -129,7 +129,7 @@ FROM
 	`StringEnumTable`
 
 BeforeExecute
-INSERT BULK `StringEnumTable`(Id, Column, ColumnNullable
+INSERT BULK `StringEnumTable`(Id, Column, ColumnNullable)
 
 BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57

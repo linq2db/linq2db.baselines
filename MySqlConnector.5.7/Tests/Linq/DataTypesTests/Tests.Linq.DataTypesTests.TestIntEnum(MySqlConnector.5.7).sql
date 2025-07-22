@@ -129,7 +129,7 @@ FROM
 	`IntEnumTable`
 
 BeforeExecute
-INSERT BULK `IntEnumTable`(Id, Column, ColumnNullable
+INSERT BULK `IntEnumTable`(Id, Column, ColumnNullable)
 
 BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57

@@ -89,7 +89,7 @@ VALUES
 )
 
 BeforeExecute
-INSERT ASYNC BULK `temp_table1`(ID, Value
+INSERT ASYNC BULK `temp_table1`(ID, Value)
 
 BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57 (asynchronously)
