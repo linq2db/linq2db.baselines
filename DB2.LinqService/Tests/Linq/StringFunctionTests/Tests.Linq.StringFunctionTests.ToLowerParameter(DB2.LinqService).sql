@@ -12,5 +12,6 @@ SELECT
 FROM
 	"Person" "p"
 WHERE
-	Lower("p"."FirstName") = @param AND "p"."PersonID" = 1
+	Lower("p"."FirstName") = CAST(@param AS NVarChar(4)) AND
+	"p"."PersonID" = 1
 

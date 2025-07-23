@@ -249,7 +249,7 @@ WHEN MATCHED THEN
 UPDATE
 SET
 	"Field1" = "Target"."Field1" + "Source"."Field1",
-	"Field2" = @name + @idx,
+	"Field2" = CAST(@name AS Int) + @idx,
 	"Field3" = "Target"."Field3" + "Source"."Field3",
 	"Field4" = "Target"."Field4" + "Source"."Field4",
 	"Field5" = "Target"."Field5" + "Source"."Field5"
