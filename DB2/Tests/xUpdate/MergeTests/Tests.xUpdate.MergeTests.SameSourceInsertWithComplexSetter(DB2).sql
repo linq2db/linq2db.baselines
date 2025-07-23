@@ -253,7 +253,7 @@ VALUES
 (
 	10 + "Source"."Id",
 	123,
-	@name + @idx,
+	CAST(@name AS Int) + @idx,
 	"Source"."Field2",
 	999,
 	888
