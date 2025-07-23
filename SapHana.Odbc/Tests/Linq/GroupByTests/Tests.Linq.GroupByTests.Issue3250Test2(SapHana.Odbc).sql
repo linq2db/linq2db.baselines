@@ -2,7 +2,7 @@
 -- SapHana.Odbc SapHanaOdbc
 
 SELECT
-	(COUNT(*) || ' items have not been processed, e.g. #' || MIN("s"."PersonID")) || '.'
+	(CAST(COUNT(*) AS NVarChar(11)) || ' items have not been processed, e.g. #' || CAST(MIN("s"."PersonID") AS NVarChar(11))) || '.'
 FROM
 	"Person" "s"
 WHERE

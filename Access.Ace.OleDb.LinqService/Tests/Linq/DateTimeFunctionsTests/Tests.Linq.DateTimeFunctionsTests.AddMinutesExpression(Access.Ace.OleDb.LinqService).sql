@@ -4,7 +4,7 @@ DECLARE @Minute Integer -- Int32
 SET     @Minute = -8
 
 SELECT
-	DatePart('n', DateAdd('n', CVar(@Minute), [t].[DateTimeValue]))
+	DatePart('n', DateAdd('n', @Minute, [t].[DateTimeValue]))
 FROM
 	[LinqDataTypes] [t]
 

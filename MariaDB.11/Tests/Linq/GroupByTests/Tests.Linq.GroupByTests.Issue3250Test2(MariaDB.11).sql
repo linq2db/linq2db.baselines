@@ -2,7 +2,7 @@
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql
 
 SELECT
-	Concat(COUNT(*), ' items have not been processed, e.g. #', MIN(`s`.`PersonID`), '.')
+	Concat(CAST(COUNT(*) AS CHAR(11)), ' items have not been processed, e.g. #', CAST(MIN(`s`.`PersonID`) AS CHAR(11)), '.')
 FROM
 	`Person` `s`
 WHERE

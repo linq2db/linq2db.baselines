@@ -2,7 +2,7 @@
 -- ClickHouse.Client ClickHouse
 
 SELECT
-	concat(toString(COUNT(*)), ' items have not been processed, e.g. #', toString(minOrNull(g_1.PersonID)), '.')
+	concat(toString(COUNT(*)), ' items have not been processed, e.g. #', Coalesce(toString(minOrNull(g_1.PersonID)), ''), '.')
 FROM
 	Person g_1
 WHERE

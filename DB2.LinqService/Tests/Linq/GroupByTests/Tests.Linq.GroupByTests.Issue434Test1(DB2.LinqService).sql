@@ -11,7 +11,7 @@ FROM
 	"Person" "m_1"
 		INNER JOIN "Patient" "d" ON "m_1"."PersonID" = "d"."PersonID"
 WHERE
-	Lower("m_1"."FirstName") LIKE @input ESCAPE '~'
+	Lower("m_1"."FirstName") LIKE CAST(@input AS NVarChar(6)) ESCAPE '~'
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
@@ -24,5 +24,5 @@ SELECT
 FROM
 	"Person" "p"
 WHERE
-	Lower("p"."FirstName") LIKE @input ESCAPE '~'
+	Lower("p"."FirstName") LIKE CAST(@input AS NVarChar(6)) ESCAPE '~'
 
