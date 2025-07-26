@@ -268,4 +268,210 @@ BeforeExecute
 BeforeExecute
 BeginTransaction
 BeforeExecute
+-- SapHana.Odbc SapHanaOdbc
+
+{ CALL "TESTDB"."AddIssue792Record" () }
+
+BeforeExecute
+-- SapHana.Odbc SapHanaOdbc
+DECLARE @TABLENAME VarChar(50) -- AnsiString
+SET     @TABLENAME = ''
+DECLARE @CONSTRAINTNAME VarChar(100) -- AnsiString
+SET     @CONSTRAINTNAME = ''
+DECLARE @SCHEMANAME VarChar(50) -- AnsiString
+SET     @SCHEMANAME = ''
+
+{ CALL "TESTDB"."DROPCONSTRAINTFROMTABLE" (?,?,?) }
+
+BeforeExecute
+-- SapHana.Odbc SapHanaOdbc
+DECLARE @FUNCTIONNAME VarChar(50) -- AnsiString
+SET     @FUNCTIONNAME = ''
+DECLARE @SCHEMANAME VarChar(50) -- AnsiString
+SET     @SCHEMANAME = ''
+
+{ CALL "TESTDB"."DROPEXISTINGFUNCTION" (?,?) }
+
+BeforeExecute
+-- SapHana.Odbc SapHanaOdbc
+DECLARE @PROCEDURENAME VarChar(50) -- AnsiString
+SET     @PROCEDURENAME = ''
+DECLARE @SCHEMANAME VarChar(50) -- AnsiString
+SET     @SCHEMANAME = ''
+
+{ CALL "TESTDB"."DROPEXISTINGPROCEDURE" (?,?) }
+
+BeforeExecute
+-- SapHana.Odbc SapHanaOdbc
+DECLARE @TABLENAME VarChar(50) -- AnsiString
+SET     @TABLENAME = ''
+DECLARE @SCHEMANAME VarChar(50) -- AnsiString
+SET     @SCHEMANAME = ''
+
+{ CALL "TESTDB"."DROPEXISTINGTABLE" (?,?) }
+
+BeforeExecute
+-- SapHana.Odbc SapHanaOdbc
+DECLARE @VIEWNAME VarChar(50) -- AnsiString
+SET     @VIEWNAME = ''
+DECLARE @SCHEMANAME VarChar(50) -- AnsiString
+SET     @SCHEMANAME = ''
+
+{ CALL "TESTDB"."DROPEXISTINGVIEW" (?,?) }
+
+BeforeExecute
+-- SapHana.Odbc SapHanaOdbc
+
+{ CALL "TESTDB"."DuplicateColumnNames" () }
+
+BeforeExecute
+-- SapHana.Odbc SapHanaOdbc
+DECLARE @STR VarChar(50) -- AnsiString
+SET     @STR = ''
+DECLARE @OUTPUTSTR VarChar(50) -- AnsiString
+SET     @OUTPUTSTR = ''
+DECLARE @INPUTOUTPUTSTR VarChar(50) -- AnsiString
+SET     @INPUTOUTPUTSTR = ''
+
+{ CALL "TESTDB"."OutRefEnumTest" (?,?,?) }
+
+BeforeExecute
+-- SapHana.Odbc SapHanaOdbc
+DECLARE @ID Int(10) -- Int32
+SET     @ID = 0
+DECLARE @OUTPUTID Int(10) -- Int32
+SET     @OUTPUTID = 0
+DECLARE @INPUTOUTPUTID Int(10) -- Int32
+SET     @INPUTOUTPUTID = 0
+DECLARE @STR VarChar(50) -- AnsiString
+SET     @STR = ''
+DECLARE @OUTPUTSTR VarChar(50) -- AnsiString
+SET     @OUTPUTSTR = ''
+DECLARE @INPUTOUTPUTSTR VarChar(50) -- AnsiString
+SET     @INPUTOUTPUTSTR = ''
+
+{ CALL "TESTDB"."OutRefTest" (?,?,?,?,?,?) }
+
+BeforeExecute
+-- SapHana.Odbc SapHanaOdbc
+
+{ CALL "TESTDB"."Patient_SelectAll" () }
+
+BeforeExecute
+-- SapHana.Odbc SapHanaOdbc
+DECLARE @FIRSTNAME NVarChar(50) -- String
+SET     @FIRSTNAME = ''
+DECLARE @LASTNAME NVarChar(50) -- String
+SET     @LASTNAME = ''
+
+{ CALL "TESTDB"."Patient_SelectByName" (?,?) }
+
+BeforeExecute
+-- SapHana.Odbc SapHanaOdbc
+DECLARE @PERSONID Int(10) -- Int32
+SET     @PERSONID = 0
+
+{ CALL "TESTDB"."Person_Delete" (?) }
+
+BeforeExecute
+-- SapHana.Odbc SapHanaOdbc
+DECLARE @FIRSTNAME NVarChar(50) -- String
+SET     @FIRSTNAME = ''
+DECLARE @LASTNAME NVarChar(50) -- String
+SET     @LASTNAME = ''
+DECLARE @MIDDLENAME NVarChar(50) -- String
+SET     @MIDDLENAME = ''
+DECLARE @GENDER Char(1) -- AnsiStringFixedLength
+SET     @GENDER = char(0)
+
+{ CALL "TESTDB"."Person_Insert" (?,?,?,?) }
+
+BeforeExecute
+-- SapHana.Odbc SapHanaOdbc
+DECLARE @FIRSTNAME NVarChar(50) -- String
+SET     @FIRSTNAME = ''
+DECLARE @LASTNAME NVarChar(50) -- String
+SET     @LASTNAME = ''
+DECLARE @MIDDLENAME NVarChar(50) -- String
+SET     @MIDDLENAME = ''
+DECLARE @GENDER Char(1) -- AnsiStringFixedLength
+SET     @GENDER = char(0)
+DECLARE @PERSONID Int(10) -- Int32
+SET     @PERSONID = 0
+
+{ CALL "TESTDB"."Person_Insert_OutputParameter" (?,?,?,?,?) }
+
+BeforeExecute
+-- SapHana.Odbc SapHanaOdbc
+
+{ CALL "TESTDB"."Person_SelectAll" () }
+
+BeforeExecute
+-- SapHana.Odbc SapHanaOdbc
+DECLARE @ID Int(10) -- Int32
+SET     @ID = 0
+
+{ CALL "TESTDB"."Person_SelectByKey" (?) }
+
+BeforeExecute
+-- SapHana.Odbc SapHanaOdbc
+DECLARE @FIRSTNAME NVarChar(50) -- String
+SET     @FIRSTNAME = ''
+DECLARE @LASTNAME NVarChar(50) -- String
+SET     @LASTNAME = ''
+
+{ CALL "TESTDB"."Person_SelectByName" (?,?) }
+
+BeforeExecute
+-- SapHana.Odbc SapHanaOdbc
+DECLARE @FIRSTNAME NVarChar(50) -- String
+SET     @FIRSTNAME = ''
+DECLARE @LASTNAME NVarChar(50) -- String
+SET     @LASTNAME = ''
+
+{ CALL "TESTDB"."Person_SelectListByName" (?,?) }
+
+BeforeExecute
+-- SapHana.Odbc SapHanaOdbc
+DECLARE @PERSONID Int(10) -- Int32
+SET     @PERSONID = 0
+DECLARE @FIRSTNAME NVarChar(50) -- String
+SET     @FIRSTNAME = ''
+DECLARE @LASTNAME NVarChar(50) -- String
+SET     @LASTNAME = ''
+DECLARE @MIDDLENAME NVarChar(50) -- String
+SET     @MIDDLENAME = ''
+DECLARE @GENDER Char(1) -- AnsiStringFixedLength
+SET     @GENDER = char(0)
+
+{ CALL "TESTDB"."Person_Update" (?,?,?,?,?) }
+
+BeforeExecute
+-- SapHana.Odbc SapHanaOdbc
+
+{ CALL "TESTDB"."SelectImplicitColumn" () }
+
+BeforeExecute
+-- SapHana.Odbc SapHanaOdbc
+DECLARE @I Int(10) -- Int32
+SET     @I = 0
+
+{ CALL "TESTDB"."TEST_PROCEDURE" (?) }
+
+BeforeExecute
+-- SapHana.Odbc SapHanaOdbc
+
+{ CALL "TESTDB"."prd.global.ecc/CV_MARAproc" () }
+
+BeforeExecute
+-- SapHana.Odbc SapHanaOdbc
+
+SELECT * FROM "TESTDB"."GetParentByID"(0)
+
+BeforeExecute
+-- SapHana.Odbc SapHanaOdbc
+
+SELECT * FROM "TESTDB"."TEST_TABLE_FUNCTION"(0)
+
+BeforeExecute
 RollbackTransaction
