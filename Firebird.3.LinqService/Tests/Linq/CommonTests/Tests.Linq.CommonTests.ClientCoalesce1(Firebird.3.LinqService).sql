@@ -8,7 +8,7 @@ SELECT
 FROM
 	"Parent" "x"
 WHERE
-	Coalesce("x"."Value1", @Value1) > 10
+	Coalesce("x"."Value1", CAST(@Value1 AS Int)) > 10
 
 BeforeExecute
 -- Firebird.3 Firebird3
