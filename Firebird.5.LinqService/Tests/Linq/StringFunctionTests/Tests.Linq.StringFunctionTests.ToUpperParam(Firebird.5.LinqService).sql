@@ -12,5 +12,6 @@ SELECT
 FROM
 	"Person" "p"
 WHERE
-	Upper("p"."FirstName") = @param AND "p"."PersonID" = 1
+	Upper("p"."FirstName") = CAST(@param AS VARCHAR(4)) AND
+	"p"."PersonID" = 1
 
