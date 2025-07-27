@@ -12,7 +12,7 @@ BeforeExecute
 DECLARE @ID Int32
 SET     @ID = 1001
 DECLARE @MoneyValue NewDecimal(1, 0) -- Decimal
-SET     @MoneyValue = 0
+SET     @MoneyValue = CAST(0 AS DECIMAL(1))
 DECLARE @DateTimeValue Datetime -- DateTime
 SET     @DateTimeValue = NULL
 DECLARE @BoolValue Bool -- Boolean

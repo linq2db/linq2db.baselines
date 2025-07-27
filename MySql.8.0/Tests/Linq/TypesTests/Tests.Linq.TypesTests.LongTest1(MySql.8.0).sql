@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
 DECLARE @value UInt32
-SET     @value = 0
+SET     @value = CAST(0 AS SIGNED)
 
 SELECT
 	`t`.`ID`,

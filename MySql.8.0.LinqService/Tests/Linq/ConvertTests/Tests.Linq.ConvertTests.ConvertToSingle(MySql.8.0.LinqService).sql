@@ -11,5 +11,5 @@ FROM
 			`LinqDataTypes` `t`
 	) `p`
 WHERE
-	`p`.`MoneyValue` > 0
+	`p`.`MoneyValue` > CAST(0 AS DOUBLE)
 

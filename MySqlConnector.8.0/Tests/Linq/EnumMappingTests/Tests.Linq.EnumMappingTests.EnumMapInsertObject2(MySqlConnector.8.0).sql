@@ -14,7 +14,7 @@ BeforeExecute
 DECLARE @Id Int32
 SET     @Id = 101
 DECLARE @TestField Int64
-SET     @TestField = 12
+SET     @TestField = CAST(12 AS SIGNED)
 DECLARE @Int32Field Int32
 SET     @Int32Field = 0
 
@@ -39,7 +39,7 @@ SELECT
 FROM
 	`LinqDataTypes` `r`
 WHERE
-	`r`.`ID` = 101 AND `r`.`BigIntValue` = 12
+	`r`.`ID` = 101 AND `r`.`BigIntValue` = CAST(12 AS SIGNED)
 
 BeforeExecute
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80

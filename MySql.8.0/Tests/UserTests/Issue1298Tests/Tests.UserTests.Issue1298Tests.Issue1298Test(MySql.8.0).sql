@@ -3,7 +3,7 @@ BeginTransaction
 BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
 DECLARE @Id Int64
-SET     @Id = 1
+SET     @Id = CAST(1 AS SIGNED)
 DECLARE @asdfgh VarChar(4) -- String
 SET     @asdfgh = 'res1'
 
@@ -21,7 +21,7 @@ VALUES
 BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
 DECLARE @Id Int64
-SET     @Id = 100500
+SET     @Id = CAST(100500 AS SIGNED)
 DECLARE @asdfgh VarChar(9) -- String
 SET     @asdfgh = 'res100500'
 
@@ -39,9 +39,9 @@ VALUES
 BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
 DECLARE @ref1 Int64
-SET     @ref1 = 100500
+SET     @ref1 = CAST(100500 AS SIGNED)
 DECLARE @y1_q1_ref1 Int64
-SET     @y1_q1_ref1 = 100500
+SET     @y1_q1_ref1 = CAST(100500 AS SIGNED)
 
 INSERT INTO `mega_composites`
 (
@@ -57,9 +57,9 @@ VALUES
 BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
 DECLARE @ref1 Int64
-SET     @ref1 = 1
+SET     @ref1 = CAST(1 AS SIGNED)
 DECLARE @y1_q1_ref1 Int64
-SET     @y1_q1_ref1 = 100500
+SET     @y1_q1_ref1 = CAST(100500 AS SIGNED)
 
 INSERT INTO `mega_composites`
 (
@@ -75,9 +75,9 @@ VALUES
 BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
 DECLARE @ref1 Int64
-SET     @ref1 = 100500
+SET     @ref1 = CAST(100500 AS SIGNED)
 DECLARE @y1_q1_ref1 Int64
-SET     @y1_q1_ref1 = 1
+SET     @y1_q1_ref1 = CAST(1 AS SIGNED)
 
 INSERT INTO `mega_composites`
 (

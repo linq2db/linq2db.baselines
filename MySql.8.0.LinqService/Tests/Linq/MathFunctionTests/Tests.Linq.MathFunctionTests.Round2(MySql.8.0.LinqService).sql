@@ -7,8 +7,8 @@ FROM
 	`LinqDataTypes` `t`
 WHERE
 	CASE
-		WHEN `t`.`MoneyValue` - FLOOR(`t`.`MoneyValue`) = 0.5 AND (FLOOR(`t`.`MoneyValue`) % 2) = 0
+		WHEN `t`.`MoneyValue` - FLOOR(`t`.`MoneyValue`) = CAST(0.5 AS DOUBLE) AND (FLOOR(`t`.`MoneyValue`) % 2) = 0
 			THEN FLOOR(`t`.`MoneyValue`)
 		ELSE ROUND(`t`.`MoneyValue`, 0)
-	END <> 0
+	END <> CAST(0 AS DOUBLE)
 

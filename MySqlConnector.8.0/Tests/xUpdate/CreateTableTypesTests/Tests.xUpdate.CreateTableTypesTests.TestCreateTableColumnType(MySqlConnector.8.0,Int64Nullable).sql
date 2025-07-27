@@ -21,7 +21,7 @@ BeforeExecute
 DECLARE @Id Int32
 SET     @Id = 2
 DECLARE @Int64Nullable Int64
-SET     @Int64Nullable = 4
+SET     @Int64Nullable = CAST(4 AS SIGNED)
 
 INSERT INTO `CreateTableTypes`
 (

@@ -1,9 +1,9 @@
 ﻿BeforeExecute
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 DECLARE @param NewDecimal(2, 0) -- Decimal
-SET     @param = 33
+SET     @param = CAST(33 AS DECIMAL(2))
 DECLARE @param_1 NewDecimal(2, 0) -- Decimal
-SET     @param_1 = 33
+SET     @param_1 = CAST(33 AS DECIMAL(2))
 
 SELECT
 	CAST(`v`.`Integer` AS DECIMAL(29, 10)) / @param,

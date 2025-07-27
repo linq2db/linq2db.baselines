@@ -32,21 +32,21 @@ SELECT bigintDataType FROM `AllTypes` WHERE ID = 2
 BeforeExecute
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 DECLARE @p Int64
-SET     @p = 1000000
+SET     @p = CAST(1000000 AS SIGNED)
 
 SELECT ID FROM `AllTypes` WHERE bigintDataType = @p
 
 BeforeExecute
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 DECLARE @p Int64
-SET     @p = 1000000
+SET     @p = CAST(1000000 AS SIGNED)
 
 SELECT ID FROM `AllTypes` WHERE bigintDataType = @p
 
 BeforeExecute
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 DECLARE @p Int64
-SET     @p = 1000000
+SET     @p = CAST(1000000 AS SIGNED)
 
 SELECT ID FROM `AllTypes` WHERE bigintDataType = @p
 
@@ -292,21 +292,21 @@ SELECT numericDataType FROM `AllTypes` WHERE ID = 2
 BeforeExecute
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 DECLARE @p NewDecimal(7, 0) -- Decimal
-SET     @p = 9999999
+SET     @p = CAST(9999999 AS DECIMAL(7))
 
 SELECT ID FROM `AllTypes` WHERE numericDataType = @p
 
 BeforeExecute
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 DECLARE @p NewDecimal(29, 10) -- Decimal
-SET     @p = 9999999
+SET     @p = CAST(9999999 AS DECIMAL(7))
 
 SELECT ID FROM `AllTypes` WHERE numericDataType = @p
 
 BeforeExecute
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 DECLARE @p NewDecimal(7, 0) -- Decimal
-SET     @p = 9999999
+SET     @p = CAST(9999999 AS DECIMAL(7))
 
 SELECT ID FROM `AllTypes` WHERE numericDataType = @p
 
@@ -344,21 +344,21 @@ SELECT decimalDataType FROM `AllTypes` WHERE ID = 2
 BeforeExecute
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 DECLARE @p NewDecimal(7, 0) -- Decimal
-SET     @p = 8888888
+SET     @p = CAST(8888888 AS DECIMAL(7))
 
 SELECT ID FROM `AllTypes` WHERE decimalDataType = @p
 
 BeforeExecute
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 DECLARE @p NewDecimal(29, 10) -- Decimal
-SET     @p = 8888888
+SET     @p = CAST(8888888 AS DECIMAL(7))
 
 SELECT ID FROM `AllTypes` WHERE decimalDataType = @p
 
 BeforeExecute
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 DECLARE @p NewDecimal(7, 0) -- Decimal
-SET     @p = 8888888
+SET     @p = CAST(8888888 AS DECIMAL(7))
 
 SELECT ID FROM `AllTypes` WHERE decimalDataType = @p
 
@@ -396,21 +396,21 @@ SELECT doubleDataType FROM `AllTypes` WHERE ID = 2
 BeforeExecute
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 DECLARE @p Double
-SET     @p = 20.309999999999999
+SET     @p = CAST(20.309999999999999 AS DOUBLE)
 
 SELECT ID FROM `AllTypes` WHERE doubleDataType = @p
 
 BeforeExecute
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 DECLARE @p Double
-SET     @p = 20.309999999999999
+SET     @p = CAST(20.309999999999999 AS DOUBLE)
 
 SELECT ID FROM `AllTypes` WHERE doubleDataType = @p
 
 BeforeExecute
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 DECLARE @p Double
-SET     @p = 20.309999999999999
+SET     @p = CAST(20.309999999999999 AS DOUBLE)
 
 SELECT ID FROM `AllTypes` WHERE doubleDataType = @p
 
@@ -448,21 +448,21 @@ SELECT floatDataType FROM `AllTypes` WHERE ID = 2
 BeforeExecute
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 DECLARE @p Float -- Single
-SET     @p = 16
+SET     @p = CAST(16 AS DOUBLE)
 
 SELECT ID FROM `AllTypes` WHERE floatDataType = @p
 
 BeforeExecute
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 DECLARE @p Float -- Single
-SET     @p = 16
+SET     @p = CAST(16 AS DOUBLE)
 
 SELECT ID FROM `AllTypes` WHERE floatDataType = @p
 
 BeforeExecute
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 DECLARE @p Float -- Single
-SET     @p = 16
+SET     @p = CAST(16 AS DOUBLE)
 
 SELECT ID FROM `AllTypes` WHERE floatDataType = @p
 
@@ -1533,14 +1533,14 @@ SELECT bitDataType FROM `AllTypes` WHERE ID = 2
 BeforeExecute
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 DECLARE @p UInt64
-SET     @p = 5
+SET     @p = CAST(5 AS UNSIGNED)
 
 SELECT ID FROM `AllTypes` WHERE bitDataType = @p
 
 BeforeExecute
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 DECLARE @p UInt64
-SET     @p = 5
+SET     @p = CAST(5 AS UNSIGNED)
 
 SELECT ID FROM `AllTypes` WHERE bitDataType = @p
 

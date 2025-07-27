@@ -3,7 +3,7 @@
 DECLARE @Id Int32
 SET     @Id = 1
 DECLARE @Int64 Int64
-SET     @Int64 = 0
+SET     @Int64 = CAST(0 AS SIGNED)
 
 INSERT INTO `CreateTableTypes`
 (
@@ -21,7 +21,7 @@ BeforeExecute
 DECLARE @Id Int32
 SET     @Id = 2
 DECLARE @Int64 Int64
-SET     @Int64 = 3
+SET     @Int64 = CAST(3 AS SIGNED)
 
 INSERT INTO `CreateTableTypes`
 (

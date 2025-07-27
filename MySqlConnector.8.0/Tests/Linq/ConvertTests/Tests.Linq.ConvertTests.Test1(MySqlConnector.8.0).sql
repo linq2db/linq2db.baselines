@@ -13,6 +13,6 @@ SELECT
 FROM
 	`LinqDataTypes` `t`
 WHERE
-	`t`.`MoneyValue` * `t`.`ID` = 1.11
+	`t`.`MoneyValue` * `t`.`ID` = CAST(1.11 AS DECIMAL(3, 2))
 LIMIT 2
 

@@ -7,7 +7,7 @@ FROM
 	(
 		SELECT
 			CAST(Floor(CASE
-				WHEN `t`.`MoneyValue` - FLOOR(`t`.`MoneyValue`) = 0.5 AND (FLOOR(`t`.`MoneyValue`) % 2) = 0
+				WHEN `t`.`MoneyValue` - FLOOR(`t`.`MoneyValue`) = CAST(0.5 AS DOUBLE) AND (FLOOR(`t`.`MoneyValue`) % 2) = 0
 					THEN FLOOR(`t`.`MoneyValue`)
 				ELSE ROUND(`t`.`MoneyValue`, 0)
 			END) AS UNSIGNED) as `c1`
@@ -15,5 +15,5 @@ FROM
 			`LinqDataTypes` `t`
 	) `p`
 WHERE
-	`p`.`c1` > 0
+	`p`.`c1` > CAST(0 AS UNSIGNED INT)
 

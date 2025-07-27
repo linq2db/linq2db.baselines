@@ -1,6 +1,6 @@
 ﻿-- MySql.8.0.MySqlConnector MySql80
 DECLARE @Id Int64
-SET     @Id = 1
+SET     @Id = CAST(1 AS SIGNED)
 DECLARE @PermanentId Guid
 SET     @PermanentId = 'bc7b663d-0fde-4327-8f92-5d8cc3a11d11'
 DECLARE @Code VarChar(2) -- String
@@ -37,7 +37,7 @@ SELECT LAST_INSERT_ID()
 
 -- MySql.8.0.MySqlConnector MySql80
 DECLARE @Id Int64
-SET     @Id = 2
+SET     @Id = CAST(2 AS SIGNED)
 DECLARE @PermanentId Guid
 SET     @PermanentId = 'a948600d-de21-4f74-8ac2-9516b287076e'
 DECLARE @Code VarChar(2) -- String
@@ -74,7 +74,7 @@ SELECT LAST_INSERT_ID()
 
 -- MySql.8.0.MySqlConnector MySql80
 DECLARE @Id Int64
-SET     @Id = 3
+SET     @Id = CAST(3 AS SIGNED)
 DECLARE @PermanentId Guid
 SET     @PermanentId = 'bd3973a5-4323-4dd8-9f4f-df9f93e2a627'
 DECLARE @Code VarChar(2) -- String
@@ -125,13 +125,13 @@ SELECT
 FROM
 	`Subdivisions` `s`
 WHERE
-	CAST(`s`.`Id` AS SIGNED) = 1
+	CAST(`s`.`Id` AS SIGNED) = CAST(1 AS SIGNED)
 
 
 
 -- MySql.8.0.MySqlConnector MySql80
 DECLARE @id Int64
-SET     @id = 1
+SET     @id = CAST(1 AS SIGNED)
 
 SELECT
 	`s`.`Id`,
@@ -157,7 +157,7 @@ SELECT
 FROM
 	`Subdivisions` `s`
 WHERE
-	`s`.`Id` IN (2, 3)
+	`s`.`Id` IN (CAST(2 AS SIGNED), CAST(3 AS SIGNED))
 
 
 

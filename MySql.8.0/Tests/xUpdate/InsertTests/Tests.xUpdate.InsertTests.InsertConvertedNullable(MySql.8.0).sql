@@ -10,7 +10,7 @@ WHERE
 BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
 DECLARE @tt Int64
-SET     @tt = 600000000
+SET     @tt = CAST(600000000 AS SIGNED)
 
 INSERT INTO `LinqDataTypes`
 (

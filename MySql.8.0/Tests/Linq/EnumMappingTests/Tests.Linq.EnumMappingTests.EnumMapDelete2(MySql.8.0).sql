@@ -20,7 +20,7 @@ INSERT INTO `LinqDataTypes`
 VALUES
 (
 	101,
-	12
+	CAST(12 AS SIGNED)
 )
 
 BeforeExecute
@@ -30,7 +30,7 @@ DELETE
 FROM
 	`LinqDataTypes`
 WHERE
-	`LinqDataTypes`.`ID` = 101 AND `LinqDataTypes`.`BigIntValue` = 12
+	`LinqDataTypes`.`ID` = 101 AND `LinqDataTypes`.`BigIntValue` = CAST(12 AS SIGNED)
 
 BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80

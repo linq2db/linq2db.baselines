@@ -47,7 +47,7 @@ FROM
 			`gr`.`ParentID` = -1
 	) `t1`
 WHERE
-	`t1`.`Avg_1` <> 0 OR `t1`.`Avg_1` IS NULL
+	`t1`.`Avg_1` <> CAST(0 AS DOUBLE) OR `t1`.`Avg_1` IS NULL
 
 BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80

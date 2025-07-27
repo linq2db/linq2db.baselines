@@ -20,7 +20,7 @@ INSERT INTO `LinqDataTypes`
 VALUES
 (
 	101,
-	11
+	CAST(11 AS SIGNED)
 )
 
 BeforeExecute
@@ -29,9 +29,9 @@ BeforeExecute
 UPDATE
 	`LinqDataTypes` `r`
 SET
-	`r`.`BigIntValue` = 12
+	`r`.`BigIntValue` = CAST(12 AS SIGNED)
 WHERE
-	`r`.`ID` = 101 AND `r`.`BigIntValue` = 11
+	`r`.`ID` = 101 AND `r`.`BigIntValue` = CAST(11 AS SIGNED)
 
 BeforeExecute
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
@@ -41,7 +41,7 @@ SELECT
 FROM
 	`LinqDataTypes` `r`
 WHERE
-	`r`.`ID` = 101 AND `r`.`BigIntValue` = 12
+	`r`.`ID` = 101 AND `r`.`BigIntValue` = CAST(12 AS SIGNED)
 LIMIT 1
 
 BeforeExecute

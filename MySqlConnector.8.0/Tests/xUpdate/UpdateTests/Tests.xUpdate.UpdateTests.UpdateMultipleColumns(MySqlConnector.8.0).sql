@@ -3,7 +3,7 @@
 DECLARE @ID Int32
 SET     @ID = 1001
 DECLARE @MoneyValue NewDecimal(4, 0) -- Decimal
-SET     @MoneyValue = 1000
+SET     @MoneyValue = CAST(1000 AS DECIMAL(4))
 DECLARE @SmallIntValue Int16
 SET     @SmallIntValue = 100
 
@@ -28,7 +28,7 @@ SET     @ID = 1001
 UPDATE
 	`LinqDataTypes` `t`
 SET
-	`t`.`MoneyValue` = 2000,
+	`t`.`MoneyValue` = CAST(2000 AS DECIMAL(4)),
 	`t`.`SmallIntValue` = 200
 WHERE
 	`t`.`ID` = @ID

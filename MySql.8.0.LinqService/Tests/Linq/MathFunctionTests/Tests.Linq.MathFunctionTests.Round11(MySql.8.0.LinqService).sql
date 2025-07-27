@@ -10,5 +10,5 @@ WHERE
 		WHEN `t`.`MoneyValue` * 2 = ROUND(`t`.`MoneyValue` * 2, 1) AND `t`.`MoneyValue` <> ROUND(`t`.`MoneyValue`, 1)
 			THEN ROUND(`t`.`MoneyValue` / 2, 1) * 2
 		ELSE ROUND(`t`.`MoneyValue`, 1)
-	END <> 0
+	END <> CAST(0 AS DOUBLE)
 

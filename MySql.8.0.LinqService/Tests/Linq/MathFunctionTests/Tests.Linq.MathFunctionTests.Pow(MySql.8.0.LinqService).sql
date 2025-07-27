@@ -6,10 +6,10 @@ SELECT
 FROM
 	(
 		SELECT
-			Floor(Power(`p`.`MoneyValue`, 3)) as `Value_1`
+			Floor(Power(`p`.`MoneyValue`, CAST(3 AS DOUBLE))) as `Value_1`
 		FROM
 			`LinqDataTypes` `p`
 	) `t`
 WHERE
-	`t`.`Value_1` <> 0
+	`t`.`Value_1` <> CAST(0 AS DOUBLE)
 

@@ -21,7 +21,7 @@ INSERT INTO `LinqDataTypes`
 VALUES
 (
 	101,
-	4,
+	CAST(4 AS SIGNED),
 	10
 )
 

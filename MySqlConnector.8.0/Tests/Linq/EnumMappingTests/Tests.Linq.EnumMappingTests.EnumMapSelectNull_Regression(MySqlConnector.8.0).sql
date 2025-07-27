@@ -20,7 +20,7 @@ INSERT INTO `LinqDataTypes`
 VALUES
 (
 	101,
-	12
+	CAST(12 AS SIGNED)
 )
 
 BeforeExecute

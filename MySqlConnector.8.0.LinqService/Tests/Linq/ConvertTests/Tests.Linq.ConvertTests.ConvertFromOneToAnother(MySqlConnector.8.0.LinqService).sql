@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 DECLARE @value NewDecimal(9, 5) -- Decimal
-SET     @value = 6579.64648
+SET     @value = CAST(6579.64648 AS DECIMAL(9, 5))
 
 SELECT
 	@value
@@ -12,7 +12,7 @@ LIMIT 1
 BeforeExecute
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 DECLARE @value Float -- Single
-SET     @value = 6579.64648
+SET     @value = CAST(6579.64648 AS DOUBLE)
 
 SELECT
 	CAST(@value AS FLOAT)
@@ -23,7 +23,7 @@ LIMIT 1
 BeforeExecute
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 DECLARE @value Double
-SET     @value = 6579.6464800000003
+SET     @value = CAST(6579.6464800000003 AS DOUBLE)
 
 SELECT
 	CAST(@value AS FLOAT)
@@ -34,7 +34,7 @@ LIMIT 1
 BeforeExecute
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 DECLARE @value NewDecimal(9, 5) -- Decimal
-SET     @value = 6579.64648
+SET     @value = CAST(6579.64648 AS DECIMAL(9, 5))
 
 SELECT
 	@value
@@ -45,7 +45,7 @@ LIMIT 1
 BeforeExecute
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 DECLARE @value Float -- Single
-SET     @value = 6579.64648
+SET     @value = CAST(6579.64648 AS DOUBLE)
 
 SELECT
 	CAST(@value AS DOUBLE)
@@ -56,7 +56,7 @@ LIMIT 1
 BeforeExecute
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 DECLARE @value Double
-SET     @value = 6579.6464800000003
+SET     @value = CAST(6579.6464800000003 AS DOUBLE)
 
 SELECT
 	CAST(@value AS DOUBLE)

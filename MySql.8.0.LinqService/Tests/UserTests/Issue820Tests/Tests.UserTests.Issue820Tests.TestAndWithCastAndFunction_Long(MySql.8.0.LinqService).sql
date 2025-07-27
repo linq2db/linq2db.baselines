@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
 DECLARE @param Int64
-SET     @param = 1
+SET     @param = CAST(1 AS SIGNED)
 
 SELECT
 	`t1`.`ID`,

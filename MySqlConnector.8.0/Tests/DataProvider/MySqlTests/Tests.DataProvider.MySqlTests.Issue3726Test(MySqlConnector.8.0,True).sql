@@ -3,7 +3,7 @@
 DECLARE @Id Int32
 SET     @Id = 1
 DECLARE @Value UInt32
-SET     @Value = 123
+SET     @Value = CAST(123 AS UNSIGNED INT)
 DECLARE @Value2 VarChar -- String
 SET     @Value2 = NULL
 
@@ -28,5 +28,5 @@ UPDATE
 SET
 	`f`.`Value2` = 'Baz'
 WHERE
-	CAST(`f`.`Value` AS SIGNED) = 123
+	CAST(`f`.`Value` AS SIGNED) = CAST(123 AS SIGNED)
 

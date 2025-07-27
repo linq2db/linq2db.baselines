@@ -41,7 +41,7 @@ LIMIT 1
 BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
 DECLARE @MoneyValue Decimal(5, 4)
-SET     @MoneyValue = 1.1100
+SET     @MoneyValue = CAST(1.1100 AS DECIMAL(5, 4))
 DECLARE @DateTimeValue Datetime -- DateTime
 SET     @DateTimeValue = '2001-01-11 01:11:21.100'
 DECLARE @DateTimeValue2 Datetime -- DateTime
@@ -55,7 +55,7 @@ SET     @SmallIntValue = 1
 DECLARE @IntValue Int32
 SET     @IntValue = NULL
 DECLARE @BigIntValue Int64
-SET     @BigIntValue = 1
+SET     @BigIntValue = CAST(1 AS SIGNED)
 DECLARE @StringValue VarChar -- String
 SET     @StringValue = NULL
 DECLARE @ID Int32
@@ -101,7 +101,7 @@ LIMIT 1
 BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
 DECLARE @MoneyValue Decimal(5, 4)
-SET     @MoneyValue = 1.1100
+SET     @MoneyValue = CAST(1.1100 AS DECIMAL(5, 4))
 DECLARE @DateTimeValue Datetime -- DateTime
 SET     @DateTimeValue = '2001-01-11 01:11:21.100'
 DECLARE @DateTimeValue2 Datetime -- DateTime
@@ -115,7 +115,7 @@ SET     @SmallIntValue = 1
 DECLARE @IntValue Int32
 SET     @IntValue = NULL
 DECLARE @BigIntValue Int64
-SET     @BigIntValue = 1
+SET     @BigIntValue = CAST(1 AS SIGNED)
 DECLARE @StringValue VarChar -- String
 SET     @StringValue = NULL
 DECLARE @ID Int32

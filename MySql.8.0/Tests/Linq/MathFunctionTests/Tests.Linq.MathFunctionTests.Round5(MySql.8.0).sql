@@ -6,5 +6,5 @@ SELECT
 FROM
 	`LinqDataTypes` `t`
 WHERE
-	ROUND(`t`.`MoneyValue`) <> 0
+	ROUND(`t`.`MoneyValue`) <> CAST(0 AS DECIMAL(1))
 

@@ -12,6 +12,6 @@ WHERE
 		FROM
 			`Table1` `x`
 		WHERE
-			`t1`.`Field2` = `x`.`Field2` AND CAST(`x`.`Field1` AS SIGNED) IN (1, 2, 3)
+			`t1`.`Field2` = `x`.`Field2` AND CAST(`x`.`Field1` AS SIGNED) IN (CAST(1 AS SIGNED), CAST(2 AS SIGNED), CAST(3 AS SIGNED))
 	)
 

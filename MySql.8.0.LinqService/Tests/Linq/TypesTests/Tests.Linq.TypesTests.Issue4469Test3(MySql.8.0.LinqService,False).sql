@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
 DECLARE @param Double
-SET     @param = 33
+SET     @param = CAST(33 AS DOUBLE)
 
 SELECT
 	CAST(`v`.`Integer` AS DOUBLE) / @param,

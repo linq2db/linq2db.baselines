@@ -13,5 +13,6 @@ SELECT
 FROM
 	`LinqDataTypes` `t`
 WHERE
-	NOT `t`.`BoolValue` AND `t`.`MoneyValue` > 1 AND (`t`.`SmallIntValue` = 5 OR `t`.`SmallIntValue` = 7 OR `t`.`SmallIntValue` = 8)
+	NOT `t`.`BoolValue` AND `t`.`MoneyValue` > CAST(1 AS DECIMAL(1)) AND
+	(`t`.`SmallIntValue` = 5 OR `t`.`SmallIntValue` = 7 OR `t`.`SmallIntValue` = 8)
 

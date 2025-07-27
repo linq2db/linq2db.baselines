@@ -3,7 +3,7 @@
 DECLARE @ID Int32
 SET     @ID = 100500
 DECLARE @MoneyValue NewDecimal(4, 0) -- Decimal
-SET     @MoneyValue = 3000
+SET     @MoneyValue = CAST(3000 AS DECIMAL(4))
 DECLARE @DateTimeValue Datetime -- DateTime
 SET     @DateTimeValue = NULL
 DECLARE @DateTimeValue2 Datetime -- DateTime
@@ -51,7 +51,7 @@ VALUES
 BeforeExecute
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 DECLARE @value2 NewDecimal(5, 0) -- Decimal
-SET     @value2 = 13621
+SET     @value2 = CAST(13621 AS DECIMAL(5))
 DECLARE @id Int32
 SET     @id = 100500
 

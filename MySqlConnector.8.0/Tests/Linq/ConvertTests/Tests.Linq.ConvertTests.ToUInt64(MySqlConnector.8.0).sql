@@ -6,5 +6,5 @@ SELECT
 FROM
 	`LinqDataTypes` `p`
 WHERE
-	CAST(Floor(`p`.`MoneyValue`) AS UNSIGNED) > 0
+	CAST(Floor(`p`.`MoneyValue`) AS UNSIGNED) > CAST(0 AS UNSIGNED)
 
