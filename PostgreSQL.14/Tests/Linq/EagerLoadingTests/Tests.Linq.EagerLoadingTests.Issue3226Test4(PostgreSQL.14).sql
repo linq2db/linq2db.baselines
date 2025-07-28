@@ -28,5 +28,5 @@ ORDER BY
 			"ItemValue" "a_Values"
 		WHERE
 			x."Id" = "a_Values"."ItemId"
-	), 0::decimal(1))
+	), 0)
 

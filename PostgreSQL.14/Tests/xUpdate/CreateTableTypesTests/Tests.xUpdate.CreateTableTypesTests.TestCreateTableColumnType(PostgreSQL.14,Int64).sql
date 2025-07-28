@@ -3,7 +3,7 @@
 DECLARE @Id Integer -- Int32
 SET     @Id = 1
 DECLARE @Int64 Bigint -- Int64
-SET     @Int64 = 0::bigint
+SET     @Int64 = 0
 
 INSERT INTO "CreateTableTypes"
 (
@@ -21,7 +21,7 @@ BeforeExecute
 DECLARE @Id Integer -- Int32
 SET     @Id = 2
 DECLARE @Int64 Bigint -- Int64
-SET     @Int64 = 3::bigint
+SET     @Int64 = 3
 
 INSERT INTO "CreateTableTypes"
 (

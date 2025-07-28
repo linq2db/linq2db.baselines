@@ -8,7 +8,7 @@ SELECT
 FROM
 	(
 		SELECT
-			make_timestamp(Floor(Extract(year From grp."DateTimeValue"))::Int, Floor(Extract(month From grp."DateTimeValue"))::Int, 1, 0, 0, 0::float8) as "Date_1",
+			make_timestamp(Floor(Extract(year From grp."DateTimeValue"))::Int, Floor(Extract(month From grp."DateTimeValue"))::Int, 1, 0, 0, 0) as "Date_1",
 			grp."MoneyValue"
 		FROM
 			"LinqDataTypes" grp
@@ -26,7 +26,7 @@ SELECT
 FROM
 	(
 		SELECT
-			make_timestamp(Floor(Extract(year From grp."DateTimeValue"))::Int, Floor(Extract(month From grp."DateTimeValue"))::Int, 1, 0, 0, 0::float8) as "Date_1",
+			make_timestamp(Floor(Extract(year From grp."DateTimeValue"))::Int, Floor(Extract(month From grp."DateTimeValue"))::Int, 1, 0, 0, 0) as "Date_1",
 			grp."MoneyValue"
 		FROM
 			"LinqDataTypes" grp

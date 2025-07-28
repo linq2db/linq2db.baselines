@@ -13,5 +13,5 @@ SELECT
 FROM
 	"LinqDataTypes" t
 WHERE
-	t."MoneyValue" > 0.5::decimal(1, 1)
+	t."MoneyValue" > 0.5
 

@@ -6,5 +6,5 @@ SELECT
 FROM
 	"LinqDataTypes" p
 WHERE
-	Floor(p."MoneyValue")::BigInt > 0::bigint
+	Floor(p."MoneyValue")::BigInt > 0
 
