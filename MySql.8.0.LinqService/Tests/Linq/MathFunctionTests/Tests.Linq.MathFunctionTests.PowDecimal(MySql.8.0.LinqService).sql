@@ -6,10 +6,10 @@ SELECT
 FROM
 	(
 		SELECT
-			Floor(CAST(Power(`p`.`MoneyValue`, CAST(CAST(3 AS DECIMAL(1)) AS DOUBLE)) AS DECIMAL(29, 10))) as `Value_1`
+			Floor(CAST(Power(`p`.`MoneyValue`, CAST(3 AS DOUBLE)) AS DECIMAL(29, 10))) as `Value_1`
 		FROM
 			`LinqDataTypes` `p`
 	) `t`
 WHERE
-	`t`.`Value_1` <> CAST(0 AS DECIMAL(1))
+	`t`.`Value_1` <> 0
 

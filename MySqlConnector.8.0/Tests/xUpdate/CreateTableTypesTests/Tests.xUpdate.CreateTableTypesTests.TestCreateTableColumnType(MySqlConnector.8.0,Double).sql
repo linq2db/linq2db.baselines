@@ -3,7 +3,7 @@
 DECLARE @Id Int32
 SET     @Id = 1
 DECLARE @Double Double
-SET     @Double = CAST(0 AS DOUBLE)
+SET     @Double = 0
 
 INSERT INTO `CreateTableTypes`
 (
@@ -21,7 +21,7 @@ BeforeExecute
 DECLARE @Id Int32
 SET     @Id = 2
 DECLARE @Double Double
-SET     @Double = CAST(3.1400000000000001 AS DOUBLE)
+SET     @Double = 3.1400000000000001
 
 INSERT INTO `CreateTableTypes`
 (

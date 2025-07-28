@@ -15,5 +15,5 @@ SELECT
 FROM
 	`LinqDataTypes` `t1`
 WHERE
-	(`t1`.`BigIntValue` NOT IN (CAST(2 AS SIGNED)) OR `t1`.`BigIntValue` IS NULL)
+	(`t1`.`BigIntValue` NOT IN (2) OR `t1`.`BigIntValue` IS NULL)
 

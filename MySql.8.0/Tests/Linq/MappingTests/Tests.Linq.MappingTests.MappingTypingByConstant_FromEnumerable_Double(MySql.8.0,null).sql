@@ -7,7 +7,7 @@ SELECT
 FROM
 	`Person` `entity`
 		INNER JOIN (
-			SELECT 1 AS `Id`, NULL AS `Value`) `arg` ON `entity`.`PersonID` = `arg`.`Id`
+			SELECT 1 AS `Id`, CAST(NULL AS DOUBLE) AS `Value`) `arg` ON `entity`.`PersonID` = `arg`.`Id`
 
 BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80

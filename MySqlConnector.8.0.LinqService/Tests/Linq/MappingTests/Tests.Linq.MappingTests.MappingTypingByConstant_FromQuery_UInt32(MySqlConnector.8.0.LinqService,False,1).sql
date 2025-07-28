@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 DECLARE @value UInt32
-SET     @value = CAST(1 AS UNSIGNED INT)
+SET     @value = 1
 
 SELECT
 	`t1`.`ID`,
@@ -18,7 +18,7 @@ FROM
 BeforeExecute
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 DECLARE @value UInt32
-SET     @value = CAST(2147483648 AS UNSIGNED INT)
+SET     @value = 2147483648
 
 SELECT
 	`t1`.`ID`,

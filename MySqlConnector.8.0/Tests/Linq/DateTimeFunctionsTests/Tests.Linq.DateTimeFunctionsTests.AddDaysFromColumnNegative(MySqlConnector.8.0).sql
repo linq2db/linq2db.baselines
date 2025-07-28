@@ -3,7 +3,7 @@
 DECLARE @ID Int32
 SET     @ID = 5000
 DECLARE @MoneyValue NewDecimal(1, 0) -- Decimal
-SET     @MoneyValue = CAST(0 AS DECIMAL(1))
+SET     @MoneyValue = 0
 DECLARE @DateTimeValue Datetime -- DateTime
 SET     @DateTimeValue = '2018-01-03'
 DECLARE @BoolValue Bool -- Boolean

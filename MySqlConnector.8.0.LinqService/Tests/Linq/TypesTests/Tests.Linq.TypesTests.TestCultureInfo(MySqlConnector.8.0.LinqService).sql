@@ -13,5 +13,5 @@ SELECT
 FROM
 	`LinqDataTypes` `t`
 WHERE
-	`t`.`MoneyValue` > CAST(0.5 AS DECIMAL(1, 1))
+	`t`.`MoneyValue` > 0.5
 

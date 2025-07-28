@@ -6,10 +6,10 @@ SELECT
 FROM
 	(
 		SELECT
-			Floor(Log(CAST(2 AS DOUBLE), `p`.`MoneyValue`)) as `Value_1`
+			Floor(Log(2, `p`.`MoneyValue`)) as `Value_1`
 		FROM
 			`LinqDataTypes` `p`
 	) `t`
 WHERE
-	`t`.`Value_1` <> CAST(0.10000000000000001 AS DOUBLE)
+	`t`.`Value_1` <> 0.10000000000000001
 

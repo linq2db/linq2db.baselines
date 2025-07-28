@@ -18,7 +18,7 @@ FROM
 BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
 DECLARE @value UInt32
-SET     @value = CAST(2147483648 AS UNSIGNED INT)
+SET     @value = 2147483648
 
 SELECT
 	`t1`.`ID`,

@@ -1,10 +1,10 @@
 ﻿BeforeExecute
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 DECLARE @value NewDecimal(9, 5) -- Decimal
-SET     @value = CAST(6579.64648 AS DECIMAL(9, 5))
+SET     @value = 6579.64648
 
 SELECT
-	@value
+	CAST(@value AS DECIMAL(29, 10))
 FROM
 	`LinqDataTypes` `t1`
 LIMIT 1
@@ -12,40 +12,7 @@ LIMIT 1
 BeforeExecute
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 DECLARE @value Float -- Single
-SET     @value = CAST(6579.64648 AS DOUBLE)
-
-SELECT
-	CAST(@value AS FLOAT)
-FROM
-	`LinqDataTypes` `t1`
-LIMIT 1
-
-BeforeExecute
--- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-DECLARE @value Double
-SET     @value = CAST(6579.6464800000003 AS DOUBLE)
-
-SELECT
-	CAST(@value AS FLOAT)
-FROM
-	`LinqDataTypes` `t1`
-LIMIT 1
-
-BeforeExecute
--- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-DECLARE @value NewDecimal(9, 5) -- Decimal
-SET     @value = CAST(6579.64648 AS DECIMAL(9, 5))
-
-SELECT
-	@value
-FROM
-	`LinqDataTypes` `t1`
-LIMIT 1
-
-BeforeExecute
--- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-DECLARE @value Float -- Single
-SET     @value = CAST(6579.64648 AS DOUBLE)
+SET     @value = 6579.64648
 
 SELECT
 	CAST(@value AS DOUBLE)
@@ -56,7 +23,40 @@ LIMIT 1
 BeforeExecute
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 DECLARE @value Double
-SET     @value = CAST(6579.6464800000003 AS DOUBLE)
+SET     @value = 6579.6464800000003
+
+SELECT
+	CAST(@value AS DOUBLE)
+FROM
+	`LinqDataTypes` `t1`
+LIMIT 1
+
+BeforeExecute
+-- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
+DECLARE @value NewDecimal(9, 5) -- Decimal
+SET     @value = 6579.64648
+
+SELECT
+	CAST(@value AS DECIMAL(29, 10))
+FROM
+	`LinqDataTypes` `t1`
+LIMIT 1
+
+BeforeExecute
+-- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
+DECLARE @value Float -- Single
+SET     @value = 6579.64648
+
+SELECT
+	CAST(@value AS DOUBLE)
+FROM
+	`LinqDataTypes` `t1`
+LIMIT 1
+
+BeforeExecute
+-- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
+DECLARE @value Double
+SET     @value = 6579.6464800000003
 
 SELECT
 	CAST(@value AS DOUBLE)

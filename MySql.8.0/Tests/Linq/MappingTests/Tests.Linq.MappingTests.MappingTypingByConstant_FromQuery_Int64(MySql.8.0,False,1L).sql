@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
 DECLARE @value Int64
-SET     @value = CAST(1 AS SIGNED)
+SET     @value = 1
 
 SELECT
 	`t1`.`ID`,
@@ -18,7 +18,7 @@ FROM
 BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
 DECLARE @value Int64
-SET     @value = CAST(2147483648 AS SIGNED)
+SET     @value = 2147483648
 
 SELECT
 	`t1`.`ID`,

@@ -8,7 +8,7 @@ FROM
 	(
 		SELECT
 			`r`.`PersonID` as `ID`,
-			CAST(0 AS DOUBLE) as `Value_1`
+			0 as `Value_1`
 		FROM
 			`Person` `r`
 	) `t1`
@@ -23,7 +23,7 @@ FROM
 	(
 		SELECT
 			`r`.`PersonID` as `ID`,
-			CAST(3.14748365E+09 AS DOUBLE) as `Value_1`
+			3.14748365E+09 as `Value_1`
 		FROM
 			`Person` `r`
 	) `t1`

@@ -12,7 +12,7 @@ INSERT INTO `test_temp`
 )
 VALUES
 (
-	CAST(1 AS DECIMAL(1))
+	1
 )
 
 BeforeExecute
@@ -24,7 +24,7 @@ INSERT INTO `test_temp`
 )
 VALUES
 (
-	CAST(1 AS DECIMAL(1))
+	1
 )
 
 BeforeExecute
@@ -55,7 +55,7 @@ INSERT INTO `test_temp`
 )
 VALUES
 (
-	CAST(1 AS DECIMAL(1))
+	1
 )
 
 BeforeExecute
@@ -67,7 +67,7 @@ INSERT INTO `test_temp`
 )
 VALUES
 (
-	CAST(1 AS DECIMAL(1))
+	1
 )
 
 BeforeExecute

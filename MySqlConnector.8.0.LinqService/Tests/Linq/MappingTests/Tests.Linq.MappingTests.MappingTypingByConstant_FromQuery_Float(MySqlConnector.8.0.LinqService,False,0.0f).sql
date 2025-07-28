@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 DECLARE @value Float -- Single
-SET     @value = CAST(0 AS DOUBLE)
+SET     @value = 0
 
 SELECT
 	`t1`.`ID`,
@@ -18,7 +18,7 @@ FROM
 BeforeExecute
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 DECLARE @value Float -- Single
-SET     @value = CAST(3.14748365E+09 AS DOUBLE)
+SET     @value = 3.14748365E+09
 
 SELECT
 	`t1`.`ID`,

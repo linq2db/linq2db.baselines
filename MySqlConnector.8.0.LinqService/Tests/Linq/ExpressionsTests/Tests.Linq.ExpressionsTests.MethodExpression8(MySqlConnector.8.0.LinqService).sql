@@ -6,7 +6,7 @@ SELECT
 	`ch`.`ChildID`
 FROM
 	`Child` `ch`
-		INNER JOIN `Parent` `p` ON `p`.`ParentID` = CAST(Floor(CAST(`ch`.`ChildID` AS DOUBLE) / CAST(10 AS DOUBLE)) AS SIGNED)
+		INNER JOIN `Parent` `p` ON `p`.`ParentID` = CAST(Floor(CAST(`ch`.`ChildID` AS DOUBLE) / 10) AS SIGNED)
 WHERE
 	`ch`.`ParentID` = `p`.`ParentID`
 

@@ -107,7 +107,7 @@ VALUES
 (
 	@productId,
 	@includedProductId,
-	CAST(10 AS DECIMAL(2))
+	10
 )
 
 BeforeExecute
@@ -125,7 +125,7 @@ VALUES
 (
 	1,
 	@productId,
-	CAST(10 AS DECIMAL(2))
+	10
 )
 
 BeforeExecute

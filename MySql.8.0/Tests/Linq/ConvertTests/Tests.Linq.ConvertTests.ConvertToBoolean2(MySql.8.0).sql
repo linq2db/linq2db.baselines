@@ -6,7 +6,7 @@ SELECT
 FROM
 	(
 		SELECT
-			`t`.`MoneyValue` <> CAST(4.5 AS DECIMAL(2, 1)) as `c1`
+			`t`.`MoneyValue` <> 4.5 as `c1`
 		FROM
 			`LinqDataTypes` `t`
 	) `p`

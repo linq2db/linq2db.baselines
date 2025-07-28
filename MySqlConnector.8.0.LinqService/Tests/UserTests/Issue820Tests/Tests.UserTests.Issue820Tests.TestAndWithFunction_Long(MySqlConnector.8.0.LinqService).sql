@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 DECLARE @param Int64
-SET     @param = CAST(1 AS SIGNED)
+SET     @param = 1
 
 SELECT
 	`t1`.`ID`,

@@ -6,7 +6,7 @@ SELECT
 FROM
 	`Mixed` `t`
 WHERE
-	`t`.`Int` > 0 AND (`t`.`Str`, `t`.`Double`, `t`.`Bool`) = ('One', CAST(1 AS DOUBLE), 1) AND
+	`t`.`Int` > 0 AND (`t`.`Str`, `t`.`Double`, `t`.`Bool`) = ('One', 1, 1) AND
 	EXISTS(
 		SELECT
 			*

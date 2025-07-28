@@ -12,7 +12,7 @@ INSERT INTO `LinqDataTypes`
 VALUES
 (
 	@ID,
-	CAST(100 AS DECIMAL(3)),
+	100,
 	200
 )
 

@@ -21,7 +21,7 @@ BeforeExecute
 DECLARE @Id Int32
 SET     @Id = 2
 DECLARE @DoubleNullable Double
-SET     @DoubleNullable = CAST(4.1299999999999999 AS DOUBLE)
+SET     @DoubleNullable = 4.1299999999999999
 
 INSERT INTO `CreateTableTypes`
 (

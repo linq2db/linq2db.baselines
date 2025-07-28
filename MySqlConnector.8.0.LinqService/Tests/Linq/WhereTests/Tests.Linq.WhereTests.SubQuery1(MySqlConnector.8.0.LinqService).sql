@@ -15,5 +15,5 @@ FROM
 			`LinqDataTypes` `p`
 	) `pp`
 WHERE
-	`pp`.`Value_1` <> CAST(0 AS DECIMAL(1)) AND `pp`.`Value_1` <> CAST(7 AS DECIMAL(1))
+	`pp`.`Value_1` <> 0 AND `pp`.`Value_1` <> 7
 

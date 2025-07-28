@@ -20,7 +20,7 @@ INSERT INTO `LinqDataTypes`
 VALUES
 (
 	101,
-	CAST(12 AS SIGNED)
+	12
 )
 
 BeforeExecute
@@ -31,7 +31,7 @@ SELECT
 FROM
 	`LinqDataTypes` `r`
 WHERE
-	`r`.`ID` = 101 AND `r`.`BigIntValue` IN (CAST(12 AS SIGNED))
+	`r`.`ID` = 101 AND `r`.`BigIntValue` IN (12)
 
 BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80

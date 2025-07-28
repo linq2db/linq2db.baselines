@@ -8,7 +8,7 @@ FROM
 	(
 		SELECT
 			`r`.`PersonID` as `ID`,
-			NULL as `Value_1`
+			CAST(NULL AS DECIMAL(29, 10)) as `Value_1`
 		FROM
 			`Person` `r`
 	) `t1`
@@ -23,7 +23,7 @@ FROM
 	(
 		SELECT
 			`r`.`PersonID` as `ID`,
-			CAST(2147483648 AS DECIMAL(10)) as `Value_1`
+			CAST(2147483648.123 AS DECIMAL(29, 10)) as `Value_1`
 		FROM
 			`Person` `r`
 	) `t1`

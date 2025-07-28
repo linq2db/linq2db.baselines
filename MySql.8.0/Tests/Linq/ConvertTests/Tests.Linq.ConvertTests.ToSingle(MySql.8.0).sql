@@ -6,5 +6,5 @@ SELECT
 FROM
 	`LinqDataTypes` `p`
 WHERE
-	`p`.`MoneyValue` > CAST(0 AS DOUBLE)
+	`p`.`MoneyValue` > 0
 

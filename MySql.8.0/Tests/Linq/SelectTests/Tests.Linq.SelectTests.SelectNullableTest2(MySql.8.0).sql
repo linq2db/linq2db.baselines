@@ -3,7 +3,7 @@
 DECLARE @ID Int32
 SET     @ID = 1000
 DECLARE @MoneyValue Decimal(1, 0)
-SET     @MoneyValue = CAST(0 AS DECIMAL(1))
+SET     @MoneyValue = 0
 DECLARE @DateTimeValue Datetime -- DateTime
 SET     @DateTimeValue = NULL
 DECLARE @DateTimeValue2 Datetime -- DateTime

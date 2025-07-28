@@ -6,20 +6,20 @@ SELECT
 	MAX(`g_1`.`DataValue`),
 	MAX(`g_1`.`DataValue`),
 	MAX(CASE
-		WHEN `g_1`.`DataValue` % 2 = CAST(0 AS DOUBLE) THEN `g_1`.`DataValue`
+		WHEN `g_1`.`DataValue` % 2 = 0 THEN `g_1`.`DataValue`
 		ELSE NULL
 	END),
 	MAX(CASE
-		WHEN `g_1`.`DataValue` % 2 = CAST(0 AS DOUBLE) THEN `g_1`.`DataValue`
+		WHEN `g_1`.`DataValue` % 2 = 0 THEN `g_1`.`DataValue`
 		ELSE NULL
 	END),
 	MAX(DISTINCT `g_1`.`DataValue`),
 	MAX(DISTINCT CASE
-		WHEN `g_1`.`DataValue` % 2 = CAST(0 AS DOUBLE) THEN `g_1`.`DataValue`
+		WHEN `g_1`.`DataValue` % 2 = 0 THEN `g_1`.`DataValue`
 		ELSE NULL
 	END),
 	MAX(DISTINCT CASE
-		WHEN `g_1`.`DataValue` % 2 = CAST(0 AS DOUBLE) THEN `g_1`.`DataValue`
+		WHEN `g_1`.`DataValue` % 2 = 0 THEN `g_1`.`DataValue`
 		ELSE NULL
 	END)
 FROM

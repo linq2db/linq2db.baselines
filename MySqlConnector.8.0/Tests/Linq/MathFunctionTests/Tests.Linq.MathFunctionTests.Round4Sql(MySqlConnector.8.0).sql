@@ -19,5 +19,5 @@ FROM
 			`LinqDataTypes` `p`
 	) `t`
 WHERE
-	`t`.`c1` <> CAST(0 AS DOUBLE)
+	`t`.`c1` <> 0
 

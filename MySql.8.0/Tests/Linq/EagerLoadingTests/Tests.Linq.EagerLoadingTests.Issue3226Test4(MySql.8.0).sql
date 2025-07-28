@@ -28,5 +28,5 @@ ORDER BY
 			`ItemValue` `a_Values`
 		WHERE
 			`x`.`Id` = `a_Values`.`ItemId`
-	), CAST(0 AS DECIMAL(1)))
+	), 0)
 

@@ -6,20 +6,20 @@ SELECT
 	AVG(`g_1`.`DataValue`),
 	AVG(`g_1`.`DataValue`),
 	AVG(CASE
-		WHEN `g_1`.`DataValue` % 2 = CAST(0 AS DOUBLE) THEN `g_1`.`DataValue`
+		WHEN `g_1`.`DataValue` % 2 = 0 THEN `g_1`.`DataValue`
 		ELSE NULL
 	END),
 	AVG(CASE
-		WHEN `g_1`.`DataValue` % 2 = CAST(0 AS DOUBLE) THEN `g_1`.`DataValue`
+		WHEN `g_1`.`DataValue` % 2 = 0 THEN `g_1`.`DataValue`
 		ELSE NULL
 	END),
 	AVG(DISTINCT `g_1`.`DataValue`),
 	AVG(DISTINCT CASE
-		WHEN `g_1`.`DataValue` % 2 = CAST(0 AS DOUBLE) THEN `g_1`.`DataValue`
+		WHEN `g_1`.`DataValue` % 2 = 0 THEN `g_1`.`DataValue`
 		ELSE NULL
 	END),
 	AVG(DISTINCT CASE
-		WHEN `g_1`.`DataValue` % 2 = CAST(0 AS DOUBLE) THEN `g_1`.`DataValue`
+		WHEN `g_1`.`DataValue` % 2 = 0 THEN `g_1`.`DataValue`
 		ELSE NULL
 	END)
 FROM

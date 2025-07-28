@@ -8,8 +8,8 @@ INSERT INTO `MultipleRowsTable`
 	`DecimalValue2`
 )
 VALUES
-(1,NULL,CAST(1 AS DECIMAL(1))),
-(2,CAST(1.5 AS DECIMAL(2, 1)),CAST(-2.6 AS DECIMAL(2, 1)))
+(1,NULL,1),
+(2,1.5,-2.6)
 
 BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80

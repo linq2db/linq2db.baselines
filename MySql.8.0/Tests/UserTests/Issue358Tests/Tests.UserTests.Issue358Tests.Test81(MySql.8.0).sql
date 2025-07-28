@@ -15,5 +15,5 @@ SELECT
 FROM
 	`LinqDataTypes` `t1`
 WHERE
-	`t1`.`BigIntValue` IN (CAST(2 AS SIGNED))
+	`t1`.`BigIntValue` IN (2)
 

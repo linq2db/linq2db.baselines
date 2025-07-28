@@ -11,5 +11,5 @@ FROM
 			`LinqDataTypes` `p`
 	) `t`
 WHERE
-	CAST(`t`.`Value_1` AS DOUBLE) <> CAST(0.10000000000000001 AS DOUBLE)
+	CAST(`t`.`Value_1` AS DOUBLE) <> 0.10000000000000001
 

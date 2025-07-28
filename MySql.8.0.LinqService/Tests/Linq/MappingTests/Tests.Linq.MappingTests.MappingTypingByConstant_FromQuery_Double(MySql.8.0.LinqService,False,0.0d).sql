@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
 DECLARE @value Double
-SET     @value = CAST(0 AS DOUBLE)
+SET     @value = 0
 
 SELECT
 	`t1`.`ID`,
@@ -18,7 +18,7 @@ FROM
 BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
 DECLARE @value Double
-SET     @value = CAST(3147483648 AS DOUBLE)
+SET     @value = 3147483648
 
 SELECT
 	`t1`.`ID`,

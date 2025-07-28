@@ -67,27 +67,27 @@ SET     @UnsignedSmallInt = 65535
 DECLARE @Int Int32
 SET     @Int = -2147483648
 DECLARE @UnsignedInt UInt32
-SET     @UnsignedInt = CAST(4294967295 AS UNSIGNED INT)
+SET     @UnsignedInt = 4294967295
 DECLARE @BigInt Int64
-SET     @BigInt = CAST(-9223372036854775808 AS SIGNED)
+SET     @BigInt = -9223372036854775808
 DECLARE @UnsignedBigInt UInt64
-SET     @UnsignedBigInt = CAST(18446744073709551615 AS UNSIGNED)
+SET     @UnsignedBigInt = 18446744073709551615
 DECLARE @Decimal Decimal(4, 0)
-SET     @Decimal = CAST(1234 AS DECIMAL(4))
+SET     @Decimal = 1234
 DECLARE @Decimal15_0 Decimal(15, 0)
-SET     @Decimal15_0 = CAST(123456789012345 AS DECIMAL(15))
+SET     @Decimal15_0 = 123456789012345
 DECLARE @Decimal10_5 Decimal(9, 4)
-SET     @Decimal10_5 = CAST(-12345.2345 AS DECIMAL(9, 4))
+SET     @Decimal10_5 = -12345.2345
 DECLARE @Decimal20_2 Decimal(9, 2)
-SET     @Decimal20_2 = CAST(-3412345.23 AS DECIMAL(9, 2))
+SET     @Decimal20_2 = -3412345.23
 DECLARE @Float Float -- Single
-SET     @Float = CAST(3244.23999 AS DOUBLE)
+SET     @Float = 3244.23999
 DECLARE @Float10 Float -- Single
-SET     @Float10 = CAST(124.353996 AS DOUBLE)
+SET     @Float10 = 124.353996
 DECLARE @Double Double
-SET     @Double = CAST(452.23523 AS DOUBLE)
+SET     @Double = 452.23523
 DECLARE @Float30 Double
-SET     @Float30 = CAST(332.23500000000001 AS DOUBLE)
+SET     @Float30 = 332.23500000000001
 DECLARE @Bool UByte -- Boolean
 SET     @Bool = 1
 DECLARE @Bit1 UInt64
@@ -101,7 +101,7 @@ SET     @Bit32 = 44542
 DECLARE @Bit10 UInt64
 SET     @Bit10 = 63
 DECLARE @Bit64 UInt64
-SET     @Bit64 = CAST(3735928495 AS SIGNED)
+SET     @Bit64 = 3735928495
 DECLARE @Json VarChar(9) -- String
 SET     @Json = '{"x": 10}'
 DECLARE @Guid Guid

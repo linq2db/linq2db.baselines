@@ -11,5 +11,5 @@ FROM
 			`LinqDataTypes` `p`
 	) `t`
 WHERE
-	`t`.`Value_1` <> CAST(0 AS DECIMAL(1))
+	`t`.`Value_1` <> 0
 

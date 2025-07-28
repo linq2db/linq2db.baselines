@@ -13,5 +13,5 @@ SELECT
 FROM
 	`LinqDataTypes` `t`
 WHERE
-	`t`.`MoneyValue` = CAST(4.5 AS DECIMAL(2, 1))
+	`t`.`MoneyValue` = 4.5
 

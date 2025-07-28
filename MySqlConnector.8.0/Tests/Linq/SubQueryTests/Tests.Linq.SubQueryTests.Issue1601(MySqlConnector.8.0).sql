@@ -3,8 +3,8 @@
 
 SELECT
 	CASE
-		WHEN `t2`.`x` < CAST(0 AS DECIMAL(1)) THEN CAST(9 AS DECIMAL(1))
-		ELSE `t2`.`x` + CAST(8 AS DECIMAL(1))
+		WHEN `t2`.`x` < 0 THEN 9
+		ELSE `t2`.`x` + 8
 	END,
 	`t2`.`x` + `t2`.`x`
 FROM

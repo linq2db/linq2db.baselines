@@ -20,7 +20,7 @@ INSERT INTO `LinqDataTypes`
 VALUES
 (
 	101,
-	CAST(12 AS SIGNED)
+	12
 )
 
 BeforeExecute
@@ -32,7 +32,7 @@ SELECT
 FROM
 	`LinqDataTypes` `entity`
 WHERE
-	`entity`.`BigIntValue` = CAST(12 AS SIGNED)
+	`entity`.`BigIntValue` = 12
 
 BeforeExecute
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80

@@ -20,13 +20,13 @@ INSERT INTO `LinqDataTypes`
 VALUES
 (
 	101,
-	CAST(12 AS SIGNED)
+	12
 )
 
 BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
 DECLARE @param Int64
-SET     @param = CAST(11 AS SIGNED)
+SET     @param = 11
 
 INSERT INTO `LinqDataTypes`
 (
@@ -39,7 +39,7 @@ SELECT
 FROM
 	`LinqDataTypes` `r`
 WHERE
-	`r`.`ID` = 101 AND `r`.`BigIntValue` = CAST(12 AS SIGNED)
+	`r`.`ID` = 101 AND `r`.`BigIntValue` = 12
 
 BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
@@ -49,7 +49,7 @@ SELECT
 FROM
 	`LinqDataTypes` `r`
 WHERE
-	`r`.`ID` = 101 AND `r`.`BigIntValue` = CAST(11 AS SIGNED)
+	`r`.`ID` = 101 AND `r`.`BigIntValue` = 11
 
 BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80

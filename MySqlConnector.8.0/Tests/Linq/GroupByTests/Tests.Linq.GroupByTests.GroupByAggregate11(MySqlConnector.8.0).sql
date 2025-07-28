@@ -14,7 +14,7 @@ FROM
 						`Child` `a_Children`
 					WHERE
 						`g_1`.`ParentID` = `a_Children`.`ParentID`
-				) > CAST(3 AS DOUBLE)
+				) > 3
 					THEN 1
 				ELSE 0
 			END as `Key_1`

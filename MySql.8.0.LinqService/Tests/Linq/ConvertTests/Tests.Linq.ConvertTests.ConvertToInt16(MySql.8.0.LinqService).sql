@@ -7,7 +7,7 @@ FROM
 	(
 		SELECT
 			CAST(Floor(CASE
-				WHEN `t`.`MoneyValue` - FLOOR(`t`.`MoneyValue`) = CAST(0.5 AS DOUBLE) AND (FLOOR(`t`.`MoneyValue`) % 2) = 0
+				WHEN `t`.`MoneyValue` - FLOOR(`t`.`MoneyValue`) = 0.5 AND (FLOOR(`t`.`MoneyValue`) % 2) = 0
 					THEN FLOOR(`t`.`MoneyValue`)
 				ELSE ROUND(`t`.`MoneyValue`, 0)
 			END) AS SIGNED) as `c1`

@@ -3,7 +3,7 @@
 DECLARE @Id Int32
 SET     @Id = 1
 DECLARE @Value UInt32
-SET     @Value = CAST(123 AS UNSIGNED INT)
+SET     @Value = 123
 DECLARE @Value2 VarChar -- String
 SET     @Value2 = NULL
 
@@ -25,7 +25,7 @@ BeforeExecute
 DECLARE @Value2 VarChar(3) -- String
 SET     @Value2 = 'Baz'
 DECLARE @bar Int32
-SET     @bar = CAST(123 AS SIGNED)
+SET     @bar = 123
 
 UPDATE
 	`Issue3726Table` `f`
