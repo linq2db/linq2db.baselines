@@ -17,8 +17,8 @@ FROM
 
 BeforeExecute
 -- SqlServer.2019.MS SqlServer.2019
-DECLARE @value Decimal(10, 0)
-SET     @value = 2147483648
+DECLARE @value Decimal(13, 3)
+SET     @value = 2147483648.123
 
 SELECT
 	[t1].[ID],
