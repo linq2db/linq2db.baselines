@@ -6,10 +6,10 @@ SELECT
 FROM
 	(
 		SELECT
-			Floor(Log(2, p."MoneyValue")::Float) as "Value_1"
+			Floor(Log(2::decimal(1), p."MoneyValue")::Float) as "Value_1"
 		FROM
 			"LinqDataTypes" p
 	) t
 WHERE
-	t."Value_1" <> 0.10000000000000001
+	t."Value_1" <> 0.10000000000000001::float8
 

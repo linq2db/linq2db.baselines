@@ -20,7 +20,7 @@ SELECT
 					x."DataValue" IS NOT NULL AND t1."Key_1" = x."GroupId"
 			) x_1
 		WHERE
-			(x_1."DataValue"::decimal % 2)::decimal = 0
+			(x_1."DataValue"::decimal % 2)::decimal = 0::float8
 	),
 	(
 		SELECT
@@ -33,7 +33,7 @@ SELECT
 					"AggregationData" t_1
 				WHERE
 					t_1."DataValue" IS NOT NULL AND t1."Key_1" = t_1."GroupId" AND
-					(t_1."DataValue"::decimal % 2)::decimal = 0
+					(t_1."DataValue"::decimal % 2)::decimal = 0::float8
 			) t2
 	),
 	(
@@ -47,10 +47,10 @@ SELECT
 					"AggregationData" x_2
 				WHERE
 					x_2."DataValue" IS NOT NULL AND t1."Key_1" = x_2."GroupId" AND
-					(x_2."DataValue"::decimal % 2)::decimal = 0
+					(x_2."DataValue"::decimal % 2)::decimal = 0::float8
 			) x_3
 		WHERE
-			(x_3."DataValue"::decimal % 2)::decimal = 0
+			(x_3."DataValue"::decimal % 2)::decimal = 0::float8
 	),
 	t1."COUNT_5",
 	(
@@ -64,7 +64,7 @@ SELECT
 					"AggregationData" t_2
 				WHERE
 					t_2."DataValue" IS NOT NULL AND t1."Key_1" = t_2."GroupId" AND
-					(t_2."DataValue"::decimal % 2)::decimal = 0
+					(t_2."DataValue"::decimal % 2)::decimal = 0::float8
 			) t3
 	)
 FROM
@@ -73,13 +73,13 @@ FROM
 			t."GroupId" as "Key_1",
 			COUNT(*) as "COUNT_1",
 			COUNT(CASE
-				WHEN (t."DataValue"::decimal % 2)::decimal = 0 THEN 1
+				WHEN (t."DataValue"::decimal % 2)::decimal = 0::float8 THEN 1
 				ELSE NULL
 			END) as "COUNT_2",
 			COUNT(*) as "COUNT_3",
 			COUNT(DISTINCT t."DataValue") as "COUNT_4",
 			COUNT(CASE
-				WHEN (t."DataValue"::decimal % 2)::decimal = 0 THEN 1
+				WHEN (t."DataValue"::decimal % 2)::decimal = 0::float8 THEN 1
 				ELSE NULL
 			END) as "COUNT_5"
 		FROM

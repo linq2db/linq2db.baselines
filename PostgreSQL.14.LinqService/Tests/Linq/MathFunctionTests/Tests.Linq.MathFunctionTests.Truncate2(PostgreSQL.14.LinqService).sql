@@ -6,5 +6,5 @@ SELECT
 FROM
 	"LinqDataTypes" t
 WHERE
-	Trunc((-t."MoneyValue"), 0)::Float <> 0.10000000000000001
+	Trunc((-t."MoneyValue"), 0)::Float <> 0.10000000000000001::float8
 

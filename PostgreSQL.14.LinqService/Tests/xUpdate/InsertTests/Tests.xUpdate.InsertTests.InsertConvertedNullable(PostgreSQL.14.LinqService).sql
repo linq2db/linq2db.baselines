@@ -9,7 +9,7 @@ WHERE
 BeforeExecute
 -- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
 DECLARE @tt Bigint -- Int64
-SET     @tt = 600000000
+SET     @tt = 600000000::bigint
 
 INSERT INTO "LinqDataTypes"
 (

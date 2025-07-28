@@ -11,5 +11,5 @@ FROM
 			"LinqDataTypes" p
 	) t
 WHERE
-	t."Value_1" <> 0.10000000000000001
+	t."Value_1" <> 0.10000000000000001::float8
 

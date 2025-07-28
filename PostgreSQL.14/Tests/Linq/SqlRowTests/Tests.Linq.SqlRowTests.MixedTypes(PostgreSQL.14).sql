@@ -6,7 +6,7 @@ SELECT
 FROM
 	"Mixed" t
 WHERE
-	t."Int" > 0 AND (t."Str", t."Double", t."Bool") = ('One', 1, True) AND
+	t."Int" > 0 AND (t."Str", t."Double", t."Bool") = ('One', 1::float8, True) AND
 	EXISTS(
 		SELECT
 			*
