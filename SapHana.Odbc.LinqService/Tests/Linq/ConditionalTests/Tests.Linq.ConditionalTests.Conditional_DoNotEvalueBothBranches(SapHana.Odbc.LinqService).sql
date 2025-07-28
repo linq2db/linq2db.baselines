@@ -2,6 +2,6 @@
 -- SapHana.Odbc SapHanaOdbc
 
 SELECT
-	20
+	CAST(20 AS Double)
 FROM DUMMY
 
