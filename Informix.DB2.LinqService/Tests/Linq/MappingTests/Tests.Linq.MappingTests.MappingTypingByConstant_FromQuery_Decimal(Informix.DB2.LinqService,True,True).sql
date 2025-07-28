@@ -23,7 +23,7 @@ FROM
 	(
 		SELECT
 			r.PersonID as ID,
-			2147483648 as Value_1
+			2147483648.123 as Value_1
 		FROM
 			Person r
 	) t1

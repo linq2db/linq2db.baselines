@@ -18,7 +18,7 @@ FROM
 BeforeExecute
 -- Informix.DB2 Informix
 DECLARE @value Decimal(16)
-SET     @value = 2147483648
+SET     @value = 2147483648.123
 
 SELECT
 	t1.ID,
@@ -27,7 +27,7 @@ FROM
 	(
 		SELECT
 			r.PersonID as ID,
-			@value::Decimal(10, 0) as Value_1
+			@value::Decimal(13, 3) as Value_1
 		FROM
 			Person r
 	) t1
