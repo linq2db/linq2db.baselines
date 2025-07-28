@@ -7,7 +7,7 @@ SELECT
 FROM
 	[Person] [entity]
 		INNER JOIN (VALUES
-			(1,NULL)
+			(1,CAST(NULL AS Float))
 		) [arg]([Id], [Value]) ON [entity].[PersonID] = [arg].[Id]
 
 BeforeExecute
@@ -19,6 +19,6 @@ SELECT
 FROM
 	[Person] [entity]
 		INNER JOIN (VALUES
-			(1,3147483648)
+			(1,CAST(3147483648 AS Float))
 		) [arg]([Id], [Value]) ON [entity].[PersonID] = [arg].[Id]
 
