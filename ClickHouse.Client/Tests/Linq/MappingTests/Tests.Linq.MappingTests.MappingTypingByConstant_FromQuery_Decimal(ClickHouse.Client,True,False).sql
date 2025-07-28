@@ -23,7 +23,7 @@ FROM
 	(
 		SELECT
 			r.PersonID as ID,
-			toDecimal128('2147483648', 10) as Value_1
+			toDecimal128('2147483648.123', 10) as Value_1
 		FROM
 			Person r
 	) t1
