@@ -19,6 +19,6 @@ SELECT
 FROM
 	"Person" entity
 		INNER JOIN (VALUES
-			(1,2147483648::bigint)
+			(1,2147483648::BigInt)
 		) arg("Id", "Value") ON entity."PersonID" = arg."Id"
 

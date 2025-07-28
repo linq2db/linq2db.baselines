@@ -16,5 +16,5 @@ FROM
 			"LinqDataTypes" p
 	) t
 WHERE
-	t.c1 <> 0::decimal(1) AND t.c1 <> 7::decimal(1)
+	t.c1 <> 0 AND t.c1 <> 7
 

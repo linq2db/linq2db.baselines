@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
 DECLARE @Value Bigint -- Int64
-SET     @Value = 1::bigint
+SET     @Value = 1
 
 SELECT
 	arg."Id",
@@ -15,7 +15,7 @@ FROM
 BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
 DECLARE @Value Bigint -- Int64
-SET     @Value = 2147483648::bigint
+SET     @Value = 2147483648
 
 SELECT
 	arg."Id",

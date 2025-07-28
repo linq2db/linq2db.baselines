@@ -21,7 +21,7 @@ BeforeExecute
 DECLARE @Id Integer -- Int32
 SET     @Id = 2
 DECLARE @Int64Nullable Bigint -- Int64
-SET     @Int64Nullable = 4::bigint
+SET     @Int64Nullable = 4
 
 INSERT INTO "CreateTableTypes"
 (

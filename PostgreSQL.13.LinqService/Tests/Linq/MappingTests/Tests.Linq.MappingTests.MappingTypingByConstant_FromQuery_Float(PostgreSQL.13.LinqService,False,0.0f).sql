@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
 DECLARE @value Real -- Single
-SET     @value = 0::float4
+SET     @value = 0
 
 SELECT
 	t1."ID",
@@ -18,7 +18,7 @@ FROM
 BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
 DECLARE @value Real -- Single
-SET     @value = 3.14748365E+09::float4
+SET     @value = 3.14748365E+09
 
 SELECT
 	t1."ID",
