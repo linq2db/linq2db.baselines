@@ -7,7 +7,7 @@ SELECT
 FROM
 	"Person" entity
 		INNER JOIN (VALUES
-			(1,1::decimal(1))
+			(1,1::decimal)
 		) arg("Id", "Value") ON entity."PersonID" = arg."Id"
 
 BeforeExecute
@@ -19,6 +19,6 @@ SELECT
 FROM
 	"Person" entity
 		INNER JOIN (VALUES
-			(1,2147483648::decimal(10))
+			(1,2147483648.123::decimal)
 		) arg("Id", "Value") ON entity."PersonID" = arg."Id"
 

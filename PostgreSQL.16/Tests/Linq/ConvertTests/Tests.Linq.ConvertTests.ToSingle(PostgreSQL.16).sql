@@ -6,5 +6,5 @@ SELECT
 FROM
 	"LinqDataTypes" p
 WHERE
-	p."MoneyValue"::Real > 0::float4
+	p."MoneyValue"::Real > 0
 

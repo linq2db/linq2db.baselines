@@ -28,12 +28,12 @@ SET     @value_5 = 00:00:00
 MERGE INTO "TestMerge1" "Target"
 USING (VALUES
 	(1,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL),
-	(2,-2147483647,-9223372036854775807::bigint,True,'normal strinG','всЁ нормально','*','ё',-3.40282002E+38::float4,-1.7976931348623157E+308::float8,'2000-11-12 21:14:15.167'::timestamp,:value,E'\\x'::bytea,'00000000-0000-0000-0000-000000000000'::uuid,12345678.9012345678::decimal(18, 10),'2000-11-23'::date,:value_1,'FIRST',NULL),
-	(3,2147483647,9223372036854775807::bigint,False,'test
+	(2,-2147483647,-9223372036854775807,True,'normal strinG','всЁ нормально','*','ё',-3.40282002E+38,-1.7976931348623157E+308,'2000-11-12 21:14:15.167'::timestamp,:value,E'\\x'::bytea,'00000000-0000-0000-0000-000000000000'::uuid,12345678.9012345678,'2000-11-23'::date,:value_1,'FIRST',NULL),
+	(3,2147483647,9223372036854775807,False,'test
 	','ЙЦУКЩывапрм
-q','&','>',3.40282002E+38::float4,1.7976931348623157E+308::float8,'2001-10-12 21:14:15.167'::timestamp,:value_2,E'\\x000102030004'::bytea,'ffffffff-ffff-ffff-ffff-ffffffffffff'::uuid,-99999999.9999999999::decimal(19, 10),'2123-11-23'::date,:value_3,'',0),
-	(4,-123,987::bigint,NULL,'`~!@#$%^&*()_+{}|[]\','<>?/.,;''щЩ":','','
-',1.17549996E-38::float4,-2.2250738585072014E-308::float8,'2098-10-12 21:14:15.997'::timestamp,:value_4,E'\\xFFC864321400'::bytea,'ffffffff-ffff-ffff-ffff-ffffffffffff'::uuid,99999999.9999999999::decimal(19, 10),'2110-11-23'::date,:value_5,'',2147483647)
+q','&','>',3.40282002E+38,1.7976931348623157E+308,'2001-10-12 21:14:15.167'::timestamp,:value_2,E'\\x000102030004'::bytea,'ffffffff-ffff-ffff-ffff-ffffffffffff'::uuid,-99999999.9999999999,'2123-11-23'::date,:value_3,'',0),
+	(4,-123,987,NULL,'`~!@#$%^&*()_+{}|[]\','<>?/.,;''щЩ":','','
+',1.17549996E-38,-2.2250738585072014E-308,'2098-10-12 21:14:15.997'::timestamp,:value_4,E'\\xFFC864321400'::bytea,'ffffffff-ffff-ffff-ffff-ffffffffffff'::uuid,99999999.9999999999,'2110-11-23'::date,:value_5,'',2147483647)
 ) "Source"
 (
 	"Id",
@@ -123,14 +123,14 @@ SET     @value_6 = 22:44:33
 
 MERGE INTO "TestMerge2" "Target"
 USING (VALUES
-	(3,-123,987::bigint,NULL,'<>?/.,;''zZ":','`~!@#$%^&*()_+{}|[]\','','',-1.17549996E-38::float4,2.2250738585072014E-308::float8,'2098-10-12 21:14:15.907'::timestamp,:value,E'\\xFFC864321400'::bytea,'ffffffff-ffff-ffff-ffff-ffffffffffff'::uuid,-0.123::decimal(3, 3),'2111-11-23'::date,:value_1,NULL,-2147483647),
-	(4,2147483647,9223372036854775807::bigint,False,'test
+	(3,-123,987::BigInt,NULL,'<>?/.,;''zZ":','`~!@#$%^&*()_+{}|[]\','','',-1.17549996E-38::Real,2.2250738585072014E-308::Float,'2098-10-12 21:14:15.907'::timestamp,:value,E'\\xFFC864321400'::bytea,'ffffffff-ffff-ffff-ffff-ffffffffffff'::uuid,-0.123::decimal,'2111-11-23'::date,:value_1,NULL,-2147483647),
+	(4,2147483647,9223372036854775807,False,'test
 	','ЙЦУКЩывапрм
-q','1',' ',3.40282002E+38::float4,1.7976931348623157E+308::float8,'2001-10-12 21:14:15.167'::timestamp,:value_2,E'\\x000102030004'::bytea,'ffffffff-ffff-ffff-ffff-ffffffffffff'::uuid,-99999999.9999999999::decimal(19, 10),'2123-11-23'::date,:value_3,'',0),
-	(5,-123,987::bigint,NULL,'<>?/.,;''zZ":','`~!@#$%^&*()_+{}|[]\',' ',' ',-1.17549996E-38::float4,2.2250738585072014E-308::float8,'2098-10-12 21:14:15.913'::timestamp,:value_4,E'\\xFFC864321400'::bytea,'ffffffff-ffff-ffff-ffff-ffffffffffff'::uuid,-0.123::decimal(3, 3),'2010-11-23'::date,:value_1,NULL,-2147483647),
-	(6,2147483647,9223372036854775807::bigint,False,'test
+q','1',' ',3.40282002E+38,1.7976931348623157E+308,'2001-10-12 21:14:15.167'::timestamp,:value_2,E'\\x000102030004'::bytea,'ffffffff-ffff-ffff-ffff-ffffffffffff'::uuid,-99999999.9999999999,'2123-11-23'::date,:value_3,'',0),
+	(5,-123,987,NULL,'<>?/.,;''zZ":','`~!@#$%^&*()_+{}|[]\',' ',' ',-1.17549996E-38,2.2250738585072014E-308,'2098-10-12 21:14:15.913'::timestamp,:value_4,E'\\xFFC864321400'::bytea,'ffffffff-ffff-ffff-ffff-ffffffffffff'::uuid,-0.123,'2010-11-23'::date,:value_1,NULL,-2147483647),
+	(6,2147483647,9223372036854775807,False,'test
 	  ','ЙЦУКЩывапрм
-q  ','-','~',3.40282002E+38::float4,1.7976931348623157E+308::float8,'2001-10-12 21:14:15.167'::timestamp,:value_5,E'\\x000102030004'::bytea,'ffffffff-ffff-ffff-ffff-ffffffffffff'::uuid,-99999999.9999999999::decimal(19, 10),'2123-11-23'::date,:value_6,'',0)
+q  ','-','~',3.40282002E+38,1.7976931348623157E+308,'2001-10-12 21:14:15.167'::timestamp,:value_5,E'\\x000102030004'::bytea,'ffffffff-ffff-ffff-ffff-ffffffffffff'::uuid,-99999999.9999999999,'2123-11-23'::date,:value_6,'',0)
 ) "Source"
 (
 	"Id",

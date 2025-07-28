@@ -11,5 +11,5 @@ FROM
 			"LinqDataTypes" t
 	) p
 WHERE
-	p.c1 > 0::float8
+	p.c1 > 0
 

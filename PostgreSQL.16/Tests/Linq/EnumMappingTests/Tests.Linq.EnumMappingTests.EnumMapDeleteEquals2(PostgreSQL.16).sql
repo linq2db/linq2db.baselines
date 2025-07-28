@@ -19,7 +19,7 @@ INSERT INTO "LinqDataTypes"
 VALUES
 (
 	101,
-	12::bigint
+	12
 )
 
 BeforeExecute
@@ -28,7 +28,7 @@ BeforeExecute
 DELETE FROM
 	"LinqDataTypes" r
 WHERE
-	r."ID" = 101 AND r."BigIntValue" = 12::bigint
+	r."ID" = 101 AND r."BigIntValue" = 12
 
 BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL

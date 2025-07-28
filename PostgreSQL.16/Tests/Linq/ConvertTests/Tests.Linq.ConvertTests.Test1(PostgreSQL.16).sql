@@ -13,6 +13,6 @@ SELECT
 FROM
 	"LinqDataTypes" t
 WHERE
-	t."MoneyValue" * t."ID" = 1.11::decimal(3, 2)
+	t."MoneyValue" * t."ID" = 1.11
 LIMIT 2
 

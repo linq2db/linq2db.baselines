@@ -6,5 +6,5 @@ SELECT
 FROM
 	"LinqDataTypes" t
 WHERE
-	ROUND(t."MoneyValue"::Float) <> 0::float8
+	ROUND(t."MoneyValue"::Float) <> 0
 
