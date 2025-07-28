@@ -12,7 +12,7 @@ INSERT INTO "LinqDataTypes"
 VALUES
 (
 	:ID,
-	100::decimal(3),
+	100,
 	200
 )
 

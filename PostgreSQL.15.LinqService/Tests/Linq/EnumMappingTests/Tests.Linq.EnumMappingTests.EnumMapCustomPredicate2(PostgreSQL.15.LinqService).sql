@@ -19,7 +19,7 @@ INSERT INTO "LinqDataTypes"
 VALUES
 (
 	101,
-	12::bigint
+	12
 )
 
 BeforeExecute
@@ -32,7 +32,7 @@ SELECT
 FROM
 	"LinqDataTypes" entity
 WHERE
-	entity."BigIntValue" = 12::bigint
+	entity."BigIntValue" = 12
 
 BeforeExecute
 -- PostgreSQL.15 PostgreSQL

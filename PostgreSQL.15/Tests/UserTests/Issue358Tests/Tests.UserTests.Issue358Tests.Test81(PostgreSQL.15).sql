@@ -15,5 +15,5 @@ SELECT
 FROM
 	"LinqDataTypes" t1
 WHERE
-	t1."BigIntValue" IN (2::bigint)
+	t1."BigIntValue" IN (2)
 

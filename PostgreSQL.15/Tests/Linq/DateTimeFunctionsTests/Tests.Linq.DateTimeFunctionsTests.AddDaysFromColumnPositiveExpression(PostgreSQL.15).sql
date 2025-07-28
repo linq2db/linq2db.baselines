@@ -3,7 +3,7 @@
 DECLARE @ID Integer -- Int32
 SET     @ID = 5000
 DECLARE @MoneyValue Numeric(1, 0) -- Decimal
-SET     @MoneyValue = 0::decimal(1)
+SET     @MoneyValue = 0
 DECLARE @DateTimeValue Timestamp -- DateTime2
 SET     @DateTimeValue = '2018-01-03'::date
 DECLARE @BoolValue Boolean
@@ -52,7 +52,7 @@ SELECT
 FROM
 	"LinqDataTypes" t
 WHERE
-	t."ID" = 5000 AND t."DateTimeValue" + ((t."SmallIntValue" + :part1) - :part2) * Interval '1 Day' > make_timestamp(2018, 1, 2, 0, 0, 0::float8)
+	t."ID" = 5000 AND t."DateTimeValue" + ((t."SmallIntValue" + :part1) - :part2) * Interval '1 Day' > make_timestamp(2018, 1, 2, 0, 0, 0)
 
 BeforeExecute
 -- PostgreSQL.15 PostgreSQL
