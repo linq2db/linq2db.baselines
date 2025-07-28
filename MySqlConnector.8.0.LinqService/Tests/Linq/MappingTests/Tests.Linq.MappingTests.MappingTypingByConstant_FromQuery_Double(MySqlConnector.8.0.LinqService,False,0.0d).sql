@@ -10,7 +10,7 @@ FROM
 	(
 		SELECT
 			`r`.`PersonID` as `ID`,
-			@value as `Value_1`
+			CAST(@value AS DOUBLE) as `Value_1`
 		FROM
 			`Person` `r`
 	) `t1`
@@ -27,7 +27,7 @@ FROM
 	(
 		SELECT
 			`r`.`PersonID` as `ID`,
-			@value as `Value_1`
+			CAST(@value AS DOUBLE) as `Value_1`
 		FROM
 			`Person` `r`
 	) `t1`
