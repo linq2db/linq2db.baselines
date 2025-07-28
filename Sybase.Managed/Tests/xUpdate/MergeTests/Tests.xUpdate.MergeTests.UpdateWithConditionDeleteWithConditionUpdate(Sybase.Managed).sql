@@ -238,7 +238,7 @@ BeforeExecute
 
 MERGE INTO [TestMerge1] [Target]
 USING (
-	SELECT 3 AS [Id], NULL AS [Field1], 3 AS [Field2], NULL AS [Field3]
+	SELECT 3 AS [Id], CAST(NULL AS Int) AS [Field1], 3 AS [Field2], CAST(NULL AS Int) AS [Field3]
 	UNION ALL
 	SELECT 4, 5, 7, NULL
 	UNION ALL

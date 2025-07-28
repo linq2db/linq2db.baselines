@@ -5,7 +5,7 @@ BeforeExecute
 
 MERGE INTO [AllTypes] [Target]
 USING (
-	SELECT 10 AS [ID], char(0) AS [charDataType], char(0) AS [ncharDataType], NULL AS [nvarcharDataType]) [Source]
+	SELECT 10 AS [ID], char(0) AS [charDataType], char(0) AS [ncharDataType], CAST(NULL AS NVarChar(20)) AS [nvarcharDataType]) [Source]
 (
 	[ID],
 	[charDataType],
