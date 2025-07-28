@@ -18,5 +18,5 @@ SELECT
 FROM
 	[Person] [entity]
 		INNER JOIN (
-			SELECT 1 AS [Id], 2147483648 AS [Value]) [arg] ON [entity].[PersonID] = [arg].[Id]
+			SELECT 1 AS [Id], 2147483648.123 AS [Value]) [arg] ON [entity].[PersonID] = [arg].[Id]
 
