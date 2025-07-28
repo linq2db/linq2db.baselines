@@ -18,7 +18,7 @@ FROM
 BeforeExecute
 -- PostgreSQL.18 PostgreSQL
 DECLARE @value Double
-SET     @value = 3147483648::float8
+SET     @value = 3147483648
 
 SELECT
 	t1."ID",

@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- PostgreSQL.18 PostgreSQL
 DECLARE @param Double
-SET     @param = 33::float8
+SET     @param = 33
 
 SELECT
 	v."Integer"::Float / :param,

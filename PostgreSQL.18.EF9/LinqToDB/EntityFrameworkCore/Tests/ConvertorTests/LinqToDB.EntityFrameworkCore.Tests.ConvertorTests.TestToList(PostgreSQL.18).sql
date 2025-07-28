@@ -1,6 +1,6 @@
 ﻿-- PostgreSQL.18 PostgreSQL
 DECLARE @Id Bigint -- Int64
-SET     @Id = 1::bigint
+SET     @Id = 1
 DECLARE @PermanentId Uuid -- Guid
 SET     @PermanentId = 'bc7b663d-0fde-4327-8f92-5d8cc3a11d11'::uuid
 DECLARE @Code Text(2) -- String
@@ -33,7 +33,7 @@ RETURNING
 
 -- PostgreSQL.18 PostgreSQL
 DECLARE @Id Bigint -- Int64
-SET     @Id = 2::bigint
+SET     @Id = 2
 DECLARE @PermanentId Uuid -- Guid
 SET     @PermanentId = 'a948600d-de21-4f74-8ac2-9516b287076e'::uuid
 DECLARE @Code Text(2) -- String
@@ -66,7 +66,7 @@ RETURNING
 
 -- PostgreSQL.18 PostgreSQL
 DECLARE @Id Bigint -- Int64
-SET     @Id = 3::bigint
+SET     @Id = 3
 DECLARE @PermanentId Uuid -- Guid
 SET     @PermanentId = 'bd3973a5-4323-4dd8-9f4f-df9f93e2a627'::uuid
 DECLARE @Code Text(2) -- String
@@ -113,13 +113,13 @@ SELECT
 FROM
 	"Subdivisions" s
 WHERE
-	s."Id"::BigInt = 1::bigint
+	s."Id"::BigInt = 1
 
 
 
 -- PostgreSQL.18 PostgreSQL
 DECLARE @id Bigint -- Int64
-SET     @id = 1::bigint
+SET     @id = 1
 
 SELECT
 	s."Id",
@@ -145,7 +145,7 @@ SELECT
 FROM
 	"Subdivisions" s
 WHERE
-	s."Id" IN (2::bigint, 3::bigint)
+	s."Id" IN (2, 3)
 
 
 

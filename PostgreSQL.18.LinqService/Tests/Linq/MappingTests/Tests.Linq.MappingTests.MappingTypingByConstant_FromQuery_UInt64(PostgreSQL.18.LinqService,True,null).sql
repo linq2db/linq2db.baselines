@@ -23,7 +23,7 @@ FROM
 	(
 		SELECT
 			r."PersonID" as "ID",
-			2147483648::decimal(10) as "Value_1"
+			Floor(2147483648)::decimal(20) as "Value_1"
 		FROM
 			"Person" r
 	) t1

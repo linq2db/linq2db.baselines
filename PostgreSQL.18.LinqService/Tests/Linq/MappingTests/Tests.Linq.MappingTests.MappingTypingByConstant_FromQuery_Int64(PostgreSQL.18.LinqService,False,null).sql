@@ -18,7 +18,7 @@ FROM
 BeforeExecute
 -- PostgreSQL.18 PostgreSQL
 DECLARE @value Bigint -- Int64
-SET     @value = 2147483648::bigint
+SET     @value = 2147483648
 
 SELECT
 	t1."ID",

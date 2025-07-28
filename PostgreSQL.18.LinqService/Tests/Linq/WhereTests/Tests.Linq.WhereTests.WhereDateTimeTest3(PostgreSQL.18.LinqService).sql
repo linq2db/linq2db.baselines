@@ -13,5 +13,5 @@ SELECT
 FROM
 	"LinqDataTypes" t1
 WHERE
-	t1."DateTimeValue" = make_timestamp(2009, 9, 27, 0, 0, 0::float8)
+	t1."DateTimeValue" = make_timestamp(2009, 9, 27, 0, 0, 0)
 

@@ -18,7 +18,7 @@ FROM
 BeforeExecute
 -- PostgreSQL.18 PostgreSQL
 DECLARE @value Numeric(10, 0) -- Decimal
-SET     @value = 2147483648::decimal(10)
+SET     @value = 2147483648
 
 SELECT
 	t1."ID",

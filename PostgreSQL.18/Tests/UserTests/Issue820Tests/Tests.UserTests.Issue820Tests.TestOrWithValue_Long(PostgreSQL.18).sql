@@ -9,7 +9,7 @@ FROM
 BeforeExecute
 -- PostgreSQL.18 PostgreSQL
 DECLARE @param Bigint -- Int64
-SET     @param = 1::bigint
+SET     @param = 1
 
 SELECT
 	t1."ID",

@@ -11,5 +11,5 @@ FROM
 			"LinqDataTypes" p
 	) t
 WHERE
-	t."Value_1" <> 0.1::decimal(1, 1)
+	t."Value_1" <> 0.1
 
