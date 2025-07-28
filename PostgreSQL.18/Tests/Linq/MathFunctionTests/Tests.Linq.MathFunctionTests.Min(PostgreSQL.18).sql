@@ -7,12 +7,12 @@ FROM
 	(
 		SELECT
 			CASE
-				WHEN p."MoneyValue" <= 5 THEN p."MoneyValue"
-				ELSE 5
+				WHEN p."MoneyValue" <= 5::decimal(1) THEN p."MoneyValue"
+				ELSE 5::decimal(1)
 			END as c1
 		FROM
 			"LinqDataTypes" p
 	) t
 WHERE
-	t.c1 <> 0
+	t.c1 <> 0::decimal(1)
 

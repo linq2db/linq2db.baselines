@@ -8,7 +8,7 @@ RETURNING "ID";
 
 -- PostgreSQL.18 PostgreSQL (asynchronously)
 DECLARE @field64 Numeric(1, 0) -- Decimal
-SET     @field64 = 5
+SET     @field64 = 5::decimal(1)
 
 SELECT
 	e."ID",

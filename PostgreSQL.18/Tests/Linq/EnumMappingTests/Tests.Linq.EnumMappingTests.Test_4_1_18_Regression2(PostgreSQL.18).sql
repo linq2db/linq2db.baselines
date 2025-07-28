@@ -20,7 +20,7 @@ INSERT INTO "LinqDataTypes"
 VALUES
 (
 	101,
-	4,
+	4::bigint,
 	10
 )
 

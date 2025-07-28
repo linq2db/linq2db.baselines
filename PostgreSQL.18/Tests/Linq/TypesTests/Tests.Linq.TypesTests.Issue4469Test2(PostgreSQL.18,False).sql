@@ -1,9 +1,9 @@
 ﻿BeforeExecute
 -- PostgreSQL.18 PostgreSQL
 DECLARE @param Numeric(2, 0) -- Decimal
-SET     @param = 33
+SET     @param = 33::decimal(2)
 DECLARE @param_1 Numeric(2, 0) -- Decimal
-SET     @param_1 = 33
+SET     @param_1 = 33::decimal(2)
 
 SELECT
 	v."Integer"::decimal / :param,

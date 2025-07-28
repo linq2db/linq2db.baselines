@@ -15,5 +15,5 @@ SELECT
 FROM
 	"LinqDataTypes" t1
 WHERE
-	Date_Trunc('day', t1."DateTimeValue") = Date_Trunc('day', make_timestamp(2009, 9, 20, 0, 0, 0))
+	Date_Trunc('day', t1."DateTimeValue") = Date_Trunc('day', make_timestamp(2009, 9, 20, 0, 0, 0::float8))
 

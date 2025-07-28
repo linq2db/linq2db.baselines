@@ -8,8 +8,8 @@ INSERT INTO "MultipleRowsTable"
 	"DecimalValue2"
 )
 VALUES
-(1,NULL,1),
-(2,1.5,-2.6)
+(1,NULL,1::decimal(1)),
+(2,1.5::decimal(2, 1),-2.6::decimal(2, 1))
 
 BeforeExecute
 -- PostgreSQL.18 PostgreSQL

@@ -2,7 +2,7 @@
 -- PostgreSQL.18 PostgreSQL
 
 SELECT
-	Date_Trunc('day', (t."TransactionDate" + 5 * Interval '1 Day') AT TIME ZONE 'UTC')::Date
+	Date_Trunc('day', (t."TransactionDate" + 5::float8 * Interval '1 Day') AT TIME ZONE 'UTC')::Date
 FROM
 	"Transactions" t
 
