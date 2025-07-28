@@ -7,7 +7,7 @@ SELECT
 FROM
 	[Person] [entity]
 		INNER JOIN (VALUES
-			(1,0)
+			(1,CAST(0 AS Real))
 		) [arg]([Id], [Value]) ON [entity].[PersonID] = [arg].[Id]
 
 BeforeExecute
@@ -19,6 +19,6 @@ SELECT
 FROM
 	[Person] [entity]
 		INNER JOIN (VALUES
-			(1,3.14748365E+09)
+			(1,CAST(3.14748365E+09 AS Real))
 		) [arg]([Id], [Value]) ON [entity].[PersonID] = [arg].[Id]
 
