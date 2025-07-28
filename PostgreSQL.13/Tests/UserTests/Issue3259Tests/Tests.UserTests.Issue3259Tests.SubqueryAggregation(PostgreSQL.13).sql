@@ -118,8 +118,8 @@ FROM
 				INNER JOIN "Employee" "a_Employee" ON tracking."EmployeeId" = "a_Employee"."EmployeeId"
 	) t5
 ORDER BY
-	Coalesce(t5."WithParentReference", 0),
-	Coalesce(t5."WithParentReferenceCustom1", 0),
-	Coalesce(t5."WithParentReferenceCustom2", 0),
-	Coalesce(t5."WithoutParentReference", 0) DESC
+	Coalesce(t5."WithParentReference", 0::decimal(1)),
+	Coalesce(t5."WithParentReferenceCustom1", 0::decimal(1)),
+	Coalesce(t5."WithParentReferenceCustom2", 0::decimal(1)),
+	Coalesce(t5."WithoutParentReference", 0::decimal(1)) DESC
 

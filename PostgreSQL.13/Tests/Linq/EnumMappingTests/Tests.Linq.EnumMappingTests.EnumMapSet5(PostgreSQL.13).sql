@@ -19,20 +19,20 @@ INSERT INTO "LinqDataTypes"
 VALUES
 (
 	101,
-	11
+	11::bigint
 )
 
 BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
 DECLARE @TestField Bigint -- Int64
-SET     @TestField = 12
+SET     @TestField = 12::bigint
 
 UPDATE
 	"LinqDataTypes"
 SET
 	"BigIntValue" = :TestField
 WHERE
-	"LinqDataTypes"."ID" = 101 AND "LinqDataTypes"."BigIntValue" = 11
+	"LinqDataTypes"."ID" = 101 AND "LinqDataTypes"."BigIntValue" = 11::bigint
 
 BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
@@ -42,7 +42,7 @@ SELECT
 FROM
 	"LinqDataTypes" r
 WHERE
-	r."ID" = 101 AND r."BigIntValue" = 12
+	r."ID" = 101 AND r."BigIntValue" = 12::bigint
 LIMIT 1
 
 BeforeExecute

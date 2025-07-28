@@ -3,7 +3,7 @@ BeginTransaction
 BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
 DECLARE @Id Bigint -- Int64
-SET     @Id = 1
+SET     @Id = 1::bigint
 DECLARE @asdfgh Text(4) -- String
 SET     @asdfgh = 'res1'
 
@@ -21,7 +21,7 @@ VALUES
 BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
 DECLARE @Id Bigint -- Int64
-SET     @Id = 100500
+SET     @Id = 100500::bigint
 DECLARE @asdfgh Text(9) -- String
 SET     @asdfgh = 'res100500'
 
@@ -39,9 +39,9 @@ VALUES
 BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
 DECLARE @ref1 Bigint -- Int64
-SET     @ref1 = 100500
+SET     @ref1 = 100500::bigint
 DECLARE @y1_q1_ref1 Bigint -- Int64
-SET     @y1_q1_ref1 = 100500
+SET     @y1_q1_ref1 = 100500::bigint
 
 INSERT INTO mega_composites
 (
@@ -57,9 +57,9 @@ VALUES
 BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
 DECLARE @ref1 Bigint -- Int64
-SET     @ref1 = 1
+SET     @ref1 = 1::bigint
 DECLARE @y1_q1_ref1 Bigint -- Int64
-SET     @y1_q1_ref1 = 100500
+SET     @y1_q1_ref1 = 100500::bigint
 
 INSERT INTO mega_composites
 (
@@ -75,9 +75,9 @@ VALUES
 BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
 DECLARE @ref1 Bigint -- Int64
-SET     @ref1 = 100500
+SET     @ref1 = 100500::bigint
 DECLARE @y1_q1_ref1 Bigint -- Int64
-SET     @y1_q1_ref1 = 1
+SET     @y1_q1_ref1 = 1::bigint
 
 INSERT INTO mega_composites
 (

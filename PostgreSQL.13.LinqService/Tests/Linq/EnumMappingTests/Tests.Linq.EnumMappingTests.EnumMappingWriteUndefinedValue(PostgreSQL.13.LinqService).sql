@@ -19,7 +19,7 @@ INSERT INTO "LinqDataTypes"
 VALUES
 (
 	101,
-	5
+	5::bigint
 )
 
 BeforeExecute
