@@ -2,5 +2,5 @@
 -- PostgreSQL.15 PostgreSQL
 
 SELECT
-	20
+	20::float8
 

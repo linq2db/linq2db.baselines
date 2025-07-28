@@ -23,7 +23,7 @@ INSERT INTO "TestIdTrun"
 )
 VALUES
 (
-	1
+	1::decimal(1)
 )
 
 BeforeExecute
@@ -35,7 +35,7 @@ INSERT INTO "TestIdTrun"
 )
 VALUES
 (
-	1
+	1::decimal(1)
 )
 
 BeforeExecute
@@ -66,7 +66,7 @@ INSERT INTO "TestIdTrun"
 )
 VALUES
 (
-	1
+	1::decimal(1)
 )
 
 BeforeExecute
@@ -78,7 +78,7 @@ INSERT INTO "TestIdTrun"
 )
 VALUES
 (
-	1
+	1::decimal(1)
 )
 
 BeforeExecute

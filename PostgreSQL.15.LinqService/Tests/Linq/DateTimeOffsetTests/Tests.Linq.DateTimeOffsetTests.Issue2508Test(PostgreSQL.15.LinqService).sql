@@ -8,5 +8,5 @@ SELECT
 FROM
 	"Transactions" t
 WHERE
-	t."TransactionDate" > :value + 200 * Interval '1 Minute'
+	t."TransactionDate" > :value + 200::float8 * Interval '1 Minute'
 

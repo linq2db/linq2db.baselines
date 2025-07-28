@@ -103,7 +103,7 @@ SET     @Id = 2
 DECLARE @FieldInt32 Integer -- Int32
 SET     @FieldInt32 = -2147483647
 DECLARE @FieldInt64 Bigint -- Int64
-SET     @FieldInt64 = -9223372036854775807
+SET     @FieldInt64 = -9223372036854775807::bigint
 DECLARE @FieldBoolean Boolean
 SET     @FieldBoolean = True
 DECLARE @FieldString Text(13) -- String
@@ -115,9 +115,9 @@ SET     @FieldChar = '*'
 DECLARE @FieldNChar Char -- String
 SET     @FieldNChar = 'ё'
 DECLARE @FieldFloat Real -- Single
-SET     @FieldFloat = -3.40282002E+38
+SET     @FieldFloat = -3.40282002E+38::float4
 DECLARE @FieldDouble Double
-SET     @FieldDouble = -1.7976931348623157E+308
+SET     @FieldDouble = -1.7976931348623157E+308::float8
 DECLARE @FieldDateTime Timestamp -- DateTime2
 SET     @FieldDateTime = '2000-11-12 21:14:15.167'::timestamp
 DECLARE @FieldDateTime2 TimestampTz -- DateTime
@@ -127,7 +127,7 @@ SET     @FieldBinary = E'\\x'::bytea
 DECLARE @FieldGuid Uuid -- Guid
 SET     @FieldGuid = '00000000-0000-0000-0000-000000000000'::uuid
 DECLARE @FieldDecimal Numeric(18, 10) -- Decimal
-SET     @FieldDecimal = 12345678.9012345678
+SET     @FieldDecimal = 12345678.9012345678::decimal(18, 10)
 DECLARE @FieldDate Timestamp -- DateTime2
 SET     @FieldDate = '2000-11-23'::date
 DECLARE @FieldTime Interval -- Object
@@ -189,7 +189,7 @@ SET     @Id = 3
 DECLARE @FieldInt32 Integer -- Int32
 SET     @FieldInt32 = 2147483647
 DECLARE @FieldInt64 Bigint -- Int64
-SET     @FieldInt64 = 9223372036854775807
+SET     @FieldInt64 = 9223372036854775807::bigint
 DECLARE @FieldBoolean Boolean
 SET     @FieldBoolean = False
 DECLARE @FieldString Text(10) -- String
@@ -203,9 +203,9 @@ SET     @FieldChar = '&'
 DECLARE @FieldNChar Char -- String
 SET     @FieldNChar = '>'
 DECLARE @FieldFloat Real -- Single
-SET     @FieldFloat = 3.40282002E+38
+SET     @FieldFloat = 3.40282002E+38::float4
 DECLARE @FieldDouble Double
-SET     @FieldDouble = 1.7976931348623157E+308
+SET     @FieldDouble = 1.7976931348623157E+308::float8
 DECLARE @FieldDateTime Timestamp -- DateTime2
 SET     @FieldDateTime = '2001-10-12 21:14:15.167'::timestamp
 DECLARE @FieldDateTime2 TimestampTz -- DateTime
@@ -215,7 +215,7 @@ SET     @FieldBinary = E'\\x000102030004'::bytea
 DECLARE @FieldGuid Uuid -- Guid
 SET     @FieldGuid = 'ffffffff-ffff-ffff-ffff-ffffffffffff'::uuid
 DECLARE @FieldDecimal Numeric(18, 10) -- Decimal
-SET     @FieldDecimal = -99999999.9999999999
+SET     @FieldDecimal = -99999999.9999999999::decimal(19, 10)
 DECLARE @FieldDate Timestamp -- DateTime2
 SET     @FieldDate = '2123-11-23'::date
 DECLARE @FieldTime Interval -- Object
@@ -277,7 +277,7 @@ SET     @Id = 4
 DECLARE @FieldInt32 Integer -- Int32
 SET     @FieldInt32 = -123
 DECLARE @FieldInt64 Bigint -- Int64
-SET     @FieldInt64 = 987
+SET     @FieldInt64 = 987::bigint
 DECLARE @FieldBoolean Boolean
 SET     @FieldBoolean = NULL
 DECLARE @FieldString Text(20) -- String
@@ -290,9 +290,9 @@ DECLARE @FieldNChar Char -- String
 SET     @FieldNChar = '
 '
 DECLARE @FieldFloat Real -- Single
-SET     @FieldFloat = 1.17549996E-38
+SET     @FieldFloat = 1.17549996E-38::float4
 DECLARE @FieldDouble Double
-SET     @FieldDouble = -2.2250738585072014E-308
+SET     @FieldDouble = -2.2250738585072014E-308::float8
 DECLARE @FieldDateTime Timestamp -- DateTime2
 SET     @FieldDateTime = '2098-10-12 21:14:15.997'::timestamp
 DECLARE @FieldDateTime2 TimestampTz -- DateTime
@@ -302,7 +302,7 @@ SET     @FieldBinary = E'\\xFFC864321400'::bytea
 DECLARE @FieldGuid Uuid -- Guid
 SET     @FieldGuid = 'ffffffff-ffff-ffff-ffff-ffffffffffff'::uuid
 DECLARE @FieldDecimal Numeric(18, 10) -- Decimal
-SET     @FieldDecimal = 99999999.9999999999
+SET     @FieldDecimal = 99999999.9999999999::decimal(19, 10)
 DECLARE @FieldDate Timestamp -- DateTime2
 SET     @FieldDate = '2110-11-23'::date
 DECLARE @FieldTime Interval -- Object
@@ -364,7 +364,7 @@ SET     @Id = 3
 DECLARE @FieldInt32 Integer -- Int32
 SET     @FieldInt32 = -123
 DECLARE @FieldInt64 Bigint -- Int64
-SET     @FieldInt64 = 987
+SET     @FieldInt64 = 987::bigint
 DECLARE @FieldBoolean Boolean
 SET     @FieldBoolean = NULL
 DECLARE @FieldString Text(12) -- String
@@ -376,9 +376,9 @@ SET     @FieldChar = ''
 DECLARE @FieldNChar Char -- String
 SET     @FieldNChar = ''
 DECLARE @FieldFloat Real -- Single
-SET     @FieldFloat = -1.17549996E-38
+SET     @FieldFloat = -1.17549996E-38::float4
 DECLARE @FieldDouble Double
-SET     @FieldDouble = 2.2250738585072014E-308
+SET     @FieldDouble = 2.2250738585072014E-308::float8
 DECLARE @FieldDateTime Timestamp -- DateTime2
 SET     @FieldDateTime = '2098-10-12 21:14:15.907'::timestamp
 DECLARE @FieldDateTime2 TimestampTz -- DateTime
@@ -388,7 +388,7 @@ SET     @FieldBinary = E'\\xFFC864321400'::bytea
 DECLARE @FieldGuid Uuid -- Guid
 SET     @FieldGuid = 'ffffffff-ffff-ffff-ffff-ffffffffffff'::uuid
 DECLARE @FieldDecimal Numeric(3, 3) -- Decimal
-SET     @FieldDecimal = -0.123
+SET     @FieldDecimal = -0.123::decimal(3, 3)
 DECLARE @FieldDate Timestamp -- DateTime2
 SET     @FieldDate = '2111-11-23'::date
 DECLARE @FieldTime Interval -- Object
@@ -450,7 +450,7 @@ SET     @Id = 4
 DECLARE @FieldInt32 Integer -- Int32
 SET     @FieldInt32 = 2147483647
 DECLARE @FieldInt64 Bigint -- Int64
-SET     @FieldInt64 = 9223372036854775807
+SET     @FieldInt64 = 9223372036854775807::bigint
 DECLARE @FieldBoolean Boolean
 SET     @FieldBoolean = False
 DECLARE @FieldString Text(9) -- String
@@ -464,9 +464,9 @@ SET     @FieldChar = '1'
 DECLARE @FieldNChar Char -- String
 SET     @FieldNChar = ' '
 DECLARE @FieldFloat Real -- Single
-SET     @FieldFloat = 3.40282002E+38
+SET     @FieldFloat = 3.40282002E+38::float4
 DECLARE @FieldDouble Double
-SET     @FieldDouble = 1.7976931348623157E+308
+SET     @FieldDouble = 1.7976931348623157E+308::float8
 DECLARE @FieldDateTime Timestamp -- DateTime2
 SET     @FieldDateTime = '2001-10-12 21:14:15.167'::timestamp
 DECLARE @FieldDateTime2 TimestampTz -- DateTime
@@ -476,7 +476,7 @@ SET     @FieldBinary = E'\\x000102030004'::bytea
 DECLARE @FieldGuid Uuid -- Guid
 SET     @FieldGuid = 'ffffffff-ffff-ffff-ffff-ffffffffffff'::uuid
 DECLARE @FieldDecimal Numeric(18, 10) -- Decimal
-SET     @FieldDecimal = -99999999.9999999999
+SET     @FieldDecimal = -99999999.9999999999::decimal(19, 10)
 DECLARE @FieldDate Timestamp -- DateTime2
 SET     @FieldDate = '2123-11-23'::date
 DECLARE @FieldTime Interval -- Object
@@ -538,7 +538,7 @@ SET     @Id = 5
 DECLARE @FieldInt32 Integer -- Int32
 SET     @FieldInt32 = -123
 DECLARE @FieldInt64 Bigint -- Int64
-SET     @FieldInt64 = 987
+SET     @FieldInt64 = 987::bigint
 DECLARE @FieldBoolean Boolean
 SET     @FieldBoolean = NULL
 DECLARE @FieldString Text(12) -- String
@@ -550,9 +550,9 @@ SET     @FieldChar = ' '
 DECLARE @FieldNChar Char -- String
 SET     @FieldNChar = ' '
 DECLARE @FieldFloat Real -- Single
-SET     @FieldFloat = -1.17549996E-38
+SET     @FieldFloat = -1.17549996E-38::float4
 DECLARE @FieldDouble Double
-SET     @FieldDouble = 2.2250738585072014E-308
+SET     @FieldDouble = 2.2250738585072014E-308::float8
 DECLARE @FieldDateTime Timestamp -- DateTime2
 SET     @FieldDateTime = '2098-10-12 21:14:15.913'::timestamp
 DECLARE @FieldDateTime2 TimestampTz -- DateTime
@@ -562,7 +562,7 @@ SET     @FieldBinary = E'\\xFFC864321400'::bytea
 DECLARE @FieldGuid Uuid -- Guid
 SET     @FieldGuid = 'ffffffff-ffff-ffff-ffff-ffffffffffff'::uuid
 DECLARE @FieldDecimal Numeric(3, 3) -- Decimal
-SET     @FieldDecimal = -0.123
+SET     @FieldDecimal = -0.123::decimal(3, 3)
 DECLARE @FieldDate Timestamp -- DateTime2
 SET     @FieldDate = '2010-11-23'::date
 DECLARE @FieldTime Interval -- Object
@@ -624,7 +624,7 @@ SET     @Id = 6
 DECLARE @FieldInt32 Integer -- Int32
 SET     @FieldInt32 = 2147483647
 DECLARE @FieldInt64 Bigint -- Int64
-SET     @FieldInt64 = 9223372036854775807
+SET     @FieldInt64 = 9223372036854775807::bigint
 DECLARE @FieldBoolean Boolean
 SET     @FieldBoolean = False
 DECLARE @FieldString Text(12) -- String
@@ -638,9 +638,9 @@ SET     @FieldChar = '-'
 DECLARE @FieldNChar Char -- String
 SET     @FieldNChar = '~'
 DECLARE @FieldFloat Real -- Single
-SET     @FieldFloat = 3.40282002E+38
+SET     @FieldFloat = 3.40282002E+38::float4
 DECLARE @FieldDouble Double
-SET     @FieldDouble = 1.7976931348623157E+308
+SET     @FieldDouble = 1.7976931348623157E+308::float8
 DECLARE @FieldDateTime Timestamp -- DateTime2
 SET     @FieldDateTime = '2001-10-12 21:14:15.167'::timestamp
 DECLARE @FieldDateTime2 TimestampTz -- DateTime
@@ -650,7 +650,7 @@ SET     @FieldBinary = E'\\x000102030004'::bytea
 DECLARE @FieldGuid Uuid -- Guid
 SET     @FieldGuid = 'ffffffff-ffff-ffff-ffff-ffffffffffff'::uuid
 DECLARE @FieldDecimal Numeric(18, 10) -- Decimal
-SET     @FieldDecimal = -99999999.9999999999
+SET     @FieldDecimal = -99999999.9999999999::decimal(19, 10)
 DECLARE @FieldDate Timestamp -- DateTime2
 SET     @FieldDate = '2123-11-23'::date
 DECLARE @FieldTime Interval -- Object
