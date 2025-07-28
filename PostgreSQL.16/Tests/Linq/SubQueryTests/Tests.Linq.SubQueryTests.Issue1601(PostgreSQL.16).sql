@@ -3,8 +3,8 @@
 
 SELECT
 	CASE
-		WHEN t2.x < 0 THEN 9
-		ELSE t2.x + 8
+		WHEN t2.x < 0::decimal(1) THEN 9::decimal(1)
+		ELSE t2.x + 8::decimal(1)
 	END,
 	t2.x + t2.x
 FROM

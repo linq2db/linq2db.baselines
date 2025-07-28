@@ -19,13 +19,13 @@ INSERT INTO "LinqDataTypes"
 VALUES
 (
 	101,
-	12
+	12::bigint
 )
 
 BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 DECLARE @param Bigint -- Int64
-SET     @param = 11
+SET     @param = 11::bigint
 
 INSERT INTO "LinqDataTypes"
 (
@@ -38,7 +38,7 @@ SELECT
 FROM
 	"LinqDataTypes" r
 WHERE
-	r."ID" = 101 AND r."BigIntValue" = 12
+	r."ID" = 101 AND r."BigIntValue" = 12::bigint
 
 BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
@@ -48,7 +48,7 @@ SELECT
 FROM
 	"LinqDataTypes" r
 WHERE
-	r."ID" = 101 AND r."BigIntValue" = 11
+	r."ID" = 101 AND r."BigIntValue" = 11::bigint
 
 BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL

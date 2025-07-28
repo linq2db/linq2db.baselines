@@ -13,7 +13,7 @@ BeforeExecute
 DECLARE @Id Integer -- Int32
 SET     @Id = 101
 DECLARE @TestField Bigint -- Int64
-SET     @TestField = 12
+SET     @TestField = 12::bigint
 
 INSERT INTO "LinqDataTypes"
 (
@@ -34,7 +34,7 @@ SELECT
 FROM
 	"LinqDataTypes" r
 WHERE
-	r."ID" = 101 AND r."BigIntValue" = 12
+	r."ID" = 101 AND r."BigIntValue" = 12::bigint
 
 BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL

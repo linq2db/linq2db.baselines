@@ -19,7 +19,7 @@ INSERT INTO "LinqDataTypes"
 VALUES
 (
 	101,
-	11
+	11::bigint
 )
 
 BeforeExecute
@@ -28,9 +28,9 @@ BeforeExecute
 UPDATE
 	"LinqDataTypes"
 SET
-	"BigIntValue" = 12
+	"BigIntValue" = 12::bigint
 WHERE
-	"LinqDataTypes"."ID" = 101 AND "LinqDataTypes"."BigIntValue" = 11
+	"LinqDataTypes"."ID" = 101 AND "LinqDataTypes"."BigIntValue" = 11::bigint
 
 BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
@@ -40,7 +40,7 @@ SELECT
 FROM
 	"LinqDataTypes" r
 WHERE
-	r."ID" = 101 AND r."BigIntValue" = 12
+	r."ID" = 101 AND r."BigIntValue" = 12::bigint
 LIMIT 1
 
 BeforeExecute

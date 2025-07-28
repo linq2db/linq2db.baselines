@@ -13,11 +13,11 @@ INSERT INTO "UIntTable"
 VALUES
 (
 	65535,
-	4294967295,
-	18446744073709551615,
+	4294967295::bigint,
+	18446744073709551615::decimal(20),
 	65535,
-	4294967295,
-	18446744073709551615
+	4294967295::bigint,
+	18446744073709551615::decimal(20)
 )
 
 BeforeExecute
@@ -44,15 +44,15 @@ BeforeExecute
 DECLARE @value16 Integer -- Int32
 SET     @value16 = 65535
 DECLARE @value32 Bigint -- Int64
-SET     @value32 = 4294967295
+SET     @value32 = 4294967295::bigint
 DECLARE @value64 Numeric(20, 0) -- Decimal
-SET     @value64 = 18446744073709551615
+SET     @value64 = 18446744073709551615::decimal(20)
 DECLARE @value16N Integer -- Int32
 SET     @value16N = 65535
 DECLARE @value32N Bigint -- Int64
-SET     @value32N = 4294967295
+SET     @value32N = 4294967295::bigint
 DECLARE @value64N Numeric(20, 0) -- Decimal
-SET     @value64N = 18446744073709551615
+SET     @value64N = 18446744073709551615::decimal(20)
 
 INSERT INTO "UIntTable"
 (

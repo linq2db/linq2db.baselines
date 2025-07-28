@@ -7,7 +7,7 @@ FROM
 	(
 		SELECT
 			Floor(CASE
-				WHEN t."MoneyValue" - FLOOR(t."MoneyValue") = 0.5 AND (FLOOR(t."MoneyValue") % 2) = 0
+				WHEN t."MoneyValue" - FLOOR(t."MoneyValue") = 0.5::float8 AND (FLOOR(t."MoneyValue") % 2) = 0
 					THEN FLOOR(t."MoneyValue")
 				ELSE ROUND(t."MoneyValue", 0)
 			END)::BigInt as c1
@@ -15,5 +15,5 @@ FROM
 			"LinqDataTypes" t
 	) p
 WHERE
-	p.c1 > 0
+	p.c1 > 0::bigint
 
