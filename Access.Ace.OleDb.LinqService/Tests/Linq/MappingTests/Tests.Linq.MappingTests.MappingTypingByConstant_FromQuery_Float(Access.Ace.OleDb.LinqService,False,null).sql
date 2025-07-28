@@ -27,7 +27,7 @@ FROM
 	(
 		SELECT
 			[r].[PersonID] as [ID],
-			CVar(@value) as [Value_1]
+			CSng(@value) as [Value_1]
 		FROM
 			[Person] [r]
 	) [t1]
