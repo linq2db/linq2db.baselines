@@ -3,7 +3,7 @@
 DECLARE @ID Integer -- Int32
 SET     @ID = 1001
 DECLARE @MoneyValue Numeric(4, 0) -- Decimal
-SET     @MoneyValue = 1000::decimal(4)
+SET     @MoneyValue = 1000
 DECLARE @SmallIntValue Smallint -- Int16
 SET     @SmallIntValue = 100
 
@@ -28,7 +28,7 @@ SET     @ID = 1001
 UPDATE
 	"LinqDataTypes"
 SET
-	"MoneyValue" = 2000::decimal(4),
+	"MoneyValue" = 2000,
 	"SmallIntValue" = 200
 WHERE
 	"LinqDataTypes"."ID" = :ID

@@ -107,7 +107,7 @@ VALUES
 (
 	:productId,
 	:includedProductId,
-	10::decimal(2)
+	10
 )
 
 BeforeExecute
@@ -125,7 +125,7 @@ VALUES
 (
 	1,
 	:productId,
-	10::decimal(2)
+	10
 )
 
 BeforeExecute

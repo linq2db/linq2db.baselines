@@ -18,7 +18,7 @@ FROM
 BeforeExecute
 -- PostgreSQL.17 PostgreSQL.15 PostgreSQL
 DECLARE @value Real -- Single
-SET     @value = 3.14748365E+09::float4
+SET     @value = 3.14748365E+09
 
 SELECT
 	t1."ID",

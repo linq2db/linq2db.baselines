@@ -21,7 +21,7 @@ BeforeExecute
 DECLARE @Id Integer -- Int32
 SET     @Id = 2
 DECLARE @DoubleNullable Double
-SET     @DoubleNullable = 4.1299999999999999::float8
+SET     @DoubleNullable = 4.1299999999999999
 
 INSERT INTO "CreateTableTypes"
 (

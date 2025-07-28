@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- PostgreSQL.17 PostgreSQL.15 PostgreSQL
 DECLARE @value Bigint -- Int64
-SET     @value = 0::bigint
+SET     @value = 0
 
 SELECT
 	t."ID",

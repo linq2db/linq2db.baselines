@@ -3,7 +3,7 @@
 DECLARE @Id Integer -- Int32
 SET     @Id = 1
 DECLARE @Double Double
-SET     @Double = 0::float8
+SET     @Double = 0
 
 INSERT INTO "CreateTableTypes"
 (
@@ -21,7 +21,7 @@ BeforeExecute
 DECLARE @Id Integer -- Int32
 SET     @Id = 2
 DECLARE @Double Double
-SET     @Double = 3.1400000000000001::float8
+SET     @Double = 3.1400000000000001
 
 INSERT INTO "CreateTableTypes"
 (

@@ -6,5 +6,5 @@ SELECT
 FROM
 	"LinqDataTypes" p
 WHERE
-	p."MoneyValue" > 0::decimal(1)
+	p."MoneyValue" > 0
 

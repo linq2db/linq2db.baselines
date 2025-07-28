@@ -14,7 +14,7 @@ FROM
 						"Child" "a_Children"
 					WHERE
 						g_1."ParentID" = "a_Children"."ParentID"
-				) > 3::float8
+				) > 3
 					THEN True
 				ELSE False
 			END as "Key_1"
