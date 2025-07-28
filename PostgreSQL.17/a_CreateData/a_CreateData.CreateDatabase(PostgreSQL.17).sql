@@ -984,18 +984,18 @@ INSERT INTO "LinqDataTypes"
 	"StringValue"
 )
 VALUES
-(1,1.11,'2001-01-11 01:11:21.100'::timestamp,NULL,True,'ef129165-6ffe-4df9-bb6b-bb16e413c883'::uuid,1,NULL,1,NULL),
-(2,2.49,'2005-05-15 05:15:25.500'::timestamp,NULL,False,'bc663a61-7b40-4681-ac38-f9aaf55b706b'::uuid,2,NULL,2,''),
-(3,3.99,'2009-09-19 09:19:29.090'::timestamp,NULL,True,'d2f970c0-35ac-4987-9cd5-5badb1757436'::uuid,3,NULL,NULL,'1'),
-(4,4.50,'2009-09-20 09:19:29.090'::timestamp,NULL,False,'40932fdb-1543-4e4a-ac2c-ca371604fb4b'::uuid,4,NULL,NULL,'2'),
-(5,5.50,'2009-09-20 09:19:29.090'::timestamp,NULL,True,'febe3eca-cb5f-40b2-ad39-2979d312afca'::uuid,5,NULL,NULL,'3'),
-(6,6.55,'2009-09-22 09:19:29.090'::timestamp,NULL,False,'8d3c5d1d-47db-4730-9fe7-968f6228a4c0'::uuid,6,NULL,NULL,'4'),
-(7,7.00,'2009-09-23 09:19:29.090'::timestamp,NULL,True,'48094115-83af-46dd-a906-bff26ee21ee2'::uuid,7,NULL,NULL,'5'),
-(8,8.99,'2009-09-24 09:19:29.090'::timestamp,NULL,False,'c1139f1f-1335-4cd4-937e-92602f732dd3'::uuid,8,NULL,NULL,'6'),
-(9,9.63,'2009-09-25 09:19:29.090'::timestamp,NULL,True,'46c5c512-3d4b-4cf7-b4e7-1de080789e5d'::uuid,9,NULL,NULL,'7'),
-(10,10.77,'2009-09-26 09:19:29.090'::timestamp,NULL,False,'61b2bc55-147f-4b40-93ed-a4aa83602fee'::uuid,10,NULL,NULL,'8'),
-(11,11.45,'2009-09-27'::date,NULL,True,'d3021d18-97f0-4dc0-98d0-f0c7df4a1230'::uuid,11,NULL,NULL,'9'),
-(12,11.45,'2012-11-07 19:19:29.090'::timestamp,NULL,True,'03021d18-97f0-4dc0-98d0-f0c7df4a1230'::uuid,12,NULL,NULL,'0')
+(1,1.11::decimal(3, 2),'2001-01-11 01:11:21.100'::timestamp,NULL,True,'ef129165-6ffe-4df9-bb6b-bb16e413c883'::uuid,1,NULL,1::bigint,NULL),
+(2,2.49::decimal(3, 2),'2005-05-15 05:15:25.500'::timestamp,NULL,False,'bc663a61-7b40-4681-ac38-f9aaf55b706b'::uuid,2,NULL,2::bigint,''),
+(3,3.99::decimal(3, 2),'2009-09-19 09:19:29.090'::timestamp,NULL,True,'d2f970c0-35ac-4987-9cd5-5badb1757436'::uuid,3,NULL,NULL,'1'),
+(4,4.50::decimal(3, 2),'2009-09-20 09:19:29.090'::timestamp,NULL,False,'40932fdb-1543-4e4a-ac2c-ca371604fb4b'::uuid,4,NULL,NULL,'2'),
+(5,5.50::decimal(3, 2),'2009-09-20 09:19:29.090'::timestamp,NULL,True,'febe3eca-cb5f-40b2-ad39-2979d312afca'::uuid,5,NULL,NULL,'3'),
+(6,6.55::decimal(3, 2),'2009-09-22 09:19:29.090'::timestamp,NULL,False,'8d3c5d1d-47db-4730-9fe7-968f6228a4c0'::uuid,6,NULL,NULL,'4'),
+(7,7.00::decimal(3, 2),'2009-09-23 09:19:29.090'::timestamp,NULL,True,'48094115-83af-46dd-a906-bff26ee21ee2'::uuid,7,NULL,NULL,'5'),
+(8,8.99::decimal(3, 2),'2009-09-24 09:19:29.090'::timestamp,NULL,False,'c1139f1f-1335-4cd4-937e-92602f732dd3'::uuid,8,NULL,NULL,'6'),
+(9,9.63::decimal(3, 2),'2009-09-25 09:19:29.090'::timestamp,NULL,True,'46c5c512-3d4b-4cf7-b4e7-1de080789e5d'::uuid,9,NULL,NULL,'7'),
+(10,10.77::decimal(4, 2),'2009-09-26 09:19:29.090'::timestamp,NULL,False,'61b2bc55-147f-4b40-93ed-a4aa83602fee'::uuid,10,NULL,NULL,'8'),
+(11,11.45::decimal(4, 2),'2009-09-27'::date,NULL,True,'d3021d18-97f0-4dc0-98d0-f0c7df4a1230'::uuid,11,NULL,NULL,'9'),
+(12,11.45::decimal(4, 2),'2012-11-07 19:19:29.090'::timestamp,NULL,True,'03021d18-97f0-4dc0-98d0-f0c7df4a1230'::uuid,12,NULL,NULL,'0')
 
 BeforeExecute
 -- PostgreSQL.17 PostgreSQL.15 PostgreSQL
