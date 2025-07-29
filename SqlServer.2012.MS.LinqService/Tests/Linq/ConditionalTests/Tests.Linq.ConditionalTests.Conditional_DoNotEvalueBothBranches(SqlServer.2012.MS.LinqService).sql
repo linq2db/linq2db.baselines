@@ -2,5 +2,5 @@
 -- SqlServer.2012.MS SqlServer.2012
 
 SELECT
-	CAST(20 AS Float)
+	20
 

@@ -225,8 +225,7 @@ BeforeExecute
 
 MERGE INTO [TestMerge1] [Target]
 USING (VALUES
-	(3,CAST(NULL AS Int),3,CAST(NULL AS Int)),
-	(4,5,7,214), (5,10,4,NULL), (6,NULL,NULL,216)
+	(3,NULL,3,NULL), (4,5,7,214), (5,10,4,NULL), (6,NULL,NULL,216)
 ) [Source]
 (
 	[Id],
