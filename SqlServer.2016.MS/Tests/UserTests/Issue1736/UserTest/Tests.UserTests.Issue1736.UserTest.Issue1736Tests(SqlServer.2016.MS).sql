@@ -74,7 +74,7 @@ FROM
 			1 = 0
 		UNION
 		SELECT
-			CAST(0 AS Decimal(1, 0)) as [RefQty],
+			CAST(0 AS Decimal(18, 10)) as [RefQty],
 			[ir_1].[Quantity],
 			[ir_1].[Id],
 			[ir_1].[Status],
