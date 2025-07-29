@@ -31,7 +31,7 @@ BeforeExecute
 -- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
 DECLARE @Column 36(16) -- Binary
 SET     @Column = JSON_ARRAY(1.2, -1.1)
-DECLARE @ColumnNullable NVarChar(2) -- String
+DECLARE @ColumnNullable NVarChar -- String
 SET     @ColumnNullable = NULL
 
 INSERT INTO [TypeTable`2]
@@ -160,7 +160,7 @@ BeforeExecute
 -- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
 DECLARE @Column 36(16) -- Binary
 SET     @Column = JSON_ARRAY(5.2, -3.1)
-DECLARE @ColumnNullable NVarChar(2) -- String
+DECLARE @ColumnNullable NVarChar -- String
 SET     @ColumnNullable = NULL
 
 INSERT INTO [TypeTable`2]
