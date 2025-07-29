@@ -9,7 +9,6 @@ SELECT
 	[t1].[Gender]
 FROM
 	(VALUES
-		(N'Janet',3,CAST(NULL AS NVarChar(4000)),CAST(NULL AS NVarChar(4000)),'M'),
-		(N'Doe',4,NULL,NULL,'M')
+		(N'Janet',3,NULL,NULL,'M'), (N'Doe',4,NULL,NULL,'M')
 	) [t1]([FirstName], [ID], [LastName], [MiddleName], [Gender])
 
