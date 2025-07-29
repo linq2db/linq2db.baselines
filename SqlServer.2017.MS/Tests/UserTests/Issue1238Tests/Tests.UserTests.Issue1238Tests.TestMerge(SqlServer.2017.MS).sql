@@ -12,7 +12,7 @@ BeforeExecute
 
 MERGE INTO [InheritanceParent] [Target]
 USING (VALUES
-	(143,NULL,1)
+	(143,CAST(NULL AS NVarChar(4000)),1)
 ) [Source]
 (
 	[Key1],
@@ -55,7 +55,7 @@ BeforeExecute
 
 MERGE INTO [InheritanceParent] [Target]
 USING (VALUES
-	(143,NULL,1)
+	(143,CAST(NULL AS NVarChar(4000)),1)
 ) [Source]
 (
 	[Key1],
