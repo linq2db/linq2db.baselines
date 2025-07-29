@@ -153,3 +153,9 @@ ORDER BY
 
 
 
+-- PostgreSQL.18 PostgreSQL
+
+DROP TABLE IF EXISTS issue_4940_temp_table
+
+
+
