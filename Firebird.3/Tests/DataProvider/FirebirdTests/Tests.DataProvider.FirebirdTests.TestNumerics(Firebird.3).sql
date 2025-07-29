@@ -1115,7 +1115,7 @@ SELECT Cast(@p as decimal(18)) FROM "Dual"
 
 BeforeExecute
 -- Firebird.3 Firebird3
-DECLARE @p Decimal(20, 0)
+DECLARE @p Decimal
 SET     @p = 1
 
 SELECT Cast(@p as decimal(18)) FROM "Dual"
@@ -1166,7 +1166,7 @@ SELECT Cast(@p as decimal(18)) FROM "Dual"
 
 BeforeExecute
 -- Firebird.3 Firebird3
-DECLARE @p Decimal(20, 0)
+DECLARE @p Decimal
 SET     @p = 1
 
 SELECT Cast(@p as decimal(18)) FROM "Dual"
@@ -1217,7 +1217,7 @@ SELECT Cast(@p as decimal(18)) FROM "Dual"
 
 BeforeExecute
 -- Firebird.3 Firebird3
-DECLARE @p Decimal(20, 0)
+DECLARE @p Decimal
 SET     @p = NULL
 
 SELECT Cast(@p as decimal(18)) FROM "Dual"

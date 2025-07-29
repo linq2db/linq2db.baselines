@@ -50,7 +50,7 @@ SET     @ID = 1
 UPDATE
 	"LinqDataTypes" "t1"
 SET
-	"MoneyValue" = CAST(@MoneyValue AS Decimal(3, 2)),
+	"MoneyValue" = CAST(@MoneyValue AS Decimal(18, 10)),
 	"DateTimeValue" = CAST(@DateTimeValue AS TimeStamp),
 	"DateTimeValue2" = CAST(@DateTimeValue2 AS TimeStamp),
 	"BoolValue" = CAST(@BoolValue AS BOOLEAN),

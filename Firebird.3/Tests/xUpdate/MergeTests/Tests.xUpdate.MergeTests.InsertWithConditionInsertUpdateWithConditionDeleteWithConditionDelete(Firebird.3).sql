@@ -236,7 +236,7 @@ BeforeExecute
 
 MERGE INTO "TestMerge1" "Target"
 USING (
-	SELECT 1 AS "Id", 123 AS "Field1", CAST(NULL AS Int) AS "Field2", CAST(NULL AS Int) AS "Field4", CAST(NULL AS Int) AS "Field3" FROM rdb$database
+	SELECT 1 AS "Id", 123 AS "Field1", NULL AS "Field2", NULL AS "Field4", NULL AS "Field3" FROM rdb$database
 	UNION ALL
 	SELECT 3, NULL, 3, NULL, NULL FROM rdb$database
 	UNION ALL
