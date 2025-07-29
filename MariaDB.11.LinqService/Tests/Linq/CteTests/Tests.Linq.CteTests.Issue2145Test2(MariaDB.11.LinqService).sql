@@ -19,7 +19,7 @@ AS
 		`t1`.`Gender`
 	FROM
 		(
-			SELECT 10 AS `ID`, 'FN1' AS `FirstName`, 'LN1' AS `LastName`, CAST(NULL AS CHAR(255)) AS `MiddleName`, 'M' AS `Gender`
+			SELECT 10 AS `ID`, 'FN1' AS `FirstName`, 'LN1' AS `LastName`, NULL AS `MiddleName`, 'M' AS `Gender`
 			UNION ALL
 			SELECT 11, 'FN2', NULL, NULL, 'F') `t1`
 )
