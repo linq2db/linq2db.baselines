@@ -4,8 +4,8 @@
 ALTER TABLE
 	TextData
 UPDATE
-	Items1 = concat(Coalesce(Items1, ''), Coalesce('yy', '')),
-	Items2 = concat(Coalesce(Items2, ''), Coalesce('yy', ''))
+	Items1 = concat(Items1, 'yy'),
+	Items2 = concat(Items2, 'yy')
 WHERE
 	Id >= 1
 
