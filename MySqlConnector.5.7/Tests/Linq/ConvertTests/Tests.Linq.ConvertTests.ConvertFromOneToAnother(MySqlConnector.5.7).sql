@@ -4,7 +4,7 @@ DECLARE @value NewDecimal(9, 5) -- Decimal
 SET     @value = 6579.64648
 
 SELECT
-	CAST(@value AS DECIMAL(29, 10))
+	@value
 FROM
 	`LinqDataTypes` `t1`
 LIMIT 1
@@ -37,7 +37,7 @@ DECLARE @value NewDecimal(9, 5) -- Decimal
 SET     @value = 6579.64648
 
 SELECT
-	CAST(@value AS DECIMAL(29, 10))
+	@value
 FROM
 	`LinqDataTypes` `t1`
 LIMIT 1
