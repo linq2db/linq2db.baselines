@@ -19,7 +19,7 @@ AS
 		[t1].[Gender]
 	FROM
 		(
-			SELECT 10 AS [ID], N'FN1' AS [FirstName], N'LN1' AS [LastName], NULL AS [MiddleName], 'M' AS [Gender]
+			SELECT 10 AS [ID], N'FN1' AS [FirstName], N'LN1' AS [LastName], CAST(NULL AS NVarChar(4000)) AS [MiddleName], 'M' AS [Gender]
 			UNION ALL
 			SELECT 11, N'FN2', NULL, NULL, 'F') [t1]
 )
