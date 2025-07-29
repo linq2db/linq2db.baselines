@@ -2,6 +2,6 @@
 -- Firebird.2.5 Firebird
 
 SELECT
-	CAST(20 AS Float)
+	20
 FROM rdb$database
 

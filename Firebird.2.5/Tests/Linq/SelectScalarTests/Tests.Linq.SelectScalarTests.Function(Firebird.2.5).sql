@@ -4,7 +4,7 @@ DECLARE @text VarChar(3) -- String
 SET     @text = '123'
 
 SELECT FIRST 1
-	"c_1"."ChildID" || ',' || Coalesce(CAST(@text AS VARCHAR(3)), '')
+	"c_1"."ChildID" || ',' || CAST(@text AS VARCHAR(3))
 FROM
 	"Child" "c_1"
 
