@@ -9,7 +9,7 @@ SELECT
 	[x].[Gender]
 FROM
 	(
-		SELECT 1 AS [Patient_PersonID], N'Janet' AS [FirstName], 2 AS [ID], CAST(NULL AS NVarChar(4000)) AS [LastName], CAST(NULL AS NVarChar(4000)) AS [MiddleName], 'M' AS [Gender]
+		SELECT 1 AS [Patient_PersonID], N'Janet' AS [FirstName], 2 AS [ID], NULL AS [LastName], NULL AS [MiddleName], 'M' AS [Gender]
 		UNION ALL
 		SELECT NULL, N'Doe', 3, NULL, NULL, 'M') [x]
 WHERE
