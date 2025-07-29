@@ -4,7 +4,7 @@ DECLARE @Second Int -- Int32
 SET     @Second = -35
 
 SELECT
-	DatePart('s', DateAdd('s', ?, [t].[DateTimeValue]))
+	DatePart('s', DateAdd('s', CVar(?), [t].[DateTimeValue]))
 FROM
 	[LinqDataTypes] [t]
 
