@@ -2,7 +2,7 @@
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 
 SELECT
-	(COUNT(*)::text || ' items have not been processed, e.g. #' || Coalesce(MIN(g_1."PersonID")::text, '')) || '.'
+	(COUNT(*) || ' items have not been processed, e.g. #' || MIN(g_1."PersonID")) || '.'
 FROM
 	"Person" g_1
 WHERE
