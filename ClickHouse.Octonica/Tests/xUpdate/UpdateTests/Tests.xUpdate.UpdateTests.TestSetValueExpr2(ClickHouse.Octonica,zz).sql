@@ -4,8 +4,8 @@
 ALTER TABLE
 	TextData
 UPDATE
-	Items1 = concat(Items1, 'zz'),
-	Items2 = concat(Items2, 'zz')
+	Items1 = concat(Coalesce(Items1, ''), Coalesce('zz', '')),
+	Items2 = concat(Coalesce(Items2, ''), Coalesce('zz', ''))
 WHERE
 	Id >= 1
 
