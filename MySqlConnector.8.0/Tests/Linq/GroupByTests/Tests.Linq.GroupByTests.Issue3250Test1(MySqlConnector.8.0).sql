@@ -2,7 +2,7 @@
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 
 SELECT
-	Concat(CAST(COUNT(*) AS CHAR(11)), ' items have not been processed, e.g. #', Coalesce(CAST(MIN(`g_1`.`PersonID`) AS CHAR(11)), ''), '.')
+	Concat(COUNT(*), ' items have not been processed, e.g. #', MIN(`g_1`.`PersonID`), '.')
 FROM
 	`Person` `g_1`
 WHERE
