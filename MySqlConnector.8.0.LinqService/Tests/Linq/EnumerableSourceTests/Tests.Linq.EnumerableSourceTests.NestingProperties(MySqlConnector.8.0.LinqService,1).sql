@@ -9,7 +9,7 @@ SELECT
 	`x`.`Gender`
 FROM
 	(
-		SELECT 1 AS `Patient_PersonID`, 'Janet' AS `FirstName`, 2 AS `ID`, NULL AS `LastName`, NULL AS `MiddleName`, 'M' AS `Gender`
+		SELECT 1 AS `Patient_PersonID`, 'Janet' AS `FirstName`, 2 AS `ID`, CAST(NULL AS CHAR(255)) AS `LastName`, CAST(NULL AS CHAR(255)) AS `MiddleName`, 'M' AS `Gender`
 		UNION ALL
 		SELECT NULL, 'Doe', 3, NULL, NULL, 'M') `x`
 WHERE

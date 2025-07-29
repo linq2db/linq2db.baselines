@@ -2,5 +2,5 @@
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql
 
 SELECT
-	20 as `Divide`
+	CAST(20 AS DOUBLE) as `Divide`
 

@@ -11,7 +11,7 @@ BeforeExecute
 
 MERGE INTO "InheritanceParent" "Target"
 USING (
-	SELECT 143 AS "Key1", NULL AS "Key2", 1 AS "Data_1" FROM rdb$database) "Source"
+	SELECT 143 AS "Key1", CAST(NULL AS VARCHAR(1)) AS "Key2", 1 AS "Data_1" FROM rdb$database) "Source"
 (
 	"Key1",
 	"Key2",
@@ -52,7 +52,7 @@ BeforeExecute
 
 MERGE INTO "InheritanceParent" "Target"
 USING (
-	SELECT 143 AS "Key1", NULL AS "Key2", 1 AS "Data_1" FROM rdb$database) "Source"
+	SELECT 143 AS "Key1", CAST(NULL AS VARCHAR(1)) AS "Key2", 1 AS "Data_1" FROM rdb$database) "Source"
 (
 	"Key1",
 	"Key2",

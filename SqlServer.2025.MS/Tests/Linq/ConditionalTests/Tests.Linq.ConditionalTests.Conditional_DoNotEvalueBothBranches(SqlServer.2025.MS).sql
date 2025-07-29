@@ -2,5 +2,5 @@
 -- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
 
 SELECT
-	20
+	CAST(20 AS Float)
 

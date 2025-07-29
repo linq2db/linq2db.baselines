@@ -6,11 +6,11 @@ SELECT
 FROM
 	(
 		SELECT
-			CAST(Floor(CASE
+			Decimal(Floor(CASE
 				WHEN "t"."MoneyValue" - FLOOR("t"."MoneyValue") = 0.5 AND Mod(Int(FLOOR("t"."MoneyValue")), 2) = 0
 					THEN FLOOR("t"."MoneyValue")
 				ELSE ROUND("t"."MoneyValue", 0)
-			END) AS Decimal) as "c1"
+			END), 20, 0) as "c1"
 		FROM
 			"LinqDataTypes" "t"
 	) "p"

@@ -6,5 +6,5 @@ SELECT
 FROM
 	"LinqDataTypes" "p"
 WHERE
-	CAST(Floor("p"."MoneyValue") AS Decimal) > 0
+	Decimal(Floor("p"."MoneyValue"), 20, 0) > 0
 

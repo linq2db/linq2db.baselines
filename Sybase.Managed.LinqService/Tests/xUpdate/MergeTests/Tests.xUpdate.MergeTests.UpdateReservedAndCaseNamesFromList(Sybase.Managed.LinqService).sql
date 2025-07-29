@@ -238,7 +238,7 @@ BeforeExecute
 
 MERGE INTO [TestMerge1] [Target]
 USING (
-	SELECT 3 AS [in_1], NULL AS [join_1], 3 AS [outer_1], NULL AS [inner_1], NULL AS [with_1], NULL AS [left_1]
+	SELECT 3 AS [in_1], CAST(NULL AS Int) AS [join_1], 3 AS [outer_1], CAST(NULL AS Int) AS [inner_1], CAST(NULL AS Int) AS [with_1], CAST(NULL AS Int) AS [left_1]
 	UNION ALL
 	SELECT 4, 5, 7, NULL, 214, NULL
 	UNION ALL
