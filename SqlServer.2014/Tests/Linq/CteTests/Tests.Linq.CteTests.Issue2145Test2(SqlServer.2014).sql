@@ -19,8 +19,7 @@ AS
 		[t1].[Gender]
 	FROM
 		(VALUES
-			(10,N'FN1',N'LN1',CAST(NULL AS NVarChar(4000)),'M'),
-			(11,N'FN2',NULL,NULL,'F')
+			(10,N'FN1',N'LN1',NULL,'M'), (11,N'FN2',NULL,NULL,'F')
 		) [t1]([ID], [FirstName], [LastName], [MiddleName], [Gender])
 )
 SELECT
