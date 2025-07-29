@@ -112,3 +112,9 @@ ORDER BY
 
 
 
+-- PostgreSQL.15 PostgreSQL
+
+DROP TABLE IF EXISTS "Issue4940RecordNotMapped"
+
+
+
