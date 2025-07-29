@@ -2,7 +2,7 @@
 -- Oracle.18.Managed Oracle.Managed Oracle12
 
 SELECT
-	(CAST(COUNT(*) AS VarChar(255)) || ' items have not been processed, e.g. #' || Coalesce(CAST(MIN(g_1."PersonID") AS VarChar(255)), '')) || '.'
+	(COUNT(*) || ' items have not been processed, e.g. #' || MIN(g_1."PersonID")) || '.'
 FROM
 	"Person" g_1
 WHERE
