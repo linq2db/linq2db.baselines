@@ -22,7 +22,7 @@ INSERT INTO "Person"
 VALUES
 (
 	'Insert16',
-	RTrim(Char(@name + @idx)),
+	RTrim(Char(CAST(@name AS Int) + @idx)),
 	'M'
 )
 

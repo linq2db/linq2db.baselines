@@ -2,7 +2,7 @@
 -- Informix.DB2 Informix
 
 SELECT
-	(COUNT(*) || ' items have not been processed, e.g. #' || MIN(g_1.PersonID)) || '.'
+	(To_Char(COUNT(*)) || ' items have not been processed, e.g. #' || Nvl(To_Char(MIN(g_1.PersonID)), '')) || '.'
 FROM
 	Person g_1
 WHERE

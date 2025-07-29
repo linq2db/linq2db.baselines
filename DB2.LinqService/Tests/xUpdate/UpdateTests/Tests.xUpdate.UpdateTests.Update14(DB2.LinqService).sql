@@ -34,7 +34,7 @@ SET     @idx = 4
 UPDATE
 	"Person" "t1"
 SET
-	"LastName" = RTrim(Char(@name + @idx))
+	"LastName" = RTrim(Char(CAST(@name AS Int) + @idx))
 WHERE
 	"t1"."FirstName" LIKE 'Update14%' ESCAPE '~'
 

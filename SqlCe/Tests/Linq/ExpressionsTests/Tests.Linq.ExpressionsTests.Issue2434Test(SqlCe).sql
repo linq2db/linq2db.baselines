@@ -5,9 +5,9 @@ SELECT
 	[t1].[Id],
 	[t1].[FirstName],
 	[t1].[LastName],
-	[t1].[FirstName] + ' ' + [t1].[LastName] as [FullName]
+	Coalesce([t1].[FirstName], '') + ' ' + Coalesce([t1].[LastName], '') as [FullName]
 FROM
 	[Issue2434Table] [t1]
 ORDER BY
-	[t1].[FirstName] + ' ' + [t1].[LastName]
+	Coalesce([t1].[FirstName], '') + ' ' + Coalesce([t1].[LastName], '')
 

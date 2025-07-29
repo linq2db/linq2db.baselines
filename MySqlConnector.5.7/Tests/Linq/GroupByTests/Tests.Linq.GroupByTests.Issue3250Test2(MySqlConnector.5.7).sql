@@ -2,7 +2,7 @@
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 
 SELECT
-	Concat(COUNT(*), ' items have not been processed, e.g. #', MIN(`s`.`PersonID`), '.')
+	Concat(CAST(COUNT(*) AS CHAR(11)), ' items have not been processed, e.g. #', CAST(MIN(`s`.`PersonID`) AS CHAR(11)), '.')
 FROM
 	`Person` `s`
 WHERE
