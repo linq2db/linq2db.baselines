@@ -2,7 +2,7 @@
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
 SELECT
-	(CAST(COUNT(*) AS NVarChar(11)) || ' items have not been processed, e.g. #' || Coalesce(CAST(MIN([g_1].[PersonID]) AS NVarChar(11)), '')) || '.'
+	(COUNT(*) || ' items have not been processed, e.g. #' || MIN([g_1].[PersonID])) || '.'
 FROM
 	[Person] [g_1]
 WHERE
