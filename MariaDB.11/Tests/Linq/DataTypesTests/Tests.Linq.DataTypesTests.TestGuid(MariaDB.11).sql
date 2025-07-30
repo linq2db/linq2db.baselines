@@ -130,7 +130,7 @@ FROM
 	`GuidTable`
 
 BeforeExecute
-INSERT BULK `GuidTable`(Id, Column, ColumnNullable
+INSERT BULK `GuidTable`(Id, Column, ColumnNullable)
 
 BeforeExecute
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql

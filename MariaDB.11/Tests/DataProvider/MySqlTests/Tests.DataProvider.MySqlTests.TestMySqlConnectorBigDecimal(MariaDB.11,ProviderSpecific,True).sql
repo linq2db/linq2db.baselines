@@ -111,7 +111,7 @@ FROM
 	`BigDecimalMySqlConnectorTable`
 
 BeforeExecute
-INSERT BULK `BigDecimalMySqlConnectorTable`(Id, Decimal, DecimalN
+INSERT BULK `BigDecimalMySqlConnectorTable`(Id, Decimal, DecimalN)
 
 BeforeExecute
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql
