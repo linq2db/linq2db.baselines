@@ -1,0 +1,37 @@
+﻿BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+
+SELECT
+	CURRENT_TIMESTAMP + "t"."Value" DAY,
+	CURRENT_TIMESTAMP + 2 DAY
+FROM
+	"SampleClass" "t"
+WHERE
+	"t"."Value" = 1
+UNION
+SELECT
+	CURRENT_TIMESTAMP + 3 DAY,
+	CURRENT_TIMESTAMP + 4 DAY
+FROM SYSIBM.SYSDUMMY1
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+
+SELECT
+	"v_1"."Value2"
+FROM
+	(
+		SELECT
+			CURRENT_TIMESTAMP + "v"."Value" DAY as "Value1",
+			CURRENT_TIMESTAMP + 2 DAY as "Value2"
+		FROM
+			"SampleClass" "v"
+		WHERE
+			"v"."Value" = 1
+		UNION
+		SELECT
+			CURRENT_TIMESTAMP + 3 DAY as "Value1",
+			CURRENT_TIMESTAMP + 4 DAY as "Value2"
+		FROM SYSIBM.SYSDUMMY1
+	) "v_1"
+
