@@ -19,7 +19,7 @@ AS
 		"t1"."Gender"
 	FROM
 		(
-			SELECT 10 AS ID, CAST('FN1' AS VARCHAR(3)) AS "FirstName", CAST('LN1' AS VARCHAR(3)) AS "LastName", NULL AS "MiddleName", CAST('M' AS Char(1)) AS "Gender" FROM rdb$database
+			SELECT 10 AS ID, CAST('FN1' AS VARCHAR(3)) AS "FirstName", CAST('LN1' AS VARCHAR(3)) AS "LastName", CAST(NULL AS VARCHAR(1)) AS "MiddleName", CAST('M' AS Char(1)) AS "Gender" FROM rdb$database
 			UNION ALL
 			SELECT 11, CAST('FN2' AS VARCHAR(3)), NULL, NULL, CAST('F' AS Char(1)) FROM rdb$database) "t1"
 )

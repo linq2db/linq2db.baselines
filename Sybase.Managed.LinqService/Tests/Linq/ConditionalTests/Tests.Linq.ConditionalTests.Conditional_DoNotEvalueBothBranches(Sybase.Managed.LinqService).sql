@@ -2,5 +2,5 @@
 -- Sybase.Managed Sybase
 
 SELECT
-	20
+	CAST(20 AS Float)
 

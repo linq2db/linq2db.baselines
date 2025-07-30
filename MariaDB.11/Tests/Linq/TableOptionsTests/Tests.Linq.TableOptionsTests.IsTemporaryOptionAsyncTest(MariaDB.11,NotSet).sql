@@ -89,7 +89,7 @@ VALUES
 )
 
 BeforeExecute
-INSERT ASYNC BULK `temp_table1`(ID, Value
+INSERT ASYNC BULK `temp_table1`(ID, Value)
 
 BeforeExecute
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql (asynchronously)

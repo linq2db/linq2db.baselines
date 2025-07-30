@@ -129,7 +129,7 @@ FROM
 	`DateOnlyTable`
 
 BeforeExecute
-INSERT BULK `DateOnlyTable`(Id, Column, ColumnNullable
+INSERT BULK `DateOnlyTable`(Id, Column, ColumnNullable)
 
 BeforeExecute
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql

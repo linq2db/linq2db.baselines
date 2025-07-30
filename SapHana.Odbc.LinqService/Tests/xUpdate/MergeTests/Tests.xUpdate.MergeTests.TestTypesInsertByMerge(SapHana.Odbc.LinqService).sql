@@ -90,7 +90,7 @@ SET     @value = 22:44:33
 
 MERGE INTO "TestMerge2" "Target"
 USING (
-	SELECT 3 AS "Id", -123 AS "FieldInt32", 987 AS "FieldInt64", NULL AS "FieldBoolean", '<>?/.,;''zZ":' AS "FieldString", '`~!@#$%^&*()_+{}|[]\' AS "FieldNString", '' AS "FieldChar", '' AS "FieldNChar", -1.17549996E-38 AS "FieldFloat", 2.2250738585072014E-308 AS "FieldDouble", '2098-10-12 21:14:15.907' AS "FieldDateTime", x'FFC864321400' AS "FieldBinary", 'ffffffff-ffff-ffff-ffff-ffffffffffff' AS "FieldGuid", -0.123 AS "FieldDecimal", '2111-11-23' AS "FieldDate", ? AS "FieldTime", NULL AS "FieldEnumString", -2147483647 AS "FieldEnumNumber" FROM DUMMY
+	SELECT 3 AS "Id", -123 AS "FieldInt32", CAST(987 AS BigInt) AS "FieldInt64", NULL AS "FieldBoolean", '<>?/.,;''zZ":' AS "FieldString", '`~!@#$%^&*()_+{}|[]\' AS "FieldNString", '' AS "FieldChar", '' AS "FieldNChar", CAST(-1.17549996E-38 AS Real) AS "FieldFloat", CAST(2.2250738585072014E-308 AS Double) AS "FieldDouble", '2098-10-12 21:14:15.907' AS "FieldDateTime", x'FFC864321400' AS "FieldBinary", 'ffffffff-ffff-ffff-ffff-ffffffffffff' AS "FieldGuid", CAST(-0.123 AS Decimal(38, 10)) AS "FieldDecimal", '2111-11-23' AS "FieldDate", ? AS "FieldTime", NULL AS "FieldEnumString", -2147483647 AS "FieldEnumNumber" FROM DUMMY
 	UNION ALL
 	SELECT 4, 2147483647, 9223372036854775807, 0, 'test
 	', 'ЙЦУКЩывапрм

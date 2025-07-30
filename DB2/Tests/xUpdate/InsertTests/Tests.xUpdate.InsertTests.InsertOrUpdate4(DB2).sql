@@ -57,7 +57,7 @@ WHEN NOT MATCHED THEN
 	VALUES
 	(
 		CAST(@id AS Int),
-		RTrim(Char(@diagnosis + @i))
+		RTrim(Char(CAST(@diagnosis AS Int) + @i))
 	)
 
 BeforeExecute
@@ -87,7 +87,7 @@ WHEN NOT MATCHED THEN
 	VALUES
 	(
 		CAST(@id AS Int),
-		RTrim(Char(@diagnosis + @i))
+		RTrim(Char(CAST(@diagnosis AS Int) + @i))
 	)
 
 BeforeExecute
@@ -117,7 +117,7 @@ WHEN NOT MATCHED THEN
 	VALUES
 	(
 		CAST(@id AS Int),
-		RTrim(Char(@diagnosis + @i))
+		RTrim(Char(CAST(@diagnosis AS Int) + @i))
 	)
 
 BeforeExecute

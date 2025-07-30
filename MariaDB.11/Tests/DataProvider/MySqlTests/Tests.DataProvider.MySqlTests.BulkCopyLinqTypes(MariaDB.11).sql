@@ -44,7 +44,7 @@ BeforeExecute
 SET GLOBAL local_infile=ON
 
 BeforeExecute
-INSERT BULK `LinqDataTypes`(ID, MoneyValue, DateTimeValue, BoolValue, GuidValue, BinaryValue, SmallIntValue, StringValue
+INSERT BULK `LinqDataTypes`(ID, MoneyValue, DateTimeValue, BoolValue, GuidValue, BinaryValue, SmallIntValue, StringValue)
 
 BeforeExecute
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql

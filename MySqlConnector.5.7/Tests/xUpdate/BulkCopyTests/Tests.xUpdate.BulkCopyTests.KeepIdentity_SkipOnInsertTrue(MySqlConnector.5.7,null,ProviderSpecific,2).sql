@@ -18,7 +18,7 @@ BeforeExecute
 SELECT LAST_INSERT_ID()
 
 BeforeExecute
-INSERT ASYNC BULK `AllTypes`(intDataType
+INSERT ASYNC BULK `AllTypes`(intDataType)
 
 BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57

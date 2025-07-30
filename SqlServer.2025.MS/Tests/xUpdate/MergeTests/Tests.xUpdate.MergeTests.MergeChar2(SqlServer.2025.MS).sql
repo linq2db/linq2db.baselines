@@ -5,7 +5,7 @@ BeforeExecute
 
 MERGE INTO [AllTypes] [Target]
 USING (VALUES
-	(10,char(0),char(0),NULL)
+	(10,char(0),char(0),CAST(NULL AS NVarChar(20)))
 ) [Source]
 (
 	[ID],
