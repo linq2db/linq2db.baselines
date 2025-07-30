@@ -1,0 +1,23 @@
+﻿BeforeExecute
+-- Oracle.12.Managed Oracle.Managed Oracle12
+DECLARE @p Varchar2(63) -- String
+SET     @p = '<t><r><c0>1</c0><c1>11</c1></r><r><c0>2</c0><c1>22</c1></r></t>'
+
+SELECT
+	t."Field1",
+	t."Field2"
+FROM
+	XmlTable('/t/r' PASSING XmlType(:p) COLUMNS "Field1" Int path 'c0', "Field2" VarChar(2) path 'c1') t
+
+BeforeExecute
+-- Oracle.12.Managed Oracle.Managed Oracle12
+DECLARE @p Varchar2(35) -- String
+SET     @p = '<t><r><c0>1</c0><c1>11</c1></r></t>'
+
+SELECT
+	t2."Field1",
+	t2."Field2"
+FROM
+	"Parent" t1
+		INNER JOIN XmlTable('/t/r' PASSING XmlType(:p) COLUMNS "Field1" Int path 'c0', "Field2" VarChar(2) path 'c1') t2 ON t1."ParentID" = t2."Field1"
+
