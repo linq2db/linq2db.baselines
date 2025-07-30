@@ -1,0 +1,8 @@
+﻿BeforeExecute
+-- SqlServer.2014
+
+SELECT
+	CAST([t].[MoneyValue] AS Real)
+FROM
+	[LinqDataTypes] [t]
+

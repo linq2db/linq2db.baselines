@@ -1,0 +1,5 @@
+﻿BeforeExecute
+-- SQLite.Classic SQLite
+
+INSERT INTO [FTS4_TABLE]([FTS4_TABLE]) VALUES('integrity-check')
+
