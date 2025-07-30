@@ -1,0 +1,18 @@
+﻿BeforeExecute
+-- SQLite.MS SQLite
+DECLARE @p  -- Int32
+SET     @p = 226
+
+SELECT
+	strftime('%Y-%m-%d %H:%M:%f', [t].[DateTimeValue], CAST(CAST(@p AS Float) / 1000 AS NVarChar(22)) || ' Second')
+FROM
+	[LinqDataTypes] [t]
+
+BeforeExecute
+-- SQLite.MS SQLite
+
+SELECT
+	[t].[DateTimeValue]
+FROM
+	[LinqDataTypes] [t]
+
