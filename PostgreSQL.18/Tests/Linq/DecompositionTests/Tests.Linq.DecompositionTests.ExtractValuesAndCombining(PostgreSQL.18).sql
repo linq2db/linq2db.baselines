@@ -24,7 +24,7 @@ FROM
 			i."Kind" = 1 OR i."Kind" = 2
 	) x
 WHERE
-	NOT (x.cond_1 OR NOT x.cond)
+	NOT (x.cond AND x.cond_1 OR NOT x.cond)
 
 BeforeExecute
 -- PostgreSQL.18 PostgreSQL
@@ -218,7 +218,7 @@ FROM
 			t1.cond
 	) x_1
 WHERE
-	NOT (x_1."Color_1" IS NOT NULL AND x_1."Color_1" OR NOT x_1."Color")
+	NOT (x_1."Color" AND x_1."Color_1" IS NOT NULL AND x_1."Color_1" OR NOT x_1."Color")
 
 BeforeExecute
 -- PostgreSQL.18 PostgreSQL
@@ -304,7 +304,8 @@ FROM
 			t1.cond
 	) x_1
 WHERE
-	x_1."Color_1" IS NOT NULL AND x_1."Color_1" OR NOT x_1."Color"
+	x_1."Color" AND x_1."Color_1" IS NOT NULL AND x_1."Color_1" OR
+	NOT x_1."Color"
 
 BeforeExecute
 -- PostgreSQL.18 PostgreSQL
@@ -390,7 +391,7 @@ FROM
 			t1.cond
 	) x_1
 WHERE
-	NOT (x_1."Color" IS NULL AND x_1."Size_2" OR NOT x_1."Size_1")
+	NOT (x_1."Size_1" AND x_1."Color" IS NULL AND x_1."Size_2" OR NOT x_1."Size_1")
 
 BeforeExecute
 -- PostgreSQL.18 PostgreSQL
@@ -476,7 +477,8 @@ FROM
 			t1.cond
 	) x_1
 WHERE
-	x_1."Color" IS NULL AND x_1."Size_2" OR NOT x_1."Size_1"
+	x_1."Size_1" AND x_1."Color" IS NULL AND x_1."Size_2" OR
+	NOT x_1."Size_1"
 
 BeforeExecute
 -- PostgreSQL.18 PostgreSQL

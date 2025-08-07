@@ -10,7 +10,7 @@ SELECT
 FROM
 	"BooleanTable" r
 WHERE
-	r."Value1" = r."Value2"
+	r."Value1" = r."Value2" OR r."Value1" = r."Value2" AND r."Value1" = r."Value4"
 
 BeforeExecute
 -- Oracle.11.Managed Oracle11
@@ -36,7 +36,7 @@ SELECT
 FROM
 	"BooleanTable" r
 WHERE
-	r."Value1" = r."Value5"
+	r."Value1" = r."Value5" OR r."Value1" = r."Value5" AND r."Value1" = r."Value2"
 
 BeforeExecute
 -- Oracle.11.Managed Oracle11
@@ -62,7 +62,7 @@ SELECT
 FROM
 	"BooleanTable" r
 WHERE
-	r."Value1" = r."Value5"
+	r."Value1" = r."Value5" OR r."Value1" = r."Value5" AND r."Value1" = r."Value4"
 
 BeforeExecute
 -- Oracle.11.Managed Oracle11
@@ -88,7 +88,7 @@ SELECT
 FROM
 	"BooleanTable" r
 WHERE
-	r."Value1" <> r."Value2"
+	r."Value1" <> r."Value2" OR r."Value1" <> r."Value2" AND (r."Value1" <> r."Value4" OR r."Value4" IS NULL)
 
 BeforeExecute
 -- Oracle.11.Managed Oracle11
@@ -114,7 +114,7 @@ SELECT
 FROM
 	"BooleanTable" r
 WHERE
-	r."Value1" <> r."Value5" OR r."Value5" IS NULL
+	r."Value1" <> r."Value5" OR r."Value5" IS NULL OR r."Value1" <> r."Value5" AND r."Value1" <> r."Value2"
 
 BeforeExecute
 -- Oracle.11.Managed Oracle11
@@ -140,7 +140,7 @@ SELECT
 FROM
 	"BooleanTable" r
 WHERE
-	r."Value1" <> r."Value5" OR r."Value5" IS NULL
+	r."Value1" <> r."Value5" OR r."Value5" IS NULL OR r."Value1" <> r."Value5" AND (r."Value1" <> r."Value4" OR r."Value4" IS NULL)
 
 BeforeExecute
 -- Oracle.11.Managed Oracle11
@@ -166,7 +166,7 @@ SELECT
 FROM
 	"BooleanTable" r
 WHERE
-	r."Value1" > r."Value2"
+	r."Value1" > r."Value2" OR r."Value1" > r."Value2" AND r."Value1" > r."Value4"
 
 BeforeExecute
 -- Oracle.11.Managed Oracle11
@@ -192,7 +192,7 @@ SELECT
 FROM
 	"BooleanTable" r
 WHERE
-	r."Value1" > r."Value5"
+	r."Value1" > r."Value5" OR r."Value1" > r."Value5" AND r."Value1" > r."Value2"
 
 BeforeExecute
 -- Oracle.11.Managed Oracle11
@@ -218,7 +218,7 @@ SELECT
 FROM
 	"BooleanTable" r
 WHERE
-	r."Value1" > r."Value5"
+	r."Value1" > r."Value5" OR r."Value1" > r."Value5" AND r."Value1" > r."Value4"
 
 BeforeExecute
 -- Oracle.11.Managed Oracle11
@@ -244,7 +244,7 @@ SELECT
 FROM
 	"BooleanTable" r
 WHERE
-	r."Value1" = r."Value2"
+	r."Value1" = r."Value2" AND (r."Value1" = r."Value2" OR r."Value1" = r."Value4")
 
 BeforeExecute
 -- Oracle.11.Managed Oracle11
@@ -270,7 +270,7 @@ SELECT
 FROM
 	"BooleanTable" r
 WHERE
-	r."Value1" = r."Value5"
+	r."Value1" = r."Value5" AND (r."Value1" = r."Value5" OR r."Value1" = r."Value2")
 
 BeforeExecute
 -- Oracle.11.Managed Oracle11
@@ -296,7 +296,7 @@ SELECT
 FROM
 	"BooleanTable" r
 WHERE
-	r."Value1" = r."Value5"
+	r."Value1" = r."Value5" AND (r."Value1" = r."Value5" OR r."Value1" = r."Value4")
 
 BeforeExecute
 -- Oracle.11.Managed Oracle11
@@ -322,7 +322,7 @@ SELECT
 FROM
 	"BooleanTable" r
 WHERE
-	r."Value1" <> r."Value2"
+	r."Value1" <> r."Value2" AND (r."Value1" <> r."Value2" OR r."Value1" <> r."Value4" OR r."Value4" IS NULL)
 
 BeforeExecute
 -- Oracle.11.Managed Oracle11
@@ -348,7 +348,8 @@ SELECT
 FROM
 	"BooleanTable" r
 WHERE
-	r."Value1" <> r."Value5" OR r."Value5" IS NULL
+	(r."Value1" <> r."Value5" OR r."Value5" IS NULL) AND
+	(r."Value1" <> r."Value5" OR r."Value5" IS NULL OR r."Value1" <> r."Value2")
 
 BeforeExecute
 -- Oracle.11.Managed Oracle11
@@ -374,7 +375,8 @@ SELECT
 FROM
 	"BooleanTable" r
 WHERE
-	r."Value1" <> r."Value5" OR r."Value5" IS NULL
+	(r."Value1" <> r."Value5" OR r."Value5" IS NULL) AND
+	(r."Value1" <> r."Value5" OR r."Value5" IS NULL OR r."Value1" <> r."Value4" OR r."Value4" IS NULL)
 
 BeforeExecute
 -- Oracle.11.Managed Oracle11
@@ -400,7 +402,7 @@ SELECT
 FROM
 	"BooleanTable" r
 WHERE
-	r."Value1" >= r."Value2"
+	r."Value1" >= r."Value2" AND (r."Value1" >= r."Value2" OR r."Value1" >= r."Value4")
 
 BeforeExecute
 -- Oracle.11.Managed Oracle11
@@ -426,7 +428,7 @@ SELECT
 FROM
 	"BooleanTable" r
 WHERE
-	r."Value1" >= r."Value5"
+	r."Value1" >= r."Value5" AND (r."Value1" >= r."Value5" OR r."Value1" >= r."Value2")
 
 BeforeExecute
 -- Oracle.11.Managed Oracle11
@@ -452,7 +454,7 @@ SELECT
 FROM
 	"BooleanTable" r
 WHERE
-	r."Value1" >= r."Value5"
+	r."Value1" >= r."Value5" AND (r."Value1" >= r."Value5" OR r."Value1" >= r."Value4")
 
 BeforeExecute
 -- Oracle.11.Managed Oracle11
@@ -478,7 +480,7 @@ SELECT
 FROM
 	"BooleanTable" r
 WHERE
-	r."Value1" = r."Value2" OR r."Value1" = r."Value4"
+	r."Value1" = r."Value2" OR r."Value1" <> r."Value2" AND r."Value1" = r."Value4"
 
 BeforeExecute
 -- Oracle.11.Managed Oracle11
@@ -504,7 +506,7 @@ SELECT
 FROM
 	"BooleanTable" r
 WHERE
-	r."Value1" = r."Value5" OR r."Value1" = r."Value2"
+	r."Value1" = r."Value5" OR (r."Value1" <> r."Value5" OR r."Value5" IS NULL) AND r."Value1" = r."Value2"
 
 BeforeExecute
 -- Oracle.11.Managed Oracle11
@@ -530,7 +532,7 @@ SELECT
 FROM
 	"BooleanTable" r
 WHERE
-	r."Value1" = r."Value5" OR r."Value1" = r."Value4"
+	r."Value1" = r."Value5" OR (r."Value1" <> r."Value5" OR r."Value5" IS NULL) AND r."Value1" = r."Value4"
 
 BeforeExecute
 -- Oracle.11.Managed Oracle11
@@ -634,7 +636,7 @@ SELECT
 FROM
 	"BooleanTable" r
 WHERE
-	r."Value1" = r."Value2" AND r."Value1" = r."Value4"
+	r."Value1" = r."Value2" AND (r."Value1" <> r."Value2" OR r."Value1" = r."Value4")
 
 BeforeExecute
 -- Oracle.11.Managed Oracle11
@@ -660,7 +662,7 @@ SELECT
 FROM
 	"BooleanTable" r
 WHERE
-	r."Value1" = r."Value5" AND r."Value1" = r."Value2"
+	r."Value1" = r."Value5" AND (r."Value1" <> r."Value5" OR r."Value5" IS NULL OR r."Value1" = r."Value2")
 
 BeforeExecute
 -- Oracle.11.Managed Oracle11
@@ -686,7 +688,7 @@ SELECT
 FROM
 	"BooleanTable" r
 WHERE
-	r."Value1" = r."Value5" AND r."Value1" = r."Value4"
+	r."Value1" = r."Value5" AND (r."Value1" <> r."Value5" OR r."Value5" IS NULL OR r."Value1" = r."Value4")
 
 BeforeExecute
 -- Oracle.11.Managed Oracle11

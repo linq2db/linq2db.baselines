@@ -36,10 +36,8 @@ SELECT
 FROM
 	[BooleanTable] [r]
 WHERE
-	[r].[Value5] <> 0 OR
-	[r].[Value5] IS NULL OR
-	[r].[Value1] <= [r].[Value4] OR
-	[r].[Value4] IS NULL
+	([r].[Value5] <> 0 OR [r].[Value5] IS NULL) AND [r].[Value1] > [r].[Value4] OR
+	[r].[Value1] <= [r].[Value4] OR [r].[Value4] IS NULL
 
 BeforeExecute
 -- SqlServer.2005.MS SqlServer.2005
@@ -65,8 +63,8 @@ SELECT
 FROM
 	[BooleanTable] [r]
 WHERE
-	[r].[Value5] > 0 OR [r].[Value1] <= [r].[Value4] OR
-	[r].[Value4] IS NULL
+	[r].[Value5] > 0 AND [r].[Value1] > [r].[Value4] OR
+	[r].[Value1] <= [r].[Value4] OR [r].[Value4] IS NULL
 
 BeforeExecute
 -- SqlServer.2005.MS SqlServer.2005
@@ -92,8 +90,8 @@ SELECT
 FROM
 	[BooleanTable] [r]
 WHERE
-	[r].[Value5] >= 0 OR [r].[Value1] <= [r].[Value4] OR
-	[r].[Value4] IS NULL
+	[r].[Value5] >= 0 AND [r].[Value1] > [r].[Value4] OR
+	[r].[Value1] <= [r].[Value4] OR [r].[Value4] IS NULL
 
 BeforeExecute
 -- SqlServer.2005.MS SqlServer.2005
@@ -356,10 +354,8 @@ SELECT
 FROM
 	[BooleanTable] [r]
 WHERE
-	[r].[Value5] <> 0 OR
-	[r].[Value5] IS NULL OR
-	[r].[Value1] <= [r].[Value4] OR
-	[r].[Value4] IS NULL
+	([r].[Value5] <> 0 OR [r].[Value5] IS NULL) AND [r].[Value1] > [r].[Value4] OR
+	[r].[Value1] <= [r].[Value4] OR [r].[Value4] IS NULL
 
 BeforeExecute
 -- SqlServer.2005.MS SqlServer.2005
@@ -834,8 +830,7 @@ SELECT
 FROM
 	[BooleanTable] [r]
 WHERE
-	[r].[Value1] > [r].[Value4] OR [r].[Value5] <> 0 OR
-	[r].[Value5] IS NULL
+	[r].[Value1] > [r].[Value4] OR ([r].[Value5] <> 0 OR [r].[Value5] IS NULL) AND ([r].[Value1] <= [r].[Value4] OR [r].[Value4] IS NULL)
 
 BeforeExecute
 -- SqlServer.2005.MS SqlServer.2005
@@ -861,7 +856,7 @@ SELECT
 FROM
 	[BooleanTable] [r]
 WHERE
-	[r].[Value1] > [r].[Value4] OR [r].[Value5] > 0
+	[r].[Value1] > [r].[Value4] OR [r].[Value5] > 0 AND ([r].[Value1] <= [r].[Value4] OR [r].[Value4] IS NULL)
 
 BeforeExecute
 -- SqlServer.2005.MS SqlServer.2005
@@ -887,7 +882,7 @@ SELECT
 FROM
 	[BooleanTable] [r]
 WHERE
-	[r].[Value1] > [r].[Value4] OR [r].[Value5] >= 0
+	[r].[Value1] > [r].[Value4] OR [r].[Value5] >= 0 AND ([r].[Value1] <= [r].[Value4] OR [r].[Value4] IS NULL)
 
 BeforeExecute
 -- SqlServer.2005.MS SqlServer.2005
@@ -1150,8 +1145,7 @@ SELECT
 FROM
 	[BooleanTable] [r]
 WHERE
-	[r].[Value1] > [r].[Value4] OR [r].[Value5] <> 0 OR
-	[r].[Value5] IS NULL
+	[r].[Value1] > [r].[Value4] OR ([r].[Value5] <> 0 OR [r].[Value5] IS NULL) AND ([r].[Value1] <= [r].[Value4] OR [r].[Value4] IS NULL)
 
 BeforeExecute
 -- SqlServer.2005.MS SqlServer.2005
