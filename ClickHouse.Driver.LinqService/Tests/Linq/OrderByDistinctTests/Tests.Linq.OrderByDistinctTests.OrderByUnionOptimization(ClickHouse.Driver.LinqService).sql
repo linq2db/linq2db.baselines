@@ -1,0 +1,46 @@
+﻿BeforeExecute
+-- ClickHouse.Driver ClickHouse
+
+SELECT DISTINCT
+	t1.Id
+FROM
+	(
+		SELECT
+			x_2.Id as Id,
+			x_2.DuplicateData as DuplicateData,
+			x_2.OrderData1 as OrderData1,
+			x_2.OrderData2 as OrderData2
+		FROM
+			(
+				SELECT
+					x.Id as Id,
+					x.DuplicateData as DuplicateData,
+					x.OrderData1 as OrderData1,
+					x.OrderData2 as OrderData2
+				FROM
+					OrderByDistinctData x
+				WHERE
+					x.Id BETWEEN 1 AND 9
+				UNION ALL
+				SELECT
+					x_1.Id as Id,
+					x_1.DuplicateData as DuplicateData,
+					x_1.OrderData1 as OrderData1,
+					x_1.OrderData2 as OrderData2
+				FROM
+					OrderByDistinctData x_1
+				WHERE
+					x_1.Id BETWEEN 10 AND 90
+			) x_2
+		UNION DISTINCT
+		SELECT
+			x_3.Id as Id,
+			x_3.DuplicateData as DuplicateData,
+			x_3.OrderData1 as OrderData1,
+			x_3.OrderData2 as OrderData2
+		FROM
+			OrderByDistinctData x_3
+		WHERE
+			x_3.Id BETWEEN 100 AND 900
+	) t1
+
