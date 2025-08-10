@@ -28,8 +28,6 @@ VALUES
 
 BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
-DECLARE @Field1 VarWChar(4) -- String
-SET     @Field1 = 'test'
 
 INSERT INTO [Issue1373Tests]
 (
@@ -39,7 +37,7 @@ INSERT INTO [Issue1373Tests]
 VALUES
 (
 	3,
-	@Field1
+	'test'
 )
 
 BeforeExecute
