@@ -32,6 +32,30 @@ SELECT
 FROM
 	"Table" t
 WHERE
+	t."EnumValueNullable" = :value
+
+BeforeExecute
+-- PostgreSQL.17 PostgreSQL.15 PostgreSQL
+DECLARE @value Varchar(4) -- String
+SET     @value = 'User'
+
+SELECT
+	COUNT(*)
+FROM
+	"Table" t
+WHERE
+	t."EnumValueNullable" = :value
+
+BeforeExecute
+-- PostgreSQL.17 PostgreSQL.15 PostgreSQL
+DECLARE @value Varchar(4) -- String
+SET     @value = 'User'
+
+SELECT
+	COUNT(*)
+FROM
+	"Table" t
+WHERE
 	t."EnumValueNull" = :value
 
 BeforeExecute
@@ -48,49 +72,61 @@ WHERE
 
 BeforeExecute
 -- PostgreSQL.17 PostgreSQL.15 PostgreSQL
-DECLARE @value Varchar -- String
-SET     @value = ''
 
 SELECT
 	COUNT(*)
 FROM
 	"Table" t
 WHERE
-	t."EnumValue" = :value
+	1 = 0
 
 BeforeExecute
 -- PostgreSQL.17 PostgreSQL.15 PostgreSQL
-DECLARE @value Varchar -- String
-SET     @value = ''
 
 SELECT
 	COUNT(*)
 FROM
 	"Table" t
 WHERE
-	t."EnumValue" = :value
+	1 = 0
 
 BeforeExecute
 -- PostgreSQL.17 PostgreSQL.15 PostgreSQL
-DECLARE @value Varchar -- String
-SET     @value = ''
 
 SELECT
 	COUNT(*)
 FROM
 	"Table" t
 WHERE
-	t."EnumValueNull" = :value OR t."EnumValueNull" IS NULL AND :value IS NULL
+	t."EnumValueNullable" IS NULL
 
 BeforeExecute
 -- PostgreSQL.17 PostgreSQL.15 PostgreSQL
-DECLARE @value Varchar -- String
-SET     @value = ''
 
 SELECT
 	COUNT(*)
 FROM
 	"Table" t
 WHERE
-	t."EnumValueNull" = :value OR t."EnumValueNull" IS NULL AND :value IS NULL
+	t."EnumValueNullable" IS NULL
+
+BeforeExecute
+-- PostgreSQL.17 PostgreSQL.15 PostgreSQL
+
+SELECT
+	COUNT(*)
+FROM
+	"Table" t
+WHERE
+	t."EnumValueNull" IS NULL
+
+BeforeExecute
+-- PostgreSQL.17 PostgreSQL.15 PostgreSQL
+
+SELECT
+	COUNT(*)
+FROM
+	"Table" t
+WHERE
+	t."EnumValueNull" IS NULL
 
