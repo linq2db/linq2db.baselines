@@ -1,43 +1,17 @@
 ﻿BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
-INSERT INTO [Issue1373Tests]
+INSERT INTO [Table]
 (
 	[Id],
-	[Field1]
+	[Struct],
+	[Class]
 )
 VALUES
 (
 	1,
-	NULL
-)
-
-BeforeExecute
--- SQLite.Classic.MPM SQLite.Classic SQLite
-
-INSERT INTO [Issue1373Tests]
-(
-	[Id],
-	[Field1]
-)
-VALUES
-(
-	2,
-	NULL
-)
-
-BeforeExecute
--- SQLite.Classic.MPM SQLite.Classic SQLite
-
-INSERT INTO [Issue1373Tests]
-(
-	[Id],
-	[Field1]
-)
-VALUES
-(
-	3,
-	'test'
+	13,
+	8
 )
 
 BeforeExecute
@@ -45,9 +19,30 @@ BeforeExecute
 
 SELECT
 	[t1].[Id],
-	[t1].[Field1]
+	[t1].[Struct],
+	[t1].[Class]
 FROM
-	[Issue1373Tests] [t1]
-ORDER BY
-	[t1].[Id]
+	[Table] [t1]
+LIMIT 2
+
+BeforeExecute
+-- SQLite.Classic.MPM SQLite.Classic SQLite
+
+UPDATE
+	[Table]
+SET
+	[Id] = 1,
+	[Struct] = 1,
+	[Class] = -8
+
+BeforeExecute
+-- SQLite.Classic.MPM SQLite.Classic SQLite
+
+SELECT
+	[t1].[Id],
+	[t1].[Struct],
+	[t1].[Class]
+FROM
+	[Table] [t1]
+LIMIT 2
 
