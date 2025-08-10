@@ -28,8 +28,6 @@ VALUES
 
 BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019
-DECLARE @Field1 NVarChar(4000) -- String
-SET     @Field1 = N'test'
 
 INSERT INTO [Issue1373Tests]
 (
@@ -39,7 +37,7 @@ INSERT INTO [Issue1373Tests]
 VALUES
 (
 	3,
-	@Field1
+	N'test'
 )
 
 BeforeExecute
