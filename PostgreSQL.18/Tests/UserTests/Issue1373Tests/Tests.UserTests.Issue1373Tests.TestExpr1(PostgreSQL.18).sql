@@ -28,8 +28,6 @@ VALUES
 
 BeforeExecute
 -- PostgreSQL.18 PostgreSQL
-DECLARE @Field1 Text(4) -- String
-SET     @Field1 = 'test'
 
 INSERT INTO "Issue1373Tests"
 (
@@ -39,7 +37,7 @@ INSERT INTO "Issue1373Tests"
 VALUES
 (
 	3,
-	:Field1
+	'test'
 )
 
 BeforeExecute
