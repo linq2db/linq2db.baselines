@@ -1,8 +1,8 @@
 ﻿BeforeExecute
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql
-DECLARE @Column Null -- Object
+DECLARE @Column VarChar(7) -- String
 SET     @Column = 'value=2'
-DECLARE @ColumnNullable Null -- Object
+DECLARE @ColumnNullable VarChar(8) -- String
 SET     @ColumnNullable = 'value=33'
 
 SELECT
