@@ -2,7 +2,7 @@
 -- Firebird.5 Firebird4
 DECLARE @iteration Integer -- Int32
 SET     @iteration = 1
-DECLARE @Value1 VarChar(2) -- String
+DECLARE @Value1 Binary(2)
 SET     @Value1 = '[]'
 DECLARE @Enum VarChar(6) -- String
 SET     @Enum = 'Value1'
