@@ -1,8 +1,8 @@
 ﻿BeforeExecute
 -- SQLite.MS SQLite
-DECLARE @Column  -- Object
+DECLARE @Column NVarChar(7) -- String
 SET     @Column = 'value=2'
-DECLARE @ColumnNullable  -- Object
+DECLARE @ColumnNullable NVarChar(8) -- String
 SET     @ColumnNullable = 'value=33'
 
 SELECT

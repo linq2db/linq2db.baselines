@@ -2,7 +2,7 @@
 -- SQLite.MS SQLite
 DECLARE @iteration  -- Int32
 SET     @iteration = 1
-DECLARE @Value1  -- Object
+DECLARE @Value1 NVarChar(2) -- String
 SET     @Value1 = '[]'
 DECLARE @Enum NVarChar(6) -- String
 SET     @Enum = 'Value1'
