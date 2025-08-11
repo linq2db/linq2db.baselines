@@ -1,8 +1,8 @@
 ﻿BeforeExecute
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql
-DECLARE @Column Int32
+DECLARE @Column Null -- Object
 SET     @Column = 2
-DECLARE @ColumnNullable Int32
+DECLARE @ColumnNullable Null -- Object
 SET     @ColumnNullable = 3
 
 SELECT

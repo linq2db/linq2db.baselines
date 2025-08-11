@@ -1,6 +1,6 @@
 ﻿BeforeExecute
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql
-DECLARE @id Int32
+DECLARE @id Null -- Object
 SET     @id = 1
 
 SELECT
