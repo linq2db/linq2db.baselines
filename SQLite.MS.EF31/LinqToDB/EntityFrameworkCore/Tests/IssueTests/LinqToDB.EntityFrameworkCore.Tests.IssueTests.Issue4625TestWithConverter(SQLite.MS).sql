@@ -2,7 +2,7 @@
 DECLARE @DateTimeOffsetWithConverter  -- DateTimeOffset
 SET     @DateTimeOffsetWithConverter = 1304956839836121088
 DECLARE @DateTimeOffsetNWithConverter  -- DateTimeOffset
-SET     @DateTimeOffsetNWithConverter = '2020-02-29T17:54:55.1231234+00:00'
+SET     @DateTimeOffsetNWithConverter = 1304956839836121088
 
 UPDATE
 	[Types]
