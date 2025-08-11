@@ -1,8 +1,8 @@
 ﻿BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
-DECLARE @Column Blob(7) -- Object
+DECLARE @Column VarChar(7) -- String
 SET     @Column = 'value=2'
-DECLARE @ColumnNullable Blob(8) -- Object
+DECLARE @ColumnNullable VarChar(8) -- String
 SET     @ColumnNullable = 'value=33'
 
 SELECT
