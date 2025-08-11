@@ -1,6 +1,6 @@
 ﻿BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-DECLARE @flag  -- Int32
+DECLARE @flag  -- Object
 SET     @flag = 4
 
 SELECT
