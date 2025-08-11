@@ -1,6 +1,6 @@
 ﻿BeforeExecute
 -- Firebird.4 Firebird4
-DECLARE @id Binary
+DECLARE @id Integer -- Int32
 SET     @id = 1
 
 SELECT

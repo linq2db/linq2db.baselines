@@ -1,8 +1,8 @@
 ﻿BeforeExecute
 -- Firebird.4 Firebird4
-DECLARE @Column Binary
+DECLARE @Column Integer -- Int32
 SET     @Column = 2
-DECLARE @ColumnNullable Binary
+DECLARE @ColumnNullable Integer -- Int32
 SET     @ColumnNullable = 3
 
 SELECT
