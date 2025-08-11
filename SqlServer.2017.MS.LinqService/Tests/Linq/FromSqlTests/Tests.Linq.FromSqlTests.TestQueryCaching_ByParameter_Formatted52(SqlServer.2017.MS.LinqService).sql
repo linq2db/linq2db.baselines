@@ -6,7 +6,7 @@ SELECT
 	[t1].[Value2]
 FROM
 	(
-		SELECT NULL as Value1, NULL as Value2 /*TestQueryCaching_ByParameter_Formatted5*/
+		SELECT NULL as Value1, NULL as Value2 /*TestQueryCaching_ByParameter_Formatted52*/
 	) [t1]
 
 BeforeExecute
@@ -21,7 +21,7 @@ SELECT
 	[t1].[Value2]
 FROM
 	(
-		SELECT @p as Value1, @p_1 as Value2 /*TestQueryCaching_ByParameter_Formatted5*/
+		SELECT @p as Value1, @p_1 as Value2 /*TestQueryCaching_ByParameter_Formatted52*/
 	) [t1]
 
 BeforeExecute
@@ -34,7 +34,7 @@ SELECT
 	[t1].[Value2]
 FROM
 	(
-		SELECT NULL as Value1, @p as Value2 /*TestQueryCaching_ByParameter_Formatted5*/
+		SELECT NULL as Value1, @p as Value2 /*TestQueryCaching_ByParameter_Formatted52*/
 	) [t1]
 
 BeforeExecute
@@ -47,7 +47,7 @@ SELECT
 	[t1].[Value2]
 FROM
 	(
-		SELECT @p as Value1, NULL as Value2 /*TestQueryCaching_ByParameter_Formatted5*/
+		SELECT @p as Value1, NULL as Value2 /*TestQueryCaching_ByParameter_Formatted52*/
 	) [t1]
 
 BeforeExecute
@@ -62,6 +62,6 @@ SELECT
 	[t1].[Value2]
 FROM
 	(
-		SELECT @p as Value1, @p_1 as Value2 /*TestQueryCaching_ByParameter_Formatted5*/
+		SELECT @p as Value1, @p_1 as Value2 /*TestQueryCaching_ByParameter_Formatted52*/
 	) [t1]
 
