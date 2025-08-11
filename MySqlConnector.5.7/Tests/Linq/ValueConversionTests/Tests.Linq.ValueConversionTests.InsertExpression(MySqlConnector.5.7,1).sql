@@ -2,7 +2,7 @@
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 DECLARE @iteration Int32
 SET     @iteration = 1
-DECLARE @Value1 Null -- Object
+DECLARE @Value1 VarChar(2) -- String
 SET     @Value1 = '[]'
 DECLARE @Enum VarChar(6) -- String
 SET     @Enum = 'Value1'
