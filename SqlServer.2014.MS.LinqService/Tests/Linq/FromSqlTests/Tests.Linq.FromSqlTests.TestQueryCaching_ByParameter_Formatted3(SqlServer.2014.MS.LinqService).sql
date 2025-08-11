@@ -7,7 +7,7 @@ SELECT
 	[t1].[Value1]
 FROM
 	(
-		SELECT @p as Value1 /*TestQueryCaching_ByParameter_Formatted1*/
+		SELECT @p as Value1 /*TestQueryCaching_ByParameter_Formatted3*/
 	) [t1]
 
 BeforeExecute
@@ -19,7 +19,7 @@ SELECT
 	[t1].[Value1]
 FROM
 	(
-		SELECT @p as Value1 /*TestQueryCaching_ByParameter_Formatted1*/
+		SELECT @p as Value1 /*TestQueryCaching_ByParameter_Formatted3*/
 	) [t1]
 
 BeforeExecute
@@ -31,7 +31,7 @@ SELECT
 	[t1].[Value1]
 FROM
 	(
-		SELECT @p as Value1 /*TestQueryCaching_ByParameter_Formatted1*/
+		SELECT @p as Value1 /*TestQueryCaching_ByParameter_Formatted3*/
 	) [t1]
 
 BeforeExecute
@@ -43,7 +43,7 @@ SELECT
 	[t1].[Value1]
 FROM
 	(
-		SELECT @p as Value1 /*TestQueryCaching_ByParameter_Formatted1*/
+		SELECT @p as Value1 /*TestQueryCaching_ByParameter_Formatted3*/
 	) [t1]
 
 BeforeExecute
@@ -55,6 +55,6 @@ SELECT
 	[t1].[Value1]
 FROM
 	(
-		SELECT @p as Value1 /*TestQueryCaching_ByParameter_Formatted1*/
+		SELECT @p as Value1 /*TestQueryCaching_ByParameter_Formatted3*/
 	) [t1]
 
