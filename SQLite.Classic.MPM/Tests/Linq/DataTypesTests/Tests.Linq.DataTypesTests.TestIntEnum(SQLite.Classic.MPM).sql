@@ -1,8 +1,8 @@
 ﻿BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-DECLARE @Column  -- Object
+DECLARE @Column  -- Int32
 SET     @Column = 2
-DECLARE @ColumnNullable  -- Object
+DECLARE @ColumnNullable  -- Int32
 SET     @ColumnNullable = 3
 
 SELECT

@@ -1,6 +1,6 @@
 ﻿BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
-DECLARE @id  -- Object
+DECLARE @id  -- Int32
 SET     @id = 1
 
 SELECT
