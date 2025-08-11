@@ -1,8 +1,8 @@
 ﻿BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
-DECLARE @Column Int32
+DECLARE @Column Null -- Object
 SET     @Column = 2
-DECLARE @ColumnNullable Int32
+DECLARE @ColumnNullable Null -- Object
 SET     @ColumnNullable = 3
 
 SELECT

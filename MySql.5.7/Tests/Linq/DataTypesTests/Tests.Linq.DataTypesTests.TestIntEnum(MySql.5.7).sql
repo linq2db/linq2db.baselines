@@ -1,8 +1,8 @@
 ﻿BeforeExecute
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
-DECLARE @Column Int32
+DECLARE @Column Blob -- Object
 SET     @Column = 2
-DECLARE @ColumnNullable Int32
+DECLARE @ColumnNullable Blob -- Object
 SET     @ColumnNullable = 3
 
 SELECT

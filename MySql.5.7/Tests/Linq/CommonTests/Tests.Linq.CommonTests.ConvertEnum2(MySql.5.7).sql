@@ -1,6 +1,6 @@
 ﻿BeforeExecute
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
-DECLARE @id Int32
+DECLARE @id Blob -- Object
 SET     @id = 1
 
 SELECT
