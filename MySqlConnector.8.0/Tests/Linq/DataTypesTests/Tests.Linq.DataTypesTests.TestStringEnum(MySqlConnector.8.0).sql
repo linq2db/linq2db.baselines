@@ -1,8 +1,8 @@
 ﻿BeforeExecute
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-DECLARE @Column VarChar(7) -- String
+DECLARE @Column Null -- Object
 SET     @Column = 'value=2'
-DECLARE @ColumnNullable VarChar(8) -- String
+DECLARE @ColumnNullable Null -- Object
 SET     @ColumnNullable = 'value=33'
 
 SELECT
