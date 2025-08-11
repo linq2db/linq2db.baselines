@@ -1,6 +1,6 @@
 ﻿BeforeExecute
 -- SQLite.MS SQLite
-DECLARE @id  -- Int32
+DECLARE @id  -- Object
 SET     @id = 1
 
 SELECT

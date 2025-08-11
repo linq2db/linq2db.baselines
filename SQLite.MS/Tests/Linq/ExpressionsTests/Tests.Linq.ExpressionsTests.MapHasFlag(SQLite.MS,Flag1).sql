@@ -1,6 +1,6 @@
 ﻿BeforeExecute
 -- SQLite.MS SQLite
-DECLARE @flag  -- Int32
+DECLARE @flag  -- Object
 SET     @flag = 1
 
 SELECT
