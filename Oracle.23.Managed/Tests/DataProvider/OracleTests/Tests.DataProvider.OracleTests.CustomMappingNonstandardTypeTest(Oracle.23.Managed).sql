@@ -9,7 +9,7 @@ FROM
 
 BeforeExecute
 -- Oracle.23.Managed Oracle.Managed Oracle12
-DECLARE @MyDate TimeStampTZ -- DateTime
+DECLARE @MyDate TimeStampTZ -- DateTimeOffset
 SET     @MyDate = NULL
 DECLARE @ID Int32
 SET     @ID = 1
