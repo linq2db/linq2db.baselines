@@ -86,7 +86,7 @@ SELECT
 FROM
 	[BooleanTable] [r]
 WHERE
-	(Coalesce([r].[BooleanN], [r].[Id] % 2 = 1))
+	Coalesce([r].[BooleanN], [r].[Id] % 2 = 1)
 
 BeforeExecute
 -- SQLite.Classic SQLite
