@@ -82,7 +82,7 @@ SELECT
 FROM
 	[BooleanTable] [r]
 WHERE
-	(IIF([r].[BooleanN] IS NULL, [r].[Id] MOD 2 = 1, [r].[BooleanN]))
+	IIF([r].[BooleanN] IS NULL, [r].[Id] MOD 2 = 1, [r].[BooleanN])
 
 BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
