@@ -5,7 +5,7 @@ BeforeExecute
 
 SELECT
 	[m_1].[Id],
-	[a_Documents].[Name] as [Detail]
+	[a_Documents].[Name]
 FROM
 	(
 		SELECT DISTINCT

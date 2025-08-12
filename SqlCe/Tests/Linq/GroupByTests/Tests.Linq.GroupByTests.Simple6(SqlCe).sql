@@ -6,7 +6,7 @@ BeforeExecute
 SELECT
 	[m_1].[ParentID],
 	[m_1].[ChildID],
-	[d].[GrandChildID] as [Detail]
+	[d].[GrandChildID]
 FROM
 	(
 		SELECT DISTINCT

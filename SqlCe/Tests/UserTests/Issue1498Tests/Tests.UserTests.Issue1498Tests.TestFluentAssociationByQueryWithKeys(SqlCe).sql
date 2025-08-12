@@ -71,7 +71,7 @@ BeforeExecute
 
 SELECT
 	[m_1].[Id],
-	[d].[Id] as [Detail]
+	[d].[Id] as [Id_1]
 FROM
 	(
 		SELECT TOP (1)
