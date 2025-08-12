@@ -11,38 +11,39 @@ SELECT
 			SELECT
 				*
 			FROM
-				"Person" "t1"
+				"Person" "t7"
+					CROSS JOIN (
+						SELECT
+							COUNT("t1"."PersonID") as "cond"
+						FROM
+							"Patient" "t1"
+						WHERE
+							"t1"."PersonID" = @personId AND NOT EXISTS(
+								SELECT
+									*
+								FROM
+									"Patient" "t2"
+								WHERE
+									"t2"."PersonID" = @personId_1 AND "t1"."PersonID" = "t2"."PersonID"
+							)
+					) "t3"
+					CROSS JOIN (
+						SELECT
+							COUNT("t4"."PersonID") as "cond"
+						FROM
+							"Patient" "t4"
+						WHERE
+							"t4"."PersonID" = @personId_1 AND NOT EXISTS(
+								SELECT
+									*
+								FROM
+									"Patient" "t5"
+								WHERE
+									"t5"."PersonID" = @personId AND "t4"."PersonID" = "t5"."PersonID"
+							)
+					) "t6"
 			WHERE
-				(
-					SELECT
-						COUNT("t2"."PersonID")
-					FROM
-						"Patient" "t2"
-					WHERE
-						"t2"."PersonID" = @personId AND NOT EXISTS(
-							SELECT
-								*
-							FROM
-								"Patient" "t3"
-							WHERE
-								"t3"."PersonID" = @personId_1 AND "t2"."PersonID" = "t3"."PersonID"
-						)
-				) = 0 AND
-				(
-					SELECT
-						COUNT("t4"."PersonID")
-					FROM
-						"Patient" "t4"
-					WHERE
-						"t4"."PersonID" = @personId_1 AND NOT EXISTS(
-							SELECT
-								*
-							FROM
-								"Patient" "t5"
-							WHERE
-								"t5"."PersonID" = @personId AND "t4"."PersonID" = "t5"."PersonID"
-						)
-				) = 0
+				"t3"."cond" = 0 AND "t6"."cond" = 0
 		)
 			THEN '1'
 		ELSE '0'
