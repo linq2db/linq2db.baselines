@@ -15,7 +15,7 @@ USING (
 )
 ON ("Target"."PersonID" = "Source".ID + 10)
 
-WHEN NOT MATCHED BY SOURCE AND ((
+WHEN NOT MATCHED BY SOURCE AND (
 	SELECT
 		CASE
 			WHEN "p"."Diagnosis" LIKE '%very%' ESCAPE '~' THEN TRUE
@@ -25,7 +25,7 @@ WHEN NOT MATCHED BY SOURCE AND ((
 		"Patient" "p"
 	WHERE
 		"p"."PersonID" = "Target"."PersonID"
-)) THEN DELETE
+) THEN DELETE
 
 BeforeExecute
 -- Firebird.5 Firebird4
