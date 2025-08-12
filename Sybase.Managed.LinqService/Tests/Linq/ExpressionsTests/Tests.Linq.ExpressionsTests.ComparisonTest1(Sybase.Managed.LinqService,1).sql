@@ -11,11 +11,10 @@ SELECT
 			SELECT
 				*
 			FROM
-				[Person] [t1]
-			WHERE
+				[Person] [t1],
 				(
 					SELECT
-						COUNT([t2].[PersonID])
+						COUNT([t2].[PersonID]) as [cond]
 					FROM
 						[Patient] [t2]
 					WHERE
@@ -27,22 +26,24 @@ SELECT
 							WHERE
 								[t3].[PersonID] = @personId_1
 						)
-				) = 0 AND
+				) [t4],
 				(
 					SELECT
-						COUNT([t4].[PersonID])
+						COUNT([t5].[PersonID]) as [cond]
 					FROM
-						[Patient] [t4]
+						[Patient] [t5]
 					WHERE
-						[t4].[PersonID] = @personId_1 AND [t4].[PersonID] NOT IN (
+						[t5].[PersonID] = @personId_1 AND [t5].[PersonID] NOT IN (
 							SELECT
-								[t5].[PersonID]
+								[t6].[PersonID]
 							FROM
-								[Patient] [t5]
+								[Patient] [t6]
 							WHERE
-								[t5].[PersonID] = @personId
+								[t6].[PersonID] = @personId
 						)
-				) = 0
+				) [t7]
+			WHERE
+				[t4].[cond] = 0 AND [t7].[cond] = 0
 		)
 			THEN 1
 		ELSE 0
