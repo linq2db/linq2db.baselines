@@ -82,7 +82,7 @@ SELECT
 FROM
 	`BooleanTable` `r`
 WHERE
-	(Coalesce(`r`.`BooleanN`, `r`.`Id` % 2 = 1))
+	Coalesce(`r`.`BooleanN`, `r`.`Id` % 2 = 1)
 
 BeforeExecute
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
