@@ -15,7 +15,7 @@ USING (
 )
 ON ("Target"."PersonID" = "Source"."ID" + 10)
 
-WHEN NOT MATCHED BY SOURCE AND ((
+WHEN NOT MATCHED BY SOURCE AND (
 	SELECT
 		CASE
 			WHEN "a_Patient"."Diagnosis" LIKE '%very%' ESCAPE '~' THEN True
@@ -25,7 +25,7 @@ WHEN NOT MATCHED BY SOURCE AND ((
 		"Patient" "a_Patient"
 	WHERE
 		"Target"."PersonID" = "a_Patient"."PersonID"
-)) THEN UPDATE
+) THEN UPDATE
 SET
 	"FirstName" = 'Updated'
 
