@@ -86,7 +86,7 @@ SELECT
 FROM
 	"BooleanTable" "r"
 WHERE
-	(Coalesce("r"."BooleanN", Mod("r"."Id", 2) = 1))
+	Coalesce("r"."BooleanN", Mod("r"."Id", 2) = 1)
 
 BeforeExecute
 -- Firebird.3 Firebird3
