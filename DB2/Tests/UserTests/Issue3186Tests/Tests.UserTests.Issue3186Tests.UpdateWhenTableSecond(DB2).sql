@@ -1,6 +1,6 @@
 ﻿BeforeExecute
 -- DB2 DB2.LUW DB2LUW
-DECLARE @is_deleted SmallInt(4) -- Int16
+DECLARE @is_deleted SmallInt(4) -- Boolean
 SET     @is_deleted = 1
 
 UPDATE

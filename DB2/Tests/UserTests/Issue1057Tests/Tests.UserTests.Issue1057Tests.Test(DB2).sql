@@ -40,7 +40,7 @@ DECLARE @Id Integer(4) -- Int32
 SET     @Id = 2
 DECLARE @TaskId Integer(4) -- Int32
 SET     @TaskId = 1
-DECLARE @Actual SmallInt(4) -- Int16
+DECLARE @Actual SmallInt(4) -- Boolean
 SET     @Actual = 1
 
 INSERT INTO "TaskStage"

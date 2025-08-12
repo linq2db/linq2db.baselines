@@ -6,7 +6,7 @@ DECLARE @MoneyValue (1, 0) -- Decimal
 SET     @MoneyValue = 0
 DECLARE @DateTimeValue Timestamp(20) -- DateTime
 SET     @DateTimeValue = '2018-01-03-00.00.00.000000'
-DECLARE @BoolValue SmallInt(4) -- Int16
+DECLARE @BoolValue SmallInt(4) -- Boolean
 SET     @BoolValue = 0
 DECLARE @GuidValue VarBinary(16) -- Binary
 SET     @GuidValue = BX'00000000000000000000000000000000'

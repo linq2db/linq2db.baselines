@@ -1,6 +1,6 @@
 ﻿BeforeExecute
 -- DB2 DB2.LUW DB2LUW
-DECLARE @Has SmallInt(4) -- Int16
+DECLARE @Has SmallInt(4) -- Boolean
 SET     @Has = 1
 
 SELECT

@@ -8,7 +8,7 @@ DECLARE @DateTimeValue Timestamp -- DateTime
 SET     @DateTimeValue = NULL
 DECLARE @DateTimeValue2 Timestamp -- DateTime
 SET     @DateTimeValue2 = NULL
-DECLARE @BoolValue SmallInt(4) -- Int16
+DECLARE @BoolValue SmallInt(4) -- Boolean
 SET     @BoolValue = 0
 DECLARE @GuidValue VarBinary -- Binary
 SET     @GuidValue = NULL

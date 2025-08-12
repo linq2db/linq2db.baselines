@@ -16,7 +16,7 @@ FROM
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
-DECLARE @param2 SmallInt(4) -- Int16
+DECLARE @param2 SmallInt(4) -- Boolean
 SET     @param2 = 0
 
 SELECT

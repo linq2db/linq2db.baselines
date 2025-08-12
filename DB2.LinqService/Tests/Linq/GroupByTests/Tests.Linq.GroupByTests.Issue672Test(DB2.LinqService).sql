@@ -2,7 +2,7 @@
 -- DB2 DB2.LUW DB2LUW
 DECLARE @Name VarChar(6) -- String
 SET     @Name = 'group1'
-DECLARE @Enabled SmallInt(4) -- Int16
+DECLARE @Enabled SmallInt(4) -- Boolean
 SET     @Enabled = 1
 DECLARE @ImageFullUrl VarChar(3) -- String
 SET     @ImageFullUrl = '123'
@@ -24,7 +24,7 @@ BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 DECLARE @Name VarChar(6) -- String
 SET     @Name = 'group1'
-DECLARE @Enabled SmallInt(4) -- Int16
+DECLARE @Enabled SmallInt(4) -- Boolean
 SET     @Enabled = 1
 DECLARE @ImageFullUrl VarChar(3) -- String
 SET     @ImageFullUrl = '123'
@@ -46,7 +46,7 @@ BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 DECLARE @Name VarChar(6) -- String
 SET     @Name = 'group2'
-DECLARE @Enabled SmallInt(4) -- Int16
+DECLARE @Enabled SmallInt(4) -- Boolean
 SET     @Enabled = 1
 DECLARE @ImageFullUrl VarChar(3) -- String
 SET     @ImageFullUrl = '123'

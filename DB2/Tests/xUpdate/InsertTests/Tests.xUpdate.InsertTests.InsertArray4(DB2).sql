@@ -14,7 +14,7 @@ DECLARE @MoneyValue (1, 0) -- Decimal
 SET     @MoneyValue = 0
 DECLARE @DateTimeValue Timestamp -- DateTime
 SET     @DateTimeValue = NULL
-DECLARE @BoolValue SmallInt(4) -- Int16
+DECLARE @BoolValue SmallInt(4) -- Boolean
 SET     @BoolValue = 1
 DECLARE @GuidValue VarBinary(16) -- Binary
 SET     @GuidValue = BX'00000000000000000000000000000000'

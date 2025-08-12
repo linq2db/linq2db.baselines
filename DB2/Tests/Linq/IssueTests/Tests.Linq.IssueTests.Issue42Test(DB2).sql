@@ -46,7 +46,7 @@ DECLARE @DateTimeValue Timestamp(20) -- DateTime
 SET     @DateTimeValue = '2001-01-11-01.11.21.100000'
 DECLARE @DateTimeValue2 Timestamp -- DateTime
 SET     @DateTimeValue2 = NULL
-DECLARE @BoolValue SmallInt(4) -- Int16
+DECLARE @BoolValue SmallInt(4) -- Boolean
 SET     @BoolValue = 0
 DECLARE @GuidValue VarBinary(16) -- Binary
 SET     @GuidValue = BX'659112EFFE6FF94DBB6BBB16E413C883'
@@ -106,7 +106,7 @@ DECLARE @DateTimeValue Timestamp(20) -- DateTime
 SET     @DateTimeValue = '2001-01-11-01.11.21.100000'
 DECLARE @DateTimeValue2 Timestamp -- DateTime
 SET     @DateTimeValue2 = NULL
-DECLARE @BoolValue SmallInt(4) -- Int16
+DECLARE @BoolValue SmallInt(4) -- Boolean
 SET     @BoolValue = 1
 DECLARE @GuidValue VarBinary(16) -- Binary
 SET     @GuidValue = BX'659112EFFE6FF94DBB6BBB16E413C883'

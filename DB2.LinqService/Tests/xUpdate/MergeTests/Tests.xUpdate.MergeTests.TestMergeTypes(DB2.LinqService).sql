@@ -100,7 +100,7 @@ DECLARE @FieldInt32 Integer(4) -- Int32
 SET     @FieldInt32 = -2147483647
 DECLARE @FieldInt64 BigInt(8) -- Int64
 SET     @FieldInt64 = -9223372036854775807
-DECLARE @FieldBoolean SmallInt(4) -- Int16
+DECLARE @FieldBoolean SmallInt(4) -- Boolean
 SET     @FieldBoolean = 1
 DECLARE @FieldString VarChar(13) -- String
 SET     @FieldString = 'normal strinG'
@@ -182,7 +182,7 @@ DECLARE @FieldInt32 Integer(4) -- Int32
 SET     @FieldInt32 = 2147483647
 DECLARE @FieldInt64 BigInt(8) -- Int64
 SET     @FieldInt64 = 9223372036854775807
-DECLARE @FieldBoolean SmallInt(4) -- Int16
+DECLARE @FieldBoolean SmallInt(4) -- Boolean
 SET     @FieldBoolean = 0
 DECLARE @FieldString VarChar(10) -- String
 SET     @FieldString = 'test
@@ -431,7 +431,7 @@ DECLARE @FieldInt32 Integer(4) -- Int32
 SET     @FieldInt32 = 2147483647
 DECLARE @FieldInt64 BigInt(8) -- Int64
 SET     @FieldInt64 = 9223372036854775807
-DECLARE @FieldBoolean SmallInt(4) -- Int16
+DECLARE @FieldBoolean SmallInt(4) -- Boolean
 SET     @FieldBoolean = 0
 DECLARE @FieldString VarChar(9) -- String
 SET     @FieldString = 'test
@@ -597,7 +597,7 @@ DECLARE @FieldInt32 Integer(4) -- Int32
 SET     @FieldInt32 = 2147483647
 DECLARE @FieldInt64 BigInt(8) -- Int64
 SET     @FieldInt64 = 9223372036854775807
-DECLARE @FieldBoolean SmallInt(4) -- Int16
+DECLARE @FieldBoolean SmallInt(4) -- Boolean
 SET     @FieldBoolean = 0
 DECLARE @FieldString VarChar(12) -- String
 SET     @FieldString = 'test

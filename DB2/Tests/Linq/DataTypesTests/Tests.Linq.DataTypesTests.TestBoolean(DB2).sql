@@ -1,8 +1,8 @@
 ﻿BeforeExecute
 -- DB2 DB2.LUW DB2LUW
-DECLARE @Column SmallInt(4) -- Int16
+DECLARE @Column SmallInt(4) -- Boolean
 SET     @Column = 0
-DECLARE @ColumnNullable SmallInt(4) -- Int16
+DECLARE @ColumnNullable SmallInt(4) -- Boolean
 SET     @ColumnNullable = 1
 
 SELECT
@@ -36,7 +36,7 @@ BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 DECLARE @Id Integer(4) -- Int32
 SET     @Id = 1
-DECLARE @Column SmallInt(4) -- Int16
+DECLARE @Column SmallInt(4) -- Boolean
 SET     @Column = 1
 DECLARE @ColumnNullable SmallInt -- Boolean
 SET     @ColumnNullable = NULL
@@ -58,9 +58,9 @@ BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 DECLARE @Id Integer(4) -- Int32
 SET     @Id = 2
-DECLARE @Column SmallInt(4) -- Int16
+DECLARE @Column SmallInt(4) -- Boolean
 SET     @Column = 0
-DECLARE @ColumnNullable SmallInt(4) -- Int16
+DECLARE @ColumnNullable SmallInt(4) -- Boolean
 SET     @ColumnNullable = 1
 
 INSERT INTO "BooleanTable"

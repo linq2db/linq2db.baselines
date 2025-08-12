@@ -20,7 +20,7 @@ BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 DECLARE @Id Integer(4) -- Int32
 SET     @Id = 2
-DECLARE @BooleanNullable SmallInt(4) -- Int16
+DECLARE @BooleanNullable SmallInt(4) -- Boolean
 SET     @BooleanNullable = 1
 
 INSERT INTO "CreateTableTypes"

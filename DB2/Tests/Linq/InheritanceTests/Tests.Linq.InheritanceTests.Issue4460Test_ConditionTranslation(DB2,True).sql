@@ -6,7 +6,7 @@ DECLARE @Id Integer(4) -- Int32
 SET     @Id = 1
 DECLARE @Name VarChar(4) -- String
 SET     @Name = 'Jane'
-DECLARE @IsMale SmallInt(4) -- Int16
+DECLARE @IsMale SmallInt(4) -- Boolean
 SET     @IsMale = 0
 
 INSERT INTO "Base"

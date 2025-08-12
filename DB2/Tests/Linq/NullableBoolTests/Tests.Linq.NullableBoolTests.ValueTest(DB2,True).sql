@@ -1,6 +1,6 @@
 ﻿BeforeExecute
 -- DB2 DB2.LUW DB2LUW
-DECLARE @value SmallInt(4) -- Int16
+DECLARE @value SmallInt(4) -- Boolean
 SET     @value = 1
 
 SELECT
@@ -12,7 +12,7 @@ WHERE
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
-DECLARE @value SmallInt(4) -- Int16
+DECLARE @value SmallInt(4) -- Boolean
 SET     @value = 1
 
 SELECT
@@ -24,7 +24,7 @@ WHERE
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
-DECLARE @value SmallInt(4) -- Int16
+DECLARE @value SmallInt(4) -- Boolean
 SET     @value = 1
 
 SELECT
@@ -36,7 +36,7 @@ WHERE
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
-DECLARE @value SmallInt(4) -- Int16
+DECLARE @value SmallInt(4) -- Boolean
 SET     @value = 1
 
 SELECT

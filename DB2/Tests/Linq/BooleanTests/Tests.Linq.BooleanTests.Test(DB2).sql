@@ -1,6 +1,6 @@
 ﻿BeforeExecute
 -- DB2 DB2.LUW DB2LUW
-DECLARE @True SmallInt(4) -- Int16
+DECLARE @True SmallInt(4) -- Boolean
 SET     @True = 1
 
 SELECT
@@ -36,7 +36,7 @@ FROM
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
-DECLARE @False SmallInt(4) -- Int16
+DECLARE @False SmallInt(4) -- Boolean
 SET     @False = 0
 
 SELECT
@@ -72,7 +72,7 @@ FROM
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
-DECLARE @TrueN SmallInt(4) -- Int16
+DECLARE @TrueN SmallInt(4) -- Boolean
 SET     @TrueN = 1
 
 SELECT
@@ -108,7 +108,7 @@ FROM
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
-DECLARE @FalseN SmallInt(4) -- Int16
+DECLARE @FalseN SmallInt(4) -- Boolean
 SET     @FalseN = 0
 
 SELECT
@@ -178,7 +178,7 @@ FROM
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
-DECLARE @True SmallInt(4) -- Int16
+DECLARE @True SmallInt(4) -- Boolean
 SET     @True = 1
 
 SELECT
@@ -214,7 +214,7 @@ FROM
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
-DECLARE @False SmallInt(4) -- Int16
+DECLARE @False SmallInt(4) -- Boolean
 SET     @False = 0
 
 SELECT
@@ -250,7 +250,7 @@ FROM
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
-DECLARE @TrueN SmallInt(4) -- Int16
+DECLARE @TrueN SmallInt(4) -- Boolean
 SET     @TrueN = 1
 
 SELECT
@@ -286,7 +286,7 @@ FROM
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
-DECLARE @FalseN SmallInt(4) -- Int16
+DECLARE @FalseN SmallInt(4) -- Boolean
 SET     @FalseN = 0
 
 SELECT
@@ -356,7 +356,7 @@ FROM
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
-DECLARE @True SmallInt(4) -- Int16
+DECLARE @True SmallInt(4) -- Boolean
 SET     @True = 1
 
 SELECT
@@ -392,7 +392,7 @@ FROM
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
-DECLARE @False SmallInt(4) -- Int16
+DECLARE @False SmallInt(4) -- Boolean
 SET     @False = 0
 
 SELECT
@@ -428,7 +428,7 @@ FROM
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
-DECLARE @TrueN SmallInt(4) -- Int16
+DECLARE @TrueN SmallInt(4) -- Boolean
 SET     @TrueN = 1
 
 SELECT
@@ -464,7 +464,7 @@ FROM
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
-DECLARE @FalseN SmallInt(4) -- Int16
+DECLARE @FalseN SmallInt(4) -- Boolean
 SET     @FalseN = 0
 
 SELECT
@@ -532,7 +532,7 @@ FROM
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
-DECLARE @True SmallInt(4) -- Int16
+DECLARE @True SmallInt(4) -- Boolean
 SET     @True = 1
 
 SELECT
@@ -568,7 +568,7 @@ FROM
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
-DECLARE @False SmallInt(4) -- Int16
+DECLARE @False SmallInt(4) -- Boolean
 SET     @False = 0
 
 SELECT
@@ -604,7 +604,7 @@ FROM
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
-DECLARE @TrueN SmallInt(4) -- Int16
+DECLARE @TrueN SmallInt(4) -- Boolean
 SET     @TrueN = 1
 
 SELECT
@@ -640,7 +640,7 @@ FROM
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
-DECLARE @FalseN SmallInt(4) -- Int16
+DECLARE @FalseN SmallInt(4) -- Boolean
 SET     @FalseN = 0
 
 SELECT
