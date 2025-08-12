@@ -12,24 +12,23 @@ BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
-	r_1.Id,
-	r_1.Value1,
-	r_1.Value2,
-	r_1.Value4,
-	r_1.Value5
+	r.Id,
+	r.Value1,
+	r.Value2,
+	r.Value4,
+	r.Value5
 FROM
-	BooleanTable r_1
-		LEFT JOIN (
-			SELECT
-				COUNT(*) as COUNT_1
-			FROM
-				BooleanTable r
-			WHERE
-				r.Value1 = 1
-		) t1 ON 1=1
+	BooleanTable r
 WHERE
-	(r_1.Value1 = r_1.Value4) = (t1.COUNT_1 = (r_1.Value5 + 18)) OR
-	r_1.Value4 IS NULL AND (t1.COUNT_1 IS NULL OR r_1.Value5 IS NULL)
+	(r.Value1 = r.Value4) = ((
+		SELECT
+			COUNT(*)
+		FROM
+			BooleanTable r_1
+		WHERE
+			r_1.Value1 = 1
+	) = (r.Value5 + 18)) OR
+	r.Value4 IS NULL AND r.Value5 IS NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -47,24 +46,23 @@ BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
-	r_1.Id,
-	r_1.Value1,
-	r_1.Value2,
-	r_1.Value4,
-	r_1.Value5
+	r.Id,
+	r.Value1,
+	r.Value2,
+	r.Value4,
+	r.Value5
 FROM
-	BooleanTable r_1
-		LEFT JOIN (
-			SELECT
-				COUNT(*) as COUNT_1
-			FROM
-				BooleanTable r
-			WHERE
-				r.Value1 = 1
-		) t1 ON 1=1
+	BooleanTable r
 WHERE
-	(r_1.Value1 <> r_1.Value4) = (t1.COUNT_1 = (r_1.Value5 + 18)) OR
-	r_1.Value4 IS NULL AND (t1.COUNT_1 IS NULL OR r_1.Value5 IS NULL)
+	(r.Value1 <> r.Value4) = ((
+		SELECT
+			COUNT(*)
+		FROM
+			BooleanTable r_1
+		WHERE
+			r_1.Value1 = 1
+	) = (r.Value5 + 18)) OR
+	r.Value4 IS NULL AND r.Value5 IS NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -82,23 +80,22 @@ BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
-	r_1.Id,
-	r_1.Value1,
-	r_1.Value2,
-	r_1.Value4,
-	r_1.Value5
+	r.Id,
+	r.Value1,
+	r.Value2,
+	r.Value4,
+	r.Value5
 FROM
-	BooleanTable r_1
-		LEFT JOIN (
-			SELECT
-				COUNT(*) as COUNT_1
-			FROM
-				BooleanTable r
-			WHERE
-				r.Value1 = 1
-		) t1 ON 1=1
+	BooleanTable r
 WHERE
-	(r_1.Value1 = r_1.Value2) = (t1.COUNT_1 = (r_1.Value5 + 18))
+	(r.Value1 = r.Value2) = ((
+		SELECT
+			COUNT(*)
+		FROM
+			BooleanTable r_1
+		WHERE
+			r_1.Value1 = 1
+	) = (r.Value5 + 18))
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -116,23 +113,22 @@ BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
-	r_1.Id,
-	r_1.Value1,
-	r_1.Value2,
-	r_1.Value4,
-	r_1.Value5
+	r.Id,
+	r.Value1,
+	r.Value2,
+	r.Value4,
+	r.Value5
 FROM
-	BooleanTable r_1
-		LEFT JOIN (
-			SELECT
-				COUNT(*) as COUNT_1
-			FROM
-				BooleanTable r
-			WHERE
-				r.Value1 = 1
-		) t1 ON 1=1
+	BooleanTable r
 WHERE
-	(r_1.Value1 <> r_1.Value2) = (t1.COUNT_1 = (r_1.Value5 + 18))
+	(r.Value1 <> r.Value2) = ((
+		SELECT
+			COUNT(*)
+		FROM
+			BooleanTable r_1
+		WHERE
+			r_1.Value1 = 1
+	) = (r.Value5 + 18))
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -150,23 +146,22 @@ BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
-	r_1.Id,
-	r_1.Value1,
-	r_1.Value2,
-	r_1.Value4,
-	r_1.Value5
+	r.Id,
+	r.Value1,
+	r.Value2,
+	r.Value4,
+	r.Value5
 FROM
-	BooleanTable r_1
-		LEFT JOIN (
-			SELECT
-				COUNT(*) as COUNT_1
-			FROM
-				BooleanTable r
-			WHERE
-				r.Value1 = 1
-		) t1 ON 1=1
+	BooleanTable r
 WHERE
-	((1=1)) = (((r_1.Value1 = r_1.Value4) = (t1.COUNT_1 = (r_1.Value5 + 18)) OR r_1.Value4 IS NULL AND (t1.COUNT_1 IS NULL OR r_1.Value5 IS NULL)) AND NOT (r_1.Value4 IS NULL AND NOT (t1.COUNT_1 IS NULL OR r_1.Value5 IS NULL)) AND NOT (r_1.Value4 IS NOT NULL AND (t1.COUNT_1 IS NULL OR r_1.Value5 IS NULL)))
+	((1=1)) = (((r.Value1 = r.Value4) = ((
+		SELECT
+			COUNT(*)
+		FROM
+			BooleanTable r_1
+		WHERE
+			r_1.Value1 = 1
+	) = (r.Value5 + 18)) OR r.Value4 IS NULL AND r.Value5 IS NULL) AND NOT (r.Value4 IS NULL AND r.Value5 IS NOT NULL) AND NOT (r.Value4 IS NOT NULL AND r.Value5 IS NULL))
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -184,23 +179,22 @@ BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
-	r_1.Id,
-	r_1.Value1,
-	r_1.Value2,
-	r_1.Value4,
-	r_1.Value5
+	r.Id,
+	r.Value1,
+	r.Value2,
+	r.Value4,
+	r.Value5
 FROM
-	BooleanTable r_1
-		LEFT JOIN (
-			SELECT
-				COUNT(*) as COUNT_1
-			FROM
-				BooleanTable r
-			WHERE
-				r.Value1 = 1
-		) t1 ON 1=1
+	BooleanTable r
 WHERE
-	((1=1)) = (((r_1.Value1 <> r_1.Value4) = (t1.COUNT_1 = (r_1.Value5 + 18)) OR r_1.Value4 IS NULL AND (t1.COUNT_1 IS NULL OR r_1.Value5 IS NULL)) AND NOT (r_1.Value4 IS NULL AND NOT (t1.COUNT_1 IS NULL OR r_1.Value5 IS NULL)) AND NOT (r_1.Value4 IS NOT NULL AND (t1.COUNT_1 IS NULL OR r_1.Value5 IS NULL)))
+	((1=1)) = (((r.Value1 <> r.Value4) = ((
+		SELECT
+			COUNT(*)
+		FROM
+			BooleanTable r_1
+		WHERE
+			r_1.Value1 = 1
+	) = (r.Value5 + 18)) OR r.Value4 IS NULL AND r.Value5 IS NULL) AND NOT (r.Value4 IS NULL AND r.Value5 IS NOT NULL) AND NOT (r.Value4 IS NOT NULL AND r.Value5 IS NULL))
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -218,23 +212,26 @@ BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
-	r_1.Id,
-	r_1.Value1,
-	r_1.Value2,
-	r_1.Value4,
-	r_1.Value5
+	r.Id,
+	r.Value1,
+	r.Value2,
+	r.Value4,
+	r.Value5
 FROM
-	BooleanTable r_1
-		LEFT JOIN (
-			SELECT
-				COUNT(*) as COUNT_1
-			FROM
-				BooleanTable r
-			WHERE
-				r.Value1 = 1
-		) t1 ON 1=1
+	BooleanTable r
 WHERE
-	((1=1)) = ((r_1.Value1 = r_1.Value2) = (t1.COUNT_1 = (r_1.Value5 + 18)) AND NOT (t1.COUNT_1 IS NULL OR r_1.Value5 IS NULL))
+	((1=1)) = (CASE
+		WHEN (r.Value1 = r.Value2) = ((
+			SELECT
+				COUNT(*)
+			FROM
+				BooleanTable r_1
+			WHERE
+				r_1.Value1 = 1
+		) = (r.Value5 + 18))
+			THEN true
+		ELSE false
+	END)
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -252,23 +249,26 @@ BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
-	r_1.Id,
-	r_1.Value1,
-	r_1.Value2,
-	r_1.Value4,
-	r_1.Value5
+	r.Id,
+	r.Value1,
+	r.Value2,
+	r.Value4,
+	r.Value5
 FROM
-	BooleanTable r_1
-		LEFT JOIN (
-			SELECT
-				COUNT(*) as COUNT_1
-			FROM
-				BooleanTable r
-			WHERE
-				r.Value1 = 1
-		) t1 ON 1=1
+	BooleanTable r
 WHERE
-	((1=1)) = ((r_1.Value1 <> r_1.Value2) = (t1.COUNT_1 = (r_1.Value5 + 18)) AND NOT (t1.COUNT_1 IS NULL OR r_1.Value5 IS NULL))
+	((1=1)) = (CASE
+		WHEN (r.Value1 <> r.Value2) = ((
+			SELECT
+				COUNT(*)
+			FROM
+				BooleanTable r_1
+			WHERE
+				r_1.Value1 = 1
+		) = (r.Value5 + 18))
+			THEN true
+		ELSE false
+	END)
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -286,25 +286,23 @@ BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
-	r_1.Id,
-	r_1.Value1,
-	r_1.Value2,
-	r_1.Value4,
-	r_1.Value5
+	r.Id,
+	r.Value1,
+	r.Value2,
+	r.Value4,
+	r.Value5
 FROM
-	BooleanTable r_1
-		LEFT JOIN (
-			SELECT
-				COUNT(*) as COUNT_1
-			FROM
-				BooleanTable r
-			WHERE
-				r.Value1 = 1
-		) t1 ON 1=1
+	BooleanTable r
 WHERE
-	(r_1.Value1 = r_1.Value4) <> (t1.COUNT_1 = (r_1.Value5 + 18)) OR
-	r_1.Value4 IS NULL AND NOT (t1.COUNT_1 IS NULL OR r_1.Value5 IS NULL) OR
-	r_1.Value4 IS NOT NULL AND (t1.COUNT_1 IS NULL OR r_1.Value5 IS NULL)
+	(r.Value1 = r.Value4) <> ((
+		SELECT
+			COUNT(*)
+		FROM
+			BooleanTable r_1
+		WHERE
+			r_1.Value1 = 1
+	) = (r.Value5 + 18)) OR
+	r.Value4 IS NULL AND r.Value5 IS NOT NULL OR r.Value4 IS NOT NULL AND r.Value5 IS NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -322,25 +320,23 @@ BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
-	r_1.Id,
-	r_1.Value1,
-	r_1.Value2,
-	r_1.Value4,
-	r_1.Value5
+	r.Id,
+	r.Value1,
+	r.Value2,
+	r.Value4,
+	r.Value5
 FROM
-	BooleanTable r_1
-		LEFT JOIN (
-			SELECT
-				COUNT(*) as COUNT_1
-			FROM
-				BooleanTable r
-			WHERE
-				r.Value1 = 1
-		) t1 ON 1=1
+	BooleanTable r
 WHERE
-	(r_1.Value1 <> r_1.Value4) <> (t1.COUNT_1 = (r_1.Value5 + 18)) OR
-	r_1.Value4 IS NULL AND NOT (t1.COUNT_1 IS NULL OR r_1.Value5 IS NULL) OR
-	r_1.Value4 IS NOT NULL AND (t1.COUNT_1 IS NULL OR r_1.Value5 IS NULL)
+	(r.Value1 <> r.Value4) <> ((
+		SELECT
+			COUNT(*)
+		FROM
+			BooleanTable r_1
+		WHERE
+			r_1.Value1 = 1
+	) = (r.Value5 + 18)) OR
+	r.Value4 IS NULL AND r.Value5 IS NOT NULL OR r.Value4 IS NOT NULL AND r.Value5 IS NULL
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -358,24 +354,26 @@ BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
-	r_1.Id,
-	r_1.Value1,
-	r_1.Value2,
-	r_1.Value4,
-	r_1.Value5
+	r.Id,
+	r.Value1,
+	r.Value2,
+	r.Value4,
+	r.Value5
 FROM
-	BooleanTable r_1
-		LEFT JOIN (
-			SELECT
-				COUNT(*) as COUNT_1
-			FROM
-				BooleanTable r
-			WHERE
-				r.Value1 = 1
-		) t1 ON 1=1
+	BooleanTable r
 WHERE
-	(r_1.Value1 = r_1.Value2) <> (t1.COUNT_1 = (r_1.Value5 + 18)) OR
-	t1.COUNT_1 IS NULL OR r_1.Value5 IS NULL
+	CASE
+		WHEN (r.Value1 = r.Value2) = ((
+			SELECT
+				COUNT(*)
+			FROM
+				BooleanTable r_1
+			WHERE
+				r_1.Value1 = 1
+		) = (r.Value5 + 18))
+			THEN false
+		ELSE true
+	END
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -393,24 +391,26 @@ BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
-	r_1.Id,
-	r_1.Value1,
-	r_1.Value2,
-	r_1.Value4,
-	r_1.Value5
+	r.Id,
+	r.Value1,
+	r.Value2,
+	r.Value4,
+	r.Value5
 FROM
-	BooleanTable r_1
-		LEFT JOIN (
-			SELECT
-				COUNT(*) as COUNT_1
-			FROM
-				BooleanTable r
-			WHERE
-				r.Value1 = 1
-		) t1 ON 1=1
+	BooleanTable r
 WHERE
-	(r_1.Value1 <> r_1.Value2) <> (t1.COUNT_1 = (r_1.Value5 + 18)) OR
-	t1.COUNT_1 IS NULL OR r_1.Value5 IS NULL
+	CASE
+		WHEN (r.Value1 <> r.Value2) = ((
+			SELECT
+				COUNT(*)
+			FROM
+				BooleanTable r_1
+			WHERE
+				r_1.Value1 = 1
+		) = (r.Value5 + 18))
+			THEN false
+		ELSE true
+	END
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -428,23 +428,22 @@ BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
-	r_1.Id,
-	r_1.Value1,
-	r_1.Value2,
-	r_1.Value4,
-	r_1.Value5
+	r.Id,
+	r.Value1,
+	r.Value2,
+	r.Value4,
+	r.Value5
 FROM
-	BooleanTable r_1
-		LEFT JOIN (
-			SELECT
-				COUNT(*) as COUNT_1
-			FROM
-				BooleanTable r
-			WHERE
-				r.Value1 = 1
-		) t1 ON 1=1
+	BooleanTable r
 WHERE
-	((1=1)) = (((r_1.Value1 = r_1.Value4) <> (t1.COUNT_1 = (r_1.Value5 + 18)) OR r_1.Value4 IS NULL AND NOT (t1.COUNT_1 IS NULL OR r_1.Value5 IS NULL) OR r_1.Value4 IS NOT NULL AND (t1.COUNT_1 IS NULL OR r_1.Value5 IS NULL)) AND NOT (r_1.Value4 IS NULL AND (t1.COUNT_1 IS NULL OR r_1.Value5 IS NULL)))
+	((1=1)) = (((r.Value1 = r.Value4) <> ((
+		SELECT
+			COUNT(*)
+		FROM
+			BooleanTable r_1
+		WHERE
+			r_1.Value1 = 1
+	) = (r.Value5 + 18)) OR r.Value4 IS NULL AND r.Value5 IS NOT NULL OR r.Value4 IS NOT NULL AND r.Value5 IS NULL) AND NOT (r.Value4 IS NULL AND r.Value5 IS NULL))
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -462,23 +461,22 @@ BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
-	r_1.Id,
-	r_1.Value1,
-	r_1.Value2,
-	r_1.Value4,
-	r_1.Value5
+	r.Id,
+	r.Value1,
+	r.Value2,
+	r.Value4,
+	r.Value5
 FROM
-	BooleanTable r_1
-		LEFT JOIN (
-			SELECT
-				COUNT(*) as COUNT_1
-			FROM
-				BooleanTable r
-			WHERE
-				r.Value1 = 1
-		) t1 ON 1=1
+	BooleanTable r
 WHERE
-	((1=1)) = (((r_1.Value1 <> r_1.Value4) <> (t1.COUNT_1 = (r_1.Value5 + 18)) OR r_1.Value4 IS NULL AND NOT (t1.COUNT_1 IS NULL OR r_1.Value5 IS NULL) OR r_1.Value4 IS NOT NULL AND (t1.COUNT_1 IS NULL OR r_1.Value5 IS NULL)) AND NOT (r_1.Value4 IS NULL AND (t1.COUNT_1 IS NULL OR r_1.Value5 IS NULL)))
+	((1=1)) = (((r.Value1 <> r.Value4) <> ((
+		SELECT
+			COUNT(*)
+		FROM
+			BooleanTable r_1
+		WHERE
+			r_1.Value1 = 1
+	) = (r.Value5 + 18)) OR r.Value4 IS NULL AND r.Value5 IS NOT NULL OR r.Value4 IS NOT NULL AND r.Value5 IS NULL) AND NOT (r.Value4 IS NULL AND r.Value5 IS NULL))
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -496,23 +494,26 @@ BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
-	r_1.Id,
-	r_1.Value1,
-	r_1.Value2,
-	r_1.Value4,
-	r_1.Value5
+	r.Id,
+	r.Value1,
+	r.Value2,
+	r.Value4,
+	r.Value5
 FROM
-	BooleanTable r_1
-		LEFT JOIN (
-			SELECT
-				COUNT(*) as COUNT_1
-			FROM
-				BooleanTable r
-			WHERE
-				r.Value1 = 1
-		) t1 ON 1=1
+	BooleanTable r
 WHERE
-	((1=1)) = ((r_1.Value1 = r_1.Value2) <> (t1.COUNT_1 = (r_1.Value5 + 18)) OR t1.COUNT_1 IS NULL OR r_1.Value5 IS NULL)
+	((1=1)) = (CASE
+		WHEN (r.Value1 = r.Value2) = ((
+			SELECT
+				COUNT(*)
+			FROM
+				BooleanTable r_1
+			WHERE
+				r_1.Value1 = 1
+		) = (r.Value5 + 18))
+			THEN false
+		ELSE true
+	END)
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -530,23 +531,26 @@ BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
-	r_1.Id,
-	r_1.Value1,
-	r_1.Value2,
-	r_1.Value4,
-	r_1.Value5
+	r.Id,
+	r.Value1,
+	r.Value2,
+	r.Value4,
+	r.Value5
 FROM
-	BooleanTable r_1
-		LEFT JOIN (
-			SELECT
-				COUNT(*) as COUNT_1
-			FROM
-				BooleanTable r
-			WHERE
-				r.Value1 = 1
-		) t1 ON 1=1
+	BooleanTable r
 WHERE
-	((1=1)) = ((r_1.Value1 <> r_1.Value2) <> (t1.COUNT_1 = (r_1.Value5 + 18)) OR t1.COUNT_1 IS NULL OR r_1.Value5 IS NULL)
+	((1=1)) = (CASE
+		WHEN (r.Value1 <> r.Value2) = ((
+			SELECT
+				COUNT(*)
+			FROM
+				BooleanTable r_1
+			WHERE
+				r_1.Value1 = 1
+		) = (r.Value5 + 18))
+			THEN false
+		ELSE true
+	END)
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -564,23 +568,22 @@ BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
-	r_1.Id,
-	r_1.Value1,
-	r_1.Value2,
-	r_1.Value4,
-	r_1.Value5
+	r.Id,
+	r.Value1,
+	r.Value2,
+	r.Value4,
+	r.Value5
 FROM
-	BooleanTable r_1
-		LEFT JOIN (
-			SELECT
-				COUNT(*) as COUNT_1
-			FROM
-				BooleanTable r
-			WHERE
-				r.Value1 = 1
-		) t1 ON 1=1
+	BooleanTable r
 WHERE
-	(r_1.Value4 + 18) >= (t1.COUNT_1 + r_1.Value5)
+	(r.Value4 + 18) >= ((
+		SELECT
+			COUNT(*)
+		FROM
+			BooleanTable r_1
+		WHERE
+			r_1.Value1 = 1
+	) + r.Value5)
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -598,23 +601,22 @@ BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
-	r_1.Id,
-	r_1.Value1,
-	r_1.Value2,
-	r_1.Value4,
-	r_1.Value5
+	r.Id,
+	r.Value1,
+	r.Value2,
+	r.Value4,
+	r.Value5
 FROM
-	BooleanTable r_1
-		LEFT JOIN (
-			SELECT
-				COUNT(*) as COUNT_1
-			FROM
-				BooleanTable r
-			WHERE
-				r.Value1 = 1
-		) t1 ON 1=1
+	BooleanTable r
 WHERE
-	(r_1.Value4 + 18) > (t1.COUNT_1 + r_1.Value5)
+	(r.Value4 + 18) > ((
+		SELECT
+			COUNT(*)
+		FROM
+			BooleanTable r_1
+		WHERE
+			r_1.Value1 = 1
+	) + r.Value5)
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -632,23 +634,22 @@ BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
-	r_1.Id,
-	r_1.Value1,
-	r_1.Value2,
-	r_1.Value4,
-	r_1.Value5
+	r.Id,
+	r.Value1,
+	r.Value2,
+	r.Value4,
+	r.Value5
 FROM
-	BooleanTable r_1
-		LEFT JOIN (
-			SELECT
-				COUNT(*) as COUNT_1
-			FROM
-				BooleanTable r
-			WHERE
-				r.Value1 = 1
-		) t1 ON 1=1
+	BooleanTable r
 WHERE
-	(r_1.Value4 + 18) <= (t1.COUNT_1 + r_1.Value5)
+	(r.Value4 + 18) <= ((
+		SELECT
+			COUNT(*)
+		FROM
+			BooleanTable r_1
+		WHERE
+			r_1.Value1 = 1
+	) + r.Value5)
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -666,23 +667,22 @@ BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
-	r_1.Id,
-	r_1.Value1,
-	r_1.Value2,
-	r_1.Value4,
-	r_1.Value5
+	r.Id,
+	r.Value1,
+	r.Value2,
+	r.Value4,
+	r.Value5
 FROM
-	BooleanTable r_1
-		LEFT JOIN (
-			SELECT
-				COUNT(*) as COUNT_1
-			FROM
-				BooleanTable r
-			WHERE
-				r.Value1 = 1
-		) t1 ON 1=1
+	BooleanTable r
 WHERE
-	(r_1.Value4 + 18) < (t1.COUNT_1 + r_1.Value5)
+	(r.Value4 + 18) < ((
+		SELECT
+			COUNT(*)
+		FROM
+			BooleanTable r_1
+		WHERE
+			r_1.Value1 = 1
+	) + r.Value5)
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -700,23 +700,22 @@ BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
-	r_1.Id,
-	r_1.Value1,
-	r_1.Value2,
-	r_1.Value4,
-	r_1.Value5
+	r.Id,
+	r.Value1,
+	r.Value2,
+	r.Value4,
+	r.Value5
 FROM
-	BooleanTable r_1
-		LEFT JOIN (
-			SELECT
-				COUNT(*) as COUNT_1
-			FROM
-				BooleanTable r
-			WHERE
-				r.Value1 = 1
-		) t1 ON 1=1
+	BooleanTable r
 WHERE
-	(r_1.Value2 + 18) >= (t1.COUNT_1 + r_1.Value5)
+	(r.Value2 + 18) >= ((
+		SELECT
+			COUNT(*)
+		FROM
+			BooleanTable r_1
+		WHERE
+			r_1.Value1 = 1
+	) + r.Value5)
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -734,23 +733,22 @@ BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
-	r_1.Id,
-	r_1.Value1,
-	r_1.Value2,
-	r_1.Value4,
-	r_1.Value5
+	r.Id,
+	r.Value1,
+	r.Value2,
+	r.Value4,
+	r.Value5
 FROM
-	BooleanTable r_1
-		LEFT JOIN (
-			SELECT
-				COUNT(*) as COUNT_1
-			FROM
-				BooleanTable r
-			WHERE
-				r.Value1 = 1
-		) t1 ON 1=1
+	BooleanTable r
 WHERE
-	(r_1.Value2 + 18) > (t1.COUNT_1 + r_1.Value5)
+	(r.Value2 + 18) > ((
+		SELECT
+			COUNT(*)
+		FROM
+			BooleanTable r_1
+		WHERE
+			r_1.Value1 = 1
+	) + r.Value5)
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -768,23 +766,22 @@ BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
-	r_1.Id,
-	r_1.Value1,
-	r_1.Value2,
-	r_1.Value4,
-	r_1.Value5
+	r.Id,
+	r.Value1,
+	r.Value2,
+	r.Value4,
+	r.Value5
 FROM
-	BooleanTable r_1
-		LEFT JOIN (
-			SELECT
-				COUNT(*) as COUNT_1
-			FROM
-				BooleanTable r
-			WHERE
-				r.Value1 = 1
-		) t1 ON 1=1
+	BooleanTable r
 WHERE
-	(r_1.Value2 + 18) <= (t1.COUNT_1 + r_1.Value5)
+	(r.Value2 + 18) <= ((
+		SELECT
+			COUNT(*)
+		FROM
+			BooleanTable r_1
+		WHERE
+			r_1.Value1 = 1
+	) + r.Value5)
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -802,23 +799,22 @@ BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
-	r_1.Id,
-	r_1.Value1,
-	r_1.Value2,
-	r_1.Value4,
-	r_1.Value5
+	r.Id,
+	r.Value1,
+	r.Value2,
+	r.Value4,
+	r.Value5
 FROM
-	BooleanTable r_1
-		LEFT JOIN (
-			SELECT
-				COUNT(*) as COUNT_1
-			FROM
-				BooleanTable r
-			WHERE
-				r.Value1 = 1
-		) t1 ON 1=1
+	BooleanTable r
 WHERE
-	(r_1.Value2 + 18) < (t1.COUNT_1 + r_1.Value5)
+	(r.Value2 + 18) < ((
+		SELECT
+			COUNT(*)
+		FROM
+			BooleanTable r_1
+		WHERE
+			r_1.Value1 = 1
+	) + r.Value5)
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -836,23 +832,26 @@ BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
-	r_1.Id,
-	r_1.Value1,
-	r_1.Value2,
-	r_1.Value4,
-	r_1.Value5
+	r.Id,
+	r.Value1,
+	r.Value2,
+	r.Value4,
+	r.Value5
 FROM
-	BooleanTable r_1
-		LEFT JOIN (
-			SELECT
-				COUNT(*) as COUNT_1
-			FROM
-				BooleanTable r
-			WHERE
-				r.Value1 = 1
-		) t1 ON 1=1
+	BooleanTable r
 WHERE
-	((1=1)) = ((r_1.Value4 + 18) >= (t1.COUNT_1 + r_1.Value5) AND r_1.Value4 IS NOT NULL AND NOT (t1.COUNT_1 IS NULL OR r_1.Value5 IS NULL))
+	((1=1)) = (CASE
+		WHEN (r.Value4 + 18) >= ((
+			SELECT
+				COUNT(*)
+			FROM
+				BooleanTable r_1
+			WHERE
+				r_1.Value1 = 1
+		) + r.Value5)
+			THEN true
+		ELSE false
+	END)
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -870,23 +869,26 @@ BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
-	r_1.Id,
-	r_1.Value1,
-	r_1.Value2,
-	r_1.Value4,
-	r_1.Value5
+	r.Id,
+	r.Value1,
+	r.Value2,
+	r.Value4,
+	r.Value5
 FROM
-	BooleanTable r_1
-		LEFT JOIN (
-			SELECT
-				COUNT(*) as COUNT_1
-			FROM
-				BooleanTable r
-			WHERE
-				r.Value1 = 1
-		) t1 ON 1=1
+	BooleanTable r
 WHERE
-	((1=1)) = ((r_1.Value4 + 18) > (t1.COUNT_1 + r_1.Value5) AND r_1.Value4 IS NOT NULL AND NOT (t1.COUNT_1 IS NULL OR r_1.Value5 IS NULL))
+	((1=1)) = (CASE
+		WHEN (r.Value4 + 18) > ((
+			SELECT
+				COUNT(*)
+			FROM
+				BooleanTable r_1
+			WHERE
+				r_1.Value1 = 1
+		) + r.Value5)
+			THEN true
+		ELSE false
+	END)
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -904,23 +906,26 @@ BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
-	r_1.Id,
-	r_1.Value1,
-	r_1.Value2,
-	r_1.Value4,
-	r_1.Value5
+	r.Id,
+	r.Value1,
+	r.Value2,
+	r.Value4,
+	r.Value5
 FROM
-	BooleanTable r_1
-		LEFT JOIN (
-			SELECT
-				COUNT(*) as COUNT_1
-			FROM
-				BooleanTable r
-			WHERE
-				r.Value1 = 1
-		) t1 ON 1=1
+	BooleanTable r
 WHERE
-	((1=1)) = ((r_1.Value4 + 18) <= (t1.COUNT_1 + r_1.Value5) AND r_1.Value4 IS NOT NULL AND NOT (t1.COUNT_1 IS NULL OR r_1.Value5 IS NULL))
+	((1=1)) = (CASE
+		WHEN (r.Value4 + 18) <= ((
+			SELECT
+				COUNT(*)
+			FROM
+				BooleanTable r_1
+			WHERE
+				r_1.Value1 = 1
+		) + r.Value5)
+			THEN true
+		ELSE false
+	END)
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -938,23 +943,26 @@ BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
-	r_1.Id,
-	r_1.Value1,
-	r_1.Value2,
-	r_1.Value4,
-	r_1.Value5
+	r.Id,
+	r.Value1,
+	r.Value2,
+	r.Value4,
+	r.Value5
 FROM
-	BooleanTable r_1
-		LEFT JOIN (
-			SELECT
-				COUNT(*) as COUNT_1
-			FROM
-				BooleanTable r
-			WHERE
-				r.Value1 = 1
-		) t1 ON 1=1
+	BooleanTable r
 WHERE
-	((1=1)) = ((r_1.Value4 + 18) < (t1.COUNT_1 + r_1.Value5) AND r_1.Value4 IS NOT NULL AND NOT (t1.COUNT_1 IS NULL OR r_1.Value5 IS NULL))
+	((1=1)) = (CASE
+		WHEN (r.Value4 + 18) < ((
+			SELECT
+				COUNT(*)
+			FROM
+				BooleanTable r_1
+			WHERE
+				r_1.Value1 = 1
+		) + r.Value5)
+			THEN true
+		ELSE false
+	END)
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -972,23 +980,26 @@ BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
-	r_1.Id,
-	r_1.Value1,
-	r_1.Value2,
-	r_1.Value4,
-	r_1.Value5
+	r.Id,
+	r.Value1,
+	r.Value2,
+	r.Value4,
+	r.Value5
 FROM
-	BooleanTable r_1
-		LEFT JOIN (
-			SELECT
-				COUNT(*) as COUNT_1
-			FROM
-				BooleanTable r
-			WHERE
-				r.Value1 = 1
-		) t1 ON 1=1
+	BooleanTable r
 WHERE
-	((1=1)) = ((r_1.Value2 + 18) >= (t1.COUNT_1 + r_1.Value5) AND NOT (t1.COUNT_1 IS NULL OR r_1.Value5 IS NULL))
+	((1=1)) = (CASE
+		WHEN (r.Value2 + 18) >= ((
+			SELECT
+				COUNT(*)
+			FROM
+				BooleanTable r_1
+			WHERE
+				r_1.Value1 = 1
+		) + r.Value5)
+			THEN true
+		ELSE false
+	END)
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -1006,23 +1017,26 @@ BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
-	r_1.Id,
-	r_1.Value1,
-	r_1.Value2,
-	r_1.Value4,
-	r_1.Value5
+	r.Id,
+	r.Value1,
+	r.Value2,
+	r.Value4,
+	r.Value5
 FROM
-	BooleanTable r_1
-		LEFT JOIN (
-			SELECT
-				COUNT(*) as COUNT_1
-			FROM
-				BooleanTable r
-			WHERE
-				r.Value1 = 1
-		) t1 ON 1=1
+	BooleanTable r
 WHERE
-	((1=1)) = ((r_1.Value2 + 18) > (t1.COUNT_1 + r_1.Value5) AND NOT (t1.COUNT_1 IS NULL OR r_1.Value5 IS NULL))
+	((1=1)) = (CASE
+		WHEN (r.Value2 + 18) > ((
+			SELECT
+				COUNT(*)
+			FROM
+				BooleanTable r_1
+			WHERE
+				r_1.Value1 = 1
+		) + r.Value5)
+			THEN true
+		ELSE false
+	END)
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -1040,23 +1054,26 @@ BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
-	r_1.Id,
-	r_1.Value1,
-	r_1.Value2,
-	r_1.Value4,
-	r_1.Value5
+	r.Id,
+	r.Value1,
+	r.Value2,
+	r.Value4,
+	r.Value5
 FROM
-	BooleanTable r_1
-		LEFT JOIN (
-			SELECT
-				COUNT(*) as COUNT_1
-			FROM
-				BooleanTable r
-			WHERE
-				r.Value1 = 1
-		) t1 ON 1=1
+	BooleanTable r
 WHERE
-	((1=1)) = ((r_1.Value2 + 18) <= (t1.COUNT_1 + r_1.Value5) AND NOT (t1.COUNT_1 IS NULL OR r_1.Value5 IS NULL))
+	((1=1)) = (CASE
+		WHEN (r.Value2 + 18) <= ((
+			SELECT
+				COUNT(*)
+			FROM
+				BooleanTable r_1
+			WHERE
+				r_1.Value1 = 1
+		) + r.Value5)
+			THEN true
+		ELSE false
+	END)
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -1074,23 +1091,26 @@ BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
-	r_1.Id,
-	r_1.Value1,
-	r_1.Value2,
-	r_1.Value4,
-	r_1.Value5
+	r.Id,
+	r.Value1,
+	r.Value2,
+	r.Value4,
+	r.Value5
 FROM
-	BooleanTable r_1
-		LEFT JOIN (
-			SELECT
-				COUNT(*) as COUNT_1
-			FROM
-				BooleanTable r
-			WHERE
-				r.Value1 = 1
-		) t1 ON 1=1
+	BooleanTable r
 WHERE
-	((1=1)) = ((r_1.Value2 + 18) < (t1.COUNT_1 + r_1.Value5) AND NOT (t1.COUNT_1 IS NULL OR r_1.Value5 IS NULL))
+	((1=1)) = (CASE
+		WHEN (r.Value2 + 18) < ((
+			SELECT
+				COUNT(*)
+			FROM
+				BooleanTable r_1
+			WHERE
+				r_1.Value1 = 1
+		) + r.Value5)
+			THEN true
+		ELSE false
+	END)
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
