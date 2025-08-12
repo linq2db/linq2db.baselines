@@ -21,8 +21,8 @@ FROM
 			CAST(HEXTORAW('27FE8A0B1C482E44B8CF729DDFEECE30') AS Raw(16)) as "GuidN",
 			CAST('ENUM1_VALUE' AS VarChar(11)) as "Enum",
 			CAST('ENUM2_VALUE' AS VarChar(11)) as "EnumN",
-			CAST(1 AS Char(1)) as "Bool",
-			CAST(0 AS Char(1)) as "BoolN"
+			CAST(1 AS NUMBER(1)) as "Bool",
+			CAST(0 AS NUMBER(1)) as "BoolN"
 		FROM
 			"Issue3360Table1" r
 		WHERE
