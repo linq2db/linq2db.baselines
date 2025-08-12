@@ -7,12 +7,12 @@ SELECT
 FROM
 	"WhereWithBool" t
 WHERE
-	(
+	((
 		SELECT
 			x."BoolValue"
 		FROM
 			"WhereWithBool" x
 		WHERE
 			x."Id" = 1
-	)
+	))
 
