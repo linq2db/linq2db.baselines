@@ -86,7 +86,7 @@ SELECT
 FROM
 	"BooleanTable" r
 WHERE
-	(Coalesce(r."BooleanN", (r."Id"::decimal % 2)::decimal = 1))
+	Coalesce(r."BooleanN", (r."Id"::decimal % 2)::decimal = 1)
 
 BeforeExecute
 -- PostgreSQL.15 PostgreSQL
