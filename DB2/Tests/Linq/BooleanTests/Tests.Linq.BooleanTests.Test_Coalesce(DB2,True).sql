@@ -82,7 +82,7 @@ SELECT
 FROM
 	"BooleanTable" "r"
 WHERE
-	(Coalesce("r"."BooleanN", Mod("r"."Id", 2) = 1))
+	Coalesce("r"."BooleanN", Mod("r"."Id", 2) = 1)
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
