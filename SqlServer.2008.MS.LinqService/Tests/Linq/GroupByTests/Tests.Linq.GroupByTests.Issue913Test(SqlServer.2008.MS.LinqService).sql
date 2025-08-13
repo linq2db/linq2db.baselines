@@ -1,0 +1,19 @@
+﻿BeforeExecute
+-- SqlServer.2008.MS SqlServer.2008
+
+SELECT
+	[g_2].[cond],
+	COUNT(*)
+FROM
+	(
+		SELECT
+			CASE
+				WHEN [g_1].[TradingStatus] = N'D' THEN 1
+				ELSE 0
+			END as [cond]
+		FROM
+			[Issue913Test] [g_1]
+	) [g_2]
+GROUP BY
+	[g_2].[cond]
+
