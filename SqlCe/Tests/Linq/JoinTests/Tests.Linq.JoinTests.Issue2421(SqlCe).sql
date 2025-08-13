@@ -5,7 +5,7 @@ BeforeExecute
 
 SELECT
 	[m_1].[SectorId],
-	[a_User].[UserId] as [Detail]
+	[a_User].[UserId]
 FROM
 	[SectorDTO] [m_1]
 		INNER JOIN [UPS] [d] ON [m_1].[SectorId] = [d].[SectorId]

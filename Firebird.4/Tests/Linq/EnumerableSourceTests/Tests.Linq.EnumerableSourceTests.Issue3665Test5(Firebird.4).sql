@@ -6,13 +6,13 @@ SELECT
 FROM
 	"Person" "x"
 		CROSS JOIN (
-			SELECT 'M' AS "item" FROM rdb$database
+			SELECT CAST('M' AS CHAR(1)) AS "item" FROM rdb$database
 			UNION ALL
-			SELECT 'F' FROM rdb$database
+			SELECT CAST('F' AS CHAR(1)) FROM rdb$database
 			UNION ALL
-			SELECT 'U' FROM rdb$database
+			SELECT CAST('U' AS CHAR(1)) FROM rdb$database
 			UNION ALL
-			SELECT 'O' FROM rdb$database) "y"
+			SELECT CAST('O' AS CHAR(1)) FROM rdb$database) "y"
 
 BeforeExecute
 -- Firebird.4 Firebird4

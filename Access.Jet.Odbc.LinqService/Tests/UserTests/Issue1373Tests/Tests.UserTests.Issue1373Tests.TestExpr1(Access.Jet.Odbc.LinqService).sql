@@ -28,8 +28,6 @@ VALUES
 
 BeforeExecute
 -- Access.Jet.Odbc AccessODBC
-DECLARE @Field1 NVarChar(4) -- String
-SET     @Field1 = 'test'
 
 INSERT INTO [Issue1373Tests]
 (
@@ -39,7 +37,7 @@ INSERT INTO [Issue1373Tests]
 VALUES
 (
 	3,
-	?
+	'test'
 )
 
 BeforeExecute

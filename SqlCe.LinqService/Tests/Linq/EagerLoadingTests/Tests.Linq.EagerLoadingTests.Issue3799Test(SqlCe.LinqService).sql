@@ -3,7 +3,7 @@
 
 SELECT
 	[m_1].[Children],
-	[d].[Name] as [Detail]
+	[d].[Name]
 FROM
 	(
 		SELECT DISTINCT

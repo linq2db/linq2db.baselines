@@ -2,8 +2,8 @@
 -- Access.Ace.Odbc AccessODBC
 DECLARE @p1 NVarChar(1) -- String
 SET     @p1 = 'A'
-DECLARE @Value Int -- Int32
-SET     @Value = 1
+DECLARE @p2 Int -- Int32
+SET     @p2 = 1
 
 SELECT
 	[x].[FirstName]
