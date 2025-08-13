@@ -1,0 +1,39 @@
+﻿BeforeExecute
+-- ClickHouse.Driver ClickHouse
+
+DROP TABLE IF EXISTS TempTable
+
+BeforeExecute
+-- ClickHouse.Driver ClickHouse
+
+SELECT
+	p.ParentID
+FROM
+	Parent p
+
+BeforeExecute
+-- ClickHouse.Driver ClickHouse
+
+CREATE TABLE IF NOT EXISTS TempTable
+(
+	ID Int32
+)
+ENGINE = Memory()
+
+BeforeExecute
+INSERT ASYNC BULK TempTable(ID)
+
+BeforeExecute
+-- ClickHouse.Driver ClickHouse
+
+SELECT
+	t.ID
+FROM
+	Parent p
+		INNER JOIN TempTable t ON p.ParentID = t.ID
+
+BeforeExecute
+-- ClickHouse.Driver ClickHouse
+
+DROP TABLE IF EXISTS TempTable
+

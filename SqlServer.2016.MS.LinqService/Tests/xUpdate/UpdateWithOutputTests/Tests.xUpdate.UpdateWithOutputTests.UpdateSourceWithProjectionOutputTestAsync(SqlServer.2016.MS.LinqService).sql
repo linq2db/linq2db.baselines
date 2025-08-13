@@ -1,0 +1,15 @@
+﻿BeforeExecute
+-- SqlServer.2016.MS SqlServer.2016 (asynchronously)
+
+UPDATE
+	[TableWithData]
+SET
+	[Id] = [TableWithData].[Id],
+	[Value] = [TableWithData].[Value] + 1,
+	[ValueStr] = [TableWithData].[ValueStr] + N'Upd'
+OUTPUT
+	DELETED.[Value],
+	INSERTED.[Value]
+WHERE
+	[TableWithData].[Id] > 3
+
