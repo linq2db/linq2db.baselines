@@ -1,0 +1,6 @@
+﻿BeforeExecute
+-- SqlServer.2022.MS SqlServer.2022
+
+SELECT
+	DATENAME(Month, DATETIMEOFFSETFROMPARTS(2022, 3, 22, 0, 0, 0, 0, 0, 0, 7))
+
