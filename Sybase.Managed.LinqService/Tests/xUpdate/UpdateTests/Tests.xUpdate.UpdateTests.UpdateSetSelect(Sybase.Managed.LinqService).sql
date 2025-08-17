@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Sybase.Managed Sybase
+-- Sybase.Managed Sybase (asynchronously)
 
 DELETE FROM [Parent]
 FROM
@@ -8,7 +8,7 @@ WHERE
 	[t1].[ParentID] > 1000
 
 BeforeExecute
--- Sybase.Managed Sybase
+-- Sybase.Managed Sybase (asynchronously)
 
 UPDATE
 	[Parent]
@@ -38,7 +38,7 @@ WHERE
 	)
 
 BeforeExecute
--- Sybase.Managed Sybase
+-- Sybase.Managed Sybase (asynchronously)
 DECLARE @ParentID Integer -- Int32
 SET     @ParentID = 1
 

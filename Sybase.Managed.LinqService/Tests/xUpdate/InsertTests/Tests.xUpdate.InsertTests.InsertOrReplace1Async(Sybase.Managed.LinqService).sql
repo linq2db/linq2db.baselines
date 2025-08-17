@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Sybase.Managed Sybase
+-- Sybase.Managed Sybase (asynchronously)
 DECLARE @FirstName UniVarChar(4) -- String
 SET     @FirstName = 'John'
 DECLARE @LastName UniVarChar(7) -- String

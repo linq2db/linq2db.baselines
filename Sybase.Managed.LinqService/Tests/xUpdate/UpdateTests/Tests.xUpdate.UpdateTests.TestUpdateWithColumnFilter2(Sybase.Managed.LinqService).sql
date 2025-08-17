@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Sybase.Managed Sybase
+-- Sybase.Managed Sybase (asynchronously)
 DECLARE @FirstName UniVarChar(18) -- String
 SET     @FirstName = 'UpdateColumnFilter'
 DECLARE @LastName UniVarChar(8) -- String
@@ -25,7 +25,7 @@ VALUES
 )
 
 BeforeExecute
--- Sybase.Managed Sybase
+-- Sybase.Managed Sybase (asynchronously)
 DECLARE @FirstName UniVarChar(18) -- String
 SET     @FirstName = 'UpdateColumnFilter'
 
@@ -41,7 +41,7 @@ WHERE
 	[x].[FirstName] = @FirstName
 
 BeforeExecute
--- Sybase.Managed Sybase
+-- Sybase.Managed Sybase (asynchronously)
 DECLARE @FirstName UniVarChar(25) -- String
 SET     @FirstName = 'UpdateColumnFilterUpdated'
 DECLARE @ID Integer -- Int32
@@ -55,7 +55,7 @@ WHERE
 	[Person].[PersonID] = @ID
 
 BeforeExecute
--- Sybase.Managed Sybase
+-- Sybase.Managed Sybase (asynchronously)
 DECLARE @ID Integer -- Int32
 SET     @ID = 5
 
@@ -71,7 +71,7 @@ WHERE
 	[x].[PersonID] = @ID
 
 BeforeExecute
--- Sybase.Managed Sybase
+-- Sybase.Managed Sybase (asynchronously)
 DECLARE @FirstName UniVarChar(25) -- String
 SET     @FirstName = 'UpdateColumnFilterUpdated'
 DECLARE @LastName UniVarChar(25) -- String
@@ -94,7 +94,7 @@ WHERE
 	[Person].[PersonID] = @ID
 
 BeforeExecute
--- Sybase.Managed Sybase
+-- Sybase.Managed Sybase (asynchronously)
 DECLARE @ID Integer -- Int32
 SET     @ID = 5
 

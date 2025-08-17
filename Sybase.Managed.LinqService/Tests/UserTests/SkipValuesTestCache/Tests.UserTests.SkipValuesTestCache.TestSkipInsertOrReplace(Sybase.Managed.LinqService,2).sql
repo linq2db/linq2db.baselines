@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Sybase.Managed Sybase
+-- Sybase.Managed Sybase (asynchronously)
 DECLARE @Name UniVarChar(4) -- String
 SET     @Name = 'John'
 DECLARE @Age Integer -- Int32
@@ -38,7 +38,7 @@ BEGIN
 END
 
 BeforeExecute
--- Sybase.Managed Sybase
+-- Sybase.Managed Sybase (asynchronously)
 
 SELECT TOP 1
 	[t].[Id],
@@ -50,7 +50,7 @@ WHERE
 	[t].[Id] = 1
 
 BeforeExecute
--- Sybase.Managed Sybase
+-- Sybase.Managed Sybase (asynchronously)
 DECLARE @Name UniVarChar(4) -- String
 SET     @Name = 'John'
 DECLARE @Age Integer -- Int32
@@ -89,7 +89,7 @@ BEGIN
 END
 
 BeforeExecute
--- Sybase.Managed Sybase
+-- Sybase.Managed Sybase (asynchronously)
 
 SELECT TOP 1
 	[t].[Id],

@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Sybase.Managed Sybase
+-- Sybase.Managed Sybase (asynchronously)
 
 SELECT DISTINCT
 	[x].[ParentID],
@@ -11,7 +11,7 @@ WHERE
 	[x].[ChildID] > 30
 
 BeforeExecute
--- Sybase.Managed Sybase
+-- Sybase.Managed Sybase (asynchronously)
 
 SELECT DISTINCT
 	[x].[ParentID],

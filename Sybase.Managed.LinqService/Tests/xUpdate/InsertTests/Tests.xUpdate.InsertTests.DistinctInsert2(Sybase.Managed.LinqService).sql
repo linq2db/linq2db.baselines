@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Sybase.Managed Sybase
+-- Sybase.Managed Sybase (asynchronously)
 
 DELETE FROM [LinqDataTypes]
 FROM
@@ -8,7 +8,7 @@ WHERE
 	[c_1].[ID] > 1000
 
 BeforeExecute
--- Sybase.Managed Sybase
+-- Sybase.Managed Sybase (asynchronously)
 
 INSERT INTO [LinqDataTypes]
 (
@@ -29,7 +29,7 @@ FROM
 	) [t2]
 
 BeforeExecute
--- Sybase.Managed Sybase
+-- Sybase.Managed Sybase (asynchronously)
 
 DELETE FROM [LinqDataTypes]
 FROM

@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Sybase.Managed Sybase
+-- Sybase.Managed Sybase (asynchronously)
 
 SELECT
 	[t1].[Value]
@@ -9,7 +9,7 @@ ORDER BY
 	[t1].[Value]
 
 BeforeExecute
--- Sybase.Managed Sybase
+-- Sybase.Managed Sybase (asynchronously)
 
 SELECT
 	[t1].[Value]

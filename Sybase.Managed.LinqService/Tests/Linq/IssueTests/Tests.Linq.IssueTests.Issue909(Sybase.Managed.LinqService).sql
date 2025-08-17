@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Sybase.Managed Sybase
+-- Sybase.Managed Sybase (asynchronously)
 
 SELECT
 	[p].[ParentID],
@@ -10,7 +10,7 @@ WHERE
 	([p].[Value1] NOT IN (1, 2, 3) OR [p].[Value1] IS NULL)
 
 BeforeExecute
--- Sybase.Managed Sybase
+-- Sybase.Managed Sybase (asynchronously)
 
 SELECT
 	[t1].[ParentID],

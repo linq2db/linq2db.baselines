@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Sybase.Managed Sybase
+-- Sybase.Managed Sybase (asynchronously)
 DECLARE @value BigInt -- Int64
 SET     @value = NULL
 
@@ -16,7 +16,7 @@ FROM
 	) [t1]
 
 BeforeExecute
--- Sybase.Managed Sybase
+-- Sybase.Managed Sybase (asynchronously)
 DECLARE @value BigInt -- Int64
 SET     @value = 2147483648
 

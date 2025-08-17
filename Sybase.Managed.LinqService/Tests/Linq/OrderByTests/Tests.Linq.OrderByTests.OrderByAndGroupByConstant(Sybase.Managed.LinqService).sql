@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Sybase.Managed Sybase
+-- Sybase.Managed Sybase (asynchronously)
 
 SELECT TOP 1
 	COUNT(*),
@@ -9,7 +9,7 @@ FROM
 	[Child] [g_1]
 
 BeforeExecute
--- Sybase.Managed Sybase
+-- Sybase.Managed Sybase (asynchronously)
 
 SELECT
 	[t1].[ParentID],

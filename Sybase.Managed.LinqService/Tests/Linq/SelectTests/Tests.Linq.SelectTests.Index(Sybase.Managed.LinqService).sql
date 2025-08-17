@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Sybase.Managed Sybase
+-- Sybase.Managed Sybase (asynchronously)
 
 SELECT
 	[a_Parent].[ParentID],
@@ -13,7 +13,7 @@ ORDER BY
 	[m_1].[ChildID] DESC
 
 BeforeExecute
--- Sybase.Managed Sybase
+-- Sybase.Managed Sybase (asynchronously)
 
 SELECT
 	[a_Parent].[ParentID],

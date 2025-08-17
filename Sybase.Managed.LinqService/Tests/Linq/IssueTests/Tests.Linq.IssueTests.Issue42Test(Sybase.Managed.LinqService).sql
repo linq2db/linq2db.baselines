@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Sybase.Managed Sybase
+-- Sybase.Managed Sybase (asynchronously)
 
 SELECT TOP 1
 	[r].[ID],
@@ -18,7 +18,7 @@ WHERE
 	[r].[ID] = 1
 
 BeforeExecute
--- Sybase.Managed Sybase
+-- Sybase.Managed Sybase (asynchronously)
 
 SELECT TOP 1
 	[r].[ID],
@@ -37,7 +37,7 @@ WHERE
 	[r].[ID] = 1
 
 BeforeExecute
--- Sybase.Managed Sybase
+-- Sybase.Managed Sybase (asynchronously)
 DECLARE @MoneyValue Decimal(3, 2)
 SET     @MoneyValue = 1.11
 DECLARE @DateTimeValue DateTime
@@ -75,7 +75,7 @@ WHERE
 	[LinqDataTypes].[ID] = @ID
 
 BeforeExecute
--- Sybase.Managed Sybase
+-- Sybase.Managed Sybase (asynchronously)
 DECLARE @ID Integer -- Int32
 SET     @ID = 1
 
@@ -96,7 +96,7 @@ WHERE
 	[r].[ID] = @ID
 
 BeforeExecute
--- Sybase.Managed Sybase
+-- Sybase.Managed Sybase (asynchronously)
 DECLARE @MoneyValue Decimal(3, 2)
 SET     @MoneyValue = 1.11
 DECLARE @DateTimeValue DateTime
@@ -134,7 +134,7 @@ WHERE
 	[LinqDataTypes].[ID] = @ID
 
 BeforeExecute
--- Sybase.Managed Sybase
+-- Sybase.Managed Sybase (asynchronously)
 
 SELECT TOP 1
 	[r].[ID],

@@ -28,7 +28,7 @@ FROM
 	[Parent] [p]
 
 BeforeExecute
--- Sybase.Managed Sybase
+-- Sybase.Managed Sybase (asynchronously)
 
 SELECT
 	[t].[ID]

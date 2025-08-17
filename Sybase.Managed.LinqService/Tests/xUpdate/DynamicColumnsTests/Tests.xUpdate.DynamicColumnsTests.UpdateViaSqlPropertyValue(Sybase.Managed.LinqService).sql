@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Sybase.Managed Sybase
+-- Sybase.Managed Sybase (asynchronously)
 DECLARE @id Integer -- Int32
 SET     @id = 1001
 
@@ -15,7 +15,7 @@ VALUES
 )
 
 BeforeExecute
--- Sybase.Managed Sybase
+-- Sybase.Managed Sybase (asynchronously)
 DECLARE @id Integer -- Int32
 SET     @id = 1001
 
@@ -27,7 +27,7 @@ WHERE
 	[c_1].[ChildID] = @id
 
 BeforeExecute
--- Sybase.Managed Sybase
+-- Sybase.Managed Sybase (asynchronously)
 DECLARE @ChildID Integer -- Int32
 SET     @ChildID = 5000
 DECLARE @id Integer -- Int32
@@ -52,7 +52,7 @@ WHERE
 	)
 
 BeforeExecute
--- Sybase.Managed Sybase
+-- Sybase.Managed Sybase (asynchronously)
 
 SELECT
 	COUNT(*)

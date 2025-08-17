@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Sybase.Managed Sybase
+-- Sybase.Managed Sybase (asynchronously)
 DECLARE @value Double
 SET     @value = 0
 
@@ -16,7 +16,7 @@ FROM
 	) [t1]
 
 BeforeExecute
--- Sybase.Managed Sybase
+-- Sybase.Managed Sybase (asynchronously)
 DECLARE @value Double
 SET     @value = 3147483648
 

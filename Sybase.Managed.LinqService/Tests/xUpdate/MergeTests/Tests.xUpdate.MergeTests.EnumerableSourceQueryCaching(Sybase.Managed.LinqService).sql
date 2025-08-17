@@ -1,12 +1,12 @@
 ﻿BeforeExecute
--- Sybase.Managed Sybase
+-- Sybase.Managed Sybase (asynchronously)
 
 DELETE FROM [TestMerge1]
 FROM
 	[TestMerge1] [t1]
 
 BeforeExecute
--- Sybase.Managed Sybase
+-- Sybase.Managed Sybase (asynchronously)
 
 MERGE INTO [TestMerge1] [Target]
 USING (
@@ -36,7 +36,7 @@ VALUES
 )
 
 BeforeExecute
--- Sybase.Managed Sybase
+-- Sybase.Managed Sybase (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -51,14 +51,14 @@ ORDER BY
 	[t1].[Id]
 
 BeforeExecute
--- Sybase.Managed Sybase
+-- Sybase.Managed Sybase (asynchronously)
 
 DELETE FROM [TestMerge1]
 FROM
 	[TestMerge1] [t1]
 
 BeforeExecute
--- Sybase.Managed Sybase
+-- Sybase.Managed Sybase (asynchronously)
 
 MERGE INTO [TestMerge1] [Target]
 USING (
@@ -88,7 +88,7 @@ VALUES
 )
 
 BeforeExecute
--- Sybase.Managed Sybase
+-- Sybase.Managed Sybase (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -103,14 +103,14 @@ ORDER BY
 	[t1].[Id]
 
 BeforeExecute
--- Sybase.Managed Sybase
+-- Sybase.Managed Sybase (asynchronously)
 
 DELETE FROM [TestMerge1]
 FROM
 	[TestMerge1] [t1]
 
 BeforeExecute
--- Sybase.Managed Sybase
+-- Sybase.Managed Sybase (asynchronously)
 
 MERGE INTO [TestMerge1] [Target]
 USING (
@@ -142,7 +142,7 @@ VALUES
 )
 
 BeforeExecute
--- Sybase.Managed Sybase
+-- Sybase.Managed Sybase (asynchronously)
 
 SELECT
 	[t1].[Id],

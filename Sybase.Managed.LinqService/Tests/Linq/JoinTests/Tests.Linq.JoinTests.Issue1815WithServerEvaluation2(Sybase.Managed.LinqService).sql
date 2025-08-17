@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Sybase.Managed Sybase
+-- Sybase.Managed Sybase (asynchronously)
 
 SELECT TOP 2
 	[t1].[InId],
@@ -18,7 +18,7 @@ WHERE
 	[t1].[InId] = 1
 
 BeforeExecute
--- Sybase.Managed Sybase
+-- Sybase.Managed Sybase (asynchronously)
 
 SELECT TOP 2
 	[t1].[InId],

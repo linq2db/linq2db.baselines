@@ -1,11 +1,11 @@
 ﻿BeforeExecute
--- Sybase.Managed Sybase
+-- Sybase.Managed Sybase (asynchronously)
 
 IF (OBJECT_ID(N'TestTrun') IS NOT NULL)
 	DROP TABLE [TestTrun]
 
 BeforeExecute
--- Sybase.Managed Sybase
+-- Sybase.Managed Sybase (asynchronously)
 
 CREATE TABLE [TestTrun]
 (
@@ -16,12 +16,12 @@ CREATE TABLE [TestTrun]
 )
 
 BeforeExecute
--- Sybase.Managed Sybase
+-- Sybase.Managed Sybase (asynchronously)
 
 TRUNCATE TABLE [TestTrun]
 
 BeforeExecute
--- Sybase.Managed Sybase
+-- Sybase.Managed Sybase (asynchronously)
 
 DROP TABLE [TestTrun]
 

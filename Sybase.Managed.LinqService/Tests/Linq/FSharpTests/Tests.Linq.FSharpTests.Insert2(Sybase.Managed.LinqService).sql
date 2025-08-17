@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Sybase.Managed Sybase
+-- Sybase.Managed Sybase (asynchronously)
 
 SELECT
 	MAX([t1].[PersonID])
@@ -7,7 +7,7 @@ FROM
 	[Person] [t1]
 
 BeforeExecute
--- Sybase.Managed Sybase
+-- Sybase.Managed Sybase (asynchronously)
 DECLARE @Gender UniVarChar(1) -- String
 SET     @Gender = 'M'
 DECLARE @Name_FirstName UniVarChar(2) -- String
@@ -33,7 +33,7 @@ VALUES
 )
 
 BeforeExecute
--- Sybase.Managed Sybase
+-- Sybase.Managed Sybase (asynchronously)
 
 SELECT TOP 2
 	[p].[PersonID],
@@ -47,7 +47,7 @@ WHERE
 	[p].[PersonID] > 4
 
 BeforeExecute
--- Sybase.Managed Sybase
+-- Sybase.Managed Sybase (asynchronously)
 
 DELETE FROM [Person]
 FROM

@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Sybase.Managed Sybase
+-- Sybase.Managed Sybase (asynchronously)
 
 SELECT TOP 2
 	[p].[FirstName]
@@ -9,7 +9,7 @@ WHERE
 	[p].[PersonID] = 1
 
 BeforeExecute
--- Sybase.Managed Sybase
+-- Sybase.Managed Sybase (asynchronously)
 DECLARE @nameToCheck UniVarChar(4) -- String
 SET     @nameToCheck = 'Joh%'
 
@@ -21,7 +21,7 @@ WHERE
 	[p].[FirstName] LIKE @nameToCheck ESCAPE '~' AND [p].[PersonID] = 1
 
 BeforeExecute
--- Sybase.Managed Sybase
+-- Sybase.Managed Sybase (asynchronously)
 DECLARE @nameToCheck UniVarChar(4) -- String
 SET     @nameToCheck = 'Joh%'
 
@@ -34,7 +34,7 @@ WHERE
 	[p].[PersonID] = 1
 
 BeforeExecute
--- Sybase.Managed Sybase
+-- Sybase.Managed Sybase (asynchronously)
 DECLARE @nameToCheck UniVarChar(4) -- String
 SET     @nameToCheck = 'JOH%'
 
@@ -46,7 +46,7 @@ WHERE
 	[p].[FirstName] LIKE @nameToCheck ESCAPE '~' AND [p].[PersonID] = 1
 
 BeforeExecute
--- Sybase.Managed Sybase
+-- Sybase.Managed Sybase (asynchronously)
 DECLARE @nameToCheck UniVarChar(4) -- String
 SET     @nameToCheck = 'JOH%'
 

@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Sybase.Managed Sybase
+-- Sybase.Managed Sybase (asynchronously)
 
 DELETE FROM [Parent]
 FROM
@@ -8,7 +8,7 @@ WHERE
 	[c_1].[ParentID] >= 1000
 
 BeforeExecute
--- Sybase.Managed Sybase
+-- Sybase.Managed Sybase (asynchronously)
 DECLARE @ParentID Integer -- Int32
 SET     @ParentID = 1000
 DECLARE @Value1 Integer -- Int32
@@ -26,7 +26,7 @@ VALUES
 )
 
 BeforeExecute
--- Sybase.Managed Sybase
+-- Sybase.Managed Sybase (asynchronously)
 DECLARE @ParentID Integer -- Int32
 SET     @ParentID = 1001
 DECLARE @Value1 Integer -- Int32
@@ -44,7 +44,7 @@ VALUES
 )
 
 BeforeExecute
--- Sybase.Managed Sybase
+-- Sybase.Managed Sybase (asynchronously)
 DECLARE @ParentID Integer -- Int32
 SET     @ParentID = 1002
 DECLARE @Value1 Integer -- Int32
@@ -62,7 +62,7 @@ VALUES
 )
 
 BeforeExecute
--- Sybase.Managed Sybase
+-- Sybase.Managed Sybase (asynchronously)
 DECLARE @ParentID Integer -- Int32
 SET     @ParentID = 1003
 DECLARE @Value1 Integer -- Int32
@@ -80,7 +80,7 @@ VALUES
 )
 
 BeforeExecute
--- Sybase.Managed Sybase
+-- Sybase.Managed Sybase (asynchronously)
 DECLARE @ParentID Integer -- Int32
 SET     @ParentID = 1004
 DECLARE @Value1 Integer -- Int32
@@ -98,7 +98,7 @@ VALUES
 )
 
 BeforeExecute
--- Sybase.Managed Sybase
+-- Sybase.Managed Sybase (asynchronously)
 DECLARE @ParentID Integer -- Int32
 SET     @ParentID = 1005
 DECLARE @Value1 Integer -- Int32
@@ -116,7 +116,7 @@ VALUES
 )
 
 BeforeExecute
--- Sybase.Managed Sybase
+-- Sybase.Managed Sybase (asynchronously)
 DECLARE @ParentID Integer -- Int32
 SET     @ParentID = 1006
 DECLARE @Value1 Integer -- Int32
@@ -134,7 +134,7 @@ VALUES
 )
 
 BeforeExecute
--- Sybase.Managed Sybase
+-- Sybase.Managed Sybase (asynchronously)
 DECLARE @ParentID Integer -- Int32
 SET     @ParentID = 1007
 DECLARE @Value1 Integer -- Int32
@@ -152,7 +152,7 @@ VALUES
 )
 
 BeforeExecute
--- Sybase.Managed Sybase
+-- Sybase.Managed Sybase (asynchronously)
 DECLARE @ParentID Integer -- Int32
 SET     @ParentID = 1008
 DECLARE @Value1 Integer -- Int32
@@ -170,7 +170,7 @@ VALUES
 )
 
 BeforeExecute
--- Sybase.Managed Sybase
+-- Sybase.Managed Sybase (asynchronously)
 DECLARE @ParentID Integer -- Int32
 SET     @ParentID = 1009
 DECLARE @Value1 Integer -- Int32
@@ -188,7 +188,7 @@ VALUES
 )
 
 BeforeExecute
--- Sybase.Managed Sybase
+-- Sybase.Managed Sybase (asynchronously)
 
 DELETE FROM [Parent]
 FROM

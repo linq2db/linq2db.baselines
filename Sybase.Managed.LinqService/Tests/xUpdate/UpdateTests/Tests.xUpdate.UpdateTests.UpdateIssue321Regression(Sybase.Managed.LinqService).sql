@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Sybase.Managed Sybase
+-- Sybase.Managed Sybase (asynchronously)
 DECLARE @ID Integer -- Int32
 SET     @ID = 100500
 DECLARE @MoneyValue Decimal(4, 0)
@@ -49,7 +49,7 @@ VALUES
 )
 
 BeforeExecute
--- Sybase.Managed Sybase
+-- Sybase.Managed Sybase (asynchronously)
 DECLARE @value2 Decimal(5, 0)
 SET     @value2 = 13621
 DECLARE @id Integer -- Int32
@@ -63,7 +63,7 @@ WHERE
 	[LinqDataTypes].[ID] = @id
 
 BeforeExecute
--- Sybase.Managed Sybase
+-- Sybase.Managed Sybase (asynchronously)
 DECLARE @id Integer -- Int32
 SET     @id = 100500
 

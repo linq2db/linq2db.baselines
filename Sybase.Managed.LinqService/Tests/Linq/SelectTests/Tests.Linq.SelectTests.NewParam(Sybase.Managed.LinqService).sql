@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Sybase.Managed Sybase
+-- Sybase.Managed Sybase (asynchronously)
 
 SELECT
 	[p].[PersonID],
@@ -8,7 +8,7 @@ FROM
 	[Person] [p]
 
 BeforeExecute
--- Sybase.Managed Sybase
+-- Sybase.Managed Sybase (asynchronously)
 
 SELECT
 	[p].[PersonID],
@@ -17,7 +17,7 @@ FROM
 	[Person] [p]
 
 BeforeExecute
--- Sybase.Managed Sybase
+-- Sybase.Managed Sybase (asynchronously)
 
 SELECT
 	[p].[PersonID],
@@ -26,7 +26,7 @@ FROM
 	[Person] [p]
 
 BeforeExecute
--- Sybase.Managed Sybase
+-- Sybase.Managed Sybase (asynchronously)
 
 SELECT
 	[p].[PersonID],
@@ -35,7 +35,7 @@ FROM
 	[Person] [p]
 
 BeforeExecute
--- Sybase.Managed Sybase
+-- Sybase.Managed Sybase (asynchronously)
 
 SELECT
 	[p].[PersonID],

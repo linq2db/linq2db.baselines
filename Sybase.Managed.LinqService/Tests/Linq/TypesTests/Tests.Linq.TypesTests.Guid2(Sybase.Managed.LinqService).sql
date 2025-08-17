@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Sybase.Managed Sybase
+-- Sybase.Managed Sybase (asynchronously)
 
 SELECT TOP 2
 	[p].[ID],
@@ -16,7 +16,7 @@ WHERE
 	[p].[GuidValue] = '40932fdb-1543-4e4a-ac2c-ca371604fb4b'
 
 BeforeExecute
--- Sybase.Managed Sybase
+-- Sybase.Managed Sybase (asynchronously)
 
 SELECT TOP 2
 	[p].[ID],

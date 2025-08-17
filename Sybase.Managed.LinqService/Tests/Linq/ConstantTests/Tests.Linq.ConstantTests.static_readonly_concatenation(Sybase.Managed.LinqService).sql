@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Sybase.Managed Sybase
+-- Sybase.Managed Sybase (asynchronously)
 DECLARE @p UniVarChar(9) -- String
 SET     @p = 'StrValue1'
 
@@ -14,7 +14,7 @@ WHERE
 	[e].[StringValue] + '1' = @p
 
 BeforeExecute
--- Sybase.Managed Sybase
+-- Sybase.Managed Sybase (asynchronously)
 
 SELECT
 	[t1].[Id],

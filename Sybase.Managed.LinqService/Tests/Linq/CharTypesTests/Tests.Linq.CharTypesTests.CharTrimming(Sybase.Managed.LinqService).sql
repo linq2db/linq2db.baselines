@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Sybase.Managed Sybase
+-- Sybase.Managed Sybase (asynchronously)
 
 SELECT
 	MAX([t1].[ID])
@@ -7,7 +7,7 @@ FROM
 	[AllTypes] [t1]
 
 BeforeExecute
--- Sybase.Managed Sybase
+-- Sybase.Managed Sybase (asynchronously)
 DECLARE @NChar UniChar -- StringFixedLength
 SET     @NChar = ' '
 DECLARE @Char UniChar -- StringFixedLength
@@ -25,7 +25,7 @@ VALUES
 )
 
 BeforeExecute
--- Sybase.Managed Sybase
+-- Sybase.Managed Sybase (asynchronously)
 DECLARE @NChar UniChar -- StringFixedLength
 SET     @NChar = '	'
 DECLARE @Char UniChar -- StringFixedLength
@@ -43,7 +43,7 @@ VALUES
 )
 
 BeforeExecute
--- Sybase.Managed Sybase
+-- Sybase.Managed Sybase (asynchronously)
 DECLARE @NChar UniChar -- StringFixedLength
 SET     @NChar = '
 '
@@ -63,7 +63,7 @@ VALUES
 )
 
 BeforeExecute
--- Sybase.Managed Sybase
+-- Sybase.Managed Sybase (asynchronously)
 DECLARE @NChar UniChar -- StringFixedLength
 SET     @NChar = ''
 DECLARE @Char UniChar -- StringFixedLength
@@ -81,7 +81,7 @@ VALUES
 )
 
 BeforeExecute
--- Sybase.Managed Sybase
+-- Sybase.Managed Sybase (asynchronously)
 DECLARE @NChar UniChar -- StringFixedLength
 SET     @NChar = ''
 DECLARE @Char UniChar -- StringFixedLength
@@ -99,7 +99,7 @@ VALUES
 )
 
 BeforeExecute
--- Sybase.Managed Sybase
+-- Sybase.Managed Sybase (asynchronously)
 DECLARE @NChar UniChar -- StringFixedLength
 SET     @NChar = ''
 DECLARE @Char UniChar -- StringFixedLength
@@ -117,7 +117,7 @@ VALUES
 )
 
 BeforeExecute
--- Sybase.Managed Sybase
+-- Sybase.Managed Sybase (asynchronously)
 DECLARE @NChar UniChar -- StringFixedLength
 SET     @NChar = ' '
 DECLARE @Char UniChar -- StringFixedLength
@@ -135,7 +135,7 @@ VALUES
 )
 
 BeforeExecute
--- Sybase.Managed Sybase
+-- Sybase.Managed Sybase (asynchronously)
 DECLARE @NChar UniChar -- StringFixedLength
 SET     @NChar = ' '
 DECLARE @Char UniChar -- StringFixedLength
@@ -153,7 +153,7 @@ VALUES
 )
 
 BeforeExecute
--- Sybase.Managed Sybase
+-- Sybase.Managed Sybase (asynchronously)
 DECLARE @NChar UniChar -- StringFixedLength
 SET     @NChar = ' '
 DECLARE @Char UniChar -- StringFixedLength
@@ -171,7 +171,7 @@ VALUES
 )
 
 BeforeExecute
--- Sybase.Managed Sybase
+-- Sybase.Managed Sybase (asynchronously)
 DECLARE @NChar UniChar -- StringFixedLength
 SET     @NChar = ' '
 DECLARE @Char UniChar -- StringFixedLength
@@ -189,7 +189,7 @@ VALUES
 )
 
 BeforeExecute
--- Sybase.Managed Sybase
+-- Sybase.Managed Sybase (asynchronously)
 DECLARE @NChar UniChar -- StringFixedLength
 SET     @NChar = ' '
 DECLARE @Char UniChar -- StringFixedLength
@@ -207,7 +207,7 @@ VALUES
 )
 
 BeforeExecute
--- Sybase.Managed Sybase
+-- Sybase.Managed Sybase (asynchronously)
 DECLARE @NChar UniChar -- StringFixedLength
 SET     @NChar = ' '
 DECLARE @Char UniChar -- StringFixedLength
@@ -225,7 +225,7 @@ VALUES
 )
 
 BeforeExecute
--- Sybase.Managed Sybase
+-- Sybase.Managed Sybase (asynchronously)
 DECLARE @NChar UniChar -- StringFixedLength
 SET     @NChar = ' '
 DECLARE @Char UniChar -- StringFixedLength
@@ -243,7 +243,7 @@ VALUES
 )
 
 BeforeExecute
--- Sybase.Managed Sybase
+-- Sybase.Managed Sybase (asynchronously)
 DECLARE @NChar UniChar -- StringFixedLength
 SET     @NChar = ' '
 DECLARE @Char UniChar -- StringFixedLength
@@ -261,7 +261,7 @@ VALUES
 )
 
 BeforeExecute
--- Sybase.Managed Sybase
+-- Sybase.Managed Sybase (asynchronously)
 DECLARE @NChar UniChar -- StringFixedLength
 SET     @NChar = ' '
 DECLARE @Char UniChar -- StringFixedLength
@@ -279,7 +279,7 @@ VALUES
 )
 
 BeforeExecute
--- Sybase.Managed Sybase
+-- Sybase.Managed Sybase (asynchronously)
 DECLARE @NChar UniChar -- StringFixedLength
 SET     @NChar = ' '
 DECLARE @Char UniChar -- StringFixedLength
@@ -297,7 +297,7 @@ VALUES
 )
 
 BeforeExecute
--- Sybase.Managed Sybase
+-- Sybase.Managed Sybase (asynchronously)
 DECLARE @NChar UniChar -- StringFixedLength
 SET     @NChar = ' '
 DECLARE @Char UniChar -- StringFixedLength
@@ -315,7 +315,7 @@ VALUES
 )
 
 BeforeExecute
--- Sybase.Managed Sybase
+-- Sybase.Managed Sybase (asynchronously)
 DECLARE @NChar UniChar -- StringFixedLength
 SET     @NChar = ' '
 DECLARE @Char UniChar -- StringFixedLength
@@ -333,7 +333,7 @@ VALUES
 )
 
 BeforeExecute
--- Sybase.Managed Sybase
+-- Sybase.Managed Sybase (asynchronously)
 DECLARE @NChar UniChar -- StringFixedLength
 SET     @NChar = '　'
 DECLARE @Char UniChar -- StringFixedLength
@@ -351,7 +351,7 @@ VALUES
 )
 
 BeforeExecute
--- Sybase.Managed Sybase
+-- Sybase.Managed Sybase (asynchronously)
 DECLARE @NChar UniChar -- StringFixedLength
 SET     @NChar = char(0)
 DECLARE @Char UniChar -- StringFixedLength
@@ -369,7 +369,7 @@ VALUES
 )
 
 BeforeExecute
--- Sybase.Managed Sybase
+-- Sybase.Managed Sybase (asynchronously)
 DECLARE @NChar UniChar -- StringFixedLength
 SET     @NChar = NULL
 DECLARE @Char UniChar -- StringFixedLength
@@ -387,7 +387,7 @@ VALUES
 )
 
 BeforeExecute
--- Sybase.Managed Sybase
+-- Sybase.Managed Sybase (asynchronously)
 DECLARE @lastId Integer -- Int32
 SET     @lastId = 2
 
@@ -403,7 +403,7 @@ ORDER BY
 	[t1].[ID]
 
 BeforeExecute
--- Sybase.Managed Sybase
+-- Sybase.Managed Sybase (asynchronously)
 DECLARE @lastId Integer -- Int32
 SET     @lastId = 2
 

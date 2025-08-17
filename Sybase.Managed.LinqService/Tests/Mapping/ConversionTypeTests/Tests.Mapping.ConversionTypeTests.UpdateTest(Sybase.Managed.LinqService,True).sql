@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Sybase.Managed Sybase
+-- Sybase.Managed Sybase (asynchronously)
 
 UPDATE
 	[TrimTestTable]
@@ -9,7 +9,7 @@ WHERE
 	[TrimTestTable].[ID] = 3
 
 BeforeExecute
--- Sybase.Managed Sybase
+-- Sybase.Managed Sybase (asynchronously)
 
 UPDATE
 	[TrimTestTable]
@@ -19,7 +19,7 @@ WHERE
 	[TrimTestTable].[Data] = '***XXX***'
 
 BeforeExecute
--- Sybase.Managed Sybase
+-- Sybase.Managed Sybase (asynchronously)
 
 UPDATE
 	[TrimTestTable]
@@ -29,7 +29,7 @@ WHERE
 	[TrimTestTable].[Data] = '***HHH***'
 
 BeforeExecute
--- Sybase.Managed Sybase
+-- Sybase.Managed Sybase (asynchronously)
 
 SELECT
 	[r].[ID],
@@ -40,7 +40,7 @@ ORDER BY
 	[r].[ID]
 
 BeforeExecute
--- Sybase.Managed Sybase
+-- Sybase.Managed Sybase (asynchronously)
 
 SELECT
 	[r].[ID],

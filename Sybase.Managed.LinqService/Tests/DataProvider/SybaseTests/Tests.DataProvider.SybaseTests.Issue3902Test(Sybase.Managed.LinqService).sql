@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Sybase.Managed Sybase
+-- Sybase.Managed Sybase (asynchronously)
 DECLARE @TPPSLT_QUOTE_DURATION_MULT Decimal(2, 0)
 SET     @TPPSLT_QUOTE_DURATION_MULT = 10
 DECLARE @TPPSLT_USER_ID UniVarChar(11) -- String
