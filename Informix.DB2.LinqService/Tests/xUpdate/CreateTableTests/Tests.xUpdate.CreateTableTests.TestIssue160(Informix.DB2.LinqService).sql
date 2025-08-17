@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Informix.DB2 Informix
+-- Informix.DB2 Informix (asynchronously)
 
 CREATE TABLE aa
 (
@@ -10,7 +10,7 @@ CREATE TABLE aa
 )
 
 BeforeExecute
--- Informix.DB2 Informix
+-- Informix.DB2 Informix (asynchronously)
 DECLARE @bb Integer(4) -- Int32
 SET     @bb = 99
 DECLARE @cc VarChar(5) -- String
@@ -28,7 +28,7 @@ VALUES
 )
 
 BeforeExecute
--- Informix.DB2 Informix
+-- Informix.DB2 Informix (asynchronously)
 
 SELECT
 	t1.bb,
@@ -37,7 +37,7 @@ FROM
 	aa t1
 
 BeforeExecute
--- Informix.DB2 Informix
+-- Informix.DB2 Informix (asynchronously)
 
 DROP TABLE aa
 

@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Informix.DB2 Informix
+-- Informix.DB2 Informix (asynchronously)
 
 SELECT
 	r.Id,
@@ -18,7 +18,7 @@ ORDER BY
 	r.Id
 
 BeforeExecute
--- Informix.DB2 Informix
+-- Informix.DB2 Informix (asynchronously)
 
 SELECT
 	t1.Id,

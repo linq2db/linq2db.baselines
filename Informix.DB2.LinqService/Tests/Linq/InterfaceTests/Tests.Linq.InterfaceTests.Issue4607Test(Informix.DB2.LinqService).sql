@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Informix.DB2 Informix
+-- Informix.DB2 Informix (asynchronously)
 
 INSERT INTO SomeTable
 (
@@ -13,7 +13,7 @@ VALUES
 )
 
 BeforeExecute
--- Informix.DB2 Informix
+-- Informix.DB2 Informix (asynchronously)
 
 SELECT FIRST 2
 	t1.ClassProp,

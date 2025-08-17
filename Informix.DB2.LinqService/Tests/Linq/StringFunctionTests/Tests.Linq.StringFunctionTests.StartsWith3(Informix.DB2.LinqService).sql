@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Informix.DB2 Informix
+-- Informix.DB2 Informix (asynchronously)
 DECLARE @str VarChar(7) -- String
 SET     @str = 'John123'
 

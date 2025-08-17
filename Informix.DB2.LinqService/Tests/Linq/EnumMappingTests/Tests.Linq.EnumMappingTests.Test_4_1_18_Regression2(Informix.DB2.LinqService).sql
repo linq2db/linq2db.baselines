@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Informix.DB2 Informix
+-- Informix.DB2 Informix (asynchronously)
 DECLARE @p Integer(4) -- Int32
 SET     @p = 102
 
@@ -9,7 +9,7 @@ WHERE
 	LinqDataTypes.ID >= 101 AND LinqDataTypes.ID < @p
 
 BeforeExecute
--- Informix.DB2 Informix
+-- Informix.DB2 Informix (asynchronously)
 
 INSERT INTO LinqDataTypes
 (
@@ -25,7 +25,7 @@ VALUES
 )
 
 BeforeExecute
--- Informix.DB2 Informix
+-- Informix.DB2 Informix (asynchronously)
 
 SELECT
 	t1.BigIntValue IS NOT NULL AND t1.IntValue IS NOT NULL,
@@ -37,7 +37,7 @@ WHERE
 	t1.ID = 101
 
 BeforeExecute
--- Informix.DB2 Informix
+-- Informix.DB2 Informix (asynchronously)
 DECLARE @p Integer(4) -- Int32
 SET     @p = 102
 

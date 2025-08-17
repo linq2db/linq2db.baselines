@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Informix.DB2 Informix
+-- Informix.DB2 Informix (asynchronously)
 DECLARE @VBLocal_SelectedValue Integer(4) -- Int32
 SET     @VBLocal_SelectedValue = 1
 

@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Informix.DB2 Informix
+-- Informix.DB2 Informix (asynchronously)
 
 SELECT
 	arg.Id,
@@ -10,7 +10,7 @@ FROM
 			SELECT 1::Int AS Id, 1::BigInt AS "Value" FROM table(set{1})) arg ON entity.PersonID = arg.Id
 
 BeforeExecute
--- Informix.DB2 Informix
+-- Informix.DB2 Informix (asynchronously)
 
 SELECT
 	arg.Id,

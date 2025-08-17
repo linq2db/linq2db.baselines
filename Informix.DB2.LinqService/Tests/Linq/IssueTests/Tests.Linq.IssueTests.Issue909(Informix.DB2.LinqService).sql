@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Informix.DB2 Informix
+-- Informix.DB2 Informix (asynchronously)
 
 SELECT
 	p.ParentID,
@@ -10,7 +10,7 @@ WHERE
 	(p.Value1 NOT IN (1, 2, 3) OR p.Value1 IS NULL)
 
 BeforeExecute
--- Informix.DB2 Informix
+-- Informix.DB2 Informix (asynchronously)
 
 SELECT
 	t1.ParentID,

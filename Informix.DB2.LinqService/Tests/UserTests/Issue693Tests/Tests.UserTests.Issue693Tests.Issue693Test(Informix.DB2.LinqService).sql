@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Informix.DB2 Informix
+-- Informix.DB2 Informix (asynchronously)
 DECLARE @Gender Char(1) -- StringFixedLength
 SET     @Gender = 'M'
 DECLARE @FirstName VarChar(1) -- String
@@ -25,12 +25,12 @@ VALUES
 )
 
 BeforeExecute
--- Informix.DB2 Informix
+-- Informix.DB2 Informix (asynchronously)
 
 SELECT DBINFO('sqlca.sqlerrd1') FROM systables where tabid = 1
 
 BeforeExecute
--- Informix.DB2 Informix
+-- Informix.DB2 Informix (asynchronously)
 DECLARE @Gender Char(1) -- StringFixedLength
 SET     @Gender = 'M'
 DECLARE @FirstName VarChar(1) -- String
@@ -56,12 +56,12 @@ VALUES
 )
 
 BeforeExecute
--- Informix.DB2 Informix
+-- Informix.DB2 Informix (asynchronously)
 
 SELECT DBINFO('sqlca.sqlerrd1') FROM systables where tabid = 1
 
 BeforeExecute
--- Informix.DB2 Informix
+-- Informix.DB2 Informix (asynchronously)
 DECLARE @id1 Integer(4) -- Int32
 SET     @id1 = 5
 
@@ -77,7 +77,7 @@ WHERE
 	t1.PersonID = @id1
 
 BeforeExecute
--- Informix.DB2 Informix
+-- Informix.DB2 Informix (asynchronously)
 DECLARE @id2 Integer(4) -- Int32
 SET     @id2 = 6
 

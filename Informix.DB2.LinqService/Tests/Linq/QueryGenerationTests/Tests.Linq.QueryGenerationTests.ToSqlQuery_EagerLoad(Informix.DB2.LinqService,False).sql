@@ -12,7 +12,7 @@ WHERE
 	p.ParentID = @id
 
 BeforeExecute
--- Informix.DB2 Informix
+-- Informix.DB2 Informix (asynchronously)
 DECLARE @id Integer(4) -- Int32
 SET     @id = 2
 

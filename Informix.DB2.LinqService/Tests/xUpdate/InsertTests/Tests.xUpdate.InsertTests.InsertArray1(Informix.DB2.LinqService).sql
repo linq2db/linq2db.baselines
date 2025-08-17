@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Informix.DB2 Informix
+-- Informix.DB2 Informix (asynchronously)
 
 DELETE FROM
 	LinqDataTypes
@@ -7,7 +7,7 @@ WHERE
 	LinqDataTypes.ID > 1000
 
 BeforeExecute
--- Informix.DB2 Informix
+-- Informix.DB2 Informix (asynchronously)
 
 INSERT INTO LinqDataTypes
 (
@@ -23,7 +23,7 @@ VALUES
 )
 
 BeforeExecute
--- Informix.DB2 Informix
+-- Informix.DB2 Informix (asynchronously)
 
 SELECT FIRST 2
 	t.ID,
@@ -39,7 +39,7 @@ WHERE
 	t.ID = 1001
 
 BeforeExecute
--- Informix.DB2 Informix
+-- Informix.DB2 Informix (asynchronously)
 
 DELETE FROM
 	LinqDataTypes

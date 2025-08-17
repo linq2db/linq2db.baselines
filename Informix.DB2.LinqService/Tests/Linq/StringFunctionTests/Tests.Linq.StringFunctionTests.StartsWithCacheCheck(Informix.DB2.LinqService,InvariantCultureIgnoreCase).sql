@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Informix.DB2 Informix
+-- Informix.DB2 Informix (asynchronously)
 
 SELECT FIRST 2
 	p.FirstName
@@ -9,7 +9,7 @@ WHERE
 	p.PersonID = 1
 
 BeforeExecute
--- Informix.DB2 Informix
+-- Informix.DB2 Informix (asynchronously)
 
 SELECT
 	COUNT(*)
@@ -19,7 +19,7 @@ WHERE
 	Lower(p.FirstName) LIKE 'joh%' ESCAPE '~' AND p.PersonID = 1
 
 BeforeExecute
--- Informix.DB2 Informix
+-- Informix.DB2 Informix (asynchronously)
 
 SELECT
 	COUNT(*)

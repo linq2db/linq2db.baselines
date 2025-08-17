@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Informix.DB2 Informix
+-- Informix.DB2 Informix (asynchronously)
 DECLARE @ParentID Integer(4) -- Int32
 SET     @ParentID = 1001
 DECLARE @Value1 Integer -- Int32
@@ -17,7 +17,7 @@ VALUES
 )
 
 BeforeExecute
--- Informix.DB2 Informix
+-- Informix.DB2 Informix (asynchronously)
 
 SELECT
 	COUNT(*)

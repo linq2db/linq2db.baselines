@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Informix.DB2 Informix
+-- Informix.DB2 Informix (asynchronously)
 
 SELECT
 	m_1.PersonID,
@@ -12,7 +12,7 @@ FROM
 	Person m_1
 
 BeforeExecute
--- Informix.DB2 Informix
+-- Informix.DB2 Informix (asynchronously)
 
 SELECT
 	t1.PersonID
@@ -22,7 +22,7 @@ GROUP BY
 	t1.PersonID
 
 BeforeExecute
--- Informix.DB2 Informix
+-- Informix.DB2 Informix (asynchronously)
 
 SELECT
 	m_1.PersonID,
@@ -35,7 +35,7 @@ FROM
 	Person m_1
 
 BeforeExecute
--- Informix.DB2 Informix
+-- Informix.DB2 Informix (asynchronously)
 
 SELECT
 	t1.PersonID

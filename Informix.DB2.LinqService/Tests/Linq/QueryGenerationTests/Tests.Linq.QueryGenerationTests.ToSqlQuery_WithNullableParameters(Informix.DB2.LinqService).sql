@@ -13,7 +13,7 @@ WHERE
 	p.MiddleName IS NOT NULL
 
 BeforeExecute
--- Informix.DB2 Informix
+-- Informix.DB2 Informix (asynchronously)
 
 SELECT FIRST 2
 	p.FirstName,

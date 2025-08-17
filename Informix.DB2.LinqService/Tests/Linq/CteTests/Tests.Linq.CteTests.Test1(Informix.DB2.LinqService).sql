@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Informix.DB2 Informix
+-- Informix.DB2 Informix (asynchronously)
 
 WITH CTE_1 (ParentID)
 AS
@@ -20,7 +20,7 @@ FROM
 		INNER JOIN CTE_1 c2 ON p.ParentID = c2.ParentID
 
 BeforeExecute
--- Informix.DB2 Informix
+-- Informix.DB2 Informix (asynchronously)
 
 SELECT
 	p.ParentID,

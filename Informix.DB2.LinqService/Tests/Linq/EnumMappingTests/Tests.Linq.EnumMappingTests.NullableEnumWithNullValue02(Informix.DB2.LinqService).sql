@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Informix.DB2 Informix
+-- Informix.DB2 Informix (asynchronously)
 DECLARE @p Integer(4) -- Int32
 SET     @p = 105
 
@@ -9,7 +9,7 @@ WHERE
 	LinqDataTypes.ID >= 101 AND LinqDataTypes.ID < @p
 
 BeforeExecute
--- Informix.DB2 Informix
+-- Informix.DB2 Informix (asynchronously)
 DECLARE @Id Integer(4) -- Int32
 SET     @Id = 101
 DECLARE @Value Integer(4) -- Int32
@@ -27,7 +27,7 @@ VALUES
 )
 
 BeforeExecute
--- Informix.DB2 Informix
+-- Informix.DB2 Informix (asynchronously)
 DECLARE @Id Integer(4) -- Int32
 SET     @Id = 102
 DECLARE @Value Integer(4) -- Int32
@@ -45,7 +45,7 @@ VALUES
 )
 
 BeforeExecute
--- Informix.DB2 Informix
+-- Informix.DB2 Informix (asynchronously)
 DECLARE @Id Integer(4) -- Int32
 SET     @Id = 103
 DECLARE @Value Integer -- Int32
@@ -63,7 +63,7 @@ VALUES
 )
 
 BeforeExecute
--- Informix.DB2 Informix
+-- Informix.DB2 Informix (asynchronously)
 DECLARE @Id Integer(4) -- Int32
 SET     @Id = 104
 DECLARE @Value Integer -- Int32
@@ -81,7 +81,7 @@ VALUES
 )
 
 BeforeExecute
--- Informix.DB2 Informix
+-- Informix.DB2 Informix (asynchronously)
 
 SELECT
 	r.ID,
@@ -94,7 +94,7 @@ ORDER BY
 	r.ID
 
 BeforeExecute
--- Informix.DB2 Informix
+-- Informix.DB2 Informix (asynchronously)
 
 SELECT
 	r.ID,
@@ -108,7 +108,7 @@ ORDER BY
 	r.ID
 
 BeforeExecute
--- Informix.DB2 Informix
+-- Informix.DB2 Informix (asynchronously)
 DECLARE @p Integer(4) -- Int32
 SET     @p = 105
 

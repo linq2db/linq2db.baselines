@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Informix.DB2 Informix
+-- Informix.DB2 Informix (asynchronously)
 
 DELETE FROM
 	GrandChild
@@ -7,7 +7,7 @@ WHERE
 	GrandChild.ParentID >= 1000
 
 BeforeExecute
--- Informix.DB2 Informix
+-- Informix.DB2 Informix (asynchronously)
 
 DELETE FROM
 	Child
@@ -15,7 +15,7 @@ WHERE
 	Child.ParentID >= 1000
 
 BeforeExecute
--- Informix.DB2 Informix
+-- Informix.DB2 Informix (asynchronously)
 
 DELETE FROM
 	Parent
@@ -23,7 +23,7 @@ WHERE
 	Parent.ParentID >= 1000
 
 BeforeExecute
--- Informix.DB2 Informix
+-- Informix.DB2 Informix (asynchronously)
 
 INSERT INTO Parent
 (
@@ -35,7 +35,7 @@ VALUES
 )
 
 BeforeExecute
--- Informix.DB2 Informix
+-- Informix.DB2 Informix (asynchronously)
 
 INSERT INTO Child
 (
@@ -49,7 +49,7 @@ VALUES
 )
 
 BeforeExecute
--- Informix.DB2 Informix
+-- Informix.DB2 Informix (asynchronously)
 
 INSERT INTO GrandChild
 (
@@ -65,7 +65,7 @@ VALUES
 )
 
 BeforeExecute
--- Informix.DB2 Informix
+-- Informix.DB2 Informix (asynchronously)
 
 INSERT INTO GrandChild
 (
@@ -81,7 +81,7 @@ VALUES
 )
 
 BeforeExecute
--- Informix.DB2 Informix
+-- Informix.DB2 Informix (asynchronously)
 
 DELETE FROM
 	GrandChild
@@ -102,7 +102,7 @@ WHERE
 	)
 
 BeforeExecute
--- Informix.DB2 Informix
+-- Informix.DB2 Informix (asynchronously)
 
 DELETE FROM
 	GrandChild
@@ -110,7 +110,7 @@ WHERE
 	GrandChild.ParentID >= 1000
 
 BeforeExecute
--- Informix.DB2 Informix
+-- Informix.DB2 Informix (asynchronously)
 
 DELETE FROM
 	Child
@@ -118,7 +118,7 @@ WHERE
 	Child.ParentID >= 1000
 
 BeforeExecute
--- Informix.DB2 Informix
+-- Informix.DB2 Informix (asynchronously)
 
 DELETE FROM
 	Parent

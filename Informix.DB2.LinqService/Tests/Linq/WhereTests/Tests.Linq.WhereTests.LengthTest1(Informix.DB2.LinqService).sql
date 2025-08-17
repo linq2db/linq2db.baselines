@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Informix.DB2 Informix
+-- Informix.DB2 Informix (asynchronously)
 
 SELECT
 	nm.MiddleName
@@ -9,7 +9,7 @@ WHERE
 	CHAR_LENGTH(nm.MiddleName || '.') <> 1 OR nm.MiddleName IS NULL
 
 BeforeExecute
--- Informix.DB2 Informix
+-- Informix.DB2 Informix (asynchronously)
 
 SELECT
 	t1.FirstName,

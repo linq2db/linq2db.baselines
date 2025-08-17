@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Informix.DB2 Informix
+-- Informix.DB2 Informix (asynchronously)
 
 SELECT
 	t1.FirstName,
@@ -13,7 +13,7 @@ WHERE
 	t1.PersonID = 1 AND t1.Gender = 'M'
 
 BeforeExecute
--- Informix.DB2 Informix
+-- Informix.DB2 Informix (asynchronously)
 
 SELECT
 	t1.FirstName,
@@ -27,7 +27,7 @@ WHERE
 	t1.PersonID = 1 AND 'M' = t1.Gender
 
 BeforeExecute
--- Informix.DB2 Informix
+-- Informix.DB2 Informix (asynchronously)
 DECLARE @gender Char(1) -- StringFixedLength
 SET     @gender = 'M'
 
@@ -43,7 +43,7 @@ WHERE
 	t1.PersonID = 1 AND t1.Gender = @gender
 
 BeforeExecute
--- Informix.DB2 Informix
+-- Informix.DB2 Informix (asynchronously)
 DECLARE @gender Char(1) -- StringFixedLength
 SET     @gender = 'M'
 

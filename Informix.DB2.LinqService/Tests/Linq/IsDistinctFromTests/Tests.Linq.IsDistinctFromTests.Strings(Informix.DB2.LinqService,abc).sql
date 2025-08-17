@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Informix.DB2 Informix
+-- Informix.DB2 Informix (asynchronously)
 DECLARE @value VarChar(3) -- String
 SET     @value = 'abc'
 
@@ -19,7 +19,7 @@ WHERE
 	)
 
 BeforeExecute
--- Informix.DB2 Informix
+-- Informix.DB2 Informix (asynchronously)
 DECLARE @value VarChar(3) -- String
 SET     @value = 'abc'
 
@@ -39,7 +39,7 @@ WHERE
 	)
 
 BeforeExecute
--- Informix.DB2 Informix
+-- Informix.DB2 Informix (asynchronously)
 DECLARE @value VarChar(3) -- String
 SET     @value = 'abc'
 
@@ -59,7 +59,7 @@ WHERE
 	)
 
 BeforeExecute
--- Informix.DB2 Informix
+-- Informix.DB2 Informix (asynchronously)
 DECLARE @value VarChar(3) -- String
 SET     @value = 'abc'
 

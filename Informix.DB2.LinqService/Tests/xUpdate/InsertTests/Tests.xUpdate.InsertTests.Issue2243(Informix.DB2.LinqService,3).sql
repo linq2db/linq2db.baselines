@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Informix.DB2 Informix
+-- Informix.DB2 Informix (asynchronously)
 DECLARE @Name VarChar(5) -- String
 SET     @Name = 'Test1'
 DECLARE @UpdatedBy VarChar -- String
@@ -16,7 +16,7 @@ WHERE
 	t1.id = @Id
 
 BeforeExecute
--- Informix.DB2 Informix
+-- Informix.DB2 Informix (asynchronously)
 DECLARE @Id Integer(4) -- Int32
 SET     @Id = 1
 DECLARE @Name VarChar(5) -- String
@@ -38,7 +38,7 @@ VALUES
 )
 
 BeforeExecute
--- Informix.DB2 Informix
+-- Informix.DB2 Informix (asynchronously)
 
 SELECT FIRST 2
 	t1.id,
@@ -49,7 +49,7 @@ FROM
 	test_insert_or_replace t1
 
 BeforeExecute
--- Informix.DB2 Informix
+-- Informix.DB2 Informix (asynchronously)
 DECLARE @Name VarChar(5) -- String
 SET     @Name = 'Test2'
 DECLARE @UpdatedBy VarChar(10) -- String
@@ -66,7 +66,7 @@ WHERE
 	t1.id = @Id
 
 BeforeExecute
--- Informix.DB2 Informix
+-- Informix.DB2 Informix (asynchronously)
 
 SELECT FIRST 2
 	t1.id,

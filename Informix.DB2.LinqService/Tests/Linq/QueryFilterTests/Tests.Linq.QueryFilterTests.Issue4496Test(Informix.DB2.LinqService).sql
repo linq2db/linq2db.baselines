@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Informix.DB2 Informix
+-- Informix.DB2 Informix (asynchronously)
 
 SELECT DISTINCT
 	x.ParentID,
@@ -11,7 +11,7 @@ WHERE
 	x.ChildID > 30
 
 BeforeExecute
--- Informix.DB2 Informix
+-- Informix.DB2 Informix (asynchronously)
 
 SELECT DISTINCT
 	x.ParentID,

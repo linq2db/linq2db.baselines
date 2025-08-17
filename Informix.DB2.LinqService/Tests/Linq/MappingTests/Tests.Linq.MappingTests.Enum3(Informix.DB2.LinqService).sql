@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Informix.DB2 Informix
+-- Informix.DB2 Informix (asynchronously)
 DECLARE @fm Char(1) -- StringFixedLength
 SET     @fm = 'F'
 

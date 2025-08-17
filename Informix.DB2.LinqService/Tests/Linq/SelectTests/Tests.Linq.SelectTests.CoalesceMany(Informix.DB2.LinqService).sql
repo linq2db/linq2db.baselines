@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Informix.DB2 Informix
+-- Informix.DB2 Informix (asynchronously)
 
 SELECT
 	Nvl(t.Nullable1, Nvl(t.Nullable2, Nvl(t.Nullable3, t.Id))),
@@ -14,7 +14,7 @@ FROM
 	CoalesceNullableFields t
 
 BeforeExecute
--- Informix.DB2 Informix
+-- Informix.DB2 Informix (asynchronously)
 
 SELECT
 	t1.Id,

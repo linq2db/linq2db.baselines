@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Informix.DB2 Informix
+-- Informix.DB2 Informix (asynchronously)
 
 SELECT
 	MAX(t1.PersonID)
@@ -7,7 +7,7 @@ FROM
 	Person t1
 
 BeforeExecute
--- Informix.DB2 Informix
+-- Informix.DB2 Informix (asynchronously)
 DECLARE @Gender Char(1) -- StringFixedLength
 SET     @Gender = 'M'
 DECLARE @Name_FirstName VarChar(2) -- String
@@ -33,7 +33,7 @@ VALUES
 )
 
 BeforeExecute
--- Informix.DB2 Informix
+-- Informix.DB2 Informix (asynchronously)
 DECLARE @id Integer(4) -- Int32
 SET     @id = 4
 

@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Informix.DB2 Informix
+-- Informix.DB2 Informix (asynchronously)
 DECLARE @Id Integer(4) -- Int32
 SET     @Id = 1
 DECLARE @InitOnlyId Integer(4) -- Int32
@@ -16,7 +16,7 @@ WHERE
 	e.Id = @Id AND e.Id = @InitOnlyId
 
 BeforeExecute
--- Informix.DB2 Informix
+-- Informix.DB2 Informix (asynchronously)
 
 SELECT
 	t1.Id,
@@ -27,7 +27,7 @@ FROM
 	TestConstantsData t1
 
 BeforeExecute
--- Informix.DB2 Informix
+-- Informix.DB2 Informix (asynchronously)
 DECLARE @Id Integer(4) -- Int32
 SET     @Id = 1
 DECLARE @InitOnlyId Integer(4) -- Int32
@@ -44,7 +44,7 @@ WHERE
 	e.Id = @Id AND e.Id = @InitOnlyId
 
 BeforeExecute
--- Informix.DB2 Informix
+-- Informix.DB2 Informix (asynchronously)
 
 SELECT
 	t1.Id,

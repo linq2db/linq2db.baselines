@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Informix.DB2 Informix
+-- Informix.DB2 Informix (asynchronously)
 DECLARE @Name VarChar(6) -- String
 SET     @Name = 'group1'
 DECLARE @Enabled Char(1) -- StringFixedLength
@@ -21,7 +21,7 @@ VALUES
 )
 
 BeforeExecute
--- Informix.DB2 Informix
+-- Informix.DB2 Informix (asynchronously)
 DECLARE @Name VarChar(6) -- String
 SET     @Name = 'group1'
 DECLARE @Enabled Char(1) -- StringFixedLength
@@ -43,7 +43,7 @@ VALUES
 )
 
 BeforeExecute
--- Informix.DB2 Informix
+-- Informix.DB2 Informix (asynchronously)
 DECLARE @Name VarChar(6) -- String
 SET     @Name = 'group2'
 DECLARE @Enabled Char(1) -- StringFixedLength
@@ -65,7 +65,7 @@ VALUES
 )
 
 BeforeExecute
--- Informix.DB2 Informix
+-- Informix.DB2 Informix (asynchronously)
 
 SELECT
 	t1.Id,

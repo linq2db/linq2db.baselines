@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Informix.DB2 Informix
+-- Informix.DB2 Informix (asynchronously)
 
 SELECT
 	m_1.ParentID,
@@ -16,7 +16,7 @@ FROM
 		INNER JOIN Parent d ON d.ParentID = m_1.ParentID
 
 BeforeExecute
--- Informix.DB2 Informix
+-- Informix.DB2 Informix (asynchronously)
 
 SELECT
 	a_Parent.ParentID

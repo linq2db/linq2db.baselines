@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Informix.DB2 Informix
+-- Informix.DB2 Informix (asynchronously)
 
 SELECT SKIP 2 FIRST 5
 	t1.ParentID,
@@ -10,7 +10,7 @@ ORDER BY
 	t1.ChildID DESC
 
 BeforeExecute
--- Informix.DB2 Informix
+-- Informix.DB2 Informix (asynchronously)
 
 SELECT SKIP 2 FIRST 5
 	t1.ParentID,

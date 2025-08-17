@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Informix.DB2 Informix
+-- Informix.DB2 Informix (asynchronously)
 
 DELETE FROM
 	Person
@@ -7,7 +7,7 @@ WHERE
 	Person.FirstName LIKE 'Insert15%' ESCAPE '~'
 
 BeforeExecute
--- Informix.DB2 Informix
+-- Informix.DB2 Informix (asynchronously)
 DECLARE @Gender Char(1) -- StringFixedLength
 SET     @Gender = 'M'
 DECLARE @Name_FirstName VarChar(8) -- String
@@ -33,7 +33,7 @@ VALUES
 )
 
 BeforeExecute
--- Informix.DB2 Informix
+-- Informix.DB2 Informix (asynchronously)
 
 SELECT
 	COUNT(*)
@@ -43,7 +43,7 @@ WHERE
 	t1.FirstName LIKE 'Insert15%' ESCAPE '~'
 
 BeforeExecute
--- Informix.DB2 Informix
+-- Informix.DB2 Informix (asynchronously)
 
 DELETE FROM
 	Person

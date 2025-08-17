@@ -1,17 +1,17 @@
 ﻿BeforeExecute
--- Informix.DB2 Informix
+-- Informix.DB2 Informix (asynchronously)
 
 DELETE FROM
 	TestMerge1
 
 BeforeExecute
--- Informix.DB2 Informix
+-- Informix.DB2 Informix (asynchronously)
 
 DELETE FROM
 	TestMerge2
 
 BeforeExecute
--- Informix.DB2 Informix
+-- Informix.DB2 Informix (asynchronously)
 DECLARE @Id Integer(4) -- Int32
 SET     @Id = 1
 DECLARE @FieldInt32 Integer -- Int32
@@ -75,7 +75,7 @@ VALUES
 )
 
 BeforeExecute
--- Informix.DB2 Informix
+-- Informix.DB2 Informix (asynchronously)
 DECLARE @Id Integer(4) -- Int32
 SET     @Id = 2
 DECLARE @FieldInt32 Integer(4) -- Int32
@@ -139,7 +139,7 @@ VALUES
 )
 
 BeforeExecute
--- Informix.DB2 Informix
+-- Informix.DB2 Informix (asynchronously)
 DECLARE @Id Integer(4) -- Int32
 SET     @Id = 3
 DECLARE @FieldInt32 Integer(4) -- Int32
@@ -203,7 +203,7 @@ VALUES
 )
 
 BeforeExecute
--- Informix.DB2 Informix
+-- Informix.DB2 Informix (asynchronously)
 DECLARE @Id Integer(4) -- Int32
 SET     @Id = 4
 DECLARE @FieldInt32 Integer(4) -- Int32
@@ -267,7 +267,7 @@ VALUES
 )
 
 BeforeExecute
--- Informix.DB2 Informix
+-- Informix.DB2 Informix (asynchronously)
 DECLARE @Id Integer(4) -- Int32
 SET     @Id = 3
 DECLARE @FieldInt32 Integer(4) -- Int32
@@ -331,7 +331,7 @@ VALUES
 )
 
 BeforeExecute
--- Informix.DB2 Informix
+-- Informix.DB2 Informix (asynchronously)
 DECLARE @Id Integer(4) -- Int32
 SET     @Id = 4
 DECLARE @FieldInt32 Integer(4) -- Int32
@@ -395,7 +395,7 @@ VALUES
 )
 
 BeforeExecute
--- Informix.DB2 Informix
+-- Informix.DB2 Informix (asynchronously)
 DECLARE @Id Integer(4) -- Int32
 SET     @Id = 5
 DECLARE @FieldInt32 Integer(4) -- Int32
@@ -459,7 +459,7 @@ VALUES
 )
 
 BeforeExecute
--- Informix.DB2 Informix
+-- Informix.DB2 Informix (asynchronously)
 DECLARE @Id Integer(4) -- Int32
 SET     @Id = 6
 DECLARE @FieldInt32 Integer(4) -- Int32
@@ -523,7 +523,7 @@ VALUES
 )
 
 BeforeExecute
--- Informix.DB2 Informix
+-- Informix.DB2 Informix (asynchronously)
 
 SELECT
 	t1.Id,
@@ -546,7 +546,7 @@ ORDER BY
 	t1.Id
 
 BeforeExecute
--- Informix.DB2 Informix
+-- Informix.DB2 Informix (asynchronously)
 
 SELECT
 	t1.Id,

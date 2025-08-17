@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Informix.DB2 Informix
+-- Informix.DB2 Informix (asynchronously)
 
 SELECT
 	t1.FirstName,
@@ -13,7 +13,7 @@ ORDER BY
 	CHAR_LENGTH(t1.FirstName || '.') > 5
 
 BeforeExecute
--- Informix.DB2 Informix
+-- Informix.DB2 Informix (asynchronously)
 
 SELECT
 	t1.FirstName,

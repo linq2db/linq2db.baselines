@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Informix.DB2 Informix
+-- Informix.DB2 Informix (asynchronously)
 
 SELECT
 	SUM(grp_1.MoneyValue),
@@ -17,7 +17,7 @@ GROUP BY
 	grp_1.Date_1
 
 BeforeExecute
--- Informix.DB2 Informix
+-- Informix.DB2 Informix (asynchronously)
 
 SELECT
 	SUM(grp_1.MoneyValue),

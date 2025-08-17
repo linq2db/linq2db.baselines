@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Informix.DB2 Informix
+-- Informix.DB2 Informix (asynchronously)
 DECLARE @Id Integer(4) -- Int32
 SET     @Id = 1
 DECLARE @Stamp Integer(4) -- Int32
@@ -21,7 +21,7 @@ VALUES
 )
 
 BeforeExecute
--- Informix.DB2 Informix
+-- Informix.DB2 Informix (asynchronously)
 
 SELECT
 	t1.Id,
@@ -31,7 +31,7 @@ FROM
 	ConcurrencyFiltered t1
 
 BeforeExecute
--- Informix.DB2 Informix
+-- Informix.DB2 Informix (asynchronously)
 DECLARE @Value VarChar(7) -- String
 SET     @Value = 'value 1'
 DECLARE @Id Integer(4) -- Int32
@@ -48,7 +48,7 @@ WHERE
 	r.Id = 2 AND r.Id = @Id AND r.Stamp = @Stamp
 
 BeforeExecute
--- Informix.DB2 Informix
+-- Informix.DB2 Informix (asynchronously)
 
 SELECT
 	t1.Id,
@@ -58,7 +58,7 @@ FROM
 	ConcurrencyFiltered t1
 
 BeforeExecute
--- Informix.DB2 Informix
+-- Informix.DB2 Informix (asynchronously)
 DECLARE @Value VarChar(7) -- String
 SET     @Value = 'value 2'
 DECLARE @Id Integer(4) -- Int32
@@ -75,7 +75,7 @@ WHERE
 	r.Id = 1 AND r.Id = @Id AND r.Stamp = @Stamp
 
 BeforeExecute
--- Informix.DB2 Informix
+-- Informix.DB2 Informix (asynchronously)
 
 SELECT
 	t1.Id,
@@ -85,7 +85,7 @@ FROM
 	ConcurrencyFiltered t1
 
 BeforeExecute
--- Informix.DB2 Informix
+-- Informix.DB2 Informix (asynchronously)
 DECLARE @Id Integer(4) -- Int32
 SET     @Id = 1
 DECLARE @Stamp Integer(4) -- Int32
@@ -98,7 +98,7 @@ WHERE
 	ConcurrencyFiltered.Stamp = @Stamp
 
 BeforeExecute
--- Informix.DB2 Informix
+-- Informix.DB2 Informix (asynchronously)
 
 SELECT
 	t1.Id,
@@ -108,7 +108,7 @@ FROM
 	ConcurrencyFiltered t1
 
 BeforeExecute
--- Informix.DB2 Informix
+-- Informix.DB2 Informix (asynchronously)
 DECLARE @Id Integer(4) -- Int32
 SET     @Id = 1
 DECLARE @Stamp Integer(4) -- Int32
@@ -121,7 +121,7 @@ WHERE
 	ConcurrencyFiltered.Stamp = @Stamp
 
 BeforeExecute
--- Informix.DB2 Informix
+-- Informix.DB2 Informix (asynchronously)
 
 SELECT
 	t1.Id,
