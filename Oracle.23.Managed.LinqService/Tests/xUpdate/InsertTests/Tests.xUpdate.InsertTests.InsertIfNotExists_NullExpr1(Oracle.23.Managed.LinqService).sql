@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Oracle.23.Managed Oracle.Managed Oracle12
+-- Oracle.23.Managed Oracle.Managed Oracle12 (asynchronously)
 
 MERGE INTO "test_insert_or_replace" t1
 USING (SELECT 1 AS "id" FROM SYS.DUAL) s ON
@@ -19,7 +19,7 @@ WHEN NOT MATCHED THEN
 	)
 
 BeforeExecute
--- Oracle.23.Managed Oracle.Managed Oracle12
+-- Oracle.23.Managed Oracle.Managed Oracle12 (asynchronously)
 
 MERGE INTO "test_insert_or_replace" t1
 USING (SELECT 1 AS "id" FROM SYS.DUAL) s ON

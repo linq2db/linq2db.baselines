@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Oracle.23.Managed Oracle.Managed Oracle12
+-- Oracle.23.Managed Oracle.Managed Oracle12 (asynchronously)
 
 WITH CTE_1 ("Value4")
 AS
@@ -28,7 +28,7 @@ FROM
 		INNER JOIN "CteTable" d_1 ON m_1."Id" = d_1."Value3"
 
 BeforeExecute
--- Oracle.23.Managed Oracle.Managed Oracle12
+-- Oracle.23.Managed Oracle.Managed Oracle12 (asynchronously)
 
 WITH CTE_1
 (

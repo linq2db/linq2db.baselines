@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Oracle.23.Managed Oracle.Managed Oracle12
+-- Oracle.23.Managed Oracle.Managed Oracle12 (asynchronously)
 DECLARE @r3 Int32
 SET     @r3 = 3
 

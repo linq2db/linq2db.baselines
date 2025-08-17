@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Oracle.23.Managed Oracle.Managed Oracle12
+-- Oracle.23.Managed Oracle.Managed Oracle12 (asynchronously)
 
 SELECT
 	x."ParentID"
@@ -8,7 +8,7 @@ FROM
 		INNER JOIN "Child" y ON x."ParentID" = y."ParentID"
 
 BeforeExecute
--- Oracle.23.Managed Oracle.Managed Oracle12
+-- Oracle.23.Managed Oracle.Managed Oracle12 (asynchronously)
 
 SELECT
 	g_1."ParentID"

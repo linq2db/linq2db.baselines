@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Oracle.23.Managed Oracle.Managed Oracle12
+-- Oracle.23.Managed Oracle.Managed Oracle12 (asynchronously)
 DECLARE @value Decimal(9, 5)
 SET     @value = 6579.64648
 
@@ -10,7 +10,7 @@ FROM
 FETCH NEXT 1 ROWS ONLY
 
 BeforeExecute
--- Oracle.23.Managed Oracle.Managed Oracle12
+-- Oracle.23.Managed Oracle.Managed Oracle12 (asynchronously)
 DECLARE @value BinaryFloat -- Single
 SET     @value = 6579.64648
 
@@ -21,7 +21,7 @@ FROM
 FETCH NEXT 1 ROWS ONLY
 
 BeforeExecute
--- Oracle.23.Managed Oracle.Managed Oracle12
+-- Oracle.23.Managed Oracle.Managed Oracle12 (asynchronously)
 DECLARE @value BinaryDouble -- Double
 SET     @value = 6579.6464800000003D
 
@@ -32,7 +32,7 @@ FROM
 FETCH NEXT 1 ROWS ONLY
 
 BeforeExecute
--- Oracle.23.Managed Oracle.Managed Oracle12
+-- Oracle.23.Managed Oracle.Managed Oracle12 (asynchronously)
 DECLARE @value Decimal(9, 5)
 SET     @value = 6579.64648
 
@@ -43,7 +43,7 @@ FROM
 FETCH NEXT 1 ROWS ONLY
 
 BeforeExecute
--- Oracle.23.Managed Oracle.Managed Oracle12
+-- Oracle.23.Managed Oracle.Managed Oracle12 (asynchronously)
 DECLARE @value BinaryFloat -- Single
 SET     @value = 6579.64648
 
@@ -54,7 +54,7 @@ FROM
 FETCH NEXT 1 ROWS ONLY
 
 BeforeExecute
--- Oracle.23.Managed Oracle.Managed Oracle12
+-- Oracle.23.Managed Oracle.Managed Oracle12 (asynchronously)
 DECLARE @value BinaryDouble -- Double
 SET     @value = 6579.6464800000003D
 

@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Oracle.23.Managed Oracle.Managed Oracle12
+-- Oracle.23.Managed Oracle.Managed Oracle12 (asynchronously)
 
 INSERT INTO "TrimTestTable"
 (
@@ -13,7 +13,7 @@ VALUES
 )
 
 BeforeExecute
--- Oracle.23.Managed Oracle.Managed Oracle12
+-- Oracle.23.Managed Oracle.Managed Oracle12 (asynchronously)
 
 INSERT INTO "TrimTestTable"
 (
@@ -27,7 +27,7 @@ VALUES
 )
 
 BeforeExecute
--- Oracle.23.Managed Oracle.Managed Oracle12
+-- Oracle.23.Managed Oracle.Managed Oracle12 (asynchronously)
 
 INSERT INTO "TrimTestTable"
 (
@@ -41,7 +41,7 @@ VALUES
 )
 
 BeforeExecute
--- Oracle.23.Managed Oracle.Managed Oracle12
+-- Oracle.23.Managed Oracle.Managed Oracle12 (asynchronously)
 
 SELECT
 	r.ID,
@@ -52,7 +52,7 @@ ORDER BY
 	r.ID
 
 BeforeExecute
--- Oracle.23.Managed Oracle.Managed Oracle12
+-- Oracle.23.Managed Oracle.Managed Oracle12 (asynchronously)
 
 SELECT
 	r.ID,

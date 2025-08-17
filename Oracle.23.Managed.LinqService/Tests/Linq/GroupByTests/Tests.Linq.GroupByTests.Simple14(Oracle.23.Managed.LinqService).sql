@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Oracle.23.Managed Oracle.Managed Oracle12
+-- Oracle.23.Managed Oracle.Managed Oracle12 (asynchronously)
 
 SELECT
 	m_1."ParentID",
@@ -21,7 +21,7 @@ FROM
 		) d_1 ON m_1."ParentID" = d_1."Key_1"
 
 BeforeExecute
--- Oracle.23.Managed Oracle.Managed Oracle12
+-- Oracle.23.Managed Oracle.Managed Oracle12 (asynchronously)
 
 SELECT
 	p."ParentID"

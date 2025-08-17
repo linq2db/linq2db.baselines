@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Oracle.23.Managed Oracle.Managed Oracle12
+-- Oracle.23.Managed Oracle.Managed Oracle12 (asynchronously)
 DECLARE @Code Varchar2(5) -- String
 SET     @Code = 'Child'
 DECLARE @Id Int32
@@ -25,7 +25,7 @@ VALUES
 )
 
 BeforeExecute
--- Oracle.23.Managed Oracle.Managed Oracle12
+-- Oracle.23.Managed Oracle.Managed Oracle12 (asynchronously)
 DECLARE @Code Varchar2(6) -- String
 SET     @Code = 'Child2'
 DECLARE @Id Int32
@@ -51,7 +51,7 @@ VALUES
 )
 
 BeforeExecute
--- Oracle.23.Managed Oracle.Managed Oracle12
+-- Oracle.23.Managed Oracle.Managed Oracle12 (asynchronously)
 
 SELECT
 	e."Code",

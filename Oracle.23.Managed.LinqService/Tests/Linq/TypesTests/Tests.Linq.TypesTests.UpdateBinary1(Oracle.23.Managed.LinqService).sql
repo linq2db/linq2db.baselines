@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Oracle.23.Managed Oracle.Managed Oracle12
+-- Oracle.23.Managed Oracle.Managed Oracle12 (asynchronously)
 DECLARE @BinaryValue Blob -- Object
 SET     @BinaryValue = HEXTORAW('0102030405')
 
@@ -11,7 +11,7 @@ WHERE
 	t.ID = 1
 
 BeforeExecute
--- Oracle.23.Managed Oracle.Managed Oracle12
+-- Oracle.23.Managed Oracle.Managed Oracle12 (asynchronously)
 
 SELECT
 	t."BinaryValue"

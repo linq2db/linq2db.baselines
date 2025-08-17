@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Oracle.23.Managed Oracle.Managed Oracle12
+-- Oracle.23.Managed Oracle.Managed Oracle12 (asynchronously)
 
 SELECT
 	REGR_AVGX(p."Value1", c_1."ChildID") OVER(PARTITION BY p."Value1", c_1."ChildID"),

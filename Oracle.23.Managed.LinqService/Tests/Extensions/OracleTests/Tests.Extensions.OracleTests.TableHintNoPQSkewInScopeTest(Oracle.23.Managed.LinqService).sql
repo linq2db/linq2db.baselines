@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Oracle.23.Managed Oracle.Managed Oracle12
+-- Oracle.23.Managed Oracle.Managed Oracle12 (asynchronously)
 
 SELECT /*+ NO_PQ_SKEW(p) NO_PQ_SKEW(c_1) */
 	p."ParentID",

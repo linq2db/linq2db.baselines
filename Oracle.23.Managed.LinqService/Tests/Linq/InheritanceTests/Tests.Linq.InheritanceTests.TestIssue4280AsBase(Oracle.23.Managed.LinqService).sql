@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Oracle.23.Managed Oracle.Managed Oracle12
+-- Oracle.23.Managed Oracle.Managed Oracle12 (asynchronously)
 DECLARE @Id Int32
 SET     @Id = 2
 DECLARE @SerialNumber Varchar2(7) -- String
@@ -25,7 +25,7 @@ VALUES
 )
 
 BeforeExecute
--- Oracle.23.Managed Oracle.Managed Oracle12
+-- Oracle.23.Managed Oracle.Managed Oracle12 (asynchronously)
 DECLARE @Id Int32
 SET     @Id = 1
 DECLARE @SerialNumber Varchar2(9) -- String
@@ -47,7 +47,7 @@ VALUES
 )
 
 BeforeExecute
--- Oracle.23.Managed Oracle.Managed Oracle12
+-- Oracle.23.Managed Oracle.Managed Oracle12 (asynchronously)
 
 SELECT
 	t1."DeviceType",
@@ -60,7 +60,7 @@ ORDER BY
 	t1."Id"
 
 BeforeExecute
--- Oracle.23.Managed Oracle.Managed Oracle12
+-- Oracle.23.Managed Oracle.Managed Oracle12 (asynchronously)
 DECLARE @SerialNumber Varchar2(7) -- String
 SET     @SerialNumber = 'TV00002'
 DECLARE @DeviceType Varchar2(2) -- String
@@ -80,7 +80,7 @@ WHERE
 	t1."Id" = :Id
 
 BeforeExecute
--- Oracle.23.Managed Oracle.Managed Oracle12
+-- Oracle.23.Managed Oracle.Managed Oracle12 (asynchronously)
 DECLARE @SerialNumber Varchar2(9) -- String
 SET     @SerialNumber = 'Disp00002'
 DECLARE @DeviceType Varchar2(7) -- String
@@ -97,7 +97,7 @@ WHERE
 	t1."Id" = :Id
 
 BeforeExecute
--- Oracle.23.Managed Oracle.Managed Oracle12
+-- Oracle.23.Managed Oracle.Managed Oracle12 (asynchronously)
 
 SELECT
 	t1."DeviceType",

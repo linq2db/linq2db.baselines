@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Oracle.23.Managed Oracle.Managed Oracle12
+-- Oracle.23.Managed Oracle.Managed Oracle12 (asynchronously)
 
 SELECT /*+ DRIVING_SITE(p) DRIVING_SITE(c_1) */
 	p."ParentID",

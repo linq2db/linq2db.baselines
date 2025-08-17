@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Oracle.23.Managed Oracle.Managed Oracle12
+-- Oracle.23.Managed Oracle.Managed Oracle12 (asynchronously)
 
 BEGIN
 	EXECUTE IMMEDIATE 'DROP TABLE "CreateIfNotExistsTable"';
@@ -11,7 +11,7 @@ EXCEPTION
 END;
 
 BeforeExecute
--- Oracle.23.Managed Oracle.Managed Oracle12
+-- Oracle.23.Managed Oracle.Managed Oracle12 (asynchronously)
 
 BEGIN
 	EXECUTE IMMEDIATE '
@@ -29,7 +29,7 @@ EXCEPTION
 END;
 
 BeforeExecute
--- Oracle.23.Managed Oracle.Managed Oracle12
+-- Oracle.23.Managed Oracle.Managed Oracle12 (asynchronously)
 
 INSERT INTO "CreateIfNotExistsTable"
 (
@@ -43,7 +43,7 @@ VALUES
 )
 
 BeforeExecute
--- Oracle.23.Managed Oracle.Managed Oracle12
+-- Oracle.23.Managed Oracle.Managed Oracle12 (asynchronously)
 
 SELECT
 	t1."Id",
@@ -52,7 +52,7 @@ FROM
 	"CreateIfNotExistsTable" t1
 
 BeforeExecute
--- Oracle.23.Managed Oracle.Managed Oracle12
+-- Oracle.23.Managed Oracle.Managed Oracle12 (asynchronously)
 
 BEGIN
 	EXECUTE IMMEDIATE '
@@ -70,7 +70,7 @@ EXCEPTION
 END;
 
 BeforeExecute
--- Oracle.23.Managed Oracle.Managed Oracle12
+-- Oracle.23.Managed Oracle.Managed Oracle12 (asynchronously)
 
 BEGIN
 	EXECUTE IMMEDIATE 'DROP TABLE "CreateIfNotExistsTable"';
@@ -82,7 +82,7 @@ EXCEPTION
 END;
 
 BeforeExecute
--- Oracle.23.Managed Oracle.Managed Oracle12
+-- Oracle.23.Managed Oracle.Managed Oracle12 (asynchronously)
 
 BEGIN
 	EXECUTE IMMEDIATE 'DROP TABLE "CreateIfNotExistsTable"';

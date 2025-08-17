@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Oracle.23.Managed Oracle.Managed Oracle12
+-- Oracle.23.Managed Oracle.Managed Oracle12 (asynchronously)
 
 BEGIN
 	EXECUTE IMMEDIATE 'DROP TABLE "Issue681Table2"';
@@ -11,7 +11,7 @@ EXCEPTION
 END;
 
 BeforeExecute
--- Oracle.23.Managed Oracle.Managed Oracle12
+-- Oracle.23.Managed Oracle.Managed Oracle12 (asynchronously)
 
 CREATE TABLE "Issue681Table2"
 (
@@ -22,7 +22,7 @@ CREATE TABLE "Issue681Table2"
 )
 
 BeforeExecute
--- Oracle.23.Managed Oracle.Managed Oracle12
+-- Oracle.23.Managed Oracle.Managed Oracle12 (asynchronously)
 
 BEGIN
 	EXECUTE IMMEDIATE 'DROP TABLE "Issue681Table2"';

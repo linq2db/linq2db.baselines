@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Oracle.23.Managed Oracle.Managed Oracle12
+-- Oracle.23.Managed Oracle.Managed Oracle12 (asynchronously)
 
 BEGIN
 	EXECUTE IMMEDIATE '
@@ -18,7 +18,7 @@ EXCEPTION
 END;
 
 BeforeExecute
--- Oracle.23.Managed Oracle.Managed Oracle12
+-- Oracle.23.Managed Oracle.Managed Oracle12 (asynchronously)
 DECLARE @ID Int32
 SET     @ID = 1
 DECLARE @Name Varchar2(4) -- String
@@ -40,7 +40,7 @@ VALUES
 )
 
 BeforeExecute
--- Oracle.23.Managed Oracle.Managed Oracle12
+-- Oracle.23.Managed Oracle.Managed Oracle12 (asynchronously)
 
 SELECT
 	t.ID,
@@ -52,7 +52,7 @@ WHERE
 	t.ID = 1
 
 BeforeExecute
--- Oracle.23.Managed Oracle.Managed Oracle12
+-- Oracle.23.Managed Oracle.Managed Oracle12 (asynchronously)
 
 BEGIN
 	EXECUTE IMMEDIATE 'DROP TABLE "FluentTemp"';
@@ -64,7 +64,7 @@ EXCEPTION
 END;
 
 BeforeExecute
--- Oracle.23.Managed Oracle.Managed Oracle12
+-- Oracle.23.Managed Oracle.Managed Oracle12 (asynchronously)
 
 BEGIN
 	EXECUTE IMMEDIATE '
@@ -83,7 +83,7 @@ EXCEPTION
 END;
 
 BeforeExecute
--- Oracle.23.Managed Oracle.Managed Oracle12
+-- Oracle.23.Managed Oracle.Managed Oracle12 (asynchronously)
 DECLARE @ID Int32
 SET     @ID = 1
 DECLARE @Name Varchar2(4) -- String
@@ -105,7 +105,7 @@ VALUES
 )
 
 BeforeExecute
--- Oracle.23.Managed Oracle.Managed Oracle12
+-- Oracle.23.Managed Oracle.Managed Oracle12 (asynchronously)
 
 SELECT
 	t.ID,
@@ -117,7 +117,7 @@ WHERE
 	t.ID = 1
 
 BeforeExecute
--- Oracle.23.Managed Oracle.Managed Oracle12
+-- Oracle.23.Managed Oracle.Managed Oracle12 (asynchronously)
 
 BEGIN
 	EXECUTE IMMEDIATE 'DROP TABLE "FluentTemp"';
@@ -129,7 +129,7 @@ EXCEPTION
 END;
 
 BeforeExecute
--- Oracle.23.Managed Oracle.Managed Oracle12
+-- Oracle.23.Managed Oracle.Managed Oracle12 (asynchronously)
 
 BEGIN
 	EXECUTE IMMEDIATE '
@@ -148,7 +148,7 @@ EXCEPTION
 END;
 
 BeforeExecute
--- Oracle.23.Managed Oracle.Managed Oracle12
+-- Oracle.23.Managed Oracle.Managed Oracle12 (asynchronously)
 DECLARE @ID Int32
 SET     @ID = 1
 DECLARE @Name Varchar2(4) -- String
@@ -170,7 +170,7 @@ VALUES
 )
 
 BeforeExecute
--- Oracle.23.Managed Oracle.Managed Oracle12
+-- Oracle.23.Managed Oracle.Managed Oracle12 (asynchronously)
 
 SELECT
 	t.ID,
@@ -182,7 +182,7 @@ WHERE
 	t.ID = 1
 
 BeforeExecute
--- Oracle.23.Managed Oracle.Managed Oracle12
+-- Oracle.23.Managed Oracle.Managed Oracle12 (asynchronously)
 
 BEGIN
 	EXECUTE IMMEDIATE 'DROP TABLE "FluentTemp"';
@@ -194,7 +194,7 @@ EXCEPTION
 END;
 
 BeforeExecute
--- Oracle.23.Managed Oracle.Managed Oracle12
+-- Oracle.23.Managed Oracle.Managed Oracle12 (asynchronously)
 
 BEGIN
 	EXECUTE IMMEDIATE '
@@ -213,7 +213,7 @@ EXCEPTION
 END;
 
 BeforeExecute
--- Oracle.23.Managed Oracle.Managed Oracle12
+-- Oracle.23.Managed Oracle.Managed Oracle12 (asynchronously)
 DECLARE @ID Int32
 SET     @ID = 1
 DECLARE @Name Varchar2(4) -- String
@@ -235,7 +235,7 @@ VALUES
 )
 
 BeforeExecute
--- Oracle.23.Managed Oracle.Managed Oracle12
+-- Oracle.23.Managed Oracle.Managed Oracle12 (asynchronously)
 
 SELECT
 	t.ID,
@@ -247,7 +247,7 @@ WHERE
 	t.ID = 1
 
 BeforeExecute
--- Oracle.23.Managed Oracle.Managed Oracle12
+-- Oracle.23.Managed Oracle.Managed Oracle12 (asynchronously)
 
 BEGIN
 	EXECUTE IMMEDIATE 'DROP TABLE "FluentTemp"';
