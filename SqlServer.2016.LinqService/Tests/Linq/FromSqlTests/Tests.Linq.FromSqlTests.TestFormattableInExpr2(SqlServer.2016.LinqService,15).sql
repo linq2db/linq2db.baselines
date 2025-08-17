@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2016
+-- SqlServer.2016 (asynchronously)
 DECLARE @p BigInt -- Int64
 SET     @p = 5
 DECLARE @endId Int -- Int32
@@ -19,7 +19,7 @@ ORDER BY
 	[s].[id]
 
 BeforeExecute
--- SqlServer.2016
+-- SqlServer.2016 (asynchronously)
 DECLARE @startId Int -- Int32
 SET     @startId = 5
 DECLARE @endId Int -- Int32

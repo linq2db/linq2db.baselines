@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2016
+-- SqlServer.2016 (asynchronously)
 DECLARE @hid hierarchyid -- Udt -- Object
 SET     @hid = /1/
 

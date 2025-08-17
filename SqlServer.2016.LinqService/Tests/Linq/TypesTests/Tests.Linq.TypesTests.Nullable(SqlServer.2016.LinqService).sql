@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2016
+-- SqlServer.2016 (asynchronously)
 
 SELECT
 	IIF([p].[Value1] IS NOT NULL, [p].[Value1], 0)
