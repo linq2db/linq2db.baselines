@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- PostgreSQL.15 PostgreSQL
+-- PostgreSQL.15 PostgreSQL (asynchronously)
 
 WITH "CTE1_" ("ParentID")
 AS
@@ -35,7 +35,7 @@ FROM
 		INNER JOIN "LAST0" c4_1 ON c4_1."ParentID" = p."ParentID"
 
 BeforeExecute
--- PostgreSQL.15 PostgreSQL
+-- PostgreSQL.15 PostgreSQL (asynchronously)
 
 SELECT
 	t1."ChildID",
@@ -47,7 +47,7 @@ ORDER BY
 	t1."ParentID"
 
 BeforeExecute
--- PostgreSQL.15 PostgreSQL
+-- PostgreSQL.15 PostgreSQL (asynchronously)
 
 SELECT
 	c4."ChildID",
