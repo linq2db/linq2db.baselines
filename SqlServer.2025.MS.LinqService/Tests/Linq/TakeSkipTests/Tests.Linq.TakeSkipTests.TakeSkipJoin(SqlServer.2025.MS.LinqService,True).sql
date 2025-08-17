@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025 SqlServer.2022 (asynchronously)
 
 SELECT
 	[t1].[ID],
@@ -14,7 +14,7 @@ FROM
 	[LinqDataTypes] [t1]
 
 BeforeExecute
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025 SqlServer.2022 (asynchronously)
 DECLARE @take Int -- Int32
 SET     @take = 15
 

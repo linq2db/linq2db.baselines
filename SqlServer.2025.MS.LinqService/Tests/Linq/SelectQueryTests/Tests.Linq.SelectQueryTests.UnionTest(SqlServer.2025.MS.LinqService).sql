@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025 SqlServer.2022 (asynchronously)
 
 SELECT
 	DateAdd(day, [t].[Value], CURRENT_TIMESTAMP),
@@ -14,7 +14,7 @@ SELECT
 	DateAdd(day, 4, CURRENT_TIMESTAMP)
 
 BeforeExecute
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025 SqlServer.2022 (asynchronously)
 
 SELECT
 	[v_1].[Value2]

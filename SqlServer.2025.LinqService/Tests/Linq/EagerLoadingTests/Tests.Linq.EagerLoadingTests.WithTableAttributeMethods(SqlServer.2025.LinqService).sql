@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025 SqlServer.2022 (asynchronously)
 DECLARE @Id Int -- Int32
 SET     @Id = 10
 
@@ -13,7 +13,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025 SqlServer.2022 (asynchronously)
 DECLARE @UserId Int -- Int32
 SET     @UserId = 10
 DECLARE @Age Int -- Int32
@@ -31,7 +31,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025 SqlServer.2022 (asynchronously)
 
 SELECT
 	[p].[FirstName],

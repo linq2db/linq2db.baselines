@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025 SqlServer.2022 (asynchronously)
 DECLARE @code Int -- Int32
 SET     @code = 1
 DECLARE @site Int -- Int32

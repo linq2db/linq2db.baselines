@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025 SqlServer.2022 (asynchronously)
 
 DELETE [t1]
 FROM
@@ -8,7 +8,7 @@ WHERE
 	[t1].[ParentID] > 1000
 
 BeforeExecute
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025 SqlServer.2022 (asynchronously)
 DECLARE @Value1 Int -- Int32
 SET     @Value1 = 2
 
@@ -24,7 +24,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025 SqlServer.2022 (asynchronously)
 DECLARE @id Int -- Int32
 SET     @id = 1001
 DECLARE @Value1 Int -- Int32
@@ -38,7 +38,7 @@ WHERE
 	[t1].[ParentID] = @id AND [t1].[Value1] = @Value1
 
 BeforeExecute
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025 SqlServer.2022 (asynchronously)
 
 DELETE [t1]
 FROM

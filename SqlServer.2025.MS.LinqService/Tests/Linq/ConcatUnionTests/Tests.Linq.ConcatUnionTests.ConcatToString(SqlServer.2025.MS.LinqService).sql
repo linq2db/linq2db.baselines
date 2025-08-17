@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025 SqlServer.2022 (asynchronously)
 DECLARE @take Int -- Int32
 SET     @take = 10
 DECLARE @pattern NVarChar(4000) -- String

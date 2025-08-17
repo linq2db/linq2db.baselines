@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025 SqlServer.2022 (asynchronously)
 DECLARE @id2 Int -- Int32
 SET     @id2 = 2
 DECLARE @id1 Int -- Int32

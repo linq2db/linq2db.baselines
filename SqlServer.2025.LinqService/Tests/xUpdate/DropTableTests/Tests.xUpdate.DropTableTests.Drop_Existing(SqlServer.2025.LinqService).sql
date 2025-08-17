@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025 SqlServer.2022 (asynchronously)
 
 CREATE TABLE [Table]
 (
@@ -7,7 +7,7 @@ CREATE TABLE [Table]
 )
 
 BeforeExecute
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025 SqlServer.2022 (asynchronously)
 
 DROP TABLE [Table]
 

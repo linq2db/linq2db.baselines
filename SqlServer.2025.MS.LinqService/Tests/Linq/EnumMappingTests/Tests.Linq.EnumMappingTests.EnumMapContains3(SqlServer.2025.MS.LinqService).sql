@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025 SqlServer.2022 (asynchronously)
 DECLARE @p Int -- Int32
 SET     @p = 102
 
@@ -10,7 +10,7 @@ WHERE
 	[r].[ID] >= 101 AND [r].[ID] < @p
 
 BeforeExecute
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025 SqlServer.2022 (asynchronously)
 
 INSERT INTO [LinqDataTypes]
 (
@@ -24,7 +24,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025 SqlServer.2022 (asynchronously)
 
 SELECT
 	COUNT(*)
@@ -34,7 +34,7 @@ WHERE
 	[r].[ID] = 101 AND [r].[BigIntValue] IN (12)
 
 BeforeExecute
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025 SqlServer.2022 (asynchronously)
 DECLARE @p Int -- Int32
 SET     @p = 102
 

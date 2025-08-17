@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025 SqlServer.2022 (asynchronously)
 
 SELECT TOP (1)
 	CAST([x].[Prop_bool] AS NVarChar(1)),
@@ -36,7 +36,7 @@ FROM
 	[ToStringConvertibleTypes] [x]
 
 BeforeExecute
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025 SqlServer.2022 (asynchronously)
 
 SELECT TOP (1)
 	IIF([x].[Prop_bool] = 1, N'1', N'0'),

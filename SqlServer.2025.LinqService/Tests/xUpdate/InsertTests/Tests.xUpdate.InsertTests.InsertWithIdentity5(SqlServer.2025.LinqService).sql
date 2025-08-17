@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025 SqlServer.2022 (asynchronously)
 
 DELETE [t1]
 FROM
@@ -8,7 +8,7 @@ WHERE
 	[t1].[PersonID] > 4
 
 BeforeExecute
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025 SqlServer.2022 (asynchronously)
 DECLARE @FirstName NVarChar(4000) -- String
 SET     @FirstName = N'John0'
 DECLARE @LastName NVarChar(4000) -- String
@@ -36,7 +36,7 @@ VALUES
 SELECT SCOPE_IDENTITY()
 
 BeforeExecute
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025 SqlServer.2022 (asynchronously)
 DECLARE @p NVarChar(4000) -- String
 SET     @p = N'John0'
 
@@ -52,7 +52,7 @@ WHERE
 	[p].[FirstName] = @p AND [p].[LastName] = N'Shepard'
 
 BeforeExecute
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025 SqlServer.2022 (asynchronously)
 DECLARE @FirstName NVarChar(4000) -- String
 SET     @FirstName = N'John1'
 DECLARE @LastName NVarChar(4000) -- String
@@ -80,7 +80,7 @@ VALUES
 SELECT SCOPE_IDENTITY()
 
 BeforeExecute
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025 SqlServer.2022 (asynchronously)
 DECLARE @p NVarChar(4000) -- String
 SET     @p = N'John1'
 
@@ -96,7 +96,7 @@ WHERE
 	[p].[FirstName] = @p AND [p].[LastName] = N'Shepard'
 
 BeforeExecute
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025 SqlServer.2022 (asynchronously)
 
 DELETE [t1]
 FROM

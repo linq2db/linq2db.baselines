@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025 SqlServer.2022 (asynchronously)
 
 WITH [CTE1_] ([ParentID])
 AS
@@ -35,7 +35,7 @@ FROM
 		INNER JOIN [LAST0] [c4_1] ON [c4_1].[ParentID] = [p].[ParentID]
 
 BeforeExecute
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025 SqlServer.2022 (asynchronously)
 
 SELECT
 	[t1].[ChildID],
@@ -47,7 +47,7 @@ ORDER BY
 	[t1].[ParentID]
 
 BeforeExecute
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025 SqlServer.2022 (asynchronously)
 
 SELECT
 	[c4].[ChildID],

@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025 SqlServer.2022 (asynchronously)
 
 SELECT
 	COUNT(*)
@@ -9,7 +9,7 @@ WHERE
 	[i].[One] <> 1 OR [i].[Two] <> [i].[One] * 2
 
 BeforeExecute
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025 SqlServer.2022 (asynchronously)
 
 SELECT
 	COUNT(*)
@@ -21,7 +21,7 @@ WHERE
 	([i].[One] >= NULL OR [i].[Two] <> -1 OR [i].[Three] <> [i].[Four])
 
 BeforeExecute
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025 SqlServer.2022 (asynchronously)
 
 SELECT
 	COUNT(*)
@@ -33,7 +33,7 @@ WHERE
 	([i].[One] >= NULL OR [i].[Three] <> 2)
 
 BeforeExecute
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025 SqlServer.2022 (asynchronously)
 
 SELECT
 	COUNT(*)
@@ -45,7 +45,7 @@ WHERE
 	([i].[One] >= NULL OR [i].[Two] <> 2)
 
 BeforeExecute
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025 SqlServer.2022 (asynchronously)
 
 SELECT
 	COUNT(*)

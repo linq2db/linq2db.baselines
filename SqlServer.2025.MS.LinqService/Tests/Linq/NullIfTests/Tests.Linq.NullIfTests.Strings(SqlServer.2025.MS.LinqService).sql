@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025 SqlServer.2022 (asynchronously)
 
 SELECT
 	NULLIF([s].[String], N'abc')
@@ -9,7 +9,7 @@ ORDER BY
 	[s].[Int]
 
 BeforeExecute
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025 SqlServer.2022 (asynchronously)
 
 SELECT
 	NULLIF([s].[String], N'xyz')
@@ -19,7 +19,7 @@ ORDER BY
 	[s].[Int]
 
 BeforeExecute
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025 SqlServer.2022 (asynchronously)
 
 SELECT
 	NULLIF([s].[String], NULL)
@@ -29,7 +29,7 @@ ORDER BY
 	[s].[Int]
 
 BeforeExecute
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025 SqlServer.2022 (asynchronously)
 
 SELECT
 	NULLIF([s].[NullableString], N'abc')
@@ -39,7 +39,7 @@ ORDER BY
 	[s].[Int]
 
 BeforeExecute
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025 SqlServer.2022 (asynchronously)
 
 SELECT
 	NULLIF([s].[NullableString], N'xyz')
@@ -49,7 +49,7 @@ ORDER BY
 	[s].[Int]
 
 BeforeExecute
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025 SqlServer.2022 (asynchronously)
 
 SELECT
 	NULLIF([s].[NullableString], NULL)

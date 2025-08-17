@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025 SqlServer.2022 (asynchronously)
 
 SELECT TOP (1)
 	[r].[ID],
@@ -18,7 +18,7 @@ WHERE
 	[r].[ID] = 1
 
 BeforeExecute
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025 SqlServer.2022 (asynchronously)
 
 SELECT TOP (1)
 	[r].[ID],
@@ -37,7 +37,7 @@ WHERE
 	[r].[ID] = 1
 
 BeforeExecute
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025 SqlServer.2022 (asynchronously)
 DECLARE @MoneyValue Decimal(5, 4)
 SET     @MoneyValue = 1.1100
 DECLARE @DateTimeValue DateTime
@@ -75,7 +75,7 @@ WHERE
 	[LinqDataTypes].[ID] = @ID
 
 BeforeExecute
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025 SqlServer.2022 (asynchronously)
 DECLARE @ID Int -- Int32
 SET     @ID = 1
 
@@ -96,7 +96,7 @@ WHERE
 	[r].[ID] = @ID
 
 BeforeExecute
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025 SqlServer.2022 (asynchronously)
 DECLARE @MoneyValue Decimal(5, 4)
 SET     @MoneyValue = 1.1100
 DECLARE @DateTimeValue DateTime
@@ -134,7 +134,7 @@ WHERE
 	[LinqDataTypes].[ID] = @ID
 
 BeforeExecute
--- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+-- SqlServer.2025.MS SqlServer.2025 SqlServer.2022 (asynchronously)
 
 SELECT TOP (1)
 	[r].[ID],

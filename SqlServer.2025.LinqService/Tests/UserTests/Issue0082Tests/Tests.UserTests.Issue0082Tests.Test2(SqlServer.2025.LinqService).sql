@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025 SqlServer.2022 (asynchronously)
 
 SELECT
 	[o].[ParentID],
@@ -23,7 +23,7 @@ FROM
 	[Parent] [o]
 
 BeforeExecute
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025 SqlServer.2022 (asynchronously)
 
 SELECT
 	COUNT(*)
@@ -31,7 +31,7 @@ FROM
 	[Parent] [o]
 
 BeforeExecute
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025 SqlServer.2022 (asynchronously)
 
 SELECT
 	[x].[ParentID],
