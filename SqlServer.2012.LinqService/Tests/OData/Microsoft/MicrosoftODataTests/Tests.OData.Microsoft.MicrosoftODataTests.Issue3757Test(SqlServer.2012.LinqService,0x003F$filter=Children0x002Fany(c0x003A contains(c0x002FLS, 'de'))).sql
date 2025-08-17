@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2012
+-- SqlServer.2012 (asynchronously)
 DECLARE @TypedProperty NVarChar(4000) -- String
 SET     @TypedProperty = N'%de%'
 
@@ -30,7 +30,7 @@ FROM
 		INNER JOIN [Issue3757Level2] [d] ON [m_1].[ID] = [d].[ParentId]
 
 BeforeExecute
--- SqlServer.2012
+-- SqlServer.2012 (asynchronously)
 DECLARE @TypedProperty NVarChar(4000) -- String
 SET     @TypedProperty = N'%de%'
 

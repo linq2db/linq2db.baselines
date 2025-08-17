@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2012.MS SqlServer.2012
+-- SqlServer.2012.MS SqlServer.2012 (asynchronously)
 DECLARE @ParentID Int -- Int32
 SET     @ParentID = 1
 
@@ -14,7 +14,7 @@ SELECT
 	), 1, 0)
 
 BeforeExecute
--- SqlServer.2012.MS SqlServer.2012
+-- SqlServer.2012.MS SqlServer.2012 (asynchronously)
 DECLARE @ParentID Int -- Int32
 SET     @ParentID = 2
 

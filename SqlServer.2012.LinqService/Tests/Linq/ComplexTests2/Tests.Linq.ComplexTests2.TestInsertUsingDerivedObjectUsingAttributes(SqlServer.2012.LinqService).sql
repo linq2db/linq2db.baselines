@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2012
+-- SqlServer.2012 (asynchronously)
 DECLARE @FirstName NVarChar(4000) -- String
 SET     @FirstName = N'test_inherited_insert'
 DECLARE @LastName NVarChar(4000) -- String
@@ -27,7 +27,7 @@ VALUES
 SELECT SCOPE_IDENTITY()
 
 BeforeExecute
--- SqlServer.2012
+-- SqlServer.2012 (asynchronously)
 
 SELECT TOP (1)
 	[t1].[FirstName],
@@ -41,7 +41,7 @@ WHERE
 	[t1].[FirstName] = N'test_inherited_insert'
 
 BeforeExecute
--- SqlServer.2012
+-- SqlServer.2012 (asynchronously)
 DECLARE @FirstName NVarChar(4000) -- String
 SET     @FirstName = N'test_inherited_insert'
 DECLARE @LastName NVarChar(4000) -- String
@@ -64,7 +64,7 @@ WHERE
 	[Person].[PersonID] = @ID
 
 BeforeExecute
--- SqlServer.2012
+-- SqlServer.2012 (asynchronously)
 
 SELECT TOP (1)
 	[t1].[FirstName],
@@ -78,7 +78,7 @@ WHERE
 	[t1].[FirstName] = N'test_inherited_insert'
 
 BeforeExecute
--- SqlServer.2012
+-- SqlServer.2012 (asynchronously)
 DECLARE @ID Int -- Int32
 SET     @ID = 5
 

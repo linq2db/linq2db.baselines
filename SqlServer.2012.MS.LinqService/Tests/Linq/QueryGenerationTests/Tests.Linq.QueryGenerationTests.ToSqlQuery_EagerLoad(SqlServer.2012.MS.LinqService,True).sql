@@ -10,7 +10,7 @@ WHERE
 	[p].[ParentID] = 2
 
 BeforeExecute
--- SqlServer.2012.MS SqlServer.2012
+-- SqlServer.2012.MS SqlServer.2012 (asynchronously)
 DECLARE @id Int -- Int32
 SET     @id = 2
 

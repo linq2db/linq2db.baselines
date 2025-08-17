@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2012
+-- SqlServer.2012 (asynchronously)
 DECLARE @offset Int -- Int32
 SET     @offset = 0
 
@@ -13,7 +13,7 @@ FROM
 		CROSS APPLY GetParentByID(([t].[ParentID] + @offset)) [p]
 
 BeforeExecute
--- SqlServer.2012
+-- SqlServer.2012 (asynchronously)
 DECLARE @offset Int -- Int32
 SET     @offset = 0
 
