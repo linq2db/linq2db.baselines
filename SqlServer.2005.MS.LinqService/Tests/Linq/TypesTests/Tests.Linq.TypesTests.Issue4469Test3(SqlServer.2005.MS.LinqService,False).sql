@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2005.MS SqlServer.2005
+-- SqlServer.2005.MS SqlServer.2005 (asynchronously)
 DECLARE @param Float -- Double
 SET     @param = 33
 

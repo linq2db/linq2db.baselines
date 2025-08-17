@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2005
+-- SqlServer.2005 (asynchronously)
 
 UPDATE
 	[v]
@@ -14,7 +14,7 @@ WHERE
 	[a_Relation].[RelatedValue1] = 11
 
 BeforeExecute
--- SqlServer.2005
+-- SqlServer.2005 (asynchronously)
 
 SELECT TOP (1)
 	[v].[Value1],

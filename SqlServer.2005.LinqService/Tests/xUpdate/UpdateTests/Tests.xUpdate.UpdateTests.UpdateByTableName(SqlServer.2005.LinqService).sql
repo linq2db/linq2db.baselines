@@ -1,11 +1,11 @@
 ﻿BeforeExecute
--- SqlServer.2005
+-- SqlServer.2005 (asynchronously)
 
 IF (OBJECT_ID(N'[xxPerson]', N'U') IS NOT NULL)
 	DROP TABLE [xxPerson]
 
 BeforeExecute
--- SqlServer.2005
+-- SqlServer.2005 (asynchronously)
 
 CREATE TABLE [xxPerson]
 (
@@ -19,7 +19,7 @@ CREATE TABLE [xxPerson]
 )
 
 BeforeExecute
--- SqlServer.2005
+-- SqlServer.2005 (asynchronously)
 DECLARE @FirstName NVarChar(4000) -- String
 SET     @FirstName = N'Steven'
 DECLARE @LastName NVarChar(4000) -- String
@@ -45,7 +45,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2005
+-- SqlServer.2005 (asynchronously)
 
 SELECT
 	COUNT(*)
@@ -53,7 +53,7 @@ FROM
 	[xxPerson] [t1]
 
 BeforeExecute
--- SqlServer.2005
+-- SqlServer.2005 (asynchronously)
 
 SELECT TOP (2)
 	[t1].[FirstName],
@@ -65,7 +65,7 @@ FROM
 	[xxPerson] [t1]
 
 BeforeExecute
--- SqlServer.2005
+-- SqlServer.2005 (asynchronously)
 DECLARE @FirstName NVarChar(4000) -- String
 SET     @FirstName = N'Steven'
 DECLARE @LastName NVarChar(4000) -- String
@@ -88,7 +88,7 @@ WHERE
 	[xxPerson].[PersonID] = @ID
 
 BeforeExecute
--- SqlServer.2005
+-- SqlServer.2005 (asynchronously)
 
 SELECT TOP (2)
 	[t1].[FirstName],
@@ -100,7 +100,7 @@ FROM
 	[xxPerson] [t1]
 
 BeforeExecute
--- SqlServer.2005
+-- SqlServer.2005 (asynchronously)
 
 DROP TABLE [xxPerson]
 

@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2005
+-- SqlServer.2005 (asynchronously)
 
 WITH [cte] ([Id], [Value_1])
 AS

@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2005
+-- SqlServer.2005 (asynchronously)
 
 SELECT /* PARENT */
 	[t1].[ParentID],

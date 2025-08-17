@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2005
+-- SqlServer.2005 (asynchronously)
 
 DELETE [c_1]
 FROM
@@ -8,7 +8,7 @@ WHERE
 	[c_1].[ChildID] IN (1001, 1002)
 
 BeforeExecute
--- SqlServer.2005
+-- SqlServer.2005 (asynchronously)
 
 INSERT INTO [Child]
 (
@@ -22,7 +22,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2005
+-- SqlServer.2005 (asynchronously)
 
 INSERT INTO [Child]
 (
@@ -36,7 +36,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2005
+-- SqlServer.2005 (asynchronously)
 
 SELECT
 	COUNT(*)
@@ -46,7 +46,7 @@ WHERE
 	[c_1].[ParentID] = 1
 
 BeforeExecute
--- SqlServer.2005
+-- SqlServer.2005 (asynchronously)
 
 DELETE [c_1]
 FROM
@@ -56,7 +56,7 @@ WHERE
 	[a_Parent].[ParentID] = 1 AND [c_1].[ChildID] IN (1001, 1002)
 
 BeforeExecute
--- SqlServer.2005
+-- SqlServer.2005 (asynchronously)
 
 SELECT
 	COUNT(*)

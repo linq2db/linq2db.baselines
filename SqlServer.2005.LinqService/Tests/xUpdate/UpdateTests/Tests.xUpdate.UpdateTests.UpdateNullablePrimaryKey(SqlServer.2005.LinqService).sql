@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2005
+-- SqlServer.2005 (asynchronously)
 DECLARE @GrandChildID Int -- Int32
 SET     @GrandChildID = 1000
 DECLARE @ParentID Int -- Int32
@@ -13,7 +13,7 @@ WHERE
 	[GrandChild].[ParentID] = @ParentID AND [GrandChild].[ChildID] IS NULL
 
 BeforeExecute
--- SqlServer.2005
+-- SqlServer.2005 (asynchronously)
 DECLARE @GrandChildID Int -- Int32
 SET     @GrandChildID = 1000
 DECLARE @ParentID Int -- Int32

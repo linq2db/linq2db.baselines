@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2005
+-- SqlServer.2005 (asynchronously)
 DECLARE @groupId Int -- Int32
 SET     @groupId = 2
 

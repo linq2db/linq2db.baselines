@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2005
+-- SqlServer.2005 (asynchronously)
 DECLARE @Id Int -- Int32
 SET     @Id = 10
 
@@ -13,7 +13,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2005
+-- SqlServer.2005 (asynchronously)
 DECLARE @UserId Int -- Int32
 SET     @UserId = 10
 DECLARE @Age Int -- Int32
@@ -31,7 +31,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2005
+-- SqlServer.2005 (asynchronously)
 
 SELECT
 	[p].[FirstName],

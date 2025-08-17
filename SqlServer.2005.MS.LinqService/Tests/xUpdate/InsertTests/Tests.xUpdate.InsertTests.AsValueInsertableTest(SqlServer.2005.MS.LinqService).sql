@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2005.MS SqlServer.2005
+-- SqlServer.2005.MS SqlServer.2005 (asynchronously)
 DECLARE @ID Int -- Int32
 SET     @ID = 123
 DECLARE @FirstName NVarChar(4000) -- String
@@ -17,7 +17,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2005.MS SqlServer.2005
+-- SqlServer.2005.MS SqlServer.2005 (asynchronously)
 
 SELECT
 	COUNT(*)

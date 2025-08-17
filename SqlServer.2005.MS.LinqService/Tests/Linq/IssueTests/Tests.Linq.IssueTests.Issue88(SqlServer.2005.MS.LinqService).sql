@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2005.MS SqlServer.2005
+-- SqlServer.2005.MS SqlServer.2005 (asynchronously)
 
 SELECT
 	[t1].[FirstName],
@@ -13,7 +13,7 @@ WHERE
 	[t1].[PersonID] = 1 AND [t1].[Gender] = N'M'
 
 BeforeExecute
--- SqlServer.2005.MS SqlServer.2005
+-- SqlServer.2005.MS SqlServer.2005 (asynchronously)
 
 SELECT
 	[t1].[FirstName],
@@ -27,7 +27,7 @@ WHERE
 	[t1].[PersonID] = 1 AND N'M' = [t1].[Gender]
 
 BeforeExecute
--- SqlServer.2005.MS SqlServer.2005
+-- SqlServer.2005.MS SqlServer.2005 (asynchronously)
 DECLARE @gender NChar(1) -- StringFixedLength
 SET     @gender = N'M'
 
@@ -43,7 +43,7 @@ WHERE
 	[t1].[PersonID] = 1 AND [t1].[Gender] = @gender
 
 BeforeExecute
--- SqlServer.2005.MS SqlServer.2005
+-- SqlServer.2005.MS SqlServer.2005 (asynchronously)
 DECLARE @gender NChar(1) -- StringFixedLength
 SET     @gender = N'M'
 

@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2005
+-- SqlServer.2005 (asynchronously)
 
 SELECT
 	[m_1].[SectorId],
@@ -13,7 +13,7 @@ WHERE
 	[a_UserPosition].[PositionId] = 1
 
 BeforeExecute
--- SqlServer.2005
+-- SqlServer.2005 (asynchronously)
 
 SELECT
 	[x].[SectorId]

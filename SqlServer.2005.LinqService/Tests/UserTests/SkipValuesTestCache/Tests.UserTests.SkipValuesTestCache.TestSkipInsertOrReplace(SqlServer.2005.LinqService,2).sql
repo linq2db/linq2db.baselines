@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2005
+-- SqlServer.2005 (asynchronously)
 DECLARE @Name NVarChar(4000) -- String
 SET     @Name = N'John'
 DECLARE @Age Int -- Int32
@@ -34,7 +34,7 @@ BEGIN
 END
 
 BeforeExecute
--- SqlServer.2005
+-- SqlServer.2005 (asynchronously)
 
 SELECT TOP (1)
 	[t].[Id],
@@ -46,7 +46,7 @@ WHERE
 	[t].[Id] = 1
 
 BeforeExecute
--- SqlServer.2005
+-- SqlServer.2005 (asynchronously)
 DECLARE @Name NVarChar(4000) -- String
 SET     @Name = N'John'
 DECLARE @Age Int -- Int32
@@ -81,7 +81,7 @@ BEGIN
 END
 
 BeforeExecute
--- SqlServer.2005
+-- SqlServer.2005 (asynchronously)
 
 SELECT TOP (1)
 	[t].[Id],

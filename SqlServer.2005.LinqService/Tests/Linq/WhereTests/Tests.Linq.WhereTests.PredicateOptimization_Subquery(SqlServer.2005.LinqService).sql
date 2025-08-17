@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2005
+-- SqlServer.2005 (asynchronously)
 
 SELECT
 	[p].[Id],
@@ -25,7 +25,7 @@ WHERE
 	) > CAST('2023-01-01T00:00:00.000' AS DATETIME)
 
 BeforeExecute
--- SqlServer.2005
+-- SqlServer.2005 (asynchronously)
 
 SELECT
 	[p].[Id],

@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2005
+-- SqlServer.2005 (asynchronously)
 DECLARE @value BigInt -- Int64
 SET     @value = NULL
 
@@ -16,7 +16,7 @@ FROM
 	) [t1]
 
 BeforeExecute
--- SqlServer.2005
+-- SqlServer.2005 (asynchronously)
 DECLARE @value BigInt -- Int64
 SET     @value = 2147483648
 

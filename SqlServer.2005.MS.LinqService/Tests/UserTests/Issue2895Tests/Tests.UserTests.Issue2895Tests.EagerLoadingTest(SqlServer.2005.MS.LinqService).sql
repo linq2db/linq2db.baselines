@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2005.MS SqlServer.2005
+-- SqlServer.2005.MS SqlServer.2005 (asynchronously)
 
 SELECT
 	[m_1].[Id],
@@ -29,7 +29,7 @@ FROM
 		INNER JOIN [Document] [a_Documents] ON [a_Attachment].[Id] = [a_Documents].[AttachmentId]
 
 BeforeExecute
--- SqlServer.2005.MS SqlServer.2005
+-- SqlServer.2005.MS SqlServer.2005 (asynchronously)
 
 SELECT
 	[t1].[cond],

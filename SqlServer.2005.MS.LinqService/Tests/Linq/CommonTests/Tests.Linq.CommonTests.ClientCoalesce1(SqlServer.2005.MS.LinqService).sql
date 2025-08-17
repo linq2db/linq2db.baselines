@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2005.MS SqlServer.2005
+-- SqlServer.2005.MS SqlServer.2005 (asynchronously)
 DECLARE @Value1 Int -- Int32
 SET     @Value1 = 100
 
@@ -11,7 +11,7 @@ WHERE
 	Coalesce([x].[Value1], @Value1) > 10
 
 BeforeExecute
--- SqlServer.2005.MS SqlServer.2005
+-- SqlServer.2005.MS SqlServer.2005 (asynchronously)
 
 SELECT
 	[p].[Value1]

@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2005.MS SqlServer.2005
+-- SqlServer.2005.MS SqlServer.2005 (asynchronously)
 DECLARE @is_deleted Bit -- Boolean
 SET     @is_deleted = 1
 
@@ -15,7 +15,7 @@ WHERE
 	[sr].[id] = N'TestProcessService'
 
 BeforeExecute
--- SqlServer.2005.MS SqlServer.2005
+-- SqlServer.2005.MS SqlServer.2005 (asynchronously)
 
 SELECT
 	[x].[id],
@@ -27,7 +27,7 @@ WHERE
 	[x].[is_deleted] = 1 AND [x].[service_id] = N'TestProcessService'
 
 BeforeExecute
--- SqlServer.2005.MS SqlServer.2005
+-- SqlServer.2005.MS SqlServer.2005 (asynchronously)
 
 SELECT
 	[x].[id],

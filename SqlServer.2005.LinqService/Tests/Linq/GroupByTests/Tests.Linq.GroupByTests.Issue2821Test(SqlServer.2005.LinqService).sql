@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2005
+-- SqlServer.2005 (asynchronously)
 DECLARE @currentDate DateTime
 SET     @currentDate = CAST('2020-02-29T17:54:55.123' AS DATETIME)
 DECLARE @currentDate_1 DateTime

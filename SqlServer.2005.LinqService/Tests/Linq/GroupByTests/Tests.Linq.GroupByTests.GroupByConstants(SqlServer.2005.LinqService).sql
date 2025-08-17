@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2005
+-- SqlServer.2005 (asynchronously)
 
 SELECT
 	[g_2].[ChildId],
@@ -18,7 +18,7 @@ GROUP BY
 	[g_2].[ParentId]
 
 BeforeExecute
--- SqlServer.2005
+-- SqlServer.2005 (asynchronously)
 
 SELECT
 	[t1].[ParentID],

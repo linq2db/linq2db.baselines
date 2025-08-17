@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2005
+-- SqlServer.2005 (asynchronously)
 
 SELECT TOP (2)
 	CAST([v].[Integer] AS Decimal(18, 10)) / 33,

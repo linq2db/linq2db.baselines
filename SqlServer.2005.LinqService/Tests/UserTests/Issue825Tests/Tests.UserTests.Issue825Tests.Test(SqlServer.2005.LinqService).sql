@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2005
+-- SqlServer.2005 (asynchronously)
 DECLARE @userId Int -- Int32
 SET     @userId = 32
 DECLARE @childId Int -- Int32

@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2005
+-- SqlServer.2005 (asynchronously)
 
 SELECT
 	[m_1].[Id],
@@ -48,7 +48,7 @@ ORDER BY
 	END
 
 BeforeExecute
--- SqlServer.2005
+-- SqlServer.2005 (asynchronously)
 
 SELECT TOP (1)
 	[t1].[Id],
