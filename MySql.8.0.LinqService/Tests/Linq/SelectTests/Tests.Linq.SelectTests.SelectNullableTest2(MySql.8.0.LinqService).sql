@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- MySql.8.0 MySql.8.0.MySql.Data MySql80
+-- MySql.8.0 MySql.8.0.MySql.Data MySql80 (asynchronously)
 DECLARE @ID Int32
 SET     @ID = 1000
 DECLARE @MoneyValue Decimal(1, 0)
@@ -49,7 +49,7 @@ VALUES
 )
 
 BeforeExecute
--- MySql.8.0 MySql.8.0.MySql.Data MySql80
+-- MySql.8.0 MySql.8.0.MySql.Data MySql80 (asynchronously)
 
 SELECT
 	`t1`.`ID`,
@@ -67,7 +67,7 @@ WHERE
 LIMIT 1
 
 BeforeExecute
--- MySql.8.0 MySql.8.0.MySql.Data MySql80
+-- MySql.8.0 MySql.8.0.MySql.Data MySql80 (asynchronously)
 
 DELETE  
 FROM

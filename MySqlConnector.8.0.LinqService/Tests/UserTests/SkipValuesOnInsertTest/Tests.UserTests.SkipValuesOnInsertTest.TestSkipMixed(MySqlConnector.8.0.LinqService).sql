@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
+-- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80 (asynchronously)
 DECLARE @Id Int32
 SET     @Id = 1
 DECLARE @Name VarChar(5) -- String
@@ -21,7 +21,7 @@ VALUES
 )
 
 BeforeExecute
--- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
+-- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80 (asynchronously)
 
 SELECT
 	`t`.`Id`,
@@ -34,7 +34,7 @@ WHERE
 LIMIT 1
 
 BeforeExecute
--- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
+-- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80 (asynchronously)
 DECLARE @Age Int32
 SET     @Age = 20
 DECLARE @Id Int32
@@ -48,7 +48,7 @@ WHERE
 	`t1`.`Id` = @Id
 
 BeforeExecute
--- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
+-- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80 (asynchronously)
 
 SELECT
 	`t`.`Id`,
@@ -61,7 +61,7 @@ WHERE
 LIMIT 1
 
 BeforeExecute
--- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
+-- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80 (asynchronously)
 DECLARE @Id Int32
 SET     @Id = 2
 DECLARE @Age Int32
@@ -79,7 +79,7 @@ VALUES
 )
 
 BeforeExecute
--- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
+-- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80 (asynchronously)
 
 SELECT
 	`t`.`Id`,
@@ -92,7 +92,7 @@ WHERE
 LIMIT 1
 
 BeforeExecute
--- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
+-- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80 (asynchronously)
 DECLARE @Name VarChar(5) -- String
 SET     @Name = 'Jessy'
 DECLARE @Age Int32
@@ -109,7 +109,7 @@ WHERE
 	`t1`.`Id` = @Id
 
 BeforeExecute
--- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
+-- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80 (asynchronously)
 
 SELECT
 	`t`.`Id`,

@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- MySql.8.0 MySql.8.0.MySql.Data MySql80
+-- MySql.8.0 MySql.8.0.MySql.Data MySql80 (asynchronously)
 DECLARE @value Double
 SET     @value = NULL
 
@@ -16,7 +16,7 @@ FROM
 	) `t1`
 
 BeforeExecute
--- MySql.8.0 MySql.8.0.MySql.Data MySql80
+-- MySql.8.0 MySql.8.0.MySql.Data MySql80 (asynchronously)
 DECLARE @value Double
 SET     @value = 3147483648
 

@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
+-- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80 (asynchronously)
 DECLARE @pageNumber Int32
 SET     @pageNumber = 9
 DECLARE @serialNumber String(11) -- AnsiStringFixedLength

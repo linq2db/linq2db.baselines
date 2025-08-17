@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- MySql.8.0 MySql.8.0.MySql.Data MySql80
+-- MySql.8.0 MySql.8.0.MySql.Data MySql80 (asynchronously)
 
 SELECT
 	DATABASE()
@@ -8,7 +8,7 @@ FROM
 LIMIT 1
 
 BeforeExecute
--- MySql.8.0 MySql.8.0.MySql.Data MySql80
+-- MySql.8.0 MySql.8.0.MySql.Data MySql80 (asynchronously)
 
 DROP TABLE IF EXISTS `Issue681Table2`
 

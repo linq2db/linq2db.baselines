@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- MySql.8.0 MySql.8.0.MySql.Data MySql80
+-- MySql.8.0 MySql.8.0.MySql.Data MySql80 (asynchronously)
 
 SELECT
 	`r`.`Id`,
@@ -12,7 +12,7 @@ ORDER BY
 	`r`.`Id`
 
 BeforeExecute
--- MySql.8.0 MySql.8.0.MySql.Data MySql80
+-- MySql.8.0 MySql.8.0.MySql.Data MySql80 (asynchronously)
 
 SELECT
 	`t1`.`Id`,

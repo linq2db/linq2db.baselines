@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
+-- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80 (asynchronously)
 DECLARE @value Float -- Single
 SET     @value = 0
 
@@ -16,7 +16,7 @@ FROM
 	) `t1`
 
 BeforeExecute
--- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
+-- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80 (asynchronously)
 DECLARE @value Float -- Single
 SET     @value = 3.14748365E+09
 

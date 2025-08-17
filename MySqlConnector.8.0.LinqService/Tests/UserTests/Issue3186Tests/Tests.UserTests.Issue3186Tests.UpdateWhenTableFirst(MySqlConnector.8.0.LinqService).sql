@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
+-- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80 (asynchronously)
 DECLARE @is_deleted Bool -- Boolean
 SET     @is_deleted = 1
 
@@ -13,7 +13,7 @@ WHERE
 	`sr`.`id` = 'TestProcessService'
 
 BeforeExecute
--- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
+-- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80 (asynchronously)
 
 SELECT
 	`x`.`id`,
@@ -25,7 +25,7 @@ WHERE
 	`x`.`is_deleted` AND `x`.`service_id` = 'TestProcessService'
 
 BeforeExecute
--- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
+-- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80 (asynchronously)
 
 SELECT
 	`x`.`id`,

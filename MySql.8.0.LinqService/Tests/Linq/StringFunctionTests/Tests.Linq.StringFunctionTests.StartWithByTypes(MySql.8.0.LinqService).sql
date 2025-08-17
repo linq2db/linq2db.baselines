@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- MySql.8.0 MySql.8.0.MySql.Data MySql80
+-- MySql.8.0 MySql.8.0.MySql.Data MySql80 (asynchronously)
 DECLARE @str String(5) -- AnsiStringFixedLength
 SET     @str = 'some%'
 DECLARE @str_1 String(5) -- StringFixedLength

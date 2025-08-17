@@ -1,10 +1,10 @@
 ﻿BeforeExecute
--- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
+-- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80 (asynchronously)
 
 DROP TABLE IF EXISTS `TestTable`
 
 BeforeExecute
--- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
+-- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80 (asynchronously)
 
 CREATE TABLE `TestTable`
 (
@@ -17,7 +17,7 @@ CREATE TABLE `TestTable`
 )
 
 BeforeExecute
--- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
+-- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80 (asynchronously)
 
 SELECT
 	`t1`.`ID`,
@@ -28,7 +28,7 @@ FROM
 	`TestTable` `t1`
 
 BeforeExecute
--- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
+-- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80 (asynchronously)
 
 DROP TABLE `TestTable`
 

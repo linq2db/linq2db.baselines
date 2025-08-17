@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
+-- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80 (asynchronously)
 
 SELECT
 	`m_1`.`Id`,
@@ -23,7 +23,7 @@ FROM
 		INNER JOIN `EntityMC` `d_1` ON `m_1`.`Id` = `d_1`.`FK`
 
 BeforeExecute
--- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
+-- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80 (asynchronously)
 
 SELECT
 	`m_1`.`Id`,
@@ -36,7 +36,7 @@ FROM
 		INNER JOIN `EntityMB` `d` ON `m_1`.`Id` = `d`.`FK`
 
 BeforeExecute
--- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
+-- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80 (asynchronously)
 
 SELECT
 	`t1`.`Id`,

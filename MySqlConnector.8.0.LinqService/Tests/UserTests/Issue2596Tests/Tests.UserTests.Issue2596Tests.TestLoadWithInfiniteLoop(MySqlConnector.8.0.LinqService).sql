@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
+-- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80 (asynchronously)
 
 SELECT
 	`m_1`.`Id`,
@@ -27,7 +27,7 @@ FROM
 		LEFT JOIN `Product` `a_Product` ON `d`.`ProductId` = `a_Product`.`Id`
 
 BeforeExecute
--- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
+-- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80 (asynchronously)
 
 SELECT
 	`m_1`.`Id`,
@@ -52,7 +52,7 @@ FROM
 		INNER JOIN `AccountTax` `a_Tax` ON `d`.`TaxId` = `a_Tax`.`Id`
 
 BeforeExecute
--- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
+-- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80 (asynchronously)
 
 SELECT
 	`m_1`.`Id`,
@@ -74,7 +74,7 @@ FROM
 		INNER JOIN `CustomInvoiceLine` `d` ON `m_1`.`Id` = `d`.`CustomInvoiceId`
 
 BeforeExecute
--- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
+-- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80 (asynchronously)
 
 SELECT
 	`m_1`.`Id`,
@@ -102,7 +102,7 @@ FROM
 		LEFT JOIN `MeasureSource` `a_PreviousSource` ON `d`.`PreviousSourceId` = `a_PreviousSource`.`Id`
 
 BeforeExecute
--- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
+-- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80 (asynchronously)
 
 SELECT
 	`m_1`.`Id`,
@@ -124,7 +124,7 @@ FROM
 		INNER JOIN `TypeBMeasures` `d` ON `m_1`.`Id` = `d`.`CustomInvoiceId`
 
 BeforeExecute
--- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
+-- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80 (asynchronously)
 
 SELECT
 	`f`.`Id`,

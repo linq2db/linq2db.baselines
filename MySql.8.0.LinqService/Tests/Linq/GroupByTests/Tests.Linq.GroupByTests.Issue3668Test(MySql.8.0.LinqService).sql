@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- MySql.8.0 MySql.8.0.MySql.Data MySql80
+-- MySql.8.0 MySql.8.0.MySql.Data MySql80 (asynchronously)
 DECLARE @id Int32
 SET     @id = 1
 DECLARE @name VarChar(4) -- String
@@ -19,7 +19,7 @@ WHERE
 	`m_1`.`FirstName` <> @name AND `m_1`.`PersonID` - 1 = @id
 
 BeforeExecute
--- MySql.8.0 MySql.8.0.MySql.Data MySql80
+-- MySql.8.0 MySql.8.0.MySql.Data MySql80 (asynchronously)
 DECLARE @id Int32
 SET     @id = 1
 DECLARE @name VarChar(4) -- String

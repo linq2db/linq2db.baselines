@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- MySql.8.0 MySql.8.0.MySql.Data MySql80
+-- MySql.8.0 MySql.8.0.MySql.Data MySql80 (asynchronously)
 
 DELETE  
 FROM
@@ -8,7 +8,7 @@ WHERE
 	`Person`.`FirstName` LIKE 'Insert16%' ESCAPE '~'
 
 BeforeExecute
--- MySql.8.0 MySql.8.0.MySql.Data MySql80
+-- MySql.8.0 MySql.8.0.MySql.Data MySql80 (asynchronously)
 DECLARE @name Int32
 SET     @name = 8
 DECLARE @idx Int32
@@ -28,7 +28,7 @@ VALUES
 )
 
 BeforeExecute
--- MySql.8.0 MySql.8.0.MySql.Data MySql80
+-- MySql.8.0 MySql.8.0.MySql.Data MySql80 (asynchronously)
 
 SELECT
 	COUNT(*)
@@ -38,7 +38,7 @@ WHERE
 	`t1`.`FirstName` LIKE 'Insert16%' ESCAPE '~'
 
 BeforeExecute
--- MySql.8.0 MySql.8.0.MySql.Data MySql80
+-- MySql.8.0 MySql.8.0.MySql.Data MySql80 (asynchronously)
 
 DELETE  
 FROM

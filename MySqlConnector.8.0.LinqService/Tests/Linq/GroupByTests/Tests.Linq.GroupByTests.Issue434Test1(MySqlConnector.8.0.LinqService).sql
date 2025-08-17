@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
+-- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80 (asynchronously)
 DECLARE @input VarChar(4) -- String
 SET     @input = 'test'
 
@@ -14,7 +14,7 @@ WHERE
 	LOCATE(@input, Lower(`m_1`.`FirstName`)) > 0
 
 BeforeExecute
--- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
+-- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80 (asynchronously)
 DECLARE @input VarChar(4) -- String
 SET     @input = 'test'
 

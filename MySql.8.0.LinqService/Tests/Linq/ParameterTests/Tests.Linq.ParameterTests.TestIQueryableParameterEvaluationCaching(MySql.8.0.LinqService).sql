@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- MySql.8.0 MySql.8.0.MySql.Data MySql80
+-- MySql.8.0 MySql.8.0.MySql.Data MySql80 (asynchronously)
 DECLARE @paramCopy Int32
 SET     @paramCopy = 1
 
@@ -22,7 +22,7 @@ WHERE
 	)
 
 BeforeExecute
--- MySql.8.0 MySql.8.0.MySql.Data MySql80
+-- MySql.8.0 MySql.8.0.MySql.Data MySql80 (asynchronously)
 DECLARE @paramCopy Int32
 SET     @paramCopy = 2
 
@@ -45,7 +45,7 @@ WHERE
 	)
 
 BeforeExecute
--- MySql.8.0 MySql.8.0.MySql.Data MySql80
+-- MySql.8.0 MySql.8.0.MySql.Data MySql80 (asynchronously)
 DECLARE @paramCopy Int32
 SET     @paramCopy = 3
 
@@ -68,7 +68,7 @@ WHERE
 	)
 
 BeforeExecute
--- MySql.8.0 MySql.8.0.MySql.Data MySql80
+-- MySql.8.0 MySql.8.0.MySql.Data MySql80 (asynchronously)
 DECLARE @paramCopy Int32
 SET     @paramCopy = 4
 
@@ -91,7 +91,7 @@ WHERE
 	)
 
 BeforeExecute
--- MySql.8.0 MySql.8.0.MySql.Data MySql80
+-- MySql.8.0 MySql.8.0.MySql.Data MySql80 (asynchronously)
 DECLARE @paramCopy Int32
 SET     @paramCopy = 1
 
