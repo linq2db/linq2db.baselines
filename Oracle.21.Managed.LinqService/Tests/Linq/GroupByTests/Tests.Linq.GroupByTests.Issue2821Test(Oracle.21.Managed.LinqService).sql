@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Oracle.21.Managed Oracle.Managed Oracle12
+-- Oracle.21.Managed Oracle.Managed Oracle12 (asynchronously)
 DECLARE @currentDate TimeStamp -- DateTime
 SET     @currentDate = TIMESTAMP '2020-02-29 17:54:55.123123'
 DECLARE @currentDate_1 TimeStamp -- DateTime
