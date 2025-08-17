@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Firebird.4 Firebird4
+-- Firebird.4 Firebird4 (asynchronously)
 
 EXECUTE BLOCK AS BEGIN
 	IF (EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'TestTrun')) THEN
@@ -7,7 +7,7 @@ EXECUTE BLOCK AS BEGIN
 END
 
 BeforeExecute
--- Firebird.4 Firebird4
+-- Firebird.4 Firebird4 (asynchronously)
 
 CREATE TABLE "TestTrun"
 (
@@ -18,12 +18,12 @@ CREATE TABLE "TestTrun"
 )
 
 BeforeExecute
--- Firebird.4 Firebird4
+-- Firebird.4 Firebird4 (asynchronously)
 
 DELETE FROM "TestTrun"
 
 BeforeExecute
--- Firebird.4 Firebird4
+-- Firebird.4 Firebird4 (asynchronously)
 
 DROP TABLE "TestTrun"
 

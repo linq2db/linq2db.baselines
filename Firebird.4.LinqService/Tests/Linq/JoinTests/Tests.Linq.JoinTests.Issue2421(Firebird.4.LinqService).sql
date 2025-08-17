@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Firebird.4 Firebird4
+-- Firebird.4 Firebird4 (asynchronously)
 
 SELECT
 	"m_1"."SectorId",
@@ -13,7 +13,7 @@ WHERE
 	"a_UserPosition"."PositionId" = 1
 
 BeforeExecute
--- Firebird.4 Firebird4
+-- Firebird.4 Firebird4 (asynchronously)
 
 SELECT
 	"x"."SectorId"

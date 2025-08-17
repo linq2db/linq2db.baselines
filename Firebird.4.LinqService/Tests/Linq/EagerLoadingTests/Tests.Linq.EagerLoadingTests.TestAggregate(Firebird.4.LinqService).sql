@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Firebird.4 Firebird4
+-- Firebird.4 Firebird4 (asynchronously)
 
 SELECT
 	"t3".SUM_1,
@@ -50,7 +50,7 @@ FROM
 		) "t6" ON 1=1
 
 BeforeExecute
--- Firebird.4 Firebird4
+-- Firebird.4 Firebird4 (asynchronously)
 
 SELECT
 	"m_1"."Id1",
@@ -67,7 +67,7 @@ FROM
 		INNER JOIN "DetailClass" "d" ON "m_1"."Id1" = "d"."MasterId"
 
 BeforeExecute
--- Firebird.4 Firebird4
+-- Firebird.4 Firebird4 (asynchronously)
 
 SELECT
 	"t1"."Id1",

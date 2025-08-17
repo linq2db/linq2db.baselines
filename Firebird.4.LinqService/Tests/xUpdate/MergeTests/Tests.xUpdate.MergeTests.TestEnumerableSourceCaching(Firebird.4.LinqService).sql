@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Firebird.4 Firebird4
+-- Firebird.4 Firebird4 (asynchronously)
 
 MERGE INTO "CacheTestTable" "Target"
 USING (
@@ -30,7 +30,7 @@ VALUES
 )
 
 BeforeExecute
--- Firebird.4 Firebird4
+-- Firebird.4 Firebird4 (asynchronously)
 
 SELECT
 	"t1"."Id",
@@ -41,7 +41,7 @@ ORDER BY
 	"t1"."Id"
 
 BeforeExecute
--- Firebird.4 Firebird4
+-- Firebird.4 Firebird4 (asynchronously)
 
 MERGE INTO "CacheTestTable" "Target"
 USING (
@@ -74,7 +74,7 @@ VALUES
 )
 
 BeforeExecute
--- Firebird.4 Firebird4
+-- Firebird.4 Firebird4 (asynchronously)
 
 SELECT
 	"t1"."Id",

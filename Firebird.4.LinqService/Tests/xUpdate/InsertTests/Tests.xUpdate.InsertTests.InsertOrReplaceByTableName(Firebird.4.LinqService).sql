@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Firebird.4 Firebird4
+-- Firebird.4 Firebird4 (asynchronously)
 
 EXECUTE BLOCK AS BEGIN
 	IF (EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'xxPatient19')) THEN
@@ -7,7 +7,7 @@ EXECUTE BLOCK AS BEGIN
 END
 
 BeforeExecute
--- Firebird.4 Firebird4
+-- Firebird.4 Firebird4 (asynchronously)
 
 CREATE TABLE "xxPatient19"
 (
@@ -18,7 +18,7 @@ CREATE TABLE "xxPatient19"
 )
 
 BeforeExecute
--- Firebird.4 Firebird4
+-- Firebird.4 Firebird4 (asynchronously)
 DECLARE @PersonID Integer -- Int32
 SET     @PersonID = 1
 DECLARE @Diagnosis VarChar(4) -- String
@@ -46,7 +46,7 @@ WHEN NOT MATCHED THEN
 	)
 
 BeforeExecute
--- Firebird.4 Firebird4
+-- Firebird.4 Firebird4 (asynchronously)
 DECLARE @PersonID Integer -- Int32
 SET     @PersonID = 2
 DECLARE @Diagnosis VarChar(4) -- String
@@ -74,7 +74,7 @@ WHEN NOT MATCHED THEN
 	)
 
 BeforeExecute
--- Firebird.4 Firebird4
+-- Firebird.4 Firebird4 (asynchronously)
 
 SELECT
 	COUNT(*)
@@ -82,7 +82,7 @@ FROM
 	"xxPatient19" "t1"
 
 BeforeExecute
--- Firebird.4 Firebird4
+-- Firebird.4 Firebird4 (asynchronously)
 DECLARE @PersonID Integer -- Int32
 SET     @PersonID = 1
 DECLARE @Diagnosis VarChar(4) -- String
@@ -110,7 +110,7 @@ WHEN NOT MATCHED THEN
 	)
 
 BeforeExecute
--- Firebird.4 Firebird4
+-- Firebird.4 Firebird4 (asynchronously)
 DECLARE @PersonID Integer -- Int32
 SET     @PersonID = 2
 DECLARE @Diagnosis VarChar(4) -- String
@@ -138,7 +138,7 @@ WHEN NOT MATCHED THEN
 	)
 
 BeforeExecute
--- Firebird.4 Firebird4
+-- Firebird.4 Firebird4 (asynchronously)
 
 SELECT
 	COUNT(*)
@@ -146,7 +146,7 @@ FROM
 	"xxPatient19" "t1"
 
 BeforeExecute
--- Firebird.4 Firebird4
+-- Firebird.4 Firebird4 (asynchronously)
 
 EXECUTE BLOCK AS BEGIN
 	IF (EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'xxPatient19')) THEN

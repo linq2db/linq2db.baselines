@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Firebird.4 Firebird4
+-- Firebird.4 Firebird4 (asynchronously)
 DECLARE @str VarChar(6) -- String
 SET     @str = '%o~%h%'
 

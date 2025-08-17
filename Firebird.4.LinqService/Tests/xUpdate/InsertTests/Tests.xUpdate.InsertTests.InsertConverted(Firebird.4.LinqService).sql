@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Firebird.4 Firebird4
+-- Firebird.4 Firebird4 (asynchronously)
 
 DELETE FROM
 	"LinqDataTypes" "r"
@@ -7,7 +7,7 @@ WHERE
 	"r".ID >= 1000
 
 BeforeExecute
--- Firebird.4 Firebird4
+-- Firebird.4 Firebird4 (asynchronously)
 DECLARE @tt BigInt -- Int64
 SET     @tt = 600000000
 
@@ -23,7 +23,7 @@ VALUES
 )
 
 BeforeExecute
--- Firebird.4 Firebird4
+-- Firebird.4 Firebird4 (asynchronously)
 
 SELECT
 	"t".ID,
@@ -35,7 +35,7 @@ WHERE
 FETCH NEXT 1 ROWS ONLY
 
 BeforeExecute
--- Firebird.4 Firebird4
+-- Firebird.4 Firebird4 (asynchronously)
 
 DELETE FROM
 	"LinqDataTypes" "r"

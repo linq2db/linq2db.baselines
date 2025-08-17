@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Firebird.4 Firebird4
+-- Firebird.4 Firebird4 (asynchronously)
 DECLARE @Id Integer -- Int32
 SET     @Id = 1
 DECLARE @TargetName VarChar(12) -- String
@@ -17,7 +17,7 @@ VALUES
 )
 
 BeforeExecute
--- Firebird.4 Firebird4
+-- Firebird.4 Firebird4 (asynchronously)
 DECLARE @Id Integer -- Int32
 SET     @Id = 2
 DECLARE @TargetName VarChar(4) -- String
@@ -35,7 +35,7 @@ VALUES
 )
 
 BeforeExecute
--- Firebird.4 Firebird4
+-- Firebird.4 Firebird4 (asynchronously)
 DECLARE @Id Integer -- Int32
 SET     @Id = 2
 DECLARE @TaskId Integer -- Int32
@@ -57,7 +57,7 @@ VALUES
 )
 
 BeforeExecute
--- Firebird.4 Firebird4
+-- Firebird.4 Firebird4 (asynchronously)
 
 SELECT
 	"p"."Id",
@@ -70,7 +70,7 @@ WHERE
 	"p"."TargetName" = 'bda.Requests'
 
 BeforeExecute
--- Firebird.4 Firebird4
+-- Firebird.4 Firebird4 (asynchronously)
 
 SELECT
 	"p"."TargetName",

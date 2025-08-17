@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Firebird.4 Firebird4
+-- Firebird.4 Firebird4 (asynchronously)
 
 SELECT
 	"m_1"."Id",
@@ -23,7 +23,7 @@ FROM
 		INNER JOIN "EntityMC" "d_1" ON "m_1"."Id" = "d_1".FK
 
 BeforeExecute
--- Firebird.4 Firebird4
+-- Firebird.4 Firebird4 (asynchronously)
 
 SELECT
 	"m_1"."Id",
@@ -36,7 +36,7 @@ FROM
 		INNER JOIN "EntityMB" "d" ON "m_1"."Id" = "d".FK
 
 BeforeExecute
--- Firebird.4 Firebird4
+-- Firebird.4 Firebird4 (asynchronously)
 
 SELECT
 	"t1"."Id",

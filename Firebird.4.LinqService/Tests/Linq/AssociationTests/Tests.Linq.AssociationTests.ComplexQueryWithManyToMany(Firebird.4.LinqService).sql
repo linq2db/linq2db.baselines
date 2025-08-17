@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Firebird.4 Firebird4
+-- Firebird.4 Firebird4 (asynchronously)
 DECLARE @id Integer -- Int32
 SET     @id = 3
 DECLARE @id1 Integer -- Int32

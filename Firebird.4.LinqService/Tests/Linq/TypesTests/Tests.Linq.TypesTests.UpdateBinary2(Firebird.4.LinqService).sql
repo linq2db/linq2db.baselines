@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Firebird.4 Firebird4
+-- Firebird.4 Firebird4 (asynchronously)
 DECLARE @BinaryValue Binary(5)
 SET     @BinaryValue = X'0102030405'
 DECLARE @p Integer -- Int32
@@ -13,7 +13,7 @@ WHERE
 	"t".ID = @p
 
 BeforeExecute
--- Firebird.4 Firebird4
+-- Firebird.4 Firebird4 (asynchronously)
 DECLARE @BinaryValue Binary(5)
 SET     @BinaryValue = X'0504030201'
 DECLARE @p Integer -- Int32
@@ -27,7 +27,7 @@ WHERE
 	"t".ID = @p
 
 BeforeExecute
--- Firebird.4 Firebird4
+-- Firebird.4 Firebird4 (asynchronously)
 
 SELECT
 	"t".ID,

@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Firebird.4 Firebird4
+-- Firebird.4 Firebird4 (asynchronously)
 
 WITH CTE_1 ("InvestorId", "SecurityClass", "Units")
 AS

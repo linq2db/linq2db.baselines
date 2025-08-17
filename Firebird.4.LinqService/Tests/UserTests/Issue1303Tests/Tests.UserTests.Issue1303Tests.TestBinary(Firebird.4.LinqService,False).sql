@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Firebird.4 Firebird4
+-- Firebird.4 Firebird4 (asynchronously)
 
 INSERT INTO "Issue1303"
 (
@@ -15,7 +15,7 @@ VALUES
 )
 
 BeforeExecute
--- Firebird.4 Firebird4
+-- Firebird.4 Firebird4 (asynchronously)
 
 SELECT
 	"t1".ID,
@@ -28,7 +28,7 @@ WHERE
 FETCH NEXT 2 ROWS ONLY
 
 BeforeExecute
--- Firebird.4 Firebird4
+-- Firebird.4 Firebird4 (asynchronously)
 
 SELECT
 	"t1".ID,
@@ -41,7 +41,7 @@ WHERE
 FETCH NEXT 2 ROWS ONLY
 
 BeforeExecute
--- Firebird.4 Firebird4
+-- Firebird.4 Firebird4 (asynchronously)
 
 SELECT
 	"t1".ID,

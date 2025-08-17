@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Firebird.4 Firebird4
+-- Firebird.4 Firebird4 (asynchronously)
 
 SELECT
 	COUNT(*)
@@ -10,7 +10,7 @@ WHERE
 	"p"."PersonID" = 1
 
 BeforeExecute
--- Firebird.4 Firebird4
+-- Firebird.4 Firebird4 (asynchronously)
 
 SELECT
 	COUNT(*)
@@ -21,7 +21,7 @@ WHERE
 	"p"."PersonID" = 1
 
 BeforeExecute
--- Firebird.4 Firebird4
+-- Firebird.4 Firebird4 (asynchronously)
 
 SELECT
 	COUNT(*)

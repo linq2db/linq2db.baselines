@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Firebird.4 Firebird4
+-- Firebird.4 Firebird4 (asynchronously)
 DECLARE @TypedProperty VarChar(4) -- String
 SET     @TypedProperty = '%de%'
 
@@ -30,7 +30,7 @@ FROM
 		INNER JOIN "Issue3757Level2" "d" ON "m_1".ID = "d"."ParentId"
 
 BeforeExecute
--- Firebird.4 Firebird4
+-- Firebird.4 Firebird4 (asynchronously)
 DECLARE @TypedProperty VarChar(4) -- String
 SET     @TypedProperty = '%de%'
 

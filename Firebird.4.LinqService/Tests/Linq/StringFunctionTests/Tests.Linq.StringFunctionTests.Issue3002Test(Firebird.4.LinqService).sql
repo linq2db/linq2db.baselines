@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Firebird.4 Firebird4
+-- Firebird.4 Firebird4 (asynchronously)
 
 INSERT INTO "SampleClass"
 (
@@ -15,7 +15,7 @@ VALUES
 )
 
 BeforeExecute
--- Firebird.4 Firebird4
+-- Firebird.4 Firebird4 (asynchronously)
 
 INSERT INTO "SampleClass"
 (
@@ -31,7 +31,7 @@ VALUES
 )
 
 BeforeExecute
--- Firebird.4 Firebird4
+-- Firebird.4 Firebird4 (asynchronously)
 DECLARE @test VarChar(4) -- String
 SET     @test = 'Test'
 DECLARE @test_1 VarChar(6) -- String
@@ -49,7 +49,7 @@ SELECT
 FROM rdb$database
 
 BeforeExecute
--- Firebird.4 Firebird4
+-- Firebird.4 Firebird4 (asynchronously)
 DECLARE @test VarChar(4) -- String
 SET     @test = 'Test'
 DECLARE @test_1 VarChar(6) -- String
@@ -63,7 +63,7 @@ WHERE
 	"sampleClass_1"."Value" = @test OR "sampleClass_1"."Value2" LIKE @test_1 ESCAPE '~'
 
 BeforeExecute
--- Firebird.4 Firebird4
+-- Firebird.4 Firebird4 (asynchronously)
 DECLARE @test VarChar(5) -- String
 SET     @test = 'Value'
 DECLARE @test_1 VarChar(7) -- String
@@ -81,7 +81,7 @@ SELECT
 FROM rdb$database
 
 BeforeExecute
--- Firebird.4 Firebird4
+-- Firebird.4 Firebird4 (asynchronously)
 DECLARE @test VarChar(5) -- String
 SET     @test = 'Value'
 DECLARE @test_1 VarChar(7) -- String
@@ -95,7 +95,7 @@ WHERE
 	"sampleClass_1"."Value" = @test OR "sampleClass_1"."Value2" LIKE @test_1 ESCAPE '~'
 
 BeforeExecute
--- Firebird.4 Firebird4
+-- Firebird.4 Firebird4 (asynchronously)
 DECLARE @test VarChar(5) -- String
 SET     @test = 'Class'
 DECLARE @test_1 VarChar(7) -- String
@@ -113,7 +113,7 @@ SELECT
 FROM rdb$database
 
 BeforeExecute
--- Firebird.4 Firebird4
+-- Firebird.4 Firebird4 (asynchronously)
 DECLARE @test VarChar(5) -- String
 SET     @test = 'Class'
 DECLARE @test_1 VarChar(7) -- String
