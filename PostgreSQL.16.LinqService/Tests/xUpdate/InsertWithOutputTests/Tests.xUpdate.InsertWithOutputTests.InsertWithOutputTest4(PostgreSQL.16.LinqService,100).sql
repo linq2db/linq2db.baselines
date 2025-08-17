@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
+-- PostgreSQL.16 PostgreSQL.15 PostgreSQL (asynchronously)
 DECLARE @id Integer -- Int32
 SET     @id = 1001
 DECLARE @param Integer -- Int32
@@ -21,7 +21,7 @@ RETURNING
 	"Child"."ChildID" + "Child"."ParentID" + :param
 
 BeforeExecute
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
+-- PostgreSQL.16 PostgreSQL.15 PostgreSQL (asynchronously)
 DECLARE @param Integer -- Int32
 SET     @param = 100
 
@@ -33,7 +33,7 @@ WHERE
 	c_1."ChildID" > 1000
 
 BeforeExecute
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
+-- PostgreSQL.16 PostgreSQL.15 PostgreSQL (asynchronously)
 
 DELETE FROM
 	"Child" c_1

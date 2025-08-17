@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
+-- PostgreSQL.16 PostgreSQL.15 PostgreSQL (asynchronously)
 DECLARE @value Varchar(4) -- String
 SET     @value = 'User'
 
@@ -11,7 +11,7 @@ WHERE
 	t."EnumValue" = :value
 
 BeforeExecute
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
+-- PostgreSQL.16 PostgreSQL.15 PostgreSQL (asynchronously)
 DECLARE @value Varchar(4) -- String
 SET     @value = 'User'
 
@@ -23,7 +23,7 @@ WHERE
 	t."EnumValue" = :value
 
 BeforeExecute
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
+-- PostgreSQL.16 PostgreSQL.15 PostgreSQL (asynchronously)
 DECLARE @value Varchar(4) -- String
 SET     @value = 'User'
 
@@ -35,7 +35,7 @@ WHERE
 	t."EnumValueNullable" = :value
 
 BeforeExecute
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
+-- PostgreSQL.16 PostgreSQL.15 PostgreSQL (asynchronously)
 DECLARE @value Varchar(4) -- String
 SET     @value = 'User'
 
@@ -47,7 +47,7 @@ WHERE
 	t."EnumValueNullable" = :value
 
 BeforeExecute
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
+-- PostgreSQL.16 PostgreSQL.15 PostgreSQL (asynchronously)
 DECLARE @value Varchar(4) -- String
 SET     @value = 'User'
 
@@ -59,7 +59,7 @@ WHERE
 	t."EnumValueNull" = :value
 
 BeforeExecute
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
+-- PostgreSQL.16 PostgreSQL.15 PostgreSQL (asynchronously)
 DECLARE @value Varchar(4) -- String
 SET     @value = 'User'
 
@@ -71,7 +71,7 @@ WHERE
 	t."EnumValueNull" = :value
 
 BeforeExecute
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
+-- PostgreSQL.16 PostgreSQL.15 PostgreSQL (asynchronously)
 
 SELECT
 	COUNT(*)
@@ -81,7 +81,7 @@ WHERE
 	1 = 0
 
 BeforeExecute
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
+-- PostgreSQL.16 PostgreSQL.15 PostgreSQL (asynchronously)
 
 SELECT
 	COUNT(*)
@@ -91,7 +91,7 @@ WHERE
 	1 = 0
 
 BeforeExecute
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
+-- PostgreSQL.16 PostgreSQL.15 PostgreSQL (asynchronously)
 
 SELECT
 	COUNT(*)
@@ -101,7 +101,7 @@ WHERE
 	t."EnumValueNullable" IS NULL
 
 BeforeExecute
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
+-- PostgreSQL.16 PostgreSQL.15 PostgreSQL (asynchronously)
 
 SELECT
 	COUNT(*)
@@ -111,7 +111,7 @@ WHERE
 	t."EnumValueNullable" IS NULL
 
 BeforeExecute
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
+-- PostgreSQL.16 PostgreSQL.15 PostgreSQL (asynchronously)
 
 SELECT
 	COUNT(*)
@@ -121,7 +121,7 @@ WHERE
 	t."EnumValueNull" IS NULL
 
 BeforeExecute
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
+-- PostgreSQL.16 PostgreSQL.15 PostgreSQL (asynchronously)
 
 SELECT
 	COUNT(*)

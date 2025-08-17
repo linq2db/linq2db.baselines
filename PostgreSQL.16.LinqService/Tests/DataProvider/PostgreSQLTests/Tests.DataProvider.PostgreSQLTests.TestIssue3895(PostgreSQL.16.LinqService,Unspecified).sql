@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
+-- PostgreSQL.16 PostgreSQL.15 PostgreSQL (asynchronously)
 DECLARE @dt Timestamp -- DateTime2
 SET     @dt = '2020-02-29 17:54:55.123'::timestamp
 DECLARE @dt_1 TimestampTz -- DateTime
