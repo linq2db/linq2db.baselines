@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2014
+-- SqlServer.2014 (asynchronously)
 DECLARE @p Int -- Int32
 SET     @p = 1
 
@@ -11,7 +11,7 @@ WHERE
 	[p].[PersonID] = @p
 
 BeforeExecute
--- SqlServer.2014
+-- SqlServer.2014 (asynchronously)
 DECLARE @p Int -- Int32
 SET     @p = 2
 

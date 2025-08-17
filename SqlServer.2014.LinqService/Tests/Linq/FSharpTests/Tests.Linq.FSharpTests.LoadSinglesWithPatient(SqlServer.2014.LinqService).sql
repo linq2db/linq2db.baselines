@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2014
+-- SqlServer.2014 (asynchronously)
 
 SELECT TOP (2)
 	[p].[PersonID],
@@ -16,7 +16,7 @@ WHERE
 	[p].[PersonID] = 1
 
 BeforeExecute
--- SqlServer.2014
+-- SqlServer.2014 (asynchronously)
 
 SELECT TOP (2)
 	[p].[PersonID],

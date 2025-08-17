@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2014
+-- SqlServer.2014 (asynchronously)
 
 SELECT
 	Replace(CAST([p].[MoneyValue] AS NVarChar(31)), N',', N'.')

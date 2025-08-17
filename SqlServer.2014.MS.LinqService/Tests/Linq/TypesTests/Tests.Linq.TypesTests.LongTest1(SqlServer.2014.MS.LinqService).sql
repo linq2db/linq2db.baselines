@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2014.MS SqlServer.2014
+-- SqlServer.2014.MS SqlServer.2014 (asynchronously)
 DECLARE @value BigInt -- Int64
 SET     @value = 0
 

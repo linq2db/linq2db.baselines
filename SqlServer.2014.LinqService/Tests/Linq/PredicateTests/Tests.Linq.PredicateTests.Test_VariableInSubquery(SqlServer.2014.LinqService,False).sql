@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2014
+-- SqlServer.2014 (asynchronously)
 DECLARE @One Int -- Int32
 SET     @One = 1
 
@@ -22,7 +22,7 @@ WHERE
 	)
 
 BeforeExecute
--- SqlServer.2014
+-- SqlServer.2014 (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -34,7 +34,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- SqlServer.2014
+-- SqlServer.2014 (asynchronously)
 DECLARE @Zero Int -- Int32
 SET     @Zero = 0
 
@@ -57,7 +57,7 @@ WHERE
 	)
 
 BeforeExecute
--- SqlServer.2014
+-- SqlServer.2014 (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -69,7 +69,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- SqlServer.2014
+-- SqlServer.2014 (asynchronously)
 DECLARE @OneN Int -- Int32
 SET     @OneN = 1
 
@@ -92,7 +92,7 @@ WHERE
 	)
 
 BeforeExecute
--- SqlServer.2014
+-- SqlServer.2014 (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -104,7 +104,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- SqlServer.2014
+-- SqlServer.2014 (asynchronously)
 DECLARE @ZeroN Int -- Int32
 SET     @ZeroN = 0
 
@@ -127,7 +127,7 @@ WHERE
 	)
 
 BeforeExecute
--- SqlServer.2014
+-- SqlServer.2014 (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -139,7 +139,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- SqlServer.2014
+-- SqlServer.2014 (asynchronously)
 DECLARE @Null Int -- Int32
 SET     @Null = NULL
 
@@ -162,7 +162,7 @@ WHERE
 	)
 
 BeforeExecute
--- SqlServer.2014
+-- SqlServer.2014 (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -174,7 +174,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- SqlServer.2014
+-- SqlServer.2014 (asynchronously)
 DECLARE @One Int -- Int32
 SET     @One = 1
 
@@ -197,7 +197,7 @@ WHERE
 	)
 
 BeforeExecute
--- SqlServer.2014
+-- SqlServer.2014 (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -209,7 +209,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- SqlServer.2014
+-- SqlServer.2014 (asynchronously)
 DECLARE @Zero Int -- Int32
 SET     @Zero = 0
 
@@ -232,7 +232,7 @@ WHERE
 	)
 
 BeforeExecute
--- SqlServer.2014
+-- SqlServer.2014 (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -244,7 +244,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- SqlServer.2014
+-- SqlServer.2014 (asynchronously)
 DECLARE @OneN Int -- Int32
 SET     @OneN = 1
 
@@ -267,7 +267,7 @@ WHERE
 	)
 
 BeforeExecute
--- SqlServer.2014
+-- SqlServer.2014 (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -279,7 +279,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- SqlServer.2014
+-- SqlServer.2014 (asynchronously)
 DECLARE @ZeroN Int -- Int32
 SET     @ZeroN = 0
 
@@ -302,7 +302,7 @@ WHERE
 	)
 
 BeforeExecute
--- SqlServer.2014
+-- SqlServer.2014 (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -314,7 +314,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- SqlServer.2014
+-- SqlServer.2014 (asynchronously)
 
 SELECT
 	[r].[Id],
@@ -326,7 +326,7 @@ FROM
 	[BooleanTable] [r]
 
 BeforeExecute
--- SqlServer.2014
+-- SqlServer.2014 (asynchronously)
 
 SELECT
 	[t1].[Id],

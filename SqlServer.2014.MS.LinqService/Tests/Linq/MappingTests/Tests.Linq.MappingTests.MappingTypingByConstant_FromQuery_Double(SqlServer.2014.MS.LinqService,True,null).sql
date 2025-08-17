@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2014.MS SqlServer.2014
+-- SqlServer.2014.MS SqlServer.2014 (asynchronously)
 
 SELECT
 	[t1].[ID],
@@ -14,7 +14,7 @@ FROM
 	) [t1]
 
 BeforeExecute
--- SqlServer.2014.MS SqlServer.2014
+-- SqlServer.2014.MS SqlServer.2014 (asynchronously)
 
 SELECT
 	[t1].[ID],

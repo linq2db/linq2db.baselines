@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2014
+-- SqlServer.2014 (asynchronously)
 
 IF (OBJECT_ID(N'[FluentTemp]', N'U') IS NULL)
 	CREATE TABLE [FluentTemp]
@@ -10,7 +10,7 @@ IF (OBJECT_ID(N'[FluentTemp]', N'U') IS NULL)
 	)
 
 BeforeExecute
--- SqlServer.2014
+-- SqlServer.2014 (asynchronously)
 DECLARE @ID Int -- Int32
 SET     @ID = 1
 DECLARE @Name NVarChar(20) -- String
@@ -32,7 +32,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2014
+-- SqlServer.2014 (asynchronously)
 
 SELECT
 	[t].[ID],
@@ -44,13 +44,13 @@ WHERE
 	[t].[ID] = 1
 
 BeforeExecute
--- SqlServer.2014
+-- SqlServer.2014 (asynchronously)
 
 IF (OBJECT_ID(N'[FluentTemp]', N'U') IS NOT NULL)
 	DROP TABLE [FluentTemp]
 
 BeforeExecute
--- SqlServer.2014
+-- SqlServer.2014 (asynchronously)
 
 IF (OBJECT_ID(N'[FluentTemp]', N'U') IS NULL)
 	CREATE TABLE [FluentTemp]
@@ -61,7 +61,7 @@ IF (OBJECT_ID(N'[FluentTemp]', N'U') IS NULL)
 	)
 
 BeforeExecute
--- SqlServer.2014
+-- SqlServer.2014 (asynchronously)
 DECLARE @ID Int -- Int32
 SET     @ID = 1
 DECLARE @Name NVarChar(20) -- String
@@ -83,7 +83,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2014
+-- SqlServer.2014 (asynchronously)
 
 SELECT
 	[t].[ID],
@@ -95,13 +95,13 @@ WHERE
 	[t].[ID] = 1
 
 BeforeExecute
--- SqlServer.2014
+-- SqlServer.2014 (asynchronously)
 
 IF (OBJECT_ID(N'[FluentTemp]', N'U') IS NOT NULL)
 	DROP TABLE [FluentTemp]
 
 BeforeExecute
--- SqlServer.2014
+-- SqlServer.2014 (asynchronously)
 
 IF (OBJECT_ID(N'[FluentTemp]', N'U') IS NULL)
 	CREATE TABLE [FluentTemp]
@@ -112,7 +112,7 @@ IF (OBJECT_ID(N'[FluentTemp]', N'U') IS NULL)
 	)
 
 BeforeExecute
--- SqlServer.2014
+-- SqlServer.2014 (asynchronously)
 DECLARE @ID Int -- Int32
 SET     @ID = 1
 DECLARE @Name NVarChar(20) -- String
@@ -134,7 +134,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2014
+-- SqlServer.2014 (asynchronously)
 
 SELECT
 	[t].[ID],
@@ -146,13 +146,13 @@ WHERE
 	[t].[ID] = 1
 
 BeforeExecute
--- SqlServer.2014
+-- SqlServer.2014 (asynchronously)
 
 IF (OBJECT_ID(N'[FluentTemp]', N'U') IS NOT NULL)
 	DROP TABLE [FluentTemp]
 
 BeforeExecute
--- SqlServer.2014
+-- SqlServer.2014 (asynchronously)
 
 IF (OBJECT_ID(N'[FluentTemp]', N'U') IS NULL)
 	CREATE TABLE [FluentTemp]
@@ -163,7 +163,7 @@ IF (OBJECT_ID(N'[FluentTemp]', N'U') IS NULL)
 	)
 
 BeforeExecute
--- SqlServer.2014
+-- SqlServer.2014 (asynchronously)
 DECLARE @ID Int -- Int32
 SET     @ID = 1
 DECLARE @Name NVarChar(20) -- String
@@ -185,7 +185,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2014
+-- SqlServer.2014 (asynchronously)
 
 SELECT
 	[t].[ID],
@@ -197,7 +197,7 @@ WHERE
 	[t].[ID] = 1
 
 BeforeExecute
--- SqlServer.2014
+-- SqlServer.2014 (asynchronously)
 
 IF (OBJECT_ID(N'[FluentTemp]', N'U') IS NOT NULL)
 	DROP TABLE [FluentTemp]

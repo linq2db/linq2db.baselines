@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2014.MS SqlServer.2014
+-- SqlServer.2014.MS SqlServer.2014 (asynchronously)
 
 SELECT
 	[nm].[MiddleName]
@@ -9,7 +9,7 @@ WHERE
 	LEN([nm].[MiddleName] + N'.') <> 1 OR [nm].[MiddleName] IS NULL
 
 BeforeExecute
--- SqlServer.2014.MS SqlServer.2014
+-- SqlServer.2014.MS SqlServer.2014 (asynchronously)
 
 SELECT
 	[t1].[FirstName],

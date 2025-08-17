@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2014
+-- SqlServer.2014 (asynchronously)
 
 SELECT
 	[c_1].[ParentID],
@@ -16,7 +16,7 @@ WHERE
 	[c_1].[ParentID] = [p_1].[ParentID]
 
 BeforeExecute
--- SqlServer.2014
+-- SqlServer.2014 (asynchronously)
 
 SELECT
 	[c_1].[ParentID],

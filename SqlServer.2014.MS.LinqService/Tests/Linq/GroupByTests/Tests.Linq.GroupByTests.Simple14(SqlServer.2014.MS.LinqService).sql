@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2014.MS SqlServer.2014
+-- SqlServer.2014.MS SqlServer.2014 (asynchronously)
 
 SELECT
 	[m_1].[ParentID],
@@ -21,7 +21,7 @@ FROM
 		) [d_1] ON [m_1].[ParentID] = [d_1].[Key_1]
 
 BeforeExecute
--- SqlServer.2014.MS SqlServer.2014
+-- SqlServer.2014.MS SqlServer.2014 (asynchronously)
 
 SELECT
 	[p].[ParentID]

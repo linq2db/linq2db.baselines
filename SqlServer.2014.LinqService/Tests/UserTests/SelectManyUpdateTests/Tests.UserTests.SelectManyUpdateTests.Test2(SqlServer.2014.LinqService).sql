@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2014
+-- SqlServer.2014 (asynchronously)
 DECLARE @ChildID Int -- Int32
 SET     @ChildID = 10
 

@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2014
+-- SqlServer.2014 (asynchronously)
 DECLARE @p NVarChar(4000) -- String
 SET     @p = N'StrValue1'
 
@@ -14,7 +14,7 @@ WHERE
 	[e].[StringValue] + N'1' = @p
 
 BeforeExecute
--- SqlServer.2014
+-- SqlServer.2014 (asynchronously)
 
 SELECT
 	[t1].[Id],

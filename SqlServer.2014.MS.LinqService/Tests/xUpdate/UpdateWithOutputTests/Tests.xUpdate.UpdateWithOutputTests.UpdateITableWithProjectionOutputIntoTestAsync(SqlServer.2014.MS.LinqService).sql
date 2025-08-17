@@ -22,7 +22,7 @@ FROM
 		INNER JOIN [DestinationTable] [t] ON [t].[Id] = [s].[Id]
 
 BeforeExecute
--- SqlServer.2014.MS SqlServer.2014
+-- SqlServer.2014.MS SqlServer.2014 (asynchronously)
 
 SELECT
 	[t1].[Id],

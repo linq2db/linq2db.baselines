@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2014
+-- SqlServer.2014 (asynchronously)
 DECLARE @Value Int -- Int32
 SET     @Value = 200
 DECLARE @Id Int -- Int32

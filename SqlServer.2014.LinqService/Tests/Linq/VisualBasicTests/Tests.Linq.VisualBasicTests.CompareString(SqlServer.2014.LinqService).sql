@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2014
+-- SqlServer.2014 (asynchronously)
 
 SELECT
 	[p].[FirstName],
@@ -13,7 +13,7 @@ WHERE
 	[p].[FirstName] = N'John'
 
 BeforeExecute
--- SqlServer.2014
+-- SqlServer.2014 (asynchronously)
 
 SELECT
 	[p].[FirstName],

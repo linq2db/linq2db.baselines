@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2014
+-- SqlServer.2014 (asynchronously)
 
 SELECT
 	[inner_1].[Count_1]
@@ -16,7 +16,7 @@ FROM
 		) [inner_1] ON [t1].[GuidValue] = [inner_1].[Key_1]
 
 BeforeExecute
--- SqlServer.2014
+-- SqlServer.2014 (asynchronously)
 
 SELECT
 	[t1].[ID],

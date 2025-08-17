@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2014
+-- SqlServer.2014 (asynchronously)
 
 SELECT TOP (2)
 	CAST([v].[Integer] AS Float) / 33,

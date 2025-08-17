@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2014
+-- SqlServer.2014 (asynchronously)
 DECLARE @Value2 Int -- Int32
 SET     @Value2 = 11
 DECLARE @id Int -- Int32
@@ -13,7 +13,7 @@ WHERE
 	[UpdateSetTest].[Id] = @id
 
 BeforeExecute
--- SqlServer.2014
+-- SqlServer.2014 (asynchronously)
 DECLARE @id Int -- Int32
 SET     @id = 1
 
@@ -25,7 +25,7 @@ WHERE
 	[t1].[Id] = @id
 
 BeforeExecute
--- SqlServer.2014
+-- SqlServer.2014 (asynchronously)
 DECLARE @Value2 Int -- Int32
 SET     @Value2 = 12
 DECLARE @id Int -- Int32
@@ -39,7 +39,7 @@ WHERE
 	[UpdateSetTest].[Id] = @id
 
 BeforeExecute
--- SqlServer.2014
+-- SqlServer.2014 (asynchronously)
 DECLARE @id Int -- Int32
 SET     @id = 1
 

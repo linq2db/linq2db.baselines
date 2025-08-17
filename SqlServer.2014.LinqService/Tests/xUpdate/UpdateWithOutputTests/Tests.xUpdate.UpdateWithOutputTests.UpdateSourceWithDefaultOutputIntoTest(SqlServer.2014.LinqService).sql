@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2014
+-- SqlServer.2014 (asynchronously)
 
 UPDATE
 	[TableWithData]
@@ -21,7 +21,7 @@ WHERE
 	[TableWithData].[Id] > 3
 
 BeforeExecute
--- SqlServer.2014
+-- SqlServer.2014 (asynchronously)
 
 SELECT
 	[t1].[Id],
