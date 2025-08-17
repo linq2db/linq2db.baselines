@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.SA.MS SqlServer.2019
+-- SqlServer.SA.MS SqlServer.2019 (asynchronously)
 
 SELECT
 	[s].[ParentID],
@@ -12,7 +12,7 @@ WHERE
 	[c_1].[ChildID] < 0 OR [c_1].[ParentID] IS NULL
 
 BeforeExecute
--- SqlServer.SA.MS SqlServer.2019
+-- SqlServer.SA.MS SqlServer.2019 (asynchronously)
 
 SELECT
 	[m_1].[ParentID],
@@ -28,7 +28,7 @@ FROM
 		INNER JOIN [Child] [d] ON [m_1].[ParentID] = [d].[ParentID]
 
 BeforeExecute
--- SqlServer.SA.MS SqlServer.2019
+-- SqlServer.SA.MS SqlServer.2019 (asynchronously)
 
 SELECT
 	[t1].[ParentID],

@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.SA SqlServer.2019
+-- SqlServer.SA SqlServer.2019 (asynchronously)
 
 SELECT
 	(CAST(COUNT(*) AS Float) * 100) / SUM(COUNT(*)) OVER(),

@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2019 (asynchronously)
 DECLARE @GuidNonReadonly UniqueIdentifier -- Guid
 SET     @GuidNonReadonly = 'bc7b663d-0fde-4327-8f92-5d8cc3a11d11'
 
@@ -14,7 +14,7 @@ WHERE
 	[e].[GuidValue] = @GuidNonReadonly AND [e].[GuidNullableValue] = @GuidNonReadonly
 
 BeforeExecute
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2019 (asynchronously)
 
 SELECT
 	[t1].[Id],

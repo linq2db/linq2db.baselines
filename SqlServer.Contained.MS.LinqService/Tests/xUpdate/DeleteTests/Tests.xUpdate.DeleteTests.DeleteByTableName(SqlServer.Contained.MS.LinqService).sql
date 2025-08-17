@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2019 (asynchronously)
 DECLARE @FirstName NVarChar(4000) -- String
 SET     @FirstName = N'Steven'
 DECLARE @LastName NVarChar(4000) -- String
@@ -25,7 +25,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2019 (asynchronously)
 
 SELECT
 	COUNT(*)
@@ -33,7 +33,7 @@ FROM
 	[xxPerson] [t1]
 
 BeforeExecute
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2019 (asynchronously)
 
 SELECT TOP (2)
 	[t1].[FirstName],
@@ -45,7 +45,7 @@ FROM
 	[xxPerson] [t1]
 
 BeforeExecute
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2019 (asynchronously)
 DECLARE @ID Int -- Int32
 SET     @ID = 1
 
@@ -56,7 +56,7 @@ WHERE
 	[t1].[PersonID] = @ID
 
 BeforeExecute
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2019 (asynchronously)
 
 SELECT
 	COUNT(*)

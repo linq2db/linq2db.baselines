@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.SA.MS SqlServer.2019
+-- SqlServer.SA.MS SqlServer.2019 (asynchronously)
 
 SELECT
 	[t].[Value]
@@ -9,7 +9,7 @@ WHERE
 	[t].[Value] IS NULL
 
 BeforeExecute
--- SqlServer.SA.MS SqlServer.2019
+-- SqlServer.SA.MS SqlServer.2019 (asynchronously)
 
 SELECT
 	[t].[Value]
@@ -19,7 +19,7 @@ WHERE
 	1 = 0
 
 BeforeExecute
--- SqlServer.SA.MS SqlServer.2019
+-- SqlServer.SA.MS SqlServer.2019 (asynchronously)
 
 SELECT
 	[t].[Value]
@@ -29,7 +29,7 @@ WHERE
 	[t].[Value] IS NOT NULL
 
 BeforeExecute
--- SqlServer.SA.MS SqlServer.2019
+-- SqlServer.SA.MS SqlServer.2019 (asynchronously)
 
 SELECT
 	[t].[Value]

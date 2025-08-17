@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2019 (asynchronously)
 
 SELECT
 	[nm].[FirstName]
@@ -9,7 +9,7 @@ WHERE
 	LEN([nm].[FirstName] + N'.') <> 1
 
 BeforeExecute
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2019 (asynchronously)
 
 SELECT
 	[t1].[FirstName],

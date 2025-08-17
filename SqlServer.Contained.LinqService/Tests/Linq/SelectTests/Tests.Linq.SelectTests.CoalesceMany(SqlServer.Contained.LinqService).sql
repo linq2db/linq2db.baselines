@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2019 (asynchronously)
 
 SELECT
 	Coalesce([t].[Nullable1], [t].[Nullable2], [t].[Nullable3], [t].[Id]),
@@ -14,7 +14,7 @@ FROM
 	[CoalesceNullableFields] [t]
 
 BeforeExecute
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2019 (asynchronously)
 
 SELECT
 	[t1].[Id],

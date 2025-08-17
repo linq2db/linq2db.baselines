@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.SA.MS SqlServer.2019
+-- SqlServer.SA.MS SqlServer.2019 (asynchronously)
 
 SELECT
 	[s].[ID],
@@ -16,7 +16,7 @@ WHERE
 	[s].[FirstName] <> N''
 
 BeforeExecute
--- SqlServer.SA.MS SqlServer.2019
+-- SqlServer.SA.MS SqlServer.2019 (asynchronously)
 
 SELECT
 	[t1].[FirstName],

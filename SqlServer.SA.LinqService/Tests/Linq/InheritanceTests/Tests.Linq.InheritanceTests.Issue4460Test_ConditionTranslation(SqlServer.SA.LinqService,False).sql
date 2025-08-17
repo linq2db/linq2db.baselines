@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.SA SqlServer.2019
+-- SqlServer.SA SqlServer.2019 (asynchronously)
 DECLARE @Code NVarChar(4000) -- String
 SET     @Code = N'Child'
 DECLARE @Id Int -- Int32
@@ -25,7 +25,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.SA SqlServer.2019
+-- SqlServer.SA SqlServer.2019 (asynchronously)
 DECLARE @Code NVarChar(4000) -- String
 SET     @Code = N'Child2'
 DECLARE @Id Int -- Int32
@@ -51,7 +51,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.SA SqlServer.2019
+-- SqlServer.SA SqlServer.2019 (asynchronously)
 
 SELECT
 	[e].[Code],

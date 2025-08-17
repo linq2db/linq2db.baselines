@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.SA SqlServer.2019
+-- SqlServer.SA SqlServer.2019 (asynchronously)
 DECLARE @ID Int -- Int32
 SET     @ID = 5000
 DECLARE @MoneyValue Decimal(1, 0)
@@ -41,7 +41,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.SA SqlServer.2019
+-- SqlServer.SA SqlServer.2019 (asynchronously)
 
 SELECT
 	COUNT(*)
@@ -51,7 +51,7 @@ WHERE
 	[t].[ID] = 5000 AND DateAdd(day, [t].[SmallIntValue], [t].[DateTimeValue]) > DATETIMEFROMPARTS(2018, 1, 2, 0, 0, 0, 0)
 
 BeforeExecute
--- SqlServer.SA SqlServer.2019
+-- SqlServer.SA SqlServer.2019 (asynchronously)
 
 DELETE [t]
 FROM

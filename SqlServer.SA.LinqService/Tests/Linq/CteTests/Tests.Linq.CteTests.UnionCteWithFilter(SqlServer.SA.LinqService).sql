@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.SA SqlServer.2019
+-- SqlServer.SA SqlServer.2019 (asynchronously)
 
 WITH [BooksCte] ([Book_Id], [Book_Title], [Author_Name])
 AS

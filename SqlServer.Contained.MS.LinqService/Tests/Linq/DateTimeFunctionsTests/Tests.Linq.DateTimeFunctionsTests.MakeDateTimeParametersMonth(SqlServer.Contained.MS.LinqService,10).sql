@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2019 (asynchronously)
 DECLARE @month Int -- Int32
 SET     @month = 10
 

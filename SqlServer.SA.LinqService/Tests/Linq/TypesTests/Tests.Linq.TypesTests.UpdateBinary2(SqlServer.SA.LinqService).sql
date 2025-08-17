@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.SA SqlServer.2019
+-- SqlServer.SA SqlServer.2019 (asynchronously)
 DECLARE @BinaryValue VarBinary(5) -- Binary
 SET     @BinaryValue = 0x0102030405
 DECLARE @p Int -- Int32
@@ -13,7 +13,7 @@ WHERE
 	[LinqDataTypes].[ID] = @p
 
 BeforeExecute
--- SqlServer.SA SqlServer.2019
+-- SqlServer.SA SqlServer.2019 (asynchronously)
 DECLARE @BinaryValue VarBinary(5) -- Binary
 SET     @BinaryValue = 0x0504030201
 DECLARE @p Int -- Int32
@@ -27,7 +27,7 @@ WHERE
 	[LinqDataTypes].[ID] = @p
 
 BeforeExecute
--- SqlServer.SA SqlServer.2019
+-- SqlServer.SA SqlServer.2019 (asynchronously)
 
 SELECT
 	[t].[ID],

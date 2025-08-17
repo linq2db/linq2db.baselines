@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2019 (asynchronously)
 
 SELECT
 	[p1].[ParentID],
@@ -18,7 +18,7 @@ WHERE
 	[p2].[ParentID] <= 3
 
 BeforeExecute
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2019 (asynchronously)
 
 SELECT
 	[t1].[ParentID],

@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2019 (asynchronously)
 DECLARE @Id Int -- Int32
 SET     @Id = 1
 DECLARE @DateTime DateTime2
@@ -17,7 +17,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2019 (asynchronously)
 DECLARE @Id Int -- Int32
 SET     @Id = 2
 DECLARE @DateTime DateTime2
@@ -35,7 +35,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2019 (asynchronously)
 
 SELECT
 	[t1].[Id],

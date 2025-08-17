@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2019 (asynchronously)
 DECLARE @TestName Int -- Int32
 SET     @TestName = 2
 

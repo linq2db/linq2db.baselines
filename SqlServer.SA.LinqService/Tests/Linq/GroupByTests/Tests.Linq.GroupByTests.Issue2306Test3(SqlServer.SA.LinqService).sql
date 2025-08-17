@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.SA SqlServer.2019
+-- SqlServer.SA SqlServer.2019 (asynchronously)
 
 SELECT
 	[m_1].[PersonID],
@@ -12,7 +12,7 @@ FROM
 	[Person] [m_1]
 
 BeforeExecute
--- SqlServer.SA SqlServer.2019
+-- SqlServer.SA SqlServer.2019 (asynchronously)
 
 SELECT
 	[t1].[PersonID]
@@ -22,7 +22,7 @@ GROUP BY
 	[t1].[PersonID]
 
 BeforeExecute
--- SqlServer.SA SqlServer.2019
+-- SqlServer.SA SqlServer.2019 (asynchronously)
 
 SELECT
 	[m_1].[PersonID],
@@ -35,7 +35,7 @@ FROM
 	[Person] [m_1]
 
 BeforeExecute
--- SqlServer.SA SqlServer.2019
+-- SqlServer.SA SqlServer.2019 (asynchronously)
 
 SELECT
 	[t1].[PersonID]

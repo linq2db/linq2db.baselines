@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2019 (asynchronously)
 
 INSERT INTO [TestBool]
 (
@@ -13,7 +13,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2019 (asynchronously)
 
 SELECT TOP (2)
 	[t1].[Id],
@@ -22,7 +22,7 @@ FROM
 	[TestBool] [t1]
 
 BeforeExecute
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2019 (asynchronously)
 
 UPDATE
 	[TestBool]
@@ -35,7 +35,7 @@ SET
 	END
 
 BeforeExecute
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2019 (asynchronously)
 
 SELECT TOP (2)
 	[t1].[Id],
@@ -44,7 +44,7 @@ FROM
 	[TestBool] [t1]
 
 BeforeExecute
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2019 (asynchronously)
 
 UPDATE
 	[TestBool]
@@ -53,7 +53,7 @@ SET
 	[Value] = 1
 
 BeforeExecute
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2019 (asynchronously)
 
 SELECT TOP (2)
 	[t1].[Id],

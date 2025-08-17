@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.SA SqlServer.2019
+-- SqlServer.SA SqlServer.2019 (asynchronously)
 
 SELECT
 	[m_1].[Key_1],
@@ -15,7 +15,7 @@ FROM
 		INNER JOIN [Child] [d] ON [m_1].[Key_1] = [d].[ParentID]
 
 BeforeExecute
--- SqlServer.SA SqlServer.2019
+-- SqlServer.SA SqlServer.2019 (asynchronously)
 
 SELECT
 	[t1].[ParentID]

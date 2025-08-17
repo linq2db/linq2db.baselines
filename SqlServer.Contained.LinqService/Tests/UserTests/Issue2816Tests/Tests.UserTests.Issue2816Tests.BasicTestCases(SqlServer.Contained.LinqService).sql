@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2019 (asynchronously)
 
 SELECT
 	[p].[Id],
@@ -11,7 +11,7 @@ WHERE
                  　' FROM [p].[Text])) = N''
 
 BeforeExecute
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2019 (asynchronously)
 
 SELECT
 	[t1].[Id],

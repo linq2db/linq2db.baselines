@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2019 (asynchronously)
 DECLARE @value Int -- Int32
 SET     @value = 4
 
@@ -17,7 +17,7 @@ WHERE
 	)
 
 BeforeExecute
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2019 (asynchronously)
 DECLARE @value Int -- Int32
 SET     @value = 4
 
@@ -35,7 +35,7 @@ WHERE
 	)
 
 BeforeExecute
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2019 (asynchronously)
 DECLARE @value Int -- Int32
 SET     @value = 4
 
@@ -53,7 +53,7 @@ WHERE
 	)
 
 BeforeExecute
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2019 (asynchronously)
 DECLARE @value Int -- Int32
 SET     @value = 4
 

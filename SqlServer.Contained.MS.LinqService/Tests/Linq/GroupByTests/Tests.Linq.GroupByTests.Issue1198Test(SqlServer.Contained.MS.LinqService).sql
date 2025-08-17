@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2019 (asynchronously)
 
 SELECT TOP (1)
 	COUNT(IIF([t].[Status] = 3, 1, NULL))

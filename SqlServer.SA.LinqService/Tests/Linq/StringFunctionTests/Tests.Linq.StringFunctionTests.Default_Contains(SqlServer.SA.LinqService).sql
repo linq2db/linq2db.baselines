@@ -1,12 +1,12 @@
 ﻿BeforeExecute
--- SqlServer.SA SqlServer.2019
+-- SqlServer.SA SqlServer.2019 (asynchronously)
 
 DELETE [t1]
 FROM
 	[CollatedTable] [t1]
 
 BeforeExecute
--- SqlServer.SA SqlServer.2019
+-- SqlServer.SA SqlServer.2019 (asynchronously)
 DECLARE @Id Int -- Int32
 SET     @Id = 1
 DECLARE @CaseSensitive NVarChar(4000) -- String
@@ -28,7 +28,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.SA SqlServer.2019
+-- SqlServer.SA SqlServer.2019 (asynchronously)
 
 SELECT
 	COUNT(*)
@@ -38,7 +38,7 @@ WHERE
 	[r].[CaseSensitive] LIKE N'%stSt%' ESCAPE N'~'
 
 BeforeExecute
--- SqlServer.SA SqlServer.2019
+-- SqlServer.SA SqlServer.2019 (asynchronously)
 
 SELECT
 	COUNT(*)
@@ -48,7 +48,7 @@ WHERE
 	[r].[CaseInsensitive] LIKE N'%stSt%' ESCAPE N'~'
 
 BeforeExecute
--- SqlServer.SA SqlServer.2019
+-- SqlServer.SA SqlServer.2019 (asynchronously)
 
 SELECT
 	COUNT(*)
@@ -58,7 +58,7 @@ WHERE
 	[r].[CaseSensitive] LIKE N'%stst%' ESCAPE N'~'
 
 BeforeExecute
--- SqlServer.SA SqlServer.2019
+-- SqlServer.SA SqlServer.2019 (asynchronously)
 
 SELECT
 	COUNT(*)

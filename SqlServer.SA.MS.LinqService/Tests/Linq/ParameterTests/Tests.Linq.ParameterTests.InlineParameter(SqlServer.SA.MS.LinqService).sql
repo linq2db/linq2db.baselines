@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.SA.MS SqlServer.2019
+-- SqlServer.SA.MS SqlServer.2019 (asynchronously)
 
 SELECT TOP (1)
 	[p].[ParentID],
@@ -10,7 +10,7 @@ WHERE
 	[p].[ParentID] = 1
 
 BeforeExecute
--- SqlServer.SA.MS SqlServer.2019
+-- SqlServer.SA.MS SqlServer.2019 (asynchronously)
 
 SELECT TOP (1)
 	[p].[ParentID],

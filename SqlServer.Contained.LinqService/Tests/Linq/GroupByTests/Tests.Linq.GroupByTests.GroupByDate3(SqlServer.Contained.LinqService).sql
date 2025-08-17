@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2019 (asynchronously)
 
 SELECT
 	SUM([grp_1].[MoneyValue]),
@@ -17,7 +17,7 @@ GROUP BY
 	[grp_1].[Date_1]
 
 BeforeExecute
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2019 (asynchronously)
 
 SELECT
 	SUM([grp_1].[MoneyValue]),

@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2019 (asynchronously)
 
 SELECT
 	[arg].[Id],
@@ -11,7 +11,7 @@ FROM
 		) [arg]([Id], [Value]) ON [entity].[PersonID] = [arg].[Id]
 
 BeforeExecute
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2019 (asynchronously)
 
 SELECT
 	[arg].[Id],

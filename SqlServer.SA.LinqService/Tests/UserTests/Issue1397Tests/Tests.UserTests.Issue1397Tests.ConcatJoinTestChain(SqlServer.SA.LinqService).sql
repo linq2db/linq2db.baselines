@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.SA SqlServer.2019
+-- SqlServer.SA SqlServer.2019 (asynchronously)
 
 SELECT
 	[m_1].[ParentID],
@@ -23,7 +23,7 @@ FROM
 		) [t1] ON [m_1].[ParentID] = [t1].[ParentID]
 
 BeforeExecute
--- SqlServer.SA SqlServer.2019
+-- SqlServer.SA SqlServer.2019 (asynchronously)
 
 SELECT
 	[m_1].[ParentID],

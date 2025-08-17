@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2019 (asynchronously)
 
 SELECT
 	[t].[Value]
@@ -9,7 +9,7 @@ WHERE
 	[t].[Value] = 0
 
 BeforeExecute
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2019 (asynchronously)
 
 SELECT
 	[t].[Value]
@@ -19,7 +19,7 @@ WHERE
 	[t].[Value] = 0
 
 BeforeExecute
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2019 (asynchronously)
 
 SELECT
 	[t].[Value]
@@ -29,7 +29,7 @@ WHERE
 	[t].[Value] = 1 OR [t].[Value] IS NULL
 
 BeforeExecute
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2019 (asynchronously)
 
 SELECT
 	[t].[Value]

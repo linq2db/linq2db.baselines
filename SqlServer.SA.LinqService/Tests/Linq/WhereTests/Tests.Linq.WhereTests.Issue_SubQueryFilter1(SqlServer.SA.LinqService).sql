@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.SA SqlServer.2019
+-- SqlServer.SA SqlServer.2019 (asynchronously)
 DECLARE @filter1 NVarChar(4000) -- String
 SET     @filter1 = N'%John%'
 DECLARE @filter2 NVarChar(4000) -- String
@@ -41,7 +41,7 @@ ORDER BY
 	[t1].[PersonID]
 
 BeforeExecute
--- SqlServer.SA SqlServer.2019
+-- SqlServer.SA SqlServer.2019 (asynchronously)
 
 SELECT
 	[t1].[PersonID],
@@ -50,7 +50,7 @@ FROM
 	[Patient] [t1]
 
 BeforeExecute
--- SqlServer.SA SqlServer.2019
+-- SqlServer.SA SqlServer.2019 (asynchronously)
 
 SELECT
 	[t1].[FirstName],

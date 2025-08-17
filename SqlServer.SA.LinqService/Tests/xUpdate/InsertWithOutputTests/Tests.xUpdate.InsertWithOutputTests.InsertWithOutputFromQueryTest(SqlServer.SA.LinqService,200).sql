@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.SA SqlServer.2019
+-- SqlServer.SA SqlServer.2019 (asynchronously)
 DECLARE @param Int -- Int32
 SET     @param = 200
 
@@ -23,7 +23,7 @@ WHERE
 	[s].[Id] > 3
 
 BeforeExecute
--- SqlServer.SA SqlServer.2019
+-- SqlServer.SA SqlServer.2019 (asynchronously)
 DECLARE @param Int -- Int32
 SET     @param = 200
 

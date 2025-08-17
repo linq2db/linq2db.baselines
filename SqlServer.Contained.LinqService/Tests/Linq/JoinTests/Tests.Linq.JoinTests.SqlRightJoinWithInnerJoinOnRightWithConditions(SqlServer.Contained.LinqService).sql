@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2019 (asynchronously)
 DECLARE @id2 Int -- Int32
 SET     @id2 = 2
 DECLARE @id1 Int -- Int32

@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.SA SqlServer.2019
+-- SqlServer.SA SqlServer.2019 (asynchronously)
 DECLARE @Id Int -- Int32
 SET     @Id = 1002
 DECLARE @FirmId Int -- Int32
@@ -17,7 +17,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.SA SqlServer.2019
+-- SqlServer.SA SqlServer.2019 (asynchronously)
 DECLARE @Id Int -- Int32
 SET     @Id = 1
 
@@ -31,7 +31,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.SA SqlServer.2019
+-- SqlServer.SA SqlServer.2019 (asynchronously)
 DECLARE @DirectionId UniqueIdentifier -- Guid
 SET     @DirectionId = 'c5c0a778-694e-49d1-b1a0-f8ef5569c673'
 DECLARE @TargetId Int -- Int32
@@ -53,7 +53,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.SA SqlServer.2019
+-- SqlServer.SA SqlServer.2019 (asynchronously)
 
 SELECT
 	[a_Requests].[Id],
@@ -71,7 +71,7 @@ WHERE
 	[r].[Id] = 1002
 
 BeforeExecute
--- SqlServer.SA SqlServer.2019
+-- SqlServer.SA SqlServer.2019 (asynchronously)
 
 SELECT
 	[a_Requests].[Id],

@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2019 (asynchronously)
 DECLARE @param Int -- Int32
 SET     @param = 100
 DECLARE @id Int -- Int32
@@ -21,7 +21,7 @@ WHERE
 	[c_1].[ChildID] = 11
 
 BeforeExecute
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2019 (asynchronously)
 DECLARE @param Int -- Int32
 SET     @param = 100
 
@@ -33,7 +33,7 @@ WHERE
 	[c_1].[ChildID] > 1000
 
 BeforeExecute
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2019 (asynchronously)
 
 DELETE [c_1]
 FROM

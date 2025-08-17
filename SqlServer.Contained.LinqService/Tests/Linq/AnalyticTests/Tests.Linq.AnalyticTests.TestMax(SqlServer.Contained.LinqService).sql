@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2019 (asynchronously)
 
 SELECT
 	MAX([c_1].[ChildID]),
@@ -13,7 +13,7 @@ GROUP BY
 	[g_1].[ParentID]
 
 BeforeExecute
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2019 (asynchronously)
 
 SELECT
 	MAX([t1].[ParentID])
@@ -21,7 +21,7 @@ FROM
 	[Child] [t1]
 
 BeforeExecute
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2019 (asynchronously)
 
 SELECT
 	MAX(ALL [t1].[ParentID])
@@ -29,7 +29,7 @@ FROM
 	[Child] [t1]
 
 BeforeExecute
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2019 (asynchronously)
 
 SELECT
 	MAX(DISTINCT [t1].[ParentID])

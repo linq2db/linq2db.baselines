@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2019 (asynchronously)
 
 DELETE [t1]
 FROM
@@ -96,7 +96,7 @@ WHERE
 	[p].[FirstName] = @p AND [p].[LastName] = N'Shepard'
 
 BeforeExecute
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2019 (asynchronously)
 
 DELETE [t1]
 FROM
