@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL (asynchronously)
 
 SELECT
 	p."FirstName"
@@ -12,7 +12,7 @@ FROM
 	"Person" p_1
 
 BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL (asynchronously)
 
 SELECT
 	p."FirstName" || '/' || p."LastName"

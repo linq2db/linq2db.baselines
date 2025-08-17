@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL (asynchronously)
 
 SELECT
 	c_1."ParentID",
@@ -15,7 +15,7 @@ WHERE
 	)
 
 BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL (asynchronously)
 
 SELECT
 	t1."ParentID",
@@ -24,7 +24,7 @@ FROM
 	"Child" t1
 
 BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL (asynchronously)
 
 SELECT
 	t1."ParentID",

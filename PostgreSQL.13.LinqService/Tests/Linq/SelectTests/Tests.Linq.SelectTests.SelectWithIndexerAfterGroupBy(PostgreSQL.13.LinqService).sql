@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL (asynchronously)
 
 SELECT
 	x."Key_1",
@@ -25,7 +25,7 @@ ORDER BY
 	x."Key_1" DESC
 
 BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL (asynchronously)
 
 SELECT
 	t1."FirstName",

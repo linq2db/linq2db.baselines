@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL (asynchronously)
 
 INSERT INTO "Parent"
 (
@@ -13,7 +13,7 @@ VALUES
 )
 
 BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL (asynchronously)
 
 INSERT INTO "Child"
 (
@@ -27,7 +27,7 @@ VALUES
 )
 
 BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL (asynchronously)
 
 UPDATE
 	"Parent"

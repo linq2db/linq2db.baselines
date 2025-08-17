@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL (asynchronously)
 
 SELECT
 	COUNT(*)
@@ -7,7 +7,7 @@ FROM
 	"Child" t1
 
 BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL (asynchronously)
 
 WITH "CTE1_" (c1)
 AS
@@ -23,7 +23,7 @@ FROM
 	"CTE1_" t2
 
 BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL (asynchronously)
 
 WITH "CTE1_" (c1)
 AS
@@ -39,7 +39,7 @@ FROM
 	"CTE1_" t1
 
 BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL (asynchronously)
 
 WITH "CTE1_" (c1)
 AS

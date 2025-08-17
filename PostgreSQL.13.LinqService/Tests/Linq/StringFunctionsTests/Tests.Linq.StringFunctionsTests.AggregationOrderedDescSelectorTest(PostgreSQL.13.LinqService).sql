@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL (asynchronously)
 
 SELECT
 	STRING_AGG(g_1."Value1", ' -> ' ORDER BY g_1."Value3" DESC, g_1."Value1")

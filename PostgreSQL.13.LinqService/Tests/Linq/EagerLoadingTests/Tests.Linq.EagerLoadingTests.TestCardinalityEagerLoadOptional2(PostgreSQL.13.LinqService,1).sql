@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL (asynchronously)
 
 SELECT
 	m_1."Id",
@@ -23,7 +23,7 @@ FROM
 		INNER JOIN "EntityMC" d_1 ON m_1."Id" = d_1."FK"
 
 BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL (asynchronously)
 
 SELECT
 	m_1."Id",
@@ -36,7 +36,7 @@ FROM
 		INNER JOIN "EntityMB" d ON m_1."Id" = d."FK"
 
 BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL (asynchronously)
 
 SELECT
 	t1."Id",

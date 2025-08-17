@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL (asynchronously)
 DECLARE @FirstName Text(8) -- String
 SET     @FirstName = 'Update14'
 DECLARE @LastName Text(8) -- String
@@ -25,7 +25,7 @@ VALUES
 )
 
 BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL (asynchronously)
 DECLARE @name Integer -- Int32
 SET     @name = 8
 DECLARE @idx Integer -- Int32
@@ -39,7 +39,7 @@ WHERE
 	"Person"."FirstName" LIKE 'Update14%' ESCAPE '~'
 
 BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL (asynchronously)
 
 SELECT
 	COUNT(*)

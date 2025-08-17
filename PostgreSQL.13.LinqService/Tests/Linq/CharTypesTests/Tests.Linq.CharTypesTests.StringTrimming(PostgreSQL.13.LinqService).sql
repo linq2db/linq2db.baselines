@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL (asynchronously)
 
 SELECT
 	MAX(t1."ID")
@@ -7,7 +7,7 @@ FROM
 	"AllTypes" t1
 
 BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL (asynchronously)
 DECLARE @NString Text(6) -- String
 SET     @NString = 'test01'
 
@@ -21,7 +21,7 @@ VALUES
 )
 
 BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL (asynchronously)
 DECLARE @NString Text(8) -- String
 SET     @NString = 'test02  '
 
@@ -35,7 +35,7 @@ VALUES
 )
 
 BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL (asynchronously)
 DECLARE @NString Text(8) -- String
 SET     @NString = 'test03	 '
 
@@ -49,7 +49,7 @@ VALUES
 )
 
 BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL (asynchronously)
 DECLARE @NString Text(8) -- String
 SET     @NString = 'test04
  '
@@ -64,7 +64,7 @@ VALUES
 )
 
 BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL (asynchronously)
 DECLARE @NString Text(8) -- String
 SET     @NString = 'test05 '
 
@@ -78,7 +78,7 @@ VALUES
 )
 
 BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL (asynchronously)
 DECLARE @NString Text(8) -- String
 SET     @NString = 'test06 '
 
@@ -92,7 +92,7 @@ VALUES
 )
 
 BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL (asynchronously)
 DECLARE @NString Text(8) -- String
 SET     @NString = 'test07 '
 
@@ -106,7 +106,7 @@ VALUES
 )
 
 BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL (asynchronously)
 DECLARE @NString Text(8) -- String
 SET     @NString = 'test08  '
 
@@ -120,7 +120,7 @@ VALUES
 )
 
 BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL (asynchronously)
 DECLARE @NString Text(8) -- String
 SET     @NString = 'test09  '
 
@@ -134,7 +134,7 @@ VALUES
 )
 
 BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL (asynchronously)
 DECLARE @NString Text(8) -- String
 SET     @NString = 'test10  '
 
@@ -148,7 +148,7 @@ VALUES
 )
 
 BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL (asynchronously)
 DECLARE @NString Text(8) -- String
 SET     @NString = 'test11  '
 
@@ -162,7 +162,7 @@ VALUES
 )
 
 BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL (asynchronously)
 DECLARE @NString Text(8) -- String
 SET     @NString = 'test12  '
 
@@ -176,7 +176,7 @@ VALUES
 )
 
 BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL (asynchronously)
 DECLARE @NString Text(8) -- String
 SET     @NString = 'test13  '
 
@@ -190,7 +190,7 @@ VALUES
 )
 
 BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL (asynchronously)
 DECLARE @NString Text(8) -- String
 SET     @NString = 'test14  '
 
@@ -204,7 +204,7 @@ VALUES
 )
 
 BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL (asynchronously)
 DECLARE @NString Text(8) -- String
 SET     @NString = 'test15  '
 
@@ -218,7 +218,7 @@ VALUES
 )
 
 BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL (asynchronously)
 DECLARE @NString Text(8) -- String
 SET     @NString = 'test16  '
 
@@ -232,7 +232,7 @@ VALUES
 )
 
 BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL (asynchronously)
 DECLARE @NString Text(8) -- String
 SET     @NString = 'test17  '
 
@@ -246,7 +246,7 @@ VALUES
 )
 
 BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL (asynchronously)
 DECLARE @NString Text(8) -- String
 SET     @NString = 'test18  '
 
@@ -260,7 +260,7 @@ VALUES
 )
 
 BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL (asynchronously)
 DECLARE @NString Text(8) -- String
 SET     @NString = 'test19  '
 
@@ -274,7 +274,7 @@ VALUES
 )
 
 BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL (asynchronously)
 DECLARE @NString Text(8) -- String
 SET     @NString = 'test20　 '
 
@@ -288,7 +288,7 @@ VALUES
 )
 
 BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL (asynchronously)
 DECLARE @NString Text -- String
 SET     @NString = NULL
 
@@ -302,7 +302,7 @@ VALUES
 )
 
 BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL (asynchronously)
 DECLARE @lastId Integer -- Int32
 SET     @lastId = 2
 
@@ -317,7 +317,7 @@ ORDER BY
 	t1."ID"
 
 BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL (asynchronously)
 DECLARE @lastId Integer -- Int32
 SET     @lastId = 2
 

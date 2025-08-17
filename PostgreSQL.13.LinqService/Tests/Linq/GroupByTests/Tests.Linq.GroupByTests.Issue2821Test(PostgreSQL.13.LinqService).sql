@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL (asynchronously)
 DECLARE @currentDate Timestamp -- DateTime2
 SET     @currentDate = '2020-02-29 17:54:55.123'::timestamp
 DECLARE @currentDate_1 Timestamp -- DateTime2

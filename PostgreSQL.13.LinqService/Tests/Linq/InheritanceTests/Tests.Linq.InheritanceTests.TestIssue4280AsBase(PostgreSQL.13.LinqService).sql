@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL (asynchronously)
 DECLARE @Id Integer -- Int32
 SET     @Id = 2
 DECLARE @SerialNumber Text(7) -- String
@@ -25,7 +25,7 @@ VALUES
 )
 
 BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL (asynchronously)
 DECLARE @Id Integer -- Int32
 SET     @Id = 1
 DECLARE @SerialNumber Text(9) -- String
@@ -47,7 +47,7 @@ VALUES
 )
 
 BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL (asynchronously)
 
 SELECT
 	t1."DeviceType",
@@ -60,7 +60,7 @@ ORDER BY
 	t1."Id"
 
 BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL (asynchronously)
 DECLARE @SerialNumber Text(7) -- String
 SET     @SerialNumber = 'TV00002'
 DECLARE @DeviceType Text(2) -- String
@@ -80,7 +80,7 @@ WHERE
 	"Issue4280"."Id" = :Id
 
 BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL (asynchronously)
 DECLARE @SerialNumber Text(9) -- String
 SET     @SerialNumber = 'Disp00002'
 DECLARE @DeviceType Text(7) -- String
@@ -97,7 +97,7 @@ WHERE
 	"Issue4280"."Id" = :Id
 
 BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL (asynchronously)
 
 SELECT
 	t1."DeviceType",
