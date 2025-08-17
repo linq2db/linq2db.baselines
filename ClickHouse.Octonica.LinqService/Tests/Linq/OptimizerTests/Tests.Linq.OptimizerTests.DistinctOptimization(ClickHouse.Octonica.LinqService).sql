@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- ClickHouse.Octonica ClickHouse
+-- ClickHouse.Octonica ClickHouse (asynchronously)
 
 SELECT
 	s.Key1,
@@ -24,7 +24,7 @@ FROM
 		) d_1 ON d_1.DataKey11 = s.DataKey11 AND d_1.DataKey31 = s.DataKey31
 
 BeforeExecute
--- ClickHouse.Octonica ClickHouse
+-- ClickHouse.Octonica ClickHouse (asynchronously)
 
 SELECT
 	p.Key1,
