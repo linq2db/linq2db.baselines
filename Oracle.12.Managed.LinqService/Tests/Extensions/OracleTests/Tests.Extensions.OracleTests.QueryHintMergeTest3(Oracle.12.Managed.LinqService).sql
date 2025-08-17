@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Oracle.12.Managed Oracle.Managed Oracle12
+-- Oracle.12.Managed Oracle.Managed Oracle12 (asynchronously)
 
 SELECT /*+ QB_NAME(qb) MERGE(@qb) */
 	p."ParentID",

@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Oracle.12.Managed Oracle.Managed Oracle12
+-- Oracle.12.Managed Oracle.Managed Oracle12 (asynchronously)
 
 SELECT
 	e."Id",
@@ -12,7 +12,7 @@ WHERE
 	e."StringValue" || '1' = 'StrValue1'
 
 BeforeExecute
--- Oracle.12.Managed Oracle.Managed Oracle12
+-- Oracle.12.Managed Oracle.Managed Oracle12 (asynchronously)
 
 SELECT
 	t1."Id",

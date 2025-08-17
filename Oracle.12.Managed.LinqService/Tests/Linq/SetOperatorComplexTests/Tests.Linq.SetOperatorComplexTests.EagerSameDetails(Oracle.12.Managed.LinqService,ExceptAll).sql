@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Oracle.12.Managed Oracle.Managed Oracle12
+-- Oracle.12.Managed Oracle.Managed Oracle12 (asynchronously)
 
 SELECT
 	m_1."BookId",
@@ -30,7 +30,7 @@ FROM
 		LEFT JOIN "Author" a_Author ON d."FkAuthorId" = a_Author."AuthorId"
 
 BeforeExecute
--- Oracle.12.Managed Oracle.Managed Oracle12
+-- Oracle.12.Managed Oracle.Managed Oracle12 (asynchronously)
 
 SELECT
 	a_Book."BookId",
@@ -53,7 +53,7 @@ WHERE
 	)
 
 BeforeExecute
--- Oracle.12.Managed Oracle.Managed Oracle12
+-- Oracle.12.Managed Oracle.Managed Oracle12 (asynchronously)
 
 SELECT
 	m_1."BookId",
@@ -79,7 +79,7 @@ FROM
 		LEFT JOIN "Author" a_Author ON d_1."FkAuthorId" = a_Author."AuthorId"
 
 BeforeExecute
--- Oracle.12.Managed Oracle.Managed Oracle12
+-- Oracle.12.Managed Oracle.Managed Oracle12 (asynchronously)
 
 SELECT
 	m_1."AuthorId",
@@ -94,7 +94,7 @@ FROM
 		LEFT JOIN "Book" a_Book ON d."FkBookId" = a_Book."BookId"
 
 BeforeExecute
--- Oracle.12.Managed Oracle.Managed Oracle12
+-- Oracle.12.Managed Oracle.Managed Oracle12 (asynchronously)
 
 SELECT
 	t1."AuthorId",

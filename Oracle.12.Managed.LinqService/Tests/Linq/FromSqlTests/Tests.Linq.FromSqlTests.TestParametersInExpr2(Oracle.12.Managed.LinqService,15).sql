@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Oracle.12.Managed Oracle.Managed Oracle12
+-- Oracle.12.Managed Oracle.Managed Oracle12 (asynchronously)
 DECLARE @p Int64
 SET     @p = 5
 DECLARE @p_1 Int32
@@ -19,7 +19,7 @@ ORDER BY
 	s."id"
 
 BeforeExecute
--- Oracle.12.Managed Oracle.Managed Oracle12
+-- Oracle.12.Managed Oracle.Managed Oracle12 (asynchronously)
 DECLARE @startId Int32
 SET     @startId = 5
 DECLARE @endId Int32

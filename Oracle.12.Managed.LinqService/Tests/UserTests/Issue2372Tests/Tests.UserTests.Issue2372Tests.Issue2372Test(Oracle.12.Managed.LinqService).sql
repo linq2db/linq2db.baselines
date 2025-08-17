@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Oracle.12.Managed Oracle.Managed Oracle12
+-- Oracle.12.Managed Oracle.Managed Oracle12 (asynchronously)
 
 BEGIN
 	EXECUTE IMMEDIATE 'DROP TABLE "InventoryResource"';
@@ -11,7 +11,7 @@ EXCEPTION
 END;
 
 BeforeExecute
--- Oracle.12.Managed Oracle.Managed Oracle12
+-- Oracle.12.Managed Oracle.Managed Oracle12 (asynchronously)
 DECLARE @Id Raw(16) -- Binary
 SET     @Id = HEXTORAW('3D667BBCDE0F27438F925D8CC3A11D11')
 DECLARE @Status Varchar2(4) -- String

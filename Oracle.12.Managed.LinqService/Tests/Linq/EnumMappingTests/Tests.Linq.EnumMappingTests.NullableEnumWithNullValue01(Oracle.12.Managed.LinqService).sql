@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Oracle.12.Managed Oracle.Managed Oracle12
+-- Oracle.12.Managed Oracle.Managed Oracle12 (asynchronously)
 DECLARE @p Int32
 SET     @p = 104
 
@@ -9,7 +9,7 @@ WHERE
 	r.ID >= 101 AND r.ID < :p
 
 BeforeExecute
--- Oracle.12.Managed Oracle.Managed Oracle12
+-- Oracle.12.Managed Oracle.Managed Oracle12 (asynchronously)
 DECLARE @Id Int32
 SET     @Id = 101
 DECLARE @Value Int32
@@ -27,7 +27,7 @@ VALUES
 )
 
 BeforeExecute
--- Oracle.12.Managed Oracle.Managed Oracle12
+-- Oracle.12.Managed Oracle.Managed Oracle12 (asynchronously)
 DECLARE @Id Int32
 SET     @Id = 102
 DECLARE @Value Int32
@@ -45,7 +45,7 @@ VALUES
 )
 
 BeforeExecute
--- Oracle.12.Managed Oracle.Managed Oracle12
+-- Oracle.12.Managed Oracle.Managed Oracle12 (asynchronously)
 DECLARE @Id Int32
 SET     @Id = 103
 DECLARE @Value Int32
@@ -63,7 +63,7 @@ VALUES
 )
 
 BeforeExecute
--- Oracle.12.Managed Oracle.Managed Oracle12
+-- Oracle.12.Managed Oracle.Managed Oracle12 (asynchronously)
 
 SELECT
 	r.ID,
@@ -76,7 +76,7 @@ ORDER BY
 	r.ID
 
 BeforeExecute
--- Oracle.12.Managed Oracle.Managed Oracle12
+-- Oracle.12.Managed Oracle.Managed Oracle12 (asynchronously)
 
 SELECT
 	r.ID,
@@ -90,7 +90,7 @@ ORDER BY
 	r.ID
 
 BeforeExecute
--- Oracle.12.Managed Oracle.Managed Oracle12
+-- Oracle.12.Managed Oracle.Managed Oracle12 (asynchronously)
 DECLARE @p Int32
 SET     @p = 104
 

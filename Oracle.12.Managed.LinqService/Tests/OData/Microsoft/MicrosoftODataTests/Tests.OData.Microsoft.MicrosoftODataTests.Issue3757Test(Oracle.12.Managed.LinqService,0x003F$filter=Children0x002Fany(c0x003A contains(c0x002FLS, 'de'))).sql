@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Oracle.12.Managed Oracle.Managed Oracle12
+-- Oracle.12.Managed Oracle.Managed Oracle12 (asynchronously)
 DECLARE @TypedProperty Varchar2(4) -- String
 SET     @TypedProperty = '%de%'
 
@@ -30,7 +30,7 @@ FROM
 		INNER JOIN "Issue3757Level2" d ON m_1.ID = d."ParentId"
 
 BeforeExecute
--- Oracle.12.Managed Oracle.Managed Oracle12
+-- Oracle.12.Managed Oracle.Managed Oracle12 (asynchronously)
 DECLARE @TypedProperty Varchar2(4) -- String
 SET     @TypedProperty = '%de%'
 

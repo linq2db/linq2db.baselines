@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Oracle.12.Managed Oracle.Managed Oracle12
+-- Oracle.12.Managed Oracle.Managed Oracle12 (asynchronously)
 
 DELETE FROM
 	"LinqDataTypes" t1
@@ -7,7 +7,7 @@ WHERE
 	t1.ID > 1000
 
 BeforeExecute
--- Oracle.12.Managed Oracle.Managed Oracle12
+-- Oracle.12.Managed Oracle.Managed Oracle12 (asynchronously)
 DECLARE @data Blob -- Object
 SET     @data = NULL
 
@@ -25,7 +25,7 @@ VALUES
 )
 
 BeforeExecute
--- Oracle.12.Managed Oracle.Managed Oracle12
+-- Oracle.12.Managed Oracle.Managed Oracle12 (asynchronously)
 
 DELETE FROM
 	"LinqDataTypes" t1

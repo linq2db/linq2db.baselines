@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Oracle.12.Managed Oracle.Managed Oracle12
+-- Oracle.12.Managed Oracle.Managed Oracle12 (asynchronously)
 
 INSERT INTO "Person"
 (
@@ -15,7 +15,7 @@ VALUES
 )
 
 BeforeExecute
--- Oracle.12.Managed Oracle.Managed Oracle12
+-- Oracle.12.Managed Oracle.Managed Oracle12 (asynchronously)
 
 SELECT
 	COUNT(*)
@@ -25,7 +25,7 @@ WHERE
 	c_1."LastName" = 'Limonadovy'
 
 BeforeExecute
--- Oracle.12.Managed Oracle.Managed Oracle12
+-- Oracle.12.Managed Oracle.Managed Oracle12 (asynchronously)
 
 UPDATE
 	"Person" c_1
@@ -35,7 +35,7 @@ WHERE
 	c_1."LastName" = 'Limonadovy'
 
 BeforeExecute
--- Oracle.12.Managed Oracle.Managed Oracle12
+-- Oracle.12.Managed Oracle.Managed Oracle12 (asynchronously)
 
 SELECT
 	COUNT(*)

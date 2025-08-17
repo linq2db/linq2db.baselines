@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Oracle.12.Managed Oracle.Managed Oracle12
+-- Oracle.12.Managed Oracle.Managed Oracle12 (asynchronously)
 
 BEGIN
 	EXECUTE IMMEDIATE '
@@ -18,7 +18,7 @@ EXCEPTION
 END;
 
 BeforeExecute
--- Oracle.12.Managed Oracle.Managed Oracle12
+-- Oracle.12.Managed Oracle.Managed Oracle12 (asynchronously)
 DECLARE @ID Int32
 SET     @ID = 1
 DECLARE @Name Varchar2(4) -- String
@@ -40,7 +40,7 @@ VALUES
 )
 
 BeforeExecute
--- Oracle.12.Managed Oracle.Managed Oracle12
+-- Oracle.12.Managed Oracle.Managed Oracle12 (asynchronously)
 DECLARE @Name Varchar2(7) -- String
 SET     @Name = 'John II'
 DECLARE @LastName Varchar2(4) -- String
@@ -55,7 +55,7 @@ WHERE
 	t.ID = 1
 
 BeforeExecute
--- Oracle.12.Managed Oracle.Managed Oracle12
+-- Oracle.12.Managed Oracle.Managed Oracle12 (asynchronously)
 
 BEGIN
 	EXECUTE IMMEDIATE 'DROP TABLE "FluentTemp"';
