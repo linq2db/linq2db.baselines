@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- ClickHouse.Driver ClickHouse
+-- ClickHouse.Driver ClickHouse (asynchronously)
 
 SELECT
 	toDecimal128(t.MoneyValue * toDecimal64('1000', 4), 10)

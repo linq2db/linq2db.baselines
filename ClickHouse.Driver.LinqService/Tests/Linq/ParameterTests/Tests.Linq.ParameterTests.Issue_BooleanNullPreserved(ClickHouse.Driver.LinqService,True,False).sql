@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- ClickHouse.Driver ClickHouse
+-- ClickHouse.Driver ClickHouse (asynchronously)
 
 INSERT INTO TestBool
 (
@@ -13,7 +13,7 @@ VALUES
 )
 
 BeforeExecute
--- ClickHouse.Driver ClickHouse
+-- ClickHouse.Driver ClickHouse (asynchronously)
 
 SELECT
 	t1.Id,
@@ -23,7 +23,7 @@ FROM
 LIMIT 2
 
 BeforeExecute
--- ClickHouse.Driver ClickHouse
+-- ClickHouse.Driver ClickHouse (asynchronously)
 
 ALTER TABLE
 	TestBool
@@ -33,7 +33,7 @@ UPDATE
 WHERE 1
 
 BeforeExecute
--- ClickHouse.Driver ClickHouse
+-- ClickHouse.Driver ClickHouse (asynchronously)
 
 SELECT
 	t1.Id,

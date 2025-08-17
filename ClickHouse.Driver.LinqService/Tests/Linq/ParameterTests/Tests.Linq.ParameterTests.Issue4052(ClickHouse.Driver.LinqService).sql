@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- ClickHouse.Driver ClickHouse
+-- ClickHouse.Driver ClickHouse (asynchronously)
 
 SELECT
 	c_1.FirstName,

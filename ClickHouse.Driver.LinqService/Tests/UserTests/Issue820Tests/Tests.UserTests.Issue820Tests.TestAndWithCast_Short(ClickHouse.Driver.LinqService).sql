@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- ClickHouse.Driver ClickHouse
+-- ClickHouse.Driver ClickHouse (asynchronously)
 
 SELECT
 	t1.ID,
@@ -18,7 +18,7 @@ WHERE
 	toInt16(1) = t1.SmallIntValue
 
 BeforeExecute
--- ClickHouse.Driver ClickHouse
+-- ClickHouse.Driver ClickHouse (asynchronously)
 
 SELECT
 	t1.ID,

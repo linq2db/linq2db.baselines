@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- ClickHouse.Driver ClickHouse
+-- ClickHouse.Driver ClickHouse (asynchronously)
 
 SELECT
 	t.Value
@@ -9,7 +9,7 @@ WHERE
 	t.Value IS NULL
 
 BeforeExecute
--- ClickHouse.Driver ClickHouse
+-- ClickHouse.Driver ClickHouse (asynchronously)
 
 SELECT
 	t.Value

@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- ClickHouse.Driver ClickHouse
+-- ClickHouse.Driver ClickHouse (asynchronously)
 
 INSERT INTO Person
 (
@@ -19,7 +19,7 @@ VALUES
 )
 
 BeforeExecute
--- ClickHouse.Driver ClickHouse
+-- ClickHouse.Driver ClickHouse (asynchronously)
 
 SELECT
 	t1.FirstName,
@@ -34,7 +34,7 @@ WHERE
 LIMIT 1
 
 BeforeExecute
--- ClickHouse.Driver ClickHouse
+-- ClickHouse.Driver ClickHouse (asynchronously)
 
 ALTER TABLE
 	Person
@@ -47,7 +47,7 @@ WHERE
 	PersonID = 10500
 
 BeforeExecute
--- ClickHouse.Driver ClickHouse
+-- ClickHouse.Driver ClickHouse (asynchronously)
 
 SELECT
 	t1.FirstName,
@@ -62,7 +62,7 @@ WHERE
 LIMIT 1
 
 BeforeExecute
--- ClickHouse.Driver ClickHouse
+-- ClickHouse.Driver ClickHouse (asynchronously)
 
 ALTER TABLE
 	Person

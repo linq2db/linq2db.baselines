@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- ClickHouse.Driver ClickHouse
+-- ClickHouse.Driver ClickHouse (asynchronously)
 
 INSERT INTO Issue1303
 (
@@ -15,7 +15,7 @@ VALUES
 )
 
 BeforeExecute
--- ClickHouse.Driver ClickHouse
+-- ClickHouse.Driver ClickHouse (asynchronously)
 
 SELECT
 	t1.ID,
@@ -28,7 +28,7 @@ WHERE
 LIMIT 2
 
 BeforeExecute
--- ClickHouse.Driver ClickHouse
+-- ClickHouse.Driver ClickHouse (asynchronously)
 
 SELECT
 	t1.ID,
@@ -41,7 +41,7 @@ WHERE
 LIMIT 2
 
 BeforeExecute
--- ClickHouse.Driver ClickHouse
+-- ClickHouse.Driver ClickHouse (asynchronously)
 
 SELECT
 	t1.ID,

@@ -25,7 +25,7 @@ FROM
 	Parent p
 
 BeforeExecute
--- ClickHouse.Driver ClickHouse
+-- ClickHouse.Driver ClickHouse (asynchronously)
 
 SELECT
 	t.ID

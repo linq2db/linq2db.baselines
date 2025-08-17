@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- ClickHouse.Driver ClickHouse
+-- ClickHouse.Driver ClickHouse (asynchronously)
 
 ALTER TABLE
 	GrandChild
@@ -9,7 +9,7 @@ WHERE
 	ParentID = 10000 AND ChildID IS NULL
 
 BeforeExecute
--- ClickHouse.Driver ClickHouse
+-- ClickHouse.Driver ClickHouse (asynchronously)
 
 ALTER TABLE
 	GrandChild

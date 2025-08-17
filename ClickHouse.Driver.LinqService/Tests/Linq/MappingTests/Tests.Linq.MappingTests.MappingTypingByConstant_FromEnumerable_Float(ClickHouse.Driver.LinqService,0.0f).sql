@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- ClickHouse.Driver ClickHouse
+-- ClickHouse.Driver ClickHouse (asynchronously)
 
 SELECT
 	arg.Id,
@@ -10,7 +10,7 @@ FROM
 			SELECT 1 AS Id, toFloat32(0) AS Value) arg ON entity.PersonID = arg.Id
 
 BeforeExecute
--- ClickHouse.Driver ClickHouse
+-- ClickHouse.Driver ClickHouse (asynchronously)
 
 SELECT
 	arg.Id,

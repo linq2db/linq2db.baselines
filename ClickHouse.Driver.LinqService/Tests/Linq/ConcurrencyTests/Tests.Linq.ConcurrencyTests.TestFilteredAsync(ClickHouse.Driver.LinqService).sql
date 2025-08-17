@@ -15,7 +15,7 @@ VALUES
 )
 
 BeforeExecute
--- ClickHouse.Driver ClickHouse
+-- ClickHouse.Driver ClickHouse (asynchronously)
 
 SELECT
 	t1.Id,
@@ -36,7 +36,7 @@ WHERE
 	Id = 2 AND Id = 1 AND Stamp = -10
 
 BeforeExecute
--- ClickHouse.Driver ClickHouse
+-- ClickHouse.Driver ClickHouse (asynchronously)
 
 SELECT
 	t1.Id,
@@ -57,7 +57,7 @@ WHERE
 	Id = 1 AND Id = 1 AND Stamp = -10
 
 BeforeExecute
--- ClickHouse.Driver ClickHouse
+-- ClickHouse.Driver ClickHouse (asynchronously)
 
 SELECT
 	t1.Id,
@@ -75,7 +75,7 @@ DELETE WHERE
 	Id = 2 AND Id = 1 AND Stamp = -9
 
 BeforeExecute
--- ClickHouse.Driver ClickHouse
+-- ClickHouse.Driver ClickHouse (asynchronously)
 
 SELECT
 	t1.Id,
@@ -93,7 +93,7 @@ DELETE WHERE
 	Id = 1 AND Id = 1 AND Stamp = -9
 
 BeforeExecute
--- ClickHouse.Driver ClickHouse
+-- ClickHouse.Driver ClickHouse (asynchronously)
 
 SELECT
 	t1.Id,

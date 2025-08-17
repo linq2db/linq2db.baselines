@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- ClickHouse.Driver ClickHouse
+-- ClickHouse.Driver ClickHouse (asynchronously)
 
 INSERT INTO PR_1598_Insert_Table_Cache
 (
@@ -15,7 +15,7 @@ VALUES
 )
 
 BeforeExecute
--- ClickHouse.Driver ClickHouse
+-- ClickHouse.Driver ClickHouse (asynchronously)
 
 SELECT
 	t.Id,
@@ -28,7 +28,7 @@ WHERE
 LIMIT 1
 
 BeforeExecute
--- ClickHouse.Driver ClickHouse
+-- ClickHouse.Driver ClickHouse (asynchronously)
 
 ALTER TABLE
 	PR_1598_Insert_Table_Cache
@@ -39,7 +39,7 @@ WHERE
 	Id = 1
 
 BeforeExecute
--- ClickHouse.Driver ClickHouse
+-- ClickHouse.Driver ClickHouse (asynchronously)
 
 SELECT
 	t.Id,

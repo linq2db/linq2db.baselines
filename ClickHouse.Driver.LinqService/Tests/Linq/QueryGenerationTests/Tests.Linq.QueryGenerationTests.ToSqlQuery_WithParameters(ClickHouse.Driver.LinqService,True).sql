@@ -13,7 +13,7 @@ WHERE
 	p.PersonID = 1
 
 BeforeExecute
--- ClickHouse.Driver ClickHouse
+-- ClickHouse.Driver ClickHouse (asynchronously)
 
 SELECT
 	p.FirstName,

@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- ClickHouse.Driver ClickHouse
+-- ClickHouse.Driver ClickHouse (asynchronously)
 
 SELECT
 	p.ParentID,
@@ -27,7 +27,7 @@ FROM
 		) t2 ON p.ParentID = t2.ParentID AND t2.rn <= 1
 
 BeforeExecute
--- ClickHouse.Driver ClickHouse
+-- ClickHouse.Driver ClickHouse (asynchronously)
 
 SELECT
 	m_1.ParentID,
@@ -43,7 +43,7 @@ FROM
 		INNER JOIN Child d ON m_1.ParentID = d.ParentID
 
 BeforeExecute
--- ClickHouse.Driver ClickHouse
+-- ClickHouse.Driver ClickHouse (asynchronously)
 
 SELECT
 	t1.ParentID,

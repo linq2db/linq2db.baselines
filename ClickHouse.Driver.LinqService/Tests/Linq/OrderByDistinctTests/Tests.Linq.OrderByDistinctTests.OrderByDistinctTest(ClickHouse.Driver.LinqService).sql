@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- ClickHouse.Driver ClickHouse
+-- ClickHouse.Driver ClickHouse (asynchronously)
 
 SELECT DISTINCT
 	x.DuplicateData
@@ -8,7 +8,7 @@ FROM
 LIMIT 0, 3
 
 BeforeExecute
--- ClickHouse.Driver ClickHouse
+-- ClickHouse.Driver ClickHouse (asynchronously)
 
 SELECT
 	x.DuplicateData
@@ -21,7 +21,7 @@ ORDER BY
 LIMIT 0, 3
 
 BeforeExecute
--- ClickHouse.Driver ClickHouse
+-- ClickHouse.Driver ClickHouse (asynchronously)
 
 SELECT DISTINCT
 	x.DuplicateData
@@ -30,7 +30,7 @@ FROM
 LIMIT 0, 3
 
 BeforeExecute
--- ClickHouse.Driver ClickHouse
+-- ClickHouse.Driver ClickHouse (asynchronously)
 
 SELECT
 	x.DuplicateData

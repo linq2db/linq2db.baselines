@@ -1,10 +1,10 @@
 ﻿BeforeExecute
--- ClickHouse.Driver ClickHouse
+-- ClickHouse.Driver ClickHouse (asynchronously)
 
 DROP TABLE IF EXISTS Issue681Table2
 
 BeforeExecute
--- ClickHouse.Driver ClickHouse
+-- ClickHouse.Driver ClickHouse (asynchronously)
 
 CREATE TABLE Issue681Table2
 (
@@ -17,7 +17,7 @@ ENGINE = MergeTree()
 ORDER BY ID
 
 BeforeExecute
--- ClickHouse.Driver ClickHouse
+-- ClickHouse.Driver ClickHouse (asynchronously)
 
 DROP TABLE Issue681Table2
 

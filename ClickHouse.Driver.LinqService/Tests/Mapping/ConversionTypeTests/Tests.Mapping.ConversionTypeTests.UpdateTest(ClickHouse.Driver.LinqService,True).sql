@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- ClickHouse.Driver ClickHouse
+-- ClickHouse.Driver ClickHouse (asynchronously)
 
 ALTER TABLE
 	TrimTestTable
@@ -9,7 +9,7 @@ WHERE
 	ID = 3
 
 BeforeExecute
--- ClickHouse.Driver ClickHouse
+-- ClickHouse.Driver ClickHouse (asynchronously)
 
 ALTER TABLE
 	TrimTestTable
@@ -19,7 +19,7 @@ WHERE
 	Data = '***XXX***'
 
 BeforeExecute
--- ClickHouse.Driver ClickHouse
+-- ClickHouse.Driver ClickHouse (asynchronously)
 
 ALTER TABLE
 	TrimTestTable
@@ -29,7 +29,7 @@ WHERE
 	Data = '***HHH***'
 
 BeforeExecute
--- ClickHouse.Driver ClickHouse
+-- ClickHouse.Driver ClickHouse (asynchronously)
 
 SELECT
 	r.ID,
@@ -40,7 +40,7 @@ ORDER BY
 	r.ID
 
 BeforeExecute
--- ClickHouse.Driver ClickHouse
+-- ClickHouse.Driver ClickHouse (asynchronously)
 
 SELECT
 	r.ID,

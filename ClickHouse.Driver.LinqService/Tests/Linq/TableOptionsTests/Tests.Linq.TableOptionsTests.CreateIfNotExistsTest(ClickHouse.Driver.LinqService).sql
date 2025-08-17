@@ -1,10 +1,10 @@
 ﻿BeforeExecute
--- ClickHouse.Driver ClickHouse
+-- ClickHouse.Driver ClickHouse (asynchronously)
 
 DROP TABLE IF EXISTS CreateIfNotExistsTable
 
 BeforeExecute
--- ClickHouse.Driver ClickHouse
+-- ClickHouse.Driver ClickHouse (asynchronously)
 
 CREATE TABLE IF NOT EXISTS CreateIfNotExistsTable
 (
@@ -14,7 +14,7 @@ CREATE TABLE IF NOT EXISTS CreateIfNotExistsTable
 ENGINE = Memory()
 
 BeforeExecute
--- ClickHouse.Driver ClickHouse
+-- ClickHouse.Driver ClickHouse (asynchronously)
 
 INSERT INTO CreateIfNotExistsTable
 (
@@ -28,7 +28,7 @@ VALUES
 )
 
 BeforeExecute
--- ClickHouse.Driver ClickHouse
+-- ClickHouse.Driver ClickHouse (asynchronously)
 
 SELECT
 	t1.Id,
@@ -37,7 +37,7 @@ FROM
 	CreateIfNotExistsTable t1
 
 BeforeExecute
--- ClickHouse.Driver ClickHouse
+-- ClickHouse.Driver ClickHouse (asynchronously)
 
 CREATE TABLE IF NOT EXISTS CreateIfNotExistsTable
 (
@@ -47,12 +47,12 @@ CREATE TABLE IF NOT EXISTS CreateIfNotExistsTable
 ENGINE = Memory()
 
 BeforeExecute
--- ClickHouse.Driver ClickHouse
+-- ClickHouse.Driver ClickHouse (asynchronously)
 
 DROP TABLE IF EXISTS CreateIfNotExistsTable
 
 BeforeExecute
--- ClickHouse.Driver ClickHouse
+-- ClickHouse.Driver ClickHouse (asynchronously)
 
 DROP TABLE IF EXISTS CreateIfNotExistsTable
 

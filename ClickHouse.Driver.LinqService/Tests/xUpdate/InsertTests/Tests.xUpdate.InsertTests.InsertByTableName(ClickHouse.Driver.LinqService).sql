@@ -1,10 +1,10 @@
 ﻿BeforeExecute
--- ClickHouse.Driver ClickHouse
+-- ClickHouse.Driver ClickHouse (asynchronously)
 
 DROP TABLE IF EXISTS xxPerson
 
 BeforeExecute
--- ClickHouse.Driver ClickHouse
+-- ClickHouse.Driver ClickHouse (asynchronously)
 
 CREATE TABLE xxPerson
 (
@@ -20,7 +20,7 @@ ENGINE = MergeTree()
 ORDER BY PersonID
 
 BeforeExecute
--- ClickHouse.Driver ClickHouse
+-- ClickHouse.Driver ClickHouse (asynchronously)
 
 INSERT INTO xxPerson
 (
@@ -40,12 +40,12 @@ VALUES
 )
 
 BeforeExecute
--- ClickHouse.Driver ClickHouse
+-- ClickHouse.Driver ClickHouse (asynchronously)
 
 DROP TABLE xxPerson
 
 BeforeExecute
--- ClickHouse.Driver ClickHouse
+-- ClickHouse.Driver ClickHouse (asynchronously)
 
 DROP TABLE IF EXISTS xxPerson
 

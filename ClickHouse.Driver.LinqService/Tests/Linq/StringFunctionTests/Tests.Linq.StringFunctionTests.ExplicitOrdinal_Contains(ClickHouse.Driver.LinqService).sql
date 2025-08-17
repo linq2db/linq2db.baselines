@@ -1,12 +1,12 @@
 ﻿BeforeExecute
--- ClickHouse.Driver ClickHouse
+-- ClickHouse.Driver ClickHouse (asynchronously)
 
 ALTER TABLE
 	CollatedTable
 DELETE WHERE 1
 
 BeforeExecute
--- ClickHouse.Driver ClickHouse
+-- ClickHouse.Driver ClickHouse (asynchronously)
 
 INSERT INTO CollatedTable
 (
@@ -22,7 +22,7 @@ VALUES
 )
 
 BeforeExecute
--- ClickHouse.Driver ClickHouse
+-- ClickHouse.Driver ClickHouse (asynchronously)
 
 SELECT
 	COUNT(*)
@@ -32,7 +32,7 @@ WHERE
 	position(r.CaseSensitive, 'stSt') > 0
 
 BeforeExecute
--- ClickHouse.Driver ClickHouse
+-- ClickHouse.Driver ClickHouse (asynchronously)
 
 SELECT
 	COUNT(*)
@@ -42,7 +42,7 @@ WHERE
 	position(r.CaseInsensitive, 'stSt') > 0
 
 BeforeExecute
--- ClickHouse.Driver ClickHouse
+-- ClickHouse.Driver ClickHouse (asynchronously)
 
 SELECT
 	COUNT(*)
@@ -52,7 +52,7 @@ WHERE
 	position(r.CaseSensitive, 'stst') > 0
 
 BeforeExecute
--- ClickHouse.Driver ClickHouse
+-- ClickHouse.Driver ClickHouse (asynchronously)
 
 SELECT
 	COUNT(*)
