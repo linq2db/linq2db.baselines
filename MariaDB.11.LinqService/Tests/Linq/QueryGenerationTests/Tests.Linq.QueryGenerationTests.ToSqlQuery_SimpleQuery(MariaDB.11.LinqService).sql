@@ -13,7 +13,7 @@ WHERE
 	`p`.`PersonID` = 1
 
 BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MySql (asynchronously)
 
 SELECT
 	`p`.`FirstName`,

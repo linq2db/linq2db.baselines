@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MySql (asynchronously)
 DECLARE @TypedProperty VarChar(2) -- String
 SET     @TypedProperty = 'de'
 
@@ -30,7 +30,7 @@ FROM
 		INNER JOIN `Issue3757Level2` `d` ON `m_1`.`ID` = `d`.`ParentId`
 
 BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MySql (asynchronously)
 DECLARE @TypedProperty VarChar(2) -- String
 SET     @TypedProperty = 'de'
 

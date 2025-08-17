@@ -23,7 +23,7 @@ RETURNING
 	`DestinationTable`.`ValueStr`
 
 BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MySql (asynchronously)
 DECLARE @param Int32
 SET     @param = 100
 

@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MySql (asynchronously)
 DECLARE @p Int64
 SET     @p = 5
 DECLARE @p_1 Int32
@@ -20,7 +20,7 @@ ORDER BY
 	`c_1`.`id`
 
 BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MySql (asynchronously)
 DECLARE @startId Int32
 SET     @startId = 5
 DECLARE @endId Int32
