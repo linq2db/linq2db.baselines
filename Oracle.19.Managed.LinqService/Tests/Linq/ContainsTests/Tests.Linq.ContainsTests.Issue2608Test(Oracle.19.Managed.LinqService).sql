@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Oracle.19.Managed Oracle.Managed Oracle12
+-- Oracle.19.Managed Oracle.Managed Oracle12 (asynchronously)
 DECLARE @code Int32
 SET     @code = 1
 DECLARE @site Int32

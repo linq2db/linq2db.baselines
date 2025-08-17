@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Oracle.19.Managed Oracle.Managed Oracle12
+-- Oracle.19.Managed Oracle.Managed Oracle12 (asynchronously)
 
 SELECT
 	COUNT(*)
@@ -10,7 +10,7 @@ WHERE
 	a_Parent."ParentID" = 1
 
 BeforeExecute
--- Oracle.19.Managed Oracle.Managed Oracle12
+-- Oracle.19.Managed Oracle.Managed Oracle12 (asynchronously)
 
 SELECT
 	a_Parent."ParentID"

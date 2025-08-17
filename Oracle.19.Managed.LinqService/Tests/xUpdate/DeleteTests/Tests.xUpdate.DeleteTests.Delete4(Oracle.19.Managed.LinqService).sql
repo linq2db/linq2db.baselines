@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Oracle.19.Managed Oracle.Managed Oracle12
+-- Oracle.19.Managed Oracle.Managed Oracle12 (asynchronously)
 
 DELETE FROM
 	"GrandChild" gc
@@ -7,7 +7,7 @@ WHERE
 	gc."GrandChildID" IN (1001, 1002)
 
 BeforeExecute
--- Oracle.19.Managed Oracle.Managed Oracle12
+-- Oracle.19.Managed Oracle.Managed Oracle12 (asynchronously)
 
 INSERT INTO "GrandChild"
 (
@@ -23,7 +23,7 @@ VALUES
 )
 
 BeforeExecute
--- Oracle.19.Managed Oracle.Managed Oracle12
+-- Oracle.19.Managed Oracle.Managed Oracle12 (asynchronously)
 
 INSERT INTO "GrandChild"
 (
@@ -39,7 +39,7 @@ VALUES
 )
 
 BeforeExecute
--- Oracle.19.Managed Oracle.Managed Oracle12
+-- Oracle.19.Managed Oracle.Managed Oracle12 (asynchronously)
 
 SELECT
 	COUNT(*)
@@ -49,7 +49,7 @@ WHERE
 	gc."ParentID" = 1
 
 BeforeExecute
--- Oracle.19.Managed Oracle.Managed Oracle12
+-- Oracle.19.Managed Oracle.Managed Oracle12 (asynchronously)
 
 DELETE FROM
 	"GrandChild" t1
@@ -69,7 +69,7 @@ WHERE
 	)
 
 BeforeExecute
--- Oracle.19.Managed Oracle.Managed Oracle12
+-- Oracle.19.Managed Oracle.Managed Oracle12 (asynchronously)
 
 SELECT
 	COUNT(*)

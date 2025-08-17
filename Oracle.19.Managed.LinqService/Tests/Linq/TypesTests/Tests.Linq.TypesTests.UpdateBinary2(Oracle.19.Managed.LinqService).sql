@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Oracle.19.Managed Oracle.Managed Oracle12
+-- Oracle.19.Managed Oracle.Managed Oracle12 (asynchronously)
 DECLARE @BinaryValue Blob -- Object
 SET     @BinaryValue = HEXTORAW('0102030405')
 DECLARE @p Int32
@@ -13,7 +13,7 @@ WHERE
 	t.ID = :p
 
 BeforeExecute
--- Oracle.19.Managed Oracle.Managed Oracle12
+-- Oracle.19.Managed Oracle.Managed Oracle12 (asynchronously)
 DECLARE @BinaryValue Blob -- Object
 SET     @BinaryValue = HEXTORAW('0504030201')
 DECLARE @p Int32
@@ -27,7 +27,7 @@ WHERE
 	t.ID = :p
 
 BeforeExecute
--- Oracle.19.Managed Oracle.Managed Oracle12
+-- Oracle.19.Managed Oracle.Managed Oracle12 (asynchronously)
 
 SELECT
 	t.ID,

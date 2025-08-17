@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Oracle.19.Managed Oracle.Managed Oracle12
+-- Oracle.19.Managed Oracle.Managed Oracle12 (asynchronously)
 
 DELETE FROM
 	"Child" c_1
@@ -7,7 +7,7 @@ WHERE
 	c_1."ChildID" > 1000
 
 BeforeExecute
--- Oracle.19.Managed Oracle.Managed Oracle12
+-- Oracle.19.Managed Oracle.Managed Oracle12 (asynchronously)
 DECLARE @ChildID Int32
 SET     @ChildID = 1001
 
@@ -25,7 +25,7 @@ WHERE
 	c_1."ChildID" = 11
 
 BeforeExecute
--- Oracle.19.Managed Oracle.Managed Oracle12
+-- Oracle.19.Managed Oracle.Managed Oracle12 (asynchronously)
 DECLARE @id Int32
 SET     @id = 1001
 
@@ -37,7 +37,7 @@ WHERE
 	c_1."ChildID" = :id
 
 BeforeExecute
--- Oracle.19.Managed Oracle.Managed Oracle12
+-- Oracle.19.Managed Oracle.Managed Oracle12 (asynchronously)
 
 DELETE FROM
 	"Child" c_1

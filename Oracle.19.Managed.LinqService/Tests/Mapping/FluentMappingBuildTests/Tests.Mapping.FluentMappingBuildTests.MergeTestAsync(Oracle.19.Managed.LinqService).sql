@@ -11,7 +11,7 @@ EXCEPTION
 END;
 
 BeforeExecute
--- Oracle.19.Managed Oracle.Managed Oracle12
+-- Oracle.19.Managed Oracle.Managed Oracle12 (asynchronously)
 
 BEGIN
 	EXECUTE IMMEDIATE '
@@ -31,7 +31,7 @@ EXCEPTION
 END;
 
 BeforeExecute
--- Oracle.19.Managed Oracle.Managed Oracle12
+-- Oracle.19.Managed Oracle.Managed Oracle12 (asynchronously)
 DECLARE @ID Int32
 SET     @ID = 1
 DECLARE @Name Varchar2(4) -- String

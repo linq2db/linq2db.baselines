@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Oracle.19.Managed Oracle.Managed Oracle12
+-- Oracle.19.Managed Oracle.Managed Oracle12 (asynchronously)
 
 SELECT
 	TRUNC(t."DateTimeValue" + 11 * INTERVAL '1' YEAR)

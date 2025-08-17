@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Oracle.19.Managed Oracle.Managed Oracle12
+-- Oracle.19.Managed Oracle.Managed Oracle12 (asynchronously)
 
 DELETE FROM
 	"Person" t1
@@ -7,7 +7,7 @@ WHERE
 	t1."FirstName" LIKE 'Insert15%' ESCAPE '~'
 
 BeforeExecute
--- Oracle.19.Managed Oracle.Managed Oracle12
+-- Oracle.19.Managed Oracle.Managed Oracle12 (asynchronously)
 DECLARE @Gender Varchar2(1) -- String
 SET     @Gender = 'M'
 DECLARE @Name_FirstName Varchar2(8) -- String
@@ -33,7 +33,7 @@ VALUES
 )
 
 BeforeExecute
--- Oracle.19.Managed Oracle.Managed Oracle12
+-- Oracle.19.Managed Oracle.Managed Oracle12 (asynchronously)
 
 SELECT
 	COUNT(*)
@@ -43,7 +43,7 @@ WHERE
 	t1."FirstName" LIKE 'Insert15%' ESCAPE '~'
 
 BeforeExecute
--- Oracle.19.Managed Oracle.Managed Oracle12
+-- Oracle.19.Managed Oracle.Managed Oracle12 (asynchronously)
 
 DELETE FROM
 	"Person" t1

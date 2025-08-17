@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Oracle.19.Managed Oracle.Managed Oracle12
+-- Oracle.19.Managed Oracle.Managed Oracle12 (asynchronously)
 DECLARE @Gender Varchar2(1) -- String
 SET     @Gender = 'M'
 DECLARE @FirstName Varchar2(1) -- String
@@ -29,7 +29,7 @@ RETURNING
 	"PersonID" INTO :IDENTITY_PARAMETER
 
 BeforeExecute
--- Oracle.19.Managed Oracle.Managed Oracle12
+-- Oracle.19.Managed Oracle.Managed Oracle12 (asynchronously)
 DECLARE @Gender Varchar2(1) -- String
 SET     @Gender = 'M'
 DECLARE @FirstName Varchar2(1) -- String
@@ -59,7 +59,7 @@ RETURNING
 	"PersonID" INTO :IDENTITY_PARAMETER
 
 BeforeExecute
--- Oracle.19.Managed Oracle.Managed Oracle12
+-- Oracle.19.Managed Oracle.Managed Oracle12 (asynchronously)
 DECLARE @id1 Int32
 SET     @id1 = 5
 
@@ -76,7 +76,7 @@ WHERE
 FETCH NEXT 1 ROWS ONLY
 
 BeforeExecute
--- Oracle.19.Managed Oracle.Managed Oracle12
+-- Oracle.19.Managed Oracle.Managed Oracle12 (asynchronously)
 DECLARE @id2 Int32
 SET     @id2 = 6
 
