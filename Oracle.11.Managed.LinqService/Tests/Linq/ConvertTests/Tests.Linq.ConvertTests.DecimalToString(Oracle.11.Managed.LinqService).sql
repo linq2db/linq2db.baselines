@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Oracle.11.Managed Oracle11
+-- Oracle.11.Managed Oracle11 (asynchronously)
 
 SELECT
 	RTRIM(Replace(CAST(p."MoneyValue" AS VarChar(255)), CAST(',' AS VarChar(255)), CAST('.' AS VarChar(255))), '0.')

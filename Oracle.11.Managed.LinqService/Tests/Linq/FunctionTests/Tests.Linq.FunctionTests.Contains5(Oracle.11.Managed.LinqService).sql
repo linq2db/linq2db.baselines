@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Oracle.11.Managed Oracle11
+-- Oracle.11.Managed Oracle11 (asynchronously)
 
 SELECT
 	p."ParentID",
@@ -10,7 +10,7 @@ WHERE
 	p."ParentID" IN (1, 2)
 
 BeforeExecute
--- Oracle.11.Managed Oracle11
+-- Oracle.11.Managed Oracle11 (asynchronously)
 
 SELECT
 	p."ParentID",

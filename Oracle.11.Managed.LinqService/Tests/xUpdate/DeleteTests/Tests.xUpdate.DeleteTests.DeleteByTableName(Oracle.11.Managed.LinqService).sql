@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Oracle.11.Managed Oracle11
+-- Oracle.11.Managed Oracle11 (asynchronously)
 DECLARE @FirstName Varchar2(6) -- String
 SET     @FirstName = 'Steven'
 DECLARE @LastName Varchar2(4) -- String
@@ -25,7 +25,7 @@ VALUES
 )
 
 BeforeExecute
--- Oracle.11.Managed Oracle11
+-- Oracle.11.Managed Oracle11 (asynchronously)
 
 SELECT
 	COUNT(*)
@@ -33,7 +33,7 @@ FROM
 	"xxPerson_ol" t1
 
 BeforeExecute
--- Oracle.11.Managed Oracle11
+-- Oracle.11.Managed Oracle11 (asynchronously)
 
 SELECT
 	t1."FirstName",
@@ -47,7 +47,7 @@ WHERE
 	ROWNUM <= 2
 
 BeforeExecute
--- Oracle.11.Managed Oracle11
+-- Oracle.11.Managed Oracle11 (asynchronously)
 DECLARE @ID Int32
 SET     @ID = 1
 
@@ -57,7 +57,7 @@ WHERE
 	t1."PersonID" = :ID
 
 BeforeExecute
--- Oracle.11.Managed Oracle11
+-- Oracle.11.Managed Oracle11 (asynchronously)
 
 SELECT
 	COUNT(*)

@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Oracle.11.Managed Oracle11
+-- Oracle.11.Managed Oracle11 (asynchronously)
 
 INSERT INTO "InsertIssueTest"
 (
@@ -21,7 +21,7 @@ FROM
 	) t2
 
 BeforeExecute
--- Oracle.11.Managed Oracle11
+-- Oracle.11.Managed Oracle11 (asynchronously)
 DECLARE @cond Int16
 SET     @cond = 1234
 
@@ -45,7 +45,7 @@ FROM
 	) t2
 
 BeforeExecute
--- Oracle.11.Managed Oracle11
+-- Oracle.11.Managed Oracle11 (asynchronously)
 
 SELECT
 	t1.ID,

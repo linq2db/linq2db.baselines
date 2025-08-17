@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Oracle.11.Managed Oracle11
+-- Oracle.11.Managed Oracle11 (asynchronously)
 
 SELECT /*+ NO_MERGE(p) NO_MERGE(c_1) */
 	p."ParentID",

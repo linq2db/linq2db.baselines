@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Oracle.11.Managed Oracle11
+-- Oracle.11.Managed Oracle11 (asynchronously)
 
 SELECT
 	t."Value"
@@ -9,7 +9,7 @@ WHERE
 	t."Value" = 0
 
 BeforeExecute
--- Oracle.11.Managed Oracle11
+-- Oracle.11.Managed Oracle11 (asynchronously)
 
 SELECT
 	t."Value"
@@ -19,7 +19,7 @@ WHERE
 	t."Value" = 0
 
 BeforeExecute
--- Oracle.11.Managed Oracle11
+-- Oracle.11.Managed Oracle11 (asynchronously)
 
 SELECT
 	t."Value"
@@ -29,7 +29,7 @@ WHERE
 	t."Value" = 1 OR t."Value" IS NULL
 
 BeforeExecute
--- Oracle.11.Managed Oracle11
+-- Oracle.11.Managed Oracle11 (asynchronously)
 
 SELECT
 	t."Value"

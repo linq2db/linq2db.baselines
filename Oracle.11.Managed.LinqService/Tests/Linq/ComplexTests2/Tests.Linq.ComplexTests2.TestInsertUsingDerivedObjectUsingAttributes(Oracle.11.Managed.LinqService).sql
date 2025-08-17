@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Oracle.11.Managed Oracle11
+-- Oracle.11.Managed Oracle11 (asynchronously)
 DECLARE @FirstName Varchar2(21) -- String
 SET     @FirstName = 'test_inherited_insert'
 DECLARE @LastName Varchar2(4) -- String
@@ -29,7 +29,7 @@ RETURNING
 	"PersonID" INTO :IDENTITY_PARAMETER
 
 BeforeExecute
--- Oracle.11.Managed Oracle11
+-- Oracle.11.Managed Oracle11 (asynchronously)
 
 SELECT
 	t1."FirstName",
@@ -43,7 +43,7 @@ WHERE
 	t1."FirstName" = 'test_inherited_insert' AND ROWNUM <= 1
 
 BeforeExecute
--- Oracle.11.Managed Oracle11
+-- Oracle.11.Managed Oracle11 (asynchronously)
 DECLARE @FirstName Varchar2(21) -- String
 SET     @FirstName = 'test_inherited_insert'
 DECLARE @LastName Varchar2(4) -- String
@@ -66,7 +66,7 @@ WHERE
 	t1."PersonID" = :ID
 
 BeforeExecute
--- Oracle.11.Managed Oracle11
+-- Oracle.11.Managed Oracle11 (asynchronously)
 
 SELECT
 	t1."FirstName",
@@ -80,7 +80,7 @@ WHERE
 	t1."FirstName" = 'test_inherited_insert' AND ROWNUM <= 1
 
 BeforeExecute
--- Oracle.11.Managed Oracle11
+-- Oracle.11.Managed Oracle11 (asynchronously)
 DECLARE @ID Int32
 SET     @ID = 5
 

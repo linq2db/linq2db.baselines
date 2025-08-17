@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Oracle.11.Managed Oracle11
+-- Oracle.11.Managed Oracle11 (asynchronously)
 
 SELECT
 	COUNT(*)
@@ -7,7 +7,7 @@ FROM
 	"Child" t1
 
 BeforeExecute
--- Oracle.11.Managed Oracle11
+-- Oracle.11.Managed Oracle11 (asynchronously)
 
 WITH CTE1_ ("c1")
 AS
@@ -23,7 +23,7 @@ FROM
 	CTE1_ t2
 
 BeforeExecute
--- Oracle.11.Managed Oracle11
+-- Oracle.11.Managed Oracle11 (asynchronously)
 
 WITH CTE1_ ("c1")
 AS
@@ -39,7 +39,7 @@ FROM
 	CTE1_ t1
 
 BeforeExecute
--- Oracle.11.Managed Oracle11
+-- Oracle.11.Managed Oracle11 (asynchronously)
 
 WITH CTE1_ ("c1")
 AS

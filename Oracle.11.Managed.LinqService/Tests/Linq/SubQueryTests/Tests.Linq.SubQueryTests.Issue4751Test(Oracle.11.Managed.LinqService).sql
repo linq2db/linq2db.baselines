@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Oracle.11.Managed Oracle11
+-- Oracle.11.Managed Oracle11 (asynchronously)
 DECLARE @skip Int32
 SET     @skip = 20
 DECLARE @take Int32
@@ -102,7 +102,7 @@ WHERE
 	t5.RN > :skip
 
 BeforeExecute
--- Oracle.11.Managed Oracle11
+-- Oracle.11.Managed Oracle11 (asynchronously)
 
 SELECT
 	COUNT(*)

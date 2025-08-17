@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Oracle.11.Managed Oracle11
+-- Oracle.11.Managed Oracle11 (asynchronously)
 
 DELETE FROM
 	"Parent" p
@@ -7,7 +7,7 @@ WHERE
 	p."Value1" = 11
 
 BeforeExecute
--- Oracle.11.Managed Oracle11
+-- Oracle.11.Managed Oracle11 (asynchronously)
 
 INSERT INTO "Parent"
 (
@@ -23,7 +23,7 @@ WHERE
 	c_1."ChildID" = 11
 
 BeforeExecute
--- Oracle.11.Managed Oracle11
+-- Oracle.11.Managed Oracle11 (asynchronously)
 
 SELECT
 	COUNT(*)
@@ -33,7 +33,7 @@ WHERE
 	p."Value1" = 11
 
 BeforeExecute
--- Oracle.11.Managed Oracle11
+-- Oracle.11.Managed Oracle11 (asynchronously)
 
 DELETE FROM
 	"Parent" p

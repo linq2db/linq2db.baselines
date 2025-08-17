@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Oracle.11.Managed Oracle11
+-- Oracle.11.Managed Oracle11 (asynchronously)
 DECLARE @input Varchar2(6) -- String
 SET     @input = '%test%'
 
@@ -14,7 +14,7 @@ WHERE
 	Lower(m_1."FirstName") LIKE :input ESCAPE '~'
 
 BeforeExecute
--- Oracle.11.Managed Oracle11
+-- Oracle.11.Managed Oracle11 (asynchronously)
 DECLARE @input Varchar2(6) -- String
 SET     @input = '%test%'
 

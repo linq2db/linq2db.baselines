@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Oracle.11.Managed Oracle11
+-- Oracle.11.Managed Oracle11 (asynchronously)
 DECLARE @cpty Varchar2(3) -- String
 SET     @cpty = '%C%'
 DECLARE @cpty_1 Varchar2(3) -- String

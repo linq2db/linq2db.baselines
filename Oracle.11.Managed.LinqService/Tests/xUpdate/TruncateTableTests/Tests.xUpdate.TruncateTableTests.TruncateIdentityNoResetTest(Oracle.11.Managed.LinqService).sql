@@ -1,10 +1,10 @@
 ﻿BeforeExecute
--- Oracle.11.Managed Oracle11
+-- Oracle.11.Managed Oracle11 (asynchronously)
 
 TRUNCATE TABLE "test_temp"
 
 BeforeExecute
--- Oracle.11.Managed Oracle11
+-- Oracle.11.Managed Oracle11 (asynchronously)
 
 INSERT INTO "test_temp"
 (
@@ -16,7 +16,7 @@ VALUES
 )
 
 BeforeExecute
--- Oracle.11.Managed Oracle11
+-- Oracle.11.Managed Oracle11 (asynchronously)
 
 INSERT INTO "test_temp"
 (
@@ -28,7 +28,7 @@ VALUES
 )
 
 BeforeExecute
--- Oracle.11.Managed Oracle11
+-- Oracle.11.Managed Oracle11 (asynchronously)
 DECLARE @skip Int32
 SET     @skip = 1
 
@@ -60,12 +60,12 @@ ORDER BY
 	t3.ID
 
 BeforeExecute
--- Oracle.11.Managed Oracle11
+-- Oracle.11.Managed Oracle11 (asynchronously)
 
 TRUNCATE TABLE "test_temp"
 
 BeforeExecute
--- Oracle.11.Managed Oracle11
+-- Oracle.11.Managed Oracle11 (asynchronously)
 
 INSERT INTO "test_temp"
 (
@@ -77,7 +77,7 @@ VALUES
 )
 
 BeforeExecute
--- Oracle.11.Managed Oracle11
+-- Oracle.11.Managed Oracle11 (asynchronously)
 
 INSERT INTO "test_temp"
 (
@@ -89,7 +89,7 @@ VALUES
 )
 
 BeforeExecute
--- Oracle.11.Managed Oracle11
+-- Oracle.11.Managed Oracle11 (asynchronously)
 DECLARE @skip Int32
 SET     @skip = 1
 

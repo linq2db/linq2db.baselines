@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Oracle.11.Managed Oracle11
+-- Oracle.11.Managed Oracle11 (asynchronously)
 
 SELECT /*+ NOCACHE(p) NOCACHE(c_1) FULL(c1) NOCACHE(c1) CLUSTER(c_2) CLUSTER(a_Parent) PARALLEL(p1) */
 	p."ParentID",

@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Oracle.11.Managed Oracle11
+-- Oracle.11.Managed Oracle11 (asynchronously)
 DECLARE @Id Int32
 SET     @Id = 1
 DECLARE @StringConverted NVarchar2(4) -- String
@@ -17,7 +17,7 @@ VALUES
 )
 
 BeforeExecute
--- Oracle.11.Managed Oracle11
+-- Oracle.11.Managed Oracle11 (asynchronously)
 DECLARE @Id Int32
 SET     @Id = 2
 DECLARE @StringConverted NVarchar2(53) -- String
@@ -35,7 +35,7 @@ VALUES
 )
 
 BeforeExecute
--- Oracle.11.Managed Oracle11
+-- Oracle.11.Managed Oracle11 (asynchronously)
 
 SELECT
 	t1."Id",

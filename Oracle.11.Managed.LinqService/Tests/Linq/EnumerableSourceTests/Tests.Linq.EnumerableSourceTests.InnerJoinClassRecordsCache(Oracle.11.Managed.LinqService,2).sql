@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Oracle.11.Managed Oracle11
+-- Oracle.11.Managed Oracle11 (asynchronously)
 
 SELECT
 	p."FirstName",
@@ -15,7 +15,7 @@ FROM
 			SELECT 4 FROM sys.dual) n ON p."PersonID" = n.ID
 
 BeforeExecute
--- Oracle.11.Managed Oracle11
+-- Oracle.11.Managed Oracle11 (asynchronously)
 
 SELECT
 	p."FirstName",

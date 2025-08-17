@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Oracle.11.Managed Oracle11
+-- Oracle.11.Managed Oracle11 (asynchronously)
 
 DELETE FROM
 	"LinqDataTypes" t
@@ -7,7 +7,7 @@ WHERE
 	t.ID > 1000
 
 BeforeExecute
--- Oracle.11.Managed Oracle11
+-- Oracle.11.Managed Oracle11 (asynchronously)
 DECLARE @ID Int32
 SET     @ID = 1001
 DECLARE @MoneyValue Decimal(1, 0)
@@ -45,7 +45,7 @@ VALUES
 )
 
 BeforeExecute
--- Oracle.11.Managed Oracle11
+-- Oracle.11.Managed Oracle11 (asynchronously)
 
 SELECT
 	t.ID,
@@ -61,7 +61,7 @@ WHERE
 	t.ID = 1001 AND ROWNUM <= 2
 
 BeforeExecute
--- Oracle.11.Managed Oracle11
+-- Oracle.11.Managed Oracle11 (asynchronously)
 
 DELETE FROM
 	"LinqDataTypes" t

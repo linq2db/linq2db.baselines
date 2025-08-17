@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Oracle.11.Managed Oracle11
+-- Oracle.11.Managed Oracle11 (asynchronously)
 
 SELECT
 	e."Id",
@@ -13,7 +13,7 @@ WHERE
 	e."GuidNullableValue" = HEXTORAW('3D667BBCDE0F27438F925D8CC3A11D11')
 
 BeforeExecute
--- Oracle.11.Managed Oracle11
+-- Oracle.11.Managed Oracle11 (asynchronously)
 
 SELECT
 	t1."Id",

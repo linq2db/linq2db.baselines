@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Oracle.11.Managed Oracle11
+-- Oracle.11.Managed Oracle11 (asynchronously)
 
 SELECT
 	m_1."PersonID",
@@ -12,7 +12,7 @@ WHERE
 	Lower(m_1."FirstName") LIKE '%test%' ESCAPE '~'
 
 BeforeExecute
--- Oracle.11.Managed Oracle11
+-- Oracle.11.Managed Oracle11 (asynchronously)
 
 SELECT
 	p."FirstName",

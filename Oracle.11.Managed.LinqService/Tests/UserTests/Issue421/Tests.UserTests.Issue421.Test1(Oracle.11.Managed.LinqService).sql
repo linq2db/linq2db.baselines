@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Oracle.11.Managed Oracle11
+-- Oracle.11.Managed Oracle11 (asynchronously)
 DECLARE @Id Int32
 SET     @Id = 1
 DECLARE @BlobValue Blob -- Object
@@ -17,7 +17,7 @@ VALUES
 )
 
 BeforeExecute
--- Oracle.11.Managed Oracle11
+-- Oracle.11.Managed Oracle11 (asynchronously)
 
 SELECT
 	t1."Id",
@@ -28,7 +28,7 @@ WHERE
 	t1."Id" = 1 AND ROWNUM <= 1
 
 BeforeExecute
--- Oracle.11.Managed Oracle11
+-- Oracle.11.Managed Oracle11 (asynchronously)
 DECLARE @BlobValue Blob -- Object
 SET     @BlobValue = HEXTORAW('030201')
 
@@ -40,7 +40,7 @@ WHERE
 	t1."Id" = 1
 
 BeforeExecute
--- Oracle.11.Managed Oracle11
+-- Oracle.11.Managed Oracle11 (asynchronously)
 
 SELECT
 	t1."Id",

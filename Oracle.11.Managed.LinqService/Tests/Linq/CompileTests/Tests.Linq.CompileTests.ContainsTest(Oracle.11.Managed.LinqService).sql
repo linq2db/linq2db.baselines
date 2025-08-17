@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Oracle.11.Managed Oracle11
+-- Oracle.11.Managed Oracle11 (asynchronously)
 DECLARE @p Int32
 SET     @p = 1
 
@@ -17,7 +17,7 @@ SELECT
 FROM SYS.DUAL
 
 BeforeExecute
--- Oracle.11.Managed Oracle11
+-- Oracle.11.Managed Oracle11 (asynchronously)
 DECLARE @p Int32
 SET     @p = -1
 

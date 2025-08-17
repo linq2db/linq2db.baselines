@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Oracle.11.Managed Oracle11
+-- Oracle.11.Managed Oracle11 (asynchronously)
 
 SELECT
 	p."FirstName"
@@ -9,7 +9,7 @@ WHERE
 	p."PersonID" = 1 AND ROWNUM <= 2
 
 BeforeExecute
--- Oracle.11.Managed Oracle11
+-- Oracle.11.Managed Oracle11 (asynchronously)
 DECLARE @nameToCheck Varchar2(4) -- String
 SET     @nameToCheck = 'Joh%'
 
@@ -21,7 +21,7 @@ WHERE
 	p."FirstName" LIKE :nameToCheck ESCAPE '~' AND p."PersonID" = 1
 
 BeforeExecute
--- Oracle.11.Managed Oracle11
+-- Oracle.11.Managed Oracle11 (asynchronously)
 DECLARE @nameToCheck Varchar2(4) -- String
 SET     @nameToCheck = 'Joh%'
 
@@ -34,7 +34,7 @@ WHERE
 	p."PersonID" = 1
 
 BeforeExecute
--- Oracle.11.Managed Oracle11
+-- Oracle.11.Managed Oracle11 (asynchronously)
 DECLARE @nameToCheck Varchar2(4) -- String
 SET     @nameToCheck = 'JOH%'
 
@@ -46,7 +46,7 @@ WHERE
 	p."FirstName" LIKE :nameToCheck ESCAPE '~' AND p."PersonID" = 1
 
 BeforeExecute
--- Oracle.11.Managed Oracle11
+-- Oracle.11.Managed Oracle11 (asynchronously)
 DECLARE @nameToCheck Varchar2(4) -- String
 SET     @nameToCheck = 'JOH%'
 

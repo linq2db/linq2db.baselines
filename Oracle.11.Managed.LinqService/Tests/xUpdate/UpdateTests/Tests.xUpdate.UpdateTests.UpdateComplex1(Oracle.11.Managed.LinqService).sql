@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Oracle.11.Managed Oracle11
+-- Oracle.11.Managed Oracle11 (asynchronously)
 DECLARE @Gender Varchar2(1) -- String
 SET     @Gender = 'M'
 DECLARE @Name_FirstName Varchar2(13) -- String
@@ -29,7 +29,7 @@ RETURNING
 	"PersonID" INTO :IDENTITY_PARAMETER
 
 BeforeExecute
--- Oracle.11.Managed Oracle11
+-- Oracle.11.Managed Oracle11 (asynchronously)
 DECLARE @id Int32
 SET     @id = 5
 
@@ -45,7 +45,7 @@ WHERE
 	t1."PersonID" = :id AND ROWNUM <= 1
 
 BeforeExecute
--- Oracle.11.Managed Oracle11
+-- Oracle.11.Managed Oracle11 (asynchronously)
 DECLARE @Gender Varchar2(1) -- String
 SET     @Gender = 'M'
 DECLARE @Name_FirstName Varchar2(13) -- String
@@ -68,7 +68,7 @@ WHERE
 	t1."PersonID" = :ID
 
 BeforeExecute
--- Oracle.11.Managed Oracle11
+-- Oracle.11.Managed Oracle11 (asynchronously)
 DECLARE @id Int32
 SET     @id = 5
 

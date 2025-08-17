@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Oracle.11.Managed Oracle11
+-- Oracle.11.Managed Oracle11 (asynchronously)
 DECLARE @p Int32
 SET     @p = 102
 
@@ -9,7 +9,7 @@ WHERE
 	r.ID >= 101 AND r.ID < :p
 
 BeforeExecute
--- Oracle.11.Managed Oracle11
+-- Oracle.11.Managed Oracle11 (asynchronously)
 
 INSERT INTO "LinqDataTypes"
 (
@@ -25,7 +25,7 @@ VALUES
 )
 
 BeforeExecute
--- Oracle.11.Managed Oracle11
+-- Oracle.11.Managed Oracle11 (asynchronously)
 
 SELECT
 	CASE
@@ -41,7 +41,7 @@ WHERE
 	t1.ID = 101
 
 BeforeExecute
--- Oracle.11.Managed Oracle11
+-- Oracle.11.Managed Oracle11 (asynchronously)
 DECLARE @p Int32
 SET     @p = 102
 
