@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Firebird.2.5 Firebird
+-- Firebird.2.5 Firebird (asynchronously)
 DECLARE @pattern VarChar(6) -- String
 SET     @pattern = '%h~%n%'
 

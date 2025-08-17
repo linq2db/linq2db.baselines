@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Firebird.2.5 Firebird
+-- Firebird.2.5 Firebird (asynchronously)
 
 WITH CTE_1 ("ParentID")
 AS
@@ -20,7 +20,7 @@ FROM
 		INNER JOIN CTE_1 "c2" ON "p"."ParentID" = "c2"."ParentID"
 
 BeforeExecute
--- Firebird.2.5 Firebird
+-- Firebird.2.5 Firebird (asynchronously)
 
 SELECT
 	"p"."ParentID",
