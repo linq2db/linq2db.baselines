@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2022
+-- SqlServer.2022 (asynchronously)
 
 SELECT
 	[p].[FirstName],
@@ -14,7 +14,7 @@ FROM
 		) [n]([item]) ON [p].[LastName] = [n].[item]
 
 BeforeExecute
--- SqlServer.2022
+-- SqlServer.2022 (asynchronously)
 
 SELECT
 	[p].[FirstName],

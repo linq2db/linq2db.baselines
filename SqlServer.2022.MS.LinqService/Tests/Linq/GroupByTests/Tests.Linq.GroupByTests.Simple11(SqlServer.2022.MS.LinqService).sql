@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2022.MS SqlServer.2022
+-- SqlServer.2022.MS SqlServer.2022 (asynchronously)
 
 SELECT
 	[m_1].[ParentID],
@@ -16,7 +16,7 @@ FROM
 		INNER JOIN [GrandChild] [d] ON ([m_1].[ParentID] = [d].[ParentID] + 1 OR [m_1].[ParentID] IS NULL AND [d].[ParentID] IS NULL) AND ([m_1].[ChildID] = [d].[ChildID] OR [m_1].[ChildID] IS NULL AND [d].[ChildID] IS NULL)
 
 BeforeExecute
--- SqlServer.2022.MS SqlServer.2022
+-- SqlServer.2022.MS SqlServer.2022 (asynchronously)
 
 SELECT
 	[t2].[ParentID],

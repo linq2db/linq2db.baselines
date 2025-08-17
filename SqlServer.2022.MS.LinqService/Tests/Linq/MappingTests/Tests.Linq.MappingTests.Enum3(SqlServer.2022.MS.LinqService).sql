@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2022.MS SqlServer.2022
+-- SqlServer.2022.MS SqlServer.2022 (asynchronously)
 DECLARE @fm Char(1) -- AnsiStringFixedLength
 SET     @fm = N'F'
 

@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2022.MS SqlServer.2022
+-- SqlServer.2022.MS SqlServer.2022 (asynchronously)
 DECLARE @p_p Int -- Int32
 SET     @p_p = 2
 

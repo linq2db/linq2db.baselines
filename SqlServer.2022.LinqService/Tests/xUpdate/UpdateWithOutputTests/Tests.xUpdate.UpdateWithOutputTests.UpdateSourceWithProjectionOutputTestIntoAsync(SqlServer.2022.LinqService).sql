@@ -21,7 +21,7 @@ WHERE
 	[TableWithData].[Id] > 3
 
 BeforeExecute
--- SqlServer.2022
+-- SqlServer.2022 (asynchronously)
 
 SELECT
 	[t1].[Id],

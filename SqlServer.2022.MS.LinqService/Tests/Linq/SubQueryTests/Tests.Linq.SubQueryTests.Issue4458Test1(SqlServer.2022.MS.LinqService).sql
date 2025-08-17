@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2022.MS SqlServer.2022
+-- SqlServer.2022.MS SqlServer.2022 (asynchronously)
 
 SELECT
 	[m_1].[Id],
@@ -25,7 +25,7 @@ FROM
 		INNER JOIN [Review] [d] ON [d].[ItemId] = [m_1].[Id]
 
 BeforeExecute
--- SqlServer.2022.MS SqlServer.2022
+-- SqlServer.2022.MS SqlServer.2022 (asynchronously)
 
 SELECT
 	[i].[Id],

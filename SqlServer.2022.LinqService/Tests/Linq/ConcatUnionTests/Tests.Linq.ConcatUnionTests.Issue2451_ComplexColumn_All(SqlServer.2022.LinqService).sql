@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2022
+-- SqlServer.2022 (asynchronously)
 
 SELECT
 	[p].[FirstName]
@@ -12,7 +12,7 @@ FROM
 	[Person] [p_1]
 
 BeforeExecute
--- SqlServer.2022
+-- SqlServer.2022 (asynchronously)
 
 SELECT
 	[p].[FirstName] + N'/' + [p].[LastName]

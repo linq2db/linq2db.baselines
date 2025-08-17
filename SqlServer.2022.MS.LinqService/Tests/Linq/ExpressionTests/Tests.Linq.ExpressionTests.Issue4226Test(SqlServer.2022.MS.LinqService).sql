@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2022.MS SqlServer.2022
+-- SqlServer.2022.MS SqlServer.2022 (asynchronously)
 DECLARE @Id Int -- Int32
 SET     @Id = 1
 DECLARE @Date NVarChar(11) -- String
@@ -17,7 +17,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2022.MS SqlServer.2022
+-- SqlServer.2022.MS SqlServer.2022 (asynchronously)
 
 SELECT TOP (2)
 	[e].[Id],

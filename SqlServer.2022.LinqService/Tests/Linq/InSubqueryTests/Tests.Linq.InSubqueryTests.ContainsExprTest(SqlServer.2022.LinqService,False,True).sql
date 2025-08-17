@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2022
+-- SqlServer.2022 (asynchronously)
 DECLARE @n Int -- Int32
 SET     @n = 1
 
@@ -17,7 +17,7 @@ WHERE
 	)
 
 BeforeExecute
--- SqlServer.2022
+-- SqlServer.2022 (asynchronously)
 
 SELECT
 	[t1].[ParentID],
@@ -26,7 +26,7 @@ FROM
 	[Parent] [t1]
 
 BeforeExecute
--- SqlServer.2022
+-- SqlServer.2022 (asynchronously)
 
 SELECT
 	[t1].[ParentID],

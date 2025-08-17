@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2022.MS SqlServer.2022
+-- SqlServer.2022.MS SqlServer.2022 (asynchronously)
 
 INSERT INTO [BlobClass]
 (
@@ -13,7 +13,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2022.MS SqlServer.2022
+-- SqlServer.2022.MS SqlServer.2022 (asynchronously)
 
 SELECT TOP (1)
 	[t1].[Id],
@@ -24,7 +24,7 @@ WHERE
 	[t1].[Id] = 1
 
 BeforeExecute
--- SqlServer.2022.MS SqlServer.2022
+-- SqlServer.2022.MS SqlServer.2022 (asynchronously)
 
 SELECT TOP (1)
 	[t1].[Id],

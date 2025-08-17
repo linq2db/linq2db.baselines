@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2022
+-- SqlServer.2022 (asynchronously)
 
 SELECT
 	IIF([t1].[ParentID] IS NOT NULL, [t1].[ChildID], 0)

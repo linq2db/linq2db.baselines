@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2022.MS SqlServer.2022
+-- SqlServer.2022.MS SqlServer.2022 (asynchronously)
 
 SELECT
 	[r].[Id],
@@ -17,7 +17,7 @@ WHERE
 	END
 
 BeforeExecute
--- SqlServer.2022.MS SqlServer.2022
+-- SqlServer.2022.MS SqlServer.2022 (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -29,7 +29,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- SqlServer.2022.MS SqlServer.2022
+-- SqlServer.2022.MS SqlServer.2022 (asynchronously)
 
 SELECT
 	[r].[Id],
@@ -60,7 +60,7 @@ WHERE
 	END IS NULL
 
 BeforeExecute
--- SqlServer.2022.MS SqlServer.2022
+-- SqlServer.2022.MS SqlServer.2022 (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -72,7 +72,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- SqlServer.2022.MS SqlServer.2022
+-- SqlServer.2022.MS SqlServer.2022 (asynchronously)
 
 SELECT
 	[r].[Id],
@@ -95,7 +95,7 @@ WHERE
 	END IS NULL
 
 BeforeExecute
--- SqlServer.2022.MS SqlServer.2022
+-- SqlServer.2022.MS SqlServer.2022 (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -107,7 +107,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- SqlServer.2022.MS SqlServer.2022
+-- SqlServer.2022.MS SqlServer.2022 (asynchronously)
 
 SELECT
 	[r].[Id],
@@ -147,7 +147,7 @@ WHERE
 	END IS NULL
 
 BeforeExecute
--- SqlServer.2022.MS SqlServer.2022
+-- SqlServer.2022.MS SqlServer.2022 (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -159,7 +159,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- SqlServer.2022.MS SqlServer.2022
+-- SqlServer.2022.MS SqlServer.2022 (asynchronously)
 
 SELECT
 	[r].[Id],
@@ -173,7 +173,7 @@ WHERE
 	IIF(([r].[Value1] = [r].[Value2]), 1, 0) = IIF(([r].[Value2] = [r].[Value1]), 1, 0)
 
 BeforeExecute
--- SqlServer.2022.MS SqlServer.2022
+-- SqlServer.2022.MS SqlServer.2022 (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -185,7 +185,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- SqlServer.2022.MS SqlServer.2022
+-- SqlServer.2022.MS SqlServer.2022 (asynchronously)
 
 SELECT
 	[r].[Id],
@@ -199,7 +199,7 @@ WHERE
 	IIF(([r].[Value1] = [r].[Value2]), 1, 0) <> IIF(([r].[Value2] = [r].[Value1]), 1, 0)
 
 BeforeExecute
--- SqlServer.2022.MS SqlServer.2022
+-- SqlServer.2022.MS SqlServer.2022 (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -211,7 +211,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- SqlServer.2022.MS SqlServer.2022
+-- SqlServer.2022.MS SqlServer.2022 (asynchronously)
 
 SELECT
 	[r].[Id],
@@ -242,7 +242,7 @@ WHERE
 	END IS NULL
 
 BeforeExecute
--- SqlServer.2022.MS SqlServer.2022
+-- SqlServer.2022.MS SqlServer.2022 (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -254,7 +254,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- SqlServer.2022.MS SqlServer.2022
+-- SqlServer.2022.MS SqlServer.2022 (asynchronously)
 
 SELECT
 	[r].[Id],
@@ -294,7 +294,7 @@ WHERE
 	END IS NULL
 
 BeforeExecute
--- SqlServer.2022.MS SqlServer.2022
+-- SqlServer.2022.MS SqlServer.2022 (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -306,7 +306,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- SqlServer.2022.MS SqlServer.2022
+-- SqlServer.2022.MS SqlServer.2022 (asynchronously)
 
 SELECT
 	[r].[Id],
@@ -324,7 +324,7 @@ WHERE
 	END
 
 BeforeExecute
--- SqlServer.2022.MS SqlServer.2022
+-- SqlServer.2022.MS SqlServer.2022 (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -336,7 +336,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- SqlServer.2022.MS SqlServer.2022
+-- SqlServer.2022.MS SqlServer.2022 (asynchronously)
 
 SELECT
 	[r].[Id],
@@ -354,7 +354,7 @@ WHERE
 	END
 
 BeforeExecute
--- SqlServer.2022.MS SqlServer.2022
+-- SqlServer.2022.MS SqlServer.2022 (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -366,7 +366,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- SqlServer.2022.MS SqlServer.2022
+-- SqlServer.2022.MS SqlServer.2022 (asynchronously)
 
 SELECT
 	[r].[Id],
@@ -389,7 +389,7 @@ WHERE
 	END IS NULL
 
 BeforeExecute
--- SqlServer.2022.MS SqlServer.2022
+-- SqlServer.2022.MS SqlServer.2022 (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -401,7 +401,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- SqlServer.2022.MS SqlServer.2022
+-- SqlServer.2022.MS SqlServer.2022 (asynchronously)
 
 SELECT
 	[r].[Id],
@@ -424,7 +424,7 @@ WHERE
 	END IS NULL
 
 BeforeExecute
--- SqlServer.2022.MS SqlServer.2022
+-- SqlServer.2022.MS SqlServer.2022 (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -436,7 +436,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- SqlServer.2022.MS SqlServer.2022
+-- SqlServer.2022.MS SqlServer.2022 (asynchronously)
 
 SELECT
 	[r].[Id],
@@ -450,7 +450,7 @@ WHERE
 	IIF([r].[Value1] >= [r].[Value2], 1, 0) = IIF(([r].[Value2] <> [r].[Value1]), 1, 0)
 
 BeforeExecute
--- SqlServer.2022.MS SqlServer.2022
+-- SqlServer.2022.MS SqlServer.2022 (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -462,7 +462,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- SqlServer.2022.MS SqlServer.2022
+-- SqlServer.2022.MS SqlServer.2022 (asynchronously)
 
 SELECT
 	[r].[Id],
@@ -476,7 +476,7 @@ WHERE
 	IIF([r].[Value1] >= [r].[Value2], 1, 0) <> IIF(([r].[Value2] <> [r].[Value1]), 1, 0)
 
 BeforeExecute
--- SqlServer.2022.MS SqlServer.2022
+-- SqlServer.2022.MS SqlServer.2022 (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -488,7 +488,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- SqlServer.2022.MS SqlServer.2022
+-- SqlServer.2022.MS SqlServer.2022 (asynchronously)
 
 SELECT
 	[r].[Id],
@@ -506,7 +506,7 @@ WHERE
 	END
 
 BeforeExecute
--- SqlServer.2022.MS SqlServer.2022
+-- SqlServer.2022.MS SqlServer.2022 (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -518,7 +518,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- SqlServer.2022.MS SqlServer.2022
+-- SqlServer.2022.MS SqlServer.2022 (asynchronously)
 
 SELECT
 	[r].[Id],
@@ -541,7 +541,7 @@ WHERE
 	END IS NULL
 
 BeforeExecute
--- SqlServer.2022.MS SqlServer.2022
+-- SqlServer.2022.MS SqlServer.2022 (asynchronously)
 
 SELECT
 	[t1].[Id],

@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2022
+-- SqlServer.2022 (asynchronously)
 
 SELECT
 	MAX([t1].[ID])
@@ -7,7 +7,7 @@ FROM
 	[AllTypes] [t1]
 
 BeforeExecute
--- SqlServer.2022
+-- SqlServer.2022 (asynchronously)
 DECLARE @NChar NChar(1) -- StringFixedLength
 SET     @NChar = N' '
 DECLARE @Char NChar(1) -- StringFixedLength
@@ -25,7 +25,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2022
+-- SqlServer.2022 (asynchronously)
 DECLARE @NChar NChar(1) -- StringFixedLength
 SET     @NChar = N'	'
 DECLARE @Char NChar(1) -- StringFixedLength
@@ -43,7 +43,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2022
+-- SqlServer.2022 (asynchronously)
 DECLARE @NChar NChar(1) -- StringFixedLength
 SET     @NChar = N'
 '
@@ -63,7 +63,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2022
+-- SqlServer.2022 (asynchronously)
 DECLARE @NChar NChar(1) -- StringFixedLength
 SET     @NChar = N''
 DECLARE @Char NChar(1) -- StringFixedLength
@@ -81,7 +81,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2022
+-- SqlServer.2022 (asynchronously)
 DECLARE @NChar NChar(1) -- StringFixedLength
 SET     @NChar = N''
 DECLARE @Char NChar(1) -- StringFixedLength
@@ -99,7 +99,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2022
+-- SqlServer.2022 (asynchronously)
 DECLARE @NChar NChar(1) -- StringFixedLength
 SET     @NChar = N''
 DECLARE @Char NChar(1) -- StringFixedLength
@@ -117,7 +117,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2022
+-- SqlServer.2022 (asynchronously)
 DECLARE @NChar NChar(1) -- StringFixedLength
 SET     @NChar = N' '
 DECLARE @Char NChar(1) -- StringFixedLength
@@ -135,7 +135,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2022
+-- SqlServer.2022 (asynchronously)
 DECLARE @NChar NChar(1) -- StringFixedLength
 SET     @NChar = N' '
 DECLARE @Char NChar(1) -- StringFixedLength
@@ -153,7 +153,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2022
+-- SqlServer.2022 (asynchronously)
 DECLARE @NChar NChar(1) -- StringFixedLength
 SET     @NChar = N' '
 DECLARE @Char NChar(1) -- StringFixedLength
@@ -171,7 +171,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2022
+-- SqlServer.2022 (asynchronously)
 DECLARE @NChar NChar(1) -- StringFixedLength
 SET     @NChar = N' '
 DECLARE @Char NChar(1) -- StringFixedLength
@@ -189,7 +189,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2022
+-- SqlServer.2022 (asynchronously)
 DECLARE @NChar NChar(1) -- StringFixedLength
 SET     @NChar = N' '
 DECLARE @Char NChar(1) -- StringFixedLength
@@ -207,7 +207,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2022
+-- SqlServer.2022 (asynchronously)
 DECLARE @NChar NChar(1) -- StringFixedLength
 SET     @NChar = N' '
 DECLARE @Char NChar(1) -- StringFixedLength
@@ -225,7 +225,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2022
+-- SqlServer.2022 (asynchronously)
 DECLARE @NChar NChar(1) -- StringFixedLength
 SET     @NChar = N' '
 DECLARE @Char NChar(1) -- StringFixedLength
@@ -243,7 +243,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2022
+-- SqlServer.2022 (asynchronously)
 DECLARE @NChar NChar(1) -- StringFixedLength
 SET     @NChar = N' '
 DECLARE @Char NChar(1) -- StringFixedLength
@@ -261,7 +261,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2022
+-- SqlServer.2022 (asynchronously)
 DECLARE @NChar NChar(1) -- StringFixedLength
 SET     @NChar = N' '
 DECLARE @Char NChar(1) -- StringFixedLength
@@ -279,7 +279,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2022
+-- SqlServer.2022 (asynchronously)
 DECLARE @NChar NChar(1) -- StringFixedLength
 SET     @NChar = N' '
 DECLARE @Char NChar(1) -- StringFixedLength
@@ -297,7 +297,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2022
+-- SqlServer.2022 (asynchronously)
 DECLARE @NChar NChar(1) -- StringFixedLength
 SET     @NChar = N' '
 DECLARE @Char NChar(1) -- StringFixedLength
@@ -315,7 +315,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2022
+-- SqlServer.2022 (asynchronously)
 DECLARE @NChar NChar(1) -- StringFixedLength
 SET     @NChar = N' '
 DECLARE @Char NChar(1) -- StringFixedLength
@@ -333,7 +333,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2022
+-- SqlServer.2022 (asynchronously)
 DECLARE @NChar NChar(1) -- StringFixedLength
 SET     @NChar = N'　'
 DECLARE @Char NChar(1) -- StringFixedLength
@@ -351,7 +351,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2022
+-- SqlServer.2022 (asynchronously)
 DECLARE @NChar NChar(1) -- StringFixedLength
 SET     @NChar = char(0)
 DECLARE @Char NChar(1) -- StringFixedLength
@@ -369,7 +369,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2022
+-- SqlServer.2022 (asynchronously)
 DECLARE @NChar NChar -- StringFixedLength
 SET     @NChar = NULL
 DECLARE @Char NChar -- StringFixedLength
@@ -387,7 +387,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2022
+-- SqlServer.2022 (asynchronously)
 DECLARE @lastId Int -- Int32
 SET     @lastId = 2
 
@@ -403,7 +403,7 @@ ORDER BY
 	[t1].[ID]
 
 BeforeExecute
--- SqlServer.2022
+-- SqlServer.2022 (asynchronously)
 DECLARE @lastId Int -- Int32
 SET     @lastId = 2
 

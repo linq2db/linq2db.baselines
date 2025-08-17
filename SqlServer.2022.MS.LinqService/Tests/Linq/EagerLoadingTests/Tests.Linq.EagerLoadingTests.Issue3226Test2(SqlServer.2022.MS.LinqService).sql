@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2022.MS SqlServer.2022
+-- SqlServer.2022.MS SqlServer.2022 (asynchronously)
 
 SELECT
 	[m_1].[Id],
@@ -9,7 +9,7 @@ FROM
 		INNER JOIN [ItemValue] [d] ON [m_1].[Id] = [d].[ItemId]
 
 BeforeExecute
--- SqlServer.2022.MS SqlServer.2022
+-- SqlServer.2022.MS SqlServer.2022 (asynchronously)
 
 SELECT
 	[x].[Id],

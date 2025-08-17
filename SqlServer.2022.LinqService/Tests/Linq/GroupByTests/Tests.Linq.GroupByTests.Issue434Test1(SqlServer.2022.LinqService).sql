@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2022
+-- SqlServer.2022 (asynchronously)
 DECLARE @input NVarChar(4000) -- String
 SET     @input = N'%test%'
 
@@ -14,7 +14,7 @@ WHERE
 	Lower([m_1].[FirstName]) LIKE @input ESCAPE N'~'
 
 BeforeExecute
--- SqlServer.2022
+-- SqlServer.2022 (asynchronously)
 DECLARE @input NVarChar(4000) -- String
 SET     @input = N'%test%'
 

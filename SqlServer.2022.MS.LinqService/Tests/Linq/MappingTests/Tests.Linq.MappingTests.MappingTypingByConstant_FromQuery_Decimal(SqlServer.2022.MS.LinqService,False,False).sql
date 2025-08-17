@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2022.MS SqlServer.2022
+-- SqlServer.2022.MS SqlServer.2022 (asynchronously)
 DECLARE @value Decimal(1, 0)
 SET     @value = 1
 
@@ -16,7 +16,7 @@ FROM
 	) [t1]
 
 BeforeExecute
--- SqlServer.2022.MS SqlServer.2022
+-- SqlServer.2022.MS SqlServer.2022 (asynchronously)
 DECLARE @value Decimal(13, 3)
 SET     @value = 2147483648.123
 

@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2022
+-- SqlServer.2022 (asynchronously)
 DECLARE @filterValue Int -- Int32
 SET     @filterValue = 2
 

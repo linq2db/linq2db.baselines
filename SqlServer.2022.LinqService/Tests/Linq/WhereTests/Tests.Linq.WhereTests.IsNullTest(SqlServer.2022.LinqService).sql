@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2022
+-- SqlServer.2022 (asynchronously)
 
 SELECT
 	[nm].[MiddleName]
@@ -9,7 +9,7 @@ WHERE
 	[nm].[MiddleName] IS NOT NULL
 
 BeforeExecute
--- SqlServer.2022
+-- SqlServer.2022 (asynchronously)
 
 SELECT
 	[t1].[FirstName],

@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2022.MS SqlServer.2022
+-- SqlServer.2022.MS SqlServer.2022 (asynchronously)
 DECLARE @ParentID Int -- Int32
 SET     @ParentID = 1001
 DECLARE @Value1 Int -- Int32
@@ -17,7 +17,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2022.MS SqlServer.2022
+-- SqlServer.2022.MS SqlServer.2022 (asynchronously)
 
 SELECT
 	COUNT(*)

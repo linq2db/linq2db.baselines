@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2022.MS SqlServer.2022
+-- SqlServer.2022.MS SqlServer.2022 (asynchronously)
 DECLARE @Id Int -- Int32
 SET     @Id = 1
 DECLARE @Name NVarChar(4000) -- String
@@ -27,7 +27,7 @@ WHEN NOT MATCHED THEN
 	);
 
 BeforeExecute
--- SqlServer.2022.MS SqlServer.2022
+-- SqlServer.2022.MS SqlServer.2022 (asynchronously)
 
 SELECT TOP (1)
 	[t].[Id],
@@ -39,7 +39,7 @@ WHERE
 	[t].[Id] = 1
 
 BeforeExecute
--- SqlServer.2022.MS SqlServer.2022
+-- SqlServer.2022.MS SqlServer.2022 (asynchronously)
 DECLARE @Id Int -- Int32
 SET     @Id = 1
 DECLARE @Name NVarChar(4000) -- String
@@ -67,7 +67,7 @@ WHEN NOT MATCHED THEN
 	);
 
 BeforeExecute
--- SqlServer.2022.MS SqlServer.2022
+-- SqlServer.2022.MS SqlServer.2022 (asynchronously)
 
 SELECT TOP (1)
 	[t].[Id],

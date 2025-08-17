@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2022
+-- SqlServer.2022 (asynchronously)
 
 SELECT
 	[r].[Id],
@@ -13,7 +13,7 @@ WHERE
 	[r].[Value1] = [r].[Value2]
 
 BeforeExecute
--- SqlServer.2022
+-- SqlServer.2022 (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -25,7 +25,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- SqlServer.2022
+-- SqlServer.2022 (asynchronously)
 DECLARE @TrueN Bit -- Boolean
 SET     @TrueN = 1
 
@@ -41,7 +41,7 @@ WHERE
 	IIF([r].[Value1] = [r].[Value2], 1, 0) = @TrueN
 
 BeforeExecute
--- SqlServer.2022
+-- SqlServer.2022 (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -53,7 +53,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- SqlServer.2022
+-- SqlServer.2022 (asynchronously)
 
 SELECT
 	[r].[Id],
@@ -67,7 +67,7 @@ WHERE
 	[r].[Value1] <> [r].[Value4] OR [r].[Value4] IS NULL
 
 BeforeExecute
--- SqlServer.2022
+-- SqlServer.2022 (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -79,7 +79,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- SqlServer.2022
+-- SqlServer.2022 (asynchronously)
 DECLARE @FalseN Bit -- Boolean
 SET     @FalseN = 0
 
@@ -95,7 +95,7 @@ WHERE
 	IIF([r].[Value1] = [r].[Value2], 1, 0) = @FalseN
 
 BeforeExecute
--- SqlServer.2022
+-- SqlServer.2022 (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -107,7 +107,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- SqlServer.2022
+-- SqlServer.2022 (asynchronously)
 
 SELECT
 	[r].[Id],
@@ -121,7 +121,7 @@ WHERE
 	1 = 0
 
 BeforeExecute
--- SqlServer.2022
+-- SqlServer.2022 (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -133,7 +133,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- SqlServer.2022
+-- SqlServer.2022 (asynchronously)
 
 SELECT
 	[r].[Id],
@@ -147,7 +147,7 @@ WHERE
 	[r].[Value1] = [r].[Value4]
 
 BeforeExecute
--- SqlServer.2022
+-- SqlServer.2022 (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -159,7 +159,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- SqlServer.2022
+-- SqlServer.2022 (asynchronously)
 DECLARE @TrueN Bit -- Boolean
 SET     @TrueN = 1
 
@@ -175,7 +175,7 @@ WHERE
 	IIF([r].[Value1] = [r].[Value4], 1, 0) = @TrueN
 
 BeforeExecute
--- SqlServer.2022
+-- SqlServer.2022 (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -187,7 +187,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- SqlServer.2022
+-- SqlServer.2022 (asynchronously)
 
 SELECT
 	[r].[Id],
@@ -201,7 +201,7 @@ WHERE
 	[r].[Value1] <> [r].[Value4] OR [r].[Value4] IS NULL
 
 BeforeExecute
--- SqlServer.2022
+-- SqlServer.2022 (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -213,7 +213,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- SqlServer.2022
+-- SqlServer.2022 (asynchronously)
 DECLARE @FalseN Bit -- Boolean
 SET     @FalseN = 0
 
@@ -229,7 +229,7 @@ WHERE
 	IIF([r].[Value1] = [r].[Value4], 1, 0) = @FalseN
 
 BeforeExecute
--- SqlServer.2022
+-- SqlServer.2022 (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -241,7 +241,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- SqlServer.2022
+-- SqlServer.2022 (asynchronously)
 
 SELECT
 	[r].[Id],
@@ -255,7 +255,7 @@ WHERE
 	1 = 0
 
 BeforeExecute
--- SqlServer.2022
+-- SqlServer.2022 (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -267,7 +267,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- SqlServer.2022
+-- SqlServer.2022 (asynchronously)
 
 SELECT
 	[r].[Id],
@@ -281,7 +281,7 @@ WHERE
 	[r].[Value5] = [r].[Value4] OR [r].[Value5] IS NULL AND [r].[Value4] IS NULL
 
 BeforeExecute
--- SqlServer.2022
+-- SqlServer.2022 (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -293,7 +293,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- SqlServer.2022
+-- SqlServer.2022 (asynchronously)
 DECLARE @TrueN Bit -- Boolean
 SET     @TrueN = 1
 
@@ -309,7 +309,7 @@ WHERE
 	IIF([r].[Value5] = [r].[Value4] OR [r].[Value5] IS NULL AND [r].[Value4] IS NULL, 1, 0) = @TrueN
 
 BeforeExecute
--- SqlServer.2022
+-- SqlServer.2022 (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -321,7 +321,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- SqlServer.2022
+-- SqlServer.2022 (asynchronously)
 
 SELECT
 	[r].[Id],
@@ -336,7 +336,7 @@ WHERE
 	[r].[Value5] IS NOT NULL AND [r].[Value4] IS NULL
 
 BeforeExecute
--- SqlServer.2022
+-- SqlServer.2022 (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -348,7 +348,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- SqlServer.2022
+-- SqlServer.2022 (asynchronously)
 DECLARE @FalseN Bit -- Boolean
 SET     @FalseN = 0
 
@@ -364,7 +364,7 @@ WHERE
 	IIF([r].[Value5] = [r].[Value4] OR [r].[Value5] IS NULL AND [r].[Value4] IS NULL, 1, 0) = @FalseN
 
 BeforeExecute
--- SqlServer.2022
+-- SqlServer.2022 (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -376,7 +376,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- SqlServer.2022
+-- SqlServer.2022 (asynchronously)
 
 SELECT
 	[r].[Id],
@@ -390,7 +390,7 @@ WHERE
 	1 = 0
 
 BeforeExecute
--- SqlServer.2022
+-- SqlServer.2022 (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -402,7 +402,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- SqlServer.2022
+-- SqlServer.2022 (asynchronously)
 
 SELECT
 	[r].[Id],
@@ -416,7 +416,7 @@ WHERE
 	[r].[Value1] <> [r].[Value2]
 
 BeforeExecute
--- SqlServer.2022
+-- SqlServer.2022 (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -428,7 +428,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- SqlServer.2022
+-- SqlServer.2022 (asynchronously)
 DECLARE @TrueN Bit -- Boolean
 SET     @TrueN = 1
 
@@ -444,7 +444,7 @@ WHERE
 	IIF([r].[Value1] = [r].[Value2], 1, 0) <> @TrueN
 
 BeforeExecute
--- SqlServer.2022
+-- SqlServer.2022 (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -456,7 +456,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- SqlServer.2022
+-- SqlServer.2022 (asynchronously)
 
 SELECT
 	[r].[Id],
@@ -470,7 +470,7 @@ WHERE
 	[r].[Value1] = [r].[Value2]
 
 BeforeExecute
--- SqlServer.2022
+-- SqlServer.2022 (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -482,7 +482,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- SqlServer.2022
+-- SqlServer.2022 (asynchronously)
 DECLARE @FalseN Bit -- Boolean
 SET     @FalseN = 0
 
@@ -498,7 +498,7 @@ WHERE
 	IIF([r].[Value1] = [r].[Value2], 1, 0) <> @FalseN
 
 BeforeExecute
--- SqlServer.2022
+-- SqlServer.2022 (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -510,7 +510,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- SqlServer.2022
+-- SqlServer.2022 (asynchronously)
 
 SELECT
 	[r].[Id],
@@ -522,7 +522,7 @@ FROM
 	[BooleanTable] [r]
 
 BeforeExecute
--- SqlServer.2022
+-- SqlServer.2022 (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -534,7 +534,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- SqlServer.2022
+-- SqlServer.2022 (asynchronously)
 
 SELECT
 	[r].[Id],
@@ -548,7 +548,7 @@ WHERE
 	[r].[Value1] <> [r].[Value4] OR [r].[Value4] IS NULL
 
 BeforeExecute
--- SqlServer.2022
+-- SqlServer.2022 (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -560,7 +560,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- SqlServer.2022
+-- SqlServer.2022 (asynchronously)
 DECLARE @TrueN Bit -- Boolean
 SET     @TrueN = 1
 
@@ -576,7 +576,7 @@ WHERE
 	IIF([r].[Value1] = [r].[Value4], 1, 0) <> @TrueN
 
 BeforeExecute
--- SqlServer.2022
+-- SqlServer.2022 (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -588,7 +588,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- SqlServer.2022
+-- SqlServer.2022 (asynchronously)
 
 SELECT
 	[r].[Id],
@@ -602,7 +602,7 @@ WHERE
 	[r].[Value1] = [r].[Value4]
 
 BeforeExecute
--- SqlServer.2022
+-- SqlServer.2022 (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -614,7 +614,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- SqlServer.2022
+-- SqlServer.2022 (asynchronously)
 DECLARE @FalseN Bit -- Boolean
 SET     @FalseN = 0
 
@@ -630,7 +630,7 @@ WHERE
 	IIF([r].[Value1] = [r].[Value4], 1, 0) <> @FalseN
 
 BeforeExecute
--- SqlServer.2022
+-- SqlServer.2022 (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -642,7 +642,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- SqlServer.2022
+-- SqlServer.2022 (asynchronously)
 
 SELECT
 	[r].[Id],
@@ -654,7 +654,7 @@ FROM
 	[BooleanTable] [r]
 
 BeforeExecute
--- SqlServer.2022
+-- SqlServer.2022 (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -666,7 +666,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- SqlServer.2022
+-- SqlServer.2022 (asynchronously)
 
 SELECT
 	[r].[Id],
@@ -681,7 +681,7 @@ WHERE
 	[r].[Value5] IS NOT NULL AND [r].[Value4] IS NULL
 
 BeforeExecute
--- SqlServer.2022
+-- SqlServer.2022 (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -693,7 +693,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- SqlServer.2022
+-- SqlServer.2022 (asynchronously)
 DECLARE @TrueN Bit -- Boolean
 SET     @TrueN = 1
 
@@ -709,7 +709,7 @@ WHERE
 	IIF([r].[Value5] = [r].[Value4] OR [r].[Value5] IS NULL AND [r].[Value4] IS NULL, 1, 0) <> @TrueN
 
 BeforeExecute
--- SqlServer.2022
+-- SqlServer.2022 (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -721,7 +721,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- SqlServer.2022
+-- SqlServer.2022 (asynchronously)
 
 SELECT
 	[r].[Id],
@@ -735,7 +735,7 @@ WHERE
 	[r].[Value5] = [r].[Value4] OR [r].[Value5] IS NULL AND [r].[Value4] IS NULL
 
 BeforeExecute
--- SqlServer.2022
+-- SqlServer.2022 (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -747,7 +747,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- SqlServer.2022
+-- SqlServer.2022 (asynchronously)
 DECLARE @FalseN Bit -- Boolean
 SET     @FalseN = 0
 
@@ -763,7 +763,7 @@ WHERE
 	IIF([r].[Value5] = [r].[Value4] OR [r].[Value5] IS NULL AND [r].[Value4] IS NULL, 1, 0) <> @FalseN
 
 BeforeExecute
--- SqlServer.2022
+-- SqlServer.2022 (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -775,7 +775,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- SqlServer.2022
+-- SqlServer.2022 (asynchronously)
 
 SELECT
 	[r].[Id],
@@ -787,7 +787,7 @@ FROM
 	[BooleanTable] [r]
 
 BeforeExecute
--- SqlServer.2022
+-- SqlServer.2022 (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -799,7 +799,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- SqlServer.2022
+-- SqlServer.2022 (asynchronously)
 
 SELECT
 	[r].[Id],
@@ -813,7 +813,7 @@ WHERE
 	[r].[Value1] > [r].[Value2]
 
 BeforeExecute
--- SqlServer.2022
+-- SqlServer.2022 (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -825,7 +825,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- SqlServer.2022
+-- SqlServer.2022 (asynchronously)
 DECLARE @TrueN Bit -- Boolean
 SET     @TrueN = 1
 
@@ -841,7 +841,7 @@ WHERE
 	IIF([r].[Value1] > [r].[Value2], 1, 0) = @TrueN
 
 BeforeExecute
--- SqlServer.2022
+-- SqlServer.2022 (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -853,7 +853,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- SqlServer.2022
+-- SqlServer.2022 (asynchronously)
 
 SELECT
 	[r].[Id],
@@ -867,7 +867,7 @@ WHERE
 	[r].[Value1] <= [r].[Value2]
 
 BeforeExecute
--- SqlServer.2022
+-- SqlServer.2022 (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -879,7 +879,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- SqlServer.2022
+-- SqlServer.2022 (asynchronously)
 DECLARE @FalseN Bit -- Boolean
 SET     @FalseN = 0
 
@@ -895,7 +895,7 @@ WHERE
 	IIF([r].[Value1] > [r].[Value2], 1, 0) = @FalseN
 
 BeforeExecute
--- SqlServer.2022
+-- SqlServer.2022 (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -907,7 +907,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- SqlServer.2022
+-- SqlServer.2022 (asynchronously)
 
 SELECT
 	[r].[Id],
@@ -921,7 +921,7 @@ WHERE
 	1 = 0
 
 BeforeExecute
--- SqlServer.2022
+-- SqlServer.2022 (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -933,7 +933,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- SqlServer.2022
+-- SqlServer.2022 (asynchronously)
 
 SELECT
 	[r].[Id],
@@ -947,7 +947,7 @@ WHERE
 	[r].[Value1] > [r].[Value4]
 
 BeforeExecute
--- SqlServer.2022
+-- SqlServer.2022 (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -959,7 +959,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- SqlServer.2022
+-- SqlServer.2022 (asynchronously)
 DECLARE @TrueN Bit -- Boolean
 SET     @TrueN = 1
 
@@ -975,7 +975,7 @@ WHERE
 	IIF([r].[Value1] > [r].[Value4], 1, 0) = @TrueN
 
 BeforeExecute
--- SqlServer.2022
+-- SqlServer.2022 (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -987,7 +987,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- SqlServer.2022
+-- SqlServer.2022 (asynchronously)
 
 SELECT
 	[r].[Id],
@@ -1001,7 +1001,7 @@ WHERE
 	[r].[Value1] <= [r].[Value4] OR [r].[Value4] IS NULL
 
 BeforeExecute
--- SqlServer.2022
+-- SqlServer.2022 (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -1013,7 +1013,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- SqlServer.2022
+-- SqlServer.2022 (asynchronously)
 DECLARE @FalseN Bit -- Boolean
 SET     @FalseN = 0
 
@@ -1029,7 +1029,7 @@ WHERE
 	IIF([r].[Value1] > [r].[Value4], 1, 0) = @FalseN
 
 BeforeExecute
--- SqlServer.2022
+-- SqlServer.2022 (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -1041,7 +1041,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- SqlServer.2022
+-- SqlServer.2022 (asynchronously)
 
 SELECT
 	[r].[Id],
@@ -1055,7 +1055,7 @@ WHERE
 	1 = 0
 
 BeforeExecute
--- SqlServer.2022
+-- SqlServer.2022 (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -1067,7 +1067,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- SqlServer.2022
+-- SqlServer.2022 (asynchronously)
 
 SELECT
 	[r].[Id],
@@ -1081,7 +1081,7 @@ WHERE
 	[r].[Value5] > [r].[Value4]
 
 BeforeExecute
--- SqlServer.2022
+-- SqlServer.2022 (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -1093,7 +1093,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- SqlServer.2022
+-- SqlServer.2022 (asynchronously)
 DECLARE @TrueN Bit -- Boolean
 SET     @TrueN = 1
 
@@ -1109,7 +1109,7 @@ WHERE
 	IIF([r].[Value5] > [r].[Value4], 1, 0) = @TrueN
 
 BeforeExecute
--- SqlServer.2022
+-- SqlServer.2022 (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -1121,7 +1121,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- SqlServer.2022
+-- SqlServer.2022 (asynchronously)
 
 SELECT
 	[r].[Id],
@@ -1136,7 +1136,7 @@ WHERE
 	[r].[Value4] IS NULL
 
 BeforeExecute
--- SqlServer.2022
+-- SqlServer.2022 (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -1148,7 +1148,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- SqlServer.2022
+-- SqlServer.2022 (asynchronously)
 DECLARE @FalseN Bit -- Boolean
 SET     @FalseN = 0
 
@@ -1164,7 +1164,7 @@ WHERE
 	IIF([r].[Value5] > [r].[Value4], 1, 0) = @FalseN
 
 BeforeExecute
--- SqlServer.2022
+-- SqlServer.2022 (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -1176,7 +1176,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- SqlServer.2022
+-- SqlServer.2022 (asynchronously)
 
 SELECT
 	[r].[Id],
@@ -1190,7 +1190,7 @@ WHERE
 	1 = 0
 
 BeforeExecute
--- SqlServer.2022
+-- SqlServer.2022 (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -1202,7 +1202,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- SqlServer.2022
+-- SqlServer.2022 (asynchronously)
 
 SELECT
 	[r].[Id],
@@ -1216,7 +1216,7 @@ WHERE
 	[r].[Value1] <= [r].[Value2]
 
 BeforeExecute
--- SqlServer.2022
+-- SqlServer.2022 (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -1228,7 +1228,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- SqlServer.2022
+-- SqlServer.2022 (asynchronously)
 DECLARE @TrueN Bit -- Boolean
 SET     @TrueN = 1
 
@@ -1244,7 +1244,7 @@ WHERE
 	IIF([r].[Value1] > [r].[Value2], 1, 0) <> @TrueN
 
 BeforeExecute
--- SqlServer.2022
+-- SqlServer.2022 (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -1256,7 +1256,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- SqlServer.2022
+-- SqlServer.2022 (asynchronously)
 
 SELECT
 	[r].[Id],
@@ -1270,7 +1270,7 @@ WHERE
 	[r].[Value1] > [r].[Value2]
 
 BeforeExecute
--- SqlServer.2022
+-- SqlServer.2022 (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -1282,7 +1282,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- SqlServer.2022
+-- SqlServer.2022 (asynchronously)
 DECLARE @FalseN Bit -- Boolean
 SET     @FalseN = 0
 
@@ -1298,7 +1298,7 @@ WHERE
 	IIF([r].[Value1] > [r].[Value2], 1, 0) <> @FalseN
 
 BeforeExecute
--- SqlServer.2022
+-- SqlServer.2022 (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -1310,7 +1310,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- SqlServer.2022
+-- SqlServer.2022 (asynchronously)
 
 SELECT
 	[r].[Id],
@@ -1322,7 +1322,7 @@ FROM
 	[BooleanTable] [r]
 
 BeforeExecute
--- SqlServer.2022
+-- SqlServer.2022 (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -1334,7 +1334,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- SqlServer.2022
+-- SqlServer.2022 (asynchronously)
 
 SELECT
 	[r].[Id],
@@ -1348,7 +1348,7 @@ WHERE
 	[r].[Value1] <= [r].[Value4] OR [r].[Value4] IS NULL
 
 BeforeExecute
--- SqlServer.2022
+-- SqlServer.2022 (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -1360,7 +1360,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- SqlServer.2022
+-- SqlServer.2022 (asynchronously)
 DECLARE @TrueN Bit -- Boolean
 SET     @TrueN = 1
 
@@ -1376,7 +1376,7 @@ WHERE
 	IIF([r].[Value1] > [r].[Value4], 1, 0) <> @TrueN
 
 BeforeExecute
--- SqlServer.2022
+-- SqlServer.2022 (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -1388,7 +1388,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- SqlServer.2022
+-- SqlServer.2022 (asynchronously)
 
 SELECT
 	[r].[Id],
@@ -1402,7 +1402,7 @@ WHERE
 	[r].[Value1] > [r].[Value4]
 
 BeforeExecute
--- SqlServer.2022
+-- SqlServer.2022 (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -1414,7 +1414,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- SqlServer.2022
+-- SqlServer.2022 (asynchronously)
 DECLARE @FalseN Bit -- Boolean
 SET     @FalseN = 0
 
@@ -1430,7 +1430,7 @@ WHERE
 	IIF([r].[Value1] > [r].[Value4], 1, 0) <> @FalseN
 
 BeforeExecute
--- SqlServer.2022
+-- SqlServer.2022 (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -1442,7 +1442,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- SqlServer.2022
+-- SqlServer.2022 (asynchronously)
 
 SELECT
 	[r].[Id],
@@ -1454,7 +1454,7 @@ FROM
 	[BooleanTable] [r]
 
 BeforeExecute
--- SqlServer.2022
+-- SqlServer.2022 (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -1466,7 +1466,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- SqlServer.2022
+-- SqlServer.2022 (asynchronously)
 
 SELECT
 	[r].[Id],
@@ -1481,7 +1481,7 @@ WHERE
 	[r].[Value4] IS NULL
 
 BeforeExecute
--- SqlServer.2022
+-- SqlServer.2022 (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -1493,7 +1493,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- SqlServer.2022
+-- SqlServer.2022 (asynchronously)
 DECLARE @TrueN Bit -- Boolean
 SET     @TrueN = 1
 
@@ -1509,7 +1509,7 @@ WHERE
 	IIF([r].[Value5] > [r].[Value4], 1, 0) <> @TrueN
 
 BeforeExecute
--- SqlServer.2022
+-- SqlServer.2022 (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -1521,7 +1521,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- SqlServer.2022
+-- SqlServer.2022 (asynchronously)
 
 SELECT
 	[r].[Id],
@@ -1535,7 +1535,7 @@ WHERE
 	[r].[Value5] > [r].[Value4]
 
 BeforeExecute
--- SqlServer.2022
+-- SqlServer.2022 (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -1547,7 +1547,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- SqlServer.2022
+-- SqlServer.2022 (asynchronously)
 DECLARE @FalseN Bit -- Boolean
 SET     @FalseN = 0
 
@@ -1563,7 +1563,7 @@ WHERE
 	IIF([r].[Value5] > [r].[Value4], 1, 0) <> @FalseN
 
 BeforeExecute
--- SqlServer.2022
+-- SqlServer.2022 (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -1575,7 +1575,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- SqlServer.2022
+-- SqlServer.2022 (asynchronously)
 
 SELECT
 	[r].[Id],
@@ -1587,7 +1587,7 @@ FROM
 	[BooleanTable] [r]
 
 BeforeExecute
--- SqlServer.2022
+-- SqlServer.2022 (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -1599,7 +1599,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- SqlServer.2022
+-- SqlServer.2022 (asynchronously)
 
 SELECT
 	[r].[Id],
@@ -1613,7 +1613,7 @@ WHERE
 	[r].[Value1] >= [r].[Value2]
 
 BeforeExecute
--- SqlServer.2022
+-- SqlServer.2022 (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -1625,7 +1625,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- SqlServer.2022
+-- SqlServer.2022 (asynchronously)
 DECLARE @TrueN Bit -- Boolean
 SET     @TrueN = 1
 
@@ -1641,7 +1641,7 @@ WHERE
 	IIF([r].[Value1] >= [r].[Value2], 1, 0) = @TrueN
 
 BeforeExecute
--- SqlServer.2022
+-- SqlServer.2022 (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -1653,7 +1653,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- SqlServer.2022
+-- SqlServer.2022 (asynchronously)
 
 SELECT
 	[r].[Id],
@@ -1667,7 +1667,7 @@ WHERE
 	[r].[Value1] < [r].[Value2]
 
 BeforeExecute
--- SqlServer.2022
+-- SqlServer.2022 (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -1679,7 +1679,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- SqlServer.2022
+-- SqlServer.2022 (asynchronously)
 DECLARE @FalseN Bit -- Boolean
 SET     @FalseN = 0
 
@@ -1695,7 +1695,7 @@ WHERE
 	IIF([r].[Value1] >= [r].[Value2], 1, 0) = @FalseN
 
 BeforeExecute
--- SqlServer.2022
+-- SqlServer.2022 (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -1707,7 +1707,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- SqlServer.2022
+-- SqlServer.2022 (asynchronously)
 
 SELECT
 	[r].[Id],
@@ -1721,7 +1721,7 @@ WHERE
 	1 = 0
 
 BeforeExecute
--- SqlServer.2022
+-- SqlServer.2022 (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -1733,7 +1733,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- SqlServer.2022
+-- SqlServer.2022 (asynchronously)
 
 SELECT
 	[r].[Id],
@@ -1747,7 +1747,7 @@ WHERE
 	[r].[Value1] >= [r].[Value4]
 
 BeforeExecute
--- SqlServer.2022
+-- SqlServer.2022 (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -1759,7 +1759,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- SqlServer.2022
+-- SqlServer.2022 (asynchronously)
 DECLARE @TrueN Bit -- Boolean
 SET     @TrueN = 1
 
@@ -1775,7 +1775,7 @@ WHERE
 	IIF([r].[Value1] >= [r].[Value4], 1, 0) = @TrueN
 
 BeforeExecute
--- SqlServer.2022
+-- SqlServer.2022 (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -1787,7 +1787,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- SqlServer.2022
+-- SqlServer.2022 (asynchronously)
 
 SELECT
 	[r].[Id],
@@ -1801,7 +1801,7 @@ WHERE
 	[r].[Value1] < [r].[Value4] OR [r].[Value4] IS NULL
 
 BeforeExecute
--- SqlServer.2022
+-- SqlServer.2022 (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -1813,7 +1813,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- SqlServer.2022
+-- SqlServer.2022 (asynchronously)
 DECLARE @FalseN Bit -- Boolean
 SET     @FalseN = 0
 
@@ -1829,7 +1829,7 @@ WHERE
 	IIF([r].[Value1] >= [r].[Value4], 1, 0) = @FalseN
 
 BeforeExecute
--- SqlServer.2022
+-- SqlServer.2022 (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -1841,7 +1841,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- SqlServer.2022
+-- SqlServer.2022 (asynchronously)
 
 SELECT
 	[r].[Id],
@@ -1855,7 +1855,7 @@ WHERE
 	1 = 0
 
 BeforeExecute
--- SqlServer.2022
+-- SqlServer.2022 (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -1867,7 +1867,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- SqlServer.2022
+-- SqlServer.2022 (asynchronously)
 
 SELECT
 	[r].[Id],
@@ -1881,7 +1881,7 @@ WHERE
 	[r].[Value5] >= [r].[Value4]
 
 BeforeExecute
--- SqlServer.2022
+-- SqlServer.2022 (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -1893,7 +1893,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- SqlServer.2022
+-- SqlServer.2022 (asynchronously)
 DECLARE @TrueN Bit -- Boolean
 SET     @TrueN = 1
 
@@ -1909,7 +1909,7 @@ WHERE
 	IIF([r].[Value5] >= [r].[Value4], 1, 0) = @TrueN
 
 BeforeExecute
--- SqlServer.2022
+-- SqlServer.2022 (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -1921,7 +1921,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- SqlServer.2022
+-- SqlServer.2022 (asynchronously)
 
 SELECT
 	[r].[Id],
@@ -1936,7 +1936,7 @@ WHERE
 	[r].[Value4] IS NULL
 
 BeforeExecute
--- SqlServer.2022
+-- SqlServer.2022 (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -1948,7 +1948,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- SqlServer.2022
+-- SqlServer.2022 (asynchronously)
 DECLARE @FalseN Bit -- Boolean
 SET     @FalseN = 0
 
@@ -1964,7 +1964,7 @@ WHERE
 	IIF([r].[Value5] >= [r].[Value4], 1, 0) = @FalseN
 
 BeforeExecute
--- SqlServer.2022
+-- SqlServer.2022 (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -1976,7 +1976,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- SqlServer.2022
+-- SqlServer.2022 (asynchronously)
 
 SELECT
 	[r].[Id],
@@ -1990,7 +1990,7 @@ WHERE
 	1 = 0
 
 BeforeExecute
--- SqlServer.2022
+-- SqlServer.2022 (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -2002,7 +2002,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- SqlServer.2022
+-- SqlServer.2022 (asynchronously)
 
 SELECT
 	[r].[Id],
@@ -2016,7 +2016,7 @@ WHERE
 	[r].[Value1] < [r].[Value2]
 
 BeforeExecute
--- SqlServer.2022
+-- SqlServer.2022 (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -2028,7 +2028,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- SqlServer.2022
+-- SqlServer.2022 (asynchronously)
 DECLARE @TrueN Bit -- Boolean
 SET     @TrueN = 1
 
@@ -2044,7 +2044,7 @@ WHERE
 	IIF([r].[Value1] >= [r].[Value2], 1, 0) <> @TrueN
 
 BeforeExecute
--- SqlServer.2022
+-- SqlServer.2022 (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -2056,7 +2056,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- SqlServer.2022
+-- SqlServer.2022 (asynchronously)
 
 SELECT
 	[r].[Id],
@@ -2070,7 +2070,7 @@ WHERE
 	[r].[Value1] >= [r].[Value2]
 
 BeforeExecute
--- SqlServer.2022
+-- SqlServer.2022 (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -2082,7 +2082,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- SqlServer.2022
+-- SqlServer.2022 (asynchronously)
 DECLARE @FalseN Bit -- Boolean
 SET     @FalseN = 0
 
@@ -2098,7 +2098,7 @@ WHERE
 	IIF([r].[Value1] >= [r].[Value2], 1, 0) <> @FalseN
 
 BeforeExecute
--- SqlServer.2022
+-- SqlServer.2022 (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -2110,7 +2110,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- SqlServer.2022
+-- SqlServer.2022 (asynchronously)
 
 SELECT
 	[r].[Id],
@@ -2122,7 +2122,7 @@ FROM
 	[BooleanTable] [r]
 
 BeforeExecute
--- SqlServer.2022
+-- SqlServer.2022 (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -2134,7 +2134,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- SqlServer.2022
+-- SqlServer.2022 (asynchronously)
 
 SELECT
 	[r].[Id],
@@ -2148,7 +2148,7 @@ WHERE
 	[r].[Value1] < [r].[Value4] OR [r].[Value4] IS NULL
 
 BeforeExecute
--- SqlServer.2022
+-- SqlServer.2022 (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -2160,7 +2160,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- SqlServer.2022
+-- SqlServer.2022 (asynchronously)
 DECLARE @TrueN Bit -- Boolean
 SET     @TrueN = 1
 
@@ -2176,7 +2176,7 @@ WHERE
 	IIF([r].[Value1] >= [r].[Value4], 1, 0) <> @TrueN
 
 BeforeExecute
--- SqlServer.2022
+-- SqlServer.2022 (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -2188,7 +2188,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- SqlServer.2022
+-- SqlServer.2022 (asynchronously)
 
 SELECT
 	[r].[Id],
@@ -2202,7 +2202,7 @@ WHERE
 	[r].[Value1] >= [r].[Value4]
 
 BeforeExecute
--- SqlServer.2022
+-- SqlServer.2022 (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -2214,7 +2214,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- SqlServer.2022
+-- SqlServer.2022 (asynchronously)
 DECLARE @FalseN Bit -- Boolean
 SET     @FalseN = 0
 
@@ -2230,7 +2230,7 @@ WHERE
 	IIF([r].[Value1] >= [r].[Value4], 1, 0) <> @FalseN
 
 BeforeExecute
--- SqlServer.2022
+-- SqlServer.2022 (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -2242,7 +2242,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- SqlServer.2022
+-- SqlServer.2022 (asynchronously)
 
 SELECT
 	[r].[Id],
@@ -2254,7 +2254,7 @@ FROM
 	[BooleanTable] [r]
 
 BeforeExecute
--- SqlServer.2022
+-- SqlServer.2022 (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -2266,7 +2266,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- SqlServer.2022
+-- SqlServer.2022 (asynchronously)
 
 SELECT
 	[r].[Id],
@@ -2281,7 +2281,7 @@ WHERE
 	[r].[Value4] IS NULL
 
 BeforeExecute
--- SqlServer.2022
+-- SqlServer.2022 (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -2293,7 +2293,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- SqlServer.2022
+-- SqlServer.2022 (asynchronously)
 DECLARE @TrueN Bit -- Boolean
 SET     @TrueN = 1
 
@@ -2309,7 +2309,7 @@ WHERE
 	IIF([r].[Value5] >= [r].[Value4], 1, 0) <> @TrueN
 
 BeforeExecute
--- SqlServer.2022
+-- SqlServer.2022 (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -2321,7 +2321,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- SqlServer.2022
+-- SqlServer.2022 (asynchronously)
 
 SELECT
 	[r].[Id],
@@ -2335,7 +2335,7 @@ WHERE
 	[r].[Value5] >= [r].[Value4]
 
 BeforeExecute
--- SqlServer.2022
+-- SqlServer.2022 (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -2347,7 +2347,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- SqlServer.2022
+-- SqlServer.2022 (asynchronously)
 DECLARE @FalseN Bit -- Boolean
 SET     @FalseN = 0
 
@@ -2363,7 +2363,7 @@ WHERE
 	IIF([r].[Value5] >= [r].[Value4], 1, 0) <> @FalseN
 
 BeforeExecute
--- SqlServer.2022
+-- SqlServer.2022 (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -2375,7 +2375,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- SqlServer.2022
+-- SqlServer.2022 (asynchronously)
 
 SELECT
 	[r].[Id],
@@ -2387,7 +2387,7 @@ FROM
 	[BooleanTable] [r]
 
 BeforeExecute
--- SqlServer.2022
+-- SqlServer.2022 (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -2399,7 +2399,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- SqlServer.2022
+-- SqlServer.2022 (asynchronously)
 
 SELECT
 	[r].[Id],
@@ -2413,7 +2413,7 @@ WHERE
 	[r].[Value1] < [r].[Value2]
 
 BeforeExecute
--- SqlServer.2022
+-- SqlServer.2022 (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -2425,7 +2425,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- SqlServer.2022
+-- SqlServer.2022 (asynchronously)
 DECLARE @TrueN Bit -- Boolean
 SET     @TrueN = 1
 
@@ -2441,7 +2441,7 @@ WHERE
 	IIF([r].[Value1] < [r].[Value2], 1, 0) = @TrueN
 
 BeforeExecute
--- SqlServer.2022
+-- SqlServer.2022 (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -2453,7 +2453,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- SqlServer.2022
+-- SqlServer.2022 (asynchronously)
 
 SELECT
 	[r].[Id],
@@ -2467,7 +2467,7 @@ WHERE
 	[r].[Value1] >= [r].[Value2]
 
 BeforeExecute
--- SqlServer.2022
+-- SqlServer.2022 (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -2479,7 +2479,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- SqlServer.2022
+-- SqlServer.2022 (asynchronously)
 DECLARE @FalseN Bit -- Boolean
 SET     @FalseN = 0
 
@@ -2495,7 +2495,7 @@ WHERE
 	IIF([r].[Value1] < [r].[Value2], 1, 0) = @FalseN
 
 BeforeExecute
--- SqlServer.2022
+-- SqlServer.2022 (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -2507,7 +2507,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- SqlServer.2022
+-- SqlServer.2022 (asynchronously)
 
 SELECT
 	[r].[Id],
@@ -2521,7 +2521,7 @@ WHERE
 	1 = 0
 
 BeforeExecute
--- SqlServer.2022
+-- SqlServer.2022 (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -2533,7 +2533,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- SqlServer.2022
+-- SqlServer.2022 (asynchronously)
 
 SELECT
 	[r].[Id],
@@ -2547,7 +2547,7 @@ WHERE
 	[r].[Value1] < [r].[Value4]
 
 BeforeExecute
--- SqlServer.2022
+-- SqlServer.2022 (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -2559,7 +2559,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- SqlServer.2022
+-- SqlServer.2022 (asynchronously)
 DECLARE @TrueN Bit -- Boolean
 SET     @TrueN = 1
 
@@ -2575,7 +2575,7 @@ WHERE
 	IIF([r].[Value1] < [r].[Value4], 1, 0) = @TrueN
 
 BeforeExecute
--- SqlServer.2022
+-- SqlServer.2022 (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -2587,7 +2587,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- SqlServer.2022
+-- SqlServer.2022 (asynchronously)
 
 SELECT
 	[r].[Id],
@@ -2601,7 +2601,7 @@ WHERE
 	[r].[Value1] >= [r].[Value4] OR [r].[Value4] IS NULL
 
 BeforeExecute
--- SqlServer.2022
+-- SqlServer.2022 (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -2613,7 +2613,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- SqlServer.2022
+-- SqlServer.2022 (asynchronously)
 DECLARE @FalseN Bit -- Boolean
 SET     @FalseN = 0
 
@@ -2629,7 +2629,7 @@ WHERE
 	IIF([r].[Value1] < [r].[Value4], 1, 0) = @FalseN
 
 BeforeExecute
--- SqlServer.2022
+-- SqlServer.2022 (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -2641,7 +2641,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- SqlServer.2022
+-- SqlServer.2022 (asynchronously)
 
 SELECT
 	[r].[Id],
@@ -2655,7 +2655,7 @@ WHERE
 	1 = 0
 
 BeforeExecute
--- SqlServer.2022
+-- SqlServer.2022 (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -2667,7 +2667,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- SqlServer.2022
+-- SqlServer.2022 (asynchronously)
 
 SELECT
 	[r].[Id],
@@ -2681,7 +2681,7 @@ WHERE
 	[r].[Value5] < [r].[Value4]
 
 BeforeExecute
--- SqlServer.2022
+-- SqlServer.2022 (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -2693,7 +2693,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- SqlServer.2022
+-- SqlServer.2022 (asynchronously)
 DECLARE @TrueN Bit -- Boolean
 SET     @TrueN = 1
 
@@ -2709,7 +2709,7 @@ WHERE
 	IIF([r].[Value5] < [r].[Value4], 1, 0) = @TrueN
 
 BeforeExecute
--- SqlServer.2022
+-- SqlServer.2022 (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -2721,7 +2721,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- SqlServer.2022
+-- SqlServer.2022 (asynchronously)
 
 SELECT
 	[r].[Id],
@@ -2736,7 +2736,7 @@ WHERE
 	[r].[Value4] IS NULL
 
 BeforeExecute
--- SqlServer.2022
+-- SqlServer.2022 (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -2748,7 +2748,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- SqlServer.2022
+-- SqlServer.2022 (asynchronously)
 DECLARE @FalseN Bit -- Boolean
 SET     @FalseN = 0
 
@@ -2764,7 +2764,7 @@ WHERE
 	IIF([r].[Value5] < [r].[Value4], 1, 0) = @FalseN
 
 BeforeExecute
--- SqlServer.2022
+-- SqlServer.2022 (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -2776,7 +2776,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- SqlServer.2022
+-- SqlServer.2022 (asynchronously)
 
 SELECT
 	[r].[Id],
@@ -2790,7 +2790,7 @@ WHERE
 	1 = 0
 
 BeforeExecute
--- SqlServer.2022
+-- SqlServer.2022 (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -2802,7 +2802,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- SqlServer.2022
+-- SqlServer.2022 (asynchronously)
 
 SELECT
 	[r].[Id],
@@ -2816,7 +2816,7 @@ WHERE
 	[r].[Value1] >= [r].[Value2]
 
 BeforeExecute
--- SqlServer.2022
+-- SqlServer.2022 (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -2828,7 +2828,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- SqlServer.2022
+-- SqlServer.2022 (asynchronously)
 DECLARE @TrueN Bit -- Boolean
 SET     @TrueN = 1
 
@@ -2844,7 +2844,7 @@ WHERE
 	IIF([r].[Value1] < [r].[Value2], 1, 0) <> @TrueN
 
 BeforeExecute
--- SqlServer.2022
+-- SqlServer.2022 (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -2856,7 +2856,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- SqlServer.2022
+-- SqlServer.2022 (asynchronously)
 
 SELECT
 	[r].[Id],
@@ -2870,7 +2870,7 @@ WHERE
 	[r].[Value1] < [r].[Value2]
 
 BeforeExecute
--- SqlServer.2022
+-- SqlServer.2022 (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -2882,7 +2882,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- SqlServer.2022
+-- SqlServer.2022 (asynchronously)
 DECLARE @FalseN Bit -- Boolean
 SET     @FalseN = 0
 
@@ -2898,7 +2898,7 @@ WHERE
 	IIF([r].[Value1] < [r].[Value2], 1, 0) <> @FalseN
 
 BeforeExecute
--- SqlServer.2022
+-- SqlServer.2022 (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -2910,7 +2910,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- SqlServer.2022
+-- SqlServer.2022 (asynchronously)
 
 SELECT
 	[r].[Id],
@@ -2922,7 +2922,7 @@ FROM
 	[BooleanTable] [r]
 
 BeforeExecute
--- SqlServer.2022
+-- SqlServer.2022 (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -2934,7 +2934,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- SqlServer.2022
+-- SqlServer.2022 (asynchronously)
 
 SELECT
 	[r].[Id],
@@ -2948,7 +2948,7 @@ WHERE
 	[r].[Value1] >= [r].[Value4] OR [r].[Value4] IS NULL
 
 BeforeExecute
--- SqlServer.2022
+-- SqlServer.2022 (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -2960,7 +2960,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- SqlServer.2022
+-- SqlServer.2022 (asynchronously)
 DECLARE @TrueN Bit -- Boolean
 SET     @TrueN = 1
 
@@ -2976,7 +2976,7 @@ WHERE
 	IIF([r].[Value1] < [r].[Value4], 1, 0) <> @TrueN
 
 BeforeExecute
--- SqlServer.2022
+-- SqlServer.2022 (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -2988,7 +2988,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- SqlServer.2022
+-- SqlServer.2022 (asynchronously)
 
 SELECT
 	[r].[Id],
@@ -3002,7 +3002,7 @@ WHERE
 	[r].[Value1] < [r].[Value4]
 
 BeforeExecute
--- SqlServer.2022
+-- SqlServer.2022 (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -3014,7 +3014,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- SqlServer.2022
+-- SqlServer.2022 (asynchronously)
 DECLARE @FalseN Bit -- Boolean
 SET     @FalseN = 0
 
@@ -3030,7 +3030,7 @@ WHERE
 	IIF([r].[Value1] < [r].[Value4], 1, 0) <> @FalseN
 
 BeforeExecute
--- SqlServer.2022
+-- SqlServer.2022 (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -3042,7 +3042,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- SqlServer.2022
+-- SqlServer.2022 (asynchronously)
 
 SELECT
 	[r].[Id],
@@ -3054,7 +3054,7 @@ FROM
 	[BooleanTable] [r]
 
 BeforeExecute
--- SqlServer.2022
+-- SqlServer.2022 (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -3066,7 +3066,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- SqlServer.2022
+-- SqlServer.2022 (asynchronously)
 
 SELECT
 	[r].[Id],
@@ -3081,7 +3081,7 @@ WHERE
 	[r].[Value4] IS NULL
 
 BeforeExecute
--- SqlServer.2022
+-- SqlServer.2022 (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -3093,7 +3093,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- SqlServer.2022
+-- SqlServer.2022 (asynchronously)
 DECLARE @TrueN Bit -- Boolean
 SET     @TrueN = 1
 
@@ -3109,7 +3109,7 @@ WHERE
 	IIF([r].[Value5] < [r].[Value4], 1, 0) <> @TrueN
 
 BeforeExecute
--- SqlServer.2022
+-- SqlServer.2022 (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -3121,7 +3121,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- SqlServer.2022
+-- SqlServer.2022 (asynchronously)
 
 SELECT
 	[r].[Id],
@@ -3135,7 +3135,7 @@ WHERE
 	[r].[Value5] < [r].[Value4]
 
 BeforeExecute
--- SqlServer.2022
+-- SqlServer.2022 (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -3147,7 +3147,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- SqlServer.2022
+-- SqlServer.2022 (asynchronously)
 DECLARE @FalseN Bit -- Boolean
 SET     @FalseN = 0
 
@@ -3163,7 +3163,7 @@ WHERE
 	IIF([r].[Value5] < [r].[Value4], 1, 0) <> @FalseN
 
 BeforeExecute
--- SqlServer.2022
+-- SqlServer.2022 (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -3175,7 +3175,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- SqlServer.2022
+-- SqlServer.2022 (asynchronously)
 
 SELECT
 	[r].[Id],
@@ -3187,7 +3187,7 @@ FROM
 	[BooleanTable] [r]
 
 BeforeExecute
--- SqlServer.2022
+-- SqlServer.2022 (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -3199,7 +3199,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- SqlServer.2022
+-- SqlServer.2022 (asynchronously)
 
 SELECT
 	[r].[Id],
@@ -3213,7 +3213,7 @@ WHERE
 	[r].[Value1] <= [r].[Value2]
 
 BeforeExecute
--- SqlServer.2022
+-- SqlServer.2022 (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -3225,7 +3225,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- SqlServer.2022
+-- SqlServer.2022 (asynchronously)
 DECLARE @TrueN Bit -- Boolean
 SET     @TrueN = 1
 
@@ -3241,7 +3241,7 @@ WHERE
 	IIF([r].[Value1] <= [r].[Value2], 1, 0) = @TrueN
 
 BeforeExecute
--- SqlServer.2022
+-- SqlServer.2022 (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -3253,7 +3253,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- SqlServer.2022
+-- SqlServer.2022 (asynchronously)
 
 SELECT
 	[r].[Id],
@@ -3267,7 +3267,7 @@ WHERE
 	[r].[Value1] > [r].[Value2]
 
 BeforeExecute
--- SqlServer.2022
+-- SqlServer.2022 (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -3279,7 +3279,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- SqlServer.2022
+-- SqlServer.2022 (asynchronously)
 DECLARE @FalseN Bit -- Boolean
 SET     @FalseN = 0
 
@@ -3295,7 +3295,7 @@ WHERE
 	IIF([r].[Value1] <= [r].[Value2], 1, 0) = @FalseN
 
 BeforeExecute
--- SqlServer.2022
+-- SqlServer.2022 (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -3307,7 +3307,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- SqlServer.2022
+-- SqlServer.2022 (asynchronously)
 
 SELECT
 	[r].[Id],
@@ -3321,7 +3321,7 @@ WHERE
 	1 = 0
 
 BeforeExecute
--- SqlServer.2022
+-- SqlServer.2022 (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -3333,7 +3333,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- SqlServer.2022
+-- SqlServer.2022 (asynchronously)
 
 SELECT
 	[r].[Id],
@@ -3347,7 +3347,7 @@ WHERE
 	[r].[Value1] <= [r].[Value4]
 
 BeforeExecute
--- SqlServer.2022
+-- SqlServer.2022 (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -3359,7 +3359,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- SqlServer.2022
+-- SqlServer.2022 (asynchronously)
 DECLARE @TrueN Bit -- Boolean
 SET     @TrueN = 1
 
@@ -3375,7 +3375,7 @@ WHERE
 	IIF([r].[Value1] <= [r].[Value4], 1, 0) = @TrueN
 
 BeforeExecute
--- SqlServer.2022
+-- SqlServer.2022 (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -3387,7 +3387,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- SqlServer.2022
+-- SqlServer.2022 (asynchronously)
 
 SELECT
 	[r].[Id],
@@ -3401,7 +3401,7 @@ WHERE
 	[r].[Value1] > [r].[Value4] OR [r].[Value4] IS NULL
 
 BeforeExecute
--- SqlServer.2022
+-- SqlServer.2022 (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -3413,7 +3413,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- SqlServer.2022
+-- SqlServer.2022 (asynchronously)
 DECLARE @FalseN Bit -- Boolean
 SET     @FalseN = 0
 
@@ -3429,7 +3429,7 @@ WHERE
 	IIF([r].[Value1] <= [r].[Value4], 1, 0) = @FalseN
 
 BeforeExecute
--- SqlServer.2022
+-- SqlServer.2022 (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -3441,7 +3441,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- SqlServer.2022
+-- SqlServer.2022 (asynchronously)
 
 SELECT
 	[r].[Id],
@@ -3455,7 +3455,7 @@ WHERE
 	1 = 0
 
 BeforeExecute
--- SqlServer.2022
+-- SqlServer.2022 (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -3467,7 +3467,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- SqlServer.2022
+-- SqlServer.2022 (asynchronously)
 
 SELECT
 	[r].[Id],
@@ -3481,7 +3481,7 @@ WHERE
 	[r].[Value5] <= [r].[Value4]
 
 BeforeExecute
--- SqlServer.2022
+-- SqlServer.2022 (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -3493,7 +3493,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- SqlServer.2022
+-- SqlServer.2022 (asynchronously)
 DECLARE @TrueN Bit -- Boolean
 SET     @TrueN = 1
 
@@ -3509,7 +3509,7 @@ WHERE
 	IIF([r].[Value5] <= [r].[Value4], 1, 0) = @TrueN
 
 BeforeExecute
--- SqlServer.2022
+-- SqlServer.2022 (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -3521,7 +3521,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- SqlServer.2022
+-- SqlServer.2022 (asynchronously)
 
 SELECT
 	[r].[Id],
@@ -3536,7 +3536,7 @@ WHERE
 	[r].[Value4] IS NULL
 
 BeforeExecute
--- SqlServer.2022
+-- SqlServer.2022 (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -3548,7 +3548,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- SqlServer.2022
+-- SqlServer.2022 (asynchronously)
 DECLARE @FalseN Bit -- Boolean
 SET     @FalseN = 0
 
@@ -3564,7 +3564,7 @@ WHERE
 	IIF([r].[Value5] <= [r].[Value4], 1, 0) = @FalseN
 
 BeforeExecute
--- SqlServer.2022
+-- SqlServer.2022 (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -3576,7 +3576,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- SqlServer.2022
+-- SqlServer.2022 (asynchronously)
 
 SELECT
 	[r].[Id],
@@ -3590,7 +3590,7 @@ WHERE
 	1 = 0
 
 BeforeExecute
--- SqlServer.2022
+-- SqlServer.2022 (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -3602,7 +3602,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- SqlServer.2022
+-- SqlServer.2022 (asynchronously)
 
 SELECT
 	[r].[Id],
@@ -3616,7 +3616,7 @@ WHERE
 	[r].[Value1] > [r].[Value2]
 
 BeforeExecute
--- SqlServer.2022
+-- SqlServer.2022 (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -3628,7 +3628,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- SqlServer.2022
+-- SqlServer.2022 (asynchronously)
 DECLARE @TrueN Bit -- Boolean
 SET     @TrueN = 1
 
@@ -3644,7 +3644,7 @@ WHERE
 	IIF([r].[Value1] <= [r].[Value2], 1, 0) <> @TrueN
 
 BeforeExecute
--- SqlServer.2022
+-- SqlServer.2022 (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -3656,7 +3656,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- SqlServer.2022
+-- SqlServer.2022 (asynchronously)
 
 SELECT
 	[r].[Id],
@@ -3670,7 +3670,7 @@ WHERE
 	[r].[Value1] <= [r].[Value2]
 
 BeforeExecute
--- SqlServer.2022
+-- SqlServer.2022 (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -3682,7 +3682,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- SqlServer.2022
+-- SqlServer.2022 (asynchronously)
 DECLARE @FalseN Bit -- Boolean
 SET     @FalseN = 0
 
@@ -3698,7 +3698,7 @@ WHERE
 	IIF([r].[Value1] <= [r].[Value2], 1, 0) <> @FalseN
 
 BeforeExecute
--- SqlServer.2022
+-- SqlServer.2022 (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -3710,7 +3710,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- SqlServer.2022
+-- SqlServer.2022 (asynchronously)
 
 SELECT
 	[r].[Id],
@@ -3722,7 +3722,7 @@ FROM
 	[BooleanTable] [r]
 
 BeforeExecute
--- SqlServer.2022
+-- SqlServer.2022 (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -3734,7 +3734,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- SqlServer.2022
+-- SqlServer.2022 (asynchronously)
 
 SELECT
 	[r].[Id],
@@ -3748,7 +3748,7 @@ WHERE
 	[r].[Value1] > [r].[Value4] OR [r].[Value4] IS NULL
 
 BeforeExecute
--- SqlServer.2022
+-- SqlServer.2022 (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -3760,7 +3760,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- SqlServer.2022
+-- SqlServer.2022 (asynchronously)
 DECLARE @TrueN Bit -- Boolean
 SET     @TrueN = 1
 
@@ -3776,7 +3776,7 @@ WHERE
 	IIF([r].[Value1] <= [r].[Value4], 1, 0) <> @TrueN
 
 BeforeExecute
--- SqlServer.2022
+-- SqlServer.2022 (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -3788,7 +3788,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- SqlServer.2022
+-- SqlServer.2022 (asynchronously)
 
 SELECT
 	[r].[Id],
@@ -3802,7 +3802,7 @@ WHERE
 	[r].[Value1] <= [r].[Value4]
 
 BeforeExecute
--- SqlServer.2022
+-- SqlServer.2022 (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -3814,7 +3814,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- SqlServer.2022
+-- SqlServer.2022 (asynchronously)
 DECLARE @FalseN Bit -- Boolean
 SET     @FalseN = 0
 
@@ -3830,7 +3830,7 @@ WHERE
 	IIF([r].[Value1] <= [r].[Value4], 1, 0) <> @FalseN
 
 BeforeExecute
--- SqlServer.2022
+-- SqlServer.2022 (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -3842,7 +3842,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- SqlServer.2022
+-- SqlServer.2022 (asynchronously)
 
 SELECT
 	[r].[Id],
@@ -3854,7 +3854,7 @@ FROM
 	[BooleanTable] [r]
 
 BeforeExecute
--- SqlServer.2022
+-- SqlServer.2022 (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -3866,7 +3866,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- SqlServer.2022
+-- SqlServer.2022 (asynchronously)
 
 SELECT
 	[r].[Id],
@@ -3881,7 +3881,7 @@ WHERE
 	[r].[Value4] IS NULL
 
 BeforeExecute
--- SqlServer.2022
+-- SqlServer.2022 (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -3893,7 +3893,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- SqlServer.2022
+-- SqlServer.2022 (asynchronously)
 DECLARE @TrueN Bit -- Boolean
 SET     @TrueN = 1
 
@@ -3909,7 +3909,7 @@ WHERE
 	IIF([r].[Value5] <= [r].[Value4], 1, 0) <> @TrueN
 
 BeforeExecute
--- SqlServer.2022
+-- SqlServer.2022 (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -3921,7 +3921,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- SqlServer.2022
+-- SqlServer.2022 (asynchronously)
 
 SELECT
 	[r].[Id],
@@ -3935,7 +3935,7 @@ WHERE
 	[r].[Value5] <= [r].[Value4]
 
 BeforeExecute
--- SqlServer.2022
+-- SqlServer.2022 (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -3947,7 +3947,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- SqlServer.2022
+-- SqlServer.2022 (asynchronously)
 DECLARE @FalseN Bit -- Boolean
 SET     @FalseN = 0
 
@@ -3963,7 +3963,7 @@ WHERE
 	IIF([r].[Value5] <= [r].[Value4], 1, 0) <> @FalseN
 
 BeforeExecute
--- SqlServer.2022
+-- SqlServer.2022 (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -3975,7 +3975,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- SqlServer.2022
+-- SqlServer.2022 (asynchronously)
 
 SELECT
 	[r].[Id],
@@ -3987,7 +3987,7 @@ FROM
 	[BooleanTable] [r]
 
 BeforeExecute
--- SqlServer.2022
+-- SqlServer.2022 (asynchronously)
 
 SELECT
 	[t1].[Id],
