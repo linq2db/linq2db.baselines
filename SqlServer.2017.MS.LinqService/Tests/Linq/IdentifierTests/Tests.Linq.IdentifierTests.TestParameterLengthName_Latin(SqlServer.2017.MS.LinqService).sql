@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2017.MS SqlServer.2017
+-- SqlServer.2017.MS SqlServer.2017 (asynchronously)
 DECLARE @abcdefghijabcdefghijabcdefghijabcdefghijabcdefghij Int -- Int32
 SET     @abcdefghijabcdefghijabcdefghijabcdefghijabcdefghij = 1
 

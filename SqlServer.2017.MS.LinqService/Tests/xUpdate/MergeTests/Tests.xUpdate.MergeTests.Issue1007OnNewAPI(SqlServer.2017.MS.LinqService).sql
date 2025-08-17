@@ -1,12 +1,12 @@
 ﻿BeforeExecute
--- SqlServer.2017.MS SqlServer.2017
+-- SqlServer.2017.MS SqlServer.2017 (asynchronously)
 
 DELETE [t1]
 FROM
 	[TestMergeIdentity] [t1]
 
 BeforeExecute
--- SqlServer.2017.MS SqlServer.2017
+-- SqlServer.2017.MS SqlServer.2017 (asynchronously)
 DECLARE @Field Int -- Int32
 SET     @Field = NULL
 
@@ -20,7 +20,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2017.MS SqlServer.2017
+-- SqlServer.2017.MS SqlServer.2017 (asynchronously)
 
 SELECT
 	MAX([t1].[Id])
@@ -28,7 +28,7 @@ FROM
 	[TestMergeIdentity] [t1]
 
 BeforeExecute
--- SqlServer.2017.MS SqlServer.2017
+-- SqlServer.2017.MS SqlServer.2017 (asynchronously)
 
 MERGE INTO [TestMergeIdentity] [Target]
 USING (VALUES
@@ -56,7 +56,7 @@ SET
 ;
 
 BeforeExecute
--- SqlServer.2017.MS SqlServer.2017
+-- SqlServer.2017.MS SqlServer.2017 (asynchronously)
 
 SELECT
 	[t1].[Id],

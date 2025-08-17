@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2017.MS SqlServer.2017
+-- SqlServer.2017.MS SqlServer.2017 (asynchronously)
 
 SELECT
 	CAST(CAST(DatePart(year, [d].[DateTimeValue]) AS NVarChar(11)) + N'-02-24 00:00:00' AS DateTime2)

@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2017.MS SqlServer.2017
+-- SqlServer.2017.MS SqlServer.2017 (asynchronously)
 
 SELECT
 	IIF([r].[PersonID] IN (1, 2, 3), 1, 0)

@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2017
+-- SqlServer.2017 (asynchronously)
 
 /* query 1
 query 2 */

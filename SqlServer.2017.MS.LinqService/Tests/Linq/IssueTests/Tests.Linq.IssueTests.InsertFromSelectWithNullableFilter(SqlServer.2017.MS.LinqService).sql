@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2017.MS SqlServer.2017
+-- SqlServer.2017.MS SqlServer.2017 (asynchronously)
 
 INSERT INTO [InsertIssueTest]
 (
@@ -21,7 +21,7 @@ FROM
 	) [t2]
 
 BeforeExecute
--- SqlServer.2017.MS SqlServer.2017
+-- SqlServer.2017.MS SqlServer.2017 (asynchronously)
 DECLARE @cond SmallInt -- Int16
 SET     @cond = 1234
 
@@ -45,7 +45,7 @@ FROM
 	) [t2]
 
 BeforeExecute
--- SqlServer.2017.MS SqlServer.2017
+-- SqlServer.2017.MS SqlServer.2017 (asynchronously)
 
 SELECT
 	[t1].[ID],

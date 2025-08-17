@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2017
+-- SqlServer.2017 (asynchronously)
 
 SELECT
 	[sq_1].[Sum_1]

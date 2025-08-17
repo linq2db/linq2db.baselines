@@ -10,7 +10,7 @@ WHERE
 	[p].[ParentID] = 1
 
 BeforeExecute
--- SqlServer.2017
+-- SqlServer.2017 (asynchronously)
 
 SELECT
 	[m_1].[ParentID],
@@ -33,7 +33,7 @@ FROM
 		INNER JOIN [Child] [d] ON [m_1].[ParentID] = [d].[ParentID]
 
 BeforeExecute
--- SqlServer.2017
+-- SqlServer.2017 (asynchronously)
 
 SELECT TOP (2)
 	[p].[ParentID],

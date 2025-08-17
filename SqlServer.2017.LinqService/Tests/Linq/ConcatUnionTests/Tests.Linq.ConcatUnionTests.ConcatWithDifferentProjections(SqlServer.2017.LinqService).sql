@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2017
+-- SqlServer.2017 (asynchronously)
 
 SELECT
 	[p1].[ParentID],
@@ -16,7 +16,7 @@ FROM
 	[Parent] [p2]
 
 BeforeExecute
--- SqlServer.2017
+-- SqlServer.2017 (asynchronously)
 
 SELECT
 	[t1].[ParentID],

@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2017.MS SqlServer.2017
+-- SqlServer.2017.MS SqlServer.2017 (asynchronously)
 DECLARE @int1 Int -- Int32
 SET     @int1 = 11
 DECLARE @int2 Int -- Int32
@@ -22,7 +22,7 @@ WHERE
 	[t].[id] <> @someId
 
 BeforeExecute
--- SqlServer.2017.MS SqlServer.2017
+-- SqlServer.2017.MS SqlServer.2017 (asynchronously)
 
 SELECT
 	[v].[id],

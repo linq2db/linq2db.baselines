@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2017.MS SqlServer.2017
+-- SqlServer.2017.MS SqlServer.2017 (asynchronously)
 
 SELECT
 	[r].[Id],
@@ -13,7 +13,7 @@ WHERE
 	IIF(IIF([r].[Value1] <> [r].[Value2], 1, 0) = IIF([r].[Value1] = [r].[Value4], 1, 0), 1, 0) = IIF(IIF([r].[Value4] = [r].[Value5] OR [r].[Value4] IS NULL AND [r].[Value5] IS NULL, 1, 0) = IIF([r].[Value2] <> [r].[Value4] OR [r].[Value4] IS NULL, 1, 0), 1, 0)
 
 BeforeExecute
--- SqlServer.2017.MS SqlServer.2017
+-- SqlServer.2017.MS SqlServer.2017 (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -25,7 +25,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- SqlServer.2017.MS SqlServer.2017
+-- SqlServer.2017.MS SqlServer.2017 (asynchronously)
 
 SELECT
 	[r].[Id],
@@ -39,7 +39,7 @@ WHERE
 	IIF([r].[Value1] = [r].[Value2], 1, 0) <> IIF([r].[Value4] <> [r].[Value1] OR [r].[Value4] IS NULL, 1, 0)
 
 BeforeExecute
--- SqlServer.2017.MS SqlServer.2017
+-- SqlServer.2017.MS SqlServer.2017 (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -51,7 +51,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- SqlServer.2017.MS SqlServer.2017
+-- SqlServer.2017.MS SqlServer.2017 (asynchronously)
 
 SELECT
 	[r].[Id],
@@ -65,7 +65,7 @@ WHERE
 	IIF([r].[Value1] = [r].[Value2], 1, 0) <> IIF([r].[Value4] = [r].[Value1], 1, 0)
 
 BeforeExecute
--- SqlServer.2017.MS SqlServer.2017
+-- SqlServer.2017.MS SqlServer.2017 (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -77,7 +77,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- SqlServer.2017.MS SqlServer.2017
+-- SqlServer.2017.MS SqlServer.2017 (asynchronously)
 
 SELECT
 	[r].[Id],
@@ -91,7 +91,7 @@ WHERE
 	IIF([r].[Value1] = [r].[Value2], 1, 0) <> IIF([r].[Value4] = [r].[Value1], 1, 0)
 
 BeforeExecute
--- SqlServer.2017.MS SqlServer.2017
+-- SqlServer.2017.MS SqlServer.2017 (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -103,7 +103,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- SqlServer.2017.MS SqlServer.2017
+-- SqlServer.2017.MS SqlServer.2017 (asynchronously)
 
 SELECT
 	[r].[Id],
@@ -117,7 +117,7 @@ WHERE
 	IIF([r].[Value1] = [r].[Value2], 1, 0) <> IIF([r].[Value4] <> [r].[Value1] OR [r].[Value4] IS NULL, 1, 0)
 
 BeforeExecute
--- SqlServer.2017.MS SqlServer.2017
+-- SqlServer.2017.MS SqlServer.2017 (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -129,7 +129,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- SqlServer.2017.MS SqlServer.2017
+-- SqlServer.2017.MS SqlServer.2017 (asynchronously)
 
 SELECT
 	[r].[Id],
@@ -143,7 +143,7 @@ WHERE
 	IIF(IIF([r].[Value1] = [r].[Value2], 1, 0) = IIF([r].[Value2] <> [r].[Value4] OR [r].[Value4] IS NULL, 1, 0), 1, 0) = IIF([r].[Value1] = [r].[Value4], 1, 0)
 
 BeforeExecute
--- SqlServer.2017.MS SqlServer.2017
+-- SqlServer.2017.MS SqlServer.2017 (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -155,7 +155,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- SqlServer.2017.MS SqlServer.2017
+-- SqlServer.2017.MS SqlServer.2017 (asynchronously)
 
 SELECT
 	[r].[Id],
@@ -169,7 +169,7 @@ WHERE
 	IIF(IIF([r].[Value1] <> [r].[Value2], 1, 0) <> IIF([r].[Value2] = [r].[Value5], 1, 0), 1, 0) <> IIF(IIF([r].[Value4] <> [r].[Value1] OR [r].[Value4] IS NULL, 1, 0) = IIF([r].[Value4] = [r].[Value5] OR [r].[Value4] IS NULL AND [r].[Value5] IS NULL, 1, 0), 1, 0)
 
 BeforeExecute
--- SqlServer.2017.MS SqlServer.2017
+-- SqlServer.2017.MS SqlServer.2017 (asynchronously)
 
 SELECT
 	[t1].[Id],

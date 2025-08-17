@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2017
+-- SqlServer.2017 (asynchronously)
 
 SELECT
 	[t].[Str],
@@ -9,7 +9,7 @@ FROM
 	[TestLengthModel] [t]
 
 BeforeExecute
--- SqlServer.2017
+-- SqlServer.2017 (asynchronously)
 
 SELECT
 	[t1].[Id],

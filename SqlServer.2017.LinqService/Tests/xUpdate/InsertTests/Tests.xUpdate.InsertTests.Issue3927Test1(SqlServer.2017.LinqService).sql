@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2017
+-- SqlServer.2017 (asynchronously)
 DECLARE @PageNumber Int -- Int32
 SET     @PageNumber = 9
 DECLARE @serialNumber Char(11) -- AnsiStringFixedLength

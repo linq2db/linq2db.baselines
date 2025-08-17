@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2017
+-- SqlServer.2017 (asynchronously)
 DECLARE @id Int -- Int32
 SET     @id = 1001
 
@@ -15,7 +15,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2017
+-- SqlServer.2017 (asynchronously)
 DECLARE @id Int -- Int32
 SET     @id = 1001
 
@@ -27,7 +27,7 @@ WHERE
 	[c_1].[ChildID] = @id
 
 BeforeExecute
--- SqlServer.2017
+-- SqlServer.2017 (asynchronously)
 DECLARE @id Int -- Int32
 SET     @id = 1001
 
@@ -42,7 +42,7 @@ WHERE
 	[c_1].[ChildID] = @id AND [a_Parent].[Value1] = 1
 
 BeforeExecute
--- SqlServer.2017
+-- SqlServer.2017 (asynchronously)
 DECLARE @p Int -- Int32
 SET     @p = 1002
 

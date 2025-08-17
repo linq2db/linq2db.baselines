@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2017.MS SqlServer.2017
+-- SqlServer.2017.MS SqlServer.2017 (asynchronously)
 
 MERGE INTO [TrimTestTable] [Target]
 USING (VALUES
@@ -30,7 +30,7 @@ VALUES
 ;
 
 BeforeExecute
--- SqlServer.2017.MS SqlServer.2017
+-- SqlServer.2017.MS SqlServer.2017 (asynchronously)
 
 MERGE INTO [TrimTestTable] [Target]
 USING (VALUES
@@ -61,7 +61,7 @@ VALUES
 ;
 
 BeforeExecute
--- SqlServer.2017.MS SqlServer.2017
+-- SqlServer.2017.MS SqlServer.2017 (asynchronously)
 
 SELECT
 	[r].[ID],
@@ -72,7 +72,7 @@ ORDER BY
 	[r].[ID]
 
 BeforeExecute
--- SqlServer.2017.MS SqlServer.2017
+-- SqlServer.2017.MS SqlServer.2017 (asynchronously)
 
 SELECT
 	[r].[ID],

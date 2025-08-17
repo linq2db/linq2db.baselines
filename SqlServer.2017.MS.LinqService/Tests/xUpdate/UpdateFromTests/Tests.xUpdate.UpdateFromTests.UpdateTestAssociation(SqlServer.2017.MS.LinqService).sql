@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2017.MS SqlServer.2017
+-- SqlServer.2017.MS SqlServer.2017 (asynchronously)
 
 UPDATE
 	[v]
@@ -12,7 +12,7 @@ WHERE
 	[a_Relation].[RelatedValue1] = 11
 
 BeforeExecute
--- SqlServer.2017.MS SqlServer.2017
+-- SqlServer.2017.MS SqlServer.2017 (asynchronously)
 
 SELECT TOP (1)
 	[v].[Value1]

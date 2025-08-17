@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2017.MS SqlServer.2017
+-- SqlServer.2017.MS SqlServer.2017 (asynchronously)
 
 INSERT INTO [Issue1373Tests]
 (
@@ -13,7 +13,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2017.MS SqlServer.2017
+-- SqlServer.2017.MS SqlServer.2017 (asynchronously)
 
 INSERT INTO [Issue1373Tests]
 (
@@ -27,7 +27,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2017.MS SqlServer.2017
+-- SqlServer.2017.MS SqlServer.2017 (asynchronously)
 
 INSERT INTO [Issue1373Tests]
 (
@@ -41,7 +41,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2017.MS SqlServer.2017
+-- SqlServer.2017.MS SqlServer.2017 (asynchronously)
 
 SELECT
 	[t1].[Id],

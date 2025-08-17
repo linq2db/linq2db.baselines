@@ -1,19 +1,19 @@
 ﻿BeforeExecute
--- SqlServer.2017.MS SqlServer.2017
+-- SqlServer.2017.MS SqlServer.2017 (asynchronously)
 
 DELETE [t1]
 FROM
 	[TestMerge1] [t1]
 
 BeforeExecute
--- SqlServer.2017.MS SqlServer.2017
+-- SqlServer.2017.MS SqlServer.2017 (asynchronously)
 
 DELETE [t1]
 FROM
 	[TestMerge2] [t1]
 
 BeforeExecute
--- SqlServer.2017.MS SqlServer.2017
+-- SqlServer.2017.MS SqlServer.2017 (asynchronously)
 
 MERGE INTO [TestMerge1] [Target]
 USING (VALUES
@@ -96,7 +96,7 @@ VALUES
 ;
 
 BeforeExecute
--- SqlServer.2017.MS SqlServer.2017
+-- SqlServer.2017.MS SqlServer.2017 (asynchronously)
 
 MERGE INTO [TestMerge2] [Target]
 USING (VALUES
@@ -180,7 +180,7 @@ VALUES
 ;
 
 BeforeExecute
--- SqlServer.2017.MS SqlServer.2017
+-- SqlServer.2017.MS SqlServer.2017 (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -208,7 +208,7 @@ ORDER BY
 	[t1].[Id]
 
 BeforeExecute
--- SqlServer.2017.MS SqlServer.2017
+-- SqlServer.2017.MS SqlServer.2017 (asynchronously)
 
 SELECT
 	[t1].[Id],

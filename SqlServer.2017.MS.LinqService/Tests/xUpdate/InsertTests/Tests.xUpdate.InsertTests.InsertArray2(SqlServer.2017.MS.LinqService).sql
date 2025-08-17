@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2017.MS SqlServer.2017
+-- SqlServer.2017.MS SqlServer.2017 (asynchronously)
 
 DELETE [t]
 FROM
@@ -8,7 +8,7 @@ WHERE
 	[t].[ID] > 1000
 
 BeforeExecute
--- SqlServer.2017.MS SqlServer.2017
+-- SqlServer.2017.MS SqlServer.2017 (asynchronously)
 DECLARE @arr VarBinary(8000) -- Binary
 SET     @arr = NULL
 
@@ -26,7 +26,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2017.MS SqlServer.2017
+-- SqlServer.2017.MS SqlServer.2017 (asynchronously)
 
 SELECT TOP (2)
 	[t].[ID],
@@ -42,7 +42,7 @@ WHERE
 	[t].[ID] = 1001
 
 BeforeExecute
--- SqlServer.2017.MS SqlServer.2017
+-- SqlServer.2017.MS SqlServer.2017 (asynchronously)
 
 DELETE [t]
 FROM

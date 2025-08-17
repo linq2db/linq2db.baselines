@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2017
+-- SqlServer.2017 (asynchronously)
 
 SELECT
 	[m_1].[Id],
@@ -30,7 +30,7 @@ ORDER BY
 	IIF([m_1].[cond_1] = 1, [d].[Name3], N'')
 
 BeforeExecute
--- SqlServer.2017
+-- SqlServer.2017 (asynchronously)
 
 SELECT TOP (1)
 	[t1].[Id],
