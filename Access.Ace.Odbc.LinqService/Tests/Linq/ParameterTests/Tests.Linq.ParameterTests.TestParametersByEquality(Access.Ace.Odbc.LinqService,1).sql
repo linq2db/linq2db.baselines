@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Access.Ace.Odbc AccessODBC
+-- Access.Ace.Odbc AccessODBC (asynchronously)
 DECLARE @personId Int -- Int32
 SET     @personId = 1
 DECLARE @personId Int -- Int32
@@ -22,7 +22,7 @@ WHERE
 	[p].[PersonID] = ? AND [p].[PersonID] = ?
 
 BeforeExecute
--- Access.Ace.Odbc AccessODBC
+-- Access.Ace.Odbc AccessODBC (asynchronously)
 DECLARE @personId Int -- Int32
 SET     @personId = 1
 DECLARE @personId Int -- Int32

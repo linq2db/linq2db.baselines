@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Access.Ace.OleDb AccessOleDb
+-- Access.Ace.OleDb AccessOleDb (asynchronously)
 DECLARE @personId Integer -- Int32
 SET     @personId = 0
 DECLARE @personId_1 Integer -- Int32

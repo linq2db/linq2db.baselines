@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Access.Ace.Odbc AccessODBC
+-- Access.Ace.Odbc AccessODBC (asynchronously)
 
 DELETE FROM
 	[LinqDataTypes] [t]
@@ -7,7 +7,7 @@ WHERE
 	[t].[ID] > 1000
 
 BeforeExecute
--- Access.Ace.Odbc AccessODBC
+-- Access.Ace.Odbc AccessODBC (asynchronously)
 DECLARE @ID Int -- Int32
 SET     @ID = 1001
 DECLARE @MoneyValue VarChar(1, 0) -- AnsiString
@@ -45,7 +45,7 @@ VALUES
 )
 
 BeforeExecute
--- Access.Ace.Odbc AccessODBC
+-- Access.Ace.Odbc AccessODBC (asynchronously)
 
 SELECT TOP 2
 	[t].[ID],
@@ -61,7 +61,7 @@ WHERE
 	[t].[ID] = 1001
 
 BeforeExecute
--- Access.Ace.Odbc AccessODBC
+-- Access.Ace.Odbc AccessODBC (asynchronously)
 
 DELETE FROM
 	[LinqDataTypes] [t]

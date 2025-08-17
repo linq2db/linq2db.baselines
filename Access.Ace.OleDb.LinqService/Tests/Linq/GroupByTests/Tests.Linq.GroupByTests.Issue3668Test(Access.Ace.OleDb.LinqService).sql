@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Access.Ace.OleDb AccessOleDb
+-- Access.Ace.OleDb AccessOleDb (asynchronously)
 DECLARE @id Integer -- Int32
 SET     @id = 1
 DECLARE @name VarWChar(4) -- String
@@ -23,7 +23,7 @@ WHERE
 	[m_1].[FirstName] <> @name_1 AND [m_1].[PersonID] - 1 = @id_1
 
 BeforeExecute
--- Access.Ace.OleDb AccessOleDb
+-- Access.Ace.OleDb AccessOleDb (asynchronously)
 DECLARE @id Integer -- Int32
 SET     @id = 1
 DECLARE @name VarWChar(4) -- String

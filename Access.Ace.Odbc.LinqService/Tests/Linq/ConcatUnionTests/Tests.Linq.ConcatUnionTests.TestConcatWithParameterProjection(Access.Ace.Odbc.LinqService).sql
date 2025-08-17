@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Access.Ace.Odbc AccessODBC
+-- Access.Ace.Odbc AccessODBC (asynchronously)
 DECLARE @someValue Int -- Int32
 SET     @someValue = 3
 DECLARE @someValue Int -- Int32

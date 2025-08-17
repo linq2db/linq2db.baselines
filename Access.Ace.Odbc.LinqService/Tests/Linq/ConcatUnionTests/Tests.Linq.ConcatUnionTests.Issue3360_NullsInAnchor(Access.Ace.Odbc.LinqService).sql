@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Access.Ace.Odbc AccessODBC
+-- Access.Ace.Odbc AccessODBC (asynchronously)
 DECLARE @value UniqueIdentifier -- Guid
 SET     @value = '{00000000-0000-0000-0000-000000000000}'
 DECLARE @value UniqueIdentifier -- Guid

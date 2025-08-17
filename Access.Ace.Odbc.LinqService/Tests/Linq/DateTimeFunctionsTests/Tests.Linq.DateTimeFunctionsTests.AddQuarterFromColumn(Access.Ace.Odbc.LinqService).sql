@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Access.Ace.Odbc AccessODBC
+-- Access.Ace.Odbc AccessODBC (asynchronously)
 
 SELECT
 	DateValue(DateAdd('q', [t].[SmallIntValue], [t].[DateTimeValue]))

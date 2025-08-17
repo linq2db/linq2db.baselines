@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Access.Ace.Odbc AccessODBC
+-- Access.Ace.Odbc AccessODBC (asynchronously)
 DECLARE @cpty NVarChar(3) -- String
 SET     @cpty = '%C%'
 DECLARE @cpty NVarChar(3) -- String

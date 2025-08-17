@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Access.Ace.Odbc AccessODBC
+-- Access.Ace.Odbc AccessODBC (asynchronously)
 DECLARE @Value1 Int -- Int32
 SET     @Value1 = 100
 
@@ -11,7 +11,7 @@ WHERE
 	IIF([x].[Value1] IS NULL, ?, [x].[Value1]) > 10
 
 BeforeExecute
--- Access.Ace.Odbc AccessODBC
+-- Access.Ace.Odbc AccessODBC (asynchronously)
 
 SELECT
 	[p].[Value1]

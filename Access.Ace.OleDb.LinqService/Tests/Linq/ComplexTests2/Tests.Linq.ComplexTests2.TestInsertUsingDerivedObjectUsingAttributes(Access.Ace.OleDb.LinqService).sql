@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Access.Ace.OleDb AccessOleDb
+-- Access.Ace.OleDb AccessOleDb (asynchronously)
 DECLARE @FirstName VarWChar(21) -- String
 SET     @FirstName = 'test_inherited_insert'
 DECLARE @LastName VarWChar(4) -- String
@@ -25,12 +25,12 @@ VALUES
 )
 
 BeforeExecute
--- Access.Ace.OleDb AccessOleDb
+-- Access.Ace.OleDb AccessOleDb (asynchronously)
 
 SELECT @@IDENTITY
 
 BeforeExecute
--- Access.Ace.OleDb AccessOleDb
+-- Access.Ace.OleDb AccessOleDb (asynchronously)
 
 SELECT TOP 1
 	[t1].[FirstName],
@@ -44,7 +44,7 @@ WHERE
 	[t1].[FirstName] = 'test_inherited_insert'
 
 BeforeExecute
--- Access.Ace.OleDb AccessOleDb
+-- Access.Ace.OleDb AccessOleDb (asynchronously)
 DECLARE @FirstName VarWChar(21) -- String
 SET     @FirstName = 'test_inherited_insert'
 DECLARE @LastName VarWChar(4) -- String
@@ -67,7 +67,7 @@ WHERE
 	[t1].[PersonID] = @ID
 
 BeforeExecute
--- Access.Ace.OleDb AccessOleDb
+-- Access.Ace.OleDb AccessOleDb (asynchronously)
 
 SELECT TOP 1
 	[t1].[FirstName],
@@ -81,7 +81,7 @@ WHERE
 	[t1].[FirstName] = 'test_inherited_insert'
 
 BeforeExecute
--- Access.Ace.OleDb AccessOleDb
+-- Access.Ace.OleDb AccessOleDb (asynchronously)
 DECLARE @ID Integer -- Int32
 SET     @ID = 5
 

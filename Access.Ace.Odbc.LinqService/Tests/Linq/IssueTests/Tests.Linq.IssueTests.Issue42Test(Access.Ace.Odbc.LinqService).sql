@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Access.Ace.Odbc AccessODBC
+-- Access.Ace.Odbc AccessODBC (asynchronously)
 
 SELECT TOP 1
 	[r].[ID],
@@ -18,7 +18,7 @@ WHERE
 	[r].[ID] = 1
 
 BeforeExecute
--- Access.Ace.Odbc AccessODBC
+-- Access.Ace.Odbc AccessODBC (asynchronously)
 
 SELECT TOP 1
 	[r].[ID],
@@ -37,7 +37,7 @@ WHERE
 	[r].[ID] = 1
 
 BeforeExecute
--- Access.Ace.Odbc AccessODBC
+-- Access.Ace.Odbc AccessODBC (asynchronously)
 DECLARE @MoneyValue VarChar(5, 4) -- AnsiString
 SET     @MoneyValue = 1.1100
 DECLARE @DateTimeValue DateTime
@@ -75,7 +75,7 @@ WHERE
 	[t1].[ID] = ?
 
 BeforeExecute
--- Access.Ace.Odbc AccessODBC
+-- Access.Ace.Odbc AccessODBC (asynchronously)
 DECLARE @ID Int -- Int32
 SET     @ID = 1
 
@@ -96,7 +96,7 @@ WHERE
 	[r].[ID] = ?
 
 BeforeExecute
--- Access.Ace.Odbc AccessODBC
+-- Access.Ace.Odbc AccessODBC (asynchronously)
 DECLARE @MoneyValue VarChar(5, 4) -- AnsiString
 SET     @MoneyValue = 1.1100
 DECLARE @DateTimeValue DateTime
@@ -134,7 +134,7 @@ WHERE
 	[t1].[ID] = ?
 
 BeforeExecute
--- Access.Ace.Odbc AccessODBC
+-- Access.Ace.Odbc AccessODBC (asynchronously)
 
 SELECT TOP 1
 	[r].[ID],

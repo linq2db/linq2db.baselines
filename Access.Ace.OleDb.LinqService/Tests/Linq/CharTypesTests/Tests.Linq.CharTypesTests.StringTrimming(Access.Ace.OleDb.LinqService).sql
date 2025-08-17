@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Access.Ace.OleDb AccessOleDb
+-- Access.Ace.OleDb AccessOleDb (asynchronously)
 
 SELECT
 	MAX([t1].[ID])
@@ -7,7 +7,7 @@ FROM
 	[AllTypes] [t1]
 
 BeforeExecute
--- Access.Ace.OleDb AccessOleDb
+-- Access.Ace.OleDb AccessOleDb (asynchronously)
 DECLARE @NString VarWChar(6) -- String
 SET     @NString = 'test01'
 DECLARE @String VarWChar(6) -- String
@@ -25,7 +25,7 @@ VALUES
 )
 
 BeforeExecute
--- Access.Ace.OleDb AccessOleDb
+-- Access.Ace.OleDb AccessOleDb (asynchronously)
 DECLARE @NString VarWChar(8) -- String
 SET     @NString = 'test02  '
 DECLARE @String VarWChar(8) -- String
@@ -43,7 +43,7 @@ VALUES
 )
 
 BeforeExecute
--- Access.Ace.OleDb AccessOleDb
+-- Access.Ace.OleDb AccessOleDb (asynchronously)
 DECLARE @NString VarWChar(8) -- String
 SET     @NString = 'test03	 '
 DECLARE @String VarWChar(8) -- String
@@ -61,7 +61,7 @@ VALUES
 )
 
 BeforeExecute
--- Access.Ace.OleDb AccessOleDb
+-- Access.Ace.OleDb AccessOleDb (asynchronously)
 DECLARE @NString VarWChar(8) -- String
 SET     @NString = 'test04
  '
@@ -81,7 +81,7 @@ VALUES
 )
 
 BeforeExecute
--- Access.Ace.OleDb AccessOleDb
+-- Access.Ace.OleDb AccessOleDb (asynchronously)
 DECLARE @NString VarWChar(8) -- String
 SET     @NString = 'test05 '
 DECLARE @String VarWChar(8) -- String
@@ -99,7 +99,7 @@ VALUES
 )
 
 BeforeExecute
--- Access.Ace.OleDb AccessOleDb
+-- Access.Ace.OleDb AccessOleDb (asynchronously)
 DECLARE @NString VarWChar(8) -- String
 SET     @NString = 'test06 '
 DECLARE @String VarWChar(8) -- String
@@ -117,7 +117,7 @@ VALUES
 )
 
 BeforeExecute
--- Access.Ace.OleDb AccessOleDb
+-- Access.Ace.OleDb AccessOleDb (asynchronously)
 DECLARE @NString VarWChar(8) -- String
 SET     @NString = 'test07 '
 DECLARE @String VarWChar(8) -- String
@@ -135,7 +135,7 @@ VALUES
 )
 
 BeforeExecute
--- Access.Ace.OleDb AccessOleDb
+-- Access.Ace.OleDb AccessOleDb (asynchronously)
 DECLARE @NString VarWChar(8) -- String
 SET     @NString = 'test08  '
 DECLARE @String VarWChar(8) -- String
@@ -153,7 +153,7 @@ VALUES
 )
 
 BeforeExecute
--- Access.Ace.OleDb AccessOleDb
+-- Access.Ace.OleDb AccessOleDb (asynchronously)
 DECLARE @NString VarWChar(8) -- String
 SET     @NString = 'test09  '
 DECLARE @String VarWChar(11) -- String
@@ -171,7 +171,7 @@ VALUES
 )
 
 BeforeExecute
--- Access.Ace.OleDb AccessOleDb
+-- Access.Ace.OleDb AccessOleDb (asynchronously)
 DECLARE @NString VarWChar(8) -- String
 SET     @NString = 'test10  '
 DECLARE @String VarWChar(11) -- String
@@ -189,7 +189,7 @@ VALUES
 )
 
 BeforeExecute
--- Access.Ace.OleDb AccessOleDb
+-- Access.Ace.OleDb AccessOleDb (asynchronously)
 DECLARE @NString VarWChar(8) -- String
 SET     @NString = 'test11  '
 DECLARE @String VarWChar(11) -- String
@@ -207,7 +207,7 @@ VALUES
 )
 
 BeforeExecute
--- Access.Ace.OleDb AccessOleDb
+-- Access.Ace.OleDb AccessOleDb (asynchronously)
 DECLARE @NString VarWChar(8) -- String
 SET     @NString = 'test12  '
 DECLARE @String VarWChar(11) -- String
@@ -225,7 +225,7 @@ VALUES
 )
 
 BeforeExecute
--- Access.Ace.OleDb AccessOleDb
+-- Access.Ace.OleDb AccessOleDb (asynchronously)
 DECLARE @NString VarWChar(8) -- String
 SET     @NString = 'test13  '
 DECLARE @String VarWChar(11) -- String
@@ -243,7 +243,7 @@ VALUES
 )
 
 BeforeExecute
--- Access.Ace.OleDb AccessOleDb
+-- Access.Ace.OleDb AccessOleDb (asynchronously)
 DECLARE @NString VarWChar(8) -- String
 SET     @NString = 'test14  '
 DECLARE @String VarWChar(11) -- String
@@ -261,7 +261,7 @@ VALUES
 )
 
 BeforeExecute
--- Access.Ace.OleDb AccessOleDb
+-- Access.Ace.OleDb AccessOleDb (asynchronously)
 DECLARE @NString VarWChar(8) -- String
 SET     @NString = 'test15  '
 DECLARE @String VarWChar(11) -- String
@@ -279,7 +279,7 @@ VALUES
 )
 
 BeforeExecute
--- Access.Ace.OleDb AccessOleDb
+-- Access.Ace.OleDb AccessOleDb (asynchronously)
 DECLARE @NString VarWChar(8) -- String
 SET     @NString = 'test16  '
 DECLARE @String VarWChar(11) -- String
@@ -297,7 +297,7 @@ VALUES
 )
 
 BeforeExecute
--- Access.Ace.OleDb AccessOleDb
+-- Access.Ace.OleDb AccessOleDb (asynchronously)
 DECLARE @NString VarWChar(8) -- String
 SET     @NString = 'test17  '
 DECLARE @String VarWChar(11) -- String
@@ -315,7 +315,7 @@ VALUES
 )
 
 BeforeExecute
--- Access.Ace.OleDb AccessOleDb
+-- Access.Ace.OleDb AccessOleDb (asynchronously)
 DECLARE @NString VarWChar(8) -- String
 SET     @NString = 'test18  '
 DECLARE @String VarWChar(11) -- String
@@ -333,7 +333,7 @@ VALUES
 )
 
 BeforeExecute
--- Access.Ace.OleDb AccessOleDb
+-- Access.Ace.OleDb AccessOleDb (asynchronously)
 DECLARE @NString VarWChar(8) -- String
 SET     @NString = 'test19  '
 DECLARE @String VarWChar(11) -- String
@@ -351,7 +351,7 @@ VALUES
 )
 
 BeforeExecute
--- Access.Ace.OleDb AccessOleDb
+-- Access.Ace.OleDb AccessOleDb (asynchronously)
 DECLARE @NString VarWChar(8) -- String
 SET     @NString = 'test20　 '
 DECLARE @String VarWChar(11) -- String
@@ -369,7 +369,7 @@ VALUES
 )
 
 BeforeExecute
--- Access.Ace.OleDb AccessOleDb
+-- Access.Ace.OleDb AccessOleDb (asynchronously)
 DECLARE @NString VarWChar(8) -- String
 SET     @NString = 'test21' + chr(0) + ' '
 DECLARE @String VarWChar(10) -- String
@@ -387,7 +387,7 @@ VALUES
 )
 
 BeforeExecute
--- Access.Ace.OleDb AccessOleDb
+-- Access.Ace.OleDb AccessOleDb (asynchronously)
 DECLARE @NString VarWChar -- String
 SET     @NString = NULL
 DECLARE @String VarWChar -- String
@@ -405,7 +405,7 @@ VALUES
 )
 
 BeforeExecute
--- Access.Ace.OleDb AccessOleDb
+-- Access.Ace.OleDb AccessOleDb (asynchronously)
 DECLARE @lastId Integer -- Int32
 SET     @lastId = 2
 
@@ -421,7 +421,7 @@ ORDER BY
 	[t1].[ID]
 
 BeforeExecute
--- Access.Ace.OleDb AccessOleDb
+-- Access.Ace.OleDb AccessOleDb (asynchronously)
 DECLARE @lastId Integer -- Int32
 SET     @lastId = 2
 

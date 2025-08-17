@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Access.Ace.Odbc AccessODBC
+-- Access.Ace.Odbc AccessODBC (asynchronously)
 DECLARE @GuidNonReadonly UniqueIdentifier -- Guid
 SET     @GuidNonReadonly = '{bc7b663d-0fde-4327-8f92-5d8cc3a11d11}'
 DECLARE @GuidNonReadonly UniqueIdentifier -- Guid
@@ -16,7 +16,7 @@ WHERE
 	[e].[GuidValue] = ? AND [e].[GuidNullableValue] = ?
 
 BeforeExecute
--- Access.Ace.Odbc AccessODBC
+-- Access.Ace.Odbc AccessODBC (asynchronously)
 
 SELECT
 	[t1].[Id],

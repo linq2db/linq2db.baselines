@@ -1,10 +1,10 @@
 ﻿BeforeExecute
--- Access.Ace.OleDb AccessOleDb
+-- Access.Ace.OleDb AccessOleDb (asynchronously)
 
 DROP TABLE [xxPatient]
 
 BeforeExecute
--- Access.Ace.OleDb AccessOleDb
+-- Access.Ace.OleDb AccessOleDb (asynchronously)
 
 CREATE TABLE [xxPatient]
 (
@@ -15,7 +15,7 @@ CREATE TABLE [xxPatient]
 )
 
 BeforeExecute
--- Access.Ace.OleDb AccessOleDb
+-- Access.Ace.OleDb AccessOleDb (asynchronously)
 DECLARE @Diagnosis VarWChar(4) -- String
 SET     @Diagnosis = 'ABC1'
 DECLARE @PersonID Integer -- Int32
@@ -29,7 +29,7 @@ WHERE
 	[t1].[PersonID] = @PersonID
 
 BeforeExecute
--- Access.Ace.OleDb AccessOleDb
+-- Access.Ace.OleDb AccessOleDb (asynchronously)
 DECLARE @PersonID Integer -- Int32
 SET     @PersonID = 1
 DECLARE @Diagnosis VarWChar(4) -- String
@@ -47,7 +47,7 @@ VALUES
 )
 
 BeforeExecute
--- Access.Ace.OleDb AccessOleDb
+-- Access.Ace.OleDb AccessOleDb (asynchronously)
 DECLARE @Diagnosis VarWChar(4) -- String
 SET     @Diagnosis = 'ABC2'
 DECLARE @PersonID Integer -- Int32
@@ -61,7 +61,7 @@ WHERE
 	[t1].[PersonID] = @PersonID
 
 BeforeExecute
--- Access.Ace.OleDb AccessOleDb
+-- Access.Ace.OleDb AccessOleDb (asynchronously)
 DECLARE @PersonID Integer -- Int32
 SET     @PersonID = 2
 DECLARE @Diagnosis VarWChar(4) -- String
@@ -79,7 +79,7 @@ VALUES
 )
 
 BeforeExecute
--- Access.Ace.OleDb AccessOleDb
+-- Access.Ace.OleDb AccessOleDb (asynchronously)
 
 SELECT
 	COUNT(*)
@@ -87,7 +87,7 @@ FROM
 	[xxPatient] [t1]
 
 BeforeExecute
--- Access.Ace.OleDb AccessOleDb
+-- Access.Ace.OleDb AccessOleDb (asynchronously)
 DECLARE @Diagnosis VarWChar(4) -- String
 SET     @Diagnosis = 'ABC1'
 DECLARE @PersonID Integer -- Int32
@@ -101,7 +101,7 @@ WHERE
 	[t1].[PersonID] = @PersonID
 
 BeforeExecute
--- Access.Ace.OleDb AccessOleDb
+-- Access.Ace.OleDb AccessOleDb (asynchronously)
 DECLARE @Diagnosis VarWChar(4) -- String
 SET     @Diagnosis = 'ABC2'
 DECLARE @PersonID Integer -- Int32
@@ -115,7 +115,7 @@ WHERE
 	[t1].[PersonID] = @PersonID
 
 BeforeExecute
--- Access.Ace.OleDb AccessOleDb
+-- Access.Ace.OleDb AccessOleDb (asynchronously)
 
 SELECT
 	COUNT(*)
@@ -123,7 +123,7 @@ FROM
 	[xxPatient] [t1]
 
 BeforeExecute
--- Access.Ace.OleDb AccessOleDb
+-- Access.Ace.OleDb AccessOleDb (asynchronously)
 
 DROP TABLE [xxPatient]
 

@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Access.Ace.OleDb AccessOleDb
+-- Access.Ace.OleDb AccessOleDb (asynchronously)
 
 SELECT
 	SUM(IIF([a_Parent].[Value1] IS NULL, 0, [a_Parent].[Value1]))
