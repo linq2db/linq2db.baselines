@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Firebird.3 Firebird3
+-- Firebird.3 Firebird3 (asynchronously)
 DECLARE @Value Integer -- Int32
 SET     @Value = 200
 DECLARE @Id Integer -- Int32

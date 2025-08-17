@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Firebird.3 Firebird3
+-- Firebird.3 Firebird3 (asynchronously)
 
 SELECT
 	"a_2"."ParentID",
@@ -23,7 +23,7 @@ FROM
 		LEFT JOIN "Parent" "a_1" ON "a_2"."ParentID" = "a_1"."ParentID"
 
 BeforeExecute
--- Firebird.3 Firebird3
+-- Firebird.3 Firebird3 (asynchronously)
 
 SELECT
 	"t1"."ParentID",

@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Firebird.3 Firebird3
+-- Firebird.3 Firebird3 (asynchronously)
 
 SELECT
 	"e"."Id",
@@ -13,7 +13,7 @@ WHERE
 	"e"."GuidNullableValue" = X'BC7B663D0FDE43278F925D8CC3A11D11'
 
 BeforeExecute
--- Firebird.3 Firebird3
+-- Firebird.3 Firebird3 (asynchronously)
 
 SELECT
 	"t1"."Id",

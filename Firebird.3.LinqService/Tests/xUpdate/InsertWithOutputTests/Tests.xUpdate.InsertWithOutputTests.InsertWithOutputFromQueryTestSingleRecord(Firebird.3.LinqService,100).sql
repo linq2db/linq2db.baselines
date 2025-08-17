@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Firebird.3 Firebird3
+-- Firebird.3 Firebird3 (asynchronously)
 DECLARE @param Integer -- Int32
 SET     @param = 100
 
@@ -23,7 +23,7 @@ RETURNING
 	"DestinationTable"."ValueStr"
 
 BeforeExecute
--- Firebird.3 Firebird3
+-- Firebird.3 Firebird3 (asynchronously)
 DECLARE @param Integer -- Int32
 SET     @param = 100
 
