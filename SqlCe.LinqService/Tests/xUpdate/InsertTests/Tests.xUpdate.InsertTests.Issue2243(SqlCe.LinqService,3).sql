@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 DECLARE @Name NVarChar(5) -- String
 SET     @Name = 'Test1'
 DECLARE @UpdatedBy NVarChar -- String
@@ -16,7 +16,7 @@ WHERE
 	[test_insert_or_replace].[id] = @Id
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 DECLARE @Id Int -- Int32
 SET     @Id = 1
 DECLARE @Name NVarChar(5) -- String
@@ -38,7 +38,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 
 SELECT TOP (2)
 	[t1].[id] as [Id],
@@ -49,7 +49,7 @@ FROM
 	[test_insert_or_replace] [t1]
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 DECLARE @Name NVarChar(5) -- String
 SET     @Name = 'Test2'
 DECLARE @UpdatedBy NVarChar(10) -- String
@@ -66,7 +66,7 @@ WHERE
 	[test_insert_or_replace].[id] = @Id
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 
 SELECT TOP (2)
 	[t1].[id] as [Id],

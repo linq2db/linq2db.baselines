@@ -1,10 +1,10 @@
 ﻿BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 
 DELETE FROM [test_temp]
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 
 INSERT INTO [test_temp]
 (
@@ -16,7 +16,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 
 INSERT INTO [test_temp]
 (
@@ -28,7 +28,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 DECLARE @skip Int -- Int32
 SET     @skip = 1
 
@@ -42,12 +42,12 @@ ORDER BY
 OFFSET @skip ROWS FETCH NEXT 2 ROWS ONLY 
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 
 DELETE FROM [test_temp]
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 
 INSERT INTO [test_temp]
 (
@@ -59,7 +59,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 
 INSERT INTO [test_temp]
 (
@@ -71,7 +71,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 DECLARE @skip Int -- Int32
 SET     @skip = 1
 

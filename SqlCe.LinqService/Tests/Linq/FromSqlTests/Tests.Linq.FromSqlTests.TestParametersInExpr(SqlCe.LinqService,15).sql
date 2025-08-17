@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 DECLARE @p BigInt -- Int64
 SET     @p = 1
 DECLARE @endId Int -- Int32
@@ -19,7 +19,7 @@ ORDER BY
 	[s].[id]
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 DECLARE @startId Int -- Int32
 SET     @startId = 1
 DECLARE @endId Int -- Int32

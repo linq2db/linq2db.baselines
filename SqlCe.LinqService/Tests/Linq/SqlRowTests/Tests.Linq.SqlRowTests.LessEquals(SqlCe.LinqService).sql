@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 
 SELECT
 	COUNT(*) as [COUNT_1]
@@ -9,7 +9,7 @@ WHERE
 	[i].[Two] < [i].[One] * 2 OR [i].[Two] = [i].[One] * 2 AND [i].[Three] <= [i].[Four] - 1
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 
 SELECT
 	COUNT(*) as [COUNT_1]
@@ -19,7 +19,7 @@ WHERE
 	[i].[Four] <= [i].[Three]
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 
 SELECT
 	COUNT(*) as [COUNT_1]
@@ -29,7 +29,7 @@ WHERE
 	[i].[Two] < [i].[Five] OR [i].[Two] = [i].[Five] AND [i].[Four] <= [i].[Three]
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 
 SELECT
 	COUNT(*) as [COUNT_1]
@@ -39,7 +39,7 @@ WHERE
 	[i].[Nil] < [i].[Two] OR [i].[Nil] = [i].[Two] AND [i].[One] <= [i].[Three]
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 
 SELECT
 	COUNT(*) as [COUNT_1]

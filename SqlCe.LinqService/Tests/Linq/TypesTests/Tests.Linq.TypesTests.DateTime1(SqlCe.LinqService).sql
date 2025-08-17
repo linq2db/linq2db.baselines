@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 DECLARE @Date DateTime
 SET     @Date = '2009-09-20'
 

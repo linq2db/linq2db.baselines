@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 DECLARE @skip Int -- Int32
 SET     @skip = 2
 DECLARE @take Int -- Int32
@@ -15,7 +15,7 @@ ORDER BY
 OFFSET @skip ROWS FETCH NEXT @take ROWS ONLY 
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 DECLARE @skip Int -- Int32
 SET     @skip = 2
 DECLARE @take Int -- Int32

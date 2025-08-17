@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 DECLARE @Id Int -- Int32
 SET     @Id = 0
 DECLARE @ClaimedKeyType NVarChar(3) -- String
@@ -21,7 +21,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 DECLARE @ClaimedKeyType NVarChar(2) -- String
 SET     @ClaimedKeyType = 'EC'
 DECLARE @ClaimedKeyTypeN NVarChar(2) -- String
@@ -36,7 +36,7 @@ WHERE
 	[Issue1554Table].[Id] = 0
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 
 SELECT TOP (2)
 	[t1].[Id],

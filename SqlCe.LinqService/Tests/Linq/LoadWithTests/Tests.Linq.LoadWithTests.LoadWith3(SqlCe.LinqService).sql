@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 
 SELECT
 	[m_1].[ParentID],
@@ -15,7 +15,7 @@ FROM
 		INNER JOIN [Child] [d] ON [m_1].[ParentID] = [d].[ParentID]
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 
 SELECT
 	[t1].[COUNT_1],

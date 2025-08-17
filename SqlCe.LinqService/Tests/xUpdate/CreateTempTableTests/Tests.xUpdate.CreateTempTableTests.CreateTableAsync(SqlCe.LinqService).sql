@@ -24,7 +24,7 @@ FROM
 	[Parent] [p]
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 
 SELECT
 	[t].[ID]

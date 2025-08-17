@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 DECLARE @p Int -- Int32
 SET     @p = 102
 
@@ -9,7 +9,7 @@ WHERE
 	[LinqDataTypes].[ID] >= 101 AND [LinqDataTypes].[ID] < @p
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 
 INSERT INTO [LinqDataTypes]
 (
@@ -23,7 +23,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 DECLARE @param BigInt -- Int64
 SET     @param = 11
 
@@ -41,7 +41,7 @@ WHERE
 	[r].[ID] = 101 AND [r].[BigIntValue] = 12
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 
 SELECT
 	COUNT(*) as [COUNT_1]
@@ -51,7 +51,7 @@ WHERE
 	[r].[ID] = 101 AND [r].[BigIntValue] = 11
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 DECLARE @p Int -- Int32
 SET     @p = 102
 

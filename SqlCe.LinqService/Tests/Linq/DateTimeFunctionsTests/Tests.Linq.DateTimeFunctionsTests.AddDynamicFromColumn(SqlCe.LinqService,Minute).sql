@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 
 SELECT
 	DateAdd(minute, [t].[SmallIntValue], [t].[DateTimeValue]) as [c1]

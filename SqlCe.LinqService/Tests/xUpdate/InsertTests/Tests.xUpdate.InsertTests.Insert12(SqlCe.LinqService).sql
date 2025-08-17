@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 DECLARE @FirstName NVarChar(9) -- String
 SET     @FirstName = 'FirstName'
 DECLARE @Gender NVarChar(1) -- String

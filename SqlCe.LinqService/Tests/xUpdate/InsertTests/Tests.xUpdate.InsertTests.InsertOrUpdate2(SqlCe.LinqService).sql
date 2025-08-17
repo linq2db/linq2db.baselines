@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 DECLARE @FirstName NVarChar(4) -- String
 SET     @FirstName = 'test'
 DECLARE @LastName NVarChar(7) -- String
@@ -25,12 +25,12 @@ VALUES
 )
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 
 SELECT @@IDENTITY
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 DECLARE @id Int -- Int32
 SET     @id = 5
 
@@ -42,7 +42,7 @@ WHERE
 	[t1].[PersonID] = @id
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 DECLARE @id Int -- Int32
 SET     @id = 5
 
@@ -58,7 +58,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 DECLARE @id Int -- Int32
 SET     @id = 5
 
@@ -71,7 +71,7 @@ WHERE
 	[p].[PersonID] = @id
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 DECLARE @id Int -- Int32
 SET     @id = 5
 
@@ -83,7 +83,7 @@ WHERE
 	[t1].[PersonID] = @id
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 DECLARE @id Int -- Int32
 SET     @id = 5
 

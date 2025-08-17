@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 DECLARE @Gender NVarChar(1) -- String
 SET     @Gender = 'M'
 DECLARE @FirstName NVarChar(12) -- String
@@ -25,12 +25,12 @@ VALUES
 )
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 
 SELECT @@IDENTITY
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 DECLARE @id Int -- Int32
 SET     @id = 5
 

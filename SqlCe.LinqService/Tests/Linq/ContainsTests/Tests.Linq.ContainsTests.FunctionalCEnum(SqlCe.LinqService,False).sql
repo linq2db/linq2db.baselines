@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 DECLARE @In NVarChar(12) -- String
 SET     @In = '___Value3___'
 DECLARE @In_1 NVarChar(12) -- String
@@ -13,7 +13,7 @@ WHERE
 	[s].[CEnum] IN (@In, @In_1)
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 DECLARE @In NVarChar(12) -- String
 SET     @In = '___Value3___'
 DECLARE @In_1 NVarChar -- String
@@ -27,7 +27,7 @@ WHERE
 	[s].[CEnum] IN (@In, @In_1)
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 DECLARE @In NVarChar(12) -- String
 SET     @In = '___Value3___'
 DECLARE @In_1 NVarChar(12) -- String
@@ -41,7 +41,7 @@ WHERE
 	[s].[CEnum] IN (@In, @In_1)
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 DECLARE @NotIn NVarChar -- String
 SET     @NotIn = NULL
 DECLARE @NotIn_1 NVarChar(12) -- String
@@ -55,7 +55,7 @@ WHERE
 	[s].[CEnum] NOT IN (@NotIn, @NotIn_1)
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 DECLARE @NotIn NVarChar(12) -- String
 SET     @NotIn = '___Value3___'
 DECLARE @NotIn_1 NVarChar(12) -- String

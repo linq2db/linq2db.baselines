@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 DECLARE @Field1 NVarChar -- String
 SET     @Field1 = NULL
 
@@ -15,7 +15,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 DECLARE @Field1 NVarChar -- String
 SET     @Field1 = NULL
 
@@ -31,7 +31,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 DECLARE @Field1 NVarChar(4) -- String
 SET     @Field1 = 'test'
 
@@ -47,7 +47,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 
 SELECT
 	[t1].[Id],

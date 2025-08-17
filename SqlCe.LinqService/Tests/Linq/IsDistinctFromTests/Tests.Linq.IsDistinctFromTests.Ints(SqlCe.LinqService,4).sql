@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 DECLARE @value Int -- Int32
 SET     @value = 4
 
@@ -11,7 +11,7 @@ WHERE
 	[s].[Int] <> @value
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 DECLARE @value Int -- Int32
 SET     @value = 4
 
@@ -23,7 +23,7 @@ WHERE
 	[s].[NullableInt] IS NULL OR [s].[NullableInt] <> @value
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 DECLARE @value Int -- Int32
 SET     @value = 4
 
@@ -35,7 +35,7 @@ WHERE
 	[s].[Int] = @value
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 DECLARE @value Int -- Int32
 SET     @value = 4
 

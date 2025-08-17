@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 
 DELETE FROM
 	[GrandChild]
@@ -7,7 +7,7 @@ WHERE
 	[GrandChild].[GrandChildID] IN (1001, 1002)
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 
 INSERT INTO [GrandChild]
 (
@@ -23,7 +23,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 
 INSERT INTO [GrandChild]
 (
@@ -39,7 +39,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 
 SELECT
 	COUNT(*) as [COUNT_1]
@@ -49,7 +49,7 @@ WHERE
 	[gc].[ParentID] = 1
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 
 DELETE FROM
 	[GrandChild]
@@ -69,7 +69,7 @@ WHERE
 	)
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 
 SELECT
 	COUNT(*) as [COUNT_1]

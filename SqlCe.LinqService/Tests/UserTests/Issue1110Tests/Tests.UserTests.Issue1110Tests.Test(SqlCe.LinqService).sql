@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 DECLARE @Id Int -- Int32
 SET     @Id = 10
 DECLARE @TimeStamp DateTime

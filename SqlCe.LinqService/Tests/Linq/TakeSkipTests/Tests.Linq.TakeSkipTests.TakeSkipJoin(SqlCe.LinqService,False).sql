@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 
 SELECT
 	[t1].[ID],
@@ -14,7 +14,7 @@ FROM
 	[LinqDataTypes] [t1]
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 
 SELECT
 	[e].[ID],

@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 
 SELECT
 	COUNT(*) as [COUNT_1]
@@ -9,7 +9,7 @@ WHERE
 	[r].[Value1] = 1
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 DECLARE @cnt Int -- Int32
 SET     @cnt = 18
 
@@ -50,7 +50,7 @@ WHERE
 	END IS NULL
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -62,7 +62,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 DECLARE @cnt Int -- Int32
 SET     @cnt = 18
 
@@ -103,7 +103,7 @@ WHERE
 	END IS NULL
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -115,7 +115,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 DECLARE @cnt Int -- Int32
 SET     @cnt = 18
 
@@ -146,7 +146,7 @@ WHERE
 	END
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -158,7 +158,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 DECLARE @cnt Int -- Int32
 SET     @cnt = 18
 
@@ -189,7 +189,7 @@ WHERE
 	END
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -201,7 +201,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 DECLARE @cnt Int -- Int32
 SET     @cnt = 18
 
@@ -248,7 +248,7 @@ WHERE
 	END
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -260,7 +260,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 DECLARE @cnt Int -- Int32
 SET     @cnt = 18
 
@@ -307,7 +307,7 @@ WHERE
 	END
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -319,7 +319,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 DECLARE @cnt Int -- Int32
 SET     @cnt = 18
 
@@ -357,7 +357,7 @@ WHERE
 	END
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -369,7 +369,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 DECLARE @cnt Int -- Int32
 SET     @cnt = 18
 
@@ -407,7 +407,7 @@ WHERE
 	END
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -419,7 +419,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 DECLARE @cnt Int -- Int32
 SET     @cnt = 18
 
@@ -469,7 +469,7 @@ WHERE
 	END IS NULL
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -481,7 +481,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 DECLARE @cnt Int -- Int32
 SET     @cnt = 18
 
@@ -531,7 +531,7 @@ WHERE
 	END IS NULL
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -543,7 +543,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 DECLARE @cnt Int -- Int32
 SET     @cnt = 18
 
@@ -579,7 +579,7 @@ WHERE
 	END IS NULL
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -591,7 +591,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 DECLARE @cnt Int -- Int32
 SET     @cnt = 18
 
@@ -627,7 +627,7 @@ WHERE
 	END IS NULL
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -639,7 +639,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 DECLARE @cnt Int -- Int32
 SET     @cnt = 18
 
@@ -694,7 +694,7 @@ WHERE
 	END
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -706,7 +706,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 DECLARE @cnt Int -- Int32
 SET     @cnt = 18
 
@@ -761,7 +761,7 @@ WHERE
 	END
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -773,7 +773,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 DECLARE @cnt Int -- Int32
 SET     @cnt = 18
 
@@ -815,7 +815,7 @@ WHERE
 	END
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -827,7 +827,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 DECLARE @cnt Int -- Int32
 SET     @cnt = 18
 
@@ -869,7 +869,7 @@ WHERE
 	END
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -881,7 +881,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 DECLARE @cnt Int -- Int32
 SET     @cnt = 18
 
@@ -905,7 +905,7 @@ WHERE
 	([r_1].[Value4] + @cnt) >= ([t1].[COUNT_1] + [r_1].[Value5])
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -917,7 +917,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 DECLARE @cnt Int -- Int32
 SET     @cnt = 18
 
@@ -941,7 +941,7 @@ WHERE
 	([r_1].[Value4] + @cnt) > ([t1].[COUNT_1] + [r_1].[Value5])
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -953,7 +953,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 DECLARE @cnt Int -- Int32
 SET     @cnt = 18
 
@@ -977,7 +977,7 @@ WHERE
 	([r_1].[Value4] + @cnt) <= ([t1].[COUNT_1] + [r_1].[Value5])
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -989,7 +989,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 DECLARE @cnt Int -- Int32
 SET     @cnt = 18
 
@@ -1013,7 +1013,7 @@ WHERE
 	([r_1].[Value4] + @cnt) < ([t1].[COUNT_1] + [r_1].[Value5])
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -1025,7 +1025,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 DECLARE @cnt Int -- Int32
 SET     @cnt = 18
 
@@ -1049,7 +1049,7 @@ WHERE
 	([r_1].[Value2] + @cnt) >= ([t1].[COUNT_1] + [r_1].[Value5])
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -1061,7 +1061,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 DECLARE @cnt Int -- Int32
 SET     @cnt = 18
 
@@ -1085,7 +1085,7 @@ WHERE
 	([r_1].[Value2] + @cnt) > ([t1].[COUNT_1] + [r_1].[Value5])
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -1097,7 +1097,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 DECLARE @cnt Int -- Int32
 SET     @cnt = 18
 
@@ -1121,7 +1121,7 @@ WHERE
 	([r_1].[Value2] + @cnt) <= ([t1].[COUNT_1] + [r_1].[Value5])
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -1133,7 +1133,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 DECLARE @cnt Int -- Int32
 SET     @cnt = 18
 
@@ -1157,7 +1157,7 @@ WHERE
 	([r_1].[Value2] + @cnt) < ([t1].[COUNT_1] + [r_1].[Value5])
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -1169,7 +1169,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 DECLARE @cnt Int -- Int32
 SET     @cnt = 18
 
@@ -1200,7 +1200,7 @@ WHERE
 	END
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -1212,7 +1212,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 DECLARE @cnt Int -- Int32
 SET     @cnt = 18
 
@@ -1243,7 +1243,7 @@ WHERE
 	END
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -1255,7 +1255,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 DECLARE @cnt Int -- Int32
 SET     @cnt = 18
 
@@ -1286,7 +1286,7 @@ WHERE
 	END
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -1298,7 +1298,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 DECLARE @cnt Int -- Int32
 SET     @cnt = 18
 
@@ -1329,7 +1329,7 @@ WHERE
 	END
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -1341,7 +1341,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 DECLARE @cnt Int -- Int32
 SET     @cnt = 18
 
@@ -1372,7 +1372,7 @@ WHERE
 	END
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -1384,7 +1384,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 DECLARE @cnt Int -- Int32
 SET     @cnt = 18
 
@@ -1415,7 +1415,7 @@ WHERE
 	END
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -1427,7 +1427,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 DECLARE @cnt Int -- Int32
 SET     @cnt = 18
 
@@ -1458,7 +1458,7 @@ WHERE
 	END
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -1470,7 +1470,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 DECLARE @cnt Int -- Int32
 SET     @cnt = 18
 
@@ -1501,7 +1501,7 @@ WHERE
 	END
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 
 SELECT
 	[t1].[Id],

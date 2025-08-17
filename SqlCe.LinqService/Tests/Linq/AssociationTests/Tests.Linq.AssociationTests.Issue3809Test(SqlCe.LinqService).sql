@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 
 SELECT
 	[m_1].[ParentID],
@@ -27,7 +27,7 @@ ORDER BY
 	[d].[ChildID]
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 
 SELECT
 	[a].[ParentID],

@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 
 INSERT INTO [TestTempTable]
 (
@@ -13,7 +13,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 
 CREATE TABLE [TempTable]
 (
@@ -22,7 +22,7 @@ CREATE TABLE [TempTable]
 )
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 
 INSERT INTO [TempTable]
 (
@@ -36,7 +36,7 @@ FROM
 	[TestTempTable] [t1]
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 
 INSERT INTO [TestTempTable]
 (
@@ -50,7 +50,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 
 INSERT INTO [TempTable]
 (
@@ -64,7 +64,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -75,7 +75,7 @@ ORDER BY
 	[t1].[Id]
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -86,7 +86,7 @@ ORDER BY
 	[t1].[Id]
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 
 DROP TABLE [TempTable]
 

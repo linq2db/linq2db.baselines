@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 DECLARE @Name NVarChar(4) -- String
 SET     @Name = 'John'
 DECLARE @Id Int -- Int32
@@ -13,7 +13,7 @@ WHERE
 	[PR_1598_Insert_Table_Cache].[Id] = @Id
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 DECLARE @Id Int -- Int32
 SET     @Id = 1
 DECLARE @Name NVarChar(4) -- String
@@ -31,7 +31,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 
 SELECT TOP (1)
 	[t].[Id],
@@ -43,7 +43,7 @@ WHERE
 	[t].[Id] = 1
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 DECLARE @Name NVarChar(4) -- String
 SET     @Name = 'John'
 DECLARE @Id Int -- Int32
@@ -57,7 +57,7 @@ WHERE
 	[PR_1598_Insert_Table_Cache].[Id] = @Id
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 
 SELECT TOP (1)
 	[t].[Id],

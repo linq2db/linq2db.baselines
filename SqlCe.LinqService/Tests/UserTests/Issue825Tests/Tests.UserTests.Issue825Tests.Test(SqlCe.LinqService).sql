@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 DECLARE @userId Int -- Int32
 SET     @userId = 32
 DECLARE @childId Int -- Int32

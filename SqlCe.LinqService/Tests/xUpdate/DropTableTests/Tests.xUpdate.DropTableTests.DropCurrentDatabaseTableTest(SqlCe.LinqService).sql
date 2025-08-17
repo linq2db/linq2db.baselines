@@ -1,10 +1,10 @@
 ﻿BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 
 DROP TABLE [DropTableTest]
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 
 CREATE TABLE [DropTableTest]
 (
@@ -12,7 +12,7 @@ CREATE TABLE [DropTableTest]
 )
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 
 INSERT INTO [DropTableTest]
 (
@@ -24,7 +24,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 
 SELECT
 	[t1].[ID]
@@ -32,12 +32,12 @@ FROM
 	[DropTableTest] [t1]
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 
 DROP TABLE [DropTableTest]
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 
 SELECT
 	[t1].[ID]

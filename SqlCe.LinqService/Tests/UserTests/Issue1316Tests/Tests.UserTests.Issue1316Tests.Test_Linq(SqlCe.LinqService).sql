@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 DECLARE @ID Int -- Int32
 SET     @ID = 5
 
@@ -13,7 +13,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 
 SELECT TOP (2)
 	[t1].[ID]

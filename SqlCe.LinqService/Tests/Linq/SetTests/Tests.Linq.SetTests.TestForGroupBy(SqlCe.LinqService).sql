@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 
 SELECT
 	[x].[ParentID],
@@ -11,7 +11,7 @@ WHERE
 	[x].[ParentID] IN (2)
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 
 SELECT
 	[x].[ParentID],

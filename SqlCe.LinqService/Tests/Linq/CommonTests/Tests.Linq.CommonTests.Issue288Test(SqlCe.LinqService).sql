@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 
 SELECT TOP (1)
 	[p].[FirstName] as [ID]
@@ -9,7 +9,7 @@ WHERE
 	[p].[FirstName] IS NULL
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 DECLARE @p NVarChar(4) -- String
 SET     @p = 'John'
 

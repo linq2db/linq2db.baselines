@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 DECLARE @personId Int -- Int32
 SET     @personId = 0
 DECLARE @personId_1 Int -- Int32

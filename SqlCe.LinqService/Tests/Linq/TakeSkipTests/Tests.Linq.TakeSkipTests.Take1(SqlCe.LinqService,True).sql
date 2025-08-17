@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 DECLARE @take Int -- Int32
 SET     @take = 2
 
@@ -10,7 +10,7 @@ FROM
 	[Child] [ch]
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 DECLARE @take Int -- Int32
 SET     @take = 3
 
@@ -21,7 +21,7 @@ FROM
 	[Child] [ch]
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 DECLARE @take Int -- Int32
 SET     @take = 2
 
@@ -32,7 +32,7 @@ FROM
 	[Child] [ch]
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 DECLARE @take Int -- Int32
 SET     @take = 3
 

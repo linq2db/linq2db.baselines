@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 DECLARE @pattern NVarChar(6) -- String
 SET     @pattern = '%h~%n%'
 

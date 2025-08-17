@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 DECLARE @dateTime DateTime
 SET     @dateTime = '1992-01-11 01:11:21.100'
 
@@ -11,7 +11,7 @@ WHERE
 	[t].[DateTimeValue] > @dateTime
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 DECLARE @dateTime DateTime
 SET     @dateTime = '1993-01-11 01:11:21.100'
 

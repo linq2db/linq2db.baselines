@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 DECLARE @ChildID Int -- Int32
 SET     @ChildID = 10
 

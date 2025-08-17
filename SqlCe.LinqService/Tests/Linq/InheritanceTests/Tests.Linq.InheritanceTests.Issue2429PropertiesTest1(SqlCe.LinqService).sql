@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 
 SELECT TOP (1)
 	[x].[Id],
@@ -10,7 +10,7 @@ WHERE
 	[x].[Id] = 1
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 
 SELECT TOP (1)
 	[x].[Id],

@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 
 DELETE FROM
 	[Person]
@@ -101,7 +101,7 @@ WHERE
 	[p].[FirstName] = @p AND [p].[LastName] = 'Shepard'
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 
 DELETE FROM
 	[Person]

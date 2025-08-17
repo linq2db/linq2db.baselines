@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 
 INSERT INTO [BlobClass]
 (
@@ -13,7 +13,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 
 SELECT TOP (1)
 	[t1].[Id],
@@ -24,7 +24,7 @@ WHERE
 	[t1].[Id] = 1
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 
 UPDATE
 	[BlobClass]
@@ -34,7 +34,7 @@ WHERE
 	[BlobClass].[Id] = 1
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 
 SELECT TOP (1)
 	[t1].[Id],

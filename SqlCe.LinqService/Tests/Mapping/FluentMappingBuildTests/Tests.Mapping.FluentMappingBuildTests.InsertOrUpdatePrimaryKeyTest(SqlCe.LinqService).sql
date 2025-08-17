@@ -1,10 +1,10 @@
 ﻿BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 
 DROP TABLE [FluentTemp]
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 
 CREATE TABLE [FluentTemp]
 (
@@ -15,7 +15,7 @@ CREATE TABLE [FluentTemp]
 )
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 DECLARE @ID Int -- Int32
 SET     @ID = 1
 DECLARE @Name NVarChar(4) -- String
@@ -33,7 +33,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 
 UPDATE
 	[FluentTemp]
@@ -44,7 +44,7 @@ WHERE
 	[FluentTemp].[ID] = 1
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 
 DROP TABLE [FluentTemp]
 
