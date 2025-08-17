@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2008
+-- SqlServer.2008 (asynchronously)
 
 SELECT
 	[t2].[ParentID],
@@ -19,7 +19,7 @@ ORDER BY
 	[t2].[ChildID] DESC
 
 BeforeExecute
--- SqlServer.2008
+-- SqlServer.2008 (asynchronously)
 
 SELECT
 	[t2].[ParentID],

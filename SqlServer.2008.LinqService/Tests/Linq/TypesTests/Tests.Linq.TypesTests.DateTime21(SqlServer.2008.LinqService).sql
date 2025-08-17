@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2008
+-- SqlServer.2008 (asynchronously)
 
 SELECT TOP (1)
 	[t].[ID],
@@ -18,7 +18,7 @@ WHERE
 	[t].[ID] = 1
 
 BeforeExecute
--- SqlServer.2008
+-- SqlServer.2008 (asynchronously)
 DECLARE @dt DateTime
 SET     @dt = CAST('2010-12-14T05:00:07.4250141' AS DATETIME2)
 
@@ -30,7 +30,7 @@ WHERE
 	[LinqDataTypes].[ID] = 1
 
 BeforeExecute
--- SqlServer.2008
+-- SqlServer.2008 (asynchronously)
 
 SELECT TOP (1)
 	[t].[ID],
@@ -49,7 +49,7 @@ WHERE
 	[t].[ID] = 1
 
 BeforeExecute
--- SqlServer.2008
+-- SqlServer.2008 (asynchronously)
 DECLARE @pdt DateTime
 SET     @pdt = CAST('2001-01-11T01:11:21.1000000' AS DATETIME2)
 

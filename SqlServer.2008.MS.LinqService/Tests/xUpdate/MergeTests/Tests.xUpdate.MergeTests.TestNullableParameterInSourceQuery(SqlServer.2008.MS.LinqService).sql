@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2008.MS SqlServer.2008
+-- SqlServer.2008.MS SqlServer.2008 (asynchronously)
 
 MERGE INTO [TestNullableParameterTarget] [Target]
 USING (
@@ -31,7 +31,7 @@ VALUES
 ;
 
 BeforeExecute
--- SqlServer.2008.MS SqlServer.2008
+-- SqlServer.2008.MS SqlServer.2008 (asynchronously)
 DECLARE @id Int -- Int32
 SET     @id = 1
 
