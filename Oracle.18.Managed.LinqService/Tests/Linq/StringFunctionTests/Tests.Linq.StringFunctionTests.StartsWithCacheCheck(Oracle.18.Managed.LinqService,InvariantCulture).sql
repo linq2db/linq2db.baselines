@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Oracle.18.Managed Oracle.Managed Oracle12
+-- Oracle.18.Managed Oracle.Managed Oracle12 (asynchronously)
 
 SELECT
 	p."FirstName"
@@ -10,7 +10,7 @@ WHERE
 FETCH NEXT 2 ROWS ONLY
 
 BeforeExecute
--- Oracle.18.Managed Oracle.Managed Oracle12
+-- Oracle.18.Managed Oracle.Managed Oracle12 (asynchronously)
 DECLARE @nameToCheck Varchar2(4) -- String
 SET     @nameToCheck = 'Joh%'
 
@@ -22,7 +22,7 @@ WHERE
 	p."FirstName" LIKE :nameToCheck ESCAPE '~' AND p."PersonID" = 1
 
 BeforeExecute
--- Oracle.18.Managed Oracle.Managed Oracle12
+-- Oracle.18.Managed Oracle.Managed Oracle12 (asynchronously)
 DECLARE @nameToCheck Varchar2(4) -- String
 SET     @nameToCheck = 'Joh%'
 
@@ -35,7 +35,7 @@ WHERE
 	p."PersonID" = 1
 
 BeforeExecute
--- Oracle.18.Managed Oracle.Managed Oracle12
+-- Oracle.18.Managed Oracle.Managed Oracle12 (asynchronously)
 DECLARE @nameToCheck Varchar2(4) -- String
 SET     @nameToCheck = 'JOH%'
 
@@ -47,7 +47,7 @@ WHERE
 	p."FirstName" LIKE :nameToCheck ESCAPE '~' AND p."PersonID" = 1
 
 BeforeExecute
--- Oracle.18.Managed Oracle.Managed Oracle12
+-- Oracle.18.Managed Oracle.Managed Oracle12 (asynchronously)
 DECLARE @nameToCheck Varchar2(4) -- String
 SET     @nameToCheck = 'JOH%'
 

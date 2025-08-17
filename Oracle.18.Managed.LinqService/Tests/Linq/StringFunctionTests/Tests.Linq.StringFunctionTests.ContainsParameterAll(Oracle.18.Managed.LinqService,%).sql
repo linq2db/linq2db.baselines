@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Oracle.18.Managed Oracle.Managed Oracle12
+-- Oracle.18.Managed Oracle.Managed Oracle12 (asynchronously)
 DECLARE @s Varchar2(7) -- String
 SET     @s = '123%456'
 DECLARE @toTest Varchar2(4) -- String
