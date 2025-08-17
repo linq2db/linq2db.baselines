@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- ClickHouse.MySql ClickHouse
+-- ClickHouse.MySql ClickHouse (asynchronously)
 
 SELECT DISTINCT
 	x.ParentID,
@@ -11,7 +11,7 @@ WHERE
 	x.ChildID > 30
 
 BeforeExecute
--- ClickHouse.MySql ClickHouse
+-- ClickHouse.MySql ClickHouse (asynchronously)
 
 SELECT DISTINCT
 	x.ParentID,

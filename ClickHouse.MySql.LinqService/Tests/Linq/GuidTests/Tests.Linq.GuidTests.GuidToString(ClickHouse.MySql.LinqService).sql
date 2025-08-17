@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- ClickHouse.MySql ClickHouse
+-- ClickHouse.MySql ClickHouse (asynchronously)
 
 SELECT
 	lowerUTF8(toString(t.Id))
@@ -8,7 +8,7 @@ FROM
 LIMIT 1
 
 BeforeExecute
--- ClickHouse.MySql ClickHouse
+-- ClickHouse.MySql ClickHouse (asynchronously)
 
 SELECT
 	t.Id,
@@ -19,7 +19,7 @@ WHERE
 	position(lowerUTF8(toString(t.Id)), '63d-0f') > 0
 
 BeforeExecute
--- ClickHouse.MySql ClickHouse
+-- ClickHouse.MySql ClickHouse (asynchronously)
 
 SELECT
 	t.Id,
@@ -30,7 +30,7 @@ WHERE
 	startsWith(lowerUTF8(toString(t.Id)), 'bc7b6')
 
 BeforeExecute
--- ClickHouse.MySql ClickHouse
+-- ClickHouse.MySql ClickHouse (asynchronously)
 
 SELECT
 	t.Id,
@@ -41,7 +41,7 @@ WHERE
 	position(lowerUTF8(toString(t.Id)), '8f4-53') > 0
 
 BeforeExecute
--- ClickHouse.MySql ClickHouse
+-- ClickHouse.MySql ClickHouse (asynchronously)
 
 SELECT
 	t.Id,

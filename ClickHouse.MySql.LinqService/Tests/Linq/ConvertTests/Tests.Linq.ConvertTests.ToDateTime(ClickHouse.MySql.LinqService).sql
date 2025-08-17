@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- ClickHouse.MySql ClickHouse
+-- ClickHouse.MySql ClickHouse (asynchronously)
 
 SELECT
 	toDateTime64(concat(toString(toYear(p.DateTimeValue)), '-01-01 00:00:00'), 7)

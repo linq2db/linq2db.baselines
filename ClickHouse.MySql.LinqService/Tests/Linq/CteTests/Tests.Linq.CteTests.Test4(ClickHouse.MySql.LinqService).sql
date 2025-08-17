@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- ClickHouse.MySql ClickHouse
+-- ClickHouse.MySql ClickHouse (asynchronously)
 
 WITH CTE1_ AS
 (
@@ -28,7 +28,7 @@ FROM
 		INNER JOIN LAST0 c4_1 ON c4_1.ParentID = p.ParentID
 
 BeforeExecute
--- ClickHouse.MySql ClickHouse
+-- ClickHouse.MySql ClickHouse (asynchronously)
 
 SELECT
 	c4.ParentID,
