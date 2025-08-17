@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL (asynchronously)
 
 SELECT
 	t."ID"
@@ -16,7 +16,7 @@ WHERE
 	)
 
 BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL (asynchronously)
 
 SELECT
 	t1."ID"
@@ -24,7 +24,7 @@ FROM
 	test_in_1 t1
 
 BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL (asynchronously)
 
 SELECT
 	t1."ID"

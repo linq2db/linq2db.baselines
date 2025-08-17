@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL (asynchronously)
 
 UPDATE
 	"Ints"
@@ -11,7 +11,7 @@ WHERE
 	"Ints"."One" = 10
 
 BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL (asynchronously)
 
 SELECT
 	t1."One",

@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL (asynchronously)
 DECLARE @ParentID Integer -- Int32
 SET     @ParentID = 0
 DECLARE @Value1 Integer -- Int32
@@ -12,7 +12,7 @@ FROM
 	"Parent" p
 
 BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL (asynchronously)
 
 SELECT
 	t1."ParentID",

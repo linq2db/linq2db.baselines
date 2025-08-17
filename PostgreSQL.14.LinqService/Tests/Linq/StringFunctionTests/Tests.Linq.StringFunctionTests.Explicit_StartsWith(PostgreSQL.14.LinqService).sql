@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL (asynchronously)
 
 SELECT
 	COUNT(*)
@@ -9,7 +9,7 @@ WHERE
 	r."Diagnosis" LIKE 'Hall%' ESCAPE '~'
 
 BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL (asynchronously)
 
 SELECT
 	COUNT(*)
@@ -19,7 +19,7 @@ WHERE
 	r."Diagnosis" LIKE 'hall%' ESCAPE '~'
 
 BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL (asynchronously)
 
 SELECT
 	COUNT(*)
@@ -29,7 +29,7 @@ WHERE
 	r."Diagnosis" ILIKE 'hall%' ESCAPE '~'
 
 BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL (asynchronously)
 
 SELECT
 	COUNT(*)

@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL (asynchronously)
 DECLARE @Id Integer -- Int32
 SET     @Id = 1
 DECLARE @Name Text(4) -- String
@@ -21,7 +21,7 @@ VALUES
 )
 
 BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL (asynchronously)
 
 SELECT
 	t."Id",
@@ -34,7 +34,7 @@ WHERE
 LIMIT 1
 
 BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL (asynchronously)
 DECLARE @Name Text(4) -- String
 SET     @Name = 'John'
 DECLARE @Age Integer -- Int32
@@ -51,7 +51,7 @@ WHERE
 	"PR_1598_Insert_Table_Cache"."Id" = :Id
 
 BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL (asynchronously)
 
 SELECT
 	t."Id",

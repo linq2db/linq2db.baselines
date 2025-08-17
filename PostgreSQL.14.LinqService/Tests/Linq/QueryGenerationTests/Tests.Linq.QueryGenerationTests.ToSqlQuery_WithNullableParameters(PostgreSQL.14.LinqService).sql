@@ -13,7 +13,7 @@ WHERE
 	p."MiddleName" IS NOT NULL
 
 BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL (asynchronously)
 
 SELECT
 	p."FirstName",

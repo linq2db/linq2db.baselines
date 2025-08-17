@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL (asynchronously)
 
 SELECT
 	t."ID",
@@ -19,7 +19,7 @@ WHERE
 LIMIT 1
 
 BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL (asynchronously)
 DECLARE @dt Timestamp -- DateTime2
 SET     @dt = '2010-12-14 05:00:07.425'::timestamp
 
@@ -31,7 +31,7 @@ WHERE
 	"LinqDataTypes"."ID" = 1
 
 BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL (asynchronously)
 
 SELECT
 	t."ID",
@@ -51,7 +51,7 @@ WHERE
 LIMIT 1
 
 BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL (asynchronously)
 DECLARE @pdt Timestamp -- DateTime2
 SET     @pdt = '2001-01-11 01:11:21.100'::timestamp
 

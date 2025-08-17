@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL (asynchronously)
 
 INSERT INTO test_insert_or_replace AS t1
 (
@@ -14,7 +14,7 @@ VALUES
 ON CONFLICT (id) DO NOTHING
 
 BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL (asynchronously)
 
 INSERT INTO test_insert_or_replace AS t1
 (

@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL (asynchronously)
 
 WITH "CTE_1" ("Value4")
 AS
@@ -28,7 +28,7 @@ FROM
 		INNER JOIN "CteTable" d_1 ON m_1."Id" = d_1."Value3"
 
 BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL (asynchronously)
 
 WITH "CTE_1"
 (

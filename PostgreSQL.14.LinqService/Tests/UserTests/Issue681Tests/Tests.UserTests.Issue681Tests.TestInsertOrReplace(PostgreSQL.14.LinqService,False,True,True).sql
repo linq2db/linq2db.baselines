@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL (asynchronously)
 
 SELECT
 	current_database()
@@ -8,7 +8,7 @@ FROM
 LIMIT 1
 
 BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL (asynchronously)
 
 SELECT
 	current_schema()
@@ -17,7 +17,7 @@ FROM
 LIMIT 1
 
 BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL (asynchronously)
 DECLARE @ID Integer -- Int32
 SET     @ID = 5
 DECLARE @Value Integer -- Int32
@@ -37,7 +37,7 @@ ON CONFLICT ("ID") DO UPDATE SET
 	"Value" = :Value
 
 BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL (asynchronously)
 DECLARE @ID Integer -- Int32
 SET     @ID = 5
 DECLARE @Value Integer -- Int32
