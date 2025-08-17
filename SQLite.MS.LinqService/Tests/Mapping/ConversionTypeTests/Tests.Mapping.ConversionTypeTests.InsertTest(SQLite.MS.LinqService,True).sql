@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SQLite.MS SQLite
+-- SQLite.MS SQLite (asynchronously)
 
 INSERT INTO [TrimTestTable]
 (
@@ -13,7 +13,7 @@ VALUES
 )
 
 BeforeExecute
--- SQLite.MS SQLite
+-- SQLite.MS SQLite (asynchronously)
 
 INSERT INTO [TrimTestTable]
 (
@@ -27,7 +27,7 @@ VALUES
 )
 
 BeforeExecute
--- SQLite.MS SQLite
+-- SQLite.MS SQLite (asynchronously)
 
 INSERT INTO [TrimTestTable]
 (
@@ -41,7 +41,7 @@ VALUES
 )
 
 BeforeExecute
--- SQLite.MS SQLite
+-- SQLite.MS SQLite (asynchronously)
 
 SELECT
 	[r].[ID],
@@ -52,7 +52,7 @@ ORDER BY
 	[r].[ID]
 
 BeforeExecute
--- SQLite.MS SQLite
+-- SQLite.MS SQLite (asynchronously)
 
 SELECT
 	[r].[ID],

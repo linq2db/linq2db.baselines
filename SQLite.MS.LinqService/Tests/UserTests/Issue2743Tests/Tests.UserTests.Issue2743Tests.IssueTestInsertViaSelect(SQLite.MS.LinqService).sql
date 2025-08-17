@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SQLite.MS SQLite
+-- SQLite.MS SQLite (asynchronously)
 
 INSERT INTO [MessageEventDTOTb2]
 (

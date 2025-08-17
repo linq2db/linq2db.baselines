@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SQLite.MS SQLite
+-- SQLite.MS SQLite (asynchronously)
 
 SELECT
 	[pmp1].[ChildID]
@@ -15,7 +15,7 @@ FROM
 		) [pmp_1]
 
 BeforeExecute
--- SQLite.MS SQLite
+-- SQLite.MS SQLite (asynchronously)
 
 SELECT
 	[t1].[ParentID],

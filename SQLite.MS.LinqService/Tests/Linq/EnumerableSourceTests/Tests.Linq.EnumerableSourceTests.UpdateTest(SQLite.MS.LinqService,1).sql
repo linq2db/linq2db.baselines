@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SQLite.MS SQLite
+-- SQLite.MS SQLite (asynchronously)
 
 UPDATE
 	[TableToInsert]
@@ -16,7 +16,7 @@ WHERE
 	[TableToInsert].[Id] = [r].[Id]
 
 BeforeExecute
--- SQLite.MS SQLite
+-- SQLite.MS SQLite (asynchronously)
 
 SELECT
 	[t1].[Id],

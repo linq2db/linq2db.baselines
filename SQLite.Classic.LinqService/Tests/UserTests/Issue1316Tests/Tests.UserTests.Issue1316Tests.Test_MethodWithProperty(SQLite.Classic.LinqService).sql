@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SQLite.Classic SQLite
+-- SQLite.Classic SQLite (asynchronously)
 DECLARE @ID  -- Int32
 SET     @ID = 5
 
@@ -13,7 +13,7 @@ VALUES
 )
 
 BeforeExecute
--- SQLite.Classic SQLite
+-- SQLite.Classic SQLite (asynchronously)
 DECLARE @Item1  -- Int32
 SET     @Item1 = 5
 

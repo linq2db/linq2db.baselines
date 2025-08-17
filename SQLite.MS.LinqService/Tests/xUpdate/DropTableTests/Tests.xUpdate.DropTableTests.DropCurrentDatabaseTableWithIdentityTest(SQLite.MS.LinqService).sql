@@ -1,10 +1,10 @@
 ﻿BeforeExecute
--- SQLite.MS SQLite
+-- SQLite.MS SQLite (asynchronously)
 
 DROP TABLE IF EXISTS [DropTableTestID]
 
 BeforeExecute
--- SQLite.MS SQLite
+-- SQLite.MS SQLite (asynchronously)
 
 CREATE TABLE [DropTableTestID]
 (
@@ -13,7 +13,7 @@ CREATE TABLE [DropTableTestID]
 )
 
 BeforeExecute
--- SQLite.MS SQLite
+-- SQLite.MS SQLite (asynchronously)
 
 INSERT INTO [DropTableTestID]
 (
@@ -25,7 +25,7 @@ VALUES
 )
 
 BeforeExecute
--- SQLite.MS SQLite
+-- SQLite.MS SQLite (asynchronously)
 
 SELECT
 	[t].[ID],
@@ -34,12 +34,12 @@ FROM
 	[DropTableTestID] [t]
 
 BeforeExecute
--- SQLite.MS SQLite
+-- SQLite.MS SQLite (asynchronously)
 
 DROP TABLE [DropTableTestID]
 
 BeforeExecute
--- SQLite.MS SQLite
+-- SQLite.MS SQLite (asynchronously)
 
 SELECT
 	[t1].[ID],

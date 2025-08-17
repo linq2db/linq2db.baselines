@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SQLite.MS SQLite
+-- SQLite.MS SQLite (asynchronously)
 DECLARE @r3  -- Int32
 SET     @r3 = 1
 

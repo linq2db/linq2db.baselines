@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SQLite.MS SQLite
+-- SQLite.MS SQLite (asynchronously)
 
 UPDATE
 	[TrimTestTable]
@@ -9,7 +9,7 @@ WHERE
 	[TrimTestTable].[ID] = 3
 
 BeforeExecute
--- SQLite.MS SQLite
+-- SQLite.MS SQLite (asynchronously)
 
 UPDATE
 	[TrimTestTable]
@@ -19,7 +19,7 @@ WHERE
 	[TrimTestTable].[Data] = '***XXX***'
 
 BeforeExecute
--- SQLite.MS SQLite
+-- SQLite.MS SQLite (asynchronously)
 
 UPDATE
 	[TrimTestTable]
@@ -29,7 +29,7 @@ WHERE
 	[TrimTestTable].[Data] = '***HHH***'
 
 BeforeExecute
--- SQLite.MS SQLite
+-- SQLite.MS SQLite (asynchronously)
 
 SELECT
 	[r].[ID],
@@ -40,7 +40,7 @@ ORDER BY
 	[r].[ID]
 
 BeforeExecute
--- SQLite.MS SQLite
+-- SQLite.MS SQLite (asynchronously)
 
 SELECT
 	[r].[ID],

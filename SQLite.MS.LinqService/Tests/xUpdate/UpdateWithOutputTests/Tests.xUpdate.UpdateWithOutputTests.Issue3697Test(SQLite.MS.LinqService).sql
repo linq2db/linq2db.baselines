@@ -1,10 +1,10 @@
 ﻿BeforeExecute
--- SQLite.MS SQLite
+-- SQLite.MS SQLite (asynchronously)
 
 INSERT INTO [Test3697] DEFAULT VALUES
 
 BeforeExecute
--- SQLite.MS SQLite
+-- SQLite.MS SQLite (asynchronously)
 
 UPDATE
 	[Test3697Item]
@@ -18,7 +18,7 @@ RETURNING
 	[Test3697Item].[Id]
 
 BeforeExecute
--- SQLite.MS SQLite
+-- SQLite.MS SQLite (asynchronously)
 
 UPDATE
 	[Test3697Item]

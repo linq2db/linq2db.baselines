@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SQLite.Classic SQLite
+-- SQLite.Classic SQLite (asynchronously)
 DECLARE @value  -- Int64
 SET     @value = 0
 

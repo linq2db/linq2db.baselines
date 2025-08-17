@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SQLite.Classic SQLite
+-- SQLite.Classic SQLite (asynchronously)
 
 SELECT
 	[r].[FirstName],
@@ -13,7 +13,7 @@ WHERE
 	[r].[MiddleName] IS NOT NULL
 
 BeforeExecute
--- SQLite.Classic SQLite
+-- SQLite.Classic SQLite (asynchronously)
 
 SELECT
 	[r].[FirstName],

@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SQLite.Classic SQLite
+-- SQLite.Classic SQLite (asynchronously)
 DECLARE @ParentID  -- Int32
 SET     @ParentID = 1
 DECLARE @Value1  -- Int32
@@ -12,7 +12,7 @@ FROM
 	[Parent] [p]
 
 BeforeExecute
--- SQLite.Classic SQLite
+-- SQLite.Classic SQLite (asynchronously)
 
 SELECT
 	[t1].[ParentID],

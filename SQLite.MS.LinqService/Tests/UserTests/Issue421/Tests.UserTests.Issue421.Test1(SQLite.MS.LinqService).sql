@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SQLite.MS SQLite
+-- SQLite.MS SQLite (asynchronously)
 DECLARE @Id  -- Int32
 SET     @Id = 1
 DECLARE @BlobValue Binary(3)
@@ -17,7 +17,7 @@ VALUES
 )
 
 BeforeExecute
--- SQLite.MS SQLite
+-- SQLite.MS SQLite (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -29,7 +29,7 @@ WHERE
 LIMIT 1
 
 BeforeExecute
--- SQLite.MS SQLite
+-- SQLite.MS SQLite (asynchronously)
 DECLARE @BlobValue Binary(3)
 SET     @BlobValue = X'030201'
 
@@ -41,7 +41,7 @@ WHERE
 	[BlobClass].[Id] = 1
 
 BeforeExecute
--- SQLite.MS SQLite
+-- SQLite.MS SQLite (asynchronously)
 
 SELECT
 	[t1].[Id],

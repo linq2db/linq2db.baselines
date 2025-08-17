@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SQLite.Classic SQLite
+-- SQLite.Classic SQLite (asynchronously)
 DECLARE @int1  -- Int32
 SET     @int1 = 11
 DECLARE @int2  -- Int32
@@ -28,7 +28,7 @@ ORDER BY
 LIMIT @take OFFSET @skip
 
 BeforeExecute
--- SQLite.Classic SQLite
+-- SQLite.Classic SQLite (asynchronously)
 
 SELECT
 	[v].[id],

@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SQLite.MS SQLite
+-- SQLite.MS SQLite (asynchronously)
 DECLARE @FirstName NVarChar(4) -- String
 SET     @FirstName = '擊敗奴隸'
 DECLARE @LastName NVarChar(9) -- String
@@ -25,7 +25,7 @@ VALUES
 )
 
 BeforeExecute
--- SQLite.MS SQLite
+-- SQLite.MS SQLite (asynchronously)
 
 SELECT
 	[p].[FirstName],

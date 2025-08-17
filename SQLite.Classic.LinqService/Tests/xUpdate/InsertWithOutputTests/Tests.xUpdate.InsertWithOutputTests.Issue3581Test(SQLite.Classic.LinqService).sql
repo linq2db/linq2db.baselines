@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SQLite.Classic SQLite
+-- SQLite.Classic SQLite (asynchronously)
 DECLARE @Id  -- Int32
 SET     @Id = 1
 DECLARE @Name NVarChar(8) -- String

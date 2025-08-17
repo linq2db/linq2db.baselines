@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SQLite.Classic SQLite
+-- SQLite.Classic SQLite (asynchronously)
 DECLARE @structValue  -- Int32
 SET     @structValue = 13
 DECLARE @classValue  -- Int32
@@ -19,7 +19,7 @@ VALUES
 )
 
 BeforeExecute
--- SQLite.Classic SQLite
+-- SQLite.Classic SQLite (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -30,7 +30,7 @@ FROM
 LIMIT 2
 
 BeforeExecute
--- SQLite.Classic SQLite
+-- SQLite.Classic SQLite (asynchronously)
 DECLARE @structValue  -- Int32
 SET     @structValue = 1
 DECLARE @classValue  -- Int32
@@ -44,7 +44,7 @@ SET
 	[Class] = @classValue
 
 BeforeExecute
--- SQLite.Classic SQLite
+-- SQLite.Classic SQLite (asynchronously)
 
 SELECT
 	[t1].[Id],

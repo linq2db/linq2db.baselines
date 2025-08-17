@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SQLite.Classic SQLite
+-- SQLite.Classic SQLite (asynchronously)
 
 SELECT
 	[a_Child].[ParentID],
@@ -13,7 +13,7 @@ WHERE
 	[p].[ParentID] = [g_1].[ParentID]
 
 BeforeExecute
--- SQLite.Classic SQLite
+-- SQLite.Classic SQLite (asynchronously)
 
 SELECT
 	[a_Child].[ParentID],

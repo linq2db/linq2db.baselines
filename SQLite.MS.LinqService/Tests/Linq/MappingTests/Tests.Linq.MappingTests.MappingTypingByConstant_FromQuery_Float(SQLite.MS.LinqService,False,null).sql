@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SQLite.MS SQLite
+-- SQLite.MS SQLite (asynchronously)
 DECLARE @value  -- Single
 SET     @value = NULL
 
@@ -16,7 +16,7 @@ FROM
 	) [t1]
 
 BeforeExecute
--- SQLite.MS SQLite
+-- SQLite.MS SQLite (asynchronously)
 DECLARE @value  -- Single
 SET     @value = 3.14748365E+09
 

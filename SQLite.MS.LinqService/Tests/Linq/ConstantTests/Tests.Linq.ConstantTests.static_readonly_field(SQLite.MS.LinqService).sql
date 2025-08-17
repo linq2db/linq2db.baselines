@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SQLite.MS SQLite
+-- SQLite.MS SQLite (asynchronously)
 
 SELECT
 	[e].[Id],
@@ -13,7 +13,7 @@ WHERE
 	[e].[GuidNullableValue] = X'3D667BBCDE0F27438F925D8CC3A11D11'
 
 BeforeExecute
--- SQLite.MS SQLite
+-- SQLite.MS SQLite (asynchronously)
 
 SELECT
 	[t1].[Id],

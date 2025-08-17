@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SQLite.MS SQLite
+-- SQLite.MS SQLite (asynchronously)
 DECLARE @p  -- Int32
 SET     @p = 1
 
@@ -16,7 +16,7 @@ SELECT
 	END
 
 BeforeExecute
--- SQLite.MS SQLite
+-- SQLite.MS SQLite (asynchronously)
 DECLARE @p  -- Int32
 SET     @p = -1
 

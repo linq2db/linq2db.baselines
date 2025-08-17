@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SQLite.MS SQLite
+-- SQLite.MS SQLite (asynchronously)
 
 SELECT DISTINCT
 	[a_Ref4].[Field6],
@@ -16,7 +16,7 @@ WHERE
 	[t1].[Field3] IS NOT NULL
 
 BeforeExecute
--- SQLite.MS SQLite
+-- SQLite.MS SQLite (asynchronously)
 
 SELECT
 	[g_2].[Field6],

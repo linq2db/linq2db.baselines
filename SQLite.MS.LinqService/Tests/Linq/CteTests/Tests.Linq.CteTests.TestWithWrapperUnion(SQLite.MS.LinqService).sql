@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SQLite.MS SQLite
+-- SQLite.MS SQLite (asynchronously)
 
 WITH [CTE_1]
 (
@@ -39,7 +39,7 @@ FROM
 	[CTE_1] [t1]
 
 BeforeExecute
--- SQLite.MS SQLite
+-- SQLite.MS SQLite (asynchronously)
 
 WITH [CTE_1]
 (

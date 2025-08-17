@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SQLite.MS SQLite
+-- SQLite.MS SQLite (asynchronously)
 
 SELECT
 	COUNT(*)
@@ -18,7 +18,7 @@ WHERE
 	)
 
 BeforeExecute
--- SQLite.MS SQLite
+-- SQLite.MS SQLite (asynchronously)
 
 SELECT
 	COUNT(*)
@@ -37,7 +37,7 @@ WHERE
 	)
 
 BeforeExecute
--- SQLite.MS SQLite
+-- SQLite.MS SQLite (asynchronously)
 
 SELECT
 	COUNT(*)
@@ -56,7 +56,7 @@ WHERE
 	)
 
 BeforeExecute
--- SQLite.MS SQLite
+-- SQLite.MS SQLite (asynchronously)
 
 SELECT
 	COUNT(*)
@@ -75,7 +75,7 @@ WHERE
 	)
 
 BeforeExecute
--- SQLite.MS SQLite
+-- SQLite.MS SQLite (asynchronously)
 
 SELECT
 	COUNT(*)

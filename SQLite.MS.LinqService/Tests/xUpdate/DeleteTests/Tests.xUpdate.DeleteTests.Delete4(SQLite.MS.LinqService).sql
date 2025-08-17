@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SQLite.MS SQLite
+-- SQLite.MS SQLite (asynchronously)
 
 DELETE FROM
 	[GrandChild]
@@ -7,7 +7,7 @@ WHERE
 	[GrandChild].[GrandChildID] IN (1001, 1002)
 
 BeforeExecute
--- SQLite.MS SQLite
+-- SQLite.MS SQLite (asynchronously)
 
 INSERT INTO [GrandChild]
 (
@@ -23,7 +23,7 @@ VALUES
 )
 
 BeforeExecute
--- SQLite.MS SQLite
+-- SQLite.MS SQLite (asynchronously)
 
 INSERT INTO [GrandChild]
 (
@@ -39,7 +39,7 @@ VALUES
 )
 
 BeforeExecute
--- SQLite.MS SQLite
+-- SQLite.MS SQLite (asynchronously)
 
 SELECT
 	COUNT(*)
@@ -49,7 +49,7 @@ WHERE
 	[gc].[ParentID] = 1
 
 BeforeExecute
--- SQLite.MS SQLite
+-- SQLite.MS SQLite (asynchronously)
 
 DELETE FROM
 	[GrandChild]
@@ -69,7 +69,7 @@ WHERE
 	)
 
 BeforeExecute
--- SQLite.MS SQLite
+-- SQLite.MS SQLite (asynchronously)
 
 SELECT
 	COUNT(*)

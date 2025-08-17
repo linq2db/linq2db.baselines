@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SQLite.MS SQLite
+-- SQLite.MS SQLite (asynchronously)
 DECLARE @p  -- Int32
 SET     @p = 226
 
@@ -9,7 +9,7 @@ FROM
 	[LinqDataTypes] [t]
 
 BeforeExecute
--- SQLite.MS SQLite
+-- SQLite.MS SQLite (asynchronously)
 
 SELECT
 	[t].[DateTimeValue]

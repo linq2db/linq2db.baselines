@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SQLite.MS SQLite
+-- SQLite.MS SQLite (asynchronously)
 DECLARE @ColumnDO VarChar -- AnsiString
 SET     @ColumnDO = '2020-02-29'
 
@@ -13,7 +13,7 @@ VALUES
 )
 
 BeforeExecute
--- SQLite.MS SQLite
+-- SQLite.MS SQLite (asynchronously)
 DECLARE @dt VarChar -- AnsiString
 SET     @dt = '2020-02-29'
 

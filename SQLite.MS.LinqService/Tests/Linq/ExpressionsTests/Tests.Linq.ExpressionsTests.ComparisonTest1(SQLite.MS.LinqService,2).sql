@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SQLite.MS SQLite
+-- SQLite.MS SQLite (asynchronously)
 DECLARE @personId  -- Int32
 SET     @personId = 0
 DECLARE @personId_1  -- Int32

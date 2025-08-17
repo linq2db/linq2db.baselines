@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SQLite.Classic SQLite
+-- SQLite.Classic SQLite (asynchronously)
 DECLARE @id  -- Int32
 SET     @id = 3
 
@@ -14,7 +14,7 @@ WHERE
 	[t1].[Id] = @id AND [a_AssociatedOptional].[Id] = [MainTable].[Id]
 
 BeforeExecute
--- SQLite.Classic SQLite
+-- SQLite.Classic SQLite (asynchronously)
 
 SELECT
 	[t1].[Id],

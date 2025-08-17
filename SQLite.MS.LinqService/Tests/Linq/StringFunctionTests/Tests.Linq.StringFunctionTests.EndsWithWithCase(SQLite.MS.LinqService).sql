@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SQLite.MS SQLite
+-- SQLite.MS SQLite (asynchronously)
 
 SELECT
 	COUNT(*)
@@ -10,7 +10,7 @@ WHERE
 	Substr([p].[Diagnosis], -11) = 'Persecution' AND [p].[PersonID] = 2
 
 BeforeExecute
--- SQLite.MS SQLite
+-- SQLite.MS SQLite (asynchronously)
 
 SELECT
 	COUNT(*)
@@ -21,7 +21,7 @@ WHERE
 	[p].[PersonID] = 2
 
 BeforeExecute
--- SQLite.MS SQLite
+-- SQLite.MS SQLite (asynchronously)
 
 SELECT
 	COUNT(*)
@@ -32,7 +32,7 @@ WHERE
 	Substr([p].[Diagnosis], -11) = 'persecution' AND [p].[PersonID] = 2
 
 BeforeExecute
--- SQLite.MS SQLite
+-- SQLite.MS SQLite (asynchronously)
 
 SELECT
 	COUNT(*)

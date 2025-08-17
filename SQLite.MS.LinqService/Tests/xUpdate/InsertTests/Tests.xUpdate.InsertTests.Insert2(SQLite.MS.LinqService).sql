@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SQLite.MS SQLite
+-- SQLite.MS SQLite (asynchronously)
 
 DELETE FROM
 	[Child]
@@ -7,7 +7,7 @@ WHERE
 	[Child].[ChildID] > 1000
 
 BeforeExecute
--- SQLite.MS SQLite
+-- SQLite.MS SQLite (asynchronously)
 DECLARE @id  -- Int32
 SET     @id = 1001
 
@@ -23,7 +23,7 @@ VALUES
 )
 
 BeforeExecute
--- SQLite.MS SQLite
+-- SQLite.MS SQLite (asynchronously)
 DECLARE @id  -- Int32
 SET     @id = 1001
 
@@ -35,7 +35,7 @@ WHERE
 	[c_1].[ChildID] = @id
 
 BeforeExecute
--- SQLite.MS SQLite
+-- SQLite.MS SQLite (asynchronously)
 
 DELETE FROM
 	[Child]

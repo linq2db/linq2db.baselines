@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SQLite.Classic SQLite
+-- SQLite.Classic SQLite (asynchronously)
 
 SELECT
 	[ch1].[ParentID],
@@ -10,7 +10,7 @@ FROM
 		INNER JOIN [Child] [ch1] ON [ch].[ChildID] = [ch1].[ChildID]
 
 BeforeExecute
--- SQLite.Classic SQLite
+-- SQLite.Classic SQLite (asynchronously)
 
 SELECT
 	[t1].[ParentID],
@@ -19,7 +19,7 @@ FROM
 	[Parent] [t1]
 
 BeforeExecute
--- SQLite.Classic SQLite
+-- SQLite.Classic SQLite (asynchronously)
 
 SELECT
 	[t1].[ParentID],

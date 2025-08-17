@@ -1,10 +1,10 @@
 ﻿BeforeExecute
--- SQLite.MS SQLite
+-- SQLite.MS SQLite (asynchronously)
 
 DROP TABLE IF EXISTS [Issue681Table2]
 
 BeforeExecute
--- SQLite.MS SQLite
+-- SQLite.MS SQLite (asynchronously)
 
 CREATE TABLE [main].[Issue681Table2]
 (
@@ -15,7 +15,7 @@ CREATE TABLE [main].[Issue681Table2]
 )
 
 BeforeExecute
--- SQLite.MS SQLite
+-- SQLite.MS SQLite (asynchronously)
 
 DROP TABLE IF EXISTS [Issue681Table2]
 

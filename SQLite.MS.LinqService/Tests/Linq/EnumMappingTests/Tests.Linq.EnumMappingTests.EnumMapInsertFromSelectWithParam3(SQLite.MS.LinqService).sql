@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SQLite.MS SQLite
+-- SQLite.MS SQLite (asynchronously)
 DECLARE @p  -- Int32
 SET     @p = 102
 
@@ -9,7 +9,7 @@ WHERE
 	[LinqDataTypes].[ID] >= 101 AND [LinqDataTypes].[ID] < @p
 
 BeforeExecute
--- SQLite.MS SQLite
+-- SQLite.MS SQLite (asynchronously)
 
 INSERT INTO [LinqDataTypes]
 (
@@ -23,7 +23,7 @@ VALUES
 )
 
 BeforeExecute
--- SQLite.MS SQLite
+-- SQLite.MS SQLite (asynchronously)
 DECLARE @param  -- Int64
 SET     @param = 11
 
@@ -41,7 +41,7 @@ WHERE
 	[r].[ID] = 101 AND [r].[BigIntValue] = 12
 
 BeforeExecute
--- SQLite.MS SQLite
+-- SQLite.MS SQLite (asynchronously)
 
 SELECT
 	COUNT(*)
@@ -51,7 +51,7 @@ WHERE
 	[r].[ID] = 101 AND [r].[BigIntValue] = 11
 
 BeforeExecute
--- SQLite.MS SQLite
+-- SQLite.MS SQLite (asynchronously)
 DECLARE @p  -- Int32
 SET     @p = 102
 

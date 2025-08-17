@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SQLite.Classic SQLite
+-- SQLite.Classic SQLite (asynchronously)
 DECLARE @dt VarChar(23) -- AnsiString
 SET     @dt = '2020-02-29 17:54:55.123'
 

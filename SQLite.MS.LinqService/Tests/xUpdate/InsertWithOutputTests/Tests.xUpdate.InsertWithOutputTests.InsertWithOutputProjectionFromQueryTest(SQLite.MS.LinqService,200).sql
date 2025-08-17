@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SQLite.MS SQLite
+-- SQLite.MS SQLite (asynchronously)
 DECLARE @param  -- Int32
 SET     @param = 200
 
@@ -22,7 +22,7 @@ RETURNING
 	[DestinationTable].[ValueStr] || 1
 
 BeforeExecute
--- SQLite.MS SQLite
+-- SQLite.MS SQLite (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -32,7 +32,7 @@ FROM
 	[DestinationTable] [t1]
 
 BeforeExecute
--- SQLite.MS SQLite
+-- SQLite.MS SQLite (asynchronously)
 
 SELECT
 	[t].[Id] + 1,

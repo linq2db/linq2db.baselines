@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SQLite.MS SQLite
+-- SQLite.MS SQLite (asynchronously)
 
 SELECT
 	[arg].[Id],
@@ -14,7 +14,7 @@ FROM
 			) [arg] ON [entity].[PersonID] = [arg].[Id]
 
 BeforeExecute
--- SQLite.MS SQLite
+-- SQLite.MS SQLite (asynchronously)
 
 SELECT
 	[arg].[Id],

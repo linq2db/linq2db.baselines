@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SQLite.Classic SQLite
+-- SQLite.Classic SQLite (asynchronously)
 
 SELECT
 	CAST(strftime('%M', [t].[DateTimeValue]) AS INTEGER) % 7
