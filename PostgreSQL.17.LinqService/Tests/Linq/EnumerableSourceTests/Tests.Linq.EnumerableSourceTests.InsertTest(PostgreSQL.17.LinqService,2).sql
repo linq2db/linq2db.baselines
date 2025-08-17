@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
+-- PostgreSQL.17 PostgreSQL.15 PostgreSQL (asynchronously)
 
 INSERT INTO "TableToInsert"
 (
@@ -18,7 +18,7 @@ WHERE
 	t."Id" IS NULL
 
 BeforeExecute
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
+-- PostgreSQL.17 PostgreSQL.15 PostgreSQL (asynchronously)
 
 INSERT INTO "TableToInsert"
 (

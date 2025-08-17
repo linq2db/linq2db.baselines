@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
+-- PostgreSQL.17 PostgreSQL.15 PostgreSQL (asynchronously)
 DECLARE @s Text(7) -- String
 SET     @s = '123[456'
 
@@ -11,7 +11,7 @@ WHERE
 	p."PersonID" = 1 AND :s LIKE '%~[%' ESCAPE '~'
 
 BeforeExecute
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
+-- PostgreSQL.17 PostgreSQL.15 PostgreSQL (asynchronously)
 DECLARE @s Text(7) -- String
 SET     @s = '123[456'
 

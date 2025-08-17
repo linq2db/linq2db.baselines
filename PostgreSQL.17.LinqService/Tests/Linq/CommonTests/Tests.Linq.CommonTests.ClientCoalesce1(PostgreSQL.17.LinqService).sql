@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
+-- PostgreSQL.17 PostgreSQL.15 PostgreSQL (asynchronously)
 DECLARE @Value1 Integer -- Int32
 SET     @Value1 = 100
 
@@ -11,7 +11,7 @@ WHERE
 	Coalesce(x."Value1", :Value1) > 10
 
 BeforeExecute
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
+-- PostgreSQL.17 PostgreSQL.15 PostgreSQL (asynchronously)
 
 SELECT
 	p."Value1"

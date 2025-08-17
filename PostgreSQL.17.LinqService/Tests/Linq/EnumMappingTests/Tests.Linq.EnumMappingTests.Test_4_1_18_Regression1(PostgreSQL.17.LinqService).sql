@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
+-- PostgreSQL.17 PostgreSQL.15 PostgreSQL (asynchronously)
 DECLARE @p Integer -- Int32
 SET     @p = 102
 
@@ -9,7 +9,7 @@ WHERE
 	r."ID" >= 101 AND r."ID" < :p
 
 BeforeExecute
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
+-- PostgreSQL.17 PostgreSQL.15 PostgreSQL (asynchronously)
 
 INSERT INTO "LinqDataTypes"
 (
@@ -25,7 +25,7 @@ VALUES
 )
 
 BeforeExecute
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
+-- PostgreSQL.17 PostgreSQL.15 PostgreSQL (asynchronously)
 
 SELECT
 	t1."BigIntValue" IS NOT NULL AND t1."IntValue" IS NOT NULL,
@@ -37,7 +37,7 @@ WHERE
 	t1."ID" = 101
 
 BeforeExecute
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
+-- PostgreSQL.17 PostgreSQL.15 PostgreSQL (asynchronously)
 DECLARE @p Integer -- Int32
 SET     @p = 102
 

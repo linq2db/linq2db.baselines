@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
+-- PostgreSQL.17 PostgreSQL.15 PostgreSQL (asynchronously)
 
 SELECT
 	p."FirstName"
@@ -10,7 +10,7 @@ WHERE
 LIMIT 1
 
 BeforeExecute
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
+-- PostgreSQL.17 PostgreSQL.15 PostgreSQL (asynchronously)
 DECLARE @p Text(4) -- String
 SET     @p = 'John'
 

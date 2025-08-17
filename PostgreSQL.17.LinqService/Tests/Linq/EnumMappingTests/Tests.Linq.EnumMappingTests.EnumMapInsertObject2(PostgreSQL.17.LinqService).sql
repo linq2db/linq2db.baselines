@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
+-- PostgreSQL.17 PostgreSQL.15 PostgreSQL (asynchronously)
 DECLARE @p Integer -- Int32
 SET     @p = 102
 
@@ -9,7 +9,7 @@ WHERE
 	r."ID" >= 101 AND r."ID" < :p
 
 BeforeExecute
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
+-- PostgreSQL.17 PostgreSQL.15 PostgreSQL (asynchronously)
 DECLARE @Id Integer -- Int32
 SET     @Id = 101
 DECLARE @TestField Bigint -- Int64
@@ -31,7 +31,7 @@ VALUES
 )
 
 BeforeExecute
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
+-- PostgreSQL.17 PostgreSQL.15 PostgreSQL (asynchronously)
 
 SELECT
 	COUNT(*)
@@ -41,7 +41,7 @@ WHERE
 	r."ID" = 101 AND r."BigIntValue" = 12
 
 BeforeExecute
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
+-- PostgreSQL.17 PostgreSQL.15 PostgreSQL (asynchronously)
 DECLARE @p Integer -- Int32
 SET     @p = 102
 

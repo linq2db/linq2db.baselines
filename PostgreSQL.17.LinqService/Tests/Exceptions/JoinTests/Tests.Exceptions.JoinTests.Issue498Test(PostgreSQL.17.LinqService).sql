@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
+-- PostgreSQL.17 PostgreSQL.15 PostgreSQL (asynchronously)
 
 SELECT
 	x."ParentID"
@@ -8,7 +8,7 @@ FROM
 		INNER JOIN "Child" y ON x."ParentID" = y."ParentID"
 
 BeforeExecute
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
+-- PostgreSQL.17 PostgreSQL.15 PostgreSQL (asynchronously)
 
 SELECT
 	g_1."ParentID"

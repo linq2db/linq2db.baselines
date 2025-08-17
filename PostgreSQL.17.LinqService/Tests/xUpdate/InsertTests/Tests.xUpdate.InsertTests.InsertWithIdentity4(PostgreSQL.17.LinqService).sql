@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
+-- PostgreSQL.17 PostgreSQL.15 PostgreSQL (asynchronously)
 
 DELETE FROM
 	"Person" t1
@@ -7,7 +7,7 @@ WHERE
 	t1."PersonID" > 4
 
 BeforeExecute
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
+-- PostgreSQL.17 PostgreSQL.15 PostgreSQL (asynchronously)
 DECLARE @FirstName Text(5) -- String
 SET     @FirstName = 'John0'
 DECLARE @LastName Text(7) -- String
@@ -35,7 +35,7 @@ RETURNING
 	"PersonID"
 
 BeforeExecute
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
+-- PostgreSQL.17 PostgreSQL.15 PostgreSQL (asynchronously)
 DECLARE @p Text(5) -- String
 SET     @p = 'John0'
 
@@ -52,7 +52,7 @@ WHERE
 LIMIT 2
 
 BeforeExecute
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
+-- PostgreSQL.17 PostgreSQL.15 PostgreSQL (asynchronously)
 DECLARE @FirstName Text(5) -- String
 SET     @FirstName = 'John1'
 DECLARE @LastName Text(7) -- String
@@ -80,7 +80,7 @@ RETURNING
 	"PersonID"
 
 BeforeExecute
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
+-- PostgreSQL.17 PostgreSQL.15 PostgreSQL (asynchronously)
 DECLARE @p Text(5) -- String
 SET     @p = 'John1'
 
@@ -97,7 +97,7 @@ WHERE
 LIMIT 2
 
 BeforeExecute
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
+-- PostgreSQL.17 PostgreSQL.15 PostgreSQL (asynchronously)
 
 DELETE FROM
 	"Person" t1

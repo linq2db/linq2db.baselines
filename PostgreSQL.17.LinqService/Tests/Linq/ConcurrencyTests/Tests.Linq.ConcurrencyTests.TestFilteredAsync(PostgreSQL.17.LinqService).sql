@@ -21,7 +21,7 @@ VALUES
 )
 
 BeforeExecute
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
+-- PostgreSQL.17 PostgreSQL.15 PostgreSQL (asynchronously)
 
 SELECT
 	t1."Id",
@@ -49,7 +49,7 @@ WHERE
 	"ConcurrencyFiltered"."Stamp" = :Stamp
 
 BeforeExecute
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
+-- PostgreSQL.17 PostgreSQL.15 PostgreSQL (asynchronously)
 
 SELECT
 	t1."Id",
@@ -77,7 +77,7 @@ WHERE
 	"ConcurrencyFiltered"."Stamp" = :Stamp
 
 BeforeExecute
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
+-- PostgreSQL.17 PostgreSQL.15 PostgreSQL (asynchronously)
 
 SELECT
 	t1."Id",
@@ -99,7 +99,7 @@ WHERE
 	r."Id" = 2 AND r."Id" = :Id AND r."Stamp" = :Stamp
 
 BeforeExecute
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
+-- PostgreSQL.17 PostgreSQL.15 PostgreSQL (asynchronously)
 
 SELECT
 	t1."Id",
@@ -121,7 +121,7 @@ WHERE
 	r."Id" = 1 AND r."Id" = :Id AND r."Stamp" = :Stamp
 
 BeforeExecute
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
+-- PostgreSQL.17 PostgreSQL.15 PostgreSQL (asynchronously)
 
 SELECT
 	t1."Id",
