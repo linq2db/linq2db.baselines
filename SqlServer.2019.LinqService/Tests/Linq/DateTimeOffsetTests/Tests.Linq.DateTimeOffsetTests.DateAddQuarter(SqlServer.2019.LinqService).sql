@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2019
+-- SqlServer.2019 (asynchronously)
 
 SELECT
 	CAST(DateAdd(quarter, -1, [t].[TransactionDate]) AS Date)

@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2019
+-- SqlServer.2019 (asynchronously)
 DECLARE @hid hierarchyid -- Udt -- Object
 SET     @hid = /1/
 

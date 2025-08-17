@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2019
+-- SqlServer.2019 (asynchronously)
 DECLARE @value Decimal(9, 5)
 SET     @value = 6579.64648
 
@@ -9,7 +9,7 @@ FROM
 	[LinqDataTypes] [t1]
 
 BeforeExecute
--- SqlServer.2019
+-- SqlServer.2019 (asynchronously)
 DECLARE @value Real -- Single
 SET     @value = 6579.64648
 
@@ -19,7 +19,7 @@ FROM
 	[LinqDataTypes] [t1]
 
 BeforeExecute
--- SqlServer.2019
+-- SqlServer.2019 (asynchronously)
 DECLARE @value Float -- Double
 SET     @value = 6579.6464800000003
 
@@ -29,7 +29,7 @@ FROM
 	[LinqDataTypes] [t1]
 
 BeforeExecute
--- SqlServer.2019
+-- SqlServer.2019 (asynchronously)
 DECLARE @value Decimal(9, 5)
 SET     @value = 6579.64648
 
@@ -39,7 +39,7 @@ FROM
 	[LinqDataTypes] [t1]
 
 BeforeExecute
--- SqlServer.2019
+-- SqlServer.2019 (asynchronously)
 DECLARE @value Real -- Single
 SET     @value = 6579.64648
 
@@ -49,7 +49,7 @@ FROM
 	[LinqDataTypes] [t1]
 
 BeforeExecute
--- SqlServer.2019
+-- SqlServer.2019 (asynchronously)
 DECLARE @value Float -- Double
 SET     @value = 6579.6464800000003
 
