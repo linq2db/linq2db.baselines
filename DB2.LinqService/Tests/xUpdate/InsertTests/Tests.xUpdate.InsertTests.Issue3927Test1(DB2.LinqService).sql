@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- DB2 DB2.LUW DB2LUW
+-- DB2 DB2.LUW DB2LUW (asynchronously)
 DECLARE @PageNumber Integer(4) -- Int32
 SET     @PageNumber = 9
 DECLARE @serialNumber Char(11) -- StringFixedLength

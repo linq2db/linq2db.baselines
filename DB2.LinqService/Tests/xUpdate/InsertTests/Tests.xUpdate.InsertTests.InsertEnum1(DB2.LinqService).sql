@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- DB2 DB2.LUW DB2LUW
+-- DB2 DB2.LUW DB2LUW (asynchronously)
 
 DELETE FROM
 	"Parent" "t1"
@@ -7,7 +7,7 @@ WHERE
 	"t1"."ParentID" > 1000
 
 BeforeExecute
--- DB2 DB2.LUW DB2LUW
+-- DB2 DB2.LUW DB2LUW (asynchronously)
 DECLARE @Value1 Integer(4) -- Int32
 SET     @Value1 = 2
 
@@ -23,7 +23,7 @@ VALUES
 )
 
 BeforeExecute
--- DB2 DB2.LUW DB2LUW
+-- DB2 DB2.LUW DB2LUW (asynchronously)
 DECLARE @id Integer(4) -- Int32
 SET     @id = 1001
 DECLARE @Value1 Integer(4) -- Int32
@@ -37,7 +37,7 @@ WHERE
 	"t1"."ParentID" = @id AND "t1"."Value1" = @Value1
 
 BeforeExecute
--- DB2 DB2.LUW DB2LUW
+-- DB2 DB2.LUW DB2LUW (asynchronously)
 
 DELETE FROM
 	"Parent" "t1"

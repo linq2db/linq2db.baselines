@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- DB2 DB2.LUW DB2LUW
+-- DB2 DB2.LUW DB2LUW (asynchronously)
 DECLARE @s VarChar(8) -- String
 SET     @s = '123[]456'
 DECLARE @toTest VarChar(4) -- String

@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- DB2 DB2.LUW DB2LUW
+-- DB2 DB2.LUW DB2LUW (asynchronously)
 
 SELECT
 	"m_2"."Id1",
@@ -16,7 +16,7 @@ FROM
 		INNER JOIN "DetailClass" "d" ON "m_2"."Id1" = "d"."MasterId"
 
 BeforeExecute
--- DB2 DB2.LUW DB2LUW
+-- DB2 DB2.LUW DB2LUW (asynchronously)
 
 SELECT
 	"m_2"."Id1",
@@ -41,7 +41,7 @@ FROM
 		) "d_1" ON "m_2"."Id1" = "d_1"."MasterId" AND "d_1"."rn" > 1 AND "d_1"."rn" <= 3
 
 BeforeExecute
--- DB2 DB2.LUW DB2LUW
+-- DB2 DB2.LUW DB2LUW (asynchronously)
 
 SELECT
 	"m_1"."Id1",
@@ -52,7 +52,7 @@ FROM
 	"MasterClass" "m_1"
 
 BeforeExecute
--- DB2 DB2.LUW DB2LUW
+-- DB2 DB2.LUW DB2LUW (asynchronously)
 
 SELECT
 	"m_1"."Id1",
@@ -69,7 +69,7 @@ FROM
 		INNER JOIN "DetailClass" "d" ON "m_1"."Id1" = "d"."MasterId"
 
 BeforeExecute
--- DB2 DB2.LUW DB2LUW
+-- DB2 DB2.LUW DB2LUW (asynchronously)
 
 SELECT
 	"t1"."Id1",
