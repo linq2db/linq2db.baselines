@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
+-- SQLite.Classic.MPU SQLite.Classic SQLite (asynchronously)
 DECLARE @UserId  -- Int32
 SET     @UserId = 123
 DECLARE @take  -- Int32
@@ -33,7 +33,7 @@ FROM
 		INNER JOIN [User] [d] ON [m_1].[UserId] = [d].[Id]
 
 BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
+-- SQLite.Classic.MPU SQLite.Classic SQLite (asynchronously)
 DECLARE @UserId  -- Int32
 SET     @UserId = 123
 DECLARE @take  -- Int32

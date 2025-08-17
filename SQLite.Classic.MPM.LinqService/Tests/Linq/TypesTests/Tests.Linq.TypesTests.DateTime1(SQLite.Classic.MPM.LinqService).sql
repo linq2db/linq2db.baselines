@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SQLite.Classic.MPM SQLite.Classic SQLite
+-- SQLite.Classic.MPM SQLite.Classic SQLite (asynchronously)
 DECLARE @Date VarChar(23) -- AnsiString
 SET     @Date = '2009-09-20 00:00:00.000'
 

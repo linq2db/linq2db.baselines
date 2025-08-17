@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SQLite.Classic.MPM SQLite.Classic SQLite
+-- SQLite.Classic.MPM SQLite.Classic SQLite (asynchronously)
 DECLARE @id  -- Int32
 SET     @id = 1001
 DECLARE @param  -- Int32
@@ -21,7 +21,7 @@ RETURNING
 	[Child].[ChildID] + [Child].[ParentID] + @param
 
 BeforeExecute
--- SQLite.Classic.MPM SQLite.Classic SQLite
+-- SQLite.Classic.MPM SQLite.Classic SQLite (asynchronously)
 DECLARE @param  -- Int32
 SET     @param = 200
 
@@ -33,7 +33,7 @@ WHERE
 	[c_1].[ChildID] > 1000
 
 BeforeExecute
--- SQLite.Classic.MPM SQLite.Classic SQLite
+-- SQLite.Classic.MPM SQLite.Classic SQLite (asynchronously)
 
 DELETE FROM
 	[Child]

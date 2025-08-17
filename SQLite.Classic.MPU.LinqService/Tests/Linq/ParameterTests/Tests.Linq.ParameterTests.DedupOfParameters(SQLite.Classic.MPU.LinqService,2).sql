@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
+-- SQLite.Classic.MPU SQLite.Classic SQLite (asynchronously)
 DECLARE @Value  -- Boolean
 SET     @Value = 1
 DECLARE @Value_1  -- Boolean
@@ -21,7 +21,7 @@ SET
 	[Value5] = @Value_4
 
 BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
+-- SQLite.Classic.MPU SQLite.Classic SQLite (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -35,7 +35,7 @@ FROM
 LIMIT 2
 
 BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
+-- SQLite.Classic.MPU SQLite.Classic SQLite (asynchronously)
 DECLARE @Value  -- Boolean
 SET     @Value = 1
 DECLARE @Value_1  -- Boolean
@@ -57,7 +57,7 @@ SET
 	[Value5] = @Value_4
 
 BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
+-- SQLite.Classic.MPU SQLite.Classic SQLite (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -71,7 +71,7 @@ FROM
 LIMIT 2
 
 BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
+-- SQLite.Classic.MPU SQLite.Classic SQLite (asynchronously)
 DECLARE @Value  -- Boolean
 SET     @Value = 0
 DECLARE @Value_1  -- Boolean
@@ -93,7 +93,7 @@ SET
 	[Value5] = @Value_4
 
 BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
+-- SQLite.Classic.MPU SQLite.Classic SQLite (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -107,7 +107,7 @@ FROM
 LIMIT 2
 
 BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
+-- SQLite.Classic.MPU SQLite.Classic SQLite (asynchronously)
 DECLARE @Value  -- Boolean
 SET     @Value = 1
 DECLARE @Value_1  -- Boolean
@@ -129,7 +129,7 @@ SET
 	[Value5] = @Value_4
 
 BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
+-- SQLite.Classic.MPU SQLite.Classic SQLite (asynchronously)
 
 SELECT
 	[t1].[Id],

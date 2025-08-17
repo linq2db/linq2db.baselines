@@ -13,7 +13,7 @@ WHERE
 	[p].[FirstName] = 'John' OR [p].[LastName] = 'John'
 
 BeforeExecute
--- SQLite.Classic.MPM SQLite.Classic SQLite
+-- SQLite.Classic.MPM SQLite.Classic SQLite (asynchronously)
 DECLARE @firstName NVarChar(4) -- String
 SET     @firstName = 'John'
 

@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
+-- SQLite.Classic.MPU SQLite.Classic SQLite (asynchronously)
 DECLARE @Value3  -- Int32
 SET     @Value3 = 7
 DECLARE @id  -- Int32
@@ -13,7 +13,7 @@ WHERE
 	[UpdateSetTest].[Id] = @id
 
 BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
+-- SQLite.Classic.MPU SQLite.Classic SQLite (asynchronously)
 DECLARE @id  -- Int32
 SET     @id = 1
 
@@ -26,7 +26,7 @@ WHERE
 LIMIT 2
 
 BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
+-- SQLite.Classic.MPU SQLite.Classic SQLite (asynchronously)
 DECLARE @Value3  -- Int32
 SET     @Value3 = 8
 DECLARE @id  -- Int32
@@ -40,7 +40,7 @@ WHERE
 	[UpdateSetTest].[Id] = @id
 
 BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
+-- SQLite.Classic.MPU SQLite.Classic SQLite (asynchronously)
 DECLARE @id  -- Int32
 SET     @id = 1
 

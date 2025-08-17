@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
+-- SQLite.Classic.MPU SQLite.Classic SQLite (asynchronously)
 
 SELECT
 	[t1].[FirstName],
@@ -13,7 +13,7 @@ WHERE
 	[t1].[PersonID] = 1 AND [t1].[Gender] = 'M'
 
 BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
+-- SQLite.Classic.MPU SQLite.Classic SQLite (asynchronously)
 
 SELECT
 	[t1].[FirstName],
@@ -27,7 +27,7 @@ WHERE
 	[t1].[PersonID] = 1 AND 'M' = [t1].[Gender]
 
 BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
+-- SQLite.Classic.MPU SQLite.Classic SQLite (asynchronously)
 DECLARE @gender NChar -- StringFixedLength
 SET     @gender = 'M'
 
@@ -43,7 +43,7 @@ WHERE
 	[t1].[PersonID] = 1 AND [t1].[Gender] = @gender
 
 BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
+-- SQLite.Classic.MPU SQLite.Classic SQLite (asynchronously)
 DECLARE @gender NChar -- StringFixedLength
 SET     @gender = 'M'
 
