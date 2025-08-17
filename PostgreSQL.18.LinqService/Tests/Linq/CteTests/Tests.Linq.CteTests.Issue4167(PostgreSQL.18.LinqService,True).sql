@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- PostgreSQL.18 PostgreSQL
+-- PostgreSQL.18 PostgreSQL (asynchronously)
 
 WITH "CTE_1" ("EnumValue")
 AS

@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- PostgreSQL.18 PostgreSQL
+-- PostgreSQL.18 PostgreSQL (asynchronously)
 
 SELECT
 	t1."ParentID",
@@ -11,7 +11,7 @@ ORDER BY
 LIMIT 5 OFFSET 3 
 
 BeforeExecute
--- PostgreSQL.18 PostgreSQL
+-- PostgreSQL.18 PostgreSQL (asynchronously)
 
 SELECT
 	t1."ParentID",

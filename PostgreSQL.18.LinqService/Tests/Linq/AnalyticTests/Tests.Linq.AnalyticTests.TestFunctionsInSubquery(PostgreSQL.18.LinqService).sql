@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- PostgreSQL.18 PostgreSQL
+-- PostgreSQL.18 PostgreSQL (asynchronously)
 
 SELECT
 	sq_1."Sum_1"

@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- PostgreSQL.18 PostgreSQL
+-- PostgreSQL.18 PostgreSQL (asynchronously)
 DECLARE @Code Text(5) -- String
 SET     @Code = 'Child'
 DECLARE @Id Integer -- Int32
@@ -25,7 +25,7 @@ VALUES
 )
 
 BeforeExecute
--- PostgreSQL.18 PostgreSQL
+-- PostgreSQL.18 PostgreSQL (asynchronously)
 DECLARE @Code Text(6) -- String
 SET     @Code = 'Child2'
 DECLARE @Id Integer -- Int32
@@ -51,7 +51,7 @@ VALUES
 )
 
 BeforeExecute
--- PostgreSQL.18 PostgreSQL
+-- PostgreSQL.18 PostgreSQL (asynchronously)
 
 SELECT
 	e."Code",

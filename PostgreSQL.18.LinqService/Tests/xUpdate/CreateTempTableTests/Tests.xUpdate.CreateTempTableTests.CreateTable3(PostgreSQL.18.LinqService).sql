@@ -1,10 +1,10 @@
 ﻿BeforeExecute
--- PostgreSQL.18 PostgreSQL
+-- PostgreSQL.18 PostgreSQL (asynchronously)
 
 DROP TABLE IF EXISTS "TempTable"
 
 BeforeExecute
--- PostgreSQL.18 PostgreSQL
+-- PostgreSQL.18 PostgreSQL (asynchronously)
 
 CREATE TABLE IF NOT EXISTS "TempTable"
 (
@@ -14,7 +14,7 @@ CREATE TABLE IF NOT EXISTS "TempTable"
 )
 
 BeforeExecute
--- PostgreSQL.18 PostgreSQL
+-- PostgreSQL.18 PostgreSQL (asynchronously)
 
 INSERT INTO "TempTable"
 (
@@ -26,7 +26,7 @@ FROM
 	"Parent" p
 
 BeforeExecute
--- PostgreSQL.18 PostgreSQL
+-- PostgreSQL.18 PostgreSQL (asynchronously)
 
 SELECT
 	t."ID"
@@ -35,7 +35,7 @@ FROM
 		INNER JOIN "TempTable" t ON p."ParentID" = t."ID"
 
 BeforeExecute
--- PostgreSQL.18 PostgreSQL
+-- PostgreSQL.18 PostgreSQL (asynchronously)
 
 DROP TABLE IF EXISTS "TempTable"
 

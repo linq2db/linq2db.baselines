@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- PostgreSQL.18 PostgreSQL
+-- PostgreSQL.18 PostgreSQL (asynchronously)
 DECLARE @ParentID Integer -- Int32
 SET     @ParentID = 1
 
@@ -18,7 +18,7 @@ SELECT
 	END
 
 BeforeExecute
--- PostgreSQL.18 PostgreSQL
+-- PostgreSQL.18 PostgreSQL (asynchronously)
 DECLARE @ParentID Integer -- Int32
 SET     @ParentID = 2
 

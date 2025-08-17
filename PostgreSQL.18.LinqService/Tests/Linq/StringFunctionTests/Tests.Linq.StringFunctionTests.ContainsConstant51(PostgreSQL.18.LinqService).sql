@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- PostgreSQL.18 PostgreSQL
+-- PostgreSQL.18 PostgreSQL (asynchronously)
 DECLARE @ps Text(4) -- String
 SET     @ps = '%~[%'
 

@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- PostgreSQL.18 PostgreSQL
+-- PostgreSQL.18 PostgreSQL (asynchronously)
 DECLARE @n Integer -- Int32
 SET     @n = 1
 
@@ -17,7 +17,7 @@ WHERE
 	)
 
 BeforeExecute
--- PostgreSQL.18 PostgreSQL
+-- PostgreSQL.18 PostgreSQL (asynchronously)
 
 SELECT
 	t1."ParentID",
@@ -26,7 +26,7 @@ FROM
 	"Parent" t1
 
 BeforeExecute
--- PostgreSQL.18 PostgreSQL
+-- PostgreSQL.18 PostgreSQL (asynchronously)
 
 SELECT
 	t1."ParentID",

@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- PostgreSQL.18 PostgreSQL
+-- PostgreSQL.18 PostgreSQL (asynchronously)
 DECLARE @userId Integer -- Int32
 SET     @userId = 32
 DECLARE @childId Integer -- Int32

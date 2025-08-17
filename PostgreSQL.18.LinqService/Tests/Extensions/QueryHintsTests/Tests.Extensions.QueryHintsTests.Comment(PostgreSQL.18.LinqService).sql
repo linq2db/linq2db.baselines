@@ -12,7 +12,7 @@ FROM
 ----
 
 BeforeExecute
--- PostgreSQL.18 PostgreSQL
+-- PostgreSQL.18 PostgreSQL (asynchronously)
 
 SELECT
 	p."ParentID",
@@ -35,7 +35,7 @@ FROM
 ---
 
 BeforeExecute
--- PostgreSQL.18 PostgreSQL
+-- PostgreSQL.18 PostgreSQL (asynchronously)
 
 SELECT
 	p."ParentID",

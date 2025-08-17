@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- PostgreSQL.18 PostgreSQL
+-- PostgreSQL.18 PostgreSQL (asynchronously)
 
 SELECT
 	t1."ID",
@@ -15,7 +15,7 @@ FROM
 		INNER JOIN "LinqDataTypes" t2 ON t1."ID" = t2."ID"
 
 BeforeExecute
--- PostgreSQL.18 PostgreSQL
+-- PostgreSQL.18 PostgreSQL (asynchronously)
 DECLARE @param2 Boolean
 SET     @param2 = False
 

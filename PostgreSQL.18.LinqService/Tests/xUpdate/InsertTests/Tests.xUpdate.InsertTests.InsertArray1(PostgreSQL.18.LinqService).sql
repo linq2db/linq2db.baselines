@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- PostgreSQL.18 PostgreSQL
+-- PostgreSQL.18 PostgreSQL (asynchronously)
 
 DELETE FROM
 	"LinqDataTypes" t
@@ -7,7 +7,7 @@ WHERE
 	t."ID" > 1000
 
 BeforeExecute
--- PostgreSQL.18 PostgreSQL
+-- PostgreSQL.18 PostgreSQL (asynchronously)
 
 INSERT INTO "LinqDataTypes"
 (
@@ -23,7 +23,7 @@ VALUES
 )
 
 BeforeExecute
--- PostgreSQL.18 PostgreSQL
+-- PostgreSQL.18 PostgreSQL (asynchronously)
 
 SELECT
 	t."ID",
@@ -40,7 +40,7 @@ WHERE
 LIMIT 2
 
 BeforeExecute
--- PostgreSQL.18 PostgreSQL
+-- PostgreSQL.18 PostgreSQL (asynchronously)
 
 DELETE FROM
 	"LinqDataTypes" t

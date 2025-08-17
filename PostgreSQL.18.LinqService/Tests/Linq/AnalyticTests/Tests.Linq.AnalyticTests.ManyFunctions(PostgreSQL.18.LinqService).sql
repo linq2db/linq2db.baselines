@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- PostgreSQL.18 PostgreSQL
+-- PostgreSQL.18 PostgreSQL (asynchronously)
 
 SELECT
 	RANK() OVER(PARTITION BY p."Value1", c_1."ChildID" ORDER BY p."Value1", c_1."ChildID", c_1."ParentID"),

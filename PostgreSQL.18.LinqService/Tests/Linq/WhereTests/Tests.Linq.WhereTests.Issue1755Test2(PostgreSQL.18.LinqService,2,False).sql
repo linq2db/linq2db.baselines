@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- PostgreSQL.18 PostgreSQL
+-- PostgreSQL.18 PostgreSQL (asynchronously)
 DECLARE @id Integer -- Int32
 SET     @id = 2
 
@@ -12,7 +12,7 @@ WHERE
 	c_1."ParentID" = :id AND c_1."Value1" IS NOT NULL
 
 BeforeExecute
--- PostgreSQL.18 PostgreSQL
+-- PostgreSQL.18 PostgreSQL (asynchronously)
 
 SELECT
 	t1."ParentID",

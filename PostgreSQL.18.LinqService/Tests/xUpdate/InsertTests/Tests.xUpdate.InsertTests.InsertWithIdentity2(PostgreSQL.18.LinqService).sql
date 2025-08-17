@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- PostgreSQL.18 PostgreSQL
+-- PostgreSQL.18 PostgreSQL (asynchronously)
 
 DELETE FROM
 	"Person" t1
@@ -7,7 +7,7 @@ WHERE
 	t1."PersonID" > 4
 
 BeforeExecute
--- PostgreSQL.18 PostgreSQL
+-- PostgreSQL.18 PostgreSQL (asynchronously)
 
 INSERT INTO "Person"
 (
@@ -25,7 +25,7 @@ RETURNING
 	"PersonID"
 
 BeforeExecute
--- PostgreSQL.18 PostgreSQL
+-- PostgreSQL.18 PostgreSQL (asynchronously)
 
 SELECT
 	p."FirstName",
@@ -40,7 +40,7 @@ WHERE
 LIMIT 2
 
 BeforeExecute
--- PostgreSQL.18 PostgreSQL
+-- PostgreSQL.18 PostgreSQL (asynchronously)
 
 DELETE FROM
 	"Person" t1

@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- PostgreSQL.18 PostgreSQL
+-- PostgreSQL.18 PostgreSQL (asynchronously)
 DECLARE @FirstName Text(4) -- String
 SET     @FirstName = 'John'
 DECLARE @LastName Text(7) -- String

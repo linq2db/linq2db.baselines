@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- PostgreSQL.18 PostgreSQL
+-- PostgreSQL.18 PostgreSQL (asynchronously)
 DECLARE @Id Integer -- Int32
 SET     @Id = 1
 DECLARE @Field1 Varchar -- String
@@ -17,7 +17,7 @@ VALUES
 )
 
 BeforeExecute
--- PostgreSQL.18 PostgreSQL
+-- PostgreSQL.18 PostgreSQL (asynchronously)
 DECLARE @Id Integer -- Int32
 SET     @Id = 2
 DECLARE @Field1 Unknown -- Object
@@ -35,7 +35,7 @@ VALUES
 )
 
 BeforeExecute
--- PostgreSQL.18 PostgreSQL
+-- PostgreSQL.18 PostgreSQL (asynchronously)
 DECLARE @Id Integer -- Int32
 SET     @Id = 3
 DECLARE @Field1 Text(4) -- String
@@ -53,7 +53,7 @@ VALUES
 )
 
 BeforeExecute
--- PostgreSQL.18 PostgreSQL
+-- PostgreSQL.18 PostgreSQL (asynchronously)
 
 SELECT
 	t1."Id",

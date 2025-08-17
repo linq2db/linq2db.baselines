@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- PostgreSQL.18 PostgreSQL
+-- PostgreSQL.18 PostgreSQL (asynchronously)
 DECLARE @FirstName Text(25) -- String
 SET     @FirstName = 'UpdateColumnFilterUpdated'
 DECLARE @LastName Text(8) -- String
@@ -25,7 +25,7 @@ VALUES
 )
 
 BeforeExecute
--- PostgreSQL.18 PostgreSQL
+-- PostgreSQL.18 PostgreSQL (asynchronously)
 DECLARE @FirstName Text(25) -- String
 SET     @FirstName = 'UpdateColumnFilterUpdated'
 
@@ -42,7 +42,7 @@ WHERE
 LIMIT 1
 
 BeforeExecute
--- PostgreSQL.18 PostgreSQL
+-- PostgreSQL.18 PostgreSQL (asynchronously)
 DECLARE @FirstName Text(25) -- String
 SET     @FirstName = 'UpdateColumnFilterUpdated'
 DECLARE @LastName Text(8) -- String
@@ -62,7 +62,7 @@ WHERE
 	"Person"."PersonID" = :ID
 
 BeforeExecute
--- PostgreSQL.18 PostgreSQL
+-- PostgreSQL.18 PostgreSQL (asynchronously)
 DECLARE @FirstName Text(25) -- String
 SET     @FirstName = 'UpdateColumnFilterUpdated'
 

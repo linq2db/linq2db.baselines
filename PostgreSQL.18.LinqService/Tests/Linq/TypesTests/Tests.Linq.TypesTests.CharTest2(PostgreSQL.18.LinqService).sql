@@ -11,7 +11,7 @@ FROM
 	[Person] [t1]
 
 BeforeExecute
--- PostgreSQL.18 PostgreSQL
+-- PostgreSQL.18 PostgreSQL (asynchronously)
 
 SELECT
 	p."PersonID"

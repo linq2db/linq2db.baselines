@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- PostgreSQL.18 PostgreSQL
+-- PostgreSQL.18 PostgreSQL (asynchronously)
 
 CREATE TABLE IF NOT EXISTS "DisposableTable"
 (
@@ -7,7 +7,7 @@ CREATE TABLE IF NOT EXISTS "DisposableTable"
 )
 
 BeforeExecute
--- PostgreSQL.18 PostgreSQL
+-- PostgreSQL.18 PostgreSQL (asynchronously)
 
 DROP TABLE IF EXISTS "DisposableTable"
 

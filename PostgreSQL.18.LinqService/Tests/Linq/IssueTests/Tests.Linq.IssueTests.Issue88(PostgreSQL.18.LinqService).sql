@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- PostgreSQL.18 PostgreSQL
+-- PostgreSQL.18 PostgreSQL (asynchronously)
 
 SELECT
 	t1."FirstName",
@@ -13,7 +13,7 @@ WHERE
 	t1."PersonID" = 1 AND t1."Gender" = 'M'
 
 BeforeExecute
--- PostgreSQL.18 PostgreSQL
+-- PostgreSQL.18 PostgreSQL (asynchronously)
 
 SELECT
 	t1."FirstName",
@@ -27,7 +27,7 @@ WHERE
 	t1."PersonID" = 1 AND 'M' = t1."Gender"
 
 BeforeExecute
--- PostgreSQL.18 PostgreSQL
+-- PostgreSQL.18 PostgreSQL (asynchronously)
 DECLARE @gender Char -- String
 SET     @gender = 'M'
 
@@ -43,7 +43,7 @@ WHERE
 	t1."PersonID" = 1 AND t1."Gender" = :gender
 
 BeforeExecute
--- PostgreSQL.18 PostgreSQL
+-- PostgreSQL.18 PostgreSQL (asynchronously)
 DECLARE @gender Char -- String
 SET     @gender = 'M'
 

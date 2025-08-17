@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- PostgreSQL.18 PostgreSQL
+-- PostgreSQL.18 PostgreSQL (asynchronously)
 DECLARE @input Text(6) -- String
 SET     @input = '%test%'
 
@@ -14,7 +14,7 @@ WHERE
 	Lower(m_1."FirstName") LIKE :input ESCAPE '~'
 
 BeforeExecute
--- PostgreSQL.18 PostgreSQL
+-- PostgreSQL.18 PostgreSQL (asynchronously)
 DECLARE @input Text(6) -- String
 SET     @input = '%test%'
 

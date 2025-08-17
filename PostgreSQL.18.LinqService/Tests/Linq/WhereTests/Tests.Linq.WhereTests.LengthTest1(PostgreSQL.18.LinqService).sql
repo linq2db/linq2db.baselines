@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- PostgreSQL.18 PostgreSQL
+-- PostgreSQL.18 PostgreSQL (asynchronously)
 
 SELECT
 	nm."MiddleName"
@@ -9,7 +9,7 @@ WHERE
 	Length(nm."MiddleName") <> 0 OR nm."MiddleName" IS NULL
 
 BeforeExecute
--- PostgreSQL.18 PostgreSQL
+-- PostgreSQL.18 PostgreSQL (asynchronously)
 
 SELECT
 	t1."FirstName",

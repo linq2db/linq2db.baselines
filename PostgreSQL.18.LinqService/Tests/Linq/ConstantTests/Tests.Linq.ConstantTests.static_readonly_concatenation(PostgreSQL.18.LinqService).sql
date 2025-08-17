@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- PostgreSQL.18 PostgreSQL
+-- PostgreSQL.18 PostgreSQL (asynchronously)
 DECLARE @p Text(9) -- String
 SET     @p = 'StrValue1'
 
@@ -14,7 +14,7 @@ WHERE
 	e."StringValue" || '1' = :p
 
 BeforeExecute
--- PostgreSQL.18 PostgreSQL
+-- PostgreSQL.18 PostgreSQL (asynchronously)
 
 SELECT
 	t1."Id",

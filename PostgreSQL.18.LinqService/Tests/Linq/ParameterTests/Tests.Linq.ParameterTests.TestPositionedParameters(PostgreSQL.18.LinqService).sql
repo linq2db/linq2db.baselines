@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- PostgreSQL.18 PostgreSQL
+-- PostgreSQL.18 PostgreSQL (asynchronously)
 DECLARE @z2 Integer -- Int32
 SET     @z2 = 2
 DECLARE @y10 Integer -- Int32

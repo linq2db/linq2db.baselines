@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- PostgreSQL.18 PostgreSQL
+-- PostgreSQL.18 PostgreSQL (asynchronously)
 
 SELECT
 	COUNT(*)
@@ -10,7 +10,7 @@ WHERE
 	"a_Parent"."ParentID" = 1
 
 BeforeExecute
--- PostgreSQL.18 PostgreSQL
+-- PostgreSQL.18 PostgreSQL (asynchronously)
 
 SELECT
 	COUNT(*)
@@ -21,7 +21,7 @@ WHERE
 	"a_Parent"."ParentID" = 1
 
 BeforeExecute
--- PostgreSQL.18 PostgreSQL
+-- PostgreSQL.18 PostgreSQL (asynchronously)
 
 SELECT
 	"a_Parent"."ParentID"

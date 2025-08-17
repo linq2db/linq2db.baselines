@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- PostgreSQL.18 PostgreSQL
+-- PostgreSQL.18 PostgreSQL (asynchronously)
 DECLARE @code Integer -- Int32
 SET     @code = 1
 DECLARE @site Integer -- Int32
