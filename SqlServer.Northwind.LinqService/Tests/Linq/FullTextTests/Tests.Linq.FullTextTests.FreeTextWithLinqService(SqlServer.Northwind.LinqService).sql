@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.Northwind SqlServer.2019
+-- SqlServer.Northwind SqlServer.2019 (asynchronously)
 
 SELECT
 	[c_1].[CategoryID],
