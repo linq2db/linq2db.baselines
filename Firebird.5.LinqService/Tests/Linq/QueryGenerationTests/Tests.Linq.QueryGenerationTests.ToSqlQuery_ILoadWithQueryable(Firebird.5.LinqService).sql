@@ -10,7 +10,7 @@ WHERE
 	"p"."ParentID" = 1
 
 BeforeExecute
--- Firebird.5 Firebird4
+-- Firebird.5 Firebird4 (asynchronously)
 
 SELECT
 	"m_1"."ParentID",
@@ -34,7 +34,7 @@ FROM
 		INNER JOIN "Child" "d" ON "m_1"."ParentID" = "d"."ParentID"
 
 BeforeExecute
--- Firebird.5 Firebird4
+-- Firebird.5 Firebird4 (asynchronously)
 
 SELECT
 	"p"."ParentID",

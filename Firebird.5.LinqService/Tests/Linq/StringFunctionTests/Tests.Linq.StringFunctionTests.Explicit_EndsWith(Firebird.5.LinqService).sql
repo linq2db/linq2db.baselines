@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Firebird.5 Firebird4
+-- Firebird.5 Firebird4 (asynchronously)
 
 SELECT
 	COUNT(*)
@@ -9,7 +9,7 @@ WHERE
 	CAST("r"."Diagnosis" AS BLOB) LIKE '%Persecution' ESCAPE '~'
 
 BeforeExecute
--- Firebird.5 Firebird4
+-- Firebird.5 Firebird4 (asynchronously)
 
 SELECT
 	COUNT(*)
@@ -19,7 +19,7 @@ WHERE
 	CAST("r"."Diagnosis" AS BLOB) LIKE '%persecution' ESCAPE '~'
 
 BeforeExecute
--- Firebird.5 Firebird4
+-- Firebird.5 Firebird4 (asynchronously)
 
 SELECT
 	COUNT(*)
@@ -29,7 +29,7 @@ WHERE
 	Lower("r"."Diagnosis") LIKE '%persecution' ESCAPE '~'
 
 BeforeExecute
--- Firebird.5 Firebird4
+-- Firebird.5 Firebird4 (asynchronously)
 
 SELECT
 	COUNT(*)

@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Firebird.5 Firebird4
+-- Firebird.5 Firebird4 (asynchronously)
 DECLARE @CharFld Char -- String
 SET     @CharFld = 'P'
 
@@ -13,7 +13,7 @@ VALUES
 )
 
 BeforeExecute
--- Firebird.5 Firebird4
+-- Firebird.5 Firebird4 (asynchronously)
 
 SELECT
 	"t1"."Id",

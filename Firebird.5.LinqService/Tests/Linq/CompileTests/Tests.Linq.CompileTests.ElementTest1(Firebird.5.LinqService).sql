@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Firebird.5 Firebird4
+-- Firebird.5 Firebird4 (asynchronously)
 DECLARE @p Integer -- Int32
 SET     @p = 1
 
@@ -13,7 +13,7 @@ WHERE
 FETCH NEXT 1 ROWS ONLY
 
 BeforeExecute
--- Firebird.5 Firebird4
+-- Firebird.5 Firebird4 (asynchronously)
 DECLARE @p Integer -- Int32
 SET     @p = 2
 

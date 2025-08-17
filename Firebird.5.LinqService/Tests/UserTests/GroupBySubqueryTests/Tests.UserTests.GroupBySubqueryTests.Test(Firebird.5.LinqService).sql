@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Firebird.5 Firebird4
+-- Firebird.5 Firebird4 (asynchronously)
 
 SELECT DISTINCT
 	"a_Ref4"."Field6",
@@ -16,7 +16,7 @@ WHERE
 	"t1"."Field3" IS NOT NULL
 
 BeforeExecute
--- Firebird.5 Firebird4
+-- Firebird.5 Firebird4 (asynchronously)
 
 SELECT
 	"g_2"."Field6",

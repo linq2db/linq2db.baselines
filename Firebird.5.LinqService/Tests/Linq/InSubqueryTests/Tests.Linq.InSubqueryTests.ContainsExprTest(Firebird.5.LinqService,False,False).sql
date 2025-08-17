@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Firebird.5 Firebird4
+-- Firebird.5 Firebird4 (asynchronously)
 DECLARE @n Integer -- Int32
 SET     @n = 1
 
@@ -19,7 +19,7 @@ WHERE
 	)
 
 BeforeExecute
--- Firebird.5 Firebird4
+-- Firebird.5 Firebird4 (asynchronously)
 
 SELECT
 	"t1"."ParentID",
@@ -28,7 +28,7 @@ FROM
 	"Parent" "t1"
 
 BeforeExecute
--- Firebird.5 Firebird4
+-- Firebird.5 Firebird4 (asynchronously)
 
 SELECT
 	"t1"."ParentID",

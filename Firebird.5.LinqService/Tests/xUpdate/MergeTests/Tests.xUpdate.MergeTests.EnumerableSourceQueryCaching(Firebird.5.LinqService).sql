@@ -1,11 +1,11 @@
 ﻿BeforeExecute
--- Firebird.5 Firebird4
+-- Firebird.5 Firebird4 (asynchronously)
 
 DELETE FROM
 	"TestMerge1" "t1"
 
 BeforeExecute
--- Firebird.5 Firebird4
+-- Firebird.5 Firebird4 (asynchronously)
 
 MERGE INTO "TestMerge1" "Target"
 USING (
@@ -35,7 +35,7 @@ VALUES
 )
 
 BeforeExecute
--- Firebird.5 Firebird4
+-- Firebird.5 Firebird4 (asynchronously)
 
 SELECT
 	"t1"."Id",
@@ -50,13 +50,13 @@ ORDER BY
 	"t1"."Id"
 
 BeforeExecute
--- Firebird.5 Firebird4
+-- Firebird.5 Firebird4 (asynchronously)
 
 DELETE FROM
 	"TestMerge1" "t1"
 
 BeforeExecute
--- Firebird.5 Firebird4
+-- Firebird.5 Firebird4 (asynchronously)
 
 MERGE INTO "TestMerge1" "Target"
 USING (
@@ -86,7 +86,7 @@ VALUES
 )
 
 BeforeExecute
--- Firebird.5 Firebird4
+-- Firebird.5 Firebird4 (asynchronously)
 
 SELECT
 	"t1"."Id",
@@ -101,13 +101,13 @@ ORDER BY
 	"t1"."Id"
 
 BeforeExecute
--- Firebird.5 Firebird4
+-- Firebird.5 Firebird4 (asynchronously)
 
 DELETE FROM
 	"TestMerge1" "t1"
 
 BeforeExecute
--- Firebird.5 Firebird4
+-- Firebird.5 Firebird4 (asynchronously)
 
 MERGE INTO "TestMerge1" "Target"
 USING (
@@ -139,7 +139,7 @@ VALUES
 )
 
 BeforeExecute
--- Firebird.5 Firebird4
+-- Firebird.5 Firebird4 (asynchronously)
 
 SELECT
 	"t1"."Id",

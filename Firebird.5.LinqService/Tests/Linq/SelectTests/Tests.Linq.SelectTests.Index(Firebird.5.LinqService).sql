@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Firebird.5 Firebird4
+-- Firebird.5 Firebird4 (asynchronously)
 
 SELECT
 	"m_2"."ParentID",
@@ -22,7 +22,7 @@ ORDER BY
 	"m_2"."ChildID" DESC
 
 BeforeExecute
--- Firebird.5 Firebird4
+-- Firebird.5 Firebird4 (asynchronously)
 
 SELECT
 	"m_2"."ParentID",

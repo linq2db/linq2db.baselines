@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Firebird.5 Firebird4
+-- Firebird.5 Firebird4 (asynchronously)
 
 SELECT
 	"m_1"."Children",
@@ -23,7 +23,7 @@ FROM
 		INNER JOIN "Test3799Item" "d" ON "m_1"."Children" = "d"."ParentId" OR "m_1"."Children" IS NULL AND "d"."ParentId" IS NULL
 
 BeforeExecute
--- Firebird.5 Firebird4
+-- Firebird.5 Firebird4 (asynchronously)
 
 SELECT
 	"item_1"."Name",

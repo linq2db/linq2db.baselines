@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Firebird.5 Firebird4
+-- Firebird.5 Firebird4 (asynchronously)
 
 SELECT
 	"s"."Id",
@@ -11,7 +11,7 @@ WHERE
 	"s"."Id" > 3
 
 BeforeExecute
--- Firebird.5 Firebird4
+-- Firebird.5 Firebird4 (asynchronously)
 DECLARE @param Integer -- Int32
 SET     @param = 200
 

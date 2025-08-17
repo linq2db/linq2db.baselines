@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Firebird.5 Firebird4
+-- Firebird.5 Firebird4 (asynchronously)
 
 INSERT INTO "TestBool"
 (
@@ -13,7 +13,7 @@ VALUES
 )
 
 BeforeExecute
--- Firebird.5 Firebird4
+-- Firebird.5 Firebird4 (asynchronously)
 
 SELECT
 	"t1"."Id",
@@ -23,7 +23,7 @@ FROM
 FETCH NEXT 2 ROWS ONLY
 
 BeforeExecute
--- Firebird.5 Firebird4
+-- Firebird.5 Firebird4 (asynchronously)
 
 UPDATE
 	"TestBool" "t1"
@@ -32,7 +32,7 @@ SET
 	"Value" = NOT "t1"."Value"
 
 BeforeExecute
--- Firebird.5 Firebird4
+-- Firebird.5 Firebird4 (asynchronously)
 
 SELECT
 	"t1"."Id",
@@ -42,7 +42,7 @@ FROM
 FETCH NEXT 2 ROWS ONLY
 
 BeforeExecute
--- Firebird.5 Firebird4
+-- Firebird.5 Firebird4 (asynchronously)
 
 UPDATE
 	"TestBool" "t1"
@@ -51,7 +51,7 @@ SET
 	"Value" = TRUE
 
 BeforeExecute
--- Firebird.5 Firebird4
+-- Firebird.5 Firebird4 (asynchronously)
 
 SELECT
 	"t1"."Id",

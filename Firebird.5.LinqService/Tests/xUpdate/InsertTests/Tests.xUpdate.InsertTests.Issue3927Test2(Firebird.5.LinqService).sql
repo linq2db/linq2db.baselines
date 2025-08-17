@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Firebird.5 Firebird4
+-- Firebird.5 Firebird4 (asynchronously)
 DECLARE @pageNumber Integer -- Int32
 SET     @pageNumber = 9
 DECLARE @serialNumber Char(11) -- String

@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Firebird.5 Firebird4
+-- Firebird.5 Firebird4 (asynchronously)
 DECLARE @One Integer -- Int32
 SET     @One = 1
 
@@ -22,7 +22,7 @@ WHERE
 	)
 
 BeforeExecute
--- Firebird.5 Firebird4
+-- Firebird.5 Firebird4 (asynchronously)
 
 SELECT
 	"t1"."Id",
@@ -34,7 +34,7 @@ FROM
 	"BooleanTable" "t1"
 
 BeforeExecute
--- Firebird.5 Firebird4
+-- Firebird.5 Firebird4 (asynchronously)
 DECLARE @Zero Integer -- Int32
 SET     @Zero = 0
 
@@ -57,7 +57,7 @@ WHERE
 	)
 
 BeforeExecute
--- Firebird.5 Firebird4
+-- Firebird.5 Firebird4 (asynchronously)
 
 SELECT
 	"t1"."Id",
@@ -69,7 +69,7 @@ FROM
 	"BooleanTable" "t1"
 
 BeforeExecute
--- Firebird.5 Firebird4
+-- Firebird.5 Firebird4 (asynchronously)
 DECLARE @OneN Integer -- Int32
 SET     @OneN = 1
 
@@ -92,7 +92,7 @@ WHERE
 	)
 
 BeforeExecute
--- Firebird.5 Firebird4
+-- Firebird.5 Firebird4 (asynchronously)
 
 SELECT
 	"t1"."Id",
@@ -104,7 +104,7 @@ FROM
 	"BooleanTable" "t1"
 
 BeforeExecute
--- Firebird.5 Firebird4
+-- Firebird.5 Firebird4 (asynchronously)
 DECLARE @ZeroN Integer -- Int32
 SET     @ZeroN = 0
 
@@ -127,7 +127,7 @@ WHERE
 	)
 
 BeforeExecute
--- Firebird.5 Firebird4
+-- Firebird.5 Firebird4 (asynchronously)
 
 SELECT
 	"t1"."Id",
@@ -139,7 +139,7 @@ FROM
 	"BooleanTable" "t1"
 
 BeforeExecute
--- Firebird.5 Firebird4
+-- Firebird.5 Firebird4 (asynchronously)
 
 SELECT
 	"r"."Id",
@@ -153,7 +153,7 @@ WHERE
 	1 = 0
 
 BeforeExecute
--- Firebird.5 Firebird4
+-- Firebird.5 Firebird4 (asynchronously)
 
 SELECT
 	"t1"."Id",
@@ -165,7 +165,7 @@ FROM
 	"BooleanTable" "t1"
 
 BeforeExecute
--- Firebird.5 Firebird4
+-- Firebird.5 Firebird4 (asynchronously)
 DECLARE @One Integer -- Int32
 SET     @One = 1
 
@@ -188,7 +188,7 @@ WHERE
 	)
 
 BeforeExecute
--- Firebird.5 Firebird4
+-- Firebird.5 Firebird4 (asynchronously)
 
 SELECT
 	"t1"."Id",
@@ -200,7 +200,7 @@ FROM
 	"BooleanTable" "t1"
 
 BeforeExecute
--- Firebird.5 Firebird4
+-- Firebird.5 Firebird4 (asynchronously)
 DECLARE @Zero Integer -- Int32
 SET     @Zero = 0
 
@@ -223,7 +223,7 @@ WHERE
 	)
 
 BeforeExecute
--- Firebird.5 Firebird4
+-- Firebird.5 Firebird4 (asynchronously)
 
 SELECT
 	"t1"."Id",
@@ -235,7 +235,7 @@ FROM
 	"BooleanTable" "t1"
 
 BeforeExecute
--- Firebird.5 Firebird4
+-- Firebird.5 Firebird4 (asynchronously)
 DECLARE @OneN Integer -- Int32
 SET     @OneN = 1
 
@@ -258,7 +258,7 @@ WHERE
 	)
 
 BeforeExecute
--- Firebird.5 Firebird4
+-- Firebird.5 Firebird4 (asynchronously)
 
 SELECT
 	"t1"."Id",
@@ -270,7 +270,7 @@ FROM
 	"BooleanTable" "t1"
 
 BeforeExecute
--- Firebird.5 Firebird4
+-- Firebird.5 Firebird4 (asynchronously)
 DECLARE @ZeroN Integer -- Int32
 SET     @ZeroN = 0
 
@@ -293,7 +293,7 @@ WHERE
 	)
 
 BeforeExecute
--- Firebird.5 Firebird4
+-- Firebird.5 Firebird4 (asynchronously)
 
 SELECT
 	"t1"."Id",
@@ -305,7 +305,7 @@ FROM
 	"BooleanTable" "t1"
 
 BeforeExecute
--- Firebird.5 Firebird4
+-- Firebird.5 Firebird4 (asynchronously)
 
 SELECT
 	"r"."Id",
@@ -317,7 +317,7 @@ FROM
 	"BooleanTable" "r"
 
 BeforeExecute
--- Firebird.5 Firebird4
+-- Firebird.5 Firebird4 (asynchronously)
 
 SELECT
 	"t1"."Id",

@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Firebird.5 Firebird4
+-- Firebird.5 Firebird4 (asynchronously)
 
 SELECT
 	"m_1"."Id",
@@ -16,7 +16,7 @@ FROM
 		INNER JOIN "EntityD" "d" ON "m_1"."Id" = "d".FK OR "m_1"."Id" IS NULL AND "d".FK IS NULL
 
 BeforeExecute
--- Firebird.5 Firebird4
+-- Firebird.5 Firebird4 (asynchronously)
 
 SELECT
 	"t1"."Id",
