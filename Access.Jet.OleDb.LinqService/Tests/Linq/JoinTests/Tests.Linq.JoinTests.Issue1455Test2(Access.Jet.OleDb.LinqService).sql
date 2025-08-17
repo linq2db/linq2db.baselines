@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Access.Jet.OleDb AccessOleDb
+-- Access.Jet.OleDb AccessOleDb (asynchronously)
 DECLARE @cond VarWChar(3) -- String
 SET     @cond = '%C%'
 DECLARE @cond_1 VarWChar(3) -- String

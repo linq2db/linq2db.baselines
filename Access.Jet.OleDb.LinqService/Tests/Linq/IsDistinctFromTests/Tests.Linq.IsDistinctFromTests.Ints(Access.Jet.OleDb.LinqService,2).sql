@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Access.Jet.OleDb AccessOleDb
+-- Access.Jet.OleDb AccessOleDb (asynchronously)
 DECLARE @value Integer -- Int32
 SET     @value = 2
 
@@ -11,7 +11,7 @@ WHERE
 	[s].[Int] <> @value
 
 BeforeExecute
--- Access.Jet.OleDb AccessOleDb
+-- Access.Jet.OleDb AccessOleDb (asynchronously)
 DECLARE @value Integer -- Int32
 SET     @value = 2
 
@@ -23,7 +23,7 @@ WHERE
 	[s].[NullableInt] IS NULL OR [s].[NullableInt] <> @value
 
 BeforeExecute
--- Access.Jet.OleDb AccessOleDb
+-- Access.Jet.OleDb AccessOleDb (asynchronously)
 DECLARE @value Integer -- Int32
 SET     @value = 2
 
@@ -35,7 +35,7 @@ WHERE
 	[s].[Int] = @value
 
 BeforeExecute
--- Access.Jet.OleDb AccessOleDb
+-- Access.Jet.OleDb AccessOleDb (asynchronously)
 DECLARE @value Integer -- Int32
 SET     @value = 2
 

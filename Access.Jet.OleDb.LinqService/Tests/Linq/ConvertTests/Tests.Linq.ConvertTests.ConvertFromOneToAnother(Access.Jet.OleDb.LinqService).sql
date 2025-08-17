@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Access.Jet.OleDb AccessOleDb
+-- Access.Jet.OleDb AccessOleDb (asynchronously)
 DECLARE @value VarChar(9, 5) -- AnsiString
 SET     @value = 6579.64648
 
@@ -9,7 +9,7 @@ FROM
 	[LinqDataTypes] [t1]
 
 BeforeExecute
--- Access.Jet.OleDb AccessOleDb
+-- Access.Jet.OleDb AccessOleDb (asynchronously)
 DECLARE @value Single
 SET     @value = 6579.64648
 
@@ -19,7 +19,7 @@ FROM
 	[LinqDataTypes] [t1]
 
 BeforeExecute
--- Access.Jet.OleDb AccessOleDb
+-- Access.Jet.OleDb AccessOleDb (asynchronously)
 DECLARE @value Double
 SET     @value = 6579.6464800000003
 
@@ -29,7 +29,7 @@ FROM
 	[LinqDataTypes] [t1]
 
 BeforeExecute
--- Access.Jet.OleDb AccessOleDb
+-- Access.Jet.OleDb AccessOleDb (asynchronously)
 DECLARE @value VarChar(9, 5) -- AnsiString
 SET     @value = 6579.64648
 
@@ -39,7 +39,7 @@ FROM
 	[LinqDataTypes] [t1]
 
 BeforeExecute
--- Access.Jet.OleDb AccessOleDb
+-- Access.Jet.OleDb AccessOleDb (asynchronously)
 DECLARE @value Single
 SET     @value = 6579.64648
 
@@ -49,7 +49,7 @@ FROM
 	[LinqDataTypes] [t1]
 
 BeforeExecute
--- Access.Jet.OleDb AccessOleDb
+-- Access.Jet.OleDb AccessOleDb (asynchronously)
 DECLARE @value Double
 SET     @value = 6579.6464800000003
 
@@ -59,7 +59,7 @@ FROM
 	[LinqDataTypes] [t1]
 
 BeforeExecute
--- Access.Jet.OleDb AccessOleDb
+-- Access.Jet.OleDb AccessOleDb (asynchronously)
 DECLARE @value VarChar(9, 5) -- AnsiString
 SET     @value = 6579.64648
 
@@ -69,7 +69,7 @@ FROM
 	[LinqDataTypes] [t1]
 
 BeforeExecute
--- Access.Jet.OleDb AccessOleDb
+-- Access.Jet.OleDb AccessOleDb (asynchronously)
 DECLARE @value Single
 SET     @value = 6579.64648
 
@@ -79,7 +79,7 @@ FROM
 	[LinqDataTypes] [t1]
 
 BeforeExecute
--- Access.Jet.OleDb AccessOleDb
+-- Access.Jet.OleDb AccessOleDb (asynchronously)
 DECLARE @value Double
 SET     @value = 6579.6464800000003
 

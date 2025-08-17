@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Access.Jet.OleDb AccessOleDb
+-- Access.Jet.OleDb AccessOleDb (asynchronously)
 DECLARE @FirstName VarWChar(9) -- String
 SET     @FirstName = 'FirstName'
 DECLARE @Gender WChar(1) -- StringFixedLength

@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Access.Jet.Odbc AccessODBC
+-- Access.Jet.Odbc AccessODBC (asynchronously)
 
 SELECT
 	[m_1].[BookId],
@@ -32,7 +32,7 @@ FROM
 		LEFT JOIN [Author] [a_Author] ON ([d].[FkAuthorId] = [a_Author].[AuthorId])
 
 BeforeExecute
--- Access.Jet.Odbc AccessODBC
+-- Access.Jet.Odbc AccessODBC (asynchronously)
 
 SELECT
 	[a_Book].[BookId],
@@ -57,7 +57,7 @@ WHERE
 	)
 
 BeforeExecute
--- Access.Jet.Odbc AccessODBC
+-- Access.Jet.Odbc AccessODBC (asynchronously)
 
 SELECT
 	[m_1].[BookId],
@@ -83,7 +83,7 @@ FROM
 		LEFT JOIN [Author] [a_Author] ON ([d_1].[FkAuthorId] = [a_Author].[AuthorId])
 
 BeforeExecute
--- Access.Jet.Odbc AccessODBC
+-- Access.Jet.Odbc AccessODBC (asynchronously)
 
 SELECT
 	[m_1].[AuthorId],
@@ -98,7 +98,7 @@ FROM
 		LEFT JOIN [Book] [a_Book] ON ([d].[FkBookId] = [a_Book].[BookId])
 
 BeforeExecute
--- Access.Jet.Odbc AccessODBC
+-- Access.Jet.Odbc AccessODBC (asynchronously)
 
 SELECT
 	[t1].[AuthorId],

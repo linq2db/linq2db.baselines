@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Access.Jet.OleDb AccessOleDb
+-- Access.Jet.OleDb AccessOleDb (asynchronously)
 
 SELECT
 	IIF([s].[String] = 'abc', null, [s].[String])
@@ -9,7 +9,7 @@ ORDER BY
 	[s].[Int]
 
 BeforeExecute
--- Access.Jet.OleDb AccessOleDb
+-- Access.Jet.OleDb AccessOleDb (asynchronously)
 
 SELECT
 	IIF([s].[String] = 'xyz', null, [s].[String])
@@ -19,7 +19,7 @@ ORDER BY
 	[s].[Int]
 
 BeforeExecute
--- Access.Jet.OleDb AccessOleDb
+-- Access.Jet.OleDb AccessOleDb (asynchronously)
 
 SELECT
 	IIF([s].[String] = NULL, null, [s].[String])
@@ -29,7 +29,7 @@ ORDER BY
 	[s].[Int]
 
 BeforeExecute
--- Access.Jet.OleDb AccessOleDb
+-- Access.Jet.OleDb AccessOleDb (asynchronously)
 
 SELECT
 	IIF([s].[NullableString] = 'abc', null, [s].[NullableString])
@@ -39,7 +39,7 @@ ORDER BY
 	[s].[Int]
 
 BeforeExecute
--- Access.Jet.OleDb AccessOleDb
+-- Access.Jet.OleDb AccessOleDb (asynchronously)
 
 SELECT
 	IIF([s].[NullableString] = 'xyz', null, [s].[NullableString])
@@ -49,7 +49,7 @@ ORDER BY
 	[s].[Int]
 
 BeforeExecute
--- Access.Jet.OleDb AccessOleDb
+-- Access.Jet.OleDb AccessOleDb (asynchronously)
 
 SELECT
 	IIF([s].[NullableString] = NULL, null, [s].[NullableString])

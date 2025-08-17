@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Access.Jet.OleDb AccessOleDb
+-- Access.Jet.OleDb AccessOleDb (asynchronously)
 
 SELECT TOP 2
 	[p].[FirstName]
@@ -9,7 +9,7 @@ WHERE
 	[p].[PersonID] = 1
 
 BeforeExecute
--- Access.Jet.OleDb AccessOleDb
+-- Access.Jet.OleDb AccessOleDb (asynchronously)
 DECLARE @nameToCheck VarWChar(4) -- String
 SET     @nameToCheck = 'Joh%'
 DECLARE @nameToCheck_1 VarWChar(3) -- String
@@ -24,7 +24,7 @@ WHERE
 	[p].[PersonID] = 1
 
 BeforeExecute
--- Access.Jet.OleDb AccessOleDb
+-- Access.Jet.OleDb AccessOleDb (asynchronously)
 DECLARE @nameToCheck VarWChar(4) -- String
 SET     @nameToCheck = 'Joh%'
 DECLARE @nameToCheck_1 VarWChar(3) -- String
@@ -39,7 +39,7 @@ WHERE
 	[p].[PersonID] = 1
 
 BeforeExecute
--- Access.Jet.OleDb AccessOleDb
+-- Access.Jet.OleDb AccessOleDb (asynchronously)
 DECLARE @nameToCheck VarWChar(4) -- String
 SET     @nameToCheck = 'JOH%'
 DECLARE @nameToCheck_1 VarWChar(3) -- String
@@ -54,7 +54,7 @@ WHERE
 	[p].[PersonID] = 1
 
 BeforeExecute
--- Access.Jet.OleDb AccessOleDb
+-- Access.Jet.OleDb AccessOleDb (asynchronously)
 DECLARE @nameToCheck VarWChar(4) -- String
 SET     @nameToCheck = 'JOH%'
 DECLARE @nameToCheck_1 VarWChar(3) -- String
