@@ -21,48 +21,48 @@ WHERE
 	[t1].[Rank] = 1 AND [t1].[Id] <> 2
 UNION ALL
 SELECT
-	[t2].[ID],
-	[t2].[FirstName]
+	[t3].[ID],
+	[t3].[Name]
 FROM
 	(
 		SELECT TOP (@take)
-			[x].[ID],
-			[x].[FirstName]
+			[t2].[ID],
+			[t2].[Name]
 		FROM
 			(
 				SELECT
 					ROW_NUMBER() OVER(PARTITION BY [p_1].[PersonID] ORDER BY [p_1].[PersonID]) as [Rank],
 					[p_1].[PersonID] as [ID],
-					[p_1].[FirstName]
+					[p_1].[FirstName] as [Name]
 				FROM
 					[Person] [p_1]
-			) [x]
+			) [t2]
 		WHERE
-			[x].[Rank] = 1 AND [x].[ID] = 2
+			[t2].[Rank] = 1 AND [t2].[ID] = 2
 		ORDER BY
-			[x].[FirstName] DESC
-	) [t2]
+			[t2].[Name] DESC
+	) [t3]
 UNION ALL
 SELECT
-	[t3].[ID],
-	[t3].[FirstName]
+	[t5].[ID],
+	[t5].[Name]
 FROM
 	(
 		SELECT TOP (@take_1)
-			[x_1].[ID],
-			[x_1].[FirstName]
+			[t4].[ID],
+			[t4].[Name]
 		FROM
 			(
 				SELECT
 					ROW_NUMBER() OVER(PARTITION BY [p_2].[PersonID] ORDER BY [p_2].[PersonID]) as [Rank],
 					[p_2].[PersonID] as [ID],
-					[p_2].[FirstName]
+					[p_2].[FirstName] as [Name]
 				FROM
 					[Person] [p_2]
-			) [x_1]
+			) [t4]
 		WHERE
-			[x_1].[Rank] = 1 AND [x_1].[ID] <> 3
+			[t4].[Rank] = 1 AND [t4].[ID] <> 3
 		ORDER BY
-			[x_1].[FirstName]
-	) [t3]
+			[t4].[Name]
+	) [t5]
 
