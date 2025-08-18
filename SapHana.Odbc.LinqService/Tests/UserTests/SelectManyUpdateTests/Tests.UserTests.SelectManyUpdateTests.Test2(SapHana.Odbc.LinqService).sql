@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+-- SapHana.Odbc SapHanaOdbc (asynchronously)
 DECLARE @ChildID Int -- Int32
 SET     @ChildID = 10
 

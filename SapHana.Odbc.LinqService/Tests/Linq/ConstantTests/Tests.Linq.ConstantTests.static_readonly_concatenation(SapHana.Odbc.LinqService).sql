@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+-- SapHana.Odbc SapHanaOdbc (asynchronously)
 DECLARE @p NVarChar(9) -- String
 SET     @p = 'StrValue1'
 
@@ -14,7 +14,7 @@ WHERE
 	"e"."StringValue" || '1' = ?
 
 BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+-- SapHana.Odbc SapHanaOdbc (asynchronously)
 
 SELECT
 	"t1"."Id",

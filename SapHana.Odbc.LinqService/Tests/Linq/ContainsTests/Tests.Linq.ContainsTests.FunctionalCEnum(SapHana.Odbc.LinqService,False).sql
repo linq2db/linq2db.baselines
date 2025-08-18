@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+-- SapHana.Odbc SapHanaOdbc (asynchronously)
 DECLARE @In VarChar(12) -- AnsiString
 SET     @In = '___Value3___'
 DECLARE @In VarChar(12) -- AnsiString
@@ -14,7 +14,7 @@ WHERE
 LIMIT 1
 
 BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+-- SapHana.Odbc SapHanaOdbc (asynchronously)
 DECLARE @In VarChar(12) -- AnsiString
 SET     @In = '___Value3___'
 DECLARE @In VarChar -- AnsiString
@@ -29,7 +29,7 @@ WHERE
 LIMIT 1
 
 BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+-- SapHana.Odbc SapHanaOdbc (asynchronously)
 DECLARE @In VarChar(12) -- AnsiString
 SET     @In = '___Value3___'
 DECLARE @In VarChar(12) -- AnsiString
@@ -44,7 +44,7 @@ WHERE
 LIMIT 1
 
 BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+-- SapHana.Odbc SapHanaOdbc (asynchronously)
 DECLARE @NotIn VarChar -- AnsiString
 SET     @NotIn = NULL
 DECLARE @NotIn VarChar(12) -- AnsiString
@@ -59,7 +59,7 @@ WHERE
 LIMIT 1
 
 BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+-- SapHana.Odbc SapHanaOdbc (asynchronously)
 DECLARE @NotIn VarChar(12) -- AnsiString
 SET     @NotIn = '___Value3___'
 DECLARE @NotIn VarChar(12) -- AnsiString

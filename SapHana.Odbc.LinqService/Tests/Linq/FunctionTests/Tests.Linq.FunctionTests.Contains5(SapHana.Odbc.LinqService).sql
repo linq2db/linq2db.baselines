@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+-- SapHana.Odbc SapHanaOdbc (asynchronously)
 
 SELECT
 	"p"."ParentID",
@@ -10,7 +10,7 @@ WHERE
 	"p"."ParentID" IN (1, 2)
 
 BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+-- SapHana.Odbc SapHanaOdbc (asynchronously)
 
 SELECT
 	"p"."ParentID",

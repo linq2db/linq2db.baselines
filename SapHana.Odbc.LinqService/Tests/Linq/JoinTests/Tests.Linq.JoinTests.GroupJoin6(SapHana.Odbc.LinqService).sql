@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+-- SapHana.Odbc SapHanaOdbc (asynchronously)
 DECLARE @n Int -- Int32
 SET     @n = 1
 
@@ -19,7 +19,7 @@ FROM
 		INNER JOIN "Child" "d" ON "m_1"."ParentID" + ? = "d"."ParentID"
 
 BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+-- SapHana.Odbc SapHanaOdbc (asynchronously)
 
 SELECT
 	"p"."ParentID",

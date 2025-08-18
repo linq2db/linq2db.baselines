@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+-- SapHana.Odbc SapHanaOdbc (asynchronously)
 
 SELECT
 	"p"."PersonID",
@@ -15,7 +15,7 @@ FROM
 		) "m_2" ON "p"."PersonID" = "m_2"."c1"
 
 BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+-- SapHana.Odbc SapHanaOdbc (asynchronously)
 
 SELECT
 	"t1"."FirstName",

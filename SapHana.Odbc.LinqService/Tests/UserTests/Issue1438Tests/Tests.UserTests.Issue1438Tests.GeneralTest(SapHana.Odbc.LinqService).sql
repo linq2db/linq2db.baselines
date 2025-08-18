@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+-- SapHana.Odbc SapHanaOdbc (asynchronously)
 DECLARE @Has TinyInt(1) -- Byte
 SET     @Has = 1
 
@@ -13,12 +13,12 @@ VALUES
 )
 
 BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+-- SapHana.Odbc SapHanaOdbc (asynchronously)
 
 SELECT CURRENT_IDENTITY_VALUE() FROM DUMMY
 
 BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+-- SapHana.Odbc SapHanaOdbc (asynchronously)
 DECLARE @id Int -- Int32
 SET     @id = 1
 

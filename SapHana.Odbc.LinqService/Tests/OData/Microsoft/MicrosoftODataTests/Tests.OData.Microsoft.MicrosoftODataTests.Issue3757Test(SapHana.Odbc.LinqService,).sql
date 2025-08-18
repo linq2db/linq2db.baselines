@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+-- SapHana.Odbc SapHanaOdbc (asynchronously)
 
 SELECT
 	"m_1"."ID",
@@ -12,7 +12,7 @@ FROM
 		INNER JOIN "Issue3757Level2" "d" ON "m_1"."ID" = "d"."ParentId"
 
 BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+-- SapHana.Odbc SapHanaOdbc (asynchronously)
 
 SELECT
 	"l1"."ID",

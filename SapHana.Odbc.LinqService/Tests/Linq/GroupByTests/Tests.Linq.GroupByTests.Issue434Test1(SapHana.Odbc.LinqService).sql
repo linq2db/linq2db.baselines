@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+-- SapHana.Odbc SapHanaOdbc (asynchronously)
 DECLARE @input NVarChar(6) -- String
 SET     @input = '%test%'
 
@@ -14,7 +14,7 @@ WHERE
 	Lower("m_1"."FirstName") LIKE ? ESCAPE '~'
 
 BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+-- SapHana.Odbc SapHanaOdbc (asynchronously)
 DECLARE @input NVarChar(6) -- String
 SET     @input = '%test%'
 

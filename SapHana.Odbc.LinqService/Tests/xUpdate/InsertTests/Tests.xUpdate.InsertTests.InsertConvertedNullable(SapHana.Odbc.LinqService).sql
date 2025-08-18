@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+-- SapHana.Odbc SapHanaOdbc (asynchronously)
 
 DELETE FROM
 	"LinqDataTypes" "r"
@@ -7,7 +7,7 @@ WHERE
 	"r"."ID" >= 1000
 
 BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+-- SapHana.Odbc SapHanaOdbc (asynchronously)
 DECLARE @tt BigInt -- Int64
 SET     @tt = 600000000
 
@@ -23,7 +23,7 @@ VALUES
 )
 
 BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+-- SapHana.Odbc SapHanaOdbc (asynchronously)
 
 SELECT
 	"t"."ID",
@@ -35,7 +35,7 @@ WHERE
 LIMIT 1
 
 BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+-- SapHana.Odbc SapHanaOdbc (asynchronously)
 
 DELETE FROM
 	"LinqDataTypes" "r"

@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+-- SapHana.Odbc SapHanaOdbc (asynchronously)
 
 SELECT
 	"arg"."Id",
@@ -10,7 +10,7 @@ FROM
 			SELECT 1 AS "Id", CAST(0 AS Real) AS "Value" FROM DUMMY) "arg" ON "entity"."PersonID" = "arg"."Id"
 
 BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+-- SapHana.Odbc SapHanaOdbc (asynchronously)
 
 SELECT
 	"arg"."Id",

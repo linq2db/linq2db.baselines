@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+-- SapHana.Odbc SapHanaOdbc (asynchronously)
 
 DELETE FROM
 	"LinqDataTypes" "t"
@@ -7,7 +7,7 @@ WHERE
 	"t"."ID" > 1000
 
 BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+-- SapHana.Odbc SapHanaOdbc (asynchronously)
 DECLARE @arr VarBinary(4) -- Binary
 SET     @arr = x'01020304'
 
@@ -25,7 +25,7 @@ VALUES
 )
 
 BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+-- SapHana.Odbc SapHanaOdbc (asynchronously)
 
 SELECT
 	"t"."ID",
@@ -42,7 +42,7 @@ WHERE
 LIMIT 2
 
 BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+-- SapHana.Odbc SapHanaOdbc (asynchronously)
 
 DELETE FROM
 	"LinqDataTypes" "t"

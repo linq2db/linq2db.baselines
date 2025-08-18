@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+-- SapHana.Odbc SapHanaOdbc (asynchronously)
 
 SELECT
 	Add_Days(CURRENT_TIMESTAMP, "t"."Value"),
@@ -15,7 +15,7 @@ SELECT
 FROM DUMMY
 
 BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+-- SapHana.Odbc SapHanaOdbc (asynchronously)
 
 SELECT
 	"v_1"."Value2"

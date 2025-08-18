@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+-- SapHana.Odbc SapHanaOdbc (asynchronously)
 DECLARE @Id Int -- Int32
 SET     @Id = 6
 DECLARE @Title NVarChar(5) -- String
@@ -21,7 +21,7 @@ VALUES
 )
 
 BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+-- SapHana.Odbc SapHanaOdbc (asynchronously)
 
 SELECT
 	"m_1"."Id",
@@ -39,7 +39,7 @@ FROM
 		INNER JOIN "Message" "d" ON "m_1"."Id" = "d"."TopicId"
 
 BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+-- SapHana.Odbc SapHanaOdbc (asynchronously)
 
 SELECT
 	"x"."Id",

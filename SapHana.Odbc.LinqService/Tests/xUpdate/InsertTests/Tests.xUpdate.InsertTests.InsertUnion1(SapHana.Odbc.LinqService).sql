@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+-- SapHana.Odbc SapHanaOdbc (asynchronously)
 
 DELETE FROM
 	"Parent" "p"
@@ -7,7 +7,7 @@ WHERE
 	"p"."ParentID" > 1000
 
 BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+-- SapHana.Odbc SapHanaOdbc (asynchronously)
 
 INSERT INTO "Parent"
 (
@@ -33,7 +33,7 @@ FROM
 	) "t1"
 
 BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+-- SapHana.Odbc SapHanaOdbc (asynchronously)
 
 SELECT
 	COUNT(*)
@@ -43,7 +43,7 @@ WHERE
 	"c_1"."ParentID" > 1000
 
 BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+-- SapHana.Odbc SapHanaOdbc (asynchronously)
 
 DELETE FROM
 	"Parent" "p"

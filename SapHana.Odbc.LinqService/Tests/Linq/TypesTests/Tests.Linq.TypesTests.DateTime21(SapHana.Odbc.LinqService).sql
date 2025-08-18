@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+-- SapHana.Odbc SapHanaOdbc (asynchronously)
 
 SELECT
 	"t"."ID",
@@ -19,7 +19,7 @@ WHERE
 LIMIT 1
 
 BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+-- SapHana.Odbc SapHanaOdbc (asynchronously)
 DECLARE @dt DateTime
 SET     @dt = '2010-12-14 05:00:07.425'
 
@@ -31,7 +31,7 @@ WHERE
 	"t"."ID" = 1
 
 BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+-- SapHana.Odbc SapHanaOdbc (asynchronously)
 
 SELECT
 	"t"."ID",
@@ -51,7 +51,7 @@ WHERE
 LIMIT 1
 
 BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+-- SapHana.Odbc SapHanaOdbc (asynchronously)
 DECLARE @pdt DateTime
 SET     @pdt = '2001-01-11 01:11:21.100'
 

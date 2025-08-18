@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+-- SapHana.Odbc SapHanaOdbc (asynchronously)
 DECLARE @Name NVarChar(6) -- String
 SET     @Name = 'group1'
 DECLARE @Enabled TinyInt(1) -- Byte
@@ -21,7 +21,7 @@ VALUES
 )
 
 BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+-- SapHana.Odbc SapHanaOdbc (asynchronously)
 DECLARE @Name NVarChar(6) -- String
 SET     @Name = 'group1'
 DECLARE @Enabled TinyInt(1) -- Byte
@@ -43,7 +43,7 @@ VALUES
 )
 
 BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+-- SapHana.Odbc SapHanaOdbc (asynchronously)
 DECLARE @Name NVarChar(6) -- String
 SET     @Name = 'group2'
 DECLARE @Enabled TinyInt(1) -- Byte
@@ -65,7 +65,7 @@ VALUES
 )
 
 BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+-- SapHana.Odbc SapHanaOdbc (asynchronously)
 
 SELECT
 	"t1"."Id",

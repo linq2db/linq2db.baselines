@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+-- SapHana.Odbc SapHanaOdbc (asynchronously)
 DECLARE @Value1 Char(36) -- AnsiStringFixedLength
 SET     @Value1 = 'bc7b663d-0fde-4327-8f92-5d8cc3a11d11'
 DECLARE @id Int -- Int32
@@ -13,7 +13,7 @@ WHERE
 	"t1"."Id" = ?
 
 BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+-- SapHana.Odbc SapHanaOdbc (asynchronously)
 DECLARE @id Int -- Int32
 SET     @id = 1
 
@@ -26,7 +26,7 @@ WHERE
 LIMIT 2
 
 BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+-- SapHana.Odbc SapHanaOdbc (asynchronously)
 DECLARE @Value1 Char(36) -- AnsiStringFixedLength
 SET     @Value1 = 'a948600d-de21-4f74-8ac2-9516b287076e'
 DECLARE @id Int -- Int32
@@ -40,7 +40,7 @@ WHERE
 	"t1"."Id" = ?
 
 BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+-- SapHana.Odbc SapHanaOdbc (asynchronously)
 DECLARE @id Int -- Int32
 SET     @id = 1
 

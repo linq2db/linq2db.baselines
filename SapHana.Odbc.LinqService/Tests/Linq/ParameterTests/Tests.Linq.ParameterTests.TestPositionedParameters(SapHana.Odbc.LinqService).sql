@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+-- SapHana.Odbc SapHanaOdbc (asynchronously)
 DECLARE @x3 Int -- Int32
 SET     @x3 = 3
 DECLARE @y10 Int -- Int32

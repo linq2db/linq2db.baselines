@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+-- SapHana.Odbc SapHanaOdbc (asynchronously)
 DECLARE @pattern NVarChar(3) -- String
 SET     @pattern = '%1%'
 DECLARE @take Int -- Int32

@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+-- SapHana.Odbc SapHanaOdbc (asynchronously)
 DECLARE @FirstName NVarChar(18) -- String
 SET     @FirstName = 'UpdateColumnFilter'
 DECLARE @LastName NVarChar(8) -- String
@@ -25,7 +25,7 @@ VALUES
 )
 
 BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+-- SapHana.Odbc SapHanaOdbc (asynchronously)
 DECLARE @FirstName NVarChar(18) -- String
 SET     @FirstName = 'UpdateColumnFilter'
 
@@ -42,7 +42,7 @@ WHERE
 LIMIT 2
 
 BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+-- SapHana.Odbc SapHanaOdbc (asynchronously)
 DECLARE @FirstName NVarChar(25) -- String
 SET     @FirstName = 'UpdateColumnFilterUpdated'
 DECLARE @ID Int -- Int32
@@ -56,7 +56,7 @@ WHERE
 	"t1"."PersonID" = ?
 
 BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+-- SapHana.Odbc SapHanaOdbc (asynchronously)
 DECLARE @ID Int -- Int32
 SET     @ID = 5
 
@@ -73,7 +73,7 @@ WHERE
 LIMIT 2
 
 BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+-- SapHana.Odbc SapHanaOdbc (asynchronously)
 DECLARE @FirstName NVarChar(25) -- String
 SET     @FirstName = 'UpdateColumnFilterUpdated'
 DECLARE @LastName NVarChar(25) -- String
@@ -96,7 +96,7 @@ WHERE
 	"t1"."PersonID" = ?
 
 BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+-- SapHana.Odbc SapHanaOdbc (asynchronously)
 DECLARE @ID Int -- Int32
 SET     @ID = 5
 

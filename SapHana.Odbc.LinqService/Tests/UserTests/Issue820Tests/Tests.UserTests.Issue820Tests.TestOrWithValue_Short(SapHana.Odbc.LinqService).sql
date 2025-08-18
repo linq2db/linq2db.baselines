@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+-- SapHana.Odbc SapHanaOdbc (asynchronously)
 
 SELECT
 	COUNT(*)
@@ -7,7 +7,7 @@ FROM
 	"LinqDataTypes" "t1"
 
 BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+-- SapHana.Odbc SapHanaOdbc (asynchronously)
 DECLARE @param SmallInt -- Int16
 SET     @param = 1
 
@@ -28,7 +28,7 @@ WHERE
 	? = "t1"."SmallIntValue"
 
 BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+-- SapHana.Odbc SapHanaOdbc (asynchronously)
 
 SELECT
 	"t1"."ID",

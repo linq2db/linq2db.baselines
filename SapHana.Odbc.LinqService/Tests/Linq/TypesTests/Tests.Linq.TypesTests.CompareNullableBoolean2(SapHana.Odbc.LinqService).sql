@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+-- SapHana.Odbc SapHanaOdbc (asynchronously)
 
 SELECT
 	"t1"."ID",
@@ -15,7 +15,7 @@ FROM
 		INNER JOIN "LinqDataTypes" "t2" ON "t1"."ID" = "t2"."ID"
 
 BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+-- SapHana.Odbc SapHanaOdbc (asynchronously)
 DECLARE @param2 TinyInt(1) -- Byte
 SET     @param2 = 0
 

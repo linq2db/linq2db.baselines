@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+-- SapHana.Odbc SapHanaOdbc (asynchronously)
 
 /* My Test */
 UPDATE
@@ -10,7 +10,7 @@ WHERE
 	"t1"."Id" = 1
 
 BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+-- SapHana.Odbc SapHanaOdbc (asynchronously)
 
 /* My Test */
 INSERT INTO "TestTable"

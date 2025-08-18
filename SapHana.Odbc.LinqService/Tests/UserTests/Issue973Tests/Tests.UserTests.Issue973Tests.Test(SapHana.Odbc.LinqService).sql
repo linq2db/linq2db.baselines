@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+-- SapHana.Odbc SapHanaOdbc (asynchronously)
 DECLARE @p Int -- Int32
 SET     @p = 1
 DECLARE @p Int -- Int32
@@ -18,7 +18,7 @@ WHERE
 	"o"."ParentID" IN (?, ?, ?) OR "o"."ParentID" = ?
 
 BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+-- SapHana.Odbc SapHanaOdbc (asynchronously)
 DECLARE @param Int -- Int32
 SET     @param = 4
 
@@ -32,7 +32,7 @@ WHERE
 	"o"."ParentID" = ?
 
 BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+-- SapHana.Odbc SapHanaOdbc (asynchronously)
 DECLARE @p Int -- Int32
 SET     @p = 4
 DECLARE @p Int -- Int32
@@ -51,7 +51,7 @@ WHERE
 	"o"."ParentID" IN (?, ?, ?) OR "o"."ParentID" = ?
 
 BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+-- SapHana.Odbc SapHanaOdbc (asynchronously)
 DECLARE @param Int -- Int32
 SET     @param = 4
 

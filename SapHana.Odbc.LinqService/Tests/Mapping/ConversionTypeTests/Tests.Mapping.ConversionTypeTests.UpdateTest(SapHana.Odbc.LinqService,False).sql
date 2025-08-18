@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+-- SapHana.Odbc SapHanaOdbc (asynchronously)
 DECLARE @Data NVarChar(9) -- String
 SET     @Data = '***III***'
 DECLARE @ID Int -- Int32
@@ -13,7 +13,7 @@ WHERE
 	"t1"."ID" = ?
 
 BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+-- SapHana.Odbc SapHanaOdbc (asynchronously)
 DECLARE @Data NVarChar(9) -- String
 SET     @Data = '***OOO***'
 
@@ -25,7 +25,7 @@ WHERE
 	"t"."Data" = '***XXX***'
 
 BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+-- SapHana.Odbc SapHanaOdbc (asynchronously)
 DECLARE @Data NVarChar(9) -- String
 SET     @Data = '***SSS***'
 DECLARE @p NVarChar(9) -- String
@@ -39,7 +39,7 @@ WHERE
 	"t"."Data" = ?
 
 BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+-- SapHana.Odbc SapHanaOdbc (asynchronously)
 
 SELECT
 	"r"."ID",
@@ -50,7 +50,7 @@ ORDER BY
 	"r"."ID"
 
 BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+-- SapHana.Odbc SapHanaOdbc (asynchronously)
 
 SELECT
 	"r"."ID",
