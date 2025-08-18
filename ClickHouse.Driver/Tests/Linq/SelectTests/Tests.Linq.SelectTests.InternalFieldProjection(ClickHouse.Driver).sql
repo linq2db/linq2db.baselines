@@ -2,12 +2,12 @@
 -- ClickHouse.Driver ClickHouse
 
 SELECT
-	x.ID,
-	x.StringValue
+	t.ID,
+	t.StringValue
 FROM
-	LinqDataTypes x
+	LinqDataTypes t
 WHERE
-	x.StringValue <> '' OR x.StringValue IS NULL
+	t.StringValue <> '' OR t.StringValue IS NULL
 ORDER BY
-	x.ID
+	t.ID
 
