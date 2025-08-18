@@ -2,9 +2,9 @@
 -- Oracle.19.Managed Oracle.Managed Oracle12
 
 SELECT
-	s."FirstName",
-	s."LastName",
-	s."FullName"
+	t1."FirstName",
+	t1."LastName",
+	t1."FullName"
 FROM
 	(
 		SELECT
@@ -13,13 +13,13 @@ FROM
 			(((p."LastName" || ', ' || p."FirstName") || ' (' || Coalesce(p."MiddleName", '')) || ' + ' || Coalesce(p."MiddleName", '')) || ')' as "FullName"
 		FROM
 			"Person" p
-	) s
+	) t1
 WHERE
-	s."FirstName" IS NOT NULL OR s."LastName" IS NOT NULL OR
-	s."FullName" IS NOT NULL
+	t1."FirstName" IS NOT NULL OR t1."LastName" IS NOT NULL OR
+	t1."FullName" IS NOT NULL
 ORDER BY
-	s."FirstName",
-	s."LastName"
+	t1."FirstName",
+	t1."LastName"
 
 BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12
