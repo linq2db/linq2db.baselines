@@ -2,9 +2,9 @@
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 
 SELECT
-	`s`.`FirstName`,
-	`s`.`LastName`,
-	`s`.`FullName`
+	`t1`.`FirstName`,
+	`t1`.`LastName`,
+	`t1`.`FullName`
 FROM
 	(
 		SELECT
@@ -13,12 +13,13 @@ FROM
 			Concat(`p`.`LastName`, ', ', `p`.`FirstName`, ' (', Coalesce(`p`.`MiddleName`, ''), ' + ', Coalesce(`p`.`MiddleName`, ''), ')') as `FullName`
 		FROM
 			`Person` `p`
-	) `s`
+	) `t1`
 WHERE
-	`s`.`FirstName` <> '' OR `s`.`LastName` <> '' OR `s`.`FullName` <> ''
+	`t1`.`FirstName` <> '' OR `t1`.`LastName` <> '' OR
+	`t1`.`FullName` <> ''
 ORDER BY
-	`s`.`FirstName`,
-	`s`.`LastName`
+	`t1`.`FirstName`,
+	`t1`.`LastName`
 
 BeforeExecute
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
