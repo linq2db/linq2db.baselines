@@ -195,8 +195,6 @@ FROM
 	`Parent`
 WHERE
 	`Parent`.`ParentID` > 1000
-ORDER BY
-	`Parent`.`ParentID` DESC
 
 BeforeExecute
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql
