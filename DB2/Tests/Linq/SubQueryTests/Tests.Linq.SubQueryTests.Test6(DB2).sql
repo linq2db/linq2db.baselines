@@ -27,5 +27,6 @@ FROM
 WHERE
 	"c_1"."ParentID" = @id
 ORDER BY
-	"c_1"."ParentID" DESC
+	"c_1"."ParentID" DESC,
+	"c_1"."ChildID"
 
