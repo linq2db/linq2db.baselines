@@ -4,7 +4,7 @@
 INSERT INTO [Issue3323Table]
 (
 	[Id],
-	[FistName],
+	[FirstName],
 	[LastName],
 	[Text]
 )
@@ -21,7 +21,7 @@ BeforeExecute
 
 SELECT
 	[r].[Id],
-	[r].[FistName] || ' ' || [r].[LastName]
+	[r].[FirstName] || ' ' || [r].[LastName]
 FROM
 	[Issue3323Table] [r]
 UNION ALL
@@ -42,7 +42,7 @@ FROM
 UNION ALL
 SELECT
 	[r_1].[Id],
-	[r_1].[FistName] || ' ' || [r_1].[LastName]
+	[r_1].[FirstName] || ' ' || [r_1].[LastName]
 FROM
 	[Issue3323Table] [r_1]
 
