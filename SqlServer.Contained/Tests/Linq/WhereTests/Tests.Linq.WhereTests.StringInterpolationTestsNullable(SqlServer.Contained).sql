@@ -2,9 +2,9 @@
 -- SqlServer.Contained SqlServer.2019
 
 SELECT
-	[s].[FirstName],
-	[s].[LastName],
-	[s].[FullName]
+	[t1].[FirstName],
+	[t1].[LastName],
+	[t1].[FullName]
 FROM
 	(
 		SELECT
@@ -13,13 +13,13 @@ FROM
 			((([p].[LastName] + N', ' + [p].[FirstName]) + N' (' + Coalesce([p].[MiddleName], N'')) + N' + ' + Coalesce([p].[MiddleName], N'')) + N')' as [FullName]
 		FROM
 			[Person] [p]
-	) [s]
+	) [t1]
 WHERE
-	[s].[FirstName] <> N'' OR [s].[LastName] <> N'' OR
-	[s].[FullName] <> N''
+	[t1].[FirstName] <> N'' OR [t1].[LastName] <> N'' OR
+	[t1].[FullName] <> N''
 ORDER BY
-	[s].[FirstName],
-	[s].[LastName]
+	[t1].[FirstName],
+	[t1].[LastName]
 
 BeforeExecute
 -- SqlServer.Contained SqlServer.2019

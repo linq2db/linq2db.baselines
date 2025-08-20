@@ -195,8 +195,6 @@ FROM
 	`Parent`
 WHERE
 	`Parent`.`ParentID` > 1000
-ORDER BY
-	`Parent`.`ParentID` DESC
 
 BeforeExecute
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80

@@ -193,8 +193,6 @@ DELETE FROM
 	"Parent" "x"
 WHERE
 	"x"."ParentID" > 1000
-ORDER BY
-	"x"."ParentID" DESC
 
 BeforeExecute
 -- Firebird.4 Firebird4

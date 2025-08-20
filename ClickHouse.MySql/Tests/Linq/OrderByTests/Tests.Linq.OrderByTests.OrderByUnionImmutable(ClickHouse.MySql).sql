@@ -8,16 +8,16 @@ SELECT
 FROM
 	(
 		SELECT
+			toInt32(1) as OrderElement,
 			ch.ChildID as ChildID,
-			ch.ParentID as ParentID,
-			toInt32(1) as OrderElement
+			ch.ParentID as ParentID
 		FROM
 			Child ch
 		UNION ALL
 		SELECT
+			toInt32(2) as OrderElement,
 			ch_1.ChildID as ChildID,
-			ch_1.ParentID as ParentID,
-			toInt32(2) as OrderElement
+			ch_1.ParentID as ParentID
 		FROM
 			Child ch_1
 	) t1

@@ -2,11 +2,11 @@
 -- Oracle.12.Managed Oracle.Managed Oracle12
 
 SELECT
-	p_1."FirstName",
-	p_1.ID,
-	p_1."LastName",
-	p_1."MiddleName",
-	p_1."Gender"
+	t1."FirstName",
+	t1.ID,
+	t1."LastName",
+	t1."MiddleName",
+	t1."Gender"
 FROM
 	(
 		SELECT
@@ -21,9 +21,9 @@ FROM
 			p."Gender"
 		FROM
 			"Person" p
-	) p_1
+	) t1
 WHERE
-	p_1."Field1" = 1
+	t1."Field1" = 1
 ORDER BY
-	p_1."Field1"
+	t1."Field1"
 

@@ -4,13 +4,13 @@
 SELECT
 	[t1].[Rank],
 	[t1].[FirstName],
-	[t1].[FirstName_1]
+	[t1].[LastName]
 FROM
 	(
 		SELECT
 			CAST(0 AS Int) as [Rank],
 			NULL as [FirstName],
-			NULL as [FirstName_1]
+			NULL as [LastName]
 		FROM
 			[Person] [p]
 		WHERE
@@ -19,12 +19,12 @@ FROM
 		SELECT
 			[p_1].[PersonID] as [Rank],
 			[p_1].[FirstName],
-			[p_1].[LastName] as [FirstName_1]
+			[p_1].[LastName]
 		FROM
 			[Person] [p_1]
 	) [t1]
 ORDER BY
 	[t1].[Rank],
 	[t1].[FirstName],
-	[t1].[FirstName_1]
+	[t1].[LastName]
 

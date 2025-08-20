@@ -61,14 +61,14 @@ SELECT
 FROM
 	(
 		SELECT
-			t1.ParentID as ParentID,
-			t1.ChildID as ChildID
+			t1.ChildID as ChildID,
+			t1.ParentID as ParentID
 		FROM
 			Child t1
 		UNION ALL
 		SELECT
-			t2.ParentID as ParentID,
-			t2.ChildID as ChildID
+			t2.ChildID as ChildID,
+			t2.ParentID as ParentID
 		FROM
 			Child t2
 	) t3

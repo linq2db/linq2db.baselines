@@ -17,50 +17,50 @@ WHERE
 	t1.Rank = toInt64(1) AND t1.Id <> 2
 UNION ALL
 SELECT
-	t2.ID as Id,
-	t2.FirstName as Name
+	t3.ID as Id,
+	t3.Name as Name
 FROM
 	(
 		SELECT
-			x.ID as ID,
-			x.FirstName as FirstName
+			t2.ID as ID,
+			t2.Name as Name
 		FROM
 			(
 				SELECT
 					ROW_NUMBER() OVER(PARTITION BY p_1.PersonID ORDER BY p_1.PersonID) as Rank,
 					p_1.PersonID as ID,
-					p_1.FirstName as FirstName
+					p_1.FirstName as Name
 				FROM
 					Person p_1
-			) x
+			) t2
 		WHERE
-			x.Rank = toInt64(1) AND x.ID = 2
+			t2.Rank = toInt64(1) AND t2.ID = 2
 		ORDER BY
-			x.FirstName DESC
+			t2.Name DESC
 		LIMIT 1
-	) t2
+	) t3
 UNION ALL
 SELECT
-	t3.ID as Id,
-	t3.FirstName as Name
+	t5.ID as Id,
+	t5.Name as Name
 FROM
 	(
 		SELECT
-			x_1.ID as ID,
-			x_1.FirstName as FirstName
+			t4.ID as ID,
+			t4.Name as Name
 		FROM
 			(
 				SELECT
 					ROW_NUMBER() OVER(PARTITION BY p_2.PersonID ORDER BY p_2.PersonID) as Rank,
 					p_2.PersonID as ID,
-					p_2.FirstName as FirstName
+					p_2.FirstName as Name
 				FROM
 					Person p_2
-			) x_1
+			) t4
 		WHERE
-			x_1.Rank = toInt64(1) AND x_1.ID <> 3
+			t4.Rank = toInt64(1) AND t4.ID <> 3
 		ORDER BY
-			x_1.FirstName
+			t4.Name
 		LIMIT 1
-	) t3
+	) t5
 

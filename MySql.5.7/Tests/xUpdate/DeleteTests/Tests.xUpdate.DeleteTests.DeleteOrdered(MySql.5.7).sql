@@ -195,8 +195,6 @@ FROM
 	`Parent`
 WHERE
 	`Parent`.`ParentID` > 1000
-ORDER BY
-	`Parent`.`ParentID` DESC
 
 BeforeExecute
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57

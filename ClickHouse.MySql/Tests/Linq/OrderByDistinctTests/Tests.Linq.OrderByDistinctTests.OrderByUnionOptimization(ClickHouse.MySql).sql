@@ -6,8 +6,8 @@ SELECT DISTINCT
 FROM
 	(
 		SELECT
-			x_2.Id as Id,
 			x_2.DuplicateData as DuplicateData,
+			x_2.Id as Id,
 			x_2.OrderData1 as OrderData1,
 			x_2.OrderData2 as OrderData2
 		FROM
@@ -34,8 +34,8 @@ FROM
 			) x_2
 		UNION DISTINCT
 		SELECT
-			x_3.Id as Id,
 			x_3.DuplicateData as DuplicateData,
+			x_3.Id as Id,
 			x_3.OrderData1 as OrderData1,
 			x_3.OrderData2 as OrderData2
 		FROM

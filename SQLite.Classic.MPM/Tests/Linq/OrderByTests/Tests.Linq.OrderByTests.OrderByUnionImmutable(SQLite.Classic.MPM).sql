@@ -12,16 +12,16 @@ SELECT
 FROM
 	(
 		SELECT
+			@p as [OrderElement],
 			[ch].[ChildID],
-			[ch].[ParentID],
-			@p as [OrderElement]
+			[ch].[ParentID]
 		FROM
 			[Child] [ch]
 		UNION ALL
 		SELECT
+			@param as [OrderElement],
 			[ch_1].[ChildID],
-			[ch_1].[ParentID],
-			@param as [OrderElement]
+			[ch_1].[ParentID]
 		FROM
 			[Child] [ch_1]
 	) [t1]

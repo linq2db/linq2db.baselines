@@ -66,15 +66,15 @@ FROM
 	) [m_2]
 		CROSS APPLY (
 			SELECT TOP (2)
-				[e].[Value] as [Value_1],
-				[e].[Id],
-				[e].[ParentId]
+				[i].[Value] as [Value_1],
+				[i].[Id],
+				[i].[ParentId]
 			FROM
-				[SubItem1] [e]
+				[SubItem1] [i]
 			WHERE
-				[m_2].[Id] = [e].[ParentId] AND [e].[ParentId] % 2 = 0
+				[m_2].[Id] = [i].[ParentId] AND [i].[ParentId] % 2 = 0
 			ORDER BY
-				[e].[Id]
+				[i].[Id]
 		) [d]
 WHERE
 	[d].[Value_1] LIKE N'Sub1~_%' ESCAPE N'~'
@@ -124,16 +124,16 @@ FROM
 	) [m_2]
 		CROSS APPLY (
 			SELECT TOP (2)
-				[e].[Value] as [Value_1],
-				[e].[Id],
-				[e].[ParentId]
+				[i].[Value] as [Value_1],
+				[i].[Id],
+				[i].[ParentId]
 			FROM
-				[SubItem2] [e]
+				[SubItem2] [i]
 			WHERE
-				([m_2].[cond] = [e].[ParentId] OR [m_2].[cond] IS NULL AND [e].[ParentId] IS NULL) AND
-				[e].[ParentId] % 2 = 0
+				([m_2].[cond] = [i].[ParentId] OR [m_2].[cond] IS NULL AND [i].[ParentId] IS NULL) AND
+				[i].[ParentId] % 2 = 0
 			ORDER BY
-				[e].[Id]
+				[i].[Id]
 		) [d_1]
 WHERE
 	[d_1].[Value_1] LIKE N'Sub2~_%' ESCAPE N'~'
@@ -205,16 +205,16 @@ FROM
 	) [m_2]
 		CROSS APPLY (
 			SELECT TOP (2)
-				[e].[Value] as [Value_1],
-				[e].[Id],
-				[e].[ParentId]
+				[i].[Value] as [Value_1],
+				[i].[Id],
+				[i].[ParentId]
 			FROM
-				[SubItem2] [e]
+				[SubItem2] [i]
 			WHERE
-				([m_2].[cond] = [e].[ParentId] OR [m_2].[cond] IS NULL AND [e].[ParentId] IS NULL) AND
-				[e].[ParentId] % 2 = 0
+				([m_2].[cond] = [i].[ParentId] OR [m_2].[cond] IS NULL AND [i].[ParentId] IS NULL) AND
+				[i].[ParentId] % 2 = 0
 			ORDER BY
-				[e].[Id]
+				[i].[Id]
 		) [d_1]
 WHERE
 	[d_1].[Value_1] LIKE N'Sub2~_%' ESCAPE N'~'
