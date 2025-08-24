@@ -1,0 +1,5 @@
+﻿BeforeExecute
+-- SQLite.MS SQLite (asynchronously)
+
+INSERT INTO [FTS3_TABLE]([FTS3_TABLE]) VALUES('rebuild')
+
