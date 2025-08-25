@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MySql (asynchronously)
 
 DELETE  
 FROM
@@ -8,7 +8,7 @@ WHERE
 	`Person`.`FirstName` LIKE 'Insert15%' ESCAPE '~'
 
 BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MySql (asynchronously)
 DECLARE @Gender String(1) -- StringFixedLength
 SET     @Gender = 'M'
 DECLARE @Name_FirstName VarChar(8) -- String
@@ -34,7 +34,7 @@ VALUES
 )
 
 BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MySql (asynchronously)
 
 SELECT
 	COUNT(*)
@@ -44,7 +44,7 @@ WHERE
 	`t1`.`FirstName` LIKE 'Insert15%' ESCAPE '~'
 
 BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MySql (asynchronously)
 
 DELETE  
 FROM

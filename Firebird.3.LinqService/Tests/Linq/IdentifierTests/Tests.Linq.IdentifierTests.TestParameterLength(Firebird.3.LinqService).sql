@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Firebird.3 Firebird3
+-- Firebird.3 Firebird3 (asynchronously)
 DECLARE @A123456789b123456789c123456789d123456789e123456789 Integer -- Int32
 SET     @A123456789b123456789c123456789d123456789e123456789 = 2
 

@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Access.Jet.Odbc AccessODBC
+-- Access.Jet.Odbc AccessODBC (asynchronously)
 
 INSERT INTO [InsertIssueTest]
 (
@@ -21,7 +21,7 @@ FROM
 	) [t2]
 
 BeforeExecute
--- Access.Jet.Odbc AccessODBC
+-- Access.Jet.Odbc AccessODBC (asynchronously)
 DECLARE @cond SmallInt -- Int16
 SET     @cond = 1234
 
@@ -45,7 +45,7 @@ FROM
 	) [t2]
 
 BeforeExecute
--- Access.Jet.Odbc AccessODBC
+-- Access.Jet.Odbc AccessODBC (asynchronously)
 
 SELECT
 	[t1].[ID],

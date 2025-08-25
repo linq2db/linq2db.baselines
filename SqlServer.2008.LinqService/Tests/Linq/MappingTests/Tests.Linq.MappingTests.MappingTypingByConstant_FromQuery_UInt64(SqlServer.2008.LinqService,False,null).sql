@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2008
+-- SqlServer.2008 (asynchronously)
 DECLARE @value Decimal
 SET     @value = NULL
 
@@ -16,7 +16,7 @@ FROM
 	) [t1]
 
 BeforeExecute
--- SqlServer.2008
+-- SqlServer.2008 (asynchronously)
 DECLARE @value Decimal
 SET     @value = 2147483648
 

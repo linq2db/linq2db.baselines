@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2016.MS SqlServer.2016
+-- SqlServer.2016.MS SqlServer.2016 (asynchronously)
 
 SELECT
 	[m_1].[Id],
@@ -11,7 +11,7 @@ FROM
 		INNER JOIN [LineEntity] [d] ON [m_1].[Id] = [d].[TransactionId]
 
 BeforeExecute
--- SqlServer.2016.MS SqlServer.2016
+-- SqlServer.2016.MS SqlServer.2016 (asynchronously)
 
 SELECT
 	[x].[Id],

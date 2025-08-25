@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Access.Jet.Odbc AccessODBC
+-- Access.Jet.Odbc AccessODBC (asynchronously)
 
 SELECT TOP 1
 	[x].[Id],
@@ -10,7 +10,7 @@ WHERE
 	[x].[Id] = 1
 
 BeforeExecute
--- Access.Jet.Odbc AccessODBC
+-- Access.Jet.Odbc AccessODBC (asynchronously)
 
 SELECT TOP 1
 	[x].[Id],

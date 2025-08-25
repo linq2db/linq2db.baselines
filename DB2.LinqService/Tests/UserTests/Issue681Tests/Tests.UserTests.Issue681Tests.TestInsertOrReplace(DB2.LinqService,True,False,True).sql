@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- DB2 DB2.LUW DB2LUW
+-- DB2 DB2.LUW DB2LUW (asynchronously)
 
 SELECT
 	current schema
@@ -8,7 +8,7 @@ FROM
 FETCH NEXT 1 ROWS ONLY
 
 BeforeExecute
--- DB2 DB2.LUW DB2LUW
+-- DB2 DB2.LUW DB2LUW (asynchronously)
 DECLARE @ID Integer(4) -- Int32
 SET     @ID = 5
 DECLARE @Value Integer(4) -- Int32
@@ -36,7 +36,7 @@ WHEN NOT MATCHED THEN
 	)
 
 BeforeExecute
--- DB2 DB2.LUW DB2LUW
+-- DB2 DB2.LUW DB2LUW (asynchronously)
 DECLARE @ID Integer(4) -- Int32
 SET     @ID = 5
 DECLARE @Value Integer(4) -- Int32

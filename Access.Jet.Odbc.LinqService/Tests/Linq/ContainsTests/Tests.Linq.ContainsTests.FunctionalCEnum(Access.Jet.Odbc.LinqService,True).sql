@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Access.Jet.Odbc AccessODBC
+-- Access.Jet.Odbc AccessODBC (asynchronously)
 DECLARE @In VarChar(12) -- AnsiString
 SET     @In = '___Value3___'
 DECLARE @In VarChar(12) -- AnsiString
@@ -13,7 +13,7 @@ WHERE
 	[s].[CEnum] IN (?, ?)
 
 BeforeExecute
--- Access.Jet.Odbc AccessODBC
+-- Access.Jet.Odbc AccessODBC (asynchronously)
 DECLARE @In VarChar(12) -- AnsiString
 SET     @In = '___Value3___'
 
@@ -25,7 +25,7 @@ WHERE
 	([s].[CEnum] IN (?) OR [s].[CEnum] IS NULL)
 
 BeforeExecute
--- Access.Jet.Odbc AccessODBC
+-- Access.Jet.Odbc AccessODBC (asynchronously)
 DECLARE @In VarChar(12) -- AnsiString
 SET     @In = '___Value3___'
 DECLARE @In VarChar(12) -- AnsiString
@@ -39,7 +39,7 @@ WHERE
 	[s].[CEnum] IN (?, ?)
 
 BeforeExecute
--- Access.Jet.Odbc AccessODBC
+-- Access.Jet.Odbc AccessODBC (asynchronously)
 DECLARE @NotIn VarChar(12) -- AnsiString
 SET     @NotIn = '___Value2___'
 
@@ -51,7 +51,7 @@ WHERE
 	([s].[CEnum] NOT IN (?) AND [s].[CEnum] IS NOT NULL)
 
 BeforeExecute
--- Access.Jet.Odbc AccessODBC
+-- Access.Jet.Odbc AccessODBC (asynchronously)
 DECLARE @NotIn VarChar(12) -- AnsiString
 SET     @NotIn = '___Value3___'
 DECLARE @NotIn VarChar(12) -- AnsiString

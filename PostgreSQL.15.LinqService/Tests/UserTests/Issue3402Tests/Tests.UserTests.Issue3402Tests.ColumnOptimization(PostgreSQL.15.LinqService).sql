@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- PostgreSQL.15 PostgreSQL
+-- PostgreSQL.15 PostgreSQL (asynchronously)
 
 SELECT
 	ess."ID"
@@ -16,7 +16,7 @@ WHERE
 	)
 
 BeforeExecute
--- PostgreSQL.15 PostgreSQL
+-- PostgreSQL.15 PostgreSQL (asynchronously)
 
 SELECT
 	ess."ID"

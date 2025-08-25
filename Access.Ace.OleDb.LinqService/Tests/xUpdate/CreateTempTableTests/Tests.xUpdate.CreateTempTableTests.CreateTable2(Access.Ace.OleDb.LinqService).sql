@@ -1,10 +1,10 @@
 ﻿BeforeExecute
--- Access.Ace.OleDb AccessOleDb
+-- Access.Ace.OleDb AccessOleDb (asynchronously)
 
 DROP TABLE [TempTable]
 
 BeforeExecute
--- Access.Ace.OleDb AccessOleDb
+-- Access.Ace.OleDb AccessOleDb (asynchronously)
 
 CREATE TABLE [TempTable]
 (
@@ -12,7 +12,7 @@ CREATE TABLE [TempTable]
 )
 
 BeforeExecute
--- Access.Ace.OleDb AccessOleDb
+-- Access.Ace.OleDb AccessOleDb (asynchronously)
 
 INSERT INTO [TempTable]
 (
@@ -24,7 +24,7 @@ FROM
 	[Parent] [p]
 
 BeforeExecute
--- Access.Ace.OleDb AccessOleDb
+-- Access.Ace.OleDb AccessOleDb (asynchronously)
 
 SELECT
 	[t].[ID]
@@ -33,7 +33,7 @@ FROM
 		INNER JOIN [TempTable] [t] ON ([p].[ParentID] = [t].[ID])
 
 BeforeExecute
--- Access.Ace.OleDb AccessOleDb
+-- Access.Ace.OleDb AccessOleDb (asynchronously)
 
 DROP TABLE [TempTable]
 

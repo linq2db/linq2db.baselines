@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2012
+-- SqlServer.2012 (asynchronously)
 
 SELECT
 	[g_1].[GroupId],
@@ -18,7 +18,7 @@ GROUP BY
 	[g_1].[GroupId]
 
 BeforeExecute
--- SqlServer.2012
+-- SqlServer.2012 (asynchronously)
 
 SELECT
 	[t1].[GroupId],

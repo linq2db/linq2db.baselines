@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- DB2 DB2.LUW DB2LUW
+-- DB2 DB2.LUW DB2LUW (asynchronously)
 DECLARE @code Integer(4) -- Int32
 SET     @code = 1
 DECLARE @site Integer(4) -- Int32

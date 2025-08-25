@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- ClickHouse.MySql ClickHouse
+-- ClickHouse.MySql ClickHouse (asynchronously)
 
 SELECT
 	m_2.ParentID,
@@ -22,7 +22,7 @@ ORDER BY
 	m_2.ChildID DESC
 
 BeforeExecute
--- ClickHouse.MySql ClickHouse
+-- ClickHouse.MySql ClickHouse (asynchronously)
 
 SELECT
 	m_2.ParentID,

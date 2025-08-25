@@ -4,7 +4,7 @@
 DROP TABLE "FluentTemp"
 
 BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+-- SapHana.Odbc SapHanaOdbc (asynchronously)
 
 CREATE COLUMN TABLE "FluentTemp"
 (
@@ -15,7 +15,7 @@ CREATE COLUMN TABLE "FluentTemp"
 )
 
 BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+-- SapHana.Odbc SapHanaOdbc (asynchronously)
 DECLARE @ID Int -- Int32
 SET     @ID = 1
 DECLARE @Name NVarChar(4) -- String

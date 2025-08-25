@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2017
+-- SqlServer.2017 (asynchronously)
 
 SELECT
 	[m_1].[ParentID],
@@ -16,7 +16,7 @@ FROM
 		INNER JOIN [Parent] [d] ON [d].[ParentID] = [m_1].[ParentID]
 
 BeforeExecute
--- SqlServer.2017
+-- SqlServer.2017 (asynchronously)
 
 SELECT
 	[a_Parent].[ParentID]

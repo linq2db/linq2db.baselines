@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2012.MS SqlServer.2012
+-- SqlServer.2012.MS SqlServer.2012 (asynchronously)
 
 SELECT
 	[m_1].[ParentID],
@@ -18,7 +18,7 @@ FROM
 		LEFT JOIN [Parent] [a_Parent] ON [d].[ParentID] = [a_Parent].[ParentID]
 
 BeforeExecute
--- SqlServer.2012.MS SqlServer.2012
+-- SqlServer.2012.MS SqlServer.2012 (asynchronously)
 
 SELECT TOP (1)
 	[t].[ParentID],

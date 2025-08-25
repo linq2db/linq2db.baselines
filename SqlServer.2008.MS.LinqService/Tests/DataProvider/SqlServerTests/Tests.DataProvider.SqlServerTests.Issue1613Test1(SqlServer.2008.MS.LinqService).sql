@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2008.MS SqlServer.2008
+-- SqlServer.2008.MS SqlServer.2008 (asynchronously)
 
 SELECT
 	[g_1].[dt]
@@ -9,7 +9,7 @@ GROUP BY
 	[g_1].[dt]
 
 BeforeExecute
--- SqlServer.2008.MS SqlServer.2008
+-- SqlServer.2008.MS SqlServer.2008 (asynchronously)
 
 SELECT
 	[r].[dt]

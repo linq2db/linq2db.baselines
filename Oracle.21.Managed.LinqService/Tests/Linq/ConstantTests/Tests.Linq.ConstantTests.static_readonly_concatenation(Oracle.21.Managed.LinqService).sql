@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Oracle.21.Managed Oracle.Managed Oracle12
+-- Oracle.21.Managed Oracle.Managed Oracle12 (asynchronously)
 DECLARE @p Varchar2(9) -- String
 SET     @p = 'StrValue1'
 
@@ -14,7 +14,7 @@ WHERE
 	e."StringValue" || '1' = :p
 
 BeforeExecute
--- Oracle.21.Managed Oracle.Managed Oracle12
+-- Oracle.21.Managed Oracle.Managed Oracle12 (asynchronously)
 
 SELECT
 	t1."Id",

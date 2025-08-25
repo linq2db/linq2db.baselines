@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
+-- SQLite.Classic.MPU SQLite.Classic SQLite (asynchronously)
 
 SELECT
 	[g_2].[ChildId],
@@ -18,7 +18,7 @@ GROUP BY
 	[g_2].[ParentId]
 
 BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
+-- SQLite.Classic.MPU SQLite.Classic SQLite (asynchronously)
 
 SELECT
 	[t1].[ParentID],

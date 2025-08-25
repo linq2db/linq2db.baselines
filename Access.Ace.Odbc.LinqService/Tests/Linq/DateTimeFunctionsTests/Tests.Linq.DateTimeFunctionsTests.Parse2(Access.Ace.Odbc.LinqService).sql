@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Access.Ace.Odbc AccessODBC
+-- Access.Ace.Odbc AccessODBC (asynchronously)
 
 SELECT
 	CDate(CStr(DatePart('yyyy', [d].[DateTimeValue])) + '-02-24 00:00:00')

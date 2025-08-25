@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- ClickHouse.MySql ClickHouse
+-- ClickHouse.MySql ClickHouse (asynchronously)
 
 SELECT
 	b_1.Date_1,

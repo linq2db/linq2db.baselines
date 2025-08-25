@@ -1,10 +1,10 @@
 ﻿BeforeExecute
--- SqlServer.2016.MS SqlServer.2016
+-- SqlServer.2016.MS SqlServer.2016 (asynchronously)
 
 DROP TABLE IF EXISTS [xxPerson]
 
 BeforeExecute
--- SqlServer.2016.MS SqlServer.2016
+-- SqlServer.2016.MS SqlServer.2016 (asynchronously)
 
 CREATE TABLE [xxPerson]
 (
@@ -18,7 +18,7 @@ CREATE TABLE [xxPerson]
 )
 
 BeforeExecute
--- SqlServer.2016.MS SqlServer.2016
+-- SqlServer.2016.MS SqlServer.2016 (asynchronously)
 DECLARE @FirstName NVarChar(4000) -- String
 SET     @FirstName = N'Steven'
 DECLARE @LastName NVarChar(4000) -- String
@@ -44,7 +44,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2016.MS SqlServer.2016
+-- SqlServer.2016.MS SqlServer.2016 (asynchronously)
 
 SELECT
 	COUNT(*)
@@ -52,7 +52,7 @@ FROM
 	[xxPerson] [t1]
 
 BeforeExecute
--- SqlServer.2016.MS SqlServer.2016
+-- SqlServer.2016.MS SqlServer.2016 (asynchronously)
 
 SELECT TOP (2)
 	[t1].[FirstName],
@@ -64,7 +64,7 @@ FROM
 	[xxPerson] [t1]
 
 BeforeExecute
--- SqlServer.2016.MS SqlServer.2016
+-- SqlServer.2016.MS SqlServer.2016 (asynchronously)
 DECLARE @FirstName NVarChar(4000) -- String
 SET     @FirstName = N'Steven'
 DECLARE @LastName NVarChar(4000) -- String
@@ -87,7 +87,7 @@ WHERE
 	[xxPerson].[PersonID] = @ID
 
 BeforeExecute
--- SqlServer.2016.MS SqlServer.2016
+-- SqlServer.2016.MS SqlServer.2016 (asynchronously)
 
 SELECT TOP (2)
 	[t1].[FirstName],
@@ -99,7 +99,7 @@ FROM
 	[xxPerson] [t1]
 
 BeforeExecute
--- SqlServer.2016.MS SqlServer.2016
+-- SqlServer.2016.MS SqlServer.2016 (asynchronously)
 
 DROP TABLE [xxPerson]
 

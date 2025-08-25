@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2022
+-- SqlServer.2022 (asynchronously)
 
 DELETE [t]
 FROM
@@ -8,7 +8,7 @@ WHERE
 	[t].[ID] > 1000
 
 BeforeExecute
--- SqlServer.2022
+-- SqlServer.2022 (asynchronously)
 DECLARE @ID Int -- Int32
 SET     @ID = 1001
 DECLARE @MoneyValue Decimal(1, 0)
@@ -46,7 +46,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2022
+-- SqlServer.2022 (asynchronously)
 
 SELECT TOP (2)
 	[t].[ID],
@@ -62,7 +62,7 @@ WHERE
 	[t].[ID] = 1001
 
 BeforeExecute
--- SqlServer.2022
+-- SqlServer.2022 (asynchronously)
 
 DELETE [t]
 FROM

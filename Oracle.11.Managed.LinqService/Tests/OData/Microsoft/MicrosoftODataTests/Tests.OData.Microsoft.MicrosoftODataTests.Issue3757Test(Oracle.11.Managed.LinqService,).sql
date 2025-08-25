@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Oracle.11.Managed Oracle11
+-- Oracle.11.Managed Oracle11 (asynchronously)
 
 SELECT
 	m_1.ID,
@@ -12,7 +12,7 @@ FROM
 		INNER JOIN "Issue3757Level2" d ON m_1.ID = d."ParentId"
 
 BeforeExecute
--- Oracle.11.Managed Oracle11
+-- Oracle.11.Managed Oracle11 (asynchronously)
 
 SELECT
 	l1.ID,

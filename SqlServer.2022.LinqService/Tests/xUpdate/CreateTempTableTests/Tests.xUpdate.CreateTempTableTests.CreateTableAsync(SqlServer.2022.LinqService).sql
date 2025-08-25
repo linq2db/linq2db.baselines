@@ -25,7 +25,7 @@ FROM
 	[Parent] [p]
 
 BeforeExecute
--- SqlServer.2022
+-- SqlServer.2022 (asynchronously)
 
 SELECT
 	[t].[ID]

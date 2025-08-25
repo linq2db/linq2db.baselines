@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Access.Jet.OleDb AccessOleDb
+-- Access.Jet.OleDb AccessOleDb (asynchronously)
 
 DELETE FROM
 	[Person] [t1]
@@ -7,7 +7,7 @@ WHERE
 	[t1].[PersonID] > 4
 
 BeforeExecute
--- Access.Jet.OleDb AccessOleDb
+-- Access.Jet.OleDb AccessOleDb (asynchronously)
 
 INSERT INTO [Person]
 (
@@ -23,12 +23,12 @@ VALUES
 )
 
 BeforeExecute
--- Access.Jet.OleDb AccessOleDb
+-- Access.Jet.OleDb AccessOleDb (asynchronously)
 
 SELECT @@IDENTITY
 
 BeforeExecute
--- Access.Jet.OleDb AccessOleDb
+-- Access.Jet.OleDb AccessOleDb (asynchronously)
 
 SELECT TOP 2
 	[p].[FirstName],
@@ -42,7 +42,7 @@ WHERE
 	[p].[FirstName] = 'John' AND [p].[LastName] = 'Shepard'
 
 BeforeExecute
--- Access.Jet.OleDb AccessOleDb
+-- Access.Jet.OleDb AccessOleDb (asynchronously)
 
 DELETE FROM
 	[Person] [t1]

@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
+-- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80 (asynchronously)
 DECLARE @ID Int32
 SET     @ID = 100500
 DECLARE @MoneyValue NewDecimal(4, 0) -- Decimal
@@ -49,7 +49,7 @@ VALUES
 )
 
 BeforeExecute
--- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
+-- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80 (asynchronously)
 DECLARE @value2 NewDecimal(5, 0) -- Decimal
 SET     @value2 = 13621
 DECLARE @id Int32
@@ -63,7 +63,7 @@ WHERE
 	`t1`.`ID` = @id
 
 BeforeExecute
--- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
+-- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80 (asynchronously)
 DECLARE @id Int32
 SET     @id = 100500
 

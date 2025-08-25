@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- ClickHouse.MySql ClickHouse
+-- ClickHouse.MySql ClickHouse (asynchronously)
 
 SELECT
 	a_Patient.PersonID,
@@ -9,7 +9,7 @@ FROM
 		LEFT JOIN Patient a_Patient ON p.PersonID = a_Patient.PersonID
 
 BeforeExecute
--- ClickHouse.MySql ClickHouse
+-- ClickHouse.MySql ClickHouse (asynchronously)
 
 SELECT
 	a_Patient.PersonID,

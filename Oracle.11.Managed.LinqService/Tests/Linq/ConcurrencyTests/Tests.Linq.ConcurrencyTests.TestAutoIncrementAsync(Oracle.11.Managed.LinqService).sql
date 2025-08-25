@@ -21,7 +21,7 @@ VALUES
 )
 
 BeforeExecute
--- Oracle.11.Managed Oracle11
+-- Oracle.11.Managed Oracle11 (asynchronously)
 
 SELECT
 	t1."Id",
@@ -48,7 +48,7 @@ WHERE
 	obj."Id" = :Id AND obj."Stamp" = :Stamp
 
 BeforeExecute
--- Oracle.11.Managed Oracle11
+-- Oracle.11.Managed Oracle11 (asynchronously)
 
 SELECT
 	t1."Id",
@@ -75,7 +75,7 @@ WHERE
 	obj."Id" = :Id AND obj."Stamp" = :Stamp
 
 BeforeExecute
--- Oracle.11.Managed Oracle11
+-- Oracle.11.Managed Oracle11 (asynchronously)
 
 SELECT
 	t1."Id",
@@ -102,7 +102,7 @@ WHERE
 	obj."Id" = :Id AND obj."Stamp" = :Stamp
 
 BeforeExecute
--- Oracle.11.Managed Oracle11
+-- Oracle.11.Managed Oracle11 (asynchronously)
 
 SELECT
 	t1."Id",
@@ -124,7 +124,7 @@ WHERE
 	obj."Id" = :Id AND obj."Stamp" = :Stamp
 
 BeforeExecute
--- Oracle.11.Managed Oracle11
+-- Oracle.11.Managed Oracle11 (asynchronously)
 
 SELECT
 	t1."Id",
@@ -146,7 +146,7 @@ WHERE
 	obj."Id" = :Id AND obj."Stamp" = :Stamp
 
 BeforeExecute
--- Oracle.11.Managed Oracle11
+-- Oracle.11.Managed Oracle11 (asynchronously)
 
 SELECT
 	t1."Id",

@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2017
+-- SqlServer.2017 (asynchronously)
 
 SELECT
 	[p].[Id],
@@ -11,7 +11,7 @@ WHERE
                  　' FROM [p].[Text])) = N''
 
 BeforeExecute
--- SqlServer.2017
+-- SqlServer.2017 (asynchronously)
 
 SELECT
 	[t1].[Id],

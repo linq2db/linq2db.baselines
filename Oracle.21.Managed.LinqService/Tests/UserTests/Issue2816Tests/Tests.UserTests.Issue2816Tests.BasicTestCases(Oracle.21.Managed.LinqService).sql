@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Oracle.21.Managed Oracle.Managed Oracle12
+-- Oracle.21.Managed Oracle.Managed Oracle12 (asynchronously)
 
 SELECT
 	p."Id",
@@ -11,7 +11,7 @@ WHERE
                  　') IS NULL
 
 BeforeExecute
--- Oracle.21.Managed Oracle.Managed Oracle12
+-- Oracle.21.Managed Oracle.Managed Oracle12 (asynchronously)
 
 SELECT
 	t1."Id",

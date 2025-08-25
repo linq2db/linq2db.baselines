@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Access.Jet.Odbc AccessODBC
+-- Access.Jet.Odbc AccessODBC (asynchronously)
 DECLARE @p_p Int -- Int32
 SET     @p_p = 2
 

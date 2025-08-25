@@ -15,7 +15,7 @@ WHERE
 	`p`.`PersonID` = @id
 
 BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MySql (asynchronously)
 DECLARE @id Int32
 SET     @id = 1
 

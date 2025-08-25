@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2008.MS SqlServer.2008
+-- SqlServer.2008.MS SqlServer.2008 (asynchronously)
 
 SELECT
 	[p].[FirstName],
@@ -13,7 +13,7 @@ WHERE
 	[p].[MiddleName] IS NULL
 
 BeforeExecute
--- SqlServer.2008.MS SqlServer.2008
+-- SqlServer.2008.MS SqlServer.2008 (asynchronously)
 DECLARE @str NVarChar(4000) -- String
 SET     @str = N'123'
 

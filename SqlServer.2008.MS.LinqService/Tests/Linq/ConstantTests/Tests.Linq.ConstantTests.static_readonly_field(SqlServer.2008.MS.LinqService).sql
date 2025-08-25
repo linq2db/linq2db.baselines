@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2008.MS SqlServer.2008
+-- SqlServer.2008.MS SqlServer.2008 (asynchronously)
 
 SELECT
 	[e].[Id],
@@ -13,7 +13,7 @@ WHERE
 	[e].[GuidNullableValue] = 'bc7b663d-0fde-4327-8f92-5d8cc3a11d11'
 
 BeforeExecute
--- SqlServer.2008.MS SqlServer.2008
+-- SqlServer.2008.MS SqlServer.2008 (asynchronously)
 
 SELECT
 	[t1].[Id],

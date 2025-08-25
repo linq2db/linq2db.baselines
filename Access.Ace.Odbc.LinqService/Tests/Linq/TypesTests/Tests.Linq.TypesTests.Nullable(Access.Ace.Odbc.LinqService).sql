@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Access.Ace.Odbc AccessODBC
+-- Access.Ace.Odbc AccessODBC (asynchronously)
 
 SELECT
 	IIF([p].[Value1] IS NOT NULL, [p].[Value1], 0)

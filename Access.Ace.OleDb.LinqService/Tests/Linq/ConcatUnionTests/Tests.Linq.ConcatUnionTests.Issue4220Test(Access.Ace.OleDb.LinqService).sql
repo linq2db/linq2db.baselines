@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Access.Ace.OleDb AccessOleDb
+-- Access.Ace.OleDb AccessOleDb (asynchronously)
 DECLARE @Id Integer -- Int32
 SET     @Id = 1
 DECLARE @AOnly VarWChar(6) -- String
@@ -17,7 +17,7 @@ VALUES
 )
 
 BeforeExecute
--- Access.Ace.OleDb AccessOleDb
+-- Access.Ace.OleDb AccessOleDb (asynchronously)
 DECLARE @Id Integer -- Int32
 SET     @Id = 2
 DECLARE @BOnly VarWChar(6) -- String
@@ -35,7 +35,7 @@ VALUES
 )
 
 BeforeExecute
--- Access.Ace.OleDb AccessOleDb
+-- Access.Ace.OleDb AccessOleDb (asynchronously)
 
 SELECT
 	[e].[Id],

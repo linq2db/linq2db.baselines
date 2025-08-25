@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025 SqlServer.2022 (asynchronously)
 
 SELECT TOP (1)
 	SCHEMA_NAME()
@@ -7,12 +7,12 @@ FROM
 	[LinqDataTypes] [t1]
 
 BeforeExecute
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025 SqlServer.2022 (asynchronously)
 
 DROP TABLE IF EXISTS [Issue681Table2]
 
 BeforeExecute
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025 SqlServer.2022 (asynchronously)
 
 CREATE TABLE [Issue681Table2]
 (
@@ -23,7 +23,7 @@ CREATE TABLE [Issue681Table2]
 )
 
 BeforeExecute
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025 SqlServer.2022 (asynchronously)
 
 DROP TABLE [dbo].[Issue681Table2]
 

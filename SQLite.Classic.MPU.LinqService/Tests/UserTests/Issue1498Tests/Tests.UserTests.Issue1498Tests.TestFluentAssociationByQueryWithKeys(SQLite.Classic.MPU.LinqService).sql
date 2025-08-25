@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
+-- SQLite.Classic.MPU SQLite.Classic SQLite (asynchronously)
 DECLARE @Id  -- Int32
 SET     @Id = 6
 DECLARE @Title NVarChar(5) -- String
@@ -21,7 +21,7 @@ VALUES
 )
 
 BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
+-- SQLite.Classic.MPU SQLite.Classic SQLite (asynchronously)
 DECLARE @Id  -- Int32
 SET     @Id = 60
 DECLARE @TopicId  -- Int32
@@ -43,7 +43,7 @@ VALUES
 )
 
 BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
+-- SQLite.Classic.MPU SQLite.Classic SQLite (asynchronously)
 DECLARE @Id  -- Int32
 SET     @Id = 61
 DECLARE @TopicId  -- Int32
@@ -65,7 +65,7 @@ VALUES
 )
 
 BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
+-- SQLite.Classic.MPU SQLite.Classic SQLite (asynchronously)
 
 SELECT
 	[m_1].[Id],
@@ -83,7 +83,7 @@ FROM
 		INNER JOIN [Message] [d] ON [d].[TopicId] = [m_1].[Id]
 
 BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
+-- SQLite.Classic.MPU SQLite.Classic SQLite (asynchronously)
 
 SELECT
 	[x].[Id],

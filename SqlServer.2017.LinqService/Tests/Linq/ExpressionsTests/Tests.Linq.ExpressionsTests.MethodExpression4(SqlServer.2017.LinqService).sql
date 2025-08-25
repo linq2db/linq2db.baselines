@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2017
+-- SqlServer.2017 (asynchronously)
 DECLARE @n Int -- Int32
 SET     @n = 3
 

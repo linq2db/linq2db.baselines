@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Access.Jet.OleDb AccessOleDb
+-- Access.Jet.OleDb AccessOleDb (asynchronously)
 DECLARE @filter1 VarWChar(6) -- String
 SET     @filter1 = '%John%'
 DECLARE @filter2 VarWChar(8) -- String
@@ -43,7 +43,7 @@ ORDER BY
 	[p].[PersonID]
 
 BeforeExecute
--- Access.Jet.OleDb AccessOleDb
+-- Access.Jet.OleDb AccessOleDb (asynchronously)
 
 SELECT
 	[t1].[PersonID],
@@ -52,7 +52,7 @@ FROM
 	[Patient] [t1]
 
 BeforeExecute
--- Access.Jet.OleDb AccessOleDb
+-- Access.Jet.OleDb AccessOleDb (asynchronously)
 
 SELECT
 	[t1].[FirstName],

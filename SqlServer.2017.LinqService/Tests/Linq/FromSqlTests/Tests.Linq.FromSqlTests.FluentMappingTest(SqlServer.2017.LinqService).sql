@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2017
+-- SqlServer.2017 (asynchronously)
 DECLARE @idFilter Int -- Int32
 SET     @idFilter = 1
 
@@ -15,7 +15,7 @@ FROM
 		) [a_AssociatedOne]
 
 BeforeExecute
--- SqlServer.2017
+-- SqlServer.2017 (asynchronously)
 DECLARE @idFilter Int -- Int32
 SET     @idFilter = 1
 

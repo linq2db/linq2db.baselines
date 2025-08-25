@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 
 SELECT
 	SUM([grp_1].[MoneyValue]) as [SUM_1],
@@ -17,7 +17,7 @@ GROUP BY
 	[grp_1].[Date_1]
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 
 SELECT
 	SUM([grp_1].[MoneyValue]) as [SUM_1],

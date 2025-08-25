@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Oracle.11.Managed Oracle11
+-- Oracle.11.Managed Oracle11 (asynchronously)
 DECLARE @Id Int32
 SET     @Id = 1
 DECLARE @InitOnlyId Int32
@@ -16,7 +16,7 @@ WHERE
 	e."Id" = :Id AND e."Id" = :InitOnlyId
 
 BeforeExecute
--- Oracle.11.Managed Oracle11
+-- Oracle.11.Managed Oracle11 (asynchronously)
 
 SELECT
 	t1."Id",
@@ -27,7 +27,7 @@ FROM
 	"TestConstantsData" t1
 
 BeforeExecute
--- Oracle.11.Managed Oracle11
+-- Oracle.11.Managed Oracle11 (asynchronously)
 DECLARE @Id Int32
 SET     @Id = 1
 DECLARE @InitOnlyId Int32
@@ -44,7 +44,7 @@ WHERE
 	e."Id" = :Id AND e."Id" = :InitOnlyId
 
 BeforeExecute
--- Oracle.11.Managed Oracle11
+-- Oracle.11.Managed Oracle11 (asynchronously)
 
 SELECT
 	t1."Id",

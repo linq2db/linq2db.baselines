@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- ClickHouse.Octonica ClickHouse
+-- ClickHouse.Octonica ClickHouse (asynchronously)
 
 ALTER TABLE
 	GrandChild
@@ -9,7 +9,7 @@ WHERE
 	ParentID = 10000 AND ChildID IS NULL
 
 BeforeExecute
--- ClickHouse.Octonica ClickHouse
+-- ClickHouse.Octonica ClickHouse (asynchronously)
 
 ALTER TABLE
 	GrandChild

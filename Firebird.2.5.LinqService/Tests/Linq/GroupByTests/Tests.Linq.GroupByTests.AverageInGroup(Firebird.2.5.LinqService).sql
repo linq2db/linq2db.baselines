@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Firebird.2.5 Firebird
+-- Firebird.2.5 Firebird (asynchronously)
 
 SELECT
 	"g_1"."GroupId",
@@ -30,7 +30,7 @@ GROUP BY
 	"g_1"."GroupId"
 
 BeforeExecute
--- Firebird.2.5 Firebird
+-- Firebird.2.5 Firebird (asynchronously)
 
 SELECT
 	"t1"."GroupId",

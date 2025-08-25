@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- DB2 DB2.LUW DB2LUW
+-- DB2 DB2.LUW DB2LUW (asynchronously)
 
 SELECT DISTINCT
 	"x"."ParentID",
@@ -11,7 +11,7 @@ WHERE
 	"x"."ChildID" > 30
 
 BeforeExecute
--- DB2 DB2.LUW DB2LUW
+-- DB2 DB2.LUW DB2LUW (asynchronously)
 
 SELECT DISTINCT
 	"x"."ParentID",

@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- DB2 DB2.LUW DB2LUW
+-- DB2 DB2.LUW DB2LUW (asynchronously)
 
 WITH CTE_1 ("Child_ParentID", "Child_ChildID")
 AS
@@ -20,7 +20,7 @@ FROM
 		INNER JOIN CTE_1 "c_1" ON "p"."ParentID" = "c_1"."Child_ParentID"
 
 BeforeExecute
--- DB2 DB2.LUW DB2LUW
+-- DB2 DB2.LUW DB2LUW (asynchronously)
 
 SELECT
 	"p"."ParentID",

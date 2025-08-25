@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Firebird.4 Firebird4
+-- Firebird.4 Firebird4 (asynchronously)
 
 SELECT DISTINCT
 	"x"."ParentID",
@@ -11,7 +11,7 @@ WHERE
 	"x"."ChildID" > 30
 
 BeforeExecute
--- Firebird.4 Firebird4
+-- Firebird.4 Firebird4 (asynchronously)
 
 SELECT DISTINCT
 	"x"."ParentID",

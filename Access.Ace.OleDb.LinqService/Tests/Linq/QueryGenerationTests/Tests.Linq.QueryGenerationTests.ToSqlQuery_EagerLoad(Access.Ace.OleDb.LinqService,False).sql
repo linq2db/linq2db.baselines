@@ -12,7 +12,7 @@ WHERE
 	[p].[ParentID] = @id
 
 BeforeExecute
--- Access.Ace.OleDb AccessOleDb
+-- Access.Ace.OleDb AccessOleDb (asynchronously)
 DECLARE @id Integer -- Int32
 SET     @id = 2
 

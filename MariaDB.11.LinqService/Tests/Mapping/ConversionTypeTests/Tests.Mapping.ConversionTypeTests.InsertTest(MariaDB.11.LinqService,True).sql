@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MySql (asynchronously)
 
 INSERT INTO `TrimTestTable`
 (
@@ -13,7 +13,7 @@ VALUES
 )
 
 BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MySql (asynchronously)
 
 INSERT INTO `TrimTestTable`
 (
@@ -27,7 +27,7 @@ VALUES
 )
 
 BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MySql (asynchronously)
 
 INSERT INTO `TrimTestTable`
 (
@@ -41,7 +41,7 @@ VALUES
 )
 
 BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MySql (asynchronously)
 
 SELECT
 	`r`.`ID`,
@@ -52,7 +52,7 @@ ORDER BY
 	`r`.`ID`
 
 BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MySql (asynchronously)
 
 SELECT
 	`r`.`ID`,

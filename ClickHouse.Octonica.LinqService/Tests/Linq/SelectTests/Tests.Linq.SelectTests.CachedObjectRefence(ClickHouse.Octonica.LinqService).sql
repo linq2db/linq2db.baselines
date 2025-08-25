@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- ClickHouse.Octonica ClickHouse
+-- ClickHouse.Octonica ClickHouse (asynchronously)
 
 SELECT
 	p.FirstName,
@@ -11,7 +11,7 @@ FROM
 	Person p
 
 BeforeExecute
--- ClickHouse.Octonica ClickHouse
+-- ClickHouse.Octonica ClickHouse (asynchronously)
 
 SELECT
 	p.FirstName,

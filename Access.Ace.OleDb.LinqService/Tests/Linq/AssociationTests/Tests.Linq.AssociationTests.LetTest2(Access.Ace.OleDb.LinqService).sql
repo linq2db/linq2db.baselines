@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Access.Ace.OleDb AccessOleDb
+-- Access.Ace.OleDb AccessOleDb (asynchronously)
 
 SELECT
 	[t].[ParentID],
@@ -15,7 +15,7 @@ FROM
 	[Parent] [t]
 
 BeforeExecute
--- Access.Ace.OleDb AccessOleDb
+-- Access.Ace.OleDb AccessOleDb (asynchronously)
 
 SELECT
 	[t].[ParentID],

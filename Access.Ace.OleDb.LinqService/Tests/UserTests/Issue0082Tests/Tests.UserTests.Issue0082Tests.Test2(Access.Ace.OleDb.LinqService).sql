@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Access.Ace.OleDb AccessOleDb
+-- Access.Ace.OleDb AccessOleDb (asynchronously)
 
 SELECT
 	[o].[ParentID],
@@ -23,7 +23,7 @@ FROM
 	[Parent] [o]
 
 BeforeExecute
--- Access.Ace.OleDb AccessOleDb
+-- Access.Ace.OleDb AccessOleDb (asynchronously)
 
 SELECT
 	COUNT(*)
@@ -31,7 +31,7 @@ FROM
 	[Parent] [o]
 
 BeforeExecute
--- Access.Ace.OleDb AccessOleDb
+-- Access.Ace.OleDb AccessOleDb (asynchronously)
 
 SELECT
 	[x].[ParentID],

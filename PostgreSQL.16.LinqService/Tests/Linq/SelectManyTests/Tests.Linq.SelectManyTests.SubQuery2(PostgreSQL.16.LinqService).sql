@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
+-- PostgreSQL.16 PostgreSQL.15 PostgreSQL (asynchronously)
 
 SELECT
 	p."PersonID",
@@ -12,7 +12,7 @@ WHERE
 	p."PersonID" = p2."PersonID"
 
 BeforeExecute
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
+-- PostgreSQL.16 PostgreSQL.15 PostgreSQL (asynchronously)
 
 SELECT
 	p."PersonID",

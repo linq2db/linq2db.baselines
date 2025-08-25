@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
+-- SQLite.Classic.MPU SQLite.Classic SQLite (asynchronously)
 
 SELECT
 	CASE
@@ -11,7 +11,7 @@ FROM
 	[Parent] [p]
 
 BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
+-- SQLite.Classic.MPU SQLite.Classic SQLite (asynchronously)
 
 SELECT
 	[m_1].[ParentID],
@@ -27,7 +27,7 @@ FROM
 		INNER JOIN [Child] [d] ON [m_1].[ParentID] = [d].[ParentID]
 
 BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
+-- SQLite.Classic.MPU SQLite.Classic SQLite (asynchronously)
 
 SELECT
 	[t1].[ParentID],

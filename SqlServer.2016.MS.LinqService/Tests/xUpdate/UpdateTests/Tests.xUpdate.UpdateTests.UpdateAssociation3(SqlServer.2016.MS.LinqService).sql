@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2016.MS SqlServer.2016
+-- SqlServer.2016.MS SqlServer.2016 (asynchronously)
 
 INSERT INTO [Parent]
 (
@@ -13,7 +13,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2016.MS SqlServer.2016
+-- SqlServer.2016.MS SqlServer.2016 (asynchronously)
 
 INSERT INTO [Child]
 (
@@ -27,7 +27,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2016.MS SqlServer.2016
+-- SqlServer.2016.MS SqlServer.2016 (asynchronously)
 
 UPDATE
 	[a_Parent]

@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MySql (asynchronously)
 DECLARE @BinaryValue Blob(5) -- Binary
 SET     @BinaryValue = 0x0102030405
 
@@ -11,7 +11,7 @@ WHERE
 	`t`.`ID` = 1
 
 BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MySql (asynchronously)
 
 SELECT
 	Length(`t`.`BinaryValue`)
@@ -22,7 +22,7 @@ WHERE
 LIMIT 1
 
 BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MySql (asynchronously)
 DECLARE @BinaryValue Blob -- Binary
 SET     @BinaryValue = NULL
 

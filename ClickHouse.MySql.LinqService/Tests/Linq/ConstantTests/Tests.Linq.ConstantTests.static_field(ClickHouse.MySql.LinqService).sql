@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- ClickHouse.MySql ClickHouse
+-- ClickHouse.MySql ClickHouse (asynchronously)
 
 SELECT
 	e.Id,
@@ -13,7 +13,7 @@ WHERE
 	e.GuidNullableValue = toUUID('bc7b663d-0fde-4327-8f92-5d8cc3a11d11')
 
 BeforeExecute
--- ClickHouse.MySql ClickHouse
+-- ClickHouse.MySql ClickHouse (asynchronously)
 
 SELECT
 	t1.Id,

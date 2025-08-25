@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- PostgreSQL.15 PostgreSQL
+-- PostgreSQL.15 PostgreSQL (asynchronously)
 
 UPDATE
 	"UpdatedEntities"
@@ -13,7 +13,7 @@ WHERE
 	"a_Relation"."RelatedValue1" = 11 AND "UpdatedEntities"."RelationId" = "a_Relation".id
 
 BeforeExecute
--- PostgreSQL.15 PostgreSQL
+-- PostgreSQL.15 PostgreSQL (asynchronously)
 
 SELECT
 	v."Value1",

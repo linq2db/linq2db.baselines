@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2017.MS SqlServer.2017
+-- SqlServer.2017.MS SqlServer.2017 (asynchronously)
 
 SELECT
 	IIF([t].[c1] * 2 = ROUND([t].[c1] * 2, 5) AND [t].[c1] <> ROUND([t].[c1], 5), ROUND([t].[c1] / 2, 5) * 2, ROUND([t].[c1], 5))

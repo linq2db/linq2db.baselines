@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- PostgreSQL.15 PostgreSQL
+-- PostgreSQL.15 PostgreSQL (asynchronously)
 DECLARE @Value Integer -- Int32
 SET     @Value = -1
 

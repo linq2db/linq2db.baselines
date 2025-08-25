@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Access.Jet.OleDb AccessOleDb
+-- Access.Jet.OleDb AccessOleDb (asynchronously)
 
 INSERT INTO [Issue3323Table]
 (
@@ -17,7 +17,7 @@ VALUES
 )
 
 BeforeExecute
--- Access.Jet.OleDb AccessOleDb
+-- Access.Jet.OleDb AccessOleDb (asynchronously)
 
 SELECT
 	[r].[Id],
@@ -32,7 +32,7 @@ FROM
 	[Issue3323Table] [r_1]
 
 BeforeExecute
--- Access.Jet.OleDb AccessOleDb
+-- Access.Jet.OleDb AccessOleDb (asynchronously)
 
 SELECT
 	[r].[Id] + 1,

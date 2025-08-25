@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Oracle.21.Managed Oracle.Managed Oracle12
+-- Oracle.21.Managed Oracle.Managed Oracle12 (asynchronously)
 
 SELECT
 	LISTAGG(c_1."ChildID") WITHIN GROUP (ORDER BY p."Value1", a_ParentTest."Value1", c_1."ParentID" DESC),

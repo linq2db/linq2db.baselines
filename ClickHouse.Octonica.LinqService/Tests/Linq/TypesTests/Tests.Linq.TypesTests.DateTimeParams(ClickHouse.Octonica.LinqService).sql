@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- ClickHouse.Octonica ClickHouse
+-- ClickHouse.Octonica ClickHouse (asynchronously)
 
 SELECT
 	t.DateTimeValue
@@ -10,7 +10,7 @@ WHERE
 LIMIT 1
 
 BeforeExecute
--- ClickHouse.Octonica ClickHouse
+-- ClickHouse.Octonica ClickHouse (asynchronously)
 
 SELECT
 	t.DateTimeValue

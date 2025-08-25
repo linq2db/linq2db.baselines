@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- ClickHouse.Octonica ClickHouse
+-- ClickHouse.Octonica ClickHouse (asynchronously)
 
 INSERT INTO Issue4717Address
 (
@@ -19,7 +19,7 @@ VALUES
 )
 
 BeforeExecute
--- ClickHouse.Octonica ClickHouse
+-- ClickHouse.Octonica ClickHouse (asynchronously)
 
 INSERT INTO Issue4717Warehouse
 (
@@ -35,7 +35,7 @@ VALUES
 )
 
 BeforeExecute
--- ClickHouse.Octonica ClickHouse
+-- ClickHouse.Octonica ClickHouse (asynchronously)
 
 INSERT INTO Issue4717UnitOfMeasure
 (
@@ -51,7 +51,7 @@ VALUES
 )
 
 BeforeExecute
--- ClickHouse.Octonica ClickHouse
+-- ClickHouse.Octonica ClickHouse (asynchronously)
 
 INSERT INTO Issue4717Product
 (
@@ -69,7 +69,7 @@ VALUES
 )
 
 BeforeExecute
--- ClickHouse.Octonica ClickHouse
+-- ClickHouse.Octonica ClickHouse (asynchronously)
 
 INSERT INTO Issue4717Product
 (
@@ -87,7 +87,7 @@ VALUES
 )
 
 BeforeExecute
--- ClickHouse.Octonica ClickHouse
+-- ClickHouse.Octonica ClickHouse (asynchronously)
 
 INSERT INTO Issue4717ProductIncludedProductMapping
 (
@@ -103,7 +103,7 @@ VALUES
 )
 
 BeforeExecute
--- ClickHouse.Octonica ClickHouse
+-- ClickHouse.Octonica ClickHouse (asynchronously)
 
 INSERT INTO Issue4717WarehouseProductMapping
 (

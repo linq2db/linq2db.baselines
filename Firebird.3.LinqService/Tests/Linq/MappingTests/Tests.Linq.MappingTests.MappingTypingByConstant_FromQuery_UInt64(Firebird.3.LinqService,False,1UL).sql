@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Firebird.3 Firebird3
+-- Firebird.3 Firebird3 (asynchronously)
 DECLARE @value Decimal
 SET     @value = 1
 
@@ -16,7 +16,7 @@ FROM
 	) "t1"
 
 BeforeExecute
--- Firebird.3 Firebird3
+-- Firebird.3 Firebird3 (asynchronously)
 DECLARE @value Decimal
 SET     @value = 2147483648
 

@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 
 SELECT TOP (2)
 	COUNT([p].[PersonID]) as [c1]
@@ -16,7 +16,7 @@ WHERE
 	)
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 
 SELECT TOP (2)
 	COUNT([p].[PersonID]) as [c1]

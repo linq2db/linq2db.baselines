@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2012.MS SqlServer.2012
+-- SqlServer.2012.MS SqlServer.2012 (asynchronously)
 DECLARE @CharFld NChar(1) -- StringFixedLength
 SET     @CharFld = N'P'
 
@@ -13,7 +13,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2012.MS SqlServer.2012
+-- SqlServer.2012.MS SqlServer.2012 (asynchronously)
 
 SELECT TOP (1)
 	[t1].[Id],

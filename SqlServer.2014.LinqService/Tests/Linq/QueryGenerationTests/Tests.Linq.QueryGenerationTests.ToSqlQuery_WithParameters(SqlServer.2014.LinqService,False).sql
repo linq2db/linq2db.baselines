@@ -15,7 +15,7 @@ WHERE
 	[p].[PersonID] = @id
 
 BeforeExecute
--- SqlServer.2014
+-- SqlServer.2014 (asynchronously)
 DECLARE @id Int -- Int32
 SET     @id = 1
 

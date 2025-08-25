@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- PostgreSQL.15 PostgreSQL
+-- PostgreSQL.15 PostgreSQL (asynchronously)
 DECLARE @ts Interval -- Object
 SET     @ts = 00:01:01
 
@@ -38,7 +38,7 @@ FROM
 	"DateTypes" t_1
 
 BeforeExecute
--- PostgreSQL.15 PostgreSQL
+-- PostgreSQL.15 PostgreSQL (asynchronously)
 
 SELECT
 	t1."Id",

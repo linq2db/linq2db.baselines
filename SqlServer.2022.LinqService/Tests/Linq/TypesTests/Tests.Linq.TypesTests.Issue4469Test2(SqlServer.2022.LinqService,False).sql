@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2022
+-- SqlServer.2022 (asynchronously)
 DECLARE @param Decimal(2, 0)
 SET     @param = 33
 DECLARE @param_1 Decimal(2, 0)

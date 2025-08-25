@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Oracle.18.Managed Oracle.Managed Oracle12
+-- Oracle.18.Managed Oracle.Managed Oracle12 (asynchronously)
 
 INSERT INTO "Issue1303"
 (
@@ -15,7 +15,7 @@ VALUES
 )
 
 BeforeExecute
--- Oracle.18.Managed Oracle.Managed Oracle12
+-- Oracle.18.Managed Oracle.Managed Oracle12 (asynchronously)
 
 SELECT
 	t1.ID,
@@ -28,7 +28,7 @@ WHERE
 FETCH NEXT 2 ROWS ONLY
 
 BeforeExecute
--- Oracle.18.Managed Oracle.Managed Oracle12
+-- Oracle.18.Managed Oracle.Managed Oracle12 (asynchronously)
 
 SELECT
 	t1.ID,
@@ -41,7 +41,7 @@ WHERE
 FETCH NEXT 2 ROWS ONLY
 
 BeforeExecute
--- Oracle.18.Managed Oracle.Managed Oracle12
+-- Oracle.18.Managed Oracle.Managed Oracle12 (asynchronously)
 
 SELECT
 	t1.ID,

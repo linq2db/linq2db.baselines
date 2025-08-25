@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Access.Ace.Odbc AccessODBC
+-- Access.Ace.Odbc AccessODBC (asynchronously)
 
 SELECT TOP 1
 	[p].[ParentID],
@@ -10,7 +10,7 @@ WHERE
 	[p].[ParentID] = 1
 
 BeforeExecute
--- Access.Ace.Odbc AccessODBC
+-- Access.Ace.Odbc AccessODBC (asynchronously)
 
 SELECT TOP 1
 	[p].[ParentID],

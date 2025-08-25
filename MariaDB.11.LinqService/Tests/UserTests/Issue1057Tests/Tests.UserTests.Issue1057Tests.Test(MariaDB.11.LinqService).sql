@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MySql (asynchronously)
 DECLARE @Id Int32
 SET     @Id = 1
 DECLARE @TargetName VarChar(12) -- String
@@ -17,7 +17,7 @@ VALUES
 )
 
 BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MySql (asynchronously)
 DECLARE @Id Int32
 SET     @Id = 2
 DECLARE @TargetName VarChar(4) -- String
@@ -35,7 +35,7 @@ VALUES
 )
 
 BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MySql (asynchronously)
 DECLARE @Id Int32
 SET     @Id = 2
 DECLARE @TaskId Int32
@@ -57,7 +57,7 @@ VALUES
 )
 
 BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MySql (asynchronously)
 
 SELECT
 	`p`.`Id`,

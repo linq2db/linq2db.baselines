@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Firebird.2.5 Firebird
+-- Firebird.2.5 Firebird (asynchronously)
 DECLARE @int1 Integer -- Int32
 SET     @int1 = 11
 DECLARE @take Integer -- Int32
@@ -94,7 +94,7 @@ WHERE
 	)
 
 BeforeExecute
--- Firebird.2.5 Firebird
+-- Firebird.2.5 Firebird (asynchronously)
 
 SELECT
 	"v"."id",

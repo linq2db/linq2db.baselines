@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Access.Ace.Odbc AccessODBC
+-- Access.Ace.Odbc AccessODBC (asynchronously)
 
 SELECT
 	[m_1].[Id],
@@ -16,7 +16,7 @@ FROM
 		INNER JOIN [EntityD] [d] ON ([m_1].[Id] = [d].[FK])
 
 BeforeExecute
--- Access.Ace.Odbc AccessODBC
+-- Access.Ace.Odbc AccessODBC (asynchronously)
 
 SELECT
 	[e].[Id],

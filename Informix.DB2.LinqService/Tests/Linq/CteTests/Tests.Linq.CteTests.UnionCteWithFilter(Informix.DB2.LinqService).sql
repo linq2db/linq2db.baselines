@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Informix.DB2 Informix
+-- Informix.DB2 Informix (asynchronously)
 
 WITH BooksCte (Book_Id, Book_Title, Author_Name)
 AS

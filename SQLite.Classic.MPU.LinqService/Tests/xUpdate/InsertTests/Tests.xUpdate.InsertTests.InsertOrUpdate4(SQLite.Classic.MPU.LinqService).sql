@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
+-- SQLite.Classic.MPU SQLite.Classic SQLite (asynchronously)
 DECLARE @FirstName NVarChar(4) -- String
 SET     @FirstName = 'John'
 DECLARE @LastName NVarChar(7) -- String
@@ -25,12 +25,12 @@ VALUES
 )
 
 BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
+-- SQLite.Classic.MPU SQLite.Classic SQLite (asynchronously)
 
 SELECT last_insert_rowid()
 
 BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
+-- SQLite.Classic.MPU SQLite.Classic SQLite (asynchronously)
 DECLARE @id  -- Int32
 SET     @id = 5
 DECLARE @diagnosis  -- Int32
@@ -52,7 +52,7 @@ ON CONFLICT ([PersonID]) DO UPDATE SET
 	[Diagnosis] = CAST(Length([t1].[Diagnosis]) + @i AS NVarChar(11))
 
 BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
+-- SQLite.Classic.MPU SQLite.Classic SQLite (asynchronously)
 DECLARE @id  -- Int32
 SET     @id = 5
 DECLARE @diagnosis  -- Int32
@@ -74,7 +74,7 @@ ON CONFLICT ([PersonID]) DO UPDATE SET
 	[Diagnosis] = CAST(Length([t1].[Diagnosis]) + @i AS NVarChar(11))
 
 BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
+-- SQLite.Classic.MPU SQLite.Classic SQLite (asynchronously)
 DECLARE @id  -- Int32
 SET     @id = 5
 DECLARE @diagnosis  -- Int32
@@ -96,7 +96,7 @@ ON CONFLICT ([PersonID]) DO UPDATE SET
 	[Diagnosis] = CAST(Length([t1].[Diagnosis]) + @i AS NVarChar(11))
 
 BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
+-- SQLite.Classic.MPU SQLite.Classic SQLite (asynchronously)
 DECLARE @id  -- Int32
 SET     @id = 5
 

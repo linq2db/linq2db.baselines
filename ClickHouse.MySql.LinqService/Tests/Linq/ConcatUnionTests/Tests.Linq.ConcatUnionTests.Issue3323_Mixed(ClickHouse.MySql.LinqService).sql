@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- ClickHouse.MySql ClickHouse
+-- ClickHouse.MySql ClickHouse (asynchronously)
 
 INSERT INTO Issue3323Table
 (
@@ -17,7 +17,7 @@ VALUES
 )
 
 BeforeExecute
--- ClickHouse.MySql ClickHouse
+-- ClickHouse.MySql ClickHouse (asynchronously)
 
 SELECT
 	r.Id,
@@ -32,7 +32,7 @@ FROM
 	Issue3323Table r_1
 
 BeforeExecute
--- ClickHouse.MySql ClickHouse
+-- ClickHouse.MySql ClickHouse (asynchronously)
 
 SELECT
 	r.Id + 1 as Id,

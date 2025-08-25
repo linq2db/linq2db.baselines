@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SQLite.Classic SQLite
+-- SQLite.Classic SQLite (asynchronously)
 
 SELECT
 	strftime('%Y-%m-%d %H:%M:%f', CAST(strftime('%Y', [t].[DateTimeValue]) AS INTEGER) || '-01-01 00:20:00')

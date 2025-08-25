@@ -23,7 +23,7 @@ RETURNING
 	NEW."ValueStr"
 
 BeforeExecute
--- PostgreSQL.18 PostgreSQL
+-- PostgreSQL.18 PostgreSQL (asynchronously)
 DECLARE @param Integer -- Int32
 SET     @param = 200
 

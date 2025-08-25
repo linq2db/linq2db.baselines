@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 
 SELECT
 	COUNT(*) as [COUNT_1]
@@ -7,7 +7,7 @@ FROM
 	[Person] [t1]
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 DECLARE @skip Int -- Int32
 SET     @skip = 1
 

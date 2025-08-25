@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+-- SapHana.Odbc SapHanaOdbc (asynchronously)
 
 SELECT
 	"x"."ParentID"
@@ -8,7 +8,7 @@ FROM
 		INNER JOIN "Child" "y" ON "x"."ParentID" = "y"."ParentID"
 
 BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+-- SapHana.Odbc SapHanaOdbc (asynchronously)
 
 SELECT
 	"g_1"."ParentID"

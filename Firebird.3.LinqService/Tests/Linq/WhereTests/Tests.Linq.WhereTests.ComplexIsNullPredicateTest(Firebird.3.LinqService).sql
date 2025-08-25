@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Firebird.3 Firebird3
+-- Firebird.3 Firebird3 (asynchronously)
 
 SELECT
 	"r"."Id",
@@ -12,7 +12,7 @@ ORDER BY
 	"r"."Id"
 
 BeforeExecute
--- Firebird.3 Firebird3
+-- Firebird.3 Firebird3 (asynchronously)
 
 SELECT
 	"t1"."Id",

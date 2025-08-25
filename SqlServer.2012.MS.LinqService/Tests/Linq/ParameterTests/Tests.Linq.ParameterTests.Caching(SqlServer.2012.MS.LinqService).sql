@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2012.MS SqlServer.2012
+-- SqlServer.2012.MS SqlServer.2012 (asynchronously)
 DECLARE @p Int -- Int32
 SET     @p = 1
 
@@ -12,7 +12,7 @@ WHERE
 	[x].[ParentID] = @p
 
 BeforeExecute
--- SqlServer.2012.MS SqlServer.2012
+-- SqlServer.2012.MS SqlServer.2012 (asynchronously)
 
 SELECT
 	[t1].[ParentID],
@@ -21,7 +21,7 @@ FROM
 	[Parent] [t1]
 
 BeforeExecute
--- SqlServer.2012.MS SqlServer.2012
+-- SqlServer.2012.MS SqlServer.2012 (asynchronously)
 DECLARE @p Int -- Int32
 SET     @p = 3
 DECLARE @p_1 Int -- Int32
@@ -36,7 +36,7 @@ WHERE
 	[x].[ParentID] = @p OR [x].[ParentID] = @p_1
 
 BeforeExecute
--- SqlServer.2012.MS SqlServer.2012
+-- SqlServer.2012.MS SqlServer.2012 (asynchronously)
 
 SELECT
 	[t1].[ParentID],
@@ -45,7 +45,7 @@ FROM
 	[Parent] [t1]
 
 BeforeExecute
--- SqlServer.2012.MS SqlServer.2012
+-- SqlServer.2012.MS SqlServer.2012 (asynchronously)
 DECLARE @p Int -- Int32
 SET     @p = 1
 DECLARE @p_1 Int -- Int32
@@ -60,7 +60,7 @@ WHERE
 	[x].[ParentID] = @p OR [x].[ParentID] = @p_1
 
 BeforeExecute
--- SqlServer.2012.MS SqlServer.2012
+-- SqlServer.2012.MS SqlServer.2012 (asynchronously)
 
 SELECT
 	[t1].[ParentID],

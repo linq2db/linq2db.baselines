@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Firebird.2.5 Firebird
+-- Firebird.2.5 Firebird (asynchronously)
 
 SELECT
 	"r"."Id",
@@ -35,7 +35,7 @@ WHERE
 	END
 
 BeforeExecute
--- Firebird.2.5 Firebird
+-- Firebird.2.5 Firebird (asynchronously)
 
 SELECT
 	"t1"."Id",
@@ -47,7 +47,7 @@ FROM
 	"BooleanTable" "t1"
 
 BeforeExecute
--- Firebird.2.5 Firebird
+-- Firebird.2.5 Firebird (asynchronously)
 
 SELECT
 	"r"."Id",
@@ -68,7 +68,7 @@ WHERE
 	END
 
 BeforeExecute
--- Firebird.2.5 Firebird
+-- Firebird.2.5 Firebird (asynchronously)
 
 SELECT
 	"t1"."Id",
@@ -80,7 +80,7 @@ FROM
 	"BooleanTable" "t1"
 
 BeforeExecute
--- Firebird.2.5 Firebird
+-- Firebird.2.5 Firebird (asynchronously)
 
 SELECT
 	"r"."Id",
@@ -100,7 +100,7 @@ WHERE
 	END
 
 BeforeExecute
--- Firebird.2.5 Firebird
+-- Firebird.2.5 Firebird (asynchronously)
 
 SELECT
 	"t1"."Id",
@@ -112,7 +112,7 @@ FROM
 	"BooleanTable" "t1"
 
 BeforeExecute
--- Firebird.2.5 Firebird
+-- Firebird.2.5 Firebird (asynchronously)
 
 SELECT
 	"r"."Id",
@@ -132,7 +132,7 @@ WHERE
 	END
 
 BeforeExecute
--- Firebird.2.5 Firebird
+-- Firebird.2.5 Firebird (asynchronously)
 
 SELECT
 	"t1"."Id",
@@ -144,7 +144,7 @@ FROM
 	"BooleanTable" "t1"
 
 BeforeExecute
--- Firebird.2.5 Firebird
+-- Firebird.2.5 Firebird (asynchronously)
 
 SELECT
 	"r"."Id",
@@ -165,7 +165,7 @@ WHERE
 	END
 
 BeforeExecute
--- Firebird.2.5 Firebird
+-- Firebird.2.5 Firebird (asynchronously)
 
 SELECT
 	"t1"."Id",
@@ -177,7 +177,7 @@ FROM
 	"BooleanTable" "t1"
 
 BeforeExecute
--- Firebird.2.5 Firebird
+-- Firebird.2.5 Firebird (asynchronously)
 
 SELECT
 	"r"."Id",
@@ -205,7 +205,7 @@ WHERE
 	END
 
 BeforeExecute
--- Firebird.2.5 Firebird
+-- Firebird.2.5 Firebird (asynchronously)
 
 SELECT
 	"t1"."Id",
@@ -217,7 +217,7 @@ FROM
 	"BooleanTable" "t1"
 
 BeforeExecute
--- Firebird.2.5 Firebird
+-- Firebird.2.5 Firebird (asynchronously)
 
 SELECT
 	"r"."Id",
@@ -253,7 +253,7 @@ WHERE
 	END
 
 BeforeExecute
--- Firebird.2.5 Firebird
+-- Firebird.2.5 Firebird (asynchronously)
 
 SELECT
 	"t1"."Id",

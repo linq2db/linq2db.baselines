@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Access.Jet.Odbc AccessODBC
+-- Access.Jet.Odbc AccessODBC (asynchronously)
 
 SELECT
 	DatePart('s', DateAdd('s', -35, [t].[DateTimeValue]))

@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Oracle.21.Managed Oracle.Managed Oracle12
+-- Oracle.21.Managed Oracle.Managed Oracle12 (asynchronously)
 DECLARE @FirstName NVarchar2(3) -- String
 SET     @FirstName = '123'
 DECLARE @LastName Varchar2(3) -- String
@@ -29,7 +29,7 @@ RETURNING
 	"PersonID" INTO :IDENTITY_PARAMETER
 
 BeforeExecute
--- Oracle.21.Managed Oracle.Managed Oracle12
+-- Oracle.21.Managed Oracle.Managed Oracle12 (asynchronously)
 DECLARE @id Int32
 SET     @id = 5
 

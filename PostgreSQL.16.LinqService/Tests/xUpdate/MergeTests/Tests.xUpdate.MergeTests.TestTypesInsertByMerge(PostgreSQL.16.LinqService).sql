@@ -1,17 +1,17 @@
 ﻿BeforeExecute
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
+-- PostgreSQL.16 PostgreSQL.15 PostgreSQL (asynchronously)
 
 DELETE FROM
 	"TestMerge1" t1
 
 BeforeExecute
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
+-- PostgreSQL.16 PostgreSQL.15 PostgreSQL (asynchronously)
 
 DELETE FROM
 	"TestMerge2" t1
 
 BeforeExecute
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
+-- PostgreSQL.16 PostgreSQL.15 PostgreSQL (asynchronously)
 DECLARE @value TimestampTz -- DateTime
 SET     @value = '2000-11-22T12:59:15.1244567+00:00'
 DECLARE @value_1 Interval -- Object
@@ -105,7 +105,7 @@ VALUES
 )
 
 BeforeExecute
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
+-- PostgreSQL.16 PostgreSQL.15 PostgreSQL (asynchronously)
 DECLARE @value TimestampTz -- DateTime
 SET     @value = '2001-11-22T14:53:14.1233457+00:00'
 DECLARE @value_1 Interval -- Object
@@ -202,7 +202,7 @@ VALUES
 )
 
 BeforeExecute
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
+-- PostgreSQL.16 PostgreSQL.15 PostgreSQL (asynchronously)
 
 SELECT
 	t1."Id",
@@ -230,7 +230,7 @@ ORDER BY
 	t1."Id"
 
 BeforeExecute
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
+-- PostgreSQL.16 PostgreSQL.15 PostgreSQL (asynchronously)
 
 SELECT
 	t1."Id",

@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- ClickHouse.MySql ClickHouse
+-- ClickHouse.MySql ClickHouse (asynchronously)
 
 CREATE TABLE Table
 (
@@ -8,7 +8,7 @@ CREATE TABLE Table
 ENGINE = Memory()
 
 BeforeExecute
--- ClickHouse.MySql ClickHouse
+-- ClickHouse.MySql ClickHouse (asynchronously)
 
 DROP TABLE Table
 

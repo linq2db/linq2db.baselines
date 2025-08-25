@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL (asynchronously)
 
 UPDATE
 	"TrimTestTable"
@@ -9,7 +9,7 @@ WHERE
 	"TrimTestTable"."ID" = 3
 
 BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL (asynchronously)
 
 UPDATE
 	"TrimTestTable"
@@ -19,7 +19,7 @@ WHERE
 	"TrimTestTable"."Data" = '***XXX***'
 
 BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL (asynchronously)
 
 UPDATE
 	"TrimTestTable"
@@ -29,7 +29,7 @@ WHERE
 	"TrimTestTable"."Data" = '***HHH***'
 
 BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL (asynchronously)
 
 SELECT
 	r."ID",
@@ -40,7 +40,7 @@ ORDER BY
 	r."ID"
 
 BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL (asynchronously)
 
 SELECT
 	r."ID",

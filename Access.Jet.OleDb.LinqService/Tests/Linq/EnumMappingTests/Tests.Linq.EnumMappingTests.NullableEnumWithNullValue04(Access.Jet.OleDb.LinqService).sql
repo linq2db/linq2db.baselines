@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Access.Jet.OleDb AccessOleDb
+-- Access.Jet.OleDb AccessOleDb (asynchronously)
 DECLARE @p Integer -- Int32
 SET     @p = 105
 
@@ -9,7 +9,7 @@ WHERE
 	[r].[ID] >= 101 AND [r].[ID] < @p
 
 BeforeExecute
--- Access.Jet.OleDb AccessOleDb
+-- Access.Jet.OleDb AccessOleDb (asynchronously)
 DECLARE @Id Integer -- Int32
 SET     @Id = 101
 DECLARE @Value WChar(2) -- StringFixedLength
@@ -27,7 +27,7 @@ VALUES
 )
 
 BeforeExecute
--- Access.Jet.OleDb AccessOleDb
+-- Access.Jet.OleDb AccessOleDb (asynchronously)
 DECLARE @Id Integer -- Int32
 SET     @Id = 102
 DECLARE @Value WChar(2) -- StringFixedLength
@@ -45,7 +45,7 @@ VALUES
 )
 
 BeforeExecute
--- Access.Jet.OleDb AccessOleDb
+-- Access.Jet.OleDb AccessOleDb (asynchronously)
 DECLARE @Id Integer -- Int32
 SET     @Id = 103
 DECLARE @Value WChar -- StringFixedLength
@@ -63,7 +63,7 @@ VALUES
 )
 
 BeforeExecute
--- Access.Jet.OleDb AccessOleDb
+-- Access.Jet.OleDb AccessOleDb (asynchronously)
 DECLARE @Id Integer -- Int32
 SET     @Id = 104
 DECLARE @Value WChar -- StringFixedLength
@@ -81,7 +81,7 @@ VALUES
 )
 
 BeforeExecute
--- Access.Jet.OleDb AccessOleDb
+-- Access.Jet.OleDb AccessOleDb (asynchronously)
 
 SELECT
 	[r].[ID],
@@ -94,7 +94,7 @@ ORDER BY
 	[r].[ID]
 
 BeforeExecute
--- Access.Jet.OleDb AccessOleDb
+-- Access.Jet.OleDb AccessOleDb (asynchronously)
 
 SELECT
 	[r].[ID],
@@ -108,7 +108,7 @@ ORDER BY
 	[r].[ID]
 
 BeforeExecute
--- Access.Jet.OleDb AccessOleDb
+-- Access.Jet.OleDb AccessOleDb (asynchronously)
 DECLARE @p Integer -- Int32
 SET     @p = 105
 

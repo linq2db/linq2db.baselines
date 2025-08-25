@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Oracle.12.Managed Oracle.Managed Oracle12
+-- Oracle.12.Managed Oracle.Managed Oracle12 (asynchronously)
 DECLARE @Data Varchar2(9) -- String
 SET     @Data = '***III***'
 DECLARE @ID Int32
@@ -13,7 +13,7 @@ WHERE
 	t1.ID = :ID
 
 BeforeExecute
--- Oracle.12.Managed Oracle.Managed Oracle12
+-- Oracle.12.Managed Oracle.Managed Oracle12 (asynchronously)
 DECLARE @Data Varchar2(9) -- String
 SET     @Data = '***OOO***'
 
@@ -25,7 +25,7 @@ WHERE
 	t."Data" = '***XXX***'
 
 BeforeExecute
--- Oracle.12.Managed Oracle.Managed Oracle12
+-- Oracle.12.Managed Oracle.Managed Oracle12 (asynchronously)
 DECLARE @Data Varchar2(9) -- String
 SET     @Data = '***SSS***'
 DECLARE @p Varchar2(9) -- String
@@ -39,7 +39,7 @@ WHERE
 	t."Data" = :p
 
 BeforeExecute
--- Oracle.12.Managed Oracle.Managed Oracle12
+-- Oracle.12.Managed Oracle.Managed Oracle12 (asynchronously)
 
 SELECT
 	r.ID,
@@ -50,7 +50,7 @@ ORDER BY
 	r.ID
 
 BeforeExecute
--- Oracle.12.Managed Oracle.Managed Oracle12
+-- Oracle.12.Managed Oracle.Managed Oracle12 (asynchronously)
 
 SELECT
 	r.ID,

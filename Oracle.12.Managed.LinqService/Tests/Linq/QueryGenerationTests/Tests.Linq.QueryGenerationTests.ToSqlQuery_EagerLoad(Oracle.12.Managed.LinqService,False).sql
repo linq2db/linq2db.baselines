@@ -12,7 +12,7 @@ WHERE
 	p."ParentID" = :id
 
 BeforeExecute
--- Oracle.12.Managed Oracle.Managed Oracle12
+-- Oracle.12.Managed Oracle.Managed Oracle12 (asynchronously)
 DECLARE @id Int32
 SET     @id = 2
 

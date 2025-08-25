@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL (asynchronously)
 DECLARE @id Integer -- Int32
 SET     @id = 1
 
@@ -15,7 +15,7 @@ WHERE
 	p."PersonID" = :id AND p."MiddleName" IS NULL
 
 BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL (asynchronously)
 DECLARE @id Integer -- Int32
 SET     @id = 1
 

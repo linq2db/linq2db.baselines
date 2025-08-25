@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MySql (asynchronously)
 DECLARE @Id Int32
 SET     @Id = 1
 DECLARE @InitOnlyId Int32
@@ -16,7 +16,7 @@ WHERE
 	`e`.`Id` = @Id AND `e`.`Id` = @InitOnlyId
 
 BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MySql (asynchronously)
 
 SELECT
 	`t1`.`Id`,
@@ -27,7 +27,7 @@ FROM
 	`TestConstantsData` `t1`
 
 BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MySql (asynchronously)
 DECLARE @Id Int32
 SET     @Id = 1
 DECLARE @InitOnlyId Int32
@@ -44,7 +44,7 @@ WHERE
 	`e`.`Id` = @Id AND `e`.`Id` = @InitOnlyId
 
 BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MySql (asynchronously)
 
 SELECT
 	`t1`.`Id`,

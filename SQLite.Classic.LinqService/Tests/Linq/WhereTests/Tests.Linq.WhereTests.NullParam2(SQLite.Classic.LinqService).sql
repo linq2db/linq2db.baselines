@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SQLite.Classic SQLite
+-- SQLite.Classic SQLite (asynchronously)
 DECLARE @id  -- Int32
 SET     @id = 1
 
@@ -15,7 +15,7 @@ WHERE
 	[p].[PersonID] = @id AND [p].[MiddleName] IS NULL
 
 BeforeExecute
--- SQLite.Classic SQLite
+-- SQLite.Classic SQLite (asynchronously)
 DECLARE @id  -- Int32
 SET     @id = 1
 

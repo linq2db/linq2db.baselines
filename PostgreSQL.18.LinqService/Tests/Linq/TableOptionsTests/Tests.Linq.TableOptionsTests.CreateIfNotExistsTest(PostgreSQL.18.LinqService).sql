@@ -1,10 +1,10 @@
 ﻿BeforeExecute
--- PostgreSQL.18 PostgreSQL
+-- PostgreSQL.18 PostgreSQL (asynchronously)
 
 DROP TABLE IF EXISTS "CreateIfNotExistsTable"
 
 BeforeExecute
--- PostgreSQL.18 PostgreSQL
+-- PostgreSQL.18 PostgreSQL (asynchronously)
 
 CREATE TABLE IF NOT EXISTS "CreateIfNotExistsTable"
 (
@@ -13,7 +13,7 @@ CREATE TABLE IF NOT EXISTS "CreateIfNotExistsTable"
 )
 
 BeforeExecute
--- PostgreSQL.18 PostgreSQL
+-- PostgreSQL.18 PostgreSQL (asynchronously)
 
 INSERT INTO "CreateIfNotExistsTable"
 (
@@ -27,7 +27,7 @@ VALUES
 )
 
 BeforeExecute
--- PostgreSQL.18 PostgreSQL
+-- PostgreSQL.18 PostgreSQL (asynchronously)
 
 SELECT
 	t1."Id",
@@ -36,7 +36,7 @@ FROM
 	"CreateIfNotExistsTable" t1
 
 BeforeExecute
--- PostgreSQL.18 PostgreSQL
+-- PostgreSQL.18 PostgreSQL (asynchronously)
 
 CREATE TABLE IF NOT EXISTS "CreateIfNotExistsTable"
 (
@@ -45,12 +45,12 @@ CREATE TABLE IF NOT EXISTS "CreateIfNotExistsTable"
 )
 
 BeforeExecute
--- PostgreSQL.18 PostgreSQL
+-- PostgreSQL.18 PostgreSQL (asynchronously)
 
 DROP TABLE IF EXISTS "CreateIfNotExistsTable"
 
 BeforeExecute
--- PostgreSQL.18 PostgreSQL
+-- PostgreSQL.18 PostgreSQL (asynchronously)
 
 DROP TABLE IF EXISTS "CreateIfNotExistsTable"
 

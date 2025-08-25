@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2017
+-- SqlServer.2017 (asynchronously)
 
 SELECT
 	COUNT(*)
@@ -10,7 +10,7 @@ WHERE
 	[a_Parent].[ParentID] = 1
 
 BeforeExecute
--- SqlServer.2017
+-- SqlServer.2017 (asynchronously)
 
 SELECT
 	COUNT(*)
@@ -21,7 +21,7 @@ WHERE
 	[a_Parent].[ParentID] = 1
 
 BeforeExecute
--- SqlServer.2017
+-- SqlServer.2017 (asynchronously)
 
 SELECT
 	[a_Parent].[ParentID]

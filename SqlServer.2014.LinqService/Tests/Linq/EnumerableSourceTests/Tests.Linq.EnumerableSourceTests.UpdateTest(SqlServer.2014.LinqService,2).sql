@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2014
+-- SqlServer.2014 (asynchronously)
 
 UPDATE
 	[u]
@@ -14,7 +14,7 @@ WHERE
 	[u].[Id] = [r].[Id]
 
 BeforeExecute
--- SqlServer.2014
+-- SqlServer.2014 (asynchronously)
 
 SELECT
 	[t1].[Id],

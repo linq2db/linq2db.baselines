@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Firebird.3 Firebird3
+-- Firebird.3 Firebird3 (asynchronously)
 
 SELECT
 	"t1"."ParentID",
@@ -23,7 +23,7 @@ FROM
 	"Parent" "t1"
 
 BeforeExecute
--- Firebird.3 Firebird3
+-- Firebird.3 Firebird3 (asynchronously)
 
 SELECT
 	COUNT(*)
@@ -31,7 +31,7 @@ FROM
 	"Parent" "t1"
 
 BeforeExecute
--- Firebird.3 Firebird3
+-- Firebird.3 Firebird3 (asynchronously)
 
 SELECT
 	"x_1"."ParentID",

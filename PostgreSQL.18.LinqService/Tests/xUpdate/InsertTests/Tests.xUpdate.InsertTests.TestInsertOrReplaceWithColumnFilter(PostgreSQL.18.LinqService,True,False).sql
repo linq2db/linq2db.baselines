@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- PostgreSQL.18 PostgreSQL
+-- PostgreSQL.18 PostgreSQL (asynchronously)
 DECLARE @ID Integer -- Int32
 SET     @ID = 0
 DECLARE @FirstName Text(27) -- String
@@ -29,7 +29,7 @@ ON CONFLICT ("ID") DO UPDATE SET
 	"MiddleName" = :MiddleName
 
 BeforeExecute
--- PostgreSQL.18 PostgreSQL
+-- PostgreSQL.18 PostgreSQL (asynchronously)
 DECLARE @FirstName Text(27) -- String
 SET     @FirstName = 'InsertOrReplaceColumnFilter'
 
@@ -45,7 +45,7 @@ WHERE
 LIMIT 1
 
 BeforeExecute
--- PostgreSQL.18 PostgreSQL
+-- PostgreSQL.18 PostgreSQL (asynchronously)
 DECLARE @ID Integer -- Int32
 SET     @ID = 0
 DECLARE @FirstName Text(27) -- String
@@ -75,7 +75,7 @@ ON CONFLICT ("ID") DO UPDATE SET
 	"MiddleName" = :MiddleName
 
 BeforeExecute
--- PostgreSQL.18 PostgreSQL
+-- PostgreSQL.18 PostgreSQL (asynchronously)
 DECLARE @FirstName Text(27) -- String
 SET     @FirstName = 'InsertOrReplaceColumnFilter'
 

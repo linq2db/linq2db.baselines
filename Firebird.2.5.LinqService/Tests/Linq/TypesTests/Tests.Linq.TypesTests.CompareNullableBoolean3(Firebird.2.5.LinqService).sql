@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Firebird.2.5 Firebird
+-- Firebird.2.5 Firebird (asynchronously)
 DECLARE @param2 Char -- String
 SET     @param2 = '0'
 

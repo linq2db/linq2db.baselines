@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2016
+-- SqlServer.2016 (asynchronously)
 
 SELECT
 	[t1].[ParentID],
@@ -11,7 +11,7 @@ ORDER BY
 OFFSET 3 ROWS
 
 BeforeExecute
--- SqlServer.2016
+-- SqlServer.2016 (asynchronously)
 
 SELECT
 	[t1].[ParentID],

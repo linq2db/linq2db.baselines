@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Firebird.3 Firebird3
+-- Firebird.3 Firebird3 (asynchronously)
 
 INSERT INTO "Person"
 (
@@ -15,7 +15,7 @@ VALUES
 )
 
 BeforeExecute
--- Firebird.3 Firebird3
+-- Firebird.3 Firebird3 (asynchronously)
 
 SELECT
 	COUNT(*)
@@ -25,7 +25,7 @@ WHERE
 	"c_1"."LastName" = 'Limonadovy'
 
 BeforeExecute
--- Firebird.3 Firebird3
+-- Firebird.3 Firebird3 (asynchronously)
 
 UPDATE
 	"Person" "c_1"
@@ -35,7 +35,7 @@ WHERE
 	"c_1"."LastName" = 'Limonadovy'
 
 BeforeExecute
--- Firebird.3 Firebird3
+-- Firebird.3 Firebird3 (asynchronously)
 
 SELECT
 	COUNT(*)

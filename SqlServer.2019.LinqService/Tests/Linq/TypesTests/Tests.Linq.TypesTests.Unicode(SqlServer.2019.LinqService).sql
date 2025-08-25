@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2019
+-- SqlServer.2019 (asynchronously)
 DECLARE @FirstName NVarChar(4000) -- String
 SET     @FirstName = N'擊敗奴隸'
 DECLARE @LastName NVarChar(4000) -- String
@@ -25,7 +25,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2019
+-- SqlServer.2019 (asynchronously)
 
 SELECT TOP (2)
 	[p].[FirstName],

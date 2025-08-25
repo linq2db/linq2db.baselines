@@ -1,10 +1,10 @@
 ﻿BeforeExecute
--- MySql.5.7 MySql.5.7.MySql.Data MySql57
+-- MySql.5.7 MySql.5.7.MySql.Data MySql57 (asynchronously)
 
 DROP TABLE IF EXISTS `TestTrun`
 
 BeforeExecute
--- MySql.5.7 MySql.5.7.MySql.Data MySql57
+-- MySql.5.7 MySql.5.7.MySql.Data MySql57 (asynchronously)
 
 CREATE TABLE `TestTrun`
 (
@@ -15,12 +15,12 @@ CREATE TABLE `TestTrun`
 )
 
 BeforeExecute
--- MySql.5.7 MySql.5.7.MySql.Data MySql57
+-- MySql.5.7 MySql.5.7.MySql.Data MySql57 (asynchronously)
 
 TRUNCATE TABLE `TestTrun`
 
 BeforeExecute
--- MySql.5.7 MySql.5.7.MySql.Data MySql57
+-- MySql.5.7 MySql.5.7.MySql.Data MySql57 (asynchronously)
 
 DROP TABLE `TestTrun`
 

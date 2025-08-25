@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MySql (asynchronously)
 
 SELECT
 	`t`.`Kind` = 1 OR `t`.`Kind` = 2,
@@ -15,7 +15,7 @@ FROM
 	`Item` `t`
 
 BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MySql (asynchronously)
 
 SELECT
 	`t1`.`ItemId`,
@@ -27,7 +27,7 @@ FROM
 	`Item` `t1`
 
 BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MySql (asynchronously)
 
 SELECT
 	`x_1`.`cond_1`,
@@ -60,7 +60,7 @@ WHERE
 	NOT (`x_1`.`cond` AND (`x_1`.`cond_1` AND `x_1`.`cond_2` OR NOT `x_1`.`cond_1`) OR NOT `x_1`.`cond` AND NOT `x_1`.`cond_3`)
 
 BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MySql (asynchronously)
 
 SELECT
 	`t1`.`ItemId`,
@@ -72,7 +72,7 @@ FROM
 	`Item` `t1`
 
 BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MySql (asynchronously)
 
 SELECT
 	`x_1`.`cond_1`,
@@ -106,7 +106,7 @@ WHERE
 	NOT `x_1`.`cond` AND NOT `x_1`.`cond_3`
 
 BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MySql (asynchronously)
 
 SELECT
 	`t1`.`ItemId`,
@@ -118,7 +118,7 @@ FROM
 	`Item` `t1`
 
 BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MySql (asynchronously)
 
 SELECT
 	`x_1`.`cond_1`,
@@ -151,7 +151,7 @@ WHERE
 	NOT (NOT `x_1`.`cond` AND (`x_1`.`cond_2` AND `x_1`.`cond_3` OR NOT `x_1`.`cond_2`))
 
 BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MySql (asynchronously)
 
 SELECT
 	`t1`.`ItemId`,
@@ -163,7 +163,7 @@ FROM
 	`Item` `t1`
 
 BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MySql (asynchronously)
 
 SELECT
 	`x_1`.`cond_1`,
@@ -196,7 +196,7 @@ WHERE
 	NOT `x_1`.`cond` AND (`x_1`.`cond_2` AND `x_1`.`cond_3` OR NOT `x_1`.`cond_2`)
 
 BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MySql (asynchronously)
 
 SELECT
 	`t1`.`ItemId`,

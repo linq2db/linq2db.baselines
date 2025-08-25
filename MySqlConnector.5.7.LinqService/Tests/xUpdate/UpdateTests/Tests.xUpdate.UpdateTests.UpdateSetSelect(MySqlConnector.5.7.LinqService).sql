@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
+-- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57 (asynchronously)
 
 DELETE  
 FROM
@@ -8,7 +8,7 @@ WHERE
 	`Parent`.`ParentID` > 1000
 
 BeforeExecute
--- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
+-- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57 (asynchronously)
 
 UPDATE
 	`Parent` `p`
@@ -20,7 +20,7 @@ WHERE
 	`p`.`ParentID` = 1
 
 BeforeExecute
--- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
+-- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57 (asynchronously)
 DECLARE @ParentID Int32
 SET     @ParentID = 1
 

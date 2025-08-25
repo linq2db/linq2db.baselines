@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Firebird.5 Firebird4
+-- Firebird.5 Firebird4 (asynchronously)
 DECLARE @value Float -- Single
 SET     @value = NULL
 
@@ -16,7 +16,7 @@ FROM
 	) "t1"
 
 BeforeExecute
--- Firebird.5 Firebird4
+-- Firebird.5 Firebird4 (asynchronously)
 DECLARE @value Float -- Single
 SET     @value = 3.14748365E+09
 

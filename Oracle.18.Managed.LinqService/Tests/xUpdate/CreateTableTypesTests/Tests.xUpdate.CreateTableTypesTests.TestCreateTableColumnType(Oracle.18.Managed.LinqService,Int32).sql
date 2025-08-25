@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Oracle.18.Managed Oracle.Managed Oracle12
+-- Oracle.18.Managed Oracle.Managed Oracle12 (asynchronously)
 DECLARE @Id Int32
 SET     @Id = 1
 DECLARE @Int32 Int32
@@ -17,7 +17,7 @@ VALUES
 )
 
 BeforeExecute
--- Oracle.18.Managed Oracle.Managed Oracle12
+-- Oracle.18.Managed Oracle.Managed Oracle12 (asynchronously)
 DECLARE @Id Int32
 SET     @Id = 2
 DECLARE @Int32 Int32
@@ -35,7 +35,7 @@ VALUES
 )
 
 BeforeExecute
--- Oracle.18.Managed Oracle.Managed Oracle12
+-- Oracle.18.Managed Oracle.Managed Oracle12 (asynchronously)
 
 SELECT
 	t1."Id",

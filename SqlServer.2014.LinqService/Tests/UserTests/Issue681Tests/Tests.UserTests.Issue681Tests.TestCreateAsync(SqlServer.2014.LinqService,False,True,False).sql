@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2014
+-- SqlServer.2014 (asynchronously)
 
 SELECT TOP (1)
 	DB_NAME()
@@ -7,7 +7,7 @@ FROM
 	[LinqDataTypes] [t1]
 
 BeforeExecute
--- SqlServer.2014
+-- SqlServer.2014 (asynchronously)
 
 IF (OBJECT_ID(N'[Issue681Table2]', N'U') IS NOT NULL)
 	DROP TABLE [Issue681Table2]

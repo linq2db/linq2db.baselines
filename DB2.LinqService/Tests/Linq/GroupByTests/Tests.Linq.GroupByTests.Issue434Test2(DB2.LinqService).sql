@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- DB2 DB2.LUW DB2LUW
+-- DB2 DB2.LUW DB2LUW (asynchronously)
 
 SELECT
 	"m_1"."PersonID",
@@ -12,7 +12,7 @@ WHERE
 	Lower("m_1"."FirstName") LIKE '%test%' ESCAPE '~'
 
 BeforeExecute
--- DB2 DB2.LUW DB2LUW
+-- DB2 DB2.LUW DB2LUW (asynchronously)
 
 SELECT
 	"p"."FirstName",

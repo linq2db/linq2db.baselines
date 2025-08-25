@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Access.Jet.Odbc AccessODBC
+-- Access.Jet.Odbc AccessODBC (asynchronously)
 
 CREATE TABLE [TableWithPrimaryKey]
 (
@@ -9,7 +9,7 @@ CREATE TABLE [TableWithPrimaryKey]
 )
 
 BeforeExecute
--- Access.Jet.Odbc AccessODBC
+-- Access.Jet.Odbc AccessODBC (asynchronously)
 
 DROP TABLE [TableWithPrimaryKey]
 

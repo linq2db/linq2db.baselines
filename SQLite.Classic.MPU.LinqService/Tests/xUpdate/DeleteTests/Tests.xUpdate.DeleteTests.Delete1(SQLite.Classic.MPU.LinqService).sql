@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
+-- SQLite.Classic.MPU SQLite.Classic SQLite (asynchronously)
 DECLARE @ParentID  -- Int32
 SET     @ParentID = 1001
 
@@ -9,7 +9,7 @@ WHERE
 	[Parent].[ParentID] = @ParentID
 
 BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
+-- SQLite.Classic.MPU SQLite.Classic SQLite (asynchronously)
 DECLARE @ParentID  -- Int32
 SET     @ParentID = 1001
 DECLARE @Value1  -- Int32
@@ -27,7 +27,7 @@ VALUES
 )
 
 BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
+-- SQLite.Classic.MPU SQLite.Classic SQLite (asynchronously)
 DECLARE @ParentID  -- Int32
 SET     @ParentID = 1001
 
@@ -39,7 +39,7 @@ WHERE
 	[p].[ParentID] = @ParentID
 
 BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
+-- SQLite.Classic.MPU SQLite.Classic SQLite (asynchronously)
 DECLARE @ParentID  -- Int32
 SET     @ParentID = 1001
 
@@ -49,7 +49,7 @@ WHERE
 	[Parent].[ParentID] = @ParentID
 
 BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
+-- SQLite.Classic.MPU SQLite.Classic SQLite (asynchronously)
 DECLARE @ParentID  -- Int32
 SET     @ParentID = 1001
 

@@ -13,7 +13,7 @@ WHERE
 	p.MiddleName IS NOT NULL
 
 BeforeExecute
--- ClickHouse.Driver ClickHouse
+-- ClickHouse.Driver ClickHouse (asynchronously)
 
 SELECT
 	p.FirstName,

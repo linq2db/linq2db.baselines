@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
+-- PostgreSQL.16 PostgreSQL.15 PostgreSQL (asynchronously)
 DECLARE @int1 Integer -- Int32
 SET     @int1 = 11
 DECLARE @int2 Integer -- Int32
@@ -35,7 +35,7 @@ WHERE
 	"UpdatedEntities".id = t1.id
 
 BeforeExecute
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
+-- PostgreSQL.16 PostgreSQL.15 PostgreSQL (asynchronously)
 
 SELECT
 	v.id,

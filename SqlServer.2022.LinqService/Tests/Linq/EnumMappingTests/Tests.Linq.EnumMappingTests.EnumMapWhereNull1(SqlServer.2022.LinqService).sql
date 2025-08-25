@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2022
+-- SqlServer.2022 (asynchronously)
 DECLARE @p Int -- Int32
 SET     @p = 102
 
@@ -10,7 +10,7 @@ WHERE
 	[r].[ID] >= 101 AND [r].[ID] < @p
 
 BeforeExecute
--- SqlServer.2022
+-- SqlServer.2022 (asynchronously)
 
 INSERT INTO [LinqDataTypes]
 (
@@ -22,7 +22,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2022
+-- SqlServer.2022 (asynchronously)
 
 SELECT TOP (1)
 	[r].[BigIntValue]
@@ -32,7 +32,7 @@ WHERE
 	[r].[ID] = 101 AND [r].[BigIntValue] IS NULL
 
 BeforeExecute
--- SqlServer.2022
+-- SqlServer.2022 (asynchronously)
 DECLARE @p Int -- Int32
 SET     @p = 102
 

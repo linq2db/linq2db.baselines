@@ -15,7 +15,7 @@ WHERE
 	[p].[FirstName] = @firstName OR [p].[LastName] = @firstName
 
 BeforeExecute
--- SqlServer.2012
+-- SqlServer.2012 (asynchronously)
 DECLARE @firstName NVarChar(4000) -- String
 SET     @firstName = N'John'
 

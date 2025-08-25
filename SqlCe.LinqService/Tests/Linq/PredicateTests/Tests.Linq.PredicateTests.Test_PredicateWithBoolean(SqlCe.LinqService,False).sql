@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 
 SELECT
 	[r].[Id],
@@ -13,7 +13,7 @@ WHERE
 	[r].[Value1] = [r].[Value2]
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -25,7 +25,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 DECLARE @TrueN Bit -- Boolean
 SET     @TrueN = 1
 
@@ -44,7 +44,7 @@ WHERE
 	END = @TrueN
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -56,7 +56,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 
 SELECT
 	[r].[Id],
@@ -70,7 +70,7 @@ WHERE
 	[r].[Value1] <> [r].[Value4] OR [r].[Value4] IS NULL
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -82,7 +82,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 DECLARE @FalseN Bit -- Boolean
 SET     @FalseN = 0
 
@@ -101,7 +101,7 @@ WHERE
 	END = @FalseN
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -113,7 +113,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 
 SELECT
 	[r].[Id],
@@ -127,7 +127,7 @@ WHERE
 	1 = 0
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -139,7 +139,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 
 SELECT
 	[r].[Id],
@@ -153,7 +153,7 @@ WHERE
 	[r].[Value1] = [r].[Value4]
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -165,7 +165,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 DECLARE @TrueN Bit -- Boolean
 SET     @TrueN = 1
 
@@ -184,7 +184,7 @@ WHERE
 	END = @TrueN
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -196,7 +196,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 
 SELECT
 	[r].[Id],
@@ -210,7 +210,7 @@ WHERE
 	[r].[Value1] <> [r].[Value4] OR [r].[Value4] IS NULL
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -222,7 +222,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 DECLARE @FalseN Bit -- Boolean
 SET     @FalseN = 0
 
@@ -241,7 +241,7 @@ WHERE
 	END = @FalseN
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -253,7 +253,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 
 SELECT
 	[r].[Id],
@@ -267,7 +267,7 @@ WHERE
 	1 = 0
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -279,7 +279,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 
 SELECT
 	[r].[Id],
@@ -293,7 +293,7 @@ WHERE
 	[r].[Value5] = [r].[Value4] OR [r].[Value5] IS NULL AND [r].[Value4] IS NULL
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -305,7 +305,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 DECLARE @TrueN Bit -- Boolean
 SET     @TrueN = 1
 
@@ -325,7 +325,7 @@ WHERE
 	END = @TrueN
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -337,7 +337,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 
 SELECT
 	[r].[Id],
@@ -352,7 +352,7 @@ WHERE
 	[r].[Value5] IS NOT NULL AND [r].[Value4] IS NULL
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -364,7 +364,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 DECLARE @FalseN Bit -- Boolean
 SET     @FalseN = 0
 
@@ -384,7 +384,7 @@ WHERE
 	END = @FalseN
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -396,7 +396,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 
 SELECT
 	[r].[Id],
@@ -410,7 +410,7 @@ WHERE
 	1 = 0
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -422,7 +422,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 
 SELECT
 	[r].[Id],
@@ -436,7 +436,7 @@ WHERE
 	[r].[Value1] <> [r].[Value2]
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -448,7 +448,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 DECLARE @TrueN Bit -- Boolean
 SET     @TrueN = 1
 
@@ -467,7 +467,7 @@ WHERE
 	END <> @TrueN
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -479,7 +479,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 
 SELECT
 	[r].[Id],
@@ -493,7 +493,7 @@ WHERE
 	[r].[Value1] = [r].[Value2]
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -505,7 +505,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 DECLARE @FalseN Bit -- Boolean
 SET     @FalseN = 0
 
@@ -524,7 +524,7 @@ WHERE
 	END <> @FalseN
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -536,7 +536,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 
 SELECT
 	[r].[Id],
@@ -548,7 +548,7 @@ FROM
 	[BooleanTable] [r]
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -560,7 +560,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 
 SELECT
 	[r].[Id],
@@ -574,7 +574,7 @@ WHERE
 	[r].[Value1] <> [r].[Value4] OR [r].[Value4] IS NULL
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -586,7 +586,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 DECLARE @TrueN Bit -- Boolean
 SET     @TrueN = 1
 
@@ -605,7 +605,7 @@ WHERE
 	END <> @TrueN
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -617,7 +617,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 
 SELECT
 	[r].[Id],
@@ -631,7 +631,7 @@ WHERE
 	[r].[Value1] = [r].[Value4]
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -643,7 +643,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 DECLARE @FalseN Bit -- Boolean
 SET     @FalseN = 0
 
@@ -662,7 +662,7 @@ WHERE
 	END <> @FalseN
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -674,7 +674,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 
 SELECT
 	[r].[Id],
@@ -686,7 +686,7 @@ FROM
 	[BooleanTable] [r]
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -698,7 +698,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 
 SELECT
 	[r].[Id],
@@ -713,7 +713,7 @@ WHERE
 	[r].[Value5] IS NOT NULL AND [r].[Value4] IS NULL
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -725,7 +725,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 DECLARE @TrueN Bit -- Boolean
 SET     @TrueN = 1
 
@@ -745,7 +745,7 @@ WHERE
 	END <> @TrueN
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -757,7 +757,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 
 SELECT
 	[r].[Id],
@@ -771,7 +771,7 @@ WHERE
 	[r].[Value5] = [r].[Value4] OR [r].[Value5] IS NULL AND [r].[Value4] IS NULL
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -783,7 +783,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 DECLARE @FalseN Bit -- Boolean
 SET     @FalseN = 0
 
@@ -803,7 +803,7 @@ WHERE
 	END <> @FalseN
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -815,7 +815,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 
 SELECT
 	[r].[Id],
@@ -827,7 +827,7 @@ FROM
 	[BooleanTable] [r]
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -839,7 +839,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 
 SELECT
 	[r].[Id],
@@ -853,7 +853,7 @@ WHERE
 	[r].[Value1] > [r].[Value2]
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -865,7 +865,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 DECLARE @TrueN Bit -- Boolean
 SET     @TrueN = 1
 
@@ -884,7 +884,7 @@ WHERE
 	END = @TrueN
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -896,7 +896,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 
 SELECT
 	[r].[Id],
@@ -910,7 +910,7 @@ WHERE
 	[r].[Value1] <= [r].[Value2]
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -922,7 +922,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 DECLARE @FalseN Bit -- Boolean
 SET     @FalseN = 0
 
@@ -941,7 +941,7 @@ WHERE
 	END = @FalseN
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -953,7 +953,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 
 SELECT
 	[r].[Id],
@@ -967,7 +967,7 @@ WHERE
 	1 = 0
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -979,7 +979,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 
 SELECT
 	[r].[Id],
@@ -993,7 +993,7 @@ WHERE
 	[r].[Value1] > [r].[Value4]
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -1005,7 +1005,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 DECLARE @TrueN Bit -- Boolean
 SET     @TrueN = 1
 
@@ -1024,7 +1024,7 @@ WHERE
 	END = @TrueN
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -1036,7 +1036,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 
 SELECT
 	[r].[Id],
@@ -1050,7 +1050,7 @@ WHERE
 	[r].[Value1] <= [r].[Value4] OR [r].[Value4] IS NULL
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -1062,7 +1062,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 DECLARE @FalseN Bit -- Boolean
 SET     @FalseN = 0
 
@@ -1081,7 +1081,7 @@ WHERE
 	END = @FalseN
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -1093,7 +1093,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 
 SELECT
 	[r].[Id],
@@ -1107,7 +1107,7 @@ WHERE
 	1 = 0
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -1119,7 +1119,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 
 SELECT
 	[r].[Id],
@@ -1133,7 +1133,7 @@ WHERE
 	[r].[Value5] > [r].[Value4]
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -1145,7 +1145,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 DECLARE @TrueN Bit -- Boolean
 SET     @TrueN = 1
 
@@ -1164,7 +1164,7 @@ WHERE
 	END = @TrueN
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -1176,7 +1176,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 
 SELECT
 	[r].[Id],
@@ -1191,7 +1191,7 @@ WHERE
 	[r].[Value4] IS NULL
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -1203,7 +1203,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 DECLARE @FalseN Bit -- Boolean
 SET     @FalseN = 0
 
@@ -1222,7 +1222,7 @@ WHERE
 	END = @FalseN
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -1234,7 +1234,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 
 SELECT
 	[r].[Id],
@@ -1248,7 +1248,7 @@ WHERE
 	1 = 0
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -1260,7 +1260,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 
 SELECT
 	[r].[Id],
@@ -1274,7 +1274,7 @@ WHERE
 	[r].[Value1] <= [r].[Value2]
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -1286,7 +1286,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 DECLARE @TrueN Bit -- Boolean
 SET     @TrueN = 1
 
@@ -1305,7 +1305,7 @@ WHERE
 	END <> @TrueN
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -1317,7 +1317,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 
 SELECT
 	[r].[Id],
@@ -1331,7 +1331,7 @@ WHERE
 	[r].[Value1] > [r].[Value2]
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -1343,7 +1343,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 DECLARE @FalseN Bit -- Boolean
 SET     @FalseN = 0
 
@@ -1362,7 +1362,7 @@ WHERE
 	END <> @FalseN
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -1374,7 +1374,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 
 SELECT
 	[r].[Id],
@@ -1386,7 +1386,7 @@ FROM
 	[BooleanTable] [r]
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -1398,7 +1398,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 
 SELECT
 	[r].[Id],
@@ -1412,7 +1412,7 @@ WHERE
 	[r].[Value1] <= [r].[Value4] OR [r].[Value4] IS NULL
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -1424,7 +1424,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 DECLARE @TrueN Bit -- Boolean
 SET     @TrueN = 1
 
@@ -1443,7 +1443,7 @@ WHERE
 	END <> @TrueN
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -1455,7 +1455,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 
 SELECT
 	[r].[Id],
@@ -1469,7 +1469,7 @@ WHERE
 	[r].[Value1] > [r].[Value4]
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -1481,7 +1481,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 DECLARE @FalseN Bit -- Boolean
 SET     @FalseN = 0
 
@@ -1500,7 +1500,7 @@ WHERE
 	END <> @FalseN
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -1512,7 +1512,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 
 SELECT
 	[r].[Id],
@@ -1524,7 +1524,7 @@ FROM
 	[BooleanTable] [r]
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -1536,7 +1536,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 
 SELECT
 	[r].[Id],
@@ -1551,7 +1551,7 @@ WHERE
 	[r].[Value4] IS NULL
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -1563,7 +1563,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 DECLARE @TrueN Bit -- Boolean
 SET     @TrueN = 1
 
@@ -1582,7 +1582,7 @@ WHERE
 	END <> @TrueN
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -1594,7 +1594,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 
 SELECT
 	[r].[Id],
@@ -1608,7 +1608,7 @@ WHERE
 	[r].[Value5] > [r].[Value4]
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -1620,7 +1620,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 DECLARE @FalseN Bit -- Boolean
 SET     @FalseN = 0
 
@@ -1639,7 +1639,7 @@ WHERE
 	END <> @FalseN
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -1651,7 +1651,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 
 SELECT
 	[r].[Id],
@@ -1663,7 +1663,7 @@ FROM
 	[BooleanTable] [r]
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -1675,7 +1675,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 
 SELECT
 	[r].[Id],
@@ -1689,7 +1689,7 @@ WHERE
 	[r].[Value1] >= [r].[Value2]
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -1701,7 +1701,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 DECLARE @TrueN Bit -- Boolean
 SET     @TrueN = 1
 
@@ -1720,7 +1720,7 @@ WHERE
 	END = @TrueN
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -1732,7 +1732,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 
 SELECT
 	[r].[Id],
@@ -1746,7 +1746,7 @@ WHERE
 	[r].[Value1] < [r].[Value2]
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -1758,7 +1758,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 DECLARE @FalseN Bit -- Boolean
 SET     @FalseN = 0
 
@@ -1777,7 +1777,7 @@ WHERE
 	END = @FalseN
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -1789,7 +1789,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 
 SELECT
 	[r].[Id],
@@ -1803,7 +1803,7 @@ WHERE
 	1 = 0
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -1815,7 +1815,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 
 SELECT
 	[r].[Id],
@@ -1829,7 +1829,7 @@ WHERE
 	[r].[Value1] >= [r].[Value4]
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -1841,7 +1841,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 DECLARE @TrueN Bit -- Boolean
 SET     @TrueN = 1
 
@@ -1860,7 +1860,7 @@ WHERE
 	END = @TrueN
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -1872,7 +1872,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 
 SELECT
 	[r].[Id],
@@ -1886,7 +1886,7 @@ WHERE
 	[r].[Value1] < [r].[Value4] OR [r].[Value4] IS NULL
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -1898,7 +1898,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 DECLARE @FalseN Bit -- Boolean
 SET     @FalseN = 0
 
@@ -1917,7 +1917,7 @@ WHERE
 	END = @FalseN
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -1929,7 +1929,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 
 SELECT
 	[r].[Id],
@@ -1943,7 +1943,7 @@ WHERE
 	1 = 0
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -1955,7 +1955,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 
 SELECT
 	[r].[Id],
@@ -1969,7 +1969,7 @@ WHERE
 	[r].[Value5] >= [r].[Value4]
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -1981,7 +1981,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 DECLARE @TrueN Bit -- Boolean
 SET     @TrueN = 1
 
@@ -2000,7 +2000,7 @@ WHERE
 	END = @TrueN
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -2012,7 +2012,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 
 SELECT
 	[r].[Id],
@@ -2027,7 +2027,7 @@ WHERE
 	[r].[Value4] IS NULL
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -2039,7 +2039,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 DECLARE @FalseN Bit -- Boolean
 SET     @FalseN = 0
 
@@ -2058,7 +2058,7 @@ WHERE
 	END = @FalseN
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -2070,7 +2070,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 
 SELECT
 	[r].[Id],
@@ -2084,7 +2084,7 @@ WHERE
 	1 = 0
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -2096,7 +2096,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 
 SELECT
 	[r].[Id],
@@ -2110,7 +2110,7 @@ WHERE
 	[r].[Value1] < [r].[Value2]
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -2122,7 +2122,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 DECLARE @TrueN Bit -- Boolean
 SET     @TrueN = 1
 
@@ -2141,7 +2141,7 @@ WHERE
 	END <> @TrueN
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -2153,7 +2153,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 
 SELECT
 	[r].[Id],
@@ -2167,7 +2167,7 @@ WHERE
 	[r].[Value1] >= [r].[Value2]
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -2179,7 +2179,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 DECLARE @FalseN Bit -- Boolean
 SET     @FalseN = 0
 
@@ -2198,7 +2198,7 @@ WHERE
 	END <> @FalseN
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -2210,7 +2210,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 
 SELECT
 	[r].[Id],
@@ -2222,7 +2222,7 @@ FROM
 	[BooleanTable] [r]
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -2234,7 +2234,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 
 SELECT
 	[r].[Id],
@@ -2248,7 +2248,7 @@ WHERE
 	[r].[Value1] < [r].[Value4] OR [r].[Value4] IS NULL
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -2260,7 +2260,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 DECLARE @TrueN Bit -- Boolean
 SET     @TrueN = 1
 
@@ -2279,7 +2279,7 @@ WHERE
 	END <> @TrueN
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -2291,7 +2291,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 
 SELECT
 	[r].[Id],
@@ -2305,7 +2305,7 @@ WHERE
 	[r].[Value1] >= [r].[Value4]
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -2317,7 +2317,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 DECLARE @FalseN Bit -- Boolean
 SET     @FalseN = 0
 
@@ -2336,7 +2336,7 @@ WHERE
 	END <> @FalseN
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -2348,7 +2348,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 
 SELECT
 	[r].[Id],
@@ -2360,7 +2360,7 @@ FROM
 	[BooleanTable] [r]
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -2372,7 +2372,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 
 SELECT
 	[r].[Id],
@@ -2387,7 +2387,7 @@ WHERE
 	[r].[Value4] IS NULL
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -2399,7 +2399,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 DECLARE @TrueN Bit -- Boolean
 SET     @TrueN = 1
 
@@ -2418,7 +2418,7 @@ WHERE
 	END <> @TrueN
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -2430,7 +2430,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 
 SELECT
 	[r].[Id],
@@ -2444,7 +2444,7 @@ WHERE
 	[r].[Value5] >= [r].[Value4]
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -2456,7 +2456,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 DECLARE @FalseN Bit -- Boolean
 SET     @FalseN = 0
 
@@ -2475,7 +2475,7 @@ WHERE
 	END <> @FalseN
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -2487,7 +2487,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 
 SELECT
 	[r].[Id],
@@ -2499,7 +2499,7 @@ FROM
 	[BooleanTable] [r]
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -2511,7 +2511,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 
 SELECT
 	[r].[Id],
@@ -2525,7 +2525,7 @@ WHERE
 	[r].[Value1] < [r].[Value2]
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -2537,7 +2537,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 DECLARE @TrueN Bit -- Boolean
 SET     @TrueN = 1
 
@@ -2556,7 +2556,7 @@ WHERE
 	END = @TrueN
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -2568,7 +2568,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 
 SELECT
 	[r].[Id],
@@ -2582,7 +2582,7 @@ WHERE
 	[r].[Value1] >= [r].[Value2]
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -2594,7 +2594,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 DECLARE @FalseN Bit -- Boolean
 SET     @FalseN = 0
 
@@ -2613,7 +2613,7 @@ WHERE
 	END = @FalseN
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -2625,7 +2625,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 
 SELECT
 	[r].[Id],
@@ -2639,7 +2639,7 @@ WHERE
 	1 = 0
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -2651,7 +2651,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 
 SELECT
 	[r].[Id],
@@ -2665,7 +2665,7 @@ WHERE
 	[r].[Value1] < [r].[Value4]
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -2677,7 +2677,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 DECLARE @TrueN Bit -- Boolean
 SET     @TrueN = 1
 
@@ -2696,7 +2696,7 @@ WHERE
 	END = @TrueN
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -2708,7 +2708,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 
 SELECT
 	[r].[Id],
@@ -2722,7 +2722,7 @@ WHERE
 	[r].[Value1] >= [r].[Value4] OR [r].[Value4] IS NULL
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -2734,7 +2734,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 DECLARE @FalseN Bit -- Boolean
 SET     @FalseN = 0
 
@@ -2753,7 +2753,7 @@ WHERE
 	END = @FalseN
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -2765,7 +2765,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 
 SELECT
 	[r].[Id],
@@ -2779,7 +2779,7 @@ WHERE
 	1 = 0
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -2791,7 +2791,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 
 SELECT
 	[r].[Id],
@@ -2805,7 +2805,7 @@ WHERE
 	[r].[Value5] < [r].[Value4]
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -2817,7 +2817,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 DECLARE @TrueN Bit -- Boolean
 SET     @TrueN = 1
 
@@ -2836,7 +2836,7 @@ WHERE
 	END = @TrueN
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -2848,7 +2848,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 
 SELECT
 	[r].[Id],
@@ -2863,7 +2863,7 @@ WHERE
 	[r].[Value4] IS NULL
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -2875,7 +2875,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 DECLARE @FalseN Bit -- Boolean
 SET     @FalseN = 0
 
@@ -2894,7 +2894,7 @@ WHERE
 	END = @FalseN
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -2906,7 +2906,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 
 SELECT
 	[r].[Id],
@@ -2920,7 +2920,7 @@ WHERE
 	1 = 0
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -2932,7 +2932,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 
 SELECT
 	[r].[Id],
@@ -2946,7 +2946,7 @@ WHERE
 	[r].[Value1] >= [r].[Value2]
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -2958,7 +2958,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 DECLARE @TrueN Bit -- Boolean
 SET     @TrueN = 1
 
@@ -2977,7 +2977,7 @@ WHERE
 	END <> @TrueN
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -2989,7 +2989,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 
 SELECT
 	[r].[Id],
@@ -3003,7 +3003,7 @@ WHERE
 	[r].[Value1] < [r].[Value2]
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -3015,7 +3015,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 DECLARE @FalseN Bit -- Boolean
 SET     @FalseN = 0
 
@@ -3034,7 +3034,7 @@ WHERE
 	END <> @FalseN
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -3046,7 +3046,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 
 SELECT
 	[r].[Id],
@@ -3058,7 +3058,7 @@ FROM
 	[BooleanTable] [r]
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -3070,7 +3070,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 
 SELECT
 	[r].[Id],
@@ -3084,7 +3084,7 @@ WHERE
 	[r].[Value1] >= [r].[Value4] OR [r].[Value4] IS NULL
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -3096,7 +3096,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 DECLARE @TrueN Bit -- Boolean
 SET     @TrueN = 1
 
@@ -3115,7 +3115,7 @@ WHERE
 	END <> @TrueN
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -3127,7 +3127,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 
 SELECT
 	[r].[Id],
@@ -3141,7 +3141,7 @@ WHERE
 	[r].[Value1] < [r].[Value4]
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -3153,7 +3153,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 DECLARE @FalseN Bit -- Boolean
 SET     @FalseN = 0
 
@@ -3172,7 +3172,7 @@ WHERE
 	END <> @FalseN
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -3184,7 +3184,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 
 SELECT
 	[r].[Id],
@@ -3196,7 +3196,7 @@ FROM
 	[BooleanTable] [r]
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -3208,7 +3208,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 
 SELECT
 	[r].[Id],
@@ -3223,7 +3223,7 @@ WHERE
 	[r].[Value4] IS NULL
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -3235,7 +3235,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 DECLARE @TrueN Bit -- Boolean
 SET     @TrueN = 1
 
@@ -3254,7 +3254,7 @@ WHERE
 	END <> @TrueN
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -3266,7 +3266,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 
 SELECT
 	[r].[Id],
@@ -3280,7 +3280,7 @@ WHERE
 	[r].[Value5] < [r].[Value4]
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -3292,7 +3292,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 DECLARE @FalseN Bit -- Boolean
 SET     @FalseN = 0
 
@@ -3311,7 +3311,7 @@ WHERE
 	END <> @FalseN
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -3323,7 +3323,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 
 SELECT
 	[r].[Id],
@@ -3335,7 +3335,7 @@ FROM
 	[BooleanTable] [r]
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -3347,7 +3347,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 
 SELECT
 	[r].[Id],
@@ -3361,7 +3361,7 @@ WHERE
 	[r].[Value1] <= [r].[Value2]
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -3373,7 +3373,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 DECLARE @TrueN Bit -- Boolean
 SET     @TrueN = 1
 
@@ -3392,7 +3392,7 @@ WHERE
 	END = @TrueN
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -3404,7 +3404,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 
 SELECT
 	[r].[Id],
@@ -3418,7 +3418,7 @@ WHERE
 	[r].[Value1] > [r].[Value2]
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -3430,7 +3430,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 DECLARE @FalseN Bit -- Boolean
 SET     @FalseN = 0
 
@@ -3449,7 +3449,7 @@ WHERE
 	END = @FalseN
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -3461,7 +3461,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 
 SELECT
 	[r].[Id],
@@ -3475,7 +3475,7 @@ WHERE
 	1 = 0
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -3487,7 +3487,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 
 SELECT
 	[r].[Id],
@@ -3501,7 +3501,7 @@ WHERE
 	[r].[Value1] <= [r].[Value4]
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -3513,7 +3513,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 DECLARE @TrueN Bit -- Boolean
 SET     @TrueN = 1
 
@@ -3532,7 +3532,7 @@ WHERE
 	END = @TrueN
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -3544,7 +3544,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 
 SELECT
 	[r].[Id],
@@ -3558,7 +3558,7 @@ WHERE
 	[r].[Value1] > [r].[Value4] OR [r].[Value4] IS NULL
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -3570,7 +3570,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 DECLARE @FalseN Bit -- Boolean
 SET     @FalseN = 0
 
@@ -3589,7 +3589,7 @@ WHERE
 	END = @FalseN
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -3601,7 +3601,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 
 SELECT
 	[r].[Id],
@@ -3615,7 +3615,7 @@ WHERE
 	1 = 0
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -3627,7 +3627,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 
 SELECT
 	[r].[Id],
@@ -3641,7 +3641,7 @@ WHERE
 	[r].[Value5] <= [r].[Value4]
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -3653,7 +3653,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 DECLARE @TrueN Bit -- Boolean
 SET     @TrueN = 1
 
@@ -3672,7 +3672,7 @@ WHERE
 	END = @TrueN
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -3684,7 +3684,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 
 SELECT
 	[r].[Id],
@@ -3699,7 +3699,7 @@ WHERE
 	[r].[Value4] IS NULL
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -3711,7 +3711,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 DECLARE @FalseN Bit -- Boolean
 SET     @FalseN = 0
 
@@ -3730,7 +3730,7 @@ WHERE
 	END = @FalseN
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -3742,7 +3742,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 
 SELECT
 	[r].[Id],
@@ -3756,7 +3756,7 @@ WHERE
 	1 = 0
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -3768,7 +3768,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 
 SELECT
 	[r].[Id],
@@ -3782,7 +3782,7 @@ WHERE
 	[r].[Value1] > [r].[Value2]
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -3794,7 +3794,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 DECLARE @TrueN Bit -- Boolean
 SET     @TrueN = 1
 
@@ -3813,7 +3813,7 @@ WHERE
 	END <> @TrueN
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -3825,7 +3825,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 
 SELECT
 	[r].[Id],
@@ -3839,7 +3839,7 @@ WHERE
 	[r].[Value1] <= [r].[Value2]
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -3851,7 +3851,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 DECLARE @FalseN Bit -- Boolean
 SET     @FalseN = 0
 
@@ -3870,7 +3870,7 @@ WHERE
 	END <> @FalseN
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -3882,7 +3882,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 
 SELECT
 	[r].[Id],
@@ -3894,7 +3894,7 @@ FROM
 	[BooleanTable] [r]
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -3906,7 +3906,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 
 SELECT
 	[r].[Id],
@@ -3920,7 +3920,7 @@ WHERE
 	[r].[Value1] > [r].[Value4] OR [r].[Value4] IS NULL
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -3932,7 +3932,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 DECLARE @TrueN Bit -- Boolean
 SET     @TrueN = 1
 
@@ -3951,7 +3951,7 @@ WHERE
 	END <> @TrueN
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -3963,7 +3963,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 
 SELECT
 	[r].[Id],
@@ -3977,7 +3977,7 @@ WHERE
 	[r].[Value1] <= [r].[Value4]
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -3989,7 +3989,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 DECLARE @FalseN Bit -- Boolean
 SET     @FalseN = 0
 
@@ -4008,7 +4008,7 @@ WHERE
 	END <> @FalseN
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -4020,7 +4020,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 
 SELECT
 	[r].[Id],
@@ -4032,7 +4032,7 @@ FROM
 	[BooleanTable] [r]
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -4044,7 +4044,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 
 SELECT
 	[r].[Id],
@@ -4059,7 +4059,7 @@ WHERE
 	[r].[Value4] IS NULL
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -4071,7 +4071,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 DECLARE @TrueN Bit -- Boolean
 SET     @TrueN = 1
 
@@ -4090,7 +4090,7 @@ WHERE
 	END <> @TrueN
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -4102,7 +4102,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 
 SELECT
 	[r].[Id],
@@ -4116,7 +4116,7 @@ WHERE
 	[r].[Value5] <= [r].[Value4]
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -4128,7 +4128,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 DECLARE @FalseN Bit -- Boolean
 SET     @FalseN = 0
 
@@ -4147,7 +4147,7 @@ WHERE
 	END <> @FalseN
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -4159,7 +4159,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 
 SELECT
 	[r].[Id],
@@ -4171,7 +4171,7 @@ FROM
 	[BooleanTable] [r]
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 
 SELECT
 	[t1].[Id],

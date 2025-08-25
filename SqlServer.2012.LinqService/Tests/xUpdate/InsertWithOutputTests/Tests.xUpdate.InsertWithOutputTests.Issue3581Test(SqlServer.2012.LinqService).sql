@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2012
+-- SqlServer.2012 (asynchronously)
 DECLARE @Id Int -- Int32
 SET     @Id = 1
 DECLARE @Name NVarChar(4000) -- String

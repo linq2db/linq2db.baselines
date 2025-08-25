@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.SA SqlServer.2019
+-- SqlServer.SA SqlServer.2019 (asynchronously)
 DECLARE @Id Int -- Int32
 SET     @Id = 1
 DECLARE @Name NVarChar(4000) -- String
@@ -21,7 +21,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.SA SqlServer.2019
+-- SqlServer.SA SqlServer.2019 (asynchronously)
 
 SELECT TOP (1)
 	[t].[Id],
@@ -33,7 +33,7 @@ WHERE
 	[t].[Id] = 1
 
 BeforeExecute
--- SqlServer.SA SqlServer.2019
+-- SqlServer.SA SqlServer.2019 (asynchronously)
 DECLARE @Age Int -- Int32
 SET     @Age = 20
 DECLARE @Id Int -- Int32
@@ -47,7 +47,7 @@ WHERE
 	[PR_1598_Mixed_Table].[Id] = @Id
 
 BeforeExecute
--- SqlServer.SA SqlServer.2019
+-- SqlServer.SA SqlServer.2019 (asynchronously)
 
 SELECT TOP (1)
 	[t].[Id],
@@ -59,7 +59,7 @@ WHERE
 	[t].[Id] = 1
 
 BeforeExecute
--- SqlServer.SA SqlServer.2019
+-- SqlServer.SA SqlServer.2019 (asynchronously)
 DECLARE @Id Int -- Int32
 SET     @Id = 2
 DECLARE @Age Int -- Int32
@@ -77,7 +77,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.SA SqlServer.2019
+-- SqlServer.SA SqlServer.2019 (asynchronously)
 
 SELECT TOP (1)
 	[t].[Id],
@@ -89,7 +89,7 @@ WHERE
 	[t].[Id] = 2
 
 BeforeExecute
--- SqlServer.SA SqlServer.2019
+-- SqlServer.SA SqlServer.2019 (asynchronously)
 DECLARE @Name NVarChar(4000) -- String
 SET     @Name = N'Jessy'
 DECLARE @Age Int -- Int32
@@ -106,7 +106,7 @@ WHERE
 	[PR_1598_Mixed_Table].[Id] = @Id
 
 BeforeExecute
--- SqlServer.SA SqlServer.2019
+-- SqlServer.SA SqlServer.2019 (asynchronously)
 
 SELECT TOP (1)
 	[t].[Id],

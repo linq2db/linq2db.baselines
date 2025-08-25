@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2008
+-- SqlServer.2008 (asynchronously)
 DECLARE @skip Int -- Int32
 SET     @skip = 2
 DECLARE @skip_1 Int -- Int32
@@ -21,7 +21,7 @@ ORDER BY
 	[t2].[Value_1]
 
 BeforeExecute
--- SqlServer.2008
+-- SqlServer.2008 (asynchronously)
 DECLARE @skip Int -- Int32
 SET     @skip = 2
 DECLARE @skip_1 Int -- Int32

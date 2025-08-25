@@ -15,7 +15,7 @@ WHERE
 	[p].[FirstName] = @firstName OR [p].[LastName] = @firstName
 
 BeforeExecute
--- SQLite.MS SQLite
+-- SQLite.MS SQLite (asynchronously)
 DECLARE @firstName NVarChar(4) -- String
 SET     @firstName = 'John'
 

@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2012.MS SqlServer.2012
+-- SqlServer.2012.MS SqlServer.2012 (asynchronously)
 
 SELECT TOP (2)
 	COUNT([p].[PersonID])
@@ -9,7 +9,7 @@ WHERE
 	[p].[PersonID] IN (1, 2)
 
 BeforeExecute
--- SqlServer.2012.MS SqlServer.2012
+-- SqlServer.2012.MS SqlServer.2012 (asynchronously)
 
 SELECT TOP (2)
 	COUNT([p].[PersonID])

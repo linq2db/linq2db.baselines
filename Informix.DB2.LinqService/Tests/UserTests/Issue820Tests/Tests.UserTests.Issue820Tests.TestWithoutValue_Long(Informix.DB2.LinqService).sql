@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Informix.DB2 Informix
+-- Informix.DB2 Informix (asynchronously)
 DECLARE @param BigInt(8) -- Int64
 SET     @param = 1
 
@@ -20,7 +20,7 @@ WHERE
 	@param = t1.BigIntValue
 
 BeforeExecute
--- Informix.DB2 Informix
+-- Informix.DB2 Informix (asynchronously)
 
 SELECT
 	t1.ID,

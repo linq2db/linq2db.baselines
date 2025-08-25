@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Oracle.11.Managed Oracle11
+-- Oracle.11.Managed Oracle11 (asynchronously)
 DECLARE @value BinaryDouble -- Double
 SET     @value = 0D
 
@@ -16,7 +16,7 @@ FROM
 	) t1
 
 BeforeExecute
--- Oracle.11.Managed Oracle11
+-- Oracle.11.Managed Oracle11 (asynchronously)
 DECLARE @value BinaryDouble -- Double
 SET     @value = 3147483648D
 

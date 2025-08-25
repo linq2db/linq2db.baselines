@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SQLite.Classic.MPM SQLite.Classic SQLite
+-- SQLite.Classic.MPM SQLite.Classic SQLite (asynchronously)
 DECLARE @user  -- Int32
 SET     @user = 3
 

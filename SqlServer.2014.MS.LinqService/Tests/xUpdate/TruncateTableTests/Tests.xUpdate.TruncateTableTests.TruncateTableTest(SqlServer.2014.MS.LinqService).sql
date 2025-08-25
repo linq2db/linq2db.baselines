@@ -1,11 +1,11 @@
 ﻿BeforeExecute
--- SqlServer.2014.MS SqlServer.2014
+-- SqlServer.2014.MS SqlServer.2014 (asynchronously)
 
 IF (OBJECT_ID(N'[TestTrun]', N'U') IS NOT NULL)
 	DROP TABLE [TestTrun]
 
 BeforeExecute
--- SqlServer.2014.MS SqlServer.2014
+-- SqlServer.2014.MS SqlServer.2014 (asynchronously)
 
 CREATE TABLE [TestTrun]
 (
@@ -16,12 +16,12 @@ CREATE TABLE [TestTrun]
 )
 
 BeforeExecute
--- SqlServer.2014.MS SqlServer.2014
+-- SqlServer.2014.MS SqlServer.2014 (asynchronously)
 
 TRUNCATE TABLE [TestTrun]
 
 BeforeExecute
--- SqlServer.2014.MS SqlServer.2014
+-- SqlServer.2014.MS SqlServer.2014 (asynchronously)
 
 DROP TABLE [TestTrun]
 

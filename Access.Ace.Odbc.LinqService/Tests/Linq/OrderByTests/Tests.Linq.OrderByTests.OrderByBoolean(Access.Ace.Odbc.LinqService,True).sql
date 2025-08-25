@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Access.Ace.Odbc AccessODBC
+-- Access.Ace.Odbc AccessODBC (asynchronously)
 
 SELECT
 	[t1].[FirstName],
@@ -13,7 +13,7 @@ ORDER BY
 	Len([t1].[FirstName]) > 1
 
 BeforeExecute
--- Access.Ace.Odbc AccessODBC
+-- Access.Ace.Odbc AccessODBC (asynchronously)
 
 SELECT
 	[t1].[FirstName],

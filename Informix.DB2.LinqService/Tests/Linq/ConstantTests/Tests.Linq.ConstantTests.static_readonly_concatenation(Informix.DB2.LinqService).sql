@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Informix.DB2 Informix
+-- Informix.DB2 Informix (asynchronously)
 DECLARE @p VarChar(9) -- String
 SET     @p = 'StrValue1'
 
@@ -14,7 +14,7 @@ WHERE
 	e.StringValue || '1' = @p
 
 BeforeExecute
--- Informix.DB2 Informix
+-- Informix.DB2 Informix (asynchronously)
 
 SELECT
 	t1.Id,

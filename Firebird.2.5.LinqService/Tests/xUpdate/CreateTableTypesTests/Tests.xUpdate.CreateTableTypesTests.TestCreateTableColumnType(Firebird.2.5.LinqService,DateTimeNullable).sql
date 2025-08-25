@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Firebird.2.5 Firebird
+-- Firebird.2.5 Firebird (asynchronously)
 DECLARE @Id Integer -- Int32
 SET     @Id = 1
 DECLARE @DateTimeNullable TimeStamp -- DateTime
@@ -17,7 +17,7 @@ VALUES
 )
 
 BeforeExecute
--- Firebird.2.5 Firebird
+-- Firebird.2.5 Firebird (asynchronously)
 DECLARE @Id Integer -- Int32
 SET     @Id = 2
 DECLARE @DateTimeNullable TimeStamp -- DateTime
@@ -35,7 +35,7 @@ VALUES
 )
 
 BeforeExecute
--- Firebird.2.5 Firebird
+-- Firebird.2.5 Firebird (asynchronously)
 
 SELECT
 	"t1"."Id",

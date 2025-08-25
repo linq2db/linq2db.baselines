@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SQLite.Classic.MPM SQLite.Classic SQLite
+-- SQLite.Classic.MPM SQLite.Classic SQLite (asynchronously)
 DECLARE @FirstName NVarChar(6) -- String
 SET     @FirstName = 'Steven'
 DECLARE @LastName NVarChar(4) -- String
@@ -25,7 +25,7 @@ VALUES
 )
 
 BeforeExecute
--- SQLite.Classic.MPM SQLite.Classic SQLite
+-- SQLite.Classic.MPM SQLite.Classic SQLite (asynchronously)
 
 SELECT
 	COUNT(*)
@@ -33,7 +33,7 @@ FROM
 	[xxPerson] [t1]
 
 BeforeExecute
--- SQLite.Classic.MPM SQLite.Classic SQLite
+-- SQLite.Classic.MPM SQLite.Classic SQLite (asynchronously)
 
 SELECT
 	[t1].[FirstName],
@@ -46,7 +46,7 @@ FROM
 LIMIT 2
 
 BeforeExecute
--- SQLite.Classic.MPM SQLite.Classic SQLite
+-- SQLite.Classic.MPM SQLite.Classic SQLite (asynchronously)
 DECLARE @ID  -- Int32
 SET     @ID = 1
 
@@ -56,7 +56,7 @@ WHERE
 	[xxPerson].[PersonID] = @ID
 
 BeforeExecute
--- SQLite.Classic.MPM SQLite.Classic SQLite
+-- SQLite.Classic.MPM SQLite.Classic SQLite (asynchronously)
 
 SELECT
 	COUNT(*)

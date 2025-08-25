@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Oracle.11.Managed Oracle11
+-- Oracle.11.Managed Oracle11 (asynchronously)
 
 SELECT
 	t1."Id"
@@ -9,7 +9,7 @@ WHERE
 	t1."Id" = 2 AND ROWNUM <= 2
 
 BeforeExecute
--- Oracle.11.Managed Oracle11
+-- Oracle.11.Managed Oracle11 (asynchronously)
 
 SELECT
 	t1."Id"
@@ -19,7 +19,7 @@ WHERE
 	t1."Id" = 2 AND ROWNUM <= 2
 
 BeforeExecute
--- Oracle.11.Managed Oracle11
+-- Oracle.11.Managed Oracle11 (asynchronously)
 DECLARE @UserId Int32
 SET     @UserId = 2
 
@@ -31,7 +31,7 @@ WHERE
 	x."Id" = :UserId AND ROWNUM <= 2
 
 BeforeExecute
--- Oracle.11.Managed Oracle11
+-- Oracle.11.Managed Oracle11 (asynchronously)
 DECLARE @UserId Int32
 SET     @UserId = 2
 

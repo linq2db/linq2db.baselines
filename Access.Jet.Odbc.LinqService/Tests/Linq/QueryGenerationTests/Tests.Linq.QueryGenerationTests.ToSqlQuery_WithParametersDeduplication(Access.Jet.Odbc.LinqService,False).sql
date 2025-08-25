@@ -17,7 +17,7 @@ WHERE
 	[p].[FirstName] = ? OR [p].[LastName] = ?
 
 BeforeExecute
--- Access.Jet.Odbc AccessODBC
+-- Access.Jet.Odbc AccessODBC (asynchronously)
 DECLARE @firstName NVarChar(4) -- String
 SET     @firstName = 'John'
 DECLARE @firstName NVarChar(4) -- String

@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2008
+-- SqlServer.2008 (asynchronously)
 
 SELECT
 	[m_1].[ParentID],
@@ -27,7 +27,7 @@ FROM
 		INNER JOIN [Child] [d] ON [m_1].[ParentID] = [d].[ParentID]
 
 BeforeExecute
--- SqlServer.2008
+-- SqlServer.2008 (asynchronously)
 
 SELECT
 	[p].[ParentID],

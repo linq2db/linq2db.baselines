@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Sybase.Managed Sybase
+-- Sybase.Managed Sybase (asynchronously)
 
 IF NOT EXISTS(
 	SELECT 1 
@@ -22,7 +22,7 @@ BEGIN
 END
 
 BeforeExecute
--- Sybase.Managed Sybase
+-- Sybase.Managed Sybase (asynchronously)
 
 IF NOT EXISTS(
 	SELECT 1 

@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Oracle.18.Managed Oracle.Managed Oracle12
+-- Oracle.18.Managed Oracle.Managed Oracle12 (asynchronously)
 DECLARE @Gender Varchar2(1) -- String
 SET     @Gender = 'M'
 DECLARE @Name_FirstName Varchar2(13) -- String

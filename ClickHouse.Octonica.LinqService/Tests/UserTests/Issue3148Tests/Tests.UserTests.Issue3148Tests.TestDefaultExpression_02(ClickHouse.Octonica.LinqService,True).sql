@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- ClickHouse.Octonica ClickHouse
+-- ClickHouse.Octonica ClickHouse (asynchronously)
 
 SELECT
 	r.FirstName,
@@ -13,7 +13,7 @@ WHERE
 	r.MiddleName IS NOT NULL
 
 BeforeExecute
--- ClickHouse.Octonica ClickHouse
+-- ClickHouse.Octonica ClickHouse (asynchronously)
 
 SELECT
 	r.FirstName,

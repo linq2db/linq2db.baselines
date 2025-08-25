@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2008
+-- SqlServer.2008 (asynchronously)
 DECLARE @In VarChar(20) -- AnsiString
 SET     @In = NULL
 DECLARE @In_1 VarChar(20) -- AnsiString
@@ -13,7 +13,7 @@ WHERE
 	[s].[CEnum] IN (@In, @In_1)
 
 BeforeExecute
--- SqlServer.2008
+-- SqlServer.2008 (asynchronously)
 DECLARE @NotIn VarChar(20) -- AnsiString
 SET     @NotIn = NULL
 DECLARE @NotIn_1 VarChar(20) -- AnsiString

@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Informix.DB2 Informix
+-- Informix.DB2 Informix (asynchronously)
 
 SELECT
 	t."Value"
@@ -9,7 +9,7 @@ WHERE
 	t."Value"
 
 BeforeExecute
--- Informix.DB2 Informix
+-- Informix.DB2 Informix (asynchronously)
 
 SELECT
 	t."Value"
@@ -19,7 +19,7 @@ WHERE
 	t."Value" = 't'::BOOLEAN
 
 BeforeExecute
--- Informix.DB2 Informix
+-- Informix.DB2 Informix (asynchronously)
 
 SELECT
 	t."Value"
@@ -29,7 +29,7 @@ WHERE
 	t."Value" = 'f'::BOOLEAN
 
 BeforeExecute
--- Informix.DB2 Informix
+-- Informix.DB2 Informix (asynchronously)
 
 SELECT
 	t."Value"
@@ -39,7 +39,7 @@ WHERE
 	NOT t."Value"
 
 BeforeExecute
--- Informix.DB2 Informix
+-- Informix.DB2 Informix (asynchronously)
 
 SELECT
 	t."Value"
@@ -49,7 +49,7 @@ WHERE
 	t."Value" = 'f'::BOOLEAN
 
 BeforeExecute
--- Informix.DB2 Informix
+-- Informix.DB2 Informix (asynchronously)
 
 SELECT
 	t."Value"

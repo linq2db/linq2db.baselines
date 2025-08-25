@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Access.Jet.OleDb AccessOleDb
+-- Access.Jet.OleDb AccessOleDb (asynchronously)
 DECLARE @id Integer -- Int32
 SET     @id = 3
 
@@ -12,7 +12,7 @@ WHERE
 	[p].[Id] = @id AND [p].[Id] = [a_MainOptional].[Id]
 
 BeforeExecute
--- Access.Jet.OleDb AccessOleDb
+-- Access.Jet.OleDb AccessOleDb (asynchronously)
 
 SELECT
 	[t1].[Id],

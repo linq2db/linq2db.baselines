@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Oracle.11.Managed Oracle11
+-- Oracle.11.Managed Oracle11 (asynchronously)
 DECLARE @is_deleted Int16
 SET     @is_deleted = 1
 
@@ -20,7 +20,7 @@ WHERE
 	)
 
 BeforeExecute
--- Oracle.11.Managed Oracle11
+-- Oracle.11.Managed Oracle11 (asynchronously)
 
 SELECT
 	x."id",
@@ -32,7 +32,7 @@ WHERE
 	x."is_deleted" = 1 AND x."service_id" = 'TestProcessService'
 
 BeforeExecute
--- Oracle.11.Managed Oracle11
+-- Oracle.11.Managed Oracle11 (asynchronously)
 
 SELECT
 	x."id",

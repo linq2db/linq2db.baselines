@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- MySql.5.7 MySql.5.7.MySql.Data MySql57
+-- MySql.5.7 MySql.5.7.MySql.Data MySql57 (asynchronously)
 DECLARE @FirstName VarChar(25) -- String
 SET     @FirstName = 'UpdateColumnFilterUpdated'
 DECLARE @LastName VarChar(8) -- String
@@ -25,7 +25,7 @@ VALUES
 )
 
 BeforeExecute
--- MySql.5.7 MySql.5.7.MySql.Data MySql57
+-- MySql.5.7 MySql.5.7.MySql.Data MySql57 (asynchronously)
 DECLARE @FirstName VarChar(25) -- String
 SET     @FirstName = 'UpdateColumnFilterUpdated'
 
@@ -42,7 +42,7 @@ WHERE
 LIMIT 1
 
 BeforeExecute
--- MySql.5.7 MySql.5.7.MySql.Data MySql57
+-- MySql.5.7 MySql.5.7.MySql.Data MySql57 (asynchronously)
 DECLARE @FirstName VarChar(25) -- String
 SET     @FirstName = 'UpdateColumnFilterUpdated'
 DECLARE @LastName VarChar(8) -- String
@@ -65,7 +65,7 @@ WHERE
 	`t1`.`PersonID` = @ID
 
 BeforeExecute
--- MySql.5.7 MySql.5.7.MySql.Data MySql57
+-- MySql.5.7 MySql.5.7.MySql.Data MySql57 (asynchronously)
 DECLARE @FirstName VarChar(25) -- String
 SET     @FirstName = 'UpdateColumnFilterUpdated'
 

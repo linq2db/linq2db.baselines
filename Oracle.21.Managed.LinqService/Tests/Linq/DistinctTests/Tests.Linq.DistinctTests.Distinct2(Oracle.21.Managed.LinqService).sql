@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Oracle.21.Managed Oracle.Managed Oracle12
+-- Oracle.21.Managed Oracle.Managed Oracle12 (asynchronously)
 
 SELECT DISTINCT
 	Coalesce(p."Value1", MOD(p."ParentID", 2))

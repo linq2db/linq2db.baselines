@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2012
+-- SqlServer.2012 (asynchronously)
 
 SELECT TOP (1)
 	[p].[FirstName]
@@ -9,7 +9,7 @@ WHERE
 	[p].[FirstName] IS NULL
 
 BeforeExecute
--- SqlServer.2012
+-- SqlServer.2012 (asynchronously)
 DECLARE @p NVarChar(4000) -- String
 SET     @p = N'John'
 

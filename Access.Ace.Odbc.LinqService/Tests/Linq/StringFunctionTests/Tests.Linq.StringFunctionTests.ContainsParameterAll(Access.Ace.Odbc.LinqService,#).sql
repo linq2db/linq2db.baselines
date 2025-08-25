@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Access.Ace.Odbc AccessODBC
+-- Access.Ace.Odbc AccessODBC (asynchronously)
 DECLARE @s NVarChar(7) -- String
 SET     @s = '123#456'
 DECLARE @toTest NVarChar(5) -- String

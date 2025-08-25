@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Oracle.19.Managed Oracle.Managed Oracle12
+-- Oracle.19.Managed Oracle.Managed Oracle12 (asynchronously)
 
 SELECT
 	a_2."ParentID",
@@ -23,7 +23,7 @@ FROM
 		LEFT JOIN "Parent" a_1 ON a_2."ParentID" = a_1."ParentID"
 
 BeforeExecute
--- Oracle.19.Managed Oracle.Managed Oracle12
+-- Oracle.19.Managed Oracle.Managed Oracle12 (asynchronously)
 
 SELECT
 	t1."ParentID",

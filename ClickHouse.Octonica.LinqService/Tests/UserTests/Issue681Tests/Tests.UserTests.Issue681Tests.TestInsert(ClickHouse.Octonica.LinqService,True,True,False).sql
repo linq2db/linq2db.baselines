@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- ClickHouse.Octonica ClickHouse
+-- ClickHouse.Octonica ClickHouse (asynchronously)
 
 SELECT
 	currentDatabase()
@@ -8,7 +8,7 @@ FROM
 LIMIT 1
 
 BeforeExecute
--- ClickHouse.Octonica ClickHouse
+-- ClickHouse.Octonica ClickHouse (asynchronously)
 
 INSERT INTO testdb1.Issue681Table
 (

@@ -10,7 +10,7 @@ WHERE
 	[p].[ParentID] = 2
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 DECLARE @id Int -- Int32
 SET     @id = 2
 

@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL (asynchronously)
 DECLARE @paramCopy Integer -- Int32
 SET     @paramCopy = 1
 
@@ -22,7 +22,7 @@ WHERE
 	)
 
 BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL (asynchronously)
 DECLARE @paramCopy Integer -- Int32
 SET     @paramCopy = 2
 
@@ -45,7 +45,7 @@ WHERE
 	)
 
 BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL (asynchronously)
 DECLARE @paramCopy Integer -- Int32
 SET     @paramCopy = 3
 
@@ -68,7 +68,7 @@ WHERE
 	)
 
 BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL (asynchronously)
 DECLARE @paramCopy Integer -- Int32
 SET     @paramCopy = 4
 
@@ -91,7 +91,7 @@ WHERE
 	)
 
 BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL (asynchronously)
 DECLARE @paramCopy Integer -- Int32
 SET     @paramCopy = 1
 

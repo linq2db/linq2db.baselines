@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
+-- SQLite.Classic.MPU SQLite.Classic SQLite (asynchronously)
 DECLARE @cpty NVarChar(3) -- String
 SET     @cpty = '%C%'
 DECLARE @cpty_1 NVarChar(3) -- String

@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SQLite.MS SQLite
+-- SQLite.MS SQLite (asynchronously)
 DECLARE @In VarChar -- AnsiString
 SET     @In = NULL
 DECLARE @In_1 VarChar -- AnsiString
@@ -13,7 +13,7 @@ WHERE
 	[s].[CEnum] IN (@In, @In_1)
 
 BeforeExecute
--- SQLite.MS SQLite
+-- SQLite.MS SQLite (asynchronously)
 DECLARE @NotIn VarChar -- AnsiString
 SET     @NotIn = NULL
 DECLARE @NotIn_1 VarChar -- AnsiString

@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.SA.MS SqlServer.2019
+-- SqlServer.SA.MS SqlServer.2019 (asynchronously)
 DECLARE @value Bit -- Boolean
 SET     @value = 0
 
@@ -11,7 +11,7 @@ WHERE
 	[t].[Value] = @value
 
 BeforeExecute
--- SqlServer.SA.MS SqlServer.2019
+-- SqlServer.SA.MS SqlServer.2019 (asynchronously)
 DECLARE @value Bit -- Boolean
 SET     @value = 0
 
@@ -23,7 +23,7 @@ WHERE
 	[t].[Value] = @value
 
 BeforeExecute
--- SqlServer.SA.MS SqlServer.2019
+-- SqlServer.SA.MS SqlServer.2019 (asynchronously)
 DECLARE @value Bit -- Boolean
 SET     @value = 0
 
@@ -35,7 +35,7 @@ WHERE
 	[t].[Value] <> @value OR [t].[Value] IS NULL
 
 BeforeExecute
--- SqlServer.SA.MS SqlServer.2019
+-- SqlServer.SA.MS SqlServer.2019 (asynchronously)
 DECLARE @value Bit -- Boolean
 SET     @value = 0
 

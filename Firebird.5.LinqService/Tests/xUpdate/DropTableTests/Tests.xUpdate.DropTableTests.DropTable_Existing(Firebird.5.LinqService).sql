@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Firebird.5 Firebird4
+-- Firebird.5 Firebird4 (asynchronously)
 
 CREATE TABLE "Table"
 (
@@ -7,7 +7,7 @@ CREATE TABLE "Table"
 )
 
 BeforeExecute
--- Firebird.5 Firebird4
+-- Firebird.5 Firebird4 (asynchronously)
 
 DROP TABLE "Table"
 

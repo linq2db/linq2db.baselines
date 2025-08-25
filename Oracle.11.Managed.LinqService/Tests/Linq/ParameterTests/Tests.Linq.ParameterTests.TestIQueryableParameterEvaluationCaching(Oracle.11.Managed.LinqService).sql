@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Oracle.11.Managed Oracle11
+-- Oracle.11.Managed Oracle11 (asynchronously)
 DECLARE @paramCopy Int32
 SET     @paramCopy = 1
 
@@ -22,7 +22,7 @@ WHERE
 	)
 
 BeforeExecute
--- Oracle.11.Managed Oracle11
+-- Oracle.11.Managed Oracle11 (asynchronously)
 DECLARE @paramCopy Int32
 SET     @paramCopy = 2
 
@@ -45,7 +45,7 @@ WHERE
 	)
 
 BeforeExecute
--- Oracle.11.Managed Oracle11
+-- Oracle.11.Managed Oracle11 (asynchronously)
 DECLARE @paramCopy Int32
 SET     @paramCopy = 3
 
@@ -68,7 +68,7 @@ WHERE
 	)
 
 BeforeExecute
--- Oracle.11.Managed Oracle11
+-- Oracle.11.Managed Oracle11 (asynchronously)
 DECLARE @paramCopy Int32
 SET     @paramCopy = 4
 
@@ -91,7 +91,7 @@ WHERE
 	)
 
 BeforeExecute
--- Oracle.11.Managed Oracle11
+-- Oracle.11.Managed Oracle11 (asynchronously)
 DECLARE @paramCopy Int32
 SET     @paramCopy = 1
 

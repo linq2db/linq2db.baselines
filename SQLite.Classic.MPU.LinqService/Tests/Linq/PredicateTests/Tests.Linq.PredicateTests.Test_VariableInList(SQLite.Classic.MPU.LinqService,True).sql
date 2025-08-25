@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
+-- SQLite.Classic.MPU SQLite.Classic SQLite (asynchronously)
 
 SELECT
 	[r].[Id],
@@ -13,7 +13,7 @@ WHERE
 	1 IN (0, 1)
 
 BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
+-- SQLite.Classic.MPU SQLite.Classic SQLite (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -25,7 +25,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
+-- SQLite.Classic.MPU SQLite.Classic SQLite (asynchronously)
 
 SELECT
 	[r].[Id],
@@ -39,7 +39,7 @@ WHERE
 	0 IN (0, 1)
 
 BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
+-- SQLite.Classic.MPU SQLite.Classic SQLite (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -51,7 +51,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
+-- SQLite.Classic.MPU SQLite.Classic SQLite (asynchronously)
 
 SELECT
 	[r].[Id],
@@ -65,7 +65,7 @@ WHERE
 	1 IN (0, 1)
 
 BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
+-- SQLite.Classic.MPU SQLite.Classic SQLite (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -77,7 +77,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
+-- SQLite.Classic.MPU SQLite.Classic SQLite (asynchronously)
 
 SELECT
 	[r].[Id],
@@ -91,7 +91,7 @@ WHERE
 	0 IN (0, 1)
 
 BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
+-- SQLite.Classic.MPU SQLite.Classic SQLite (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -103,7 +103,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
+-- SQLite.Classic.MPU SQLite.Classic SQLite (asynchronously)
 
 SELECT
 	[r].[Id],
@@ -117,7 +117,7 @@ WHERE
 	NULL IN (0, 1)
 
 BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
+-- SQLite.Classic.MPU SQLite.Classic SQLite (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -129,7 +129,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
+-- SQLite.Classic.MPU SQLite.Classic SQLite (asynchronously)
 
 SELECT
 	[r].[Id],
@@ -143,7 +143,7 @@ WHERE
 	(1 IN (0, 1) OR 1 IS NULL)
 
 BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
+-- SQLite.Classic.MPU SQLite.Classic SQLite (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -155,7 +155,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
+-- SQLite.Classic.MPU SQLite.Classic SQLite (asynchronously)
 
 SELECT
 	[r].[Id],
@@ -169,7 +169,7 @@ WHERE
 	(0 IN (0, 1) OR 0 IS NULL)
 
 BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
+-- SQLite.Classic.MPU SQLite.Classic SQLite (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -181,7 +181,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
+-- SQLite.Classic.MPU SQLite.Classic SQLite (asynchronously)
 
 SELECT
 	[r].[Id],
@@ -195,7 +195,7 @@ WHERE
 	(1 IN (0, 1) OR 1 IS NULL)
 
 BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
+-- SQLite.Classic.MPU SQLite.Classic SQLite (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -207,7 +207,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
+-- SQLite.Classic.MPU SQLite.Classic SQLite (asynchronously)
 
 SELECT
 	[r].[Id],
@@ -221,7 +221,7 @@ WHERE
 	(0 IN (0, 1) OR 0 IS NULL)
 
 BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
+-- SQLite.Classic.MPU SQLite.Classic SQLite (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -233,7 +233,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
+-- SQLite.Classic.MPU SQLite.Classic SQLite (asynchronously)
 
 SELECT
 	[r].[Id],
@@ -247,7 +247,7 @@ WHERE
 	(NULL IN (0, 1) OR NULL IS NULL)
 
 BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
+-- SQLite.Classic.MPU SQLite.Classic SQLite (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -259,7 +259,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
+-- SQLite.Classic.MPU SQLite.Classic SQLite (asynchronously)
 
 SELECT
 	[r].[Id],
@@ -273,7 +273,7 @@ WHERE
 	1 NOT IN (0, 1)
 
 BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
+-- SQLite.Classic.MPU SQLite.Classic SQLite (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -285,7 +285,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
+-- SQLite.Classic.MPU SQLite.Classic SQLite (asynchronously)
 
 SELECT
 	[r].[Id],
@@ -299,7 +299,7 @@ WHERE
 	0 NOT IN (0, 1)
 
 BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
+-- SQLite.Classic.MPU SQLite.Classic SQLite (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -311,7 +311,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
+-- SQLite.Classic.MPU SQLite.Classic SQLite (asynchronously)
 
 SELECT
 	[r].[Id],
@@ -325,7 +325,7 @@ WHERE
 	(1 NOT IN (0, 1) OR 1 IS NULL)
 
 BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
+-- SQLite.Classic.MPU SQLite.Classic SQLite (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -337,7 +337,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
+-- SQLite.Classic.MPU SQLite.Classic SQLite (asynchronously)
 
 SELECT
 	[r].[Id],
@@ -351,7 +351,7 @@ WHERE
 	(0 NOT IN (0, 1) OR 0 IS NULL)
 
 BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
+-- SQLite.Classic.MPU SQLite.Classic SQLite (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -363,7 +363,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
+-- SQLite.Classic.MPU SQLite.Classic SQLite (asynchronously)
 
 SELECT
 	[r].[Id],
@@ -377,7 +377,7 @@ WHERE
 	(NULL NOT IN (0, 1) OR NULL IS NULL)
 
 BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
+-- SQLite.Classic.MPU SQLite.Classic SQLite (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -389,7 +389,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
+-- SQLite.Classic.MPU SQLite.Classic SQLite (asynchronously)
 
 SELECT
 	[r].[Id],
@@ -403,7 +403,7 @@ WHERE
 	(1 NOT IN (0, 1) AND 1 IS NOT NULL)
 
 BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
+-- SQLite.Classic.MPU SQLite.Classic SQLite (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -415,7 +415,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
+-- SQLite.Classic.MPU SQLite.Classic SQLite (asynchronously)
 
 SELECT
 	[r].[Id],
@@ -429,7 +429,7 @@ WHERE
 	(0 NOT IN (0, 1) AND 0 IS NOT NULL)
 
 BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
+-- SQLite.Classic.MPU SQLite.Classic SQLite (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -441,7 +441,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
+-- SQLite.Classic.MPU SQLite.Classic SQLite (asynchronously)
 
 SELECT
 	[r].[Id],
@@ -455,7 +455,7 @@ WHERE
 	(1 NOT IN (0, 1) AND 1 IS NOT NULL)
 
 BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
+-- SQLite.Classic.MPU SQLite.Classic SQLite (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -467,7 +467,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
+-- SQLite.Classic.MPU SQLite.Classic SQLite (asynchronously)
 
 SELECT
 	[r].[Id],
@@ -481,7 +481,7 @@ WHERE
 	(0 NOT IN (0, 1) AND 0 IS NOT NULL)
 
 BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
+-- SQLite.Classic.MPU SQLite.Classic SQLite (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -493,7 +493,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
+-- SQLite.Classic.MPU SQLite.Classic SQLite (asynchronously)
 
 SELECT
 	[r].[Id],
@@ -507,7 +507,7 @@ WHERE
 	(NULL NOT IN (0, 1) AND NULL IS NOT NULL)
 
 BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
+-- SQLite.Classic.MPU SQLite.Classic SQLite (asynchronously)
 
 SELECT
 	[t1].[Id],

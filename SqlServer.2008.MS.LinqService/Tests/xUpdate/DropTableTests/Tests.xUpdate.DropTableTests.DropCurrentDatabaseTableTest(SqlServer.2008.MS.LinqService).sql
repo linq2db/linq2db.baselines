@@ -1,11 +1,11 @@
 ﻿BeforeExecute
--- SqlServer.2008.MS SqlServer.2008
+-- SqlServer.2008.MS SqlServer.2008 (asynchronously)
 
 IF (OBJECT_ID(N'[DropTableTest]', N'U') IS NOT NULL)
 	DROP TABLE [DropTableTest]
 
 BeforeExecute
--- SqlServer.2008.MS SqlServer.2008
+-- SqlServer.2008.MS SqlServer.2008 (asynchronously)
 
 CREATE TABLE [DropTableTest]
 (
@@ -13,7 +13,7 @@ CREATE TABLE [DropTableTest]
 )
 
 BeforeExecute
--- SqlServer.2008.MS SqlServer.2008
+-- SqlServer.2008.MS SqlServer.2008 (asynchronously)
 
 INSERT INTO [DropTableTest]
 (
@@ -25,7 +25,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2008.MS SqlServer.2008
+-- SqlServer.2008.MS SqlServer.2008 (asynchronously)
 
 SELECT
 	[t1].[ID]
@@ -33,12 +33,12 @@ FROM
 	[DropTableTest] [t1]
 
 BeforeExecute
--- SqlServer.2008.MS SqlServer.2008
+-- SqlServer.2008.MS SqlServer.2008 (asynchronously)
 
 DROP TABLE [DropTableTest]
 
 BeforeExecute
--- SqlServer.2008.MS SqlServer.2008
+-- SqlServer.2008.MS SqlServer.2008 (asynchronously)
 
 SELECT
 	[t1].[ID]

@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Informix.DB2 Informix
+-- Informix.DB2 Informix (asynchronously)
 
 INSERT INTO InsertIssueTest
 (
@@ -21,7 +21,7 @@ FROM
 	) t2
 
 BeforeExecute
--- Informix.DB2 Informix
+-- Informix.DB2 Informix (asynchronously)
 DECLARE @cond SmallInt(2) -- Int16
 SET     @cond = 1234
 
@@ -45,7 +45,7 @@ FROM
 	) t2
 
 BeforeExecute
--- Informix.DB2 Informix
+-- Informix.DB2 Informix (asynchronously)
 
 SELECT
 	t1.ID,

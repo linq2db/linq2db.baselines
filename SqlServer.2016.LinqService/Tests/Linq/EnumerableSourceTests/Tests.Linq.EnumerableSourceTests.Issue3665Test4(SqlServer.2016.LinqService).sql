@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2016
+-- SqlServer.2016 (asynchronously)
 
 SELECT
 	[x].[PersonID] + [y].[item]
@@ -10,7 +10,7 @@ FROM
 		) [y]([item])
 
 BeforeExecute
--- SqlServer.2016
+-- SqlServer.2016 (asynchronously)
 
 SELECT
 	[t1].[FirstName],

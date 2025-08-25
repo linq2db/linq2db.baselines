@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SQLite.Classic.MPM SQLite.Classic SQLite
+-- SQLite.Classic.MPM SQLite.Classic SQLite (asynchronously)
 
 SELECT
 	[m_1].[Key_1],
@@ -15,7 +15,7 @@ FROM
 		INNER JOIN [Child] [d] ON [m_1].[Key_1] = [d].[ParentID]
 
 BeforeExecute
--- SQLite.Classic.MPM SQLite.Classic SQLite
+-- SQLite.Classic.MPM SQLite.Classic SQLite (asynchronously)
 
 SELECT
 	[t1].[ParentID]

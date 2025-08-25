@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.SA SqlServer.2019
+-- SqlServer.SA SqlServer.2019 (asynchronously)
 
 SELECT
 	[g_2].[Key_1]
@@ -14,7 +14,7 @@ GROUP BY
 	[g_2].[Key_1]
 
 BeforeExecute
--- SqlServer.SA SqlServer.2019
+-- SqlServer.SA SqlServer.2019 (asynchronously)
 
 SELECT DISTINCT
 	CAST([r].[dt] AS Time)

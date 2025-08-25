@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Access.Jet.OleDb AccessOleDb
+-- Access.Jet.OleDb AccessOleDb (asynchronously)
 
 SELECT DISTINCT
 	[x].[ParentID],
@@ -11,7 +11,7 @@ WHERE
 	[x].[ChildID] > 30
 
 BeforeExecute
--- Access.Jet.OleDb AccessOleDb
+-- Access.Jet.OleDb AccessOleDb (asynchronously)
 
 SELECT DISTINCT
 	[x].[ParentID],

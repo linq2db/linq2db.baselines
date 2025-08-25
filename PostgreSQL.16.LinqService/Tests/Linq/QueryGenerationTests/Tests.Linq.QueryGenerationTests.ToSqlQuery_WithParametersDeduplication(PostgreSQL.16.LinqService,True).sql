@@ -13,7 +13,7 @@ WHERE
 	p."FirstName" = 'John' OR p."LastName" = 'John'
 
 BeforeExecute
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
+-- PostgreSQL.16 PostgreSQL.15 PostgreSQL (asynchronously)
 DECLARE @firstName Text(4) -- String
 SET     @firstName = 'John'
 

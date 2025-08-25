@@ -12,7 +12,7 @@ FROM
 ----
 
 BeforeExecute
--- ClickHouse.MySql ClickHouse
+-- ClickHouse.MySql ClickHouse (asynchronously)
 
 SELECT
 	p.ParentID,
@@ -35,7 +35,7 @@ FROM
 ---
 
 BeforeExecute
--- ClickHouse.MySql ClickHouse
+-- ClickHouse.MySql ClickHouse (asynchronously)
 
 SELECT
 	p.ParentID,

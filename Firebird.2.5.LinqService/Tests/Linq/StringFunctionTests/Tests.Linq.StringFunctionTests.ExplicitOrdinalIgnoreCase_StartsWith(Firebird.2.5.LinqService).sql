@@ -1,11 +1,11 @@
 ﻿BeforeExecute
--- Firebird.2.5 Firebird
+-- Firebird.2.5 Firebird (asynchronously)
 
 DELETE FROM
 	"CollatedTable" "t1"
 
 BeforeExecute
--- Firebird.2.5 Firebird
+-- Firebird.2.5 Firebird (asynchronously)
 DECLARE @Id Integer -- Int32
 SET     @Id = 1
 DECLARE @CaseSensitive VarChar(10) -- String
@@ -27,7 +27,7 @@ VALUES
 )
 
 BeforeExecute
--- Firebird.2.5 Firebird
+-- Firebird.2.5 Firebird (asynchronously)
 
 SELECT
 	COUNT(*)
@@ -37,7 +37,7 @@ WHERE
 	Lower("r"."CaseSensitive") STARTING WITH 'testst'
 
 BeforeExecute
--- Firebird.2.5 Firebird
+-- Firebird.2.5 Firebird (asynchronously)
 
 SELECT
 	COUNT(*)
@@ -47,7 +47,7 @@ WHERE
 	Lower("r"."CaseInsensitive") STARTING WITH 'testst'
 
 BeforeExecute
--- Firebird.2.5 Firebird
+-- Firebird.2.5 Firebird (asynchronously)
 
 SELECT
 	COUNT(*)
@@ -57,7 +57,7 @@ WHERE
 	Lower("r"."CaseSensitive") STARTING WITH 'testst'
 
 BeforeExecute
--- Firebird.2.5 Firebird
+-- Firebird.2.5 Firebird (asynchronously)
 
 SELECT
 	COUNT(*)

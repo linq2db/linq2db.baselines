@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Oracle.18.Managed Oracle.Managed Oracle12
+-- Oracle.18.Managed Oracle.Managed Oracle12 (asynchronously)
 
 SELECT
 	g_2."ChildId",
@@ -18,7 +18,7 @@ GROUP BY
 	g_2."ParentId"
 
 BeforeExecute
--- Oracle.18.Managed Oracle.Managed Oracle12
+-- Oracle.18.Managed Oracle.Managed Oracle12 (asynchronously)
 
 SELECT
 	t1."ParentID",

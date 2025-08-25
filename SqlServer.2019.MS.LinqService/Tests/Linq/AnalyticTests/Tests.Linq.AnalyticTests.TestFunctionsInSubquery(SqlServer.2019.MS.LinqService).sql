@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2019.MS SqlServer.2019
+-- SqlServer.2019.MS SqlServer.2019 (asynchronously)
 
 SELECT
 	[sq_1].[Sum_1]

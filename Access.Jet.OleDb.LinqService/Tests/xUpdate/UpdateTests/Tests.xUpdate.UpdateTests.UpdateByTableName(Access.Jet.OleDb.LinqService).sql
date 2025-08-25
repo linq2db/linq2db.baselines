@@ -1,10 +1,10 @@
 ﻿BeforeExecute
--- Access.Jet.OleDb AccessOleDb
+-- Access.Jet.OleDb AccessOleDb (asynchronously)
 
 DROP TABLE [xxPerson]
 
 BeforeExecute
--- Access.Jet.OleDb AccessOleDb
+-- Access.Jet.OleDb AccessOleDb (asynchronously)
 
 CREATE TABLE [xxPerson]
 (
@@ -18,7 +18,7 @@ CREATE TABLE [xxPerson]
 )
 
 BeforeExecute
--- Access.Jet.OleDb AccessOleDb
+-- Access.Jet.OleDb AccessOleDb (asynchronously)
 DECLARE @FirstName VarWChar(6) -- String
 SET     @FirstName = 'Steven'
 DECLARE @LastName VarWChar(4) -- String
@@ -44,7 +44,7 @@ VALUES
 )
 
 BeforeExecute
--- Access.Jet.OleDb AccessOleDb
+-- Access.Jet.OleDb AccessOleDb (asynchronously)
 
 SELECT
 	COUNT(*)
@@ -52,7 +52,7 @@ FROM
 	[xxPerson] [t1]
 
 BeforeExecute
--- Access.Jet.OleDb AccessOleDb
+-- Access.Jet.OleDb AccessOleDb (asynchronously)
 
 SELECT TOP 2
 	[t1].[FirstName],
@@ -64,7 +64,7 @@ FROM
 	[xxPerson] [t1]
 
 BeforeExecute
--- Access.Jet.OleDb AccessOleDb
+-- Access.Jet.OleDb AccessOleDb (asynchronously)
 DECLARE @FirstName VarWChar(6) -- String
 SET     @FirstName = 'Steven'
 DECLARE @LastName VarWChar(4) -- String
@@ -87,7 +87,7 @@ WHERE
 	[t1].[PersonID] = @ID
 
 BeforeExecute
--- Access.Jet.OleDb AccessOleDb
+-- Access.Jet.OleDb AccessOleDb (asynchronously)
 
 SELECT TOP 2
 	[t1].[FirstName],
@@ -99,7 +99,7 @@ FROM
 	[xxPerson] [t1]
 
 BeforeExecute
--- Access.Jet.OleDb AccessOleDb
+-- Access.Jet.OleDb AccessOleDb (asynchronously)
 
 DROP TABLE [xxPerson]
 

@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Access.Ace.Odbc AccessODBC
+-- Access.Ace.Odbc AccessODBC (asynchronously)
 DECLARE @str NVarChar(7) -- String
 SET     @str = '%o[%]h%'
 

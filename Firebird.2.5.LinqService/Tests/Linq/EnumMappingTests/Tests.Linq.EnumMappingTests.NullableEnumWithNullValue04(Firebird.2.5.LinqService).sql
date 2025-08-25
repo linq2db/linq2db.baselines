@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Firebird.2.5 Firebird
+-- Firebird.2.5 Firebird (asynchronously)
 DECLARE @p Integer -- Int32
 SET     @p = 105
 
@@ -9,7 +9,7 @@ WHERE
 	"r".ID >= 101 AND "r".ID < @p
 
 BeforeExecute
--- Firebird.2.5 Firebird
+-- Firebird.2.5 Firebird (asynchronously)
 DECLARE @Id Integer -- Int32
 SET     @Id = 101
 DECLARE @Value Char(2) -- String
@@ -27,7 +27,7 @@ VALUES
 )
 
 BeforeExecute
--- Firebird.2.5 Firebird
+-- Firebird.2.5 Firebird (asynchronously)
 DECLARE @Id Integer -- Int32
 SET     @Id = 102
 DECLARE @Value Char(2) -- String
@@ -45,7 +45,7 @@ VALUES
 )
 
 BeforeExecute
--- Firebird.2.5 Firebird
+-- Firebird.2.5 Firebird (asynchronously)
 DECLARE @Id Integer -- Int32
 SET     @Id = 103
 DECLARE @Value Char -- String
@@ -63,7 +63,7 @@ VALUES
 )
 
 BeforeExecute
--- Firebird.2.5 Firebird
+-- Firebird.2.5 Firebird (asynchronously)
 DECLARE @Id Integer -- Int32
 SET     @Id = 104
 DECLARE @Value Char -- String
@@ -81,7 +81,7 @@ VALUES
 )
 
 BeforeExecute
--- Firebird.2.5 Firebird
+-- Firebird.2.5 Firebird (asynchronously)
 
 SELECT
 	"r".ID,
@@ -94,7 +94,7 @@ ORDER BY
 	"r".ID
 
 BeforeExecute
--- Firebird.2.5 Firebird
+-- Firebird.2.5 Firebird (asynchronously)
 
 SELECT
 	"r".ID,
@@ -108,7 +108,7 @@ ORDER BY
 	"r".ID
 
 BeforeExecute
--- Firebird.2.5 Firebird
+-- Firebird.2.5 Firebird (asynchronously)
 DECLARE @p Integer -- Int32
 SET     @p = 105
 

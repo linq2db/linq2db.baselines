@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- DB2 DB2.LUW DB2LUW
+-- DB2 DB2.LUW DB2LUW (asynchronously)
 DECLARE @currentDate Timestamp(20) -- DateTime
 SET     @currentDate = '2020-02-29-17.54.55.123123'
 DECLARE @currentDate_1 Timestamp(20) -- DateTime

@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2012.MS SqlServer.2012
+-- SqlServer.2012.MS SqlServer.2012 (asynchronously)
 
 SELECT
 	[m_1].[PersonID],
@@ -12,7 +12,7 @@ WHERE
 	Lower([m_1].[FirstName]) LIKE N'%test%' ESCAPE N'~'
 
 BeforeExecute
--- SqlServer.2012.MS SqlServer.2012
+-- SqlServer.2012.MS SqlServer.2012 (asynchronously)
 
 SELECT
 	[p].[FirstName],

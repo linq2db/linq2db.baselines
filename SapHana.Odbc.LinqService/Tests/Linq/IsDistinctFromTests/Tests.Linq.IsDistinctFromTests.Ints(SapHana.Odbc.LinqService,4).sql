@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+-- SapHana.Odbc SapHanaOdbc (asynchronously)
 DECLARE @value Int -- Int32
 SET     @value = 4
 
@@ -19,7 +19,7 @@ FROM DUMMY
 	)
 
 BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+-- SapHana.Odbc SapHanaOdbc (asynchronously)
 DECLARE @value Int -- Int32
 SET     @value = 4
 
@@ -39,7 +39,7 @@ FROM DUMMY
 	)
 
 BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+-- SapHana.Odbc SapHanaOdbc (asynchronously)
 DECLARE @value Int -- Int32
 SET     @value = 4
 
@@ -59,7 +59,7 @@ FROM DUMMY
 	)
 
 BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+-- SapHana.Odbc SapHanaOdbc (asynchronously)
 DECLARE @value Int -- Int32
 SET     @value = 4
 

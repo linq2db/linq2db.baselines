@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Informix.DB2 Informix
+-- Informix.DB2 Informix (asynchronously)
 
 SELECT
 	RTRIM(Replace(To_Char(p.MoneyValue), To_Char(','), To_Char('.')), '0.')

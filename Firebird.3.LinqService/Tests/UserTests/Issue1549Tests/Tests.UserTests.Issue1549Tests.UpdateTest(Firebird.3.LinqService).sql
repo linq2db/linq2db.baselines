@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Firebird.3 Firebird3
+-- Firebird.3 Firebird3 (asynchronously)
 
 UPDATE
 	"billing_TempReading"
@@ -34,7 +34,7 @@ WHERE
 	)
 
 BeforeExecute
--- Firebird.3 Firebird3
+-- Firebird.3 Firebird3 (asynchronously)
 
 UPDATE
 	"billing_TempReading" "t1"

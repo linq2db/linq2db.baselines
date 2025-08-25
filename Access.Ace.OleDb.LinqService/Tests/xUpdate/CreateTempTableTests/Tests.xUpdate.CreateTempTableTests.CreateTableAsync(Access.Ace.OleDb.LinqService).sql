@@ -24,7 +24,7 @@ FROM
 	[Parent] [p]
 
 BeforeExecute
--- Access.Ace.OleDb AccessOleDb
+-- Access.Ace.OleDb AccessOleDb (asynchronously)
 
 SELECT
 	[t].[ID]

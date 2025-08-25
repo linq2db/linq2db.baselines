@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+-- SapHana.Odbc SapHanaOdbc (asynchronously)
 DECLARE @skip Int -- Int32
 SET     @skip = 3
 
@@ -13,7 +13,7 @@ ORDER BY
 LIMIT 4200000000 OFFSET ?
 
 BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+-- SapHana.Odbc SapHanaOdbc (asynchronously)
 DECLARE @skip Int -- Int32
 SET     @skip = 4
 

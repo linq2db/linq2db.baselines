@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SQLite.Classic.MPM SQLite.Classic SQLite
+-- SQLite.Classic.MPM SQLite.Classic SQLite (asynchronously)
 
 WITH [CTE_1]
 (
@@ -39,7 +39,7 @@ WHERE
 	[r].[ID] = 2
 
 BeforeExecute
--- SQLite.Classic.MPM SQLite.Classic SQLite
+-- SQLite.Classic.MPM SQLite.Classic SQLite (asynchronously)
 
 WITH [CTE_1] ([c1])
 AS

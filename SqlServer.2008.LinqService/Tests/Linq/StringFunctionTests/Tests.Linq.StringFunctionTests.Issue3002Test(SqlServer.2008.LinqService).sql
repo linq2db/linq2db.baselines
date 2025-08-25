@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2008
+-- SqlServer.2008 (asynchronously)
 
 INSERT INTO [SampleClass]
 (
@@ -15,7 +15,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2008
+-- SqlServer.2008 (asynchronously)
 
 INSERT INTO [SampleClass]
 (
@@ -31,7 +31,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2008
+-- SqlServer.2008 (asynchronously)
 DECLARE @test NVarChar(4000) -- String
 SET     @test = N'Test'
 DECLARE @test_1 NVarChar(4000) -- String
@@ -52,7 +52,7 @@ SELECT
 	END
 
 BeforeExecute
--- SqlServer.2008
+-- SqlServer.2008 (asynchronously)
 DECLARE @test NVarChar(4000) -- String
 SET     @test = N'Test'
 DECLARE @test_1 NVarChar(4000) -- String
@@ -66,7 +66,7 @@ WHERE
 	[sampleClass_1].[Value] = @test OR [sampleClass_1].[Value2] LIKE @test_1 ESCAPE N'~'
 
 BeforeExecute
--- SqlServer.2008
+-- SqlServer.2008 (asynchronously)
 DECLARE @test NVarChar(4000) -- String
 SET     @test = N'Value'
 DECLARE @test_1 NVarChar(4000) -- String
@@ -87,7 +87,7 @@ SELECT
 	END
 
 BeforeExecute
--- SqlServer.2008
+-- SqlServer.2008 (asynchronously)
 DECLARE @test NVarChar(4000) -- String
 SET     @test = N'Value'
 DECLARE @test_1 NVarChar(4000) -- String
@@ -101,7 +101,7 @@ WHERE
 	[sampleClass_1].[Value] = @test OR [sampleClass_1].[Value2] LIKE @test_1 ESCAPE N'~'
 
 BeforeExecute
--- SqlServer.2008
+-- SqlServer.2008 (asynchronously)
 DECLARE @test NVarChar(4000) -- String
 SET     @test = N'Class'
 DECLARE @test_1 NVarChar(4000) -- String
@@ -122,7 +122,7 @@ SELECT
 	END
 
 BeforeExecute
--- SqlServer.2008
+-- SqlServer.2008 (asynchronously)
 DECLARE @test NVarChar(4000) -- String
 SET     @test = N'Class'
 DECLARE @test_1 NVarChar(4000) -- String

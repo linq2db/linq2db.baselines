@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Firebird.2.5 Firebird
+-- Firebird.2.5 Firebird (asynchronously)
 
 SELECT
 	SUM("grp_1"."MoneyValue"),
@@ -17,7 +17,7 @@ GROUP BY
 	"grp_1"."Date_1"
 
 BeforeExecute
--- Firebird.2.5 Firebird
+-- Firebird.2.5 Firebird (asynchronously)
 
 SELECT
 	SUM("grp_1"."MoneyValue"),

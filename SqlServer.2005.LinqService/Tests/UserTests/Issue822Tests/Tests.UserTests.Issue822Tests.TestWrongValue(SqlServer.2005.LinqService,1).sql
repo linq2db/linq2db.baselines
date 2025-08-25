@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2005
+-- SqlServer.2005 (asynchronously)
 DECLARE @id Int -- Int32
 SET     @id = 3
 
@@ -27,7 +27,7 @@ WHERE
 	)
 
 BeforeExecute
--- SqlServer.2005
+-- SqlServer.2005 (asynchronously)
 DECLARE @id Int -- Int32
 SET     @id = 4
 

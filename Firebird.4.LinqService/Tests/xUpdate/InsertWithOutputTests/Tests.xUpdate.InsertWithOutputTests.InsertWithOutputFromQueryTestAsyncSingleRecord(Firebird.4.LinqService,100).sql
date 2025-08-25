@@ -23,7 +23,7 @@ RETURNING
 	"DestinationTable"."ValueStr"
 
 BeforeExecute
--- Firebird.4 Firebird4
+-- Firebird.4 Firebird4 (asynchronously)
 DECLARE @param Integer -- Int32
 SET     @param = 100
 

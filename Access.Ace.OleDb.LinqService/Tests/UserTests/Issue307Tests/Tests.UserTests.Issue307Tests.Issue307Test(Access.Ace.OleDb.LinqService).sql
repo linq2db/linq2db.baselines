@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Access.Ace.OleDb AccessOleDb
+-- Access.Ace.OleDb AccessOleDb (asynchronously)
 DECLARE @Gender WChar(1) -- StringFixedLength
 SET     @Gender = 'M'
 DECLARE @FirstName VarWChar(12) -- String
@@ -25,12 +25,12 @@ VALUES
 )
 
 BeforeExecute
--- Access.Ace.OleDb AccessOleDb
+-- Access.Ace.OleDb AccessOleDb (asynchronously)
 
 SELECT @@IDENTITY
 
 BeforeExecute
--- Access.Ace.OleDb AccessOleDb
+-- Access.Ace.OleDb AccessOleDb (asynchronously)
 DECLARE @id Integer -- Int32
 SET     @id = 5
 

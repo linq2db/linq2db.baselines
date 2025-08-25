@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SQLite.Classic.MPM SQLite.Classic SQLite
+-- SQLite.Classic.MPM SQLite.Classic SQLite (asynchronously)
 DECLARE @lang NVarChar(2) -- String
 SET     @lang = 'de'
 
@@ -14,7 +14,7 @@ WHERE
 	[d].[Lang] = @lang
 
 BeforeExecute
--- SQLite.Classic.MPM SQLite.Classic SQLite
+-- SQLite.Classic.MPM SQLite.Classic SQLite (asynchronously)
 
 SELECT
 	[item_1].[Name],

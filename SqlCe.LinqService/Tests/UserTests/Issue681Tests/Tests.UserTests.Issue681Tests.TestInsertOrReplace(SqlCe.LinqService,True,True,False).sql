@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 DECLARE @Value Int -- Int32
 SET     @Value = 10
 DECLARE @ID Int -- Int32
@@ -13,7 +13,7 @@ WHERE
 	[Issue681Table].[ID] = @ID
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 DECLARE @ID Int -- Int32
 SET     @ID = 5
 DECLARE @Value Int -- Int32
@@ -31,7 +31,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 DECLARE @Value Int -- Int32
 SET     @Value = 10
 DECLARE @ID Int -- Int32

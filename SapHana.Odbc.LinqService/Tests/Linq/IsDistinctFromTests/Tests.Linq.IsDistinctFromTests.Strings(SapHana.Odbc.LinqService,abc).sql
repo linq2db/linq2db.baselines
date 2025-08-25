@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+-- SapHana.Odbc SapHanaOdbc (asynchronously)
 DECLARE @value NVarChar(3) -- String
 SET     @value = 'abc'
 
@@ -19,7 +19,7 @@ FROM DUMMY
 	)
 
 BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+-- SapHana.Odbc SapHanaOdbc (asynchronously)
 DECLARE @value NVarChar(3) -- String
 SET     @value = 'abc'
 
@@ -39,7 +39,7 @@ FROM DUMMY
 	)
 
 BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+-- SapHana.Odbc SapHanaOdbc (asynchronously)
 DECLARE @value NVarChar(3) -- String
 SET     @value = 'abc'
 
@@ -59,7 +59,7 @@ FROM DUMMY
 	)
 
 BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+-- SapHana.Odbc SapHanaOdbc (asynchronously)
 DECLARE @value NVarChar(3) -- String
 SET     @value = 'abc'
 

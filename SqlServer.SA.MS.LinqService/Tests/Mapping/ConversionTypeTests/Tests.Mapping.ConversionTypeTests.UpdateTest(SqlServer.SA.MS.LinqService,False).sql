@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.SA.MS SqlServer.2019
+-- SqlServer.SA.MS SqlServer.2019 (asynchronously)
 DECLARE @Data NVarChar(50) -- String
 SET     @Data = N'***III***'
 DECLARE @ID Int -- Int32
@@ -13,7 +13,7 @@ WHERE
 	[TrimTestTable].[ID] = @ID
 
 BeforeExecute
--- SqlServer.SA.MS SqlServer.2019
+-- SqlServer.SA.MS SqlServer.2019 (asynchronously)
 DECLARE @Data NVarChar(50) -- String
 SET     @Data = N'***OOO***'
 
@@ -25,7 +25,7 @@ WHERE
 	[TrimTestTable].[Data] = N'***XXX***'
 
 BeforeExecute
--- SqlServer.SA.MS SqlServer.2019
+-- SqlServer.SA.MS SqlServer.2019 (asynchronously)
 DECLARE @Data NVarChar(50) -- String
 SET     @Data = N'***SSS***'
 DECLARE @p NVarChar(50) -- String
@@ -39,7 +39,7 @@ WHERE
 	[TrimTestTable].[Data] = @p
 
 BeforeExecute
--- SqlServer.SA.MS SqlServer.2019
+-- SqlServer.SA.MS SqlServer.2019 (asynchronously)
 
 SELECT
 	[r].[ID],
@@ -50,7 +50,7 @@ ORDER BY
 	[r].[ID]
 
 BeforeExecute
--- SqlServer.SA.MS SqlServer.2019
+-- SqlServer.SA.MS SqlServer.2019 (asynchronously)
 
 SELECT
 	[r].[ID],

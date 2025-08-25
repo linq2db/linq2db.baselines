@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- PostgreSQL.15 PostgreSQL
+-- PostgreSQL.15 PostgreSQL (asynchronously)
 DECLARE @p Integer -- Int32
 SET     @p = 1
 
@@ -16,7 +16,7 @@ SELECT
 	END
 
 BeforeExecute
--- PostgreSQL.15 PostgreSQL
+-- PostgreSQL.15 PostgreSQL (asynchronously)
 DECLARE @p Integer -- Int32
 SET     @p = -1
 

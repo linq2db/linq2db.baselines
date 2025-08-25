@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Sybase.Managed Sybase
+-- Sybase.Managed Sybase (asynchronously)
 DECLARE @Id Integer -- Int32
 SET     @Id = 2
 DECLARE @SerialNumber UniVarChar(7) -- String
@@ -25,7 +25,7 @@ VALUES
 )
 
 BeforeExecute
--- Sybase.Managed Sybase
+-- Sybase.Managed Sybase (asynchronously)
 DECLARE @Id Integer -- Int32
 SET     @Id = 1
 DECLARE @SerialNumber UniVarChar(9) -- String
@@ -47,7 +47,7 @@ VALUES
 )
 
 BeforeExecute
--- Sybase.Managed Sybase
+-- Sybase.Managed Sybase (asynchronously)
 
 SELECT
 	[t1].[DeviceType],
@@ -60,7 +60,7 @@ ORDER BY
 	[t1].[Id]
 
 BeforeExecute
--- Sybase.Managed Sybase
+-- Sybase.Managed Sybase (asynchronously)
 DECLARE @SerialNumber UniVarChar(7) -- String
 SET     @SerialNumber = 'TV00002'
 DECLARE @DeviceType UniVarChar(2) -- String
@@ -80,7 +80,7 @@ WHERE
 	[Issue4280].[Id] = @Id
 
 BeforeExecute
--- Sybase.Managed Sybase
+-- Sybase.Managed Sybase (asynchronously)
 DECLARE @SerialNumber UniVarChar(9) -- String
 SET     @SerialNumber = 'Disp00002'
 DECLARE @DeviceType UniVarChar(7) -- String
@@ -97,7 +97,7 @@ WHERE
 	[Issue4280].[Id] = @Id
 
 BeforeExecute
--- Sybase.Managed Sybase
+-- Sybase.Managed Sybase (asynchronously)
 
 SELECT
 	[t1].[DeviceType],

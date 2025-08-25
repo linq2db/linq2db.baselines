@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2019
+-- SqlServer.2019 (asynchronously)
 
 WITH [CTE_1] ([Id])
 AS
@@ -48,7 +48,7 @@ FROM
 	[hierarchyDown] [t4]
 
 BeforeExecute
--- SqlServer.2019
+-- SqlServer.2019 (asynchronously)
 
 SELECT
 	[t1].[Id],

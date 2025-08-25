@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- MySql.5.7 MySql.5.7.MySql.Data MySql57
+-- MySql.5.7 MySql.5.7.MySql.Data MySql57 (asynchronously)
 
 SELECT
 	`c_1`.`ParentID`,
@@ -21,7 +21,7 @@ WHERE
 	)
 
 BeforeExecute
--- MySql.5.7 MySql.5.7.MySql.Data MySql57
+-- MySql.5.7 MySql.5.7.MySql.Data MySql57 (asynchronously)
 
 SELECT
 	`t1`.`ParentID`,
@@ -30,7 +30,7 @@ FROM
 	`Child` `t1`
 
 BeforeExecute
--- MySql.5.7 MySql.5.7.MySql.Data MySql57
+-- MySql.5.7 MySql.5.7.MySql.Data MySql57 (asynchronously)
 
 SELECT
 	`t1`.`ParentID`,

@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- MySql.5.7 MySql.5.7.MySql.Data MySql57
+-- MySql.5.7 MySql.5.7.MySql.Data MySql57 (asynchronously)
 DECLARE @ID Int32
 SET     @ID = 0
 DECLARE @FirstName VarChar(27) -- String
@@ -24,7 +24,7 @@ ON DUPLICATE KEY UPDATE
 	`LastName` = @LastName
 
 BeforeExecute
--- MySql.5.7 MySql.5.7.MySql.Data MySql57
+-- MySql.5.7 MySql.5.7.MySql.Data MySql57 (asynchronously)
 DECLARE @FirstName VarChar(27) -- String
 SET     @FirstName = 'InsertOrReplaceColumnFilter'
 
@@ -40,7 +40,7 @@ WHERE
 LIMIT 1
 
 BeforeExecute
--- MySql.5.7 MySql.5.7.MySql.Data MySql57
+-- MySql.5.7 MySql.5.7.MySql.Data MySql57 (asynchronously)
 DECLARE @ID Int32
 SET     @ID = 0
 DECLARE @FirstName VarChar(27) -- String
@@ -70,7 +70,7 @@ ON DUPLICATE KEY UPDATE
 	`MiddleName` = @MiddleName
 
 BeforeExecute
--- MySql.5.7 MySql.5.7.MySql.Data MySql57
+-- MySql.5.7 MySql.5.7.MySql.Data MySql57 (asynchronously)
 DECLARE @FirstName VarChar(27) -- String
 SET     @FirstName = 'InsertOrReplaceColumnFilter'
 

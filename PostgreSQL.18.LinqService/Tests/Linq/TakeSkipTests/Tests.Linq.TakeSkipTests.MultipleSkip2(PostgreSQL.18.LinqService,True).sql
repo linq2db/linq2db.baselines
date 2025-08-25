@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- PostgreSQL.18 PostgreSQL
+-- PostgreSQL.18 PostgreSQL (asynchronously)
 DECLARE @skip Integer -- Int32
 SET     @skip = 3
 
@@ -12,7 +12,7 @@ ORDER BY
 OFFSET :skip 
 
 BeforeExecute
--- PostgreSQL.18 PostgreSQL
+-- PostgreSQL.18 PostgreSQL (asynchronously)
 DECLARE @skip Integer -- Int32
 SET     @skip = 4
 

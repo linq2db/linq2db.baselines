@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2019
+-- SqlServer.2019 (asynchronously)
 DECLARE @ParentID Int -- Int32
 SET     @ParentID = 11
 DECLARE @Value1 Int -- Int32

@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Access.Ace.OleDb AccessOleDb
+-- Access.Ace.OleDb AccessOleDb (asynchronously)
 DECLARE @value VarWChar(3) -- String
 SET     @value = 'abc'
 
@@ -11,7 +11,7 @@ WHERE
 	[s].[String] IS NULL OR [s].[String] <> @value
 
 BeforeExecute
--- Access.Ace.OleDb AccessOleDb
+-- Access.Ace.OleDb AccessOleDb (asynchronously)
 DECLARE @value VarWChar(3) -- String
 SET     @value = 'abc'
 
@@ -23,7 +23,7 @@ WHERE
 	[s].[NullableString] IS NULL OR [s].[NullableString] <> @value
 
 BeforeExecute
--- Access.Ace.OleDb AccessOleDb
+-- Access.Ace.OleDb AccessOleDb (asynchronously)
 DECLARE @value VarWChar(3) -- String
 SET     @value = 'abc'
 
@@ -35,7 +35,7 @@ WHERE
 	NOT ([s].[String] IS NULL OR [s].[String] <> @value)
 
 BeforeExecute
--- Access.Ace.OleDb AccessOleDb
+-- Access.Ace.OleDb AccessOleDb (asynchronously)
 DECLARE @value VarWChar(3) -- String
 SET     @value = 'abc'
 

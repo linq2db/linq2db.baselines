@@ -1,10 +1,10 @@
 ﻿BeforeExecute
--- SqlServer.2016.MS SqlServer.2016
+-- SqlServer.2016.MS SqlServer.2016 (asynchronously)
 
 DROP TABLE IF EXISTS [FluentTemp]
 
 BeforeExecute
--- SqlServer.2016.MS SqlServer.2016
+-- SqlServer.2016.MS SqlServer.2016 (asynchronously)
 
 IF (OBJECT_ID(N'[FluentTemp]', N'U') IS NULL)
 	CREATE TABLE [FluentTemp]
@@ -16,7 +16,7 @@ IF (OBJECT_ID(N'[FluentTemp]', N'U') IS NULL)
 	)
 
 BeforeExecute
--- SqlServer.2016.MS SqlServer.2016
+-- SqlServer.2016.MS SqlServer.2016 (asynchronously)
 DECLARE @ID Int -- Int32
 SET     @ID = 1
 DECLARE @Name NVarChar(20) -- String
@@ -34,7 +34,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2016.MS SqlServer.2016
+-- SqlServer.2016.MS SqlServer.2016 (asynchronously)
 
 MERGE INTO [FluentTemp] [t1]
 USING (SELECT 1 AS [ID]) [s] ON
@@ -59,7 +59,7 @@ WHEN NOT MATCHED THEN
 	);
 
 BeforeExecute
--- SqlServer.2016.MS SqlServer.2016
+-- SqlServer.2016.MS SqlServer.2016 (asynchronously)
 
 DROP TABLE IF EXISTS [FluentTemp]
 

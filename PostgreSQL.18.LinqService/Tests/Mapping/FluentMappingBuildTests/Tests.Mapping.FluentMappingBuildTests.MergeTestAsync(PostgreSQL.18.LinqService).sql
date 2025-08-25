@@ -4,7 +4,7 @@
 DROP TABLE IF EXISTS "FluentTemp"
 
 BeforeExecute
--- PostgreSQL.18 PostgreSQL
+-- PostgreSQL.18 PostgreSQL (asynchronously)
 
 CREATE TABLE IF NOT EXISTS "FluentTemp"
 (
@@ -15,7 +15,7 @@ CREATE TABLE IF NOT EXISTS "FluentTemp"
 )
 
 BeforeExecute
--- PostgreSQL.18 PostgreSQL
+-- PostgreSQL.18 PostgreSQL (asynchronously)
 DECLARE @ID Integer -- Int32
 SET     @ID = 1
 DECLARE @Name Text(4) -- String

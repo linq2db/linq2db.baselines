@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2012
+-- SqlServer.2012 (asynchronously)
 
 SELECT
 	[a_Parent_1].[ParentID]

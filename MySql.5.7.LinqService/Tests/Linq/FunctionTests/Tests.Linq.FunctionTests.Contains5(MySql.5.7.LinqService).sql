@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- MySql.5.7 MySql.5.7.MySql.Data MySql57
+-- MySql.5.7 MySql.5.7.MySql.Data MySql57 (asynchronously)
 
 SELECT
 	`p`.`ParentID`,
@@ -10,7 +10,7 @@ WHERE
 	`p`.`ParentID` IN (1, 2)
 
 BeforeExecute
--- MySql.5.7 MySql.5.7.MySql.Data MySql57
+-- MySql.5.7 MySql.5.7.MySql.Data MySql57 (asynchronously)
 
 SELECT
 	`p`.`ParentID`,

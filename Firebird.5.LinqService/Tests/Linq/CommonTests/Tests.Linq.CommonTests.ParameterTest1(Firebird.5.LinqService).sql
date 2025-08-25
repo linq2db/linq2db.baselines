@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Firebird.5 Firebird4
+-- Firebird.5 Firebird4 (asynchronously)
 DECLARE @id Integer -- Int32
 SET     @id = 1
 
@@ -20,7 +20,7 @@ GROUP BY
 	"g_1"."ParentID"
 
 BeforeExecute
--- Firebird.5 Firebird4
+-- Firebird.5 Firebird4 (asynchronously)
 DECLARE @id Integer -- Int32
 SET     @id = 2
 

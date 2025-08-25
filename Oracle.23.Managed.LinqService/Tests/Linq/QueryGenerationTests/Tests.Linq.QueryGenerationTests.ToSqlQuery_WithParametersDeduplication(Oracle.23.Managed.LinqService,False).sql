@@ -15,7 +15,7 @@ WHERE
 	p."FirstName" = :firstName OR p."LastName" = :firstName
 
 BeforeExecute
--- Oracle.23.Managed Oracle.Managed Oracle12
+-- Oracle.23.Managed Oracle.Managed Oracle12 (asynchronously)
 DECLARE @firstName Varchar2(4) -- String
 SET     @firstName = 'John'
 

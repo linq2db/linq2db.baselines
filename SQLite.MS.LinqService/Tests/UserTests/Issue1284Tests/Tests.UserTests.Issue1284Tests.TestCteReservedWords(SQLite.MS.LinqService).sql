@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SQLite.MS SQLite
+-- SQLite.MS SQLite (asynchronously)
 
 WITH [CTE_1] ([Obj_Operator])
 AS
@@ -16,7 +16,7 @@ FROM
 LIMIT 1
 
 BeforeExecute
--- SQLite.MS SQLite
+-- SQLite.MS SQLite (asynchronously)
 
 SELECT
 	[person_1].[LastName]

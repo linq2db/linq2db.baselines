@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2019.MS SqlServer.2019
+-- SqlServer.2019.MS SqlServer.2019 (asynchronously)
 DECLARE @someValue Int -- Int32
 SET     @someValue = 3
 

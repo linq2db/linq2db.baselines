@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Firebird.2.5 Firebird
+-- Firebird.2.5 Firebird (asynchronously)
 DECLARE @In VarChar(12) -- String
 SET     @In = '___Value3___'
 DECLARE @In_1 VarChar(12) -- String
@@ -13,7 +13,7 @@ WHERE
 	"s"."CEnum" IN (@In, @In_1)
 
 BeforeExecute
--- Firebird.2.5 Firebird
+-- Firebird.2.5 Firebird (asynchronously)
 DECLARE @In VarChar(12) -- String
 SET     @In = '___Value3___'
 
@@ -25,7 +25,7 @@ WHERE
 	("s"."CEnum" IN (@In) OR "s"."CEnum" IS NULL)
 
 BeforeExecute
--- Firebird.2.5 Firebird
+-- Firebird.2.5 Firebird (asynchronously)
 DECLARE @In VarChar(12) -- String
 SET     @In = '___Value3___'
 DECLARE @In_1 VarChar(12) -- String
@@ -39,7 +39,7 @@ WHERE
 	"s"."CEnum" IN (@In, @In_1)
 
 BeforeExecute
--- Firebird.2.5 Firebird
+-- Firebird.2.5 Firebird (asynchronously)
 DECLARE @NotIn VarChar(12) -- String
 SET     @NotIn = '___Value2___'
 
@@ -51,7 +51,7 @@ WHERE
 	("s"."CEnum" NOT IN (@NotIn) AND "s"."CEnum" IS NOT NULL)
 
 BeforeExecute
--- Firebird.2.5 Firebird
+-- Firebird.2.5 Firebird (asynchronously)
 DECLARE @NotIn VarChar(12) -- String
 SET     @NotIn = '___Value3___'
 DECLARE @NotIn_1 VarChar(12) -- String

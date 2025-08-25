@@ -1,12 +1,12 @@
 ﻿BeforeExecute
--- SqlServer.2016.MS SqlServer.2016
+-- SqlServer.2016.MS SqlServer.2016 (asynchronously)
 
 DELETE [t1]
 FROM
 	[TestMerge1] [t1]
 
 BeforeExecute
--- SqlServer.2016.MS SqlServer.2016
+-- SqlServer.2016.MS SqlServer.2016 (asynchronously)
 DECLARE @Id Int -- Int32
 SET     @Id = 1
 DECLARE @Field1 Int -- Int32
@@ -32,7 +32,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2016.MS SqlServer.2016
+-- SqlServer.2016.MS SqlServer.2016 (asynchronously)
 DECLARE @Id Int -- Int32
 SET     @Id = 2
 DECLARE @Field1 Int -- Int32
@@ -58,7 +58,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2016.MS SqlServer.2016
+-- SqlServer.2016.MS SqlServer.2016 (asynchronously)
 DECLARE @Id Int -- Int32
 SET     @Id = 3
 DECLARE @Field1 Int -- Int32
@@ -84,7 +84,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2016.MS SqlServer.2016
+-- SqlServer.2016.MS SqlServer.2016 (asynchronously)
 DECLARE @Id Int -- Int32
 SET     @Id = 4
 DECLARE @Field1 Int -- Int32
@@ -110,14 +110,14 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2016.MS SqlServer.2016
+-- SqlServer.2016.MS SqlServer.2016 (asynchronously)
 
 DELETE [t1]
 FROM
 	[TestMerge2] [t1]
 
 BeforeExecute
--- SqlServer.2016.MS SqlServer.2016
+-- SqlServer.2016.MS SqlServer.2016 (asynchronously)
 DECLARE @Id Int -- Int32
 SET     @Id = 3
 DECLARE @Field1 Int -- Int32
@@ -143,7 +143,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2016.MS SqlServer.2016
+-- SqlServer.2016.MS SqlServer.2016 (asynchronously)
 DECLARE @Id Int -- Int32
 SET     @Id = 4
 DECLARE @Field1 Int -- Int32
@@ -169,7 +169,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2016.MS SqlServer.2016
+-- SqlServer.2016.MS SqlServer.2016 (asynchronously)
 DECLARE @Id Int -- Int32
 SET     @Id = 5
 DECLARE @Field1 Int -- Int32
@@ -195,7 +195,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2016.MS SqlServer.2016
+-- SqlServer.2016.MS SqlServer.2016 (asynchronously)
 DECLARE @Id Int -- Int32
 SET     @Id = 6
 DECLARE @Field1 Int -- Int32
@@ -221,7 +221,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2016.MS SqlServer.2016
+-- SqlServer.2016.MS SqlServer.2016 (asynchronously)
 
 MERGE INTO [TestMerge1] [Target]
 USING (
@@ -260,7 +260,7 @@ WHEN MATCHED THEN DELETE
 ;
 
 BeforeExecute
--- SqlServer.2016.MS SqlServer.2016
+-- SqlServer.2016.MS SqlServer.2016 (asynchronously)
 
 SELECT
 	[t1].[Id],

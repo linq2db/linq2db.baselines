@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Oracle.18.Managed Oracle.Managed Oracle12
+-- Oracle.18.Managed Oracle.Managed Oracle12 (asynchronously)
 
 BEGIN
 	EXECUTE IMMEDIATE 'DROP TABLE "TempTable"';
@@ -11,7 +11,7 @@ EXCEPTION
 END;
 
 BeforeExecute
--- Oracle.18.Managed Oracle.Managed Oracle12
+-- Oracle.18.Managed Oracle.Managed Oracle12 (asynchronously)
 
 BEGIN
 	EXECUTE IMMEDIATE '
@@ -30,7 +30,7 @@ EXCEPTION
 END;
 
 BeforeExecute
--- Oracle.18.Managed Oracle.Managed Oracle12
+-- Oracle.18.Managed Oracle.Managed Oracle12 (asynchronously)
 
 INSERT INTO "TempTable"
 (
@@ -42,7 +42,7 @@ FROM
 	"Parent" p
 
 BeforeExecute
--- Oracle.18.Managed Oracle.Managed Oracle12
+-- Oracle.18.Managed Oracle.Managed Oracle12 (asynchronously)
 
 SELECT
 	t.ID
@@ -51,7 +51,7 @@ FROM
 		INNER JOIN "TempTable" t ON p."ParentID" = t.ID
 
 BeforeExecute
--- Oracle.18.Managed Oracle.Managed Oracle12
+-- Oracle.18.Managed Oracle.Managed Oracle12 (asynchronously)
 
 BEGIN
 	EXECUTE IMMEDIATE 'DROP TABLE "TempTable"';

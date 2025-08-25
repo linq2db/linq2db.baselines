@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Oracle.11.Managed Oracle11
+-- Oracle.11.Managed Oracle11 (asynchronously)
 
 SELECT
 	m_1."Id",
@@ -14,7 +14,7 @@ FROM
 		LEFT JOIN "EntityMD" a_ObjectD ON d.FKD = a_ObjectD."Id"
 
 BeforeExecute
--- Oracle.11.Managed Oracle11
+-- Oracle.11.Managed Oracle11 (asynchronously)
 
 SELECT
 	t1."Id",

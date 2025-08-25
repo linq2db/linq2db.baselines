@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2019
+-- SqlServer.2019 (asynchronously)
 DECLARE @ID Int -- Int32
 SET     @ID = 1
 DECLARE @Data NVarChar(50) -- String
@@ -17,7 +17,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2019
+-- SqlServer.2019 (asynchronously)
 DECLARE @ID Int -- Int32
 SET     @ID = 2
 DECLARE @Data NVarChar(50) -- String
@@ -35,7 +35,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2019
+-- SqlServer.2019 (asynchronously)
 
 INSERT INTO [TrimTestTable]
 (
@@ -49,7 +49,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2019
+-- SqlServer.2019 (asynchronously)
 
 SELECT
 	[r].[ID],
@@ -60,7 +60,7 @@ ORDER BY
 	[r].[ID]
 
 BeforeExecute
--- SqlServer.2019
+-- SqlServer.2019 (asynchronously)
 
 SELECT
 	[r].[ID],

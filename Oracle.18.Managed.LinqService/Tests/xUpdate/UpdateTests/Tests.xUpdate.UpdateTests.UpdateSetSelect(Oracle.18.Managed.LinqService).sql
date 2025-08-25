@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Oracle.18.Managed Oracle.Managed Oracle12
+-- Oracle.18.Managed Oracle.Managed Oracle12 (asynchronously)
 
 DELETE FROM
 	"Parent" t1
@@ -7,7 +7,7 @@ WHERE
 	t1."ParentID" > 1000
 
 BeforeExecute
--- Oracle.18.Managed Oracle.Managed Oracle12
+-- Oracle.18.Managed Oracle.Managed Oracle12 (asynchronously)
 
 UPDATE
 	"Parent"
@@ -37,7 +37,7 @@ WHERE
 	)
 
 BeforeExecute
--- Oracle.18.Managed Oracle.Managed Oracle12
+-- Oracle.18.Managed Oracle.Managed Oracle12 (asynchronously)
 DECLARE @ParentID Int32
 SET     @ParentID = 1
 

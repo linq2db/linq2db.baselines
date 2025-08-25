@@ -1,10 +1,10 @@
 ﻿BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL (asynchronously)
 
 DROP TABLE IF EXISTS "CreateIfNotExistsTable"
 
 BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL (asynchronously)
 
 CREATE TABLE IF NOT EXISTS "CreateIfNotExistsTable"
 (
@@ -13,7 +13,7 @@ CREATE TABLE IF NOT EXISTS "CreateIfNotExistsTable"
 )
 
 BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL (asynchronously)
 
 INSERT INTO "CreateIfNotExistsTable"
 (
@@ -27,7 +27,7 @@ VALUES
 )
 
 BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL (asynchronously)
 
 SELECT
 	t1."Id",
@@ -36,7 +36,7 @@ FROM
 	"CreateIfNotExistsTable" t1
 
 BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL (asynchronously)
 
 CREATE TABLE IF NOT EXISTS "CreateIfNotExistsTable"
 (
@@ -45,12 +45,12 @@ CREATE TABLE IF NOT EXISTS "CreateIfNotExistsTable"
 )
 
 BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL (asynchronously)
 
 DROP TABLE IF EXISTS "CreateIfNotExistsTable"
 
 BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL (asynchronously)
 
 DROP TABLE IF EXISTS "CreateIfNotExistsTable"
 

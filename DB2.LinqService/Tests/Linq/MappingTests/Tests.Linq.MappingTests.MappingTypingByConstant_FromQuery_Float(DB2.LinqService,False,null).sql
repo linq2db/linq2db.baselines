@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- DB2 DB2.LUW DB2LUW
+-- DB2 DB2.LUW DB2LUW (asynchronously)
 DECLARE @value Real -- Single
 SET     @value = NULL
 
@@ -16,7 +16,7 @@ FROM
 	) "t1"
 
 BeforeExecute
--- DB2 DB2.LUW DB2LUW
+-- DB2 DB2.LUW DB2LUW (asynchronously)
 DECLARE @value Real(4) -- Single
 SET     @value = 3.14748365E+09
 

@@ -1,10 +1,10 @@
 ﻿BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+-- SapHana.Odbc SapHanaOdbc (asynchronously)
 
 DROP TABLE "TempTable"
 
 BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+-- SapHana.Odbc SapHanaOdbc (asynchronously)
 
 CREATE COLUMN TABLE "TempTable"
 (
@@ -12,7 +12,7 @@ CREATE COLUMN TABLE "TempTable"
 )
 
 BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+-- SapHana.Odbc SapHanaOdbc (asynchronously)
 
 INSERT INTO "TempTable"
 (
@@ -24,7 +24,7 @@ FROM
 	"Parent" "p"
 
 BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+-- SapHana.Odbc SapHanaOdbc (asynchronously)
 
 SELECT
 	"t"."ID"
@@ -33,7 +33,7 @@ FROM
 		INNER JOIN "TempTable" "t" ON "p"."ParentID" = "t"."ID"
 
 BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+-- SapHana.Odbc SapHanaOdbc (asynchronously)
 
 DROP TABLE "TempTable"
 

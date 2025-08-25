@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Firebird.2.5 Firebird
+-- Firebird.2.5 Firebird (asynchronously)
 
 INSERT INTO "Issue3323Table"
 (
@@ -17,7 +17,7 @@ VALUES
 )
 
 BeforeExecute
--- Firebird.2.5 Firebird
+-- Firebird.2.5 Firebird (asynchronously)
 
 SELECT
 	"r"."Id",
@@ -32,7 +32,7 @@ FROM
 	"Issue3323Table" "r_1"
 
 BeforeExecute
--- Firebird.2.5 Firebird
+-- Firebird.2.5 Firebird (asynchronously)
 
 SELECT
 	"r"."Id" + 1,

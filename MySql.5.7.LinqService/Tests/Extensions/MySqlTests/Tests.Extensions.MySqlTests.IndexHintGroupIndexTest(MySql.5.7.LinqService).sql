@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- MySql.5.7 MySql.5.7.MySql.Data MySql57
+-- MySql.5.7 MySql.5.7.MySql.Data MySql57 (asynchronously)
 
 SELECT /*+ GROUP_INDEX(p parent_ix, parent2_ix) */
 	`p`.`ParentID`,

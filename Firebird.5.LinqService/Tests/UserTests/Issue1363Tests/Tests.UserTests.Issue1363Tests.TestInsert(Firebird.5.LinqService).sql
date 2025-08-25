@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Firebird.5 Firebird4
+-- Firebird.5 Firebird4 (asynchronously)
 DECLARE @id Guid
 SET     @id = X'BC7B663D0FDE43278F925D8CC3A11D11'
 
@@ -22,7 +22,7 @@ VALUES
 )
 
 BeforeExecute
--- Firebird.5 Firebird4
+-- Firebird.5 Firebird4 (asynchronously)
 DECLARE @id Guid
 SET     @id = X'A948600DDE214F748AC29516B287076E'
 DECLARE @testId Guid
@@ -47,7 +47,7 @@ VALUES
 )
 
 BeforeExecute
--- Firebird.5 Firebird4
+-- Firebird.5 Firebird4 (asynchronously)
 DECLARE @id2 Guid
 SET     @id2 = X'A948600DDE214F748AC29516B287076E'
 

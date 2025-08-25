@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Firebird.3 Firebird3
+-- Firebird.3 Firebird3 (asynchronously)
 
 SELECT
 	"t"."Value"
@@ -9,7 +9,7 @@ WHERE
 	"t"."Value" = TRUE
 
 BeforeExecute
--- Firebird.3 Firebird3
+-- Firebird.3 Firebird3 (asynchronously)
 
 SELECT
 	"t"."Value"
@@ -19,7 +19,7 @@ WHERE
 	"t"."Value" = TRUE
 
 BeforeExecute
--- Firebird.3 Firebird3
+-- Firebird.3 Firebird3 (asynchronously)
 
 SELECT
 	"t"."Value"
@@ -29,7 +29,7 @@ WHERE
 	"t"."Value" = FALSE OR "t"."Value" IS NULL
 
 BeforeExecute
--- Firebird.3 Firebird3
+-- Firebird.3 Firebird3 (asynchronously)
 
 SELECT
 	"t"."Value"

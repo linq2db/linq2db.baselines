@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2019
+-- SqlServer.2019 (asynchronously)
 
 CREATE TABLE [tempdb]..[#TableWithPrimaryKey]
 (
@@ -9,7 +9,7 @@ CREATE TABLE [tempdb]..[#TableWithPrimaryKey]
 )
 
 BeforeExecute
--- SqlServer.2019
+-- SqlServer.2019 (asynchronously)
 
 DROP TABLE IF EXISTS [tempdb]..[#TableWithPrimaryKey]
 

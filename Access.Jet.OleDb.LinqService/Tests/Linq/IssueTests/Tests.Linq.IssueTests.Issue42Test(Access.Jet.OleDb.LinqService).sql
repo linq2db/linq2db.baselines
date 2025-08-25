@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Access.Jet.OleDb AccessOleDb
+-- Access.Jet.OleDb AccessOleDb (asynchronously)
 
 SELECT TOP 1
 	[r].[ID],
@@ -18,7 +18,7 @@ WHERE
 	[r].[ID] = 1
 
 BeforeExecute
--- Access.Jet.OleDb AccessOleDb
+-- Access.Jet.OleDb AccessOleDb (asynchronously)
 
 SELECT TOP 1
 	[r].[ID],
@@ -37,7 +37,7 @@ WHERE
 	[r].[ID] = 1
 
 BeforeExecute
--- Access.Jet.OleDb AccessOleDb
+-- Access.Jet.OleDb AccessOleDb (asynchronously)
 DECLARE @MoneyValue VarChar(5, 4) -- AnsiString
 SET     @MoneyValue = 1.1100
 DECLARE @DateTimeValue Date -- DateTime
@@ -75,7 +75,7 @@ WHERE
 	[t1].[ID] = @ID
 
 BeforeExecute
--- Access.Jet.OleDb AccessOleDb
+-- Access.Jet.OleDb AccessOleDb (asynchronously)
 DECLARE @ID Integer -- Int32
 SET     @ID = 1
 
@@ -96,7 +96,7 @@ WHERE
 	[r].[ID] = @ID
 
 BeforeExecute
--- Access.Jet.OleDb AccessOleDb
+-- Access.Jet.OleDb AccessOleDb (asynchronously)
 DECLARE @MoneyValue VarChar(5, 4) -- AnsiString
 SET     @MoneyValue = 1.1100
 DECLARE @DateTimeValue Date -- DateTime
@@ -134,7 +134,7 @@ WHERE
 	[t1].[ID] = @ID
 
 BeforeExecute
--- Access.Jet.OleDb AccessOleDb
+-- Access.Jet.OleDb AccessOleDb (asynchronously)
 
 SELECT TOP 1
 	[r].[ID],

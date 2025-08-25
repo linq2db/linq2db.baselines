@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Access.Ace.OleDb AccessOleDb
+-- Access.Ace.OleDb AccessOleDb (asynchronously)
 DECLARE @id Integer -- Int32
 SET     @id = 1001
 
@@ -15,7 +15,7 @@ VALUES
 )
 
 BeforeExecute
--- Access.Ace.OleDb AccessOleDb
+-- Access.Ace.OleDb AccessOleDb (asynchronously)
 DECLARE @id Integer -- Int32
 SET     @id = 1001
 
@@ -27,7 +27,7 @@ WHERE
 	[c_1].[ChildID] = @id
 
 BeforeExecute
--- Access.Ace.OleDb AccessOleDb
+-- Access.Ace.OleDb AccessOleDb (asynchronously)
 DECLARE @ChildID Integer -- Int32
 SET     @ChildID = 1002
 DECLARE @id Integer -- Int32
@@ -42,7 +42,7 @@ WHERE
 	[c_1].[ChildID] = @id AND [a_Parent].[Value1] = 1
 
 BeforeExecute
--- Access.Ace.OleDb AccessOleDb
+-- Access.Ace.OleDb AccessOleDb (asynchronously)
 DECLARE @p Integer -- Int32
 SET     @p = 1002
 

@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Access.Jet.Odbc AccessODBC
+-- Access.Jet.Odbc AccessODBC (asynchronously)
 DECLARE @p Int -- Int32
 SET     @p = 102
 
@@ -9,7 +9,7 @@ WHERE
 	[r].[ID] >= 101 AND [r].[ID] < ?
 
 BeforeExecute
--- Access.Jet.Odbc AccessODBC
+-- Access.Jet.Odbc AccessODBC (asynchronously)
 
 INSERT INTO [LinqDataTypes]
 (
@@ -23,7 +23,7 @@ VALUES
 )
 
 BeforeExecute
--- Access.Jet.Odbc AccessODBC
+-- Access.Jet.Odbc AccessODBC (asynchronously)
 
 UPDATE
 	[LinqDataTypes] [r]
@@ -33,7 +33,7 @@ WHERE
 	[r].[ID] = 101 AND [r].[BigIntValue] = 11
 
 BeforeExecute
--- Access.Jet.Odbc AccessODBC
+-- Access.Jet.Odbc AccessODBC (asynchronously)
 
 SELECT TOP 1
 	[r].[BigIntValue]
@@ -43,7 +43,7 @@ WHERE
 	[r].[ID] = 101 AND [r].[BigIntValue] = 12
 
 BeforeExecute
--- Access.Jet.Odbc AccessODBC
+-- Access.Jet.Odbc AccessODBC (asynchronously)
 DECLARE @p Int -- Int32
 SET     @p = 102
 

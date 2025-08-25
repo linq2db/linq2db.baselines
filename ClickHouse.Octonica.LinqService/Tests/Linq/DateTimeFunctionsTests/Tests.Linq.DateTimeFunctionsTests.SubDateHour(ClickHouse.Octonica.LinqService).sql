@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- ClickHouse.Octonica ClickHouse
+-- ClickHouse.Octonica ClickHouse (asynchronously)
 
 SELECT
 	date_diff('hour', t.DateTimeValue, addHours(t.DateTimeValue, toFloat64(100)))

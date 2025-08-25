@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- DB2 DB2.LUW DB2LUW
+-- DB2 DB2.LUW DB2LUW (asynchronously)
 
 DELETE FROM
 	"Person" "p"
@@ -7,7 +7,7 @@ WHERE
 	"p"."FirstName" LIKE 'Insert14%' ESCAPE '~'
 
 BeforeExecute
--- DB2 DB2.LUW DB2LUW
+-- DB2 DB2.LUW DB2LUW (asynchronously)
 
 INSERT INTO "Person"
 (
@@ -30,7 +30,7 @@ VALUES
 )
 
 BeforeExecute
--- DB2 DB2.LUW DB2LUW
+-- DB2 DB2.LUW DB2LUW (asynchronously)
 
 SELECT
 	COUNT(*)
@@ -40,7 +40,7 @@ WHERE
 	"p"."FirstName" LIKE 'Insert14%' ESCAPE '~'
 
 BeforeExecute
--- DB2 DB2.LUW DB2LUW
+-- DB2 DB2.LUW DB2LUW (asynchronously)
 
 DELETE FROM
 	"Person" "p"

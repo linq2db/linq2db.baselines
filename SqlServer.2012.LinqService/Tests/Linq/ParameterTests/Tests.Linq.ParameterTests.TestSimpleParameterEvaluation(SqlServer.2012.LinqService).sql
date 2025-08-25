@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2012
+-- SqlServer.2012 (asynchronously)
 
 SELECT
 	[t1].[FirstName],
@@ -13,7 +13,7 @@ WHERE
 	[t1].[PersonID] IN (2, 3, 4)
 
 BeforeExecute
--- SqlServer.2012
+-- SqlServer.2012 (asynchronously)
 
 SELECT
 	[t1].[FirstName],

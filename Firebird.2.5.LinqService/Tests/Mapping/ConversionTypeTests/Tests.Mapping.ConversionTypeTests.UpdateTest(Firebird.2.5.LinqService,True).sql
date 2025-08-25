@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Firebird.2.5 Firebird
+-- Firebird.2.5 Firebird (asynchronously)
 
 UPDATE
 	"TrimTestTable" "t1"
@@ -9,7 +9,7 @@ WHERE
 	"t1".ID = 3
 
 BeforeExecute
--- Firebird.2.5 Firebird
+-- Firebird.2.5 Firebird (asynchronously)
 
 UPDATE
 	"TrimTestTable" "t"
@@ -19,7 +19,7 @@ WHERE
 	"t"."Data" = '***XXX***'
 
 BeforeExecute
--- Firebird.2.5 Firebird
+-- Firebird.2.5 Firebird (asynchronously)
 
 UPDATE
 	"TrimTestTable" "t"
@@ -29,7 +29,7 @@ WHERE
 	"t"."Data" = '***HHH***'
 
 BeforeExecute
--- Firebird.2.5 Firebird
+-- Firebird.2.5 Firebird (asynchronously)
 
 SELECT
 	"r".ID,
@@ -40,7 +40,7 @@ ORDER BY
 	"r".ID
 
 BeforeExecute
--- Firebird.2.5 Firebird
+-- Firebird.2.5 Firebird (asynchronously)
 
 SELECT
 	"r".ID,

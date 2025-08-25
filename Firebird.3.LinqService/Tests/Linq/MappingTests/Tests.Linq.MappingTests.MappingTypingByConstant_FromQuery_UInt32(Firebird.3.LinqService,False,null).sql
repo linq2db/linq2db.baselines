@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Firebird.3 Firebird3
+-- Firebird.3 Firebird3 (asynchronously)
 DECLARE @value BigInt -- Int64
 SET     @value = NULL
 
@@ -16,7 +16,7 @@ FROM
 	) "t1"
 
 BeforeExecute
--- Firebird.3 Firebird3
+-- Firebird.3 Firebird3 (asynchronously)
 DECLARE @value BigInt -- Int64
 SET     @value = 2147483648
 

@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.SA SqlServer.2019
+-- SqlServer.SA SqlServer.2019 (asynchronously)
 DECLARE @value NVarChar(4000) -- String
 SET     @value = N'xyz'
 
@@ -17,7 +17,7 @@ WHERE
 	)
 
 BeforeExecute
--- SqlServer.SA SqlServer.2019
+-- SqlServer.SA SqlServer.2019 (asynchronously)
 DECLARE @value NVarChar(4000) -- String
 SET     @value = N'xyz'
 
@@ -35,7 +35,7 @@ WHERE
 	)
 
 BeforeExecute
--- SqlServer.SA SqlServer.2019
+-- SqlServer.SA SqlServer.2019 (asynchronously)
 DECLARE @value NVarChar(4000) -- String
 SET     @value = N'xyz'
 
@@ -53,7 +53,7 @@ WHERE
 	)
 
 BeforeExecute
--- SqlServer.SA SqlServer.2019
+-- SqlServer.SA SqlServer.2019 (asynchronously)
 DECLARE @value NVarChar(4000) -- String
 SET     @value = N'xyz'
 

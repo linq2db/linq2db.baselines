@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2017
+-- SqlServer.2017 (asynchronously)
 DECLARE @p Int -- Int32
 SET     @p = 226
 
@@ -9,7 +9,7 @@ FROM
 	[LinqDataTypes] [t]
 
 BeforeExecute
--- SqlServer.2017
+-- SqlServer.2017 (asynchronously)
 
 SELECT
 	[t].[DateTimeValue]

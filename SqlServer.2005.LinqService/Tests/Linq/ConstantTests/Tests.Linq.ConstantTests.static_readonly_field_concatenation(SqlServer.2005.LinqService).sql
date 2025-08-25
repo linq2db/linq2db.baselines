@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2005
+-- SqlServer.2005 (asynchronously)
 
 SELECT
 	[e].[Id],
@@ -12,7 +12,7 @@ WHERE
 	[e].[StringValue] + N'1' = N'StrValue1'
 
 BeforeExecute
--- SqlServer.2005
+-- SqlServer.2005 (asynchronously)
 
 SELECT
 	[t1].[Id],

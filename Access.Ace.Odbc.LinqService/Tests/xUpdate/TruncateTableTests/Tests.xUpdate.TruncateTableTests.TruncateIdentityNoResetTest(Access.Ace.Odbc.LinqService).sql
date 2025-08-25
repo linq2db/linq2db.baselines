@@ -1,10 +1,10 @@
 ﻿BeforeExecute
--- Access.Ace.Odbc AccessODBC
+-- Access.Ace.Odbc AccessODBC (asynchronously)
 
 DELETE FROM [test_temp]
 
 BeforeExecute
--- Access.Ace.Odbc AccessODBC
+-- Access.Ace.Odbc AccessODBC (asynchronously)
 
 INSERT INTO [test_temp]
 (
@@ -16,7 +16,7 @@ VALUES
 )
 
 BeforeExecute
--- Access.Ace.Odbc AccessODBC
+-- Access.Ace.Odbc AccessODBC (asynchronously)
 
 INSERT INTO [test_temp]
 (
@@ -28,7 +28,7 @@ VALUES
 )
 
 BeforeExecute
--- Access.Ace.Odbc AccessODBC
+-- Access.Ace.Odbc AccessODBC (asynchronously)
 
 SELECT TOP 3
 	[t1].[ID],
@@ -39,12 +39,12 @@ ORDER BY
 	[t1].[ID]
 
 BeforeExecute
--- Access.Ace.Odbc AccessODBC
+-- Access.Ace.Odbc AccessODBC (asynchronously)
 
 DELETE FROM [test_temp]
 
 BeforeExecute
--- Access.Ace.Odbc AccessODBC
+-- Access.Ace.Odbc AccessODBC (asynchronously)
 
 INSERT INTO [test_temp]
 (
@@ -56,7 +56,7 @@ VALUES
 )
 
 BeforeExecute
--- Access.Ace.Odbc AccessODBC
+-- Access.Ace.Odbc AccessODBC (asynchronously)
 
 INSERT INTO [test_temp]
 (
@@ -68,7 +68,7 @@ VALUES
 )
 
 BeforeExecute
--- Access.Ace.Odbc AccessODBC
+-- Access.Ace.Odbc AccessODBC (asynchronously)
 
 SELECT TOP 3
 	[t1].[ID],

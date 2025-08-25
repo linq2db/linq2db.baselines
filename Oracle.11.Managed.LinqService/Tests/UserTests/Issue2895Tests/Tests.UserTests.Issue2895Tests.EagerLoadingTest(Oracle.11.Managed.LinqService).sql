@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Oracle.11.Managed Oracle11
+-- Oracle.11.Managed Oracle11 (asynchronously)
 
 SELECT
 	m_1."Id",
@@ -29,7 +29,7 @@ FROM
 		INNER JOIN "Document" a_Documents ON a_Attachment."Id" = a_Documents."AttachmentId"
 
 BeforeExecute
--- Oracle.11.Managed Oracle11
+-- Oracle.11.Managed Oracle11 (asynchronously)
 
 SELECT
 	t1."cond",

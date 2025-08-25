@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- DB2 DB2.LUW DB2LUW
+-- DB2 DB2.LUW DB2LUW (asynchronously)
 DECLARE @TypedProperty VarChar(4) -- String
 SET     @TypedProperty = '%de%'
 
@@ -30,7 +30,7 @@ FROM
 		INNER JOIN "Issue3757Level2" "d" ON "m_1".ID = "d"."ParentId"
 
 BeforeExecute
--- DB2 DB2.LUW DB2LUW
+-- DB2 DB2.LUW DB2LUW (asynchronously)
 DECLARE @TypedProperty VarChar(4) -- String
 SET     @TypedProperty = '%de%'
 

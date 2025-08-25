@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- MySql.8.0 MySql.8.0.MySql.Data MySql80
+-- MySql.8.0 MySql.8.0.MySql.Data MySql80 (asynchronously)
 
 SELECT
 	NULLIF(`s`.`String`, 'abc')
@@ -9,7 +9,7 @@ ORDER BY
 	`s`.`Int`
 
 BeforeExecute
--- MySql.8.0 MySql.8.0.MySql.Data MySql80
+-- MySql.8.0 MySql.8.0.MySql.Data MySql80 (asynchronously)
 
 SELECT
 	NULLIF(`s`.`String`, 'xyz')
@@ -19,7 +19,7 @@ ORDER BY
 	`s`.`Int`
 
 BeforeExecute
--- MySql.8.0 MySql.8.0.MySql.Data MySql80
+-- MySql.8.0 MySql.8.0.MySql.Data MySql80 (asynchronously)
 
 SELECT
 	NULLIF(`s`.`String`, NULL)
@@ -29,7 +29,7 @@ ORDER BY
 	`s`.`Int`
 
 BeforeExecute
--- MySql.8.0 MySql.8.0.MySql.Data MySql80
+-- MySql.8.0 MySql.8.0.MySql.Data MySql80 (asynchronously)
 
 SELECT
 	NULLIF(`s`.`NullableString`, 'abc')
@@ -39,7 +39,7 @@ ORDER BY
 	`s`.`Int`
 
 BeforeExecute
--- MySql.8.0 MySql.8.0.MySql.Data MySql80
+-- MySql.8.0 MySql.8.0.MySql.Data MySql80 (asynchronously)
 
 SELECT
 	NULLIF(`s`.`NullableString`, 'xyz')
@@ -49,7 +49,7 @@ ORDER BY
 	`s`.`Int`
 
 BeforeExecute
--- MySql.8.0 MySql.8.0.MySql.Data MySql80
+-- MySql.8.0 MySql.8.0.MySql.Data MySql80 (asynchronously)
 
 SELECT
 	NULLIF(`s`.`NullableString`, NULL)

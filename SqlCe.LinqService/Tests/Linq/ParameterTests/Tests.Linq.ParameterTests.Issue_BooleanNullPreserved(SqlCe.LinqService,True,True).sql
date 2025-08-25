@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 
 INSERT INTO [TestBool]
 (
@@ -13,7 +13,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 
 SELECT TOP (2)
 	[t1].[Id],
@@ -22,7 +22,7 @@ FROM
 	[TestBool] [t1]
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 
 UPDATE
 	[TestBool]
@@ -35,7 +35,7 @@ SET
 	END
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 
 SELECT TOP (2)
 	[t1].[Id],
@@ -44,7 +44,7 @@ FROM
 	[TestBool] [t1]
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 
 UPDATE
 	[TestBool]
@@ -53,7 +53,7 @@ SET
 	[Value] = 0
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 
 SELECT TOP (2)
 	[t1].[Id],

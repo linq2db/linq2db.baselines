@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Access.Jet.OleDb AccessOleDb
+-- Access.Jet.OleDb AccessOleDb (asynchronously)
 DECLARE @GuidNonReadonly Guid
 SET     @GuidNonReadonly = {guid {bc7b663d-0fde-4327-8f92-5d8cc3a11d11}}
 DECLARE @GuidNonReadonly_1 Guid
@@ -16,7 +16,7 @@ WHERE
 	[e].[GuidValue] = @GuidNonReadonly AND [e].[GuidNullableValue] = @GuidNonReadonly_1
 
 BeforeExecute
--- Access.Jet.OleDb AccessOleDb
+-- Access.Jet.OleDb AccessOleDb (asynchronously)
 
 SELECT
 	[t1].[Id],

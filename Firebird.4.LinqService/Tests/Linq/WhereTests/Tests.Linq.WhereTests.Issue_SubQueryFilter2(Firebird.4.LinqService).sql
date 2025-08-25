@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Firebird.4 Firebird4
+-- Firebird.4 Firebird4 (asynchronously)
 DECLARE @filter1 VarChar(6) -- String
 SET     @filter1 = '%John%'
 DECLARE @filter2 VarChar(8) -- String
@@ -45,7 +45,7 @@ ORDER BY
 	"p"."PersonID"
 
 BeforeExecute
--- Firebird.4 Firebird4
+-- Firebird.4 Firebird4 (asynchronously)
 
 SELECT
 	"t1"."PersonID",
@@ -54,7 +54,7 @@ FROM
 	"Patient" "t1"
 
 BeforeExecute
--- Firebird.4 Firebird4
+-- Firebird.4 Firebird4 (asynchronously)
 
 SELECT
 	"t1"."FirstName",

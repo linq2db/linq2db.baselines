@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2016
+-- SqlServer.2016 (asynchronously)
 DECLARE @id1 Int -- Int32
 SET     @id1 = 1
 DECLARE @id2 Int -- Int32

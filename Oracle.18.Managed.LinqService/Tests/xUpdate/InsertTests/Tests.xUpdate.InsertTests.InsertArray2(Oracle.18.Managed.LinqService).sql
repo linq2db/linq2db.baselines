@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Oracle.18.Managed Oracle.Managed Oracle12
+-- Oracle.18.Managed Oracle.Managed Oracle12 (asynchronously)
 
 DELETE FROM
 	"LinqDataTypes" t
@@ -7,7 +7,7 @@ WHERE
 	t.ID > 1000
 
 BeforeExecute
--- Oracle.18.Managed Oracle.Managed Oracle12
+-- Oracle.18.Managed Oracle.Managed Oracle12 (asynchronously)
 DECLARE @arr Blob -- Object
 SET     @arr = NULL
 
@@ -25,7 +25,7 @@ VALUES
 )
 
 BeforeExecute
--- Oracle.18.Managed Oracle.Managed Oracle12
+-- Oracle.18.Managed Oracle.Managed Oracle12 (asynchronously)
 
 SELECT
 	t.ID,
@@ -42,7 +42,7 @@ WHERE
 FETCH NEXT 2 ROWS ONLY
 
 BeforeExecute
--- Oracle.18.Managed Oracle.Managed Oracle12
+-- Oracle.18.Managed Oracle.Managed Oracle12 (asynchronously)
 
 DELETE FROM
 	"LinqDataTypes" t

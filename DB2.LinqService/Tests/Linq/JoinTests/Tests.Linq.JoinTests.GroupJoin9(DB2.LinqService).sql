@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- DB2 DB2.LUW DB2LUW
+-- DB2 DB2.LUW DB2LUW (asynchronously)
 
 SELECT
 	"a_2"."ParentID",
@@ -23,7 +23,7 @@ FROM
 		LEFT JOIN "Parent" "a_1" ON "a_2"."ParentID" = "a_1"."ParentID"
 
 BeforeExecute
--- DB2 DB2.LUW DB2LUW
+-- DB2 DB2.LUW DB2LUW (asynchronously)
 
 SELECT
 	"t1"."ParentID",

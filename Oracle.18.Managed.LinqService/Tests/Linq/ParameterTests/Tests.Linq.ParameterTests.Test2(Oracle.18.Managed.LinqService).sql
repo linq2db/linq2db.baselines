@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Oracle.18.Managed Oracle.Managed Oracle12
+-- Oracle.18.Managed Oracle.Managed Oracle12 (asynchronously)
 DECLARE @id1 Int32
 SET     @id1 = 1
 DECLARE @id2 Int32
@@ -17,7 +17,7 @@ ORDER BY
 FETCH NEXT 1 ROWS ONLY
 
 BeforeExecute
--- Oracle.18.Managed Oracle.Managed Oracle12
+-- Oracle.18.Managed Oracle.Managed Oracle12 (asynchronously)
 DECLARE @id1 Int32
 SET     @id1 = 2
 DECLARE @id2 Int32

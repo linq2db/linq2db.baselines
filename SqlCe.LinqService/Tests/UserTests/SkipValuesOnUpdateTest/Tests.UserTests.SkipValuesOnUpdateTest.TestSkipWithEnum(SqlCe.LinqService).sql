@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 DECLARE @Id Int -- Int32
 SET     @Id = 1
 DECLARE @Name NVarChar(3) -- String
@@ -25,7 +25,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 
 SELECT TOP (1)
 	[t].[Id],
@@ -38,7 +38,7 @@ WHERE
 	[t].[Id] = 1
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 DECLARE @Name NVarChar(4) -- String
 SET     @Name = 'Jack'
 DECLARE @Age Int -- Int32
@@ -58,7 +58,7 @@ WHERE
 	[PR_1598_Update_Enum_Table].[Id] = @Id
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 
 SELECT TOP (1)
 	[t].[Id],
@@ -71,7 +71,7 @@ WHERE
 	[t].[Id] = 1
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 DECLARE @Name NVarChar(8) -- String
 SET     @Name = 'Francine'
 DECLARE @Age Int -- Int32
@@ -88,7 +88,7 @@ WHERE
 	[PR_1598_Update_Enum_Table].[Id] = @Id
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 
 SELECT TOP (1)
 	[t].[Id],

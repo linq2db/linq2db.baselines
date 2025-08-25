@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Informix.DB2 Informix
+-- Informix.DB2 Informix (asynchronously)
 DECLARE @param Decimal(16)
 SET     @param = 33
 DECLARE @param_1 Decimal(16)

@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Access.Jet.Odbc AccessODBC
+-- Access.Jet.Odbc AccessODBC (asynchronously)
 
 DELETE FROM
 	[Person] [t1]
@@ -7,7 +7,7 @@ WHERE
 	[t1].[FirstName] LIKE 'Insert16%'
 
 BeforeExecute
--- Access.Jet.Odbc AccessODBC
+-- Access.Jet.Odbc AccessODBC (asynchronously)
 DECLARE @name Int -- Int32
 SET     @name = 8
 DECLARE @idx Int -- Int32
@@ -27,7 +27,7 @@ VALUES
 )
 
 BeforeExecute
--- Access.Jet.Odbc AccessODBC
+-- Access.Jet.Odbc AccessODBC (asynchronously)
 
 SELECT
 	COUNT(*)
@@ -37,7 +37,7 @@ WHERE
 	[t1].[FirstName] LIKE 'Insert16%'
 
 BeforeExecute
--- Access.Jet.Odbc AccessODBC
+-- Access.Jet.Odbc AccessODBC (asynchronously)
 
 DELETE FROM
 	[Person] [t1]

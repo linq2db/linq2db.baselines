@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- MySql.8.0 MySql.8.0.MySql.Data MySql80
+-- MySql.8.0 MySql.8.0.MySql.Data MySql80 (asynchronously)
 
 SELECT
 	`m_1`.`Children`,
@@ -23,7 +23,7 @@ FROM
 		INNER JOIN `Test3799Item` `d` ON `m_1`.`Children` = `d`.`ParentId` OR `m_1`.`Children` IS NULL AND `d`.`ParentId` IS NULL
 
 BeforeExecute
--- MySql.8.0 MySql.8.0.MySql.Data MySql80
+-- MySql.8.0 MySql.8.0.MySql.Data MySql80 (asynchronously)
 
 SELECT
 	`item_1`.`Name`,

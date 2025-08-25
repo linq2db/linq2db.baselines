@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- ClickHouse.Octonica ClickHouse
+-- ClickHouse.Octonica ClickHouse (asynchronously)
 
 WITH CTE_1 AS
 (
@@ -19,7 +19,7 @@ FROM
 		INNER JOIN CTE_1 c2 ON p.ParentID = c2.ParentID
 
 BeforeExecute
--- ClickHouse.Octonica ClickHouse
+-- ClickHouse.Octonica ClickHouse (asynchronously)
 
 SELECT
 	p.ParentID,

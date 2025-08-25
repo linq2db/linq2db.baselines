@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2019.MS SqlServer.2019
+-- SqlServer.2019.MS SqlServer.2019 (asynchronously)
 
 SELECT
 	DATETIMEFROMPARTS(DatePart(year, [p].[DateTimeValue]), 10, 1, 20, 35, 44, 0)

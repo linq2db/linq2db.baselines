@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- ClickHouse.MySql ClickHouse
+-- ClickHouse.MySql ClickHouse (asynchronously)
 
 SELECT
 	trim(TRAILING '0.' FROM Replace(toString(p.MoneyValue), ',', '.'))

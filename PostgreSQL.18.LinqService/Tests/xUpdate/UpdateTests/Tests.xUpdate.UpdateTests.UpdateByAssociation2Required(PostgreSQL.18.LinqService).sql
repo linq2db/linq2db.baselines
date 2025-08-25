@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- PostgreSQL.18 PostgreSQL
+-- PostgreSQL.18 PostgreSQL (asynchronously)
 DECLARE @id Integer -- Int32
 SET     @id = 3
 
@@ -13,7 +13,7 @@ WHERE
 	p."Id" = :id AND p."Id" = "MainTable"."Id"
 
 BeforeExecute
--- PostgreSQL.18 PostgreSQL
+-- PostgreSQL.18 PostgreSQL (asynchronously)
 
 SELECT
 	t1."Id",

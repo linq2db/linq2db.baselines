@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- DB2 DB2.LUW DB2LUW
+-- DB2 DB2.LUW DB2LUW (asynchronously)
 DECLARE @value Integer(4) -- Int32
 SET     @value = 4
 
@@ -11,7 +11,7 @@ WHERE
 	"s"."Int" IS DISTINCT FROM @value
 
 BeforeExecute
--- DB2 DB2.LUW DB2LUW
+-- DB2 DB2.LUW DB2LUW (asynchronously)
 DECLARE @value Integer(4) -- Int32
 SET     @value = 4
 
@@ -23,7 +23,7 @@ WHERE
 	"s"."NullableInt" IS DISTINCT FROM @value
 
 BeforeExecute
--- DB2 DB2.LUW DB2LUW
+-- DB2 DB2.LUW DB2LUW (asynchronously)
 DECLARE @value Integer(4) -- Int32
 SET     @value = 4
 
@@ -35,7 +35,7 @@ WHERE
 	"s"."Int" IS NOT DISTINCT FROM @value
 
 BeforeExecute
--- DB2 DB2.LUW DB2LUW
+-- DB2 DB2.LUW DB2LUW (asynchronously)
 DECLARE @value Integer(4) -- Int32
 SET     @value = 4
 

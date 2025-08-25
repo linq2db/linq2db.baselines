@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Oracle.23.Managed Oracle.Managed Oracle12
+-- Oracle.23.Managed Oracle.Managed Oracle12 (asynchronously)
 DECLARE @dateTime TimeStamp -- DateTime
 SET     @dateTime = TIMESTAMP '1992-01-11 01:11:21.100000'
 
@@ -12,7 +12,7 @@ WHERE
 FETCH NEXT 1 ROWS ONLY
 
 BeforeExecute
--- Oracle.23.Managed Oracle.Managed Oracle12
+-- Oracle.23.Managed Oracle.Managed Oracle12 (asynchronously)
 DECLARE @dateTime TimeStamp -- DateTime
 SET     @dateTime = TIMESTAMP '1993-01-11 01:11:21.100000'
 

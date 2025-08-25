@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SQLite.Classic.MPM SQLite.Classic SQLite
+-- SQLite.Classic.MPM SQLite.Classic SQLite (asynchronously)
 
 DELETE FROM
 	[Parent]
@@ -7,7 +7,7 @@ WHERE
 	[Parent].[ParentID] >= 1000
 
 BeforeExecute
--- SQLite.Classic.MPM SQLite.Classic SQLite
+-- SQLite.Classic.MPM SQLite.Classic SQLite (asynchronously)
 DECLARE @ParentID  -- Int32
 SET     @ParentID = 1000
 DECLARE @Value1  -- Int32
@@ -25,7 +25,7 @@ VALUES
 )
 
 BeforeExecute
--- SQLite.Classic.MPM SQLite.Classic SQLite
+-- SQLite.Classic.MPM SQLite.Classic SQLite (asynchronously)
 DECLARE @ParentID  -- Int32
 SET     @ParentID = 1001
 DECLARE @Value1  -- Int32
@@ -43,7 +43,7 @@ VALUES
 )
 
 BeforeExecute
--- SQLite.Classic.MPM SQLite.Classic SQLite
+-- SQLite.Classic.MPM SQLite.Classic SQLite (asynchronously)
 DECLARE @ParentID  -- Int32
 SET     @ParentID = 1002
 DECLARE @Value1  -- Int32
@@ -61,7 +61,7 @@ VALUES
 )
 
 BeforeExecute
--- SQLite.Classic.MPM SQLite.Classic SQLite
+-- SQLite.Classic.MPM SQLite.Classic SQLite (asynchronously)
 DECLARE @ParentID  -- Int32
 SET     @ParentID = 1003
 DECLARE @Value1  -- Int32
@@ -79,7 +79,7 @@ VALUES
 )
 
 BeforeExecute
--- SQLite.Classic.MPM SQLite.Classic SQLite
+-- SQLite.Classic.MPM SQLite.Classic SQLite (asynchronously)
 DECLARE @ParentID  -- Int32
 SET     @ParentID = 1004
 DECLARE @Value1  -- Int32
@@ -97,7 +97,7 @@ VALUES
 )
 
 BeforeExecute
--- SQLite.Classic.MPM SQLite.Classic SQLite
+-- SQLite.Classic.MPM SQLite.Classic SQLite (asynchronously)
 DECLARE @ParentID  -- Int32
 SET     @ParentID = 1005
 DECLARE @Value1  -- Int32
@@ -115,7 +115,7 @@ VALUES
 )
 
 BeforeExecute
--- SQLite.Classic.MPM SQLite.Classic SQLite
+-- SQLite.Classic.MPM SQLite.Classic SQLite (asynchronously)
 DECLARE @ParentID  -- Int32
 SET     @ParentID = 1006
 DECLARE @Value1  -- Int32
@@ -133,7 +133,7 @@ VALUES
 )
 
 BeforeExecute
--- SQLite.Classic.MPM SQLite.Classic SQLite
+-- SQLite.Classic.MPM SQLite.Classic SQLite (asynchronously)
 DECLARE @ParentID  -- Int32
 SET     @ParentID = 1007
 DECLARE @Value1  -- Int32
@@ -151,7 +151,7 @@ VALUES
 )
 
 BeforeExecute
--- SQLite.Classic.MPM SQLite.Classic SQLite
+-- SQLite.Classic.MPM SQLite.Classic SQLite (asynchronously)
 DECLARE @ParentID  -- Int32
 SET     @ParentID = 1008
 DECLARE @Value1  -- Int32
@@ -169,7 +169,7 @@ VALUES
 )
 
 BeforeExecute
--- SQLite.Classic.MPM SQLite.Classic SQLite
+-- SQLite.Classic.MPM SQLite.Classic SQLite (asynchronously)
 DECLARE @ParentID  -- Int32
 SET     @ParentID = 1009
 DECLARE @Value1  -- Int32
@@ -187,7 +187,7 @@ VALUES
 )
 
 BeforeExecute
--- SQLite.Classic.MPM SQLite.Classic SQLite
+-- SQLite.Classic.MPM SQLite.Classic SQLite (asynchronously)
 DECLARE @take  -- Int32
 SET     @take = 5
 DECLARE @skip  -- Int32
@@ -202,7 +202,7 @@ ORDER BY
 LIMIT @take OFFSET @skip
 
 BeforeExecute
--- SQLite.Classic.MPM SQLite.Classic SQLite
+-- SQLite.Classic.MPM SQLite.Classic SQLite (asynchronously)
 
 SELECT
 	[r].[Value1]
@@ -214,7 +214,7 @@ ORDER BY
 	[r].[ParentID]
 
 BeforeExecute
--- SQLite.Classic.MPM SQLite.Classic SQLite
+-- SQLite.Classic.MPM SQLite.Classic SQLite (asynchronously)
 
 DELETE FROM
 	[Parent]

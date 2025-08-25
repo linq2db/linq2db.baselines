@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SQLite.MS SQLite
+-- SQLite.MS SQLite (asynchronously)
 
 WITH [MY_CTE] ([ChildID], [ParentID], [GrandChildID])
 AS

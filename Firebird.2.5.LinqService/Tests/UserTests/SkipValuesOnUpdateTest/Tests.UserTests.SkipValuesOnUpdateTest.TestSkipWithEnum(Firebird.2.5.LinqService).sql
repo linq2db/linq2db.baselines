@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Firebird.2.5 Firebird
+-- Firebird.2.5 Firebird (asynchronously)
 DECLARE @Id Integer -- Int32
 SET     @Id = 1
 DECLARE @Name VarChar(3) -- String
@@ -25,7 +25,7 @@ VALUES
 )
 
 BeforeExecute
--- Firebird.2.5 Firebird
+-- Firebird.2.5 Firebird (asynchronously)
 
 SELECT FIRST 1
 	"t"."Id",
@@ -38,7 +38,7 @@ WHERE
 	"t"."Id" = 1
 
 BeforeExecute
--- Firebird.2.5 Firebird
+-- Firebird.2.5 Firebird (asynchronously)
 DECLARE @Name VarChar(4) -- String
 SET     @Name = 'Jack'
 DECLARE @Age Integer -- Int32
@@ -58,7 +58,7 @@ WHERE
 	"t1"."Id" = @Id
 
 BeforeExecute
--- Firebird.2.5 Firebird
+-- Firebird.2.5 Firebird (asynchronously)
 
 SELECT FIRST 1
 	"t"."Id",
@@ -71,7 +71,7 @@ WHERE
 	"t"."Id" = 1
 
 BeforeExecute
--- Firebird.2.5 Firebird
+-- Firebird.2.5 Firebird (asynchronously)
 DECLARE @Name VarChar(8) -- String
 SET     @Name = 'Francine'
 DECLARE @Age Integer -- Int32
@@ -88,7 +88,7 @@ WHERE
 	"t1"."Id" = @Id
 
 BeforeExecute
--- Firebird.2.5 Firebird
+-- Firebird.2.5 Firebird (asynchronously)
 
 SELECT FIRST 1
 	"t"."Id",

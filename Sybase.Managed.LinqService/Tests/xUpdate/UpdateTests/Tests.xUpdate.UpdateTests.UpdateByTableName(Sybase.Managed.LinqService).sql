@@ -1,11 +1,11 @@
 ﻿BeforeExecute
--- Sybase.Managed Sybase
+-- Sybase.Managed Sybase (asynchronously)
 
 IF (OBJECT_ID(N'xxPerson') IS NOT NULL)
 	DROP TABLE [xxPerson]
 
 BeforeExecute
--- Sybase.Managed Sybase
+-- Sybase.Managed Sybase (asynchronously)
 
 CREATE TABLE [xxPerson]
 (
@@ -19,7 +19,7 @@ CREATE TABLE [xxPerson]
 )
 
 BeforeExecute
--- Sybase.Managed Sybase
+-- Sybase.Managed Sybase (asynchronously)
 DECLARE @FirstName UniVarChar(6) -- String
 SET     @FirstName = 'Steven'
 DECLARE @LastName UniVarChar(4) -- String
@@ -45,7 +45,7 @@ VALUES
 )
 
 BeforeExecute
--- Sybase.Managed Sybase
+-- Sybase.Managed Sybase (asynchronously)
 
 SELECT
 	COUNT(*)
@@ -53,7 +53,7 @@ FROM
 	[xxPerson] [t1]
 
 BeforeExecute
--- Sybase.Managed Sybase
+-- Sybase.Managed Sybase (asynchronously)
 
 SELECT TOP 2
 	[t1].[FirstName],
@@ -65,7 +65,7 @@ FROM
 	[xxPerson] [t1]
 
 BeforeExecute
--- Sybase.Managed Sybase
+-- Sybase.Managed Sybase (asynchronously)
 DECLARE @FirstName UniVarChar(6) -- String
 SET     @FirstName = 'Steven'
 DECLARE @LastName UniVarChar(4) -- String
@@ -88,7 +88,7 @@ WHERE
 	[xxPerson].[PersonID] = @ID
 
 BeforeExecute
--- Sybase.Managed Sybase
+-- Sybase.Managed Sybase (asynchronously)
 
 SELECT TOP 2
 	[t1].[FirstName],
@@ -100,7 +100,7 @@ FROM
 	[xxPerson] [t1]
 
 BeforeExecute
--- Sybase.Managed Sybase
+-- Sybase.Managed Sybase (asynchronously)
 
 DROP TABLE [xxPerson]
 

@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Oracle.11.Managed Oracle11
+-- Oracle.11.Managed Oracle11 (asynchronously)
 DECLARE @p Int32
 SET     @p = 1
 DECLARE @p_1 Int32
@@ -14,7 +14,7 @@ WHERE
 	p."ParentID" = :p AND p."Value1" = :p_1
 
 BeforeExecute
--- Oracle.11.Managed Oracle11
+-- Oracle.11.Managed Oracle11 (asynchronously)
 DECLARE @p Int32
 SET     @p = 2
 

@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2019.MS SqlServer.2019
+-- SqlServer.2019.MS SqlServer.2019 (asynchronously)
 
 WITH [cte] ([Id], [Value_1])
 AS

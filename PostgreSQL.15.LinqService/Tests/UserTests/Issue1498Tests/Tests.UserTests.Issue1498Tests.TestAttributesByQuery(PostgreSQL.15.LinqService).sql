@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- PostgreSQL.15 PostgreSQL
+-- PostgreSQL.15 PostgreSQL (asynchronously)
 DECLARE @Id Integer -- Int32
 SET     @Id = 6
 DECLARE @Title Text(5) -- String
@@ -21,7 +21,7 @@ VALUES
 )
 
 BeforeExecute
--- PostgreSQL.15 PostgreSQL
+-- PostgreSQL.15 PostgreSQL (asynchronously)
 
 SELECT
 	m_1."Id",
@@ -39,7 +39,7 @@ FROM
 		INNER JOIN "Message" d ON d."TopicId" = m_1."Id"
 
 BeforeExecute
--- PostgreSQL.15 PostgreSQL
+-- PostgreSQL.15 PostgreSQL (asynchronously)
 
 SELECT
 	x."Id",

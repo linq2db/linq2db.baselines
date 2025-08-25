@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Firebird.2.5 Firebird
+-- Firebird.2.5 Firebird (asynchronously)
 DECLARE @personId Integer -- Int32
 SET     @personId = 0
 DECLARE @personId_1 Integer -- Int32

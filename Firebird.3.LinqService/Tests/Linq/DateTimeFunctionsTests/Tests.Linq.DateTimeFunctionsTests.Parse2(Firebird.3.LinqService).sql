@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Firebird.3 Firebird3
+-- Firebird.3 Firebird3 (asynchronously)
 
 SELECT
 	CAST(Extract(year from "d"."DateTimeValue") || '-02-24 00:00:00' AS TimeStamp)

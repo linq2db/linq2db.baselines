@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- test-linq-service-reader MySql MySql57
+-- test-linq-service-reader MySql MySql57 (asynchronously)
 DECLARE @p Datetime -- DateTime
 SET     @p = '2012-12-12 12:12:12'
 
@@ -12,7 +12,7 @@ FROM
 LIMIT 2
 
 BeforeExecute
--- test-linq-service-reader MySql MySql57
+-- test-linq-service-reader MySql MySql57 (asynchronously)
 DECLARE @p Datetime -- DateTime
 SET     @p = '2012-12-12 12:12:12'
 

@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+-- SapHana.Odbc SapHanaOdbc (asynchronously)
 DECLARE @int1 Int -- Int32
 SET     @int1 = 11
 DECLARE @someId Int -- Int32
@@ -100,7 +100,7 @@ WHERE
 	)
 
 BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+-- SapHana.Odbc SapHanaOdbc (asynchronously)
 
 SELECT
 	"v"."id",

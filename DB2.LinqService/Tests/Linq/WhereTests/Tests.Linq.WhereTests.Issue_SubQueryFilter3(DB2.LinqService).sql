@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- DB2 DB2.LUW DB2LUW
+-- DB2 DB2.LUW DB2LUW (asynchronously)
 DECLARE @filter VarChar(6) -- String
 SET     @filter = '%John%'
 DECLARE @filter_1 VarChar(8) -- String
@@ -47,7 +47,7 @@ ORDER BY
 	"patient_1"."PersonID"
 
 BeforeExecute
--- DB2 DB2.LUW DB2LUW
+-- DB2 DB2.LUW DB2LUW (asynchronously)
 
 SELECT
 	"t1"."PersonID",
@@ -56,7 +56,7 @@ FROM
 	"Patient" "t1"
 
 BeforeExecute
--- DB2 DB2.LUW DB2LUW
+-- DB2 DB2.LUW DB2LUW (asynchronously)
 
 SELECT
 	"t1"."FirstName",

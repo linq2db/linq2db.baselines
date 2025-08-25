@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2008.MS SqlServer.2008
+-- SqlServer.2008.MS SqlServer.2008 (asynchronously)
 DECLARE @guid NVarChar(4000) -- String
 SET     @guid = N'febe3eca-cb5f-40b2-ad39-2979d312afca'
 

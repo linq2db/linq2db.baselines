@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SQLite.Classic SQLite
+-- SQLite.Classic SQLite (asynchronously)
 
 SELECT
 	strftime('%Y-%m-%d %H:%M:%f', '2010-' || printf('%02d', [t].[ID]) || '-01 00:00:00.000')

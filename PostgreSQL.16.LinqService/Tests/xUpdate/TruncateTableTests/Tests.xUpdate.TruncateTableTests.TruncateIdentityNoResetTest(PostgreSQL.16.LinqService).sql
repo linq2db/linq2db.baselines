@@ -1,10 +1,10 @@
 ﻿BeforeExecute
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
+-- PostgreSQL.16 PostgreSQL.15 PostgreSQL (asynchronously)
 
 TRUNCATE TABLE test_temp CONTINUE IDENTITY
 
 BeforeExecute
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
+-- PostgreSQL.16 PostgreSQL.15 PostgreSQL (asynchronously)
 
 INSERT INTO test_temp
 (
@@ -16,7 +16,7 @@ VALUES
 )
 
 BeforeExecute
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
+-- PostgreSQL.16 PostgreSQL.15 PostgreSQL (asynchronously)
 
 INSERT INTO test_temp
 (
@@ -28,7 +28,7 @@ VALUES
 )
 
 BeforeExecute
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
+-- PostgreSQL.16 PostgreSQL.15 PostgreSQL (asynchronously)
 DECLARE @skip Integer -- Int32
 SET     @skip = 1
 
@@ -42,12 +42,12 @@ ORDER BY
 LIMIT 2 OFFSET :skip 
 
 BeforeExecute
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
+-- PostgreSQL.16 PostgreSQL.15 PostgreSQL (asynchronously)
 
 TRUNCATE TABLE test_temp CONTINUE IDENTITY
 
 BeforeExecute
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
+-- PostgreSQL.16 PostgreSQL.15 PostgreSQL (asynchronously)
 
 INSERT INTO test_temp
 (
@@ -59,7 +59,7 @@ VALUES
 )
 
 BeforeExecute
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
+-- PostgreSQL.16 PostgreSQL.15 PostgreSQL (asynchronously)
 
 INSERT INTO test_temp
 (
@@ -71,7 +71,7 @@ VALUES
 )
 
 BeforeExecute
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
+-- PostgreSQL.16 PostgreSQL.15 PostgreSQL (asynchronously)
 DECLARE @skip Integer -- Int32
 SET     @skip = 1
 

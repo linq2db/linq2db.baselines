@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Firebird.5 Firebird4
+-- Firebird.5 Firebird4 (asynchronously)
 
 INSERT INTO "TrimTestTable"
 (
@@ -16,7 +16,7 @@ RETURNING
 	"TrimTestTable"."Data"
 
 BeforeExecute
--- Firebird.5 Firebird4
+-- Firebird.5 Firebird4 (asynchronously)
 
 SELECT
 	"r".ID,
@@ -27,7 +27,7 @@ ORDER BY
 	"r".ID
 
 BeforeExecute
--- Firebird.5 Firebird4
+-- Firebird.5 Firebird4 (asynchronously)
 
 SELECT
 	"r".ID,

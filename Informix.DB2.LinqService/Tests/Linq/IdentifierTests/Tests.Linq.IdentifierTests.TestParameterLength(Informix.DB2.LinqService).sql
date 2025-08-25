@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Informix.DB2 Informix
+-- Informix.DB2 Informix (asynchronously)
 DECLARE @A123456789b123456789c123456789d123456789e123456789 Integer(4) -- Int32
 SET     @A123456789b123456789c123456789d123456789e123456789 = 2
 

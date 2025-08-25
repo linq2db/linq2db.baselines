@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2012
+-- SqlServer.2012 (asynchronously)
 
 SELECT
 	[x].[ParentID],
@@ -54,7 +54,7 @@ WHERE
 	), 0, 1) = 1
 
 BeforeExecute
--- SqlServer.2012
+-- SqlServer.2012 (asynchronously)
 
 SELECT
 	[x].[ParentID],

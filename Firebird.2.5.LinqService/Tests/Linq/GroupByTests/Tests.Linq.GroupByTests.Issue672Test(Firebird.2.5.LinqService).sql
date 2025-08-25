@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Firebird.2.5 Firebird
+-- Firebird.2.5 Firebird (asynchronously)
 DECLARE @Name VarChar(6) -- String
 SET     @Name = 'group1'
 DECLARE @Enabled Char -- String
@@ -21,7 +21,7 @@ VALUES
 )
 
 BeforeExecute
--- Firebird.2.5 Firebird
+-- Firebird.2.5 Firebird (asynchronously)
 DECLARE @Name VarChar(6) -- String
 SET     @Name = 'group1'
 DECLARE @Enabled Char -- String
@@ -43,7 +43,7 @@ VALUES
 )
 
 BeforeExecute
--- Firebird.2.5 Firebird
+-- Firebird.2.5 Firebird (asynchronously)
 DECLARE @Name VarChar(6) -- String
 SET     @Name = 'group2'
 DECLARE @Enabled Char -- String

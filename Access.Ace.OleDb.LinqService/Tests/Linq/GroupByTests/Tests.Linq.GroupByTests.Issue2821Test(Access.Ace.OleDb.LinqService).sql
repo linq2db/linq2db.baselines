@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Access.Ace.OleDb AccessOleDb
+-- Access.Ace.OleDb AccessOleDb (asynchronously)
 DECLARE @currentDate Date -- DateTime
 SET     @currentDate = #2020-02-29 17:54:55#
 DECLARE @currentDate_1 Date -- DateTime

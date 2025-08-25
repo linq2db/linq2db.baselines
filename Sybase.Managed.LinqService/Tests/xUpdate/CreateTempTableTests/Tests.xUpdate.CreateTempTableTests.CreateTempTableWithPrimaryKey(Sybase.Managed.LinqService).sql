@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Sybase.Managed Sybase
+-- Sybase.Managed Sybase (asynchronously)
 
 CREATE TABLE #TableWithPrimaryKey
 (
@@ -9,7 +9,7 @@ CREATE TABLE #TableWithPrimaryKey
 )
 
 BeforeExecute
--- Sybase.Managed Sybase
+-- Sybase.Managed Sybase (asynchronously)
 
 IF (OBJECT_ID(N'#TableWithPrimaryKey') IS NOT NULL)
 	DROP TABLE #TableWithPrimaryKey

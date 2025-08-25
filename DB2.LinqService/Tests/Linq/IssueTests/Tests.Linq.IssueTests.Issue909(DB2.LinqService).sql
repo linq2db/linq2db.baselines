@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- DB2 DB2.LUW DB2LUW
+-- DB2 DB2.LUW DB2LUW (asynchronously)
 
 SELECT
 	"p"."ParentID",
@@ -10,7 +10,7 @@ WHERE
 	("p"."Value1" NOT IN (1, 2, 3) OR "p"."Value1" IS NULL)
 
 BeforeExecute
--- DB2 DB2.LUW DB2LUW
+-- DB2 DB2.LUW DB2LUW (asynchronously)
 
 SELECT
 	"t1"."ParentID",

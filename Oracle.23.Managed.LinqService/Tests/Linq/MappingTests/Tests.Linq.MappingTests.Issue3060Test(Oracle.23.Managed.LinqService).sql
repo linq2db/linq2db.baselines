@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Oracle.23.Managed Oracle.Managed Oracle12
+-- Oracle.23.Managed Oracle.Managed Oracle12 (asynchronously)
 DECLARE @Uid_1 Blob -- Object
 SET     @Uid_1 = HEXTORAW('3D667BBCDE0F27438F925D8CC3A11D11')
 DECLARE @Id Int64

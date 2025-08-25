@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- PostgreSQL.15 PostgreSQL
+-- PostgreSQL.15 PostgreSQL (asynchronously)
 
 DELETE FROM
 	"LinqDataTypes" t1
@@ -7,7 +7,7 @@ WHERE
 	t1."ID" > 1000
 
 BeforeExecute
--- PostgreSQL.15 PostgreSQL
+-- PostgreSQL.15 PostgreSQL (asynchronously)
 DECLARE @data Bytea -- Binary
 SET     @data = NULL
 
@@ -25,7 +25,7 @@ VALUES
 )
 
 BeforeExecute
--- PostgreSQL.15 PostgreSQL
+-- PostgreSQL.15 PostgreSQL (asynchronously)
 
 DELETE FROM
 	"LinqDataTypes" t1

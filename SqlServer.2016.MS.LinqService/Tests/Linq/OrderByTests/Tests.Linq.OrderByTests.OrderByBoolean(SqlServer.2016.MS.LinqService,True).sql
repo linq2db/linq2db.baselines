@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2016.MS SqlServer.2016
+-- SqlServer.2016.MS SqlServer.2016 (asynchronously)
 
 SELECT
 	[t1].[FirstName],
@@ -13,7 +13,7 @@ ORDER BY
 	IIF(LEN([t1].[FirstName] + N'.') > 2, 1, 0)
 
 BeforeExecute
--- SqlServer.2016.MS SqlServer.2016
+-- SqlServer.2016.MS SqlServer.2016 (asynchronously)
 
 SELECT
 	[t1].[FirstName],

@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2008.MS SqlServer.2008
+-- SqlServer.2008.MS SqlServer.2008 (asynchronously)
 DECLARE @offset Int -- Int32
 SET     @offset = -1
 
@@ -9,7 +9,7 @@ SET
 	[Field] = CAST(CAST([Issue4963Table].[Field] AS Int) + @offset AS TinyInt)
 
 BeforeExecute
--- SqlServer.2008.MS SqlServer.2008
+-- SqlServer.2008.MS SqlServer.2008 (asynchronously)
 
 SELECT TOP (2)
 	[t1].[Field]

@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Sybase.Managed Sybase
+-- Sybase.Managed Sybase (asynchronously)
 DECLARE @offset Integer -- Int32
 SET     @offset = -1
 
@@ -9,7 +9,7 @@ SET
 	[Field] = CAST(CAST([Issue4963Table].[Field] AS Int) + @offset AS TinyInt)
 
 BeforeExecute
--- Sybase.Managed Sybase
+-- Sybase.Managed Sybase (asynchronously)
 
 SELECT TOP 2
 	[t1].[Field]

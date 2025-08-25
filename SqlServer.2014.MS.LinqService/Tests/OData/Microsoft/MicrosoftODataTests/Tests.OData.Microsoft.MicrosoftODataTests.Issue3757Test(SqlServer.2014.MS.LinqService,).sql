@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2014.MS SqlServer.2014
+-- SqlServer.2014.MS SqlServer.2014 (asynchronously)
 
 SELECT
 	[m_1].[ID],
@@ -12,7 +12,7 @@ FROM
 		INNER JOIN [Issue3757Level2] [d] ON [m_1].[ID] = [d].[ParentId]
 
 BeforeExecute
--- SqlServer.2014.MS SqlServer.2014
+-- SqlServer.2014.MS SqlServer.2014 (asynchronously)
 
 SELECT
 	[l1].[ID],

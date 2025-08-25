@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Firebird.3 Firebird3
+-- Firebird.3 Firebird3 (asynchronously)
 
 WITH CTE_1
 (
@@ -39,7 +39,7 @@ WHERE
 	"r".ID = 2
 
 BeforeExecute
--- Firebird.3 Firebird3
+-- Firebird.3 Firebird3 (asynchronously)
 
 WITH CTE_1 ("c1")
 AS

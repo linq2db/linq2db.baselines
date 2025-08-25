@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025 SqlServer.2022 (asynchronously)
 
 DELETE [t1]
 FROM
@@ -40,7 +40,7 @@ WHERE
 	[p].[FirstName] = N'John' AND [p].[LastName] = N'Shepard'
 
 BeforeExecute
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025 SqlServer.2022 (asynchronously)
 
 DELETE [t1]
 FROM

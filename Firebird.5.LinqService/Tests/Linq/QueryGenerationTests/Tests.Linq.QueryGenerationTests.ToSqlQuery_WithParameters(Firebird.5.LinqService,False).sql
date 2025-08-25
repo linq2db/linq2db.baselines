@@ -15,7 +15,7 @@ WHERE
 	"p"."PersonID" = @id
 
 BeforeExecute
--- Firebird.5 Firebird4
+-- Firebird.5 Firebird4 (asynchronously)
 DECLARE @id Integer -- Int32
 SET     @id = 1
 

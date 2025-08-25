@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Access.Ace.Odbc AccessODBC
+-- Access.Ace.Odbc AccessODBC (asynchronously)
 
 SELECT DISTINCT
 	[x].[ParentID],
@@ -11,7 +11,7 @@ WHERE
 	[x].[ChildID] > 30
 
 BeforeExecute
--- Access.Ace.Odbc AccessODBC
+-- Access.Ace.Odbc AccessODBC (asynchronously)
 
 SELECT DISTINCT
 	[x].[ParentID],

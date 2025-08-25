@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SQLite.Classic SQLite
+-- SQLite.Classic SQLite (asynchronously)
 DECLARE @s NVarChar(7) -- String
 SET     @s = '123[456'
 
@@ -11,7 +11,7 @@ WHERE
 	[p].[PersonID] = 1 AND @s LIKE '%~[%' ESCAPE '~'
 
 BeforeExecute
--- SQLite.Classic SQLite
+-- SQLite.Classic SQLite (asynchronously)
 DECLARE @s NVarChar(7) -- String
 SET     @s = '123[456'
 

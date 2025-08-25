@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2016
+-- SqlServer.2016 (asynchronously)
 
 SELECT
 	[t1].[ID],
@@ -15,7 +15,7 @@ FROM
 		INNER JOIN [LinqDataTypes] [t2] ON [t1].[ID] = [t2].[ID]
 
 BeforeExecute
--- SqlServer.2016
+-- SqlServer.2016 (asynchronously)
 DECLARE @param2 Bit -- Boolean
 SET     @param2 = 0
 

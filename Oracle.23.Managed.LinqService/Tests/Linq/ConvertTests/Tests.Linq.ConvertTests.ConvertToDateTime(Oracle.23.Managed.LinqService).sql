@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Oracle.23.Managed Oracle.Managed Oracle12
+-- Oracle.23.Managed Oracle.Managed Oracle12 (asynchronously)
 
 SELECT
 	TO_TIMESTAMP(EXTRACT(YEAR FROM p."DateTimeValue") || '-01-01 00:00:00', 'YYYY-MM-DD HH24:MI:SS')

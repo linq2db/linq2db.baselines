@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Access.Ace.OleDb AccessOleDb
+-- Access.Ace.OleDb AccessOleDb (asynchronously)
 DECLARE @id1 Integer -- Int32
 SET     @id1 = 1
 DECLARE @id1_1 Integer -- Int32
@@ -19,7 +19,7 @@ ORDER BY
 	[p].[ParentID]
 
 BeforeExecute
--- Access.Ace.OleDb AccessOleDb
+-- Access.Ace.OleDb AccessOleDb (asynchronously)
 DECLARE @id1 Integer -- Int32
 SET     @id1 = 2
 DECLARE @id1_1 Integer -- Int32

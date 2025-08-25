@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SQLite.MS SQLite
+-- SQLite.MS SQLite (asynchronously)
 
 SELECT DISTINCT
 	[x].[ParentID],
@@ -11,7 +11,7 @@ WHERE
 	[x].[ChildID] > 30
 
 BeforeExecute
--- SQLite.MS SQLite
+-- SQLite.MS SQLite (asynchronously)
 
 SELECT DISTINCT
 	[x].[ParentID],

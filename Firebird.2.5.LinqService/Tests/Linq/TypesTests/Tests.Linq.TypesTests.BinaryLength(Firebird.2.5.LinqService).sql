@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Firebird.2.5 Firebird
+-- Firebird.2.5 Firebird (asynchronously)
 DECLARE @BinaryValue Binary(5)
 SET     @BinaryValue = X'0102030405'
 
@@ -11,7 +11,7 @@ WHERE
 	"t".ID = 1
 
 BeforeExecute
--- Firebird.2.5 Firebird
+-- Firebird.2.5 Firebird (asynchronously)
 
 SELECT FIRST 1
 	Octet_Length("t"."BinaryValue")
@@ -21,7 +21,7 @@ WHERE
 	"t".ID = 1
 
 BeforeExecute
--- Firebird.2.5 Firebird
+-- Firebird.2.5 Firebird (asynchronously)
 DECLARE @BinaryValue Binary
 SET     @BinaryValue = NULL
 

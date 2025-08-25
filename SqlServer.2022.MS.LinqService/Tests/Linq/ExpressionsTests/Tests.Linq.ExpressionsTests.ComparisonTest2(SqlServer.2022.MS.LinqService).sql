@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2022.MS SqlServer.2022
+-- SqlServer.2022.MS SqlServer.2022 (asynchronously)
 DECLARE @personId Int -- Int32
 SET     @personId = 0
 DECLARE @personId_1 Int -- Int32

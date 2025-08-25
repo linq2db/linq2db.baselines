@@ -1,10 +1,10 @@
 ﻿BeforeExecute
--- SqlServer.2016.MS SqlServer.2016
+-- SqlServer.2016.MS SqlServer.2016 (asynchronously)
 
 DROP TABLE IF EXISTS [Issue681Table2]
 
 BeforeExecute
--- SqlServer.2016.MS SqlServer.2016
+-- SqlServer.2016.MS SqlServer.2016 (asynchronously)
 
 CREATE TABLE [Issue681Table2]
 (
@@ -15,7 +15,7 @@ CREATE TABLE [Issue681Table2]
 )
 
 BeforeExecute
--- SqlServer.2016.MS SqlServer.2016
+-- SqlServer.2016.MS SqlServer.2016 (asynchronously)
 
 DROP TABLE [Issue681Table2]
 

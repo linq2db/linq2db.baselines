@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Access.Jet.OleDb AccessOleDb
+-- Access.Jet.OleDb AccessOleDb (asynchronously)
 
 SELECT
 	SUM([grp_1].[MoneyValue]),
@@ -17,7 +17,7 @@ GROUP BY
 	[grp_1].[Date_1]
 
 BeforeExecute
--- Access.Jet.OleDb AccessOleDb
+-- Access.Jet.OleDb AccessOleDb (asynchronously)
 
 SELECT
 	SUM([grp_1].[MoneyValue]),

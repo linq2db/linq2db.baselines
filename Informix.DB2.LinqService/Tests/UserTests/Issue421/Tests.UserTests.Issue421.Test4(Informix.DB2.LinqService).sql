@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Informix.DB2 Informix
+-- Informix.DB2 Informix (asynchronously)
 DECLARE @BlobValue VarBinary(3) -- Binary
 SET     @BlobValue = {1,2,3}
 
@@ -15,7 +15,7 @@ VALUES
 )
 
 BeforeExecute
--- Informix.DB2 Informix
+-- Informix.DB2 Informix (asynchronously)
 
 SELECT FIRST 1
 	t1.Id,
@@ -26,7 +26,7 @@ WHERE
 	t1.Id = 1
 
 BeforeExecute
--- Informix.DB2 Informix
+-- Informix.DB2 Informix (asynchronously)
 
 SELECT FIRST 1
 	t1.Id,

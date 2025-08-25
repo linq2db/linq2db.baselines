@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Access.Jet.Odbc AccessODBC
+-- Access.Jet.Odbc AccessODBC (asynchronously)
 DECLARE @FirstName NVarChar(9) -- String
 SET     @FirstName = 'FirstName'
 DECLARE @Gender NChar(1) -- StringFixedLength

@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 DECLARE @take Int -- Int32
 SET     @take = 1
 
@@ -16,7 +16,7 @@ FROM
 	) [t2]
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 
 SELECT
 	[t1].[ParentID],

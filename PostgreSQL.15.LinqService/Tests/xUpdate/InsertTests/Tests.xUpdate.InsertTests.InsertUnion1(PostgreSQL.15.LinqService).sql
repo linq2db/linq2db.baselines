@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- PostgreSQL.15 PostgreSQL
+-- PostgreSQL.15 PostgreSQL (asynchronously)
 
 DELETE FROM
 	"Parent" p
@@ -7,7 +7,7 @@ WHERE
 	p."ParentID" > 1000
 
 BeforeExecute
--- PostgreSQL.15 PostgreSQL
+-- PostgreSQL.15 PostgreSQL (asynchronously)
 
 INSERT INTO "Parent"
 (
@@ -33,7 +33,7 @@ FROM
 	) t1
 
 BeforeExecute
--- PostgreSQL.15 PostgreSQL
+-- PostgreSQL.15 PostgreSQL (asynchronously)
 
 SELECT
 	COUNT(*)
@@ -43,7 +43,7 @@ WHERE
 	c_1."ParentID" > 1000
 
 BeforeExecute
--- PostgreSQL.15 PostgreSQL
+-- PostgreSQL.15 PostgreSQL (asynchronously)
 
 DELETE FROM
 	"Parent" p

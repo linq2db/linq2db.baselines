@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- MySql.8.0 MySql.8.0.MySql.Data MySql80
+-- MySql.8.0 MySql.8.0.MySql.Data MySql80 (asynchronously)
 DECLARE @carNo VarChar -- String
 SET     @carNo = NULL
 DECLARE @carBrand VarChar -- String
@@ -60,7 +60,7 @@ WHERE
 LIMIT @skip, @take
 
 BeforeExecute
--- MySql.8.0 MySql.8.0.MySql.Data MySql80
+-- MySql.8.0 MySql.8.0.MySql.Data MySql80 (asynchronously)
 DECLARE @carNo VarChar -- String
 SET     @carNo = NULL
 DECLARE @carBrand VarChar -- String

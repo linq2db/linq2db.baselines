@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Access.Jet.OleDb AccessOleDb
+-- Access.Jet.OleDb AccessOleDb (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -11,7 +11,7 @@ FROM
 		LEFT JOIN [TestEntity2] [t2] ON ([t1].[Id] = [t2].[Id])
 
 BeforeExecute
--- Access.Jet.OleDb AccessOleDb
+-- Access.Jet.OleDb AccessOleDb (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -25,7 +25,7 @@ WHERE
 	[t1].[Id] IS NULL
 
 BeforeExecute
--- Access.Jet.OleDb AccessOleDb
+-- Access.Jet.OleDb AccessOleDb (asynchronously)
 
 SELECT
 	[t1].[Id],

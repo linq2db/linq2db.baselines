@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Firebird.4 Firebird4
+-- Firebird.4 Firebird4 (asynchronously)
 
 WITH CTE1_ ("ParentID", "ChildID")
 AS
@@ -17,7 +17,7 @@ FROM
 	CTE1_ "t2"
 
 BeforeExecute
--- Firebird.4 Firebird4
+-- Firebird.4 Firebird4 (asynchronously)
 
 SELECT
 	"t1"."ParentID",

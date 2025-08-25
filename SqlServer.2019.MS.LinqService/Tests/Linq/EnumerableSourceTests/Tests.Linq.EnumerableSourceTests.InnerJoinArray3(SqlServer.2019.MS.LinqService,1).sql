@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2019.MS SqlServer.2019
+-- SqlServer.2019.MS SqlServer.2019 (asynchronously)
 
 SELECT
 	[p].[FirstName],
@@ -14,7 +14,7 @@ FROM
 		) [n]([item]) ON [p].[LastName] = [n].[item]
 
 BeforeExecute
--- SqlServer.2019.MS SqlServer.2019
+-- SqlServer.2019.MS SqlServer.2019 (asynchronously)
 
 SELECT
 	[p].[FirstName],

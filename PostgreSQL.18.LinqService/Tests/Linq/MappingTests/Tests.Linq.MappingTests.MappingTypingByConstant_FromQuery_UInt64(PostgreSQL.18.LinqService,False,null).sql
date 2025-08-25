@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- PostgreSQL.18 PostgreSQL
+-- PostgreSQL.18 PostgreSQL (asynchronously)
 DECLARE @value Numeric -- Decimal
 SET     @value = NULL
 
@@ -16,7 +16,7 @@ FROM
 	) t1
 
 BeforeExecute
--- PostgreSQL.18 PostgreSQL
+-- PostgreSQL.18 PostgreSQL (asynchronously)
 DECLARE @value Numeric(10, 0) -- Decimal
 SET     @value = 2147483648
 

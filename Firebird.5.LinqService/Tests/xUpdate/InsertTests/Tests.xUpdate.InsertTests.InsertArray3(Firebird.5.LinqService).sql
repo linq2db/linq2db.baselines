@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Firebird.5 Firebird4
+-- Firebird.5 Firebird4 (asynchronously)
 
 DELETE FROM
 	"LinqDataTypes" "t"
@@ -7,7 +7,7 @@ WHERE
 	"t".ID > 1000
 
 BeforeExecute
--- Firebird.5 Firebird4
+-- Firebird.5 Firebird4 (asynchronously)
 DECLARE @arr Binary(4)
 SET     @arr = X'01020304'
 
@@ -25,7 +25,7 @@ VALUES
 )
 
 BeforeExecute
--- Firebird.5 Firebird4
+-- Firebird.5 Firebird4 (asynchronously)
 
 SELECT
 	"t".ID,
@@ -42,7 +42,7 @@ WHERE
 FETCH NEXT 2 ROWS ONLY
 
 BeforeExecute
--- Firebird.5 Firebird4
+-- Firebird.5 Firebird4 (asynchronously)
 
 DELETE FROM
 	"LinqDataTypes" "t"

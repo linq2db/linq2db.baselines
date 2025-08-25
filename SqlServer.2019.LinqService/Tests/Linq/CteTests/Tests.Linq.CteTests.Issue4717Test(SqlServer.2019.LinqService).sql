@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2019
+-- SqlServer.2019 (asynchronously)
 
 INSERT INTO [Issue4717Address]
 (
@@ -19,7 +19,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2019
+-- SqlServer.2019 (asynchronously)
 
 INSERT INTO [Issue4717Warehouse]
 (
@@ -35,7 +35,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2019
+-- SqlServer.2019 (asynchronously)
 
 INSERT INTO [Issue4717UnitOfMeasure]
 (
@@ -51,7 +51,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2019
+-- SqlServer.2019 (asynchronously)
 DECLARE @productId Int -- Int32
 SET     @productId = 1
 
@@ -71,7 +71,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2019
+-- SqlServer.2019 (asynchronously)
 DECLARE @includedProductId Int -- Int32
 SET     @includedProductId = 2
 
@@ -91,7 +91,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2019
+-- SqlServer.2019 (asynchronously)
 DECLARE @productId Int -- Int32
 SET     @productId = 1
 DECLARE @includedProductId Int -- Int32
@@ -111,7 +111,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2019
+-- SqlServer.2019 (asynchronously)
 DECLARE @productId Int -- Int32
 SET     @productId = 1
 
@@ -129,7 +129,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2019
+-- SqlServer.2019 (asynchronously)
 DECLARE @productId Int -- Int32
 SET     @productId = 1
 

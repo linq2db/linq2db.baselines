@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Oracle.11.Managed Oracle11
+-- Oracle.11.Managed Oracle11 (asynchronously)
 DECLARE @n Int32
 SET     @n = 1
 
@@ -19,7 +19,7 @@ FROM
 		INNER JOIN "Child" d ON m_1."ParentID" = d."ParentID" - :n
 
 BeforeExecute
--- Oracle.11.Managed Oracle11
+-- Oracle.11.Managed Oracle11 (asynchronously)
 
 SELECT
 	p."ParentID",

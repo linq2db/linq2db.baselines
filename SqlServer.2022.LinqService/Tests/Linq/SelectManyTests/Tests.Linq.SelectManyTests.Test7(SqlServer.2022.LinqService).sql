@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2022
+-- SqlServer.2022 (asynchronously)
 
 SELECT
 	[a_Child].[ParentID],
@@ -13,7 +13,7 @@ WHERE
 	[p].[ParentID] = [g_1].[ParentID]
 
 BeforeExecute
--- SqlServer.2022
+-- SqlServer.2022 (asynchronously)
 
 SELECT
 	[a_Child].[ParentID],

@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- ClickHouse.Driver ClickHouse
+-- ClickHouse.Driver ClickHouse (asynchronously)
 
 SELECT
 	toDate32(concat('2010-01-', leftPadUTF8(toString(t.TransactionId), toUInt32(2), '0')))
@@ -9,7 +9,7 @@ WHERE
 	toDayOfMonth(toDate32(concat('2010-01-', leftPadUTF8(toString(t.TransactionId), toUInt32(2), '0')))) > 0
 
 BeforeExecute
--- ClickHouse.Driver ClickHouse
+-- ClickHouse.Driver ClickHouse (asynchronously)
 
 SELECT
 	t1.TransactionId,

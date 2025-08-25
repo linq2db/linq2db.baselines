@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- PostgreSQL.18 PostgreSQL
+-- PostgreSQL.18 PostgreSQL (asynchronously)
 DECLARE @Id Integer -- Int32
 SET     @Id = 10
 DECLARE @TimeStamp Timestamp -- DateTime2

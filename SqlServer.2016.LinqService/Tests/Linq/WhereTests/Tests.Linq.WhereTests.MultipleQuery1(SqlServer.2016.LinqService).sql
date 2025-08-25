@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2016
+-- SqlServer.2016 (asynchronously)
 DECLARE @id Int -- Int32
 SET     @id = 1
 
@@ -15,7 +15,7 @@ WHERE
 	[p].[PersonID] = @id
 
 BeforeExecute
--- SqlServer.2016
+-- SqlServer.2016 (asynchronously)
 DECLARE @id Int -- Int32
 SET     @id = 2
 

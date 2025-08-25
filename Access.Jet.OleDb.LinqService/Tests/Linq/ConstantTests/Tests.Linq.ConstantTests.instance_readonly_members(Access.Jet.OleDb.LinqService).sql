@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Access.Jet.OleDb AccessOleDb
+-- Access.Jet.OleDb AccessOleDb (asynchronously)
 DECLARE @Id Integer -- Int32
 SET     @Id = 1
 DECLARE @InitOnlyId Integer -- Int32
@@ -16,7 +16,7 @@ WHERE
 	[e].[Id] = @Id AND [e].[Id] = @InitOnlyId
 
 BeforeExecute
--- Access.Jet.OleDb AccessOleDb
+-- Access.Jet.OleDb AccessOleDb (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -27,7 +27,7 @@ FROM
 	[TestConstantsData] [t1]
 
 BeforeExecute
--- Access.Jet.OleDb AccessOleDb
+-- Access.Jet.OleDb AccessOleDb (asynchronously)
 DECLARE @Id Integer -- Int32
 SET     @Id = 1
 DECLARE @InitOnlyId Integer -- Int32
@@ -44,7 +44,7 @@ WHERE
 	[e].[Id] = @Id AND [e].[Id] = @InitOnlyId
 
 BeforeExecute
--- Access.Jet.OleDb AccessOleDb
+-- Access.Jet.OleDb AccessOleDb (asynchronously)
 
 SELECT
 	[t1].[Id],

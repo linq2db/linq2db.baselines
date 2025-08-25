@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2008
+-- SqlServer.2008 (asynchronously)
 
 UPDATE
 	[t]
@@ -22,7 +22,7 @@ FROM
 		INNER JOIN [DestinationTable] [t] ON [t].[Id] = [s].[Id]
 
 BeforeExecute
--- SqlServer.2008
+-- SqlServer.2008 (asynchronously)
 
 SELECT
 	[t1].[Id],

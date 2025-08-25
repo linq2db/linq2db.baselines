@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2016.MS SqlServer.2016
+-- SqlServer.2016.MS SqlServer.2016 (asynchronously)
 
 DELETE [p]
 FROM
@@ -8,7 +8,7 @@ WHERE
 	[p].[FirstName] LIKE N'Insert14%' ESCAPE N'~'
 
 BeforeExecute
--- SqlServer.2016.MS SqlServer.2016
+-- SqlServer.2016.MS SqlServer.2016 (asynchronously)
 
 INSERT INTO [Person]
 (
@@ -31,7 +31,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2016.MS SqlServer.2016
+-- SqlServer.2016.MS SqlServer.2016 (asynchronously)
 
 SELECT
 	COUNT(*)
@@ -41,7 +41,7 @@ WHERE
 	[p].[FirstName] LIKE N'Insert14%' ESCAPE N'~'
 
 BeforeExecute
--- SqlServer.2016.MS SqlServer.2016
+-- SqlServer.2016.MS SqlServer.2016 (asynchronously)
 
 DELETE [p]
 FROM

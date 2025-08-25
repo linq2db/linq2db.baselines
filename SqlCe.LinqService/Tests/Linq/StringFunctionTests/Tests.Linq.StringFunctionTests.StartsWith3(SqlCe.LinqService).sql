@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 DECLARE @str NVarChar(7) -- String
 SET     @str = 'John123'
 

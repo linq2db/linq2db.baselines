@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025 SqlServer.2022 (asynchronously)
 DECLARE @p NVarChar(4000) -- String
 SET     @p = N'1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20'
 

@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Access.Jet.OleDb AccessOleDb
+-- Access.Jet.OleDb AccessOleDb (asynchronously)
 DECLARE @is_deleted Boolean
 SET     @is_deleted = True
 
@@ -13,7 +13,7 @@ WHERE
 	[sr].[id] = 'TestProcessService'
 
 BeforeExecute
--- Access.Jet.OleDb AccessOleDb
+-- Access.Jet.OleDb AccessOleDb (asynchronously)
 
 SELECT
 	[x].[id],
@@ -25,7 +25,7 @@ WHERE
 	[x].[is_deleted] AND [x].[service_id] = 'TestProcessService'
 
 BeforeExecute
--- Access.Jet.OleDb AccessOleDb
+-- Access.Jet.OleDb AccessOleDb (asynchronously)
 
 SELECT
 	[x].[id],

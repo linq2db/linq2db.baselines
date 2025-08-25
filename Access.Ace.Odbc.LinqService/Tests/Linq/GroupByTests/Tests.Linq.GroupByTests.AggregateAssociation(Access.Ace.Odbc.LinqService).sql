@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Access.Ace.Odbc AccessODBC
+-- Access.Ace.Odbc AccessODBC (asynchronously)
 
 SELECT
 	SUM(IIF([a_Parent].[Value1] IS NULL, 0, [a_Parent].[Value1]))

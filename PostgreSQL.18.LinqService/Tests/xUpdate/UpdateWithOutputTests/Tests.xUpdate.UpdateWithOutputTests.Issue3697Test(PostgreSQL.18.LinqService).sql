@@ -1,10 +1,10 @@
 ﻿BeforeExecute
--- PostgreSQL.18 PostgreSQL
+-- PostgreSQL.18 PostgreSQL (asynchronously)
 
 INSERT INTO "Test3697" DEFAULT VALUES
 
 BeforeExecute
--- PostgreSQL.18 PostgreSQL
+-- PostgreSQL.18 PostgreSQL (asynchronously)
 
 UPDATE
 	"Test3697Item"
@@ -18,7 +18,7 @@ RETURNING
 	NEW."Id"
 
 BeforeExecute
--- PostgreSQL.18 PostgreSQL
+-- PostgreSQL.18 PostgreSQL (asynchronously)
 
 UPDATE
 	"Test3697Item"

@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- PostgreSQL.18 PostgreSQL
+-- PostgreSQL.18 PostgreSQL (asynchronously)
 DECLARE @Data Text(9) -- String
 SET     @Data = '***III***'
 DECLARE @ID Integer -- Int32
@@ -13,7 +13,7 @@ WHERE
 	"TrimTestTable"."ID" = :ID
 
 BeforeExecute
--- PostgreSQL.18 PostgreSQL
+-- PostgreSQL.18 PostgreSQL (asynchronously)
 DECLARE @Data Text(9) -- String
 SET     @Data = '***OOO***'
 
@@ -25,7 +25,7 @@ WHERE
 	"TrimTestTable"."Data" = '***XXX***'
 
 BeforeExecute
--- PostgreSQL.18 PostgreSQL
+-- PostgreSQL.18 PostgreSQL (asynchronously)
 DECLARE @Data Text(9) -- String
 SET     @Data = '***SSS***'
 DECLARE @p Text(9) -- String
@@ -39,7 +39,7 @@ WHERE
 	"TrimTestTable"."Data" = :p
 
 BeforeExecute
--- PostgreSQL.18 PostgreSQL
+-- PostgreSQL.18 PostgreSQL (asynchronously)
 
 SELECT
 	r."ID",
@@ -50,7 +50,7 @@ ORDER BY
 	r."ID"
 
 BeforeExecute
--- PostgreSQL.18 PostgreSQL
+-- PostgreSQL.18 PostgreSQL (asynchronously)
 
 SELECT
 	r."ID",

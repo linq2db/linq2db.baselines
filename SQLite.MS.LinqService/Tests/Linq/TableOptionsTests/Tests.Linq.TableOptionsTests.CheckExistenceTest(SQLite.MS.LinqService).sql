@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SQLite.MS SQLite
+-- SQLite.MS SQLite (asynchronously)
 
 CREATE TABLE IF NOT EXISTS [DisposableTable]
 (
@@ -7,7 +7,7 @@ CREATE TABLE IF NOT EXISTS [DisposableTable]
 )
 
 BeforeExecute
--- SQLite.MS SQLite
+-- SQLite.MS SQLite (asynchronously)
 
 DROP TABLE IF EXISTS [DisposableTable]
 

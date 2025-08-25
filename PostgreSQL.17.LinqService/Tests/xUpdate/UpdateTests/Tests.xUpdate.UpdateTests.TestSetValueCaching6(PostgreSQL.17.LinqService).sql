@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
+-- PostgreSQL.17 PostgreSQL.15 PostgreSQL (asynchronously)
 DECLARE @Value6 Integer -- Int32
 SET     @Value6 = 7
 DECLARE @id Integer -- Int32
@@ -13,7 +13,7 @@ WHERE
 	"UpdateSetTest"."Id" = :id
 
 BeforeExecute
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
+-- PostgreSQL.17 PostgreSQL.15 PostgreSQL (asynchronously)
 DECLARE @id Integer -- Int32
 SET     @id = 1
 
@@ -26,7 +26,7 @@ WHERE
 LIMIT 2
 
 BeforeExecute
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
+-- PostgreSQL.17 PostgreSQL.15 PostgreSQL (asynchronously)
 DECLARE @Value6 Integer -- Int32
 SET     @Value6 = 8
 DECLARE @id Integer -- Int32
@@ -40,7 +40,7 @@ WHERE
 	"UpdateSetTest"."Id" = :id
 
 BeforeExecute
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
+-- PostgreSQL.17 PostgreSQL.15 PostgreSQL (asynchronously)
 DECLARE @id Integer -- Int32
 SET     @id = 1
 

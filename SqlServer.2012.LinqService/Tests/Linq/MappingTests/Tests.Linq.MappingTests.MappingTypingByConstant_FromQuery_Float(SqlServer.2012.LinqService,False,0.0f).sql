@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2012
+-- SqlServer.2012 (asynchronously)
 DECLARE @value Real -- Single
 SET     @value = 0
 
@@ -16,7 +16,7 @@ FROM
 	) [t1]
 
 BeforeExecute
--- SqlServer.2012
+-- SqlServer.2012 (asynchronously)
 DECLARE @value Real -- Single
 SET     @value = 3.14748365E+09
 

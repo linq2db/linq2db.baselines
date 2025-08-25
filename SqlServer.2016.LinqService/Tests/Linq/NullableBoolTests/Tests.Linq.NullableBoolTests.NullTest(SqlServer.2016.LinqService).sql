@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2016
+-- SqlServer.2016 (asynchronously)
 
 SELECT
 	[t].[Value]
@@ -9,7 +9,7 @@ WHERE
 	[t].[Value] IS NULL
 
 BeforeExecute
--- SqlServer.2016
+-- SqlServer.2016 (asynchronously)
 
 SELECT
 	[t].[Value]

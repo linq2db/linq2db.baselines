@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2016
+-- SqlServer.2016 (asynchronously)
 DECLARE @ParentID Int -- Int32
 SET     @ParentID = 3
 DECLARE @Value1 Int -- Int32

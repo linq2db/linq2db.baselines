@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 
 SELECT
 	[t].[Value] as [Value_1]
@@ -9,7 +9,7 @@ WHERE
 	[t].[Value] IS NULL
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 
 SELECT
 	[t].[Value] as [Value_1]
@@ -19,7 +19,7 @@ WHERE
 	1 = 0
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 
 SELECT
 	[t].[Value] as [Value_1]
@@ -29,7 +29,7 @@ WHERE
 	[t].[Value] IS NOT NULL
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 
 SELECT
 	[t].[Value] as [Value_1]

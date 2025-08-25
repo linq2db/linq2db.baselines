@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 DECLARE @s1 NVarChar(5) -- String
 SET     @s1 = '--'
 

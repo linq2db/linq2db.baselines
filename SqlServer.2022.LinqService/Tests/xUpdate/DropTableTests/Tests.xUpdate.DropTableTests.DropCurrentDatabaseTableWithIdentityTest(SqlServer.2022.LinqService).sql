@@ -1,10 +1,10 @@
 ﻿BeforeExecute
--- SqlServer.2022
+-- SqlServer.2022 (asynchronously)
 
 DROP TABLE IF EXISTS [DropTableTestID]
 
 BeforeExecute
--- SqlServer.2022
+-- SqlServer.2022 (asynchronously)
 
 CREATE TABLE [DropTableTestID]
 (
@@ -15,7 +15,7 @@ CREATE TABLE [DropTableTestID]
 )
 
 BeforeExecute
--- SqlServer.2022
+-- SqlServer.2022 (asynchronously)
 
 INSERT INTO [DropTableTestID]
 (
@@ -27,7 +27,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2022
+-- SqlServer.2022 (asynchronously)
 
 SELECT
 	[t].[ID],
@@ -36,12 +36,12 @@ FROM
 	[DropTableTestID] [t]
 
 BeforeExecute
--- SqlServer.2022
+-- SqlServer.2022 (asynchronously)
 
 DROP TABLE [DropTableTestID]
 
 BeforeExecute
--- SqlServer.2022
+-- SqlServer.2022 (asynchronously)
 
 SELECT
 	[t1].[ID],

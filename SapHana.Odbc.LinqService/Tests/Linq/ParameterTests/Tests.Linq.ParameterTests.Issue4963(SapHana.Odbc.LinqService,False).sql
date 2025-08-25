@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+-- SapHana.Odbc SapHanaOdbc (asynchronously)
 DECLARE @offset Int -- Int32
 SET     @offset = -1
 
@@ -9,7 +9,7 @@ SET
 	"Field" = CAST(CAST("t1"."Field" AS Integer) + ? AS TinyInt)
 
 BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+-- SapHana.Odbc SapHanaOdbc (asynchronously)
 
 SELECT
 	"t1"."Field"

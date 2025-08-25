@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Oracle.21.Managed Oracle.Managed Oracle12
+-- Oracle.21.Managed Oracle.Managed Oracle12 (asynchronously)
 
 DELETE FROM
 	"LinqDataTypes" t
@@ -7,7 +7,7 @@ WHERE
 	t.ID > 1000
 
 BeforeExecute
--- Oracle.21.Managed Oracle.Managed Oracle12
+-- Oracle.21.Managed Oracle.Managed Oracle12 (asynchronously)
 DECLARE @ID Int32
 SET     @ID = 1001
 DECLARE @MoneyValue Decimal(1, 0)
@@ -45,7 +45,7 @@ VALUES
 )
 
 BeforeExecute
--- Oracle.21.Managed Oracle.Managed Oracle12
+-- Oracle.21.Managed Oracle.Managed Oracle12 (asynchronously)
 
 SELECT
 	t.ID,
@@ -62,7 +62,7 @@ WHERE
 FETCH NEXT 2 ROWS ONLY
 
 BeforeExecute
--- Oracle.21.Managed Oracle.Managed Oracle12
+-- Oracle.21.Managed Oracle.Managed Oracle12 (asynchronously)
 
 DELETE FROM
 	"LinqDataTypes" t

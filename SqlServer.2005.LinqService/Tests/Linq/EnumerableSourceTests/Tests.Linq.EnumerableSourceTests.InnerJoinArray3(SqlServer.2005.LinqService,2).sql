@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2005
+-- SqlServer.2005 (asynchronously)
 
 SELECT
 	[p].[FirstName],
@@ -19,7 +19,7 @@ FROM
 			SELECT N'Doe') [n] ON [p].[LastName] = [n].[item]
 
 BeforeExecute
--- SqlServer.2005
+-- SqlServer.2005 (asynchronously)
 
 SELECT
 	[p].[FirstName],

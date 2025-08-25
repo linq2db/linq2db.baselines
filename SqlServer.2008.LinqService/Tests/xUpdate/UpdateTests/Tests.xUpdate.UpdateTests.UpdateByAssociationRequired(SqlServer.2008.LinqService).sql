@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2008
+-- SqlServer.2008 (asynchronously)
 DECLARE @id Int -- Int32
 SET     @id = 3
 
@@ -15,7 +15,7 @@ WHERE
 	[t1].[Id] = @id
 
 BeforeExecute
--- SqlServer.2008
+-- SqlServer.2008 (asynchronously)
 
 SELECT
 	[t1].[Id],

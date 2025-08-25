@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Informix.DB2 Informix
+-- Informix.DB2 Informix (asynchronously)
 
 SELECT FIRST 2
 	t1.Id
@@ -9,7 +9,7 @@ WHERE
 	t1.Id = 2
 
 BeforeExecute
--- Informix.DB2 Informix
+-- Informix.DB2 Informix (asynchronously)
 
 SELECT FIRST 2
 	t1.Id
@@ -19,7 +19,7 @@ WHERE
 	t1.Id = 2
 
 BeforeExecute
--- Informix.DB2 Informix
+-- Informix.DB2 Informix (asynchronously)
 DECLARE @UserId Integer(4) -- Int32
 SET     @UserId = 2
 
@@ -31,7 +31,7 @@ WHERE
 	x.Id = @UserId
 
 BeforeExecute
--- Informix.DB2 Informix
+-- Informix.DB2 Informix (asynchronously)
 DECLARE @UserId Integer(4) -- Int32
 SET     @UserId = 2
 

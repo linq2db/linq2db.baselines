@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Firebird.5 Firebird4
+-- Firebird.5 Firebird4 (asynchronously)
 
 SELECT
 	"m_1"."PersonID",
@@ -12,7 +12,7 @@ WHERE
 	Lower("m_1"."FirstName") LIKE '%test%' ESCAPE '~'
 
 BeforeExecute
--- Firebird.5 Firebird4
+-- Firebird.5 Firebird4 (asynchronously)
 
 SELECT
 	"p"."FirstName",

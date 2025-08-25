@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Oracle.11.Managed Oracle11
+-- Oracle.11.Managed Oracle11 (asynchronously)
 DECLARE @value Decimal(9, 5)
 SET     @value = 6579.64648
 
@@ -11,7 +11,7 @@ WHERE
 	ROWNUM <= 1
 
 BeforeExecute
--- Oracle.11.Managed Oracle11
+-- Oracle.11.Managed Oracle11 (asynchronously)
 DECLARE @value BinaryFloat -- Single
 SET     @value = 6579.64648
 
@@ -23,7 +23,7 @@ WHERE
 	ROWNUM <= 1
 
 BeforeExecute
--- Oracle.11.Managed Oracle11
+-- Oracle.11.Managed Oracle11 (asynchronously)
 DECLARE @value BinaryDouble -- Double
 SET     @value = 6579.6464800000003D
 
@@ -35,7 +35,7 @@ WHERE
 	ROWNUM <= 1
 
 BeforeExecute
--- Oracle.11.Managed Oracle11
+-- Oracle.11.Managed Oracle11 (asynchronously)
 DECLARE @value Decimal(9, 5)
 SET     @value = 6579.64648
 
@@ -47,7 +47,7 @@ WHERE
 	ROWNUM <= 1
 
 BeforeExecute
--- Oracle.11.Managed Oracle11
+-- Oracle.11.Managed Oracle11 (asynchronously)
 DECLARE @value BinaryFloat -- Single
 SET     @value = 6579.64648
 
@@ -59,7 +59,7 @@ WHERE
 	ROWNUM <= 1
 
 BeforeExecute
--- Oracle.11.Managed Oracle11
+-- Oracle.11.Managed Oracle11 (asynchronously)
 DECLARE @value BinaryDouble -- Double
 SET     @value = 6579.6464800000003D
 

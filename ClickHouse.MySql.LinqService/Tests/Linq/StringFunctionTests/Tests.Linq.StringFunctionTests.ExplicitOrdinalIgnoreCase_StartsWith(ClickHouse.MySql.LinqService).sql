@@ -1,12 +1,12 @@
 ﻿BeforeExecute
--- ClickHouse.MySql ClickHouse
+-- ClickHouse.MySql ClickHouse (asynchronously)
 
 ALTER TABLE
 	CollatedTable
 DELETE WHERE 1
 
 BeforeExecute
--- ClickHouse.MySql ClickHouse
+-- ClickHouse.MySql ClickHouse (asynchronously)
 
 INSERT INTO CollatedTable
 (
@@ -22,7 +22,7 @@ VALUES
 )
 
 BeforeExecute
--- ClickHouse.MySql ClickHouse
+-- ClickHouse.MySql ClickHouse (asynchronously)
 
 SELECT
 	COUNT(*)
@@ -32,7 +32,7 @@ WHERE
 	startsWith(lowerUTF8(r.CaseSensitive), 'testst')
 
 BeforeExecute
--- ClickHouse.MySql ClickHouse
+-- ClickHouse.MySql ClickHouse (asynchronously)
 
 SELECT
 	COUNT(*)
@@ -42,7 +42,7 @@ WHERE
 	startsWith(lowerUTF8(r.CaseInsensitive), 'testst')
 
 BeforeExecute
--- ClickHouse.MySql ClickHouse
+-- ClickHouse.MySql ClickHouse (asynchronously)
 
 SELECT
 	COUNT(*)
@@ -52,7 +52,7 @@ WHERE
 	startsWith(lowerUTF8(r.CaseSensitive), 'testst')
 
 BeforeExecute
--- ClickHouse.MySql ClickHouse
+-- ClickHouse.MySql ClickHouse (asynchronously)
 
 SELECT
 	COUNT(*)

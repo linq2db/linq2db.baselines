@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SQLite.MS SQLite
+-- SQLite.MS SQLite (asynchronously)
 DECLARE @s NVarChar(7) -- String
 SET     @s = '123[456'
 DECLARE @ps NVarChar(4) -- String

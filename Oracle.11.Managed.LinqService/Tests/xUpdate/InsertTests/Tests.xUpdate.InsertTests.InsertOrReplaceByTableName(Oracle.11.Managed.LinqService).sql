@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Oracle.11.Managed Oracle11
+-- Oracle.11.Managed Oracle11 (asynchronously)
 
 BEGIN
 	EXECUTE IMMEDIATE 'DROP TABLE "xxPatient"';
@@ -11,7 +11,7 @@ EXCEPTION
 END;
 
 BeforeExecute
--- Oracle.11.Managed Oracle11
+-- Oracle.11.Managed Oracle11 (asynchronously)
 
 CREATE TABLE "xxPatient"
 (
@@ -22,7 +22,7 @@ CREATE TABLE "xxPatient"
 )
 
 BeforeExecute
--- Oracle.11.Managed Oracle11
+-- Oracle.11.Managed Oracle11 (asynchronously)
 DECLARE @PersonID Int32
 SET     @PersonID = 1
 DECLARE @Diagnosis Varchar2(4) -- String
@@ -50,7 +50,7 @@ WHEN NOT MATCHED THEN
 	)
 
 BeforeExecute
--- Oracle.11.Managed Oracle11
+-- Oracle.11.Managed Oracle11 (asynchronously)
 DECLARE @PersonID Int32
 SET     @PersonID = 2
 DECLARE @Diagnosis Varchar2(4) -- String
@@ -78,7 +78,7 @@ WHEN NOT MATCHED THEN
 	)
 
 BeforeExecute
--- Oracle.11.Managed Oracle11
+-- Oracle.11.Managed Oracle11 (asynchronously)
 
 SELECT
 	COUNT(*)
@@ -86,7 +86,7 @@ FROM
 	"xxPatient" t1
 
 BeforeExecute
--- Oracle.11.Managed Oracle11
+-- Oracle.11.Managed Oracle11 (asynchronously)
 DECLARE @PersonID Int32
 SET     @PersonID = 1
 DECLARE @Diagnosis Varchar2(4) -- String
@@ -114,7 +114,7 @@ WHEN NOT MATCHED THEN
 	)
 
 BeforeExecute
--- Oracle.11.Managed Oracle11
+-- Oracle.11.Managed Oracle11 (asynchronously)
 DECLARE @PersonID Int32
 SET     @PersonID = 2
 DECLARE @Diagnosis Varchar2(4) -- String
@@ -142,7 +142,7 @@ WHEN NOT MATCHED THEN
 	)
 
 BeforeExecute
--- Oracle.11.Managed Oracle11
+-- Oracle.11.Managed Oracle11 (asynchronously)
 
 SELECT
 	COUNT(*)
@@ -150,7 +150,7 @@ FROM
 	"xxPatient" t1
 
 BeforeExecute
--- Oracle.11.Managed Oracle11
+-- Oracle.11.Managed Oracle11 (asynchronously)
 
 BEGIN
 	EXECUTE IMMEDIATE 'DROP TABLE "xxPatient"';

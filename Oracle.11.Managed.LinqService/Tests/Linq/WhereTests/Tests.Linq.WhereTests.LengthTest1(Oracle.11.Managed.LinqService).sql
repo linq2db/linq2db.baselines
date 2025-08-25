@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Oracle.11.Managed Oracle11
+-- Oracle.11.Managed Oracle11 (asynchronously)
 
 SELECT
 	nm."MiddleName"
@@ -9,7 +9,7 @@ WHERE
 	Length(nm."MiddleName") <> 0 OR nm."MiddleName" IS NULL
 
 BeforeExecute
--- Oracle.11.Managed Oracle11
+-- Oracle.11.Managed Oracle11 (asynchronously)
 
 SELECT
 	t1."FirstName",

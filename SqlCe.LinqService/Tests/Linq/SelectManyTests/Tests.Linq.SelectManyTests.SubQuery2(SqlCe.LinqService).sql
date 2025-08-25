@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 
 SELECT
 	[p].[PersonID] as [ID],
@@ -12,7 +12,7 @@ WHERE
 	[p].[PersonID] = [p2].[PersonID]
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 
 SELECT
 	[p].[PersonID] as [ID],

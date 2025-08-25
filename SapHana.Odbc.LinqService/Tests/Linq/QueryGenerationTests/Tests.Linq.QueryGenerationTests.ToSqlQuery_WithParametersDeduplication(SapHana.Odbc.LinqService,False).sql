@@ -17,7 +17,7 @@ WHERE
 	"p"."FirstName" = ? OR "p"."LastName" = ?
 
 BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+-- SapHana.Odbc SapHanaOdbc (asynchronously)
 DECLARE @firstName NVarChar(4) -- String
 SET     @firstName = 'John'
 DECLARE @firstName NVarChar(4) -- String

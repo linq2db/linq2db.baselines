@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Firebird.2.5 Firebird
+-- Firebird.2.5 Firebird (asynchronously)
 DECLARE @take Integer -- Int32
 SET     @take = 2
 
@@ -10,7 +10,7 @@ FROM
 	"Child" "ch"
 
 BeforeExecute
--- Firebird.2.5 Firebird
+-- Firebird.2.5 Firebird (asynchronously)
 DECLARE @take Integer -- Int32
 SET     @take = 3
 
@@ -21,7 +21,7 @@ FROM
 	"Child" "ch"
 
 BeforeExecute
--- Firebird.2.5 Firebird
+-- Firebird.2.5 Firebird (asynchronously)
 DECLARE @take Integer -- Int32
 SET     @take = 2
 
@@ -32,7 +32,7 @@ FROM
 	"Child" "ch"
 
 BeforeExecute
--- Firebird.2.5 Firebird
+-- Firebird.2.5 Firebird (asynchronously)
 DECLARE @take Integer -- Int32
 SET     @take = 3
 

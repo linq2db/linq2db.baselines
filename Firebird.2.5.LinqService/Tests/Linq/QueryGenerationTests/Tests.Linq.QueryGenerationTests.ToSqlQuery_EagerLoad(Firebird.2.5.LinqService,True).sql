@@ -10,7 +10,7 @@ WHERE
 	"p"."ParentID" = 2
 
 BeforeExecute
--- Firebird.2.5 Firebird
+-- Firebird.2.5 Firebird (asynchronously)
 DECLARE @id Integer -- Int32
 SET     @id = 2
 

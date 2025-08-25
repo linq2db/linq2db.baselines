@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Oracle.23.Managed Oracle.Managed Oracle12
+-- Oracle.23.Managed Oracle.Managed Oracle12 (asynchronously)
 
 DELETE FROM
 	"LinqDataTypes" c_1
@@ -7,7 +7,7 @@ WHERE
 	c_1.ID > 1000
 
 BeforeExecute
--- Oracle.23.Managed Oracle.Managed Oracle12
+-- Oracle.23.Managed Oracle.Managed Oracle12 (asynchronously)
 
 INSERT INTO "LinqDataTypes"
 (
@@ -28,7 +28,7 @@ FROM
 	) t2
 
 BeforeExecute
--- Oracle.23.Managed Oracle.Managed Oracle12
+-- Oracle.23.Managed Oracle.Managed Oracle12 (asynchronously)
 
 DELETE FROM
 	"LinqDataTypes" c_1

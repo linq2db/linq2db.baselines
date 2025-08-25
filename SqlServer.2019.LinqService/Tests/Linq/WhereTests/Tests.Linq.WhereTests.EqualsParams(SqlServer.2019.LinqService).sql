@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2019
+-- SqlServer.2019 (asynchronously)
 DECLARE @id Int -- Int32
 SET     @id = 1
 DECLARE @name NVarChar(4000) -- String

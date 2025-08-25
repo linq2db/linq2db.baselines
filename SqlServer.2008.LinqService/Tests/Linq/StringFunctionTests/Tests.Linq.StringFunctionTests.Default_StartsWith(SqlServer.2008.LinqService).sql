@@ -1,12 +1,12 @@
 ﻿BeforeExecute
--- SqlServer.2008
+-- SqlServer.2008 (asynchronously)
 
 DELETE [t1]
 FROM
 	[CollatedTable] [t1]
 
 BeforeExecute
--- SqlServer.2008
+-- SqlServer.2008 (asynchronously)
 DECLARE @Id Int -- Int32
 SET     @Id = 1
 DECLARE @CaseSensitive NVarChar(4000) -- String
@@ -28,7 +28,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2008
+-- SqlServer.2008 (asynchronously)
 
 SELECT
 	COUNT(*)
@@ -38,7 +38,7 @@ WHERE
 	[r].[CaseSensitive] LIKE N'TestSt%' ESCAPE N'~'
 
 BeforeExecute
--- SqlServer.2008
+-- SqlServer.2008 (asynchronously)
 
 SELECT
 	COUNT(*)
@@ -48,7 +48,7 @@ WHERE
 	[r].[CaseInsensitive] LIKE N'TestSt%' ESCAPE N'~'
 
 BeforeExecute
--- SqlServer.2008
+-- SqlServer.2008 (asynchronously)
 
 SELECT
 	COUNT(*)
@@ -58,7 +58,7 @@ WHERE
 	[r].[CaseSensitive] LIKE N'testst%' ESCAPE N'~'
 
 BeforeExecute
--- SqlServer.2008
+-- SqlServer.2008 (asynchronously)
 
 SELECT
 	COUNT(*)

@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+-- SapHana.Odbc SapHanaOdbc (asynchronously)
 
 SELECT
 	RTRIM(Replace(CAST("p"."MoneyValue" AS NVarChar(31)), ',', '.'), '0.')

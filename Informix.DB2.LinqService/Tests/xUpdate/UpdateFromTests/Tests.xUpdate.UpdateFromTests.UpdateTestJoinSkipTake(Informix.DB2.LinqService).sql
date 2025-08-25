@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Informix.DB2 Informix
+-- Informix.DB2 Informix (asynchronously)
 DECLARE @int1 Integer(4) -- Int32
 SET     @int1 = 11
 DECLARE @skip Integer(4) -- Int32
@@ -94,7 +94,7 @@ WHERE
 	)
 
 BeforeExecute
--- Informix.DB2 Informix
+-- Informix.DB2 Informix (asynchronously)
 
 SELECT
 	v.id,

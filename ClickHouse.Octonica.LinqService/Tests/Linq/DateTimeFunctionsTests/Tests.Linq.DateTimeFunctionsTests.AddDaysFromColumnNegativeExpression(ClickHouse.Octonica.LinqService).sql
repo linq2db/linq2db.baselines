@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- ClickHouse.Octonica ClickHouse
+-- ClickHouse.Octonica ClickHouse (asynchronously)
 
 INSERT INTO LinqDataTypes
 (
@@ -25,7 +25,7 @@ VALUES
 )
 
 BeforeExecute
--- ClickHouse.Octonica ClickHouse
+-- ClickHouse.Octonica ClickHouse (asynchronously)
 
 SELECT
 	COUNT(*)
@@ -35,7 +35,7 @@ WHERE
 	t.ID = 5000 AND addDays(t.DateTimeValue, t.SmallIntValue) < makeDateTime(2018, 1, 2, 0, 0, 0)
 
 BeforeExecute
--- ClickHouse.Octonica ClickHouse
+-- ClickHouse.Octonica ClickHouse (asynchronously)
 
 ALTER TABLE
 	LinqDataTypes

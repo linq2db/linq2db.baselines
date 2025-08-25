@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- PostgreSQL.15 PostgreSQL
+-- PostgreSQL.15 PostgreSQL (asynchronously)
 DECLARE @Gender Text(1) -- String
 SET     @Gender = 'M'
 DECLARE @FirstName Text(1) -- String
@@ -27,7 +27,7 @@ RETURNING
 	"PersonID"
 
 BeforeExecute
--- PostgreSQL.15 PostgreSQL
+-- PostgreSQL.15 PostgreSQL (asynchronously)
 DECLARE @Gender Text(1) -- String
 SET     @Gender = 'M'
 DECLARE @FirstName Text(1) -- String
@@ -55,7 +55,7 @@ RETURNING
 	"PersonID"
 
 BeforeExecute
--- PostgreSQL.15 PostgreSQL
+-- PostgreSQL.15 PostgreSQL (asynchronously)
 DECLARE @id1 Integer -- Int32
 SET     @id1 = 5
 
@@ -72,7 +72,7 @@ WHERE
 LIMIT 1
 
 BeforeExecute
--- PostgreSQL.15 PostgreSQL
+-- PostgreSQL.15 PostgreSQL (asynchronously)
 DECLARE @id2 Integer -- Int32
 SET     @id2 = 6
 

@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- DB2 DB2.LUW DB2LUW
+-- DB2 DB2.LUW DB2LUW (asynchronously)
 
 SELECT
 	CURRENT_TIMESTAMP + "t"."Value" DAY,
@@ -15,7 +15,7 @@ SELECT
 FROM SYSIBM.SYSDUMMY1
 
 BeforeExecute
--- DB2 DB2.LUW DB2LUW
+-- DB2 DB2.LUW DB2LUW (asynchronously)
 
 SELECT
 	"v_1"."Value2"

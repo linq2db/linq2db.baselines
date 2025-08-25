@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- ClickHouse.MySql ClickHouse
+-- ClickHouse.MySql ClickHouse (asynchronously)
 
 SELECT
 	makeDateTime(toYear(t.DateTimeValue), 10, 1, 20, 35, 44)

@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2012.MS SqlServer.2012
+-- SqlServer.2012.MS SqlServer.2012 (asynchronously)
 
 SELECT TOP (1)
 	CAST([x].[Prop_bool] AS NVarChar(1)),
@@ -36,7 +36,7 @@ FROM
 	[ToStringConvertibleTypes] [x]
 
 BeforeExecute
--- SqlServer.2012.MS SqlServer.2012
+-- SqlServer.2012.MS SqlServer.2012 (asynchronously)
 
 SELECT TOP (1)
 	IIF([x].[Prop_bool] = 1, N'1', N'0'),

@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Firebird.2.5 Firebird
+-- Firebird.2.5 Firebird (asynchronously)
 
 DELETE FROM
 	"Parent" "p"
@@ -7,7 +7,7 @@ WHERE
 	"p"."Value1" = 11
 
 BeforeExecute
--- Firebird.2.5 Firebird
+-- Firebird.2.5 Firebird (asynchronously)
 
 INSERT INTO "Parent"
 (
@@ -23,7 +23,7 @@ WHERE
 	"c_1"."ChildID" = 11
 
 BeforeExecute
--- Firebird.2.5 Firebird
+-- Firebird.2.5 Firebird (asynchronously)
 
 SELECT
 	COUNT(*)
@@ -33,7 +33,7 @@ WHERE
 	"p"."Value1" = 11
 
 BeforeExecute
--- Firebird.2.5 Firebird
+-- Firebird.2.5 Firebird (asynchronously)
 
 DELETE FROM
 	"Parent" "p"

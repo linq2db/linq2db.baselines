@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Firebird.3 Firebird3
+-- Firebird.3 Firebird3 (asynchronously)
 DECLARE @Id Integer -- Int32
 SET     @Id = 1
 DECLARE @InitOnlyId Integer -- Int32
@@ -16,7 +16,7 @@ WHERE
 	"e"."Id" = @Id AND "e"."Id" = @InitOnlyId
 
 BeforeExecute
--- Firebird.3 Firebird3
+-- Firebird.3 Firebird3 (asynchronously)
 
 SELECT
 	"t1"."Id",
@@ -27,7 +27,7 @@ FROM
 	"TestConstantsData" "t1"
 
 BeforeExecute
--- Firebird.3 Firebird3
+-- Firebird.3 Firebird3 (asynchronously)
 DECLARE @Id Integer -- Int32
 SET     @Id = 1
 DECLARE @InitOnlyId Integer -- Int32
@@ -44,7 +44,7 @@ WHERE
 	"e"."Id" = @Id AND "e"."Id" = @InitOnlyId
 
 BeforeExecute
--- Firebird.3 Firebird3
+-- Firebird.3 Firebird3 (asynchronously)
 
 SELECT
 	"t1"."Id",

@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- DB2 DB2.LUW DB2LUW
+-- DB2 DB2.LUW DB2LUW (asynchronously)
 DECLARE @s1 VarChar(7) -- String
 SET     @s1 = '0 ' || x'00' || ' '' 0'
 

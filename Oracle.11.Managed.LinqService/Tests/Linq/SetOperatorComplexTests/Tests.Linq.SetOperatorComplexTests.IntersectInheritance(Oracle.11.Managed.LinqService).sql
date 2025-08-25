@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Oracle.11.Managed Oracle11
+-- Oracle.11.Managed Oracle11 (asynchronously)
 
 SELECT
 	a_Book."BookId",
@@ -22,7 +22,7 @@ WHERE
 	a_Book_1."Discriminator" = 'Novel'
 
 BeforeExecute
--- Oracle.11.Managed Oracle11
+-- Oracle.11.Managed Oracle11 (asynchronously)
 
 SELECT
 	m_1."AuthorId",
@@ -37,7 +37,7 @@ FROM
 		LEFT JOIN "Book" a_Book ON d."FkBookId" = a_Book."BookId"
 
 BeforeExecute
--- Oracle.11.Managed Oracle11
+-- Oracle.11.Managed Oracle11 (asynchronously)
 
 SELECT
 	t1."AuthorId",

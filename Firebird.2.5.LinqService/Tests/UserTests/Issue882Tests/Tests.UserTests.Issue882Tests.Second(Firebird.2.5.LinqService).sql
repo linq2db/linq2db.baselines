@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Firebird.2.5 Firebird
+-- Firebird.2.5 Firebird (asynchronously)
 
 SELECT
 	Mod(CAST(Floor(Extract(second from "t"."DateTimeValue")) AS Int), 7)

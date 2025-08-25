@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Sybase.Managed Sybase
+-- Sybase.Managed Sybase (asynchronously)
 DECLARE @Id Integer -- Int32
 SET     @Id = 1
 DECLARE @Name UniVarChar(3) -- String
@@ -25,7 +25,7 @@ VALUES
 )
 
 BeforeExecute
--- Sybase.Managed Sybase
+-- Sybase.Managed Sybase (asynchronously)
 
 SELECT TOP 1
 	[t].[Id],
@@ -38,7 +38,7 @@ WHERE
 	[t].[Id] = 1
 
 BeforeExecute
--- Sybase.Managed Sybase
+-- Sybase.Managed Sybase (asynchronously)
 DECLARE @Name UniVarChar(4) -- String
 SET     @Name = 'Jack'
 DECLARE @Age Integer -- Int32
@@ -58,7 +58,7 @@ WHERE
 	[PR_1598_Update_Enum_Table].[Id] = @Id
 
 BeforeExecute
--- Sybase.Managed Sybase
+-- Sybase.Managed Sybase (asynchronously)
 
 SELECT TOP 1
 	[t].[Id],
@@ -71,7 +71,7 @@ WHERE
 	[t].[Id] = 1
 
 BeforeExecute
--- Sybase.Managed Sybase
+-- Sybase.Managed Sybase (asynchronously)
 DECLARE @Name UniVarChar(8) -- String
 SET     @Name = 'Francine'
 DECLARE @Age Integer -- Int32
@@ -88,7 +88,7 @@ WHERE
 	[PR_1598_Update_Enum_Table].[Id] = @Id
 
 BeforeExecute
--- Sybase.Managed Sybase
+-- Sybase.Managed Sybase (asynchronously)
 
 SELECT TOP 1
 	[t].[Id],

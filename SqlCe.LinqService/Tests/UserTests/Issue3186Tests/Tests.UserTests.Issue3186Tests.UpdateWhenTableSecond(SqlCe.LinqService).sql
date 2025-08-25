@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 DECLARE @is_deleted Bit -- Boolean
 SET     @is_deleted = 1
 
@@ -20,7 +20,7 @@ WHERE
 	)
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 
 SELECT
 	[x].[id],
@@ -32,7 +32,7 @@ WHERE
 	[x].[is_deleted] = 1 AND [x].[service_id] = 'TestProcessService'
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 
 SELECT
 	[x].[id],

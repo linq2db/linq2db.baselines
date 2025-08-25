@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 
 DELETE FROM
 	[LinqDataTypes]
@@ -7,7 +7,7 @@ WHERE
 	[LinqDataTypes].[ID] > 1000
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 DECLARE @arr VarBinary(4) -- Binary
 SET     @arr = 0x01020304
 
@@ -25,7 +25,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 
 SELECT TOP (2)
 	[t].[ID],
@@ -41,7 +41,7 @@ WHERE
 	[t].[ID] = 1001
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 
 DELETE FROM
 	[LinqDataTypes]

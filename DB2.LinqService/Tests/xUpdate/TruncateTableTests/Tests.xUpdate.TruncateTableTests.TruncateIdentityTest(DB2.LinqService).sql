@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- DB2 DB2.LUW DB2LUW
+-- DB2 DB2.LUW DB2LUW (asynchronously)
 
 BEGIN
 	DECLARE CONTINUE HANDLER FOR SQLSTATE '42704' BEGIN END;
@@ -7,7 +7,7 @@ BEGIN
 END
 
 BeforeExecute
--- DB2 DB2.LUW DB2LUW
+-- DB2 DB2.LUW DB2LUW (asynchronously)
 
 CREATE TABLE "TestIdTrun"
 (
@@ -18,7 +18,7 @@ CREATE TABLE "TestIdTrun"
 )
 
 BeforeExecute
--- DB2 DB2.LUW DB2LUW
+-- DB2 DB2.LUW DB2LUW (asynchronously)
 
 INSERT INTO "TestIdTrun"
 (
@@ -30,7 +30,7 @@ VALUES
 )
 
 BeforeExecute
--- DB2 DB2.LUW DB2LUW
+-- DB2 DB2.LUW DB2LUW (asynchronously)
 
 INSERT INTO "TestIdTrun"
 (
@@ -42,7 +42,7 @@ VALUES
 )
 
 BeforeExecute
--- DB2 DB2.LUW DB2LUW
+-- DB2 DB2.LUW DB2LUW (asynchronously)
 
 SELECT
 	"t1".ID,
@@ -54,17 +54,17 @@ ORDER BY
 OFFSET 1 ROWS FETCH NEXT 2 ROWS ONLY 
 
 BeforeExecute
--- DB2 DB2.LUW DB2LUW
+-- DB2 DB2.LUW DB2LUW (asynchronously)
 
 TRUNCATE TABLE "TestIdTrun" IMMEDIATE
 
 BeforeExecute
--- DB2 DB2.LUW DB2LUW
+-- DB2 DB2.LUW DB2LUW (asynchronously)
 
 ALTER TABLE "TestIdTrun" ALTER ID RESTART WITH 1
 
 BeforeExecute
--- DB2 DB2.LUW DB2LUW
+-- DB2 DB2.LUW DB2LUW (asynchronously)
 
 INSERT INTO "TestIdTrun"
 (
@@ -76,7 +76,7 @@ VALUES
 )
 
 BeforeExecute
--- DB2 DB2.LUW DB2LUW
+-- DB2 DB2.LUW DB2LUW (asynchronously)
 
 INSERT INTO "TestIdTrun"
 (
@@ -88,7 +88,7 @@ VALUES
 )
 
 BeforeExecute
--- DB2 DB2.LUW DB2LUW
+-- DB2 DB2.LUW DB2LUW (asynchronously)
 
 SELECT
 	"t1".ID,
@@ -100,7 +100,7 @@ ORDER BY
 OFFSET 1 ROWS FETCH NEXT 2 ROWS ONLY 
 
 BeforeExecute
--- DB2 DB2.LUW DB2LUW
+-- DB2 DB2.LUW DB2LUW (asynchronously)
 
 DROP TABLE "TestIdTrun"
 

@@ -23,7 +23,7 @@ WHERE
 	[s].[Id] = 3
 
 BeforeExecute
--- SqlServer.2005.MS SqlServer.2005
+-- SqlServer.2005.MS SqlServer.2005 (asynchronously)
 DECLARE @param Int -- Int32
 SET     @param = 100
 

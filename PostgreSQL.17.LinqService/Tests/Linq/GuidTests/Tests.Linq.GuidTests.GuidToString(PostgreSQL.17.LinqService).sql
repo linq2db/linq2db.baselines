@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
+-- PostgreSQL.17 PostgreSQL.15 PostgreSQL (asynchronously)
 
 SELECT
 	t."Id"::VarChar(36)
@@ -8,7 +8,7 @@ FROM
 LIMIT 1
 
 BeforeExecute
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
+-- PostgreSQL.17 PostgreSQL.15 PostgreSQL (asynchronously)
 
 SELECT
 	t."Id",
@@ -19,7 +19,7 @@ WHERE
 	t."Id"::VarChar(36) LIKE '%63d-0f%' ESCAPE '~'
 
 BeforeExecute
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
+-- PostgreSQL.17 PostgreSQL.15 PostgreSQL (asynchronously)
 
 SELECT
 	t."Id",
@@ -30,7 +30,7 @@ WHERE
 	t."Id"::VarChar(36) LIKE 'bc7b6%' ESCAPE '~'
 
 BeforeExecute
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
+-- PostgreSQL.17 PostgreSQL.15 PostgreSQL (asynchronously)
 
 SELECT
 	t."Id",
@@ -41,7 +41,7 @@ WHERE
 	t."Id"::VarChar(36) LIKE '%8f4-53%' ESCAPE '~'
 
 BeforeExecute
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
+-- PostgreSQL.17 PostgreSQL.15 PostgreSQL (asynchronously)
 
 SELECT
 	t."Id",

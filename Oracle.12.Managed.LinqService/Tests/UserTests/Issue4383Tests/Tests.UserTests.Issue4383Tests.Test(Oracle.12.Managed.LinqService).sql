@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Oracle.12.Managed Oracle.Managed Oracle12
+-- Oracle.12.Managed Oracle.Managed Oracle12 (asynchronously)
 
 SELECT
 	m_1."Id",
@@ -23,7 +23,7 @@ FROM
 		INNER JOIN CHAINPOINTS d_1 ON m_1."Id" = d_1.CHAIN_ID
 
 BeforeExecute
--- Oracle.12.Managed Oracle.Managed Oracle12
+-- Oracle.12.Managed Oracle.Managed Oracle12 (asynchronously)
 
 SELECT
 	m_1.LINE_ID,
@@ -39,7 +39,7 @@ ORDER BY
 	m_1.LINE_ID
 
 BeforeExecute
--- Oracle.12.Managed Oracle.Managed Oracle12
+-- Oracle.12.Managed Oracle.Managed Oracle12 (asynchronously)
 
 SELECT
 	t1.LINE_ID,

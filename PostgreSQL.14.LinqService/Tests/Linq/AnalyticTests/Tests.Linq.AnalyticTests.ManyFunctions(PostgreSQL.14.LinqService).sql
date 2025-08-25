@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL (asynchronously)
 
 SELECT
 	RANK() OVER(PARTITION BY p."Value1", c_1."ChildID" ORDER BY p."Value1", c_1."ChildID", c_1."ParentID"),

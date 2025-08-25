@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Firebird.2.5 Firebird
+-- Firebird.2.5 Firebird (asynchronously)
 DECLARE @Gender Char(1) -- String
 SET     @Gender = 'M'
 DECLARE @FirstName VarChar(1) -- String
@@ -31,7 +31,7 @@ RETURNING
 	"PersonID"
 
 BeforeExecute
--- Firebird.2.5 Firebird
+-- Firebird.2.5 Firebird (asynchronously)
 DECLARE @Gender Char(1) -- String
 SET     @Gender = 'M'
 DECLARE @FirstName VarChar(1) -- String
@@ -63,7 +63,7 @@ RETURNING
 	"PersonID"
 
 BeforeExecute
--- Firebird.2.5 Firebird
+-- Firebird.2.5 Firebird (asynchronously)
 DECLARE @id1 Integer -- Int32
 SET     @id1 = 6
 
@@ -79,7 +79,7 @@ WHERE
 	"t1"."PersonID" = @id1
 
 BeforeExecute
--- Firebird.2.5 Firebird
+-- Firebird.2.5 Firebird (asynchronously)
 DECLARE @id2 Integer -- Int32
 SET     @id2 = 8
 

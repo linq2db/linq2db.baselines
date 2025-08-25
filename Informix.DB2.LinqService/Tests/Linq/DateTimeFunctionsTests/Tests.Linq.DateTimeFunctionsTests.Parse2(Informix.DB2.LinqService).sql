@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Informix.DB2 Informix
+-- Informix.DB2 Informix (asynchronously)
 
 SELECT
 	To_Date(Year(d.DateTimeValue) || '-02-24 00:00:00', '%Y-%m-%d %H:%M:%S')

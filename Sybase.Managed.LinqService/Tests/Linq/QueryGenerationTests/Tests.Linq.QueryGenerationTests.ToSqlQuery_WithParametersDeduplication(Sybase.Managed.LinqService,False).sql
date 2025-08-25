@@ -15,7 +15,7 @@ WHERE
 	[p].[FirstName] = @firstName OR [p].[LastName] = @firstName
 
 BeforeExecute
--- Sybase.Managed Sybase
+-- Sybase.Managed Sybase (asynchronously)
 DECLARE @firstName UniVarChar(4) -- String
 SET     @firstName = 'John'
 

@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Access.Ace.Odbc AccessODBC
+-- Access.Ace.Odbc AccessODBC (asynchronously)
 
 CREATE TABLE [FluentTemp]
 (
@@ -9,7 +9,7 @@ CREATE TABLE [FluentTemp]
 )
 
 BeforeExecute
--- Access.Ace.Odbc AccessODBC
+-- Access.Ace.Odbc AccessODBC (asynchronously)
 DECLARE @ID Int -- Int32
 SET     @ID = 1
 DECLARE @Name NVarChar(4) -- String
@@ -31,7 +31,7 @@ VALUES
 )
 
 BeforeExecute
--- Access.Ace.Odbc AccessODBC
+-- Access.Ace.Odbc AccessODBC (asynchronously)
 DECLARE @Name NVarChar(7) -- String
 SET     @Name = 'John II'
 DECLARE @LastName NVarChar(4) -- String
@@ -46,7 +46,7 @@ WHERE
 	[t].[ID] = 1
 
 BeforeExecute
--- Access.Ace.Odbc AccessODBC
+-- Access.Ace.Odbc AccessODBC (asynchronously)
 
 DROP TABLE [FluentTemp]
 

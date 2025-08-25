@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- PostgreSQL.18 PostgreSQL
+-- PostgreSQL.18 PostgreSQL (asynchronously)
 DECLARE @value Boolean
 SET     @value = True
 
@@ -11,7 +11,7 @@ WHERE
 	t."Value" = :value
 
 BeforeExecute
--- PostgreSQL.18 PostgreSQL
+-- PostgreSQL.18 PostgreSQL (asynchronously)
 DECLARE @value Boolean
 SET     @value = True
 
@@ -23,7 +23,7 @@ WHERE
 	t."Value" = :value
 
 BeforeExecute
--- PostgreSQL.18 PostgreSQL
+-- PostgreSQL.18 PostgreSQL (asynchronously)
 DECLARE @value Boolean
 SET     @value = True
 
@@ -35,7 +35,7 @@ WHERE
 	t."Value" <> :value OR t."Value" IS NULL
 
 BeforeExecute
--- PostgreSQL.18 PostgreSQL
+-- PostgreSQL.18 PostgreSQL (asynchronously)
 DECLARE @value Boolean
 SET     @value = True
 

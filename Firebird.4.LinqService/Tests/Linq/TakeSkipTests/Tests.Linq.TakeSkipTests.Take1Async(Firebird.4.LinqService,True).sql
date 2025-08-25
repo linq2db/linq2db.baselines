@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Firebird.4 Firebird4
+-- Firebird.4 Firebird4 (asynchronously)
 DECLARE @take Integer -- Int32
 SET     @take = 2
 
@@ -11,7 +11,7 @@ FROM
 FETCH NEXT @take ROWS ONLY
 
 BeforeExecute
--- Firebird.4 Firebird4
+-- Firebird.4 Firebird4 (asynchronously)
 DECLARE @take Integer -- Int32
 SET     @take = 3
 

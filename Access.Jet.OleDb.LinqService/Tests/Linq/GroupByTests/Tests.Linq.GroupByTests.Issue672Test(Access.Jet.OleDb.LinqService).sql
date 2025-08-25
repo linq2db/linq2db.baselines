@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Access.Jet.OleDb AccessOleDb
+-- Access.Jet.OleDb AccessOleDb (asynchronously)
 DECLARE @Name VarWChar(6) -- String
 SET     @Name = 'group1'
 DECLARE @Enabled Boolean
@@ -21,7 +21,7 @@ VALUES
 )
 
 BeforeExecute
--- Access.Jet.OleDb AccessOleDb
+-- Access.Jet.OleDb AccessOleDb (asynchronously)
 DECLARE @Name VarWChar(6) -- String
 SET     @Name = 'group1'
 DECLARE @Enabled Boolean
@@ -43,7 +43,7 @@ VALUES
 )
 
 BeforeExecute
--- Access.Jet.OleDb AccessOleDb
+-- Access.Jet.OleDb AccessOleDb (asynchronously)
 DECLARE @Name VarWChar(6) -- String
 SET     @Name = 'group2'
 DECLARE @Enabled Boolean

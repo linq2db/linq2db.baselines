@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SQLite.MS SQLite
+-- SQLite.MS SQLite (asynchronously)
 DECLARE @value NVarChar(3) -- String
 SET     @value = 'abc'
 
@@ -11,7 +11,7 @@ WHERE
 	[s].[String] IS NOT @value
 
 BeforeExecute
--- SQLite.MS SQLite
+-- SQLite.MS SQLite (asynchronously)
 DECLARE @value NVarChar(3) -- String
 SET     @value = 'abc'
 
@@ -23,7 +23,7 @@ WHERE
 	[s].[NullableString] IS NOT @value
 
 BeforeExecute
--- SQLite.MS SQLite
+-- SQLite.MS SQLite (asynchronously)
 DECLARE @value NVarChar(3) -- String
 SET     @value = 'abc'
 
@@ -35,7 +35,7 @@ WHERE
 	[s].[String] IS @value
 
 BeforeExecute
--- SQLite.MS SQLite
+-- SQLite.MS SQLite (asynchronously)
 DECLARE @value NVarChar(3) -- String
 SET     @value = 'abc'
 

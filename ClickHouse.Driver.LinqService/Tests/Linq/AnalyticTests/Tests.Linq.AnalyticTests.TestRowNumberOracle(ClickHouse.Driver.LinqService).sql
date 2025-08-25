@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- ClickHouse.Driver ClickHouse
+-- ClickHouse.Driver ClickHouse (asynchronously)
 
 SELECT
 	ROW_NUMBER() OVER(PARTITION BY p.Value1, c_1.ChildID ORDER BY p.Value1),

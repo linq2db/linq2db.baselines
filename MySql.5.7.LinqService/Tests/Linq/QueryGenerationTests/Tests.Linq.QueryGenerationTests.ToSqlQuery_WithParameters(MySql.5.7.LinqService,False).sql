@@ -15,7 +15,7 @@ WHERE
 	`p`.`PersonID` = @id
 
 BeforeExecute
--- MySql.5.7 MySql.5.7.MySql.Data MySql57
+-- MySql.5.7 MySql.5.7.MySql.Data MySql57 (asynchronously)
 DECLARE @id Int32
 SET     @id = 1
 

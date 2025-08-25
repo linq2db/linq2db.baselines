@@ -17,7 +17,7 @@ WHERE
 	[p].[FirstName] = @firstName OR [p].[LastName] = @firstName
 
 BeforeExecute
--- Access.Jet.OleDb AccessOleDb
+-- Access.Jet.OleDb AccessOleDb (asynchronously)
 DECLARE @firstName VarWChar(4) -- String
 SET     @firstName = 'John'
 DECLARE @firstName_1 VarWChar(4) -- String

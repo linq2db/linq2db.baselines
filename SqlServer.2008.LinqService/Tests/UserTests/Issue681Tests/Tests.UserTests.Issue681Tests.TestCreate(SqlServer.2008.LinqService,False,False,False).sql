@@ -1,11 +1,11 @@
 ﻿BeforeExecute
--- SqlServer.2008
+-- SqlServer.2008 (asynchronously)
 
 IF (OBJECT_ID(N'[Issue681Table2]', N'U') IS NOT NULL)
 	DROP TABLE [Issue681Table2]
 
 BeforeExecute
--- SqlServer.2008
+-- SqlServer.2008 (asynchronously)
 
 CREATE TABLE [Issue681Table2]
 (
@@ -16,7 +16,7 @@ CREATE TABLE [Issue681Table2]
 )
 
 BeforeExecute
--- SqlServer.2008
+-- SqlServer.2008 (asynchronously)
 
 IF (OBJECT_ID(N'[Issue681Table2]', N'U') IS NOT NULL)
 	DROP TABLE [Issue681Table2]

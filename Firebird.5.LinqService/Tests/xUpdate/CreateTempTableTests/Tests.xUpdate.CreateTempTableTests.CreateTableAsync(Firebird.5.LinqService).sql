@@ -32,7 +32,7 @@ FROM
 	"Parent" "p"
 
 BeforeExecute
--- Firebird.5 Firebird4
+-- Firebird.5 Firebird4 (asynchronously)
 
 SELECT
 	"t".ID

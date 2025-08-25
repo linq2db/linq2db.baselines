@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Firebird.2.5 Firebird
+-- Firebird.2.5 Firebird (asynchronously)
 
 SELECT FIRST 2
 	COUNT("p"."PersonID")
@@ -9,7 +9,7 @@ WHERE
 	"p"."PersonID" IN (1, 2)
 
 BeforeExecute
--- Firebird.2.5 Firebird
+-- Firebird.2.5 Firebird (asynchronously)
 
 SELECT FIRST 2
 	COUNT("p"."PersonID")

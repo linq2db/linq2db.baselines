@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Access.Ace.Odbc AccessODBC
+-- Access.Ace.Odbc AccessODBC (asynchronously)
 
 UPDATE
 	[Issue4963Table] [t1]
@@ -7,7 +7,7 @@ SET
 	[t1].[Field] = [t1].[Field] + -1
 
 BeforeExecute
--- Access.Ace.Odbc AccessODBC
+-- Access.Ace.Odbc AccessODBC (asynchronously)
 
 SELECT TOP 2
 	[t1].[Field]

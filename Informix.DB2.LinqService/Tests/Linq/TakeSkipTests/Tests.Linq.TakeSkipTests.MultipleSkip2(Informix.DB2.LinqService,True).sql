@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Informix.DB2 Informix
+-- Informix.DB2 Informix (asynchronously)
 DECLARE @skip Integer(4) -- Int32
 SET     @skip = 3
 
@@ -11,7 +11,7 @@ ORDER BY
 	t1."Value"
 
 BeforeExecute
--- Informix.DB2 Informix
+-- Informix.DB2 Informix (asynchronously)
 DECLARE @skip Integer(4) -- Int32
 SET     @skip = 4
 

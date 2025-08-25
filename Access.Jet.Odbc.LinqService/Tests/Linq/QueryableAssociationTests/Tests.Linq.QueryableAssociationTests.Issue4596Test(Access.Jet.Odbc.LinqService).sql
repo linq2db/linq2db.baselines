@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Access.Jet.Odbc AccessODBC
+-- Access.Jet.Odbc AccessODBC (asynchronously)
 
 SELECT
 	[m_1].[Id],
@@ -30,7 +30,7 @@ ORDER BY
 	IIF([m_1].[cond_1], [d].[Name3], '')
 
 BeforeExecute
--- Access.Jet.Odbc AccessODBC
+-- Access.Jet.Odbc AccessODBC (asynchronously)
 
 SELECT TOP 1
 	[t1].[Id],

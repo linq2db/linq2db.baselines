@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Oracle.19.Managed Oracle.Managed Oracle12
+-- Oracle.19.Managed Oracle.Managed Oracle12 (asynchronously)
 DECLARE @guid Varchar2(36) -- String
 SET     @guid = 'febe3eca-cb5f-40b2-ad39-2979d312afca'
 

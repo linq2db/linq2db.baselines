@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Firebird.3 Firebird3
+-- Firebird.3 Firebird3 (asynchronously)
 
 SELECT DISTINCT
 	"a_Book"."BookId",
@@ -22,7 +22,7 @@ WHERE
 	)
 
 BeforeExecute
--- Firebird.3 Firebird3
+-- Firebird.3 Firebird3 (asynchronously)
 
 SELECT
 	"m_1"."AuthorId",
@@ -37,7 +37,7 @@ FROM
 		LEFT JOIN "Book" "a_Book" ON "d"."FkBookId" = "a_Book"."BookId"
 
 BeforeExecute
--- Firebird.3 Firebird3
+-- Firebird.3 Firebird3 (asynchronously)
 
 SELECT
 	"t1"."AuthorId",

@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- ClickHouse.MySql ClickHouse
+-- ClickHouse.MySql ClickHouse (asynchronously)
 
 SELECT
 	m_1.ParentID,
@@ -15,7 +15,7 @@ FROM
 		INNER JOIN Child d ON toInt64(m_1.ParentID) = d.ParentID
 
 BeforeExecute
--- ClickHouse.MySql ClickHouse
+-- ClickHouse.MySql ClickHouse (asynchronously)
 
 SELECT
 	p.ParentID

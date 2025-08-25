@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Firebird.2.5 Firebird
+-- Firebird.2.5 Firebird (asynchronously)
 DECLARE @take Integer -- Int32
 SET     @take = 4
 DECLARE @skip Integer -- Int32

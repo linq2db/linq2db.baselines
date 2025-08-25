@@ -13,7 +13,7 @@ WHERE
 	p."MiddleName" IS NOT NULL
 
 BeforeExecute
--- Oracle.19.Managed Oracle.Managed Oracle12
+-- Oracle.19.Managed Oracle.Managed Oracle12 (asynchronously)
 
 SELECT
 	p."FirstName",

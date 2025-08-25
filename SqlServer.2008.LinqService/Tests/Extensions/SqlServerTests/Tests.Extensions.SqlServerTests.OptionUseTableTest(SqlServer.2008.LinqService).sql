@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2008
+-- SqlServer.2008 (asynchronously)
 DECLARE @n Int -- Int32
 SET     @n = 10
 DECLARE @id Int -- Int32

@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SQLite.Classic.MPM SQLite.Classic SQLite
+-- SQLite.Classic.MPM SQLite.Classic SQLite (asynchronously)
 
 SELECT
 	COUNT(*)
@@ -9,7 +9,7 @@ WHERE
 	[r].[Value1] = 1
 
 BeforeExecute
--- SQLite.Classic.MPM SQLite.Classic SQLite
+-- SQLite.Classic.MPM SQLite.Classic SQLite (asynchronously)
 DECLARE @cnt  -- Int32
 SET     @cnt = 18
 
@@ -33,7 +33,7 @@ WHERE
 	[r].[Value4] IS NULL AND [r].[Value5] IS NULL
 
 BeforeExecute
--- SQLite.Classic.MPM SQLite.Classic SQLite
+-- SQLite.Classic.MPM SQLite.Classic SQLite (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -45,7 +45,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- SQLite.Classic.MPM SQLite.Classic SQLite
+-- SQLite.Classic.MPM SQLite.Classic SQLite (asynchronously)
 DECLARE @cnt  -- Int32
 SET     @cnt = 18
 
@@ -69,7 +69,7 @@ WHERE
 	[r].[Value4] IS NULL AND [r].[Value5] IS NULL
 
 BeforeExecute
--- SQLite.Classic.MPM SQLite.Classic SQLite
+-- SQLite.Classic.MPM SQLite.Classic SQLite (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -81,7 +81,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- SQLite.Classic.MPM SQLite.Classic SQLite
+-- SQLite.Classic.MPM SQLite.Classic SQLite (asynchronously)
 DECLARE @cnt  -- Int32
 SET     @cnt = 18
 
@@ -104,7 +104,7 @@ WHERE
 	) = ([r].[Value5] + @cnt))
 
 BeforeExecute
--- SQLite.Classic.MPM SQLite.Classic SQLite
+-- SQLite.Classic.MPM SQLite.Classic SQLite (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -116,7 +116,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- SQLite.Classic.MPM SQLite.Classic SQLite
+-- SQLite.Classic.MPM SQLite.Classic SQLite (asynchronously)
 DECLARE @cnt  -- Int32
 SET     @cnt = 18
 
@@ -139,7 +139,7 @@ WHERE
 	) = ([r].[Value5] + @cnt))
 
 BeforeExecute
--- SQLite.Classic.MPM SQLite.Classic SQLite
+-- SQLite.Classic.MPM SQLite.Classic SQLite (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -151,7 +151,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- SQLite.Classic.MPM SQLite.Classic SQLite
+-- SQLite.Classic.MPM SQLite.Classic SQLite (asynchronously)
 DECLARE @cnt  -- Int32
 SET     @cnt = 18
 
@@ -174,7 +174,7 @@ WHERE
 	) = ([r].[Value5] + @cnt)) OR [r].[Value4] IS NULL AND [r].[Value5] IS NULL) AND NOT ([r].[Value4] IS NULL AND [r].[Value5] IS NOT NULL) AND NOT ([r].[Value4] IS NOT NULL AND [r].[Value5] IS NULL))
 
 BeforeExecute
--- SQLite.Classic.MPM SQLite.Classic SQLite
+-- SQLite.Classic.MPM SQLite.Classic SQLite (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -186,7 +186,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- SQLite.Classic.MPM SQLite.Classic SQLite
+-- SQLite.Classic.MPM SQLite.Classic SQLite (asynchronously)
 DECLARE @cnt  -- Int32
 SET     @cnt = 18
 
@@ -209,7 +209,7 @@ WHERE
 	) = ([r].[Value5] + @cnt)) OR [r].[Value4] IS NULL AND [r].[Value5] IS NULL) AND NOT ([r].[Value4] IS NULL AND [r].[Value5] IS NOT NULL) AND NOT ([r].[Value4] IS NOT NULL AND [r].[Value5] IS NULL))
 
 BeforeExecute
--- SQLite.Classic.MPM SQLite.Classic SQLite
+-- SQLite.Classic.MPM SQLite.Classic SQLite (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -221,7 +221,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- SQLite.Classic.MPM SQLite.Classic SQLite
+-- SQLite.Classic.MPM SQLite.Classic SQLite (asynchronously)
 DECLARE @cnt  -- Int32
 SET     @cnt = 18
 
@@ -248,7 +248,7 @@ WHERE
 	END)
 
 BeforeExecute
--- SQLite.Classic.MPM SQLite.Classic SQLite
+-- SQLite.Classic.MPM SQLite.Classic SQLite (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -260,7 +260,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- SQLite.Classic.MPM SQLite.Classic SQLite
+-- SQLite.Classic.MPM SQLite.Classic SQLite (asynchronously)
 DECLARE @cnt  -- Int32
 SET     @cnt = 18
 
@@ -287,7 +287,7 @@ WHERE
 	END)
 
 BeforeExecute
--- SQLite.Classic.MPM SQLite.Classic SQLite
+-- SQLite.Classic.MPM SQLite.Classic SQLite (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -299,7 +299,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- SQLite.Classic.MPM SQLite.Classic SQLite
+-- SQLite.Classic.MPM SQLite.Classic SQLite (asynchronously)
 DECLARE @cnt  -- Int32
 SET     @cnt = 18
 
@@ -324,7 +324,7 @@ WHERE
 	[r].[Value4] IS NOT NULL AND [r].[Value5] IS NULL
 
 BeforeExecute
--- SQLite.Classic.MPM SQLite.Classic SQLite
+-- SQLite.Classic.MPM SQLite.Classic SQLite (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -336,7 +336,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- SQLite.Classic.MPM SQLite.Classic SQLite
+-- SQLite.Classic.MPM SQLite.Classic SQLite (asynchronously)
 DECLARE @cnt  -- Int32
 SET     @cnt = 18
 
@@ -361,7 +361,7 @@ WHERE
 	[r].[Value4] IS NOT NULL AND [r].[Value5] IS NULL
 
 BeforeExecute
--- SQLite.Classic.MPM SQLite.Classic SQLite
+-- SQLite.Classic.MPM SQLite.Classic SQLite (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -373,7 +373,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- SQLite.Classic.MPM SQLite.Classic SQLite
+-- SQLite.Classic.MPM SQLite.Classic SQLite (asynchronously)
 DECLARE @cnt  -- Int32
 SET     @cnt = 18
 
@@ -400,7 +400,7 @@ WHERE
 	END
 
 BeforeExecute
--- SQLite.Classic.MPM SQLite.Classic SQLite
+-- SQLite.Classic.MPM SQLite.Classic SQLite (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -412,7 +412,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- SQLite.Classic.MPM SQLite.Classic SQLite
+-- SQLite.Classic.MPM SQLite.Classic SQLite (asynchronously)
 DECLARE @cnt  -- Int32
 SET     @cnt = 18
 
@@ -439,7 +439,7 @@ WHERE
 	END
 
 BeforeExecute
--- SQLite.Classic.MPM SQLite.Classic SQLite
+-- SQLite.Classic.MPM SQLite.Classic SQLite (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -451,7 +451,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- SQLite.Classic.MPM SQLite.Classic SQLite
+-- SQLite.Classic.MPM SQLite.Classic SQLite (asynchronously)
 DECLARE @cnt  -- Int32
 SET     @cnt = 18
 
@@ -474,7 +474,7 @@ WHERE
 	) = ([r].[Value5] + @cnt)) OR [r].[Value4] IS NULL AND [r].[Value5] IS NOT NULL OR [r].[Value4] IS NOT NULL AND [r].[Value5] IS NULL) AND NOT ([r].[Value4] IS NULL AND [r].[Value5] IS NULL))
 
 BeforeExecute
--- SQLite.Classic.MPM SQLite.Classic SQLite
+-- SQLite.Classic.MPM SQLite.Classic SQLite (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -486,7 +486,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- SQLite.Classic.MPM SQLite.Classic SQLite
+-- SQLite.Classic.MPM SQLite.Classic SQLite (asynchronously)
 DECLARE @cnt  -- Int32
 SET     @cnt = 18
 
@@ -509,7 +509,7 @@ WHERE
 	) = ([r].[Value5] + @cnt)) OR [r].[Value4] IS NULL AND [r].[Value5] IS NOT NULL OR [r].[Value4] IS NOT NULL AND [r].[Value5] IS NULL) AND NOT ([r].[Value4] IS NULL AND [r].[Value5] IS NULL))
 
 BeforeExecute
--- SQLite.Classic.MPM SQLite.Classic SQLite
+-- SQLite.Classic.MPM SQLite.Classic SQLite (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -521,7 +521,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- SQLite.Classic.MPM SQLite.Classic SQLite
+-- SQLite.Classic.MPM SQLite.Classic SQLite (asynchronously)
 DECLARE @cnt  -- Int32
 SET     @cnt = 18
 
@@ -548,7 +548,7 @@ WHERE
 	END)
 
 BeforeExecute
--- SQLite.Classic.MPM SQLite.Classic SQLite
+-- SQLite.Classic.MPM SQLite.Classic SQLite (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -560,7 +560,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- SQLite.Classic.MPM SQLite.Classic SQLite
+-- SQLite.Classic.MPM SQLite.Classic SQLite (asynchronously)
 DECLARE @cnt  -- Int32
 SET     @cnt = 18
 
@@ -587,7 +587,7 @@ WHERE
 	END)
 
 BeforeExecute
--- SQLite.Classic.MPM SQLite.Classic SQLite
+-- SQLite.Classic.MPM SQLite.Classic SQLite (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -599,7 +599,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- SQLite.Classic.MPM SQLite.Classic SQLite
+-- SQLite.Classic.MPM SQLite.Classic SQLite (asynchronously)
 DECLARE @cnt  -- Int32
 SET     @cnt = 18
 
@@ -622,7 +622,7 @@ WHERE
 	) + [r].[Value5])
 
 BeforeExecute
--- SQLite.Classic.MPM SQLite.Classic SQLite
+-- SQLite.Classic.MPM SQLite.Classic SQLite (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -634,7 +634,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- SQLite.Classic.MPM SQLite.Classic SQLite
+-- SQLite.Classic.MPM SQLite.Classic SQLite (asynchronously)
 DECLARE @cnt  -- Int32
 SET     @cnt = 18
 
@@ -657,7 +657,7 @@ WHERE
 	) + [r].[Value5])
 
 BeforeExecute
--- SQLite.Classic.MPM SQLite.Classic SQLite
+-- SQLite.Classic.MPM SQLite.Classic SQLite (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -669,7 +669,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- SQLite.Classic.MPM SQLite.Classic SQLite
+-- SQLite.Classic.MPM SQLite.Classic SQLite (asynchronously)
 DECLARE @cnt  -- Int32
 SET     @cnt = 18
 
@@ -692,7 +692,7 @@ WHERE
 	) + [r].[Value5])
 
 BeforeExecute
--- SQLite.Classic.MPM SQLite.Classic SQLite
+-- SQLite.Classic.MPM SQLite.Classic SQLite (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -704,7 +704,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- SQLite.Classic.MPM SQLite.Classic SQLite
+-- SQLite.Classic.MPM SQLite.Classic SQLite (asynchronously)
 DECLARE @cnt  -- Int32
 SET     @cnt = 18
 
@@ -727,7 +727,7 @@ WHERE
 	) + [r].[Value5])
 
 BeforeExecute
--- SQLite.Classic.MPM SQLite.Classic SQLite
+-- SQLite.Classic.MPM SQLite.Classic SQLite (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -739,7 +739,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- SQLite.Classic.MPM SQLite.Classic SQLite
+-- SQLite.Classic.MPM SQLite.Classic SQLite (asynchronously)
 DECLARE @cnt  -- Int32
 SET     @cnt = 18
 
@@ -762,7 +762,7 @@ WHERE
 	) + [r].[Value5])
 
 BeforeExecute
--- SQLite.Classic.MPM SQLite.Classic SQLite
+-- SQLite.Classic.MPM SQLite.Classic SQLite (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -774,7 +774,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- SQLite.Classic.MPM SQLite.Classic SQLite
+-- SQLite.Classic.MPM SQLite.Classic SQLite (asynchronously)
 DECLARE @cnt  -- Int32
 SET     @cnt = 18
 
@@ -797,7 +797,7 @@ WHERE
 	) + [r].[Value5])
 
 BeforeExecute
--- SQLite.Classic.MPM SQLite.Classic SQLite
+-- SQLite.Classic.MPM SQLite.Classic SQLite (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -809,7 +809,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- SQLite.Classic.MPM SQLite.Classic SQLite
+-- SQLite.Classic.MPM SQLite.Classic SQLite (asynchronously)
 DECLARE @cnt  -- Int32
 SET     @cnt = 18
 
@@ -832,7 +832,7 @@ WHERE
 	) + [r].[Value5])
 
 BeforeExecute
--- SQLite.Classic.MPM SQLite.Classic SQLite
+-- SQLite.Classic.MPM SQLite.Classic SQLite (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -844,7 +844,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- SQLite.Classic.MPM SQLite.Classic SQLite
+-- SQLite.Classic.MPM SQLite.Classic SQLite (asynchronously)
 DECLARE @cnt  -- Int32
 SET     @cnt = 18
 
@@ -867,7 +867,7 @@ WHERE
 	) + [r].[Value5])
 
 BeforeExecute
--- SQLite.Classic.MPM SQLite.Classic SQLite
+-- SQLite.Classic.MPM SQLite.Classic SQLite (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -879,7 +879,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- SQLite.Classic.MPM SQLite.Classic SQLite
+-- SQLite.Classic.MPM SQLite.Classic SQLite (asynchronously)
 DECLARE @cnt  -- Int32
 SET     @cnt = 18
 
@@ -906,7 +906,7 @@ WHERE
 	END)
 
 BeforeExecute
--- SQLite.Classic.MPM SQLite.Classic SQLite
+-- SQLite.Classic.MPM SQLite.Classic SQLite (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -918,7 +918,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- SQLite.Classic.MPM SQLite.Classic SQLite
+-- SQLite.Classic.MPM SQLite.Classic SQLite (asynchronously)
 DECLARE @cnt  -- Int32
 SET     @cnt = 18
 
@@ -945,7 +945,7 @@ WHERE
 	END)
 
 BeforeExecute
--- SQLite.Classic.MPM SQLite.Classic SQLite
+-- SQLite.Classic.MPM SQLite.Classic SQLite (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -957,7 +957,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- SQLite.Classic.MPM SQLite.Classic SQLite
+-- SQLite.Classic.MPM SQLite.Classic SQLite (asynchronously)
 DECLARE @cnt  -- Int32
 SET     @cnt = 18
 
@@ -984,7 +984,7 @@ WHERE
 	END)
 
 BeforeExecute
--- SQLite.Classic.MPM SQLite.Classic SQLite
+-- SQLite.Classic.MPM SQLite.Classic SQLite (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -996,7 +996,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- SQLite.Classic.MPM SQLite.Classic SQLite
+-- SQLite.Classic.MPM SQLite.Classic SQLite (asynchronously)
 DECLARE @cnt  -- Int32
 SET     @cnt = 18
 
@@ -1023,7 +1023,7 @@ WHERE
 	END)
 
 BeforeExecute
--- SQLite.Classic.MPM SQLite.Classic SQLite
+-- SQLite.Classic.MPM SQLite.Classic SQLite (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -1035,7 +1035,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- SQLite.Classic.MPM SQLite.Classic SQLite
+-- SQLite.Classic.MPM SQLite.Classic SQLite (asynchronously)
 DECLARE @cnt  -- Int32
 SET     @cnt = 18
 
@@ -1062,7 +1062,7 @@ WHERE
 	END)
 
 BeforeExecute
--- SQLite.Classic.MPM SQLite.Classic SQLite
+-- SQLite.Classic.MPM SQLite.Classic SQLite (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -1074,7 +1074,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- SQLite.Classic.MPM SQLite.Classic SQLite
+-- SQLite.Classic.MPM SQLite.Classic SQLite (asynchronously)
 DECLARE @cnt  -- Int32
 SET     @cnt = 18
 
@@ -1101,7 +1101,7 @@ WHERE
 	END)
 
 BeforeExecute
--- SQLite.Classic.MPM SQLite.Classic SQLite
+-- SQLite.Classic.MPM SQLite.Classic SQLite (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -1113,7 +1113,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- SQLite.Classic.MPM SQLite.Classic SQLite
+-- SQLite.Classic.MPM SQLite.Classic SQLite (asynchronously)
 DECLARE @cnt  -- Int32
 SET     @cnt = 18
 
@@ -1140,7 +1140,7 @@ WHERE
 	END)
 
 BeforeExecute
--- SQLite.Classic.MPM SQLite.Classic SQLite
+-- SQLite.Classic.MPM SQLite.Classic SQLite (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -1152,7 +1152,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- SQLite.Classic.MPM SQLite.Classic SQLite
+-- SQLite.Classic.MPM SQLite.Classic SQLite (asynchronously)
 DECLARE @cnt  -- Int32
 SET     @cnt = 18
 
@@ -1179,7 +1179,7 @@ WHERE
 	END)
 
 BeforeExecute
--- SQLite.Classic.MPM SQLite.Classic SQLite
+-- SQLite.Classic.MPM SQLite.Classic SQLite (asynchronously)
 
 SELECT
 	[t1].[Id],

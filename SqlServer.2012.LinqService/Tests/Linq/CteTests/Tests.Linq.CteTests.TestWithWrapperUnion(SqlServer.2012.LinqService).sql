@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2012
+-- SqlServer.2012 (asynchronously)
 
 WITH [CTE_1]
 (
@@ -39,7 +39,7 @@ FROM
 	[CTE_1] [t1]
 
 BeforeExecute
--- SqlServer.2012
+-- SqlServer.2012 (asynchronously)
 
 WITH [CTE_1]
 (

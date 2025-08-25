@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Oracle.18.Managed Oracle.Managed Oracle12
+-- Oracle.18.Managed Oracle.Managed Oracle12 (asynchronously)
 
 SELECT
 	STDDEV(c_1."ChildID"),
@@ -13,7 +13,7 @@ GROUP BY
 	g_1."ParentID"
 
 BeforeExecute
--- Oracle.18.Managed Oracle.Managed Oracle12
+-- Oracle.18.Managed Oracle.Managed Oracle12 (asynchronously)
 
 SELECT
 	STDDEV(t1."ParentID")
@@ -21,7 +21,7 @@ FROM
 	"Child" t1
 
 BeforeExecute
--- Oracle.18.Managed Oracle.Managed Oracle12
+-- Oracle.18.Managed Oracle.Managed Oracle12 (asynchronously)
 
 SELECT
 	STDDEV(ALL t1."ParentID")
@@ -29,7 +29,7 @@ FROM
 	"Child" t1
 
 BeforeExecute
--- Oracle.18.Managed Oracle.Managed Oracle12
+-- Oracle.18.Managed Oracle.Managed Oracle12 (asynchronously)
 
 SELECT
 	STDDEV(DISTINCT t1."ParentID")

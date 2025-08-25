@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 
 SELECT
 	[pmp].[ParentID] as [Key_1]
@@ -9,7 +9,7 @@ GROUP BY
 	[pmp].[ParentID]
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 
 SELECT
 	[t1].[ParentID],

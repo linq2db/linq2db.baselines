@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Oracle.11.Managed Oracle11
+-- Oracle.11.Managed Oracle11 (asynchronously)
 
 SELECT /*+ FULL(p_2.c_1) PARALLEL(p_2.c_1 DEFAULT) DYNAMIC_SAMPLING(p@Parent 1) INDEX(p@Parent parent_ix) NO_UNNEST(@Parent) */
 	p_2."ParentID",

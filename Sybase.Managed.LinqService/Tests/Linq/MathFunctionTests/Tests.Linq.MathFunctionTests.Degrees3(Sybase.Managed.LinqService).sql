@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Sybase.Managed Sybase
+-- Sybase.Managed Sybase (asynchronously)
 
 SELECT
 	CAST(CAST([t].[MoneyValue] AS Int) AS Float) * 57.295779513082323

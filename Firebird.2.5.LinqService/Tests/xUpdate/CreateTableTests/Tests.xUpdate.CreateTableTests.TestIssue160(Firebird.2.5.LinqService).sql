@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Firebird.2.5 Firebird
+-- Firebird.2.5 Firebird (asynchronously)
 
 CREATE TABLE "aa"
 (
@@ -10,7 +10,7 @@ CREATE TABLE "aa"
 )
 
 BeforeExecute
--- Firebird.2.5 Firebird
+-- Firebird.2.5 Firebird (asynchronously)
 DECLARE @bb Integer -- Int32
 SET     @bb = 99
 DECLARE @cc VarChar(5) -- String
@@ -28,7 +28,7 @@ VALUES
 )
 
 BeforeExecute
--- Firebird.2.5 Firebird
+-- Firebird.2.5 Firebird (asynchronously)
 
 SELECT
 	"t1"."bb",
@@ -37,7 +37,7 @@ FROM
 	"aa" "t1"
 
 BeforeExecute
--- Firebird.2.5 Firebird
+-- Firebird.2.5 Firebird (asynchronously)
 
 DROP TABLE "aa"
 

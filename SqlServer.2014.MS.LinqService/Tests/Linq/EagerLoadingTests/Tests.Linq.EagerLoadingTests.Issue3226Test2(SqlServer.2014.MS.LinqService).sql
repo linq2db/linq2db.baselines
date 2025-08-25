@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2014.MS SqlServer.2014
+-- SqlServer.2014.MS SqlServer.2014 (asynchronously)
 
 SELECT
 	[m_1].[Id],
@@ -9,7 +9,7 @@ FROM
 		INNER JOIN [ItemValue] [d] ON [m_1].[Id] = [d].[ItemId]
 
 BeforeExecute
--- SqlServer.2014.MS SqlServer.2014
+-- SqlServer.2014.MS SqlServer.2014 (asynchronously)
 
 SELECT
 	[x].[Id],

@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 
 CREATE TABLE [TableWithPrimaryKey]
 (
@@ -9,7 +9,7 @@ CREATE TABLE [TableWithPrimaryKey]
 )
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 
 DROP TABLE [TableWithPrimaryKey]
 

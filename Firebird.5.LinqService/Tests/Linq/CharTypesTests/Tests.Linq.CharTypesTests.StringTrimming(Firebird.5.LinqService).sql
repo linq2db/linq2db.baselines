@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Firebird.5 Firebird4
+-- Firebird.5 Firebird4 (asynchronously)
 
 SELECT
 	MAX("t1".ID)
@@ -7,7 +7,7 @@ FROM
 	"AllTypes" "t1"
 
 BeforeExecute
--- Firebird.5 Firebird4
+-- Firebird.5 Firebird4 (asynchronously)
 DECLARE @String VarChar(6) -- String
 SET     @String = 'test01'
 
@@ -21,7 +21,7 @@ VALUES
 )
 
 BeforeExecute
--- Firebird.5 Firebird4
+-- Firebird.5 Firebird4 (asynchronously)
 DECLARE @String VarChar(8) -- String
 SET     @String = 'test02  '
 
@@ -35,7 +35,7 @@ VALUES
 )
 
 BeforeExecute
--- Firebird.5 Firebird4
+-- Firebird.5 Firebird4 (asynchronously)
 DECLARE @String VarChar(8) -- String
 SET     @String = 'test03	 '
 
@@ -49,7 +49,7 @@ VALUES
 )
 
 BeforeExecute
--- Firebird.5 Firebird4
+-- Firebird.5 Firebird4 (asynchronously)
 DECLARE @String VarChar(8) -- String
 SET     @String = 'test04
  '
@@ -64,7 +64,7 @@ VALUES
 )
 
 BeforeExecute
--- Firebird.5 Firebird4
+-- Firebird.5 Firebird4 (asynchronously)
 DECLARE @String VarChar(8) -- String
 SET     @String = 'test05 '
 
@@ -78,7 +78,7 @@ VALUES
 )
 
 BeforeExecute
--- Firebird.5 Firebird4
+-- Firebird.5 Firebird4 (asynchronously)
 DECLARE @String VarChar(8) -- String
 SET     @String = 'test06 '
 
@@ -92,7 +92,7 @@ VALUES
 )
 
 BeforeExecute
--- Firebird.5 Firebird4
+-- Firebird.5 Firebird4 (asynchronously)
 DECLARE @String VarChar(8) -- String
 SET     @String = 'test07 '
 
@@ -106,7 +106,7 @@ VALUES
 )
 
 BeforeExecute
--- Firebird.5 Firebird4
+-- Firebird.5 Firebird4 (asynchronously)
 DECLARE @String VarChar(11) -- String
 SET     @String = 'test09     '
 
@@ -120,7 +120,7 @@ VALUES
 )
 
 BeforeExecute
--- Firebird.5 Firebird4
+-- Firebird.5 Firebird4 (asynchronously)
 DECLARE @String VarChar(11) -- String
 SET     @String = 'test10     '
 
@@ -134,7 +134,7 @@ VALUES
 )
 
 BeforeExecute
--- Firebird.5 Firebird4
+-- Firebird.5 Firebird4 (asynchronously)
 DECLARE @String VarChar(11) -- String
 SET     @String = 'test11     '
 
@@ -148,7 +148,7 @@ VALUES
 )
 
 BeforeExecute
--- Firebird.5 Firebird4
+-- Firebird.5 Firebird4 (asynchronously)
 DECLARE @String VarChar(11) -- String
 SET     @String = 'test12     '
 
@@ -162,7 +162,7 @@ VALUES
 )
 
 BeforeExecute
--- Firebird.5 Firebird4
+-- Firebird.5 Firebird4 (asynchronously)
 DECLARE @String VarChar(11) -- String
 SET     @String = 'test13     '
 
@@ -176,7 +176,7 @@ VALUES
 )
 
 BeforeExecute
--- Firebird.5 Firebird4
+-- Firebird.5 Firebird4 (asynchronously)
 DECLARE @String VarChar(11) -- String
 SET     @String = 'test14     '
 
@@ -190,7 +190,7 @@ VALUES
 )
 
 BeforeExecute
--- Firebird.5 Firebird4
+-- Firebird.5 Firebird4 (asynchronously)
 DECLARE @String VarChar(11) -- String
 SET     @String = 'test15     '
 
@@ -204,7 +204,7 @@ VALUES
 )
 
 BeforeExecute
--- Firebird.5 Firebird4
+-- Firebird.5 Firebird4 (asynchronously)
 DECLARE @String VarChar(11) -- String
 SET     @String = 'test16     '
 
@@ -218,7 +218,7 @@ VALUES
 )
 
 BeforeExecute
--- Firebird.5 Firebird4
+-- Firebird.5 Firebird4 (asynchronously)
 DECLARE @String VarChar(11) -- String
 SET     @String = 'test17     '
 
@@ -232,7 +232,7 @@ VALUES
 )
 
 BeforeExecute
--- Firebird.5 Firebird4
+-- Firebird.5 Firebird4 (asynchronously)
 DECLARE @String VarChar(11) -- String
 SET     @String = 'test18     '
 
@@ -246,7 +246,7 @@ VALUES
 )
 
 BeforeExecute
--- Firebird.5 Firebird4
+-- Firebird.5 Firebird4 (asynchronously)
 DECLARE @String VarChar(11) -- String
 SET     @String = 'test19     '
 
@@ -260,7 +260,7 @@ VALUES
 )
 
 BeforeExecute
--- Firebird.5 Firebird4
+-- Firebird.5 Firebird4 (asynchronously)
 DECLARE @String VarChar(11) -- String
 SET     @String = 'test20     '
 
@@ -274,7 +274,7 @@ VALUES
 )
 
 BeforeExecute
--- Firebird.5 Firebird4
+-- Firebird.5 Firebird4 (asynchronously)
 DECLARE @String VarChar(10) -- String
 SET     @String = _utf8 x'74657374323100202020'
 
@@ -288,7 +288,7 @@ VALUES
 )
 
 BeforeExecute
--- Firebird.5 Firebird4
+-- Firebird.5 Firebird4 (asynchronously)
 DECLARE @String VarChar -- String
 SET     @String = NULL
 
@@ -302,7 +302,7 @@ VALUES
 )
 
 BeforeExecute
--- Firebird.5 Firebird4
+-- Firebird.5 Firebird4 (asynchronously)
 DECLARE @lastId Integer -- Int32
 SET     @lastId = 2
 
@@ -317,7 +317,7 @@ ORDER BY
 	"t1".ID
 
 BeforeExecute
--- Firebird.5 Firebird4
+-- Firebird.5 Firebird4 (asynchronously)
 DECLARE @lastId Integer -- Int32
 SET     @lastId = 2
 

@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
+-- PostgreSQL.17 PostgreSQL.15 PostgreSQL (asynchronously)
 
 SELECT
 	CURRENT_TIMESTAMP + t."Value" * Interval '1 Day',
@@ -14,7 +14,7 @@ SELECT
 	CURRENT_TIMESTAMP + 4 * Interval '1 Day'
 
 BeforeExecute
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
+-- PostgreSQL.17 PostgreSQL.15 PostgreSQL (asynchronously)
 
 SELECT
 	v_1."Value2"

@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+-- SapHana.Odbc SapHanaOdbc (asynchronously)
 DECLARE @value Decimal
 SET     @value = NULL
 
@@ -16,7 +16,7 @@ FROM
 	) "t1"
 
 BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+-- SapHana.Odbc SapHanaOdbc (asynchronously)
 DECLARE @value Decimal(13, 3)
 SET     @value = 2147483648.123
 

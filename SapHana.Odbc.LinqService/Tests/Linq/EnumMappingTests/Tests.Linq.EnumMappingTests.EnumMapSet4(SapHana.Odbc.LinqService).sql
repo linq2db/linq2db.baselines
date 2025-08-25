@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+-- SapHana.Odbc SapHanaOdbc (asynchronously)
 DECLARE @p Int -- Int32
 SET     @p = 102
 
@@ -9,7 +9,7 @@ WHERE
 	"r"."ID" >= 101 AND "r"."ID" < ?
 
 BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+-- SapHana.Odbc SapHanaOdbc (asynchronously)
 
 INSERT INTO "LinqDataTypes"
 (
@@ -23,7 +23,7 @@ VALUES
 )
 
 BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+-- SapHana.Odbc SapHanaOdbc (asynchronously)
 DECLARE @TestField BigInt -- Int64
 SET     @TestField = 12
 
@@ -35,7 +35,7 @@ WHERE
 	"r"."ID" = 101 AND "r"."BigIntValue" = 11
 
 BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+-- SapHana.Odbc SapHanaOdbc (asynchronously)
 
 SELECT
 	"r"."BigIntValue"
@@ -46,7 +46,7 @@ WHERE
 LIMIT 1
 
 BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+-- SapHana.Odbc SapHanaOdbc (asynchronously)
 DECLARE @p Int -- Int32
 SET     @p = 102
 

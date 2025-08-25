@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Oracle.18.Managed Oracle.Managed Oracle12
+-- Oracle.18.Managed Oracle.Managed Oracle12 (asynchronously)
 DECLARE @FirstName Varchar2(4) -- String
 SET     @FirstName = 'John'
 DECLARE @LastName Varchar2(7) -- String
@@ -29,7 +29,7 @@ RETURNING
 	"PersonID" INTO :IDENTITY_PARAMETER
 
 BeforeExecute
--- Oracle.18.Managed Oracle.Managed Oracle12
+-- Oracle.18.Managed Oracle.Managed Oracle12 (asynchronously)
 DECLARE @PersonID Int32
 SET     @PersonID = 5
 DECLARE @Diagnosis Varchar2(4) -- String
@@ -57,7 +57,7 @@ WHEN NOT MATCHED THEN
 	)
 
 BeforeExecute
--- Oracle.18.Managed Oracle.Managed Oracle12
+-- Oracle.18.Managed Oracle.Managed Oracle12 (asynchronously)
 DECLARE @PersonID Int32
 SET     @PersonID = 5
 DECLARE @Diagnosis Varchar2(4) -- String
@@ -85,7 +85,7 @@ WHEN NOT MATCHED THEN
 	)
 
 BeforeExecute
--- Oracle.18.Managed Oracle.Managed Oracle12
+-- Oracle.18.Managed Oracle.Managed Oracle12 (asynchronously)
 DECLARE @PersonID Int32
 SET     @PersonID = 5
 DECLARE @Diagnosis Varchar2(4) -- String
@@ -113,7 +113,7 @@ WHEN NOT MATCHED THEN
 	)
 
 BeforeExecute
--- Oracle.18.Managed Oracle.Managed Oracle12
+-- Oracle.18.Managed Oracle.Managed Oracle12 (asynchronously)
 DECLARE @id Int32
 SET     @id = 5
 

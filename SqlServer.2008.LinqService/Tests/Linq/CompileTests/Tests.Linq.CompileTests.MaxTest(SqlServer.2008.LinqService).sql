@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2008
+-- SqlServer.2008 (asynchronously)
 DECLARE @p Int -- Int32
 SET     @p = 1
 
@@ -11,7 +11,7 @@ WHERE
 	[c_1].[ParentID] = @p
 
 BeforeExecute
--- SqlServer.2008
+-- SqlServer.2008 (asynchronously)
 DECLARE @p Int -- Int32
 SET     @p = -1
 

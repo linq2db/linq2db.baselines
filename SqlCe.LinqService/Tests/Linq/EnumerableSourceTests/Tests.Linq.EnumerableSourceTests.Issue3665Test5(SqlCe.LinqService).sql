@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 
 SELECT
 	[y].[item] as [item_1]
@@ -15,7 +15,7 @@ FROM
 			SELECT 'O' AS [item]) [y]
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 
 SELECT
 	[t1].[FirstName],

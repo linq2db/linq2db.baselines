@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2005.MS SqlServer.2005
+-- SqlServer.2005.MS SqlServer.2005 (asynchronously)
 
 SELECT TOP (2)
 	[t1].[Id]
@@ -9,7 +9,7 @@ WHERE
 	[t1].[Id] = 2
 
 BeforeExecute
--- SqlServer.2005.MS SqlServer.2005
+-- SqlServer.2005.MS SqlServer.2005 (asynchronously)
 
 SELECT TOP (2)
 	[t1].[Id]
@@ -19,7 +19,7 @@ WHERE
 	[t1].[Id] = 2
 
 BeforeExecute
--- SqlServer.2005.MS SqlServer.2005
+-- SqlServer.2005.MS SqlServer.2005 (asynchronously)
 DECLARE @UserId Int -- Int32
 SET     @UserId = 2
 
@@ -31,7 +31,7 @@ WHERE
 	[x].[Id] = @UserId
 
 BeforeExecute
--- SqlServer.2005.MS SqlServer.2005
+-- SqlServer.2005.MS SqlServer.2005 (asynchronously)
 DECLARE @UserId Int -- Int32
 SET     @UserId = 2
 

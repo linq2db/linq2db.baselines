@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- PostgreSQL.15 PostgreSQL
+-- PostgreSQL.15 PostgreSQL (asynchronously)
 
 SELECT
 	Floor(Extract(minute From (t."TransactionDate" + 5 * Interval '1 Minute')))::Int

@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 
 SELECT
 	MAX([t1].[PersonID]) as [MAX_1]
@@ -7,7 +7,7 @@ FROM
 	[Person] [t1]
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 DECLARE @Gender NVarChar(1) -- String
 SET     @Gender = 'M'
 DECLARE @Name_FirstName NVarChar(2) -- String
@@ -33,7 +33,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 
 SELECT TOP (2)
 	[p].[PersonID] as [ID],
@@ -47,7 +47,7 @@ WHERE
 	[p].[PersonID] > 4
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 
 DELETE FROM
 	[Person]

@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Access.Ace.Odbc AccessODBC
+-- Access.Ace.Odbc AccessODBC (asynchronously)
 
 SELECT
 	[x].[Id],
@@ -8,7 +8,7 @@ FROM
 	[Car] [x]
 
 BeforeExecute
--- Access.Ace.Odbc AccessODBC
+-- Access.Ace.Odbc AccessODBC (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -17,7 +17,7 @@ FROM
 	[Car] [t1]
 
 BeforeExecute
--- Access.Ace.Odbc AccessODBC
+-- Access.Ace.Odbc AccessODBC (asynchronously)
 
 SELECT
 	[x].[Id],
@@ -28,7 +28,7 @@ WHERE
 	[x].[Name] <> 'Special' OR [x].[Name] IS NULL
 
 BeforeExecute
--- Access.Ace.Odbc AccessODBC
+-- Access.Ace.Odbc AccessODBC (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -37,7 +37,7 @@ FROM
 	[Car] [t1]
 
 BeforeExecute
--- Access.Ace.Odbc AccessODBC
+-- Access.Ace.Odbc AccessODBC (asynchronously)
 
 SELECT
 	[x].[Id],
@@ -48,7 +48,7 @@ WHERE
 	[x].[Name] = 'Special'
 
 BeforeExecute
--- Access.Ace.Odbc AccessODBC
+-- Access.Ace.Odbc AccessODBC (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -57,7 +57,7 @@ FROM
 	[Car] [t1]
 
 BeforeExecute
--- Access.Ace.Odbc AccessODBC
+-- Access.Ace.Odbc AccessODBC (asynchronously)
 
 SELECT
 	[x].[Id],
@@ -66,7 +66,7 @@ FROM
 	[Car] [x]
 
 BeforeExecute
--- Access.Ace.Odbc AccessODBC
+-- Access.Ace.Odbc AccessODBC (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -75,7 +75,7 @@ FROM
 	[Car] [t1]
 
 BeforeExecute
--- Access.Ace.Odbc AccessODBC
+-- Access.Ace.Odbc AccessODBC (asynchronously)
 
 SELECT
 	[x].[Id],
@@ -86,7 +86,7 @@ WHERE
 	[x].[Name] <> 'Special' OR [x].[Name] IS NULL
 
 BeforeExecute
--- Access.Ace.Odbc AccessODBC
+-- Access.Ace.Odbc AccessODBC (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -95,7 +95,7 @@ FROM
 	[Car] [t1]
 
 BeforeExecute
--- Access.Ace.Odbc AccessODBC
+-- Access.Ace.Odbc AccessODBC (asynchronously)
 
 SELECT
 	[x].[Id],
@@ -106,7 +106,7 @@ WHERE
 	[x].[Name] = 'Special'
 
 BeforeExecute
--- Access.Ace.Odbc AccessODBC
+-- Access.Ace.Odbc AccessODBC (asynchronously)
 
 SELECT
 	[t1].[Id],

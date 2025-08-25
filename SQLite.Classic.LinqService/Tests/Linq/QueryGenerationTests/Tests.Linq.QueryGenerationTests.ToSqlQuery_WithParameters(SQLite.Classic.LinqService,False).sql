@@ -15,7 +15,7 @@ WHERE
 	[p].[PersonID] = @id
 
 BeforeExecute
--- SQLite.Classic SQLite
+-- SQLite.Classic SQLite (asynchronously)
 DECLARE @id  -- Int32
 SET     @id = 1
 

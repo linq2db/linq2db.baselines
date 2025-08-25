@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2012
+-- SqlServer.2012 (asynchronously)
 
 SELECT
 	[s].[Id],
@@ -11,7 +11,7 @@ WHERE
 	[s].[Id] = 3
 
 BeforeExecute
--- SqlServer.2012
+-- SqlServer.2012 (asynchronously)
 
 DELETE [s]
 OUTPUT

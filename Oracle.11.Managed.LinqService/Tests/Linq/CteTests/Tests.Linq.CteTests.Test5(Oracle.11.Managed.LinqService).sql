@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Oracle.11.Managed Oracle11
+-- Oracle.11.Managed Oracle11 (asynchronously)
 
 WITH CTE_1 ("ParentID")
 AS
@@ -25,7 +25,7 @@ FROM
 		INNER JOIN CTE_1 c2 ON p."ParentID" = c2."ParentID"
 
 BeforeExecute
--- Oracle.11.Managed Oracle11
+-- Oracle.11.Managed Oracle11 (asynchronously)
 
 SELECT
 	COUNT(*)

@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 
 SELECT
 	[t1].[TypeDiscriminator],
@@ -9,7 +9,7 @@ FROM
 	[InheritanceParent] [t1]
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 
 SELECT
 	[t1].[TypeDiscriminator],

@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- ClickHouse.Octonica ClickHouse
+-- ClickHouse.Octonica ClickHouse (asynchronously)
 
 /* x => x.IntVlaue == 1 ? 3 : 4 == 3 */
 SELECT
@@ -16,7 +16,7 @@ WHERE
 	x.IntVlaue = 1
 
 BeforeExecute
--- ClickHouse.Octonica ClickHouse
+-- ClickHouse.Octonica ClickHouse (asynchronously)
 
 SELECT
 	t1.Id,
@@ -30,7 +30,7 @@ FROM
 	OptimizationData t1
 
 BeforeExecute
--- ClickHouse.Octonica ClickHouse
+-- ClickHouse.Octonica ClickHouse (asynchronously)
 
 /* x_with_not => !(x_with_not.IntVlaue == 1 ? 3 : 4 == 3) */
 SELECT
@@ -47,7 +47,7 @@ WHERE
 	x_with_not.IntVlaue <> 1
 
 BeforeExecute
--- ClickHouse.Octonica ClickHouse
+-- ClickHouse.Octonica ClickHouse (asynchronously)
 
 SELECT
 	t1.Id,
@@ -61,7 +61,7 @@ FROM
 	OptimizationData t1
 
 BeforeExecute
--- ClickHouse.Octonica ClickHouse
+-- ClickHouse.Octonica ClickHouse (asynchronously)
 
 /* swap => 3 == swap.IntVlaue == 1 ? 3 : 4 */
 SELECT
@@ -78,7 +78,7 @@ WHERE
 	swap.IntVlaue = 1
 
 BeforeExecute
--- ClickHouse.Octonica ClickHouse
+-- ClickHouse.Octonica ClickHouse (asynchronously)
 
 SELECT
 	t1.Id,
@@ -92,7 +92,7 @@ FROM
 	OptimizationData t1
 
 BeforeExecute
--- ClickHouse.Octonica ClickHouse
+-- ClickHouse.Octonica ClickHouse (asynchronously)
 
 /* swap_with_not => !(3 == swap_with_not.IntVlaue == 1 ? 3 : 4) */
 SELECT
@@ -109,7 +109,7 @@ WHERE
 	swap_with_not.IntVlaue <> 1
 
 BeforeExecute
--- ClickHouse.Octonica ClickHouse
+-- ClickHouse.Octonica ClickHouse (asynchronously)
 
 SELECT
 	t1.Id,
@@ -123,7 +123,7 @@ FROM
 	OptimizationData t1
 
 BeforeExecute
--- ClickHouse.Octonica ClickHouse
+-- ClickHouse.Octonica ClickHouse (asynchronously)
 
 /* x => x.IntVlaue == 1 ? null : (bool?)False == (bool?)True */
 SELECT
@@ -140,7 +140,7 @@ WHERE
 	1 = 0
 
 BeforeExecute
--- ClickHouse.Octonica ClickHouse
+-- ClickHouse.Octonica ClickHouse (asynchronously)
 
 SELECT
 	t1.Id,
@@ -154,7 +154,7 @@ FROM
 	OptimizationData t1
 
 BeforeExecute
--- ClickHouse.Octonica ClickHouse
+-- ClickHouse.Octonica ClickHouse (asynchronously)
 
 /* x_with_not => !(x_with_not.IntVlaue == 1 ? null : (bool?)False == (bool?)True) */
 SELECT
@@ -169,7 +169,7 @@ FROM
 	OptimizationData x_with_not
 
 BeforeExecute
--- ClickHouse.Octonica ClickHouse
+-- ClickHouse.Octonica ClickHouse (asynchronously)
 
 SELECT
 	t1.Id,
@@ -183,7 +183,7 @@ FROM
 	OptimizationData t1
 
 BeforeExecute
--- ClickHouse.Octonica ClickHouse
+-- ClickHouse.Octonica ClickHouse (asynchronously)
 
 /* swap => (bool?)True == swap.IntVlaue == 1 ? null : (bool?)False */
 SELECT
@@ -200,7 +200,7 @@ WHERE
 	1 = 0
 
 BeforeExecute
--- ClickHouse.Octonica ClickHouse
+-- ClickHouse.Octonica ClickHouse (asynchronously)
 
 SELECT
 	t1.Id,
@@ -214,7 +214,7 @@ FROM
 	OptimizationData t1
 
 BeforeExecute
--- ClickHouse.Octonica ClickHouse
+-- ClickHouse.Octonica ClickHouse (asynchronously)
 
 /* swap_with_not => !((bool?)True == swap_with_not.IntVlaue == 1 ? null : (bool?)False) */
 SELECT
@@ -229,7 +229,7 @@ FROM
 	OptimizationData swap_with_not
 
 BeforeExecute
--- ClickHouse.Octonica ClickHouse
+-- ClickHouse.Octonica ClickHouse (asynchronously)
 
 SELECT
 	t1.Id,
@@ -243,7 +243,7 @@ FROM
 	OptimizationData t1
 
 BeforeExecute
--- ClickHouse.Octonica ClickHouse
+-- ClickHouse.Octonica ClickHouse (asynchronously)
 
 /* x => x.IntVlaue == 1 ? null : (bool?)True == (bool?)True */
 SELECT
@@ -260,7 +260,7 @@ WHERE
 	x.IntVlaue <> 1
 
 BeforeExecute
--- ClickHouse.Octonica ClickHouse
+-- ClickHouse.Octonica ClickHouse (asynchronously)
 
 SELECT
 	t1.Id,
@@ -274,7 +274,7 @@ FROM
 	OptimizationData t1
 
 BeforeExecute
--- ClickHouse.Octonica ClickHouse
+-- ClickHouse.Octonica ClickHouse (asynchronously)
 
 /* x_with_not => !(x_with_not.IntVlaue == 1 ? null : (bool?)True == (bool?)True) */
 SELECT
@@ -291,7 +291,7 @@ WHERE
 	x_with_not.IntVlaue = 1
 
 BeforeExecute
--- ClickHouse.Octonica ClickHouse
+-- ClickHouse.Octonica ClickHouse (asynchronously)
 
 SELECT
 	t1.Id,
@@ -305,7 +305,7 @@ FROM
 	OptimizationData t1
 
 BeforeExecute
--- ClickHouse.Octonica ClickHouse
+-- ClickHouse.Octonica ClickHouse (asynchronously)
 
 /* swap => (bool?)True == swap.IntVlaue == 1 ? null : (bool?)True */
 SELECT
@@ -322,7 +322,7 @@ WHERE
 	swap.IntVlaue <> 1
 
 BeforeExecute
--- ClickHouse.Octonica ClickHouse
+-- ClickHouse.Octonica ClickHouse (asynchronously)
 
 SELECT
 	t1.Id,
@@ -336,7 +336,7 @@ FROM
 	OptimizationData t1
 
 BeforeExecute
--- ClickHouse.Octonica ClickHouse
+-- ClickHouse.Octonica ClickHouse (asynchronously)
 
 /* swap_with_not => !((bool?)True == swap_with_not.IntVlaue == 1 ? null : (bool?)True) */
 SELECT
@@ -353,7 +353,7 @@ WHERE
 	swap_with_not.IntVlaue = 1
 
 BeforeExecute
--- ClickHouse.Octonica ClickHouse
+-- ClickHouse.Octonica ClickHouse (asynchronously)
 
 SELECT
 	t1.Id,
@@ -367,7 +367,7 @@ FROM
 	OptimizationData t1
 
 BeforeExecute
--- ClickHouse.Octonica ClickHouse
+-- ClickHouse.Octonica ClickHouse (asynchronously)
 
 /* x => x.BoolValue ? True : False == True */
 SELECT
@@ -384,7 +384,7 @@ WHERE
 	x.BoolValue = true
 
 BeforeExecute
--- ClickHouse.Octonica ClickHouse
+-- ClickHouse.Octonica ClickHouse (asynchronously)
 
 SELECT
 	t1.Id,
@@ -398,7 +398,7 @@ FROM
 	OptimizationData t1
 
 BeforeExecute
--- ClickHouse.Octonica ClickHouse
+-- ClickHouse.Octonica ClickHouse (asynchronously)
 
 /* x_with_not => !(x_with_not.BoolValue ? True : False == True) */
 SELECT
@@ -415,7 +415,7 @@ WHERE
 	x_with_not.BoolValue = false
 
 BeforeExecute
--- ClickHouse.Octonica ClickHouse
+-- ClickHouse.Octonica ClickHouse (asynchronously)
 
 SELECT
 	t1.Id,
@@ -429,7 +429,7 @@ FROM
 	OptimizationData t1
 
 BeforeExecute
--- ClickHouse.Octonica ClickHouse
+-- ClickHouse.Octonica ClickHouse (asynchronously)
 
 /* swap => True == swap.BoolValue ? True : False */
 SELECT
@@ -446,7 +446,7 @@ WHERE
 	swap.BoolValue = true
 
 BeforeExecute
--- ClickHouse.Octonica ClickHouse
+-- ClickHouse.Octonica ClickHouse (asynchronously)
 
 SELECT
 	t1.Id,
@@ -460,7 +460,7 @@ FROM
 	OptimizationData t1
 
 BeforeExecute
--- ClickHouse.Octonica ClickHouse
+-- ClickHouse.Octonica ClickHouse (asynchronously)
 
 /* swap_with_not => !(True == swap_with_not.BoolValue ? True : False) */
 SELECT
@@ -477,7 +477,7 @@ WHERE
 	swap_with_not.BoolValue = false
 
 BeforeExecute
--- ClickHouse.Octonica ClickHouse
+-- ClickHouse.Octonica ClickHouse (asynchronously)
 
 SELECT
 	t1.Id,
@@ -491,7 +491,7 @@ FROM
 	OptimizationData t1
 
 BeforeExecute
--- ClickHouse.Octonica ClickHouse
+-- ClickHouse.Octonica ClickHouse (asynchronously)
 
 /* x => x.BoolValue == True ? null : (bool?)True == (bool?)True */
 SELECT
@@ -508,7 +508,7 @@ WHERE
 	NOT x.BoolValue
 
 BeforeExecute
--- ClickHouse.Octonica ClickHouse
+-- ClickHouse.Octonica ClickHouse (asynchronously)
 
 SELECT
 	t1.Id,
@@ -522,7 +522,7 @@ FROM
 	OptimizationData t1
 
 BeforeExecute
--- ClickHouse.Octonica ClickHouse
+-- ClickHouse.Octonica ClickHouse (asynchronously)
 
 /* x_with_not => !(x_with_not.BoolValue == True ? null : (bool?)True == (bool?)True) */
 SELECT
@@ -539,7 +539,7 @@ WHERE
 	x_with_not.BoolValue
 
 BeforeExecute
--- ClickHouse.Octonica ClickHouse
+-- ClickHouse.Octonica ClickHouse (asynchronously)
 
 SELECT
 	t1.Id,
@@ -553,7 +553,7 @@ FROM
 	OptimizationData t1
 
 BeforeExecute
--- ClickHouse.Octonica ClickHouse
+-- ClickHouse.Octonica ClickHouse (asynchronously)
 
 /* swap => (bool?)True == swap.BoolValue == True ? null : (bool?)True */
 SELECT
@@ -570,7 +570,7 @@ WHERE
 	NOT swap.BoolValue
 
 BeforeExecute
--- ClickHouse.Octonica ClickHouse
+-- ClickHouse.Octonica ClickHouse (asynchronously)
 
 SELECT
 	t1.Id,
@@ -584,7 +584,7 @@ FROM
 	OptimizationData t1
 
 BeforeExecute
--- ClickHouse.Octonica ClickHouse
+-- ClickHouse.Octonica ClickHouse (asynchronously)
 
 /* swap_with_not => !((bool?)True == swap_with_not.BoolValue == True ? null : (bool?)True) */
 SELECT
@@ -601,7 +601,7 @@ WHERE
 	swap_with_not.BoolValue
 
 BeforeExecute
--- ClickHouse.Octonica ClickHouse
+-- ClickHouse.Octonica ClickHouse (asynchronously)
 
 SELECT
 	t1.Id,
@@ -615,7 +615,7 @@ FROM
 	OptimizationData t1
 
 BeforeExecute
--- ClickHouse.Octonica ClickHouse
+-- ClickHouse.Octonica ClickHouse (asynchronously)
 
 /* x => x.BoolValue == True ? True : False == True */
 SELECT
@@ -632,7 +632,7 @@ WHERE
 	x.BoolValue = true
 
 BeforeExecute
--- ClickHouse.Octonica ClickHouse
+-- ClickHouse.Octonica ClickHouse (asynchronously)
 
 SELECT
 	t1.Id,
@@ -646,7 +646,7 @@ FROM
 	OptimizationData t1
 
 BeforeExecute
--- ClickHouse.Octonica ClickHouse
+-- ClickHouse.Octonica ClickHouse (asynchronously)
 
 /* x_with_not => !(x_with_not.BoolValue == True ? True : False == True) */
 SELECT
@@ -663,7 +663,7 @@ WHERE
 	x_with_not.BoolValue = false
 
 BeforeExecute
--- ClickHouse.Octonica ClickHouse
+-- ClickHouse.Octonica ClickHouse (asynchronously)
 
 SELECT
 	t1.Id,
@@ -677,7 +677,7 @@ FROM
 	OptimizationData t1
 
 BeforeExecute
--- ClickHouse.Octonica ClickHouse
+-- ClickHouse.Octonica ClickHouse (asynchronously)
 
 /* swap => True == swap.BoolValue == True ? True : False */
 SELECT
@@ -694,7 +694,7 @@ WHERE
 	swap.BoolValue = true
 
 BeforeExecute
--- ClickHouse.Octonica ClickHouse
+-- ClickHouse.Octonica ClickHouse (asynchronously)
 
 SELECT
 	t1.Id,
@@ -708,7 +708,7 @@ FROM
 	OptimizationData t1
 
 BeforeExecute
--- ClickHouse.Octonica ClickHouse
+-- ClickHouse.Octonica ClickHouse (asynchronously)
 
 /* swap_with_not => !(True == swap_with_not.BoolValue == True ? True : False) */
 SELECT
@@ -725,7 +725,7 @@ WHERE
 	swap_with_not.BoolValue = false
 
 BeforeExecute
--- ClickHouse.Octonica ClickHouse
+-- ClickHouse.Octonica ClickHouse (asynchronously)
 
 SELECT
 	t1.Id,
@@ -739,7 +739,7 @@ FROM
 	OptimizationData t1
 
 BeforeExecute
--- ClickHouse.Octonica ClickHouse
+-- ClickHouse.Octonica ClickHouse (asynchronously)
 
 /* x => x.StringValueNullable == null ? 1 : x.StringValueNullable != null ? 2 : 3 == 2 */
 SELECT
@@ -756,7 +756,7 @@ WHERE
 	x.StringValueNullable IS NOT NULL
 
 BeforeExecute
--- ClickHouse.Octonica ClickHouse
+-- ClickHouse.Octonica ClickHouse (asynchronously)
 
 SELECT
 	t1.Id,
@@ -770,7 +770,7 @@ FROM
 	OptimizationData t1
 
 BeforeExecute
--- ClickHouse.Octonica ClickHouse
+-- ClickHouse.Octonica ClickHouse (asynchronously)
 
 /* x_with_not => !(x_with_not.StringValueNullable == null ? 1 : x_with_not.StringValueNullable != null ? 2 : 3 == 2) */
 SELECT
@@ -787,7 +787,7 @@ WHERE
 	x_with_not.StringValueNullable IS NULL
 
 BeforeExecute
--- ClickHouse.Octonica ClickHouse
+-- ClickHouse.Octonica ClickHouse (asynchronously)
 
 SELECT
 	t1.Id,
@@ -801,7 +801,7 @@ FROM
 	OptimizationData t1
 
 BeforeExecute
--- ClickHouse.Octonica ClickHouse
+-- ClickHouse.Octonica ClickHouse (asynchronously)
 
 /* swap => 2 == swap.StringValueNullable == null ? 1 : swap.StringValueNullable != null ? 2 : 3 */
 SELECT
@@ -818,7 +818,7 @@ WHERE
 	swap.StringValueNullable IS NOT NULL
 
 BeforeExecute
--- ClickHouse.Octonica ClickHouse
+-- ClickHouse.Octonica ClickHouse (asynchronously)
 
 SELECT
 	t1.Id,
@@ -832,7 +832,7 @@ FROM
 	OptimizationData t1
 
 BeforeExecute
--- ClickHouse.Octonica ClickHouse
+-- ClickHouse.Octonica ClickHouse (asynchronously)
 
 /* swap_with_not => !(2 == swap_with_not.StringValueNullable == null ? 1 : swap_with_not.StringValueNullable != null ? 2 : 3) */
 SELECT
@@ -849,7 +849,7 @@ WHERE
 	swap_with_not.StringValueNullable IS NULL
 
 BeforeExecute
--- ClickHouse.Octonica ClickHouse
+-- ClickHouse.Octonica ClickHouse (asynchronously)
 
 SELECT
 	t1.Id,
@@ -863,7 +863,7 @@ FROM
 	OptimizationData t1
 
 BeforeExecute
--- ClickHouse.Octonica ClickHouse
+-- ClickHouse.Octonica ClickHouse (asynchronously)
 
 /* x => x.StringValueNullable == null ? 2 : x.StringValueNullable != null ? 1 : 3 == 2 */
 SELECT
@@ -880,7 +880,7 @@ WHERE
 	x.StringValueNullable IS NULL
 
 BeforeExecute
--- ClickHouse.Octonica ClickHouse
+-- ClickHouse.Octonica ClickHouse (asynchronously)
 
 SELECT
 	t1.Id,
@@ -894,7 +894,7 @@ FROM
 	OptimizationData t1
 
 BeforeExecute
--- ClickHouse.Octonica ClickHouse
+-- ClickHouse.Octonica ClickHouse (asynchronously)
 
 /* x_with_not => !(x_with_not.StringValueNullable == null ? 2 : x_with_not.StringValueNullable != null ? 1 : 3 == 2) */
 SELECT
@@ -911,7 +911,7 @@ WHERE
 	x_with_not.StringValueNullable IS NOT NULL
 
 BeforeExecute
--- ClickHouse.Octonica ClickHouse
+-- ClickHouse.Octonica ClickHouse (asynchronously)
 
 SELECT
 	t1.Id,
@@ -925,7 +925,7 @@ FROM
 	OptimizationData t1
 
 BeforeExecute
--- ClickHouse.Octonica ClickHouse
+-- ClickHouse.Octonica ClickHouse (asynchronously)
 
 /* swap => 2 == swap.StringValueNullable == null ? 2 : swap.StringValueNullable != null ? 1 : 3 */
 SELECT
@@ -942,7 +942,7 @@ WHERE
 	swap.StringValueNullable IS NULL
 
 BeforeExecute
--- ClickHouse.Octonica ClickHouse
+-- ClickHouse.Octonica ClickHouse (asynchronously)
 
 SELECT
 	t1.Id,
@@ -956,7 +956,7 @@ FROM
 	OptimizationData t1
 
 BeforeExecute
--- ClickHouse.Octonica ClickHouse
+-- ClickHouse.Octonica ClickHouse (asynchronously)
 
 /* swap_with_not => !(2 == swap_with_not.StringValueNullable == null ? 2 : swap_with_not.StringValueNullable != null ? 1 : 3) */
 SELECT
@@ -973,7 +973,7 @@ WHERE
 	swap_with_not.StringValueNullable IS NOT NULL
 
 BeforeExecute
--- ClickHouse.Octonica ClickHouse
+-- ClickHouse.Octonica ClickHouse (asynchronously)
 
 SELECT
 	t1.Id,
@@ -987,7 +987,7 @@ FROM
 	OptimizationData t1
 
 BeforeExecute
--- ClickHouse.Octonica ClickHouse
+-- ClickHouse.Octonica ClickHouse (asynchronously)
 
 /* x => x.StringValueNullable == null ? 2 : x.StringValueNullable != null ? 1 : 3 > 3 */
 SELECT
@@ -1004,7 +1004,7 @@ WHERE
 	1 = 0
 
 BeforeExecute
--- ClickHouse.Octonica ClickHouse
+-- ClickHouse.Octonica ClickHouse (asynchronously)
 
 SELECT
 	t1.Id,
@@ -1018,7 +1018,7 @@ FROM
 	OptimizationData t1
 
 BeforeExecute
--- ClickHouse.Octonica ClickHouse
+-- ClickHouse.Octonica ClickHouse (asynchronously)
 
 /* x_with_not => !(x_with_not.StringValueNullable == null ? 2 : x_with_not.StringValueNullable != null ? 1 : 3 > 3) */
 SELECT
@@ -1033,7 +1033,7 @@ FROM
 	OptimizationData x_with_not
 
 BeforeExecute
--- ClickHouse.Octonica ClickHouse
+-- ClickHouse.Octonica ClickHouse (asynchronously)
 
 SELECT
 	t1.Id,
@@ -1047,7 +1047,7 @@ FROM
 	OptimizationData t1
 
 BeforeExecute
--- ClickHouse.Octonica ClickHouse
+-- ClickHouse.Octonica ClickHouse (asynchronously)
 
 /* x => x.StringValueNullable == null ? 2 : x.StringValueNullable != null ? 1 : 3 >= 1 */
 SELECT
@@ -1062,7 +1062,7 @@ FROM
 	OptimizationData x
 
 BeforeExecute
--- ClickHouse.Octonica ClickHouse
+-- ClickHouse.Octonica ClickHouse (asynchronously)
 
 SELECT
 	t1.Id,
@@ -1076,7 +1076,7 @@ FROM
 	OptimizationData t1
 
 BeforeExecute
--- ClickHouse.Octonica ClickHouse
+-- ClickHouse.Octonica ClickHouse (asynchronously)
 
 /* x_with_not => !(x_with_not.StringValueNullable == null ? 2 : x_with_not.StringValueNullable != null ? 1 : 3 >= 1) */
 SELECT
@@ -1093,7 +1093,7 @@ WHERE
 	1 = 0
 
 BeforeExecute
--- ClickHouse.Octonica ClickHouse
+-- ClickHouse.Octonica ClickHouse (asynchronously)
 
 SELECT
 	t1.Id,
@@ -1107,7 +1107,7 @@ FROM
 	OptimizationData t1
 
 BeforeExecute
--- ClickHouse.Octonica ClickHouse
+-- ClickHouse.Octonica ClickHouse (asynchronously)
 
 /* x => x.StringValueNullable == null ? 2 : x.StringValueNullable != null ? 1 : 3 > 1 */
 SELECT
@@ -1124,7 +1124,7 @@ WHERE
 	x.StringValueNullable IS NULL
 
 BeforeExecute
--- ClickHouse.Octonica ClickHouse
+-- ClickHouse.Octonica ClickHouse (asynchronously)
 
 SELECT
 	t1.Id,
@@ -1138,7 +1138,7 @@ FROM
 	OptimizationData t1
 
 BeforeExecute
--- ClickHouse.Octonica ClickHouse
+-- ClickHouse.Octonica ClickHouse (asynchronously)
 
 /* x_with_not => !(x_with_not.StringValueNullable == null ? 2 : x_with_not.StringValueNullable != null ? 1 : 3 > 1) */
 SELECT
@@ -1155,7 +1155,7 @@ WHERE
 	x_with_not.StringValueNullable IS NOT NULL
 
 BeforeExecute
--- ClickHouse.Octonica ClickHouse
+-- ClickHouse.Octonica ClickHouse (asynchronously)
 
 SELECT
 	t1.Id,
@@ -1169,7 +1169,7 @@ FROM
 	OptimizationData t1
 
 BeforeExecute
--- ClickHouse.Octonica ClickHouse
+-- ClickHouse.Octonica ClickHouse (asynchronously)
 
 /* x => x.StringValueNullable == null ? 1 : x.StringValueNullable != null ? 2 : 3 != 2 */
 SELECT
@@ -1186,7 +1186,7 @@ WHERE
 	x.StringValueNullable IS NULL
 
 BeforeExecute
--- ClickHouse.Octonica ClickHouse
+-- ClickHouse.Octonica ClickHouse (asynchronously)
 
 SELECT
 	t1.Id,
@@ -1200,7 +1200,7 @@ FROM
 	OptimizationData t1
 
 BeforeExecute
--- ClickHouse.Octonica ClickHouse
+-- ClickHouse.Octonica ClickHouse (asynchronously)
 
 /* x_with_not => !(x_with_not.StringValueNullable == null ? 1 : x_with_not.StringValueNullable != null ? 2 : 3 != 2) */
 SELECT
@@ -1217,7 +1217,7 @@ WHERE
 	x_with_not.StringValueNullable IS NOT NULL
 
 BeforeExecute
--- ClickHouse.Octonica ClickHouse
+-- ClickHouse.Octonica ClickHouse (asynchronously)
 
 SELECT
 	t1.Id,
@@ -1231,7 +1231,7 @@ FROM
 	OptimizationData t1
 
 BeforeExecute
--- ClickHouse.Octonica ClickHouse
+-- ClickHouse.Octonica ClickHouse (asynchronously)
 
 /* swap => 2 != swap.StringValueNullable == null ? 1 : swap.StringValueNullable != null ? 2 : 3 */
 SELECT
@@ -1248,7 +1248,7 @@ WHERE
 	swap.StringValueNullable IS NULL
 
 BeforeExecute
--- ClickHouse.Octonica ClickHouse
+-- ClickHouse.Octonica ClickHouse (asynchronously)
 
 SELECT
 	t1.Id,
@@ -1262,7 +1262,7 @@ FROM
 	OptimizationData t1
 
 BeforeExecute
--- ClickHouse.Octonica ClickHouse
+-- ClickHouse.Octonica ClickHouse (asynchronously)
 
 /* swap_with_not => !(2 != swap_with_not.StringValueNullable == null ? 1 : swap_with_not.StringValueNullable != null ? 2 : 3) */
 SELECT
@@ -1279,7 +1279,7 @@ WHERE
 	swap_with_not.StringValueNullable IS NOT NULL
 
 BeforeExecute
--- ClickHouse.Octonica ClickHouse
+-- ClickHouse.Octonica ClickHouse (asynchronously)
 
 SELECT
 	t1.Id,
@@ -1293,7 +1293,7 @@ FROM
 	OptimizationData t1
 
 BeforeExecute
--- ClickHouse.Octonica ClickHouse
+-- ClickHouse.Octonica ClickHouse (asynchronously)
 
 /* x => x.StringValueNullable != null ? x.StringValueNullable == "2" ? 2 : 10 : x.StringValueNullable == null ? 3 : 1 == 2 */
 SELECT
@@ -1317,7 +1317,7 @@ WHERE
 	END = 2
 
 BeforeExecute
--- ClickHouse.Octonica ClickHouse
+-- ClickHouse.Octonica ClickHouse (asynchronously)
 
 SELECT
 	t1.Id,
@@ -1331,7 +1331,7 @@ FROM
 	OptimizationData t1
 
 BeforeExecute
--- ClickHouse.Octonica ClickHouse
+-- ClickHouse.Octonica ClickHouse (asynchronously)
 
 /* x_with_not => !(x_with_not.StringValueNullable != null ? x_with_not.StringValueNullable == "2" ? 2 : 10 : x_with_not.StringValueNullable == null ? 3 : 1 == 2) */
 SELECT
@@ -1355,7 +1355,7 @@ WHERE
 	END <> 2
 
 BeforeExecute
--- ClickHouse.Octonica ClickHouse
+-- ClickHouse.Octonica ClickHouse (asynchronously)
 
 SELECT
 	t1.Id,
@@ -1369,7 +1369,7 @@ FROM
 	OptimizationData t1
 
 BeforeExecute
--- ClickHouse.Octonica ClickHouse
+-- ClickHouse.Octonica ClickHouse (asynchronously)
 
 /* swap => 2 == swap.StringValueNullable != null ? swap.StringValueNullable == "2" ? 2 : 10 : swap.StringValueNullable == null ? 3 : 1 */
 SELECT
@@ -1393,7 +1393,7 @@ WHERE
 	END
 
 BeforeExecute
--- ClickHouse.Octonica ClickHouse
+-- ClickHouse.Octonica ClickHouse (asynchronously)
 
 SELECT
 	t1.Id,
@@ -1407,7 +1407,7 @@ FROM
 	OptimizationData t1
 
 BeforeExecute
--- ClickHouse.Octonica ClickHouse
+-- ClickHouse.Octonica ClickHouse (asynchronously)
 
 /* swap_with_not => !(2 == swap_with_not.StringValueNullable != null ? swap_with_not.StringValueNullable == "2" ? 2 : 10 : swap_with_not.StringValueNullable == null ? 3 : 1) */
 SELECT
@@ -1431,7 +1431,7 @@ WHERE
 	END
 
 BeforeExecute
--- ClickHouse.Octonica ClickHouse
+-- ClickHouse.Octonica ClickHouse (asynchronously)
 
 SELECT
 	t1.Id,
@@ -1445,7 +1445,7 @@ FROM
 	OptimizationData t1
 
 BeforeExecute
--- ClickHouse.Octonica ClickHouse
+-- ClickHouse.Octonica ClickHouse (asynchronously)
 
 /* x => x.IntVlaue < 4 ? 4 : x.IntVlaue == 0 */
 SELECT
@@ -1462,7 +1462,7 @@ WHERE
 	x.IntVlaue = 0 AND x.IntVlaue >= 4
 
 BeforeExecute
--- ClickHouse.Octonica ClickHouse
+-- ClickHouse.Octonica ClickHouse (asynchronously)
 
 SELECT
 	t1.Id,
@@ -1476,7 +1476,7 @@ FROM
 	OptimizationData t1
 
 BeforeExecute
--- ClickHouse.Octonica ClickHouse
+-- ClickHouse.Octonica ClickHouse (asynchronously)
 
 /* x => x.IntVlaue < 4 ? 4 : x.IntVlaue != 0 */
 SELECT
@@ -1493,7 +1493,7 @@ WHERE
 	x.IntVlaue < 4 OR x.IntVlaue <> 0 AND x.IntVlaue >= 4
 
 BeforeExecute
--- ClickHouse.Octonica ClickHouse
+-- ClickHouse.Octonica ClickHouse (asynchronously)
 
 SELECT
 	t1.Id,
@@ -1507,7 +1507,7 @@ FROM
 	OptimizationData t1
 
 BeforeExecute
--- ClickHouse.Octonica ClickHouse
+-- ClickHouse.Octonica ClickHouse (asynchronously)
 
 /* x_with_not => !(x_with_not.IntVlaue < 4 ? 4 : x_with_not.IntVlaue != 0) */
 SELECT
@@ -1524,7 +1524,7 @@ WHERE
 	NOT (x_with_not.IntVlaue < 4 OR x_with_not.IntVlaue <> 0 AND x_with_not.IntVlaue >= 4)
 
 BeforeExecute
--- ClickHouse.Octonica ClickHouse
+-- ClickHouse.Octonica ClickHouse (asynchronously)
 
 SELECT
 	t1.Id,
@@ -1538,7 +1538,7 @@ FROM
 	OptimizationData t1
 
 BeforeExecute
--- ClickHouse.Octonica ClickHouse
+-- ClickHouse.Octonica ClickHouse (asynchronously)
 
 /* swap => 0 != swap.IntVlaue < 4 ? 4 : swap.IntVlaue */
 SELECT
@@ -1555,7 +1555,7 @@ WHERE
 	swap.IntVlaue < 4 OR swap.IntVlaue <> 0 AND swap.IntVlaue >= 4
 
 BeforeExecute
--- ClickHouse.Octonica ClickHouse
+-- ClickHouse.Octonica ClickHouse (asynchronously)
 
 SELECT
 	t1.Id,
@@ -1569,7 +1569,7 @@ FROM
 	OptimizationData t1
 
 BeforeExecute
--- ClickHouse.Octonica ClickHouse
+-- ClickHouse.Octonica ClickHouse (asynchronously)
 
 /* swap_with_not => !(0 != swap_with_not.IntVlaue < 4 ? 4 : swap_with_not.IntVlaue) */
 SELECT
@@ -1586,7 +1586,7 @@ WHERE
 	NOT (swap_with_not.IntVlaue < 4 OR swap_with_not.IntVlaue <> 0 AND swap_with_not.IntVlaue >= 4)
 
 BeforeExecute
--- ClickHouse.Octonica ClickHouse
+-- ClickHouse.Octonica ClickHouse (asynchronously)
 
 SELECT
 	t1.Id,
@@ -1600,7 +1600,7 @@ FROM
 	OptimizationData t1
 
 BeforeExecute
--- ClickHouse.Octonica ClickHouse
+-- ClickHouse.Octonica ClickHouse (asynchronously)
 
 /* x => x.IntVlaue < 4 ? 4 : x.IntVlaue > 0 */
 SELECT
@@ -1617,7 +1617,7 @@ WHERE
 	x.IntVlaue < 4 OR x.IntVlaue > 0 AND x.IntVlaue >= 4
 
 BeforeExecute
--- ClickHouse.Octonica ClickHouse
+-- ClickHouse.Octonica ClickHouse (asynchronously)
 
 SELECT
 	t1.Id,
@@ -1631,7 +1631,7 @@ FROM
 	OptimizationData t1
 
 BeforeExecute
--- ClickHouse.Octonica ClickHouse
+-- ClickHouse.Octonica ClickHouse (asynchronously)
 
 /* x_with_not => !(x_with_not.IntVlaue < 4 ? 4 : x_with_not.IntVlaue > 0) */
 SELECT
@@ -1648,7 +1648,7 @@ WHERE
 	NOT (x_with_not.IntVlaue < 4 OR x_with_not.IntVlaue > 0 AND x_with_not.IntVlaue >= 4)
 
 BeforeExecute
--- ClickHouse.Octonica ClickHouse
+-- ClickHouse.Octonica ClickHouse (asynchronously)
 
 SELECT
 	t1.Id,
@@ -1662,7 +1662,7 @@ FROM
 	OptimizationData t1
 
 BeforeExecute
--- ClickHouse.Octonica ClickHouse
+-- ClickHouse.Octonica ClickHouse (asynchronously)
 
 /* x => x.IntVlaue < 4 ? 4 : x.IntVlaue < 0 */
 SELECT
@@ -1679,7 +1679,7 @@ WHERE
 	x.IntVlaue < 0 AND x.IntVlaue >= 4
 
 BeforeExecute
--- ClickHouse.Octonica ClickHouse
+-- ClickHouse.Octonica ClickHouse (asynchronously)
 
 SELECT
 	t1.Id,
@@ -1693,7 +1693,7 @@ FROM
 	OptimizationData t1
 
 BeforeExecute
--- ClickHouse.Octonica ClickHouse
+-- ClickHouse.Octonica ClickHouse (asynchronously)
 
 /* x_with_not => !(x_with_not.IntVlaue < 4 ? 4 : x_with_not.IntVlaue < 0) */
 SELECT
@@ -1710,7 +1710,7 @@ WHERE
 	NOT (x_with_not.IntVlaue < 0 AND x_with_not.IntVlaue >= 4)
 
 BeforeExecute
--- ClickHouse.Octonica ClickHouse
+-- ClickHouse.Octonica ClickHouse (asynchronously)
 
 SELECT
 	t1.Id,
@@ -1724,7 +1724,7 @@ FROM
 	OptimizationData t1
 
 BeforeExecute
--- ClickHouse.Octonica ClickHouse
+-- ClickHouse.Octonica ClickHouse (asynchronously)
 
 /* x => x.IntVlaue < 4 ? 4 : x.IntVlaue >= 0 */
 SELECT
@@ -1741,7 +1741,7 @@ WHERE
 	x.IntVlaue < 4 OR x.IntVlaue >= 0 AND x.IntVlaue >= 4
 
 BeforeExecute
--- ClickHouse.Octonica ClickHouse
+-- ClickHouse.Octonica ClickHouse (asynchronously)
 
 SELECT
 	t1.Id,
@@ -1755,7 +1755,7 @@ FROM
 	OptimizationData t1
 
 BeforeExecute
--- ClickHouse.Octonica ClickHouse
+-- ClickHouse.Octonica ClickHouse (asynchronously)
 
 /* x_with_not => !(x_with_not.IntVlaue < 4 ? 4 : x_with_not.IntVlaue >= 0) */
 SELECT
@@ -1772,7 +1772,7 @@ WHERE
 	NOT (x_with_not.IntVlaue < 4 OR x_with_not.IntVlaue >= 0 AND x_with_not.IntVlaue >= 4)
 
 BeforeExecute
--- ClickHouse.Octonica ClickHouse
+-- ClickHouse.Octonica ClickHouse (asynchronously)
 
 SELECT
 	t1.Id,
@@ -1786,7 +1786,7 @@ FROM
 	OptimizationData t1
 
 BeforeExecute
--- ClickHouse.Octonica ClickHouse
+-- ClickHouse.Octonica ClickHouse (asynchronously)
 
 /* x => x.IntVlaue < 4 ? 4 : x.IntVlaue <= 0 */
 SELECT
@@ -1803,7 +1803,7 @@ WHERE
 	x.IntVlaue <= 0 AND x.IntVlaue >= 4
 
 BeforeExecute
--- ClickHouse.Octonica ClickHouse
+-- ClickHouse.Octonica ClickHouse (asynchronously)
 
 SELECT
 	t1.Id,
@@ -1817,7 +1817,7 @@ FROM
 	OptimizationData t1
 
 BeforeExecute
--- ClickHouse.Octonica ClickHouse
+-- ClickHouse.Octonica ClickHouse (asynchronously)
 
 /* x_with_not => !(x_with_not.IntVlaue < 4 ? 4 : x_with_not.IntVlaue <= 0) */
 SELECT
@@ -1834,7 +1834,7 @@ WHERE
 	NOT (x_with_not.IntVlaue <= 0 AND x_with_not.IntVlaue >= 4)
 
 BeforeExecute
--- ClickHouse.Octonica ClickHouse
+-- ClickHouse.Octonica ClickHouse (asynchronously)
 
 SELECT
 	t1.Id,
@@ -1848,7 +1848,7 @@ FROM
 	OptimizationData t1
 
 BeforeExecute
--- ClickHouse.Octonica ClickHouse
+-- ClickHouse.Octonica ClickHouse (asynchronously)
 
 /* x => x.IntVlaue >= 4 ? x.IntVlaue : 4 == 0 */
 SELECT
@@ -1865,7 +1865,7 @@ WHERE
 	x.IntVlaue = 0 AND x.IntVlaue >= 4
 
 BeforeExecute
--- ClickHouse.Octonica ClickHouse
+-- ClickHouse.Octonica ClickHouse (asynchronously)
 
 SELECT
 	t1.Id,
@@ -1879,7 +1879,7 @@ FROM
 	OptimizationData t1
 
 BeforeExecute
--- ClickHouse.Octonica ClickHouse
+-- ClickHouse.Octonica ClickHouse (asynchronously)
 
 /* x_with_not => !(x_with_not.IntVlaue >= 4 ? x_with_not.IntVlaue : 4 == 0) */
 SELECT
@@ -1896,7 +1896,7 @@ WHERE
 	NOT (x_with_not.IntVlaue = 0 AND x_with_not.IntVlaue >= 4)
 
 BeforeExecute
--- ClickHouse.Octonica ClickHouse
+-- ClickHouse.Octonica ClickHouse (asynchronously)
 
 SELECT
 	t1.Id,
@@ -1910,7 +1910,7 @@ FROM
 	OptimizationData t1
 
 BeforeExecute
--- ClickHouse.Octonica ClickHouse
+-- ClickHouse.Octonica ClickHouse (asynchronously)
 
 /* swap => 0 == swap.IntVlaue >= 4 ? swap.IntVlaue : 4 */
 SELECT
@@ -1927,7 +1927,7 @@ WHERE
 	swap.IntVlaue = 0 AND swap.IntVlaue >= 4
 
 BeforeExecute
--- ClickHouse.Octonica ClickHouse
+-- ClickHouse.Octonica ClickHouse (asynchronously)
 
 SELECT
 	t1.Id,
@@ -1941,7 +1941,7 @@ FROM
 	OptimizationData t1
 
 BeforeExecute
--- ClickHouse.Octonica ClickHouse
+-- ClickHouse.Octonica ClickHouse (asynchronously)
 
 /* swap_with_not => !(0 == swap_with_not.IntVlaue >= 4 ? swap_with_not.IntVlaue : 4) */
 SELECT
@@ -1958,7 +1958,7 @@ WHERE
 	NOT (swap_with_not.IntVlaue = 0 AND swap_with_not.IntVlaue >= 4)
 
 BeforeExecute
--- ClickHouse.Octonica ClickHouse
+-- ClickHouse.Octonica ClickHouse (asynchronously)
 
 SELECT
 	t1.Id,
@@ -1972,7 +1972,7 @@ FROM
 	OptimizationData t1
 
 BeforeExecute
--- ClickHouse.Octonica ClickHouse
+-- ClickHouse.Octonica ClickHouse (asynchronously)
 
 /* x => x.IntVlaue >= 4 ? x.IntVlaue : 4 != 0 */
 SELECT
@@ -1989,7 +1989,7 @@ WHERE
 	x.IntVlaue <> 0 AND x.IntVlaue >= 4 OR x.IntVlaue < 4
 
 BeforeExecute
--- ClickHouse.Octonica ClickHouse
+-- ClickHouse.Octonica ClickHouse (asynchronously)
 
 SELECT
 	t1.Id,
@@ -2003,7 +2003,7 @@ FROM
 	OptimizationData t1
 
 BeforeExecute
--- ClickHouse.Octonica ClickHouse
+-- ClickHouse.Octonica ClickHouse (asynchronously)
 
 /* x_with_not => !(x_with_not.IntVlaue >= 4 ? x_with_not.IntVlaue : 4 != 0) */
 SELECT
@@ -2020,7 +2020,7 @@ WHERE
 	NOT (x_with_not.IntVlaue <> 0 AND x_with_not.IntVlaue >= 4 OR x_with_not.IntVlaue < 4)
 
 BeforeExecute
--- ClickHouse.Octonica ClickHouse
+-- ClickHouse.Octonica ClickHouse (asynchronously)
 
 SELECT
 	t1.Id,
@@ -2034,7 +2034,7 @@ FROM
 	OptimizationData t1
 
 BeforeExecute
--- ClickHouse.Octonica ClickHouse
+-- ClickHouse.Octonica ClickHouse (asynchronously)
 
 /* swap => 0 != swap.IntVlaue >= 4 ? swap.IntVlaue : 4 */
 SELECT
@@ -2051,7 +2051,7 @@ WHERE
 	swap.IntVlaue <> 0 AND swap.IntVlaue >= 4 OR swap.IntVlaue < 4
 
 BeforeExecute
--- ClickHouse.Octonica ClickHouse
+-- ClickHouse.Octonica ClickHouse (asynchronously)
 
 SELECT
 	t1.Id,
@@ -2065,7 +2065,7 @@ FROM
 	OptimizationData t1
 
 BeforeExecute
--- ClickHouse.Octonica ClickHouse
+-- ClickHouse.Octonica ClickHouse (asynchronously)
 
 /* swap_with_not => !(0 != swap_with_not.IntVlaue >= 4 ? swap_with_not.IntVlaue : 4) */
 SELECT
@@ -2082,7 +2082,7 @@ WHERE
 	NOT (swap_with_not.IntVlaue <> 0 AND swap_with_not.IntVlaue >= 4 OR swap_with_not.IntVlaue < 4)
 
 BeforeExecute
--- ClickHouse.Octonica ClickHouse
+-- ClickHouse.Octonica ClickHouse (asynchronously)
 
 SELECT
 	t1.Id,
@@ -2096,7 +2096,7 @@ FROM
 	OptimizationData t1
 
 BeforeExecute
--- ClickHouse.Octonica ClickHouse
+-- ClickHouse.Octonica ClickHouse (asynchronously)
 
 /* x => x.IntVlaue >= 4 ? x.IntVlaue : 4 > 0 */
 SELECT
@@ -2113,7 +2113,7 @@ WHERE
 	x.IntVlaue > 0 AND x.IntVlaue >= 4 OR x.IntVlaue < 4
 
 BeforeExecute
--- ClickHouse.Octonica ClickHouse
+-- ClickHouse.Octonica ClickHouse (asynchronously)
 
 SELECT
 	t1.Id,
@@ -2127,7 +2127,7 @@ FROM
 	OptimizationData t1
 
 BeforeExecute
--- ClickHouse.Octonica ClickHouse
+-- ClickHouse.Octonica ClickHouse (asynchronously)
 
 /* x_with_not => !(x_with_not.IntVlaue >= 4 ? x_with_not.IntVlaue : 4 > 0) */
 SELECT
@@ -2144,7 +2144,7 @@ WHERE
 	NOT (x_with_not.IntVlaue > 0 AND x_with_not.IntVlaue >= 4 OR x_with_not.IntVlaue < 4)
 
 BeforeExecute
--- ClickHouse.Octonica ClickHouse
+-- ClickHouse.Octonica ClickHouse (asynchronously)
 
 SELECT
 	t1.Id,
@@ -2158,7 +2158,7 @@ FROM
 	OptimizationData t1
 
 BeforeExecute
--- ClickHouse.Octonica ClickHouse
+-- ClickHouse.Octonica ClickHouse (asynchronously)
 
 /* x => x.IntVlaue >= 4 ? x.IntVlaue : 4 < 0 */
 SELECT
@@ -2175,7 +2175,7 @@ WHERE
 	x.IntVlaue < 0 AND x.IntVlaue >= 4
 
 BeforeExecute
--- ClickHouse.Octonica ClickHouse
+-- ClickHouse.Octonica ClickHouse (asynchronously)
 
 SELECT
 	t1.Id,
@@ -2189,7 +2189,7 @@ FROM
 	OptimizationData t1
 
 BeforeExecute
--- ClickHouse.Octonica ClickHouse
+-- ClickHouse.Octonica ClickHouse (asynchronously)
 
 /* x_with_not => !(x_with_not.IntVlaue >= 4 ? x_with_not.IntVlaue : 4 < 0) */
 SELECT
@@ -2206,7 +2206,7 @@ WHERE
 	NOT (x_with_not.IntVlaue < 0 AND x_with_not.IntVlaue >= 4)
 
 BeforeExecute
--- ClickHouse.Octonica ClickHouse
+-- ClickHouse.Octonica ClickHouse (asynchronously)
 
 SELECT
 	t1.Id,
@@ -2220,7 +2220,7 @@ FROM
 	OptimizationData t1
 
 BeforeExecute
--- ClickHouse.Octonica ClickHouse
+-- ClickHouse.Octonica ClickHouse (asynchronously)
 
 /* x => x.IntVlaue >= 4 ? x.IntVlaue : 4 >= 0 */
 SELECT
@@ -2237,7 +2237,7 @@ WHERE
 	x.IntVlaue >= 0 AND x.IntVlaue >= 4 OR x.IntVlaue < 4
 
 BeforeExecute
--- ClickHouse.Octonica ClickHouse
+-- ClickHouse.Octonica ClickHouse (asynchronously)
 
 SELECT
 	t1.Id,
@@ -2251,7 +2251,7 @@ FROM
 	OptimizationData t1
 
 BeforeExecute
--- ClickHouse.Octonica ClickHouse
+-- ClickHouse.Octonica ClickHouse (asynchronously)
 
 /* x_with_not => !(x_with_not.IntVlaue >= 4 ? x_with_not.IntVlaue : 4 >= 0) */
 SELECT
@@ -2268,7 +2268,7 @@ WHERE
 	NOT (x_with_not.IntVlaue >= 0 AND x_with_not.IntVlaue >= 4 OR x_with_not.IntVlaue < 4)
 
 BeforeExecute
--- ClickHouse.Octonica ClickHouse
+-- ClickHouse.Octonica ClickHouse (asynchronously)
 
 SELECT
 	t1.Id,
@@ -2282,7 +2282,7 @@ FROM
 	OptimizationData t1
 
 BeforeExecute
--- ClickHouse.Octonica ClickHouse
+-- ClickHouse.Octonica ClickHouse (asynchronously)
 
 /* x => x.IntVlaue >= 4 ? x.IntVlaue : 4 <= 0 */
 SELECT
@@ -2299,7 +2299,7 @@ WHERE
 	x.IntVlaue <= 0 AND x.IntVlaue >= 4
 
 BeforeExecute
--- ClickHouse.Octonica ClickHouse
+-- ClickHouse.Octonica ClickHouse (asynchronously)
 
 SELECT
 	t1.Id,
@@ -2313,7 +2313,7 @@ FROM
 	OptimizationData t1
 
 BeforeExecute
--- ClickHouse.Octonica ClickHouse
+-- ClickHouse.Octonica ClickHouse (asynchronously)
 
 /* x_with_not => !(x_with_not.IntVlaue >= 4 ? x_with_not.IntVlaue : 4 <= 0) */
 SELECT
@@ -2330,7 +2330,7 @@ WHERE
 	NOT (x_with_not.IntVlaue <= 0 AND x_with_not.IntVlaue >= 4)
 
 BeforeExecute
--- ClickHouse.Octonica ClickHouse
+-- ClickHouse.Octonica ClickHouse (asynchronously)
 
 SELECT
 	t1.Id,

@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Informix.DB2 Informix
+-- Informix.DB2 Informix (asynchronously)
 
 SELECT
 	m_1.Id,
@@ -10,7 +10,7 @@ FROM
 		INNER JOIN SubEntity d ON m_1.Id = d.MainEntityId
 
 BeforeExecute
--- Informix.DB2 Informix
+-- Informix.DB2 Informix (asynchronously)
 
 SELECT
 	x.Id

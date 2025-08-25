@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2016
+-- SqlServer.2016 (asynchronously)
 DECLARE @Id Int -- Int32
 SET     @Id = 123
 DECLARE @Nesto NVarChar(4000) -- String

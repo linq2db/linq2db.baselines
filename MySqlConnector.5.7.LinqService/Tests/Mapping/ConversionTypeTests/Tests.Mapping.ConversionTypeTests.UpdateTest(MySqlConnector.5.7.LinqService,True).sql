@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
+-- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57 (asynchronously)
 
 UPDATE
 	`TrimTestTable` `t1`
@@ -9,7 +9,7 @@ WHERE
 	`t1`.`ID` = 3
 
 BeforeExecute
--- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
+-- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57 (asynchronously)
 
 UPDATE
 	`TrimTestTable` `t`
@@ -19,7 +19,7 @@ WHERE
 	`t`.`Data` = '***XXX***'
 
 BeforeExecute
--- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
+-- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57 (asynchronously)
 
 UPDATE
 	`TrimTestTable` `t`
@@ -29,7 +29,7 @@ WHERE
 	`t`.`Data` = '***HHH***'
 
 BeforeExecute
--- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
+-- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57 (asynchronously)
 
 SELECT
 	`r`.`ID`,
@@ -40,7 +40,7 @@ ORDER BY
 	`r`.`ID`
 
 BeforeExecute
--- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
+-- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57 (asynchronously)
 
 SELECT
 	`r`.`ID`,

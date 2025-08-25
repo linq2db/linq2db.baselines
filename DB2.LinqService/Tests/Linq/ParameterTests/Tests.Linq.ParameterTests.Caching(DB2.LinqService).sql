@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- DB2 DB2.LUW DB2LUW
+-- DB2 DB2.LUW DB2LUW (asynchronously)
 DECLARE @p Integer(4) -- Int32
 SET     @p = 1
 
@@ -12,7 +12,7 @@ WHERE
 	"x"."ParentID" = @p
 
 BeforeExecute
--- DB2 DB2.LUW DB2LUW
+-- DB2 DB2.LUW DB2LUW (asynchronously)
 
 SELECT
 	"t1"."ParentID",
@@ -21,7 +21,7 @@ FROM
 	"Parent" "t1"
 
 BeforeExecute
--- DB2 DB2.LUW DB2LUW
+-- DB2 DB2.LUW DB2LUW (asynchronously)
 DECLARE @p Integer(4) -- Int32
 SET     @p = 3
 DECLARE @p_1 Integer(4) -- Int32
@@ -36,7 +36,7 @@ WHERE
 	"x"."ParentID" = @p OR "x"."ParentID" = @p_1
 
 BeforeExecute
--- DB2 DB2.LUW DB2LUW
+-- DB2 DB2.LUW DB2LUW (asynchronously)
 
 SELECT
 	"t1"."ParentID",
@@ -45,7 +45,7 @@ FROM
 	"Parent" "t1"
 
 BeforeExecute
--- DB2 DB2.LUW DB2LUW
+-- DB2 DB2.LUW DB2LUW (asynchronously)
 DECLARE @p Integer(4) -- Int32
 SET     @p = 1
 DECLARE @p_1 Integer(4) -- Int32
@@ -60,7 +60,7 @@ WHERE
 	"x"."ParentID" = @p OR "x"."ParentID" = @p_1
 
 BeforeExecute
--- DB2 DB2.LUW DB2LUW
+-- DB2 DB2.LUW DB2LUW (asynchronously)
 
 SELECT
 	"t1"."ParentID",

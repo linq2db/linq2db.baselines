@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2022.MS SqlServer.2022
+-- SqlServer.2022.MS SqlServer.2022 (asynchronously)
 DECLARE @param Int -- Int32
 SET     @param = 100
 
@@ -23,7 +23,7 @@ WHERE
 	[s].[Id] = 3
 
 BeforeExecute
--- SqlServer.2022.MS SqlServer.2022
+-- SqlServer.2022.MS SqlServer.2022 (asynchronously)
 DECLARE @param Int -- Int32
 SET     @param = 100
 

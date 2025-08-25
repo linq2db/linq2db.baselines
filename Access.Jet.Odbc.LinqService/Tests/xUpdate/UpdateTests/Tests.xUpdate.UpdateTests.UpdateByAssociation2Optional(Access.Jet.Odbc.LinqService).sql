@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Access.Jet.Odbc AccessODBC
+-- Access.Jet.Odbc AccessODBC (asynchronously)
 DECLARE @id Int -- Int32
 SET     @id = 3
 
@@ -12,7 +12,7 @@ WHERE
 	[p].[Id] = ? AND [p].[Id] = [a_MainOptional].[Id]
 
 BeforeExecute
--- Access.Jet.Odbc AccessODBC
+-- Access.Jet.Odbc AccessODBC (asynchronously)
 
 SELECT
 	[t1].[Id],

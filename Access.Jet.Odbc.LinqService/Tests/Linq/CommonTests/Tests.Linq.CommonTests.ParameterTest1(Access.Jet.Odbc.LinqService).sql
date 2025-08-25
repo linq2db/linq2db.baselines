@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Access.Jet.Odbc AccessODBC
+-- Access.Jet.Odbc AccessODBC (asynchronously)
 DECLARE @id Int -- Int32
 SET     @id = 1
 
@@ -20,7 +20,7 @@ GROUP BY
 	[g_1].[ParentID]
 
 BeforeExecute
--- Access.Jet.Odbc AccessODBC
+-- Access.Jet.Odbc AccessODBC (asynchronously)
 DECLARE @id Int -- Int32
 SET     @id = 2
 

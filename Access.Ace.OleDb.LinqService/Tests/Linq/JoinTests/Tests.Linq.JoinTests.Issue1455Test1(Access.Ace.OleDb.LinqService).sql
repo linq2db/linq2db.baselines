@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Access.Ace.OleDb AccessOleDb
+-- Access.Ace.OleDb AccessOleDb (asynchronously)
 DECLARE @cpty VarWChar(3) -- String
 SET     @cpty = '%C%'
 DECLARE @cpty_1 VarWChar(3) -- String

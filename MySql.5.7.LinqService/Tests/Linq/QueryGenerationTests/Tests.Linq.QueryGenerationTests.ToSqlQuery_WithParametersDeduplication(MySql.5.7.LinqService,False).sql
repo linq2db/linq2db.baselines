@@ -15,7 +15,7 @@ WHERE
 	`p`.`FirstName` = @firstName OR `p`.`LastName` = @firstName
 
 BeforeExecute
--- MySql.5.7 MySql.5.7.MySql.Data MySql57
+-- MySql.5.7 MySql.5.7.MySql.Data MySql57 (asynchronously)
 DECLARE @firstName VarChar(4) -- String
 SET     @firstName = 'John'
 

@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2012.MS SqlServer.2012
+-- SqlServer.2012.MS SqlServer.2012 (asynchronously)
 DECLARE @skip Int -- Int32
 SET     @skip = 3
 
@@ -13,7 +13,7 @@ ORDER BY
 OFFSET @skip ROWS
 
 BeforeExecute
--- SqlServer.2012.MS SqlServer.2012
+-- SqlServer.2012.MS SqlServer.2012 (asynchronously)
 DECLARE @skip Int -- Int32
 SET     @skip = 4
 

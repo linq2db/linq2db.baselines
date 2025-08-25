@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Oracle.11.Managed Oracle11
+-- Oracle.11.Managed Oracle11 (asynchronously)
 
 INSERT /*+ FULL(c_1) ALL_ROWS FIRST_ROWS(10) */ INTO "Child"
 (

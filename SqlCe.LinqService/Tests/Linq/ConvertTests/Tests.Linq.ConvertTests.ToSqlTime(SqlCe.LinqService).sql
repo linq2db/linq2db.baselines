@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 
 SELECT
 	CAST(DatePart(hour, [t].[DateTimeValue]) AS NVarChar(11)) + ':01:01' as [c1]

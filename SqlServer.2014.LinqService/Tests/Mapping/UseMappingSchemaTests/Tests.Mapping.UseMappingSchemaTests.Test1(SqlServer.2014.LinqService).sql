@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2014
+-- SqlServer.2014 (asynchronously)
 
 SELECT
 	[t1].[Field1],
@@ -9,7 +9,7 @@ FROM
 	[UseMappingSchemaTestTable] [t1]
 
 BeforeExecute
--- SqlServer.2014
+-- SqlServer.2014 (asynchronously)
 
 SELECT
 	[t1].[Column1],
@@ -19,7 +19,7 @@ FROM
 	[UseMappingSchemaTestTable] [t1]
 
 BeforeExecute
--- SqlServer.2014
+-- SqlServer.2014 (asynchronously)
 
 SELECT
 	[t1].[Field1],

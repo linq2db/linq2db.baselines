@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2005.MS SqlServer.2005
+-- SqlServer.2005.MS SqlServer.2005 (asynchronously)
 
 SELECT
 	[arg].[Id],
@@ -10,7 +10,7 @@ FROM
 			SELECT 1 AS [Id], CAST(0 AS Float) AS [Value]) [arg] ON [entity].[PersonID] = [arg].[Id]
 
 BeforeExecute
--- SqlServer.2005.MS SqlServer.2005
+-- SqlServer.2005.MS SqlServer.2005 (asynchronously)
 
 SELECT
 	[arg].[Id],

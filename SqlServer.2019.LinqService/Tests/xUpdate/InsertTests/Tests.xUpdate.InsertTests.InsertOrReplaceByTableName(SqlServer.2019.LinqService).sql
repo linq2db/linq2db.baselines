@@ -1,10 +1,10 @@
 ﻿BeforeExecute
--- SqlServer.2019
+-- SqlServer.2019 (asynchronously)
 
 DROP TABLE IF EXISTS [xxPatient]
 
 BeforeExecute
--- SqlServer.2019
+-- SqlServer.2019 (asynchronously)
 
 CREATE TABLE [xxPatient]
 (
@@ -15,7 +15,7 @@ CREATE TABLE [xxPatient]
 )
 
 BeforeExecute
--- SqlServer.2019
+-- SqlServer.2019 (asynchronously)
 DECLARE @PersonID Int -- Int32
 SET     @PersonID = 1
 DECLARE @Diagnosis NVarChar(4000) -- String
@@ -43,7 +43,7 @@ WHEN NOT MATCHED THEN
 	);
 
 BeforeExecute
--- SqlServer.2019
+-- SqlServer.2019 (asynchronously)
 DECLARE @PersonID Int -- Int32
 SET     @PersonID = 2
 DECLARE @Diagnosis NVarChar(4000) -- String
@@ -71,7 +71,7 @@ WHEN NOT MATCHED THEN
 	);
 
 BeforeExecute
--- SqlServer.2019
+-- SqlServer.2019 (asynchronously)
 
 SELECT
 	COUNT(*)
@@ -79,7 +79,7 @@ FROM
 	[xxPatient] [t1]
 
 BeforeExecute
--- SqlServer.2019
+-- SqlServer.2019 (asynchronously)
 DECLARE @PersonID Int -- Int32
 SET     @PersonID = 1
 DECLARE @Diagnosis NVarChar(4000) -- String
@@ -107,7 +107,7 @@ WHEN NOT MATCHED THEN
 	);
 
 BeforeExecute
--- SqlServer.2019
+-- SqlServer.2019 (asynchronously)
 DECLARE @PersonID Int -- Int32
 SET     @PersonID = 2
 DECLARE @Diagnosis NVarChar(4000) -- String
@@ -135,7 +135,7 @@ WHEN NOT MATCHED THEN
 	);
 
 BeforeExecute
--- SqlServer.2019
+-- SqlServer.2019 (asynchronously)
 
 SELECT
 	COUNT(*)
@@ -143,7 +143,7 @@ FROM
 	[xxPatient] [t1]
 
 BeforeExecute
--- SqlServer.2019
+-- SqlServer.2019 (asynchronously)
 
 DROP TABLE IF EXISTS [xxPatient]
 

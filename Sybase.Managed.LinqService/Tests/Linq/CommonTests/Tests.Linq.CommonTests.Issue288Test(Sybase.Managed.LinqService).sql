@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Sybase.Managed Sybase
+-- Sybase.Managed Sybase (asynchronously)
 
 SELECT TOP 1
 	[p].[FirstName]
@@ -9,7 +9,7 @@ WHERE
 	[p].[FirstName] IS NULL
 
 BeforeExecute
--- Sybase.Managed Sybase
+-- Sybase.Managed Sybase (asynchronously)
 DECLARE @p UniVarChar(4) -- String
 SET     @p = 'John'
 

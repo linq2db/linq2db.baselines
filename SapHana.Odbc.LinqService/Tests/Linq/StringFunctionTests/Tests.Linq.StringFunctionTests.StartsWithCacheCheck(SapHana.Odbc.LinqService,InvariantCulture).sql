@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+-- SapHana.Odbc SapHanaOdbc (asynchronously)
 
 SELECT
 	"p"."FirstName"
@@ -10,7 +10,7 @@ WHERE
 LIMIT 2
 
 BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+-- SapHana.Odbc SapHanaOdbc (asynchronously)
 DECLARE @nameToCheck NVarChar(4) -- String
 SET     @nameToCheck = 'Joh%'
 
@@ -22,7 +22,7 @@ WHERE
 	"p"."FirstName" LIKE ? ESCAPE '~' AND "p"."PersonID" = 1
 
 BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+-- SapHana.Odbc SapHanaOdbc (asynchronously)
 DECLARE @nameToCheck NVarChar(4) -- String
 SET     @nameToCheck = 'Joh%'
 
@@ -34,7 +34,7 @@ WHERE
 	"p"."FirstName" NOT LIKE ? ESCAPE '~' AND "p"."PersonID" = 1
 
 BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+-- SapHana.Odbc SapHanaOdbc (asynchronously)
 DECLARE @nameToCheck NVarChar(4) -- String
 SET     @nameToCheck = 'JOH%'
 
@@ -46,7 +46,7 @@ WHERE
 	"p"."FirstName" LIKE ? ESCAPE '~' AND "p"."PersonID" = 1
 
 BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+-- SapHana.Odbc SapHanaOdbc (asynchronously)
 DECLARE @nameToCheck NVarChar(4) -- String
 SET     @nameToCheck = 'JOH%'
 

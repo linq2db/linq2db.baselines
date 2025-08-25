@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- PostgreSQL.18 PostgreSQL
+-- PostgreSQL.18 PostgreSQL (asynchronously)
 DECLARE @p Integer -- Int32
 SET     @p = 1
 DECLARE @p_1 Integer -- Int32
@@ -18,7 +18,7 @@ WHERE
 	o."ParentID" IN (:p, :p_1, :p_2) OR o."ParentID" = :param
 
 BeforeExecute
--- PostgreSQL.18 PostgreSQL
+-- PostgreSQL.18 PostgreSQL (asynchronously)
 DECLARE @param Integer -- Int32
 SET     @param = 4
 
@@ -32,7 +32,7 @@ WHERE
 	o."ParentID" = :param
 
 BeforeExecute
--- PostgreSQL.18 PostgreSQL
+-- PostgreSQL.18 PostgreSQL (asynchronously)
 DECLARE @p Integer -- Int32
 SET     @p = 4
 DECLARE @p_1 Integer -- Int32
@@ -51,7 +51,7 @@ WHERE
 	o."ParentID" IN (:p, :p_1, :p_2) OR o."ParentID" = :param
 
 BeforeExecute
--- PostgreSQL.18 PostgreSQL
+-- PostgreSQL.18 PostgreSQL (asynchronously)
 DECLARE @param Integer -- Int32
 SET     @param = 4
 

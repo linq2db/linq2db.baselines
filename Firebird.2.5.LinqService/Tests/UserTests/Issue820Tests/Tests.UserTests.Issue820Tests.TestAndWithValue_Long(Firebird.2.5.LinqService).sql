@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Firebird.2.5 Firebird
+-- Firebird.2.5 Firebird (asynchronously)
 DECLARE @param BigInt -- Int64
 SET     @param = 1
 
@@ -20,7 +20,7 @@ WHERE
 	@param = "t1"."BigIntValue"
 
 BeforeExecute
--- Firebird.2.5 Firebird
+-- Firebird.2.5 Firebird (asynchronously)
 
 SELECT
 	"t1".ID,

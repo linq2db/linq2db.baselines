@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 
 DELETE FROM
 	[Parent]
@@ -7,7 +7,7 @@ WHERE
 	[Parent].[ParentID] > 1000
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 DECLARE @Value1 Int -- Int32
 SET     @Value1 = 2
 
@@ -23,7 +23,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 DECLARE @id Int -- Int32
 SET     @id = 1001
 DECLARE @Value1 Int -- Int32
@@ -37,7 +37,7 @@ WHERE
 	[t1].[ParentID] = @id AND [t1].[Value1] = @Value1
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 
 DELETE FROM
 	[Parent]

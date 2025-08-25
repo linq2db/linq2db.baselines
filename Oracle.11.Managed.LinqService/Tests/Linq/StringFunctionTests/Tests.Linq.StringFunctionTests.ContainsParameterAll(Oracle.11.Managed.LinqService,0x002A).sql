@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Oracle.11.Managed Oracle11
+-- Oracle.11.Managed Oracle11 (asynchronously)
 DECLARE @s Varchar2(7) -- String
 SET     @s = '123*456'
 DECLARE @toTest Varchar2(3) -- String

@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Informix.DB2 Informix
+-- Informix.DB2 Informix (asynchronously)
 
 SELECT
 	m_1.PersonID,
@@ -12,7 +12,7 @@ WHERE
 	Lower(m_1.FirstName) LIKE '%test%' ESCAPE '~'
 
 BeforeExecute
--- Informix.DB2 Informix
+-- Informix.DB2 Informix (asynchronously)
 
 SELECT
 	p.FirstName,

@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Access.Jet.OleDb AccessOleDb
+-- Access.Jet.OleDb AccessOleDb (asynchronously)
 
 CREATE TABLE [aa]
 (
@@ -10,7 +10,7 @@ CREATE TABLE [aa]
 )
 
 BeforeExecute
--- Access.Jet.OleDb AccessOleDb
+-- Access.Jet.OleDb AccessOleDb (asynchronously)
 DECLARE @bb Integer -- Int32
 SET     @bb = 99
 DECLARE @cc VarWChar(5) -- String
@@ -28,7 +28,7 @@ VALUES
 )
 
 BeforeExecute
--- Access.Jet.OleDb AccessOleDb
+-- Access.Jet.OleDb AccessOleDb (asynchronously)
 
 SELECT
 	[t1].[bb],
@@ -37,7 +37,7 @@ FROM
 	[aa] [t1]
 
 BeforeExecute
--- Access.Jet.OleDb AccessOleDb
+-- Access.Jet.OleDb AccessOleDb (asynchronously)
 
 DROP TABLE [aa]
 

@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Firebird.2.5 Firebird
+-- Firebird.2.5 Firebird (asynchronously)
 
 DELETE FROM
 	"LinqDataTypes" "t1"
@@ -7,7 +7,7 @@ WHERE
 	"t1".ID > 1000
 
 BeforeExecute
--- Firebird.2.5 Firebird
+-- Firebird.2.5 Firebird (asynchronously)
 DECLARE @data Binary
 SET     @data = NULL
 
@@ -25,7 +25,7 @@ VALUES
 )
 
 BeforeExecute
--- Firebird.2.5 Firebird
+-- Firebird.2.5 Firebird (asynchronously)
 
 DELETE FROM
 	"LinqDataTypes" "t1"

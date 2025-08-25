@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Sybase.Managed Sybase
+-- Sybase.Managed Sybase (asynchronously)
 
 SELECT DISTINCT
 	[a_Ref4].[Field6],
@@ -16,7 +16,7 @@ WHERE
 	[t1].[Field3] IS NOT NULL
 
 BeforeExecute
--- Sybase.Managed Sybase
+-- Sybase.Managed Sybase (asynchronously)
 
 SELECT
 	[g_2].[Field6],

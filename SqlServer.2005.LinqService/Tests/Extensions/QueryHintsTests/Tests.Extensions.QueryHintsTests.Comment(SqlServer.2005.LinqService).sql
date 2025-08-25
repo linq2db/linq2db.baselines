@@ -12,7 +12,7 @@ FROM
 ----
 
 BeforeExecute
--- SqlServer.2005
+-- SqlServer.2005 (asynchronously)
 
 SELECT
 	[p].[ParentID],
@@ -35,7 +35,7 @@ FROM
 ---
 
 BeforeExecute
--- SqlServer.2005
+-- SqlServer.2005 (asynchronously)
 
 SELECT
 	[p].[ParentID],

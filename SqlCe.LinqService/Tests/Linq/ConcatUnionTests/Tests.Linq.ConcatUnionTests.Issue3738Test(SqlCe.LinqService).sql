@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 
 SELECT
 	'I-' + CAST([x].[PersonID] AS NVarChar(11)) as [Id],

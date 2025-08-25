@@ -24,7 +24,7 @@ FROM
 	[Parent] [p]
 
 BeforeExecute
--- Access.Jet.Odbc AccessODBC
+-- Access.Jet.Odbc AccessODBC (asynchronously)
 
 SELECT
 	[t].[ID]

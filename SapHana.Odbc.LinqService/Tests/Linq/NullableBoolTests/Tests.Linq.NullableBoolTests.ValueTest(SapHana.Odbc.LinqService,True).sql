@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+-- SapHana.Odbc SapHanaOdbc (asynchronously)
 DECLARE @value TinyInt(1) -- Byte
 SET     @value = 1
 
@@ -11,7 +11,7 @@ WHERE
 	"t"."Value" = ?
 
 BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+-- SapHana.Odbc SapHanaOdbc (asynchronously)
 DECLARE @value TinyInt(1) -- Byte
 SET     @value = 1
 
@@ -23,7 +23,7 @@ WHERE
 	"t"."Value" = ?
 
 BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+-- SapHana.Odbc SapHanaOdbc (asynchronously)
 DECLARE @value TinyInt(1) -- Byte
 SET     @value = 1
 
@@ -35,7 +35,7 @@ WHERE
 	"t"."Value" <> ? OR "t"."Value" IS NULL
 
 BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+-- SapHana.Odbc SapHanaOdbc (asynchronously)
 DECLARE @value TinyInt(1) -- Byte
 SET     @value = 1
 

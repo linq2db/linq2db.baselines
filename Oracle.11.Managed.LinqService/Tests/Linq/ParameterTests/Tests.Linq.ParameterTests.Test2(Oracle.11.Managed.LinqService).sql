@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Oracle.11.Managed Oracle11
+-- Oracle.11.Managed Oracle11 (asynchronously)
 DECLARE @id1 Int32
 SET     @id1 = 1
 DECLARE @id2 Int32
@@ -26,7 +26,7 @@ ORDER BY
 	t1."ParentID"
 
 BeforeExecute
--- Oracle.11.Managed Oracle11
+-- Oracle.11.Managed Oracle11 (asynchronously)
 DECLARE @id1 Int32
 SET     @id1 = 2
 DECLARE @id2 Int32

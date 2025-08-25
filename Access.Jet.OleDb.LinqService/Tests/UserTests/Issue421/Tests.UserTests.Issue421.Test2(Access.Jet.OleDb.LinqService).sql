@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Access.Jet.OleDb AccessOleDb
+-- Access.Jet.OleDb AccessOleDb (asynchronously)
 
 INSERT INTO [BlobClass]
 (
@@ -13,7 +13,7 @@ VALUES
 )
 
 BeforeExecute
--- Access.Jet.OleDb AccessOleDb
+-- Access.Jet.OleDb AccessOleDb (asynchronously)
 
 SELECT TOP 1
 	[t1].[Id],
@@ -24,7 +24,7 @@ WHERE
 	[t1].[Id] = 1
 
 BeforeExecute
--- Access.Jet.OleDb AccessOleDb
+-- Access.Jet.OleDb AccessOleDb (asynchronously)
 
 UPDATE
 	[BlobClass] [t1]
@@ -34,7 +34,7 @@ WHERE
 	[t1].[Id] = 1
 
 BeforeExecute
--- Access.Jet.OleDb AccessOleDb
+-- Access.Jet.OleDb AccessOleDb (asynchronously)
 
 SELECT TOP 1
 	[t1].[Id],

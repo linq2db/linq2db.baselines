@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2019 (asynchronously)
 DECLARE @id1 Int -- Int32
 SET     @id1 = 1
 DECLARE @id2 Int -- Int32
@@ -17,7 +17,7 @@ ORDER BY
 	[p].[ParentID]
 
 BeforeExecute
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2019 (asynchronously)
 DECLARE @id1 Int -- Int32
 SET     @id1 = 2
 DECLARE @id2 Int -- Int32

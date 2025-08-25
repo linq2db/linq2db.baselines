@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
+-- PostgreSQL.17 PostgreSQL.15 PostgreSQL (asynchronously)
 
 CREATE TEMPORARY TABLE "TableWithPrimaryKey"
 (
@@ -10,7 +10,7 @@ CREATE TEMPORARY TABLE "TableWithPrimaryKey"
 ON COMMIT PRESERVE ROWS
 
 BeforeExecute
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
+-- PostgreSQL.17 PostgreSQL.15 PostgreSQL (asynchronously)
 
 DROP TABLE IF EXISTS "TableWithPrimaryKey"
 

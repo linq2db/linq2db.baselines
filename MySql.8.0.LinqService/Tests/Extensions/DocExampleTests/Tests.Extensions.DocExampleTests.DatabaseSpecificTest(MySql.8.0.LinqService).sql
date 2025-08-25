@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- MySql.8.0 MySql.8.0.MySql.Data MySql80
+-- MySql.8.0 MySql.8.0.MySql.Data MySql80 (asynchronously)
 
 SELECT /*+ QB_NAME(qb) NO_BKA(t1@qb) INDEX(t1@qb PK_Parent) MAX_EXECUTION_TIME(1000) BKA(c_1@qb) */
 	`t`.`PersonID`,

@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2019.MS SqlServer.2019
+-- SqlServer.2019.MS SqlServer.2019 (asynchronously)
 
 WITH [CTE_1] ([Obj_Operator])
 AS
@@ -15,7 +15,7 @@ FROM
 	[CTE_1] [t1]
 
 BeforeExecute
--- SqlServer.2019.MS SqlServer.2019
+-- SqlServer.2019.MS SqlServer.2019 (asynchronously)
 
 SELECT TOP (1)
 	[person_1].[LastName]

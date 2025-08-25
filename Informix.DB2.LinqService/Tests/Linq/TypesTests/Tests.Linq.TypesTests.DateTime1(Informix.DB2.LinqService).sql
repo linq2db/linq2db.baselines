@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Informix.DB2 Informix
+-- Informix.DB2 Informix (asynchronously)
 DECLARE @Date Timestamp(16) -- DateTime
 SET     @Date = TO_DATE('2009-09-20', '%Y-%m-%d')
 

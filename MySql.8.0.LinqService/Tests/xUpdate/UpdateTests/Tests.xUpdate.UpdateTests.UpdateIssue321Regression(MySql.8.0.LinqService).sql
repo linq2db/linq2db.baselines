@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- MySql.8.0 MySql.8.0.MySql.Data MySql80
+-- MySql.8.0 MySql.8.0.MySql.Data MySql80 (asynchronously)
 DECLARE @ID Int32
 SET     @ID = 100500
 DECLARE @MoneyValue Decimal(4, 0)
@@ -49,7 +49,7 @@ VALUES
 )
 
 BeforeExecute
--- MySql.8.0 MySql.8.0.MySql.Data MySql80
+-- MySql.8.0 MySql.8.0.MySql.Data MySql80 (asynchronously)
 DECLARE @value2 Decimal(5, 0)
 SET     @value2 = 13621
 DECLARE @id Int32
@@ -63,7 +63,7 @@ WHERE
 	`t1`.`ID` = @id
 
 BeforeExecute
--- MySql.8.0 MySql.8.0.MySql.Data MySql80
+-- MySql.8.0 MySql.8.0.MySql.Data MySql80 (asynchronously)
 DECLARE @id Int32
 SET     @id = 100500
 

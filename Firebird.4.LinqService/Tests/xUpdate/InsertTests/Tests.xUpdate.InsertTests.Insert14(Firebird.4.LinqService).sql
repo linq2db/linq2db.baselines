@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Firebird.4 Firebird4
+-- Firebird.4 Firebird4 (asynchronously)
 
 DELETE FROM
 	"Person" "p"
@@ -7,7 +7,7 @@ WHERE
 	"p"."FirstName" STARTING WITH 'Insert14'
 
 BeforeExecute
--- Firebird.4 Firebird4
+-- Firebird.4 Firebird4 (asynchronously)
 
 INSERT INTO "Person"
 (
@@ -30,7 +30,7 @@ VALUES
 )
 
 BeforeExecute
--- Firebird.4 Firebird4
+-- Firebird.4 Firebird4 (asynchronously)
 
 SELECT
 	COUNT(*)
@@ -40,7 +40,7 @@ WHERE
 	"p"."FirstName" STARTING WITH 'Insert14'
 
 BeforeExecute
--- Firebird.4 Firebird4
+-- Firebird.4 Firebird4 (asynchronously)
 
 DELETE FROM
 	"Person" "p"

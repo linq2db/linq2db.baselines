@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Sybase.Managed Sybase
+-- Sybase.Managed Sybase (asynchronously)
 
 SELECT
 	[arg].[Id],
@@ -10,7 +10,7 @@ FROM
 			SELECT 1 AS [Id], CAST(0 AS Float) AS [Value]) [arg] ON [entity].[PersonID] = [arg].[Id]
 
 BeforeExecute
--- Sybase.Managed Sybase
+-- Sybase.Managed Sybase (asynchronously)
 
 SELECT
 	[arg].[Id],

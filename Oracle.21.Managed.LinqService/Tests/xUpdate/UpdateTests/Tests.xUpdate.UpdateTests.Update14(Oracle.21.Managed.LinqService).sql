@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Oracle.21.Managed Oracle.Managed Oracle12
+-- Oracle.21.Managed Oracle.Managed Oracle12 (asynchronously)
 DECLARE @FirstName Varchar2(8) -- String
 SET     @FirstName = 'Update14'
 DECLARE @LastName Varchar2(8) -- String
@@ -25,7 +25,7 @@ VALUES
 )
 
 BeforeExecute
--- Oracle.21.Managed Oracle.Managed Oracle12
+-- Oracle.21.Managed Oracle.Managed Oracle12 (asynchronously)
 DECLARE @name Int32
 SET     @name = 8
 DECLARE @idx Int32
@@ -39,7 +39,7 @@ WHERE
 	t1."FirstName" LIKE 'Update14%' ESCAPE '~'
 
 BeforeExecute
--- Oracle.21.Managed Oracle.Managed Oracle12
+-- Oracle.21.Managed Oracle.Managed Oracle12 (asynchronously)
 
 SELECT
 	COUNT(*)

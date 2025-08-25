@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Access.Jet.Odbc AccessODBC
+-- Access.Jet.Odbc AccessODBC (asynchronously)
 DECLARE @$VB$Local_SelectedValue Int -- Int32
 SET     @$VB$Local_SelectedValue = 1
 

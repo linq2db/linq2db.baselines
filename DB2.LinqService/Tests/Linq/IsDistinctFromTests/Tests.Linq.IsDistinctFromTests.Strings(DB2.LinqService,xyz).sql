@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- DB2 DB2.LUW DB2LUW
+-- DB2 DB2.LUW DB2LUW (asynchronously)
 DECLARE @value VarChar(3) -- String
 SET     @value = 'xyz'
 
@@ -11,7 +11,7 @@ WHERE
 	"s"."String" IS DISTINCT FROM @value
 
 BeforeExecute
--- DB2 DB2.LUW DB2LUW
+-- DB2 DB2.LUW DB2LUW (asynchronously)
 DECLARE @value VarChar(3) -- String
 SET     @value = 'xyz'
 
@@ -23,7 +23,7 @@ WHERE
 	"s"."NullableString" IS DISTINCT FROM @value
 
 BeforeExecute
--- DB2 DB2.LUW DB2LUW
+-- DB2 DB2.LUW DB2LUW (asynchronously)
 DECLARE @value VarChar(3) -- String
 SET     @value = 'xyz'
 
@@ -35,7 +35,7 @@ WHERE
 	"s"."String" IS NOT DISTINCT FROM @value
 
 BeforeExecute
--- DB2 DB2.LUW DB2LUW
+-- DB2 DB2.LUW DB2LUW (asynchronously)
 DECLARE @value VarChar(3) -- String
 SET     @value = 'xyz'
 

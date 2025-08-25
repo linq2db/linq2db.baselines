@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- DB2 DB2.LUW DB2LUW
+-- DB2 DB2.LUW DB2LUW (asynchronously)
 DECLARE @p Integer(4) -- Int32
 SET     @p = 104
 
@@ -9,7 +9,7 @@ WHERE
 	"r".ID >= 101 AND "r".ID < @p
 
 BeforeExecute
--- DB2 DB2.LUW DB2LUW
+-- DB2 DB2.LUW DB2LUW (asynchronously)
 DECLARE @Id Integer(4) -- Int32
 SET     @Id = 101
 DECLARE @Value Char(2) -- StringFixedLength
@@ -27,7 +27,7 @@ VALUES
 )
 
 BeforeExecute
--- DB2 DB2.LUW DB2LUW
+-- DB2 DB2.LUW DB2LUW (asynchronously)
 DECLARE @Id Integer(4) -- Int32
 SET     @Id = 102
 DECLARE @Value Char(2) -- StringFixedLength
@@ -45,7 +45,7 @@ VALUES
 )
 
 BeforeExecute
--- DB2 DB2.LUW DB2LUW
+-- DB2 DB2.LUW DB2LUW (asynchronously)
 DECLARE @Id Integer(4) -- Int32
 SET     @Id = 103
 DECLARE @Value Char -- StringFixedLength
@@ -63,7 +63,7 @@ VALUES
 )
 
 BeforeExecute
--- DB2 DB2.LUW DB2LUW
+-- DB2 DB2.LUW DB2LUW (asynchronously)
 
 SELECT
 	"r".ID,
@@ -76,7 +76,7 @@ ORDER BY
 	"r".ID
 
 BeforeExecute
--- DB2 DB2.LUW DB2LUW
+-- DB2 DB2.LUW DB2LUW (asynchronously)
 
 SELECT
 	"r".ID,
@@ -90,7 +90,7 @@ ORDER BY
 	"r".ID
 
 BeforeExecute
--- DB2 DB2.LUW DB2LUW
+-- DB2 DB2.LUW DB2LUW (asynchronously)
 DECLARE @p Integer(4) -- Int32
 SET     @p = 104
 

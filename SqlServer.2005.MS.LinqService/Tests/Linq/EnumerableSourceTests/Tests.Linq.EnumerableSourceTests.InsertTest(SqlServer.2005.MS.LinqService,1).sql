@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2005.MS SqlServer.2005
+-- SqlServer.2005.MS SqlServer.2005 (asynchronously)
 
 INSERT INTO [TableToInsert]
 (
@@ -19,7 +19,7 @@ WHERE
 	[t].[Id] IS NULL
 
 BeforeExecute
--- SqlServer.2005.MS SqlServer.2005
+-- SqlServer.2005.MS SqlServer.2005 (asynchronously)
 
 INSERT INTO [TableToInsert]
 (

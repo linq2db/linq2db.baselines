@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- PostgreSQL.18 PostgreSQL
+-- PostgreSQL.18 PostgreSQL (asynchronously)
 DECLARE @FirstName Varchar(3) -- String
 SET     @FirstName = '123'
 DECLARE @LastName Text(3) -- String
@@ -27,7 +27,7 @@ RETURNING
 	"PersonID"
 
 BeforeExecute
--- PostgreSQL.18 PostgreSQL
+-- PostgreSQL.18 PostgreSQL (asynchronously)
 DECLARE @id Integer -- Int32
 SET     @id = 5
 

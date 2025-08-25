@@ -13,7 +13,7 @@ WHERE
 	"p"."MiddleName" IS NOT NULL
 
 BeforeExecute
--- Firebird.2.5 Firebird
+-- Firebird.2.5 Firebird (asynchronously)
 
 SELECT FIRST 2
 	"p"."FirstName",

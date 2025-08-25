@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Sybase.Managed Sybase
+-- Sybase.Managed Sybase (asynchronously)
 DECLARE @value UniVarChar(3) -- String
 SET     @value = 'abc'
 
@@ -11,7 +11,7 @@ WHERE
 	[s].[String] IS NULL OR [s].[String] <> @value
 
 BeforeExecute
--- Sybase.Managed Sybase
+-- Sybase.Managed Sybase (asynchronously)
 DECLARE @value UniVarChar(3) -- String
 SET     @value = 'abc'
 
@@ -23,7 +23,7 @@ WHERE
 	[s].[NullableString] IS NULL OR [s].[NullableString] <> @value
 
 BeforeExecute
--- Sybase.Managed Sybase
+-- Sybase.Managed Sybase (asynchronously)
 DECLARE @value UniVarChar(3) -- String
 SET     @value = 'abc'
 
@@ -35,7 +35,7 @@ WHERE
 	NOT ([s].[String] IS NULL OR [s].[String] <> @value)
 
 BeforeExecute
--- Sybase.Managed Sybase
+-- Sybase.Managed Sybase (asynchronously)
 DECLARE @value UniVarChar(3) -- String
 SET     @value = 'abc'
 

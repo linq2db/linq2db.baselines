@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Firebird.3 Firebird3
+-- Firebird.3 Firebird3 (asynchronously)
 DECLARE @id Integer -- Int32
 SET     @id = 1
 
@@ -15,7 +15,7 @@ WHERE
 	"p"."PersonID" = @id AND "p"."MiddleName" IS NULL
 
 BeforeExecute
--- Firebird.3 Firebird3
+-- Firebird.3 Firebird3 (asynchronously)
 DECLARE @id Integer -- Int32
 SET     @id = 1
 

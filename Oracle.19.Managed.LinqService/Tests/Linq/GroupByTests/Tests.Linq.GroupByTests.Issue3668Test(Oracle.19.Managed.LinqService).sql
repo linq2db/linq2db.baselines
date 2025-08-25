@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Oracle.19.Managed Oracle.Managed Oracle12
+-- Oracle.19.Managed Oracle.Managed Oracle12 (asynchronously)
 DECLARE @id Int32
 SET     @id = 1
 DECLARE @name Varchar2(4) -- String
@@ -19,7 +19,7 @@ WHERE
 	m_1."FirstName" <> :name AND m_1."PersonID" - 1 = :id
 
 BeforeExecute
--- Oracle.19.Managed Oracle.Managed Oracle12
+-- Oracle.19.Managed Oracle.Managed Oracle12 (asynchronously)
 DECLARE @id Int32
 SET     @id = 1
 DECLARE @name Varchar2(4) -- String

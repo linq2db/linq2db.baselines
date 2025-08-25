@@ -1,10 +1,10 @@
 ﻿BeforeExecute
--- Access.Ace.Odbc AccessODBC
+-- Access.Ace.Odbc AccessODBC (asynchronously)
 
 DROP TABLE [TestTable]
 
 BeforeExecute
--- Access.Ace.Odbc AccessODBC
+-- Access.Ace.Odbc AccessODBC (asynchronously)
 
 CREATE TABLE [TestTable]
 (
@@ -17,7 +17,7 @@ CREATE TABLE [TestTable]
 )
 
 BeforeExecute
--- Access.Ace.Odbc AccessODBC
+-- Access.Ace.Odbc AccessODBC (asynchronously)
 
 SELECT
 	[t1].[ID],
@@ -28,7 +28,7 @@ FROM
 	[TestTable] [t1]
 
 BeforeExecute
--- Access.Ace.Odbc AccessODBC
+-- Access.Ace.Odbc AccessODBC (asynchronously)
 
 DROP TABLE [TestTable]
 

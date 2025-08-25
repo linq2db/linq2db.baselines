@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Informix.DB2 Informix
+-- Informix.DB2 Informix (asynchronously)
 
 SELECT
 	m_1.Children,
@@ -22,7 +22,7 @@ FROM
 		INNER JOIN Test3799Item d ON m_1.Children = d.ParentId OR m_1.Children IS NULL AND d.ParentId IS NULL
 
 BeforeExecute
--- Informix.DB2 Informix
+-- Informix.DB2 Informix (asynchronously)
 
 SELECT
 	item_1.Name,

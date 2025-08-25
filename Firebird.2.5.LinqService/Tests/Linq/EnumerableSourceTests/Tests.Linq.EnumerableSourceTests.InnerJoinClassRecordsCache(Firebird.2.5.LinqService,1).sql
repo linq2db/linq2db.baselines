@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Firebird.2.5 Firebird
+-- Firebird.2.5 Firebird (asynchronously)
 
 SELECT
 	"p"."FirstName",
@@ -15,7 +15,7 @@ FROM
 			SELECT 3 FROM rdb$database) "n" ON "p"."PersonID" = "n".ID
 
 BeforeExecute
--- Firebird.2.5 Firebird
+-- Firebird.2.5 Firebird (asynchronously)
 
 SELECT
 	"p"."FirstName",

@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
+-- SQLite.Classic.MPU SQLite.Classic SQLite (asynchronously)
 DECLARE @value  -- Boolean
 SET     @value = 0
 
@@ -11,7 +11,7 @@ WHERE
 	[t].[Value] = @value
 
 BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
+-- SQLite.Classic.MPU SQLite.Classic SQLite (asynchronously)
 DECLARE @value  -- Boolean
 SET     @value = 0
 
@@ -23,7 +23,7 @@ WHERE
 	[t].[Value] = @value
 
 BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
+-- SQLite.Classic.MPU SQLite.Classic SQLite (asynchronously)
 DECLARE @value  -- Boolean
 SET     @value = 0
 
@@ -35,7 +35,7 @@ WHERE
 	[t].[Value] <> @value OR [t].[Value] IS NULL
 
 BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
+-- SQLite.Classic.MPU SQLite.Classic SQLite (asynchronously)
 DECLARE @value  -- Boolean
 SET     @value = 0
 

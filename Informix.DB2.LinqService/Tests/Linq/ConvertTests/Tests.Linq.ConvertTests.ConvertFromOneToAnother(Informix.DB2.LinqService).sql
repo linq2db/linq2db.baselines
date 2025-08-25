@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Informix.DB2 Informix
+-- Informix.DB2 Informix (asynchronously)
 DECLARE @value Decimal(16)
 SET     @value = 6579.64648
 
@@ -9,7 +9,7 @@ FROM
 	LinqDataTypes t1
 
 BeforeExecute
--- Informix.DB2 Informix
+-- Informix.DB2 Informix (asynchronously)
 DECLARE @value Real(4) -- Single
 SET     @value = 6579.64648
 
@@ -19,7 +19,7 @@ FROM
 	LinqDataTypes t1
 
 BeforeExecute
--- Informix.DB2 Informix
+-- Informix.DB2 Informix (asynchronously)
 DECLARE @value Double(8)
 SET     @value = 6579.6464800000003
 
@@ -29,7 +29,7 @@ FROM
 	LinqDataTypes t1
 
 BeforeExecute
--- Informix.DB2 Informix
+-- Informix.DB2 Informix (asynchronously)
 DECLARE @value Decimal(16)
 SET     @value = 6579.64648
 
@@ -39,7 +39,7 @@ FROM
 	LinqDataTypes t1
 
 BeforeExecute
--- Informix.DB2 Informix
+-- Informix.DB2 Informix (asynchronously)
 DECLARE @value Real(4) -- Single
 SET     @value = 6579.64648
 
@@ -49,7 +49,7 @@ FROM
 	LinqDataTypes t1
 
 BeforeExecute
--- Informix.DB2 Informix
+-- Informix.DB2 Informix (asynchronously)
 DECLARE @value Double(8)
 SET     @value = 6579.6464800000003
 
@@ -59,7 +59,7 @@ FROM
 	LinqDataTypes t1
 
 BeforeExecute
--- Informix.DB2 Informix
+-- Informix.DB2 Informix (asynchronously)
 DECLARE @value Decimal(16)
 SET     @value = 6579.64648
 
@@ -69,7 +69,7 @@ FROM
 	LinqDataTypes t1
 
 BeforeExecute
--- Informix.DB2 Informix
+-- Informix.DB2 Informix (asynchronously)
 DECLARE @value Real(4) -- Single
 SET     @value = 6579.64648
 
@@ -79,7 +79,7 @@ FROM
 	LinqDataTypes t1
 
 BeforeExecute
--- Informix.DB2 Informix
+-- Informix.DB2 Informix (asynchronously)
 DECLARE @value Double(8)
 SET     @value = 6579.6464800000003
 

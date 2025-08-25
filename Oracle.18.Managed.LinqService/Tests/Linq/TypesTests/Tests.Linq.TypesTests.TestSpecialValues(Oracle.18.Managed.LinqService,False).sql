@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Oracle.18.Managed Oracle.Managed Oracle12
+-- Oracle.18.Managed Oracle.Managed Oracle12 (asynchronously)
 
 SELECT
 	MAX(t1.ID)
@@ -7,7 +7,7 @@ FROM
 	"AllTypes" t1
 
 BeforeExecute
--- Oracle.18.Managed Oracle.Managed Oracle12
+-- Oracle.18.Managed Oracle.Managed Oracle12 (asynchronously)
 DECLARE @real BinaryFloat -- Single
 SET     @real = BINARY_FLOAT_NAN
 DECLARE @dbl BinaryDouble -- Double
@@ -27,7 +27,7 @@ VALUES
 )
 
 BeforeExecute
--- Oracle.18.Managed Oracle.Managed Oracle12
+-- Oracle.18.Managed Oracle.Managed Oracle12 (asynchronously)
 DECLARE @real BinaryFloat -- Single
 SET     @real = -BINARY_FLOAT_INFINITY
 DECLARE @dbl BinaryDouble -- Double
@@ -47,7 +47,7 @@ VALUES
 )
 
 BeforeExecute
--- Oracle.18.Managed Oracle.Managed Oracle12
+-- Oracle.18.Managed Oracle.Managed Oracle12 (asynchronously)
 DECLARE @real BinaryFloat -- Single
 SET     @real = BINARY_FLOAT_INFINITY
 DECLARE @dbl BinaryDouble -- Double
@@ -67,7 +67,7 @@ VALUES
 )
 
 BeforeExecute
--- Oracle.18.Managed Oracle.Managed Oracle12
+-- Oracle.18.Managed Oracle.Managed Oracle12 (asynchronously)
 DECLARE @maxID Int32
 SET     @maxID = 2
 

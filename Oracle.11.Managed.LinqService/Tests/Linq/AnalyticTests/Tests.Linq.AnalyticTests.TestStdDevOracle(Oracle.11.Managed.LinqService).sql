@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Oracle.11.Managed Oracle11
+-- Oracle.11.Managed Oracle11 (asynchronously)
 
 SELECT
 	STDDEV(p."Value1") OVER(PARTITION BY p."Value1", c_1."ChildID"),

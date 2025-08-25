@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2008
+-- SqlServer.2008 (asynchronously)
 DECLARE @code Int -- Int32
 SET     @code = 1
 DECLARE @site Int -- Int32

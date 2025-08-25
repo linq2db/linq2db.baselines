@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
+-- PostgreSQL.17 PostgreSQL.15 PostgreSQL (asynchronously)
 DECLARE @FirstName Text(18) -- String
 SET     @FirstName = 'InsertColumnFilter'
 DECLARE @LastName Text(8) -- String
@@ -25,7 +25,7 @@ VALUES
 )
 
 BeforeExecute
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
+-- PostgreSQL.17 PostgreSQL.15 PostgreSQL (asynchronously)
 DECLARE @FirstName Text(18) -- String
 SET     @FirstName = 'InsertColumnFilter'
 
@@ -42,7 +42,7 @@ WHERE
 LIMIT 1
 
 BeforeExecute
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
+-- PostgreSQL.17 PostgreSQL.15 PostgreSQL (asynchronously)
 DECLARE @newName Text(18) -- String
 SET     @newName = 'InsertColumnFilter'
 

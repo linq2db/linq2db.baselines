@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2017.MS SqlServer.2017
+-- SqlServer.2017.MS SqlServer.2017 (asynchronously)
 
 UPDATE
 	[Issue4963Table]
@@ -7,7 +7,7 @@ SET
 	[Field] = CAST(CAST([Issue4963Table].[Field] AS Int) + -1 AS TinyInt)
 
 BeforeExecute
--- SqlServer.2017.MS SqlServer.2017
+-- SqlServer.2017.MS SqlServer.2017 (asynchronously)
 
 SELECT TOP (2)
 	[t1].[Field]

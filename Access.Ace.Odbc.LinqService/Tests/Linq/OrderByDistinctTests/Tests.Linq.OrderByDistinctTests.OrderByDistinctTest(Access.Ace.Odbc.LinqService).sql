@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Access.Ace.Odbc AccessODBC
+-- Access.Ace.Odbc AccessODBC (asynchronously)
 
 SELECT DISTINCT TOP 3
 	[x].[DuplicateData]
@@ -7,7 +7,7 @@ FROM
 	[OrderByDistinctData] [x]
 
 BeforeExecute
--- Access.Ace.Odbc AccessODBC
+-- Access.Ace.Odbc AccessODBC (asynchronously)
 
 SELECT TOP 3
 	[x].[DuplicateData]
@@ -19,7 +19,7 @@ ORDER BY
 	MAX([x].[OrderData1])
 
 BeforeExecute
--- Access.Ace.Odbc AccessODBC
+-- Access.Ace.Odbc AccessODBC (asynchronously)
 
 SELECT DISTINCT TOP 3
 	[x].[DuplicateData]
@@ -27,7 +27,7 @@ FROM
 	[OrderByDistinctData] [x]
 
 BeforeExecute
--- Access.Ace.Odbc AccessODBC
+-- Access.Ace.Odbc AccessODBC (asynchronously)
 
 SELECT TOP 3
 	[x].[DuplicateData]

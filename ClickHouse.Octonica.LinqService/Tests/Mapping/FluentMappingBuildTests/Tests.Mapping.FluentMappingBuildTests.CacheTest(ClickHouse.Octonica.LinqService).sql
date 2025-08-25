@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- ClickHouse.Octonica ClickHouse
+-- ClickHouse.Octonica ClickHouse (asynchronously)
 
 CREATE TABLE IF NOT EXISTS FluentTemp
 (
@@ -10,7 +10,7 @@ CREATE TABLE IF NOT EXISTS FluentTemp
 ENGINE = Memory()
 
 BeforeExecute
--- ClickHouse.Octonica ClickHouse
+-- ClickHouse.Octonica ClickHouse (asynchronously)
 
 INSERT INTO FluentTemp
 (
@@ -26,7 +26,7 @@ VALUES
 )
 
 BeforeExecute
--- ClickHouse.Octonica ClickHouse
+-- ClickHouse.Octonica ClickHouse (asynchronously)
 
 SELECT
 	t.ID,
@@ -38,12 +38,12 @@ WHERE
 	t.ID = 1
 
 BeforeExecute
--- ClickHouse.Octonica ClickHouse
+-- ClickHouse.Octonica ClickHouse (asynchronously)
 
 DROP TABLE IF EXISTS FluentTemp
 
 BeforeExecute
--- ClickHouse.Octonica ClickHouse
+-- ClickHouse.Octonica ClickHouse (asynchronously)
 
 CREATE TABLE IF NOT EXISTS FluentTemp
 (
@@ -54,7 +54,7 @@ CREATE TABLE IF NOT EXISTS FluentTemp
 ENGINE = Memory()
 
 BeforeExecute
--- ClickHouse.Octonica ClickHouse
+-- ClickHouse.Octonica ClickHouse (asynchronously)
 
 INSERT INTO FluentTemp
 (
@@ -70,7 +70,7 @@ VALUES
 )
 
 BeforeExecute
--- ClickHouse.Octonica ClickHouse
+-- ClickHouse.Octonica ClickHouse (asynchronously)
 
 SELECT
 	t.ID,
@@ -82,12 +82,12 @@ WHERE
 	t.ID = 1
 
 BeforeExecute
--- ClickHouse.Octonica ClickHouse
+-- ClickHouse.Octonica ClickHouse (asynchronously)
 
 DROP TABLE IF EXISTS FluentTemp
 
 BeforeExecute
--- ClickHouse.Octonica ClickHouse
+-- ClickHouse.Octonica ClickHouse (asynchronously)
 
 CREATE TABLE IF NOT EXISTS FluentTemp
 (
@@ -98,7 +98,7 @@ CREATE TABLE IF NOT EXISTS FluentTemp
 ENGINE = Memory()
 
 BeforeExecute
--- ClickHouse.Octonica ClickHouse
+-- ClickHouse.Octonica ClickHouse (asynchronously)
 
 INSERT INTO FluentTemp
 (
@@ -114,7 +114,7 @@ VALUES
 )
 
 BeforeExecute
--- ClickHouse.Octonica ClickHouse
+-- ClickHouse.Octonica ClickHouse (asynchronously)
 
 SELECT
 	t.ID,
@@ -126,12 +126,12 @@ WHERE
 	t.ID = 1
 
 BeforeExecute
--- ClickHouse.Octonica ClickHouse
+-- ClickHouse.Octonica ClickHouse (asynchronously)
 
 DROP TABLE IF EXISTS FluentTemp
 
 BeforeExecute
--- ClickHouse.Octonica ClickHouse
+-- ClickHouse.Octonica ClickHouse (asynchronously)
 
 CREATE TABLE IF NOT EXISTS FluentTemp
 (
@@ -142,7 +142,7 @@ CREATE TABLE IF NOT EXISTS FluentTemp
 ENGINE = Memory()
 
 BeforeExecute
--- ClickHouse.Octonica ClickHouse
+-- ClickHouse.Octonica ClickHouse (asynchronously)
 
 INSERT INTO FluentTemp
 (
@@ -158,7 +158,7 @@ VALUES
 )
 
 BeforeExecute
--- ClickHouse.Octonica ClickHouse
+-- ClickHouse.Octonica ClickHouse (asynchronously)
 
 SELECT
 	t.ID,
@@ -170,7 +170,7 @@ WHERE
 	t.ID = 1
 
 BeforeExecute
--- ClickHouse.Octonica ClickHouse
+-- ClickHouse.Octonica ClickHouse (asynchronously)
 
 DROP TABLE IF EXISTS FluentTemp
 

@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Firebird.3 Firebird3
+-- Firebird.3 Firebird3 (asynchronously)
 
 WITH "BooksCte" ("Book_Id", "Book_Title", "Author_Name")
 AS

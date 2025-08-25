@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Access.Jet.Odbc AccessODBC
+-- Access.Jet.Odbc AccessODBC (asynchronously)
 
 SELECT
 	[m_1].[Id],
@@ -10,7 +10,7 @@ FROM
 		INNER JOIN [SubEntity] [d] ON ([m_1].[Id] = [d].[MainEntityId])
 
 BeforeExecute
--- Access.Jet.Odbc AccessODBC
+-- Access.Jet.Odbc AccessODBC (asynchronously)
 
 SELECT
 	[t1].[Id]

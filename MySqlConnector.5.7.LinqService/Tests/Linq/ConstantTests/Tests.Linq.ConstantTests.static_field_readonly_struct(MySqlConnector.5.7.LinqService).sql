@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
+-- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57 (asynchronously)
 DECLARE @Id Int32
 SET     @Id = 1
 DECLARE @p Int32
@@ -16,7 +16,7 @@ WHERE
 	`e`.`Id` = @Id AND `e`.`Id` = @p
 
 BeforeExecute
--- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
+-- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57 (asynchronously)
 
 SELECT
 	`t1`.`Id`,
@@ -27,7 +27,7 @@ FROM
 	`TestConstantsData` `t1`
 
 BeforeExecute
--- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
+-- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57 (asynchronously)
 DECLARE @Id Int32
 SET     @Id = 1
 DECLARE @p Int32
@@ -44,7 +44,7 @@ WHERE
 	`e`.`Id` = @Id AND `e`.`Id` = @p
 
 BeforeExecute
--- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
+-- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57 (asynchronously)
 
 SELECT
 	`t1`.`Id`,

@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Access.Ace.OleDb AccessOleDb
+-- Access.Ace.OleDb AccessOleDb (asynchronously)
 DECLARE @TypedProperty VarWChar(4) -- String
 SET     @TypedProperty = '%de%'
 
@@ -30,7 +30,7 @@ FROM
 		INNER JOIN [Issue3757Level2] [d] ON ([m_1].[ID] = [d].[ParentId])
 
 BeforeExecute
--- Access.Ace.OleDb AccessOleDb
+-- Access.Ace.OleDb AccessOleDb (asynchronously)
 DECLARE @TypedProperty VarWChar(4) -- String
 SET     @TypedProperty = '%de%'
 

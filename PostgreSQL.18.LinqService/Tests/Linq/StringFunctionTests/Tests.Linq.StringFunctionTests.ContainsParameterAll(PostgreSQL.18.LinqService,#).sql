@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- PostgreSQL.18 PostgreSQL
+-- PostgreSQL.18 PostgreSQL (asynchronously)
 DECLARE @s Text(7) -- String
 SET     @s = '123#456'
 DECLARE @toTest Text(4) -- String

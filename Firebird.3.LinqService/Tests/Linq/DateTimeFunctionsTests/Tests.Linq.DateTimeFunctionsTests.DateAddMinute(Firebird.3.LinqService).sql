@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Firebird.3 Firebird3
+-- Firebird.3 Firebird3 (asynchronously)
 
 SELECT
 	Extract(minute from DateAdd(Minute, 5, "t"."DateTimeValue"))

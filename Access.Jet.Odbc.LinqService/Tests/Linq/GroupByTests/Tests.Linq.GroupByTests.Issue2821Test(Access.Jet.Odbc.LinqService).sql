@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Access.Jet.Odbc AccessODBC
+-- Access.Jet.Odbc AccessODBC (asynchronously)
 DECLARE @currentDate DateTime
 SET     @currentDate = #2020-02-29 17:54:55#
 DECLARE @currentDate DateTime

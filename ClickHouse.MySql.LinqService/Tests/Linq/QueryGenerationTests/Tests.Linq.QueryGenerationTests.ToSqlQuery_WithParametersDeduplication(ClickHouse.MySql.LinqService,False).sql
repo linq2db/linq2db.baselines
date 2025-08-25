@@ -13,7 +13,7 @@ WHERE
 	p.FirstName = 'John' OR p.LastName = 'John'
 
 BeforeExecute
--- ClickHouse.MySql ClickHouse
+-- ClickHouse.MySql ClickHouse (asynchronously)
 
 SELECT
 	p.FirstName,

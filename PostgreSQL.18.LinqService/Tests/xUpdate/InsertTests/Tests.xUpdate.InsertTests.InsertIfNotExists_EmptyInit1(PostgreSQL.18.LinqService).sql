@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- PostgreSQL.18 PostgreSQL
+-- PostgreSQL.18 PostgreSQL (asynchronously)
 
 INSERT INTO test_insert_or_replace AS t1
 (
@@ -14,7 +14,7 @@ VALUES
 ON CONFLICT (id) DO NOTHING
 
 BeforeExecute
--- PostgreSQL.18 PostgreSQL
+-- PostgreSQL.18 PostgreSQL (asynchronously)
 
 INSERT INTO test_insert_or_replace AS t1
 (

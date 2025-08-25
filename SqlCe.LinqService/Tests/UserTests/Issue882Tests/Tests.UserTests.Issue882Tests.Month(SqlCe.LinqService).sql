@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 
 SELECT
 	DatePart(month, [t].[DateTimeValue]) % 7 as [c1]

@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Firebird.5 Firebird4
+-- Firebird.5 Firebird4 (asynchronously)
 DECLARE @personId Integer -- Int32
 SET     @personId = 1
 DECLARE @personId_1 Integer -- Int32
@@ -22,7 +22,7 @@ WHERE
 	"p"."PersonID" = @personId AND "p"."PersonID" = @personId_1
 
 BeforeExecute
--- Firebird.5 Firebird4
+-- Firebird.5 Firebird4 (asynchronously)
 DECLARE @personId Integer -- Int32
 SET     @personId = 1
 DECLARE @personId_1 Integer -- Int32

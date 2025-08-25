@@ -12,7 +12,7 @@ WHERE
 	[p].[ParentID] = @id
 
 BeforeExecute
--- SQLite.Classic.MPM SQLite.Classic SQLite
+-- SQLite.Classic.MPM SQLite.Classic SQLite (asynchronously)
 DECLARE @id  -- Int32
 SET     @id = 2
 

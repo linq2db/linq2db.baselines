@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Informix.DB2 Informix
+-- Informix.DB2 Informix (asynchronously)
 
 SELECT
 	m_1.Id,
@@ -12,7 +12,7 @@ FROM
 		LEFT JOIN EntityMD a_ObjectD ON d.FKD = a_ObjectD.Id
 
 BeforeExecute
--- Informix.DB2 Informix
+-- Informix.DB2 Informix (asynchronously)
 
 SELECT
 	e.Id

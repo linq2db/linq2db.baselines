@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL (asynchronously)
 
 WITH "CTE_1" ("Child_ParentID", "Child_ChildID")
 AS
@@ -20,7 +20,7 @@ FROM
 		INNER JOIN "CTE_1" c_1 ON p."ParentID" = c_1."Child_ParentID"
 
 BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL (asynchronously)
 
 SELECT
 	p."ParentID",

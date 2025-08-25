@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Firebird.2.5 Firebird
+-- Firebird.2.5 Firebird (asynchronously)
 
 SELECT
 	"m_1"."Id",
@@ -34,7 +34,7 @@ FROM
 		LEFT JOIN "Author" "a_Author" ON "d"."FkAuthorId" = "a_Author"."AuthorId"
 
 BeforeExecute
--- Firebird.2.5 Firebird
+-- Firebird.2.5 Firebird (asynchronously)
 
 SELECT
 	"a_Book"."BookId",
@@ -59,7 +59,7 @@ WHERE
 	"a_Book_1"."Discriminator" = 'Novel'
 
 BeforeExecute
--- Firebird.2.5 Firebird
+-- Firebird.2.5 Firebird (asynchronously)
 
 SELECT
 	"m_1"."BookId",
@@ -85,7 +85,7 @@ FROM
 		LEFT JOIN "Author" "a_Author" ON "d_1"."FkAuthorId" = "a_Author"."AuthorId"
 
 BeforeExecute
--- Firebird.2.5 Firebird
+-- Firebird.2.5 Firebird (asynchronously)
 
 SELECT
 	"m_1"."AuthorId",
@@ -100,7 +100,7 @@ FROM
 		LEFT JOIN "Book" "a_Book" ON "d"."FkBookId" = "a_Book"."BookId"
 
 BeforeExecute
--- Firebird.2.5 Firebird
+-- Firebird.2.5 Firebird (asynchronously)
 
 SELECT
 	"t1"."AuthorId",

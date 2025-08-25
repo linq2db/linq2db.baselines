@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Firebird.2.5 Firebird
+-- Firebird.2.5 Firebird (asynchronously)
 DECLARE @take Integer -- Int32
 SET     @take = 3
 DECLARE @skip Integer -- Int32
@@ -11,7 +11,7 @@ FROM
 	"OrderByDistinctData" "x"
 
 BeforeExecute
--- Firebird.2.5 Firebird
+-- Firebird.2.5 Firebird (asynchronously)
 DECLARE @take Integer -- Int32
 SET     @take = 3
 DECLARE @skip Integer -- Int32
@@ -27,7 +27,7 @@ ORDER BY
 	MAX("x"."OrderData1")
 
 BeforeExecute
--- Firebird.2.5 Firebird
+-- Firebird.2.5 Firebird (asynchronously)
 DECLARE @take Integer -- Int32
 SET     @take = 3
 DECLARE @skip Integer -- Int32
@@ -39,7 +39,7 @@ FROM
 	"OrderByDistinctData" "x"
 
 BeforeExecute
--- Firebird.2.5 Firebird
+-- Firebird.2.5 Firebird (asynchronously)
 DECLARE @take Integer -- Int32
 SET     @take = 3
 DECLARE @skip Integer -- Int32

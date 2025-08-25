@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2012
+-- SqlServer.2012 (asynchronously)
 DECLARE @VBLocal_id Int -- Int32
 SET     @VBLocal_id = 1
 

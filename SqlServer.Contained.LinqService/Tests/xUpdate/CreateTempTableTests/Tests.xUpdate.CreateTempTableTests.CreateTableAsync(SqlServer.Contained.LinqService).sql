@@ -25,7 +25,7 @@ FROM
 	[Parent] [p]
 
 BeforeExecute
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2019 (asynchronously)
 
 SELECT
 	[t].[ID]

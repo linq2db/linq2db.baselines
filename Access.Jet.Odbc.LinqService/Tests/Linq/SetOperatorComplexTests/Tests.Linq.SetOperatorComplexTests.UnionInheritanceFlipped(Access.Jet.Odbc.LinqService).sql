@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Access.Jet.Odbc AccessODBC
+-- Access.Jet.Odbc AccessODBC (asynchronously)
 
 SELECT
 	[a_Book].[BookId],
@@ -30,7 +30,7 @@ WHERE
 	[a_Book_1].[Discriminator] = 'Roman'
 
 BeforeExecute
--- Access.Jet.Odbc AccessODBC
+-- Access.Jet.Odbc AccessODBC (asynchronously)
 
 SELECT
 	[m_1].[AuthorId],
@@ -45,7 +45,7 @@ FROM
 		LEFT JOIN [Book] [a_Book] ON ([d].[FkBookId] = [a_Book].[BookId])
 
 BeforeExecute
--- Access.Jet.Odbc AccessODBC
+-- Access.Jet.Odbc AccessODBC (asynchronously)
 
 SELECT
 	[t1].[AuthorId],

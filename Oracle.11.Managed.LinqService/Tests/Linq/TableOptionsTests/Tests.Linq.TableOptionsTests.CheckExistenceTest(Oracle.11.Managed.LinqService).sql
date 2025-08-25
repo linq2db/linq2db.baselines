@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Oracle.11.Managed Oracle11
+-- Oracle.11.Managed Oracle11 (asynchronously)
 
 BEGIN
 	EXECUTE IMMEDIATE '
@@ -16,7 +16,7 @@ EXCEPTION
 END;
 
 BeforeExecute
--- Oracle.11.Managed Oracle11
+-- Oracle.11.Managed Oracle11 (asynchronously)
 
 BEGIN
 	EXECUTE IMMEDIATE 'DROP TABLE "DisposableTable"';

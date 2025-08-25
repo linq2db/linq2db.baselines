@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2016
+-- SqlServer.2016 (asynchronously)
 
 INSERT INTO [TestTempTable]
 (
@@ -13,7 +13,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2016
+-- SqlServer.2016 (asynchronously)
 
 IF (OBJECT_ID(N'[TempTable]', N'U') IS NULL)
 	CREATE TABLE [TempTable]
@@ -23,7 +23,7 @@ IF (OBJECT_ID(N'[TempTable]', N'U') IS NULL)
 	)
 
 BeforeExecute
--- SqlServer.2016
+-- SqlServer.2016 (asynchronously)
 
 INSERT INTO [TempTable]
 (
@@ -37,7 +37,7 @@ FROM
 	[TestTempTable] [t1]
 
 BeforeExecute
--- SqlServer.2016
+-- SqlServer.2016 (asynchronously)
 
 INSERT INTO [TestTempTable]
 (
@@ -51,7 +51,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2016
+-- SqlServer.2016 (asynchronously)
 
 INSERT INTO [TempTable]
 (
@@ -65,7 +65,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2016
+-- SqlServer.2016 (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -76,7 +76,7 @@ ORDER BY
 	[t1].[Id]
 
 BeforeExecute
--- SqlServer.2016
+-- SqlServer.2016 (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -87,7 +87,7 @@ ORDER BY
 	[t1].[Id]
 
 BeforeExecute
--- SqlServer.2016
+-- SqlServer.2016 (asynchronously)
 
 DROP TABLE IF EXISTS [TempTable]
 

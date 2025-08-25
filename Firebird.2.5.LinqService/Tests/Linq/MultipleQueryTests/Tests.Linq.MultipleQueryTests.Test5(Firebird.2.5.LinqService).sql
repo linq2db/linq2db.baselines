@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Firebird.2.5 Firebird
+-- Firebird.2.5 Firebird (asynchronously)
 
 SELECT
 	"m_1"."ParentID",
@@ -16,7 +16,7 @@ FROM
 		INNER JOIN "Parent" "d" ON "d"."ParentID" = "m_1"."ParentID"
 
 BeforeExecute
--- Firebird.2.5 Firebird
+-- Firebird.2.5 Firebird (asynchronously)
 
 SELECT
 	"a_Parent"."ParentID"

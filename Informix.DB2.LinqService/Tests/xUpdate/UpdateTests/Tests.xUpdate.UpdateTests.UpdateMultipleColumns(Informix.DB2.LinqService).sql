@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Informix.DB2 Informix
+-- Informix.DB2 Informix (asynchronously)
 DECLARE @ID Integer(4) -- Int32
 SET     @ID = 1001
 DECLARE @MoneyValue Decimal(16)
@@ -21,7 +21,7 @@ VALUES
 )
 
 BeforeExecute
--- Informix.DB2 Informix
+-- Informix.DB2 Informix (asynchronously)
 DECLARE @ID Integer(4) -- Int32
 SET     @ID = 1001
 
@@ -34,7 +34,7 @@ WHERE
 	t.ID = @ID
 
 BeforeExecute
--- Informix.DB2 Informix
+-- Informix.DB2 Informix (asynchronously)
 DECLARE @ID Integer(4) -- Int32
 SET     @ID = 1001
 

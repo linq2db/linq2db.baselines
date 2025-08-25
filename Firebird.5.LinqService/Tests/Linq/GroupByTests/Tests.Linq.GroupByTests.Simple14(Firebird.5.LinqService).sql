@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Firebird.5 Firebird4
+-- Firebird.5 Firebird4 (asynchronously)
 
 SELECT
 	"m_1"."ParentID",
@@ -21,7 +21,7 @@ FROM
 		) "d_1" ON "m_1"."ParentID" = "d_1"."Key_1"
 
 BeforeExecute
--- Firebird.5 Firebird4
+-- Firebird.5 Firebird4 (asynchronously)
 
 SELECT
 	"p"."ParentID"

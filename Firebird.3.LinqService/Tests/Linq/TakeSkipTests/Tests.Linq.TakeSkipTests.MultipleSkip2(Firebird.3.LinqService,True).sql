@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Firebird.3 Firebird3
+-- Firebird.3 Firebird3 (asynchronously)
 DECLARE @skip Integer -- Int32
 SET     @skip = 3
 
@@ -12,7 +12,7 @@ ORDER BY
 OFFSET @skip ROWS
 
 BeforeExecute
--- Firebird.3 Firebird3
+-- Firebird.3 Firebird3 (asynchronously)
 DECLARE @skip Integer -- Int32
 SET     @skip = 4
 

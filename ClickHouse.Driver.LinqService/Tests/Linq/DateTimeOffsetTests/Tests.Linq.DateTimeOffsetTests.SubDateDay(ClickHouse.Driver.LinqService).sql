@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- ClickHouse.Driver ClickHouse
+-- ClickHouse.Driver ClickHouse (asynchronously)
 
 SELECT
 	date_diff('day', t.TransactionDate, addHours(t.TransactionDate, toFloat64(96)))

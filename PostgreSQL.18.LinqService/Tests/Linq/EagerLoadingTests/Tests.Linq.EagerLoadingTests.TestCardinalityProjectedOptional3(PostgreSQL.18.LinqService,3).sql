@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- PostgreSQL.18 PostgreSQL
+-- PostgreSQL.18 PostgreSQL (asynchronously)
 
 SELECT
 	m_1."Id",
@@ -16,7 +16,7 @@ FROM
 		INNER JOIN "EntityD" d ON m_1."Id" = d."FK" OR m_1."Id" IS NULL AND d."FK" IS NULL
 
 BeforeExecute
--- PostgreSQL.18 PostgreSQL
+-- PostgreSQL.18 PostgreSQL (asynchronously)
 
 SELECT
 	e."Id",

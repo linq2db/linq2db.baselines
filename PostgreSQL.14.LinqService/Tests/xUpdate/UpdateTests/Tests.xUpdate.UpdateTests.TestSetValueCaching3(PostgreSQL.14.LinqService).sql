@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL (asynchronously)
 DECLARE @Value3 Integer -- Int32
 SET     @Value3 = 7
 DECLARE @id Integer -- Int32
@@ -13,7 +13,7 @@ WHERE
 	"UpdateSetTest"."Id" = :id
 
 BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL (asynchronously)
 DECLARE @id Integer -- Int32
 SET     @id = 1
 
@@ -26,7 +26,7 @@ WHERE
 LIMIT 2
 
 BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL (asynchronously)
 DECLARE @Value3 Integer -- Int32
 SET     @Value3 = 8
 DECLARE @id Integer -- Int32
@@ -40,7 +40,7 @@ WHERE
 	"UpdateSetTest"."Id" = :id
 
 BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL (asynchronously)
 DECLARE @id Integer -- Int32
 SET     @id = 1
 

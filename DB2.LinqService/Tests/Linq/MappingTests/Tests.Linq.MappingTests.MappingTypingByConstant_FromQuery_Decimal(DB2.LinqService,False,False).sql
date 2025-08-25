@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- DB2 DB2.LUW DB2LUW
+-- DB2 DB2.LUW DB2LUW (asynchronously)
 DECLARE @value (1, 0) -- Decimal
 SET     @value = 1
 
@@ -16,7 +16,7 @@ FROM
 	) "t1"
 
 BeforeExecute
--- DB2 DB2.LUW DB2LUW
+-- DB2 DB2.LUW DB2LUW (asynchronously)
 DECLARE @value (13, 3) -- Decimal
 SET     @value = 2147483648.123
 

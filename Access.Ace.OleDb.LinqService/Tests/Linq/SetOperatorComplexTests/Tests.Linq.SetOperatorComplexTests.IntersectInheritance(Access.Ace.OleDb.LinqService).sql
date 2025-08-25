@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Access.Ace.OleDb AccessOleDb
+-- Access.Ace.OleDb AccessOleDb (asynchronously)
 
 SELECT DISTINCT
 	[a_Book].[BookId],
@@ -22,7 +22,7 @@ WHERE
 	)
 
 BeforeExecute
--- Access.Ace.OleDb AccessOleDb
+-- Access.Ace.OleDb AccessOleDb (asynchronously)
 
 SELECT
 	[m_1].[AuthorId],
@@ -37,7 +37,7 @@ FROM
 		LEFT JOIN [Book] [a_Book] ON ([d].[FkBookId] = [a_Book].[BookId])
 
 BeforeExecute
--- Access.Ace.OleDb AccessOleDb
+-- Access.Ace.OleDb AccessOleDb (asynchronously)
 
 SELECT
 	[t1].[AuthorId],

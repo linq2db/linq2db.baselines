@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- DB2 DB2.LUW DB2LUW
+-- DB2 DB2.LUW DB2LUW (asynchronously)
 
 SELECT
 	"c_1"."ParentID",
@@ -11,7 +11,7 @@ FROM
 		ON "c_1"."ParentID" = "a_Child"."ParentID" AND "c_1"."ChildID" = "a_Child"."ChildID"
 
 BeforeExecute
--- DB2 DB2.LUW DB2LUW
+-- DB2 DB2.LUW DB2LUW (asynchronously)
 
 SELECT
 	"c_1"."ParentID",

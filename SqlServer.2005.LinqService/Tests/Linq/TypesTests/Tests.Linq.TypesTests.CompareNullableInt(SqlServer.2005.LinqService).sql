@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2005
+-- SqlServer.2005 (asynchronously)
 
 SELECT
 	[t].[ParentID],
@@ -8,7 +8,7 @@ FROM
 	[Parent] [t]
 
 BeforeExecute
--- SqlServer.2005
+-- SqlServer.2005 (asynchronously)
 DECLARE @param Int -- Int32
 SET     @param = 1
 

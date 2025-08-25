@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2017.MS SqlServer.2017
+-- SqlServer.2017.MS SqlServer.2017 (asynchronously)
 DECLARE @Value3 Int -- Int32
 SET     @Value3 = 7
 DECLARE @id Int -- Int32
@@ -13,7 +13,7 @@ WHERE
 	[UpdateSetTest].[Id] = @id
 
 BeforeExecute
--- SqlServer.2017.MS SqlServer.2017
+-- SqlServer.2017.MS SqlServer.2017 (asynchronously)
 DECLARE @id Int -- Int32
 SET     @id = 1
 
@@ -25,7 +25,7 @@ WHERE
 	[t1].[Id] = @id
 
 BeforeExecute
--- SqlServer.2017.MS SqlServer.2017
+-- SqlServer.2017.MS SqlServer.2017 (asynchronously)
 DECLARE @Value3 Int -- Int32
 SET     @Value3 = 8
 DECLARE @id Int -- Int32
@@ -39,7 +39,7 @@ WHERE
 	[UpdateSetTest].[Id] = @id
 
 BeforeExecute
--- SqlServer.2017.MS SqlServer.2017
+-- SqlServer.2017.MS SqlServer.2017 (asynchronously)
 DECLARE @id Int -- Int32
 SET     @id = 1
 

@@ -11,7 +11,7 @@ FROM
 	[Person] [t1]
 
 BeforeExecute
--- ClickHouse.Driver ClickHouse
+-- ClickHouse.Driver ClickHouse (asynchronously)
 
 SELECT
 	p.PersonID

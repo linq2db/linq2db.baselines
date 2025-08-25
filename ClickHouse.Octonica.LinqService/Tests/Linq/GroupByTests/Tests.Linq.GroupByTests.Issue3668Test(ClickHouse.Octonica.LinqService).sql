@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- ClickHouse.Octonica ClickHouse
+-- ClickHouse.Octonica ClickHouse (asynchronously)
 
 SELECT
 	m_1.PersonID,
@@ -14,7 +14,7 @@ WHERE
 	m_1.PersonID = 1 AND m_1.LastName <> 'test' OR m_1.FirstName <> 'test' AND m_1.PersonID = 2
 
 BeforeExecute
--- ClickHouse.Octonica ClickHouse
+-- ClickHouse.Octonica ClickHouse (asynchronously)
 
 SELECT
 	x.PersonID

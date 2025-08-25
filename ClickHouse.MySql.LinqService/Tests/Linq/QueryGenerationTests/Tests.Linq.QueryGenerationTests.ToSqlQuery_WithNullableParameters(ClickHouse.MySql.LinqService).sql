@@ -13,7 +13,7 @@ WHERE
 	p.MiddleName IS NOT NULL
 
 BeforeExecute
--- ClickHouse.MySql ClickHouse
+-- ClickHouse.MySql ClickHouse (asynchronously)
 
 SELECT
 	p.FirstName,

@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- PostgreSQL.18 PostgreSQL
+-- PostgreSQL.18 PostgreSQL (asynchronously)
 DECLARE @value TimestampTz -- DateTime
 SET     @value = '2020-02-29T17:14:55.1231234+00:00'
 

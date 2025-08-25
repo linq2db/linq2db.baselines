@@ -13,7 +13,7 @@ WHERE
 	p.MiddleName IS NOT NULL
 
 BeforeExecute
--- ClickHouse.Octonica ClickHouse
+-- ClickHouse.Octonica ClickHouse (asynchronously)
 
 SELECT
 	p.FirstName,

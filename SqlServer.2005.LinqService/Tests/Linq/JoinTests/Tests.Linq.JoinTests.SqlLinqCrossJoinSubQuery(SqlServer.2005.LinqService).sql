@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2005
+-- SqlServer.2005 (asynchronously)
 DECLARE @take Int -- Int32
 SET     @take = 10
 DECLARE @take_1 Int -- Int32

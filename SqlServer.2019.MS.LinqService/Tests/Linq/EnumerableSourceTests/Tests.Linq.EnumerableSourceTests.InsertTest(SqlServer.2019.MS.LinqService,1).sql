@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2019.MS SqlServer.2019
+-- SqlServer.2019.MS SqlServer.2019 (asynchronously)
 
 INSERT INTO [TableToInsert]
 (
@@ -18,7 +18,7 @@ WHERE
 	[t].[Id] IS NULL
 
 BeforeExecute
--- SqlServer.2019.MS SqlServer.2019
+-- SqlServer.2019.MS SqlServer.2019 (asynchronously)
 
 INSERT INTO [TableToInsert]
 (

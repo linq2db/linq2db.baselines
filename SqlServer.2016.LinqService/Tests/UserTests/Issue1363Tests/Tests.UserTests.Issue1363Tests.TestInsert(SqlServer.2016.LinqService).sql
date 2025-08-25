@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2016
+-- SqlServer.2016 (asynchronously)
 DECLARE @id UniqueIdentifier -- Guid
 SET     @id = 'bc7b663d-0fde-4327-8f92-5d8cc3a11d11'
 
@@ -22,7 +22,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2016
+-- SqlServer.2016 (asynchronously)
 DECLARE @id UniqueIdentifier -- Guid
 SET     @id = 'a948600d-de21-4f74-8ac2-9516b287076e'
 DECLARE @testId UniqueIdentifier -- Guid
@@ -47,7 +47,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2016
+-- SqlServer.2016 (asynchronously)
 DECLARE @id2 UniqueIdentifier -- Guid
 SET     @id2 = 'a948600d-de21-4f74-8ac2-9516b287076e'
 

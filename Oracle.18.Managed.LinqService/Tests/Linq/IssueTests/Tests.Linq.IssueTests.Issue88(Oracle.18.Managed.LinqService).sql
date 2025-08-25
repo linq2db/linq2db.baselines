@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Oracle.18.Managed Oracle.Managed Oracle12
+-- Oracle.18.Managed Oracle.Managed Oracle12 (asynchronously)
 
 SELECT
 	t1."FirstName",
@@ -13,7 +13,7 @@ WHERE
 	t1."PersonID" = 1 AND t1."Gender" = 'M'
 
 BeforeExecute
--- Oracle.18.Managed Oracle.Managed Oracle12
+-- Oracle.18.Managed Oracle.Managed Oracle12 (asynchronously)
 
 SELECT
 	t1."FirstName",
@@ -27,7 +27,7 @@ WHERE
 	t1."PersonID" = 1 AND 'M' = t1."Gender"
 
 BeforeExecute
--- Oracle.18.Managed Oracle.Managed Oracle12
+-- Oracle.18.Managed Oracle.Managed Oracle12 (asynchronously)
 DECLARE @gender Char -- StringFixedLength
 SET     @gender = 'M'
 
@@ -43,7 +43,7 @@ WHERE
 	t1."PersonID" = 1 AND t1."Gender" = :gender
 
 BeforeExecute
--- Oracle.18.Managed Oracle.Managed Oracle12
+-- Oracle.18.Managed Oracle.Managed Oracle12 (asynchronously)
 DECLARE @gender Char -- StringFixedLength
 SET     @gender = 'M'
 

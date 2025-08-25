@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- PostgreSQL.18 PostgreSQL
+-- PostgreSQL.18 PostgreSQL (asynchronously)
 DECLARE @value Real -- Single
 SET     @value = NULL
 
@@ -16,7 +16,7 @@ FROM
 	) t1
 
 BeforeExecute
--- PostgreSQL.18 PostgreSQL
+-- PostgreSQL.18 PostgreSQL (asynchronously)
 DECLARE @value Real -- Single
 SET     @value = 3.14748365E+09
 

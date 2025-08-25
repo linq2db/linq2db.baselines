@@ -1,10 +1,10 @@
 ﻿BeforeExecute
--- Informix.DB2 Informix
+-- Informix.DB2 Informix (asynchronously)
 
 DROP TABLE IF EXISTS FluentTemp
 
 BeforeExecute
--- Informix.DB2 Informix
+-- Informix.DB2 Informix (asynchronously)
 
 CREATE TABLE IF NOT EXISTS FluentTemp
 (
@@ -15,7 +15,7 @@ CREATE TABLE IF NOT EXISTS FluentTemp
 )
 
 BeforeExecute
--- Informix.DB2 Informix
+-- Informix.DB2 Informix (asynchronously)
 DECLARE @ID Integer(4) -- Int32
 SET     @ID = 1
 DECLARE @Name VarChar(4) -- String
@@ -33,7 +33,7 @@ VALUES
 )
 
 BeforeExecute
--- Informix.DB2 Informix
+-- Informix.DB2 Informix (asynchronously)
 
 UPDATE
 	FluentTemp t1
@@ -44,7 +44,7 @@ WHERE
 	t1.ID = 1
 
 BeforeExecute
--- Informix.DB2 Informix
+-- Informix.DB2 Informix (asynchronously)
 
 DROP TABLE IF EXISTS FluentTemp
 

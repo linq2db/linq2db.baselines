@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.SA.MS SqlServer.2019
+-- SqlServer.SA.MS SqlServer.2019 (asynchronously)
 DECLARE @z2 Int -- Int32
 SET     @z2 = 2
 DECLARE @y10 Int -- Int32

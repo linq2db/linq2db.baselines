@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Firebird.3 Firebird3
+-- Firebird.3 Firebird3 (asynchronously)
 
 INSERT INTO "CteChild"
 (
@@ -35,7 +35,7 @@ FROM
 		INNER JOIN LAST0 "c4_1" ON "c4_1"."ParentID" = "p"."ParentID"
 
 BeforeExecute
--- Firebird.3 Firebird3
+-- Firebird.3 Firebird3 (asynchronously)
 
 SELECT
 	"t1"."ChildID",
@@ -47,7 +47,7 @@ ORDER BY
 	"t1"."ParentID"
 
 BeforeExecute
--- Firebird.3 Firebird3
+-- Firebird.3 Firebird3 (asynchronously)
 
 SELECT
 	"c4"."ChildID",

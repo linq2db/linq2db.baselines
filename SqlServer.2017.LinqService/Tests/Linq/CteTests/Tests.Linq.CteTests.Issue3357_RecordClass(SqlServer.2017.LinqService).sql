@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2017
+-- SqlServer.2017 (asynchronously)
 
 WITH [cte] ([Id], [FirstName], [LastName])
 AS

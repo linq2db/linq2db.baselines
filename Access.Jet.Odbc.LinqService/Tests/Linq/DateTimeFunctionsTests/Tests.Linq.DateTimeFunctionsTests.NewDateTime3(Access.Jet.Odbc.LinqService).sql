@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Access.Jet.Odbc AccessODBC
+-- Access.Jet.Odbc AccessODBC (asynchronously)
 
 SELECT
 	CDate(CStr(DatePart('yyyy', [t].[DateTimeValue])) + '-10-01 20:35:44')

@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- MySql.8.0 MySql.8.0.MySql.Data MySql80
+-- MySql.8.0 MySql.8.0.MySql.Data MySql80 (asynchronously)
 DECLARE @Id Int32
 SET     @Id = 1
 DECLARE @SomeDateTimeOffset Datetime -- DateTimeOffset
@@ -21,7 +21,7 @@ VALUES
 )
 
 BeforeExecute
--- MySql.8.0 MySql.8.0.MySql.Data MySql80
+-- MySql.8.0 MySql.8.0.MySql.Data MySql80 (asynchronously)
 DECLARE @Id Int32
 SET     @Id = 2
 DECLARE @SomeDateTimeOffset Datetime -- DateTimeOffset
@@ -39,7 +39,7 @@ VALUES
 )
 
 BeforeExecute
--- MySql.8.0 MySql.8.0.MySql.Data MySql80
+-- MySql.8.0 MySql.8.0.MySql.Data MySql80 (asynchronously)
 DECLARE @clientSideIn Datetime -- DateTimeOffset
 SET     @clientSideIn = '2019-08-08T08:08:18.0000000+00:00'
 

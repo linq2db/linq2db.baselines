@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- PostgreSQL.18 PostgreSQL
+-- PostgreSQL.18 PostgreSQL (asynchronously)
 DECLARE @FirstName Text(4) -- String
 SET     @FirstName = 'test'
 DECLARE @LastName Text(7) -- String
@@ -27,7 +27,7 @@ RETURNING
 	"PersonID"
 
 BeforeExecute
--- PostgreSQL.18 PostgreSQL
+-- PostgreSQL.18 PostgreSQL (asynchronously)
 DECLARE @id Integer -- Int32
 SET     @id = 5
 
@@ -44,7 +44,7 @@ VALUES
 ON CONFLICT ("PersonID") DO NOTHING
 
 BeforeExecute
--- PostgreSQL.18 PostgreSQL
+-- PostgreSQL.18 PostgreSQL (asynchronously)
 DECLARE @id Integer -- Int32
 SET     @id = 5
 
@@ -57,7 +57,7 @@ WHERE
 	p."PersonID" = :id
 
 BeforeExecute
--- PostgreSQL.18 PostgreSQL
+-- PostgreSQL.18 PostgreSQL (asynchronously)
 DECLARE @id Integer -- Int32
 SET     @id = 5
 
@@ -74,7 +74,7 @@ VALUES
 ON CONFLICT ("PersonID") DO NOTHING
 
 BeforeExecute
--- PostgreSQL.18 PostgreSQL
+-- PostgreSQL.18 PostgreSQL (asynchronously)
 DECLARE @id Integer -- Int32
 SET     @id = 5
 

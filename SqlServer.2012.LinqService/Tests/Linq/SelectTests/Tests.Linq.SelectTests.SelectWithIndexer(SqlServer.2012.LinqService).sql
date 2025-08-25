@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2012
+-- SqlServer.2012 (asynchronously)
 
 SELECT
 	[x].[FirstName],
@@ -21,7 +21,7 @@ ORDER BY
 	[x].[PersonID] DESC
 
 BeforeExecute
--- SqlServer.2012
+-- SqlServer.2012 (asynchronously)
 
 SELECT
 	[t1].[FirstName],

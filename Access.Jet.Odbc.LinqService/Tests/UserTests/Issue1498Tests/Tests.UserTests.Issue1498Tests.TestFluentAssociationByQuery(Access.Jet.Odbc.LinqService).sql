@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Access.Jet.Odbc AccessODBC
+-- Access.Jet.Odbc AccessODBC (asynchronously)
 DECLARE @Id Int -- Int32
 SET     @Id = 6
 DECLARE @Title NVarChar(5) -- String
@@ -21,7 +21,7 @@ VALUES
 )
 
 BeforeExecute
--- Access.Jet.Odbc AccessODBC
+-- Access.Jet.Odbc AccessODBC (asynchronously)
 DECLARE @Id Int -- Int32
 SET     @Id = 60
 DECLARE @TopicId Int -- Int32
@@ -43,7 +43,7 @@ VALUES
 )
 
 BeforeExecute
--- Access.Jet.Odbc AccessODBC
+-- Access.Jet.Odbc AccessODBC (asynchronously)
 DECLARE @Id Int -- Int32
 SET     @Id = 61
 DECLARE @TopicId Int -- Int32
@@ -65,7 +65,7 @@ VALUES
 )
 
 BeforeExecute
--- Access.Jet.Odbc AccessODBC
+-- Access.Jet.Odbc AccessODBC (asynchronously)
 
 SELECT
 	[m_1].[Id],
@@ -82,7 +82,7 @@ FROM
 		INNER JOIN [Message] [d] ON ([d].[TopicId] = [m_1].[Id])
 
 BeforeExecute
--- Access.Jet.Odbc AccessODBC
+-- Access.Jet.Odbc AccessODBC (asynchronously)
 
 SELECT TOP 1
 	[x].[Id],

@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Access.Ace.Odbc AccessODBC
+-- Access.Ace.Odbc AccessODBC (asynchronously)
 DECLARE @id1 Int -- Int32
 SET     @id1 = 1
 DECLARE @id1 Int -- Int32
@@ -18,7 +18,7 @@ ORDER BY
 	[p].[ParentID]
 
 BeforeExecute
--- Access.Ace.Odbc AccessODBC
+-- Access.Ace.Odbc AccessODBC (asynchronously)
 DECLARE @id1 Int -- Int32
 SET     @id1 = 2
 DECLARE @id1 Int -- Int32

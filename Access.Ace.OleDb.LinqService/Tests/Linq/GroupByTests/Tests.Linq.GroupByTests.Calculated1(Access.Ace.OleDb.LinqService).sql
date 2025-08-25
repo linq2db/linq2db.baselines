@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Access.Ace.OleDb AccessOleDb
+-- Access.Ace.OleDb AccessOleDb (asynchronously)
 
 SELECT
 	[m_1].[Key_1],
@@ -15,7 +15,7 @@ FROM
 		INNER JOIN [Child] [d] ON ([m_1].[Key_1] = IIF([d].[ParentID] > 2, IIF([d].[ParentID] > 3, '1', '2'), '3'))
 
 BeforeExecute
--- Access.Ace.OleDb AccessOleDb
+-- Access.Ace.OleDb AccessOleDb (asynchronously)
 
 SELECT
 	[g_2].[Key_1]

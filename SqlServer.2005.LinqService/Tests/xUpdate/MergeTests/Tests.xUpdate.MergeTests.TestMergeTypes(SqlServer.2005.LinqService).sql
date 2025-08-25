@@ -1,19 +1,19 @@
 ﻿BeforeExecute
--- SqlServer.2005
+-- SqlServer.2005 (asynchronously)
 
 DELETE [t1]
 FROM
 	[TestMerge1] [t1]
 
 BeforeExecute
--- SqlServer.2005
+-- SqlServer.2005 (asynchronously)
 
 DELETE [t1]
 FROM
 	[TestMerge2] [t1]
 
 BeforeExecute
--- SqlServer.2005
+-- SqlServer.2005 (asynchronously)
 DECLARE @Id Int -- Int32
 SET     @Id = 1
 DECLARE @FieldInt32 Int -- Int32
@@ -87,7 +87,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2005
+-- SqlServer.2005 (asynchronously)
 DECLARE @Id Int -- Int32
 SET     @Id = 2
 DECLARE @FieldInt32 Int -- Int32
@@ -161,7 +161,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2005
+-- SqlServer.2005 (asynchronously)
 DECLARE @Id Int -- Int32
 SET     @Id = 3
 DECLARE @FieldInt32 Int -- Int32
@@ -237,7 +237,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2005
+-- SqlServer.2005 (asynchronously)
 DECLARE @Id Int -- Int32
 SET     @Id = 4
 DECLARE @FieldInt32 Int -- Int32
@@ -312,7 +312,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2005
+-- SqlServer.2005 (asynchronously)
 DECLARE @Id Int -- Int32
 SET     @Id = 3
 DECLARE @FieldInt32 Int -- Int32
@@ -386,7 +386,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2005
+-- SqlServer.2005 (asynchronously)
 DECLARE @Id Int -- Int32
 SET     @Id = 4
 DECLARE @FieldInt32 Int -- Int32
@@ -462,7 +462,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2005
+-- SqlServer.2005 (asynchronously)
 DECLARE @Id Int -- Int32
 SET     @Id = 5
 DECLARE @FieldInt32 Int -- Int32
@@ -536,7 +536,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2005
+-- SqlServer.2005 (asynchronously)
 DECLARE @Id Int -- Int32
 SET     @Id = 6
 DECLARE @FieldInt32 Int -- Int32
@@ -612,7 +612,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2005
+-- SqlServer.2005 (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -637,7 +637,7 @@ ORDER BY
 	[t1].[Id]
 
 BeforeExecute
--- SqlServer.2005
+-- SqlServer.2005 (asynchronously)
 
 SELECT
 	[t1].[Id],

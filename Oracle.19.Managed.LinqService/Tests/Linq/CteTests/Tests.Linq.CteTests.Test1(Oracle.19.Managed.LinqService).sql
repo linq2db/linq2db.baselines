@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Oracle.19.Managed Oracle.Managed Oracle12
+-- Oracle.19.Managed Oracle.Managed Oracle12 (asynchronously)
 
 WITH CTE_1 ("ParentID")
 AS
@@ -20,7 +20,7 @@ FROM
 		INNER JOIN CTE_1 c2 ON p."ParentID" = c2."ParentID"
 
 BeforeExecute
--- Oracle.19.Managed Oracle.Managed Oracle12
+-- Oracle.19.Managed Oracle.Managed Oracle12 (asynchronously)
 
 SELECT
 	p."ParentID",

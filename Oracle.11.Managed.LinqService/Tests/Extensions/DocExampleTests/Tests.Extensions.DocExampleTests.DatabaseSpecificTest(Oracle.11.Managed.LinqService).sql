@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Oracle.11.Managed Oracle11
+-- Oracle.11.Managed Oracle11 (asynchronously)
 
 SELECT /*+ QB_NAME(qb) FULL(c_1@qb) HASH(c_1@qb) PARALLEL(2) NO_UNNEST(qb) */
 	t."PersonID",

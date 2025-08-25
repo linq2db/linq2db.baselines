@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Access.Jet.Odbc AccessODBC
+-- Access.Jet.Odbc AccessODBC (asynchronously)
 DECLARE @p Int -- Int32
 SET     @p = 1
 
@@ -11,7 +11,7 @@ WHERE
 	[p].[PersonID] = ?
 
 BeforeExecute
--- Access.Jet.Odbc AccessODBC
+-- Access.Jet.Odbc AccessODBC (asynchronously)
 DECLARE @p Int -- Int32
 SET     @p = 2
 

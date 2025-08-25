@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SQLite.Classic SQLite
+-- SQLite.Classic SQLite (asynchronously)
 DECLARE @param  -- Int16
 SET     @param = 1
 
@@ -20,7 +20,7 @@ WHERE
 	@param = [t1].[SmallIntValue]
 
 BeforeExecute
--- SQLite.Classic SQLite
+-- SQLite.Classic SQLite (asynchronously)
 
 SELECT
 	[t1].[ID],

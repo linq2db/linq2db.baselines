@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Access.Jet.OleDb AccessOleDb
+-- Access.Jet.OleDb AccessOleDb (asynchronously)
 
 SELECT
 	[m_1].[ID],
@@ -12,7 +12,7 @@ FROM
 		INNER JOIN [Issue3757Level2] [d] ON ([m_1].[ID] = [d].[ParentId])
 
 BeforeExecute
--- Access.Jet.OleDb AccessOleDb
+-- Access.Jet.OleDb AccessOleDb (asynchronously)
 
 SELECT
 	[l1].[ID],

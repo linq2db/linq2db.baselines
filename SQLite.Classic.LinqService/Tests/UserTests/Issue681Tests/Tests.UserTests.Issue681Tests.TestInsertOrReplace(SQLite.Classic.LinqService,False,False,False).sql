@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SQLite.Classic SQLite
+-- SQLite.Classic SQLite (asynchronously)
 DECLARE @ID  -- Int32
 SET     @ID = 5
 DECLARE @Value  -- Int32
@@ -19,7 +19,7 @@ ON CONFLICT ([ID]) DO UPDATE SET
 	[Value] = @Value
 
 BeforeExecute
--- SQLite.Classic SQLite
+-- SQLite.Classic SQLite (asynchronously)
 DECLARE @ID  -- Int32
 SET     @ID = 5
 DECLARE @Value  -- Int32

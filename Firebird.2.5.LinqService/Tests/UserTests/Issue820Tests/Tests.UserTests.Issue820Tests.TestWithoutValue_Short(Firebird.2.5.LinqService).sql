@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Firebird.2.5 Firebird
+-- Firebird.2.5 Firebird (asynchronously)
 DECLARE @param SmallInt -- Int16
 SET     @param = 1
 
@@ -20,7 +20,7 @@ WHERE
 	@param = "t1"."SmallIntValue"
 
 BeforeExecute
--- Firebird.2.5 Firebird
+-- Firebird.2.5 Firebird (asynchronously)
 
 SELECT
 	"t1".ID,

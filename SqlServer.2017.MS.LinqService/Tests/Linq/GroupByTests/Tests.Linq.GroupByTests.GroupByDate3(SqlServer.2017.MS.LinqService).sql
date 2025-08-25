@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2017.MS SqlServer.2017
+-- SqlServer.2017.MS SqlServer.2017 (asynchronously)
 
 SELECT
 	SUM([grp_1].[MoneyValue]),
@@ -17,7 +17,7 @@ GROUP BY
 	[grp_1].[Date_1]
 
 BeforeExecute
--- SqlServer.2017.MS SqlServer.2017
+-- SqlServer.2017.MS SqlServer.2017 (asynchronously)
 
 SELECT
 	SUM([grp_1].[MoneyValue]),

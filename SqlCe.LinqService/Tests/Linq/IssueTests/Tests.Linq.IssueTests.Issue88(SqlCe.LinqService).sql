@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 
 SELECT
 	[t1].[FirstName],
@@ -13,7 +13,7 @@ WHERE
 	[t1].[PersonID] = 1 AND [t1].[Gender] = 'M'
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 
 SELECT
 	[t1].[FirstName],
@@ -27,7 +27,7 @@ WHERE
 	[t1].[PersonID] = 1 AND 'M' = [t1].[Gender]
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 DECLARE @gender NVarChar -- String
 SET     @gender = 'M'
 
@@ -43,7 +43,7 @@ WHERE
 	[t1].[PersonID] = 1 AND [t1].[Gender] = @gender
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 DECLARE @gender NVarChar -- String
 SET     @gender = 'M'
 

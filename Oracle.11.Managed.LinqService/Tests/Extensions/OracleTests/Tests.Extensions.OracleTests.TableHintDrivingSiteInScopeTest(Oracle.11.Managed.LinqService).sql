@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Oracle.11.Managed Oracle11
+-- Oracle.11.Managed Oracle11 (asynchronously)
 
 SELECT /*+ DRIVING_SITE(p) DRIVING_SITE(c_1) */
 	p."ParentID",

@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2005
+-- SqlServer.2005 (asynchronously)
 
 WITH [BooksCte] ([Book_Id], [Book_Title], [Author_Name])
 AS

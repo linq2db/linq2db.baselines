@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- PostgreSQL.15 PostgreSQL
+-- PostgreSQL.15 PostgreSQL (asynchronously)
 DECLARE @cpty Text(3) -- String
 SET     @cpty = '%C%'
 DECLARE @cpty_1 Text(3) -- String

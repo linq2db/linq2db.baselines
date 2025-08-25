@@ -1,12 +1,12 @@
 ﻿BeforeExecute
--- Oracle.11.Managed Oracle11
+-- Oracle.11.Managed Oracle11 (asynchronously)
 
 SELECT
 	sys_context('userenv','service_name')
 FROM SYS.DUAL
 
 BeforeExecute
--- Oracle.11.Managed Oracle11
+-- Oracle.11.Managed Oracle11 (asynchronously)
 DECLARE @Value Int32
 SET     @Value = 10
 DECLARE @ID Int32

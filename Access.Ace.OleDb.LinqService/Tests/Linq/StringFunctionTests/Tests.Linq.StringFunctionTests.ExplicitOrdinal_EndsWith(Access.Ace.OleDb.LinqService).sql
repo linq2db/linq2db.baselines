@@ -1,11 +1,11 @@
 ﻿BeforeExecute
--- Access.Ace.OleDb AccessOleDb
+-- Access.Ace.OleDb AccessOleDb (asynchronously)
 
 DELETE FROM
 	[CollatedTable] [t1]
 
 BeforeExecute
--- Access.Ace.OleDb AccessOleDb
+-- Access.Ace.OleDb AccessOleDb (asynchronously)
 DECLARE @Id Integer -- Int32
 SET     @Id = 1
 DECLARE @CaseSensitive VarWChar(10) -- String
@@ -27,7 +27,7 @@ VALUES
 )
 
 BeforeExecute
--- Access.Ace.OleDb AccessOleDb
+-- Access.Ace.OleDb AccessOleDb (asynchronously)
 
 SELECT
 	COUNT(*)
@@ -37,7 +37,7 @@ WHERE
 	[r].[CaseSensitive] LIKE '%stString' AND InStr(Len([r].[CaseSensitive]) - 7, [r].[CaseSensitive], 'stString', 0) = (Len([r].[CaseSensitive]) - 7)
 
 BeforeExecute
--- Access.Ace.OleDb AccessOleDb
+-- Access.Ace.OleDb AccessOleDb (asynchronously)
 
 SELECT
 	COUNT(*)
@@ -47,7 +47,7 @@ WHERE
 	[r].[CaseInsensitive] LIKE '%stString' AND InStr(Len([r].[CaseInsensitive]) - 7, [r].[CaseInsensitive], 'stString', 0) = (Len([r].[CaseInsensitive]) - 7)
 
 BeforeExecute
--- Access.Ace.OleDb AccessOleDb
+-- Access.Ace.OleDb AccessOleDb (asynchronously)
 
 SELECT
 	COUNT(*)
@@ -57,7 +57,7 @@ WHERE
 	[r].[CaseSensitive] LIKE '%ststring' AND InStr(Len([r].[CaseSensitive]) - 7, [r].[CaseSensitive], 'ststring', 0) = (Len([r].[CaseSensitive]) - 7)
 
 BeforeExecute
--- Access.Ace.OleDb AccessOleDb
+-- Access.Ace.OleDb AccessOleDb (asynchronously)
 
 SELECT
 	COUNT(*)

@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Sybase.Managed Sybase
+-- Sybase.Managed Sybase (asynchronously)
 DECLARE @is_deleted Bit -- Boolean
 SET     @is_deleted = 1
 
@@ -17,7 +17,7 @@ WHERE
 	[cm].[is_deleted] = 0
 
 BeforeExecute
--- Sybase.Managed Sybase
+-- Sybase.Managed Sybase (asynchronously)
 
 SELECT
 	[x].[id],
@@ -29,7 +29,7 @@ WHERE
 	[x].[is_deleted] = 1 AND [x].[service_id] = 'TestProcessService'
 
 BeforeExecute
--- Sybase.Managed Sybase
+-- Sybase.Managed Sybase (asynchronously)
 
 SELECT
 	[x].[id],

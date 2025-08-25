@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Access.Ace.OleDb AccessOleDb
+-- Access.Ace.OleDb AccessOleDb (asynchronously)
 
 DELETE FROM
 	[Child] [c_1]
@@ -7,7 +7,7 @@ WHERE
 	[c_1].[ChildID] > 1000
 
 BeforeExecute
--- Access.Ace.OleDb AccessOleDb
+-- Access.Ace.OleDb AccessOleDb (asynchronously)
 DECLARE @ParentID Integer -- Int32
 SET     @ParentID = 1
 DECLARE @ChildID Integer -- Int32
@@ -25,7 +25,7 @@ VALUES
 )
 
 BeforeExecute
--- Access.Ace.OleDb AccessOleDb
+-- Access.Ace.OleDb AccessOleDb (asynchronously)
 
 SELECT
 	COUNT(*)
@@ -35,7 +35,7 @@ WHERE
 	[c_1].[ChildID] = 1001
 
 BeforeExecute
--- Access.Ace.OleDb AccessOleDb
+-- Access.Ace.OleDb AccessOleDb (asynchronously)
 
 DELETE FROM
 	[Child] [c_1]

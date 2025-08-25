@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Access.Jet.OleDb AccessOleDb
+-- Access.Jet.OleDb AccessOleDb (asynchronously)
 DECLARE @FirstName VarWChar(27) -- String
 SET     @FirstName = 'InsertOrReplaceColumnFilter'
 DECLARE @LastName VarWChar(8) -- String
@@ -16,7 +16,7 @@ WHERE
 	[t1].[ID] = @ID
 
 BeforeExecute
--- Access.Jet.OleDb AccessOleDb
+-- Access.Jet.OleDb AccessOleDb (asynchronously)
 DECLARE @ID Integer -- Int32
 SET     @ID = 0
 DECLARE @FirstName VarWChar(27) -- String
@@ -38,7 +38,7 @@ VALUES
 )
 
 BeforeExecute
--- Access.Jet.OleDb AccessOleDb
+-- Access.Jet.OleDb AccessOleDb (asynchronously)
 DECLARE @FirstName VarWChar(27) -- String
 SET     @FirstName = 'InsertOrReplaceColumnFilter'
 
@@ -53,7 +53,7 @@ WHERE
 	[x].[FirstName] = @FirstName
 
 BeforeExecute
--- Access.Jet.OleDb AccessOleDb
+-- Access.Jet.OleDb AccessOleDb (asynchronously)
 DECLARE @FirstName VarWChar(27) -- String
 SET     @FirstName = 'InsertOrReplaceColumnFilter'
 DECLARE @LastName VarWChar(8) -- String
@@ -73,7 +73,7 @@ WHERE
 	[t1].[ID] = @ID
 
 BeforeExecute
--- Access.Jet.OleDb AccessOleDb
+-- Access.Jet.OleDb AccessOleDb (asynchronously)
 DECLARE @FirstName VarWChar(27) -- String
 SET     @FirstName = 'InsertOrReplaceColumnFilter'
 

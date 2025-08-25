@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Sybase.Managed Sybase
+-- Sybase.Managed Sybase (asynchronously)
 DECLARE @fm Char(1) -- AnsiStringFixedLength
 SET     @fm = 'F'
 

@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2019 (asynchronously)
 DECLARE @p Int -- Int32
 SET     @p = NULL
 
@@ -11,7 +11,7 @@ FROM
 	) [t1]
 
 BeforeExecute
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2019 (asynchronously)
 DECLARE @p Int -- Int32
 SET     @p = 1
 
@@ -23,7 +23,7 @@ FROM
 	) [t1]
 
 BeforeExecute
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2019 (asynchronously)
 DECLARE @p Int -- Int32
 SET     @p = NULL
 
@@ -35,7 +35,7 @@ FROM
 	) [t1]
 
 BeforeExecute
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2019 (asynchronously)
 DECLARE @p Int -- Int32
 SET     @p = 2
 
@@ -47,7 +47,7 @@ FROM
 	) [t1]
 
 BeforeExecute
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2019 (asynchronously)
 DECLARE @p Int -- Int32
 SET     @p = 3
 

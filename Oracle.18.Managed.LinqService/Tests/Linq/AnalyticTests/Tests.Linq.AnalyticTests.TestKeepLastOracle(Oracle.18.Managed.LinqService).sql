@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Oracle.18.Managed Oracle.Managed Oracle12
+-- Oracle.18.Managed Oracle.Managed Oracle12 (asynchronously)
 
 SELECT
 	MIN(p."Value1") KEEP (DENSE_RANK LAST ORDER BY p."Value1") OVER(PARTITION BY p."Value1", c_1."ChildID"),

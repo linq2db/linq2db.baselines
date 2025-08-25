@@ -1,10 +1,10 @@
 ﻿BeforeExecute
--- ClickHouse.Octonica ClickHouse
+-- ClickHouse.Octonica ClickHouse (asynchronously)
 
 DROP TABLE IF EXISTS CreateIfNotExistsTable
 
 BeforeExecute
--- ClickHouse.Octonica ClickHouse
+-- ClickHouse.Octonica ClickHouse (asynchronously)
 
 CREATE TABLE IF NOT EXISTS CreateIfNotExistsTable
 (
@@ -14,7 +14,7 @@ CREATE TABLE IF NOT EXISTS CreateIfNotExistsTable
 ENGINE = Memory()
 
 BeforeExecute
--- ClickHouse.Octonica ClickHouse
+-- ClickHouse.Octonica ClickHouse (asynchronously)
 
 INSERT INTO CreateIfNotExistsTable
 (
@@ -28,7 +28,7 @@ VALUES
 )
 
 BeforeExecute
--- ClickHouse.Octonica ClickHouse
+-- ClickHouse.Octonica ClickHouse (asynchronously)
 
 SELECT
 	t1.Id,
@@ -37,7 +37,7 @@ FROM
 	CreateIfNotExistsTable t1
 
 BeforeExecute
--- ClickHouse.Octonica ClickHouse
+-- ClickHouse.Octonica ClickHouse (asynchronously)
 
 CREATE TABLE IF NOT EXISTS CreateIfNotExistsTable
 (
@@ -47,12 +47,12 @@ CREATE TABLE IF NOT EXISTS CreateIfNotExistsTable
 ENGINE = Memory()
 
 BeforeExecute
--- ClickHouse.Octonica ClickHouse
+-- ClickHouse.Octonica ClickHouse (asynchronously)
 
 DROP TABLE IF EXISTS CreateIfNotExistsTable
 
 BeforeExecute
--- ClickHouse.Octonica ClickHouse
+-- ClickHouse.Octonica ClickHouse (asynchronously)
 
 DROP TABLE IF EXISTS CreateIfNotExistsTable
 

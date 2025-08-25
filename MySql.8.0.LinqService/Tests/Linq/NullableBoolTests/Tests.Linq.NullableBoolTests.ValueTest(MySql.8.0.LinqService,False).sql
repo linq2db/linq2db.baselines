@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- MySql.8.0 MySql.8.0.MySql.Data MySql80
+-- MySql.8.0 MySql.8.0.MySql.Data MySql80 (asynchronously)
 DECLARE @value UByte -- Boolean
 SET     @value = 0
 
@@ -11,7 +11,7 @@ WHERE
 	`t`.`Value` = @value
 
 BeforeExecute
--- MySql.8.0 MySql.8.0.MySql.Data MySql80
+-- MySql.8.0 MySql.8.0.MySql.Data MySql80 (asynchronously)
 DECLARE @value UByte -- Boolean
 SET     @value = 0
 
@@ -23,7 +23,7 @@ WHERE
 	`t`.`Value` = @value
 
 BeforeExecute
--- MySql.8.0 MySql.8.0.MySql.Data MySql80
+-- MySql.8.0 MySql.8.0.MySql.Data MySql80 (asynchronously)
 DECLARE @value UByte -- Boolean
 SET     @value = 0
 
@@ -35,7 +35,7 @@ WHERE
 	`t`.`Value` <> @value OR `t`.`Value` IS NULL
 
 BeforeExecute
--- MySql.8.0 MySql.8.0.MySql.Data MySql80
+-- MySql.8.0 MySql.8.0.MySql.Data MySql80 (asynchronously)
 DECLARE @value UByte -- Boolean
 SET     @value = 0
 

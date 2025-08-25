@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 
 CREATE TABLE [aa]
 (
@@ -10,7 +10,7 @@ CREATE TABLE [aa]
 )
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 DECLARE @bb Int -- Int32
 SET     @bb = 99
 DECLARE @cc NVarChar(5) -- String
@@ -28,7 +28,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 
 SELECT
 	[t1].[bb],
@@ -37,7 +37,7 @@ FROM
 	[aa] [t1]
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 
 DROP TABLE [aa]
 

@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SQLite.MS SQLite
+-- SQLite.MS SQLite (asynchronously)
 
 SELECT
 	[m_1].[ParentID],
@@ -17,7 +17,7 @@ WHERE
 	[d].[ParentID] <> 0
 
 BeforeExecute
--- SQLite.MS SQLite
+-- SQLite.MS SQLite (asynchronously)
 
 SELECT
 	[p].[ParentID]
@@ -25,7 +25,7 @@ FROM
 	[Parent] [p]
 
 BeforeExecute
--- SQLite.MS SQLite
+-- SQLite.MS SQLite (asynchronously)
 
 SELECT
 	[m_1].[ParentID],
@@ -43,7 +43,7 @@ WHERE
 	[d].[ParentID] <> 0
 
 BeforeExecute
--- SQLite.MS SQLite
+-- SQLite.MS SQLite (asynchronously)
 
 SELECT
 	[p].[ParentID]

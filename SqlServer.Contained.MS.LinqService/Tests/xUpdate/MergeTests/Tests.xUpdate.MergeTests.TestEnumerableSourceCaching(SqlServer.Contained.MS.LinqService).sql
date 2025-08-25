@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2019 (asynchronously)
 
 MERGE INTO [CacheTestTable] [Target]
 USING (VALUES
@@ -30,7 +30,7 @@ VALUES
 ;
 
 BeforeExecute
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2019 (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -41,7 +41,7 @@ ORDER BY
 	[t1].[Id]
 
 BeforeExecute
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2019 (asynchronously)
 
 MERGE INTO [CacheTestTable] [Target]
 USING (VALUES
@@ -72,7 +72,7 @@ VALUES
 ;
 
 BeforeExecute
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2019 (asynchronously)
 
 SELECT
 	[t1].[Id],

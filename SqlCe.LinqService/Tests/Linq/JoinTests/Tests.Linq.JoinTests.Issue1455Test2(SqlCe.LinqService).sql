@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 DECLARE @cond NVarChar(3) -- String
 SET     @cond = '%C%'
 

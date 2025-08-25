@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Access.Jet.Odbc AccessODBC
+-- Access.Jet.Odbc AccessODBC (asynchronously)
 DECLARE @ParentID Int -- Int32
 SET     @ParentID = 1
 
@@ -11,7 +11,7 @@ WHERE
 	[p].[ParentID] = 1 AND [p].[ParentID] = ?
 
 BeforeExecute
--- Access.Jet.Odbc AccessODBC
+-- Access.Jet.Odbc AccessODBC (asynchronously)
 DECLARE @ParentID Int -- Int32
 SET     @ParentID = 2
 

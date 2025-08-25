@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+-- SapHana.Odbc SapHanaOdbc (asynchronously)
 
 SELECT
 	Days_Between("t"."DateTimeValue", Add_Seconds("t"."DateTimeValue", 360000))

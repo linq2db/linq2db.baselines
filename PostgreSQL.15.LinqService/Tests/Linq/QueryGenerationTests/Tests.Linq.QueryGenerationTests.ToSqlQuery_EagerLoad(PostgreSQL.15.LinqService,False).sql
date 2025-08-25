@@ -12,7 +12,7 @@ WHERE
 	p."ParentID" = :id
 
 BeforeExecute
--- PostgreSQL.15 PostgreSQL
+-- PostgreSQL.15 PostgreSQL (asynchronously)
 DECLARE @id Integer -- Int32
 SET     @id = 2
 

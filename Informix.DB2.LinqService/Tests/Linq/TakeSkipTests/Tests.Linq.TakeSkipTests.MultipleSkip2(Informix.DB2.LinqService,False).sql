@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Informix.DB2 Informix
+-- Informix.DB2 Informix (asynchronously)
 
 SELECT SKIP 3
 	t1."Value"
@@ -9,7 +9,7 @@ ORDER BY
 	t1."Value"
 
 BeforeExecute
--- Informix.DB2 Informix
+-- Informix.DB2 Informix (asynchronously)
 
 SELECT SKIP 4
 	t1."Value"

@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Informix.DB2 Informix
+-- Informix.DB2 Informix (asynchronously)
 DECLARE @p Integer(4) -- Int32
 SET     @p = 102
 
@@ -9,7 +9,7 @@ WHERE
 	LinqDataTypes.ID >= 101 AND LinqDataTypes.ID < @p
 
 BeforeExecute
--- Informix.DB2 Informix
+-- Informix.DB2 Informix (asynchronously)
 DECLARE @Id Integer(4) -- Int32
 SET     @Id = 101
 DECLARE @TestField BigInt(8) -- Int64
@@ -27,7 +27,7 @@ VALUES
 )
 
 BeforeExecute
--- Informix.DB2 Informix
+-- Informix.DB2 Informix (asynchronously)
 
 SELECT
 	COUNT(*)
@@ -37,7 +37,7 @@ WHERE
 	r.ID = 101 AND r.BigIntValue = 12
 
 BeforeExecute
--- Informix.DB2 Informix
+-- Informix.DB2 Informix (asynchronously)
 DECLARE @p Integer(4) -- Int32
 SET     @p = 102
 

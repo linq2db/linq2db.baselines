@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Access.Jet.OleDb AccessOleDb
+-- Access.Jet.OleDb AccessOleDb (asynchronously)
 
 UPDATE
 	[Issue4963Table] [t1]
@@ -7,7 +7,7 @@ SET
 	[t1].[Field] = [t1].[Field] + -1
 
 BeforeExecute
--- Access.Jet.OleDb AccessOleDb
+-- Access.Jet.OleDb AccessOleDb (asynchronously)
 
 SELECT TOP 2
 	[t1].[Field]

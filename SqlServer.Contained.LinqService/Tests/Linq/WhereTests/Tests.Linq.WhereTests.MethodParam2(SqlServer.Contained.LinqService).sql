@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2019 (asynchronously)
 DECLARE @p Int -- Int32
 SET     @p = 1
 
@@ -11,7 +11,7 @@ WHERE
 	[p].[PersonID] = @p
 
 BeforeExecute
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2019 (asynchronously)
 DECLARE @p Int -- Int32
 SET     @p = 2
 

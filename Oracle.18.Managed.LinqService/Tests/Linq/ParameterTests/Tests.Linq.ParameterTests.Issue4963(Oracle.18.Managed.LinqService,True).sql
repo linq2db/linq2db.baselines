@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Oracle.18.Managed Oracle.Managed Oracle12
+-- Oracle.18.Managed Oracle.Managed Oracle12 (asynchronously)
 
 UPDATE
 	"Issue4963Table" t1
@@ -7,7 +7,7 @@ SET
 	"Field" = CAST(CAST(t1."Field" AS Int) + -1 AS Number(3))
 
 BeforeExecute
--- Oracle.18.Managed Oracle.Managed Oracle12
+-- Oracle.18.Managed Oracle.Managed Oracle12 (asynchronously)
 
 SELECT
 	t1."Field"

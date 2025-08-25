@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 
 SELECT
 	[p].[FirstName]
@@ -12,7 +12,7 @@ FROM
 	[Person] [p_1]
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 
 SELECT
 	[p].[FirstName] + '/' + [p].[LastName] as [FirstName]

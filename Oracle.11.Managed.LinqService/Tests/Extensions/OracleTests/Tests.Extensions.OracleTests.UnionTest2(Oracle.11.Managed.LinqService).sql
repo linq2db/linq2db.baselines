@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Oracle.11.Managed Oracle11
+-- Oracle.11.Managed Oracle11 (asynchronously)
 
 SELECT /*+ FULL(p@qb_1) FULL(p_2@qb_2) */
 	p_3."ParentID"

@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Access.Jet.OleDb AccessOleDb
+-- Access.Jet.OleDb AccessOleDb (asynchronously)
 
 SELECT
 	[m_1].[Id],
@@ -30,7 +30,7 @@ ORDER BY
 	IIF([m_1].[cond_1], [d].[Name3], '')
 
 BeforeExecute
--- Access.Jet.OleDb AccessOleDb
+-- Access.Jet.OleDb AccessOleDb (asynchronously)
 
 SELECT TOP 1
 	[t1].[Id],

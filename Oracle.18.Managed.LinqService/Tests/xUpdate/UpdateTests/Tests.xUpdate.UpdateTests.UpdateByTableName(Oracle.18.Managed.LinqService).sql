@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Oracle.18.Managed Oracle.Managed Oracle12
+-- Oracle.18.Managed Oracle.Managed Oracle12 (asynchronously)
 
 BEGIN
 	BEGIN
@@ -29,7 +29,7 @@ BEGIN
 END;
 
 BeforeExecute
--- Oracle.18.Managed Oracle.Managed Oracle12
+-- Oracle.18.Managed Oracle.Managed Oracle12 (asynchronously)
 
 CREATE TABLE "xxPerson_ol"
 (
@@ -43,12 +43,12 @@ CREATE TABLE "xxPerson_ol"
 )
 
 BeforeExecute
--- Oracle.18.Managed Oracle.Managed Oracle12
+-- Oracle.18.Managed Oracle.Managed Oracle12 (asynchronously)
 
 CREATE SEQUENCE "SIDENTITY_xxPerson_ol"
 
 BeforeExecute
--- Oracle.18.Managed Oracle.Managed Oracle12
+-- Oracle.18.Managed Oracle.Managed Oracle12 (asynchronously)
 
 CREATE OR REPLACE TRIGGER "TIDENTITY_xxPerson_ol"
 BEFORE INSERT ON "xxPerson_ol" FOR EACH ROW
@@ -57,7 +57,7 @@ BEGIN
 END;
 
 BeforeExecute
--- Oracle.18.Managed Oracle.Managed Oracle12
+-- Oracle.18.Managed Oracle.Managed Oracle12 (asynchronously)
 DECLARE @FirstName Varchar2(6) -- String
 SET     @FirstName = 'Steven'
 DECLARE @LastName Varchar2(4) -- String
@@ -83,7 +83,7 @@ VALUES
 )
 
 BeforeExecute
--- Oracle.18.Managed Oracle.Managed Oracle12
+-- Oracle.18.Managed Oracle.Managed Oracle12 (asynchronously)
 
 SELECT
 	COUNT(*)
@@ -91,7 +91,7 @@ FROM
 	"xxPerson_ol" t1
 
 BeforeExecute
--- Oracle.18.Managed Oracle.Managed Oracle12
+-- Oracle.18.Managed Oracle.Managed Oracle12 (asynchronously)
 
 SELECT
 	t1."FirstName",
@@ -104,7 +104,7 @@ FROM
 FETCH NEXT 2 ROWS ONLY
 
 BeforeExecute
--- Oracle.18.Managed Oracle.Managed Oracle12
+-- Oracle.18.Managed Oracle.Managed Oracle12 (asynchronously)
 DECLARE @FirstName Varchar2(6) -- String
 SET     @FirstName = 'Steven'
 DECLARE @LastName Varchar2(4) -- String
@@ -127,7 +127,7 @@ WHERE
 	t1."PersonID" = :ID
 
 BeforeExecute
--- Oracle.18.Managed Oracle.Managed Oracle12
+-- Oracle.18.Managed Oracle.Managed Oracle12 (asynchronously)
 
 SELECT
 	t1."FirstName",
@@ -140,7 +140,7 @@ FROM
 FETCH NEXT 2 ROWS ONLY
 
 BeforeExecute
--- Oracle.18.Managed Oracle.Managed Oracle12
+-- Oracle.18.Managed Oracle.Managed Oracle12 (asynchronously)
 
 BEGIN
 	EXECUTE IMMEDIATE 'DROP TRIGGER "TIDENTITY_xxPerson_ol"';

@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- ClickHouse.Octonica ClickHouse
+-- ClickHouse.Octonica ClickHouse (asynchronously)
 
 SELECT
 	i.Id,
@@ -15,7 +15,7 @@ WHERE
 	i.StrValue >= right_1.StrValue
 
 BeforeExecute
--- ClickHouse.Octonica ClickHouse
+-- ClickHouse.Octonica ClickHouse (asynchronously)
 
 SELECT
 	t1.Id,
@@ -25,7 +25,7 @@ FROM
 	Isue2424Table t1
 
 BeforeExecute
--- ClickHouse.Octonica ClickHouse
+-- ClickHouse.Octonica ClickHouse (asynchronously)
 
 SELECT
 	i.Id,
@@ -41,7 +41,7 @@ WHERE
 	i.StrValue <= right_1.StrValue
 
 BeforeExecute
--- ClickHouse.Octonica ClickHouse
+-- ClickHouse.Octonica ClickHouse (asynchronously)
 
 SELECT
 	t1.Id,
@@ -51,7 +51,7 @@ FROM
 	Isue2424Table t1
 
 BeforeExecute
--- ClickHouse.Octonica ClickHouse
+-- ClickHouse.Octonica ClickHouse (asynchronously)
 
 SELECT
 	i.Id,
@@ -67,7 +67,7 @@ WHERE
 	i.StrValue > right_1.StrValue
 
 BeforeExecute
--- ClickHouse.Octonica ClickHouse
+-- ClickHouse.Octonica ClickHouse (asynchronously)
 
 SELECT
 	t1.Id,
@@ -77,7 +77,7 @@ FROM
 	Isue2424Table t1
 
 BeforeExecute
--- ClickHouse.Octonica ClickHouse
+-- ClickHouse.Octonica ClickHouse (asynchronously)
 
 SELECT
 	i.Id,
@@ -93,7 +93,7 @@ WHERE
 	i.StrValue < right_1.StrValue
 
 BeforeExecute
--- ClickHouse.Octonica ClickHouse
+-- ClickHouse.Octonica ClickHouse (asynchronously)
 
 SELECT
 	t1.Id,
@@ -103,7 +103,7 @@ FROM
 	Isue2424Table t1
 
 BeforeExecute
--- ClickHouse.Octonica ClickHouse
+-- ClickHouse.Octonica ClickHouse (asynchronously)
 
 SELECT
 	i.Id,
@@ -119,7 +119,7 @@ WHERE
 	i.StrValue = right_1.StrValue
 
 BeforeExecute
--- ClickHouse.Octonica ClickHouse
+-- ClickHouse.Octonica ClickHouse (asynchronously)
 
 SELECT
 	t1.Id,
@@ -129,7 +129,7 @@ FROM
 	Isue2424Table t1
 
 BeforeExecute
--- ClickHouse.Octonica ClickHouse
+-- ClickHouse.Octonica ClickHouse (asynchronously)
 
 SELECT
 	i.Id,
@@ -145,7 +145,7 @@ WHERE
 	i.StrValue <> right_1.StrValue
 
 BeforeExecute
--- ClickHouse.Octonica ClickHouse
+-- ClickHouse.Octonica ClickHouse (asynchronously)
 
 SELECT
 	t1.Id,
@@ -155,7 +155,7 @@ FROM
 	Isue2424Table t1
 
 BeforeExecute
--- ClickHouse.Octonica ClickHouse
+-- ClickHouse.Octonica ClickHouse (asynchronously)
 
 SELECT
 	i.Id,
@@ -171,7 +171,7 @@ WHERE
 	i.StrValue >= right_1.StrValueNullable OR right_1.StrValueNullable IS NULL
 
 BeforeExecute
--- ClickHouse.Octonica ClickHouse
+-- ClickHouse.Octonica ClickHouse (asynchronously)
 
 SELECT
 	t1.Id,
@@ -181,7 +181,7 @@ FROM
 	Isue2424Table t1
 
 BeforeExecute
--- ClickHouse.Octonica ClickHouse
+-- ClickHouse.Octonica ClickHouse (asynchronously)
 
 SELECT
 	i.Id,
@@ -197,7 +197,7 @@ WHERE
 	i.StrValue <= right_1.StrValueNullable
 
 BeforeExecute
--- ClickHouse.Octonica ClickHouse
+-- ClickHouse.Octonica ClickHouse (asynchronously)
 
 SELECT
 	t1.Id,
@@ -207,7 +207,7 @@ FROM
 	Isue2424Table t1
 
 BeforeExecute
--- ClickHouse.Octonica ClickHouse
+-- ClickHouse.Octonica ClickHouse (asynchronously)
 
 SELECT
 	i.Id,
@@ -223,7 +223,7 @@ WHERE
 	i.StrValue > right_1.StrValueNullable OR right_1.StrValueNullable IS NULL
 
 BeforeExecute
--- ClickHouse.Octonica ClickHouse
+-- ClickHouse.Octonica ClickHouse (asynchronously)
 
 SELECT
 	t1.Id,
@@ -233,7 +233,7 @@ FROM
 	Isue2424Table t1
 
 BeforeExecute
--- ClickHouse.Octonica ClickHouse
+-- ClickHouse.Octonica ClickHouse (asynchronously)
 
 SELECT
 	i.Id,
@@ -249,7 +249,7 @@ WHERE
 	i.StrValue < right_1.StrValueNullable
 
 BeforeExecute
--- ClickHouse.Octonica ClickHouse
+-- ClickHouse.Octonica ClickHouse (asynchronously)
 
 SELECT
 	t1.Id,
@@ -259,7 +259,7 @@ FROM
 	Isue2424Table t1
 
 BeforeExecute
--- ClickHouse.Octonica ClickHouse
+-- ClickHouse.Octonica ClickHouse (asynchronously)
 
 SELECT
 	i.Id,
@@ -275,7 +275,7 @@ WHERE
 	i.StrValue = right_1.StrValueNullable
 
 BeforeExecute
--- ClickHouse.Octonica ClickHouse
+-- ClickHouse.Octonica ClickHouse (asynchronously)
 
 SELECT
 	t1.Id,
@@ -285,7 +285,7 @@ FROM
 	Isue2424Table t1
 
 BeforeExecute
--- ClickHouse.Octonica ClickHouse
+-- ClickHouse.Octonica ClickHouse (asynchronously)
 
 SELECT
 	i.Id,
@@ -301,7 +301,7 @@ WHERE
 	i.StrValue <> right_1.StrValueNullable OR right_1.StrValueNullable IS NULL
 
 BeforeExecute
--- ClickHouse.Octonica ClickHouse
+-- ClickHouse.Octonica ClickHouse (asynchronously)
 
 SELECT
 	t1.Id,
@@ -311,7 +311,7 @@ FROM
 	Isue2424Table t1
 
 BeforeExecute
--- ClickHouse.Octonica ClickHouse
+-- ClickHouse.Octonica ClickHouse (asynchronously)
 
 SELECT
 	i.Id,
@@ -327,7 +327,7 @@ WHERE
 	i.StrValueNullable >= right_1.StrValueNullable OR right_1.StrValueNullable IS NULL
 
 BeforeExecute
--- ClickHouse.Octonica ClickHouse
+-- ClickHouse.Octonica ClickHouse (asynchronously)
 
 SELECT
 	t1.Id,
@@ -337,7 +337,7 @@ FROM
 	Isue2424Table t1
 
 BeforeExecute
--- ClickHouse.Octonica ClickHouse
+-- ClickHouse.Octonica ClickHouse (asynchronously)
 
 SELECT
 	i.Id,
@@ -353,7 +353,7 @@ WHERE
 	i.StrValueNullable <= right_1.StrValueNullable OR i.StrValueNullable IS NULL
 
 BeforeExecute
--- ClickHouse.Octonica ClickHouse
+-- ClickHouse.Octonica ClickHouse (asynchronously)
 
 SELECT
 	t1.Id,
@@ -363,7 +363,7 @@ FROM
 	Isue2424Table t1
 
 BeforeExecute
--- ClickHouse.Octonica ClickHouse
+-- ClickHouse.Octonica ClickHouse (asynchronously)
 
 SELECT
 	i.Id,
@@ -379,7 +379,7 @@ WHERE
 	i.StrValueNullable > right_1.StrValueNullable OR i.StrValueNullable IS NOT NULL AND right_1.StrValueNullable IS NULL
 
 BeforeExecute
--- ClickHouse.Octonica ClickHouse
+-- ClickHouse.Octonica ClickHouse (asynchronously)
 
 SELECT
 	t1.Id,
@@ -389,7 +389,7 @@ FROM
 	Isue2424Table t1
 
 BeforeExecute
--- ClickHouse.Octonica ClickHouse
+-- ClickHouse.Octonica ClickHouse (asynchronously)
 
 SELECT
 	i.Id,
@@ -405,7 +405,7 @@ WHERE
 	i.StrValueNullable < right_1.StrValueNullable OR i.StrValueNullable IS NULL AND right_1.StrValueNullable IS NOT NULL
 
 BeforeExecute
--- ClickHouse.Octonica ClickHouse
+-- ClickHouse.Octonica ClickHouse (asynchronously)
 
 SELECT
 	t1.Id,
@@ -415,7 +415,7 @@ FROM
 	Isue2424Table t1
 
 BeforeExecute
--- ClickHouse.Octonica ClickHouse
+-- ClickHouse.Octonica ClickHouse (asynchronously)
 
 SELECT
 	i.Id,
@@ -431,7 +431,7 @@ WHERE
 	i.StrValueNullable = right_1.StrValueNullable OR i.StrValueNullable IS NULL AND right_1.StrValueNullable IS NULL
 
 BeforeExecute
--- ClickHouse.Octonica ClickHouse
+-- ClickHouse.Octonica ClickHouse (asynchronously)
 
 SELECT
 	t1.Id,
@@ -441,7 +441,7 @@ FROM
 	Isue2424Table t1
 
 BeforeExecute
--- ClickHouse.Octonica ClickHouse
+-- ClickHouse.Octonica ClickHouse (asynchronously)
 
 SELECT
 	i.Id,
@@ -458,7 +458,7 @@ WHERE
 	i.StrValueNullable IS NOT NULL AND right_1.StrValueNullable IS NULL
 
 BeforeExecute
--- ClickHouse.Octonica ClickHouse
+-- ClickHouse.Octonica ClickHouse (asynchronously)
 
 SELECT
 	t1.Id,

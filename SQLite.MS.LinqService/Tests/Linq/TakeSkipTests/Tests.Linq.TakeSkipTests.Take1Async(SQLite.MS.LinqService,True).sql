@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SQLite.MS SQLite
+-- SQLite.MS SQLite (asynchronously)
 DECLARE @take  -- Int32
 SET     @take = 2
 
@@ -11,7 +11,7 @@ FROM
 LIMIT @take
 
 BeforeExecute
--- SQLite.MS SQLite
+-- SQLite.MS SQLite (asynchronously)
 DECLARE @take  -- Int32
 SET     @take = 3
 

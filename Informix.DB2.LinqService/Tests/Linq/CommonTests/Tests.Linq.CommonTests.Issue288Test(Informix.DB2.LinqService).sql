@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Informix.DB2 Informix
+-- Informix.DB2 Informix (asynchronously)
 
 SELECT FIRST 1
 	p.FirstName
@@ -9,7 +9,7 @@ WHERE
 	p.FirstName IS NULL
 
 BeforeExecute
--- Informix.DB2 Informix
+-- Informix.DB2 Informix (asynchronously)
 DECLARE @p VarChar(4) -- String
 SET     @p = 'John'
 

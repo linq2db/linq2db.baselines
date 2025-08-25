@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- DB2 DB2.LUW DB2LUW
+-- DB2 DB2.LUW DB2LUW (asynchronously)
 DECLARE @In VarChar -- String
 SET     @In = NULL
 DECLARE @In_1 VarChar -- String
@@ -13,7 +13,7 @@ WHERE
 	"s"."CEnum" IN (@In, @In_1)
 
 BeforeExecute
--- DB2 DB2.LUW DB2LUW
+-- DB2 DB2.LUW DB2LUW (asynchronously)
 DECLARE @NotIn VarChar -- String
 SET     @NotIn = NULL
 DECLARE @NotIn_1 VarChar -- String

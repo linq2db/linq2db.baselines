@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- PostgreSQL.18 PostgreSQL
+-- PostgreSQL.18 PostgreSQL (asynchronously)
 
 SELECT
 	SUM(grp_1."MoneyValue"),
@@ -17,7 +17,7 @@ GROUP BY
 	grp_1."Date_1"
 
 BeforeExecute
--- PostgreSQL.18 PostgreSQL
+-- PostgreSQL.18 PostgreSQL (asynchronously)
 
 SELECT
 	SUM(grp_1."MoneyValue"),

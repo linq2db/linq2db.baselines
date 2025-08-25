@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2016
+-- SqlServer.2016 (asynchronously)
 
 SELECT
 	COUNT(IIF([g_1].[ChildID] < 30, 1, NULL))

@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2008
+-- SqlServer.2008 (asynchronously)
 DECLARE @personId Int -- Int32
 SET     @personId = 1
 DECLARE @personId_1 Int -- Int32
@@ -22,7 +22,7 @@ WHERE
 	[p].[PersonID] = @personId AND [p].[PersonID] = @personId_1
 
 BeforeExecute
--- SqlServer.2008
+-- SqlServer.2008 (asynchronously)
 DECLARE @personId Int -- Int32
 SET     @personId = 1
 DECLARE @personId_1 Int -- Int32

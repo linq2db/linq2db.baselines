@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2017.MS SqlServer.2017
+-- SqlServer.2017.MS SqlServer.2017 (asynchronously)
 
 MERGE INTO [test_insert_or_replace] [t1]
 USING (SELECT 1 AS [id]) [s] ON
@@ -19,7 +19,7 @@ WHEN NOT MATCHED THEN
 	);
 
 BeforeExecute
--- SqlServer.2017.MS SqlServer.2017
+-- SqlServer.2017.MS SqlServer.2017 (asynchronously)
 
 MERGE INTO [test_insert_or_replace] [t1]
 USING (SELECT 1 AS [id]) [s] ON

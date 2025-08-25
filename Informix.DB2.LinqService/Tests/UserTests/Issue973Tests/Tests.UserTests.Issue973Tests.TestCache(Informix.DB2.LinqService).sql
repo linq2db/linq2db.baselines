@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Informix.DB2 Informix
+-- Informix.DB2 Informix (asynchronously)
 DECLARE @p Integer(4) -- Int32
 SET     @p = 1
 DECLARE @p_1 Integer(4) -- Int32
@@ -18,7 +18,7 @@ WHERE
 	o.ParentID IN (@p, @p_1, @p_2) OR o.ParentID = @param
 
 BeforeExecute
--- Informix.DB2 Informix
+-- Informix.DB2 Informix (asynchronously)
 DECLARE @p Integer(4) -- Int32
 SET     @p = 1
 DECLARE @p_1 Integer(4) -- Int32
@@ -37,7 +37,7 @@ WHERE
 	o.ParentID IN (@p, @p_1, @p_2) OR o.ParentID = @param
 
 BeforeExecute
--- Informix.DB2 Informix
+-- Informix.DB2 Informix (asynchronously)
 DECLARE @p Integer(4) -- Int32
 SET     @p = 4
 DECLARE @p_1 Integer(4) -- Int32
@@ -56,7 +56,7 @@ WHERE
 	o.ParentID IN (@p, @p_1, @p_2) OR o.ParentID = @param
 
 BeforeExecute
--- Informix.DB2 Informix
+-- Informix.DB2 Informix (asynchronously)
 DECLARE @p Integer(4) -- Int32
 SET     @p = 4
 DECLARE @p_1 Integer(4) -- Int32

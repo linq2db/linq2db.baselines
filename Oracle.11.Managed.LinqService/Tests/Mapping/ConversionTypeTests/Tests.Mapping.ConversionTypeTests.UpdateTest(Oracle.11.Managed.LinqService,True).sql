@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Oracle.11.Managed Oracle11
+-- Oracle.11.Managed Oracle11 (asynchronously)
 
 UPDATE
 	"TrimTestTable" t1
@@ -9,7 +9,7 @@ WHERE
 	t1.ID = 3
 
 BeforeExecute
--- Oracle.11.Managed Oracle11
+-- Oracle.11.Managed Oracle11 (asynchronously)
 
 UPDATE
 	"TrimTestTable" t
@@ -19,7 +19,7 @@ WHERE
 	t."Data" = '***XXX***'
 
 BeforeExecute
--- Oracle.11.Managed Oracle11
+-- Oracle.11.Managed Oracle11 (asynchronously)
 
 UPDATE
 	"TrimTestTable" t
@@ -29,7 +29,7 @@ WHERE
 	t."Data" = '***HHH***'
 
 BeforeExecute
--- Oracle.11.Managed Oracle11
+-- Oracle.11.Managed Oracle11 (asynchronously)
 
 SELECT
 	r.ID,
@@ -40,7 +40,7 @@ ORDER BY
 	r.ID
 
 BeforeExecute
--- Oracle.11.Managed Oracle11
+-- Oracle.11.Managed Oracle11 (asynchronously)
 
 SELECT
 	r.ID,

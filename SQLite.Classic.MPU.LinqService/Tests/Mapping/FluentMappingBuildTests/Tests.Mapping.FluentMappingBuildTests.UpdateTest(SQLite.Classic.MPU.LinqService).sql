@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
+-- SQLite.Classic.MPU SQLite.Classic SQLite (asynchronously)
 
 CREATE TABLE IF NOT EXISTS [FluentTemp]
 (
@@ -9,7 +9,7 @@ CREATE TABLE IF NOT EXISTS [FluentTemp]
 )
 
 BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
+-- SQLite.Classic.MPU SQLite.Classic SQLite (asynchronously)
 DECLARE @ID  -- Int32
 SET     @ID = 1
 DECLARE @Name NVarChar(4) -- String
@@ -31,7 +31,7 @@ VALUES
 )
 
 BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
+-- SQLite.Classic.MPU SQLite.Classic SQLite (asynchronously)
 DECLARE @Name NVarChar(7) -- String
 SET     @Name = 'John II'
 DECLARE @LastName NVarChar(4) -- String
@@ -46,7 +46,7 @@ WHERE
 	[FluentTemp].[ID] = 1
 
 BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
+-- SQLite.Classic.MPU SQLite.Classic SQLite (asynchronously)
 
 DROP TABLE IF EXISTS [FluentTemp]
 

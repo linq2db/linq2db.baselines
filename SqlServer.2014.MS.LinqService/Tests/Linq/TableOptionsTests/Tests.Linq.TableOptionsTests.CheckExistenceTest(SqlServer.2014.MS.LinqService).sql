@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2014.MS SqlServer.2014
+-- SqlServer.2014.MS SqlServer.2014 (asynchronously)
 
 IF (OBJECT_ID(N'[DisposableTable]', N'U') IS NULL)
 	CREATE TABLE [DisposableTable]
@@ -8,7 +8,7 @@ IF (OBJECT_ID(N'[DisposableTable]', N'U') IS NULL)
 	)
 
 BeforeExecute
--- SqlServer.2014.MS SqlServer.2014
+-- SqlServer.2014.MS SqlServer.2014 (asynchronously)
 
 IF (OBJECT_ID(N'[DisposableTable]', N'U') IS NOT NULL)
 	DROP TABLE [DisposableTable]

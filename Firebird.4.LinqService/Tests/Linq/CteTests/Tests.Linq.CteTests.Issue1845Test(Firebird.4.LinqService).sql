@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Firebird.4 Firebird4
+-- Firebird.4 Firebird4 (asynchronously)
 
 WITH RECURSIVE CTE_1 ("Value1", "Value2")
 AS

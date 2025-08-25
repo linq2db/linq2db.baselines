@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- ClickHouse.Driver ClickHouse
+-- ClickHouse.Driver ClickHouse (asynchronously)
 
 WITH CTE_1 AS
 (
@@ -19,7 +19,7 @@ FROM
 		INNER JOIN CTE_1 c_1 ON p.ParentID = c_1.Child_ParentID
 
 BeforeExecute
--- ClickHouse.Driver ClickHouse
+-- ClickHouse.Driver ClickHouse (asynchronously)
 
 SELECT
 	p.ParentID,

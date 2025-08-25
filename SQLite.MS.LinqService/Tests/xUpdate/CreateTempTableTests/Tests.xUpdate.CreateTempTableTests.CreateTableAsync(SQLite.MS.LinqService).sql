@@ -24,7 +24,7 @@ FROM
 	[Parent] [p]
 
 BeforeExecute
--- SQLite.MS SQLite
+-- SQLite.MS SQLite (asynchronously)
 
 SELECT
 	[t].[ID]

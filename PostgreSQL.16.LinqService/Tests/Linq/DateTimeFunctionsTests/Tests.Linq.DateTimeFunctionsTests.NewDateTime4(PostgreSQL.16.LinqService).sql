@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
+-- PostgreSQL.16 PostgreSQL.15 PostgreSQL (asynchronously)
 
 SELECT
 	make_timestamp(Floor(Extract(year From p."DateTimeValue"))::Int, 10, 1, 20, 35, 44::Float)

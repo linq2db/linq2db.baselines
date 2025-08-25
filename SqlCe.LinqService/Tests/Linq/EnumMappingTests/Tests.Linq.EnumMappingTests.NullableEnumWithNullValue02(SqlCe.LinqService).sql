@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 DECLARE @p Int -- Int32
 SET     @p = 105
 
@@ -9,7 +9,7 @@ WHERE
 	[LinqDataTypes].[ID] >= 101 AND [LinqDataTypes].[ID] < @p
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 DECLARE @Id Int -- Int32
 SET     @Id = 101
 DECLARE @Value Int -- Int32
@@ -27,7 +27,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 DECLARE @Id Int -- Int32
 SET     @Id = 102
 DECLARE @Value Int -- Int32
@@ -45,7 +45,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 DECLARE @Id Int -- Int32
 SET     @Id = 103
 DECLARE @Value Int -- Int32
@@ -63,7 +63,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 DECLARE @Id Int -- Int32
 SET     @Id = 104
 DECLARE @Value Int -- Int32
@@ -81,7 +81,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 
 SELECT
 	[r].[ID] as [Id],
@@ -94,7 +94,7 @@ ORDER BY
 	[r].[ID]
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 
 SELECT
 	[r].[ID] as [Id],
@@ -108,7 +108,7 @@ ORDER BY
 	[r].[ID]
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 DECLARE @p Int -- Int32
 SET     @p = 105
 

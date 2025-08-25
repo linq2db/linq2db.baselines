@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
+-- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57 (asynchronously)
 
 CREATE TEMPORARY TABLE `TableWithPrimaryKey`
 (
@@ -9,7 +9,7 @@ CREATE TEMPORARY TABLE `TableWithPrimaryKey`
 )
 
 BeforeExecute
--- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
+-- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57 (asynchronously)
 
 DROP TEMPORARY TABLE IF EXISTS `TableWithPrimaryKey`
 

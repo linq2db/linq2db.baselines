@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2012
+-- SqlServer.2012 (asynchronously)
 DECLARE @value Int -- Int32
 SET     @value = 4
 
@@ -17,7 +17,7 @@ WHERE
 	)
 
 BeforeExecute
--- SqlServer.2012
+-- SqlServer.2012 (asynchronously)
 DECLARE @value Int -- Int32
 SET     @value = 4
 
@@ -35,7 +35,7 @@ WHERE
 	)
 
 BeforeExecute
--- SqlServer.2012
+-- SqlServer.2012 (asynchronously)
 DECLARE @value Int -- Int32
 SET     @value = 4
 
@@ -53,7 +53,7 @@ WHERE
 	)
 
 BeforeExecute
--- SqlServer.2012
+-- SqlServer.2012 (asynchronously)
 DECLARE @value Int -- Int32
 SET     @value = 4
 

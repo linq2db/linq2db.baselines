@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Firebird.5 Firebird4
+-- Firebird.5 Firebird4 (asynchronously)
 DECLARE @dt TimeStamp -- DateTime
 SET     @dt = CAST('2020-02-29 17:54:55.123' AS timestamp)
 

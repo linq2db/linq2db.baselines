@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Firebird.5 Firebird4
+-- Firebird.5 Firebird4 (asynchronously)
 DECLARE @Has Boolean
 SET     @Has = TRUE
 DECLARE @IDENTITY_PARAMETER Decimal
@@ -17,7 +17,7 @@ RETURNING
 	"Id"
 
 BeforeExecute
--- Firebird.5 Firebird4
+-- Firebird.5 Firebird4 (asynchronously)
 DECLARE @id Integer -- Int32
 SET     @id = 1
 

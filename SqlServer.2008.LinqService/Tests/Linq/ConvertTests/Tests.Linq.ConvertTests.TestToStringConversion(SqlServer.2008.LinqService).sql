@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2008
+-- SqlServer.2008 (asynchronously)
 
 SELECT TOP (1)
 	CAST([x].[Prop_bool] AS NVarChar(1)),
@@ -36,7 +36,7 @@ FROM
 	[ToStringConvertibleTypes] [x]
 
 BeforeExecute
--- SqlServer.2008
+-- SqlServer.2008 (asynchronously)
 
 SELECT TOP (1)
 	CASE

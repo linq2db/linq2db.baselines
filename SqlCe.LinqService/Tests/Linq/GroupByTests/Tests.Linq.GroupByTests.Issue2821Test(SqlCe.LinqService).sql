@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 DECLARE @currentDate DateTime
 SET     @currentDate = '2020-02-29 17:54:55.123'
 DECLARE @currentDate_1 DateTime

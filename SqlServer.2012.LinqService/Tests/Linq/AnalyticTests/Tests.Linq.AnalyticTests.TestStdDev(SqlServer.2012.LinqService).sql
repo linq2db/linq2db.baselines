@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2012
+-- SqlServer.2012 (asynchronously)
 
 SELECT
 	STDEV([c_1].[ChildID]),
@@ -13,7 +13,7 @@ GROUP BY
 	[g_1].[ParentID]
 
 BeforeExecute
--- SqlServer.2012
+-- SqlServer.2012 (asynchronously)
 
 SELECT
 	STDEV([t1].[ParentID])
@@ -21,7 +21,7 @@ FROM
 	[Child] [t1]
 
 BeforeExecute
--- SqlServer.2012
+-- SqlServer.2012 (asynchronously)
 
 SELECT
 	STDEV(ALL [t1].[ParentID])
@@ -29,7 +29,7 @@ FROM
 	[Child] [t1]
 
 BeforeExecute
--- SqlServer.2012
+-- SqlServer.2012 (asynchronously)
 
 SELECT
 	STDEV(DISTINCT [t1].[ParentID])

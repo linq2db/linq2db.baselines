@@ -15,7 +15,7 @@ WHERE
 	p."FirstName" = :firstName OR p."LastName" = :firstName
 
 BeforeExecute
--- PostgreSQL.15 PostgreSQL
+-- PostgreSQL.15 PostgreSQL (asynchronously)
 DECLARE @firstName Text(4) -- String
 SET     @firstName = 'John'
 

@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
+-- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57 (asynchronously)
 DECLARE @value NewDecimal(9, 5) -- Decimal
 SET     @value = 6579.64648
 
@@ -10,7 +10,7 @@ FROM
 LIMIT 1
 
 BeforeExecute
--- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
+-- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57 (asynchronously)
 DECLARE @value Float -- Single
 SET     @value = 6579.64648
 
@@ -21,7 +21,7 @@ FROM
 LIMIT 1
 
 BeforeExecute
--- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
+-- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57 (asynchronously)
 DECLARE @value Double
 SET     @value = 6579.6464800000003
 
@@ -32,7 +32,7 @@ FROM
 LIMIT 1
 
 BeforeExecute
--- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
+-- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57 (asynchronously)
 DECLARE @value NewDecimal(9, 5) -- Decimal
 SET     @value = 6579.64648
 
@@ -43,7 +43,7 @@ FROM
 LIMIT 1
 
 BeforeExecute
--- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
+-- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57 (asynchronously)
 DECLARE @value Float -- Single
 SET     @value = 6579.64648
 
@@ -54,7 +54,7 @@ FROM
 LIMIT 1
 
 BeforeExecute
--- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
+-- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57 (asynchronously)
 DECLARE @value Double
 SET     @value = 6579.6464800000003
 

@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 
 SELECT
 	DateAdd(day, [t].[Value], GetDate()) as [Value1],
@@ -14,7 +14,7 @@ SELECT
 	DateAdd(day, 4, GetDate()) as [Value2]
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 
 SELECT
 	[v_1].[Value2]

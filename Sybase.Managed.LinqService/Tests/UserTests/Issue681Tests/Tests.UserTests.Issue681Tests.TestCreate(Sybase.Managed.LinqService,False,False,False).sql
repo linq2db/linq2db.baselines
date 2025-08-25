@@ -1,11 +1,11 @@
 ﻿BeforeExecute
--- Sybase.Managed Sybase
+-- Sybase.Managed Sybase (asynchronously)
 
 IF (OBJECT_ID(N'Issue681Table2') IS NOT NULL)
 	DROP TABLE [Issue681Table2]
 
 BeforeExecute
--- Sybase.Managed Sybase
+-- Sybase.Managed Sybase (asynchronously)
 
 CREATE TABLE [Issue681Table2]
 (
@@ -16,7 +16,7 @@ CREATE TABLE [Issue681Table2]
 )
 
 BeforeExecute
--- Sybase.Managed Sybase
+-- Sybase.Managed Sybase (asynchronously)
 
 IF (OBJECT_ID(N'Issue681Table2') IS NOT NULL)
 	DROP TABLE [Issue681Table2]

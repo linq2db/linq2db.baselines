@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Informix.DB2 Informix
+-- Informix.DB2 Informix (asynchronously)
 DECLARE @id Integer(4) -- Int32
 SET     @id = 1
 DECLARE @name VarChar(4) -- String
@@ -18,7 +18,7 @@ WHERE
 	m_1.PersonID = @id AND m_1.LastName <> @name OR m_1.FirstName <> @name AND m_1.PersonID - 1 = @id
 
 BeforeExecute
--- Informix.DB2 Informix
+-- Informix.DB2 Informix (asynchronously)
 DECLARE @id Integer(4) -- Int32
 SET     @id = 1
 DECLARE @name VarChar(4) -- String

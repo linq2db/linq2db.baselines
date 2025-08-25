@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2017
+-- SqlServer.2017 (asynchronously)
 
 SELECT
 	CAST(DateAdd(day, 5, [t].[TransactionDate]) AS Date)

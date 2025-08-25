@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MySql (asynchronously)
 DECLARE @value Bool -- Boolean
 SET     @value = 1
 
@@ -11,7 +11,7 @@ WHERE
 	`t`.`Value` = @value
 
 BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MySql (asynchronously)
 DECLARE @value Bool -- Boolean
 SET     @value = 1
 
@@ -23,7 +23,7 @@ WHERE
 	`t`.`Value` = @value
 
 BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MySql (asynchronously)
 DECLARE @value Bool -- Boolean
 SET     @value = 1
 
@@ -35,7 +35,7 @@ WHERE
 	`t`.`Value` <> @value OR `t`.`Value` IS NULL
 
 BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MySql (asynchronously)
 DECLARE @value Bool -- Boolean
 SET     @value = 1
 

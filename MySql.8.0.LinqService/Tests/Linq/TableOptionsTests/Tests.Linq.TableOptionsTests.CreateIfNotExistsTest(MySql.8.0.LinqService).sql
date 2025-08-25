@@ -1,10 +1,10 @@
 ﻿BeforeExecute
--- MySql.8.0 MySql.8.0.MySql.Data MySql80
+-- MySql.8.0 MySql.8.0.MySql.Data MySql80 (asynchronously)
 
 DROP TABLE IF EXISTS `CreateIfNotExistsTable`
 
 BeforeExecute
--- MySql.8.0 MySql.8.0.MySql.Data MySql80
+-- MySql.8.0 MySql.8.0.MySql.Data MySql80 (asynchronously)
 
 CREATE TABLE IF NOT EXISTS `CreateIfNotExistsTable`
 (
@@ -13,7 +13,7 @@ CREATE TABLE IF NOT EXISTS `CreateIfNotExistsTable`
 )
 
 BeforeExecute
--- MySql.8.0 MySql.8.0.MySql.Data MySql80
+-- MySql.8.0 MySql.8.0.MySql.Data MySql80 (asynchronously)
 
 INSERT INTO `CreateIfNotExistsTable`
 (
@@ -27,7 +27,7 @@ VALUES
 )
 
 BeforeExecute
--- MySql.8.0 MySql.8.0.MySql.Data MySql80
+-- MySql.8.0 MySql.8.0.MySql.Data MySql80 (asynchronously)
 
 SELECT
 	`t1`.`Id`,
@@ -36,7 +36,7 @@ FROM
 	`CreateIfNotExistsTable` `t1`
 
 BeforeExecute
--- MySql.8.0 MySql.8.0.MySql.Data MySql80
+-- MySql.8.0 MySql.8.0.MySql.Data MySql80 (asynchronously)
 
 CREATE TABLE IF NOT EXISTS `CreateIfNotExistsTable`
 (
@@ -45,12 +45,12 @@ CREATE TABLE IF NOT EXISTS `CreateIfNotExistsTable`
 )
 
 BeforeExecute
--- MySql.8.0 MySql.8.0.MySql.Data MySql80
+-- MySql.8.0 MySql.8.0.MySql.Data MySql80 (asynchronously)
 
 DROP TABLE IF EXISTS `CreateIfNotExistsTable`
 
 BeforeExecute
--- MySql.8.0 MySql.8.0.MySql.Data MySql80
+-- MySql.8.0 MySql.8.0.MySql.Data MySql80 (asynchronously)
 
 DROP TABLE IF EXISTS `CreateIfNotExistsTable`
 

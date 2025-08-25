@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Firebird.2.5 Firebird
+-- Firebird.2.5 Firebird (asynchronously)
 DECLARE @id Integer -- Int32
 SET     @id = 1
 DECLARE @name VarChar(4) -- String
@@ -19,7 +19,7 @@ WHERE
 	"m_1"."FirstName" <> @name AND "m_1"."PersonID" - 1 = @id
 
 BeforeExecute
--- Firebird.2.5 Firebird
+-- Firebird.2.5 Firebird (asynchronously)
 DECLARE @id Integer -- Int32
 SET     @id = 1
 DECLARE @name VarChar(4) -- String

@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- MySql.8.0 MySql.8.0.MySql.Data MySql80
+-- MySql.8.0 MySql.8.0.MySql.Data MySql80 (asynchronously)
 DECLARE @id Int32
 SET     @id = 1
 
@@ -15,7 +15,7 @@ WHERE
 	`p`.`PersonID` = @id AND `p`.`MiddleName` IS NULL
 
 BeforeExecute
--- MySql.8.0 MySql.8.0.MySql.Data MySql80
+-- MySql.8.0 MySql.8.0.MySql.Data MySql80 (asynchronously)
 DECLARE @id Int32
 SET     @id = 1
 

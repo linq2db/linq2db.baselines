@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- DB2 DB2.LUW DB2LUW
+-- DB2 DB2.LUW DB2LUW (asynchronously)
 
 SELECT
 	"t1".ID,
@@ -15,7 +15,7 @@ FROM
 		INNER JOIN "LinqDataTypes" "t2" ON "t1".ID = "t2".ID
 
 BeforeExecute
--- DB2 DB2.LUW DB2LUW
+-- DB2 DB2.LUW DB2LUW (asynchronously)
 DECLARE @param2 SmallInt(4) -- Int16
 SET     @param2 = 0
 

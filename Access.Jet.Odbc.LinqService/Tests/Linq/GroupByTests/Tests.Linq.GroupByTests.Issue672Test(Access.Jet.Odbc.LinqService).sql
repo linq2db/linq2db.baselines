@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Access.Jet.Odbc AccessODBC
+-- Access.Jet.Odbc AccessODBC (asynchronously)
 DECLARE @Name NVarChar(6) -- String
 SET     @Name = 'group1'
 DECLARE @Enabled Bit -- Boolean
@@ -21,7 +21,7 @@ VALUES
 )
 
 BeforeExecute
--- Access.Jet.Odbc AccessODBC
+-- Access.Jet.Odbc AccessODBC (asynchronously)
 DECLARE @Name NVarChar(6) -- String
 SET     @Name = 'group1'
 DECLARE @Enabled Bit -- Boolean
@@ -43,7 +43,7 @@ VALUES
 )
 
 BeforeExecute
--- Access.Jet.Odbc AccessODBC
+-- Access.Jet.Odbc AccessODBC (asynchronously)
 DECLARE @Name NVarChar(6) -- String
 SET     @Name = 'group2'
 DECLARE @Enabled Bit -- Boolean

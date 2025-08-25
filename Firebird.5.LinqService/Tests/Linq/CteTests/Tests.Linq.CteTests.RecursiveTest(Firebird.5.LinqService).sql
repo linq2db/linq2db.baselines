@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Firebird.5 Firebird4
+-- Firebird.5 Firebird4 (asynchronously)
 
 WITH RECURSIVE MY_CTE ("ChildID", "ParentID", "GrandChildID")
 AS

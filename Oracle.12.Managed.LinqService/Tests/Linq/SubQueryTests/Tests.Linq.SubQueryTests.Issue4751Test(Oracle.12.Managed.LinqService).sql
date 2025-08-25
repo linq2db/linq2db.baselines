@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Oracle.12.Managed Oracle.Managed Oracle12
+-- Oracle.12.Managed Oracle.Managed Oracle12 (asynchronously)
 DECLARE @skip Int32
 SET     @skip = 20
 DECLARE @take Int32
@@ -54,7 +54,7 @@ FROM
 OFFSET :skip ROWS FETCH NEXT :take ROWS ONLY 
 
 BeforeExecute
--- Oracle.12.Managed Oracle.Managed Oracle12
+-- Oracle.12.Managed Oracle.Managed Oracle12 (asynchronously)
 
 SELECT
 	COUNT(*)

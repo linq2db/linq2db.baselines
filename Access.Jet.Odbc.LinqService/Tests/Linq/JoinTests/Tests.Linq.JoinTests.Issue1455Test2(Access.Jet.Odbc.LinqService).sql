@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Access.Jet.Odbc AccessODBC
+-- Access.Jet.Odbc AccessODBC (asynchronously)
 DECLARE @cond NVarChar(3) -- String
 SET     @cond = '%C%'
 DECLARE @cond NVarChar(3) -- String

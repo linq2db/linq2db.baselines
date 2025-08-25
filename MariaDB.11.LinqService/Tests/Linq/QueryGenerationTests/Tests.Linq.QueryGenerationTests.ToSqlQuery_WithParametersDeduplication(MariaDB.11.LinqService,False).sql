@@ -15,7 +15,7 @@ WHERE
 	`p`.`FirstName` = @firstName OR `p`.`LastName` = @firstName
 
 BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MySql (asynchronously)
 DECLARE @firstName VarChar(4) -- String
 SET     @firstName = 'John'
 

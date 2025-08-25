@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Access.Jet.OleDb AccessOleDb
+-- Access.Jet.OleDb AccessOleDb (asynchronously)
 DECLARE @dateTime Date -- DateTime
 SET     @dateTime = #1992-01-11 01:11:21#
 
@@ -11,7 +11,7 @@ WHERE
 	[t].[DateTimeValue] > @dateTime
 
 BeforeExecute
--- Access.Jet.OleDb AccessOleDb
+-- Access.Jet.OleDb AccessOleDb (asynchronously)
 DECLARE @dateTime Date -- DateTime
 SET     @dateTime = #1993-01-11 01:11:21#
 

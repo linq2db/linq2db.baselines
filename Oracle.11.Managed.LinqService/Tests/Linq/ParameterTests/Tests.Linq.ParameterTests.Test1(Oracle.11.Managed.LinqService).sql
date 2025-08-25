@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Oracle.11.Managed Oracle11
+-- Oracle.11.Managed Oracle11 (asynchronously)
 DECLARE @dt TimeStamp -- DateTime
 SET     @dt = TIMESTAMP '2020-02-29 17:54:55.123123'
 

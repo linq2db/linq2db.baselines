@@ -23,7 +23,7 @@ WHERE
 	[s].[Id] > 3
 
 BeforeExecute
--- SqlServer.2019
+-- SqlServer.2019 (asynchronously)
 DECLARE @param Int -- Int32
 SET     @param = 100
 

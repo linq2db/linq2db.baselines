@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Informix.DB2 Informix
+-- Informix.DB2 Informix (asynchronously)
 DECLARE @personId Integer(4) -- Int32
 SET     @personId = 0
 DECLARE @personId_1 Integer(4) -- Int32

@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 
 SELECT
 	[p].[FirstName],
@@ -19,7 +19,7 @@ FROM
 			SELECT 'Doe' AS [item]) [n] ON [p].[LastName] = [n].[item]
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 
 SELECT
 	[p].[FirstName],

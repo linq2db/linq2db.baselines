@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- DB2 DB2.LUW DB2LUW
+-- DB2 DB2.LUW DB2LUW (asynchronously)
 
 WITH CTE_1
 (
@@ -39,7 +39,7 @@ WHERE
 	"r".ID = 2
 
 BeforeExecute
--- DB2 DB2.LUW DB2LUW
+-- DB2 DB2.LUW DB2LUW (asynchronously)
 
 WITH CTE_1 ("c1")
 AS

@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Access.Ace.OleDb AccessOleDb
+-- Access.Ace.OleDb AccessOleDb (asynchronously)
 DECLARE @param VarChar(2, 0) -- AnsiString
 SET     @param = 33
 DECLARE @param_1 VarChar(2, 0) -- AnsiString

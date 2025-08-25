@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+-- SapHana.Odbc SapHanaOdbc (asynchronously)
 DECLARE @FirstName NVarChar(9) -- String
 SET     @FirstName = 'FirstName'
 DECLARE @Gender NChar(1) -- StringFixedLength

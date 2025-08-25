@@ -1,10 +1,10 @@
 ﻿BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 
 DROP TABLE [xxPatient]
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 
 CREATE TABLE [xxPatient]
 (
@@ -15,7 +15,7 @@ CREATE TABLE [xxPatient]
 )
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 DECLARE @Diagnosis NVarChar(4) -- String
 SET     @Diagnosis = 'ABC1'
 DECLARE @PersonID Int -- Int32
@@ -29,7 +29,7 @@ WHERE
 	[xxPatient].[PersonID] = @PersonID
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 DECLARE @PersonID Int -- Int32
 SET     @PersonID = 1
 DECLARE @Diagnosis NVarChar(4) -- String
@@ -47,7 +47,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 DECLARE @Diagnosis NVarChar(4) -- String
 SET     @Diagnosis = 'ABC2'
 DECLARE @PersonID Int -- Int32
@@ -61,7 +61,7 @@ WHERE
 	[xxPatient].[PersonID] = @PersonID
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 DECLARE @PersonID Int -- Int32
 SET     @PersonID = 2
 DECLARE @Diagnosis NVarChar(4) -- String
@@ -79,7 +79,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 
 SELECT
 	COUNT(*) as [COUNT_1]
@@ -87,7 +87,7 @@ FROM
 	[xxPatient] [t1]
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 DECLARE @Diagnosis NVarChar(4) -- String
 SET     @Diagnosis = 'ABC1'
 DECLARE @PersonID Int -- Int32
@@ -101,7 +101,7 @@ WHERE
 	[xxPatient].[PersonID] = @PersonID
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 DECLARE @Diagnosis NVarChar(4) -- String
 SET     @Diagnosis = 'ABC2'
 DECLARE @PersonID Int -- Int32
@@ -115,7 +115,7 @@ WHERE
 	[xxPatient].[PersonID] = @PersonID
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 
 SELECT
 	COUNT(*) as [COUNT_1]
@@ -123,7 +123,7 @@ FROM
 	[xxPatient] [t1]
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 
 DROP TABLE [xxPatient]
 

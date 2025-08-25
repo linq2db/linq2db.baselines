@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- DB2 DB2.LUW DB2LUW
+-- DB2 DB2.LUW DB2LUW (asynchronously)
 
 SELECT
 	"arg"."Id",
@@ -11,7 +11,7 @@ FROM
 		) "arg"("Id", "Value") ON "entity"."PersonID" = "arg"."Id"
 
 BeforeExecute
--- DB2 DB2.LUW DB2LUW
+-- DB2 DB2.LUW DB2LUW (asynchronously)
 
 SELECT
 	"arg"."Id",

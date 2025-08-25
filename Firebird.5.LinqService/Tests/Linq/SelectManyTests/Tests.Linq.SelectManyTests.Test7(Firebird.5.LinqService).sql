@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Firebird.5 Firebird4
+-- Firebird.5 Firebird4 (asynchronously)
 
 SELECT
 	"a_Child"."ParentID",
@@ -13,7 +13,7 @@ WHERE
 	"p"."ParentID" = "g_1"."ParentID"
 
 BeforeExecute
--- Firebird.5 Firebird4
+-- Firebird.5 Firebird4 (asynchronously)
 
 SELECT
 	"a_Child"."ParentID",

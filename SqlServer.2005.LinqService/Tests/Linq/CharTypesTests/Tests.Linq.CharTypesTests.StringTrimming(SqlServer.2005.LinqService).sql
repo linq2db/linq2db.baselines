@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2005
+-- SqlServer.2005 (asynchronously)
 
 SELECT
 	MAX([t1].[ID])
@@ -7,7 +7,7 @@ FROM
 	[AllTypes] [t1]
 
 BeforeExecute
--- SqlServer.2005
+-- SqlServer.2005 (asynchronously)
 DECLARE @NString NVarChar(4000) -- String
 SET     @NString = N'test01'
 DECLARE @String NVarChar(4000) -- String
@@ -25,7 +25,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2005
+-- SqlServer.2005 (asynchronously)
 DECLARE @NString NVarChar(4000) -- String
 SET     @NString = N'test02  '
 DECLARE @String NVarChar(4000) -- String
@@ -43,7 +43,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2005
+-- SqlServer.2005 (asynchronously)
 DECLARE @NString NVarChar(4000) -- String
 SET     @NString = N'test03	 '
 DECLARE @String NVarChar(4000) -- String
@@ -61,7 +61,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2005
+-- SqlServer.2005 (asynchronously)
 DECLARE @NString NVarChar(4000) -- String
 SET     @NString = N'test04
  '
@@ -81,7 +81,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2005
+-- SqlServer.2005 (asynchronously)
 DECLARE @NString NVarChar(4000) -- String
 SET     @NString = N'test05 '
 DECLARE @String NVarChar(4000) -- String
@@ -99,7 +99,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2005
+-- SqlServer.2005 (asynchronously)
 DECLARE @NString NVarChar(4000) -- String
 SET     @NString = N'test06 '
 DECLARE @String NVarChar(4000) -- String
@@ -117,7 +117,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2005
+-- SqlServer.2005 (asynchronously)
 DECLARE @NString NVarChar(4000) -- String
 SET     @NString = N'test07 '
 DECLARE @String NVarChar(4000) -- String
@@ -135,7 +135,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2005
+-- SqlServer.2005 (asynchronously)
 DECLARE @NString NVarChar(4000) -- String
 SET     @NString = N'test08  '
 DECLARE @String NVarChar(4000) -- String
@@ -153,7 +153,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2005
+-- SqlServer.2005 (asynchronously)
 DECLARE @NString NVarChar(4000) -- String
 SET     @NString = N'test09  '
 DECLARE @String NVarChar(4000) -- String
@@ -171,7 +171,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2005
+-- SqlServer.2005 (asynchronously)
 DECLARE @NString NVarChar(4000) -- String
 SET     @NString = N'test10  '
 DECLARE @String NVarChar(4000) -- String
@@ -189,7 +189,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2005
+-- SqlServer.2005 (asynchronously)
 DECLARE @NString NVarChar(4000) -- String
 SET     @NString = N'test11  '
 DECLARE @String NVarChar(4000) -- String
@@ -207,7 +207,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2005
+-- SqlServer.2005 (asynchronously)
 DECLARE @NString NVarChar(4000) -- String
 SET     @NString = N'test12  '
 DECLARE @String NVarChar(4000) -- String
@@ -225,7 +225,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2005
+-- SqlServer.2005 (asynchronously)
 DECLARE @NString NVarChar(4000) -- String
 SET     @NString = N'test13  '
 DECLARE @String NVarChar(4000) -- String
@@ -243,7 +243,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2005
+-- SqlServer.2005 (asynchronously)
 DECLARE @NString NVarChar(4000) -- String
 SET     @NString = N'test14  '
 DECLARE @String NVarChar(4000) -- String
@@ -261,7 +261,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2005
+-- SqlServer.2005 (asynchronously)
 DECLARE @NString NVarChar(4000) -- String
 SET     @NString = N'test15  '
 DECLARE @String NVarChar(4000) -- String
@@ -279,7 +279,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2005
+-- SqlServer.2005 (asynchronously)
 DECLARE @NString NVarChar(4000) -- String
 SET     @NString = N'test16  '
 DECLARE @String NVarChar(4000) -- String
@@ -297,7 +297,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2005
+-- SqlServer.2005 (asynchronously)
 DECLARE @NString NVarChar(4000) -- String
 SET     @NString = N'test17  '
 DECLARE @String NVarChar(4000) -- String
@@ -315,7 +315,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2005
+-- SqlServer.2005 (asynchronously)
 DECLARE @NString NVarChar(4000) -- String
 SET     @NString = N'test18  '
 DECLARE @String NVarChar(4000) -- String
@@ -333,7 +333,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2005
+-- SqlServer.2005 (asynchronously)
 DECLARE @NString NVarChar(4000) -- String
 SET     @NString = N'test19  '
 DECLARE @String NVarChar(4000) -- String
@@ -351,7 +351,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2005
+-- SqlServer.2005 (asynchronously)
 DECLARE @NString NVarChar(4000) -- String
 SET     @NString = N'test20　 '
 DECLARE @String NVarChar(4000) -- String
@@ -369,7 +369,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2005
+-- SqlServer.2005 (asynchronously)
 DECLARE @NString NVarChar(4000) -- String
 SET     @NString = N'test21' + char(0) + N' '
 DECLARE @String NVarChar(4000) -- String
@@ -387,7 +387,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2005
+-- SqlServer.2005 (asynchronously)
 DECLARE @NString NVarChar(4000) -- String
 SET     @NString = NULL
 DECLARE @String NVarChar(4000) -- String
@@ -405,7 +405,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2005
+-- SqlServer.2005 (asynchronously)
 DECLARE @lastId Int -- Int32
 SET     @lastId = 2
 
@@ -421,7 +421,7 @@ ORDER BY
 	[t1].[ID]
 
 BeforeExecute
--- SqlServer.2005
+-- SqlServer.2005 (asynchronously)
 DECLARE @lastId Int -- Int32
 SET     @lastId = 2
 

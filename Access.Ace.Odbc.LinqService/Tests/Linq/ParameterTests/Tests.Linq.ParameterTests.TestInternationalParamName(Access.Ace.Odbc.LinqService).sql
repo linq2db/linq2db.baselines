@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Access.Ace.Odbc AccessODBC
+-- Access.Ace.Odbc AccessODBC (asynchronously)
 DECLARE @параметр Int -- Int32
 SET     @параметр = 1
 
@@ -12,7 +12,7 @@ WHERE
 	[p].[ParentID] = ?
 
 BeforeExecute
--- Access.Ace.Odbc AccessODBC
+-- Access.Ace.Odbc AccessODBC (asynchronously)
 DECLARE @参数 Int -- Int32
 SET     @参数 = 1
 
@@ -25,7 +25,7 @@ WHERE
 	[p].[ParentID] = ?
 
 BeforeExecute
--- Access.Ace.Odbc AccessODBC
+-- Access.Ace.Odbc AccessODBC (asynchronously)
 DECLARE @パラメータ Int -- Int32
 SET     @パラメータ = 1
 

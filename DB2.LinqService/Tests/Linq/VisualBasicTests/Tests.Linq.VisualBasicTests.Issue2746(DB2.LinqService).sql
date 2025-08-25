@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- DB2 DB2.LUW DB2LUW
+-- DB2 DB2.LUW DB2LUW (asynchronously)
 DECLARE @VBLocal_SelectedValue Integer(4) -- Int32
 SET     @VBLocal_SelectedValue = 1
 

@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- ClickHouse.Driver ClickHouse
+-- ClickHouse.Driver ClickHouse (asynchronously)
 
 SELECT
 	nm.MiddleName
@@ -9,7 +9,7 @@ WHERE
 	NOT (nm.MiddleName IS NULL OR lengthUTF8(nm.MiddleName) = 0)
 
 BeforeExecute
--- ClickHouse.Driver ClickHouse
+-- ClickHouse.Driver ClickHouse (asynchronously)
 
 SELECT
 	t1.FirstName,

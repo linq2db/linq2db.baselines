@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Access.Ace.OleDb AccessOleDb
+-- Access.Ace.OleDb AccessOleDb (asynchronously)
 
 CREATE TABLE [FluentTemp]
 (
@@ -9,7 +9,7 @@ CREATE TABLE [FluentTemp]
 )
 
 BeforeExecute
--- Access.Ace.OleDb AccessOleDb
+-- Access.Ace.OleDb AccessOleDb (asynchronously)
 DECLARE @ID Integer -- Int32
 SET     @ID = 1
 DECLARE @Name VarWChar(4) -- String
@@ -31,7 +31,7 @@ VALUES
 )
 
 BeforeExecute
--- Access.Ace.OleDb AccessOleDb
+-- Access.Ace.OleDb AccessOleDb (asynchronously)
 DECLARE @Name VarWChar(7) -- String
 SET     @Name = 'John II'
 DECLARE @LastName VarWChar(4) -- String
@@ -46,7 +46,7 @@ WHERE
 	[t].[ID] = 1
 
 BeforeExecute
--- Access.Ace.OleDb AccessOleDb
+-- Access.Ace.OleDb AccessOleDb (asynchronously)
 
 DROP TABLE [FluentTemp]
 

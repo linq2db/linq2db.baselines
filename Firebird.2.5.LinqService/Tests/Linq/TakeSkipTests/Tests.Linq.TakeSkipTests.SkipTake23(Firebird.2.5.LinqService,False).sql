@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Firebird.2.5 Firebird
+-- Firebird.2.5 Firebird (asynchronously)
 
 SELECT FIRST 5 SKIP 3
 	"t1"."ParentID",
@@ -10,7 +10,7 @@ ORDER BY
 	"t1"."ChildID"
 
 BeforeExecute
--- Firebird.2.5 Firebird
+-- Firebird.2.5 Firebird (asynchronously)
 
 SELECT FIRST 5 SKIP 3
 	"t1"."ParentID",

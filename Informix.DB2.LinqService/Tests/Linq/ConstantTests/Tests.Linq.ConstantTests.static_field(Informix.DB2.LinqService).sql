@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Informix.DB2 Informix
+-- Informix.DB2 Informix (asynchronously)
 DECLARE @GuidNonReadonly Char(36) -- StringFixedLength
 SET     @GuidNonReadonly = 'bc7b663d-0fde-4327-8f92-5d8cc3a11d11'
 
@@ -14,7 +14,7 @@ WHERE
 	e.GuidValue = @GuidNonReadonly AND e.GuidNullableValue = @GuidNonReadonly
 
 BeforeExecute
--- Informix.DB2 Informix
+-- Informix.DB2 Informix (asynchronously)
 
 SELECT
 	t1.Id,

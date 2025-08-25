@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Firebird.4 Firebird4
+-- Firebird.4 Firebird4 (asynchronously)
 
 SELECT
 	"m_1"."Id",
@@ -25,7 +25,7 @@ FROM
 		INNER JOIN "Review" "d" ON "d"."ItemId" = "m_1"."Id"
 
 BeforeExecute
--- Firebird.4 Firebird4
+-- Firebird.4 Firebird4 (asynchronously)
 
 SELECT
 	"i"."Id",

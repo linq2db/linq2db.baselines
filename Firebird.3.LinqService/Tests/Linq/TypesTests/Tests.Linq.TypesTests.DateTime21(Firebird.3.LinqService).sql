@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Firebird.3 Firebird3
+-- Firebird.3 Firebird3 (asynchronously)
 
 SELECT
 	"t".ID,
@@ -19,7 +19,7 @@ WHERE
 FETCH NEXT 1 ROWS ONLY
 
 BeforeExecute
--- Firebird.3 Firebird3
+-- Firebird.3 Firebird3 (asynchronously)
 DECLARE @dt TimeStamp -- DateTime
 SET     @dt = CAST('2010-12-14 05:00:07.425' AS timestamp)
 
@@ -31,7 +31,7 @@ WHERE
 	"t".ID = 1
 
 BeforeExecute
--- Firebird.3 Firebird3
+-- Firebird.3 Firebird3 (asynchronously)
 
 SELECT
 	"t".ID,
@@ -51,7 +51,7 @@ WHERE
 FETCH NEXT 1 ROWS ONLY
 
 BeforeExecute
--- Firebird.3 Firebird3
+-- Firebird.3 Firebird3 (asynchronously)
 DECLARE @pdt TimeStamp -- DateTime
 SET     @pdt = CAST('2001-01-11 01:11:21.100' AS timestamp)
 

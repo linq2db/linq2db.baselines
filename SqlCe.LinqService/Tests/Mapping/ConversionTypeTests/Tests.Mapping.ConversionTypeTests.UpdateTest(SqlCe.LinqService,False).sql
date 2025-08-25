@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 DECLARE @Data NVarChar(9) -- String
 SET     @Data = '***III***'
 DECLARE @ID Int -- Int32
@@ -13,7 +13,7 @@ WHERE
 	[TrimTestTable].[ID] = @ID
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 DECLARE @Data NVarChar(9) -- String
 SET     @Data = '***OOO***'
 
@@ -25,7 +25,7 @@ WHERE
 	[TrimTestTable].[Data] = '***XXX***'
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 DECLARE @Data NVarChar(9) -- String
 SET     @Data = '***SSS***'
 DECLARE @p NVarChar(9) -- String
@@ -39,7 +39,7 @@ WHERE
 	[TrimTestTable].[Data] = @p
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 
 SELECT
 	[r].[ID],
@@ -50,7 +50,7 @@ ORDER BY
 	[r].[ID]
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 
 SELECT
 	[r].[ID],

@@ -13,7 +13,7 @@ WHERE
 	"p"."FirstName" = 'John' OR "p"."LastName" = 'John'
 
 BeforeExecute
--- Firebird.3 Firebird3
+-- Firebird.3 Firebird3 (asynchronously)
 DECLARE @firstName VarChar(4) -- String
 SET     @firstName = 'John'
 

@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- DB2 DB2.LUW DB2LUW
+-- DB2 DB2.LUW DB2LUW (asynchronously)
 DECLARE @str Char(5) -- StringFixedLength
 SET     @str = 'some%'
 DECLARE @str_1 Char(5) -- StringFixedLength

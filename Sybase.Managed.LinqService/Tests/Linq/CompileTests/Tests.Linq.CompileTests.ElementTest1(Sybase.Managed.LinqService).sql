@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Sybase.Managed Sybase
+-- Sybase.Managed Sybase (asynchronously)
 DECLARE @p Integer -- Int32
 SET     @p = 1
 
@@ -12,7 +12,7 @@ WHERE
 	[c_1].[ParentID] = @p
 
 BeforeExecute
--- Sybase.Managed Sybase
+-- Sybase.Managed Sybase (asynchronously)
 DECLARE @p Integer -- Int32
 SET     @p = 2
 

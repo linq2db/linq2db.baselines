@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SQLite.Classic.MPM SQLite.Classic SQLite
+-- SQLite.Classic.MPM SQLite.Classic SQLite (asynchronously)
 DECLARE @productId  -- Guid
 SET     @productId = X'3D667BBCDE0F27438F925D8CC3A11D11'
 

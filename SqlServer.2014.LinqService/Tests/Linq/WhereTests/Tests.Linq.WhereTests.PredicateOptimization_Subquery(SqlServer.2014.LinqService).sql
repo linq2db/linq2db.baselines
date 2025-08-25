@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2014
+-- SqlServer.2014 (asynchronously)
 
 SELECT
 	[p].[Id],
@@ -20,7 +20,7 @@ WHERE
 	) > DATETIME2FROMPARTS(2023, 1, 1, 0, 0, 0, 0, 7)
 
 BeforeExecute
--- SqlServer.2014
+-- SqlServer.2014 (asynchronously)
 
 SELECT
 	[p].[Id],

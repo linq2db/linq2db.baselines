@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Oracle.21.Managed Oracle.Managed Oracle12
+-- Oracle.21.Managed Oracle.Managed Oracle12 (asynchronously)
 
 SELECT
 	MAX(t1.ID)
@@ -7,7 +7,7 @@ FROM
 	"AllTypes" t1
 
 BeforeExecute
--- Oracle.21.Managed Oracle.Managed Oracle12
+-- Oracle.21.Managed Oracle.Managed Oracle12 (asynchronously)
 DECLARE @NChar Char -- StringFixedLength
 SET     @NChar = ' '
 DECLARE @Char_1 Char -- StringFixedLength
@@ -25,7 +25,7 @@ VALUES
 )
 
 BeforeExecute
--- Oracle.21.Managed Oracle.Managed Oracle12
+-- Oracle.21.Managed Oracle.Managed Oracle12 (asynchronously)
 DECLARE @NChar Char -- StringFixedLength
 SET     @NChar = '	'
 DECLARE @Char_1 Char -- StringFixedLength
@@ -43,7 +43,7 @@ VALUES
 )
 
 BeforeExecute
--- Oracle.21.Managed Oracle.Managed Oracle12
+-- Oracle.21.Managed Oracle.Managed Oracle12 (asynchronously)
 DECLARE @NChar Char -- StringFixedLength
 SET     @NChar = '
 '
@@ -63,7 +63,7 @@ VALUES
 )
 
 BeforeExecute
--- Oracle.21.Managed Oracle.Managed Oracle12
+-- Oracle.21.Managed Oracle.Managed Oracle12 (asynchronously)
 DECLARE @NChar Char -- StringFixedLength
 SET     @NChar = ''
 DECLARE @Char_1 Char -- StringFixedLength
@@ -81,7 +81,7 @@ VALUES
 )
 
 BeforeExecute
--- Oracle.21.Managed Oracle.Managed Oracle12
+-- Oracle.21.Managed Oracle.Managed Oracle12 (asynchronously)
 DECLARE @NChar Char -- StringFixedLength
 SET     @NChar = ''
 DECLARE @Char_1 Char -- StringFixedLength
@@ -99,7 +99,7 @@ VALUES
 )
 
 BeforeExecute
--- Oracle.21.Managed Oracle.Managed Oracle12
+-- Oracle.21.Managed Oracle.Managed Oracle12 (asynchronously)
 DECLARE @NChar Char -- StringFixedLength
 SET     @NChar = ''
 DECLARE @Char_1 Char -- StringFixedLength
@@ -117,7 +117,7 @@ VALUES
 )
 
 BeforeExecute
--- Oracle.21.Managed Oracle.Managed Oracle12
+-- Oracle.21.Managed Oracle.Managed Oracle12 (asynchronously)
 DECLARE @NChar Char -- StringFixedLength
 SET     @NChar = ' '
 DECLARE @Char_1 Char -- StringFixedLength
@@ -135,7 +135,7 @@ VALUES
 )
 
 BeforeExecute
--- Oracle.21.Managed Oracle.Managed Oracle12
+-- Oracle.21.Managed Oracle.Managed Oracle12 (asynchronously)
 DECLARE @NChar Char -- StringFixedLength
 SET     @NChar = ' '
 DECLARE @Char_1 Char -- StringFixedLength
@@ -153,7 +153,7 @@ VALUES
 )
 
 BeforeExecute
--- Oracle.21.Managed Oracle.Managed Oracle12
+-- Oracle.21.Managed Oracle.Managed Oracle12 (asynchronously)
 DECLARE @NChar Char -- StringFixedLength
 SET     @NChar = ' '
 DECLARE @Char_1 Char -- StringFixedLength
@@ -171,7 +171,7 @@ VALUES
 )
 
 BeforeExecute
--- Oracle.21.Managed Oracle.Managed Oracle12
+-- Oracle.21.Managed Oracle.Managed Oracle12 (asynchronously)
 DECLARE @NChar Char -- StringFixedLength
 SET     @NChar = ' '
 DECLARE @Char_1 Char -- StringFixedLength
@@ -189,7 +189,7 @@ VALUES
 )
 
 BeforeExecute
--- Oracle.21.Managed Oracle.Managed Oracle12
+-- Oracle.21.Managed Oracle.Managed Oracle12 (asynchronously)
 DECLARE @NChar Char -- StringFixedLength
 SET     @NChar = ' '
 DECLARE @Char_1 Char -- StringFixedLength
@@ -207,7 +207,7 @@ VALUES
 )
 
 BeforeExecute
--- Oracle.21.Managed Oracle.Managed Oracle12
+-- Oracle.21.Managed Oracle.Managed Oracle12 (asynchronously)
 DECLARE @NChar Char -- StringFixedLength
 SET     @NChar = ' '
 DECLARE @Char_1 Char -- StringFixedLength
@@ -225,7 +225,7 @@ VALUES
 )
 
 BeforeExecute
--- Oracle.21.Managed Oracle.Managed Oracle12
+-- Oracle.21.Managed Oracle.Managed Oracle12 (asynchronously)
 DECLARE @NChar Char -- StringFixedLength
 SET     @NChar = ' '
 DECLARE @Char_1 Char -- StringFixedLength
@@ -243,7 +243,7 @@ VALUES
 )
 
 BeforeExecute
--- Oracle.21.Managed Oracle.Managed Oracle12
+-- Oracle.21.Managed Oracle.Managed Oracle12 (asynchronously)
 DECLARE @NChar Char -- StringFixedLength
 SET     @NChar = ' '
 DECLARE @Char_1 Char -- StringFixedLength
@@ -261,7 +261,7 @@ VALUES
 )
 
 BeforeExecute
--- Oracle.21.Managed Oracle.Managed Oracle12
+-- Oracle.21.Managed Oracle.Managed Oracle12 (asynchronously)
 DECLARE @NChar Char -- StringFixedLength
 SET     @NChar = ' '
 DECLARE @Char_1 Char -- StringFixedLength
@@ -279,7 +279,7 @@ VALUES
 )
 
 BeforeExecute
--- Oracle.21.Managed Oracle.Managed Oracle12
+-- Oracle.21.Managed Oracle.Managed Oracle12 (asynchronously)
 DECLARE @NChar Char -- StringFixedLength
 SET     @NChar = ' '
 DECLARE @Char_1 Char -- StringFixedLength
@@ -297,7 +297,7 @@ VALUES
 )
 
 BeforeExecute
--- Oracle.21.Managed Oracle.Managed Oracle12
+-- Oracle.21.Managed Oracle.Managed Oracle12 (asynchronously)
 DECLARE @NChar Char -- StringFixedLength
 SET     @NChar = ' '
 DECLARE @Char_1 Char -- StringFixedLength
@@ -315,7 +315,7 @@ VALUES
 )
 
 BeforeExecute
--- Oracle.21.Managed Oracle.Managed Oracle12
+-- Oracle.21.Managed Oracle.Managed Oracle12 (asynchronously)
 DECLARE @NChar Char -- StringFixedLength
 SET     @NChar = ' '
 DECLARE @Char_1 Char -- StringFixedLength
@@ -333,7 +333,7 @@ VALUES
 )
 
 BeforeExecute
--- Oracle.21.Managed Oracle.Managed Oracle12
+-- Oracle.21.Managed Oracle.Managed Oracle12 (asynchronously)
 DECLARE @NChar Char -- StringFixedLength
 SET     @NChar = '　'
 DECLARE @Char_1 Char -- StringFixedLength
@@ -351,7 +351,7 @@ VALUES
 )
 
 BeforeExecute
--- Oracle.21.Managed Oracle.Managed Oracle12
+-- Oracle.21.Managed Oracle.Managed Oracle12 (asynchronously)
 DECLARE @NChar Char -- StringFixedLength
 SET     @NChar = chr(0)
 DECLARE @Char_1 Char -- StringFixedLength
@@ -369,7 +369,7 @@ VALUES
 )
 
 BeforeExecute
--- Oracle.21.Managed Oracle.Managed Oracle12
+-- Oracle.21.Managed Oracle.Managed Oracle12 (asynchronously)
 DECLARE @NChar Char -- StringFixedLength
 SET     @NChar = NULL
 DECLARE @Char_1 Char -- StringFixedLength
@@ -387,7 +387,7 @@ VALUES
 )
 
 BeforeExecute
--- Oracle.21.Managed Oracle.Managed Oracle12
+-- Oracle.21.Managed Oracle.Managed Oracle12 (asynchronously)
 DECLARE @lastId Int32
 SET     @lastId = 2
 
@@ -403,7 +403,7 @@ ORDER BY
 	t1.ID
 
 BeforeExecute
--- Oracle.21.Managed Oracle.Managed Oracle12
+-- Oracle.21.Managed Oracle.Managed Oracle12 (asynchronously)
 DECLARE @lastId Int32
 SET     @lastId = 2
 

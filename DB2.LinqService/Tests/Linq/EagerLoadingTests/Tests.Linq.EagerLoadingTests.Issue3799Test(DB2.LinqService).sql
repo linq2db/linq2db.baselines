@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- DB2 DB2.LUW DB2LUW
+-- DB2 DB2.LUW DB2LUW (asynchronously)
 
 SELECT
 	"m_1"."Children",
@@ -22,7 +22,7 @@ FROM
 		INNER JOIN "Test3799Item" "d" ON "m_1"."Children" = "d"."ParentId" OR "m_1"."Children" IS NULL AND "d"."ParentId" IS NULL
 
 BeforeExecute
--- DB2 DB2.LUW DB2LUW
+-- DB2 DB2.LUW DB2LUW (asynchronously)
 
 SELECT
 	"item_1"."Name",

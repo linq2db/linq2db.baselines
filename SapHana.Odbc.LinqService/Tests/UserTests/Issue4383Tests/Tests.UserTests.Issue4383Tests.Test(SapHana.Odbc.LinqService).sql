@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+-- SapHana.Odbc SapHanaOdbc (asynchronously)
 
 SELECT
 	"m_1"."Id",
@@ -23,7 +23,7 @@ FROM
 		INNER JOIN "CHAINPOINTS" "d_1" ON "m_1"."Id" = "d_1"."CHAIN_ID"
 
 BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+-- SapHana.Odbc SapHanaOdbc (asynchronously)
 
 SELECT
 	"m_1"."LINE_ID",
@@ -39,7 +39,7 @@ ORDER BY
 	"m_1"."LINE_ID"
 
 BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+-- SapHana.Odbc SapHanaOdbc (asynchronously)
 
 SELECT
 	"t1"."LINE_ID",

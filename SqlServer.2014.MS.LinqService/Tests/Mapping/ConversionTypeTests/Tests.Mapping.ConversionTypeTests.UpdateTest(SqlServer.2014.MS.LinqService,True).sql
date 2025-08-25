@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2014.MS SqlServer.2014
+-- SqlServer.2014.MS SqlServer.2014 (asynchronously)
 
 UPDATE
 	[TrimTestTable]
@@ -9,7 +9,7 @@ WHERE
 	[TrimTestTable].[ID] = 3
 
 BeforeExecute
--- SqlServer.2014.MS SqlServer.2014
+-- SqlServer.2014.MS SqlServer.2014 (asynchronously)
 
 UPDATE
 	[TrimTestTable]
@@ -19,7 +19,7 @@ WHERE
 	[TrimTestTable].[Data] = N'***XXX***'
 
 BeforeExecute
--- SqlServer.2014.MS SqlServer.2014
+-- SqlServer.2014.MS SqlServer.2014 (asynchronously)
 
 UPDATE
 	[TrimTestTable]
@@ -29,7 +29,7 @@ WHERE
 	[TrimTestTable].[Data] = N'***HHH***'
 
 BeforeExecute
--- SqlServer.2014.MS SqlServer.2014
+-- SqlServer.2014.MS SqlServer.2014 (asynchronously)
 
 SELECT
 	[r].[ID],
@@ -40,7 +40,7 @@ ORDER BY
 	[r].[ID]
 
 BeforeExecute
--- SqlServer.2014.MS SqlServer.2014
+-- SqlServer.2014.MS SqlServer.2014 (asynchronously)
 
 SELECT
 	[r].[ID],

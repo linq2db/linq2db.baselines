@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- ClickHouse.Octonica ClickHouse
+-- ClickHouse.Octonica ClickHouse (asynchronously)
 
 SELECT
 	arg.Id,
@@ -10,7 +10,7 @@ FROM
 			SELECT 1 AS Id, toUInt32(1) AS Value) arg ON entity.PersonID = arg.Id
 
 BeforeExecute
--- ClickHouse.Octonica ClickHouse
+-- ClickHouse.Octonica ClickHouse (asynchronously)
 
 SELECT
 	arg.Id,

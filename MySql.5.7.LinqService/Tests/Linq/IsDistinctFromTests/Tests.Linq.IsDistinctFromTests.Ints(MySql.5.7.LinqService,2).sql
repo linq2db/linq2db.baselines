@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- MySql.5.7 MySql.5.7.MySql.Data MySql57
+-- MySql.5.7 MySql.5.7.MySql.Data MySql57 (asynchronously)
 DECLARE @value Int32
 SET     @value = 2
 
@@ -11,7 +11,7 @@ WHERE
 	NOT `s`.`Int` <=> @value
 
 BeforeExecute
--- MySql.5.7 MySql.5.7.MySql.Data MySql57
+-- MySql.5.7 MySql.5.7.MySql.Data MySql57 (asynchronously)
 DECLARE @value Int32
 SET     @value = 2
 
@@ -23,7 +23,7 @@ WHERE
 	NOT `s`.`NullableInt` <=> @value
 
 BeforeExecute
--- MySql.5.7 MySql.5.7.MySql.Data MySql57
+-- MySql.5.7 MySql.5.7.MySql.Data MySql57 (asynchronously)
 DECLARE @value Int32
 SET     @value = 2
 
@@ -35,7 +35,7 @@ WHERE
 	`s`.`Int` <=> @value
 
 BeforeExecute
--- MySql.5.7 MySql.5.7.MySql.Data MySql57
+-- MySql.5.7 MySql.5.7.MySql.Data MySql57 (asynchronously)
 DECLARE @value Int32
 SET     @value = 2
 

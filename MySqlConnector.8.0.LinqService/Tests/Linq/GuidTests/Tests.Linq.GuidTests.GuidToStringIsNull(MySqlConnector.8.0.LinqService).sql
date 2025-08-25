@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
+-- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80 (asynchronously)
 DECLARE @Guid1 Guid
 SET     @Guid1 = 'bc7b663d-0fde-4327-8f92-5d8cc3a11d11'
 

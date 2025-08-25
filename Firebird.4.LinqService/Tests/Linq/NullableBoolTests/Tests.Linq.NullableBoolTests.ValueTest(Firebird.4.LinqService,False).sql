@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Firebird.4 Firebird4
+-- Firebird.4 Firebird4 (asynchronously)
 DECLARE @value Boolean
 SET     @value = FALSE
 
@@ -11,7 +11,7 @@ WHERE
 	"t"."Value" = @value
 
 BeforeExecute
--- Firebird.4 Firebird4
+-- Firebird.4 Firebird4 (asynchronously)
 DECLARE @value Boolean
 SET     @value = FALSE
 
@@ -23,7 +23,7 @@ WHERE
 	"t"."Value" = @value
 
 BeforeExecute
--- Firebird.4 Firebird4
+-- Firebird.4 Firebird4 (asynchronously)
 DECLARE @value Boolean
 SET     @value = FALSE
 
@@ -35,7 +35,7 @@ WHERE
 	"t"."Value" <> @value OR "t"."Value" IS NULL
 
 BeforeExecute
--- Firebird.4 Firebird4
+-- Firebird.4 Firebird4 (asynchronously)
 DECLARE @value Boolean
 SET     @value = FALSE
 

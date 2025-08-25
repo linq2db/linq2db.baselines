@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Firebird.4 Firebird4
+-- Firebird.4 Firebird4 (asynchronously)
 
 SELECT
 	CAST(CAST(Floor("t"."MoneyValue") AS Int) AS Float) * 57.295779513082323

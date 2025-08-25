@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Oracle.18.Managed Oracle.Managed Oracle12
+-- Oracle.18.Managed Oracle.Managed Oracle12 (asynchronously)
 
 SELECT /*+ FULL(p_2.p_1.p) LEADING(p_2.p_1.p p_2.p_1.c_1) */
 	p_2."ParentID",

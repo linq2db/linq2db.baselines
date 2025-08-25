@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 DECLARE @filter1 NVarChar(6) -- String
 SET     @filter1 = '%John%'
 DECLARE @filter2 NVarChar(8) -- String
@@ -43,7 +43,7 @@ ORDER BY
 	[t1].[PersonID]
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 
 SELECT
 	[t1].[PersonID],
@@ -52,7 +52,7 @@ FROM
 	[Patient] [t1]
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 
 SELECT
 	[t1].[FirstName],

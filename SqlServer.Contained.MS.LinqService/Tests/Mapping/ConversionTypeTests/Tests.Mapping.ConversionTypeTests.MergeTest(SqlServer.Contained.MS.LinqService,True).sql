@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2019 (asynchronously)
 
 MERGE INTO [TrimTestTable] [Target]
 USING (VALUES
@@ -30,7 +30,7 @@ VALUES
 ;
 
 BeforeExecute
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2019 (asynchronously)
 
 MERGE INTO [TrimTestTable] [Target]
 USING (VALUES
@@ -61,7 +61,7 @@ VALUES
 ;
 
 BeforeExecute
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2019 (asynchronously)
 
 SELECT
 	[r].[ID],
@@ -72,7 +72,7 @@ ORDER BY
 	[r].[ID]
 
 BeforeExecute
--- SqlServer.Contained.MS SqlServer.2019
+-- SqlServer.Contained.MS SqlServer.2019 (asynchronously)
 
 SELECT
 	[r].[ID],

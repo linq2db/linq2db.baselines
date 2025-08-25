@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Informix.DB2 Informix
+-- Informix.DB2 Informix (asynchronously)
 
 UPDATE
 	TrimTestTable t1
@@ -9,7 +9,7 @@ WHERE
 	t1.ID = 3
 
 BeforeExecute
--- Informix.DB2 Informix
+-- Informix.DB2 Informix (asynchronously)
 
 UPDATE
 	TrimTestTable t
@@ -19,7 +19,7 @@ WHERE
 	t."Data" = '***XXX***'
 
 BeforeExecute
--- Informix.DB2 Informix
+-- Informix.DB2 Informix (asynchronously)
 
 UPDATE
 	TrimTestTable t
@@ -29,7 +29,7 @@ WHERE
 	t."Data" = '***HHH***'
 
 BeforeExecute
--- Informix.DB2 Informix
+-- Informix.DB2 Informix (asynchronously)
 
 SELECT
 	r.ID,
@@ -40,7 +40,7 @@ ORDER BY
 	r.ID
 
 BeforeExecute
--- Informix.DB2 Informix
+-- Informix.DB2 Informix (asynchronously)
 
 SELECT
 	r.ID,

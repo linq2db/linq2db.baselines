@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- PostgreSQL.18 PostgreSQL
+-- PostgreSQL.18 PostgreSQL (asynchronously)
 DECLARE @value Numeric(9, 5) -- Decimal
 SET     @value = 6579.64648
 
@@ -10,7 +10,7 @@ FROM
 LIMIT 1
 
 BeforeExecute
--- PostgreSQL.18 PostgreSQL
+-- PostgreSQL.18 PostgreSQL (asynchronously)
 DECLARE @value Real -- Single
 SET     @value = 6579.64648
 
@@ -21,7 +21,7 @@ FROM
 LIMIT 1
 
 BeforeExecute
--- PostgreSQL.18 PostgreSQL
+-- PostgreSQL.18 PostgreSQL (asynchronously)
 DECLARE @value Double
 SET     @value = 6579.6464800000003
 
@@ -32,7 +32,7 @@ FROM
 LIMIT 1
 
 BeforeExecute
--- PostgreSQL.18 PostgreSQL
+-- PostgreSQL.18 PostgreSQL (asynchronously)
 DECLARE @value Numeric(9, 5) -- Decimal
 SET     @value = 6579.64648
 
@@ -43,7 +43,7 @@ FROM
 LIMIT 1
 
 BeforeExecute
--- PostgreSQL.18 PostgreSQL
+-- PostgreSQL.18 PostgreSQL (asynchronously)
 DECLARE @value Real -- Single
 SET     @value = 6579.64648
 
@@ -54,7 +54,7 @@ FROM
 LIMIT 1
 
 BeforeExecute
--- PostgreSQL.18 PostgreSQL
+-- PostgreSQL.18 PostgreSQL (asynchronously)
 DECLARE @value Double
 SET     @value = 6579.6464800000003
 
@@ -65,7 +65,7 @@ FROM
 LIMIT 1
 
 BeforeExecute
--- PostgreSQL.18 PostgreSQL
+-- PostgreSQL.18 PostgreSQL (asynchronously)
 DECLARE @value Numeric(9, 5) -- Decimal
 SET     @value = 6579.64648
 
@@ -76,7 +76,7 @@ FROM
 LIMIT 1
 
 BeforeExecute
--- PostgreSQL.18 PostgreSQL
+-- PostgreSQL.18 PostgreSQL (asynchronously)
 DECLARE @value Real -- Single
 SET     @value = 6579.64648
 
@@ -87,7 +87,7 @@ FROM
 LIMIT 1
 
 BeforeExecute
--- PostgreSQL.18 PostgreSQL
+-- PostgreSQL.18 PostgreSQL (asynchronously)
 DECLARE @value Double
 SET     @value = 6579.6464800000003
 

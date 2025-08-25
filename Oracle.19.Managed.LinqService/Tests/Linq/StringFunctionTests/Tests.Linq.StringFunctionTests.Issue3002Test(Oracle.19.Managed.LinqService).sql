@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Oracle.19.Managed Oracle.Managed Oracle12
+-- Oracle.19.Managed Oracle.Managed Oracle12 (asynchronously)
 
 INSERT INTO "SampleClass"
 (
@@ -15,7 +15,7 @@ VALUES
 )
 
 BeforeExecute
--- Oracle.19.Managed Oracle.Managed Oracle12
+-- Oracle.19.Managed Oracle.Managed Oracle12 (asynchronously)
 
 INSERT INTO "SampleClass"
 (
@@ -31,7 +31,7 @@ VALUES
 )
 
 BeforeExecute
--- Oracle.19.Managed Oracle.Managed Oracle12
+-- Oracle.19.Managed Oracle.Managed Oracle12 (asynchronously)
 DECLARE @test Varchar2(4) -- String
 SET     @test = 'Test'
 DECLARE @test_1 Varchar2(6) -- String
@@ -53,7 +53,7 @@ SELECT
 FROM SYS.DUAL
 
 BeforeExecute
--- Oracle.19.Managed Oracle.Managed Oracle12
+-- Oracle.19.Managed Oracle.Managed Oracle12 (asynchronously)
 DECLARE @test Varchar2(4) -- String
 SET     @test = 'Test'
 DECLARE @test_1 Varchar2(6) -- String
@@ -67,7 +67,7 @@ WHERE
 	sampleClass_1."Value" = :test OR sampleClass_1."Value2" LIKE :test_1 ESCAPE '~'
 
 BeforeExecute
--- Oracle.19.Managed Oracle.Managed Oracle12
+-- Oracle.19.Managed Oracle.Managed Oracle12 (asynchronously)
 DECLARE @test Varchar2(5) -- String
 SET     @test = 'Value'
 DECLARE @test_1 Varchar2(7) -- String
@@ -89,7 +89,7 @@ SELECT
 FROM SYS.DUAL
 
 BeforeExecute
--- Oracle.19.Managed Oracle.Managed Oracle12
+-- Oracle.19.Managed Oracle.Managed Oracle12 (asynchronously)
 DECLARE @test Varchar2(5) -- String
 SET     @test = 'Value'
 DECLARE @test_1 Varchar2(7) -- String
@@ -103,7 +103,7 @@ WHERE
 	sampleClass_1."Value" = :test OR sampleClass_1."Value2" LIKE :test_1 ESCAPE '~'
 
 BeforeExecute
--- Oracle.19.Managed Oracle.Managed Oracle12
+-- Oracle.19.Managed Oracle.Managed Oracle12 (asynchronously)
 DECLARE @test Varchar2(5) -- String
 SET     @test = 'Class'
 DECLARE @test_1 Varchar2(7) -- String
@@ -125,7 +125,7 @@ SELECT
 FROM SYS.DUAL
 
 BeforeExecute
--- Oracle.19.Managed Oracle.Managed Oracle12
+-- Oracle.19.Managed Oracle.Managed Oracle12 (asynchronously)
 DECLARE @test Varchar2(5) -- String
 SET     @test = 'Class'
 DECLARE @test_1 Varchar2(7) -- String

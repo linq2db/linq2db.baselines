@@ -1,10 +1,10 @@
 ﻿BeforeExecute
--- Informix.DB2 Informix
+-- Informix.DB2 Informix (asynchronously)
 
 DROP TABLE IF EXISTS CreateIfNotExistsTable
 
 BeforeExecute
--- Informix.DB2 Informix
+-- Informix.DB2 Informix (asynchronously)
 
 CREATE TEMP TABLE IF NOT EXISTS CreateIfNotExistsTable
 (
@@ -13,7 +13,7 @@ CREATE TEMP TABLE IF NOT EXISTS CreateIfNotExistsTable
 )
 
 BeforeExecute
--- Informix.DB2 Informix
+-- Informix.DB2 Informix (asynchronously)
 
 INSERT INTO CreateIfNotExistsTable
 (
@@ -27,7 +27,7 @@ VALUES
 )
 
 BeforeExecute
--- Informix.DB2 Informix
+-- Informix.DB2 Informix (asynchronously)
 
 SELECT
 	t1.Id,
@@ -36,7 +36,7 @@ FROM
 	CreateIfNotExistsTable t1
 
 BeforeExecute
--- Informix.DB2 Informix
+-- Informix.DB2 Informix (asynchronously)
 
 CREATE TEMP TABLE IF NOT EXISTS CreateIfNotExistsTable
 (
@@ -45,12 +45,12 @@ CREATE TEMP TABLE IF NOT EXISTS CreateIfNotExistsTable
 )
 
 BeforeExecute
--- Informix.DB2 Informix
+-- Informix.DB2 Informix (asynchronously)
 
 DROP TABLE IF EXISTS CreateIfNotExistsTable
 
 BeforeExecute
--- Informix.DB2 Informix
+-- Informix.DB2 Informix (asynchronously)
 
 DROP TABLE IF EXISTS CreateIfNotExistsTable
 

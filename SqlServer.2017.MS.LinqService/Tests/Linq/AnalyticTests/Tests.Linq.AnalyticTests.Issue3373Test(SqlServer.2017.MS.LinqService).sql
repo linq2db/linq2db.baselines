@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2017.MS SqlServer.2017
+-- SqlServer.2017.MS SqlServer.2017 (asynchronously)
 
 SELECT
 	SUM(IIF([t].[ParentID] IN (3), [t].[ChildID], 0)) OVER(PARTITION BY [a_Parent].[Value1] ORDER BY [t].[ParentID])

@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+-- SapHana.Odbc SapHanaOdbc (asynchronously)
 
 SELECT
 	To_Timestamp(LPad(Year("t"."DateTimeValue"), 4, '0') || '-10-01 20:35:44.000')

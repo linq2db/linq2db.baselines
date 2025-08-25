@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2019
+-- SqlServer.2019 (asynchronously)
 
 DELETE [r]
 FROM
@@ -8,7 +8,7 @@ WHERE
 	[r].[ID] >= 1000
 
 BeforeExecute
--- SqlServer.2019
+-- SqlServer.2019 (asynchronously)
 DECLARE @tt BigInt -- Int64
 SET     @tt = 600000000
 
@@ -24,7 +24,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2019
+-- SqlServer.2019 (asynchronously)
 
 SELECT TOP (1)
 	[t].[ID],
@@ -35,7 +35,7 @@ WHERE
 	[t].[ID] = 1001
 
 BeforeExecute
--- SqlServer.2019
+-- SqlServer.2019 (asynchronously)
 
 DELETE [r]
 FROM

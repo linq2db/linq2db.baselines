@@ -1,10 +1,10 @@
 ﻿BeforeExecute
--- SQLite.Classic.MPM SQLite.Classic SQLite
+-- SQLite.Classic.MPM SQLite.Classic SQLite (asynchronously)
 
 DROP TABLE IF EXISTS [FluentTemp]
 
 BeforeExecute
--- SQLite.Classic.MPM SQLite.Classic SQLite
+-- SQLite.Classic.MPM SQLite.Classic SQLite (asynchronously)
 
 CREATE TABLE IF NOT EXISTS [FluentTemp]
 (
@@ -15,7 +15,7 @@ CREATE TABLE IF NOT EXISTS [FluentTemp]
 )
 
 BeforeExecute
--- SQLite.Classic.MPM SQLite.Classic SQLite
+-- SQLite.Classic.MPM SQLite.Classic SQLite (asynchronously)
 DECLARE @ID  -- Int32
 SET     @ID = 1
 DECLARE @Name NVarChar(4) -- String
@@ -33,7 +33,7 @@ VALUES
 )
 
 BeforeExecute
--- SQLite.Classic.MPM SQLite.Classic SQLite
+-- SQLite.Classic.MPM SQLite.Classic SQLite (asynchronously)
 
 INSERT INTO [FluentTemp] AS [t1]
 (
@@ -50,7 +50,7 @@ ON CONFLICT ([ID]) DO UPDATE SET
 	[Name] = [t1].[Name]
 
 BeforeExecute
--- SQLite.Classic.MPM SQLite.Classic SQLite
+-- SQLite.Classic.MPM SQLite.Classic SQLite (asynchronously)
 
 DROP TABLE IF EXISTS [FluentTemp]
 

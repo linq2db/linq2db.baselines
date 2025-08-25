@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Access.Ace.OleDb AccessOleDb
+-- Access.Ace.OleDb AccessOleDb (asynchronously)
 DECLARE @ID Integer -- Int32
 SET     @ID = 1000
 DECLARE @MoneyValue VarChar(1, 0) -- AnsiString
@@ -49,7 +49,7 @@ VALUES
 )
 
 BeforeExecute
--- Access.Ace.OleDb AccessOleDb
+-- Access.Ace.OleDb AccessOleDb (asynchronously)
 
 SELECT TOP 1
 	[t1].[ID],
@@ -68,7 +68,7 @@ WHERE
 	[t1].[ID] = 1000
 
 BeforeExecute
--- Access.Ace.OleDb AccessOleDb
+-- Access.Ace.OleDb AccessOleDb (asynchronously)
 
 DELETE FROM
 	[LinqDataTypes] [t1]

@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Sybase.Managed Sybase
+-- Sybase.Managed Sybase (asynchronously)
 DECLARE @s UniVarChar(7) -- String
 SET     @s = '123[456'
 
@@ -11,7 +11,7 @@ WHERE
 	[p].[PersonID] = 1 AND @s LIKE '%~[%' ESCAPE '~'
 
 BeforeExecute
--- Sybase.Managed Sybase
+-- Sybase.Managed Sybase (asynchronously)
 DECLARE @s UniVarChar(7) -- String
 SET     @s = '123[456'
 

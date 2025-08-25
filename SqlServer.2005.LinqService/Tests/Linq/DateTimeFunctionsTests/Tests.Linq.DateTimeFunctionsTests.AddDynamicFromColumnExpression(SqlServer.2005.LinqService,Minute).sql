@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2005
+-- SqlServer.2005 (asynchronously)
 DECLARE @part1 Int -- Int32
 SET     @part1 = 4
 DECLARE @part2 Int -- Int32

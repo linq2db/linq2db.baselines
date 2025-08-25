@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Firebird.2.5 Firebird
+-- Firebird.2.5 Firebird (asynchronously)
 
 DELETE FROM
 	"Parent" "t1"
@@ -7,7 +7,7 @@ WHERE
 	"t1"."ParentID" > 1000
 
 BeforeExecute
--- Firebird.2.5 Firebird
+-- Firebird.2.5 Firebird (asynchronously)
 
 UPDATE
 	"Parent"
@@ -37,7 +37,7 @@ WHERE
 	)
 
 BeforeExecute
--- Firebird.2.5 Firebird
+-- Firebird.2.5 Firebird (asynchronously)
 DECLARE @ParentID Integer -- Int32
 SET     @ParentID = 1
 

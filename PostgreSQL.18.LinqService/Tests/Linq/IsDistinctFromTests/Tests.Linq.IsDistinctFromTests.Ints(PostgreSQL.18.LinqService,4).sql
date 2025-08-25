@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- PostgreSQL.18 PostgreSQL
+-- PostgreSQL.18 PostgreSQL (asynchronously)
 DECLARE @value Integer -- Int32
 SET     @value = 4
 
@@ -11,7 +11,7 @@ WHERE
 	s."Int" IS DISTINCT FROM :value
 
 BeforeExecute
--- PostgreSQL.18 PostgreSQL
+-- PostgreSQL.18 PostgreSQL (asynchronously)
 DECLARE @value Integer -- Int32
 SET     @value = 4
 
@@ -23,7 +23,7 @@ WHERE
 	s."NullableInt" IS DISTINCT FROM :value
 
 BeforeExecute
--- PostgreSQL.18 PostgreSQL
+-- PostgreSQL.18 PostgreSQL (asynchronously)
 DECLARE @value Integer -- Int32
 SET     @value = 4
 
@@ -35,7 +35,7 @@ WHERE
 	s."Int" IS NOT DISTINCT FROM :value
 
 BeforeExecute
--- PostgreSQL.18 PostgreSQL
+-- PostgreSQL.18 PostgreSQL (asynchronously)
 DECLARE @value Integer -- Int32
 SET     @value = 4
 

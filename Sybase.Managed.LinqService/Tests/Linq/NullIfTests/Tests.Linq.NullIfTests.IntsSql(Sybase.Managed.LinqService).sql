@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Sybase.Managed Sybase
+-- Sybase.Managed Sybase (asynchronously)
 
 SELECT
 	NULLIF([s].[Int], 2)
@@ -9,7 +9,7 @@ ORDER BY
 	[s].[Int]
 
 BeforeExecute
--- Sybase.Managed Sybase
+-- Sybase.Managed Sybase (asynchronously)
 
 SELECT
 	NULLIF([s].[Int], 4)
@@ -19,7 +19,7 @@ ORDER BY
 	[s].[Int]
 
 BeforeExecute
--- Sybase.Managed Sybase
+-- Sybase.Managed Sybase (asynchronously)
 
 SELECT
 	NULLIF([s].[Int], NULL)
@@ -29,7 +29,7 @@ ORDER BY
 	[s].[Int]
 
 BeforeExecute
--- Sybase.Managed Sybase
+-- Sybase.Managed Sybase (asynchronously)
 
 SELECT
 	NULLIF([s].[NullableInt], 2)
@@ -39,7 +39,7 @@ ORDER BY
 	[s].[Int]
 
 BeforeExecute
--- Sybase.Managed Sybase
+-- Sybase.Managed Sybase (asynchronously)
 
 SELECT
 	NULLIF([s].[NullableInt], 4)
@@ -49,7 +49,7 @@ ORDER BY
 	[s].[Int]
 
 BeforeExecute
--- Sybase.Managed Sybase
+-- Sybase.Managed Sybase (asynchronously)
 
 SELECT
 	NULLIF([s].[NullableInt], NULL)

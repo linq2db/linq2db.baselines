@@ -1,10 +1,10 @@
 ﻿BeforeExecute
--- Access.Jet.Odbc AccessODBC
+-- Access.Jet.Odbc AccessODBC (asynchronously)
 
 DROP TABLE [Issue681Table2]
 
 BeforeExecute
--- Access.Jet.Odbc AccessODBC
+-- Access.Jet.Odbc AccessODBC (asynchronously)
 
 CREATE TABLE [Issue681Table2]
 (
@@ -15,7 +15,7 @@ CREATE TABLE [Issue681Table2]
 )
 
 BeforeExecute
--- Access.Jet.Odbc AccessODBC
+-- Access.Jet.Odbc AccessODBC (asynchronously)
 
 DROP TABLE [Issue681Table2]
 

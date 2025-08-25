@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Informix.DB2 Informix
+-- Informix.DB2 Informix (asynchronously)
 DECLARE @Name VarChar(11) -- String
 SET     @Name = 'NotVerified'
 DECLARE @BoolValue Char(1) -- StringFixedLength
@@ -21,7 +21,7 @@ VALUES
 )
 
 BeforeExecute
--- Informix.DB2 Informix
+-- Informix.DB2 Informix (asynchronously)
 DECLARE @Name VarChar(8) -- String
 SET     @Name = 'Verified'
 DECLARE @BoolValue Char(1) -- StringFixedLength
@@ -43,7 +43,7 @@ VALUES
 )
 
 BeforeExecute
--- Informix.DB2 Informix
+-- Informix.DB2 Informix (asynchronously)
 
 SELECT
 	COUNT(*)
@@ -53,7 +53,7 @@ WHERE
 	t1.BoolValue = 'N'
 
 BeforeExecute
--- Informix.DB2 Informix
+-- Informix.DB2 Informix (asynchronously)
 
 SELECT
 	COUNT(*)
@@ -63,7 +63,7 @@ WHERE
 	t1.BoolValue = 'Y'
 
 BeforeExecute
--- Informix.DB2 Informix
+-- Informix.DB2 Informix (asynchronously)
 DECLARE @cond VarChar(36) -- String
 SET     @cond = 'a948600d-de21-4f74-8ac2-9516b287076e'
 
@@ -75,7 +75,7 @@ WHERE
 	t1.GuidValue = @cond
 
 BeforeExecute
--- Informix.DB2 Informix
+-- Informix.DB2 Informix (asynchronously)
 
 SELECT FIRST 1
 	t1.Name,
@@ -87,7 +87,7 @@ WHERE
 	t1.BoolValue = 'N'
 
 BeforeExecute
--- Informix.DB2 Informix
+-- Informix.DB2 Informix (asynchronously)
 
 SELECT FIRST 1
 	t1.Name,
@@ -99,7 +99,7 @@ WHERE
 	t1.BoolValue = 'Y'
 
 BeforeExecute
--- Informix.DB2 Informix
+-- Informix.DB2 Informix (asynchronously)
 
 SELECT FIRST 1
 	t1.Name,
@@ -111,7 +111,7 @@ WHERE
 	t1.BoolValue = 'N'
 
 BeforeExecute
--- Informix.DB2 Informix
+-- Informix.DB2 Informix (asynchronously)
 
 SELECT FIRST 1
 	t1.Name,
@@ -123,7 +123,7 @@ WHERE
 	t1.BoolValue = 'Y'
 
 BeforeExecute
--- Informix.DB2 Informix
+-- Informix.DB2 Informix (asynchronously)
 
 SELECT FIRST 1
 	t1.Name,
@@ -135,7 +135,7 @@ WHERE
 	t1.BoolValue = 'N'
 
 BeforeExecute
--- Informix.DB2 Informix
+-- Informix.DB2 Informix (asynchronously)
 
 SELECT FIRST 1
 	t1.Name,
@@ -147,7 +147,7 @@ WHERE
 	t1.BoolValue = 'Y'
 
 BeforeExecute
--- Informix.DB2 Informix
+-- Informix.DB2 Informix (asynchronously)
 
 SELECT FIRST 1
 	t1.Name,
@@ -159,7 +159,7 @@ WHERE
 	t1.BoolValue = 'N'
 
 BeforeExecute
--- Informix.DB2 Informix
+-- Informix.DB2 Informix (asynchronously)
 
 SELECT FIRST 1
 	t1.Name,
@@ -171,7 +171,7 @@ WHERE
 	t1.BoolValue = 'Y'
 
 BeforeExecute
--- Informix.DB2 Informix
+-- Informix.DB2 Informix (asynchronously)
 
 SELECT FIRST 1
 	t1.Name,
@@ -183,7 +183,7 @@ WHERE
 	t1.BoolValue = 'N'
 
 BeforeExecute
--- Informix.DB2 Informix
+-- Informix.DB2 Informix (asynchronously)
 
 SELECT FIRST 1
 	t1.Name,
@@ -195,7 +195,7 @@ WHERE
 	t1.BoolValue = 'Y'
 
 BeforeExecute
--- Informix.DB2 Informix
+-- Informix.DB2 Informix (asynchronously)
 DECLARE @GuidValue VarChar(36) -- String
 SET     @GuidValue = 'bc7b663d-0fde-4327-8f92-5d8cc3a11d11'
 
@@ -209,7 +209,7 @@ WHERE
 	t1.GuidValue = @GuidValue
 
 BeforeExecute
--- Informix.DB2 Informix
+-- Informix.DB2 Informix (asynchronously)
 DECLARE @GuidValue VarChar(36) -- String
 SET     @GuidValue = 'a948600d-de21-4f74-8ac2-9516b287076e'
 

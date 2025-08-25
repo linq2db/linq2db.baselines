@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2014.MS SqlServer.2014
+-- SqlServer.2014.MS SqlServer.2014 (asynchronously)
 DECLARE @str Char(5) -- AnsiStringFixedLength
 SET     @str = N'some%'
 DECLARE @str_1 NChar(5) -- StringFixedLength

@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- MySql.8.0 MySql.8.0.MySql.Data MySql80
+-- MySql.8.0 MySql.8.0.MySql.Data MySql80 (asynchronously)
 DECLARE @personId Int32
 SET     @personId = 1
 DECLARE @personId_1 Int32
@@ -22,7 +22,7 @@ WHERE
 	`p`.`PersonID` = @personId AND `p`.`PersonID` = @personId_1
 
 BeforeExecute
--- MySql.8.0 MySql.8.0.MySql.Data MySql80
+-- MySql.8.0 MySql.8.0.MySql.Data MySql80 (asynchronously)
 DECLARE @personId Int32
 SET     @personId = 1
 DECLARE @personId_1 Int32

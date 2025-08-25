@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- ClickHouse.Octonica ClickHouse
+-- ClickHouse.Octonica ClickHouse (asynchronously)
 
 SELECT DISTINCT
 	x.DuplicateData
@@ -8,7 +8,7 @@ FROM
 LIMIT 0, 3
 
 BeforeExecute
--- ClickHouse.Octonica ClickHouse
+-- ClickHouse.Octonica ClickHouse (asynchronously)
 
 SELECT
 	x.DuplicateData
@@ -19,7 +19,7 @@ ORDER BY
 LIMIT 0, 3
 
 BeforeExecute
--- ClickHouse.Octonica ClickHouse
+-- ClickHouse.Octonica ClickHouse (asynchronously)
 
 SELECT DISTINCT
 	x.DuplicateData
@@ -28,7 +28,7 @@ FROM
 LIMIT 0, 3
 
 BeforeExecute
--- ClickHouse.Octonica ClickHouse
+-- ClickHouse.Octonica ClickHouse (asynchronously)
 
 SELECT
 	x.DuplicateData
@@ -39,7 +39,7 @@ ORDER BY
 LIMIT 0, 3
 
 BeforeExecute
--- ClickHouse.Octonica ClickHouse
+-- ClickHouse.Octonica ClickHouse (asynchronously)
 
 SELECT DISTINCT
 	x.DuplicateData
@@ -48,7 +48,7 @@ FROM
 LIMIT 0, 3
 
 BeforeExecute
--- ClickHouse.Octonica ClickHouse
+-- ClickHouse.Octonica ClickHouse (asynchronously)
 
 SELECT
 	x.DuplicateData
@@ -60,7 +60,7 @@ ORDER BY
 LIMIT 0, 3
 
 BeforeExecute
--- ClickHouse.Octonica ClickHouse
+-- ClickHouse.Octonica ClickHouse (asynchronously)
 
 SELECT DISTINCT
 	x.DuplicateData
@@ -69,7 +69,7 @@ FROM
 LIMIT 0, 3
 
 BeforeExecute
--- ClickHouse.Octonica ClickHouse
+-- ClickHouse.Octonica ClickHouse (asynchronously)
 
 SELECT
 	x.DuplicateData
@@ -81,7 +81,7 @@ ORDER BY
 LIMIT 0, 3
 
 BeforeExecute
--- ClickHouse.Octonica ClickHouse
+-- ClickHouse.Octonica ClickHouse (asynchronously)
 
 SELECT DISTINCT
 	x.DuplicateData
@@ -90,7 +90,7 @@ FROM
 LIMIT 0, 3
 
 BeforeExecute
--- ClickHouse.Octonica ClickHouse
+-- ClickHouse.Octonica ClickHouse (asynchronously)
 
 SELECT
 	x.DuplicateData
@@ -102,7 +102,7 @@ ORDER BY
 LIMIT 0, 3
 
 BeforeExecute
--- ClickHouse.Octonica ClickHouse
+-- ClickHouse.Octonica ClickHouse (asynchronously)
 
 SELECT DISTINCT
 	x.DuplicateData
@@ -111,7 +111,7 @@ FROM
 LIMIT 0, 3
 
 BeforeExecute
--- ClickHouse.Octonica ClickHouse
+-- ClickHouse.Octonica ClickHouse (asynchronously)
 
 SELECT
 	x.DuplicateData

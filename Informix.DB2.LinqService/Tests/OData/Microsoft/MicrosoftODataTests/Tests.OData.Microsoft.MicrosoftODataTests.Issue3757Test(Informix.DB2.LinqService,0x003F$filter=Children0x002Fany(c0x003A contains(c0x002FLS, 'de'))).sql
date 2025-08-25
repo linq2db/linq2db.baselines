@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Informix.DB2 Informix
+-- Informix.DB2 Informix (asynchronously)
 
 SELECT
 	m_1.ID,
@@ -28,7 +28,7 @@ FROM
 		INNER JOIN Issue3757Level2 d ON m_1.ID = d.ParentId
 
 BeforeExecute
--- Informix.DB2 Informix
+-- Informix.DB2 Informix (asynchronously)
 
 SELECT
 	it.ID,

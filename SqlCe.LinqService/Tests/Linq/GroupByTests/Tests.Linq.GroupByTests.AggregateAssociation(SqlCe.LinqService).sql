@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 
 SELECT
 	SUM(Coalesce([a_Parent].[Value1], 0)) as [SUM_1]

@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 
 SELECT
 	[p].[PersonID] as [ID],
@@ -15,7 +15,7 @@ FROM
 		) [m_2] ON [p].[PersonID] = [m_2].[c1]
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 
 SELECT
 	[t1].[FirstName],

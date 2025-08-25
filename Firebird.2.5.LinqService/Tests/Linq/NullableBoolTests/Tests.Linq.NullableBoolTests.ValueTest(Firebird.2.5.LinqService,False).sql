@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Firebird.2.5 Firebird
+-- Firebird.2.5 Firebird (asynchronously)
 DECLARE @value Char -- String
 SET     @value = '0'
 
@@ -11,7 +11,7 @@ WHERE
 	"t"."Value" = @value
 
 BeforeExecute
--- Firebird.2.5 Firebird
+-- Firebird.2.5 Firebird (asynchronously)
 DECLARE @value Char -- String
 SET     @value = '0'
 
@@ -23,7 +23,7 @@ WHERE
 	"t"."Value" = @value
 
 BeforeExecute
--- Firebird.2.5 Firebird
+-- Firebird.2.5 Firebird (asynchronously)
 DECLARE @value Char -- String
 SET     @value = '0'
 
@@ -35,7 +35,7 @@ WHERE
 	"t"."Value" <> @value OR "t"."Value" IS NULL
 
 BeforeExecute
--- Firebird.2.5 Firebird
+-- Firebird.2.5 Firebird (asynchronously)
 DECLARE @value Char -- String
 SET     @value = '0'
 

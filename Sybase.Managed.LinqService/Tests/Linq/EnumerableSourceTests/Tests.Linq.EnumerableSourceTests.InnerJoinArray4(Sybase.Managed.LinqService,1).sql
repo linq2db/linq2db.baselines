@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Sybase.Managed Sybase
+-- Sybase.Managed Sybase (asynchronously)
 
 SELECT
 	[p].[FirstName],
@@ -19,7 +19,7 @@ FROM
 			SELECT 'Doe') [n] ON [p].[LastName] = [n].[item]
 
 BeforeExecute
--- Sybase.Managed Sybase
+-- Sybase.Managed Sybase (asynchronously)
 
 SELECT
 	[p].[FirstName],

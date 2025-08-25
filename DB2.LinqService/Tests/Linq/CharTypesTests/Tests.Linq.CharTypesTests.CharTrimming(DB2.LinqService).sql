@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- DB2 DB2.LUW DB2LUW
+-- DB2 DB2.LUW DB2LUW (asynchronously)
 
 SELECT
 	MAX("t1".ID)
@@ -7,7 +7,7 @@ FROM
 	ALLTYPES "t1"
 
 BeforeExecute
--- DB2 DB2.LUW DB2LUW
+-- DB2 DB2.LUW DB2LUW (asynchronously)
 DECLARE @NChar Char(1) -- StringFixedLength
 SET     @NChar = ' '
 
@@ -21,7 +21,7 @@ VALUES
 )
 
 BeforeExecute
--- DB2 DB2.LUW DB2LUW
+-- DB2 DB2.LUW DB2LUW (asynchronously)
 DECLARE @NChar Char(1) -- StringFixedLength
 SET     @NChar = '	'
 
@@ -35,7 +35,7 @@ VALUES
 )
 
 BeforeExecute
--- DB2 DB2.LUW DB2LUW
+-- DB2 DB2.LUW DB2LUW (asynchronously)
 DECLARE @NChar Char(1) -- StringFixedLength
 SET     @NChar = '
 '
@@ -50,7 +50,7 @@ VALUES
 )
 
 BeforeExecute
--- DB2 DB2.LUW DB2LUW
+-- DB2 DB2.LUW DB2LUW (asynchronously)
 DECLARE @NChar Char(1) -- StringFixedLength
 SET     @NChar = ''
 
@@ -64,7 +64,7 @@ VALUES
 )
 
 BeforeExecute
--- DB2 DB2.LUW DB2LUW
+-- DB2 DB2.LUW DB2LUW (asynchronously)
 DECLARE @NChar Char(1) -- StringFixedLength
 SET     @NChar = ''
 
@@ -78,7 +78,7 @@ VALUES
 )
 
 BeforeExecute
--- DB2 DB2.LUW DB2LUW
+-- DB2 DB2.LUW DB2LUW (asynchronously)
 DECLARE @NChar Char(1) -- StringFixedLength
 SET     @NChar = ''
 
@@ -92,7 +92,7 @@ VALUES
 )
 
 BeforeExecute
--- DB2 DB2.LUW DB2LUW
+-- DB2 DB2.LUW DB2LUW (asynchronously)
 DECLARE @NChar Char(1) -- StringFixedLength
 SET     @NChar = ' '
 
@@ -106,7 +106,7 @@ VALUES
 )
 
 BeforeExecute
--- DB2 DB2.LUW DB2LUW
+-- DB2 DB2.LUW DB2LUW (asynchronously)
 DECLARE @NChar Char(1) -- StringFixedLength
 SET     @NChar = ' '
 
@@ -120,7 +120,7 @@ VALUES
 )
 
 BeforeExecute
--- DB2 DB2.LUW DB2LUW
+-- DB2 DB2.LUW DB2LUW (asynchronously)
 DECLARE @NChar Char(1) -- StringFixedLength
 SET     @NChar = ' '
 
@@ -134,7 +134,7 @@ VALUES
 )
 
 BeforeExecute
--- DB2 DB2.LUW DB2LUW
+-- DB2 DB2.LUW DB2LUW (asynchronously)
 DECLARE @NChar Char(1) -- StringFixedLength
 SET     @NChar = ' '
 
@@ -148,7 +148,7 @@ VALUES
 )
 
 BeforeExecute
--- DB2 DB2.LUW DB2LUW
+-- DB2 DB2.LUW DB2LUW (asynchronously)
 DECLARE @NChar Char(1) -- StringFixedLength
 SET     @NChar = ' '
 
@@ -162,7 +162,7 @@ VALUES
 )
 
 BeforeExecute
--- DB2 DB2.LUW DB2LUW
+-- DB2 DB2.LUW DB2LUW (asynchronously)
 DECLARE @NChar Char(1) -- StringFixedLength
 SET     @NChar = ' '
 
@@ -176,7 +176,7 @@ VALUES
 )
 
 BeforeExecute
--- DB2 DB2.LUW DB2LUW
+-- DB2 DB2.LUW DB2LUW (asynchronously)
 DECLARE @NChar Char(1) -- StringFixedLength
 SET     @NChar = ' '
 
@@ -190,7 +190,7 @@ VALUES
 )
 
 BeforeExecute
--- DB2 DB2.LUW DB2LUW
+-- DB2 DB2.LUW DB2LUW (asynchronously)
 DECLARE @NChar Char(1) -- StringFixedLength
 SET     @NChar = ' '
 
@@ -204,7 +204,7 @@ VALUES
 )
 
 BeforeExecute
--- DB2 DB2.LUW DB2LUW
+-- DB2 DB2.LUW DB2LUW (asynchronously)
 DECLARE @NChar Char(1) -- StringFixedLength
 SET     @NChar = ' '
 
@@ -218,7 +218,7 @@ VALUES
 )
 
 BeforeExecute
--- DB2 DB2.LUW DB2LUW
+-- DB2 DB2.LUW DB2LUW (asynchronously)
 DECLARE @NChar Char(1) -- StringFixedLength
 SET     @NChar = ' '
 
@@ -232,7 +232,7 @@ VALUES
 )
 
 BeforeExecute
--- DB2 DB2.LUW DB2LUW
+-- DB2 DB2.LUW DB2LUW (asynchronously)
 DECLARE @NChar Char(1) -- StringFixedLength
 SET     @NChar = ' '
 
@@ -246,7 +246,7 @@ VALUES
 )
 
 BeforeExecute
--- DB2 DB2.LUW DB2LUW
+-- DB2 DB2.LUW DB2LUW (asynchronously)
 DECLARE @NChar Char(1) -- StringFixedLength
 SET     @NChar = ' '
 
@@ -260,7 +260,7 @@ VALUES
 )
 
 BeforeExecute
--- DB2 DB2.LUW DB2LUW
+-- DB2 DB2.LUW DB2LUW (asynchronously)
 DECLARE @NChar Char(1) -- StringFixedLength
 SET     @NChar = '　'
 
@@ -274,7 +274,7 @@ VALUES
 )
 
 BeforeExecute
--- DB2 DB2.LUW DB2LUW
+-- DB2 DB2.LUW DB2LUW (asynchronously)
 DECLARE @NChar Char -- StringFixedLength
 SET     @NChar = NULL
 
@@ -288,7 +288,7 @@ VALUES
 )
 
 BeforeExecute
--- DB2 DB2.LUW DB2LUW
+-- DB2 DB2.LUW DB2LUW (asynchronously)
 DECLARE @lastId Integer(4) -- Int32
 SET     @lastId = 223006
 
@@ -303,7 +303,7 @@ ORDER BY
 	"t1".ID
 
 BeforeExecute
--- DB2 DB2.LUW DB2LUW
+-- DB2 DB2.LUW DB2LUW (asynchronously)
 DECLARE @lastId Integer(4) -- Int32
 SET     @lastId = 223006
 

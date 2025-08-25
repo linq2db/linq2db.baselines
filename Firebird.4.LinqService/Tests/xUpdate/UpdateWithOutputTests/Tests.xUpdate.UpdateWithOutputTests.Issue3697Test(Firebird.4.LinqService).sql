@@ -1,10 +1,10 @@
 ﻿BeforeExecute
--- Firebird.4 Firebird4
+-- Firebird.4 Firebird4 (asynchronously)
 
 INSERT INTO "Test3697" DEFAULT VALUES
 
 BeforeExecute
--- Firebird.4 Firebird4
+-- Firebird.4 Firebird4 (asynchronously)
 
 UPDATE
 	"Test3697Item"
@@ -24,7 +24,7 @@ RETURNING
 	NEW."Id"
 
 BeforeExecute
--- Firebird.4 Firebird4
+-- Firebird.4 Firebird4 (asynchronously)
 
 UPDATE
 	"Test3697Item"

@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2019
+-- SqlServer.2019 (asynchronously)
 DECLARE @cond NVarChar(4000) -- String
 SET     @cond = N'%C%'
 

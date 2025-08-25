@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Access.Jet.Odbc AccessODBC
+-- Access.Jet.Odbc AccessODBC (asynchronously)
 DECLARE @param VarChar(2, 0) -- AnsiString
 SET     @param = 33
 DECLARE @param VarChar(2, 0) -- AnsiString

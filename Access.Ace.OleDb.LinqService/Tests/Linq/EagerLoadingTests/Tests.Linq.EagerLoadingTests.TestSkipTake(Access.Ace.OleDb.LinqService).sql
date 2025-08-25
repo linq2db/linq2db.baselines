@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Access.Ace.OleDb AccessOleDb
+-- Access.Ace.OleDb AccessOleDb (asynchronously)
 
 SELECT
 	[m_2].[Id1],
@@ -16,7 +16,7 @@ FROM
 		INNER JOIN [DetailClass] [d] ON ([m_2].[Id1] = [d].[MasterId])
 
 BeforeExecute
--- Access.Ace.OleDb AccessOleDb
+-- Access.Ace.OleDb AccessOleDb (asynchronously)
 
 SELECT
 	[m_2].[Id1],
@@ -35,7 +35,7 @@ ORDER BY
 	[d].[DetailId]
 
 BeforeExecute
--- Access.Ace.OleDb AccessOleDb
+-- Access.Ace.OleDb AccessOleDb (asynchronously)
 
 SELECT
 	[m_1].[Id1],
@@ -46,7 +46,7 @@ FROM
 	[MasterClass] [m_1]
 
 BeforeExecute
--- Access.Ace.OleDb AccessOleDb
+-- Access.Ace.OleDb AccessOleDb (asynchronously)
 
 SELECT
 	[m_1].[Id1],
@@ -63,7 +63,7 @@ FROM
 		INNER JOIN [DetailClass] [d] ON ([m_1].[Id1] = [d].[MasterId])
 
 BeforeExecute
--- Access.Ace.OleDb AccessOleDb
+-- Access.Ace.OleDb AccessOleDb (asynchronously)
 
 SELECT
 	[t1].[Id1],

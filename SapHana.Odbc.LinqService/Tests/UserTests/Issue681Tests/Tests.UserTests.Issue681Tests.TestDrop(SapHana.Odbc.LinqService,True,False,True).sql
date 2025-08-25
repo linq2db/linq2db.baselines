@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+-- SapHana.Odbc SapHanaOdbc (asynchronously)
 
 SELECT
 	current_schema
@@ -8,12 +8,12 @@ FROM
 LIMIT 1
 
 BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+-- SapHana.Odbc SapHanaOdbc (asynchronously)
 
 DROP TABLE "Issue681Table2"
 
 BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+-- SapHana.Odbc SapHanaOdbc (asynchronously)
 
 CREATE COLUMN TABLE "Issue681Table2"
 (
@@ -24,7 +24,7 @@ CREATE COLUMN TABLE "Issue681Table2"
 )
 
 BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+-- SapHana.Odbc SapHanaOdbc (asynchronously)
 
 DROP TABLE "LINKED_DB"."TESTDB"."Issue681Table2"
 

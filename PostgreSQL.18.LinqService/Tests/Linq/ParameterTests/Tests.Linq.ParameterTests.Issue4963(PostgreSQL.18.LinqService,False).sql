@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- PostgreSQL.18 PostgreSQL
+-- PostgreSQL.18 PostgreSQL (asynchronously)
 DECLARE @offset Integer -- Int32
 SET     @offset = -1
 
@@ -9,7 +9,7 @@ SET
 	"Field" = ("Issue4963Table"."Field"::Int + :offset)::SmallInt
 
 BeforeExecute
--- PostgreSQL.18 PostgreSQL
+-- PostgreSQL.18 PostgreSQL (asynchronously)
 
 SELECT
 	t1."Field"

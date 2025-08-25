@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2019 (asynchronously)
 
 SELECT TOP (2)
 	[t1].[Id]
@@ -9,7 +9,7 @@ WHERE
 	[t1].[Id] = 2
 
 BeforeExecute
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2019 (asynchronously)
 
 SELECT TOP (2)
 	[t1].[Id]
@@ -19,7 +19,7 @@ WHERE
 	[t1].[Id] = 2
 
 BeforeExecute
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2019 (asynchronously)
 DECLARE @UserId Int -- Int32
 SET     @UserId = 2
 
@@ -31,7 +31,7 @@ WHERE
 	[x].[Id] = @UserId
 
 BeforeExecute
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2019 (asynchronously)
 DECLARE @UserId Int -- Int32
 SET     @UserId = 2
 

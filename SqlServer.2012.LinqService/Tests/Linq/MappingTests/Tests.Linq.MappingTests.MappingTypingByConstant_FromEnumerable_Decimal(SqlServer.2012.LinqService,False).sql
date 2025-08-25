@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2012
+-- SqlServer.2012 (asynchronously)
 
 SELECT
 	[arg].[Id],
@@ -11,7 +11,7 @@ FROM
 		) [arg]([Id], [Value]) ON [entity].[PersonID] = [arg].[Id]
 
 BeforeExecute
--- SqlServer.2012
+-- SqlServer.2012 (asynchronously)
 
 SELECT
 	[arg].[Id],

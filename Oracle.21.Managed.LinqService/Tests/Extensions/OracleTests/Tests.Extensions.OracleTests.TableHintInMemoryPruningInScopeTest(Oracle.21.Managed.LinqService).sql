@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Oracle.21.Managed Oracle.Managed Oracle12
+-- Oracle.21.Managed Oracle.Managed Oracle12 (asynchronously)
 
 SELECT /*+ INMEMORY_PRUNING(p) INMEMORY_PRUNING(c_1) */
 	p."ParentID",

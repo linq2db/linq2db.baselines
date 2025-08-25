@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2008.MS SqlServer.2008
+-- SqlServer.2008.MS SqlServer.2008 (asynchronously)
 
 UPDATE
 	[Issue4963Table]
@@ -7,7 +7,7 @@ SET
 	[Field] = CAST(CAST([Issue4963Table].[Field] AS Int) + -1 AS TinyInt)
 
 BeforeExecute
--- SqlServer.2008.MS SqlServer.2008
+-- SqlServer.2008.MS SqlServer.2008 (asynchronously)
 
 SELECT TOP (2)
 	[t1].[Field]

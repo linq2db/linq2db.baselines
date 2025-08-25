@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 
 /* My Test */
 UPDATE
@@ -10,7 +10,7 @@ WHERE
 	[TestTable].[Id] = 1
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 
 /* My Test */
 INSERT INTO [TestTable]

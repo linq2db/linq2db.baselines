@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2014
+-- SqlServer.2014 (asynchronously)
 DECLARE @Name NVarChar(4000) -- String
 SET     @Name = N'group1'
 DECLARE @Enabled Bit -- Boolean
@@ -21,7 +21,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2014
+-- SqlServer.2014 (asynchronously)
 DECLARE @Name NVarChar(4000) -- String
 SET     @Name = N'group1'
 DECLARE @Enabled Bit -- Boolean
@@ -43,7 +43,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2014
+-- SqlServer.2014 (asynchronously)
 DECLARE @Name NVarChar(4000) -- String
 SET     @Name = N'group2'
 DECLARE @Enabled Bit -- Boolean
@@ -65,7 +65,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2014
+-- SqlServer.2014 (asynchronously)
 
 SELECT
 	[t1].[Id],

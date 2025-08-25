@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025 SqlServer.2022 (asynchronously)
 DECLARE @filter NVarChar(4000) -- String
 SET     @filter = N'%test%'
 DECLARE @filter_1 NVarChar(4000) -- String

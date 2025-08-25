@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 DECLARE @ParentID Int -- Int32
 SET     @ParentID = 1001
 
@@ -9,7 +9,7 @@ WHERE
 	[Parent].[ParentID] = @ParentID
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 DECLARE @ParentID Int -- Int32
 SET     @ParentID = 1001
 DECLARE @Value1 Int -- Int32
@@ -27,7 +27,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 DECLARE @ParentID Int -- Int32
 SET     @ParentID = 1001
 
@@ -39,7 +39,7 @@ WHERE
 	[p].[ParentID] = @ParentID
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 DECLARE @ParentID Int -- Int32
 SET     @ParentID = 1001
 
@@ -49,7 +49,7 @@ WHERE
 	[Parent].[ParentID] = @ParentID
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 DECLARE @ParentID Int -- Int32
 SET     @ParentID = 1001
 

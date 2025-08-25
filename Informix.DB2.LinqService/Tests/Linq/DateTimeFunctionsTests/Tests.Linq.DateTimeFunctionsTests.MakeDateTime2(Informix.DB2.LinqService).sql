@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Informix.DB2 Informix
+-- Informix.DB2 Informix (asynchronously)
 
 SELECT
 	To_Date('2010-' || LPad(t.ID, 2, '0') || '-01 20:35:44', '%Y-%m-%d %H:%M:%S')

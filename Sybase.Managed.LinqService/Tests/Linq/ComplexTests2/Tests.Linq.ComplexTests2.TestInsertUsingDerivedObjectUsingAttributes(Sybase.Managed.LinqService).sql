@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Sybase.Managed Sybase
+-- Sybase.Managed Sybase (asynchronously)
 DECLARE @FirstName UniVarChar(21) -- String
 SET     @FirstName = 'test_inherited_insert'
 DECLARE @LastName UniVarChar(4) -- String
@@ -27,7 +27,7 @@ VALUES
 SELECT @@IDENTITY
 
 BeforeExecute
--- Sybase.Managed Sybase
+-- Sybase.Managed Sybase (asynchronously)
 
 SELECT TOP 1
 	[t1].[FirstName],
@@ -41,7 +41,7 @@ WHERE
 	[t1].[FirstName] = 'test_inherited_insert'
 
 BeforeExecute
--- Sybase.Managed Sybase
+-- Sybase.Managed Sybase (asynchronously)
 DECLARE @FirstName UniVarChar(21) -- String
 SET     @FirstName = 'test_inherited_insert'
 DECLARE @LastName UniVarChar(4) -- String
@@ -64,7 +64,7 @@ WHERE
 	[Person].[PersonID] = @ID
 
 BeforeExecute
--- Sybase.Managed Sybase
+-- Sybase.Managed Sybase (asynchronously)
 
 SELECT TOP 1
 	[t1].[FirstName],
@@ -78,7 +78,7 @@ WHERE
 	[t1].[FirstName] = 'test_inherited_insert'
 
 BeforeExecute
--- Sybase.Managed Sybase
+-- Sybase.Managed Sybase (asynchronously)
 DECLARE @ID Integer -- Int32
 SET     @ID = 5
 

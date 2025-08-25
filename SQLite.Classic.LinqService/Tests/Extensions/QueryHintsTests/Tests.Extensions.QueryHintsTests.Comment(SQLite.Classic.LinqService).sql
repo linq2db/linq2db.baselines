@@ -12,7 +12,7 @@ FROM
 ----
 
 BeforeExecute
--- SQLite.Classic SQLite
+-- SQLite.Classic SQLite (asynchronously)
 
 SELECT
 	[p].[ParentID],
@@ -35,7 +35,7 @@ FROM
 ---
 
 BeforeExecute
--- SQLite.Classic SQLite
+-- SQLite.Classic SQLite (asynchronously)
 
 SELECT
 	[p].[ParentID],

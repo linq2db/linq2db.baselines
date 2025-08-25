@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 DECLARE @str NVarChar(6) -- String
 SET     @str = '%o~%h%'
 

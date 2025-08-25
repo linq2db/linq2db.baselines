@@ -1,12 +1,12 @@
 ﻿BeforeExecute
--- SqlServer.2019
+-- SqlServer.2019 (asynchronously)
 
 DELETE [t1]
 FROM
 	[TestMerge1] [t1]
 
 BeforeExecute
--- SqlServer.2019
+-- SqlServer.2019 (asynchronously)
 
 MERGE INTO [TestMerge1] [Target]
 USING (VALUES
@@ -38,7 +38,7 @@ VALUES
 ;
 
 BeforeExecute
--- SqlServer.2019
+-- SqlServer.2019 (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -53,14 +53,14 @@ ORDER BY
 	[t1].[Id]
 
 BeforeExecute
--- SqlServer.2019
+-- SqlServer.2019 (asynchronously)
 
 DELETE [t1]
 FROM
 	[TestMerge1] [t1]
 
 BeforeExecute
--- SqlServer.2019
+-- SqlServer.2019 (asynchronously)
 
 MERGE INTO [TestMerge1] [Target]
 USING (VALUES
@@ -92,7 +92,7 @@ VALUES
 ;
 
 BeforeExecute
--- SqlServer.2019
+-- SqlServer.2019 (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -107,14 +107,14 @@ ORDER BY
 	[t1].[Id]
 
 BeforeExecute
--- SqlServer.2019
+-- SqlServer.2019 (asynchronously)
 
 DELETE [t1]
 FROM
 	[TestMerge1] [t1]
 
 BeforeExecute
--- SqlServer.2019
+-- SqlServer.2019 (asynchronously)
 
 MERGE INTO [TestMerge1] [Target]
 USING (VALUES
@@ -146,7 +146,7 @@ VALUES
 ;
 
 BeforeExecute
--- SqlServer.2019
+-- SqlServer.2019 (asynchronously)
 
 SELECT
 	[t1].[Id],

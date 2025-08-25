@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2012
+-- SqlServer.2012 (asynchronously)
 
 SELECT
 	DatePart(second, DateAdd(second, -35, [t].[DateTimeValue]))

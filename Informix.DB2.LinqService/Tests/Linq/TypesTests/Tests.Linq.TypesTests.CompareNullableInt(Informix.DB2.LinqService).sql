@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Informix.DB2 Informix
+-- Informix.DB2 Informix (asynchronously)
 
 SELECT
 	t.ParentID,
@@ -8,7 +8,7 @@ FROM
 	Parent t
 
 BeforeExecute
--- Informix.DB2 Informix
+-- Informix.DB2 Informix (asynchronously)
 DECLARE @param Integer(4) -- Int32
 SET     @param = 1
 

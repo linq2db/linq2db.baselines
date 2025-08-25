@@ -13,7 +13,7 @@ WHERE
 	`p`.`FirstName` = 'John' OR `p`.`LastName` = 'John'
 
 BeforeExecute
--- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
+-- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57 (asynchronously)
 DECLARE @firstName VarChar(4) -- String
 SET     @firstName = 'John'
 

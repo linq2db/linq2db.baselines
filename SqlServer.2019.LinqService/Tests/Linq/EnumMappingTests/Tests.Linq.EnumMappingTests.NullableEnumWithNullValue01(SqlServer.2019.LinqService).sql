@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2019
+-- SqlServer.2019 (asynchronously)
 DECLARE @p Int -- Int32
 SET     @p = 104
 
@@ -10,7 +10,7 @@ WHERE
 	[r].[ID] >= 101 AND [r].[ID] < @p
 
 BeforeExecute
--- SqlServer.2019
+-- SqlServer.2019 (asynchronously)
 DECLARE @Id Int -- Int32
 SET     @Id = 101
 DECLARE @Value Int -- Int32
@@ -28,7 +28,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2019
+-- SqlServer.2019 (asynchronously)
 DECLARE @Id Int -- Int32
 SET     @Id = 102
 DECLARE @Value Int -- Int32
@@ -46,7 +46,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2019
+-- SqlServer.2019 (asynchronously)
 DECLARE @Id Int -- Int32
 SET     @Id = 103
 DECLARE @Value Int -- Int32
@@ -64,7 +64,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2019
+-- SqlServer.2019 (asynchronously)
 
 SELECT
 	[r].[ID],
@@ -77,7 +77,7 @@ ORDER BY
 	[r].[ID]
 
 BeforeExecute
--- SqlServer.2019
+-- SqlServer.2019 (asynchronously)
 
 SELECT
 	[r].[ID],
@@ -91,7 +91,7 @@ ORDER BY
 	[r].[ID]
 
 BeforeExecute
--- SqlServer.2019
+-- SqlServer.2019 (asynchronously)
 DECLARE @p Int -- Int32
 SET     @p = 104
 

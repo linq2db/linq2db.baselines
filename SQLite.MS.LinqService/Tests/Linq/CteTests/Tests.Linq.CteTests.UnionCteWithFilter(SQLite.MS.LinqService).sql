@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SQLite.MS SQLite
+-- SQLite.MS SQLite (asynchronously)
 
 WITH [BooksCte] ([Book_Id], [Book_Title], [Author_Name])
 AS

@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Oracle.11.Managed Oracle11
+-- Oracle.11.Managed Oracle11 (asynchronously)
 DECLARE @Guid1 Raw(16) -- Binary
 SET     @Guid1 = HEXTORAW('3D667BBCDE0F27438F925D8CC3A11D11')
 

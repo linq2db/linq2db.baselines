@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
+-- SQLite.Classic.MPU SQLite.Classic SQLite (asynchronously)
 
 INSERT INTO [test_insert_or_replace] AS [t1]
 (
@@ -14,7 +14,7 @@ VALUES
 ON CONFLICT ([id]) DO NOTHING
 
 BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
+-- SQLite.Classic.MPU SQLite.Classic SQLite (asynchronously)
 
 INSERT INTO [test_insert_or_replace] AS [t1]
 (

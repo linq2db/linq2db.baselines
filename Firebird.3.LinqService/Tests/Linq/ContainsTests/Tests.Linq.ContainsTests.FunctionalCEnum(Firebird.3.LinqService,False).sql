@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Firebird.3 Firebird3
+-- Firebird.3 Firebird3 (asynchronously)
 DECLARE @In VarChar(12) -- String
 SET     @In = '___Value3___'
 DECLARE @In_1 VarChar(12) -- String
@@ -14,7 +14,7 @@ WHERE
 FETCH NEXT 1 ROWS ONLY
 
 BeforeExecute
--- Firebird.3 Firebird3
+-- Firebird.3 Firebird3 (asynchronously)
 DECLARE @In VarChar(12) -- String
 SET     @In = '___Value3___'
 DECLARE @In_1 VarChar -- String
@@ -29,7 +29,7 @@ WHERE
 FETCH NEXT 1 ROWS ONLY
 
 BeforeExecute
--- Firebird.3 Firebird3
+-- Firebird.3 Firebird3 (asynchronously)
 DECLARE @In VarChar(12) -- String
 SET     @In = '___Value3___'
 DECLARE @In_1 VarChar(12) -- String
@@ -44,7 +44,7 @@ WHERE
 FETCH NEXT 1 ROWS ONLY
 
 BeforeExecute
--- Firebird.3 Firebird3
+-- Firebird.3 Firebird3 (asynchronously)
 DECLARE @NotIn VarChar -- String
 SET     @NotIn = NULL
 DECLARE @NotIn_1 VarChar(12) -- String
@@ -59,7 +59,7 @@ WHERE
 FETCH NEXT 1 ROWS ONLY
 
 BeforeExecute
--- Firebird.3 Firebird3
+-- Firebird.3 Firebird3 (asynchronously)
 DECLARE @NotIn VarChar(12) -- String
 SET     @NotIn = '___Value3___'
 DECLARE @NotIn_1 VarChar(12) -- String

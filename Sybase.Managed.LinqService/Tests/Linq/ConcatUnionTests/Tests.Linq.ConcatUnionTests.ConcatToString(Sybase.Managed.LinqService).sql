@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Sybase.Managed Sybase
+-- Sybase.Managed Sybase (asynchronously)
 DECLARE @pattern UniVarChar(3) -- String
 SET     @pattern = '%1%'
 

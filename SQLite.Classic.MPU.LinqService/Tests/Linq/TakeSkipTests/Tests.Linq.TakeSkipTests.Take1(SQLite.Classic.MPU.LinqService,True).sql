@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
+-- SQLite.Classic.MPU SQLite.Classic SQLite (asynchronously)
 DECLARE @take  -- Int32
 SET     @take = 2
 
@@ -11,7 +11,7 @@ FROM
 LIMIT @take
 
 BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
+-- SQLite.Classic.MPU SQLite.Classic SQLite (asynchronously)
 DECLARE @take  -- Int32
 SET     @take = 3
 
@@ -23,7 +23,7 @@ FROM
 LIMIT @take
 
 BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
+-- SQLite.Classic.MPU SQLite.Classic SQLite (asynchronously)
 DECLARE @take  -- Int32
 SET     @take = 2
 
@@ -35,7 +35,7 @@ FROM
 LIMIT @take
 
 BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
+-- SQLite.Classic.MPU SQLite.Classic SQLite (asynchronously)
 DECLARE @take  -- Int32
 SET     @take = 3
 

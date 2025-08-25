@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SQLite.MS SQLite
+-- SQLite.MS SQLite (asynchronously)
 
 SELECT
 	RTRIM(Replace(CAST([p].[MoneyValue] AS NVarChar(31)), ',', '.'), '0.')

@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Firebird.2.5 Firebird
+-- Firebird.2.5 Firebird (asynchronously)
 DECLARE @id Integer -- Int32
 SET     @id = 1001
 DECLARE @param Integer -- Int32
@@ -21,7 +21,7 @@ RETURNING
 	"Child"."ChildID" + "Child"."ParentID" + CAST(@param AS Int)
 
 BeforeExecute
--- Firebird.2.5 Firebird
+-- Firebird.2.5 Firebird (asynchronously)
 DECLARE @param Integer -- Int32
 SET     @param = 100
 
@@ -33,7 +33,7 @@ WHERE
 	"c_1"."ChildID" > 1000
 
 BeforeExecute
--- Firebird.2.5 Firebird
+-- Firebird.2.5 Firebird (asynchronously)
 
 DELETE FROM
 	"Child" "c_1"

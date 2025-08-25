@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MySql (asynchronously)
 DECLARE @ID Int32
 SET     @ID = 5
 DECLARE @Value Int32
@@ -19,7 +19,7 @@ ON DUPLICATE KEY UPDATE
 	`Value` = @Value
 
 BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MySql (asynchronously)
 DECLARE @ID Int32
 SET     @ID = 5
 DECLARE @Value Int32

@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Firebird.2.5 Firebird
+-- Firebird.2.5 Firebird (asynchronously)
 
 SELECT
 	"m_1".ID,
@@ -12,7 +12,7 @@ FROM
 		INNER JOIN "Issue3757Level2" "d" ON "m_1".ID = "d"."ParentId"
 
 BeforeExecute
--- Firebird.2.5 Firebird
+-- Firebird.2.5 Firebird (asynchronously)
 
 SELECT
 	"l1".ID,

@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2017
+-- SqlServer.2017 (asynchronously)
 
 WITH [CTE_1]
 (
@@ -33,7 +33,7 @@ FROM
 	[CTE_1] [t1]
 
 BeforeExecute
--- SqlServer.2017
+-- SqlServer.2017 (asynchronously)
 
 SELECT TOP (1)
 	[person_1].[FirstName],

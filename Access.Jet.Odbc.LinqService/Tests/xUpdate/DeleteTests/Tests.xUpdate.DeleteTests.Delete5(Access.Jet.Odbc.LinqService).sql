@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Access.Jet.Odbc AccessODBC
+-- Access.Jet.Odbc AccessODBC (asynchronously)
 
 DELETE FROM
 	[Parent] [t1]
@@ -7,7 +7,7 @@ WHERE
 	[t1].[ParentID] > 1000
 
 BeforeExecute
--- Access.Jet.Odbc AccessODBC
+-- Access.Jet.Odbc AccessODBC (asynchronously)
 
 DELETE FROM
 	[Parent] [t1]
@@ -15,7 +15,7 @@ WHERE
 	[t1].[ParentID] > 1000
 
 BeforeExecute
--- Access.Jet.Odbc AccessODBC
+-- Access.Jet.Odbc AccessODBC (asynchronously)
 DECLARE @ParentID Int -- Int32
 SET     @ParentID = 1001
 
@@ -31,7 +31,7 @@ VALUES
 )
 
 BeforeExecute
--- Access.Jet.Odbc AccessODBC
+-- Access.Jet.Odbc AccessODBC (asynchronously)
 DECLARE @ParentID Int -- Int32
 SET     @ParentID = 1002
 
@@ -47,7 +47,7 @@ VALUES
 )
 
 BeforeExecute
--- Access.Jet.Odbc AccessODBC
+-- Access.Jet.Odbc AccessODBC (asynchronously)
 
 SELECT
 	COUNT(*)
@@ -57,7 +57,7 @@ WHERE
 	[t1].[ParentID] > 1000
 
 BeforeExecute
--- Access.Jet.Odbc AccessODBC
+-- Access.Jet.Odbc AccessODBC (asynchronously)
 
 DELETE FROM
 	[Parent] [t1]
@@ -65,7 +65,7 @@ WHERE
 	[t1].[ParentID] IN (1001, 1002)
 
 BeforeExecute
--- Access.Jet.Odbc AccessODBC
+-- Access.Jet.Odbc AccessODBC (asynchronously)
 
 SELECT
 	COUNT(*)

@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Sybase.Managed Sybase
+-- Sybase.Managed Sybase (asynchronously)
 
 SELECT
 	[a_2].[ParentID],
@@ -23,7 +23,7 @@ FROM
 		LEFT JOIN [Parent] [a_1] ON [a_2].[ParentID] = [a_1].[ParentID]
 
 BeforeExecute
--- Sybase.Managed Sybase
+-- Sybase.Managed Sybase (asynchronously)
 
 SELECT
 	[t1].[ParentID],

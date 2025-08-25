@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Oracle.11.Managed Oracle11
+-- Oracle.11.Managed Oracle11 (asynchronously)
 DECLARE @Id Int32
 SET     @Id = 1
 DECLARE @Name Varchar2(5) -- String
@@ -21,7 +21,7 @@ VALUES
 )
 
 BeforeExecute
--- Oracle.11.Managed Oracle11
+-- Oracle.11.Managed Oracle11 (asynchronously)
 
 SELECT
 	t."Id",
@@ -33,7 +33,7 @@ WHERE
 	t."Id" = 1 AND ROWNUM <= 1
 
 BeforeExecute
--- Oracle.11.Managed Oracle11
+-- Oracle.11.Managed Oracle11 (asynchronously)
 DECLARE @Name Varchar2(6) -- String
 SET     @Name = 'Franki'
 DECLARE @Age Int32
@@ -50,7 +50,7 @@ WHERE
 	t1."Id" = :Id
 
 BeforeExecute
--- Oracle.11.Managed Oracle11
+-- Oracle.11.Managed Oracle11 (asynchronously)
 
 SELECT
 	t."Id",
@@ -62,7 +62,7 @@ WHERE
 	t."Id" = 1 AND ROWNUM <= 1
 
 BeforeExecute
--- Oracle.11.Managed Oracle11
+-- Oracle.11.Managed Oracle11 (asynchronously)
 DECLARE @Name Varchar2(4) -- String
 SET     @Name = 'Jack'
 DECLARE @Id Int32
@@ -76,7 +76,7 @@ WHERE
 	t1."Id" = :Id
 
 BeforeExecute
--- Oracle.11.Managed Oracle11
+-- Oracle.11.Managed Oracle11 (asynchronously)
 
 SELECT
 	t."Id",

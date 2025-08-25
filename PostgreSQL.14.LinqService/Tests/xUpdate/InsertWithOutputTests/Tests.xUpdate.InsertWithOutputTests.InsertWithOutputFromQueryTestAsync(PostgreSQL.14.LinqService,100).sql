@@ -23,7 +23,7 @@ RETURNING
 	"DestinationTable"."ValueStr"
 
 BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL (asynchronously)
 DECLARE @param Integer -- Int32
 SET     @param = 100
 

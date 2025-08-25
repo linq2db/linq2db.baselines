@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Access.Jet.OleDb AccessOleDb
+-- Access.Jet.OleDb AccessOleDb (asynchronously)
 DECLARE @someValue Integer -- Int32
 SET     @someValue = 3
 DECLARE @someValue_1 Integer -- Int32

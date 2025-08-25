@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- ClickHouse.Driver ClickHouse
+-- ClickHouse.Driver ClickHouse (asynchronously)
 
 SELECT
 	max(c_1.ChildID),
@@ -13,7 +13,7 @@ GROUP BY
 	g_1.ParentID
 
 BeforeExecute
--- ClickHouse.Driver ClickHouse
+-- ClickHouse.Driver ClickHouse (asynchronously)
 
 SELECT
 	maxOrNull(t1.ParentID)
@@ -21,7 +21,7 @@ FROM
 	Child t1
 
 BeforeExecute
--- ClickHouse.Driver ClickHouse
+-- ClickHouse.Driver ClickHouse (asynchronously)
 
 SELECT
 	MAX(ALL t1.ParentID)
@@ -29,7 +29,7 @@ FROM
 	Child t1
 
 BeforeExecute
--- ClickHouse.Driver ClickHouse
+-- ClickHouse.Driver ClickHouse (asynchronously)
 
 SELECT
 	MAX(DISTINCT t1.ParentID)

@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- PostgreSQL.15 PostgreSQL
+-- PostgreSQL.15 PostgreSQL (asynchronously)
 
 CREATE TABLE IF NOT EXISTS "FluentTemp"
 (
@@ -9,7 +9,7 @@ CREATE TABLE IF NOT EXISTS "FluentTemp"
 )
 
 BeforeExecute
--- PostgreSQL.15 PostgreSQL
+-- PostgreSQL.15 PostgreSQL (asynchronously)
 DECLARE @ID Integer -- Int32
 SET     @ID = 1
 DECLARE @Name Text(4) -- String
@@ -31,7 +31,7 @@ VALUES
 )
 
 BeforeExecute
--- PostgreSQL.15 PostgreSQL
+-- PostgreSQL.15 PostgreSQL (asynchronously)
 DECLARE @Name Text(7) -- String
 SET     @Name = 'John II'
 DECLARE @LastName Text(4) -- String
@@ -46,7 +46,7 @@ WHERE
 	"FluentTemp"."ID" = 1
 
 BeforeExecute
--- PostgreSQL.15 PostgreSQL
+-- PostgreSQL.15 PostgreSQL (asynchronously)
 
 DROP TABLE IF EXISTS "FluentTemp"
 

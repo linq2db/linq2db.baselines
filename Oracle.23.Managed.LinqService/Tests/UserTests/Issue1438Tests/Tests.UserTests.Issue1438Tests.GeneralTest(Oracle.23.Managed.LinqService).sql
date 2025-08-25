@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Oracle.23.Managed Oracle.Managed Oracle12
+-- Oracle.23.Managed Oracle.Managed Oracle12 (asynchronously)
 DECLARE @Has Int16
 SET     @Has = 1
 DECLARE @IDENTITY_PARAMETER Decimal
@@ -17,7 +17,7 @@ RETURNING
 	"Id" INTO :IDENTITY_PARAMETER
 
 BeforeExecute
--- Oracle.23.Managed Oracle.Managed Oracle12
+-- Oracle.23.Managed Oracle.Managed Oracle12 (asynchronously)
 DECLARE @id Int32
 SET     @id = 1
 

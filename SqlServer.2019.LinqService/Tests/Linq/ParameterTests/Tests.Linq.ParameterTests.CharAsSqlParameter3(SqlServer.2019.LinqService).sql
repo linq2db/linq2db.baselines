@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2019
+-- SqlServer.2019 (asynchronously)
 DECLARE @s1 NVarChar(4000) -- String
 SET     @s1 = char(0)
 

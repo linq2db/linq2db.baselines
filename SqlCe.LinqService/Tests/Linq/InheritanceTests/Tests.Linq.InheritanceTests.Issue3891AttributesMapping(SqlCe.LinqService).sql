@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 DECLARE @Id Int -- Int32
 SET     @Id = 1
 DECLARE @Type Int -- Int32
@@ -29,7 +29,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 
 SELECT TOP (2)
 	[t1].[Type] as [Type_1],
@@ -41,7 +41,7 @@ FROM
 	[Base] [t1]
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 DECLARE @Type Int -- Int32
 SET     @Type = 1
 DECLARE @ChildId Int -- Int32
@@ -64,7 +64,7 @@ WHERE
 	[Base].[Id] = @Id
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 
 SELECT TOP (2)
 	[t1].[Type] as [Type_1],

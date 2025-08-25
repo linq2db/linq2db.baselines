@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Oracle.21.Managed Oracle.Managed Oracle12
+-- Oracle.21.Managed Oracle.Managed Oracle12 (asynchronously)
 
 BEGIN
 	BEGIN
@@ -29,7 +29,7 @@ BEGIN
 END;
 
 BeforeExecute
--- Oracle.21.Managed Oracle.Managed Oracle12
+-- Oracle.21.Managed Oracle.Managed Oracle12 (asynchronously)
 
 CREATE TABLE "DropTableTestID"
 (
@@ -40,12 +40,12 @@ CREATE TABLE "DropTableTestID"
 )
 
 BeforeExecute
--- Oracle.21.Managed Oracle.Managed Oracle12
+-- Oracle.21.Managed Oracle.Managed Oracle12 (asynchronously)
 
 CREATE SEQUENCE "SIDENTITY_DropTableTestID"
 
 BeforeExecute
--- Oracle.21.Managed Oracle.Managed Oracle12
+-- Oracle.21.Managed Oracle.Managed Oracle12 (asynchronously)
 
 CREATE OR REPLACE TRIGGER "TIDENTITY_DropTableTestID"
 BEFORE INSERT ON "DropTableTestID" FOR EACH ROW
@@ -54,7 +54,7 @@ BEGIN
 END;
 
 BeforeExecute
--- Oracle.21.Managed Oracle.Managed Oracle12
+-- Oracle.21.Managed Oracle.Managed Oracle12 (asynchronously)
 
 INSERT INTO "DropTableTestID"
 (
@@ -66,7 +66,7 @@ VALUES
 )
 
 BeforeExecute
--- Oracle.21.Managed Oracle.Managed Oracle12
+-- Oracle.21.Managed Oracle.Managed Oracle12 (asynchronously)
 
 SELECT
 	t.ID,
@@ -75,7 +75,7 @@ FROM
 	"DropTableTestID" t
 
 BeforeExecute
--- Oracle.21.Managed Oracle.Managed Oracle12
+-- Oracle.21.Managed Oracle.Managed Oracle12 (asynchronously)
 
 BEGIN
 	EXECUTE IMMEDIATE 'DROP TRIGGER "TIDENTITY_DropTableTestID"';
@@ -84,7 +84,7 @@ BEGIN
 END;
 
 BeforeExecute
--- Oracle.21.Managed Oracle.Managed Oracle12
+-- Oracle.21.Managed Oracle.Managed Oracle12 (asynchronously)
 
 SELECT
 	t1.ID,

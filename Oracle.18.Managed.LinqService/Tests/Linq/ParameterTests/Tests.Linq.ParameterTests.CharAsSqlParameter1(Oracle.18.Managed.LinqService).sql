@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Oracle.18.Managed Oracle.Managed Oracle12
+-- Oracle.18.Managed Oracle.Managed Oracle12 (asynchronously)
 DECLARE @s1 Varchar2(7) -- String
 SET     @s1 = '0 ' || chr(0) || ' '' 0'
 

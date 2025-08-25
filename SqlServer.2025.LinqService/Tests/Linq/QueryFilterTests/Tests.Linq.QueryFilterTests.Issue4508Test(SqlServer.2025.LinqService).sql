@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025 SqlServer.2022 (asynchronously)
 DECLARE @idCopy Int -- Int32
 SET     @idCopy = 0
 
@@ -15,7 +15,7 @@ WHERE
 	[p].[PersonID] > @idCopy
 
 BeforeExecute
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025 SqlServer.2022 (asynchronously)
 DECLARE @idCopy Int -- Int32
 SET     @idCopy = 1
 
@@ -31,7 +31,7 @@ WHERE
 	[p].[PersonID] > @idCopy
 
 BeforeExecute
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025 SqlServer.2022 (asynchronously)
 DECLARE @idCopy Int -- Int32
 SET     @idCopy = 0
 
@@ -47,7 +47,7 @@ WHERE
 	[p].[PersonID] > @idCopy
 
 BeforeExecute
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025 SqlServer.2022 (asynchronously)
 DECLARE @idCopy Int -- Int32
 SET     @idCopy = 1
 
@@ -63,7 +63,7 @@ WHERE
 	[p].[PersonID] > @idCopy
 
 BeforeExecute
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025 SqlServer.2022 (asynchronously)
 DECLARE @idCopy Int -- Int32
 SET     @idCopy = 0
 
@@ -79,7 +79,7 @@ WHERE
 	[p].[PersonID] > @idCopy
 
 BeforeExecute
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025 SqlServer.2022 (asynchronously)
 DECLARE @idCopy Int -- Int32
 SET     @idCopy = 1
 
@@ -95,7 +95,7 @@ WHERE
 	[p].[PersonID] > @idCopy
 
 BeforeExecute
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025 SqlServer.2022 (asynchronously)
 DECLARE @idCopy Int -- Int32
 SET     @idCopy = 0
 
@@ -111,7 +111,7 @@ WHERE
 	[p].[PersonID] > @idCopy
 
 BeforeExecute
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025 SqlServer.2022 (asynchronously)
 DECLARE @idCopy Int -- Int32
 SET     @idCopy = 1
 

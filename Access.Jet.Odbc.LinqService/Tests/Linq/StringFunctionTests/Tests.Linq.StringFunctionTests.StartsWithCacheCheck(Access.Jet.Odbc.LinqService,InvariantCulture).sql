@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Access.Jet.Odbc AccessODBC
+-- Access.Jet.Odbc AccessODBC (asynchronously)
 
 SELECT TOP 2
 	[p].[FirstName]
@@ -9,7 +9,7 @@ WHERE
 	[p].[PersonID] = 1
 
 BeforeExecute
--- Access.Jet.Odbc AccessODBC
+-- Access.Jet.Odbc AccessODBC (asynchronously)
 DECLARE @nameToCheck NVarChar(4) -- String
 SET     @nameToCheck = 'Joh%'
 DECLARE @nameToCheck NVarChar(3) -- String
@@ -24,7 +24,7 @@ WHERE
 	[p].[PersonID] = 1
 
 BeforeExecute
--- Access.Jet.Odbc AccessODBC
+-- Access.Jet.Odbc AccessODBC (asynchronously)
 DECLARE @nameToCheck NVarChar(4) -- String
 SET     @nameToCheck = 'Joh%'
 DECLARE @nameToCheck NVarChar(3) -- String
@@ -39,7 +39,7 @@ WHERE
 	[p].[PersonID] = 1
 
 BeforeExecute
--- Access.Jet.Odbc AccessODBC
+-- Access.Jet.Odbc AccessODBC (asynchronously)
 DECLARE @nameToCheck NVarChar(4) -- String
 SET     @nameToCheck = 'JOH%'
 DECLARE @nameToCheck NVarChar(3) -- String
@@ -54,7 +54,7 @@ WHERE
 	[p].[PersonID] = 1
 
 BeforeExecute
--- Access.Jet.Odbc AccessODBC
+-- Access.Jet.Odbc AccessODBC (asynchronously)
 DECLARE @nameToCheck NVarChar(4) -- String
 SET     @nameToCheck = 'JOH%'
 DECLARE @nameToCheck NVarChar(3) -- String

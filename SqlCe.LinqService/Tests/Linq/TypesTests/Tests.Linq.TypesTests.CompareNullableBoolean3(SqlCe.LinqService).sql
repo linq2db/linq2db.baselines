@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 DECLARE @param2 Bit -- Boolean
 SET     @param2 = 0
 

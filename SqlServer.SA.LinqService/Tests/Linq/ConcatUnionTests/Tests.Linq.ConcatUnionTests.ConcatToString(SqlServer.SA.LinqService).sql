@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.SA SqlServer.2019
+-- SqlServer.SA SqlServer.2019 (asynchronously)
 DECLARE @take Int -- Int32
 SET     @take = 10
 DECLARE @pattern NVarChar(4000) -- String

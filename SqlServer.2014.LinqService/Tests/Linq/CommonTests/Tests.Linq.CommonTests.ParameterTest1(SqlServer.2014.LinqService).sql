@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2014
+-- SqlServer.2014 (asynchronously)
 DECLARE @id Int -- Int32
 SET     @id = 1
 
@@ -20,7 +20,7 @@ GROUP BY
 	[g_1].[ParentID]
 
 BeforeExecute
--- SqlServer.2014
+-- SqlServer.2014 (asynchronously)
 DECLARE @id Int -- Int32
 SET     @id = 2
 

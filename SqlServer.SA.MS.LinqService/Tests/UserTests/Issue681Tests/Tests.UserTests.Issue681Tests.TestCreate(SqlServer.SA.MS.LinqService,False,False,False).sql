@@ -1,10 +1,10 @@
 ﻿BeforeExecute
--- SqlServer.SA.MS SqlServer.2019
+-- SqlServer.SA.MS SqlServer.2019 (asynchronously)
 
 DROP TABLE IF EXISTS [Issue681Table2]
 
 BeforeExecute
--- SqlServer.SA.MS SqlServer.2019
+-- SqlServer.SA.MS SqlServer.2019 (asynchronously)
 
 CREATE TABLE [Issue681Table2]
 (
@@ -15,7 +15,7 @@ CREATE TABLE [Issue681Table2]
 )
 
 BeforeExecute
--- SqlServer.SA.MS SqlServer.2019
+-- SqlServer.SA.MS SqlServer.2019 (asynchronously)
 
 DROP TABLE IF EXISTS [Issue681Table2]
 

@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Sybase.Managed Sybase
+-- Sybase.Managed Sybase (asynchronously)
 DECLARE @id Integer -- Int32
 SET     @id = 1
 DECLARE @name UniVarChar(4) -- String
@@ -19,7 +19,7 @@ WHERE
 	[m_1].[FirstName] <> @name AND [m_1].[PersonID] - 1 = @id
 
 BeforeExecute
--- Sybase.Managed Sybase
+-- Sybase.Managed Sybase (asynchronously)
 DECLARE @id Integer -- Int32
 SET     @id = 1
 DECLARE @name UniVarChar(4) -- String

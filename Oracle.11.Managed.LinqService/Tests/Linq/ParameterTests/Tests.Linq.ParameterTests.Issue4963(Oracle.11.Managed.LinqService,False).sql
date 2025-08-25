@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Oracle.11.Managed Oracle11
+-- Oracle.11.Managed Oracle11 (asynchronously)
 DECLARE @offset Int32
 SET     @offset = -1
 
@@ -9,7 +9,7 @@ SET
 	"Field" = CAST(CAST(t1."Field" AS Int) + :offset AS Number(3))
 
 BeforeExecute
--- Oracle.11.Managed Oracle11
+-- Oracle.11.Managed Oracle11 (asynchronously)
 
 SELECT
 	t1."Field"

@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MySql (asynchronously)
 DECLARE @value VarChar(3) -- String
 SET     @value = 'xyz'
 
@@ -11,7 +11,7 @@ WHERE
 	NOT `s`.`String` <=> @value
 
 BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MySql (asynchronously)
 DECLARE @value VarChar(3) -- String
 SET     @value = 'xyz'
 
@@ -23,7 +23,7 @@ WHERE
 	NOT `s`.`NullableString` <=> @value
 
 BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MySql (asynchronously)
 DECLARE @value VarChar(3) -- String
 SET     @value = 'xyz'
 
@@ -35,7 +35,7 @@ WHERE
 	`s`.`String` <=> @value
 
 BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MySql (asynchronously)
 DECLARE @value VarChar(3) -- String
 SET     @value = 'xyz'
 

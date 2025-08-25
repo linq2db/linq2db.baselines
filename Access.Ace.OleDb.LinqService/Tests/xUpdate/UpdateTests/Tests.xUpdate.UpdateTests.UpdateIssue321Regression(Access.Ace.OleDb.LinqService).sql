@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Access.Ace.OleDb AccessOleDb
+-- Access.Ace.OleDb AccessOleDb (asynchronously)
 DECLARE @ID Integer -- Int32
 SET     @ID = 100500
 DECLARE @MoneyValue VarChar(4, 0) -- AnsiString
@@ -49,7 +49,7 @@ VALUES
 )
 
 BeforeExecute
--- Access.Ace.OleDb AccessOleDb
+-- Access.Ace.OleDb AccessOleDb (asynchronously)
 DECLARE @value2 VarChar(5, 0) -- AnsiString
 SET     @value2 = 13621
 DECLARE @id Integer -- Int32
@@ -63,7 +63,7 @@ WHERE
 	[t1].[ID] = @id
 
 BeforeExecute
--- Access.Ace.OleDb AccessOleDb
+-- Access.Ace.OleDb AccessOleDb (asynchronously)
 DECLARE @id Integer -- Int32
 SET     @id = 100500
 

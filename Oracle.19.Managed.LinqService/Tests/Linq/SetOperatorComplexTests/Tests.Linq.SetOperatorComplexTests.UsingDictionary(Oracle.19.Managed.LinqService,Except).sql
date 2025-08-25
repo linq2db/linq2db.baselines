@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Oracle.19.Managed Oracle.Managed Oracle12
+-- Oracle.19.Managed Oracle.Managed Oracle12 (asynchronously)
 
 SELECT
 	CAST('Discriminator' AS VarChar(255)),
@@ -26,7 +26,7 @@ WHERE
 	a_Book_1."Discriminator" = 'Novel'
 
 BeforeExecute
--- Oracle.19.Managed Oracle.Managed Oracle12
+-- Oracle.19.Managed Oracle.Managed Oracle12 (asynchronously)
 
 SELECT
 	m_1."BookId",
@@ -52,7 +52,7 @@ FROM
 		LEFT JOIN "Author" a_Author ON d_1."FkAuthorId" = a_Author."AuthorId"
 
 BeforeExecute
--- Oracle.19.Managed Oracle.Managed Oracle12
+-- Oracle.19.Managed Oracle.Managed Oracle12 (asynchronously)
 
 SELECT
 	m_1."AuthorId",
@@ -67,7 +67,7 @@ FROM
 		LEFT JOIN "Book" a_Book ON d."FkBookId" = a_Book."BookId"
 
 BeforeExecute
--- Oracle.19.Managed Oracle.Managed Oracle12
+-- Oracle.19.Managed Oracle.Managed Oracle12 (asynchronously)
 
 SELECT
 	t1."AuthorId",

@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2012
+-- SqlServer.2012 (asynchronously)
 
 SELECT
 	COUNT(*),
@@ -14,7 +14,7 @@ GROUP BY
 	[g_1].[ParentID]
 
 BeforeExecute
--- SqlServer.2012
+-- SqlServer.2012 (asynchronously)
 
 SELECT
 	COUNT(*)
@@ -22,7 +22,7 @@ FROM
 	[Child] [t1]
 
 BeforeExecute
--- SqlServer.2012
+-- SqlServer.2012 (asynchronously)
 
 SELECT
 	COUNT([t1].[ParentID])
@@ -30,7 +30,7 @@ FROM
 	[Child] [t1]
 
 BeforeExecute
--- SqlServer.2012
+-- SqlServer.2012 (asynchronously)
 
 SELECT
 	COUNT(ALL [t1].[ParentID])
@@ -38,7 +38,7 @@ FROM
 	[Child] [t1]
 
 BeforeExecute
--- SqlServer.2012
+-- SqlServer.2012 (asynchronously)
 
 SELECT
 	COUNT(DISTINCT [t1].[ParentID])

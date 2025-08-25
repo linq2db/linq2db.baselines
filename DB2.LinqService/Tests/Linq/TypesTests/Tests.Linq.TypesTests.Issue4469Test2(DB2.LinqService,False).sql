@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- DB2 DB2.LUW DB2LUW
+-- DB2 DB2.LUW DB2LUW (asynchronously)
 DECLARE @param (2, 0) -- Decimal
 SET     @param = 33
 DECLARE @param_1 (2, 0) -- Decimal

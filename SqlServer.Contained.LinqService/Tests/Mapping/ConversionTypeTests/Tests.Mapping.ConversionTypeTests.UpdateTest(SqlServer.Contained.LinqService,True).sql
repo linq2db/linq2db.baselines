@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2019 (asynchronously)
 
 UPDATE
 	[TrimTestTable]
@@ -9,7 +9,7 @@ WHERE
 	[TrimTestTable].[ID] = 3
 
 BeforeExecute
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2019 (asynchronously)
 
 UPDATE
 	[TrimTestTable]
@@ -19,7 +19,7 @@ WHERE
 	[TrimTestTable].[Data] = N'***XXX***'
 
 BeforeExecute
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2019 (asynchronously)
 
 UPDATE
 	[TrimTestTable]
@@ -29,7 +29,7 @@ WHERE
 	[TrimTestTable].[Data] = N'***HHH***'
 
 BeforeExecute
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2019 (asynchronously)
 
 SELECT
 	[r].[ID],
@@ -40,7 +40,7 @@ ORDER BY
 	[r].[ID]
 
 BeforeExecute
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2019 (asynchronously)
 
 SELECT
 	[r].[ID],

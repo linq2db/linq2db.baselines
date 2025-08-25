@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.SA SqlServer.2019
+-- SqlServer.SA SqlServer.2019 (asynchronously)
 
 SELECT
 	MAX(IIF([g_1].[ChildID] > 0, [g_1].[ChildID], NULL))

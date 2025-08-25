@@ -21,7 +21,7 @@ VALUES
 )
 
 BeforeExecute
--- Access.Ace.Odbc AccessODBC
+-- Access.Ace.Odbc AccessODBC (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -48,7 +48,7 @@ WHERE
 	[obj].[Id] = ? AND [obj].[Stamp] = ?
 
 BeforeExecute
--- Access.Ace.Odbc AccessODBC
+-- Access.Ace.Odbc AccessODBC (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -75,7 +75,7 @@ WHERE
 	[obj].[Id] = ? AND [obj].[Stamp] = ?
 
 BeforeExecute
--- Access.Ace.Odbc AccessODBC
+-- Access.Ace.Odbc AccessODBC (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -102,7 +102,7 @@ WHERE
 	[obj].[Id] = ? AND [obj].[Stamp] = ?
 
 BeforeExecute
--- Access.Ace.Odbc AccessODBC
+-- Access.Ace.Odbc AccessODBC (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -124,7 +124,7 @@ WHERE
 	[obj].[Id] = ? AND [obj].[Stamp] = ?
 
 BeforeExecute
--- Access.Ace.Odbc AccessODBC
+-- Access.Ace.Odbc AccessODBC (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -146,7 +146,7 @@ WHERE
 	[obj].[Id] = ? AND [obj].[Stamp] = ?
 
 BeforeExecute
--- Access.Ace.Odbc AccessODBC
+-- Access.Ace.Odbc AccessODBC (asynchronously)
 
 SELECT
 	[t1].[Id],

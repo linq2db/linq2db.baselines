@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Access.Jet.Odbc AccessODBC
+-- Access.Jet.Odbc AccessODBC (asynchronously)
 
 SELECT
 	IIF(NOT IIF([i].[BoolValue] IS NOT NULL, [i].[BoolValue], False) AND ([i].[IntValue] = (

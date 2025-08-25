@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Access.Ace.OleDb AccessOleDb
+-- Access.Ace.OleDb AccessOleDb (asynchronously)
 DECLARE @n Integer -- Int32
 SET     @n = 1
 DECLARE @n_1 Integer -- Int32
