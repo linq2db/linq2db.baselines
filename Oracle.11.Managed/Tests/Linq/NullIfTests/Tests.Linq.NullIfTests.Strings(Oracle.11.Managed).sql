@@ -12,6 +12,26 @@ BeforeExecute
 -- Oracle.11.Managed Oracle11
 
 SELECT
+	COUNT(*)
+FROM
+	"Src" x
+WHERE
+	x."String" = 'abc' OR x."String" IS NULL
+
+BeforeExecute
+-- Oracle.11.Managed Oracle11
+
+SELECT
+	COUNT(*)
+FROM
+	"Src" x
+WHERE
+	NOT (x."String" = 'abc' OR x."String" IS NULL)
+
+BeforeExecute
+-- Oracle.11.Managed Oracle11
+
+SELECT
 	NULLIF(s."String", 'xyz')
 FROM
 	"Src" s
@@ -22,11 +42,51 @@ BeforeExecute
 -- Oracle.11.Managed Oracle11
 
 SELECT
-	NULLIF(s."String", NULL)
+	COUNT(*)
+FROM
+	"Src" x
+WHERE
+	x."String" = 'xyz' OR x."String" IS NULL
+
+BeforeExecute
+-- Oracle.11.Managed Oracle11
+
+SELECT
+	COUNT(*)
+FROM
+	"Src" x
+WHERE
+	NOT (x."String" = 'xyz' OR x."String" IS NULL)
+
+BeforeExecute
+-- Oracle.11.Managed Oracle11
+
+SELECT
+	s."String"
 FROM
 	"Src" s
 ORDER BY
 	s."Int"
+
+BeforeExecute
+-- Oracle.11.Managed Oracle11
+
+SELECT
+	COUNT(*)
+FROM
+	"Src" x
+WHERE
+	x."String" IS NULL
+
+BeforeExecute
+-- Oracle.11.Managed Oracle11
+
+SELECT
+	COUNT(*)
+FROM
+	"Src" x
+WHERE
+	x."String" IS NOT NULL
 
 BeforeExecute
 -- Oracle.11.Managed Oracle11
@@ -42,6 +102,26 @@ BeforeExecute
 -- Oracle.11.Managed Oracle11
 
 SELECT
+	COUNT(*)
+FROM
+	"Src" x
+WHERE
+	x."NullableString" = 'abc' OR x."NullableString" IS NULL
+
+BeforeExecute
+-- Oracle.11.Managed Oracle11
+
+SELECT
+	COUNT(*)
+FROM
+	"Src" x
+WHERE
+	NOT (x."NullableString" = 'abc' OR x."NullableString" IS NULL)
+
+BeforeExecute
+-- Oracle.11.Managed Oracle11
+
+SELECT
 	NULLIF(s."NullableString", 'xyz')
 FROM
 	"Src" s
@@ -52,9 +132,49 @@ BeforeExecute
 -- Oracle.11.Managed Oracle11
 
 SELECT
-	NULLIF(s."NullableString", NULL)
+	COUNT(*)
+FROM
+	"Src" x
+WHERE
+	x."NullableString" = 'xyz' OR x."NullableString" IS NULL
+
+BeforeExecute
+-- Oracle.11.Managed Oracle11
+
+SELECT
+	COUNT(*)
+FROM
+	"Src" x
+WHERE
+	NOT (x."NullableString" = 'xyz' OR x."NullableString" IS NULL)
+
+BeforeExecute
+-- Oracle.11.Managed Oracle11
+
+SELECT
+	s."NullableString"
 FROM
 	"Src" s
 ORDER BY
 	s."Int"
+
+BeforeExecute
+-- Oracle.11.Managed Oracle11
+
+SELECT
+	COUNT(*)
+FROM
+	"Src" x
+WHERE
+	x."NullableString" IS NULL
+
+BeforeExecute
+-- Oracle.11.Managed Oracle11
+
+SELECT
+	COUNT(*)
+FROM
+	"Src" x
+WHERE
+	x."NullableString" IS NOT NULL
 
