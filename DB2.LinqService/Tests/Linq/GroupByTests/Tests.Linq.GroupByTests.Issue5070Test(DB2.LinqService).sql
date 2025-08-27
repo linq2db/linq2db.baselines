@@ -8,7 +8,10 @@ SELECT
 FROM
 	(
 		SELECT
-			Coalesce(NULLIF("p"."FinalCustomerId", 0), "p"."CustomerId") as "FinalCustomerId",
+			Coalesce(CASE
+				WHEN "p"."FinalCustomerId" = 0 THEN NULL
+				ELSE "p"."FinalCustomerId"
+			END, "p"."CustomerId") as "FinalCustomerId",
 			0 as "IsActive",
 			"t"."Volume" * "p"."Price" as "Amount"
 		FROM
