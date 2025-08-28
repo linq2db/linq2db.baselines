@@ -2,10 +2,7 @@
 -- Sybase.Managed Sybase
 
 SELECT
-	CASE
-		WHEN [s].[Int] = 2 THEN NULL
-		ELSE [s].[Int]
-	END
+	NULLIF([s].[Int], 2)
 FROM
 	[Src] [s]
 ORDER BY
@@ -35,10 +32,7 @@ BeforeExecute
 -- Sybase.Managed Sybase
 
 SELECT
-	CASE
-		WHEN [s].[Int] = 4 THEN NULL
-		ELSE [s].[Int]
-	END
+	NULLIF([s].[Int], 4)
 FROM
 	[Src] [s]
 ORDER BY
@@ -96,10 +90,7 @@ BeforeExecute
 -- Sybase.Managed Sybase
 
 SELECT
-	CASE
-		WHEN [s].[NullableInt] = 2 THEN NULL
-		ELSE [s].[NullableInt]
-	END
+	NULLIF([s].[NullableInt], 2)
 FROM
 	[Src] [s]
 ORDER BY
@@ -129,10 +120,7 @@ BeforeExecute
 -- Sybase.Managed Sybase
 
 SELECT
-	CASE
-		WHEN [s].[NullableInt] = 4 THEN NULL
-		ELSE [s].[NullableInt]
-	END
+	NULLIF([s].[NullableInt], 4)
 FROM
 	[Src] [s]
 ORDER BY

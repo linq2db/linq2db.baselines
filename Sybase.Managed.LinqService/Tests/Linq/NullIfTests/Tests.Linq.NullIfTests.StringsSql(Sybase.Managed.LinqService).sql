@@ -2,10 +2,7 @@
 -- Sybase.Managed Sybase
 
 SELECT
-	CASE
-		WHEN [s].[String] = 'abc' THEN NULL
-		ELSE [s].[String]
-	END
+	NULLIF([s].[String], 'abc')
 FROM
 	[Src] [s]
 ORDER BY
@@ -35,10 +32,7 @@ BeforeExecute
 -- Sybase.Managed Sybase
 
 SELECT
-	CASE
-		WHEN [s].[String] = 'xyz' THEN NULL
-		ELSE [s].[String]
-	END
+	NULLIF([s].[String], 'xyz')
 FROM
 	[Src] [s]
 ORDER BY
@@ -98,10 +92,7 @@ BeforeExecute
 -- Sybase.Managed Sybase
 
 SELECT
-	CASE
-		WHEN [s].[NullableString] = 'abc' THEN NULL
-		ELSE [s].[NullableString]
-	END
+	NULLIF([s].[NullableString], 'abc')
 FROM
 	[Src] [s]
 ORDER BY
@@ -131,10 +122,7 @@ BeforeExecute
 -- Sybase.Managed Sybase
 
 SELECT
-	CASE
-		WHEN [s].[NullableString] = 'xyz' THEN NULL
-		ELSE [s].[NullableString]
-	END
+	NULLIF([s].[NullableString], 'xyz')
 FROM
 	[Src] [s]
 ORDER BY
