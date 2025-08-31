@@ -57,7 +57,7 @@ SELECT
 FROM
 	[Common_Topology_Locations] [x]
 WHERE
-	DateAdd(millisecond, @Value, DateAdd(hour, @Value_1, [x].[StartDateTime2])) > DATETIME2FROMPARTS(2025, 8, 31, 18, 5, 8, 177206, 7)
+	DateAdd(millisecond, @Value, DateAdd(hour, @Value_1, [x].[StartDateTime2])) > DATETIME2FROMPARTS(2025, 8, 31, 18, 46, 54, 3137797, 7)
 
 BeforeExecute
 -- SqlServer.2022.MS SqlServer.2022
@@ -78,7 +78,7 @@ SELECT
 FROM
 	[Common_Topology_Locations] [x]
 WHERE
-	DateAdd(millisecond, @Value, DateAdd(hour, @Value_1, [x].[StartDateTime2])) > DATETIME2FROMPARTS(2025, 8, 31, 18, 5, 8, 305343, 7)
+	DateAdd(millisecond, @Value, DateAdd(hour, @Value_1, [x].[StartDateTime2])) > DATETIME2FROMPARTS(2025, 8, 31, 18, 46, 54, 3233720, 7)
 
 BeforeExecute
 -- SqlServer.2022.MS SqlServer.2022
