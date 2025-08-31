@@ -13,7 +13,7 @@ FROM
 		SELECT
 			[x].[EventUser] as [User_1],
 			[x].[ProcessID],
-			DateDiff(minute, LAG([x].[EventTime]) OVER(PARTITION BY [x].[EventUser], [x].[ProcessID] ORDER BY [x].[EventTime]), [x].[EventTime]) as [Diff]
+			DateDiff_Big(minute, LAG([x].[EventTime]) OVER(PARTITION BY [x].[EventUser], [x].[ProcessID] ORDER BY [x].[EventTime]), [x].[EventTime]) as [Diff]
 		FROM
 			[Issue1799Table1] [x]
 	) [g_1]
