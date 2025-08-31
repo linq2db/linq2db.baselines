@@ -29,6 +29,6 @@ FROM
 WHERE
 	([x].[Status] <> N'New' OR [x].[Status] IS NULL) AND
 	([x].[Status] <> N'Completed' OR [x].[Status] IS NULL) AND
-	[x].[NotificationDateTime] < DATETIME2FROMPARTS(2025, 8, 31, 18, 16, 21, 7910224, 7) AND
-	CAST([x].[StartDateTime] AS Date) < CAST(DATETIME2FROMPARTS(2025, 8, 31, 18, 16, 21, 7912287, 7) AS Date)
+	[x].[NotificationDateTime] < DATETIME2FROMPARTS(2025, 8, 31, 18, 47, 26, 7024136, 7) AND
+	CAST([x].[StartDateTime] AS Date) < CAST(DATETIME2FROMPARTS(2025, 8, 31, 18, 47, 26, 7025942, 7) AS Date)
 
