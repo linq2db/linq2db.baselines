@@ -1,37 +1,12 @@
 ﻿BeforeExecute
--- SQLite.Classic SQLite
+-- SQLite.Classic.MPU SQLite.Classic SQLite
 
-create table Customer
-					(
-						ID int not null primary key,
-						Name nvarchar(30) not null
-					)
+
+CREATE TABLE FirstTable (PkField1 INT, PkField2 INT, AdditionalField INTEGER, PRIMARY KEY (PkField1, PkField2));
+CREATE TABLE SecondTable (FkField1 INT, FkField2 INT, FOREIGN KEY (FkField1, FkField2) REFERENCES FirstTable (PkField1, PkField2));
 
 BeforeExecute
--- SQLite.Classic SQLite
-
-create table Purchase
-					(
-						ID int not null primary key,
-						CustomerID int null references Customer (ID),
-						Date datetime not null,
-						Description varchar(30) not null,
-						Price decimal not null
-					)
-
-BeforeExecute
--- SQLite.Classic SQLite
-
-create table PurchaseItem
-					(
-						ID int not null primary key,
-						PurchaseID int not null references Purchase (ID),
-						Detail varchar(30) not null,
-						Price decimal not null
-					)
-
-BeforeExecute
--- SQLite.Classic SQLite
+-- SQLite.Classic.MPU SQLite.Classic SQLite
 
 
 				SELECT
@@ -46,7 +21,7 @@ BeforeExecute
 			
 
 BeforeExecute
--- SQLite.Classic SQLite
+-- SQLite.Classic.MPU SQLite.Classic SQLite
 
 
 				SELECT
@@ -61,7 +36,7 @@ BeforeExecute
 			
 
 BeforeExecute
--- SQLite.Classic SQLite
+-- SQLite.Classic.MPU SQLite.Classic SQLite
 
 
 					WITH pk_counts AS (
@@ -92,7 +67,7 @@ BeforeExecute
 				
 
 BeforeExecute
--- SQLite.Classic SQLite
+-- SQLite.Classic.MPU SQLite.Classic SQLite
 
 
 				SELECT
@@ -103,7 +78,12 @@ BeforeExecute
 			
 
 BeforeExecute
--- SQLite.Classic SQLite
+-- SQLite.Classic.MPU SQLite.Classic SQLite
+
+SELECT * FROM [AllTypesView]
+
+BeforeExecute
+-- SQLite.Classic.MPU SQLite.Classic SQLite
 
 
 				SELECT
@@ -119,4 +99,11 @@ BeforeExecute
 					LEFT JOIN pragma_table_info(tOther.name) cOther ON (cOther.pk -1) == f.seq
 				WHERE tThis.type IN ('table', 'view') AND tThis.name NOT IN ('sqlite_sequence', 'sqlite_schema') AND tThis.schema = 'main'
 			
+
+BeforeExecute
+-- SQLite.Classic.MPU SQLite.Classic SQLite
+
+
+DROP TABLE FirstTable;
+DROP TABLE SecondTable;
 

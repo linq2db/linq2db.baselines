@@ -4,7 +4,7 @@ DECLARE @p  -- Int32
 SET     @p = 5
 
 SELECT
-	SUM(CAST([c_1].[Id] AS BigInt))
+	SUM(CAST([c_1].[Id] AS INTEGER))
 FROM
 	[AsyncDataTable] [c_1]
 WHERE

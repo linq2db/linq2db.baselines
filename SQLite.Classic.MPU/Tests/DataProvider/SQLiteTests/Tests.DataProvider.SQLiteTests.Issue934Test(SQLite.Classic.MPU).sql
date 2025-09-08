@@ -1,37 +1,17 @@
 ﻿BeforeExecute
--- SQLite.Classic SQLite
+-- SQLite.Classic.MPU SQLite.Classic SQLite
 
-create table Customer
-					(
-						ID int not null primary key,
-						Name nvarchar(30) not null
-					)
 
-BeforeExecute
--- SQLite.Classic SQLite
-
-create table Purchase
-					(
-						ID int not null primary key,
-						CustomerID int null references Customer (ID),
-						Date datetime not null,
-						Description varchar(30) not null,
-						Price decimal not null
-					)
+CREATE TABLE withid_1(x INTEGER PRIMARY KEY ASC, y, z);
+CREATE TABLE withid_2(x INTEGER, y, z, PRIMARY KEY(x ASC));
+CREATE TABLE withid_3(x INTEGER, y, z, PRIMARY KEY(x DESC));
+CREATE TABLE withoutid_1(x INTEGER PRIMARY KEY DESC, y, z);
+CREATE TABLE withoutid_2(x INTEGER PRIMARY KEY ASC, y, z) without rowid;
+CREATE TABLE withoutid_3(x INTEGER, y, z, PRIMARY KEY(x ASC)) without rowid;
+CREATE TABLE withoutid_4(x INTEGER, y, z, PRIMARY KEY(x DESC)) without rowid;
 
 BeforeExecute
--- SQLite.Classic SQLite
-
-create table PurchaseItem
-					(
-						ID int not null primary key,
-						PurchaseID int not null references Purchase (ID),
-						Detail varchar(30) not null,
-						Price decimal not null
-					)
-
-BeforeExecute
--- SQLite.Classic SQLite
+-- SQLite.Classic.MPU SQLite.Classic SQLite
 
 
 				SELECT
@@ -46,7 +26,7 @@ BeforeExecute
 			
 
 BeforeExecute
--- SQLite.Classic SQLite
+-- SQLite.Classic.MPU SQLite.Classic SQLite
 
 
 				SELECT
@@ -61,7 +41,7 @@ BeforeExecute
 			
 
 BeforeExecute
--- SQLite.Classic SQLite
+-- SQLite.Classic.MPU SQLite.Classic SQLite
 
 
 					WITH pk_counts AS (
@@ -92,7 +72,7 @@ BeforeExecute
 				
 
 BeforeExecute
--- SQLite.Classic SQLite
+-- SQLite.Classic.MPU SQLite.Classic SQLite
 
 
 				SELECT
@@ -103,7 +83,12 @@ BeforeExecute
 			
 
 BeforeExecute
--- SQLite.Classic SQLite
+-- SQLite.Classic.MPU SQLite.Classic SQLite
+
+SELECT * FROM [AllTypesView]
+
+BeforeExecute
+-- SQLite.Classic.MPU SQLite.Classic SQLite
 
 
 				SELECT
@@ -119,4 +104,16 @@ BeforeExecute
 					LEFT JOIN pragma_table_info(tOther.name) cOther ON (cOther.pk -1) == f.seq
 				WHERE tThis.type IN ('table', 'view') AND tThis.name NOT IN ('sqlite_sequence', 'sqlite_schema') AND tThis.schema = 'main'
 			
+
+BeforeExecute
+-- SQLite.Classic.MPU SQLite.Classic SQLite
+
+
+DROP TABLE withid_1;
+DROP TABLE withid_2;
+DROP TABLE withid_3;
+DROP TABLE withoutid_1;
+DROP TABLE withoutid_2;
+DROP TABLE withoutid_3;
+DROP TABLE withoutid_4;
 

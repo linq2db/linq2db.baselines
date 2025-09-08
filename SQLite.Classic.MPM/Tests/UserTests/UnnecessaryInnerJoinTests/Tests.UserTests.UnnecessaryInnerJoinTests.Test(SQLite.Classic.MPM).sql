@@ -12,6 +12,6 @@ WHERE
 		FROM
 			[Table1] [x]
 		WHERE
-			[t1].[Field2] = [x].[Field2] AND CAST([x].[Field1] AS BigInt) IN (1, 2, 3)
+			[t1].[Field2] = [x].[Field2] AND CAST([x].[Field1] AS INTEGER) IN (1, 2, 3)
 	)
 
