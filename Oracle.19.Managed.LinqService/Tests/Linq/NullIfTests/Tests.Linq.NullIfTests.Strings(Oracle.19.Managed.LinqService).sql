@@ -19,7 +19,7 @@ WHERE
 	x."String" = 'abc' OR x."String" IS NULL
 
 BeforeExecute
--- Oracle.19.Managed Oracle.Managed Oracle12
+-- Oracle.19.Managed Oracle.Managed Oracle12 (asynchronously)
 
 SELECT
 	COUNT(*)
@@ -29,7 +29,7 @@ WHERE
 	NOT (x."String" = 'abc' OR x."String" IS NULL)
 
 BeforeExecute
--- Oracle.19.Managed Oracle.Managed Oracle12
+-- Oracle.19.Managed Oracle.Managed Oracle12 (asynchronously)
 
 SELECT
 	NULLIF(s."String", 'xyz')
@@ -49,7 +49,7 @@ WHERE
 	x."String" = 'xyz' OR x."String" IS NULL
 
 BeforeExecute
--- Oracle.19.Managed Oracle.Managed Oracle12
+-- Oracle.19.Managed Oracle.Managed Oracle12 (asynchronously)
 
 SELECT
 	COUNT(*)
@@ -59,7 +59,7 @@ WHERE
 	NOT (x."String" = 'xyz' OR x."String" IS NULL)
 
 BeforeExecute
--- Oracle.19.Managed Oracle.Managed Oracle12
+-- Oracle.19.Managed Oracle.Managed Oracle12 (asynchronously)
 
 SELECT
 	s."String"
@@ -79,7 +79,7 @@ WHERE
 	x."String" IS NULL
 
 BeforeExecute
--- Oracle.19.Managed Oracle.Managed Oracle12
+-- Oracle.19.Managed Oracle.Managed Oracle12 (asynchronously)
 
 SELECT
 	COUNT(*)
@@ -89,7 +89,7 @@ WHERE
 	x."String" IS NOT NULL
 
 BeforeExecute
--- Oracle.19.Managed Oracle.Managed Oracle12
+-- Oracle.19.Managed Oracle.Managed Oracle12 (asynchronously)
 
 SELECT
 	NULLIF(s."NullableString", 'abc')
@@ -109,7 +109,7 @@ WHERE
 	x."NullableString" = 'abc' OR x."NullableString" IS NULL
 
 BeforeExecute
--- Oracle.19.Managed Oracle.Managed Oracle12
+-- Oracle.19.Managed Oracle.Managed Oracle12 (asynchronously)
 
 SELECT
 	COUNT(*)
@@ -119,7 +119,7 @@ WHERE
 	NOT (x."NullableString" = 'abc' OR x."NullableString" IS NULL)
 
 BeforeExecute
--- Oracle.19.Managed Oracle.Managed Oracle12
+-- Oracle.19.Managed Oracle.Managed Oracle12 (asynchronously)
 
 SELECT
 	NULLIF(s."NullableString", 'xyz')
@@ -139,7 +139,7 @@ WHERE
 	x."NullableString" = 'xyz' OR x."NullableString" IS NULL
 
 BeforeExecute
--- Oracle.19.Managed Oracle.Managed Oracle12
+-- Oracle.19.Managed Oracle.Managed Oracle12 (asynchronously)
 
 SELECT
 	COUNT(*)
@@ -149,7 +149,7 @@ WHERE
 	NOT (x."NullableString" = 'xyz' OR x."NullableString" IS NULL)
 
 BeforeExecute
--- Oracle.19.Managed Oracle.Managed Oracle12
+-- Oracle.19.Managed Oracle.Managed Oracle12 (asynchronously)
 
 SELECT
 	s."NullableString"
@@ -159,7 +159,7 @@ ORDER BY
 	s."Int"
 
 BeforeExecute
--- Oracle.19.Managed Oracle.Managed Oracle12
+-- Oracle.19.Managed Oracle.Managed Oracle12 (asynchronously)
 
 SELECT
 	COUNT(*)
@@ -169,7 +169,7 @@ WHERE
 	x."NullableString" IS NULL
 
 BeforeExecute
--- Oracle.19.Managed Oracle.Managed Oracle12
+-- Oracle.19.Managed Oracle.Managed Oracle12 (asynchronously)
 
 SELECT
 	COUNT(*)
