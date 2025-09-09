@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Informix.DB2 Informix
+-- Informix.DB2 Informix (asynchronously)
 DECLARE @Name VarChar(4) -- String
 SET     @Name = 'John'
 DECLARE @Age Integer(4) -- Int32
@@ -16,7 +16,7 @@ WHERE
 	t1.Id = @Id
 
 BeforeExecute
--- Informix.DB2 Informix
+-- Informix.DB2 Informix (asynchronously)
 DECLARE @Id Integer(4) -- Int32
 SET     @Id = 1
 DECLARE @Name VarChar(4) -- String
@@ -38,7 +38,7 @@ VALUES
 )
 
 BeforeExecute
--- Informix.DB2 Informix
+-- Informix.DB2 Informix (asynchronously)
 
 SELECT FIRST 1
 	t.Id,
@@ -50,7 +50,7 @@ WHERE
 	t.Id = 1
 
 BeforeExecute
--- Informix.DB2 Informix
+-- Informix.DB2 Informix (asynchronously)
 DECLARE @Name VarChar(4) -- String
 SET     @Name = 'John'
 DECLARE @Age Integer(4) -- Int32
@@ -67,7 +67,7 @@ WHERE
 	t1.Id = @Id
 
 BeforeExecute
--- Informix.DB2 Informix
+-- Informix.DB2 Informix (asynchronously)
 
 SELECT FIRST 1
 	t.Id,

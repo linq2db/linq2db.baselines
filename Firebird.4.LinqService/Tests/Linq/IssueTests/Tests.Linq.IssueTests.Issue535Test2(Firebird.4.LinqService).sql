@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Firebird.4 Firebird4
+-- Firebird.4 Firebird4 (asynchronously)
 DECLARE @filter VarChar(6) -- String
 SET     @filter = '%test%'
 DECLARE @filter_1 VarChar(6) -- String

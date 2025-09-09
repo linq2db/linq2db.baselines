@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Oracle.11.Managed Oracle11
+-- Oracle.11.Managed Oracle11 (asynchronously)
 
 SELECT
 	t.ID,
@@ -18,7 +18,7 @@ WHERE
 	t.ID = 1 AND ROWNUM <= 1
 
 BeforeExecute
--- Oracle.11.Managed Oracle11
+-- Oracle.11.Managed Oracle11 (asynchronously)
 DECLARE @dt TimeStamp -- DateTime
 SET     @dt = TIMESTAMP '2010-12-14 06:00:07.425014'
 
@@ -30,7 +30,7 @@ WHERE
 	t.ID = 1
 
 BeforeExecute
--- Oracle.11.Managed Oracle11
+-- Oracle.11.Managed Oracle11 (asynchronously)
 
 SELECT
 	t.ID,
@@ -49,7 +49,7 @@ WHERE
 	t.ID = 1 AND ROWNUM <= 1
 
 BeforeExecute
--- Oracle.11.Managed Oracle11
+-- Oracle.11.Managed Oracle11 (asynchronously)
 DECLARE @pdt TimeStamp -- DateTime
 SET     @pdt = TIMESTAMP '2001-01-11 01:11:21.100000'
 

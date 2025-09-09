@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Oracle.21.Managed Oracle.Managed Oracle12
+-- Oracle.21.Managed Oracle.Managed Oracle12 (asynchronously)
 
 SELECT
 	COVAR_SAMP(p."Value1", c_1."ChildID") OVER(PARTITION BY p."Value1", c_1."ChildID"),
@@ -10,7 +10,7 @@ FROM
 		INNER JOIN "Child" c_1 ON p."ParentID" = c_1."ParentID"
 
 BeforeExecute
--- Oracle.21.Managed Oracle.Managed Oracle12
+-- Oracle.21.Managed Oracle.Managed Oracle12 (asynchronously)
 
 SELECT
 	COVAR_SAMP(c_1."ParentID", c_1."ChildID")
@@ -21,7 +21,7 @@ GROUP BY
 	g_1."ParentID"
 
 BeforeExecute
--- Oracle.21.Managed Oracle.Managed Oracle12
+-- Oracle.21.Managed Oracle.Managed Oracle12 (asynchronously)
 
 SELECT
 	COVAR_SAMP(t1."ParentID", t1."ChildID")

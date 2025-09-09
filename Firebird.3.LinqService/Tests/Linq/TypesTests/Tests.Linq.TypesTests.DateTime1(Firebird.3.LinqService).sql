@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Firebird.3 Firebird3
+-- Firebird.3 Firebird3 (asynchronously)
 DECLARE @Date TimeStamp -- DateTime
 SET     @Date = CAST('2009-09-20' AS timestamp)
 

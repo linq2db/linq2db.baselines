@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SQLite.Classic.MPM SQLite.Classic SQLite
+-- SQLite.Classic.MPM SQLite.Classic SQLite (asynchronously)
 DECLARE @dateTime VarChar(23) -- AnsiString
 SET     @dateTime = '1992-01-11 01:11:21.100'
 
@@ -12,7 +12,7 @@ WHERE
 LIMIT 1
 
 BeforeExecute
--- SQLite.Classic.MPM SQLite.Classic SQLite
+-- SQLite.Classic.MPM SQLite.Classic SQLite (asynchronously)
 DECLARE @dateTime VarChar(23) -- AnsiString
 SET     @dateTime = '1993-01-11 01:11:21.100'
 

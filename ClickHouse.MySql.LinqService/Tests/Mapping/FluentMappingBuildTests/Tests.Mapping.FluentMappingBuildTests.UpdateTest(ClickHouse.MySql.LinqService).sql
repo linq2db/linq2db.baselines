@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- ClickHouse.MySql ClickHouse
+-- ClickHouse.MySql ClickHouse (asynchronously)
 
 CREATE TABLE IF NOT EXISTS FluentTemp
 (
@@ -10,7 +10,7 @@ CREATE TABLE IF NOT EXISTS FluentTemp
 ENGINE = Memory()
 
 BeforeExecute
--- ClickHouse.MySql ClickHouse
+-- ClickHouse.MySql ClickHouse (asynchronously)
 
 INSERT INTO FluentTemp
 (
@@ -26,7 +26,7 @@ VALUES
 )
 
 BeforeExecute
--- ClickHouse.MySql ClickHouse
+-- ClickHouse.MySql ClickHouse (asynchronously)
 
 ALTER TABLE
 	FluentTemp
@@ -37,7 +37,7 @@ WHERE
 	ID = 1
 
 BeforeExecute
--- ClickHouse.MySql ClickHouse
+-- ClickHouse.MySql ClickHouse (asynchronously)
 
 DROP TABLE IF EXISTS FluentTemp
 

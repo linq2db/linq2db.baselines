@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SQLite.Classic SQLite
+-- SQLite.Classic SQLite (asynchronously)
 
 SELECT
 	[inner_1].[Count_1]
@@ -19,7 +19,7 @@ FROM
 		) [inner_1] ON [t1].[GuidValue] = [inner_1].[Key_1]
 
 BeforeExecute
--- SQLite.Classic SQLite
+-- SQLite.Classic SQLite (asynchronously)
 
 SELECT
 	[t1].[ID],

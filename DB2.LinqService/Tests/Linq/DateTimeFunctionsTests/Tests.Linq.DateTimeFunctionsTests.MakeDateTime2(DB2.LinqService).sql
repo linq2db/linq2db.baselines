@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- DB2 DB2.LUW DB2LUW
+-- DB2 DB2.LUW DB2LUW (asynchronously)
 
 SELECT
 	CAST('2010-' || LPad("t".ID, 2, '0') || '-01 20:35:44.000' AS timestamp)

@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2022.MS SqlServer.2022
+-- SqlServer.2022.MS SqlServer.2022 (asynchronously)
 
 WITH [CTE_1] ([ParentID])
 AS
@@ -20,7 +20,7 @@ FROM
 		INNER JOIN [CTE_1] [c2] ON [p].[ParentID] = [c2].[ParentID]
 
 BeforeExecute
--- SqlServer.2022.MS SqlServer.2022
+-- SqlServer.2022.MS SqlServer.2022 (asynchronously)
 
 SELECT
 	[p].[ParentID],

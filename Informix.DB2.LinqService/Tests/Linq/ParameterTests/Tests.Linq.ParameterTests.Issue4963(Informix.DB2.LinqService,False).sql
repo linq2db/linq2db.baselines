@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Informix.DB2 Informix
+-- Informix.DB2 Informix (asynchronously)
 DECLARE @offset Integer(4) -- Int32
 SET     @offset = -1
 
@@ -9,7 +9,7 @@ SET
 	Field = (t1.Field::Int + @offset)::SmallInt
 
 BeforeExecute
--- Informix.DB2 Informix
+-- Informix.DB2 Informix (asynchronously)
 
 SELECT FIRST 2
 	t1.Field

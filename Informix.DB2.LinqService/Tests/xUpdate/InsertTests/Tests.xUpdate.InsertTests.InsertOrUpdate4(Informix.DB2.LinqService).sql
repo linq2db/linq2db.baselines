@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Informix.DB2 Informix
+-- Informix.DB2 Informix (asynchronously)
 DECLARE @FirstName VarChar(4) -- String
 SET     @FirstName = 'John'
 DECLARE @LastName VarChar(7) -- String
@@ -25,12 +25,12 @@ VALUES
 )
 
 BeforeExecute
--- Informix.DB2 Informix
+-- Informix.DB2 Informix (asynchronously)
 
 SELECT DBINFO('sqlca.sqlerrd1') FROM systables where tabid = 1
 
 BeforeExecute
--- Informix.DB2 Informix
+-- Informix.DB2 Informix (asynchronously)
 DECLARE @i Integer(4) -- Int32
 SET     @i = 0
 DECLARE @id Integer(4) -- Int32
@@ -44,7 +44,7 @@ WHERE
 	t1.PersonID = @id::Int
 
 BeforeExecute
--- Informix.DB2 Informix
+-- Informix.DB2 Informix (asynchronously)
 DECLARE @id Integer(4) -- Int32
 SET     @id = 5
 DECLARE @diagnosis Integer(4) -- Int32
@@ -64,7 +64,7 @@ VALUES
 )
 
 BeforeExecute
--- Informix.DB2 Informix
+-- Informix.DB2 Informix (asynchronously)
 DECLARE @i Integer(4) -- Int32
 SET     @i = 1
 DECLARE @id Integer(4) -- Int32
@@ -78,7 +78,7 @@ WHERE
 	t1.PersonID = @id::Int
 
 BeforeExecute
--- Informix.DB2 Informix
+-- Informix.DB2 Informix (asynchronously)
 DECLARE @i Integer(4) -- Int32
 SET     @i = 2
 DECLARE @id Integer(4) -- Int32
@@ -92,7 +92,7 @@ WHERE
 	t1.PersonID = @id::Int
 
 BeforeExecute
--- Informix.DB2 Informix
+-- Informix.DB2 Informix (asynchronously)
 DECLARE @id Integer(4) -- Int32
 SET     @id = 5
 

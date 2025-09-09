@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Informix.DB2 Informix
+-- Informix.DB2 Informix (asynchronously)
 
 UPDATE
 	Issue4963Table t1
@@ -7,7 +7,7 @@ SET
 	Field = (t1.Field::Int + -1)::SmallInt
 
 BeforeExecute
--- Informix.DB2 Informix
+-- Informix.DB2 Informix (asynchronously)
 
 SELECT FIRST 2
 	t1.Field

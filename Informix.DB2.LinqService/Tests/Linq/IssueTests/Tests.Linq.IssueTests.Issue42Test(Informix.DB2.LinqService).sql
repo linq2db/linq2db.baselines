@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Informix.DB2 Informix
+-- Informix.DB2 Informix (asynchronously)
 
 SELECT FIRST 1
 	r.ID,
@@ -18,7 +18,7 @@ WHERE
 	r.ID = 1
 
 BeforeExecute
--- Informix.DB2 Informix
+-- Informix.DB2 Informix (asynchronously)
 
 SELECT FIRST 1
 	r.ID,
@@ -37,7 +37,7 @@ WHERE
 	r.ID = 1
 
 BeforeExecute
--- Informix.DB2 Informix
+-- Informix.DB2 Informix (asynchronously)
 DECLARE @MoneyValue Decimal(16)
 SET     @MoneyValue = 1.1100
 DECLARE @DateTimeValue Timestamp(16) -- DateTime
@@ -75,7 +75,7 @@ WHERE
 	t1.ID = @ID
 
 BeforeExecute
--- Informix.DB2 Informix
+-- Informix.DB2 Informix (asynchronously)
 DECLARE @ID Integer(4) -- Int32
 SET     @ID = 1
 
@@ -96,7 +96,7 @@ WHERE
 	r.ID = @ID
 
 BeforeExecute
--- Informix.DB2 Informix
+-- Informix.DB2 Informix (asynchronously)
 DECLARE @MoneyValue Decimal(16)
 SET     @MoneyValue = 1.1100
 DECLARE @DateTimeValue Timestamp(16) -- DateTime
@@ -134,7 +134,7 @@ WHERE
 	t1.ID = @ID
 
 BeforeExecute
--- Informix.DB2 Informix
+-- Informix.DB2 Informix (asynchronously)
 
 SELECT FIRST 1
 	r.ID,

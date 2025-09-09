@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Firebird.4 Firebird4
+-- Firebird.4 Firebird4 (asynchronously)
 
 SELECT
 	"t1"."FirstName",
@@ -13,7 +13,7 @@ WHERE
 	"t1"."PersonID" = 1 AND "t1"."Gender" = 'M'
 
 BeforeExecute
--- Firebird.4 Firebird4
+-- Firebird.4 Firebird4 (asynchronously)
 
 SELECT
 	"t1"."FirstName",
@@ -27,7 +27,7 @@ WHERE
 	"t1"."PersonID" = 1 AND 'M' = "t1"."Gender"
 
 BeforeExecute
--- Firebird.4 Firebird4
+-- Firebird.4 Firebird4 (asynchronously)
 DECLARE @gender Char -- String
 SET     @gender = 'M'
 
@@ -43,7 +43,7 @@ WHERE
 	"t1"."PersonID" = 1 AND "t1"."Gender" = @gender
 
 BeforeExecute
--- Firebird.4 Firebird4
+-- Firebird.4 Firebird4 (asynchronously)
 DECLARE @gender Char -- String
 SET     @gender = 'M'
 

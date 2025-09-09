@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- MySql.8.0 MySql.8.0.MySql.Data MySql80
+-- MySql.8.0 MySql.8.0.MySql.Data MySql80 (asynchronously)
 
 WITH `CTE_1` (`ParentID`)
 AS
@@ -25,7 +25,7 @@ FROM
 		INNER JOIN `CTE_1` `c2` ON `p`.`ParentID` = `c2`.`ParentID`
 
 BeforeExecute
--- MySql.8.0 MySql.8.0.MySql.Data MySql80
+-- MySql.8.0 MySql.8.0.MySql.Data MySql80 (asynchronously)
 
 SELECT
 	COUNT(*)

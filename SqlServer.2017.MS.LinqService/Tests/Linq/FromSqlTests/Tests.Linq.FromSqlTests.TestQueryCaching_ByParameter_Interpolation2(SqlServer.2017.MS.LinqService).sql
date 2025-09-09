@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2017.MS SqlServer.2017
+-- SqlServer.2017.MS SqlServer.2017 (asynchronously)
 DECLARE @p Int -- Int32
 SET     @p = NULL
 DECLARE @p_1 Int -- Int32
@@ -14,7 +14,7 @@ FROM
 	) [t1]
 
 BeforeExecute
--- SqlServer.2017.MS SqlServer.2017
+-- SqlServer.2017.MS SqlServer.2017 (asynchronously)
 DECLARE @p Int -- Int32
 SET     @p = 1
 DECLARE @p_1 Int -- Int32
@@ -29,7 +29,7 @@ FROM
 	) [t1]
 
 BeforeExecute
--- SqlServer.2017.MS SqlServer.2017
+-- SqlServer.2017.MS SqlServer.2017 (asynchronously)
 DECLARE @p Int -- Int32
 SET     @p = NULL
 DECLARE @p_1 Int -- Int32
@@ -44,7 +44,7 @@ FROM
 	) [t1]
 
 BeforeExecute
--- SqlServer.2017.MS SqlServer.2017
+-- SqlServer.2017.MS SqlServer.2017 (asynchronously)
 DECLARE @p Int -- Int32
 SET     @p = 2
 DECLARE @p_1 Int -- Int32
@@ -59,7 +59,7 @@ FROM
 	) [t1]
 
 BeforeExecute
--- SqlServer.2017.MS SqlServer.2017
+-- SqlServer.2017.MS SqlServer.2017 (asynchronously)
 DECLARE @p Int -- Int32
 SET     @p = 3
 DECLARE @p_1 Int -- Int32

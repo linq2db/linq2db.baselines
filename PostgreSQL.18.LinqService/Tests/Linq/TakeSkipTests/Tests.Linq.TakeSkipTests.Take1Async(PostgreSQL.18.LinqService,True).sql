@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- PostgreSQL.18 PostgreSQL
+-- PostgreSQL.18 PostgreSQL (asynchronously)
 DECLARE @take Integer -- Int32
 SET     @take = 2
 
@@ -11,7 +11,7 @@ FROM
 LIMIT :take
 
 BeforeExecute
--- PostgreSQL.18 PostgreSQL
+-- PostgreSQL.18 PostgreSQL (asynchronously)
 DECLARE @take Integer -- Int32
 SET     @take = 3
 

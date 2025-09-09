@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
+-- PostgreSQL.16 PostgreSQL.15 PostgreSQL (asynchronously)
 
 SELECT
 	c_1."ParentID",
@@ -11,7 +11,7 @@ FROM
 		ON c_1."ParentID" = "a_Child"."ParentID" AND c_1."ChildID" = "a_Child"."ChildID"
 
 BeforeExecute
--- PostgreSQL.16 PostgreSQL.15 PostgreSQL
+-- PostgreSQL.16 PostgreSQL.15 PostgreSQL (asynchronously)
 
 SELECT
 	c_1."ParentID",

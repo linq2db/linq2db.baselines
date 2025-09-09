@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- PostgreSQL.15 PostgreSQL
+-- PostgreSQL.15 PostgreSQL (asynchronously)
 DECLARE @Value Numeric -- Decimal
 SET     @Value = NULL
 
@@ -13,7 +13,7 @@ FROM
 		) arg("Id", "Value") ON entity."PersonID" = arg."Id"
 
 BeforeExecute
--- PostgreSQL.15 PostgreSQL
+-- PostgreSQL.15 PostgreSQL (asynchronously)
 DECLARE @Value Numeric(10, 0) -- Decimal
 SET     @Value = 2147483648
 

@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 
 SELECT TOP (2)
 	[p].[FirstName]
@@ -9,7 +9,7 @@ WHERE
 	[p].[PersonID] = 1
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 DECLARE @nameToCheck Int -- Int32
 SET     @nameToCheck = 3
 DECLARE @nameToCheck_1 NVarChar(3) -- String
@@ -24,7 +24,7 @@ WHERE
 	[p].[PersonID] = 1
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 DECLARE @nameToCheck Int -- Int32
 SET     @nameToCheck = 3
 DECLARE @nameToCheck_1 NVarChar(3) -- String
@@ -39,7 +39,7 @@ WHERE
 	[p].[PersonID] = 1
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 DECLARE @nameToCheck Int -- Int32
 SET     @nameToCheck = 3
 DECLARE @nameToCheck_1 NVarChar(3) -- String
@@ -54,7 +54,7 @@ WHERE
 	[p].[PersonID] = 1
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 DECLARE @nameToCheck Int -- Int32
 SET     @nameToCheck = 3
 DECLARE @nameToCheck_1 NVarChar(3) -- String

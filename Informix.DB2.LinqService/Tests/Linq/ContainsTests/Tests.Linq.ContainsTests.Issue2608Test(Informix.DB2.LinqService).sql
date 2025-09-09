@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Informix.DB2 Informix
+-- Informix.DB2 Informix (asynchronously)
 DECLARE @code Integer(4) -- Int32
 SET     @code = 1
 DECLARE @site Integer(4) -- Int32

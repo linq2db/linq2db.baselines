@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2005
+-- SqlServer.2005 (asynchronously)
 
 SELECT TOP (1)
 	SCHEMA_NAME()
@@ -7,13 +7,13 @@ FROM
 	[LinqDataTypes] [t1]
 
 BeforeExecute
--- SqlServer.2005
+-- SqlServer.2005 (asynchronously)
 
 IF (OBJECT_ID(N'[Issue681Table2]', N'U') IS NOT NULL)
 	DROP TABLE [Issue681Table2]
 
 BeforeExecute
--- SqlServer.2005
+-- SqlServer.2005 (asynchronously)
 
 CREATE TABLE [Issue681Table2]
 (
@@ -24,7 +24,7 @@ CREATE TABLE [Issue681Table2]
 )
 
 BeforeExecute
--- SqlServer.2005
+-- SqlServer.2005 (asynchronously)
 
 DROP TABLE [dbo].[Issue681Table2]
 

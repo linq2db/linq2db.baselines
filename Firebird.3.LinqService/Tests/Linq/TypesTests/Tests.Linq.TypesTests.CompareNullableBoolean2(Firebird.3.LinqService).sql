@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Firebird.3 Firebird3
+-- Firebird.3 Firebird3 (asynchronously)
 
 SELECT
 	"t1".ID,
@@ -15,7 +15,7 @@ FROM
 		INNER JOIN "LinqDataTypes" "t2" ON "t1".ID = "t2".ID
 
 BeforeExecute
--- Firebird.3 Firebird3
+-- Firebird.3 Firebird3 (asynchronously)
 DECLARE @param2 Boolean
 SET     @param2 = FALSE
 

@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2005
+-- SqlServer.2005 (asynchronously)
 
 SELECT
 	COUNT(*)
@@ -9,7 +9,7 @@ WHERE
 	[r].[Value1] = 1
 
 BeforeExecute
--- SqlServer.2005
+-- SqlServer.2005 (asynchronously)
 DECLARE @cnt Int -- Int32
 SET     @cnt = 18
 
@@ -74,7 +74,7 @@ WHERE
 	END IS NULL
 
 BeforeExecute
--- SqlServer.2005
+-- SqlServer.2005 (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -86,7 +86,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- SqlServer.2005
+-- SqlServer.2005 (asynchronously)
 DECLARE @cnt Int -- Int32
 SET     @cnt = 18
 
@@ -151,7 +151,7 @@ WHERE
 	END IS NULL
 
 BeforeExecute
--- SqlServer.2005
+-- SqlServer.2005 (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -163,7 +163,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- SqlServer.2005
+-- SqlServer.2005 (asynchronously)
 DECLARE @cnt Int -- Int32
 SET     @cnt = 18
 
@@ -202,7 +202,7 @@ WHERE
 	END
 
 BeforeExecute
--- SqlServer.2005
+-- SqlServer.2005 (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -214,7 +214,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- SqlServer.2005
+-- SqlServer.2005 (asynchronously)
 DECLARE @cnt Int -- Int32
 SET     @cnt = 18
 
@@ -253,7 +253,7 @@ WHERE
 	END
 
 BeforeExecute
--- SqlServer.2005
+-- SqlServer.2005 (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -265,7 +265,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- SqlServer.2005
+-- SqlServer.2005 (asynchronously)
 DECLARE @cnt Int -- Int32
 SET     @cnt = 18
 
@@ -336,7 +336,7 @@ WHERE
 	END
 
 BeforeExecute
--- SqlServer.2005
+-- SqlServer.2005 (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -348,7 +348,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- SqlServer.2005
+-- SqlServer.2005 (asynchronously)
 DECLARE @cnt Int -- Int32
 SET     @cnt = 18
 
@@ -419,7 +419,7 @@ WHERE
 	END
 
 BeforeExecute
--- SqlServer.2005
+-- SqlServer.2005 (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -431,7 +431,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- SqlServer.2005
+-- SqlServer.2005 (asynchronously)
 DECLARE @cnt Int -- Int32
 SET     @cnt = 18
 
@@ -477,7 +477,7 @@ WHERE
 	END
 
 BeforeExecute
--- SqlServer.2005
+-- SqlServer.2005 (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -489,7 +489,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- SqlServer.2005
+-- SqlServer.2005 (asynchronously)
 DECLARE @cnt Int -- Int32
 SET     @cnt = 18
 
@@ -535,7 +535,7 @@ WHERE
 	END
 
 BeforeExecute
--- SqlServer.2005
+-- SqlServer.2005 (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -547,7 +547,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- SqlServer.2005
+-- SqlServer.2005 (asynchronously)
 DECLARE @cnt Int -- Int32
 SET     @cnt = 18
 
@@ -637,7 +637,7 @@ WHERE
 	END IS NULL
 
 BeforeExecute
--- SqlServer.2005
+-- SqlServer.2005 (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -649,7 +649,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- SqlServer.2005
+-- SqlServer.2005 (asynchronously)
 DECLARE @cnt Int -- Int32
 SET     @cnt = 18
 
@@ -739,7 +739,7 @@ WHERE
 	END IS NULL
 
 BeforeExecute
--- SqlServer.2005
+-- SqlServer.2005 (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -751,7 +751,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- SqlServer.2005
+-- SqlServer.2005 (asynchronously)
 DECLARE @cnt Int -- Int32
 SET     @cnt = 18
 
@@ -794,7 +794,7 @@ WHERE
 	END = 1
 
 BeforeExecute
--- SqlServer.2005
+-- SqlServer.2005 (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -806,7 +806,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- SqlServer.2005
+-- SqlServer.2005 (asynchronously)
 DECLARE @cnt Int -- Int32
 SET     @cnt = 18
 
@@ -849,7 +849,7 @@ WHERE
 	END = 1
 
 BeforeExecute
--- SqlServer.2005
+-- SqlServer.2005 (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -861,7 +861,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- SqlServer.2005
+-- SqlServer.2005 (asynchronously)
 DECLARE @cnt Int -- Int32
 SET     @cnt = 18
 
@@ -956,7 +956,7 @@ WHERE
 	END
 
 BeforeExecute
--- SqlServer.2005
+-- SqlServer.2005 (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -968,7 +968,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- SqlServer.2005
+-- SqlServer.2005 (asynchronously)
 DECLARE @cnt Int -- Int32
 SET     @cnt = 18
 
@@ -1063,7 +1063,7 @@ WHERE
 	END
 
 BeforeExecute
--- SqlServer.2005
+-- SqlServer.2005 (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -1075,7 +1075,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- SqlServer.2005
+-- SqlServer.2005 (asynchronously)
 DECLARE @cnt Int -- Int32
 SET     @cnt = 18
 
@@ -1121,7 +1121,7 @@ WHERE
 	END
 
 BeforeExecute
--- SqlServer.2005
+-- SqlServer.2005 (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -1133,7 +1133,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- SqlServer.2005
+-- SqlServer.2005 (asynchronously)
 DECLARE @cnt Int -- Int32
 SET     @cnt = 18
 
@@ -1179,7 +1179,7 @@ WHERE
 	END
 
 BeforeExecute
--- SqlServer.2005
+-- SqlServer.2005 (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -1191,7 +1191,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- SqlServer.2005
+-- SqlServer.2005 (asynchronously)
 DECLARE @cnt Int -- Int32
 SET     @cnt = 18
 
@@ -1214,7 +1214,7 @@ WHERE
 	) + [r].[Value5])
 
 BeforeExecute
--- SqlServer.2005
+-- SqlServer.2005 (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -1226,7 +1226,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- SqlServer.2005
+-- SqlServer.2005 (asynchronously)
 DECLARE @cnt Int -- Int32
 SET     @cnt = 18
 
@@ -1249,7 +1249,7 @@ WHERE
 	) + [r].[Value5])
 
 BeforeExecute
--- SqlServer.2005
+-- SqlServer.2005 (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -1261,7 +1261,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- SqlServer.2005
+-- SqlServer.2005 (asynchronously)
 DECLARE @cnt Int -- Int32
 SET     @cnt = 18
 
@@ -1284,7 +1284,7 @@ WHERE
 	) + [r].[Value5])
 
 BeforeExecute
--- SqlServer.2005
+-- SqlServer.2005 (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -1296,7 +1296,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- SqlServer.2005
+-- SqlServer.2005 (asynchronously)
 DECLARE @cnt Int -- Int32
 SET     @cnt = 18
 
@@ -1319,7 +1319,7 @@ WHERE
 	) + [r].[Value5])
 
 BeforeExecute
--- SqlServer.2005
+-- SqlServer.2005 (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -1331,7 +1331,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- SqlServer.2005
+-- SqlServer.2005 (asynchronously)
 DECLARE @cnt Int -- Int32
 SET     @cnt = 18
 
@@ -1354,7 +1354,7 @@ WHERE
 	) + [r].[Value5])
 
 BeforeExecute
--- SqlServer.2005
+-- SqlServer.2005 (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -1366,7 +1366,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- SqlServer.2005
+-- SqlServer.2005 (asynchronously)
 DECLARE @cnt Int -- Int32
 SET     @cnt = 18
 
@@ -1389,7 +1389,7 @@ WHERE
 	) + [r].[Value5])
 
 BeforeExecute
--- SqlServer.2005
+-- SqlServer.2005 (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -1401,7 +1401,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- SqlServer.2005
+-- SqlServer.2005 (asynchronously)
 DECLARE @cnt Int -- Int32
 SET     @cnt = 18
 
@@ -1424,7 +1424,7 @@ WHERE
 	) + [r].[Value5])
 
 BeforeExecute
--- SqlServer.2005
+-- SqlServer.2005 (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -1436,7 +1436,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- SqlServer.2005
+-- SqlServer.2005 (asynchronously)
 DECLARE @cnt Int -- Int32
 SET     @cnt = 18
 
@@ -1459,7 +1459,7 @@ WHERE
 	) + [r].[Value5])
 
 BeforeExecute
--- SqlServer.2005
+-- SqlServer.2005 (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -1471,7 +1471,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- SqlServer.2005
+-- SqlServer.2005 (asynchronously)
 DECLARE @cnt Int -- Int32
 SET     @cnt = 18
 
@@ -1501,7 +1501,7 @@ WHERE
 	END
 
 BeforeExecute
--- SqlServer.2005
+-- SqlServer.2005 (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -1513,7 +1513,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- SqlServer.2005
+-- SqlServer.2005 (asynchronously)
 DECLARE @cnt Int -- Int32
 SET     @cnt = 18
 
@@ -1543,7 +1543,7 @@ WHERE
 	END
 
 BeforeExecute
--- SqlServer.2005
+-- SqlServer.2005 (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -1555,7 +1555,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- SqlServer.2005
+-- SqlServer.2005 (asynchronously)
 DECLARE @cnt Int -- Int32
 SET     @cnt = 18
 
@@ -1585,7 +1585,7 @@ WHERE
 	END
 
 BeforeExecute
--- SqlServer.2005
+-- SqlServer.2005 (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -1597,7 +1597,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- SqlServer.2005
+-- SqlServer.2005 (asynchronously)
 DECLARE @cnt Int -- Int32
 SET     @cnt = 18
 
@@ -1627,7 +1627,7 @@ WHERE
 	END
 
 BeforeExecute
--- SqlServer.2005
+-- SqlServer.2005 (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -1639,7 +1639,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- SqlServer.2005
+-- SqlServer.2005 (asynchronously)
 DECLARE @cnt Int -- Int32
 SET     @cnt = 18
 
@@ -1669,7 +1669,7 @@ WHERE
 	END
 
 BeforeExecute
--- SqlServer.2005
+-- SqlServer.2005 (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -1681,7 +1681,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- SqlServer.2005
+-- SqlServer.2005 (asynchronously)
 DECLARE @cnt Int -- Int32
 SET     @cnt = 18
 
@@ -1711,7 +1711,7 @@ WHERE
 	END
 
 BeforeExecute
--- SqlServer.2005
+-- SqlServer.2005 (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -1723,7 +1723,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- SqlServer.2005
+-- SqlServer.2005 (asynchronously)
 DECLARE @cnt Int -- Int32
 SET     @cnt = 18
 
@@ -1753,7 +1753,7 @@ WHERE
 	END
 
 BeforeExecute
--- SqlServer.2005
+-- SqlServer.2005 (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -1765,7 +1765,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- SqlServer.2005
+-- SqlServer.2005 (asynchronously)
 DECLARE @cnt Int -- Int32
 SET     @cnt = 18
 
@@ -1795,7 +1795,7 @@ WHERE
 	END
 
 BeforeExecute
--- SqlServer.2005
+-- SqlServer.2005 (asynchronously)
 
 SELECT
 	[t1].[Id],

@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.SA SqlServer.2019
+-- SqlServer.SA SqlServer.2019 (asynchronously)
 DECLARE @cpty NVarChar(4000) -- String
 SET     @cpty = N'%C%'
 DECLARE @cpty_1 NVarChar(4000) -- String

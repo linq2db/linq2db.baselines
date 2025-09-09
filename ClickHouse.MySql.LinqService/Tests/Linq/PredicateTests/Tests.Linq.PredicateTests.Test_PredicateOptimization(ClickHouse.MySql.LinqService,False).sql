@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- ClickHouse.MySql ClickHouse
+-- ClickHouse.MySql ClickHouse (asynchronously)
 
 SELECT
 	r.Id,
@@ -13,7 +13,7 @@ WHERE
 	r.Value1 = r.Value2 OR r.Value1 = r.Value2 AND r.Value1 = r.Value4
 
 BeforeExecute
--- ClickHouse.MySql ClickHouse
+-- ClickHouse.MySql ClickHouse (asynchronously)
 
 SELECT
 	t1.Id,
@@ -25,7 +25,7 @@ FROM
 	BooleanTable t1
 
 BeforeExecute
--- ClickHouse.MySql ClickHouse
+-- ClickHouse.MySql ClickHouse (asynchronously)
 
 SELECT
 	r.Id,
@@ -39,7 +39,7 @@ WHERE
 	r.Value1 = r.Value5 OR r.Value1 = r.Value5 AND r.Value1 = r.Value2
 
 BeforeExecute
--- ClickHouse.MySql ClickHouse
+-- ClickHouse.MySql ClickHouse (asynchronously)
 
 SELECT
 	t1.Id,
@@ -51,7 +51,7 @@ FROM
 	BooleanTable t1
 
 BeforeExecute
--- ClickHouse.MySql ClickHouse
+-- ClickHouse.MySql ClickHouse (asynchronously)
 
 SELECT
 	r.Id,
@@ -65,7 +65,7 @@ WHERE
 	r.Value1 = r.Value5 OR r.Value1 = r.Value5 AND r.Value1 = r.Value4
 
 BeforeExecute
--- ClickHouse.MySql ClickHouse
+-- ClickHouse.MySql ClickHouse (asynchronously)
 
 SELECT
 	t1.Id,
@@ -77,7 +77,7 @@ FROM
 	BooleanTable t1
 
 BeforeExecute
--- ClickHouse.MySql ClickHouse
+-- ClickHouse.MySql ClickHouse (asynchronously)
 
 SELECT
 	r.Id,
@@ -91,7 +91,7 @@ WHERE
 	r.Value1 <> r.Value2 OR r.Value1 <> r.Value2 AND (r.Value1 <> r.Value4 OR r.Value4 IS NULL)
 
 BeforeExecute
--- ClickHouse.MySql ClickHouse
+-- ClickHouse.MySql ClickHouse (asynchronously)
 
 SELECT
 	t1.Id,
@@ -103,7 +103,7 @@ FROM
 	BooleanTable t1
 
 BeforeExecute
--- ClickHouse.MySql ClickHouse
+-- ClickHouse.MySql ClickHouse (asynchronously)
 
 SELECT
 	r.Id,
@@ -117,7 +117,7 @@ WHERE
 	r.Value1 <> r.Value5 OR r.Value5 IS NULL OR r.Value1 <> r.Value5 AND r.Value1 <> r.Value2
 
 BeforeExecute
--- ClickHouse.MySql ClickHouse
+-- ClickHouse.MySql ClickHouse (asynchronously)
 
 SELECT
 	t1.Id,
@@ -129,7 +129,7 @@ FROM
 	BooleanTable t1
 
 BeforeExecute
--- ClickHouse.MySql ClickHouse
+-- ClickHouse.MySql ClickHouse (asynchronously)
 
 SELECT
 	r.Id,
@@ -143,7 +143,7 @@ WHERE
 	r.Value1 <> r.Value5 OR r.Value5 IS NULL OR r.Value1 <> r.Value5 AND (r.Value1 <> r.Value4 OR r.Value4 IS NULL)
 
 BeforeExecute
--- ClickHouse.MySql ClickHouse
+-- ClickHouse.MySql ClickHouse (asynchronously)
 
 SELECT
 	t1.Id,
@@ -155,7 +155,7 @@ FROM
 	BooleanTable t1
 
 BeforeExecute
--- ClickHouse.MySql ClickHouse
+-- ClickHouse.MySql ClickHouse (asynchronously)
 
 SELECT
 	r.Id,
@@ -169,7 +169,7 @@ WHERE
 	r.Value1 > r.Value2 OR r.Value1 > r.Value2 AND r.Value1 > r.Value4
 
 BeforeExecute
--- ClickHouse.MySql ClickHouse
+-- ClickHouse.MySql ClickHouse (asynchronously)
 
 SELECT
 	t1.Id,
@@ -181,7 +181,7 @@ FROM
 	BooleanTable t1
 
 BeforeExecute
--- ClickHouse.MySql ClickHouse
+-- ClickHouse.MySql ClickHouse (asynchronously)
 
 SELECT
 	r.Id,
@@ -195,7 +195,7 @@ WHERE
 	r.Value1 > r.Value5 OR r.Value1 > r.Value5 AND r.Value1 > r.Value2
 
 BeforeExecute
--- ClickHouse.MySql ClickHouse
+-- ClickHouse.MySql ClickHouse (asynchronously)
 
 SELECT
 	t1.Id,
@@ -207,7 +207,7 @@ FROM
 	BooleanTable t1
 
 BeforeExecute
--- ClickHouse.MySql ClickHouse
+-- ClickHouse.MySql ClickHouse (asynchronously)
 
 SELECT
 	r.Id,
@@ -221,7 +221,7 @@ WHERE
 	r.Value1 > r.Value5 OR r.Value1 > r.Value5 AND r.Value1 > r.Value4
 
 BeforeExecute
--- ClickHouse.MySql ClickHouse
+-- ClickHouse.MySql ClickHouse (asynchronously)
 
 SELECT
 	t1.Id,
@@ -233,7 +233,7 @@ FROM
 	BooleanTable t1
 
 BeforeExecute
--- ClickHouse.MySql ClickHouse
+-- ClickHouse.MySql ClickHouse (asynchronously)
 
 SELECT
 	r.Id,
@@ -247,7 +247,7 @@ WHERE
 	r.Value1 = r.Value2 AND (r.Value1 = r.Value2 OR r.Value1 = r.Value4)
 
 BeforeExecute
--- ClickHouse.MySql ClickHouse
+-- ClickHouse.MySql ClickHouse (asynchronously)
 
 SELECT
 	t1.Id,
@@ -259,7 +259,7 @@ FROM
 	BooleanTable t1
 
 BeforeExecute
--- ClickHouse.MySql ClickHouse
+-- ClickHouse.MySql ClickHouse (asynchronously)
 
 SELECT
 	r.Id,
@@ -273,7 +273,7 @@ WHERE
 	r.Value1 = r.Value5 AND (r.Value1 = r.Value5 OR r.Value1 = r.Value2)
 
 BeforeExecute
--- ClickHouse.MySql ClickHouse
+-- ClickHouse.MySql ClickHouse (asynchronously)
 
 SELECT
 	t1.Id,
@@ -285,7 +285,7 @@ FROM
 	BooleanTable t1
 
 BeforeExecute
--- ClickHouse.MySql ClickHouse
+-- ClickHouse.MySql ClickHouse (asynchronously)
 
 SELECT
 	r.Id,
@@ -299,7 +299,7 @@ WHERE
 	r.Value1 = r.Value5 AND (r.Value1 = r.Value5 OR r.Value1 = r.Value4)
 
 BeforeExecute
--- ClickHouse.MySql ClickHouse
+-- ClickHouse.MySql ClickHouse (asynchronously)
 
 SELECT
 	t1.Id,
@@ -311,7 +311,7 @@ FROM
 	BooleanTable t1
 
 BeforeExecute
--- ClickHouse.MySql ClickHouse
+-- ClickHouse.MySql ClickHouse (asynchronously)
 
 SELECT
 	r.Id,
@@ -325,7 +325,7 @@ WHERE
 	r.Value1 <> r.Value2 AND (r.Value1 <> r.Value2 OR r.Value1 <> r.Value4 OR r.Value4 IS NULL)
 
 BeforeExecute
--- ClickHouse.MySql ClickHouse
+-- ClickHouse.MySql ClickHouse (asynchronously)
 
 SELECT
 	t1.Id,
@@ -337,7 +337,7 @@ FROM
 	BooleanTable t1
 
 BeforeExecute
--- ClickHouse.MySql ClickHouse
+-- ClickHouse.MySql ClickHouse (asynchronously)
 
 SELECT
 	r.Id,
@@ -351,7 +351,7 @@ WHERE
 	(r.Value1 <> r.Value5 OR r.Value5 IS NULL) AND (r.Value1 <> r.Value5 OR r.Value5 IS NULL OR r.Value1 <> r.Value2)
 
 BeforeExecute
--- ClickHouse.MySql ClickHouse
+-- ClickHouse.MySql ClickHouse (asynchronously)
 
 SELECT
 	t1.Id,
@@ -363,7 +363,7 @@ FROM
 	BooleanTable t1
 
 BeforeExecute
--- ClickHouse.MySql ClickHouse
+-- ClickHouse.MySql ClickHouse (asynchronously)
 
 SELECT
 	r.Id,
@@ -377,7 +377,7 @@ WHERE
 	(r.Value1 <> r.Value5 OR r.Value5 IS NULL) AND (r.Value1 <> r.Value5 OR r.Value5 IS NULL OR r.Value1 <> r.Value4 OR r.Value4 IS NULL)
 
 BeforeExecute
--- ClickHouse.MySql ClickHouse
+-- ClickHouse.MySql ClickHouse (asynchronously)
 
 SELECT
 	t1.Id,
@@ -389,7 +389,7 @@ FROM
 	BooleanTable t1
 
 BeforeExecute
--- ClickHouse.MySql ClickHouse
+-- ClickHouse.MySql ClickHouse (asynchronously)
 
 SELECT
 	r.Id,
@@ -403,7 +403,7 @@ WHERE
 	r.Value1 >= r.Value2 AND (r.Value1 >= r.Value2 OR r.Value1 >= r.Value4)
 
 BeforeExecute
--- ClickHouse.MySql ClickHouse
+-- ClickHouse.MySql ClickHouse (asynchronously)
 
 SELECT
 	t1.Id,
@@ -415,7 +415,7 @@ FROM
 	BooleanTable t1
 
 BeforeExecute
--- ClickHouse.MySql ClickHouse
+-- ClickHouse.MySql ClickHouse (asynchronously)
 
 SELECT
 	r.Id,
@@ -429,7 +429,7 @@ WHERE
 	r.Value1 >= r.Value5 AND (r.Value1 >= r.Value5 OR r.Value1 >= r.Value2)
 
 BeforeExecute
--- ClickHouse.MySql ClickHouse
+-- ClickHouse.MySql ClickHouse (asynchronously)
 
 SELECT
 	t1.Id,
@@ -441,7 +441,7 @@ FROM
 	BooleanTable t1
 
 BeforeExecute
--- ClickHouse.MySql ClickHouse
+-- ClickHouse.MySql ClickHouse (asynchronously)
 
 SELECT
 	r.Id,
@@ -455,7 +455,7 @@ WHERE
 	r.Value1 >= r.Value5 AND (r.Value1 >= r.Value5 OR r.Value1 >= r.Value4)
 
 BeforeExecute
--- ClickHouse.MySql ClickHouse
+-- ClickHouse.MySql ClickHouse (asynchronously)
 
 SELECT
 	t1.Id,
@@ -467,7 +467,7 @@ FROM
 	BooleanTable t1
 
 BeforeExecute
--- ClickHouse.MySql ClickHouse
+-- ClickHouse.MySql ClickHouse (asynchronously)
 
 SELECT
 	r.Id,
@@ -481,7 +481,7 @@ WHERE
 	r.Value1 = r.Value2 OR r.Value1 <> r.Value2 AND r.Value1 = r.Value4
 
 BeforeExecute
--- ClickHouse.MySql ClickHouse
+-- ClickHouse.MySql ClickHouse (asynchronously)
 
 SELECT
 	t1.Id,
@@ -493,7 +493,7 @@ FROM
 	BooleanTable t1
 
 BeforeExecute
--- ClickHouse.MySql ClickHouse
+-- ClickHouse.MySql ClickHouse (asynchronously)
 
 SELECT
 	r.Id,
@@ -507,7 +507,7 @@ WHERE
 	r.Value1 = r.Value5 OR (r.Value1 <> r.Value5 OR r.Value5 IS NULL) AND r.Value1 = r.Value2
 
 BeforeExecute
--- ClickHouse.MySql ClickHouse
+-- ClickHouse.MySql ClickHouse (asynchronously)
 
 SELECT
 	t1.Id,
@@ -519,7 +519,7 @@ FROM
 	BooleanTable t1
 
 BeforeExecute
--- ClickHouse.MySql ClickHouse
+-- ClickHouse.MySql ClickHouse (asynchronously)
 
 SELECT
 	r.Id,
@@ -533,7 +533,7 @@ WHERE
 	r.Value1 = r.Value5 OR (r.Value1 <> r.Value5 OR r.Value5 IS NULL) AND r.Value1 = r.Value4
 
 BeforeExecute
--- ClickHouse.MySql ClickHouse
+-- ClickHouse.MySql ClickHouse (asynchronously)
 
 SELECT
 	t1.Id,
@@ -545,7 +545,7 @@ FROM
 	BooleanTable t1
 
 BeforeExecute
--- ClickHouse.MySql ClickHouse
+-- ClickHouse.MySql ClickHouse (asynchronously)
 
 SELECT
 	r.Id,
@@ -559,7 +559,7 @@ WHERE
 	r.Value1 > r.Value2 OR r.Value1 <= r.Value2 AND r.Value1 > r.Value4
 
 BeforeExecute
--- ClickHouse.MySql ClickHouse
+-- ClickHouse.MySql ClickHouse (asynchronously)
 
 SELECT
 	t1.Id,
@@ -571,7 +571,7 @@ FROM
 	BooleanTable t1
 
 BeforeExecute
--- ClickHouse.MySql ClickHouse
+-- ClickHouse.MySql ClickHouse (asynchronously)
 
 SELECT
 	r.Id,
@@ -585,7 +585,7 @@ WHERE
 	r.Value1 > r.Value5 OR r.Value1 <= r.Value5 AND r.Value1 > r.Value2
 
 BeforeExecute
--- ClickHouse.MySql ClickHouse
+-- ClickHouse.MySql ClickHouse (asynchronously)
 
 SELECT
 	t1.Id,
@@ -597,7 +597,7 @@ FROM
 	BooleanTable t1
 
 BeforeExecute
--- ClickHouse.MySql ClickHouse
+-- ClickHouse.MySql ClickHouse (asynchronously)
 
 SELECT
 	r.Id,
@@ -611,7 +611,7 @@ WHERE
 	r.Value1 > r.Value5 OR r.Value1 <= r.Value5 AND r.Value1 > r.Value4
 
 BeforeExecute
--- ClickHouse.MySql ClickHouse
+-- ClickHouse.MySql ClickHouse (asynchronously)
 
 SELECT
 	t1.Id,
@@ -623,7 +623,7 @@ FROM
 	BooleanTable t1
 
 BeforeExecute
--- ClickHouse.MySql ClickHouse
+-- ClickHouse.MySql ClickHouse (asynchronously)
 
 SELECT
 	r.Id,
@@ -637,7 +637,7 @@ WHERE
 	r.Value1 = r.Value2 AND (r.Value1 <> r.Value2 OR r.Value1 = r.Value4)
 
 BeforeExecute
--- ClickHouse.MySql ClickHouse
+-- ClickHouse.MySql ClickHouse (asynchronously)
 
 SELECT
 	t1.Id,
@@ -649,7 +649,7 @@ FROM
 	BooleanTable t1
 
 BeforeExecute
--- ClickHouse.MySql ClickHouse
+-- ClickHouse.MySql ClickHouse (asynchronously)
 
 SELECT
 	r.Id,
@@ -663,7 +663,7 @@ WHERE
 	r.Value1 = r.Value5 AND (r.Value1 <> r.Value5 OR r.Value5 IS NULL OR r.Value1 = r.Value2)
 
 BeforeExecute
--- ClickHouse.MySql ClickHouse
+-- ClickHouse.MySql ClickHouse (asynchronously)
 
 SELECT
 	t1.Id,
@@ -675,7 +675,7 @@ FROM
 	BooleanTable t1
 
 BeforeExecute
--- ClickHouse.MySql ClickHouse
+-- ClickHouse.MySql ClickHouse (asynchronously)
 
 SELECT
 	r.Id,
@@ -689,7 +689,7 @@ WHERE
 	r.Value1 = r.Value5 AND (r.Value1 <> r.Value5 OR r.Value5 IS NULL OR r.Value1 = r.Value4)
 
 BeforeExecute
--- ClickHouse.MySql ClickHouse
+-- ClickHouse.MySql ClickHouse (asynchronously)
 
 SELECT
 	t1.Id,
@@ -701,7 +701,7 @@ FROM
 	BooleanTable t1
 
 BeforeExecute
--- ClickHouse.MySql ClickHouse
+-- ClickHouse.MySql ClickHouse (asynchronously)
 
 SELECT
 	r.Id,
@@ -715,7 +715,7 @@ WHERE
 	r.Value1 < r.Value2 AND (r.Value1 >= r.Value2 OR r.Value1 < r.Value4)
 
 BeforeExecute
--- ClickHouse.MySql ClickHouse
+-- ClickHouse.MySql ClickHouse (asynchronously)
 
 SELECT
 	t1.Id,
@@ -727,7 +727,7 @@ FROM
 	BooleanTable t1
 
 BeforeExecute
--- ClickHouse.MySql ClickHouse
+-- ClickHouse.MySql ClickHouse (asynchronously)
 
 SELECT
 	r.Id,
@@ -741,7 +741,7 @@ WHERE
 	r.Value1 < r.Value5 AND (r.Value1 >= r.Value5 OR r.Value1 < r.Value2)
 
 BeforeExecute
--- ClickHouse.MySql ClickHouse
+-- ClickHouse.MySql ClickHouse (asynchronously)
 
 SELECT
 	t1.Id,
@@ -753,7 +753,7 @@ FROM
 	BooleanTable t1
 
 BeforeExecute
--- ClickHouse.MySql ClickHouse
+-- ClickHouse.MySql ClickHouse (asynchronously)
 
 SELECT
 	r.Id,
@@ -767,7 +767,7 @@ WHERE
 	r.Value1 < r.Value5 AND (r.Value1 >= r.Value5 OR r.Value1 < r.Value4)
 
 BeforeExecute
--- ClickHouse.MySql ClickHouse
+-- ClickHouse.MySql ClickHouse (asynchronously)
 
 SELECT
 	t1.Id,
@@ -779,7 +779,7 @@ FROM
 	BooleanTable t1
 
 BeforeExecute
--- ClickHouse.MySql ClickHouse
+-- ClickHouse.MySql ClickHouse (asynchronously)
 
 SELECT
 	r.Id,
@@ -791,7 +791,7 @@ FROM
 	BooleanTable r
 
 BeforeExecute
--- ClickHouse.MySql ClickHouse
+-- ClickHouse.MySql ClickHouse (asynchronously)
 
 SELECT
 	t1.Id,
@@ -803,7 +803,7 @@ FROM
 	BooleanTable t1
 
 BeforeExecute
--- ClickHouse.MySql ClickHouse
+-- ClickHouse.MySql ClickHouse (asynchronously)
 
 SELECT
 	r.Id,
@@ -817,7 +817,7 @@ WHERE
 	r.Value1 > r.Value2 OR r.Value1 <= r.Value2
 
 BeforeExecute
--- ClickHouse.MySql ClickHouse
+-- ClickHouse.MySql ClickHouse (asynchronously)
 
 SELECT
 	t1.Id,
@@ -829,7 +829,7 @@ FROM
 	BooleanTable t1
 
 BeforeExecute
--- ClickHouse.MySql ClickHouse
+-- ClickHouse.MySql ClickHouse (asynchronously)
 
 SELECT
 	r.Id,
@@ -843,7 +843,7 @@ WHERE
 	r.Value1 >= r.Value2 OR r.Value1 < r.Value2
 
 BeforeExecute
--- ClickHouse.MySql ClickHouse
+-- ClickHouse.MySql ClickHouse (asynchronously)
 
 SELECT
 	t1.Id,
@@ -855,7 +855,7 @@ FROM
 	BooleanTable t1
 
 BeforeExecute
--- ClickHouse.MySql ClickHouse
+-- ClickHouse.MySql ClickHouse (asynchronously)
 
 SELECT
 	r.Id,
@@ -867,7 +867,7 @@ FROM
 	BooleanTable r
 
 BeforeExecute
--- ClickHouse.MySql ClickHouse
+-- ClickHouse.MySql ClickHouse (asynchronously)
 
 SELECT
 	t1.Id,
@@ -879,7 +879,7 @@ FROM
 	BooleanTable t1
 
 BeforeExecute
--- ClickHouse.MySql ClickHouse
+-- ClickHouse.MySql ClickHouse (asynchronously)
 
 SELECT
 	r.Id,
@@ -893,7 +893,7 @@ WHERE
 	r.Value1 < r.Value4 OR r.Value1 >= r.Value4
 
 BeforeExecute
--- ClickHouse.MySql ClickHouse
+-- ClickHouse.MySql ClickHouse (asynchronously)
 
 SELECT
 	t1.Id,
@@ -905,7 +905,7 @@ FROM
 	BooleanTable t1
 
 BeforeExecute
--- ClickHouse.MySql ClickHouse
+-- ClickHouse.MySql ClickHouse (asynchronously)
 
 SELECT
 	r.Id,
@@ -919,7 +919,7 @@ WHERE
 	r.Value1 > r.Value4 OR r.Value1 <= r.Value4
 
 BeforeExecute
--- ClickHouse.MySql ClickHouse
+-- ClickHouse.MySql ClickHouse (asynchronously)
 
 SELECT
 	t1.Id,
@@ -931,7 +931,7 @@ FROM
 	BooleanTable t1
 
 BeforeExecute
--- ClickHouse.MySql ClickHouse
+-- ClickHouse.MySql ClickHouse (asynchronously)
 
 SELECT
 	r.Id,
@@ -943,7 +943,7 @@ FROM
 	BooleanTable r
 
 BeforeExecute
--- ClickHouse.MySql ClickHouse
+-- ClickHouse.MySql ClickHouse (asynchronously)
 
 SELECT
 	t1.Id,
@@ -955,7 +955,7 @@ FROM
 	BooleanTable t1
 
 BeforeExecute
--- ClickHouse.MySql ClickHouse
+-- ClickHouse.MySql ClickHouse (asynchronously)
 
 SELECT
 	r.Id,
@@ -969,7 +969,7 @@ WHERE
 	r.Value5 > r.Value4 OR r.Value5 <= r.Value4
 
 BeforeExecute
--- ClickHouse.MySql ClickHouse
+-- ClickHouse.MySql ClickHouse (asynchronously)
 
 SELECT
 	t1.Id,
@@ -981,7 +981,7 @@ FROM
 	BooleanTable t1
 
 BeforeExecute
--- ClickHouse.MySql ClickHouse
+-- ClickHouse.MySql ClickHouse (asynchronously)
 
 SELECT
 	r.Id,
@@ -995,7 +995,7 @@ WHERE
 	r.Value5 >= r.Value4 OR r.Value5 < r.Value4
 
 BeforeExecute
--- ClickHouse.MySql ClickHouse
+-- ClickHouse.MySql ClickHouse (asynchronously)
 
 SELECT
 	t1.Id,
@@ -1007,7 +1007,7 @@ FROM
 	BooleanTable t1
 
 BeforeExecute
--- ClickHouse.MySql ClickHouse
+-- ClickHouse.MySql ClickHouse (asynchronously)
 
 SELECT
 	r.Id,
@@ -1021,7 +1021,7 @@ WHERE
 	1 = 0
 
 BeforeExecute
--- ClickHouse.MySql ClickHouse
+-- ClickHouse.MySql ClickHouse (asynchronously)
 
 SELECT
 	t1.Id,
@@ -1033,7 +1033,7 @@ FROM
 	BooleanTable t1
 
 BeforeExecute
--- ClickHouse.MySql ClickHouse
+-- ClickHouse.MySql ClickHouse (asynchronously)
 
 SELECT
 	r.Id,
@@ -1047,7 +1047,7 @@ WHERE
 	r.Value1 > r.Value2 AND r.Value1 <= r.Value2
 
 BeforeExecute
--- ClickHouse.MySql ClickHouse
+-- ClickHouse.MySql ClickHouse (asynchronously)
 
 SELECT
 	t1.Id,
@@ -1059,7 +1059,7 @@ FROM
 	BooleanTable t1
 
 BeforeExecute
--- ClickHouse.MySql ClickHouse
+-- ClickHouse.MySql ClickHouse (asynchronously)
 
 SELECT
 	r.Id,
@@ -1073,7 +1073,7 @@ WHERE
 	r.Value1 >= r.Value2 AND r.Value1 < r.Value2
 
 BeforeExecute
--- ClickHouse.MySql ClickHouse
+-- ClickHouse.MySql ClickHouse (asynchronously)
 
 SELECT
 	t1.Id,
@@ -1085,7 +1085,7 @@ FROM
 	BooleanTable t1
 
 BeforeExecute
--- ClickHouse.MySql ClickHouse
+-- ClickHouse.MySql ClickHouse (asynchronously)
 
 SELECT
 	r.Id,
@@ -1099,7 +1099,7 @@ WHERE
 	1 = 0
 
 BeforeExecute
--- ClickHouse.MySql ClickHouse
+-- ClickHouse.MySql ClickHouse (asynchronously)
 
 SELECT
 	t1.Id,
@@ -1111,7 +1111,7 @@ FROM
 	BooleanTable t1
 
 BeforeExecute
--- ClickHouse.MySql ClickHouse
+-- ClickHouse.MySql ClickHouse (asynchronously)
 
 SELECT
 	r.Id,
@@ -1125,7 +1125,7 @@ WHERE
 	r.Value1 < r.Value4 AND r.Value1 >= r.Value4
 
 BeforeExecute
--- ClickHouse.MySql ClickHouse
+-- ClickHouse.MySql ClickHouse (asynchronously)
 
 SELECT
 	t1.Id,
@@ -1137,7 +1137,7 @@ FROM
 	BooleanTable t1
 
 BeforeExecute
--- ClickHouse.MySql ClickHouse
+-- ClickHouse.MySql ClickHouse (asynchronously)
 
 SELECT
 	r.Id,
@@ -1151,7 +1151,7 @@ WHERE
 	r.Value1 > r.Value4 AND r.Value1 <= r.Value4
 
 BeforeExecute
--- ClickHouse.MySql ClickHouse
+-- ClickHouse.MySql ClickHouse (asynchronously)
 
 SELECT
 	t1.Id,
@@ -1163,7 +1163,7 @@ FROM
 	BooleanTable t1
 
 BeforeExecute
--- ClickHouse.MySql ClickHouse
+-- ClickHouse.MySql ClickHouse (asynchronously)
 
 SELECT
 	r.Id,
@@ -1177,7 +1177,7 @@ WHERE
 	1 = 0
 
 BeforeExecute
--- ClickHouse.MySql ClickHouse
+-- ClickHouse.MySql ClickHouse (asynchronously)
 
 SELECT
 	t1.Id,
@@ -1189,7 +1189,7 @@ FROM
 	BooleanTable t1
 
 BeforeExecute
--- ClickHouse.MySql ClickHouse
+-- ClickHouse.MySql ClickHouse (asynchronously)
 
 SELECT
 	r.Id,
@@ -1203,7 +1203,7 @@ WHERE
 	r.Value5 > r.Value4 AND r.Value5 <= r.Value4
 
 BeforeExecute
--- ClickHouse.MySql ClickHouse
+-- ClickHouse.MySql ClickHouse (asynchronously)
 
 SELECT
 	t1.Id,
@@ -1215,7 +1215,7 @@ FROM
 	BooleanTable t1
 
 BeforeExecute
--- ClickHouse.MySql ClickHouse
+-- ClickHouse.MySql ClickHouse (asynchronously)
 
 SELECT
 	r.Id,
@@ -1229,7 +1229,7 @@ WHERE
 	r.Value5 >= r.Value4 AND r.Value5 < r.Value4
 
 BeforeExecute
--- ClickHouse.MySql ClickHouse
+-- ClickHouse.MySql ClickHouse (asynchronously)
 
 SELECT
 	t1.Id,

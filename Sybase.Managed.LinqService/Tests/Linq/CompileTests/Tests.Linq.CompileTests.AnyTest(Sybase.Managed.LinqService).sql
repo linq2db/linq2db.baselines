@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Sybase.Managed Sybase
+-- Sybase.Managed Sybase (asynchronously)
 DECLARE @p Integer -- Int32
 SET     @p = 1
 
@@ -18,7 +18,7 @@ SELECT
 	END
 
 BeforeExecute
--- Sybase.Managed Sybase
+-- Sybase.Managed Sybase (asynchronously)
 DECLARE @p Integer -- Int32
 SET     @p = -1
 

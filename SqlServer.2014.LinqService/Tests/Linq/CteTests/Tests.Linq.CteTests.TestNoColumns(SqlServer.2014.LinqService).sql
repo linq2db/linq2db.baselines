@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2014
+-- SqlServer.2014 (asynchronously)
 
 SELECT
 	COUNT(*)
@@ -7,7 +7,7 @@ FROM
 	[Child] [t1]
 
 BeforeExecute
--- SqlServer.2014
+-- SqlServer.2014 (asynchronously)
 
 WITH [CTE1_] ([c1])
 AS
@@ -23,7 +23,7 @@ FROM
 	[CTE1_] [t2]
 
 BeforeExecute
--- SqlServer.2014
+-- SqlServer.2014 (asynchronously)
 
 WITH [CTE1_] ([c1])
 AS
@@ -39,7 +39,7 @@ FROM
 	[CTE1_] [t1]
 
 BeforeExecute
--- SqlServer.2014
+-- SqlServer.2014 (asynchronously)
 
 WITH [CTE1_] ([c1])
 AS

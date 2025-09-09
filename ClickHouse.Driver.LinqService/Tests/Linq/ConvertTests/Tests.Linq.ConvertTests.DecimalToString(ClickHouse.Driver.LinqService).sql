@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- ClickHouse.Driver ClickHouse
+-- ClickHouse.Driver ClickHouse (asynchronously)
 
 SELECT
 	trim(TRAILING '0.' FROM Replace(toString(p.MoneyValue), ',', '.'))

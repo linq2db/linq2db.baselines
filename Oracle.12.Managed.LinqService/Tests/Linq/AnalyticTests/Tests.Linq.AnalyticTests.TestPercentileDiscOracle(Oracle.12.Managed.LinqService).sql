@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Oracle.12.Managed Oracle.Managed Oracle12
+-- Oracle.12.Managed Oracle.Managed Oracle12 (asynchronously)
 
 SELECT
 	PERCENTILE_DISC(0.5D) WITHIN GROUP (ORDER BY p."Value1") OVER(PARTITION BY p."Value1", p."ParentID")
@@ -8,7 +8,7 @@ FROM
 		INNER JOIN "Child" c_1 ON p."ParentID" = c_1."ParentID"
 
 BeforeExecute
--- Oracle.12.Managed Oracle.Managed Oracle12
+-- Oracle.12.Managed Oracle.Managed Oracle12 (asynchronously)
 
 SELECT
 	PERCENTILE_DISC(0.5D) WITHIN GROUP (ORDER BY p."Value1" DESC),

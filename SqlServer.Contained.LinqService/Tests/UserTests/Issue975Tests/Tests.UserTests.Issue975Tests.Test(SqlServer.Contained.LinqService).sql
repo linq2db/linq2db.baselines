@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2019 (asynchronously)
 DECLARE @directionId UniqueIdentifier -- Guid
 SET     @directionId = 'bc7b663d-0fde-4327-8f92-5d8cc3a11d11'
 
@@ -23,7 +23,7 @@ VALUES
 SELECT SCOPE_IDENTITY()
 
 BeforeExecute
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2019 (asynchronously)
 DECLARE @directionId UniqueIdentifier -- Guid
 SET     @directionId = 'bc7b663d-0fde-4327-8f92-5d8cc3a11d11'
 
@@ -45,7 +45,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2019 (asynchronously)
 DECLARE @taskId Int -- Int32
 SET     @taskId = 1
 
@@ -65,7 +65,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.Contained SqlServer.2019
+-- SqlServer.Contained SqlServer.2019 (asynchronously)
 DECLARE @employeeId Int -- Int32
 SET     @employeeId = 10
 

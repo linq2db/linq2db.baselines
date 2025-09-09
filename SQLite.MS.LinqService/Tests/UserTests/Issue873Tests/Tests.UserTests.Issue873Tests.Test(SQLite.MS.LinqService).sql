@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SQLite.MS SQLite
+-- SQLite.MS SQLite (asynchronously)
 
 SELECT
 	' ' || CAST(Coalesce([f].[Value1], 0) AS NVarChar(11)),

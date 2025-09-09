@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 
 SELECT
 	DatePart(hour, DateAdd(hour, 22, [t].[DateTimeValue])) as [c1]

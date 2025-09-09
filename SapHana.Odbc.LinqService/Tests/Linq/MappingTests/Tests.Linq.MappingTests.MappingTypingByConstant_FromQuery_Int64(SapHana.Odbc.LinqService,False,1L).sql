@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+-- SapHana.Odbc SapHanaOdbc (asynchronously)
 DECLARE @value BigInt -- Int64
 SET     @value = 1
 
@@ -16,7 +16,7 @@ FROM
 	) "t1"
 
 BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+-- SapHana.Odbc SapHanaOdbc (asynchronously)
 DECLARE @value BigInt -- Int64
 SET     @value = 2147483648
 

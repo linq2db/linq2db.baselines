@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MySql (asynchronously)
 
 UPDATE
 	`billing_TempReading` `tr`
@@ -9,7 +9,7 @@ SET
 	`tr`.`Responsibility` = `drt`.`Responsibility`
 
 BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MySql (asynchronously)
 
 UPDATE
 	`billing_TempReading` `t1`

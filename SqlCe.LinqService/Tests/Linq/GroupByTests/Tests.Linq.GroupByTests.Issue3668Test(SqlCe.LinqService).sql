@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 DECLARE @id Int -- Int32
 SET     @id = 1
 DECLARE @name NVarChar(4) -- String
@@ -19,7 +19,7 @@ WHERE
 	[m_1].[FirstName] <> @name AND [m_1].[PersonID] - 1 = @id
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 DECLARE @id Int -- Int32
 SET     @id = 1
 DECLARE @name NVarChar(4) -- String

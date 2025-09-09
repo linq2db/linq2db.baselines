@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Access.Ace.OleDb AccessOleDb
+-- Access.Ace.OleDb AccessOleDb (asynchronously)
 
 SELECT
 	[e].[Id],
@@ -13,7 +13,7 @@ WHERE
 	[e].[GuidNullableValue] = {guid {bc7b663d-0fde-4327-8f92-5d8cc3a11d11}}
 
 BeforeExecute
--- Access.Ace.OleDb AccessOleDb
+-- Access.Ace.OleDb AccessOleDb (asynchronously)
 
 SELECT
 	[t1].[Id],

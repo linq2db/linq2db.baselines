@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2022
+-- SqlServer.2022 (asynchronously)
 DECLARE @Id Int -- Int32
 SET     @Id = 1
 DECLARE @Stamp Int -- Int32
@@ -21,7 +21,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2022
+-- SqlServer.2022 (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -31,7 +31,7 @@ FROM
 	[ConcurrencyFiltered] [t1]
 
 BeforeExecute
--- SqlServer.2022
+-- SqlServer.2022 (asynchronously)
 DECLARE @Value NVarChar(4000) -- String
 SET     @Value = N'value 1'
 DECLARE @Id Int -- Int32
@@ -49,7 +49,7 @@ WHERE
 	[ConcurrencyFiltered].[Stamp] = @Stamp
 
 BeforeExecute
--- SqlServer.2022
+-- SqlServer.2022 (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -59,7 +59,7 @@ FROM
 	[ConcurrencyFiltered] [t1]
 
 BeforeExecute
--- SqlServer.2022
+-- SqlServer.2022 (asynchronously)
 DECLARE @Value NVarChar(4000) -- String
 SET     @Value = N'value 2'
 DECLARE @Id Int -- Int32
@@ -77,7 +77,7 @@ WHERE
 	[ConcurrencyFiltered].[Stamp] = @Stamp
 
 BeforeExecute
--- SqlServer.2022
+-- SqlServer.2022 (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -87,7 +87,7 @@ FROM
 	[ConcurrencyFiltered] [t1]
 
 BeforeExecute
--- SqlServer.2022
+-- SqlServer.2022 (asynchronously)
 DECLARE @Id Int -- Int32
 SET     @Id = 1
 DECLARE @Stamp Int -- Int32
@@ -100,7 +100,7 @@ WHERE
 	[r].[Id] = 2 AND [r].[Id] = @Id AND [r].[Stamp] = @Stamp
 
 BeforeExecute
--- SqlServer.2022
+-- SqlServer.2022 (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -110,7 +110,7 @@ FROM
 	[ConcurrencyFiltered] [t1]
 
 BeforeExecute
--- SqlServer.2022
+-- SqlServer.2022 (asynchronously)
 DECLARE @Id Int -- Int32
 SET     @Id = 1
 DECLARE @Stamp Int -- Int32
@@ -123,7 +123,7 @@ WHERE
 	[r].[Id] = 1 AND [r].[Id] = @Id AND [r].[Stamp] = @Stamp
 
 BeforeExecute
--- SqlServer.2022
+-- SqlServer.2022 (asynchronously)
 
 SELECT
 	[t1].[Id],

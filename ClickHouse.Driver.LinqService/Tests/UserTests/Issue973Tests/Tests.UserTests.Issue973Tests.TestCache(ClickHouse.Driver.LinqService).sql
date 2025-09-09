@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- ClickHouse.Driver ClickHouse
+-- ClickHouse.Driver ClickHouse (asynchronously)
 
 SELECT
 	o.ParentID,
@@ -10,7 +10,7 @@ WHERE
 	o.ParentID IN (1, 2, 3) OR o.ParentID = 4
 
 BeforeExecute
--- ClickHouse.Driver ClickHouse
+-- ClickHouse.Driver ClickHouse (asynchronously)
 
 SELECT
 	o.ParentID,
@@ -21,7 +21,7 @@ WHERE
 	o.ParentID IN (1, 2, 3) OR o.ParentID = 4
 
 BeforeExecute
--- ClickHouse.Driver ClickHouse
+-- ClickHouse.Driver ClickHouse (asynchronously)
 
 SELECT
 	o.ParentID,
@@ -32,7 +32,7 @@ WHERE
 	o.ParentID IN (4, 5, 6) OR o.ParentID = 4
 
 BeforeExecute
--- ClickHouse.Driver ClickHouse
+-- ClickHouse.Driver ClickHouse (asynchronously)
 
 SELECT
 	o.ParentID,

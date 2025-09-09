@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Firebird.5 Firebird4
+-- Firebird.5 Firebird4 (asynchronously)
 
 SELECT
 	"m_1"."Id",
@@ -10,7 +10,7 @@ FROM
 		INNER JOIN "SubEntity" "d" ON "m_1"."Id" = "d"."MainEntityId"
 
 BeforeExecute
--- Firebird.5 Firebird4
+-- Firebird.5 Firebird4 (asynchronously)
 
 SELECT
 	"t1"."Id"

@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2012
+-- SqlServer.2012 (asynchronously)
 
 SELECT
 	DATETIMEFROMPARTS(2010, [t].[ID], 1, 0, 0, 0, 0)

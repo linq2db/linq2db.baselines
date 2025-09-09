@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Oracle.11.Managed Oracle11
+-- Oracle.11.Managed Oracle11 (asynchronously)
 DECLARE @value BinaryFloat -- Single
 SET     @value = 0
 
@@ -16,7 +16,7 @@ FROM
 	) t1
 
 BeforeExecute
--- Oracle.11.Managed Oracle11
+-- Oracle.11.Managed Oracle11 (asynchronously)
 DECLARE @value BinaryFloat -- Single
 SET     @value = 3.14748365E+09
 

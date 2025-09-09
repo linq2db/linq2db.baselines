@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SQLite.MS SQLite
+-- SQLite.MS SQLite (asynchronously)
 DECLARE @id2  -- Int32
 SET     @id2 = 2
 DECLARE @id1  -- Int32

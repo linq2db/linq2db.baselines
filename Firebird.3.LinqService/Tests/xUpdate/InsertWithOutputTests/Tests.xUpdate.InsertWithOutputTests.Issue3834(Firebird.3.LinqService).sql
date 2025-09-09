@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Firebird.3 Firebird3
+-- Firebird.3 Firebird3 (asynchronously)
 DECLARE @Id Integer -- Int32
 SET     @Id = 123
 DECLARE @Nesto VarChar(5) -- String

@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Oracle.11.Managed Oracle11
+-- Oracle.11.Managed Oracle11 (asynchronously)
 DECLARE @A123456789b123456789c123456789 Int32
 SET     @A123456789b123456789c123456789 = 2
 

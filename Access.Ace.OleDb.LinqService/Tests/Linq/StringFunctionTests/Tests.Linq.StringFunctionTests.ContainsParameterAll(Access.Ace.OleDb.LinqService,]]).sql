@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Access.Ace.OleDb AccessOleDb
+-- Access.Ace.OleDb AccessOleDb (asynchronously)
 DECLARE @s VarWChar(8) -- String
 SET     @s = '123]]456'
 DECLARE @toTest VarWChar(4) -- String

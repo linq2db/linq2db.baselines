@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Informix.DB2 Informix
+-- Informix.DB2 Informix (asynchronously)
 
 SELECT
 	('2010-01-' || Lpad(t.TransactionId,2,'0'))::DATETIME YEAR TO DAY
@@ -9,7 +9,7 @@ WHERE
 	Day(('2010-01-' || Lpad(t.TransactionId,2,'0'))::DATETIME YEAR TO DAY) > 0
 
 BeforeExecute
--- Informix.DB2 Informix
+-- Informix.DB2 Informix (asynchronously)
 
 SELECT
 	t1.TransactionId,

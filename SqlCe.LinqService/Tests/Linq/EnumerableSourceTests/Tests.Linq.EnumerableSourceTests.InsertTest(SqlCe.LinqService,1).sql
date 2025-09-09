@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 
 INSERT INTO [TableToInsert]
 (
@@ -19,7 +19,7 @@ WHERE
 	[t].[Id] IS NULL
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 
 INSERT INTO [TableToInsert]
 (

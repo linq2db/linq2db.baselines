@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Firebird.4 Firebird4
+-- Firebird.4 Firebird4 (asynchronously)
 
 SELECT
 	MAX("t1".ID)
@@ -7,7 +7,7 @@ FROM
 	"AllTypes" "t1"
 
 BeforeExecute
--- Firebird.4 Firebird4
+-- Firebird.4 Firebird4 (asynchronously)
 DECLARE @real Float -- Single
 SET     @real = CAST(LOG(1, 1) AS FLOAT)
 DECLARE @dbl Double
@@ -27,7 +27,7 @@ VALUES
 )
 
 BeforeExecute
--- Firebird.4 Firebird4
+-- Firebird.4 Firebird4 (asynchronously)
 DECLARE @real Float -- Single
 SET     @real = CAST(LOG(1, 0.5) AS FLOAT)
 DECLARE @dbl Double
@@ -47,7 +47,7 @@ VALUES
 )
 
 BeforeExecute
--- Firebird.4 Firebird4
+-- Firebird.4 Firebird4 (asynchronously)
 DECLARE @real Float -- Single
 SET     @real = CAST(LOG(1, 2) AS FLOAT)
 DECLARE @dbl Double
@@ -67,7 +67,7 @@ VALUES
 )
 
 BeforeExecute
--- Firebird.4 Firebird4
+-- Firebird.4 Firebird4 (asynchronously)
 DECLARE @maxID Integer -- Int32
 SET     @maxID = 2
 

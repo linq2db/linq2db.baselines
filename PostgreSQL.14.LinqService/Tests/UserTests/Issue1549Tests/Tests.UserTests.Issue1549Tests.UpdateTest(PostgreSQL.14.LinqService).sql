@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL (asynchronously)
 
 UPDATE
 	"billing_TempReading"
@@ -13,7 +13,7 @@ WHERE
 	drt."DevTypeId" = "billing_TempReading"."Devtypeid"
 
 BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL (asynchronously)
 
 UPDATE
 	"billing_TempReading"

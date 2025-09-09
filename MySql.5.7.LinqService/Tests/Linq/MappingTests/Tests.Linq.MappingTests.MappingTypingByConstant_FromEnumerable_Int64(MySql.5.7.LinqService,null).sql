@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- MySql.5.7 MySql.5.7.MySql.Data MySql57
+-- MySql.5.7 MySql.5.7.MySql.Data MySql57 (asynchronously)
 
 SELECT
 	`arg`.`Id`,
@@ -10,7 +10,7 @@ FROM
 			SELECT 1 AS `Id`, CAST(NULL AS SIGNED) AS `Value`) `arg` ON `entity`.`PersonID` = `arg`.`Id`
 
 BeforeExecute
--- MySql.5.7 MySql.5.7.MySql.Data MySql57
+-- MySql.5.7 MySql.5.7.MySql.Data MySql57 (asynchronously)
 
 SELECT
 	`arg`.`Id`,

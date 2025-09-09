@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
+-- PostgreSQL.17 PostgreSQL.15 PostgreSQL (asynchronously)
 DECLARE @In Varchar(12) -- String
 SET     @In = '___Value3___'
 DECLARE @In_1 Varchar(12) -- String
@@ -14,7 +14,7 @@ WHERE
 LIMIT 1
 
 BeforeExecute
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
+-- PostgreSQL.17 PostgreSQL.15 PostgreSQL (asynchronously)
 DECLARE @In Varchar(12) -- String
 SET     @In = '___Value3___'
 
@@ -27,7 +27,7 @@ WHERE
 LIMIT 1
 
 BeforeExecute
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
+-- PostgreSQL.17 PostgreSQL.15 PostgreSQL (asynchronously)
 DECLARE @In Varchar(12) -- String
 SET     @In = '___Value3___'
 DECLARE @In_1 Varchar(12) -- String
@@ -42,7 +42,7 @@ WHERE
 LIMIT 1
 
 BeforeExecute
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
+-- PostgreSQL.17 PostgreSQL.15 PostgreSQL (asynchronously)
 DECLARE @NotIn Varchar(12) -- String
 SET     @NotIn = '___Value2___'
 
@@ -55,7 +55,7 @@ WHERE
 LIMIT 1
 
 BeforeExecute
--- PostgreSQL.17 PostgreSQL.15 PostgreSQL
+-- PostgreSQL.17 PostgreSQL.15 PostgreSQL (asynchronously)
 DECLARE @NotIn Varchar(12) -- String
 SET     @NotIn = '___Value3___'
 DECLARE @NotIn_1 Varchar(12) -- String

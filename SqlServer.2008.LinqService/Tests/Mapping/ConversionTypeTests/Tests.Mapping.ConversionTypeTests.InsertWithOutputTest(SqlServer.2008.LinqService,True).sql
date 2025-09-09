@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2008
+-- SqlServer.2008 (asynchronously)
 
 INSERT INTO [TrimTestTable]
 (
@@ -16,7 +16,7 @@ FROM
 	[TrimTestTable] [t1]
 
 BeforeExecute
--- SqlServer.2008
+-- SqlServer.2008 (asynchronously)
 
 SELECT
 	[r].[ID],
@@ -27,7 +27,7 @@ ORDER BY
 	[r].[ID]
 
 BeforeExecute
--- SqlServer.2008
+-- SqlServer.2008 (asynchronously)
 
 SELECT
 	[r].[ID],

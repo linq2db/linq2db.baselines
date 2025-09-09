@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2008
+-- SqlServer.2008 (asynchronously)
 
 SELECT
 	CAST(DateAdd(year, [t].[SmallIntValue], [t].[DateTimeValue]) AS Date)

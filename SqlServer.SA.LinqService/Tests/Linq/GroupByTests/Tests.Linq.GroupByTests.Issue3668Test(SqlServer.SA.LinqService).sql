@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.SA SqlServer.2019
+-- SqlServer.SA SqlServer.2019 (asynchronously)
 DECLARE @id Int -- Int32
 SET     @id = 1
 DECLARE @name NVarChar(4000) -- String
@@ -19,7 +19,7 @@ WHERE
 	[m_1].[FirstName] <> @name AND [m_1].[PersonID] - 1 = @id
 
 BeforeExecute
--- SqlServer.SA SqlServer.2019
+-- SqlServer.SA SqlServer.2019 (asynchronously)
 DECLARE @id Int -- Int32
 SET     @id = 1
 DECLARE @name NVarChar(4000) -- String

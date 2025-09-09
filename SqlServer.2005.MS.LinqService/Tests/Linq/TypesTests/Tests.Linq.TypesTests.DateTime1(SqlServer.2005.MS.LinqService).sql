@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2005.MS SqlServer.2005
+-- SqlServer.2005.MS SqlServer.2005 (asynchronously)
 DECLARE @Date DateTime
 SET     @Date = CAST('2009-09-20T00:00:00.000' AS DATETIME)
 

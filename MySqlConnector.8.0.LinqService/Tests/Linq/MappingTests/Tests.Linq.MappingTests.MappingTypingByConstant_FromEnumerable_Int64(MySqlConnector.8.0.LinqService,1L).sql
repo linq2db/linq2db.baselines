@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
+-- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80 (asynchronously)
 
 SELECT
 	`arg`.`Id`,
@@ -10,7 +10,7 @@ FROM
 			SELECT 1 AS `Id`, CAST(1 AS SIGNED) AS `Value`) `arg` ON `entity`.`PersonID` = `arg`.`Id`
 
 BeforeExecute
--- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
+-- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80 (asynchronously)
 
 SELECT
 	`arg`.`Id`,

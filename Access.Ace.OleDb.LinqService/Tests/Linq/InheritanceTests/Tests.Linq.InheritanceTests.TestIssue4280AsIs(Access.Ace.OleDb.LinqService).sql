@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Access.Ace.OleDb AccessOleDb
+-- Access.Ace.OleDb AccessOleDb (asynchronously)
 DECLARE @Id Integer -- Int32
 SET     @Id = 2
 DECLARE @SerialNumber VarWChar(7) -- String
@@ -25,7 +25,7 @@ VALUES
 )
 
 BeforeExecute
--- Access.Ace.OleDb AccessOleDb
+-- Access.Ace.OleDb AccessOleDb (asynchronously)
 DECLARE @Id Integer -- Int32
 SET     @Id = 1
 DECLARE @SerialNumber VarWChar(9) -- String
@@ -47,7 +47,7 @@ VALUES
 )
 
 BeforeExecute
--- Access.Ace.OleDb AccessOleDb
+-- Access.Ace.OleDb AccessOleDb (asynchronously)
 
 SELECT
 	[t1].[DeviceType],
@@ -60,7 +60,7 @@ ORDER BY
 	[t1].[Id]
 
 BeforeExecute
--- Access.Ace.OleDb AccessOleDb
+-- Access.Ace.OleDb AccessOleDb (asynchronously)
 DECLARE @SerialNumber VarWChar(7) -- String
 SET     @SerialNumber = 'TV00002'
 DECLARE @DeviceType VarWChar(2) -- String
@@ -80,7 +80,7 @@ WHERE
 	[t1].[Id] = @Id
 
 BeforeExecute
--- Access.Ace.OleDb AccessOleDb
+-- Access.Ace.OleDb AccessOleDb (asynchronously)
 DECLARE @SerialNumber VarWChar(9) -- String
 SET     @SerialNumber = 'Disp00002'
 DECLARE @DeviceType VarWChar(7) -- String
@@ -97,7 +97,7 @@ WHERE
 	[t1].[Id] = @Id
 
 BeforeExecute
--- Access.Ace.OleDb AccessOleDb
+-- Access.Ace.OleDb AccessOleDb (asynchronously)
 
 SELECT
 	[t1].[DeviceType],

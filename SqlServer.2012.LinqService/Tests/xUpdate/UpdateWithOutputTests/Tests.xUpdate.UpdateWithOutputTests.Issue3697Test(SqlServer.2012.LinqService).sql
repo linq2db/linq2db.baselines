@@ -1,10 +1,10 @@
 ﻿BeforeExecute
--- SqlServer.2012
+-- SqlServer.2012 (asynchronously)
 
 INSERT INTO [Test3697] DEFAULT VALUES
 
 BeforeExecute
--- SqlServer.2012
+-- SqlServer.2012 (asynchronously)
 
 UPDATE
 	[a_Items]
@@ -17,7 +17,7 @@ FROM
 		INNER JOIN [Test3697Item] [a_Items] ON [a].[Id] = [a_Items].[TestId]
 
 BeforeExecute
--- SqlServer.2012
+-- SqlServer.2012 (asynchronously)
 
 UPDATE
 	[b]

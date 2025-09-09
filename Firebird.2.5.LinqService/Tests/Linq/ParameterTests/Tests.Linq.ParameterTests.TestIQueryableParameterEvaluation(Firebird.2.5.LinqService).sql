@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Firebird.2.5 Firebird
+-- Firebird.2.5 Firebird (asynchronously)
 DECLARE @paramCopy Integer -- Int32
 SET     @paramCopy = 1
 DECLARE @p Integer -- Int32
@@ -41,7 +41,7 @@ WHERE
 	))
 
 BeforeExecute
--- Firebird.2.5 Firebird
+-- Firebird.2.5 Firebird (asynchronously)
 DECLARE @p Integer -- Int32
 SET     @p = 3
 DECLARE @paramCopy Integer -- Int32
@@ -83,7 +83,7 @@ WHERE
 	))
 
 BeforeExecute
--- Firebird.2.5 Firebird
+-- Firebird.2.5 Firebird (asynchronously)
 DECLARE @p Integer -- Int32
 SET     @p = 4
 DECLARE @p_1 Integer -- Int32
@@ -125,7 +125,7 @@ WHERE
 	))
 
 BeforeExecute
--- Firebird.2.5 Firebird
+-- Firebird.2.5 Firebird (asynchronously)
 DECLARE @paramCopy Integer -- Int32
 SET     @paramCopy = 1
 DECLARE @p Integer -- Int32
@@ -167,7 +167,7 @@ WHERE
 	))
 
 BeforeExecute
--- Firebird.2.5 Firebird
+-- Firebird.2.5 Firebird (asynchronously)
 DECLARE @p Integer -- Int32
 SET     @p = 4
 DECLARE @p_1 Integer -- Int32
@@ -209,7 +209,7 @@ WHERE
 	))
 
 BeforeExecute
--- Firebird.2.5 Firebird
+-- Firebird.2.5 Firebird (asynchronously)
 DECLARE @p Integer -- Int32
 SET     @p = 3
 DECLARE @paramCopy Integer -- Int32

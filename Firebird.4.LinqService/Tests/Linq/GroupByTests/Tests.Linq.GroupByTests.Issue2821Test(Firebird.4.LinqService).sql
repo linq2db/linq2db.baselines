@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Firebird.4 Firebird4
+-- Firebird.4 Firebird4 (asynchronously)
 DECLARE @currentDate TimeStamp -- DateTime
 SET     @currentDate = CAST('2020-02-29 17:54:55.123' AS timestamp)
 DECLARE @currentDate_1 TimeStamp -- DateTime

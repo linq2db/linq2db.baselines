@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025 SqlServer.2022 (asynchronously)
 DECLARE @Value1 Int -- Int32
 SET     @Value1 = 4
 
@@ -10,7 +10,7 @@ FROM
 	[Parent] [p]
 
 BeforeExecute
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025 SqlServer.2022 (asynchronously)
 
 SELECT
 	[t1].[ParentID],
@@ -19,7 +19,7 @@ FROM
 	[Parent] [t1]
 
 BeforeExecute
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025 SqlServer.2022 (asynchronously)
 DECLARE @Value1 Int -- Int32
 SET     @Value1 = 4
 
@@ -30,7 +30,7 @@ FROM
 	[Parent] [p]
 
 BeforeExecute
--- SqlServer.2025 SqlServer.2022
+-- SqlServer.2025 SqlServer.2022 (asynchronously)
 
 SELECT
 	[t1].[ParentID],

@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SQLite.MS SQLite
+-- SQLite.MS SQLite (asynchronously)
 
 UPDATE
 	[billing_TempReading]
@@ -13,7 +13,7 @@ WHERE
 	[drt].[DevTypeId] = [billing_TempReading].[Devtypeid]
 
 BeforeExecute
--- SQLite.MS SQLite
+-- SQLite.MS SQLite (asynchronously)
 
 UPDATE
 	[billing_TempReading]

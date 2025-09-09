@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Sybase.Managed Sybase
+-- Sybase.Managed Sybase (asynchronously)
 
 IF (OBJECT_ID(N'DisposableTable') IS NULL)
 	EXECUTE('
@@ -10,7 +10,7 @@ IF (OBJECT_ID(N'DisposableTable') IS NULL)
 	')
 
 BeforeExecute
--- Sybase.Managed Sybase
+-- Sybase.Managed Sybase (asynchronously)
 
 IF (OBJECT_ID(N'DisposableTable') IS NOT NULL)
 	DROP TABLE [DisposableTable]

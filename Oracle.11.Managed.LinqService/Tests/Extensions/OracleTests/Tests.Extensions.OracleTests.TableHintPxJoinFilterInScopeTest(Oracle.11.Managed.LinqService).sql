@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Oracle.11.Managed Oracle11
+-- Oracle.11.Managed Oracle11 (asynchronously)
 
 SELECT /*+ PX_JOIN_FILTER(p) PX_JOIN_FILTER(c_1) */
 	p."ParentID",

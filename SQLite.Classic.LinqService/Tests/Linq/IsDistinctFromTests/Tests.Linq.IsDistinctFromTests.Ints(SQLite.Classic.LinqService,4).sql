@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SQLite.Classic SQLite
+-- SQLite.Classic SQLite (asynchronously)
 DECLARE @value  -- Int32
 SET     @value = 4
 
@@ -11,7 +11,7 @@ WHERE
 	[s].[Int] IS NOT @value
 
 BeforeExecute
--- SQLite.Classic SQLite
+-- SQLite.Classic SQLite (asynchronously)
 DECLARE @value  -- Int32
 SET     @value = 4
 
@@ -23,7 +23,7 @@ WHERE
 	[s].[NullableInt] IS NOT @value
 
 BeforeExecute
--- SQLite.Classic SQLite
+-- SQLite.Classic SQLite (asynchronously)
 DECLARE @value  -- Int32
 SET     @value = 4
 
@@ -35,7 +35,7 @@ WHERE
 	[s].[Int] IS @value
 
 BeforeExecute
--- SQLite.Classic SQLite
+-- SQLite.Classic SQLite (asynchronously)
 DECLARE @value  -- Int32
 SET     @value = 4
 

@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- MySql.5.7 MySql.5.7.MySql.Data MySql57
+-- MySql.5.7 MySql.5.7.MySql.Data MySql57 (asynchronously)
 
 SELECT
 	`p`.`FirstName`
@@ -10,7 +10,7 @@ WHERE
 LIMIT 2
 
 BeforeExecute
--- MySql.5.7 MySql.5.7.MySql.Data MySql57
+-- MySql.5.7 MySql.5.7.MySql.Data MySql57 (asynchronously)
 DECLARE @nameToCheck VarChar(4) -- String
 SET     @nameToCheck = 'Joh%'
 
@@ -23,7 +23,7 @@ WHERE
 	`p`.`PersonID` = 1
 
 BeforeExecute
--- MySql.5.7 MySql.5.7.MySql.Data MySql57
+-- MySql.5.7 MySql.5.7.MySql.Data MySql57 (asynchronously)
 DECLARE @nameToCheck VarChar(4) -- String
 SET     @nameToCheck = 'Joh%'
 
@@ -36,7 +36,7 @@ WHERE
 	`p`.`PersonID` = 1
 
 BeforeExecute
--- MySql.5.7 MySql.5.7.MySql.Data MySql57
+-- MySql.5.7 MySql.5.7.MySql.Data MySql57 (asynchronously)
 DECLARE @nameToCheck VarChar(4) -- String
 SET     @nameToCheck = 'JOH%'
 
@@ -49,7 +49,7 @@ WHERE
 	`p`.`PersonID` = 1
 
 BeforeExecute
--- MySql.5.7 MySql.5.7.MySql.Data MySql57
+-- MySql.5.7 MySql.5.7.MySql.Data MySql57 (asynchronously)
 DECLARE @nameToCheck VarChar(4) -- String
 SET     @nameToCheck = 'JOH%'
 

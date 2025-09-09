@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2014
+-- SqlServer.2014 (asynchronously)
 
 WITH [MY_CTE] ([ChildID], [ParentID], [GrandChildID])
 AS

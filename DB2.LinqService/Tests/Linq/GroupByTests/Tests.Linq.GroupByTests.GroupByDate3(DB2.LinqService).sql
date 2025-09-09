@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- DB2 DB2.LUW DB2LUW
+-- DB2 DB2.LUW DB2LUW (asynchronously)
 
 SELECT
 	SUM("grp_1"."MoneyValue"),
@@ -17,7 +17,7 @@ GROUP BY
 	"grp_1"."Date_1"
 
 BeforeExecute
--- DB2 DB2.LUW DB2LUW
+-- DB2 DB2.LUW DB2LUW (asynchronously)
 
 SELECT
 	SUM("grp_1"."MoneyValue"),

@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Access.Jet.Odbc AccessODBC
+-- Access.Jet.Odbc AccessODBC (asynchronously)
 DECLARE @filter1 NVarChar(6) -- String
 SET     @filter1 = '%John%'
 DECLARE @filter2 NVarChar(8) -- String
@@ -41,7 +41,7 @@ ORDER BY
 	[t1].[PersonID]
 
 BeforeExecute
--- Access.Jet.Odbc AccessODBC
+-- Access.Jet.Odbc AccessODBC (asynchronously)
 
 SELECT
 	[t1].[PersonID],
@@ -50,7 +50,7 @@ FROM
 	[Patient] [t1]
 
 BeforeExecute
--- Access.Jet.Odbc AccessODBC
+-- Access.Jet.Odbc AccessODBC (asynchronously)
 
 SELECT
 	[t1].[FirstName],

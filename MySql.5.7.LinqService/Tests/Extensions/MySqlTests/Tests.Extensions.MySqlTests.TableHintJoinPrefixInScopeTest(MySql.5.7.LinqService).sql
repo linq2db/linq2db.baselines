@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- MySql.5.7 MySql.5.7.MySql.Data MySql57
+-- MySql.5.7 MySql.5.7.MySql.Data MySql57 (asynchronously)
 
 SELECT /*+ JOIN_PREFIX(p) JOIN_PREFIX(c_1) */
 	`p`.`ParentID`,

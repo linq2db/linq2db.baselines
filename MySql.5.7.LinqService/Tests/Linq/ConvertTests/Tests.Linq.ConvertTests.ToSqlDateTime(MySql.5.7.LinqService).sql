@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- MySql.5.7 MySql.5.7.MySql.Data MySql57
+-- MySql.5.7 MySql.5.7.MySql.Data MySql57 (asynchronously)
 
 SELECT
 	CAST(Concat(Extract(year from `t`.`DateTimeValue`), '-01-01 00:20:00') AS DATETIME)

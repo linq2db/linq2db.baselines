@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2008
+-- SqlServer.2008 (asynchronously)
 
 SELECT TOP (2)
 	[p].[FirstName]
@@ -9,7 +9,7 @@ WHERE
 	[p].[PersonID] = 1
 
 BeforeExecute
--- SqlServer.2008
+-- SqlServer.2008 (asynchronously)
 DECLARE @nameToCheck NVarChar(4000) -- String
 SET     @nameToCheck = N'Joh%'
 DECLARE @nameToCheck_1 NVarChar(4000) -- String
@@ -24,7 +24,7 @@ WHERE
 	[p].[PersonID] = 1
 
 BeforeExecute
--- SqlServer.2008
+-- SqlServer.2008 (asynchronously)
 DECLARE @nameToCheck NVarChar(4000) -- String
 SET     @nameToCheck = N'Joh%'
 DECLARE @nameToCheck_1 NVarChar(4000) -- String
@@ -39,7 +39,7 @@ WHERE
 	[p].[PersonID] = 1
 
 BeforeExecute
--- SqlServer.2008
+-- SqlServer.2008 (asynchronously)
 DECLARE @nameToCheck NVarChar(4000) -- String
 SET     @nameToCheck = N'JOH%'
 DECLARE @nameToCheck_1 NVarChar(4000) -- String
@@ -54,7 +54,7 @@ WHERE
 	[p].[PersonID] = 1
 
 BeforeExecute
--- SqlServer.2008
+-- SqlServer.2008 (asynchronously)
 DECLARE @nameToCheck NVarChar(4000) -- String
 SET     @nameToCheck = N'JOH%'
 DECLARE @nameToCheck_1 NVarChar(4000) -- String

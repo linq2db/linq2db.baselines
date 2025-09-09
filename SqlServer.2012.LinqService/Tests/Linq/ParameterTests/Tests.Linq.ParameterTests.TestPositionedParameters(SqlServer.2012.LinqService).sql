@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2012
+-- SqlServer.2012 (asynchronously)
 DECLARE @z2 Int -- Int32
 SET     @z2 = 2
 DECLARE @y10 Int -- Int32

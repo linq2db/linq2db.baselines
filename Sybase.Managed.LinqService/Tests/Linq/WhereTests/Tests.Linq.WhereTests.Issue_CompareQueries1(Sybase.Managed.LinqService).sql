@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Sybase.Managed Sybase
+-- Sybase.Managed Sybase (asynchronously)
 
 SELECT TOP 2
 	COUNT([p].[PersonID])
@@ -9,7 +9,7 @@ WHERE
 	[p].[PersonID] IN (1, 2)
 
 BeforeExecute
--- Sybase.Managed Sybase
+-- Sybase.Managed Sybase (asynchronously)
 
 SELECT TOP 2
 	COUNT([p].[PersonID])

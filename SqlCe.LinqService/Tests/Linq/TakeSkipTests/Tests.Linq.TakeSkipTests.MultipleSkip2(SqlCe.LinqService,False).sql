@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 
 SELECT
 	[t1].[Value] as [Value_1]
@@ -10,7 +10,7 @@ ORDER BY
 OFFSET 3 ROWS
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 
 SELECT
 	[t1].[Value] as [Value_1]

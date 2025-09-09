@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2014.MS SqlServer.2014
+-- SqlServer.2014.MS SqlServer.2014 (asynchronously)
 DECLARE @paramCopy Int -- Int32
 SET     @paramCopy = 1
 DECLARE @p Int -- Int32
@@ -41,7 +41,7 @@ WHERE
 	))
 
 BeforeExecute
--- SqlServer.2014.MS SqlServer.2014
+-- SqlServer.2014.MS SqlServer.2014 (asynchronously)
 DECLARE @p Int -- Int32
 SET     @p = 3
 DECLARE @paramCopy Int -- Int32
@@ -83,7 +83,7 @@ WHERE
 	))
 
 BeforeExecute
--- SqlServer.2014.MS SqlServer.2014
+-- SqlServer.2014.MS SqlServer.2014 (asynchronously)
 DECLARE @p Int -- Int32
 SET     @p = 4
 DECLARE @p_1 Int -- Int32
@@ -125,7 +125,7 @@ WHERE
 	))
 
 BeforeExecute
--- SqlServer.2014.MS SqlServer.2014
+-- SqlServer.2014.MS SqlServer.2014 (asynchronously)
 DECLARE @paramCopy Int -- Int32
 SET     @paramCopy = 1
 DECLARE @p Int -- Int32
@@ -167,7 +167,7 @@ WHERE
 	))
 
 BeforeExecute
--- SqlServer.2014.MS SqlServer.2014
+-- SqlServer.2014.MS SqlServer.2014 (asynchronously)
 DECLARE @p Int -- Int32
 SET     @p = 4
 DECLARE @p_1 Int -- Int32
@@ -209,7 +209,7 @@ WHERE
 	))
 
 BeforeExecute
--- SqlServer.2014.MS SqlServer.2014
+-- SqlServer.2014.MS SqlServer.2014 (asynchronously)
 DECLARE @p Int -- Int32
 SET     @p = 3
 DECLARE @paramCopy Int -- Int32

@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Firebird.3 Firebird3
+-- Firebird.3 Firebird3 (asynchronously)
 DECLARE @ParentID Integer -- Int32
 SET     @ParentID = 11
 DECLARE @Value1 Integer -- Int32

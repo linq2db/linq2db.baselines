@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2005
+-- SqlServer.2005 (asynchronously)
 DECLARE @ps NVarChar(4000) -- String
 SET     @ps = N'%~[%'
 

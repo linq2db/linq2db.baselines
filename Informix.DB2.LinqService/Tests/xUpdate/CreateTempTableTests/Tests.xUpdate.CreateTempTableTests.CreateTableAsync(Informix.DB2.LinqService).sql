@@ -24,7 +24,7 @@ FROM
 	Parent p
 
 BeforeExecute
--- Informix.DB2 Informix
+-- Informix.DB2 Informix (asynchronously)
 
 SELECT
 	t.ID

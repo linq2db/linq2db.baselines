@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Access.Jet.OleDb AccessOleDb
+-- Access.Jet.OleDb AccessOleDb (asynchronously)
 
 SELECT
 	DateSerial(DatePart('yyyy', [t].[DateTimeValue]) + 1, 10, 1)

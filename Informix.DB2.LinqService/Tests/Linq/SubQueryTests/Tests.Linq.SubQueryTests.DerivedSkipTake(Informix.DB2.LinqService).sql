@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Informix.DB2 Informix
+-- Informix.DB2 Informix (asynchronously)
 DECLARE @skip Integer(4) -- Int32
 SET     @skip = 1
 DECLARE @take Integer(4) -- Int32
@@ -18,7 +18,7 @@ FROM
 	) t2
 
 BeforeExecute
--- Informix.DB2 Informix
+-- Informix.DB2 Informix (asynchronously)
 
 SELECT
 	t1.ParentID,

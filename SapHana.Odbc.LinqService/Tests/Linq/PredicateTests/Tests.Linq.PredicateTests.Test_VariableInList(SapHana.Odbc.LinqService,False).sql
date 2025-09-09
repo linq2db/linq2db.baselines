@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+-- SapHana.Odbc SapHanaOdbc (asynchronously)
 DECLARE @One Int -- Int32
 SET     @One = 1
 
@@ -15,7 +15,7 @@ WHERE
 	? IN (0, 1)
 
 BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+-- SapHana.Odbc SapHanaOdbc (asynchronously)
 
 SELECT
 	"t1"."Id",
@@ -27,7 +27,7 @@ FROM
 	"BooleanTable" "t1"
 
 BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+-- SapHana.Odbc SapHanaOdbc (asynchronously)
 DECLARE @Zero Int -- Int32
 SET     @Zero = 0
 
@@ -43,7 +43,7 @@ WHERE
 	? IN (0, 1)
 
 BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+-- SapHana.Odbc SapHanaOdbc (asynchronously)
 
 SELECT
 	"t1"."Id",
@@ -55,7 +55,7 @@ FROM
 	"BooleanTable" "t1"
 
 BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+-- SapHana.Odbc SapHanaOdbc (asynchronously)
 DECLARE @OneN Int -- Int32
 SET     @OneN = 1
 
@@ -71,7 +71,7 @@ WHERE
 	? IN (0, 1)
 
 BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+-- SapHana.Odbc SapHanaOdbc (asynchronously)
 
 SELECT
 	"t1"."Id",
@@ -83,7 +83,7 @@ FROM
 	"BooleanTable" "t1"
 
 BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+-- SapHana.Odbc SapHanaOdbc (asynchronously)
 DECLARE @ZeroN Int -- Int32
 SET     @ZeroN = 0
 
@@ -99,7 +99,7 @@ WHERE
 	? IN (0, 1)
 
 BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+-- SapHana.Odbc SapHanaOdbc (asynchronously)
 
 SELECT
 	"t1"."Id",
@@ -111,7 +111,7 @@ FROM
 	"BooleanTable" "t1"
 
 BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+-- SapHana.Odbc SapHanaOdbc (asynchronously)
 DECLARE @Null Int -- Int32
 SET     @Null = NULL
 
@@ -127,7 +127,7 @@ WHERE
 	? IN (0, 1)
 
 BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+-- SapHana.Odbc SapHanaOdbc (asynchronously)
 
 SELECT
 	"t1"."Id",
@@ -139,7 +139,7 @@ FROM
 	"BooleanTable" "t1"
 
 BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+-- SapHana.Odbc SapHanaOdbc (asynchronously)
 DECLARE @One Int -- Int32
 SET     @One = 1
 DECLARE @One Int -- Int32
@@ -157,7 +157,7 @@ WHERE
 	(? IN (0, 1) OR ? IS NULL)
 
 BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+-- SapHana.Odbc SapHanaOdbc (asynchronously)
 
 SELECT
 	"t1"."Id",
@@ -169,7 +169,7 @@ FROM
 	"BooleanTable" "t1"
 
 BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+-- SapHana.Odbc SapHanaOdbc (asynchronously)
 DECLARE @Zero Int -- Int32
 SET     @Zero = 0
 DECLARE @Zero Int -- Int32
@@ -187,7 +187,7 @@ WHERE
 	(? IN (0, 1) OR ? IS NULL)
 
 BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+-- SapHana.Odbc SapHanaOdbc (asynchronously)
 
 SELECT
 	"t1"."Id",
@@ -199,7 +199,7 @@ FROM
 	"BooleanTable" "t1"
 
 BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+-- SapHana.Odbc SapHanaOdbc (asynchronously)
 DECLARE @OneN Int -- Int32
 SET     @OneN = 1
 DECLARE @OneN Int -- Int32
@@ -217,7 +217,7 @@ WHERE
 	(? IN (0, 1) OR ? IS NULL)
 
 BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+-- SapHana.Odbc SapHanaOdbc (asynchronously)
 
 SELECT
 	"t1"."Id",
@@ -229,7 +229,7 @@ FROM
 	"BooleanTable" "t1"
 
 BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+-- SapHana.Odbc SapHanaOdbc (asynchronously)
 DECLARE @ZeroN Int -- Int32
 SET     @ZeroN = 0
 DECLARE @ZeroN Int -- Int32
@@ -247,7 +247,7 @@ WHERE
 	(? IN (0, 1) OR ? IS NULL)
 
 BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+-- SapHana.Odbc SapHanaOdbc (asynchronously)
 
 SELECT
 	"t1"."Id",
@@ -259,7 +259,7 @@ FROM
 	"BooleanTable" "t1"
 
 BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+-- SapHana.Odbc SapHanaOdbc (asynchronously)
 DECLARE @Null Int -- Int32
 SET     @Null = NULL
 DECLARE @Null Int -- Int32
@@ -277,7 +277,7 @@ WHERE
 	(? IN (0, 1) OR ? IS NULL)
 
 BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+-- SapHana.Odbc SapHanaOdbc (asynchronously)
 
 SELECT
 	"t1"."Id",
@@ -289,7 +289,7 @@ FROM
 	"BooleanTable" "t1"
 
 BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+-- SapHana.Odbc SapHanaOdbc (asynchronously)
 DECLARE @One Int -- Int32
 SET     @One = 1
 
@@ -305,7 +305,7 @@ WHERE
 	? NOT IN (0, 1)
 
 BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+-- SapHana.Odbc SapHanaOdbc (asynchronously)
 
 SELECT
 	"t1"."Id",
@@ -317,7 +317,7 @@ FROM
 	"BooleanTable" "t1"
 
 BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+-- SapHana.Odbc SapHanaOdbc (asynchronously)
 DECLARE @Zero Int -- Int32
 SET     @Zero = 0
 
@@ -333,7 +333,7 @@ WHERE
 	? NOT IN (0, 1)
 
 BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+-- SapHana.Odbc SapHanaOdbc (asynchronously)
 
 SELECT
 	"t1"."Id",
@@ -345,7 +345,7 @@ FROM
 	"BooleanTable" "t1"
 
 BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+-- SapHana.Odbc SapHanaOdbc (asynchronously)
 DECLARE @OneN Int -- Int32
 SET     @OneN = 1
 DECLARE @OneN Int -- Int32
@@ -363,7 +363,7 @@ WHERE
 	(? NOT IN (0, 1) OR ? IS NULL)
 
 BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+-- SapHana.Odbc SapHanaOdbc (asynchronously)
 
 SELECT
 	"t1"."Id",
@@ -375,7 +375,7 @@ FROM
 	"BooleanTable" "t1"
 
 BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+-- SapHana.Odbc SapHanaOdbc (asynchronously)
 DECLARE @ZeroN Int -- Int32
 SET     @ZeroN = 0
 DECLARE @ZeroN Int -- Int32
@@ -393,7 +393,7 @@ WHERE
 	(? NOT IN (0, 1) OR ? IS NULL)
 
 BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+-- SapHana.Odbc SapHanaOdbc (asynchronously)
 
 SELECT
 	"t1"."Id",
@@ -405,7 +405,7 @@ FROM
 	"BooleanTable" "t1"
 
 BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+-- SapHana.Odbc SapHanaOdbc (asynchronously)
 DECLARE @Null Int -- Int32
 SET     @Null = NULL
 DECLARE @Null Int -- Int32
@@ -423,7 +423,7 @@ WHERE
 	(? NOT IN (0, 1) OR ? IS NULL)
 
 BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+-- SapHana.Odbc SapHanaOdbc (asynchronously)
 
 SELECT
 	"t1"."Id",
@@ -435,7 +435,7 @@ FROM
 	"BooleanTable" "t1"
 
 BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+-- SapHana.Odbc SapHanaOdbc (asynchronously)
 DECLARE @One Int -- Int32
 SET     @One = 1
 DECLARE @One Int -- Int32
@@ -453,7 +453,7 @@ WHERE
 	(? NOT IN (0, 1) AND ? IS NOT NULL)
 
 BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+-- SapHana.Odbc SapHanaOdbc (asynchronously)
 
 SELECT
 	"t1"."Id",
@@ -465,7 +465,7 @@ FROM
 	"BooleanTable" "t1"
 
 BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+-- SapHana.Odbc SapHanaOdbc (asynchronously)
 DECLARE @Zero Int -- Int32
 SET     @Zero = 0
 DECLARE @Zero Int -- Int32
@@ -483,7 +483,7 @@ WHERE
 	(? NOT IN (0, 1) AND ? IS NOT NULL)
 
 BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+-- SapHana.Odbc SapHanaOdbc (asynchronously)
 
 SELECT
 	"t1"."Id",
@@ -495,7 +495,7 @@ FROM
 	"BooleanTable" "t1"
 
 BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+-- SapHana.Odbc SapHanaOdbc (asynchronously)
 DECLARE @OneN Int -- Int32
 SET     @OneN = 1
 DECLARE @OneN Int -- Int32
@@ -513,7 +513,7 @@ WHERE
 	(? NOT IN (0, 1) AND ? IS NOT NULL)
 
 BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+-- SapHana.Odbc SapHanaOdbc (asynchronously)
 
 SELECT
 	"t1"."Id",
@@ -525,7 +525,7 @@ FROM
 	"BooleanTable" "t1"
 
 BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+-- SapHana.Odbc SapHanaOdbc (asynchronously)
 DECLARE @ZeroN Int -- Int32
 SET     @ZeroN = 0
 DECLARE @ZeroN Int -- Int32
@@ -543,7 +543,7 @@ WHERE
 	(? NOT IN (0, 1) AND ? IS NOT NULL)
 
 BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+-- SapHana.Odbc SapHanaOdbc (asynchronously)
 
 SELECT
 	"t1"."Id",
@@ -555,7 +555,7 @@ FROM
 	"BooleanTable" "t1"
 
 BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+-- SapHana.Odbc SapHanaOdbc (asynchronously)
 DECLARE @Null Int -- Int32
 SET     @Null = NULL
 DECLARE @Null Int -- Int32
@@ -573,7 +573,7 @@ WHERE
 	(? NOT IN (0, 1) AND ? IS NOT NULL)
 
 BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+-- SapHana.Odbc SapHanaOdbc (asynchronously)
 
 SELECT
 	"t1"."Id",

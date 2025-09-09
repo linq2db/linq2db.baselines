@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Oracle.18.Managed Oracle.Managed Oracle12
+-- Oracle.18.Managed Oracle.Managed Oracle12 (asynchronously)
 
 SELECT
 	NTH_VALUE(c_1."ChildID", 1) OVER(PARTITION BY p."Value1", c_1."ChildID"),

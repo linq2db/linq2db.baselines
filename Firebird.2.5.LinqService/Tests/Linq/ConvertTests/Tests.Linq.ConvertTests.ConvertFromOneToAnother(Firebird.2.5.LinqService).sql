@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Firebird.2.5 Firebird
+-- Firebird.2.5 Firebird (asynchronously)
 DECLARE @value Decimal(9, 5)
 SET     @value = 6579.64648
 
@@ -9,7 +9,7 @@ FROM
 	"LinqDataTypes" "t1"
 
 BeforeExecute
--- Firebird.2.5 Firebird
+-- Firebird.2.5 Firebird (asynchronously)
 DECLARE @value Float -- Single
 SET     @value = 6579.64648
 
@@ -19,7 +19,7 @@ FROM
 	"LinqDataTypes" "t1"
 
 BeforeExecute
--- Firebird.2.5 Firebird
+-- Firebird.2.5 Firebird (asynchronously)
 DECLARE @value Double
 SET     @value = 6579.6464800000003
 
@@ -29,7 +29,7 @@ FROM
 	"LinqDataTypes" "t1"
 
 BeforeExecute
--- Firebird.2.5 Firebird
+-- Firebird.2.5 Firebird (asynchronously)
 DECLARE @value Decimal(9, 5)
 SET     @value = 6579.64648
 
@@ -39,7 +39,7 @@ FROM
 	"LinqDataTypes" "t1"
 
 BeforeExecute
--- Firebird.2.5 Firebird
+-- Firebird.2.5 Firebird (asynchronously)
 DECLARE @value Float -- Single
 SET     @value = 6579.64648
 
@@ -49,7 +49,7 @@ FROM
 	"LinqDataTypes" "t1"
 
 BeforeExecute
--- Firebird.2.5 Firebird
+-- Firebird.2.5 Firebird (asynchronously)
 DECLARE @value Double
 SET     @value = 6579.6464800000003
 

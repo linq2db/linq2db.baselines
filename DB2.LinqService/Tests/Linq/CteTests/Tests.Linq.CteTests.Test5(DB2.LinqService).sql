@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- DB2 DB2.LUW DB2LUW
+-- DB2 DB2.LUW DB2LUW (asynchronously)
 
 WITH CTE_1 ("ParentID")
 AS
@@ -25,7 +25,7 @@ FROM
 		INNER JOIN CTE_1 "c2" ON "p"."ParentID" = "c2"."ParentID"
 
 BeforeExecute
--- DB2 DB2.LUW DB2LUW
+-- DB2 DB2.LUW DB2LUW (asynchronously)
 
 SELECT
 	COUNT(*)

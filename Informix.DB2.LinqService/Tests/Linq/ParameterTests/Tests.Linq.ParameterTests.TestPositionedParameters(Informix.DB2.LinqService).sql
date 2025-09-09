@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Informix.DB2 Informix
+-- Informix.DB2 Informix (asynchronously)
 DECLARE @z2 Integer(4) -- Int32
 SET     @z2 = 2
 DECLARE @y10 Integer(4) -- Int32

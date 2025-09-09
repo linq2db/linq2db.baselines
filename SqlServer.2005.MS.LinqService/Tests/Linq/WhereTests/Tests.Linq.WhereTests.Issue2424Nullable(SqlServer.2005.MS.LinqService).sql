@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2005.MS SqlServer.2005
+-- SqlServer.2005.MS SqlServer.2005 (asynchronously)
 
 SELECT
 	[i].[Id],
@@ -9,7 +9,7 @@ FROM
 	[Isue2424Table] [i]
 
 BeforeExecute
--- SqlServer.2005.MS SqlServer.2005
+-- SqlServer.2005.MS SqlServer.2005 (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -19,7 +19,7 @@ FROM
 	[Isue2424Table] [t1]
 
 BeforeExecute
--- SqlServer.2005.MS SqlServer.2005
+-- SqlServer.2005.MS SqlServer.2005 (asynchronously)
 
 SELECT
 	[i].[Id],
@@ -31,7 +31,7 @@ WHERE
 	[i].[StrValueNullable] >= N'1'
 
 BeforeExecute
--- SqlServer.2005.MS SqlServer.2005
+-- SqlServer.2005.MS SqlServer.2005 (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -41,7 +41,7 @@ FROM
 	[Isue2424Table] [t1]
 
 BeforeExecute
--- SqlServer.2005.MS SqlServer.2005
+-- SqlServer.2005.MS SqlServer.2005 (asynchronously)
 
 SELECT
 	[i].[Id],
@@ -53,7 +53,7 @@ WHERE
 	[i].[StrValueNullable] >= N'3'
 
 BeforeExecute
--- SqlServer.2005.MS SqlServer.2005
+-- SqlServer.2005.MS SqlServer.2005 (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -63,7 +63,7 @@ FROM
 	[Isue2424Table] [t1]
 
 BeforeExecute
--- SqlServer.2005.MS SqlServer.2005
+-- SqlServer.2005.MS SqlServer.2005 (asynchronously)
 
 SELECT
 	[i].[Id],
@@ -75,7 +75,7 @@ WHERE
 	[i].[StrValueNullable] >= N'5'
 
 BeforeExecute
--- SqlServer.2005.MS SqlServer.2005
+-- SqlServer.2005.MS SqlServer.2005 (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -85,7 +85,7 @@ FROM
 	[Isue2424Table] [t1]
 
 BeforeExecute
--- SqlServer.2005.MS SqlServer.2005
+-- SqlServer.2005.MS SqlServer.2005 (asynchronously)
 
 SELECT
 	[i].[Id],
@@ -97,7 +97,7 @@ WHERE
 	[i].[StrValueNullable] IS NULL
 
 BeforeExecute
--- SqlServer.2005.MS SqlServer.2005
+-- SqlServer.2005.MS SqlServer.2005 (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -107,7 +107,7 @@ FROM
 	[Isue2424Table] [t1]
 
 BeforeExecute
--- SqlServer.2005.MS SqlServer.2005
+-- SqlServer.2005.MS SqlServer.2005 (asynchronously)
 
 SELECT
 	[i].[Id],
@@ -119,7 +119,7 @@ WHERE
 	[i].[StrValueNullable] <= N'1' OR [i].[StrValueNullable] IS NULL
 
 BeforeExecute
--- SqlServer.2005.MS SqlServer.2005
+-- SqlServer.2005.MS SqlServer.2005 (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -129,7 +129,7 @@ FROM
 	[Isue2424Table] [t1]
 
 BeforeExecute
--- SqlServer.2005.MS SqlServer.2005
+-- SqlServer.2005.MS SqlServer.2005 (asynchronously)
 
 SELECT
 	[i].[Id],
@@ -141,7 +141,7 @@ WHERE
 	[i].[StrValueNullable] <= N'3' OR [i].[StrValueNullable] IS NULL
 
 BeforeExecute
--- SqlServer.2005.MS SqlServer.2005
+-- SqlServer.2005.MS SqlServer.2005 (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -151,7 +151,7 @@ FROM
 	[Isue2424Table] [t1]
 
 BeforeExecute
--- SqlServer.2005.MS SqlServer.2005
+-- SqlServer.2005.MS SqlServer.2005 (asynchronously)
 
 SELECT
 	[i].[Id],
@@ -163,7 +163,7 @@ WHERE
 	[i].[StrValueNullable] <= N'5' OR [i].[StrValueNullable] IS NULL
 
 BeforeExecute
--- SqlServer.2005.MS SqlServer.2005
+-- SqlServer.2005.MS SqlServer.2005 (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -173,7 +173,7 @@ FROM
 	[Isue2424Table] [t1]
 
 BeforeExecute
--- SqlServer.2005.MS SqlServer.2005
+-- SqlServer.2005.MS SqlServer.2005 (asynchronously)
 
 SELECT
 	[i].[Id],
@@ -185,7 +185,7 @@ WHERE
 	[i].[StrValueNullable] IS NOT NULL
 
 BeforeExecute
--- SqlServer.2005.MS SqlServer.2005
+-- SqlServer.2005.MS SqlServer.2005 (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -195,7 +195,7 @@ FROM
 	[Isue2424Table] [t1]
 
 BeforeExecute
--- SqlServer.2005.MS SqlServer.2005
+-- SqlServer.2005.MS SqlServer.2005 (asynchronously)
 
 SELECT
 	[i].[Id],
@@ -207,7 +207,7 @@ WHERE
 	[i].[StrValueNullable] > N'1'
 
 BeforeExecute
--- SqlServer.2005.MS SqlServer.2005
+-- SqlServer.2005.MS SqlServer.2005 (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -217,7 +217,7 @@ FROM
 	[Isue2424Table] [t1]
 
 BeforeExecute
--- SqlServer.2005.MS SqlServer.2005
+-- SqlServer.2005.MS SqlServer.2005 (asynchronously)
 
 SELECT
 	[i].[Id],
@@ -229,7 +229,7 @@ WHERE
 	[i].[StrValueNullable] > N'3'
 
 BeforeExecute
--- SqlServer.2005.MS SqlServer.2005
+-- SqlServer.2005.MS SqlServer.2005 (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -239,7 +239,7 @@ FROM
 	[Isue2424Table] [t1]
 
 BeforeExecute
--- SqlServer.2005.MS SqlServer.2005
+-- SqlServer.2005.MS SqlServer.2005 (asynchronously)
 
 SELECT
 	[i].[Id],
@@ -251,7 +251,7 @@ WHERE
 	[i].[StrValueNullable] > N'5'
 
 BeforeExecute
--- SqlServer.2005.MS SqlServer.2005
+-- SqlServer.2005.MS SqlServer.2005 (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -261,7 +261,7 @@ FROM
 	[Isue2424Table] [t1]
 
 BeforeExecute
--- SqlServer.2005.MS SqlServer.2005
+-- SqlServer.2005.MS SqlServer.2005 (asynchronously)
 
 SELECT
 	[i].[Id],
@@ -273,7 +273,7 @@ WHERE
 	1 = 0
 
 BeforeExecute
--- SqlServer.2005.MS SqlServer.2005
+-- SqlServer.2005.MS SqlServer.2005 (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -283,7 +283,7 @@ FROM
 	[Isue2424Table] [t1]
 
 BeforeExecute
--- SqlServer.2005.MS SqlServer.2005
+-- SqlServer.2005.MS SqlServer.2005 (asynchronously)
 
 SELECT
 	[i].[Id],
@@ -295,7 +295,7 @@ WHERE
 	[i].[StrValueNullable] < N'1' OR [i].[StrValueNullable] IS NULL
 
 BeforeExecute
--- SqlServer.2005.MS SqlServer.2005
+-- SqlServer.2005.MS SqlServer.2005 (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -305,7 +305,7 @@ FROM
 	[Isue2424Table] [t1]
 
 BeforeExecute
--- SqlServer.2005.MS SqlServer.2005
+-- SqlServer.2005.MS SqlServer.2005 (asynchronously)
 
 SELECT
 	[i].[Id],
@@ -317,7 +317,7 @@ WHERE
 	[i].[StrValueNullable] < N'3' OR [i].[StrValueNullable] IS NULL
 
 BeforeExecute
--- SqlServer.2005.MS SqlServer.2005
+-- SqlServer.2005.MS SqlServer.2005 (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -327,7 +327,7 @@ FROM
 	[Isue2424Table] [t1]
 
 BeforeExecute
--- SqlServer.2005.MS SqlServer.2005
+-- SqlServer.2005.MS SqlServer.2005 (asynchronously)
 
 SELECT
 	[i].[Id],
@@ -339,7 +339,7 @@ WHERE
 	[i].[StrValueNullable] < N'5' OR [i].[StrValueNullable] IS NULL
 
 BeforeExecute
--- SqlServer.2005.MS SqlServer.2005
+-- SqlServer.2005.MS SqlServer.2005 (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -349,7 +349,7 @@ FROM
 	[Isue2424Table] [t1]
 
 BeforeExecute
--- SqlServer.2005.MS SqlServer.2005
+-- SqlServer.2005.MS SqlServer.2005 (asynchronously)
 
 SELECT
 	[i].[Id],
@@ -361,7 +361,7 @@ WHERE
 	[i].[StrValueNullable] IS NULL
 
 BeforeExecute
--- SqlServer.2005.MS SqlServer.2005
+-- SqlServer.2005.MS SqlServer.2005 (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -371,7 +371,7 @@ FROM
 	[Isue2424Table] [t1]
 
 BeforeExecute
--- SqlServer.2005.MS SqlServer.2005
+-- SqlServer.2005.MS SqlServer.2005 (asynchronously)
 
 SELECT
 	[i].[Id],
@@ -383,7 +383,7 @@ WHERE
 	[i].[StrValueNullable] = N'1'
 
 BeforeExecute
--- SqlServer.2005.MS SqlServer.2005
+-- SqlServer.2005.MS SqlServer.2005 (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -393,7 +393,7 @@ FROM
 	[Isue2424Table] [t1]
 
 BeforeExecute
--- SqlServer.2005.MS SqlServer.2005
+-- SqlServer.2005.MS SqlServer.2005 (asynchronously)
 
 SELECT
 	[i].[Id],
@@ -405,7 +405,7 @@ WHERE
 	[i].[StrValueNullable] = N'3'
 
 BeforeExecute
--- SqlServer.2005.MS SqlServer.2005
+-- SqlServer.2005.MS SqlServer.2005 (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -415,7 +415,7 @@ FROM
 	[Isue2424Table] [t1]
 
 BeforeExecute
--- SqlServer.2005.MS SqlServer.2005
+-- SqlServer.2005.MS SqlServer.2005 (asynchronously)
 
 SELECT
 	[i].[Id],
@@ -427,7 +427,7 @@ WHERE
 	[i].[StrValueNullable] = N'5'
 
 BeforeExecute
--- SqlServer.2005.MS SqlServer.2005
+-- SqlServer.2005.MS SqlServer.2005 (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -437,7 +437,7 @@ FROM
 	[Isue2424Table] [t1]
 
 BeforeExecute
--- SqlServer.2005.MS SqlServer.2005
+-- SqlServer.2005.MS SqlServer.2005 (asynchronously)
 
 SELECT
 	[i].[Id],
@@ -449,7 +449,7 @@ WHERE
 	[i].[StrValueNullable] IS NOT NULL
 
 BeforeExecute
--- SqlServer.2005.MS SqlServer.2005
+-- SqlServer.2005.MS SqlServer.2005 (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -459,7 +459,7 @@ FROM
 	[Isue2424Table] [t1]
 
 BeforeExecute
--- SqlServer.2005.MS SqlServer.2005
+-- SqlServer.2005.MS SqlServer.2005 (asynchronously)
 
 SELECT
 	[i].[Id],
@@ -471,7 +471,7 @@ WHERE
 	[i].[StrValueNullable] <> N'1' OR [i].[StrValueNullable] IS NULL
 
 BeforeExecute
--- SqlServer.2005.MS SqlServer.2005
+-- SqlServer.2005.MS SqlServer.2005 (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -481,7 +481,7 @@ FROM
 	[Isue2424Table] [t1]
 
 BeforeExecute
--- SqlServer.2005.MS SqlServer.2005
+-- SqlServer.2005.MS SqlServer.2005 (asynchronously)
 
 SELECT
 	[i].[Id],
@@ -493,7 +493,7 @@ WHERE
 	[i].[StrValueNullable] <> N'3' OR [i].[StrValueNullable] IS NULL
 
 BeforeExecute
--- SqlServer.2005.MS SqlServer.2005
+-- SqlServer.2005.MS SqlServer.2005 (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -503,7 +503,7 @@ FROM
 	[Isue2424Table] [t1]
 
 BeforeExecute
--- SqlServer.2005.MS SqlServer.2005
+-- SqlServer.2005.MS SqlServer.2005 (asynchronously)
 
 SELECT
 	[i].[Id],
@@ -515,7 +515,7 @@ WHERE
 	[i].[StrValueNullable] <> N'5' OR [i].[StrValueNullable] IS NULL
 
 BeforeExecute
--- SqlServer.2005.MS SqlServer.2005
+-- SqlServer.2005.MS SqlServer.2005 (asynchronously)
 
 SELECT
 	[t1].[Id],

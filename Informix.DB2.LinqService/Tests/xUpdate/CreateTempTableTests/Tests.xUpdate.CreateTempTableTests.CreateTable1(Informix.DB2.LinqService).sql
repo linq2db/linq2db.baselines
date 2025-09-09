@@ -1,10 +1,10 @@
 ﻿BeforeExecute
--- Informix.DB2 Informix
+-- Informix.DB2 Informix (asynchronously)
 
 DROP TABLE IF EXISTS TempTable
 
 BeforeExecute
--- Informix.DB2 Informix
+-- Informix.DB2 Informix (asynchronously)
 
 CREATE TABLE IF NOT EXISTS TempTable
 (
@@ -12,7 +12,7 @@ CREATE TABLE IF NOT EXISTS TempTable
 )
 
 BeforeExecute
--- Informix.DB2 Informix
+-- Informix.DB2 Informix (asynchronously)
 
 INSERT INTO TempTable
 (
@@ -24,7 +24,7 @@ FROM
 	Parent p
 
 BeforeExecute
--- Informix.DB2 Informix
+-- Informix.DB2 Informix (asynchronously)
 
 SELECT
 	t1.ID
@@ -32,7 +32,7 @@ FROM
 	TempTable t1
 
 BeforeExecute
--- Informix.DB2 Informix
+-- Informix.DB2 Informix (asynchronously)
 
 SELECT
 	t.ID
@@ -41,7 +41,7 @@ FROM
 		INNER JOIN TempTable t ON p.ParentID = t.ID
 
 BeforeExecute
--- Informix.DB2 Informix
+-- Informix.DB2 Informix (asynchronously)
 
 DROP TABLE IF EXISTS TempTable
 

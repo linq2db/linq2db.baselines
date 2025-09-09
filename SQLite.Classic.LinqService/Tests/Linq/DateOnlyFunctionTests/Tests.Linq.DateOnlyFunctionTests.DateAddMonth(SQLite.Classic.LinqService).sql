@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SQLite.Classic SQLite
+-- SQLite.Classic SQLite (asynchronously)
 
 SELECT
 	strftime('%Y-%m-%d %H:%M:%f', [t].[TransactionDate], '2 Month')

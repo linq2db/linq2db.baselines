@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Access.Ace.OleDb AccessOleDb
+-- Access.Ace.OleDb AccessOleDb (asynchronously)
 DECLARE @Name VarWChar(4) -- String
 SET     @Name = 'John'
 DECLARE @Age Integer -- Int32
@@ -16,7 +16,7 @@ WHERE
 	[t1].[Id] = @Id
 
 BeforeExecute
--- Access.Ace.OleDb AccessOleDb
+-- Access.Ace.OleDb AccessOleDb (asynchronously)
 DECLARE @Id Integer -- Int32
 SET     @Id = 1
 DECLARE @Name VarWChar(4) -- String
@@ -38,7 +38,7 @@ VALUES
 )
 
 BeforeExecute
--- Access.Ace.OleDb AccessOleDb
+-- Access.Ace.OleDb AccessOleDb (asynchronously)
 
 SELECT TOP 1
 	[t].[Id],
@@ -50,7 +50,7 @@ WHERE
 	[t].[Id] = 1
 
 BeforeExecute
--- Access.Ace.OleDb AccessOleDb
+-- Access.Ace.OleDb AccessOleDb (asynchronously)
 DECLARE @Name VarWChar(4) -- String
 SET     @Name = 'John'
 DECLARE @Age Integer -- Int32
@@ -67,7 +67,7 @@ WHERE
 	[t1].[Id] = @Id
 
 BeforeExecute
--- Access.Ace.OleDb AccessOleDb
+-- Access.Ace.OleDb AccessOleDb (asynchronously)
 
 SELECT TOP 1
 	[t].[Id],

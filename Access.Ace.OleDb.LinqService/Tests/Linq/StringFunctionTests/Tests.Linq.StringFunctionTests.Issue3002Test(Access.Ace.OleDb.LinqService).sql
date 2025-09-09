@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Access.Ace.OleDb AccessOleDb
+-- Access.Ace.OleDb AccessOleDb (asynchronously)
 
 INSERT INTO [SampleClass]
 (
@@ -15,7 +15,7 @@ VALUES
 )
 
 BeforeExecute
--- Access.Ace.OleDb AccessOleDb
+-- Access.Ace.OleDb AccessOleDb (asynchronously)
 
 INSERT INTO [SampleClass]
 (
@@ -31,7 +31,7 @@ VALUES
 )
 
 BeforeExecute
--- Access.Ace.OleDb AccessOleDb
+-- Access.Ace.OleDb AccessOleDb (asynchronously)
 DECLARE @test VarWChar(4) -- String
 SET     @test = 'Test'
 DECLARE @test_1 VarWChar(6) -- String
@@ -45,7 +45,7 @@ WHERE
 	[sampleClass_1].[Value] = @test OR [sampleClass_1].[Value2] LIKE @test_1
 
 BeforeExecute
--- Access.Ace.OleDb AccessOleDb
+-- Access.Ace.OleDb AccessOleDb (asynchronously)
 DECLARE @test VarWChar(4) -- String
 SET     @test = 'Test'
 DECLARE @test_1 VarWChar(6) -- String
@@ -59,7 +59,7 @@ WHERE
 	[sampleClass_1].[Value] = @test OR [sampleClass_1].[Value2] LIKE @test_1
 
 BeforeExecute
--- Access.Ace.OleDb AccessOleDb
+-- Access.Ace.OleDb AccessOleDb (asynchronously)
 DECLARE @test VarWChar(5) -- String
 SET     @test = 'Value'
 DECLARE @test_1 VarWChar(7) -- String
@@ -73,7 +73,7 @@ WHERE
 	[sampleClass_1].[Value] = @test OR [sampleClass_1].[Value2] LIKE @test_1
 
 BeforeExecute
--- Access.Ace.OleDb AccessOleDb
+-- Access.Ace.OleDb AccessOleDb (asynchronously)
 DECLARE @test VarWChar(5) -- String
 SET     @test = 'Value'
 DECLARE @test_1 VarWChar(7) -- String
@@ -87,7 +87,7 @@ WHERE
 	[sampleClass_1].[Value] = @test OR [sampleClass_1].[Value2] LIKE @test_1
 
 BeforeExecute
--- Access.Ace.OleDb AccessOleDb
+-- Access.Ace.OleDb AccessOleDb (asynchronously)
 DECLARE @test VarWChar(5) -- String
 SET     @test = 'Class'
 DECLARE @test_1 VarWChar(7) -- String
@@ -101,7 +101,7 @@ WHERE
 	[sampleClass_1].[Value] = @test OR [sampleClass_1].[Value2] LIKE @test_1
 
 BeforeExecute
--- Access.Ace.OleDb AccessOleDb
+-- Access.Ace.OleDb AccessOleDb (asynchronously)
 DECLARE @test VarWChar(5) -- String
 SET     @test = 'Class'
 DECLARE @test_1 VarWChar(7) -- String

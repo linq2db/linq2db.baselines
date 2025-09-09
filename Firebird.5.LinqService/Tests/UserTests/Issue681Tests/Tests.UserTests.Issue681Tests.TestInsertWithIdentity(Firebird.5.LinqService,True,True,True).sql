@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Firebird.5 Firebird4
+-- Firebird.5 Firebird4 (asynchronously)
 DECLARE @Value Integer -- Int32
 SET     @Value = 10
 DECLARE @IDENTITY_PARAMETER Decimal

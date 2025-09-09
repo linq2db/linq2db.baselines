@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 
 SELECT TOP (2)
 	[ch].[ParentID],
@@ -8,7 +8,7 @@ FROM
 	[Child] [ch]
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 
 SELECT TOP (3)
 	[ch].[ParentID],

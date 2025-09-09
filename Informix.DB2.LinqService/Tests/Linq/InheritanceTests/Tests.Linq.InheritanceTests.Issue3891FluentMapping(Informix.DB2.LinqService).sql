@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Informix.DB2 Informix
+-- Informix.DB2 Informix (asynchronously)
 DECLARE @Id Integer(4) -- Int32
 SET     @Id = 1
 DECLARE @Type Integer(4) -- Int32
@@ -29,7 +29,7 @@ VALUES
 )
 
 BeforeExecute
--- Informix.DB2 Informix
+-- Informix.DB2 Informix (asynchronously)
 
 SELECT FIRST 2
 	t1."Type",
@@ -41,7 +41,7 @@ FROM
 	Base2 t1
 
 BeforeExecute
--- Informix.DB2 Informix
+-- Informix.DB2 Informix (asynchronously)
 DECLARE @Type Integer(4) -- Int32
 SET     @Type = 1
 DECLARE @ChildId Integer(4) -- Int32
@@ -64,7 +64,7 @@ WHERE
 	t1.Id = @Id
 
 BeforeExecute
--- Informix.DB2 Informix
+-- Informix.DB2 Informix (asynchronously)
 
 SELECT FIRST 2
 	t1."Type",

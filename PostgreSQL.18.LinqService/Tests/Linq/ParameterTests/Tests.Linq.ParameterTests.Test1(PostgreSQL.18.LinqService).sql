@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- PostgreSQL.18 PostgreSQL
+-- PostgreSQL.18 PostgreSQL (asynchronously)
 DECLARE @dt Timestamp -- DateTime2
 SET     @dt = '2020-02-29 17:54:55.123'::timestamp
 

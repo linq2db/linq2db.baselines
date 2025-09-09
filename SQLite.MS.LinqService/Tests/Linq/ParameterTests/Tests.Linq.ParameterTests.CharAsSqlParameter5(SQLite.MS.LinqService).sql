@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SQLite.MS SQLite
+-- SQLite.MS SQLite (asynchronously)
 DECLARE @s1 NChar(1) -- StringFixedLength
 SET     @s1 = char(0)
 

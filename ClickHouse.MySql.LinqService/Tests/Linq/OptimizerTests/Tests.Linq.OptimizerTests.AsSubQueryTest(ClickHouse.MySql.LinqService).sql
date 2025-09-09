@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- ClickHouse.MySql ClickHouse
+-- ClickHouse.MySql ClickHouse (asynchronously)
 
 SELECT
 	f.Key1,
@@ -40,7 +40,7 @@ FROM
 		LEFT JOIN FirstOptimizerData f ON f.Key1 = s.Key1 AND f.Key2 = s.Key2
 
 BeforeExecute
--- ClickHouse.MySql ClickHouse
+-- ClickHouse.MySql ClickHouse (asynchronously)
 
 SELECT
 	f.Key1,

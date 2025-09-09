@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2005
+-- SqlServer.2005 (asynchronously)
 DECLARE @Name NVarChar(4000) -- String
 SET     @Name = N'Test1'
 DECLARE @UpdatedBy NVarChar(4000) -- String
@@ -36,7 +36,7 @@ BEGIN
 END
 
 BeforeExecute
--- SqlServer.2005
+-- SqlServer.2005 (asynchronously)
 
 SELECT TOP (2)
 	[t1].[id],
@@ -47,7 +47,7 @@ FROM
 	[test_insert_or_replace] [t1]
 
 BeforeExecute
--- SqlServer.2005
+-- SqlServer.2005 (asynchronously)
 DECLARE @Name NVarChar(4000) -- String
 SET     @Name = N'Test2'
 DECLARE @UpdatedBy NVarChar(4000) -- String
@@ -84,7 +84,7 @@ BEGIN
 END
 
 BeforeExecute
--- SqlServer.2005
+-- SqlServer.2005 (asynchronously)
 
 SELECT TOP (2)
 	[t1].[id],

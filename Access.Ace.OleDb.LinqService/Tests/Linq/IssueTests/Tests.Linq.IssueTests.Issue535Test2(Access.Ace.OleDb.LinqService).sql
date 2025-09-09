@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Access.Ace.OleDb AccessOleDb
+-- Access.Ace.OleDb AccessOleDb (asynchronously)
 DECLARE @filter VarWChar(6) -- String
 SET     @filter = '%test%'
 DECLARE @filter_1 VarWChar(6) -- String

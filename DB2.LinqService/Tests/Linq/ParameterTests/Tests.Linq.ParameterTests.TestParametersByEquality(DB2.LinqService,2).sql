@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- DB2 DB2.LUW DB2LUW
+-- DB2 DB2.LUW DB2LUW (asynchronously)
 DECLARE @personId Integer(4) -- Int32
 SET     @personId = 1
 DECLARE @personId_1 Integer(4) -- Int32
@@ -22,7 +22,7 @@ WHERE
 	"p"."PersonID" = @personId AND "p"."PersonID" = @personId_1
 
 BeforeExecute
--- DB2 DB2.LUW DB2LUW
+-- DB2 DB2.LUW DB2LUW (asynchronously)
 DECLARE @personId Integer(4) -- Int32
 SET     @personId = 1
 DECLARE @personId_1 Integer(4) -- Int32

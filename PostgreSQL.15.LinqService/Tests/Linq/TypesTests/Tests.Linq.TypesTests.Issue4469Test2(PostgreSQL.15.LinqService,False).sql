@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- PostgreSQL.15 PostgreSQL
+-- PostgreSQL.15 PostgreSQL (asynchronously)
 DECLARE @param Numeric(2, 0) -- Decimal
 SET     @param = 33
 DECLARE @param_1 Numeric(2, 0) -- Decimal

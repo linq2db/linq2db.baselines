@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Firebird.3 Firebird3
+-- Firebird.3 Firebird3 (asynchronously)
 
 SELECT
 	"m_1"."ParentID",
@@ -18,7 +18,7 @@ FROM
 		INNER JOIN "GrandChild" "d" ON ("m_1"."ParentID" = "d"."ParentID" OR "m_1"."ParentID" IS NULL AND "d"."ParentID" IS NULL) AND ("m_1"."ChildID" = "d"."ChildID" OR "m_1"."ChildID" IS NULL AND "d"."ChildID" IS NULL)
 
 BeforeExecute
--- Firebird.3 Firebird3
+-- Firebird.3 Firebird3 (asynchronously)
 
 SELECT
 	"t1"."ParentID",

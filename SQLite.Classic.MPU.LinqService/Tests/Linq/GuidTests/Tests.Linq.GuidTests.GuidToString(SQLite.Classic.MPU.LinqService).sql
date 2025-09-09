@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
+-- SQLite.Classic.MPU SQLite.Classic SQLite (asynchronously)
 
 SELECT
 	Lower(substr(hex([t].[Id]), 7, 2) || substr(hex([t].[Id]), 5, 2) || substr(hex([t].[Id]), 3, 2) || substr(hex([t].[Id]), 1, 2) || '-' || substr(hex([t].[Id]), 11, 2) || substr(hex([t].[Id]), 9, 2) || '-' || substr(hex([t].[Id]), 15, 2) || substr(hex([t].[Id]), 13, 2) || '-' || substr(hex([t].[Id]), 17, 4) || '-' || substr(hex([t].[Id]), 21, 12))
@@ -8,7 +8,7 @@ FROM
 LIMIT 1
 
 BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
+-- SQLite.Classic.MPU SQLite.Classic SQLite (asynchronously)
 
 SELECT
 	[t].[Id],
@@ -19,7 +19,7 @@ WHERE
 	Lower(substr(hex([t].[Id]), 7, 2) || substr(hex([t].[Id]), 5, 2) || substr(hex([t].[Id]), 3, 2) || substr(hex([t].[Id]), 1, 2) || '-' || substr(hex([t].[Id]), 11, 2) || substr(hex([t].[Id]), 9, 2) || '-' || substr(hex([t].[Id]), 15, 2) || substr(hex([t].[Id]), 13, 2) || '-' || substr(hex([t].[Id]), 17, 4) || '-' || substr(hex([t].[Id]), 21, 12)) LIKE '%63d-0f%' ESCAPE '~'
 
 BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
+-- SQLite.Classic.MPU SQLite.Classic SQLite (asynchronously)
 
 SELECT
 	[t].[Id],
@@ -30,7 +30,7 @@ WHERE
 	Lower(substr(hex([t].[Id]), 7, 2) || substr(hex([t].[Id]), 5, 2) || substr(hex([t].[Id]), 3, 2) || substr(hex([t].[Id]), 1, 2) || '-' || substr(hex([t].[Id]), 11, 2) || substr(hex([t].[Id]), 9, 2) || '-' || substr(hex([t].[Id]), 15, 2) || substr(hex([t].[Id]), 13, 2) || '-' || substr(hex([t].[Id]), 17, 4) || '-' || substr(hex([t].[Id]), 21, 12)) LIKE 'bc7b6%' ESCAPE '~'
 
 BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
+-- SQLite.Classic.MPU SQLite.Classic SQLite (asynchronously)
 
 SELECT
 	[t].[Id],
@@ -41,7 +41,7 @@ WHERE
 	Lower(substr(hex([t].[Id]), 7, 2) || substr(hex([t].[Id]), 5, 2) || substr(hex([t].[Id]), 3, 2) || substr(hex([t].[Id]), 1, 2) || '-' || substr(hex([t].[Id]), 11, 2) || substr(hex([t].[Id]), 9, 2) || '-' || substr(hex([t].[Id]), 15, 2) || substr(hex([t].[Id]), 13, 2) || '-' || substr(hex([t].[Id]), 17, 4) || '-' || substr(hex([t].[Id]), 21, 12)) LIKE '%8f4-53%' ESCAPE '~'
 
 BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
+-- SQLite.Classic.MPU SQLite.Classic SQLite (asynchronously)
 
 SELECT
 	[t].[Id],

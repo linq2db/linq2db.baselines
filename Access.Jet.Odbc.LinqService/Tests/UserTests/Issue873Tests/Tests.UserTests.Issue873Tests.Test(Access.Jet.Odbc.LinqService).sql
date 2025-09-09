@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Access.Jet.Odbc AccessODBC
+-- Access.Jet.Odbc AccessODBC (asynchronously)
 
 SELECT
 	' ' + CStr(IIF([f].[Value1] IS NULL, 0, [f].[Value1])),

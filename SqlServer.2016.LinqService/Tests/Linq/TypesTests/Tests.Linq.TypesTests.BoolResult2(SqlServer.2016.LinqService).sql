@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2016
+-- SqlServer.2016 (asynchronously)
 
 SELECT
 	IIF([a_Patient].[PersonID] IS NOT NULL, 1, 0)

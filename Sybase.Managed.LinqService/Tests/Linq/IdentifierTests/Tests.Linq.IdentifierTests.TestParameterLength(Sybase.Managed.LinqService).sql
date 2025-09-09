@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Sybase.Managed Sybase
+-- Sybase.Managed Sybase (asynchronously)
 DECLARE @A123456789b123456789c12345 Integer -- Int32
 SET     @A123456789b123456789c12345 = 2
 

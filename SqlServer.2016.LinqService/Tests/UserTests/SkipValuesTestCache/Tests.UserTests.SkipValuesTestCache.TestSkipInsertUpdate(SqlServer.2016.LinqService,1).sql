@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2016
+-- SqlServer.2016 (asynchronously)
 DECLARE @Id Int -- Int32
 SET     @Id = 1
 DECLARE @Name NVarChar(4000) -- String
@@ -17,7 +17,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlServer.2016
+-- SqlServer.2016 (asynchronously)
 
 SELECT TOP (1)
 	[t].[Id],
@@ -29,7 +29,7 @@ WHERE
 	[t].[Id] = 1
 
 BeforeExecute
--- SqlServer.2016
+-- SqlServer.2016 (asynchronously)
 DECLARE @Name NVarChar(4000) -- String
 SET     @Name = N'John'
 DECLARE @Id Int -- Int32
@@ -43,7 +43,7 @@ WHERE
 	[PR_1598_Insert_Table_Cache].[Id] = @Id
 
 BeforeExecute
--- SqlServer.2016
+-- SqlServer.2016 (asynchronously)
 
 SELECT TOP (1)
 	[t].[Id],

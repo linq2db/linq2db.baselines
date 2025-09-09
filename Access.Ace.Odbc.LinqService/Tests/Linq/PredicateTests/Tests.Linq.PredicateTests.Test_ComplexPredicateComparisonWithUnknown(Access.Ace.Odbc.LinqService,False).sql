@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Access.Ace.Odbc AccessODBC
+-- Access.Ace.Odbc AccessODBC (asynchronously)
 
 SELECT
 	COUNT(*)
@@ -9,7 +9,7 @@ WHERE
 	[r].[Value1] = 1
 
 BeforeExecute
--- Access.Ace.Odbc AccessODBC
+-- Access.Ace.Odbc AccessODBC (asynchronously)
 DECLARE @cnt Int -- Int32
 SET     @cnt = 18
 
@@ -33,7 +33,7 @@ WHERE
 	[r].[Value4] IS NULL AND [r].[Value5] IS NULL
 
 BeforeExecute
--- Access.Ace.Odbc AccessODBC
+-- Access.Ace.Odbc AccessODBC (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -45,7 +45,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- Access.Ace.Odbc AccessODBC
+-- Access.Ace.Odbc AccessODBC (asynchronously)
 DECLARE @cnt Int -- Int32
 SET     @cnt = 18
 
@@ -69,7 +69,7 @@ WHERE
 	[r].[Value4] IS NULL AND [r].[Value5] IS NULL
 
 BeforeExecute
--- Access.Ace.Odbc AccessODBC
+-- Access.Ace.Odbc AccessODBC (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -81,7 +81,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- Access.Ace.Odbc AccessODBC
+-- Access.Ace.Odbc AccessODBC (asynchronously)
 DECLARE @cnt Int -- Int32
 SET     @cnt = 18
 
@@ -104,7 +104,7 @@ WHERE
 	) = ([r].[Value5] + ?))
 
 BeforeExecute
--- Access.Ace.Odbc AccessODBC
+-- Access.Ace.Odbc AccessODBC (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -116,7 +116,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- Access.Ace.Odbc AccessODBC
+-- Access.Ace.Odbc AccessODBC (asynchronously)
 DECLARE @cnt Int -- Int32
 SET     @cnt = 18
 
@@ -139,7 +139,7 @@ WHERE
 	) = ([r].[Value5] + ?))
 
 BeforeExecute
--- Access.Ace.Odbc AccessODBC
+-- Access.Ace.Odbc AccessODBC (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -151,7 +151,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- Access.Ace.Odbc AccessODBC
+-- Access.Ace.Odbc AccessODBC (asynchronously)
 DECLARE @cnt Int -- Int32
 SET     @cnt = 18
 
@@ -174,7 +174,7 @@ WHERE
 	) = ([r].[Value5] + ?)) OR [r].[Value4] IS NULL AND [r].[Value5] IS NULL) AND NOT ([r].[Value4] IS NULL AND [r].[Value5] IS NOT NULL) AND NOT ([r].[Value4] IS NOT NULL AND [r].[Value5] IS NULL))
 
 BeforeExecute
--- Access.Ace.Odbc AccessODBC
+-- Access.Ace.Odbc AccessODBC (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -186,7 +186,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- Access.Ace.Odbc AccessODBC
+-- Access.Ace.Odbc AccessODBC (asynchronously)
 DECLARE @cnt Int -- Int32
 SET     @cnt = 18
 
@@ -209,7 +209,7 @@ WHERE
 	) = ([r].[Value5] + ?)) OR [r].[Value4] IS NULL AND [r].[Value5] IS NULL) AND NOT ([r].[Value4] IS NULL AND [r].[Value5] IS NOT NULL) AND NOT ([r].[Value4] IS NOT NULL AND [r].[Value5] IS NULL))
 
 BeforeExecute
--- Access.Ace.Odbc AccessODBC
+-- Access.Ace.Odbc AccessODBC (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -221,7 +221,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- Access.Ace.Odbc AccessODBC
+-- Access.Ace.Odbc AccessODBC (asynchronously)
 DECLARE @cnt Int -- Int32
 SET     @cnt = 18
 
@@ -244,7 +244,7 @@ WHERE
 	) = ([r].[Value5] + ?)), True, False))
 
 BeforeExecute
--- Access.Ace.Odbc AccessODBC
+-- Access.Ace.Odbc AccessODBC (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -256,7 +256,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- Access.Ace.Odbc AccessODBC
+-- Access.Ace.Odbc AccessODBC (asynchronously)
 DECLARE @cnt Int -- Int32
 SET     @cnt = 18
 
@@ -279,7 +279,7 @@ WHERE
 	) = ([r].[Value5] + ?)), True, False))
 
 BeforeExecute
--- Access.Ace.Odbc AccessODBC
+-- Access.Ace.Odbc AccessODBC (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -291,7 +291,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- Access.Ace.Odbc AccessODBC
+-- Access.Ace.Odbc AccessODBC (asynchronously)
 DECLARE @cnt Int -- Int32
 SET     @cnt = 18
 
@@ -316,7 +316,7 @@ WHERE
 	[r].[Value4] IS NOT NULL AND [r].[Value5] IS NULL
 
 BeforeExecute
--- Access.Ace.Odbc AccessODBC
+-- Access.Ace.Odbc AccessODBC (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -328,7 +328,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- Access.Ace.Odbc AccessODBC
+-- Access.Ace.Odbc AccessODBC (asynchronously)
 DECLARE @cnt Int -- Int32
 SET     @cnt = 18
 
@@ -353,7 +353,7 @@ WHERE
 	[r].[Value4] IS NOT NULL AND [r].[Value5] IS NULL
 
 BeforeExecute
--- Access.Ace.Odbc AccessODBC
+-- Access.Ace.Odbc AccessODBC (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -365,7 +365,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- Access.Ace.Odbc AccessODBC
+-- Access.Ace.Odbc AccessODBC (asynchronously)
 DECLARE @cnt Int -- Int32
 SET     @cnt = 18
 
@@ -388,7 +388,7 @@ WHERE
 	) = ([r].[Value5] + ?)), False, True)
 
 BeforeExecute
--- Access.Ace.Odbc AccessODBC
+-- Access.Ace.Odbc AccessODBC (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -400,7 +400,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- Access.Ace.Odbc AccessODBC
+-- Access.Ace.Odbc AccessODBC (asynchronously)
 DECLARE @cnt Int -- Int32
 SET     @cnt = 18
 
@@ -423,7 +423,7 @@ WHERE
 	) = ([r].[Value5] + ?)), False, True)
 
 BeforeExecute
--- Access.Ace.Odbc AccessODBC
+-- Access.Ace.Odbc AccessODBC (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -435,7 +435,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- Access.Ace.Odbc AccessODBC
+-- Access.Ace.Odbc AccessODBC (asynchronously)
 DECLARE @cnt Int -- Int32
 SET     @cnt = 18
 
@@ -458,7 +458,7 @@ WHERE
 	) = ([r].[Value5] + ?)) OR [r].[Value4] IS NULL AND [r].[Value5] IS NOT NULL OR [r].[Value4] IS NOT NULL AND [r].[Value5] IS NULL) AND NOT ([r].[Value4] IS NULL AND [r].[Value5] IS NULL))
 
 BeforeExecute
--- Access.Ace.Odbc AccessODBC
+-- Access.Ace.Odbc AccessODBC (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -470,7 +470,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- Access.Ace.Odbc AccessODBC
+-- Access.Ace.Odbc AccessODBC (asynchronously)
 DECLARE @cnt Int -- Int32
 SET     @cnt = 18
 
@@ -493,7 +493,7 @@ WHERE
 	) = ([r].[Value5] + ?)) OR [r].[Value4] IS NULL AND [r].[Value5] IS NOT NULL OR [r].[Value4] IS NOT NULL AND [r].[Value5] IS NULL) AND NOT ([r].[Value4] IS NULL AND [r].[Value5] IS NULL))
 
 BeforeExecute
--- Access.Ace.Odbc AccessODBC
+-- Access.Ace.Odbc AccessODBC (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -505,7 +505,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- Access.Ace.Odbc AccessODBC
+-- Access.Ace.Odbc AccessODBC (asynchronously)
 DECLARE @cnt Int -- Int32
 SET     @cnt = 18
 
@@ -528,7 +528,7 @@ WHERE
 	) = ([r].[Value5] + ?)), False, True))
 
 BeforeExecute
--- Access.Ace.Odbc AccessODBC
+-- Access.Ace.Odbc AccessODBC (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -540,7 +540,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- Access.Ace.Odbc AccessODBC
+-- Access.Ace.Odbc AccessODBC (asynchronously)
 DECLARE @cnt Int -- Int32
 SET     @cnt = 18
 
@@ -563,7 +563,7 @@ WHERE
 	) = ([r].[Value5] + ?)), False, True))
 
 BeforeExecute
--- Access.Ace.Odbc AccessODBC
+-- Access.Ace.Odbc AccessODBC (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -575,7 +575,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- Access.Ace.Odbc AccessODBC
+-- Access.Ace.Odbc AccessODBC (asynchronously)
 DECLARE @cnt Int -- Int32
 SET     @cnt = 18
 
@@ -598,7 +598,7 @@ WHERE
 	) + [r].[Value5])
 
 BeforeExecute
--- Access.Ace.Odbc AccessODBC
+-- Access.Ace.Odbc AccessODBC (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -610,7 +610,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- Access.Ace.Odbc AccessODBC
+-- Access.Ace.Odbc AccessODBC (asynchronously)
 DECLARE @cnt Int -- Int32
 SET     @cnt = 18
 
@@ -633,7 +633,7 @@ WHERE
 	) + [r].[Value5])
 
 BeforeExecute
--- Access.Ace.Odbc AccessODBC
+-- Access.Ace.Odbc AccessODBC (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -645,7 +645,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- Access.Ace.Odbc AccessODBC
+-- Access.Ace.Odbc AccessODBC (asynchronously)
 DECLARE @cnt Int -- Int32
 SET     @cnt = 18
 
@@ -668,7 +668,7 @@ WHERE
 	) + [r].[Value5])
 
 BeforeExecute
--- Access.Ace.Odbc AccessODBC
+-- Access.Ace.Odbc AccessODBC (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -680,7 +680,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- Access.Ace.Odbc AccessODBC
+-- Access.Ace.Odbc AccessODBC (asynchronously)
 DECLARE @cnt Int -- Int32
 SET     @cnt = 18
 
@@ -703,7 +703,7 @@ WHERE
 	) + [r].[Value5])
 
 BeforeExecute
--- Access.Ace.Odbc AccessODBC
+-- Access.Ace.Odbc AccessODBC (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -715,7 +715,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- Access.Ace.Odbc AccessODBC
+-- Access.Ace.Odbc AccessODBC (asynchronously)
 DECLARE @cnt Int -- Int32
 SET     @cnt = 18
 
@@ -738,7 +738,7 @@ WHERE
 	) + [r].[Value5])
 
 BeforeExecute
--- Access.Ace.Odbc AccessODBC
+-- Access.Ace.Odbc AccessODBC (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -750,7 +750,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- Access.Ace.Odbc AccessODBC
+-- Access.Ace.Odbc AccessODBC (asynchronously)
 DECLARE @cnt Int -- Int32
 SET     @cnt = 18
 
@@ -773,7 +773,7 @@ WHERE
 	) + [r].[Value5])
 
 BeforeExecute
--- Access.Ace.Odbc AccessODBC
+-- Access.Ace.Odbc AccessODBC (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -785,7 +785,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- Access.Ace.Odbc AccessODBC
+-- Access.Ace.Odbc AccessODBC (asynchronously)
 DECLARE @cnt Int -- Int32
 SET     @cnt = 18
 
@@ -808,7 +808,7 @@ WHERE
 	) + [r].[Value5])
 
 BeforeExecute
--- Access.Ace.Odbc AccessODBC
+-- Access.Ace.Odbc AccessODBC (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -820,7 +820,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- Access.Ace.Odbc AccessODBC
+-- Access.Ace.Odbc AccessODBC (asynchronously)
 DECLARE @cnt Int -- Int32
 SET     @cnt = 18
 
@@ -843,7 +843,7 @@ WHERE
 	) + [r].[Value5])
 
 BeforeExecute
--- Access.Ace.Odbc AccessODBC
+-- Access.Ace.Odbc AccessODBC (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -855,7 +855,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- Access.Ace.Odbc AccessODBC
+-- Access.Ace.Odbc AccessODBC (asynchronously)
 DECLARE @cnt Int -- Int32
 SET     @cnt = 18
 
@@ -878,7 +878,7 @@ WHERE
 	) + [r].[Value5]), True, False))
 
 BeforeExecute
--- Access.Ace.Odbc AccessODBC
+-- Access.Ace.Odbc AccessODBC (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -890,7 +890,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- Access.Ace.Odbc AccessODBC
+-- Access.Ace.Odbc AccessODBC (asynchronously)
 DECLARE @cnt Int -- Int32
 SET     @cnt = 18
 
@@ -913,7 +913,7 @@ WHERE
 	) + [r].[Value5]), True, False))
 
 BeforeExecute
--- Access.Ace.Odbc AccessODBC
+-- Access.Ace.Odbc AccessODBC (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -925,7 +925,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- Access.Ace.Odbc AccessODBC
+-- Access.Ace.Odbc AccessODBC (asynchronously)
 DECLARE @cnt Int -- Int32
 SET     @cnt = 18
 
@@ -948,7 +948,7 @@ WHERE
 	) + [r].[Value5]), True, False))
 
 BeforeExecute
--- Access.Ace.Odbc AccessODBC
+-- Access.Ace.Odbc AccessODBC (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -960,7 +960,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- Access.Ace.Odbc AccessODBC
+-- Access.Ace.Odbc AccessODBC (asynchronously)
 DECLARE @cnt Int -- Int32
 SET     @cnt = 18
 
@@ -983,7 +983,7 @@ WHERE
 	) + [r].[Value5]), True, False))
 
 BeforeExecute
--- Access.Ace.Odbc AccessODBC
+-- Access.Ace.Odbc AccessODBC (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -995,7 +995,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- Access.Ace.Odbc AccessODBC
+-- Access.Ace.Odbc AccessODBC (asynchronously)
 DECLARE @cnt Int -- Int32
 SET     @cnt = 18
 
@@ -1018,7 +1018,7 @@ WHERE
 	) + [r].[Value5]), True, False))
 
 BeforeExecute
--- Access.Ace.Odbc AccessODBC
+-- Access.Ace.Odbc AccessODBC (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -1030,7 +1030,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- Access.Ace.Odbc AccessODBC
+-- Access.Ace.Odbc AccessODBC (asynchronously)
 DECLARE @cnt Int -- Int32
 SET     @cnt = 18
 
@@ -1053,7 +1053,7 @@ WHERE
 	) + [r].[Value5]), True, False))
 
 BeforeExecute
--- Access.Ace.Odbc AccessODBC
+-- Access.Ace.Odbc AccessODBC (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -1065,7 +1065,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- Access.Ace.Odbc AccessODBC
+-- Access.Ace.Odbc AccessODBC (asynchronously)
 DECLARE @cnt Int -- Int32
 SET     @cnt = 18
 
@@ -1088,7 +1088,7 @@ WHERE
 	) + [r].[Value5]), True, False))
 
 BeforeExecute
--- Access.Ace.Odbc AccessODBC
+-- Access.Ace.Odbc AccessODBC (asynchronously)
 
 SELECT
 	[t1].[Id],
@@ -1100,7 +1100,7 @@ FROM
 	[BooleanTable] [t1]
 
 BeforeExecute
--- Access.Ace.Odbc AccessODBC
+-- Access.Ace.Odbc AccessODBC (asynchronously)
 DECLARE @cnt Int -- Int32
 SET     @cnt = 18
 
@@ -1123,7 +1123,7 @@ WHERE
 	) + [r].[Value5]), True, False))
 
 BeforeExecute
--- Access.Ace.Odbc AccessODBC
+-- Access.Ace.Odbc AccessODBC (asynchronously)
 
 SELECT
 	[t1].[Id],

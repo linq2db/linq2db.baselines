@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Sybase.Managed Sybase
+-- Sybase.Managed Sybase (asynchronously)
 DECLARE @Name UniVarChar(5) -- String
 SET     @Name = 'Test1'
 DECLARE @UpdatedBy UniVarChar -- String
@@ -38,7 +38,7 @@ BEGIN
 END
 
 BeforeExecute
--- Sybase.Managed Sybase
+-- Sybase.Managed Sybase (asynchronously)
 
 SELECT TOP 2
 	[t1].[id],
@@ -49,7 +49,7 @@ FROM
 	[test_insert_or_replace] [t1]
 
 BeforeExecute
--- Sybase.Managed Sybase
+-- Sybase.Managed Sybase (asynchronously)
 DECLARE @Name UniVarChar(5) -- String
 SET     @Name = 'Test2'
 DECLARE @UpdatedBy UniVarChar(10) -- String
@@ -88,7 +88,7 @@ BEGIN
 END
 
 BeforeExecute
--- Sybase.Managed Sybase
+-- Sybase.Managed Sybase (asynchronously)
 
 SELECT TOP 2
 	[t1].[id],

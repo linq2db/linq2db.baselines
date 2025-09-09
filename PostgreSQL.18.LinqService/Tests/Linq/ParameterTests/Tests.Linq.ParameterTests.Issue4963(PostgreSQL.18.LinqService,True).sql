@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- PostgreSQL.18 PostgreSQL
+-- PostgreSQL.18 PostgreSQL (asynchronously)
 
 UPDATE
 	"Issue4963Table"
@@ -7,7 +7,7 @@ SET
 	"Field" = ("Issue4963Table"."Field"::Int + -1)::SmallInt
 
 BeforeExecute
--- PostgreSQL.18 PostgreSQL
+-- PostgreSQL.18 PostgreSQL (asynchronously)
 
 SELECT
 	t1."Field"

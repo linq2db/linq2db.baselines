@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2014.MS SqlServer.2014
+-- SqlServer.2014.MS SqlServer.2014 (asynchronously)
 
 SELECT TOP (1)
 	[s].[Id]
@@ -9,7 +9,7 @@ WHERE
 	[s].[Int] IN (-1, -2)
 
 BeforeExecute
--- SqlServer.2014.MS SqlServer.2014
+-- SqlServer.2014.MS SqlServer.2014 (asynchronously)
 
 SELECT TOP (1)
 	[s].[Id]
@@ -19,7 +19,7 @@ WHERE
 	[s].[Int] IN (-1, NULL)
 
 BeforeExecute
--- SqlServer.2014.MS SqlServer.2014
+-- SqlServer.2014.MS SqlServer.2014 (asynchronously)
 
 SELECT TOP (1)
 	[s].[Id]
@@ -29,7 +29,7 @@ WHERE
 	[s].[Int] IN (-1, 2)
 
 BeforeExecute
--- SqlServer.2014.MS SqlServer.2014
+-- SqlServer.2014.MS SqlServer.2014 (asynchronously)
 
 SELECT TOP (1)
 	[s].[Id]
@@ -39,7 +39,7 @@ WHERE
 	[s].[Int] NOT IN (NULL, 2)
 
 BeforeExecute
--- SqlServer.2014.MS SqlServer.2014
+-- SqlServer.2014.MS SqlServer.2014 (asynchronously)
 
 SELECT TOP (1)
 	[s].[Id]

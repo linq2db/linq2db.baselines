@@ -13,7 +13,7 @@ WHERE
 	[p].[FirstName] = 'John' OR [p].[LastName] = 'John'
 
 BeforeExecute
--- Sybase.Managed Sybase
+-- Sybase.Managed Sybase (asynchronously)
 DECLARE @firstName UniVarChar(4) -- String
 SET     @firstName = 'John'
 

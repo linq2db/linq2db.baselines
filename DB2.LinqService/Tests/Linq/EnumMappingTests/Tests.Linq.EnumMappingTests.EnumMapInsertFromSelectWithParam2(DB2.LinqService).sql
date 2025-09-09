@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- DB2 DB2.LUW DB2LUW
+-- DB2 DB2.LUW DB2LUW (asynchronously)
 DECLARE @p Integer(4) -- Int32
 SET     @p = 102
 
@@ -9,7 +9,7 @@ WHERE
 	"r".ID >= 101 AND "r".ID < @p
 
 BeforeExecute
--- DB2 DB2.LUW DB2LUW
+-- DB2 DB2.LUW DB2LUW (asynchronously)
 
 INSERT INTO "LinqDataTypes"
 (
@@ -23,7 +23,7 @@ VALUES
 )
 
 BeforeExecute
--- DB2 DB2.LUW DB2LUW
+-- DB2 DB2.LUW DB2LUW (asynchronously)
 DECLARE @param BigInt(8) -- Int64
 SET     @param = 11
 
@@ -41,7 +41,7 @@ WHERE
 	"r".ID = 101 AND "r"."BigIntValue" = 12
 
 BeforeExecute
--- DB2 DB2.LUW DB2LUW
+-- DB2 DB2.LUW DB2LUW (asynchronously)
 
 SELECT
 	COUNT(*)
@@ -51,7 +51,7 @@ WHERE
 	"r".ID = 101 AND "r"."BigIntValue" = 11
 
 BeforeExecute
--- DB2 DB2.LUW DB2LUW
+-- DB2 DB2.LUW DB2LUW (asynchronously)
 DECLARE @p Integer(4) -- Int32
 SET     @p = 102
 

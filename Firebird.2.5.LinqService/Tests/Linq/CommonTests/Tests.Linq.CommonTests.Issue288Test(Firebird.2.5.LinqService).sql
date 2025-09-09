@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Firebird.2.5 Firebird
+-- Firebird.2.5 Firebird (asynchronously)
 
 SELECT FIRST 1
 	"p"."FirstName"
@@ -9,7 +9,7 @@ WHERE
 	"p"."FirstName" IS NULL
 
 BeforeExecute
--- Firebird.2.5 Firebird
+-- Firebird.2.5 Firebird (asynchronously)
 DECLARE @p VarChar(4) -- String
 SET     @p = 'John'
 

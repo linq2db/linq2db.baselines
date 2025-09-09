@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL (asynchronously)
 DECLARE @Value4 Uuid -- Guid
 SET     @Value4 = 'bc7b663d-0fde-4327-8f92-5d8cc3a11d11'::uuid
 DECLARE @id Integer -- Int32
@@ -13,7 +13,7 @@ WHERE
 	"UpdateSetTest"."Id" = :id
 
 BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL (asynchronously)
 DECLARE @id Integer -- Int32
 SET     @id = 1
 
@@ -26,7 +26,7 @@ WHERE
 LIMIT 2
 
 BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL (asynchronously)
 DECLARE @Value4 Uuid -- Guid
 SET     @Value4 = 'a948600d-de21-4f74-8ac2-9516b287076e'::uuid
 DECLARE @id Integer -- Int32
@@ -40,7 +40,7 @@ WHERE
 	"UpdateSetTest"."Id" = :id
 
 BeforeExecute
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL (asynchronously)
 DECLARE @id Integer -- Int32
 SET     @id = 1
 

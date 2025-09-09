@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Oracle.18.Managed Oracle.Managed Oracle12
+-- Oracle.18.Managed Oracle.Managed Oracle12 (asynchronously)
 DECLARE @GrandChildID Int32
 SET     @GrandChildID = 1000
 DECLARE @ParentID Int32
@@ -13,7 +13,7 @@ WHERE
 	t1."ParentID" = :ParentID AND t1."ChildID" IS NULL
 
 BeforeExecute
--- Oracle.18.Managed Oracle.Managed Oracle12
+-- Oracle.18.Managed Oracle.Managed Oracle12 (asynchronously)
 DECLARE @GrandChildID Int32
 SET     @GrandChildID = 1000
 DECLARE @ParentID Int32

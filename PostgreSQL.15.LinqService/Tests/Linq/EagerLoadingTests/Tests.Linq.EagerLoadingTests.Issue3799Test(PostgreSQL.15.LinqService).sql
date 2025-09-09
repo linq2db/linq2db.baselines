@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- PostgreSQL.15 PostgreSQL
+-- PostgreSQL.15 PostgreSQL (asynchronously)
 
 SELECT
 	m_1."Children",
@@ -23,7 +23,7 @@ FROM
 		INNER JOIN "Test3799Item" d ON m_1."Children" = d."ParentId" OR m_1."Children" IS NULL AND d."ParentId" IS NULL
 
 BeforeExecute
--- PostgreSQL.15 PostgreSQL
+-- PostgreSQL.15 PostgreSQL (asynchronously)
 
 SELECT
 	item_1."Name",

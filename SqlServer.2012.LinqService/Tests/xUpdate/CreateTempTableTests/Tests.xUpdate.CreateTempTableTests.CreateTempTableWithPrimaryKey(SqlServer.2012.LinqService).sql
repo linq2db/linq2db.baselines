@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2012
+-- SqlServer.2012 (asynchronously)
 
 CREATE TABLE [tempdb]..[#TableWithPrimaryKey]
 (
@@ -9,7 +9,7 @@ CREATE TABLE [tempdb]..[#TableWithPrimaryKey]
 )
 
 BeforeExecute
--- SqlServer.2012
+-- SqlServer.2012 (asynchronously)
 
 IF (OBJECT_ID(N'[tempdb]..[#TableWithPrimaryKey]', N'U') IS NOT NULL)
 	DROP TABLE [tempdb]..[#TableWithPrimaryKey]

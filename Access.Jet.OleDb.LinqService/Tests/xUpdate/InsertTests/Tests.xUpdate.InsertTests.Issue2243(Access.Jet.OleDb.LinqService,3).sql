@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Access.Jet.OleDb AccessOleDb
+-- Access.Jet.OleDb AccessOleDb (asynchronously)
 DECLARE @Name VarWChar(5) -- String
 SET     @Name = 'Test1'
 DECLARE @UpdatedBy VarWChar -- String
@@ -16,7 +16,7 @@ WHERE
 	[t1].[id] = @Id
 
 BeforeExecute
--- Access.Jet.OleDb AccessOleDb
+-- Access.Jet.OleDb AccessOleDb (asynchronously)
 DECLARE @Id Integer -- Int32
 SET     @Id = 1
 DECLARE @Name VarWChar(5) -- String
@@ -38,7 +38,7 @@ VALUES
 )
 
 BeforeExecute
--- Access.Jet.OleDb AccessOleDb
+-- Access.Jet.OleDb AccessOleDb (asynchronously)
 
 SELECT TOP 2
 	[t1].[id],
@@ -49,7 +49,7 @@ FROM
 	[test_insert_or_replace] [t1]
 
 BeforeExecute
--- Access.Jet.OleDb AccessOleDb
+-- Access.Jet.OleDb AccessOleDb (asynchronously)
 DECLARE @Name VarWChar(5) -- String
 SET     @Name = 'Test2'
 DECLARE @UpdatedBy VarWChar(10) -- String
@@ -66,7 +66,7 @@ WHERE
 	[t1].[id] = @Id
 
 BeforeExecute
--- Access.Jet.OleDb AccessOleDb
+-- Access.Jet.OleDb AccessOleDb (asynchronously)
 
 SELECT TOP 2
 	[t1].[id],

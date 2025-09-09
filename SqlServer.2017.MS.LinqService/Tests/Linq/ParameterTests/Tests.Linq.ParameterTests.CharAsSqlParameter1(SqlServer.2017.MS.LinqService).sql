@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2017.MS SqlServer.2017
+-- SqlServer.2017.MS SqlServer.2017 (asynchronously)
 DECLARE @s1 NVarChar(4000) -- String
 SET     @s1 = N'0 ' + char(0) + N' '' 0'
 

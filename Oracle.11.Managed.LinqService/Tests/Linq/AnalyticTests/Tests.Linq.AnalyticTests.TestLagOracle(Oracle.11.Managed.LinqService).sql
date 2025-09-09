@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Oracle.11.Managed Oracle11
+-- Oracle.11.Managed Oracle11 (asynchronously)
 
 SELECT
 	LAG(p."Value1", 1, 0) OVER(PARTITION BY p."Value1", c_1."ChildID" ORDER BY p."Value1"),

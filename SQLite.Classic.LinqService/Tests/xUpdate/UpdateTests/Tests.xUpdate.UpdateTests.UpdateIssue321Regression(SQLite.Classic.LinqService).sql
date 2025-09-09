@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SQLite.Classic SQLite
+-- SQLite.Classic SQLite (asynchronously)
 DECLARE @ID  -- Int32
 SET     @ID = 100500
 DECLARE @MoneyValue Decimal(4, 0)
@@ -49,7 +49,7 @@ VALUES
 )
 
 BeforeExecute
--- SQLite.Classic SQLite
+-- SQLite.Classic SQLite (asynchronously)
 DECLARE @value2 Decimal(5, 0)
 SET     @value2 = 13621
 DECLARE @id  -- Int32
@@ -63,7 +63,7 @@ WHERE
 	[LinqDataTypes].[ID] = @id
 
 BeforeExecute
--- SQLite.Classic SQLite
+-- SQLite.Classic SQLite (asynchronously)
 DECLARE @id  -- Int32
 SET     @id = 100500
 

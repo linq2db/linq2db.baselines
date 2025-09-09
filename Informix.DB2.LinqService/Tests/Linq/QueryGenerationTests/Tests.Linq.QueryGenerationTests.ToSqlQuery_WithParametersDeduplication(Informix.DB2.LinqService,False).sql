@@ -15,7 +15,7 @@ WHERE
 	p.FirstName = @firstName OR p.LastName = @firstName
 
 BeforeExecute
--- Informix.DB2 Informix
+-- Informix.DB2 Informix (asynchronously)
 DECLARE @firstName VarChar(4) -- String
 SET     @firstName = 'John'
 

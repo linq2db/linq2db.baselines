@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Informix.DB2 Informix
+-- Informix.DB2 Informix (asynchronously)
 DECLARE @take Integer(4) -- Int32
 SET     @take = 2
 
@@ -10,7 +10,7 @@ FROM
 	Child ch
 
 BeforeExecute
--- Informix.DB2 Informix
+-- Informix.DB2 Informix (asynchronously)
 DECLARE @take Integer(4) -- Int32
 SET     @take = 3
 

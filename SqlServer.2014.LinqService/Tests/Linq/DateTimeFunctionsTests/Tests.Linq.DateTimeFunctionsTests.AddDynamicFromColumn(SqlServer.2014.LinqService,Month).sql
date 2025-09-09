@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2014
+-- SqlServer.2014 (asynchronously)
 
 SELECT
 	DateAdd(month, [t].[SmallIntValue], [t].[DateTimeValue])

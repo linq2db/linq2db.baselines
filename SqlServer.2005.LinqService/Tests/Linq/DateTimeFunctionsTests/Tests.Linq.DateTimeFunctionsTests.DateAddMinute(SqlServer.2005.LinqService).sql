@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2005
+-- SqlServer.2005 (asynchronously)
 
 SELECT
 	DatePart(minute, DateAdd(minute, 5, [t].[DateTimeValue]))

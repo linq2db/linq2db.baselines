@@ -1,11 +1,11 @@
 ﻿BeforeExecute
--- Sybase.Managed Sybase
+-- Sybase.Managed Sybase (asynchronously)
 
 IF (OBJECT_ID(N'FluentTemp') IS NOT NULL)
 	DROP TABLE [FluentTemp]
 
 BeforeExecute
--- Sybase.Managed Sybase
+-- Sybase.Managed Sybase (asynchronously)
 
 IF (OBJECT_ID(N'FluentTemp') IS NULL)
 	EXECUTE('
@@ -19,7 +19,7 @@ IF (OBJECT_ID(N'FluentTemp') IS NULL)
 	')
 
 BeforeExecute
--- Sybase.Managed Sybase
+-- Sybase.Managed Sybase (asynchronously)
 DECLARE @ID Integer -- Int32
 SET     @ID = 1
 DECLARE @Name UniVarChar(4) -- String
@@ -37,7 +37,7 @@ VALUES
 )
 
 BeforeExecute
--- Sybase.Managed Sybase
+-- Sybase.Managed Sybase (asynchronously)
 
 UPDATE
 	[FluentTemp]
@@ -64,7 +64,7 @@ BEGIN
 END
 
 BeforeExecute
--- Sybase.Managed Sybase
+-- Sybase.Managed Sybase (asynchronously)
 
 IF (OBJECT_ID(N'FluentTemp') IS NOT NULL)
 	DROP TABLE [FluentTemp]

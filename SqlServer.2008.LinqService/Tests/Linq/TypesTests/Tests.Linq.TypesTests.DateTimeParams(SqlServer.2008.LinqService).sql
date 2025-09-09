@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2008
+-- SqlServer.2008 (asynchronously)
 DECLARE @dateTime DateTime
 SET     @dateTime = CAST('1992-01-11T01:11:21.1000000' AS DATETIME2)
 
@@ -11,7 +11,7 @@ WHERE
 	[t].[DateTimeValue] > @dateTime
 
 BeforeExecute
--- SqlServer.2008
+-- SqlServer.2008 (asynchronously)
 DECLARE @dateTime DateTime
 SET     @dateTime = CAST('1993-01-11T01:11:21.1000000' AS DATETIME2)
 

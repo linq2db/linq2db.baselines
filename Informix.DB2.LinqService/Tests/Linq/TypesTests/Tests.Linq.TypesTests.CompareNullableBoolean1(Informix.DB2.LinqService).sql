@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Informix.DB2 Informix
+-- Informix.DB2 Informix (asynchronously)
 
 SELECT
 	t.ID,
@@ -14,7 +14,7 @@ FROM
 	LinqDataTypes t
 
 BeforeExecute
--- Informix.DB2 Informix
+-- Informix.DB2 Informix (asynchronously)
 DECLARE @param Char(1) -- StringFixedLength
 SET     @param = 't'
 

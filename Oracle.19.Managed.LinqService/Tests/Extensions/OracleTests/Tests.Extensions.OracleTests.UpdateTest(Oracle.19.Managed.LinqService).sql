@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Oracle.19.Managed Oracle.Managed Oracle12
+-- Oracle.19.Managed Oracle.Managed Oracle12 (asynchronously)
 
 UPDATE /*+ ALL_ROWS FIRST_ROWS(10) */
 	"Child" c_1

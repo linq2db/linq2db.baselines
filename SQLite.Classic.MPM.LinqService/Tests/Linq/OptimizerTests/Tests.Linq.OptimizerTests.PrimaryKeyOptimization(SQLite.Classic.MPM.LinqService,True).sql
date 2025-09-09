@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SQLite.Classic.MPM SQLite.Classic SQLite
+-- SQLite.Classic.MPM SQLite.Classic SQLite (asynchronously)
 
 SELECT
 	[s].[Key1],
@@ -18,7 +18,7 @@ FROM
 		LEFT JOIN [FirstOptimizerData] [d] ON [d].[Key1] = [s].[Key1] AND [d].[Key2] = [s].[Key2]
 
 BeforeExecute
--- SQLite.Classic.MPM SQLite.Classic SQLite
+-- SQLite.Classic.MPM SQLite.Classic SQLite (asynchronously)
 
 SELECT
 	[p].[Key1],

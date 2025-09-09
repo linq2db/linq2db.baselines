@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- PostgreSQL.18 PostgreSQL
+-- PostgreSQL.18 PostgreSQL (asynchronously)
 DECLARE @guid Text(36) -- String
 SET     @guid = 'febe3eca-cb5f-40b2-ad39-2979d312afca'
 

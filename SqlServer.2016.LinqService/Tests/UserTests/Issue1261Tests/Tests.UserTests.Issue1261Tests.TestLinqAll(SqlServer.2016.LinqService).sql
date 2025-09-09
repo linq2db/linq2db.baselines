@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2016
+-- SqlServer.2016 (asynchronously)
 
 SELECT
 	IIF(NOT EXISTS(
@@ -12,7 +12,7 @@ SELECT
 	), 1, 0)
 
 BeforeExecute
--- SqlServer.2016
+-- SqlServer.2016 (asynchronously)
 
 SELECT
 	IIF(NOT EXISTS(

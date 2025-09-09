@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Sybase.Managed Sybase
+-- Sybase.Managed Sybase (asynchronously)
 DECLARE @VBLocal_id Integer -- Int32
 SET     @VBLocal_id = 1
 

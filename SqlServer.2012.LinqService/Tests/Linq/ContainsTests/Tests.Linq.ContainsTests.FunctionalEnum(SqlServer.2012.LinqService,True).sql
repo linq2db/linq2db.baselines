@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2012
+-- SqlServer.2012 (asynchronously)
 
 SELECT TOP (1)
 	[s].[Id]
@@ -9,7 +9,7 @@ WHERE
 	[s].[Enum] IN (N'THREE', N'FOUR')
 
 BeforeExecute
--- SqlServer.2012
+-- SqlServer.2012 (asynchronously)
 
 SELECT TOP (1)
 	[s].[Id]
@@ -19,7 +19,7 @@ WHERE
 	([s].[Enum] IN (N'THREE') OR [s].[Enum] IS NULL)
 
 BeforeExecute
--- SqlServer.2012
+-- SqlServer.2012 (asynchronously)
 
 SELECT TOP (1)
 	[s].[Id]
@@ -29,7 +29,7 @@ WHERE
 	[s].[Enum] IN (N'THREE', N'TWO')
 
 BeforeExecute
--- SqlServer.2012
+-- SqlServer.2012 (asynchronously)
 
 SELECT TOP (1)
 	[s].[Id]
@@ -39,7 +39,7 @@ WHERE
 	([s].[Enum] NOT IN (N'TWO') AND [s].[Enum] IS NOT NULL)
 
 BeforeExecute
--- SqlServer.2012
+-- SqlServer.2012 (asynchronously)
 
 SELECT TOP (1)
 	[s].[Id]

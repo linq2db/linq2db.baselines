@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 
 SELECT
 	[arg].[Id],
@@ -10,7 +10,7 @@ FROM
 			SELECT 1 AS [Id], 1 AS [Value]) [arg] ON [entity].[PersonID] = [arg].[Id]
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 
 SELECT
 	[arg].[Id],

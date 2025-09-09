@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Sybase.Managed Sybase
+-- Sybase.Managed Sybase (asynchronously)
 DECLARE @filter1 UniVarChar(6) -- String
 SET     @filter1 = '%John%'
 DECLARE @filter2 UniVarChar(8) -- String
@@ -45,7 +45,7 @@ ORDER BY
 	[p].[PersonID]
 
 BeforeExecute
--- Sybase.Managed Sybase
+-- Sybase.Managed Sybase (asynchronously)
 
 SELECT
 	[t1].[PersonID],
@@ -54,7 +54,7 @@ FROM
 	[Patient] [t1]
 
 BeforeExecute
--- Sybase.Managed Sybase
+-- Sybase.Managed Sybase (asynchronously)
 
 SELECT
 	[t1].[FirstName],

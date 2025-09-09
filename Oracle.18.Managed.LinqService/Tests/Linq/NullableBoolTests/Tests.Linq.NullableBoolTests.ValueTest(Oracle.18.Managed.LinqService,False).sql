@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Oracle.18.Managed Oracle.Managed Oracle12
+-- Oracle.18.Managed Oracle.Managed Oracle12 (asynchronously)
 DECLARE @value Int16
 SET     @value = 0
 
@@ -11,7 +11,7 @@ WHERE
 	t."Value" = :value
 
 BeforeExecute
--- Oracle.18.Managed Oracle.Managed Oracle12
+-- Oracle.18.Managed Oracle.Managed Oracle12 (asynchronously)
 DECLARE @value Int16
 SET     @value = 0
 
@@ -23,7 +23,7 @@ WHERE
 	t."Value" = :value
 
 BeforeExecute
--- Oracle.18.Managed Oracle.Managed Oracle12
+-- Oracle.18.Managed Oracle.Managed Oracle12 (asynchronously)
 DECLARE @value Int16
 SET     @value = 0
 
@@ -35,7 +35,7 @@ WHERE
 	t."Value" <> :value OR t."Value" IS NULL
 
 BeforeExecute
--- Oracle.18.Managed Oracle.Managed Oracle12
+-- Oracle.18.Managed Oracle.Managed Oracle12 (asynchronously)
 DECLARE @value Int16
 SET     @value = 0
 

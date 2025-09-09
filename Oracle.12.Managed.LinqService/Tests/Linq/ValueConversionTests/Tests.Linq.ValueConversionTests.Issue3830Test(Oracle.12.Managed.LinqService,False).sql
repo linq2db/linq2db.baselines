@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Oracle.12.Managed Oracle.Managed Oracle12
+-- Oracle.12.Managed Oracle.Managed Oracle12 (asynchronously)
 DECLARE @Bool1 Char(1) -- AnsiStringFixedLength
 SET     @Bool1 = 'Y'
 
@@ -14,7 +14,7 @@ WHERE
 	r."Bool1" = :Bool1 AND r."Bool2" IS NULL AND r."Bool3" IS NULL
 
 BeforeExecute
--- Oracle.12.Managed Oracle.Managed Oracle12
+-- Oracle.12.Managed Oracle.Managed Oracle12 (asynchronously)
 DECLARE @true_value Char(1) -- AnsiStringFixedLength
 SET     @true_value = 'Y'
 
@@ -29,7 +29,7 @@ WHERE
 	r."Bool1" = :true_value AND r."Bool2" IS NULL AND r."Bool3" IS NULL
 
 BeforeExecute
--- Oracle.12.Managed Oracle.Managed Oracle12
+-- Oracle.12.Managed Oracle.Managed Oracle12 (asynchronously)
 DECLARE @Bool1 Char(1) -- AnsiStringFixedLength
 SET     @Bool1 = 'Y'
 
@@ -44,7 +44,7 @@ WHERE
 	r."Bool3" IS NULL AND r."Bool1" = :Bool1 AND r."Bool2" IS NULL
 
 BeforeExecute
--- Oracle.12.Managed Oracle.Managed Oracle12
+-- Oracle.12.Managed Oracle.Managed Oracle12 (asynchronously)
 DECLARE @Bool1 Char(1) -- AnsiStringFixedLength
 SET     @Bool1 = 'Y'
 
@@ -59,7 +59,7 @@ WHERE
 	r."Bool2" IS NULL AND r."Bool1" = :Bool1 AND r."Bool3" IS NULL
 
 BeforeExecute
--- Oracle.12.Managed Oracle.Managed Oracle12
+-- Oracle.12.Managed Oracle.Managed Oracle12 (asynchronously)
 DECLARE @Bool1 Char(1) -- AnsiStringFixedLength
 SET     @Bool1 = 'N'
 DECLARE @Bool3 Char(1) -- AnsiStringFixedLength
@@ -76,7 +76,7 @@ WHERE
 	r."Bool1" = :Bool1 AND r."Bool2" IS NULL AND r."Bool3" = :Bool3
 
 BeforeExecute
--- Oracle.12.Managed Oracle.Managed Oracle12
+-- Oracle.12.Managed Oracle.Managed Oracle12 (asynchronously)
 DECLARE @true_value Char(1) -- AnsiStringFixedLength
 SET     @true_value = 'Y'
 DECLARE @Bool1 Char(1) -- AnsiStringFixedLength
@@ -94,7 +94,7 @@ WHERE
 	r."Bool2" IS NULL
 
 BeforeExecute
--- Oracle.12.Managed Oracle.Managed Oracle12
+-- Oracle.12.Managed Oracle.Managed Oracle12 (asynchronously)
 DECLARE @false_value Char(1) -- AnsiStringFixedLength
 SET     @false_value = 'N'
 DECLARE @Bool3 Char(1) -- AnsiStringFixedLength
@@ -112,7 +112,7 @@ WHERE
 	r."Bool3" = :Bool3
 
 BeforeExecute
--- Oracle.12.Managed Oracle.Managed Oracle12
+-- Oracle.12.Managed Oracle.Managed Oracle12 (asynchronously)
 DECLARE @Bool1 Char(1) -- AnsiStringFixedLength
 SET     @Bool1 = 'N'
 DECLARE @Bool3 Char(1) -- AnsiStringFixedLength
@@ -129,7 +129,7 @@ WHERE
 	r."Bool2" IS NULL AND r."Bool1" = :Bool1 AND r."Bool3" = :Bool3
 
 BeforeExecute
--- Oracle.12.Managed Oracle.Managed Oracle12
+-- Oracle.12.Managed Oracle.Managed Oracle12 (asynchronously)
 DECLARE @Bool1 Char(1) -- AnsiStringFixedLength
 SET     @Bool1 = 'N'
 DECLARE @Bool2 Char(1) -- AnsiStringFixedLength
@@ -146,7 +146,7 @@ WHERE
 	r."Bool1" = :Bool1 AND r."Bool2" = :Bool2 AND r."Bool3" IS NULL
 
 BeforeExecute
--- Oracle.12.Managed Oracle.Managed Oracle12
+-- Oracle.12.Managed Oracle.Managed Oracle12 (asynchronously)
 DECLARE @false_value Char(1) -- AnsiStringFixedLength
 SET     @false_value = 'N'
 DECLARE @Bool2 Char(1) -- AnsiStringFixedLength
@@ -164,7 +164,7 @@ WHERE
 	r."Bool3" IS NULL
 
 BeforeExecute
--- Oracle.12.Managed Oracle.Managed Oracle12
+-- Oracle.12.Managed Oracle.Managed Oracle12 (asynchronously)
 DECLARE @Bool1 Char(1) -- AnsiStringFixedLength
 SET     @Bool1 = 'N'
 DECLARE @Bool2 Char(1) -- AnsiStringFixedLength
@@ -181,7 +181,7 @@ WHERE
 	r."Bool3" IS NULL AND r."Bool1" = :Bool1 AND r."Bool2" = :Bool2
 
 BeforeExecute
--- Oracle.12.Managed Oracle.Managed Oracle12
+-- Oracle.12.Managed Oracle.Managed Oracle12 (asynchronously)
 DECLARE @Bool1 Char(1) -- AnsiStringFixedLength
 SET     @Bool1 = 'N'
 
@@ -196,7 +196,7 @@ WHERE
 	r."Bool2" IS NOT NULL AND r."Bool1" = :Bool1 AND r."Bool3" IS NULL
 
 BeforeExecute
--- Oracle.12.Managed Oracle.Managed Oracle12
+-- Oracle.12.Managed Oracle.Managed Oracle12 (asynchronously)
 DECLARE @Bool1 Char(1) -- AnsiStringFixedLength
 SET     @Bool1 = 'Y'
 DECLARE @Bool2 Char(1) -- AnsiStringFixedLength
@@ -215,7 +215,7 @@ WHERE
 	r."Bool1" = :Bool1 AND r."Bool2" = :Bool2 AND r."Bool3" = :Bool3
 
 BeforeExecute
--- Oracle.12.Managed Oracle.Managed Oracle12
+-- Oracle.12.Managed Oracle.Managed Oracle12 (asynchronously)
 DECLARE @true_value Char(1) -- AnsiStringFixedLength
 SET     @true_value = 'Y'
 DECLARE @Bool2 Char(1) -- AnsiStringFixedLength
@@ -235,7 +235,7 @@ WHERE
 	r."Bool3" = :Bool3
 
 BeforeExecute
--- Oracle.12.Managed Oracle.Managed Oracle12
+-- Oracle.12.Managed Oracle.Managed Oracle12 (asynchronously)
 DECLARE @true_value Char(1) -- AnsiStringFixedLength
 SET     @true_value = 'Y'
 DECLARE @Bool1 Char(1) -- AnsiStringFixedLength
@@ -255,7 +255,7 @@ WHERE
 	r."Bool2" = :Bool2
 
 BeforeExecute
--- Oracle.12.Managed Oracle.Managed Oracle12
+-- Oracle.12.Managed Oracle.Managed Oracle12 (asynchronously)
 DECLARE @Bool1 Char(1) -- AnsiStringFixedLength
 SET     @Bool1 = 'Y'
 DECLARE @Bool3 Char(1) -- AnsiStringFixedLength

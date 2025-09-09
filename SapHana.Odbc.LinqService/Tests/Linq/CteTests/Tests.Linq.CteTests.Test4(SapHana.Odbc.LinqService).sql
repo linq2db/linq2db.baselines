@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+-- SapHana.Odbc SapHanaOdbc (asynchronously)
 
 WITH "CTE1_" ("ParentID")
 AS
@@ -30,7 +30,7 @@ FROM
 		INNER JOIN "LAST0" "c4_1" ON "c4_1"."ParentID" = "p"."ParentID"
 
 BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+-- SapHana.Odbc SapHanaOdbc (asynchronously)
 
 SELECT
 	"c4"."ParentID",

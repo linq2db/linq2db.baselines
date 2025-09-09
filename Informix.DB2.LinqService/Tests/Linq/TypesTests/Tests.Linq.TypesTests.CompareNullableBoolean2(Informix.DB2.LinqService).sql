@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Informix.DB2 Informix
+-- Informix.DB2 Informix (asynchronously)
 
 SELECT
 	t1.ID,
@@ -15,7 +15,7 @@ FROM
 		INNER JOIN LinqDataTypes t2 ON t1.ID = t2.ID
 
 BeforeExecute
--- Informix.DB2 Informix
+-- Informix.DB2 Informix (asynchronously)
 DECLARE @param2 Char(1) -- StringFixedLength
 SET     @param2 = 'f'
 

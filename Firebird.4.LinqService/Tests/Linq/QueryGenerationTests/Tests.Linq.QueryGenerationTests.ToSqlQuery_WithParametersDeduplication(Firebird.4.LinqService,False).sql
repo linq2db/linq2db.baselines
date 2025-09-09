@@ -15,7 +15,7 @@ WHERE
 	"p"."FirstName" = @firstName OR "p"."LastName" = @firstName
 
 BeforeExecute
--- Firebird.4 Firebird4
+-- Firebird.4 Firebird4 (asynchronously)
 DECLARE @firstName VarChar(4) -- String
 SET     @firstName = 'John'
 

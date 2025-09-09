@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- ClickHouse.MySql ClickHouse
+-- ClickHouse.MySql ClickHouse (asynchronously)
 
 CREATE TABLE IF NOT EXISTS DisposableTable
 (
@@ -8,7 +8,7 @@ CREATE TABLE IF NOT EXISTS DisposableTable
 ENGINE = Memory()
 
 BeforeExecute
--- ClickHouse.MySql ClickHouse
+-- ClickHouse.MySql ClickHouse (asynchronously)
 
 DROP TABLE IF EXISTS DisposableTable
 

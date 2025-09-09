@@ -1,11 +1,11 @@
 ﻿BeforeExecute
--- PostgreSQL.18 PostgreSQL
+-- PostgreSQL.18 PostgreSQL (asynchronously)
 
 DELETE FROM
 	"TestMergeIdentity" t1
 
 BeforeExecute
--- PostgreSQL.18 PostgreSQL
+-- PostgreSQL.18 PostgreSQL (asynchronously)
 DECLARE @Field Integer -- Int32
 SET     @Field = NULL
 
@@ -19,7 +19,7 @@ VALUES
 )
 
 BeforeExecute
--- PostgreSQL.18 PostgreSQL
+-- PostgreSQL.18 PostgreSQL (asynchronously)
 
 SELECT
 	MAX(t1."Id")
@@ -27,7 +27,7 @@ FROM
 	"TestMergeIdentity" t1
 
 BeforeExecute
--- PostgreSQL.18 PostgreSQL
+-- PostgreSQL.18 PostgreSQL (asynchronously)
 
 MERGE INTO "TestMergeIdentity" "Target"
 USING (VALUES
@@ -54,7 +54,7 @@ SET
 	"Field" = "Source"."Field"
 
 BeforeExecute
--- PostgreSQL.18 PostgreSQL
+-- PostgreSQL.18 PostgreSQL (asynchronously)
 
 SELECT
 	t1."Id",

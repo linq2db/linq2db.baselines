@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- PostgreSQL.18 PostgreSQL
+-- PostgreSQL.18 PostgreSQL (asynchronously)
 
 SELECT
 	m_1."ParentID",
@@ -16,7 +16,7 @@ FROM
 		INNER JOIN "Parent" d ON d."ParentID" = m_1."ParentID"
 
 BeforeExecute
--- PostgreSQL.18 PostgreSQL
+-- PostgreSQL.18 PostgreSQL (asynchronously)
 
 SELECT
 	"a_Parent"."ParentID"

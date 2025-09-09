@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Firebird.5 Firebird4
+-- Firebird.5 Firebird4 (asynchronously)
 DECLARE @skip Integer -- Int32
 SET     @skip = 1
 DECLARE @take Integer -- Int32
@@ -19,7 +19,7 @@ FROM
 	) "t2"
 
 BeforeExecute
--- Firebird.5 Firebird4
+-- Firebird.5 Firebird4 (asynchronously)
 
 SELECT
 	"t1"."ParentID",

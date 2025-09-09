@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Oracle.11.Managed Oracle11
+-- Oracle.11.Managed Oracle11 (asynchronously)
 
 SELECT /*+ USE_NL_WITH_INDEX(p parent_ix parent2_ix) */
 	p."ParentID",

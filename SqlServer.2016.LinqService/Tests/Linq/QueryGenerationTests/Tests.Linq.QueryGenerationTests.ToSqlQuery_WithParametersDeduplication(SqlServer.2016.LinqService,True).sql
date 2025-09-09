@@ -13,7 +13,7 @@ WHERE
 	[p].[FirstName] = N'John' OR [p].[LastName] = N'John'
 
 BeforeExecute
--- SqlServer.2016
+-- SqlServer.2016 (asynchronously)
 DECLARE @firstName NVarChar(4000) -- String
 SET     @firstName = N'John'
 

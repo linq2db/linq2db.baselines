@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+-- SapHana.Odbc SapHanaOdbc (asynchronously)
 
 SELECT
 	"m_1"."Id",
@@ -27,7 +27,7 @@ FROM
 		LEFT JOIN "Product" "a_Product" ON "d"."ProductId" = "a_Product"."Id"
 
 BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+-- SapHana.Odbc SapHanaOdbc (asynchronously)
 
 SELECT
 	"m_1"."Id",
@@ -52,7 +52,7 @@ FROM
 		INNER JOIN "AccountTax" "a_Tax" ON "d"."TaxId" = "a_Tax"."Id"
 
 BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+-- SapHana.Odbc SapHanaOdbc (asynchronously)
 
 SELECT
 	"m_1"."Id",
@@ -74,7 +74,7 @@ FROM
 		INNER JOIN "CustomInvoiceLine" "d" ON "m_1"."Id" = "d"."CustomInvoiceId"
 
 BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+-- SapHana.Odbc SapHanaOdbc (asynchronously)
 
 SELECT
 	"m_1"."Id",
@@ -102,7 +102,7 @@ FROM
 		LEFT JOIN "MeasureSource" "a_PreviousSource" ON "d"."PreviousSourceId" = "a_PreviousSource"."Id"
 
 BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+-- SapHana.Odbc SapHanaOdbc (asynchronously)
 
 SELECT
 	"m_1"."Id",
@@ -124,7 +124,7 @@ FROM
 		INNER JOIN "TypeBMeasures" "d" ON "m_1"."Id" = "d"."CustomInvoiceId"
 
 BeforeExecute
--- SapHana.Odbc SapHanaOdbc
+-- SapHana.Odbc SapHanaOdbc (asynchronously)
 
 SELECT
 	"f"."Id",

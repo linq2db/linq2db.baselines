@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Oracle.23.Managed Oracle.Managed Oracle12
+-- Oracle.23.Managed Oracle.Managed Oracle12 (asynchronously)
 DECLARE @In_1 Varchar2 -- String
 SET     @In_1 = NULL
 DECLARE @In_2 Varchar2 -- String
@@ -13,7 +13,7 @@ WHERE
 	s."CEnum" IN (:In_1, :In_2)
 
 BeforeExecute
--- Oracle.23.Managed Oracle.Managed Oracle12
+-- Oracle.23.Managed Oracle.Managed Oracle12 (asynchronously)
 DECLARE @NotIn Varchar2 -- String
 SET     @NotIn = NULL
 DECLARE @NotIn_1 Varchar2 -- String

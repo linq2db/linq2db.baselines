@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2019.MS SqlServer.2019
+-- SqlServer.2019.MS SqlServer.2019 (asynchronously)
 
 SELECT
 	[r].[Id],
@@ -12,7 +12,7 @@ WHERE
 	[r].[Bool1] = 'Y' AND [r].[Bool2] IS NULL AND [r].[Bool3] IS NULL
 
 BeforeExecute
--- SqlServer.2019.MS SqlServer.2019
+-- SqlServer.2019.MS SqlServer.2019 (asynchronously)
 
 SELECT
 	[r].[Id],
@@ -25,7 +25,7 @@ WHERE
 	[r].[Bool1] = 'Y' AND [r].[Bool2] IS NULL AND [r].[Bool3] IS NULL
 
 BeforeExecute
--- SqlServer.2019.MS SqlServer.2019
+-- SqlServer.2019.MS SqlServer.2019 (asynchronously)
 
 SELECT
 	[r].[Id],
@@ -38,7 +38,7 @@ WHERE
 	[r].[Bool3] IS NULL AND [r].[Bool1] = 'Y' AND [r].[Bool2] IS NULL
 
 BeforeExecute
--- SqlServer.2019.MS SqlServer.2019
+-- SqlServer.2019.MS SqlServer.2019 (asynchronously)
 
 SELECT
 	[r].[Id],
@@ -51,7 +51,7 @@ WHERE
 	[r].[Bool2] IS NULL AND [r].[Bool1] = 'Y' AND [r].[Bool3] IS NULL
 
 BeforeExecute
--- SqlServer.2019.MS SqlServer.2019
+-- SqlServer.2019.MS SqlServer.2019 (asynchronously)
 
 SELECT
 	[r].[Id],
@@ -64,7 +64,7 @@ WHERE
 	[r].[Bool1] = 'N' AND [r].[Bool2] IS NULL AND [r].[Bool3] = 'Y'
 
 BeforeExecute
--- SqlServer.2019.MS SqlServer.2019
+-- SqlServer.2019.MS SqlServer.2019 (asynchronously)
 
 SELECT
 	[r].[Id],
@@ -77,7 +77,7 @@ WHERE
 	[r].[Bool3] = 'Y' AND [r].[Bool1] = 'N' AND [r].[Bool2] IS NULL
 
 BeforeExecute
--- SqlServer.2019.MS SqlServer.2019
+-- SqlServer.2019.MS SqlServer.2019 (asynchronously)
 
 SELECT
 	[r].[Id],
@@ -90,7 +90,7 @@ WHERE
 	[r].[Bool1] = 'N' AND [r].[Bool2] IS NULL AND [r].[Bool3] = 'Y'
 
 BeforeExecute
--- SqlServer.2019.MS SqlServer.2019
+-- SqlServer.2019.MS SqlServer.2019 (asynchronously)
 
 SELECT
 	[r].[Id],
@@ -103,7 +103,7 @@ WHERE
 	[r].[Bool2] IS NULL AND [r].[Bool1] = 'N' AND [r].[Bool3] = 'Y'
 
 BeforeExecute
--- SqlServer.2019.MS SqlServer.2019
+-- SqlServer.2019.MS SqlServer.2019 (asynchronously)
 
 SELECT
 	[r].[Id],
@@ -116,7 +116,7 @@ WHERE
 	[r].[Bool1] = 'N' AND [r].[Bool2] = 'Y' AND [r].[Bool3] IS NULL
 
 BeforeExecute
--- SqlServer.2019.MS SqlServer.2019
+-- SqlServer.2019.MS SqlServer.2019 (asynchronously)
 
 SELECT
 	[r].[Id],
@@ -129,7 +129,7 @@ WHERE
 	[r].[Bool1] = 'N' AND [r].[Bool2] = 'Y' AND [r].[Bool3] IS NULL
 
 BeforeExecute
--- SqlServer.2019.MS SqlServer.2019
+-- SqlServer.2019.MS SqlServer.2019 (asynchronously)
 
 SELECT
 	[r].[Id],
@@ -142,7 +142,7 @@ WHERE
 	[r].[Bool3] IS NULL AND [r].[Bool1] = 'N' AND [r].[Bool2] = 'Y'
 
 BeforeExecute
--- SqlServer.2019.MS SqlServer.2019
+-- SqlServer.2019.MS SqlServer.2019 (asynchronously)
 
 SELECT
 	[r].[Id],
@@ -155,7 +155,7 @@ WHERE
 	[r].[Bool2] IS NOT NULL AND [r].[Bool1] = 'N' AND [r].[Bool3] IS NULL
 
 BeforeExecute
--- SqlServer.2019.MS SqlServer.2019
+-- SqlServer.2019.MS SqlServer.2019 (asynchronously)
 
 SELECT
 	[r].[Id],
@@ -168,7 +168,7 @@ WHERE
 	[r].[Bool1] = 'Y' AND [r].[Bool2] = 'N' AND [r].[Bool3] = 'Y'
 
 BeforeExecute
--- SqlServer.2019.MS SqlServer.2019
+-- SqlServer.2019.MS SqlServer.2019 (asynchronously)
 
 SELECT
 	[r].[Id],
@@ -181,7 +181,7 @@ WHERE
 	[r].[Bool1] = 'Y' AND [r].[Bool2] = 'N' AND [r].[Bool3] = 'Y'
 
 BeforeExecute
--- SqlServer.2019.MS SqlServer.2019
+-- SqlServer.2019.MS SqlServer.2019 (asynchronously)
 
 SELECT
 	[r].[Id],
@@ -194,7 +194,7 @@ WHERE
 	[r].[Bool3] = 'Y' AND [r].[Bool1] = 'Y' AND [r].[Bool2] = 'N'
 
 BeforeExecute
--- SqlServer.2019.MS SqlServer.2019
+-- SqlServer.2019.MS SqlServer.2019 (asynchronously)
 
 SELECT
 	[r].[Id],

@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- ClickHouse.Octonica ClickHouse
+-- ClickHouse.Octonica ClickHouse (asynchronously)
 
 SELECT
 	s.Key1,
@@ -18,7 +18,7 @@ FROM
 		LEFT JOIN FirstOptimizerData d ON d.Key1 = s.Key1 AND d.Key2 = s.Key2
 
 BeforeExecute
--- ClickHouse.Octonica ClickHouse
+-- ClickHouse.Octonica ClickHouse (asynchronously)
 
 SELECT
 	p.Key1,

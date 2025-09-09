@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL (asynchronously)
 DECLARE @is_deleted Boolean
 SET     @is_deleted = True
 
@@ -15,7 +15,7 @@ WHERE
 	ct.id = 'TestProcessService' AND component_categories.id = ctg.id
 
 BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL (asynchronously)
 
 SELECT
 	x.id,
@@ -27,7 +27,7 @@ WHERE
 	x.is_deleted AND x.service_id = 'TestProcessService'
 
 BeforeExecute
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL (asynchronously)
 
 SELECT
 	x.id,

@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SQLite.MS SQLite
+-- SQLite.MS SQLite (asynchronously)
 DECLARE @code  -- Int32
 SET     @code = 1
 DECLARE @site  -- Int32

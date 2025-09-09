@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
+-- SQLite.Classic.MPU SQLite.Classic SQLite (asynchronously)
 DECLARE @BinaryValue Binary(5)
 SET     @BinaryValue = X'0102030405'
 DECLARE @p  -- Int32
@@ -13,7 +13,7 @@ WHERE
 	[LinqDataTypes].[ID] = @p
 
 BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
+-- SQLite.Classic.MPU SQLite.Classic SQLite (asynchronously)
 DECLARE @BinaryValue Binary(5)
 SET     @BinaryValue = X'0504030201'
 DECLARE @p  -- Int32
@@ -27,7 +27,7 @@ WHERE
 	[LinqDataTypes].[ID] = @p
 
 BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
+-- SQLite.Classic.MPU SQLite.Classic SQLite (asynchronously)
 
 SELECT
 	[t].[ID],

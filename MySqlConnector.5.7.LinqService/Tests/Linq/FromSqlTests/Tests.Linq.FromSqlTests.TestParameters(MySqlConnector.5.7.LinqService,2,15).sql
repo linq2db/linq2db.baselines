@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
+-- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57 (asynchronously)
 DECLARE @p Int64
 SET     @p = 5
 DECLARE @p_1 Int32
@@ -20,7 +20,7 @@ ORDER BY
 	`c_1`.`id`
 
 BeforeExecute
--- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
+-- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57 (asynchronously)
 DECLARE @startId Int32
 SET     @startId = 5
 DECLARE @endId Int32

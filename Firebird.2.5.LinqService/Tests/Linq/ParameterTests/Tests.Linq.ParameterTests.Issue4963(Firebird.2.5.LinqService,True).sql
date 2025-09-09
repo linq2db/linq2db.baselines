@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Firebird.2.5 Firebird
+-- Firebird.2.5 Firebird (asynchronously)
 
 UPDATE
 	"Issue4963Table" "t1"
@@ -7,7 +7,7 @@ SET
 	"Field" = CAST(CAST("t1"."Field" AS Int) + -1 AS SmallInt)
 
 BeforeExecute
--- Firebird.2.5 Firebird
+-- Firebird.2.5 Firebird (asynchronously)
 
 SELECT FIRST 2
 	"t1"."Field"

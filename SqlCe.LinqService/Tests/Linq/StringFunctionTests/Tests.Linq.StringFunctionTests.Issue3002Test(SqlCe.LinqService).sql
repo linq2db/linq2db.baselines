@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 
 INSERT INTO [SampleClass]
 (
@@ -15,7 +15,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 
 INSERT INTO [SampleClass]
 (
@@ -31,7 +31,7 @@ VALUES
 )
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 DECLARE @test NVarChar(4) -- String
 SET     @test = 'Test'
 DECLARE @test_1 NVarChar(6) -- String
@@ -52,7 +52,7 @@ SELECT
 	END as [c1]
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 DECLARE @test NVarChar(4) -- String
 SET     @test = 'Test'
 DECLARE @test_1 NVarChar(6) -- String
@@ -66,7 +66,7 @@ WHERE
 	[sampleClass_1].[Value] = @test OR [sampleClass_1].[Value2] LIKE @test_1 ESCAPE '~'
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 DECLARE @test NVarChar(5) -- String
 SET     @test = 'Value'
 DECLARE @test_1 NVarChar(7) -- String
@@ -87,7 +87,7 @@ SELECT
 	END as [c1]
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 DECLARE @test NVarChar(5) -- String
 SET     @test = 'Value'
 DECLARE @test_1 NVarChar(7) -- String
@@ -101,7 +101,7 @@ WHERE
 	[sampleClass_1].[Value] = @test OR [sampleClass_1].[Value2] LIKE @test_1 ESCAPE '~'
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 DECLARE @test NVarChar(5) -- String
 SET     @test = 'Class'
 DECLARE @test_1 NVarChar(7) -- String
@@ -122,7 +122,7 @@ SELECT
 	END as [c1]
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 DECLARE @test NVarChar(5) -- String
 SET     @test = 'Class'
 DECLARE @test_1 NVarChar(7) -- String

@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MySql (asynchronously)
 DECLARE @paramCopy Int32
 SET     @paramCopy = 1
 DECLARE @p Int32
@@ -41,7 +41,7 @@ WHERE
 	))
 
 BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MySql (asynchronously)
 DECLARE @p Int32
 SET     @p = 3
 DECLARE @paramCopy Int32
@@ -83,7 +83,7 @@ WHERE
 	))
 
 BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MySql (asynchronously)
 DECLARE @p Int32
 SET     @p = 4
 DECLARE @p_1 Int32
@@ -125,7 +125,7 @@ WHERE
 	))
 
 BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MySql (asynchronously)
 DECLARE @paramCopy Int32
 SET     @paramCopy = 1
 DECLARE @p Int32
@@ -167,7 +167,7 @@ WHERE
 	))
 
 BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MySql (asynchronously)
 DECLARE @p Int32
 SET     @p = 4
 DECLARE @p_1 Int32
@@ -209,7 +209,7 @@ WHERE
 	))
 
 BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MySql (asynchronously)
 DECLARE @p Int32
 SET     @p = 3
 DECLARE @paramCopy Int32

@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 
 SELECT TOP (1)
 	[s].[Id]
@@ -9,7 +9,7 @@ WHERE
 	[s].[Enum] IN ('THREE', 'FOUR')
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 
 SELECT TOP (1)
 	[s].[Id]
@@ -19,7 +19,7 @@ WHERE
 	([s].[Enum] IN ('THREE') OR [s].[Enum] IS NULL)
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 
 SELECT TOP (1)
 	[s].[Id]
@@ -29,7 +29,7 @@ WHERE
 	[s].[Enum] IN ('THREE', 'TWO')
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 
 SELECT TOP (1)
 	[s].[Id]
@@ -39,7 +39,7 @@ WHERE
 	([s].[Enum] NOT IN ('TWO') AND [s].[Enum] IS NOT NULL)
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 
 SELECT TOP (1)
 	[s].[Id]

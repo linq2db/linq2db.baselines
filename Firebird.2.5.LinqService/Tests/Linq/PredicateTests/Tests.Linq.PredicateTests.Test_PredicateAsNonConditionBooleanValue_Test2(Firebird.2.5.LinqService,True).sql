@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Firebird.2.5 Firebird
+-- Firebird.2.5 Firebird (asynchronously)
 
 SELECT
 	"g_2"."Key_1",
@@ -18,7 +18,7 @@ GROUP BY
 	"g_2"."Key_1"
 
 BeforeExecute
--- Firebird.2.5 Firebird
+-- Firebird.2.5 Firebird (asynchronously)
 
 SELECT
 	"t1"."Id",
@@ -30,7 +30,7 @@ FROM
 	"BooleanTable" "t1"
 
 BeforeExecute
--- Firebird.2.5 Firebird
+-- Firebird.2.5 Firebird (asynchronously)
 
 SELECT
 	"g_2"."Key_1",
@@ -49,7 +49,7 @@ GROUP BY
 	"g_2"."Key_1"
 
 BeforeExecute
--- Firebird.2.5 Firebird
+-- Firebird.2.5 Firebird (asynchronously)
 
 SELECT
 	"t1"."Id",
@@ -61,7 +61,7 @@ FROM
 	"BooleanTable" "t1"
 
 BeforeExecute
--- Firebird.2.5 Firebird
+-- Firebird.2.5 Firebird (asynchronously)
 
 SELECT
 	"g_2"."Key_1",
@@ -80,7 +80,7 @@ GROUP BY
 	"g_2"."Key_1"
 
 BeforeExecute
--- Firebird.2.5 Firebird
+-- Firebird.2.5 Firebird (asynchronously)
 
 SELECT
 	"t1"."Id",
@@ -92,7 +92,7 @@ FROM
 	"BooleanTable" "t1"
 
 BeforeExecute
--- Firebird.2.5 Firebird
+-- Firebird.2.5 Firebird (asynchronously)
 
 SELECT
 	"g_2"."Key_1",
@@ -111,7 +111,7 @@ GROUP BY
 	"g_2"."Key_1"
 
 BeforeExecute
--- Firebird.2.5 Firebird
+-- Firebird.2.5 Firebird (asynchronously)
 
 SELECT
 	"t1"."Id",
@@ -123,7 +123,7 @@ FROM
 	"BooleanTable" "t1"
 
 BeforeExecute
--- Firebird.2.5 Firebird
+-- Firebird.2.5 Firebird (asynchronously)
 
 SELECT
 	"g_2"."Key_1",
@@ -142,7 +142,7 @@ GROUP BY
 	"g_2"."Key_1"
 
 BeforeExecute
--- Firebird.2.5 Firebird
+-- Firebird.2.5 Firebird (asynchronously)
 
 SELECT
 	"t1"."Id",
@@ -154,7 +154,7 @@ FROM
 	"BooleanTable" "t1"
 
 BeforeExecute
--- Firebird.2.5 Firebird
+-- Firebird.2.5 Firebird (asynchronously)
 
 SELECT
 	"g_2"."Key_1",
@@ -173,7 +173,7 @@ GROUP BY
 	"g_2"."Key_1"
 
 BeforeExecute
--- Firebird.2.5 Firebird
+-- Firebird.2.5 Firebird (asynchronously)
 
 SELECT
 	"t1"."Id",
@@ -185,7 +185,7 @@ FROM
 	"BooleanTable" "t1"
 
 BeforeExecute
--- Firebird.2.5 Firebird
+-- Firebird.2.5 Firebird (asynchronously)
 
 SELECT
 	"g_2"."Key_1",
@@ -205,7 +205,7 @@ GROUP BY
 	"g_2"."Key_1"
 
 BeforeExecute
--- Firebird.2.5 Firebird
+-- Firebird.2.5 Firebird (asynchronously)
 
 SELECT
 	"t1"."Id",
@@ -217,7 +217,7 @@ FROM
 	"BooleanTable" "t1"
 
 BeforeExecute
--- Firebird.2.5 Firebird
+-- Firebird.2.5 Firebird (asynchronously)
 
 SELECT
 	"g_2"."Key_1",
@@ -237,7 +237,7 @@ GROUP BY
 	"g_2"."Key_1"
 
 BeforeExecute
--- Firebird.2.5 Firebird
+-- Firebird.2.5 Firebird (asynchronously)
 
 SELECT
 	"t1"."Id",
@@ -249,7 +249,7 @@ FROM
 	"BooleanTable" "t1"
 
 BeforeExecute
--- Firebird.2.5 Firebird
+-- Firebird.2.5 Firebird (asynchronously)
 
 SELECT
 	"g_2"."Key_1",
@@ -268,7 +268,7 @@ GROUP BY
 	"g_2"."Key_1"
 
 BeforeExecute
--- Firebird.2.5 Firebird
+-- Firebird.2.5 Firebird (asynchronously)
 
 SELECT
 	"t1"."Id",
@@ -280,7 +280,7 @@ FROM
 	"BooleanTable" "t1"
 
 BeforeExecute
--- Firebird.2.5 Firebird
+-- Firebird.2.5 Firebird (asynchronously)
 
 SELECT
 	"g_2"."Key_1",
@@ -299,7 +299,7 @@ GROUP BY
 	"g_2"."Key_1"
 
 BeforeExecute
--- Firebird.2.5 Firebird
+-- Firebird.2.5 Firebird (asynchronously)
 
 SELECT
 	"t1"."Id",
@@ -311,7 +311,7 @@ FROM
 	"BooleanTable" "t1"
 
 BeforeExecute
--- Firebird.2.5 Firebird
+-- Firebird.2.5 Firebird (asynchronously)
 
 SELECT
 	"g_2"."Key_1",
@@ -330,7 +330,7 @@ GROUP BY
 	"g_2"."Key_1"
 
 BeforeExecute
--- Firebird.2.5 Firebird
+-- Firebird.2.5 Firebird (asynchronously)
 
 SELECT
 	"t1"."Id",
@@ -342,7 +342,7 @@ FROM
 	"BooleanTable" "t1"
 
 BeforeExecute
--- Firebird.2.5 Firebird
+-- Firebird.2.5 Firebird (asynchronously)
 
 SELECT
 	"g_2"."Key_1",
@@ -361,7 +361,7 @@ GROUP BY
 	"g_2"."Key_1"
 
 BeforeExecute
--- Firebird.2.5 Firebird
+-- Firebird.2.5 Firebird (asynchronously)
 
 SELECT
 	"t1"."Id",
@@ -373,7 +373,7 @@ FROM
 	"BooleanTable" "t1"
 
 BeforeExecute
--- Firebird.2.5 Firebird
+-- Firebird.2.5 Firebird (asynchronously)
 
 SELECT
 	"g_2"."Key_1",
@@ -392,7 +392,7 @@ GROUP BY
 	"g_2"."Key_1"
 
 BeforeExecute
--- Firebird.2.5 Firebird
+-- Firebird.2.5 Firebird (asynchronously)
 
 SELECT
 	"t1"."Id",
@@ -404,7 +404,7 @@ FROM
 	"BooleanTable" "t1"
 
 BeforeExecute
--- Firebird.2.5 Firebird
+-- Firebird.2.5 Firebird (asynchronously)
 
 SELECT
 	"g_2"."Key_1",
@@ -424,7 +424,7 @@ GROUP BY
 	"g_2"."Key_1"
 
 BeforeExecute
--- Firebird.2.5 Firebird
+-- Firebird.2.5 Firebird (asynchronously)
 
 SELECT
 	"t1"."Id",
@@ -436,7 +436,7 @@ FROM
 	"BooleanTable" "t1"
 
 BeforeExecute
--- Firebird.2.5 Firebird
+-- Firebird.2.5 Firebird (asynchronously)
 
 SELECT
 	"g_2"."Key_1",
@@ -455,7 +455,7 @@ GROUP BY
 	"g_2"."Key_1"
 
 BeforeExecute
--- Firebird.2.5 Firebird
+-- Firebird.2.5 Firebird (asynchronously)
 
 SELECT
 	"t1"."Id",
@@ -467,7 +467,7 @@ FROM
 	"BooleanTable" "t1"
 
 BeforeExecute
--- Firebird.2.5 Firebird
+-- Firebird.2.5 Firebird (asynchronously)
 
 SELECT
 	"g_2"."Key_1",
@@ -486,7 +486,7 @@ GROUP BY
 	"g_2"."Key_1"
 
 BeforeExecute
--- Firebird.2.5 Firebird
+-- Firebird.2.5 Firebird (asynchronously)
 
 SELECT
 	"t1"."Id",
@@ -498,7 +498,7 @@ FROM
 	"BooleanTable" "t1"
 
 BeforeExecute
--- Firebird.2.5 Firebird
+-- Firebird.2.5 Firebird (asynchronously)
 
 SELECT
 	"g_2"."Key_1",
@@ -517,7 +517,7 @@ GROUP BY
 	"g_2"."Key_1"
 
 BeforeExecute
--- Firebird.2.5 Firebird
+-- Firebird.2.5 Firebird (asynchronously)
 
 SELECT
 	"t1"."Id",
@@ -529,7 +529,7 @@ FROM
 	"BooleanTable" "t1"
 
 BeforeExecute
--- Firebird.2.5 Firebird
+-- Firebird.2.5 Firebird (asynchronously)
 
 SELECT
 	"g_2"."Key_1",
@@ -548,7 +548,7 @@ GROUP BY
 	"g_2"."Key_1"
 
 BeforeExecute
--- Firebird.2.5 Firebird
+-- Firebird.2.5 Firebird (asynchronously)
 
 SELECT
 	"t1"."Id",
@@ -560,7 +560,7 @@ FROM
 	"BooleanTable" "t1"
 
 BeforeExecute
--- Firebird.2.5 Firebird
+-- Firebird.2.5 Firebird (asynchronously)
 
 SELECT
 	"g_2"."Key_1",
@@ -579,7 +579,7 @@ GROUP BY
 	"g_2"."Key_1"
 
 BeforeExecute
--- Firebird.2.5 Firebird
+-- Firebird.2.5 Firebird (asynchronously)
 
 SELECT
 	"t1"."Id",
@@ -591,7 +591,7 @@ FROM
 	"BooleanTable" "t1"
 
 BeforeExecute
--- Firebird.2.5 Firebird
+-- Firebird.2.5 Firebird (asynchronously)
 
 SELECT
 	"g_2"."Key_1",
@@ -611,7 +611,7 @@ GROUP BY
 	"g_2"."Key_1"
 
 BeforeExecute
--- Firebird.2.5 Firebird
+-- Firebird.2.5 Firebird (asynchronously)
 
 SELECT
 	"t1"."Id",
@@ -623,7 +623,7 @@ FROM
 	"BooleanTable" "t1"
 
 BeforeExecute
--- Firebird.2.5 Firebird
+-- Firebird.2.5 Firebird (asynchronously)
 
 SELECT
 	"g_2"."Key_1",
@@ -642,7 +642,7 @@ GROUP BY
 	"g_2"."Key_1"
 
 BeforeExecute
--- Firebird.2.5 Firebird
+-- Firebird.2.5 Firebird (asynchronously)
 
 SELECT
 	"t1"."Id",
@@ -654,7 +654,7 @@ FROM
 	"BooleanTable" "t1"
 
 BeforeExecute
--- Firebird.2.5 Firebird
+-- Firebird.2.5 Firebird (asynchronously)
 
 SELECT
 	"g_2"."Key_1",
@@ -673,7 +673,7 @@ GROUP BY
 	"g_2"."Key_1"
 
 BeforeExecute
--- Firebird.2.5 Firebird
+-- Firebird.2.5 Firebird (asynchronously)
 
 SELECT
 	"t1"."Id",
@@ -685,7 +685,7 @@ FROM
 	"BooleanTable" "t1"
 
 BeforeExecute
--- Firebird.2.5 Firebird
+-- Firebird.2.5 Firebird (asynchronously)
 
 SELECT
 	"g_2"."Key_1",
@@ -704,7 +704,7 @@ GROUP BY
 	"g_2"."Key_1"
 
 BeforeExecute
--- Firebird.2.5 Firebird
+-- Firebird.2.5 Firebird (asynchronously)
 
 SELECT
 	"t1"."Id",
@@ -716,7 +716,7 @@ FROM
 	"BooleanTable" "t1"
 
 BeforeExecute
--- Firebird.2.5 Firebird
+-- Firebird.2.5 Firebird (asynchronously)
 
 SELECT
 	"g_2"."Key_1",
@@ -735,7 +735,7 @@ GROUP BY
 	"g_2"."Key_1"
 
 BeforeExecute
--- Firebird.2.5 Firebird
+-- Firebird.2.5 Firebird (asynchronously)
 
 SELECT
 	"t1"."Id",

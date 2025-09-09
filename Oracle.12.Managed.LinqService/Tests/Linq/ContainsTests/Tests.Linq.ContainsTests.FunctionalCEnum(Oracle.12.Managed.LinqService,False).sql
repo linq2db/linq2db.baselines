@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Oracle.12.Managed Oracle.Managed Oracle12
+-- Oracle.12.Managed Oracle.Managed Oracle12 (asynchronously)
 DECLARE @In_1 Varchar2(12) -- String
 SET     @In_1 = '___Value3___'
 DECLARE @In_2 Varchar2(12) -- String
@@ -14,7 +14,7 @@ WHERE
 FETCH NEXT 1 ROWS ONLY
 
 BeforeExecute
--- Oracle.12.Managed Oracle.Managed Oracle12
+-- Oracle.12.Managed Oracle.Managed Oracle12 (asynchronously)
 DECLARE @In_1 Varchar2(12) -- String
 SET     @In_1 = '___Value3___'
 DECLARE @In_2 Varchar2 -- String
@@ -29,7 +29,7 @@ WHERE
 FETCH NEXT 1 ROWS ONLY
 
 BeforeExecute
--- Oracle.12.Managed Oracle.Managed Oracle12
+-- Oracle.12.Managed Oracle.Managed Oracle12 (asynchronously)
 DECLARE @In_1 Varchar2(12) -- String
 SET     @In_1 = '___Value3___'
 DECLARE @In_2 Varchar2(12) -- String
@@ -44,7 +44,7 @@ WHERE
 FETCH NEXT 1 ROWS ONLY
 
 BeforeExecute
--- Oracle.12.Managed Oracle.Managed Oracle12
+-- Oracle.12.Managed Oracle.Managed Oracle12 (asynchronously)
 DECLARE @NotIn Varchar2 -- String
 SET     @NotIn = NULL
 DECLARE @NotIn_1 Varchar2(12) -- String
@@ -59,7 +59,7 @@ WHERE
 FETCH NEXT 1 ROWS ONLY
 
 BeforeExecute
--- Oracle.12.Managed Oracle.Managed Oracle12
+-- Oracle.12.Managed Oracle.Managed Oracle12 (asynchronously)
 DECLARE @NotIn Varchar2(12) -- String
 SET     @NotIn = '___Value3___'
 DECLARE @NotIn_1 Varchar2(12) -- String

@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Oracle.11.Managed Oracle11
+-- Oracle.11.Managed Oracle11 (asynchronously)
 
 SELECT /*+ NO_PARALLEL(p) NO_PARALLEL(c_1) */
 	p."ParentID",

@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- ClickHouse.Driver ClickHouse
+-- ClickHouse.Driver ClickHouse (asynchronously)
 
 INSERT INTO ConcurrencyAutoIncrement
 (
@@ -15,7 +15,7 @@ VALUES
 )
 
 BeforeExecute
--- ClickHouse.Driver ClickHouse
+-- ClickHouse.Driver ClickHouse (asynchronously)
 
 SELECT
 	t1.Id,
@@ -25,7 +25,7 @@ FROM
 	ConcurrencyAutoIncrement t1
 
 BeforeExecute
--- ClickHouse.Driver ClickHouse
+-- ClickHouse.Driver ClickHouse (asynchronously)
 
 ALTER TABLE
 	ConcurrencyAutoIncrement
@@ -36,7 +36,7 @@ WHERE
 	Id = 1 AND Stamp = -10
 
 BeforeExecute
--- ClickHouse.Driver ClickHouse
+-- ClickHouse.Driver ClickHouse (asynchronously)
 
 SELECT
 	t1.Id,
@@ -46,7 +46,7 @@ FROM
 	ConcurrencyAutoIncrement t1
 
 BeforeExecute
--- ClickHouse.Driver ClickHouse
+-- ClickHouse.Driver ClickHouse (asynchronously)
 
 ALTER TABLE
 	ConcurrencyAutoIncrement
@@ -57,7 +57,7 @@ WHERE
 	Id = 1 AND Stamp = -9
 
 BeforeExecute
--- ClickHouse.Driver ClickHouse
+-- ClickHouse.Driver ClickHouse (asynchronously)
 
 SELECT
 	t1.Id,
@@ -67,7 +67,7 @@ FROM
 	ConcurrencyAutoIncrement t1
 
 BeforeExecute
--- ClickHouse.Driver ClickHouse
+-- ClickHouse.Driver ClickHouse (asynchronously)
 
 ALTER TABLE
 	ConcurrencyAutoIncrement
@@ -78,7 +78,7 @@ WHERE
 	Id = 1 AND Stamp = -9
 
 BeforeExecute
--- ClickHouse.Driver ClickHouse
+-- ClickHouse.Driver ClickHouse (asynchronously)
 
 SELECT
 	t1.Id,
@@ -88,7 +88,7 @@ FROM
 	ConcurrencyAutoIncrement t1
 
 BeforeExecute
--- ClickHouse.Driver ClickHouse
+-- ClickHouse.Driver ClickHouse (asynchronously)
 
 ALTER TABLE
 	ConcurrencyAutoIncrement
@@ -96,7 +96,7 @@ DELETE WHERE
 	Id = 1 AND Stamp = -9
 
 BeforeExecute
--- ClickHouse.Driver ClickHouse
+-- ClickHouse.Driver ClickHouse (asynchronously)
 
 SELECT
 	t1.Id,
@@ -106,7 +106,7 @@ FROM
 	ConcurrencyAutoIncrement t1
 
 BeforeExecute
--- ClickHouse.Driver ClickHouse
+-- ClickHouse.Driver ClickHouse (asynchronously)
 
 ALTER TABLE
 	ConcurrencyAutoIncrement
@@ -114,7 +114,7 @@ DELETE WHERE
 	Id = 1 AND Stamp = -8
 
 BeforeExecute
--- ClickHouse.Driver ClickHouse
+-- ClickHouse.Driver ClickHouse (asynchronously)
 
 SELECT
 	t1.Id,

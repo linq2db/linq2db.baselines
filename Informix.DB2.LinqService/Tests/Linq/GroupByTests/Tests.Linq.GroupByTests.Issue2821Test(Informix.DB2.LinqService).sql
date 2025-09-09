@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Informix.DB2 Informix
+-- Informix.DB2 Informix (asynchronously)
 DECLARE @currentDate Timestamp(16) -- DateTime
 SET     @currentDate = TO_DATE('2020-02-29 17:54:55.12312', '%Y-%m-%d %H:%M:%S.%F5')
 DECLARE @currentDate_1 Timestamp(16) -- DateTime

@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SqlServer.2005
+-- SqlServer.2005 (asynchronously)
 DECLARE @skip Int -- Int32
 SET     @skip = 1
 DECLARE @skip_1 Int -- Int32
@@ -25,7 +25,7 @@ ORDER BY
 	[t2].[ChildID]
 
 BeforeExecute
--- SqlServer.2005
+-- SqlServer.2005 (asynchronously)
 DECLARE @skip Int -- Int32
 SET     @skip = 1
 DECLARE @skip_1 Int -- Int32

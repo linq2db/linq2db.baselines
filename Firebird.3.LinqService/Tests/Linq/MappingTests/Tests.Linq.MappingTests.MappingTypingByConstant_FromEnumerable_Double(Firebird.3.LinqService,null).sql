@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Firebird.3 Firebird3
+-- Firebird.3 Firebird3 (asynchronously)
 
 SELECT
 	"arg"."Id",
@@ -10,7 +10,7 @@ FROM
 			SELECT 1 AS "Id", CAST(NULL AS Float) AS "Value" FROM rdb$database) "arg" ON "entity"."PersonID" = "arg"."Id"
 
 BeforeExecute
--- Firebird.3 Firebird3
+-- Firebird.3 Firebird3 (asynchronously)
 
 SELECT
 	"arg"."Id",

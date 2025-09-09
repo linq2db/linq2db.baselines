@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- SQLite.Classic SQLite
+-- SQLite.Classic SQLite (asynchronously)
 DECLARE @take  -- Int32
 SET     @take = 3
 DECLARE @skip  -- Int32
@@ -12,7 +12,7 @@ FROM
 LIMIT @take OFFSET @skip
 
 BeforeExecute
--- SQLite.Classic SQLite
+-- SQLite.Classic SQLite (asynchronously)
 DECLARE @take  -- Int32
 SET     @take = 3
 DECLARE @skip  -- Int32
@@ -29,7 +29,7 @@ ORDER BY
 LIMIT @take OFFSET @skip
 
 BeforeExecute
--- SQLite.Classic SQLite
+-- SQLite.Classic SQLite (asynchronously)
 DECLARE @take  -- Int32
 SET     @take = 3
 DECLARE @skip  -- Int32
@@ -42,7 +42,7 @@ FROM
 LIMIT @take OFFSET @skip
 
 BeforeExecute
--- SQLite.Classic SQLite
+-- SQLite.Classic SQLite (asynchronously)
 DECLARE @take  -- Int32
 SET     @take = 3
 DECLARE @skip  -- Int32

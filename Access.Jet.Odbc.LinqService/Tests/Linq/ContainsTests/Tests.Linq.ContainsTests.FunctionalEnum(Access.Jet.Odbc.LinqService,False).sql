@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Access.Jet.Odbc AccessODBC
+-- Access.Jet.Odbc AccessODBC (asynchronously)
 
 SELECT TOP 1
 	[s].[Id]
@@ -9,7 +9,7 @@ WHERE
 	[s].[Enum] IN ('THREE', 'FOUR')
 
 BeforeExecute
--- Access.Jet.Odbc AccessODBC
+-- Access.Jet.Odbc AccessODBC (asynchronously)
 
 SELECT TOP 1
 	[s].[Id]
@@ -19,7 +19,7 @@ WHERE
 	[s].[Enum] IN ('THREE', NULL)
 
 BeforeExecute
--- Access.Jet.Odbc AccessODBC
+-- Access.Jet.Odbc AccessODBC (asynchronously)
 
 SELECT TOP 1
 	[s].[Id]
@@ -29,7 +29,7 @@ WHERE
 	[s].[Enum] IN ('THREE', 'TWO')
 
 BeforeExecute
--- Access.Jet.Odbc AccessODBC
+-- Access.Jet.Odbc AccessODBC (asynchronously)
 
 SELECT TOP 1
 	[s].[Id]
@@ -39,7 +39,7 @@ WHERE
 	[s].[Enum] NOT IN (NULL, 'TWO')
 
 BeforeExecute
--- Access.Jet.Odbc AccessODBC
+-- Access.Jet.Odbc AccessODBC (asynchronously)
 
 SELECT TOP 1
 	[s].[Id]

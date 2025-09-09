@@ -13,7 +13,7 @@ WHERE
 	p."FirstName" = 'John' OR p."LastName" = 'John'
 
 BeforeExecute
--- Oracle.19.Managed Oracle.Managed Oracle12
+-- Oracle.19.Managed Oracle.Managed Oracle12 (asynchronously)
 DECLARE @firstName Varchar2(4) -- String
 SET     @firstName = 'John'
 

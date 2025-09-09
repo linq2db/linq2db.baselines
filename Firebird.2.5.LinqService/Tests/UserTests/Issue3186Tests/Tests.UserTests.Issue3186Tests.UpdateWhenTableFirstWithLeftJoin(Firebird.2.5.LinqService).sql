@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Firebird.2.5 Firebird
+-- Firebird.2.5 Firebird (asynchronously)
 DECLARE @is_deleted Char -- String
 SET     @is_deleted = '1'
 
@@ -20,7 +20,7 @@ WHERE
 	)
 
 BeforeExecute
--- Firebird.2.5 Firebird
+-- Firebird.2.5 Firebird (asynchronously)
 
 SELECT
 	"x"."id",
@@ -32,7 +32,7 @@ WHERE
 	"x"."is_deleted" = '1' AND "x"."service_id" = 'TestProcessService'
 
 BeforeExecute
--- Firebird.2.5 Firebird
+-- Firebird.2.5 Firebird (asynchronously)
 
 SELECT
 	"x"."id",

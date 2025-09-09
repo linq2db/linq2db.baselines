@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- Informix.DB2 Informix
+-- Informix.DB2 Informix (asynchronously)
 DECLARE @ParentID Integer(4) -- Int32
 SET     @ParentID = 1000
 DECLARE @Value1 Integer(4) -- Int32
@@ -17,7 +17,7 @@ VALUES
 )
 
 BeforeExecute
--- Informix.DB2 Informix
+-- Informix.DB2 Informix (asynchronously)
 DECLARE @ParentID Integer(4) -- Int32
 SET     @ParentID = 1001
 DECLARE @Value1 Integer(4) -- Int32
@@ -35,7 +35,7 @@ VALUES
 )
 
 BeforeExecute
--- Informix.DB2 Informix
+-- Informix.DB2 Informix (asynchronously)
 DECLARE @ParentID Integer(4) -- Int32
 SET     @ParentID = 1002
 DECLARE @Value1 Integer(4) -- Int32
@@ -53,7 +53,7 @@ VALUES
 )
 
 BeforeExecute
--- Informix.DB2 Informix
+-- Informix.DB2 Informix (asynchronously)
 DECLARE @ParentID Integer(4) -- Int32
 SET     @ParentID = 1003
 DECLARE @Value1 Integer(4) -- Int32
@@ -71,7 +71,7 @@ VALUES
 )
 
 BeforeExecute
--- Informix.DB2 Informix
+-- Informix.DB2 Informix (asynchronously)
 DECLARE @ParentID Integer(4) -- Int32
 SET     @ParentID = 1004
 DECLARE @Value1 Integer(4) -- Int32
@@ -89,7 +89,7 @@ VALUES
 )
 
 BeforeExecute
--- Informix.DB2 Informix
+-- Informix.DB2 Informix (asynchronously)
 DECLARE @ParentID Integer(4) -- Int32
 SET     @ParentID = 1005
 DECLARE @Value1 Integer(4) -- Int32
@@ -107,7 +107,7 @@ VALUES
 )
 
 BeforeExecute
--- Informix.DB2 Informix
+-- Informix.DB2 Informix (asynchronously)
 DECLARE @ParentID Integer(4) -- Int32
 SET     @ParentID = 1006
 DECLARE @Value1 Integer(4) -- Int32
@@ -125,7 +125,7 @@ VALUES
 )
 
 BeforeExecute
--- Informix.DB2 Informix
+-- Informix.DB2 Informix (asynchronously)
 DECLARE @ParentID Integer(4) -- Int32
 SET     @ParentID = 1007
 DECLARE @Value1 Integer(4) -- Int32
@@ -143,7 +143,7 @@ VALUES
 )
 
 BeforeExecute
--- Informix.DB2 Informix
+-- Informix.DB2 Informix (asynchronously)
 DECLARE @ParentID Integer(4) -- Int32
 SET     @ParentID = 1008
 DECLARE @Value1 Integer(4) -- Int32
@@ -161,7 +161,7 @@ VALUES
 )
 
 BeforeExecute
--- Informix.DB2 Informix
+-- Informix.DB2 Informix (asynchronously)
 DECLARE @ParentID Integer(4) -- Int32
 SET     @ParentID = 1009
 DECLARE @Value1 Integer(4) -- Int32
@@ -179,7 +179,7 @@ VALUES
 )
 
 BeforeExecute
--- Informix.DB2 Informix
+-- Informix.DB2 Informix (asynchronously)
 DECLARE @take Integer(4) -- Int32
 SET     @take = 5
 
@@ -208,7 +208,7 @@ WHERE
 	)
 
 BeforeExecute
--- Informix.DB2 Informix
+-- Informix.DB2 Informix (asynchronously)
 
 SELECT
 	r.Value1

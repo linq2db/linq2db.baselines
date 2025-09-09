@@ -23,7 +23,7 @@ RETURNING
 	"DestinationTable"."ValueStr"
 
 BeforeExecute
--- PostgreSQL.15 PostgreSQL
+-- PostgreSQL.15 PostgreSQL (asynchronously)
 DECLARE @param Integer -- Int32
 SET     @param = 200
 

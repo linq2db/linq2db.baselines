@@ -13,7 +13,7 @@ WHERE
 	"p"."MiddleName" IS NOT NULL
 
 BeforeExecute
--- DB2 DB2.LUW DB2LUW
+-- DB2 DB2.LUW DB2LUW (asynchronously)
 
 SELECT
 	"p"."FirstName",
