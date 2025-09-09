@@ -127,7 +127,7 @@ SELECT
 FROM
 	[Subdivisions] [s]
 WHERE
-	CAST([s].[Id] AS BigInt) = @cond
+	CAST([s].[Id] AS INTEGER) = @cond
 
 
 

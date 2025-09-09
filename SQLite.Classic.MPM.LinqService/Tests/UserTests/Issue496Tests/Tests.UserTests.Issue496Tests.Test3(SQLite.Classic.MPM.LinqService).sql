@@ -6,7 +6,7 @@ SELECT
 	[a_Children].[ParentID]
 FROM
 	[Parent] [p]
-		INNER JOIN [Child] [a_Children] ON CAST([p].[ParentID] AS BigInt) = [a_Children].[ParentID]
+		INNER JOIN [Child] [a_Children] ON CAST([p].[ParentID] AS INTEGER) = [a_Children].[ParentID]
 WHERE
 	[p].[ParentID] = 1
 

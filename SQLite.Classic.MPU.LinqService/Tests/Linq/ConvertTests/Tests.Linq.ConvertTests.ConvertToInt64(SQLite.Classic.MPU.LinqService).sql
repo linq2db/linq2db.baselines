@@ -10,7 +10,7 @@ FROM
 				WHEN [t].[MoneyValue] - FLOOR([t].[MoneyValue]) = 0.5 AND (FLOOR([t].[MoneyValue]) % 2) = 0
 					THEN FLOOR([t].[MoneyValue])
 				ELSE ROUND([t].[MoneyValue], 0)
-			END AS BigInt) as [c1]
+			END AS INTEGER) as [c1]
 		FROM
 			[LinqDataTypes] [t]
 	) [p]
