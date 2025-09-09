@@ -1,10 +1,10 @@
 ﻿BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
+-- SQLite.Classic.MPU SQLite.Classic SQLite (asynchronously)
 
 INSERT INTO [Issue2099Table] DEFAULT VALUES
 
 BeforeExecute
--- SQLite.Classic.MPU SQLite.Classic SQLite
+-- SQLite.Classic.MPU SQLite.Classic SQLite (asynchronously)
 
 SELECT
 	[t1].[Id]
