@@ -1,0 +1,30 @@
+﻿BeforeExecute
+-- SqlServer.2012
+
+SELECT 1 UNION ALL SELECT 2
+
+BeforeExecute
+-- SqlServer.2012
+
+SELECT 1 UNION ALL SELECT 2
+
+BeforeExecute
+-- SqlServer.2012
+
+SELECT 1 UNION ALL SELECT 2
+
+BeforeExecute
+-- SqlServer.2012 (asynchronously)
+
+SELECT 1 UNION ALL SELECT 2
+
+BeforeExecute
+-- SqlServer.2012 (asynchronously)
+
+SELECT 1 UNION ALL SELECT 2
+
+BeforeExecute
+-- SqlServer.2012 (asynchronously)
+
+SELECT 1 UNION ALL SELECT 2
+
