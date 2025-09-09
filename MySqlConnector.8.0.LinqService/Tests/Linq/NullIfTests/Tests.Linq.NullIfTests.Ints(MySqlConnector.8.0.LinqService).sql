@@ -12,6 +12,26 @@ BeforeExecute
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 
 SELECT
+	COUNT(*)
+FROM
+	`Src` `x`
+WHERE
+	`x`.`Int` = 2
+
+BeforeExecute
+-- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
+
+SELECT
+	COUNT(*)
+FROM
+	`Src` `x`
+WHERE
+	`x`.`Int` <> 2
+
+BeforeExecute
+-- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
+
+SELECT
 	NULLIF(`s`.`Int`, 4)
 FROM
 	`Src` `s`
@@ -22,11 +42,49 @@ BeforeExecute
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 
 SELECT
-	NULLIF(`s`.`Int`, NULL)
+	COUNT(*)
+FROM
+	`Src` `x`
+WHERE
+	`x`.`Int` = 4
+
+BeforeExecute
+-- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
+
+SELECT
+	COUNT(*)
+FROM
+	`Src` `x`
+WHERE
+	`x`.`Int` <> 4
+
+BeforeExecute
+-- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
+
+SELECT
+	`s`.`Int`
 FROM
 	`Src` `s`
 ORDER BY
 	`s`.`Int`
+
+BeforeExecute
+-- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
+
+SELECT
+	COUNT(*)
+FROM
+	`Src` `x`
+WHERE
+	1 = 0
+
+BeforeExecute
+-- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
+
+SELECT
+	COUNT(*)
+FROM
+	`Src` `x`
 
 BeforeExecute
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
@@ -42,6 +100,26 @@ BeforeExecute
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 
 SELECT
+	COUNT(*)
+FROM
+	`Src` `x`
+WHERE
+	`x`.`NullableInt` = 2 OR `x`.`NullableInt` IS NULL
+
+BeforeExecute
+-- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
+
+SELECT
+	COUNT(*)
+FROM
+	`Src` `x`
+WHERE
+	NOT (`x`.`NullableInt` = 2 OR `x`.`NullableInt` IS NULL)
+
+BeforeExecute
+-- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
+
+SELECT
 	NULLIF(`s`.`NullableInt`, 4)
 FROM
 	`Src` `s`
@@ -52,9 +130,49 @@ BeforeExecute
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 
 SELECT
-	NULLIF(`s`.`NullableInt`, NULL)
+	COUNT(*)
+FROM
+	`Src` `x`
+WHERE
+	`x`.`NullableInt` = 4 OR `x`.`NullableInt` IS NULL
+
+BeforeExecute
+-- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
+
+SELECT
+	COUNT(*)
+FROM
+	`Src` `x`
+WHERE
+	NOT (`x`.`NullableInt` = 4 OR `x`.`NullableInt` IS NULL)
+
+BeforeExecute
+-- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
+
+SELECT
+	`s`.`NullableInt`
 FROM
 	`Src` `s`
 ORDER BY
 	`s`.`Int`
+
+BeforeExecute
+-- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
+
+SELECT
+	COUNT(*)
+FROM
+	`Src` `x`
+WHERE
+	`x`.`NullableInt` IS NULL
+
+BeforeExecute
+-- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
+
+SELECT
+	COUNT(*)
+FROM
+	`Src` `x`
+WHERE
+	`x`.`NullableInt` IS NOT NULL
 
