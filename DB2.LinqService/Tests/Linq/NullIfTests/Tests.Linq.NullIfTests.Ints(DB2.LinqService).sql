@@ -22,7 +22,7 @@ WHERE
 	"x"."Int" = 2
 
 BeforeExecute
--- DB2 DB2.LUW DB2LUW
+-- DB2 DB2.LUW DB2LUW (asynchronously)
 
 SELECT
 	COUNT(*)
@@ -32,7 +32,7 @@ WHERE
 	"x"."Int" <> 2
 
 BeforeExecute
--- DB2 DB2.LUW DB2LUW
+-- DB2 DB2.LUW DB2LUW (asynchronously)
 
 SELECT
 	CASE
@@ -55,7 +55,7 @@ WHERE
 	"x"."Int" = 4
 
 BeforeExecute
--- DB2 DB2.LUW DB2LUW
+-- DB2 DB2.LUW DB2LUW (asynchronously)
 
 SELECT
 	COUNT(*)
@@ -65,7 +65,7 @@ WHERE
 	"x"."Int" <> 4
 
 BeforeExecute
--- DB2 DB2.LUW DB2LUW
+-- DB2 DB2.LUW DB2LUW (asynchronously)
 
 SELECT
 	"s"."Int"
@@ -85,7 +85,7 @@ WHERE
 	1 = 0
 
 BeforeExecute
--- DB2 DB2.LUW DB2LUW
+-- DB2 DB2.LUW DB2LUW (asynchronously)
 
 SELECT
 	COUNT(*)
@@ -93,7 +93,7 @@ FROM
 	"Src" "x"
 
 BeforeExecute
--- DB2 DB2.LUW DB2LUW
+-- DB2 DB2.LUW DB2LUW (asynchronously)
 
 SELECT
 	CASE
@@ -116,7 +116,7 @@ WHERE
 	"x"."NullableInt" = 2 OR "x"."NullableInt" IS NULL
 
 BeforeExecute
--- DB2 DB2.LUW DB2LUW
+-- DB2 DB2.LUW DB2LUW (asynchronously)
 
 SELECT
 	COUNT(*)
@@ -126,7 +126,7 @@ WHERE
 	NOT ("x"."NullableInt" = 2 OR "x"."NullableInt" IS NULL)
 
 BeforeExecute
--- DB2 DB2.LUW DB2LUW
+-- DB2 DB2.LUW DB2LUW (asynchronously)
 
 SELECT
 	CASE
@@ -149,7 +149,7 @@ WHERE
 	"x"."NullableInt" = 4 OR "x"."NullableInt" IS NULL
 
 BeforeExecute
--- DB2 DB2.LUW DB2LUW
+-- DB2 DB2.LUW DB2LUW (asynchronously)
 
 SELECT
 	COUNT(*)
@@ -159,7 +159,7 @@ WHERE
 	NOT ("x"."NullableInt" = 4 OR "x"."NullableInt" IS NULL)
 
 BeforeExecute
--- DB2 DB2.LUW DB2LUW
+-- DB2 DB2.LUW DB2LUW (asynchronously)
 
 SELECT
 	"s"."NullableInt"
@@ -169,7 +169,7 @@ ORDER BY
 	"s"."Int"
 
 BeforeExecute
--- DB2 DB2.LUW DB2LUW
+-- DB2 DB2.LUW DB2LUW (asynchronously)
 
 SELECT
 	COUNT(*)
@@ -179,7 +179,7 @@ WHERE
 	"x"."NullableInt" IS NULL
 
 BeforeExecute
--- DB2 DB2.LUW DB2LUW
+-- DB2 DB2.LUW DB2LUW (asynchronously)
 
 SELECT
 	COUNT(*)
