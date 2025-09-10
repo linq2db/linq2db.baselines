@@ -19,7 +19,7 @@ WHERE
 	[x].[String] = N'abc' OR [x].[String] IS NULL
 
 BeforeExecute
--- SqlServer.2008
+-- SqlServer.2008 (asynchronously)
 
 SELECT
 	COUNT(*)
@@ -29,7 +29,7 @@ WHERE
 	NOT ([x].[String] = N'abc' OR [x].[String] IS NULL)
 
 BeforeExecute
--- SqlServer.2008
+-- SqlServer.2008 (asynchronously)
 
 SELECT
 	NULLIF([s].[String], N'xyz')
@@ -49,7 +49,7 @@ WHERE
 	[x].[String] = N'xyz' OR [x].[String] IS NULL
 
 BeforeExecute
--- SqlServer.2008
+-- SqlServer.2008 (asynchronously)
 
 SELECT
 	COUNT(*)
@@ -59,7 +59,7 @@ WHERE
 	NOT ([x].[String] = N'xyz' OR [x].[String] IS NULL)
 
 BeforeExecute
--- SqlServer.2008
+-- SqlServer.2008 (asynchronously)
 
 SELECT
 	[s].[String]
@@ -79,7 +79,7 @@ WHERE
 	[x].[String] IS NULL
 
 BeforeExecute
--- SqlServer.2008
+-- SqlServer.2008 (asynchronously)
 
 SELECT
 	COUNT(*)
@@ -89,7 +89,7 @@ WHERE
 	[x].[String] IS NOT NULL
 
 BeforeExecute
--- SqlServer.2008
+-- SqlServer.2008 (asynchronously)
 
 SELECT
 	NULLIF([s].[NullableString], N'abc')
@@ -109,7 +109,7 @@ WHERE
 	[x].[NullableString] = N'abc' OR [x].[NullableString] IS NULL
 
 BeforeExecute
--- SqlServer.2008
+-- SqlServer.2008 (asynchronously)
 
 SELECT
 	COUNT(*)
@@ -119,7 +119,7 @@ WHERE
 	NOT ([x].[NullableString] = N'abc' OR [x].[NullableString] IS NULL)
 
 BeforeExecute
--- SqlServer.2008
+-- SqlServer.2008 (asynchronously)
 
 SELECT
 	NULLIF([s].[NullableString], N'xyz')
@@ -139,7 +139,7 @@ WHERE
 	[x].[NullableString] = N'xyz' OR [x].[NullableString] IS NULL
 
 BeforeExecute
--- SqlServer.2008
+-- SqlServer.2008 (asynchronously)
 
 SELECT
 	COUNT(*)
@@ -149,7 +149,7 @@ WHERE
 	NOT ([x].[NullableString] = N'xyz' OR [x].[NullableString] IS NULL)
 
 BeforeExecute
--- SqlServer.2008
+-- SqlServer.2008 (asynchronously)
 
 SELECT
 	[s].[NullableString]
@@ -159,7 +159,7 @@ ORDER BY
 	[s].[Int]
 
 BeforeExecute
--- SqlServer.2008
+-- SqlServer.2008 (asynchronously)
 
 SELECT
 	COUNT(*)
@@ -169,7 +169,7 @@ WHERE
 	[x].[NullableString] IS NULL
 
 BeforeExecute
--- SqlServer.2008
+-- SqlServer.2008 (asynchronously)
 
 SELECT
 	COUNT(*)

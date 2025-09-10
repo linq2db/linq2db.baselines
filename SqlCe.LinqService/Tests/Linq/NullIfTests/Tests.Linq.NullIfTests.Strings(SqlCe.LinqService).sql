@@ -22,7 +22,7 @@ WHERE
 	[x].[String] = 'abc' OR [x].[String] IS NULL
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 
 SELECT
 	COUNT(*) as [COUNT_1]
@@ -32,7 +32,7 @@ WHERE
 	NOT ([x].[String] = 'abc' OR [x].[String] IS NULL)
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 
 SELECT
 	CASE
@@ -55,7 +55,7 @@ WHERE
 	[x].[String] = 'xyz' OR [x].[String] IS NULL
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 
 SELECT
 	COUNT(*) as [COUNT_1]
@@ -65,7 +65,7 @@ WHERE
 	NOT ([x].[String] = 'xyz' OR [x].[String] IS NULL)
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 
 SELECT
 	[s].[String]
@@ -85,7 +85,7 @@ WHERE
 	[x].[String] IS NULL
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 
 SELECT
 	COUNT(*) as [COUNT_1]
@@ -95,7 +95,7 @@ WHERE
 	[x].[String] IS NOT NULL
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 
 SELECT
 	CASE
@@ -118,7 +118,7 @@ WHERE
 	[x].[NullableString] = 'abc' OR [x].[NullableString] IS NULL
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 
 SELECT
 	COUNT(*) as [COUNT_1]
@@ -128,7 +128,7 @@ WHERE
 	NOT ([x].[NullableString] = 'abc' OR [x].[NullableString] IS NULL)
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 
 SELECT
 	CASE
@@ -151,7 +151,7 @@ WHERE
 	[x].[NullableString] = 'xyz' OR [x].[NullableString] IS NULL
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 
 SELECT
 	COUNT(*) as [COUNT_1]
@@ -161,7 +161,7 @@ WHERE
 	NOT ([x].[NullableString] = 'xyz' OR [x].[NullableString] IS NULL)
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 
 SELECT
 	[s].[NullableString]
@@ -171,7 +171,7 @@ ORDER BY
 	[s].[Int]
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 
 SELECT
 	COUNT(*) as [COUNT_1]
@@ -181,7 +181,7 @@ WHERE
 	[x].[NullableString] IS NULL
 
 BeforeExecute
--- SqlCe
+-- SqlCe (asynchronously)
 
 SELECT
 	COUNT(*) as [COUNT_1]

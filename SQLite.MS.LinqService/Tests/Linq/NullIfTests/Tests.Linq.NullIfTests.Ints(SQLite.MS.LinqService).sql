@@ -19,7 +19,7 @@ WHERE
 	[x].[Int] = 2
 
 BeforeExecute
--- SQLite.MS SQLite
+-- SQLite.MS SQLite (asynchronously)
 
 SELECT
 	COUNT(*)
@@ -29,7 +29,7 @@ WHERE
 	[x].[Int] <> 2
 
 BeforeExecute
--- SQLite.MS SQLite
+-- SQLite.MS SQLite (asynchronously)
 
 SELECT
 	NULLIF([s].[Int], 4)
@@ -49,7 +49,7 @@ WHERE
 	[x].[Int] = 4
 
 BeforeExecute
--- SQLite.MS SQLite
+-- SQLite.MS SQLite (asynchronously)
 
 SELECT
 	COUNT(*)
@@ -59,7 +59,7 @@ WHERE
 	[x].[Int] <> 4
 
 BeforeExecute
--- SQLite.MS SQLite
+-- SQLite.MS SQLite (asynchronously)
 
 SELECT
 	[s].[Int]
@@ -79,7 +79,7 @@ WHERE
 	1 = 0
 
 BeforeExecute
--- SQLite.MS SQLite
+-- SQLite.MS SQLite (asynchronously)
 
 SELECT
 	COUNT(*)
@@ -87,7 +87,7 @@ FROM
 	[Src] [x]
 
 BeforeExecute
--- SQLite.MS SQLite
+-- SQLite.MS SQLite (asynchronously)
 
 SELECT
 	NULLIF([s].[NullableInt], 2)
@@ -107,7 +107,7 @@ WHERE
 	[x].[NullableInt] = 2 OR [x].[NullableInt] IS NULL
 
 BeforeExecute
--- SQLite.MS SQLite
+-- SQLite.MS SQLite (asynchronously)
 
 SELECT
 	COUNT(*)
@@ -117,7 +117,7 @@ WHERE
 	NOT ([x].[NullableInt] = 2 OR [x].[NullableInt] IS NULL)
 
 BeforeExecute
--- SQLite.MS SQLite
+-- SQLite.MS SQLite (asynchronously)
 
 SELECT
 	NULLIF([s].[NullableInt], 4)
@@ -137,7 +137,7 @@ WHERE
 	[x].[NullableInt] = 4 OR [x].[NullableInt] IS NULL
 
 BeforeExecute
--- SQLite.MS SQLite
+-- SQLite.MS SQLite (asynchronously)
 
 SELECT
 	COUNT(*)
@@ -147,7 +147,7 @@ WHERE
 	NOT ([x].[NullableInt] = 4 OR [x].[NullableInt] IS NULL)
 
 BeforeExecute
--- SQLite.MS SQLite
+-- SQLite.MS SQLite (asynchronously)
 
 SELECT
 	[s].[NullableInt]
@@ -157,7 +157,7 @@ ORDER BY
 	[s].[Int]
 
 BeforeExecute
--- SQLite.MS SQLite
+-- SQLite.MS SQLite (asynchronously)
 
 SELECT
 	COUNT(*)
@@ -167,7 +167,7 @@ WHERE
 	[x].[NullableInt] IS NULL
 
 BeforeExecute
--- SQLite.MS SQLite
+-- SQLite.MS SQLite (asynchronously)
 
 SELECT
 	COUNT(*)
