@@ -1,11 +1,11 @@
 ﻿BeforeExecute
 -- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
 
-WITH "CTE_1" AS
+WITH "CTE_1" (c1)
+AS
 (
-	SELECT DISTINCT
-		c_1."ParentID",
-		c_1."ChildID"
+	SELECT
+		1
 	FROM
 		"Child" c_1
 	WHERE

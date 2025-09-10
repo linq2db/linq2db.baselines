@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- SqlServer.Northwind SqlServer.2019
 
-SELECT DISTINCT
+SELECT
 	[t1].[CustomerID],
 	[t1].[CompanyName],
 	[t1].[ContactName],
