@@ -6,7 +6,7 @@ DROP TABLE IF EXISTS [TempTable]
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
-/* THIS IS HEADER*/ CREATE TABLE temp.TempTable
+/* THIS IS HEADER*/ CREATE TABLE [TempTable]
 (
 	[FirstName]  NVarChar(255)  NOT NULL,
 	[PersonID]   INTEGER        NOT NULL PRIMARY KEY AUTOINCREMENT,

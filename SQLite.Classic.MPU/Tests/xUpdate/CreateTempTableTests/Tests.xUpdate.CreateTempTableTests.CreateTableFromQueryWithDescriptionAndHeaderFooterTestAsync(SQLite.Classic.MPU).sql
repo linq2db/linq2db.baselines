@@ -6,7 +6,7 @@ DROP TABLE IF EXISTS [TempTable]
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite (asynchronously)
 
-/* THIS IS ASYNC HEADER*/ CREATE TABLE temp.TempTable
+/* THIS IS ASYNC HEADER*/ CREATE TABLE [TempTable]
 (
 	[FirstName]  NVarChar(255)  NOT NULL,
 	[PersonID]   INTEGER        NOT NULL PRIMARY KEY AUTOINCREMENT,

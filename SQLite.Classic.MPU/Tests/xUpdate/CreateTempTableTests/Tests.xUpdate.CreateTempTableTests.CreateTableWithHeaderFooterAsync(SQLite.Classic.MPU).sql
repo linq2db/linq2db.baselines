@@ -6,7 +6,7 @@ DROP TABLE IF EXISTS [CreateTableWithHeaderFooter]
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite (asynchronously)
 
-/* THIS IS ASYNC HEADER*/ CREATE TABLE temp.CreateTableWithHeaderFooter
+/* THIS IS ASYNC HEADER*/ CREATE TABLE temp.[CreateTableWithHeaderFooter]
 (
 	[ID] INTEGER NOT NULL
 )
