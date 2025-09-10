@@ -2,19 +2,23 @@
 -- ClickHouse.Octonica ClickHouse (asynchronously)
 
 SELECT
-	t1.Id,
-	t1.Name
+	r.PersonID,
+	r.LastName
 FROM
-	User t1
-LIMIT 1
+	Person r
+ORDER BY
+	r.FirstName
+LIMIT 1, 2
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse (asynchronously)
 
 SELECT
-	t1.Id,
-	t1.Name
+	t1.FirstName,
+	t1.PersonID,
+	t1.LastName,
+	t1.MiddleName,
+	t1.Gender
 FROM
-	User t1
-LIMIT 1
+	Person t1
 
