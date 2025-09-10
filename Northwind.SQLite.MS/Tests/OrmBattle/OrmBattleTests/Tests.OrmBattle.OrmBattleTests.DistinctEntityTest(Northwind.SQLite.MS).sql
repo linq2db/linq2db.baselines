@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- Northwind.SQLite.MS SQLite.MS SQLite
 
-SELECT DISTINCT
+SELECT
 	[t1].[CustomerID],
 	[t1].[CompanyName],
 	[t1].[ContactName],
