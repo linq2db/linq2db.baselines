@@ -1,11 +1,11 @@
 ﻿BeforeExecute
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80 (asynchronously)
 
-WITH `CTE_1` AS
+WITH `CTE_1` (`c1`)
+AS
 (
-	SELECT DISTINCT
-		`c_1`.`ParentID`,
-		`c_1`.`ChildID`
+	SELECT
+		1
 	FROM
 		`Child` `c_1`
 	WHERE
