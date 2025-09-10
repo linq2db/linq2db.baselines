@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- SQLite.MS SQLite
 
-/* THIS IS HEADER*/ CREATE TABLE temp.CreateTableWithHeaderFooter
+/* THIS IS HEADER*/ CREATE TABLE temp.[CreateTableWithHeaderFooter]
 (
 	[ID] INTEGER NOT NULL
 )

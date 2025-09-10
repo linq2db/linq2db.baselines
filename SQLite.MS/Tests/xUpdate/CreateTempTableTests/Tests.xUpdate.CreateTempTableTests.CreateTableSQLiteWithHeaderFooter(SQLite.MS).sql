@@ -6,7 +6,7 @@ DROP TABLE IF EXISTS [TempTable]
 BeforeExecute
 -- SQLite.MS SQLite
 
-/* THIS IS HEADER*/ CREATE TABLE temp.TempTable
+/* THIS IS HEADER*/ CREATE TABLE temp.[TempTable]
 (
 	[ID]    INTEGER NOT NULL,
 	[Field] INTEGER NOT NULL

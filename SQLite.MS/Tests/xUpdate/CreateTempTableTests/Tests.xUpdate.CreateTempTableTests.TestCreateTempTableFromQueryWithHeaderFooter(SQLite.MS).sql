@@ -6,7 +6,7 @@ DROP TABLE IF EXISTS [TestPersons2]
 BeforeExecute
 -- SQLite.MS SQLite
 
-/* THIS IS HEADER*/ CREATE TABLE temp.TestPersons2
+/* THIS IS HEADER*/ CREATE TABLE temp.[TestPersons2]
 (
 	[FirstName]  NVarChar(255)  NOT NULL,
 	[PersonID]   INTEGER        NOT NULL PRIMARY KEY AUTOINCREMENT,
