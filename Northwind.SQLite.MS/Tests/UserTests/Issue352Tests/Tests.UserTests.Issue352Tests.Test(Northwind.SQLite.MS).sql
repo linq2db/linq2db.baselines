@@ -13,8 +13,8 @@ SELECT
 		LIMIT 1
 	)
 FROM
-	[Employees] [g_1],
-	[EmployeeTerritories] [et]
+	[Employees] [g_1]
+		CROSS JOIN [EmployeeTerritories] [et]
 WHERE
 	[et].[EmployeeID] = [g_1].[EmployeeID]
 GROUP BY

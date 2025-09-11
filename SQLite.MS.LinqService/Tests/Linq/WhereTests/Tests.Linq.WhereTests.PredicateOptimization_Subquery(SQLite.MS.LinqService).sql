@@ -2,6 +2,7 @@
 -- SQLite.MS SQLite (asynchronously)
 
 SELECT
+	[p].[PK],
 	[p].[Id],
 	[p].[Date1],
 	[p].[Date2],
@@ -26,6 +27,7 @@ BeforeExecute
 -- SQLite.MS SQLite (asynchronously)
 
 SELECT
+	[p].[PK],
 	[p].[Id],
 	[p].[Date1],
 	[p].[Date2],

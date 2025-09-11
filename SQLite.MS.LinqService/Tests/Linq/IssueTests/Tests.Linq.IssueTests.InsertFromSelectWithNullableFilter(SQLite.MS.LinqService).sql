@@ -48,6 +48,7 @@ BeforeExecute
 -- SQLite.MS SQLite (asynchronously)
 
 SELECT
+	[t1].[Pk],
 	[t1].[ID],
 	[t1].[intDataType]
 FROM

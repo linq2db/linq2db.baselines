@@ -4,7 +4,9 @@
 CREATE TEMPORARY TABLE temp.[tmptbl1]
 (
 	[ID]    INTEGER       NOT NULL,
-	[Value] NVarChar(255)     NULL
+	[Value] NVarChar(255)     NULL,
+
+	CONSTRAINT [PK_tmptbl1] PRIMARY KEY ([ID])
 )
 
 BeforeExecute
@@ -25,7 +27,9 @@ BeforeExecute
 CREATE TEMPORARY TABLE temp.[tmptbl2]
 (
 	[ID]    INTEGER       NOT NULL,
-	[Value] NVarChar(255) NOT NULL
+	[Value] NVarChar(255) NOT NULL,
+
+	CONSTRAINT [PK_tmptbl2] PRIMARY KEY ([ID])
 )
 
 BeforeExecute
@@ -46,7 +50,9 @@ BeforeExecute
 CREATE TEMPORARY TABLE temp.[tmptbl3]
 (
 	[ID]    INTEGER       NOT NULL,
-	[Value] NVarChar(255)     NULL
+	[Value] NVarChar(255)     NULL,
+
+	CONSTRAINT [PK_tmptbl3] PRIMARY KEY ([ID])
 )
 
 BeforeExecute
