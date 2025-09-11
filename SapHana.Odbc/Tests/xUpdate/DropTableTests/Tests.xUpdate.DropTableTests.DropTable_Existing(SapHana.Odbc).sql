@@ -3,7 +3,9 @@
 
 CREATE COLUMN TABLE "Table"
 (
-	"ID" Integer NOT NULL
+	"ID" Integer NOT NULL,
+
+	PRIMARY KEY ("ID")
 )
 
 BeforeExecute

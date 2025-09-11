@@ -4,7 +4,9 @@
 CREATE COLUMN TABLE "temp_table1"
 (
 	"ID"    Integer NOT NULL,
-	"Value" Integer NOT NULL
+	"Value" Integer NOT NULL,
+
+	PRIMARY KEY ("ID")
 )
 
 BeforeExecute
@@ -31,7 +33,9 @@ BeforeExecute
 CREATE COLUMN TABLE "temp_table2"
 (
 	"ID"    Integer NOT NULL,
-	"Value" Integer NOT NULL
+	"Value" Integer NOT NULL,
+
+	PRIMARY KEY ("ID")
 )
 
 BeforeExecute

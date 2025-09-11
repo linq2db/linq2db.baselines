@@ -8,7 +8,9 @@ BeforeExecute
 
 CREATE COLUMN TABLE "DropTableTest"
 (
-	"ID" Integer NOT NULL
+	"ID" Integer NOT NULL,
+
+	PRIMARY KEY ("ID")
 )
 
 BeforeExecute

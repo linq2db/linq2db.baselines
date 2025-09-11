@@ -15,8 +15,7 @@ WHERE
 			"AssociatedTable" "p"
 				LEFT JOIN "MainTable" "a_MainOptional" ON "p"."Id" = "a_MainOptional"."Id"
 		WHERE
-			"p"."Id" = ? AND "MainTable"."Id" = "a_MainOptional"."Id" AND
-			("MainTable"."Field" = "a_MainOptional"."Field" OR "MainTable"."Field" IS NULL AND "a_MainOptional"."Field" IS NULL)
+			"p"."Id" = ? AND "MainTable"."Id" = "a_MainOptional"."Id"
 	)
 
 BeforeExecute
