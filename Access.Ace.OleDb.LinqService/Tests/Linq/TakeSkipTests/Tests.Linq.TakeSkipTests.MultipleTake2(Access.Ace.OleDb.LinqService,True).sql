@@ -2,6 +2,7 @@
 -- Access.Ace.OleDb AccessOleDb (asynchronously)
 
 SELECT TOP 2
+	[t1].[Id],
 	[t1].[Value]
 FROM
 	[TakeSkipClass] [t1]
