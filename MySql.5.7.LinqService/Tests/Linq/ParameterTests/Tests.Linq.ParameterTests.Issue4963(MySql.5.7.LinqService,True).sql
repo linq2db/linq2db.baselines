@@ -10,6 +10,7 @@ BeforeExecute
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57 (asynchronously)
 
 SELECT
+	`t1`.`Id`,
 	`t1`.`Field`
 FROM
 	`Issue4963Table` `t1`

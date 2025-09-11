@@ -3,11 +3,13 @@
 
 INSERT INTO `SomeTable`
 (
+	`Id`,
 	`ClassProp`,
 	`Interface`
 )
 VALUES
 (
+	1,
 	1,
 	0
 )
@@ -16,6 +18,7 @@ BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57 (asynchronously)
 
 SELECT
+	`t1`.`Id`,
 	`t1`.`ClassProp`,
 	`t1`.`Interface`
 FROM

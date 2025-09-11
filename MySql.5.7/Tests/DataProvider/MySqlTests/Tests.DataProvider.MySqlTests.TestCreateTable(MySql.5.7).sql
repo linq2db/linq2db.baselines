@@ -20,11 +20,11 @@ DECLARE @VarBinary255 Blob(3) -- Binary
 SET     @VarBinary255 = 0x010416
 DECLARE @VarBinary3 Blob(3) -- Binary
 SET     @VarBinary3 = 0x010204
-DECLARE @Binary1 Blob(1) -- Object
+DECLARE @Binary1 Blob(1) -- Binary
 SET     @Binary1 = 0x16
-DECLARE @Binary255 Blob(3) -- Object
+DECLARE @Binary255 Blob(3) -- Binary
 SET     @Binary255 = 0x162C15
-DECLARE @Binary3 Blob(2) -- Object
+DECLARE @Binary3 Blob(2) -- Binary
 SET     @Binary3 = 0x0121
 DECLARE @TinyBlob Blob(3) -- Binary
 SET     @TinyBlob = 0x030201
