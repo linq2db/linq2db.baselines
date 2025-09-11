@@ -6,7 +6,9 @@ BEGIN
 	EXECUTE IMMEDIATE '
 		CREATE TABLE "DisposableTable"
 		(
-			ID Int NOT NULL
+			ID Int NOT NULL,
+
+			CONSTRAINT "PK_DisposableTable" PRIMARY KEY (ID)
 		)
 	';
 END

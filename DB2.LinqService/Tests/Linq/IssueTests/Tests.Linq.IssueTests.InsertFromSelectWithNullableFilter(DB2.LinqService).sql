@@ -3,10 +3,12 @@
 
 INSERT INTO "InsertIssueTest"
 (
+	"Pk",
 	ID,
 	"intDataType"
 )
 SELECT
+	"t2".ID,
 	123,
 	"t2".ID
 FROM
@@ -27,10 +29,12 @@ SET     @cond = 1234
 
 INSERT INTO "InsertIssueTest"
 (
+	"Pk",
 	ID,
 	"intDataType"
 )
 SELECT
+	"t2".ID,
 	123,
 	"t2".ID
 FROM
@@ -48,6 +52,7 @@ BeforeExecute
 -- DB2 DB2.LUW DB2LUW (asynchronously)
 
 SELECT
+	"t1"."Pk",
 	"t1".ID,
 	"t1"."intDataType"
 FROM
