@@ -1,9 +1,32 @@
 ﻿BeforeExecute
 -- SqlCe
 
+CREATE TABLE [temp_table_1]
+(
+	[ID]    Int           NOT NULL,
+	[Value] NVarChar(255)     NULL,
+
+	CONSTRAINT [PK_temp_table_1] PRIMARY KEY ([ID])
+)
+
+BeforeExecute
+-- SqlCe
+
+INSERT INTO [temp_table_1]
+(
+	[ID],
+	[Value]
+)
+SELECT 1,''
+
+BeforeExecute
+-- SqlCe
+
 CREATE TABLE [temp_table_2]
 (
-	[Value] NVarChar(255)     NULL
+	[Value] NVarChar(50) NOT NULL,
+
+	CONSTRAINT [PK_temp_table_2] PRIMARY KEY ([Value])
 )
 
 BeforeExecute
@@ -37,4 +60,9 @@ BeforeExecute
 -- SqlCe
 
 DROP TABLE [temp_table_2]
+
+BeforeExecute
+-- SqlCe
+
+DROP TABLE [temp_table_1]
 

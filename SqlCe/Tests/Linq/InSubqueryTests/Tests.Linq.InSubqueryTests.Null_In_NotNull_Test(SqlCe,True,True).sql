@@ -2,7 +2,9 @@
 -- SqlCe
 
 SELECT
-	[t].[ID]
+	[t].[PK],
+	[t].[ID],
+	[t].[GV]
 FROM
 	[test_in_1] [t]
 WHERE
@@ -19,7 +21,9 @@ BeforeExecute
 -- SqlCe
 
 SELECT
-	[t1].[ID]
+	[t1].[PK],
+	[t1].[ID],
+	[t1].[GV]
 FROM
 	[test_in_1] [t1]
 
@@ -27,6 +31,7 @@ BeforeExecute
 -- SqlCe
 
 SELECT
+	[t1].[PK],
 	[t1].[ID]
 FROM
 	[test_in_2] [t1]

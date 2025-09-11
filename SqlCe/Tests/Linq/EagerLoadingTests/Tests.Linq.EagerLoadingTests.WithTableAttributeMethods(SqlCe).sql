@@ -40,13 +40,13 @@ SELECT
 	[p].[MiddleName],
 	[p].[Gender]
 FROM
-	[Person] [p],
-	(
-		SELECT
-			COUNT(*) as [COUNT_1]
-		FROM
-			[UserIssue3128] [t1]
-	) [t2]
+	[Person] [p]
+		CROSS JOIN (
+			SELECT
+				COUNT(*) as [COUNT_1]
+			FROM
+				[UserIssue3128] [t1]
+		) [t2]
 WHERE
 	[t2].[COUNT_1] > 0
 
