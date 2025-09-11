@@ -8,7 +8,9 @@ BeforeExecute
 
 CREATE TABLE IF NOT EXISTS TempTable
 (
-	Name NVarChar(20) NOT NULL
+	Name NVarChar(20) NOT NULL,
+
+	PRIMARY KEY (Name)
 )
 
 BeforeExecute

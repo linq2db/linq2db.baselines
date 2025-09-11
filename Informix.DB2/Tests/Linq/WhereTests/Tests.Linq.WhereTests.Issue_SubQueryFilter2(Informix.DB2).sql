@@ -11,13 +11,13 @@ WHERE
 		SELECT
 			*
 		FROM
-			Person e,
-			(
-				SELECT FIRST 1
-					d.PersonID as cond
-				FROM
-					Patient d
-			) t1
+			Person e
+				CROSS JOIN (
+					SELECT FIRST 1
+						d.PersonID as cond
+					FROM
+						Patient d
+				) t1
 		WHERE
 			e.PersonID = p.PersonID AND e.FirstName LIKE '%John%' ESCAPE '~' AND
 			e.PersonID = t1.cond
@@ -26,13 +26,13 @@ WHERE
 		SELECT
 			*
 		FROM
-			Person e_1,
-			(
-				SELECT FIRST 1
-					d_1.PersonID as cond
-				FROM
-					Patient d_1
-			) t2
+			Person e_1
+				CROSS JOIN (
+					SELECT FIRST 1
+						d_1.PersonID as cond
+					FROM
+						Patient d_1
+				) t2
 		WHERE
 			e_1.PersonID = p.PersonID AND e_1.FirstName LIKE '%Tester%' ESCAPE '~' AND
 			e_1.PersonID = t2.cond

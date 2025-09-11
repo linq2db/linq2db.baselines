@@ -8,7 +8,9 @@ BeforeExecute
 
 CREATE TABLE DropTableTest
 (
-	ID Int NOT NULL
+	ID Int NOT NULL,
+
+	PRIMARY KEY (ID)
 )
 
 BeforeExecute

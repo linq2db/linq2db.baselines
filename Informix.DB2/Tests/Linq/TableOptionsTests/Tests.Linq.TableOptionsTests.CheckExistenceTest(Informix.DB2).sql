@@ -3,7 +3,9 @@
 
 CREATE TABLE IF NOT EXISTS DisposableTable
 (
-	ID Int NOT NULL
+	ID Int NOT NULL,
+
+	PRIMARY KEY (ID)
 )
 
 BeforeExecute

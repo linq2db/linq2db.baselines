@@ -2,6 +2,7 @@
 -- Informix.DB2 Informix (asynchronously)
 
 SELECT
+	x.Id,
 	x.Country,
 	x."State"
 FROM
