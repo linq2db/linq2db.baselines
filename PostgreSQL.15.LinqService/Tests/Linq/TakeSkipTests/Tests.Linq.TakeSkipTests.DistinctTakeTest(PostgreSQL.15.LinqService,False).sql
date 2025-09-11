@@ -2,8 +2,8 @@
 -- PostgreSQL.15 PostgreSQL (asynchronously)
 
 SELECT DISTINCT
-	t1."Value"
+	r."Value"
 FROM
-	"TakeSkipClass" t1
+	"TakeSkipClass" r
 LIMIT 3
 
