@@ -48,6 +48,7 @@ BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
 SELECT
+	[t1].[Pk],
 	[t1].[ID],
 	[t1].[intDataType]
 FROM

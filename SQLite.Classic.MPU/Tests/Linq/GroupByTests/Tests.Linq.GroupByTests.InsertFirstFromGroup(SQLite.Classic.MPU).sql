@@ -1,9 +1,33 @@
 ﻿BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
+CREATE TEMPORARY TABLE temp.[temp_table_1]
+(
+	[ID]    INTEGER       NOT NULL,
+	[Value] NVarChar(255)     NULL,
+
+	CONSTRAINT [PK_temp_table_1] PRIMARY KEY ([ID])
+)
+
+BeforeExecute
+-- SQLite.Classic.MPU SQLite.Classic SQLite
+
+INSERT INTO temp.[temp_table_1]
+(
+	[ID],
+	[Value]
+)
+VALUES
+(1,'')
+
+BeforeExecute
+-- SQLite.Classic.MPU SQLite.Classic SQLite
+
 CREATE TEMPORARY TABLE temp.[temp_table_2]
 (
-	[Value] NVarChar(255)     NULL
+	[Value] NVarChar(255)     NULL,
+
+	CONSTRAINT [PK_temp_table_2] PRIMARY KEY ([Value])
 )
 
 BeforeExecute
@@ -20,7 +44,7 @@ FROM
 		SELECT
 			[gr].[ID]
 		FROM
-			[temp_table_1] [gr]
+			temp.[temp_table_1] [gr]
 		GROUP BY
 			[gr].[ID]
 	) [gr_1]
@@ -30,11 +54,16 @@ FROM
 				ROW_NUMBER() OVER (PARTITION BY [c_1].[ID] ORDER BY [c_1].[ID]) as [rn],
 				[c_1].[ID]
 			FROM
-				[temp_table_1] [c_1]
+				temp.[temp_table_1] [c_1]
 		) [t1] ON [gr_1].[ID] = [t1].[ID] AND [t1].[rn] <= 1
 
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
 DROP TABLE IF EXISTS temp.[temp_table_2]
+
+BeforeExecute
+-- SQLite.Classic.MPU SQLite.Classic SQLite
+
+DROP TABLE IF EXISTS temp.[temp_table_1]
 

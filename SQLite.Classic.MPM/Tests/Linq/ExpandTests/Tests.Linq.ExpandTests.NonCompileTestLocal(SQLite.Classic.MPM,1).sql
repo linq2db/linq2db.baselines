@@ -2,8 +2,8 @@
 	[t].[Id],
 	[t].[Value]
 FROM
-	[SampleClass] [t],
-	[SampleClass] [t2]
+	[SampleClass] [t]
+		CROSS JOIN [SampleClass] [t2]
 WHERE
 	[t2].[Value] > @param
 
@@ -16,8 +16,8 @@ SELECT
 	[t].[Id],
 	[t].[Value]
 FROM
-	[SampleClass] [t],
-	[SampleClass] [t2]
+	[SampleClass] [t]
+		CROSS JOIN [SampleClass] [t2]
 WHERE
 	[t2].[Value] > @param
 
