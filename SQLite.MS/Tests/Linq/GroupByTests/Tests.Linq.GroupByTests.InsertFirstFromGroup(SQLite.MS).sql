@@ -25,7 +25,7 @@ BeforeExecute
 
 CREATE TEMPORARY TABLE temp.[temp_table_2]
 (
-	[Value] NVarChar(255)     NULL,
+	[Value] NVarChar(50) NOT NULL,
 
 	CONSTRAINT [PK_temp_table_2] PRIMARY KEY ([Value])
 )

@@ -3,10 +3,12 @@
 
 INSERT INTO [InsertIssueTest]
 (
+	[Pk],
 	[ID],
 	[intDataType]
 )
 SELECT
+	[t2].[ID],
 	123,
 	[t2].[ID]
 FROM
@@ -27,10 +29,12 @@ SET     @cond = 1234
 
 INSERT INTO [InsertIssueTest]
 (
+	[Pk],
 	[ID],
 	[intDataType]
 )
 SELECT
+	[t2].[ID],
 	123,
 	[t2].[ID]
 FROM
