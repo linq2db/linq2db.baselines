@@ -2,6 +2,7 @@
 -- SqlServer.2008
 
 SELECT
+	[t].[Id],
 	[t].[Value]
 FROM
 	[NotNullableBoolClass] [t]
@@ -12,6 +13,7 @@ BeforeExecute
 -- SqlServer.2008
 
 SELECT
+	[t].[Id],
 	[t].[Value]
 FROM
 	[NotNullableBoolClass] [t]
@@ -22,6 +24,7 @@ BeforeExecute
 -- SqlServer.2008
 
 SELECT
+	[t].[Id],
 	[t].[Value]
 FROM
 	[NotNullableBoolClass] [t]
@@ -32,6 +35,7 @@ BeforeExecute
 -- SqlServer.2008
 
 SELECT
+	[t].[Id],
 	[t].[Value]
 FROM
 	[NotNullableBoolClass] [t]
@@ -42,6 +46,7 @@ BeforeExecute
 -- SqlServer.2008
 
 SELECT
+	[t].[Id],
 	[t].[Value]
 FROM
 	[NotNullableBoolClass] [t]
@@ -52,6 +57,7 @@ BeforeExecute
 -- SqlServer.2008
 
 SELECT
+	[t].[Id],
 	[t].[Value]
 FROM
 	[NotNullableBoolClass] [t]
