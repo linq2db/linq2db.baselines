@@ -22,6 +22,7 @@ BeforeExecute
 -- PostgreSQL.17 PostgreSQL.15 PostgreSQL
 
 SELECT
+	t1."Id",
 	t1."One",
 	t1."Two",
 	t1."Three",
