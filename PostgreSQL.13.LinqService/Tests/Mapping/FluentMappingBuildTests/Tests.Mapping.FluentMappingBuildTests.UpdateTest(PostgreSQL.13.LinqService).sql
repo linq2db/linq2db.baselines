@@ -5,7 +5,9 @@ CREATE TABLE IF NOT EXISTS "FluentTemp"
 (
 	"ID"       Int  NOT NULL,
 	"Value"    text     NULL,
-	"LastName" text     NULL
+	"LastName" text     NULL,
+
+	CONSTRAINT "PK_FluentTemp" PRIMARY KEY ("ID")
 )
 
 BeforeExecute

@@ -12,8 +12,8 @@ FROM
 				ELSE 'a'
 			END as "Key_1"
 		FROM
-			"Parent" "groupedData",
-			"Person" child
+			"Parent" "groupedData"
+				CROSS JOIN "Person" child
 		WHERE
 			child."PersonID" = "groupedData"."ParentID"
 	) "groupedData_1"
