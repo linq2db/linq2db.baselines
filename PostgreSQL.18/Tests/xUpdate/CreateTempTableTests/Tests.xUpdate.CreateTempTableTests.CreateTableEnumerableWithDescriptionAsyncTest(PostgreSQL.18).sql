@@ -8,7 +8,9 @@ BeforeExecute
 
 CREATE TABLE IF NOT EXISTS "TempTable"
 (
-	"Name" text NOT NULL
+	"Name" text NOT NULL,
+
+	CONSTRAINT "PK_TempTable" PRIMARY KEY ("Name")
 )
 
 BeforeExecute
