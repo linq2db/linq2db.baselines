@@ -2,6 +2,7 @@
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql
 
 SELECT
+	`x`.`Id`,
 	`x`.`Country`,
 	`x`.`State`
 FROM

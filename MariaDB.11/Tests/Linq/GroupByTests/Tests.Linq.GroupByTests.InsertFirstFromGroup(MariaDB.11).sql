@@ -1,9 +1,33 @@
 ﻿BeforeExecute
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql
 
+CREATE TEMPORARY TABLE `temp_table_1`
+(
+	`ID`    INT           NOT NULL,
+	`Value` VARCHAR(4000)     NULL,
+
+	CONSTRAINT `PK_temp_table_1` PRIMARY KEY CLUSTERED (`ID`)
+)
+
+BeforeExecute
+-- MariaDB.11 MariaDB.10.MySqlConnector MySql
+
+INSERT INTO `temp_table_1`
+(
+	`ID`,
+	`Value`
+)
+VALUES
+(1,'')
+
+BeforeExecute
+-- MariaDB.11 MariaDB.10.MySqlConnector MySql
+
 CREATE TEMPORARY TABLE `temp_table_2`
 (
-	`Value` VARCHAR(4000)     NULL
+	`Value` VARCHAR(50) NOT NULL,
+
+	CONSTRAINT `PK_temp_table_2` PRIMARY KEY CLUSTERED (`Value`)
 )
 
 BeforeExecute
@@ -37,4 +61,9 @@ BeforeExecute
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql
 
 DROP TEMPORARY TABLE IF EXISTS `temp_table_2`
+
+BeforeExecute
+-- MariaDB.11 MariaDB.10.MySqlConnector MySql
+
+DROP TEMPORARY TABLE IF EXISTS `temp_table_1`
 

@@ -11,13 +11,13 @@ FROM
 			`p`.`Value1`
 		FROM
 			`Parent` `p`
-	) `t1`,
-	(
-		SELECT /*+ QB_NAME(CHILD) */
-			`c_1`.`ParentID`
-		FROM
-			`Child` `c_1`
-	) `c_2`
+	) `t1`
+		CROSS JOIN (
+			SELECT /*+ QB_NAME(CHILD) */
+				`c_1`.`ParentID`
+			FROM
+				`Child` `c_1`
+		) `c_2`
 WHERE
 	`t1`.`ParentID` = `c_2`.`ParentID`
 

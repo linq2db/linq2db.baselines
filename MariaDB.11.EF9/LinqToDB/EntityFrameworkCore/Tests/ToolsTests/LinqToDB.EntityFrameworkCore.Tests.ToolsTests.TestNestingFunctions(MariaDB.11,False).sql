@@ -44,8 +44,8 @@ SELECT
 	`pd2`.`ReorderLevel`,
 	`pd2`.`Discontinued`
 FROM
-	`Products` `e`,
-	`Products` `pd2`
+	`Products` `e`
+		CROSS JOIN `Products` `pd2`
 WHERE
 	(
 		SELECT

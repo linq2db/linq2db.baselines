@@ -8,8 +8,8 @@ SELECT
 	`t1`.`MiddleName`,
 	`t1`.`Gender`
 FROM
-	`Person` `t`,
-	`Person` `t1`
+	`Person` `t`
+		CROSS JOIN `Person` `t1`
 WHERE
 	`t1`.`PersonID` = 1
 
