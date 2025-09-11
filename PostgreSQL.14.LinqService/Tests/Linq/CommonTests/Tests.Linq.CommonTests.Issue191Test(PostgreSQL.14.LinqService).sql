@@ -2,6 +2,7 @@
 -- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL (asynchronously)
 
 SELECT
+	user_1."Id",
 	user_1."FirstName",
 	user_1."Status"
 FROM
