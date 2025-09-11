@@ -2,6 +2,7 @@
 -- SqlServer.SA.MS SqlServer.2019 (asynchronously)
 
 SELECT TOP (2)
+	[t1].[Id],
 	[t1].[Value]
 FROM
 	[TakeSkipClass] [t1]

@@ -2,7 +2,7 @@
 -- SqlServer.SA.MS SqlServer.2019 (asynchronously)
 
 SELECT DISTINCT TOP (3)
-	[t1].[Value]
+	[r].[Value]
 FROM
-	[TakeSkipClass] [t1]
+	[TakeSkipClass] [r]
 
