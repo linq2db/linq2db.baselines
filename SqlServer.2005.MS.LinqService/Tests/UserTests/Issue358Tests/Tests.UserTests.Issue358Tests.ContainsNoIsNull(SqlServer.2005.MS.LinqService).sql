@@ -2,6 +2,7 @@
 -- SqlServer.2005.MS SqlServer.2005 (asynchronously)
 
 SELECT
+	[p].[Id],
 	[p].[MyEnum],
 	[p].[MyEnum2]
 FROM

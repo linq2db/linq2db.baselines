@@ -9,7 +9,9 @@ BeforeExecute
 
 CREATE TABLE [tempdb]..[#TempTable]
 (
-	[ID] Int NOT NULL
+	[ID] Int NOT NULL,
+
+	PRIMARY KEY CLUSTERED ([ID])
 )
 
 BeforeExecute
