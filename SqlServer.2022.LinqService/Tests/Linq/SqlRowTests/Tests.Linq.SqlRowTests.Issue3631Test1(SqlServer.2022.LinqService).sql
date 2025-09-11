@@ -2,6 +2,7 @@
 -- SqlServer.2022 (asynchronously)
 
 SELECT
+	[x].[Id],
 	[x].[Country],
 	[x].[State]
 FROM
