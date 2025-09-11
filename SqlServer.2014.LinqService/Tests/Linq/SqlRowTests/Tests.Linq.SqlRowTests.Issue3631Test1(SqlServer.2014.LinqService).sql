@@ -2,6 +2,7 @@
 -- SqlServer.2014 (asynchronously)
 
 SELECT
+	[x].[Id],
 	[x].[Country],
 	[x].[State]
 FROM
