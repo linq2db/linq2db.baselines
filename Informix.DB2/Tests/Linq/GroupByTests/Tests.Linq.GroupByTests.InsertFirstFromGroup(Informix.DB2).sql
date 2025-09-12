@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- Informix.DB2 Informix
 
-CREATE TEMP TABLE temp_table_1
+CREATE TABLE temp_table_1
 (
 	ID      Int           NOT NULL,
 	"Value" NVarChar(255)     NULL,
@@ -15,7 +15,7 @@ INSERT BULK temp_table_1
 BeforeExecute
 -- Informix.DB2 Informix
 
-CREATE TEMP TABLE temp_table_2
+CREATE TABLE temp_table_2
 (
 	"Value" NVarChar(50) NOT NULL,
 
