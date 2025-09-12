@@ -5,8 +5,8 @@ SELECT
 	ch."ParentID",
 	ch."ChildID"
 FROM
-	"Parent" p
-		CROSS JOIN "Child" ch
+	"Parent" p,
+	"Child" ch
 WHERE
 	p."ParentID" = ch."ParentID"
 
