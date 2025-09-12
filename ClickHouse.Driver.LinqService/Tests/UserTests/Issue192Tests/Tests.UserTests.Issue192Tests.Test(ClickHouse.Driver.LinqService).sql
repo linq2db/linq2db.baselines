@@ -3,12 +3,14 @@
 
 INSERT INTO TypeConvertTable
 (
+	Id,
 	Name,
 	BoolValue,
 	GuidValue
 )
 VALUES
 (
+	1,
 	'NotVerified',
 	'N',
 	'bc7b663d-0fde-4327-8f92-5d8cc3a11d11'
@@ -19,12 +21,14 @@ BeforeExecute
 
 INSERT INTO TypeConvertTable
 (
+	Id,
 	Name,
 	BoolValue,
 	GuidValue
 )
 VALUES
 (
+	2,
 	'Verified',
 	'Y',
 	'a948600d-de21-4f74-8ac2-9516b287076e'
@@ -64,6 +68,7 @@ BeforeExecute
 -- ClickHouse.Driver ClickHouse (asynchronously)
 
 SELECT
+	t1.Id,
 	t1.Name,
 	t1.BoolValue,
 	t1.GuidValue
@@ -77,6 +82,7 @@ BeforeExecute
 -- ClickHouse.Driver ClickHouse (asynchronously)
 
 SELECT
+	t1.Id,
 	t1.Name,
 	t1.BoolValue,
 	t1.GuidValue
@@ -90,6 +96,7 @@ BeforeExecute
 -- ClickHouse.Driver ClickHouse (asynchronously)
 
 SELECT
+	t1.Id,
 	t1.Name,
 	t1.BoolValue,
 	t1.GuidValue
@@ -103,6 +110,7 @@ BeforeExecute
 -- ClickHouse.Driver ClickHouse (asynchronously)
 
 SELECT
+	t1.Id,
 	t1.Name,
 	t1.BoolValue,
 	t1.GuidValue
@@ -116,6 +124,7 @@ BeforeExecute
 -- ClickHouse.Driver ClickHouse (asynchronously)
 
 SELECT
+	t1.Id,
 	t1.Name,
 	t1.BoolValue,
 	t1.GuidValue
@@ -129,6 +138,7 @@ BeforeExecute
 -- ClickHouse.Driver ClickHouse (asynchronously)
 
 SELECT
+	t1.Id,
 	t1.Name,
 	t1.BoolValue,
 	t1.GuidValue
@@ -142,6 +152,7 @@ BeforeExecute
 -- ClickHouse.Driver ClickHouse (asynchronously)
 
 SELECT
+	t1.Id,
 	t1.Name,
 	t1.BoolValue,
 	t1.GuidValue
@@ -155,6 +166,7 @@ BeforeExecute
 -- ClickHouse.Driver ClickHouse (asynchronously)
 
 SELECT
+	t1.Id,
 	t1.Name,
 	t1.BoolValue,
 	t1.GuidValue
@@ -168,6 +180,7 @@ BeforeExecute
 -- ClickHouse.Driver ClickHouse (asynchronously)
 
 SELECT
+	t1.Id,
 	t1.Name,
 	t1.BoolValue,
 	t1.GuidValue
@@ -181,6 +194,7 @@ BeforeExecute
 -- ClickHouse.Driver ClickHouse (asynchronously)
 
 SELECT
+	t1.Id,
 	t1.Name,
 	t1.BoolValue,
 	t1.GuidValue
@@ -194,6 +208,7 @@ BeforeExecute
 -- ClickHouse.Driver ClickHouse (asynchronously)
 
 SELECT
+	t1.Id,
 	t1.Name,
 	t1.BoolValue,
 	t1.GuidValue
@@ -207,6 +222,7 @@ BeforeExecute
 -- ClickHouse.Driver ClickHouse (asynchronously)
 
 SELECT
+	t1.Id,
 	t1.Name,
 	t1.BoolValue,
 	t1.GuidValue

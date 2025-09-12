@@ -2,6 +2,7 @@
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -21,11 +22,13 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	toDate('2020-02-29'),
 	NULL
 )
@@ -34,6 +37,7 @@ BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -53,16 +57,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDate('2020-02-29'),NULL)
+(1,toDate('2020-02-29'),NULL)
 
 BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -78,12 +84,13 @@ ALTER TABLE
 DELETE WHERE 1
 
 BeforeExecute
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -99,12 +106,13 @@ ALTER TABLE
 DELETE WHERE 1
 
 BeforeExecute
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -116,6 +124,7 @@ BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -135,11 +144,13 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	toDate('1970-01-01'),
 	toDate('2149-06-06')
 )
@@ -148,6 +159,7 @@ BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -167,16 +179,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDate('1970-01-01'),toDate('2149-06-06'))
+(1,toDate('1970-01-01'),toDate('2149-06-06'))
 
 BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -192,12 +206,13 @@ ALTER TABLE
 DELETE WHERE 1
 
 BeforeExecute
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -213,12 +228,13 @@ ALTER TABLE
 DELETE WHERE 1
 
 BeforeExecute
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -230,6 +246,7 @@ BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -249,11 +266,13 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	toDate('2020-02-29'),
 	NULL
 )
@@ -262,6 +281,7 @@ BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -281,16 +301,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDate('2020-02-29'),NULL)
+(1,toDate('2020-02-29'),NULL)
 
 BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -306,12 +328,13 @@ ALTER TABLE
 DELETE WHERE 1
 
 BeforeExecute
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -327,12 +350,13 @@ ALTER TABLE
 DELETE WHERE 1
 
 BeforeExecute
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -344,6 +368,7 @@ BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -363,11 +388,13 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	toDate('1970-01-01'),
 	toDate('2149-06-06')
 )
@@ -376,6 +403,7 @@ BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -395,16 +423,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDate('1970-01-01'),toDate('2149-06-06'))
+(1,toDate('1970-01-01'),toDate('2149-06-06'))
 
 BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -420,12 +450,13 @@ ALTER TABLE
 DELETE WHERE 1
 
 BeforeExecute
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -441,12 +472,13 @@ ALTER TABLE
 DELETE WHERE 1
 
 BeforeExecute
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -458,6 +490,7 @@ BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -477,11 +510,13 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	toDate('2020-02-29'),
 	NULL
 )
@@ -490,6 +525,7 @@ BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -509,16 +545,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDate('2020-02-29'),NULL)
+(1,toDate('2020-02-29'),NULL)
 
 BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -534,12 +572,13 @@ ALTER TABLE
 DELETE WHERE 1
 
 BeforeExecute
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -555,12 +594,13 @@ ALTER TABLE
 DELETE WHERE 1
 
 BeforeExecute
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -572,6 +612,7 @@ BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -591,11 +632,13 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	toDate('1970-01-01'),
 	toDate('2149-06-06')
 )
@@ -604,6 +647,7 @@ BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -623,16 +667,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDate('1970-01-01'),toDate('2149-06-06'))
+(1,toDate('1970-01-01'),toDate('2149-06-06'))
 
 BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -648,12 +694,13 @@ ALTER TABLE
 DELETE WHERE 1
 
 BeforeExecute
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -669,12 +716,13 @@ ALTER TABLE
 DELETE WHERE 1
 
 BeforeExecute
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -686,6 +734,7 @@ BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -705,11 +754,13 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	toDate('2020-02-29'),
 	NULL
 )
@@ -718,6 +769,7 @@ BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -737,16 +789,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDate('2020-02-29'),NULL)
+(1,toDate('2020-02-29'),NULL)
 
 BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -762,12 +816,13 @@ ALTER TABLE
 DELETE WHERE 1
 
 BeforeExecute
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -783,12 +838,13 @@ ALTER TABLE
 DELETE WHERE 1
 
 BeforeExecute
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -800,6 +856,7 @@ BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -819,11 +876,13 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	toDate('1970-01-01'),
 	toDate('2149-06-06')
 )
@@ -832,6 +891,7 @@ BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -851,16 +911,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDate('1970-01-01'),toDate('2149-06-06'))
+(1,toDate('1970-01-01'),toDate('2149-06-06'))
 
 BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -876,12 +938,13 @@ ALTER TABLE
 DELETE WHERE 1
 
 BeforeExecute
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -897,12 +960,13 @@ ALTER TABLE
 DELETE WHERE 1
 
 BeforeExecute
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -914,6 +978,7 @@ BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -933,11 +998,13 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	toDate('2020-02-29'),
 	NULL
 )
@@ -946,6 +1013,7 @@ BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -965,16 +1033,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDate('2020-02-29'),NULL)
+(1,toDate('2020-02-29'),NULL)
 
 BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -990,12 +1060,13 @@ ALTER TABLE
 DELETE WHERE 1
 
 BeforeExecute
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -1011,12 +1082,13 @@ ALTER TABLE
 DELETE WHERE 1
 
 BeforeExecute
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -1028,6 +1100,7 @@ BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -1047,11 +1120,13 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	toDate('1970-01-01'),
 	toDate('2149-06-06')
 )
@@ -1060,6 +1135,7 @@ BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -1079,16 +1155,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDate('1970-01-01'),toDate('2149-06-06'))
+(1,toDate('1970-01-01'),toDate('2149-06-06'))
 
 BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -1104,12 +1182,13 @@ ALTER TABLE
 DELETE WHERE 1
 
 BeforeExecute
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -1125,12 +1204,13 @@ ALTER TABLE
 DELETE WHERE 1
 
 BeforeExecute
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
