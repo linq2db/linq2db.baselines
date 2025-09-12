@@ -2,6 +2,7 @@
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -21,11 +22,13 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	toDecimal128('0', 10),
 	NULL
 )
@@ -34,6 +37,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -53,16 +57,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal128('0', 10),NULL)
+(1,toDecimal128('0', 10),NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -82,16 +88,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal128('0', 10),NULL)
+(1,toDecimal128('0', 10),NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -111,16 +119,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal128('0', 10),NULL)
+(1,toDecimal128('0', 10),NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -132,6 +142,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -152,11 +163,13 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	toDecimal128('7922816251426433759.3543950335', 10),
 	toDecimal128('-7922816251426433759.3543950335', 10)
 )
@@ -165,6 +178,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -185,16 +199,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal128('7922816251426433759.3543950335', 10),toDecimal128('-7922816251426433759.3543950335', 10))
+(1,toDecimal128('7922816251426433759.3543950335', 10),toDecimal128('-7922816251426433759.3543950335', 10))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -215,16 +231,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal128('7922816251426433759.3543950335', 10),toDecimal128('-7922816251426433759.3543950335', 10))
+(1,toDecimal128('7922816251426433759.3543950335', 10),toDecimal128('-7922816251426433759.3543950335', 10))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -245,16 +263,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal128('7922816251426433759.3543950335', 10),toDecimal128('-7922816251426433759.3543950335', 10))
+(1,toDecimal128('7922816251426433759.3543950335', 10),toDecimal128('-7922816251426433759.3543950335', 10))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -267,6 +287,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -286,11 +307,13 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	toDecimal32('0', 0),
 	NULL
 )
@@ -299,6 +322,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -318,16 +342,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal32('0', 0),NULL)
+(1,toDecimal32('0', 0),NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -347,16 +373,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal32('0', 0),NULL)
+(1,toDecimal32('0', 0),NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -376,16 +404,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal32('0', 0),NULL)
+(1,toDecimal32('0', 0),NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -397,6 +427,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -416,11 +447,13 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	toDecimal32('-9', 0),
 	toDecimal32('9', 0)
 )
@@ -429,6 +462,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -448,16 +482,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal32('-9', 0),toDecimal32('9', 0))
+(1,toDecimal32('-9', 0),toDecimal32('9', 0))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -477,16 +513,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal32('-9', 0),toDecimal32('9', 0))
+(1,toDecimal32('-9', 0),toDecimal32('9', 0))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -506,16 +544,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal32('-9', 0),toDecimal32('9', 0))
+(1,toDecimal32('-9', 0),toDecimal32('9', 0))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -527,6 +567,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -546,11 +587,13 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	'0'::Decimal32(0),
 	NULL
 )
@@ -559,6 +602,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -578,16 +622,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('0'::Decimal32(0),NULL)
+(1,'0'::Decimal32(0),NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -607,16 +653,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('0'::Decimal32(0),NULL)
+(1,'0'::Decimal32(0),NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -636,16 +684,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('0'::Decimal32(0),NULL)
+(1,'0'::Decimal32(0),NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -657,6 +707,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -676,11 +727,13 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	'-9'::Decimal32(0),
 	'9'::Decimal32(0)
 )
@@ -689,6 +742,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -708,16 +762,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('-9'::Decimal32(0),'9'::Decimal32(0))
+(1,'-9'::Decimal32(0),'9'::Decimal32(0))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -737,16 +793,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('-9'::Decimal32(0),'9'::Decimal32(0))
+(1,'-9'::Decimal32(0),'9'::Decimal32(0))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -766,16 +824,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('-9'::Decimal32(0),'9'::Decimal32(0))
+(1,'-9'::Decimal32(0),'9'::Decimal32(0))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -787,6 +847,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -806,11 +867,13 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	toDecimal32('0', 1),
 	NULL
 )
@@ -819,6 +882,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -838,16 +902,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal32('0', 1),NULL)
+(1,toDecimal32('0', 1),NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -867,16 +933,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal32('0', 1),NULL)
+(1,toDecimal32('0', 1),NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -896,16 +964,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal32('0', 1),NULL)
+(1,toDecimal32('0', 1),NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -917,6 +987,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -936,11 +1007,13 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	toDecimal32('-0.9', 1),
 	toDecimal32('0.9', 1)
 )
@@ -949,6 +1022,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -968,16 +1042,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal32('-0.9', 1),toDecimal32('0.9', 1))
+(1,toDecimal32('-0.9', 1),toDecimal32('0.9', 1))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -997,16 +1073,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal32('-0.9', 1),toDecimal32('0.9', 1))
+(1,toDecimal32('-0.9', 1),toDecimal32('0.9', 1))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -1026,16 +1104,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal32('-0.9', 1),toDecimal32('0.9', 1))
+(1,toDecimal32('-0.9', 1),toDecimal32('0.9', 1))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -1047,6 +1127,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -1066,11 +1147,13 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	'0'::Decimal32(1),
 	NULL
 )
@@ -1079,6 +1162,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -1098,16 +1182,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('0'::Decimal32(1),NULL)
+(1,'0'::Decimal32(1),NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -1127,16 +1213,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('0'::Decimal32(1),NULL)
+(1,'0'::Decimal32(1),NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -1156,16 +1244,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('0'::Decimal32(1),NULL)
+(1,'0'::Decimal32(1),NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -1177,6 +1267,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -1196,11 +1287,13 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	'-0.9'::Decimal32(1),
 	'0.9'::Decimal32(1)
 )
@@ -1209,6 +1302,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -1228,16 +1322,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('-0.9'::Decimal32(1),'0.9'::Decimal32(1))
+(1,'-0.9'::Decimal32(1),'0.9'::Decimal32(1))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -1257,16 +1353,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('-0.9'::Decimal32(1),'0.9'::Decimal32(1))
+(1,'-0.9'::Decimal32(1),'0.9'::Decimal32(1))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -1286,16 +1384,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('-0.9'::Decimal32(1),'0.9'::Decimal32(1))
+(1,'-0.9'::Decimal32(1),'0.9'::Decimal32(1))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -1307,6 +1407,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -1326,11 +1427,13 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	toDecimal32('0', 0),
 	NULL
 )
@@ -1339,6 +1442,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -1358,16 +1462,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal32('0', 0),NULL)
+(1,toDecimal32('0', 0),NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -1387,16 +1493,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal32('0', 0),NULL)
+(1,toDecimal32('0', 0),NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -1416,16 +1524,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal32('0', 0),NULL)
+(1,toDecimal32('0', 0),NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -1437,6 +1547,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -1456,11 +1567,13 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	toDecimal32('-99', 0),
 	toDecimal32('99', 0)
 )
@@ -1469,6 +1582,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -1488,16 +1602,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal32('-99', 0),toDecimal32('99', 0))
+(1,toDecimal32('-99', 0),toDecimal32('99', 0))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -1517,16 +1633,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal32('-99', 0),toDecimal32('99', 0))
+(1,toDecimal32('-99', 0),toDecimal32('99', 0))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -1546,16 +1664,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal32('-99', 0),toDecimal32('99', 0))
+(1,toDecimal32('-99', 0),toDecimal32('99', 0))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -1567,6 +1687,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -1586,11 +1707,13 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	'0'::Decimal32(0),
 	NULL
 )
@@ -1599,6 +1722,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -1618,16 +1742,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('0'::Decimal32(0),NULL)
+(1,'0'::Decimal32(0),NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -1647,16 +1773,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('0'::Decimal32(0),NULL)
+(1,'0'::Decimal32(0),NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -1676,16 +1804,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('0'::Decimal32(0),NULL)
+(1,'0'::Decimal32(0),NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -1697,6 +1827,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -1716,11 +1847,13 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	'-99'::Decimal32(0),
 	'99'::Decimal32(0)
 )
@@ -1729,6 +1862,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -1748,16 +1882,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('-99'::Decimal32(0),'99'::Decimal32(0))
+(1,'-99'::Decimal32(0),'99'::Decimal32(0))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -1777,16 +1913,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('-99'::Decimal32(0),'99'::Decimal32(0))
+(1,'-99'::Decimal32(0),'99'::Decimal32(0))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -1806,16 +1944,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('-99'::Decimal32(0),'99'::Decimal32(0))
+(1,'-99'::Decimal32(0),'99'::Decimal32(0))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -1827,6 +1967,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -1846,11 +1987,13 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	toDecimal32('0', 1),
 	NULL
 )
@@ -1859,6 +2002,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -1878,16 +2022,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal32('0', 1),NULL)
+(1,toDecimal32('0', 1),NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -1907,16 +2053,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal32('0', 1),NULL)
+(1,toDecimal32('0', 1),NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -1936,16 +2084,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal32('0', 1),NULL)
+(1,toDecimal32('0', 1),NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -1957,6 +2107,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -1976,11 +2127,13 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	toDecimal32('-9.9', 1),
 	toDecimal32('9.9', 1)
 )
@@ -1989,6 +2142,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -2008,16 +2162,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal32('-9.9', 1),toDecimal32('9.9', 1))
+(1,toDecimal32('-9.9', 1),toDecimal32('9.9', 1))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -2037,16 +2193,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal32('-9.9', 1),toDecimal32('9.9', 1))
+(1,toDecimal32('-9.9', 1),toDecimal32('9.9', 1))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -2066,16 +2224,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal32('-9.9', 1),toDecimal32('9.9', 1))
+(1,toDecimal32('-9.9', 1),toDecimal32('9.9', 1))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -2087,6 +2247,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -2106,11 +2267,13 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	'0'::Decimal32(1),
 	NULL
 )
@@ -2119,6 +2282,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -2138,16 +2302,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('0'::Decimal32(1),NULL)
+(1,'0'::Decimal32(1),NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -2167,16 +2333,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('0'::Decimal32(1),NULL)
+(1,'0'::Decimal32(1),NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -2196,16 +2364,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('0'::Decimal32(1),NULL)
+(1,'0'::Decimal32(1),NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -2217,6 +2387,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -2236,11 +2407,13 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	'-9.9'::Decimal32(1),
 	'9.9'::Decimal32(1)
 )
@@ -2249,6 +2422,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -2268,16 +2442,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('-9.9'::Decimal32(1),'9.9'::Decimal32(1))
+(1,'-9.9'::Decimal32(1),'9.9'::Decimal32(1))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -2297,16 +2473,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('-9.9'::Decimal32(1),'9.9'::Decimal32(1))
+(1,'-9.9'::Decimal32(1),'9.9'::Decimal32(1))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -2326,16 +2504,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('-9.9'::Decimal32(1),'9.9'::Decimal32(1))
+(1,'-9.9'::Decimal32(1),'9.9'::Decimal32(1))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -2347,6 +2527,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -2366,11 +2547,13 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	toDecimal32('0', 2),
 	NULL
 )
@@ -2379,6 +2562,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -2398,16 +2582,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal32('0', 2),NULL)
+(1,toDecimal32('0', 2),NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -2427,16 +2613,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal32('0', 2),NULL)
+(1,toDecimal32('0', 2),NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -2456,16 +2644,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal32('0', 2),NULL)
+(1,toDecimal32('0', 2),NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -2477,6 +2667,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -2496,11 +2687,13 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	toDecimal32('-0.99', 2),
 	toDecimal32('0.99', 2)
 )
@@ -2509,6 +2702,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -2528,16 +2722,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal32('-0.99', 2),toDecimal32('0.99', 2))
+(1,toDecimal32('-0.99', 2),toDecimal32('0.99', 2))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -2557,16 +2753,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal32('-0.99', 2),toDecimal32('0.99', 2))
+(1,toDecimal32('-0.99', 2),toDecimal32('0.99', 2))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -2586,16 +2784,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal32('-0.99', 2),toDecimal32('0.99', 2))
+(1,toDecimal32('-0.99', 2),toDecimal32('0.99', 2))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -2607,6 +2807,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -2626,11 +2827,13 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	'0'::Decimal32(2),
 	NULL
 )
@@ -2639,6 +2842,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -2658,16 +2862,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('0'::Decimal32(2),NULL)
+(1,'0'::Decimal32(2),NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -2687,16 +2893,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('0'::Decimal32(2),NULL)
+(1,'0'::Decimal32(2),NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -2716,16 +2924,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('0'::Decimal32(2),NULL)
+(1,'0'::Decimal32(2),NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -2737,6 +2947,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -2756,11 +2967,13 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	'-0.99'::Decimal32(2),
 	'0.99'::Decimal32(2)
 )
@@ -2769,6 +2982,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -2788,16 +3002,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('-0.99'::Decimal32(2),'0.99'::Decimal32(2))
+(1,'-0.99'::Decimal32(2),'0.99'::Decimal32(2))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -2817,16 +3033,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('-0.99'::Decimal32(2),'0.99'::Decimal32(2))
+(1,'-0.99'::Decimal32(2),'0.99'::Decimal32(2))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -2846,16 +3064,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('-0.99'::Decimal32(2),'0.99'::Decimal32(2))
+(1,'-0.99'::Decimal32(2),'0.99'::Decimal32(2))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -2867,6 +3087,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -2886,11 +3107,13 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	toDecimal32('0', 0),
 	NULL
 )
@@ -2899,6 +3122,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -2918,16 +3142,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal32('0', 0),NULL)
+(1,toDecimal32('0', 0),NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -2947,16 +3173,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal32('0', 0),NULL)
+(1,toDecimal32('0', 0),NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -2976,16 +3204,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal32('0', 0),NULL)
+(1,toDecimal32('0', 0),NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -2997,6 +3227,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -3016,11 +3247,13 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	toDecimal32('-99999999', 0),
 	toDecimal32('99999999', 0)
 )
@@ -3029,6 +3262,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -3048,16 +3282,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal32('-99999999', 0),toDecimal32('99999999', 0))
+(1,toDecimal32('-99999999', 0),toDecimal32('99999999', 0))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -3077,16 +3313,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal32('-99999999', 0),toDecimal32('99999999', 0))
+(1,toDecimal32('-99999999', 0),toDecimal32('99999999', 0))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -3106,16 +3344,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal32('-99999999', 0),toDecimal32('99999999', 0))
+(1,toDecimal32('-99999999', 0),toDecimal32('99999999', 0))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -3127,6 +3367,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -3146,11 +3387,13 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	'0'::Decimal32(0),
 	NULL
 )
@@ -3159,6 +3402,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -3178,16 +3422,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('0'::Decimal32(0),NULL)
+(1,'0'::Decimal32(0),NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -3207,16 +3453,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('0'::Decimal32(0),NULL)
+(1,'0'::Decimal32(0),NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -3236,16 +3484,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('0'::Decimal32(0),NULL)
+(1,'0'::Decimal32(0),NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -3257,6 +3507,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -3276,11 +3527,13 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	'-99999999'::Decimal32(0),
 	'99999999'::Decimal32(0)
 )
@@ -3289,6 +3542,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -3308,16 +3562,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('-99999999'::Decimal32(0),'99999999'::Decimal32(0))
+(1,'-99999999'::Decimal32(0),'99999999'::Decimal32(0))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -3337,16 +3593,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('-99999999'::Decimal32(0),'99999999'::Decimal32(0))
+(1,'-99999999'::Decimal32(0),'99999999'::Decimal32(0))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -3366,16 +3624,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('-99999999'::Decimal32(0),'99999999'::Decimal32(0))
+(1,'-99999999'::Decimal32(0),'99999999'::Decimal32(0))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -3387,6 +3647,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -3406,11 +3667,13 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	toDecimal32('0', 1),
 	NULL
 )
@@ -3419,6 +3682,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -3438,16 +3702,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal32('0', 1),NULL)
+(1,toDecimal32('0', 1),NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -3467,16 +3733,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal32('0', 1),NULL)
+(1,toDecimal32('0', 1),NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -3496,16 +3764,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal32('0', 1),NULL)
+(1,toDecimal32('0', 1),NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -3517,6 +3787,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -3536,11 +3807,13 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	toDecimal32('-9999999.9', 1),
 	toDecimal32('9999999.9', 1)
 )
@@ -3549,6 +3822,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -3568,16 +3842,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal32('-9999999.9', 1),toDecimal32('9999999.9', 1))
+(1,toDecimal32('-9999999.9', 1),toDecimal32('9999999.9', 1))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -3597,16 +3873,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal32('-9999999.9', 1),toDecimal32('9999999.9', 1))
+(1,toDecimal32('-9999999.9', 1),toDecimal32('9999999.9', 1))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -3626,16 +3904,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal32('-9999999.9', 1),toDecimal32('9999999.9', 1))
+(1,toDecimal32('-9999999.9', 1),toDecimal32('9999999.9', 1))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -3647,6 +3927,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -3666,11 +3947,13 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	'0'::Decimal32(1),
 	NULL
 )
@@ -3679,6 +3962,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -3698,16 +3982,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('0'::Decimal32(1),NULL)
+(1,'0'::Decimal32(1),NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -3727,16 +4013,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('0'::Decimal32(1),NULL)
+(1,'0'::Decimal32(1),NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -3756,16 +4044,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('0'::Decimal32(1),NULL)
+(1,'0'::Decimal32(1),NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -3777,6 +4067,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -3796,11 +4087,13 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	'-9999999.9'::Decimal32(1),
 	'9999999.9'::Decimal32(1)
 )
@@ -3809,6 +4102,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -3828,16 +4122,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('-9999999.9'::Decimal32(1),'9999999.9'::Decimal32(1))
+(1,'-9999999.9'::Decimal32(1),'9999999.9'::Decimal32(1))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -3857,16 +4153,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('-9999999.9'::Decimal32(1),'9999999.9'::Decimal32(1))
+(1,'-9999999.9'::Decimal32(1),'9999999.9'::Decimal32(1))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -3886,16 +4184,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('-9999999.9'::Decimal32(1),'9999999.9'::Decimal32(1))
+(1,'-9999999.9'::Decimal32(1),'9999999.9'::Decimal32(1))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -3907,6 +4207,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -3926,11 +4227,13 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	toDecimal32('0', 7),
 	NULL
 )
@@ -3939,6 +4242,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -3958,16 +4262,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal32('0', 7),NULL)
+(1,toDecimal32('0', 7),NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -3987,16 +4293,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal32('0', 7),NULL)
+(1,toDecimal32('0', 7),NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -4016,16 +4324,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal32('0', 7),NULL)
+(1,toDecimal32('0', 7),NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -4037,6 +4347,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -4056,11 +4367,13 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	toDecimal32('-9.9999999', 7),
 	toDecimal32('9.9999999', 7)
 )
@@ -4069,6 +4382,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -4088,16 +4402,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal32('-9.9999999', 7),toDecimal32('9.9999999', 7))
+(1,toDecimal32('-9.9999999', 7),toDecimal32('9.9999999', 7))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -4117,16 +4433,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal32('-9.9999999', 7),toDecimal32('9.9999999', 7))
+(1,toDecimal32('-9.9999999', 7),toDecimal32('9.9999999', 7))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -4146,16 +4464,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal32('-9.9999999', 7),toDecimal32('9.9999999', 7))
+(1,toDecimal32('-9.9999999', 7),toDecimal32('9.9999999', 7))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -4167,6 +4487,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -4186,11 +4507,13 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	'0'::Decimal32(7),
 	NULL
 )
@@ -4199,6 +4522,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -4218,16 +4542,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('0'::Decimal32(7),NULL)
+(1,'0'::Decimal32(7),NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -4247,16 +4573,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('0'::Decimal32(7),NULL)
+(1,'0'::Decimal32(7),NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -4276,16 +4604,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('0'::Decimal32(7),NULL)
+(1,'0'::Decimal32(7),NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -4297,6 +4627,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -4316,11 +4647,13 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	'-9.9999999'::Decimal32(7),
 	'9.9999999'::Decimal32(7)
 )
@@ -4329,6 +4662,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -4348,16 +4682,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('-9.9999999'::Decimal32(7),'9.9999999'::Decimal32(7))
+(1,'-9.9999999'::Decimal32(7),'9.9999999'::Decimal32(7))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -4377,16 +4713,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('-9.9999999'::Decimal32(7),'9.9999999'::Decimal32(7))
+(1,'-9.9999999'::Decimal32(7),'9.9999999'::Decimal32(7))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -4406,16 +4744,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('-9.9999999'::Decimal32(7),'9.9999999'::Decimal32(7))
+(1,'-9.9999999'::Decimal32(7),'9.9999999'::Decimal32(7))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -4427,6 +4767,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -4446,11 +4787,13 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	toDecimal32('0', 8),
 	NULL
 )
@@ -4459,6 +4802,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -4478,16 +4822,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal32('0', 8),NULL)
+(1,toDecimal32('0', 8),NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -4507,16 +4853,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal32('0', 8),NULL)
+(1,toDecimal32('0', 8),NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -4536,16 +4884,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal32('0', 8),NULL)
+(1,toDecimal32('0', 8),NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -4557,6 +4907,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -4576,11 +4927,13 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	toDecimal32('-0.99999999', 8),
 	toDecimal32('0.99999999', 8)
 )
@@ -4589,6 +4942,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -4608,16 +4962,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal32('-0.99999999', 8),toDecimal32('0.99999999', 8))
+(1,toDecimal32('-0.99999999', 8),toDecimal32('0.99999999', 8))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -4637,16 +4993,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal32('-0.99999999', 8),toDecimal32('0.99999999', 8))
+(1,toDecimal32('-0.99999999', 8),toDecimal32('0.99999999', 8))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -4666,16 +5024,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal32('-0.99999999', 8),toDecimal32('0.99999999', 8))
+(1,toDecimal32('-0.99999999', 8),toDecimal32('0.99999999', 8))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -4687,6 +5047,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -4706,11 +5067,13 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	'0'::Decimal32(8),
 	NULL
 )
@@ -4719,6 +5082,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -4738,16 +5102,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('0'::Decimal32(8),NULL)
+(1,'0'::Decimal32(8),NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -4767,16 +5133,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('0'::Decimal32(8),NULL)
+(1,'0'::Decimal32(8),NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -4796,16 +5164,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('0'::Decimal32(8),NULL)
+(1,'0'::Decimal32(8),NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -4817,6 +5187,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -4836,11 +5207,13 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	'-0.99999999'::Decimal32(8),
 	'0.99999999'::Decimal32(8)
 )
@@ -4849,6 +5222,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -4868,16 +5242,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('-0.99999999'::Decimal32(8),'0.99999999'::Decimal32(8))
+(1,'-0.99999999'::Decimal32(8),'0.99999999'::Decimal32(8))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -4897,16 +5273,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('-0.99999999'::Decimal32(8),'0.99999999'::Decimal32(8))
+(1,'-0.99999999'::Decimal32(8),'0.99999999'::Decimal32(8))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -4926,16 +5304,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('-0.99999999'::Decimal32(8),'0.99999999'::Decimal32(8))
+(1,'-0.99999999'::Decimal32(8),'0.99999999'::Decimal32(8))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -4947,6 +5327,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -4966,11 +5347,13 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	toDecimal32('0', 0),
 	NULL
 )
@@ -4979,6 +5362,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -4998,16 +5382,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal32('0', 0),NULL)
+(1,toDecimal32('0', 0),NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -5027,16 +5413,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal32('0', 0),NULL)
+(1,toDecimal32('0', 0),NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -5056,16 +5444,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal32('0', 0),NULL)
+(1,toDecimal32('0', 0),NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -5077,6 +5467,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -5096,11 +5487,13 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	toDecimal32('-999999999', 0),
 	toDecimal32('999999999', 0)
 )
@@ -5109,6 +5502,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -5128,16 +5522,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal32('-999999999', 0),toDecimal32('999999999', 0))
+(1,toDecimal32('-999999999', 0),toDecimal32('999999999', 0))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -5157,16 +5553,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal32('-999999999', 0),toDecimal32('999999999', 0))
+(1,toDecimal32('-999999999', 0),toDecimal32('999999999', 0))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -5186,16 +5584,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal32('-999999999', 0),toDecimal32('999999999', 0))
+(1,toDecimal32('-999999999', 0),toDecimal32('999999999', 0))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -5207,6 +5607,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -5226,11 +5627,13 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	'0'::Decimal32(0),
 	NULL
 )
@@ -5239,6 +5642,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -5258,16 +5662,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('0'::Decimal32(0),NULL)
+(1,'0'::Decimal32(0),NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -5287,16 +5693,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('0'::Decimal32(0),NULL)
+(1,'0'::Decimal32(0),NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -5316,16 +5724,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('0'::Decimal32(0),NULL)
+(1,'0'::Decimal32(0),NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -5337,6 +5747,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -5356,11 +5767,13 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	'-999999999'::Decimal32(0),
 	'999999999'::Decimal32(0)
 )
@@ -5369,6 +5782,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -5388,16 +5802,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('-999999999'::Decimal32(0),'999999999'::Decimal32(0))
+(1,'-999999999'::Decimal32(0),'999999999'::Decimal32(0))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -5417,16 +5833,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('-999999999'::Decimal32(0),'999999999'::Decimal32(0))
+(1,'-999999999'::Decimal32(0),'999999999'::Decimal32(0))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -5446,16 +5864,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('-999999999'::Decimal32(0),'999999999'::Decimal32(0))
+(1,'-999999999'::Decimal32(0),'999999999'::Decimal32(0))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -5467,6 +5887,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -5486,11 +5907,13 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	toDecimal32('0', 1),
 	NULL
 )
@@ -5499,6 +5922,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -5518,16 +5942,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal32('0', 1),NULL)
+(1,toDecimal32('0', 1),NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -5547,16 +5973,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal32('0', 1),NULL)
+(1,toDecimal32('0', 1),NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -5576,16 +6004,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal32('0', 1),NULL)
+(1,toDecimal32('0', 1),NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -5597,6 +6027,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -5616,11 +6047,13 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	toDecimal32('-99999999.9', 1),
 	toDecimal32('99999999.9', 1)
 )
@@ -5629,6 +6062,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -5648,16 +6082,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal32('-99999999.9', 1),toDecimal32('99999999.9', 1))
+(1,toDecimal32('-99999999.9', 1),toDecimal32('99999999.9', 1))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -5677,16 +6113,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal32('-99999999.9', 1),toDecimal32('99999999.9', 1))
+(1,toDecimal32('-99999999.9', 1),toDecimal32('99999999.9', 1))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -5706,16 +6144,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal32('-99999999.9', 1),toDecimal32('99999999.9', 1))
+(1,toDecimal32('-99999999.9', 1),toDecimal32('99999999.9', 1))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -5727,6 +6167,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -5746,11 +6187,13 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	'0'::Decimal32(1),
 	NULL
 )
@@ -5759,6 +6202,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -5778,16 +6222,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('0'::Decimal32(1),NULL)
+(1,'0'::Decimal32(1),NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -5807,16 +6253,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('0'::Decimal32(1),NULL)
+(1,'0'::Decimal32(1),NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -5836,16 +6284,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('0'::Decimal32(1),NULL)
+(1,'0'::Decimal32(1),NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -5857,6 +6307,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -5876,11 +6327,13 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	'-99999999.9'::Decimal32(1),
 	'99999999.9'::Decimal32(1)
 )
@@ -5889,6 +6342,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -5908,16 +6362,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('-99999999.9'::Decimal32(1),'99999999.9'::Decimal32(1))
+(1,'-99999999.9'::Decimal32(1),'99999999.9'::Decimal32(1))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -5937,16 +6393,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('-99999999.9'::Decimal32(1),'99999999.9'::Decimal32(1))
+(1,'-99999999.9'::Decimal32(1),'99999999.9'::Decimal32(1))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -5966,16 +6424,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('-99999999.9'::Decimal32(1),'99999999.9'::Decimal32(1))
+(1,'-99999999.9'::Decimal32(1),'99999999.9'::Decimal32(1))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -5987,6 +6447,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -6006,11 +6467,13 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	toDecimal32('0', 8),
 	NULL
 )
@@ -6019,6 +6482,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -6038,16 +6502,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal32('0', 8),NULL)
+(1,toDecimal32('0', 8),NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -6067,16 +6533,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal32('0', 8),NULL)
+(1,toDecimal32('0', 8),NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -6096,16 +6564,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal32('0', 8),NULL)
+(1,toDecimal32('0', 8),NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -6117,6 +6587,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -6136,11 +6607,13 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	toDecimal32('-9.99999999', 8),
 	toDecimal32('9.99999999', 8)
 )
@@ -6149,6 +6622,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -6168,16 +6642,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal32('-9.99999999', 8),toDecimal32('9.99999999', 8))
+(1,toDecimal32('-9.99999999', 8),toDecimal32('9.99999999', 8))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -6197,16 +6673,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal32('-9.99999999', 8),toDecimal32('9.99999999', 8))
+(1,toDecimal32('-9.99999999', 8),toDecimal32('9.99999999', 8))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -6226,16 +6704,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal32('-9.99999999', 8),toDecimal32('9.99999999', 8))
+(1,toDecimal32('-9.99999999', 8),toDecimal32('9.99999999', 8))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -6247,6 +6727,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -6266,11 +6747,13 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	'0'::Decimal32(8),
 	NULL
 )
@@ -6279,6 +6762,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -6298,16 +6782,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('0'::Decimal32(8),NULL)
+(1,'0'::Decimal32(8),NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -6327,16 +6813,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('0'::Decimal32(8),NULL)
+(1,'0'::Decimal32(8),NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -6356,16 +6844,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('0'::Decimal32(8),NULL)
+(1,'0'::Decimal32(8),NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -6377,6 +6867,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -6396,11 +6887,13 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	'-9.99999999'::Decimal32(8),
 	'9.99999999'::Decimal32(8)
 )
@@ -6409,6 +6902,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -6428,16 +6922,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('-9.99999999'::Decimal32(8),'9.99999999'::Decimal32(8))
+(1,'-9.99999999'::Decimal32(8),'9.99999999'::Decimal32(8))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -6457,16 +6953,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('-9.99999999'::Decimal32(8),'9.99999999'::Decimal32(8))
+(1,'-9.99999999'::Decimal32(8),'9.99999999'::Decimal32(8))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -6486,16 +6984,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('-9.99999999'::Decimal32(8),'9.99999999'::Decimal32(8))
+(1,'-9.99999999'::Decimal32(8),'9.99999999'::Decimal32(8))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -6507,6 +7007,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -6526,11 +7027,13 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	toDecimal32('0', 9),
 	NULL
 )
@@ -6539,6 +7042,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -6558,16 +7062,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal32('0', 9),NULL)
+(1,toDecimal32('0', 9),NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -6587,16 +7093,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal32('0', 9),NULL)
+(1,toDecimal32('0', 9),NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -6616,16 +7124,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal32('0', 9),NULL)
+(1,toDecimal32('0', 9),NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -6637,6 +7147,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -6656,11 +7167,13 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	toDecimal32('-0.999999999', 9),
 	toDecimal32('0.999999999', 9)
 )
@@ -6669,6 +7182,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -6688,16 +7202,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal32('-0.999999999', 9),toDecimal32('0.999999999', 9))
+(1,toDecimal32('-0.999999999', 9),toDecimal32('0.999999999', 9))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -6717,16 +7233,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal32('-0.999999999', 9),toDecimal32('0.999999999', 9))
+(1,toDecimal32('-0.999999999', 9),toDecimal32('0.999999999', 9))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -6746,16 +7264,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal32('-0.999999999', 9),toDecimal32('0.999999999', 9))
+(1,toDecimal32('-0.999999999', 9),toDecimal32('0.999999999', 9))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -6767,6 +7287,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -6786,11 +7307,13 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	'0'::Decimal32(9),
 	NULL
 )
@@ -6799,6 +7322,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -6818,16 +7342,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('0'::Decimal32(9),NULL)
+(1,'0'::Decimal32(9),NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -6847,16 +7373,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('0'::Decimal32(9),NULL)
+(1,'0'::Decimal32(9),NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -6876,16 +7404,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('0'::Decimal32(9),NULL)
+(1,'0'::Decimal32(9),NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -6897,6 +7427,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -6916,11 +7447,13 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	'-0.999999999'::Decimal32(9),
 	'0.999999999'::Decimal32(9)
 )
@@ -6929,6 +7462,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -6948,16 +7482,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('-0.999999999'::Decimal32(9),'0.999999999'::Decimal32(9))
+(1,'-0.999999999'::Decimal32(9),'0.999999999'::Decimal32(9))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -6977,16 +7513,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('-0.999999999'::Decimal32(9),'0.999999999'::Decimal32(9))
+(1,'-0.999999999'::Decimal32(9),'0.999999999'::Decimal32(9))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -7006,16 +7544,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('-0.999999999'::Decimal32(9),'0.999999999'::Decimal32(9))
+(1,'-0.999999999'::Decimal32(9),'0.999999999'::Decimal32(9))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -7027,6 +7567,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -7046,11 +7587,13 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	toDecimal64('0', 0),
 	NULL
 )
@@ -7059,6 +7602,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -7078,16 +7622,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal64('0', 0),NULL)
+(1,toDecimal64('0', 0),NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -7107,16 +7653,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal64('0', 0),NULL)
+(1,toDecimal64('0', 0),NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -7136,16 +7684,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal64('0', 0),NULL)
+(1,toDecimal64('0', 0),NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -7157,6 +7707,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -7176,11 +7727,13 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	toDecimal64('-9999999999', 0),
 	toDecimal64('9999999999', 0)
 )
@@ -7189,6 +7742,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -7208,16 +7762,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal64('-9999999999', 0),toDecimal64('9999999999', 0))
+(1,toDecimal64('-9999999999', 0),toDecimal64('9999999999', 0))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -7237,16 +7793,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal64('-9999999999', 0),toDecimal64('9999999999', 0))
+(1,toDecimal64('-9999999999', 0),toDecimal64('9999999999', 0))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -7266,16 +7824,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal64('-9999999999', 0),toDecimal64('9999999999', 0))
+(1,toDecimal64('-9999999999', 0),toDecimal64('9999999999', 0))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -7287,6 +7847,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -7306,11 +7867,13 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	'0'::Decimal64(0),
 	NULL
 )
@@ -7319,6 +7882,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -7338,16 +7902,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('0'::Decimal64(0),NULL)
+(1,'0'::Decimal64(0),NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -7367,16 +7933,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('0'::Decimal64(0),NULL)
+(1,'0'::Decimal64(0),NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -7396,16 +7964,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('0'::Decimal64(0),NULL)
+(1,'0'::Decimal64(0),NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -7417,6 +7987,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -7436,11 +8007,13 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	'-9999999999'::Decimal64(0),
 	'9999999999'::Decimal64(0)
 )
@@ -7449,6 +8022,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -7468,16 +8042,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('-9999999999'::Decimal64(0),'9999999999'::Decimal64(0))
+(1,'-9999999999'::Decimal64(0),'9999999999'::Decimal64(0))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -7497,16 +8073,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('-9999999999'::Decimal64(0),'9999999999'::Decimal64(0))
+(1,'-9999999999'::Decimal64(0),'9999999999'::Decimal64(0))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -7526,16 +8104,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('-9999999999'::Decimal64(0),'9999999999'::Decimal64(0))
+(1,'-9999999999'::Decimal64(0),'9999999999'::Decimal64(0))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -7547,6 +8127,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -7566,11 +8147,13 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	toDecimal64('0', 1),
 	NULL
 )
@@ -7579,6 +8162,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -7598,16 +8182,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal64('0', 1),NULL)
+(1,toDecimal64('0', 1),NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -7627,16 +8213,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal64('0', 1),NULL)
+(1,toDecimal64('0', 1),NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -7656,16 +8244,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal64('0', 1),NULL)
+(1,toDecimal64('0', 1),NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -7677,6 +8267,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -7696,11 +8287,13 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	toDecimal64('-999999999.9', 1),
 	toDecimal64('999999999.9', 1)
 )
@@ -7709,6 +8302,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -7728,16 +8322,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal64('-999999999.9', 1),toDecimal64('999999999.9', 1))
+(1,toDecimal64('-999999999.9', 1),toDecimal64('999999999.9', 1))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -7757,16 +8353,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal64('-999999999.9', 1),toDecimal64('999999999.9', 1))
+(1,toDecimal64('-999999999.9', 1),toDecimal64('999999999.9', 1))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -7786,16 +8384,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal64('-999999999.9', 1),toDecimal64('999999999.9', 1))
+(1,toDecimal64('-999999999.9', 1),toDecimal64('999999999.9', 1))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -7807,6 +8407,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -7826,11 +8427,13 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	'0'::Decimal64(1),
 	NULL
 )
@@ -7839,6 +8442,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -7858,16 +8462,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('0'::Decimal64(1),NULL)
+(1,'0'::Decimal64(1),NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -7887,16 +8493,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('0'::Decimal64(1),NULL)
+(1,'0'::Decimal64(1),NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -7916,16 +8524,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('0'::Decimal64(1),NULL)
+(1,'0'::Decimal64(1),NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -7937,6 +8547,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -7956,11 +8567,13 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	'-999999999.9'::Decimal64(1),
 	'999999999.9'::Decimal64(1)
 )
@@ -7969,6 +8582,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -7988,16 +8602,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('-999999999.9'::Decimal64(1),'999999999.9'::Decimal64(1))
+(1,'-999999999.9'::Decimal64(1),'999999999.9'::Decimal64(1))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -8017,16 +8633,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('-999999999.9'::Decimal64(1),'999999999.9'::Decimal64(1))
+(1,'-999999999.9'::Decimal64(1),'999999999.9'::Decimal64(1))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -8046,16 +8664,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('-999999999.9'::Decimal64(1),'999999999.9'::Decimal64(1))
+(1,'-999999999.9'::Decimal64(1),'999999999.9'::Decimal64(1))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -8067,6 +8687,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -8086,11 +8707,13 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	toDecimal64('0', 9),
 	NULL
 )
@@ -8099,6 +8722,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -8118,16 +8742,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal64('0', 9),NULL)
+(1,toDecimal64('0', 9),NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -8147,16 +8773,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal64('0', 9),NULL)
+(1,toDecimal64('0', 9),NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -8176,16 +8804,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal64('0', 9),NULL)
+(1,toDecimal64('0', 9),NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -8197,6 +8827,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -8216,11 +8847,13 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	toDecimal64('-9.999999999', 9),
 	toDecimal64('9.999999999', 9)
 )
@@ -8229,6 +8862,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -8248,16 +8882,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal64('-9.999999999', 9),toDecimal64('9.999999999', 9))
+(1,toDecimal64('-9.999999999', 9),toDecimal64('9.999999999', 9))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -8277,16 +8913,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal64('-9.999999999', 9),toDecimal64('9.999999999', 9))
+(1,toDecimal64('-9.999999999', 9),toDecimal64('9.999999999', 9))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -8306,16 +8944,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal64('-9.999999999', 9),toDecimal64('9.999999999', 9))
+(1,toDecimal64('-9.999999999', 9),toDecimal64('9.999999999', 9))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -8327,6 +8967,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -8346,11 +8987,13 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	'0'::Decimal64(9),
 	NULL
 )
@@ -8359,6 +9002,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -8378,16 +9022,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('0'::Decimal64(9),NULL)
+(1,'0'::Decimal64(9),NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -8407,16 +9053,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('0'::Decimal64(9),NULL)
+(1,'0'::Decimal64(9),NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -8436,16 +9084,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('0'::Decimal64(9),NULL)
+(1,'0'::Decimal64(9),NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -8457,6 +9107,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -8476,11 +9127,13 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	'-9.999999999'::Decimal64(9),
 	'9.999999999'::Decimal64(9)
 )
@@ -8489,6 +9142,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -8508,16 +9162,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('-9.999999999'::Decimal64(9),'9.999999999'::Decimal64(9))
+(1,'-9.999999999'::Decimal64(9),'9.999999999'::Decimal64(9))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -8537,16 +9193,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('-9.999999999'::Decimal64(9),'9.999999999'::Decimal64(9))
+(1,'-9.999999999'::Decimal64(9),'9.999999999'::Decimal64(9))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -8566,16 +9224,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('-9.999999999'::Decimal64(9),'9.999999999'::Decimal64(9))
+(1,'-9.999999999'::Decimal64(9),'9.999999999'::Decimal64(9))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -8587,6 +9247,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -8606,11 +9267,13 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	toDecimal64('0', 10),
 	NULL
 )
@@ -8619,6 +9282,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -8638,16 +9302,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal64('0', 10),NULL)
+(1,toDecimal64('0', 10),NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -8667,16 +9333,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal64('0', 10),NULL)
+(1,toDecimal64('0', 10),NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -8696,16 +9364,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal64('0', 10),NULL)
+(1,toDecimal64('0', 10),NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -8717,6 +9387,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -8736,11 +9407,13 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	toDecimal64('-0.9999999999', 10),
 	toDecimal64('0.9999999999', 10)
 )
@@ -8749,6 +9422,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -8768,16 +9442,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal64('-0.9999999999', 10),toDecimal64('0.9999999999', 10))
+(1,toDecimal64('-0.9999999999', 10),toDecimal64('0.9999999999', 10))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -8797,16 +9473,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal64('-0.9999999999', 10),toDecimal64('0.9999999999', 10))
+(1,toDecimal64('-0.9999999999', 10),toDecimal64('0.9999999999', 10))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -8826,16 +9504,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal64('-0.9999999999', 10),toDecimal64('0.9999999999', 10))
+(1,toDecimal64('-0.9999999999', 10),toDecimal64('0.9999999999', 10))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -8847,6 +9527,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -8866,11 +9547,13 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	'0'::Decimal64(10),
 	NULL
 )
@@ -8879,6 +9562,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -8898,16 +9582,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('0'::Decimal64(10),NULL)
+(1,'0'::Decimal64(10),NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -8927,16 +9613,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('0'::Decimal64(10),NULL)
+(1,'0'::Decimal64(10),NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -8956,16 +9644,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('0'::Decimal64(10),NULL)
+(1,'0'::Decimal64(10),NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -8977,6 +9667,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -8996,11 +9687,13 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	'-0.9999999999'::Decimal64(10),
 	'0.9999999999'::Decimal64(10)
 )
@@ -9009,6 +9702,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -9028,16 +9722,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('-0.9999999999'::Decimal64(10),'0.9999999999'::Decimal64(10))
+(1,'-0.9999999999'::Decimal64(10),'0.9999999999'::Decimal64(10))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -9057,16 +9753,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('-0.9999999999'::Decimal64(10),'0.9999999999'::Decimal64(10))
+(1,'-0.9999999999'::Decimal64(10),'0.9999999999'::Decimal64(10))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -9086,16 +9784,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('-0.9999999999'::Decimal64(10),'0.9999999999'::Decimal64(10))
+(1,'-0.9999999999'::Decimal64(10),'0.9999999999'::Decimal64(10))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -9107,6 +9807,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -9126,11 +9827,13 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	toDecimal64('0', 0),
 	NULL
 )
@@ -9139,6 +9842,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -9158,16 +9862,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal64('0', 0),NULL)
+(1,toDecimal64('0', 0),NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -9187,16 +9893,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal64('0', 0),NULL)
+(1,toDecimal64('0', 0),NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -9216,16 +9924,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal64('0', 0),NULL)
+(1,toDecimal64('0', 0),NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -9237,6 +9947,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -9256,11 +9967,13 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	toDecimal64('-99999999999', 0),
 	toDecimal64('99999999999', 0)
 )
@@ -9269,6 +9982,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -9288,16 +10002,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal64('-99999999999', 0),toDecimal64('99999999999', 0))
+(1,toDecimal64('-99999999999', 0),toDecimal64('99999999999', 0))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -9317,16 +10033,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal64('-99999999999', 0),toDecimal64('99999999999', 0))
+(1,toDecimal64('-99999999999', 0),toDecimal64('99999999999', 0))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -9346,16 +10064,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal64('-99999999999', 0),toDecimal64('99999999999', 0))
+(1,toDecimal64('-99999999999', 0),toDecimal64('99999999999', 0))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -9367,6 +10087,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -9386,11 +10107,13 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	'0'::Decimal64(0),
 	NULL
 )
@@ -9399,6 +10122,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -9418,16 +10142,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('0'::Decimal64(0),NULL)
+(1,'0'::Decimal64(0),NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -9447,16 +10173,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('0'::Decimal64(0),NULL)
+(1,'0'::Decimal64(0),NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -9476,16 +10204,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('0'::Decimal64(0),NULL)
+(1,'0'::Decimal64(0),NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -9497,6 +10227,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -9516,11 +10247,13 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	'-99999999999'::Decimal64(0),
 	'99999999999'::Decimal64(0)
 )
@@ -9529,6 +10262,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -9548,16 +10282,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('-99999999999'::Decimal64(0),'99999999999'::Decimal64(0))
+(1,'-99999999999'::Decimal64(0),'99999999999'::Decimal64(0))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -9577,16 +10313,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('-99999999999'::Decimal64(0),'99999999999'::Decimal64(0))
+(1,'-99999999999'::Decimal64(0),'99999999999'::Decimal64(0))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -9606,16 +10344,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('-99999999999'::Decimal64(0),'99999999999'::Decimal64(0))
+(1,'-99999999999'::Decimal64(0),'99999999999'::Decimal64(0))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -9627,6 +10367,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -9646,11 +10387,13 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	toDecimal64('0', 1),
 	NULL
 )
@@ -9659,6 +10402,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -9678,16 +10422,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal64('0', 1),NULL)
+(1,toDecimal64('0', 1),NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -9707,16 +10453,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal64('0', 1),NULL)
+(1,toDecimal64('0', 1),NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -9736,16 +10484,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal64('0', 1),NULL)
+(1,toDecimal64('0', 1),NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -9757,6 +10507,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -9776,11 +10527,13 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	toDecimal64('-9999999999.9', 1),
 	toDecimal64('9999999999.9', 1)
 )
@@ -9789,6 +10542,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -9808,16 +10562,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal64('-9999999999.9', 1),toDecimal64('9999999999.9', 1))
+(1,toDecimal64('-9999999999.9', 1),toDecimal64('9999999999.9', 1))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -9837,16 +10593,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal64('-9999999999.9', 1),toDecimal64('9999999999.9', 1))
+(1,toDecimal64('-9999999999.9', 1),toDecimal64('9999999999.9', 1))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -9866,16 +10624,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal64('-9999999999.9', 1),toDecimal64('9999999999.9', 1))
+(1,toDecimal64('-9999999999.9', 1),toDecimal64('9999999999.9', 1))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -9887,6 +10647,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -9906,11 +10667,13 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	'0'::Decimal64(1),
 	NULL
 )
@@ -9919,6 +10682,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -9938,16 +10702,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('0'::Decimal64(1),NULL)
+(1,'0'::Decimal64(1),NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -9967,16 +10733,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('0'::Decimal64(1),NULL)
+(1,'0'::Decimal64(1),NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -9996,16 +10764,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('0'::Decimal64(1),NULL)
+(1,'0'::Decimal64(1),NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -10017,6 +10787,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -10036,11 +10807,13 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	'-9999999999.9'::Decimal64(1),
 	'9999999999.9'::Decimal64(1)
 )
@@ -10049,6 +10822,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -10068,16 +10842,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('-9999999999.9'::Decimal64(1),'9999999999.9'::Decimal64(1))
+(1,'-9999999999.9'::Decimal64(1),'9999999999.9'::Decimal64(1))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -10097,16 +10873,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('-9999999999.9'::Decimal64(1),'9999999999.9'::Decimal64(1))
+(1,'-9999999999.9'::Decimal64(1),'9999999999.9'::Decimal64(1))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -10126,16 +10904,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('-9999999999.9'::Decimal64(1),'9999999999.9'::Decimal64(1))
+(1,'-9999999999.9'::Decimal64(1),'9999999999.9'::Decimal64(1))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -10147,6 +10927,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -10166,11 +10947,13 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	toDecimal64('0', 10),
 	NULL
 )
@@ -10179,6 +10962,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -10198,16 +10982,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal64('0', 10),NULL)
+(1,toDecimal64('0', 10),NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -10227,16 +11013,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal64('0', 10),NULL)
+(1,toDecimal64('0', 10),NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -10256,16 +11044,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal64('0', 10),NULL)
+(1,toDecimal64('0', 10),NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -10277,6 +11067,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -10296,11 +11087,13 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	toDecimal64('-9.9999999999', 10),
 	toDecimal64('9.9999999999', 10)
 )
@@ -10309,6 +11102,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -10328,16 +11122,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal64('-9.9999999999', 10),toDecimal64('9.9999999999', 10))
+(1,toDecimal64('-9.9999999999', 10),toDecimal64('9.9999999999', 10))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -10357,16 +11153,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal64('-9.9999999999', 10),toDecimal64('9.9999999999', 10))
+(1,toDecimal64('-9.9999999999', 10),toDecimal64('9.9999999999', 10))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -10386,16 +11184,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal64('-9.9999999999', 10),toDecimal64('9.9999999999', 10))
+(1,toDecimal64('-9.9999999999', 10),toDecimal64('9.9999999999', 10))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -10407,6 +11207,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -10426,11 +11227,13 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	'0'::Decimal64(10),
 	NULL
 )
@@ -10439,6 +11242,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -10458,16 +11262,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('0'::Decimal64(10),NULL)
+(1,'0'::Decimal64(10),NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -10487,16 +11293,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('0'::Decimal64(10),NULL)
+(1,'0'::Decimal64(10),NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -10516,16 +11324,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('0'::Decimal64(10),NULL)
+(1,'0'::Decimal64(10),NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -10537,6 +11347,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -10556,11 +11367,13 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	'-9.9999999999'::Decimal64(10),
 	'9.9999999999'::Decimal64(10)
 )
@@ -10569,6 +11382,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -10588,16 +11402,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('-9.9999999999'::Decimal64(10),'9.9999999999'::Decimal64(10))
+(1,'-9.9999999999'::Decimal64(10),'9.9999999999'::Decimal64(10))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -10617,16 +11433,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('-9.9999999999'::Decimal64(10),'9.9999999999'::Decimal64(10))
+(1,'-9.9999999999'::Decimal64(10),'9.9999999999'::Decimal64(10))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -10646,16 +11464,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('-9.9999999999'::Decimal64(10),'9.9999999999'::Decimal64(10))
+(1,'-9.9999999999'::Decimal64(10),'9.9999999999'::Decimal64(10))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -10667,6 +11487,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -10686,11 +11507,13 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	toDecimal64('0', 11),
 	NULL
 )
@@ -10699,6 +11522,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -10718,16 +11542,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal64('0', 11),NULL)
+(1,toDecimal64('0', 11),NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -10747,16 +11573,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal64('0', 11),NULL)
+(1,toDecimal64('0', 11),NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -10776,16 +11604,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal64('0', 11),NULL)
+(1,toDecimal64('0', 11),NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -10797,6 +11627,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -10816,11 +11647,13 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	toDecimal64('-0.99999999999', 11),
 	toDecimal64('0.99999999999', 11)
 )
@@ -10829,6 +11662,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -10848,16 +11682,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal64('-0.99999999999', 11),toDecimal64('0.99999999999', 11))
+(1,toDecimal64('-0.99999999999', 11),toDecimal64('0.99999999999', 11))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -10877,16 +11713,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal64('-0.99999999999', 11),toDecimal64('0.99999999999', 11))
+(1,toDecimal64('-0.99999999999', 11),toDecimal64('0.99999999999', 11))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -10906,16 +11744,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal64('-0.99999999999', 11),toDecimal64('0.99999999999', 11))
+(1,toDecimal64('-0.99999999999', 11),toDecimal64('0.99999999999', 11))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -10927,6 +11767,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -10946,11 +11787,13 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	'0'::Decimal64(11),
 	NULL
 )
@@ -10959,6 +11802,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -10978,16 +11822,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('0'::Decimal64(11),NULL)
+(1,'0'::Decimal64(11),NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -11007,16 +11853,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('0'::Decimal64(11),NULL)
+(1,'0'::Decimal64(11),NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -11036,16 +11884,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('0'::Decimal64(11),NULL)
+(1,'0'::Decimal64(11),NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -11057,6 +11907,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -11076,11 +11927,13 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	'-0.99999999999'::Decimal64(11),
 	'0.99999999999'::Decimal64(11)
 )
@@ -11089,6 +11942,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -11108,16 +11962,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('-0.99999999999'::Decimal64(11),'0.99999999999'::Decimal64(11))
+(1,'-0.99999999999'::Decimal64(11),'0.99999999999'::Decimal64(11))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -11137,16 +11993,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('-0.99999999999'::Decimal64(11),'0.99999999999'::Decimal64(11))
+(1,'-0.99999999999'::Decimal64(11),'0.99999999999'::Decimal64(11))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -11166,16 +12024,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('-0.99999999999'::Decimal64(11),'0.99999999999'::Decimal64(11))
+(1,'-0.99999999999'::Decimal64(11),'0.99999999999'::Decimal64(11))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -11187,6 +12047,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -11206,11 +12067,13 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	toDecimal64('0', 0),
 	NULL
 )
@@ -11219,6 +12082,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -11238,16 +12102,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal64('0', 0),NULL)
+(1,toDecimal64('0', 0),NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -11267,16 +12133,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal64('0', 0),NULL)
+(1,toDecimal64('0', 0),NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -11296,16 +12164,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal64('0', 0),NULL)
+(1,toDecimal64('0', 0),NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -11317,6 +12187,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -11337,11 +12208,13 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	toDecimal64('-99999999999999999', 0),
 	toDecimal64('99999999999999999', 0)
 )
@@ -11350,6 +12223,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -11370,16 +12244,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal64('-99999999999999999', 0),toDecimal64('99999999999999999', 0))
+(1,toDecimal64('-99999999999999999', 0),toDecimal64('99999999999999999', 0))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -11400,16 +12276,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal64('-99999999999999999', 0),toDecimal64('99999999999999999', 0))
+(1,toDecimal64('-99999999999999999', 0),toDecimal64('99999999999999999', 0))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -11430,16 +12308,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal64('-99999999999999999', 0),toDecimal64('99999999999999999', 0))
+(1,toDecimal64('-99999999999999999', 0),toDecimal64('99999999999999999', 0))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -11452,6 +12332,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -11471,11 +12352,13 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	'0'::Decimal64(0),
 	NULL
 )
@@ -11484,6 +12367,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -11503,16 +12387,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('0'::Decimal64(0),NULL)
+(1,'0'::Decimal64(0),NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -11532,16 +12418,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('0'::Decimal64(0),NULL)
+(1,'0'::Decimal64(0),NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -11561,16 +12449,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('0'::Decimal64(0),NULL)
+(1,'0'::Decimal64(0),NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -11582,6 +12472,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -11601,11 +12492,13 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	'-99999999999999999'::Decimal64(0),
 	'99999999999999999'::Decimal64(0)
 )
@@ -11614,6 +12507,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -11633,16 +12527,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('-99999999999999999'::Decimal64(0),'99999999999999999'::Decimal64(0))
+(1,'-99999999999999999'::Decimal64(0),'99999999999999999'::Decimal64(0))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -11662,16 +12558,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('-99999999999999999'::Decimal64(0),'99999999999999999'::Decimal64(0))
+(1,'-99999999999999999'::Decimal64(0),'99999999999999999'::Decimal64(0))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -11691,16 +12589,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('-99999999999999999'::Decimal64(0),'99999999999999999'::Decimal64(0))
+(1,'-99999999999999999'::Decimal64(0),'99999999999999999'::Decimal64(0))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -11712,6 +12612,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -11731,11 +12632,13 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	toDecimal64('0', 1),
 	NULL
 )
@@ -11744,6 +12647,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -11763,16 +12667,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal64('0', 1),NULL)
+(1,toDecimal64('0', 1),NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -11792,16 +12698,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal64('0', 1),NULL)
+(1,toDecimal64('0', 1),NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -11821,16 +12729,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal64('0', 1),NULL)
+(1,toDecimal64('0', 1),NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -11842,6 +12752,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -11862,11 +12773,13 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	toDecimal64('-9999999999999999.9', 1),
 	toDecimal64('9999999999999999.9', 1)
 )
@@ -11875,6 +12788,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -11895,16 +12809,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal64('-9999999999999999.9', 1),toDecimal64('9999999999999999.9', 1))
+(1,toDecimal64('-9999999999999999.9', 1),toDecimal64('9999999999999999.9', 1))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -11925,16 +12841,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal64('-9999999999999999.9', 1),toDecimal64('9999999999999999.9', 1))
+(1,toDecimal64('-9999999999999999.9', 1),toDecimal64('9999999999999999.9', 1))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -11955,16 +12873,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal64('-9999999999999999.9', 1),toDecimal64('9999999999999999.9', 1))
+(1,toDecimal64('-9999999999999999.9', 1),toDecimal64('9999999999999999.9', 1))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -11977,6 +12897,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -11996,11 +12917,13 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	'0'::Decimal64(1),
 	NULL
 )
@@ -12009,6 +12932,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -12028,16 +12952,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('0'::Decimal64(1),NULL)
+(1,'0'::Decimal64(1),NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -12057,16 +12983,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('0'::Decimal64(1),NULL)
+(1,'0'::Decimal64(1),NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -12086,16 +13014,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('0'::Decimal64(1),NULL)
+(1,'0'::Decimal64(1),NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -12107,6 +13037,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -12127,11 +13058,13 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	'-9999999999999999.9'::Decimal64(1),
 	'9999999999999999.9'::Decimal64(1)
 )
@@ -12140,6 +13073,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -12160,16 +13094,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('-9999999999999999.9'::Decimal64(1),'9999999999999999.9'::Decimal64(1))
+(1,'-9999999999999999.9'::Decimal64(1),'9999999999999999.9'::Decimal64(1))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -12190,16 +13126,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('-9999999999999999.9'::Decimal64(1),'9999999999999999.9'::Decimal64(1))
+(1,'-9999999999999999.9'::Decimal64(1),'9999999999999999.9'::Decimal64(1))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -12220,16 +13158,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('-9999999999999999.9'::Decimal64(1),'9999999999999999.9'::Decimal64(1))
+(1,'-9999999999999999.9'::Decimal64(1),'9999999999999999.9'::Decimal64(1))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -12242,6 +13182,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -12261,11 +13202,13 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	toDecimal64('0', 16),
 	NULL
 )
@@ -12274,6 +13217,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -12293,16 +13237,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal64('0', 16),NULL)
+(1,toDecimal64('0', 16),NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -12322,16 +13268,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal64('0', 16),NULL)
+(1,toDecimal64('0', 16),NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -12351,16 +13299,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal64('0', 16),NULL)
+(1,toDecimal64('0', 16),NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -12372,6 +13322,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -12392,11 +13343,13 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	toDecimal64('-9.9999999999999999', 16),
 	toDecimal64('9.9999999999999999', 16)
 )
@@ -12405,6 +13358,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -12425,16 +13379,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal64('-9.9999999999999999', 16),toDecimal64('9.9999999999999999', 16))
+(1,toDecimal64('-9.9999999999999999', 16),toDecimal64('9.9999999999999999', 16))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -12455,16 +13411,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal64('-9.9999999999999999', 16),toDecimal64('9.9999999999999999', 16))
+(1,toDecimal64('-9.9999999999999999', 16),toDecimal64('9.9999999999999999', 16))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -12485,16 +13443,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal64('-9.9999999999999999', 16),toDecimal64('9.9999999999999999', 16))
+(1,toDecimal64('-9.9999999999999999', 16),toDecimal64('9.9999999999999999', 16))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -12507,6 +13467,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -12526,11 +13487,13 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	'0'::Decimal64(16),
 	NULL
 )
@@ -12539,6 +13502,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -12558,16 +13522,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('0'::Decimal64(16),NULL)
+(1,'0'::Decimal64(16),NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -12587,16 +13553,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('0'::Decimal64(16),NULL)
+(1,'0'::Decimal64(16),NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -12616,16 +13584,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('0'::Decimal64(16),NULL)
+(1,'0'::Decimal64(16),NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -12637,6 +13607,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -12657,11 +13628,13 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	'-9.9999999999999999'::Decimal64(16),
 	'9.9999999999999999'::Decimal64(16)
 )
@@ -12670,6 +13643,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -12690,16 +13664,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('-9.9999999999999999'::Decimal64(16),'9.9999999999999999'::Decimal64(16))
+(1,'-9.9999999999999999'::Decimal64(16),'9.9999999999999999'::Decimal64(16))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -12720,16 +13696,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('-9.9999999999999999'::Decimal64(16),'9.9999999999999999'::Decimal64(16))
+(1,'-9.9999999999999999'::Decimal64(16),'9.9999999999999999'::Decimal64(16))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -12750,16 +13728,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('-9.9999999999999999'::Decimal64(16),'9.9999999999999999'::Decimal64(16))
+(1,'-9.9999999999999999'::Decimal64(16),'9.9999999999999999'::Decimal64(16))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -12772,6 +13752,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -12791,11 +13772,13 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	toDecimal64('0', 17),
 	NULL
 )
@@ -12804,6 +13787,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -12823,16 +13807,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal64('0', 17),NULL)
+(1,toDecimal64('0', 17),NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -12852,16 +13838,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal64('0', 17),NULL)
+(1,toDecimal64('0', 17),NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -12881,16 +13869,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal64('0', 17),NULL)
+(1,toDecimal64('0', 17),NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -12902,6 +13892,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -12922,11 +13913,13 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	toDecimal64('-0.99999999999999999', 17),
 	toDecimal64('0.99999999999999999', 17)
 )
@@ -12935,6 +13928,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -12955,16 +13949,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal64('-0.99999999999999999', 17),toDecimal64('0.99999999999999999', 17))
+(1,toDecimal64('-0.99999999999999999', 17),toDecimal64('0.99999999999999999', 17))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -12985,16 +13981,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal64('-0.99999999999999999', 17),toDecimal64('0.99999999999999999', 17))
+(1,toDecimal64('-0.99999999999999999', 17),toDecimal64('0.99999999999999999', 17))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -13015,16 +14013,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal64('-0.99999999999999999', 17),toDecimal64('0.99999999999999999', 17))
+(1,toDecimal64('-0.99999999999999999', 17),toDecimal64('0.99999999999999999', 17))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -13037,6 +14037,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -13056,11 +14057,13 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	'0'::Decimal64(17),
 	NULL
 )
@@ -13069,6 +14072,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -13088,16 +14092,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('0'::Decimal64(17),NULL)
+(1,'0'::Decimal64(17),NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -13117,16 +14123,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('0'::Decimal64(17),NULL)
+(1,'0'::Decimal64(17),NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -13146,16 +14154,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('0'::Decimal64(17),NULL)
+(1,'0'::Decimal64(17),NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -13167,6 +14177,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -13187,11 +14198,13 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	'-0.99999999999999999'::Decimal64(17),
 	'0.99999999999999999'::Decimal64(17)
 )
@@ -13200,6 +14213,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -13220,16 +14234,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('-0.99999999999999999'::Decimal64(17),'0.99999999999999999'::Decimal64(17))
+(1,'-0.99999999999999999'::Decimal64(17),'0.99999999999999999'::Decimal64(17))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -13250,16 +14266,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('-0.99999999999999999'::Decimal64(17),'0.99999999999999999'::Decimal64(17))
+(1,'-0.99999999999999999'::Decimal64(17),'0.99999999999999999'::Decimal64(17))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -13280,16 +14298,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('-0.99999999999999999'::Decimal64(17),'0.99999999999999999'::Decimal64(17))
+(1,'-0.99999999999999999'::Decimal64(17),'0.99999999999999999'::Decimal64(17))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -13302,6 +14322,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -13321,11 +14342,13 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	toDecimal64('0', 0),
 	NULL
 )
@@ -13334,6 +14357,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -13353,16 +14377,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal64('0', 0),NULL)
+(1,toDecimal64('0', 0),NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -13382,16 +14408,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal64('0', 0),NULL)
+(1,toDecimal64('0', 0),NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -13411,16 +14439,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal64('0', 0),NULL)
+(1,toDecimal64('0', 0),NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -13432,6 +14462,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -13452,11 +14483,13 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	toDecimal64('-999999999999999999', 0),
 	toDecimal64('999999999999999999', 0)
 )
@@ -13465,6 +14498,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -13485,16 +14519,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal64('-999999999999999999', 0),toDecimal64('999999999999999999', 0))
+(1,toDecimal64('-999999999999999999', 0),toDecimal64('999999999999999999', 0))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -13515,16 +14551,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal64('-999999999999999999', 0),toDecimal64('999999999999999999', 0))
+(1,toDecimal64('-999999999999999999', 0),toDecimal64('999999999999999999', 0))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -13545,16 +14583,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal64('-999999999999999999', 0),toDecimal64('999999999999999999', 0))
+(1,toDecimal64('-999999999999999999', 0),toDecimal64('999999999999999999', 0))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -13567,6 +14607,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -13586,11 +14627,13 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	'0'::Decimal64(0),
 	NULL
 )
@@ -13599,6 +14642,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -13618,16 +14662,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('0'::Decimal64(0),NULL)
+(1,'0'::Decimal64(0),NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -13647,16 +14693,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('0'::Decimal64(0),NULL)
+(1,'0'::Decimal64(0),NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -13676,16 +14724,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('0'::Decimal64(0),NULL)
+(1,'0'::Decimal64(0),NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -13697,6 +14747,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -13717,11 +14768,13 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	'-999999999999999999'::Decimal64(0),
 	'999999999999999999'::Decimal64(0)
 )
@@ -13730,6 +14783,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -13750,16 +14804,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('-999999999999999999'::Decimal64(0),'999999999999999999'::Decimal64(0))
+(1,'-999999999999999999'::Decimal64(0),'999999999999999999'::Decimal64(0))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -13780,16 +14836,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('-999999999999999999'::Decimal64(0),'999999999999999999'::Decimal64(0))
+(1,'-999999999999999999'::Decimal64(0),'999999999999999999'::Decimal64(0))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -13810,16 +14868,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('-999999999999999999'::Decimal64(0),'999999999999999999'::Decimal64(0))
+(1,'-999999999999999999'::Decimal64(0),'999999999999999999'::Decimal64(0))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -13832,6 +14892,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -13851,11 +14912,13 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	toDecimal64('0', 1),
 	NULL
 )
@@ -13864,6 +14927,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -13883,16 +14947,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal64('0', 1),NULL)
+(1,toDecimal64('0', 1),NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -13912,16 +14978,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal64('0', 1),NULL)
+(1,toDecimal64('0', 1),NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -13941,16 +15009,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal64('0', 1),NULL)
+(1,toDecimal64('0', 1),NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -13962,6 +15032,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -13982,11 +15053,13 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	toDecimal64('-99999999999999999.9', 1),
 	toDecimal64('99999999999999999.9', 1)
 )
@@ -13995,6 +15068,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -14015,16 +15089,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal64('-99999999999999999.9', 1),toDecimal64('99999999999999999.9', 1))
+(1,toDecimal64('-99999999999999999.9', 1),toDecimal64('99999999999999999.9', 1))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -14045,16 +15121,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal64('-99999999999999999.9', 1),toDecimal64('99999999999999999.9', 1))
+(1,toDecimal64('-99999999999999999.9', 1),toDecimal64('99999999999999999.9', 1))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -14075,16 +15153,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal64('-99999999999999999.9', 1),toDecimal64('99999999999999999.9', 1))
+(1,toDecimal64('-99999999999999999.9', 1),toDecimal64('99999999999999999.9', 1))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -14097,6 +15177,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -14116,11 +15197,13 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	'0'::Decimal64(1),
 	NULL
 )
@@ -14129,6 +15212,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -14148,16 +15232,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('0'::Decimal64(1),NULL)
+(1,'0'::Decimal64(1),NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -14177,16 +15263,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('0'::Decimal64(1),NULL)
+(1,'0'::Decimal64(1),NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -14206,16 +15294,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('0'::Decimal64(1),NULL)
+(1,'0'::Decimal64(1),NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -14227,6 +15317,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -14247,11 +15338,13 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	'-99999999999999999.9'::Decimal64(1),
 	'99999999999999999.9'::Decimal64(1)
 )
@@ -14260,6 +15353,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -14280,16 +15374,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('-99999999999999999.9'::Decimal64(1),'99999999999999999.9'::Decimal64(1))
+(1,'-99999999999999999.9'::Decimal64(1),'99999999999999999.9'::Decimal64(1))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -14310,16 +15406,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('-99999999999999999.9'::Decimal64(1),'99999999999999999.9'::Decimal64(1))
+(1,'-99999999999999999.9'::Decimal64(1),'99999999999999999.9'::Decimal64(1))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -14340,16 +15438,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('-99999999999999999.9'::Decimal64(1),'99999999999999999.9'::Decimal64(1))
+(1,'-99999999999999999.9'::Decimal64(1),'99999999999999999.9'::Decimal64(1))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -14362,6 +15462,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -14381,11 +15482,13 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	toDecimal64('0', 17),
 	NULL
 )
@@ -14394,6 +15497,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -14413,16 +15517,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal64('0', 17),NULL)
+(1,toDecimal64('0', 17),NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -14442,16 +15548,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal64('0', 17),NULL)
+(1,toDecimal64('0', 17),NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -14471,16 +15579,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal64('0', 17),NULL)
+(1,toDecimal64('0', 17),NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -14492,6 +15602,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -14512,11 +15623,13 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	toDecimal64('-9.99999999999999999', 17),
 	toDecimal64('9.99999999999999999', 17)
 )
@@ -14525,6 +15638,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -14545,16 +15659,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal64('-9.99999999999999999', 17),toDecimal64('9.99999999999999999', 17))
+(1,toDecimal64('-9.99999999999999999', 17),toDecimal64('9.99999999999999999', 17))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -14575,16 +15691,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal64('-9.99999999999999999', 17),toDecimal64('9.99999999999999999', 17))
+(1,toDecimal64('-9.99999999999999999', 17),toDecimal64('9.99999999999999999', 17))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -14605,16 +15723,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal64('-9.99999999999999999', 17),toDecimal64('9.99999999999999999', 17))
+(1,toDecimal64('-9.99999999999999999', 17),toDecimal64('9.99999999999999999', 17))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -14627,6 +15747,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -14646,11 +15767,13 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	'0'::Decimal64(17),
 	NULL
 )
@@ -14659,6 +15782,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -14678,16 +15802,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('0'::Decimal64(17),NULL)
+(1,'0'::Decimal64(17),NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -14707,16 +15833,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('0'::Decimal64(17),NULL)
+(1,'0'::Decimal64(17),NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -14736,16 +15864,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('0'::Decimal64(17),NULL)
+(1,'0'::Decimal64(17),NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -14757,6 +15887,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -14777,11 +15908,13 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	'-9.99999999999999999'::Decimal64(17),
 	'9.99999999999999999'::Decimal64(17)
 )
@@ -14790,6 +15923,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -14810,16 +15944,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('-9.99999999999999999'::Decimal64(17),'9.99999999999999999'::Decimal64(17))
+(1,'-9.99999999999999999'::Decimal64(17),'9.99999999999999999'::Decimal64(17))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -14840,16 +15976,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('-9.99999999999999999'::Decimal64(17),'9.99999999999999999'::Decimal64(17))
+(1,'-9.99999999999999999'::Decimal64(17),'9.99999999999999999'::Decimal64(17))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -14870,16 +16008,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('-9.99999999999999999'::Decimal64(17),'9.99999999999999999'::Decimal64(17))
+(1,'-9.99999999999999999'::Decimal64(17),'9.99999999999999999'::Decimal64(17))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -14892,6 +16032,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -14911,11 +16052,13 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	toDecimal64('0', 18),
 	NULL
 )
@@ -14924,6 +16067,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -14943,16 +16087,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal64('0', 18),NULL)
+(1,toDecimal64('0', 18),NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -14972,16 +16118,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal64('0', 18),NULL)
+(1,toDecimal64('0', 18),NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -15001,16 +16149,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal64('0', 18),NULL)
+(1,toDecimal64('0', 18),NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -15022,6 +16172,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -15042,11 +16193,13 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	toDecimal64('-0.999999999999999999', 18),
 	toDecimal64('0.999999999999999999', 18)
 )
@@ -15055,6 +16208,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -15075,16 +16229,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal64('-0.999999999999999999', 18),toDecimal64('0.999999999999999999', 18))
+(1,toDecimal64('-0.999999999999999999', 18),toDecimal64('0.999999999999999999', 18))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -15105,16 +16261,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal64('-0.999999999999999999', 18),toDecimal64('0.999999999999999999', 18))
+(1,toDecimal64('-0.999999999999999999', 18),toDecimal64('0.999999999999999999', 18))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -15135,16 +16293,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal64('-0.999999999999999999', 18),toDecimal64('0.999999999999999999', 18))
+(1,toDecimal64('-0.999999999999999999', 18),toDecimal64('0.999999999999999999', 18))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -15157,6 +16317,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -15176,11 +16337,13 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	'0'::Decimal64(18),
 	NULL
 )
@@ -15189,6 +16352,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -15208,16 +16372,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('0'::Decimal64(18),NULL)
+(1,'0'::Decimal64(18),NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -15237,16 +16403,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('0'::Decimal64(18),NULL)
+(1,'0'::Decimal64(18),NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -15266,16 +16434,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('0'::Decimal64(18),NULL)
+(1,'0'::Decimal64(18),NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -15287,6 +16457,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -15307,11 +16478,13 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	'-0.999999999999999999'::Decimal64(18),
 	'0.999999999999999999'::Decimal64(18)
 )
@@ -15320,6 +16493,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -15340,16 +16514,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('-0.999999999999999999'::Decimal64(18),'0.999999999999999999'::Decimal64(18))
+(1,'-0.999999999999999999'::Decimal64(18),'0.999999999999999999'::Decimal64(18))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -15370,16 +16546,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('-0.999999999999999999'::Decimal64(18),'0.999999999999999999'::Decimal64(18))
+(1,'-0.999999999999999999'::Decimal64(18),'0.999999999999999999'::Decimal64(18))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -15400,16 +16578,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('-0.999999999999999999'::Decimal64(18),'0.999999999999999999'::Decimal64(18))
+(1,'-0.999999999999999999'::Decimal64(18),'0.999999999999999999'::Decimal64(18))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -15422,6 +16602,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -15441,11 +16622,13 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	toDecimal128('0', 0),
 	NULL
 )
@@ -15454,6 +16637,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -15473,16 +16657,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal128('0', 0),NULL)
+(1,toDecimal128('0', 0),NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -15502,16 +16688,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal128('0', 0),NULL)
+(1,toDecimal128('0', 0),NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -15531,16 +16719,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal128('0', 0),NULL)
+(1,toDecimal128('0', 0),NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -15552,6 +16742,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -15572,11 +16763,13 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	toDecimal128('-9999999999999999999', 0),
 	toDecimal128('9999999999999999999', 0)
 )
@@ -15585,6 +16778,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -15605,16 +16799,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal128('-9999999999999999999', 0),toDecimal128('9999999999999999999', 0))
+(1,toDecimal128('-9999999999999999999', 0),toDecimal128('9999999999999999999', 0))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -15635,16 +16831,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal128('-9999999999999999999', 0),toDecimal128('9999999999999999999', 0))
+(1,toDecimal128('-9999999999999999999', 0),toDecimal128('9999999999999999999', 0))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -15665,16 +16863,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal128('-9999999999999999999', 0),toDecimal128('9999999999999999999', 0))
+(1,toDecimal128('-9999999999999999999', 0),toDecimal128('9999999999999999999', 0))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -15687,6 +16887,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -15706,11 +16907,13 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	'0'::Decimal128(0),
 	NULL
 )
@@ -15719,6 +16922,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -15738,16 +16942,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('0'::Decimal128(0),NULL)
+(1,'0'::Decimal128(0),NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -15767,16 +16973,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('0'::Decimal128(0),NULL)
+(1,'0'::Decimal128(0),NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -15796,16 +17004,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('0'::Decimal128(0),NULL)
+(1,'0'::Decimal128(0),NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -15817,6 +17027,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -15837,11 +17048,13 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	'-9999999999999999999'::Decimal128(0),
 	'9999999999999999999'::Decimal128(0)
 )
@@ -15850,6 +17063,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -15870,16 +17084,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('-9999999999999999999'::Decimal128(0),'9999999999999999999'::Decimal128(0))
+(1,'-9999999999999999999'::Decimal128(0),'9999999999999999999'::Decimal128(0))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -15900,16 +17116,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('-9999999999999999999'::Decimal128(0),'9999999999999999999'::Decimal128(0))
+(1,'-9999999999999999999'::Decimal128(0),'9999999999999999999'::Decimal128(0))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -15930,16 +17148,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('-9999999999999999999'::Decimal128(0),'9999999999999999999'::Decimal128(0))
+(1,'-9999999999999999999'::Decimal128(0),'9999999999999999999'::Decimal128(0))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -15952,6 +17172,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -15971,11 +17192,13 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	toDecimal128('0', 1),
 	NULL
 )
@@ -15984,6 +17207,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -16003,16 +17227,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal128('0', 1),NULL)
+(1,toDecimal128('0', 1),NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -16032,16 +17258,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal128('0', 1),NULL)
+(1,toDecimal128('0', 1),NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -16061,16 +17289,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal128('0', 1),NULL)
+(1,toDecimal128('0', 1),NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -16082,6 +17312,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -16102,11 +17333,13 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	toDecimal128('-999999999999999999.9', 1),
 	toDecimal128('999999999999999999.9', 1)
 )
@@ -16115,6 +17348,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -16135,16 +17369,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal128('-999999999999999999.9', 1),toDecimal128('999999999999999999.9', 1))
+(1,toDecimal128('-999999999999999999.9', 1),toDecimal128('999999999999999999.9', 1))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -16165,16 +17401,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal128('-999999999999999999.9', 1),toDecimal128('999999999999999999.9', 1))
+(1,toDecimal128('-999999999999999999.9', 1),toDecimal128('999999999999999999.9', 1))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -16195,16 +17433,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal128('-999999999999999999.9', 1),toDecimal128('999999999999999999.9', 1))
+(1,toDecimal128('-999999999999999999.9', 1),toDecimal128('999999999999999999.9', 1))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -16217,6 +17457,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -16236,11 +17477,13 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	'0'::Decimal128(1),
 	NULL
 )
@@ -16249,6 +17492,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -16268,16 +17512,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('0'::Decimal128(1),NULL)
+(1,'0'::Decimal128(1),NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -16297,16 +17543,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('0'::Decimal128(1),NULL)
+(1,'0'::Decimal128(1),NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -16326,16 +17574,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('0'::Decimal128(1),NULL)
+(1,'0'::Decimal128(1),NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -16347,6 +17597,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -16367,11 +17618,13 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	'-999999999999999999.9'::Decimal128(1),
 	'999999999999999999.9'::Decimal128(1)
 )
@@ -16380,6 +17633,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -16400,16 +17654,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('-999999999999999999.9'::Decimal128(1),'999999999999999999.9'::Decimal128(1))
+(1,'-999999999999999999.9'::Decimal128(1),'999999999999999999.9'::Decimal128(1))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -16430,16 +17686,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('-999999999999999999.9'::Decimal128(1),'999999999999999999.9'::Decimal128(1))
+(1,'-999999999999999999.9'::Decimal128(1),'999999999999999999.9'::Decimal128(1))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -16460,16 +17718,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('-999999999999999999.9'::Decimal128(1),'999999999999999999.9'::Decimal128(1))
+(1,'-999999999999999999.9'::Decimal128(1),'999999999999999999.9'::Decimal128(1))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -16482,6 +17742,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -16501,11 +17762,13 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	toDecimal128('0', 18),
 	NULL
 )
@@ -16514,6 +17777,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -16533,16 +17797,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal128('0', 18),NULL)
+(1,toDecimal128('0', 18),NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -16562,16 +17828,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal128('0', 18),NULL)
+(1,toDecimal128('0', 18),NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -16591,16 +17859,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal128('0', 18),NULL)
+(1,toDecimal128('0', 18),NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -16612,6 +17882,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -16632,11 +17903,13 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	toDecimal128('-9.999999999999999999', 18),
 	toDecimal128('9.999999999999999999', 18)
 )
@@ -16645,6 +17918,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -16665,16 +17939,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal128('-9.999999999999999999', 18),toDecimal128('9.999999999999999999', 18))
+(1,toDecimal128('-9.999999999999999999', 18),toDecimal128('9.999999999999999999', 18))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -16695,16 +17971,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal128('-9.999999999999999999', 18),toDecimal128('9.999999999999999999', 18))
+(1,toDecimal128('-9.999999999999999999', 18),toDecimal128('9.999999999999999999', 18))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -16725,16 +18003,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal128('-9.999999999999999999', 18),toDecimal128('9.999999999999999999', 18))
+(1,toDecimal128('-9.999999999999999999', 18),toDecimal128('9.999999999999999999', 18))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -16747,6 +18027,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -16766,11 +18047,13 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	'0'::Decimal128(18),
 	NULL
 )
@@ -16779,6 +18062,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -16798,16 +18082,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('0'::Decimal128(18),NULL)
+(1,'0'::Decimal128(18),NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -16827,16 +18113,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('0'::Decimal128(18),NULL)
+(1,'0'::Decimal128(18),NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -16856,16 +18144,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('0'::Decimal128(18),NULL)
+(1,'0'::Decimal128(18),NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -16877,6 +18167,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -16897,11 +18188,13 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	'-9.999999999999999999'::Decimal128(18),
 	'9.999999999999999999'::Decimal128(18)
 )
@@ -16910,6 +18203,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -16930,16 +18224,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('-9.999999999999999999'::Decimal128(18),'9.999999999999999999'::Decimal128(18))
+(1,'-9.999999999999999999'::Decimal128(18),'9.999999999999999999'::Decimal128(18))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -16960,16 +18256,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('-9.999999999999999999'::Decimal128(18),'9.999999999999999999'::Decimal128(18))
+(1,'-9.999999999999999999'::Decimal128(18),'9.999999999999999999'::Decimal128(18))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -16990,16 +18288,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('-9.999999999999999999'::Decimal128(18),'9.999999999999999999'::Decimal128(18))
+(1,'-9.999999999999999999'::Decimal128(18),'9.999999999999999999'::Decimal128(18))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -17012,6 +18312,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -17031,11 +18332,13 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	toDecimal128('0', 19),
 	NULL
 )
@@ -17044,6 +18347,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -17063,16 +18367,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal128('0', 19),NULL)
+(1,toDecimal128('0', 19),NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -17092,16 +18398,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal128('0', 19),NULL)
+(1,toDecimal128('0', 19),NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -17121,16 +18429,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal128('0', 19),NULL)
+(1,toDecimal128('0', 19),NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -17142,6 +18452,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -17162,11 +18473,13 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	toDecimal128('-0.9999999999999999999', 19),
 	toDecimal128('0.9999999999999999999', 19)
 )
@@ -17175,6 +18488,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -17195,16 +18509,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal128('-0.9999999999999999999', 19),toDecimal128('0.9999999999999999999', 19))
+(1,toDecimal128('-0.9999999999999999999', 19),toDecimal128('0.9999999999999999999', 19))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -17225,16 +18541,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal128('-0.9999999999999999999', 19),toDecimal128('0.9999999999999999999', 19))
+(1,toDecimal128('-0.9999999999999999999', 19),toDecimal128('0.9999999999999999999', 19))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -17255,16 +18573,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal128('-0.9999999999999999999', 19),toDecimal128('0.9999999999999999999', 19))
+(1,toDecimal128('-0.9999999999999999999', 19),toDecimal128('0.9999999999999999999', 19))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -17277,6 +18597,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -17296,11 +18617,13 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	'0'::Decimal128(19),
 	NULL
 )
@@ -17309,6 +18632,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -17328,16 +18652,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('0'::Decimal128(19),NULL)
+(1,'0'::Decimal128(19),NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -17357,16 +18683,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('0'::Decimal128(19),NULL)
+(1,'0'::Decimal128(19),NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -17386,16 +18714,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('0'::Decimal128(19),NULL)
+(1,'0'::Decimal128(19),NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -17407,6 +18737,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -17427,11 +18758,13 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	'-0.9999999999999999999'::Decimal128(19),
 	'0.9999999999999999999'::Decimal128(19)
 )
@@ -17440,6 +18773,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -17460,16 +18794,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('-0.9999999999999999999'::Decimal128(19),'0.9999999999999999999'::Decimal128(19))
+(1,'-0.9999999999999999999'::Decimal128(19),'0.9999999999999999999'::Decimal128(19))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -17490,16 +18826,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('-0.9999999999999999999'::Decimal128(19),'0.9999999999999999999'::Decimal128(19))
+(1,'-0.9999999999999999999'::Decimal128(19),'0.9999999999999999999'::Decimal128(19))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -17520,16 +18858,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('-0.9999999999999999999'::Decimal128(19),'0.9999999999999999999'::Decimal128(19))
+(1,'-0.9999999999999999999'::Decimal128(19),'0.9999999999999999999'::Decimal128(19))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -17542,6 +18882,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -17561,11 +18902,13 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	toDecimal128('0', 0),
 	NULL
 )
@@ -17574,6 +18917,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -17593,16 +18937,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal128('0', 0),NULL)
+(1,toDecimal128('0', 0),NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -17622,16 +18968,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal128('0', 0),NULL)
+(1,toDecimal128('0', 0),NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -17651,16 +18999,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal128('0', 0),NULL)
+(1,toDecimal128('0', 0),NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -17672,6 +19022,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -17692,11 +19043,13 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	toDecimal128('-99999999999999999999', 0),
 	toDecimal128('99999999999999999999', 0)
 )
@@ -17705,6 +19058,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -17725,16 +19079,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal128('-99999999999999999999', 0),toDecimal128('99999999999999999999', 0))
+(1,toDecimal128('-99999999999999999999', 0),toDecimal128('99999999999999999999', 0))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -17755,16 +19111,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal128('-99999999999999999999', 0),toDecimal128('99999999999999999999', 0))
+(1,toDecimal128('-99999999999999999999', 0),toDecimal128('99999999999999999999', 0))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -17785,16 +19143,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal128('-99999999999999999999', 0),toDecimal128('99999999999999999999', 0))
+(1,toDecimal128('-99999999999999999999', 0),toDecimal128('99999999999999999999', 0))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -17807,6 +19167,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -17826,11 +19187,13 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	'0'::Decimal128(0),
 	NULL
 )
@@ -17839,6 +19202,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -17858,16 +19222,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('0'::Decimal128(0),NULL)
+(1,'0'::Decimal128(0),NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -17887,16 +19253,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('0'::Decimal128(0),NULL)
+(1,'0'::Decimal128(0),NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -17916,16 +19284,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('0'::Decimal128(0),NULL)
+(1,'0'::Decimal128(0),NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -17937,6 +19307,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -17957,11 +19328,13 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	'-99999999999999999999'::Decimal128(0),
 	'99999999999999999999'::Decimal128(0)
 )
@@ -17970,6 +19343,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -17990,16 +19364,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('-99999999999999999999'::Decimal128(0),'99999999999999999999'::Decimal128(0))
+(1,'-99999999999999999999'::Decimal128(0),'99999999999999999999'::Decimal128(0))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -18020,16 +19396,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('-99999999999999999999'::Decimal128(0),'99999999999999999999'::Decimal128(0))
+(1,'-99999999999999999999'::Decimal128(0),'99999999999999999999'::Decimal128(0))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -18050,16 +19428,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('-99999999999999999999'::Decimal128(0),'99999999999999999999'::Decimal128(0))
+(1,'-99999999999999999999'::Decimal128(0),'99999999999999999999'::Decimal128(0))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -18072,6 +19452,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -18091,11 +19472,13 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	toDecimal128('0', 1),
 	NULL
 )
@@ -18104,6 +19487,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -18123,16 +19507,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal128('0', 1),NULL)
+(1,toDecimal128('0', 1),NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -18152,16 +19538,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal128('0', 1),NULL)
+(1,toDecimal128('0', 1),NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -18181,16 +19569,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal128('0', 1),NULL)
+(1,toDecimal128('0', 1),NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -18202,6 +19592,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -18222,11 +19613,13 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	toDecimal128('-9999999999999999999.9', 1),
 	toDecimal128('9999999999999999999.9', 1)
 )
@@ -18235,6 +19628,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -18255,16 +19649,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal128('-9999999999999999999.9', 1),toDecimal128('9999999999999999999.9', 1))
+(1,toDecimal128('-9999999999999999999.9', 1),toDecimal128('9999999999999999999.9', 1))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -18285,16 +19681,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal128('-9999999999999999999.9', 1),toDecimal128('9999999999999999999.9', 1))
+(1,toDecimal128('-9999999999999999999.9', 1),toDecimal128('9999999999999999999.9', 1))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -18315,16 +19713,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal128('-9999999999999999999.9', 1),toDecimal128('9999999999999999999.9', 1))
+(1,toDecimal128('-9999999999999999999.9', 1),toDecimal128('9999999999999999999.9', 1))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -18337,6 +19737,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -18356,11 +19757,13 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	'0'::Decimal128(1),
 	NULL
 )
@@ -18369,6 +19772,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -18388,16 +19792,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('0'::Decimal128(1),NULL)
+(1,'0'::Decimal128(1),NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -18417,16 +19823,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('0'::Decimal128(1),NULL)
+(1,'0'::Decimal128(1),NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -18446,16 +19854,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('0'::Decimal128(1),NULL)
+(1,'0'::Decimal128(1),NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -18467,6 +19877,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -18487,11 +19898,13 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	'-9999999999999999999.9'::Decimal128(1),
 	'9999999999999999999.9'::Decimal128(1)
 )
@@ -18500,6 +19913,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -18520,16 +19934,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('-9999999999999999999.9'::Decimal128(1),'9999999999999999999.9'::Decimal128(1))
+(1,'-9999999999999999999.9'::Decimal128(1),'9999999999999999999.9'::Decimal128(1))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -18550,16 +19966,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('-9999999999999999999.9'::Decimal128(1),'9999999999999999999.9'::Decimal128(1))
+(1,'-9999999999999999999.9'::Decimal128(1),'9999999999999999999.9'::Decimal128(1))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -18580,16 +19998,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('-9999999999999999999.9'::Decimal128(1),'9999999999999999999.9'::Decimal128(1))
+(1,'-9999999999999999999.9'::Decimal128(1),'9999999999999999999.9'::Decimal128(1))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -18602,6 +20022,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -18621,11 +20042,13 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	toDecimal128('0', 19),
 	NULL
 )
@@ -18634,6 +20057,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -18653,16 +20077,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal128('0', 19),NULL)
+(1,toDecimal128('0', 19),NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -18682,16 +20108,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal128('0', 19),NULL)
+(1,toDecimal128('0', 19),NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -18711,16 +20139,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal128('0', 19),NULL)
+(1,toDecimal128('0', 19),NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -18732,6 +20162,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -18752,11 +20183,13 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	toDecimal128('-9.9999999999999999999', 19),
 	toDecimal128('9.9999999999999999999', 19)
 )
@@ -18765,6 +20198,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -18785,16 +20219,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal128('-9.9999999999999999999', 19),toDecimal128('9.9999999999999999999', 19))
+(1,toDecimal128('-9.9999999999999999999', 19),toDecimal128('9.9999999999999999999', 19))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -18815,16 +20251,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal128('-9.9999999999999999999', 19),toDecimal128('9.9999999999999999999', 19))
+(1,toDecimal128('-9.9999999999999999999', 19),toDecimal128('9.9999999999999999999', 19))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -18845,16 +20283,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal128('-9.9999999999999999999', 19),toDecimal128('9.9999999999999999999', 19))
+(1,toDecimal128('-9.9999999999999999999', 19),toDecimal128('9.9999999999999999999', 19))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -18867,6 +20307,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -18886,11 +20327,13 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	'0'::Decimal128(19),
 	NULL
 )
@@ -18899,6 +20342,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -18918,16 +20362,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('0'::Decimal128(19),NULL)
+(1,'0'::Decimal128(19),NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -18947,16 +20393,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('0'::Decimal128(19),NULL)
+(1,'0'::Decimal128(19),NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -18976,16 +20424,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('0'::Decimal128(19),NULL)
+(1,'0'::Decimal128(19),NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -18997,6 +20447,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -19017,11 +20468,13 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	'-9.9999999999999999999'::Decimal128(19),
 	'9.9999999999999999999'::Decimal128(19)
 )
@@ -19030,6 +20483,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -19050,16 +20504,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('-9.9999999999999999999'::Decimal128(19),'9.9999999999999999999'::Decimal128(19))
+(1,'-9.9999999999999999999'::Decimal128(19),'9.9999999999999999999'::Decimal128(19))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -19080,16 +20536,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('-9.9999999999999999999'::Decimal128(19),'9.9999999999999999999'::Decimal128(19))
+(1,'-9.9999999999999999999'::Decimal128(19),'9.9999999999999999999'::Decimal128(19))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -19110,16 +20568,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('-9.9999999999999999999'::Decimal128(19),'9.9999999999999999999'::Decimal128(19))
+(1,'-9.9999999999999999999'::Decimal128(19),'9.9999999999999999999'::Decimal128(19))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -19132,6 +20592,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -19151,11 +20612,13 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	toDecimal128('0', 20),
 	NULL
 )
@@ -19164,6 +20627,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -19183,16 +20647,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal128('0', 20),NULL)
+(1,toDecimal128('0', 20),NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -19212,16 +20678,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal128('0', 20),NULL)
+(1,toDecimal128('0', 20),NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -19241,16 +20709,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal128('0', 20),NULL)
+(1,toDecimal128('0', 20),NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -19262,6 +20732,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -19282,11 +20753,13 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	toDecimal128('-0.99999999999999999999', 20),
 	toDecimal128('0.99999999999999999999', 20)
 )
@@ -19295,6 +20768,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -19315,16 +20789,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal128('-0.99999999999999999999', 20),toDecimal128('0.99999999999999999999', 20))
+(1,toDecimal128('-0.99999999999999999999', 20),toDecimal128('0.99999999999999999999', 20))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -19345,16 +20821,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal128('-0.99999999999999999999', 20),toDecimal128('0.99999999999999999999', 20))
+(1,toDecimal128('-0.99999999999999999999', 20),toDecimal128('0.99999999999999999999', 20))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -19375,16 +20853,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal128('-0.99999999999999999999', 20),toDecimal128('0.99999999999999999999', 20))
+(1,toDecimal128('-0.99999999999999999999', 20),toDecimal128('0.99999999999999999999', 20))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -19397,6 +20877,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -19416,11 +20897,13 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	'0'::Decimal128(20),
 	NULL
 )
@@ -19429,6 +20912,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -19448,16 +20932,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('0'::Decimal128(20),NULL)
+(1,'0'::Decimal128(20),NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -19477,16 +20963,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('0'::Decimal128(20),NULL)
+(1,'0'::Decimal128(20),NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -19506,16 +20994,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('0'::Decimal128(20),NULL)
+(1,'0'::Decimal128(20),NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -19527,6 +21017,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -19547,11 +21038,13 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	'-0.99999999999999999999'::Decimal128(20),
 	'0.99999999999999999999'::Decimal128(20)
 )
@@ -19560,6 +21053,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -19580,16 +21074,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('-0.99999999999999999999'::Decimal128(20),'0.99999999999999999999'::Decimal128(20))
+(1,'-0.99999999999999999999'::Decimal128(20),'0.99999999999999999999'::Decimal128(20))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -19610,16 +21106,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('-0.99999999999999999999'::Decimal128(20),'0.99999999999999999999'::Decimal128(20))
+(1,'-0.99999999999999999999'::Decimal128(20),'0.99999999999999999999'::Decimal128(20))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -19640,16 +21138,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('-0.99999999999999999999'::Decimal128(20),'0.99999999999999999999'::Decimal128(20))
+(1,'-0.99999999999999999999'::Decimal128(20),'0.99999999999999999999'::Decimal128(20))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -19662,6 +21162,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -19681,11 +21182,13 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	toDecimal128('0', 0),
 	NULL
 )
@@ -19694,6 +21197,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -19713,16 +21217,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal128('0', 0),NULL)
+(1,toDecimal128('0', 0),NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -19742,16 +21248,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal128('0', 0),NULL)
+(1,toDecimal128('0', 0),NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -19771,16 +21279,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal128('0', 0),NULL)
+(1,toDecimal128('0', 0),NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -19792,6 +21302,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -19812,11 +21323,13 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	toDecimal128('-9999999999999999999999999999', 0),
 	toDecimal128('9999999999999999999999999999', 0)
 )
@@ -19825,6 +21338,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -19845,16 +21359,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal128('-9999999999999999999999999999', 0),toDecimal128('9999999999999999999999999999', 0))
+(1,toDecimal128('-9999999999999999999999999999', 0),toDecimal128('9999999999999999999999999999', 0))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -19875,16 +21391,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal128('-9999999999999999999999999999', 0),toDecimal128('9999999999999999999999999999', 0))
+(1,toDecimal128('-9999999999999999999999999999', 0),toDecimal128('9999999999999999999999999999', 0))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -19905,16 +21423,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal128('-9999999999999999999999999999', 0),toDecimal128('9999999999999999999999999999', 0))
+(1,toDecimal128('-9999999999999999999999999999', 0),toDecimal128('9999999999999999999999999999', 0))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -19927,6 +21447,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -19946,11 +21467,13 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	'0'::Decimal128(0),
 	NULL
 )
@@ -19959,6 +21482,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -19978,16 +21502,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('0'::Decimal128(0),NULL)
+(1,'0'::Decimal128(0),NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -20007,16 +21533,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('0'::Decimal128(0),NULL)
+(1,'0'::Decimal128(0),NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -20036,16 +21564,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('0'::Decimal128(0),NULL)
+(1,'0'::Decimal128(0),NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -20057,6 +21587,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -20077,11 +21608,13 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	'-9999999999999999999999999999'::Decimal128(0),
 	'9999999999999999999999999999'::Decimal128(0)
 )
@@ -20090,6 +21623,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -20110,16 +21644,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('-9999999999999999999999999999'::Decimal128(0),'9999999999999999999999999999'::Decimal128(0))
+(1,'-9999999999999999999999999999'::Decimal128(0),'9999999999999999999999999999'::Decimal128(0))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -20140,16 +21676,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('-9999999999999999999999999999'::Decimal128(0),'9999999999999999999999999999'::Decimal128(0))
+(1,'-9999999999999999999999999999'::Decimal128(0),'9999999999999999999999999999'::Decimal128(0))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -20170,16 +21708,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('-9999999999999999999999999999'::Decimal128(0),'9999999999999999999999999999'::Decimal128(0))
+(1,'-9999999999999999999999999999'::Decimal128(0),'9999999999999999999999999999'::Decimal128(0))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -20192,6 +21732,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -20211,11 +21752,13 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	toDecimal128('0', 1),
 	NULL
 )
@@ -20224,6 +21767,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -20243,16 +21787,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal128('0', 1),NULL)
+(1,toDecimal128('0', 1),NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -20272,16 +21818,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal128('0', 1),NULL)
+(1,toDecimal128('0', 1),NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -20301,16 +21849,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal128('0', 1),NULL)
+(1,toDecimal128('0', 1),NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -20322,6 +21872,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -20342,11 +21893,13 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	toDecimal128('-999999999999999999999999999.9', 1),
 	toDecimal128('999999999999999999999999999.9', 1)
 )
@@ -20355,6 +21908,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -20375,16 +21929,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal128('-999999999999999999999999999.9', 1),toDecimal128('999999999999999999999999999.9', 1))
+(1,toDecimal128('-999999999999999999999999999.9', 1),toDecimal128('999999999999999999999999999.9', 1))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -20405,16 +21961,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal128('-999999999999999999999999999.9', 1),toDecimal128('999999999999999999999999999.9', 1))
+(1,toDecimal128('-999999999999999999999999999.9', 1),toDecimal128('999999999999999999999999999.9', 1))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -20435,16 +21993,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal128('-999999999999999999999999999.9', 1),toDecimal128('999999999999999999999999999.9', 1))
+(1,toDecimal128('-999999999999999999999999999.9', 1),toDecimal128('999999999999999999999999999.9', 1))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -20457,6 +22017,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -20476,11 +22037,13 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	'0'::Decimal128(1),
 	NULL
 )
@@ -20489,6 +22052,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -20508,16 +22072,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('0'::Decimal128(1),NULL)
+(1,'0'::Decimal128(1),NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -20537,16 +22103,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('0'::Decimal128(1),NULL)
+(1,'0'::Decimal128(1),NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -20566,16 +22134,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('0'::Decimal128(1),NULL)
+(1,'0'::Decimal128(1),NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -20587,6 +22157,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -20607,11 +22178,13 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	'-999999999999999999999999999.9'::Decimal128(1),
 	'999999999999999999999999999.9'::Decimal128(1)
 )
@@ -20620,6 +22193,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -20640,16 +22214,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('-999999999999999999999999999.9'::Decimal128(1),'999999999999999999999999999.9'::Decimal128(1))
+(1,'-999999999999999999999999999.9'::Decimal128(1),'999999999999999999999999999.9'::Decimal128(1))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -20670,16 +22246,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('-999999999999999999999999999.9'::Decimal128(1),'999999999999999999999999999.9'::Decimal128(1))
+(1,'-999999999999999999999999999.9'::Decimal128(1),'999999999999999999999999999.9'::Decimal128(1))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -20700,16 +22278,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('-999999999999999999999999999.9'::Decimal128(1),'999999999999999999999999999.9'::Decimal128(1))
+(1,'-999999999999999999999999999.9'::Decimal128(1),'999999999999999999999999999.9'::Decimal128(1))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -20722,6 +22302,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -20741,11 +22322,13 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	toDecimal128('0', 27),
 	NULL
 )
@@ -20754,6 +22337,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -20773,16 +22357,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal128('0', 27),NULL)
+(1,toDecimal128('0', 27),NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -20802,16 +22388,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal128('0', 27),NULL)
+(1,toDecimal128('0', 27),NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -20831,16 +22419,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal128('0', 27),NULL)
+(1,toDecimal128('0', 27),NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -20852,6 +22442,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -20872,11 +22463,13 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	toDecimal128('-9.999999999999999999999999999', 27),
 	toDecimal128('9.999999999999999999999999999', 27)
 )
@@ -20885,6 +22478,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -20905,16 +22499,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal128('-9.999999999999999999999999999', 27),toDecimal128('9.999999999999999999999999999', 27))
+(1,toDecimal128('-9.999999999999999999999999999', 27),toDecimal128('9.999999999999999999999999999', 27))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -20935,16 +22531,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal128('-9.999999999999999999999999999', 27),toDecimal128('9.999999999999999999999999999', 27))
+(1,toDecimal128('-9.999999999999999999999999999', 27),toDecimal128('9.999999999999999999999999999', 27))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -20965,16 +22563,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal128('-9.999999999999999999999999999', 27),toDecimal128('9.999999999999999999999999999', 27))
+(1,toDecimal128('-9.999999999999999999999999999', 27),toDecimal128('9.999999999999999999999999999', 27))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -20987,6 +22587,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -21006,11 +22607,13 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	'0'::Decimal128(27),
 	NULL
 )
@@ -21019,6 +22622,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -21038,16 +22642,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('0'::Decimal128(27),NULL)
+(1,'0'::Decimal128(27),NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -21067,16 +22673,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('0'::Decimal128(27),NULL)
+(1,'0'::Decimal128(27),NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -21096,16 +22704,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('0'::Decimal128(27),NULL)
+(1,'0'::Decimal128(27),NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -21117,6 +22727,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -21137,11 +22748,13 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	'-9.999999999999999999999999999'::Decimal128(27),
 	'9.999999999999999999999999999'::Decimal128(27)
 )
@@ -21150,6 +22763,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -21170,16 +22784,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('-9.999999999999999999999999999'::Decimal128(27),'9.999999999999999999999999999'::Decimal128(27))
+(1,'-9.999999999999999999999999999'::Decimal128(27),'9.999999999999999999999999999'::Decimal128(27))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -21200,16 +22816,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('-9.999999999999999999999999999'::Decimal128(27),'9.999999999999999999999999999'::Decimal128(27))
+(1,'-9.999999999999999999999999999'::Decimal128(27),'9.999999999999999999999999999'::Decimal128(27))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -21230,16 +22848,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('-9.999999999999999999999999999'::Decimal128(27),'9.999999999999999999999999999'::Decimal128(27))
+(1,'-9.999999999999999999999999999'::Decimal128(27),'9.999999999999999999999999999'::Decimal128(27))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -21252,6 +22872,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -21271,11 +22892,13 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	toDecimal128('0', 28),
 	NULL
 )
@@ -21284,6 +22907,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -21303,16 +22927,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal128('0', 28),NULL)
+(1,toDecimal128('0', 28),NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -21332,16 +22958,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal128('0', 28),NULL)
+(1,toDecimal128('0', 28),NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -21361,16 +22989,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal128('0', 28),NULL)
+(1,toDecimal128('0', 28),NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -21382,6 +23012,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -21402,11 +23033,13 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	toDecimal128('-0.9999999999999999999999999999', 28),
 	toDecimal128('0.9999999999999999999999999999', 28)
 )
@@ -21415,6 +23048,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -21435,16 +23069,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal128('-0.9999999999999999999999999999', 28),toDecimal128('0.9999999999999999999999999999', 28))
+(1,toDecimal128('-0.9999999999999999999999999999', 28),toDecimal128('0.9999999999999999999999999999', 28))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -21465,16 +23101,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal128('-0.9999999999999999999999999999', 28),toDecimal128('0.9999999999999999999999999999', 28))
+(1,toDecimal128('-0.9999999999999999999999999999', 28),toDecimal128('0.9999999999999999999999999999', 28))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -21495,16 +23133,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal128('-0.9999999999999999999999999999', 28),toDecimal128('0.9999999999999999999999999999', 28))
+(1,toDecimal128('-0.9999999999999999999999999999', 28),toDecimal128('0.9999999999999999999999999999', 28))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -21517,6 +23157,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -21536,11 +23177,13 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	'0'::Decimal128(28),
 	NULL
 )
@@ -21549,6 +23192,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -21568,16 +23212,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('0'::Decimal128(28),NULL)
+(1,'0'::Decimal128(28),NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -21597,16 +23243,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('0'::Decimal128(28),NULL)
+(1,'0'::Decimal128(28),NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -21626,16 +23274,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('0'::Decimal128(28),NULL)
+(1,'0'::Decimal128(28),NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -21647,6 +23297,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -21667,11 +23318,13 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	'-0.9999999999999999999999999999'::Decimal128(28),
 	'0.9999999999999999999999999999'::Decimal128(28)
 )
@@ -21680,6 +23333,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -21700,16 +23354,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('-0.9999999999999999999999999999'::Decimal128(28),'0.9999999999999999999999999999'::Decimal128(28))
+(1,'-0.9999999999999999999999999999'::Decimal128(28),'0.9999999999999999999999999999'::Decimal128(28))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -21730,16 +23386,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('-0.9999999999999999999999999999'::Decimal128(28),'0.9999999999999999999999999999'::Decimal128(28))
+(1,'-0.9999999999999999999999999999'::Decimal128(28),'0.9999999999999999999999999999'::Decimal128(28))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -21760,16 +23418,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('-0.9999999999999999999999999999'::Decimal128(28),'0.9999999999999999999999999999'::Decimal128(28))
+(1,'-0.9999999999999999999999999999'::Decimal128(28),'0.9999999999999999999999999999'::Decimal128(28))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -21782,6 +23442,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -21801,11 +23462,13 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	toDecimal128('0', 0),
 	NULL
 )
@@ -21814,6 +23477,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -21833,16 +23497,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal128('0', 0),NULL)
+(1,toDecimal128('0', 0),NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -21862,16 +23528,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal128('0', 0),NULL)
+(1,toDecimal128('0', 0),NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -21891,16 +23559,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal128('0', 0),NULL)
+(1,toDecimal128('0', 0),NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -21912,6 +23582,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -21932,11 +23603,13 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	toDecimal128('-79228162514264337593543950335', 0),
 	toDecimal128('79228162514264337593543950335', 0)
 )
@@ -21945,6 +23618,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -21965,16 +23639,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal128('-79228162514264337593543950335', 0),toDecimal128('79228162514264337593543950335', 0))
+(1,toDecimal128('-79228162514264337593543950335', 0),toDecimal128('79228162514264337593543950335', 0))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -21995,16 +23671,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal128('-79228162514264337593543950335', 0),toDecimal128('79228162514264337593543950335', 0))
+(1,toDecimal128('-79228162514264337593543950335', 0),toDecimal128('79228162514264337593543950335', 0))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -22025,16 +23703,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal128('-79228162514264337593543950335', 0),toDecimal128('79228162514264337593543950335', 0))
+(1,toDecimal128('-79228162514264337593543950335', 0),toDecimal128('79228162514264337593543950335', 0))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -22047,6 +23727,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -22066,11 +23747,13 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	'0'::Decimal128(0),
 	NULL
 )
@@ -22079,6 +23762,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -22098,16 +23782,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('0'::Decimal128(0),NULL)
+(1,'0'::Decimal128(0),NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -22127,16 +23813,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('0'::Decimal128(0),NULL)
+(1,'0'::Decimal128(0),NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -22156,16 +23844,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('0'::Decimal128(0),NULL)
+(1,'0'::Decimal128(0),NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -22177,6 +23867,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -22197,11 +23888,13 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	'-99999999999999999999999999999'::Decimal128(0),
 	'99999999999999999999999999999'::Decimal128(0)
 )
@@ -22210,6 +23903,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -22230,16 +23924,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('-99999999999999999999999999999'::Decimal128(0),'99999999999999999999999999999'::Decimal128(0))
+(1,'-99999999999999999999999999999'::Decimal128(0),'99999999999999999999999999999'::Decimal128(0))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -22260,16 +23956,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('-99999999999999999999999999999'::Decimal128(0),'99999999999999999999999999999'::Decimal128(0))
+(1,'-99999999999999999999999999999'::Decimal128(0),'99999999999999999999999999999'::Decimal128(0))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -22290,16 +23988,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('-99999999999999999999999999999'::Decimal128(0),'99999999999999999999999999999'::Decimal128(0))
+(1,'-99999999999999999999999999999'::Decimal128(0),'99999999999999999999999999999'::Decimal128(0))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -22312,6 +24012,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -22331,11 +24032,13 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	toDecimal128('0', 1),
 	NULL
 )
@@ -22344,6 +24047,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -22363,16 +24067,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal128('0', 1),NULL)
+(1,toDecimal128('0', 1),NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -22392,16 +24098,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal128('0', 1),NULL)
+(1,toDecimal128('0', 1),NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -22421,16 +24129,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal128('0', 1),NULL)
+(1,toDecimal128('0', 1),NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -22442,6 +24152,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -22462,11 +24173,13 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	toDecimal128('-7922816251426433759354395033.5', 1),
 	toDecimal128('7922816251426433759354395033.5', 1)
 )
@@ -22475,6 +24188,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -22495,16 +24209,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal128('-7922816251426433759354395033.5', 1),toDecimal128('7922816251426433759354395033.5', 1))
+(1,toDecimal128('-7922816251426433759354395033.5', 1),toDecimal128('7922816251426433759354395033.5', 1))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -22525,16 +24241,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal128('-7922816251426433759354395033.5', 1),toDecimal128('7922816251426433759354395033.5', 1))
+(1,toDecimal128('-7922816251426433759354395033.5', 1),toDecimal128('7922816251426433759354395033.5', 1))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -22555,16 +24273,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal128('-7922816251426433759354395033.5', 1),toDecimal128('7922816251426433759354395033.5', 1))
+(1,toDecimal128('-7922816251426433759354395033.5', 1),toDecimal128('7922816251426433759354395033.5', 1))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -22577,6 +24297,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -22596,11 +24317,13 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	'0'::Decimal128(1),
 	NULL
 )
@@ -22609,6 +24332,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -22628,16 +24352,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('0'::Decimal128(1),NULL)
+(1,'0'::Decimal128(1),NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -22657,16 +24383,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('0'::Decimal128(1),NULL)
+(1,'0'::Decimal128(1),NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -22686,16 +24414,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('0'::Decimal128(1),NULL)
+(1,'0'::Decimal128(1),NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -22707,6 +24437,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -22727,11 +24458,13 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	'-9999999999999999999999999999.9'::Decimal128(1),
 	'9999999999999999999999999999.9'::Decimal128(1)
 )
@@ -22740,6 +24473,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -22760,16 +24494,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('-9999999999999999999999999999.9'::Decimal128(1),'9999999999999999999999999999.9'::Decimal128(1))
+(1,'-9999999999999999999999999999.9'::Decimal128(1),'9999999999999999999999999999.9'::Decimal128(1))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -22790,16 +24526,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('-9999999999999999999999999999.9'::Decimal128(1),'9999999999999999999999999999.9'::Decimal128(1))
+(1,'-9999999999999999999999999999.9'::Decimal128(1),'9999999999999999999999999999.9'::Decimal128(1))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -22820,16 +24558,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('-9999999999999999999999999999.9'::Decimal128(1),'9999999999999999999999999999.9'::Decimal128(1))
+(1,'-9999999999999999999999999999.9'::Decimal128(1),'9999999999999999999999999999.9'::Decimal128(1))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -22842,6 +24582,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -22861,11 +24602,13 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	toDecimal128('0', 28),
 	NULL
 )
@@ -22874,6 +24617,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -22893,16 +24637,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal128('0', 28),NULL)
+(1,toDecimal128('0', 28),NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -22922,16 +24668,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal128('0', 28),NULL)
+(1,toDecimal128('0', 28),NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -22951,16 +24699,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal128('0', 28),NULL)
+(1,toDecimal128('0', 28),NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -22972,6 +24722,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -22992,11 +24743,13 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	toDecimal128('-7.9228162514264337593543950335', 28),
 	toDecimal128('7.9228162514264337593543950335', 28)
 )
@@ -23005,6 +24758,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -23025,16 +24779,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal128('-7.9228162514264337593543950335', 28),toDecimal128('7.9228162514264337593543950335', 28))
+(1,toDecimal128('-7.9228162514264337593543950335', 28),toDecimal128('7.9228162514264337593543950335', 28))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -23055,16 +24811,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal128('-7.9228162514264337593543950335', 28),toDecimal128('7.9228162514264337593543950335', 28))
+(1,toDecimal128('-7.9228162514264337593543950335', 28),toDecimal128('7.9228162514264337593543950335', 28))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -23085,16 +24843,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal128('-7.9228162514264337593543950335', 28),toDecimal128('7.9228162514264337593543950335', 28))
+(1,toDecimal128('-7.9228162514264337593543950335', 28),toDecimal128('7.9228162514264337593543950335', 28))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -23107,6 +24867,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -23126,11 +24887,13 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	'0'::Decimal128(28),
 	NULL
 )
@@ -23139,6 +24902,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -23158,16 +24922,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('0'::Decimal128(28),NULL)
+(1,'0'::Decimal128(28),NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -23187,16 +24953,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('0'::Decimal128(28),NULL)
+(1,'0'::Decimal128(28),NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -23216,16 +24984,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('0'::Decimal128(28),NULL)
+(1,'0'::Decimal128(28),NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -23237,6 +25007,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -23257,11 +25028,13 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	'-9.9999999999999999999999999999'::Decimal128(28),
 	'9.9999999999999999999999999999'::Decimal128(28)
 )
@@ -23270,6 +25043,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -23290,16 +25064,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('-9.9999999999999999999999999999'::Decimal128(28),'9.9999999999999999999999999999'::Decimal128(28))
+(1,'-9.9999999999999999999999999999'::Decimal128(28),'9.9999999999999999999999999999'::Decimal128(28))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -23320,16 +25096,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('-9.9999999999999999999999999999'::Decimal128(28),'9.9999999999999999999999999999'::Decimal128(28))
+(1,'-9.9999999999999999999999999999'::Decimal128(28),'9.9999999999999999999999999999'::Decimal128(28))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -23350,16 +25128,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('-9.9999999999999999999999999999'::Decimal128(28),'9.9999999999999999999999999999'::Decimal128(28))
+(1,'-9.9999999999999999999999999999'::Decimal128(28),'9.9999999999999999999999999999'::Decimal128(28))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -23372,6 +25152,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -23391,11 +25172,13 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	toDecimal128('0', 29),
 	NULL
 )
@@ -23404,6 +25187,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -23423,16 +25207,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal128('0', 29),NULL)
+(1,toDecimal128('0', 29),NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -23452,16 +25238,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal128('0', 29),NULL)
+(1,toDecimal128('0', 29),NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -23481,16 +25269,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal128('0', 29),NULL)
+(1,toDecimal128('0', 29),NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -23502,6 +25292,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -23522,11 +25313,13 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	toDecimal128('-0.7922816251426433759354395034', 29),
 	toDecimal128('0.7922816251426433759354395034', 29)
 )
@@ -23535,6 +25328,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -23555,16 +25349,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal128('-0.7922816251426433759354395034', 29),toDecimal128('0.7922816251426433759354395034', 29))
+(1,toDecimal128('-0.7922816251426433759354395034', 29),toDecimal128('0.7922816251426433759354395034', 29))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -23585,16 +25381,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal128('-0.7922816251426433759354395034', 29),toDecimal128('0.7922816251426433759354395034', 29))
+(1,toDecimal128('-0.7922816251426433759354395034', 29),toDecimal128('0.7922816251426433759354395034', 29))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -23615,16 +25413,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal128('-0.7922816251426433759354395034', 29),toDecimal128('0.7922816251426433759354395034', 29))
+(1,toDecimal128('-0.7922816251426433759354395034', 29),toDecimal128('0.7922816251426433759354395034', 29))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -23637,6 +25437,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -23656,11 +25457,13 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	'0'::Decimal128(29),
 	NULL
 )
@@ -23669,6 +25472,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -23688,16 +25492,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('0'::Decimal128(29),NULL)
+(1,'0'::Decimal128(29),NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -23717,16 +25523,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('0'::Decimal128(29),NULL)
+(1,'0'::Decimal128(29),NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -23746,16 +25554,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('0'::Decimal128(29),NULL)
+(1,'0'::Decimal128(29),NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -23767,6 +25577,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -23787,11 +25598,13 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	'-0.99999999999999999999999999999'::Decimal128(29),
 	'0.99999999999999999999999999999'::Decimal128(29)
 )
@@ -23800,6 +25613,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -23820,16 +25634,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('-0.99999999999999999999999999999'::Decimal128(29),'0.99999999999999999999999999999'::Decimal128(29))
+(1,'-0.99999999999999999999999999999'::Decimal128(29),'0.99999999999999999999999999999'::Decimal128(29))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -23850,16 +25666,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('-0.99999999999999999999999999999'::Decimal128(29),'0.99999999999999999999999999999'::Decimal128(29))
+(1,'-0.99999999999999999999999999999'::Decimal128(29),'0.99999999999999999999999999999'::Decimal128(29))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -23880,16 +25698,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('-0.99999999999999999999999999999'::Decimal128(29),'0.99999999999999999999999999999'::Decimal128(29))
+(1,'-0.99999999999999999999999999999'::Decimal128(29),'0.99999999999999999999999999999'::Decimal128(29))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -23902,6 +25722,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -23921,11 +25742,13 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	toDecimal128('0', 0),
 	NULL
 )
@@ -23934,6 +25757,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -23953,16 +25777,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal128('0', 0),NULL)
+(1,toDecimal128('0', 0),NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -23982,16 +25808,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal128('0', 0),NULL)
+(1,toDecimal128('0', 0),NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -24011,16 +25839,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal128('0', 0),NULL)
+(1,toDecimal128('0', 0),NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -24032,6 +25862,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -24052,11 +25883,13 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	toDecimal128('-79228162514264337593543950335', 0),
 	toDecimal128('79228162514264337593543950335', 0)
 )
@@ -24065,6 +25898,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -24085,16 +25919,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal128('-79228162514264337593543950335', 0),toDecimal128('79228162514264337593543950335', 0))
+(1,toDecimal128('-79228162514264337593543950335', 0),toDecimal128('79228162514264337593543950335', 0))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -24115,16 +25951,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal128('-79228162514264337593543950335', 0),toDecimal128('79228162514264337593543950335', 0))
+(1,toDecimal128('-79228162514264337593543950335', 0),toDecimal128('79228162514264337593543950335', 0))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -24145,16 +25983,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal128('-79228162514264337593543950335', 0),toDecimal128('79228162514264337593543950335', 0))
+(1,toDecimal128('-79228162514264337593543950335', 0),toDecimal128('79228162514264337593543950335', 0))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -24167,6 +26007,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -24186,11 +26027,13 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	'0'::Decimal128(0),
 	NULL
 )
@@ -24199,6 +26042,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -24218,16 +26062,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('0'::Decimal128(0),NULL)
+(1,'0'::Decimal128(0),NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -24247,16 +26093,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('0'::Decimal128(0),NULL)
+(1,'0'::Decimal128(0),NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -24276,16 +26124,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('0'::Decimal128(0),NULL)
+(1,'0'::Decimal128(0),NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -24297,6 +26147,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -24317,11 +26168,13 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	'-999999999999999999999999999999'::Decimal128(0),
 	'999999999999999999999999999999'::Decimal128(0)
 )
@@ -24330,6 +26183,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -24350,16 +26204,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('-999999999999999999999999999999'::Decimal128(0),'999999999999999999999999999999'::Decimal128(0))
+(1,'-999999999999999999999999999999'::Decimal128(0),'999999999999999999999999999999'::Decimal128(0))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -24380,16 +26236,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('-999999999999999999999999999999'::Decimal128(0),'999999999999999999999999999999'::Decimal128(0))
+(1,'-999999999999999999999999999999'::Decimal128(0),'999999999999999999999999999999'::Decimal128(0))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -24410,16 +26268,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('-999999999999999999999999999999'::Decimal128(0),'999999999999999999999999999999'::Decimal128(0))
+(1,'-999999999999999999999999999999'::Decimal128(0),'999999999999999999999999999999'::Decimal128(0))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -24432,6 +26292,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -24451,11 +26312,13 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	toDecimal128('0', 1),
 	NULL
 )
@@ -24464,6 +26327,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -24483,16 +26347,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal128('0', 1),NULL)
+(1,toDecimal128('0', 1),NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -24512,16 +26378,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal128('0', 1),NULL)
+(1,toDecimal128('0', 1),NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -24541,16 +26409,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal128('0', 1),NULL)
+(1,toDecimal128('0', 1),NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -24562,6 +26432,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -24582,11 +26453,13 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	toDecimal128('-7922816251426433759354395033.5', 1),
 	toDecimal128('7922816251426433759354395033.5', 1)
 )
@@ -24595,6 +26468,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -24615,16 +26489,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal128('-7922816251426433759354395033.5', 1),toDecimal128('7922816251426433759354395033.5', 1))
+(1,toDecimal128('-7922816251426433759354395033.5', 1),toDecimal128('7922816251426433759354395033.5', 1))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -24645,16 +26521,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal128('-7922816251426433759354395033.5', 1),toDecimal128('7922816251426433759354395033.5', 1))
+(1,toDecimal128('-7922816251426433759354395033.5', 1),toDecimal128('7922816251426433759354395033.5', 1))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -24675,16 +26553,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal128('-7922816251426433759354395033.5', 1),toDecimal128('7922816251426433759354395033.5', 1))
+(1,toDecimal128('-7922816251426433759354395033.5', 1),toDecimal128('7922816251426433759354395033.5', 1))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -24697,6 +26577,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -24716,11 +26597,13 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	'0'::Decimal128(1),
 	NULL
 )
@@ -24729,6 +26612,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -24748,16 +26632,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('0'::Decimal128(1),NULL)
+(1,'0'::Decimal128(1),NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -24777,16 +26663,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('0'::Decimal128(1),NULL)
+(1,'0'::Decimal128(1),NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -24806,16 +26694,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('0'::Decimal128(1),NULL)
+(1,'0'::Decimal128(1),NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -24827,6 +26717,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -24847,11 +26738,13 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	'-99999999999999999999999999999.9'::Decimal128(1),
 	'99999999999999999999999999999.9'::Decimal128(1)
 )
@@ -24860,6 +26753,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -24880,16 +26774,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('-99999999999999999999999999999.9'::Decimal128(1),'99999999999999999999999999999.9'::Decimal128(1))
+(1,'-99999999999999999999999999999.9'::Decimal128(1),'99999999999999999999999999999.9'::Decimal128(1))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -24910,16 +26806,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('-99999999999999999999999999999.9'::Decimal128(1),'99999999999999999999999999999.9'::Decimal128(1))
+(1,'-99999999999999999999999999999.9'::Decimal128(1),'99999999999999999999999999999.9'::Decimal128(1))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -24940,16 +26838,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('-99999999999999999999999999999.9'::Decimal128(1),'99999999999999999999999999999.9'::Decimal128(1))
+(1,'-99999999999999999999999999999.9'::Decimal128(1),'99999999999999999999999999999.9'::Decimal128(1))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -24962,6 +26862,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -24981,11 +26882,13 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	toDecimal128('0', 29),
 	NULL
 )
@@ -24994,6 +26897,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -25013,16 +26917,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal128('0', 29),NULL)
+(1,toDecimal128('0', 29),NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -25042,16 +26948,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal128('0', 29),NULL)
+(1,toDecimal128('0', 29),NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -25071,16 +26979,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal128('0', 29),NULL)
+(1,toDecimal128('0', 29),NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -25092,6 +27002,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -25112,11 +27023,13 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	toDecimal128('-0.7922816251426433759354395034', 29),
 	toDecimal128('0.7922816251426433759354395034', 29)
 )
@@ -25125,6 +27038,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -25145,16 +27059,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal128('-0.7922816251426433759354395034', 29),toDecimal128('0.7922816251426433759354395034', 29))
+(1,toDecimal128('-0.7922816251426433759354395034', 29),toDecimal128('0.7922816251426433759354395034', 29))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -25175,16 +27091,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal128('-0.7922816251426433759354395034', 29),toDecimal128('0.7922816251426433759354395034', 29))
+(1,toDecimal128('-0.7922816251426433759354395034', 29),toDecimal128('0.7922816251426433759354395034', 29))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -25205,16 +27123,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal128('-0.7922816251426433759354395034', 29),toDecimal128('0.7922816251426433759354395034', 29))
+(1,toDecimal128('-0.7922816251426433759354395034', 29),toDecimal128('0.7922816251426433759354395034', 29))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -25227,6 +27147,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -25246,11 +27167,13 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	'0'::Decimal128(29),
 	NULL
 )
@@ -25259,6 +27182,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -25278,16 +27202,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('0'::Decimal128(29),NULL)
+(1,'0'::Decimal128(29),NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -25307,16 +27233,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('0'::Decimal128(29),NULL)
+(1,'0'::Decimal128(29),NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -25336,16 +27264,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('0'::Decimal128(29),NULL)
+(1,'0'::Decimal128(29),NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -25357,6 +27287,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -25377,11 +27308,13 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	'-9.99999999999999999999999999999'::Decimal128(29),
 	'9.99999999999999999999999999999'::Decimal128(29)
 )
@@ -25390,6 +27323,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -25410,16 +27344,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('-9.99999999999999999999999999999'::Decimal128(29),'9.99999999999999999999999999999'::Decimal128(29))
+(1,'-9.99999999999999999999999999999'::Decimal128(29),'9.99999999999999999999999999999'::Decimal128(29))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -25440,16 +27376,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('-9.99999999999999999999999999999'::Decimal128(29),'9.99999999999999999999999999999'::Decimal128(29))
+(1,'-9.99999999999999999999999999999'::Decimal128(29),'9.99999999999999999999999999999'::Decimal128(29))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -25470,16 +27408,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('-9.99999999999999999999999999999'::Decimal128(29),'9.99999999999999999999999999999'::Decimal128(29))
+(1,'-9.99999999999999999999999999999'::Decimal128(29),'9.99999999999999999999999999999'::Decimal128(29))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -25492,6 +27432,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -25511,11 +27452,13 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	toDecimal128('0', 30),
 	NULL
 )
@@ -25524,6 +27467,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -25543,16 +27487,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal128('0', 30),NULL)
+(1,toDecimal128('0', 30),NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -25572,16 +27518,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal128('0', 30),NULL)
+(1,toDecimal128('0', 30),NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -25601,16 +27549,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal128('0', 30),NULL)
+(1,toDecimal128('0', 30),NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -25622,6 +27572,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -25642,11 +27593,13 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	toDecimal128('-0.0792281625142643375935439503', 30),
 	toDecimal128('0.0792281625142643375935439503', 30)
 )
@@ -25655,6 +27608,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -25675,16 +27629,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal128('-0.0792281625142643375935439503', 30),toDecimal128('0.0792281625142643375935439503', 30))
+(1,toDecimal128('-0.0792281625142643375935439503', 30),toDecimal128('0.0792281625142643375935439503', 30))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -25705,16 +27661,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal128('-0.0792281625142643375935439503', 30),toDecimal128('0.0792281625142643375935439503', 30))
+(1,toDecimal128('-0.0792281625142643375935439503', 30),toDecimal128('0.0792281625142643375935439503', 30))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -25735,16 +27693,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal128('-0.0792281625142643375935439503', 30),toDecimal128('0.0792281625142643375935439503', 30))
+(1,toDecimal128('-0.0792281625142643375935439503', 30),toDecimal128('0.0792281625142643375935439503', 30))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -25757,6 +27717,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -25776,11 +27737,13 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	'0'::Decimal128(30),
 	NULL
 )
@@ -25789,6 +27752,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -25808,16 +27772,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('0'::Decimal128(30),NULL)
+(1,'0'::Decimal128(30),NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -25837,16 +27803,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('0'::Decimal128(30),NULL)
+(1,'0'::Decimal128(30),NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -25866,16 +27834,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('0'::Decimal128(30),NULL)
+(1,'0'::Decimal128(30),NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -25887,6 +27857,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -25907,11 +27878,13 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	'-0.999999999999999999999999999999'::Decimal128(30),
 	'0.999999999999999999999999999999'::Decimal128(30)
 )
@@ -25920,6 +27893,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -25940,16 +27914,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('-0.999999999999999999999999999999'::Decimal128(30),'0.999999999999999999999999999999'::Decimal128(30))
+(1,'-0.999999999999999999999999999999'::Decimal128(30),'0.999999999999999999999999999999'::Decimal128(30))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -25970,16 +27946,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('-0.999999999999999999999999999999'::Decimal128(30),'0.999999999999999999999999999999'::Decimal128(30))
+(1,'-0.999999999999999999999999999999'::Decimal128(30),'0.999999999999999999999999999999'::Decimal128(30))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -26000,16 +27978,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('-0.999999999999999999999999999999'::Decimal128(30),'0.999999999999999999999999999999'::Decimal128(30))
+(1,'-0.999999999999999999999999999999'::Decimal128(30),'0.999999999999999999999999999999'::Decimal128(30))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -26022,6 +28002,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -26041,11 +28022,13 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	toDecimal128('0', 0),
 	NULL
 )
@@ -26054,6 +28037,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -26073,16 +28057,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal128('0', 0),NULL)
+(1,toDecimal128('0', 0),NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -26102,16 +28088,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal128('0', 0),NULL)
+(1,toDecimal128('0', 0),NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -26131,16 +28119,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal128('0', 0),NULL)
+(1,toDecimal128('0', 0),NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -26152,6 +28142,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -26172,11 +28163,13 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	toDecimal128('-79228162514264337593543950335', 0),
 	toDecimal128('79228162514264337593543950335', 0)
 )
@@ -26185,6 +28178,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -26205,16 +28199,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal128('-79228162514264337593543950335', 0),toDecimal128('79228162514264337593543950335', 0))
+(1,toDecimal128('-79228162514264337593543950335', 0),toDecimal128('79228162514264337593543950335', 0))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -26235,16 +28231,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal128('-79228162514264337593543950335', 0),toDecimal128('79228162514264337593543950335', 0))
+(1,toDecimal128('-79228162514264337593543950335', 0),toDecimal128('79228162514264337593543950335', 0))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -26265,16 +28263,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal128('-79228162514264337593543950335', 0),toDecimal128('79228162514264337593543950335', 0))
+(1,toDecimal128('-79228162514264337593543950335', 0),toDecimal128('79228162514264337593543950335', 0))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -26287,6 +28287,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -26306,11 +28307,13 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	'0'::Decimal128(0),
 	NULL
 )
@@ -26319,6 +28322,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -26338,16 +28342,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('0'::Decimal128(0),NULL)
+(1,'0'::Decimal128(0),NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -26367,16 +28373,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('0'::Decimal128(0),NULL)
+(1,'0'::Decimal128(0),NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -26396,16 +28404,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('0'::Decimal128(0),NULL)
+(1,'0'::Decimal128(0),NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -26417,6 +28427,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -26437,11 +28448,13 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	'-9999999999999999999999999999999999999'::Decimal128(0),
 	'9999999999999999999999999999999999999'::Decimal128(0)
 )
@@ -26450,6 +28463,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -26470,16 +28484,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('-9999999999999999999999999999999999999'::Decimal128(0),'9999999999999999999999999999999999999'::Decimal128(0))
+(1,'-9999999999999999999999999999999999999'::Decimal128(0),'9999999999999999999999999999999999999'::Decimal128(0))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -26500,16 +28516,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('-9999999999999999999999999999999999999'::Decimal128(0),'9999999999999999999999999999999999999'::Decimal128(0))
+(1,'-9999999999999999999999999999999999999'::Decimal128(0),'9999999999999999999999999999999999999'::Decimal128(0))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -26530,16 +28548,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('-9999999999999999999999999999999999999'::Decimal128(0),'9999999999999999999999999999999999999'::Decimal128(0))
+(1,'-9999999999999999999999999999999999999'::Decimal128(0),'9999999999999999999999999999999999999'::Decimal128(0))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -26552,6 +28572,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -26571,11 +28592,13 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	toDecimal128('0', 1),
 	NULL
 )
@@ -26584,6 +28607,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -26603,16 +28627,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal128('0', 1),NULL)
+(1,toDecimal128('0', 1),NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -26632,16 +28658,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal128('0', 1),NULL)
+(1,toDecimal128('0', 1),NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -26661,16 +28689,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal128('0', 1),NULL)
+(1,toDecimal128('0', 1),NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -26682,6 +28712,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -26702,11 +28733,13 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	toDecimal128('-7922816251426433759354395033.5', 1),
 	toDecimal128('7922816251426433759354395033.5', 1)
 )
@@ -26715,6 +28748,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -26735,16 +28769,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal128('-7922816251426433759354395033.5', 1),toDecimal128('7922816251426433759354395033.5', 1))
+(1,toDecimal128('-7922816251426433759354395033.5', 1),toDecimal128('7922816251426433759354395033.5', 1))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -26765,16 +28801,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal128('-7922816251426433759354395033.5', 1),toDecimal128('7922816251426433759354395033.5', 1))
+(1,toDecimal128('-7922816251426433759354395033.5', 1),toDecimal128('7922816251426433759354395033.5', 1))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -26795,16 +28833,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal128('-7922816251426433759354395033.5', 1),toDecimal128('7922816251426433759354395033.5', 1))
+(1,toDecimal128('-7922816251426433759354395033.5', 1),toDecimal128('7922816251426433759354395033.5', 1))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -26817,6 +28857,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -26836,11 +28877,13 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	'0'::Decimal128(1),
 	NULL
 )
@@ -26849,6 +28892,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -26868,16 +28912,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('0'::Decimal128(1),NULL)
+(1,'0'::Decimal128(1),NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -26897,16 +28943,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('0'::Decimal128(1),NULL)
+(1,'0'::Decimal128(1),NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -26926,16 +28974,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('0'::Decimal128(1),NULL)
+(1,'0'::Decimal128(1),NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -26947,6 +28997,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -26967,11 +29018,13 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	'-999999999999999999999999999999999999.9'::Decimal128(1),
 	'999999999999999999999999999999999999.9'::Decimal128(1)
 )
@@ -26980,6 +29033,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -27000,16 +29054,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('-999999999999999999999999999999999999.9'::Decimal128(1),'999999999999999999999999999999999999.9'::Decimal128(1))
+(1,'-999999999999999999999999999999999999.9'::Decimal128(1),'999999999999999999999999999999999999.9'::Decimal128(1))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -27030,16 +29086,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('-999999999999999999999999999999999999.9'::Decimal128(1),'999999999999999999999999999999999999.9'::Decimal128(1))
+(1,'-999999999999999999999999999999999999.9'::Decimal128(1),'999999999999999999999999999999999999.9'::Decimal128(1))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -27060,16 +29118,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('-999999999999999999999999999999999999.9'::Decimal128(1),'999999999999999999999999999999999999.9'::Decimal128(1))
+(1,'-999999999999999999999999999999999999.9'::Decimal128(1),'999999999999999999999999999999999999.9'::Decimal128(1))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -27082,6 +29142,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -27101,11 +29162,13 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	toDecimal128('0', 36),
 	NULL
 )
@@ -27114,6 +29177,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -27133,16 +29197,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal128('0', 36),NULL)
+(1,toDecimal128('0', 36),NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -27162,16 +29228,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal128('0', 36),NULL)
+(1,toDecimal128('0', 36),NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -27191,16 +29259,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal128('0', 36),NULL)
+(1,toDecimal128('0', 36),NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -27212,6 +29282,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -27232,11 +29303,13 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	toDecimal128('-0.0000000792281625142643375935', 36),
 	toDecimal128('0.0000000792281625142643375935', 36)
 )
@@ -27245,6 +29318,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -27265,16 +29339,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal128('-0.0000000792281625142643375935', 36),toDecimal128('0.0000000792281625142643375935', 36))
+(1,toDecimal128('-0.0000000792281625142643375935', 36),toDecimal128('0.0000000792281625142643375935', 36))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -27295,16 +29371,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal128('-0.0000000792281625142643375935', 36),toDecimal128('0.0000000792281625142643375935', 36))
+(1,toDecimal128('-0.0000000792281625142643375935', 36),toDecimal128('0.0000000792281625142643375935', 36))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -27325,16 +29403,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal128('-0.0000000792281625142643375935', 36),toDecimal128('0.0000000792281625142643375935', 36))
+(1,toDecimal128('-0.0000000792281625142643375935', 36),toDecimal128('0.0000000792281625142643375935', 36))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -27347,6 +29427,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -27366,11 +29447,13 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	'0'::Decimal128(36),
 	NULL
 )
@@ -27379,6 +29462,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -27398,16 +29482,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('0'::Decimal128(36),NULL)
+(1,'0'::Decimal128(36),NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -27427,16 +29513,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('0'::Decimal128(36),NULL)
+(1,'0'::Decimal128(36),NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -27456,16 +29544,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('0'::Decimal128(36),NULL)
+(1,'0'::Decimal128(36),NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -27477,6 +29567,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -27497,11 +29588,13 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	'-9.999999999999999999999999999999999999'::Decimal128(36),
 	'9.999999999999999999999999999999999999'::Decimal128(36)
 )
@@ -27510,6 +29603,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -27530,16 +29624,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('-9.999999999999999999999999999999999999'::Decimal128(36),'9.999999999999999999999999999999999999'::Decimal128(36))
+(1,'-9.999999999999999999999999999999999999'::Decimal128(36),'9.999999999999999999999999999999999999'::Decimal128(36))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -27560,16 +29656,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('-9.999999999999999999999999999999999999'::Decimal128(36),'9.999999999999999999999999999999999999'::Decimal128(36))
+(1,'-9.999999999999999999999999999999999999'::Decimal128(36),'9.999999999999999999999999999999999999'::Decimal128(36))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -27590,16 +29688,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('-9.999999999999999999999999999999999999'::Decimal128(36),'9.999999999999999999999999999999999999'::Decimal128(36))
+(1,'-9.999999999999999999999999999999999999'::Decimal128(36),'9.999999999999999999999999999999999999'::Decimal128(36))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -27612,6 +29712,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -27631,11 +29732,13 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	toDecimal128('0', 37),
 	NULL
 )
@@ -27644,6 +29747,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -27663,16 +29767,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal128('0', 37),NULL)
+(1,toDecimal128('0', 37),NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -27692,16 +29798,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal128('0', 37),NULL)
+(1,toDecimal128('0', 37),NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -27721,16 +29829,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal128('0', 37),NULL)
+(1,toDecimal128('0', 37),NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -27742,6 +29852,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -27762,11 +29873,13 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	toDecimal128('-0.0000000079228162514264337594', 37),
 	toDecimal128('0.0000000079228162514264337594', 37)
 )
@@ -27775,6 +29888,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -27795,16 +29909,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal128('-0.0000000079228162514264337594', 37),toDecimal128('0.0000000079228162514264337594', 37))
+(1,toDecimal128('-0.0000000079228162514264337594', 37),toDecimal128('0.0000000079228162514264337594', 37))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -27825,16 +29941,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal128('-0.0000000079228162514264337594', 37),toDecimal128('0.0000000079228162514264337594', 37))
+(1,toDecimal128('-0.0000000079228162514264337594', 37),toDecimal128('0.0000000079228162514264337594', 37))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -27855,16 +29973,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal128('-0.0000000079228162514264337594', 37),toDecimal128('0.0000000079228162514264337594', 37))
+(1,toDecimal128('-0.0000000079228162514264337594', 37),toDecimal128('0.0000000079228162514264337594', 37))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -27877,6 +29997,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -27896,11 +30017,13 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	'0'::Decimal128(37),
 	NULL
 )
@@ -27909,6 +30032,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -27928,16 +30052,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('0'::Decimal128(37),NULL)
+(1,'0'::Decimal128(37),NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -27957,16 +30083,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('0'::Decimal128(37),NULL)
+(1,'0'::Decimal128(37),NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -27986,16 +30114,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('0'::Decimal128(37),NULL)
+(1,'0'::Decimal128(37),NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -28007,6 +30137,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -28027,11 +30158,13 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	'-0.9999999999999999999999999999999999999'::Decimal128(37),
 	'0.9999999999999999999999999999999999999'::Decimal128(37)
 )
@@ -28040,6 +30173,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -28060,16 +30194,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('-0.9999999999999999999999999999999999999'::Decimal128(37),'0.9999999999999999999999999999999999999'::Decimal128(37))
+(1,'-0.9999999999999999999999999999999999999'::Decimal128(37),'0.9999999999999999999999999999999999999'::Decimal128(37))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -28090,16 +30226,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('-0.9999999999999999999999999999999999999'::Decimal128(37),'0.9999999999999999999999999999999999999'::Decimal128(37))
+(1,'-0.9999999999999999999999999999999999999'::Decimal128(37),'0.9999999999999999999999999999999999999'::Decimal128(37))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -28120,16 +30258,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('-0.9999999999999999999999999999999999999'::Decimal128(37),'0.9999999999999999999999999999999999999'::Decimal128(37))
+(1,'-0.9999999999999999999999999999999999999'::Decimal128(37),'0.9999999999999999999999999999999999999'::Decimal128(37))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -28142,6 +30282,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -28161,11 +30302,13 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	toDecimal256('0', 0),
 	NULL
 )
@@ -28174,6 +30317,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -28193,16 +30337,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal256('0', 0),NULL)
+(1,toDecimal256('0', 0),NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -28222,16 +30368,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal256('0', 0),NULL)
+(1,toDecimal256('0', 0),NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -28251,16 +30399,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal256('0', 0),NULL)
+(1,toDecimal256('0', 0),NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -28272,6 +30422,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -28292,11 +30443,13 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	toDecimal256('-79228162514264337593543950335', 0),
 	toDecimal256('79228162514264337593543950335', 0)
 )
@@ -28305,6 +30458,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -28325,16 +30479,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal256('-79228162514264337593543950335', 0),toDecimal256('79228162514264337593543950335', 0))
+(1,toDecimal256('-79228162514264337593543950335', 0),toDecimal256('79228162514264337593543950335', 0))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -28355,16 +30511,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal256('-79228162514264337593543950335', 0),toDecimal256('79228162514264337593543950335', 0))
+(1,toDecimal256('-79228162514264337593543950335', 0),toDecimal256('79228162514264337593543950335', 0))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -28385,16 +30543,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal256('-79228162514264337593543950335', 0),toDecimal256('79228162514264337593543950335', 0))
+(1,toDecimal256('-79228162514264337593543950335', 0),toDecimal256('79228162514264337593543950335', 0))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -28407,6 +30567,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -28426,11 +30587,13 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	'0'::Decimal256(0),
 	NULL
 )
@@ -28439,6 +30602,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -28458,16 +30622,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('0'::Decimal256(0),NULL)
+(1,'0'::Decimal256(0),NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -28487,16 +30653,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('0'::Decimal256(0),NULL)
+(1,'0'::Decimal256(0),NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -28516,16 +30684,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('0'::Decimal256(0),NULL)
+(1,'0'::Decimal256(0),NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -28537,6 +30707,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -28557,11 +30728,13 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	'-99999999999999999999999999999999999999'::Decimal256(0),
 	'99999999999999999999999999999999999999'::Decimal256(0)
 )
@@ -28570,6 +30743,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -28590,16 +30764,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('-99999999999999999999999999999999999999'::Decimal256(0),'99999999999999999999999999999999999999'::Decimal256(0))
+(1,'-99999999999999999999999999999999999999'::Decimal256(0),'99999999999999999999999999999999999999'::Decimal256(0))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -28620,16 +30796,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('-99999999999999999999999999999999999999'::Decimal256(0),'99999999999999999999999999999999999999'::Decimal256(0))
+(1,'-99999999999999999999999999999999999999'::Decimal256(0),'99999999999999999999999999999999999999'::Decimal256(0))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -28650,16 +30828,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('-99999999999999999999999999999999999999'::Decimal256(0),'99999999999999999999999999999999999999'::Decimal256(0))
+(1,'-99999999999999999999999999999999999999'::Decimal256(0),'99999999999999999999999999999999999999'::Decimal256(0))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -28672,6 +30852,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -28691,11 +30872,13 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	toDecimal256('0', 1),
 	NULL
 )
@@ -28704,6 +30887,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -28723,16 +30907,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal256('0', 1),NULL)
+(1,toDecimal256('0', 1),NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -28752,16 +30938,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal256('0', 1),NULL)
+(1,toDecimal256('0', 1),NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -28781,16 +30969,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal256('0', 1),NULL)
+(1,toDecimal256('0', 1),NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -28802,6 +30992,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -28822,11 +31013,13 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	toDecimal256('-7922816251426433759354395033.5', 1),
 	toDecimal256('7922816251426433759354395033.5', 1)
 )
@@ -28835,6 +31028,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -28855,16 +31049,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal256('-7922816251426433759354395033.5', 1),toDecimal256('7922816251426433759354395033.5', 1))
+(1,toDecimal256('-7922816251426433759354395033.5', 1),toDecimal256('7922816251426433759354395033.5', 1))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -28885,16 +31081,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal256('-7922816251426433759354395033.5', 1),toDecimal256('7922816251426433759354395033.5', 1))
+(1,toDecimal256('-7922816251426433759354395033.5', 1),toDecimal256('7922816251426433759354395033.5', 1))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -28915,16 +31113,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal256('-7922816251426433759354395033.5', 1),toDecimal256('7922816251426433759354395033.5', 1))
+(1,toDecimal256('-7922816251426433759354395033.5', 1),toDecimal256('7922816251426433759354395033.5', 1))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -28937,6 +31137,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -28956,11 +31157,13 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	'0'::Decimal256(1),
 	NULL
 )
@@ -28969,6 +31172,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -28988,16 +31192,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('0'::Decimal256(1),NULL)
+(1,'0'::Decimal256(1),NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -29017,16 +31223,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('0'::Decimal256(1),NULL)
+(1,'0'::Decimal256(1),NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -29046,16 +31254,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('0'::Decimal256(1),NULL)
+(1,'0'::Decimal256(1),NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -29067,6 +31277,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -29087,11 +31298,13 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	'-9999999999999999999999999999999999999.9'::Decimal256(1),
 	'9999999999999999999999999999999999999.9'::Decimal256(1)
 )
@@ -29100,6 +31313,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -29120,16 +31334,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('-9999999999999999999999999999999999999.9'::Decimal256(1),'9999999999999999999999999999999999999.9'::Decimal256(1))
+(1,'-9999999999999999999999999999999999999.9'::Decimal256(1),'9999999999999999999999999999999999999.9'::Decimal256(1))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -29150,16 +31366,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('-9999999999999999999999999999999999999.9'::Decimal256(1),'9999999999999999999999999999999999999.9'::Decimal256(1))
+(1,'-9999999999999999999999999999999999999.9'::Decimal256(1),'9999999999999999999999999999999999999.9'::Decimal256(1))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -29180,16 +31398,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('-9999999999999999999999999999999999999.9'::Decimal256(1),'9999999999999999999999999999999999999.9'::Decimal256(1))
+(1,'-9999999999999999999999999999999999999.9'::Decimal256(1),'9999999999999999999999999999999999999.9'::Decimal256(1))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -29202,6 +31422,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -29221,11 +31442,13 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	toDecimal256('0', 37),
 	NULL
 )
@@ -29234,6 +31457,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -29253,16 +31477,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal256('0', 37),NULL)
+(1,toDecimal256('0', 37),NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -29282,16 +31508,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal256('0', 37),NULL)
+(1,toDecimal256('0', 37),NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -29311,16 +31539,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal256('0', 37),NULL)
+(1,toDecimal256('0', 37),NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -29332,6 +31562,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -29352,11 +31583,13 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	toDecimal256('-0.0000000079228162514264337594', 37),
 	toDecimal256('0.0000000079228162514264337594', 37)
 )
@@ -29365,6 +31598,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -29385,16 +31619,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal256('-0.0000000079228162514264337594', 37),toDecimal256('0.0000000079228162514264337594', 37))
+(1,toDecimal256('-0.0000000079228162514264337594', 37),toDecimal256('0.0000000079228162514264337594', 37))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -29415,16 +31651,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal256('-0.0000000079228162514264337594', 37),toDecimal256('0.0000000079228162514264337594', 37))
+(1,toDecimal256('-0.0000000079228162514264337594', 37),toDecimal256('0.0000000079228162514264337594', 37))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -29445,16 +31683,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal256('-0.0000000079228162514264337594', 37),toDecimal256('0.0000000079228162514264337594', 37))
+(1,toDecimal256('-0.0000000079228162514264337594', 37),toDecimal256('0.0000000079228162514264337594', 37))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -29467,6 +31707,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -29486,11 +31727,13 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	'0'::Decimal256(37),
 	NULL
 )
@@ -29499,6 +31742,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -29518,16 +31762,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('0'::Decimal256(37),NULL)
+(1,'0'::Decimal256(37),NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -29547,16 +31793,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('0'::Decimal256(37),NULL)
+(1,'0'::Decimal256(37),NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -29576,16 +31824,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('0'::Decimal256(37),NULL)
+(1,'0'::Decimal256(37),NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -29597,6 +31847,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -29617,11 +31868,13 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	'-9.9999999999999999999999999999999999999'::Decimal256(37),
 	'9.9999999999999999999999999999999999999'::Decimal256(37)
 )
@@ -29630,6 +31883,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -29650,16 +31904,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('-9.9999999999999999999999999999999999999'::Decimal256(37),'9.9999999999999999999999999999999999999'::Decimal256(37))
+(1,'-9.9999999999999999999999999999999999999'::Decimal256(37),'9.9999999999999999999999999999999999999'::Decimal256(37))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -29680,16 +31936,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('-9.9999999999999999999999999999999999999'::Decimal256(37),'9.9999999999999999999999999999999999999'::Decimal256(37))
+(1,'-9.9999999999999999999999999999999999999'::Decimal256(37),'9.9999999999999999999999999999999999999'::Decimal256(37))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -29710,16 +31968,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('-9.9999999999999999999999999999999999999'::Decimal256(37),'9.9999999999999999999999999999999999999'::Decimal256(37))
+(1,'-9.9999999999999999999999999999999999999'::Decimal256(37),'9.9999999999999999999999999999999999999'::Decimal256(37))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -29732,6 +31992,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -29751,11 +32012,13 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	toDecimal256('0', 38),
 	NULL
 )
@@ -29764,6 +32027,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -29783,16 +32047,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal256('0', 38),NULL)
+(1,toDecimal256('0', 38),NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -29812,16 +32078,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal256('0', 38),NULL)
+(1,toDecimal256('0', 38),NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -29841,16 +32109,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal256('0', 38),NULL)
+(1,toDecimal256('0', 38),NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -29862,6 +32132,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -29882,11 +32153,13 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	toDecimal256('-0.0000000007922816251426433759', 38),
 	toDecimal256('0.0000000007922816251426433759', 38)
 )
@@ -29895,6 +32168,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -29915,16 +32189,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal256('-0.0000000007922816251426433759', 38),toDecimal256('0.0000000007922816251426433759', 38))
+(1,toDecimal256('-0.0000000007922816251426433759', 38),toDecimal256('0.0000000007922816251426433759', 38))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -29945,16 +32221,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal256('-0.0000000007922816251426433759', 38),toDecimal256('0.0000000007922816251426433759', 38))
+(1,toDecimal256('-0.0000000007922816251426433759', 38),toDecimal256('0.0000000007922816251426433759', 38))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -29975,16 +32253,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal256('-0.0000000007922816251426433759', 38),toDecimal256('0.0000000007922816251426433759', 38))
+(1,toDecimal256('-0.0000000007922816251426433759', 38),toDecimal256('0.0000000007922816251426433759', 38))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -29997,6 +32277,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -30016,11 +32297,13 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	'0'::Decimal256(38),
 	NULL
 )
@@ -30029,6 +32312,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -30048,16 +32332,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('0'::Decimal256(38),NULL)
+(1,'0'::Decimal256(38),NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -30077,16 +32363,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('0'::Decimal256(38),NULL)
+(1,'0'::Decimal256(38),NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -30106,16 +32394,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('0'::Decimal256(38),NULL)
+(1,'0'::Decimal256(38),NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -30127,6 +32417,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -30147,11 +32438,13 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	'-0.99999999999999999999999999999999999999'::Decimal256(38),
 	'0.99999999999999999999999999999999999999'::Decimal256(38)
 )
@@ -30160,6 +32453,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -30180,16 +32474,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('-0.99999999999999999999999999999999999999'::Decimal256(38),'0.99999999999999999999999999999999999999'::Decimal256(38))
+(1,'-0.99999999999999999999999999999999999999'::Decimal256(38),'0.99999999999999999999999999999999999999'::Decimal256(38))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -30210,16 +32506,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('-0.99999999999999999999999999999999999999'::Decimal256(38),'0.99999999999999999999999999999999999999'::Decimal256(38))
+(1,'-0.99999999999999999999999999999999999999'::Decimal256(38),'0.99999999999999999999999999999999999999'::Decimal256(38))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -30240,16 +32538,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('-0.99999999999999999999999999999999999999'::Decimal256(38),'0.99999999999999999999999999999999999999'::Decimal256(38))
+(1,'-0.99999999999999999999999999999999999999'::Decimal256(38),'0.99999999999999999999999999999999999999'::Decimal256(38))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -30262,6 +32562,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -30281,11 +32582,13 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	toDecimal256('0', 0),
 	NULL
 )
@@ -30294,6 +32597,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -30313,16 +32617,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal256('0', 0),NULL)
+(1,toDecimal256('0', 0),NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -30342,16 +32648,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal256('0', 0),NULL)
+(1,toDecimal256('0', 0),NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -30371,16 +32679,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal256('0', 0),NULL)
+(1,toDecimal256('0', 0),NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -30392,6 +32702,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -30412,11 +32723,13 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	toDecimal256('-79228162514264337593543950335', 0),
 	toDecimal256('79228162514264337593543950335', 0)
 )
@@ -30425,6 +32738,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -30445,16 +32759,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal256('-79228162514264337593543950335', 0),toDecimal256('79228162514264337593543950335', 0))
+(1,toDecimal256('-79228162514264337593543950335', 0),toDecimal256('79228162514264337593543950335', 0))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -30475,16 +32791,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal256('-79228162514264337593543950335', 0),toDecimal256('79228162514264337593543950335', 0))
+(1,toDecimal256('-79228162514264337593543950335', 0),toDecimal256('79228162514264337593543950335', 0))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -30505,16 +32823,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal256('-79228162514264337593543950335', 0),toDecimal256('79228162514264337593543950335', 0))
+(1,toDecimal256('-79228162514264337593543950335', 0),toDecimal256('79228162514264337593543950335', 0))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -30527,6 +32847,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -30546,11 +32867,13 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	'0'::Decimal256(0),
 	NULL
 )
@@ -30559,6 +32882,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -30578,16 +32902,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('0'::Decimal256(0),NULL)
+(1,'0'::Decimal256(0),NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -30607,16 +32933,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('0'::Decimal256(0),NULL)
+(1,'0'::Decimal256(0),NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -30636,16 +32964,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('0'::Decimal256(0),NULL)
+(1,'0'::Decimal256(0),NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -30657,6 +32987,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -30677,11 +33008,13 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	'-999999999999999999999999999999999999999'::Decimal256(0),
 	'999999999999999999999999999999999999999'::Decimal256(0)
 )
@@ -30690,6 +33023,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -30710,16 +33044,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('-999999999999999999999999999999999999999'::Decimal256(0),'999999999999999999999999999999999999999'::Decimal256(0))
+(1,'-999999999999999999999999999999999999999'::Decimal256(0),'999999999999999999999999999999999999999'::Decimal256(0))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -30740,16 +33076,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('-999999999999999999999999999999999999999'::Decimal256(0),'999999999999999999999999999999999999999'::Decimal256(0))
+(1,'-999999999999999999999999999999999999999'::Decimal256(0),'999999999999999999999999999999999999999'::Decimal256(0))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -30770,16 +33108,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('-999999999999999999999999999999999999999'::Decimal256(0),'999999999999999999999999999999999999999'::Decimal256(0))
+(1,'-999999999999999999999999999999999999999'::Decimal256(0),'999999999999999999999999999999999999999'::Decimal256(0))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -30792,6 +33132,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -30811,11 +33152,13 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	toDecimal256('0', 1),
 	NULL
 )
@@ -30824,6 +33167,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -30843,16 +33187,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal256('0', 1),NULL)
+(1,toDecimal256('0', 1),NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -30872,16 +33218,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal256('0', 1),NULL)
+(1,toDecimal256('0', 1),NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -30901,16 +33249,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal256('0', 1),NULL)
+(1,toDecimal256('0', 1),NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -30922,6 +33272,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -30942,11 +33293,13 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	toDecimal256('-7922816251426433759354395033.5', 1),
 	toDecimal256('7922816251426433759354395033.5', 1)
 )
@@ -30955,6 +33308,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -30975,16 +33329,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal256('-7922816251426433759354395033.5', 1),toDecimal256('7922816251426433759354395033.5', 1))
+(1,toDecimal256('-7922816251426433759354395033.5', 1),toDecimal256('7922816251426433759354395033.5', 1))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -31005,16 +33361,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal256('-7922816251426433759354395033.5', 1),toDecimal256('7922816251426433759354395033.5', 1))
+(1,toDecimal256('-7922816251426433759354395033.5', 1),toDecimal256('7922816251426433759354395033.5', 1))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -31035,16 +33393,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal256('-7922816251426433759354395033.5', 1),toDecimal256('7922816251426433759354395033.5', 1))
+(1,toDecimal256('-7922816251426433759354395033.5', 1),toDecimal256('7922816251426433759354395033.5', 1))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -31057,6 +33417,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -31076,11 +33437,13 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	'0'::Decimal256(1),
 	NULL
 )
@@ -31089,6 +33452,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -31108,16 +33472,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('0'::Decimal256(1),NULL)
+(1,'0'::Decimal256(1),NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -31137,16 +33503,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('0'::Decimal256(1),NULL)
+(1,'0'::Decimal256(1),NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -31166,16 +33534,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('0'::Decimal256(1),NULL)
+(1,'0'::Decimal256(1),NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -31187,6 +33557,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -31207,11 +33578,13 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	'-99999999999999999999999999999999999999.9'::Decimal256(1),
 	'99999999999999999999999999999999999999.9'::Decimal256(1)
 )
@@ -31220,6 +33593,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -31240,16 +33614,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('-99999999999999999999999999999999999999.9'::Decimal256(1),'99999999999999999999999999999999999999.9'::Decimal256(1))
+(1,'-99999999999999999999999999999999999999.9'::Decimal256(1),'99999999999999999999999999999999999999.9'::Decimal256(1))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -31270,16 +33646,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('-99999999999999999999999999999999999999.9'::Decimal256(1),'99999999999999999999999999999999999999.9'::Decimal256(1))
+(1,'-99999999999999999999999999999999999999.9'::Decimal256(1),'99999999999999999999999999999999999999.9'::Decimal256(1))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -31300,16 +33678,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('-99999999999999999999999999999999999999.9'::Decimal256(1),'99999999999999999999999999999999999999.9'::Decimal256(1))
+(1,'-99999999999999999999999999999999999999.9'::Decimal256(1),'99999999999999999999999999999999999999.9'::Decimal256(1))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -31322,6 +33702,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -31341,11 +33722,13 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	toDecimal256('0', 38),
 	NULL
 )
@@ -31354,6 +33737,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -31373,16 +33757,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal256('0', 38),NULL)
+(1,toDecimal256('0', 38),NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -31402,16 +33788,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal256('0', 38),NULL)
+(1,toDecimal256('0', 38),NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -31431,16 +33819,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal256('0', 38),NULL)
+(1,toDecimal256('0', 38),NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -31452,6 +33842,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -31472,11 +33863,13 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	toDecimal256('-0.0000000007922816251426433759', 38),
 	toDecimal256('0.0000000007922816251426433759', 38)
 )
@@ -31485,6 +33878,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -31505,16 +33899,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal256('-0.0000000007922816251426433759', 38),toDecimal256('0.0000000007922816251426433759', 38))
+(1,toDecimal256('-0.0000000007922816251426433759', 38),toDecimal256('0.0000000007922816251426433759', 38))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -31535,16 +33931,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal256('-0.0000000007922816251426433759', 38),toDecimal256('0.0000000007922816251426433759', 38))
+(1,toDecimal256('-0.0000000007922816251426433759', 38),toDecimal256('0.0000000007922816251426433759', 38))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -31565,16 +33963,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal256('-0.0000000007922816251426433759', 38),toDecimal256('0.0000000007922816251426433759', 38))
+(1,toDecimal256('-0.0000000007922816251426433759', 38),toDecimal256('0.0000000007922816251426433759', 38))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -31587,6 +33987,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -31606,11 +34007,13 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	'0'::Decimal256(38),
 	NULL
 )
@@ -31619,6 +34022,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -31638,16 +34042,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('0'::Decimal256(38),NULL)
+(1,'0'::Decimal256(38),NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -31667,16 +34073,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('0'::Decimal256(38),NULL)
+(1,'0'::Decimal256(38),NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -31696,16 +34104,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('0'::Decimal256(38),NULL)
+(1,'0'::Decimal256(38),NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -31717,6 +34127,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -31737,11 +34148,13 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	'-9.99999999999999999999999999999999999999'::Decimal256(38),
 	'9.99999999999999999999999999999999999999'::Decimal256(38)
 )
@@ -31750,6 +34163,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -31770,16 +34184,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('-9.99999999999999999999999999999999999999'::Decimal256(38),'9.99999999999999999999999999999999999999'::Decimal256(38))
+(1,'-9.99999999999999999999999999999999999999'::Decimal256(38),'9.99999999999999999999999999999999999999'::Decimal256(38))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -31800,16 +34216,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('-9.99999999999999999999999999999999999999'::Decimal256(38),'9.99999999999999999999999999999999999999'::Decimal256(38))
+(1,'-9.99999999999999999999999999999999999999'::Decimal256(38),'9.99999999999999999999999999999999999999'::Decimal256(38))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -31830,16 +34248,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('-9.99999999999999999999999999999999999999'::Decimal256(38),'9.99999999999999999999999999999999999999'::Decimal256(38))
+(1,'-9.99999999999999999999999999999999999999'::Decimal256(38),'9.99999999999999999999999999999999999999'::Decimal256(38))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -31852,6 +34272,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -31871,11 +34292,13 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	toDecimal256('0', 39),
 	NULL
 )
@@ -31884,6 +34307,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -31903,16 +34327,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal256('0', 39),NULL)
+(1,toDecimal256('0', 39),NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -31932,16 +34358,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal256('0', 39),NULL)
+(1,toDecimal256('0', 39),NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -31961,16 +34389,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal256('0', 39),NULL)
+(1,toDecimal256('0', 39),NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -31982,6 +34412,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -32002,11 +34433,13 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	toDecimal256('-0.0000000000792281625142643376', 39),
 	toDecimal256('0.0000000000792281625142643376', 39)
 )
@@ -32015,6 +34448,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -32035,16 +34469,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal256('-0.0000000000792281625142643376', 39),toDecimal256('0.0000000000792281625142643376', 39))
+(1,toDecimal256('-0.0000000000792281625142643376', 39),toDecimal256('0.0000000000792281625142643376', 39))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -32065,16 +34501,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal256('-0.0000000000792281625142643376', 39),toDecimal256('0.0000000000792281625142643376', 39))
+(1,toDecimal256('-0.0000000000792281625142643376', 39),toDecimal256('0.0000000000792281625142643376', 39))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -32095,16 +34533,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal256('-0.0000000000792281625142643376', 39),toDecimal256('0.0000000000792281625142643376', 39))
+(1,toDecimal256('-0.0000000000792281625142643376', 39),toDecimal256('0.0000000000792281625142643376', 39))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -32117,6 +34557,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -32136,11 +34577,13 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	'0'::Decimal256(39),
 	NULL
 )
@@ -32149,6 +34592,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -32168,16 +34612,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('0'::Decimal256(39),NULL)
+(1,'0'::Decimal256(39),NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -32197,16 +34643,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('0'::Decimal256(39),NULL)
+(1,'0'::Decimal256(39),NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -32226,16 +34674,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('0'::Decimal256(39),NULL)
+(1,'0'::Decimal256(39),NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -32247,6 +34697,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -32267,11 +34718,13 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	'-0.999999999999999999999999999999999999999'::Decimal256(39),
 	'0.999999999999999999999999999999999999999'::Decimal256(39)
 )
@@ -32280,6 +34733,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -32300,16 +34754,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('-0.999999999999999999999999999999999999999'::Decimal256(39),'0.999999999999999999999999999999999999999'::Decimal256(39))
+(1,'-0.999999999999999999999999999999999999999'::Decimal256(39),'0.999999999999999999999999999999999999999'::Decimal256(39))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -32330,16 +34786,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('-0.999999999999999999999999999999999999999'::Decimal256(39),'0.999999999999999999999999999999999999999'::Decimal256(39))
+(1,'-0.999999999999999999999999999999999999999'::Decimal256(39),'0.999999999999999999999999999999999999999'::Decimal256(39))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -32360,16 +34818,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('-0.999999999999999999999999999999999999999'::Decimal256(39),'0.999999999999999999999999999999999999999'::Decimal256(39))
+(1,'-0.999999999999999999999999999999999999999'::Decimal256(39),'0.999999999999999999999999999999999999999'::Decimal256(39))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -32382,6 +34842,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -32401,11 +34862,13 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	toDecimal256('0', 0),
 	NULL
 )
@@ -32414,6 +34877,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -32433,16 +34897,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal256('0', 0),NULL)
+(1,toDecimal256('0', 0),NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -32462,16 +34928,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal256('0', 0),NULL)
+(1,toDecimal256('0', 0),NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -32491,16 +34959,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal256('0', 0),NULL)
+(1,toDecimal256('0', 0),NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -32512,6 +34982,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -32532,11 +35003,13 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	toDecimal256('-79228162514264337593543950335', 0),
 	toDecimal256('79228162514264337593543950335', 0)
 )
@@ -32545,6 +35018,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -32565,16 +35039,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal256('-79228162514264337593543950335', 0),toDecimal256('79228162514264337593543950335', 0))
+(1,toDecimal256('-79228162514264337593543950335', 0),toDecimal256('79228162514264337593543950335', 0))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -32595,16 +35071,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal256('-79228162514264337593543950335', 0),toDecimal256('79228162514264337593543950335', 0))
+(1,toDecimal256('-79228162514264337593543950335', 0),toDecimal256('79228162514264337593543950335', 0))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -32625,16 +35103,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal256('-79228162514264337593543950335', 0),toDecimal256('79228162514264337593543950335', 0))
+(1,toDecimal256('-79228162514264337593543950335', 0),toDecimal256('79228162514264337593543950335', 0))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -32647,6 +35127,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -32666,11 +35147,13 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	'0'::Decimal256(0),
 	NULL
 )
@@ -32679,6 +35162,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -32698,16 +35182,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('0'::Decimal256(0),NULL)
+(1,'0'::Decimal256(0),NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -32727,16 +35213,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('0'::Decimal256(0),NULL)
+(1,'0'::Decimal256(0),NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -32756,16 +35244,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('0'::Decimal256(0),NULL)
+(1,'0'::Decimal256(0),NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -32777,6 +35267,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -32797,11 +35288,13 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	'-9999999999999999999999999999999999999999'::Decimal256(0),
 	'9999999999999999999999999999999999999999'::Decimal256(0)
 )
@@ -32810,6 +35303,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -32830,16 +35324,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('-9999999999999999999999999999999999999999'::Decimal256(0),'9999999999999999999999999999999999999999'::Decimal256(0))
+(1,'-9999999999999999999999999999999999999999'::Decimal256(0),'9999999999999999999999999999999999999999'::Decimal256(0))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -32860,16 +35356,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('-9999999999999999999999999999999999999999'::Decimal256(0),'9999999999999999999999999999999999999999'::Decimal256(0))
+(1,'-9999999999999999999999999999999999999999'::Decimal256(0),'9999999999999999999999999999999999999999'::Decimal256(0))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -32890,16 +35388,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('-9999999999999999999999999999999999999999'::Decimal256(0),'9999999999999999999999999999999999999999'::Decimal256(0))
+(1,'-9999999999999999999999999999999999999999'::Decimal256(0),'9999999999999999999999999999999999999999'::Decimal256(0))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -32912,6 +35412,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -32931,11 +35432,13 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	toDecimal256('0', 1),
 	NULL
 )
@@ -32944,6 +35447,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -32963,16 +35467,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal256('0', 1),NULL)
+(1,toDecimal256('0', 1),NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -32992,16 +35498,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal256('0', 1),NULL)
+(1,toDecimal256('0', 1),NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -33021,16 +35529,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal256('0', 1),NULL)
+(1,toDecimal256('0', 1),NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -33042,6 +35552,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -33062,11 +35573,13 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	toDecimal256('-7922816251426433759354395033.5', 1),
 	toDecimal256('7922816251426433759354395033.5', 1)
 )
@@ -33075,6 +35588,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -33095,16 +35609,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal256('-7922816251426433759354395033.5', 1),toDecimal256('7922816251426433759354395033.5', 1))
+(1,toDecimal256('-7922816251426433759354395033.5', 1),toDecimal256('7922816251426433759354395033.5', 1))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -33125,16 +35641,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal256('-7922816251426433759354395033.5', 1),toDecimal256('7922816251426433759354395033.5', 1))
+(1,toDecimal256('-7922816251426433759354395033.5', 1),toDecimal256('7922816251426433759354395033.5', 1))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -33155,16 +35673,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal256('-7922816251426433759354395033.5', 1),toDecimal256('7922816251426433759354395033.5', 1))
+(1,toDecimal256('-7922816251426433759354395033.5', 1),toDecimal256('7922816251426433759354395033.5', 1))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -33177,6 +35697,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -33196,11 +35717,13 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	'0'::Decimal256(1),
 	NULL
 )
@@ -33209,6 +35732,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -33228,16 +35752,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('0'::Decimal256(1),NULL)
+(1,'0'::Decimal256(1),NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -33257,16 +35783,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('0'::Decimal256(1),NULL)
+(1,'0'::Decimal256(1),NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -33286,16 +35814,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('0'::Decimal256(1),NULL)
+(1,'0'::Decimal256(1),NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -33307,6 +35837,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -33327,11 +35858,13 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	'-999999999999999999999999999999999999999.9'::Decimal256(1),
 	'999999999999999999999999999999999999999.9'::Decimal256(1)
 )
@@ -33340,6 +35873,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -33360,16 +35894,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('-999999999999999999999999999999999999999.9'::Decimal256(1),'999999999999999999999999999999999999999.9'::Decimal256(1))
+(1,'-999999999999999999999999999999999999999.9'::Decimal256(1),'999999999999999999999999999999999999999.9'::Decimal256(1))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -33390,16 +35926,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('-999999999999999999999999999999999999999.9'::Decimal256(1),'999999999999999999999999999999999999999.9'::Decimal256(1))
+(1,'-999999999999999999999999999999999999999.9'::Decimal256(1),'999999999999999999999999999999999999999.9'::Decimal256(1))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -33420,16 +35958,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('-999999999999999999999999999999999999999.9'::Decimal256(1),'999999999999999999999999999999999999999.9'::Decimal256(1))
+(1,'-999999999999999999999999999999999999999.9'::Decimal256(1),'999999999999999999999999999999999999999.9'::Decimal256(1))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -33442,6 +35982,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -33461,11 +36002,13 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	toDecimal256('0', 39),
 	NULL
 )
@@ -33474,6 +36017,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -33493,16 +36037,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal256('0', 39),NULL)
+(1,toDecimal256('0', 39),NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -33522,16 +36068,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal256('0', 39),NULL)
+(1,toDecimal256('0', 39),NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -33551,16 +36099,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal256('0', 39),NULL)
+(1,toDecimal256('0', 39),NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -33572,6 +36122,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -33592,11 +36143,13 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	toDecimal256('-0.0000000000792281625142643376', 39),
 	toDecimal256('0.0000000000792281625142643376', 39)
 )
@@ -33605,6 +36158,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -33625,16 +36179,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal256('-0.0000000000792281625142643376', 39),toDecimal256('0.0000000000792281625142643376', 39))
+(1,toDecimal256('-0.0000000000792281625142643376', 39),toDecimal256('0.0000000000792281625142643376', 39))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -33655,16 +36211,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal256('-0.0000000000792281625142643376', 39),toDecimal256('0.0000000000792281625142643376', 39))
+(1,toDecimal256('-0.0000000000792281625142643376', 39),toDecimal256('0.0000000000792281625142643376', 39))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -33685,16 +36243,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal256('-0.0000000000792281625142643376', 39),toDecimal256('0.0000000000792281625142643376', 39))
+(1,toDecimal256('-0.0000000000792281625142643376', 39),toDecimal256('0.0000000000792281625142643376', 39))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -33707,6 +36267,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -33726,11 +36287,13 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	'0'::Decimal256(39),
 	NULL
 )
@@ -33739,6 +36302,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -33758,16 +36322,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('0'::Decimal256(39),NULL)
+(1,'0'::Decimal256(39),NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -33787,16 +36353,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('0'::Decimal256(39),NULL)
+(1,'0'::Decimal256(39),NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -33816,16 +36384,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('0'::Decimal256(39),NULL)
+(1,'0'::Decimal256(39),NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -33837,6 +36407,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -33857,11 +36428,13 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	'-9.999999999999999999999999999999999999999'::Decimal256(39),
 	'9.999999999999999999999999999999999999999'::Decimal256(39)
 )
@@ -33870,6 +36443,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -33890,16 +36464,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('-9.999999999999999999999999999999999999999'::Decimal256(39),'9.999999999999999999999999999999999999999'::Decimal256(39))
+(1,'-9.999999999999999999999999999999999999999'::Decimal256(39),'9.999999999999999999999999999999999999999'::Decimal256(39))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -33920,16 +36496,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('-9.999999999999999999999999999999999999999'::Decimal256(39),'9.999999999999999999999999999999999999999'::Decimal256(39))
+(1,'-9.999999999999999999999999999999999999999'::Decimal256(39),'9.999999999999999999999999999999999999999'::Decimal256(39))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -33950,16 +36528,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('-9.999999999999999999999999999999999999999'::Decimal256(39),'9.999999999999999999999999999999999999999'::Decimal256(39))
+(1,'-9.999999999999999999999999999999999999999'::Decimal256(39),'9.999999999999999999999999999999999999999'::Decimal256(39))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -33972,6 +36552,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -33991,11 +36572,13 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	toDecimal256('0', 40),
 	NULL
 )
@@ -34004,6 +36587,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -34023,16 +36607,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal256('0', 40),NULL)
+(1,toDecimal256('0', 40),NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -34052,16 +36638,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal256('0', 40),NULL)
+(1,toDecimal256('0', 40),NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -34081,16 +36669,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal256('0', 40),NULL)
+(1,toDecimal256('0', 40),NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -34102,6 +36692,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -34122,11 +36713,13 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	toDecimal256('-0.0000000000079228162514264338', 40),
 	toDecimal256('0.0000000000079228162514264338', 40)
 )
@@ -34135,6 +36728,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -34155,16 +36749,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal256('-0.0000000000079228162514264338', 40),toDecimal256('0.0000000000079228162514264338', 40))
+(1,toDecimal256('-0.0000000000079228162514264338', 40),toDecimal256('0.0000000000079228162514264338', 40))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -34185,16 +36781,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal256('-0.0000000000079228162514264338', 40),toDecimal256('0.0000000000079228162514264338', 40))
+(1,toDecimal256('-0.0000000000079228162514264338', 40),toDecimal256('0.0000000000079228162514264338', 40))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -34215,16 +36813,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal256('-0.0000000000079228162514264338', 40),toDecimal256('0.0000000000079228162514264338', 40))
+(1,toDecimal256('-0.0000000000079228162514264338', 40),toDecimal256('0.0000000000079228162514264338', 40))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -34237,6 +36837,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -34256,11 +36857,13 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	'0'::Decimal256(40),
 	NULL
 )
@@ -34269,6 +36872,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -34288,16 +36892,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('0'::Decimal256(40),NULL)
+(1,'0'::Decimal256(40),NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -34317,16 +36923,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('0'::Decimal256(40),NULL)
+(1,'0'::Decimal256(40),NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -34346,16 +36954,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('0'::Decimal256(40),NULL)
+(1,'0'::Decimal256(40),NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -34367,6 +36977,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -34387,11 +36998,13 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	'-0.9999999999999999999999999999999999999999'::Decimal256(40),
 	'0.9999999999999999999999999999999999999999'::Decimal256(40)
 )
@@ -34400,6 +37013,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -34420,16 +37034,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('-0.9999999999999999999999999999999999999999'::Decimal256(40),'0.9999999999999999999999999999999999999999'::Decimal256(40))
+(1,'-0.9999999999999999999999999999999999999999'::Decimal256(40),'0.9999999999999999999999999999999999999999'::Decimal256(40))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -34450,16 +37066,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('-0.9999999999999999999999999999999999999999'::Decimal256(40),'0.9999999999999999999999999999999999999999'::Decimal256(40))
+(1,'-0.9999999999999999999999999999999999999999'::Decimal256(40),'0.9999999999999999999999999999999999999999'::Decimal256(40))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -34480,16 +37098,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('-0.9999999999999999999999999999999999999999'::Decimal256(40),'0.9999999999999999999999999999999999999999'::Decimal256(40))
+(1,'-0.9999999999999999999999999999999999999999'::Decimal256(40),'0.9999999999999999999999999999999999999999'::Decimal256(40))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -34502,6 +37122,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -34521,11 +37142,13 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	toDecimal256('0', 0),
 	NULL
 )
@@ -34534,6 +37157,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -34553,16 +37177,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal256('0', 0),NULL)
+(1,toDecimal256('0', 0),NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -34582,16 +37208,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal256('0', 0),NULL)
+(1,toDecimal256('0', 0),NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -34611,16 +37239,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal256('0', 0),NULL)
+(1,toDecimal256('0', 0),NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -34632,6 +37262,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -34652,11 +37283,13 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	toDecimal256('-79228162514264337593543950335', 0),
 	toDecimal256('79228162514264337593543950335', 0)
 )
@@ -34665,6 +37298,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -34685,16 +37319,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal256('-79228162514264337593543950335', 0),toDecimal256('79228162514264337593543950335', 0))
+(1,toDecimal256('-79228162514264337593543950335', 0),toDecimal256('79228162514264337593543950335', 0))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -34715,16 +37351,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal256('-79228162514264337593543950335', 0),toDecimal256('79228162514264337593543950335', 0))
+(1,toDecimal256('-79228162514264337593543950335', 0),toDecimal256('79228162514264337593543950335', 0))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -34745,16 +37383,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal256('-79228162514264337593543950335', 0),toDecimal256('79228162514264337593543950335', 0))
+(1,toDecimal256('-79228162514264337593543950335', 0),toDecimal256('79228162514264337593543950335', 0))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -34767,6 +37407,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -34786,11 +37427,13 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	'0'::Decimal256(0),
 	NULL
 )
@@ -34799,6 +37442,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -34818,16 +37462,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('0'::Decimal256(0),NULL)
+(1,'0'::Decimal256(0),NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -34847,16 +37493,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('0'::Decimal256(0),NULL)
+(1,'0'::Decimal256(0),NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -34876,16 +37524,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('0'::Decimal256(0),NULL)
+(1,'0'::Decimal256(0),NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -34897,6 +37547,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -34917,11 +37568,13 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	'-999999999999999999999999999999999999999999999999999999999999999999999999999'::Decimal256(0),
 	'999999999999999999999999999999999999999999999999999999999999999999999999999'::Decimal256(0)
 )
@@ -34930,6 +37583,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -34950,16 +37604,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('-999999999999999999999999999999999999999999999999999999999999999999999999999'::Decimal256(0),'999999999999999999999999999999999999999999999999999999999999999999999999999'::Decimal256(0))
+(1,'-999999999999999999999999999999999999999999999999999999999999999999999999999'::Decimal256(0),'999999999999999999999999999999999999999999999999999999999999999999999999999'::Decimal256(0))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -34980,16 +37636,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('-999999999999999999999999999999999999999999999999999999999999999999999999999'::Decimal256(0),'999999999999999999999999999999999999999999999999999999999999999999999999999'::Decimal256(0))
+(1,'-999999999999999999999999999999999999999999999999999999999999999999999999999'::Decimal256(0),'999999999999999999999999999999999999999999999999999999999999999999999999999'::Decimal256(0))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -35010,16 +37668,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('-999999999999999999999999999999999999999999999999999999999999999999999999999'::Decimal256(0),'999999999999999999999999999999999999999999999999999999999999999999999999999'::Decimal256(0))
+(1,'-999999999999999999999999999999999999999999999999999999999999999999999999999'::Decimal256(0),'999999999999999999999999999999999999999999999999999999999999999999999999999'::Decimal256(0))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -35032,6 +37692,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -35051,11 +37712,13 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	toDecimal256('0', 1),
 	NULL
 )
@@ -35064,6 +37727,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -35083,16 +37747,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal256('0', 1),NULL)
+(1,toDecimal256('0', 1),NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -35112,16 +37778,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal256('0', 1),NULL)
+(1,toDecimal256('0', 1),NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -35141,16 +37809,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal256('0', 1),NULL)
+(1,toDecimal256('0', 1),NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -35162,6 +37832,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -35182,11 +37853,13 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	toDecimal256('-7922816251426433759354395033.5', 1),
 	toDecimal256('7922816251426433759354395033.5', 1)
 )
@@ -35195,6 +37868,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -35215,16 +37889,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal256('-7922816251426433759354395033.5', 1),toDecimal256('7922816251426433759354395033.5', 1))
+(1,toDecimal256('-7922816251426433759354395033.5', 1),toDecimal256('7922816251426433759354395033.5', 1))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -35245,16 +37921,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal256('-7922816251426433759354395033.5', 1),toDecimal256('7922816251426433759354395033.5', 1))
+(1,toDecimal256('-7922816251426433759354395033.5', 1),toDecimal256('7922816251426433759354395033.5', 1))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -35275,16 +37953,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal256('-7922816251426433759354395033.5', 1),toDecimal256('7922816251426433759354395033.5', 1))
+(1,toDecimal256('-7922816251426433759354395033.5', 1),toDecimal256('7922816251426433759354395033.5', 1))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -35297,6 +37977,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -35316,11 +37997,13 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	'0'::Decimal256(1),
 	NULL
 )
@@ -35329,6 +38012,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -35348,16 +38032,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('0'::Decimal256(1),NULL)
+(1,'0'::Decimal256(1),NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -35377,16 +38063,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('0'::Decimal256(1),NULL)
+(1,'0'::Decimal256(1),NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -35406,16 +38094,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('0'::Decimal256(1),NULL)
+(1,'0'::Decimal256(1),NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -35427,6 +38117,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -35447,11 +38138,13 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	'-99999999999999999999999999999999999999999999999999999999999999999999999999.9'::Decimal256(1),
 	'99999999999999999999999999999999999999999999999999999999999999999999999999.9'::Decimal256(1)
 )
@@ -35460,6 +38153,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -35480,16 +38174,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('-99999999999999999999999999999999999999999999999999999999999999999999999999.9'::Decimal256(1),'99999999999999999999999999999999999999999999999999999999999999999999999999.9'::Decimal256(1))
+(1,'-99999999999999999999999999999999999999999999999999999999999999999999999999.9'::Decimal256(1),'99999999999999999999999999999999999999999999999999999999999999999999999999.9'::Decimal256(1))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -35510,16 +38206,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('-99999999999999999999999999999999999999999999999999999999999999999999999999.9'::Decimal256(1),'99999999999999999999999999999999999999999999999999999999999999999999999999.9'::Decimal256(1))
+(1,'-99999999999999999999999999999999999999999999999999999999999999999999999999.9'::Decimal256(1),'99999999999999999999999999999999999999999999999999999999999999999999999999.9'::Decimal256(1))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -35540,16 +38238,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('-99999999999999999999999999999999999999999999999999999999999999999999999999.9'::Decimal256(1),'99999999999999999999999999999999999999999999999999999999999999999999999999.9'::Decimal256(1))
+(1,'-99999999999999999999999999999999999999999999999999999999999999999999999999.9'::Decimal256(1),'99999999999999999999999999999999999999999999999999999999999999999999999999.9'::Decimal256(1))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -35562,6 +38262,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -35581,11 +38282,13 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	toDecimal256('0', 74),
 	NULL
 )
@@ -35594,6 +38297,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -35613,16 +38317,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal256('0', 74),NULL)
+(1,toDecimal256('0', 74),NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -35642,16 +38348,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal256('0', 74),NULL)
+(1,toDecimal256('0', 74),NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -35671,16 +38379,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal256('0', 74),NULL)
+(1,toDecimal256('0', 74),NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -35692,6 +38402,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -35711,11 +38422,13 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	toDecimal256('0', 74),
 	toDecimal256('0', 74)
 )
@@ -35724,6 +38437,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -35743,16 +38457,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal256('0', 74),toDecimal256('0', 74))
+(1,toDecimal256('0', 74),toDecimal256('0', 74))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -35772,16 +38488,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal256('0', 74),toDecimal256('0', 74))
+(1,toDecimal256('0', 74),toDecimal256('0', 74))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -35801,16 +38519,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal256('0', 74),toDecimal256('0', 74))
+(1,toDecimal256('0', 74),toDecimal256('0', 74))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -35822,6 +38542,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -35841,11 +38562,13 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	'0'::Decimal256(74),
 	NULL
 )
@@ -35854,6 +38577,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -35873,16 +38597,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('0'::Decimal256(74),NULL)
+(1,'0'::Decimal256(74),NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -35902,16 +38628,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('0'::Decimal256(74),NULL)
+(1,'0'::Decimal256(74),NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -35931,16 +38659,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('0'::Decimal256(74),NULL)
+(1,'0'::Decimal256(74),NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -35952,6 +38682,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -35972,11 +38703,13 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	'-9.99999999999999999999999999999999999999999999999999999999999999999999999999'::Decimal256(74),
 	'9.99999999999999999999999999999999999999999999999999999999999999999999999999'::Decimal256(74)
 )
@@ -35985,6 +38718,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -36005,16 +38739,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('-9.99999999999999999999999999999999999999999999999999999999999999999999999999'::Decimal256(74),'9.99999999999999999999999999999999999999999999999999999999999999999999999999'::Decimal256(74))
+(1,'-9.99999999999999999999999999999999999999999999999999999999999999999999999999'::Decimal256(74),'9.99999999999999999999999999999999999999999999999999999999999999999999999999'::Decimal256(74))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -36035,16 +38771,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('-9.99999999999999999999999999999999999999999999999999999999999999999999999999'::Decimal256(74),'9.99999999999999999999999999999999999999999999999999999999999999999999999999'::Decimal256(74))
+(1,'-9.99999999999999999999999999999999999999999999999999999999999999999999999999'::Decimal256(74),'9.99999999999999999999999999999999999999999999999999999999999999999999999999'::Decimal256(74))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -36065,16 +38803,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('-9.99999999999999999999999999999999999999999999999999999999999999999999999999'::Decimal256(74),'9.99999999999999999999999999999999999999999999999999999999999999999999999999'::Decimal256(74))
+(1,'-9.99999999999999999999999999999999999999999999999999999999999999999999999999'::Decimal256(74),'9.99999999999999999999999999999999999999999999999999999999999999999999999999'::Decimal256(74))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -36087,6 +38827,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -36106,11 +38847,13 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	toDecimal256('0', 75),
 	NULL
 )
@@ -36119,6 +38862,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -36138,16 +38882,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal256('0', 75),NULL)
+(1,toDecimal256('0', 75),NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -36167,16 +38913,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal256('0', 75),NULL)
+(1,toDecimal256('0', 75),NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -36196,16 +38944,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal256('0', 75),NULL)
+(1,toDecimal256('0', 75),NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -36217,6 +38967,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -36236,11 +38987,13 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	toDecimal256('0', 75),
 	toDecimal256('0', 75)
 )
@@ -36249,6 +39002,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -36268,16 +39022,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal256('0', 75),toDecimal256('0', 75))
+(1,toDecimal256('0', 75),toDecimal256('0', 75))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -36297,16 +39053,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal256('0', 75),toDecimal256('0', 75))
+(1,toDecimal256('0', 75),toDecimal256('0', 75))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -36326,16 +39084,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal256('0', 75),toDecimal256('0', 75))
+(1,toDecimal256('0', 75),toDecimal256('0', 75))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -36347,6 +39107,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -36366,11 +39127,13 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	'0'::Decimal256(75),
 	NULL
 )
@@ -36379,6 +39142,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -36398,16 +39162,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('0'::Decimal256(75),NULL)
+(1,'0'::Decimal256(75),NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -36427,16 +39193,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('0'::Decimal256(75),NULL)
+(1,'0'::Decimal256(75),NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -36456,16 +39224,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('0'::Decimal256(75),NULL)
+(1,'0'::Decimal256(75),NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -36477,6 +39247,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -36497,11 +39268,13 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	'-0.999999999999999999999999999999999999999999999999999999999999999999999999999'::Decimal256(75),
 	'0.999999999999999999999999999999999999999999999999999999999999999999999999999'::Decimal256(75)
 )
@@ -36510,6 +39283,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -36530,16 +39304,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('-0.999999999999999999999999999999999999999999999999999999999999999999999999999'::Decimal256(75),'0.999999999999999999999999999999999999999999999999999999999999999999999999999'::Decimal256(75))
+(1,'-0.999999999999999999999999999999999999999999999999999999999999999999999999999'::Decimal256(75),'0.999999999999999999999999999999999999999999999999999999999999999999999999999'::Decimal256(75))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -36560,16 +39336,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('-0.999999999999999999999999999999999999999999999999999999999999999999999999999'::Decimal256(75),'0.999999999999999999999999999999999999999999999999999999999999999999999999999'::Decimal256(75))
+(1,'-0.999999999999999999999999999999999999999999999999999999999999999999999999999'::Decimal256(75),'0.999999999999999999999999999999999999999999999999999999999999999999999999999'::Decimal256(75))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -36590,16 +39368,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('-0.999999999999999999999999999999999999999999999999999999999999999999999999999'::Decimal256(75),'0.999999999999999999999999999999999999999999999999999999999999999999999999999'::Decimal256(75))
+(1,'-0.999999999999999999999999999999999999999999999999999999999999999999999999999'::Decimal256(75),'0.999999999999999999999999999999999999999999999999999999999999999999999999999'::Decimal256(75))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -36612,6 +39392,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -36631,11 +39412,13 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	toDecimal256('0', 0),
 	NULL
 )
@@ -36644,6 +39427,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -36663,16 +39447,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal256('0', 0),NULL)
+(1,toDecimal256('0', 0),NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -36692,16 +39478,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal256('0', 0),NULL)
+(1,toDecimal256('0', 0),NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -36721,16 +39509,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal256('0', 0),NULL)
+(1,toDecimal256('0', 0),NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -36742,6 +39532,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -36762,11 +39553,13 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	toDecimal256('-79228162514264337593543950335', 0),
 	toDecimal256('79228162514264337593543950335', 0)
 )
@@ -36775,6 +39568,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -36795,16 +39589,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal256('-79228162514264337593543950335', 0),toDecimal256('79228162514264337593543950335', 0))
+(1,toDecimal256('-79228162514264337593543950335', 0),toDecimal256('79228162514264337593543950335', 0))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -36825,16 +39621,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal256('-79228162514264337593543950335', 0),toDecimal256('79228162514264337593543950335', 0))
+(1,toDecimal256('-79228162514264337593543950335', 0),toDecimal256('79228162514264337593543950335', 0))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -36855,16 +39653,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal256('-79228162514264337593543950335', 0),toDecimal256('79228162514264337593543950335', 0))
+(1,toDecimal256('-79228162514264337593543950335', 0),toDecimal256('79228162514264337593543950335', 0))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -36877,6 +39677,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -36896,11 +39697,13 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	'0'::Decimal256(0),
 	NULL
 )
@@ -36909,6 +39712,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -36928,16 +39732,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('0'::Decimal256(0),NULL)
+(1,'0'::Decimal256(0),NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -36957,16 +39763,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('0'::Decimal256(0),NULL)
+(1,'0'::Decimal256(0),NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -36986,16 +39794,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('0'::Decimal256(0),NULL)
+(1,'0'::Decimal256(0),NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -37007,6 +39817,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -37027,11 +39838,13 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	'-9999999999999999999999999999999999999999999999999999999999999999999999999999'::Decimal256(0),
 	'9999999999999999999999999999999999999999999999999999999999999999999999999999'::Decimal256(0)
 )
@@ -37040,6 +39853,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -37060,16 +39874,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('-9999999999999999999999999999999999999999999999999999999999999999999999999999'::Decimal256(0),'9999999999999999999999999999999999999999999999999999999999999999999999999999'::Decimal256(0))
+(1,'-9999999999999999999999999999999999999999999999999999999999999999999999999999'::Decimal256(0),'9999999999999999999999999999999999999999999999999999999999999999999999999999'::Decimal256(0))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -37090,16 +39906,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('-9999999999999999999999999999999999999999999999999999999999999999999999999999'::Decimal256(0),'9999999999999999999999999999999999999999999999999999999999999999999999999999'::Decimal256(0))
+(1,'-9999999999999999999999999999999999999999999999999999999999999999999999999999'::Decimal256(0),'9999999999999999999999999999999999999999999999999999999999999999999999999999'::Decimal256(0))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -37120,16 +39938,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('-9999999999999999999999999999999999999999999999999999999999999999999999999999'::Decimal256(0),'9999999999999999999999999999999999999999999999999999999999999999999999999999'::Decimal256(0))
+(1,'-9999999999999999999999999999999999999999999999999999999999999999999999999999'::Decimal256(0),'9999999999999999999999999999999999999999999999999999999999999999999999999999'::Decimal256(0))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -37142,6 +39962,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -37161,11 +39982,13 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	toDecimal256('0', 1),
 	NULL
 )
@@ -37174,6 +39997,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -37193,16 +40017,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal256('0', 1),NULL)
+(1,toDecimal256('0', 1),NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -37222,16 +40048,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal256('0', 1),NULL)
+(1,toDecimal256('0', 1),NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -37251,16 +40079,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal256('0', 1),NULL)
+(1,toDecimal256('0', 1),NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -37272,6 +40102,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -37292,11 +40123,13 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	toDecimal256('-7922816251426433759354395033.5', 1),
 	toDecimal256('7922816251426433759354395033.5', 1)
 )
@@ -37305,6 +40138,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -37325,16 +40159,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal256('-7922816251426433759354395033.5', 1),toDecimal256('7922816251426433759354395033.5', 1))
+(1,toDecimal256('-7922816251426433759354395033.5', 1),toDecimal256('7922816251426433759354395033.5', 1))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -37355,16 +40191,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal256('-7922816251426433759354395033.5', 1),toDecimal256('7922816251426433759354395033.5', 1))
+(1,toDecimal256('-7922816251426433759354395033.5', 1),toDecimal256('7922816251426433759354395033.5', 1))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -37385,16 +40223,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal256('-7922816251426433759354395033.5', 1),toDecimal256('7922816251426433759354395033.5', 1))
+(1,toDecimal256('-7922816251426433759354395033.5', 1),toDecimal256('7922816251426433759354395033.5', 1))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -37407,6 +40247,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -37426,11 +40267,13 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	'0'::Decimal256(1),
 	NULL
 )
@@ -37439,6 +40282,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -37458,16 +40302,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('0'::Decimal256(1),NULL)
+(1,'0'::Decimal256(1),NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -37487,16 +40333,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('0'::Decimal256(1),NULL)
+(1,'0'::Decimal256(1),NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -37516,16 +40364,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('0'::Decimal256(1),NULL)
+(1,'0'::Decimal256(1),NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -37537,6 +40387,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -37557,11 +40408,13 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	'-999999999999999999999999999999999999999999999999999999999999999999999999999.9'::Decimal256(1),
 	'999999999999999999999999999999999999999999999999999999999999999999999999999.9'::Decimal256(1)
 )
@@ -37570,6 +40423,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -37590,16 +40444,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('-999999999999999999999999999999999999999999999999999999999999999999999999999.9'::Decimal256(1),'999999999999999999999999999999999999999999999999999999999999999999999999999.9'::Decimal256(1))
+(1,'-999999999999999999999999999999999999999999999999999999999999999999999999999.9'::Decimal256(1),'999999999999999999999999999999999999999999999999999999999999999999999999999.9'::Decimal256(1))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -37620,16 +40476,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('-999999999999999999999999999999999999999999999999999999999999999999999999999.9'::Decimal256(1),'999999999999999999999999999999999999999999999999999999999999999999999999999.9'::Decimal256(1))
+(1,'-999999999999999999999999999999999999999999999999999999999999999999999999999.9'::Decimal256(1),'999999999999999999999999999999999999999999999999999999999999999999999999999.9'::Decimal256(1))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -37650,16 +40508,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('-999999999999999999999999999999999999999999999999999999999999999999999999999.9'::Decimal256(1),'999999999999999999999999999999999999999999999999999999999999999999999999999.9'::Decimal256(1))
+(1,'-999999999999999999999999999999999999999999999999999999999999999999999999999.9'::Decimal256(1),'999999999999999999999999999999999999999999999999999999999999999999999999999.9'::Decimal256(1))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -37672,6 +40532,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -37691,11 +40552,13 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	toDecimal256('0', 75),
 	NULL
 )
@@ -37704,6 +40567,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -37723,16 +40587,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal256('0', 75),NULL)
+(1,toDecimal256('0', 75),NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -37752,16 +40618,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal256('0', 75),NULL)
+(1,toDecimal256('0', 75),NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -37781,16 +40649,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal256('0', 75),NULL)
+(1,toDecimal256('0', 75),NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -37802,6 +40672,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -37821,11 +40692,13 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	toDecimal256('0', 75),
 	toDecimal256('0', 75)
 )
@@ -37834,6 +40707,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -37853,16 +40727,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal256('0', 75),toDecimal256('0', 75))
+(1,toDecimal256('0', 75),toDecimal256('0', 75))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -37882,16 +40758,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal256('0', 75),toDecimal256('0', 75))
+(1,toDecimal256('0', 75),toDecimal256('0', 75))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -37911,16 +40789,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal256('0', 75),toDecimal256('0', 75))
+(1,toDecimal256('0', 75),toDecimal256('0', 75))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -37932,6 +40812,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -37951,11 +40832,13 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	'0'::Decimal256(75),
 	NULL
 )
@@ -37964,6 +40847,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -37983,16 +40867,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('0'::Decimal256(75),NULL)
+(1,'0'::Decimal256(75),NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -38012,16 +40898,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('0'::Decimal256(75),NULL)
+(1,'0'::Decimal256(75),NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -38041,16 +40929,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('0'::Decimal256(75),NULL)
+(1,'0'::Decimal256(75),NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -38062,6 +40952,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -38082,11 +40973,13 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	'-9.999999999999999999999999999999999999999999999999999999999999999999999999999'::Decimal256(75),
 	'9.999999999999999999999999999999999999999999999999999999999999999999999999999'::Decimal256(75)
 )
@@ -38095,6 +40988,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -38115,16 +41009,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('-9.999999999999999999999999999999999999999999999999999999999999999999999999999'::Decimal256(75),'9.999999999999999999999999999999999999999999999999999999999999999999999999999'::Decimal256(75))
+(1,'-9.999999999999999999999999999999999999999999999999999999999999999999999999999'::Decimal256(75),'9.999999999999999999999999999999999999999999999999999999999999999999999999999'::Decimal256(75))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -38145,16 +41041,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('-9.999999999999999999999999999999999999999999999999999999999999999999999999999'::Decimal256(75),'9.999999999999999999999999999999999999999999999999999999999999999999999999999'::Decimal256(75))
+(1,'-9.999999999999999999999999999999999999999999999999999999999999999999999999999'::Decimal256(75),'9.999999999999999999999999999999999999999999999999999999999999999999999999999'::Decimal256(75))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -38175,16 +41073,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('-9.999999999999999999999999999999999999999999999999999999999999999999999999999'::Decimal256(75),'9.999999999999999999999999999999999999999999999999999999999999999999999999999'::Decimal256(75))
+(1,'-9.999999999999999999999999999999999999999999999999999999999999999999999999999'::Decimal256(75),'9.999999999999999999999999999999999999999999999999999999999999999999999999999'::Decimal256(75))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -38197,6 +41097,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -38216,11 +41117,13 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	toDecimal256('0', 76),
 	NULL
 )
@@ -38229,6 +41132,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -38248,16 +41152,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal256('0', 76),NULL)
+(1,toDecimal256('0', 76),NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -38277,16 +41183,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal256('0', 76),NULL)
+(1,toDecimal256('0', 76),NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -38306,16 +41214,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal256('0', 76),NULL)
+(1,toDecimal256('0', 76),NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -38327,6 +41237,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -38346,11 +41257,13 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	toDecimal256('0', 76),
 	toDecimal256('0', 76)
 )
@@ -38359,6 +41272,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -38378,16 +41292,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal256('0', 76),toDecimal256('0', 76))
+(1,toDecimal256('0', 76),toDecimal256('0', 76))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -38407,16 +41323,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal256('0', 76),toDecimal256('0', 76))
+(1,toDecimal256('0', 76),toDecimal256('0', 76))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -38436,16 +41354,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal256('0', 76),toDecimal256('0', 76))
+(1,toDecimal256('0', 76),toDecimal256('0', 76))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -38457,6 +41377,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -38476,11 +41397,13 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	'0'::Decimal256(76),
 	NULL
 )
@@ -38489,6 +41412,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -38508,16 +41432,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('0'::Decimal256(76),NULL)
+(1,'0'::Decimal256(76),NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -38537,16 +41463,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('0'::Decimal256(76),NULL)
+(1,'0'::Decimal256(76),NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -38566,16 +41494,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('0'::Decimal256(76),NULL)
+(1,'0'::Decimal256(76),NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -38587,6 +41517,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -38607,11 +41538,13 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	'-0.9999999999999999999999999999999999999999999999999999999999999999999999999999'::Decimal256(76),
 	'0.9999999999999999999999999999999999999999999999999999999999999999999999999999'::Decimal256(76)
 )
@@ -38620,6 +41553,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -38640,16 +41574,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('-0.9999999999999999999999999999999999999999999999999999999999999999999999999999'::Decimal256(76),'0.9999999999999999999999999999999999999999999999999999999999999999999999999999'::Decimal256(76))
+(1,'-0.9999999999999999999999999999999999999999999999999999999999999999999999999999'::Decimal256(76),'0.9999999999999999999999999999999999999999999999999999999999999999999999999999'::Decimal256(76))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -38670,16 +41606,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('-0.9999999999999999999999999999999999999999999999999999999999999999999999999999'::Decimal256(76),'0.9999999999999999999999999999999999999999999999999999999999999999999999999999'::Decimal256(76))
+(1,'-0.9999999999999999999999999999999999999999999999999999999999999999999999999999'::Decimal256(76),'0.9999999999999999999999999999999999999999999999999999999999999999999999999999'::Decimal256(76))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -38700,16 +41638,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('-0.9999999999999999999999999999999999999999999999999999999999999999999999999999'::Decimal256(76),'0.9999999999999999999999999999999999999999999999999999999999999999999999999999'::Decimal256(76))
+(1,'-0.9999999999999999999999999999999999999999999999999999999999999999999999999999'::Decimal256(76),'0.9999999999999999999999999999999999999999999999999999999999999999999999999999'::Decimal256(76))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM

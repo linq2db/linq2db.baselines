@@ -9,9 +9,12 @@ BeforeExecute
 CREATE TEMPORARY TABLE TestTable
 (
 	Id    Int32,
-	Value Int32
+	Value Int32,
+
+	PRIMARY KEY (Id)
 )
-ENGINE = Memory()
+ENGINE = MergeTree()
+ORDER BY Id
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse

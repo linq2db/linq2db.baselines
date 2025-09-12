@@ -2,6 +2,7 @@
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	t1.Id,
 	t1.Column,
 	t1.ColumnNullable
 FROM
@@ -19,11 +20,13 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	'null',
 	'null'
 )
@@ -32,6 +35,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	t1.Id,
 	t1.Column,
 	t1.ColumnNullable
 FROM
@@ -49,16 +53,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('null','null')
+(1,'null','null')
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	t1.Id,
 	t1.Column,
 	t1.ColumnNullable
 FROM
@@ -76,16 +82,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('null','null')
+(1,'null','null')
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	t1.Id,
 	t1.Column,
 	t1.ColumnNullable
 FROM
@@ -103,16 +111,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('null','null')
+(1,'null','null')
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	t1.Id,
 	t1.Column,
 	t1.ColumnNullable
 FROM
@@ -122,6 +132,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	t1.Id,
 	t1.Column,
 	t1.ColumnNullable
 FROM
@@ -139,11 +150,13 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	'{ "prop": 333 }',
 	'{ "prop": 123 }'
 )
@@ -152,6 +165,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	t1.Id,
 	t1.Column,
 	t1.ColumnNullable
 FROM
@@ -169,16 +183,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('{ "prop": 333 }','{ "prop": 123 }')
+(1,'{ "prop": 333 }','{ "prop": 123 }')
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	t1.Id,
 	t1.Column,
 	t1.ColumnNullable
 FROM
@@ -196,16 +212,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('{ "prop": 333 }','{ "prop": 123 }')
+(1,'{ "prop": 333 }','{ "prop": 123 }')
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	t1.Id,
 	t1.Column,
 	t1.ColumnNullable
 FROM
@@ -223,16 +241,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('{ "prop": 333 }','{ "prop": 123 }')
+(1,'{ "prop": 333 }','{ "prop": 123 }')
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	t1.Id,
 	t1.Column,
 	t1.ColumnNullable
 FROM
