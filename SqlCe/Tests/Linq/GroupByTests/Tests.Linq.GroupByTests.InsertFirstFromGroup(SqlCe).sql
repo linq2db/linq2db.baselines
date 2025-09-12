@@ -17,7 +17,7 @@ INSERT INTO [temp_table_1]
 	[ID],
 	[Value]
 )
-SELECT 1,''
+SELECT 1,'Value'
 
 BeforeExecute
 -- SqlCe
