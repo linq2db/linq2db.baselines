@@ -2,6 +2,7 @@
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80 (asynchronously)
 
 SELECT
+	`p`.`PK`,
 	`p`.`Id`,
 	`p`.`Date1`,
 	`p`.`Date2`,
@@ -28,6 +29,7 @@ BeforeExecute
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80 (asynchronously)
 
 SELECT
+	`p`.`PK`,
 	`p`.`Id`,
 	`p`.`Date1`,
 	`p`.`Date2`,

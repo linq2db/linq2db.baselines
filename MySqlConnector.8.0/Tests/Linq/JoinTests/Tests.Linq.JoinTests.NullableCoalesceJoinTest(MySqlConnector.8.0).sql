@@ -4,7 +4,9 @@
 CREATE TEMPORARY TABLE `tmptbl1`
 (
 	`ID`    INT           NOT NULL,
-	`Value` VARCHAR(4000)     NULL
+	`Value` VARCHAR(4000)     NULL,
+
+	CONSTRAINT `PK_tmptbl1` PRIMARY KEY CLUSTERED (`ID`)
 )
 
 BeforeExecute
@@ -25,7 +27,9 @@ BeforeExecute
 CREATE TEMPORARY TABLE `tmptbl2`
 (
 	`ID`    INT           NOT NULL,
-	`Value` VARCHAR(4000) NOT NULL
+	`Value` VARCHAR(4000) NOT NULL,
+
+	CONSTRAINT `PK_tmptbl2` PRIMARY KEY CLUSTERED (`ID`)
 )
 
 BeforeExecute
@@ -46,7 +50,9 @@ BeforeExecute
 CREATE TEMPORARY TABLE `tmptbl3`
 (
 	`ID`    INT           NOT NULL,
-	`Value` VARCHAR(4000)     NULL
+	`Value` VARCHAR(4000)     NULL,
+
+	CONSTRAINT `PK_tmptbl3` PRIMARY KEY CLUSTERED (`ID`)
 )
 
 BeforeExecute
