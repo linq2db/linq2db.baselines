@@ -44,16 +44,16 @@ WHERE
 		SELECT
 			*
 		FROM
-			[Parent] [p_1]
-				CROSS JOIN (
-					SELECT
-						COUNT(*) as [COUNT_1]
-					FROM
-						[Parent] [p]
-					WHERE
-						[p].[ParentID] = @id
-				) [t1]
+			[Parent] [p],
+			(
+				SELECT
+					COUNT(*) as [COUNT_1]
+				FROM
+					[Parent] [p_1]
+				WHERE
+					[p_1].[ParentID] = @id
+			) [t1]
 		WHERE
-			[p_1].[ParentID] = @id AND [t1].[COUNT_1] > 0 AND [Parent].[ParentID] = [p_1].[ParentID]
+			[p].[ParentID] = @id AND [t1].[COUNT_1] > 0 AND [Parent].[ParentID] = [p].[ParentID]
 	)
 
