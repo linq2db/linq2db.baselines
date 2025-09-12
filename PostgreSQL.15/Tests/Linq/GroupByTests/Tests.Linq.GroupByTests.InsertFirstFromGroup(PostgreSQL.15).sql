@@ -1,14 +1,13 @@
 ﻿BeforeExecute
 -- PostgreSQL.15 PostgreSQL
 
-CREATE TEMPORARY TABLE temp_table_1
+CREATE TABLE temp_table_1
 (
 	"ID"    Int  NOT NULL,
 	"Value" text     NULL,
 
 	CONSTRAINT "PK_temp_table_1" PRIMARY KEY ("ID")
 )
-ON COMMIT PRESERVE ROWS
 
 BeforeExecute
 -- PostgreSQL.15 PostgreSQL
@@ -19,18 +18,17 @@ INSERT INTO temp_table_1
 	"Value"
 )
 VALUES
-(1,'')
+(1,'Value')
 
 BeforeExecute
 -- PostgreSQL.15 PostgreSQL
 
-CREATE TEMPORARY TABLE temp_table_2
+CREATE TABLE temp_table_2
 (
 	"Value" text NOT NULL,
 
 	CONSTRAINT "PK_temp_table_2" PRIMARY KEY ("Value")
 )
-ON COMMIT PRESERVE ROWS
 
 BeforeExecute
 -- PostgreSQL.15 PostgreSQL
