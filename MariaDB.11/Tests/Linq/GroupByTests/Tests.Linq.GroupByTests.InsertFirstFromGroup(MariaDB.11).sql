@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql
 
-CREATE TEMPORARY TABLE `temp_table_1`
+CREATE TABLE `temp_table_1`
 (
 	`ID`    INT           NOT NULL,
 	`Value` VARCHAR(4000)     NULL,
@@ -18,12 +18,12 @@ INSERT INTO `temp_table_1`
 	`Value`
 )
 VALUES
-(1,'')
+(1,'Value')
 
 BeforeExecute
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql
 
-CREATE TEMPORARY TABLE `temp_table_2`
+CREATE TABLE `temp_table_2`
 (
 	`Value` VARCHAR(50) NOT NULL,
 
@@ -60,10 +60,10 @@ FROM
 BeforeExecute
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql
 
-DROP TEMPORARY TABLE IF EXISTS `temp_table_2`
+DROP TABLE IF EXISTS `temp_table_2`
 
 BeforeExecute
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql
 
-DROP TEMPORARY TABLE IF EXISTS `temp_table_1`
+DROP TABLE IF EXISTS `temp_table_1`
 
