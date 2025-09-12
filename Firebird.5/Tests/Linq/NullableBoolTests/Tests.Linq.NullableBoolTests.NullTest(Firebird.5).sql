@@ -2,6 +2,7 @@
 -- Firebird.5 Firebird4
 
 SELECT
+	"t"."Id",
 	"t"."Value"
 FROM
 	"NullableBoolClass" "t"
@@ -12,6 +13,7 @@ BeforeExecute
 -- Firebird.5 Firebird4
 
 SELECT
+	"t"."Id",
 	"t"."Value"
 FROM
 	"NullableBoolClass" "t"
