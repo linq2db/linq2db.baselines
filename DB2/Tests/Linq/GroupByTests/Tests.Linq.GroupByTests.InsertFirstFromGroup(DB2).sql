@@ -1,37 +1,39 @@
 ﻿BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
-DECLARE GLOBAL TEMPORARY TABLE SESSION."temp_table_1"
+CREATE TABLE "temp_table_1"
 (
 	ID      Int           NOT NULL,
-	"Value" NVarChar(255)     NULL
+	"Value" NVarChar(255)     NULL,
+
+	CONSTRAINT "PK_temp_table_1" PRIMARY KEY (ID)
 )
-ON COMMIT PRESERVE ROWS
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
-INSERT INTO SESSION."temp_table_1"
+INSERT INTO "temp_table_1"
 (
 	ID,
 	"Value"
 )
 VALUES
-(1,'')
+(1,'Value')
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
-DECLARE GLOBAL TEMPORARY TABLE SESSION."temp_table_2"
+CREATE TABLE "temp_table_2"
 (
-	"Value" NVarChar(50) NOT NULL
+	"Value" NVarChar(50) NOT NULL,
+
+	CONSTRAINT "PK_temp_table_2" PRIMARY KEY ("Value")
 )
-ON COMMIT PRESERVE ROWS
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
-INSERT INTO SESSION."temp_table_2"
+INSERT INTO "temp_table_2"
 (
 	"Value"
 )
@@ -42,7 +44,7 @@ FROM
 		SELECT
 			"gr".ID
 		FROM
-			SESSION."temp_table_1" "gr"
+			"temp_table_1" "gr"
 		GROUP BY
 			"gr".ID
 	) "gr_1"
@@ -52,7 +54,7 @@ FROM
 				ROW_NUMBER() OVER (PARTITION BY "c_1".ID ORDER BY "c_1".ID) as "rn",
 				"c_1".ID
 			FROM
-				SESSION."temp_table_1" "c_1"
+				"temp_table_1" "c_1"
 		) "t1" ON "gr_1".ID = "t1".ID AND "t1"."rn" <= 1
 
 BeforeExecute
@@ -60,7 +62,7 @@ BeforeExecute
 
 BEGIN
 	DECLARE CONTINUE HANDLER FOR SQLSTATE '42704' BEGIN END;
-	EXECUTE IMMEDIATE 'DROP TABLE SESSION."temp_table_2"';
+	EXECUTE IMMEDIATE 'DROP TABLE "temp_table_2"';
 END
 
 BeforeExecute
@@ -68,6 +70,6 @@ BeforeExecute
 
 BEGIN
 	DECLARE CONTINUE HANDLER FOR SQLSTATE '42704' BEGIN END;
-	EXECUTE IMMEDIATE 'DROP TABLE SESSION."temp_table_1"';
+	EXECUTE IMMEDIATE 'DROP TABLE "temp_table_1"';
 END
 
