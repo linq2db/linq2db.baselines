@@ -3,10 +3,12 @@
 
 INSERT INTO "InsertIssueTest"
 (
+	"Pk",
 	ID,
 	"intDataType"
 )
 SELECT
+	CAST(t2.ID AS Int),
 	123,
 	CAST(t2.ID AS Int)
 FROM
@@ -27,10 +29,12 @@ SET     @cond = 1234
 
 INSERT INTO "InsertIssueTest"
 (
+	"Pk",
 	ID,
 	"intDataType"
 )
 SELECT
+	CAST(t2.ID AS Int),
 	123,
 	CAST(t2.ID AS Int)
 FROM
@@ -48,6 +52,7 @@ BeforeExecute
 -- Oracle.21.Managed Oracle.Managed Oracle12 (asynchronously)
 
 SELECT
+	t1."Pk",
 	t1.ID,
 	t1."intDataType"
 FROM
