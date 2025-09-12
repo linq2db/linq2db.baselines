@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- SQLite.Classic SQLite
 
-CREATE TEMPORARY TABLE temp.[temp_table_1]
+CREATE TABLE [temp_table_1]
 (
 	[ID]    INTEGER       NOT NULL,
 	[Value] NVarChar(255)     NULL,
@@ -12,18 +12,18 @@ CREATE TEMPORARY TABLE temp.[temp_table_1]
 BeforeExecute
 -- SQLite.Classic SQLite
 
-INSERT INTO temp.[temp_table_1]
+INSERT INTO [temp_table_1]
 (
 	[ID],
 	[Value]
 )
 VALUES
-(1,'')
+(1,'Value')
 
 BeforeExecute
 -- SQLite.Classic SQLite
 
-CREATE TEMPORARY TABLE temp.[temp_table_2]
+CREATE TABLE [temp_table_2]
 (
 	[Value] NVarChar(50) NOT NULL,
 
@@ -33,7 +33,7 @@ CREATE TEMPORARY TABLE temp.[temp_table_2]
 BeforeExecute
 -- SQLite.Classic SQLite
 
-INSERT INTO temp.[temp_table_2]
+INSERT INTO [temp_table_2]
 (
 	[Value]
 )
@@ -44,7 +44,7 @@ FROM
 		SELECT
 			[gr].[ID]
 		FROM
-			temp.[temp_table_1] [gr]
+			[temp_table_1] [gr]
 		GROUP BY
 			[gr].[ID]
 	) [gr_1]
@@ -54,16 +54,16 @@ FROM
 				ROW_NUMBER() OVER (PARTITION BY [c_1].[ID] ORDER BY [c_1].[ID]) as [rn],
 				[c_1].[ID]
 			FROM
-				temp.[temp_table_1] [c_1]
+				[temp_table_1] [c_1]
 		) [t1] ON [gr_1].[ID] = [t1].[ID] AND [t1].[rn] <= 1
 
 BeforeExecute
 -- SQLite.Classic SQLite
 
-DROP TABLE IF EXISTS temp.[temp_table_2]
+DROP TABLE IF EXISTS [temp_table_2]
 
 BeforeExecute
 -- SQLite.Classic SQLite
 
-DROP TABLE IF EXISTS temp.[temp_table_1]
+DROP TABLE IF EXISTS [temp_table_1]
 
