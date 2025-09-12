@@ -27,8 +27,8 @@ SELECT
 	[c_1].[ParentID],
 	[c_1].[ChildID]
 FROM
-	[Parent] [p]
-		CROSS JOIN [Child] [c_1]
+	[Parent] [p],
+	[Child] [c_1]
 WHERE
 	[p].[ParentID] = [c_1].[ParentID] OR EXISTS(
 		SELECT

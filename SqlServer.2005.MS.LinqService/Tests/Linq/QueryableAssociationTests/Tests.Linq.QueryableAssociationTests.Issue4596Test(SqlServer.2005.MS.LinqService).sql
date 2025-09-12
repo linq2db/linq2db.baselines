@@ -25,8 +25,8 @@ FROM
 			END as [cond_1]
 		FROM
 			[Issue4596Form] [t1]
-	) [m_1]
-		CROSS JOIN [Issue4596Item] [d]
+	) [m_1],
+	[Issue4596Item] [d]
 WHERE
 	[d].[FormId] = [m_1].[Id]
 ORDER BY
