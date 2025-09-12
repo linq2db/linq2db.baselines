@@ -13,8 +13,8 @@ UNION ALL
 SELECT
 	`x_1`.`FirstName`
 FROM
-	`Person` `x_1`
-		CROSS JOIN `Patient` `z`
+	`Person` `x_1`,
+	`Patient` `z`
 WHERE
 	`x_1`.`FirstName` = @p1 OR `z`.`PersonID` = @p2
 
