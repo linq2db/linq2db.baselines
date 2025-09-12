@@ -13,8 +13,8 @@ BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
 DECLARE @ID Int -- Int32
 SET     @ID = 1
-DECLARE @Value NVarChar -- String
-SET     @Value = ''
+DECLARE @Value NVarChar(5) -- String
+SET     @Value = 'Value'
 
 INSERT INTO "temp_table_1"
 (

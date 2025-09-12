@@ -14,8 +14,8 @@ FROM
 			"Child" "c_1"
 		GROUP BY
 			"c_1"."ParentID"
-	) "t1"
-		CROSS JOIN "Parent" "p"
+	) "t1",
+	"Parent" "p"
 WHERE
 	"p"."ParentID" = "t1"."ParentID"
 
