@@ -1,5 +1,7 @@
 ﻿BeforeExecute
 -- Oracle.11.Managed Oracle11 (asynchronously)
+DECLARE @Pk Int32
+SET     @Pk = 1
 DECLARE @Id Int32
 SET     @Id = 1
 DECLARE @TargetName Varchar2(12) -- String
@@ -7,29 +9,13 @@ SET     @TargetName = 'bda.Requests'
 
 INSERT INTO "Issue1096Task"
 (
+	"Pk",
 	"Id",
 	"TargetName"
 )
 VALUES
 (
-	:Id,
-	:TargetName
-)
-
-BeforeExecute
--- Oracle.11.Managed Oracle11 (asynchronously)
-DECLARE @Id Int32
-SET     @Id = 1
-DECLARE @TargetName Varchar2(12) -- String
-SET     @TargetName = 'bda.Requests'
-
-INSERT INTO "Issue1096Task"
-(
-	"Id",
-	"TargetName"
-)
-VALUES
-(
+	:Pk,
 	:Id,
 	:TargetName
 )
@@ -60,6 +46,7 @@ BeforeExecute
 -- Oracle.11.Managed Oracle11 (asynchronously)
 
 SELECT DISTINCT
+	t."Pk",
 	t."Id",
 	t."TargetName",
 	a_ActualStage."Id",
