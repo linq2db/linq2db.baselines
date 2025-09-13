@@ -4,7 +4,9 @@
 CREATE TABLE ##TestTable
 (
 	[Id]    Int NOT NULL,
-	[Value] Int NOT NULL
+	[Value] Int NOT NULL,
+
+	CONSTRAINT [PK_TestTable] PRIMARY KEY CLUSTERED ([Id])
 )
 
 BeforeExecute
