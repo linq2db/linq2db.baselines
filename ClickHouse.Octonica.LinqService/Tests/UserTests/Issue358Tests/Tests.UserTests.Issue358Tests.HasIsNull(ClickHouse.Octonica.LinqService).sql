@@ -2,6 +2,7 @@
 -- ClickHouse.Octonica ClickHouse (asynchronously)
 
 SELECT
+	p.Id,
 	p.MyEnum,
 	p.MyEnum2
 FROM

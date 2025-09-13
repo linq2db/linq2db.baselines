@@ -11,6 +11,7 @@ BeforeExecute
 -- ClickHouse.Octonica ClickHouse (asynchronously)
 
 SELECT
+	t1.Id,
 	t1.Field
 FROM
 	Issue4963Table t1

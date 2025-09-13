@@ -1,11 +1,30 @@
 ﻿BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
-CREATE TEMPORARY TABLE temp_table_2
+CREATE TABLE temp_table_1
 (
-	Value Nullable(String)
+	ID    Int32,
+	Value Nullable(String),
+
+	PRIMARY KEY (ID)
 )
-ENGINE = Memory()
+ENGINE = MergeTree()
+ORDER BY ID
+
+BeforeExecute
+INSERT INTO temp_table_1(ID, Value) VALUES
+
+BeforeExecute
+-- ClickHouse.Octonica ClickHouse
+
+CREATE TABLE temp_table_2
+(
+	Value String,
+
+	PRIMARY KEY (Value)
+)
+ENGINE = MergeTree()
+ORDER BY Value
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
@@ -38,4 +57,9 @@ BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 DROP TABLE IF EXISTS temp_table_2
+
+BeforeExecute
+-- ClickHouse.Octonica ClickHouse
+
+DROP TABLE IF EXISTS temp_table_1
 

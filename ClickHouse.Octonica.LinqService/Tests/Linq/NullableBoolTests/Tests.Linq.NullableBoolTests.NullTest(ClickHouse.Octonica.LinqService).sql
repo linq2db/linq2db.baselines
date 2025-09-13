@@ -2,6 +2,7 @@
 -- ClickHouse.Octonica ClickHouse (asynchronously)
 
 SELECT
+	t.Id,
 	t.Value
 FROM
 	NullableBoolClass t
@@ -12,6 +13,7 @@ BeforeExecute
 -- ClickHouse.Octonica ClickHouse (asynchronously)
 
 SELECT
+	t.Id,
 	t.Value
 FROM
 	NullableBoolClass t
