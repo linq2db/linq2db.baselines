@@ -2,6 +2,7 @@
 -- Oracle.11.Managed Oracle11 (asynchronously)
 
 SELECT
+	x."Id",
 	x."Country",
 	x."State"
 FROM
