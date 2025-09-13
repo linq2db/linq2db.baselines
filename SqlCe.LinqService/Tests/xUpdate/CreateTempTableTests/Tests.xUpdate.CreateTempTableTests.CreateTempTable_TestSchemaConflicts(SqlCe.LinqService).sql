@@ -18,7 +18,9 @@ BeforeExecute
 CREATE TABLE [TempTable]
 (
 	[Id]      Int           NOT NULL,
-	[Renamed] NVarChar(255)     NULL
+	[Renamed] NVarChar(255)     NULL,
+
+	CONSTRAINT [PK_TempTable] PRIMARY KEY ([Id])
 )
 
 BeforeExecute

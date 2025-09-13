@@ -3,12 +3,14 @@
 
 INSERT INTO [InsertIssueTest]
 (
+	[Pk],
 	[ID],
 	[intDataType]
 )
 SELECT
-	123 as [c1],
-	[t2].[ID] as [c2]
+	[t2].[ID] as [c1],
+	123 as [c2],
+	[t2].[ID] as [c3]
 FROM
 	(
 		SELECT DISTINCT
@@ -27,12 +29,14 @@ SET     @cond = 1234
 
 INSERT INTO [InsertIssueTest]
 (
+	[Pk],
 	[ID],
 	[intDataType]
 )
 SELECT
-	123 as [c1],
-	[t2].[ID] as [c2]
+	[t2].[ID] as [c1],
+	123 as [c2],
+	[t2].[ID] as [c3]
 FROM
 	(
 		SELECT DISTINCT
@@ -48,6 +52,7 @@ BeforeExecute
 -- SqlCe
 
 SELECT
+	[t1].[Pk],
 	[t1].[ID],
 	[t1].[intDataType]
 FROM
