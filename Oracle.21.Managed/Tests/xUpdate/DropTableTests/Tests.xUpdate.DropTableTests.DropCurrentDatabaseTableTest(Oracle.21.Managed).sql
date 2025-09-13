@@ -15,7 +15,9 @@ BeforeExecute
 
 CREATE TABLE "DropTableTest"
 (
-	ID Int NOT NULL
+	ID Int NOT NULL,
+
+	CONSTRAINT "PK_DropTableTest" PRIMARY KEY (ID)
 )
 
 BeforeExecute
