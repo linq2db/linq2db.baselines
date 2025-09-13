@@ -2,6 +2,7 @@
 -- Informix.DB2 Informix (asynchronously)
 
 SELECT SKIP 3
+	t1.Id,
 	t1."Value"
 FROM
 	TakeSkipClass t1
@@ -12,6 +13,7 @@ BeforeExecute
 -- Informix.DB2 Informix (asynchronously)
 
 SELECT SKIP 4
+	t1.Id,
 	t1."Value"
 FROM
 	TakeSkipClass t1

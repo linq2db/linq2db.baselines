@@ -33,6 +33,7 @@ BeforeExecute
 -- Informix.DB2 Informix (asynchronously)
 
 SELECT
+	t1.Id,
 	t1.GroupId,
 	t1.DataValue
 FROM
