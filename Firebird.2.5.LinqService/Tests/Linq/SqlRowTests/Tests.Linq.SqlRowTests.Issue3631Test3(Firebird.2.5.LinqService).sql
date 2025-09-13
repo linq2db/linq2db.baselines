@@ -2,6 +2,7 @@
 -- Firebird.2.5 Firebird (asynchronously)
 
 SELECT
+	"x"."Id",
 	"x"."Country",
 	"x"."State"
 FROM
