@@ -2,6 +2,7 @@
 -- DB2 DB2.LUW DB2LUW (asynchronously)
 
 SELECT
+	"x"."Id",
 	"x"."Country",
 	"x"."State"
 FROM
