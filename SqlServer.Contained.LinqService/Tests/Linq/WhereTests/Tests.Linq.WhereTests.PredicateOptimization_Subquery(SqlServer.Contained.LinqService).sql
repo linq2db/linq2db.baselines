@@ -2,6 +2,7 @@
 -- SqlServer.Contained SqlServer.2019 (asynchronously)
 
 SELECT
+	[p].[PK],
 	[p].[Id],
 	[p].[Date1],
 	[p].[Date2],
@@ -23,6 +24,7 @@ BeforeExecute
 -- SqlServer.Contained SqlServer.2019 (asynchronously)
 
 SELECT
+	[p].[PK],
 	[p].[Id],
 	[p].[Date1],
 	[p].[Date2],
