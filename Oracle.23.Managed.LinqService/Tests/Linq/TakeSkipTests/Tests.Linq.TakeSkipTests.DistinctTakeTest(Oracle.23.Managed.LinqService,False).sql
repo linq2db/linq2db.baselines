@@ -2,8 +2,8 @@
 -- Oracle.23.Managed Oracle.Managed Oracle12 (asynchronously)
 
 SELECT DISTINCT
-	t1."Value" as "Value_1"
+	r."Value" as "Value_1"
 FROM
-	"TakeSkipClass" t1
+	"TakeSkipClass" r
 FETCH NEXT 3 ROWS ONLY
 
