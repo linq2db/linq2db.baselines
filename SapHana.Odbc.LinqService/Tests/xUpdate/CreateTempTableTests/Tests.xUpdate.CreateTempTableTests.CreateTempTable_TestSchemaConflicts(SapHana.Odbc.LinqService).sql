@@ -18,7 +18,9 @@ BeforeExecute
 CREATE COLUMN TABLE "TempTable"
 (
 	"Id"      Integer       NOT NULL,
-	"Renamed" NVarChar(255)     NULL
+	"Renamed" NVarChar(255)     NULL,
+
+	PRIMARY KEY ("Id")
 )
 
 BeforeExecute
