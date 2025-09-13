@@ -2,6 +2,7 @@
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -21,11 +22,13 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	toInt64(0),
 	NULL
 )
@@ -34,6 +37,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -53,16 +57,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toInt64(0),NULL)
+(1,toInt64(0),NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -82,16 +88,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toInt64(0),NULL)
+(1,toInt64(0),NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -111,16 +119,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toInt64(0),NULL)
+(1,toInt64(0),NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -132,6 +142,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -151,11 +162,13 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	toInt64(9223372036854775807),
 	toInt64(-9223372036854775808)
 )
@@ -164,6 +177,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -183,16 +197,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toInt64(9223372036854775807),toInt64(-9223372036854775808))
+(1,toInt64(9223372036854775807),toInt64(-9223372036854775808))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -212,16 +228,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toInt64(9223372036854775807),toInt64(-9223372036854775808))
+(1,toInt64(9223372036854775807),toInt64(-9223372036854775808))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -241,16 +259,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toInt64(9223372036854775807),toInt64(-9223372036854775808))
+(1,toInt64(9223372036854775807),toInt64(-9223372036854775808))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM

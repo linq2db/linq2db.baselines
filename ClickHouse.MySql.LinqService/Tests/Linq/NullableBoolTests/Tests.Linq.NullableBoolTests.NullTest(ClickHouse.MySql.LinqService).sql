@@ -2,6 +2,7 @@
 -- ClickHouse.MySql ClickHouse (asynchronously)
 
 SELECT
+	t.Id,
 	t.Value
 FROM
 	NullableBoolClass t
@@ -12,6 +13,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse (asynchronously)
 
 SELECT
+	t.Id,
 	t.Value
 FROM
 	NullableBoolClass t

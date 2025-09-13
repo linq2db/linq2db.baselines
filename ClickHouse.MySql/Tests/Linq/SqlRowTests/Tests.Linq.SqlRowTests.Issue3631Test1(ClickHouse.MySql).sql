@@ -2,6 +2,7 @@
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	x.Id,
 	x.Country,
 	x.State
 FROM

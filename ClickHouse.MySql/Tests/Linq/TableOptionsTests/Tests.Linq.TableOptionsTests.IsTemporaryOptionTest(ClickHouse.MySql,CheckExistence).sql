@@ -4,9 +4,12 @@
 CREATE TEMPORARY TABLE IF NOT EXISTS temp_table1
 (
 	ID    Int32,
-	Value Int32
+	Value Int32,
+
+	PRIMARY KEY (ID)
 )
-ENGINE = Memory()
+ENGINE = MergeTree()
+ORDER BY ID
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
@@ -25,9 +28,12 @@ BeforeExecute
 CREATE TEMPORARY TABLE IF NOT EXISTS temp_table2
 (
 	ID    Int32,
-	Value Int32
+	Value Int32,
+
+	PRIMARY KEY (ID)
 )
-ENGINE = Memory()
+ENGINE = MergeTree()
+ORDER BY ID
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
