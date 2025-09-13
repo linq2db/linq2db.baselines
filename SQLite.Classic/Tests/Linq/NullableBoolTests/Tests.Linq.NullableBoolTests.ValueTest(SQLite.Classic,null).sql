@@ -2,6 +2,7 @@
 -- SQLite.Classic SQLite
 
 SELECT
+	[t].[Id],
 	[t].[Value]
 FROM
 	[NullableBoolClass] [t]
@@ -12,6 +13,7 @@ BeforeExecute
 -- SQLite.Classic SQLite
 
 SELECT
+	[t].[Id],
 	[t].[Value]
 FROM
 	[NullableBoolClass] [t]
@@ -22,6 +24,7 @@ BeforeExecute
 -- SQLite.Classic SQLite
 
 SELECT
+	[t].[Id],
 	[t].[Value]
 FROM
 	[NullableBoolClass] [t]
@@ -32,6 +35,7 @@ BeforeExecute
 -- SQLite.Classic SQLite
 
 SELECT
+	[t].[Id],
 	[t].[Value]
 FROM
 	[NullableBoolClass] [t]
