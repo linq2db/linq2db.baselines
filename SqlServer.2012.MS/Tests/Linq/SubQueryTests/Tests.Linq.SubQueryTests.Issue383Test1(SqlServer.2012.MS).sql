@@ -26,7 +26,7 @@ FROM
 			[d].[Type_Code] = N'RE' AND
 			[dcp].[Distributor_Type_Code] = N'RE'
 	) [m_1]
-		INNER JOIN [Cities] [d_1] ON [d_1].[City_Code] = [m_1].[City_Code] OR [d_1].[City_Code] IS NULL AND [m_1].[City_Code] IS NULL
+		INNER JOIN [Cities] [d_1] ON [d_1].[City_Code] = [m_1].[City_Code]
 
 BeforeExecute
 DisposeTransaction
