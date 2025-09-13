@@ -2,6 +2,7 @@
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
+	i.Id,
 	i.Name,
 	i.ParentId
 FROM

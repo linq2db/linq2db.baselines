@@ -2,6 +2,7 @@
 -- ClickHouse.Octonica ClickHouse (asynchronously)
 
 SELECT
+	t1.Id,
 	t1.Value
 FROM
 	TakeSkipClass t1

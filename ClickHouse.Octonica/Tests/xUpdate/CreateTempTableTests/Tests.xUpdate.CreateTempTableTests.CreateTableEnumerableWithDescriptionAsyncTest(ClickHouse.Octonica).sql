@@ -8,9 +8,12 @@ BeforeExecute
 
 CREATE TABLE IF NOT EXISTS TempTable
 (
-	Name String
+	Name String,
+
+	PRIMARY KEY (Name)
 )
-ENGINE = Memory()
+ENGINE = MergeTree()
+ORDER BY Name
 
 BeforeExecute
 INSERT INTO TempTable(Name) VALUES
