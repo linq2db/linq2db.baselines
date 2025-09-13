@@ -60,13 +60,10 @@ SELECT
 	[d].[Id],
 	[d].[Text]
 FROM
-	(
-		SELECT DISTINCT
-			[Item1].[Id]
-		FROM
-			[Names] [Item1]
-	) [m_1]
+	[Names] [m_1]
 		LEFT JOIN [Addresses] [d] ON [m_1].[Id] = [d].[Id]
+ORDER BY
+	[m_1].[Id]
 
 BeforeExecute
 -- SqlServer.2014.MS SqlServer.2014 (asynchronously)
