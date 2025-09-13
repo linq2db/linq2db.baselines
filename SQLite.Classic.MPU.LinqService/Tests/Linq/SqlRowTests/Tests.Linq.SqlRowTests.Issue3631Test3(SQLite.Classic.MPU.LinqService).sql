@@ -2,6 +2,7 @@
 -- SQLite.Classic.MPU SQLite.Classic SQLite (asynchronously)
 
 SELECT
+	[x].[Id],
 	[x].[Country],
 	[x].[State]
 FROM
