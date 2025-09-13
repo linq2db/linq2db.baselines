@@ -2,6 +2,7 @@
 -- Access.Jet.Odbc AccessODBC (asynchronously)
 
 SELECT TOP 5
+	[t1].[Id],
 	[t1].[Value]
 FROM
 	[TakeSkipClass] [t1]
