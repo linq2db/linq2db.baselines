@@ -28,7 +28,6 @@ BeforeExecute
 UPDATE
 	"TestBool"
 SET
-	"Id" = 1,
 	"Value" = NOT "TestBool"."Value"
 
 BeforeExecute

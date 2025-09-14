@@ -94,6 +94,7 @@ BeforeExecute
 -- PostgreSQL.15 PostgreSQL
 
 SELECT
+	t1."Id",
 	t1."GroupId",
 	t1."DataValue"
 FROM

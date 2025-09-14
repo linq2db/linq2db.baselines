@@ -4,7 +4,9 @@
 CREATE TEMPORARY TABLE IF NOT EXISTS temp.[temp_table1]
 (
 	[ID]    INTEGER NOT NULL,
-	[Value] INTEGER NOT NULL
+	[Value] INTEGER NOT NULL,
+
+	CONSTRAINT [PK_temp_table1] PRIMARY KEY ([ID])
 )
 
 BeforeExecute
@@ -24,7 +26,9 @@ BeforeExecute
 CREATE TEMPORARY TABLE IF NOT EXISTS temp.[temp_table2]
 (
 	[ID]    INTEGER NOT NULL,
-	[Value] INTEGER NOT NULL
+	[Value] INTEGER NOT NULL,
+
+	CONSTRAINT [PK_temp_table2] PRIMARY KEY ([ID])
 )
 
 BeforeExecute

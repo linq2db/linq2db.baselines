@@ -7,7 +7,9 @@ IF (OBJECT_ID(N'FluentTemp') IS NULL)
 		(
 			[ID]       Int          NOT NULL,
 			[Value]    NVarChar(20)     NULL,
-			[LastName] NVarChar(20)     NULL
+			[LastName] NVarChar(20)     NULL,
+
+			CONSTRAINT [PK_FluentTemp] PRIMARY KEY CLUSTERED ([ID])
 		)
 	')
 

@@ -2,6 +2,7 @@
 -- Informix.DB2 Informix (asynchronously)
 
 SELECT
+	p.PK,
 	p.Id,
 	p.Date1,
 	p.Date2,
@@ -28,6 +29,7 @@ BeforeExecute
 -- Informix.DB2 Informix (asynchronously)
 
 SELECT
+	p.PK,
 	p.Id,
 	p.Date1,
 	p.Date2,

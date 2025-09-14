@@ -17,9 +17,12 @@ BeforeExecute
 
 CREATE TABLE DropTableTest
 (
-	ID Int32
+	ID Int32,
+
+	PRIMARY KEY (ID)
 )
-ENGINE = Memory()
+ENGINE = MergeTree()
+ORDER BY ID
 
 BeforeExecute
 -- ClickHouse.Driver ClickHouse

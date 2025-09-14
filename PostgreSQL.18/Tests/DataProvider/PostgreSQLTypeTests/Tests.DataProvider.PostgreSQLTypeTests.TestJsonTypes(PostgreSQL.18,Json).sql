@@ -6,6 +6,7 @@ DECLARE @nullableValue Json -- Object
 SET     @nullableValue = 'null'
 
 SELECT
+	r."Id",
 	r."Column",
 	r."ColumnNullable"
 FROM
@@ -17,6 +18,7 @@ BeforeExecute
 -- PostgreSQL.18 PostgreSQL
 
 SELECT
+	r."Id",
 	r."Column",
 	r."ColumnNullable"
 FROM
@@ -32,6 +34,8 @@ DELETE FROM
 
 BeforeExecute
 -- PostgreSQL.18 PostgreSQL
+DECLARE @Id Integer -- Int32
+SET     @Id = 1
 DECLARE @Column Json -- Object
 SET     @Column = 'null'
 DECLARE @ColumnNullable Json -- Object
@@ -39,11 +43,13 @@ SET     @ColumnNullable = 'null'
 
 INSERT INTO "TypeTable`2"
 (
+	"Id",
 	"Column",
 	"ColumnNullable"
 )
 VALUES
 (
+	:Id,
 	:Column,
 	:ColumnNullable
 )
@@ -56,6 +62,7 @@ DECLARE @nullableValue Json -- Object
 SET     @nullableValue = 'null'
 
 SELECT
+	r."Id",
 	r."Column",
 	r."ColumnNullable"
 FROM
@@ -74,11 +81,12 @@ BeforeExecute
 
 INSERT INTO "TypeTable`2"
 (
+	"Id",
 	"Column",
 	"ColumnNullable"
 )
 VALUES
-('null','null')
+(1,'null','null')
 
 BeforeExecute
 -- PostgreSQL.18 PostgreSQL
@@ -88,6 +96,7 @@ DECLARE @nullableValue Json -- Object
 SET     @nullableValue = 'null'
 
 SELECT
+	r."Id",
 	r."Column",
 	r."ColumnNullable"
 FROM
@@ -102,7 +111,7 @@ DELETE FROM
 	"TypeTable`2" t1
 
 BeforeExecute
-INSERT BULK "TypeTable`2"(Column, ColumnNullable)
+INSERT BULK "TypeTable`2"(Id, Column, ColumnNullable)
 
 BeforeExecute
 -- PostgreSQL.18 PostgreSQL
@@ -112,6 +121,7 @@ DECLARE @nullableValue Json -- Object
 SET     @nullableValue = 'null'
 
 SELECT
+	r."Id",
 	r."Column",
 	r."ColumnNullable"
 FROM
@@ -126,7 +136,7 @@ DELETE FROM
 	"TypeTable`2" t1
 
 BeforeExecute
-INSERT ASYNC BULK "TypeTable`2"(Column, ColumnNullable)
+INSERT ASYNC BULK "TypeTable`2"(Id, Column, ColumnNullable)
 
 BeforeExecute
 -- PostgreSQL.18 PostgreSQL
@@ -136,6 +146,7 @@ DECLARE @nullableValue Json -- Object
 SET     @nullableValue = 'null'
 
 SELECT
+	r."Id",
 	r."Column",
 	r."ColumnNullable"
 FROM
@@ -151,6 +162,7 @@ DECLARE @nullableValue Json -- Object
 SET     @nullableValue = 'false'
 
 SELECT
+	r."Id",
 	r."Column",
 	r."ColumnNullable"
 FROM
@@ -162,6 +174,7 @@ BeforeExecute
 -- PostgreSQL.18 PostgreSQL
 
 SELECT
+	r."Id",
 	r."Column",
 	r."ColumnNullable"
 FROM
@@ -177,6 +190,8 @@ DELETE FROM
 
 BeforeExecute
 -- PostgreSQL.18 PostgreSQL
+DECLARE @Id Integer -- Int32
+SET     @Id = 1
 DECLARE @Column Json -- Object
 SET     @Column = 'true'
 DECLARE @ColumnNullable Json -- Object
@@ -184,11 +199,13 @@ SET     @ColumnNullable = 'false'
 
 INSERT INTO "TypeTable`2"
 (
+	"Id",
 	"Column",
 	"ColumnNullable"
 )
 VALUES
 (
+	:Id,
 	:Column,
 	:ColumnNullable
 )
@@ -201,6 +218,7 @@ DECLARE @nullableValue Json -- Object
 SET     @nullableValue = 'false'
 
 SELECT
+	r."Id",
 	r."Column",
 	r."ColumnNullable"
 FROM
@@ -219,11 +237,12 @@ BeforeExecute
 
 INSERT INTO "TypeTable`2"
 (
+	"Id",
 	"Column",
 	"ColumnNullable"
 )
 VALUES
-('true','false')
+(1,'true','false')
 
 BeforeExecute
 -- PostgreSQL.18 PostgreSQL
@@ -233,6 +252,7 @@ DECLARE @nullableValue Json -- Object
 SET     @nullableValue = 'false'
 
 SELECT
+	r."Id",
 	r."Column",
 	r."ColumnNullable"
 FROM
@@ -247,7 +267,7 @@ DELETE FROM
 	"TypeTable`2" t1
 
 BeforeExecute
-INSERT BULK "TypeTable`2"(Column, ColumnNullable)
+INSERT BULK "TypeTable`2"(Id, Column, ColumnNullable)
 
 BeforeExecute
 -- PostgreSQL.18 PostgreSQL
@@ -257,6 +277,7 @@ DECLARE @nullableValue Json -- Object
 SET     @nullableValue = 'false'
 
 SELECT
+	r."Id",
 	r."Column",
 	r."ColumnNullable"
 FROM
@@ -271,7 +292,7 @@ DELETE FROM
 	"TypeTable`2" t1
 
 BeforeExecute
-INSERT ASYNC BULK "TypeTable`2"(Column, ColumnNullable)
+INSERT ASYNC BULK "TypeTable`2"(Id, Column, ColumnNullable)
 
 BeforeExecute
 -- PostgreSQL.18 PostgreSQL
@@ -281,6 +302,7 @@ DECLARE @nullableValue Json -- Object
 SET     @nullableValue = 'false'
 
 SELECT
+	r."Id",
 	r."Column",
 	r."ColumnNullable"
 FROM
@@ -296,6 +318,7 @@ DECLARE @nullableValue Json -- Object
 SET     @nullableValue = '-34'
 
 SELECT
+	r."Id",
 	r."Column",
 	r."ColumnNullable"
 FROM
@@ -307,6 +330,7 @@ BeforeExecute
 -- PostgreSQL.18 PostgreSQL
 
 SELECT
+	r."Id",
 	r."Column",
 	r."ColumnNullable"
 FROM
@@ -322,6 +346,8 @@ DELETE FROM
 
 BeforeExecute
 -- PostgreSQL.18 PostgreSQL
+DECLARE @Id Integer -- Int32
+SET     @Id = 1
 DECLARE @Column Json -- Object
 SET     @Column = '12'
 DECLARE @ColumnNullable Json -- Object
@@ -329,11 +355,13 @@ SET     @ColumnNullable = '-34'
 
 INSERT INTO "TypeTable`2"
 (
+	"Id",
 	"Column",
 	"ColumnNullable"
 )
 VALUES
 (
+	:Id,
 	:Column,
 	:ColumnNullable
 )
@@ -346,6 +374,7 @@ DECLARE @nullableValue Json -- Object
 SET     @nullableValue = '-34'
 
 SELECT
+	r."Id",
 	r."Column",
 	r."ColumnNullable"
 FROM
@@ -364,11 +393,12 @@ BeforeExecute
 
 INSERT INTO "TypeTable`2"
 (
+	"Id",
 	"Column",
 	"ColumnNullable"
 )
 VALUES
-('12','-34')
+(1,'12','-34')
 
 BeforeExecute
 -- PostgreSQL.18 PostgreSQL
@@ -378,6 +408,7 @@ DECLARE @nullableValue Json -- Object
 SET     @nullableValue = '-34'
 
 SELECT
+	r."Id",
 	r."Column",
 	r."ColumnNullable"
 FROM
@@ -392,7 +423,7 @@ DELETE FROM
 	"TypeTable`2" t1
 
 BeforeExecute
-INSERT BULK "TypeTable`2"(Column, ColumnNullable)
+INSERT BULK "TypeTable`2"(Id, Column, ColumnNullable)
 
 BeforeExecute
 -- PostgreSQL.18 PostgreSQL
@@ -402,6 +433,7 @@ DECLARE @nullableValue Json -- Object
 SET     @nullableValue = '-34'
 
 SELECT
+	r."Id",
 	r."Column",
 	r."ColumnNullable"
 FROM
@@ -416,7 +448,7 @@ DELETE FROM
 	"TypeTable`2" t1
 
 BeforeExecute
-INSERT ASYNC BULK "TypeTable`2"(Column, ColumnNullable)
+INSERT ASYNC BULK "TypeTable`2"(Id, Column, ColumnNullable)
 
 BeforeExecute
 -- PostgreSQL.18 PostgreSQL
@@ -426,6 +458,7 @@ DECLARE @nullableValue Json -- Object
 SET     @nullableValue = '-34'
 
 SELECT
+	r."Id",
 	r."Column",
 	r."ColumnNullable"
 FROM
@@ -441,6 +474,7 @@ DECLARE @nullableValue Json -- Object
 SET     @nullableValue = '34.12'
 
 SELECT
+	r."Id",
 	r."Column",
 	r."ColumnNullable"
 FROM
@@ -452,6 +486,7 @@ BeforeExecute
 -- PostgreSQL.18 PostgreSQL
 
 SELECT
+	r."Id",
 	r."Column",
 	r."ColumnNullable"
 FROM
@@ -467,6 +502,8 @@ DELETE FROM
 
 BeforeExecute
 -- PostgreSQL.18 PostgreSQL
+DECLARE @Id Integer -- Int32
+SET     @Id = 1
 DECLARE @Column Json -- Object
 SET     @Column = '-12e34'
 DECLARE @ColumnNullable Json -- Object
@@ -474,11 +511,13 @@ SET     @ColumnNullable = '34.12'
 
 INSERT INTO "TypeTable`2"
 (
+	"Id",
 	"Column",
 	"ColumnNullable"
 )
 VALUES
 (
+	:Id,
 	:Column,
 	:ColumnNullable
 )
@@ -491,6 +530,7 @@ DECLARE @nullableValue Json -- Object
 SET     @nullableValue = '34.12'
 
 SELECT
+	r."Id",
 	r."Column",
 	r."ColumnNullable"
 FROM
@@ -509,11 +549,12 @@ BeforeExecute
 
 INSERT INTO "TypeTable`2"
 (
+	"Id",
 	"Column",
 	"ColumnNullable"
 )
 VALUES
-('-12e34','34.12')
+(1,'-12e34','34.12')
 
 BeforeExecute
 -- PostgreSQL.18 PostgreSQL
@@ -523,6 +564,7 @@ DECLARE @nullableValue Json -- Object
 SET     @nullableValue = '34.12'
 
 SELECT
+	r."Id",
 	r."Column",
 	r."ColumnNullable"
 FROM
@@ -537,7 +579,7 @@ DELETE FROM
 	"TypeTable`2" t1
 
 BeforeExecute
-INSERT BULK "TypeTable`2"(Column, ColumnNullable)
+INSERT BULK "TypeTable`2"(Id, Column, ColumnNullable)
 
 BeforeExecute
 -- PostgreSQL.18 PostgreSQL
@@ -547,6 +589,7 @@ DECLARE @nullableValue Json -- Object
 SET     @nullableValue = '34.12'
 
 SELECT
+	r."Id",
 	r."Column",
 	r."ColumnNullable"
 FROM
@@ -561,7 +604,7 @@ DELETE FROM
 	"TypeTable`2" t1
 
 BeforeExecute
-INSERT ASYNC BULK "TypeTable`2"(Column, ColumnNullable)
+INSERT ASYNC BULK "TypeTable`2"(Id, Column, ColumnNullable)
 
 BeforeExecute
 -- PostgreSQL.18 PostgreSQL
@@ -571,6 +614,7 @@ DECLARE @nullableValue Json -- Object
 SET     @nullableValue = '34.12'
 
 SELECT
+	r."Id",
 	r."Column",
 	r."ColumnNullable"
 FROM
@@ -586,6 +630,7 @@ DECLARE @nullableValue Json -- Object
 SET     @nullableValue = '""'
 
 SELECT
+	r."Id",
 	r."Column",
 	r."ColumnNullable"
 FROM
@@ -597,6 +642,7 @@ BeforeExecute
 -- PostgreSQL.18 PostgreSQL
 
 SELECT
+	r."Id",
 	r."Column",
 	r."ColumnNullable"
 FROM
@@ -612,6 +658,8 @@ DELETE FROM
 
 BeforeExecute
 -- PostgreSQL.18 PostgreSQL
+DECLARE @Id Integer -- Int32
+SET     @Id = 1
 DECLARE @Column Json -- Object
 SET     @Column = '"тест"'
 DECLARE @ColumnNullable Json -- Object
@@ -619,11 +667,13 @@ SET     @ColumnNullable = '""'
 
 INSERT INTO "TypeTable`2"
 (
+	"Id",
 	"Column",
 	"ColumnNullable"
 )
 VALUES
 (
+	:Id,
 	:Column,
 	:ColumnNullable
 )
@@ -636,6 +686,7 @@ DECLARE @nullableValue Json -- Object
 SET     @nullableValue = '""'
 
 SELECT
+	r."Id",
 	r."Column",
 	r."ColumnNullable"
 FROM
@@ -654,11 +705,12 @@ BeforeExecute
 
 INSERT INTO "TypeTable`2"
 (
+	"Id",
 	"Column",
 	"ColumnNullable"
 )
 VALUES
-('"тест"','""')
+(1,'"тест"','""')
 
 BeforeExecute
 -- PostgreSQL.18 PostgreSQL
@@ -668,6 +720,7 @@ DECLARE @nullableValue Json -- Object
 SET     @nullableValue = '""'
 
 SELECT
+	r."Id",
 	r."Column",
 	r."ColumnNullable"
 FROM
@@ -682,7 +735,7 @@ DELETE FROM
 	"TypeTable`2" t1
 
 BeforeExecute
-INSERT BULK "TypeTable`2"(Column, ColumnNullable)
+INSERT BULK "TypeTable`2"(Id, Column, ColumnNullable)
 
 BeforeExecute
 -- PostgreSQL.18 PostgreSQL
@@ -692,6 +745,7 @@ DECLARE @nullableValue Json -- Object
 SET     @nullableValue = '""'
 
 SELECT
+	r."Id",
 	r."Column",
 	r."ColumnNullable"
 FROM
@@ -706,7 +760,7 @@ DELETE FROM
 	"TypeTable`2" t1
 
 BeforeExecute
-INSERT ASYNC BULK "TypeTable`2"(Column, ColumnNullable)
+INSERT ASYNC BULK "TypeTable`2"(Id, Column, ColumnNullable)
 
 BeforeExecute
 -- PostgreSQL.18 PostgreSQL
@@ -716,6 +770,7 @@ DECLARE @nullableValue Json -- Object
 SET     @nullableValue = '""'
 
 SELECT
+	r."Id",
 	r."Column",
 	r."ColumnNullable"
 FROM
@@ -729,6 +784,7 @@ DECLARE @value Json -- Object
 SET     @value = 'null'
 
 SELECT
+	r."Id",
 	r."Column",
 	r."ColumnNullable"
 FROM
@@ -740,6 +796,7 @@ BeforeExecute
 -- PostgreSQL.18 PostgreSQL
 
 SELECT
+	r."Id",
 	r."Column",
 	r."ColumnNullable"
 FROM
@@ -755,6 +812,8 @@ DELETE FROM
 
 BeforeExecute
 -- PostgreSQL.18 PostgreSQL
+DECLARE @Id Integer -- Int32
+SET     @Id = 1
 DECLARE @Column Json -- Object
 SET     @Column = 'null'
 DECLARE @ColumnNullable Json -- Object
@@ -762,11 +821,13 @@ SET     @ColumnNullable = NULL
 
 INSERT INTO "TypeTable`2"
 (
+	"Id",
 	"Column",
 	"ColumnNullable"
 )
 VALUES
 (
+	:Id,
 	:Column,
 	:ColumnNullable
 )
@@ -777,6 +838,7 @@ DECLARE @value Json -- Object
 SET     @value = 'null'
 
 SELECT
+	r."Id",
 	r."Column",
 	r."ColumnNullable"
 FROM
@@ -795,11 +857,12 @@ BeforeExecute
 
 INSERT INTO "TypeTable`2"
 (
+	"Id",
 	"Column",
 	"ColumnNullable"
 )
 VALUES
-('null',NULL)
+(1,'null',NULL)
 
 BeforeExecute
 -- PostgreSQL.18 PostgreSQL
@@ -807,6 +870,7 @@ DECLARE @value Json -- Object
 SET     @value = 'null'
 
 SELECT
+	r."Id",
 	r."Column",
 	r."ColumnNullable"
 FROM
@@ -821,7 +885,7 @@ DELETE FROM
 	"TypeTable`2" t1
 
 BeforeExecute
-INSERT BULK "TypeTable`2"(Column, ColumnNullable)
+INSERT BULK "TypeTable`2"(Id, Column, ColumnNullable)
 
 BeforeExecute
 -- PostgreSQL.18 PostgreSQL
@@ -829,6 +893,7 @@ DECLARE @value Json -- Object
 SET     @value = 'null'
 
 SELECT
+	r."Id",
 	r."Column",
 	r."ColumnNullable"
 FROM
@@ -843,7 +908,7 @@ DELETE FROM
 	"TypeTable`2" t1
 
 BeforeExecute
-INSERT ASYNC BULK "TypeTable`2"(Column, ColumnNullable)
+INSERT ASYNC BULK "TypeTable`2"(Id, Column, ColumnNullable)
 
 BeforeExecute
 -- PostgreSQL.18 PostgreSQL
@@ -851,6 +916,7 @@ DECLARE @value Json -- Object
 SET     @value = 'null'
 
 SELECT
+	r."Id",
 	r."Column",
 	r."ColumnNullable"
 FROM
@@ -866,6 +932,7 @@ DECLARE @nullableValue Json -- Object
 SET     @nullableValue = '[true, false]'
 
 SELECT
+	r."Id",
 	r."Column",
 	r."ColumnNullable"
 FROM
@@ -877,6 +944,7 @@ BeforeExecute
 -- PostgreSQL.18 PostgreSQL
 
 SELECT
+	r."Id",
 	r."Column",
 	r."ColumnNullable"
 FROM
@@ -892,6 +960,8 @@ DELETE FROM
 
 BeforeExecute
 -- PostgreSQL.18 PostgreSQL
+DECLARE @Id Integer -- Int32
+SET     @Id = 1
 DECLARE @Column Json -- Object
 SET     @Column = '[1, 2, 3]'
 DECLARE @ColumnNullable Json -- Object
@@ -899,11 +969,13 @@ SET     @ColumnNullable = '[true, false]'
 
 INSERT INTO "TypeTable`2"
 (
+	"Id",
 	"Column",
 	"ColumnNullable"
 )
 VALUES
 (
+	:Id,
 	:Column,
 	:ColumnNullable
 )
@@ -916,6 +988,7 @@ DECLARE @nullableValue Json -- Object
 SET     @nullableValue = '[true, false]'
 
 SELECT
+	r."Id",
 	r."Column",
 	r."ColumnNullable"
 FROM
@@ -934,11 +1007,12 @@ BeforeExecute
 
 INSERT INTO "TypeTable`2"
 (
+	"Id",
 	"Column",
 	"ColumnNullable"
 )
 VALUES
-('[1, 2, 3]','[true, false]')
+(1,'[1, 2, 3]','[true, false]')
 
 BeforeExecute
 -- PostgreSQL.18 PostgreSQL
@@ -948,6 +1022,7 @@ DECLARE @nullableValue Json -- Object
 SET     @nullableValue = '[true, false]'
 
 SELECT
+	r."Id",
 	r."Column",
 	r."ColumnNullable"
 FROM
@@ -962,7 +1037,7 @@ DELETE FROM
 	"TypeTable`2" t1
 
 BeforeExecute
-INSERT BULK "TypeTable`2"(Column, ColumnNullable)
+INSERT BULK "TypeTable`2"(Id, Column, ColumnNullable)
 
 BeforeExecute
 -- PostgreSQL.18 PostgreSQL
@@ -972,6 +1047,7 @@ DECLARE @nullableValue Json -- Object
 SET     @nullableValue = '[true, false]'
 
 SELECT
+	r."Id",
 	r."Column",
 	r."ColumnNullable"
 FROM
@@ -986,7 +1062,7 @@ DELETE FROM
 	"TypeTable`2" t1
 
 BeforeExecute
-INSERT ASYNC BULK "TypeTable`2"(Column, ColumnNullable)
+INSERT ASYNC BULK "TypeTable`2"(Id, Column, ColumnNullable)
 
 BeforeExecute
 -- PostgreSQL.18 PostgreSQL
@@ -996,6 +1072,7 @@ DECLARE @nullableValue Json -- Object
 SET     @nullableValue = '[true, false]'
 
 SELECT
+	r."Id",
 	r."Column",
 	r."ColumnNullable"
 FROM
@@ -1011,6 +1088,7 @@ DECLARE @nullableValue Json -- Object
 SET     @nullableValue = '{"4454": {"": true, "b": "тест", "w": [-1, false, "qqdfg q", true], "null": null}, "тест": 1}'
 
 SELECT
+	r."Id",
 	r."Column",
 	r."ColumnNullable"
 FROM
@@ -1022,6 +1100,7 @@ BeforeExecute
 -- PostgreSQL.18 PostgreSQL
 
 SELECT
+	r."Id",
 	r."Column",
 	r."ColumnNullable"
 FROM
@@ -1038,6 +1117,8 @@ DELETE FROM
 
 BeforeExecute
 -- PostgreSQL.18 PostgreSQL
+DECLARE @Id Integer -- Int32
+SET     @Id = 1
 DECLARE @Column Json -- Object
 SET     @Column = '{"x": 1, "y": {"a": null, "b": "тест", "w": [1, null, "qqq", true], "z": true}}'
 DECLARE @ColumnNullable Json -- Object
@@ -1045,11 +1126,13 @@ SET     @ColumnNullable = '{"4454": {"": true, "b": "тест", "w": [-1, false,
 
 INSERT INTO "TypeTable`2"
 (
+	"Id",
 	"Column",
 	"ColumnNullable"
 )
 VALUES
 (
+	:Id,
 	:Column,
 	:ColumnNullable
 )
@@ -1062,6 +1145,7 @@ DECLARE @nullableValue Json -- Object
 SET     @nullableValue = '{"4454": {"": true, "b": "тест", "w": [-1, false, "qqdfg q", true], "null": null}, "тест": 1}'
 
 SELECT
+	r."Id",
 	r."Column",
 	r."ColumnNullable"
 FROM
@@ -1080,11 +1164,12 @@ BeforeExecute
 
 INSERT INTO "TypeTable`2"
 (
+	"Id",
 	"Column",
 	"ColumnNullable"
 )
 VALUES
-('{"x": 1, "y": {"a": null, "b": "тест", "w": [1, null, "qqq", true], "z": true}}','{"4454": {"": true, "b": "тест", "w": [-1, false, "qqdfg q", true], "null": null}, "тест": 1}')
+(1,'{"x": 1, "y": {"a": null, "b": "тест", "w": [1, null, "qqq", true], "z": true}}','{"4454": {"": true, "b": "тест", "w": [-1, false, "qqdfg q", true], "null": null}, "тест": 1}')
 
 BeforeExecute
 -- PostgreSQL.18 PostgreSQL
@@ -1094,6 +1179,7 @@ DECLARE @nullableValue Json -- Object
 SET     @nullableValue = '{"4454": {"": true, "b": "тест", "w": [-1, false, "qqdfg q", true], "null": null}, "тест": 1}'
 
 SELECT
+	r."Id",
 	r."Column",
 	r."ColumnNullable"
 FROM
@@ -1108,7 +1194,7 @@ DELETE FROM
 	"TypeTable`2" t1
 
 BeforeExecute
-INSERT BULK "TypeTable`2"(Column, ColumnNullable)
+INSERT BULK "TypeTable`2"(Id, Column, ColumnNullable)
 
 BeforeExecute
 -- PostgreSQL.18 PostgreSQL
@@ -1118,6 +1204,7 @@ DECLARE @nullableValue Json -- Object
 SET     @nullableValue = '{"4454": {"": true, "b": "тест", "w": [-1, false, "qqdfg q", true], "null": null}, "тест": 1}'
 
 SELECT
+	r."Id",
 	r."Column",
 	r."ColumnNullable"
 FROM
@@ -1132,7 +1219,7 @@ DELETE FROM
 	"TypeTable`2" t1
 
 BeforeExecute
-INSERT ASYNC BULK "TypeTable`2"(Column, ColumnNullable)
+INSERT ASYNC BULK "TypeTable`2"(Id, Column, ColumnNullable)
 
 BeforeExecute
 -- PostgreSQL.18 PostgreSQL
@@ -1142,6 +1229,7 @@ DECLARE @nullableValue Json -- Object
 SET     @nullableValue = '{"4454": {"": true, "b": "тест", "w": [-1, false, "qqdfg q", true], "null": null}, "тест": 1}'
 
 SELECT
+	r."Id",
 	r."Column",
 	r."ColumnNullable"
 FROM

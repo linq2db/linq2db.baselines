@@ -27,7 +27,6 @@ BeforeExecute
 UPDATE
 	[TestBool] [t1]
 SET
-	[t1].[Id] = 1,
 	[t1].[Value] = NOT [t1].[Value]
 
 BeforeExecute

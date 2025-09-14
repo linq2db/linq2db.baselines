@@ -3,7 +3,9 @@
 
 CREATE TABLE IF NOT EXISTS `DisposableTable`
 (
-	`ID` INT NOT NULL
+	`ID` INT NOT NULL,
+
+	CONSTRAINT `PK_DisposableTable` PRIMARY KEY CLUSTERED (`ID`)
 )
 
 BeforeExecute

@@ -2,6 +2,7 @@
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
+	t1.Id,
 	t1.Value
 FROM
 	TakeSkipClass t1
@@ -13,6 +14,7 @@ BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
+	t1.Id,
 	t1.Value
 FROM
 	TakeSkipClass t1

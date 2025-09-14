@@ -2,6 +2,7 @@
 -- SqlServer.2012
 
 SELECT
+	[p].[Id],
 	[p].[MyEnum],
 	[p].[MyEnum2]
 FROM

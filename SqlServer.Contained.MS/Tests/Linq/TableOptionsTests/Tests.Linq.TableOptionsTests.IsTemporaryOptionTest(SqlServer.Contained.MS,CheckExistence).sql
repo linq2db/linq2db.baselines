@@ -5,7 +5,9 @@ IF (OBJECT_ID(N'[tempdb]..[#temp_table1]', N'U') IS NULL)
 	CREATE TABLE [tempdb]..[#temp_table1]
 	(
 		[ID]    Int NOT NULL,
-		[Value] Int NOT NULL
+		[Value] Int NOT NULL,
+
+		PRIMARY KEY CLUSTERED ([ID])
 	)
 
 BeforeExecute
@@ -18,7 +20,9 @@ IF (OBJECT_ID(N'[tempdb]..[#temp_table2]', N'U') IS NULL)
 	CREATE TABLE [tempdb]..[#temp_table2]
 	(
 		[ID]    Int NOT NULL,
-		[Value] Int NOT NULL
+		[Value] Int NOT NULL,
+
+		PRIMARY KEY CLUSTERED ([ID])
 	)
 
 BeforeExecute

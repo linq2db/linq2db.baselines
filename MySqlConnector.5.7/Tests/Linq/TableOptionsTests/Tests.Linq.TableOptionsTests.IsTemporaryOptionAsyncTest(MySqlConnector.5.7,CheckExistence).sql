@@ -4,7 +4,9 @@
 CREATE TEMPORARY TABLE IF NOT EXISTS `temp_table1`
 (
 	`ID`    INT NOT NULL,
-	`Value` INT NOT NULL
+	`Value` INT NOT NULL,
+
+	CONSTRAINT `PK_temp_table1` PRIMARY KEY CLUSTERED (`ID`)
 )
 
 BeforeExecute
@@ -24,7 +26,9 @@ BeforeExecute
 CREATE TEMPORARY TABLE IF NOT EXISTS `temp_table2`
 (
 	`ID`    INT NOT NULL,
-	`Value` INT NOT NULL
+	`Value` INT NOT NULL,
+
+	CONSTRAINT `PK_temp_table2` PRIMARY KEY CLUSTERED (`ID`)
 )
 
 BeforeExecute

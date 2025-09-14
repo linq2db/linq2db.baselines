@@ -4,7 +4,9 @@
 CREATE TEMP TABLE tmptbl1
 (
 	ID      Int           NOT NULL,
-	"Value" NVarChar(255)     NULL
+	"Value" NVarChar(255)     NULL,
+
+	PRIMARY KEY (ID)
 )
 
 BeforeExecute
@@ -16,7 +18,9 @@ BeforeExecute
 CREATE TEMP TABLE tmptbl2
 (
 	ID      Int           NOT NULL,
-	"Value" NVarChar(255) NOT NULL
+	"Value" NVarChar(255) NOT NULL,
+
+	PRIMARY KEY (ID)
 )
 
 BeforeExecute
@@ -28,7 +32,9 @@ BeforeExecute
 CREATE TEMP TABLE tmptbl3
 (
 	ID      Int           NOT NULL,
-	"Value" NVarChar(255)     NULL
+	"Value" NVarChar(255)     NULL,
+
+	PRIMARY KEY (ID)
 )
 
 BeforeExecute

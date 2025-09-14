@@ -2,6 +2,7 @@
 -- PostgreSQL.17 PostgreSQL.15 PostgreSQL
 
 SELECT
+	p."Id",
 	p."Code",
 	p."DIM_Company",
 	p."DIM_Branch",

@@ -19,6 +19,7 @@ BeforeExecute
 -- SqlServer.2019 (asynchronously)
 
 SELECT
+	[t1].[Id],
 	[t1].[GroupId],
 	[t1].[DataValue]
 FROM

@@ -2,6 +2,7 @@
 -- SqlServer.SA SqlServer.2019 (asynchronously)
 
 SELECT
+	[x].[Id],
 	[x].[Country],
 	[x].[State]
 FROM

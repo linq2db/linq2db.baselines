@@ -2,7 +2,9 @@
 -- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
 
 SELECT
-	[t].[ID]
+	[t].[PK],
+	[t].[ID],
+	[t].[GV]
 FROM
 	[test_in_1] [t]
 WHERE
@@ -26,7 +28,9 @@ BeforeExecute
 -- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
 
 SELECT
-	[t1].[ID]
+	[t1].[PK],
+	[t1].[ID],
+	[t1].[GV]
 FROM
 	[test_in_1] [t1]
 
@@ -34,6 +38,7 @@ BeforeExecute
 -- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
 
 SELECT
+	[t1].[PK],
 	[t1].[ID],
 	[t1].[GV]
 FROM

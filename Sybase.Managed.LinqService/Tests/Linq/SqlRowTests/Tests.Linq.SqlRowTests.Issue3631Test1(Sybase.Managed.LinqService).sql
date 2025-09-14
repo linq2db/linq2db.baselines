@@ -2,6 +2,7 @@
 -- Sybase.Managed Sybase (asynchronously)
 
 SELECT
+	[x].[Id],
 	[x].[Country],
 	[x].[State]
 FROM

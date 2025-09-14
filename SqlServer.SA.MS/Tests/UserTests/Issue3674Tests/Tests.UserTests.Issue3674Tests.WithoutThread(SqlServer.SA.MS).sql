@@ -2,6 +2,7 @@
 -- SqlServer.SA.MS SqlServer.2019
 
 SELECT TOP (1)
+	[p].[Id],
 	[p].[Code],
 	[p].[DIM_Company],
 	[p].[DIM_Branch],

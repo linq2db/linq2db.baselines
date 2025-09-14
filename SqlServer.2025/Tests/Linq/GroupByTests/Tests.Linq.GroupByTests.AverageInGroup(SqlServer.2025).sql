@@ -21,6 +21,7 @@ BeforeExecute
 -- SqlServer.2025 SqlServer.2022
 
 SELECT
+	[t1].[Id],
 	[t1].[GroupId],
 	[t1].[DataValue]
 FROM

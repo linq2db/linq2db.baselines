@@ -2,6 +2,7 @@
 -- Firebird.4 Firebird4 (asynchronously)
 
 SELECT
+	"t1"."Id",
 	"t1"."Value"
 FROM
 	"TakeSkipClass" "t1"

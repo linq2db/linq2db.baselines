@@ -2,6 +2,7 @@
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -21,11 +22,13 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	toInt8(0),
 	NULL
 )
@@ -34,6 +37,7 @@ BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -53,16 +57,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toInt8(0),NULL)
+(1,toInt8(0),NULL)
 
 BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -78,12 +84,13 @@ ALTER TABLE
 DELETE WHERE 1
 
 BeforeExecute
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -99,12 +106,13 @@ ALTER TABLE
 DELETE WHERE 1
 
 BeforeExecute
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -116,6 +124,7 @@ BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -135,11 +144,13 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	toInt8(-128),
 	toInt8(127)
 )
@@ -148,6 +159,7 @@ BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -167,16 +179,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toInt8(-128),toInt8(127))
+(1,toInt8(-128),toInt8(127))
 
 BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -192,12 +206,13 @@ ALTER TABLE
 DELETE WHERE 1
 
 BeforeExecute
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -213,12 +228,13 @@ ALTER TABLE
 DELETE WHERE 1
 
 BeforeExecute
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -230,6 +246,7 @@ BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -249,11 +266,13 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	toInt8(127),
 	toInt8(-128)
 )
@@ -262,6 +281,7 @@ BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -281,16 +301,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toInt8(127),toInt8(-128))
+(1,toInt8(127),toInt8(-128))
 
 BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -306,12 +328,13 @@ ALTER TABLE
 DELETE WHERE 1
 
 BeforeExecute
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -327,12 +350,13 @@ ALTER TABLE
 DELETE WHERE 1
 
 BeforeExecute
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -344,6 +368,7 @@ BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -363,11 +388,13 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	toInt8(0),
 	NULL
 )
@@ -376,6 +403,7 @@ BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -395,16 +423,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toInt8(0),NULL)
+(1,toInt8(0),NULL)
 
 BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -420,12 +450,13 @@ ALTER TABLE
 DELETE WHERE 1
 
 BeforeExecute
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -441,12 +472,13 @@ ALTER TABLE
 DELETE WHERE 1
 
 BeforeExecute
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -458,6 +490,7 @@ BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -477,11 +510,13 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	toInt8(-128),
 	toInt8(127)
 )
@@ -490,6 +525,7 @@ BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -509,16 +545,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toInt8(-128),toInt8(127))
+(1,toInt8(-128),toInt8(127))
 
 BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -534,12 +572,13 @@ ALTER TABLE
 DELETE WHERE 1
 
 BeforeExecute
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -555,12 +594,13 @@ ALTER TABLE
 DELETE WHERE 1
 
 BeforeExecute
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -572,6 +612,7 @@ BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -591,11 +632,13 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	toInt8(127),
 	toInt8(-128)
 )
@@ -604,6 +647,7 @@ BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -623,16 +667,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toInt8(127),toInt8(-128))
+(1,toInt8(127),toInt8(-128))
 
 BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -648,12 +694,13 @@ ALTER TABLE
 DELETE WHERE 1
 
 BeforeExecute
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -669,12 +716,13 @@ ALTER TABLE
 DELETE WHERE 1
 
 BeforeExecute
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -686,6 +734,7 @@ BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -705,11 +754,13 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	toUInt8(0),
 	NULL
 )
@@ -718,6 +769,7 @@ BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -737,16 +789,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toUInt8(0),NULL)
+(1,toUInt8(0),NULL)
 
 BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -762,12 +816,13 @@ ALTER TABLE
 DELETE WHERE 1
 
 BeforeExecute
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -783,12 +838,13 @@ ALTER TABLE
 DELETE WHERE 1
 
 BeforeExecute
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -800,6 +856,7 @@ BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -819,353 +876,13 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
-	toUInt8(0),
-	toUInt8(255)
-)
-
-BeforeExecute
--- ClickHouse.Driver ClickHouse
-
-SELECT
-	r.Column,
-	r.ColumnNullable
-FROM
-	`TypeTable``2` r
-WHERE
-	r.Column = toUInt8(0) AND r.ColumnNullable = toUInt8(255)
-
-BeforeExecute
--- ClickHouse.Driver ClickHouse
-
-ALTER TABLE
-	`TypeTable``2`
-DELETE WHERE 1
-
-BeforeExecute
--- ClickHouse.Driver ClickHouse
-
-INSERT INTO `TypeTable``2`
-(
-	Column,
-	ColumnNullable
-)
-VALUES
-(toUInt8(0),toUInt8(255))
-
-BeforeExecute
--- ClickHouse.Driver ClickHouse
-
-SELECT
-	r.Column,
-	r.ColumnNullable
-FROM
-	`TypeTable``2` r
-WHERE
-	r.Column = toUInt8(0) AND r.ColumnNullable = toUInt8(255)
-
-BeforeExecute
--- ClickHouse.Driver ClickHouse
-
-ALTER TABLE
-	`TypeTable``2`
-DELETE WHERE 1
-
-BeforeExecute
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
-
-BeforeExecute
--- ClickHouse.Driver ClickHouse
-
-SELECT
-	r.Column,
-	r.ColumnNullable
-FROM
-	`TypeTable``2` r
-WHERE
-	r.Column = toUInt8(0) AND r.ColumnNullable = toUInt8(255)
-
-BeforeExecute
--- ClickHouse.Driver ClickHouse (asynchronously)
-
-ALTER TABLE
-	`TypeTable``2`
-DELETE WHERE 1
-
-BeforeExecute
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
-
-BeforeExecute
--- ClickHouse.Driver ClickHouse
-
-SELECT
-	r.Column,
-	r.ColumnNullable
-FROM
-	`TypeTable``2` r
-WHERE
-	r.Column = toUInt8(0) AND r.ColumnNullable = toUInt8(255)
-
-BeforeExecute
--- ClickHouse.Driver ClickHouse
-
-SELECT
-	r.Column,
-	r.ColumnNullable
-FROM
-	`TypeTable``2` r
-WHERE
-	r.Column = toUInt8(255) AND r.ColumnNullable = toUInt8(0)
-
-BeforeExecute
--- ClickHouse.Driver ClickHouse
-
-ALTER TABLE
-	`TypeTable``2`
-DELETE WHERE 1
-
-BeforeExecute
--- ClickHouse.Driver ClickHouse
-
-INSERT INTO `TypeTable``2`
-(
-	Column,
-	ColumnNullable
-)
-VALUES
-(
-	toUInt8(255),
-	toUInt8(0)
-)
-
-BeforeExecute
--- ClickHouse.Driver ClickHouse
-
-SELECT
-	r.Column,
-	r.ColumnNullable
-FROM
-	`TypeTable``2` r
-WHERE
-	r.Column = toUInt8(255) AND r.ColumnNullable = toUInt8(0)
-
-BeforeExecute
--- ClickHouse.Driver ClickHouse
-
-ALTER TABLE
-	`TypeTable``2`
-DELETE WHERE 1
-
-BeforeExecute
--- ClickHouse.Driver ClickHouse
-
-INSERT INTO `TypeTable``2`
-(
-	Column,
-	ColumnNullable
-)
-VALUES
-(toUInt8(255),toUInt8(0))
-
-BeforeExecute
--- ClickHouse.Driver ClickHouse
-
-SELECT
-	r.Column,
-	r.ColumnNullable
-FROM
-	`TypeTable``2` r
-WHERE
-	r.Column = toUInt8(255) AND r.ColumnNullable = toUInt8(0)
-
-BeforeExecute
--- ClickHouse.Driver ClickHouse
-
-ALTER TABLE
-	`TypeTable``2`
-DELETE WHERE 1
-
-BeforeExecute
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
-
-BeforeExecute
--- ClickHouse.Driver ClickHouse
-
-SELECT
-	r.Column,
-	r.ColumnNullable
-FROM
-	`TypeTable``2` r
-WHERE
-	r.Column = toUInt8(255) AND r.ColumnNullable = toUInt8(0)
-
-BeforeExecute
--- ClickHouse.Driver ClickHouse (asynchronously)
-
-ALTER TABLE
-	`TypeTable``2`
-DELETE WHERE 1
-
-BeforeExecute
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
-
-BeforeExecute
--- ClickHouse.Driver ClickHouse
-
-SELECT
-	r.Column,
-	r.ColumnNullable
-FROM
-	`TypeTable``2` r
-WHERE
-	r.Column = toUInt8(255) AND r.ColumnNullable = toUInt8(0)
-
-BeforeExecute
--- ClickHouse.Driver ClickHouse
-
-SELECT
-	r.Column,
-	r.ColumnNullable
-FROM
-	`TypeTable``2` r
-WHERE
-	r.Column = toUInt8(0) AND r.ColumnNullable IS NULL
-
-BeforeExecute
--- ClickHouse.Driver ClickHouse
-
-ALTER TABLE
-	`TypeTable``2`
-DELETE WHERE 1
-
-BeforeExecute
--- ClickHouse.Driver ClickHouse
-
-INSERT INTO `TypeTable``2`
-(
-	Column,
-	ColumnNullable
-)
-VALUES
-(
-	toUInt8(0),
-	NULL
-)
-
-BeforeExecute
--- ClickHouse.Driver ClickHouse
-
-SELECT
-	r.Column,
-	r.ColumnNullable
-FROM
-	`TypeTable``2` r
-WHERE
-	r.Column = toUInt8(0) AND r.ColumnNullable IS NULL
-
-BeforeExecute
--- ClickHouse.Driver ClickHouse
-
-ALTER TABLE
-	`TypeTable``2`
-DELETE WHERE 1
-
-BeforeExecute
--- ClickHouse.Driver ClickHouse
-
-INSERT INTO `TypeTable``2`
-(
-	Column,
-	ColumnNullable
-)
-VALUES
-(toUInt8(0),NULL)
-
-BeforeExecute
--- ClickHouse.Driver ClickHouse
-
-SELECT
-	r.Column,
-	r.ColumnNullable
-FROM
-	`TypeTable``2` r
-WHERE
-	r.Column = toUInt8(0) AND r.ColumnNullable IS NULL
-
-BeforeExecute
--- ClickHouse.Driver ClickHouse
-
-ALTER TABLE
-	`TypeTable``2`
-DELETE WHERE 1
-
-BeforeExecute
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
-
-BeforeExecute
--- ClickHouse.Driver ClickHouse
-
-SELECT
-	r.Column,
-	r.ColumnNullable
-FROM
-	`TypeTable``2` r
-WHERE
-	r.Column = toUInt8(0) AND r.ColumnNullable IS NULL
-
-BeforeExecute
--- ClickHouse.Driver ClickHouse (asynchronously)
-
-ALTER TABLE
-	`TypeTable``2`
-DELETE WHERE 1
-
-BeforeExecute
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
-
-BeforeExecute
--- ClickHouse.Driver ClickHouse
-
-SELECT
-	r.Column,
-	r.ColumnNullable
-FROM
-	`TypeTable``2` r
-WHERE
-	r.Column = toUInt8(0) AND r.ColumnNullable IS NULL
-
-BeforeExecute
--- ClickHouse.Driver ClickHouse
-
-SELECT
-	r.Column,
-	r.ColumnNullable
-FROM
-	`TypeTable``2` r
-WHERE
-	r.Column = toUInt8(0) AND r.ColumnNullable = toUInt8(255)
-
-BeforeExecute
--- ClickHouse.Driver ClickHouse
-
-ALTER TABLE
-	`TypeTable``2`
-DELETE WHERE 1
-
-BeforeExecute
--- ClickHouse.Driver ClickHouse
-
-INSERT INTO `TypeTable``2`
-(
-	Column,
-	ColumnNullable
-)
-VALUES
-(
+	1,
 	toUInt8(0),
 	toUInt8(255)
 )
@@ -1174,6 +891,7 @@ BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -1193,16 +911,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toUInt8(0),toUInt8(255))
+(1,toUInt8(0),toUInt8(255))
 
 BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -1218,12 +938,13 @@ ALTER TABLE
 DELETE WHERE 1
 
 BeforeExecute
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -1239,12 +960,13 @@ ALTER TABLE
 DELETE WHERE 1
 
 BeforeExecute
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -1256,6 +978,7 @@ BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -1275,11 +998,13 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	toUInt8(255),
 	toUInt8(0)
 )
@@ -1288,6 +1013,7 @@ BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -1307,16 +1033,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toUInt8(255),toUInt8(0))
+(1,toUInt8(255),toUInt8(0))
 
 BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -1332,12 +1060,13 @@ ALTER TABLE
 DELETE WHERE 1
 
 BeforeExecute
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -1353,12 +1082,13 @@ ALTER TABLE
 DELETE WHERE 1
 
 BeforeExecute
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -1370,6 +1100,373 @@ BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
+	r.Column,
+	r.ColumnNullable
+FROM
+	`TypeTable``2` r
+WHERE
+	r.Column = toUInt8(0) AND r.ColumnNullable IS NULL
+
+BeforeExecute
+-- ClickHouse.Driver ClickHouse
+
+ALTER TABLE
+	`TypeTable``2`
+DELETE WHERE 1
+
+BeforeExecute
+-- ClickHouse.Driver ClickHouse
+
+INSERT INTO `TypeTable``2`
+(
+	Id,
+	Column,
+	ColumnNullable
+)
+VALUES
+(
+	1,
+	toUInt8(0),
+	NULL
+)
+
+BeforeExecute
+-- ClickHouse.Driver ClickHouse
+
+SELECT
+	r.Id,
+	r.Column,
+	r.ColumnNullable
+FROM
+	`TypeTable``2` r
+WHERE
+	r.Column = toUInt8(0) AND r.ColumnNullable IS NULL
+
+BeforeExecute
+-- ClickHouse.Driver ClickHouse
+
+ALTER TABLE
+	`TypeTable``2`
+DELETE WHERE 1
+
+BeforeExecute
+-- ClickHouse.Driver ClickHouse
+
+INSERT INTO `TypeTable``2`
+(
+	Id,
+	Column,
+	ColumnNullable
+)
+VALUES
+(1,toUInt8(0),NULL)
+
+BeforeExecute
+-- ClickHouse.Driver ClickHouse
+
+SELECT
+	r.Id,
+	r.Column,
+	r.ColumnNullable
+FROM
+	`TypeTable``2` r
+WHERE
+	r.Column = toUInt8(0) AND r.ColumnNullable IS NULL
+
+BeforeExecute
+-- ClickHouse.Driver ClickHouse
+
+ALTER TABLE
+	`TypeTable``2`
+DELETE WHERE 1
+
+BeforeExecute
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
+
+BeforeExecute
+-- ClickHouse.Driver ClickHouse
+
+SELECT
+	r.Id,
+	r.Column,
+	r.ColumnNullable
+FROM
+	`TypeTable``2` r
+WHERE
+	r.Column = toUInt8(0) AND r.ColumnNullable IS NULL
+
+BeforeExecute
+-- ClickHouse.Driver ClickHouse (asynchronously)
+
+ALTER TABLE
+	`TypeTable``2`
+DELETE WHERE 1
+
+BeforeExecute
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
+
+BeforeExecute
+-- ClickHouse.Driver ClickHouse
+
+SELECT
+	r.Id,
+	r.Column,
+	r.ColumnNullable
+FROM
+	`TypeTable``2` r
+WHERE
+	r.Column = toUInt8(0) AND r.ColumnNullable IS NULL
+
+BeforeExecute
+-- ClickHouse.Driver ClickHouse
+
+SELECT
+	r.Id,
+	r.Column,
+	r.ColumnNullable
+FROM
+	`TypeTable``2` r
+WHERE
+	r.Column = toUInt8(0) AND r.ColumnNullable = toUInt8(255)
+
+BeforeExecute
+-- ClickHouse.Driver ClickHouse
+
+ALTER TABLE
+	`TypeTable``2`
+DELETE WHERE 1
+
+BeforeExecute
+-- ClickHouse.Driver ClickHouse
+
+INSERT INTO `TypeTable``2`
+(
+	Id,
+	Column,
+	ColumnNullable
+)
+VALUES
+(
+	1,
+	toUInt8(0),
+	toUInt8(255)
+)
+
+BeforeExecute
+-- ClickHouse.Driver ClickHouse
+
+SELECT
+	r.Id,
+	r.Column,
+	r.ColumnNullable
+FROM
+	`TypeTable``2` r
+WHERE
+	r.Column = toUInt8(0) AND r.ColumnNullable = toUInt8(255)
+
+BeforeExecute
+-- ClickHouse.Driver ClickHouse
+
+ALTER TABLE
+	`TypeTable``2`
+DELETE WHERE 1
+
+BeforeExecute
+-- ClickHouse.Driver ClickHouse
+
+INSERT INTO `TypeTable``2`
+(
+	Id,
+	Column,
+	ColumnNullable
+)
+VALUES
+(1,toUInt8(0),toUInt8(255))
+
+BeforeExecute
+-- ClickHouse.Driver ClickHouse
+
+SELECT
+	r.Id,
+	r.Column,
+	r.ColumnNullable
+FROM
+	`TypeTable``2` r
+WHERE
+	r.Column = toUInt8(0) AND r.ColumnNullable = toUInt8(255)
+
+BeforeExecute
+-- ClickHouse.Driver ClickHouse
+
+ALTER TABLE
+	`TypeTable``2`
+DELETE WHERE 1
+
+BeforeExecute
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
+
+BeforeExecute
+-- ClickHouse.Driver ClickHouse
+
+SELECT
+	r.Id,
+	r.Column,
+	r.ColumnNullable
+FROM
+	`TypeTable``2` r
+WHERE
+	r.Column = toUInt8(0) AND r.ColumnNullable = toUInt8(255)
+
+BeforeExecute
+-- ClickHouse.Driver ClickHouse (asynchronously)
+
+ALTER TABLE
+	`TypeTable``2`
+DELETE WHERE 1
+
+BeforeExecute
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
+
+BeforeExecute
+-- ClickHouse.Driver ClickHouse
+
+SELECT
+	r.Id,
+	r.Column,
+	r.ColumnNullable
+FROM
+	`TypeTable``2` r
+WHERE
+	r.Column = toUInt8(0) AND r.ColumnNullable = toUInt8(255)
+
+BeforeExecute
+-- ClickHouse.Driver ClickHouse
+
+SELECT
+	r.Id,
+	r.Column,
+	r.ColumnNullable
+FROM
+	`TypeTable``2` r
+WHERE
+	r.Column = toUInt8(255) AND r.ColumnNullable = toUInt8(0)
+
+BeforeExecute
+-- ClickHouse.Driver ClickHouse
+
+ALTER TABLE
+	`TypeTable``2`
+DELETE WHERE 1
+
+BeforeExecute
+-- ClickHouse.Driver ClickHouse
+
+INSERT INTO `TypeTable``2`
+(
+	Id,
+	Column,
+	ColumnNullable
+)
+VALUES
+(
+	1,
+	toUInt8(255),
+	toUInt8(0)
+)
+
+BeforeExecute
+-- ClickHouse.Driver ClickHouse
+
+SELECT
+	r.Id,
+	r.Column,
+	r.ColumnNullable
+FROM
+	`TypeTable``2` r
+WHERE
+	r.Column = toUInt8(255) AND r.ColumnNullable = toUInt8(0)
+
+BeforeExecute
+-- ClickHouse.Driver ClickHouse
+
+ALTER TABLE
+	`TypeTable``2`
+DELETE WHERE 1
+
+BeforeExecute
+-- ClickHouse.Driver ClickHouse
+
+INSERT INTO `TypeTable``2`
+(
+	Id,
+	Column,
+	ColumnNullable
+)
+VALUES
+(1,toUInt8(255),toUInt8(0))
+
+BeforeExecute
+-- ClickHouse.Driver ClickHouse
+
+SELECT
+	r.Id,
+	r.Column,
+	r.ColumnNullable
+FROM
+	`TypeTable``2` r
+WHERE
+	r.Column = toUInt8(255) AND r.ColumnNullable = toUInt8(0)
+
+BeforeExecute
+-- ClickHouse.Driver ClickHouse
+
+ALTER TABLE
+	`TypeTable``2`
+DELETE WHERE 1
+
+BeforeExecute
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
+
+BeforeExecute
+-- ClickHouse.Driver ClickHouse
+
+SELECT
+	r.Id,
+	r.Column,
+	r.ColumnNullable
+FROM
+	`TypeTable``2` r
+WHERE
+	r.Column = toUInt8(255) AND r.ColumnNullable = toUInt8(0)
+
+BeforeExecute
+-- ClickHouse.Driver ClickHouse (asynchronously)
+
+ALTER TABLE
+	`TypeTable``2`
+DELETE WHERE 1
+
+BeforeExecute
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
+
+BeforeExecute
+-- ClickHouse.Driver ClickHouse
+
+SELECT
+	r.Id,
+	r.Column,
+	r.ColumnNullable
+FROM
+	`TypeTable``2` r
+WHERE
+	r.Column = toUInt8(255) AND r.ColumnNullable = toUInt8(0)
+
+BeforeExecute
+-- ClickHouse.Driver ClickHouse
+
+SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -1389,11 +1486,13 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	toInt16(0),
 	NULL
 )
@@ -1402,6 +1501,7 @@ BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -1421,16 +1521,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toInt16(0),NULL)
+(1,toInt16(0),NULL)
 
 BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -1446,12 +1548,13 @@ ALTER TABLE
 DELETE WHERE 1
 
 BeforeExecute
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -1467,12 +1570,13 @@ ALTER TABLE
 DELETE WHERE 1
 
 BeforeExecute
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -1484,6 +1588,7 @@ BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -1503,11 +1608,13 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	toInt16(-32768),
 	toInt16(32767)
 )
@@ -1516,6 +1623,7 @@ BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -1535,16 +1643,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toInt16(-32768),toInt16(32767))
+(1,toInt16(-32768),toInt16(32767))
 
 BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -1560,12 +1670,13 @@ ALTER TABLE
 DELETE WHERE 1
 
 BeforeExecute
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -1581,12 +1692,13 @@ ALTER TABLE
 DELETE WHERE 1
 
 BeforeExecute
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -1598,6 +1710,7 @@ BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -1617,11 +1730,13 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	toInt16(32767),
 	toInt16(-32768)
 )
@@ -1630,6 +1745,7 @@ BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -1649,16 +1765,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toInt16(32767),toInt16(-32768))
+(1,toInt16(32767),toInt16(-32768))
 
 BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -1674,12 +1792,13 @@ ALTER TABLE
 DELETE WHERE 1
 
 BeforeExecute
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -1695,12 +1814,13 @@ ALTER TABLE
 DELETE WHERE 1
 
 BeforeExecute
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -1712,6 +1832,7 @@ BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -1731,11 +1852,13 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	toInt16(0),
 	NULL
 )
@@ -1744,6 +1867,7 @@ BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -1763,16 +1887,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toInt16(0),NULL)
+(1,toInt16(0),NULL)
 
 BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -1788,12 +1914,13 @@ ALTER TABLE
 DELETE WHERE 1
 
 BeforeExecute
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -1809,12 +1936,13 @@ ALTER TABLE
 DELETE WHERE 1
 
 BeforeExecute
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -1826,6 +1954,7 @@ BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -1845,11 +1974,13 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	toInt16(-32768),
 	toInt16(32767)
 )
@@ -1858,6 +1989,7 @@ BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -1877,16 +2009,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toInt16(-32768),toInt16(32767))
+(1,toInt16(-32768),toInt16(32767))
 
 BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -1902,12 +2036,13 @@ ALTER TABLE
 DELETE WHERE 1
 
 BeforeExecute
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -1923,12 +2058,13 @@ ALTER TABLE
 DELETE WHERE 1
 
 BeforeExecute
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -1940,6 +2076,7 @@ BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -1959,11 +2096,13 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	toInt16(32767),
 	toInt16(-32768)
 )
@@ -1972,6 +2111,7 @@ BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -1991,16 +2131,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toInt16(32767),toInt16(-32768))
+(1,toInt16(32767),toInt16(-32768))
 
 BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -2016,12 +2158,13 @@ ALTER TABLE
 DELETE WHERE 1
 
 BeforeExecute
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -2037,12 +2180,13 @@ ALTER TABLE
 DELETE WHERE 1
 
 BeforeExecute
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -2054,6 +2198,7 @@ BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -2073,11 +2218,13 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	toUInt16(0),
 	NULL
 )
@@ -2086,6 +2233,7 @@ BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -2105,16 +2253,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toUInt16(0),NULL)
+(1,toUInt16(0),NULL)
 
 BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -2130,12 +2280,13 @@ ALTER TABLE
 DELETE WHERE 1
 
 BeforeExecute
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -2151,12 +2302,13 @@ ALTER TABLE
 DELETE WHERE 1
 
 BeforeExecute
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -2168,6 +2320,7 @@ BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -2187,353 +2340,13 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
-	toUInt16(0),
-	toUInt16(65535)
-)
-
-BeforeExecute
--- ClickHouse.Driver ClickHouse
-
-SELECT
-	r.Column,
-	r.ColumnNullable
-FROM
-	`TypeTable``2` r
-WHERE
-	r.Column = toUInt16(0) AND r.ColumnNullable = toUInt16(65535)
-
-BeforeExecute
--- ClickHouse.Driver ClickHouse
-
-ALTER TABLE
-	`TypeTable``2`
-DELETE WHERE 1
-
-BeforeExecute
--- ClickHouse.Driver ClickHouse
-
-INSERT INTO `TypeTable``2`
-(
-	Column,
-	ColumnNullable
-)
-VALUES
-(toUInt16(0),toUInt16(65535))
-
-BeforeExecute
--- ClickHouse.Driver ClickHouse
-
-SELECT
-	r.Column,
-	r.ColumnNullable
-FROM
-	`TypeTable``2` r
-WHERE
-	r.Column = toUInt16(0) AND r.ColumnNullable = toUInt16(65535)
-
-BeforeExecute
--- ClickHouse.Driver ClickHouse
-
-ALTER TABLE
-	`TypeTable``2`
-DELETE WHERE 1
-
-BeforeExecute
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
-
-BeforeExecute
--- ClickHouse.Driver ClickHouse
-
-SELECT
-	r.Column,
-	r.ColumnNullable
-FROM
-	`TypeTable``2` r
-WHERE
-	r.Column = toUInt16(0) AND r.ColumnNullable = toUInt16(65535)
-
-BeforeExecute
--- ClickHouse.Driver ClickHouse (asynchronously)
-
-ALTER TABLE
-	`TypeTable``2`
-DELETE WHERE 1
-
-BeforeExecute
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
-
-BeforeExecute
--- ClickHouse.Driver ClickHouse
-
-SELECT
-	r.Column,
-	r.ColumnNullable
-FROM
-	`TypeTable``2` r
-WHERE
-	r.Column = toUInt16(0) AND r.ColumnNullable = toUInt16(65535)
-
-BeforeExecute
--- ClickHouse.Driver ClickHouse
-
-SELECT
-	r.Column,
-	r.ColumnNullable
-FROM
-	`TypeTable``2` r
-WHERE
-	r.Column = toUInt16(65535) AND r.ColumnNullable = toUInt16(0)
-
-BeforeExecute
--- ClickHouse.Driver ClickHouse
-
-ALTER TABLE
-	`TypeTable``2`
-DELETE WHERE 1
-
-BeforeExecute
--- ClickHouse.Driver ClickHouse
-
-INSERT INTO `TypeTable``2`
-(
-	Column,
-	ColumnNullable
-)
-VALUES
-(
-	toUInt16(65535),
-	toUInt16(0)
-)
-
-BeforeExecute
--- ClickHouse.Driver ClickHouse
-
-SELECT
-	r.Column,
-	r.ColumnNullable
-FROM
-	`TypeTable``2` r
-WHERE
-	r.Column = toUInt16(65535) AND r.ColumnNullable = toUInt16(0)
-
-BeforeExecute
--- ClickHouse.Driver ClickHouse
-
-ALTER TABLE
-	`TypeTable``2`
-DELETE WHERE 1
-
-BeforeExecute
--- ClickHouse.Driver ClickHouse
-
-INSERT INTO `TypeTable``2`
-(
-	Column,
-	ColumnNullable
-)
-VALUES
-(toUInt16(65535),toUInt16(0))
-
-BeforeExecute
--- ClickHouse.Driver ClickHouse
-
-SELECT
-	r.Column,
-	r.ColumnNullable
-FROM
-	`TypeTable``2` r
-WHERE
-	r.Column = toUInt16(65535) AND r.ColumnNullable = toUInt16(0)
-
-BeforeExecute
--- ClickHouse.Driver ClickHouse
-
-ALTER TABLE
-	`TypeTable``2`
-DELETE WHERE 1
-
-BeforeExecute
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
-
-BeforeExecute
--- ClickHouse.Driver ClickHouse
-
-SELECT
-	r.Column,
-	r.ColumnNullable
-FROM
-	`TypeTable``2` r
-WHERE
-	r.Column = toUInt16(65535) AND r.ColumnNullable = toUInt16(0)
-
-BeforeExecute
--- ClickHouse.Driver ClickHouse (asynchronously)
-
-ALTER TABLE
-	`TypeTable``2`
-DELETE WHERE 1
-
-BeforeExecute
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
-
-BeforeExecute
--- ClickHouse.Driver ClickHouse
-
-SELECT
-	r.Column,
-	r.ColumnNullable
-FROM
-	`TypeTable``2` r
-WHERE
-	r.Column = toUInt16(65535) AND r.ColumnNullable = toUInt16(0)
-
-BeforeExecute
--- ClickHouse.Driver ClickHouse
-
-SELECT
-	r.Column,
-	r.ColumnNullable
-FROM
-	`TypeTable``2` r
-WHERE
-	r.Column = toUInt16(0) AND r.ColumnNullable IS NULL
-
-BeforeExecute
--- ClickHouse.Driver ClickHouse
-
-ALTER TABLE
-	`TypeTable``2`
-DELETE WHERE 1
-
-BeforeExecute
--- ClickHouse.Driver ClickHouse
-
-INSERT INTO `TypeTable``2`
-(
-	Column,
-	ColumnNullable
-)
-VALUES
-(
-	toUInt16(0),
-	NULL
-)
-
-BeforeExecute
--- ClickHouse.Driver ClickHouse
-
-SELECT
-	r.Column,
-	r.ColumnNullable
-FROM
-	`TypeTable``2` r
-WHERE
-	r.Column = toUInt16(0) AND r.ColumnNullable IS NULL
-
-BeforeExecute
--- ClickHouse.Driver ClickHouse
-
-ALTER TABLE
-	`TypeTable``2`
-DELETE WHERE 1
-
-BeforeExecute
--- ClickHouse.Driver ClickHouse
-
-INSERT INTO `TypeTable``2`
-(
-	Column,
-	ColumnNullable
-)
-VALUES
-(toUInt16(0),NULL)
-
-BeforeExecute
--- ClickHouse.Driver ClickHouse
-
-SELECT
-	r.Column,
-	r.ColumnNullable
-FROM
-	`TypeTable``2` r
-WHERE
-	r.Column = toUInt16(0) AND r.ColumnNullable IS NULL
-
-BeforeExecute
--- ClickHouse.Driver ClickHouse
-
-ALTER TABLE
-	`TypeTable``2`
-DELETE WHERE 1
-
-BeforeExecute
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
-
-BeforeExecute
--- ClickHouse.Driver ClickHouse
-
-SELECT
-	r.Column,
-	r.ColumnNullable
-FROM
-	`TypeTable``2` r
-WHERE
-	r.Column = toUInt16(0) AND r.ColumnNullable IS NULL
-
-BeforeExecute
--- ClickHouse.Driver ClickHouse (asynchronously)
-
-ALTER TABLE
-	`TypeTable``2`
-DELETE WHERE 1
-
-BeforeExecute
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
-
-BeforeExecute
--- ClickHouse.Driver ClickHouse
-
-SELECT
-	r.Column,
-	r.ColumnNullable
-FROM
-	`TypeTable``2` r
-WHERE
-	r.Column = toUInt16(0) AND r.ColumnNullable IS NULL
-
-BeforeExecute
--- ClickHouse.Driver ClickHouse
-
-SELECT
-	r.Column,
-	r.ColumnNullable
-FROM
-	`TypeTable``2` r
-WHERE
-	r.Column = toUInt16(0) AND r.ColumnNullable = toUInt16(65535)
-
-BeforeExecute
--- ClickHouse.Driver ClickHouse
-
-ALTER TABLE
-	`TypeTable``2`
-DELETE WHERE 1
-
-BeforeExecute
--- ClickHouse.Driver ClickHouse
-
-INSERT INTO `TypeTable``2`
-(
-	Column,
-	ColumnNullable
-)
-VALUES
-(
+	1,
 	toUInt16(0),
 	toUInt16(65535)
 )
@@ -2542,6 +2355,7 @@ BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -2561,16 +2375,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toUInt16(0),toUInt16(65535))
+(1,toUInt16(0),toUInt16(65535))
 
 BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -2586,12 +2402,13 @@ ALTER TABLE
 DELETE WHERE 1
 
 BeforeExecute
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -2607,12 +2424,13 @@ ALTER TABLE
 DELETE WHERE 1
 
 BeforeExecute
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -2624,6 +2442,7 @@ BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -2643,11 +2462,13 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	toUInt16(65535),
 	toUInt16(0)
 )
@@ -2656,6 +2477,7 @@ BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -2675,16 +2497,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toUInt16(65535),toUInt16(0))
+(1,toUInt16(65535),toUInt16(0))
 
 BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -2700,12 +2524,13 @@ ALTER TABLE
 DELETE WHERE 1
 
 BeforeExecute
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -2721,12 +2546,13 @@ ALTER TABLE
 DELETE WHERE 1
 
 BeforeExecute
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -2738,6 +2564,373 @@ BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
+	r.Column,
+	r.ColumnNullable
+FROM
+	`TypeTable``2` r
+WHERE
+	r.Column = toUInt16(0) AND r.ColumnNullable IS NULL
+
+BeforeExecute
+-- ClickHouse.Driver ClickHouse
+
+ALTER TABLE
+	`TypeTable``2`
+DELETE WHERE 1
+
+BeforeExecute
+-- ClickHouse.Driver ClickHouse
+
+INSERT INTO `TypeTable``2`
+(
+	Id,
+	Column,
+	ColumnNullable
+)
+VALUES
+(
+	1,
+	toUInt16(0),
+	NULL
+)
+
+BeforeExecute
+-- ClickHouse.Driver ClickHouse
+
+SELECT
+	r.Id,
+	r.Column,
+	r.ColumnNullable
+FROM
+	`TypeTable``2` r
+WHERE
+	r.Column = toUInt16(0) AND r.ColumnNullable IS NULL
+
+BeforeExecute
+-- ClickHouse.Driver ClickHouse
+
+ALTER TABLE
+	`TypeTable``2`
+DELETE WHERE 1
+
+BeforeExecute
+-- ClickHouse.Driver ClickHouse
+
+INSERT INTO `TypeTable``2`
+(
+	Id,
+	Column,
+	ColumnNullable
+)
+VALUES
+(1,toUInt16(0),NULL)
+
+BeforeExecute
+-- ClickHouse.Driver ClickHouse
+
+SELECT
+	r.Id,
+	r.Column,
+	r.ColumnNullable
+FROM
+	`TypeTable``2` r
+WHERE
+	r.Column = toUInt16(0) AND r.ColumnNullable IS NULL
+
+BeforeExecute
+-- ClickHouse.Driver ClickHouse
+
+ALTER TABLE
+	`TypeTable``2`
+DELETE WHERE 1
+
+BeforeExecute
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
+
+BeforeExecute
+-- ClickHouse.Driver ClickHouse
+
+SELECT
+	r.Id,
+	r.Column,
+	r.ColumnNullable
+FROM
+	`TypeTable``2` r
+WHERE
+	r.Column = toUInt16(0) AND r.ColumnNullable IS NULL
+
+BeforeExecute
+-- ClickHouse.Driver ClickHouse (asynchronously)
+
+ALTER TABLE
+	`TypeTable``2`
+DELETE WHERE 1
+
+BeforeExecute
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
+
+BeforeExecute
+-- ClickHouse.Driver ClickHouse
+
+SELECT
+	r.Id,
+	r.Column,
+	r.ColumnNullable
+FROM
+	`TypeTable``2` r
+WHERE
+	r.Column = toUInt16(0) AND r.ColumnNullable IS NULL
+
+BeforeExecute
+-- ClickHouse.Driver ClickHouse
+
+SELECT
+	r.Id,
+	r.Column,
+	r.ColumnNullable
+FROM
+	`TypeTable``2` r
+WHERE
+	r.Column = toUInt16(0) AND r.ColumnNullable = toUInt16(65535)
+
+BeforeExecute
+-- ClickHouse.Driver ClickHouse
+
+ALTER TABLE
+	`TypeTable``2`
+DELETE WHERE 1
+
+BeforeExecute
+-- ClickHouse.Driver ClickHouse
+
+INSERT INTO `TypeTable``2`
+(
+	Id,
+	Column,
+	ColumnNullable
+)
+VALUES
+(
+	1,
+	toUInt16(0),
+	toUInt16(65535)
+)
+
+BeforeExecute
+-- ClickHouse.Driver ClickHouse
+
+SELECT
+	r.Id,
+	r.Column,
+	r.ColumnNullable
+FROM
+	`TypeTable``2` r
+WHERE
+	r.Column = toUInt16(0) AND r.ColumnNullable = toUInt16(65535)
+
+BeforeExecute
+-- ClickHouse.Driver ClickHouse
+
+ALTER TABLE
+	`TypeTable``2`
+DELETE WHERE 1
+
+BeforeExecute
+-- ClickHouse.Driver ClickHouse
+
+INSERT INTO `TypeTable``2`
+(
+	Id,
+	Column,
+	ColumnNullable
+)
+VALUES
+(1,toUInt16(0),toUInt16(65535))
+
+BeforeExecute
+-- ClickHouse.Driver ClickHouse
+
+SELECT
+	r.Id,
+	r.Column,
+	r.ColumnNullable
+FROM
+	`TypeTable``2` r
+WHERE
+	r.Column = toUInt16(0) AND r.ColumnNullable = toUInt16(65535)
+
+BeforeExecute
+-- ClickHouse.Driver ClickHouse
+
+ALTER TABLE
+	`TypeTable``2`
+DELETE WHERE 1
+
+BeforeExecute
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
+
+BeforeExecute
+-- ClickHouse.Driver ClickHouse
+
+SELECT
+	r.Id,
+	r.Column,
+	r.ColumnNullable
+FROM
+	`TypeTable``2` r
+WHERE
+	r.Column = toUInt16(0) AND r.ColumnNullable = toUInt16(65535)
+
+BeforeExecute
+-- ClickHouse.Driver ClickHouse (asynchronously)
+
+ALTER TABLE
+	`TypeTable``2`
+DELETE WHERE 1
+
+BeforeExecute
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
+
+BeforeExecute
+-- ClickHouse.Driver ClickHouse
+
+SELECT
+	r.Id,
+	r.Column,
+	r.ColumnNullable
+FROM
+	`TypeTable``2` r
+WHERE
+	r.Column = toUInt16(0) AND r.ColumnNullable = toUInt16(65535)
+
+BeforeExecute
+-- ClickHouse.Driver ClickHouse
+
+SELECT
+	r.Id,
+	r.Column,
+	r.ColumnNullable
+FROM
+	`TypeTable``2` r
+WHERE
+	r.Column = toUInt16(65535) AND r.ColumnNullable = toUInt16(0)
+
+BeforeExecute
+-- ClickHouse.Driver ClickHouse
+
+ALTER TABLE
+	`TypeTable``2`
+DELETE WHERE 1
+
+BeforeExecute
+-- ClickHouse.Driver ClickHouse
+
+INSERT INTO `TypeTable``2`
+(
+	Id,
+	Column,
+	ColumnNullable
+)
+VALUES
+(
+	1,
+	toUInt16(65535),
+	toUInt16(0)
+)
+
+BeforeExecute
+-- ClickHouse.Driver ClickHouse
+
+SELECT
+	r.Id,
+	r.Column,
+	r.ColumnNullable
+FROM
+	`TypeTable``2` r
+WHERE
+	r.Column = toUInt16(65535) AND r.ColumnNullable = toUInt16(0)
+
+BeforeExecute
+-- ClickHouse.Driver ClickHouse
+
+ALTER TABLE
+	`TypeTable``2`
+DELETE WHERE 1
+
+BeforeExecute
+-- ClickHouse.Driver ClickHouse
+
+INSERT INTO `TypeTable``2`
+(
+	Id,
+	Column,
+	ColumnNullable
+)
+VALUES
+(1,toUInt16(65535),toUInt16(0))
+
+BeforeExecute
+-- ClickHouse.Driver ClickHouse
+
+SELECT
+	r.Id,
+	r.Column,
+	r.ColumnNullable
+FROM
+	`TypeTable``2` r
+WHERE
+	r.Column = toUInt16(65535) AND r.ColumnNullable = toUInt16(0)
+
+BeforeExecute
+-- ClickHouse.Driver ClickHouse
+
+ALTER TABLE
+	`TypeTable``2`
+DELETE WHERE 1
+
+BeforeExecute
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
+
+BeforeExecute
+-- ClickHouse.Driver ClickHouse
+
+SELECT
+	r.Id,
+	r.Column,
+	r.ColumnNullable
+FROM
+	`TypeTable``2` r
+WHERE
+	r.Column = toUInt16(65535) AND r.ColumnNullable = toUInt16(0)
+
+BeforeExecute
+-- ClickHouse.Driver ClickHouse (asynchronously)
+
+ALTER TABLE
+	`TypeTable``2`
+DELETE WHERE 1
+
+BeforeExecute
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
+
+BeforeExecute
+-- ClickHouse.Driver ClickHouse
+
+SELECT
+	r.Id,
+	r.Column,
+	r.ColumnNullable
+FROM
+	`TypeTable``2` r
+WHERE
+	r.Column = toUInt16(65535) AND r.ColumnNullable = toUInt16(0)
+
+BeforeExecute
+-- ClickHouse.Driver ClickHouse
+
+SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -2757,11 +2950,13 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	0,
 	NULL
 )
@@ -2770,6 +2965,7 @@ BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -2789,16 +2985,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(0,NULL)
+(1,0,NULL)
 
 BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -2814,12 +3012,13 @@ ALTER TABLE
 DELETE WHERE 1
 
 BeforeExecute
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -2835,12 +3034,13 @@ ALTER TABLE
 DELETE WHERE 1
 
 BeforeExecute
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -2852,6 +3052,7 @@ BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -2871,11 +3072,13 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	-2147483648,
 	2147483647
 )
@@ -2884,6 +3087,7 @@ BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -2903,16 +3107,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(-2147483648,2147483647)
+(1,-2147483648,2147483647)
 
 BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -2928,12 +3134,13 @@ ALTER TABLE
 DELETE WHERE 1
 
 BeforeExecute
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -2949,12 +3156,13 @@ ALTER TABLE
 DELETE WHERE 1
 
 BeforeExecute
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -2966,6 +3174,7 @@ BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -2985,11 +3194,13 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	2147483647,
 	-2147483648
 )
@@ -2998,6 +3209,7 @@ BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -3017,16 +3229,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(2147483647,-2147483648)
+(1,2147483647,-2147483648)
 
 BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -3042,12 +3256,13 @@ ALTER TABLE
 DELETE WHERE 1
 
 BeforeExecute
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -3063,12 +3278,13 @@ ALTER TABLE
 DELETE WHERE 1
 
 BeforeExecute
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -3080,6 +3296,7 @@ BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -3099,11 +3316,13 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	0,
 	NULL
 )
@@ -3112,6 +3331,7 @@ BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -3131,16 +3351,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(0,NULL)
+(1,0,NULL)
 
 BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -3156,12 +3378,13 @@ ALTER TABLE
 DELETE WHERE 1
 
 BeforeExecute
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -3177,12 +3400,13 @@ ALTER TABLE
 DELETE WHERE 1
 
 BeforeExecute
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -3194,6 +3418,7 @@ BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -3213,11 +3438,13 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	-2147483648,
 	2147483647
 )
@@ -3226,6 +3453,7 @@ BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -3245,16 +3473,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(-2147483648,2147483647)
+(1,-2147483648,2147483647)
 
 BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -3270,12 +3500,13 @@ ALTER TABLE
 DELETE WHERE 1
 
 BeforeExecute
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -3291,12 +3522,13 @@ ALTER TABLE
 DELETE WHERE 1
 
 BeforeExecute
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -3308,6 +3540,7 @@ BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -3327,11 +3560,13 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	2147483647,
 	-2147483648
 )
@@ -3340,6 +3575,7 @@ BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -3359,16 +3595,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(2147483647,-2147483648)
+(1,2147483647,-2147483648)
 
 BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -3384,12 +3622,13 @@ ALTER TABLE
 DELETE WHERE 1
 
 BeforeExecute
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -3405,12 +3644,13 @@ ALTER TABLE
 DELETE WHERE 1
 
 BeforeExecute
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -3422,6 +3662,7 @@ BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -3441,11 +3682,13 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	toUInt32(0),
 	NULL
 )
@@ -3454,6 +3697,7 @@ BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -3473,16 +3717,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toUInt32(0),NULL)
+(1,toUInt32(0),NULL)
 
 BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -3498,12 +3744,13 @@ ALTER TABLE
 DELETE WHERE 1
 
 BeforeExecute
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -3519,12 +3766,13 @@ ALTER TABLE
 DELETE WHERE 1
 
 BeforeExecute
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -3536,6 +3784,7 @@ BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -3555,353 +3804,13 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
-	toUInt32(0),
-	toUInt32(4294967295)
-)
-
-BeforeExecute
--- ClickHouse.Driver ClickHouse
-
-SELECT
-	r.Column,
-	r.ColumnNullable
-FROM
-	`TypeTable``2` r
-WHERE
-	r.Column = toUInt32(0) AND r.ColumnNullable = toUInt32(4294967295)
-
-BeforeExecute
--- ClickHouse.Driver ClickHouse
-
-ALTER TABLE
-	`TypeTable``2`
-DELETE WHERE 1
-
-BeforeExecute
--- ClickHouse.Driver ClickHouse
-
-INSERT INTO `TypeTable``2`
-(
-	Column,
-	ColumnNullable
-)
-VALUES
-(toUInt32(0),toUInt32(4294967295))
-
-BeforeExecute
--- ClickHouse.Driver ClickHouse
-
-SELECT
-	r.Column,
-	r.ColumnNullable
-FROM
-	`TypeTable``2` r
-WHERE
-	r.Column = toUInt32(0) AND r.ColumnNullable = toUInt32(4294967295)
-
-BeforeExecute
--- ClickHouse.Driver ClickHouse
-
-ALTER TABLE
-	`TypeTable``2`
-DELETE WHERE 1
-
-BeforeExecute
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
-
-BeforeExecute
--- ClickHouse.Driver ClickHouse
-
-SELECT
-	r.Column,
-	r.ColumnNullable
-FROM
-	`TypeTable``2` r
-WHERE
-	r.Column = toUInt32(0) AND r.ColumnNullable = toUInt32(4294967295)
-
-BeforeExecute
--- ClickHouse.Driver ClickHouse (asynchronously)
-
-ALTER TABLE
-	`TypeTable``2`
-DELETE WHERE 1
-
-BeforeExecute
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
-
-BeforeExecute
--- ClickHouse.Driver ClickHouse
-
-SELECT
-	r.Column,
-	r.ColumnNullable
-FROM
-	`TypeTable``2` r
-WHERE
-	r.Column = toUInt32(0) AND r.ColumnNullable = toUInt32(4294967295)
-
-BeforeExecute
--- ClickHouse.Driver ClickHouse
-
-SELECT
-	r.Column,
-	r.ColumnNullable
-FROM
-	`TypeTable``2` r
-WHERE
-	r.Column = toUInt32(4294967295) AND r.ColumnNullable = toUInt32(0)
-
-BeforeExecute
--- ClickHouse.Driver ClickHouse
-
-ALTER TABLE
-	`TypeTable``2`
-DELETE WHERE 1
-
-BeforeExecute
--- ClickHouse.Driver ClickHouse
-
-INSERT INTO `TypeTable``2`
-(
-	Column,
-	ColumnNullable
-)
-VALUES
-(
-	toUInt32(4294967295),
-	toUInt32(0)
-)
-
-BeforeExecute
--- ClickHouse.Driver ClickHouse
-
-SELECT
-	r.Column,
-	r.ColumnNullable
-FROM
-	`TypeTable``2` r
-WHERE
-	r.Column = toUInt32(4294967295) AND r.ColumnNullable = toUInt32(0)
-
-BeforeExecute
--- ClickHouse.Driver ClickHouse
-
-ALTER TABLE
-	`TypeTable``2`
-DELETE WHERE 1
-
-BeforeExecute
--- ClickHouse.Driver ClickHouse
-
-INSERT INTO `TypeTable``2`
-(
-	Column,
-	ColumnNullable
-)
-VALUES
-(toUInt32(4294967295),toUInt32(0))
-
-BeforeExecute
--- ClickHouse.Driver ClickHouse
-
-SELECT
-	r.Column,
-	r.ColumnNullable
-FROM
-	`TypeTable``2` r
-WHERE
-	r.Column = toUInt32(4294967295) AND r.ColumnNullable = toUInt32(0)
-
-BeforeExecute
--- ClickHouse.Driver ClickHouse
-
-ALTER TABLE
-	`TypeTable``2`
-DELETE WHERE 1
-
-BeforeExecute
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
-
-BeforeExecute
--- ClickHouse.Driver ClickHouse
-
-SELECT
-	r.Column,
-	r.ColumnNullable
-FROM
-	`TypeTable``2` r
-WHERE
-	r.Column = toUInt32(4294967295) AND r.ColumnNullable = toUInt32(0)
-
-BeforeExecute
--- ClickHouse.Driver ClickHouse (asynchronously)
-
-ALTER TABLE
-	`TypeTable``2`
-DELETE WHERE 1
-
-BeforeExecute
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
-
-BeforeExecute
--- ClickHouse.Driver ClickHouse
-
-SELECT
-	r.Column,
-	r.ColumnNullable
-FROM
-	`TypeTable``2` r
-WHERE
-	r.Column = toUInt32(4294967295) AND r.ColumnNullable = toUInt32(0)
-
-BeforeExecute
--- ClickHouse.Driver ClickHouse
-
-SELECT
-	r.Column,
-	r.ColumnNullable
-FROM
-	`TypeTable``2` r
-WHERE
-	r.Column = toUInt32(0) AND r.ColumnNullable IS NULL
-
-BeforeExecute
--- ClickHouse.Driver ClickHouse
-
-ALTER TABLE
-	`TypeTable``2`
-DELETE WHERE 1
-
-BeforeExecute
--- ClickHouse.Driver ClickHouse
-
-INSERT INTO `TypeTable``2`
-(
-	Column,
-	ColumnNullable
-)
-VALUES
-(
-	toUInt32(0),
-	NULL
-)
-
-BeforeExecute
--- ClickHouse.Driver ClickHouse
-
-SELECT
-	r.Column,
-	r.ColumnNullable
-FROM
-	`TypeTable``2` r
-WHERE
-	r.Column = toUInt32(0) AND r.ColumnNullable IS NULL
-
-BeforeExecute
--- ClickHouse.Driver ClickHouse
-
-ALTER TABLE
-	`TypeTable``2`
-DELETE WHERE 1
-
-BeforeExecute
--- ClickHouse.Driver ClickHouse
-
-INSERT INTO `TypeTable``2`
-(
-	Column,
-	ColumnNullable
-)
-VALUES
-(toUInt32(0),NULL)
-
-BeforeExecute
--- ClickHouse.Driver ClickHouse
-
-SELECT
-	r.Column,
-	r.ColumnNullable
-FROM
-	`TypeTable``2` r
-WHERE
-	r.Column = toUInt32(0) AND r.ColumnNullable IS NULL
-
-BeforeExecute
--- ClickHouse.Driver ClickHouse
-
-ALTER TABLE
-	`TypeTable``2`
-DELETE WHERE 1
-
-BeforeExecute
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
-
-BeforeExecute
--- ClickHouse.Driver ClickHouse
-
-SELECT
-	r.Column,
-	r.ColumnNullable
-FROM
-	`TypeTable``2` r
-WHERE
-	r.Column = toUInt32(0) AND r.ColumnNullable IS NULL
-
-BeforeExecute
--- ClickHouse.Driver ClickHouse (asynchronously)
-
-ALTER TABLE
-	`TypeTable``2`
-DELETE WHERE 1
-
-BeforeExecute
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
-
-BeforeExecute
--- ClickHouse.Driver ClickHouse
-
-SELECT
-	r.Column,
-	r.ColumnNullable
-FROM
-	`TypeTable``2` r
-WHERE
-	r.Column = toUInt32(0) AND r.ColumnNullable IS NULL
-
-BeforeExecute
--- ClickHouse.Driver ClickHouse
-
-SELECT
-	r.Column,
-	r.ColumnNullable
-FROM
-	`TypeTable``2` r
-WHERE
-	r.Column = toUInt32(0) AND r.ColumnNullable = toUInt32(4294967295)
-
-BeforeExecute
--- ClickHouse.Driver ClickHouse
-
-ALTER TABLE
-	`TypeTable``2`
-DELETE WHERE 1
-
-BeforeExecute
--- ClickHouse.Driver ClickHouse
-
-INSERT INTO `TypeTable``2`
-(
-	Column,
-	ColumnNullable
-)
-VALUES
-(
+	1,
 	toUInt32(0),
 	toUInt32(4294967295)
 )
@@ -3910,6 +3819,7 @@ BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -3929,16 +3839,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toUInt32(0),toUInt32(4294967295))
+(1,toUInt32(0),toUInt32(4294967295))
 
 BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -3954,12 +3866,13 @@ ALTER TABLE
 DELETE WHERE 1
 
 BeforeExecute
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -3975,12 +3888,13 @@ ALTER TABLE
 DELETE WHERE 1
 
 BeforeExecute
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -3992,6 +3906,7 @@ BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -4011,11 +3926,13 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	toUInt32(4294967295),
 	toUInt32(0)
 )
@@ -4024,6 +3941,7 @@ BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -4043,16 +3961,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toUInt32(4294967295),toUInt32(0))
+(1,toUInt32(4294967295),toUInt32(0))
 
 BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -4068,12 +3988,13 @@ ALTER TABLE
 DELETE WHERE 1
 
 BeforeExecute
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -4089,12 +4010,13 @@ ALTER TABLE
 DELETE WHERE 1
 
 BeforeExecute
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -4106,6 +4028,373 @@ BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
+	r.Column,
+	r.ColumnNullable
+FROM
+	`TypeTable``2` r
+WHERE
+	r.Column = toUInt32(0) AND r.ColumnNullable IS NULL
+
+BeforeExecute
+-- ClickHouse.Driver ClickHouse
+
+ALTER TABLE
+	`TypeTable``2`
+DELETE WHERE 1
+
+BeforeExecute
+-- ClickHouse.Driver ClickHouse
+
+INSERT INTO `TypeTable``2`
+(
+	Id,
+	Column,
+	ColumnNullable
+)
+VALUES
+(
+	1,
+	toUInt32(0),
+	NULL
+)
+
+BeforeExecute
+-- ClickHouse.Driver ClickHouse
+
+SELECT
+	r.Id,
+	r.Column,
+	r.ColumnNullable
+FROM
+	`TypeTable``2` r
+WHERE
+	r.Column = toUInt32(0) AND r.ColumnNullable IS NULL
+
+BeforeExecute
+-- ClickHouse.Driver ClickHouse
+
+ALTER TABLE
+	`TypeTable``2`
+DELETE WHERE 1
+
+BeforeExecute
+-- ClickHouse.Driver ClickHouse
+
+INSERT INTO `TypeTable``2`
+(
+	Id,
+	Column,
+	ColumnNullable
+)
+VALUES
+(1,toUInt32(0),NULL)
+
+BeforeExecute
+-- ClickHouse.Driver ClickHouse
+
+SELECT
+	r.Id,
+	r.Column,
+	r.ColumnNullable
+FROM
+	`TypeTable``2` r
+WHERE
+	r.Column = toUInt32(0) AND r.ColumnNullable IS NULL
+
+BeforeExecute
+-- ClickHouse.Driver ClickHouse
+
+ALTER TABLE
+	`TypeTable``2`
+DELETE WHERE 1
+
+BeforeExecute
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
+
+BeforeExecute
+-- ClickHouse.Driver ClickHouse
+
+SELECT
+	r.Id,
+	r.Column,
+	r.ColumnNullable
+FROM
+	`TypeTable``2` r
+WHERE
+	r.Column = toUInt32(0) AND r.ColumnNullable IS NULL
+
+BeforeExecute
+-- ClickHouse.Driver ClickHouse (asynchronously)
+
+ALTER TABLE
+	`TypeTable``2`
+DELETE WHERE 1
+
+BeforeExecute
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
+
+BeforeExecute
+-- ClickHouse.Driver ClickHouse
+
+SELECT
+	r.Id,
+	r.Column,
+	r.ColumnNullable
+FROM
+	`TypeTable``2` r
+WHERE
+	r.Column = toUInt32(0) AND r.ColumnNullable IS NULL
+
+BeforeExecute
+-- ClickHouse.Driver ClickHouse
+
+SELECT
+	r.Id,
+	r.Column,
+	r.ColumnNullable
+FROM
+	`TypeTable``2` r
+WHERE
+	r.Column = toUInt32(0) AND r.ColumnNullable = toUInt32(4294967295)
+
+BeforeExecute
+-- ClickHouse.Driver ClickHouse
+
+ALTER TABLE
+	`TypeTable``2`
+DELETE WHERE 1
+
+BeforeExecute
+-- ClickHouse.Driver ClickHouse
+
+INSERT INTO `TypeTable``2`
+(
+	Id,
+	Column,
+	ColumnNullable
+)
+VALUES
+(
+	1,
+	toUInt32(0),
+	toUInt32(4294967295)
+)
+
+BeforeExecute
+-- ClickHouse.Driver ClickHouse
+
+SELECT
+	r.Id,
+	r.Column,
+	r.ColumnNullable
+FROM
+	`TypeTable``2` r
+WHERE
+	r.Column = toUInt32(0) AND r.ColumnNullable = toUInt32(4294967295)
+
+BeforeExecute
+-- ClickHouse.Driver ClickHouse
+
+ALTER TABLE
+	`TypeTable``2`
+DELETE WHERE 1
+
+BeforeExecute
+-- ClickHouse.Driver ClickHouse
+
+INSERT INTO `TypeTable``2`
+(
+	Id,
+	Column,
+	ColumnNullable
+)
+VALUES
+(1,toUInt32(0),toUInt32(4294967295))
+
+BeforeExecute
+-- ClickHouse.Driver ClickHouse
+
+SELECT
+	r.Id,
+	r.Column,
+	r.ColumnNullable
+FROM
+	`TypeTable``2` r
+WHERE
+	r.Column = toUInt32(0) AND r.ColumnNullable = toUInt32(4294967295)
+
+BeforeExecute
+-- ClickHouse.Driver ClickHouse
+
+ALTER TABLE
+	`TypeTable``2`
+DELETE WHERE 1
+
+BeforeExecute
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
+
+BeforeExecute
+-- ClickHouse.Driver ClickHouse
+
+SELECT
+	r.Id,
+	r.Column,
+	r.ColumnNullable
+FROM
+	`TypeTable``2` r
+WHERE
+	r.Column = toUInt32(0) AND r.ColumnNullable = toUInt32(4294967295)
+
+BeforeExecute
+-- ClickHouse.Driver ClickHouse (asynchronously)
+
+ALTER TABLE
+	`TypeTable``2`
+DELETE WHERE 1
+
+BeforeExecute
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
+
+BeforeExecute
+-- ClickHouse.Driver ClickHouse
+
+SELECT
+	r.Id,
+	r.Column,
+	r.ColumnNullable
+FROM
+	`TypeTable``2` r
+WHERE
+	r.Column = toUInt32(0) AND r.ColumnNullable = toUInt32(4294967295)
+
+BeforeExecute
+-- ClickHouse.Driver ClickHouse
+
+SELECT
+	r.Id,
+	r.Column,
+	r.ColumnNullable
+FROM
+	`TypeTable``2` r
+WHERE
+	r.Column = toUInt32(4294967295) AND r.ColumnNullable = toUInt32(0)
+
+BeforeExecute
+-- ClickHouse.Driver ClickHouse
+
+ALTER TABLE
+	`TypeTable``2`
+DELETE WHERE 1
+
+BeforeExecute
+-- ClickHouse.Driver ClickHouse
+
+INSERT INTO `TypeTable``2`
+(
+	Id,
+	Column,
+	ColumnNullable
+)
+VALUES
+(
+	1,
+	toUInt32(4294967295),
+	toUInt32(0)
+)
+
+BeforeExecute
+-- ClickHouse.Driver ClickHouse
+
+SELECT
+	r.Id,
+	r.Column,
+	r.ColumnNullable
+FROM
+	`TypeTable``2` r
+WHERE
+	r.Column = toUInt32(4294967295) AND r.ColumnNullable = toUInt32(0)
+
+BeforeExecute
+-- ClickHouse.Driver ClickHouse
+
+ALTER TABLE
+	`TypeTable``2`
+DELETE WHERE 1
+
+BeforeExecute
+-- ClickHouse.Driver ClickHouse
+
+INSERT INTO `TypeTable``2`
+(
+	Id,
+	Column,
+	ColumnNullable
+)
+VALUES
+(1,toUInt32(4294967295),toUInt32(0))
+
+BeforeExecute
+-- ClickHouse.Driver ClickHouse
+
+SELECT
+	r.Id,
+	r.Column,
+	r.ColumnNullable
+FROM
+	`TypeTable``2` r
+WHERE
+	r.Column = toUInt32(4294967295) AND r.ColumnNullable = toUInt32(0)
+
+BeforeExecute
+-- ClickHouse.Driver ClickHouse
+
+ALTER TABLE
+	`TypeTable``2`
+DELETE WHERE 1
+
+BeforeExecute
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
+
+BeforeExecute
+-- ClickHouse.Driver ClickHouse
+
+SELECT
+	r.Id,
+	r.Column,
+	r.ColumnNullable
+FROM
+	`TypeTable``2` r
+WHERE
+	r.Column = toUInt32(4294967295) AND r.ColumnNullable = toUInt32(0)
+
+BeforeExecute
+-- ClickHouse.Driver ClickHouse (asynchronously)
+
+ALTER TABLE
+	`TypeTable``2`
+DELETE WHERE 1
+
+BeforeExecute
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
+
+BeforeExecute
+-- ClickHouse.Driver ClickHouse
+
+SELECT
+	r.Id,
+	r.Column,
+	r.ColumnNullable
+FROM
+	`TypeTable``2` r
+WHERE
+	r.Column = toUInt32(4294967295) AND r.ColumnNullable = toUInt32(0)
+
+BeforeExecute
+-- ClickHouse.Driver ClickHouse
+
+SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -4125,11 +4414,13 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	toInt64(0),
 	NULL
 )
@@ -4138,6 +4429,7 @@ BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -4157,16 +4449,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toInt64(0),NULL)
+(1,toInt64(0),NULL)
 
 BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -4182,12 +4476,13 @@ ALTER TABLE
 DELETE WHERE 1
 
 BeforeExecute
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -4203,12 +4498,13 @@ ALTER TABLE
 DELETE WHERE 1
 
 BeforeExecute
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -4220,6 +4516,7 @@ BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -4239,11 +4536,13 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	toInt64(-9223372036854775808),
 	toInt64(9223372036854775807)
 )
@@ -4252,6 +4551,7 @@ BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -4271,16 +4571,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toInt64(-9223372036854775808),toInt64(9223372036854775807))
+(1,toInt64(-9223372036854775808),toInt64(9223372036854775807))
 
 BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -4296,12 +4598,13 @@ ALTER TABLE
 DELETE WHERE 1
 
 BeforeExecute
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -4317,12 +4620,13 @@ ALTER TABLE
 DELETE WHERE 1
 
 BeforeExecute
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -4334,6 +4638,7 @@ BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -4353,11 +4658,13 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	toInt64(9223372036854775807),
 	toInt64(-9223372036854775808)
 )
@@ -4366,6 +4673,7 @@ BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -4385,16 +4693,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toInt64(9223372036854775807),toInt64(-9223372036854775808))
+(1,toInt64(9223372036854775807),toInt64(-9223372036854775808))
 
 BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -4410,12 +4720,13 @@ ALTER TABLE
 DELETE WHERE 1
 
 BeforeExecute
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -4431,12 +4742,13 @@ ALTER TABLE
 DELETE WHERE 1
 
 BeforeExecute
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -4448,6 +4760,7 @@ BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -4467,11 +4780,13 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	toInt64(0),
 	NULL
 )
@@ -4480,6 +4795,7 @@ BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -4499,16 +4815,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toInt64(0),NULL)
+(1,toInt64(0),NULL)
 
 BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -4524,12 +4842,13 @@ ALTER TABLE
 DELETE WHERE 1
 
 BeforeExecute
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -4545,12 +4864,13 @@ ALTER TABLE
 DELETE WHERE 1
 
 BeforeExecute
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -4562,6 +4882,7 @@ BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -4581,11 +4902,13 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	toInt64(-9223372036854775808),
 	toInt64(9223372036854775807)
 )
@@ -4594,6 +4917,7 @@ BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -4613,16 +4937,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toInt64(-9223372036854775808),toInt64(9223372036854775807))
+(1,toInt64(-9223372036854775808),toInt64(9223372036854775807))
 
 BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -4638,12 +4964,13 @@ ALTER TABLE
 DELETE WHERE 1
 
 BeforeExecute
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -4659,12 +4986,13 @@ ALTER TABLE
 DELETE WHERE 1
 
 BeforeExecute
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -4676,6 +5004,7 @@ BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -4695,11 +5024,13 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	toInt64(9223372036854775807),
 	toInt64(-9223372036854775808)
 )
@@ -4708,6 +5039,7 @@ BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -4727,16 +5059,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toInt64(9223372036854775807),toInt64(-9223372036854775808))
+(1,toInt64(9223372036854775807),toInt64(-9223372036854775808))
 
 BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -4752,12 +5086,13 @@ ALTER TABLE
 DELETE WHERE 1
 
 BeforeExecute
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -4773,12 +5108,13 @@ ALTER TABLE
 DELETE WHERE 1
 
 BeforeExecute
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -4790,6 +5126,7 @@ BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -4809,11 +5146,13 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	toUInt64(0),
 	NULL
 )
@@ -4822,6 +5161,7 @@ BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -4841,16 +5181,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toUInt64(0),NULL)
+(1,toUInt64(0),NULL)
 
 BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -4866,12 +5208,13 @@ ALTER TABLE
 DELETE WHERE 1
 
 BeforeExecute
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -4887,12 +5230,13 @@ ALTER TABLE
 DELETE WHERE 1
 
 BeforeExecute
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -4904,6 +5248,7 @@ BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -4923,11 +5268,13 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	toUInt64(0),
 	toUInt64(18446744073709551615)
 )
@@ -4936,6 +5283,7 @@ BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -4955,16 +5303,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toUInt64(0),toUInt64(18446744073709551615))
+(1,toUInt64(0),toUInt64(18446744073709551615))
 
 BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -4980,12 +5330,13 @@ ALTER TABLE
 DELETE WHERE 1
 
 BeforeExecute
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -5001,12 +5352,13 @@ ALTER TABLE
 DELETE WHERE 1
 
 BeforeExecute
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -5018,6 +5370,7 @@ BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -5037,11 +5390,13 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	toUInt64(18446744073709551615),
 	toUInt64(0)
 )
@@ -5050,6 +5405,7 @@ BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -5069,16 +5425,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toUInt64(18446744073709551615),toUInt64(0))
+(1,toUInt64(18446744073709551615),toUInt64(0))
 
 BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -5094,12 +5452,13 @@ ALTER TABLE
 DELETE WHERE 1
 
 BeforeExecute
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -5115,12 +5474,13 @@ ALTER TABLE
 DELETE WHERE 1
 
 BeforeExecute
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -5132,6 +5492,7 @@ BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -5151,11 +5512,13 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	toUInt64(0),
 	NULL
 )
@@ -5164,6 +5527,7 @@ BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -5183,16 +5547,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toUInt64(0),NULL)
+(1,toUInt64(0),NULL)
 
 BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -5208,12 +5574,13 @@ ALTER TABLE
 DELETE WHERE 1
 
 BeforeExecute
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -5229,12 +5596,13 @@ ALTER TABLE
 DELETE WHERE 1
 
 BeforeExecute
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -5246,6 +5614,7 @@ BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -5265,11 +5634,13 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	toUInt64(0),
 	toUInt64(18446744073709551615)
 )
@@ -5278,6 +5649,7 @@ BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -5297,16 +5669,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toUInt64(0),toUInt64(18446744073709551615))
+(1,toUInt64(0),toUInt64(18446744073709551615))
 
 BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -5322,12 +5696,13 @@ ALTER TABLE
 DELETE WHERE 1
 
 BeforeExecute
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -5343,12 +5718,13 @@ ALTER TABLE
 DELETE WHERE 1
 
 BeforeExecute
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -5360,6 +5736,7 @@ BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -5379,11 +5756,13 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	toUInt64(18446744073709551615),
 	toUInt64(0)
 )
@@ -5392,6 +5771,7 @@ BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -5411,16 +5791,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toUInt64(18446744073709551615),toUInt64(0))
+(1,toUInt64(18446744073709551615),toUInt64(0))
 
 BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -5436,12 +5818,13 @@ ALTER TABLE
 DELETE WHERE 1
 
 BeforeExecute
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -5457,12 +5840,13 @@ ALTER TABLE
 DELETE WHERE 1
 
 BeforeExecute
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -5474,6 +5858,7 @@ BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -5493,11 +5878,13 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	toInt128('0'),
 	NULL
 )
@@ -5506,6 +5893,7 @@ BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -5525,16 +5913,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toInt128('0'),NULL)
+(1,toInt128('0'),NULL)
 
 BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -5550,12 +5940,13 @@ ALTER TABLE
 DELETE WHERE 1
 
 BeforeExecute
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -5571,12 +5962,13 @@ ALTER TABLE
 DELETE WHERE 1
 
 BeforeExecute
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -5588,6 +5980,7 @@ BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -5608,11 +6001,13 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	toInt128('-170141183460469231731687303715884105728'),
 	toInt128('170141183460469231731687303715884105727')
 )
@@ -5621,6 +6016,7 @@ BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -5641,16 +6037,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toInt128('-170141183460469231731687303715884105728'),toInt128('170141183460469231731687303715884105727'))
+(1,toInt128('-170141183460469231731687303715884105728'),toInt128('170141183460469231731687303715884105727'))
 
 BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -5667,12 +6065,13 @@ ALTER TABLE
 DELETE WHERE 1
 
 BeforeExecute
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -5689,12 +6088,13 @@ ALTER TABLE
 DELETE WHERE 1
 
 BeforeExecute
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -5707,6 +6107,7 @@ BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -5727,11 +6128,13 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	toInt128('170141183460469231731687303715884105727'),
 	toInt128('-170141183460469231731687303715884105728')
 )
@@ -5740,6 +6143,7 @@ BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -5760,16 +6164,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toInt128('170141183460469231731687303715884105727'),toInt128('-170141183460469231731687303715884105728'))
+(1,toInt128('170141183460469231731687303715884105727'),toInt128('-170141183460469231731687303715884105728'))
 
 BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -5786,12 +6192,13 @@ ALTER TABLE
 DELETE WHERE 1
 
 BeforeExecute
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -5808,12 +6215,13 @@ ALTER TABLE
 DELETE WHERE 1
 
 BeforeExecute
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -5826,6 +6234,7 @@ BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -5845,11 +6254,13 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	toUInt128('0'),
 	NULL
 )
@@ -5858,6 +6269,7 @@ BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -5877,16 +6289,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toUInt128('0'),NULL)
+(1,toUInt128('0'),NULL)
 
 BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -5902,12 +6316,13 @@ ALTER TABLE
 DELETE WHERE 1
 
 BeforeExecute
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -5923,12 +6338,13 @@ ALTER TABLE
 DELETE WHERE 1
 
 BeforeExecute
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -5940,6 +6356,7 @@ BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -5959,11 +6376,13 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	toUInt128('0'),
 	toUInt128('340282366920938463463374607431768211455')
 )
@@ -5972,6 +6391,7 @@ BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -5991,16 +6411,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toUInt128('0'),toUInt128('340282366920938463463374607431768211455'))
+(1,toUInt128('0'),toUInt128('340282366920938463463374607431768211455'))
 
 BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -6016,12 +6438,13 @@ ALTER TABLE
 DELETE WHERE 1
 
 BeforeExecute
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -6037,12 +6460,13 @@ ALTER TABLE
 DELETE WHERE 1
 
 BeforeExecute
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -6054,6 +6478,7 @@ BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -6074,11 +6499,13 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	toUInt128('340282366920938463463374607431768211455'),
 	toUInt128('0')
 )
@@ -6087,6 +6514,7 @@ BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -6107,16 +6535,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toUInt128('340282366920938463463374607431768211455'),toUInt128('0'))
+(1,toUInt128('340282366920938463463374607431768211455'),toUInt128('0'))
 
 BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -6133,12 +6563,13 @@ ALTER TABLE
 DELETE WHERE 1
 
 BeforeExecute
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -6155,12 +6586,13 @@ ALTER TABLE
 DELETE WHERE 1
 
 BeforeExecute
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -6173,6 +6605,7 @@ BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -6192,11 +6625,13 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	toInt256('0'),
 	NULL
 )
@@ -6205,6 +6640,7 @@ BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -6224,16 +6660,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toInt256('0'),NULL)
+(1,toInt256('0'),NULL)
 
 BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -6249,12 +6687,13 @@ ALTER TABLE
 DELETE WHERE 1
 
 BeforeExecute
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -6270,12 +6709,13 @@ ALTER TABLE
 DELETE WHERE 1
 
 BeforeExecute
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -6287,6 +6727,7 @@ BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -6307,11 +6748,13 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	toInt256('-57896044618658097711785492504343953926634992332820282019728792003956564819968'),
 	toInt256('57896044618658097711785492504343953926634992332820282019728792003956564819967')
 )
@@ -6320,6 +6763,7 @@ BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -6340,16 +6784,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toInt256('-57896044618658097711785492504343953926634992332820282019728792003956564819968'),toInt256('57896044618658097711785492504343953926634992332820282019728792003956564819967'))
+(1,toInt256('-57896044618658097711785492504343953926634992332820282019728792003956564819968'),toInt256('57896044618658097711785492504343953926634992332820282019728792003956564819967'))
 
 BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -6366,12 +6812,13 @@ ALTER TABLE
 DELETE WHERE 1
 
 BeforeExecute
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -6388,12 +6835,13 @@ ALTER TABLE
 DELETE WHERE 1
 
 BeforeExecute
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -6406,6 +6854,7 @@ BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -6426,11 +6875,13 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	toInt256('57896044618658097711785492504343953926634992332820282019728792003956564819967'),
 	toInt256('-57896044618658097711785492504343953926634992332820282019728792003956564819968')
 )
@@ -6439,6 +6890,7 @@ BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -6459,16 +6911,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toInt256('57896044618658097711785492504343953926634992332820282019728792003956564819967'),toInt256('-57896044618658097711785492504343953926634992332820282019728792003956564819968'))
+(1,toInt256('57896044618658097711785492504343953926634992332820282019728792003956564819967'),toInt256('-57896044618658097711785492504343953926634992332820282019728792003956564819968'))
 
 BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -6485,12 +6939,13 @@ ALTER TABLE
 DELETE WHERE 1
 
 BeforeExecute
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -6507,12 +6962,13 @@ ALTER TABLE
 DELETE WHERE 1
 
 BeforeExecute
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -6525,6 +6981,7 @@ BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -6544,11 +7001,13 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	toInt256('0'),
 	NULL
 )
@@ -6557,6 +7016,7 @@ BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -6576,16 +7036,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toInt256('0'),NULL)
+(1,toInt256('0'),NULL)
 
 BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -6601,12 +7063,13 @@ ALTER TABLE
 DELETE WHERE 1
 
 BeforeExecute
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -6622,12 +7085,13 @@ ALTER TABLE
 DELETE WHERE 1
 
 BeforeExecute
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -6639,6 +7103,7 @@ BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -6659,11 +7124,13 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	toInt256('-57896044618658097711785492504343953926634992332820282019728792003956564819968'),
 	toInt256('57896044618658097711785492504343953926634992332820282019728792003956564819967')
 )
@@ -6672,6 +7139,7 @@ BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -6692,16 +7160,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toInt256('-57896044618658097711785492504343953926634992332820282019728792003956564819968'),toInt256('57896044618658097711785492504343953926634992332820282019728792003956564819967'))
+(1,toInt256('-57896044618658097711785492504343953926634992332820282019728792003956564819968'),toInt256('57896044618658097711785492504343953926634992332820282019728792003956564819967'))
 
 BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -6718,12 +7188,13 @@ ALTER TABLE
 DELETE WHERE 1
 
 BeforeExecute
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -6740,12 +7211,13 @@ ALTER TABLE
 DELETE WHERE 1
 
 BeforeExecute
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -6758,6 +7230,7 @@ BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -6778,11 +7251,13 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	toInt256('57896044618658097711785492504343953926634992332820282019728792003956564819967'),
 	toInt256('-57896044618658097711785492504343953926634992332820282019728792003956564819968')
 )
@@ -6791,6 +7266,7 @@ BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -6811,16 +7287,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toInt256('57896044618658097711785492504343953926634992332820282019728792003956564819967'),toInt256('-57896044618658097711785492504343953926634992332820282019728792003956564819968'))
+(1,toInt256('57896044618658097711785492504343953926634992332820282019728792003956564819967'),toInt256('-57896044618658097711785492504343953926634992332820282019728792003956564819968'))
 
 BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -6837,12 +7315,13 @@ ALTER TABLE
 DELETE WHERE 1
 
 BeforeExecute
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -6859,12 +7338,13 @@ ALTER TABLE
 DELETE WHERE 1
 
 BeforeExecute
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -6877,6 +7357,7 @@ BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -6896,11 +7377,13 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	toUInt256('0'),
 	NULL
 )
@@ -6909,6 +7392,7 @@ BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -6928,16 +7412,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toUInt256('0'),NULL)
+(1,toUInt256('0'),NULL)
 
 BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -6953,12 +7439,13 @@ ALTER TABLE
 DELETE WHERE 1
 
 BeforeExecute
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -6974,12 +7461,13 @@ ALTER TABLE
 DELETE WHERE 1
 
 BeforeExecute
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -6991,6 +7479,7 @@ BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -7010,11 +7499,13 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	toUInt256('0'),
 	toUInt256('115792089237316195423570985008687907853269984665640564039457584007913129639935')
 )
@@ -7023,6 +7514,7 @@ BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -7042,16 +7534,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toUInt256('0'),toUInt256('115792089237316195423570985008687907853269984665640564039457584007913129639935'))
+(1,toUInt256('0'),toUInt256('115792089237316195423570985008687907853269984665640564039457584007913129639935'))
 
 BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -7067,12 +7561,13 @@ ALTER TABLE
 DELETE WHERE 1
 
 BeforeExecute
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -7088,12 +7583,13 @@ ALTER TABLE
 DELETE WHERE 1
 
 BeforeExecute
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -7105,6 +7601,7 @@ BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -7125,11 +7622,13 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	toUInt256('115792089237316195423570985008687907853269984665640564039457584007913129639935'),
 	toUInt256('0')
 )
@@ -7138,6 +7637,7 @@ BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -7158,16 +7658,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toUInt256('115792089237316195423570985008687907853269984665640564039457584007913129639935'),toUInt256('0'))
+(1,toUInt256('115792089237316195423570985008687907853269984665640564039457584007913129639935'),toUInt256('0'))
 
 BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -7184,12 +7686,13 @@ ALTER TABLE
 DELETE WHERE 1
 
 BeforeExecute
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -7206,12 +7709,13 @@ ALTER TABLE
 DELETE WHERE 1
 
 BeforeExecute
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM

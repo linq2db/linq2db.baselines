@@ -2,6 +2,7 @@
 -- PostgreSQL.15 PostgreSQL (asynchronously)
 
 SELECT
+	x."Id",
 	x."Country",
 	x."State"
 FROM

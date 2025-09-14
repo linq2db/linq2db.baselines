@@ -3,9 +3,12 @@
 
 CREATE TABLE Table
 (
-	ID Int32
+	ID Int32,
+
+	PRIMARY KEY (ID)
 )
-ENGINE = Memory()
+ENGINE = MergeTree()
+ORDER BY ID
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse (asynchronously)

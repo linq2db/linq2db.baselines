@@ -2,6 +2,7 @@
 -- SqlServer.2005 (asynchronously)
 
 SELECT
+	[i].[Pk],
 	[i].[Id],
 	[i].[StrValue],
 	[i].[StrValueNullable]
@@ -14,6 +15,7 @@ BeforeExecute
 -- SqlServer.2005 (asynchronously)
 
 SELECT
+	[t1].[Pk],
 	[t1].[Id],
 	[t1].[StrValue],
 	[t1].[StrValueNullable]
@@ -24,6 +26,7 @@ BeforeExecute
 -- SqlServer.2005 (asynchronously)
 
 SELECT
+	[i].[Pk],
 	[i].[Id],
 	[i].[StrValue],
 	[i].[StrValueNullable]
@@ -36,6 +39,7 @@ BeforeExecute
 -- SqlServer.2005 (asynchronously)
 
 SELECT
+	[t1].[Pk],
 	[t1].[Id],
 	[t1].[StrValue],
 	[t1].[StrValueNullable]
@@ -46,6 +50,7 @@ BeforeExecute
 -- SqlServer.2005 (asynchronously)
 
 SELECT
+	[i].[Pk],
 	[i].[Id],
 	[i].[StrValue],
 	[i].[StrValueNullable]
@@ -58,6 +63,7 @@ BeforeExecute
 -- SqlServer.2005 (asynchronously)
 
 SELECT
+	[t1].[Pk],
 	[t1].[Id],
 	[t1].[StrValue],
 	[t1].[StrValueNullable]
@@ -68,6 +74,7 @@ BeforeExecute
 -- SqlServer.2005 (asynchronously)
 
 SELECT
+	[i].[Pk],
 	[i].[Id],
 	[i].[StrValue],
 	[i].[StrValueNullable]
@@ -80,6 +87,7 @@ BeforeExecute
 -- SqlServer.2005 (asynchronously)
 
 SELECT
+	[t1].[Pk],
 	[t1].[Id],
 	[t1].[StrValue],
 	[t1].[StrValueNullable]
@@ -90,6 +98,7 @@ BeforeExecute
 -- SqlServer.2005 (asynchronously)
 
 SELECT
+	[i].[Pk],
 	[i].[Id],
 	[i].[StrValue],
 	[i].[StrValueNullable]
@@ -102,6 +111,7 @@ BeforeExecute
 -- SqlServer.2005 (asynchronously)
 
 SELECT
+	[t1].[Pk],
 	[t1].[Id],
 	[t1].[StrValue],
 	[t1].[StrValueNullable]
@@ -112,6 +122,7 @@ BeforeExecute
 -- SqlServer.2005 (asynchronously)
 
 SELECT
+	[i].[Pk],
 	[i].[Id],
 	[i].[StrValue],
 	[i].[StrValueNullable]
@@ -124,6 +135,7 @@ BeforeExecute
 -- SqlServer.2005 (asynchronously)
 
 SELECT
+	[t1].[Pk],
 	[t1].[Id],
 	[t1].[StrValue],
 	[t1].[StrValueNullable]
@@ -134,6 +146,7 @@ BeforeExecute
 -- SqlServer.2005 (asynchronously)
 
 SELECT
+	[i].[Pk],
 	[i].[Id],
 	[i].[StrValue],
 	[i].[StrValueNullable]
@@ -146,6 +159,7 @@ BeforeExecute
 -- SqlServer.2005 (asynchronously)
 
 SELECT
+	[t1].[Pk],
 	[t1].[Id],
 	[t1].[StrValue],
 	[t1].[StrValueNullable]
@@ -156,6 +170,7 @@ BeforeExecute
 -- SqlServer.2005 (asynchronously)
 
 SELECT
+	[i].[Pk],
 	[i].[Id],
 	[i].[StrValue],
 	[i].[StrValueNullable]
@@ -168,6 +183,7 @@ BeforeExecute
 -- SqlServer.2005 (asynchronously)
 
 SELECT
+	[t1].[Pk],
 	[t1].[Id],
 	[t1].[StrValue],
 	[t1].[StrValueNullable]
@@ -178,6 +194,7 @@ BeforeExecute
 -- SqlServer.2005 (asynchronously)
 
 SELECT
+	[i].[Pk],
 	[i].[Id],
 	[i].[StrValue],
 	[i].[StrValueNullable]
@@ -190,6 +207,7 @@ BeforeExecute
 -- SqlServer.2005 (asynchronously)
 
 SELECT
+	[t1].[Pk],
 	[t1].[Id],
 	[t1].[StrValue],
 	[t1].[StrValueNullable]
@@ -200,6 +218,7 @@ BeforeExecute
 -- SqlServer.2005 (asynchronously)
 
 SELECT
+	[i].[Pk],
 	[i].[Id],
 	[i].[StrValue],
 	[i].[StrValueNullable]
@@ -212,6 +231,7 @@ BeforeExecute
 -- SqlServer.2005 (asynchronously)
 
 SELECT
+	[t1].[Pk],
 	[t1].[Id],
 	[t1].[StrValue],
 	[t1].[StrValueNullable]
@@ -222,6 +242,7 @@ BeforeExecute
 -- SqlServer.2005 (asynchronously)
 
 SELECT
+	[i].[Pk],
 	[i].[Id],
 	[i].[StrValue],
 	[i].[StrValueNullable]
@@ -234,6 +255,7 @@ BeforeExecute
 -- SqlServer.2005 (asynchronously)
 
 SELECT
+	[t1].[Pk],
 	[t1].[Id],
 	[t1].[StrValue],
 	[t1].[StrValueNullable]
@@ -244,6 +266,7 @@ BeforeExecute
 -- SqlServer.2005 (asynchronously)
 
 SELECT
+	[i].[Pk],
 	[i].[Id],
 	[i].[StrValue],
 	[i].[StrValueNullable]
@@ -256,6 +279,7 @@ BeforeExecute
 -- SqlServer.2005 (asynchronously)
 
 SELECT
+	[t1].[Pk],
 	[t1].[Id],
 	[t1].[StrValue],
 	[t1].[StrValueNullable]
@@ -266,6 +290,7 @@ BeforeExecute
 -- SqlServer.2005 (asynchronously)
 
 SELECT
+	[i].[Pk],
 	[i].[Id],
 	[i].[StrValue],
 	[i].[StrValueNullable]
@@ -278,6 +303,7 @@ BeforeExecute
 -- SqlServer.2005 (asynchronously)
 
 SELECT
+	[t1].[Pk],
 	[t1].[Id],
 	[t1].[StrValue],
 	[t1].[StrValueNullable]
@@ -288,6 +314,7 @@ BeforeExecute
 -- SqlServer.2005 (asynchronously)
 
 SELECT
+	[i].[Pk],
 	[i].[Id],
 	[i].[StrValue],
 	[i].[StrValueNullable]
@@ -300,6 +327,7 @@ BeforeExecute
 -- SqlServer.2005 (asynchronously)
 
 SELECT
+	[t1].[Pk],
 	[t1].[Id],
 	[t1].[StrValue],
 	[t1].[StrValueNullable]
@@ -310,6 +338,7 @@ BeforeExecute
 -- SqlServer.2005 (asynchronously)
 
 SELECT
+	[i].[Pk],
 	[i].[Id],
 	[i].[StrValue],
 	[i].[StrValueNullable]
@@ -322,6 +351,7 @@ BeforeExecute
 -- SqlServer.2005 (asynchronously)
 
 SELECT
+	[t1].[Pk],
 	[t1].[Id],
 	[t1].[StrValue],
 	[t1].[StrValueNullable]
@@ -332,6 +362,7 @@ BeforeExecute
 -- SqlServer.2005 (asynchronously)
 
 SELECT
+	[i].[Pk],
 	[i].[Id],
 	[i].[StrValue],
 	[i].[StrValueNullable]
@@ -344,6 +375,7 @@ BeforeExecute
 -- SqlServer.2005 (asynchronously)
 
 SELECT
+	[t1].[Pk],
 	[t1].[Id],
 	[t1].[StrValue],
 	[t1].[StrValueNullable]
@@ -354,6 +386,7 @@ BeforeExecute
 -- SqlServer.2005 (asynchronously)
 
 SELECT
+	[i].[Pk],
 	[i].[Id],
 	[i].[StrValue],
 	[i].[StrValueNullable]
@@ -366,6 +399,7 @@ BeforeExecute
 -- SqlServer.2005 (asynchronously)
 
 SELECT
+	[t1].[Pk],
 	[t1].[Id],
 	[t1].[StrValue],
 	[t1].[StrValueNullable]
@@ -376,6 +410,7 @@ BeforeExecute
 -- SqlServer.2005 (asynchronously)
 
 SELECT
+	[i].[Pk],
 	[i].[Id],
 	[i].[StrValue],
 	[i].[StrValueNullable]
@@ -388,6 +423,7 @@ BeforeExecute
 -- SqlServer.2005 (asynchronously)
 
 SELECT
+	[t1].[Pk],
 	[t1].[Id],
 	[t1].[StrValue],
 	[t1].[StrValueNullable]
@@ -398,6 +434,7 @@ BeforeExecute
 -- SqlServer.2005 (asynchronously)
 
 SELECT
+	[i].[Pk],
 	[i].[Id],
 	[i].[StrValue],
 	[i].[StrValueNullable]
@@ -410,6 +447,7 @@ BeforeExecute
 -- SqlServer.2005 (asynchronously)
 
 SELECT
+	[t1].[Pk],
 	[t1].[Id],
 	[t1].[StrValue],
 	[t1].[StrValueNullable]
@@ -420,6 +458,7 @@ BeforeExecute
 -- SqlServer.2005 (asynchronously)
 
 SELECT
+	[i].[Pk],
 	[i].[Id],
 	[i].[StrValue],
 	[i].[StrValueNullable]
@@ -432,6 +471,7 @@ BeforeExecute
 -- SqlServer.2005 (asynchronously)
 
 SELECT
+	[t1].[Pk],
 	[t1].[Id],
 	[t1].[StrValue],
 	[t1].[StrValueNullable]
@@ -442,6 +482,7 @@ BeforeExecute
 -- SqlServer.2005 (asynchronously)
 
 SELECT
+	[i].[Pk],
 	[i].[Id],
 	[i].[StrValue],
 	[i].[StrValueNullable]
@@ -454,6 +495,7 @@ BeforeExecute
 -- SqlServer.2005 (asynchronously)
 
 SELECT
+	[t1].[Pk],
 	[t1].[Id],
 	[t1].[StrValue],
 	[t1].[StrValueNullable]
@@ -464,6 +506,7 @@ BeforeExecute
 -- SqlServer.2005 (asynchronously)
 
 SELECT
+	[i].[Pk],
 	[i].[Id],
 	[i].[StrValue],
 	[i].[StrValueNullable]
@@ -476,6 +519,7 @@ BeforeExecute
 -- SqlServer.2005 (asynchronously)
 
 SELECT
+	[t1].[Pk],
 	[t1].[Id],
 	[t1].[StrValue],
 	[t1].[StrValueNullable]
@@ -486,6 +530,7 @@ BeforeExecute
 -- SqlServer.2005 (asynchronously)
 
 SELECT
+	[i].[Pk],
 	[i].[Id],
 	[i].[StrValue],
 	[i].[StrValueNullable]
@@ -498,6 +543,7 @@ BeforeExecute
 -- SqlServer.2005 (asynchronously)
 
 SELECT
+	[t1].[Pk],
 	[t1].[Id],
 	[t1].[StrValue],
 	[t1].[StrValueNullable]
@@ -508,6 +554,7 @@ BeforeExecute
 -- SqlServer.2005 (asynchronously)
 
 SELECT
+	[i].[Pk],
 	[i].[Id],
 	[i].[StrValue],
 	[i].[StrValueNullable]
@@ -520,6 +567,7 @@ BeforeExecute
 -- SqlServer.2005 (asynchronously)
 
 SELECT
+	[t1].[Pk],
 	[t1].[Id],
 	[t1].[StrValue],
 	[t1].[StrValueNullable]

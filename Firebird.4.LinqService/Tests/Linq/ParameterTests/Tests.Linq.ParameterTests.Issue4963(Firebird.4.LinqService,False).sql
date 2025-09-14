@@ -12,6 +12,7 @@ BeforeExecute
 -- Firebird.4 Firebird4 (asynchronously)
 
 SELECT
+	"t1"."Id",
 	"t1"."Field"
 FROM
 	"Issue4963Table" "t1"

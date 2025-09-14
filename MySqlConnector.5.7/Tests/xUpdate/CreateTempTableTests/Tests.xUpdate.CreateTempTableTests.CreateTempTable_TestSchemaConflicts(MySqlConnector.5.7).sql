@@ -18,7 +18,9 @@ BeforeExecute
 CREATE TABLE IF NOT EXISTS `TempTable`
 (
 	`Id`      INT           NOT NULL,
-	`Renamed` VARCHAR(4000)     NULL
+	`Renamed` VARCHAR(4000)     NULL,
+
+	CONSTRAINT `PK_TempTable` PRIMARY KEY CLUSTERED (`Id`)
 )
 
 BeforeExecute

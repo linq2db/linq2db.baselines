@@ -5,7 +5,9 @@ CREATE TABLE IF NOT EXISTS FluentTemp
 (
 	ID       Int          NOT NULL,
 	"Value"  NVarChar(20)     NULL,
-	LastName NVarChar(20)     NULL
+	LastName NVarChar(20)     NULL,
+
+	PRIMARY KEY (ID)
 )
 
 BeforeExecute
@@ -54,7 +56,9 @@ CREATE TABLE IF NOT EXISTS FluentTemp
 (
 	ID       Int          NOT NULL,
 	"Value"  NVarChar(20)     NULL,
-	LastName NVarChar(20)     NULL
+	LastName NVarChar(20)     NULL,
+
+	PRIMARY KEY (ID)
 )
 
 BeforeExecute
@@ -103,7 +107,9 @@ CREATE TABLE IF NOT EXISTS FluentTemp
 (
 	ID       Int          NOT NULL,
 	"Column" NVarChar(20)     NULL,
-	LastName NVarChar(20)     NULL
+	LastName NVarChar(20)     NULL,
+
+	PRIMARY KEY (ID)
 )
 
 BeforeExecute
@@ -152,7 +158,9 @@ CREATE TABLE IF NOT EXISTS FluentTemp
 (
 	ID       Int          NOT NULL,
 	"Column" NVarChar(20)     NULL,
-	LastName NVarChar(20)     NULL
+	LastName NVarChar(20)     NULL,
+
+	PRIMARY KEY (ID)
 )
 
 BeforeExecute

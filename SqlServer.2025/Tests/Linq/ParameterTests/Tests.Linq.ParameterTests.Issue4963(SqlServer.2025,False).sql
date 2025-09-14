@@ -12,6 +12,7 @@ BeforeExecute
 -- SqlServer.2025 SqlServer.2022
 
 SELECT TOP (2)
+	[t1].[Id],
 	[t1].[Field]
 FROM
 	[Issue4963Table] [t1]

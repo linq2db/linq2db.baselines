@@ -2,6 +2,7 @@
 -- Access.Ace.OleDb AccessOleDb (asynchronously)
 
 SELECT
+	[user_1].[Id],
 	[user_1].[FirstName],
 	[user_1].[Status]
 FROM

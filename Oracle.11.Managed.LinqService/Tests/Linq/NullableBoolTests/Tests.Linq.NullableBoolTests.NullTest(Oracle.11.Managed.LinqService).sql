@@ -2,6 +2,7 @@
 -- Oracle.11.Managed Oracle11 (asynchronously)
 
 SELECT
+	t."Id",
 	t."Value"
 FROM
 	"NullableBoolClass" t
@@ -12,6 +13,7 @@ BeforeExecute
 -- Oracle.11.Managed Oracle11 (asynchronously)
 
 SELECT
+	t."Id",
 	t."Value"
 FROM
 	"NullableBoolClass" t

@@ -4,14 +4,14 @@ DECLARE @take Int32
 SET     @take = 3
 
 SELECT
-	t2."Value_1"
+	t1."Value_1"
 FROM
 	(
 		SELECT DISTINCT
-			t1."Value" as "Value_1"
+			r."Value" as "Value_1"
 		FROM
-			"TakeSkipClass" t1
-	) t2
+			"TakeSkipClass" r
+	) t1
 WHERE
 	ROWNUM <= :take
 

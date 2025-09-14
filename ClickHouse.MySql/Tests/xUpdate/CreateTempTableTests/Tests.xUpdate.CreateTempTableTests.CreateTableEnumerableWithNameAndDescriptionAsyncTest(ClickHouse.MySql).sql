@@ -8,9 +8,12 @@ BeforeExecute
 
 CREATE TEMPORARY TABLE IF NOT EXISTS TempTable
 (
-	Name String
+	Name String,
+
+	PRIMARY KEY (Name)
 )
-ENGINE = Memory()
+ENGINE = MergeTree()
+ORDER BY Name
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse (asynchronously)

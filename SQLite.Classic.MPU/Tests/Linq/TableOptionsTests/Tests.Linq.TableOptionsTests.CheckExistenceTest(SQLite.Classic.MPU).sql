@@ -3,7 +3,9 @@
 
 CREATE TABLE IF NOT EXISTS [DisposableTable]
 (
-	[ID] INTEGER NOT NULL
+	[ID] INTEGER NOT NULL,
+
+	CONSTRAINT [PK_DisposableTable] PRIMARY KEY ([ID])
 )
 
 BeforeExecute

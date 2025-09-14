@@ -2,7 +2,9 @@
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL (asynchronously)
 
 SELECT
-	t."ID"
+	t."PK",
+	t."ID",
+	t."GV"
 FROM
 	test_in_1 t
 WHERE
@@ -26,7 +28,9 @@ BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL (asynchronously)
 
 SELECT
-	t1."ID"
+	t1."PK",
+	t1."ID",
+	t1."GV"
 FROM
 	test_in_1 t1
 
@@ -34,6 +38,7 @@ BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL (asynchronously)
 
 SELECT
+	t1."PK",
 	t1."ID",
 	t1."GV"
 FROM

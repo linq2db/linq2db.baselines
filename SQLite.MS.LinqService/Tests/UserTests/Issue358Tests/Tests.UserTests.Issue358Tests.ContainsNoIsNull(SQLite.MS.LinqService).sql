@@ -2,6 +2,7 @@
 -- SQLite.MS SQLite (asynchronously)
 
 SELECT
+	[p].[Id],
 	[p].[MyEnum],
 	[p].[MyEnum2]
 FROM

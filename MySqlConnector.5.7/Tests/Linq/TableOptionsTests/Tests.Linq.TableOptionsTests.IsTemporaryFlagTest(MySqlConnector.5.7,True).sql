@@ -4,7 +4,9 @@
 CREATE TEMPORARY TABLE `IsTemporaryTable`
 (
 	`Id`    INT NOT NULL,
-	`Value` INT NOT NULL
+	`Value` INT NOT NULL,
+
+	CONSTRAINT `PK_IsTemporaryTable` PRIMARY KEY CLUSTERED (`Id`)
 )
 
 BeforeExecute

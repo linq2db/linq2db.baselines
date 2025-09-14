@@ -4,7 +4,9 @@
 CREATE TEMPORARY TABLE tmptbl1
 (
 	"ID"    Int  NOT NULL,
-	"Value" text     NULL
+	"Value" text     NULL,
+
+	CONSTRAINT "PK_tmptbl1" PRIMARY KEY ("ID")
 )
 ON COMMIT PRESERVE ROWS
 
@@ -26,7 +28,9 @@ BeforeExecute
 CREATE TEMPORARY TABLE tmptbl2
 (
 	"ID"    Int  NOT NULL,
-	"Value" text NOT NULL
+	"Value" text NOT NULL,
+
+	CONSTRAINT "PK_tmptbl2" PRIMARY KEY ("ID")
 )
 ON COMMIT PRESERVE ROWS
 
@@ -48,7 +52,9 @@ BeforeExecute
 CREATE TEMPORARY TABLE tmptbl3
 (
 	"ID"    Int  NOT NULL,
-	"Value" text     NULL
+	"Value" text     NULL,
+
+	CONSTRAINT "PK_tmptbl3" PRIMARY KEY ("ID")
 )
 ON COMMIT PRESERVE ROWS
 

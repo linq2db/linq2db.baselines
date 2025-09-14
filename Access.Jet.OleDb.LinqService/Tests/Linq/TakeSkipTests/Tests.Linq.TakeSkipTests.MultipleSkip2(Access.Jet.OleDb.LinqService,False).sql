@@ -2,6 +2,7 @@
 -- Access.Jet.OleDb AccessOleDb (asynchronously)
 
 SELECT
+	[t1].[Id],
 	[t1].[Value]
 FROM
 	[TakeSkipClass] [t1]
@@ -12,6 +13,7 @@ BeforeExecute
 -- Access.Jet.OleDb AccessOleDb (asynchronously)
 
 SELECT
+	[t1].[Id],
 	[t1].[Value]
 FROM
 	[TakeSkipClass] [t1]

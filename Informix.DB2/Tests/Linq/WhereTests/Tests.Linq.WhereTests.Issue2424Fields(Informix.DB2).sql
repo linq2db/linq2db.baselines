@@ -18,6 +18,7 @@ BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT
+	t1.Pk,
 	t1.Id,
 	t1.StrValue,
 	t1.StrValueNullable
@@ -44,6 +45,7 @@ BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT
+	t1.Pk,
 	t1.Id,
 	t1.StrValue,
 	t1.StrValueNullable
@@ -70,6 +72,7 @@ BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT
+	t1.Pk,
 	t1.Id,
 	t1.StrValue,
 	t1.StrValueNullable
@@ -96,6 +99,7 @@ BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT
+	t1.Pk,
 	t1.Id,
 	t1.StrValue,
 	t1.StrValueNullable
@@ -122,6 +126,7 @@ BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT
+	t1.Pk,
 	t1.Id,
 	t1.StrValue,
 	t1.StrValueNullable
@@ -148,6 +153,7 @@ BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT
+	t1.Pk,
 	t1.Id,
 	t1.StrValue,
 	t1.StrValueNullable
@@ -174,6 +180,7 @@ BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT
+	t1.Pk,
 	t1.Id,
 	t1.StrValue,
 	t1.StrValueNullable
@@ -200,6 +207,7 @@ BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT
+	t1.Pk,
 	t1.Id,
 	t1.StrValue,
 	t1.StrValueNullable
@@ -226,6 +234,7 @@ BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT
+	t1.Pk,
 	t1.Id,
 	t1.StrValue,
 	t1.StrValueNullable
@@ -252,6 +261,7 @@ BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT
+	t1.Pk,
 	t1.Id,
 	t1.StrValue,
 	t1.StrValueNullable
@@ -278,6 +288,7 @@ BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT
+	t1.Pk,
 	t1.Id,
 	t1.StrValue,
 	t1.StrValueNullable
@@ -304,6 +315,7 @@ BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT
+	t1.Pk,
 	t1.Id,
 	t1.StrValue,
 	t1.StrValueNullable
@@ -330,6 +342,7 @@ BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT
+	t1.Pk,
 	t1.Id,
 	t1.StrValue,
 	t1.StrValueNullable
@@ -356,6 +369,7 @@ BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT
+	t1.Pk,
 	t1.Id,
 	t1.StrValue,
 	t1.StrValueNullable
@@ -382,6 +396,7 @@ BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT
+	t1.Pk,
 	t1.Id,
 	t1.StrValue,
 	t1.StrValueNullable
@@ -408,6 +423,7 @@ BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT
+	t1.Pk,
 	t1.Id,
 	t1.StrValue,
 	t1.StrValueNullable
@@ -434,6 +450,7 @@ BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT
+	t1.Pk,
 	t1.Id,
 	t1.StrValue,
 	t1.StrValueNullable
@@ -461,6 +478,7 @@ BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT
+	t1.Pk,
 	t1.Id,
 	t1.StrValue,
 	t1.StrValueNullable

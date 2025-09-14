@@ -3,25 +3,13 @@
 
 INSERT INTO Issue1096Task
 (
+	Pk,
 	Id,
 	TargetName
 )
 VALUES
 (
 	1,
-	'bda.Requests'
-)
-
-BeforeExecute
--- ClickHouse.Octonica ClickHouse
-
-INSERT INTO Issue1096Task
-(
-	Id,
-	TargetName
-)
-VALUES
-(
 	1,
 	'bda.Requests'
 )
@@ -46,6 +34,7 @@ BeforeExecute
 -- ClickHouse.Octonica ClickHouse
 
 SELECT DISTINCT
+	t.Pk,
 	t.Id,
 	t.TargetName,
 	a_ActualStage.Id,

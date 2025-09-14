@@ -23,6 +23,7 @@ BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 
 SELECT
+	`t1`.`Id`,
 	`t1`.`SRC_BIC`,
 	`t1`.`DES_BIC`,
 	`t1`.`IDF`,

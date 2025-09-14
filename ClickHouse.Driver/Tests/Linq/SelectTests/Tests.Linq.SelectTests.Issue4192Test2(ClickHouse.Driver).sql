@@ -2,6 +2,7 @@
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	i.Id,
 	i.Name,
 	i.ParentId
 FROM

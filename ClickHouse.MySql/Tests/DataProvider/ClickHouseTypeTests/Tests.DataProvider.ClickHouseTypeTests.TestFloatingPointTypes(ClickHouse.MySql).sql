@@ -2,6 +2,7 @@
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -21,11 +22,13 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	toFloat32(0),
 	NULL
 )
@@ -34,6 +37,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -53,16 +57,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toFloat32(0),NULL)
+(1,toFloat32(0),NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -82,16 +88,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toFloat32(0),NULL)
+(1,toFloat32(0),NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -111,16 +119,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toFloat32(0),NULL)
+(1,toFloat32(0),NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -132,6 +142,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -151,11 +162,13 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	toFloat32(-3.40282347E+38),
 	toFloat32(3.40282347E+38)
 )
@@ -164,6 +177,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -183,16 +197,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toFloat32(-3.40282347E+38),toFloat32(3.40282347E+38))
+(1,toFloat32(-3.40282347E+38),toFloat32(3.40282347E+38))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -212,16 +228,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toFloat32(-3.40282347E+38),toFloat32(3.40282347E+38))
+(1,toFloat32(-3.40282347E+38),toFloat32(3.40282347E+38))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -241,16 +259,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toFloat32(-3.40282347E+38),toFloat32(3.40282347E+38))
+(1,toFloat32(-3.40282347E+38),toFloat32(3.40282347E+38))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -262,6 +282,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -281,11 +302,13 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	toFloat32(3.40282347E+38),
 	toFloat32(-3.40282347E+38)
 )
@@ -294,6 +317,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -313,16 +337,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toFloat32(3.40282347E+38),toFloat32(-3.40282347E+38))
+(1,toFloat32(3.40282347E+38),toFloat32(-3.40282347E+38))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -342,16 +368,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toFloat32(3.40282347E+38),toFloat32(-3.40282347E+38))
+(1,toFloat32(3.40282347E+38),toFloat32(-3.40282347E+38))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -371,16 +399,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toFloat32(3.40282347E+38),toFloat32(-3.40282347E+38))
+(1,toFloat32(3.40282347E+38),toFloat32(-3.40282347E+38))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -392,6 +422,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -411,11 +442,13 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	toFloat32(1.40129846E-45),
 	toFloat32(NaN)
 )
@@ -424,6 +457,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -443,16 +477,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toFloat32(1.40129846E-45),toFloat32(NaN))
+(1,toFloat32(1.40129846E-45),toFloat32(NaN))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -472,16 +508,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toFloat32(1.40129846E-45),toFloat32(NaN))
+(1,toFloat32(1.40129846E-45),toFloat32(NaN))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -501,16 +539,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toFloat32(1.40129846E-45),toFloat32(NaN))
+(1,toFloat32(1.40129846E-45),toFloat32(NaN))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -522,6 +562,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -541,11 +582,13 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	toFloat32(NaN),
 	toFloat32(1.40129846E-45)
 )
@@ -554,6 +597,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -573,16 +617,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toFloat32(NaN),toFloat32(1.40129846E-45))
+(1,toFloat32(NaN),toFloat32(1.40129846E-45))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -602,16 +648,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toFloat32(NaN),toFloat32(1.40129846E-45))
+(1,toFloat32(NaN),toFloat32(1.40129846E-45))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -631,16 +679,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toFloat32(NaN),toFloat32(1.40129846E-45))
+(1,toFloat32(NaN),toFloat32(1.40129846E-45))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -652,6 +702,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -671,11 +722,13 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	toFloat32(Infinity),
 	toFloat32(-Infinity)
 )
@@ -684,6 +737,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -703,16 +757,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toFloat32(Infinity),toFloat32(-Infinity))
+(1,toFloat32(Infinity),toFloat32(-Infinity))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -732,16 +788,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toFloat32(Infinity),toFloat32(-Infinity))
+(1,toFloat32(Infinity),toFloat32(-Infinity))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -761,16 +819,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toFloat32(Infinity),toFloat32(-Infinity))
+(1,toFloat32(Infinity),toFloat32(-Infinity))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -782,6 +842,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -801,11 +862,13 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	toFloat32(-Infinity),
 	toFloat32(Infinity)
 )
@@ -814,6 +877,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -833,16 +897,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toFloat32(-Infinity),toFloat32(Infinity))
+(1,toFloat32(-Infinity),toFloat32(Infinity))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -862,16 +928,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toFloat32(-Infinity),toFloat32(Infinity))
+(1,toFloat32(-Infinity),toFloat32(Infinity))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -891,16 +959,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toFloat32(-Infinity),toFloat32(Infinity))
+(1,toFloat32(-Infinity),toFloat32(Infinity))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -912,6 +982,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -931,11 +1002,13 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	toFloat32(0),
 	NULL
 )
@@ -944,6 +1017,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -963,16 +1037,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toFloat32(0),NULL)
+(1,toFloat32(0),NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -992,16 +1068,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toFloat32(0),NULL)
+(1,toFloat32(0),NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -1021,16 +1099,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toFloat32(0),NULL)
+(1,toFloat32(0),NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -1042,6 +1122,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -1061,11 +1142,13 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	toFloat32(-3.40282347E+38),
 	toFloat32(3.40282347E+38)
 )
@@ -1074,6 +1157,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -1093,16 +1177,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toFloat32(-3.40282347E+38),toFloat32(3.40282347E+38))
+(1,toFloat32(-3.40282347E+38),toFloat32(3.40282347E+38))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -1122,16 +1208,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toFloat32(-3.40282347E+38),toFloat32(3.40282347E+38))
+(1,toFloat32(-3.40282347E+38),toFloat32(3.40282347E+38))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -1151,16 +1239,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toFloat32(-3.40282347E+38),toFloat32(3.40282347E+38))
+(1,toFloat32(-3.40282347E+38),toFloat32(3.40282347E+38))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -1172,6 +1262,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -1191,11 +1282,13 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	toFloat32(3.40282347E+38),
 	toFloat32(-3.40282347E+38)
 )
@@ -1204,6 +1297,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -1223,16 +1317,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toFloat32(3.40282347E+38),toFloat32(-3.40282347E+38))
+(1,toFloat32(3.40282347E+38),toFloat32(-3.40282347E+38))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -1252,16 +1348,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toFloat32(3.40282347E+38),toFloat32(-3.40282347E+38))
+(1,toFloat32(3.40282347E+38),toFloat32(-3.40282347E+38))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -1281,16 +1379,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toFloat32(3.40282347E+38),toFloat32(-3.40282347E+38))
+(1,toFloat32(3.40282347E+38),toFloat32(-3.40282347E+38))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -1302,6 +1402,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -1321,11 +1422,13 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	toFloat32(1.40129846E-45),
 	toFloat32(NaN)
 )
@@ -1334,6 +1437,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -1353,16 +1457,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toFloat32(1.40129846E-45),toFloat32(NaN))
+(1,toFloat32(1.40129846E-45),toFloat32(NaN))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -1382,16 +1488,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toFloat32(1.40129846E-45),toFloat32(NaN))
+(1,toFloat32(1.40129846E-45),toFloat32(NaN))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -1411,16 +1519,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toFloat32(1.40129846E-45),toFloat32(NaN))
+(1,toFloat32(1.40129846E-45),toFloat32(NaN))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -1432,6 +1542,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -1451,11 +1562,13 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	toFloat32(NaN),
 	toFloat32(1.40129846E-45)
 )
@@ -1464,6 +1577,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -1483,16 +1597,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toFloat32(NaN),toFloat32(1.40129846E-45))
+(1,toFloat32(NaN),toFloat32(1.40129846E-45))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -1512,16 +1628,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toFloat32(NaN),toFloat32(1.40129846E-45))
+(1,toFloat32(NaN),toFloat32(1.40129846E-45))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -1541,16 +1659,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toFloat32(NaN),toFloat32(1.40129846E-45))
+(1,toFloat32(NaN),toFloat32(1.40129846E-45))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -1562,6 +1682,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -1581,11 +1702,13 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	toFloat32(Infinity),
 	toFloat32(-Infinity)
 )
@@ -1594,6 +1717,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -1613,16 +1737,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toFloat32(Infinity),toFloat32(-Infinity))
+(1,toFloat32(Infinity),toFloat32(-Infinity))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -1642,16 +1768,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toFloat32(Infinity),toFloat32(-Infinity))
+(1,toFloat32(Infinity),toFloat32(-Infinity))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -1671,16 +1799,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toFloat32(Infinity),toFloat32(-Infinity))
+(1,toFloat32(Infinity),toFloat32(-Infinity))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -1692,6 +1822,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -1711,11 +1842,13 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	toFloat32(-Infinity),
 	toFloat32(Infinity)
 )
@@ -1724,6 +1857,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -1743,16 +1877,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toFloat32(-Infinity),toFloat32(Infinity))
+(1,toFloat32(-Infinity),toFloat32(Infinity))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -1772,16 +1908,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toFloat32(-Infinity),toFloat32(Infinity))
+(1,toFloat32(-Infinity),toFloat32(Infinity))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -1801,16 +1939,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toFloat32(-Infinity),toFloat32(Infinity))
+(1,toFloat32(-Infinity),toFloat32(Infinity))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -1822,6 +1962,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -1841,11 +1982,13 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	toFloat64(0),
 	NULL
 )
@@ -1854,6 +1997,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -1873,16 +2017,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toFloat64(0),NULL)
+(1,toFloat64(0),NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -1902,16 +2048,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toFloat64(0),NULL)
+(1,toFloat64(0),NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -1931,16 +2079,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toFloat64(0),NULL)
+(1,toFloat64(0),NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -1952,6 +2102,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -1972,11 +2123,13 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	toFloat64(-1.7976931348623157E+308),
 	toFloat64(1.7976931348623157E+308)
 )
@@ -1985,6 +2138,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -2005,16 +2159,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toFloat64(-1.7976931348623157E+308),toFloat64(1.7976931348623157E+308))
+(1,toFloat64(-1.7976931348623157E+308),toFloat64(1.7976931348623157E+308))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -2035,16 +2191,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toFloat64(-1.7976931348623157E+308),toFloat64(1.7976931348623157E+308))
+(1,toFloat64(-1.7976931348623157E+308),toFloat64(1.7976931348623157E+308))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -2065,16 +2223,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toFloat64(-1.7976931348623157E+308),toFloat64(1.7976931348623157E+308))
+(1,toFloat64(-1.7976931348623157E+308),toFloat64(1.7976931348623157E+308))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -2087,6 +2247,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -2106,11 +2267,13 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	toFloat64(1.7976931348623157E+308),
 	toFloat64(-1.7976931348623157E+308)
 )
@@ -2119,6 +2282,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -2138,16 +2302,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toFloat64(1.7976931348623157E+308),toFloat64(-1.7976931348623157E+308))
+(1,toFloat64(1.7976931348623157E+308),toFloat64(-1.7976931348623157E+308))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -2167,16 +2333,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toFloat64(1.7976931348623157E+308),toFloat64(-1.7976931348623157E+308))
+(1,toFloat64(1.7976931348623157E+308),toFloat64(-1.7976931348623157E+308))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -2196,16 +2364,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toFloat64(1.7976931348623157E+308),toFloat64(-1.7976931348623157E+308))
+(1,toFloat64(1.7976931348623157E+308),toFloat64(-1.7976931348623157E+308))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -2217,6 +2387,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -2236,11 +2407,13 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	toFloat64(1.23),
 	toFloat64(NaN)
 )
@@ -2249,6 +2422,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -2268,16 +2442,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toFloat64(1.23),toFloat64(NaN))
+(1,toFloat64(1.23),toFloat64(NaN))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -2297,16 +2473,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toFloat64(1.23),toFloat64(NaN))
+(1,toFloat64(1.23),toFloat64(NaN))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -2326,16 +2504,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toFloat64(1.23),toFloat64(NaN))
+(1,toFloat64(1.23),toFloat64(NaN))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -2347,6 +2527,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -2366,11 +2547,13 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	toFloat64(NaN),
 	toFloat64(-1.23)
 )
@@ -2379,6 +2562,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -2398,16 +2582,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toFloat64(NaN),toFloat64(-1.23))
+(1,toFloat64(NaN),toFloat64(-1.23))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -2427,16 +2613,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toFloat64(NaN),toFloat64(-1.23))
+(1,toFloat64(NaN),toFloat64(-1.23))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -2456,16 +2644,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toFloat64(NaN),toFloat64(-1.23))
+(1,toFloat64(NaN),toFloat64(-1.23))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -2477,6 +2667,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -2496,11 +2687,13 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	toFloat64(Infinity),
 	toFloat64(-Infinity)
 )
@@ -2509,6 +2702,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -2528,16 +2722,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toFloat64(Infinity),toFloat64(-Infinity))
+(1,toFloat64(Infinity),toFloat64(-Infinity))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -2557,16 +2753,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toFloat64(Infinity),toFloat64(-Infinity))
+(1,toFloat64(Infinity),toFloat64(-Infinity))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -2586,16 +2784,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toFloat64(Infinity),toFloat64(-Infinity))
+(1,toFloat64(Infinity),toFloat64(-Infinity))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -2607,6 +2807,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -2626,11 +2827,13 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	toFloat64(-Infinity),
 	toFloat64(Infinity)
 )
@@ -2639,6 +2842,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -2658,16 +2862,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toFloat64(-Infinity),toFloat64(Infinity))
+(1,toFloat64(-Infinity),toFloat64(Infinity))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -2687,16 +2893,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toFloat64(-Infinity),toFloat64(Infinity))
+(1,toFloat64(-Infinity),toFloat64(Infinity))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -2716,16 +2924,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toFloat64(-Infinity),toFloat64(Infinity))
+(1,toFloat64(-Infinity),toFloat64(Infinity))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -2737,6 +2947,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -2756,11 +2967,13 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	toFloat64(0),
 	NULL
 )
@@ -2769,6 +2982,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -2788,16 +3002,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toFloat64(0),NULL)
+(1,toFloat64(0),NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -2817,16 +3033,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toFloat64(0),NULL)
+(1,toFloat64(0),NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -2846,16 +3064,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toFloat64(0),NULL)
+(1,toFloat64(0),NULL)
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -2867,6 +3087,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -2887,11 +3108,13 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	toFloat64(-1.7976931348623157E+308),
 	toFloat64(1.7976931348623157E+308)
 )
@@ -2900,6 +3123,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -2920,16 +3144,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toFloat64(-1.7976931348623157E+308),toFloat64(1.7976931348623157E+308))
+(1,toFloat64(-1.7976931348623157E+308),toFloat64(1.7976931348623157E+308))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -2950,16 +3176,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toFloat64(-1.7976931348623157E+308),toFloat64(1.7976931348623157E+308))
+(1,toFloat64(-1.7976931348623157E+308),toFloat64(1.7976931348623157E+308))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -2980,16 +3208,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toFloat64(-1.7976931348623157E+308),toFloat64(1.7976931348623157E+308))
+(1,toFloat64(-1.7976931348623157E+308),toFloat64(1.7976931348623157E+308))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -3002,6 +3232,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -3021,11 +3252,13 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	toFloat64(1.7976931348623157E+308),
 	toFloat64(-1.7976931348623157E+308)
 )
@@ -3034,6 +3267,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -3053,16 +3287,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toFloat64(1.7976931348623157E+308),toFloat64(-1.7976931348623157E+308))
+(1,toFloat64(1.7976931348623157E+308),toFloat64(-1.7976931348623157E+308))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -3082,16 +3318,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toFloat64(1.7976931348623157E+308),toFloat64(-1.7976931348623157E+308))
+(1,toFloat64(1.7976931348623157E+308),toFloat64(-1.7976931348623157E+308))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -3111,16 +3349,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toFloat64(1.7976931348623157E+308),toFloat64(-1.7976931348623157E+308))
+(1,toFloat64(1.7976931348623157E+308),toFloat64(-1.7976931348623157E+308))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -3132,6 +3372,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -3151,11 +3392,13 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	toFloat64(1.23),
 	toFloat64(NaN)
 )
@@ -3164,6 +3407,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -3183,16 +3427,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toFloat64(1.23),toFloat64(NaN))
+(1,toFloat64(1.23),toFloat64(NaN))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -3212,16 +3458,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toFloat64(1.23),toFloat64(NaN))
+(1,toFloat64(1.23),toFloat64(NaN))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -3241,16 +3489,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toFloat64(1.23),toFloat64(NaN))
+(1,toFloat64(1.23),toFloat64(NaN))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -3262,6 +3512,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -3281,11 +3532,13 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	toFloat64(NaN),
 	toFloat64(-1.23)
 )
@@ -3294,6 +3547,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -3313,16 +3567,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toFloat64(NaN),toFloat64(-1.23))
+(1,toFloat64(NaN),toFloat64(-1.23))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -3342,16 +3598,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toFloat64(NaN),toFloat64(-1.23))
+(1,toFloat64(NaN),toFloat64(-1.23))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -3371,16 +3629,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toFloat64(NaN),toFloat64(-1.23))
+(1,toFloat64(NaN),toFloat64(-1.23))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -3392,6 +3652,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -3411,11 +3672,13 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	toFloat64(Infinity),
 	toFloat64(-Infinity)
 )
@@ -3424,6 +3687,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -3443,16 +3707,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toFloat64(Infinity),toFloat64(-Infinity))
+(1,toFloat64(Infinity),toFloat64(-Infinity))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -3472,16 +3738,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toFloat64(Infinity),toFloat64(-Infinity))
+(1,toFloat64(Infinity),toFloat64(-Infinity))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -3501,16 +3769,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toFloat64(Infinity),toFloat64(-Infinity))
+(1,toFloat64(Infinity),toFloat64(-Infinity))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -3522,6 +3792,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -3541,11 +3812,13 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	toFloat64(-Infinity),
 	toFloat64(Infinity)
 )
@@ -3554,6 +3827,7 @@ BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -3573,16 +3847,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toFloat64(-Infinity),toFloat64(Infinity))
+(1,toFloat64(-Infinity),toFloat64(Infinity))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -3602,16 +3878,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toFloat64(-Infinity),toFloat64(Infinity))
+(1,toFloat64(-Infinity),toFloat64(Infinity))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -3631,16 +3909,18 @@ BeforeExecute
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toFloat64(-Infinity),toFloat64(Infinity))
+(1,toFloat64(-Infinity),toFloat64(Infinity))
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM

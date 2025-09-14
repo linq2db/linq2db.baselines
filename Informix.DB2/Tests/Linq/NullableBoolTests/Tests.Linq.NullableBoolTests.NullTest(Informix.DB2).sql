@@ -2,6 +2,7 @@
 -- Informix.DB2 Informix
 
 SELECT
+	t.Id,
 	t."Value"
 FROM
 	NullableBoolClass t
@@ -12,6 +13,7 @@ BeforeExecute
 -- Informix.DB2 Informix
 
 SELECT
+	t.Id,
 	t."Value"
 FROM
 	NullableBoolClass t
