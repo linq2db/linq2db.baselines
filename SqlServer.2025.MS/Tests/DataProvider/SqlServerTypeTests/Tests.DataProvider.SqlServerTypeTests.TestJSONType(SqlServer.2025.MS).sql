@@ -65,6 +65,10 @@ FROM
 
 BeforeExecute
 -- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+DECLARE @p1 Json(3) -- String
+SET     @p1 = N'{ }'
+DECLARE @p2 Json -- String
+SET     @p2 = NULL
 
 INSERT INTO [TypeTable`2]
 (
@@ -72,7 +76,7 @@ INSERT INTO [TypeTable`2]
 	[ColumnNullable]
 )
 VALUES
-(N'{ }',NULL)
+(@p1,@p2)
 
 BeforeExecute
 -- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
@@ -188,6 +192,10 @@ FROM
 
 BeforeExecute
 -- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+DECLARE @p1 Json(16) -- String
+SET     @p1 = N'{ "prop1": 123 }'
+DECLARE @p2 Json(16) -- String
+SET     @p2 = N'{ "prop1": 321 }'
 
 INSERT INTO [TypeTable`2]
 (
@@ -195,7 +203,7 @@ INSERT INTO [TypeTable`2]
 	[ColumnNullable]
 )
 VALUES
-(N'{ "prop1": 123 }',N'{ "prop1": 321 }')
+(@p1,@p2)
 
 BeforeExecute
 -- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
@@ -311,6 +319,10 @@ FROM
 
 BeforeExecute
 -- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+DECLARE @p1 Json(3) -- String
+SET     @p1 = N'{ }'
+DECLARE @p2 Json -- String
+SET     @p2 = NULL
 
 INSERT INTO [TypeTable`2]
 (
@@ -318,7 +330,7 @@ INSERT INTO [TypeTable`2]
 	[ColumnNullable]
 )
 VALUES
-(N'{ }',NULL)
+(@p1,@p2)
 
 BeforeExecute
 -- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
@@ -434,6 +446,10 @@ FROM
 
 BeforeExecute
 -- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+DECLARE @p1 Json(16) -- String
+SET     @p1 = N'{ "prop1": 123 }'
+DECLARE @p2 Json(16) -- String
+SET     @p2 = N'{ "prop1": 321 }'
 
 INSERT INTO [TypeTable`2]
 (
@@ -441,7 +457,7 @@ INSERT INTO [TypeTable`2]
 	[ColumnNullable]
 )
 VALUES
-(N'{ "prop1": 123 }',N'{ "prop1": 321 }')
+(@p1,@p2)
 
 BeforeExecute
 -- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
@@ -557,6 +573,10 @@ FROM
 
 BeforeExecute
 -- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+DECLARE @p1 Json -- String
+SET     @p1 = N'{ }'
+DECLARE @p2 NVarChar(4000) -- String
+SET     @p2 = NULL
 
 INSERT INTO [TypeTable`2]
 (
@@ -564,7 +584,7 @@ INSERT INTO [TypeTable`2]
 	[ColumnNullable]
 )
 VALUES
-(N'{ }',NULL)
+(@p1,@p2)
 
 BeforeExecute
 -- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
@@ -680,6 +700,10 @@ FROM
 
 BeforeExecute
 -- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+DECLARE @p1 Json -- String
+SET     @p1 = N'{ }'
+DECLARE @p2 Json -- String
+SET     @p2 = NULL
 
 INSERT INTO [TypeTable`2]
 (
@@ -687,7 +711,7 @@ INSERT INTO [TypeTable`2]
 	[ColumnNullable]
 )
 VALUES
-(N'{ }',NULL)
+(@p1,@p2)
 
 BeforeExecute
 -- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
@@ -797,6 +821,10 @@ FROM
 
 BeforeExecute
 -- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+DECLARE @p1 Json -- String
+SET     @p1 = N'{ "prop1": 123 }'
+DECLARE @p2 Json -- String
+SET     @p2 = N'{ "prop1": 321 }'
 
 INSERT INTO [TypeTable`2]
 (
@@ -804,7 +832,7 @@ INSERT INTO [TypeTable`2]
 	[ColumnNullable]
 )
 VALUES
-(N'{ "prop1": 123 }',N'{ "prop1": 321 }')
+(@p1,@p2)
 
 BeforeExecute
 -- SqlServer.2025.MS SqlServer.2025 SqlServer.2022

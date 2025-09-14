@@ -65,6 +65,10 @@ FROM
 
 BeforeExecute
 -- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+DECLARE @p1 36(16) -- Binary
+SET     @p1 = JSON_ARRAY(1.2, -1.1)
+DECLARE @p2 NVarChar(2) -- String
+SET     @p2 = NULL
 
 INSERT INTO [TypeTable`2]
 (
@@ -72,7 +76,7 @@ INSERT INTO [TypeTable`2]
 	[ColumnNullable]
 )
 VALUES
-(JSON_ARRAY(1.2, -1.1),NULL)
+(@p1,@p2)
 
 BeforeExecute
 -- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
@@ -194,6 +198,10 @@ FROM
 
 BeforeExecute
 -- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+DECLARE @p1 36(16) -- Binary
+SET     @p1 = JSON_ARRAY(5.2, -3.1)
+DECLARE @p2 NVarChar(2) -- String
+SET     @p2 = NULL
 
 INSERT INTO [TypeTable`2]
 (
@@ -201,7 +209,7 @@ INSERT INTO [TypeTable`2]
 	[ColumnNullable]
 )
 VALUES
-(JSON_ARRAY(5.2, -3.1),NULL)
+(@p1,@p2)
 
 BeforeExecute
 -- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
@@ -317,6 +325,10 @@ FROM
 
 BeforeExecute
 -- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+DECLARE @p1 36(16) -- Binary
+SET     @p1 = JSON_ARRAY(11.2, -4.1)
+DECLARE @p2 36(16) -- Binary
+SET     @p2 = JSON_ARRAY(5.2, -3.1)
 
 INSERT INTO [TypeTable`2]
 (
@@ -324,7 +336,7 @@ INSERT INTO [TypeTable`2]
 	[ColumnNullable]
 )
 VALUES
-(JSON_ARRAY(11.2, -4.1),JSON_ARRAY(5.2, -3.1))
+(@p1,@p2)
 
 BeforeExecute
 -- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
