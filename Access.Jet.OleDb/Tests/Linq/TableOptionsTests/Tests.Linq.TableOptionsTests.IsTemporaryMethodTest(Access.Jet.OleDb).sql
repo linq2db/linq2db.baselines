@@ -9,7 +9,9 @@ BeforeExecute
 CREATE TABLE [TestTable]
 (
 	[Id]    Int NOT NULL,
-	[Value] Int NOT NULL
+	[Value] Int NOT NULL,
+
+	CONSTRAINT [PK_TestTable] PRIMARY KEY CLUSTERED ([Id])
 )
 
 BeforeExecute
@@ -18,14 +20,12 @@ BeforeExecute
 SELECT
 	[t1].[Id],
 	[t1].[Value],
-	[t2].[Id],
-	[t2].[Value],
-	[t3].[Id],
-	[t3].[Value]
+	[t1].[Id],
+	[t1].[Value],
+	[t1].[Id],
+	[t1].[Value]
 FROM
-	([TestTable] [t1]
-		INNER JOIN [TestTable] [t2] ON ([t1].[Id] = [t2].[Id]))
-		INNER JOIN [TestTable] [t3] ON ([t2].[Id] = [t3].[Id])
+	[TestTable] [t1]
 
 BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
