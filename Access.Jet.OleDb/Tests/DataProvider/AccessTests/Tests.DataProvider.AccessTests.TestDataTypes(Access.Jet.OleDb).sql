@@ -785,7 +785,7 @@ SELECT binaryDataType FROM [AllTypes] WHERE ID = 1
 
 BeforeExecute
 -- Access.Jet.OleDb AccessOleDb
-DECLARE @p VarWChar -- String
+DECLARE @p VarBinary -- Binary
 SET     @p = NULL
 
 SELECT ID FROM [AllTypes] WHERE @p IS NULL AND binaryDataType IS NULL OR @p IS NOT NULL AND binaryDataType = @p

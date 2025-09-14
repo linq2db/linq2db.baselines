@@ -993,7 +993,7 @@ SELECT binaryDataType FROM ALLTYPES WHERE ID = 1
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
-DECLARE @p VarChar -- String
+DECLARE @p VarBinary -- Binary
 SET     @p = NULL
 
 SELECT ID FROM ALLTYPES WHERE @p IS NULL AND binaryDataType IS NULL OR @p IS NOT NULL AND binaryDataType = @p

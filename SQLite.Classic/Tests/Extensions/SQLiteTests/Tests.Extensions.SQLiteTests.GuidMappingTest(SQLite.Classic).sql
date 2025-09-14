@@ -173,7 +173,7 @@ DELETE FROM
 
 BeforeExecute
 -- SQLite.Classic SQLite
-DECLARE @NonReadonlyGuid1  -- Guid
+DECLARE @NonReadonlyGuid1 Binary(16)
 SET     @NonReadonlyGuid1 = X'3D667BBCDE0F27438F925D8CC3A11D11'
 
 INSERT INTO [GuidMapping]
@@ -385,7 +385,7 @@ BeforeExecute
 -- SQLite.Classic SQLite
 DECLARE @BlobGuid1  -- Guid
 SET     @BlobGuid1 = X'3D667BBCDE0F27438F925D8CC3A11D11'
-DECLARE @BlobGuid2  -- Guid
+DECLARE @BlobGuid2 Binary(16)
 SET     @BlobGuid2 = X'3D667BBCDE0F27438F925D8CC3A11D11'
 DECLARE @BlobGuid3  -- Guid
 SET     @BlobGuid3 = X'3D667BBCDE0F27438F925D8CC3A11D11'

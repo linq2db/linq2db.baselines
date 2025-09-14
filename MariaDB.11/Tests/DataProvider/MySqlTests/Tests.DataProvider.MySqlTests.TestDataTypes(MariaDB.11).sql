@@ -1097,7 +1097,7 @@ SELECT binaryDataType FROM `AllTypes` WHERE ID = 1
 
 BeforeExecute
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql
-DECLARE @p VarChar -- String
+DECLARE @p Blob -- Binary
 SET     @p = NULL
 
 SELECT ID FROM `AllTypes` WHERE @p IS NULL AND binaryDataType IS NULL OR @p IS NOT NULL AND binaryDataType = @p
@@ -1201,7 +1201,7 @@ SELECT varbinaryDataType FROM `AllTypes` WHERE ID = 1
 
 BeforeExecute
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql
-DECLARE @p VarChar -- String
+DECLARE @p Blob -- Binary
 SET     @p = NULL
 
 SELECT ID FROM `AllTypes` WHERE @p IS NULL AND varbinaryDataType IS NULL OR @p IS NOT NULL AND varbinaryDataType = @p
@@ -1357,7 +1357,7 @@ SELECT blobDataType FROM `AllTypes` WHERE ID = 1
 
 BeforeExecute
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql
-DECLARE @p VarChar -- String
+DECLARE @p Blob -- Binary
 SET     @p = NULL
 
 SELECT ID FROM `AllTypes` WHERE @p IS NULL AND blobDataType IS NULL OR @p IS NOT NULL AND blobDataType = @p

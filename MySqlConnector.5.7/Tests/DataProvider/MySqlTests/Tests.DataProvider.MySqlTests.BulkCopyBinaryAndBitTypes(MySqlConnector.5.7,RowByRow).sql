@@ -23,9 +23,9 @@ DECLARE @Binary_1 Blob -- Binary
 SET     @Binary_1 = NULL
 DECLARE @Binary_2 Blob -- Binary
 SET     @Binary_2 = NULL
-DECLARE @Binary_3 VarChar -- String
+DECLARE @Binary_3 Blob -- Binary
 SET     @Binary_3 = NULL
-DECLARE @Binary_4 VarChar -- String
+DECLARE @Binary_4 Blob -- Binary
 SET     @Binary_4 = NULL
 DECLARE @VarBinary_1 Blob -- Binary
 SET     @VarBinary_1 = NULL

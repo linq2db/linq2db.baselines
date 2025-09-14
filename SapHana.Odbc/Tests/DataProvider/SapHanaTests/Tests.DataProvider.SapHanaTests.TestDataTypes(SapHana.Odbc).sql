@@ -1045,7 +1045,7 @@ SELECT "binaryDataType" FROM "AllTypes" WHERE "ID" = 1
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @p NVarChar -- String
+DECLARE @p VarBinary -- Binary
 SET     @p = NULL
 
 SELECT "ID" FROM "AllTypes" WHERE "binaryDataType" IS NULL AND ? IS NULL
@@ -1071,7 +1071,7 @@ SELECT "binaryDataType" FROM "AllTypes" WHERE "ID" = 2
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @p NVarChar(8) -- String
+DECLARE @p VarBinary(8) -- Binary
 SET     @p = x'6162636465666768'
 
 SELECT "ID" FROM "AllTypes" WHERE "binaryDataType" = ?
@@ -1149,7 +1149,7 @@ SELECT "varbinaryDataType" FROM "AllTypes" WHERE "ID" = 1
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @p NVarChar -- String
+DECLARE @p VarBinary -- Binary
 SET     @p = NULL
 
 SELECT "ID" FROM "AllTypes" WHERE "varbinaryDataType" IS NULL AND ? IS NULL
@@ -1175,7 +1175,7 @@ SELECT "varbinaryDataType" FROM "AllTypes" WHERE "ID" = 2
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc
-DECLARE @p NVarChar(8) -- String
+DECLARE @p VarBinary(8) -- Binary
 SET     @p = x'6162636465666768'
 
 SELECT "ID" FROM "AllTypes" WHERE "varbinaryDataType" = ?
