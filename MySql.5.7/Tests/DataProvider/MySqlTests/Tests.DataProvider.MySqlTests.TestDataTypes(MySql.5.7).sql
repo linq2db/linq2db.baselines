@@ -1097,7 +1097,7 @@ SELECT binaryDataType FROM `AllTypes` WHERE ID = 1
 
 BeforeExecute
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
-DECLARE @p VarChar -- String
+DECLARE @p Blob -- Binary
 SET     @p = NULL
 
 SELECT ID FROM `AllTypes` WHERE @p IS NULL AND binaryDataType IS NULL OR @p IS NOT NULL AND binaryDataType = @p
@@ -1123,7 +1123,7 @@ SELECT binaryDataType FROM `AllTypes` WHERE ID = 2
 
 BeforeExecute
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
-DECLARE @p Blob(3) -- Object
+DECLARE @p Blob(3) -- Binary
 SET     @p = 0x616263
 
 SELECT ID FROM `AllTypes` WHERE binaryDataType = @p
@@ -1201,7 +1201,7 @@ SELECT varbinaryDataType FROM `AllTypes` WHERE ID = 1
 
 BeforeExecute
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
-DECLARE @p VarChar -- String
+DECLARE @p Blob -- Binary
 SET     @p = NULL
 
 SELECT ID FROM `AllTypes` WHERE @p IS NULL AND varbinaryDataType IS NULL OR @p IS NOT NULL AND varbinaryDataType = @p
@@ -1227,7 +1227,7 @@ SELECT varbinaryDataType FROM `AllTypes` WHERE ID = 2
 
 BeforeExecute
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
-DECLARE @p Blob(3) -- Object
+DECLARE @p Blob(3) -- Binary
 SET     @p = 0x636465
 
 SELECT ID FROM `AllTypes` WHERE varbinaryDataType = @p
@@ -1357,7 +1357,7 @@ SELECT blobDataType FROM `AllTypes` WHERE ID = 1
 
 BeforeExecute
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
-DECLARE @p VarChar -- String
+DECLARE @p Blob -- Binary
 SET     @p = NULL
 
 SELECT ID FROM `AllTypes` WHERE @p IS NULL AND blobDataType IS NULL OR @p IS NOT NULL AND blobDataType = @p
@@ -1383,7 +1383,7 @@ SELECT blobDataType FROM `AllTypes` WHERE ID = 2
 
 BeforeExecute
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
-DECLARE @p Blob(3) -- Object
+DECLARE @p Blob(3) -- Binary
 SET     @p = 0x646566
 
 SELECT ID FROM `AllTypes` WHERE blobDataType = @p
