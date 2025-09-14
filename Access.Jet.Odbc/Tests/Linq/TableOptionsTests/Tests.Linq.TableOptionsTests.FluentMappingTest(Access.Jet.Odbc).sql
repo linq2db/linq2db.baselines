@@ -9,33 +9,26 @@ BeforeExecute
 CREATE TABLE [TestTable]
 (
 	[Id]    Int NOT NULL,
-	[Value] Int NOT NULL
+	[Value] Int NOT NULL,
+
+	CONSTRAINT [PK_TestTable] PRIMARY KEY CLUSTERED ([Id])
 )
 
 BeforeExecute
 -- Access.Jet.Odbc AccessODBC
 
 SELECT
-	[sub].[Id_1],
-	[sub].[Value_1],
-	[sub].[Id],
-	[sub].[Value_2],
-	[t3].[Id],
-	[t3].[Value]
+	[t1].[Id],
+	[t1].[Value],
+	[t2].[Id],
+	[t2].[Value],
+	[t2].[Id],
+	[t2].[Value]
 FROM
-	(
-		SELECT
-			[t2].[Id],
-			[t1].[Id] as [Id_1],
-			[t1].[Value] as [Value_1],
-			[t2].[Value] as [Value_2]
-		FROM
-			[TestTable] [t1],
-			[TestTable] [t2]
-	) [sub]
-		INNER JOIN [TestTable] [t3] ON ([sub].[Id] = [t3].[Id])
+	[TestTable] [t1],
+	[TestTable] [t2]
 WHERE
-	[sub].[Id_1] = [sub].[Id]
+	[t1].[Id] = [t2].[Id]
 
 BeforeExecute
 -- Access.Jet.Odbc AccessODBC

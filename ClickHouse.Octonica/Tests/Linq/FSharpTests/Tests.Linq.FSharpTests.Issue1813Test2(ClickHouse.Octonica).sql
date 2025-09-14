@@ -48,13 +48,10 @@ SELECT
 	d.Id,
 	d.Text
 FROM
-	(
-		SELECT DISTINCT
-			Item1.Id as Id
-		FROM
-			Names Item1
-	) m_1
+	Names m_1
 		INNER JOIN Addresses d ON m_1.Id = d.Id
+ORDER BY
+	m_1.Id
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
