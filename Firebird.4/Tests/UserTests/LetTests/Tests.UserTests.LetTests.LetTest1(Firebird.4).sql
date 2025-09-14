@@ -2,6 +2,7 @@
 -- Firebird.4 Firebird4
 
 SELECT
+	"t1"."Id",
 	"t1"."Field6"
 FROM
 	"Table2" "t1"
@@ -12,5 +13,5 @@ FROM
 		INNER JOIN "Table3" "t2"
 			LEFT JOIN "Table7" "a_Ref5_1" ON "t2"."Field4" = "a_Ref5_1"."Field4"
 			INNER JOIN "Table2" "t4" ON "t2"."Field6" = "t4"."Field6" OR "t2"."Field6" IS NULL AND "t4"."Field6" IS NULL
-		ON "a_Ref1"."Field3" = "t2"."Field3" AND ("a_Ref5"."Field8" = "a_Ref5_1"."Field8" OR "a_Ref5"."Field8" IS NULL AND "a_Ref5_1"."Field8" IS NULL)
+		ON "a_Ref1"."Id" IS NOT NULL AND "a_Ref1"."Field3" = "t2"."Field3" AND ("a_Ref5"."Field8" = "a_Ref5_1"."Field8" OR "a_Ref5"."Field8" IS NULL AND "a_Ref5_1"."Field8" IS NULL)
 
