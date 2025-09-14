@@ -2,6 +2,7 @@
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	t.Id,
 	t.Value
 FROM
 	NullableBoolClass t
@@ -12,6 +13,7 @@ BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	t.Id,
 	t.Value
 FROM
 	NullableBoolClass t

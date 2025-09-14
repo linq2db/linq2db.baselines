@@ -12,6 +12,7 @@ BeforeExecute
 -- SqlServer.2016.MS SqlServer.2016 (asynchronously)
 
 SELECT TOP (2)
+	[t1].[Id],
 	[t1].[Field]
 FROM
 	[Issue4963Table] [t1]

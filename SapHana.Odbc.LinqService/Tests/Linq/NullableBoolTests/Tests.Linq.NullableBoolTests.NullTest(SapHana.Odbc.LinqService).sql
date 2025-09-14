@@ -2,6 +2,7 @@
 -- SapHana.Odbc SapHanaOdbc (asynchronously)
 
 SELECT
+	"t"."Id",
 	"t"."Value"
 FROM
 	"NullableBoolClass" "t"
@@ -12,6 +13,7 @@ BeforeExecute
 -- SapHana.Odbc SapHanaOdbc (asynchronously)
 
 SELECT
+	"t"."Id",
 	"t"."Value"
 FROM
 	"NullableBoolClass" "t"

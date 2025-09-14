@@ -21,14 +21,8 @@ SET
 					ELSE 2
 				END
 		WHERE
-			"ext_1".NOT_HANDLED = 2 AND
-			"ext_1".TRANS_CHANNEL IS NULL AND
-			"Issue2815Table1".SRC_BIC = "ext_1".SRC_BIC AND
-			"Issue2815Table1".DES_BIC = "ext_1".DES_BIC AND
-			"Issue2815Table1".IDF = "ext_1".IDF AND
-			"Issue2815Table1".TREA_CENT = "ext_1".TREA_CENT AND
-			"Issue2815Table1".NOT_HANDLED = "ext_1".NOT_HANDLED AND
-			("Issue2815Table1".TRANS_CHANNEL = "ext_1".TRANS_CHANNEL OR "Issue2815Table1".TRANS_CHANNEL IS NULL AND "ext_1".TRANS_CHANNEL IS NULL)
+			"ext_1".NOT_HANDLED = 2 AND "ext_1".TRANS_CHANNEL IS NULL AND
+			"Issue2815Table1"."Id" = "ext_1"."Id"
 	),
 	IDF = (
 		SELECT
@@ -47,14 +41,8 @@ SET
 					ELSE 2
 				END
 		WHERE
-			"ext_2".NOT_HANDLED = 2 AND
-			"ext_2".TRANS_CHANNEL IS NULL AND
-			"Issue2815Table1".SRC_BIC = "ext_2".SRC_BIC AND
-			"Issue2815Table1".DES_BIC = "ext_2".DES_BIC AND
-			"Issue2815Table1".IDF = "ext_2".IDF AND
-			"Issue2815Table1".TREA_CENT = "ext_2".TREA_CENT AND
-			"Issue2815Table1".NOT_HANDLED = "ext_2".NOT_HANDLED AND
-			("Issue2815Table1".TRANS_CHANNEL = "ext_2".TRANS_CHANNEL OR "Issue2815Table1".TRANS_CHANNEL IS NULL AND "ext_2".TRANS_CHANNEL IS NULL)
+			"ext_2".NOT_HANDLED = 2 AND "ext_2".TRANS_CHANNEL IS NULL AND
+			"Issue2815Table1"."Id" = "ext_2"."Id"
 	)
 WHERE
 	EXISTS(
@@ -73,20 +61,15 @@ WHERE
 					ELSE 2
 				END
 		WHERE
-			"ext".NOT_HANDLED = 2 AND
-			"ext".TRANS_CHANNEL IS NULL AND
-			"Issue2815Table1".SRC_BIC = "ext".SRC_BIC AND
-			"Issue2815Table1".DES_BIC = "ext".DES_BIC AND
-			"Issue2815Table1".IDF = "ext".IDF AND
-			"Issue2815Table1".TREA_CENT = "ext".TREA_CENT AND
-			"Issue2815Table1".NOT_HANDLED = "ext".NOT_HANDLED AND
-			("Issue2815Table1".TRANS_CHANNEL = "ext".TRANS_CHANNEL OR "Issue2815Table1".TRANS_CHANNEL IS NULL AND "ext".TRANS_CHANNEL IS NULL)
+			"ext".NOT_HANDLED = 2 AND "ext".TRANS_CHANNEL IS NULL AND
+			"Issue2815Table1"."Id" = "ext"."Id"
 	)
 
 BeforeExecute
 -- Firebird.2.5 Firebird
 
 SELECT
+	"t1"."Id",
 	"t1".SRC_BIC,
 	"t1".DES_BIC,
 	"t1".IDF,

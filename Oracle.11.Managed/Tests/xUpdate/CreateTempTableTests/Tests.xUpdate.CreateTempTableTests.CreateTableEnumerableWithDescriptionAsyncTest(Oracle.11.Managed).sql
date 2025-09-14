@@ -17,7 +17,9 @@ BEGIN
 	EXECUTE IMMEDIATE '
 		CREATE TABLE "TempTable"
 		(
-			"Name" VarChar(20) NOT NULL
+			"Name" VarChar(20) NOT NULL,
+
+			CONSTRAINT "PK_TempTable" PRIMARY KEY ("Name")
 		)
 	';
 EXCEPTION

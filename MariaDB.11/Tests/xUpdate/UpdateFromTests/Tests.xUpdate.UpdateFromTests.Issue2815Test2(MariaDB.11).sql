@@ -23,6 +23,7 @@ BeforeExecute
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql
 
 SELECT
+	`t1`.`Id`,
 	`t1`.`SRC_BIC`,
 	`t1`.`DES_BIC`,
 	`t1`.`IDF`,

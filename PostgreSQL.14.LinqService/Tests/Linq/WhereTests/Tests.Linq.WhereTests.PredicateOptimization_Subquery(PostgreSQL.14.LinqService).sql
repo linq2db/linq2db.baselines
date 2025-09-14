@@ -2,6 +2,7 @@
 -- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL (asynchronously)
 
 SELECT
+	p."PK",
 	p."Id",
 	p."Date1",
 	p."Date2",
@@ -23,6 +24,7 @@ BeforeExecute
 -- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL (asynchronously)
 
 SELECT
+	p."PK",
 	p."Id",
 	p."Date1",
 	p."Date2",

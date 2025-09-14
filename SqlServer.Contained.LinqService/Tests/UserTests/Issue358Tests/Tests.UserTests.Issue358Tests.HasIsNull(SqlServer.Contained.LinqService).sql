@@ -2,6 +2,7 @@
 -- SqlServer.Contained SqlServer.2019 (asynchronously)
 
 SELECT
+	[p].[Id],
 	[p].[MyEnum],
 	[p].[MyEnum2]
 FROM

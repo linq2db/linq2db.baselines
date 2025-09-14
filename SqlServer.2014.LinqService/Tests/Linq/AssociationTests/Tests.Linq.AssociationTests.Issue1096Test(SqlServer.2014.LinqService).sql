@@ -1,5 +1,7 @@
 ﻿BeforeExecute
 -- SqlServer.2014 (asynchronously)
+DECLARE @Pk Int -- Int32
+SET     @Pk = 1
 DECLARE @Id Int -- Int32
 SET     @Id = 1
 DECLARE @TargetName NVarChar(4000) -- String
@@ -7,29 +9,13 @@ SET     @TargetName = N'bda.Requests'
 
 INSERT INTO [Issue1096Task]
 (
+	[Pk],
 	[Id],
 	[TargetName]
 )
 VALUES
 (
-	@Id,
-	@TargetName
-)
-
-BeforeExecute
--- SqlServer.2014 (asynchronously)
-DECLARE @Id Int -- Int32
-SET     @Id = 1
-DECLARE @TargetName NVarChar(4000) -- String
-SET     @TargetName = N'bda.Requests'
-
-INSERT INTO [Issue1096Task]
-(
-	[Id],
-	[TargetName]
-)
-VALUES
-(
+	@Pk,
 	@Id,
 	@TargetName
 )
@@ -60,6 +46,7 @@ BeforeExecute
 -- SqlServer.2014 (asynchronously)
 
 SELECT DISTINCT
+	[t].[Pk],
 	[t].[Id],
 	[t].[TargetName],
 	[a_ActualStage].[Id],

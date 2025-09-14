@@ -10,6 +10,7 @@ BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12
 
 SELECT
+	t1."Id",
 	t1."Field"
 FROM
 	"Issue4963Table" t1

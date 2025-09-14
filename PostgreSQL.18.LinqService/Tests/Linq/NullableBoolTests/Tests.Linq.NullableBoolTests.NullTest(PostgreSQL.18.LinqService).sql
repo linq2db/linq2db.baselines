@@ -2,6 +2,7 @@
 -- PostgreSQL.18 PostgreSQL (asynchronously)
 
 SELECT
+	t."Id",
 	t."Value"
 FROM
 	"NullableBoolClass" t
@@ -12,6 +13,7 @@ BeforeExecute
 -- PostgreSQL.18 PostgreSQL (asynchronously)
 
 SELECT
+	t."Id",
 	t."Value"
 FROM
 	"NullableBoolClass" t

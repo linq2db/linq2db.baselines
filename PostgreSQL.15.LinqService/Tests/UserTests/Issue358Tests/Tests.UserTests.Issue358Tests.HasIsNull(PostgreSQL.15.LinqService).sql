@@ -2,6 +2,7 @@
 -- PostgreSQL.15 PostgreSQL (asynchronously)
 
 SELECT
+	p."Id",
 	p."MyEnum",
 	p."MyEnum2"
 FROM

@@ -2,6 +2,7 @@
 -- SqlServer.2016 (asynchronously)
 
 SELECT
+	[p].[PK],
 	[p].[Id],
 	[p].[Date1],
 	[p].[Date2],
@@ -23,6 +24,7 @@ BeforeExecute
 -- SqlServer.2016 (asynchronously)
 
 SELECT
+	[p].[PK],
 	[p].[Id],
 	[p].[Date1],
 	[p].[Date2],

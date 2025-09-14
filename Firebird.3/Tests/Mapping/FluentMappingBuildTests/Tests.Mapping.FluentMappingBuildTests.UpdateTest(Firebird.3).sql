@@ -8,7 +8,9 @@ EXECUTE BLOCK AS BEGIN
 			(
 				ID         Int                                   NOT NULL,
 				"Value"    VarChar(20) CHARACTER SET UNICODE_FSS,
-				"LastName" VarChar(20) CHARACTER SET UNICODE_FSS
+				"LastName" VarChar(20) CHARACTER SET UNICODE_FSS,
+
+				CONSTRAINT "PK_FluentTemp" PRIMARY KEY (ID)
 			)
 		';
 END

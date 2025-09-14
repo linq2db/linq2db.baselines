@@ -4,6 +4,7 @@ DECLARE @value UByte -- Boolean
 SET     @value = 0
 
 SELECT
+	`t`.`Id`,
 	`t`.`Value`
 FROM
 	`NullableBoolClass` `t`
@@ -16,6 +17,7 @@ DECLARE @value UByte -- Boolean
 SET     @value = 0
 
 SELECT
+	`t`.`Id`,
 	`t`.`Value`
 FROM
 	`NullableBoolClass` `t`
@@ -28,6 +30,7 @@ DECLARE @value UByte -- Boolean
 SET     @value = 0
 
 SELECT
+	`t`.`Id`,
 	`t`.`Value`
 FROM
 	`NullableBoolClass` `t`
@@ -40,6 +43,7 @@ DECLARE @value UByte -- Boolean
 SET     @value = 0
 
 SELECT
+	`t`.`Id`,
 	`t`.`Value`
 FROM
 	`NullableBoolClass` `t`

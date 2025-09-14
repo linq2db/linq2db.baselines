@@ -2,6 +2,7 @@
 -- SqlServer.2005.MS SqlServer.2005
 
 SELECT
+	[user_1].[Id],
 	[user_1].[FirstName],
 	[user_1].[Status]
 FROM

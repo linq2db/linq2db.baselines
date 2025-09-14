@@ -2,6 +2,7 @@
 -- Access.Jet.Odbc AccessODBC
 
 SELECT
+	[p].[Id],
 	[p].[MyEnum],
 	[p].[MyEnum2]
 FROM

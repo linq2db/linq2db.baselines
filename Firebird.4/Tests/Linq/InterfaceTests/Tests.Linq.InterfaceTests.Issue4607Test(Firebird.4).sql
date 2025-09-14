@@ -3,11 +3,13 @@
 
 INSERT INTO "SomeTable"
 (
+	"Id",
 	"ClassProp",
 	"Interface"
 )
 VALUES
 (
+	1,
 	TRUE,
 	FALSE
 )
@@ -16,6 +18,7 @@ BeforeExecute
 -- Firebird.4 Firebird4
 
 SELECT
+	"t1"."Id",
 	"t1"."ClassProp",
 	"t1"."Interface"
 FROM

@@ -2,6 +2,7 @@
 -- SqlServer.2017.MS SqlServer.2017
 
 SELECT TOP (1)
+	[p].[Id],
 	[p].[Code],
 	[p].[DIM_Company],
 	[p].[DIM_Branch],

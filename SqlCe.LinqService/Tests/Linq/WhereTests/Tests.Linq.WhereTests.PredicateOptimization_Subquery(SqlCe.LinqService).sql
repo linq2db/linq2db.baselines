@@ -2,6 +2,7 @@
 -- SqlCe (asynchronously)
 
 SELECT
+	[p].[PK],
 	[p].[Id],
 	[p].[Date1],
 	[p].[Date2],
@@ -29,6 +30,7 @@ BeforeExecute
 -- SqlCe (asynchronously)
 
 SELECT
+	[p].[PK],
 	[p].[Id],
 	[p].[Date1],
 	[p].[Date2],

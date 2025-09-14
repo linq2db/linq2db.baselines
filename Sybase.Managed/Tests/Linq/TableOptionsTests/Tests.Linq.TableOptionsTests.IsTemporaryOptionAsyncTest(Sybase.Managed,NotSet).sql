@@ -4,7 +4,9 @@
 CREATE TABLE #temp_table1
 (
 	[ID]    Int NOT NULL,
-	[Value] Int NOT NULL
+	[Value] Int NOT NULL,
+
+	CONSTRAINT [PK_temp_table1] PRIMARY KEY CLUSTERED ([ID])
 )
 
 BeforeExecute
@@ -23,7 +25,9 @@ BeforeExecute
 CREATE TABLE #temp_table2
 (
 	[ID]    Int NOT NULL,
-	[Value] Int NOT NULL
+	[Value] Int NOT NULL,
+
+	CONSTRAINT [PK_temp_table2] PRIMARY KEY CLUSTERED ([ID])
 )
 
 BeforeExecute

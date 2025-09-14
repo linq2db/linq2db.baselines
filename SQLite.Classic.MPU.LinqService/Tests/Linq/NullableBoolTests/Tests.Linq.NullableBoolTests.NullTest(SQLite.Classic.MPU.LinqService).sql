@@ -2,6 +2,7 @@
 -- SQLite.Classic.MPU SQLite.Classic SQLite (asynchronously)
 
 SELECT
+	[t].[Id],
 	[t].[Value]
 FROM
 	[NullableBoolClass] [t]
@@ -12,6 +13,7 @@ BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite (asynchronously)
 
 SELECT
+	[t].[Id],
 	[t].[Value]
 FROM
 	[NullableBoolClass] [t]

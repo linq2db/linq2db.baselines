@@ -2,6 +2,7 @@
 -- SqlCe
 
 SELECT
+	[t].[Id],
 	[t].[Value] as [Value_1]
 FROM
 	[NullableBoolClass] [t]
@@ -12,6 +13,7 @@ BeforeExecute
 -- SqlCe
 
 SELECT
+	[t].[Id],
 	[t].[Value] as [Value_1]
 FROM
 	[NullableBoolClass] [t]

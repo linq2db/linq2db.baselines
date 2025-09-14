@@ -2,6 +2,7 @@
 -- SapHana.Odbc SapHanaOdbc (asynchronously)
 
 SELECT
+	"x"."Id",
 	"x"."Country",
 	"x"."State"
 FROM

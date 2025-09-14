@@ -18,6 +18,7 @@ BeforeExecute
 -- SqlServer.2019
 
 SELECT
+	[t1].[Id],
 	[t1].[SRC_BIC],
 	[t1].[DES_BIC],
 	[t1].[IDF],

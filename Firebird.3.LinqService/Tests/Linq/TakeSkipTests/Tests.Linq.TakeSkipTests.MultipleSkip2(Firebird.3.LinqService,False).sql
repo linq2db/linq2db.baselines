@@ -2,6 +2,7 @@
 -- Firebird.3 Firebird3 (asynchronously)
 
 SELECT
+	"t1"."Id",
 	"t1"."Value"
 FROM
 	"TakeSkipClass" "t1"
@@ -13,6 +14,7 @@ BeforeExecute
 -- Firebird.3 Firebird3 (asynchronously)
 
 SELECT
+	"t1"."Id",
 	"t1"."Value"
 FROM
 	"TakeSkipClass" "t1"

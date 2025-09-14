@@ -1,5 +1,7 @@
 ﻿BeforeExecute
 -- Oracle.11.Managed Oracle11
+DECLARE @Id Int32
+SET     @Id = 1
 DECLARE @Name Varchar2(11) -- String
 SET     @Name = 'NotVerified'
 DECLARE @BoolValue Char -- AnsiStringFixedLength
@@ -9,12 +11,14 @@ SET     @GuidValue = 'bc7b663d-0fde-4327-8f92-5d8cc3a11d11'
 
 INSERT INTO "TypeConvertTable"
 (
+	"Id",
 	"Name",
 	"BoolValue",
 	"GuidValue"
 )
 VALUES
 (
+	:Id,
 	:Name,
 	:BoolValue,
 	:GuidValue
@@ -22,6 +26,8 @@ VALUES
 
 BeforeExecute
 -- Oracle.11.Managed Oracle11
+DECLARE @Id Int32
+SET     @Id = 2
 DECLARE @Name Varchar2(8) -- String
 SET     @Name = 'Verified'
 DECLARE @BoolValue Char -- AnsiStringFixedLength
@@ -31,12 +37,14 @@ SET     @GuidValue = 'a948600d-de21-4f74-8ac2-9516b287076e'
 
 INSERT INTO "TypeConvertTable"
 (
+	"Id",
 	"Name",
 	"BoolValue",
 	"GuidValue"
 )
 VALUES
 (
+	:Id,
 	:Name,
 	:BoolValue,
 	:GuidValue
@@ -78,6 +86,7 @@ BeforeExecute
 -- Oracle.11.Managed Oracle11
 
 SELECT
+	t1."Id",
 	t1."Name",
 	t1."BoolValue",
 	t1."GuidValue"
@@ -90,6 +99,7 @@ BeforeExecute
 -- Oracle.11.Managed Oracle11
 
 SELECT
+	t1."Id",
 	t1."Name",
 	t1."BoolValue",
 	t1."GuidValue"
@@ -102,6 +112,7 @@ BeforeExecute
 -- Oracle.11.Managed Oracle11
 
 SELECT
+	t1."Id",
 	t1."Name",
 	t1."BoolValue",
 	t1."GuidValue"
@@ -114,6 +125,7 @@ BeforeExecute
 -- Oracle.11.Managed Oracle11
 
 SELECT
+	t1."Id",
 	t1."Name",
 	t1."BoolValue",
 	t1."GuidValue"
@@ -126,6 +138,7 @@ BeforeExecute
 -- Oracle.11.Managed Oracle11
 
 SELECT
+	t1."Id",
 	t1."Name",
 	t1."BoolValue",
 	t1."GuidValue"
@@ -138,6 +151,7 @@ BeforeExecute
 -- Oracle.11.Managed Oracle11
 
 SELECT
+	t1."Id",
 	t1."Name",
 	t1."BoolValue",
 	t1."GuidValue"
@@ -150,6 +164,7 @@ BeforeExecute
 -- Oracle.11.Managed Oracle11
 
 SELECT
+	t1."Id",
 	t1."Name",
 	t1."BoolValue",
 	t1."GuidValue"
@@ -162,6 +177,7 @@ BeforeExecute
 -- Oracle.11.Managed Oracle11
 
 SELECT
+	t1."Id",
 	t1."Name",
 	t1."BoolValue",
 	t1."GuidValue"
@@ -174,6 +190,7 @@ BeforeExecute
 -- Oracle.11.Managed Oracle11
 
 SELECT
+	t1."Id",
 	t1."Name",
 	t1."BoolValue",
 	t1."GuidValue"
@@ -186,6 +203,7 @@ BeforeExecute
 -- Oracle.11.Managed Oracle11
 
 SELECT
+	t1."Id",
 	t1."Name",
 	t1."BoolValue",
 	t1."GuidValue"
@@ -200,6 +218,7 @@ DECLARE @GuidValue Varchar2(36) -- String
 SET     @GuidValue = 'bc7b663d-0fde-4327-8f92-5d8cc3a11d11'
 
 SELECT
+	t1."Id",
 	t1."Name",
 	t1."BoolValue",
 	t1."GuidValue"
@@ -214,6 +233,7 @@ DECLARE @GuidValue Varchar2(36) -- String
 SET     @GuidValue = 'a948600d-de21-4f74-8ac2-9516b287076e'
 
 SELECT
+	t1."Id",
 	t1."Name",
 	t1."BoolValue",
 	t1."GuidValue"

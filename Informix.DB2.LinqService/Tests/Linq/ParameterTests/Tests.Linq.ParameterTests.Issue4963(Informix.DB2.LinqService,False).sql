@@ -12,6 +12,7 @@ BeforeExecute
 -- Informix.DB2 Informix (asynchronously)
 
 SELECT FIRST 2
+	t1.Id,
 	t1.Field
 FROM
 	Issue4963Table t1

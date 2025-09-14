@@ -8,7 +8,9 @@ BeforeExecute
 
 CREATE TEMP TABLE TempTable
 (
-	ID Int NOT NULL
+	ID Int NOT NULL,
+
+	PRIMARY KEY (ID)
 )
 
 BeforeExecute

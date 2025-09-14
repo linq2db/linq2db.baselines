@@ -28,7 +28,6 @@ BeforeExecute
 ALTER TABLE
 	TestBool
 UPDATE
-	Id = 1,
 	Value = NOT Value
 WHERE 1
 

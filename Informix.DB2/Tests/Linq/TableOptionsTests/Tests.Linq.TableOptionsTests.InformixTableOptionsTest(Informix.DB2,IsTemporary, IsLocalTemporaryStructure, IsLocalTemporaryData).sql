@@ -4,7 +4,9 @@
 CREATE TEMP TABLE TestTable
 (
 	Id      Int NOT NULL,
-	"Value" Int NOT NULL
+	"Value" Int NOT NULL,
+
+	PRIMARY KEY (Id)
 )
 
 BeforeExecute

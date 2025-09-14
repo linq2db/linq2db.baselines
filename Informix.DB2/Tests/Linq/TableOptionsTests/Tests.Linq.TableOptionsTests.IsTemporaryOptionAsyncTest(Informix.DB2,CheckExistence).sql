@@ -4,7 +4,9 @@
 CREATE TEMP TABLE IF NOT EXISTS temp_table1
 (
 	ID      Int NOT NULL,
-	"Value" Int NOT NULL
+	"Value" Int NOT NULL,
+
+	PRIMARY KEY (ID)
 )
 
 BeforeExecute
@@ -16,7 +18,9 @@ BeforeExecute
 CREATE TEMP TABLE IF NOT EXISTS temp_table2
 (
 	ID      Int NOT NULL,
-	"Value" Int NOT NULL
+	"Value" Int NOT NULL,
+
+	PRIMARY KEY (ID)
 )
 
 BeforeExecute

@@ -2,6 +2,7 @@
 -- SqlServer.2017
 
 SELECT
+	[x].[Id],
 	[x].[Country],
 	[x].[State]
 FROM

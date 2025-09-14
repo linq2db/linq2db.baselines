@@ -2,6 +2,7 @@
 -- ClickHouse.Driver ClickHouse (asynchronously)
 
 SELECT
+	x.Id,
 	x.Country,
 	x.State
 FROM
