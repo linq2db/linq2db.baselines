@@ -16,7 +16,7 @@ VALUES
 
 BeforeExecute
 -- PostgreSQL.18 PostgreSQL
-DECLARE @Field1 Unknown -- Object
+DECLARE @Field1 Varchar -- String
 SET     @Field1 = NULL
 
 INSERT INTO "Issue1373Tests"
@@ -32,7 +32,7 @@ VALUES
 
 BeforeExecute
 -- PostgreSQL.18 PostgreSQL
-DECLARE @Field1 Text(4) -- String
+DECLARE @Field1 Varchar(4) -- String
 SET     @Field1 = 'test'
 
 INSERT INTO "Issue1373Tests"
