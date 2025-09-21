@@ -23,5 +23,5 @@ SELECT
 FROM
 	[LinqDataTypes] [x]
 WHERE
-	([x].[DateTimeValue2] IN (DATETIME2FROMPARTS(2009, 9, 24, 9, 19, 29, 900000, 7)) OR [x].[DateTimeValue2] IS NULL)
+	([x].[DateTimeValue2] IN (DATETIMEFROMPARTS(2009, 9, 24, 9, 19, 29, 90)) OR [x].[DateTimeValue2] IS NULL)
 
