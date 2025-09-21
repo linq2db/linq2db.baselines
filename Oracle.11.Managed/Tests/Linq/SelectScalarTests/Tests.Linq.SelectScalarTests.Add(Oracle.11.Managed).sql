@@ -1,9 +1,7 @@
 ﻿BeforeExecute
 -- Oracle.11.Managed Oracle11
-DECLARE @p Int32
-SET     @p = 5
 
 SELECT
-	:p
+	Length(Substr('123', 2, 2)) + 3
 FROM SYS.DUAL
 
