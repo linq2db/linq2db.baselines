@@ -2,5 +2,5 @@
 -- ClickHouse.Octonica ClickHouse (asynchronously)
 
 SELECT
-	5
+	lengthUTF8(Substring('123', 2, 2)) + 3
 
