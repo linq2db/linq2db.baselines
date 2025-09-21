@@ -15,5 +15,5 @@ SELECT
 FROM
 	`LinqDataTypes` `t`
 WHERE
-	`t`.`DateTimeValue` IN ('2001-01-11 01:11:21.100')
+	`t`.`DateTimeValue` IN (STR_TO_DATE('2001-01-11 01:11:21.100', '%Y-%m-%d %H:%i:%s.%f'))
 
