@@ -17,7 +17,7 @@ WHERE
 			(VALUES
 				(p."Date1"), (p."Date2"), (p."Date3"), (p."Date4")
 			) t1(item)
-	) > '2023-01-01'::date
+	) > make_timestamp(2023, 1, 1, 0, 0, 0)
 
 BeforeExecute
 -- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL (asynchronously)
