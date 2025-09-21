@@ -1,8 +1,6 @@
 ﻿BeforeExecute
 -- SqlServer.2025.MS SqlServer.2025 SqlServer.2022 (asynchronously)
-DECLARE @p Int -- Int32
-SET     @p = 5
 
 SELECT
-	@p
+	LEN(Substring(N'123', 2, 2) + N'.') + CAST(2 AS NVarChar(11))
 
