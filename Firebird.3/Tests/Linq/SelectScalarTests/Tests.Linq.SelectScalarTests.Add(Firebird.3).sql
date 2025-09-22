@@ -1,9 +1,7 @@
 ﻿BeforeExecute
 -- Firebird.3 Firebird3
-DECLARE @p Integer -- Int32
-SET     @p = 5
 
 SELECT
-	CAST(@p AS Int)
+	CHAR_LENGTH(Substring('123' from 2 for 2)) + 3
 FROM rdb$database
 
