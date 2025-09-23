@@ -1,6 +1,8 @@
 ﻿BeforeExecute
 -- SqlServer.2019.MS SqlServer.2019
+DECLARE @p Int -- Int32
+SET     @p = 5
 
 SELECT
-	LEN(Substring(N'123', 2, 2) + N'.') + 2
+	@p
 
