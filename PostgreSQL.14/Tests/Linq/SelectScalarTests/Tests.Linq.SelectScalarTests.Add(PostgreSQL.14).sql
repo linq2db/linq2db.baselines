@@ -1,6 +1,8 @@
 ﻿BeforeExecute
 -- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+DECLARE @p Integer -- Int32
+SET     @p = 5
 
 SELECT
-	Length(Substring('123', 2, 2)) + 3
+	:p
 
