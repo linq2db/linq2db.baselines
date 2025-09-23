@@ -1,5 +1,7 @@
 ﻿BeforeExecute
 -- PostgreSQL.18 PostgreSQL (asynchronously)
+DECLARE @Length Integer -- Int32
+SET     @Length = 1
 
 SELECT
 	p."FirstName",
@@ -10,6 +12,6 @@ SELECT
 FROM
 	"Person" p
 WHERE
-	Length(p."LastName") - Position('p' in Reverse(p."LastName")) = 2 AND
+	(Length(p."LastName") - Position('p' in Reverse(p."LastName"))) - :Length = 1 AND
 	Position('p' in p."LastName") <> 0 AND p."PersonID" = 1
 
