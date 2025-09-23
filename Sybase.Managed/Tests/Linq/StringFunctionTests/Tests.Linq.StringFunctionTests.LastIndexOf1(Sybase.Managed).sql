@@ -1,5 +1,7 @@
 ﻿BeforeExecute
 -- Sybase.Managed Sybase
+DECLARE @Length Integer -- Int32
+SET     @Length = 1
 
 SELECT
 	[p].[FirstName],
@@ -10,6 +12,6 @@ SELECT
 FROM
 	[Person] [p]
 WHERE
-	CHAR_LENGTH([p].[LastName]) - CharIndex('p', Reverse([p].[LastName])) = 2 AND
+	(CHAR_LENGTH([p].[LastName]) - CharIndex('p', Reverse([p].[LastName]))) - @Length = 1 AND
 	CharIndex('p', [p].[LastName]) <> 0 AND [p].[PersonID] = 1
 

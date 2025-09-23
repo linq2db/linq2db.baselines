@@ -1,6 +1,8 @@
 ﻿BeforeExecute
 -- Sybase.Managed Sybase
+DECLARE @p Integer -- Int32
+SET     @p = 5
 
 SELECT
-	CHAR_LENGTH(Substring('123', 2, 2)) + 3
+	@p
 
