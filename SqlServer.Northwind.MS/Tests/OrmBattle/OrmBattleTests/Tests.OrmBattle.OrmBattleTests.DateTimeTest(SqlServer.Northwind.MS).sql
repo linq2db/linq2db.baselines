@@ -19,5 +19,5 @@ SELECT TOP (1)
 FROM
 	[Orders] [o]
 WHERE
-	[o].[OrderDate] >= DATETIMEFROMPARTS(DatePart(year, [o].[OrderDate]), 1, 1, 0, 0, 0, 0)
+	[o].[OrderDate] >= DATETIME2FROMPARTS(DatePart(year, [o].[OrderDate]), 1, 1, 0, 0, 0, 0, 3)
 

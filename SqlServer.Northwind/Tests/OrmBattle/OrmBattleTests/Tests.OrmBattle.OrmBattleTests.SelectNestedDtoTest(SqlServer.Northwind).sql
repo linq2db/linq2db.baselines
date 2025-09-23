@@ -9,5 +9,5 @@ FROM
 	[Orders] [r]
 		INNER JOIN [Customers] [a_Customer] ON [r].[CustomerID] = [a_Customer].[CustomerID]
 WHERE
-	[r].[OrderDate] > DATETIMEFROMPARTS(1998, 1, 1, 0, 0, 0, 0)
+	[r].[OrderDate] > DATETIME2FROMPARTS(1998, 1, 1, 0, 0, 0, 0, 3)
 
