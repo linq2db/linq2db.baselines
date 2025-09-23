@@ -8,7 +8,7 @@ SELECT
 FROM
 	[Booking] [t]
 WHERE
-	[t].[ServiceDate] > DateAdd(day, -2, CAST('2020-02-29T17:54:55.123' AS DATETIME))
+	[t].[ServiceDate] > CAST('2020-02-27T17:54:55.123' AS DATETIME)
 ORDER BY
 	[t].[ServiceDate] DESC,
 	[t].[BookingID] DESC
@@ -35,7 +35,7 @@ FROM
 		FROM
 			[Booking] [e]
 		WHERE
-			[e].[ServiceDate] > DateAdd(day, -2, CAST('2020-02-29T17:54:55.123' AS DATETIME))
+			[e].[ServiceDate] > CAST('2020-02-27T17:54:55.123' AS DATETIME)
 	) [q]
 WHERE
 	[q].[RowNumber] <= @take
@@ -64,7 +64,7 @@ AS
 	FROM
 		[Booking] [e]
 	WHERE
-		[e].[ServiceDate] > DateAdd(day, -2, CAST('2020-02-29T17:54:55.123' AS DATETIME))
+		[e].[ServiceDate] > CAST('2020-02-27T17:54:55.123' AS DATETIME)
 )
 SELECT
 	[q].[RowNumber],
@@ -108,7 +108,7 @@ AS
 	FROM
 		[Booking] [e]
 	WHERE
-		[e].[ServiceDate] > DateAdd(day, -2, CAST('2020-02-29T17:54:55.123' AS DATETIME))
+		[e].[ServiceDate] > CAST('2020-02-27T17:54:55.123' AS DATETIME)
 )
 SELECT
 	[q].[RowNumber],
@@ -152,7 +152,7 @@ AS
 	FROM
 		[Booking] [e]
 	WHERE
-		[e].[ServiceDate] > DateAdd(day, -2, CAST('2020-02-29T17:54:55.123' AS DATETIME))
+		[e].[ServiceDate] > CAST('2020-02-27T17:54:55.123' AS DATETIME)
 )
 SELECT
 	[q].[RowNumber],
