@@ -1,6 +1,8 @@
 ﻿BeforeExecute
 -- SqlCe (asynchronously)
+DECLARE @p Int -- Int32
+SET     @p = 5
 
 SELECT
-	LEN(Substring('123', 2, 2) + '.') + CAST(2 AS NVarChar(11)) as [c1]
+	@p as [c1]
 

@@ -1,6 +1,8 @@
 ﻿BeforeExecute
 -- SqlCe (asynchronously)
+DECLARE @p Int -- Int32
+SET     @p = 2
 
 SELECT
-	Substring('123', 2, 2) as [c1]
+	Substring('123', 2, @p) as [c1]
 

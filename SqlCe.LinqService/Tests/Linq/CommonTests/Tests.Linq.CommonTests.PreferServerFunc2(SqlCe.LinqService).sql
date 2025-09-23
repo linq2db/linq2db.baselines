@@ -1,8 +1,10 @@
 ﻿BeforeExecute
 -- SqlCe (asynchronously)
+DECLARE @Length Int -- Int32
+SET     @Length = 0
 
 SELECT
-	LEN([p].[FirstName] + '.') - 1 as [c1]
+	LEN([p].[FirstName] + '.') - 1 + @Length as [c1]
 FROM
 	[Person] [p]
 
