@@ -1,5 +1,7 @@
 ﻿BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
+DECLARE @Length Integer -- Int32
+SET     @Length = 3
 
 SELECT
 	p."PersonID",
@@ -7,6 +9,6 @@ SELECT
 FROM
 	"Person" p
 WHERE
-	p."PersonID" = 1 AND 1 = Position('321' in Reverse(Substring('123' || p."FirstName" || '0123451234', 6, 6))) AND
+	p."PersonID" = 1 AND (11 - Position('321' in Reverse(Substring('123' || p."FirstName" || '0123451234', 6, 6)))) - :Length = 7 AND
 	Position('123' in Substring(Substring('123' || p."FirstName" || '0123451234', 1, 11), 6, Length(Substring('123' || p."FirstName" || '0123451234', 1, 11)) - 6)) + 5 <> 0
 
