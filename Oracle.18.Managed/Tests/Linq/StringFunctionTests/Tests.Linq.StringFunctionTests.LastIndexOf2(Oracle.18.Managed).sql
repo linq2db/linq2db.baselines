@@ -1,5 +1,7 @@
 ﻿BeforeExecute
 -- Oracle.18.Managed Oracle.Managed Oracle12
+DECLARE @Length Int32
+SET     @Length = 3
 
 SELECT
 	p."PersonID",
@@ -7,6 +9,6 @@ SELECT
 FROM
 	"Person" p
 WHERE
-	p."PersonID" = 1 AND Length('123' || p."FirstName" || '012345') - InStr(Reverse(Substr('123' || p."FirstName" || '012345', 6, Length('123' || p."FirstName" || '012345') - 5)), '321') = 10 AND
+	p."PersonID" = 1 AND (Length('123' || p."FirstName" || '012345') - InStr(Reverse(Substr('123' || p."FirstName" || '012345', 6, Length('123' || p."FirstName" || '012345') - 5)), '321')) - :Length = 7 AND
 	InStr('123' || p."FirstName" || '012345', '123', 6) <> 0
 

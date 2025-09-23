@@ -1,8 +1,10 @@
 ﻿BeforeExecute
 -- Oracle.18.Managed Oracle.Managed Oracle12 (asynchronously)
+DECLARE @Length Int32
+SET     @Length = 0
 
 SELECT
-	Length(p."FirstName")
+	Length(p."FirstName") + :Length
 FROM
 	"Person" p
 

@@ -1,5 +1,7 @@
 ﻿BeforeExecute
 -- Oracle.18.Managed Oracle.Managed Oracle12
+DECLARE @Length Int32
+SET     @Length = 1
 
 SELECT
 	p."FirstName",
@@ -10,6 +12,6 @@ SELECT
 FROM
 	"Person" p
 WHERE
-	Length(p."LastName") - InStr(Reverse(p."LastName"), 'p') = 2 AND
+	(Length(p."LastName") - InStr(Reverse(p."LastName"), 'p')) - :Length = 1 AND
 	InStr(p."LastName", 'p') <> 0 AND p."PersonID" = 1
 
