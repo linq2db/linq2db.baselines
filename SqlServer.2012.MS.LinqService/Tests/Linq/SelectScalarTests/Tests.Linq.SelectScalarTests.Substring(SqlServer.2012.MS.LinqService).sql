@@ -1,6 +1,8 @@
 ﻿BeforeExecute
 -- SqlServer.2012.MS SqlServer.2012 (asynchronously)
+DECLARE @p Int -- Int32
+SET     @p = 2
 
 SELECT
-	Substring(N'123', 2, 2)
+	Substring(N'123', 2, @p)
 
