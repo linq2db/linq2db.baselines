@@ -1,6 +1,8 @@
 ﻿BeforeExecute
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql (asynchronously)
+DECLARE @p Int32
+SET     @p = 5
 
 SELECT
-	CHAR_LENGTH(Substring('123', 2, 2)) + 3 as `c1`
+	@p as `c1`
 
