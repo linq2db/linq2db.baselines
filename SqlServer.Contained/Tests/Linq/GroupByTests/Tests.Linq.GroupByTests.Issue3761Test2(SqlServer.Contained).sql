@@ -14,7 +14,7 @@ FROM
 		FROM
 			[Issue3761Table] [n]
 		WHERE
-			[n].[DATUM] < DATETIMEFROMPARTS(2019, 1, 1, 0, 0, 0, 0)
+			[n].[DATUM] < DATETIME2FROMPARTS(2019, 1, 1, 0, 0, 0, 0, 3)
 	) [t1]
 GROUP BY
 	[t1].[Year_1],
@@ -33,7 +33,7 @@ FROM
 		FROM
 			[Issue3761Table] [n_1]
 		WHERE
-			[n_1].[DATUM] >= DATETIMEFROMPARTS(2019, 1, 1, 0, 0, 0, 0)
+			[n_1].[DATUM] >= DATETIME2FROMPARTS(2019, 1, 1, 0, 0, 0, 0, 3)
 	) [t2]
 GROUP BY
 	[t2].[Year_1],
