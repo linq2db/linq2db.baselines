@@ -1,5 +1,7 @@
 ﻿BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80 (asynchronously)
+DECLARE @Length Int32
+SET     @Length = 4
 
 SELECT
 	`p`.`FirstName`,
@@ -10,5 +12,5 @@ SELECT
 FROM
 	`Person` `p`
 WHERE
-	CHAR_LENGTH(`p`.`FirstName`) = 4 AND `p`.`PersonID` = 1
+	CHAR_LENGTH(`p`.`FirstName`) = @Length AND `p`.`PersonID` = 1
 
