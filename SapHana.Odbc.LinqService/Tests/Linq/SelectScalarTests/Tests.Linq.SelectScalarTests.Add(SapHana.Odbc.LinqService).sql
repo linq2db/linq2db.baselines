@@ -1,7 +1,9 @@
 ﻿BeforeExecute
 -- SapHana.Odbc SapHanaOdbc (asynchronously)
+DECLARE @p Int -- Int32
+SET     @p = 5
 
 SELECT
-	Length(Substring('123', 2, 2)) + 3
+	?
 FROM DUMMY
 
