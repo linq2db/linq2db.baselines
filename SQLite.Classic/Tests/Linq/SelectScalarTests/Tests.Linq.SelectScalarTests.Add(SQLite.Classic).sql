@@ -1,6 +1,8 @@
 ﻿BeforeExecute
 -- SQLite.Classic SQLite
+DECLARE @p  -- Int32
+SET     @p = 5
 
 SELECT
-	Length(Substr('123', 2, 2)) + 3
+	@p
 
