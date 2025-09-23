@@ -1,5 +1,7 @@
 ﻿BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite (asynchronously)
+DECLARE @Length  -- Int32
+SET     @Length = 1
 
 SELECT
 	[p].[FirstName],
@@ -10,6 +12,6 @@ SELECT
 FROM
 	[Person] [p]
 WHERE
-	Length([p].[LastName]) - CharIndex('p', Reverse([p].[LastName])) = 2 AND
+	(Length([p].[LastName]) - CharIndex('p', Reverse([p].[LastName]))) - @Length = 1 AND
 	CharIndex('p', [p].[LastName]) <> 0 AND [p].[PersonID] = 1
 
