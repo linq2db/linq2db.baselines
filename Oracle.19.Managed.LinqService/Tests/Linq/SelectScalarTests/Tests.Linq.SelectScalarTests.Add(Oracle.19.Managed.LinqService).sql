@@ -1,7 +1,9 @@
 ﻿BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12 (asynchronously)
+DECLARE @p Int32
+SET     @p = 5
 
 SELECT
-	Length(Substr('123', 2, 2)) + 3
+	:p
 FROM SYS.DUAL
 
