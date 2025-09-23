@@ -1,6 +1,8 @@
 ﻿BeforeExecute
 -- Access.Jet.OleDb AccessOleDb (asynchronously)
+DECLARE @p Integer -- Int32
+SET     @p = 5
 
 SELECT
-	Len(Mid('123', 2, 2)) + 3
+	CVar(@p)
 

@@ -1,8 +1,10 @@
 ﻿BeforeExecute
 -- Access.Jet.OleDb AccessOleDb (asynchronously)
+DECLARE @Length Integer -- Int32
+SET     @Length = 0
 
 SELECT
-	Len([p].[FirstName])
+	Len([p].[FirstName]) + @Length
 FROM
 	[Person] [p]
 

@@ -1,6 +1,8 @@
 ﻿BeforeExecute
 -- Access.Jet.Odbc AccessODBC (asynchronously)
+DECLARE @p Int -- Int32
+SET     @p = 5
 
 SELECT
-	Len(Mid('123', 2, 2)) + 3
+	CVar(?)
 
