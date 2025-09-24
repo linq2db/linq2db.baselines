@@ -1,7 +1,5 @@
 ﻿BeforeExecute
 -- SqlServer.Northwind.MS SqlServer.2019
-DECLARE @Length Int -- Int32
-SET     @Length = 1
 
 SELECT TOP (1)
 	[c_1].[CustomerID],
@@ -18,6 +16,6 @@ SELECT TOP (1)
 FROM
 	[Customers] [c_1]
 WHERE
-	(4 - CharIndex(N't', Reverse(Substring([c_1].[City], 2, 3)))) - @Length + 1 = 3 AND
+	4 - CharIndex(N't', Reverse(Substring([c_1].[City], 2, 3))) = 3 AND
 	(CharIndex(N't', Left([c_1].[City], 4), 2) <> 0 OR [c_1].[City] IS NULL)
 
