@@ -1,7 +1,5 @@
 ﻿BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
-DECLARE @Length  -- Int32
-SET     @Length = 3
 
 SELECT
 	[p].[PersonID],
@@ -9,6 +7,6 @@ SELECT
 FROM
 	[Person] [p]
 WHERE
-	[p].[PersonID] = 1 AND (11 - CharIndex('321', Reverse(Substr('123' || [p].[FirstName] || '0123451234', 6, 6)))) - @Length = 7 AND
+	[p].[PersonID] = 1 AND 1 = CharIndex('321', Reverse(Substr('123' || [p].[FirstName] || '0123451234', 6, 6))) AND
 	CharIndex('123', LeftStr('123' || [p].[FirstName] || '0123451234', 11), 6) <> 0
 
