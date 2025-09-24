@@ -1,7 +1,5 @@
 ﻿BeforeExecute
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql
-DECLARE @Length Int32
-SET     @Length = 3
 
 SELECT
 	`p`.`PersonID`,
@@ -9,6 +7,6 @@ SELECT
 FROM
 	`Person` `p`
 WHERE
-	`p`.`PersonID` = 1 AND (11 - Locate('321', Reverse(Substring(Concat('123', `p`.`FirstName`, '0123451234'), 6, 6)))) - @Length = 7 AND
+	`p`.`PersonID` = 1 AND 1 = Locate('321', Reverse(Substring(Concat('123', `p`.`FirstName`, '0123451234'), 6, 6))) AND
 	Locate('123', Left(Concat('123', `p`.`FirstName`, '0123451234'), 11), 6) <> 0
 

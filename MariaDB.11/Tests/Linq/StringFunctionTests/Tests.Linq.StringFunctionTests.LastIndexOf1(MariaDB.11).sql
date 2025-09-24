@@ -1,7 +1,5 @@
 ﻿BeforeExecute
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql
-DECLARE @Length Int32
-SET     @Length = 1
 
 SELECT
 	`p`.`FirstName`,
@@ -12,6 +10,6 @@ SELECT
 FROM
 	`Person` `p`
 WHERE
-	(CHAR_LENGTH(`p`.`LastName`) - Locate('p', Reverse(`p`.`LastName`))) - @Length = 1 AND
+	CHAR_LENGTH(`p`.`LastName`) - Locate('p', Reverse(`p`.`LastName`)) = 2 AND
 	Locate('p', `p`.`LastName`) <> 0 AND `p`.`PersonID` = 1
 
