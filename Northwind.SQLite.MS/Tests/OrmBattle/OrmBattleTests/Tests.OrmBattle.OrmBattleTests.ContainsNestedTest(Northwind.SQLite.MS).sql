@@ -21,7 +21,7 @@ SELECT
 				[Orders] [o]
 					INNER JOIN [Customers] [a_Customer] ON [o].[CustomerID] = [a_Customer].[CustomerID]
 			WHERE
-				strftime('%Y-%m-%d %H:%M:%f', [o].[OrderDate]) > strftime('%Y-%m-%d %H:%M:%f', '2001-01-01 00:00:00.000')
+				strftime('%Y-%m-%d %H:%M:%f', [o].[OrderDate]) > strftime('%Y-%m-%d %H:%M:%f', strftime('%Y-%m-%d %H:%M:%f', '2001-01-01 00:00:00.000'))
 		)
 			THEN 1
 		ELSE 0

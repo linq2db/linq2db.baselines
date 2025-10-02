@@ -15,5 +15,5 @@ SELECT
 FROM
 	[LinqDataTypes] [t]
 WHERE
-	[t].[DateTimeValue] IN ('2001-01-11 01:11:21.100')
+	[t].[DateTimeValue] IN (strftime('%Y-%m-%d %H:%M:%f', '2001-01-11 01:11:21.100'))
 
