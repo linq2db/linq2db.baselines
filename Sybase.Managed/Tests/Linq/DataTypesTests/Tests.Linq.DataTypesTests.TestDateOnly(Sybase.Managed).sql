@@ -3,7 +3,7 @@
 DECLARE @Column Date
 SET     @Column = '2020-02-29'
 DECLARE @ColumnNullable Date
-SET     @ColumnNullable = '2200-01-01'
+SET     @ColumnNullable = '2020-01-01'
 
 SELECT
 	[r].[Id],
@@ -24,7 +24,7 @@ SELECT
 FROM
 	[DateOnlyTable] [r]
 WHERE
-	[r].[Column] = '2020-02-29' AND [r].[ColumnNullable] = '2200-01-01'
+	[r].[Column] = '2020-02-29' AND [r].[ColumnNullable] = '2020-01-01'
 
 BeforeExecute
 -- Sybase.Managed Sybase
@@ -38,7 +38,7 @@ BeforeExecute
 DECLARE @Id Integer -- Int32
 SET     @Id = 1
 DECLARE @Column Date
-SET     @Column = '1950-01-01'
+SET     @Column = '1980-01-01'
 DECLARE @ColumnNullable Date
 SET     @ColumnNullable = NULL
 
@@ -62,7 +62,7 @@ SET     @Id = 2
 DECLARE @Column Date
 SET     @Column = '2020-02-29'
 DECLARE @ColumnNullable Date
-SET     @ColumnNullable = '2200-01-01'
+SET     @ColumnNullable = '2020-01-01'
 
 INSERT INTO [DateOnlyTable]
 (
@@ -105,8 +105,8 @@ INSERT INTO [DateOnlyTable]
 	[Column],
 	[ColumnNullable]
 )
-SELECT 1,'1950-01-01',NULL UNION ALL
-SELECT 2,'2020-02-29','2200-01-01'
+SELECT 1,'1980-01-01',NULL UNION ALL
+SELECT 2,'2020-02-29','2020-01-01'
 
 BeforeExecute
 -- Sybase.Managed Sybase
@@ -136,8 +136,8 @@ INSERT INTO [DateOnlyTable]
 	[Column],
 	[ColumnNullable]
 )
-SELECT 1,'1950-01-01',NULL UNION ALL
-SELECT 2,'2020-02-29','2200-01-01'
+SELECT 1,'1980-01-01',NULL UNION ALL
+SELECT 2,'2020-02-29','2020-01-01'
 
 BeforeExecute
 -- Sybase.Managed Sybase

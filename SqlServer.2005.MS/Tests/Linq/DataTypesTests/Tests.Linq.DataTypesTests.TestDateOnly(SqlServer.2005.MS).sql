@@ -3,7 +3,7 @@
 DECLARE @Column DateTime
 SET     @Column = CAST('2020-02-29T00:00:00.000' AS DATETIME)
 DECLARE @ColumnNullable DateTime
-SET     @ColumnNullable = CAST('2200-01-01T00:00:00.000' AS DATETIME)
+SET     @ColumnNullable = CAST('2020-01-01T00:00:00.000' AS DATETIME)
 
 SELECT
 	[r].[Id],
@@ -24,7 +24,7 @@ SELECT
 FROM
 	[DateOnlyTable] [r]
 WHERE
-	[r].[Column] = CAST('2020-02-29' AS DATETIME) AND [r].[ColumnNullable] = CAST('2200-01-01' AS DATETIME)
+	[r].[Column] = CAST('2020-02-29' AS DATETIME) AND [r].[ColumnNullable] = CAST('2020-01-01' AS DATETIME)
 
 BeforeExecute
 -- SqlServer.2005.MS SqlServer.2005
@@ -38,7 +38,7 @@ BeforeExecute
 DECLARE @Id Int -- Int32
 SET     @Id = 1
 DECLARE @Column DateTime
-SET     @Column = CAST('1950-01-01T00:00:00.000' AS DATETIME)
+SET     @Column = CAST('1980-01-01T00:00:00.000' AS DATETIME)
 DECLARE @ColumnNullable DateTime
 SET     @ColumnNullable = NULL
 
@@ -62,7 +62,7 @@ SET     @Id = 2
 DECLARE @Column DateTime
 SET     @Column = CAST('2020-02-29T00:00:00.000' AS DATETIME)
 DECLARE @ColumnNullable DateTime
-SET     @ColumnNullable = CAST('2200-01-01T00:00:00.000' AS DATETIME)
+SET     @ColumnNullable = CAST('2020-01-01T00:00:00.000' AS DATETIME)
 
 INSERT INTO [DateOnlyTable]
 (
@@ -105,8 +105,8 @@ INSERT INTO [DateOnlyTable]
 	[Column],
 	[ColumnNullable]
 )
-SELECT 1,CAST('1950-01-01' AS DATETIME),NULL UNION ALL
-SELECT 2,CAST('2020-02-29' AS DATETIME),CAST('2200-01-01' AS DATETIME)
+SELECT 1,CAST('1980-01-01' AS DATETIME),NULL UNION ALL
+SELECT 2,CAST('2020-02-29' AS DATETIME),CAST('2020-01-01' AS DATETIME)
 
 BeforeExecute
 -- SqlServer.2005.MS SqlServer.2005

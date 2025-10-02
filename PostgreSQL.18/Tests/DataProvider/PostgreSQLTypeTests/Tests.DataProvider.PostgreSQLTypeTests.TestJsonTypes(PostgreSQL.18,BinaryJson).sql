@@ -71,6 +71,10 @@ DELETE FROM
 
 BeforeExecute
 -- PostgreSQL.18 PostgreSQL
+DECLARE @:p1 Jsonb -- Object
+SET     @:p1 = 'null'
+DECLARE @:p2 Jsonb -- Object
+SET     @:p2 = 'null'
 
 INSERT INTO "TypeTable`2"
 (
@@ -78,7 +82,7 @@ INSERT INTO "TypeTable`2"
 	"ColumnNullable"
 )
 VALUES
-('null','null')
+(:p1,:p2)
 
 BeforeExecute
 -- PostgreSQL.18 PostgreSQL
@@ -216,6 +220,10 @@ DELETE FROM
 
 BeforeExecute
 -- PostgreSQL.18 PostgreSQL
+DECLARE @:p1 Jsonb -- Object
+SET     @:p1 = 'true'
+DECLARE @:p2 Jsonb -- Object
+SET     @:p2 = 'false'
 
 INSERT INTO "TypeTable`2"
 (
@@ -223,7 +231,7 @@ INSERT INTO "TypeTable`2"
 	"ColumnNullable"
 )
 VALUES
-('true','false')
+(:p1,:p2)
 
 BeforeExecute
 -- PostgreSQL.18 PostgreSQL
@@ -361,6 +369,10 @@ DELETE FROM
 
 BeforeExecute
 -- PostgreSQL.18 PostgreSQL
+DECLARE @:p1 Jsonb -- Object
+SET     @:p1 = '12'
+DECLARE @:p2 Jsonb -- Object
+SET     @:p2 = '-34'
 
 INSERT INTO "TypeTable`2"
 (
@@ -368,7 +380,7 @@ INSERT INTO "TypeTable`2"
 	"ColumnNullable"
 )
 VALUES
-('12','-34')
+(:p1,:p2)
 
 BeforeExecute
 -- PostgreSQL.18 PostgreSQL
@@ -506,6 +518,10 @@ DELETE FROM
 
 BeforeExecute
 -- PostgreSQL.18 PostgreSQL
+DECLARE @:p1 Jsonb -- Object
+SET     @:p1 = '-12e34'
+DECLARE @:p2 Jsonb -- Object
+SET     @:p2 = '34.12'
 
 INSERT INTO "TypeTable`2"
 (
@@ -513,7 +529,7 @@ INSERT INTO "TypeTable`2"
 	"ColumnNullable"
 )
 VALUES
-('-12e34','34.12')
+(:p1,:p2)
 
 BeforeExecute
 -- PostgreSQL.18 PostgreSQL
@@ -651,6 +667,10 @@ DELETE FROM
 
 BeforeExecute
 -- PostgreSQL.18 PostgreSQL
+DECLARE @:p1 Jsonb -- Object
+SET     @:p1 = '"тест"'
+DECLARE @:p2 Jsonb -- Object
+SET     @:p2 = '""'
 
 INSERT INTO "TypeTable`2"
 (
@@ -658,7 +678,7 @@ INSERT INTO "TypeTable`2"
 	"ColumnNullable"
 )
 VALUES
-('"тест"','""')
+(:p1,:p2)
 
 BeforeExecute
 -- PostgreSQL.18 PostgreSQL
@@ -792,6 +812,10 @@ DELETE FROM
 
 BeforeExecute
 -- PostgreSQL.18 PostgreSQL
+DECLARE @:p1 Jsonb -- Object
+SET     @:p1 = 'null'
+DECLARE @:p2 Jsonb -- Object
+SET     @:p2 = NULL
 
 INSERT INTO "TypeTable`2"
 (
@@ -799,7 +823,7 @@ INSERT INTO "TypeTable`2"
 	"ColumnNullable"
 )
 VALUES
-('null',NULL)
+(:p1,:p2)
 
 BeforeExecute
 -- PostgreSQL.18 PostgreSQL
@@ -931,6 +955,10 @@ DELETE FROM
 
 BeforeExecute
 -- PostgreSQL.18 PostgreSQL
+DECLARE @:p1 Jsonb -- Object
+SET     @:p1 = '[1, 2, 3]'
+DECLARE @:p2 Jsonb -- Object
+SET     @:p2 = '[true, false]'
 
 INSERT INTO "TypeTable`2"
 (
@@ -938,7 +966,7 @@ INSERT INTO "TypeTable`2"
 	"ColumnNullable"
 )
 VALUES
-('[1, 2, 3]','[true, false]')
+(:p1,:p2)
 
 BeforeExecute
 -- PostgreSQL.18 PostgreSQL
@@ -1077,6 +1105,10 @@ DELETE FROM
 
 BeforeExecute
 -- PostgreSQL.18 PostgreSQL
+DECLARE @:p1 Jsonb -- Object
+SET     @:p1 = '{"x": 1, "y": {"a": null, "b": "тест", "w": [1, null, "qqq", true], "z": true}}'
+DECLARE @:p2 Jsonb -- Object
+SET     @:p2 = '{"4454": {"": true, "b": "тест", "w": [-1, false, "qqdfg q", true], "null": null}, "тест": 1}'
 
 INSERT INTO "TypeTable`2"
 (
@@ -1084,7 +1116,7 @@ INSERT INTO "TypeTable`2"
 	"ColumnNullable"
 )
 VALUES
-('{"x": 1, "y": {"a": null, "b": "тест", "w": [1, null, "qqq", true], "z": true}}','{"4454": {"": true, "b": "тест", "w": [-1, false, "qqdfg q", true], "null": null}, "тест": 1}')
+(:p1,:p2)
 
 BeforeExecute
 -- PostgreSQL.18 PostgreSQL
