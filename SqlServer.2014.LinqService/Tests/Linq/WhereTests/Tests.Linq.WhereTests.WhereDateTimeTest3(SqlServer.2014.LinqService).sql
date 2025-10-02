@@ -13,5 +13,5 @@ SELECT
 FROM
 	[LinqDataTypes] [t1]
 WHERE
-	[t1].[DateTimeValue] = DATETIMEFROMPARTS(2009, 9, 27, 0, 0, 0, 0)
+	[t1].[DateTimeValue] = DATETIME2FROMPARTS(2009, 9, 27, 0, 0, 0, 0, 3)
 

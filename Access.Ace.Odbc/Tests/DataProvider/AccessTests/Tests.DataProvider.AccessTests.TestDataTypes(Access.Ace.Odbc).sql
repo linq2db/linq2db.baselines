@@ -800,11 +800,11 @@ SELECT binaryDataType FROM [AllTypes] WHERE ID = 1
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @p0 NVarChar -- String
+DECLARE @p0 VarBinary -- Binary
 SET     @p0 = NULL
-DECLARE @p1 NVarChar -- String
+DECLARE @p1 VarBinary -- Binary
 SET     @p1 = NULL
-DECLARE @p2 NVarChar -- String
+DECLARE @p2 VarBinary -- Binary
 SET     @p2 = NULL
 
 SELECT ID FROM [AllTypes] WHERE ? IS NULL AND binaryDataType IS NULL OR ? IS NOT NULL AND binaryDataType = ?
@@ -827,7 +827,7 @@ SELECT binaryDataType FROM [AllTypes] WHERE ID = 2
 
 BeforeExecute
 -- Access.Ace.Odbc AccessODBC
-DECLARE @p NVarChar(10) -- String
+DECLARE @p VarBinary(10) -- Binary
 SET     @p = 0x01020304000000000000
 
 SELECT ID FROM [AllTypes] WHERE binaryDataType = ?

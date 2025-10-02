@@ -58,5 +58,5 @@ SELECT
 FROM
 	[Issue4904Table] [r]
 WHERE
-	strftime('%Y-%m-%d %H:%M:%f', [r].[RecordDate]) <= strftime('%Y-%m-%d %H:%M:%f', strftime('%Y-%m-%d %H:%M:%f', '9999-12-31 23:59:59.999', '-0.001 Second'))
+	strftime('%Y-%m-%d %H:%M:%f', [r].[RecordDate]) <= strftime('%Y-%m-%d %H:%M:%f', '9999-12-31 23:59:59.998')
 

@@ -20,7 +20,7 @@ BeforeExecute
 -- Sybase.Managed Sybase (asynchronously)
 DECLARE @Id Integer -- Int32
 SET     @Id = 2
-DECLARE @Field1 Char -- AnsiStringFixedLength
+DECLARE @Field1 UniVarChar -- String
 SET     @Field1 = NULL
 
 INSERT INTO [Issue1373Tests]

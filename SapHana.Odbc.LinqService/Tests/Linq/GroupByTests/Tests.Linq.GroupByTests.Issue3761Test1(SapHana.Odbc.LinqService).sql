@@ -20,7 +20,7 @@ FROM
 		FROM
 			"Issue3761Table" "n"
 		WHERE
-			"n"."DATUM" < '2019-01-01'
+			"n"."DATUM" < To_Timestamp('2019-01-01 00:00:00.000')
 	) "t1"
 GROUP BY
 	"t1"."Year_1",

@@ -21,7 +21,7 @@ WHERE
 				VALUES
 					([p].[Date1]), ([p].[Date2]), ([p].[Date3]), ([p].[Date4])
 				) [t1]
-	) > strftime('%Y-%m-%d %H:%M:%f', '2023-01-01 00:00:00.000')
+	) > strftime('%Y-%m-%d %H:%M:%f', strftime('%Y-%m-%d %H:%M:%f', '2023-01-01 00:00:00.000'))
 
 BeforeExecute
 -- SQLite.MS SQLite

@@ -48,7 +48,7 @@ SELECT
 FROM
 	[LinqDataTypes] [t]
 WHERE
-	[t].[ID] = 5000 AND DateAdd(day, [t].[SmallIntValue], [t].[DateTimeValue]) < DATETIMEFROMPARTS(2018, 1, 2, 0, 0, 0, 0)
+	[t].[ID] = 5000 AND DateAdd(day, [t].[SmallIntValue], [t].[DateTimeValue]) < DATETIME2FROMPARTS(2018, 1, 2, 0, 0, 0, 0, 3)
 
 BeforeExecute
 -- SqlServer.SA.MS SqlServer.2019

@@ -15,5 +15,5 @@ SELECT
 FROM
 	[LinqDataTypes] [t1]
 WHERE
-	strftime('%Y-%m-%d %H:%M:%f', [t1].[DateTimeValue]) = strftime('%Y-%m-%d %H:%M:%f', '2009-09-27 00:00:00.000')
+	strftime('%Y-%m-%d %H:%M:%f', [t1].[DateTimeValue]) = strftime('%Y-%m-%d %H:%M:%f', strftime('%Y-%m-%d %H:%M:%f', '2009-09-27 00:00:00.000'))
 

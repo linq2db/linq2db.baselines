@@ -1,0 +1,18 @@
+﻿BeforeExecute
+-- PostgreSQL.17 PostgreSQL.15 PostgreSQL
+
+SELECT
+	SUM(t3."PersonID")
+FROM
+	(
+		SELECT
+			t1."PersonID"
+		FROM
+			"Person" t1
+		UNION ALL
+		SELECT
+			t2."ParentID" as "PersonID"
+		FROM
+			"Parent" t2
+	) t3
+

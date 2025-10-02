@@ -1,9 +1,7 @@
 ﻿BeforeExecute
 -- Oracle.18.Managed Oracle.Managed Oracle12 (asynchronously)
-DECLARE @p Int32
-SET     @p = 5
 
 SELECT
-	:p
+	5
 FROM SYS.DUAL
 

@@ -8,7 +8,7 @@ SELECT
 FROM
 	(
 		SELECT
-			DATETIMEFROMPARTS(DatePart(year, [grp].[DateTimeValue]), DatePart(month, [grp].[DateTimeValue]), 1, 0, 0, 0, 0) as [Date_1],
+			DATETIME2FROMPARTS(DatePart(year, [grp].[DateTimeValue]), DatePart(month, [grp].[DateTimeValue]), 1, 0, 0, 0, 0, 3) as [Date_1],
 			[grp].[MoneyValue]
 		FROM
 			[LinqDataTypes] [grp]
@@ -26,7 +26,7 @@ SELECT
 FROM
 	(
 		SELECT
-			DATETIMEFROMPARTS(DatePart(year, [grp].[DateTimeValue]), DatePart(month, [grp].[DateTimeValue]), 1, 0, 0, 0, 0) as [Date_1],
+			DATETIME2FROMPARTS(DatePart(year, [grp].[DateTimeValue]), DatePart(month, [grp].[DateTimeValue]), 1, 0, 0, 0, 0, 3) as [Date_1],
 			[grp].[MoneyValue]
 		FROM
 			[LinqDataTypes] [grp]

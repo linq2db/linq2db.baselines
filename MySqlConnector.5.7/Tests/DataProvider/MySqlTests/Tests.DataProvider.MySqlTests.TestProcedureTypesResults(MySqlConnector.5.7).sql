@@ -27,7 +27,7 @@ DECLARE @Char1 String(1) -- AnsiStringFixedLength
 SET     @Char1 = NULL
 DECLARE @VarBinary255 Blob(255) -- Binary
 SET     @VarBinary255 = NULL
-DECLARE @Binary255 VarChar(255) -- String
+DECLARE @Binary255 Blob(255) -- Binary
 SET     @Binary255 = NULL
 DECLARE @TinyBlob Blob(255) -- Binary
 SET     @TinyBlob = NULL
@@ -132,7 +132,7 @@ DECLARE @Char1 String(1) -- AnsiStringFixedLength
 SET     @Char1 = NULL
 DECLARE @VarBinary255 Blob(255) -- Binary
 SET     @VarBinary255 = NULL
-DECLARE @Binary255 VarChar(255) -- String
+DECLARE @Binary255 Blob(255) -- Binary
 SET     @Binary255 = NULL
 DECLARE @TinyBlob Blob(255) -- Binary
 SET     @TinyBlob = NULL

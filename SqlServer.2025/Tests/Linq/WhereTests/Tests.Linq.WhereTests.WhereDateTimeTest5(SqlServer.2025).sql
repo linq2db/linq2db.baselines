@@ -13,5 +13,5 @@ SELECT
 FROM
 	[LinqDataTypes] [t1]
 WHERE
-	CAST([t1].[DateTimeValue] AS Date) = CAST(DATETIMEFROMPARTS(2009, 9, 20, 0, 0, 0, 0) AS Date)
+	CAST([t1].[DateTimeValue] AS Date) = CAST(DATETIME2FROMPARTS(2009, 9, 20, 0, 0, 0, 0, 3) AS Date)
 

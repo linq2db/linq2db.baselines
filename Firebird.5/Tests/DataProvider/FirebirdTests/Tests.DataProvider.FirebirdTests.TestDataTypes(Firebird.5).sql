@@ -681,7 +681,7 @@ SELECT "blobDataType" FROM "AllTypes" WHERE ID = 1
 
 BeforeExecute
 -- Firebird.5 Firebird4
-DECLARE @p VarChar -- String
+DECLARE @p Binary
 SET     @p = NULL
 
 SELECT ID FROM "AllTypes" WHERE @p IS NULL AND "blobDataType" IS NULL OR @p IS NOT NULL AND "blobDataType" = @p

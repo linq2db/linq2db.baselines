@@ -20,7 +20,7 @@ SELECT
 			[Orders] [o]
 				INNER JOIN [Customers] [a_Customer] ON [o].[CustomerID] = [a_Customer].[CustomerID]
 		WHERE
-			[o].[OrderDate] > DATETIME2FROMPARTS(2001, 1, 1, 0, 0, 0, 0, 7)
+			[o].[OrderDate] > DATETIME2FROMPARTS(2001, 1, 1, 0, 0, 0, 0, 3)
 	), 1, 0)
 FROM
 	[Customers] [c_1]

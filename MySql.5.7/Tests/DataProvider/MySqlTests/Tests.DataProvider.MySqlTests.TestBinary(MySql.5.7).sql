@@ -1,6 +1,6 @@
 ﻿BeforeExecute
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57
-DECLARE @p Blob(2) -- Object
+DECLARE @p Blob(2) -- Binary
 SET     @p = 0x3039
 
 SELECT @p

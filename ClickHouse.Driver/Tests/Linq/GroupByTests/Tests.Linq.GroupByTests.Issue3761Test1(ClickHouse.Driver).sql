@@ -20,7 +20,7 @@ FROM
 		FROM
 			Issue3761Table n
 		WHERE
-			n.DATUM < toDateTime64('2019-01-01 00:00:00.0000000', 7)
+			n.DATUM < makeDateTime(2019, 1, 1, 0, 0, 0)
 	) t1
 GROUP BY
 	t1.Year_1,
