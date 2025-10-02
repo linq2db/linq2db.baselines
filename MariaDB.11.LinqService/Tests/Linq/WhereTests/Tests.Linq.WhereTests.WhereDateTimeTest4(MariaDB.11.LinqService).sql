@@ -15,5 +15,5 @@ SELECT
 FROM
 	`LinqDataTypes` `t1`
 WHERE
-	`t1`.`DateTimeValue` = '2009-09-27'
+	`t1`.`DateTimeValue` = STR_TO_DATE('2009-09-27 00:00:00.000', '%Y-%m-%d %H:%i:%s.%f')
 

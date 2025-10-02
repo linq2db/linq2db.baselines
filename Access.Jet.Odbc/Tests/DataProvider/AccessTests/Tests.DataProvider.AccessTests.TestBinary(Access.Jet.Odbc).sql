@@ -1,6 +1,6 @@
 ﻿BeforeExecute
 -- Access.Jet.Odbc AccessODBC
-DECLARE @p NVarChar(2) -- String
+DECLARE @p VarBinary(2) -- Binary
 SET     @p = 0x3039
 
 SELECT ?

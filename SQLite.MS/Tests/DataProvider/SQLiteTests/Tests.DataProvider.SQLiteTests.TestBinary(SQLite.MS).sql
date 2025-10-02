@@ -25,7 +25,7 @@ SELECT Cast(NULL as image)
 
 BeforeExecute
 -- SQLite.MS SQLite
-DECLARE @p NVarChar(1) -- String
+DECLARE @p Binary(1)
 SET     @p = X'01'
 
 SELECT @p
@@ -53,7 +53,7 @@ SELECT @p
 
 BeforeExecute
 -- SQLite.MS SQLite
-DECLARE @p NVarChar -- String
+DECLARE @p Binary(0)
 SET     @p = X''
 
 SELECT @p
