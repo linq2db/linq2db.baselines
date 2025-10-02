@@ -2,6 +2,7 @@
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql (asynchronously)
 
 SELECT
+	`t`.`PK`,
 	`t`.`ID`
 FROM
 	`test_in_1` `t`
@@ -17,6 +18,7 @@ BeforeExecute
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql (asynchronously)
 
 SELECT
+	`t1`.`PK`,
 	`t1`.`ID`
 FROM
 	`test_in_1` `t1`
@@ -25,7 +27,9 @@ BeforeExecute
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql (asynchronously)
 
 SELECT
-	`t1`.`ID`
+	`t1`.`PK`,
+	`t1`.`ID`,
+	`t1`.`GV`
 FROM
 	`test_in_2` `t1`
 

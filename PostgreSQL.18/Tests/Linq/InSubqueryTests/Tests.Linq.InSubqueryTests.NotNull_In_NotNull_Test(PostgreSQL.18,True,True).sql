@@ -2,6 +2,7 @@
 -- PostgreSQL.18 PostgreSQL
 
 SELECT
+	t."PK",
 	t."ID"
 FROM
 	test_in_1 t
@@ -19,6 +20,7 @@ BeforeExecute
 -- PostgreSQL.18 PostgreSQL
 
 SELECT
+	t1."PK",
 	t1."ID"
 FROM
 	test_in_1 t1
@@ -27,6 +29,7 @@ BeforeExecute
 -- PostgreSQL.18 PostgreSQL
 
 SELECT
+	t1."PK",
 	t1."ID"
 FROM
 	test_in_2 t1

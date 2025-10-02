@@ -1180,4 +1180,3 @@ FROM
 	"TypeTable`2" r
 WHERE
 	r."Column" = :value AND r."ColumnNullable" = :nullableValue
-

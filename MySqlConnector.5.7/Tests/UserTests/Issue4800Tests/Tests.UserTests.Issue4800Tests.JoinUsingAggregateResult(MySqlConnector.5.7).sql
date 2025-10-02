@@ -18,7 +18,6 @@ FROM
 						LEFT JOIN `Executant` `executant_1` ON `test_1`.`Id` = `executant_1`.`TestId`
 						LEFT JOIN `Testee` `testee_1` ON `elements`.`TesteeId` = `testee_1`.`Id`
 						LEFT JOIN `Outfit` `outfit_1` ON `testee_1`.`WorkblankId` = `outfit_1`.`WorkblankId`
-						LEFT JOIN `Account` `account_1` ON `outfit_1`.`AccountId` = `account_1`.`Id`
 				WHERE
 					`elements`.`Status` = 14650
 				GROUP BY
@@ -33,5 +32,4 @@ FROM
 		GROUP BY
 			`elements_1`.`Key_1`
 	) `t1`
-		LEFT JOIN `Testee` `t` ON `t1`.`TesteeId` = `t`.`Id`
 

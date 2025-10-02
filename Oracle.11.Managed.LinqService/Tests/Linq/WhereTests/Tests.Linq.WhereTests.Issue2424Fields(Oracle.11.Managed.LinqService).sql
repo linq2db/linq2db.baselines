@@ -18,6 +18,7 @@ BeforeExecute
 -- Oracle.11.Managed Oracle11 (asynchronously)
 
 SELECT
+	t1."Pk",
 	t1."Id",
 	t1."StrValue",
 	t1."StrValueNullable"
@@ -44,6 +45,7 @@ BeforeExecute
 -- Oracle.11.Managed Oracle11 (asynchronously)
 
 SELECT
+	t1."Pk",
 	t1."Id",
 	t1."StrValue",
 	t1."StrValueNullable"
@@ -70,6 +72,7 @@ BeforeExecute
 -- Oracle.11.Managed Oracle11 (asynchronously)
 
 SELECT
+	t1."Pk",
 	t1."Id",
 	t1."StrValue",
 	t1."StrValueNullable"
@@ -96,6 +99,7 @@ BeforeExecute
 -- Oracle.11.Managed Oracle11 (asynchronously)
 
 SELECT
+	t1."Pk",
 	t1."Id",
 	t1."StrValue",
 	t1."StrValueNullable"
@@ -122,6 +126,7 @@ BeforeExecute
 -- Oracle.11.Managed Oracle11 (asynchronously)
 
 SELECT
+	t1."Pk",
 	t1."Id",
 	t1."StrValue",
 	t1."StrValueNullable"
@@ -148,6 +153,7 @@ BeforeExecute
 -- Oracle.11.Managed Oracle11 (asynchronously)
 
 SELECT
+	t1."Pk",
 	t1."Id",
 	t1."StrValue",
 	t1."StrValueNullable"
@@ -174,6 +180,7 @@ BeforeExecute
 -- Oracle.11.Managed Oracle11 (asynchronously)
 
 SELECT
+	t1."Pk",
 	t1."Id",
 	t1."StrValue",
 	t1."StrValueNullable"
@@ -200,6 +207,7 @@ BeforeExecute
 -- Oracle.11.Managed Oracle11 (asynchronously)
 
 SELECT
+	t1."Pk",
 	t1."Id",
 	t1."StrValue",
 	t1."StrValueNullable"
@@ -226,6 +234,7 @@ BeforeExecute
 -- Oracle.11.Managed Oracle11 (asynchronously)
 
 SELECT
+	t1."Pk",
 	t1."Id",
 	t1."StrValue",
 	t1."StrValueNullable"
@@ -252,6 +261,7 @@ BeforeExecute
 -- Oracle.11.Managed Oracle11 (asynchronously)
 
 SELECT
+	t1."Pk",
 	t1."Id",
 	t1."StrValue",
 	t1."StrValueNullable"
@@ -278,6 +288,7 @@ BeforeExecute
 -- Oracle.11.Managed Oracle11 (asynchronously)
 
 SELECT
+	t1."Pk",
 	t1."Id",
 	t1."StrValue",
 	t1."StrValueNullable"
@@ -304,6 +315,7 @@ BeforeExecute
 -- Oracle.11.Managed Oracle11 (asynchronously)
 
 SELECT
+	t1."Pk",
 	t1."Id",
 	t1."StrValue",
 	t1."StrValueNullable"
@@ -331,6 +343,7 @@ BeforeExecute
 -- Oracle.11.Managed Oracle11 (asynchronously)
 
 SELECT
+	t1."Pk",
 	t1."Id",
 	t1."StrValue",
 	t1."StrValueNullable"
@@ -358,6 +371,7 @@ BeforeExecute
 -- Oracle.11.Managed Oracle11 (asynchronously)
 
 SELECT
+	t1."Pk",
 	t1."Id",
 	t1."StrValue",
 	t1."StrValueNullable"
@@ -385,6 +399,7 @@ BeforeExecute
 -- Oracle.11.Managed Oracle11 (asynchronously)
 
 SELECT
+	t1."Pk",
 	t1."Id",
 	t1."StrValue",
 	t1."StrValueNullable"
@@ -412,6 +427,7 @@ BeforeExecute
 -- Oracle.11.Managed Oracle11 (asynchronously)
 
 SELECT
+	t1."Pk",
 	t1."Id",
 	t1."StrValue",
 	t1."StrValueNullable"
@@ -439,6 +455,7 @@ BeforeExecute
 -- Oracle.11.Managed Oracle11 (asynchronously)
 
 SELECT
+	t1."Pk",
 	t1."Id",
 	t1."StrValue",
 	t1."StrValueNullable"
@@ -467,6 +484,7 @@ BeforeExecute
 -- Oracle.11.Managed Oracle11 (asynchronously)
 
 SELECT
+	t1."Pk",
 	t1."Id",
 	t1."StrValue",
 	t1."StrValueNullable"

@@ -2,6 +2,7 @@
 -- Informix.DB2 Informix (asynchronously)
 
 SELECT
+	p.Id,
 	p.MyEnum,
 	p.MyEnum2
 FROM

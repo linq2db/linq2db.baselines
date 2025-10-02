@@ -2,6 +2,7 @@
 -- SqlServer.2014.MS SqlServer.2014 (asynchronously)
 
 SELECT
+	[user_1].[Id],
 	[user_1].[FirstName],
 	[user_1].[Status]
 FROM

@@ -1,16 +1,39 @@
 ﻿BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
-DECLARE GLOBAL TEMPORARY TABLE SESSION."temp_table_2"
+CREATE TABLE "temp_table_1"
 (
-	"Value" NVarChar(255)     NULL
+	ID      Int           NOT NULL,
+	"Value" NVarChar(255)     NULL,
+
+	CONSTRAINT "PK_temp_table_1" PRIMARY KEY (ID)
 )
-ON COMMIT PRESERVE ROWS
 
 BeforeExecute
 -- DB2 DB2.LUW DB2LUW
 
-INSERT INTO SESSION."temp_table_2"
+INSERT INTO "temp_table_1"
+(
+	ID,
+	"Value"
+)
+VALUES
+(1,'Value')
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+
+CREATE TABLE "temp_table_2"
+(
+	"Value" NVarChar(50) NOT NULL,
+
+	CONSTRAINT "PK_temp_table_2" PRIMARY KEY ("Value")
+)
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+
+INSERT INTO "temp_table_2"
 (
 	"Value"
 )
@@ -39,6 +62,14 @@ BeforeExecute
 
 BEGIN
 	DECLARE CONTINUE HANDLER FOR SQLSTATE '42704' BEGIN END;
-	EXECUTE IMMEDIATE 'DROP TABLE SESSION."temp_table_2"';
+	EXECUTE IMMEDIATE 'DROP TABLE "temp_table_2"';
+END
+
+BeforeExecute
+-- DB2 DB2.LUW DB2LUW
+
+BEGIN
+	DECLARE CONTINUE HANDLER FOR SQLSTATE '42704' BEGIN END;
+	EXECUTE IMMEDIATE 'DROP TABLE "temp_table_1"';
 END
 

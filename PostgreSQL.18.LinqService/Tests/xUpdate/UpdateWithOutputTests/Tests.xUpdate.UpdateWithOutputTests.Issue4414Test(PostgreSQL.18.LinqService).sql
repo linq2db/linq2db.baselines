@@ -11,7 +11,8 @@ FROM
 	(
 		SELECT
 			x."Name",
-			x."EmployeeId"
+			x."EmployeeId",
+			x."Id"
 		FROM
 			"Issue4193Person" x
 		WHERE
@@ -21,7 +22,7 @@ FROM
 		LIMIT :take
 	) t1
 WHERE
-	"Issue4193Person"."Name" = t1."Name" AND ("Issue4193Person"."EmployeeId" = t1."EmployeeId" OR "Issue4193Person"."EmployeeId" IS NULL AND t1."EmployeeId" IS NULL)
+	"Issue4193Person"."Id" = t1."Id"
 RETURNING
 	NEW."EmployeeId",
 	NEW."Name"

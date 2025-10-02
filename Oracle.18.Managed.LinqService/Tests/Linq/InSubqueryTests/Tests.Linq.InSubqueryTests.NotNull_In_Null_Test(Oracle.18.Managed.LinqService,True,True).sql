@@ -2,6 +2,7 @@
 -- Oracle.18.Managed Oracle.Managed Oracle12 (asynchronously)
 
 SELECT
+	t.PK,
 	t.ID
 FROM
 	"test_in_1" t
@@ -19,6 +20,7 @@ BeforeExecute
 -- Oracle.18.Managed Oracle.Managed Oracle12 (asynchronously)
 
 SELECT
+	t1.PK,
 	t1.ID
 FROM
 	"test_in_1" t1
@@ -27,7 +29,9 @@ BeforeExecute
 -- Oracle.18.Managed Oracle.Managed Oracle12 (asynchronously)
 
 SELECT
-	t1.ID
+	t1.PK,
+	t1.ID,
+	t1.GV
 FROM
 	"test_in_2" t1
 

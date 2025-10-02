@@ -2,6 +2,7 @@
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
 
 SELECT
+	`p`.`Id`,
 	`p`.`Code`,
 	`p`.`DIM_Company`,
 	`p`.`DIM_Branch`,

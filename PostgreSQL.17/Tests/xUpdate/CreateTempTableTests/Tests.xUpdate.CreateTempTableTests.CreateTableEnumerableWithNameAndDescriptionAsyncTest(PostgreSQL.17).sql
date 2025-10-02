@@ -8,7 +8,9 @@ BeforeExecute
 
 CREATE TEMPORARY TABLE IF NOT EXISTS "TempTable"
 (
-	"Name" text NOT NULL
+	"Name" text NOT NULL,
+
+	CONSTRAINT "PK_TempTable" PRIMARY KEY ("Name")
 )
 ON COMMIT PRESERVE ROWS
 

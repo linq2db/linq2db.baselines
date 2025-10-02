@@ -4,7 +4,9 @@
 CREATE TABLE #tmptbl1
 (
 	[ID]    Int           NOT NULL,
-	[Value] NVarChar(255)     NULL
+	[Value] NVarChar(255)     NULL,
+
+	CONSTRAINT [PK_tmptbl1] PRIMARY KEY CLUSTERED ([ID])
 )
 
 BeforeExecute
@@ -24,7 +26,9 @@ BeforeExecute
 CREATE TABLE #tmptbl2
 (
 	[ID]    Int           NOT NULL,
-	[Value] NVarChar(255) NOT NULL
+	[Value] NVarChar(255) NOT NULL,
+
+	CONSTRAINT [PK_tmptbl2] PRIMARY KEY CLUSTERED ([ID])
 )
 
 BeforeExecute
@@ -44,7 +48,9 @@ BeforeExecute
 CREATE TABLE #tmptbl3
 (
 	[ID]    Int           NOT NULL,
-	[Value] NVarChar(255)     NULL
+	[Value] NVarChar(255)     NULL,
+
+	CONSTRAINT [PK_tmptbl3] PRIMARY KEY CLUSTERED ([ID])
 )
 
 BeforeExecute

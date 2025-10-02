@@ -2,6 +2,7 @@
 -- SqlServer.2017.MS SqlServer.2017 (asynchronously)
 
 SELECT
+	[x].[Id],
 	[x].[Country],
 	[x].[State]
 FROM

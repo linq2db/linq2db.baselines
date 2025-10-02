@@ -2,6 +2,7 @@
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 
 SELECT
+	t1."Id",
 	t1."Value"
 FROM
 	"TakeSkipClass" t1
@@ -13,6 +14,7 @@ BeforeExecute
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 
 SELECT
+	t1."Id",
 	t1."Value"
 FROM
 	"TakeSkipClass" t1

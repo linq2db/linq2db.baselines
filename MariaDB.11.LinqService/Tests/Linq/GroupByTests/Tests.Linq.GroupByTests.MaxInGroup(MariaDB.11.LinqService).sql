@@ -31,6 +31,7 @@ BeforeExecute
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql (asynchronously)
 
 SELECT
+	`t1`.`Id`,
 	`t1`.`GroupId`,
 	`t1`.`DataValue`
 FROM

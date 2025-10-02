@@ -27,7 +27,6 @@ BeforeExecute
 UPDATE
 	TestBool t1
 SET
-	Id = 1,
 	"Value" = CASE
 		WHEN NOT t1."Value" THEN 't'::BOOLEAN
 		WHEN t1."Value" THEN 'f'::BOOLEAN

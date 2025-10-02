@@ -2,6 +2,7 @@
 -- Access.Jet.Odbc AccessODBC (asynchronously)
 
 SELECT
+	[x].[Id],
 	[x].[Country],
 	[x].[State]
 FROM

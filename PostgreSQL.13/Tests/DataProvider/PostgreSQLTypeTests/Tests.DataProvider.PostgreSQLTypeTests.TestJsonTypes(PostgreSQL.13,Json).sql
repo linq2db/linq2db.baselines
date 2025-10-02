@@ -1180,4 +1180,3 @@ FROM
 	"TypeTable`2" r
 WHERE
 	r."Column"::jsonb = :value::jsonb AND r."ColumnNullable"::jsonb = :nullableValue::jsonb
-

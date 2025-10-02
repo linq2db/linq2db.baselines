@@ -2,6 +2,7 @@
 -- SqlServer.2017 (asynchronously)
 
 SELECT
+	[t].[Id],
 	[t].[Value]
 FROM
 	[NullableBoolClass] [t]
@@ -12,6 +13,7 @@ BeforeExecute
 -- SqlServer.2017 (asynchronously)
 
 SELECT
+	[t].[Id],
 	[t].[Value]
 FROM
 	[NullableBoolClass] [t]

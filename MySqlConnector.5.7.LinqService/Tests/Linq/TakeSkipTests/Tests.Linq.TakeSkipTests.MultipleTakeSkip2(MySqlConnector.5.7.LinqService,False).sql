@@ -2,6 +2,7 @@
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57 (asynchronously)
 
 SELECT
+	`t1`.`Id`,
 	`t1`.`Value`
 FROM
 	`TakeSkipClass` `t1`

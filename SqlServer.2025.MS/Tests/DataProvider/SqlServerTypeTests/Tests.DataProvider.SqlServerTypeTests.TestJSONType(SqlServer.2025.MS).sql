@@ -880,4 +880,3 @@ SELECT
 	[t1].[ColumnNullable]
 FROM
 	[TypeTable`2] [t1]
-

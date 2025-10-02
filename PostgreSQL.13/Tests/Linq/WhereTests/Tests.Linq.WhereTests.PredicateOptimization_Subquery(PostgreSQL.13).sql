@@ -2,6 +2,7 @@
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
 
 SELECT
+	p."PK",
 	p."Id",
 	p."Date1",
 	p."Date2",
@@ -23,6 +24,7 @@ BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
 
 SELECT
+	p."PK",
 	p."Id",
 	p."Date1",
 	p."Date2",

@@ -4,6 +4,7 @@ DECLARE @value Bit -- Boolean
 SET     @value = 1
 
 SELECT
+	[t].[Id],
 	[t].[Value] as [Value_1]
 FROM
 	[NullableBoolClass] [t]
@@ -16,6 +17,7 @@ DECLARE @value Bit -- Boolean
 SET     @value = 1
 
 SELECT
+	[t].[Id],
 	[t].[Value] as [Value_1]
 FROM
 	[NullableBoolClass] [t]
@@ -28,6 +30,7 @@ DECLARE @value Bit -- Boolean
 SET     @value = 1
 
 SELECT
+	[t].[Id],
 	[t].[Value] as [Value_1]
 FROM
 	[NullableBoolClass] [t]
@@ -40,6 +43,7 @@ DECLARE @value Bit -- Boolean
 SET     @value = 1
 
 SELECT
+	[t].[Id],
 	[t].[Value] as [Value_1]
 FROM
 	[NullableBoolClass] [t]

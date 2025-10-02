@@ -2,6 +2,7 @@
 -- Access.Jet.OleDb AccessOleDb (asynchronously)
 
 SELECT
+	[x].[Id],
 	[x].[Country],
 	[x].[State]
 FROM

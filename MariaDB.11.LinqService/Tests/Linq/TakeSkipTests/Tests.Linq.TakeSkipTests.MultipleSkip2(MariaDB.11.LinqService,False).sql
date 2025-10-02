@@ -2,6 +2,7 @@
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql (asynchronously)
 
 SELECT
+	`t1`.`Id`,
 	`t1`.`Value`
 FROM
 	`TakeSkipClass` `t1`
@@ -13,6 +14,7 @@ BeforeExecute
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql (asynchronously)
 
 SELECT
+	`t1`.`Id`,
 	`t1`.`Value`
 FROM
 	`TakeSkipClass` `t1`
