@@ -10,15 +10,12 @@ FROM
 		SELECT
 			ROW_NUMBER() OVER (ORDER BY p.PersonID DESC) - 1 as Index_1,
 			p.FirstName as FirstName,
-			p.LastName as LastName,
-			p.PersonID as PersonID
+			p.LastName as LastName
 		FROM
 			Person p
 	) x
 WHERE
 	x.Index_1 > 0
-ORDER BY
-	x.PersonID DESC
 
 BeforeExecute
 -- ClickHouse.Octonica ClickHouse
