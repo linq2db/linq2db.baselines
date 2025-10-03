@@ -10,15 +10,12 @@ FROM
 		SELECT
 			ROW_NUMBER() OVER (ORDER BY "p"."PersonID" DESC) - 1 as "Index_1",
 			"p"."FirstName",
-			"p"."LastName",
-			"p"."PersonID"
+			"p"."LastName"
 		FROM
 			"Person" "p"
 	) "x"
 WHERE
 	"x"."Index_1" > 0
-ORDER BY
-	"x"."PersonID" DESC
 
 BeforeExecute
 -- SapHana.Odbc SapHanaOdbc (asynchronously)
