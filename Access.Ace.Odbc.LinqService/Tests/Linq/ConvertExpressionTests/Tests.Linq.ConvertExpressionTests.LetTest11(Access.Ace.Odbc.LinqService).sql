@@ -35,11 +35,8 @@ FROM
 					[c_1].[ParentID] > 0
 				ORDER BY
 					[c_1].[ParentID]
-			) as [cond],
-			[p].[ParentID]
+			) as [cond]
 		FROM
 			[Parent] [p]
 	) [t1]
-ORDER BY
-	[t1].[ParentID]
 
