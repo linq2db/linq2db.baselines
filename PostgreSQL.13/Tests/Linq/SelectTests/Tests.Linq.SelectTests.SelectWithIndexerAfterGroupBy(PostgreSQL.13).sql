@@ -21,8 +21,6 @@ FROM
 	) x
 WHERE
 	x."Index_1" > 0
-ORDER BY
-	x."Key_1" DESC
 
 BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
