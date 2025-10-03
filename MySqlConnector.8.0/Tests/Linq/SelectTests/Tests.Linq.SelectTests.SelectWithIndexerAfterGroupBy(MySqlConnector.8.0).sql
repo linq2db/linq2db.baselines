@@ -21,8 +21,6 @@ FROM
 	) `x`
 WHERE
 	`x`.`Index_1` > 0
-ORDER BY
-	`x`.`Key_1` DESC
 
 BeforeExecute
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
