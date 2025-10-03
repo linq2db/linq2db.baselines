@@ -2,6 +2,7 @@
 -- DB2 DB2.LUW DB2LUW (asynchronously)
 
 SELECT
+	"u"."Id",
 	"u"."user_name",
 	"u"."city",
 	"u"."street",
