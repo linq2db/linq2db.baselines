@@ -41,11 +41,8 @@ FROM
 				ORDER BY
 					[c_1].[ParentID]
 				LIMIT 1
-			) as [cond],
-			[p].[ParentID]
+			) as [cond]
 		FROM
 			[Parent] [p]
 	) [t1]
-ORDER BY
-	[t1].[ParentID]
 

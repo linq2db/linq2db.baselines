@@ -21,8 +21,6 @@ FROM
 	) `x`
 WHERE
 	`x`.`Index_1` > 0
-ORDER BY
-	`x`.`Key_1` DESC
 
 BeforeExecute
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql (asynchronously)

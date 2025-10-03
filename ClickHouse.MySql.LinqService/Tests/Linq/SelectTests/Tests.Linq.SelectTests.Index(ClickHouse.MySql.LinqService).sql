@@ -18,8 +18,6 @@ FROM
 		WHERE
 			a_Parent.ParentID IS NOT NULL AND m_1.ParentID > 0
 	) m_2
-ORDER BY
-	m_2.ChildID DESC
 
 BeforeExecute
 -- ClickHouse.MySql ClickHouse (asynchronously)
@@ -41,6 +39,4 @@ FROM
 		WHERE
 			a_Parent.ParentID IS NOT NULL AND m_1.ParentID > 0
 	) m_2
-ORDER BY
-	m_2.ChildID DESC
 

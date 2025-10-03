@@ -18,8 +18,6 @@ FROM
 		WHERE
 			[a_Parent].[ParentID] IS NOT NULL AND [m_1].[ParentID] > 0
 	) [m_2]
-ORDER BY
-	[m_2].[ChildID] DESC
 
 BeforeExecute
 -- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
@@ -41,6 +39,4 @@ FROM
 		WHERE
 			[a_Parent].[ParentID] IS NOT NULL AND [m_1].[ParentID] > 0
 	) [m_2]
-ORDER BY
-	[m_2].[ChildID] DESC
 

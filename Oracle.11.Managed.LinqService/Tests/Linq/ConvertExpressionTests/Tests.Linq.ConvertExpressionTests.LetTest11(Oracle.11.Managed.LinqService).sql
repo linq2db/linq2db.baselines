@@ -59,11 +59,8 @@ FROM
 					) t1
 				WHERE
 					ROWNUM <= 1
-			) as "cond",
-			p."ParentID"
+			) as "cond"
 		FROM
 			"Parent" p
 	) t2
-ORDER BY
-	t2."ParentID"
 

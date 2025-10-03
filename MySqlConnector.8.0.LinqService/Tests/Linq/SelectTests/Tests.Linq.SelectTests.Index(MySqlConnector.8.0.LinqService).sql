@@ -18,8 +18,6 @@ FROM
 		WHERE
 			`a_Parent`.`ParentID` IS NOT NULL AND `m_1`.`ParentID` > 0
 	) `m_2`
-ORDER BY
-	`m_2`.`ChildID` DESC
 
 BeforeExecute
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80 (asynchronously)
@@ -41,6 +39,4 @@ FROM
 		WHERE
 			`a_Parent`.`ParentID` IS NOT NULL AND `m_1`.`ParentID` > 0
 	) `m_2`
-ORDER BY
-	`m_2`.`ChildID` DESC
 

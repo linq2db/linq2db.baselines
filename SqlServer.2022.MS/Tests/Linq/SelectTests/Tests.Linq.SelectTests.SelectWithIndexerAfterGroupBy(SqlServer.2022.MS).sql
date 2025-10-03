@@ -21,8 +21,6 @@ FROM
 	) [x]
 WHERE
 	[x].[Index_1] > 0
-ORDER BY
-	[x].[Key_1] DESC
 
 BeforeExecute
 -- SqlServer.2022.MS SqlServer.2022
