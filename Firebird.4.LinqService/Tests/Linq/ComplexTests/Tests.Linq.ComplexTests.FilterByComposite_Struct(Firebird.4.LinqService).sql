@@ -2,6 +2,7 @@
 -- Firebird.4 Firebird4 (asynchronously)
 
 SELECT
+	"u"."Id",
 	"u"."user_name",
 	"u"."city",
 	"u"."street",

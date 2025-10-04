@@ -2,6 +2,7 @@
 -- SQLite.Classic SQLite (asynchronously)
 
 SELECT
+	[u].[Id],
 	[u].[user_name],
 	[u].[city],
 	[u].[street],

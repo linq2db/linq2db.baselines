@@ -2,6 +2,7 @@
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL (asynchronously)
 
 SELECT
+	u."Id",
 	u.user_name,
 	u.city,
 	u.street,

@@ -2,6 +2,7 @@
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57 (asynchronously)
 
 SELECT
+	`u`.`Id`,
 	`u`.`user_name`,
 	`u`.`city`,
 	`u`.`street`,

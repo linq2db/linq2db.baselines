@@ -2,6 +2,7 @@
 -- SapHana.Odbc SapHanaOdbc
 
 SELECT
+	"u"."Id",
 	"u"."user_name",
 	"u"."city",
 	"u"."street",

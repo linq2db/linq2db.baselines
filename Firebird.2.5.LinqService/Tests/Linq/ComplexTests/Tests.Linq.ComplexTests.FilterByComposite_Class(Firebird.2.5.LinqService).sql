@@ -2,6 +2,7 @@
 -- Firebird.2.5 Firebird (asynchronously)
 
 SELECT FIRST 2
+	"u"."Id",
 	"u"."user_name",
 	"u"."city",
 	"u"."street",

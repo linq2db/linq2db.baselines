@@ -2,6 +2,7 @@
 -- SqlServer.2008.MS SqlServer.2008
 
 SELECT TOP (2)
+	[u].[Id],
 	[u].[user_name],
 	[u].[city],
 	[u].[street],

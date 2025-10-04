@@ -2,6 +2,7 @@
 -- SqlServer.2017
 
 SELECT TOP (2)
+	[u].[Id],
 	[u].[user_name],
 	[u].[city],
 	[u].[street],

@@ -2,6 +2,7 @@
 -- SqlServer.2014.MS SqlServer.2014 (asynchronously)
 
 SELECT TOP (2)
+	[u].[Id],
 	[u].[user_name],
 	[u].[city],
 	[u].[street],
