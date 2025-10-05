@@ -67,7 +67,7 @@ BeforeExecute
 -- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
 DECLARE @p1 36(16) -- Binary
 SET     @p1 = JSON_ARRAY(1.2, -1.1)
-DECLARE @p2 NVarChar(2) -- String
+DECLARE @p2 NVarChar -- String
 SET     @p2 = NULL
 
 INSERT INTO [TypeTable`2]
@@ -200,7 +200,7 @@ BeforeExecute
 -- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
 DECLARE @p1 36(16) -- Binary
 SET     @p1 = JSON_ARRAY(5.2, -3.1)
-DECLARE @p2 NVarChar(2) -- String
+DECLARE @p2 NVarChar -- String
 SET     @p2 = NULL
 
 INSERT INTO [TypeTable`2]
