@@ -2,6 +2,7 @@
 -- Access.Ace.OleDb AccessOleDb (asynchronously)
 
 SELECT TOP 2
+	[u].[Id],
 	[u].[user_name],
 	[u].[city],
 	[u].[street],

@@ -2,6 +2,7 @@
 -- Oracle.12.Managed Oracle.Managed Oracle12 (asynchronously)
 
 SELECT
+	u."Id",
 	u."user_name" as "Name",
 	u."city" as "City",
 	u."street" as "Street",

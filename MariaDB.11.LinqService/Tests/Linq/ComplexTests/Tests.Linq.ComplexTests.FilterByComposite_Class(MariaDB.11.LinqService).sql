@@ -2,6 +2,7 @@
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql (asynchronously)
 
 SELECT
+	`u`.`Id`,
 	`u`.`user_name`,
 	`u`.`city`,
 	`u`.`street`,

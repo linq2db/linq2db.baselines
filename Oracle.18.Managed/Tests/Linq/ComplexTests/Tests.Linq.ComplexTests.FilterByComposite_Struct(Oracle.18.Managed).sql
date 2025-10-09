@@ -2,6 +2,7 @@
 -- Oracle.18.Managed Oracle.Managed Oracle12
 
 SELECT
+	u."Id",
 	u."user_name" as "Name",
 	u."city" as "City",
 	u."street" as "Street",
