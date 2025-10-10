@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- PostgreSQL.17 PostgreSQL.15 PostgreSQL (asynchronously)
 
-WITH RECURSIVE "CTE_1" ("Id2", "Id1")
+WITH "CTE_1" ("Id2", "Id1")
 AS
 (
 	SELECT
