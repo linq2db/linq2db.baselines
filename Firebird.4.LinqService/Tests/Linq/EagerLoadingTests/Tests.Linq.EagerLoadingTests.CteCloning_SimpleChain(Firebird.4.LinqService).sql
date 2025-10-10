@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- Firebird.4 Firebird4 (asynchronously)
 
-WITH RECURSIVE CTE_1 ("Id")
+WITH CTE_1 ("Id")
 AS
 (
 	SELECT
@@ -46,7 +46,7 @@ FROM
 BeforeExecute
 -- Firebird.4 Firebird4 (asynchronously)
 
-WITH RECURSIVE CTE_1
+WITH CTE_1
 (
 	"Id",
 	"Value2",
