@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
 
-WITH RECURSIVE "CTE_1" ("Id2", "Id1")
+WITH "CTE_1" ("Id2", "Id1")
 AS
 (
 	SELECT

@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL (asynchronously)
 
-WITH RECURSIVE "CTE_1" ("ChildID")
+WITH "CTE_1" ("ChildID")
 AS
 (
 	SELECT
