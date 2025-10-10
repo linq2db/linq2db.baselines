@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- ClickHouse.MySql ClickHouse
 
-WITH RECURSIVE CTE_1 AS
+WITH CTE_1 AS
 (
 	SELECT
 		c_1.ChildID
