@@ -3,7 +3,7 @@ BeginTransaction(RepeatableRead)
 BeforeExecute
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql
 
-WITH RECURSIVE `CTE_1` (`Id`)
+WITH `CTE_1` (`Id`)
 AS
 (
 	SELECT
@@ -50,7 +50,7 @@ DisposeTransaction
 BeforeExecute
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql
 
-WITH RECURSIVE `CTE_1`
+WITH `CTE_1`
 (
 	`Id`,
 	`Value2`,
