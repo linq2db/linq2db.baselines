@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- ClickHouse.Driver ClickHouse
 
-WITH RECURSIVE CTE_1 AS
+WITH CTE_1 AS
 (
 	SELECT
 		p.Value1 as Id2,
