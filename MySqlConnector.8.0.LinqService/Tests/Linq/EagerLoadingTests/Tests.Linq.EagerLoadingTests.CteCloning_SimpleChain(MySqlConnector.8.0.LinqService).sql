@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80 (asynchronously)
 
-WITH RECURSIVE `CTE_1` (`Id`)
+WITH `CTE_1` (`Id`)
 AS
 (
 	SELECT
@@ -46,7 +46,7 @@ FROM
 BeforeExecute
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80 (asynchronously)
 
-WITH RECURSIVE `CTE_1`
+WITH `CTE_1`
 (
 	`Id`,
 	`Value2`,
