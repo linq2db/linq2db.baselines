@@ -29,7 +29,7 @@ FROM
 
 BeforeExecute
 -- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
-DECLARE @Column 36(16) -- Binary
+DECLARE @Column Vector(16) -- Binary
 SET     @Column = JSON_ARRAY(1.2, -1.1)
 DECLARE @ColumnNullable NVarChar -- String
 SET     @ColumnNullable = NULL
@@ -65,7 +65,7 @@ FROM
 
 BeforeExecute
 -- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
-DECLARE @p1 36(16) -- Binary
+DECLARE @p1 Vector(16) -- Binary
 SET     @p1 = JSON_ARRAY(1.2, -1.1)
 DECLARE @p2 NVarChar -- String
 SET     @p2 = NULL
@@ -162,7 +162,7 @@ FROM
 
 BeforeExecute
 -- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
-DECLARE @Column 36(16) -- Binary
+DECLARE @Column Vector(16) -- Binary
 SET     @Column = JSON_ARRAY(5.2, -3.1)
 DECLARE @ColumnNullable NVarChar -- String
 SET     @ColumnNullable = NULL
@@ -198,7 +198,7 @@ FROM
 
 BeforeExecute
 -- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
-DECLARE @p1 36(16) -- Binary
+DECLARE @p1 Vector(16) -- Binary
 SET     @p1 = JSON_ARRAY(5.2, -3.1)
 DECLARE @p2 NVarChar -- String
 SET     @p2 = NULL
@@ -291,9 +291,9 @@ FROM
 
 BeforeExecute
 -- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
-DECLARE @Column 36(16) -- Binary
+DECLARE @Column Vector(16) -- Binary
 SET     @Column = JSON_ARRAY(11.2, -4.1)
-DECLARE @ColumnNullable 36(16) -- Binary
+DECLARE @ColumnNullable Vector(16) -- Binary
 SET     @ColumnNullable = JSON_ARRAY(5.2, -3.1)
 
 INSERT INTO [TypeTable`2]
@@ -325,9 +325,9 @@ FROM
 
 BeforeExecute
 -- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
-DECLARE @p1 36(16) -- Binary
+DECLARE @p1 Vector(16) -- Binary
 SET     @p1 = JSON_ARRAY(11.2, -4.1)
-DECLARE @p2 36(16) -- Binary
+DECLARE @p2 Vector(16) -- Binary
 SET     @p2 = JSON_ARRAY(5.2, -3.1)
 
 INSERT INTO [TypeTable`2]
