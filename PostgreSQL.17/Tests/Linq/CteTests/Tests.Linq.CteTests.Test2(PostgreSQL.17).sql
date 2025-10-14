@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- PostgreSQL.17 PostgreSQL.15 PostgreSQL
 
-WITH RECURSIVE "CTE1_" ("ParentID")
+WITH "CTE1_" ("ParentID")
 AS
 (
 	SELECT

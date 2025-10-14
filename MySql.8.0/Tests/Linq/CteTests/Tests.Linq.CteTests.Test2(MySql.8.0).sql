@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
 
-WITH RECURSIVE `CTE1_` (`ParentID`)
+WITH `CTE1_` (`ParentID`)
 AS
 (
 	SELECT

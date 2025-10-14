@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- Firebird.3 Firebird3
 
-WITH RECURSIVE CTE1_ ("ParentID")
+WITH CTE1_ ("ParentID")
 AS
 (
 	SELECT

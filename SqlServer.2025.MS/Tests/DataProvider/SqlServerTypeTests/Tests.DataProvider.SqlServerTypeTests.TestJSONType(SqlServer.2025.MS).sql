@@ -575,7 +575,7 @@ BeforeExecute
 -- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
 DECLARE @p1 Json -- String
 SET     @p1 = N'{ }'
-DECLARE @p2 NVarChar(4000) -- String
+DECLARE @p2 Json -- String
 SET     @p2 = NULL
 
 INSERT INTO [TypeTable`2]

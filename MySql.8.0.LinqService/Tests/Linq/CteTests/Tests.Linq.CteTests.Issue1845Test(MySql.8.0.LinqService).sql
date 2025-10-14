@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80 (asynchronously)
 
-WITH RECURSIVE `CTE_1` (`Value1`, `Value2`)
+WITH `CTE_1` (`Value1`, `Value2`)
 AS
 (
 	SELECT
