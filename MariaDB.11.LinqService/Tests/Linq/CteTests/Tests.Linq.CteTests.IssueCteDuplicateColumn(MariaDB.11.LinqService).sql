@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql (asynchronously)
 
-WITH RECURSIVE `CTE_1` (`Id2`, `Id1`)
+WITH `CTE_1` (`Id2`, `Id1`)
 AS
 (
 	SELECT

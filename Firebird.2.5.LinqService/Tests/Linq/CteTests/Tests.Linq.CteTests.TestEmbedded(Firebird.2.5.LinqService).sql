@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- Firebird.2.5 Firebird (asynchronously)
 
-WITH RECURSIVE CTE_1 ("ChildID")
+WITH CTE_1 ("ChildID")
 AS
 (
 	SELECT

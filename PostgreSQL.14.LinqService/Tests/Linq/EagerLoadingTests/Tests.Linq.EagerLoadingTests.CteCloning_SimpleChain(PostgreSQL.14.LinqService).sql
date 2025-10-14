@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL (asynchronously)
 
-WITH RECURSIVE "CTE_1" ("Id")
+WITH "CTE_1" ("Id")
 AS
 (
 	SELECT
@@ -46,7 +46,7 @@ FROM
 BeforeExecute
 -- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL (asynchronously)
 
-WITH RECURSIVE "CTE_1"
+WITH "CTE_1"
 (
 	"Id",
 	"Value2",

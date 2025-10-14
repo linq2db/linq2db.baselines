@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- ClickHouse.Driver ClickHouse (asynchronously)
 
-WITH RECURSIVE CTE_1 AS
+WITH CTE_1 AS
 (
 	SELECT
 		o.FirstName as Value1,

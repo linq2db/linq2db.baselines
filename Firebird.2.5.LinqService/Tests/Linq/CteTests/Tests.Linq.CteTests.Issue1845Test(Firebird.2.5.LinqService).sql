@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- Firebird.2.5 Firebird (asynchronously)
 
-WITH RECURSIVE CTE_1 ("Value1", "Value2")
+WITH CTE_1 ("Value1", "Value2")
 AS
 (
 	SELECT

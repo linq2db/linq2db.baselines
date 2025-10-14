@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 -- MariaDB.11 MariaDB.10.MySqlConnector MySql
 
-WITH RECURSIVE `CTE1_` (`ParentID`)
+WITH `CTE1_` (`ParentID`)
 AS
 (
 	SELECT
