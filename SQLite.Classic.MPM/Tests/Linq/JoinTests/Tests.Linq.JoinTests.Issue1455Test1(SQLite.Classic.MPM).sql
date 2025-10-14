@@ -14,8 +14,7 @@ DECLARE @cpty_5 NVarChar(3) -- String
 SET     @cpty_5 = '%C%'
 
 SELECT
-	[al_group_3].[AlertKey],
-	[al_group_3].[AlertCode],
+	[al_group_3].[Id],
 	[t2].[LastUpdate],
 	[t2].[cond],
 	[t2].[DeliveryId],
@@ -26,22 +25,20 @@ SELECT
 FROM
 	(
 		SELECT
-			[al_group_1].[AlertKey],
-			[al_group_1].[AlertCode],
-			[al_group_1].[CreationDate]
+			[al_group_1].[Id]
 		FROM
 			(
 				SELECT
+					[al_group].[Id],
 					[al_group].[AlertKey],
-					[al_group].[AlertCode],
-					[al_group].[CreationDate]
+					[al_group].[AlertCode]
 				FROM
 					[Alert] [al_group]
 						LEFT JOIN [AuditAlert] [au] ON [au].[AlertKey] = [al_group].[AlertKey]
 				GROUP BY
+					[al_group].[Id],
 					[al_group].[AlertKey],
-					[al_group].[AlertCode],
-					[al_group].[CreationDate]
+					[al_group].[AlertCode]
 			) [al_group_1]
 				LEFT JOIN [Trade] [trade_1] ON [al_group_1].[AlertKey] = CAST([trade_1].[DealId] AS NVarChar(11))
 				LEFT JOIN [Nomin] [nomin_1] ON [al_group_1].[AlertKey] = CAST([nomin_1].[CargoId] AS NVarChar(11))
@@ -50,9 +47,7 @@ FROM
 			[trade_1].[CounterParty] LIKE @cpty_1 ESCAPE '~' OR
 			[al_group_1].[AlertCode] LIKE @cpty_2 ESCAPE '~'
 		GROUP BY
-			[al_group_1].[AlertKey],
-			[al_group_1].[AlertCode],
-			[al_group_1].[CreationDate]
+			[al_group_1].[Id]
 	) [al_group_3]
 		LEFT JOIN (
 			SELECT
@@ -63,21 +58,21 @@ FROM
 				[trade_2].[ParcelId],
 				[trade_2].[CounterParty],
 				Coalesce([t1].[MAX_1], [t1].[CreationDate]) as [LastUpdate],
-				ROW_NUMBER() OVER (PARTITION BY [t1].[AlertKey], [t1].[AlertCode], [t1].[CreationDate] ORDER BY [t1].[AlertKey]) as [rn],
-				[t1].[AlertKey],
-				[t1].[AlertCode],
-				[t1].[CreationDate]
+				ROW_NUMBER() OVER (PARTITION BY [t1].[Id] ORDER BY [t1].[Id]) as [rn],
+				[t1].[Id]
 			FROM
 				(
 					SELECT
-						[al_group_2].[AlertKey],
-						[al_group_2].[AlertCode],
+						[al_group_2].[Id],
+						MAX([au_1].[TransactionDate]) as [MAX_1],
 						[al_group_2].[CreationDate],
-						MAX([au_1].[TransactionDate]) as [MAX_1]
+						[al_group_2].[AlertKey],
+						[al_group_2].[AlertCode]
 					FROM
 						[Alert] [al_group_2]
 							LEFT JOIN [AuditAlert] [au_1] ON [au_1].[AlertKey] = [al_group_2].[AlertKey]
 					GROUP BY
+						[al_group_2].[Id],
 						[al_group_2].[AlertKey],
 						[al_group_2].[AlertCode],
 						[al_group_2].[CreationDate]
@@ -88,5 +83,5 @@ FROM
 				[nomin_2].[DeliveryCounterParty] LIKE @cpty_3 ESCAPE '~' OR
 				[trade_2].[CounterParty] LIKE @cpty_4 ESCAPE '~' OR
 				[t1].[AlertCode] LIKE @cpty_5 ESCAPE '~'
-		) [t2] ON [al_group_3].[AlertKey] = [t2].[AlertKey] AND [al_group_3].[AlertCode] = [t2].[AlertCode] AND strftime('%Y-%m-%d %H:%M:%f', [al_group_3].[CreationDate]) = strftime('%Y-%m-%d %H:%M:%f', [t2].[CreationDate]) AND [t2].[rn] <= 1
+		) [t2] ON [al_group_3].[Id] = [t2].[Id] AND [t2].[rn] <= 1
 
