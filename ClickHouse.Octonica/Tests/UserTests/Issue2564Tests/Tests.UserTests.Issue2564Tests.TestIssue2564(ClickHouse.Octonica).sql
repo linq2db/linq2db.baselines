@@ -29,7 +29,7 @@ SELECT
 	tgGroup_1.TranslatedMessageGroup,
 	tgGroup_1.Hour_1,
 	COUNT(*),
-	sumOrNull(DateDiff(millisecond, tgGroup_1.TimestampGenerated, tgGroup_1.cond))
+	sumOrNull(toUnixTimestamp64Milli(toDateTime64(tgGroup_1.cond, 3)) - toUnixTimestamp64Milli(toDateTime64(tgGroup_1.TimestampGenerated, 3)))
 FROM
 	(
 		SELECT
