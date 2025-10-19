@@ -10,7 +10,7 @@ SELECT
 FROM
 	[Person] [r]
 WHERE
-	[r].[PersonID] + 1 = 0
+	[r].[PersonID] = -1
 
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite
@@ -24,5 +24,5 @@ SELECT
 FROM
 	[Person] [r]
 WHERE
-	[r].[PersonID] + 1 = 0
+	[r].[PersonID] = -1
 
