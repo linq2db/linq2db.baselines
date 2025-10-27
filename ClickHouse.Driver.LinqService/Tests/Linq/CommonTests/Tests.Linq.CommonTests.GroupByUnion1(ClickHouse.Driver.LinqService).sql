@@ -3,7 +3,7 @@
 
 SELECT
 	tt.Key_1,
-	sum(tt.ID)
+	SUM(tt.ID)
 FROM
 	(
 		SELECT
@@ -25,5 +25,5 @@ FROM
 GROUP BY
 	tt.Key_1
 HAVING
-	sum(tt.ID) <> 0
+	SUM(tt.ID) <> 0
 
