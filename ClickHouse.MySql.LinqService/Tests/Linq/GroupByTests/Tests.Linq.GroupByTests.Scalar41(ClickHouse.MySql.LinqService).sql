@@ -2,7 +2,7 @@
 -- ClickHouse.MySql ClickHouse (asynchronously)
 
 SELECT
-	g_2.MIN_1
+	g_2.c1
 FROM
 	(
 		SELECT
@@ -13,7 +13,7 @@ FROM
 			minOrNull(CASE
 				WHEN g_1.ParentID > 2 THEN g_1.ChildID
 				ELSE NULL
-			END) as MIN_1
+			END) as c1
 		FROM
 			Child g_1
 		GROUP BY

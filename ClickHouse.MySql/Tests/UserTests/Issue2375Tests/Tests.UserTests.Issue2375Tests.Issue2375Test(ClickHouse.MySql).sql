@@ -66,17 +66,18 @@ FROM
 		FROM
 			(
 				SELECT
-					inventory.Status as Status,
-					lc.ResourceLabel as ResourceLabel
+					grp.Status as Status,
+					lc.ResourceLabel as ResourceLabel,
+					COUNT(*) as c1
 				FROM
-					InventoryResourceDTO inventory
-						INNER JOIN WmsLoadCarrierDTO lc ON inventory.ResourceID = lc.Id
+					InventoryResourceDTO grp
+						INNER JOIN WmsLoadCarrierDTO lc ON grp.ResourceID = lc.Id
 				GROUP BY
-					inventory.Status,
+					grp.Status,
 					lc.ResourceLabel
-				HAVING
-					COUNT(*) > 1
 			) t1
+		WHERE
+			t1.c1 > 1
 	) m_1
 		INNER JOIN (
 			SELECT

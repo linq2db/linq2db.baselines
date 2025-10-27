@@ -6,7 +6,7 @@ SELECT
 FROM
 	(
 		SELECT
-			gr.ParentID as Key_1
+			gr.ParentID as ParentID
 		FROM
 			Child gr
 		GROUP BY

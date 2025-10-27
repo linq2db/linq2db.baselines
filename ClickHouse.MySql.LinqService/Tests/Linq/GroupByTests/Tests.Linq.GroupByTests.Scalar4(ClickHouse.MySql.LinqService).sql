@@ -2,23 +2,23 @@
 -- ClickHouse.MySql ClickHouse (asynchronously)
 
 SELECT
-	g_2.MIN_2
+	g_2.c2
 FROM
 	(
 		SELECT
 			minOrNull(CASE
 				WHEN g_1.ParentID > 2 THEN g_1.ChildID
 				ELSE NULL
-			END) as MIN_1,
+			END) as c1,
 			minOrNull(CASE
 				WHEN g_1.ParentID > 2 THEN g_1.ChildID
 				ELSE NULL
-			END) as MIN_2
+			END) as c2
 		FROM
 			Child g_1
 		GROUP BY
 			g_1.ParentID
 	) g_2
 WHERE
-	g_2.MIN_1 IS NOT NULL
+	g_2.c1 IS NOT NULL
 

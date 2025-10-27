@@ -6,12 +6,12 @@ SELECT
 FROM
 	(
 		SELECT
-			g_1.ParentID as ParentID
+			g_1.ParentID as Key_1
 		FROM
 			Child g_1
 		GROUP BY
 			g_1.ParentID
-	) g_2
+	) t1
 WHERE
-	g_2.ParentID > 2
+	t1.Key_1 > 2
 

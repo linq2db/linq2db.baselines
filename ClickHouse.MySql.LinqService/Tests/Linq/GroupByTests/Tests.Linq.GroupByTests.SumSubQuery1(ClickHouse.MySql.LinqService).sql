@@ -2,7 +2,7 @@
 -- ClickHouse.MySql ClickHouse (asynchronously)
 
 SELECT
-	sum(g_2.ParentID - 3)
+	SUM(g_2.ParentID - 3)
 FROM
 	(
 		SELECT
