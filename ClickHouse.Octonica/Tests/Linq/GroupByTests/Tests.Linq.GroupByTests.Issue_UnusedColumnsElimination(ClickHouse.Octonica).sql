@@ -6,7 +6,7 @@ SELECT
 FROM
 	(
 		SELECT
-			1 as c1
+			r.PersonID as PersonID
 		FROM
 			Person r
 		GROUP BY

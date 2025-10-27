@@ -3,7 +3,7 @@
 
 SELECT
 	g_2.Key_1,
-	sumOrNull(g_2.Max_1)
+	SUM(g_2.Max_1)
 FROM
 	(
 		SELECT
