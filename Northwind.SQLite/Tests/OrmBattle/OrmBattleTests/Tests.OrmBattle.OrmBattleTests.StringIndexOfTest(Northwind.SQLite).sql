@@ -16,6 +16,6 @@ SELECT
 FROM
 	[Customers] [c_1]
 WHERE
-	CharIndex('tt', [c_1].[City]) - 1 = 3
+	INSTR([c_1].[City], 'tt') - 1 = 3
 LIMIT 1
 

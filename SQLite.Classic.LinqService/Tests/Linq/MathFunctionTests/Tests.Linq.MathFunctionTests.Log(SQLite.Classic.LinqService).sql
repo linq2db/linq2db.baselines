@@ -6,7 +6,7 @@ SELECT
 FROM
 	(
 		SELECT
-			Floor(Log(CAST([p].[MoneyValue] AS Float))) as [Value_1]
+			Floor(Ln(CAST([p].[MoneyValue] AS Float))) as [Value_1]
 		FROM
 			[LinqDataTypes] [p]
 	) [t]
