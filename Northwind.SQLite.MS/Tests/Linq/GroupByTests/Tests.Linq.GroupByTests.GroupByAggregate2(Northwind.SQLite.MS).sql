@@ -24,19 +24,12 @@ FROM
 			(
 				SELECT
 					CASE
-						WHEN (
-							SELECT
-								AVG([a_Orders].[Freight])
-							FROM
-								[Orders] [a_Orders]
-							WHERE
-								[t1].[CustomerID] = [a_Orders].[CustomerID]
-						) >= 80
-							THEN 1
+						WHEN AVG([a_Orders].[Freight]) >= 80 THEN 1
 						ELSE 0
 					END as [Key_1]
 				FROM
 					[Customers] [t1]
+						LEFT JOIN [Orders] [a_Orders] ON [t1].[CustomerID] = [a_Orders].[CustomerID]
 			) [t2]
 		GROUP BY
 			[t2].[Key_1]
@@ -44,7 +37,7 @@ FROM
 		INNER JOIN [Customers] [d] ON ([m_1].[Key_1]) = (CASE
 			WHEN (
 				SELECT
-					AVG([a_Orders_1].[Freight]) as [AVG_1]
+					AVG([a_Orders_1].[Freight]) as [c1]
 				FROM
 					[Orders] [a_Orders_1]
 				WHERE

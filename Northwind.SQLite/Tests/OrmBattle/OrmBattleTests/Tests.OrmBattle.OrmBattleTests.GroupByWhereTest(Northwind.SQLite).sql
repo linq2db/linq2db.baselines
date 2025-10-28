@@ -26,14 +26,15 @@ FROM
 		FROM
 			(
 				SELECT
-					[g_1].[OrderDate] as [Key_1]
+					[g_1].[OrderDate] as [Key_1],
+					COUNT(*) as [c1]
 				FROM
 					[Orders] [g_1]
 				GROUP BY
 					[g_1].[OrderDate]
-				HAVING
-					COUNT(*) > 5
 			) [t1]
+		WHERE
+			[t1].[c1] > 5
 	) [m_1]
 		INNER JOIN [Orders] [d] ON strftime('%Y-%m-%d %H:%M:%f', [m_1].[Key_1]) = strftime('%Y-%m-%d %H:%M:%f', [d].[OrderDate]) OR [m_1].[Key_1] IS NULL AND [d].[OrderDate] IS NULL
 

@@ -12,6 +12,16 @@ FROM
 			[t1].[Id]
 		FROM
 			[Issue4458Item] [t1]
+				LEFT JOIN [WarehouseStock] [s] ON [s].[ItemId] = [t1].[Id] AND (
+					SELECT
+						[stock].[ItemId]
+					FROM
+						[WarehouseStock] [stock]
+					WHERE
+						[stock].[ItemId] = [t1].[Id]
+					GROUP BY
+						[stock].[ItemId]
+				) = [s].[ItemId]
 		WHERE
 			EXISTS(
 				SELECT

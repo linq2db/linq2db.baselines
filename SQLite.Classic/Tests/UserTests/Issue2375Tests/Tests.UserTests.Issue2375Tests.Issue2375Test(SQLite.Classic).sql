@@ -88,17 +88,18 @@ FROM
 		FROM
 			(
 				SELECT
-					[inventory].[Status],
-					[lc].[ResourceLabel]
+					[grp].[Status],
+					[lc].[ResourceLabel],
+					COUNT(*) as [c1]
 				FROM
-					[InventoryResourceDTO] [inventory]
-						INNER JOIN [WmsLoadCarrierDTO] [lc] ON [inventory].[ResourceID] = [lc].[Id]
+					[InventoryResourceDTO] [grp]
+						INNER JOIN [WmsLoadCarrierDTO] [lc] ON [grp].[ResourceID] = [lc].[Id]
 				GROUP BY
-					[inventory].[Status],
+					[grp].[Status],
 					[lc].[ResourceLabel]
-				HAVING
-					COUNT(*) > 1
 			) [t1]
+		WHERE
+			[t1].[c1] > 1
 	) [m_1]
 		INNER JOIN ([InventoryResourceDTO] [d]
 			INNER JOIN [WmsLoadCarrierDTO] [lc_1] ON [d].[ResourceID] = [lc_1].[Id])
