@@ -3,17 +3,17 @@
 
 SELECT
 	[g_2].[LastName],
-	[g_2].[COUNT_2]
+	[g_2].[c2]
 FROM
 	(
 		SELECT
 			[a_Employee].[EmployeeID],
-			COUNT(*) as [COUNT_1],
-			[a_Employee].[LastName],
+			COUNT(*) as [c1],
 			COUNT(CASE
 				WHEN [a_Employee].[FirstName] LIKE '%an%' ESCAPE '~' THEN 1
 				ELSE NULL
-			END) as [COUNT_2]
+			END) as [c2],
+			[a_Employee].[LastName]
 		FROM
 			[EmployeeTerritories] [g_1]
 				LEFT JOIN [Employees] [a_Employee] ON [g_1].[EmployeeID] = [a_Employee].[EmployeeID]
@@ -30,5 +30,5 @@ WHERE
 		WHERE
 			[g_2].[EmployeeID] = [a_EmployeeTerritories].[EmployeeID]
 	) > 1 AND
-	[g_2].[COUNT_1] > 2
+	[g_2].[c1] > 2
 
