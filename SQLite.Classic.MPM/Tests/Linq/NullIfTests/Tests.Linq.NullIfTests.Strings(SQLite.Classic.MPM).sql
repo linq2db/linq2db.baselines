@@ -14,9 +14,9 @@ BeforeExecute
 SELECT
 	COUNT(*)
 FROM
-	[Src] [x]
+	[Src] [s]
 WHERE
-	[x].[String] = 'abc' OR [x].[String] IS NULL
+	[s].[String] = 'abc' OR [s].[String] IS NULL
 
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
@@ -24,9 +24,9 @@ BeforeExecute
 SELECT
 	COUNT(*)
 FROM
-	[Src] [x]
+	[Src] [s]
 WHERE
-	NOT ([x].[String] = 'abc' OR [x].[String] IS NULL)
+	NOT ([s].[String] = 'abc' OR [s].[String] IS NULL)
 
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
@@ -44,9 +44,9 @@ BeforeExecute
 SELECT
 	COUNT(*)
 FROM
-	[Src] [x]
+	[Src] [s]
 WHERE
-	[x].[String] = 'xyz' OR [x].[String] IS NULL
+	[s].[String] = 'xyz' OR [s].[String] IS NULL
 
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
@@ -54,9 +54,9 @@ BeforeExecute
 SELECT
 	COUNT(*)
 FROM
-	[Src] [x]
+	[Src] [s]
 WHERE
-	NOT ([x].[String] = 'xyz' OR [x].[String] IS NULL)
+	NOT ([s].[String] = 'xyz' OR [s].[String] IS NULL)
 
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
@@ -74,9 +74,9 @@ BeforeExecute
 SELECT
 	COUNT(*)
 FROM
-	[Src] [x]
+	[Src] [s]
 WHERE
-	[x].[String] IS NULL
+	[s].[String] IS NULL
 
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
@@ -84,9 +84,9 @@ BeforeExecute
 SELECT
 	COUNT(*)
 FROM
-	[Src] [x]
+	[Src] [s]
 WHERE
-	[x].[String] IS NOT NULL
+	[s].[String] IS NOT NULL
 
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
@@ -104,9 +104,9 @@ BeforeExecute
 SELECT
 	COUNT(*)
 FROM
-	[Src] [x]
+	[Src] [s]
 WHERE
-	[x].[NullableString] = 'abc' OR [x].[NullableString] IS NULL
+	[s].[NullableString] = 'abc' OR [s].[NullableString] IS NULL
 
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
@@ -114,9 +114,9 @@ BeforeExecute
 SELECT
 	COUNT(*)
 FROM
-	[Src] [x]
+	[Src] [s]
 WHERE
-	NOT ([x].[NullableString] = 'abc' OR [x].[NullableString] IS NULL)
+	NOT ([s].[NullableString] = 'abc' OR [s].[NullableString] IS NULL)
 
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
@@ -134,9 +134,9 @@ BeforeExecute
 SELECT
 	COUNT(*)
 FROM
-	[Src] [x]
+	[Src] [s]
 WHERE
-	[x].[NullableString] = 'xyz' OR [x].[NullableString] IS NULL
+	[s].[NullableString] = 'xyz' OR [s].[NullableString] IS NULL
 
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
@@ -144,9 +144,9 @@ BeforeExecute
 SELECT
 	COUNT(*)
 FROM
-	[Src] [x]
+	[Src] [s]
 WHERE
-	NOT ([x].[NullableString] = 'xyz' OR [x].[NullableString] IS NULL)
+	NOT ([s].[NullableString] = 'xyz' OR [s].[NullableString] IS NULL)
 
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
@@ -164,9 +164,9 @@ BeforeExecute
 SELECT
 	COUNT(*)
 FROM
-	[Src] [x]
+	[Src] [s]
 WHERE
-	[x].[NullableString] IS NULL
+	[s].[NullableString] IS NULL
 
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
@@ -174,7 +174,7 @@ BeforeExecute
 SELECT
 	COUNT(*)
 FROM
-	[Src] [x]
+	[Src] [s]
 WHERE
-	[x].[NullableString] IS NOT NULL
+	[s].[NullableString] IS NOT NULL
 
