@@ -822,6 +822,15 @@ CREATE TABLE `CollatedTable`
 BeforeExecute
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 
+CREATE TABLE KeepIdentityTest (
+	ID    INT AUTO_INCREMENT NOT NULL,
+	Value INT NULL,
+	CONSTRAINT PK_KeepIdentityTest PRIMARY KEY CLUSTERED (ID)
+)
+
+BeforeExecute
+-- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
+
 INSERT INTO `LinqDataTypes`
 (
 	`ID`,
