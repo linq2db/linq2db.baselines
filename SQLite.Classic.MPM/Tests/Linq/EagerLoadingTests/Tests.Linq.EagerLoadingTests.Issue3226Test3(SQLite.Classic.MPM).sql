@@ -7,7 +7,13 @@ SELECT
 	[m_1].[Id],
 	[d].[Value]
 FROM
-	[Item] [m_1]
+	(
+		SELECT DISTINCT
+			[x].[Id]
+		FROM
+			[Item] [x]
+				LEFT JOIN [ItemValue] [a_Values] ON [x].[Id] = [a_Values].[ItemId]
+	) [m_1]
 		INNER JOIN [ItemValue] [d] ON [m_1].[Id] = [d].[ItemId]
 
 BeforeExecute
