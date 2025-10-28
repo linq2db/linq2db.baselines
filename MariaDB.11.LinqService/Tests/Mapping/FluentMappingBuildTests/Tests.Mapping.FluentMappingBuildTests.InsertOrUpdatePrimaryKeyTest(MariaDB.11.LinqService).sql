@@ -1,10 +1,10 @@
 ﻿BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql (asynchronously)
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB (asynchronously)
 
 DROP TABLE IF EXISTS `FluentTemp`
 
 BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql (asynchronously)
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB (asynchronously)
 
 CREATE TABLE IF NOT EXISTS `FluentTemp`
 (
@@ -15,7 +15,7 @@ CREATE TABLE IF NOT EXISTS `FluentTemp`
 )
 
 BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql (asynchronously)
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB (asynchronously)
 DECLARE @ID Int32
 SET     @ID = 1
 DECLARE @Name VarChar(4) -- String
@@ -33,7 +33,7 @@ VALUES
 )
 
 BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql (asynchronously)
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB (asynchronously)
 
 INSERT INTO `FluentTemp`
 (
@@ -50,7 +50,7 @@ ON DUPLICATE KEY UPDATE
 	`Name` = `Name`
 
 BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql (asynchronously)
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB (asynchronously)
 
 DROP TABLE IF EXISTS `FluentTemp`
 

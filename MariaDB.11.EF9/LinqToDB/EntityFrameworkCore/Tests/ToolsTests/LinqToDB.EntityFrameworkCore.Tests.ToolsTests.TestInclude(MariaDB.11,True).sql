@@ -35,7 +35,7 @@ ORDER BY `o`.`OrderID`, `e0`.`EmployeeID`, `s`.`EmployeeID`, `s`.`TerritoryID`, 
 BeginTransactionAsync(RepeatableRead)
 
 
--- MariaDB.10.MySqlConnector MySql (asynchronously)
+-- MariaDB.10.MySqlConnector MariaDB (asynchronously)
 
 SELECT
 	`m_1`.`EmployeeId`,
@@ -63,7 +63,7 @@ WHERE
 
 
 
--- MariaDB.10.MySqlConnector MySql (asynchronously)
+-- MariaDB.10.MySqlConnector MariaDB (asynchronously)
 
 SELECT
 	`m_1`.`OrderId`,
@@ -103,7 +103,7 @@ WHERE
 DisposeTransactionAsync
 
 
--- MariaDB.10.MySqlConnector MySql (asynchronously)
+-- MariaDB.10.MySqlConnector MariaDB (asynchronously)
 
 SELECT
 	`e`.`IsDeleted`,

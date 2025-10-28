@@ -18,7 +18,7 @@ VALUES (@p4)
 RETURNING `Id`;
 
 
--- MariaDB.10.MySqlConnector MySql (asynchronously)
+-- MariaDB.10.MySqlConnector MariaDB (asynchronously)
 
 SELECT
 	`t1`.`Id`,

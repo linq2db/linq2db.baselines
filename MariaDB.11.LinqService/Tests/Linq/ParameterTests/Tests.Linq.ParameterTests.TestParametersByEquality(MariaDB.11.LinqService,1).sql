@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql (asynchronously)
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB (asynchronously)
 DECLARE @personId Int32
 SET     @personId = 1
 DECLARE @personId_1 Int32
@@ -22,7 +22,7 @@ WHERE
 	`p`.`PersonID` = @personId AND `p`.`PersonID` = @personId_1
 
 BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql (asynchronously)
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB (asynchronously)
 DECLARE @personId Int32
 SET     @personId = 1
 DECLARE @personId_1 Int32

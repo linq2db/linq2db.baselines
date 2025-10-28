@@ -7,7 +7,7 @@ VALUES (@p0, @p1)
 RETURNING `Id`;
 
 
--- MariaDB.10.MySqlConnector MySql
+-- MariaDB.10.MySqlConnector MariaDB
 
 SELECT
 	`t1`.`Id`,

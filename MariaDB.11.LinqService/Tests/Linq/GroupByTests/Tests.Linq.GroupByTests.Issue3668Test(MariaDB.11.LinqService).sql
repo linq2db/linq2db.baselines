@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql (asynchronously)
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB (asynchronously)
 DECLARE @id Int32
 SET     @id = 1
 DECLARE @name VarChar(4) -- String
@@ -19,7 +19,7 @@ WHERE
 	`m_1`.`FirstName` <> @name AND `m_1`.`PersonID` - 1 = @id
 
 BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql (asynchronously)
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB (asynchronously)
 DECLARE @id Int32
 SET     @id = 1
 DECLARE @name VarChar(4) -- String

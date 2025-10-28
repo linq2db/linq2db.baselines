@@ -1,7 +1,7 @@
 ﻿BeforeExecute
 BeginTransaction
 BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 DECLARE @Id Int64
 SET     @Id = 1
 DECLARE @asdfgh VarChar(4) -- String
@@ -19,7 +19,7 @@ VALUES
 )
 
 BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 DECLARE @Id Int64
 SET     @Id = 100500
 DECLARE @asdfgh VarChar(9) -- String
@@ -37,7 +37,7 @@ VALUES
 )
 
 BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 DECLARE @ref1 Int64
 SET     @ref1 = 100500
 DECLARE @y1_q1_ref1 Int64
@@ -55,7 +55,7 @@ VALUES
 )
 
 BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 DECLARE @ref1 Int64
 SET     @ref1 = 1
 DECLARE @y1_q1_ref1 Int64
@@ -73,7 +73,7 @@ VALUES
 )
 
 BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 DECLARE @ref1 Int64
 SET     @ref1 = 100500
 DECLARE @y1_q1_ref1 Int64
@@ -91,7 +91,7 @@ VALUES
 )
 
 BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 DECLARE @take Int32
 SET     @take = 2
 

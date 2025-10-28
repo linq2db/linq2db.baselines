@@ -1,4 +1,4 @@
-﻿-- MariaDB.10.MySqlConnector MySql
+﻿-- MariaDB.10.MySqlConnector MariaDB
 DECLARE @DateTimeOffsetWithConverter Int64
 SET     @DateTimeOffsetWithConverter = 1304956839836121088
 DECLARE @DateTimeOffsetNWithConverter Int64

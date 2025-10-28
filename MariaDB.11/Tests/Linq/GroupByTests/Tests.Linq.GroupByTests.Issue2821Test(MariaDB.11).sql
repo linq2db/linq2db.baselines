@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 DECLARE @currentDate Datetime -- DateTime
 SET     @currentDate = '2020-02-29 17:54:55.123'
 DECLARE @currentDate_1 Datetime -- DateTime

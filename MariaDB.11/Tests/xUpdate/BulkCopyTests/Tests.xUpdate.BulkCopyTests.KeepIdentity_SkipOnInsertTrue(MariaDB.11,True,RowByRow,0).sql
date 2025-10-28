@@ -1,11 +1,11 @@
 ﻿BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 DECLARE @Value Int32
 SET     @Value = 0
 
-INSERT INTO `AllTypes`
+INSERT INTO `KeepIdentityTest`
 (
-	`intDataType`
+	`Value`
 )
 VALUES
 (
@@ -13,18 +13,18 @@ VALUES
 )
 
 BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 SELECT LAST_INSERT_ID()
 
 BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 DECLARE @lastId Int32
-SET     @lastId = 3
+SET     @lastId = 373
 
 DELETE  
 FROM
-	`AllTypes`
+	`KeepIdentityTest`
 WHERE
-	`AllTypes`.`ID` >= @lastId
+	`KeepIdentityTest`.`ID` >= @lastId
 

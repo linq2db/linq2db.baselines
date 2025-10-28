@@ -1,4 +1,4 @@
-﻿-- MariaDB.10.MySqlConnector MySql
+﻿-- MariaDB.10.MySqlConnector MariaDB
 
 CREATE TEMPORARY TABLE `NoIdentity`
 (
@@ -14,7 +14,7 @@ INSERT ASYNC BULK `NoIdentity`(Id, Name)
 
 
 
--- MariaDB.10.MySqlConnector MySql
+-- MariaDB.10.MySqlConnector MariaDB
 
 SELECT
 	`t1`.`Id`,
@@ -24,7 +24,7 @@ FROM
 
 
 
--- MariaDB.10.MySqlConnector MySql
+-- MariaDB.10.MySqlConnector MariaDB
 
 DROP TEMPORARY TABLE IF EXISTS `NoIdentity`
 

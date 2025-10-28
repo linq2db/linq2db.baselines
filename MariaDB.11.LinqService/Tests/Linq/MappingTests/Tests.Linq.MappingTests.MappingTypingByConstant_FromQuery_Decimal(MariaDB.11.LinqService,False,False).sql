@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql (asynchronously)
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB (asynchronously)
 DECLARE @value NewDecimal(1, 0) -- Decimal
 SET     @value = 1
 
@@ -16,7 +16,7 @@ FROM
 	) `t1`
 
 BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql (asynchronously)
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB (asynchronously)
 DECLARE @value NewDecimal(13, 3) -- Decimal
 SET     @value = 2147483648.123
 

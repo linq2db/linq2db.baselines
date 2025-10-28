@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql (asynchronously)
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB (asynchronously)
 DECLARE @param NewDecimal(2, 0) -- Decimal
 SET     @param = 33
 DECLARE @param_1 NewDecimal(2, 0) -- Decimal

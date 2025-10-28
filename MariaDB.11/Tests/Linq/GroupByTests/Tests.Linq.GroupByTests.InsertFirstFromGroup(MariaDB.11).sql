@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 CREATE TEMPORARY TABLE `temp_table_2`
 (
@@ -7,7 +7,7 @@ CREATE TEMPORARY TABLE `temp_table_2`
 )
 
 BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 INSERT INTO `temp_table_2`
 (
@@ -34,7 +34,7 @@ FROM
 		) `t1` ON `gr_1`.`ID` = `t1`.`ID` AND `t1`.`rn` <= 1
 
 BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 DROP TEMPORARY TABLE IF EXISTS `temp_table_2`
 

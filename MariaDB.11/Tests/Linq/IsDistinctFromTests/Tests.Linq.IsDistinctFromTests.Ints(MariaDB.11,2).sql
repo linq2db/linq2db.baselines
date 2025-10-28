@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 DECLARE @value Int32
 SET     @value = 2
 
@@ -11,7 +11,7 @@ WHERE
 	NOT `s`.`Int` <=> @value
 
 BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 DECLARE @value Int32
 SET     @value = 2
 
@@ -23,7 +23,7 @@ WHERE
 	NOT `s`.`NullableInt` <=> @value
 
 BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 DECLARE @value Int32
 SET     @value = 2
 
@@ -35,7 +35,7 @@ WHERE
 	`s`.`Int` <=> @value
 
 BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 DECLARE @value Int32
 SET     @value = 2
 

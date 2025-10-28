@@ -2,7 +2,7 @@
 INSERT BULK `Issue4460Table`(Id, Code, Name, Surname)
 
 BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 SELECT
 	`t1`.`Code`,

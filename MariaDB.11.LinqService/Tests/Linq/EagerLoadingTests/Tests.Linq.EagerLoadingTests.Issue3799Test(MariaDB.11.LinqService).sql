@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql (asynchronously)
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB (asynchronously)
 
 SELECT
 	`m_1`.`Children`,
@@ -22,7 +22,7 @@ FROM
 		INNER JOIN `Test3799Item` `d` ON `m_1`.`Children` = `d`.`ParentId` OR `m_1`.`Children` IS NULL AND `d`.`ParentId` IS NULL
 
 BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql (asynchronously)
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB (asynchronously)
 
 SELECT
 	`item_1`.`Name`,

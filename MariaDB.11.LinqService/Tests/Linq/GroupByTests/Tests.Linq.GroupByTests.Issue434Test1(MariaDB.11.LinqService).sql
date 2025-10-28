@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql (asynchronously)
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB (asynchronously)
 DECLARE @input VarChar(4) -- String
 SET     @input = 'test'
 
@@ -14,7 +14,7 @@ WHERE
 	LOCATE(@input, Lower(`m_1`.`FirstName`)) > 0
 
 BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql (asynchronously)
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB (asynchronously)
 DECLARE @input VarChar(4) -- String
 SET     @input = 'test'
 

@@ -1,4 +1,4 @@
-﻿-- MariaDB.10.MySqlConnector MySql (asynchronously)
+﻿-- MariaDB.10.MySqlConnector MariaDB (asynchronously)
 
 SELECT
 	`e`.`IsDeleted`,

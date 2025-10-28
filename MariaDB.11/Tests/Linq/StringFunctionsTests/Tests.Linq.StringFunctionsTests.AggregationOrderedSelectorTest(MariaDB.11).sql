@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 SELECT
 	GROUP_CONCAT(`g_1`.`Value1` ORDER BY `g_1`.`Value3`, `g_1`.`Value1` DESC SEPARATOR ' -> ')

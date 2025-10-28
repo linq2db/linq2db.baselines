@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 SELECT
 	`x`.`FirstName`,
@@ -16,6 +16,6 @@ WHERE
 		FROM
 			(
 				SELECT 1 as value
-			) `t1`
+			) `t1`(`value`)
 	)
 

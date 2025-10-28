@@ -1,4 +1,4 @@
-﻿-- MariaDB.10.MySqlConnector MySql
+﻿-- MariaDB.10.MySqlConnector MariaDB
 DECLARE @value VarChar(8) -- String
 SET     @value = 'anything'
 

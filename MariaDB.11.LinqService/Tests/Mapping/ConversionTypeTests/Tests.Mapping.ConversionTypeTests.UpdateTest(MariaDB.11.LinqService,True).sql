@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql (asynchronously)
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB (asynchronously)
 
 UPDATE
 	`TrimTestTable` `t1`
@@ -9,7 +9,7 @@ WHERE
 	`t1`.`ID` = 3
 
 BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql (asynchronously)
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB (asynchronously)
 
 UPDATE
 	`TrimTestTable` `t`
@@ -19,7 +19,7 @@ WHERE
 	`t`.`Data` = '***XXX***'
 
 BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql (asynchronously)
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB (asynchronously)
 
 UPDATE
 	`TrimTestTable` `t`
@@ -29,7 +29,7 @@ WHERE
 	`t`.`Data` = '***HHH***'
 
 BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql (asynchronously)
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB (asynchronously)
 
 SELECT
 	`r`.`ID`,
@@ -40,7 +40,7 @@ ORDER BY
 	`r`.`ID`
 
 BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql (asynchronously)
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB (asynchronously)
 
 SELECT
 	`r`.`ID`,

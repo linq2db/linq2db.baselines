@@ -2,7 +2,7 @@
 INSERT BULK `BulkCopyTable`(Id, Value)
 
 BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 SELECT
 	`t1`.`Id`,
@@ -13,7 +13,7 @@ ORDER BY
 	`t1`.`Id`
 
 BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 DELETE  
 FROM
@@ -23,7 +23,7 @@ BeforeExecute
 INSERT BULK `BulkCopyTable`(Id, Value)
 
 BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 SELECT
 	`t1`.`Id`,
@@ -34,7 +34,7 @@ ORDER BY
 	`t1`.`Id`
 
 BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 DELETE  
 FROM
@@ -44,7 +44,7 @@ BeforeExecute
 INSERT BULK `BulkCopyTable`(Id, Value)
 
 BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 SELECT
 	`t1`.`Id`,
@@ -55,34 +55,7 @@ ORDER BY
 	`t1`.`Id`
 
 BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
-
-DELETE  
-FROM
-	`BulkCopyTable`
-
-BeforeExecute
-INSERT BULK `BulkCopyTable`(Id, Value)
-
-BeforeExecute
-INSERT BULK `BulkCopyTable`(Id, Value)
-
-BeforeExecute
-INSERT BULK `BulkCopyTable`(Id, Value)
-
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
-
-SELECT
-	`t1`.`Id`,
-	`t1`.`Value`
-FROM
-	`BulkCopyTable` `t1`
-ORDER BY
-	`t1`.`Id`
-
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 DELETE  
 FROM
@@ -98,7 +71,7 @@ BeforeExecute
 INSERT BULK `BulkCopyTable`(Id, Value)
 
 BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 SELECT
 	`t1`.`Id`,
@@ -109,7 +82,7 @@ ORDER BY
 	`t1`.`Id`
 
 BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 DELETE  
 FROM
@@ -125,7 +98,7 @@ BeforeExecute
 INSERT BULK `BulkCopyTable`(Id, Value)
 
 BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 SELECT
 	`t1`.`Id`,
@@ -136,133 +109,7 @@ ORDER BY
 	`t1`.`Id`
 
 BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
-
-DELETE  
-FROM
-	`BulkCopyTable`
-
-BeforeExecute
-INSERT BULK `BulkCopyTable`(Id, Value)
-
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
-
-SELECT
-	`t1`.`Id`,
-	`t1`.`Value`
-FROM
-	`BulkCopyTable` `t1`
-ORDER BY
-	`t1`.`Id`
-
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
-
-DELETE  
-FROM
-	`BulkCopyTable`
-
-BeforeExecute
-INSERT BULK `BulkCopyTable`(Id, Value)
-
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
-
-SELECT
-	`t1`.`Id`,
-	`t1`.`Value`
-FROM
-	`BulkCopyTable` `t1`
-ORDER BY
-	`t1`.`Id`
-
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
-
-DELETE  
-FROM
-	`BulkCopyTable`
-
-BeforeExecute
-INSERT BULK `BulkCopyTable`(Id, Value)
-
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
-
-SELECT
-	`t1`.`Id`,
-	`t1`.`Value`
-FROM
-	`BulkCopyTable` `t1`
-ORDER BY
-	`t1`.`Id`
-
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
-
-DELETE  
-FROM
-	`BulkCopyTable`
-
-BeforeExecute
-INSERT BULK `BulkCopyTable`(Id, Value)
-
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
-
-SELECT
-	`t1`.`Id`,
-	`t1`.`Value`
-FROM
-	`BulkCopyTable` `t1`
-ORDER BY
-	`t1`.`Id`
-
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
-
-DELETE  
-FROM
-	`BulkCopyTable`
-
-BeforeExecute
-INSERT BULK `BulkCopyTable`(Id, Value)
-
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
-
-SELECT
-	`t1`.`Id`,
-	`t1`.`Value`
-FROM
-	`BulkCopyTable` `t1`
-ORDER BY
-	`t1`.`Id`
-
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
-
-DELETE  
-FROM
-	`BulkCopyTable`
-
-BeforeExecute
-INSERT BULK `BulkCopyTable`(Id, Value)
-
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
-
-SELECT
-	`t1`.`Id`,
-	`t1`.`Value`
-FROM
-	`BulkCopyTable` `t1`
-ORDER BY
-	`t1`.`Id`
-
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 DELETE  
 FROM
@@ -278,7 +125,7 @@ BeforeExecute
 INSERT BULK `BulkCopyTable`(Id, Value)
 
 BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 SELECT
 	`t1`.`Id`,
@@ -289,7 +136,133 @@ ORDER BY
 	`t1`.`Id`
 
 BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
+
+DELETE  
+FROM
+	`BulkCopyTable`
+
+BeforeExecute
+INSERT BULK `BulkCopyTable`(Id, Value)
+
+BeforeExecute
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
+
+SELECT
+	`t1`.`Id`,
+	`t1`.`Value`
+FROM
+	`BulkCopyTable` `t1`
+ORDER BY
+	`t1`.`Id`
+
+BeforeExecute
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
+
+DELETE  
+FROM
+	`BulkCopyTable`
+
+BeforeExecute
+INSERT BULK `BulkCopyTable`(Id, Value)
+
+BeforeExecute
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
+
+SELECT
+	`t1`.`Id`,
+	`t1`.`Value`
+FROM
+	`BulkCopyTable` `t1`
+ORDER BY
+	`t1`.`Id`
+
+BeforeExecute
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
+
+DELETE  
+FROM
+	`BulkCopyTable`
+
+BeforeExecute
+INSERT BULK `BulkCopyTable`(Id, Value)
+
+BeforeExecute
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
+
+SELECT
+	`t1`.`Id`,
+	`t1`.`Value`
+FROM
+	`BulkCopyTable` `t1`
+ORDER BY
+	`t1`.`Id`
+
+BeforeExecute
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
+
+DELETE  
+FROM
+	`BulkCopyTable`
+
+BeforeExecute
+INSERT BULK `BulkCopyTable`(Id, Value)
+
+BeforeExecute
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
+
+SELECT
+	`t1`.`Id`,
+	`t1`.`Value`
+FROM
+	`BulkCopyTable` `t1`
+ORDER BY
+	`t1`.`Id`
+
+BeforeExecute
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
+
+DELETE  
+FROM
+	`BulkCopyTable`
+
+BeforeExecute
+INSERT BULK `BulkCopyTable`(Id, Value)
+
+BeforeExecute
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
+
+SELECT
+	`t1`.`Id`,
+	`t1`.`Value`
+FROM
+	`BulkCopyTable` `t1`
+ORDER BY
+	`t1`.`Id`
+
+BeforeExecute
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
+
+DELETE  
+FROM
+	`BulkCopyTable`
+
+BeforeExecute
+INSERT BULK `BulkCopyTable`(Id, Value)
+
+BeforeExecute
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
+
+SELECT
+	`t1`.`Id`,
+	`t1`.`Value`
+FROM
+	`BulkCopyTable` `t1`
+ORDER BY
+	`t1`.`Id`
+
+BeforeExecute
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 DELETE  
 FROM
@@ -305,7 +278,7 @@ BeforeExecute
 INSERT BULK `BulkCopyTable`(Id, Value)
 
 BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 SELECT
 	`t1`.`Id`,
@@ -316,7 +289,7 @@ ORDER BY
 	`t1`.`Id`
 
 BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 DELETE  
 FROM
@@ -332,7 +305,7 @@ BeforeExecute
 INSERT BULK `BulkCopyTable`(Id, Value)
 
 BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 SELECT
 	`t1`.`Id`,
@@ -343,7 +316,7 @@ ORDER BY
 	`t1`.`Id`
 
 BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 DELETE  
 FROM
@@ -353,7 +326,13 @@ BeforeExecute
 INSERT BULK `BulkCopyTable`(Id, Value)
 
 BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+INSERT BULK `BulkCopyTable`(Id, Value)
+
+BeforeExecute
+INSERT BULK `BulkCopyTable`(Id, Value)
+
+BeforeExecute
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 SELECT
 	`t1`.`Id`,
@@ -364,7 +343,7 @@ ORDER BY
 	`t1`.`Id`
 
 BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 DELETE  
 FROM
@@ -374,7 +353,7 @@ BeforeExecute
 INSERT BULK `BulkCopyTable`(Id, Value)
 
 BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 SELECT
 	`t1`.`Id`,
@@ -385,7 +364,7 @@ ORDER BY
 	`t1`.`Id`
 
 BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 DELETE  
 FROM
@@ -395,7 +374,7 @@ BeforeExecute
 INSERT BULK `BulkCopyTable`(Id, Value)
 
 BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 SELECT
 	`t1`.`Id`,
@@ -406,7 +385,28 @@ ORDER BY
 	`t1`.`Id`
 
 BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
+
+DELETE  
+FROM
+	`BulkCopyTable`
+
+BeforeExecute
+INSERT BULK `BulkCopyTable`(Id, Value)
+
+BeforeExecute
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
+
+SELECT
+	`t1`.`Id`,
+	`t1`.`Value`
+FROM
+	`BulkCopyTable` `t1`
+ORDER BY
+	`t1`.`Id`
+
+BeforeExecute
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 DELETE  
 FROM
@@ -416,7 +416,7 @@ BeforeExecute
 INSERT ASYNC BULK `BulkCopyTable`(Id, Value)
 
 BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 SELECT
 	`t1`.`Id`,
@@ -427,7 +427,7 @@ ORDER BY
 	`t1`.`Id`
 
 BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 DELETE  
 FROM
@@ -437,7 +437,7 @@ BeforeExecute
 INSERT ASYNC BULK `BulkCopyTable`(Id, Value)
 
 BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 SELECT
 	`t1`.`Id`,
@@ -448,7 +448,7 @@ ORDER BY
 	`t1`.`Id`
 
 BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 DELETE  
 FROM
@@ -458,7 +458,7 @@ BeforeExecute
 INSERT ASYNC BULK `BulkCopyTable`(Id, Value)
 
 BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 SELECT
 	`t1`.`Id`,
@@ -469,61 +469,7 @@ ORDER BY
 	`t1`.`Id`
 
 BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
-
-DELETE  
-FROM
-	`BulkCopyTable`
-
-BeforeExecute
-INSERT ASYNC BULK `BulkCopyTable`(Id, Value)
-
-BeforeExecute
-INSERT ASYNC BULK `BulkCopyTable`(Id, Value)
-
-BeforeExecute
-INSERT ASYNC BULK `BulkCopyTable`(Id, Value)
-
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
-
-SELECT
-	`t1`.`Id`,
-	`t1`.`Value`
-FROM
-	`BulkCopyTable` `t1`
-ORDER BY
-	`t1`.`Id`
-
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
-
-DELETE  
-FROM
-	`BulkCopyTable`
-
-BeforeExecute
-INSERT ASYNC BULK `BulkCopyTable`(Id, Value)
-
-BeforeExecute
-INSERT ASYNC BULK `BulkCopyTable`(Id, Value)
-
-BeforeExecute
-INSERT ASYNC BULK `BulkCopyTable`(Id, Value)
-
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
-
-SELECT
-	`t1`.`Id`,
-	`t1`.`Value`
-FROM
-	`BulkCopyTable` `t1`
-ORDER BY
-	`t1`.`Id`
-
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 DELETE  
 FROM
@@ -539,7 +485,7 @@ BeforeExecute
 INSERT ASYNC BULK `BulkCopyTable`(Id, Value)
 
 BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 SELECT
 	`t1`.`Id`,
@@ -550,133 +496,7 @@ ORDER BY
 	`t1`.`Id`
 
 BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
-
-DELETE  
-FROM
-	`BulkCopyTable`
-
-BeforeExecute
-INSERT ASYNC BULK `BulkCopyTable`(Id, Value)
-
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
-
-SELECT
-	`t1`.`Id`,
-	`t1`.`Value`
-FROM
-	`BulkCopyTable` `t1`
-ORDER BY
-	`t1`.`Id`
-
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
-
-DELETE  
-FROM
-	`BulkCopyTable`
-
-BeforeExecute
-INSERT ASYNC BULK `BulkCopyTable`(Id, Value)
-
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
-
-SELECT
-	`t1`.`Id`,
-	`t1`.`Value`
-FROM
-	`BulkCopyTable` `t1`
-ORDER BY
-	`t1`.`Id`
-
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
-
-DELETE  
-FROM
-	`BulkCopyTable`
-
-BeforeExecute
-INSERT ASYNC BULK `BulkCopyTable`(Id, Value)
-
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
-
-SELECT
-	`t1`.`Id`,
-	`t1`.`Value`
-FROM
-	`BulkCopyTable` `t1`
-ORDER BY
-	`t1`.`Id`
-
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
-
-DELETE  
-FROM
-	`BulkCopyTable`
-
-BeforeExecute
-INSERT ASYNC BULK `BulkCopyTable`(Id, Value)
-
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
-
-SELECT
-	`t1`.`Id`,
-	`t1`.`Value`
-FROM
-	`BulkCopyTable` `t1`
-ORDER BY
-	`t1`.`Id`
-
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
-
-DELETE  
-FROM
-	`BulkCopyTable`
-
-BeforeExecute
-INSERT ASYNC BULK `BulkCopyTable`(Id, Value)
-
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
-
-SELECT
-	`t1`.`Id`,
-	`t1`.`Value`
-FROM
-	`BulkCopyTable` `t1`
-ORDER BY
-	`t1`.`Id`
-
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
-
-DELETE  
-FROM
-	`BulkCopyTable`
-
-BeforeExecute
-INSERT ASYNC BULK `BulkCopyTable`(Id, Value)
-
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
-
-SELECT
-	`t1`.`Id`,
-	`t1`.`Value`
-FROM
-	`BulkCopyTable` `t1`
-ORDER BY
-	`t1`.`Id`
-
-BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 DELETE  
 FROM
@@ -692,7 +512,7 @@ BeforeExecute
 INSERT ASYNC BULK `BulkCopyTable`(Id, Value)
 
 BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 SELECT
 	`t1`.`Id`,
@@ -703,7 +523,7 @@ ORDER BY
 	`t1`.`Id`
 
 BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 DELETE  
 FROM
@@ -719,7 +539,7 @@ BeforeExecute
 INSERT ASYNC BULK `BulkCopyTable`(Id, Value)
 
 BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 SELECT
 	`t1`.`Id`,
@@ -730,7 +550,133 @@ ORDER BY
 	`t1`.`Id`
 
 BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
+
+DELETE  
+FROM
+	`BulkCopyTable`
+
+BeforeExecute
+INSERT ASYNC BULK `BulkCopyTable`(Id, Value)
+
+BeforeExecute
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
+
+SELECT
+	`t1`.`Id`,
+	`t1`.`Value`
+FROM
+	`BulkCopyTable` `t1`
+ORDER BY
+	`t1`.`Id`
+
+BeforeExecute
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
+
+DELETE  
+FROM
+	`BulkCopyTable`
+
+BeforeExecute
+INSERT ASYNC BULK `BulkCopyTable`(Id, Value)
+
+BeforeExecute
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
+
+SELECT
+	`t1`.`Id`,
+	`t1`.`Value`
+FROM
+	`BulkCopyTable` `t1`
+ORDER BY
+	`t1`.`Id`
+
+BeforeExecute
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
+
+DELETE  
+FROM
+	`BulkCopyTable`
+
+BeforeExecute
+INSERT ASYNC BULK `BulkCopyTable`(Id, Value)
+
+BeforeExecute
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
+
+SELECT
+	`t1`.`Id`,
+	`t1`.`Value`
+FROM
+	`BulkCopyTable` `t1`
+ORDER BY
+	`t1`.`Id`
+
+BeforeExecute
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
+
+DELETE  
+FROM
+	`BulkCopyTable`
+
+BeforeExecute
+INSERT ASYNC BULK `BulkCopyTable`(Id, Value)
+
+BeforeExecute
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
+
+SELECT
+	`t1`.`Id`,
+	`t1`.`Value`
+FROM
+	`BulkCopyTable` `t1`
+ORDER BY
+	`t1`.`Id`
+
+BeforeExecute
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
+
+DELETE  
+FROM
+	`BulkCopyTable`
+
+BeforeExecute
+INSERT ASYNC BULK `BulkCopyTable`(Id, Value)
+
+BeforeExecute
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
+
+SELECT
+	`t1`.`Id`,
+	`t1`.`Value`
+FROM
+	`BulkCopyTable` `t1`
+ORDER BY
+	`t1`.`Id`
+
+BeforeExecute
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
+
+DELETE  
+FROM
+	`BulkCopyTable`
+
+BeforeExecute
+INSERT ASYNC BULK `BulkCopyTable`(Id, Value)
+
+BeforeExecute
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
+
+SELECT
+	`t1`.`Id`,
+	`t1`.`Value`
+FROM
+	`BulkCopyTable` `t1`
+ORDER BY
+	`t1`.`Id`
+
+BeforeExecute
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 DELETE  
 FROM
@@ -746,7 +692,7 @@ BeforeExecute
 INSERT ASYNC BULK `BulkCopyTable`(Id, Value)
 
 BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 SELECT
 	`t1`.`Id`,
@@ -757,7 +703,7 @@ ORDER BY
 	`t1`.`Id`
 
 BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 DELETE  
 FROM
@@ -767,7 +713,13 @@ BeforeExecute
 INSERT ASYNC BULK `BulkCopyTable`(Id, Value)
 
 BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+INSERT ASYNC BULK `BulkCopyTable`(Id, Value)
+
+BeforeExecute
+INSERT ASYNC BULK `BulkCopyTable`(Id, Value)
+
+BeforeExecute
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 SELECT
 	`t1`.`Id`,
@@ -778,7 +730,7 @@ ORDER BY
 	`t1`.`Id`
 
 BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 DELETE  
 FROM
@@ -788,7 +740,13 @@ BeforeExecute
 INSERT ASYNC BULK `BulkCopyTable`(Id, Value)
 
 BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+INSERT ASYNC BULK `BulkCopyTable`(Id, Value)
+
+BeforeExecute
+INSERT ASYNC BULK `BulkCopyTable`(Id, Value)
+
+BeforeExecute
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 SELECT
 	`t1`.`Id`,
@@ -799,7 +757,7 @@ ORDER BY
 	`t1`.`Id`
 
 BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 DELETE  
 FROM
@@ -809,7 +767,7 @@ BeforeExecute
 INSERT ASYNC BULK `BulkCopyTable`(Id, Value)
 
 BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 SELECT
 	`t1`.`Id`,
@@ -820,7 +778,49 @@ ORDER BY
 	`t1`.`Id`
 
 BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
+
+DELETE  
+FROM
+	`BulkCopyTable`
+
+BeforeExecute
+INSERT ASYNC BULK `BulkCopyTable`(Id, Value)
+
+BeforeExecute
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
+
+SELECT
+	`t1`.`Id`,
+	`t1`.`Value`
+FROM
+	`BulkCopyTable` `t1`
+ORDER BY
+	`t1`.`Id`
+
+BeforeExecute
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
+
+DELETE  
+FROM
+	`BulkCopyTable`
+
+BeforeExecute
+INSERT ASYNC BULK `BulkCopyTable`(Id, Value)
+
+BeforeExecute
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
+
+SELECT
+	`t1`.`Id`,
+	`t1`.`Value`
+FROM
+	`BulkCopyTable` `t1`
+ORDER BY
+	`t1`.`Id`
+
+BeforeExecute
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 DELETE  
 FROM

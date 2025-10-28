@@ -1,5 +1,5 @@
 ﻿BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 SELECT /*+ JOIN_INDEX(p parent_ix, parent2_ix) */
 	`p`.`ParentID`,

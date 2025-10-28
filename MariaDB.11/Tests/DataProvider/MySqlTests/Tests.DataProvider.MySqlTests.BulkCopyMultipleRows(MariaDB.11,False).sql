@@ -1,10 +1,10 @@
 ﻿BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 SET GLOBAL local_infile=ON
 
 BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 DECLARE @p1 Time
 SET     @p1 = 17:54:55
 DECLARE @p2 Time
@@ -1536,7 +1536,7 @@ VALUES
 (3499,4499,123,6499,7499,8499,9499,9299,8199,'2020-02-29','2020-02-29 17:54:55','2020-02-29 17:54:55',@p500,'A','_btest','test',0x060F04,0x7B16,0x010203,7,'Green','one',5499,99)
 
 BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 DECLARE @p1 Time
 SET     @p1 = 17:54:55
 DECLARE @p2 Time
@@ -3068,7 +3068,7 @@ VALUES
 (3999,4999,111,6999,7999,8999,9999,9799,8699,'2020-02-29','2020-02-29 17:54:55','2020-02-29 17:54:55',@p500,'A','_btest','test',0x060F04,0x7B16,0x010203,7,'Green','one',5999,99)
 
 BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 SELECT
 	COUNT(*)
@@ -3078,7 +3078,7 @@ WHERE
 	`t1`.`varcharDataType` = '_btest'
 
 BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 DECLARE @take Int32
 SET     @take = 10
 
@@ -3117,7 +3117,7 @@ ORDER BY
 LIMIT @take
 
 BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 DELETE  
 FROM
@@ -3126,7 +3126,7 @@ WHERE
 	`AllTypes`.`varcharDataType` = '_btest'
 
 BeforeExecute
--- MariaDB.11 MariaDB.10.MySqlConnector MySql
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 DELETE  
 FROM
