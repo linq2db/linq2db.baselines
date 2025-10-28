@@ -3,9 +3,9 @@
 DECLARE @Value Int32
 SET     @Value = 0
 
-INSERT INTO `AllTypes`
+INSERT INTO `KeepIdentityTest`
 (
-	`intDataType`
+	`Value`
 )
 VALUES
 (
@@ -20,11 +20,11 @@ SELECT LAST_INSERT_ID()
 BeforeExecute
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
 DECLARE @lastId Int32
-SET     @lastId = 3
+SET     @lastId = 365
 
 DELETE  
 FROM
-	`AllTypes`
+	`KeepIdentityTest`
 WHERE
-	`AllTypes`.`ID` >= @lastId
+	`KeepIdentityTest`.`ID` >= @lastId
 

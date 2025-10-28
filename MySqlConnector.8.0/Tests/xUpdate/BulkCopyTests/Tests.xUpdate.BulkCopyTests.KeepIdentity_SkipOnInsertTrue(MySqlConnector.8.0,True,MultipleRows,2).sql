@@ -3,9 +3,9 @@
 DECLARE @Value Int32
 SET     @Value = 0
 
-INSERT INTO `AllTypes`
+INSERT INTO `KeepIdentityTest`
 (
-	`intDataType`
+	`Value`
 )
 VALUES
 (
@@ -20,25 +20,25 @@ SELECT LAST_INSERT_ID()
 BeforeExecute
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80 (asynchronously)
 
-INSERT INTO `AllTypes`
+INSERT INTO `KeepIdentityTest`
 (
 	`ID`,
-	`intDataType`
+	`Value`
 )
 VALUES
-(13,200),
-(23,300)
+(428,200),
+(438,300)
 
 BeforeExecute
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 DECLARE @lastId Int32
-SET     @lastId = 3
+SET     @lastId = 418
 
 SELECT
 	`t1`.`ID`,
-	`t1`.`intDataType`
+	`t1`.`Value`
 FROM
-	`AllTypes` `t1`
+	`KeepIdentityTest` `t1`
 WHERE
 	`t1`.`ID` > @lastId
 ORDER BY
@@ -47,11 +47,11 @@ ORDER BY
 BeforeExecute
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 DECLARE @lastId Int32
-SET     @lastId = 3
+SET     @lastId = 418
 
 DELETE  
 FROM
-	`AllTypes`
+	`KeepIdentityTest`
 WHERE
-	`AllTypes`.`ID` >= @lastId
+	`KeepIdentityTest`.`ID` >= @lastId
 
