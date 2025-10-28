@@ -3,12 +3,22 @@
 
 SELECT
 	COUNT(*)
-WHERE
-	1 = 0
+FROM
+	(
+		SELECT
+			1 as [c1]
+		WHERE
+			1 = 0
+	) [t1]
 
 BeforeExecute
 -- SQLite.Classic.MPM SQLite.Classic SQLite
 
 SELECT
 	COUNT(*)
+FROM
+	(
+		SELECT
+			1 as [c1]
+	) [t1]
 

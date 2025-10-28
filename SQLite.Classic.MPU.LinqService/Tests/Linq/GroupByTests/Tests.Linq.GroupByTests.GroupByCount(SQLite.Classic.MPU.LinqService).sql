@@ -6,7 +6,7 @@ SELECT
 FROM
 	(
 		SELECT
-			[gr].[ParentID] as [Key_1]
+			[gr].[ParentID]
 		FROM
 			[Child] [gr]
 		GROUP BY
