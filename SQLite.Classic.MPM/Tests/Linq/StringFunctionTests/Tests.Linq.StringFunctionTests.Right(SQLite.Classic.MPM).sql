@@ -10,5 +10,6 @@ SELECT
 FROM
 	[Person] [p]
 WHERE
-	RightStr([p].[FirstName], 3) = 'ohn' AND [p].[PersonID] = 1
+	SUBSTRING([p].[FirstName], LENGTH([p].[FirstName]) - 3 + 1) = 'ohn' AND
+	[p].[PersonID] = 1
 

@@ -21,6 +21,6 @@ WHERE
 					('j'), ('o'), ('h'), ('n')
 				) [x]
 		WHERE
-			CharIndex([x].[item], [t].[FirstName]) - 1 > 0
+			INSTR([t].[FirstName], [x].[item]) - 1 > 0
 	)
 

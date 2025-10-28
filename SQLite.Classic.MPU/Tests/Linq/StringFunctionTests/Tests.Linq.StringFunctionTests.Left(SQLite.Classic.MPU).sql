@@ -10,5 +10,5 @@ SELECT
 FROM
 	[Person] [p]
 WHERE
-	LeftStr([p].[FirstName], 2) = 'Jo' AND [p].[PersonID] = 1
+	SUBSTRING([p].[FirstName], 1, 2) = 'Jo' AND [p].[PersonID] = 1
 

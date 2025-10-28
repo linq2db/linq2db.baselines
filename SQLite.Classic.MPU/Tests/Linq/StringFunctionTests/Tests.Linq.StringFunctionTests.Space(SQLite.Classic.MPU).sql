@@ -10,6 +10,6 @@ SELECT
 FROM
 	[Person] [p]
 WHERE
-	[p].[FirstName] || PadR(' ', [p].[PersonID] + 1) || '123' = 'John  123' AND
+	[p].[FirstName] || REPLACE(HEX(ZEROBLOB(([p].[PersonID] + 1))), '00', ' ') || '123' = 'John  123' AND
 	[p].[PersonID] = 1
 

@@ -12,7 +12,7 @@ FROM
 WHERE
 	'123' || CASE
 		WHEN Length([p].[FirstName]) > 6 THEN [p].[FirstName]
-		ELSE Replicate(' ', 6 - Length([p].[FirstName])) || [p].[FirstName]
+		ELSE REPLACE(HEX(ZEROBLOB((6 - Length([p].[FirstName])))), '00', ' ') || [p].[FirstName]
 	END = '123  John' AND
 	[p].[PersonID] = 1
 

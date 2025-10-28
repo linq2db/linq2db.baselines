@@ -189,11 +189,21 @@ UPDATE
 	[Parent]
 SET
 	[Value1] = 1
+FROM
+	(
+		SELECT
+			[x].[Value1],
+			[x].[ParentID]
+		FROM
+			[Parent] [x]
+		WHERE
+			[x].[ParentID] > 1000
+		ORDER BY
+			[x].[ParentID] DESC
+		LIMIT @take OFFSET @skip
+	) [t1]
 WHERE
-	[Parent].[ParentID] > 1000
-ORDER BY
-	[Parent].[ParentID] DESC
-LIMIT @take OFFSET @skip
+	[Parent].[ParentID] = [t1].[ParentID] AND ([Parent].[Value1] = [t1].[Value1] OR [Parent].[Value1] IS NULL AND [t1].[Value1] IS NULL)
 
 BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite

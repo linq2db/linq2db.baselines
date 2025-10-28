@@ -189,7 +189,17 @@ UPDATE
 	[Parent]
 SET
 	[Value1] = @Value1
+FROM
+	(
+		SELECT
+			[p].[ParentID],
+			[p].[Value1]
+		FROM
+			[Parent] [p]
+		WHERE
+			[p].[ParentID] >= 1000
+		LIMIT @take
+	) [t1]
 WHERE
-	[Parent].[ParentID] >= 1000
-LIMIT @take
+	[Parent].[ParentID] = [t1].[ParentID] AND ([Parent].[Value1] = [t1].[Value1] OR [Parent].[Value1] IS NULL AND [t1].[Value1] IS NULL)
 
