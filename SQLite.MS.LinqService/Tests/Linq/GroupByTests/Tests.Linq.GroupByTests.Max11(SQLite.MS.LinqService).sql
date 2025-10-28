@@ -2,10 +2,7 @@
 -- SQLite.MS SQLite (asynchronously)
 
 SELECT
-	MAX(CASE
-		WHEN [t1].[ChildID] > 20 THEN 1
-		ELSE 0
-	END)
+	MAX([t1].[ChildID] > 20)
 FROM
 	[Child] [t1]
 

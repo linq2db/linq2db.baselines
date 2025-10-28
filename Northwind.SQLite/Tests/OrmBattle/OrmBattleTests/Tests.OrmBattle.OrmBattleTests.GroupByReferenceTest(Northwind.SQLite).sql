@@ -26,6 +26,8 @@ FROM
 		FROM
 			[Orders] [t1]
 				INNER JOIN [Customers] [a_Customer] ON [t1].[CustomerID] = [a_Customer].[CustomerID]
+		GROUP BY
+			[a_Customer].[CustomerID]
 	) [m_1]
 		INNER JOIN ([Orders] [d]
 			INNER JOIN [Customers] [a_Customer_1] ON [d].[CustomerID] = [a_Customer_1].[CustomerID])
