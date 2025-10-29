@@ -1,0 +1,40 @@
+﻿-- Informix.DB2 Informix
+
+SELECT FIRST 2
+	t1.Id
+FROM
+	TransactionLine t1
+WHERE
+	t1.Id = 2
+
+-- Informix.DB2 Informix
+
+SELECT FIRST 2
+	t1.Id
+FROM
+	TransactionLine t1
+WHERE
+	t1.Id = 2
+
+-- Informix.DB2 Informix
+DECLARE @UserId Integer(4) -- Int32
+SET     @UserId = 2
+
+SELECT FIRST 2
+	x.Id
+FROM
+	TransactionLine x
+WHERE
+	x.Id = @UserId
+
+-- Informix.DB2 Informix
+DECLARE @UserId Integer(4) -- Int32
+SET     @UserId = 2
+
+SELECT FIRST 2
+	x.Id
+FROM
+	TransactionLine x
+WHERE
+	x.Id = @UserId
+
