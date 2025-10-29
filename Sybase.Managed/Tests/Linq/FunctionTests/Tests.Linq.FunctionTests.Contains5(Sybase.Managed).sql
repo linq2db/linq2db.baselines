@@ -1,0 +1,20 @@
+﻿-- Sybase.Managed Sybase
+
+SELECT
+	[p].[ParentID],
+	[p].[Value1]
+FROM
+	[Parent] [p]
+WHERE
+	[p].[ParentID] IN (1, 2)
+
+-- Sybase.Managed Sybase
+
+SELECT
+	[p].[ParentID],
+	[p].[Value1]
+FROM
+	[Parent] [p]
+WHERE
+	[p].[ParentID] IN (1, 2, 4)
+
