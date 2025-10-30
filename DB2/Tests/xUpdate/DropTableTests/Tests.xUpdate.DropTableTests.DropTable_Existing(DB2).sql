@@ -1,0 +1,11 @@
+﻿-- DB2 DB2.LUW DB2LUW
+
+CREATE TABLE "Table"
+(
+	ID Int NOT NULL
+)
+
+-- DB2 DB2.LUW DB2LUW
+
+DROP TABLE "Table"
+

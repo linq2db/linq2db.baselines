@@ -1,0 +1,54 @@
+﻿-- DB2 DB2.LUW DB2LUW
+
+INSERT INTO "SimpleBulkCopyTable"
+(
+	"Id"
+)
+VALUES
+(1)
+
+-- DB2 DB2.LUW DB2LUW
+
+INSERT INTO "SimpleBulkCopyTable"
+(
+	"Id"
+)
+VALUES
+(2)
+
+-- DB2 DB2.LUW DB2LUW
+
+INSERT INTO "SimpleBulkCopyTable"
+(
+	"Id"
+)
+VALUES
+(3)
+
+-- DB2 DB2.LUW DB2LUW
+
+INSERT INTO "SimpleBulkCopyTable"
+(
+	"Id"
+)
+VALUES
+(10)
+
+-- DB2 DB2.LUW DB2LUW
+
+INSERT INTO "SimpleBulkCopyTable"
+(
+	"Id"
+)
+VALUES
+(20)
+
+-- DB2 DB2.LUW DB2LUW
+
+INSERT INTO "SimpleBulkCopyTable"
+(
+	"Id"
+)
+VALUES
+(30)
+
