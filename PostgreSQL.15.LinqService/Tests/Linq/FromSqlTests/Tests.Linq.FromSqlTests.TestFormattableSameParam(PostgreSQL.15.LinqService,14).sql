@@ -1,6 +1,6 @@
 ﻿BeforeExecute
 -- PostgreSQL.15 PostgreSQL (asynchronously)
-DECLARE @p Bigint -- Int64
+DECLARE @p Integer -- Int32
 SET     @p = 5
 DECLARE @p_1 Integer -- Int32
 SET     @p_1 = 14
