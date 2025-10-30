@@ -1,12 +1,12 @@
 ﻿BeforeExecute
 -- Oracle.12.Managed Oracle.Managed Oracle12 (asynchronously)
-DECLARE @FirstName NVarchar2(3) -- String
+DECLARE @FirstName Varchar2(3) -- String
 SET     @FirstName = '123'
 DECLARE @LastName Varchar2(3) -- String
 SET     @LastName = '456'
 DECLARE @MiddleName Varchar2(3) -- String
 SET     @MiddleName = '789'
-DECLARE @Gender NVarchar2(1) -- String
+DECLARE @Gender Varchar2(1) -- String
 SET     @Gender = 'M'
 DECLARE @IDENTITY_PARAMETER Decimal
 SET     @IDENTITY_PARAMETER = NULL
