@@ -2,7 +2,7 @@
 -- ClickHouse.Octonica ClickHouse (asynchronously)
 
 SELECT
-	sum(grp_1.MoneyValue),
+	sumOrNull(grp_1.MoneyValue),
 	toYear(grp_1.Date_1),
 	toMonth(grp_1.Date_1)
 FROM
@@ -20,7 +20,7 @@ BeforeExecute
 -- ClickHouse.Octonica ClickHouse (asynchronously)
 
 SELECT
-	sum(grp_1.MoneyValue),
+	sumOrNull(grp_1.MoneyValue),
 	toYear(grp_1.Date_1),
 	toMonth(grp_1.Date_1)
 FROM

@@ -2,9 +2,14 @@
 -- ClickHouse.Octonica ClickHouse (asynchronously)
 
 SELECT
-	t.MoneyValue
+	t.c1
 FROM
-	LinqDataTypes t
+	(
+		SELECT
+			ROUND(p.MoneyValue) as c1
+		FROM
+			LinqDataTypes p
+	) t
 WHERE
-	ROUND(t.MoneyValue) <> toDecimal64('0', 4)
+	t.c1 <> toDecimal64('0', 4)
 
