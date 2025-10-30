@@ -96,6 +96,12 @@ WHERE
 	t1."IntValue" > ANY(t2."IntArray") OR
 	t1."IntValue" >= ANY(t2."IntArray") OR
 	t1."IntValue" <> ANY(t2."IntArray") OR
+	t1."IntValue" = ANY(t2."IntArray") OR
+	t1."IntValue" < ANY(t2."IntArray") OR
+	t1."IntValue" <= ANY(t2."IntArray") OR
+	t1."IntValue" > ANY(t2."IntArray") OR
+	t1."IntValue" >= ANY(t2."IntArray") OR
+	t1."IntValue" <> ANY(t2."IntArray") OR
 	t1."IntValue" = ANY(:arr) OR
 	t1."IntValue" < ANY(:arr) OR
 	t1."IntValue" <= ANY(:arr) OR

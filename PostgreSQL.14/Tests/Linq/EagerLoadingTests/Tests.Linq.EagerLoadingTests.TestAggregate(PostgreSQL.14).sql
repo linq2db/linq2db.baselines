@@ -29,7 +29,7 @@ SELECT
 		FROM
 			(
 				SELECT
-					*
+					t3."DetailValue"
 				FROM
 					(
 						SELECT DISTINCT
