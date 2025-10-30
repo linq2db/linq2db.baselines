@@ -1,12 +1,12 @@
 ﻿BeforeExecute
 -- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL (asynchronously)
-DECLARE @FirstName Varchar(3) -- String
+DECLARE @FirstName Text(3) -- String
 SET     @FirstName = '123'
 DECLARE @LastName Text(3) -- String
 SET     @LastName = '456'
 DECLARE @MiddleName Text(3) -- String
 SET     @MiddleName = '789'
-DECLARE @Gender Varchar(1) -- String
+DECLARE @Gender Text(1) -- String
 SET     @Gender = 'M'
 
 INSERT INTO "Person"

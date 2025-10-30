@@ -1,6 +1,6 @@
 ﻿BeforeExecute
 -- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL (asynchronously)
-DECLARE @p Bigint -- Int64
+DECLARE @p Integer -- Int32
 SET     @p = 1
 DECLARE @endId Integer -- Int32
 SET     @endId = 14
