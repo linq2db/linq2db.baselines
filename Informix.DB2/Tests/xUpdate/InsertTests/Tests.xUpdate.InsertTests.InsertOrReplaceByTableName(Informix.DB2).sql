@@ -1,18 +1,4 @@
 ﻿-- Informix.DB2 Informix
-
-DROP TABLE IF EXISTS xxPatient
-
--- Informix.DB2 Informix
-
-CREATE TABLE xxPatient
-(
-	PersonID  Int           NOT NULL,
-	Diagnosis NVarChar(255)     NULL,
-
-	PRIMARY KEY (PersonID)
-)
-
--- Informix.DB2 Informix
 DECLARE @Diagnosis VarChar(4) -- String
 SET     @Diagnosis = 'ABC1'
 DECLARE @PersonID Integer(4) -- Int32
@@ -111,8 +97,4 @@ SELECT
 	COUNT(*)
 FROM
 	xxPatient t1
-
--- Informix.DB2 Informix
-
-DROP TABLE IF EXISTS xxPatient
 

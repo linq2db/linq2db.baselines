@@ -1,21 +1,4 @@
 ﻿-- Informix.DB2 Informix
-
-DROP TABLE IF EXISTS xxPerson
-
--- Informix.DB2 Informix
-
-CREATE TABLE xxPerson
-(
-	FirstName  NVarChar(255)  NOT NULL,
-	PersonID   SERIAL         NOT NULL,
-	LastName   NVarChar(255)  NOT NULL,
-	MiddleName NVarChar(255)      NULL,
-	Gender     Char(1)        NOT NULL,
-
-	PRIMARY KEY (PersonID)
-)
-
--- Informix.DB2 Informix
 DECLARE @FirstName VarChar(6) -- String
 SET     @FirstName = 'Steven'
 DECLARE @LastName VarChar(4) -- String
@@ -73,8 +56,4 @@ SELECT
 	COUNT(*)
 FROM
 	xxPerson t1
-
--- Informix.DB2 Informix
-
-DROP TABLE xxPerson
 
