@@ -1,0 +1,40 @@
+﻿BeforeExecute
+-- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL (asynchronously)
+
+SELECT
+	Coalesce(t."Value2", '')
+FROM
+	"SampleClass" t
+ORDER BY
+	t."Id"
+
+BeforeExecute
+-- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL (asynchronously)
+
+SELECT
+	Coalesce(t."Value3", '')
+FROM
+	"SampleClass" t
+ORDER BY
+	t."Id"
+
+BeforeExecute
+-- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL (asynchronously)
+
+SELECT
+	CONCAT_WS(' -> ', t."Value3", t."Value1", t."Value2")
+FROM
+	"SampleClass" t
+ORDER BY
+	t."Id"
+
+BeforeExecute
+-- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL (asynchronously)
+
+SELECT
+	CONCAT_WS(' -> ', t."Value3", t."Value3")
+FROM
+	"SampleClass" t
+ORDER BY
+	t."Id"
+

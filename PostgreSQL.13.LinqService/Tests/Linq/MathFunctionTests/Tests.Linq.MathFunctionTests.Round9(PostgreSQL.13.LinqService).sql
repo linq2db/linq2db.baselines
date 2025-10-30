@@ -2,9 +2,17 @@
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL (asynchronously)
 
 SELECT
-	t."MoneyValue"
+	t.c1
 FROM
-	"LinqDataTypes" t
+	(
+		SELECT
+			CASE
+				WHEN p."MoneyValue" >= 0 THEN FLOOR(p."MoneyValue" * POWER(10, 1) + 0.5) / POWER(10, 1)
+				ELSE CEIL(p."MoneyValue" * POWER(10, 1) - 0.5) / POWER(10, 1)
+			END as c1
+		FROM
+			"LinqDataTypes" p
+	) t
 WHERE
-	ROUND(t."MoneyValue", 1) <> 0
+	t.c1 <> 0
 
