@@ -24,7 +24,7 @@ SELECT
 			"Child" c_3
 		WHERE
 			c_3."ParentID" = t."ParentID" AND c_3."ChildID" > -100
-	) as COUNT_1,
+	) as "Count_1",
 	(
 		SELECT
 			c_4."ParentID"
