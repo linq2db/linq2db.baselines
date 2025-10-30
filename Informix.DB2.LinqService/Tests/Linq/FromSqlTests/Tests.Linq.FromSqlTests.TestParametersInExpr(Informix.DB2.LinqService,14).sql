@@ -1,6 +1,6 @@
 ﻿BeforeExecute
 -- Informix.DB2 Informix (asynchronously)
-DECLARE @p BigInt(4) -- Int64
+DECLARE @p Integer(4) -- Int32
 SET     @p = 1
 DECLARE @endId Integer(4) -- Int32
 SET     @endId = 14
