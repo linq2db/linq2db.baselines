@@ -1,18 +1,4 @@
 ﻿-- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
-DROP TABLE IF EXISTS `xxPatient`
-
--- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
-CREATE TABLE `xxPatient`
-(
-	`PersonID`  INT           NOT NULL,
-	`Diagnosis` VARCHAR(4000)     NULL,
-
-	CONSTRAINT `PK_xxPatient` PRIMARY KEY CLUSTERED (`PersonID`)
-)
-
--- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 DECLARE @PersonID Int32
 SET     @PersonID = 1
 DECLARE @Diagnosis VarChar(4) -- String
@@ -101,8 +87,4 @@ SELECT
 	COUNT(*)
 FROM
 	`xxPatient` `t1`
-
--- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
-
-DROP TABLE IF EXISTS `xxPatient`
 

@@ -1,17 +1,4 @@
 ﻿-- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
-CREATE TABLE `xxPerson`
-(
-	`FirstName`  VARCHAR(4000)                NOT NULL,
-	`PersonID`   INT           AUTO_INCREMENT NOT NULL,
-	`LastName`   VARCHAR(4000)                NOT NULL,
-	`MiddleName` VARCHAR(4000)                    NULL,
-	`Gender`     CHAR                         NOT NULL,
-
-	CONSTRAINT `PK_xxPerson` PRIMARY KEY CLUSTERED (`PersonID`)
-)
-
--- MySql.8.0 MySql.8.0.MySql.Data MySql80
 DECLARE @FirstName VarChar(6) -- String
 SET     @FirstName = 'Steven'
 DECLARE @LastName VarChar(4) -- String
@@ -110,12 +97,4 @@ FROM
 WHERE
 	`p`.`FirstName` = 'Steven' AND `p`.`LastName` = 'King' AND
 	`p`.`Gender` = 'M'
-
--- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
-DROP TABLE `xxPerson`
-
--- MySql.8.0 MySql.8.0.MySql.Data MySql80
-
-DROP TABLE IF EXISTS `xxPerson`
 
