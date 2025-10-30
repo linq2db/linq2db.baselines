@@ -1,6 +1,6 @@
 ﻿BeforeExecute
 -- Sybase.Managed Sybase (asynchronously)
-DECLARE @Field1 UniVarChar -- String
+DECLARE @Field1 Char -- AnsiStringFixedLength
 SET     @Field1 = NULL
 
 INSERT INTO [Issue1373Tests]
@@ -16,7 +16,7 @@ VALUES
 
 BeforeExecute
 -- Sybase.Managed Sybase (asynchronously)
-DECLARE @Field1 UniVarChar -- String
+DECLARE @Field1 Char -- AnsiStringFixedLength
 SET     @Field1 = NULL
 
 INSERT INTO [Issue1373Tests]
