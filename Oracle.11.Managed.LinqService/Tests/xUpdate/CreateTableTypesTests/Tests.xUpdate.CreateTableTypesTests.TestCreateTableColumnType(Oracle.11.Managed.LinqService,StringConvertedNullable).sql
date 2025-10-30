@@ -2,7 +2,7 @@
 -- Oracle.11.Managed Oracle11 (asynchronously)
 DECLARE @Id Int32
 SET     @Id = 1
-DECLARE @StringConverted NVarchar2(4) -- String
+DECLARE @StringConverted Varchar2(4) -- String
 SET     @StringConverted = 'null'
 
 INSERT INTO "CreateTableTypes"
@@ -20,7 +20,7 @@ BeforeExecute
 -- Oracle.11.Managed Oracle11 (asynchronously)
 DECLARE @Id Int32
 SET     @Id = 2
-DECLARE @StringConverted NVarchar2(53) -- String
+DECLARE @StringConverted Varchar2(53) -- String
 SET     @StringConverted = '[{"Item1":1,"Item2":"one"},{"Item1":2,"Item2":"two"}]'
 
 INSERT INTO "CreateTableTypes"
