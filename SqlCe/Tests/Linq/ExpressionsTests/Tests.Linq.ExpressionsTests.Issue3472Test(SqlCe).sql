@@ -3,12 +3,12 @@
 
 SELECT
 	[t2].[Id],
-	[t1].[COUNT_1] as [PersonsCount]
+	[t1].[PersonsCount]
 FROM
 	[Issue3472TableDC] [t2]
 		OUTER APPLY (
 			SELECT
-				COUNT(*) as [COUNT_1]
+				COUNT(*) as [PersonsCount]
 			FROM
 				[Person] [p]
 			WHERE

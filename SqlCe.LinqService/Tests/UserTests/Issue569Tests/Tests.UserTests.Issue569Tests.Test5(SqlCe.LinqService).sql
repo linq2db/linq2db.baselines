@@ -2,7 +2,7 @@
 -- SqlCe (asynchronously)
 
 SELECT
-	COUNT(*) as [COUNT_1]
+	COUNT(*) as [Count_1]
 FROM
 	[Parent] [parent_2]
 		CROSS JOIN [Child] [child_1]

@@ -2,12 +2,12 @@
 -- SqlCe (asynchronously)
 
 SELECT
-	[t4].[AVG_1]
+	[t4].[Average]
 FROM
 	[MasterClass] [m_1]
 		OUTER APPLY (
 			SELECT
-				COUNT(*) as [COUNT_1]
+				COUNT(*) as [Count_1]
 			FROM
 				[DetailClass] [a_Details]
 			WHERE
@@ -15,7 +15,7 @@ FROM
 		) [t1]
 		OUTER APPLY (
 			SELECT
-				AVG(CAST([t3].[DetailId] AS Float)) as [AVG_1]
+				AVG(CAST([t3].[DetailId] AS Float)) as [Average]
 			FROM
 				(
 					SELECT
@@ -35,7 +35,7 @@ FROM
 				) [t3]
 		) [t4]
 WHERE
-	[t1].[COUNT_1] > 1
+	[t1].[Count_1] > 1
 
 BeforeExecute
 -- SqlCe (asynchronously)

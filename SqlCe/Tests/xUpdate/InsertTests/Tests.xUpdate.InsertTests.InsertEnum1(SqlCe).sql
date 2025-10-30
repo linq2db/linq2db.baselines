@@ -30,7 +30,7 @@ DECLARE @Value1 Int -- Int32
 SET     @Value1 = 2
 
 SELECT
-	COUNT(*) as [COUNT_1]
+	COUNT(*) as [Count_1]
 FROM
 	[Parent] [t1]
 WHERE

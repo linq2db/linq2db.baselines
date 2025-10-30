@@ -3,27 +3,27 @@
 
 SELECT
 	[g_2].[GroupId],
-	[g_2].[SUM_1],
-	[g_2].[SUM_2],
-	[g_2].[SUM_3],
-	[g_2].[SUM_4],
-	[t2].[SUM_1] as [SUM_5],
-	[t4].[SUM_1] as [SUM_6],
-	[t6].[SUM_1] as [SUM_7]
+	[g_2].[Sum_1],
+	[g_2].[Sum_2],
+	[g_2].[Sum_3],
+	[g_2].[Sum_4],
+	[t2].[Sum_1] as [Sum_5],
+	[t4].[Sum_1] as [Sum_6],
+	[t6].[Sum_1] as [Sum_7]
 FROM
 	(
 		SELECT
 			[g_1].[GroupId],
-			SUM([g_1].[DataValue]) as [SUM_1],
-			SUM([g_1].[DataValue]) as [SUM_2],
+			SUM([g_1].[DataValue]) as [Sum_1],
+			SUM([g_1].[DataValue]) as [Sum_2],
 			SUM(CASE
 				WHEN CAST([g_1].[DataValue] AS Int) % 2 = 0 THEN [g_1].[DataValue]
 				ELSE NULL
-			END) as [SUM_3],
+			END) as [Sum_3],
 			SUM(CASE
 				WHEN CAST([g_1].[DataValue] AS Int) % 2 = 0 THEN [g_1].[DataValue]
 				ELSE NULL
-			END) as [SUM_4]
+			END) as [Sum_4]
 		FROM
 			[AggregationData] [g_1]
 		GROUP BY
@@ -31,7 +31,7 @@ FROM
 	) [g_2]
 		OUTER APPLY (
 			SELECT
-				SUM([t1].[DataValue]) as [SUM_1]
+				SUM([t1].[DataValue]) as [Sum_1]
 			FROM
 				(
 					SELECT DISTINCT
@@ -44,7 +44,7 @@ FROM
 		) [t2]
 		OUTER APPLY (
 			SELECT
-				SUM([t3].[DataValue]) as [SUM_1]
+				SUM([t3].[DataValue]) as [Sum_1]
 			FROM
 				(
 					SELECT DISTINCT
@@ -57,7 +57,7 @@ FROM
 		) [t4]
 		OUTER APPLY (
 			SELECT
-				SUM([t5].[DataValue]) as [SUM_1]
+				SUM([t5].[DataValue]) as [Sum_1]
 			FROM
 				(
 					SELECT DISTINCT

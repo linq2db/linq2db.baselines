@@ -12,7 +12,7 @@ FROM
 		LEFT JOIN [SomeStyle] [a_Style] ON [t3].[StyleId] = [a_Style].[Id]
 		LEFT JOIN (
 			SELECT
-				COUNT(*) as [COUNT_1]
+				COUNT(*) as [Count_1]
 			FROM
 				[SomeItem] [t1]
 		) [t2] ON 1=1
@@ -24,7 +24,7 @@ FROM
 				1 as [cond]
 			FROM
 				(
-					SELECT [a_Color].[Name] AS [ColorName], [a_Style].[Name] AS [StyleName], [t2].[COUNT_1] AS [Count]
+					SELECT [a_Color].[Name] AS [ColorName], [a_Style].[Name] AS [StyleName], [t2].[Count_1] AS [Count]
 					UNION ALL
 					SELECT NULL AS [ColorName], [a_Style].[Name] AS [StyleName], 0 AS [Count]) [it]
 		) [it_1]

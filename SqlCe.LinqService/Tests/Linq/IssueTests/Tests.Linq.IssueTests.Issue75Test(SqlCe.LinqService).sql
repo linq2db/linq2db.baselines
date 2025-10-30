@@ -4,7 +4,7 @@
 SELECT
 	[c_1].[ChildID],
 	[c_1].[ParentID],
-	[t1].[COUNT_1],
+	[t1].[Count_1],
 	CASE
 		WHEN EXISTS(
 			SELECT
@@ -29,13 +29,13 @@ SELECT
 			THEN 1
 		ELSE 0
 	END as [AllChildren],
-	[t2].[MIN_1],
-	[t3].[MAX_1]
+	[t2].[Min_1],
+	[t3].[Max_1]
 FROM
 	[Child] [c_1]
 		OUTER APPLY (
 			SELECT
-				COUNT(*) as [COUNT_1]
+				COUNT(*) as [Count_1]
 			FROM
 				[Child] [c2]
 			WHERE
@@ -43,7 +43,7 @@ FROM
 		) [t1]
 		OUTER APPLY (
 			SELECT
-				MIN([c2_1].[ChildID]) as [MIN_1]
+				MIN([c2_1].[ChildID]) as [Min_1]
 			FROM
 				[Child] [c2_1]
 			WHERE
@@ -51,7 +51,7 @@ FROM
 		) [t2]
 		OUTER APPLY (
 			SELECT
-				MAX([c2_2].[ChildID]) as [MAX_1]
+				MAX([c2_2].[ChildID]) as [Max_1]
 			FROM
 				[Child] [c2_2]
 			WHERE

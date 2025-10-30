@@ -47,7 +47,7 @@ BeforeExecute
 -- SqlCe (asynchronously)
 
 SELECT
-	COUNT(*) as [COUNT_1]
+	COUNT(*) as [Count_1]
 FROM
 	[xxPerson] [t1]
 
@@ -77,7 +77,7 @@ BeforeExecute
 -- SqlCe (asynchronously)
 
 SELECT
-	COUNT(*) as [COUNT_1]
+	COUNT(*) as [Count_1]
 FROM
 	[xxPerson] [t1]
 

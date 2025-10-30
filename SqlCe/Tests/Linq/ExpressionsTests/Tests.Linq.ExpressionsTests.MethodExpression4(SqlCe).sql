@@ -4,15 +4,15 @@ DECLARE @n Int -- Int32
 SET     @n = 3
 
 SELECT
-	[t1].[COUNT_1] + 4 as [Count4]
+	[t1].[Count4] + 4 as [Count4]
 FROM
 	[Parent] [p]
 		OUTER APPLY (
 			SELECT
-				COUNT(*) as [COUNT_1]
+				COUNT(*) as [Count4]
 			FROM
-				[Child] [c_1]
+				[Child] [a_Children]
 			WHERE
-				[p].[ParentID] = [c_1].[ParentID] AND [c_1].[ChildID] > @n
+				[p].[ParentID] = [a_Children].[ParentID] AND [a_Children].[ChildID] > @n
 		) [t1]
 

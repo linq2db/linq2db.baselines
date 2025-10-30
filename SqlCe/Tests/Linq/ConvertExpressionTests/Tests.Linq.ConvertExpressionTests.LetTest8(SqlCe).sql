@@ -18,7 +18,7 @@ SELECT
 			THEN 1
 		ELSE 0
 	END as [c2],
-	[t3].[COUNT_1],
+	[t3].[Count_1],
 	[t4].[ParentID],
 	[t4].[ChildID]
 FROM
@@ -47,7 +47,7 @@ FROM
 		) [t2]
 		OUTER APPLY (
 			SELECT
-				COUNT(*) as [COUNT_1]
+				COUNT(*) as [Count_1]
 			FROM
 				[Child] [c_3]
 			WHERE

@@ -3,27 +3,27 @@
 
 SELECT
 	[g_2].[Key_1],
-	[g_2].[AVG_1],
-	[g_2].[AVG_2],
-	[g_2].[AVG_3],
-	[g_2].[AVG_4],
-	[t2].[AVG_1] as [AVG_5],
-	[t4].[AVG_1] as [AVG_6],
-	[t6].[AVG_1] as [AVG_7]
+	[g_2].[Average],
+	[g_2].[Average_1],
+	[g_2].[Average_2],
+	[g_2].[Average_3],
+	[t2].[Average] as [Average_4],
+	[t4].[Average] as [Average_5],
+	[t6].[Average] as [Average_6]
 FROM
 	(
 		SELECT
 			[g_1].[GroupId] as [Key_1],
-			AVG([g_1].[DataValue]) as [AVG_1],
-			AVG([g_1].[DataValue]) as [AVG_2],
+			AVG([g_1].[DataValue]) as [Average],
+			AVG([g_1].[DataValue]) as [Average_1],
 			AVG(CASE
 				WHEN CAST([g_1].[DataValue] AS Int) % 2 = 0 THEN [g_1].[DataValue]
 				ELSE NULL
-			END) as [AVG_3],
+			END) as [Average_2],
 			AVG(CASE
 				WHEN CAST([g_1].[DataValue] AS Int) % 2 = 0 THEN [g_1].[DataValue]
 				ELSE NULL
-			END) as [AVG_4]
+			END) as [Average_3]
 		FROM
 			[AggregationData] [g_1]
 		WHERE
@@ -33,7 +33,7 @@ FROM
 	) [g_2]
 		OUTER APPLY (
 			SELECT
-				AVG([t1].[DataValue]) as [AVG_1]
+				AVG([t1].[DataValue]) as [Average]
 			FROM
 				(
 					SELECT DISTINCT
@@ -46,7 +46,7 @@ FROM
 		) [t2]
 		OUTER APPLY (
 			SELECT
-				AVG([t3].[DataValue]) as [AVG_1]
+				AVG([t3].[DataValue]) as [Average]
 			FROM
 				(
 					SELECT DISTINCT
@@ -60,7 +60,7 @@ FROM
 		) [t4]
 		OUTER APPLY (
 			SELECT
-				AVG([t5].[DataValue]) as [AVG_1]
+				AVG([t5].[DataValue]) as [Average]
 			FROM
 				(
 					SELECT DISTINCT
