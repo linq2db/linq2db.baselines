@@ -1,6 +1,6 @@
 ﻿BeforeExecute
 -- SQLite.Classic.MPU SQLite.Classic SQLite (asynchronously)
-DECLARE @p  -- Int64
+DECLARE @p  -- Int32
 SET     @p = 1
 DECLARE @endId  -- Int32
 SET     @endId = 14
