@@ -1,6 +1,6 @@
 ﻿BeforeExecute
 -- SqlServer.2005.MS SqlServer.2005 (asynchronously)
-DECLARE @p Int -- Int32
+DECLARE @p NVarChar(4000) -- String
 SET     @p = NULL
 
 SELECT
@@ -24,7 +24,7 @@ FROM
 
 BeforeExecute
 -- SqlServer.2005.MS SqlServer.2005 (asynchronously)
-DECLARE @p Int -- Int32
+DECLARE @p NVarChar(4000) -- String
 SET     @p = NULL
 
 SELECT
