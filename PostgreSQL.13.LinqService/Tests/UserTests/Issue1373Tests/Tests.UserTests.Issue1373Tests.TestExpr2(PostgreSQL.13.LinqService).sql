@@ -1,6 +1,6 @@
 ﻿BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL (asynchronously)
-DECLARE @Field1 Varchar -- String
+DECLARE @Field1 Unknown -- Object
 SET     @Field1 = NULL
 
 INSERT INTO "Issue1373Tests"
@@ -16,7 +16,7 @@ VALUES
 
 BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL (asynchronously)
-DECLARE @Field1 Varchar -- String
+DECLARE @Field1 Unknown -- Object
 SET     @Field1 = NULL
 
 INSERT INTO "Issue1373Tests"
@@ -32,7 +32,7 @@ VALUES
 
 BeforeExecute
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL (asynchronously)
-DECLARE @Field1 Varchar(4) -- String
+DECLARE @Field1 Text(4) -- String
 SET     @Field1 = 'test'
 
 INSERT INTO "Issue1373Tests"

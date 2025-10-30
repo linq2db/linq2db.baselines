@@ -4,7 +4,7 @@ DECLARE @Gender Text(1) -- String
 SET     @Gender = 'M'
 DECLARE @FirstName Text(1) -- String
 SET     @FirstName = 'a'
-DECLARE @MiddleName Varchar(1) -- String
+DECLARE @MiddleName Text(1) -- String
 SET     @MiddleName = 'A'
 DECLARE @LastName Text(1) -- String
 SET     @LastName = 'b'
