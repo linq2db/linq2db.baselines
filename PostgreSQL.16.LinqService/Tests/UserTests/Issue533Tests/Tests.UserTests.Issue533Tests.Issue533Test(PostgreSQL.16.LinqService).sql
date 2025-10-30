@@ -2,11 +2,11 @@
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL (asynchronously)
 DECLARE @Gender Text(1) -- String
 SET     @Gender = 'M'
-DECLARE @FirstName Varchar(12) -- String
+DECLARE @FirstName Text(12) -- String
 SET     @FirstName = 'FirstName533'
-DECLARE @MiddleName Varchar -- String
+DECLARE @MiddleName Unknown -- Object
 SET     @MiddleName = NULL
-DECLARE @LastName Varchar(11) -- String
+DECLARE @LastName Text(11) -- String
 SET     @LastName = 'LastName533'
 
 INSERT INTO "Person"
