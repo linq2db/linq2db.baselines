@@ -2,12 +2,11 @@
 -- ClickHouse.Driver ClickHouse (asynchronously)
 
 SELECT
-	t.MoneyValue
+	t.c1
 FROM
 	(
 		SELECT
-			roundBankers(p.MoneyValue, 1) as c1,
-			p.MoneyValue as MoneyValue
+			roundBankers(p.MoneyValue, 1) as c1
 		FROM
 			LinqDataTypes p
 	) t
