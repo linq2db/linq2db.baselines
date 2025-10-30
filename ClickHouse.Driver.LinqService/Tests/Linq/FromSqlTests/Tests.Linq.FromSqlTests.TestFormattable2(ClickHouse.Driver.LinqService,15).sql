@@ -6,7 +6,7 @@ SELECT
 	c_1.id
 FROM
 	(
-		SELECT * FROM sample_class where id >= toInt64(5) and id < 15
+		SELECT * FROM sample_class where id >= 5 and id < 15
 	) c_1
 WHERE
 	c_1.id > 10
