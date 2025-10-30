@@ -1,18 +1,4 @@
 ﻿-- SapHana.Odbc SapHanaOdbc
-
-DROP TABLE "xxPatient"
-
--- SapHana.Odbc SapHanaOdbc
-
-CREATE COLUMN TABLE "xxPatient"
-(
-	"PersonID"  Integer       NOT NULL,
-	"Diagnosis" NVarChar(255)     NULL,
-
-	PRIMARY KEY ("PersonID")
-)
-
--- SapHana.Odbc SapHanaOdbc
 DECLARE @Diagnosis NVarChar(4) -- String
 SET     @Diagnosis = 'ABC1'
 DECLARE @PersonID Int -- Int32
@@ -111,8 +97,4 @@ SELECT
 	COUNT(*)
 FROM
 	"xxPatient" "t1"
-
--- SapHana.Odbc SapHanaOdbc
-
-DROP TABLE "xxPatient"
 
