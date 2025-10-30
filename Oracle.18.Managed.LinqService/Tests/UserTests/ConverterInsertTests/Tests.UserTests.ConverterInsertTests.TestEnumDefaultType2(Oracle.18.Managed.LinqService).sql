@@ -1,6 +1,6 @@
 ﻿BeforeExecute
 -- Oracle.18.Managed Oracle.Managed Oracle12 (asynchronously)
-DECLARE @FirstName NVarchar2(3) -- String
+DECLARE @FirstName Varchar2(3) -- String
 SET     @FirstName = '123'
 DECLARE @LastName Varchar2(3) -- String
 SET     @LastName = '456'

@@ -1,6 +1,6 @@
 ﻿BeforeExecute
 -- Oracle.18.Managed Oracle.Managed Oracle12 (asynchronously)
-DECLARE @p Int64
+DECLARE @p Int32
 SET     @p = 1
 DECLARE @endId Int32
 SET     @endId = 14
