@@ -1,6 +1,6 @@
 ﻿BeforeExecute
 -- DB2 DB2.LUW DB2LUW (asynchronously)
-DECLARE @Uid Blob(16) -- Binary
+DECLARE @Uid VarBinary(16) -- Binary
 SET     @Uid = BX'3D667BBCDE0F27438F925D8CC3A11D11'
 DECLARE @Id BigInt(8) -- Int64
 SET     @Id = 0
