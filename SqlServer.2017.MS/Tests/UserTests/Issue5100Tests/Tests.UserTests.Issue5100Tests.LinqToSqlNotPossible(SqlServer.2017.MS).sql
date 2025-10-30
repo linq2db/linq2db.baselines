@@ -90,7 +90,7 @@ FROM
 					[LanguageDTO] [l]
 				WHERE
 					[l].[AlternativeLanguageID] = [t1].[LanguageId]
-			) as [COUNT_1],
+			) as [Count_1],
 			(
 				SELECT
 					[t].[ServerOnlyText]
@@ -103,6 +103,6 @@ FROM
 			[TextTranslationDTO] [t1]
 	) [t2]
 ORDER BY
-	[t2].[COUNT_1],
+	[t2].[Count_1],
 	[t2].[ServerOnlyText]
 
