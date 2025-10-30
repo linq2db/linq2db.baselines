@@ -1,17 +1,4 @@
 ﻿-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
-CREATE TABLE `xxPerson`
-(
-	`FirstName`  VARCHAR(4000)                NOT NULL,
-	`PersonID`   INT           AUTO_INCREMENT NOT NULL,
-	`LastName`   VARCHAR(4000)                NOT NULL,
-	`MiddleName` VARCHAR(4000)                    NULL,
-	`Gender`     CHAR                         NOT NULL,
-
-	CONSTRAINT `PK_xxPerson` PRIMARY KEY CLUSTERED (`PersonID`)
-)
-
--- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 DECLARE @FirstName VarChar(6) -- String
 SET     @FirstName = 'Steven'
 DECLARE @LastName VarChar(4) -- String
@@ -110,12 +97,4 @@ FROM
 WHERE
 	`p`.`FirstName` = 'Steven' AND `p`.`LastName` = 'King' AND
 	`p`.`Gender` = 'M'
-
--- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
-DROP TABLE `xxPerson`
-
--- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
-
-DROP TABLE IF EXISTS `xxPerson`
 

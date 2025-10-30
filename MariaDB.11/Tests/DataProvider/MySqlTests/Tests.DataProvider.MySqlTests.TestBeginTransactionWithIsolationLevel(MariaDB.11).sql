@@ -7,7 +7,6 @@ SET
 WHERE
 	`p`.`ParentID` = 1
 
-BeginTransaction(Unspecified)
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 UPDATE
