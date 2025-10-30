@@ -8,7 +8,7 @@ SET     @Id = 0
 UPDATE
 	"Issue3060Table" "t1"
 SET
-	"Uid" = CAST(@Uid AS Blob(16))
+	"Uid" = CAST(@Uid AS VARCHAR(16) CHARACTER SET OCTETS)
 WHERE
 	"t1"."Id" = @Id
 
