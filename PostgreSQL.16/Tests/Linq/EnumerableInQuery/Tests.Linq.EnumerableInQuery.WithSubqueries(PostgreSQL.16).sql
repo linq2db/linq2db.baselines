@@ -20,7 +20,7 @@ FROM
 				(VALUES
 					("a_Color"."Name","a_Style"."Name",(
 						SELECT
-							COUNT(*) as "COUNT_1"
+							COUNT(*) as "Count_1"
 						FROM
 							"SomeItem" t1
 					)),
