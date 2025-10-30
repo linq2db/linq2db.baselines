@@ -1,0 +1,162 @@
+﻿-- Firebird.2.5 Firebird
+
+SELECT
+	NULLIF("s"."String", 'abc')
+FROM
+	"Src" "s"
+ORDER BY
+	"s"."Int"
+
+-- Firebird.2.5 Firebird
+
+SELECT
+	COUNT(*)
+FROM
+	"Src" "x"
+WHERE
+	"x"."String" = 'abc' OR "x"."String" IS NULL
+
+-- Firebird.2.5 Firebird
+
+SELECT
+	COUNT(*)
+FROM
+	"Src" "x"
+WHERE
+	NOT ("x"."String" = 'abc' OR "x"."String" IS NULL)
+
+-- Firebird.2.5 Firebird
+
+SELECT
+	NULLIF("s"."String", 'xyz')
+FROM
+	"Src" "s"
+ORDER BY
+	"s"."Int"
+
+-- Firebird.2.5 Firebird
+
+SELECT
+	COUNT(*)
+FROM
+	"Src" "x"
+WHERE
+	"x"."String" = 'xyz' OR "x"."String" IS NULL
+
+-- Firebird.2.5 Firebird
+
+SELECT
+	COUNT(*)
+FROM
+	"Src" "x"
+WHERE
+	NOT ("x"."String" = 'xyz' OR "x"."String" IS NULL)
+
+-- Firebird.2.5 Firebird
+
+SELECT
+	"s"."String"
+FROM
+	"Src" "s"
+ORDER BY
+	"s"."Int"
+
+-- Firebird.2.5 Firebird
+
+SELECT
+	COUNT(*)
+FROM
+	"Src" "x"
+WHERE
+	"x"."String" IS NULL
+
+-- Firebird.2.5 Firebird
+
+SELECT
+	COUNT(*)
+FROM
+	"Src" "x"
+WHERE
+	"x"."String" IS NOT NULL
+
+-- Firebird.2.5 Firebird
+
+SELECT
+	NULLIF("s"."NullableString", 'abc')
+FROM
+	"Src" "s"
+ORDER BY
+	"s"."Int"
+
+-- Firebird.2.5 Firebird
+
+SELECT
+	COUNT(*)
+FROM
+	"Src" "x"
+WHERE
+	"x"."NullableString" = 'abc' OR "x"."NullableString" IS NULL
+
+-- Firebird.2.5 Firebird
+
+SELECT
+	COUNT(*)
+FROM
+	"Src" "x"
+WHERE
+	NOT ("x"."NullableString" = 'abc' OR "x"."NullableString" IS NULL)
+
+-- Firebird.2.5 Firebird
+
+SELECT
+	NULLIF("s"."NullableString", 'xyz')
+FROM
+	"Src" "s"
+ORDER BY
+	"s"."Int"
+
+-- Firebird.2.5 Firebird
+
+SELECT
+	COUNT(*)
+FROM
+	"Src" "x"
+WHERE
+	"x"."NullableString" = 'xyz' OR "x"."NullableString" IS NULL
+
+-- Firebird.2.5 Firebird
+
+SELECT
+	COUNT(*)
+FROM
+	"Src" "x"
+WHERE
+	NOT ("x"."NullableString" = 'xyz' OR "x"."NullableString" IS NULL)
+
+-- Firebird.2.5 Firebird
+
+SELECT
+	"s"."NullableString"
+FROM
+	"Src" "s"
+ORDER BY
+	"s"."Int"
+
+-- Firebird.2.5 Firebird
+
+SELECT
+	COUNT(*)
+FROM
+	"Src" "x"
+WHERE
+	"x"."NullableString" IS NULL
+
+-- Firebird.2.5 Firebird
+
+SELECT
+	COUNT(*)
+FROM
+	"Src" "x"
+WHERE
+	"x"."NullableString" IS NOT NULL
+
