@@ -1,6 +1,6 @@
 ﻿BeforeExecute
 -- Access.Ace.OleDb AccessOleDb (asynchronously)
-DECLARE @p BigInt -- Int64
+DECLARE @p Integer -- Int32
 SET     @p = 5
 DECLARE @endId Integer -- Int32
 SET     @endId = 14
