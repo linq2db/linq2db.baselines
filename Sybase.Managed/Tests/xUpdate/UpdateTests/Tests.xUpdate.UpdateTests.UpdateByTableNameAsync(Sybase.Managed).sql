@@ -1,22 +1,4 @@
 ﻿-- Sybase.Managed Sybase
-
-IF (OBJECT_ID(N'xxPerson') IS NOT NULL)
-	DROP TABLE [xxPerson]
-
--- Sybase.Managed Sybase
-
-CREATE TABLE [xxPerson]
-(
-	[FirstName]  NVarChar(255)          NOT NULL,
-	[PersonID]   Int           IDENTITY NOT NULL,
-	[LastName]   NVarChar(255)          NOT NULL,
-	[MiddleName] NVarChar(255)              NULL,
-	[Gender]     Char(1)                NOT NULL,
-
-	CONSTRAINT [PK_xxPerson] PRIMARY KEY CLUSTERED ([PersonID])
-)
-
--- Sybase.Managed Sybase
 DECLARE @FirstName UniVarChar(6) -- String
 SET     @FirstName = 'Steven'
 DECLARE @LastName UniVarChar(4) -- String
@@ -91,8 +73,4 @@ SELECT TOP 2
 	[t1].[Gender]
 FROM
 	[xxPerson] [t1]
-
--- Sybase.Managed Sybase
-
-DROP TABLE [xxPerson]
 

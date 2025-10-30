@@ -1,19 +1,4 @@
 ﻿-- Sybase.Managed Sybase
-
-IF (OBJECT_ID(N'xxPatient') IS NOT NULL)
-	DROP TABLE [xxPatient]
-
--- Sybase.Managed Sybase
-
-CREATE TABLE [xxPatient]
-(
-	[PersonID]  Int           NOT NULL,
-	[Diagnosis] NVarChar(255)     NULL,
-
-	CONSTRAINT [PK_xxPatient] PRIMARY KEY CLUSTERED ([PersonID])
-)
-
--- Sybase.Managed Sybase
 DECLARE @Diagnosis UniVarChar(4) -- String
 SET     @Diagnosis = 'ABC1'
 DECLARE @PersonID Integer -- Int32
@@ -150,9 +135,4 @@ SELECT
 	COUNT(*)
 FROM
 	[xxPatient] [t1]
-
--- Sybase.Managed Sybase
-
-IF (OBJECT_ID(N'xxPatient') IS NOT NULL)
-	DROP TABLE [xxPatient]
 
