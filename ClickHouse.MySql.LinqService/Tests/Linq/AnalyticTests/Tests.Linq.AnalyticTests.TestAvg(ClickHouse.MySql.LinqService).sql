@@ -2,7 +2,7 @@
 -- ClickHouse.MySql ClickHouse (asynchronously)
 
 SELECT
-	avg(c_1.ChildID),
+	avgOrNull(c_1.ChildID),
 	AVG(c_1.ChildID),
 	AVG(ALL c_1.ChildID),
 	AVG(DISTINCT c_1.ChildID)

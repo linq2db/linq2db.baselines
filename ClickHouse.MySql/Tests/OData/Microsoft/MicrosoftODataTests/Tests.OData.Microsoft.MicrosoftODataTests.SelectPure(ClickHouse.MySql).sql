@@ -4,7 +4,7 @@
 SELECT
 	'Title',
 	it.Title,
-	sum(it.YearsExperience)
+	sumOrNull(it.YearsExperience)
 FROM
 	odata_person it
 GROUP BY

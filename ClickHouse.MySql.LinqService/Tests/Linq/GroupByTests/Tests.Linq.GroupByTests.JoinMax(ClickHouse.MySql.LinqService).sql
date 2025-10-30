@@ -8,7 +8,7 @@ FROM
 	Child ch
 		INNER JOIN (
 			SELECT
-				max(max_1.ChildID) as c1
+				maxOrNull(max_1.ChildID) as c1
 			FROM
 				Child max_1
 			GROUP BY
