@@ -2,7 +2,7 @@
 -- SQLite.Classic.MPM SQLite.Classic SQLite (asynchronously)
 
 SELECT
-	[p].[ID]
+	CAST(CAST([p].[ID] AS TinyInt) AS NVarChar(3))
 FROM
 	[LinqDataTypes] [p]
 WHERE
