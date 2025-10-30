@@ -1,6 +1,6 @@
 ﻿BeforeExecute
 -- SqlServer.Contained.MS SqlServer.2019 (asynchronously)
-DECLARE @p BigInt -- Int64
+DECLARE @p Int -- Int32
 SET     @p = 5
 DECLARE @endId Int -- Int32
 SET     @endId = 14
