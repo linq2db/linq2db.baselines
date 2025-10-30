@@ -1,6 +1,6 @@
 ﻿BeforeExecute
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57 (asynchronously)
-DECLARE @p Int64
+DECLARE @p Int32
 SET     @p = 1
 DECLARE @endId Int32
 SET     @endId = 14
