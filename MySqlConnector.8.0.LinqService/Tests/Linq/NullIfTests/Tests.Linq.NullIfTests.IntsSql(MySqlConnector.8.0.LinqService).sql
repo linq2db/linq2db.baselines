@@ -14,9 +14,9 @@ BeforeExecute
 SELECT
 	COUNT(*)
 FROM
-	`Src` `x`
+	`Src` `s`
 WHERE
-	`x`.`Int` = 2
+	`s`.`Int` = 2
 
 BeforeExecute
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80 (asynchronously)
@@ -24,9 +24,9 @@ BeforeExecute
 SELECT
 	COUNT(*)
 FROM
-	`Src` `x`
+	`Src` `s`
 WHERE
-	`x`.`Int` <> 2
+	`s`.`Int` <> 2
 
 BeforeExecute
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80 (asynchronously)
@@ -44,9 +44,9 @@ BeforeExecute
 SELECT
 	COUNT(*)
 FROM
-	`Src` `x`
+	`Src` `s`
 WHERE
-	`x`.`Int` = 4
+	`s`.`Int` = 4
 
 BeforeExecute
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80 (asynchronously)
@@ -54,9 +54,9 @@ BeforeExecute
 SELECT
 	COUNT(*)
 FROM
-	`Src` `x`
+	`Src` `s`
 WHERE
-	`x`.`Int` <> 4
+	`s`.`Int` <> 4
 
 BeforeExecute
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80 (asynchronously)
@@ -74,7 +74,7 @@ BeforeExecute
 SELECT
 	COUNT(*)
 FROM
-	`Src` `x`
+	`Src` `s`
 WHERE
 	1 = 0
 
@@ -84,7 +84,7 @@ BeforeExecute
 SELECT
 	COUNT(*)
 FROM
-	`Src` `x`
+	`Src` `s`
 
 BeforeExecute
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80 (asynchronously)
@@ -102,9 +102,9 @@ BeforeExecute
 SELECT
 	COUNT(*)
 FROM
-	`Src` `x`
+	`Src` `s`
 WHERE
-	`x`.`NullableInt` = 2 OR `x`.`NullableInt` IS NULL
+	`s`.`NullableInt` = 2 OR `s`.`NullableInt` IS NULL
 
 BeforeExecute
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80 (asynchronously)
@@ -112,9 +112,9 @@ BeforeExecute
 SELECT
 	COUNT(*)
 FROM
-	`Src` `x`
+	`Src` `s`
 WHERE
-	NOT (`x`.`NullableInt` = 2 OR `x`.`NullableInt` IS NULL)
+	NOT (`s`.`NullableInt` = 2 OR `s`.`NullableInt` IS NULL)
 
 BeforeExecute
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80 (asynchronously)
@@ -132,9 +132,9 @@ BeforeExecute
 SELECT
 	COUNT(*)
 FROM
-	`Src` `x`
+	`Src` `s`
 WHERE
-	`x`.`NullableInt` = 4 OR `x`.`NullableInt` IS NULL
+	`s`.`NullableInt` = 4 OR `s`.`NullableInt` IS NULL
 
 BeforeExecute
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80 (asynchronously)
@@ -142,9 +142,9 @@ BeforeExecute
 SELECT
 	COUNT(*)
 FROM
-	`Src` `x`
+	`Src` `s`
 WHERE
-	NOT (`x`.`NullableInt` = 4 OR `x`.`NullableInt` IS NULL)
+	NOT (`s`.`NullableInt` = 4 OR `s`.`NullableInt` IS NULL)
 
 BeforeExecute
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80 (asynchronously)
@@ -162,9 +162,9 @@ BeforeExecute
 SELECT
 	COUNT(*)
 FROM
-	`Src` `x`
+	`Src` `s`
 WHERE
-	`x`.`NullableInt` IS NULL
+	`s`.`NullableInt` IS NULL
 
 BeforeExecute
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80 (asynchronously)
@@ -172,7 +172,7 @@ BeforeExecute
 SELECT
 	COUNT(*)
 FROM
-	`Src` `x`
+	`Src` `s`
 WHERE
-	`x`.`NullableInt` IS NOT NULL
+	`s`.`NullableInt` IS NOT NULL
 
