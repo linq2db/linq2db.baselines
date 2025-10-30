@@ -1,6 +1,6 @@
 ﻿BeforeExecute
 -- SqlServer.2012.MS SqlServer.2012 (asynchronously)
-DECLARE @p BigInt -- Int64
+DECLARE @p Int -- Int32
 SET     @p = 1
 DECLARE @endId Int -- Int32
 SET     @endId = 15
