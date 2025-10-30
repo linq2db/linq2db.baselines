@@ -7,7 +7,6 @@ SET
 WHERE
 	`p`.`ParentID` = 1
 
-BeginTransaction(Unspecified)
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 
 UPDATE
