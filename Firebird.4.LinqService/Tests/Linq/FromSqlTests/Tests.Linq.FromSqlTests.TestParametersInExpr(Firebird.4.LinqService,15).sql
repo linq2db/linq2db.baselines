@@ -1,6 +1,6 @@
 ﻿BeforeExecute
 -- Firebird.4 Firebird4 (asynchronously)
-DECLARE @p BigInt -- Int64
+DECLARE @p Integer -- Int32
 SET     @p = 1
 DECLARE @endId Integer -- Int32
 SET     @endId = 15
