@@ -1,8 +1,8 @@
 ﻿BeforeExecute
 -- SqlServer.2016.MS SqlServer.2016 (asynchronously)
-DECLARE @p Int -- Int32
+DECLARE @p NVarChar(4000) -- String
 SET     @p = NULL
-DECLARE @p_1 Int -- Int32
+DECLARE @p_1 NVarChar(4000) -- String
 SET     @p_1 = NULL
 
 SELECT
@@ -30,7 +30,7 @@ FROM
 
 BeforeExecute
 -- SqlServer.2016.MS SqlServer.2016 (asynchronously)
-DECLARE @p Int -- Int32
+DECLARE @p NVarChar(4000) -- String
 SET     @p = NULL
 DECLARE @p_1 Int -- Int32
 SET     @p_1 = 2
@@ -47,7 +47,7 @@ BeforeExecute
 -- SqlServer.2016.MS SqlServer.2016 (asynchronously)
 DECLARE @p Int -- Int32
 SET     @p = 2
-DECLARE @p_1 Int -- Int32
+DECLARE @p_1 NVarChar(4000) -- String
 SET     @p_1 = NULL
 
 SELECT

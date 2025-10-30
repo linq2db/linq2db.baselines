@@ -1,6 +1,6 @@
 ﻿BeforeExecute
 -- SqlServer.2016 (asynchronously)
-DECLARE @p BigInt -- Int64
+DECLARE @p Int -- Int32
 SET     @p = 5
 DECLARE @p_1 Int -- Int32
 SET     @p_1 = 14
