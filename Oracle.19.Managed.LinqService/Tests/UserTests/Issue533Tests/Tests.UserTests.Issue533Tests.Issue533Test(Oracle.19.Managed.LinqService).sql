@@ -2,11 +2,11 @@
 -- Oracle.19.Managed Oracle.Managed Oracle12 (asynchronously)
 DECLARE @Gender Varchar2(1) -- String
 SET     @Gender = 'M'
-DECLARE @FirstName NVarchar2(12) -- String
+DECLARE @FirstName Varchar2(12) -- String
 SET     @FirstName = 'FirstName533'
-DECLARE @MiddleName NVarchar2 -- String
+DECLARE @MiddleName Varchar2 -- String
 SET     @MiddleName = NULL
-DECLARE @LastName NVarchar2(11) -- String
+DECLARE @LastName Varchar2(11) -- String
 SET     @LastName = 'LastName533'
 DECLARE @IDENTITY_PARAMETER Decimal
 SET     @IDENTITY_PARAMETER = NULL

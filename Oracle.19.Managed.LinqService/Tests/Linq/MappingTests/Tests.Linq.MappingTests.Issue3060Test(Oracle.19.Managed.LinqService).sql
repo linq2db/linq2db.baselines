@@ -1,6 +1,6 @@
 ﻿BeforeExecute
 -- Oracle.19.Managed Oracle.Managed Oracle12 (asynchronously)
-DECLARE @Uid_1 Blob -- Object
+DECLARE @Uid_1 Raw(16) -- Binary
 SET     @Uid_1 = HEXTORAW('3D667BBCDE0F27438F925D8CC3A11D11')
 DECLARE @Id Int64
 SET     @Id = 0
