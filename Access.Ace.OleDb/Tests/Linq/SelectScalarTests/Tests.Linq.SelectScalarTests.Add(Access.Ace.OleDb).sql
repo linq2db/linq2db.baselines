@@ -1,0 +1,5 @@
+﻿-- Access.Ace.OleDb AccessOleDb
+
+SELECT
+	5
+
