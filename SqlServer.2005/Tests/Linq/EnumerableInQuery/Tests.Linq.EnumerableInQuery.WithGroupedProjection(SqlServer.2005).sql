@@ -2,7 +2,6 @@
 -- SqlServer.2005
 
 SELECT
-	[it_1].[cond_1],
 	[it_1].[cond],
 	[it_1].[ColorName],
 	[it_1].[StyleName],
@@ -35,21 +34,20 @@ FROM
 			SELECT
 				[it].[ColorName],
 				[it].[Count] as [Count_1],
-				[it].[index] as [cond],
 				[it].[StyleName],
 				[it].[Conditional],
 				[it].[field1],
 				[it].[field2],
 				[it].[field3],
-				1 as [cond_1]
+				1 as [cond]
 			FROM
 				(
-					SELECT [t1].[ColorName] AS [ColorName], [t1].[Count_1] AS [Count], 0 AS [index], [t1].[StyleName] AS [StyleName], CASE
+					SELECT [t1].[ColorName] AS [ColorName], [t1].[Count_1] AS [Count], [t1].[StyleName] AS [StyleName], CASE
 					WHEN [t1].[ColorName] = N'Red' THEN [t1].[Count_1]
 					ELSE 0
 				END AS [Conditional], 1 AS [field1], 2 AS [field2], 3 AS [field3]
 					UNION ALL
-					SELECT NULL, 0, 1, [t1].[StyleName], NULL, 4, 5, 6) [it]
+					SELECT NULL, 0, [t1].[StyleName], NULL, 4, 5, 6) [it]
 		) [it_1]
 WHERE
 	[it_1].[ColorName] = N'Red' OR [it_1].[Count_1] = 0

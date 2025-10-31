@@ -14,9 +14,9 @@ BeforeExecute
 SELECT
 	COUNT(*)
 FROM
-	[Src] [x]
+	[Src] [s]
 WHERE
-	[x].[String] = N'abc' OR [x].[String] IS NULL
+	[s].[String] = N'abc' OR [s].[String] IS NULL
 
 BeforeExecute
 -- SqlServer.2005.MS SqlServer.2005 (asynchronously)
@@ -24,9 +24,9 @@ BeforeExecute
 SELECT
 	COUNT(*)
 FROM
-	[Src] [x]
+	[Src] [s]
 WHERE
-	NOT ([x].[String] = N'abc' OR [x].[String] IS NULL)
+	NOT ([s].[String] = N'abc' OR [s].[String] IS NULL)
 
 BeforeExecute
 -- SqlServer.2005.MS SqlServer.2005 (asynchronously)
@@ -44,9 +44,9 @@ BeforeExecute
 SELECT
 	COUNT(*)
 FROM
-	[Src] [x]
+	[Src] [s]
 WHERE
-	[x].[String] = N'xyz' OR [x].[String] IS NULL
+	[s].[String] = N'xyz' OR [s].[String] IS NULL
 
 BeforeExecute
 -- SqlServer.2005.MS SqlServer.2005 (asynchronously)
@@ -54,9 +54,9 @@ BeforeExecute
 SELECT
 	COUNT(*)
 FROM
-	[Src] [x]
+	[Src] [s]
 WHERE
-	NOT ([x].[String] = N'xyz' OR [x].[String] IS NULL)
+	NOT ([s].[String] = N'xyz' OR [s].[String] IS NULL)
 
 BeforeExecute
 -- SqlServer.2005.MS SqlServer.2005 (asynchronously)
@@ -74,9 +74,9 @@ BeforeExecute
 SELECT
 	COUNT(*)
 FROM
-	[Src] [x]
+	[Src] [s]
 WHERE
-	[x].[String] IS NULL
+	[s].[String] IS NULL
 
 BeforeExecute
 -- SqlServer.2005.MS SqlServer.2005 (asynchronously)
@@ -84,9 +84,9 @@ BeforeExecute
 SELECT
 	COUNT(*)
 FROM
-	[Src] [x]
+	[Src] [s]
 WHERE
-	[x].[String] IS NOT NULL
+	[s].[String] IS NOT NULL
 
 BeforeExecute
 -- SqlServer.2005.MS SqlServer.2005 (asynchronously)
@@ -104,9 +104,9 @@ BeforeExecute
 SELECT
 	COUNT(*)
 FROM
-	[Src] [x]
+	[Src] [s]
 WHERE
-	[x].[NullableString] = N'abc' OR [x].[NullableString] IS NULL
+	[s].[NullableString] = N'abc' OR [s].[NullableString] IS NULL
 
 BeforeExecute
 -- SqlServer.2005.MS SqlServer.2005 (asynchronously)
@@ -114,9 +114,9 @@ BeforeExecute
 SELECT
 	COUNT(*)
 FROM
-	[Src] [x]
+	[Src] [s]
 WHERE
-	NOT ([x].[NullableString] = N'abc' OR [x].[NullableString] IS NULL)
+	NOT ([s].[NullableString] = N'abc' OR [s].[NullableString] IS NULL)
 
 BeforeExecute
 -- SqlServer.2005.MS SqlServer.2005 (asynchronously)
@@ -134,9 +134,9 @@ BeforeExecute
 SELECT
 	COUNT(*)
 FROM
-	[Src] [x]
+	[Src] [s]
 WHERE
-	[x].[NullableString] = N'xyz' OR [x].[NullableString] IS NULL
+	[s].[NullableString] = N'xyz' OR [s].[NullableString] IS NULL
 
 BeforeExecute
 -- SqlServer.2005.MS SqlServer.2005 (asynchronously)
@@ -144,9 +144,9 @@ BeforeExecute
 SELECT
 	COUNT(*)
 FROM
-	[Src] [x]
+	[Src] [s]
 WHERE
-	NOT ([x].[NullableString] = N'xyz' OR [x].[NullableString] IS NULL)
+	NOT ([s].[NullableString] = N'xyz' OR [s].[NullableString] IS NULL)
 
 BeforeExecute
 -- SqlServer.2005.MS SqlServer.2005 (asynchronously)
@@ -164,9 +164,9 @@ BeforeExecute
 SELECT
 	COUNT(*)
 FROM
-	[Src] [x]
+	[Src] [s]
 WHERE
-	[x].[NullableString] IS NULL
+	[s].[NullableString] IS NULL
 
 BeforeExecute
 -- SqlServer.2005.MS SqlServer.2005 (asynchronously)
@@ -174,7 +174,7 @@ BeforeExecute
 SELECT
 	COUNT(*)
 FROM
-	[Src] [x]
+	[Src] [s]
 WHERE
-	[x].[NullableString] IS NOT NULL
+	[s].[NullableString] IS NOT NULL
 
