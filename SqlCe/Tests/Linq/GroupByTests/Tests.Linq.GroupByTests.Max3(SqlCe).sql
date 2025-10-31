@@ -2,7 +2,7 @@
 -- SqlCe
 
 SELECT
-	MAX([c_1].[ChildID]) as [MAX_1]
+	MAX([c_1].[ChildID]) as [Max_1]
 FROM
 	[Child] [c_1]
 

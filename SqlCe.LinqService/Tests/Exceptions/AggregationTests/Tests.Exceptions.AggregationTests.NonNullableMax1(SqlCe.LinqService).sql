@@ -2,7 +2,7 @@
 -- SqlCe (asynchronously)
 
 SELECT
-	MAX([t1].[ParentID]) as [MAX_1]
+	MAX([t1].[ParentID]) as [Max_1]
 FROM
 	[Parent] [t1]
 WHERE

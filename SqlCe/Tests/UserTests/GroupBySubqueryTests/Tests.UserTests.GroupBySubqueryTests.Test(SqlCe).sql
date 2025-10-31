@@ -21,7 +21,7 @@ BeforeExecute
 SELECT
 	[g_2].[Field6],
 	[g_2].[Field4],
-	COUNT(*) as [COUNT_1]
+	COUNT(*) as [Count_1]
 FROM
 	(
 		SELECT DISTINCT

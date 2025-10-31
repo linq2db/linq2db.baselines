@@ -2,12 +2,12 @@
 -- SqlCe
 
 SELECT
-	[t1].[SUM_1] as [ChildCount]
+	[t1].[ChildCount]
 FROM
 	[Parent] [p]
 		OUTER APPLY (
 			SELECT
-				SUM([a_Children].[ParentID] * [a_Children].[ChildID]) as [SUM_1]
+				SUM([a_Children].[ParentID] * [a_Children].[ChildID]) as [ChildCount]
 			FROM
 				[Child] [a_Children]
 			WHERE

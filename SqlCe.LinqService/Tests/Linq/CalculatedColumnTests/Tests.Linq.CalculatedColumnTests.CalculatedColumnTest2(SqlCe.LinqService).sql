@@ -9,12 +9,12 @@ SELECT
 	[t2].[Gender],
 	[t2].[LastName] + ', ' + [t2].[FirstName] as [FullName],
 	[t2].[LastName] + ', ' + [t2].[FirstName] as [AsSqlFullName],
-	[t1].[COUNT_1] as [DoctorCount]
+	[t1].[DoctorCount]
 FROM
 	[Person] [t2]
 		OUTER APPLY (
 			SELECT
-				COUNT(*) as [COUNT_1]
+				COUNT(*) as [DoctorCount]
 			FROM
 				[Doctor] [d]
 			WHERE

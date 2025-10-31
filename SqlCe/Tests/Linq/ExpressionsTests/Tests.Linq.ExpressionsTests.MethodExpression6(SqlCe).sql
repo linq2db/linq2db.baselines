@@ -2,12 +2,12 @@
 -- SqlCe
 
 SELECT
-	[t1].[COUNT_1] as [Count6]
+	[t1].[Count6]
 FROM
 	[Parent] [p]
 		OUTER APPLY (
 			SELECT
-				COUNT(*) as [COUNT_1]
+				COUNT(*) as [Count6]
 			FROM
 				[Child] [c_1]
 			WHERE

@@ -2,7 +2,7 @@
 -- SqlCe (asynchronously)
 
 SELECT
-	MAX([t1].[ID]) as [MAX_1]
+	MAX([t1].[ID]) as [Max_1]
 FROM
 	[AllTypes] [t1]
 

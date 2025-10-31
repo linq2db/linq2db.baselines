@@ -2,7 +2,7 @@
 -- SqlCe (asynchronously)
 
 SELECT
-	COUNT(*) as [COUNT_1]
+	COUNT(*) as [Count_1]
 FROM
 	[Ints] [i]
 WHERE
@@ -12,7 +12,7 @@ BeforeExecute
 -- SqlCe (asynchronously)
 
 SELECT
-	COUNT(*) as [COUNT_1]
+	COUNT(*) as [Count_1]
 FROM
 	[Ints] [i]
 WHERE
@@ -22,7 +22,7 @@ BeforeExecute
 -- SqlCe (asynchronously)
 
 SELECT
-	COUNT(*) as [COUNT_1]
+	COUNT(*) as [Count_1]
 FROM
 	[Ints] [i]
 WHERE

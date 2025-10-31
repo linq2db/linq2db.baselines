@@ -2,7 +2,7 @@
 -- SqlCe (asynchronously)
 
 SELECT
-	SUM([grp_1].[MoneyValue]) as [SUM_1],
+	SUM([grp_1].[MoneyValue]) as [Sum_1],
 	DatePart(year, [grp_1].[Date_1]) as [Year_1],
 	DatePart(month, [grp_1].[Date_1]) as [Month_1]
 FROM
@@ -20,7 +20,7 @@ BeforeExecute
 -- SqlCe (asynchronously)
 
 SELECT
-	SUM([grp_1].[MoneyValue]) as [SUM_1],
+	SUM([grp_1].[MoneyValue]) as [Sum_1],
 	DatePart(year, [grp_1].[Date_1]) as [Year_1],
 	DatePart(month, [grp_1].[Date_1]) as [Month_1]
 FROM
