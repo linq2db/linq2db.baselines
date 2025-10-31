@@ -2,7 +2,7 @@
 -- PostgreSQL.15 PostgreSQL (asynchronously)
 
 SELECT
-	t."MoneyValue"
+	t.c1
 FROM
 	(
 		SELECT
@@ -10,8 +10,7 @@ FROM
 				WHEN p."MoneyValue" * 2 = ROUND(p."MoneyValue" * 2, 1) AND p."MoneyValue" <> ROUND(p."MoneyValue", 1)
 					THEN ROUND(p."MoneyValue" / 2, 1) * 2
 				ELSE ROUND(p."MoneyValue", 1)
-			END as c1,
-			p."MoneyValue"
+			END as c1
 		FROM
 			"LinqDataTypes" p
 	) t
