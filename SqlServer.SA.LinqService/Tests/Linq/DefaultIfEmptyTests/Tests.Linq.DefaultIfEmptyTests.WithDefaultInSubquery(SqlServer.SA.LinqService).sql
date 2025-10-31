@@ -4,18 +4,22 @@
 SELECT
 	(
 		SELECT
-			SUM([t1].[ParentID])
+			SUM([t2].[ParentID_1])
 		FROM
 			(
 				SELECT
-					IIF([d].[ParentID] IS NOT NULL, [d].[ParentID], -100) as [ParentID]
+					1 as [cond],
+					[d].[ParentID] as [cond_1],
+					[d].[ChildID],
+					-100 as [ParentID],
+					IIF([d].[ParentID] IS NOT NULL, [d].[ParentID], -100) as [ParentID_1]
 				FROM
 					(
 						SELECT
 							-100 as [ParentID]
-					) [c_1]
+					) [t1]
 						LEFT JOIN [Child] [d] ON [p].[ParentID] = [d].[ParentID]
-			) [t1]
+			) [t2]
 	)
 FROM
 	[Parent] [p]
