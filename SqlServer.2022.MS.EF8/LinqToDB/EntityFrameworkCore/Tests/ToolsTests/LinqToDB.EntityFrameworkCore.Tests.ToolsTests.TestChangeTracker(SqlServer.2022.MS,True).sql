@@ -1,5 +1,4 @@
-﻿BeginTransactionAsync(RepeatableRead)
-
+﻿
 
 -- SqlServer.2022
 
@@ -68,7 +67,6 @@ WHERE
 
 
 
-DisposeTransactionAsync
 
 
 -- SqlServer.2022
