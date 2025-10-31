@@ -9,5 +9,5 @@ FROM
 GROUP BY
 	t1."ParentID"
 HAVING
-	SUM(t1."ParentID") <> 36
+	SUM(t1."ParentID") <> 36 OR SUM(t1."ParentID") IS NULL
 
