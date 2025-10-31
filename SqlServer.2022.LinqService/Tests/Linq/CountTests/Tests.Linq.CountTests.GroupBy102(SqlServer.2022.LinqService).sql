@@ -2,16 +2,16 @@
 -- SqlServer.2022 (asynchronously)
 
 SELECT
-	[g_2].[MAX_1],
-	[g_2].[COUNT_1] + 1,
-	[g_2].[COUNT_1],
-	[g_2].[COUNT_2]
+	[g_2].[Max_1],
+	[g_2].[Count_1] + 1,
+	[g_2].[Count_1],
+	[g_2].[Count_2]
 FROM
 	(
 		SELECT
-			MAX([g_1].[ChildID]) as [MAX_1],
-			COUNT(IIF([g_1].[ChildID] > 20, 1, NULL)) as [COUNT_1],
-			COUNT(IIF([g_1].[ChildID] > 10, 1, NULL)) as [COUNT_2]
+			MAX([g_1].[ChildID]) as [Max_1],
+			COUNT(IIF([g_1].[ChildID] > 20, 1, NULL)) as [Count_1],
+			COUNT(IIF([g_1].[ChildID] > 10, 1, NULL)) as [Count_2]
 		FROM
 			[Child] [g_1]
 		GROUP BY
