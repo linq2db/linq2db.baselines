@@ -1,0 +1,72 @@
+﻿-- SqlServer.Contained SqlServer.2019
+
+DELETE [t1]
+FROM
+	[Parent] [t1]
+WHERE
+	[t1].[ParentID] > 1000
+
+-- SqlServer.Contained SqlServer.2019
+
+DELETE [t1]
+FROM
+	[Parent] [t1]
+WHERE
+	[t1].[ParentID] > 1000
+
+-- SqlServer.Contained SqlServer.2019
+DECLARE @ParentID Int -- Int32
+SET     @ParentID = 1001
+
+INSERT INTO [Parent]
+(
+	[ParentID],
+	[Value1]
+)
+VALUES
+(
+	@ParentID,
+	1
+)
+
+-- SqlServer.Contained SqlServer.2019
+DECLARE @ParentID Int -- Int32
+SET     @ParentID = 1002
+
+INSERT INTO [Parent]
+(
+	[ParentID],
+	[Value1]
+)
+VALUES
+(
+	@ParentID,
+	1
+)
+
+-- SqlServer.Contained SqlServer.2019
+
+SELECT
+	COUNT(*)
+FROM
+	[Parent] [t1]
+WHERE
+	[t1].[ParentID] > 1000
+
+-- SqlServer.Contained SqlServer.2019
+
+DELETE [t1]
+FROM
+	[Parent] [t1]
+WHERE
+	[t1].[ParentID] IN (1001, 1002)
+
+-- SqlServer.Contained SqlServer.2019
+
+SELECT
+	COUNT(*)
+FROM
+	[Parent] [t1]
+WHERE
+	[t1].[ParentID] > 1000
+
