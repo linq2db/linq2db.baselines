@@ -5,13 +5,13 @@ SELECT
 	"p1"."ParentID",
 	"p1"."Value1",
 	"p2"."Key_1",
-	"p2"."SUM_1"
+	"p2"."Sum_1"
 FROM
 	"Parent" "p1"
 		INNER JOIN (
 			SELECT
 				"g_1"."ParentID" as "Key_1",
-				SUM("g_1"."ParentID") as "SUM_1"
+				SUM("g_1"."ParentID") as "Sum_1"
 			FROM
 				"Parent" "g_1"
 			WHERE

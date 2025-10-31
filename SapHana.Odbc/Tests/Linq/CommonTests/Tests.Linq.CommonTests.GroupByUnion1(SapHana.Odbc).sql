@@ -25,5 +25,5 @@ FROM
 GROUP BY
 	"tt"."Key_1"
 HAVING
-	SUM("tt"."ID") <> 0
+	SUM("tt"."ID") <> 0 OR SUM("tt"."ID") IS NULL
 

@@ -36,10 +36,10 @@ FROM
 					"ItemValue" "a_Values"
 				WHERE
 					"x"."Id" = "a_Values"."ItemId"
-			) as "SUM_1"
+			) as "Sum_1"
 		FROM
 			"Item" "x"
 	) "x_1"
 ORDER BY
-	Coalesce("x_1"."SUM_1", 0)
+	Coalesce("x_1"."Sum_1", 0)
 

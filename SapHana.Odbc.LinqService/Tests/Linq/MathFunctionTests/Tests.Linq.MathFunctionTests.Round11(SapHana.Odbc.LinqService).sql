@@ -2,13 +2,18 @@
 -- SapHana.Odbc SapHanaOdbc (asynchronously)
 
 SELECT
-	"t"."MoneyValue"
+	"t"."c1"
 FROM
-	"LinqDataTypes" "t"
+	(
+		SELECT
+			CASE
+				WHEN CAST("p"."MoneyValue" AS Double) * 2 = ROUND(CAST("p"."MoneyValue" AS Double) * 2, 1) AND CAST("p"."MoneyValue" AS Double) <> ROUND(CAST("p"."MoneyValue" AS Double), 1)
+					THEN ROUND(CAST("p"."MoneyValue" AS Double) / 2, 1) * 2
+				ELSE ROUND(CAST("p"."MoneyValue" AS Double), 1)
+			END as "c1"
+		FROM
+			"LinqDataTypes" "p"
+	) "t"
 WHERE
-	CASE
-		WHEN CAST("t"."MoneyValue" AS Double) * 2 = ROUND(CAST("t"."MoneyValue" AS Double) * 2, 1) AND CAST("t"."MoneyValue" AS Double) <> ROUND(CAST("t"."MoneyValue" AS Double), 1)
-			THEN ROUND(CAST("t"."MoneyValue" AS Double) / 2, 1) * 2
-		ELSE ROUND(CAST("t"."MoneyValue" AS Double), 1)
-	END <> 0
+	"t"."c1" <> 0
 
