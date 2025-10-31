@@ -2,12 +2,12 @@
 -- SqlServer.2014.MS SqlServer.2014 (asynchronously)
 
 SELECT
-	MAX([t1].[COUNT_1])
+	MAX([t1].[Count_1])
 FROM
 	[Parent] [t2]
 		OUTER APPLY (
 			SELECT
-				COUNT(*) as [COUNT_1]
+				COUNT(*) as [Count_1]
 			FROM
 				[Child] [a_Children]
 			WHERE
