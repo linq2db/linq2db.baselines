@@ -2,9 +2,14 @@
 -- Oracle.18.Managed Oracle.Managed Oracle12 (asynchronously)
 
 SELECT
-	t."MoneyValue"
+	t."c1"
 FROM
-	"LinqDataTypes" t
+	(
+		SELECT
+			ROUND(p."MoneyValue") as "c1"
+		FROM
+			"LinqDataTypes" p
+	) t
 WHERE
-	ROUND(t."MoneyValue") <> 0
+	t."c1" <> 0
 
