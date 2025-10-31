@@ -2,9 +2,14 @@
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 
 SELECT
-	`t`.`MoneyValue`
+	`t`.`c1`
 FROM
-	`LinqDataTypes` `t`
+	(
+		SELECT
+			ROUND(`p`.`MoneyValue`, 1) as `c1`
+		FROM
+			`LinqDataTypes` `p`
+	) `t`
 WHERE
-	ROUND(`t`.`MoneyValue`, 1) <> 0
+	`t`.`c1` <> 0
 
