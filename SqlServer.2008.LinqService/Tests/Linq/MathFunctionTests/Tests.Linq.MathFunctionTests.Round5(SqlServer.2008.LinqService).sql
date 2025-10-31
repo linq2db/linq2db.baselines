@@ -2,9 +2,14 @@
 -- SqlServer.2008 (asynchronously)
 
 SELECT
-	[t].[MoneyValue]
+	[t].[c1]
 FROM
-	[LinqDataTypes] [t]
+	(
+		SELECT
+			ROUND([p].[MoneyValue], 0) as [c1]
+		FROM
+			[LinqDataTypes] [p]
+	) [t]
 WHERE
-	ROUND([t].[MoneyValue], 0) <> 0
+	[t].[c1] <> 0
 
