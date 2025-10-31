@@ -1,0 +1,22 @@
+﻿-- SQLite.Classic.MPM SQLite.Classic SQLite
+
+DROP TABLE IF EXISTS [TestTrun]
+
+-- SQLite.Classic.MPM SQLite.Classic SQLite
+
+CREATE TABLE [TestTrun]
+(
+	[ID]     INTEGER NOT NULL,
+	[Field1] Decimal NOT NULL,
+
+	CONSTRAINT [PK_TestTrun] PRIMARY KEY ([ID])
+)
+
+-- SQLite.Classic.MPM SQLite.Classic SQLite
+
+DELETE FROM [TestTrun]
+
+-- SQLite.Classic.MPM SQLite.Classic SQLite
+
+DROP TABLE [TestTrun]
+
