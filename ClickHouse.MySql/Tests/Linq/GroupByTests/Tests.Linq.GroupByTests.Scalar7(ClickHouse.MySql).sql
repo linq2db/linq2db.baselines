@@ -2,7 +2,7 @@
 -- ClickHouse.MySql ClickHouse
 
 SELECT
-	max(id.ChildID)
+	maxOrNull(id.ChildID)
 FROM
 	Child id
 GROUP BY
