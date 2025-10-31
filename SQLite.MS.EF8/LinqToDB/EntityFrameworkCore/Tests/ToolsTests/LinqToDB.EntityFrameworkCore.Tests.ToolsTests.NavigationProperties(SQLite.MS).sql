@@ -22,6 +22,7 @@ WHERE @__ef_filter__p_0 OR NOT ("o"."IsDeleted") OR NOT ("o"."IsDeleted")
 ORDER BY "o"."OrderID", "t"."OrderID", "t"."ProductID", "t0"."ProductID", "t1"."OrderId"
 
 
+BeginTransaction(Serializable)
 
 
 -- SQLite.MS SQLite
@@ -44,6 +45,7 @@ FROM
 
 
 
+DisposeTransaction
 
 
 -- SQLite.MS SQLite

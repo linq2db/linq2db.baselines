@@ -1,4 +1,5 @@
-﻿
+﻿BeginTransaction(Serializable)
+
 
 -- SQLite.MS SQLite
 
@@ -34,5 +35,6 @@ LIMIT 1
 
 
 
+DisposeTransaction
 
 
