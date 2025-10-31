@@ -1,0 +1,46 @@
+﻿-- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+
+SELECT
+	VERSION(),
+	CURRENT_CATALOG,
+	CURRENT_DATABASE(),
+	CURRENT_ROLE,
+	CURRENT_SCHEMA,
+	CURRENT_USER,
+	SESSION_USER
+
+-- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+
+SELECT
+	VERSION()
+
+-- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+
+SELECT
+	CURRENT_CATALOG
+
+-- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+
+SELECT
+	CURRENT_DATABASE()
+
+-- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+
+SELECT
+	CURRENT_ROLE
+
+-- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+
+SELECT
+	CURRENT_SCHEMA
+
+-- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+
+SELECT
+	CURRENT_USER
+
+-- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+
+SELECT
+	SESSION_USER
+

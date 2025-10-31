@@ -1,0 +1,130 @@
+﻿-- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+DECLARE @Column Boolean
+SET     @Column = False
+DECLARE @ColumnNullable Boolean
+SET     @ColumnNullable = True
+
+SELECT
+	r."Id",
+	r."Column",
+	r."ColumnNullable"
+FROM
+	"BooleanTable" r
+WHERE
+	r."Column" = :Column AND r."ColumnNullable" = :ColumnNullable
+
+-- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+
+SELECT
+	r."Id",
+	r."Column",
+	r."ColumnNullable"
+FROM
+	"BooleanTable" r
+WHERE
+	r."Column" = False AND r."ColumnNullable" = True
+
+-- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+
+DELETE FROM
+	"BooleanTable" t1
+
+-- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+DECLARE @Id Integer -- Int32
+SET     @Id = 1
+DECLARE @Column Boolean
+SET     @Column = True
+DECLARE @ColumnNullable Boolean
+SET     @ColumnNullable = NULL
+
+INSERT INTO "BooleanTable"
+(
+	"Id",
+	"Column",
+	"ColumnNullable"
+)
+VALUES
+(
+	:Id,
+	:Column,
+	:ColumnNullable
+)
+
+-- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+DECLARE @Id Integer -- Int32
+SET     @Id = 2
+DECLARE @Column Boolean
+SET     @Column = False
+DECLARE @ColumnNullable Boolean
+SET     @ColumnNullable = True
+
+INSERT INTO "BooleanTable"
+(
+	"Id",
+	"Column",
+	"ColumnNullable"
+)
+VALUES
+(
+	:Id,
+	:Column,
+	:ColumnNullable
+)
+
+-- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+
+SELECT
+	t1."Id",
+	t1."Column",
+	t1."ColumnNullable"
+FROM
+	"BooleanTable" t1
+ORDER BY
+	t1."Id"
+
+-- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+
+DELETE FROM
+	"BooleanTable" t1
+
+-- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+
+INSERT INTO "BooleanTable"
+(
+	"Id",
+	"Column",
+	"ColumnNullable"
+)
+VALUES
+(1,True,NULL),
+(2,False,True)
+
+-- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+
+SELECT
+	t1."Id",
+	t1."Column",
+	t1."ColumnNullable"
+FROM
+	"BooleanTable" t1
+ORDER BY
+	t1."Id"
+
+-- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+
+DELETE FROM
+	"BooleanTable" t1
+
+INSERT BULK "BooleanTable"(Id, Column, ColumnNullable)
+
+-- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+
+SELECT
+	t1."Id",
+	t1."Column",
+	t1."ColumnNullable"
+FROM
+	"BooleanTable" t1
+ORDER BY
+	t1."Id"
+
