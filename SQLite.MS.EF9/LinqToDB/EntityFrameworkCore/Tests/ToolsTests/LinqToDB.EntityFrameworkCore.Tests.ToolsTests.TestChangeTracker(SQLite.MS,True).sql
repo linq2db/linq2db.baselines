@@ -1,4 +1,5 @@
-﻿
+﻿BeginTransactionAsync(Serializable)
+
 
 -- SQLite.MS SQLite
 
@@ -67,6 +68,7 @@ WHERE
 
 
 
+DisposeTransactionAsync
 
 
 -- SQLite.MS SQLite
