@@ -2,22 +2,22 @@
 -- PostgreSQL.17 PostgreSQL.15 PostgreSQL
 
 SELECT
-	g_2."MAX_1",
-	g_2."COUNT_1" + 1,
-	g_2."COUNT_1",
-	g_2."COUNT_2"
+	g_2."Max_1",
+	g_2."Count_1" + 1,
+	g_2."Count_1",
+	g_2."Count_2"
 FROM
 	(
 		SELECT
-			MAX(g_1."ChildID") as "MAX_1",
+			MAX(g_1."ChildID") as "Max_1",
 			COUNT(CASE
 				WHEN g_1."ChildID" > 20 THEN 1
 				ELSE NULL
-			END) as "COUNT_1",
+			END) as "Count_1",
 			COUNT(CASE
 				WHEN g_1."ChildID" > 10 THEN 1
 				ELSE NULL
-			END) as "COUNT_2"
+			END) as "Count_2"
 		FROM
 			"Child" g_1
 		GROUP BY

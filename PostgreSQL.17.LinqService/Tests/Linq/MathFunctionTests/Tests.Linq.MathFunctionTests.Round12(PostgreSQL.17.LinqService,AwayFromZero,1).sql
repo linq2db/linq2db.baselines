@@ -2,12 +2,14 @@
 -- PostgreSQL.17 PostgreSQL.15 PostgreSQL (asynchronously)
 
 SELECT
-	t."MoneyValue"
+	t.c1
 FROM
 	(
 		SELECT
-			ROUND(p."MoneyValue", 1) as c1,
-			p."MoneyValue"
+			CASE
+				WHEN p."MoneyValue" >= 0 THEN FLOOR(p."MoneyValue" * POWER(10, 1) + 0.5) / POWER(10, 1)
+				ELSE CEIL(p."MoneyValue" * POWER(10, 1) - 0.5) / POWER(10, 1)
+			END as c1
 		FROM
 			"LinqDataTypes" p
 	) t
