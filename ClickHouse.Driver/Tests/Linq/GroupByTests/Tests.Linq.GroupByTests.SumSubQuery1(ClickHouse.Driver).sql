@@ -2,7 +2,7 @@
 -- ClickHouse.Driver ClickHouse
 
 SELECT
-	sum(g_2.ParentID - 3)
+	sumOrNull(g_2.ParentID - 3)
 FROM
 	(
 		SELECT

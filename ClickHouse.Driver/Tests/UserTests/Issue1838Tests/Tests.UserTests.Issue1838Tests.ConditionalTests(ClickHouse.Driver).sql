@@ -9,7 +9,7 @@ SELECT
 	END,
 	CASE
 		WHEN i.SettlementTotalOnIssue IS NOT NULL THEN i.SettlementTotalOnIssue
-		WHEN ia.InvoiceID IS NOT NULL THEN ia.SUM_1
+		WHEN ia.InvoiceId IS NOT NULL THEN ia.Total
 		ELSE NULL
 	END
 FROM
@@ -17,8 +17,8 @@ FROM
 		LEFT JOIN InvoiceReferenceNumber r ON r.InvoiceReferenceNumberID = i.InvoiceReferenceNumberID
 		LEFT JOIN (
 			SELECT
-				g_1.InvoiceID as InvoiceID,
-				sum(ili.BillingAmountOverride) as SUM_1
+				g_1.InvoiceID as InvoiceId,
+				sumOrNull(ili.BillingAmountOverride) as Total
 			FROM
 				Invoice g_1
 					INNER JOIN InvoiceLineItem ili ON ili.OwningInvoiceID = g_1.InvoiceID
@@ -26,7 +26,7 @@ FROM
 				NOT ili.Suppressed
 			GROUP BY
 				g_1.InvoiceID
-		) ia ON ia.InvoiceID = i.InvoiceID
+		) ia ON ia.InvoiceId = i.InvoiceID
 
 BeforeExecute
 -- ClickHouse.Driver ClickHouse
@@ -52,7 +52,7 @@ SELECT
 		ELSE r.ReferenceNumber
 	END,
 	CASE
-		WHEN ia.InvoiceID IS NOT NULL THEN ia.SUM_1
+		WHEN ia.InvoiceId IS NOT NULL THEN ia.Total
 		ELSE NULL
 	END
 FROM
@@ -60,8 +60,8 @@ FROM
 		LEFT JOIN InvoiceReferenceNumber r ON r.InvoiceReferenceNumberID = i.InvoiceReferenceNumberID
 		LEFT JOIN (
 			SELECT
-				g_1.InvoiceID as InvoiceID,
-				sum(ili.BillingAmountOverride) as SUM_1
+				g_1.InvoiceID as InvoiceId,
+				sumOrNull(ili.BillingAmountOverride) as Total
 			FROM
 				Invoice g_1
 					INNER JOIN InvoiceLineItem ili ON ili.OwningInvoiceID = g_1.InvoiceID
@@ -69,5 +69,5 @@ FROM
 				NOT ili.Suppressed
 			GROUP BY
 				g_1.InvoiceID
-		) ia ON ia.InvoiceID = i.InvoiceID
+		) ia ON ia.InvoiceId = i.InvoiceID
 

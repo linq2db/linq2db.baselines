@@ -2,7 +2,7 @@
 -- ClickHouse.Driver ClickHouse
 
 SELECT
-	min(c_1.ChildID),
+	minOrNull(c_1.ChildID),
 	MIN(c_1.ChildID),
 	MIN(ALL c_1.ChildID),
 	MIN(DISTINCT c_1.ChildID)
