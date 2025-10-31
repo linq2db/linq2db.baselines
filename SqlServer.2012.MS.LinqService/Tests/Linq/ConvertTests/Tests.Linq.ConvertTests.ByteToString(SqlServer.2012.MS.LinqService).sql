@@ -2,7 +2,7 @@
 -- SqlServer.2012.MS SqlServer.2012 (asynchronously)
 
 SELECT
-	[p].[ID]
+	CAST(CAST([p].[ID] AS TinyInt) AS NVarChar(3))
 FROM
 	[LinqDataTypes] [p]
 WHERE
