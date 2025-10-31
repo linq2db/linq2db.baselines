@@ -1,5 +1,4 @@
-﻿BeginTransaction(Serializable)
-
+﻿
 
 -- SQLite.MS SQLite
 
@@ -29,7 +28,6 @@ FROM
 
 
 
-DisposeTransaction
 
 
 -- SQLite.MS SQLite
