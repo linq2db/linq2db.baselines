@@ -2,9 +2,14 @@
 -- Access.Ace.Odbc AccessODBC
 
 SELECT
-	[t].[MoneyValue]
+	[t].[c1]
 FROM
-	[LinqDataTypes] [t]
+	(
+		SELECT
+			IIF([p].[MoneyValue] >= 0, Int([p].[MoneyValue] + 0.5), Int([p].[MoneyValue] - 0.5)) as [c1]
+		FROM
+			[LinqDataTypes] [p]
+	) [t]
 WHERE
-	ROUND([t].[MoneyValue]) <> 0
+	[t].[c1] <> 0
 

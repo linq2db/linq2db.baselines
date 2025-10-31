@@ -2,12 +2,11 @@
 -- Access.Ace.OleDb AccessOleDb (asynchronously)
 
 SELECT
-	[t].[MoneyValue]
+	[t].[c1]
 FROM
 	(
 		SELECT
-			ROUND([p].[MoneyValue], 1) as [c1],
-			[p].[MoneyValue]
+			Int([p].[MoneyValue] * (10 ^ 1) + IIF([p].[MoneyValue] >= 0, 0.5, -0.5)) / (10 ^ 1) as [c1]
 		FROM
 			[LinqDataTypes] [p]
 	) [t]

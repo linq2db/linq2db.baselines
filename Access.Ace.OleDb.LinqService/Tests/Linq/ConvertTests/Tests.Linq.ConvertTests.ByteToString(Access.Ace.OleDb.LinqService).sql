@@ -2,7 +2,7 @@
 -- Access.Ace.OleDb AccessOleDb (asynchronously)
 
 SELECT
-	[p].[ID]
+	CStr([p].[ID])
 FROM
 	[LinqDataTypes] [p]
 WHERE

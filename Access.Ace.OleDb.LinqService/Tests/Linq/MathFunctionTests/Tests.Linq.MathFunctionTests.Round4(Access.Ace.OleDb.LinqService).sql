@@ -2,9 +2,14 @@
 -- Access.Ace.OleDb AccessOleDb (asynchronously)
 
 SELECT
-	[t].[MoneyValue]
+	[t].[c1]
 FROM
-	[LinqDataTypes] [t]
+	(
+		SELECT
+			IIF([p].[MoneyValue] * 2 = ROUND([p].[MoneyValue] * 2, 1) AND [p].[MoneyValue] <> ROUND([p].[MoneyValue], 1), ROUND([p].[MoneyValue] / 2, 1) * 2, ROUND([p].[MoneyValue], 1)) as [c1]
+		FROM
+			[LinqDataTypes] [p]
+	) [t]
 WHERE
-	IIF([t].[MoneyValue] * 2 = ROUND([t].[MoneyValue] * 2, 1) AND [t].[MoneyValue] <> ROUND([t].[MoneyValue], 1), ROUND([t].[MoneyValue] / 2, 1) * 2, ROUND([t].[MoneyValue], 1)) <> 0
+	[t].[c1] <> 0
 
