@@ -1,4 +1,5 @@
-﻿
+﻿BeginTransaction(RepeatableRead)
+
 
 -- SqlServer.2017
 
@@ -32,5 +33,6 @@ GROUP BY
 
 
 
+DisposeTransaction
 
 
