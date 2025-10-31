@@ -2,9 +2,14 @@
 -- SqlServer.2019.MS SqlServer.2019 (asynchronously)
 
 SELECT
-	[t].[MoneyValue]
+	[t].[c1]
 FROM
-	[LinqDataTypes] [t]
+	(
+		SELECT
+			IIF([p].[MoneyValue] - FLOOR([p].[MoneyValue]) = 0.5 AND (FLOOR([p].[MoneyValue]) % 2) = 0, FLOOR([p].[MoneyValue]), ROUND([p].[MoneyValue], 0)) as [c1]
+		FROM
+			[LinqDataTypes] [p]
+	) [t]
 WHERE
-	IIF([t].[MoneyValue] - FLOOR([t].[MoneyValue]) = 0.5 AND (FLOOR([t].[MoneyValue]) % 2) = 0, FLOOR([t].[MoneyValue]), ROUND([t].[MoneyValue], 0)) <> 0
+	[t].[c1] <> 0
 
