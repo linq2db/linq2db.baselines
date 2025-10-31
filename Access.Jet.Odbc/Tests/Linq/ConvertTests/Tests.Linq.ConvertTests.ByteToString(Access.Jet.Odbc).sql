@@ -2,7 +2,7 @@
 -- Access.Jet.Odbc AccessODBC
 
 SELECT
-	[p].[ID]
+	CStr([p].[ID])
 FROM
 	[LinqDataTypes] [p]
 WHERE

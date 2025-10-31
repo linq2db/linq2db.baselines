@@ -54,14 +54,14 @@ SELECT
 	[al_group_2].[AlertCode],
 	(
 		SELECT TOP 1
-			IIF([t1].[MAX_1] IS NULL, [t1].[CreationDate], [t1].[MAX_1])
+			[t1].[LastUpdate]
 		FROM
 			((
 				SELECT
 					[al_group_3].[AlertCode],
 					[al_group_3].[AlertKey],
 					[al_group_3].[CreationDate],
-					MAX([au_1].[TransactionDate]) as [MAX_1]
+					IIF(MAX([au_1].[TransactionDate]) IS NULL, [al_group_3].[CreationDate], MAX([au_1].[TransactionDate])) as [LastUpdate]
 				FROM
 					[Alert] [al_group_3]
 						LEFT JOIN [AuditAlert] [au_1] ON ([au_1].[AlertKey] = [al_group_3].[AlertKey])
@@ -87,7 +87,7 @@ SELECT
 					[al_group_4].[AlertCode],
 					[al_group_4].[AlertKey],
 					[al_group_4].[CreationDate],
-					MAX([au_2].[TransactionDate]) as [MAX_1]
+					IIF(MAX([au_2].[TransactionDate]) IS NULL, [al_group_4].[CreationDate], MAX([au_2].[TransactionDate])) as [LastUpdate]
 				FROM
 					[Alert] [al_group_4]
 						LEFT JOIN [AuditAlert] [au_2] ON ([au_2].[AlertKey] = [al_group_4].[AlertKey])
@@ -113,7 +113,7 @@ SELECT
 					[al_group_5].[AlertCode],
 					[al_group_5].[AlertKey],
 					[al_group_5].[CreationDate],
-					MAX([au_3].[TransactionDate]) as [MAX_1]
+					IIF(MAX([au_3].[TransactionDate]) IS NULL, [al_group_5].[CreationDate], MAX([au_3].[TransactionDate])) as [LastUpdate]
 				FROM
 					[Alert] [al_group_5]
 						LEFT JOIN [AuditAlert] [au_3] ON ([au_3].[AlertKey] = [al_group_5].[AlertKey])
@@ -139,7 +139,7 @@ SELECT
 					[al_group_6].[AlertCode],
 					[al_group_6].[AlertKey],
 					[al_group_6].[CreationDate],
-					MAX([au_4].[TransactionDate]) as [MAX_1]
+					IIF(MAX([au_4].[TransactionDate]) IS NULL, [al_group_6].[CreationDate], MAX([au_4].[TransactionDate])) as [LastUpdate]
 				FROM
 					[Alert] [al_group_6]
 						LEFT JOIN [AuditAlert] [au_4] ON ([au_4].[AlertKey] = [al_group_6].[AlertKey])
@@ -165,7 +165,7 @@ SELECT
 					[al_group_7].[AlertCode],
 					[al_group_7].[AlertKey],
 					[al_group_7].[CreationDate],
-					MAX([au_5].[TransactionDate]) as [MAX_1]
+					IIF(MAX([au_5].[TransactionDate]) IS NULL, [al_group_7].[CreationDate], MAX([au_5].[TransactionDate])) as [LastUpdate]
 				FROM
 					[Alert] [al_group_7]
 						LEFT JOIN [AuditAlert] [au_5] ON ([au_5].[AlertKey] = [al_group_7].[AlertKey])
@@ -191,7 +191,7 @@ SELECT
 					[al_group_8].[AlertCode],
 					[al_group_8].[AlertKey],
 					[al_group_8].[CreationDate],
-					MAX([au_6].[TransactionDate]) as [MAX_1]
+					IIF(MAX([au_6].[TransactionDate]) IS NULL, [al_group_8].[CreationDate], MAX([au_6].[TransactionDate])) as [LastUpdate]
 				FROM
 					[Alert] [al_group_8]
 						LEFT JOIN [AuditAlert] [au_6] ON ([au_6].[AlertKey] = [al_group_8].[AlertKey])
@@ -217,7 +217,7 @@ SELECT
 					[al_group_9].[AlertCode],
 					[al_group_9].[AlertKey],
 					[al_group_9].[CreationDate],
-					MAX([au_7].[TransactionDate]) as [MAX_1]
+					IIF(MAX([au_7].[TransactionDate]) IS NULL, [al_group_9].[CreationDate], MAX([au_7].[TransactionDate])) as [LastUpdate]
 				FROM
 					[Alert] [al_group_9]
 						LEFT JOIN [AuditAlert] [au_7] ON ([au_7].[AlertKey] = [al_group_9].[AlertKey])

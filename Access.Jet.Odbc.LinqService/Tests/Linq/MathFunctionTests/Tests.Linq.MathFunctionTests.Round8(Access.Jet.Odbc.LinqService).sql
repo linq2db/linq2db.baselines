@@ -2,9 +2,14 @@
 -- Access.Jet.Odbc AccessODBC (asynchronously)
 
 SELECT
-	[t].[MoneyValue]
+	[t].[c1]
 FROM
-	[LinqDataTypes] [t]
+	(
+		SELECT
+			IIF(ABS([p].[MoneyValue] * 10 MOD 10) = 5 AND ([p].[MoneyValue] MOD 2) = 2, [p].[MoneyValue], ROUND([p].[MoneyValue])) as [c1]
+		FROM
+			[LinqDataTypes] [p]
+	) [t]
 WHERE
-	IIF(ABS([t].[MoneyValue] * 10 MOD 10) = 5 AND ([t].[MoneyValue] MOD 2) = 2, [t].[MoneyValue], ROUND([t].[MoneyValue])) <> 0
+	[t].[c1] <> 0
 

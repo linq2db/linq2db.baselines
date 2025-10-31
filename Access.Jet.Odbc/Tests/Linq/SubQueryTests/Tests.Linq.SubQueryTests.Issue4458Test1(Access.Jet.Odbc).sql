@@ -35,13 +35,20 @@ SELECT
 	[i].[Id],
 	(
 		SELECT
-			SUM([stock].[QuantityAvailable])
+			SUM([s].[QuantityAvailable])
 		FROM
-			[WarehouseStock] [stock]
+			[WarehouseStock] [s]
 		WHERE
-			[stock].[ItemId] = [i].[Id]
-		GROUP BY
-			[stock].[ItemId]
+			[s].[ItemId] = [i].[Id] AND (
+				SELECT
+					[stock].[ItemId]
+				FROM
+					[WarehouseStock] [stock]
+				WHERE
+					[stock].[ItemId] = [i].[Id]
+				GROUP BY
+					[stock].[ItemId]
+			) = [s].[ItemId]
 	)
 FROM
 	[Issue4458Item] [i]
