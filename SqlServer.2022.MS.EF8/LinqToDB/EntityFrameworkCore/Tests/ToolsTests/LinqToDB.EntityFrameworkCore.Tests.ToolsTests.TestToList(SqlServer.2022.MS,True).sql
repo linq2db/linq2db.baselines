@@ -1,4 +1,5 @@
-﻿
+﻿BeginTransaction(RepeatableRead)
+
 
 -- SqlServer.2022
 
@@ -31,6 +32,7 @@ WHERE
 
 
 
+DisposeTransaction
 
 
 -- SqlServer.2022
