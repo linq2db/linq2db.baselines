@@ -2,12 +2,12 @@
 -- SqlServer.2025.MS SqlServer.2025 SqlServer.2022 (asynchronously)
 
 SELECT
-	[t3].[AVG_1]
+	[t3].[Average]
 FROM
 	[MasterClass] [m_1]
 		OUTER APPLY (
 			SELECT
-				AVG(CAST([t2].[DetailId] AS Float)) as [AVG_1]
+				AVG(CAST([t2].[DetailId] AS Float)) as [Average]
 			FROM
 				(
 					SELECT
