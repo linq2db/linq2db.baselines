@@ -2,12 +2,12 @@
 -- SqlServer.2016
 
 SELECT
-	[g_2].[MIN_1]
+	[g_2].[Min_1]
 FROM
 	(
 		SELECT
 			MIN(IIF([g_1].[ParentID] > 2, [g_1].[ChildID], NULL)) as [cond],
-			MIN(IIF([g_1].[ParentID] > 2, [g_1].[ChildID], NULL)) as [MIN_1]
+			MIN(IIF([g_1].[ParentID] > 2, [g_1].[ChildID], NULL)) as [Min_1]
 		FROM
 			[Child] [g_1]
 		GROUP BY

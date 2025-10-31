@@ -193,35 +193,44 @@ SELECT
 	[t].[Column1],
 	CASE
 		WHEN [r].[Column4] IS NOT NULL THEN [r].[Column4]
-		WHEN [i].[Column8] IS NULL AND ([rd].[Column4] IS NOT NULL OR [rd2].[Column4] IS NOT NULL)
-			THEN IIF([rd].[Column4] IS NOT NULL, [rd].[Column4], [rd2].[Column4])
+		WHEN [i].[Column8] IS NULL AND ([i].[Column4] IS NOT NULL OR [i].[Column4_1] IS NOT NULL)
+			THEN IIF([i].[Column4] IS NOT NULL, [i].[Column4], [i].[Column4_1])
 		ELSE [i].[Column8]
 	END
 FROM
-	[tempdb]..[#tbl9999] [i]
-		LEFT JOIN (
-			SELECT
-				[g_1].[Column3] as [Key_1],
-				MIN(IIF([g_1].[Column2] = 1, [g_1].[Column6], NULL)) as [Column4]
-			FROM
-				[tempdb]..[#tbl1515] [g_1]
-			WHERE
-				[g_1].[Column4] <= @date AND ([g_1].[Column5] IS NULL OR [g_1].[Column5] > @date) AND
-				[g_1].[Column3] IS NOT NULL
-			GROUP BY
-				[g_1].[Column3]
-		) [rd] ON [i].[Column2] = [rd].[Key_1] OR [i].[Column2] IS NULL AND [rd].[Key_1] IS NULL
-		LEFT JOIN (
-			SELECT
-				MIN(IIF([g_2].[Column2] = 1, [g_2].[Column6], NULL)) as [Column4]
-			FROM
-				[tempdb]..[#tbl1515] [g_2]
-			WHERE
-				[g_2].[Column4] <= @date AND ([g_2].[Column5] IS NULL OR [g_2].[Column5] > @date) AND
-				[g_2].[Column3] IS NULL
-			GROUP BY
-				[g_2].[Column3]
-		) [rd2] ON 1=1
+	(
+		SELECT
+			[id].[Column1],
+			[id].[Column8],
+			[rd].[Column4],
+			(
+				SELECT
+					MIN(IIF([g_2].[Column2] = 1, [g_2].[Column6], NULL))
+				FROM
+					[tempdb]..[#tbl1515] [g_2]
+				WHERE
+					[g_2].[Column4] <= @date AND ([g_2].[Column5] IS NULL OR [g_2].[Column5] > @date) AND
+					[g_2].[Column3] IS NULL
+				GROUP BY
+					[g_2].[Column3]
+			) as [Column4_1]
+		FROM
+			[tempdb]..[#tbl9999] [id]
+				LEFT JOIN (
+					SELECT
+						[g_1].[Column3] as [Key_1],
+						MIN(IIF([g_1].[Column2] = 1, [g_1].[Column6], NULL)) as [Column4]
+					FROM
+						[tempdb]..[#tbl1515] [g_1]
+					WHERE
+						[g_1].[Column4] <= @date AND ([g_1].[Column5] IS NULL OR [g_1].[Column5] > @date) AND
+						[g_1].[Column3] IS NOT NULL
+					GROUP BY
+						[g_1].[Column3]
+				) [rd] ON [id].[Column2] = [rd].[Key_1] OR [id].[Column2] IS NULL AND [rd].[Key_1] IS NULL
+		WHERE
+			[id].[Column4] <= @date AND ([id].[Column5] IS NULL OR [id].[Column5] > @date)
+	) [i]
 		LEFT JOIN (
 			SELECT
 				[g_3].[Column2] as [Key_1],
@@ -237,8 +246,6 @@ FROM
 				[g_3].[Column2]
 		) [r] ON [i].[Column1] = [r].[Key_1]
 		INNER JOIN [tempdb]..[#tbl1414] [t] ON [i].[Column1] = [t].[Column1]
-WHERE
-	[i].[Column4] <= @date AND ([i].[Column5] IS NULL OR [i].[Column5] > @date)
 
 BeforeExecute
 -- SqlServer.2016.MS SqlServer.2016
@@ -1434,35 +1441,44 @@ SELECT
 	[t].[Column1],
 	CASE
 		WHEN [r].[Column4] IS NOT NULL THEN [r].[Column4]
-		WHEN [i].[Column8] IS NULL AND ([rd].[Column4] IS NOT NULL OR [rd2].[Column4] IS NOT NULL)
-			THEN IIF([rd].[Column4] IS NOT NULL, [rd].[Column4], [rd2].[Column4])
+		WHEN [i].[Column8] IS NULL AND ([i].[Column4] IS NOT NULL OR [i].[Column4_1] IS NOT NULL)
+			THEN IIF([i].[Column4] IS NOT NULL, [i].[Column4], [i].[Column4_1])
 		ELSE [i].[Column8]
 	END
 FROM
-	[tempdb]..[#tbl9999] [i]
-		LEFT JOIN (
-			SELECT
-				[g_1].[Column3] as [Key_1],
-				MIN(IIF([g_1].[Column2] = 1, [g_1].[Column6], NULL)) as [Column4]
-			FROM
-				[tempdb]..[#tbl1515] [g_1]
-			WHERE
-				[g_1].[Column4] <= @date AND ([g_1].[Column5] IS NULL OR [g_1].[Column5] > @date) AND
-				[g_1].[Column3] IS NOT NULL
-			GROUP BY
-				[g_1].[Column3]
-		) [rd] ON [i].[Column2] = [rd].[Key_1] OR [i].[Column2] IS NULL AND [rd].[Key_1] IS NULL
-		LEFT JOIN (
-			SELECT
-				MIN(IIF([g_2].[Column2] = 1, [g_2].[Column6], NULL)) as [Column4]
-			FROM
-				[tempdb]..[#tbl1515] [g_2]
-			WHERE
-				[g_2].[Column4] <= @date AND ([g_2].[Column5] IS NULL OR [g_2].[Column5] > @date) AND
-				[g_2].[Column3] IS NULL
-			GROUP BY
-				[g_2].[Column3]
-		) [rd2] ON 1=1
+	(
+		SELECT
+			[id].[Column1],
+			[id].[Column8],
+			[rd].[Column4],
+			(
+				SELECT
+					MIN(IIF([g_2].[Column2] = 1, [g_2].[Column6], NULL))
+				FROM
+					[tempdb]..[#tbl1515] [g_2]
+				WHERE
+					[g_2].[Column4] <= @date AND ([g_2].[Column5] IS NULL OR [g_2].[Column5] > @date) AND
+					[g_2].[Column3] IS NULL
+				GROUP BY
+					[g_2].[Column3]
+			) as [Column4_1]
+		FROM
+			[tempdb]..[#tbl9999] [id]
+				LEFT JOIN (
+					SELECT
+						[g_1].[Column3] as [Key_1],
+						MIN(IIF([g_1].[Column2] = 1, [g_1].[Column6], NULL)) as [Column4]
+					FROM
+						[tempdb]..[#tbl1515] [g_1]
+					WHERE
+						[g_1].[Column4] <= @date AND ([g_1].[Column5] IS NULL OR [g_1].[Column5] > @date) AND
+						[g_1].[Column3] IS NOT NULL
+					GROUP BY
+						[g_1].[Column3]
+				) [rd] ON [id].[Column2] = [rd].[Key_1] OR [id].[Column2] IS NULL AND [rd].[Key_1] IS NULL
+		WHERE
+			[id].[Column4] <= @date AND ([id].[Column5] IS NULL OR [id].[Column5] > @date)
+	) [i]
 		LEFT JOIN (
 			SELECT
 				[g_3].[Column2] as [Key_1],
@@ -1478,8 +1494,6 @@ FROM
 				[g_3].[Column2]
 		) [r] ON [i].[Column1] = [r].[Key_1]
 		INNER JOIN [tempdb]..[#tbl1414] [t] ON [i].[Column1] = [t].[Column1]
-WHERE
-	[i].[Column4] <= @date AND ([i].[Column5] IS NULL OR [i].[Column5] > @date)
 
 BeforeExecute
 -- SqlServer.2016.MS SqlServer.2016

@@ -2,7 +2,6 @@
 -- SqlServer.2016.MS SqlServer.2016
 
 SELECT
-	[it_1].[cond_1],
 	[it_1].[cond],
 	[it_1].[ColorName],
 	[it_1].[StyleName],
@@ -35,18 +34,17 @@ FROM
 			SELECT
 				[it].[ColorName],
 				[it].[Count] as [Count_1],
-				[it].[index] as [cond],
 				[it].[StyleName],
 				[it].[Conditional],
 				[it].[field1],
 				[it].[field2],
 				[it].[field3],
-				1 as [cond_1]
+				1 as [cond]
 			FROM
 				(VALUES
-					([t1].[ColorName],[t1].[Count_1],0,[t1].[StyleName],IIF([t1].[ColorName] = N'Red', [t1].[Count_1], 0),1,2,3),
-					(NULL,0,1,[t1].[StyleName],NULL,4,5,6)
-				) [it]([ColorName], [Count], [index], [StyleName], [Conditional], [field1], [field2], [field3])
+					([t1].[ColorName],[t1].[Count_1],[t1].[StyleName],IIF([t1].[ColorName] = N'Red', [t1].[Count_1], 0),1,2,3),
+					(NULL,0,[t1].[StyleName],NULL,4,5,6)
+				) [it]([ColorName], [Count], [StyleName], [Conditional], [field1], [field2], [field3])
 		) [it_1]
 WHERE
 	[it_1].[ColorName] = N'Red' OR [it_1].[Count_1] = 0
