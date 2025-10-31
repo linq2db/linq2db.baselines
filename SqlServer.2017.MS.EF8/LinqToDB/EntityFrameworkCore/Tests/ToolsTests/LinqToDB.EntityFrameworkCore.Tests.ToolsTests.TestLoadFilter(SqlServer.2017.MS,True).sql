@@ -32,6 +32,7 @@ WHERE @__ef_filter__p_0 = CAST(1 AS bit) OR [p].[IsDeleted] = CAST(0 AS bit) OR 
 ORDER BY [p].[ProductID], [t3].[OrderID0], [t3].[ProductID], [t3].[OrderID], [t3].[ProductID0], [t3].[SupplierID]
 
 
+BeginTransactionAsync(RepeatableRead)
 
 
 -- SqlServer.2017
@@ -109,6 +110,7 @@ WHERE
 
 
 
+DisposeTransactionAsync
 
 
 -- SqlServer.2017
