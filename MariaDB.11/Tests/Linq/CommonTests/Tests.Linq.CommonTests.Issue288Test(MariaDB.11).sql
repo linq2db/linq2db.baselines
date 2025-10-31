@@ -1,0 +1,22 @@
+﻿-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
+
+SELECT
+	`p`.`FirstName`
+FROM
+	`Person` `p`
+WHERE
+	`p`.`FirstName` IS NULL
+LIMIT 1
+
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
+DECLARE @p VarChar(4) -- String
+SET     @p = 'John'
+
+SELECT
+	`p`.`FirstName`
+FROM
+	`Person` `p`
+WHERE
+	`p`.`FirstName` = @p
+LIMIT 1
+
