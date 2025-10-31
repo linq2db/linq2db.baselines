@@ -1,0 +1,44 @@
+﻿-- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
+DECLARE @value Int32
+SET     @value = 4
+
+SELECT
+	COUNT(*)
+FROM
+	`Src` `s`
+WHERE
+	NOT `s`.`Int` <=> @value
+
+-- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
+DECLARE @value Int32
+SET     @value = 4
+
+SELECT
+	COUNT(*)
+FROM
+	`Src` `s`
+WHERE
+	NOT `s`.`NullableInt` <=> @value
+
+-- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
+DECLARE @value Int32
+SET     @value = 4
+
+SELECT
+	COUNT(*)
+FROM
+	`Src` `s`
+WHERE
+	`s`.`Int` <=> @value
+
+-- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
+DECLARE @value Int32
+SET     @value = 4
+
+SELECT
+	COUNT(*)
+FROM
+	`Src` `s`
+WHERE
+	`s`.`NullableInt` <=> @value
+
