@@ -1,0 +1,32 @@
+﻿-- SqlServer.2012.MS SqlServer.2012
+
+IF (OBJECT_ID(N'[tempdb]..[#TestTable]', N'U') IS NOT NULL)
+	DROP TABLE [tempdb]..[#TestTable]
+
+-- SqlServer.2012.MS SqlServer.2012
+
+CREATE TABLE [tempdb]..[#TestTable]
+(
+	[Id]    Int NOT NULL,
+	[Value] Int NOT NULL
+)
+
+-- SqlServer.2012.MS SqlServer.2012
+
+SELECT
+	[t1].[Id],
+	[t1].[Value],
+	[t2].[Id],
+	[t2].[Value],
+	[t3].[Id],
+	[t3].[Value]
+FROM
+	[tempdb]..[#TestTable] [t1]
+		INNER JOIN [tempdb]..[#TestTable] [t2] ON [t1].[Id] = [t2].[Id]
+		INNER JOIN [tempdb]..[#TestTable] [t3] ON [t2].[Id] = [t3].[Id]
+
+-- SqlServer.2012.MS SqlServer.2012
+
+IF (OBJECT_ID(N'[tempdb]..[#TestTable]', N'U') IS NOT NULL)
+	DROP TABLE [tempdb]..[#TestTable]
+
