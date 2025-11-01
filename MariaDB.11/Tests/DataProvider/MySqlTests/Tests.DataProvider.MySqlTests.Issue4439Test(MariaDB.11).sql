@@ -1,0 +1,48 @@
+﻿-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
+DECLARE @CODE_AA VarChar(2) -- String
+SET     @CODE_AA = 'AA'
+
+INSERT INTO `TEST_TB_AA`
+(
+	`CODE_AA`
+)
+VALUES
+(
+	@CODE_AA
+)
+
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
+
+CREATE TEMPORARY TABLE IF NOT EXISTS `TMP_MIN_TEMPORARY`
+(
+	`IDX`   INT         AUTO_INCREMENT NOT NULL,
+	`KEY_A` VARCHAR(80)                NOT NULL,
+
+	CONSTRAINT `PK_TMP_MIN_TEMPORARY` PRIMARY KEY CLUSTERED (`IDX`)
+)
+
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
+
+DROP TEMPORARY TABLE IF EXISTS `TMP_MIN_TEMPORARY`
+
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
+DECLARE @CODE_AA VarChar(2) -- String
+SET     @CODE_AA = 'AA'
+
+INSERT INTO `TEST_TB_AA`
+(
+	`CODE_AA`
+)
+VALUES
+(
+	@CODE_AA
+)
+
+RollbackTransaction
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
+
+SELECT
+	COUNT(*)
+FROM
+	`TEST_TB_AA` `t1`
+
