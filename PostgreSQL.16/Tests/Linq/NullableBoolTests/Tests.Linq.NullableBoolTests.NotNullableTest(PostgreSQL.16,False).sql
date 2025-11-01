@@ -1,0 +1,54 @@
+﻿-- PostgreSQL.16 PostgreSQL.15 PostgreSQL
+
+SELECT
+	t."Value"
+FROM
+	"NotNullableBoolClass" t
+WHERE
+	t."Value"
+
+-- PostgreSQL.16 PostgreSQL.15 PostgreSQL
+
+SELECT
+	t."Value"
+FROM
+	"NotNullableBoolClass" t
+WHERE
+	t."Value" = True
+
+-- PostgreSQL.16 PostgreSQL.15 PostgreSQL
+
+SELECT
+	t."Value"
+FROM
+	"NotNullableBoolClass" t
+WHERE
+	t."Value" = False
+
+-- PostgreSQL.16 PostgreSQL.15 PostgreSQL
+
+SELECT
+	t."Value"
+FROM
+	"NotNullableBoolClass" t
+WHERE
+	NOT t."Value"
+
+-- PostgreSQL.16 PostgreSQL.15 PostgreSQL
+
+SELECT
+	t."Value"
+FROM
+	"NotNullableBoolClass" t
+WHERE
+	t."Value" = False
+
+-- PostgreSQL.16 PostgreSQL.15 PostgreSQL
+
+SELECT
+	t."Value"
+FROM
+	"NotNullableBoolClass" t
+WHERE
+	t."Value" = True
+
