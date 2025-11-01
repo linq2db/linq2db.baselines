@@ -1,4 +1,5 @@
-﻿
+﻿BeginTransactionAsync(RepeatableRead)
+
 
 -- SqlServer.2017
 
@@ -67,6 +68,7 @@ WHERE
 
 
 
+DisposeTransactionAsync
 
 
 -- SqlServer.2017
