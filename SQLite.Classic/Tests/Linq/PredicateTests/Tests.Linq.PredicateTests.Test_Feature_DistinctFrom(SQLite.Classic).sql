@@ -1,0 +1,108 @@
+﻿-- SQLite.Classic SQLite
+
+SELECT
+	COUNT(*)
+FROM
+	[FeatureTable] [r]
+WHERE
+	[r].[One] IS DISTINCT FROM [r].[One]
+
+-- SQLite.Classic SQLite
+
+SELECT
+	COUNT(*)
+FROM
+	[FeatureTable] [r]
+WHERE
+	[r].[Zero] IS DISTINCT FROM [r].[Zero]
+
+-- SQLite.Classic SQLite
+
+SELECT
+	COUNT(*)
+FROM
+	[FeatureTable] [r]
+WHERE
+	[r].[Null] IS DISTINCT FROM [r].[Null]
+
+-- SQLite.Classic SQLite
+
+SELECT
+	COUNT(*)
+FROM
+	[FeatureTable] [r]
+WHERE
+	[r].[One] IS DISTINCT FROM [r].[Zero]
+
+-- SQLite.Classic SQLite
+
+SELECT
+	COUNT(*)
+FROM
+	[FeatureTable] [r]
+WHERE
+	[r].[One] IS DISTINCT FROM [r].[Null]
+
+-- SQLite.Classic SQLite
+
+SELECT
+	COUNT(*)
+FROM
+	[FeatureTable] [r]
+WHERE
+	[r].[Zero] IS DISTINCT FROM [r].[Null]
+
+-- SQLite.Classic SQLite
+
+SELECT
+	COUNT(*)
+FROM
+	[FeatureTable] [r]
+WHERE
+	[r].[One] IS NOT DISTINCT FROM [r].[One]
+
+-- SQLite.Classic SQLite
+
+SELECT
+	COUNT(*)
+FROM
+	[FeatureTable] [r]
+WHERE
+	[r].[Zero] IS NOT DISTINCT FROM [r].[Zero]
+
+-- SQLite.Classic SQLite
+
+SELECT
+	COUNT(*)
+FROM
+	[FeatureTable] [r]
+WHERE
+	[r].[Null] IS NOT DISTINCT FROM [r].[Null]
+
+-- SQLite.Classic SQLite
+
+SELECT
+	COUNT(*)
+FROM
+	[FeatureTable] [r]
+WHERE
+	[r].[One] IS NOT DISTINCT FROM [r].[Zero]
+
+-- SQLite.Classic SQLite
+
+SELECT
+	COUNT(*)
+FROM
+	[FeatureTable] [r]
+WHERE
+	[r].[One] IS NOT DISTINCT FROM [r].[Null]
+
+-- SQLite.Classic SQLite
+
+SELECT
+	COUNT(*)
+FROM
+	[FeatureTable] [r]
+WHERE
+	[r].[Zero] IS NOT DISTINCT FROM [r].[Null]
+
