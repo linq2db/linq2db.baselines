@@ -1,5 +1,4 @@
-﻿BeginTransaction(RepeatableRead)
-
+﻿
 
 -- SqlServer.2025 SqlServer.2022
 
@@ -29,7 +28,6 @@ FROM
 
 
 
-DisposeTransaction
 
 
 -- SqlServer.2025 SqlServer.2022

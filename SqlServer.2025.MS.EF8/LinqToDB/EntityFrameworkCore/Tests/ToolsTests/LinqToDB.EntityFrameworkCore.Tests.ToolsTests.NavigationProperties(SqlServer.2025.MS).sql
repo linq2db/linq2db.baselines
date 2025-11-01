@@ -22,7 +22,6 @@ WHERE @__ef_filter__p_0 = CAST(1 AS bit) OR [o].[IsDeleted] = CAST(0 AS bit) OR 
 ORDER BY [o].[OrderID], [t].[OrderID], [t].[ProductID], [t0].[ProductID], [t1].[OrderId]
 
 
-BeginTransaction(RepeatableRead)
 
 
 -- SqlServer.2025 SqlServer.2022
@@ -45,7 +44,6 @@ FROM
 
 
 
-DisposeTransaction
 
 
 -- SqlServer.2025 SqlServer.2022
