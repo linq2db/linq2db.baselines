@@ -22,7 +22,6 @@ WHERE @__ef_filter__p_0 OR NOT ("o"."IsDeleted") OR NOT ("o"."IsDeleted")
 ORDER BY "o"."OrderID", "s"."OrderID", "s"."ProductID", "s"."ProductID0", "s"."OrderID0"
 
 
-BeginTransactionAsync(Serializable)
 
 
 -- SQLite.MS SQLite
@@ -92,7 +91,6 @@ WHERE
 
 
 
-DisposeTransactionAsync
 
 
 -- SQLite.MS SQLite
