@@ -1,0 +1,45 @@
+﻿-- PostgreSQL.18 PostgreSQL
+
+DROP TABLE IF EXISTS "TempTable"
+
+-- PostgreSQL.18 PostgreSQL
+
+SELECT
+	p."ParentID"
+FROM
+	"Parent" p
+
+-- PostgreSQL.18 PostgreSQL
+
+CREATE TABLE IF NOT EXISTS "TempTable"
+(
+	"ID" Int NOT NULL
+)
+
+-- PostgreSQL.18 PostgreSQL
+
+INSERT INTO "TempTable"
+(
+	"ID"
+)
+VALUES
+(2),
+(3),
+(4),
+(5),
+(6),
+(1),
+(7)
+
+-- PostgreSQL.18 PostgreSQL
+
+SELECT
+	t."ID"
+FROM
+	"Parent" p
+		INNER JOIN "TempTable" t ON p."ParentID" = t."ID"
+
+-- PostgreSQL.18 PostgreSQL
+
+DROP TABLE IF EXISTS "TempTable"
+
