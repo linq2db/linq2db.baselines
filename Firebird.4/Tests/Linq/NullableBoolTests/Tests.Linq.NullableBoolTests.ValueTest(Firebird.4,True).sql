@@ -1,0 +1,44 @@
+﻿-- Firebird.4 Firebird4
+DECLARE @value Boolean
+SET     @value = TRUE
+
+SELECT
+	"t"."Value"
+FROM
+	"NullableBoolClass" "t"
+WHERE
+	"t"."Value" = @value
+
+-- Firebird.4 Firebird4
+DECLARE @value Boolean
+SET     @value = TRUE
+
+SELECT
+	"t"."Value"
+FROM
+	"NullableBoolClass" "t"
+WHERE
+	"t"."Value" = @value
+
+-- Firebird.4 Firebird4
+DECLARE @value Boolean
+SET     @value = TRUE
+
+SELECT
+	"t"."Value"
+FROM
+	"NullableBoolClass" "t"
+WHERE
+	"t"."Value" <> @value OR "t"."Value" IS NULL
+
+-- Firebird.4 Firebird4
+DECLARE @value Boolean
+SET     @value = TRUE
+
+SELECT
+	"t"."Value"
+FROM
+	"NullableBoolClass" "t"
+WHERE
+	"t"."Value" <> @value
+
