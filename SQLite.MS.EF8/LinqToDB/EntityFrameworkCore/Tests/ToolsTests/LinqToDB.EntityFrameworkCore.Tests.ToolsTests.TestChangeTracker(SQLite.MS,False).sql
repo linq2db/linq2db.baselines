@@ -1,5 +1,4 @@
-﻿BeginTransactionAsync(Serializable)
-
+﻿
 
 -- SQLite.MS SQLite
 
@@ -59,7 +58,6 @@ FROM
 
 
 
-DisposeTransactionAsync
 
 
 -- SQLite.MS SQLite
