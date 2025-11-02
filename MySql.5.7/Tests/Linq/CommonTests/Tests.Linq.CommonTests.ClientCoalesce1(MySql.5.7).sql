@@ -1,0 +1,18 @@
+﻿-- MySql.5.7 MySql.5.7.MySql.Data MySql57
+DECLARE @Value1 Int32
+SET     @Value1 = 100
+
+SELECT
+	`x`.`Value1`
+FROM
+	`Parent` `x`
+WHERE
+	Coalesce(`x`.`Value1`, @Value1) > 10
+
+-- MySql.5.7 MySql.5.7.MySql.Data MySql57
+
+SELECT
+	`p`.`Value1`
+FROM
+	`Parent` `p`
+

@@ -1,0 +1,176 @@
+﻿-- ClickHouse.Octonica ClickHouse
+
+ALTER TABLE
+	TestMerge1
+DELETE WHERE 1
+
+-- ClickHouse.Octonica ClickHouse
+
+INSERT INTO TestMerge1
+(
+	Id,
+	Field1,
+	Field2,
+	Field4
+)
+VALUES
+(
+	1,
+	NULL,
+	NULL,
+	NULL
+)
+
+-- ClickHouse.Octonica ClickHouse
+
+INSERT INTO TestMerge1
+(
+	Id,
+	Field1,
+	Field2,
+	Field4
+)
+VALUES
+(
+	2,
+	2,
+	NULL,
+	NULL
+)
+
+-- ClickHouse.Octonica ClickHouse
+
+INSERT INTO TestMerge1
+(
+	Id,
+	Field1,
+	Field2,
+	Field4
+)
+VALUES
+(
+	3,
+	NULL,
+	3,
+	203
+)
+
+-- ClickHouse.Octonica ClickHouse
+
+INSERT INTO TestMerge1
+(
+	Id,
+	Field1,
+	Field2,
+	Field4
+)
+VALUES
+(
+	4,
+	5,
+	6,
+	NULL
+)
+
+-- ClickHouse.Octonica ClickHouse
+
+ALTER TABLE
+	TestMerge2
+DELETE WHERE 1
+
+-- ClickHouse.Octonica ClickHouse
+
+INSERT INTO TestMerge2
+(
+	Id,
+	Field1,
+	Field2,
+	Field4
+)
+VALUES
+(
+	3,
+	NULL,
+	3,
+	NULL
+)
+
+-- ClickHouse.Octonica ClickHouse
+
+INSERT INTO TestMerge2
+(
+	Id,
+	Field1,
+	Field2,
+	Field4
+)
+VALUES
+(
+	4,
+	5,
+	7,
+	214
+)
+
+-- ClickHouse.Octonica ClickHouse
+
+INSERT INTO TestMerge2
+(
+	Id,
+	Field1,
+	Field2,
+	Field4
+)
+VALUES
+(
+	5,
+	10,
+	4,
+	NULL
+)
+
+-- ClickHouse.Octonica ClickHouse
+
+INSERT INTO TestMerge2
+(
+	Id,
+	Field1,
+	Field2,
+	Field4
+)
+VALUES
+(
+	6,
+	NULL,
+	NULL,
+	216
+)
+
+-- ClickHouse.Octonica ClickHouse
+
+SELECT
+	t1.Id,
+	t1.Field1,
+	t1.Field2,
+	t1.Field3,
+	t1.Field4,
+	t1.Field5
+FROM
+	TestMerge1 t1
+ORDER BY
+	t1.Id
+
+-- ClickHouse.Octonica ClickHouse
+
+SELECT
+	t1.Id,
+	t1.Field1,
+	t1.Field2,
+	t1.Field3,
+	t1.Field4,
+	t1.Field5
+FROM
+	TestMerge2 t1
+ORDER BY
+	t1.Id
+

@@ -1,0 +1,62 @@
+﻿-- SqlCe
+
+DELETE FROM
+	[CollatedTable]
+
+-- SqlCe
+DECLARE @Id Int -- Int32
+SET     @Id = 1
+DECLARE @CaseSensitive NVarChar(10) -- String
+SET     @CaseSensitive = 'TestString'
+DECLARE @CaseInsensitive NVarChar(10) -- String
+SET     @CaseInsensitive = 'TestString'
+
+INSERT INTO [CollatedTable]
+(
+	[Id],
+	[CaseSensitive],
+	[CaseInsensitive]
+)
+VALUES
+(
+	@Id,
+	@CaseSensitive,
+	@CaseInsensitive
+)
+
+-- SqlCe
+
+SELECT
+	COUNT(*) as [COUNT_1]
+FROM
+	[CollatedTable] [r]
+WHERE
+	[r].[CaseSensitive] LIKE 'TestSt%' ESCAPE '~'
+
+-- SqlCe
+
+SELECT
+	COUNT(*) as [COUNT_1]
+FROM
+	[CollatedTable] [r]
+WHERE
+	[r].[CaseInsensitive] LIKE 'TestSt%' ESCAPE '~'
+
+-- SqlCe
+
+SELECT
+	COUNT(*) as [COUNT_1]
+FROM
+	[CollatedTable] [r]
+WHERE
+	[r].[CaseSensitive] LIKE 'testst%' ESCAPE '~'
+
+-- SqlCe
+
+SELECT
+	COUNT(*) as [COUNT_1]
+FROM
+	[CollatedTable] [r]
+WHERE
+	[r].[CaseInsensitive] LIKE 'testst%' ESCAPE '~'
+

@@ -1,0 +1,43 @@
+﻿-- Firebird.5 Firebird4
+
+EXECUTE BLOCK AS BEGIN
+	IF (EXISTS(SELECT 1 FROM rdb$relations WHERE rdb$relation_name = 'DropTableTest')) THEN
+		EXECUTE STATEMENT 'DROP TABLE "DropTableTest"';
+END
+
+-- Firebird.5 Firebird4
+
+CREATE TABLE "DropTableTest"
+(
+	ID Int NOT NULL
+)
+
+-- Firebird.5 Firebird4
+
+INSERT INTO "DropTableTest"
+(
+	ID
+)
+VALUES
+(
+	123
+)
+
+-- Firebird.5 Firebird4
+
+SELECT
+	"t1".ID
+FROM
+	"DropTableTest" "t1"
+
+-- Firebird.5 Firebird4
+
+DROP TABLE "DropTableTest"
+
+-- Firebird.5 Firebird4
+
+SELECT
+	"t1".ID
+FROM
+	"DropTableTest" "t1"
+

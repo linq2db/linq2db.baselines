@@ -1,0 +1,9 @@
+﻿-- SqlServer.2005
+
+SET TEXTSIZE 2048
+
+-- SqlServer.2005
+
+SELECT
+	@@TEXTSIZE
+
