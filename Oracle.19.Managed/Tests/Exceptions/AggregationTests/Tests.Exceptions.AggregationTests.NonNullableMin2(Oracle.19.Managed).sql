@@ -1,16 +1,14 @@
 ﻿-- Oracle.19.Managed Oracle.Managed Oracle12
-DECLARE @n Int32
-SET     @n = 2
 
 SELECT
 	(
 		SELECT
-			COUNT(*)
+			MIN(a_Children."ParentID")
 		FROM
 			"Child" a_Children
 		WHERE
-			p."ParentID" = a_Children."ParentID" AND a_Children."ChildID" > :n
-	) + 2
+			p."ParentID" = a_Children."ParentID" AND a_Children."ParentID" < 0
+	)
 FROM
 	"Parent" p
 
