@@ -1,13 +1,18 @@
 ﻿-- SqlServer.2008
 
 SELECT
-	[t].[MoneyValue]
+	[t].[c1]
 FROM
-	[LinqDataTypes] [t]
+	(
+		SELECT
+			CASE
+				WHEN CAST([p].[MoneyValue] AS Float) * 2 = ROUND(CAST([p].[MoneyValue] AS Float) * 2, 1) AND CAST([p].[MoneyValue] AS Float) <> ROUND(CAST([p].[MoneyValue] AS Float), 1)
+					THEN ROUND(CAST([p].[MoneyValue] AS Float) / 2, 1) * 2
+				ELSE ROUND(CAST([p].[MoneyValue] AS Float), 1)
+			END as [c1]
+		FROM
+			[LinqDataTypes] [p]
+	) [t]
 WHERE
-	CASE
-		WHEN CAST([t].[MoneyValue] AS Float) * 2 = ROUND(CAST([t].[MoneyValue] AS Float) * 2, 1) AND CAST([t].[MoneyValue] AS Float) <> ROUND(CAST([t].[MoneyValue] AS Float), 1)
-			THEN ROUND(CAST([t].[MoneyValue] AS Float) / 2, 1) * 2
-		ELSE ROUND(CAST([t].[MoneyValue] AS Float), 1)
-	END <> 0
+	[t].[c1] <> 0
 
