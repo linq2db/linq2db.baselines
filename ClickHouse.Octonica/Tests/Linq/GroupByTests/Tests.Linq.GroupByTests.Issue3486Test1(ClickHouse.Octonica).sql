@@ -3,7 +3,7 @@
 SELECT
 	gr.FirstName,
 	gr.LastName,
-	sum(gr.PersonID)
+	sumOrNull(gr.PersonID)
 FROM
 	Person gr
 GROUP BY
