@@ -1,0 +1,17 @@
+﻿-- Oracle.23.Managed Oracle.Managed Oracle12
+
+INSERT INTO "Issue3323Table"
+(
+	"Id",
+	"FirstName",
+	"LastName",
+	"Text"
+)
+VALUES
+(
+	1,
+	'one',
+	'two',
+	'text'
+)
+
