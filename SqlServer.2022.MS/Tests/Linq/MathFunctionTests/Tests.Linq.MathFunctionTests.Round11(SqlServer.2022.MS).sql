@@ -1,9 +1,14 @@
 ﻿-- SqlServer.2022.MS SqlServer.2022
 
 SELECT
-	[t].[MoneyValue]
+	[t].[c1]
 FROM
-	[LinqDataTypes] [t]
+	(
+		SELECT
+			IIF(CAST([p].[MoneyValue] AS Float) * 2 = ROUND(CAST([p].[MoneyValue] AS Float) * 2, 1) AND CAST([p].[MoneyValue] AS Float) <> ROUND(CAST([p].[MoneyValue] AS Float), 1), ROUND(CAST([p].[MoneyValue] AS Float) / 2, 1) * 2, ROUND(CAST([p].[MoneyValue] AS Float), 1)) as [c1]
+		FROM
+			[LinqDataTypes] [p]
+	) [t]
 WHERE
-	IIF(CAST([t].[MoneyValue] AS Float) * 2 = ROUND(CAST([t].[MoneyValue] AS Float) * 2, 1) AND CAST([t].[MoneyValue] AS Float) <> ROUND(CAST([t].[MoneyValue] AS Float), 1), ROUND(CAST([t].[MoneyValue] AS Float) / 2, 1) * 2, ROUND(CAST([t].[MoneyValue] AS Float), 1)) <> 0
+	[t].[c1] <> 0
 
