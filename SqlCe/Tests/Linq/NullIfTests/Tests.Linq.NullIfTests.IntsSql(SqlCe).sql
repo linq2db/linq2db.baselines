@@ -13,20 +13,20 @@ ORDER BY
 -- SqlCe
 
 SELECT
-	COUNT(*) as [COUNT_1]
+	COUNT(*) as [Count_1]
 FROM
-	[Src] [x]
+	[Src] [s]
 WHERE
-	[x].[Int] = 2
+	[s].[Int] = 2
 
 -- SqlCe
 
 SELECT
-	COUNT(*) as [COUNT_1]
+	COUNT(*) as [Count_1]
 FROM
-	[Src] [x]
+	[Src] [s]
 WHERE
-	[x].[Int] <> 2
+	[s].[Int] <> 2
 
 -- SqlCe
 
@@ -43,20 +43,20 @@ ORDER BY
 -- SqlCe
 
 SELECT
-	COUNT(*) as [COUNT_1]
+	COUNT(*) as [Count_1]
 FROM
-	[Src] [x]
+	[Src] [s]
 WHERE
-	[x].[Int] = 4
+	[s].[Int] = 4
 
 -- SqlCe
 
 SELECT
-	COUNT(*) as [COUNT_1]
+	COUNT(*) as [Count_1]
 FROM
-	[Src] [x]
+	[Src] [s]
 WHERE
-	[x].[Int] <> 4
+	[s].[Int] <> 4
 
 -- SqlCe
 
@@ -70,18 +70,18 @@ ORDER BY
 -- SqlCe
 
 SELECT
-	COUNT(*) as [COUNT_1]
+	COUNT(*) as [Count_1]
 FROM
-	[Src] [x]
+	[Src] [s]
 WHERE
 	1 = 0
 
 -- SqlCe
 
 SELECT
-	COUNT(*) as [COUNT_1]
+	COUNT(*) as [Count_1]
 FROM
-	[Src] [x]
+	[Src] [s]
 
 -- SqlCe
 
@@ -98,20 +98,20 @@ ORDER BY
 -- SqlCe
 
 SELECT
-	COUNT(*) as [COUNT_1]
+	COUNT(*) as [Count_1]
 FROM
-	[Src] [x]
+	[Src] [s]
 WHERE
-	[x].[NullableInt] = 2 OR [x].[NullableInt] IS NULL
+	[s].[NullableInt] = 2 OR [s].[NullableInt] IS NULL
 
 -- SqlCe
 
 SELECT
-	COUNT(*) as [COUNT_1]
+	COUNT(*) as [Count_1]
 FROM
-	[Src] [x]
+	[Src] [s]
 WHERE
-	NOT ([x].[NullableInt] = 2 OR [x].[NullableInt] IS NULL)
+	NOT ([s].[NullableInt] = 2 OR [s].[NullableInt] IS NULL)
 
 -- SqlCe
 
@@ -128,20 +128,20 @@ ORDER BY
 -- SqlCe
 
 SELECT
-	COUNT(*) as [COUNT_1]
+	COUNT(*) as [Count_1]
 FROM
-	[Src] [x]
+	[Src] [s]
 WHERE
-	[x].[NullableInt] = 4 OR [x].[NullableInt] IS NULL
+	[s].[NullableInt] = 4 OR [s].[NullableInt] IS NULL
 
 -- SqlCe
 
 SELECT
-	COUNT(*) as [COUNT_1]
+	COUNT(*) as [Count_1]
 FROM
-	[Src] [x]
+	[Src] [s]
 WHERE
-	NOT ([x].[NullableInt] = 4 OR [x].[NullableInt] IS NULL)
+	NOT ([s].[NullableInt] = 4 OR [s].[NullableInt] IS NULL)
 
 -- SqlCe
 
@@ -155,18 +155,18 @@ ORDER BY
 -- SqlCe
 
 SELECT
-	COUNT(*) as [COUNT_1]
+	COUNT(*) as [Count_1]
 FROM
-	[Src] [x]
+	[Src] [s]
 WHERE
-	[x].[NullableInt] IS NULL
+	[s].[NullableInt] IS NULL
 
 -- SqlCe
 
 SELECT
-	COUNT(*) as [COUNT_1]
+	COUNT(*) as [Count_1]
 FROM
-	[Src] [x]
+	[Src] [s]
 WHERE
-	[x].[NullableInt] IS NOT NULL
+	[s].[NullableInt] IS NOT NULL
 
