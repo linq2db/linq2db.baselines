@@ -8,7 +8,7 @@ FROM
 		LEFT JOIN (
 			SELECT
 				"c_1"."ChildID",
-				ROW_NUMBER() OVER (PARTITION BY "a_Parent"."ParentID", "a_Parent"."Value1" ORDER BY ("c_1"."ChildID" * "c_1"."ParentID") DESC) as "rn",
+				ROW_NUMBER() OVER (PARTITION BY "a_Parent"."ParentID", "a_Parent"."Value1" ORDER BY "c_1"."ChildID" * "c_1"."ParentID" DESC) as "rn",
 				"a_Parent"."ParentID",
 				"a_Parent"."Value1"
 			FROM
