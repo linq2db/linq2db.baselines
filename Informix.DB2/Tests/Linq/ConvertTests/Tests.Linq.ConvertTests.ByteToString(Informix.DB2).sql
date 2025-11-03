@@ -1,7 +1,7 @@
 ﻿-- Informix.DB2 Informix
 
 SELECT
-	p.ID
+	To_Char(p.ID::SmallInt)
 FROM
 	LinqDataTypes p
 WHERE
