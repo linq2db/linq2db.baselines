@@ -1,0 +1,27 @@
+﻿-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
+
+SELECT
+	`g_1`.`Id`,
+	GROUP_CONCAT(DISTINCT Coalesce(`g_1`.`NullableValue`, '') SEPARATOR ', '),
+	Coalesce(GROUP_CONCAT(DISTINCT `g_1`.`NullableValue` SEPARATOR ', '), ''),
+	Coalesce(GROUP_CONCAT(DISTINCT `g_1`.`NullableValue` ORDER BY `g_1`.`NullableValue` DESC SEPARATOR ', '), ''),
+	GROUP_CONCAT(DISTINCT `g_1`.`NotNullableValue` SEPARATOR ', '),
+	GROUP_CONCAT(DISTINCT `g_1`.`NotNullableValue` ORDER BY `g_1`.`NotNullableValue` DESC SEPARATOR ', ')
+FROM
+	`SampleClass` `g_1`
+GROUP BY
+	`g_1`.`Id`
+ORDER BY
+	`g_1`.`Id`
+
+-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
+
+SELECT
+	`t1`.`Id`,
+	`t1`.`NullableValue`,
+	`t1`.`NotNullableValue`,
+	`t1`.`VarcharValue`,
+	`t1`.`NVarcharValue`
+FROM
+	`SampleClass` `t1`
+
