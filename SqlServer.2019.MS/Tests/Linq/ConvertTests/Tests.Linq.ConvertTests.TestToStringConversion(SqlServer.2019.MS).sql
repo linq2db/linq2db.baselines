@@ -3,7 +3,7 @@
 SELECT TOP (1)
 	CAST([x].[Prop_bool] AS NVarChar(1)),
 	CAST([x].[Prop_byte] AS NVarChar(3)),
-	CAST([x].[Prop_char] AS NVarChar(4000)),
+	[x].[Prop_char],
 	CAST([x].[Prop_decimal] AS NVarChar(31)),
 	CAST([x].[Prop_double] AS NVarChar(22)),
 	CAST([x].[Prop_short] AS NVarChar(6)),
@@ -18,7 +18,7 @@ SELECT TOP (1)
 	CAST([x].[Prop_DateTime] AS NVarChar(27)),
 	CAST([x].[NullableProp_bool] AS NVarChar(1)),
 	CAST([x].[NullableProp_byte] AS NVarChar(3)),
-	CAST([x].[NullableProp_char] AS NVarChar(4000)),
+	[x].[NullableProp_char],
 	CAST([x].[NullableProp_decimal] AS NVarChar(31)),
 	CAST([x].[NullableProp_double] AS NVarChar(22)),
 	CAST([x].[NullableProp_short] AS NVarChar(6)),
