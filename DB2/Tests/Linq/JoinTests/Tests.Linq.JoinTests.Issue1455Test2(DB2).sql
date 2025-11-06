@@ -50,7 +50,7 @@ FROM
 				"trade_2"."DealId" as "cond_1",
 				"trade_2"."ParcelId",
 				"trade_2"."CounterParty",
-				Coalesce("t1".MAX_1, "t1"."CreationDate") as "LastUpdate",
+				"t1"."LastUpdate",
 				ROW_NUMBER() OVER (PARTITION BY "t1"."AlertKey", "t1"."AlertCode", "t1"."CreationDate" ORDER BY "t1"."AlertKey") as "rn",
 				"t1"."AlertKey",
 				"t1"."AlertCode",
@@ -61,7 +61,7 @@ FROM
 						"al_group_2"."AlertCode",
 						"al_group_2"."AlertKey",
 						"al_group_2"."CreationDate",
-						MAX("au_1"."TransactionDate") as MAX_1
+						Coalesce(MAX("au_1"."TransactionDate"), "al_group_2"."CreationDate") as "LastUpdate"
 					FROM
 						"Alert" "al_group_2"
 							LEFT JOIN "AuditAlert" "au_1" ON "au_1"."AlertKey" = "al_group_2"."AlertKey"
