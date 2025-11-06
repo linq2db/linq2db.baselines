@@ -1,9 +1,14 @@
 ﻿-- ClickHouse.MySql ClickHouse
 
 SELECT
-	t.MoneyValue
+	t.c1
 FROM
-	LinqDataTypes t
+	(
+		SELECT
+			roundBankers(p.MoneyValue) as c1
+		FROM
+			LinqDataTypes p
+	) t
 WHERE
-	roundBankers(t.MoneyValue) <> toDecimal64('0', 4)
+	t.c1 <> toDecimal64('0', 4)
 
