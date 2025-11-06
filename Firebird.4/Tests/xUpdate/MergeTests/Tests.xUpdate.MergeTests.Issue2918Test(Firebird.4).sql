@@ -6,17 +6,25 @@ MERGE INTO "PatentAssessment" "Target"
 USING (
 	SELECT
 		"pa"."PatentId",
-		(
-			SELECT
-				LIST("a_User"."DisplayName", '; ')
-			FROM
-				"Issue2918Table2" "patr"
-					LEFT JOIN "User" "a_User" ON "patr"."UserId" = "a_User"."Id"
-			WHERE
-				"patr"."PatentId" = "pa"."PatentId"
-		) as "TechnicalReviewersText"
+		"t2"."TechnicalReviewersText"
 	FROM
 		"PatentAssessment" "pa"
+			LEFT JOIN LATERAL (
+				SELECT
+					LIST("t1"."DisplayName", '; ') as "TechnicalReviewersText"
+				FROM
+					(
+						SELECT
+							"a_User"."DisplayName"
+						FROM
+							"Issue2918Table2" "patr"
+								LEFT JOIN "User" "a_User" ON "patr"."UserId" = "a_User"."Id"
+						WHERE
+							"patr"."PatentId" = "pa"."PatentId"
+						ORDER BY
+							"a_User"."DisplayName"
+					) "t1"
+			) "t2" ON 1=1
 	WHERE
 		EXISTS(
 			SELECT
