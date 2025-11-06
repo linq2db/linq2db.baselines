@@ -2,7 +2,7 @@
 
 SELECT
 	Concat(' ', CAST(Coalesce(`t1`.`Value1`, 0) AS CHAR(11))),
-	`t1`.`SUM_1`,
+	`t1`.`SubSum`,
 	EXISTS(
 		SELECT
 			*
@@ -33,12 +33,12 @@ FROM
 						LEFT JOIN `Parent` `a_Parent` ON `c_1`.`ParentID` = `a_Parent`.`ParentID`
 				WHERE
 					`a_Parent`.`ParentID` = `f`.`ParentID` AND (`a_Parent`.`Value1` = `f`.`Value1` OR `a_Parent`.`Value1` IS NULL AND `f`.`Value1` IS NULL)
-			) as `SUM_1`,
+			) as `SubSum`,
 			`f`.`ParentID`
 		FROM
 			`Parent` `f`
 	) `t1`
 WHERE
 	LOCATE('1', Concat(' ', CAST(Coalesce(`t1`.`Value1`, 0) AS CHAR(11)))) > 0 AND
-	`t1`.`SUM_1` > 0
+	`t1`.`SubSum` > 0
 
