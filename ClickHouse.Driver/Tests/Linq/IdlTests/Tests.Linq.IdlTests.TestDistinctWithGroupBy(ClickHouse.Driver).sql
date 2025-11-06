@@ -10,7 +10,7 @@ FROM
 
 SELECT
 	x_1.Key_1,
-	sum(x_1.MatchScore)
+	sumOrNull(x_1.MatchScore)
 FROM
 	(
 		SELECT DISTINCT
