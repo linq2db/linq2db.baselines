@@ -4,23 +4,11 @@ SELECT
 	g_1."GroupId",
 	MIN(g_1."DataValue"),
 	MIN(g_1."DataValue"),
-	MIN(CASE
-		WHEN (g_1."DataValue"::decimal % 2)::decimal = 0 THEN g_1."DataValue"
-		ELSE NULL
-	END),
-	MIN(CASE
-		WHEN (g_1."DataValue"::decimal % 2)::decimal = 0 THEN g_1."DataValue"
-		ELSE NULL
-	END),
+	MIN(g_1."DataValue") FILTER (WHERE (g_1."DataValue"::decimal % 2)::decimal = 0),
+	MIN(g_1."DataValue") FILTER (WHERE (g_1."DataValue"::decimal % 2)::decimal = 0),
 	MIN(DISTINCT g_1."DataValue"),
-	MIN(DISTINCT CASE
-		WHEN (g_1."DataValue"::decimal % 2)::decimal = 0 THEN g_1."DataValue"
-		ELSE NULL
-	END),
-	MIN(DISTINCT CASE
-		WHEN (g_1."DataValue"::decimal % 2)::decimal = 0 THEN g_1."DataValue"
-		ELSE NULL
-	END)
+	MIN(DISTINCT g_1."DataValue") FILTER (WHERE (g_1."DataValue"::decimal % 2)::decimal = 0),
+	MIN(DISTINCT g_1."DataValue") FILTER (WHERE (g_1."DataValue"::decimal % 2)::decimal = 0)
 FROM
 	"AggregationData" g_1
 GROUP BY
