@@ -1,18 +1,12 @@
 ﻿-- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
 
 SELECT
-	g_2."MIN_1"
+	g_2."Min_1"
 FROM
 	(
 		SELECT
-			MIN(CASE
-				WHEN g_1."ParentID" > 2 THEN g_1."ChildID"
-				ELSE NULL
-			END) as cond,
-			MIN(CASE
-				WHEN g_1."ParentID" > 2 THEN g_1."ChildID"
-				ELSE NULL
-			END) as "MIN_1"
+			MIN(g_1."ChildID") FILTER (WHERE g_1."ParentID" > 2) as cond,
+			MIN(g_1."ChildID") FILTER (WHERE g_1."ParentID" > 2) as "Min_1"
 		FROM
 			"Child" g_1
 		GROUP BY
