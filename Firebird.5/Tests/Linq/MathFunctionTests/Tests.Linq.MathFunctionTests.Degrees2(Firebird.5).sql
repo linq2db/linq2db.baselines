@@ -5,7 +5,7 @@ SELECT
 FROM
 	(
 		SELECT
-			CAST("p"."MoneyValue" AS Float) * 57.295779513082323 as "Value_1"
+			CAST("p"."MoneyValue" AS DOUBLE PRECISION) * 57.295779513082323 as "Value_1"
 		FROM
 			"LinqDataTypes" "p"
 	) "t"
