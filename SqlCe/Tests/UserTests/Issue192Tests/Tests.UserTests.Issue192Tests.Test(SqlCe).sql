@@ -43,7 +43,7 @@ VALUES
 -- SqlCe
 
 SELECT
-	COUNT(*) as [COUNT_1]
+	COUNT(*) as [Count_1]
 FROM
 	[TypeConvertTable] [t1]
 WHERE
@@ -52,7 +52,7 @@ WHERE
 -- SqlCe
 
 SELECT
-	COUNT(*) as [COUNT_1]
+	COUNT(*) as [Count_1]
 FROM
 	[TypeConvertTable] [t1]
 WHERE
@@ -63,7 +63,7 @@ DECLARE @cond NVarChar(36) -- String
 SET     @cond = 'a948600d-de21-4f74-8ac2-9516b287076e'
 
 SELECT
-	COUNT(*) as [COUNT_1]
+	COUNT(*) as [Count_1]
 FROM
 	[TypeConvertTable] [t1]
 WHERE
