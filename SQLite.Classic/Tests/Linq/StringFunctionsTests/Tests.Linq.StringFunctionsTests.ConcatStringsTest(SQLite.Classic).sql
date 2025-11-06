@@ -1,7 +1,7 @@
 ﻿-- SQLite.Classic SQLite
 
 SELECT
-	IFNULL([t].[Value2], '')
+	Coalesce([t].[Value2], '')
 FROM
 	[SampleClass] [t]
 ORDER BY
@@ -10,7 +10,7 @@ ORDER BY
 -- SQLite.Classic SQLite
 
 SELECT
-	IFNULL([t].[Value3], '')
+	Coalesce([t].[Value3], '')
 FROM
 	[SampleClass] [t]
 ORDER BY
@@ -19,7 +19,7 @@ ORDER BY
 -- SQLite.Classic SQLite
 
 SELECT
-	SUBSTR(((IFNULL((' -> ' || [t].[Value3]), '') || IFNULL((' -> ' || [t].[Value1]), '')) || IFNULL((' -> ' || [t].[Value2]), '')), LENGTH(' -> ') + 1)
+	SUBSTR(Coalesce(' -> ' || [t].[Value3], '') || Coalesce(' -> ' || [t].[Value1], '') || Coalesce(' -> ' || [t].[Value2], ''), 5)
 FROM
 	[SampleClass] [t]
 ORDER BY
@@ -28,7 +28,7 @@ ORDER BY
 -- SQLite.Classic SQLite
 
 SELECT
-	SUBSTR((IFNULL((' -> ' || [t].[Value3]), '') || IFNULL((' -> ' || [t].[Value3]), '')), LENGTH(' -> ') + 1)
+	SUBSTR(Coalesce(' -> ' || [t].[Value3], '') || Coalesce(' -> ' || [t].[Value3], ''), 5)
 FROM
 	[SampleClass] [t]
 ORDER BY
