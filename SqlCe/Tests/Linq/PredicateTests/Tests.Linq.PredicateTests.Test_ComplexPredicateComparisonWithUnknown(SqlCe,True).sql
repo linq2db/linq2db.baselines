@@ -1,7 +1,7 @@
 ﻿-- SqlCe
 
 SELECT
-	COUNT(*) as [COUNT_1]
+	COUNT(*) as [Count_1]
 FROM
 	[BooleanTable] [r]
 WHERE
@@ -21,7 +21,7 @@ FROM
 	[BooleanTable] [r_1]
 		LEFT JOIN (
 			SELECT
-				COUNT(*) as [COUNT_1]
+				COUNT(*) as [Count_1]
 			FROM
 				[BooleanTable] [r]
 			WHERE
@@ -33,8 +33,8 @@ WHERE
 		WHEN NOT ([r_1].[Value1] = [r_1].[Value4]) THEN 0
 		ELSE NULL
 	END = CASE
-		WHEN ([t1].[COUNT_1] = ([r_1].[Value5] + @cnt)) THEN 1
-		WHEN NOT ([t1].[COUNT_1] = ([r_1].[Value5] + @cnt)) THEN 0
+		WHEN ([t1].[Count_1] = ([r_1].[Value5] + @cnt)) THEN 1
+		WHEN NOT ([t1].[Count_1] = ([r_1].[Value5] + @cnt)) THEN 0
 		ELSE NULL
 	END OR
 	CASE
@@ -42,8 +42,8 @@ WHERE
 		WHEN NOT ([r_1].[Value1] = [r_1].[Value4]) THEN 0
 		ELSE NULL
 	END IS NULL AND CASE
-		WHEN ([t1].[COUNT_1] = ([r_1].[Value5] + @cnt)) THEN 1
-		WHEN NOT ([t1].[COUNT_1] = ([r_1].[Value5] + @cnt)) THEN 0
+		WHEN ([t1].[Count_1] = ([r_1].[Value5] + @cnt)) THEN 1
+		WHEN NOT ([t1].[Count_1] = ([r_1].[Value5] + @cnt)) THEN 0
 		ELSE NULL
 	END IS NULL
 
@@ -72,7 +72,7 @@ FROM
 	[BooleanTable] [r_1]
 		LEFT JOIN (
 			SELECT
-				COUNT(*) as [COUNT_1]
+				COUNT(*) as [Count_1]
 			FROM
 				[BooleanTable] [r]
 			WHERE
@@ -84,8 +84,8 @@ WHERE
 		WHEN NOT ([r_1].[Value1] <> [r_1].[Value4]) THEN 0
 		ELSE NULL
 	END = CASE
-		WHEN ([t1].[COUNT_1] = ([r_1].[Value5] + @cnt)) THEN 1
-		WHEN NOT ([t1].[COUNT_1] = ([r_1].[Value5] + @cnt)) THEN 0
+		WHEN ([t1].[Count_1] = ([r_1].[Value5] + @cnt)) THEN 1
+		WHEN NOT ([t1].[Count_1] = ([r_1].[Value5] + @cnt)) THEN 0
 		ELSE NULL
 	END OR
 	CASE
@@ -93,8 +93,8 @@ WHERE
 		WHEN NOT ([r_1].[Value1] <> [r_1].[Value4]) THEN 0
 		ELSE NULL
 	END IS NULL AND CASE
-		WHEN ([t1].[COUNT_1] = ([r_1].[Value5] + @cnt)) THEN 1
-		WHEN NOT ([t1].[COUNT_1] = ([r_1].[Value5] + @cnt)) THEN 0
+		WHEN ([t1].[Count_1] = ([r_1].[Value5] + @cnt)) THEN 1
+		WHEN NOT ([t1].[Count_1] = ([r_1].[Value5] + @cnt)) THEN 0
 		ELSE NULL
 	END IS NULL
 
@@ -123,7 +123,7 @@ FROM
 	[BooleanTable] [r_1]
 		LEFT JOIN (
 			SELECT
-				COUNT(*) as [COUNT_1]
+				COUNT(*) as [Count_1]
 			FROM
 				[BooleanTable] [r]
 			WHERE
@@ -134,8 +134,8 @@ WHERE
 		WHEN ([r_1].[Value1] = [r_1].[Value2]) THEN 1
 		ELSE 0
 	END = CASE
-		WHEN ([t1].[COUNT_1] = ([r_1].[Value5] + @cnt)) THEN 1
-		WHEN NOT ([t1].[COUNT_1] = ([r_1].[Value5] + @cnt)) THEN 0
+		WHEN ([t1].[Count_1] = ([r_1].[Value5] + @cnt)) THEN 1
+		WHEN NOT ([t1].[Count_1] = ([r_1].[Value5] + @cnt)) THEN 0
 		ELSE NULL
 	END
 
@@ -164,7 +164,7 @@ FROM
 	[BooleanTable] [r_1]
 		LEFT JOIN (
 			SELECT
-				COUNT(*) as [COUNT_1]
+				COUNT(*) as [Count_1]
 			FROM
 				[BooleanTable] [r]
 			WHERE
@@ -175,8 +175,8 @@ WHERE
 		WHEN ([r_1].[Value1] <> [r_1].[Value2]) THEN 1
 		ELSE 0
 	END = CASE
-		WHEN ([t1].[COUNT_1] = ([r_1].[Value5] + @cnt)) THEN 1
-		WHEN NOT ([t1].[COUNT_1] = ([r_1].[Value5] + @cnt)) THEN 0
+		WHEN ([t1].[Count_1] = ([r_1].[Value5] + @cnt)) THEN 1
+		WHEN NOT ([t1].[Count_1] = ([r_1].[Value5] + @cnt)) THEN 0
 		ELSE NULL
 	END
 
@@ -205,7 +205,7 @@ FROM
 	[BooleanTable] [r_1]
 		LEFT JOIN (
 			SELECT
-				COUNT(*) as [COUNT_1]
+				COUNT(*) as [Count_1]
 			FROM
 				[BooleanTable] [r]
 			WHERE
@@ -221,16 +221,16 @@ WHERE
 			WHEN NOT ([r_1].[Value1] = [r_1].[Value4]) THEN 0
 			ELSE NULL
 		END = CASE
-			WHEN ([t1].[COUNT_1] = ([r_1].[Value5] + @cnt)) THEN 1
-			WHEN NOT ([t1].[COUNT_1] = ([r_1].[Value5] + @cnt)) THEN 0
+			WHEN ([t1].[Count_1] = ([r_1].[Value5] + @cnt)) THEN 1
+			WHEN NOT ([t1].[Count_1] = ([r_1].[Value5] + @cnt)) THEN 0
 			ELSE NULL
 		END OR CASE
 			WHEN ([r_1].[Value1] = [r_1].[Value4]) THEN 1
 			WHEN NOT ([r_1].[Value1] = [r_1].[Value4]) THEN 0
 			ELSE NULL
 		END IS NULL AND CASE
-			WHEN ([t1].[COUNT_1] = ([r_1].[Value5] + @cnt)) THEN 1
-			WHEN NOT ([t1].[COUNT_1] = ([r_1].[Value5] + @cnt)) THEN 0
+			WHEN ([t1].[Count_1] = ([r_1].[Value5] + @cnt)) THEN 1
+			WHEN NOT ([t1].[Count_1] = ([r_1].[Value5] + @cnt)) THEN 0
 			ELSE NULL
 		END IS NULL
 			THEN 1
@@ -262,7 +262,7 @@ FROM
 	[BooleanTable] [r_1]
 		LEFT JOIN (
 			SELECT
-				COUNT(*) as [COUNT_1]
+				COUNT(*) as [Count_1]
 			FROM
 				[BooleanTable] [r]
 			WHERE
@@ -278,16 +278,16 @@ WHERE
 			WHEN NOT ([r_1].[Value1] <> [r_1].[Value4]) THEN 0
 			ELSE NULL
 		END = CASE
-			WHEN ([t1].[COUNT_1] = ([r_1].[Value5] + @cnt)) THEN 1
-			WHEN NOT ([t1].[COUNT_1] = ([r_1].[Value5] + @cnt)) THEN 0
+			WHEN ([t1].[Count_1] = ([r_1].[Value5] + @cnt)) THEN 1
+			WHEN NOT ([t1].[Count_1] = ([r_1].[Value5] + @cnt)) THEN 0
 			ELSE NULL
 		END OR CASE
 			WHEN ([r_1].[Value1] <> [r_1].[Value4]) THEN 1
 			WHEN NOT ([r_1].[Value1] <> [r_1].[Value4]) THEN 0
 			ELSE NULL
 		END IS NULL AND CASE
-			WHEN ([t1].[COUNT_1] = ([r_1].[Value5] + @cnt)) THEN 1
-			WHEN NOT ([t1].[COUNT_1] = ([r_1].[Value5] + @cnt)) THEN 0
+			WHEN ([t1].[Count_1] = ([r_1].[Value5] + @cnt)) THEN 1
+			WHEN NOT ([t1].[Count_1] = ([r_1].[Value5] + @cnt)) THEN 0
 			ELSE NULL
 		END IS NULL
 			THEN 1
@@ -319,7 +319,7 @@ FROM
 	[BooleanTable] [r_1]
 		LEFT JOIN (
 			SELECT
-				COUNT(*) as [COUNT_1]
+				COUNT(*) as [Count_1]
 			FROM
 				[BooleanTable] [r]
 			WHERE
@@ -334,8 +334,8 @@ WHERE
 			WHEN ([r_1].[Value1] = [r_1].[Value2]) THEN 1
 			ELSE 0
 		END = CASE
-			WHEN ([t1].[COUNT_1] = ([r_1].[Value5] + @cnt)) THEN 1
-			WHEN NOT ([t1].[COUNT_1] = ([r_1].[Value5] + @cnt)) THEN 0
+			WHEN ([t1].[Count_1] = ([r_1].[Value5] + @cnt)) THEN 1
+			WHEN NOT ([t1].[Count_1] = ([r_1].[Value5] + @cnt)) THEN 0
 			ELSE NULL
 		END
 			THEN 1
@@ -367,7 +367,7 @@ FROM
 	[BooleanTable] [r_1]
 		LEFT JOIN (
 			SELECT
-				COUNT(*) as [COUNT_1]
+				COUNT(*) as [Count_1]
 			FROM
 				[BooleanTable] [r]
 			WHERE
@@ -382,8 +382,8 @@ WHERE
 			WHEN ([r_1].[Value1] <> [r_1].[Value2]) THEN 1
 			ELSE 0
 		END = CASE
-			WHEN ([t1].[COUNT_1] = ([r_1].[Value5] + @cnt)) THEN 1
-			WHEN NOT ([t1].[COUNT_1] = ([r_1].[Value5] + @cnt)) THEN 0
+			WHEN ([t1].[Count_1] = ([r_1].[Value5] + @cnt)) THEN 1
+			WHEN NOT ([t1].[Count_1] = ([r_1].[Value5] + @cnt)) THEN 0
 			ELSE NULL
 		END
 			THEN 1
@@ -415,7 +415,7 @@ FROM
 	[BooleanTable] [r_1]
 		LEFT JOIN (
 			SELECT
-				COUNT(*) as [COUNT_1]
+				COUNT(*) as [Count_1]
 			FROM
 				[BooleanTable] [r]
 			WHERE
@@ -427,8 +427,8 @@ WHERE
 		WHEN NOT ([r_1].[Value1] = [r_1].[Value4]) THEN 0
 		ELSE NULL
 	END <> CASE
-		WHEN ([t1].[COUNT_1] = ([r_1].[Value5] + @cnt)) THEN 1
-		WHEN NOT ([t1].[COUNT_1] = ([r_1].[Value5] + @cnt)) THEN 0
+		WHEN ([t1].[Count_1] = ([r_1].[Value5] + @cnt)) THEN 1
+		WHEN NOT ([t1].[Count_1] = ([r_1].[Value5] + @cnt)) THEN 0
 		ELSE NULL
 	END OR
 	CASE
@@ -436,8 +436,8 @@ WHERE
 		WHEN NOT ([r_1].[Value1] = [r_1].[Value4]) THEN 0
 		ELSE NULL
 	END IS NULL AND CASE
-		WHEN ([t1].[COUNT_1] = ([r_1].[Value5] + @cnt)) THEN 1
-		WHEN NOT ([t1].[COUNT_1] = ([r_1].[Value5] + @cnt)) THEN 0
+		WHEN ([t1].[Count_1] = ([r_1].[Value5] + @cnt)) THEN 1
+		WHEN NOT ([t1].[Count_1] = ([r_1].[Value5] + @cnt)) THEN 0
 		ELSE NULL
 	END IS NOT NULL OR
 	CASE
@@ -445,8 +445,8 @@ WHERE
 		WHEN NOT ([r_1].[Value1] = [r_1].[Value4]) THEN 0
 		ELSE NULL
 	END IS NOT NULL AND CASE
-		WHEN ([t1].[COUNT_1] = ([r_1].[Value5] + @cnt)) THEN 1
-		WHEN NOT ([t1].[COUNT_1] = ([r_1].[Value5] + @cnt)) THEN 0
+		WHEN ([t1].[Count_1] = ([r_1].[Value5] + @cnt)) THEN 1
+		WHEN NOT ([t1].[Count_1] = ([r_1].[Value5] + @cnt)) THEN 0
 		ELSE NULL
 	END IS NULL
 
@@ -475,7 +475,7 @@ FROM
 	[BooleanTable] [r_1]
 		LEFT JOIN (
 			SELECT
-				COUNT(*) as [COUNT_1]
+				COUNT(*) as [Count_1]
 			FROM
 				[BooleanTable] [r]
 			WHERE
@@ -487,8 +487,8 @@ WHERE
 		WHEN NOT ([r_1].[Value1] <> [r_1].[Value4]) THEN 0
 		ELSE NULL
 	END <> CASE
-		WHEN ([t1].[COUNT_1] = ([r_1].[Value5] + @cnt)) THEN 1
-		WHEN NOT ([t1].[COUNT_1] = ([r_1].[Value5] + @cnt)) THEN 0
+		WHEN ([t1].[Count_1] = ([r_1].[Value5] + @cnt)) THEN 1
+		WHEN NOT ([t1].[Count_1] = ([r_1].[Value5] + @cnt)) THEN 0
 		ELSE NULL
 	END OR
 	CASE
@@ -496,8 +496,8 @@ WHERE
 		WHEN NOT ([r_1].[Value1] <> [r_1].[Value4]) THEN 0
 		ELSE NULL
 	END IS NULL AND CASE
-		WHEN ([t1].[COUNT_1] = ([r_1].[Value5] + @cnt)) THEN 1
-		WHEN NOT ([t1].[COUNT_1] = ([r_1].[Value5] + @cnt)) THEN 0
+		WHEN ([t1].[Count_1] = ([r_1].[Value5] + @cnt)) THEN 1
+		WHEN NOT ([t1].[Count_1] = ([r_1].[Value5] + @cnt)) THEN 0
 		ELSE NULL
 	END IS NOT NULL OR
 	CASE
@@ -505,8 +505,8 @@ WHERE
 		WHEN NOT ([r_1].[Value1] <> [r_1].[Value4]) THEN 0
 		ELSE NULL
 	END IS NOT NULL AND CASE
-		WHEN ([t1].[COUNT_1] = ([r_1].[Value5] + @cnt)) THEN 1
-		WHEN NOT ([t1].[COUNT_1] = ([r_1].[Value5] + @cnt)) THEN 0
+		WHEN ([t1].[Count_1] = ([r_1].[Value5] + @cnt)) THEN 1
+		WHEN NOT ([t1].[Count_1] = ([r_1].[Value5] + @cnt)) THEN 0
 		ELSE NULL
 	END IS NULL
 
@@ -535,7 +535,7 @@ FROM
 	[BooleanTable] [r_1]
 		LEFT JOIN (
 			SELECT
-				COUNT(*) as [COUNT_1]
+				COUNT(*) as [Count_1]
 			FROM
 				[BooleanTable] [r]
 			WHERE
@@ -546,13 +546,13 @@ WHERE
 		WHEN ([r_1].[Value1] = [r_1].[Value2]) THEN 1
 		ELSE 0
 	END <> CASE
-		WHEN ([t1].[COUNT_1] = ([r_1].[Value5] + @cnt)) THEN 1
-		WHEN NOT ([t1].[COUNT_1] = ([r_1].[Value5] + @cnt)) THEN 0
+		WHEN ([t1].[Count_1] = ([r_1].[Value5] + @cnt)) THEN 1
+		WHEN NOT ([t1].[Count_1] = ([r_1].[Value5] + @cnt)) THEN 0
 		ELSE NULL
 	END OR
 	CASE
-		WHEN ([t1].[COUNT_1] = ([r_1].[Value5] + @cnt)) THEN 1
-		WHEN NOT ([t1].[COUNT_1] = ([r_1].[Value5] + @cnt)) THEN 0
+		WHEN ([t1].[Count_1] = ([r_1].[Value5] + @cnt)) THEN 1
+		WHEN NOT ([t1].[Count_1] = ([r_1].[Value5] + @cnt)) THEN 0
 		ELSE NULL
 	END IS NULL
 
@@ -581,7 +581,7 @@ FROM
 	[BooleanTable] [r_1]
 		LEFT JOIN (
 			SELECT
-				COUNT(*) as [COUNT_1]
+				COUNT(*) as [Count_1]
 			FROM
 				[BooleanTable] [r]
 			WHERE
@@ -592,13 +592,13 @@ WHERE
 		WHEN ([r_1].[Value1] <> [r_1].[Value2]) THEN 1
 		ELSE 0
 	END <> CASE
-		WHEN ([t1].[COUNT_1] = ([r_1].[Value5] + @cnt)) THEN 1
-		WHEN NOT ([t1].[COUNT_1] = ([r_1].[Value5] + @cnt)) THEN 0
+		WHEN ([t1].[Count_1] = ([r_1].[Value5] + @cnt)) THEN 1
+		WHEN NOT ([t1].[Count_1] = ([r_1].[Value5] + @cnt)) THEN 0
 		ELSE NULL
 	END OR
 	CASE
-		WHEN ([t1].[COUNT_1] = ([r_1].[Value5] + @cnt)) THEN 1
-		WHEN NOT ([t1].[COUNT_1] = ([r_1].[Value5] + @cnt)) THEN 0
+		WHEN ([t1].[Count_1] = ([r_1].[Value5] + @cnt)) THEN 1
+		WHEN NOT ([t1].[Count_1] = ([r_1].[Value5] + @cnt)) THEN 0
 		ELSE NULL
 	END IS NULL
 
@@ -627,7 +627,7 @@ FROM
 	[BooleanTable] [r_1]
 		LEFT JOIN (
 			SELECT
-				COUNT(*) as [COUNT_1]
+				COUNT(*) as [Count_1]
 			FROM
 				[BooleanTable] [r]
 			WHERE
@@ -643,24 +643,24 @@ WHERE
 			WHEN NOT ([r_1].[Value1] = [r_1].[Value4]) THEN 0
 			ELSE NULL
 		END <> CASE
-			WHEN ([t1].[COUNT_1] = ([r_1].[Value5] + @cnt)) THEN 1
-			WHEN NOT ([t1].[COUNT_1] = ([r_1].[Value5] + @cnt)) THEN 0
+			WHEN ([t1].[Count_1] = ([r_1].[Value5] + @cnt)) THEN 1
+			WHEN NOT ([t1].[Count_1] = ([r_1].[Value5] + @cnt)) THEN 0
 			ELSE NULL
 		END OR CASE
 			WHEN ([r_1].[Value1] = [r_1].[Value4]) THEN 1
 			WHEN NOT ([r_1].[Value1] = [r_1].[Value4]) THEN 0
 			ELSE NULL
 		END IS NULL AND CASE
-			WHEN ([t1].[COUNT_1] = ([r_1].[Value5] + @cnt)) THEN 1
-			WHEN NOT ([t1].[COUNT_1] = ([r_1].[Value5] + @cnt)) THEN 0
+			WHEN ([t1].[Count_1] = ([r_1].[Value5] + @cnt)) THEN 1
+			WHEN NOT ([t1].[Count_1] = ([r_1].[Value5] + @cnt)) THEN 0
 			ELSE NULL
 		END IS NOT NULL OR CASE
 			WHEN ([r_1].[Value1] = [r_1].[Value4]) THEN 1
 			WHEN NOT ([r_1].[Value1] = [r_1].[Value4]) THEN 0
 			ELSE NULL
 		END IS NOT NULL AND CASE
-			WHEN ([t1].[COUNT_1] = ([r_1].[Value5] + @cnt)) THEN 1
-			WHEN NOT ([t1].[COUNT_1] = ([r_1].[Value5] + @cnt)) THEN 0
+			WHEN ([t1].[Count_1] = ([r_1].[Value5] + @cnt)) THEN 1
+			WHEN NOT ([t1].[Count_1] = ([r_1].[Value5] + @cnt)) THEN 0
 			ELSE NULL
 		END IS NULL
 			THEN 1
@@ -692,7 +692,7 @@ FROM
 	[BooleanTable] [r_1]
 		LEFT JOIN (
 			SELECT
-				COUNT(*) as [COUNT_1]
+				COUNT(*) as [Count_1]
 			FROM
 				[BooleanTable] [r]
 			WHERE
@@ -708,24 +708,24 @@ WHERE
 			WHEN NOT ([r_1].[Value1] <> [r_1].[Value4]) THEN 0
 			ELSE NULL
 		END <> CASE
-			WHEN ([t1].[COUNT_1] = ([r_1].[Value5] + @cnt)) THEN 1
-			WHEN NOT ([t1].[COUNT_1] = ([r_1].[Value5] + @cnt)) THEN 0
+			WHEN ([t1].[Count_1] = ([r_1].[Value5] + @cnt)) THEN 1
+			WHEN NOT ([t1].[Count_1] = ([r_1].[Value5] + @cnt)) THEN 0
 			ELSE NULL
 		END OR CASE
 			WHEN ([r_1].[Value1] <> [r_1].[Value4]) THEN 1
 			WHEN NOT ([r_1].[Value1] <> [r_1].[Value4]) THEN 0
 			ELSE NULL
 		END IS NULL AND CASE
-			WHEN ([t1].[COUNT_1] = ([r_1].[Value5] + @cnt)) THEN 1
-			WHEN NOT ([t1].[COUNT_1] = ([r_1].[Value5] + @cnt)) THEN 0
+			WHEN ([t1].[Count_1] = ([r_1].[Value5] + @cnt)) THEN 1
+			WHEN NOT ([t1].[Count_1] = ([r_1].[Value5] + @cnt)) THEN 0
 			ELSE NULL
 		END IS NOT NULL OR CASE
 			WHEN ([r_1].[Value1] <> [r_1].[Value4]) THEN 1
 			WHEN NOT ([r_1].[Value1] <> [r_1].[Value4]) THEN 0
 			ELSE NULL
 		END IS NOT NULL AND CASE
-			WHEN ([t1].[COUNT_1] = ([r_1].[Value5] + @cnt)) THEN 1
-			WHEN NOT ([t1].[COUNT_1] = ([r_1].[Value5] + @cnt)) THEN 0
+			WHEN ([t1].[Count_1] = ([r_1].[Value5] + @cnt)) THEN 1
+			WHEN NOT ([t1].[Count_1] = ([r_1].[Value5] + @cnt)) THEN 0
 			ELSE NULL
 		END IS NULL
 			THEN 1
@@ -757,7 +757,7 @@ FROM
 	[BooleanTable] [r_1]
 		LEFT JOIN (
 			SELECT
-				COUNT(*) as [COUNT_1]
+				COUNT(*) as [Count_1]
 			FROM
 				[BooleanTable] [r]
 			WHERE
@@ -772,12 +772,12 @@ WHERE
 			WHEN ([r_1].[Value1] = [r_1].[Value2]) THEN 1
 			ELSE 0
 		END <> CASE
-			WHEN ([t1].[COUNT_1] = ([r_1].[Value5] + @cnt)) THEN 1
-			WHEN NOT ([t1].[COUNT_1] = ([r_1].[Value5] + @cnt)) THEN 0
+			WHEN ([t1].[Count_1] = ([r_1].[Value5] + @cnt)) THEN 1
+			WHEN NOT ([t1].[Count_1] = ([r_1].[Value5] + @cnt)) THEN 0
 			ELSE NULL
 		END OR CASE
-			WHEN ([t1].[COUNT_1] = ([r_1].[Value5] + @cnt)) THEN 1
-			WHEN NOT ([t1].[COUNT_1] = ([r_1].[Value5] + @cnt)) THEN 0
+			WHEN ([t1].[Count_1] = ([r_1].[Value5] + @cnt)) THEN 1
+			WHEN NOT ([t1].[Count_1] = ([r_1].[Value5] + @cnt)) THEN 0
 			ELSE NULL
 		END IS NULL
 			THEN 1
@@ -809,7 +809,7 @@ FROM
 	[BooleanTable] [r_1]
 		LEFT JOIN (
 			SELECT
-				COUNT(*) as [COUNT_1]
+				COUNT(*) as [Count_1]
 			FROM
 				[BooleanTable] [r]
 			WHERE
@@ -824,12 +824,12 @@ WHERE
 			WHEN ([r_1].[Value1] <> [r_1].[Value2]) THEN 1
 			ELSE 0
 		END <> CASE
-			WHEN ([t1].[COUNT_1] = ([r_1].[Value5] + @cnt)) THEN 1
-			WHEN NOT ([t1].[COUNT_1] = ([r_1].[Value5] + @cnt)) THEN 0
+			WHEN ([t1].[Count_1] = ([r_1].[Value5] + @cnt)) THEN 1
+			WHEN NOT ([t1].[Count_1] = ([r_1].[Value5] + @cnt)) THEN 0
 			ELSE NULL
 		END OR CASE
-			WHEN ([t1].[COUNT_1] = ([r_1].[Value5] + @cnt)) THEN 1
-			WHEN NOT ([t1].[COUNT_1] = ([r_1].[Value5] + @cnt)) THEN 0
+			WHEN ([t1].[Count_1] = ([r_1].[Value5] + @cnt)) THEN 1
+			WHEN NOT ([t1].[Count_1] = ([r_1].[Value5] + @cnt)) THEN 0
 			ELSE NULL
 		END IS NULL
 			THEN 1
@@ -861,14 +861,14 @@ FROM
 	[BooleanTable] [r_1]
 		LEFT JOIN (
 			SELECT
-				COUNT(*) as [COUNT_1]
+				COUNT(*) as [Count_1]
 			FROM
 				[BooleanTable] [r]
 			WHERE
 				[r].[Value1] = 1
 		) [t1] ON 1=1
 WHERE
-	([r_1].[Value4] + @cnt) >= ([t1].[COUNT_1] + [r_1].[Value5])
+	([r_1].[Value4] + @cnt) >= ([t1].[Count_1] + [r_1].[Value5])
 
 -- SqlCe
 
@@ -895,14 +895,14 @@ FROM
 	[BooleanTable] [r_1]
 		LEFT JOIN (
 			SELECT
-				COUNT(*) as [COUNT_1]
+				COUNT(*) as [Count_1]
 			FROM
 				[BooleanTable] [r]
 			WHERE
 				[r].[Value1] = 1
 		) [t1] ON 1=1
 WHERE
-	([r_1].[Value4] + @cnt) > ([t1].[COUNT_1] + [r_1].[Value5])
+	([r_1].[Value4] + @cnt) > ([t1].[Count_1] + [r_1].[Value5])
 
 -- SqlCe
 
@@ -929,14 +929,14 @@ FROM
 	[BooleanTable] [r_1]
 		LEFT JOIN (
 			SELECT
-				COUNT(*) as [COUNT_1]
+				COUNT(*) as [Count_1]
 			FROM
 				[BooleanTable] [r]
 			WHERE
 				[r].[Value1] = 1
 		) [t1] ON 1=1
 WHERE
-	([r_1].[Value4] + @cnt) <= ([t1].[COUNT_1] + [r_1].[Value5])
+	([r_1].[Value4] + @cnt) <= ([t1].[Count_1] + [r_1].[Value5])
 
 -- SqlCe
 
@@ -963,14 +963,14 @@ FROM
 	[BooleanTable] [r_1]
 		LEFT JOIN (
 			SELECT
-				COUNT(*) as [COUNT_1]
+				COUNT(*) as [Count_1]
 			FROM
 				[BooleanTable] [r]
 			WHERE
 				[r].[Value1] = 1
 		) [t1] ON 1=1
 WHERE
-	([r_1].[Value4] + @cnt) < ([t1].[COUNT_1] + [r_1].[Value5])
+	([r_1].[Value4] + @cnt) < ([t1].[Count_1] + [r_1].[Value5])
 
 -- SqlCe
 
@@ -997,14 +997,14 @@ FROM
 	[BooleanTable] [r_1]
 		LEFT JOIN (
 			SELECT
-				COUNT(*) as [COUNT_1]
+				COUNT(*) as [Count_1]
 			FROM
 				[BooleanTable] [r]
 			WHERE
 				[r].[Value1] = 1
 		) [t1] ON 1=1
 WHERE
-	([r_1].[Value2] + @cnt) >= ([t1].[COUNT_1] + [r_1].[Value5])
+	([r_1].[Value2] + @cnt) >= ([t1].[Count_1] + [r_1].[Value5])
 
 -- SqlCe
 
@@ -1031,14 +1031,14 @@ FROM
 	[BooleanTable] [r_1]
 		LEFT JOIN (
 			SELECT
-				COUNT(*) as [COUNT_1]
+				COUNT(*) as [Count_1]
 			FROM
 				[BooleanTable] [r]
 			WHERE
 				[r].[Value1] = 1
 		) [t1] ON 1=1
 WHERE
-	([r_1].[Value2] + @cnt) > ([t1].[COUNT_1] + [r_1].[Value5])
+	([r_1].[Value2] + @cnt) > ([t1].[Count_1] + [r_1].[Value5])
 
 -- SqlCe
 
@@ -1065,14 +1065,14 @@ FROM
 	[BooleanTable] [r_1]
 		LEFT JOIN (
 			SELECT
-				COUNT(*) as [COUNT_1]
+				COUNT(*) as [Count_1]
 			FROM
 				[BooleanTable] [r]
 			WHERE
 				[r].[Value1] = 1
 		) [t1] ON 1=1
 WHERE
-	([r_1].[Value2] + @cnt) <= ([t1].[COUNT_1] + [r_1].[Value5])
+	([r_1].[Value2] + @cnt) <= ([t1].[Count_1] + [r_1].[Value5])
 
 -- SqlCe
 
@@ -1099,14 +1099,14 @@ FROM
 	[BooleanTable] [r_1]
 		LEFT JOIN (
 			SELECT
-				COUNT(*) as [COUNT_1]
+				COUNT(*) as [Count_1]
 			FROM
 				[BooleanTable] [r]
 			WHERE
 				[r].[Value1] = 1
 		) [t1] ON 1=1
 WHERE
-	([r_1].[Value2] + @cnt) < ([t1].[COUNT_1] + [r_1].[Value5])
+	([r_1].[Value2] + @cnt) < ([t1].[Count_1] + [r_1].[Value5])
 
 -- SqlCe
 
@@ -1133,7 +1133,7 @@ FROM
 	[BooleanTable] [r_1]
 		LEFT JOIN (
 			SELECT
-				COUNT(*) as [COUNT_1]
+				COUNT(*) as [Count_1]
 			FROM
 				[BooleanTable] [r]
 			WHERE
@@ -1144,7 +1144,7 @@ WHERE
 		WHEN (1=1) THEN 1
 		ELSE 0
 	END = CASE
-		WHEN ([r_1].[Value4] + @cnt) >= ([t1].[COUNT_1] + [r_1].[Value5])
+		WHEN ([r_1].[Value4] + @cnt) >= ([t1].[Count_1] + [r_1].[Value5])
 			THEN 1
 		ELSE 0
 	END
@@ -1174,7 +1174,7 @@ FROM
 	[BooleanTable] [r_1]
 		LEFT JOIN (
 			SELECT
-				COUNT(*) as [COUNT_1]
+				COUNT(*) as [Count_1]
 			FROM
 				[BooleanTable] [r]
 			WHERE
@@ -1185,7 +1185,7 @@ WHERE
 		WHEN (1=1) THEN 1
 		ELSE 0
 	END = CASE
-		WHEN ([r_1].[Value4] + @cnt) > ([t1].[COUNT_1] + [r_1].[Value5])
+		WHEN ([r_1].[Value4] + @cnt) > ([t1].[Count_1] + [r_1].[Value5])
 			THEN 1
 		ELSE 0
 	END
@@ -1215,7 +1215,7 @@ FROM
 	[BooleanTable] [r_1]
 		LEFT JOIN (
 			SELECT
-				COUNT(*) as [COUNT_1]
+				COUNT(*) as [Count_1]
 			FROM
 				[BooleanTable] [r]
 			WHERE
@@ -1226,7 +1226,7 @@ WHERE
 		WHEN (1=1) THEN 1
 		ELSE 0
 	END = CASE
-		WHEN ([r_1].[Value4] + @cnt) <= ([t1].[COUNT_1] + [r_1].[Value5])
+		WHEN ([r_1].[Value4] + @cnt) <= ([t1].[Count_1] + [r_1].[Value5])
 			THEN 1
 		ELSE 0
 	END
@@ -1256,7 +1256,7 @@ FROM
 	[BooleanTable] [r_1]
 		LEFT JOIN (
 			SELECT
-				COUNT(*) as [COUNT_1]
+				COUNT(*) as [Count_1]
 			FROM
 				[BooleanTable] [r]
 			WHERE
@@ -1267,7 +1267,7 @@ WHERE
 		WHEN (1=1) THEN 1
 		ELSE 0
 	END = CASE
-		WHEN ([r_1].[Value4] + @cnt) < ([t1].[COUNT_1] + [r_1].[Value5])
+		WHEN ([r_1].[Value4] + @cnt) < ([t1].[Count_1] + [r_1].[Value5])
 			THEN 1
 		ELSE 0
 	END
@@ -1297,7 +1297,7 @@ FROM
 	[BooleanTable] [r_1]
 		LEFT JOIN (
 			SELECT
-				COUNT(*) as [COUNT_1]
+				COUNT(*) as [Count_1]
 			FROM
 				[BooleanTable] [r]
 			WHERE
@@ -1308,7 +1308,7 @@ WHERE
 		WHEN (1=1) THEN 1
 		ELSE 0
 	END = CASE
-		WHEN ([r_1].[Value2] + @cnt) >= ([t1].[COUNT_1] + [r_1].[Value5])
+		WHEN ([r_1].[Value2] + @cnt) >= ([t1].[Count_1] + [r_1].[Value5])
 			THEN 1
 		ELSE 0
 	END
@@ -1338,7 +1338,7 @@ FROM
 	[BooleanTable] [r_1]
 		LEFT JOIN (
 			SELECT
-				COUNT(*) as [COUNT_1]
+				COUNT(*) as [Count_1]
 			FROM
 				[BooleanTable] [r]
 			WHERE
@@ -1349,7 +1349,7 @@ WHERE
 		WHEN (1=1) THEN 1
 		ELSE 0
 	END = CASE
-		WHEN ([r_1].[Value2] + @cnt) > ([t1].[COUNT_1] + [r_1].[Value5])
+		WHEN ([r_1].[Value2] + @cnt) > ([t1].[Count_1] + [r_1].[Value5])
 			THEN 1
 		ELSE 0
 	END
@@ -1379,7 +1379,7 @@ FROM
 	[BooleanTable] [r_1]
 		LEFT JOIN (
 			SELECT
-				COUNT(*) as [COUNT_1]
+				COUNT(*) as [Count_1]
 			FROM
 				[BooleanTable] [r]
 			WHERE
@@ -1390,7 +1390,7 @@ WHERE
 		WHEN (1=1) THEN 1
 		ELSE 0
 	END = CASE
-		WHEN ([r_1].[Value2] + @cnt) <= ([t1].[COUNT_1] + [r_1].[Value5])
+		WHEN ([r_1].[Value2] + @cnt) <= ([t1].[Count_1] + [r_1].[Value5])
 			THEN 1
 		ELSE 0
 	END
@@ -1420,7 +1420,7 @@ FROM
 	[BooleanTable] [r_1]
 		LEFT JOIN (
 			SELECT
-				COUNT(*) as [COUNT_1]
+				COUNT(*) as [Count_1]
 			FROM
 				[BooleanTable] [r]
 			WHERE
@@ -1431,7 +1431,7 @@ WHERE
 		WHEN (1=1) THEN 1
 		ELSE 0
 	END = CASE
-		WHEN ([r_1].[Value2] + @cnt) < ([t1].[COUNT_1] + [r_1].[Value5])
+		WHEN ([r_1].[Value2] + @cnt) < ([t1].[Count_1] + [r_1].[Value5])
 			THEN 1
 		ELSE 0
 	END
