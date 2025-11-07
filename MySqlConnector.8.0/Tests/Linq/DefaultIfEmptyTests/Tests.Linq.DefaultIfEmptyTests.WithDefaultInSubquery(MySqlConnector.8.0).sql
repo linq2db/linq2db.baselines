@@ -1,7 +1,7 @@
 ﻿-- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 
 SELECT
-	`t2`.`SUM_1`
+	`t2`.`Sum_1`
 FROM
 	`Parent` `p`
 		LEFT JOIN LATERAL (
@@ -9,7 +9,7 @@ FROM
 				SUM(CASE
 					WHEN `d`.`ParentID` IS NOT NULL THEN `d`.`ParentID`
 					ELSE -100
-				END) as `SUM_1`
+				END) as `Sum_1`
 			FROM
 				(
 					SELECT
