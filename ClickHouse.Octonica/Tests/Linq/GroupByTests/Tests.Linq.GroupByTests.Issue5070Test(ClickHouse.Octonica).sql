@@ -3,7 +3,7 @@
 SELECT
 	t_1.FinalCustomerId,
 	t_1.IsActive,
-	sum(t_1.Amount)
+	sumOrNull(t_1.Amount)
 FROM
 	(
 		SELECT
