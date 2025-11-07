@@ -15,7 +15,7 @@ FROM
 GROUP BY
 	x.DuplicateData
 ORDER BY
-	max(x.OrderData1)
+	maxOrNull(x.OrderData1)
 LIMIT 0, 3
 
 -- ClickHouse.Driver ClickHouse
@@ -35,6 +35,6 @@ FROM
 GROUP BY
 	x.DuplicateData
 ORDER BY
-	min(x.OrderData1) DESC
+	minOrNull(x.OrderData1) DESC
 LIMIT 0, 3
 

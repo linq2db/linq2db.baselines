@@ -2,7 +2,7 @@
 
 SELECT
 	g_2.n,
-	sum(g_2.ParentID)
+	sumOrNull(g_2.ParentID)
 FROM
 	(
 		SELECT
