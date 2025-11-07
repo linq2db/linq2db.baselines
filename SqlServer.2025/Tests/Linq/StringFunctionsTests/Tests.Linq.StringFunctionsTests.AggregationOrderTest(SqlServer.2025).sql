@@ -1,6 +1,7 @@
 ﻿-- SqlServer.2025 SqlServer.2022
 
 SELECT
+	[g_1].[Id],
 	MAX([g_1].[Value1]),
 	STRING_AGG([g_1].[Value1], N' -> ') WITHIN GROUP (ORDER BY [g_1].[Value1])
 FROM
@@ -8,4 +9,6 @@ FROM
 GROUP BY
 	[g_1].[Id],
 	[g_1].[Value1]
+ORDER BY
+	[g_1].[Id]
 
