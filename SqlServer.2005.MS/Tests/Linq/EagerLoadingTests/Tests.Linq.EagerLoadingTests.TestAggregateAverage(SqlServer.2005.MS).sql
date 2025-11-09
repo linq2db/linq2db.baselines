@@ -1,12 +1,12 @@
 ﻿-- SqlServer.2005.MS SqlServer.2005
 
 SELECT
-	[t4].[AVG_1]
+	[t4].[Average]
 FROM
 	[MasterClass] [m_1]
 		OUTER APPLY (
 			SELECT
-				AVG(CAST([t3].[DetailId] AS Float)) as [AVG_1]
+				AVG(CAST([t3].[DetailId] AS Float)) as [Average]
 			FROM
 				(
 					SELECT

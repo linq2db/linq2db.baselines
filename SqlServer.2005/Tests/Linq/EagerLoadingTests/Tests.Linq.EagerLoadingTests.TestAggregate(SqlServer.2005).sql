@@ -1,13 +1,13 @@
 ﻿-- SqlServer.2005
 
 SELECT
-	[t4].[SUM_1],
-	[t8].[COUNT_1]
+	[t4].[Sum_1],
+	[t8].[Count_1]
 FROM
 	[MasterClass] [m_1]
 		OUTER APPLY (
 			SELECT
-				SUM([t3].[DetailId]) as [SUM_1]
+				SUM([t3].[DetailId]) as [Sum_1]
 			FROM
 				(
 					SELECT
@@ -33,7 +33,7 @@ FROM
 		) [t4]
 		OUTER APPLY (
 			SELECT
-				COUNT(*) as [COUNT_1]
+				COUNT(*) as [Count_1]
 			FROM
 				(
 					SELECT
