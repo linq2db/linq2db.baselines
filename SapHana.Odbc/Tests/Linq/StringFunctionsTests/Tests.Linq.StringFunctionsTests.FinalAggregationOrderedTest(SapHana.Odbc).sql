@@ -1,28 +1,28 @@
 ﻿-- SapHana.Odbc SapHanaOdbc
 
 SELECT
-	STRING_AGG("t"."Value1", ' -> ' ORDER BY "t"."Value1")
+	STRING_AGG("t1"."Value1", ' -> ' ORDER BY "t1"."Value1" NULLS FIRST)
 FROM
-	"SampleClass" "t"
+	"SampleClass" "t1"
 
 -- SapHana.Odbc SapHanaOdbc
 
 SELECT
-	STRING_AGG("t"."Value1", ' -> ' ORDER BY "t"."Value1")
+	STRING_AGG("t1"."Value1", ' -> ' ORDER BY "t1"."Value1" NULLS FIRST)
 FROM
-	"SampleClass" "t"
+	"SampleClass" "t1"
 
 -- SapHana.Odbc SapHanaOdbc
 
 SELECT
-	STRING_AGG("t"."Value1", ' -> ' ORDER BY "t"."Value1" DESC)
+	STRING_AGG("t1"."Value1", ' -> ' ORDER BY "t1"."Value1" DESC NULLS FIRST)
 FROM
-	"SampleClass" "t"
+	"SampleClass" "t1"
 
 -- SapHana.Odbc SapHanaOdbc
 
 SELECT
-	STRING_AGG("t"."Value1", ' -> ' ORDER BY "t"."Value1" DESC)
+	STRING_AGG("t1"."Value1", ' -> ' ORDER BY "t1"."Value1" DESC NULLS FIRST)
 FROM
-	"SampleClass" "t"
+	"SampleClass" "t1"
 
