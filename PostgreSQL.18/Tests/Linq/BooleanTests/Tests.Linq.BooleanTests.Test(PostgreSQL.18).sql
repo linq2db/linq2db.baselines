@@ -672,186 +672,51 @@ FROM
 
 SELECT
 	g_1."Id",
-	COUNT(CASE
-		WHEN g_1."Boolean" THEN 1
-		ELSE NULL
-	END),
-	COUNT(CASE
-		WHEN g_1."Boolean" = True THEN 1
-		ELSE NULL
-	END),
-	COUNT(CASE
-		WHEN g_1."BooleanN" = True THEN 1
-		ELSE NULL
-	END),
-	COUNT(CASE
-		WHEN g_1."Boolean" = False THEN 1
-		ELSE NULL
-	END),
-	COUNT(CASE
-		WHEN g_1."BooleanN" = False THEN 1
-		ELSE NULL
-	END),
-	COUNT(CASE
-		WHEN g_1."Boolean" = False THEN 1
-		ELSE NULL
-	END),
-	COUNT(CASE
-		WHEN g_1."BooleanN" = False OR g_1."BooleanN" IS NULL THEN 1
-		ELSE NULL
-	END),
-	COUNT(CASE
-		WHEN g_1."Boolean" = True THEN 1
-		ELSE NULL
-	END),
-	COUNT(CASE
-		WHEN g_1."BooleanN" = True OR g_1."BooleanN" IS NULL THEN 1
-		ELSE NULL
-	END),
-	COUNT(CASE
-		WHEN g_1."Int32" = 0 THEN 1
-		ELSE NULL
-	END),
-	COUNT(CASE
-		WHEN g_1."Int32N" = 0 THEN 1
-		ELSE NULL
-	END),
-	COUNT(CASE
-		WHEN g_1."Decimal" = 0 THEN 1
-		ELSE NULL
-	END),
-	COUNT(CASE
-		WHEN g_1."DecimalN" = 0 THEN 1
-		ELSE NULL
-	END),
-	COUNT(CASE
-		WHEN g_1."Double" = 0 THEN 1
-		ELSE NULL
-	END),
-	COUNT(CASE
-		WHEN g_1."DoubleN" = 0 THEN 1
-		ELSE NULL
-	END),
-	COUNT(CASE
-		WHEN g_1."Int32" <> 0 THEN 1
-		ELSE NULL
-	END),
-	COUNT(CASE
-		WHEN g_1."Int32N" <> 0 OR g_1."Int32N" IS NULL THEN 1
-		ELSE NULL
-	END),
-	COUNT(CASE
-		WHEN g_1."Decimal" <> 0 THEN 1
-		ELSE NULL
-	END),
-	COUNT(CASE
-		WHEN g_1."DecimalN" <> 0 OR g_1."DecimalN" IS NULL THEN 1
-		ELSE NULL
-	END),
-	COUNT(CASE
-		WHEN g_1."Double" <> 0 THEN 1
-		ELSE NULL
-	END),
-	COUNT(CASE
-		WHEN g_1."DoubleN" <> 0 OR g_1."DoubleN" IS NULL THEN 1
-		ELSE NULL
-	END),
-	COUNT(CASE
-		WHEN g_1."Int32" > 0 THEN 1
-		ELSE NULL
-	END),
-	COUNT(CASE
-		WHEN g_1."Int32N" > 0 THEN 1
-		ELSE NULL
-	END),
-	COUNT(CASE
-		WHEN g_1."Decimal" > 0 THEN 1
-		ELSE NULL
-	END),
-	COUNT(CASE
-		WHEN g_1."DecimalN" > 0 THEN 1
-		ELSE NULL
-	END),
-	COUNT(CASE
-		WHEN g_1."Double" > 0 THEN 1
-		ELSE NULL
-	END),
-	COUNT(CASE
-		WHEN g_1."DoubleN" > 0 THEN 1
-		ELSE NULL
-	END),
-	COUNT(CASE
-		WHEN g_1."Int32" < 0 THEN 1
-		ELSE NULL
-	END),
-	COUNT(CASE
-		WHEN g_1."Int32N" < 0 THEN 1
-		ELSE NULL
-	END),
-	COUNT(CASE
-		WHEN g_1."Decimal" < 0 THEN 1
-		ELSE NULL
-	END),
-	COUNT(CASE
-		WHEN g_1."DecimalN" < 0 THEN 1
-		ELSE NULL
-	END),
-	COUNT(CASE
-		WHEN g_1."Double" < 0 THEN 1
-		ELSE NULL
-	END),
-	COUNT(CASE
-		WHEN g_1."DoubleN" < 0 THEN 1
-		ELSE NULL
-	END),
-	COUNT(CASE
-		WHEN g_1."Int32" >= 0 THEN 1
-		ELSE NULL
-	END),
-	COUNT(CASE
-		WHEN g_1."Int32N" >= 0 THEN 1
-		ELSE NULL
-	END),
-	COUNT(CASE
-		WHEN g_1."Decimal" >= 0 THEN 1
-		ELSE NULL
-	END),
-	COUNT(CASE
-		WHEN g_1."DecimalN" >= 0 THEN 1
-		ELSE NULL
-	END),
-	COUNT(CASE
-		WHEN g_1."Double" >= 0 THEN 1
-		ELSE NULL
-	END),
-	COUNT(CASE
-		WHEN g_1."DoubleN" >= 0 THEN 1
-		ELSE NULL
-	END),
-	COUNT(CASE
-		WHEN g_1."Int32" <= 0 THEN 1
-		ELSE NULL
-	END),
-	COUNT(CASE
-		WHEN g_1."Int32N" <= 0 THEN 1
-		ELSE NULL
-	END),
-	COUNT(CASE
-		WHEN g_1."Decimal" <= 0 THEN 1
-		ELSE NULL
-	END),
-	COUNT(CASE
-		WHEN g_1."DecimalN" <= 0 THEN 1
-		ELSE NULL
-	END),
-	COUNT(CASE
-		WHEN g_1."Double" <= 0 THEN 1
-		ELSE NULL
-	END),
-	COUNT(CASE
-		WHEN g_1."DoubleN" <= 0 THEN 1
-		ELSE NULL
-	END)
+	COUNT(*) FILTER (WHERE g_1."Boolean"),
+	COUNT(*) FILTER (WHERE g_1."Boolean" = True),
+	COUNT(*) FILTER (WHERE g_1."BooleanN" = True),
+	COUNT(*) FILTER (WHERE g_1."Boolean" = False),
+	COUNT(*) FILTER (WHERE g_1."BooleanN" = False),
+	COUNT(*) FILTER (WHERE g_1."Boolean" = False),
+	COUNT(*) FILTER (WHERE g_1."BooleanN" = False OR g_1."BooleanN" IS NULL),
+	COUNT(*) FILTER (WHERE g_1."Boolean" = True),
+	COUNT(*) FILTER (WHERE g_1."BooleanN" = True OR g_1."BooleanN" IS NULL),
+	COUNT(*) FILTER (WHERE g_1."Int32" = 0),
+	COUNT(*) FILTER (WHERE g_1."Int32N" = 0),
+	COUNT(*) FILTER (WHERE g_1."Decimal" = 0),
+	COUNT(*) FILTER (WHERE g_1."DecimalN" = 0),
+	COUNT(*) FILTER (WHERE g_1."Double" = 0),
+	COUNT(*) FILTER (WHERE g_1."DoubleN" = 0),
+	COUNT(*) FILTER (WHERE g_1."Int32" <> 0),
+	COUNT(*) FILTER (WHERE g_1."Int32N" <> 0 OR g_1."Int32N" IS NULL),
+	COUNT(*) FILTER (WHERE g_1."Decimal" <> 0),
+	COUNT(*) FILTER (WHERE g_1."DecimalN" <> 0 OR g_1."DecimalN" IS NULL),
+	COUNT(*) FILTER (WHERE g_1."Double" <> 0),
+	COUNT(*) FILTER (WHERE g_1."DoubleN" <> 0 OR g_1."DoubleN" IS NULL),
+	COUNT(*) FILTER (WHERE g_1."Int32" > 0),
+	COUNT(*) FILTER (WHERE g_1."Int32N" > 0),
+	COUNT(*) FILTER (WHERE g_1."Decimal" > 0),
+	COUNT(*) FILTER (WHERE g_1."DecimalN" > 0),
+	COUNT(*) FILTER (WHERE g_1."Double" > 0),
+	COUNT(*) FILTER (WHERE g_1."DoubleN" > 0),
+	COUNT(*) FILTER (WHERE g_1."Int32" < 0),
+	COUNT(*) FILTER (WHERE g_1."Int32N" < 0),
+	COUNT(*) FILTER (WHERE g_1."Decimal" < 0),
+	COUNT(*) FILTER (WHERE g_1."DecimalN" < 0),
+	COUNT(*) FILTER (WHERE g_1."Double" < 0),
+	COUNT(*) FILTER (WHERE g_1."DoubleN" < 0),
+	COUNT(*) FILTER (WHERE g_1."Int32" >= 0),
+	COUNT(*) FILTER (WHERE g_1."Int32N" >= 0),
+	COUNT(*) FILTER (WHERE g_1."Decimal" >= 0),
+	COUNT(*) FILTER (WHERE g_1."DecimalN" >= 0),
+	COUNT(*) FILTER (WHERE g_1."Double" >= 0),
+	COUNT(*) FILTER (WHERE g_1."DoubleN" >= 0),
+	COUNT(*) FILTER (WHERE g_1."Int32" <= 0),
+	COUNT(*) FILTER (WHERE g_1."Int32N" <= 0),
+	COUNT(*) FILTER (WHERE g_1."Decimal" <= 0),
+	COUNT(*) FILTER (WHERE g_1."DecimalN" <= 0),
+	COUNT(*) FILTER (WHERE g_1."Double" <= 0),
+	COUNT(*) FILTER (WHERE g_1."DoubleN" <= 0)
 FROM
 	"BooleanTable" g_1
 GROUP BY
@@ -2201,186 +2066,51 @@ FROM
 
 SELECT
 	g_1."Id",
-	COUNT(CASE
-		WHEN g_1."Boolean" THEN 1
-		ELSE NULL
-	END),
-	COUNT(CASE
-		WHEN g_1."Boolean" = True THEN 1
-		ELSE NULL
-	END),
-	COUNT(CASE
-		WHEN g_1."BooleanN" = True THEN 1
-		ELSE NULL
-	END),
-	COUNT(CASE
-		WHEN g_1."Boolean" = False THEN 1
-		ELSE NULL
-	END),
-	COUNT(CASE
-		WHEN g_1."BooleanN" = False THEN 1
-		ELSE NULL
-	END),
-	COUNT(CASE
-		WHEN g_1."Boolean" = False THEN 1
-		ELSE NULL
-	END),
-	COUNT(CASE
-		WHEN g_1."BooleanN" = False OR g_1."BooleanN" IS NULL THEN 1
-		ELSE NULL
-	END),
-	COUNT(CASE
-		WHEN g_1."Boolean" = True THEN 1
-		ELSE NULL
-	END),
-	COUNT(CASE
-		WHEN g_1."BooleanN" = True OR g_1."BooleanN" IS NULL THEN 1
-		ELSE NULL
-	END),
-	COUNT(CASE
-		WHEN g_1."Int32" = 0 THEN 1
-		ELSE NULL
-	END),
-	COUNT(CASE
-		WHEN g_1."Int32N" = 0 THEN 1
-		ELSE NULL
-	END),
-	COUNT(CASE
-		WHEN g_1."Decimal" = 0 THEN 1
-		ELSE NULL
-	END),
-	COUNT(CASE
-		WHEN g_1."DecimalN" = 0 THEN 1
-		ELSE NULL
-	END),
-	COUNT(CASE
-		WHEN g_1."Double" = 0 THEN 1
-		ELSE NULL
-	END),
-	COUNT(CASE
-		WHEN g_1."DoubleN" = 0 THEN 1
-		ELSE NULL
-	END),
-	COUNT(CASE
-		WHEN g_1."Int32" <> 0 THEN 1
-		ELSE NULL
-	END),
-	COUNT(CASE
-		WHEN g_1."Int32N" <> 0 OR g_1."Int32N" IS NULL THEN 1
-		ELSE NULL
-	END),
-	COUNT(CASE
-		WHEN g_1."Decimal" <> 0 THEN 1
-		ELSE NULL
-	END),
-	COUNT(CASE
-		WHEN g_1."DecimalN" <> 0 OR g_1."DecimalN" IS NULL THEN 1
-		ELSE NULL
-	END),
-	COUNT(CASE
-		WHEN g_1."Double" <> 0 THEN 1
-		ELSE NULL
-	END),
-	COUNT(CASE
-		WHEN g_1."DoubleN" <> 0 OR g_1."DoubleN" IS NULL THEN 1
-		ELSE NULL
-	END),
-	COUNT(CASE
-		WHEN g_1."Int32" > 0 THEN 1
-		ELSE NULL
-	END),
-	COUNT(CASE
-		WHEN g_1."Int32N" > 0 THEN 1
-		ELSE NULL
-	END),
-	COUNT(CASE
-		WHEN g_1."Decimal" > 0 THEN 1
-		ELSE NULL
-	END),
-	COUNT(CASE
-		WHEN g_1."DecimalN" > 0 THEN 1
-		ELSE NULL
-	END),
-	COUNT(CASE
-		WHEN g_1."Double" > 0 THEN 1
-		ELSE NULL
-	END),
-	COUNT(CASE
-		WHEN g_1."DoubleN" > 0 THEN 1
-		ELSE NULL
-	END),
-	COUNT(CASE
-		WHEN g_1."Int32" < 0 THEN 1
-		ELSE NULL
-	END),
-	COUNT(CASE
-		WHEN g_1."Int32N" < 0 THEN 1
-		ELSE NULL
-	END),
-	COUNT(CASE
-		WHEN g_1."Decimal" < 0 THEN 1
-		ELSE NULL
-	END),
-	COUNT(CASE
-		WHEN g_1."DecimalN" < 0 THEN 1
-		ELSE NULL
-	END),
-	COUNT(CASE
-		WHEN g_1."Double" < 0 THEN 1
-		ELSE NULL
-	END),
-	COUNT(CASE
-		WHEN g_1."DoubleN" < 0 THEN 1
-		ELSE NULL
-	END),
-	COUNT(CASE
-		WHEN g_1."Int32" >= 0 THEN 1
-		ELSE NULL
-	END),
-	COUNT(CASE
-		WHEN g_1."Int32N" >= 0 THEN 1
-		ELSE NULL
-	END),
-	COUNT(CASE
-		WHEN g_1."Decimal" >= 0 THEN 1
-		ELSE NULL
-	END),
-	COUNT(CASE
-		WHEN g_1."DecimalN" >= 0 THEN 1
-		ELSE NULL
-	END),
-	COUNT(CASE
-		WHEN g_1."Double" >= 0 THEN 1
-		ELSE NULL
-	END),
-	COUNT(CASE
-		WHEN g_1."DoubleN" >= 0 THEN 1
-		ELSE NULL
-	END),
-	COUNT(CASE
-		WHEN g_1."Int32" <= 0 THEN 1
-		ELSE NULL
-	END),
-	COUNT(CASE
-		WHEN g_1."Int32N" <= 0 THEN 1
-		ELSE NULL
-	END),
-	COUNT(CASE
-		WHEN g_1."Decimal" <= 0 THEN 1
-		ELSE NULL
-	END),
-	COUNT(CASE
-		WHEN g_1."DecimalN" <= 0 THEN 1
-		ELSE NULL
-	END),
-	COUNT(CASE
-		WHEN g_1."Double" <= 0 THEN 1
-		ELSE NULL
-	END),
-	COUNT(CASE
-		WHEN g_1."DoubleN" <= 0 THEN 1
-		ELSE NULL
-	END)
+	COUNT(*) FILTER (WHERE g_1."Boolean"),
+	COUNT(*) FILTER (WHERE g_1."Boolean" = True),
+	COUNT(*) FILTER (WHERE g_1."BooleanN" = True),
+	COUNT(*) FILTER (WHERE g_1."Boolean" = False),
+	COUNT(*) FILTER (WHERE g_1."BooleanN" = False),
+	COUNT(*) FILTER (WHERE g_1."Boolean" = False),
+	COUNT(*) FILTER (WHERE g_1."BooleanN" = False OR g_1."BooleanN" IS NULL),
+	COUNT(*) FILTER (WHERE g_1."Boolean" = True),
+	COUNT(*) FILTER (WHERE g_1."BooleanN" = True OR g_1."BooleanN" IS NULL),
+	COUNT(*) FILTER (WHERE g_1."Int32" = 0),
+	COUNT(*) FILTER (WHERE g_1."Int32N" = 0),
+	COUNT(*) FILTER (WHERE g_1."Decimal" = 0),
+	COUNT(*) FILTER (WHERE g_1."DecimalN" = 0),
+	COUNT(*) FILTER (WHERE g_1."Double" = 0),
+	COUNT(*) FILTER (WHERE g_1."DoubleN" = 0),
+	COUNT(*) FILTER (WHERE g_1."Int32" <> 0),
+	COUNT(*) FILTER (WHERE g_1."Int32N" <> 0 OR g_1."Int32N" IS NULL),
+	COUNT(*) FILTER (WHERE g_1."Decimal" <> 0),
+	COUNT(*) FILTER (WHERE g_1."DecimalN" <> 0 OR g_1."DecimalN" IS NULL),
+	COUNT(*) FILTER (WHERE g_1."Double" <> 0),
+	COUNT(*) FILTER (WHERE g_1."DoubleN" <> 0 OR g_1."DoubleN" IS NULL),
+	COUNT(*) FILTER (WHERE g_1."Int32" > 0),
+	COUNT(*) FILTER (WHERE g_1."Int32N" > 0),
+	COUNT(*) FILTER (WHERE g_1."Decimal" > 0),
+	COUNT(*) FILTER (WHERE g_1."DecimalN" > 0),
+	COUNT(*) FILTER (WHERE g_1."Double" > 0),
+	COUNT(*) FILTER (WHERE g_1."DoubleN" > 0),
+	COUNT(*) FILTER (WHERE g_1."Int32" < 0),
+	COUNT(*) FILTER (WHERE g_1."Int32N" < 0),
+	COUNT(*) FILTER (WHERE g_1."Decimal" < 0),
+	COUNT(*) FILTER (WHERE g_1."DecimalN" < 0),
+	COUNT(*) FILTER (WHERE g_1."Double" < 0),
+	COUNT(*) FILTER (WHERE g_1."DoubleN" < 0),
+	COUNT(*) FILTER (WHERE g_1."Int32" >= 0),
+	COUNT(*) FILTER (WHERE g_1."Int32N" >= 0),
+	COUNT(*) FILTER (WHERE g_1."Decimal" >= 0),
+	COUNT(*) FILTER (WHERE g_1."DecimalN" >= 0),
+	COUNT(*) FILTER (WHERE g_1."Double" >= 0),
+	COUNT(*) FILTER (WHERE g_1."DoubleN" >= 0),
+	COUNT(*) FILTER (WHERE g_1."Int32" <= 0),
+	COUNT(*) FILTER (WHERE g_1."Int32N" <= 0),
+	COUNT(*) FILTER (WHERE g_1."Decimal" <= 0),
+	COUNT(*) FILTER (WHERE g_1."DecimalN" <= 0),
+	COUNT(*) FILTER (WHERE g_1."Double" <= 0),
+	COUNT(*) FILTER (WHERE g_1."DoubleN" <= 0)
 FROM
 	"BooleanTable" g_1
 GROUP BY
