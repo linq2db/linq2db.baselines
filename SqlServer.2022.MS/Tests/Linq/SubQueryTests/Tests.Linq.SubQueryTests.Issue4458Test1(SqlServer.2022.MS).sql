@@ -22,6 +22,9 @@ FROM
 			)
 	) [m_1]
 		INNER JOIN [Review] [d] ON [d].[ItemId] = [m_1].[Id]
+ORDER BY
+	[d].[ItemId],
+	[d].[UserId]
 
 -- SqlServer.2022.MS SqlServer.2022
 
@@ -55,4 +58,29 @@ WHERE
 		WHERE
 			[r].[ItemId] = [i].[Id] AND [r].[Score] > 95
 	)
+
+-- SqlServer.2022.MS SqlServer.2022
+
+SELECT
+	[t1].[Id]
+FROM
+	[Issue4458Item] [t1]
+
+-- SqlServer.2022.MS SqlServer.2022
+
+SELECT
+	[t1].[ItemId],
+	[t1].[QuantityAvailable],
+	[t1].[WarehouseId]
+FROM
+	[WarehouseStock] [t1]
+
+-- SqlServer.2022.MS SqlServer.2022
+
+SELECT
+	[t1].[ItemId],
+	[t1].[UserId],
+	[t1].[Score]
+FROM
+	[Review] [t1]
 
