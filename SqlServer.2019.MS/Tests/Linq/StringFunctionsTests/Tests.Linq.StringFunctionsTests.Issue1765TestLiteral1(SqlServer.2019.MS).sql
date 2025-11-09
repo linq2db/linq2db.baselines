@@ -1,7 +1,7 @@
 ﻿-- SqlServer.2019.MS SqlServer.2019
 
 SELECT
-	STRING_AGG([t].[Value4], N' -> ')
+	STRING_AGG([t1].[Value4], N' -> ')
 FROM
-	[SampleClass] [t]
+	[SampleClass] [t1]
 
