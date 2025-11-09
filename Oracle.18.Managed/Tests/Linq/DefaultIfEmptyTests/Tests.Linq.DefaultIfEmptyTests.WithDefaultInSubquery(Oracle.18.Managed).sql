@@ -1,7 +1,7 @@
 ﻿-- Oracle.18.Managed Oracle.Managed Oracle12
 
 SELECT
-	t2.SUM_1
+	t2."Sum_1"
 FROM
 	"Parent" p
 		OUTER APPLY (
@@ -9,7 +9,7 @@ FROM
 				SUM(CASE
 					WHEN d."ParentID" IS NOT NULL THEN d."ParentID"
 					ELSE -100
-				END) as SUM_1
+				END) as "Sum_1"
 			FROM
 				(
 					SELECT
