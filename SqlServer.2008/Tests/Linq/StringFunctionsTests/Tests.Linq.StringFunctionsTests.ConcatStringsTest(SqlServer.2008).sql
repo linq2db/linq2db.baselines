@@ -1,7 +1,7 @@
 ﻿-- SqlServer.2008
 
 SELECT
-	ISNULL([t].[Value2], '')
+	Coalesce([t].[Value2], N'')
 FROM
 	[SampleClass] [t]
 ORDER BY
@@ -10,7 +10,7 @@ ORDER BY
 -- SqlServer.2008
 
 SELECT
-	ISNULL([t].[Value3], '')
+	Coalesce([t].[Value3], '')
 FROM
 	[SampleClass] [t]
 ORDER BY
@@ -19,7 +19,7 @@ ORDER BY
 -- SqlServer.2008
 
 SELECT
-	SUBSTRING(((ISNULL((N' -> ' + [t].[Value3]), '') + ISNULL((N' -> ' + [t].[Value1]), '')) + ISNULL((N' -> ' + [t].[Value2]), '')), LEN(CONVERT(NVARCHAR(MAX), N' -> ') + N'!'), 8000)
+	SUBSTRING(Coalesce(N' -> ' + [t].[Value3], '') + Coalesce(N' -> ' + [t].[Value1], '') + Coalesce(N' -> ' + [t].[Value2], ''), 5, 2147483647)
 FROM
 	[SampleClass] [t]
 ORDER BY
@@ -28,7 +28,7 @@ ORDER BY
 -- SqlServer.2008
 
 SELECT
-	SUBSTRING((ISNULL((N' -> ' + [t].[Value3]), '') + ISNULL((N' -> ' + [t].[Value3]), '')), LEN(CONVERT(NVARCHAR(MAX), N' -> ') + N'!'), 8000)
+	SUBSTRING(Coalesce(N' -> ' + [t].[Value3], '') + Coalesce(N' -> ' + [t].[Value3], ''), 5, 2147483647)
 FROM
 	[SampleClass] [t]
 ORDER BY
