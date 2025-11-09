@@ -10,7 +10,7 @@ FROM
 	[WithMultipleDates] [p]
 		OUTER APPLY (
 			SELECT
-				MAX([t1].[item]) as [MAX_1]
+				MAX([t1].[item]) as [Max_1]
 			FROM
 				(
 					SELECT [p].[Date1] AS [item]
@@ -22,7 +22,7 @@ FROM
 					SELECT [p].[Date4] AS [item]) [t1]
 		) [t2]
 WHERE
-	[t2].[MAX_1] > CAST('2023-01-01' AS DateTime)
+	[t2].[Max_1] > CAST('2023-01-01' AS DateTime)
 
 -- SqlCe
 
@@ -36,7 +36,7 @@ FROM
 	[WithMultipleDates] [p]
 		OUTER APPLY (
 			SELECT
-				MAX([t1].[item]) as [MAX_1]
+				MAX([t1].[item]) as [Max_1]
 			FROM
 				(
 					SELECT [p].[Date1] AS [item]
@@ -48,6 +48,6 @@ FROM
 					SELECT [p].[Date4] AS [item]) [t1]
 		) [t2]
 WHERE
-	[t2].[MAX_1] <= [p].[Date1] OR [t2].[MAX_1] IS NULL OR
+	[t2].[Max_1] <= [p].[Date1] OR [t2].[Max_1] IS NULL OR
 	[p].[Date1] IS NULL
 

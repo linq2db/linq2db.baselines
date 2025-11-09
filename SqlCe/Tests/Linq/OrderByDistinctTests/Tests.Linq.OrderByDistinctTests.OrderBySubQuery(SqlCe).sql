@@ -4,7 +4,7 @@ SET     @take = 2
 
 SELECT
 	[t_1].[DuplicateData],
-	[t1].[COUNT_1]
+	[t1].[Count_1]
 FROM
 	(
 		SELECT TOP (@take)
@@ -15,7 +15,7 @@ FROM
 	) [t_1]
 		OUTER APPLY (
 			SELECT
-				COUNT(*) as [COUNT_1]
+				COUNT(*) as [Count_1]
 			FROM
 				[OrderByDistinctData] [c_1]
 			WHERE
