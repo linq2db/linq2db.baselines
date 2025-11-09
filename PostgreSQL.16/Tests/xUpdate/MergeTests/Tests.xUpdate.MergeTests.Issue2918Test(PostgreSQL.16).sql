@@ -8,12 +8,10 @@ USING (
 		pa."PatentId",
 		(
 			SELECT
-				STRING_AGG("a_User"."DisplayName", '; ' ORDER BY "a_User"."DisplayName")
+				STRING_AGG("a_User"."DisplayName", '; ' ORDER BY "a_User"."DisplayName" NULLS FIRST) FILTER (WHERE t1."PatentId" = pa."PatentId")
 			FROM
-				"Issue2918Table2" patr
-					LEFT JOIN "User" "a_User" ON patr."UserId" = "a_User"."Id"
-			WHERE
-				patr."PatentId" = pa."PatentId"
+				"Issue2918Table2" t1
+					LEFT JOIN "User" "a_User" ON t1."UserId" = "a_User"."Id"
 		) as "TechnicalReviewersText"
 	FROM
 		"PatentAssessment" pa
@@ -22,9 +20,9 @@ USING (
 			SELECT
 				*
 			FROM
-				"Issue2918Table2" patr_1
+				"Issue2918Table2" patr
 			WHERE
-				patr_1."UserId" = :userId AND patr_1."PatentId" = pa."PatentId"
+				patr."UserId" = :userId AND patr."PatentId" = pa."PatentId"
 		)
 ) "Source"
 (
