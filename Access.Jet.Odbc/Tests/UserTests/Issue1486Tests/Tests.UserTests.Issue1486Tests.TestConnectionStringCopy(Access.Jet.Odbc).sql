@@ -6,16 +6,11 @@ SELECT
 	[d].[ChildID]
 FROM
 	(
-		SELECT DISTINCT
-			[t2].[ParentID]
+		SELECT TOP 1
+			[a_Parent].[ParentID]
 		FROM
-			(
-				SELECT TOP 1
-					[a_Parent].[ParentID]
-				FROM
-					[Child] [t1]
-						LEFT JOIN [Parent] [a_Parent] ON ([t1].[ParentID] = [a_Parent].[ParentID])
-			) [t2]
+			[Child] [t1]
+				LEFT JOIN [Parent] [a_Parent] ON ([t1].[ParentID] = [a_Parent].[ParentID])
 	) [m_1]
 		INNER JOIN [Child] [d] ON ([m_1].[ParentID] = [d].[ParentID])
 
