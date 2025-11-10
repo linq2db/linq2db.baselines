@@ -16,9 +16,12 @@ VALUES
 CREATE TABLE IF NOT EXISTS TempTable
 (
 	Id      Int32,
-	Renamed Nullable(String)
+	Renamed Nullable(String),
+
+	PRIMARY KEY (Id)
 )
-ENGINE = Memory()
+ENGINE = MergeTree()
+ORDER BY Id
 
 -- ClickHouse.Driver ClickHouse
 

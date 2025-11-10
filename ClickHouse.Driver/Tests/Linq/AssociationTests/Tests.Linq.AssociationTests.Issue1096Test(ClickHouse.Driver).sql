@@ -2,24 +2,13 @@
 
 INSERT INTO Issue1096Task
 (
+	Pk,
 	Id,
 	TargetName
 )
 VALUES
 (
 	1,
-	'bda.Requests'
-)
-
--- ClickHouse.Driver ClickHouse
-
-INSERT INTO Issue1096Task
-(
-	Id,
-	TargetName
-)
-VALUES
-(
 	1,
 	'bda.Requests'
 )
@@ -42,6 +31,7 @@ VALUES
 -- ClickHouse.Driver ClickHouse
 
 SELECT DISTINCT
+	t.Pk,
 	t.Id,
 	t.TargetName,
 	a_ActualStage.Id,

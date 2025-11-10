@@ -1,6 +1,7 @@
 ﻿-- ClickHouse.Driver ClickHouse
 
 SELECT
+	t1_1.Id,
 	t1_1.Field6
 FROM
 	Table2 t1_1
@@ -11,11 +12,10 @@ FROM
 		INNER JOIN (
 			SELECT
 				t2.Field3 as Field3,
-				a_Ref5_1.Field4 as Field4,
-				a_Ref5_1.Field8 as Field8
+				a_Ref5_1.Id as Id
 			FROM
 				Table3 t2
 					LEFT JOIN Table7 a_Ref5_1 ON t2.Field4 = a_Ref5_1.Field4
 					INNER JOIN Table2 t4 ON t2.Field6 = t4.Field6
-		) t1 ON a_Ref1.Field3 = t1.Field3 AND a_Ref5.Field4 = t1.Field4 AND a_Ref5.Field8 = t1.Field8
+		) t1 ON a_Ref1.Id IS NOT NULL AND a_Ref1.Field3 = t1.Field3 AND a_Ref5.Id = t1.Id
 

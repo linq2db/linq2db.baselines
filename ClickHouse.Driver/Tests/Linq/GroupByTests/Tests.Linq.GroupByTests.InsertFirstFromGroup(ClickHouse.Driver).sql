@@ -1,10 +1,27 @@
 ﻿-- ClickHouse.Driver ClickHouse
 
-CREATE TEMPORARY TABLE temp_table_2
+CREATE TABLE temp_table_1
 (
-	Value Nullable(String)
+	ID    Int32,
+	Value Nullable(String),
+
+	PRIMARY KEY (ID)
 )
-ENGINE = Memory()
+ENGINE = MergeTree()
+ORDER BY ID
+
+INSERT ASYNC BULK temp_table_1(ID, Value)
+
+-- ClickHouse.Driver ClickHouse
+
+CREATE TABLE temp_table_2
+(
+	Value String,
+
+	PRIMARY KEY (Value)
+)
+ENGINE = MergeTree()
+ORDER BY Value
 
 -- ClickHouse.Driver ClickHouse
 
@@ -35,4 +52,8 @@ FROM
 -- ClickHouse.Driver ClickHouse
 
 DROP TABLE IF EXISTS temp_table_2
+
+-- ClickHouse.Driver ClickHouse
+
+DROP TABLE IF EXISTS temp_table_1
 
