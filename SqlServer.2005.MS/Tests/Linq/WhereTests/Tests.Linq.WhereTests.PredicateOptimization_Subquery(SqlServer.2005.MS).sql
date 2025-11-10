@@ -1,6 +1,7 @@
 ﻿-- SqlServer.2005.MS SqlServer.2005
 
 SELECT
+	[p].[PK],
 	[p].[Id],
 	[p].[Date1],
 	[p].[Date2],
@@ -26,6 +27,7 @@ WHERE
 -- SqlServer.2005.MS SqlServer.2005
 
 SELECT
+	[p].[PK],
 	[p].[Id],
 	[p].[Date1],
 	[p].[Date2],
