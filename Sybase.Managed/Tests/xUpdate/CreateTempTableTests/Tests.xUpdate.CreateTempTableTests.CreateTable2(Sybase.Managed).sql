@@ -9,7 +9,9 @@ IF (OBJECT_ID(N'TempTable') IS NULL)
 	EXECUTE('
 		CREATE TABLE [TempTable]
 		(
-			[ID] Int NOT NULL
+			[ID] Int NOT NULL,
+
+			CONSTRAINT [PK_TempTable] PRIMARY KEY CLUSTERED ([ID])
 		)
 	')
 

@@ -24,7 +24,6 @@ FROM
 UPDATE
 	[TestBool]
 SET
-	[Id] = 1,
 	[Value] = CASE
 		WHEN [TestBool].[Value] = 0 THEN 1
 		ELSE 0

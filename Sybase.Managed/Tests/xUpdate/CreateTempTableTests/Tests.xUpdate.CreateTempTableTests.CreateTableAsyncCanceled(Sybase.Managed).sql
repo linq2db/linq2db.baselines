@@ -14,7 +14,9 @@ FROM
 
 CREATE TABLE #TempTable
 (
-	[ID] Int NOT NULL
+	[ID] Int NOT NULL,
+
+	CONSTRAINT [PK_TempTable] PRIMARY KEY CLUSTERED ([ID])
 )
 
 -- Sybase.Managed Sybase
