@@ -6,7 +6,9 @@ DROP TABLE IF EXISTS "TempTable"
 
 CREATE TABLE IF NOT EXISTS "TempTable"
 (
-	"Name" text NOT NULL
+	"Name" text NOT NULL,
+
+	CONSTRAINT "PK_TempTable" PRIMARY KEY ("Name")
 )
 
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL

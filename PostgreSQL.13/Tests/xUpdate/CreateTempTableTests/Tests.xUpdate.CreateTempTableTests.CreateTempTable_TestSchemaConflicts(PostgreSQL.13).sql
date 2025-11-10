@@ -16,7 +16,9 @@ VALUES
 CREATE TABLE IF NOT EXISTS "TempTable"
 (
 	"Id"      Int  NOT NULL,
-	"Renamed" text     NULL
+	"Renamed" text     NULL,
+
+	CONSTRAINT "PK_TempTable" PRIMARY KEY ("Id")
 )
 
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
