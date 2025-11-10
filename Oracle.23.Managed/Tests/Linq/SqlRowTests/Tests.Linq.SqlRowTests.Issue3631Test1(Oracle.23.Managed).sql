@@ -1,6 +1,7 @@
 ﻿-- Oracle.23.Managed Oracle.Managed Oracle12
 
 SELECT
+	x."Id",
 	x."Country",
 	x."State"
 FROM
