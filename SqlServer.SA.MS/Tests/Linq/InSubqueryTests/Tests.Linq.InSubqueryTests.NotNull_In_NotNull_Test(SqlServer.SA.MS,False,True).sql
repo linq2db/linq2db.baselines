@@ -1,6 +1,7 @@
 ﻿-- SqlServer.SA.MS SqlServer.2019
 
 SELECT
+	[t].[PK],
 	[t].[ID]
 FROM
 	[test_in_1] [t]
@@ -15,6 +16,7 @@ WHERE
 -- SqlServer.SA.MS SqlServer.2019
 
 SELECT
+	[t1].[PK],
 	[t1].[ID]
 FROM
 	[test_in_1] [t1]
@@ -22,6 +24,7 @@ FROM
 -- SqlServer.SA.MS SqlServer.2019
 
 SELECT
+	[t1].[PK],
 	[t1].[ID]
 FROM
 	[test_in_2] [t1]

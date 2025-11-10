@@ -1,6 +1,7 @@
 ﻿-- SqlServer.SA.MS SqlServer.2019
 
 SELECT
+	[p].[Id],
 	[p].[MyEnum],
 	[p].[MyEnum2]
 FROM

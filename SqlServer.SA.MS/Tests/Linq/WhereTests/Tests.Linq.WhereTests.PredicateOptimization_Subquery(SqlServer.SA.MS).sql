@@ -1,6 +1,7 @@
 ﻿-- SqlServer.SA.MS SqlServer.2019
 
 SELECT
+	[p].[PK],
 	[p].[Id],
 	[p].[Date1],
 	[p].[Date2],
@@ -21,6 +22,7 @@ WHERE
 -- SqlServer.SA.MS SqlServer.2019
 
 SELECT
+	[p].[PK],
 	[p].[Id],
 	[p].[Date1],
 	[p].[Date2],
