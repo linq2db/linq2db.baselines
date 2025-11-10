@@ -4,7 +4,9 @@ CREATE TABLE [tempdb]..[#TableWithData_target]
 (
 	[Id]       Int          NOT NULL,
 	[Value]    Int          NOT NULL,
-	[ValueStr] NVarChar(50)     NULL
+	[ValueStr] NVarChar(50)     NULL,
+
+	PRIMARY KEY CLUSTERED ([Id])
 )
 
 -- SqlServer.2025 SqlServer.2022
@@ -13,7 +15,9 @@ CREATE TABLE [tempdb]..[#TableWithData_output]
 (
 	[Id]       Int          NOT NULL,
 	[Value]    Int          NOT NULL,
-	[ValueStr] NVarChar(50)     NULL
+	[ValueStr] NVarChar(50)     NULL,
+
+	PRIMARY KEY CLUSTERED ([Id])
 )
 
 -- SqlServer.2025 SqlServer.2022
