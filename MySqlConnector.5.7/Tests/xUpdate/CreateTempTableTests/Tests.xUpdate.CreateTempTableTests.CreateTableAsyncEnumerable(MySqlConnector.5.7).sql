@@ -13,7 +13,9 @@ FROM
 
 CREATE TABLE IF NOT EXISTS `TempTable`
 (
-	`ID` INT NOT NULL
+	`ID` INT NOT NULL,
+
+	CONSTRAINT `PK_TempTable` PRIMARY KEY CLUSTERED (`ID`)
 )
 
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
