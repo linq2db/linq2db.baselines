@@ -6,7 +6,9 @@ DROP TABLE [DropTableTest]
 
 CREATE TABLE [Database\TestData.ODBC.mdb].[DropTableTest]
 (
-	[ID] Int NOT NULL
+	[ID] Int NOT NULL,
+
+	CONSTRAINT [PK_DropTableTest] PRIMARY KEY CLUSTERED ([ID])
 )
 
 -- Access.Jet.Odbc AccessODBC
