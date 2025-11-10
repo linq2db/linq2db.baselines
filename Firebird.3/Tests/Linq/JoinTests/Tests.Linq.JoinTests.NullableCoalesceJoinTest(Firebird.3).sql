@@ -6,7 +6,9 @@ EXECUTE BLOCK AS BEGIN
 			CREATE GLOBAL TEMPORARY TABLE "tmptbl1"
 			(
 				ID      Int                                    NOT NULL,
-				"Value" VarChar(255) CHARACTER SET UNICODE_FSS
+				"Value" VarChar(255) CHARACTER SET UNICODE_FSS,
+
+				CONSTRAINT "PK_tmptbl1" PRIMARY KEY (ID)
 			)
 			ON COMMIT PRESERVE ROWS
 		';
@@ -30,7 +32,9 @@ EXECUTE BLOCK AS BEGIN
 			CREATE GLOBAL TEMPORARY TABLE "tmptbl2"
 			(
 				ID      Int                                    NOT NULL,
-				"Value" VarChar(255) CHARACTER SET UNICODE_FSS NOT NULL
+				"Value" VarChar(255) CHARACTER SET UNICODE_FSS NOT NULL,
+
+				CONSTRAINT "PK_tmptbl2" PRIMARY KEY (ID)
 			)
 			ON COMMIT PRESERVE ROWS
 		';
@@ -54,7 +58,9 @@ EXECUTE BLOCK AS BEGIN
 			CREATE GLOBAL TEMPORARY TABLE "tmptbl3"
 			(
 				ID      Int                                    NOT NULL,
-				"Value" VarChar(255) CHARACTER SET UNICODE_FSS
+				"Value" VarChar(255) CHARACTER SET UNICODE_FSS,
+
+				CONSTRAINT "PK_tmptbl3" PRIMARY KEY (ID)
 			)
 			ON COMMIT PRESERVE ROWS
 		';

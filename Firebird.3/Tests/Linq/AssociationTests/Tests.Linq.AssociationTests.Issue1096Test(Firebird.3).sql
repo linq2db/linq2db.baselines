@@ -1,4 +1,6 @@
 ﻿-- Firebird.3 Firebird3
+DECLARE @Pk Integer -- Int32
+SET     @Pk = 1
 DECLARE @Id Integer -- Int32
 SET     @Id = 1
 DECLARE @TargetName VarChar(12) -- String
@@ -6,28 +8,13 @@ SET     @TargetName = 'bda.Requests'
 
 INSERT INTO "Issue1096Task"
 (
+	"Pk",
 	"Id",
 	"TargetName"
 )
 VALUES
 (
-	@Id,
-	@TargetName
-)
-
--- Firebird.3 Firebird3
-DECLARE @Id Integer -- Int32
-SET     @Id = 1
-DECLARE @TargetName VarChar(12) -- String
-SET     @TargetName = 'bda.Requests'
-
-INSERT INTO "Issue1096Task"
-(
-	"Id",
-	"TargetName"
-)
-VALUES
-(
+	@Pk,
 	@Id,
 	@TargetName
 )
@@ -56,6 +43,7 @@ VALUES
 -- Firebird.3 Firebird3
 
 SELECT DISTINCT
+	"t"."Pk",
 	"t"."Id",
 	"t"."TargetName",
 	"a_ActualStage"."Id",

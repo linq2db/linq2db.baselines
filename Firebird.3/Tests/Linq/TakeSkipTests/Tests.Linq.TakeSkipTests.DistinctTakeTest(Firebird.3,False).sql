@@ -1,8 +1,8 @@
 ﻿-- Firebird.3 Firebird3
 
 SELECT DISTINCT
-	"t1"."Value"
+	"r"."Value"
 FROM
-	"TakeSkipClass" "t1"
+	"TakeSkipClass" "r"
 FETCH NEXT 3 ROWS ONLY
 

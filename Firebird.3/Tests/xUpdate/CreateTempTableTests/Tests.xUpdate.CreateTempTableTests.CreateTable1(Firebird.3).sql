@@ -12,7 +12,9 @@ EXECUTE BLOCK AS BEGIN
 		EXECUTE STATEMENT '
 			CREATE TABLE "TempTable"
 			(
-				ID Int NOT NULL
+				ID Int NOT NULL,
+
+				CONSTRAINT "PK_TempTable" PRIMARY KEY (ID)
 			)
 		';
 END
