@@ -25,7 +25,6 @@ LIMIT 2
 UPDATE
 	`TestBool` `t1`
 SET
-	`t1`.`Id` = 1,
 	`t1`.`Value` = NOT `t1`.`Value`
 
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
