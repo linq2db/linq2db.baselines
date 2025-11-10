@@ -6,7 +6,9 @@ EXECUTE BLOCK AS BEGIN
 			CREATE GLOBAL TEMPORARY TABLE "temp_table1"
 			(
 				ID      Int NOT NULL,
-				"Value" Int NOT NULL
+				"Value" Int NOT NULL,
+
+				CONSTRAINT "PK_temp_table1" PRIMARY KEY (ID)
 			)
 			ON COMMIT PRESERVE ROWS
 		';
@@ -29,7 +31,9 @@ EXECUTE BLOCK AS BEGIN
 			CREATE GLOBAL TEMPORARY TABLE "temp_table2"
 			(
 				ID      Int NOT NULL,
-				"Value" Int NOT NULL
+				"Value" Int NOT NULL,
+
+				CONSTRAINT "PK_temp_table2" PRIMARY KEY (ID)
 			)
 			ON COMMIT PRESERVE ROWS
 		';
