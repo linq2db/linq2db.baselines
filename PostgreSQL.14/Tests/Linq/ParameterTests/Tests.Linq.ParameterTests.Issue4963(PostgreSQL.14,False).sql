@@ -10,6 +10,7 @@ SET
 -- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
 
 SELECT
+	t1."Id",
 	t1."Field"
 FROM
 	"Issue4963Table" t1

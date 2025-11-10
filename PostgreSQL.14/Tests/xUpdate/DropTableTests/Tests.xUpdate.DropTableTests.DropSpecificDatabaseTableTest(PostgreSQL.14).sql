@@ -22,7 +22,9 @@ LIMIT 1
 
 CREATE TABLE "DropTableTest"
 (
-	"ID" Int NOT NULL
+	"ID" Int NOT NULL,
+
+	CONSTRAINT "PK_DropTableTest" PRIMARY KEY ("ID")
 )
 
 -- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
