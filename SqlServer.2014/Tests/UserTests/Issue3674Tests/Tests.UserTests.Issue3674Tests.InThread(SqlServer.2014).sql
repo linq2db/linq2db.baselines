@@ -1,6 +1,7 @@
 ﻿-- SqlServer.2014
 
 SELECT TOP (1)
+	[p].[Id],
 	[p].[Code],
 	[p].[DIM_Company],
 	[p].[DIM_Branch],
