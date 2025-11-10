@@ -1,7 +1,9 @@
 ﻿-- ClickHouse.Octonica ClickHouse
 
 SELECT
-	t.ID
+	t.PK,
+	t.ID,
+	t.GV
 FROM
 	test_in_1 t
 WHERE
@@ -32,13 +34,16 @@ WHERE
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
-	t1.ID
+	t1.PK,
+	t1.ID,
+	t1.GV
 FROM
 	test_in_1 t1
 
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
+	t1.PK,
 	t1.ID,
 	t1.GV
 FROM
