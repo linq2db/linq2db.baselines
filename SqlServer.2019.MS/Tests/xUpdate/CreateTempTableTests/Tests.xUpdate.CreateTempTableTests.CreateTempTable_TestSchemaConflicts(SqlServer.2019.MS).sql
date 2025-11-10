@@ -17,7 +17,9 @@ IF (OBJECT_ID(N'[TempTable]', N'U') IS NULL)
 	CREATE TABLE [TempTable]
 	(
 		[Id]      Int            NOT NULL,
-		[Renamed] NVarChar(4000)     NULL
+		[Renamed] NVarChar(4000)     NULL,
+
+		CONSTRAINT [PK_TempTable] PRIMARY KEY CLUSTERED ([Id])
 	)
 
 -- SqlServer.2019.MS SqlServer.2019
