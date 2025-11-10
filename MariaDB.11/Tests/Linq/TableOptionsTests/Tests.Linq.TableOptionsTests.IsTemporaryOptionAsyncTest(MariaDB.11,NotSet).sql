@@ -3,7 +3,9 @@
 CREATE TEMPORARY TABLE `temp_table1`
 (
 	`ID`    INT NOT NULL,
-	`Value` INT NOT NULL
+	`Value` INT NOT NULL,
+
+	CONSTRAINT `PK_temp_table1` PRIMARY KEY CLUSTERED (`ID`)
 )
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
@@ -21,7 +23,9 @@ VALUES
 CREATE TEMPORARY TABLE `temp_table2`
 (
 	`ID`    INT NOT NULL,
-	`Value` INT NOT NULL
+	`Value` INT NOT NULL,
+
+	CONSTRAINT `PK_temp_table2` PRIMARY KEY CLUSTERED (`ID`)
 )
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB

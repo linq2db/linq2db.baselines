@@ -13,7 +13,9 @@ FROM
 
 CREATE TEMPORARY TABLE `TempTable`
 (
-	`ID` INT NOT NULL
+	`ID` INT NOT NULL,
+
+	CONSTRAINT `PK_TempTable` PRIMARY KEY CLUSTERED (`ID`)
 )
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB

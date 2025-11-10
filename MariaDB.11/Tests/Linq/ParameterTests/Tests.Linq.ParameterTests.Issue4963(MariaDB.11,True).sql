@@ -8,6 +8,7 @@ SET
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 SELECT
+	`t1`.`Id`,
 	`t1`.`Field`
 FROM
 	`Issue4963Table` `t1`

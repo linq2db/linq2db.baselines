@@ -14,7 +14,9 @@ LIMIT 1
 
 CREATE TABLE `DropTableTest`
 (
-	`ID` INT NOT NULL
+	`ID` INT NOT NULL,
+
+	CONSTRAINT `PK_DropTableTest` PRIMARY KEY CLUSTERED (`ID`)
 )
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB

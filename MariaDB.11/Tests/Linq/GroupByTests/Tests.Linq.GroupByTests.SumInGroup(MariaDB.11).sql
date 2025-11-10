@@ -29,6 +29,7 @@ GROUP BY
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 SELECT
+	`t1`.`Id`,
 	`t1`.`GroupId`,
 	`t1`.`DataValue`
 FROM

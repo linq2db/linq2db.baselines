@@ -1,6 +1,7 @@
 ﻿-- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 SELECT
+	`t`.`Id`,
 	`t`.`Value`
 FROM
 	`NullableBoolClass` `t`
@@ -10,6 +11,7 @@ WHERE
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
 SELECT
+	`t`.`Id`,
 	`t`.`Value`
 FROM
 	`NullableBoolClass` `t`
