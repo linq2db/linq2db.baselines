@@ -1,6 +1,7 @@
 ﻿-- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 
 SELECT
+	t."Id",
 	t."Value"
 FROM
 	"NullableBoolClass" t
@@ -10,6 +11,7 @@ WHERE
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 
 SELECT
+	t."Id",
 	t."Value"
 FROM
 	"NullableBoolClass" t

@@ -18,18 +18,13 @@ FROM
 			ELSE 2
 		END
 WHERE
-	ext."NOT_HANDLED" = 2 AND
-	ext."TRANS_CHANNEL" IS NULL AND
-	"Issue2815Table1"."SRC_BIC" = ext."SRC_BIC" AND
-	"Issue2815Table1"."DES_BIC" = ext."DES_BIC" AND
-	"Issue2815Table1"."IDF" = ext."IDF" AND
-	"Issue2815Table1"."TREA_CENT" = ext."TREA_CENT" AND
-	"Issue2815Table1"."NOT_HANDLED" = ext."NOT_HANDLED" AND
-	("Issue2815Table1"."TRANS_CHANNEL" = ext."TRANS_CHANNEL" OR "Issue2815Table1"."TRANS_CHANNEL" IS NULL AND ext."TRANS_CHANNEL" IS NULL)
+	ext."NOT_HANDLED" = 2 AND ext."TRANS_CHANNEL" IS NULL AND
+	"Issue2815Table1"."Id" = ext."Id"
 
 -- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 
 SELECT
+	t1."Id",
 	t1."SRC_BIC",
 	t1."DES_BIC",
 	t1."IDF",

@@ -1,6 +1,7 @@
 ﻿-- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 
 SELECT
+	user_1."Id",
 	user_1."FirstName",
 	user_1."Status"
 FROM
