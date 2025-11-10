@@ -96,6 +96,7 @@ FROM
 -- Firebird.5 Firebird4
 
 SELECT
+	"t1"."Id",
 	"t1"."GroupId",
 	"t1"."DataValue"
 FROM
