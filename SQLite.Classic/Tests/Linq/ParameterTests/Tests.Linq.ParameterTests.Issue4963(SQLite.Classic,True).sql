@@ -8,6 +8,7 @@ SET
 -- SQLite.Classic SQLite
 
 SELECT
+	[t1].[Id],
 	[t1].[Field]
 FROM
 	[Issue4963Table] [t1]

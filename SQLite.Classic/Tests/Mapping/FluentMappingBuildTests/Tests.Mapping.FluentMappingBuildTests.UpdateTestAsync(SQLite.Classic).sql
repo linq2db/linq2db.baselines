@@ -4,7 +4,9 @@ CREATE TABLE IF NOT EXISTS [FluentTemp]
 (
 	[ID]       INTEGER      NOT NULL,
 	[Value]    NVarChar(20)     NULL,
-	[LastName] NVarChar(20)     NULL
+	[LastName] NVarChar(20)     NULL,
+
+	CONSTRAINT [PK_FluentTemp] PRIMARY KEY ([ID])
 )
 
 -- SQLite.Classic SQLite

@@ -1,6 +1,7 @@
 ﻿-- SQLite.Classic SQLite
 
 SELECT
+	[p].[PK],
 	[p].[Id],
 	[p].[Date1],
 	[p].[Date2],
@@ -24,6 +25,7 @@ WHERE
 -- SQLite.Classic SQLite
 
 SELECT
+	[p].[PK],
 	[p].[Id],
 	[p].[Date1],
 	[p].[Date2],

@@ -1,4 +1,6 @@
 ﻿-- SQLite.MS SQLite
+DECLARE @Pk  -- Int32
+SET     @Pk = 1
 DECLARE @Id  -- Int32
 SET     @Id = 1
 DECLARE @TargetName NVarChar(12) -- String
@@ -6,28 +8,13 @@ SET     @TargetName = 'bda.Requests'
 
 INSERT INTO [Issue1096Task]
 (
+	[Pk],
 	[Id],
 	[TargetName]
 )
 VALUES
 (
-	@Id,
-	@TargetName
-)
-
--- SQLite.MS SQLite
-DECLARE @Id  -- Int32
-SET     @Id = 1
-DECLARE @TargetName NVarChar(12) -- String
-SET     @TargetName = 'bda.Requests'
-
-INSERT INTO [Issue1096Task]
-(
-	[Id],
-	[TargetName]
-)
-VALUES
-(
+	@Pk,
 	@Id,
 	@TargetName
 )
@@ -56,6 +43,7 @@ VALUES
 -- SQLite.MS SQLite
 
 SELECT DISTINCT
+	[t].[Pk],
 	[t].[Id],
 	[t].[TargetName],
 	[a_ActualStage].[Id],
