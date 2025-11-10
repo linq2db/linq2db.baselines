@@ -1,6 +1,7 @@
 ﻿-- SqlCe
 
 SELECT
+	[p].[PK],
 	[p].[Id],
 	[p].[Date1],
 	[p].[Date2],
@@ -27,6 +28,7 @@ WHERE
 -- SqlCe
 
 SELECT
+	[p].[PK],
 	[p].[Id],
 	[p].[Date1],
 	[p].[Date2],

@@ -18,7 +18,7 @@ FROM
 		INNER JOIN [Distributor_Commercial_Propert] [dcp] ON [d].[Distributor_Id] = [dcp].[Distributor_Id]
 		INNER JOIN [Commercial_Property] [cp] ON [dcp].[Commercial_Property_Id] = [cp].[Commercial_Property_Id]
 		INNER JOIN [Contract_Dates] [cd] ON [cda].[Contract_Id] = [cd].[Contract_Id]
-		INNER JOIN [Cities] [c_1] ON [c_1].[City_Code] = [cp].[City_Code] OR [c_1].[City_Code] IS NULL AND [cp].[City_Code] IS NULL
+		INNER JOIN [Cities] [c_1] ON [c_1].[City_Code] = [cp].[City_Code]
 WHERE
 	[cda].[Contract_Id] = 198827882 AND
 	[cda].[Distributor_Type_Code] = 'CC' AND

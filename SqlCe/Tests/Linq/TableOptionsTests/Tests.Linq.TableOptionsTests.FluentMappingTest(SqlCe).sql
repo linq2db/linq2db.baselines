@@ -7,7 +7,9 @@ DROP TABLE [TestTable]
 CREATE TABLE [TestTable]
 (
 	[Id]    Int NOT NULL,
-	[Value] Int NOT NULL
+	[Value] Int NOT NULL,
+
+	CONSTRAINT [PK_TestTable] PRIMARY KEY ([Id])
 )
 
 -- SqlCe

@@ -1,6 +1,7 @@
 ﻿-- SqlCe
 
 SELECT
+	[x].[Id],
 	[x].[Country],
 	[x].[State] as [State_1]
 FROM
