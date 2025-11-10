@@ -1,6 +1,7 @@
 ﻿-- SQLite.Classic.MPU SQLite.Classic SQLite
 
 SELECT
+	[x].[Id],
 	[x].[Country],
 	[x].[State]
 FROM

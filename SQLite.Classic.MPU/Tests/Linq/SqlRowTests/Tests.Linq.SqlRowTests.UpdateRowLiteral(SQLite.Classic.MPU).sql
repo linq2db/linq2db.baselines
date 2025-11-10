@@ -12,6 +12,7 @@ WHERE
 -- SQLite.Classic.MPU SQLite.Classic SQLite
 
 SELECT
+	[t1].[Id],
 	[t1].[One],
 	[t1].[Two],
 	[t1].[Three],

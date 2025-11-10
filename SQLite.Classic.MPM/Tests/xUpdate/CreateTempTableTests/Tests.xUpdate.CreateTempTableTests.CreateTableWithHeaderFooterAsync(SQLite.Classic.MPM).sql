@@ -6,7 +6,9 @@ DROP TABLE IF EXISTS [CreateTableWithHeaderFooter]
 
 /* THIS IS ASYNC HEADER*/ CREATE TABLE temp.[CreateTableWithHeaderFooter]
 (
-	[ID] INTEGER NOT NULL
+	[ID] INTEGER NOT NULL,
+
+	CONSTRAINT [PK_CreateTableWithHeaderFooter] PRIMARY KEY ([ID])
 )
 /* THIS IS ASYNC FOOTER*/
 

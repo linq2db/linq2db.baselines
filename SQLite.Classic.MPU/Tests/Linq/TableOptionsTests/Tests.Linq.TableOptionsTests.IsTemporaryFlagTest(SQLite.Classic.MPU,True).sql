@@ -3,7 +3,9 @@
 CREATE TEMPORARY TABLE temp.[IsTemporaryTable]
 (
 	[Id]    INTEGER NOT NULL,
-	[Value] INTEGER NOT NULL
+	[Value] INTEGER NOT NULL,
+
+	CONSTRAINT [PK_IsTemporaryTable] PRIMARY KEY ([Id])
 )
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite

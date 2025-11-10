@@ -1,6 +1,7 @@
 ﻿-- SQLite.Classic.MPM SQLite.Classic SQLite
 
 SELECT
+	[p].[Id],
 	[p].[MyEnum],
 	[p].[MyEnum2]
 FROM
