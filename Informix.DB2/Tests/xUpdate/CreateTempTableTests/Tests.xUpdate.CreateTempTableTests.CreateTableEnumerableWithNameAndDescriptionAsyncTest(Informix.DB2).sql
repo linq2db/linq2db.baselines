@@ -6,7 +6,9 @@ DROP TABLE IF EXISTS TempTable
 
 CREATE TEMP TABLE IF NOT EXISTS TempTable
 (
-	Name NVarChar(20) NOT NULL
+	Name NVarChar(20) NOT NULL,
+
+	PRIMARY KEY (Name)
 )
 
 INSERT BULK TempTable

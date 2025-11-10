@@ -3,7 +3,9 @@
 CREATE TEMP TABLE temp_table1
 (
 	ID      Int NOT NULL,
-	"Value" Int NOT NULL
+	"Value" Int NOT NULL,
+
+	PRIMARY KEY (ID)
 )
 
 INSERT BULK temp_table1
@@ -13,7 +15,9 @@ INSERT BULK temp_table1
 CREATE TEMP TABLE temp_table2
 (
 	ID      Int NOT NULL,
-	"Value" Int NOT NULL
+	"Value" Int NOT NULL,
+
+	PRIMARY KEY (ID)
 )
 
 -- Informix.DB2 Informix

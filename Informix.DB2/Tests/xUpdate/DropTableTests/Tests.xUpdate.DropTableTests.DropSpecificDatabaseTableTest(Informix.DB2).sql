@@ -20,7 +20,9 @@ FROM
 
 CREATE TABLE DropTableTest
 (
-	ID Int NOT NULL
+	ID Int NOT NULL,
+
+	PRIMARY KEY (ID)
 )
 
 -- Informix.DB2 Informix

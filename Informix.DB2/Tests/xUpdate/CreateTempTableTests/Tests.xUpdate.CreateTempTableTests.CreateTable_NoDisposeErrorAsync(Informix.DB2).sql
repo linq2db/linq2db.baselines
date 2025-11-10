@@ -6,7 +6,9 @@ DROP TABLE IF EXISTS TempTable
 
 CREATE TEMP TABLE TempTable
 (
-	ID Int NOT NULL
+	ID Int NOT NULL,
+
+	PRIMARY KEY (ID)
 )
 
 -- Informix.DB2 Informix

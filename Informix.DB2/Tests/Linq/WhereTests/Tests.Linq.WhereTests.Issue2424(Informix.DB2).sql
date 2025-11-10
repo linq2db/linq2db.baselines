@@ -1,6 +1,7 @@
 ﻿-- Informix.DB2 Informix
 
 SELECT
+	i.Pk,
 	i.Id,
 	i.StrValue,
 	i.StrValueNullable
@@ -12,6 +13,7 @@ WHERE
 -- Informix.DB2 Informix
 
 SELECT
+	t1.Pk,
 	t1.Id,
 	t1.StrValue,
 	t1.StrValueNullable
@@ -21,6 +23,7 @@ FROM
 -- Informix.DB2 Informix
 
 SELECT
+	i.Pk,
 	i.Id,
 	i.StrValue,
 	i.StrValueNullable
@@ -32,6 +35,7 @@ WHERE
 -- Informix.DB2 Informix
 
 SELECT
+	t1.Pk,
 	t1.Id,
 	t1.StrValue,
 	t1.StrValueNullable
@@ -41,6 +45,7 @@ FROM
 -- Informix.DB2 Informix
 
 SELECT
+	i.Pk,
 	i.Id,
 	i.StrValue,
 	i.StrValueNullable
@@ -52,6 +57,7 @@ WHERE
 -- Informix.DB2 Informix
 
 SELECT
+	t1.Pk,
 	t1.Id,
 	t1.StrValue,
 	t1.StrValueNullable
@@ -61,6 +67,7 @@ FROM
 -- Informix.DB2 Informix
 
 SELECT
+	i.Pk,
 	i.Id,
 	i.StrValue,
 	i.StrValueNullable
@@ -72,6 +79,7 @@ WHERE
 -- Informix.DB2 Informix
 
 SELECT
+	t1.Pk,
 	t1.Id,
 	t1.StrValue,
 	t1.StrValueNullable
@@ -81,6 +89,7 @@ FROM
 -- Informix.DB2 Informix
 
 SELECT
+	i.Pk,
 	i.Id,
 	i.StrValue,
 	i.StrValueNullable
@@ -92,6 +101,7 @@ WHERE
 -- Informix.DB2 Informix
 
 SELECT
+	t1.Pk,
 	t1.Id,
 	t1.StrValue,
 	t1.StrValueNullable
@@ -101,6 +111,7 @@ FROM
 -- Informix.DB2 Informix
 
 SELECT
+	i.Pk,
 	i.Id,
 	i.StrValue,
 	i.StrValueNullable
@@ -112,6 +123,7 @@ WHERE
 -- Informix.DB2 Informix
 
 SELECT
+	t1.Pk,
 	t1.Id,
 	t1.StrValue,
 	t1.StrValueNullable
@@ -121,6 +133,7 @@ FROM
 -- Informix.DB2 Informix
 
 SELECT
+	i.Pk,
 	i.Id,
 	i.StrValue,
 	i.StrValueNullable
@@ -132,6 +145,7 @@ WHERE
 -- Informix.DB2 Informix
 
 SELECT
+	t1.Pk,
 	t1.Id,
 	t1.StrValue,
 	t1.StrValueNullable
@@ -141,6 +155,7 @@ FROM
 -- Informix.DB2 Informix
 
 SELECT
+	i.Pk,
 	i.Id,
 	i.StrValue,
 	i.StrValueNullable
@@ -152,6 +167,7 @@ WHERE
 -- Informix.DB2 Informix
 
 SELECT
+	t1.Pk,
 	t1.Id,
 	t1.StrValue,
 	t1.StrValueNullable
@@ -161,6 +177,7 @@ FROM
 -- Informix.DB2 Informix
 
 SELECT
+	i.Pk,
 	i.Id,
 	i.StrValue,
 	i.StrValueNullable
@@ -172,6 +189,7 @@ WHERE
 -- Informix.DB2 Informix
 
 SELECT
+	t1.Pk,
 	t1.Id,
 	t1.StrValue,
 	t1.StrValueNullable
@@ -181,6 +199,7 @@ FROM
 -- Informix.DB2 Informix
 
 SELECT
+	i.Pk,
 	i.Id,
 	i.StrValue,
 	i.StrValueNullable
@@ -192,6 +211,7 @@ WHERE
 -- Informix.DB2 Informix
 
 SELECT
+	t1.Pk,
 	t1.Id,
 	t1.StrValue,
 	t1.StrValueNullable
@@ -201,6 +221,7 @@ FROM
 -- Informix.DB2 Informix
 
 SELECT
+	i.Pk,
 	i.Id,
 	i.StrValue,
 	i.StrValueNullable
@@ -212,6 +233,7 @@ WHERE
 -- Informix.DB2 Informix
 
 SELECT
+	t1.Pk,
 	t1.Id,
 	t1.StrValue,
 	t1.StrValueNullable
@@ -221,6 +243,7 @@ FROM
 -- Informix.DB2 Informix
 
 SELECT
+	i.Pk,
 	i.Id,
 	i.StrValue,
 	i.StrValueNullable
@@ -232,6 +255,7 @@ WHERE
 -- Informix.DB2 Informix
 
 SELECT
+	t1.Pk,
 	t1.Id,
 	t1.StrValue,
 	t1.StrValueNullable
@@ -241,6 +265,7 @@ FROM
 -- Informix.DB2 Informix
 
 SELECT
+	i.Pk,
 	i.Id,
 	i.StrValue,
 	i.StrValueNullable
@@ -252,6 +277,7 @@ WHERE
 -- Informix.DB2 Informix
 
 SELECT
+	t1.Pk,
 	t1.Id,
 	t1.StrValue,
 	t1.StrValueNullable
@@ -261,6 +287,7 @@ FROM
 -- Informix.DB2 Informix
 
 SELECT
+	i.Pk,
 	i.Id,
 	i.StrValue,
 	i.StrValueNullable
@@ -272,6 +299,7 @@ WHERE
 -- Informix.DB2 Informix
 
 SELECT
+	t1.Pk,
 	t1.Id,
 	t1.StrValue,
 	t1.StrValueNullable
@@ -281,6 +309,7 @@ FROM
 -- Informix.DB2 Informix
 
 SELECT
+	i.Pk,
 	i.Id,
 	i.StrValue,
 	i.StrValueNullable
@@ -292,6 +321,7 @@ WHERE
 -- Informix.DB2 Informix
 
 SELECT
+	t1.Pk,
 	t1.Id,
 	t1.StrValue,
 	t1.StrValueNullable
@@ -301,6 +331,7 @@ FROM
 -- Informix.DB2 Informix
 
 SELECT
+	i.Pk,
 	i.Id,
 	i.StrValue,
 	i.StrValueNullable
@@ -312,6 +343,7 @@ WHERE
 -- Informix.DB2 Informix
 
 SELECT
+	t1.Pk,
 	t1.Id,
 	t1.StrValue,
 	t1.StrValueNullable
@@ -321,6 +353,7 @@ FROM
 -- Informix.DB2 Informix
 
 SELECT
+	i.Pk,
 	i.Id,
 	i.StrValue,
 	i.StrValueNullable
@@ -332,6 +365,7 @@ WHERE
 -- Informix.DB2 Informix
 
 SELECT
+	t1.Pk,
 	t1.Id,
 	t1.StrValue,
 	t1.StrValueNullable
@@ -341,6 +375,7 @@ FROM
 -- Informix.DB2 Informix
 
 SELECT
+	i.Pk,
 	i.Id,
 	i.StrValue,
 	i.StrValueNullable
@@ -352,6 +387,7 @@ WHERE
 -- Informix.DB2 Informix
 
 SELECT
+	t1.Pk,
 	t1.Id,
 	t1.StrValue,
 	t1.StrValueNullable
@@ -361,6 +397,7 @@ FROM
 -- Informix.DB2 Informix
 
 SELECT
+	i.Pk,
 	i.Id,
 	i.StrValue,
 	i.StrValueNullable
@@ -372,6 +409,7 @@ WHERE
 -- Informix.DB2 Informix
 
 SELECT
+	t1.Pk,
 	t1.Id,
 	t1.StrValue,
 	t1.StrValueNullable
@@ -381,6 +419,7 @@ FROM
 -- Informix.DB2 Informix
 
 SELECT
+	i.Pk,
 	i.Id,
 	i.StrValue,
 	i.StrValueNullable
@@ -392,6 +431,7 @@ WHERE
 -- Informix.DB2 Informix
 
 SELECT
+	t1.Pk,
 	t1.Id,
 	t1.StrValue,
 	t1.StrValueNullable
@@ -401,6 +441,7 @@ FROM
 -- Informix.DB2 Informix
 
 SELECT
+	i.Pk,
 	i.Id,
 	i.StrValue,
 	i.StrValueNullable
@@ -412,6 +453,7 @@ WHERE
 -- Informix.DB2 Informix
 
 SELECT
+	t1.Pk,
 	t1.Id,
 	t1.StrValue,
 	t1.StrValueNullable
@@ -421,6 +463,7 @@ FROM
 -- Informix.DB2 Informix
 
 SELECT
+	i.Pk,
 	i.Id,
 	i.StrValue,
 	i.StrValueNullable
@@ -432,6 +475,7 @@ WHERE
 -- Informix.DB2 Informix
 
 SELECT
+	t1.Pk,
 	t1.Id,
 	t1.StrValue,
 	t1.StrValueNullable
@@ -441,6 +485,7 @@ FROM
 -- Informix.DB2 Informix
 
 SELECT
+	i.Pk,
 	i.Id,
 	i.StrValue,
 	i.StrValueNullable
@@ -452,6 +497,7 @@ WHERE
 -- Informix.DB2 Informix
 
 SELECT
+	t1.Pk,
 	t1.Id,
 	t1.StrValue,
 	t1.StrValueNullable
@@ -461,6 +507,7 @@ FROM
 -- Informix.DB2 Informix
 
 SELECT
+	i.Pk,
 	i.Id,
 	i.StrValue,
 	i.StrValueNullable
@@ -472,6 +519,7 @@ WHERE
 -- Informix.DB2 Informix
 
 SELECT
+	t1.Pk,
 	t1.Id,
 	t1.StrValue,
 	t1.StrValueNullable
