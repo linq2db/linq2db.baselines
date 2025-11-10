@@ -9,7 +9,7 @@ SELECT
 FROM
 	Person r
 WHERE
-	r.PersonID + 1 = 0
+	r.PersonID = -1
 
 -- ClickHouse.Driver ClickHouse
 
@@ -22,5 +22,5 @@ SELECT
 FROM
 	Person r
 WHERE
-	r.PersonID + 1 = 0
+	r.PersonID = -1
 
