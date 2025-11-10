@@ -1,7 +1,9 @@
 ﻿-- Firebird.2.5 Firebird
 
 SELECT
-	"t".ID
+	"t".PK,
+	"t".ID,
+	"t".GV
 FROM
 	"test_in_1" "t"
 WHERE
@@ -24,13 +26,16 @@ WHERE
 -- Firebird.2.5 Firebird
 
 SELECT
-	"t1".ID
+	"t1".PK,
+	"t1".ID,
+	"t1".GV
 FROM
 	"test_in_1" "t1"
 
 -- Firebird.2.5 Firebird
 
 SELECT
+	"t1".PK,
 	"t1".ID,
 	"t1".GV
 FROM

@@ -3,7 +3,6 @@
 UPDATE
 	"TableWithData" "s"
 SET
-	"Id" = "s"."Id",
 	"Value" = "s"."Value" + 1,
 	"ValueStr" = "s"."ValueStr" || 'Upd'
 WHERE

@@ -24,7 +24,6 @@ FROM
 UPDATE
 	"TestBool" "t1"
 SET
-	"Id" = 1,
 	"Value" = CASE
 		WHEN "t1"."Value" = '0' THEN '1'
 		WHEN "t1"."Value" = '1' THEN '0'

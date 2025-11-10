@@ -1,6 +1,7 @@
 ﻿-- Firebird.2.5 Firebird
 
 SELECT
+	"p".PK,
 	"p"."Id",
 	"p"."Date1",
 	"p"."Date2",
@@ -26,6 +27,7 @@ WHERE
 -- Firebird.2.5 Firebird
 
 SELECT
+	"p".PK,
 	"p"."Id",
 	"p"."Date1",
 	"p"."Date2",
