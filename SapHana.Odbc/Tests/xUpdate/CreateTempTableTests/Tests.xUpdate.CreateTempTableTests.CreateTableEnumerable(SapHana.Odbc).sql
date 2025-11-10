@@ -13,7 +13,9 @@ FROM
 
 CREATE COLUMN TABLE "TempTable"
 (
-	"ID" Integer NOT NULL
+	"ID" Integer NOT NULL,
+
+	PRIMARY KEY ("ID")
 )
 
 -- SapHana.Odbc SapHanaOdbc

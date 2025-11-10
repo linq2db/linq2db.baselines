@@ -1,8 +1,37 @@
 ﻿-- SapHana.Odbc SapHanaOdbc
 
+CREATE COLUMN TABLE "temp_table_1"
+(
+	"ID"    Integer       NOT NULL,
+	"Value" NVarChar(255)     NULL,
+
+	PRIMARY KEY ("ID")
+)
+
+-- SapHana.Odbc SapHanaOdbc
+DECLARE @ID Int -- Int32
+SET     @ID = 1
+DECLARE @Value NVarChar(5) -- String
+SET     @Value = 'Value'
+
+INSERT INTO "temp_table_1"
+(
+	"ID",
+	"Value"
+)
+VALUES
+(
+	?,
+	?
+)
+
+-- SapHana.Odbc SapHanaOdbc
+
 CREATE COLUMN TABLE "temp_table_2"
 (
-	"Value" NVarChar(255)     NULL
+	"Value" NVarChar(50) NOT NULL,
+
+	PRIMARY KEY ("Value")
 )
 
 -- SapHana.Odbc SapHanaOdbc
@@ -35,4 +64,8 @@ FROM
 -- SapHana.Odbc SapHanaOdbc
 
 DROP TABLE "temp_table_2"
+
+-- SapHana.Odbc SapHanaOdbc
+
+DROP TABLE "temp_table_1"
 

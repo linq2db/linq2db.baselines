@@ -1,6 +1,7 @@
 ﻿-- SapHana.Odbc SapHanaOdbc
 
 SELECT
+	"t"."Id",
 	"t"."Value"
 FROM
 	"NullableBoolClass" "t"
@@ -10,6 +11,7 @@ WHERE
 -- SapHana.Odbc SapHanaOdbc
 
 SELECT
+	"t"."Id",
 	"t"."Value"
 FROM
 	"NullableBoolClass" "t"

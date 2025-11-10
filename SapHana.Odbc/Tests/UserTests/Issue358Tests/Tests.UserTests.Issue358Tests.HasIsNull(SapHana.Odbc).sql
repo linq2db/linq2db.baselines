@@ -1,6 +1,7 @@
 ﻿-- SapHana.Odbc SapHanaOdbc
 
 SELECT
+	"p"."Id",
 	"p"."MyEnum",
 	"p"."MyEnum2"
 FROM

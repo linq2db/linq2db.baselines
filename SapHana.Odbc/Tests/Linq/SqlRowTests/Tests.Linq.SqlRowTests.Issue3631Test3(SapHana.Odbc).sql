@@ -1,6 +1,7 @@
 ﻿-- SapHana.Odbc SapHanaOdbc
 
 SELECT
+	"x"."Id",
 	"x"."Country",
 	"x"."State"
 FROM

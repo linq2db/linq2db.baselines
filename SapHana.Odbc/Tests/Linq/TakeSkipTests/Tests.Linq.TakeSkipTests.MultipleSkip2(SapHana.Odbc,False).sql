@@ -1,6 +1,7 @@
 ﻿-- SapHana.Odbc SapHanaOdbc
 
 SELECT
+	"t1"."Id",
 	"t1"."Value"
 FROM
 	"TakeSkipClass" "t1"
@@ -11,6 +12,7 @@ LIMIT 4200000000 OFFSET 3
 -- SapHana.Odbc SapHanaOdbc
 
 SELECT
+	"t1"."Id",
 	"t1"."Value"
 FROM
 	"TakeSkipClass" "t1"
