@@ -7,7 +7,9 @@ DROP TABLE IF EXISTS [TempTable]
 IF (OBJECT_ID(N'[TempTable]', N'U') IS NULL)
 	CREATE TABLE [TempTable]
 	(
-		[ID] Int NOT NULL
+		[ID] Int NOT NULL,
+
+		CONSTRAINT [PK_TempTable] PRIMARY KEY CLUSTERED ([ID])
 	)
 
 -- SqlServer.2016.MS SqlServer.2016

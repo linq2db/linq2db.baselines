@@ -3,7 +3,9 @@
 CREATE TABLE [tempdb]..[#tmptbl1]
 (
 	[ID]    Int            NOT NULL,
-	[Value] NVarChar(4000)     NULL
+	[Value] NVarChar(4000)     NULL,
+
+	PRIMARY KEY CLUSTERED ([ID])
 )
 
 INSERT BULK [tempdb]..[#tmptbl1](ID, Value)
@@ -13,7 +15,9 @@ INSERT BULK [tempdb]..[#tmptbl1](ID, Value)
 CREATE TABLE [tempdb]..[#tmptbl2]
 (
 	[ID]    Int            NOT NULL,
-	[Value] NVarChar(4000) NOT NULL
+	[Value] NVarChar(4000) NOT NULL,
+
+	PRIMARY KEY CLUSTERED ([ID])
 )
 
 INSERT BULK [tempdb]..[#tmptbl2](ID, Value)
@@ -23,7 +27,9 @@ INSERT BULK [tempdb]..[#tmptbl2](ID, Value)
 CREATE TABLE [tempdb]..[#tmptbl3]
 (
 	[ID]    Int            NOT NULL,
-	[Value] NVarChar(4000)     NULL
+	[Value] NVarChar(4000)     NULL,
+
+	PRIMARY KEY CLUSTERED ([ID])
 )
 
 INSERT BULK [tempdb]..[#tmptbl3](ID, Value)

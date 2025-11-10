@@ -3,7 +3,9 @@
 IF (OBJECT_ID(N'[DisposableTable]', N'U') IS NULL)
 	CREATE TABLE [DisposableTable]
 	(
-		[ID] Int NOT NULL
+		[ID] Int NOT NULL,
+
+		CONSTRAINT [PK_DisposableTable] PRIMARY KEY CLUSTERED ([ID])
 	)
 
 -- SqlServer.2016.MS SqlServer.2016
