@@ -2,11 +2,13 @@
 
 INSERT INTO "SomeTable"
 (
+	"Id",
 	"ClassProp",
 	"Interface"
 )
 VALUES
 (
+	1,
 	True,
 	False
 )
@@ -14,6 +16,7 @@ VALUES
 -- PostgreSQL.17 PostgreSQL.15 PostgreSQL
 
 SELECT
+	t1."Id",
 	t1."ClassProp",
 	t1."Interface"
 FROM
