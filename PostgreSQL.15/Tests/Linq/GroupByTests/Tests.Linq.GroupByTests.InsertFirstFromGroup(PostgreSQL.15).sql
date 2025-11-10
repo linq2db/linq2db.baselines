@@ -1,10 +1,31 @@
 ﻿-- PostgreSQL.15 PostgreSQL
 
-CREATE TEMPORARY TABLE temp_table_2
+CREATE TABLE temp_table_1
 (
-	"Value" text     NULL
+	"ID"    Int  NOT NULL,
+	"Value" text     NULL,
+
+	CONSTRAINT "PK_temp_table_1" PRIMARY KEY ("ID")
 )
-ON COMMIT PRESERVE ROWS
+
+-- PostgreSQL.15 PostgreSQL
+
+INSERT INTO temp_table_1
+(
+	"ID",
+	"Value"
+)
+VALUES
+(1,'Value')
+
+-- PostgreSQL.15 PostgreSQL
+
+CREATE TABLE temp_table_2
+(
+	"Value" text NOT NULL,
+
+	CONSTRAINT "PK_temp_table_2" PRIMARY KEY ("Value")
+)
 
 -- PostgreSQL.15 PostgreSQL
 
@@ -36,4 +57,8 @@ FROM
 -- PostgreSQL.15 PostgreSQL
 
 DROP TABLE IF EXISTS temp_table_2
+
+-- PostgreSQL.15 PostgreSQL
+
+DROP TABLE IF EXISTS temp_table_1
 
