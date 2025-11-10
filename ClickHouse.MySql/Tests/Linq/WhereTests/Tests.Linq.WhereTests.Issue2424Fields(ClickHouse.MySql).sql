@@ -16,6 +16,7 @@ WHERE
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	t1.Pk,
 	t1.Id,
 	t1.StrValue,
 	t1.StrValueNullable
@@ -40,6 +41,7 @@ WHERE
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	t1.Pk,
 	t1.Id,
 	t1.StrValue,
 	t1.StrValueNullable
@@ -64,6 +66,7 @@ WHERE
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	t1.Pk,
 	t1.Id,
 	t1.StrValue,
 	t1.StrValueNullable
@@ -88,6 +91,7 @@ WHERE
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	t1.Pk,
 	t1.Id,
 	t1.StrValue,
 	t1.StrValueNullable
@@ -112,6 +116,7 @@ WHERE
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	t1.Pk,
 	t1.Id,
 	t1.StrValue,
 	t1.StrValueNullable
@@ -136,6 +141,7 @@ WHERE
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	t1.Pk,
 	t1.Id,
 	t1.StrValue,
 	t1.StrValueNullable
@@ -160,6 +166,7 @@ WHERE
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	t1.Pk,
 	t1.Id,
 	t1.StrValue,
 	t1.StrValueNullable
@@ -184,6 +191,7 @@ WHERE
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	t1.Pk,
 	t1.Id,
 	t1.StrValue,
 	t1.StrValueNullable
@@ -208,6 +216,7 @@ WHERE
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	t1.Pk,
 	t1.Id,
 	t1.StrValue,
 	t1.StrValueNullable
@@ -232,6 +241,7 @@ WHERE
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	t1.Pk,
 	t1.Id,
 	t1.StrValue,
 	t1.StrValueNullable
@@ -256,6 +266,7 @@ WHERE
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	t1.Pk,
 	t1.Id,
 	t1.StrValue,
 	t1.StrValueNullable
@@ -280,6 +291,7 @@ WHERE
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	t1.Pk,
 	t1.Id,
 	t1.StrValue,
 	t1.StrValueNullable
@@ -304,6 +316,7 @@ WHERE
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	t1.Pk,
 	t1.Id,
 	t1.StrValue,
 	t1.StrValueNullable
@@ -328,6 +341,7 @@ WHERE
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	t1.Pk,
 	t1.Id,
 	t1.StrValue,
 	t1.StrValueNullable
@@ -352,6 +366,7 @@ WHERE
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	t1.Pk,
 	t1.Id,
 	t1.StrValue,
 	t1.StrValueNullable
@@ -376,6 +391,7 @@ WHERE
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	t1.Pk,
 	t1.Id,
 	t1.StrValue,
 	t1.StrValueNullable
@@ -400,6 +416,7 @@ WHERE
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	t1.Pk,
 	t1.Id,
 	t1.StrValue,
 	t1.StrValueNullable
@@ -425,6 +442,7 @@ WHERE
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	t1.Pk,
 	t1.Id,
 	t1.StrValue,
 	t1.StrValueNullable

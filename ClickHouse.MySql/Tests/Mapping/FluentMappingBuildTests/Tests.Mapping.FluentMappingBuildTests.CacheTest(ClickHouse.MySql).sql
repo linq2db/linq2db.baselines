@@ -4,9 +4,12 @@ CREATE TABLE IF NOT EXISTS FluentTemp
 (
 	ID       Int32,
 	Value    Nullable(String),
-	LastName Nullable(String)
+	LastName Nullable(String),
+
+	PRIMARY KEY (ID)
 )
-ENGINE = Memory()
+ENGINE = MergeTree()
+ORDER BY ID
 
 -- ClickHouse.MySql ClickHouse
 
@@ -44,9 +47,12 @@ CREATE TABLE IF NOT EXISTS FluentTemp
 (
 	ID       Int32,
 	Value    Nullable(String),
-	LastName Nullable(String)
+	LastName Nullable(String),
+
+	PRIMARY KEY (ID)
 )
-ENGINE = Memory()
+ENGINE = MergeTree()
+ORDER BY ID
 
 -- ClickHouse.MySql ClickHouse
 
@@ -84,9 +90,12 @@ CREATE TABLE IF NOT EXISTS FluentTemp
 (
 	ID       Int32,
 	Column   Nullable(String),
-	LastName Nullable(String)
+	LastName Nullable(String),
+
+	PRIMARY KEY (ID)
 )
-ENGINE = Memory()
+ENGINE = MergeTree()
+ORDER BY ID
 
 -- ClickHouse.MySql ClickHouse
 
@@ -124,9 +133,12 @@ CREATE TABLE IF NOT EXISTS FluentTemp
 (
 	ID       Int32,
 	Column   Nullable(String),
-	LastName Nullable(String)
+	LastName Nullable(String),
+
+	PRIMARY KEY (ID)
 )
-ENGINE = Memory()
+ENGINE = MergeTree()
+ORDER BY ID
 
 -- ClickHouse.MySql ClickHouse
 

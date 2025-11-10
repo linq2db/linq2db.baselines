@@ -1,7 +1,9 @@
 ﻿-- ClickHouse.MySql ClickHouse
 
 SELECT
-	t.ID
+	t.PK,
+	t.ID,
+	t.GV
 FROM
 	test_in_1 t
 WHERE
@@ -23,14 +25,18 @@ WHERE
 -- ClickHouse.MySql ClickHouse
 
 SELECT
-	t1.ID
+	t1.PK,
+	t1.ID,
+	t1.GV
 FROM
 	test_in_1 t1
 
 -- ClickHouse.MySql ClickHouse
 
 SELECT
-	t1.ID
+	t1.PK,
+	t1.ID,
+	t1.GV
 FROM
 	test_in_2 t1
 

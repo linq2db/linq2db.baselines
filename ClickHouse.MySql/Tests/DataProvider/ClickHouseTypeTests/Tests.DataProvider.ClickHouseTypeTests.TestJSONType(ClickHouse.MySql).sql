@@ -1,6 +1,7 @@
 ﻿-- ClickHouse.MySql ClickHouse
 
 SELECT
+	t1.Id,
 	t1.Column,
 	t1.ColumnNullable
 FROM
@@ -16,11 +17,13 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	'null',
 	'null'
 )
@@ -28,6 +31,7 @@ VALUES
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	t1.Id,
 	t1.Column,
 	t1.ColumnNullable
 FROM
@@ -43,15 +47,17 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('null','null')
+(1,'null','null')
 
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	t1.Id,
 	t1.Column,
 	t1.ColumnNullable
 FROM
@@ -67,15 +73,17 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('null','null')
+(1,'null','null')
 
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	t1.Id,
 	t1.Column,
 	t1.ColumnNullable
 FROM
@@ -91,15 +99,17 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('null','null')
+(1,'null','null')
 
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	t1.Id,
 	t1.Column,
 	t1.ColumnNullable
 FROM
@@ -108,6 +118,7 @@ FROM
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	t1.Id,
 	t1.Column,
 	t1.ColumnNullable
 FROM
@@ -123,11 +134,13 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	'{ "prop": 333 }',
 	'{ "prop": 123 }'
 )
@@ -135,6 +148,7 @@ VALUES
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	t1.Id,
 	t1.Column,
 	t1.ColumnNullable
 FROM
@@ -150,15 +164,17 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('{ "prop": 333 }','{ "prop": 123 }')
+(1,'{ "prop": 333 }','{ "prop": 123 }')
 
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	t1.Id,
 	t1.Column,
 	t1.ColumnNullable
 FROM
@@ -174,15 +190,17 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('{ "prop": 333 }','{ "prop": 123 }')
+(1,'{ "prop": 333 }','{ "prop": 123 }')
 
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	t1.Id,
 	t1.Column,
 	t1.ColumnNullable
 FROM
@@ -198,15 +216,17 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('{ "prop": 333 }','{ "prop": 123 }')
+(1,'{ "prop": 333 }','{ "prop": 123 }')
 
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	t1.Id,
 	t1.Column,
 	t1.ColumnNullable
 FROM

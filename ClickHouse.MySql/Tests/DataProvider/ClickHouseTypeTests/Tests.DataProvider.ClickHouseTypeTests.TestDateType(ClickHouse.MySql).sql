@@ -1,6 +1,7 @@
 ﻿-- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -18,11 +19,13 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	toDate('2020-02-29'),
 	NULL
 )
@@ -30,6 +33,7 @@ VALUES
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -47,15 +51,17 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDate('2020-02-29'),NULL)
+(1,toDate('2020-02-29'),NULL)
 
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -73,15 +79,17 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDate('2020-02-29'),NULL)
+(1,toDate('2020-02-29'),NULL)
 
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -99,15 +107,17 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDate('2020-02-29'),NULL)
+(1,toDate('2020-02-29'),NULL)
 
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -118,6 +128,7 @@ WHERE
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -135,11 +146,13 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	toDate('1970-01-01'),
 	toDate('2149-06-06')
 )
@@ -147,6 +160,7 @@ VALUES
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -164,15 +178,17 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDate('1970-01-01'),toDate('2149-06-06'))
+(1,toDate('1970-01-01'),toDate('2149-06-06'))
 
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -190,15 +206,17 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDate('1970-01-01'),toDate('2149-06-06'))
+(1,toDate('1970-01-01'),toDate('2149-06-06'))
 
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -216,15 +234,17 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDate('1970-01-01'),toDate('2149-06-06'))
+(1,toDate('1970-01-01'),toDate('2149-06-06'))
 
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -235,6 +255,7 @@ WHERE
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -252,11 +273,13 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	toDate('2020-02-29'),
 	NULL
 )
@@ -264,6 +287,7 @@ VALUES
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -281,15 +305,17 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDate('2020-02-29'),NULL)
+(1,toDate('2020-02-29'),NULL)
 
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -307,15 +333,17 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDate('2020-02-29'),NULL)
+(1,toDate('2020-02-29'),NULL)
 
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -333,15 +361,17 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDate('2020-02-29'),NULL)
+(1,toDate('2020-02-29'),NULL)
 
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -352,6 +382,7 @@ WHERE
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -369,11 +400,13 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	toDate('1970-01-01'),
 	toDate('2149-06-06')
 )
@@ -381,6 +414,7 @@ VALUES
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -398,15 +432,17 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDate('1970-01-01'),toDate('2149-06-06'))
+(1,toDate('1970-01-01'),toDate('2149-06-06'))
 
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -424,15 +460,17 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDate('1970-01-01'),toDate('2149-06-06'))
+(1,toDate('1970-01-01'),toDate('2149-06-06'))
 
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -450,15 +488,17 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDate('1970-01-01'),toDate('2149-06-06'))
+(1,toDate('1970-01-01'),toDate('2149-06-06'))
 
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -469,6 +509,7 @@ WHERE
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -486,11 +527,13 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	toDate('2020-02-29'),
 	NULL
 )
@@ -498,6 +541,7 @@ VALUES
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -515,15 +559,17 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDate('2020-02-29'),NULL)
+(1,toDate('2020-02-29'),NULL)
 
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -541,15 +587,17 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDate('2020-02-29'),NULL)
+(1,toDate('2020-02-29'),NULL)
 
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -567,15 +615,17 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDate('2020-02-29'),NULL)
+(1,toDate('2020-02-29'),NULL)
 
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -586,6 +636,7 @@ WHERE
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -603,11 +654,13 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	toDate('1970-01-01'),
 	toDate('2149-06-06')
 )
@@ -615,6 +668,7 @@ VALUES
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -632,15 +686,17 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDate('1970-01-01'),toDate('2149-06-06'))
+(1,toDate('1970-01-01'),toDate('2149-06-06'))
 
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -658,15 +714,17 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDate('1970-01-01'),toDate('2149-06-06'))
+(1,toDate('1970-01-01'),toDate('2149-06-06'))
 
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -684,15 +742,17 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDate('1970-01-01'),toDate('2149-06-06'))
+(1,toDate('1970-01-01'),toDate('2149-06-06'))
 
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -703,6 +763,7 @@ WHERE
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -720,11 +781,13 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	toDate('2020-02-29'),
 	NULL
 )
@@ -732,6 +795,7 @@ VALUES
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -749,15 +813,17 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDate('2020-02-29'),NULL)
+(1,toDate('2020-02-29'),NULL)
 
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -775,15 +841,17 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDate('2020-02-29'),NULL)
+(1,toDate('2020-02-29'),NULL)
 
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -801,15 +869,17 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDate('2020-02-29'),NULL)
+(1,toDate('2020-02-29'),NULL)
 
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -820,6 +890,7 @@ WHERE
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -837,11 +908,13 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	toDate('1970-01-01'),
 	toDate('2149-06-06')
 )
@@ -849,6 +922,7 @@ VALUES
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -866,15 +940,17 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDate('1970-01-01'),toDate('2149-06-06'))
+(1,toDate('1970-01-01'),toDate('2149-06-06'))
 
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -892,15 +968,17 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDate('1970-01-01'),toDate('2149-06-06'))
+(1,toDate('1970-01-01'),toDate('2149-06-06'))
 
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -918,15 +996,17 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDate('1970-01-01'),toDate('2149-06-06'))
+(1,toDate('1970-01-01'),toDate('2149-06-06'))
 
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -937,6 +1017,7 @@ WHERE
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -954,11 +1035,13 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	toDate('2020-02-29'),
 	NULL
 )
@@ -966,6 +1049,7 @@ VALUES
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -983,15 +1067,17 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDate('2020-02-29'),NULL)
+(1,toDate('2020-02-29'),NULL)
 
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -1009,15 +1095,17 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDate('2020-02-29'),NULL)
+(1,toDate('2020-02-29'),NULL)
 
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -1035,15 +1123,17 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDate('2020-02-29'),NULL)
+(1,toDate('2020-02-29'),NULL)
 
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -1054,6 +1144,7 @@ WHERE
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -1071,11 +1162,13 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	toDate('1970-01-01'),
 	toDate('2149-06-06')
 )
@@ -1083,6 +1176,7 @@ VALUES
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -1100,15 +1194,17 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDate('1970-01-01'),toDate('2149-06-06'))
+(1,toDate('1970-01-01'),toDate('2149-06-06'))
 
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -1126,15 +1222,17 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDate('1970-01-01'),toDate('2149-06-06'))
+(1,toDate('1970-01-01'),toDate('2149-06-06'))
 
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -1152,15 +1250,17 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDate('1970-01-01'),toDate('2149-06-06'))
+(1,toDate('1970-01-01'),toDate('2149-06-06'))
 
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM

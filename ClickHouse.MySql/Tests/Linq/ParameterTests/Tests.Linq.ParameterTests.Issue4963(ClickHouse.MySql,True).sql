@@ -9,6 +9,7 @@ WHERE 1
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	t1.Id,
 	t1.Field
 FROM
 	Issue4963Table t1
