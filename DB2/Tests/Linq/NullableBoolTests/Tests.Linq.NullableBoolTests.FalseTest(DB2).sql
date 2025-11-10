@@ -1,6 +1,7 @@
 ﻿-- DB2 DB2.LUW DB2LUW
 
 SELECT
+	"t"."Id",
 	"t"."Value"
 FROM
 	"NullableBoolClass" "t"
@@ -10,6 +11,7 @@ WHERE
 -- DB2 DB2.LUW DB2LUW
 
 SELECT
+	"t"."Id",
 	"t"."Value"
 FROM
 	"NullableBoolClass" "t"
@@ -19,6 +21,7 @@ WHERE
 -- DB2 DB2.LUW DB2LUW
 
 SELECT
+	"t"."Id",
 	"t"."Value"
 FROM
 	"NullableBoolClass" "t"
@@ -28,6 +31,7 @@ WHERE
 -- DB2 DB2.LUW DB2LUW
 
 SELECT
+	"t"."Id",
 	"t"."Value"
 FROM
 	"NullableBoolClass" "t"

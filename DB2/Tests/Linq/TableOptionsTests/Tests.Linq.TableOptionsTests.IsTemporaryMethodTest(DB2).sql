@@ -19,14 +19,12 @@ ON COMMIT PRESERVE ROWS
 SELECT
 	"t1"."Id",
 	"t1"."Value",
-	"t2"."Id",
-	"t2"."Value",
-	"t3"."Id",
-	"t3"."Value"
+	"t1"."Id",
+	"t1"."Value",
+	"t1"."Id",
+	"t1"."Value"
 FROM
 	SESSION."TestTable" "t1"
-		INNER JOIN SESSION."TestTable" "t2" ON "t1"."Id" = "t2"."Id"
-		INNER JOIN SESSION."TestTable" "t3" ON "t2"."Id" = "t3"."Id"
 
 -- DB2 DB2.LUW DB2LUW
 
