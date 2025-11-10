@@ -1,6 +1,7 @@
 ﻿-- PostgreSQL.18 PostgreSQL
 
 SELECT
+	t."PK",
 	t."ID"
 FROM
 	test_in_1 t
@@ -14,11 +15,12 @@ WHERE
 			t."ID" = p."ID"
 	)
 ORDER BY
-	t."ID"
+	t."PK"
 
 -- PostgreSQL.18 PostgreSQL
 
 SELECT
+	t1."PK",
 	t1."ID"
 FROM
 	test_in_1 t1
@@ -26,6 +28,7 @@ FROM
 -- PostgreSQL.18 PostgreSQL
 
 SELECT
+	t1."PK",
 	t1."ID"
 FROM
 	test_in_2 t1
