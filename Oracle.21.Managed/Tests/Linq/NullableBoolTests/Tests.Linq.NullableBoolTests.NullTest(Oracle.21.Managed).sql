@@ -1,6 +1,7 @@
 ﻿-- Oracle.21.Managed Oracle.Managed Oracle12
 
 SELECT
+	t."Id",
 	t."Value"
 FROM
 	"NullableBoolClass" t
@@ -10,6 +11,7 @@ WHERE
 -- Oracle.21.Managed Oracle.Managed Oracle12
 
 SELECT
+	t."Id",
 	t."Value"
 FROM
 	"NullableBoolClass" t

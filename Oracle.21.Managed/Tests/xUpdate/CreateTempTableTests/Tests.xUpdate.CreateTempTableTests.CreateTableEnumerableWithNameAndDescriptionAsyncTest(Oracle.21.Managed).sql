@@ -15,7 +15,9 @@ BEGIN
 	EXECUTE IMMEDIATE '
 		CREATE GLOBAL TEMPORARY TABLE "TempTable"
 		(
-			"Name" VarChar(20) NOT NULL
+			"Name" VarChar(20) NOT NULL,
+
+			CONSTRAINT "PK_TempTable" PRIMARY KEY ("Name")
 		)
 		ON COMMIT PRESERVE ROWS
 	';

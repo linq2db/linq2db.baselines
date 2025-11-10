@@ -21,7 +21,9 @@ FETCH NEXT 1 ROWS ONLY
 
 CREATE TABLE "DropTableTest"
 (
-	ID Int NOT NULL
+	ID Int NOT NULL,
+
+	CONSTRAINT "PK_DropTableTest" PRIMARY KEY (ID)
 )
 
 -- Oracle.21.Managed Oracle.Managed Oracle12
