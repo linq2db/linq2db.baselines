@@ -1,18 +1,15 @@
 ﻿-- Firebird.2.5 Firebird
 
 SELECT
-	(
-		SELECT FIRST 1
-			"l"."ParentID" + 1
-		FROM
-			"Child" "l"
-	),
-	(
-		SELECT FIRST 1
-			"l_1"."ParentID"
-		FROM
-			"Child" "l_1"
-	)
+	"t1"."Id",
+	"t1"."ParentId"
 FROM
 	"Parent" "sep"
+		LEFT JOIN (
+			SELECT FIRST 1
+				"l"."ParentID" + 1 as "Id",
+				"l"."ParentID" as "ParentId"
+			FROM
+				"Child" "l"
+		) "t1" ON 1=1
 

@@ -5,7 +5,7 @@ SELECT
 FROM
 	(
 		SELECT
-			Floor(Power(CAST("p"."MoneyValue" AS Float), 3)) as "Value_1"
+			Floor(Power(CAST("p"."MoneyValue" AS DOUBLE PRECISION), 3)) as "Value_1"
 		FROM
 			"LinqDataTypes" "p"
 	) "t"
