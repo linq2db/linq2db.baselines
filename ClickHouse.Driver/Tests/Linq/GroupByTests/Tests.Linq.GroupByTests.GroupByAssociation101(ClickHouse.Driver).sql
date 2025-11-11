@@ -9,5 +9,5 @@ GROUP BY
 	a_Parent.ParentID,
 	a_Parent.Value1
 HAVING
-	max(g_1.ParentID) > 2
+	maxOrNull(g_1.ParentID) > 2
 
