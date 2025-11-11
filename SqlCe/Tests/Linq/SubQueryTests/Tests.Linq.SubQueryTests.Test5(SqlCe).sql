@@ -4,8 +4,8 @@ SET     @testValue = 3
 
 SELECT
 	[id_1].[c1],
-	[t1].[COUNT_1],
-	[t2].[COUNT_1] as [COUNT_2]
+	[t1].[Count_1],
+	[t2].[Count_1] as [Count_2]
 FROM
 	(
 		SELECT DISTINCT
@@ -20,7 +20,7 @@ FROM
 	) [id_1]
 		OUTER APPLY (
 			SELECT
-				COUNT(*) as [COUNT_1]
+				COUNT(*) as [Count_1]
 			FROM
 				[Child] [p]
 			WHERE
@@ -28,7 +28,7 @@ FROM
 		) [t1]
 		OUTER APPLY (
 			SELECT
-				COUNT(*) as [COUNT_1]
+				COUNT(*) as [Count_1]
 			FROM
 				[Child] [p_1]
 			WHERE

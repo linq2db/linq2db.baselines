@@ -1,7 +1,7 @@
 ﻿-- SqlCe
 
 SELECT
-	SUM([g_1].[ChildID]) as [SUM_1]
+	SUM([g_1].[ChildID]) as [Sum_1]
 FROM
 	[Child] [g_1]
 GROUP BY
