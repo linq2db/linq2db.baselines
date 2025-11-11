@@ -1,7 +1,20 @@
 ﻿-- SQLite.MS SQLite
 
 SELECT
-	IFNULL([t].[Value2], '')
+	[t1].[Id],
+	[t1].[Value1],
+	[t1].[Value2],
+	[t1].[Value3],
+	[t1].[Value4]
+FROM
+	[SampleClass] [t1]
+ORDER BY
+	[t1].[Id]
+
+-- SQLite.MS SQLite
+
+SELECT
+	Coalesce([t].[Value2], '')
 FROM
 	[SampleClass] [t]
 ORDER BY
@@ -10,7 +23,7 @@ ORDER BY
 -- SQLite.MS SQLite
 
 SELECT
-	IFNULL([t].[Value3], '')
+	Coalesce([t].[Value3], '')
 FROM
 	[SampleClass] [t]
 ORDER BY
@@ -19,7 +32,7 @@ ORDER BY
 -- SQLite.MS SQLite
 
 SELECT
-	SUBSTR(((IFNULL((' -> ' || [t].[Value3]), '') || IFNULL((' -> ' || [t].[Value1]), '')) || IFNULL((' -> ' || [t].[Value2]), '')), LENGTH(' -> ') + 1)
+	SUBSTR(Coalesce(' -> ' || [t].[Value3], '') || Coalesce(' -> ' || [t].[Value1], '') || Coalesce(' -> ' || [t].[Value2], ''), 5)
 FROM
 	[SampleClass] [t]
 ORDER BY
@@ -28,7 +41,7 @@ ORDER BY
 -- SQLite.MS SQLite
 
 SELECT
-	SUBSTR((IFNULL((' -> ' || [t].[Value3]), '') || IFNULL((' -> ' || [t].[Value3]), '')), LENGTH(' -> ') + 1)
+	SUBSTR(Coalesce(' -> ' || [t].[Value3], '') || Coalesce(' -> ' || [t].[Value3], ''), 5)
 FROM
 	[SampleClass] [t]
 ORDER BY
