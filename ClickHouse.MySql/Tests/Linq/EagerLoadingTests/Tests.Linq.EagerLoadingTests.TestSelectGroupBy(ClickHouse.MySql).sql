@@ -2,10 +2,10 @@
 
 SELECT
 	m_2.MasterId,
-	d.Id1,
-	d.Id2,
-	d.Value,
-	d.ByteValues
+	t3.Id1,
+	t3.Id2,
+	t3.Value_1,
+	t3.ByteValues
 FROM
 	(
 		SELECT DISTINCT
@@ -22,7 +22,24 @@ FROM
 			) t1
 				INNER JOIN DetailClass dd ON t1.Id1 = dd.MasterId
 	) m_2
-		INNER JOIN MasterClass d ON d.Id1 = m_2.MasterId
+		INNER JOIN (
+			SELECT
+				t2.Id1 as Id1
+			FROM
+				MasterClass t2
+			GROUP BY
+				t2.Id1
+		) d ON d.Id1 = m_2.MasterId
+		INNER JOIN (
+			SELECT
+				mm.Id1 as Id1,
+				mm.Id2 as Id2,
+				mm.Value as Value_1,
+				mm.ByteValues as ByteValues,
+				ROW_NUMBER() OVER (PARTITION BY mm.Id1 ORDER BY mm.Id1) as rn
+			FROM
+				MasterClass mm
+		) t3 ON t3.Id1 = m_2.MasterId AND d.Id1 = t3.Id1 AND t3.rn <= 1
 
 -- ClickHouse.MySql ClickHouse
 
