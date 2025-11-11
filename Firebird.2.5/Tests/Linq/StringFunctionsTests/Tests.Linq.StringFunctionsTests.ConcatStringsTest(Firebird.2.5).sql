@@ -1,6 +1,19 @@
 ﻿-- Firebird.2.5 Firebird
 
 SELECT
+	"t1"."Id",
+	"t1"."Value1",
+	"t1"."Value2",
+	"t1"."Value3",
+	"t1"."Value4"
+FROM
+	"SampleClass" "t1"
+ORDER BY
+	"t1"."Id"
+
+-- Firebird.2.5 Firebird
+
+SELECT
 	Coalesce("t"."Value2", '')
 FROM
 	"SampleClass" "t"
