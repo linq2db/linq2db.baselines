@@ -1,12 +1,12 @@
 ﻿-- MySql.8.0 MySql.8.0.MySql.Data MySql80
 
 SELECT
-	`t3`.`AVG_1`
+	`t3`.`Average`
 FROM
 	`MasterClass` `m_1`
 		LEFT JOIN LATERAL (
 			SELECT
-				AVG(CAST(`t2`.`DetailId` AS DOUBLE)) as `AVG_1`
+				AVG(CAST(`t2`.`DetailId` AS DOUBLE)) as `Average`
 			FROM
 				(
 					SELECT
