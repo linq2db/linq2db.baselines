@@ -9,7 +9,7 @@ SELECT
 	),
 	(
 		SELECT
-			LISTAGG(t2."Value1", ' -> ') WITHIN GROUP (ORDER BY ROWNUM)
+			LISTAGG(t2."Value1", ' -> ') WITHIN GROUP (ORDER BY t2."Value1")
 		FROM
 			"SampleClass" t2
 	)
