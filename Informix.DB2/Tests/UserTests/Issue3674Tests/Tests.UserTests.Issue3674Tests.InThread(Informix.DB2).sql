@@ -1,6 +1,7 @@
 ﻿-- Informix.DB2 Informix
 
 SELECT FIRST 1
+	p.Id,
 	p.Code,
 	p.DIM_Company,
 	p.DIM_Branch,

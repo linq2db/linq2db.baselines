@@ -1,6 +1,7 @@
 ﻿-- PostgreSQL.17 PostgreSQL.15 PostgreSQL
 
 SELECT
+	p."PK",
 	p."Id",
 	p."Date1",
 	p."Date2",
@@ -21,6 +22,7 @@ WHERE
 -- PostgreSQL.17 PostgreSQL.15 PostgreSQL
 
 SELECT
+	p."PK",
 	p."Id",
 	p."Date1",
 	p."Date2",

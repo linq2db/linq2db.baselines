@@ -1,6 +1,7 @@
 ﻿-- SQLite.Classic.MPM SQLite.Classic SQLite
 
 SELECT
+	[p].[Id],
 	[p].[Code],
 	[p].[DIM_Company],
 	[p].[DIM_Branch],

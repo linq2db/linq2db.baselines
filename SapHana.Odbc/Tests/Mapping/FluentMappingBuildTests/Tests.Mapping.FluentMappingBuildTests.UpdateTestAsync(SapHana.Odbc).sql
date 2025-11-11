@@ -4,7 +4,9 @@ CREATE COLUMN TABLE "FluentTemp"
 (
 	"ID"       Integer      NOT NULL,
 	"Value"    NVarChar(20)     NULL,
-	"LastName" NVarChar(20)     NULL
+	"LastName" NVarChar(20)     NULL,
+
+	PRIMARY KEY ("ID")
 )
 
 -- SapHana.Odbc SapHanaOdbc

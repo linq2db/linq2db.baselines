@@ -7,7 +7,9 @@ BEGIN
 		(
 			ID         Int          NOT NULL,
 			"Value"    NVarChar(20)     NULL,
-			"LastName" NVarChar(20)     NULL
+			"LastName" NVarChar(20)     NULL,
+
+			CONSTRAINT "PK_FluentTemp" PRIMARY KEY (ID)
 		)
 	';
 END
@@ -60,7 +62,9 @@ BEGIN
 		(
 			ID         Int          NOT NULL,
 			"Value"    NVarChar(20)     NULL,
-			"LastName" NVarChar(20)     NULL
+			"LastName" NVarChar(20)     NULL,
+
+			CONSTRAINT "PK_FluentTemp" PRIMARY KEY (ID)
 		)
 	';
 END
@@ -113,7 +117,9 @@ BEGIN
 		(
 			ID         Int          NOT NULL,
 			"Column"   NVarChar(20)     NULL,
-			"LastName" NVarChar(20)     NULL
+			"LastName" NVarChar(20)     NULL,
+
+			CONSTRAINT "PK_FluentTemp" PRIMARY KEY (ID)
 		)
 	';
 END
@@ -166,7 +172,9 @@ BEGIN
 		(
 			ID         Int          NOT NULL,
 			"Column"   NVarChar(20)     NULL,
-			"LastName" NVarChar(20)     NULL
+			"LastName" NVarChar(20)     NULL,
+
+			CONSTRAINT "PK_FluentTemp" PRIMARY KEY (ID)
 		)
 	';
 END

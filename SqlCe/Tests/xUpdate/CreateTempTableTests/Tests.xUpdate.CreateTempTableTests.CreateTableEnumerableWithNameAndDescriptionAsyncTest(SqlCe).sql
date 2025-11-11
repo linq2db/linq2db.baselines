@@ -6,7 +6,9 @@ DROP TABLE [TempTable]
 
 CREATE TABLE [TempTable]
 (
-	[Name] NVarChar(20) NOT NULL
+	[Name] NVarChar(20) NOT NULL,
+
+	CONSTRAINT [PK_TempTable] PRIMARY KEY ([Name])
 )
 
 -- SqlCe

@@ -7,7 +7,9 @@ IF (OBJECT_ID(N'[DropTableTest]', N'U') IS NOT NULL)
 
 CREATE TABLE [DropTableTest]
 (
-	[ID] Int NOT NULL
+	[ID] Int NOT NULL,
+
+	CONSTRAINT [PK_DropTableTest] PRIMARY KEY CLUSTERED ([ID])
 )
 
 -- SqlServer.2005

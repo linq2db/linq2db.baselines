@@ -31,6 +31,7 @@ GROUP BY
 -- Firebird.2.5 Firebird
 
 SELECT
+	"t1"."Id",
 	"t1"."GroupId",
 	"t1"."DataValue"
 FROM

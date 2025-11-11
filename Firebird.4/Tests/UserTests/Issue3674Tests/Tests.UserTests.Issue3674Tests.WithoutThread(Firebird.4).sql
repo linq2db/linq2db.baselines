@@ -1,6 +1,7 @@
 ﻿-- Firebird.4 Firebird4
 
 SELECT
+	"p"."Id",
 	"p"."Code",
 	"p"."DIM_Company",
 	"p"."DIM_Branch",

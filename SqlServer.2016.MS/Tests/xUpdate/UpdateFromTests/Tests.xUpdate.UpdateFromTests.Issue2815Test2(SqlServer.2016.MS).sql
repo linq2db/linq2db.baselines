@@ -16,6 +16,7 @@ WHERE
 -- SqlServer.2016.MS SqlServer.2016
 
 SELECT
+	[t1].[Id],
 	[t1].[SRC_BIC],
 	[t1].[DES_BIC],
 	[t1].[IDF],

@@ -4,7 +4,9 @@ CREATE TABLE IF NOT EXISTS `FluentTemp`
 (
 	`ID`       INT         NOT NULL,
 	`Value`    VARCHAR(20)     NULL,
-	`LastName` VARCHAR(20)     NULL
+	`LastName` VARCHAR(20)     NULL,
+
+	CONSTRAINT `PK_FluentTemp` PRIMARY KEY CLUSTERED (`ID`)
 )
 
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80

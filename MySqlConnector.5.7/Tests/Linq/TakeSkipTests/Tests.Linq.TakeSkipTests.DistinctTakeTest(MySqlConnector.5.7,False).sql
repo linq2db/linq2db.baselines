@@ -1,8 +1,8 @@
 ﻿-- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 
 SELECT DISTINCT
-	`t1`.`Value`
+	`r`.`Value`
 FROM
-	`TakeSkipClass` `t1`
+	`TakeSkipClass` `r`
 LIMIT 3
 

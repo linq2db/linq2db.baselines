@@ -6,7 +6,9 @@ DROP TABLE IF EXISTS temp.[TempTable]
 
 CREATE TEMPORARY TABLE IF NOT EXISTS temp.[TempTable]
 (
-	[Name] NVarChar(20) NOT NULL
+	[Name] NVarChar(20) NOT NULL,
+
+	CONSTRAINT [PK_TempTable] PRIMARY KEY ([Name])
 )
 
 -- SQLite.Classic.MPM SQLite.Classic SQLite

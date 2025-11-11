@@ -3,9 +3,12 @@
 CREATE TEMPORARY TABLE temp_table1
 (
 	ID    Int32,
-	Value Int32
+	Value Int32,
+
+	PRIMARY KEY (ID)
 )
-ENGINE = Memory()
+ENGINE = MergeTree()
+ORDER BY ID
 
 INSERT ASYNC BULK temp_table1(ID, Value)
 
@@ -14,9 +17,12 @@ INSERT ASYNC BULK temp_table1(ID, Value)
 CREATE TEMPORARY TABLE temp_table2
 (
 	ID    Int32,
-	Value Int32
+	Value Int32,
+
+	PRIMARY KEY (ID)
 )
-ENGINE = Memory()
+ENGINE = MergeTree()
+ORDER BY ID
 
 -- ClickHouse.Driver ClickHouse
 

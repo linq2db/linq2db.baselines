@@ -1,6 +1,7 @@
 ﻿-- SapHana.Odbc SapHanaOdbc
 
 SELECT
+	"p"."PK",
 	"p"."Id",
 	"p"."Date1",
 	"p"."Date2",
@@ -26,6 +27,7 @@ WHERE
 -- SapHana.Odbc SapHanaOdbc
 
 SELECT
+	"p"."PK",
 	"p"."Id",
 	"p"."Date1",
 	"p"."Date2",

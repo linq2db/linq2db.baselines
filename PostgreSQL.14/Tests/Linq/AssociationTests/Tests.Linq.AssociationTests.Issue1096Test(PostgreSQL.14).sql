@@ -1,4 +1,6 @@
 ﻿-- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+DECLARE @Pk Integer -- Int32
+SET     @Pk = 1
 DECLARE @Id Integer -- Int32
 SET     @Id = 1
 DECLARE @TargetName Text(12) -- String
@@ -6,28 +8,13 @@ SET     @TargetName = 'bda.Requests'
 
 INSERT INTO "Issue1096Task"
 (
+	"Pk",
 	"Id",
 	"TargetName"
 )
 VALUES
 (
-	:Id,
-	:TargetName
-)
-
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
-DECLARE @Id Integer -- Int32
-SET     @Id = 1
-DECLARE @TargetName Text(12) -- String
-SET     @TargetName = 'bda.Requests'
-
-INSERT INTO "Issue1096Task"
-(
-	"Id",
-	"TargetName"
-)
-VALUES
-(
+	:Pk,
 	:Id,
 	:TargetName
 )
@@ -56,6 +43,7 @@ VALUES
 -- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
 
 SELECT DISTINCT
+	t."Pk",
 	t."Id",
 	t."TargetName",
 	"a_ActualStage"."Id",

@@ -7,7 +7,9 @@ DROP TABLE IF EXISTS [tempdb]..[#TempTable]
 IF (OBJECT_ID(N'[tempdb]..[#TempTable]', N'U') IS NULL)
 	CREATE TABLE [tempdb]..[#TempTable]
 	(
-		[Name] NVarChar(20) NOT NULL
+		[Name] NVarChar(20) NOT NULL,
+
+		PRIMARY KEY CLUSTERED ([Name])
 	)
 
 INSERT ASYNC BULK [tempdb]..[#TempTable](Name)

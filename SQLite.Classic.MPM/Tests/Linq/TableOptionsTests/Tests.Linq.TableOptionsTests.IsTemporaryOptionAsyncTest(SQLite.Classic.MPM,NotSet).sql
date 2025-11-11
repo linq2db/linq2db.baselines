@@ -3,7 +3,9 @@
 CREATE TEMPORARY TABLE temp.[temp_table1]
 (
 	[ID]    INTEGER NOT NULL,
-	[Value] INTEGER NOT NULL
+	[Value] INTEGER NOT NULL,
+
+	CONSTRAINT [PK_temp_table1] PRIMARY KEY ([ID])
 )
 
 -- SQLite.Classic.MPM SQLite.Classic SQLite
@@ -21,7 +23,9 @@ VALUES
 CREATE TEMPORARY TABLE temp.[temp_table2]
 (
 	[ID]    INTEGER NOT NULL,
-	[Value] INTEGER NOT NULL
+	[Value] INTEGER NOT NULL,
+
+	CONSTRAINT [PK_temp_table2] PRIMARY KEY ([ID])
 )
 
 -- SQLite.Classic.MPM SQLite.Classic SQLite

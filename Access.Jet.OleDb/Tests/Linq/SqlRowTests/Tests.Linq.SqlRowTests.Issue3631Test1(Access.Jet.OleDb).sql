@@ -1,6 +1,7 @@
 ﻿-- Access.Jet.OleDb AccessOleDb
 
 SELECT
+	[x].[Id],
 	[x].[Country],
 	[x].[State]
 FROM

@@ -1,6 +1,7 @@
 ﻿-- PostgreSQL.18 PostgreSQL
 
 SELECT
+	x."Id",
 	x."Country",
 	x."State"
 FROM

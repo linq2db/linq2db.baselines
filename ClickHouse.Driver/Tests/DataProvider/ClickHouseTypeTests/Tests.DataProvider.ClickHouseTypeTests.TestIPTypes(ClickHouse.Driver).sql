@@ -1,6 +1,7 @@
 ﻿-- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -18,11 +19,13 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	toIPv4('0.0.0.0'),
 	NULL
 )
@@ -30,6 +33,7 @@ VALUES
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -47,15 +51,17 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toIPv4('0.0.0.0'),NULL)
+(1,toIPv4('0.0.0.0'),NULL)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -69,11 +75,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -87,11 +94,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -102,6 +110,7 @@ WHERE
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -119,11 +128,13 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	toIPv4('18.52.86.120'),
 	toIPv4('135.101.67.33')
 )
@@ -131,6 +142,7 @@ VALUES
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -148,15 +160,17 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toIPv4('18.52.86.120'),toIPv4('135.101.67.33'))
+(1,toIPv4('18.52.86.120'),toIPv4('135.101.67.33'))
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -170,11 +184,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -188,11 +203,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -203,6 +219,7 @@ WHERE
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -220,11 +237,13 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	'0.0.0.0'::IPv4,
 	NULL
 )
@@ -232,6 +251,7 @@ VALUES
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -249,15 +269,17 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('0.0.0.0'::IPv4,NULL)
+(1,'0.0.0.0'::IPv4,NULL)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -271,11 +293,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -289,11 +312,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -304,6 +328,7 @@ WHERE
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -321,11 +346,13 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	'127.0.0.2'::IPv4,
 	'172.1.1.1'::IPv4
 )
@@ -333,6 +360,7 @@ VALUES
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -350,15 +378,17 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('127.0.0.2'::IPv4,'172.1.1.1'::IPv4)
+(1,'127.0.0.2'::IPv4,'172.1.1.1'::IPv4)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -372,11 +402,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -390,11 +421,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -405,6 +437,7 @@ WHERE
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -422,11 +455,13 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	toIPv4('0.0.0.0'),
 	NULL
 )
@@ -434,6 +469,7 @@ VALUES
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -451,15 +487,17 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toIPv4('0.0.0.0'),NULL)
+(1,toIPv4('0.0.0.0'),NULL)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -473,11 +511,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -491,11 +530,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -506,6 +546,7 @@ WHERE
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -523,11 +564,13 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	toIPv4('127.0.0.2'),
 	toIPv4('172.1.1.1')
 )
@@ -535,6 +578,7 @@ VALUES
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -552,15 +596,17 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toIPv4('127.0.0.2'),toIPv4('172.1.1.1'))
+(1,toIPv4('127.0.0.2'),toIPv4('172.1.1.1'))
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -574,11 +620,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -592,11 +639,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -607,6 +655,7 @@ WHERE
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -624,11 +673,13 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	toIPv6('0.0.0.0'),
 	NULL
 )
@@ -636,6 +687,7 @@ VALUES
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -653,15 +705,17 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toIPv6('0.0.0.0'),NULL)
+(1,toIPv6('0.0.0.0'),NULL)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -675,11 +729,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -693,11 +748,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -708,6 +764,7 @@ WHERE
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -725,11 +782,13 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	toIPv6('127.0.0.2'),
 	toIPv6('2001:44c8:129:2632:33:0:252:2')
 )
@@ -737,6 +796,7 @@ VALUES
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -754,15 +814,17 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toIPv6('127.0.0.2'),toIPv6('2001:44c8:129:2632:33:0:252:2'))
+(1,toIPv6('127.0.0.2'),toIPv6('2001:44c8:129:2632:33:0:252:2'))
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -776,11 +838,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -794,11 +857,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -809,6 +873,7 @@ WHERE
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -827,11 +892,13 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	'0000:0000:0000:0000:0000:ffff:7f00:0002'::IPv6,
 	NULL
 )
@@ -839,6 +906,7 @@ VALUES
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -857,15 +925,17 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('0000:0000:0000:0000:0000:ffff:7f00:0002'::IPv6,NULL)
+(1,'0000:0000:0000:0000:0000:ffff:7f00:0002'::IPv6,NULL)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -880,11 +950,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -899,11 +970,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -915,6 +987,7 @@ WHERE
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -932,11 +1005,13 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	'127.0.0.2'::IPv6,
 	'2001:44c8:129:2632:33:0:252:2'::IPv6
 )
@@ -944,6 +1019,7 @@ VALUES
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -961,15 +1037,17 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('127.0.0.2'::IPv6,'2001:44c8:129:2632:33:0:252:2'::IPv6)
+(1,'127.0.0.2'::IPv6,'2001:44c8:129:2632:33:0:252:2'::IPv6)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -983,11 +1061,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -1001,11 +1080,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -1016,6 +1096,7 @@ WHERE
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -1033,11 +1114,13 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	'0:0:0:0:0:ffff:7f00:0002'::IPv6,
 	'::ffff:7f00:2'::IPv6
 )
@@ -1045,6 +1128,7 @@ VALUES
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -1062,15 +1146,17 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('0:0:0:0:0:ffff:7f00:0002'::IPv6,'::ffff:7f00:2'::IPv6)
+(1,'0:0:0:0:0:ffff:7f00:0002'::IPv6,'::ffff:7f00:2'::IPv6)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -1084,11 +1170,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -1102,11 +1189,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -1117,6 +1205,7 @@ WHERE
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -1134,11 +1223,13 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	toIPv6('0.0.0.0'),
 	NULL
 )
@@ -1146,6 +1237,7 @@ VALUES
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -1163,15 +1255,17 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toIPv6('0.0.0.0'),NULL)
+(1,toIPv6('0.0.0.0'),NULL)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -1185,11 +1279,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -1203,11 +1298,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -1218,6 +1314,7 @@ WHERE
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -1235,11 +1332,13 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	toIPv6('127.0.0.2'),
 	toIPv6('2001:44c8:129:2632:33:0:252:2')
 )
@@ -1247,6 +1346,7 @@ VALUES
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -1264,15 +1364,17 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toIPv6('127.0.0.2'),toIPv6('2001:44c8:129:2632:33:0:252:2'))
+(1,toIPv6('127.0.0.2'),toIPv6('2001:44c8:129:2632:33:0:252:2'))
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -1286,11 +1388,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -1304,11 +1407,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -1319,6 +1423,7 @@ WHERE
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -1337,11 +1442,13 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	'0000:0000:0000:0000:0000:0000:0000:0000'::IPv6,
 	NULL
 )
@@ -1349,6 +1456,7 @@ VALUES
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -1367,15 +1475,17 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('0000:0000:0000:0000:0000:0000:0000:0000'::IPv6,NULL)
+(1,'0000:0000:0000:0000:0000:0000:0000:0000'::IPv6,NULL)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -1390,11 +1500,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -1409,11 +1520,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -1425,6 +1537,7 @@ WHERE
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -1442,11 +1555,13 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	'::ffff:1.2.3.4'::IPv6,
 	'0102:0304:0506:0708:090a:0b0c:0d0e:0f10'::IPv6
 )
@@ -1454,6 +1569,7 @@ VALUES
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -1471,15 +1587,17 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('::ffff:1.2.3.4'::IPv6,'0102:0304:0506:0708:090a:0b0c:0d0e:0f10'::IPv6)
+(1,'::ffff:1.2.3.4'::IPv6,'0102:0304:0506:0708:090a:0b0c:0d0e:0f10'::IPv6)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -1493,11 +1611,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -1511,11 +1630,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM

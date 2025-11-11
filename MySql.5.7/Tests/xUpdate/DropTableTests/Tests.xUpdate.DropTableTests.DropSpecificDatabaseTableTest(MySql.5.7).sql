@@ -14,7 +14,9 @@ LIMIT 1
 
 CREATE TABLE `DropTableTest`
 (
-	`ID` INT NOT NULL
+	`ID` INT NOT NULL,
+
+	CONSTRAINT `PK_DropTableTest` PRIMARY KEY CLUSTERED (`ID`)
 )
 
 -- MySql.5.7 MySql.5.7.MySql.Data MySql57

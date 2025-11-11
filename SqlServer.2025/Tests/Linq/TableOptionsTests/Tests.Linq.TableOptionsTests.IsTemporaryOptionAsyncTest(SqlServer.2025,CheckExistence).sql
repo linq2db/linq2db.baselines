@@ -4,7 +4,9 @@ IF (OBJECT_ID(N'[tempdb]..[#temp_table1]', N'U') IS NULL)
 	CREATE TABLE [tempdb]..[#temp_table1]
 	(
 		[ID]    Int NOT NULL,
-		[Value] Int NOT NULL
+		[Value] Int NOT NULL,
+
+		PRIMARY KEY CLUSTERED ([ID])
 	)
 
 INSERT ASYNC BULK [tempdb]..[#temp_table1](ID, Value)
@@ -15,7 +17,9 @@ IF (OBJECT_ID(N'[tempdb]..[#temp_table2]', N'U') IS NULL)
 	CREATE TABLE [tempdb]..[#temp_table2]
 	(
 		[ID]    Int NOT NULL,
-		[Value] Int NOT NULL
+		[Value] Int NOT NULL,
+
+		PRIMARY KEY CLUSTERED ([ID])
 	)
 
 -- SqlServer.2025 SqlServer.2022

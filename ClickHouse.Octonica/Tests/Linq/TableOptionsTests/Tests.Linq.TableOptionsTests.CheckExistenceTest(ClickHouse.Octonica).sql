@@ -2,9 +2,12 @@
 
 CREATE TABLE IF NOT EXISTS DisposableTable
 (
-	ID Int32
+	ID Int32,
+
+	PRIMARY KEY (ID)
 )
-ENGINE = Memory()
+ENGINE = MergeTree()
+ORDER BY ID
 
 -- ClickHouse.Octonica ClickHouse
 

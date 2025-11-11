@@ -1,6 +1,7 @@
 ﻿-- Access.Ace.OleDb AccessOleDb
 
 SELECT
+	[x].[Id],
 	[x].[Country],
 	[x].[State]
 FROM

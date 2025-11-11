@@ -6,7 +6,9 @@ DROP TABLE IF EXISTS "DropTableTest"
 
 CREATE TABLE "DropTableTest"
 (
-	"ID" Int NOT NULL
+	"ID" Int NOT NULL,
+
+	CONSTRAINT "PK_DropTableTest" PRIMARY KEY ("ID")
 )
 
 -- PostgreSQL.15 PostgreSQL

@@ -5,6 +5,7 @@ DECLARE @take Integer(4) -- Int32
 SET     @take = 2
 
 SELECT SKIP @skip FIRST @take
+	t1.Id,
 	t1."Value"
 FROM
 	TakeSkipClass t1

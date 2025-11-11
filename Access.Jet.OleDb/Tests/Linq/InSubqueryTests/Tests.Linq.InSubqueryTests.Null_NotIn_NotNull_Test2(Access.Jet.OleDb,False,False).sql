@@ -1,7 +1,9 @@
 ﻿-- Access.Jet.OleDb AccessOleDb
 
 SELECT
-	[t].[ID]
+	[t].[PK],
+	[t].[ID],
+	[t].[GV]
 FROM
 	[test_in_1] [t]
 WHERE
@@ -15,13 +17,16 @@ WHERE
 -- Access.Jet.OleDb AccessOleDb
 
 SELECT
-	[t1].[ID]
+	[t1].[PK],
+	[t1].[ID],
+	[t1].[GV]
 FROM
 	[test_in_1] [t1]
 
 -- Access.Jet.OleDb AccessOleDb
 
 SELECT
+	[t1].[PK],
 	[t1].[ID]
 FROM
 	[test_in_2] [t1]

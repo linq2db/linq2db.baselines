@@ -3,7 +3,9 @@
 CREATE TABLE [tempdb]..[#TestTable]
 (
 	[Id]    Int NOT NULL,
-	[Value] Int NOT NULL
+	[Value] Int NOT NULL,
+
+	PRIMARY KEY CLUSTERED ([Id])
 )
 
 -- SqlServer.2014.MS SqlServer.2014

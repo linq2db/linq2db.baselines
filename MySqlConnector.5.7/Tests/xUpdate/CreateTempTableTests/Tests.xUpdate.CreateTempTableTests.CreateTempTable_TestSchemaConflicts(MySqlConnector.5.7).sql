@@ -16,7 +16,9 @@ VALUES
 CREATE TABLE IF NOT EXISTS `TempTable`
 (
 	`Id`      INT           NOT NULL,
-	`Renamed` VARCHAR(4000)     NULL
+	`Renamed` VARCHAR(4000)     NULL,
+
+	CONSTRAINT `PK_TempTable` PRIMARY KEY CLUSTERED (`Id`)
 )
 
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57

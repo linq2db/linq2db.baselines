@@ -1,6 +1,7 @@
 ﻿-- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -18,11 +19,13 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	toInt64(0),
 	NULL
 )
@@ -30,6 +33,7 @@ VALUES
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -47,15 +51,17 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toInt64(0),NULL)
+(1,toInt64(0),NULL)
 
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -73,15 +79,17 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toInt64(0),NULL)
+(1,toInt64(0),NULL)
 
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -99,15 +107,17 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toInt64(0),NULL)
+(1,toInt64(0),NULL)
 
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -118,6 +128,7 @@ WHERE
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -135,11 +146,13 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	toInt64(9223372036854775807),
 	toInt64(-9223372036854775808)
 )
@@ -147,6 +160,7 @@ VALUES
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -164,15 +178,17 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toInt64(9223372036854775807),toInt64(-9223372036854775808))
+(1,toInt64(9223372036854775807),toInt64(-9223372036854775808))
 
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -190,15 +206,17 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toInt64(9223372036854775807),toInt64(-9223372036854775808))
+(1,toInt64(9223372036854775807),toInt64(-9223372036854775808))
 
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -216,15 +234,17 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toInt64(9223372036854775807),toInt64(-9223372036854775808))
+(1,toInt64(9223372036854775807),toInt64(-9223372036854775808))
 
 -- ClickHouse.MySql ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM

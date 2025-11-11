@@ -3,7 +3,9 @@
 CREATE COLUMN TABLE "tmptbl1"
 (
 	"ID"    Integer       NOT NULL,
-	"Value" NVarChar(255)     NULL
+	"Value" NVarChar(255)     NULL,
+
+	PRIMARY KEY ("ID")
 )
 
 -- SapHana.Odbc SapHanaOdbc
@@ -45,7 +47,9 @@ VALUES
 CREATE COLUMN TABLE "tmptbl2"
 (
 	"ID"    Integer       NOT NULL,
-	"Value" NVarChar(255) NOT NULL
+	"Value" NVarChar(255) NOT NULL,
+
+	PRIMARY KEY ("ID")
 )
 
 -- SapHana.Odbc SapHanaOdbc
@@ -87,7 +91,9 @@ VALUES
 CREATE COLUMN TABLE "tmptbl3"
 (
 	"ID"    Integer       NOT NULL,
-	"Value" NVarChar(255)     NULL
+	"Value" NVarChar(255)     NULL,
+
+	PRIMARY KEY ("ID")
 )
 
 -- SapHana.Odbc SapHanaOdbc

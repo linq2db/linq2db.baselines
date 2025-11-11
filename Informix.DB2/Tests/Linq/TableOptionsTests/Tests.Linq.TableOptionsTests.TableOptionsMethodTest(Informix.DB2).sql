@@ -7,7 +7,9 @@ DROP TABLE IF EXISTS TestTable
 CREATE TEMP TABLE TestTable
 (
 	Id      Int NOT NULL,
-	"Value" Int NOT NULL
+	"Value" Int NOT NULL,
+
+	PRIMARY KEY (Id)
 )
 
 -- Informix.DB2 Informix

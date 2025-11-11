@@ -1,6 +1,7 @@
 ﻿-- SqlServer.2017.MS SqlServer.2017
 
 SELECT
+	[p].[PK],
 	[p].[Id],
 	[p].[Date1],
 	[p].[Date2],
@@ -21,6 +22,7 @@ WHERE
 -- SqlServer.2017.MS SqlServer.2017
 
 SELECT
+	[p].[PK],
 	[p].[Id],
 	[p].[Date1],
 	[p].[Date2],

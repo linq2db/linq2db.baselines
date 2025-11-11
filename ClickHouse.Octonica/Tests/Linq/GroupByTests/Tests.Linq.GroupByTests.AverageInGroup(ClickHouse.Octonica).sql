@@ -31,6 +31,7 @@ GROUP BY
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
+	t1.Id,
 	t1.GroupId,
 	t1.DataValue
 FROM

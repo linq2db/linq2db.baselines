@@ -6,7 +6,9 @@ DROP TABLE "TempTable"
 
 CREATE COLUMN TABLE "TempTable"
 (
-	"Name" NVarChar(20) NOT NULL
+	"Name" NVarChar(20) NOT NULL,
+
+	PRIMARY KEY ("Name")
 )
 
 -- SapHana.Odbc SapHanaOdbc

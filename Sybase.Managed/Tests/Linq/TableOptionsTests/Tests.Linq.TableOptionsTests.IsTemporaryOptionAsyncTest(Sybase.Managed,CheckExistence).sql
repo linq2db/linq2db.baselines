@@ -4,7 +4,9 @@ IF (OBJECT_ID(N'#temp_table1') IS NULL)
 	CREATE TABLE #temp_table1
 	(
 		[ID]    Int NOT NULL,
-		[Value] Int NOT NULL
+		[Value] Int NOT NULL,
+
+		CONSTRAINT [PK_temp_table1] PRIMARY KEY CLUSTERED ([ID])
 	)
 
 -- Sybase.Managed Sybase
@@ -22,7 +24,9 @@ IF (OBJECT_ID(N'#temp_table2') IS NULL)
 	CREATE TABLE #temp_table2
 	(
 		[ID]    Int NOT NULL,
-		[Value] Int NOT NULL
+		[Value] Int NOT NULL,
+
+		CONSTRAINT [PK_temp_table2] PRIMARY KEY CLUSTERED ([ID])
 	)
 
 -- Sybase.Managed Sybase

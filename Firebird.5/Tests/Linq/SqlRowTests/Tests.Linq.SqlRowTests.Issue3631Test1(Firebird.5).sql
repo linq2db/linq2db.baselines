@@ -1,6 +1,7 @@
 ﻿-- Firebird.5 Firebird4
 
 SELECT
+	"x"."Id",
 	"x"."Country",
 	"x"."State"
 FROM

@@ -1,6 +1,7 @@
 ﻿-- ClickHouse.Octonica ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -18,11 +19,13 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	false,
 	NULL
 )
@@ -30,6 +33,7 @@ VALUES
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -47,15 +51,17 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(false,NULL)
+(1,false,NULL)
 
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -69,11 +75,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT INTO `TypeTable``2`(Column, ColumnNullable) VALUES
+INSERT INTO `TypeTable``2`(Id, Column, ColumnNullable) VALUES
 
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -87,11 +94,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT INTO `TypeTable``2`(Column, ColumnNullable) VALUES
+INSERT INTO `TypeTable``2`(Id, Column, ColumnNullable) VALUES
 
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -102,6 +110,7 @@ WHERE
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -119,11 +128,13 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	true,
 	false
 )
@@ -131,6 +142,7 @@ VALUES
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -148,15 +160,17 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(true,false)
+(1,true,false)
 
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -170,11 +184,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT INTO `TypeTable``2`(Column, ColumnNullable) VALUES
+INSERT INTO `TypeTable``2`(Id, Column, ColumnNullable) VALUES
 
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -188,11 +203,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT INTO `TypeTable``2`(Column, ColumnNullable) VALUES
+INSERT INTO `TypeTable``2`(Id, Column, ColumnNullable) VALUES
 
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -203,6 +219,7 @@ WHERE
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -220,11 +237,13 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	false,
 	true
 )
@@ -232,6 +251,7 @@ VALUES
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -249,15 +269,17 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(false,true)
+(1,false,true)
 
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -271,11 +293,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT INTO `TypeTable``2`(Column, ColumnNullable) VALUES
+INSERT INTO `TypeTable``2`(Id, Column, ColumnNullable) VALUES
 
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -289,11 +312,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT INTO `TypeTable``2`(Column, ColumnNullable) VALUES
+INSERT INTO `TypeTable``2`(Id, Column, ColumnNullable) VALUES
 
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -304,6 +328,7 @@ WHERE
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -321,11 +346,13 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	false,
 	NULL
 )
@@ -333,6 +360,7 @@ VALUES
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -350,15 +378,17 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(false,NULL)
+(1,false,NULL)
 
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -372,11 +402,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT INTO `TypeTable``2`(Column, ColumnNullable) VALUES
+INSERT INTO `TypeTable``2`(Id, Column, ColumnNullable) VALUES
 
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -390,11 +421,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT INTO `TypeTable``2`(Column, ColumnNullable) VALUES
+INSERT INTO `TypeTable``2`(Id, Column, ColumnNullable) VALUES
 
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -405,6 +437,7 @@ WHERE
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -422,11 +455,13 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	true,
 	false
 )
@@ -434,6 +469,7 @@ VALUES
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -451,15 +487,17 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(true,false)
+(1,true,false)
 
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -473,11 +511,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT INTO `TypeTable``2`(Column, ColumnNullable) VALUES
+INSERT INTO `TypeTable``2`(Id, Column, ColumnNullable) VALUES
 
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -491,11 +530,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT INTO `TypeTable``2`(Column, ColumnNullable) VALUES
+INSERT INTO `TypeTable``2`(Id, Column, ColumnNullable) VALUES
 
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -506,6 +546,7 @@ WHERE
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -523,11 +564,13 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	false,
 	true
 )
@@ -535,6 +578,7 @@ VALUES
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -552,15 +596,17 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(false,true)
+(1,false,true)
 
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -574,11 +620,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT INTO `TypeTable``2`(Column, ColumnNullable) VALUES
+INSERT INTO `TypeTable``2`(Id, Column, ColumnNullable) VALUES
 
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -592,11 +639,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT INTO `TypeTable``2`(Column, ColumnNullable) VALUES
+INSERT INTO `TypeTable``2`(Id, Column, ColumnNullable) VALUES
 
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -607,6 +655,7 @@ WHERE
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -624,11 +673,13 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	toUInt8(0),
 	NULL
 )
@@ -636,6 +687,7 @@ VALUES
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -653,15 +705,17 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toUInt8(0),NULL)
+(1,toUInt8(0),NULL)
 
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -675,11 +729,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT INTO `TypeTable``2`(Column, ColumnNullable) VALUES
+INSERT INTO `TypeTable``2`(Id, Column, ColumnNullable) VALUES
 
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -693,11 +748,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT INTO `TypeTable``2`(Column, ColumnNullable) VALUES
+INSERT INTO `TypeTable``2`(Id, Column, ColumnNullable) VALUES
 
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -708,6 +764,7 @@ WHERE
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -725,11 +782,13 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	toUInt8(1),
 	toUInt8(0)
 )
@@ -737,6 +796,7 @@ VALUES
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -754,15 +814,17 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toUInt8(1),toUInt8(0))
+(1,toUInt8(1),toUInt8(0))
 
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -776,11 +838,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT INTO `TypeTable``2`(Column, ColumnNullable) VALUES
+INSERT INTO `TypeTable``2`(Id, Column, ColumnNullable) VALUES
 
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -794,11 +857,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT INTO `TypeTable``2`(Column, ColumnNullable) VALUES
+INSERT INTO `TypeTable``2`(Id, Column, ColumnNullable) VALUES
 
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -809,6 +873,7 @@ WHERE
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -826,11 +891,13 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	toUInt8(0),
 	toUInt8(1)
 )
@@ -838,6 +905,7 @@ VALUES
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -855,15 +923,17 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toUInt8(0),toUInt8(1))
+(1,toUInt8(0),toUInt8(1))
 
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -877,11 +947,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT INTO `TypeTable``2`(Column, ColumnNullable) VALUES
+INSERT INTO `TypeTable``2`(Id, Column, ColumnNullable) VALUES
 
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -895,11 +966,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT INTO `TypeTable``2`(Column, ColumnNullable) VALUES
+INSERT INTO `TypeTable``2`(Id, Column, ColumnNullable) VALUES
 
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM

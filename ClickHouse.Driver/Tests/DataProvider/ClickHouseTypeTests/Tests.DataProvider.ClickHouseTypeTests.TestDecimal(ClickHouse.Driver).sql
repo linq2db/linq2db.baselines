@@ -1,6 +1,7 @@
 ﻿-- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -18,11 +19,13 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	toDecimal128('0', 10),
 	NULL
 )
@@ -30,6 +33,7 @@ VALUES
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -47,15 +51,17 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal128('0', 10),NULL)
+(1,toDecimal128('0', 10),NULL)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -69,11 +75,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -87,11 +94,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -102,6 +110,7 @@ WHERE
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -120,11 +129,13 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	toDecimal128('7922816251426433759.3543950335', 10),
 	toDecimal128('-7922816251426433759.3543950335', 10)
 )
@@ -132,6 +143,7 @@ VALUES
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -150,15 +162,17 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal128('7922816251426433759.3543950335', 10),toDecimal128('-7922816251426433759.3543950335', 10))
+(1,toDecimal128('7922816251426433759.3543950335', 10),toDecimal128('-7922816251426433759.3543950335', 10))
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -173,11 +187,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -192,11 +207,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -208,6 +224,7 @@ WHERE
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -226,11 +243,13 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	toDecimal256('999999999999999999999999999999999999999999999999999999999999999999.9999999999', 10),
 	toDecimal256('-999999999999999999999999999999999999999999999999999999999999999999.9999999999', 10)
 )
@@ -238,6 +257,7 @@ VALUES
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -256,15 +276,17 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal256('999999999999999999999999999999999999999999999999999999999999999999.9999999999', 10),toDecimal256('-999999999999999999999999999999999999999999999999999999999999999999.9999999999', 10))
+(1,toDecimal256('999999999999999999999999999999999999999999999999999999999999999999.9999999999', 10),toDecimal256('-999999999999999999999999999999999999999999999999999999999999999999.9999999999', 10))
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -279,11 +301,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -298,11 +321,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -314,6 +338,7 @@ WHERE
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -331,11 +356,13 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	toDecimal32('0', 0),
 	NULL
 )
@@ -343,6 +370,7 @@ VALUES
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -360,15 +388,17 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal32('0', 0),NULL)
+(1,toDecimal32('0', 0),NULL)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -382,11 +412,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -400,11 +431,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -415,6 +447,7 @@ WHERE
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -432,11 +465,13 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	toDecimal32('-9', 0),
 	toDecimal32('9', 0)
 )
@@ -444,6 +479,7 @@ VALUES
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -461,15 +497,17 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal32('-9', 0),toDecimal32('9', 0))
+(1,toDecimal32('-9', 0),toDecimal32('9', 0))
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -483,11 +521,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -501,11 +540,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -516,6 +556,7 @@ WHERE
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -533,11 +574,13 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	'0'::Decimal32(0),
 	NULL
 )
@@ -545,6 +588,7 @@ VALUES
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -562,15 +606,17 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('0'::Decimal32(0),NULL)
+(1,'0'::Decimal32(0),NULL)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -584,11 +630,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -602,11 +649,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -617,6 +665,7 @@ WHERE
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -634,11 +683,13 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	'-9'::Decimal32(0),
 	'9'::Decimal32(0)
 )
@@ -646,6 +697,7 @@ VALUES
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -663,15 +715,17 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('-9'::Decimal32(0),'9'::Decimal32(0))
+(1,'-9'::Decimal32(0),'9'::Decimal32(0))
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -685,11 +739,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -703,11 +758,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -718,6 +774,7 @@ WHERE
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -735,11 +792,13 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	toDecimal32('-9', 0),
 	toDecimal32('9', 0)
 )
@@ -747,6 +806,7 @@ VALUES
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -764,15 +824,17 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal32('-9', 0),toDecimal32('9', 0))
+(1,toDecimal32('-9', 0),toDecimal32('9', 0))
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -786,11 +848,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -804,11 +867,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -819,6 +883,7 @@ WHERE
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -836,11 +901,13 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	toDecimal32('0', 1),
 	NULL
 )
@@ -848,6 +915,7 @@ VALUES
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -865,15 +933,17 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal32('0', 1),NULL)
+(1,toDecimal32('0', 1),NULL)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -887,11 +957,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -905,11 +976,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -920,6 +992,7 @@ WHERE
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -937,11 +1010,13 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	toDecimal32('-0.9', 1),
 	toDecimal32('0.9', 1)
 )
@@ -949,6 +1024,7 @@ VALUES
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -966,15 +1042,17 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal32('-0.9', 1),toDecimal32('0.9', 1))
+(1,toDecimal32('-0.9', 1),toDecimal32('0.9', 1))
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -988,11 +1066,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -1006,11 +1085,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -1021,6 +1101,7 @@ WHERE
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -1038,11 +1119,13 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	'0'::Decimal32(1),
 	NULL
 )
@@ -1050,6 +1133,7 @@ VALUES
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -1067,15 +1151,17 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('0'::Decimal32(1),NULL)
+(1,'0'::Decimal32(1),NULL)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -1089,11 +1175,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -1107,11 +1194,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -1122,6 +1210,7 @@ WHERE
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -1139,11 +1228,13 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	'-0.9'::Decimal32(1),
 	'0.9'::Decimal32(1)
 )
@@ -1151,6 +1242,7 @@ VALUES
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -1168,15 +1260,17 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('-0.9'::Decimal32(1),'0.9'::Decimal32(1))
+(1,'-0.9'::Decimal32(1),'0.9'::Decimal32(1))
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -1190,11 +1284,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -1208,11 +1303,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -1223,6 +1319,7 @@ WHERE
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -1240,11 +1337,13 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	toDecimal32('-0.9', 1),
 	toDecimal32('0.9', 1)
 )
@@ -1252,6 +1351,7 @@ VALUES
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -1269,15 +1369,17 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal32('-0.9', 1),toDecimal32('0.9', 1))
+(1,toDecimal32('-0.9', 1),toDecimal32('0.9', 1))
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -1291,11 +1393,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -1309,11 +1412,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -1324,6 +1428,7 @@ WHERE
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -1341,11 +1446,13 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	toDecimal32('0', 0),
 	NULL
 )
@@ -1353,6 +1460,7 @@ VALUES
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -1370,15 +1478,17 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal32('0', 0),NULL)
+(1,toDecimal32('0', 0),NULL)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -1392,11 +1502,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -1410,11 +1521,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -1425,6 +1537,7 @@ WHERE
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -1442,11 +1555,13 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	toDecimal32('-99', 0),
 	toDecimal32('99', 0)
 )
@@ -1454,6 +1569,7 @@ VALUES
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -1471,15 +1587,17 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal32('-99', 0),toDecimal32('99', 0))
+(1,toDecimal32('-99', 0),toDecimal32('99', 0))
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -1493,11 +1611,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -1511,11 +1630,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -1526,6 +1646,7 @@ WHERE
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -1543,11 +1664,13 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	'0'::Decimal32(0),
 	NULL
 )
@@ -1555,6 +1678,7 @@ VALUES
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -1572,15 +1696,17 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('0'::Decimal32(0),NULL)
+(1,'0'::Decimal32(0),NULL)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -1594,11 +1720,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -1612,11 +1739,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -1627,6 +1755,7 @@ WHERE
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -1644,11 +1773,13 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	'-99'::Decimal32(0),
 	'99'::Decimal32(0)
 )
@@ -1656,6 +1787,7 @@ VALUES
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -1673,15 +1805,17 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('-99'::Decimal32(0),'99'::Decimal32(0))
+(1,'-99'::Decimal32(0),'99'::Decimal32(0))
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -1695,11 +1829,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -1713,11 +1848,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -1728,6 +1864,7 @@ WHERE
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -1745,11 +1882,13 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	toDecimal32('-99', 0),
 	toDecimal32('99', 0)
 )
@@ -1757,6 +1896,7 @@ VALUES
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -1774,15 +1914,17 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal32('-99', 0),toDecimal32('99', 0))
+(1,toDecimal32('-99', 0),toDecimal32('99', 0))
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -1796,11 +1938,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -1814,11 +1957,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -1829,6 +1973,7 @@ WHERE
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -1846,11 +1991,13 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	toDecimal32('0', 1),
 	NULL
 )
@@ -1858,6 +2005,7 @@ VALUES
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -1875,15 +2023,17 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal32('0', 1),NULL)
+(1,toDecimal32('0', 1),NULL)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -1897,11 +2047,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -1915,11 +2066,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -1930,6 +2082,7 @@ WHERE
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -1947,11 +2100,13 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	toDecimal32('-9.9', 1),
 	toDecimal32('9.9', 1)
 )
@@ -1959,6 +2114,7 @@ VALUES
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -1976,15 +2132,17 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal32('-9.9', 1),toDecimal32('9.9', 1))
+(1,toDecimal32('-9.9', 1),toDecimal32('9.9', 1))
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -1998,11 +2156,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -2016,11 +2175,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -2031,6 +2191,7 @@ WHERE
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -2048,11 +2209,13 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	'0'::Decimal32(1),
 	NULL
 )
@@ -2060,6 +2223,7 @@ VALUES
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -2077,15 +2241,17 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('0'::Decimal32(1),NULL)
+(1,'0'::Decimal32(1),NULL)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -2099,11 +2265,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -2117,11 +2284,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -2132,6 +2300,7 @@ WHERE
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -2149,11 +2318,13 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	'-9.9'::Decimal32(1),
 	'9.9'::Decimal32(1)
 )
@@ -2161,6 +2332,7 @@ VALUES
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -2178,15 +2350,17 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('-9.9'::Decimal32(1),'9.9'::Decimal32(1))
+(1,'-9.9'::Decimal32(1),'9.9'::Decimal32(1))
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -2200,11 +2374,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -2218,11 +2393,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -2233,6 +2409,7 @@ WHERE
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -2250,11 +2427,13 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	toDecimal32('-9.9', 1),
 	toDecimal32('9.9', 1)
 )
@@ -2262,6 +2441,7 @@ VALUES
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -2279,15 +2459,17 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal32('-9.9', 1),toDecimal32('9.9', 1))
+(1,toDecimal32('-9.9', 1),toDecimal32('9.9', 1))
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -2301,11 +2483,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -2319,11 +2502,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -2334,6 +2518,7 @@ WHERE
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -2351,11 +2536,13 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	toDecimal32('0', 2),
 	NULL
 )
@@ -2363,6 +2550,7 @@ VALUES
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -2380,15 +2568,17 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal32('0', 2),NULL)
+(1,toDecimal32('0', 2),NULL)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -2402,11 +2592,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -2420,11 +2611,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -2435,6 +2627,7 @@ WHERE
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -2452,11 +2645,13 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	toDecimal32('-0.99', 2),
 	toDecimal32('0.99', 2)
 )
@@ -2464,6 +2659,7 @@ VALUES
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -2481,15 +2677,17 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal32('-0.99', 2),toDecimal32('0.99', 2))
+(1,toDecimal32('-0.99', 2),toDecimal32('0.99', 2))
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -2503,11 +2701,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -2521,11 +2720,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -2536,6 +2736,7 @@ WHERE
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -2553,11 +2754,13 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	'0'::Decimal32(2),
 	NULL
 )
@@ -2565,6 +2768,7 @@ VALUES
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -2582,15 +2786,17 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('0'::Decimal32(2),NULL)
+(1,'0'::Decimal32(2),NULL)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -2604,11 +2810,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -2622,11 +2829,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -2637,6 +2845,7 @@ WHERE
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -2654,11 +2863,13 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	'-0.99'::Decimal32(2),
 	'0.99'::Decimal32(2)
 )
@@ -2666,6 +2877,7 @@ VALUES
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -2683,15 +2895,17 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('-0.99'::Decimal32(2),'0.99'::Decimal32(2))
+(1,'-0.99'::Decimal32(2),'0.99'::Decimal32(2))
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -2705,11 +2919,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -2723,11 +2938,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -2738,6 +2954,7 @@ WHERE
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -2755,11 +2972,13 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	toDecimal32('-0.99', 2),
 	toDecimal32('0.99', 2)
 )
@@ -2767,6 +2986,7 @@ VALUES
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -2784,15 +3004,17 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal32('-0.99', 2),toDecimal32('0.99', 2))
+(1,toDecimal32('-0.99', 2),toDecimal32('0.99', 2))
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -2806,11 +3028,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -2824,11 +3047,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -2839,6 +3063,7 @@ WHERE
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -2856,11 +3081,13 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	toDecimal32('0', 0),
 	NULL
 )
@@ -2868,6 +3095,7 @@ VALUES
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -2885,15 +3113,17 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal32('0', 0),NULL)
+(1,toDecimal32('0', 0),NULL)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -2907,11 +3137,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -2925,11 +3156,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -2940,6 +3172,7 @@ WHERE
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -2957,11 +3190,13 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	toDecimal32('-99999999', 0),
 	toDecimal32('99999999', 0)
 )
@@ -2969,6 +3204,7 @@ VALUES
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -2986,15 +3222,17 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal32('-99999999', 0),toDecimal32('99999999', 0))
+(1,toDecimal32('-99999999', 0),toDecimal32('99999999', 0))
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -3008,11 +3246,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -3026,11 +3265,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -3041,6 +3281,7 @@ WHERE
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -3058,11 +3299,13 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	'0'::Decimal32(0),
 	NULL
 )
@@ -3070,6 +3313,7 @@ VALUES
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -3087,15 +3331,17 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('0'::Decimal32(0),NULL)
+(1,'0'::Decimal32(0),NULL)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -3109,11 +3355,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -3127,11 +3374,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -3142,6 +3390,7 @@ WHERE
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -3159,11 +3408,13 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	'-99999999'::Decimal32(0),
 	'99999999'::Decimal32(0)
 )
@@ -3171,6 +3422,7 @@ VALUES
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -3188,15 +3440,17 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('-99999999'::Decimal32(0),'99999999'::Decimal32(0))
+(1,'-99999999'::Decimal32(0),'99999999'::Decimal32(0))
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -3210,11 +3464,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -3228,11 +3483,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -3243,6 +3499,7 @@ WHERE
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -3260,11 +3517,13 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	toDecimal32('-99999999', 0),
 	toDecimal32('99999999', 0)
 )
@@ -3272,6 +3531,7 @@ VALUES
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -3289,15 +3549,17 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal32('-99999999', 0),toDecimal32('99999999', 0))
+(1,toDecimal32('-99999999', 0),toDecimal32('99999999', 0))
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -3311,11 +3573,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -3329,11 +3592,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -3344,6 +3608,7 @@ WHERE
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -3361,11 +3626,13 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	toDecimal32('0', 1),
 	NULL
 )
@@ -3373,6 +3640,7 @@ VALUES
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -3390,15 +3658,17 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal32('0', 1),NULL)
+(1,toDecimal32('0', 1),NULL)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -3412,11 +3682,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -3430,11 +3701,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -3445,6 +3717,7 @@ WHERE
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -3462,11 +3735,13 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	toDecimal32('-9999999.9', 1),
 	toDecimal32('9999999.9', 1)
 )
@@ -3474,6 +3749,7 @@ VALUES
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -3491,15 +3767,17 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal32('-9999999.9', 1),toDecimal32('9999999.9', 1))
+(1,toDecimal32('-9999999.9', 1),toDecimal32('9999999.9', 1))
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -3513,11 +3791,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -3531,11 +3810,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -3546,6 +3826,7 @@ WHERE
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -3563,11 +3844,13 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	'0'::Decimal32(1),
 	NULL
 )
@@ -3575,6 +3858,7 @@ VALUES
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -3592,15 +3876,17 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('0'::Decimal32(1),NULL)
+(1,'0'::Decimal32(1),NULL)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -3614,11 +3900,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -3632,11 +3919,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -3647,6 +3935,7 @@ WHERE
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -3664,11 +3953,13 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	'-9999999.9'::Decimal32(1),
 	'9999999.9'::Decimal32(1)
 )
@@ -3676,6 +3967,7 @@ VALUES
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -3693,15 +3985,17 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('-9999999.9'::Decimal32(1),'9999999.9'::Decimal32(1))
+(1,'-9999999.9'::Decimal32(1),'9999999.9'::Decimal32(1))
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -3715,11 +4009,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -3733,11 +4028,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -3748,6 +4044,7 @@ WHERE
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -3765,11 +4062,13 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	toDecimal32('-9999999.9', 1),
 	toDecimal32('9999999.9', 1)
 )
@@ -3777,6 +4076,7 @@ VALUES
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -3794,15 +4094,17 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal32('-9999999.9', 1),toDecimal32('9999999.9', 1))
+(1,toDecimal32('-9999999.9', 1),toDecimal32('9999999.9', 1))
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -3816,11 +4118,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -3834,11 +4137,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -3849,6 +4153,7 @@ WHERE
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -3866,11 +4171,13 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	toDecimal32('0', 7),
 	NULL
 )
@@ -3878,6 +4185,7 @@ VALUES
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -3895,15 +4203,17 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal32('0', 7),NULL)
+(1,toDecimal32('0', 7),NULL)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -3917,11 +4227,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -3935,11 +4246,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -3950,6 +4262,7 @@ WHERE
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -3967,11 +4280,13 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	toDecimal32('-9.9999999', 7),
 	toDecimal32('9.9999999', 7)
 )
@@ -3979,6 +4294,7 @@ VALUES
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -3996,15 +4312,17 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal32('-9.9999999', 7),toDecimal32('9.9999999', 7))
+(1,toDecimal32('-9.9999999', 7),toDecimal32('9.9999999', 7))
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -4018,11 +4336,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -4036,11 +4355,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -4051,6 +4371,7 @@ WHERE
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -4068,11 +4389,13 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	'0'::Decimal32(7),
 	NULL
 )
@@ -4080,6 +4403,7 @@ VALUES
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -4097,15 +4421,17 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('0'::Decimal32(7),NULL)
+(1,'0'::Decimal32(7),NULL)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -4119,11 +4445,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -4137,11 +4464,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -4152,6 +4480,7 @@ WHERE
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -4169,11 +4498,13 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	'-9.9999999'::Decimal32(7),
 	'9.9999999'::Decimal32(7)
 )
@@ -4181,6 +4512,7 @@ VALUES
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -4198,15 +4530,17 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('-9.9999999'::Decimal32(7),'9.9999999'::Decimal32(7))
+(1,'-9.9999999'::Decimal32(7),'9.9999999'::Decimal32(7))
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -4220,11 +4554,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -4238,11 +4573,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -4253,6 +4589,7 @@ WHERE
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -4270,11 +4607,13 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	toDecimal32('-9.9999999', 7),
 	toDecimal32('9.9999999', 7)
 )
@@ -4282,6 +4621,7 @@ VALUES
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -4299,15 +4639,17 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal32('-9.9999999', 7),toDecimal32('9.9999999', 7))
+(1,toDecimal32('-9.9999999', 7),toDecimal32('9.9999999', 7))
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -4321,11 +4663,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -4339,11 +4682,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -4354,6 +4698,7 @@ WHERE
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -4371,11 +4716,13 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	toDecimal32('0', 8),
 	NULL
 )
@@ -4383,6 +4730,7 @@ VALUES
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -4400,15 +4748,17 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal32('0', 8),NULL)
+(1,toDecimal32('0', 8),NULL)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -4422,11 +4772,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -4440,11 +4791,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -4455,6 +4807,7 @@ WHERE
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -4472,11 +4825,13 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	toDecimal32('-0.99999999', 8),
 	toDecimal32('0.99999999', 8)
 )
@@ -4484,6 +4839,7 @@ VALUES
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -4501,15 +4857,17 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal32('-0.99999999', 8),toDecimal32('0.99999999', 8))
+(1,toDecimal32('-0.99999999', 8),toDecimal32('0.99999999', 8))
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -4523,11 +4881,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -4541,11 +4900,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -4556,6 +4916,7 @@ WHERE
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -4573,11 +4934,13 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	'0'::Decimal32(8),
 	NULL
 )
@@ -4585,6 +4948,7 @@ VALUES
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -4602,15 +4966,17 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('0'::Decimal32(8),NULL)
+(1,'0'::Decimal32(8),NULL)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -4624,11 +4990,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -4642,11 +5009,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -4657,6 +5025,7 @@ WHERE
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -4674,11 +5043,13 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	'-0.99999999'::Decimal32(8),
 	'0.99999999'::Decimal32(8)
 )
@@ -4686,6 +5057,7 @@ VALUES
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -4703,15 +5075,17 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('-0.99999999'::Decimal32(8),'0.99999999'::Decimal32(8))
+(1,'-0.99999999'::Decimal32(8),'0.99999999'::Decimal32(8))
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -4725,11 +5099,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -4743,11 +5118,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -4758,6 +5134,7 @@ WHERE
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -4775,11 +5152,13 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	toDecimal32('-0.99999999', 8),
 	toDecimal32('0.99999999', 8)
 )
@@ -4787,6 +5166,7 @@ VALUES
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -4804,15 +5184,17 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal32('-0.99999999', 8),toDecimal32('0.99999999', 8))
+(1,toDecimal32('-0.99999999', 8),toDecimal32('0.99999999', 8))
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -4826,11 +5208,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -4844,11 +5227,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -4859,6 +5243,7 @@ WHERE
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -4876,11 +5261,13 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	toDecimal32('0', 0),
 	NULL
 )
@@ -4888,6 +5275,7 @@ VALUES
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -4905,15 +5293,17 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal32('0', 0),NULL)
+(1,toDecimal32('0', 0),NULL)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -4927,11 +5317,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -4945,11 +5336,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -4960,6 +5352,7 @@ WHERE
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -4977,11 +5370,13 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	toDecimal32('-999999999', 0),
 	toDecimal32('999999999', 0)
 )
@@ -4989,6 +5384,7 @@ VALUES
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -5006,15 +5402,17 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal32('-999999999', 0),toDecimal32('999999999', 0))
+(1,toDecimal32('-999999999', 0),toDecimal32('999999999', 0))
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -5028,11 +5426,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -5046,11 +5445,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -5061,6 +5461,7 @@ WHERE
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -5078,11 +5479,13 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	'0'::Decimal32(0),
 	NULL
 )
@@ -5090,6 +5493,7 @@ VALUES
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -5107,15 +5511,17 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('0'::Decimal32(0),NULL)
+(1,'0'::Decimal32(0),NULL)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -5129,11 +5535,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -5147,11 +5554,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -5162,6 +5570,7 @@ WHERE
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -5179,11 +5588,13 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	'-999999999'::Decimal32(0),
 	'999999999'::Decimal32(0)
 )
@@ -5191,6 +5602,7 @@ VALUES
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -5208,15 +5620,17 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('-999999999'::Decimal32(0),'999999999'::Decimal32(0))
+(1,'-999999999'::Decimal32(0),'999999999'::Decimal32(0))
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -5230,11 +5644,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -5248,11 +5663,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -5263,6 +5679,7 @@ WHERE
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -5280,11 +5697,13 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	toDecimal32('-999999999', 0),
 	toDecimal32('999999999', 0)
 )
@@ -5292,6 +5711,7 @@ VALUES
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -5309,15 +5729,17 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal32('-999999999', 0),toDecimal32('999999999', 0))
+(1,toDecimal32('-999999999', 0),toDecimal32('999999999', 0))
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -5331,11 +5753,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -5349,11 +5772,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -5364,6 +5788,7 @@ WHERE
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -5381,11 +5806,13 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	toDecimal32('0', 1),
 	NULL
 )
@@ -5393,6 +5820,7 @@ VALUES
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -5410,15 +5838,17 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal32('0', 1),NULL)
+(1,toDecimal32('0', 1),NULL)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -5432,11 +5862,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -5450,11 +5881,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -5465,6 +5897,7 @@ WHERE
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -5482,11 +5915,13 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	toDecimal32('-99999999.9', 1),
 	toDecimal32('99999999.9', 1)
 )
@@ -5494,6 +5929,7 @@ VALUES
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -5511,15 +5947,17 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal32('-99999999.9', 1),toDecimal32('99999999.9', 1))
+(1,toDecimal32('-99999999.9', 1),toDecimal32('99999999.9', 1))
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -5533,11 +5971,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -5551,11 +5990,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -5566,6 +6006,7 @@ WHERE
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -5583,11 +6024,13 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	'0'::Decimal32(1),
 	NULL
 )
@@ -5595,6 +6038,7 @@ VALUES
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -5612,15 +6056,17 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('0'::Decimal32(1),NULL)
+(1,'0'::Decimal32(1),NULL)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -5634,11 +6080,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -5652,11 +6099,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -5667,6 +6115,7 @@ WHERE
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -5684,11 +6133,13 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	'-99999999.9'::Decimal32(1),
 	'99999999.9'::Decimal32(1)
 )
@@ -5696,6 +6147,7 @@ VALUES
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -5713,15 +6165,17 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('-99999999.9'::Decimal32(1),'99999999.9'::Decimal32(1))
+(1,'-99999999.9'::Decimal32(1),'99999999.9'::Decimal32(1))
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -5735,11 +6189,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -5753,11 +6208,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -5768,6 +6224,7 @@ WHERE
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -5785,11 +6242,13 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	toDecimal32('-99999999.9', 1),
 	toDecimal32('99999999.9', 1)
 )
@@ -5797,6 +6256,7 @@ VALUES
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -5814,15 +6274,17 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal32('-99999999.9', 1),toDecimal32('99999999.9', 1))
+(1,toDecimal32('-99999999.9', 1),toDecimal32('99999999.9', 1))
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -5836,11 +6298,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -5854,11 +6317,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -5869,6 +6333,7 @@ WHERE
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -5886,11 +6351,13 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	toDecimal32('0', 8),
 	NULL
 )
@@ -5898,6 +6365,7 @@ VALUES
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -5915,15 +6383,17 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal32('0', 8),NULL)
+(1,toDecimal32('0', 8),NULL)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -5937,11 +6407,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -5955,11 +6426,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -5970,6 +6442,7 @@ WHERE
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -5987,11 +6460,13 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	toDecimal32('-9.99999999', 8),
 	toDecimal32('9.99999999', 8)
 )
@@ -5999,6 +6474,7 @@ VALUES
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -6016,15 +6492,17 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal32('-9.99999999', 8),toDecimal32('9.99999999', 8))
+(1,toDecimal32('-9.99999999', 8),toDecimal32('9.99999999', 8))
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -6038,11 +6516,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -6056,11 +6535,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -6071,6 +6551,7 @@ WHERE
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -6088,11 +6569,13 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	'0'::Decimal32(8),
 	NULL
 )
@@ -6100,6 +6583,7 @@ VALUES
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -6117,15 +6601,17 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('0'::Decimal32(8),NULL)
+(1,'0'::Decimal32(8),NULL)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -6139,11 +6625,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -6157,11 +6644,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -6172,6 +6660,7 @@ WHERE
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -6189,11 +6678,13 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	'-9.99999999'::Decimal32(8),
 	'9.99999999'::Decimal32(8)
 )
@@ -6201,6 +6692,7 @@ VALUES
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -6218,15 +6710,17 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('-9.99999999'::Decimal32(8),'9.99999999'::Decimal32(8))
+(1,'-9.99999999'::Decimal32(8),'9.99999999'::Decimal32(8))
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -6240,11 +6734,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -6258,11 +6753,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -6273,6 +6769,7 @@ WHERE
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -6290,11 +6787,13 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	toDecimal32('-9.99999999', 8),
 	toDecimal32('9.99999999', 8)
 )
@@ -6302,6 +6801,7 @@ VALUES
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -6319,15 +6819,17 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal32('-9.99999999', 8),toDecimal32('9.99999999', 8))
+(1,toDecimal32('-9.99999999', 8),toDecimal32('9.99999999', 8))
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -6341,11 +6843,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -6359,11 +6862,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -6374,6 +6878,7 @@ WHERE
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -6391,11 +6896,13 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	toDecimal32('0', 9),
 	NULL
 )
@@ -6403,6 +6910,7 @@ VALUES
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -6420,15 +6928,17 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal32('0', 9),NULL)
+(1,toDecimal32('0', 9),NULL)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -6442,11 +6952,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -6460,11 +6971,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -6475,6 +6987,7 @@ WHERE
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -6492,11 +7005,13 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	toDecimal32('-0.999999999', 9),
 	toDecimal32('0.999999999', 9)
 )
@@ -6504,6 +7019,7 @@ VALUES
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -6521,15 +7037,17 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal32('-0.999999999', 9),toDecimal32('0.999999999', 9))
+(1,toDecimal32('-0.999999999', 9),toDecimal32('0.999999999', 9))
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -6543,11 +7061,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -6561,11 +7080,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -6576,6 +7096,7 @@ WHERE
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -6593,11 +7114,13 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	'0'::Decimal32(9),
 	NULL
 )
@@ -6605,6 +7128,7 @@ VALUES
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -6622,15 +7146,17 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('0'::Decimal32(9),NULL)
+(1,'0'::Decimal32(9),NULL)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -6644,11 +7170,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -6662,11 +7189,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -6677,6 +7205,7 @@ WHERE
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -6694,11 +7223,13 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	'-0.999999999'::Decimal32(9),
 	'0.999999999'::Decimal32(9)
 )
@@ -6706,6 +7237,7 @@ VALUES
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -6723,15 +7255,17 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('-0.999999999'::Decimal32(9),'0.999999999'::Decimal32(9))
+(1,'-0.999999999'::Decimal32(9),'0.999999999'::Decimal32(9))
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -6745,11 +7279,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -6763,11 +7298,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -6778,6 +7314,7 @@ WHERE
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -6795,11 +7332,13 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	toDecimal32('-0.999999999', 9),
 	toDecimal32('0.999999999', 9)
 )
@@ -6807,6 +7346,7 @@ VALUES
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -6824,15 +7364,17 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal32('-0.999999999', 9),toDecimal32('0.999999999', 9))
+(1,toDecimal32('-0.999999999', 9),toDecimal32('0.999999999', 9))
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -6846,11 +7388,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -6864,11 +7407,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -6879,6 +7423,7 @@ WHERE
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -6896,11 +7441,13 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	toDecimal64('0', 0),
 	NULL
 )
@@ -6908,6 +7455,7 @@ VALUES
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -6925,15 +7473,17 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal64('0', 0),NULL)
+(1,toDecimal64('0', 0),NULL)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -6947,11 +7497,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -6965,11 +7516,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -6980,6 +7532,7 @@ WHERE
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -6997,11 +7550,13 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	toDecimal64('-9999999999', 0),
 	toDecimal64('9999999999', 0)
 )
@@ -7009,6 +7564,7 @@ VALUES
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -7026,15 +7582,17 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal64('-9999999999', 0),toDecimal64('9999999999', 0))
+(1,toDecimal64('-9999999999', 0),toDecimal64('9999999999', 0))
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -7048,11 +7606,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -7066,11 +7625,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -7081,6 +7641,7 @@ WHERE
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -7098,11 +7659,13 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	'0'::Decimal64(0),
 	NULL
 )
@@ -7110,6 +7673,7 @@ VALUES
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -7127,15 +7691,17 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('0'::Decimal64(0),NULL)
+(1,'0'::Decimal64(0),NULL)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -7149,11 +7715,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -7167,11 +7734,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -7182,6 +7750,7 @@ WHERE
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -7199,11 +7768,13 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	'-9999999999'::Decimal64(0),
 	'9999999999'::Decimal64(0)
 )
@@ -7211,6 +7782,7 @@ VALUES
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -7228,15 +7800,17 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('-9999999999'::Decimal64(0),'9999999999'::Decimal64(0))
+(1,'-9999999999'::Decimal64(0),'9999999999'::Decimal64(0))
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -7250,11 +7824,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -7268,11 +7843,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -7283,6 +7859,7 @@ WHERE
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -7300,11 +7877,13 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	toDecimal64('-9999999999', 0),
 	toDecimal64('9999999999', 0)
 )
@@ -7312,6 +7891,7 @@ VALUES
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -7329,15 +7909,17 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal64('-9999999999', 0),toDecimal64('9999999999', 0))
+(1,toDecimal64('-9999999999', 0),toDecimal64('9999999999', 0))
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -7351,11 +7933,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -7369,11 +7952,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -7384,6 +7968,7 @@ WHERE
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -7401,11 +7986,13 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	toDecimal64('0', 1),
 	NULL
 )
@@ -7413,6 +8000,7 @@ VALUES
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -7430,15 +8018,17 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal64('0', 1),NULL)
+(1,toDecimal64('0', 1),NULL)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -7452,11 +8042,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -7470,11 +8061,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -7485,6 +8077,7 @@ WHERE
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -7502,11 +8095,13 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	toDecimal64('-999999999.9', 1),
 	toDecimal64('999999999.9', 1)
 )
@@ -7514,6 +8109,7 @@ VALUES
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -7531,15 +8127,17 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal64('-999999999.9', 1),toDecimal64('999999999.9', 1))
+(1,toDecimal64('-999999999.9', 1),toDecimal64('999999999.9', 1))
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -7553,11 +8151,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -7571,11 +8170,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -7586,6 +8186,7 @@ WHERE
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -7603,11 +8204,13 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	'0'::Decimal64(1),
 	NULL
 )
@@ -7615,6 +8218,7 @@ VALUES
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -7632,15 +8236,17 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('0'::Decimal64(1),NULL)
+(1,'0'::Decimal64(1),NULL)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -7654,11 +8260,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -7672,11 +8279,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -7687,6 +8295,7 @@ WHERE
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -7704,11 +8313,13 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	'-999999999.9'::Decimal64(1),
 	'999999999.9'::Decimal64(1)
 )
@@ -7716,6 +8327,7 @@ VALUES
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -7733,15 +8345,17 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('-999999999.9'::Decimal64(1),'999999999.9'::Decimal64(1))
+(1,'-999999999.9'::Decimal64(1),'999999999.9'::Decimal64(1))
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -7755,11 +8369,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -7773,11 +8388,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -7788,6 +8404,7 @@ WHERE
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -7805,11 +8422,13 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	toDecimal64('-999999999.9', 1),
 	toDecimal64('999999999.9', 1)
 )
@@ -7817,6 +8436,7 @@ VALUES
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -7834,15 +8454,17 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal64('-999999999.9', 1),toDecimal64('999999999.9', 1))
+(1,toDecimal64('-999999999.9', 1),toDecimal64('999999999.9', 1))
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -7856,11 +8478,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -7874,11 +8497,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -7889,6 +8513,7 @@ WHERE
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -7906,11 +8531,13 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	toDecimal64('0', 9),
 	NULL
 )
@@ -7918,6 +8545,7 @@ VALUES
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -7935,15 +8563,17 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal64('0', 9),NULL)
+(1,toDecimal64('0', 9),NULL)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -7957,11 +8587,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -7975,11 +8606,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -7990,6 +8622,7 @@ WHERE
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -8007,11 +8640,13 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	toDecimal64('-9.999999999', 9),
 	toDecimal64('9.999999999', 9)
 )
@@ -8019,6 +8654,7 @@ VALUES
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -8036,15 +8672,17 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal64('-9.999999999', 9),toDecimal64('9.999999999', 9))
+(1,toDecimal64('-9.999999999', 9),toDecimal64('9.999999999', 9))
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -8058,11 +8696,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -8076,11 +8715,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -8091,6 +8731,7 @@ WHERE
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -8108,11 +8749,13 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	'0'::Decimal64(9),
 	NULL
 )
@@ -8120,6 +8763,7 @@ VALUES
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -8137,15 +8781,17 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('0'::Decimal64(9),NULL)
+(1,'0'::Decimal64(9),NULL)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -8159,11 +8805,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -8177,11 +8824,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -8192,6 +8840,7 @@ WHERE
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -8209,11 +8858,13 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	'-9.999999999'::Decimal64(9),
 	'9.999999999'::Decimal64(9)
 )
@@ -8221,6 +8872,7 @@ VALUES
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -8238,15 +8890,17 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('-9.999999999'::Decimal64(9),'9.999999999'::Decimal64(9))
+(1,'-9.999999999'::Decimal64(9),'9.999999999'::Decimal64(9))
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -8260,11 +8914,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -8278,11 +8933,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -8293,6 +8949,7 @@ WHERE
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -8310,11 +8967,13 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	toDecimal64('-9.999999999', 9),
 	toDecimal64('9.999999999', 9)
 )
@@ -8322,6 +8981,7 @@ VALUES
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -8339,15 +8999,17 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal64('-9.999999999', 9),toDecimal64('9.999999999', 9))
+(1,toDecimal64('-9.999999999', 9),toDecimal64('9.999999999', 9))
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -8361,11 +9023,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -8379,11 +9042,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -8394,6 +9058,7 @@ WHERE
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -8411,11 +9076,13 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	toDecimal64('0', 10),
 	NULL
 )
@@ -8423,6 +9090,7 @@ VALUES
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -8440,15 +9108,17 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal64('0', 10),NULL)
+(1,toDecimal64('0', 10),NULL)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -8462,11 +9132,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -8480,11 +9151,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -8495,6 +9167,7 @@ WHERE
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -8512,11 +9185,13 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	toDecimal64('-0.9999999999', 10),
 	toDecimal64('0.9999999999', 10)
 )
@@ -8524,6 +9199,7 @@ VALUES
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -8541,15 +9217,17 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal64('-0.9999999999', 10),toDecimal64('0.9999999999', 10))
+(1,toDecimal64('-0.9999999999', 10),toDecimal64('0.9999999999', 10))
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -8563,11 +9241,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -8581,11 +9260,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -8596,6 +9276,7 @@ WHERE
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -8613,11 +9294,13 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	'0'::Decimal64(10),
 	NULL
 )
@@ -8625,6 +9308,7 @@ VALUES
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -8642,15 +9326,17 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('0'::Decimal64(10),NULL)
+(1,'0'::Decimal64(10),NULL)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -8664,11 +9350,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -8682,11 +9369,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -8697,6 +9385,7 @@ WHERE
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -8714,11 +9403,13 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	'-0.9999999999'::Decimal64(10),
 	'0.9999999999'::Decimal64(10)
 )
@@ -8726,6 +9417,7 @@ VALUES
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -8743,15 +9435,17 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('-0.9999999999'::Decimal64(10),'0.9999999999'::Decimal64(10))
+(1,'-0.9999999999'::Decimal64(10),'0.9999999999'::Decimal64(10))
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -8765,11 +9459,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -8783,11 +9478,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -8798,6 +9494,7 @@ WHERE
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -8815,11 +9512,13 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	toDecimal64('-0.9999999999', 10),
 	toDecimal64('0.9999999999', 10)
 )
@@ -8827,6 +9526,7 @@ VALUES
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -8844,15 +9544,17 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal64('-0.9999999999', 10),toDecimal64('0.9999999999', 10))
+(1,toDecimal64('-0.9999999999', 10),toDecimal64('0.9999999999', 10))
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -8866,11 +9568,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -8884,11 +9587,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -8899,6 +9603,7 @@ WHERE
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -8916,11 +9621,13 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	toDecimal64('0', 0),
 	NULL
 )
@@ -8928,6 +9635,7 @@ VALUES
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -8945,15 +9653,17 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal64('0', 0),NULL)
+(1,toDecimal64('0', 0),NULL)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -8967,11 +9677,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -8985,11 +9696,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -9000,6 +9712,7 @@ WHERE
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -9017,11 +9730,13 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	toDecimal64('-99999999999', 0),
 	toDecimal64('99999999999', 0)
 )
@@ -9029,6 +9744,7 @@ VALUES
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -9046,15 +9762,17 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal64('-99999999999', 0),toDecimal64('99999999999', 0))
+(1,toDecimal64('-99999999999', 0),toDecimal64('99999999999', 0))
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -9068,11 +9786,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -9086,11 +9805,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -9101,6 +9821,7 @@ WHERE
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -9118,11 +9839,13 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	'0'::Decimal64(0),
 	NULL
 )
@@ -9130,6 +9853,7 @@ VALUES
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -9147,15 +9871,17 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('0'::Decimal64(0),NULL)
+(1,'0'::Decimal64(0),NULL)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -9169,11 +9895,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -9187,11 +9914,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -9202,6 +9930,7 @@ WHERE
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -9219,11 +9948,13 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	'-99999999999'::Decimal64(0),
 	'99999999999'::Decimal64(0)
 )
@@ -9231,6 +9962,7 @@ VALUES
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -9248,15 +9980,17 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('-99999999999'::Decimal64(0),'99999999999'::Decimal64(0))
+(1,'-99999999999'::Decimal64(0),'99999999999'::Decimal64(0))
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -9270,11 +10004,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -9288,11 +10023,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -9303,6 +10039,7 @@ WHERE
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -9320,11 +10057,13 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	toDecimal64('-99999999999', 0),
 	toDecimal64('99999999999', 0)
 )
@@ -9332,6 +10071,7 @@ VALUES
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -9349,15 +10089,17 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal64('-99999999999', 0),toDecimal64('99999999999', 0))
+(1,toDecimal64('-99999999999', 0),toDecimal64('99999999999', 0))
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -9371,11 +10113,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -9389,11 +10132,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -9404,6 +10148,7 @@ WHERE
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -9421,11 +10166,13 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	toDecimal64('0', 1),
 	NULL
 )
@@ -9433,6 +10180,7 @@ VALUES
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -9450,15 +10198,17 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal64('0', 1),NULL)
+(1,toDecimal64('0', 1),NULL)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -9472,11 +10222,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -9490,11 +10241,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -9505,6 +10257,7 @@ WHERE
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -9522,11 +10275,13 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	toDecimal64('-9999999999.9', 1),
 	toDecimal64('9999999999.9', 1)
 )
@@ -9534,6 +10289,7 @@ VALUES
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -9551,15 +10307,17 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal64('-9999999999.9', 1),toDecimal64('9999999999.9', 1))
+(1,toDecimal64('-9999999999.9', 1),toDecimal64('9999999999.9', 1))
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -9573,11 +10331,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -9591,11 +10350,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -9606,6 +10366,7 @@ WHERE
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -9623,11 +10384,13 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	'0'::Decimal64(1),
 	NULL
 )
@@ -9635,6 +10398,7 @@ VALUES
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -9652,15 +10416,17 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('0'::Decimal64(1),NULL)
+(1,'0'::Decimal64(1),NULL)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -9674,11 +10440,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -9692,11 +10459,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -9707,6 +10475,7 @@ WHERE
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -9724,11 +10493,13 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	'-9999999999.9'::Decimal64(1),
 	'9999999999.9'::Decimal64(1)
 )
@@ -9736,6 +10507,7 @@ VALUES
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -9753,15 +10525,17 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('-9999999999.9'::Decimal64(1),'9999999999.9'::Decimal64(1))
+(1,'-9999999999.9'::Decimal64(1),'9999999999.9'::Decimal64(1))
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -9775,11 +10549,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -9793,11 +10568,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -9808,6 +10584,7 @@ WHERE
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -9825,11 +10602,13 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	toDecimal64('-9999999999.9', 1),
 	toDecimal64('9999999999.9', 1)
 )
@@ -9837,6 +10616,7 @@ VALUES
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -9854,15 +10634,17 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal64('-9999999999.9', 1),toDecimal64('9999999999.9', 1))
+(1,toDecimal64('-9999999999.9', 1),toDecimal64('9999999999.9', 1))
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -9876,11 +10658,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -9894,11 +10677,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -9909,6 +10693,7 @@ WHERE
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -9926,11 +10711,13 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	toDecimal64('0', 10),
 	NULL
 )
@@ -9938,6 +10725,7 @@ VALUES
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -9955,15 +10743,17 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal64('0', 10),NULL)
+(1,toDecimal64('0', 10),NULL)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -9977,11 +10767,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -9995,11 +10786,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -10010,6 +10802,7 @@ WHERE
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -10027,11 +10820,13 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	toDecimal64('-9.9999999999', 10),
 	toDecimal64('9.9999999999', 10)
 )
@@ -10039,6 +10834,7 @@ VALUES
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -10056,15 +10852,17 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal64('-9.9999999999', 10),toDecimal64('9.9999999999', 10))
+(1,toDecimal64('-9.9999999999', 10),toDecimal64('9.9999999999', 10))
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -10078,11 +10876,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -10096,11 +10895,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -10111,6 +10911,7 @@ WHERE
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -10128,11 +10929,13 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	'0'::Decimal64(10),
 	NULL
 )
@@ -10140,6 +10943,7 @@ VALUES
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -10157,15 +10961,17 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('0'::Decimal64(10),NULL)
+(1,'0'::Decimal64(10),NULL)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -10179,11 +10985,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -10197,11 +11004,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -10212,6 +11020,7 @@ WHERE
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -10229,11 +11038,13 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	'-9.9999999999'::Decimal64(10),
 	'9.9999999999'::Decimal64(10)
 )
@@ -10241,6 +11052,7 @@ VALUES
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -10258,15 +11070,17 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('-9.9999999999'::Decimal64(10),'9.9999999999'::Decimal64(10))
+(1,'-9.9999999999'::Decimal64(10),'9.9999999999'::Decimal64(10))
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -10280,11 +11094,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -10298,11 +11113,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -10313,6 +11129,7 @@ WHERE
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -10330,11 +11147,13 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	toDecimal64('-9.9999999999', 10),
 	toDecimal64('9.9999999999', 10)
 )
@@ -10342,6 +11161,7 @@ VALUES
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -10359,15 +11179,17 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal64('-9.9999999999', 10),toDecimal64('9.9999999999', 10))
+(1,toDecimal64('-9.9999999999', 10),toDecimal64('9.9999999999', 10))
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -10381,11 +11203,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -10399,11 +11222,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -10414,6 +11238,7 @@ WHERE
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -10431,11 +11256,13 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	toDecimal64('0', 11),
 	NULL
 )
@@ -10443,6 +11270,7 @@ VALUES
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -10460,15 +11288,17 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal64('0', 11),NULL)
+(1,toDecimal64('0', 11),NULL)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -10482,11 +11312,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -10500,11 +11331,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -10515,6 +11347,7 @@ WHERE
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -10532,11 +11365,13 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	toDecimal64('-0.99999999999', 11),
 	toDecimal64('0.99999999999', 11)
 )
@@ -10544,6 +11379,7 @@ VALUES
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -10561,15 +11397,17 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal64('-0.99999999999', 11),toDecimal64('0.99999999999', 11))
+(1,toDecimal64('-0.99999999999', 11),toDecimal64('0.99999999999', 11))
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -10583,11 +11421,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -10601,11 +11440,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -10616,6 +11456,7 @@ WHERE
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -10633,11 +11474,13 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	'0'::Decimal64(11),
 	NULL
 )
@@ -10645,6 +11488,7 @@ VALUES
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -10662,15 +11506,17 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('0'::Decimal64(11),NULL)
+(1,'0'::Decimal64(11),NULL)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -10684,11 +11530,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -10702,11 +11549,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -10717,6 +11565,7 @@ WHERE
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -10734,11 +11583,13 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	'-0.99999999999'::Decimal64(11),
 	'0.99999999999'::Decimal64(11)
 )
@@ -10746,6 +11597,7 @@ VALUES
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -10763,15 +11615,17 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('-0.99999999999'::Decimal64(11),'0.99999999999'::Decimal64(11))
+(1,'-0.99999999999'::Decimal64(11),'0.99999999999'::Decimal64(11))
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -10785,11 +11639,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -10803,11 +11658,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -10818,6 +11674,7 @@ WHERE
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -10835,11 +11692,13 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	toDecimal64('-0.99999999999', 11),
 	toDecimal64('0.99999999999', 11)
 )
@@ -10847,6 +11706,7 @@ VALUES
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -10864,15 +11724,17 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal64('-0.99999999999', 11),toDecimal64('0.99999999999', 11))
+(1,toDecimal64('-0.99999999999', 11),toDecimal64('0.99999999999', 11))
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -10886,11 +11748,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -10904,11 +11767,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -10919,6 +11783,7 @@ WHERE
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -10936,11 +11801,13 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	toDecimal64('0', 0),
 	NULL
 )
@@ -10948,6 +11815,7 @@ VALUES
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -10965,15 +11833,17 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal64('0', 0),NULL)
+(1,toDecimal64('0', 0),NULL)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -10987,11 +11857,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -11005,11 +11876,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -11020,6 +11892,7 @@ WHERE
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -11038,11 +11911,13 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	toDecimal64('-99999999999999999', 0),
 	toDecimal64('99999999999999999', 0)
 )
@@ -11050,6 +11925,7 @@ VALUES
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -11068,15 +11944,17 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal64('-99999999999999999', 0),toDecimal64('99999999999999999', 0))
+(1,toDecimal64('-99999999999999999', 0),toDecimal64('99999999999999999', 0))
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -11091,11 +11969,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -11110,11 +11989,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -11126,6 +12006,7 @@ WHERE
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -11143,11 +12024,13 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	'0'::Decimal64(0),
 	NULL
 )
@@ -11155,6 +12038,7 @@ VALUES
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -11172,15 +12056,17 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('0'::Decimal64(0),NULL)
+(1,'0'::Decimal64(0),NULL)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -11194,11 +12080,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -11212,11 +12099,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -11227,6 +12115,7 @@ WHERE
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -11244,11 +12133,13 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	'-99999999999999999'::Decimal64(0),
 	'99999999999999999'::Decimal64(0)
 )
@@ -11256,6 +12147,7 @@ VALUES
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -11273,15 +12165,17 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('-99999999999999999'::Decimal64(0),'99999999999999999'::Decimal64(0))
+(1,'-99999999999999999'::Decimal64(0),'99999999999999999'::Decimal64(0))
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -11295,11 +12189,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -11313,11 +12208,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -11328,6 +12224,7 @@ WHERE
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -11346,11 +12243,13 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	toDecimal64('-99999999999999999', 0),
 	toDecimal64('99999999999999999', 0)
 )
@@ -11358,6 +12257,7 @@ VALUES
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -11376,15 +12276,17 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal64('-99999999999999999', 0),toDecimal64('99999999999999999', 0))
+(1,toDecimal64('-99999999999999999', 0),toDecimal64('99999999999999999', 0))
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -11399,11 +12301,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -11418,11 +12321,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -11434,6 +12338,7 @@ WHERE
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -11451,11 +12356,13 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	toDecimal64('0', 1),
 	NULL
 )
@@ -11463,6 +12370,7 @@ VALUES
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -11480,15 +12388,17 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal64('0', 1),NULL)
+(1,toDecimal64('0', 1),NULL)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -11502,11 +12412,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -11520,11 +12431,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -11535,6 +12447,7 @@ WHERE
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -11553,11 +12466,13 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	toDecimal64('-9999999999999999.9', 1),
 	toDecimal64('9999999999999999.9', 1)
 )
@@ -11565,6 +12480,7 @@ VALUES
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -11583,15 +12499,17 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal64('-9999999999999999.9', 1),toDecimal64('9999999999999999.9', 1))
+(1,toDecimal64('-9999999999999999.9', 1),toDecimal64('9999999999999999.9', 1))
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -11606,11 +12524,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -11625,11 +12544,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -11641,6 +12561,7 @@ WHERE
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -11658,11 +12579,13 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	'0'::Decimal64(1),
 	NULL
 )
@@ -11670,6 +12593,7 @@ VALUES
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -11687,15 +12611,17 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('0'::Decimal64(1),NULL)
+(1,'0'::Decimal64(1),NULL)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -11709,11 +12635,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -11727,11 +12654,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -11742,6 +12670,7 @@ WHERE
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -11760,11 +12689,13 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	'-9999999999999999.9'::Decimal64(1),
 	'9999999999999999.9'::Decimal64(1)
 )
@@ -11772,6 +12703,7 @@ VALUES
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -11790,15 +12722,17 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('-9999999999999999.9'::Decimal64(1),'9999999999999999.9'::Decimal64(1))
+(1,'-9999999999999999.9'::Decimal64(1),'9999999999999999.9'::Decimal64(1))
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -11813,11 +12747,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -11832,11 +12767,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -11848,6 +12784,7 @@ WHERE
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -11866,11 +12803,13 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	toDecimal64('-9999999999999999.9', 1),
 	toDecimal64('9999999999999999.9', 1)
 )
@@ -11878,6 +12817,7 @@ VALUES
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -11896,15 +12836,17 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal64('-9999999999999999.9', 1),toDecimal64('9999999999999999.9', 1))
+(1,toDecimal64('-9999999999999999.9', 1),toDecimal64('9999999999999999.9', 1))
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -11919,11 +12861,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -11938,11 +12881,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -11954,6 +12898,7 @@ WHERE
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -11971,11 +12916,13 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	toDecimal64('0', 16),
 	NULL
 )
@@ -11983,6 +12930,7 @@ VALUES
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -12000,15 +12948,17 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal64('0', 16),NULL)
+(1,toDecimal64('0', 16),NULL)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -12022,11 +12972,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -12040,11 +12991,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -12055,6 +13007,7 @@ WHERE
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -12073,11 +13026,13 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	toDecimal64('-9.9999999999999999', 16),
 	toDecimal64('9.9999999999999999', 16)
 )
@@ -12085,6 +13040,7 @@ VALUES
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -12103,15 +13059,17 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal64('-9.9999999999999999', 16),toDecimal64('9.9999999999999999', 16))
+(1,toDecimal64('-9.9999999999999999', 16),toDecimal64('9.9999999999999999', 16))
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -12126,11 +13084,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -12145,11 +13104,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -12161,6 +13121,7 @@ WHERE
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -12178,11 +13139,13 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	'0'::Decimal64(16),
 	NULL
 )
@@ -12190,6 +13153,7 @@ VALUES
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -12207,15 +13171,17 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('0'::Decimal64(16),NULL)
+(1,'0'::Decimal64(16),NULL)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -12229,11 +13195,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -12247,11 +13214,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -12262,6 +13230,7 @@ WHERE
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -12280,11 +13249,13 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	'-9.9999999999999999'::Decimal64(16),
 	'9.9999999999999999'::Decimal64(16)
 )
@@ -12292,6 +13263,7 @@ VALUES
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -12310,15 +13282,17 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('-9.9999999999999999'::Decimal64(16),'9.9999999999999999'::Decimal64(16))
+(1,'-9.9999999999999999'::Decimal64(16),'9.9999999999999999'::Decimal64(16))
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -12333,11 +13307,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -12352,11 +13327,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -12368,6 +13344,7 @@ WHERE
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -12386,11 +13363,13 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	toDecimal64('-9.9999999999999999', 16),
 	toDecimal64('9.9999999999999999', 16)
 )
@@ -12398,6 +13377,7 @@ VALUES
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -12416,15 +13396,17 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal64('-9.9999999999999999', 16),toDecimal64('9.9999999999999999', 16))
+(1,toDecimal64('-9.9999999999999999', 16),toDecimal64('9.9999999999999999', 16))
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -12439,11 +13421,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -12458,11 +13441,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -12474,6 +13458,7 @@ WHERE
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -12491,11 +13476,13 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	toDecimal64('0', 17),
 	NULL
 )
@@ -12503,6 +13490,7 @@ VALUES
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -12520,15 +13508,17 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal64('0', 17),NULL)
+(1,toDecimal64('0', 17),NULL)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -12542,11 +13532,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -12560,11 +13551,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -12575,6 +13567,7 @@ WHERE
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -12593,11 +13586,13 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	toDecimal64('-0.99999999999999999', 17),
 	toDecimal64('0.99999999999999999', 17)
 )
@@ -12605,6 +13600,7 @@ VALUES
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -12623,15 +13619,17 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal64('-0.99999999999999999', 17),toDecimal64('0.99999999999999999', 17))
+(1,toDecimal64('-0.99999999999999999', 17),toDecimal64('0.99999999999999999', 17))
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -12646,11 +13644,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -12665,11 +13664,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -12681,6 +13681,7 @@ WHERE
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -12698,11 +13699,13 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	'0'::Decimal64(17),
 	NULL
 )
@@ -12710,6 +13713,7 @@ VALUES
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -12727,15 +13731,17 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('0'::Decimal64(17),NULL)
+(1,'0'::Decimal64(17),NULL)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -12749,11 +13755,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -12767,11 +13774,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -12782,6 +13790,7 @@ WHERE
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -12800,11 +13809,13 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	'-0.99999999999999999'::Decimal64(17),
 	'0.99999999999999999'::Decimal64(17)
 )
@@ -12812,6 +13823,7 @@ VALUES
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -12830,15 +13842,17 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('-0.99999999999999999'::Decimal64(17),'0.99999999999999999'::Decimal64(17))
+(1,'-0.99999999999999999'::Decimal64(17),'0.99999999999999999'::Decimal64(17))
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -12853,11 +13867,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -12872,11 +13887,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -12888,6 +13904,7 @@ WHERE
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -12906,11 +13923,13 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	toDecimal64('-0.99999999999999999', 17),
 	toDecimal64('0.99999999999999999', 17)
 )
@@ -12918,6 +13937,7 @@ VALUES
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -12936,15 +13956,17 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal64('-0.99999999999999999', 17),toDecimal64('0.99999999999999999', 17))
+(1,toDecimal64('-0.99999999999999999', 17),toDecimal64('0.99999999999999999', 17))
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -12959,11 +13981,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -12978,11 +14001,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -12994,6 +14018,7 @@ WHERE
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -13011,11 +14036,13 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	toDecimal64('0', 0),
 	NULL
 )
@@ -13023,6 +14050,7 @@ VALUES
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -13040,15 +14068,17 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal64('0', 0),NULL)
+(1,toDecimal64('0', 0),NULL)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -13062,11 +14092,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -13080,11 +14111,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -13095,6 +14127,7 @@ WHERE
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -13113,11 +14146,13 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	toDecimal64('-999999999999999999', 0),
 	toDecimal64('999999999999999999', 0)
 )
@@ -13125,6 +14160,7 @@ VALUES
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -13143,15 +14179,17 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal64('-999999999999999999', 0),toDecimal64('999999999999999999', 0))
+(1,toDecimal64('-999999999999999999', 0),toDecimal64('999999999999999999', 0))
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -13166,11 +14204,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -13185,11 +14224,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -13201,6 +14241,7 @@ WHERE
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -13218,11 +14259,13 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	'0'::Decimal64(0),
 	NULL
 )
@@ -13230,6 +14273,7 @@ VALUES
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -13247,15 +14291,17 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('0'::Decimal64(0),NULL)
+(1,'0'::Decimal64(0),NULL)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -13269,11 +14315,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -13287,11 +14334,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -13302,6 +14350,7 @@ WHERE
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -13320,11 +14369,13 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	'-999999999999999999'::Decimal64(0),
 	'999999999999999999'::Decimal64(0)
 )
@@ -13332,6 +14383,7 @@ VALUES
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -13350,15 +14402,17 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('-999999999999999999'::Decimal64(0),'999999999999999999'::Decimal64(0))
+(1,'-999999999999999999'::Decimal64(0),'999999999999999999'::Decimal64(0))
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -13373,11 +14427,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -13392,11 +14447,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -13408,6 +14464,7 @@ WHERE
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -13426,11 +14483,13 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	toDecimal64('-999999999999999999', 0),
 	toDecimal64('999999999999999999', 0)
 )
@@ -13438,6 +14497,7 @@ VALUES
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -13456,15 +14516,17 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal64('-999999999999999999', 0),toDecimal64('999999999999999999', 0))
+(1,toDecimal64('-999999999999999999', 0),toDecimal64('999999999999999999', 0))
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -13479,11 +14541,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -13498,11 +14561,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -13514,6 +14578,7 @@ WHERE
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -13531,11 +14596,13 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	toDecimal64('0', 1),
 	NULL
 )
@@ -13543,6 +14610,7 @@ VALUES
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -13560,15 +14628,17 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal64('0', 1),NULL)
+(1,toDecimal64('0', 1),NULL)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -13582,11 +14652,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -13600,11 +14671,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -13615,6 +14687,7 @@ WHERE
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -13633,11 +14706,13 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	toDecimal64('-99999999999999999.9', 1),
 	toDecimal64('99999999999999999.9', 1)
 )
@@ -13645,6 +14720,7 @@ VALUES
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -13663,15 +14739,17 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal64('-99999999999999999.9', 1),toDecimal64('99999999999999999.9', 1))
+(1,toDecimal64('-99999999999999999.9', 1),toDecimal64('99999999999999999.9', 1))
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -13686,11 +14764,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -13705,11 +14784,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -13721,6 +14801,7 @@ WHERE
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -13738,11 +14819,13 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	'0'::Decimal64(1),
 	NULL
 )
@@ -13750,6 +14833,7 @@ VALUES
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -13767,15 +14851,17 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('0'::Decimal64(1),NULL)
+(1,'0'::Decimal64(1),NULL)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -13789,11 +14875,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -13807,11 +14894,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -13822,6 +14910,7 @@ WHERE
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -13840,11 +14929,13 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	'-99999999999999999.9'::Decimal64(1),
 	'99999999999999999.9'::Decimal64(1)
 )
@@ -13852,6 +14943,7 @@ VALUES
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -13870,15 +14962,17 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('-99999999999999999.9'::Decimal64(1),'99999999999999999.9'::Decimal64(1))
+(1,'-99999999999999999.9'::Decimal64(1),'99999999999999999.9'::Decimal64(1))
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -13893,11 +14987,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -13912,11 +15007,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -13928,6 +15024,7 @@ WHERE
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -13946,11 +15043,13 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	toDecimal64('-99999999999999999.9', 1),
 	toDecimal64('99999999999999999.9', 1)
 )
@@ -13958,6 +15057,7 @@ VALUES
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -13976,15 +15076,17 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal64('-99999999999999999.9', 1),toDecimal64('99999999999999999.9', 1))
+(1,toDecimal64('-99999999999999999.9', 1),toDecimal64('99999999999999999.9', 1))
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -13999,11 +15101,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -14018,11 +15121,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -14034,6 +15138,7 @@ WHERE
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -14051,11 +15156,13 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	toDecimal64('0', 17),
 	NULL
 )
@@ -14063,6 +15170,7 @@ VALUES
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -14080,15 +15188,17 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal64('0', 17),NULL)
+(1,toDecimal64('0', 17),NULL)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -14102,11 +15212,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -14120,11 +15231,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -14135,6 +15247,7 @@ WHERE
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -14153,11 +15266,13 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	toDecimal64('-9.99999999999999999', 17),
 	toDecimal64('9.99999999999999999', 17)
 )
@@ -14165,6 +15280,7 @@ VALUES
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -14183,15 +15299,17 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal64('-9.99999999999999999', 17),toDecimal64('9.99999999999999999', 17))
+(1,toDecimal64('-9.99999999999999999', 17),toDecimal64('9.99999999999999999', 17))
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -14206,11 +15324,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -14225,11 +15344,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -14241,6 +15361,7 @@ WHERE
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -14258,11 +15379,13 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	'0'::Decimal64(17),
 	NULL
 )
@@ -14270,6 +15393,7 @@ VALUES
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -14287,15 +15411,17 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('0'::Decimal64(17),NULL)
+(1,'0'::Decimal64(17),NULL)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -14309,11 +15435,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -14327,11 +15454,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -14342,6 +15470,7 @@ WHERE
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -14360,11 +15489,13 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	'-9.99999999999999999'::Decimal64(17),
 	'9.99999999999999999'::Decimal64(17)
 )
@@ -14372,6 +15503,7 @@ VALUES
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -14390,15 +15522,17 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('-9.99999999999999999'::Decimal64(17),'9.99999999999999999'::Decimal64(17))
+(1,'-9.99999999999999999'::Decimal64(17),'9.99999999999999999'::Decimal64(17))
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -14413,11 +15547,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -14432,11 +15567,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -14448,6 +15584,7 @@ WHERE
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -14466,11 +15603,13 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	toDecimal64('-9.99999999999999999', 17),
 	toDecimal64('9.99999999999999999', 17)
 )
@@ -14478,6 +15617,7 @@ VALUES
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -14496,15 +15636,17 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal64('-9.99999999999999999', 17),toDecimal64('9.99999999999999999', 17))
+(1,toDecimal64('-9.99999999999999999', 17),toDecimal64('9.99999999999999999', 17))
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -14519,11 +15661,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -14538,11 +15681,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -14554,6 +15698,7 @@ WHERE
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -14571,11 +15716,13 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	toDecimal64('0', 18),
 	NULL
 )
@@ -14583,6 +15730,7 @@ VALUES
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -14600,15 +15748,17 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal64('0', 18),NULL)
+(1,toDecimal64('0', 18),NULL)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -14622,11 +15772,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -14640,11 +15791,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -14655,6 +15807,7 @@ WHERE
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -14673,11 +15826,13 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	toDecimal64('-0.999999999999999999', 18),
 	toDecimal64('0.999999999999999999', 18)
 )
@@ -14685,6 +15840,7 @@ VALUES
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -14703,15 +15859,17 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal64('-0.999999999999999999', 18),toDecimal64('0.999999999999999999', 18))
+(1,toDecimal64('-0.999999999999999999', 18),toDecimal64('0.999999999999999999', 18))
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -14726,11 +15884,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -14745,11 +15904,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -14761,6 +15921,7 @@ WHERE
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -14778,11 +15939,13 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	'0'::Decimal64(18),
 	NULL
 )
@@ -14790,6 +15953,7 @@ VALUES
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -14807,15 +15971,17 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('0'::Decimal64(18),NULL)
+(1,'0'::Decimal64(18),NULL)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -14829,11 +15995,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -14847,11 +16014,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -14862,6 +16030,7 @@ WHERE
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -14880,11 +16049,13 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	'-0.999999999999999999'::Decimal64(18),
 	'0.999999999999999999'::Decimal64(18)
 )
@@ -14892,6 +16063,7 @@ VALUES
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -14910,15 +16082,17 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('-0.999999999999999999'::Decimal64(18),'0.999999999999999999'::Decimal64(18))
+(1,'-0.999999999999999999'::Decimal64(18),'0.999999999999999999'::Decimal64(18))
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -14933,11 +16107,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -14952,11 +16127,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -14968,6 +16144,7 @@ WHERE
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -14986,11 +16163,13 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	toDecimal64('-0.999999999999999999', 18),
 	toDecimal64('0.999999999999999999', 18)
 )
@@ -14998,6 +16177,7 @@ VALUES
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -15016,15 +16196,17 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal64('-0.999999999999999999', 18),toDecimal64('0.999999999999999999', 18))
+(1,toDecimal64('-0.999999999999999999', 18),toDecimal64('0.999999999999999999', 18))
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -15039,11 +16221,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -15058,11 +16241,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -15074,6 +16258,7 @@ WHERE
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -15091,11 +16276,13 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	toDecimal128('0', 0),
 	NULL
 )
@@ -15103,6 +16290,7 @@ VALUES
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -15120,15 +16308,17 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal128('0', 0),NULL)
+(1,toDecimal128('0', 0),NULL)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -15142,11 +16332,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -15160,11 +16351,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -15175,6 +16367,7 @@ WHERE
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -15193,11 +16386,13 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	toDecimal128('-9999999999999999999', 0),
 	toDecimal128('9999999999999999999', 0)
 )
@@ -15205,6 +16400,7 @@ VALUES
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -15223,15 +16419,17 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal128('-9999999999999999999', 0),toDecimal128('9999999999999999999', 0))
+(1,toDecimal128('-9999999999999999999', 0),toDecimal128('9999999999999999999', 0))
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -15246,11 +16444,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -15265,11 +16464,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -15281,6 +16481,7 @@ WHERE
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -15298,11 +16499,13 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	'0'::Decimal128(0),
 	NULL
 )
@@ -15310,6 +16513,7 @@ VALUES
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -15327,15 +16531,17 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('0'::Decimal128(0),NULL)
+(1,'0'::Decimal128(0),NULL)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -15349,11 +16555,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -15367,11 +16574,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -15382,6 +16590,7 @@ WHERE
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -15400,11 +16609,13 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	'-9999999999999999999'::Decimal128(0),
 	'9999999999999999999'::Decimal128(0)
 )
@@ -15412,6 +16623,7 @@ VALUES
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -15430,15 +16642,17 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('-9999999999999999999'::Decimal128(0),'9999999999999999999'::Decimal128(0))
+(1,'-9999999999999999999'::Decimal128(0),'9999999999999999999'::Decimal128(0))
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -15453,11 +16667,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -15472,11 +16687,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -15488,6 +16704,7 @@ WHERE
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -15506,11 +16723,13 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	toDecimal128('-9999999999999999999', 0),
 	toDecimal128('9999999999999999999', 0)
 )
@@ -15518,6 +16737,7 @@ VALUES
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -15536,15 +16756,17 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal128('-9999999999999999999', 0),toDecimal128('9999999999999999999', 0))
+(1,toDecimal128('-9999999999999999999', 0),toDecimal128('9999999999999999999', 0))
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -15559,11 +16781,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -15578,11 +16801,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -15594,6 +16818,7 @@ WHERE
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -15611,11 +16836,13 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	toDecimal128('0', 1),
 	NULL
 )
@@ -15623,6 +16850,7 @@ VALUES
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -15640,15 +16868,17 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal128('0', 1),NULL)
+(1,toDecimal128('0', 1),NULL)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -15662,11 +16892,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -15680,11 +16911,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -15695,6 +16927,7 @@ WHERE
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -15713,11 +16946,13 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	toDecimal128('-999999999999999999.9', 1),
 	toDecimal128('999999999999999999.9', 1)
 )
@@ -15725,6 +16960,7 @@ VALUES
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -15743,15 +16979,17 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal128('-999999999999999999.9', 1),toDecimal128('999999999999999999.9', 1))
+(1,toDecimal128('-999999999999999999.9', 1),toDecimal128('999999999999999999.9', 1))
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -15766,11 +17004,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -15785,11 +17024,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -15801,6 +17041,7 @@ WHERE
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -15818,11 +17059,13 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	'0'::Decimal128(1),
 	NULL
 )
@@ -15830,6 +17073,7 @@ VALUES
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -15847,15 +17091,17 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('0'::Decimal128(1),NULL)
+(1,'0'::Decimal128(1),NULL)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -15869,11 +17115,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -15887,11 +17134,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -15902,6 +17150,7 @@ WHERE
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -15920,11 +17169,13 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	'-999999999999999999.9'::Decimal128(1),
 	'999999999999999999.9'::Decimal128(1)
 )
@@ -15932,6 +17183,7 @@ VALUES
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -15950,15 +17202,17 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('-999999999999999999.9'::Decimal128(1),'999999999999999999.9'::Decimal128(1))
+(1,'-999999999999999999.9'::Decimal128(1),'999999999999999999.9'::Decimal128(1))
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -15973,11 +17227,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -15992,11 +17247,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -16008,6 +17264,7 @@ WHERE
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -16026,11 +17283,13 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	toDecimal128('-999999999999999999.9', 1),
 	toDecimal128('999999999999999999.9', 1)
 )
@@ -16038,6 +17297,7 @@ VALUES
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -16056,15 +17316,17 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal128('-999999999999999999.9', 1),toDecimal128('999999999999999999.9', 1))
+(1,toDecimal128('-999999999999999999.9', 1),toDecimal128('999999999999999999.9', 1))
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -16079,11 +17341,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -16098,11 +17361,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -16114,6 +17378,7 @@ WHERE
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -16131,11 +17396,13 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	toDecimal128('0', 18),
 	NULL
 )
@@ -16143,6 +17410,7 @@ VALUES
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -16160,15 +17428,17 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal128('0', 18),NULL)
+(1,toDecimal128('0', 18),NULL)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -16182,11 +17452,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -16200,11 +17471,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -16215,6 +17487,7 @@ WHERE
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -16233,11 +17506,13 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	toDecimal128('-9.999999999999999999', 18),
 	toDecimal128('9.999999999999999999', 18)
 )
@@ -16245,6 +17520,7 @@ VALUES
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -16263,15 +17539,17 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal128('-9.999999999999999999', 18),toDecimal128('9.999999999999999999', 18))
+(1,toDecimal128('-9.999999999999999999', 18),toDecimal128('9.999999999999999999', 18))
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -16286,11 +17564,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -16305,11 +17584,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -16321,6 +17601,7 @@ WHERE
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -16338,11 +17619,13 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	'0'::Decimal128(18),
 	NULL
 )
@@ -16350,6 +17633,7 @@ VALUES
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -16367,15 +17651,17 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('0'::Decimal128(18),NULL)
+(1,'0'::Decimal128(18),NULL)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -16389,11 +17675,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -16407,11 +17694,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -16422,6 +17710,7 @@ WHERE
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -16440,11 +17729,13 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	'-9.999999999999999999'::Decimal128(18),
 	'9.999999999999999999'::Decimal128(18)
 )
@@ -16452,6 +17743,7 @@ VALUES
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -16470,15 +17762,17 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('-9.999999999999999999'::Decimal128(18),'9.999999999999999999'::Decimal128(18))
+(1,'-9.999999999999999999'::Decimal128(18),'9.999999999999999999'::Decimal128(18))
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -16493,11 +17787,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -16512,11 +17807,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -16528,6 +17824,7 @@ WHERE
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -16546,11 +17843,13 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	toDecimal128('-9.999999999999999999', 18),
 	toDecimal128('9.999999999999999999', 18)
 )
@@ -16558,6 +17857,7 @@ VALUES
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -16576,15 +17876,17 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal128('-9.999999999999999999', 18),toDecimal128('9.999999999999999999', 18))
+(1,toDecimal128('-9.999999999999999999', 18),toDecimal128('9.999999999999999999', 18))
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -16599,11 +17901,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -16618,11 +17921,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -16634,6 +17938,7 @@ WHERE
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -16651,11 +17956,13 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	toDecimal128('0', 19),
 	NULL
 )
@@ -16663,6 +17970,7 @@ VALUES
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -16680,15 +17988,17 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal128('0', 19),NULL)
+(1,toDecimal128('0', 19),NULL)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -16702,11 +18012,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -16720,11 +18031,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -16735,6 +18047,7 @@ WHERE
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -16753,11 +18066,13 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	toDecimal128('-0.9999999999999999999', 19),
 	toDecimal128('0.9999999999999999999', 19)
 )
@@ -16765,6 +18080,7 @@ VALUES
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -16783,15 +18099,17 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal128('-0.9999999999999999999', 19),toDecimal128('0.9999999999999999999', 19))
+(1,toDecimal128('-0.9999999999999999999', 19),toDecimal128('0.9999999999999999999', 19))
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -16806,11 +18124,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -16825,11 +18144,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -16841,6 +18161,7 @@ WHERE
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -16858,11 +18179,13 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	'0'::Decimal128(19),
 	NULL
 )
@@ -16870,6 +18193,7 @@ VALUES
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -16887,15 +18211,17 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('0'::Decimal128(19),NULL)
+(1,'0'::Decimal128(19),NULL)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -16909,11 +18235,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -16927,11 +18254,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -16942,6 +18270,7 @@ WHERE
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -16960,11 +18289,13 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	'-0.9999999999999999999'::Decimal128(19),
 	'0.9999999999999999999'::Decimal128(19)
 )
@@ -16972,6 +18303,7 @@ VALUES
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -16990,15 +18322,17 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('-0.9999999999999999999'::Decimal128(19),'0.9999999999999999999'::Decimal128(19))
+(1,'-0.9999999999999999999'::Decimal128(19),'0.9999999999999999999'::Decimal128(19))
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -17013,11 +18347,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -17032,11 +18367,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -17048,6 +18384,7 @@ WHERE
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -17066,11 +18403,13 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	toDecimal128('-0.9999999999999999999', 19),
 	toDecimal128('0.9999999999999999999', 19)
 )
@@ -17078,6 +18417,7 @@ VALUES
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -17096,15 +18436,17 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal128('-0.9999999999999999999', 19),toDecimal128('0.9999999999999999999', 19))
+(1,toDecimal128('-0.9999999999999999999', 19),toDecimal128('0.9999999999999999999', 19))
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -17119,11 +18461,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -17138,11 +18481,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -17154,6 +18498,7 @@ WHERE
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -17171,11 +18516,13 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	toDecimal128('0', 0),
 	NULL
 )
@@ -17183,6 +18530,7 @@ VALUES
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -17200,15 +18548,17 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal128('0', 0),NULL)
+(1,toDecimal128('0', 0),NULL)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -17222,11 +18572,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -17240,11 +18591,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -17255,6 +18607,7 @@ WHERE
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -17273,11 +18626,13 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	toDecimal128('-99999999999999999999', 0),
 	toDecimal128('99999999999999999999', 0)
 )
@@ -17285,6 +18640,7 @@ VALUES
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -17303,15 +18659,17 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal128('-99999999999999999999', 0),toDecimal128('99999999999999999999', 0))
+(1,toDecimal128('-99999999999999999999', 0),toDecimal128('99999999999999999999', 0))
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -17326,11 +18684,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -17345,11 +18704,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -17361,6 +18721,7 @@ WHERE
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -17378,11 +18739,13 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	'0'::Decimal128(0),
 	NULL
 )
@@ -17390,6 +18753,7 @@ VALUES
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -17407,15 +18771,17 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('0'::Decimal128(0),NULL)
+(1,'0'::Decimal128(0),NULL)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -17429,11 +18795,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -17447,11 +18814,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -17462,6 +18830,7 @@ WHERE
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -17480,11 +18849,13 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	'-99999999999999999999'::Decimal128(0),
 	'99999999999999999999'::Decimal128(0)
 )
@@ -17492,6 +18863,7 @@ VALUES
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -17510,15 +18882,17 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('-99999999999999999999'::Decimal128(0),'99999999999999999999'::Decimal128(0))
+(1,'-99999999999999999999'::Decimal128(0),'99999999999999999999'::Decimal128(0))
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -17533,11 +18907,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -17552,11 +18927,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -17568,6 +18944,7 @@ WHERE
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -17586,11 +18963,13 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	toDecimal128('-99999999999999999999', 0),
 	toDecimal128('99999999999999999999', 0)
 )
@@ -17598,6 +18977,7 @@ VALUES
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -17616,15 +18996,17 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal128('-99999999999999999999', 0),toDecimal128('99999999999999999999', 0))
+(1,toDecimal128('-99999999999999999999', 0),toDecimal128('99999999999999999999', 0))
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -17639,11 +19021,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -17658,11 +19041,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -17674,6 +19058,7 @@ WHERE
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -17691,11 +19076,13 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	toDecimal128('0', 1),
 	NULL
 )
@@ -17703,6 +19090,7 @@ VALUES
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -17720,15 +19108,17 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal128('0', 1),NULL)
+(1,toDecimal128('0', 1),NULL)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -17742,11 +19132,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -17760,11 +19151,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -17775,6 +19167,7 @@ WHERE
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -17793,11 +19186,13 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	toDecimal128('-9999999999999999999.9', 1),
 	toDecimal128('9999999999999999999.9', 1)
 )
@@ -17805,6 +19200,7 @@ VALUES
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -17823,15 +19219,17 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal128('-9999999999999999999.9', 1),toDecimal128('9999999999999999999.9', 1))
+(1,toDecimal128('-9999999999999999999.9', 1),toDecimal128('9999999999999999999.9', 1))
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -17846,11 +19244,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -17865,11 +19264,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -17881,6 +19281,7 @@ WHERE
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -17898,11 +19299,13 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	'0'::Decimal128(1),
 	NULL
 )
@@ -17910,6 +19313,7 @@ VALUES
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -17927,15 +19331,17 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('0'::Decimal128(1),NULL)
+(1,'0'::Decimal128(1),NULL)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -17949,11 +19355,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -17967,11 +19374,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -17982,6 +19390,7 @@ WHERE
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -18000,11 +19409,13 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	'-9999999999999999999.9'::Decimal128(1),
 	'9999999999999999999.9'::Decimal128(1)
 )
@@ -18012,6 +19423,7 @@ VALUES
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -18030,15 +19442,17 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('-9999999999999999999.9'::Decimal128(1),'9999999999999999999.9'::Decimal128(1))
+(1,'-9999999999999999999.9'::Decimal128(1),'9999999999999999999.9'::Decimal128(1))
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -18053,11 +19467,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -18072,11 +19487,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -18088,6 +19504,7 @@ WHERE
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -18106,11 +19523,13 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	toDecimal128('-9999999999999999999.9', 1),
 	toDecimal128('9999999999999999999.9', 1)
 )
@@ -18118,6 +19537,7 @@ VALUES
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -18136,15 +19556,17 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal128('-9999999999999999999.9', 1),toDecimal128('9999999999999999999.9', 1))
+(1,toDecimal128('-9999999999999999999.9', 1),toDecimal128('9999999999999999999.9', 1))
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -18159,11 +19581,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -18178,11 +19601,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -18194,6 +19618,7 @@ WHERE
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -18211,11 +19636,13 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	toDecimal128('0', 19),
 	NULL
 )
@@ -18223,6 +19650,7 @@ VALUES
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -18240,15 +19668,17 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal128('0', 19),NULL)
+(1,toDecimal128('0', 19),NULL)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -18262,11 +19692,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -18280,11 +19711,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -18295,6 +19727,7 @@ WHERE
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -18313,11 +19746,13 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	toDecimal128('-9.9999999999999999999', 19),
 	toDecimal128('9.9999999999999999999', 19)
 )
@@ -18325,6 +19760,7 @@ VALUES
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -18343,15 +19779,17 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal128('-9.9999999999999999999', 19),toDecimal128('9.9999999999999999999', 19))
+(1,toDecimal128('-9.9999999999999999999', 19),toDecimal128('9.9999999999999999999', 19))
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -18366,11 +19804,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -18385,11 +19824,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -18401,6 +19841,7 @@ WHERE
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -18418,11 +19859,13 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	'0'::Decimal128(19),
 	NULL
 )
@@ -18430,6 +19873,7 @@ VALUES
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -18447,15 +19891,17 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('0'::Decimal128(19),NULL)
+(1,'0'::Decimal128(19),NULL)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -18469,11 +19915,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -18487,11 +19934,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -18502,6 +19950,7 @@ WHERE
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -18520,11 +19969,13 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	'-9.9999999999999999999'::Decimal128(19),
 	'9.9999999999999999999'::Decimal128(19)
 )
@@ -18532,6 +19983,7 @@ VALUES
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -18550,15 +20002,17 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('-9.9999999999999999999'::Decimal128(19),'9.9999999999999999999'::Decimal128(19))
+(1,'-9.9999999999999999999'::Decimal128(19),'9.9999999999999999999'::Decimal128(19))
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -18573,11 +20027,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -18592,11 +20047,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -18608,6 +20064,7 @@ WHERE
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -18626,11 +20083,13 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	toDecimal128('-9.9999999999999999999', 19),
 	toDecimal128('9.9999999999999999999', 19)
 )
@@ -18638,6 +20097,7 @@ VALUES
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -18656,15 +20116,17 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal128('-9.9999999999999999999', 19),toDecimal128('9.9999999999999999999', 19))
+(1,toDecimal128('-9.9999999999999999999', 19),toDecimal128('9.9999999999999999999', 19))
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -18679,11 +20141,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -18698,11 +20161,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -18714,6 +20178,7 @@ WHERE
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -18731,11 +20196,13 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	toDecimal128('0', 20),
 	NULL
 )
@@ -18743,6 +20210,7 @@ VALUES
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -18760,15 +20228,17 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal128('0', 20),NULL)
+(1,toDecimal128('0', 20),NULL)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -18782,11 +20252,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -18800,11 +20271,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -18815,6 +20287,7 @@ WHERE
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -18833,11 +20306,13 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	toDecimal128('-0.99999999999999999999', 20),
 	toDecimal128('0.99999999999999999999', 20)
 )
@@ -18845,6 +20320,7 @@ VALUES
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -18863,15 +20339,17 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal128('-0.99999999999999999999', 20),toDecimal128('0.99999999999999999999', 20))
+(1,toDecimal128('-0.99999999999999999999', 20),toDecimal128('0.99999999999999999999', 20))
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -18886,11 +20364,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -18905,11 +20384,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -18921,6 +20401,7 @@ WHERE
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -18938,11 +20419,13 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	'0'::Decimal128(20),
 	NULL
 )
@@ -18950,6 +20433,7 @@ VALUES
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -18967,15 +20451,17 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('0'::Decimal128(20),NULL)
+(1,'0'::Decimal128(20),NULL)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -18989,11 +20475,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -19007,11 +20494,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -19022,6 +20510,7 @@ WHERE
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -19040,11 +20529,13 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	'-0.99999999999999999999'::Decimal128(20),
 	'0.99999999999999999999'::Decimal128(20)
 )
@@ -19052,6 +20543,7 @@ VALUES
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -19070,15 +20562,17 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('-0.99999999999999999999'::Decimal128(20),'0.99999999999999999999'::Decimal128(20))
+(1,'-0.99999999999999999999'::Decimal128(20),'0.99999999999999999999'::Decimal128(20))
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -19093,11 +20587,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -19112,11 +20607,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -19128,6 +20624,7 @@ WHERE
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -19146,11 +20643,13 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	toDecimal128('-0.99999999999999999999', 20),
 	toDecimal128('0.99999999999999999999', 20)
 )
@@ -19158,6 +20657,7 @@ VALUES
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -19176,15 +20676,17 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal128('-0.99999999999999999999', 20),toDecimal128('0.99999999999999999999', 20))
+(1,toDecimal128('-0.99999999999999999999', 20),toDecimal128('0.99999999999999999999', 20))
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -19199,11 +20701,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -19218,11 +20721,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -19234,6 +20738,7 @@ WHERE
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -19251,11 +20756,13 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	toDecimal128('0', 0),
 	NULL
 )
@@ -19263,6 +20770,7 @@ VALUES
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -19280,15 +20788,17 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal128('0', 0),NULL)
+(1,toDecimal128('0', 0),NULL)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -19302,11 +20812,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -19320,11 +20831,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -19335,6 +20847,7 @@ WHERE
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -19353,11 +20866,13 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	toDecimal128('-9999999999999999999999999999', 0),
 	toDecimal128('9999999999999999999999999999', 0)
 )
@@ -19365,6 +20880,7 @@ VALUES
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -19383,15 +20899,17 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal128('-9999999999999999999999999999', 0),toDecimal128('9999999999999999999999999999', 0))
+(1,toDecimal128('-9999999999999999999999999999', 0),toDecimal128('9999999999999999999999999999', 0))
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -19406,11 +20924,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -19425,11 +20944,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -19441,6 +20961,7 @@ WHERE
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -19458,11 +20979,13 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	'0'::Decimal128(0),
 	NULL
 )
@@ -19470,6 +20993,7 @@ VALUES
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -19487,15 +21011,17 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('0'::Decimal128(0),NULL)
+(1,'0'::Decimal128(0),NULL)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -19509,11 +21035,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -19527,11 +21054,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -19542,6 +21070,7 @@ WHERE
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -19560,11 +21089,13 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	'-9999999999999999999999999999'::Decimal128(0),
 	'9999999999999999999999999999'::Decimal128(0)
 )
@@ -19572,6 +21103,7 @@ VALUES
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -19590,15 +21122,17 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('-9999999999999999999999999999'::Decimal128(0),'9999999999999999999999999999'::Decimal128(0))
+(1,'-9999999999999999999999999999'::Decimal128(0),'9999999999999999999999999999'::Decimal128(0))
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -19613,11 +21147,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -19632,11 +21167,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -19648,6 +21184,7 @@ WHERE
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -19666,11 +21203,13 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	toDecimal128('-9999999999999999999999999999', 0),
 	toDecimal128('9999999999999999999999999999', 0)
 )
@@ -19678,6 +21217,7 @@ VALUES
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -19696,15 +21236,17 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal128('-9999999999999999999999999999', 0),toDecimal128('9999999999999999999999999999', 0))
+(1,toDecimal128('-9999999999999999999999999999', 0),toDecimal128('9999999999999999999999999999', 0))
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -19719,11 +21261,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -19738,11 +21281,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -19754,6 +21298,7 @@ WHERE
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -19771,11 +21316,13 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	toDecimal128('0', 1),
 	NULL
 )
@@ -19783,6 +21330,7 @@ VALUES
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -19800,15 +21348,17 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal128('0', 1),NULL)
+(1,toDecimal128('0', 1),NULL)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -19822,11 +21372,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -19840,11 +21391,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -19855,6 +21407,7 @@ WHERE
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -19873,11 +21426,13 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	toDecimal128('-999999999999999999999999999.9', 1),
 	toDecimal128('999999999999999999999999999.9', 1)
 )
@@ -19885,6 +21440,7 @@ VALUES
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -19903,15 +21459,17 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal128('-999999999999999999999999999.9', 1),toDecimal128('999999999999999999999999999.9', 1))
+(1,toDecimal128('-999999999999999999999999999.9', 1),toDecimal128('999999999999999999999999999.9', 1))
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -19926,11 +21484,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -19945,11 +21504,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -19961,6 +21521,7 @@ WHERE
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -19978,11 +21539,13 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	'0'::Decimal128(1),
 	NULL
 )
@@ -19990,6 +21553,7 @@ VALUES
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -20007,15 +21571,17 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('0'::Decimal128(1),NULL)
+(1,'0'::Decimal128(1),NULL)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -20029,11 +21595,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -20047,11 +21614,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -20062,6 +21630,7 @@ WHERE
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -20080,11 +21649,13 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	'-999999999999999999999999999.9'::Decimal128(1),
 	'999999999999999999999999999.9'::Decimal128(1)
 )
@@ -20092,6 +21663,7 @@ VALUES
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -20110,15 +21682,17 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('-999999999999999999999999999.9'::Decimal128(1),'999999999999999999999999999.9'::Decimal128(1))
+(1,'-999999999999999999999999999.9'::Decimal128(1),'999999999999999999999999999.9'::Decimal128(1))
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -20133,11 +21707,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -20152,11 +21727,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -20168,6 +21744,7 @@ WHERE
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -20186,11 +21763,13 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	toDecimal128('-999999999999999999999999999.9', 1),
 	toDecimal128('999999999999999999999999999.9', 1)
 )
@@ -20198,6 +21777,7 @@ VALUES
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -20216,15 +21796,17 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal128('-999999999999999999999999999.9', 1),toDecimal128('999999999999999999999999999.9', 1))
+(1,toDecimal128('-999999999999999999999999999.9', 1),toDecimal128('999999999999999999999999999.9', 1))
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -20239,11 +21821,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -20258,11 +21841,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -20274,6 +21858,7 @@ WHERE
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -20291,11 +21876,13 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	toDecimal128('0', 27),
 	NULL
 )
@@ -20303,6 +21890,7 @@ VALUES
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -20320,15 +21908,17 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal128('0', 27),NULL)
+(1,toDecimal128('0', 27),NULL)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -20342,11 +21932,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -20360,11 +21951,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -20375,6 +21967,7 @@ WHERE
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -20393,11 +21986,13 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	toDecimal128('-9.999999999999999999999999999', 27),
 	toDecimal128('9.999999999999999999999999999', 27)
 )
@@ -20405,6 +22000,7 @@ VALUES
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -20423,15 +22019,17 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal128('-9.999999999999999999999999999', 27),toDecimal128('9.999999999999999999999999999', 27))
+(1,toDecimal128('-9.999999999999999999999999999', 27),toDecimal128('9.999999999999999999999999999', 27))
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -20446,11 +22044,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -20465,11 +22064,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -20481,6 +22081,7 @@ WHERE
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -20498,11 +22099,13 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	'0'::Decimal128(27),
 	NULL
 )
@@ -20510,6 +22113,7 @@ VALUES
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -20527,15 +22131,17 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('0'::Decimal128(27),NULL)
+(1,'0'::Decimal128(27),NULL)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -20549,11 +22155,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -20567,11 +22174,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -20582,6 +22190,7 @@ WHERE
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -20600,11 +22209,13 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	'-9.999999999999999999999999999'::Decimal128(27),
 	'9.999999999999999999999999999'::Decimal128(27)
 )
@@ -20612,6 +22223,7 @@ VALUES
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -20630,15 +22242,17 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('-9.999999999999999999999999999'::Decimal128(27),'9.999999999999999999999999999'::Decimal128(27))
+(1,'-9.999999999999999999999999999'::Decimal128(27),'9.999999999999999999999999999'::Decimal128(27))
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -20653,11 +22267,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -20672,11 +22287,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -20688,6 +22304,7 @@ WHERE
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -20706,11 +22323,13 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	toDecimal128('-9.999999999999999999999999999', 27),
 	toDecimal128('9.999999999999999999999999999', 27)
 )
@@ -20718,6 +22337,7 @@ VALUES
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -20736,15 +22356,17 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal128('-9.999999999999999999999999999', 27),toDecimal128('9.999999999999999999999999999', 27))
+(1,toDecimal128('-9.999999999999999999999999999', 27),toDecimal128('9.999999999999999999999999999', 27))
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -20759,11 +22381,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -20778,11 +22401,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -20794,6 +22418,7 @@ WHERE
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -20811,11 +22436,13 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	toDecimal128('0', 28),
 	NULL
 )
@@ -20823,6 +22450,7 @@ VALUES
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -20840,15 +22468,17 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal128('0', 28),NULL)
+(1,toDecimal128('0', 28),NULL)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -20862,11 +22492,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -20880,11 +22511,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -20895,6 +22527,7 @@ WHERE
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -20913,11 +22546,13 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	toDecimal128('-0.9999999999999999999999999999', 28),
 	toDecimal128('0.9999999999999999999999999999', 28)
 )
@@ -20925,6 +22560,7 @@ VALUES
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -20943,15 +22579,17 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal128('-0.9999999999999999999999999999', 28),toDecimal128('0.9999999999999999999999999999', 28))
+(1,toDecimal128('-0.9999999999999999999999999999', 28),toDecimal128('0.9999999999999999999999999999', 28))
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -20966,11 +22604,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -20985,11 +22624,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -21001,6 +22641,7 @@ WHERE
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -21018,11 +22659,13 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	'0'::Decimal128(28),
 	NULL
 )
@@ -21030,6 +22673,7 @@ VALUES
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -21047,15 +22691,17 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('0'::Decimal128(28),NULL)
+(1,'0'::Decimal128(28),NULL)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -21069,11 +22715,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -21087,11 +22734,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -21102,6 +22750,7 @@ WHERE
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -21120,11 +22769,13 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	'-0.9999999999999999999999999999'::Decimal128(28),
 	'0.9999999999999999999999999999'::Decimal128(28)
 )
@@ -21132,6 +22783,7 @@ VALUES
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -21150,15 +22802,17 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('-0.9999999999999999999999999999'::Decimal128(28),'0.9999999999999999999999999999'::Decimal128(28))
+(1,'-0.9999999999999999999999999999'::Decimal128(28),'0.9999999999999999999999999999'::Decimal128(28))
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -21173,11 +22827,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -21192,11 +22847,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -21208,6 +22864,7 @@ WHERE
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -21226,11 +22883,13 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	toDecimal128('-0.9999999999999999999999999999', 28),
 	toDecimal128('0.9999999999999999999999999999', 28)
 )
@@ -21238,6 +22897,7 @@ VALUES
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -21256,15 +22916,17 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal128('-0.9999999999999999999999999999', 28),toDecimal128('0.9999999999999999999999999999', 28))
+(1,toDecimal128('-0.9999999999999999999999999999', 28),toDecimal128('0.9999999999999999999999999999', 28))
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -21279,11 +22941,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -21298,11 +22961,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -21314,6 +22978,7 @@ WHERE
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -21331,11 +22996,13 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	'0'::Decimal128(0),
 	NULL
 )
@@ -21343,6 +23010,7 @@ VALUES
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -21360,15 +23028,17 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('0'::Decimal128(0),NULL)
+(1,'0'::Decimal128(0),NULL)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -21382,11 +23052,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -21400,11 +23071,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -21415,6 +23087,7 @@ WHERE
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -21433,11 +23106,13 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	toDecimal128('-99999999999999999999999999999', 0),
 	toDecimal128('99999999999999999999999999999', 0)
 )
@@ -21445,6 +23120,7 @@ VALUES
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -21463,15 +23139,17 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal128('-99999999999999999999999999999', 0),toDecimal128('99999999999999999999999999999', 0))
+(1,toDecimal128('-99999999999999999999999999999', 0),toDecimal128('99999999999999999999999999999', 0))
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -21486,11 +23164,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -21505,11 +23184,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -21521,6 +23201,7 @@ WHERE
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -21538,11 +23219,13 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	'0'::Decimal128(1),
 	NULL
 )
@@ -21550,6 +23233,7 @@ VALUES
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -21567,15 +23251,17 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('0'::Decimal128(1),NULL)
+(1,'0'::Decimal128(1),NULL)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -21589,11 +23275,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -21607,11 +23294,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -21622,6 +23310,7 @@ WHERE
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -21640,11 +23329,13 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	toDecimal128('-9999999999999999999999999999.9', 1),
 	toDecimal128('9999999999999999999999999999.9', 1)
 )
@@ -21652,6 +23343,7 @@ VALUES
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -21670,15 +23362,17 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal128('-9999999999999999999999999999.9', 1),toDecimal128('9999999999999999999999999999.9', 1))
+(1,toDecimal128('-9999999999999999999999999999.9', 1),toDecimal128('9999999999999999999999999999.9', 1))
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -21693,11 +23387,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -21712,11 +23407,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -21728,6 +23424,7 @@ WHERE
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -21745,11 +23442,13 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	'0'::Decimal128(28),
 	NULL
 )
@@ -21757,6 +23456,7 @@ VALUES
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -21774,15 +23474,17 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('0'::Decimal128(28),NULL)
+(1,'0'::Decimal128(28),NULL)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -21796,11 +23498,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -21814,11 +23517,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -21829,6 +23533,7 @@ WHERE
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -21847,11 +23552,13 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	toDecimal128('-9.9999999999999999999999999999', 28),
 	toDecimal128('9.9999999999999999999999999999', 28)
 )
@@ -21859,6 +23566,7 @@ VALUES
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -21877,15 +23585,17 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal128('-9.9999999999999999999999999999', 28),toDecimal128('9.9999999999999999999999999999', 28))
+(1,toDecimal128('-9.9999999999999999999999999999', 28),toDecimal128('9.9999999999999999999999999999', 28))
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -21900,11 +23610,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -21919,11 +23630,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -21935,6 +23647,7 @@ WHERE
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -21952,11 +23665,13 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	'0'::Decimal128(29),
 	NULL
 )
@@ -21964,6 +23679,7 @@ VALUES
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -21981,15 +23697,17 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('0'::Decimal128(29),NULL)
+(1,'0'::Decimal128(29),NULL)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -22003,11 +23721,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -22021,11 +23740,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -22036,6 +23756,7 @@ WHERE
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -22054,11 +23775,13 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	toDecimal128('-0.99999999999999999999999999999', 29),
 	toDecimal128('0.99999999999999999999999999999', 29)
 )
@@ -22066,6 +23789,7 @@ VALUES
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -22084,15 +23808,17 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal128('-0.99999999999999999999999999999', 29),toDecimal128('0.99999999999999999999999999999', 29))
+(1,toDecimal128('-0.99999999999999999999999999999', 29),toDecimal128('0.99999999999999999999999999999', 29))
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -22107,11 +23833,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -22126,11 +23853,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -22142,6 +23870,7 @@ WHERE
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -22159,11 +23888,13 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	'0'::Decimal128(0),
 	NULL
 )
@@ -22171,6 +23902,7 @@ VALUES
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -22188,15 +23920,17 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('0'::Decimal128(0),NULL)
+(1,'0'::Decimal128(0),NULL)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -22210,11 +23944,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -22228,11 +23963,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -22243,6 +23979,7 @@ WHERE
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -22261,11 +23998,13 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	toDecimal128('-999999999999999999999999999999', 0),
 	toDecimal128('999999999999999999999999999999', 0)
 )
@@ -22273,6 +24012,7 @@ VALUES
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -22291,15 +24031,17 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal128('-999999999999999999999999999999', 0),toDecimal128('999999999999999999999999999999', 0))
+(1,toDecimal128('-999999999999999999999999999999', 0),toDecimal128('999999999999999999999999999999', 0))
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -22314,11 +24056,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -22333,11 +24076,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -22349,6 +24093,7 @@ WHERE
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -22366,11 +24111,13 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	'0'::Decimal128(1),
 	NULL
 )
@@ -22378,6 +24125,7 @@ VALUES
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -22395,15 +24143,17 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('0'::Decimal128(1),NULL)
+(1,'0'::Decimal128(1),NULL)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -22417,11 +24167,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -22435,11 +24186,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -22450,6 +24202,7 @@ WHERE
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -22468,11 +24221,13 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	toDecimal128('-99999999999999999999999999999.9', 1),
 	toDecimal128('99999999999999999999999999999.9', 1)
 )
@@ -22480,6 +24235,7 @@ VALUES
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -22498,15 +24254,17 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal128('-99999999999999999999999999999.9', 1),toDecimal128('99999999999999999999999999999.9', 1))
+(1,toDecimal128('-99999999999999999999999999999.9', 1),toDecimal128('99999999999999999999999999999.9', 1))
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -22521,11 +24279,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -22540,11 +24299,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -22556,6 +24316,7 @@ WHERE
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -22573,11 +24334,13 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	'0'::Decimal128(29),
 	NULL
 )
@@ -22585,6 +24348,7 @@ VALUES
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -22602,15 +24366,17 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('0'::Decimal128(29),NULL)
+(1,'0'::Decimal128(29),NULL)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -22624,11 +24390,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -22642,11 +24409,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -22657,6 +24425,7 @@ WHERE
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -22675,11 +24444,13 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	toDecimal128('-9.99999999999999999999999999999', 29),
 	toDecimal128('9.99999999999999999999999999999', 29)
 )
@@ -22687,6 +24458,7 @@ VALUES
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -22705,15 +24477,17 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal128('-9.99999999999999999999999999999', 29),toDecimal128('9.99999999999999999999999999999', 29))
+(1,toDecimal128('-9.99999999999999999999999999999', 29),toDecimal128('9.99999999999999999999999999999', 29))
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -22728,11 +24502,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -22747,11 +24522,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -22763,6 +24539,7 @@ WHERE
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -22780,11 +24557,13 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	'0'::Decimal128(30),
 	NULL
 )
@@ -22792,6 +24571,7 @@ VALUES
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -22809,15 +24589,17 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('0'::Decimal128(30),NULL)
+(1,'0'::Decimal128(30),NULL)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -22831,11 +24613,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -22849,11 +24632,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -22864,6 +24648,7 @@ WHERE
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -22882,11 +24667,13 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	toDecimal128('-0.999999999999999999999999999999', 30),
 	toDecimal128('0.999999999999999999999999999999', 30)
 )
@@ -22894,6 +24681,7 @@ VALUES
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -22912,15 +24700,17 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal128('-0.999999999999999999999999999999', 30),toDecimal128('0.999999999999999999999999999999', 30))
+(1,toDecimal128('-0.999999999999999999999999999999', 30),toDecimal128('0.999999999999999999999999999999', 30))
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -22935,11 +24725,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -22954,11 +24745,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -22970,6 +24762,7 @@ WHERE
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -22987,11 +24780,13 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	'0'::Decimal128(0),
 	NULL
 )
@@ -22999,6 +24794,7 @@ VALUES
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -23016,15 +24812,17 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('0'::Decimal128(0),NULL)
+(1,'0'::Decimal128(0),NULL)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -23038,11 +24836,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -23056,11 +24855,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -23071,6 +24871,7 @@ WHERE
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -23089,11 +24890,13 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	toDecimal128('-9999999999999999999999999999999999999', 0),
 	toDecimal128('9999999999999999999999999999999999999', 0)
 )
@@ -23101,6 +24904,7 @@ VALUES
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -23119,15 +24923,17 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal128('-9999999999999999999999999999999999999', 0),toDecimal128('9999999999999999999999999999999999999', 0))
+(1,toDecimal128('-9999999999999999999999999999999999999', 0),toDecimal128('9999999999999999999999999999999999999', 0))
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -23142,11 +24948,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -23161,11 +24968,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -23177,6 +24985,7 @@ WHERE
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -23194,11 +25003,13 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	'0'::Decimal128(1),
 	NULL
 )
@@ -23206,6 +25017,7 @@ VALUES
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -23223,15 +25035,17 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('0'::Decimal128(1),NULL)
+(1,'0'::Decimal128(1),NULL)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -23245,11 +25059,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -23263,11 +25078,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -23278,6 +25094,7 @@ WHERE
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -23296,11 +25113,13 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	toDecimal128('-999999999999999999999999999999999999.9', 1),
 	toDecimal128('999999999999999999999999999999999999.9', 1)
 )
@@ -23308,6 +25127,7 @@ VALUES
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -23326,15 +25146,17 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal128('-999999999999999999999999999999999999.9', 1),toDecimal128('999999999999999999999999999999999999.9', 1))
+(1,toDecimal128('-999999999999999999999999999999999999.9', 1),toDecimal128('999999999999999999999999999999999999.9', 1))
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -23349,11 +25171,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -23368,11 +25191,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -23384,6 +25208,7 @@ WHERE
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -23401,11 +25226,13 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	'0'::Decimal128(36),
 	NULL
 )
@@ -23413,6 +25240,7 @@ VALUES
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -23430,15 +25258,17 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('0'::Decimal128(36),NULL)
+(1,'0'::Decimal128(36),NULL)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -23452,11 +25282,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -23470,11 +25301,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -23485,6 +25317,7 @@ WHERE
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -23503,11 +25336,13 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	toDecimal128('-9.999999999999999999999999999999999999', 36),
 	toDecimal128('9.999999999999999999999999999999999999', 36)
 )
@@ -23515,6 +25350,7 @@ VALUES
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -23533,15 +25369,17 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal128('-9.999999999999999999999999999999999999', 36),toDecimal128('9.999999999999999999999999999999999999', 36))
+(1,toDecimal128('-9.999999999999999999999999999999999999', 36),toDecimal128('9.999999999999999999999999999999999999', 36))
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -23556,11 +25394,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -23575,11 +25414,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -23591,6 +25431,7 @@ WHERE
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -23608,11 +25449,13 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	'0'::Decimal128(37),
 	NULL
 )
@@ -23620,6 +25463,7 @@ VALUES
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -23637,15 +25481,17 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('0'::Decimal128(37),NULL)
+(1,'0'::Decimal128(37),NULL)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -23659,11 +25505,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -23677,11 +25524,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -23692,6 +25540,7 @@ WHERE
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -23710,11 +25559,13 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	toDecimal128('-0.9999999999999999999999999999999999999', 37),
 	toDecimal128('0.9999999999999999999999999999999999999', 37)
 )
@@ -23722,6 +25573,7 @@ VALUES
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -23740,15 +25592,17 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal128('-0.9999999999999999999999999999999999999', 37),toDecimal128('0.9999999999999999999999999999999999999', 37))
+(1,toDecimal128('-0.9999999999999999999999999999999999999', 37),toDecimal128('0.9999999999999999999999999999999999999', 37))
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -23763,11 +25617,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -23782,11 +25637,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -23798,6 +25654,7 @@ WHERE
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -23815,11 +25672,13 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	'0'::Decimal256(0),
 	NULL
 )
@@ -23827,6 +25686,7 @@ VALUES
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -23844,15 +25704,17 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('0'::Decimal256(0),NULL)
+(1,'0'::Decimal256(0),NULL)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -23866,11 +25728,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -23884,11 +25747,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -23899,6 +25763,7 @@ WHERE
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -23917,11 +25782,13 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	toDecimal256('-99999999999999999999999999999999999999', 0),
 	toDecimal256('99999999999999999999999999999999999999', 0)
 )
@@ -23929,6 +25796,7 @@ VALUES
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -23947,15 +25815,17 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal256('-99999999999999999999999999999999999999', 0),toDecimal256('99999999999999999999999999999999999999', 0))
+(1,toDecimal256('-99999999999999999999999999999999999999', 0),toDecimal256('99999999999999999999999999999999999999', 0))
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -23970,11 +25840,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -23989,11 +25860,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -24005,6 +25877,7 @@ WHERE
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -24022,11 +25895,13 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	'0'::Decimal256(1),
 	NULL
 )
@@ -24034,6 +25909,7 @@ VALUES
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -24051,15 +25927,17 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('0'::Decimal256(1),NULL)
+(1,'0'::Decimal256(1),NULL)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -24073,11 +25951,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -24091,11 +25970,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -24106,6 +25986,7 @@ WHERE
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -24124,11 +26005,13 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	toDecimal256('-9999999999999999999999999999999999999.9', 1),
 	toDecimal256('9999999999999999999999999999999999999.9', 1)
 )
@@ -24136,6 +26019,7 @@ VALUES
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -24154,15 +26038,17 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal256('-9999999999999999999999999999999999999.9', 1),toDecimal256('9999999999999999999999999999999999999.9', 1))
+(1,toDecimal256('-9999999999999999999999999999999999999.9', 1),toDecimal256('9999999999999999999999999999999999999.9', 1))
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -24177,11 +26063,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -24196,11 +26083,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -24212,6 +26100,7 @@ WHERE
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -24229,11 +26118,13 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	'0'::Decimal256(37),
 	NULL
 )
@@ -24241,6 +26132,7 @@ VALUES
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -24258,15 +26150,17 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('0'::Decimal256(37),NULL)
+(1,'0'::Decimal256(37),NULL)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -24280,11 +26174,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -24298,11 +26193,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -24313,6 +26209,7 @@ WHERE
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -24331,11 +26228,13 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	toDecimal256('-9.9999999999999999999999999999999999999', 37),
 	toDecimal256('9.9999999999999999999999999999999999999', 37)
 )
@@ -24343,6 +26242,7 @@ VALUES
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -24361,15 +26261,17 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal256('-9.9999999999999999999999999999999999999', 37),toDecimal256('9.9999999999999999999999999999999999999', 37))
+(1,toDecimal256('-9.9999999999999999999999999999999999999', 37),toDecimal256('9.9999999999999999999999999999999999999', 37))
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -24384,11 +26286,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -24403,11 +26306,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -24419,6 +26323,7 @@ WHERE
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -24436,11 +26341,13 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	'0'::Decimal256(38),
 	NULL
 )
@@ -24448,6 +26355,7 @@ VALUES
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -24465,15 +26373,17 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('0'::Decimal256(38),NULL)
+(1,'0'::Decimal256(38),NULL)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -24487,11 +26397,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -24505,11 +26416,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -24520,6 +26432,7 @@ WHERE
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -24538,11 +26451,13 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	toDecimal256('-0.99999999999999999999999999999999999999', 38),
 	toDecimal256('0.99999999999999999999999999999999999999', 38)
 )
@@ -24550,6 +26465,7 @@ VALUES
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -24568,15 +26484,17 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal256('-0.99999999999999999999999999999999999999', 38),toDecimal256('0.99999999999999999999999999999999999999', 38))
+(1,toDecimal256('-0.99999999999999999999999999999999999999', 38),toDecimal256('0.99999999999999999999999999999999999999', 38))
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -24591,11 +26509,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -24610,11 +26529,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -24626,6 +26546,7 @@ WHERE
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -24643,11 +26564,13 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	'0'::Decimal256(0),
 	NULL
 )
@@ -24655,6 +26578,7 @@ VALUES
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -24672,15 +26596,17 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('0'::Decimal256(0),NULL)
+(1,'0'::Decimal256(0),NULL)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -24694,11 +26620,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -24712,11 +26639,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -24727,6 +26655,7 @@ WHERE
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -24745,11 +26674,13 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	toDecimal256('-999999999999999999999999999999999999999', 0),
 	toDecimal256('999999999999999999999999999999999999999', 0)
 )
@@ -24757,6 +26688,7 @@ VALUES
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -24775,15 +26707,17 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal256('-999999999999999999999999999999999999999', 0),toDecimal256('999999999999999999999999999999999999999', 0))
+(1,toDecimal256('-999999999999999999999999999999999999999', 0),toDecimal256('999999999999999999999999999999999999999', 0))
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -24798,11 +26732,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -24817,11 +26752,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -24833,6 +26769,7 @@ WHERE
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -24850,11 +26787,13 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	'0'::Decimal256(1),
 	NULL
 )
@@ -24862,6 +26801,7 @@ VALUES
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -24879,15 +26819,17 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('0'::Decimal256(1),NULL)
+(1,'0'::Decimal256(1),NULL)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -24901,11 +26843,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -24919,11 +26862,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -24934,6 +26878,7 @@ WHERE
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -24952,11 +26897,13 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	toDecimal256('-99999999999999999999999999999999999999.9', 1),
 	toDecimal256('99999999999999999999999999999999999999.9', 1)
 )
@@ -24964,6 +26911,7 @@ VALUES
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -24982,15 +26930,17 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal256('-99999999999999999999999999999999999999.9', 1),toDecimal256('99999999999999999999999999999999999999.9', 1))
+(1,toDecimal256('-99999999999999999999999999999999999999.9', 1),toDecimal256('99999999999999999999999999999999999999.9', 1))
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -25005,11 +26955,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -25024,11 +26975,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -25040,6 +26992,7 @@ WHERE
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -25057,11 +27010,13 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	'0'::Decimal256(38),
 	NULL
 )
@@ -25069,6 +27024,7 @@ VALUES
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -25086,15 +27042,17 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('0'::Decimal256(38),NULL)
+(1,'0'::Decimal256(38),NULL)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -25108,11 +27066,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -25126,11 +27085,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -25141,6 +27101,7 @@ WHERE
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -25159,11 +27120,13 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	toDecimal256('-9.99999999999999999999999999999999999999', 38),
 	toDecimal256('9.99999999999999999999999999999999999999', 38)
 )
@@ -25171,6 +27134,7 @@ VALUES
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -25189,15 +27153,17 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal256('-9.99999999999999999999999999999999999999', 38),toDecimal256('9.99999999999999999999999999999999999999', 38))
+(1,toDecimal256('-9.99999999999999999999999999999999999999', 38),toDecimal256('9.99999999999999999999999999999999999999', 38))
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -25212,11 +27178,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -25231,11 +27198,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -25247,6 +27215,7 @@ WHERE
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -25264,11 +27233,13 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	'0'::Decimal256(39),
 	NULL
 )
@@ -25276,6 +27247,7 @@ VALUES
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -25293,15 +27265,17 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('0'::Decimal256(39),NULL)
+(1,'0'::Decimal256(39),NULL)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -25315,11 +27289,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -25333,11 +27308,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -25348,6 +27324,7 @@ WHERE
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -25366,11 +27343,13 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	toDecimal256('-0.999999999999999999999999999999999999999', 39),
 	toDecimal256('0.999999999999999999999999999999999999999', 39)
 )
@@ -25378,6 +27357,7 @@ VALUES
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -25396,15 +27376,17 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal256('-0.999999999999999999999999999999999999999', 39),toDecimal256('0.999999999999999999999999999999999999999', 39))
+(1,toDecimal256('-0.999999999999999999999999999999999999999', 39),toDecimal256('0.999999999999999999999999999999999999999', 39))
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -25419,11 +27401,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -25438,11 +27421,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -25454,6 +27438,7 @@ WHERE
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -25471,11 +27456,13 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	'0'::Decimal256(0),
 	NULL
 )
@@ -25483,6 +27470,7 @@ VALUES
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -25500,15 +27488,17 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('0'::Decimal256(0),NULL)
+(1,'0'::Decimal256(0),NULL)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -25522,11 +27512,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -25540,11 +27531,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -25555,6 +27547,7 @@ WHERE
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -25573,11 +27566,13 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	toDecimal256('-9999999999999999999999999999999999999999', 0),
 	toDecimal256('9999999999999999999999999999999999999999', 0)
 )
@@ -25585,6 +27580,7 @@ VALUES
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -25603,15 +27599,17 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal256('-9999999999999999999999999999999999999999', 0),toDecimal256('9999999999999999999999999999999999999999', 0))
+(1,toDecimal256('-9999999999999999999999999999999999999999', 0),toDecimal256('9999999999999999999999999999999999999999', 0))
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -25626,11 +27624,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -25645,11 +27644,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -25661,6 +27661,7 @@ WHERE
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -25678,11 +27679,13 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	'0'::Decimal256(1),
 	NULL
 )
@@ -25690,6 +27693,7 @@ VALUES
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -25707,15 +27711,17 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('0'::Decimal256(1),NULL)
+(1,'0'::Decimal256(1),NULL)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -25729,11 +27735,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -25747,11 +27754,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -25762,6 +27770,7 @@ WHERE
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -25780,11 +27789,13 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	toDecimal256('-999999999999999999999999999999999999999.9', 1),
 	toDecimal256('999999999999999999999999999999999999999.9', 1)
 )
@@ -25792,6 +27803,7 @@ VALUES
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -25810,15 +27822,17 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal256('-999999999999999999999999999999999999999.9', 1),toDecimal256('999999999999999999999999999999999999999.9', 1))
+(1,toDecimal256('-999999999999999999999999999999999999999.9', 1),toDecimal256('999999999999999999999999999999999999999.9', 1))
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -25833,11 +27847,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -25852,11 +27867,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -25868,6 +27884,7 @@ WHERE
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -25885,11 +27902,13 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	'0'::Decimal256(39),
 	NULL
 )
@@ -25897,6 +27916,7 @@ VALUES
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -25914,15 +27934,17 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('0'::Decimal256(39),NULL)
+(1,'0'::Decimal256(39),NULL)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -25936,11 +27958,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -25954,11 +27977,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -25969,6 +27993,7 @@ WHERE
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -25987,11 +28012,13 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	toDecimal256('-9.999999999999999999999999999999999999999', 39),
 	toDecimal256('9.999999999999999999999999999999999999999', 39)
 )
@@ -25999,6 +28026,7 @@ VALUES
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -26017,15 +28045,17 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal256('-9.999999999999999999999999999999999999999', 39),toDecimal256('9.999999999999999999999999999999999999999', 39))
+(1,toDecimal256('-9.999999999999999999999999999999999999999', 39),toDecimal256('9.999999999999999999999999999999999999999', 39))
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -26040,11 +28070,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -26059,11 +28090,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -26075,6 +28107,7 @@ WHERE
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -26092,11 +28125,13 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	'0'::Decimal256(40),
 	NULL
 )
@@ -26104,6 +28139,7 @@ VALUES
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -26121,15 +28157,17 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('0'::Decimal256(40),NULL)
+(1,'0'::Decimal256(40),NULL)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -26143,11 +28181,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -26161,11 +28200,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -26176,6 +28216,7 @@ WHERE
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -26194,11 +28235,13 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	toDecimal256('-0.9999999999999999999999999999999999999999', 40),
 	toDecimal256('0.9999999999999999999999999999999999999999', 40)
 )
@@ -26206,6 +28249,7 @@ VALUES
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -26224,15 +28268,17 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal256('-0.9999999999999999999999999999999999999999', 40),toDecimal256('0.9999999999999999999999999999999999999999', 40))
+(1,toDecimal256('-0.9999999999999999999999999999999999999999', 40),toDecimal256('0.9999999999999999999999999999999999999999', 40))
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -26247,11 +28293,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -26266,11 +28313,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -26282,6 +28330,7 @@ WHERE
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -26299,11 +28348,13 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	'0'::Decimal256(0),
 	NULL
 )
@@ -26311,6 +28362,7 @@ VALUES
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -26328,15 +28380,17 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('0'::Decimal256(0),NULL)
+(1,'0'::Decimal256(0),NULL)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -26350,11 +28404,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -26368,11 +28423,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -26383,6 +28439,7 @@ WHERE
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -26401,11 +28458,13 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	toDecimal256('-999999999999999999999999999999999999999999999999999999999999999999999999999', 0),
 	toDecimal256('999999999999999999999999999999999999999999999999999999999999999999999999999', 0)
 )
@@ -26413,6 +28472,7 @@ VALUES
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -26431,15 +28491,17 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal256('-999999999999999999999999999999999999999999999999999999999999999999999999999', 0),toDecimal256('999999999999999999999999999999999999999999999999999999999999999999999999999', 0))
+(1,toDecimal256('-999999999999999999999999999999999999999999999999999999999999999999999999999', 0),toDecimal256('999999999999999999999999999999999999999999999999999999999999999999999999999', 0))
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -26454,11 +28516,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -26473,11 +28536,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -26489,6 +28553,7 @@ WHERE
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -26506,11 +28571,13 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	'0'::Decimal256(1),
 	NULL
 )
@@ -26518,6 +28585,7 @@ VALUES
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -26535,15 +28603,17 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('0'::Decimal256(1),NULL)
+(1,'0'::Decimal256(1),NULL)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -26557,11 +28627,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -26575,11 +28646,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -26590,6 +28662,7 @@ WHERE
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -26608,11 +28681,13 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	toDecimal256('-99999999999999999999999999999999999999999999999999999999999999999999999999.9', 1),
 	toDecimal256('99999999999999999999999999999999999999999999999999999999999999999999999999.9', 1)
 )
@@ -26620,6 +28695,7 @@ VALUES
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -26638,15 +28714,17 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal256('-99999999999999999999999999999999999999999999999999999999999999999999999999.9', 1),toDecimal256('99999999999999999999999999999999999999999999999999999999999999999999999999.9', 1))
+(1,toDecimal256('-99999999999999999999999999999999999999999999999999999999999999999999999999.9', 1),toDecimal256('99999999999999999999999999999999999999999999999999999999999999999999999999.9', 1))
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -26661,11 +28739,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -26680,11 +28759,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -26696,6 +28776,7 @@ WHERE
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -26713,11 +28794,13 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	'0'::Decimal256(74),
 	NULL
 )
@@ -26725,6 +28808,7 @@ VALUES
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -26742,15 +28826,17 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('0'::Decimal256(74),NULL)
+(1,'0'::Decimal256(74),NULL)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -26764,11 +28850,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -26782,11 +28869,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -26797,6 +28885,7 @@ WHERE
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -26815,11 +28904,13 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	toDecimal256('-9.99999999999999999999999999999999999999999999999999999999999999999999999999', 74),
 	toDecimal256('9.99999999999999999999999999999999999999999999999999999999999999999999999999', 74)
 )
@@ -26827,6 +28918,7 @@ VALUES
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -26845,15 +28937,17 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal256('-9.99999999999999999999999999999999999999999999999999999999999999999999999999', 74),toDecimal256('9.99999999999999999999999999999999999999999999999999999999999999999999999999', 74))
+(1,toDecimal256('-9.99999999999999999999999999999999999999999999999999999999999999999999999999', 74),toDecimal256('9.99999999999999999999999999999999999999999999999999999999999999999999999999', 74))
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -26868,11 +28962,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -26887,11 +28982,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -26903,6 +28999,7 @@ WHERE
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -26920,11 +29017,13 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	'0'::Decimal256(75),
 	NULL
 )
@@ -26932,6 +29031,7 @@ VALUES
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -26949,15 +29049,17 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('0'::Decimal256(75),NULL)
+(1,'0'::Decimal256(75),NULL)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -26971,11 +29073,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -26989,11 +29092,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -27004,6 +29108,7 @@ WHERE
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -27022,11 +29127,13 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	toDecimal256('-0.999999999999999999999999999999999999999999999999999999999999999999999999999', 75),
 	toDecimal256('0.999999999999999999999999999999999999999999999999999999999999999999999999999', 75)
 )
@@ -27034,6 +29141,7 @@ VALUES
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -27052,15 +29160,17 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal256('-0.999999999999999999999999999999999999999999999999999999999999999999999999999', 75),toDecimal256('0.999999999999999999999999999999999999999999999999999999999999999999999999999', 75))
+(1,toDecimal256('-0.999999999999999999999999999999999999999999999999999999999999999999999999999', 75),toDecimal256('0.999999999999999999999999999999999999999999999999999999999999999999999999999', 75))
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -27075,11 +29185,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -27094,11 +29205,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -27110,6 +29222,7 @@ WHERE
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -27127,11 +29240,13 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	'0'::Decimal256(0),
 	NULL
 )
@@ -27139,6 +29254,7 @@ VALUES
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -27156,15 +29272,17 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('0'::Decimal256(0),NULL)
+(1,'0'::Decimal256(0),NULL)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -27178,11 +29296,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -27196,11 +29315,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -27211,6 +29331,7 @@ WHERE
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -27229,11 +29350,13 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	toDecimal256('-9999999999999999999999999999999999999999999999999999999999999999999999999999', 0),
 	toDecimal256('9999999999999999999999999999999999999999999999999999999999999999999999999999', 0)
 )
@@ -27241,6 +29364,7 @@ VALUES
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -27259,15 +29383,17 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal256('-9999999999999999999999999999999999999999999999999999999999999999999999999999', 0),toDecimal256('9999999999999999999999999999999999999999999999999999999999999999999999999999', 0))
+(1,toDecimal256('-9999999999999999999999999999999999999999999999999999999999999999999999999999', 0),toDecimal256('9999999999999999999999999999999999999999999999999999999999999999999999999999', 0))
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -27282,11 +29408,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -27301,11 +29428,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -27317,6 +29445,7 @@ WHERE
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -27334,11 +29463,13 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	'0'::Decimal256(1),
 	NULL
 )
@@ -27346,6 +29477,7 @@ VALUES
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -27363,15 +29495,17 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('0'::Decimal256(1),NULL)
+(1,'0'::Decimal256(1),NULL)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -27385,11 +29519,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -27403,11 +29538,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -27418,6 +29554,7 @@ WHERE
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -27436,11 +29573,13 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	toDecimal256('-999999999999999999999999999999999999999999999999999999999999999999999999999.9', 1),
 	toDecimal256('999999999999999999999999999999999999999999999999999999999999999999999999999.9', 1)
 )
@@ -27448,6 +29587,7 @@ VALUES
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -27466,15 +29606,17 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal256('-999999999999999999999999999999999999999999999999999999999999999999999999999.9', 1),toDecimal256('999999999999999999999999999999999999999999999999999999999999999999999999999.9', 1))
+(1,toDecimal256('-999999999999999999999999999999999999999999999999999999999999999999999999999.9', 1),toDecimal256('999999999999999999999999999999999999999999999999999999999999999999999999999.9', 1))
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -27489,11 +29631,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -27508,11 +29651,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -27524,6 +29668,7 @@ WHERE
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -27541,11 +29686,13 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	'0'::Decimal256(75),
 	NULL
 )
@@ -27553,6 +29700,7 @@ VALUES
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -27570,15 +29718,17 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('0'::Decimal256(75),NULL)
+(1,'0'::Decimal256(75),NULL)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -27592,11 +29742,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -27610,11 +29761,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -27625,6 +29777,7 @@ WHERE
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -27643,11 +29796,13 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	toDecimal256('-9.999999999999999999999999999999999999999999999999999999999999999999999999999', 75),
 	toDecimal256('9.999999999999999999999999999999999999999999999999999999999999999999999999999', 75)
 )
@@ -27655,6 +29810,7 @@ VALUES
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -27673,15 +29829,17 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal256('-9.999999999999999999999999999999999999999999999999999999999999999999999999999', 75),toDecimal256('9.999999999999999999999999999999999999999999999999999999999999999999999999999', 75))
+(1,toDecimal256('-9.999999999999999999999999999999999999999999999999999999999999999999999999999', 75),toDecimal256('9.999999999999999999999999999999999999999999999999999999999999999999999999999', 75))
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -27696,11 +29854,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -27715,11 +29874,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -27731,6 +29891,7 @@ WHERE
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -27748,11 +29909,13 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	'0'::Decimal256(76),
 	NULL
 )
@@ -27760,6 +29923,7 @@ VALUES
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -27777,15 +29941,17 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-('0'::Decimal256(76),NULL)
+(1,'0'::Decimal256(76),NULL)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -27799,11 +29965,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -27817,11 +29984,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -27832,6 +30000,7 @@ WHERE
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -27850,11 +30019,13 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
 (
+	1,
 	toDecimal256('-0.9999999999999999999999999999999999999999999999999999999999999999999999999999', 76),
 	toDecimal256('0.9999999999999999999999999999999999999999999999999999999999999999999999999999', 76)
 )
@@ -27862,6 +30033,7 @@ VALUES
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -27880,15 +30052,17 @@ DELETE WHERE 1
 
 INSERT INTO `TypeTable``2`
 (
+	Id,
 	Column,
 	ColumnNullable
 )
 VALUES
-(toDecimal256('-0.9999999999999999999999999999999999999999999999999999999999999999999999999999', 76),toDecimal256('0.9999999999999999999999999999999999999999999999999999999999999999999999999999', 76))
+(1,toDecimal256('-0.9999999999999999999999999999999999999999999999999999999999999999999999999999', 76),toDecimal256('0.9999999999999999999999999999999999999999999999999999999999999999999999999999', 76))
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -27903,11 +30077,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM
@@ -27922,11 +30097,12 @@ ALTER TABLE
 	`TypeTable``2`
 DELETE WHERE 1
 
-INSERT ASYNC BULK `TypeTable``2`(Column, ColumnNullable)
+INSERT ASYNC BULK `TypeTable``2`(Id, Column, ColumnNullable)
 
 -- ClickHouse.Driver ClickHouse
 
 SELECT
+	r.Id,
 	r.Column,
 	r.ColumnNullable
 FROM

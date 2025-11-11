@@ -92,6 +92,7 @@ FROM
 -- SQLite.MS SQLite
 
 SELECT
+	[t1].[Id],
 	[t1].[GroupId],
 	[t1].[DataValue]
 FROM

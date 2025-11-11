@@ -13,7 +13,9 @@ FROM
 
 CREATE TEMPORARY TABLE `TempTable`
 (
-	`ID` INT NOT NULL
+	`ID` INT NOT NULL,
+
+	CONSTRAINT `PK_TempTable` PRIMARY KEY CLUSTERED (`ID`)
 )
 
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80

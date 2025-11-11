@@ -1,6 +1,7 @@
 ﻿-- Informix.DB2 Informix
 
 SELECT
+	p.PK,
 	p.Id,
 	p.Date1,
 	p.Date2,
@@ -26,6 +27,7 @@ WHERE
 -- Informix.DB2 Informix
 
 SELECT
+	p.PK,
 	p.Id,
 	p.Date1,
 	p.Date2,

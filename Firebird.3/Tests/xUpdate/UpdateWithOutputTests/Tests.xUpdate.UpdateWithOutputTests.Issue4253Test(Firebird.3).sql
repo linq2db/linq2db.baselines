@@ -10,7 +10,7 @@ SET
 			"Issue4193Person" "p_1"
 				INNER JOIN "Issue4193Employee" "r_1" ON "p_1"."EmployeeId" = "r_1"."Id"
 		WHERE
-			"Issue4193Person"."Name" = "p_1"."Name" AND ("Issue4193Person"."EmployeeId" = "p_1"."EmployeeId" OR "Issue4193Person"."EmployeeId" IS NULL AND "p_1"."EmployeeId" IS NULL)
+			"Issue4193Person"."Id" = "p_1"."Id"
 	)
 WHERE
 	EXISTS(
@@ -20,7 +20,7 @@ WHERE
 			"Issue4193Person" "p"
 				INNER JOIN "Issue4193Employee" "r" ON "p"."EmployeeId" = "r"."Id"
 		WHERE
-			"Issue4193Person"."Name" = "p"."Name" AND ("Issue4193Person"."EmployeeId" = "p"."EmployeeId" OR "Issue4193Person"."EmployeeId" IS NULL AND "p"."EmployeeId" IS NULL)
+			"Issue4193Person"."Id" = "p"."Id"
 	)
 RETURNING
 	NEW."EmployeeId"

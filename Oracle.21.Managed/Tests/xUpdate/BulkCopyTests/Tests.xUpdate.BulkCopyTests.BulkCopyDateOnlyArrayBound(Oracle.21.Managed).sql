@@ -7,6 +7,7 @@ INSERT INTO "DateOnlyTable" ("Date") VALUES (:p1)
 -- Oracle.21.Managed Oracle.Managed Oracle12
 
 SELECT
+	t1."Id",
 	t1."Date" as "Date_1"
 FROM
 	"DateOnlyTable" t1

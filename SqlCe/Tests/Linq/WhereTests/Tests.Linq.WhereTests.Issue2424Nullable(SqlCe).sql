@@ -1,6 +1,7 @@
 ﻿-- SqlCe
 
 SELECT
+	[i].[Pk],
 	[i].[Id],
 	[i].[StrValue],
 	[i].[StrValueNullable]
@@ -10,6 +11,7 @@ FROM
 -- SqlCe
 
 SELECT
+	[t1].[Pk],
 	[t1].[Id],
 	[t1].[StrValue],
 	[t1].[StrValueNullable]
@@ -19,6 +21,7 @@ FROM
 -- SqlCe
 
 SELECT
+	[i].[Pk],
 	[i].[Id],
 	[i].[StrValue],
 	[i].[StrValueNullable]
@@ -30,6 +33,7 @@ WHERE
 -- SqlCe
 
 SELECT
+	[t1].[Pk],
 	[t1].[Id],
 	[t1].[StrValue],
 	[t1].[StrValueNullable]
@@ -39,6 +43,7 @@ FROM
 -- SqlCe
 
 SELECT
+	[i].[Pk],
 	[i].[Id],
 	[i].[StrValue],
 	[i].[StrValueNullable]
@@ -50,6 +55,7 @@ WHERE
 -- SqlCe
 
 SELECT
+	[t1].[Pk],
 	[t1].[Id],
 	[t1].[StrValue],
 	[t1].[StrValueNullable]
@@ -59,6 +65,7 @@ FROM
 -- SqlCe
 
 SELECT
+	[i].[Pk],
 	[i].[Id],
 	[i].[StrValue],
 	[i].[StrValueNullable]
@@ -70,6 +77,7 @@ WHERE
 -- SqlCe
 
 SELECT
+	[t1].[Pk],
 	[t1].[Id],
 	[t1].[StrValue],
 	[t1].[StrValueNullable]
@@ -79,6 +87,7 @@ FROM
 -- SqlCe
 
 SELECT
+	[i].[Pk],
 	[i].[Id],
 	[i].[StrValue],
 	[i].[StrValueNullable]
@@ -90,6 +99,7 @@ WHERE
 -- SqlCe
 
 SELECT
+	[t1].[Pk],
 	[t1].[Id],
 	[t1].[StrValue],
 	[t1].[StrValueNullable]
@@ -99,6 +109,7 @@ FROM
 -- SqlCe
 
 SELECT
+	[i].[Pk],
 	[i].[Id],
 	[i].[StrValue],
 	[i].[StrValueNullable]
@@ -110,6 +121,7 @@ WHERE
 -- SqlCe
 
 SELECT
+	[t1].[Pk],
 	[t1].[Id],
 	[t1].[StrValue],
 	[t1].[StrValueNullable]
@@ -119,6 +131,7 @@ FROM
 -- SqlCe
 
 SELECT
+	[i].[Pk],
 	[i].[Id],
 	[i].[StrValue],
 	[i].[StrValueNullable]
@@ -130,6 +143,7 @@ WHERE
 -- SqlCe
 
 SELECT
+	[t1].[Pk],
 	[t1].[Id],
 	[t1].[StrValue],
 	[t1].[StrValueNullable]
@@ -139,6 +153,7 @@ FROM
 -- SqlCe
 
 SELECT
+	[i].[Pk],
 	[i].[Id],
 	[i].[StrValue],
 	[i].[StrValueNullable]
@@ -150,6 +165,7 @@ WHERE
 -- SqlCe
 
 SELECT
+	[t1].[Pk],
 	[t1].[Id],
 	[t1].[StrValue],
 	[t1].[StrValueNullable]
@@ -159,6 +175,7 @@ FROM
 -- SqlCe
 
 SELECT
+	[i].[Pk],
 	[i].[Id],
 	[i].[StrValue],
 	[i].[StrValueNullable]
@@ -170,6 +187,7 @@ WHERE
 -- SqlCe
 
 SELECT
+	[t1].[Pk],
 	[t1].[Id],
 	[t1].[StrValue],
 	[t1].[StrValueNullable]
@@ -179,6 +197,7 @@ FROM
 -- SqlCe
 
 SELECT
+	[i].[Pk],
 	[i].[Id],
 	[i].[StrValue],
 	[i].[StrValueNullable]
@@ -190,6 +209,7 @@ WHERE
 -- SqlCe
 
 SELECT
+	[t1].[Pk],
 	[t1].[Id],
 	[t1].[StrValue],
 	[t1].[StrValueNullable]
@@ -199,6 +219,7 @@ FROM
 -- SqlCe
 
 SELECT
+	[i].[Pk],
 	[i].[Id],
 	[i].[StrValue],
 	[i].[StrValueNullable]
@@ -210,6 +231,7 @@ WHERE
 -- SqlCe
 
 SELECT
+	[t1].[Pk],
 	[t1].[Id],
 	[t1].[StrValue],
 	[t1].[StrValueNullable]
@@ -219,6 +241,7 @@ FROM
 -- SqlCe
 
 SELECT
+	[i].[Pk],
 	[i].[Id],
 	[i].[StrValue],
 	[i].[StrValueNullable]
@@ -230,6 +253,7 @@ WHERE
 -- SqlCe
 
 SELECT
+	[t1].[Pk],
 	[t1].[Id],
 	[t1].[StrValue],
 	[t1].[StrValueNullable]
@@ -239,6 +263,7 @@ FROM
 -- SqlCe
 
 SELECT
+	[i].[Pk],
 	[i].[Id],
 	[i].[StrValue],
 	[i].[StrValueNullable]
@@ -250,6 +275,7 @@ WHERE
 -- SqlCe
 
 SELECT
+	[t1].[Pk],
 	[t1].[Id],
 	[t1].[StrValue],
 	[t1].[StrValueNullable]
@@ -259,6 +285,7 @@ FROM
 -- SqlCe
 
 SELECT
+	[i].[Pk],
 	[i].[Id],
 	[i].[StrValue],
 	[i].[StrValueNullable]
@@ -270,6 +297,7 @@ WHERE
 -- SqlCe
 
 SELECT
+	[t1].[Pk],
 	[t1].[Id],
 	[t1].[StrValue],
 	[t1].[StrValueNullable]
@@ -279,6 +307,7 @@ FROM
 -- SqlCe
 
 SELECT
+	[i].[Pk],
 	[i].[Id],
 	[i].[StrValue],
 	[i].[StrValueNullable]
@@ -290,6 +319,7 @@ WHERE
 -- SqlCe
 
 SELECT
+	[t1].[Pk],
 	[t1].[Id],
 	[t1].[StrValue],
 	[t1].[StrValueNullable]
@@ -299,6 +329,7 @@ FROM
 -- SqlCe
 
 SELECT
+	[i].[Pk],
 	[i].[Id],
 	[i].[StrValue],
 	[i].[StrValueNullable]
@@ -310,6 +341,7 @@ WHERE
 -- SqlCe
 
 SELECT
+	[t1].[Pk],
 	[t1].[Id],
 	[t1].[StrValue],
 	[t1].[StrValueNullable]
@@ -319,6 +351,7 @@ FROM
 -- SqlCe
 
 SELECT
+	[i].[Pk],
 	[i].[Id],
 	[i].[StrValue],
 	[i].[StrValueNullable]
@@ -330,6 +363,7 @@ WHERE
 -- SqlCe
 
 SELECT
+	[t1].[Pk],
 	[t1].[Id],
 	[t1].[StrValue],
 	[t1].[StrValueNullable]
@@ -339,6 +373,7 @@ FROM
 -- SqlCe
 
 SELECT
+	[i].[Pk],
 	[i].[Id],
 	[i].[StrValue],
 	[i].[StrValueNullable]
@@ -350,6 +385,7 @@ WHERE
 -- SqlCe
 
 SELECT
+	[t1].[Pk],
 	[t1].[Id],
 	[t1].[StrValue],
 	[t1].[StrValueNullable]
@@ -359,6 +395,7 @@ FROM
 -- SqlCe
 
 SELECT
+	[i].[Pk],
 	[i].[Id],
 	[i].[StrValue],
 	[i].[StrValueNullable]
@@ -370,6 +407,7 @@ WHERE
 -- SqlCe
 
 SELECT
+	[t1].[Pk],
 	[t1].[Id],
 	[t1].[StrValue],
 	[t1].[StrValueNullable]
@@ -379,6 +417,7 @@ FROM
 -- SqlCe
 
 SELECT
+	[i].[Pk],
 	[i].[Id],
 	[i].[StrValue],
 	[i].[StrValueNullable]
@@ -390,6 +429,7 @@ WHERE
 -- SqlCe
 
 SELECT
+	[t1].[Pk],
 	[t1].[Id],
 	[t1].[StrValue],
 	[t1].[StrValueNullable]
@@ -399,6 +439,7 @@ FROM
 -- SqlCe
 
 SELECT
+	[i].[Pk],
 	[i].[Id],
 	[i].[StrValue],
 	[i].[StrValueNullable]
@@ -410,6 +451,7 @@ WHERE
 -- SqlCe
 
 SELECT
+	[t1].[Pk],
 	[t1].[Id],
 	[t1].[StrValue],
 	[t1].[StrValueNullable]
@@ -419,6 +461,7 @@ FROM
 -- SqlCe
 
 SELECT
+	[i].[Pk],
 	[i].[Id],
 	[i].[StrValue],
 	[i].[StrValueNullable]
@@ -430,6 +473,7 @@ WHERE
 -- SqlCe
 
 SELECT
+	[t1].[Pk],
 	[t1].[Id],
 	[t1].[StrValue],
 	[t1].[StrValueNullable]
@@ -439,6 +483,7 @@ FROM
 -- SqlCe
 
 SELECT
+	[i].[Pk],
 	[i].[Id],
 	[i].[StrValue],
 	[i].[StrValueNullable]
@@ -450,6 +495,7 @@ WHERE
 -- SqlCe
 
 SELECT
+	[t1].[Pk],
 	[t1].[Id],
 	[t1].[StrValue],
 	[t1].[StrValueNullable]
@@ -459,6 +505,7 @@ FROM
 -- SqlCe
 
 SELECT
+	[i].[Pk],
 	[i].[Id],
 	[i].[StrValue],
 	[i].[StrValueNullable]
@@ -470,6 +517,7 @@ WHERE
 -- SqlCe
 
 SELECT
+	[t1].[Pk],
 	[t1].[Id],
 	[t1].[StrValue],
 	[t1].[StrValueNullable]

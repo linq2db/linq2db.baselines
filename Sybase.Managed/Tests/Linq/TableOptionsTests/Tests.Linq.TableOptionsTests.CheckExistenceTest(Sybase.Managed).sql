@@ -4,7 +4,9 @@ IF (OBJECT_ID(N'DisposableTable') IS NULL)
 	EXECUTE('
 		CREATE TABLE [DisposableTable]
 		(
-			[ID] Int NOT NULL
+			[ID] Int NOT NULL,
+
+			CONSTRAINT [PK_DisposableTable] PRIMARY KEY CLUSTERED ([ID])
 		)
 	')
 

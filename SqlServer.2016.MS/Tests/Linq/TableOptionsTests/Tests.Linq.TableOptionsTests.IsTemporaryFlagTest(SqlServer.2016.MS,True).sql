@@ -3,7 +3,9 @@
 CREATE TABLE [tempdb].[TestSchema].[#IsTemporaryTable]
 (
 	[Id]    Int NOT NULL,
-	[Value] Int NOT NULL
+	[Value] Int NOT NULL,
+
+	PRIMARY KEY CLUSTERED ([Id])
 )
 
 -- SqlServer.2016.MS SqlServer.2016

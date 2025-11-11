@@ -16,6 +16,7 @@ WHERE
 -- SQLite.MS SQLite
 
 SELECT
+	[t1].[Pk],
 	[t1].[Id],
 	[t1].[StrValue],
 	[t1].[StrValueNullable]
@@ -40,6 +41,7 @@ WHERE
 -- SQLite.MS SQLite
 
 SELECT
+	[t1].[Pk],
 	[t1].[Id],
 	[t1].[StrValue],
 	[t1].[StrValueNullable]
@@ -64,6 +66,7 @@ WHERE
 -- SQLite.MS SQLite
 
 SELECT
+	[t1].[Pk],
 	[t1].[Id],
 	[t1].[StrValue],
 	[t1].[StrValueNullable]
@@ -88,6 +91,7 @@ WHERE
 -- SQLite.MS SQLite
 
 SELECT
+	[t1].[Pk],
 	[t1].[Id],
 	[t1].[StrValue],
 	[t1].[StrValueNullable]
@@ -112,6 +116,7 @@ WHERE
 -- SQLite.MS SQLite
 
 SELECT
+	[t1].[Pk],
 	[t1].[Id],
 	[t1].[StrValue],
 	[t1].[StrValueNullable]
@@ -136,6 +141,7 @@ WHERE
 -- SQLite.MS SQLite
 
 SELECT
+	[t1].[Pk],
 	[t1].[Id],
 	[t1].[StrValue],
 	[t1].[StrValueNullable]
@@ -160,6 +166,7 @@ WHERE
 -- SQLite.MS SQLite
 
 SELECT
+	[t1].[Pk],
 	[t1].[Id],
 	[t1].[StrValue],
 	[t1].[StrValueNullable]
@@ -184,6 +191,7 @@ WHERE
 -- SQLite.MS SQLite
 
 SELECT
+	[t1].[Pk],
 	[t1].[Id],
 	[t1].[StrValue],
 	[t1].[StrValueNullable]
@@ -208,6 +216,7 @@ WHERE
 -- SQLite.MS SQLite
 
 SELECT
+	[t1].[Pk],
 	[t1].[Id],
 	[t1].[StrValue],
 	[t1].[StrValueNullable]
@@ -232,6 +241,7 @@ WHERE
 -- SQLite.MS SQLite
 
 SELECT
+	[t1].[Pk],
 	[t1].[Id],
 	[t1].[StrValue],
 	[t1].[StrValueNullable]
@@ -256,6 +266,7 @@ WHERE
 -- SQLite.MS SQLite
 
 SELECT
+	[t1].[Pk],
 	[t1].[Id],
 	[t1].[StrValue],
 	[t1].[StrValueNullable]
@@ -280,6 +291,7 @@ WHERE
 -- SQLite.MS SQLite
 
 SELECT
+	[t1].[Pk],
 	[t1].[Id],
 	[t1].[StrValue],
 	[t1].[StrValueNullable]
@@ -305,6 +317,7 @@ WHERE
 -- SQLite.MS SQLite
 
 SELECT
+	[t1].[Pk],
 	[t1].[Id],
 	[t1].[StrValue],
 	[t1].[StrValueNullable]
@@ -330,6 +343,7 @@ WHERE
 -- SQLite.MS SQLite
 
 SELECT
+	[t1].[Pk],
 	[t1].[Id],
 	[t1].[StrValue],
 	[t1].[StrValueNullable]
@@ -355,6 +369,7 @@ WHERE
 -- SQLite.MS SQLite
 
 SELECT
+	[t1].[Pk],
 	[t1].[Id],
 	[t1].[StrValue],
 	[t1].[StrValueNullable]
@@ -380,6 +395,7 @@ WHERE
 -- SQLite.MS SQLite
 
 SELECT
+	[t1].[Pk],
 	[t1].[Id],
 	[t1].[StrValue],
 	[t1].[StrValueNullable]
@@ -405,6 +421,7 @@ WHERE
 -- SQLite.MS SQLite
 
 SELECT
+	[t1].[Pk],
 	[t1].[Id],
 	[t1].[StrValue],
 	[t1].[StrValueNullable]
@@ -431,6 +448,7 @@ WHERE
 -- SQLite.MS SQLite
 
 SELECT
+	[t1].[Pk],
 	[t1].[Id],
 	[t1].[StrValue],
 	[t1].[StrValueNullable]

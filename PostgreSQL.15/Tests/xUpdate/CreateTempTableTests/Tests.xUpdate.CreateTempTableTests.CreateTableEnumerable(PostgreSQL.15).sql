@@ -13,7 +13,9 @@ FROM
 
 CREATE TABLE IF NOT EXISTS "TempTable"
 (
-	"ID" Int NOT NULL
+	"ID" Int NOT NULL,
+
+	CONSTRAINT "PK_TempTable" PRIMARY KEY ("ID")
 )
 
 -- PostgreSQL.15 PostgreSQL

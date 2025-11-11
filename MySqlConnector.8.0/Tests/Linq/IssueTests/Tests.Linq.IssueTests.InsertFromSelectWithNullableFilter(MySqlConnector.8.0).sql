@@ -2,10 +2,12 @@
 
 INSERT INTO `InsertIssueTest`
 (
+	`Pk`,
 	`ID`,
 	`intDataType`
 )
 SELECT
+	`t2`.`ID`,
 	123,
 	`t2`.`ID`
 FROM
@@ -25,10 +27,12 @@ SET     @cond = 1234
 
 INSERT INTO `InsertIssueTest`
 (
+	`Pk`,
 	`ID`,
 	`intDataType`
 )
 SELECT
+	`t2`.`ID`,
 	123,
 	`t2`.`ID`
 FROM
@@ -45,6 +49,7 @@ FROM
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 
 SELECT
+	`t1`.`Pk`,
 	`t1`.`ID`,
 	`t1`.`intDataType`
 FROM

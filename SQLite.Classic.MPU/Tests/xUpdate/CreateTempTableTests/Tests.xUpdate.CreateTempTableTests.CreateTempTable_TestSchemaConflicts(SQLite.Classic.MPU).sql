@@ -16,7 +16,9 @@ VALUES
 CREATE TABLE IF NOT EXISTS [TempTable]
 (
 	[Id]      INTEGER       NOT NULL,
-	[Renamed] NVarChar(255)     NULL
+	[Renamed] NVarChar(255)     NULL,
+
+	CONSTRAINT [PK_TempTable] PRIMARY KEY ([Id])
 )
 
 -- SQLite.Classic.MPU SQLite.Classic SQLite

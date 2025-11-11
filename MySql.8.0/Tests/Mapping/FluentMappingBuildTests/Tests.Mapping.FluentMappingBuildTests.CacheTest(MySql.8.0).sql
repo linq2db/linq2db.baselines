@@ -4,7 +4,9 @@ CREATE TABLE IF NOT EXISTS `FluentTemp`
 (
 	`ID`       INT         NOT NULL,
 	`Value`    VARCHAR(20)     NULL,
-	`LastName` VARCHAR(20)     NULL
+	`LastName` VARCHAR(20)     NULL,
+
+	CONSTRAINT `PK_FluentTemp` PRIMARY KEY CLUSTERED (`ID`)
 )
 
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
@@ -49,7 +51,9 @@ CREATE TABLE IF NOT EXISTS `FluentTemp`
 (
 	`ID`       INT         NOT NULL,
 	`Value`    VARCHAR(20)     NULL,
-	`LastName` VARCHAR(20)     NULL
+	`LastName` VARCHAR(20)     NULL,
+
+	CONSTRAINT `PK_FluentTemp` PRIMARY KEY CLUSTERED (`ID`)
 )
 
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
@@ -94,7 +98,9 @@ CREATE TABLE IF NOT EXISTS `FluentTemp`
 (
 	`ID`       INT         NOT NULL,
 	`Column`   VARCHAR(20)     NULL,
-	`LastName` VARCHAR(20)     NULL
+	`LastName` VARCHAR(20)     NULL,
+
+	CONSTRAINT `PK_FluentTemp` PRIMARY KEY CLUSTERED (`ID`)
 )
 
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
@@ -139,7 +145,9 @@ CREATE TABLE IF NOT EXISTS `FluentTemp`
 (
 	`ID`       INT         NOT NULL,
 	`Column`   VARCHAR(20)     NULL,
-	`LastName` VARCHAR(20)     NULL
+	`LastName` VARCHAR(20)     NULL,
+
+	CONSTRAINT `PK_FluentTemp` PRIMARY KEY CLUSTERED (`ID`)
 )
 
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80

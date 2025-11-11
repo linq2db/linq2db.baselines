@@ -2,7 +2,9 @@
 
 CREATE TABLE "Table"
 (
-	"ID" Int NOT NULL
+	"ID" Int NOT NULL,
+
+	CONSTRAINT "PK_Table" PRIMARY KEY ("ID")
 )
 
 -- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL

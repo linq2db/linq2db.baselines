@@ -3,6 +3,7 @@ DECLARE @value TinyInt(1) -- Byte
 SET     @value = 0
 
 SELECT
+	"t"."Id",
 	"t"."Value"
 FROM
 	"NullableBoolClass" "t"
@@ -14,6 +15,7 @@ DECLARE @value TinyInt(1) -- Byte
 SET     @value = 0
 
 SELECT
+	"t"."Id",
 	"t"."Value"
 FROM
 	"NullableBoolClass" "t"
@@ -25,6 +27,7 @@ DECLARE @value TinyInt(1) -- Byte
 SET     @value = 0
 
 SELECT
+	"t"."Id",
 	"t"."Value"
 FROM
 	"NullableBoolClass" "t"
@@ -36,6 +39,7 @@ DECLARE @value TinyInt(1) -- Byte
 SET     @value = 0
 
 SELECT
+	"t"."Id",
 	"t"."Value"
 FROM
 	"NullableBoolClass" "t"

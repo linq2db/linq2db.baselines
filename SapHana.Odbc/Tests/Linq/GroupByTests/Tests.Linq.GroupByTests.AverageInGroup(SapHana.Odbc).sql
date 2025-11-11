@@ -31,6 +31,7 @@ GROUP BY
 -- SapHana.Odbc SapHanaOdbc
 
 SELECT
+	"t1"."Id",
 	"t1"."GroupId",
 	"t1"."DataValue"
 FROM

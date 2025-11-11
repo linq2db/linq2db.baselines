@@ -4,7 +4,9 @@ CREATE TABLE IF NOT EXISTS "FluentTemp"
 (
 	"ID"       Int  NOT NULL,
 	"Value"    text     NULL,
-	"LastName" text     NULL
+	"LastName" text     NULL,
+
+	CONSTRAINT "PK_FluentTemp" PRIMARY KEY ("ID")
 )
 
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
@@ -49,7 +51,9 @@ CREATE TABLE IF NOT EXISTS "FluentTemp"
 (
 	"ID"       Int  NOT NULL,
 	"Value"    text     NULL,
-	"LastName" text     NULL
+	"LastName" text     NULL,
+
+	CONSTRAINT "PK_FluentTemp" PRIMARY KEY ("ID")
 )
 
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
@@ -94,7 +98,9 @@ CREATE TABLE IF NOT EXISTS "FluentTemp"
 (
 	"ID"       Int  NOT NULL,
 	"Column"   text     NULL,
-	"LastName" text     NULL
+	"LastName" text     NULL,
+
+	CONSTRAINT "PK_FluentTemp" PRIMARY KEY ("ID")
 )
 
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
@@ -139,7 +145,9 @@ CREATE TABLE IF NOT EXISTS "FluentTemp"
 (
 	"ID"       Int  NOT NULL,
 	"Column"   text     NULL,
-	"LastName" text     NULL
+	"LastName" text     NULL,
+
+	CONSTRAINT "PK_FluentTemp" PRIMARY KEY ("ID")
 )
 
 -- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL

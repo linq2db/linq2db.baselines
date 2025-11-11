@@ -3,9 +3,12 @@
 CREATE TEMPORARY TABLE IsTemporaryTable
 (
 	Id    Int32,
-	Value Int32
+	Value Int32,
+
+	PRIMARY KEY (Id)
 )
-ENGINE = Memory()
+ENGINE = MergeTree()
+ORDER BY Id
 
 -- ClickHouse.MySql ClickHouse
 

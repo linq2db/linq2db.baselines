@@ -1,13 +1,27 @@
 ﻿-- SqlServer.2016
 
-CREATE TABLE [tempdb]..[#temp_table_2]
+CREATE TABLE [temp_table_1]
 (
-	[Value] NVarChar(4000)     NULL
+	[ID]    Int            NOT NULL,
+	[Value] NVarChar(4000)     NULL,
+
+	CONSTRAINT [PK_temp_table_1] PRIMARY KEY CLUSTERED ([ID])
+)
+
+INSERT BULK [temp_table_1](ID, Value)
+
+-- SqlServer.2016
+
+CREATE TABLE [temp_table_2]
+(
+	[Value] NVarChar(50) NOT NULL,
+
+	CONSTRAINT [PK_temp_table_2] PRIMARY KEY CLUSTERED ([Value])
 )
 
 -- SqlServer.2016
 
-INSERT INTO [tempdb]..[#temp_table_2]
+INSERT INTO [temp_table_2]
 (
 	[Value]
 )
@@ -33,5 +47,9 @@ FROM
 
 -- SqlServer.2016
 
-DROP TABLE IF EXISTS [tempdb]..[#temp_table_2]
+DROP TABLE IF EXISTS [temp_table_2]
+
+-- SqlServer.2016
+
+DROP TABLE IF EXISTS [temp_table_1]
 

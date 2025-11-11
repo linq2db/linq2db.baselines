@@ -16,7 +16,9 @@ VALUES
 CREATE TABLE IF NOT EXISTS TempTable
 (
 	Id      Int           NOT NULL,
-	Renamed NVarChar(255)     NULL
+	Renamed NVarChar(255)     NULL,
+
+	PRIMARY KEY (Id)
 )
 
 -- Informix.DB2 Informix

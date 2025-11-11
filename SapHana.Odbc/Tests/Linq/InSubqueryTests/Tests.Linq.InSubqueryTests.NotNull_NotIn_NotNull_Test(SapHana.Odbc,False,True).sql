@@ -1,6 +1,7 @@
 ﻿-- SapHana.Odbc SapHanaOdbc
 
 SELECT
+	"t"."PK",
 	"t"."ID"
 FROM
 	"test_in_1" "t"
@@ -12,11 +13,12 @@ WHERE
 			"test_in_2" "p"
 	)
 ORDER BY
-	"t"."ID"
+	"t"."PK"
 
 -- SapHana.Odbc SapHanaOdbc
 
 SELECT
+	"t1"."PK",
 	"t1"."ID"
 FROM
 	"test_in_1" "t1"
@@ -24,6 +26,7 @@ FROM
 -- SapHana.Odbc SapHanaOdbc
 
 SELECT
+	"t1"."PK",
 	"t1"."ID"
 FROM
 	"test_in_2" "t1"

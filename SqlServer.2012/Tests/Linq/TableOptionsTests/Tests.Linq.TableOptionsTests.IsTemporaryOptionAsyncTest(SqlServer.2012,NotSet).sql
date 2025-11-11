@@ -3,7 +3,9 @@
 CREATE TABLE [tempdb]..[#temp_table1]
 (
 	[ID]    Int NOT NULL,
-	[Value] Int NOT NULL
+	[Value] Int NOT NULL,
+
+	PRIMARY KEY CLUSTERED ([ID])
 )
 
 INSERT ASYNC BULK [tempdb]..[#temp_table1](ID, Value)
@@ -13,7 +15,9 @@ INSERT ASYNC BULK [tempdb]..[#temp_table1](ID, Value)
 CREATE TABLE [tempdb]..[#temp_table2]
 (
 	[ID]    Int NOT NULL,
-	[Value] Int NOT NULL
+	[Value] Int NOT NULL,
+
+	PRIMARY KEY CLUSTERED ([ID])
 )
 
 -- SqlServer.2012

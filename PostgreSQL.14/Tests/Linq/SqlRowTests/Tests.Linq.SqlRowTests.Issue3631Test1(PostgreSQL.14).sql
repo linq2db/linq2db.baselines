@@ -1,6 +1,7 @@
 ﻿-- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
 
 SELECT
+	x."Id",
 	x."Country",
 	x."State"
 FROM

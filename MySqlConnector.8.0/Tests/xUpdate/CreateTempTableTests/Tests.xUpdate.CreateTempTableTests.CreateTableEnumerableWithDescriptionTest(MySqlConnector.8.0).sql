@@ -6,7 +6,9 @@ DROP TABLE IF EXISTS `TempTable`
 
 CREATE TABLE IF NOT EXISTS `TempTable`
 (
-	`Name` VARCHAR(20) NOT NULL
+	`Name` VARCHAR(20) NOT NULL,
+
+	CONSTRAINT `PK_TempTable` PRIMARY KEY CLUSTERED (`Name`)
 )
 
 -- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80

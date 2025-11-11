@@ -8,7 +8,9 @@ IF (OBJECT_ID(N'[tempdb]..[#TestTable]', N'U') IS NOT NULL)
 CREATE TABLE [tempdb]..[#TestTable]
 (
 	[Id]    Int NOT NULL,
-	[Value] Int NOT NULL
+	[Value] Int NOT NULL,
+
+	PRIMARY KEY CLUSTERED ([Id])
 )
 
 -- SqlServer.2008.MS SqlServer.2008

@@ -1,6 +1,7 @@
 ﻿-- SqlServer.Contained.MS SqlServer.2019
 
 SELECT
+	[t].[Id],
 	[t].[Value]
 FROM
 	[NullableBoolClass] [t]
@@ -10,6 +11,7 @@ WHERE
 -- SqlServer.Contained.MS SqlServer.2019
 
 SELECT
+	[t].[Id],
 	[t].[Value]
 FROM
 	[NullableBoolClass] [t]

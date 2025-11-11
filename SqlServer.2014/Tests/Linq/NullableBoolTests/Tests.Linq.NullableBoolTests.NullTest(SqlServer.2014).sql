@@ -1,6 +1,7 @@
 ﻿-- SqlServer.2014
 
 SELECT
+	[t].[Id],
 	[t].[Value]
 FROM
 	[NullableBoolClass] [t]
@@ -10,6 +11,7 @@ WHERE
 -- SqlServer.2014
 
 SELECT
+	[t].[Id],
 	[t].[Value]
 FROM
 	[NullableBoolClass] [t]

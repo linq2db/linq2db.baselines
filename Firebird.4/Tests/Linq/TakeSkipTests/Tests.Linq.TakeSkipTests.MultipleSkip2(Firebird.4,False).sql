@@ -1,6 +1,7 @@
 ﻿-- Firebird.4 Firebird4
 
 SELECT
+	"t1"."Id",
 	"t1"."Value"
 FROM
 	"TakeSkipClass" "t1"
@@ -11,6 +12,7 @@ OFFSET 3 ROWS
 -- Firebird.4 Firebird4
 
 SELECT
+	"t1"."Id",
 	"t1"."Value"
 FROM
 	"TakeSkipClass" "t1"

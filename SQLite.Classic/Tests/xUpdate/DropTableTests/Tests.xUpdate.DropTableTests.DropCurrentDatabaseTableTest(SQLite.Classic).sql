@@ -6,7 +6,9 @@ DROP TABLE IF EXISTS [DropTableTest]
 
 CREATE TABLE [DropTableTest]
 (
-	[ID] INTEGER NOT NULL
+	[ID] INTEGER NOT NULL,
+
+	CONSTRAINT [PK_DropTableTest] PRIMARY KEY ([ID])
 )
 
 -- SQLite.Classic SQLite

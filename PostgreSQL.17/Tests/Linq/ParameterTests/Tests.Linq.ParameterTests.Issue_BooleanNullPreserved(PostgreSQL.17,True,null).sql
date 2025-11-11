@@ -25,7 +25,6 @@ LIMIT 2
 UPDATE
 	"TestBool"
 SET
-	"Id" = 1,
 	"Value" = NOT "TestBool"."Value"
 
 -- PostgreSQL.17 PostgreSQL.15 PostgreSQL

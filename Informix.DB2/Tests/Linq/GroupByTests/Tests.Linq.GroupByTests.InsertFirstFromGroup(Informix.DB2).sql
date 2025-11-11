@@ -1,8 +1,22 @@
 ﻿-- Informix.DB2 Informix
 
-CREATE TEMP TABLE temp_table_2
+CREATE TABLE temp_table_1
 (
-	"Value" NVarChar(255)     NULL
+	ID      Int           NOT NULL,
+	"Value" NVarChar(255)     NULL,
+
+	PRIMARY KEY (ID)
+)
+
+INSERT BULK temp_table_1
+
+-- Informix.DB2 Informix
+
+CREATE TABLE temp_table_2
+(
+	"Value" NVarChar(50) NOT NULL,
+
+	PRIMARY KEY ("Value")
 )
 
 -- Informix.DB2 Informix
@@ -34,4 +48,8 @@ FROM
 -- Informix.DB2 Informix
 
 DROP TABLE IF EXISTS temp_table_2
+
+-- Informix.DB2 Informix
+
+DROP TABLE IF EXISTS temp_table_1
 

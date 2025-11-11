@@ -8,7 +8,9 @@ IF (OBJECT_ID(N'#TempTable') IS NOT NULL)
 IF (OBJECT_ID(N'#TempTable') IS NULL)
 	CREATE TABLE #TempTable
 	(
-		[Name] NVarChar(20) NOT NULL
+		[Name] NVarChar(20) NOT NULL,
+
+		CONSTRAINT [PK_TempTable] PRIMARY KEY CLUSTERED ([Name])
 	)
 
 -- Sybase.Managed Sybase

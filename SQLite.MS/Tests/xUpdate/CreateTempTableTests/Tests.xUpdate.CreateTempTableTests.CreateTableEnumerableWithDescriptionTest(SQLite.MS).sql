@@ -6,7 +6,9 @@ DROP TABLE IF EXISTS [TempTable]
 
 CREATE TABLE IF NOT EXISTS [TempTable]
 (
-	[Name] NVarChar(20) NOT NULL
+	[Name] NVarChar(20) NOT NULL,
+
+	CONSTRAINT [PK_TempTable] PRIMARY KEY ([Name])
 )
 
 -- SQLite.MS SQLite

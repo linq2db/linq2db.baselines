@@ -5,7 +5,9 @@ IF (OBJECT_ID(N'[FluentTemp]', N'U') IS NULL)
 	(
 		[ID]       Int          NOT NULL,
 		[Value]    NVarChar(20)     NULL,
-		[LastName] NVarChar(20)     NULL
+		[LastName] NVarChar(20)     NULL,
+
+		CONSTRAINT [PK_FluentTemp] PRIMARY KEY CLUSTERED ([ID])
 	)
 
 -- SqlServer.2017.MS SqlServer.2017
@@ -51,7 +53,9 @@ IF (OBJECT_ID(N'[FluentTemp]', N'U') IS NULL)
 	(
 		[ID]       Int          NOT NULL,
 		[Value]    NVarChar(20)     NULL,
-		[LastName] NVarChar(20)     NULL
+		[LastName] NVarChar(20)     NULL,
+
+		CONSTRAINT [PK_FluentTemp] PRIMARY KEY CLUSTERED ([ID])
 	)
 
 -- SqlServer.2017.MS SqlServer.2017
@@ -97,7 +101,9 @@ IF (OBJECT_ID(N'[FluentTemp]', N'U') IS NULL)
 	(
 		[ID]       Int          NOT NULL,
 		[Column]   NVarChar(20)     NULL,
-		[LastName] NVarChar(20)     NULL
+		[LastName] NVarChar(20)     NULL,
+
+		CONSTRAINT [PK_FluentTemp] PRIMARY KEY CLUSTERED ([ID])
 	)
 
 -- SqlServer.2017.MS SqlServer.2017
@@ -143,7 +149,9 @@ IF (OBJECT_ID(N'[FluentTemp]', N'U') IS NULL)
 	(
 		[ID]       Int          NOT NULL,
 		[Column]   NVarChar(20)     NULL,
-		[LastName] NVarChar(20)     NULL
+		[LastName] NVarChar(20)     NULL,
+
+		CONSTRAINT [PK_FluentTemp] PRIMARY KEY CLUSTERED ([ID])
 	)
 
 -- SqlServer.2017.MS SqlServer.2017

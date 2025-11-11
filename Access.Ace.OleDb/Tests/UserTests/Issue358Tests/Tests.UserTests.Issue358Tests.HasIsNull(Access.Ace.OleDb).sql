@@ -1,6 +1,7 @@
 ﻿-- Access.Ace.OleDb AccessOleDb
 
 SELECT
+	[p].[Id],
 	[p].[MyEnum],
 	[p].[MyEnum2]
 FROM

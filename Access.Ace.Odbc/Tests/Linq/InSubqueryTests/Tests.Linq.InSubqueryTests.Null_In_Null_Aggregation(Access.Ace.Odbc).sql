@@ -1,7 +1,9 @@
 ﻿-- Access.Ace.Odbc AccessODBC
 
 SELECT
-	[t].[ID]
+	[t].[PK],
+	[t].[ID],
+	[t].[GV]
 FROM
 	[test_in_1] [t]
 WHERE
@@ -24,13 +26,16 @@ WHERE
 -- Access.Ace.Odbc AccessODBC
 
 SELECT
-	[t1].[ID]
+	[t1].[PK],
+	[t1].[ID],
+	[t1].[GV]
 FROM
 	[test_in_1] [t1]
 
 -- Access.Ace.Odbc AccessODBC
 
 SELECT
+	[t1].[PK],
 	[t1].[ID],
 	[t1].[GV]
 FROM

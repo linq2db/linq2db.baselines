@@ -7,7 +7,9 @@ DROP TABLE IF EXISTS [tempdb]..[#TestTable]
 CREATE TABLE [tempdb]..[#TestTable]
 (
 	[Id]    Int NOT NULL,
-	[Value] Int NOT NULL
+	[Value] Int NOT NULL,
+
+	PRIMARY KEY CLUSTERED ([Id])
 )
 
 -- SqlServer.2017.MS SqlServer.2017
