@@ -3,7 +3,18 @@
 SELECT
 	CASE
 		WHEN "t1"."ParentID" IS NULL THEN 0
-		ELSE "t2"."ParentID"
+		ELSE (
+			SELECT
+				"c_3"."ParentID"
+			FROM
+				"Child" "c_3"
+			WHERE
+				"c_3"."ParentID" = "p"."ParentID" AND "c_3"."ChildID" > -100 AND
+				"c_3"."ParentID" > 0
+			ORDER BY
+				"c_3"."ChildID"
+			FETCH NEXT 1 ROWS ONLY
+		)
 	END,
 	CAST(EXISTS(
 		SELECT
@@ -21,8 +32,8 @@ SELECT
 		WHERE
 			"c_5"."ParentID" = "p"."ParentID" AND "c_5"."ChildID" > -100
 	),
-	"t3"."ParentID",
-	"t3"."ChildID"
+	"t2"."ParentID",
+	"t2"."ChildID"
 FROM
 	"Parent" "p"
 		LEFT JOIN (
@@ -37,20 +48,11 @@ FROM
 		LEFT JOIN (
 			SELECT
 				"c_2"."ParentID",
+				"c_2"."ChildID",
 				ROW_NUMBER() OVER (PARTITION BY "c_2"."ParentID" ORDER BY "c_2"."ChildID") as "rn"
 			FROM
 				"Child" "c_2"
 			WHERE
-				"c_2"."ChildID" > -100 AND "c_2"."ParentID" > 0
+				"c_2"."ChildID" > -100
 		) "t2" ON "t2"."ParentID" = "p"."ParentID" AND "t2"."rn" <= 1
-		LEFT JOIN (
-			SELECT
-				"c_3"."ParentID",
-				"c_3"."ChildID",
-				ROW_NUMBER() OVER (PARTITION BY "c_3"."ParentID" ORDER BY "c_3"."ChildID") as "rn"
-			FROM
-				"Child" "c_3"
-			WHERE
-				"c_3"."ChildID" > -100
-		) "t3" ON "t3"."ParentID" = "p"."ParentID" AND "t3"."rn" <= 1
 
