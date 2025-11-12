@@ -7,7 +7,7 @@ SELECT
 FROM
 	(
 		SELECT
-			ROW_NUMBER() OVER (ORDER BY p.PersonID DESC) - 1 as Index_1,
+			ROW_NUMBER() OVER (ORDER BY p.PersonID DESC) - toInt64(1) as Index_1,
 			p.FirstName as FirstName,
 			p.LastName as LastName,
 			p.PersonID as PersonID
@@ -15,7 +15,7 @@ FROM
 			Person p
 	) x
 WHERE
-	x.Index_1 > 0
+	x.Index_1 > toInt64(0)
 ORDER BY
 	x.PersonID DESC
 
