@@ -8,26 +8,26 @@ SELECT
 	COUNT(*) OVER(),
 	x."Key_1",
 	x."Count_1",
-	x.MAX_1
+	x."Max_1"
 FROM
 	(
 		SELECT
 			t2."Key_1",
 			t2."Count_1",
-			t2.MAX_1
+			t2."Max_1"
 		FROM
 			(
 				SELECT
 					t1."Key_1",
 					t1."Count_1",
-					t1.MAX_1,
+					t1."Max_1",
 					ROWNUM as RN
 				FROM
 					(
 						SELECT
 							summary."LastName" as "Key_1",
 							COUNT(*) as "Count_1",
-							MAX(summary."FirstName") as MAX_1
+							MAX(summary."FirstName") as "Max_1"
 						FROM
 							"Person" summary
 						GROUP BY
