@@ -1,7 +1,17 @@
 ﻿-- SqlServer.2012.MS SqlServer.2012
 
 SELECT
-	IIF([t1].[ParentID] IS NULL, 0, [t2].[ParentID]),
+	IIF([t1].[ParentID] IS NULL, 0, (
+		SELECT TOP (1)
+			[c_3].[ParentID]
+		FROM
+			[Child] [c_3]
+		WHERE
+			[c_3].[ParentID] = [p].[ParentID] AND [c_3].[ChildID] > -100 AND
+			[c_3].[ParentID] > 0
+		ORDER BY
+			[c_3].[ChildID]
+	)),
 	IIF(EXISTS(
 		SELECT
 			*
@@ -18,8 +28,8 @@ SELECT
 		WHERE
 			[c_5].[ParentID] = [p].[ParentID] AND [c_5].[ChildID] > -100
 	),
-	[t3].[ParentID],
-	[t3].[ChildID]
+	[t2].[ParentID],
+	[t2].[ChildID]
 FROM
 	[Parent] [p]
 		OUTER APPLY (
@@ -35,24 +45,13 @@ FROM
 		) [t1]
 		OUTER APPLY (
 			SELECT TOP (1)
-				[c_2].[ParentID]
+				[c_2].[ParentID],
+				[c_2].[ChildID]
 			FROM
 				[Child] [c_2]
 			WHERE
-				[c_2].[ParentID] = [p].[ParentID] AND [c_2].[ChildID] > -100 AND
-				[c_2].[ParentID] > 0
+				[c_2].[ParentID] = [p].[ParentID] AND [c_2].[ChildID] > -100
 			ORDER BY
 				[c_2].[ChildID]
 		) [t2]
-		OUTER APPLY (
-			SELECT TOP (1)
-				[c_3].[ParentID],
-				[c_3].[ChildID]
-			FROM
-				[Child] [c_3]
-			WHERE
-				[c_3].[ParentID] = [p].[ParentID] AND [c_3].[ChildID] > -100
-			ORDER BY
-				[c_3].[ChildID]
-		) [t3]
 
