@@ -1,7 +1,7 @@
 ﻿-- Oracle.21.Managed Oracle.Managed Oracle12
 
 SELECT
-	LISTAGG(t."Value1", ' -> ') WITHIN GROUP (ORDER BY ROWNUM)
+	LISTAGG(t1."Value1", ' -> ') WITHIN GROUP (ORDER BY t1."Value1")
 FROM
-	"SampleClass" t
+	"SampleClass" t1
 
