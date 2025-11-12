@@ -1,12 +1,12 @@
 ﻿-- SapHana.Odbc SapHanaOdbc
 
 SELECT
-	"t3"."AVG_1"
+	"t3"."Average"
 FROM
 	"MasterClass" "m_1"
 		LEFT JOIN LATERAL (
 			SELECT
-				AVG(CAST("t2"."DetailId" AS Double)) as "AVG_1"
+				AVG(CAST("t2"."DetailId" AS Double)) as "Average"
 			FROM
 				(
 					SELECT
