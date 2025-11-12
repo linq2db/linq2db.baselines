@@ -19,13 +19,13 @@ FROM
 	(
 		SELECT
 			"c_1"."ParentID",
-			CAST(Floor(CAST("c_1"."ChildID" AS Float) / 10) AS Int) as "Value1"
+			CAST(Floor(CAST("c_1"."ChildID" AS DOUBLE PRECISION) / 10) AS Int) as "Value1"
 		FROM
 			"Child" "c_1"
 		UNION
 		SELECT
 			Coalesce("c_2"."ParentID", 0) as "ParentID",
-			Floor(CAST(Coalesce("c_2"."GrandChildID", 0) AS Float) / 100) as "Value1"
+			Floor(CAST(Coalesce("c_2"."GrandChildID", 0) AS DOUBLE PRECISION) / 100) as "Value1"
 		FROM
 			"GrandChild" "c_2"
 	) "t1"
