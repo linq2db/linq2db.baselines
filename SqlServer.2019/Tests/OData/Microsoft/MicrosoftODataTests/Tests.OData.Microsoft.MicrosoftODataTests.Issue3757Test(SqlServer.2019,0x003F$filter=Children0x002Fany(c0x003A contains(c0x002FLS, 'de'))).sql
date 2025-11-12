@@ -9,24 +9,18 @@ SELECT
 	[d].[ValB],
 	[d].[ValInt]
 FROM
-	(
-		SELECT DISTINCT
-			[l1].[ID],
-			[l1].[ValS]
-		FROM
-			[Issue3757Level1] [l1]
-		WHERE
-			EXISTS(
-				SELECT
-					*
-				FROM
-					[Issue3757Level2] [c_1]
-				WHERE
-					[l1].[ID] = [c_1].[ParentId] AND [l1].[ValS] LIKE @TypedProperty ESCAPE N'~' AND
-					[l1].[ValS] IS NOT NULL
-			)
-	) [m_1]
+	[Issue3757Level1] [m_1]
 		INNER JOIN [Issue3757Level2] [d] ON [m_1].[ID] = [d].[ParentId]
+WHERE
+	EXISTS(
+		SELECT
+			*
+		FROM
+			[Issue3757Level2] [c_1]
+		WHERE
+			[m_1].[ID] = [c_1].[ParentId] AND [m_1].[ValS] LIKE @TypedProperty ESCAPE N'~' AND
+			[m_1].[ValS] IS NOT NULL
+	)
 
 -- SqlServer.2019
 DECLARE @TypedProperty NVarChar(4000) -- String

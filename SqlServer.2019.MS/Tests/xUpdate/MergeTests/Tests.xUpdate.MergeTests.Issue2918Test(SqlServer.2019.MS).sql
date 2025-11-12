@@ -8,12 +8,19 @@ USING (
 		[pa].[PatentId],
 		(
 			SELECT
-				STRING_AGG([a_User].[DisplayName], N'; ') WITHIN GROUP (ORDER BY [a_User].[DisplayName])
+				STRING_AGG([t1].[DisplayName], N'; ') WITHIN GROUP (ORDER BY [t1].[DisplayName])
 			FROM
-				[Issue2918Table2] [patr]
-					LEFT JOIN [User] [a_User] ON [patr].[UserId] = [a_User].[Id]
-			WHERE
-				[patr].[PatentId] = [pa].[PatentId]
+				(
+					SELECT
+						[patr].[PatentId],
+						[patr].[UserId],
+						[a_User].[DisplayName]
+					FROM
+						[Issue2918Table2] [patr]
+							LEFT JOIN [User] [a_User] ON [patr].[UserId] = [a_User].[Id]
+					WHERE
+						[patr].[PatentId] = [pa].[PatentId]
+				) [t1]
 		) as [TechnicalReviewersText]
 	FROM
 		[PatentAssessment] [pa]
