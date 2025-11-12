@@ -1,7 +1,7 @@
 ﻿-- Firebird.5 Firebird4
 
 SELECT
-	LIST("t"."Value1", ' -> ')
+	LIST("t1"."Value1", ' -> ')
 FROM
-	"SampleClass" "t"
+	"SampleClass" "t1"
 
