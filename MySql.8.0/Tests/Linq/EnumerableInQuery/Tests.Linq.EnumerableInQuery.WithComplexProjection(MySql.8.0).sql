@@ -1,7 +1,6 @@
 ﻿-- MySql.8.0 MySql.8.0.MySql.Data MySql80
 
 SELECT
-	`it_1`.`cond_1`,
 	`it_1`.`cond`,
 	`it_1`.`ColorName`,
 	`it_1`.`StyleName`,
@@ -16,7 +15,7 @@ FROM
 		LEFT JOIN `SomeStyle` `a_Style` ON `t3`.`StyleId` = `a_Style`.`Id`
 		LEFT JOIN (
 			SELECT
-				COUNT(*) as `COUNT_1`
+				COUNT(*) as `Count_1`
 			FROM
 				`SomeItem` `t1`
 		) `t2` ON 1=1
@@ -24,21 +23,20 @@ FROM
 			SELECT
 				`it`.`ColorName`,
 				`it`.`Count` as `Count_1`,
-				`it`.`index` as `cond`,
 				`it`.`StyleName`,
 				`it`.`Conditional`,
 				`it`.`field1`,
 				`it`.`field2`,
 				`it`.`field3`,
-				1 as `cond_1`
+				1 as `cond`
 			FROM
 				(
-					SELECT `a_Color`.`Name` AS `ColorName`, `t2`.`COUNT_1` AS `Count`, 0 AS `index`, `a_Style`.`Name` AS `StyleName`, CASE
-					WHEN `a_Color`.`Name` = 'Red' THEN `t2`.`COUNT_1`
+					SELECT `a_Color`.`Name` AS `ColorName`, `t2`.`Count_1` AS `Count`, `a_Style`.`Name` AS `StyleName`, CASE
+					WHEN `a_Color`.`Name` = 'Red' THEN `t2`.`Count_1`
 					ELSE 0
 				END AS `Conditional`, 1 AS `field1`, 2 AS `field2`, 3 AS `field3`
 					UNION ALL
-					SELECT NULL, 0, 1, `a_Style`.`Name`, NULL, 4, 5, 6) `it`
+					SELECT NULL, 0, `a_Style`.`Name`, NULL, 4, 5, 6) `it`
 		) `it_1` ON 1=1
 WHERE
 	`it_1`.`ColorName` = 'Red' OR `it_1`.`Count_1` = 0
@@ -76,13 +74,13 @@ FROM
 		LEFT JOIN `SomeColor` `a_Color` ON `t3`.`ColorId` = `a_Color`.`Id`
 		LEFT JOIN (
 			SELECT
-				COUNT(*) as `COUNT_1`
+				COUNT(*) as `Count_1`
 			FROM
 				`SomeItem` `t1`
 		) `t2` ON 1=1
 		LEFT JOIN LATERAL (
-			SELECT `a_Color`.`Name` AS `ColorName`, `t2`.`COUNT_1` AS `Count`, CASE
-			WHEN `a_Color`.`Name` = 'Red' THEN `t2`.`COUNT_1`
+			SELECT `a_Color`.`Name` AS `ColorName`, `t2`.`Count_1` AS `Count`, CASE
+			WHEN `a_Color`.`Name` = 'Red' THEN `t2`.`Count_1`
 			ELSE 0
 		END AS `Conditional`
 			UNION ALL

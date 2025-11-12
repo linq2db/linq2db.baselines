@@ -19,7 +19,7 @@ FROM
 				(
 					SELECT `a_Color`.`Name` AS `ColorName`, `a_Style`.`Name` AS `StyleName`, (
 					SELECT
-						COUNT(*) as `COUNT_1`
+						COUNT(*) as `Count_1`
 					FROM
 						`SomeItem` `t1`
 				) AS `Count`

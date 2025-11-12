@@ -1,30 +1,29 @@
 ﻿-- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 
 SELECT
-	`t3`.`AVG_1`
+	(
+		SELECT
+			AVG(CAST(`t2`.`DetailId` AS DOUBLE))
+		FROM
+			(
+				SELECT
+					`t1`.`DetailId`
+				FROM
+					(
+						SELECT DISTINCT
+							`a_Details`.`DetailId`
+						FROM
+							`DetailClass` `a_Details`
+						WHERE
+							`m_1`.`Id1` = `a_Details`.`MasterId`
+					) `t1`
+				ORDER BY
+					`t1`.`DetailId`
+				LIMIT 1, 5
+			) `t2`
+	)
 FROM
 	`MasterClass` `m_1`
-		LEFT JOIN LATERAL (
-			SELECT
-				AVG(CAST(`t2`.`DetailId` AS DOUBLE)) as `AVG_1`
-			FROM
-				(
-					SELECT
-						`t1`.`DetailId`
-					FROM
-						(
-							SELECT DISTINCT
-								`a_Details`.`DetailId`
-							FROM
-								`DetailClass` `a_Details`
-							WHERE
-								`m_1`.`Id1` = `a_Details`.`MasterId`
-						) `t1`
-					ORDER BY
-						`t1`.`DetailId`
-					LIMIT 1, 5
-				) `t2`
-		) `t3` ON 1=1
 WHERE
 	(
 		SELECT
