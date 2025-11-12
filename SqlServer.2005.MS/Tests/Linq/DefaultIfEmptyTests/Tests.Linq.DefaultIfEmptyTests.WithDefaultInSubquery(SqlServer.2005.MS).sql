@@ -3,21 +3,25 @@
 SELECT
 	(
 		SELECT
-			SUM([t1].[ParentID])
+			SUM([t2].[ParentID_1])
 		FROM
 			(
 				SELECT
+					1 as [cond],
+					[d].[ParentID] as [cond_1],
+					[d].[ChildID],
+					-100 as [ParentID],
 					CASE
 						WHEN [d].[ParentID] IS NOT NULL THEN [d].[ParentID]
 						ELSE -100
-					END as [ParentID]
+					END as [ParentID_1]
 				FROM
 					(
 						SELECT
 							-100 as [ParentID]
-					) [c_1]
+					) [t1]
 						LEFT JOIN [Child] [d] ON [p].[ParentID] = [d].[ParentID]
-			) [t1]
+			) [t2]
 	)
 FROM
 	[Parent] [p]
