@@ -18,7 +18,7 @@ WHERE
 				GROUP BY
 					x.ParentID
 				ORDER BY
-					max(x.ChildID) DESC
+					maxOrNull(x.ChildID) DESC
 				LIMIT 2
 			) t1
 	)
