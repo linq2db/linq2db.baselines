@@ -2,14 +2,14 @@
 
 SELECT
 	CASE
-		WHEN [p].[Value1] IS NULL THEN [t1].[COUNT_1]
-		ELSE [t2].[COUNT_1]
+		WHEN [p].[Value1] IS NULL THEN [t1].[Count_1]
+		ELSE [t2].[Count_1]
 	END as [c1]
 FROM
 	[Parent] [p]
 		OUTER APPLY (
 			SELECT
-				COUNT(*) as [COUNT_1]
+				COUNT(*) as [Count_1]
 			FROM
 				[Child] [a_Children]
 			WHERE
@@ -17,11 +17,11 @@ FROM
 		) [t1]
 		OUTER APPLY (
 			SELECT
-				COUNT(*) as [COUNT_1]
+				COUNT(*) as [Count_1]
 			FROM
-				[Child] [c_1]
+				[Child] [a_Children_1]
 			WHERE
-				[p].[ParentID] = [c_1].[ParentID]
+				[p].[ParentID] = [a_Children_1].[ParentID]
 		) [t2]
 WHERE
 	[p].[ParentID] <> 5

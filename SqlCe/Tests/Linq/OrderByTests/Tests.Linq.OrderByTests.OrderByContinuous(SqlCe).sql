@@ -7,7 +7,7 @@ FROM
 	[Parent] [p]
 		OUTER APPLY (
 			SELECT
-				COUNT(*) as [COUNT_1]
+				COUNT(*) as [Count_1]
 			FROM
 				[Child] [a_Children]
 			WHERE
@@ -16,5 +16,5 @@ FROM
 		INNER JOIN [Parent] [pp] ON [p].[Value1] = [pp].[Value1]
 ORDER BY
 	[pp].[ParentID],
-	[t1].[COUNT_1]
+	[t1].[Count_1]
 

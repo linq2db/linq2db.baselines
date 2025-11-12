@@ -3,7 +3,7 @@ DECLARE @s NVarChar(7) -- String
 SET     @s = '123[456'
 
 SELECT
-	COUNT(*) as [COUNT_1]
+	COUNT(*) as [Count_1]
 FROM
 	[Person] [p]
 WHERE
@@ -14,7 +14,7 @@ DECLARE @s NVarChar(7) -- String
 SET     @s = '123[456'
 
 SELECT
-	COUNT(*) as [COUNT_1]
+	COUNT(*) as [Count_1]
 FROM
 	[Person] [p]
 WHERE

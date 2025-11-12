@@ -6,7 +6,7 @@ SELECT
 	COUNT(CASE
 		WHEN [g_2].[ParentID] < 3 THEN 1
 		ELSE NULL
-	END) as [COUNT_1]
+	END) as [Count_1]
 FROM
 	(
 		SELECT

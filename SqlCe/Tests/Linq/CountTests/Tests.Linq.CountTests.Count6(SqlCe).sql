@@ -1,7 +1,7 @@
 ﻿-- SqlCe
 
 SELECT
-	COUNT(*) as [COUNT_1]
+	COUNT(*) as [Count_1]
 FROM
 	(
 		SELECT
@@ -10,7 +10,7 @@ FROM
 			[Child] [g_1]
 		GROUP BY
 			[g_1].[ParentID]
-	) [g_2]
+	) [t1]
 WHERE
-	[g_2].[ParentID] > 2
+	[t1].[ParentID] > 2
 

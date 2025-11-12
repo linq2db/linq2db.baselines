@@ -1,11 +1,11 @@
 ﻿-- SqlCe
 
 SELECT
-	COUNT(*) as [COUNT_1],
-	SUM([g_1].[ChildID]) as [SUM_1],
-	MIN([g_1].[ChildID]) as [MIN_1],
-	MAX([g_1].[ChildID]) as [MAX_1],
-	AVG([g_1].[ChildID]) as [AVG_1]
+	COUNT(*) as [Count_1],
+	SUM([g_1].[ChildID]) as [Sum_1],
+	MIN([g_1].[ChildID]) as [Min_1],
+	MAX([g_1].[ChildID]) as [Max_1],
+	AVG([g_1].[ChildID]) as [Average]
 FROM
 	[Child] [g_1]
 GROUP BY

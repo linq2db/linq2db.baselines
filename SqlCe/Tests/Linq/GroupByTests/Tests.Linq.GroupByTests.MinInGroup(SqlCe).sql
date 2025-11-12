@@ -2,27 +2,27 @@
 
 SELECT
 	[g_2].[GroupId],
-	[g_2].[MIN_1],
-	[g_2].[MIN_2],
-	[g_2].[MIN_3],
-	[g_2].[MIN_4],
-	[t2].[MIN_1] as [MIN_5],
-	[t4].[MIN_1] as [MIN_6],
-	[t6].[MIN_1] as [MIN_7]
+	[g_2].[Min_1],
+	[g_2].[Min_2],
+	[g_2].[Min_3],
+	[g_2].[Min_4],
+	[t2].[Min_1] as [Min_5],
+	[t4].[Min_1] as [Min_6],
+	[t6].[Min_1] as [Min_7]
 FROM
 	(
 		SELECT
 			[g_1].[GroupId],
-			MIN([g_1].[DataValue]) as [MIN_1],
-			MIN([g_1].[DataValue]) as [MIN_2],
+			MIN([g_1].[DataValue]) as [Min_1],
+			MIN([g_1].[DataValue]) as [Min_2],
 			MIN(CASE
 				WHEN CAST([g_1].[DataValue] AS Int) % 2 = 0 THEN [g_1].[DataValue]
 				ELSE NULL
-			END) as [MIN_3],
+			END) as [Min_3],
 			MIN(CASE
 				WHEN CAST([g_1].[DataValue] AS Int) % 2 = 0 THEN [g_1].[DataValue]
 				ELSE NULL
-			END) as [MIN_4]
+			END) as [Min_4]
 		FROM
 			[AggregationData] [g_1]
 		GROUP BY
@@ -30,7 +30,7 @@ FROM
 	) [g_2]
 		OUTER APPLY (
 			SELECT
-				MIN([t1].[DataValue]) as [MIN_1]
+				MIN([t1].[DataValue]) as [Min_1]
 			FROM
 				(
 					SELECT DISTINCT
@@ -43,7 +43,7 @@ FROM
 		) [t2]
 		OUTER APPLY (
 			SELECT
-				MIN([t3].[DataValue]) as [MIN_1]
+				MIN([t3].[DataValue]) as [Min_1]
 			FROM
 				(
 					SELECT DISTINCT
@@ -56,7 +56,7 @@ FROM
 		) [t4]
 		OUTER APPLY (
 			SELECT
-				MIN([t5].[DataValue]) as [MIN_1]
+				MIN([t5].[DataValue]) as [Min_1]
 			FROM
 				(
 					SELECT DISTINCT
