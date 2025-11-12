@@ -72,11 +72,9 @@ SELECT
 	c_1."DisplayOrder",
 	(
 		SELECT
-			STRING_AGG(c1."Name", ' -> ' ORDER BY c1."Level_1" DESC)
+			STRING_AGG(t2."Name", ' -> ' ORDER BY t2."Level_1" DESC NULLS FIRST) FILTER (WHERE t2."RootCategoryId" = c_1."Id")
 		FROM
-			"categoryHierarchy" c1
-		WHERE
-			c1."RootCategoryId" = c_1."Id"
+			"categoryHierarchy" t2
 	)
 FROM
 	"Issue1564Category" c_1

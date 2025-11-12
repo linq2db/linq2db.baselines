@@ -9,16 +9,7 @@ GROUP BY
 	"a_Parent"."ParentID",
 	"a_Parent"."Value1"
 HAVING
-	COUNT(CASE
-		WHEN g_1."ChildID" >= 20 THEN 1
-		ELSE NULL
-	END) > 2 AND
-	SUM(CASE
-		WHEN g_1."ChildID" >= 19 THEN g_1."ParentID"
-		ELSE NULL
-	END) > 0 AND
-	MAX(CASE
-		WHEN g_1."ChildID" >= 19 THEN g_1."ParentID"
-		ELSE NULL
-	END) > 0
+	COUNT(*) FILTER (WHERE g_1."ChildID" >= 20) > 2 AND
+	SUM(g_1."ParentID") FILTER (WHERE g_1."ChildID" >= 19) > 0 AND
+	MAX(g_1."ParentID") FILTER (WHERE g_1."ChildID" >= 19) > 0
 
