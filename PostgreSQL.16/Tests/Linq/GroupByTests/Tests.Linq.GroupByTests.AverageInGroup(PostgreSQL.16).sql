@@ -4,23 +4,11 @@ SELECT
 	g_1."GroupId",
 	AVG(g_1."DataValue"),
 	AVG(g_1."DataValue"),
-	AVG(CASE
-		WHEN (g_1."DataValue"::decimal % 2)::decimal = 0 THEN g_1."DataValue"
-		ELSE NULL
-	END),
-	AVG(CASE
-		WHEN (g_1."DataValue"::decimal % 2)::decimal = 0 THEN g_1."DataValue"
-		ELSE NULL
-	END),
+	AVG(g_1."DataValue") FILTER (WHERE (g_1."DataValue"::decimal % 2)::decimal = 0),
+	AVG(g_1."DataValue") FILTER (WHERE (g_1."DataValue"::decimal % 2)::decimal = 0),
 	AVG(DISTINCT g_1."DataValue"),
-	AVG(DISTINCT CASE
-		WHEN (g_1."DataValue"::decimal % 2)::decimal = 0 THEN g_1."DataValue"
-		ELSE NULL
-	END),
-	AVG(DISTINCT CASE
-		WHEN (g_1."DataValue"::decimal % 2)::decimal = 0 THEN g_1."DataValue"
-		ELSE NULL
-	END)
+	AVG(DISTINCT g_1."DataValue") FILTER (WHERE (g_1."DataValue"::decimal % 2)::decimal = 0),
+	AVG(DISTINCT g_1."DataValue") FILTER (WHERE (g_1."DataValue"::decimal % 2)::decimal = 0)
 FROM
 	"AggregationData" g_1
 WHERE
