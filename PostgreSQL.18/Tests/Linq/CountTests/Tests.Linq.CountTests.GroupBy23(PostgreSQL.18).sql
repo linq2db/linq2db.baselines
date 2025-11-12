@@ -1,10 +1,7 @@
 ﻿-- PostgreSQL.18 PostgreSQL
 
 SELECT
-	COUNT(CASE
-		WHEN g_1."ParentID" < 2 THEN 1
-		ELSE NULL
-	END)
+	COUNT(*) FILTER (WHERE g_1."ParentID" < 2)
 FROM
 	"Parent" g_1
 WHERE
