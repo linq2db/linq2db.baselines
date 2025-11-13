@@ -1,10 +1,10 @@
 ﻿-- ClickHouse.MySql ClickHouse
 
 SELECT
-	sum(g_1.ChildID),
-	min(g_1.ChildID),
-	max(g_1.ChildID),
-	avg(g_1.ChildID),
+	sumOrNull(g_1.ChildID),
+	minOrNull(g_1.ChildID),
+	maxOrNull(g_1.ChildID),
+	avgOrNull(g_1.ChildID),
 	COUNT(*)
 FROM
 	Child g_1

@@ -1,7 +1,7 @@
 ﻿-- DB2 DB2.LUW DB2LUW
 
 SELECT
-	LISTAGG("t"."Value1", ' -> ')
+	LISTAGG("t1"."Value1", ' -> ')
 FROM
-	"SampleClass" "t"
+	"SampleClass" "t1"
 

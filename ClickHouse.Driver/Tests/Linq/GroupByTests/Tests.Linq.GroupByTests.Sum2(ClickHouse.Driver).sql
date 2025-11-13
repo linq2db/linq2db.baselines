@@ -1,7 +1,7 @@
 ﻿-- ClickHouse.Driver ClickHouse
 
 SELECT
-	sum(g_1.ChildID)
+	sumOrNull(g_1.ChildID)
 FROM
 	Child g_1
 GROUP BY

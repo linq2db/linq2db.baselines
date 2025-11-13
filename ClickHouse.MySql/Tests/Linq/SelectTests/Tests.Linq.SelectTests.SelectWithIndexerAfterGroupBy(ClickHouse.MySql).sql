@@ -6,7 +6,7 @@ SELECT
 FROM
 	(
 		SELECT
-			ROW_NUMBER() OVER (ORDER BY g_2.Key_1 DESC) - 1 as Index_1,
+			ROW_NUMBER() OVER (ORDER BY g_2.Key_1 DESC) - toInt64(1) as Index_1,
 			g_2.Key_1 as Key_1
 		FROM
 			(
@@ -19,7 +19,7 @@ FROM
 			) g_2
 	) x
 WHERE
-	x.Index_1 > 0
+	x.Index_1 > toInt64(0)
 ORDER BY
 	x.Key_1 DESC
 

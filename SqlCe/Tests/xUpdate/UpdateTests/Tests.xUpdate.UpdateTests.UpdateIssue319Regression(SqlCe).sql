@@ -44,13 +44,13 @@ WHERE
 			[Parent] [p],
 			(
 				SELECT
-					COUNT(*) as [COUNT_1]
+					COUNT(*) as [Count_1]
 				FROM
 					[Parent] [p_1]
 				WHERE
 					[p_1].[ParentID] = @id
 			) [t1]
 		WHERE
-			[p].[ParentID] = @id AND [t1].[COUNT_1] > 0 AND [Parent].[ParentID] = [p].[ParentID]
+			[p].[ParentID] = @id AND [t1].[Count_1] > 0 AND [Parent].[ParentID] = [p].[ParentID]
 	)
 

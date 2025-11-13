@@ -1,14 +1,14 @@
 ﻿-- Oracle.11.Managed Oracle11
 
 SELECT
-	t1.COUNT_1
+	t1."Count_1"
 FROM
 	(
 		SELECT
 			COUNT(CASE
 				WHEN t."Status" = 3 THEN 1
 				ELSE NULL
-			END) as COUNT_1
+			END) as "Count_1"
 		FROM
 			"Issue1192Table" t
 		WHERE

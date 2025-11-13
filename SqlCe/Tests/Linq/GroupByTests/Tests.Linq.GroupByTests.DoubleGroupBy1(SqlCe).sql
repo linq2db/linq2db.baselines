@@ -2,7 +2,7 @@
 
 SELECT
 	[g_2].[Key_1],
-	SUM([g_2].[Max_1]) as [SUM_1]
+	SUM([g_2].[Max_1]) as [Sum_1]
 FROM
 	(
 		SELECT

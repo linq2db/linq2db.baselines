@@ -2,12 +2,12 @@
 
 SELECT
 	[p].[ParentID],
-	[t1].[SUM_1]
+	[t1].[Sum_1]
 FROM
 	[Parent] [p]
 		OUTER APPLY (
 			SELECT
-				SUM([c_1].[ChildID]) as [SUM_1]
+				SUM([c_1].[ChildID]) as [Sum_1]
 			FROM
 				[Child] [c_1]
 			WHERE

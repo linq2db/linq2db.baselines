@@ -5,7 +5,7 @@ WITH CTE_1 AS
 	SELECT
 		g_1.InvestorId,
 		g_1.SecurityClass,
-		sum(g_1.Units) as Units
+		sumOrNull(g_1.Units) as Units
 	FROM
 		Transaction g_1
 	GROUP BY
@@ -15,7 +15,7 @@ WITH CTE_1 AS
 SELECT
 	ip.InvestorId,
 	b.Units,
-	sum(ip.NetPayment)
+	sumOrNull(ip.NetPayment)
 FROM
 	PaymentEvent p
 		INNER JOIN InvestorPayment ip ON p.Id = ip.Id

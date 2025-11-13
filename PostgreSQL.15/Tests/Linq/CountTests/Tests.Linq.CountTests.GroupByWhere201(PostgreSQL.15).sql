@@ -7,8 +7,5 @@ FROM
 GROUP BY
 	g_1."ParentID"
 HAVING
-	COUNT(CASE
-		WHEN g_1."ChildID" > 20 THEN 1
-		ELSE NULL
-	END) > 2
+	COUNT(*) FILTER (WHERE g_1."ChildID" > 20) > 2
 

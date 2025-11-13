@@ -2,11 +2,11 @@
 
 SELECT
 	(toFloat64(COUNT(*)) * toFloat64(100)) / SUM(COUNT(*)) OVER(),
-	sum(g_1.ParentID)
+	sumOrNull(g_1.ParentID)
 FROM
 	Child g_1
 GROUP BY
 	g_1.ParentID
 HAVING
-	sum(g_1.ParentID) <> 36
+	sumOrNull(g_1.ParentID) <> 36 OR sumOrNull(g_1.ParentID) IS NULL
 

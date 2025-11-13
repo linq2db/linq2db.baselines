@@ -1,9 +1,14 @@
 ﻿-- Firebird.2.5 Firebird
 
 SELECT
-	"t"."MoneyValue"
+	"t"."c1"
 FROM
-	"LinqDataTypes" "t"
+	(
+		SELECT
+			ROUND(CAST("p"."MoneyValue" AS DOUBLE PRECISION)) as "c1"
+		FROM
+			"LinqDataTypes" "p"
+	) "t"
 WHERE
-	ROUND(CAST("t"."MoneyValue" AS Float)) <> 0
+	"t"."c1" <> 0
 

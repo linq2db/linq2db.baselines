@@ -1,7 +1,7 @@
 ﻿-- SqlCe
 
 SELECT
-	SUM([t3].[PersonID]) as [SUM_1]
+	SUM([t3].[PersonID]) as [Sum_1]
 FROM
 	(
 		SELECT

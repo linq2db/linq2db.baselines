@@ -12,18 +12,18 @@ ORDER BY
 SELECT
 	COUNT(*)
 FROM
-	Src x
+	Src s
 WHERE
-	x.Int = 2
+	s.Int = 2
 
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
 	COUNT(*)
 FROM
-	Src x
+	Src s
 WHERE
-	x.Int <> 2
+	s.Int <> 2
 
 -- ClickHouse.Octonica ClickHouse
 
@@ -39,18 +39,18 @@ ORDER BY
 SELECT
 	COUNT(*)
 FROM
-	Src x
+	Src s
 WHERE
-	x.Int = 4
+	s.Int = 4
 
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
 	COUNT(*)
 FROM
-	Src x
+	Src s
 WHERE
-	x.Int <> 4
+	s.Int <> 4
 
 -- ClickHouse.Octonica ClickHouse
 
@@ -66,7 +66,7 @@ ORDER BY
 SELECT
 	COUNT(*)
 FROM
-	Src x
+	Src s
 WHERE
 	1 = 0
 
@@ -75,7 +75,7 @@ WHERE
 SELECT
 	COUNT(*)
 FROM
-	Src x
+	Src s
 
 -- ClickHouse.Octonica ClickHouse
 
@@ -91,18 +91,18 @@ ORDER BY
 SELECT
 	COUNT(*)
 FROM
-	Src x
+	Src s
 WHERE
-	x.NullableInt = 2 OR x.NullableInt IS NULL
+	s.NullableInt = 2 OR s.NullableInt IS NULL
 
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
 	COUNT(*)
 FROM
-	Src x
+	Src s
 WHERE
-	NOT (x.NullableInt = 2 OR x.NullableInt IS NULL)
+	NOT (s.NullableInt = 2 OR s.NullableInt IS NULL)
 
 -- ClickHouse.Octonica ClickHouse
 
@@ -118,18 +118,18 @@ ORDER BY
 SELECT
 	COUNT(*)
 FROM
-	Src x
+	Src s
 WHERE
-	x.NullableInt = 4 OR x.NullableInt IS NULL
+	s.NullableInt = 4 OR s.NullableInt IS NULL
 
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
 	COUNT(*)
 FROM
-	Src x
+	Src s
 WHERE
-	NOT (x.NullableInt = 4 OR x.NullableInt IS NULL)
+	NOT (s.NullableInt = 4 OR s.NullableInt IS NULL)
 
 -- ClickHouse.Octonica ClickHouse
 
@@ -145,16 +145,16 @@ ORDER BY
 SELECT
 	COUNT(*)
 FROM
-	Src x
+	Src s
 WHERE
-	x.NullableInt IS NULL
+	s.NullableInt IS NULL
 
 -- ClickHouse.Octonica ClickHouse
 
 SELECT
 	COUNT(*)
 FROM
-	Src x
+	Src s
 WHERE
-	x.NullableInt IS NOT NULL
+	s.NullableInt IS NOT NULL
 

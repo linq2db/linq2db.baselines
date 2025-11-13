@@ -1,9 +1,14 @@
 ﻿-- ClickHouse.Octonica ClickHouse
 
 SELECT
-	t.MoneyValue
+	t.c1
 FROM
-	LinqDataTypes t
+	(
+		SELECT
+			roundBankers(toFloat64(p.MoneyValue), 1) as c1
+		FROM
+			LinqDataTypes p
+	) t
 WHERE
-	roundBankers(toFloat64(t.MoneyValue), 1) <> toFloat64(0)
+	t.c1 <> toFloat64(0)
 

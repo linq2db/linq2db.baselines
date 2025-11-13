@@ -1,9 +1,17 @@
 ﻿-- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
 
 SELECT
-	t."MoneyValue"
+	t.c1
 FROM
-	"LinqDataTypes" t
+	(
+		SELECT
+			CASE
+				WHEN p."MoneyValue" > 0 THEN FLOOR(p."MoneyValue" + 0.5)
+				ELSE CEIL(p."MoneyValue" - 0.5)
+			END as c1
+		FROM
+			"LinqDataTypes" p
+	) t
 WHERE
-	ROUND(t."MoneyValue") <> 0
+	t.c1 <> 0
 

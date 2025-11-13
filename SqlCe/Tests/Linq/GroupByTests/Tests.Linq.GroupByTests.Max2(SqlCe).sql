@@ -1,7 +1,7 @@
 ﻿-- SqlCe
 
 SELECT
-	MAX([p].[ParentID]) as [MAX_1]
+	MAX([p].[ParentID]) as [Max_1]
 FROM
 	[Parent] [p]
 		INNER JOIN [Child] [c_1] ON [p].[ParentID] = [c_1].[ParentID]
