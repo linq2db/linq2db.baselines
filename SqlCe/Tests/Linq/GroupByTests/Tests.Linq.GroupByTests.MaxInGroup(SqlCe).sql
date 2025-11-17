@@ -2,27 +2,27 @@
 
 SELECT
 	[g_2].[GroupId],
-	[g_2].[MAX_1],
-	[g_2].[MAX_2],
-	[g_2].[MAX_3],
-	[g_2].[MAX_4],
-	[t2].[MAX_1] as [MAX_5],
-	[t4].[MAX_1] as [MAX_6],
-	[t6].[MAX_1] as [MAX_7]
+	[g_2].[Max_1],
+	[g_2].[Max_2],
+	[g_2].[Max_3],
+	[g_2].[Max_4],
+	[t2].[Max_1] as [Max_5],
+	[t4].[Max_1] as [Max_6],
+	[t6].[Max_1] as [Max_7]
 FROM
 	(
 		SELECT
 			[g_1].[GroupId],
-			MAX([g_1].[DataValue]) as [MAX_1],
-			MAX([g_1].[DataValue]) as [MAX_2],
+			MAX([g_1].[DataValue]) as [Max_1],
+			MAX([g_1].[DataValue]) as [Max_2],
 			MAX(CASE
 				WHEN CAST([g_1].[DataValue] AS Int) % 2 = 0 THEN [g_1].[DataValue]
 				ELSE NULL
-			END) as [MAX_3],
+			END) as [Max_3],
 			MAX(CASE
 				WHEN CAST([g_1].[DataValue] AS Int) % 2 = 0 THEN [g_1].[DataValue]
 				ELSE NULL
-			END) as [MAX_4]
+			END) as [Max_4]
 		FROM
 			[AggregationData] [g_1]
 		GROUP BY
@@ -30,7 +30,7 @@ FROM
 	) [g_2]
 		OUTER APPLY (
 			SELECT
-				MAX([t1].[DataValue]) as [MAX_1]
+				MAX([t1].[DataValue]) as [Max_1]
 			FROM
 				(
 					SELECT DISTINCT
@@ -43,7 +43,7 @@ FROM
 		) [t2]
 		OUTER APPLY (
 			SELECT
-				MAX([t3].[DataValue]) as [MAX_1]
+				MAX([t3].[DataValue]) as [Max_1]
 			FROM
 				(
 					SELECT DISTINCT
@@ -56,7 +56,7 @@ FROM
 		) [t4]
 		OUTER APPLY (
 			SELECT
-				MAX([t5].[DataValue]) as [MAX_1]
+				MAX([t5].[DataValue]) as [Max_1]
 			FROM
 				(
 					SELECT DISTINCT

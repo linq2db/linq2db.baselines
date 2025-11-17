@@ -1,28 +1,28 @@
 ﻿-- Oracle.19.Managed Oracle.Managed Oracle12
 
 SELECT
-	LISTAGG(t."Value1", ' -> ') WITHIN GROUP (ORDER BY t."Value1")
+	LISTAGG(t1."Value1", ' -> ') WITHIN GROUP (ORDER BY t1."Value1")
 FROM
-	"SampleClass" t
+	"SampleClass" t1
 
 -- Oracle.19.Managed Oracle.Managed Oracle12
 
 SELECT
-	LISTAGG(t."Value1", ' -> ') WITHIN GROUP (ORDER BY t."Value1")
+	LISTAGG(t1."Value1", ' -> ') WITHIN GROUP (ORDER BY t1."Value1")
 FROM
-	"SampleClass" t
+	"SampleClass" t1
 
 -- Oracle.19.Managed Oracle.Managed Oracle12
 
 SELECT
-	LISTAGG(t."Value1", ' -> ') WITHIN GROUP (ORDER BY t."Value1" DESC)
+	LISTAGG(t1."Value1", ' -> ') WITHIN GROUP (ORDER BY t1."Value1" DESC)
 FROM
-	"SampleClass" t
+	"SampleClass" t1
 
 -- Oracle.19.Managed Oracle.Managed Oracle12
 
 SELECT
-	LISTAGG(t."Value1", ' -> ') WITHIN GROUP (ORDER BY t."Value1" DESC)
+	LISTAGG(t1."Value1", ' -> ') WITHIN GROUP (ORDER BY t1."Value1" DESC)
 FROM
-	"SampleClass" t
+	"SampleClass" t1
 

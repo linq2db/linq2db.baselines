@@ -1,12 +1,12 @@
 ﻿-- SqlCe
 
 SELECT
-	[t1].[COUNT_1]
+	[t1].[Count_1]
 FROM
 	[Parent] [p1]
 		OUTER APPLY (
 			SELECT
-				COUNT(*) as [COUNT_1]
+				COUNT(*) as [Count_1]
 			FROM
 				[Child] [a_Children]
 					INNER JOIN [GrandChild] [g_1] ON [a_Children].[ParentID] = [g_1].[ParentID] AND [a_Children].[ChildID] = [g_1].[ChildID]

@@ -1,7 +1,7 @@
 ﻿-- MySql.8.0 MySql.8.0.MySql.Data MySql80
 
 SELECT
-	`g_2`.`MIN_1`
+	`g_2`.`Min_1`
 FROM
 	(
 		SELECT
@@ -12,7 +12,7 @@ FROM
 			MIN(CASE
 				WHEN `g_1`.`ParentID` > 2 THEN `g_1`.`ChildID`
 				ELSE NULL
-			END) as `MIN_1`
+			END) as `Min_1`
 		FROM
 			`Child` `g_1`
 		GROUP BY
