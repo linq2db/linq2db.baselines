@@ -6,14 +6,14 @@ SELECT
 	"al_group_2"."Id",
 	(
 		SELECT FIRST 1
-			Coalesce("t1".MAX_1, "t1"."CreationDate")
+			"t1"."LastUpdate"
 		FROM
 			(
 				SELECT
 					"al_group_3"."AlertCode",
 					"al_group_3"."Id",
-					MAX("au_1"."TransactionDate") as MAX_1,
 					"al_group_3"."CreationDate",
+					Coalesce(MAX("au_1"."TransactionDate"), "al_group_3"."CreationDate") as "LastUpdate",
 					"al_group_3"."AlertKey"
 				FROM
 					"Alert" "al_group_3"
@@ -38,8 +38,8 @@ SELECT
 				SELECT
 					"al_group_4"."AlertCode",
 					"al_group_4"."Id",
-					MAX("au_2"."TransactionDate") as MAX_1,
 					"al_group_4"."CreationDate",
+					Coalesce(MAX("au_2"."TransactionDate"), "al_group_4"."CreationDate") as "LastUpdate",
 					"al_group_4"."AlertKey"
 				FROM
 					"Alert" "al_group_4"
@@ -64,8 +64,8 @@ SELECT
 				SELECT
 					"al_group_5"."AlertCode",
 					"al_group_5"."Id",
-					MAX("au_3"."TransactionDate") as MAX_1,
 					"al_group_5"."CreationDate",
+					Coalesce(MAX("au_3"."TransactionDate"), "al_group_5"."CreationDate") as "LastUpdate",
 					"al_group_5"."AlertKey"
 				FROM
 					"Alert" "al_group_5"
@@ -90,8 +90,8 @@ SELECT
 				SELECT
 					"al_group_6"."AlertCode",
 					"al_group_6"."Id",
-					MAX("au_4"."TransactionDate") as MAX_1,
 					"al_group_6"."CreationDate",
+					Coalesce(MAX("au_4"."TransactionDate"), "al_group_6"."CreationDate") as "LastUpdate",
 					"al_group_6"."AlertKey"
 				FROM
 					"Alert" "al_group_6"
@@ -116,8 +116,8 @@ SELECT
 				SELECT
 					"al_group_7"."AlertCode",
 					"al_group_7"."Id",
-					MAX("au_5"."TransactionDate") as MAX_1,
 					"al_group_7"."CreationDate",
+					Coalesce(MAX("au_5"."TransactionDate"), "al_group_7"."CreationDate") as "LastUpdate",
 					"al_group_7"."AlertKey"
 				FROM
 					"Alert" "al_group_7"
@@ -142,8 +142,8 @@ SELECT
 				SELECT
 					"al_group_8"."AlertCode",
 					"al_group_8"."Id",
-					MAX("au_6"."TransactionDate") as MAX_1,
 					"al_group_8"."CreationDate",
+					Coalesce(MAX("au_6"."TransactionDate"), "al_group_8"."CreationDate") as "LastUpdate",
 					"al_group_8"."AlertKey"
 				FROM
 					"Alert" "al_group_8"
@@ -168,8 +168,8 @@ SELECT
 				SELECT
 					"al_group_9"."AlertCode",
 					"al_group_9"."Id",
-					MAX("au_7"."TransactionDate") as MAX_1,
 					"al_group_9"."CreationDate",
+					Coalesce(MAX("au_7"."TransactionDate"), "al_group_9"."CreationDate") as "LastUpdate",
 					"al_group_9"."AlertKey"
 				FROM
 					"Alert" "al_group_9"

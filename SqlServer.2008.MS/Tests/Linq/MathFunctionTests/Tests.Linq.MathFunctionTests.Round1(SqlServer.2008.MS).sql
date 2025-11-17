@@ -1,13 +1,18 @@
 ﻿-- SqlServer.2008.MS SqlServer.2008
 
 SELECT
-	[t].[MoneyValue]
+	[t].[c1]
 FROM
-	[LinqDataTypes] [t]
+	(
+		SELECT
+			CASE
+				WHEN [p].[MoneyValue] - FLOOR([p].[MoneyValue]) = 0.5 AND (FLOOR([p].[MoneyValue]) % 2) = 0
+					THEN FLOOR([p].[MoneyValue])
+				ELSE ROUND([p].[MoneyValue], 0)
+			END as [c1]
+		FROM
+			[LinqDataTypes] [p]
+	) [t]
 WHERE
-	CASE
-		WHEN [t].[MoneyValue] - FLOOR([t].[MoneyValue]) = 0.5 AND (FLOOR([t].[MoneyValue]) % 2) = 0
-			THEN FLOOR([t].[MoneyValue])
-		ELSE ROUND([t].[MoneyValue], 0)
-	END <> 0
+	[t].[c1] <> 0
 

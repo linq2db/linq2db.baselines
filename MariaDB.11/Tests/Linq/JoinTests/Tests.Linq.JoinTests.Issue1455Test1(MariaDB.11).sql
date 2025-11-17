@@ -45,15 +45,14 @@ FROM
 				`trade_2`.`DealId` as `cond_1`,
 				`trade_2`.`ParcelId`,
 				`trade_2`.`CounterParty`,
-				Coalesce(`t1`.`MAX_1`, `t1`.`CreationDate`) as `LastUpdate`,
+				`t1`.`LastUpdate`,
 				ROW_NUMBER() OVER (PARTITION BY `t1`.`Id` ORDER BY `t1`.`Id`) as `rn`,
 				`t1`.`Id`
 			FROM
 				(
 					SELECT
 						`al_group_2`.`Id`,
-						MAX(`au_1`.`TransactionDate`) as `MAX_1`,
-						`al_group_2`.`CreationDate`,
+						Coalesce(MAX(`au_1`.`TransactionDate`), `al_group_2`.`CreationDate`) as `LastUpdate`,
 						`al_group_2`.`AlertKey`,
 						`al_group_2`.`AlertCode`
 					FROM

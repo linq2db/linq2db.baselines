@@ -1,7 +1,7 @@
 ﻿-- Oracle.11.Managed Oracle11
 
 SELECT
-	LISTAGG(g_1."Value1", ' -> ') WITHIN GROUP (ORDER BY ROWNUM)
+	LISTAGG(g_1."Value1", ' -> ') WITHIN GROUP (ORDER BY g_1."Value1")
 FROM
 	"SampleClass" g_1
 GROUP BY

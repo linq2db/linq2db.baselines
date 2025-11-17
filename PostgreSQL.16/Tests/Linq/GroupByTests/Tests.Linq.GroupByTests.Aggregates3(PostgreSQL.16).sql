@@ -1,26 +1,11 @@
 ﻿-- PostgreSQL.16 PostgreSQL.15 PostgreSQL
 
 SELECT
-	COUNT(CASE
-		WHEN g_1."ChildID" > 30 THEN 1
-		ELSE NULL
-	END),
-	SUM(CASE
-		WHEN g_1."ChildID" > 30 THEN g_1."ChildID"
-		ELSE NULL
-	END),
-	MIN(CASE
-		WHEN g_1."ChildID" > 30 THEN g_1."ChildID"
-		ELSE NULL
-	END),
-	MAX(CASE
-		WHEN g_1."ChildID" > 30 THEN g_1."ChildID"
-		ELSE NULL
-	END),
-	AVG(CASE
-		WHEN g_1."ChildID" > 30 THEN g_1."ChildID"
-		ELSE NULL
-	END)
+	COUNT(*) FILTER (WHERE g_1."ChildID" > 30),
+	SUM(g_1."ChildID") FILTER (WHERE g_1."ChildID" > 30),
+	MIN(g_1."ChildID") FILTER (WHERE g_1."ChildID" > 30),
+	MAX(g_1."ChildID") FILTER (WHERE g_1."ChildID" > 30),
+	AVG(g_1."ChildID") FILTER (WHERE g_1."ChildID" > 30)
 FROM
 	"Child" g_1
 WHERE

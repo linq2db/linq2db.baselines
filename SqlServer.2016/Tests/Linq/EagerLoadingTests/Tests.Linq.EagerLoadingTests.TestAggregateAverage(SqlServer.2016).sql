@@ -1,30 +1,29 @@
 ﻿-- SqlServer.2016
 
 SELECT
-	[t3].[AVG_1]
+	(
+		SELECT
+			AVG(CAST([t2].[DetailId] AS Float))
+		FROM
+			(
+				SELECT
+					[t1].[DetailId]
+				FROM
+					(
+						SELECT DISTINCT
+							[a_Details].[DetailId]
+						FROM
+							[DetailClass] [a_Details]
+						WHERE
+							[m_1].[Id1] = [a_Details].[MasterId]
+					) [t1]
+				ORDER BY
+					[t1].[DetailId]
+				OFFSET 1 ROWS FETCH NEXT 5 ROWS ONLY 
+			) [t2]
+	)
 FROM
 	[MasterClass] [m_1]
-		OUTER APPLY (
-			SELECT
-				AVG(CAST([t2].[DetailId] AS Float)) as [AVG_1]
-			FROM
-				(
-					SELECT
-						[t1].[DetailId]
-					FROM
-						(
-							SELECT DISTINCT
-								[a_Details].[DetailId]
-							FROM
-								[DetailClass] [a_Details]
-							WHERE
-								[m_1].[Id1] = [a_Details].[MasterId]
-						) [t1]
-					ORDER BY
-						[t1].[DetailId]
-					OFFSET 1 ROWS FETCH NEXT 5 ROWS ONLY 
-				) [t2]
-		) [t3]
 WHERE
 	(
 		SELECT

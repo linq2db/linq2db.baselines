@@ -8,7 +8,7 @@ USING (
 		"pa"."PatentId",
 		(
 			SELECT
-				STRING_AGG("a_User"."DisplayName", '; ' ORDER BY "a_User"."DisplayName")
+				STRING_AGG("a_User"."DisplayName", '; ' ORDER BY "a_User"."DisplayName" NULLS FIRST)
 			FROM
 				"Issue2918Table2" "patr"
 					LEFT JOIN "User" "a_User" ON "patr"."UserId" = "a_User"."Id"

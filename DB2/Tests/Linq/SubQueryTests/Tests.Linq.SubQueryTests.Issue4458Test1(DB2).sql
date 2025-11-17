@@ -6,22 +6,20 @@ SELECT
 	"d"."UserId",
 	"d"."Score"
 FROM
-	(
-		SELECT DISTINCT
-			"t1"."Id"
-		FROM
-			"Issue4458Item" "t1"
-		WHERE
-			EXISTS(
-				SELECT
-					*
-				FROM
-					"Review" "r"
-				WHERE
-					"r"."ItemId" = "t1"."Id" AND "r"."Score" > 95
-			)
-	) "m_1"
+	"Issue4458Item" "m_1"
 		INNER JOIN "Review" "d" ON "d"."ItemId" = "m_1"."Id"
+WHERE
+	EXISTS(
+		SELECT
+			*
+		FROM
+			"Review" "r"
+		WHERE
+			"r"."ItemId" = "m_1"."Id" AND "r"."Score" > 95
+	)
+ORDER BY
+	"d"."ItemId",
+	"d"."UserId"
 
 -- DB2 DB2.LUW DB2LUW
 
@@ -55,4 +53,29 @@ WHERE
 		WHERE
 			"r"."ItemId" = "i"."Id" AND "r"."Score" > 95
 	)
+
+-- DB2 DB2.LUW DB2LUW
+
+SELECT
+	"t1"."Id"
+FROM
+	"Issue4458Item" "t1"
+
+-- DB2 DB2.LUW DB2LUW
+
+SELECT
+	"t1"."ItemId",
+	"t1"."QuantityAvailable",
+	"t1"."WarehouseId"
+FROM
+	"WarehouseStock" "t1"
+
+-- DB2 DB2.LUW DB2LUW
+
+SELECT
+	"t1"."ItemId",
+	"t1"."UserId",
+	"t1"."Score"
+FROM
+	"Review" "t1"
 
