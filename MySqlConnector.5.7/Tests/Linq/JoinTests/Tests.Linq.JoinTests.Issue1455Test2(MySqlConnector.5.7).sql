@@ -12,7 +12,6 @@ SELECT
 				SELECT
 					`al_group_3`.`AlertCode`,
 					`al_group_3`.`Id`,
-					`al_group_3`.`CreationDate`,
 					Coalesce(MAX(`au_1`.`TransactionDate`), `al_group_3`.`CreationDate`) as `LastUpdate`,
 					`al_group_3`.`AlertKey`
 				FROM
@@ -39,8 +38,6 @@ SELECT
 				SELECT
 					`al_group_4`.`AlertCode`,
 					`al_group_4`.`Id`,
-					`al_group_4`.`CreationDate`,
-					Coalesce(MAX(`au_2`.`TransactionDate`), `al_group_4`.`CreationDate`) as `LastUpdate`,
 					`al_group_4`.`AlertKey`
 				FROM
 					`Alert` `al_group_4`
@@ -66,8 +63,6 @@ SELECT
 				SELECT
 					`al_group_5`.`AlertCode`,
 					`al_group_5`.`Id`,
-					`al_group_5`.`CreationDate`,
-					Coalesce(MAX(`au_3`.`TransactionDate`), `al_group_5`.`CreationDate`) as `LastUpdate`,
 					`al_group_5`.`AlertKey`
 				FROM
 					`Alert` `al_group_5`
@@ -93,8 +88,6 @@ SELECT
 				SELECT
 					`al_group_6`.`AlertCode`,
 					`al_group_6`.`Id`,
-					`al_group_6`.`CreationDate`,
-					Coalesce(MAX(`au_4`.`TransactionDate`), `al_group_6`.`CreationDate`) as `LastUpdate`,
 					`al_group_6`.`AlertKey`
 				FROM
 					`Alert` `al_group_6`
@@ -120,8 +113,6 @@ SELECT
 				SELECT
 					`al_group_7`.`AlertCode`,
 					`al_group_7`.`Id`,
-					`al_group_7`.`CreationDate`,
-					Coalesce(MAX(`au_5`.`TransactionDate`), `al_group_7`.`CreationDate`) as `LastUpdate`,
 					`al_group_7`.`AlertKey`
 				FROM
 					`Alert` `al_group_7`
@@ -147,8 +138,6 @@ SELECT
 				SELECT
 					`al_group_8`.`AlertCode`,
 					`al_group_8`.`Id`,
-					`al_group_8`.`CreationDate`,
-					Coalesce(MAX(`au_6`.`TransactionDate`), `al_group_8`.`CreationDate`) as `LastUpdate`,
 					`al_group_8`.`AlertKey`
 				FROM
 					`Alert` `al_group_8`
@@ -174,8 +163,6 @@ SELECT
 				SELECT
 					`al_group_9`.`AlertCode`,
 					`al_group_9`.`Id`,
-					`al_group_9`.`CreationDate`,
-					Coalesce(MAX(`au_7`.`TransactionDate`), `al_group_9`.`CreationDate`) as `LastUpdate`,
 					`al_group_9`.`AlertKey`
 				FROM
 					`Alert` `al_group_9`

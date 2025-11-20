@@ -9,7 +9,6 @@ SELECT
 				LEFT JOIN (
 					SELECT
 						[c_1].[ParentID],
-						[c_1].[ChildID],
 						ROW_NUMBER() OVER (PARTITION BY [c_1].[ParentID] ORDER BY [c_1].[ParentID]) as [rn]
 					FROM
 						[Child] [c_1]

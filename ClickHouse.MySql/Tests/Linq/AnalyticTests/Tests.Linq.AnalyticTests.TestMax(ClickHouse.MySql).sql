@@ -1,7 +1,7 @@
 ﻿-- ClickHouse.MySql ClickHouse
 
 SELECT
-	max(c_1.ChildID),
+	MAX(c_1.ChildID),
 	MAX(c_1.ChildID),
 	MAX(ALL c_1.ChildID),
 	MAX(DISTINCT c_1.ChildID)

@@ -13,8 +13,8 @@ FROM
 	(
 		SELECT
 			[g_2].[ColorName],
-			[g_2].[StyleName],
-			COUNT(*) as [Count_1]
+			COUNT(*) as [Conditional],
+			[g_2].[StyleName]
 		FROM
 			(
 				SELECT
@@ -41,8 +41,8 @@ FROM
 				1 as [cond]
 			FROM
 				(
-					SELECT [t1].[ColorName] AS [ColorName], [t1].[Count_1] AS [Count], [t1].[StyleName] AS [StyleName], CASE
-					WHEN [t1].[ColorName] = N'Red' THEN [t1].[Count_1]
+					SELECT [t1].[ColorName] AS [ColorName], [t1].[Conditional] AS [Count], [t1].[StyleName] AS [StyleName], CASE
+					WHEN [t1].[ColorName] = N'Red' THEN [t1].[Conditional]
 					ELSE 0
 				END AS [Conditional], 1 AS [field1], 2 AS [field2], 3 AS [field3]
 					UNION ALL

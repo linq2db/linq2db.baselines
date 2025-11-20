@@ -8,11 +8,7 @@ SELECT
 		FROM
 			(
 				SELECT
-					"t"."Id",
-					"t"."NullableValue",
-					"t"."NotNullableValue",
-					"t"."VarcharValue",
-					"t"."NVarcharValue"
+					"t"."NullableValue"
 				FROM
 					"SampleClass" "t"
 				WHERE
@@ -45,11 +41,7 @@ SELECT
 		FROM
 			(
 				SELECT
-					"t_1"."Id",
-					"t_1"."NullableValue",
-					"t_1"."NotNullableValue",
-					"t_1"."VarcharValue",
-					"t_1"."NVarcharValue"
+					"t_1"."NotNullableValue"
 				FROM
 					"SampleClass" "t_1"
 				WHERE
@@ -65,11 +57,7 @@ SELECT
 		FROM
 			(
 				SELECT
-					"t_2"."Id",
-					"t_2"."NullableValue",
-					"t_2"."NotNullableValue",
-					"t_2"."VarcharValue",
-					"t_2"."NVarcharValue"
+					"t_2"."NullableValue"
 				FROM
 					"SampleClass" "t_2"
 				WHERE
@@ -85,11 +73,7 @@ SELECT
 		FROM
 			(
 				SELECT
-					"t_3"."Id",
-					"t_3"."NullableValue",
-					"t_3"."NotNullableValue",
-					"t_3"."VarcharValue",
-					"t_3"."NVarcharValue"
+					"t_3"."NotNullableValue"
 				FROM
 					"SampleClass" "t_3"
 				WHERE
@@ -105,11 +89,7 @@ SELECT
 		FROM
 			(
 				SELECT
-					"t_4"."Id",
-					"t_4"."NullableValue",
-					"t_4"."NotNullableValue",
-					"t_4"."VarcharValue",
-					"t_4"."NVarcharValue"
+					"t_4"."NotNullableValue"
 				FROM
 					"SampleClass" "t_4"
 				WHERE

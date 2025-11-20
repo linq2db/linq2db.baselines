@@ -13,8 +13,8 @@ FROM
 	(
 		SELECT
 			g_2."ColorName",
-			g_2."StyleName",
-			COUNT(*) as "Count_1"
+			COUNT(*) as "Conditional",
+			g_2."StyleName"
 		FROM
 			(
 				SELECT
@@ -41,8 +41,8 @@ FROM
 				1 as cond
 			FROM
 				(VALUES
-					(t1."ColorName",t1."Count_1",t1."StyleName",CASE
-						WHEN t1."ColorName" = 'Red' THEN t1."Count_1"
+					(t1."ColorName",t1."Conditional",t1."StyleName",CASE
+						WHEN t1."ColorName" = 'Red' THEN t1."Conditional"
 						ELSE 0
 					END,1,2,3),
 					(NULL,0,t1."StyleName",NULL,4,5,6)

@@ -27,7 +27,7 @@ SELECT
 		FROM
 			(
 				SELECT FIRST 2 SKIP 1
-					"t3"."DetailValue"
+					*
 				FROM
 					(
 						SELECT DISTINCT

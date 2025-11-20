@@ -1,7 +1,7 @@
 ﻿-- ClickHouse.Octonica ClickHouse
 
 SELECT
-	sum(g_1.ParentID)
+	SUM(g_1.ParentID)
 FROM
 	Child g_1
 		LEFT JOIN Parent p ON g_1.ParentID = p.ParentID

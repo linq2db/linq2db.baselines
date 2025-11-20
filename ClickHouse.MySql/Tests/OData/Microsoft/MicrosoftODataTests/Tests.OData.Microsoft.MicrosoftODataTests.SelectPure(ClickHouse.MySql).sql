@@ -3,7 +3,7 @@
 SELECT
 	'Title',
 	it.Title,
-	sum(it.YearsExperience)
+	SUM(it.YearsExperience)
 FROM
 	odata_person it
 GROUP BY

@@ -33,11 +33,10 @@ SELECT
 		FROM
 			(
 				SELECT
-					[t5].[DetailValue]
+					*
 				FROM
 					(
 						SELECT
-							[t4].[DetailValue],
 							ROW_NUMBER() OVER (ORDER BY [t4].[DetailValue]) as [RN]
 						FROM
 							(

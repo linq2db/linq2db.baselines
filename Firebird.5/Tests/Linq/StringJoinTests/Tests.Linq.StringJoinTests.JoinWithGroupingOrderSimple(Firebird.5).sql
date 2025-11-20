@@ -8,11 +8,7 @@ SELECT
 		FROM
 			(
 				SELECT
-					"t"."Id",
-					"t"."NullableValue",
-					"t"."NotNullableValue",
-					"t"."VarcharValue",
-					"t"."NVarcharValue"
+					"t"."NullableValue"
 				FROM
 					"SampleClass" "t"
 				WHERE
@@ -28,11 +24,7 @@ SELECT
 		FROM
 			(
 				SELECT
-					"t_1"."Id",
-					"t_1"."NullableValue",
-					"t_1"."NotNullableValue",
-					"t_1"."VarcharValue",
-					"t_1"."NVarcharValue"
+					"t_1"."NullableValue"
 				FROM
 					"SampleClass" "t_1"
 				WHERE
