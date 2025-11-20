@@ -1,41 +1,35 @@
 ﻿-- ClickHouse.MySql ClickHouse
 
 SELECT
-	x.c1
+	arrayStringConcat([CASE
+		WHEN position(x.NullableValue, 'A') > 0 THEN x.NullableValue
+		ELSE NULL
+	END, CASE
+		WHEN position(x.NotNullableValue, 'A') > 0 THEN x.NotNullableValue
+		ELSE NULL
+	END, CASE
+		WHEN position(x.VarcharValue, 'A') > 0 THEN x.VarcharValue
+		ELSE NULL
+	END, CASE
+		WHEN position(x.NVarcharValue, 'A') > 0 THEN x.NVarcharValue
+		ELSE NULL
+	END], ', ')
 FROM
-	(
-		SELECT
-			arrayStringConcat([CASE
-				WHEN position(t.NullableValue, 'A') > 0 THEN t.NullableValue
-				ELSE NULL
-			END, CASE
-				WHEN position(t.NotNullableValue, 'A') > 0 THEN t.NotNullableValue
-				ELSE NULL
-			END, CASE
-				WHEN position(t.VarcharValue, 'A') > 0 THEN t.VarcharValue
-				ELSE NULL
-			END, CASE
-				WHEN position(t.NVarcharValue, 'A') > 0 THEN t.NVarcharValue
-				ELSE NULL
-			END], ', ') as c1,
-			lengthUTF8(arrayStringConcat([CASE
-				WHEN position(t.NullableValue, 'A') > 0 THEN t.NullableValue
-				ELSE NULL
-			END, CASE
-				WHEN position(t.NotNullableValue, 'A') > 0 THEN t.NotNullableValue
-				ELSE NULL
-			END, CASE
-				WHEN position(t.VarcharValue, 'A') > 0 THEN t.VarcharValue
-				ELSE NULL
-			END, CASE
-				WHEN position(t.NVarcharValue, 'A') > 0 THEN t.NVarcharValue
-				ELSE NULL
-			END], ', ')) as Length_1
-		FROM
-			SampleClass t
-	) x
+	SampleClass x
 WHERE
-	NOT (x.c1 IS NULL OR x.Length_1 = 0 AND x.Length_1 IS NOT NULL)
+	lengthUTF8(arrayStringConcat([CASE
+		WHEN position(x.NullableValue, 'A') > 0 THEN x.NullableValue
+		ELSE NULL
+	END, CASE
+		WHEN position(x.NotNullableValue, 'A') > 0 THEN x.NotNullableValue
+		ELSE NULL
+	END, CASE
+		WHEN position(x.VarcharValue, 'A') > 0 THEN x.VarcharValue
+		ELSE NULL
+	END, CASE
+		WHEN position(x.NVarcharValue, 'A') > 0 THEN x.NVarcharValue
+		ELSE NULL
+	END], ', ')) <> 0
 
 -- ClickHouse.MySql ClickHouse
 
