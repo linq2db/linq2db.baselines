@@ -1,11 +1,7 @@
 ﻿-- ClickHouse.Driver ClickHouse
 
 SELECT
-	CASE
-		WHEN concat('Issue1977Table/', toString(f.firstField), '/', toString(f.secondField)) = arrayStringConcat(['Issue1977Table', toString(f.firstField), toString(f.secondField)], '/')
-			THEN true
-		ELSE false
-	END
+	concat('Issue1977Table/', toString(f.firstField), '/', toString(f.secondField)) = arrayStringConcat(['Issue1977Table', toString(f.firstField), toString(f.secondField)], '/')
 FROM
 	Issue1977Table f
 
