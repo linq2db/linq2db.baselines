@@ -2,7 +2,7 @@
 
 SELECT
 	g_2.Key_1,
-	sum(g_2.ParentID)
+	SUM(g_2.ParentID)
 FROM
 	(
 		SELECT

@@ -50,35 +50,30 @@ DECLARE @now DateTime2
 SET     @now = DATETIME2FROMPARTS(2020, 2, 29, 17, 54, 55, 1231234, 7)
 
 SELECT
-	[m_1].[Id],
+	[m_1].[id],
 	[d].[category_id]
 FROM
-	(
-		SELECT DISTINCT
-			[x].[id] as [Id]
+	[issue_4254_media_items] [m_1]
+		INNER JOIN [issue_4254_media_item_to_media_item_categories] [d] ON [m_1].[id] = [d].[media_item_id]
+WHERE
+	EXISTS(
+		SELECT
+			*
 		FROM
-			[issue_4254_media_items] [x]
+			[issue_4254_media_item_user_share] [y]
 		WHERE
-			EXISTS(
-				SELECT
-					*
-				FROM
-					[issue_4254_media_item_user_share] [y]
-				WHERE
-					[x].[id] = [y].[media_item_id] AND [y].[user_id] = @userId AND
-					[y].[expires_at] > @now
-			) OR
-			EXISTS(
-				SELECT
-					*
-				FROM
-					[issue_4254_media_item_user_share] [y_1]
-				WHERE
-					[x].[id] = [y_1].[media_item_id] AND [y_1].[created_by_id] = @userId AND
-					[y_1].[expires_at] > @now
-			)
-	) [m_1]
-		INNER JOIN [issue_4254_media_item_to_media_item_categories] [d] ON [m_1].[Id] = [d].[media_item_id]
+			[m_1].[id] = [y].[media_item_id] AND [y].[user_id] = @userId AND
+			[y].[expires_at] > @now
+	) OR
+	EXISTS(
+		SELECT
+			*
+		FROM
+			[issue_4254_media_item_user_share] [y_1]
+		WHERE
+			[m_1].[id] = [y_1].[media_item_id] AND [y_1].[created_by_id] = @userId AND
+			[y_1].[expires_at] > @now
+	)
 
 -- SqlServer.SA SqlServer.2019
 DECLARE @now DateTime2
@@ -125,35 +120,30 @@ DECLARE @now DateTime2
 SET     @now = DATETIME2FROMPARTS(2020, 2, 29, 17, 54, 55, 1230000, 7)
 
 SELECT
-	[m_1].[Id],
+	[m_1].[id],
 	[d].[category_id]
 FROM
-	(
-		SELECT DISTINCT
-			[x].[id] as [Id]
+	[issue_4254_media_items] [m_1]
+		INNER JOIN [issue_4254_media_item_to_media_item_categories] [d] ON [m_1].[id] = [d].[media_item_id]
+WHERE
+	EXISTS(
+		SELECT
+			*
 		FROM
-			[issue_4254_media_items] [x]
+			[issue_4254_media_item_user_share] [y]
 		WHERE
-			EXISTS(
-				SELECT
-					*
-				FROM
-					[issue_4254_media_item_user_share] [y]
-				WHERE
-					[x].[id] = [y].[media_item_id] AND [y].[user_id] = @userId AND
-					[y].[expires_at] > @now
-			) OR
-			EXISTS(
-				SELECT
-					*
-				FROM
-					[issue_4254_media_item_user_share] [y_1]
-				WHERE
-					[x].[id] = [y_1].[media_item_id] AND [y_1].[created_by_id] = @userId AND
-					[y_1].[expires_at] > @now
-			)
-	) [m_1]
-		INNER JOIN [issue_4254_media_item_to_media_item_categories] [d] ON [m_1].[Id] = [d].[media_item_id]
+			[m_1].[id] = [y].[media_item_id] AND [y].[user_id] = @userId AND
+			[y].[expires_at] > @now
+	) OR
+	EXISTS(
+		SELECT
+			*
+		FROM
+			[issue_4254_media_item_user_share] [y_1]
+		WHERE
+			[m_1].[id] = [y_1].[media_item_id] AND [y_1].[created_by_id] = @userId AND
+			[y_1].[expires_at] > @now
+	)
 
 -- SqlServer.SA SqlServer.2019
 DECLARE @now DateTime2

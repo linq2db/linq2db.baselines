@@ -15,6 +15,6 @@ FROM
 GROUP BY
 	x.DuplicateData
 ORDER BY
-	max(x.OrderData1 % 3)
+	MAX(x.OrderData1 % 3)
 LIMIT 0, 3
 

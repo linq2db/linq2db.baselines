@@ -9,24 +9,18 @@ SELECT
 	`d`.`ValB`,
 	`d`.`ValInt`
 FROM
-	(
-		SELECT DISTINCT
-			`l1`.`ID`,
-			`l1`.`ValS`
-		FROM
-			`Issue3757Level1` `l1`
-		WHERE
-			EXISTS(
-				SELECT
-					*
-				FROM
-					`Issue3757Level2` `c_1`
-				WHERE
-					`l1`.`ID` = `c_1`.`ParentId` AND LOCATE(@TypedProperty, `l1`.`ValS`) > 0 AND
-					`l1`.`ValS` IS NOT NULL
-			)
-	) `m_1`
+	`Issue3757Level1` `m_1`
 		INNER JOIN `Issue3757Level2` `d` ON `m_1`.`ID` = `d`.`ParentId`
+WHERE
+	EXISTS(
+		SELECT
+			*
+		FROM
+			`Issue3757Level2` `c_1`
+		WHERE
+			`m_1`.`ID` = `c_1`.`ParentId` AND LOCATE(@TypedProperty, `m_1`.`ValS`) > 0 AND
+			`m_1`.`ValS` IS NOT NULL
+	)
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 DECLARE @TypedProperty VarChar(2) -- String

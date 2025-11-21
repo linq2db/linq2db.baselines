@@ -1,7 +1,7 @@
 ﻿-- ClickHouse.Octonica ClickHouse
 
 SELECT
-	max(g_1.ChildID)
+	MAX(g_1.ChildID)
 FROM
 	Child g_1
 GROUP BY

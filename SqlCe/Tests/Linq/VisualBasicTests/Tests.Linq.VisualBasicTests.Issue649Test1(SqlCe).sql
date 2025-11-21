@@ -3,7 +3,7 @@
 SELECT
 	[a_Person].[personid],
 	[a_Person].[personname],
-	MAX([VBIt].[added]) as [MAX_1]
+	MAX([VBIt].[added]) as [Max_1]
 FROM
 	[activity649] [VBIt]
 		INNER JOIN [person649] [a_Person] ON [VBIt].[personid] = [a_Person].[personid]

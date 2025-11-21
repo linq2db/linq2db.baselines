@@ -1,10 +1,10 @@
 ﻿-- SqlCe
 
 SELECT
-	COUNT(*) as [COUNT_1]
+	COUNT(*) as [Count_1]
 FROM
-	[Child] [p]
-		INNER JOIN [Parent] [a_Parent] ON [p].[ParentID] = [a_Parent].[ParentID]
+	[Child] [ch]
+		INNER JOIN [Parent] [a_Parent] ON [ch].[ParentID] = [a_Parent].[ParentID]
 WHERE
 	[a_Parent].[ParentID] = 1
 

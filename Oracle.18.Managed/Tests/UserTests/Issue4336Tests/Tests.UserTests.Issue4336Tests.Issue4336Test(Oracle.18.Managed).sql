@@ -19,7 +19,7 @@ FROM
 			vpc."CategoryId",
 			pop."ProductId",
 			COALESCE(CAST(pcc."PeriodOrderLimit" AS Int),0) as "MaxCapacity",
-			COALESCE(COALESCE(vsp.SUM_1,0),0) as "Quantity"
+			COALESCE(COALESCE(vsp."Quantity",0),0) as "Quantity"
 		FROM
 			"OrderPeriod" op
 				INNER JOIN "ProductsPerOrderPeriod" pop ON op."Id" = pop."OrderPeriodId"
@@ -29,7 +29,7 @@ FROM
 					SELECT
 						agroup."Id",
 						oi."ProductId",
-						SUM(CAST(COALESCE(oi."Quantity",0) AS Int)) as SUM_1
+						SUM(CAST(COALESCE(oi."Quantity",0) AS Int)) as "Quantity"
 					FROM
 						"OrderPeriod" agroup
 							LEFT JOIN "OrderHeader" oh ON agroup."Id" = oh."PeriodId"

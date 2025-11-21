@@ -14,17 +14,16 @@ FROM
 				FROM
 					(
 						SELECT
-							IIF([d].[not_null] IS NOT NULL, IIF([tracking].[TrackingTimeType] = 0, [d].[StartHour], [d].[EndHour]), CAST(0 AS Decimal(18, 10))) as [WithParentReference]
+							IIF([d].[not_null] IS NOT NULL, [d].[WithParentReference], CAST(0 AS Decimal(18, 10))) as [WithParentReference]
 						FROM
 							(
 								SELECT
-									0 as [WithParentReference]
+									1 as [c1]
 							) [t1]
 								LEFT JOIN (
 									SELECT
 										1 as [not_null],
-										[a_LeaveRequestDateEntries].[StartHour],
-										[a_LeaveRequestDateEntries].[EndHour]
+										IIF([tracking].[TrackingTimeType] = 0, [a_LeaveRequestDateEntries].[StartHour], [a_LeaveRequestDateEntries].[EndHour]) as [WithParentReference]
 									FROM
 										[LeaveRequest] [e]
 											INNER JOIN [LeaveRequestDateEntry] [a_LeaveRequestDateEntries] ON [e].[Id] = [a_LeaveRequestDateEntries].[LeaveRequestId]
@@ -39,17 +38,16 @@ FROM
 				FROM
 					(
 						SELECT
-							IIF([d_1].[not_null] IS NOT NULL, IIF([tracking].[TrackingTimeType] = 0, [d_1].[StartHour], [d_1].[EndHour]), CAST(0 AS Decimal(18, 10))) as [WithParentReferenceCustom1]
+							IIF([d_1].[not_null] IS NOT NULL, [d_1].[WithParentReferenceCustom1], CAST(0 AS Decimal(18, 10))) as [WithParentReferenceCustom1]
 						FROM
 							(
 								SELECT
-									0 as [WithParentReferenceCustom1]
+									1 as [c1]
 							) [t3]
 								LEFT JOIN (
 									SELECT
 										1 as [not_null],
-										[a_LeaveRequestDateEntries_1].[StartHour],
-										[a_LeaveRequestDateEntries_1].[EndHour]
+										IIF([tracking].[TrackingTimeType] = 0, [a_LeaveRequestDateEntries_1].[StartHour], [a_LeaveRequestDateEntries_1].[EndHour]) as [WithParentReferenceCustom1]
 									FROM
 										[LeaveRequest] [e_1]
 											INNER JOIN [LeaveRequestDateEntry] [a_LeaveRequestDateEntries_1] ON [e_1].[Id] = [a_LeaveRequestDateEntries_1].[LeaveRequestId]
@@ -64,17 +62,16 @@ FROM
 				FROM
 					(
 						SELECT
-							IIF([d_2].[not_null] IS NOT NULL, IIF([tracking].[TrackingTimeType] = 0, [d_2].[StartHour], [d_2].[EndHour]), CAST(0 AS Decimal(18, 10))) as [WithParentReferenceCustom2]
+							IIF([d_2].[not_null] IS NOT NULL, [d_2].[WithParentReferenceCustom2], CAST(0 AS Decimal(18, 10))) as [WithParentReferenceCustom2]
 						FROM
 							(
 								SELECT
-									0 as [WithParentReferenceCustom2]
+									1 as [c1]
 							) [t5]
 								LEFT JOIN (
 									SELECT
 										1 as [not_null],
-										[a_LeaveRequestDateEntries_2].[StartHour],
-										[a_LeaveRequestDateEntries_2].[EndHour]
+										IIF([tracking].[TrackingTimeType] = 0, [a_LeaveRequestDateEntries_2].[StartHour], [a_LeaveRequestDateEntries_2].[EndHour]) as [WithParentReferenceCustom2]
 									FROM
 										[LeaveRequest] [e_2]
 											INNER JOIN [LeaveRequestDateEntry] [a_LeaveRequestDateEntries_2] ON [e_2].[Id] = [a_LeaveRequestDateEntries_2].[LeaveRequestId]
@@ -89,17 +86,16 @@ FROM
 				FROM
 					(
 						SELECT
-							IIF([d_3].[not_null] IS NOT NULL, IIF([d_3].[StartHour] IS NOT NULL, [d_3].[StartHour], [d_3].[EndHour]), CAST(0 AS Decimal(18, 10))) as [WithoutParentReference]
+							IIF([d_3].[not_null] IS NOT NULL, [d_3].[WithoutParentReference], CAST(0 AS Decimal(18, 10))) as [WithoutParentReference]
 						FROM
 							(
 								SELECT
-									0 as [WithoutParentReference]
+									1 as [c1]
 							) [t7]
 								LEFT JOIN (
 									SELECT
 										1 as [not_null],
-										[a_LeaveRequestDateEntries_3].[StartHour],
-										[a_LeaveRequestDateEntries_3].[EndHour]
+										IIF([a_LeaveRequestDateEntries_3].[StartHour] IS NOT NULL, [a_LeaveRequestDateEntries_3].[StartHour], [a_LeaveRequestDateEntries_3].[EndHour]) as [WithoutParentReference]
 									FROM
 										[LeaveRequest] [e_3]
 											INNER JOIN [LeaveRequestDateEntry] [a_LeaveRequestDateEntries_3] ON [e_3].[Id] = [a_LeaveRequestDateEntries_3].[LeaveRequestId]

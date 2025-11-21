@@ -5,7 +5,7 @@ SELECT
 FROM
 	(
 		SELECT
-			Floor(Atan2(CAST("p"."MoneyValue" AS Float) / 15, 0) * 15) as "Value_1"
+			Floor(Atan2(CAST("p"."MoneyValue" AS DOUBLE PRECISION) / 15, 0) * 15) as "Value_1"
 		FROM
 			"LinqDataTypes" "p"
 	) "t"

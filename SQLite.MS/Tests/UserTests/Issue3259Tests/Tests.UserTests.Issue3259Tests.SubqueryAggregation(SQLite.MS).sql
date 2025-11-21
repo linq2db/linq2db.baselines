@@ -11,22 +11,21 @@ FROM
 			(
 				SELECT
 					SUM(CASE
-						WHEN [d].[not_null] IS NOT NULL THEN CASE
-							WHEN [tracking].[TrackingTimeType] = 0 THEN [d].[StartHour]
-							ELSE [d].[EndHour]
-						END
+						WHEN [d].[not_null] IS NOT NULL THEN [d].[WithParentReference]
 						ELSE CAST(0 AS Decimal)
 					END)
 				FROM
 					(
 						SELECT
-							0 as [WithParentReference]
+							1 as [c1]
 					) [t1]
 						LEFT JOIN (
 							SELECT
 								1 as [not_null],
-								[a_LeaveRequestDateEntries].[StartHour],
-								[a_LeaveRequestDateEntries].[EndHour]
+								CASE
+									WHEN [tracking].[TrackingTimeType] = 0 THEN [a_LeaveRequestDateEntries].[StartHour]
+									ELSE [a_LeaveRequestDateEntries].[EndHour]
+								END as [WithParentReference]
 							FROM
 								[LeaveRequest] [e]
 									INNER JOIN [LeaveRequestDateEntry] [a_LeaveRequestDateEntries] ON [e].[Id] = [a_LeaveRequestDateEntries].[LeaveRequestId]
@@ -37,22 +36,21 @@ FROM
 			(
 				SELECT
 					Sum(CASE
-						WHEN [d_1].[not_null] IS NOT NULL THEN CASE
-							WHEN [tracking].[TrackingTimeType] = 0 THEN [d_1].[StartHour]
-							ELSE [d_1].[EndHour]
-						END
+						WHEN [d_1].[not_null] IS NOT NULL THEN [d_1].[WithParentReferenceCustom1]
 						ELSE CAST(0 AS Decimal)
 					END)
 				FROM
 					(
 						SELECT
-							0 as [WithParentReferenceCustom1]
+							1 as [c1]
 					) [t2]
 						LEFT JOIN (
 							SELECT
 								1 as [not_null],
-								[a_LeaveRequestDateEntries_1].[StartHour],
-								[a_LeaveRequestDateEntries_1].[EndHour]
+								CASE
+									WHEN [tracking].[TrackingTimeType] = 0 THEN [a_LeaveRequestDateEntries_1].[StartHour]
+									ELSE [a_LeaveRequestDateEntries_1].[EndHour]
+								END as [WithParentReferenceCustom1]
 							FROM
 								[LeaveRequest] [e_1]
 									INNER JOIN [LeaveRequestDateEntry] [a_LeaveRequestDateEntries_1] ON [e_1].[Id] = [a_LeaveRequestDateEntries_1].[LeaveRequestId]
@@ -63,22 +61,21 @@ FROM
 			(
 				SELECT
 					Sum(CASE
-						WHEN [d_2].[not_null] IS NOT NULL THEN CASE
-							WHEN [tracking].[TrackingTimeType] = 0 THEN [d_2].[StartHour]
-							ELSE [d_2].[EndHour]
-						END
+						WHEN [d_2].[not_null] IS NOT NULL THEN [d_2].[WithParentReferenceCustom2]
 						ELSE CAST(0 AS Decimal)
 					END)
 				FROM
 					(
 						SELECT
-							0 as [WithParentReferenceCustom2]
+							1 as [c1]
 					) [t3]
 						LEFT JOIN (
 							SELECT
 								1 as [not_null],
-								[a_LeaveRequestDateEntries_2].[StartHour],
-								[a_LeaveRequestDateEntries_2].[EndHour]
+								CASE
+									WHEN [tracking].[TrackingTimeType] = 0 THEN [a_LeaveRequestDateEntries_2].[StartHour]
+									ELSE [a_LeaveRequestDateEntries_2].[EndHour]
+								END as [WithParentReferenceCustom2]
 							FROM
 								[LeaveRequest] [e_2]
 									INNER JOIN [LeaveRequestDateEntry] [a_LeaveRequestDateEntries_2] ON [e_2].[Id] = [a_LeaveRequestDateEntries_2].[LeaveRequestId]
@@ -89,22 +86,22 @@ FROM
 			(
 				SELECT
 					SUM(CASE
-						WHEN [d_3].[not_null] IS NOT NULL THEN CASE
-							WHEN [d_3].[StartHour] IS NOT NULL THEN [d_3].[StartHour]
-							ELSE [d_3].[EndHour]
-						END
+						WHEN [d_3].[not_null] IS NOT NULL THEN [d_3].[WithoutParentReference]
 						ELSE CAST(0 AS Decimal)
 					END)
 				FROM
 					(
 						SELECT
-							0 as [WithoutParentReference]
+							1 as [c1]
 					) [t4]
 						LEFT JOIN (
 							SELECT
 								1 as [not_null],
-								[a_LeaveRequestDateEntries_3].[StartHour],
-								[a_LeaveRequestDateEntries_3].[EndHour]
+								CASE
+									WHEN [a_LeaveRequestDateEntries_3].[StartHour] IS NOT NULL
+										THEN [a_LeaveRequestDateEntries_3].[StartHour]
+									ELSE [a_LeaveRequestDateEntries_3].[EndHour]
+								END as [WithoutParentReference]
 							FROM
 								[LeaveRequest] [e_3]
 									INNER JOIN [LeaveRequestDateEntry] [a_LeaveRequestDateEntries_3] ON [e_3].[Id] = [a_LeaveRequestDateEntries_3].[LeaveRequestId]

@@ -7,7 +7,7 @@ FROM
 		INNER JOIN (
 			SELECT
 				t2.ID as ID,
-				max(t2.DateTimeValue) as c1
+				MAX(t2.DateTimeValue) as c1
 			FROM
 				LinqDataTypes t2
 			WHERE

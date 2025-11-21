@@ -3,7 +3,7 @@
 SELECT
 	a_Person.personid,
 	a_Person.personname,
-	max(VBIt.added)
+	MAX(VBIt.added)
 FROM
 	activity649 VBIt
 		INNER JOIN person649 a_Person ON VBIt.personid = a_Person.personid

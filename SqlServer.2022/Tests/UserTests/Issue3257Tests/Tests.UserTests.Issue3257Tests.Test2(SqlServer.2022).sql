@@ -16,15 +16,15 @@ FROM
 			), (
 				SELECT
 					STRING_AGG(CASE
-						WHEN [checklist_1].[TriggerType] = 1 THEN N'Hired'
-						WHEN [checklist_1].[TriggerType] = 2 THEN N'PreHired'
-						WHEN [checklist_1].[TriggerType] = 3 THEN N'Terminated'
+						WHEN [a_ChecklistTriggers_1].[TriggerType] = 1 THEN N'Hired'
+						WHEN [a_ChecklistTriggers_1].[TriggerType] = 2 THEN N'PreHired'
+						WHEN [a_ChecklistTriggers_1].[TriggerType] = 3 THEN N'Terminated'
 						ELSE N''
 					END, N',')
 				FROM
-					[ChecklistTrigger] [checklist_1]
+					[ChecklistTrigger] [a_ChecklistTriggers_1]
 				WHERE
-					[x].[Id] = [checklist_1].[ChecklistId]
+					[x].[Id] = [a_ChecklistTriggers_1].[ChecklistId]
 			), N'None') as [Triggers_1],
 			[x].[Id]
 		FROM

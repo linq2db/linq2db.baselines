@@ -12,18 +12,18 @@ ORDER BY
 SELECT
 	COUNT(*)
 FROM
-	[Src] [x]
+	[Src] [s]
 WHERE
-	[x].[Int] = 2
+	[s].[Int] = 2
 
 -- SQLite.MS SQLite
 
 SELECT
 	COUNT(*)
 FROM
-	[Src] [x]
+	[Src] [s]
 WHERE
-	[x].[Int] <> 2
+	[s].[Int] <> 2
 
 -- SQLite.MS SQLite
 
@@ -39,18 +39,18 @@ ORDER BY
 SELECT
 	COUNT(*)
 FROM
-	[Src] [x]
+	[Src] [s]
 WHERE
-	[x].[Int] = 4
+	[s].[Int] = 4
 
 -- SQLite.MS SQLite
 
 SELECT
 	COUNT(*)
 FROM
-	[Src] [x]
+	[Src] [s]
 WHERE
-	[x].[Int] <> 4
+	[s].[Int] <> 4
 
 -- SQLite.MS SQLite
 
@@ -66,7 +66,7 @@ ORDER BY
 SELECT
 	COUNT(*)
 FROM
-	[Src] [x]
+	[Src] [s]
 WHERE
 	1 = 0
 
@@ -75,7 +75,7 @@ WHERE
 SELECT
 	COUNT(*)
 FROM
-	[Src] [x]
+	[Src] [s]
 
 -- SQLite.MS SQLite
 
@@ -91,18 +91,18 @@ ORDER BY
 SELECT
 	COUNT(*)
 FROM
-	[Src] [x]
+	[Src] [s]
 WHERE
-	[x].[NullableInt] = 2 OR [x].[NullableInt] IS NULL
+	[s].[NullableInt] = 2 OR [s].[NullableInt] IS NULL
 
 -- SQLite.MS SQLite
 
 SELECT
 	COUNT(*)
 FROM
-	[Src] [x]
+	[Src] [s]
 WHERE
-	NOT ([x].[NullableInt] = 2 OR [x].[NullableInt] IS NULL)
+	NOT ([s].[NullableInt] = 2 OR [s].[NullableInt] IS NULL)
 
 -- SQLite.MS SQLite
 
@@ -118,18 +118,18 @@ ORDER BY
 SELECT
 	COUNT(*)
 FROM
-	[Src] [x]
+	[Src] [s]
 WHERE
-	[x].[NullableInt] = 4 OR [x].[NullableInt] IS NULL
+	[s].[NullableInt] = 4 OR [s].[NullableInt] IS NULL
 
 -- SQLite.MS SQLite
 
 SELECT
 	COUNT(*)
 FROM
-	[Src] [x]
+	[Src] [s]
 WHERE
-	NOT ([x].[NullableInt] = 4 OR [x].[NullableInt] IS NULL)
+	NOT ([s].[NullableInt] = 4 OR [s].[NullableInt] IS NULL)
 
 -- SQLite.MS SQLite
 
@@ -145,16 +145,16 @@ ORDER BY
 SELECT
 	COUNT(*)
 FROM
-	[Src] [x]
+	[Src] [s]
 WHERE
-	[x].[NullableInt] IS NULL
+	[s].[NullableInt] IS NULL
 
 -- SQLite.MS SQLite
 
 SELECT
 	COUNT(*)
 FROM
-	[Src] [x]
+	[Src] [s]
 WHERE
-	[x].[NullableInt] IS NOT NULL
+	[s].[NullableInt] IS NOT NULL
 

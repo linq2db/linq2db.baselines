@@ -4,7 +4,7 @@ SET     @separator = ' -> '
 
 SELECT
 	MAX(g_1."Value4"),
-	LISTAGG(g_1."Value4", :separator) WITHIN GROUP (ORDER BY ROWNUM)
+	LISTAGG(g_1."Value4", :separator) WITHIN GROUP (ORDER BY g_1."Value4")
 FROM
 	"SampleClass" g_1
 GROUP BY

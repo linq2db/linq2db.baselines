@@ -1,7 +1,7 @@
 ﻿-- ClickHouse.MySql ClickHouse
 
 SELECT
-	max(id.ChildID)
+	MAX(id.ChildID)
 FROM
 	Child id
 GROUP BY

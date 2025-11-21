@@ -7,7 +7,7 @@ FROM
 	(
 		SELECT
 			"r"."PersonID" as ID,
-			CAST(0 AS Float) as "Value_1"
+			CAST(0 AS DOUBLE PRECISION) as "Value_1"
 		FROM
 			"Person" "r"
 	) "t1"
@@ -21,7 +21,7 @@ FROM
 	(
 		SELECT
 			"r"."PersonID" as ID,
-			CAST(3147483648 AS Float) as "Value_1"
+			CAST(3147483648 AS DOUBLE PRECISION) as "Value_1"
 		FROM
 			"Person" "r"
 	) "t1"

@@ -5,7 +5,7 @@ SELECT
 FROM
 	(
 		SELECT
-			min(elements_1.TesteeId) as TesteeId
+			MIN(elements_1.TesteeId) as TesteeId
 		FROM
 			(
 				SELECT

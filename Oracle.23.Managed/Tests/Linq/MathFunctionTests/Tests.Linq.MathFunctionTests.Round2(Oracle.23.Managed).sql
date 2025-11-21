@@ -1,13 +1,18 @@
 ﻿-- Oracle.23.Managed Oracle.Managed Oracle12
 
 SELECT
-	t."MoneyValue"
+	t."c1"
 FROM
-	"LinqDataTypes" t
+	(
+		SELECT
+			CASE
+				WHEN CAST(p."MoneyValue" AS Float) - FLOOR(CAST(p."MoneyValue" AS Float)) = 0.5D AND MOD(FLOOR(CAST(p."MoneyValue" AS Float)), 2) = 0
+					THEN FLOOR(CAST(p."MoneyValue" AS Float))
+				ELSE ROUND(CAST(p."MoneyValue" AS Float), 0)
+			END as "c1"
+		FROM
+			"LinqDataTypes" p
+	) t
 WHERE
-	CASE
-		WHEN CAST(t."MoneyValue" AS Float) - FLOOR(CAST(t."MoneyValue" AS Float)) = 0.5D AND MOD(FLOOR(CAST(t."MoneyValue" AS Float)), 2) = 0
-			THEN FLOOR(CAST(t."MoneyValue" AS Float))
-		ELSE ROUND(CAST(t."MoneyValue" AS Float), 0)
-	END <> 0D
+	t."c1" <> 0D
 

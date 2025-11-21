@@ -1,8 +1,8 @@
 ﻿-- Firebird.4 Firebird4
 
 SELECT
-	CAST("v"."Integer" AS Float) / 33,
-	CAST("v"."Decimal" AS Float) / 33,
+	CAST("v"."Integer" AS DOUBLE PRECISION) / 33,
+	CAST("v"."Decimal" AS DOUBLE PRECISION) / 33,
 	"v"."Double" / 33
 FROM
 	"Issue4469Table" "v"

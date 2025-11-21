@@ -1,7 +1,7 @@
 ﻿-- ClickHouse.MySql ClickHouse
 
 SELECT
-	sum(g_1.ChildID)
+	SUM(g_1.ChildID)
 FROM
 	Child g_1
 GROUP BY
