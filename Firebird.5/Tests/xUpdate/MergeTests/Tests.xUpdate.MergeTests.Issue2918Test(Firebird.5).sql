@@ -8,12 +8,19 @@ USING (
 		"pa"."PatentId",
 		(
 			SELECT
-				LIST("a_User"."DisplayName", '; ')
+				LIST("t1"."DisplayName", '; ')
 			FROM
-				"Issue2918Table2" "patr"
-					LEFT JOIN "User" "a_User" ON "patr"."UserId" = "a_User"."Id"
-			WHERE
-				"patr"."PatentId" = "pa"."PatentId"
+				(
+					SELECT
+						"a_User"."DisplayName"
+					FROM
+						"Issue2918Table2" "patr"
+							LEFT JOIN "User" "a_User" ON "patr"."UserId" = "a_User"."Id"
+					WHERE
+						"patr"."PatentId" = "pa"."PatentId"
+					ORDER BY
+						"a_User"."DisplayName"
+				) "t1"
 		) as "TechnicalReviewersText"
 	FROM
 		"PatentAssessment" "pa"
