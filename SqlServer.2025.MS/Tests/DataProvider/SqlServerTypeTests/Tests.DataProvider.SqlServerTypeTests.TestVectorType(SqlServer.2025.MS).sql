@@ -291,7 +291,7 @@ DECLARE @Id Int -- Int32
 SET     @Id = 1
 DECLARE @Column 36(16) -- Binary
 SET     @Column = JSON_ARRAY(11.2, -4.1)
-DECLARE @ColumnNullable 36(16) -- Binary
+DECLARE @ColumnNullable Vector(16) -- Binary
 SET     @ColumnNullable = JSON_ARRAY(5.2, -3.1)
 
 INSERT INTO [TypeTable`2]
