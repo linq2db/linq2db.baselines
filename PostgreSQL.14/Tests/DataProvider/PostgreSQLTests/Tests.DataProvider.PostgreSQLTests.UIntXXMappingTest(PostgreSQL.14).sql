@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+﻿-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 
 INSERT INTO "UIntTable"
 (
@@ -19,7 +19,7 @@ VALUES
 	18446744073709551615
 )
 
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 
 SELECT
 	t1."Field16",
@@ -31,12 +31,12 @@ SELECT
 FROM
 	"UIntTable" t1
 
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 
 DELETE FROM
 	"UIntTable" t1
 
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 DECLARE @value16 Integer -- Int32
 SET     @value16 = 65535
 DECLARE @value32 Bigint -- Int64
@@ -69,7 +69,7 @@ VALUES
 	:value64N
 )
 
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 
 SELECT
 	t1."Field16",
@@ -81,11 +81,11 @@ SELECT
 FROM
 	"UIntTable" t1
 
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 
 SHOW server_version_num
 
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 
 
 				SELECT
@@ -133,7 +133,7 @@ SHOW server_version_num
 				FROM pg_matviews v
 				WHERE v.schemaname NOT IN ('information_schema', 'pg_catalog')
 
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 
 	SELECT
 		current_database() || '.' || pg_namespace.nspname || '.' || pg_class.relname as TableID,
@@ -149,7 +149,7 @@ SHOW server_version_num
 		pg_constraint.contype = 'p'
 	AND pg_namespace.nspname NOT IN ('information_schema', 'pg_catalog')
 
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 
 
 				SELECT columns.TableID,
@@ -237,7 +237,7 @@ SHOW server_version_num
 				           AND ns.nspname NOT IN ('information_schema', 'pg_catalog')
 				     ) columns;
 
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 
 
 				SELECT

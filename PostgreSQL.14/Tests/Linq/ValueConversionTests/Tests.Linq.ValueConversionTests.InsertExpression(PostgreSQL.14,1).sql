@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+﻿-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 DECLARE @iteration Integer -- Int32
 SET     @iteration = 1
 DECLARE @Value1 Text(2) -- String
@@ -31,7 +31,7 @@ VALUES
 	:boolValue_1
 )
 
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 DECLARE @iteration Integer -- Int32
 SET     @iteration = 1
 

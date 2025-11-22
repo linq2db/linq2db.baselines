@@ -1,11 +1,11 @@
-﻿-- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+﻿-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 
 DELETE FROM
 	"LinqDataTypes" r
 WHERE
 	r."ID" >= 1000
 
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 DECLARE @tt Bigint -- Int64
 SET     @tt = 600000000
 
@@ -20,7 +20,7 @@ VALUES
 	:tt
 )
 
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 
 SELECT
 	t."ID",
@@ -31,7 +31,7 @@ WHERE
 	t."ID" = 1001
 LIMIT 1
 
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 
 DELETE FROM
 	"LinqDataTypes" r

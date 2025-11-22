@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+﻿-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 DECLARE @Value Integer -- Int32
 SET     @Value = 0
 
@@ -13,7 +13,7 @@ VALUES
 RETURNING 
 	"ID"
 
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 
 INSERT INTO "AllTypes"
 (
@@ -24,7 +24,7 @@ VALUES
 (13,200),
 (23,300)
 
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 DECLARE @lastId Integer -- Int32
 SET     @lastId = 3
 
@@ -38,7 +38,7 @@ WHERE
 ORDER BY
 	t1."ID"
 
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 DECLARE @lastId Integer -- Int32
 SET     @lastId = 3
 

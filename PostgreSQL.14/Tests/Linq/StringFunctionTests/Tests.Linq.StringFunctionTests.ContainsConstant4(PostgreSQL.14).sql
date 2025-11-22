@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+﻿-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 DECLARE @s Text(7) -- String
 SET     @s = '123[456'
 
@@ -9,7 +9,7 @@ FROM
 WHERE
 	p."PersonID" = 1 AND :s LIKE '%~[%' ESCAPE '~'
 
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 DECLARE @s Text(7) -- String
 SET     @s = '123[456'
 

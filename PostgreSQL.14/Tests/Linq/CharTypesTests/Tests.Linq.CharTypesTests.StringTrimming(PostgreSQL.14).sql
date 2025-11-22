@@ -1,11 +1,11 @@
-﻿-- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+﻿-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 
 SELECT
 	MAX(t1."ID")
 FROM
 	"AllTypes" t1
 
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 DECLARE @NString Text(6) -- String
 SET     @NString = 'test01'
 
@@ -18,7 +18,7 @@ VALUES
 	:NString
 )
 
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 DECLARE @NString Text(8) -- String
 SET     @NString = 'test02  '
 
@@ -31,7 +31,7 @@ VALUES
 	:NString
 )
 
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 DECLARE @NString Text(8) -- String
 SET     @NString = 'test03	 '
 
@@ -44,7 +44,7 @@ VALUES
 	:NString
 )
 
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 DECLARE @NString Text(8) -- String
 SET     @NString = 'test04
  '
@@ -58,7 +58,7 @@ VALUES
 	:NString
 )
 
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 DECLARE @NString Text(8) -- String
 SET     @NString = 'test05 '
 
@@ -71,7 +71,7 @@ VALUES
 	:NString
 )
 
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 DECLARE @NString Text(8) -- String
 SET     @NString = 'test06 '
 
@@ -84,7 +84,7 @@ VALUES
 	:NString
 )
 
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 DECLARE @NString Text(8) -- String
 SET     @NString = 'test07 '
 
@@ -97,7 +97,7 @@ VALUES
 	:NString
 )
 
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 DECLARE @NString Text(8) -- String
 SET     @NString = 'test08  '
 
@@ -110,7 +110,7 @@ VALUES
 	:NString
 )
 
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 DECLARE @NString Text(8) -- String
 SET     @NString = 'test09  '
 
@@ -123,7 +123,7 @@ VALUES
 	:NString
 )
 
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 DECLARE @NString Text(8) -- String
 SET     @NString = 'test10  '
 
@@ -136,7 +136,7 @@ VALUES
 	:NString
 )
 
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 DECLARE @NString Text(8) -- String
 SET     @NString = 'test11  '
 
@@ -149,7 +149,7 @@ VALUES
 	:NString
 )
 
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 DECLARE @NString Text(8) -- String
 SET     @NString = 'test12  '
 
@@ -162,7 +162,7 @@ VALUES
 	:NString
 )
 
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 DECLARE @NString Text(8) -- String
 SET     @NString = 'test13  '
 
@@ -175,7 +175,7 @@ VALUES
 	:NString
 )
 
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 DECLARE @NString Text(8) -- String
 SET     @NString = 'test14  '
 
@@ -188,7 +188,7 @@ VALUES
 	:NString
 )
 
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 DECLARE @NString Text(8) -- String
 SET     @NString = 'test15  '
 
@@ -201,7 +201,7 @@ VALUES
 	:NString
 )
 
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 DECLARE @NString Text(8) -- String
 SET     @NString = 'test16  '
 
@@ -214,7 +214,7 @@ VALUES
 	:NString
 )
 
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 DECLARE @NString Text(8) -- String
 SET     @NString = 'test17  '
 
@@ -227,7 +227,7 @@ VALUES
 	:NString
 )
 
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 DECLARE @NString Text(8) -- String
 SET     @NString = 'test18  '
 
@@ -240,7 +240,7 @@ VALUES
 	:NString
 )
 
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 DECLARE @NString Text(8) -- String
 SET     @NString = 'test19  '
 
@@ -253,7 +253,7 @@ VALUES
 	:NString
 )
 
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 DECLARE @NString Text(8) -- String
 SET     @NString = 'test20　 '
 
@@ -266,7 +266,7 @@ VALUES
 	:NString
 )
 
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 DECLARE @NString Text -- String
 SET     @NString = NULL
 
@@ -279,7 +279,7 @@ VALUES
 	:NString
 )
 
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 DECLARE @lastId Integer -- Int32
 SET     @lastId = 2
 
@@ -293,7 +293,7 @@ WHERE
 ORDER BY
 	t1."ID"
 
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 DECLARE @lastId Integer -- Int32
 SET     @lastId = 2
 

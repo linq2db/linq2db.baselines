@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+﻿-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 
 /* x => x.IntVlaue == 1 ? 3 : 4 == 3 */
 SELECT
@@ -14,7 +14,7 @@ FROM
 WHERE
 	x."IntVlaue" = 1
 
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 
 SELECT
 	t1."Id",
@@ -27,7 +27,7 @@ SELECT
 FROM
 	"OptimizationData" t1
 
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 
 /* x_with_not => !(x_with_not.IntVlaue == 1 ? 3 : 4 == 3) */
 SELECT
@@ -43,7 +43,7 @@ FROM
 WHERE
 	x_with_not."IntVlaue" <> 1
 
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 
 SELECT
 	t1."Id",
@@ -56,7 +56,7 @@ SELECT
 FROM
 	"OptimizationData" t1
 
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 
 /* swap => 3 == swap.IntVlaue == 1 ? 3 : 4 */
 SELECT
@@ -72,7 +72,7 @@ FROM
 WHERE
 	swap."IntVlaue" = 1
 
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 
 SELECT
 	t1."Id",
@@ -85,7 +85,7 @@ SELECT
 FROM
 	"OptimizationData" t1
 
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 
 /* swap_with_not => !(3 == swap_with_not.IntVlaue == 1 ? 3 : 4) */
 SELECT
@@ -101,7 +101,7 @@ FROM
 WHERE
 	swap_with_not."IntVlaue" <> 1
 
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 
 SELECT
 	t1."Id",
@@ -114,7 +114,7 @@ SELECT
 FROM
 	"OptimizationData" t1
 
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 
 /* x => x.IntVlaue == 1 ? null : (bool?)False == (bool?)True */
 SELECT
@@ -130,7 +130,7 @@ FROM
 WHERE
 	1 = 0
 
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 
 SELECT
 	t1."Id",
@@ -143,7 +143,7 @@ SELECT
 FROM
 	"OptimizationData" t1
 
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 
 /* x_with_not => !(x_with_not.IntVlaue == 1 ? null : (bool?)False == (bool?)True) */
 SELECT
@@ -157,7 +157,7 @@ SELECT
 FROM
 	"OptimizationData" x_with_not
 
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 
 SELECT
 	t1."Id",
@@ -170,7 +170,7 @@ SELECT
 FROM
 	"OptimizationData" t1
 
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 
 /* swap => (bool?)True == swap.IntVlaue == 1 ? null : (bool?)False */
 SELECT
@@ -186,7 +186,7 @@ FROM
 WHERE
 	1 = 0
 
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 
 SELECT
 	t1."Id",
@@ -199,7 +199,7 @@ SELECT
 FROM
 	"OptimizationData" t1
 
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 
 /* swap_with_not => !((bool?)True == swap_with_not.IntVlaue == 1 ? null : (bool?)False) */
 SELECT
@@ -213,7 +213,7 @@ SELECT
 FROM
 	"OptimizationData" swap_with_not
 
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 
 SELECT
 	t1."Id",
@@ -226,7 +226,7 @@ SELECT
 FROM
 	"OptimizationData" t1
 
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 
 /* x => x.IntVlaue == 1 ? null : (bool?)True == (bool?)True */
 SELECT
@@ -242,7 +242,7 @@ FROM
 WHERE
 	x."IntVlaue" <> 1
 
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 
 SELECT
 	t1."Id",
@@ -255,7 +255,7 @@ SELECT
 FROM
 	"OptimizationData" t1
 
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 
 /* x_with_not => !(x_with_not.IntVlaue == 1 ? null : (bool?)True == (bool?)True) */
 SELECT
@@ -271,7 +271,7 @@ FROM
 WHERE
 	x_with_not."IntVlaue" = 1
 
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 
 SELECT
 	t1."Id",
@@ -284,7 +284,7 @@ SELECT
 FROM
 	"OptimizationData" t1
 
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 
 /* swap => (bool?)True == swap.IntVlaue == 1 ? null : (bool?)True */
 SELECT
@@ -300,7 +300,7 @@ FROM
 WHERE
 	swap."IntVlaue" <> 1
 
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 
 SELECT
 	t1."Id",
@@ -313,7 +313,7 @@ SELECT
 FROM
 	"OptimizationData" t1
 
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 
 /* swap_with_not => !((bool?)True == swap_with_not.IntVlaue == 1 ? null : (bool?)True) */
 SELECT
@@ -329,7 +329,7 @@ FROM
 WHERE
 	swap_with_not."IntVlaue" = 1
 
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 
 SELECT
 	t1."Id",
@@ -342,7 +342,7 @@ SELECT
 FROM
 	"OptimizationData" t1
 
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 
 /* x => x.BoolValue ? True : False == True */
 SELECT
@@ -358,7 +358,7 @@ FROM
 WHERE
 	x."BoolValue" = True
 
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 
 SELECT
 	t1."Id",
@@ -371,7 +371,7 @@ SELECT
 FROM
 	"OptimizationData" t1
 
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 
 /* x_with_not => !(x_with_not.BoolValue ? True : False == True) */
 SELECT
@@ -387,7 +387,7 @@ FROM
 WHERE
 	x_with_not."BoolValue" = False
 
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 
 SELECT
 	t1."Id",
@@ -400,7 +400,7 @@ SELECT
 FROM
 	"OptimizationData" t1
 
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 
 /* swap => True == swap.BoolValue ? True : False */
 SELECT
@@ -416,7 +416,7 @@ FROM
 WHERE
 	swap."BoolValue" = True
 
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 
 SELECT
 	t1."Id",
@@ -429,7 +429,7 @@ SELECT
 FROM
 	"OptimizationData" t1
 
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 
 /* swap_with_not => !(True == swap_with_not.BoolValue ? True : False) */
 SELECT
@@ -445,7 +445,7 @@ FROM
 WHERE
 	swap_with_not."BoolValue" = False
 
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 
 SELECT
 	t1."Id",
@@ -458,7 +458,7 @@ SELECT
 FROM
 	"OptimizationData" t1
 
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 
 /* x => x.BoolValue == True ? null : (bool?)True == (bool?)True */
 SELECT
@@ -474,7 +474,7 @@ FROM
 WHERE
 	NOT x."BoolValue"
 
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 
 SELECT
 	t1."Id",
@@ -487,7 +487,7 @@ SELECT
 FROM
 	"OptimizationData" t1
 
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 
 /* x_with_not => !(x_with_not.BoolValue == True ? null : (bool?)True == (bool?)True) */
 SELECT
@@ -503,7 +503,7 @@ FROM
 WHERE
 	x_with_not."BoolValue"
 
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 
 SELECT
 	t1."Id",
@@ -516,7 +516,7 @@ SELECT
 FROM
 	"OptimizationData" t1
 
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 
 /* swap => (bool?)True == swap.BoolValue == True ? null : (bool?)True */
 SELECT
@@ -532,7 +532,7 @@ FROM
 WHERE
 	NOT swap."BoolValue"
 
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 
 SELECT
 	t1."Id",
@@ -545,7 +545,7 @@ SELECT
 FROM
 	"OptimizationData" t1
 
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 
 /* swap_with_not => !((bool?)True == swap_with_not.BoolValue == True ? null : (bool?)True) */
 SELECT
@@ -561,7 +561,7 @@ FROM
 WHERE
 	swap_with_not."BoolValue"
 
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 
 SELECT
 	t1."Id",
@@ -574,7 +574,7 @@ SELECT
 FROM
 	"OptimizationData" t1
 
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 
 /* x => x.BoolValue == True ? True : False == True */
 SELECT
@@ -590,7 +590,7 @@ FROM
 WHERE
 	x."BoolValue" = True
 
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 
 SELECT
 	t1."Id",
@@ -603,7 +603,7 @@ SELECT
 FROM
 	"OptimizationData" t1
 
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 
 /* x_with_not => !(x_with_not.BoolValue == True ? True : False == True) */
 SELECT
@@ -619,7 +619,7 @@ FROM
 WHERE
 	x_with_not."BoolValue" = False
 
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 
 SELECT
 	t1."Id",
@@ -632,7 +632,7 @@ SELECT
 FROM
 	"OptimizationData" t1
 
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 
 /* swap => True == swap.BoolValue == True ? True : False */
 SELECT
@@ -648,7 +648,7 @@ FROM
 WHERE
 	swap."BoolValue" = True
 
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 
 SELECT
 	t1."Id",
@@ -661,7 +661,7 @@ SELECT
 FROM
 	"OptimizationData" t1
 
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 
 /* swap_with_not => !(True == swap_with_not.BoolValue == True ? True : False) */
 SELECT
@@ -677,7 +677,7 @@ FROM
 WHERE
 	swap_with_not."BoolValue" = False
 
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 
 SELECT
 	t1."Id",
@@ -690,7 +690,7 @@ SELECT
 FROM
 	"OptimizationData" t1
 
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 
 /* x => x.StringValueNullable == null ? 1 : x.StringValueNullable != null ? 2 : 3 == 2 */
 SELECT
@@ -706,7 +706,7 @@ FROM
 WHERE
 	x."StringValueNullable" IS NOT NULL
 
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 
 SELECT
 	t1."Id",
@@ -719,7 +719,7 @@ SELECT
 FROM
 	"OptimizationData" t1
 
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 
 /* x_with_not => !(x_with_not.StringValueNullable == null ? 1 : x_with_not.StringValueNullable != null ? 2 : 3 == 2) */
 SELECT
@@ -735,7 +735,7 @@ FROM
 WHERE
 	x_with_not."StringValueNullable" IS NULL
 
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 
 SELECT
 	t1."Id",
@@ -748,7 +748,7 @@ SELECT
 FROM
 	"OptimizationData" t1
 
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 
 /* swap => 2 == swap.StringValueNullable == null ? 1 : swap.StringValueNullable != null ? 2 : 3 */
 SELECT
@@ -764,7 +764,7 @@ FROM
 WHERE
 	swap."StringValueNullable" IS NOT NULL
 
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 
 SELECT
 	t1."Id",
@@ -777,7 +777,7 @@ SELECT
 FROM
 	"OptimizationData" t1
 
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 
 /* swap_with_not => !(2 == swap_with_not.StringValueNullable == null ? 1 : swap_with_not.StringValueNullable != null ? 2 : 3) */
 SELECT
@@ -793,7 +793,7 @@ FROM
 WHERE
 	swap_with_not."StringValueNullable" IS NULL
 
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 
 SELECT
 	t1."Id",
@@ -806,7 +806,7 @@ SELECT
 FROM
 	"OptimizationData" t1
 
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 
 /* x => x.StringValueNullable == null ? 2 : x.StringValueNullable != null ? 1 : 3 == 2 */
 SELECT
@@ -822,7 +822,7 @@ FROM
 WHERE
 	x."StringValueNullable" IS NULL
 
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 
 SELECT
 	t1."Id",
@@ -835,7 +835,7 @@ SELECT
 FROM
 	"OptimizationData" t1
 
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 
 /* x_with_not => !(x_with_not.StringValueNullable == null ? 2 : x_with_not.StringValueNullable != null ? 1 : 3 == 2) */
 SELECT
@@ -851,7 +851,7 @@ FROM
 WHERE
 	x_with_not."StringValueNullable" IS NOT NULL
 
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 
 SELECT
 	t1."Id",
@@ -864,7 +864,7 @@ SELECT
 FROM
 	"OptimizationData" t1
 
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 
 /* swap => 2 == swap.StringValueNullable == null ? 2 : swap.StringValueNullable != null ? 1 : 3 */
 SELECT
@@ -880,7 +880,7 @@ FROM
 WHERE
 	swap."StringValueNullable" IS NULL
 
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 
 SELECT
 	t1."Id",
@@ -893,7 +893,7 @@ SELECT
 FROM
 	"OptimizationData" t1
 
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 
 /* swap_with_not => !(2 == swap_with_not.StringValueNullable == null ? 2 : swap_with_not.StringValueNullable != null ? 1 : 3) */
 SELECT
@@ -909,7 +909,7 @@ FROM
 WHERE
 	swap_with_not."StringValueNullable" IS NOT NULL
 
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 
 SELECT
 	t1."Id",
@@ -922,7 +922,7 @@ SELECT
 FROM
 	"OptimizationData" t1
 
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 
 /* x => x.StringValueNullable == null ? 2 : x.StringValueNullable != null ? 1 : 3 > 3 */
 SELECT
@@ -938,7 +938,7 @@ FROM
 WHERE
 	1 = 0
 
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 
 SELECT
 	t1."Id",
@@ -951,7 +951,7 @@ SELECT
 FROM
 	"OptimizationData" t1
 
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 
 /* x_with_not => !(x_with_not.StringValueNullable == null ? 2 : x_with_not.StringValueNullable != null ? 1 : 3 > 3) */
 SELECT
@@ -965,7 +965,7 @@ SELECT
 FROM
 	"OptimizationData" x_with_not
 
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 
 SELECT
 	t1."Id",
@@ -978,7 +978,7 @@ SELECT
 FROM
 	"OptimizationData" t1
 
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 
 /* x => x.StringValueNullable == null ? 2 : x.StringValueNullable != null ? 1 : 3 >= 1 */
 SELECT
@@ -992,7 +992,7 @@ SELECT
 FROM
 	"OptimizationData" x
 
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 
 SELECT
 	t1."Id",
@@ -1005,7 +1005,7 @@ SELECT
 FROM
 	"OptimizationData" t1
 
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 
 /* x_with_not => !(x_with_not.StringValueNullable == null ? 2 : x_with_not.StringValueNullable != null ? 1 : 3 >= 1) */
 SELECT
@@ -1021,7 +1021,7 @@ FROM
 WHERE
 	1 = 0
 
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 
 SELECT
 	t1."Id",
@@ -1034,7 +1034,7 @@ SELECT
 FROM
 	"OptimizationData" t1
 
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 
 /* x => x.StringValueNullable == null ? 2 : x.StringValueNullable != null ? 1 : 3 > 1 */
 SELECT
@@ -1050,7 +1050,7 @@ FROM
 WHERE
 	x."StringValueNullable" IS NULL
 
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 
 SELECT
 	t1."Id",
@@ -1063,7 +1063,7 @@ SELECT
 FROM
 	"OptimizationData" t1
 
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 
 /* x_with_not => !(x_with_not.StringValueNullable == null ? 2 : x_with_not.StringValueNullable != null ? 1 : 3 > 1) */
 SELECT
@@ -1079,7 +1079,7 @@ FROM
 WHERE
 	x_with_not."StringValueNullable" IS NOT NULL
 
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 
 SELECT
 	t1."Id",
@@ -1092,7 +1092,7 @@ SELECT
 FROM
 	"OptimizationData" t1
 
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 
 /* x => x.StringValueNullable == null ? 1 : x.StringValueNullable != null ? 2 : 3 != 2 */
 SELECT
@@ -1108,7 +1108,7 @@ FROM
 WHERE
 	x."StringValueNullable" IS NULL
 
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 
 SELECT
 	t1."Id",
@@ -1121,7 +1121,7 @@ SELECT
 FROM
 	"OptimizationData" t1
 
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 
 /* x_with_not => !(x_with_not.StringValueNullable == null ? 1 : x_with_not.StringValueNullable != null ? 2 : 3 != 2) */
 SELECT
@@ -1137,7 +1137,7 @@ FROM
 WHERE
 	x_with_not."StringValueNullable" IS NOT NULL
 
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 
 SELECT
 	t1."Id",
@@ -1150,7 +1150,7 @@ SELECT
 FROM
 	"OptimizationData" t1
 
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 
 /* swap => 2 != swap.StringValueNullable == null ? 1 : swap.StringValueNullable != null ? 2 : 3 */
 SELECT
@@ -1166,7 +1166,7 @@ FROM
 WHERE
 	swap."StringValueNullable" IS NULL
 
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 
 SELECT
 	t1."Id",
@@ -1179,7 +1179,7 @@ SELECT
 FROM
 	"OptimizationData" t1
 
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 
 /* swap_with_not => !(2 != swap_with_not.StringValueNullable == null ? 1 : swap_with_not.StringValueNullable != null ? 2 : 3) */
 SELECT
@@ -1195,7 +1195,7 @@ FROM
 WHERE
 	swap_with_not."StringValueNullable" IS NOT NULL
 
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 
 SELECT
 	t1."Id",
@@ -1208,7 +1208,7 @@ SELECT
 FROM
 	"OptimizationData" t1
 
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 
 /* x => x.StringValueNullable != null ? x.StringValueNullable == "2" ? 2 : 10 : x.StringValueNullable == null ? 3 : 1 == 2 */
 SELECT
@@ -1231,7 +1231,7 @@ WHERE
 		ELSE 1
 	END = 2
 
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 
 SELECT
 	t1."Id",
@@ -1244,7 +1244,7 @@ SELECT
 FROM
 	"OptimizationData" t1
 
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 
 /* x_with_not => !(x_with_not.StringValueNullable != null ? x_with_not.StringValueNullable == "2" ? 2 : 10 : x_with_not.StringValueNullable == null ? 3 : 1 == 2) */
 SELECT
@@ -1267,7 +1267,7 @@ WHERE
 		ELSE 1
 	END <> 2
 
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 
 SELECT
 	t1."Id",
@@ -1280,7 +1280,7 @@ SELECT
 FROM
 	"OptimizationData" t1
 
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 
 /* swap => 2 == swap.StringValueNullable != null ? swap.StringValueNullable == "2" ? 2 : 10 : swap.StringValueNullable == null ? 3 : 1 */
 SELECT
@@ -1303,7 +1303,7 @@ WHERE
 		ELSE 1
 	END
 
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 
 SELECT
 	t1."Id",
@@ -1316,7 +1316,7 @@ SELECT
 FROM
 	"OptimizationData" t1
 
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 
 /* swap_with_not => !(2 == swap_with_not.StringValueNullable != null ? swap_with_not.StringValueNullable == "2" ? 2 : 10 : swap_with_not.StringValueNullable == null ? 3 : 1) */
 SELECT
@@ -1339,7 +1339,7 @@ WHERE
 		ELSE 1
 	END
 
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 
 SELECT
 	t1."Id",
@@ -1352,7 +1352,7 @@ SELECT
 FROM
 	"OptimizationData" t1
 
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 
 /* x => x.IntVlaue < 4 ? 4 : x.IntVlaue == 0 */
 SELECT
@@ -1368,7 +1368,7 @@ FROM
 WHERE
 	x."IntVlaue" = 0 AND x."IntVlaue" >= 4
 
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 
 SELECT
 	t1."Id",
@@ -1381,7 +1381,7 @@ SELECT
 FROM
 	"OptimizationData" t1
 
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 
 /* x => x.IntVlaue < 4 ? 4 : x.IntVlaue != 0 */
 SELECT
@@ -1397,7 +1397,7 @@ FROM
 WHERE
 	x."IntVlaue" < 4 OR x."IntVlaue" <> 0 AND x."IntVlaue" >= 4
 
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 
 SELECT
 	t1."Id",
@@ -1410,7 +1410,7 @@ SELECT
 FROM
 	"OptimizationData" t1
 
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 
 /* x_with_not => !(x_with_not.IntVlaue < 4 ? 4 : x_with_not.IntVlaue != 0) */
 SELECT
@@ -1426,7 +1426,7 @@ FROM
 WHERE
 	NOT (x_with_not."IntVlaue" < 4 OR x_with_not."IntVlaue" <> 0 AND x_with_not."IntVlaue" >= 4)
 
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 
 SELECT
 	t1."Id",
@@ -1439,7 +1439,7 @@ SELECT
 FROM
 	"OptimizationData" t1
 
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 
 /* swap => 0 != swap.IntVlaue < 4 ? 4 : swap.IntVlaue */
 SELECT
@@ -1455,7 +1455,7 @@ FROM
 WHERE
 	swap."IntVlaue" < 4 OR swap."IntVlaue" <> 0 AND swap."IntVlaue" >= 4
 
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 
 SELECT
 	t1."Id",
@@ -1468,7 +1468,7 @@ SELECT
 FROM
 	"OptimizationData" t1
 
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 
 /* swap_with_not => !(0 != swap_with_not.IntVlaue < 4 ? 4 : swap_with_not.IntVlaue) */
 SELECT
@@ -1484,7 +1484,7 @@ FROM
 WHERE
 	NOT (swap_with_not."IntVlaue" < 4 OR swap_with_not."IntVlaue" <> 0 AND swap_with_not."IntVlaue" >= 4)
 
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 
 SELECT
 	t1."Id",
@@ -1497,7 +1497,7 @@ SELECT
 FROM
 	"OptimizationData" t1
 
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 
 /* x => x.IntVlaue < 4 ? 4 : x.IntVlaue > 0 */
 SELECT
@@ -1513,7 +1513,7 @@ FROM
 WHERE
 	x."IntVlaue" < 4 OR x."IntVlaue" > 0 AND x."IntVlaue" >= 4
 
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 
 SELECT
 	t1."Id",
@@ -1526,7 +1526,7 @@ SELECT
 FROM
 	"OptimizationData" t1
 
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 
 /* x_with_not => !(x_with_not.IntVlaue < 4 ? 4 : x_with_not.IntVlaue > 0) */
 SELECT
@@ -1542,7 +1542,7 @@ FROM
 WHERE
 	NOT (x_with_not."IntVlaue" < 4 OR x_with_not."IntVlaue" > 0 AND x_with_not."IntVlaue" >= 4)
 
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 
 SELECT
 	t1."Id",
@@ -1555,7 +1555,7 @@ SELECT
 FROM
 	"OptimizationData" t1
 
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 
 /* x => x.IntVlaue < 4 ? 4 : x.IntVlaue < 0 */
 SELECT
@@ -1571,7 +1571,7 @@ FROM
 WHERE
 	x."IntVlaue" < 0 AND x."IntVlaue" >= 4
 
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 
 SELECT
 	t1."Id",
@@ -1584,7 +1584,7 @@ SELECT
 FROM
 	"OptimizationData" t1
 
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 
 /* x_with_not => !(x_with_not.IntVlaue < 4 ? 4 : x_with_not.IntVlaue < 0) */
 SELECT
@@ -1600,7 +1600,7 @@ FROM
 WHERE
 	NOT (x_with_not."IntVlaue" < 0 AND x_with_not."IntVlaue" >= 4)
 
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 
 SELECT
 	t1."Id",
@@ -1613,7 +1613,7 @@ SELECT
 FROM
 	"OptimizationData" t1
 
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 
 /* x => x.IntVlaue < 4 ? 4 : x.IntVlaue >= 0 */
 SELECT
@@ -1629,7 +1629,7 @@ FROM
 WHERE
 	x."IntVlaue" < 4 OR x."IntVlaue" >= 0 AND x."IntVlaue" >= 4
 
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 
 SELECT
 	t1."Id",
@@ -1642,7 +1642,7 @@ SELECT
 FROM
 	"OptimizationData" t1
 
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 
 /* x_with_not => !(x_with_not.IntVlaue < 4 ? 4 : x_with_not.IntVlaue >= 0) */
 SELECT
@@ -1658,7 +1658,7 @@ FROM
 WHERE
 	NOT (x_with_not."IntVlaue" < 4 OR x_with_not."IntVlaue" >= 0 AND x_with_not."IntVlaue" >= 4)
 
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 
 SELECT
 	t1."Id",
@@ -1671,7 +1671,7 @@ SELECT
 FROM
 	"OptimizationData" t1
 
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 
 /* x => x.IntVlaue < 4 ? 4 : x.IntVlaue <= 0 */
 SELECT
@@ -1687,7 +1687,7 @@ FROM
 WHERE
 	x."IntVlaue" <= 0 AND x."IntVlaue" >= 4
 
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 
 SELECT
 	t1."Id",
@@ -1700,7 +1700,7 @@ SELECT
 FROM
 	"OptimizationData" t1
 
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 
 /* x_with_not => !(x_with_not.IntVlaue < 4 ? 4 : x_with_not.IntVlaue <= 0) */
 SELECT
@@ -1716,7 +1716,7 @@ FROM
 WHERE
 	NOT (x_with_not."IntVlaue" <= 0 AND x_with_not."IntVlaue" >= 4)
 
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 
 SELECT
 	t1."Id",
@@ -1729,7 +1729,7 @@ SELECT
 FROM
 	"OptimizationData" t1
 
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 
 /* x => x.IntVlaue >= 4 ? x.IntVlaue : 4 == 0 */
 SELECT
@@ -1745,7 +1745,7 @@ FROM
 WHERE
 	x."IntVlaue" = 0 AND x."IntVlaue" >= 4
 
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 
 SELECT
 	t1."Id",
@@ -1758,7 +1758,7 @@ SELECT
 FROM
 	"OptimizationData" t1
 
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 
 /* x_with_not => !(x_with_not.IntVlaue >= 4 ? x_with_not.IntVlaue : 4 == 0) */
 SELECT
@@ -1774,7 +1774,7 @@ FROM
 WHERE
 	NOT (x_with_not."IntVlaue" = 0 AND x_with_not."IntVlaue" >= 4)
 
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 
 SELECT
 	t1."Id",
@@ -1787,7 +1787,7 @@ SELECT
 FROM
 	"OptimizationData" t1
 
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 
 /* swap => 0 == swap.IntVlaue >= 4 ? swap.IntVlaue : 4 */
 SELECT
@@ -1803,7 +1803,7 @@ FROM
 WHERE
 	swap."IntVlaue" = 0 AND swap."IntVlaue" >= 4
 
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 
 SELECT
 	t1."Id",
@@ -1816,7 +1816,7 @@ SELECT
 FROM
 	"OptimizationData" t1
 
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 
 /* swap_with_not => !(0 == swap_with_not.IntVlaue >= 4 ? swap_with_not.IntVlaue : 4) */
 SELECT
@@ -1832,7 +1832,7 @@ FROM
 WHERE
 	NOT (swap_with_not."IntVlaue" = 0 AND swap_with_not."IntVlaue" >= 4)
 
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 
 SELECT
 	t1."Id",
@@ -1845,7 +1845,7 @@ SELECT
 FROM
 	"OptimizationData" t1
 
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 
 /* x => x.IntVlaue >= 4 ? x.IntVlaue : 4 != 0 */
 SELECT
@@ -1861,7 +1861,7 @@ FROM
 WHERE
 	x."IntVlaue" <> 0 AND x."IntVlaue" >= 4 OR x."IntVlaue" < 4
 
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 
 SELECT
 	t1."Id",
@@ -1874,7 +1874,7 @@ SELECT
 FROM
 	"OptimizationData" t1
 
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 
 /* x_with_not => !(x_with_not.IntVlaue >= 4 ? x_with_not.IntVlaue : 4 != 0) */
 SELECT
@@ -1890,7 +1890,7 @@ FROM
 WHERE
 	NOT (x_with_not."IntVlaue" <> 0 AND x_with_not."IntVlaue" >= 4 OR x_with_not."IntVlaue" < 4)
 
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 
 SELECT
 	t1."Id",
@@ -1903,7 +1903,7 @@ SELECT
 FROM
 	"OptimizationData" t1
 
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 
 /* swap => 0 != swap.IntVlaue >= 4 ? swap.IntVlaue : 4 */
 SELECT
@@ -1919,7 +1919,7 @@ FROM
 WHERE
 	swap."IntVlaue" <> 0 AND swap."IntVlaue" >= 4 OR swap."IntVlaue" < 4
 
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 
 SELECT
 	t1."Id",
@@ -1932,7 +1932,7 @@ SELECT
 FROM
 	"OptimizationData" t1
 
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 
 /* swap_with_not => !(0 != swap_with_not.IntVlaue >= 4 ? swap_with_not.IntVlaue : 4) */
 SELECT
@@ -1948,7 +1948,7 @@ FROM
 WHERE
 	NOT (swap_with_not."IntVlaue" <> 0 AND swap_with_not."IntVlaue" >= 4 OR swap_with_not."IntVlaue" < 4)
 
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 
 SELECT
 	t1."Id",
@@ -1961,7 +1961,7 @@ SELECT
 FROM
 	"OptimizationData" t1
 
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 
 /* x => x.IntVlaue >= 4 ? x.IntVlaue : 4 > 0 */
 SELECT
@@ -1977,7 +1977,7 @@ FROM
 WHERE
 	x."IntVlaue" > 0 AND x."IntVlaue" >= 4 OR x."IntVlaue" < 4
 
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 
 SELECT
 	t1."Id",
@@ -1990,7 +1990,7 @@ SELECT
 FROM
 	"OptimizationData" t1
 
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 
 /* x_with_not => !(x_with_not.IntVlaue >= 4 ? x_with_not.IntVlaue : 4 > 0) */
 SELECT
@@ -2006,7 +2006,7 @@ FROM
 WHERE
 	NOT (x_with_not."IntVlaue" > 0 AND x_with_not."IntVlaue" >= 4 OR x_with_not."IntVlaue" < 4)
 
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 
 SELECT
 	t1."Id",
@@ -2019,7 +2019,7 @@ SELECT
 FROM
 	"OptimizationData" t1
 
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 
 /* x => x.IntVlaue >= 4 ? x.IntVlaue : 4 < 0 */
 SELECT
@@ -2035,7 +2035,7 @@ FROM
 WHERE
 	x."IntVlaue" < 0 AND x."IntVlaue" >= 4
 
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 
 SELECT
 	t1."Id",
@@ -2048,7 +2048,7 @@ SELECT
 FROM
 	"OptimizationData" t1
 
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 
 /* x_with_not => !(x_with_not.IntVlaue >= 4 ? x_with_not.IntVlaue : 4 < 0) */
 SELECT
@@ -2064,7 +2064,7 @@ FROM
 WHERE
 	NOT (x_with_not."IntVlaue" < 0 AND x_with_not."IntVlaue" >= 4)
 
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 
 SELECT
 	t1."Id",
@@ -2077,7 +2077,7 @@ SELECT
 FROM
 	"OptimizationData" t1
 
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 
 /* x => x.IntVlaue >= 4 ? x.IntVlaue : 4 >= 0 */
 SELECT
@@ -2093,7 +2093,7 @@ FROM
 WHERE
 	x."IntVlaue" >= 0 AND x."IntVlaue" >= 4 OR x."IntVlaue" < 4
 
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 
 SELECT
 	t1."Id",
@@ -2106,7 +2106,7 @@ SELECT
 FROM
 	"OptimizationData" t1
 
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 
 /* x_with_not => !(x_with_not.IntVlaue >= 4 ? x_with_not.IntVlaue : 4 >= 0) */
 SELECT
@@ -2122,7 +2122,7 @@ FROM
 WHERE
 	NOT (x_with_not."IntVlaue" >= 0 AND x_with_not."IntVlaue" >= 4 OR x_with_not."IntVlaue" < 4)
 
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 
 SELECT
 	t1."Id",
@@ -2135,7 +2135,7 @@ SELECT
 FROM
 	"OptimizationData" t1
 
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 
 /* x => x.IntVlaue >= 4 ? x.IntVlaue : 4 <= 0 */
 SELECT
@@ -2151,7 +2151,7 @@ FROM
 WHERE
 	x."IntVlaue" <= 0 AND x."IntVlaue" >= 4
 
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 
 SELECT
 	t1."Id",
@@ -2164,7 +2164,7 @@ SELECT
 FROM
 	"OptimizationData" t1
 
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 
 /* x_with_not => !(x_with_not.IntVlaue >= 4 ? x_with_not.IntVlaue : 4 <= 0) */
 SELECT
@@ -2180,7 +2180,7 @@ FROM
 WHERE
 	NOT (x_with_not."IntVlaue" <= 0 AND x_with_not."IntVlaue" >= 4)
 
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 
 SELECT
 	t1."Id",
