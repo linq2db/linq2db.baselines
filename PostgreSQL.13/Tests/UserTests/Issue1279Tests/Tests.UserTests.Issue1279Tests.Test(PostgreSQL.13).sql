@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+﻿-- PostgreSQL.13 PostgreSQL
 DECLARE @CharFld Char -- String
 SET     @CharFld = 'P'
 
@@ -11,7 +11,7 @@ VALUES
 	:CharFld
 )
 
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 
 SELECT
 	t1."Id",

@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+﻿-- PostgreSQL.13 PostgreSQL
 
 SELECT
 	p."FirstName",
@@ -11,7 +11,7 @@ FROM
 WHERE
 	p."FirstName" = 'John' OR p."LastName" = 'John'
 
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 DECLARE @firstName Text(4) -- String
 SET     @firstName = 'John'
 

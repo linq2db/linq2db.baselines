@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+﻿-- PostgreSQL.13 PostgreSQL
 
 SELECT
 	"a_Patient"."PersonID" IS NOT NULL

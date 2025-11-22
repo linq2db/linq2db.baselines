@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+﻿-- PostgreSQL.13 PostgreSQL
 
 SELECT
 	RANK() OVER(PARTITION BY p."Value1", c_1."ChildID" ORDER BY p."Value1", c_1."ChildID", c_1."ParentID"),

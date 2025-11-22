@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+﻿-- PostgreSQL.13 PostgreSQL
 DECLARE @search Text(5) -- String
 SET     @search = 'test%'
 DECLARE @search_1 Text(4) -- String
@@ -29,7 +29,7 @@ FROM
 WHERE
 	row1_2."Field1" LIKE :search_2 ESCAPE '~'
 
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 DECLARE @search Text(5) -- String
 SET     @search = 'test%'
 DECLARE @search_1 Text(4) -- String

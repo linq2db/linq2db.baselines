@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+﻿-- PostgreSQL.13 PostgreSQL
 
 WITH "CTE_1"
 (
@@ -37,7 +37,7 @@ FROM
 WHERE
 	r."ID" = 2
 
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 
 WITH "CTE_1" (c1)
 AS

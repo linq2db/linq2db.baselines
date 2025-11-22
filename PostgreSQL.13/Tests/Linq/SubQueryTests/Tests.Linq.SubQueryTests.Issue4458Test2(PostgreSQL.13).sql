@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+﻿-- PostgreSQL.13 PostgreSQL
 
 SELECT
 	m_1."Id",
@@ -18,7 +18,7 @@ WHERE
 			r."ItemId" = m_1."Id" AND r."Score" > 95
 	)
 
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 
 SELECT
 	i."Id",

@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+﻿-- PostgreSQL.13 PostgreSQL
 
 INSERT INTO "TrimTestTable"
 (
@@ -11,7 +11,7 @@ VALUES
 	'***OOO***'
 )
 
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 
 INSERT INTO "TrimTestTable"
 (
@@ -24,7 +24,7 @@ VALUES
 	'***HHH***'
 )
 
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 
 INSERT INTO "TrimTestTable"
 (
@@ -37,7 +37,7 @@ VALUES
 	'***VVV***'
 )
 
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 
 SELECT
 	r."ID",
@@ -47,7 +47,7 @@ FROM
 ORDER BY
 	r."ID"
 
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 
 SELECT
 	r."ID",

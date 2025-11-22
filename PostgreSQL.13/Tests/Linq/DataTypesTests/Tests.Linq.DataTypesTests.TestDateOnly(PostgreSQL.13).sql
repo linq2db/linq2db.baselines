@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+﻿-- PostgreSQL.13 PostgreSQL
 DECLARE @Column Date
 SET     @Column = '2020-02-29'::date
 DECLARE @ColumnNullable Date
@@ -13,7 +13,7 @@ FROM
 WHERE
 	r."Column" = :Column AND r."ColumnNullable" = :ColumnNullable
 
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 
 SELECT
 	r."Id",
@@ -24,12 +24,12 @@ FROM
 WHERE
 	r."Column" = '2020-02-29'::date AND r."ColumnNullable" = '2020-01-01'::date
 
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 
 DELETE FROM
 	"DateOnlyTable" t1
 
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 DECLARE @Id Integer -- Int32
 SET     @Id = 1
 DECLARE @Column Date
@@ -50,7 +50,7 @@ VALUES
 	:ColumnNullable
 )
 
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 DECLARE @Id Integer -- Int32
 SET     @Id = 2
 DECLARE @Column Date
@@ -71,7 +71,7 @@ VALUES
 	:ColumnNullable
 )
 
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 
 SELECT
 	t1."Id",
@@ -82,12 +82,12 @@ FROM
 ORDER BY
 	t1."Id"
 
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 
 DELETE FROM
 	"DateOnlyTable" t1
 
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 
 INSERT INTO "DateOnlyTable"
 (
@@ -99,7 +99,7 @@ VALUES
 (1,'1980-01-01'::date,NULL),
 (2,'2020-02-29'::date,'2020-01-01'::date)
 
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 
 SELECT
 	t1."Id",
@@ -110,14 +110,14 @@ FROM
 ORDER BY
 	t1."Id"
 
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 
 DELETE FROM
 	"DateOnlyTable" t1
 
 INSERT BULK "DateOnlyTable"(Id, Column, ColumnNullable)
 
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 
 SELECT
 	t1."Id",

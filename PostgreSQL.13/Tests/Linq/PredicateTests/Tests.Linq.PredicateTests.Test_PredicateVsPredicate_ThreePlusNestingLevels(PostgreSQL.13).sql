@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+﻿-- PostgreSQL.13 PostgreSQL
 
 SELECT
 	r."Id",
@@ -11,7 +11,7 @@ FROM
 WHERE
 	((r."Value1" <> r."Value2") = (r."Value1" = r."Value4" AND r."Value4" IS NOT NULL)) = (((r."Value4" = r."Value5" OR r."Value4" IS NULL AND r."Value5" IS NULL) AND NOT (r."Value4" IS NULL AND r."Value5" IS NOT NULL) AND NOT (r."Value4" IS NOT NULL AND r."Value5" IS NULL)) = (r."Value2" <> r."Value4" OR r."Value4" IS NULL))
 
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 
 SELECT
 	t1."Id",
@@ -22,7 +22,7 @@ SELECT
 FROM
 	"BooleanTable" t1
 
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 
 SELECT
 	r."Id",
@@ -35,7 +35,7 @@ FROM
 WHERE
 	(r."Value1" = r."Value2") <> (r."Value4" <> r."Value1" OR r."Value4" IS NULL)
 
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 
 SELECT
 	t1."Id",
@@ -46,7 +46,7 @@ SELECT
 FROM
 	"BooleanTable" t1
 
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 
 SELECT
 	r."Id",
@@ -59,7 +59,7 @@ FROM
 WHERE
 	(r."Value1" = r."Value2") <> (r."Value4" = r."Value1" AND r."Value4" IS NOT NULL)
 
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 
 SELECT
 	t1."Id",
@@ -70,7 +70,7 @@ SELECT
 FROM
 	"BooleanTable" t1
 
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 
 SELECT
 	r."Id",
@@ -83,7 +83,7 @@ FROM
 WHERE
 	(r."Value1" = r."Value2") <> (r."Value4" = r."Value1" AND r."Value4" IS NOT NULL)
 
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 
 SELECT
 	t1."Id",
@@ -94,7 +94,7 @@ SELECT
 FROM
 	"BooleanTable" t1
 
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 
 SELECT
 	r."Id",
@@ -107,7 +107,7 @@ FROM
 WHERE
 	(r."Value1" = r."Value2") <> (r."Value4" <> r."Value1" OR r."Value4" IS NULL)
 
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 
 SELECT
 	t1."Id",
@@ -118,7 +118,7 @@ SELECT
 FROM
 	"BooleanTable" t1
 
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 
 SELECT
 	r."Id",
@@ -131,7 +131,7 @@ FROM
 WHERE
 	((r."Value1" = r."Value2") = (r."Value2" <> r."Value4" OR r."Value4" IS NULL)) = (r."Value1" = r."Value4" AND r."Value4" IS NOT NULL)
 
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 
 SELECT
 	t1."Id",
@@ -142,7 +142,7 @@ SELECT
 FROM
 	"BooleanTable" t1
 
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 
 SELECT
 	r."Id",
@@ -155,7 +155,7 @@ FROM
 WHERE
 	((r."Value1" <> r."Value2") <> (r."Value2" = r."Value5" AND r."Value5" IS NOT NULL)) <> ((r."Value4" <> r."Value1" OR r."Value4" IS NULL) = ((r."Value4" = r."Value5" OR r."Value4" IS NULL AND r."Value5" IS NULL) AND NOT (r."Value4" IS NULL AND r."Value5" IS NOT NULL) AND NOT (r."Value4" IS NOT NULL AND r."Value5" IS NULL)))
 
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 
 SELECT
 	t1."Id",

@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+﻿-- PostgreSQL.13 PostgreSQL
 
 SELECT
 	STRING_AGG(g_1."Value4", ' -> ' ORDER BY g_1."Value3" DESC NULLS FIRST, g_1."Value4" NULLS FIRST)

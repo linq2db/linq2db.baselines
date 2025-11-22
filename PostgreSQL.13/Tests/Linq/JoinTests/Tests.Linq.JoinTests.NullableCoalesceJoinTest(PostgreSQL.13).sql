@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+﻿-- PostgreSQL.13 PostgreSQL
 
 CREATE TEMPORARY TABLE tmptbl1
 (
@@ -9,7 +9,7 @@ CREATE TEMPORARY TABLE tmptbl1
 )
 ON COMMIT PRESERVE ROWS
 
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 
 INSERT INTO tmptbl1
 (
@@ -20,7 +20,7 @@ VALUES
 (1,'Value1'),
 (2,NULL)
 
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 
 CREATE TEMPORARY TABLE tmptbl2
 (
@@ -31,7 +31,7 @@ CREATE TEMPORARY TABLE tmptbl2
 )
 ON COMMIT PRESERVE ROWS
 
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 
 INSERT INTO tmptbl2
 (
@@ -42,7 +42,7 @@ VALUES
 (1,'Value1'),
 (3,'Value2')
 
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 
 CREATE TEMPORARY TABLE tmptbl3
 (
@@ -53,7 +53,7 @@ CREATE TEMPORARY TABLE tmptbl3
 )
 ON COMMIT PRESERVE ROWS
 
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 
 INSERT INTO tmptbl3
 (
@@ -64,7 +64,7 @@ VALUES
 (1,'Value1'),
 (2,NULL)
 
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 
 SELECT
 	t4."ID",
@@ -74,7 +74,7 @@ FROM
 		LEFT JOIN tmptbl2 t3 ON t2."ID" = t3."ID"
 		LEFT JOIN tmptbl3 t4 ON Coalesce(t3."Value", t2."Value") = t4."Value" OR t3."Value" IS NULL AND t2."Value" IS NULL AND t4."Value" IS NULL
 
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 
 SELECT
 	t1."ID",
@@ -82,7 +82,7 @@ SELECT
 FROM
 	tmptbl1 t1
 
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 
 SELECT
 	t1."ID",
@@ -90,7 +90,7 @@ SELECT
 FROM
 	tmptbl2 t1
 
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 
 SELECT
 	t1."ID",
@@ -98,15 +98,15 @@ SELECT
 FROM
 	tmptbl3 t1
 
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 
 DROP TABLE IF EXISTS tmptbl3
 
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 
 DROP TABLE IF EXISTS tmptbl2
 
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 
 DROP TABLE IF EXISTS tmptbl1
 

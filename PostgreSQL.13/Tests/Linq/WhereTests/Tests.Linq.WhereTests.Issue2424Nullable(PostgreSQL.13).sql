@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+﻿-- PostgreSQL.13 PostgreSQL
 
 SELECT
 	i."Pk",
@@ -8,7 +8,7 @@ SELECT
 FROM
 	"Isue2424Table" i
 
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 
 SELECT
 	t1."Pk",
@@ -18,7 +18,7 @@ SELECT
 FROM
 	"Isue2424Table" t1
 
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 
 SELECT
 	i."Pk",
@@ -30,7 +30,7 @@ FROM
 WHERE
 	i."StrValueNullable" >= '1'
 
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 
 SELECT
 	t1."Pk",
@@ -40,7 +40,7 @@ SELECT
 FROM
 	"Isue2424Table" t1
 
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 
 SELECT
 	i."Pk",
@@ -52,7 +52,7 @@ FROM
 WHERE
 	i."StrValueNullable" >= '3'
 
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 
 SELECT
 	t1."Pk",
@@ -62,7 +62,7 @@ SELECT
 FROM
 	"Isue2424Table" t1
 
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 
 SELECT
 	i."Pk",
@@ -74,7 +74,7 @@ FROM
 WHERE
 	i."StrValueNullable" >= '5'
 
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 
 SELECT
 	t1."Pk",
@@ -84,7 +84,7 @@ SELECT
 FROM
 	"Isue2424Table" t1
 
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 
 SELECT
 	i."Pk",
@@ -96,7 +96,7 @@ FROM
 WHERE
 	i."StrValueNullable" IS NULL
 
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 
 SELECT
 	t1."Pk",
@@ -106,7 +106,7 @@ SELECT
 FROM
 	"Isue2424Table" t1
 
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 
 SELECT
 	i."Pk",
@@ -118,7 +118,7 @@ FROM
 WHERE
 	i."StrValueNullable" <= '1' OR i."StrValueNullable" IS NULL
 
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 
 SELECT
 	t1."Pk",
@@ -128,7 +128,7 @@ SELECT
 FROM
 	"Isue2424Table" t1
 
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 
 SELECT
 	i."Pk",
@@ -140,7 +140,7 @@ FROM
 WHERE
 	i."StrValueNullable" <= '3' OR i."StrValueNullable" IS NULL
 
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 
 SELECT
 	t1."Pk",
@@ -150,7 +150,7 @@ SELECT
 FROM
 	"Isue2424Table" t1
 
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 
 SELECT
 	i."Pk",
@@ -162,7 +162,7 @@ FROM
 WHERE
 	i."StrValueNullable" <= '5' OR i."StrValueNullable" IS NULL
 
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 
 SELECT
 	t1."Pk",
@@ -172,7 +172,7 @@ SELECT
 FROM
 	"Isue2424Table" t1
 
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 
 SELECT
 	i."Pk",
@@ -184,7 +184,7 @@ FROM
 WHERE
 	i."StrValueNullable" IS NOT NULL
 
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 
 SELECT
 	t1."Pk",
@@ -194,7 +194,7 @@ SELECT
 FROM
 	"Isue2424Table" t1
 
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 
 SELECT
 	i."Pk",
@@ -206,7 +206,7 @@ FROM
 WHERE
 	i."StrValueNullable" > '1'
 
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 
 SELECT
 	t1."Pk",
@@ -216,7 +216,7 @@ SELECT
 FROM
 	"Isue2424Table" t1
 
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 
 SELECT
 	i."Pk",
@@ -228,7 +228,7 @@ FROM
 WHERE
 	i."StrValueNullable" > '3'
 
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 
 SELECT
 	t1."Pk",
@@ -238,7 +238,7 @@ SELECT
 FROM
 	"Isue2424Table" t1
 
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 
 SELECT
 	i."Pk",
@@ -250,7 +250,7 @@ FROM
 WHERE
 	i."StrValueNullable" > '5'
 
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 
 SELECT
 	t1."Pk",
@@ -260,7 +260,7 @@ SELECT
 FROM
 	"Isue2424Table" t1
 
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 
 SELECT
 	i."Pk",
@@ -272,7 +272,7 @@ FROM
 WHERE
 	1 = 0
 
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 
 SELECT
 	t1."Pk",
@@ -282,7 +282,7 @@ SELECT
 FROM
 	"Isue2424Table" t1
 
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 
 SELECT
 	i."Pk",
@@ -294,7 +294,7 @@ FROM
 WHERE
 	i."StrValueNullable" < '1' OR i."StrValueNullable" IS NULL
 
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 
 SELECT
 	t1."Pk",
@@ -304,7 +304,7 @@ SELECT
 FROM
 	"Isue2424Table" t1
 
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 
 SELECT
 	i."Pk",
@@ -316,7 +316,7 @@ FROM
 WHERE
 	i."StrValueNullable" < '3' OR i."StrValueNullable" IS NULL
 
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 
 SELECT
 	t1."Pk",
@@ -326,7 +326,7 @@ SELECT
 FROM
 	"Isue2424Table" t1
 
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 
 SELECT
 	i."Pk",
@@ -338,7 +338,7 @@ FROM
 WHERE
 	i."StrValueNullable" < '5' OR i."StrValueNullable" IS NULL
 
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 
 SELECT
 	t1."Pk",
@@ -348,7 +348,7 @@ SELECT
 FROM
 	"Isue2424Table" t1
 
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 
 SELECT
 	i."Pk",
@@ -360,7 +360,7 @@ FROM
 WHERE
 	i."StrValueNullable" IS NULL
 
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 
 SELECT
 	t1."Pk",
@@ -370,7 +370,7 @@ SELECT
 FROM
 	"Isue2424Table" t1
 
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 
 SELECT
 	i."Pk",
@@ -382,7 +382,7 @@ FROM
 WHERE
 	i."StrValueNullable" = '1'
 
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 
 SELECT
 	t1."Pk",
@@ -392,7 +392,7 @@ SELECT
 FROM
 	"Isue2424Table" t1
 
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 
 SELECT
 	i."Pk",
@@ -404,7 +404,7 @@ FROM
 WHERE
 	i."StrValueNullable" = '3'
 
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 
 SELECT
 	t1."Pk",
@@ -414,7 +414,7 @@ SELECT
 FROM
 	"Isue2424Table" t1
 
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 
 SELECT
 	i."Pk",
@@ -426,7 +426,7 @@ FROM
 WHERE
 	i."StrValueNullable" = '5'
 
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 
 SELECT
 	t1."Pk",
@@ -436,7 +436,7 @@ SELECT
 FROM
 	"Isue2424Table" t1
 
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 
 SELECT
 	i."Pk",
@@ -448,7 +448,7 @@ FROM
 WHERE
 	i."StrValueNullable" IS NOT NULL
 
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 
 SELECT
 	t1."Pk",
@@ -458,7 +458,7 @@ SELECT
 FROM
 	"Isue2424Table" t1
 
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 
 SELECT
 	i."Pk",
@@ -470,7 +470,7 @@ FROM
 WHERE
 	i."StrValueNullable" <> '1' OR i."StrValueNullable" IS NULL
 
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 
 SELECT
 	t1."Pk",
@@ -480,7 +480,7 @@ SELECT
 FROM
 	"Isue2424Table" t1
 
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 
 SELECT
 	i."Pk",
@@ -492,7 +492,7 @@ FROM
 WHERE
 	i."StrValueNullable" <> '3' OR i."StrValueNullable" IS NULL
 
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 
 SELECT
 	t1."Pk",
@@ -502,7 +502,7 @@ SELECT
 FROM
 	"Isue2424Table" t1
 
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 
 SELECT
 	i."Pk",
@@ -514,7 +514,7 @@ FROM
 WHERE
 	i."StrValueNullable" <> '5' OR i."StrValueNullable" IS NULL
 
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 
 SELECT
 	t1."Pk",

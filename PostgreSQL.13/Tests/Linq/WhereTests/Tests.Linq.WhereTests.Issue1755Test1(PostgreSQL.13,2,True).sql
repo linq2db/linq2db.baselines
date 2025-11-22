@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+﻿-- PostgreSQL.13 PostgreSQL
 DECLARE @id Integer -- Int32
 SET     @id = 2
 
@@ -10,7 +10,7 @@ FROM
 WHERE
 	c_1."ParentID" = :id AND c_1."Value1" IS NULL
 
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 
 SELECT
 	t1."ParentID",

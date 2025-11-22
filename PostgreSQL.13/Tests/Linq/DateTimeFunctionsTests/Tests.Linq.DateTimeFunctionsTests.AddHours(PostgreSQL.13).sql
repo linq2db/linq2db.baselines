@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+﻿-- PostgreSQL.13 PostgreSQL
 
 SELECT
 	Floor(Extract(hour From (t."DateTimeValue" + 22 * Interval '1 Hour')))::Int

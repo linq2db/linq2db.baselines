@@ -1,6 +1,6 @@
 ﻿INSERT ASYNC BULK "ExtraBulkCopyTypesTable"(Id, Byte, SByte, Int16, UInt16, Int32, UInt32, Int64, UInt64, ByteT, SByteT, Int16T, UInt16T, Int32T, UInt32T, Int64T, UInt64T)
 
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 
 SELECT
 	t1."Id",

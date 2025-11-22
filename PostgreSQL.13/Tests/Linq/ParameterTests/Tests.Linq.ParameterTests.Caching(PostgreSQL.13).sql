@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+﻿-- PostgreSQL.13 PostgreSQL
 DECLARE @p Integer -- Int32
 SET     @p = 1
 
@@ -10,7 +10,7 @@ FROM
 WHERE
 	x."ParentID" = :p
 
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 
 SELECT
 	t1."ParentID",
@@ -18,7 +18,7 @@ SELECT
 FROM
 	"Parent" t1
 
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 DECLARE @p Integer -- Int32
 SET     @p = 3
 DECLARE @p_1 Integer -- Int32
@@ -32,7 +32,7 @@ FROM
 WHERE
 	x."ParentID" = :p OR x."ParentID" = :p_1
 
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 
 SELECT
 	t1."ParentID",
@@ -40,7 +40,7 @@ SELECT
 FROM
 	"Parent" t1
 
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 DECLARE @p Integer -- Int32
 SET     @p = 1
 DECLARE @p_1 Integer -- Int32
@@ -54,7 +54,7 @@ FROM
 WHERE
 	x."ParentID" = :p OR x."ParentID" = :p_1
 
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 
 SELECT
 	t1."ParentID",

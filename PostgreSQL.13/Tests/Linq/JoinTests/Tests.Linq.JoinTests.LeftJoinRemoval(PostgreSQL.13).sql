@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+﻿-- PostgreSQL.13 PostgreSQL
 
 SELECT
 	ch1."ParentID",
@@ -8,7 +8,7 @@ FROM
 		INNER JOIN "Child" ch ON t1."ParentID" = ch."ParentID"
 		INNER JOIN "Child" ch1 ON ch."ChildID" = ch1."ChildID"
 
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 
 SELECT
 	t1."ParentID",
@@ -16,7 +16,7 @@ SELECT
 FROM
 	"Parent" t1
 
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 
 SELECT
 	t1."ParentID",

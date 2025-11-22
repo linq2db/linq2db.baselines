@@ -9,7 +9,7 @@ SELECT
 FROM
 	[Person] [t1]
 
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 
 SELECT
 	p."PersonID"

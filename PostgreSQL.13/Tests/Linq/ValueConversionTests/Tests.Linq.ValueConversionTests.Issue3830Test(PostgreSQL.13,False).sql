@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+﻿-- PostgreSQL.13 PostgreSQL
 DECLARE @Bool1 Char(1) -- String
 SET     @Bool1 = 'Y'
 
@@ -12,7 +12,7 @@ FROM
 WHERE
 	r."Bool1" = :Bool1 AND r."Bool2" IS NULL AND r."Bool3" IS NULL
 
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 DECLARE @true_value Char(1) -- String
 SET     @true_value = 'Y'
 
@@ -26,7 +26,7 @@ FROM
 WHERE
 	r."Bool1" = :true_value AND r."Bool2" IS NULL AND r."Bool3" IS NULL
 
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 DECLARE @Bool1 Char(1) -- String
 SET     @Bool1 = 'Y'
 
@@ -40,7 +40,7 @@ FROM
 WHERE
 	r."Bool3" IS NULL AND r."Bool1" = :Bool1 AND r."Bool2" IS NULL
 
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 DECLARE @Bool1 Char(1) -- String
 SET     @Bool1 = 'Y'
 
@@ -54,7 +54,7 @@ FROM
 WHERE
 	r."Bool2" IS NULL AND r."Bool1" = :Bool1 AND r."Bool3" IS NULL
 
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 DECLARE @Bool1 Char(1) -- String
 SET     @Bool1 = 'N'
 DECLARE @Bool3 Char(1) -- String
@@ -70,7 +70,7 @@ FROM
 WHERE
 	r."Bool1" = :Bool1 AND r."Bool2" IS NULL AND r."Bool3" = :Bool3
 
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 DECLARE @true_value Char(1) -- String
 SET     @true_value = 'Y'
 DECLARE @Bool1 Char(1) -- String
@@ -87,7 +87,7 @@ WHERE
 	r."Bool3" = :true_value AND r."Bool1" = :Bool1 AND
 	r."Bool2" IS NULL
 
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 DECLARE @false_value Char(1) -- String
 SET     @false_value = 'N'
 DECLARE @Bool3 Char(1) -- String
@@ -104,7 +104,7 @@ WHERE
 	r."Bool1" = :false_value AND r."Bool2" IS NULL AND
 	r."Bool3" = :Bool3
 
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 DECLARE @Bool1 Char(1) -- String
 SET     @Bool1 = 'N'
 DECLARE @Bool3 Char(1) -- String
@@ -120,7 +120,7 @@ FROM
 WHERE
 	r."Bool2" IS NULL AND r."Bool1" = :Bool1 AND r."Bool3" = :Bool3
 
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 DECLARE @Bool1 Char(1) -- String
 SET     @Bool1 = 'N'
 DECLARE @Bool2 Char(1) -- String
@@ -136,7 +136,7 @@ FROM
 WHERE
 	r."Bool1" = :Bool1 AND r."Bool2" = :Bool2 AND r."Bool3" IS NULL
 
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 DECLARE @false_value Char(1) -- String
 SET     @false_value = 'N'
 DECLARE @Bool2 Char(1) -- String
@@ -153,7 +153,7 @@ WHERE
 	r."Bool1" = :false_value AND r."Bool2" = :Bool2 AND
 	r."Bool3" IS NULL
 
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 DECLARE @Bool1 Char(1) -- String
 SET     @Bool1 = 'N'
 DECLARE @Bool2 Char(1) -- String
@@ -169,7 +169,7 @@ FROM
 WHERE
 	r."Bool3" IS NULL AND r."Bool1" = :Bool1 AND r."Bool2" = :Bool2
 
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 DECLARE @Bool1 Char(1) -- String
 SET     @Bool1 = 'N'
 
@@ -183,7 +183,7 @@ FROM
 WHERE
 	r."Bool2" IS NOT NULL AND r."Bool1" = :Bool1 AND r."Bool3" IS NULL
 
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 DECLARE @Bool1 Char(1) -- String
 SET     @Bool1 = 'Y'
 DECLARE @Bool2 Char(1) -- String
@@ -201,7 +201,7 @@ FROM
 WHERE
 	r."Bool1" = :Bool1 AND r."Bool2" = :Bool2 AND r."Bool3" = :Bool3
 
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 DECLARE @true_value Char(1) -- String
 SET     @true_value = 'Y'
 DECLARE @Bool2 Char(1) -- String
@@ -220,7 +220,7 @@ WHERE
 	r."Bool1" = :true_value AND r."Bool2" = :Bool2 AND
 	r."Bool3" = :Bool3
 
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 DECLARE @true_value Char(1) -- String
 SET     @true_value = 'Y'
 DECLARE @Bool1 Char(1) -- String
@@ -239,7 +239,7 @@ WHERE
 	r."Bool3" = :true_value AND r."Bool1" = :Bool1 AND
 	r."Bool2" = :Bool2
 
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 DECLARE @Bool1 Char(1) -- String
 SET     @Bool1 = 'Y'
 DECLARE @Bool3 Char(1) -- String

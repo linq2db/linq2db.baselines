@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+﻿-- PostgreSQL.13 PostgreSQL
 DECLARE @id Uuid -- Guid
 SET     @id = 'bc7b663d-0fde-4327-8f92-5d8cc3a11d11'::uuid
 
@@ -20,7 +20,7 @@ VALUES
 	)
 )
 
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 DECLARE @id Uuid -- Guid
 SET     @id = 'a948600d-de21-4f74-8ac2-9516b287076e'::uuid
 DECLARE @testId Uuid -- Guid
@@ -44,7 +44,7 @@ VALUES
 	)
 )
 
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 DECLARE @id2 Uuid -- Guid
 SET     @id2 = 'a948600d-de21-4f74-8ac2-9516b287076e'::uuid
 

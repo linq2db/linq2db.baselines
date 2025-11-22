@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+﻿-- PostgreSQL.13 PostgreSQL
 
 WITH RECURSIVE "categoryHierarchy"
 (
@@ -38,7 +38,7 @@ SELECT
 FROM
 	"categoryHierarchy" t2
 
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 
 WITH RECURSIVE "categoryHierarchy"
 (
