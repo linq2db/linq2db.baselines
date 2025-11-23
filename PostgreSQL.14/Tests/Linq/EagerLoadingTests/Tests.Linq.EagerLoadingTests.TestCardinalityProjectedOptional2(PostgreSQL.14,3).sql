@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+﻿-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 
 SELECT
 	m_1."Id",
@@ -21,7 +21,7 @@ FROM
 	) m_1
 		INNER JOIN "EntityMC" d_1 ON m_1."Id" = d_1."FK"
 
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 
 SELECT
 	m_1."Id",
@@ -33,7 +33,7 @@ FROM
 		INNER JOIN "EntityMB" d ON m_1."Id" = d."FK"
 		LEFT JOIN "EntityMD" "a_ObjectD" ON d."FKD" = "a_ObjectD"."Id"
 
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 
 SELECT
 	e."Id"

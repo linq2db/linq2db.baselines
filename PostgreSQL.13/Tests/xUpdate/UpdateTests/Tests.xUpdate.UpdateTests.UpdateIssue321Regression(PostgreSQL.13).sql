@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+﻿-- PostgreSQL.13 PostgreSQL
 DECLARE @ID Integer -- Int32
 SET     @ID = 100500
 DECLARE @MoneyValue Numeric(4, 0) -- Decimal
@@ -47,7 +47,7 @@ VALUES
 	:StringValue
 )
 
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 DECLARE @value2 Numeric(5, 0) -- Decimal
 SET     @value2 = 13621
 DECLARE @id Integer -- Int32
@@ -60,7 +60,7 @@ SET
 WHERE
 	"LinqDataTypes"."ID" = :id
 
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 DECLARE @id Integer -- Int32
 SET     @id = 100500
 

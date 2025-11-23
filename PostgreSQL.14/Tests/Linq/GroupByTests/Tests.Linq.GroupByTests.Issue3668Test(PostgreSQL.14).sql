@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+﻿-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 DECLARE @id Integer -- Int32
 SET     @id = 1
 DECLARE @name Text(4) -- String
@@ -17,7 +17,7 @@ WHERE
 	m_1."PersonID" = :id AND m_1."LastName" <> :name OR
 	m_1."FirstName" <> :name AND m_1."PersonID" - 1 = :id
 
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 DECLARE @id Integer -- Int32
 SET     @id = 1
 DECLARE @name Text(4) -- String

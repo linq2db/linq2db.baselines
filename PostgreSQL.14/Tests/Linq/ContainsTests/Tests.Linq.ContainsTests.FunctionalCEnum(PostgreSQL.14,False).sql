@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+﻿-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 DECLARE @In Varchar(12) -- String
 SET     @In = '___Value3___'
 DECLARE @In_1 Varchar(12) -- String
@@ -12,7 +12,7 @@ WHERE
 	s."CEnum" IN (:In, :In_1)
 LIMIT 1
 
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 DECLARE @In Varchar(12) -- String
 SET     @In = '___Value3___'
 DECLARE @In_1 Varchar -- String
@@ -26,7 +26,7 @@ WHERE
 	s."CEnum" IN (:In, :In_1)
 LIMIT 1
 
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 DECLARE @In Varchar(12) -- String
 SET     @In = '___Value3___'
 DECLARE @In_1 Varchar(12) -- String
@@ -40,7 +40,7 @@ WHERE
 	s."CEnum" IN (:In, :In_1)
 LIMIT 1
 
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 DECLARE @NotIn Varchar -- String
 SET     @NotIn = NULL
 DECLARE @NotIn_1 Varchar(12) -- String
@@ -54,7 +54,7 @@ WHERE
 	s."CEnum" NOT IN (:NotIn, :NotIn_1)
 LIMIT 1
 
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 DECLARE @NotIn Varchar(12) -- String
 SET     @NotIn = '___Value3___'
 DECLARE @NotIn_1 Varchar(12) -- String

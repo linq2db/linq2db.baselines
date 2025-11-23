@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+﻿-- PostgreSQL.13 PostgreSQL
 
 WITH "CTE_1" ("ParentID")
 AS
@@ -23,7 +23,7 @@ FROM
 		INNER JOIN "CTE_1" c_2 ON p."ParentID" = c_2."ParentID"
 		INNER JOIN "CTE_1" c2 ON p."ParentID" = c2."ParentID"
 
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 
 SELECT
 	COUNT(*)

@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+﻿-- PostgreSQL.13 PostgreSQL
 
 CREATE TEMPORARY TABLE "Issue4333Table"
 (
@@ -9,7 +9,7 @@ CREATE TEMPORARY TABLE "Issue4333Table"
 )
 ON COMMIT PRESERVE ROWS
 
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 
 INSERT INTO "Issue4333Table"
 (
@@ -19,7 +19,7 @@ VALUES
 ('Bar'),
 ('Baz')
 
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 
 DROP TABLE IF EXISTS "Issue4333Table"
 

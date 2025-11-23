@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+﻿-- PostgreSQL.13 PostgreSQL
 DECLARE @value Integer -- Int32
 SET     @value = 4
 
@@ -9,7 +9,7 @@ FROM
 WHERE
 	s."Int" IS DISTINCT FROM :value
 
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 DECLARE @value Integer -- Int32
 SET     @value = 4
 
@@ -20,7 +20,7 @@ FROM
 WHERE
 	s."NullableInt" IS DISTINCT FROM :value
 
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 DECLARE @value Integer -- Int32
 SET     @value = 4
 
@@ -31,7 +31,7 @@ FROM
 WHERE
 	s."Int" IS NOT DISTINCT FROM :value
 
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 DECLARE @value Integer -- Int32
 SET     @value = 4
 

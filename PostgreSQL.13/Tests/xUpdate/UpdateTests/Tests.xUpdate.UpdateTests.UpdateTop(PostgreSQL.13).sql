@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+﻿-- PostgreSQL.13 PostgreSQL
 DECLARE @ParentID Integer -- Int32
 SET     @ParentID = 1000
 DECLARE @Value1 Integer -- Int32
@@ -15,7 +15,7 @@ VALUES
 	:Value1
 )
 
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 DECLARE @ParentID Integer -- Int32
 SET     @ParentID = 1001
 DECLARE @Value1 Integer -- Int32
@@ -32,7 +32,7 @@ VALUES
 	:Value1
 )
 
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 DECLARE @ParentID Integer -- Int32
 SET     @ParentID = 1002
 DECLARE @Value1 Integer -- Int32
@@ -49,7 +49,7 @@ VALUES
 	:Value1
 )
 
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 DECLARE @ParentID Integer -- Int32
 SET     @ParentID = 1003
 DECLARE @Value1 Integer -- Int32
@@ -66,7 +66,7 @@ VALUES
 	:Value1
 )
 
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 DECLARE @ParentID Integer -- Int32
 SET     @ParentID = 1004
 DECLARE @Value1 Integer -- Int32
@@ -83,7 +83,7 @@ VALUES
 	:Value1
 )
 
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 DECLARE @ParentID Integer -- Int32
 SET     @ParentID = 1005
 DECLARE @Value1 Integer -- Int32
@@ -100,7 +100,7 @@ VALUES
 	:Value1
 )
 
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 DECLARE @ParentID Integer -- Int32
 SET     @ParentID = 1006
 DECLARE @Value1 Integer -- Int32
@@ -117,7 +117,7 @@ VALUES
 	:Value1
 )
 
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 DECLARE @ParentID Integer -- Int32
 SET     @ParentID = 1007
 DECLARE @Value1 Integer -- Int32
@@ -134,7 +134,7 @@ VALUES
 	:Value1
 )
 
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 DECLARE @ParentID Integer -- Int32
 SET     @ParentID = 1008
 DECLARE @Value1 Integer -- Int32
@@ -151,7 +151,7 @@ VALUES
 	:Value1
 )
 
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 DECLARE @ParentID Integer -- Int32
 SET     @ParentID = 1009
 DECLARE @Value1 Integer -- Int32
@@ -168,7 +168,7 @@ VALUES
 	:Value1
 )
 
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 DECLARE @Value1 Integer -- Int32
 SET     @Value1 = 1
 DECLARE @take Integer -- Int32

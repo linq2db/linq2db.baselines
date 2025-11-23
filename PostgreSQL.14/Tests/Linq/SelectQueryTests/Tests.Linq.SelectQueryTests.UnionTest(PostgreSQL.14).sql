@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+﻿-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 
 SELECT
 	CURRENT_TIMESTAMP + t."Value" * Interval '1 Day',
@@ -12,7 +12,7 @@ SELECT
 	CURRENT_TIMESTAMP + 3 * Interval '1 Day',
 	CURRENT_TIMESTAMP + 4 * Interval '1 Day'
 
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 
 SELECT
 	v_1."Value2"

@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+﻿-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 DECLARE @One Integer -- Int32
 SET     @One = 1
 
@@ -20,7 +20,7 @@ WHERE
 			s."Id" > r."Id"
 	)
 
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 
 SELECT
 	t1."Id",
@@ -31,7 +31,7 @@ SELECT
 FROM
 	"BooleanTable" t1
 
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 DECLARE @Zero Integer -- Int32
 SET     @Zero = 0
 
@@ -53,7 +53,7 @@ WHERE
 			s."Id" > r."Id"
 	)
 
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 
 SELECT
 	t1."Id",
@@ -64,7 +64,7 @@ SELECT
 FROM
 	"BooleanTable" t1
 
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 DECLARE @OneN Integer -- Int32
 SET     @OneN = 1
 
@@ -86,7 +86,7 @@ WHERE
 			s."Id" > r."Id"
 	)
 
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 
 SELECT
 	t1."Id",
@@ -97,7 +97,7 @@ SELECT
 FROM
 	"BooleanTable" t1
 
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 DECLARE @ZeroN Integer -- Int32
 SET     @ZeroN = 0
 
@@ -119,7 +119,7 @@ WHERE
 			s."Id" > r."Id"
 	)
 
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 
 SELECT
 	t1."Id",
@@ -130,7 +130,7 @@ SELECT
 FROM
 	"BooleanTable" t1
 
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 DECLARE @Null Integer -- Int32
 SET     @Null = NULL
 
@@ -152,7 +152,7 @@ WHERE
 			s."Id" > r."Id"
 	)
 
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 
 SELECT
 	t1."Id",
@@ -163,7 +163,7 @@ SELECT
 FROM
 	"BooleanTable" t1
 
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 DECLARE @One Integer -- Int32
 SET     @One = 1
 
@@ -185,7 +185,7 @@ WHERE
 			s."Id" > r."Id"
 	)
 
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 
 SELECT
 	t1."Id",
@@ -196,7 +196,7 @@ SELECT
 FROM
 	"BooleanTable" t1
 
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 DECLARE @Zero Integer -- Int32
 SET     @Zero = 0
 
@@ -218,7 +218,7 @@ WHERE
 			s."Id" > r."Id"
 	)
 
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 
 SELECT
 	t1."Id",
@@ -229,7 +229,7 @@ SELECT
 FROM
 	"BooleanTable" t1
 
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 DECLARE @OneN Integer -- Int32
 SET     @OneN = 1
 
@@ -251,7 +251,7 @@ WHERE
 			s."Id" > r."Id"
 	)
 
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 
 SELECT
 	t1."Id",
@@ -262,7 +262,7 @@ SELECT
 FROM
 	"BooleanTable" t1
 
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 DECLARE @ZeroN Integer -- Int32
 SET     @ZeroN = 0
 
@@ -284,7 +284,7 @@ WHERE
 			s."Id" > r."Id"
 	)
 
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 
 SELECT
 	t1."Id",
@@ -295,7 +295,7 @@ SELECT
 FROM
 	"BooleanTable" t1
 
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 
 SELECT
 	r."Id",
@@ -306,7 +306,7 @@ SELECT
 FROM
 	"BooleanTable" r
 
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 
 SELECT
 	t1."Id",

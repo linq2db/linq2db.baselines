@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+﻿-- PostgreSQL.13 PostgreSQL
 
 SELECT
 	t1."Id",
@@ -7,7 +7,7 @@ SELECT
 FROM
 	"WhereCases" t1
 
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 
 SELECT
 	t."Id",
@@ -18,7 +18,7 @@ FROM
 WHERE
 	NOT t."BoolValue" AND t."Id" > 0
 
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 
 SELECT
 	t."Id",
@@ -29,7 +29,7 @@ FROM
 WHERE
 	NOT (NOT t."BoolValue" AND t."Id" > 0)
 
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 
 SELECT
 	t."Id",
@@ -40,7 +40,7 @@ FROM
 WHERE
 	t."BoolValue" = True AND t."Id" > 0
 
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 
 SELECT
 	t."Id",
@@ -51,7 +51,7 @@ FROM
 WHERE
 	NOT (t."BoolValue" = True AND t."Id" > 0)
 
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 
 SELECT
 	t."Id",
@@ -62,7 +62,7 @@ FROM
 WHERE
 	t."BoolValue" = True AND t."Id" > 0
 
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 
 SELECT
 	t."Id",
@@ -73,7 +73,7 @@ FROM
 WHERE
 	NOT (t."BoolValue" = True AND t."Id" > 0)
 
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 
 SELECT
 	t."Id",
@@ -84,7 +84,7 @@ FROM
 WHERE
 	t."BoolValue" = False AND t."Id" > 0
 
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 
 SELECT
 	t."Id",
@@ -95,7 +95,7 @@ FROM
 WHERE
 	NOT (t."BoolValue" = False AND t."Id" > 0)
 
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 
 SELECT
 	t."Id",
@@ -106,7 +106,7 @@ FROM
 WHERE
 	t."BoolValue" = False AND t."Id" > 0
 
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 
 SELECT
 	t."Id",
@@ -117,7 +117,7 @@ FROM
 WHERE
 	NOT (t."BoolValue" = False AND t."Id" > 0)
 
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 
 SELECT
 	t."Id",
@@ -129,7 +129,7 @@ WHERE
 	(t."NullableBoolValue" = False OR t."NullableBoolValue" IS NULL) AND
 	t."Id" > 0
 
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 
 SELECT
 	t."Id",
@@ -140,7 +140,7 @@ FROM
 WHERE
 	NOT ((t."NullableBoolValue" = False OR t."NullableBoolValue" IS NULL) AND t."Id" > 0)
 
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 
 SELECT
 	t."Id",
@@ -151,7 +151,7 @@ FROM
 WHERE
 	t."NullableBoolValue" = True AND t."Id" > 0
 
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 
 SELECT
 	t."Id",
@@ -162,7 +162,7 @@ FROM
 WHERE
 	NOT (t."NullableBoolValue" = True AND t."NullableBoolValue" IS NOT NULL AND t."Id" > 0)
 
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 
 SELECT
 	t."Id",
@@ -173,7 +173,7 @@ FROM
 WHERE
 	t."NullableBoolValue" = True AND t."Id" > 0
 
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 
 SELECT
 	t."Id",
@@ -184,7 +184,7 @@ FROM
 WHERE
 	NOT (t."NullableBoolValue" = True AND t."NullableBoolValue" IS NOT NULL AND t."Id" > 0)
 
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 
 SELECT
 	t."Id",
@@ -195,7 +195,7 @@ FROM
 WHERE
 	t."NullableBoolValue" IS NULL AND t."Id" > 0
 
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 
 SELECT
 	t."Id",
@@ -206,7 +206,7 @@ FROM
 WHERE
 	NOT (t."NullableBoolValue" IS NULL AND t."Id" > 0)
 
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 
 SELECT
 	t."Id",
@@ -217,7 +217,7 @@ FROM
 WHERE
 	t."NullableBoolValue" IS NOT NULL AND t."Id" > 0
 
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 
 SELECT
 	t."Id",
@@ -228,7 +228,7 @@ FROM
 WHERE
 	NOT (t."NullableBoolValue" IS NOT NULL AND t."Id" > 0)
 
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 
 SELECT
 	t."Id",
@@ -239,7 +239,7 @@ FROM
 WHERE
 	t."NullableBoolValue" IS NOT NULL AND t."Id" > 0
 
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 
 SELECT
 	t."Id",
@@ -250,7 +250,7 @@ FROM
 WHERE
 	NOT (t."NullableBoolValue" IS NOT NULL AND t."Id" > 0)
 
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 
 SELECT
 	t."Id",
@@ -261,7 +261,7 @@ FROM
 WHERE
 	t."NullableBoolValue" IS NULL AND t."Id" > 0
 
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 
 SELECT
 	t."Id",
@@ -272,7 +272,7 @@ FROM
 WHERE
 	NOT (t."NullableBoolValue" IS NULL AND t."Id" > 0)
 
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 
 SELECT
 	t."Id",
@@ -284,7 +284,7 @@ WHERE
 	NOT t."BoolValue" AND (t."NullableBoolValue" = False OR t."NullableBoolValue" IS NULL) AND
 	t."Id" > 0
 
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 
 SELECT
 	t."Id",
@@ -295,7 +295,7 @@ FROM
 WHERE
 	NOT (NOT t."BoolValue" AND (t."NullableBoolValue" = False OR t."NullableBoolValue" IS NULL) AND t."Id" > 0)
 
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 
 SELECT
 	t."Id",
@@ -307,7 +307,7 @@ WHERE
 	NOT (NOT t."BoolValue" AND (t."NullableBoolValue" = False OR t."NullableBoolValue" IS NULL)) AND
 	t."Id" > 0
 
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 
 SELECT
 	t."Id",
@@ -318,7 +318,7 @@ FROM
 WHERE
 	NOT (NOT (NOT t."BoolValue" AND (t."NullableBoolValue" = False OR t."NullableBoolValue" IS NULL)) AND t."Id" > 0)
 
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 
 SELECT
 	t."Id",
@@ -330,7 +330,7 @@ WHERE
 	NOT t."BoolValue" AND t."NullableBoolValue" = False AND
 	t."Id" > 0
 
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 
 SELECT
 	t."Id",
@@ -341,7 +341,7 @@ FROM
 WHERE
 	NOT (NOT t."BoolValue" AND t."NullableBoolValue" = False AND t."NullableBoolValue" IS NOT NULL AND t."Id" > 0)
 
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 
 SELECT
 	t."Id",
@@ -353,7 +353,7 @@ WHERE
 	NOT (NOT t."BoolValue" AND t."NullableBoolValue" = False AND t."NullableBoolValue" IS NOT NULL) AND
 	t."Id" > 0
 
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 
 SELECT
 	t."Id",

@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.9.5 PostgreSQL
+﻿-- PostgreSQL.13 PostgreSQL
 DECLARE @DateTimeOffset TimestampTz -- DateTime
 SET     @DateTimeOffset = '2020-02-29T17:54:55.1231234+00:00'
 DECLARE @DateTimeOffsetN TimestampTz -- DateTime

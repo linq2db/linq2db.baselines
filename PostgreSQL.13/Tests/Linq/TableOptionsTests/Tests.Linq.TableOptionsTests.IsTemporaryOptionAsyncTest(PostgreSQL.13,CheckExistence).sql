@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+﻿-- PostgreSQL.13 PostgreSQL
 
 CREATE TEMPORARY TABLE IF NOT EXISTS temp_table1
 (
@@ -9,7 +9,7 @@ CREATE TEMPORARY TABLE IF NOT EXISTS temp_table1
 )
 ON COMMIT PRESERVE ROWS
 
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 
 INSERT INTO temp_table1
 (
@@ -19,7 +19,7 @@ INSERT INTO temp_table1
 VALUES
 (1,2)
 
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 
 CREATE TEMPORARY TABLE IF NOT EXISTS temp_table2
 (
@@ -30,7 +30,7 @@ CREATE TEMPORARY TABLE IF NOT EXISTS temp_table2
 )
 ON COMMIT PRESERVE ROWS
 
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 
 INSERT INTO temp_table2
 (
@@ -43,7 +43,7 @@ SELECT
 FROM
 	temp_table1 t1
 
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 
 SELECT
 	t1."ID",
@@ -51,7 +51,7 @@ SELECT
 FROM
 	temp_table1 t1
 
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 
 SELECT
 	t1."ID",
@@ -59,7 +59,7 @@ SELECT
 FROM
 	temp_table2 t1
 
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 
 INSERT INTO temp_table1
 (
@@ -69,7 +69,7 @@ INSERT INTO temp_table1
 VALUES
 (2,3)
 
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 DECLARE @ID Integer -- Int32
 SET     @ID = 3
 DECLARE @Value Integer -- Int32
@@ -88,19 +88,19 @@ VALUES
 
 INSERT ASYNC BULK temp_table1(ID, Value)
 
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 
 TRUNCATE TABLE temp_table1
 
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 
 TRUNCATE TABLE temp_table2
 
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 
 DROP TABLE IF EXISTS temp_table2
 
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 
 DROP TABLE IF EXISTS temp_table1
 

@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+﻿-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 
 
 DROP TABLE IF EXISTS schedule;
@@ -7,7 +7,7 @@ CREATE TYPE time_unit AS ENUM ('hour', 'day');
 
 INSERT ASYNC BULK public.schedule(unit, unit_nullable, amount)
 
--- PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 
 SELECT
 	t1.id,
@@ -17,7 +17,7 @@ SELECT
 FROM
 	public.schedule t1
 
--- PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 DECLARE @unit Enum -- Object
 SET     @unit = 'day'
 
@@ -31,7 +31,7 @@ FROM
 WHERE
 	x.unit = :unit
 
--- PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 DECLARE @unit Enum -- Object
 SET     @unit = 'day'
 
@@ -45,7 +45,7 @@ FROM
 WHERE
 	x.unit_nullable = :unit
 
--- PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 DECLARE @unitNullable Enum -- Object
 SET     @unitNullable = 'day'
 
@@ -59,7 +59,7 @@ FROM
 WHERE
 	x.unit_nullable = :unitNullable
 
--- PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 
 SELECT
 	x.id,
@@ -71,7 +71,7 @@ FROM
 WHERE
 	x.unit_nullable = 'day'
 
--- PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 
 SELECT
 	x.id,
@@ -83,7 +83,7 @@ FROM
 WHERE
 	x.unit_nullable IS NULL
 
--- PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 
 SELECT
 	t1.id,

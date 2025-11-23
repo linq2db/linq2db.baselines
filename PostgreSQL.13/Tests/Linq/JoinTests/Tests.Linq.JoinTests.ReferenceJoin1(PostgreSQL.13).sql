@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+﻿-- PostgreSQL.13 PostgreSQL
 
 SELECT
 	c_1."ParentID",
@@ -9,7 +9,7 @@ FROM
 			LEFT JOIN "Child" "a_Child" ON g_1."ParentID" = "a_Child"."ParentID" AND g_1."ChildID" = "a_Child"."ChildID"
 		ON c_1."ParentID" = "a_Child"."ParentID" AND c_1."ChildID" = "a_Child"."ChildID"
 
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 
 SELECT
 	c_1."ParentID",

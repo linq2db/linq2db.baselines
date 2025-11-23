@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+﻿-- PostgreSQL.13 PostgreSQL
 
 SELECT
 	i."Pk",
@@ -10,7 +10,7 @@ FROM
 WHERE
 	i."StrValue" >= '0'
 
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 
 SELECT
 	t1."Pk",
@@ -20,7 +20,7 @@ SELECT
 FROM
 	"Isue2424Table" t1
 
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 
 SELECT
 	i."Pk",
@@ -32,7 +32,7 @@ FROM
 WHERE
 	i."StrValue" >= '1'
 
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 
 SELECT
 	t1."Pk",
@@ -42,7 +42,7 @@ SELECT
 FROM
 	"Isue2424Table" t1
 
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 
 SELECT
 	i."Pk",
@@ -54,7 +54,7 @@ FROM
 WHERE
 	i."StrValue" >= '3'
 
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 
 SELECT
 	t1."Pk",
@@ -64,7 +64,7 @@ SELECT
 FROM
 	"Isue2424Table" t1
 
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 
 SELECT
 	i."Pk",
@@ -76,7 +76,7 @@ FROM
 WHERE
 	i."StrValue" >= '5'
 
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 
 SELECT
 	t1."Pk",
@@ -86,7 +86,7 @@ SELECT
 FROM
 	"Isue2424Table" t1
 
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 
 SELECT
 	i."Pk",
@@ -98,7 +98,7 @@ FROM
 WHERE
 	i."StrValue" <= '0'
 
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 
 SELECT
 	t1."Pk",
@@ -108,7 +108,7 @@ SELECT
 FROM
 	"Isue2424Table" t1
 
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 
 SELECT
 	i."Pk",
@@ -120,7 +120,7 @@ FROM
 WHERE
 	i."StrValue" <= '1'
 
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 
 SELECT
 	t1."Pk",
@@ -130,7 +130,7 @@ SELECT
 FROM
 	"Isue2424Table" t1
 
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 
 SELECT
 	i."Pk",
@@ -142,7 +142,7 @@ FROM
 WHERE
 	i."StrValue" <= '3'
 
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 
 SELECT
 	t1."Pk",
@@ -152,7 +152,7 @@ SELECT
 FROM
 	"Isue2424Table" t1
 
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 
 SELECT
 	i."Pk",
@@ -164,7 +164,7 @@ FROM
 WHERE
 	i."StrValue" <= '5'
 
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 
 SELECT
 	t1."Pk",
@@ -174,7 +174,7 @@ SELECT
 FROM
 	"Isue2424Table" t1
 
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 
 SELECT
 	i."Pk",
@@ -186,7 +186,7 @@ FROM
 WHERE
 	i."StrValue" > '0'
 
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 
 SELECT
 	t1."Pk",
@@ -196,7 +196,7 @@ SELECT
 FROM
 	"Isue2424Table" t1
 
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 
 SELECT
 	i."Pk",
@@ -208,7 +208,7 @@ FROM
 WHERE
 	i."StrValue" > '1'
 
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 
 SELECT
 	t1."Pk",
@@ -218,7 +218,7 @@ SELECT
 FROM
 	"Isue2424Table" t1
 
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 
 SELECT
 	i."Pk",
@@ -230,7 +230,7 @@ FROM
 WHERE
 	i."StrValue" > '3'
 
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 
 SELECT
 	t1."Pk",
@@ -240,7 +240,7 @@ SELECT
 FROM
 	"Isue2424Table" t1
 
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 
 SELECT
 	i."Pk",
@@ -252,7 +252,7 @@ FROM
 WHERE
 	i."StrValue" > '5'
 
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 
 SELECT
 	t1."Pk",
@@ -262,7 +262,7 @@ SELECT
 FROM
 	"Isue2424Table" t1
 
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 
 SELECT
 	i."Pk",
@@ -274,7 +274,7 @@ FROM
 WHERE
 	i."StrValue" < '0'
 
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 
 SELECT
 	t1."Pk",
@@ -284,7 +284,7 @@ SELECT
 FROM
 	"Isue2424Table" t1
 
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 
 SELECT
 	i."Pk",
@@ -296,7 +296,7 @@ FROM
 WHERE
 	i."StrValue" < '1'
 
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 
 SELECT
 	t1."Pk",
@@ -306,7 +306,7 @@ SELECT
 FROM
 	"Isue2424Table" t1
 
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 
 SELECT
 	i."Pk",
@@ -318,7 +318,7 @@ FROM
 WHERE
 	i."StrValue" < '3'
 
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 
 SELECT
 	t1."Pk",
@@ -328,7 +328,7 @@ SELECT
 FROM
 	"Isue2424Table" t1
 
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 
 SELECT
 	i."Pk",
@@ -340,7 +340,7 @@ FROM
 WHERE
 	i."StrValue" < '5'
 
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 
 SELECT
 	t1."Pk",
@@ -350,7 +350,7 @@ SELECT
 FROM
 	"Isue2424Table" t1
 
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 
 SELECT
 	i."Pk",
@@ -362,7 +362,7 @@ FROM
 WHERE
 	i."StrValue" = '0'
 
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 
 SELECT
 	t1."Pk",
@@ -372,7 +372,7 @@ SELECT
 FROM
 	"Isue2424Table" t1
 
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 
 SELECT
 	i."Pk",
@@ -384,7 +384,7 @@ FROM
 WHERE
 	i."StrValue" = '1'
 
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 
 SELECT
 	t1."Pk",
@@ -394,7 +394,7 @@ SELECT
 FROM
 	"Isue2424Table" t1
 
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 
 SELECT
 	i."Pk",
@@ -406,7 +406,7 @@ FROM
 WHERE
 	i."StrValue" = '3'
 
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 
 SELECT
 	t1."Pk",
@@ -416,7 +416,7 @@ SELECT
 FROM
 	"Isue2424Table" t1
 
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 
 SELECT
 	i."Pk",
@@ -428,7 +428,7 @@ FROM
 WHERE
 	i."StrValue" = '5'
 
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 
 SELECT
 	t1."Pk",
@@ -438,7 +438,7 @@ SELECT
 FROM
 	"Isue2424Table" t1
 
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 
 SELECT
 	i."Pk",
@@ -450,7 +450,7 @@ FROM
 WHERE
 	i."StrValue" <> '0'
 
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 
 SELECT
 	t1."Pk",
@@ -460,7 +460,7 @@ SELECT
 FROM
 	"Isue2424Table" t1
 
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 
 SELECT
 	i."Pk",
@@ -472,7 +472,7 @@ FROM
 WHERE
 	i."StrValue" <> '1'
 
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 
 SELECT
 	t1."Pk",
@@ -482,7 +482,7 @@ SELECT
 FROM
 	"Isue2424Table" t1
 
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 
 SELECT
 	i."Pk",
@@ -494,7 +494,7 @@ FROM
 WHERE
 	i."StrValue" <> '3'
 
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 
 SELECT
 	t1."Pk",
@@ -504,7 +504,7 @@ SELECT
 FROM
 	"Isue2424Table" t1
 
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 
 SELECT
 	i."Pk",
@@ -516,7 +516,7 @@ FROM
 WHERE
 	i."StrValue" <> '5'
 
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 
 SELECT
 	t1."Pk",

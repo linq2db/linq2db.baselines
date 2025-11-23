@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+﻿-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 DECLARE @offset Integer -- Int32
 SET     @offset = -1
 
@@ -7,7 +7,7 @@ UPDATE
 SET
 	"Field" = ("Issue4963Table"."Field"::Int + :offset)::SmallInt
 
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 
 SELECT
 	t1."Id",

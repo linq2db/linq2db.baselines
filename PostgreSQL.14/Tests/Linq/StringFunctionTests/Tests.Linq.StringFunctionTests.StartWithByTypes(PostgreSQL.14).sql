@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+﻿-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 DECLARE @str Char(5) -- String
 SET     @str = 'some%'
 DECLARE @str_1 Char(5) -- String

@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+﻿-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 DECLARE @p Integer -- Int32
 SET     @p = 1
 DECLARE @p_1 Integer -- Int32
@@ -16,7 +16,7 @@ FROM
 WHERE
 	o."ParentID" IN (:p, :p_1, :p_2) OR o."ParentID" = :param
 
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 DECLARE @p Integer -- Int32
 SET     @p = 1
 DECLARE @p_1 Integer -- Int32
@@ -34,7 +34,7 @@ FROM
 WHERE
 	o."ParentID" IN (:p, :p_1, :p_2) OR o."ParentID" = :param
 
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 DECLARE @p Integer -- Int32
 SET     @p = 4
 DECLARE @p_1 Integer -- Int32
@@ -52,7 +52,7 @@ FROM
 WHERE
 	o."ParentID" IN (:p, :p_1, :p_2) OR o."ParentID" = :param
 
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 DECLARE @p Integer -- Int32
 SET     @p = 4
 DECLARE @p_1 Integer -- Int32

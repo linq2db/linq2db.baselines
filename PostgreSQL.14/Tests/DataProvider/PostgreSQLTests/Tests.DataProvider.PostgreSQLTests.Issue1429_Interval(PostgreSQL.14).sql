@@ -1,11 +1,11 @@
-﻿-- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+﻿-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 
 SELECT
 	MAX(t1."ID")
 FROM
 	"AllTypes" t1
 
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 DECLARE @timeDataType Interval -- Object
 SET     @timeDataType = 00:01:00
 DECLARE @value Interval -- Object
@@ -24,7 +24,7 @@ VALUES
 	:timeDataType
 )
 
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 DECLARE @value Interval -- Object
 SET     @value = NpgsqlTypes.NpgsqlInterval
 DECLARE @intervalDataType2 Interval -- Object
@@ -41,7 +41,7 @@ VALUES
 	:intervalDataType2
 )
 
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 DECLARE @timeDataType Interval -- Object
 SET     @timeDataType = 3.00:00:00
 
@@ -54,7 +54,7 @@ VALUES
 	:timeDataType
 )
 
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 DECLARE @maxId Integer -- Int32
 SET     @maxId = 2
 

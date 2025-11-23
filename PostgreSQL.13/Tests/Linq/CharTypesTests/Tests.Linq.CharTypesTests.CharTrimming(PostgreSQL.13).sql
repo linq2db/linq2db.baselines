@@ -1,11 +1,11 @@
-﻿-- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+﻿-- PostgreSQL.13 PostgreSQL
 
 SELECT
 	MAX(t1."ID")
 FROM
 	"AllTypes" t1
 
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 DECLARE @NChar Char -- String
 SET     @NChar = ' '
 
@@ -18,7 +18,7 @@ VALUES
 	:NChar
 )
 
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 DECLARE @NChar Char -- String
 SET     @NChar = '	'
 
@@ -31,7 +31,7 @@ VALUES
 	:NChar
 )
 
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 DECLARE @NChar Char -- String
 SET     @NChar = '
 '
@@ -45,7 +45,7 @@ VALUES
 	:NChar
 )
 
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 DECLARE @NChar Char -- String
 SET     @NChar = ''
 
@@ -58,7 +58,7 @@ VALUES
 	:NChar
 )
 
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 DECLARE @NChar Char -- String
 SET     @NChar = ''
 
@@ -71,7 +71,7 @@ VALUES
 	:NChar
 )
 
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 DECLARE @NChar Char -- String
 SET     @NChar = ''
 
@@ -84,7 +84,7 @@ VALUES
 	:NChar
 )
 
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 DECLARE @NChar Char -- String
 SET     @NChar = ' '
 
@@ -97,7 +97,7 @@ VALUES
 	:NChar
 )
 
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 DECLARE @NChar Char -- String
 SET     @NChar = ' '
 
@@ -110,7 +110,7 @@ VALUES
 	:NChar
 )
 
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 DECLARE @NChar Char -- String
 SET     @NChar = ' '
 
@@ -123,7 +123,7 @@ VALUES
 	:NChar
 )
 
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 DECLARE @NChar Char -- String
 SET     @NChar = ' '
 
@@ -136,7 +136,7 @@ VALUES
 	:NChar
 )
 
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 DECLARE @NChar Char -- String
 SET     @NChar = ' '
 
@@ -149,7 +149,7 @@ VALUES
 	:NChar
 )
 
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 DECLARE @NChar Char -- String
 SET     @NChar = ' '
 
@@ -162,7 +162,7 @@ VALUES
 	:NChar
 )
 
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 DECLARE @NChar Char -- String
 SET     @NChar = ' '
 
@@ -175,7 +175,7 @@ VALUES
 	:NChar
 )
 
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 DECLARE @NChar Char -- String
 SET     @NChar = ' '
 
@@ -188,7 +188,7 @@ VALUES
 	:NChar
 )
 
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 DECLARE @NChar Char -- String
 SET     @NChar = ' '
 
@@ -201,7 +201,7 @@ VALUES
 	:NChar
 )
 
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 DECLARE @NChar Char -- String
 SET     @NChar = ' '
 
@@ -214,7 +214,7 @@ VALUES
 	:NChar
 )
 
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 DECLARE @NChar Char -- String
 SET     @NChar = ' '
 
@@ -227,7 +227,7 @@ VALUES
 	:NChar
 )
 
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 DECLARE @NChar Char -- String
 SET     @NChar = ' '
 
@@ -240,7 +240,7 @@ VALUES
 	:NChar
 )
 
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 DECLARE @NChar Char -- String
 SET     @NChar = '　'
 
@@ -253,7 +253,7 @@ VALUES
 	:NChar
 )
 
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 DECLARE @NChar Char -- String
 SET     @NChar = NULL
 
@@ -266,7 +266,7 @@ VALUES
 	:NChar
 )
 
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 DECLARE @lastId Integer -- Int32
 SET     @lastId = 2
 
@@ -280,7 +280,7 @@ WHERE
 ORDER BY
 	t1."ID"
 
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 DECLARE @lastId Integer -- Int32
 SET     @lastId = 2
 

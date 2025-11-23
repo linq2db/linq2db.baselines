@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+﻿-- PostgreSQL.13 PostgreSQL
 DECLARE @value Numeric(9, 5) -- Decimal
 SET     @value = 6579.64648
 
@@ -8,7 +8,7 @@ FROM
 	"LinqDataTypes" t1
 LIMIT 1
 
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 DECLARE @value Real -- Single
 SET     @value = 6579.64648
 
@@ -18,7 +18,7 @@ FROM
 	"LinqDataTypes" t1
 LIMIT 1
 
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 DECLARE @value Double
 SET     @value = 6579.6464800000003
 
@@ -28,7 +28,7 @@ FROM
 	"LinqDataTypes" t1
 LIMIT 1
 
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 DECLARE @value Numeric(9, 5) -- Decimal
 SET     @value = 6579.64648
 
@@ -38,7 +38,7 @@ FROM
 	"LinqDataTypes" t1
 LIMIT 1
 
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 DECLARE @value Real -- Single
 SET     @value = 6579.64648
 
@@ -48,7 +48,7 @@ FROM
 	"LinqDataTypes" t1
 LIMIT 1
 
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 DECLARE @value Double
 SET     @value = 6579.6464800000003
 
@@ -58,7 +58,7 @@ FROM
 	"LinqDataTypes" t1
 LIMIT 1
 
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 DECLARE @value Numeric(9, 5) -- Decimal
 SET     @value = 6579.64648
 
@@ -68,7 +68,7 @@ FROM
 	"LinqDataTypes" t1
 LIMIT 1
 
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 DECLARE @value Real -- Single
 SET     @value = 6579.64648
 
@@ -78,7 +78,7 @@ FROM
 	"LinqDataTypes" t1
 LIMIT 1
 
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 DECLARE @value Double
 SET     @value = 6579.6464800000003
 

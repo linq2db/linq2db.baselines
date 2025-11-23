@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+﻿-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 DECLARE @Pk Integer -- Int32
 SET     @Pk = 1
 DECLARE @Id Integer -- Int32
@@ -19,7 +19,7 @@ VALUES
 	:TargetName
 )
 
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 DECLARE @Id Integer -- Int32
 SET     @Id = 1
 DECLARE @TaskId Integer -- Int32
@@ -40,7 +40,7 @@ VALUES
 	:Actual
 )
 
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 
 SELECT DISTINCT
 	t."Pk",

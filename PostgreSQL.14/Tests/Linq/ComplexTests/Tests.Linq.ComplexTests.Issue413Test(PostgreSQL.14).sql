@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+﻿-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 DECLARE @InstrumentId Integer -- Int32
 SET     @InstrumentId = 1
 DECLARE @IndexId Integer -- Int32
@@ -15,7 +15,7 @@ VALUES
 	:IndexId
 )
 
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 DECLARE @InstrumentId Integer -- Int32
 SET     @InstrumentId = 2
 DECLARE @IndexId Integer -- Int32
@@ -32,7 +32,7 @@ VALUES
 	:IndexId
 )
 
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 DECLARE @InstrumentId Integer -- Int32
 SET     @InstrumentId = 3
 DECLARE @IndexId Integer -- Int32
@@ -49,7 +49,7 @@ VALUES
 	:IndexId
 )
 
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 DECLARE @InstrumentId Integer -- Int32
 SET     @InstrumentId = 1
 DECLARE @IndexId Integer -- Int32
@@ -66,7 +66,7 @@ VALUES
 	:IndexId
 )
 
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 DECLARE @InstrumentId Integer -- Int32
 SET     @InstrumentId = 2
 DECLARE @IndexId Integer -- Int32
@@ -83,7 +83,7 @@ VALUES
 	:IndexId
 )
 
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 DECLARE @InstrumentId Integer -- Int32
 SET     @InstrumentId = 1
 DECLARE @InstrumentCode Text(4) -- String
@@ -108,7 +108,7 @@ VALUES
 	:SourceInstrumentCode
 )
 
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 DECLARE @InstrumentId Integer -- Int32
 SET     @InstrumentId = 2
 DECLARE @InstrumentCode Text(4) -- String
@@ -133,7 +133,7 @@ VALUES
 	:SourceInstrumentCode
 )
 
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 DECLARE @cond Text(4) -- String
 SET     @cond = 'aaa%'
 DECLARE @uptoDate Timestamp -- DateTime2

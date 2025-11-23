@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+﻿-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 DECLARE @take Integer -- Int32
 SET     @take = 3
 DECLARE @skip Integer -- Int32
@@ -10,7 +10,7 @@ FROM
 	"OrderByDistinctData" x
 LIMIT :take OFFSET :skip 
 
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 DECLARE @take Integer -- Int32
 SET     @take = 3
 DECLARE @skip Integer -- Int32
@@ -24,7 +24,7 @@ ORDER BY
 	x."OrderData1"
 LIMIT :take OFFSET :skip 
 
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 DECLARE @take Integer -- Int32
 SET     @take = 3
 DECLARE @skip Integer -- Int32
@@ -36,7 +36,7 @@ FROM
 	"OrderByDistinctData" x
 LIMIT :take OFFSET :skip 
 
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 DECLARE @take Integer -- Int32
 SET     @take = 3
 DECLARE @skip Integer -- Int32
@@ -50,7 +50,7 @@ ORDER BY
 	x."OrderData1" DESC
 LIMIT :take OFFSET :skip 
 
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 DECLARE @take Integer -- Int32
 SET     @take = 3
 DECLARE @skip Integer -- Int32
@@ -62,7 +62,7 @@ FROM
 	"OrderByDistinctData" x
 LIMIT :take OFFSET :skip 
 
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 DECLARE @take Integer -- Int32
 SET     @take = 3
 DECLARE @skip Integer -- Int32
@@ -77,7 +77,7 @@ ORDER BY
 	x."OrderData2"
 LIMIT :take OFFSET :skip 
 
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 DECLARE @take Integer -- Int32
 SET     @take = 3
 DECLARE @skip Integer -- Int32
@@ -89,7 +89,7 @@ FROM
 	"OrderByDistinctData" x
 LIMIT :take OFFSET :skip 
 
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 DECLARE @take Integer -- Int32
 SET     @take = 3
 DECLARE @skip Integer -- Int32
@@ -104,7 +104,7 @@ ORDER BY
 	x."OrderData2" DESC
 LIMIT :take OFFSET :skip 
 
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 DECLARE @take Integer -- Int32
 SET     @take = 3
 DECLARE @skip Integer -- Int32
@@ -116,7 +116,7 @@ FROM
 	"OrderByDistinctData" x
 LIMIT :take OFFSET :skip 
 
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 DECLARE @take Integer -- Int32
 SET     @take = 3
 DECLARE @skip Integer -- Int32
@@ -131,7 +131,7 @@ ORDER BY
 	x."OrderData2" DESC
 LIMIT :take OFFSET :skip 
 
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 DECLARE @take Integer -- Int32
 SET     @take = 3
 DECLARE @skip Integer -- Int32
@@ -143,7 +143,7 @@ FROM
 	"OrderByDistinctData" x
 LIMIT :take OFFSET :skip 
 
--- PostgreSQL.14 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 DECLARE @take Integer -- Int32
 SET     @take = 3
 DECLARE @skip Integer -- Int32

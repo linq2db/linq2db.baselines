@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+﻿-- PostgreSQL.13 PostgreSQL
 
 SELECT
 	"a_Child"."ParentID",
@@ -11,7 +11,7 @@ FROM
 WHERE
 	p."ParentID" = g_1."ParentID"
 
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 
 SELECT
 	"a_Child"."ParentID",

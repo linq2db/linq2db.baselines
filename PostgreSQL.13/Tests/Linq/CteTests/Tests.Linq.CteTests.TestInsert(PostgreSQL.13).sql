@@ -1,4 +1,4 @@
-﻿-- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+﻿-- PostgreSQL.13 PostgreSQL
 
 WITH "CTE1_" ("ParentID")
 AS
@@ -33,7 +33,7 @@ FROM
 	"CTE1_" t1
 		INNER JOIN "LAST0" c4_1 ON c4_1."ParentID" = t1."ParentID"
 
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 
 SELECT
 	t1."ChildID",
@@ -44,7 +44,7 @@ ORDER BY
 	t1."ChildID",
 	t1."ParentID"
 
--- PostgreSQL.13 PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 
 SELECT
 	t1."ChildID",
