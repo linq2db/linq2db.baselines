@@ -3,7 +3,7 @@ FROM "Products" AS p
 INNER JOIN "Order Details" AS o ON p."ProductID" = o."ProductID"
 
 
--- PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 
 SELECT
 	p."IsDeleted",
@@ -42,7 +42,7 @@ INNER JOIN (
 WHERE @ef_filter__p0 OR NOT (p."IsDeleted") OR NOT (p."IsDeleted")
 
 
--- PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 
 SELECT
 	p."IsDeleted",

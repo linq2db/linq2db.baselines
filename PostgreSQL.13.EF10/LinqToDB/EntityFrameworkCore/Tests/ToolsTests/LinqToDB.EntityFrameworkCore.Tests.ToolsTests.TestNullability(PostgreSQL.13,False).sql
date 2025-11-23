@@ -6,7 +6,7 @@ FROM "Employees" AS e
 WHERE (@ef_filter__p0 OR NOT (e."IsDeleted") OR NOT (e."IsDeleted")) AND e."EmployeeID" = @test
 
 
--- PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 DECLARE @test Integer -- Int32
 SET     @test = 1
 
