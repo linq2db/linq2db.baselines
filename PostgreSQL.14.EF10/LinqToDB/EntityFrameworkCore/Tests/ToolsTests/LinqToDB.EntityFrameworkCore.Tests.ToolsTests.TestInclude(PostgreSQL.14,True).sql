@@ -34,7 +34,7 @@ ORDER BY o."OrderID", e0."EmployeeID", s."EmployeeID", s."TerritoryID", s."Terri
 
 
 
--- PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 
 SELECT
 	m_1."EmployeeId",
@@ -62,7 +62,7 @@ WHERE
 
 
 
--- PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 
 SELECT
 	m_1."OrderId",
@@ -101,7 +101,7 @@ WHERE
 
 
 
--- PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 
 SELECT
 	e."IsDeleted",

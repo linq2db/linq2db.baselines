@@ -18,7 +18,7 @@ WHERE (@ef_filter__p0 OR NOT (p."IsDeleted") OR NOT (p."IsDeleted")) AND EXISTS 
 ORDER BY p."ProductID"
 
 
--- PostgreSQL.9.5 PostgreSQL
+-- PostgreSQL.13 PostgreSQL
 
 SELECT
 	e."IsDeleted",

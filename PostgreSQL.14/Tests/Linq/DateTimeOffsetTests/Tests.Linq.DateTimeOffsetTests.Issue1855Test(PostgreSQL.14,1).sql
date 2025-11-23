@@ -1,9 +1,9 @@
 ﻿-- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 DECLARE @Id Integer -- Int32
 SET     @Id = 1
-DECLARE @SomeDateTimeOffset TimestampTz -- DateTime
+DECLARE @SomeDateTimeOffset TimestampTz -- DateTimeOffset
 SET     @SomeDateTimeOffset = '2019-08-08T08:08:08.0000000+00:00'
-DECLARE @SomeNullableDateTimeOffset TimestampTz -- DateTime
+DECLARE @SomeNullableDateTimeOffset TimestampTz -- DateTimeOffset
 SET     @SomeNullableDateTimeOffset = '2019-08-08T08:08:08.0000000+00:00'
 
 INSERT INTO "Issue1855Table"
@@ -22,7 +22,7 @@ VALUES
 -- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 DECLARE @Id Integer -- Int32
 SET     @Id = 2
-DECLARE @SomeDateTimeOffset TimestampTz -- DateTime
+DECLARE @SomeDateTimeOffset TimestampTz -- DateTimeOffset
 SET     @SomeDateTimeOffset = '2019-08-08T08:08:08.0000000+00:00'
 
 INSERT INTO "Issue1855Table"
@@ -39,7 +39,7 @@ VALUES
 -- PostgreSQL.14 PostgreSQL.13 PostgreSQL
 DECLARE @interval Integer -- Int32
 SET     @interval = 10
-DECLARE @clientSideIn TimestampTz -- DateTime
+DECLARE @clientSideIn TimestampTz -- DateTimeOffset
 SET     @clientSideIn = '2019-08-08T08:08:18.0000000+00:00'
 
 SELECT
