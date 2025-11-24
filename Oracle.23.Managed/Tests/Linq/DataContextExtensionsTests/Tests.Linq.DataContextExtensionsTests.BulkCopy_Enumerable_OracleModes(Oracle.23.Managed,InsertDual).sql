@@ -1,9 +1,13 @@
 ﻿-- Oracle.23.Managed Oracle.Managed Oracle12
 
-INSERT ALL
-	INTO "BulkCopyTable" ("Id", "Value") VALUES (1,10)
-	INTO "BulkCopyTable" ("Id", "Value") VALUES (2,20)
-SELECT * FROM dual
+INSERT INTO "BulkCopyTable"
+(
+	"Id",
+	"Value"
+)
+
+	SELECT 1,10 FROM DUAL  UNION ALL
+	SELECT 2,20 FROM DUAL 
 
 -- Oracle.23.Managed Oracle.Managed Oracle12
 
@@ -22,10 +26,14 @@ DELETE FROM
 
 -- Oracle.23.Managed Oracle.Managed Oracle12
 
-INSERT ALL
-	INTO "BulkCopyTable" ("Id", "Value") VALUES (1,10)
-	INTO "BulkCopyTable" ("Id", "Value") VALUES (2,20)
-SELECT * FROM dual
+INSERT INTO "BulkCopyTable"
+(
+	"Id",
+	"Value"
+)
+
+	SELECT 1,10 FROM DUAL  UNION ALL
+	SELECT 2,20 FROM DUAL 
 
 -- Oracle.23.Managed Oracle.Managed Oracle12
 
@@ -44,10 +52,14 @@ DELETE FROM
 
 -- Oracle.23.Managed Oracle.Managed Oracle12
 
-INSERT ALL
-	INTO "BulkCopyTable" ("Id", "Value") VALUES (1,10)
-	INTO "BulkCopyTable" ("Id", "Value") VALUES (2,20)
-SELECT * FROM dual
+INSERT INTO "BulkCopyTable"
+(
+	"Id",
+	"Value"
+)
+
+	SELECT 1,10 FROM DUAL  UNION ALL
+	SELECT 2,20 FROM DUAL 
 
 -- Oracle.23.Managed Oracle.Managed Oracle12
 
@@ -66,10 +78,14 @@ DELETE FROM
 
 -- Oracle.23.Managed Oracle.Managed Oracle12
 
-INSERT ALL
-	INTO "BulkCopyTable" ("Id", "Value") VALUES (1,10)
-	INTO "BulkCopyTable" ("Id", "Value") VALUES (2,20)
-SELECT * FROM dual
+INSERT INTO "BulkCopyTable"
+(
+	"Id",
+	"Value"
+)
+
+	SELECT 1,10 FROM DUAL  UNION ALL
+	SELECT 2,20 FROM DUAL 
 
 -- Oracle.23.Managed Oracle.Managed Oracle12
 
@@ -88,10 +104,14 @@ DELETE FROM
 
 -- Oracle.23.Managed Oracle.Managed Oracle12
 
-INSERT ALL
-	INTO "BulkCopyTable" ("Id", "Value") VALUES (1,10)
-	INTO "BulkCopyTable" ("Id", "Value") VALUES (2,20)
-SELECT * FROM dual
+INSERT INTO "BulkCopyTable"
+(
+	"Id",
+	"Value"
+)
+
+	SELECT 1,10 FROM DUAL  UNION ALL
+	SELECT 2,20 FROM DUAL 
 
 -- Oracle.23.Managed Oracle.Managed Oracle12
 
@@ -110,10 +130,14 @@ DELETE FROM
 
 -- Oracle.23.Managed Oracle.Managed Oracle12
 
-INSERT ALL
-	INTO "BulkCopyTable" ("Id", "Value") VALUES (1,10)
-	INTO "BulkCopyTable" ("Id", "Value") VALUES (2,20)
-SELECT * FROM dual
+INSERT INTO "BulkCopyTable"
+(
+	"Id",
+	"Value"
+)
+
+	SELECT 1,10 FROM DUAL  UNION ALL
+	SELECT 2,20 FROM DUAL 
 
 -- Oracle.23.Managed Oracle.Managed Oracle12
 
@@ -132,10 +156,14 @@ DELETE FROM
 
 -- Oracle.23.Managed Oracle.Managed Oracle12
 
-INSERT ALL
-	INTO "BulkCopyTable" ("Id", "Value") VALUES (1,10)
-	INTO "BulkCopyTable" ("Id", "Value") VALUES (2,20)
-SELECT * FROM dual
+INSERT INTO "BulkCopyTable"
+(
+	"Id",
+	"Value"
+)
+
+	SELECT 1,10 FROM DUAL  UNION ALL
+	SELECT 2,20 FROM DUAL 
 
 -- Oracle.23.Managed Oracle.Managed Oracle12
 
@@ -154,10 +182,14 @@ DELETE FROM
 
 -- Oracle.23.Managed Oracle.Managed Oracle12
 
-INSERT ALL
-	INTO "BulkCopyTable" ("Id", "Value") VALUES (1,10)
-	INTO "BulkCopyTable" ("Id", "Value") VALUES (2,20)
-SELECT * FROM dual
+INSERT INTO "BulkCopyTable"
+(
+	"Id",
+	"Value"
+)
+
+	SELECT 1,10 FROM DUAL  UNION ALL
+	SELECT 2,20 FROM DUAL 
 
 -- Oracle.23.Managed Oracle.Managed Oracle12
 
@@ -176,10 +208,14 @@ DELETE FROM
 
 -- Oracle.23.Managed Oracle.Managed Oracle12
 
-INSERT ALL
-	INTO "BulkCopyTable" ("Id", "Value") VALUES (1,10)
-	INTO "BulkCopyTable" ("Id", "Value") VALUES (2,20)
-SELECT * FROM dual
+INSERT INTO "BulkCopyTable"
+(
+	"Id",
+	"Value"
+)
+
+	SELECT 1,10 FROM DUAL  UNION ALL
+	SELECT 2,20 FROM DUAL 
 
 -- Oracle.23.Managed Oracle.Managed Oracle12
 
@@ -198,10 +234,14 @@ DELETE FROM
 
 -- Oracle.23.Managed Oracle.Managed Oracle12
 
-INSERT ALL
-	INTO "BulkCopyTable" ("Id", "Value") VALUES (1,10)
-	INTO "BulkCopyTable" ("Id", "Value") VALUES (2,20)
-SELECT * FROM dual
+INSERT INTO "BulkCopyTable"
+(
+	"Id",
+	"Value"
+)
+
+	SELECT 1,10 FROM DUAL  UNION ALL
+	SELECT 2,20 FROM DUAL 
 
 -- Oracle.23.Managed Oracle.Managed Oracle12
 
@@ -220,10 +260,14 @@ DELETE FROM
 
 -- Oracle.23.Managed Oracle.Managed Oracle12
 
-INSERT ALL
-	INTO "BulkCopyTable" ("Id", "Value") VALUES (1,10)
-	INTO "BulkCopyTable" ("Id", "Value") VALUES (2,20)
-SELECT * FROM dual
+INSERT INTO "BulkCopyTable"
+(
+	"Id",
+	"Value"
+)
+
+	SELECT 1,10 FROM DUAL  UNION ALL
+	SELECT 2,20 FROM DUAL 
 
 -- Oracle.23.Managed Oracle.Managed Oracle12
 
@@ -242,10 +286,14 @@ DELETE FROM
 
 -- Oracle.23.Managed Oracle.Managed Oracle12
 
-INSERT ALL
-	INTO "BulkCopyTable" ("Id", "Value") VALUES (1,10)
-	INTO "BulkCopyTable" ("Id", "Value") VALUES (2,20)
-SELECT * FROM dual
+INSERT INTO "BulkCopyTable"
+(
+	"Id",
+	"Value"
+)
+
+	SELECT 1,10 FROM DUAL  UNION ALL
+	SELECT 2,20 FROM DUAL 
 
 -- Oracle.23.Managed Oracle.Managed Oracle12
 
@@ -264,10 +312,14 @@ DELETE FROM
 
 -- Oracle.23.Managed Oracle.Managed Oracle12
 
-INSERT ALL
-	INTO "BulkCopyTable" ("Id", "Value") VALUES (1,10)
-	INTO "BulkCopyTable" ("Id", "Value") VALUES (2,20)
-SELECT * FROM dual
+INSERT INTO "BulkCopyTable"
+(
+	"Id",
+	"Value"
+)
+
+	SELECT 1,10 FROM DUAL  UNION ALL
+	SELECT 2,20 FROM DUAL 
 
 -- Oracle.23.Managed Oracle.Managed Oracle12
 
@@ -286,10 +338,14 @@ DELETE FROM
 
 -- Oracle.23.Managed Oracle.Managed Oracle12
 
-INSERT ALL
-	INTO "BulkCopyTable" ("Id", "Value") VALUES (1,10)
-	INTO "BulkCopyTable" ("Id", "Value") VALUES (2,20)
-SELECT * FROM dual
+INSERT INTO "BulkCopyTable"
+(
+	"Id",
+	"Value"
+)
+
+	SELECT 1,10 FROM DUAL  UNION ALL
+	SELECT 2,20 FROM DUAL 
 
 -- Oracle.23.Managed Oracle.Managed Oracle12
 
@@ -308,10 +364,14 @@ DELETE FROM
 
 -- Oracle.23.Managed Oracle.Managed Oracle12
 
-INSERT ALL
-	INTO "BulkCopyTable" ("Id", "Value") VALUES (1,10)
-	INTO "BulkCopyTable" ("Id", "Value") VALUES (2,20)
-SELECT * FROM dual
+INSERT INTO "BulkCopyTable"
+(
+	"Id",
+	"Value"
+)
+
+	SELECT 1,10 FROM DUAL  UNION ALL
+	SELECT 2,20 FROM DUAL 
 
 -- Oracle.23.Managed Oracle.Managed Oracle12
 
@@ -330,10 +390,14 @@ DELETE FROM
 
 -- Oracle.23.Managed Oracle.Managed Oracle12
 
-INSERT ALL
-	INTO "BulkCopyTable" ("Id", "Value") VALUES (1,10)
-	INTO "BulkCopyTable" ("Id", "Value") VALUES (2,20)
-SELECT * FROM dual
+INSERT INTO "BulkCopyTable"
+(
+	"Id",
+	"Value"
+)
+
+	SELECT 1,10 FROM DUAL  UNION ALL
+	SELECT 2,20 FROM DUAL 
 
 -- Oracle.23.Managed Oracle.Managed Oracle12
 
@@ -352,10 +416,14 @@ DELETE FROM
 
 -- Oracle.23.Managed Oracle.Managed Oracle12
 
-INSERT ALL
-	INTO "BulkCopyTable" ("Id", "Value") VALUES (1,10)
-	INTO "BulkCopyTable" ("Id", "Value") VALUES (2,20)
-SELECT * FROM dual
+INSERT INTO "BulkCopyTable"
+(
+	"Id",
+	"Value"
+)
+
+	SELECT 1,10 FROM DUAL  UNION ALL
+	SELECT 2,20 FROM DUAL 
 
 -- Oracle.23.Managed Oracle.Managed Oracle12
 
@@ -374,10 +442,14 @@ DELETE FROM
 
 -- Oracle.23.Managed Oracle.Managed Oracle12
 
-INSERT ALL
-	INTO "BulkCopyTable" ("Id", "Value") VALUES (1,10)
-	INTO "BulkCopyTable" ("Id", "Value") VALUES (2,20)
-SELECT * FROM dual
+INSERT INTO "BulkCopyTable"
+(
+	"Id",
+	"Value"
+)
+
+	SELECT 1,10 FROM DUAL  UNION ALL
+	SELECT 2,20 FROM DUAL 
 
 -- Oracle.23.Managed Oracle.Managed Oracle12
 
@@ -396,10 +468,14 @@ DELETE FROM
 
 -- Oracle.23.Managed Oracle.Managed Oracle12
 
-INSERT ALL
-	INTO "BulkCopyTable" ("Id", "Value") VALUES (1,10)
-	INTO "BulkCopyTable" ("Id", "Value") VALUES (2,20)
-SELECT * FROM dual
+INSERT INTO "BulkCopyTable"
+(
+	"Id",
+	"Value"
+)
+
+	SELECT 1,10 FROM DUAL  UNION ALL
+	SELECT 2,20 FROM DUAL 
 
 -- Oracle.23.Managed Oracle.Managed Oracle12
 
@@ -418,10 +494,14 @@ DELETE FROM
 
 -- Oracle.23.Managed Oracle.Managed Oracle12
 
-INSERT ALL
-	INTO "BulkCopyTable" ("Id", "Value") VALUES (1,10)
-	INTO "BulkCopyTable" ("Id", "Value") VALUES (2,20)
-SELECT * FROM dual
+INSERT INTO "BulkCopyTable"
+(
+	"Id",
+	"Value"
+)
+
+	SELECT 1,10 FROM DUAL  UNION ALL
+	SELECT 2,20 FROM DUAL 
 
 -- Oracle.23.Managed Oracle.Managed Oracle12
 
@@ -440,10 +520,14 @@ DELETE FROM
 
 -- Oracle.23.Managed Oracle.Managed Oracle12
 
-INSERT ALL
-	INTO "BulkCopyTable" ("Id", "Value") VALUES (1,10)
-	INTO "BulkCopyTable" ("Id", "Value") VALUES (2,20)
-SELECT * FROM dual
+INSERT INTO "BulkCopyTable"
+(
+	"Id",
+	"Value"
+)
+
+	SELECT 1,10 FROM DUAL  UNION ALL
+	SELECT 2,20 FROM DUAL 
 
 -- Oracle.23.Managed Oracle.Managed Oracle12
 
@@ -462,10 +546,14 @@ DELETE FROM
 
 -- Oracle.23.Managed Oracle.Managed Oracle12
 
-INSERT ALL
-	INTO "BulkCopyTable" ("Id", "Value") VALUES (1,10)
-	INTO "BulkCopyTable" ("Id", "Value") VALUES (2,20)
-SELECT * FROM dual
+INSERT INTO "BulkCopyTable"
+(
+	"Id",
+	"Value"
+)
+
+	SELECT 1,10 FROM DUAL  UNION ALL
+	SELECT 2,20 FROM DUAL 
 
 -- Oracle.23.Managed Oracle.Managed Oracle12
 
@@ -484,10 +572,14 @@ DELETE FROM
 
 -- Oracle.23.Managed Oracle.Managed Oracle12
 
-INSERT ALL
-	INTO "BulkCopyTable" ("Id", "Value") VALUES (1,10)
-	INTO "BulkCopyTable" ("Id", "Value") VALUES (2,20)
-SELECT * FROM dual
+INSERT INTO "BulkCopyTable"
+(
+	"Id",
+	"Value"
+)
+
+	SELECT 1,10 FROM DUAL  UNION ALL
+	SELECT 2,20 FROM DUAL 
 
 -- Oracle.23.Managed Oracle.Managed Oracle12
 
@@ -506,10 +598,14 @@ DELETE FROM
 
 -- Oracle.23.Managed Oracle.Managed Oracle12
 
-INSERT ALL
-	INTO "BulkCopyTable" ("Id", "Value") VALUES (1,10)
-	INTO "BulkCopyTable" ("Id", "Value") VALUES (2,20)
-SELECT * FROM dual
+INSERT INTO "BulkCopyTable"
+(
+	"Id",
+	"Value"
+)
+
+	SELECT 1,10 FROM DUAL  UNION ALL
+	SELECT 2,20 FROM DUAL 
 
 -- Oracle.23.Managed Oracle.Managed Oracle12
 
@@ -528,10 +624,14 @@ DELETE FROM
 
 -- Oracle.23.Managed Oracle.Managed Oracle12
 
-INSERT ALL
-	INTO "BulkCopyTable" ("Id", "Value") VALUES (1,10)
-	INTO "BulkCopyTable" ("Id", "Value") VALUES (2,20)
-SELECT * FROM dual
+INSERT INTO "BulkCopyTable"
+(
+	"Id",
+	"Value"
+)
+
+	SELECT 1,10 FROM DUAL  UNION ALL
+	SELECT 2,20 FROM DUAL 
 
 -- Oracle.23.Managed Oracle.Managed Oracle12
 
@@ -550,10 +650,14 @@ DELETE FROM
 
 -- Oracle.23.Managed Oracle.Managed Oracle12
 
-INSERT ALL
-	INTO "BulkCopyTable" ("Id", "Value") VALUES (1,10)
-	INTO "BulkCopyTable" ("Id", "Value") VALUES (2,20)
-SELECT * FROM dual
+INSERT INTO "BulkCopyTable"
+(
+	"Id",
+	"Value"
+)
+
+	SELECT 1,10 FROM DUAL  UNION ALL
+	SELECT 2,20 FROM DUAL 
 
 -- Oracle.23.Managed Oracle.Managed Oracle12
 
@@ -572,10 +676,14 @@ DELETE FROM
 
 -- Oracle.23.Managed Oracle.Managed Oracle12
 
-INSERT ALL
-	INTO "BulkCopyTable" ("Id", "Value") VALUES (1,10)
-	INTO "BulkCopyTable" ("Id", "Value") VALUES (2,20)
-SELECT * FROM dual
+INSERT INTO "BulkCopyTable"
+(
+	"Id",
+	"Value"
+)
+
+	SELECT 1,10 FROM DUAL  UNION ALL
+	SELECT 2,20 FROM DUAL 
 
 -- Oracle.23.Managed Oracle.Managed Oracle12
 
@@ -594,10 +702,14 @@ DELETE FROM
 
 -- Oracle.23.Managed Oracle.Managed Oracle12
 
-INSERT ALL
-	INTO "BulkCopyTable" ("Id", "Value") VALUES (1,10)
-	INTO "BulkCopyTable" ("Id", "Value") VALUES (2,20)
-SELECT * FROM dual
+INSERT INTO "BulkCopyTable"
+(
+	"Id",
+	"Value"
+)
+
+	SELECT 1,10 FROM DUAL  UNION ALL
+	SELECT 2,20 FROM DUAL 
 
 -- Oracle.23.Managed Oracle.Managed Oracle12
 
@@ -616,10 +728,14 @@ DELETE FROM
 
 -- Oracle.23.Managed Oracle.Managed Oracle12
 
-INSERT ALL
-	INTO "BulkCopyTable" ("Id", "Value") VALUES (1,10)
-	INTO "BulkCopyTable" ("Id", "Value") VALUES (2,20)
-SELECT * FROM dual
+INSERT INTO "BulkCopyTable"
+(
+	"Id",
+	"Value"
+)
+
+	SELECT 1,10 FROM DUAL  UNION ALL
+	SELECT 2,20 FROM DUAL 
 
 -- Oracle.23.Managed Oracle.Managed Oracle12
 
@@ -638,10 +754,14 @@ DELETE FROM
 
 -- Oracle.23.Managed Oracle.Managed Oracle12
 
-INSERT ALL
-	INTO "BulkCopyTable" ("Id", "Value") VALUES (1,10)
-	INTO "BulkCopyTable" ("Id", "Value") VALUES (2,20)
-SELECT * FROM dual
+INSERT INTO "BulkCopyTable"
+(
+	"Id",
+	"Value"
+)
+
+	SELECT 1,10 FROM DUAL  UNION ALL
+	SELECT 2,20 FROM DUAL 
 
 -- Oracle.23.Managed Oracle.Managed Oracle12
 
@@ -660,10 +780,14 @@ DELETE FROM
 
 -- Oracle.23.Managed Oracle.Managed Oracle12
 
-INSERT ALL
-	INTO "BulkCopyTable" ("Id", "Value") VALUES (1,10)
-	INTO "BulkCopyTable" ("Id", "Value") VALUES (2,20)
-SELECT * FROM dual
+INSERT INTO "BulkCopyTable"
+(
+	"Id",
+	"Value"
+)
+
+	SELECT 1,10 FROM DUAL  UNION ALL
+	SELECT 2,20 FROM DUAL 
 
 -- Oracle.23.Managed Oracle.Managed Oracle12
 
@@ -682,10 +806,14 @@ DELETE FROM
 
 -- Oracle.23.Managed Oracle.Managed Oracle12
 
-INSERT ALL
-	INTO "BulkCopyTable" ("Id", "Value") VALUES (1,10)
-	INTO "BulkCopyTable" ("Id", "Value") VALUES (2,20)
-SELECT * FROM dual
+INSERT INTO "BulkCopyTable"
+(
+	"Id",
+	"Value"
+)
+
+	SELECT 1,10 FROM DUAL  UNION ALL
+	SELECT 2,20 FROM DUAL 
 
 -- Oracle.23.Managed Oracle.Managed Oracle12
 
@@ -704,10 +832,14 @@ DELETE FROM
 
 -- Oracle.23.Managed Oracle.Managed Oracle12
 
-INSERT ALL
-	INTO "BulkCopyTable" ("Id", "Value") VALUES (1,10)
-	INTO "BulkCopyTable" ("Id", "Value") VALUES (2,20)
-SELECT * FROM dual
+INSERT INTO "BulkCopyTable"
+(
+	"Id",
+	"Value"
+)
+
+	SELECT 1,10 FROM DUAL  UNION ALL
+	SELECT 2,20 FROM DUAL 
 
 -- Oracle.23.Managed Oracle.Managed Oracle12
 
@@ -726,10 +858,14 @@ DELETE FROM
 
 -- Oracle.23.Managed Oracle.Managed Oracle12
 
-INSERT ALL
-	INTO "BulkCopyTable" ("Id", "Value") VALUES (1,10)
-	INTO "BulkCopyTable" ("Id", "Value") VALUES (2,20)
-SELECT * FROM dual
+INSERT INTO "BulkCopyTable"
+(
+	"Id",
+	"Value"
+)
+
+	SELECT 1,10 FROM DUAL  UNION ALL
+	SELECT 2,20 FROM DUAL 
 
 -- Oracle.23.Managed Oracle.Managed Oracle12
 
@@ -748,10 +884,14 @@ DELETE FROM
 
 -- Oracle.23.Managed Oracle.Managed Oracle12
 
-INSERT ALL
-	INTO "BulkCopyTable" ("Id", "Value") VALUES (1,10)
-	INTO "BulkCopyTable" ("Id", "Value") VALUES (2,20)
-SELECT * FROM dual
+INSERT INTO "BulkCopyTable"
+(
+	"Id",
+	"Value"
+)
+
+	SELECT 1,10 FROM DUAL  UNION ALL
+	SELECT 2,20 FROM DUAL 
 
 -- Oracle.23.Managed Oracle.Managed Oracle12
 
@@ -770,10 +910,14 @@ DELETE FROM
 
 -- Oracle.23.Managed Oracle.Managed Oracle12
 
-INSERT ALL
-	INTO "BulkCopyTable" ("Id", "Value") VALUES (1,10)
-	INTO "BulkCopyTable" ("Id", "Value") VALUES (2,20)
-SELECT * FROM dual
+INSERT INTO "BulkCopyTable"
+(
+	"Id",
+	"Value"
+)
+
+	SELECT 1,10 FROM DUAL  UNION ALL
+	SELECT 2,20 FROM DUAL 
 
 -- Oracle.23.Managed Oracle.Managed Oracle12
 
