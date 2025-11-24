@@ -1,7 +1,7 @@
 ﻿-- Informix.DB2 Informix
 
 SELECT FIRST 3 DISTINCT
-	r."Value"
+	t1."Value"
 FROM
-	TakeSkipClass r
+	TakeSkipClass t1
 

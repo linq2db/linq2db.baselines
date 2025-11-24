@@ -3,7 +3,7 @@ DECLARE @take Integer(4) -- Int32
 SET     @take = 3
 
 SELECT FIRST @take DISTINCT
-	r."Value"
+	t1."Value"
 FROM
-	TakeSkipClass r
+	TakeSkipClass t1
 
