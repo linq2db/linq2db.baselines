@@ -8,7 +8,6 @@ select name, primary_key from system.tables where is_temporary = 0 and database 
 
 -- ClickHouse.MySql ClickHouse
 
-
 SELECT
 	table,
 	name,
@@ -40,7 +39,6 @@ select name, primary_key from system.tables where is_temporary = 0 and database 
 
 -- ClickHouse.MySql ClickHouse
 
-
 SELECT
 	table,
 	name,
@@ -71,7 +69,6 @@ select name, comment, engine LIKE '%View' from system.tables where is_temporary 
 select name, primary_key from system.tables where is_temporary = 0 and database = database() and primary_key <> ''
 
 -- ClickHouse.MySql ClickHouse
-
 
 SELECT
 	table,
