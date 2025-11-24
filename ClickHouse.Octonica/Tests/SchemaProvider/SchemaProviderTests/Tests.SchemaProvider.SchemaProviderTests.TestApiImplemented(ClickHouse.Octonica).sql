@@ -8,7 +8,6 @@ select name, primary_key from system.tables where is_temporary = 0 and database 
 
 -- ClickHouse.Octonica ClickHouse
 
-
 SELECT
 	table,
 	name,
