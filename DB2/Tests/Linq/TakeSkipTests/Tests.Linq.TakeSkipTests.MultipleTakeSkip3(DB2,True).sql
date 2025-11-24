@@ -3,7 +3,6 @@ DECLARE @take Integer(4) -- Int32
 SET     @take = 1
 
 SELECT
-	"t1"."Id",
 	"t1"."Value"
 FROM
 	"TakeSkipClass" "t1"
