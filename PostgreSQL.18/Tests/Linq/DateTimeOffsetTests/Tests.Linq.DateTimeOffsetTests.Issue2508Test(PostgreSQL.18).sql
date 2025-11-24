@@ -1,5 +1,5 @@
 ﻿-- PostgreSQL.18 PostgreSQL
-DECLARE @value TimestampTz -- DateTime
+DECLARE @value TimestampTz -- DateTimeOffset
 SET     @value = '2020-02-29T20:34:55.1231234+00:00'
 
 SELECT

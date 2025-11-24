@@ -1,7 +1,7 @@
 ﻿-- PostgreSQL.17 PostgreSQL.15 PostgreSQL
-DECLARE @Column Smallint -- Int16
+DECLARE @Column Smallint -- Byte
 SET     @Column = 255
-DECLARE @ColumnNullable Smallint -- Int16
+DECLARE @ColumnNullable Smallint -- Byte
 SET     @ColumnNullable = 2
 
 SELECT
@@ -32,9 +32,9 @@ DELETE FROM
 -- PostgreSQL.17 PostgreSQL.15 PostgreSQL
 DECLARE @Id Integer -- Int32
 SET     @Id = 1
-DECLARE @Column Smallint -- Int16
+DECLARE @Column Smallint -- Byte
 SET     @Column = 1
-DECLARE @ColumnNullable Smallint -- Int16
+DECLARE @ColumnNullable Smallint -- Byte
 SET     @ColumnNullable = NULL
 
 INSERT INTO "ByteTable"
@@ -53,9 +53,9 @@ VALUES
 -- PostgreSQL.17 PostgreSQL.15 PostgreSQL
 DECLARE @Id Integer -- Int32
 SET     @Id = 2
-DECLARE @Column Smallint -- Int16
+DECLARE @Column Smallint -- Byte
 SET     @Column = 255
-DECLARE @ColumnNullable Smallint -- Int16
+DECLARE @ColumnNullable Smallint -- Byte
 SET     @ColumnNullable = 2
 
 INSERT INTO "ByteTable"

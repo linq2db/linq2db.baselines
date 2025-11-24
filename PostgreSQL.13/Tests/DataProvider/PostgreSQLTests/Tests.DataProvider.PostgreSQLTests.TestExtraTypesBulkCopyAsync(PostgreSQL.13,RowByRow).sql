@@ -1,7 +1,7 @@
 ﻿-- PostgreSQL.13 PostgreSQL
 DECLARE @Id Integer -- Int32
 SET     @Id = 1
-DECLARE @Byte Smallint -- Int16
+DECLARE @Byte Smallint -- Byte
 SET     @Byte = NULL
 DECLARE @SByte Smallint -- Int16
 SET     @SByte = NULL
@@ -17,7 +17,7 @@ DECLARE @Int64 Bigint -- Int64
 SET     @Int64 = NULL
 DECLARE @UInt64 Numeric -- Decimal
 SET     @UInt64 = NULL
-DECLARE @ByteT Smallint -- Int16
+DECLARE @ByteT Smallint -- Byte
 SET     @ByteT = NULL
 DECLARE @SByteT Smallint -- Int16
 SET     @SByteT = NULL
@@ -78,7 +78,7 @@ VALUES
 -- PostgreSQL.13 PostgreSQL
 DECLARE @Id Integer -- Int32
 SET     @Id = 2
-DECLARE @Byte Smallint -- Int16
+DECLARE @Byte Smallint -- Byte
 SET     @Byte = 255
 DECLARE @SByte Smallint -- Int16
 SET     @SByte = 127
@@ -94,7 +94,7 @@ DECLARE @Int64 Bigint -- Int64
 SET     @Int64 = 9223372036854775807
 DECLARE @UInt64 Numeric(20, 0) -- Decimal
 SET     @UInt64 = 18446744073709551615
-DECLARE @ByteT Smallint -- Int16
+DECLARE @ByteT Smallint -- Byte
 SET     @ByteT = 255
 DECLARE @SByteT Smallint -- Int16
 SET     @SByteT = 127
