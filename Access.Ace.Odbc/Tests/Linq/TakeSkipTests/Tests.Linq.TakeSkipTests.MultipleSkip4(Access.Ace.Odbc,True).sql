@@ -1,7 +1,6 @@
 ﻿-- Access.Ace.Odbc AccessODBC
 
 SELECT
-	[t1].[Id],
 	[t1].[Value]
 FROM
 	[TakeSkipClass] [t1]
