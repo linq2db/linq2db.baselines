@@ -1,7 +1,7 @@
 ﻿-- Access.Ace.OleDb AccessOleDb
 
 SELECT
-	(CStr(COUNT(*)) + ' items have not been processed, e.g. #' + CStr(MIN([s].[PersonID]))) + '.'
+	(CStr(COUNT(*)) + ' items have not been processed, e.g. #' + IIF(MIN([s].[PersonID]) IS NULL, '', IIF(MIN([s].[PersonID]) IS NOT NULL, CStr(MIN([s].[PersonID])), NULL))) + '.'
 FROM
 	[Person] [s]
 WHERE
