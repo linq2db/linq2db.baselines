@@ -18,15 +18,8 @@ FROM
 			IIF([t1].[C1] <> N'T', 1, 0) as [cond_1]
 		FROM
 			[Issue4596Form] [t1]
-	) [m_1],
-	[Issue4596Item] [d]
-WHERE
-	[d].[FormId] = [m_1].[Id]
-ORDER BY
-	IIF([m_1].[cond] = 1, [d].[OrderIndex], 0),
-	IIF([m_1].[cond_1] = 1, [d].[Name1], N''),
-	IIF([m_1].[cond_1] = 1, [d].[Name2], N''),
-	IIF([m_1].[cond_1] = 1, [d].[Name3], N'')
+	) [m_1]
+		INNER JOIN [Issue4596Item] [d] ON [d].[FormId] = [m_1].[Id]
 
 -- SqlServer.Contained.MS SqlServer.2019
 
