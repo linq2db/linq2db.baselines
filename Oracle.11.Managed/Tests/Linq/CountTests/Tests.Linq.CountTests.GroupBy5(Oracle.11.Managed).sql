@@ -1,22 +1,22 @@
 ﻿-- Oracle.11.Managed Oracle11
 
 SELECT
-	g_2.ID1,
-	g_2.ID2 + 1,
-	g_2.ID2,
-	g_2.ID4
+	g_2."Max_1",
+	g_2."Count_1" + 1,
+	g_2."Count_1",
+	g_2."Count_2"
 FROM
 	(
 		SELECT
-			MAX(g_1."ChildID") as ID1,
+			MAX(g_1."ChildID") as "Max_1",
 			COUNT(CASE
 				WHEN g_1."ChildID" > 20 THEN 1
 				ELSE NULL
-			END) as ID2,
+			END) as "Count_1",
 			COUNT(CASE
 				WHEN g_1."ChildID" > 10 THEN 1
 				ELSE NULL
-			END) as ID4
+			END) as "Count_2"
 		FROM
 			"Child" g_1
 		GROUP BY

@@ -5,13 +5,13 @@ SET     @take = 1000
 SELECT
 	t1."Diagnosis",
 	t1."id",
-	t1."y"
+	t1."Average"
 FROM
 	(
 		SELECT
 			a_Patient."Diagnosis",
 			a_Patient."PersonID" as "id",
-			AVG(auto16031."PersonID") as "y"
+			AVG(auto16031."PersonID") as "Average"
 		FROM
 			"Person" auto16031
 				LEFT JOIN "Patient" a_Patient ON auto16031."PersonID" = a_Patient."PersonID"

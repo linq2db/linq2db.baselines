@@ -23,105 +23,102 @@ select user from dual
 DECLARE @CurrentUser Varchar2(4) -- String
 SET     @CurrentUser = 'TEST'
 
-
-					SELECT
-						d.OWNER || '.' || d.NAME                                     as TableID,
-						d.OWNER                                                      as SchemaName,
-						d.NAME                                                       as TableName,
-						d.IsView                                                     as IsView,
-						CASE :CurrentUser WHEN d.OWNER THEN 1 ELSE 0 END             as IsDefaultSchema,
-						CASE d.MatView WHEN 1 THEN mvc.COMMENTS ELSE tc.COMMENTS END as Description
-					FROM
-					(
-						SELECT t.OWNER, t.TABLE_NAME NAME, 0 as IsView, 0 as MatView FROM ALL_TABLES t
-							LEFT JOIN ALL_MVIEWS tm ON t.OWNER = tm.OWNER AND t.TABLE_NAME = tm.CONTAINER_NAME
-							WHERE tm.MVIEW_NAME IS NULL AND t.OWNER IN ('TEST')
-						UNION ALL
-						SELECT v.OWNER, v.VIEW_NAME NAME, 1 as IsView, 0 as MatView FROM ALL_VIEWS v
-							WHERE v.OWNER IN ('TEST')
-						UNION ALL
-						SELECT m.OWNER, m.MVIEW_NAME NAME, 1 as IsView, 1 as MatView FROM ALL_MVIEWS m
-							WHERE m.OWNER IN ('TEST')
-					) d
-						LEFT JOIN ALL_TAB_COMMENTS tc ON
-							d.OWNER = tc.OWNER AND
-							d.NAME  = tc.TABLE_NAME
-						LEFT JOIN ALL_MVIEW_COMMENTS mvc ON
-							d.OWNER = mvc.OWNER AND
-							d.NAME  = mvc.MVIEW_NAME
-					ORDER BY TableID, isView
-					
-
--- Oracle.11.Managed Oracle11
-
-
-					SELECT
-						FKCOLS.OWNER || '.' || FKCOLS.TABLE_NAME as TableID,
-						FKCOLS.CONSTRAINT_NAME                   as PrimaryKeyName,
-						FKCOLS.COLUMN_NAME                       as ColumnName,
-						FKCOLS.POSITION                          as Ordinal
-					FROM
-						ALL_CONS_COLUMNS FKCOLS,
-						ALL_CONSTRAINTS FKCON
-					WHERE
-						FKCOLS.OWNER           = FKCON.OWNER AND
-						FKCOLS.TABLE_NAME      = FKCON.TABLE_NAME AND
-						FKCOLS.CONSTRAINT_NAME = FKCON.CONSTRAINT_NAME AND
-						FKCON.CONSTRAINT_TYPE  = 'P' AND
-						FKCOLS.OWNER IN ('TEST')
+SELECT
+	d.OWNER || '.' || d.NAME                                     as TableID,
+	d.OWNER                                                      as SchemaName,
+	d.NAME                                                       as TableName,
+	d.IsView                                                     as IsView,
+	CASE :CurrentUser WHEN d.OWNER THEN 1 ELSE 0 END             as IsDefaultSchema,
+	CASE d.MatView WHEN 1 THEN mvc.COMMENTS ELSE tc.COMMENTS END as Description
+FROM
+(
+	SELECT t.OWNER, t.TABLE_NAME NAME, 0 as IsView, 0 as MatView FROM ALL_TABLES t
+		LEFT JOIN ALL_MVIEWS tm ON t.OWNER = tm.OWNER AND t.TABLE_NAME = tm.CONTAINER_NAME
+		WHERE tm.MVIEW_NAME IS NULL AND t.OWNER
+		IN ('TEST')
+	UNION ALL
+	SELECT v.OWNER, v.VIEW_NAME NAME, 1 as IsView, 0 as MatView FROM ALL_VIEWS v
+		WHERE v.OWNER IN ('TEST')
+	UNION ALL
+	SELECT m.OWNER, m.MVIEW_NAME NAME, 1 as IsView, 1 as MatView FROM ALL_MVIEWS m
+		WHERE m.OWNER IN ('TEST')
+) d
+	LEFT JOIN ALL_TAB_COMMENTS tc ON
+		d.OWNER = tc.OWNER AND
+		d.NAME  = tc.TABLE_NAME
+	LEFT JOIN ALL_MVIEW_COMMENTS mvc ON
+		d.OWNER = mvc.OWNER AND
+		d.NAME  = mvc.MVIEW_NAME
+ORDER BY TableID, isView
 
 -- Oracle.11.Managed Oracle11
 
-
-					SELECT
-						c.OWNER || '.' || c.TABLE_NAME             as TableID,
-						c.COLUMN_NAME                              as Name,
-						c.DATA_TYPE                                as DataType,
-						CASE c.NULLABLE WHEN 'Y' THEN 1 ELSE 0 END as IsNullable,
-						c.COLUMN_ID                                as Ordinal,
-						c.DATA_LENGTH                              as Length,
-						c.CHAR_LENGTH                              as CharLength,
-						c.DATA_PRECISION                           as Precision,
-						c.DATA_SCALE                               as Scale,
-						0                                              as IsIdentity,
-						cc.COMMENTS                                as Description
-					FROM ALL_TAB_COLUMNS c
-						JOIN ALL_COL_COMMENTS cc ON
-							c.OWNER       = cc.OWNER      AND
-							c.TABLE_NAME  = cc.TABLE_NAME AND
-							c.COLUMN_NAME = cc.COLUMN_NAME
-					WHERE c.OWNER IN ('TEST')
+SELECT
+	FKCOLS.OWNER || '.' || FKCOLS.TABLE_NAME as TableID,
+	FKCOLS.CONSTRAINT_NAME                   as PrimaryKeyName,
+	FKCOLS.COLUMN_NAME                       as ColumnName,
+	FKCOLS.POSITION                          as Ordinal
+FROM
+	ALL_CONS_COLUMNS FKCOLS,
+	ALL_CONSTRAINTS FKCON
+WHERE
+	FKCOLS.OWNER           = FKCON.OWNER AND
+	FKCOLS.TABLE_NAME      = FKCON.TABLE_NAME AND
+	FKCOLS.CONSTRAINT_NAME = FKCON.CONSTRAINT_NAME AND
+	FKCON.CONSTRAINT_TYPE  = 'P' AND
+	FKCOLS.OWNER
+IN ('TEST')
 
 -- Oracle.11.Managed Oracle11
 
+SELECT
+	c.OWNER || '.' || c.TABLE_NAME             as TableID,
+	c.COLUMN_NAME                              as Name,
+	c.DATA_TYPE                                as DataType,
+	CASE c.NULLABLE WHEN 'Y' THEN 1 ELSE 0 END as IsNullable,
+	c.COLUMN_ID                                as Ordinal,
+	c.DATA_LENGTH                              as Length,
+	c.CHAR_LENGTH                              as CharLength,
+	c.DATA_PRECISION                           as Precision,
+	c.DATA_SCALE                               as Scale,
+		0                                                   as IsIdentity,
+	cc.COMMENTS                                as Description
+FROM ALL_TAB_COLUMNS c
+	JOIN ALL_COL_COMMENTS cc ON
+		c.OWNER       = cc.OWNER      AND
+		c.TABLE_NAME  = cc.TABLE_NAME AND
+		c.COLUMN_NAME = cc.COLUMN_NAME
+WHERE c.OWNER IN ('TEST')
 
-						SELECT
-							FKCON.CONSTRAINT_NAME                  as Name,
-							FKCON.OWNER || '.' || FKCON.TABLE_NAME as ThisTableID,
-							FKCOLS.COLUMN_NAME                     as ThisColumn,
-							PKCON.OWNER || '.' || PKCON.TABLE_NAME as OtherTableID,
-							PKCOLS.COLUMN_NAME                     as OtherColumn,
-							FKCOLS.POSITION                        as Ordinal
-						FROM
-							ALL_CONSTRAINTS FKCON
-								JOIN ALL_CONS_COLUMNS FKCOLS ON
-									FKCOLS.OWNER           = FKCON.OWNER      AND
-									FKCOLS.TABLE_NAME      = FKCON.TABLE_NAME AND
-									FKCOLS.CONSTRAINT_NAME = FKCON.CONSTRAINT_NAME
-							JOIN
-							ALL_CONSTRAINTS  PKCON
-								JOIN ALL_CONS_COLUMNS PKCOLS ON
-									PKCOLS.OWNER           = PKCON.OWNER      AND
-									PKCOLS.TABLE_NAME      = PKCON.TABLE_NAME AND
-									PKCOLS.CONSTRAINT_NAME = PKCON.CONSTRAINT_NAME
-							ON
-								PKCON.OWNER           = FKCON.R_OWNER AND
-								PKCON.CONSTRAINT_NAME = FKCON.R_CONSTRAINT_NAME
-						WHERE
-							FKCON.CONSTRAINT_TYPE = 'R'          AND
-							FKCOLS.POSITION       = PKCOLS.POSITION AND
-							FKCON.OWNER IN ('TEST') AND
-							PKCON.OWNER IN ('TEST')
+-- Oracle.11.Managed Oracle11
+
+SELECT
+	FKCON.CONSTRAINT_NAME                  as Name,
+	FKCON.OWNER || '.' || FKCON.TABLE_NAME as ThisTableID,
+	FKCOLS.COLUMN_NAME                     as ThisColumn,
+	PKCON.OWNER || '.' || PKCON.TABLE_NAME as OtherTableID,
+	PKCOLS.COLUMN_NAME                     as OtherColumn,
+	FKCOLS.POSITION                        as Ordinal
+FROM
+	ALL_CONSTRAINTS FKCON
+		JOIN ALL_CONS_COLUMNS FKCOLS ON
+			FKCOLS.OWNER           = FKCON.OWNER      AND
+			FKCOLS.TABLE_NAME      = FKCON.TABLE_NAME AND
+			FKCOLS.CONSTRAINT_NAME = FKCON.CONSTRAINT_NAME
+	JOIN
+	ALL_CONSTRAINTS  PKCON
+		JOIN ALL_CONS_COLUMNS PKCOLS ON
+			PKCOLS.OWNER           = PKCON.OWNER      AND
+			PKCOLS.TABLE_NAME      = PKCON.TABLE_NAME AND
+			PKCOLS.CONSTRAINT_NAME = PKCON.CONSTRAINT_NAME
+	ON
+		PKCON.OWNER           = FKCON.R_OWNER AND
+		PKCON.CONSTRAINT_NAME = FKCON.R_CONSTRAINT_NAME
+WHERE
+	FKCON.CONSTRAINT_TYPE = 'R'          AND
+	FKCOLS.POSITION       = PKCOLS.POSITION AND
+	FKCON.OWNER IN ('TEST') AND
+	PKCON.OWNER IN ('TEST')
 
 -- Oracle.11.Managed Oracle11
 
@@ -147,7 +144,7 @@ ORDER BY
 
 -- Oracle.11.Managed Oracle11
 
-SELECT
+SELECT	
 	OWNER          AS Owner,
 	PACKAGE_NAME   AS PackageName,
 	OBJECT_NAME    AS ProcedureName,
