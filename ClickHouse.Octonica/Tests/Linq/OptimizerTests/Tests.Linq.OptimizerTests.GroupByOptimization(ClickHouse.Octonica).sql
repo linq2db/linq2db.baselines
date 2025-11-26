@@ -10,7 +10,7 @@ SELECT
 	s.DataKey32,
 	s.DataKey33,
 	s.ValueStr,
-	u.UCount,
+	u.Count_1,
 	nu.Count_1
 FROM
 	SecondOptimizerData s
@@ -20,7 +20,7 @@ FROM
 				g_1.DataKey22 as DataKey22,
 				g_1.Key1 as Key1,
 				g_1.Key2 as Key2,
-				COUNT(*) as UCount
+				COUNT(*) as Count_1
 			FROM
 				FirstOptimizerData g_1
 			GROUP BY
