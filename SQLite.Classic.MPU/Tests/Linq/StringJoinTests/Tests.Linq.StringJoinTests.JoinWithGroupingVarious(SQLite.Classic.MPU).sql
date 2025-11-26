@@ -4,11 +4,11 @@ SELECT
 	[t1].[Key_1],
 	(
 		SELECT
-			Coalesce(GROUP_CONCAT(Coalesce([t2].[NullableDistinct], ''), ', '), '')
+			Coalesce(GROUP_CONCAT(Coalesce([t2].[NullableValue], ''), ', '), '')
 		FROM
 			(
 				SELECT DISTINCT
-					[t].[NullableValue] as [NullableDistinct]
+					[t].[NullableValue]
 				FROM
 					[SampleClass] [t]
 				WHERE
@@ -17,11 +17,11 @@ SELECT
 	),
 	(
 		SELECT
-			Coalesce(GROUP_CONCAT(Coalesce([t3].[NullableDistinctNotNullDistinct], ''), ', '), '')
+			Coalesce(GROUP_CONCAT(Coalesce([t3].[NullableValue], ''), ', '), '')
 		FROM
 			(
 				SELECT DISTINCT
-					[t_1].[NullableValue] as [NullableDistinctNotNullDistinct]
+					[t_1].[NullableValue]
 				FROM
 					[SampleClass] [t_1]
 				WHERE
@@ -30,31 +30,31 @@ SELECT
 	),
 	(
 		SELECT
-			Coalesce(GROUP_CONCAT(Coalesce([t5].[NullableDistinctNotNullDistinctOrdered], ''), ', '), '')
+			Coalesce(GROUP_CONCAT(Coalesce([t5].[NullableValue], ''), ', '), '')
 		FROM
 			(
 				SELECT
-					[t4].[NullableDistinctNotNullDistinctOrdered]
+					[t4].[NullableValue]
 				FROM
 					(
 						SELECT DISTINCT
-							[t_2].[NullableValue] as [NullableDistinctNotNullDistinctOrdered]
+							[t_2].[NullableValue]
 						FROM
 							[SampleClass] [t_2]
 						WHERE
 							[t1].[Key_1] = [t_2].[Id] AND [t_2].[NullableValue] IS NOT NULL
 					) [t4]
 				ORDER BY
-					[t4].[NullableDistinctNotNullDistinctOrdered] DESC
+					[t4].[NullableValue] DESC
 			) [t5]
 	),
 	(
 		SELECT
-			Coalesce(GROUP_CONCAT([t6].[NotNullableDistinct], ', '), '')
+			Coalesce(GROUP_CONCAT([t6].[NotNullableValue], ', '), '')
 		FROM
 			(
 				SELECT DISTINCT
-					[t_3].[NotNullableValue] as [NotNullableDistinct]
+					[t_3].[NotNullableValue]
 				FROM
 					[SampleClass] [t_3]
 				WHERE
@@ -63,22 +63,22 @@ SELECT
 	),
 	(
 		SELECT
-			Coalesce(GROUP_CONCAT([t8].[NotNullableDistinctOrdered], ', '), '')
+			Coalesce(GROUP_CONCAT([t8].[NotNullableValue], ', '), '')
 		FROM
 			(
 				SELECT
-					[t7].[NotNullableDistinctOrdered]
+					[t7].[NotNullableValue]
 				FROM
 					(
 						SELECT DISTINCT
-							[t_4].[NotNullableValue] as [NotNullableDistinctOrdered]
+							[t_4].[NotNullableValue]
 						FROM
 							[SampleClass] [t_4]
 						WHERE
 							[t1].[Key_1] = [t_4].[Id]
 					) [t7]
 				ORDER BY
-					[t7].[NotNullableDistinctOrdered] DESC
+					[t7].[NotNullableValue] DESC
 			) [t8]
 	)
 FROM
