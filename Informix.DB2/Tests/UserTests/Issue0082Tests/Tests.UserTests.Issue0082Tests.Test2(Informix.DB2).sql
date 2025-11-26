@@ -33,7 +33,7 @@ FROM
 SELECT
 	x.ParentID,
 	x.CountResult,
-	x.Sum_1
+	x.SumResult
 FROM
 	(
 		SELECT
@@ -53,7 +53,7 @@ FROM
 					Child a_Children_1
 				WHERE
 					o.ParentID = a_Children_1.ParentID
-			) as Sum_1
+			) as SumResult
 		FROM
 			Parent o
 	) x
