@@ -50,15 +50,15 @@ SELECT
 		WHERE
 			[e2_1].[ReportsTo] = [employee].[ReportsTo]
 	),
-	[manager_1].[ManagerLastName],
-	[manager_1].[ManagerFirstName],
-	[manager_1].[ManagerNumberOfSubordinates]
+	[manager_1].[LastName],
+	[manager_1].[FirstName],
+	[manager_1].[NumberOfSubordinates]
 FROM
 	[Employees] [employee]
 		LEFT JOIN (
 			SELECT
-				[manager].[LastName] as [ManagerLastName],
-				[manager].[FirstName] as [ManagerFirstName],
+				[manager].[LastName],
+				[manager].[FirstName],
 				(
 					SELECT
 						COUNT(*)
@@ -66,7 +66,7 @@ FROM
 						[Employees] [e2]
 					WHERE
 						[e2].[ReportsTo] = [manager].[ReportsTo]
-				) as [ManagerNumberOfSubordinates],
+				) as [NumberOfSubordinates],
 				[manager].[EmployeeID]
 			FROM
 				[Employees] [manager]

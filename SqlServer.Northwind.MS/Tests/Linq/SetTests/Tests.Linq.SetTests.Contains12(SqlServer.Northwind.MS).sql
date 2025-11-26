@@ -2,13 +2,13 @@
 
 SELECT
 	[g_2].[LastName],
-	[g_2].[cnt]
+	[g_2].[Count_2]
 FROM
 	(
 		SELECT
 			[a_Employee].[EmployeeID],
 			COUNT(*) as [Count_1],
-			COUNT(IIF([a_Employee].[FirstName] LIKE N'%an%' ESCAPE N'~', 1, NULL)) as [cnt],
+			COUNT(IIF([a_Employee].[FirstName] LIKE N'%an%' ESCAPE N'~', 1, NULL)) as [Count_2],
 			[a_Employee].[LastName]
 		FROM
 			[EmployeeTerritories] [g_1]
