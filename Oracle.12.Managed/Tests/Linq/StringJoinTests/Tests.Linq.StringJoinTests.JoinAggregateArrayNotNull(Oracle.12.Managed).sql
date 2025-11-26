@@ -14,16 +14,16 @@ SELECT
 				UNION ALL
 				SELECT t."NVarcharValue" FROM sys.dual) t4
 	),
-	t3."NotNullDistinctValue"
+	t3."Join_1"
 FROM
 	"SampleClass" t
 		OUTER APPLY (
 			SELECT
-				LISTAGG(Coalesce(t2."NotNullDistinctValue", ''), ', ') WITHIN GROUP (ORDER BY t2."NotNullDistinctValue") as "NotNullDistinctValue"
+				LISTAGG(Coalesce(t2."item_1", ''), ', ') WITHIN GROUP (ORDER BY t2."item_1") as "Join_1"
 			FROM
 				(
 					SELECT DISTINCT
-						t1."item" as "NotNullDistinctValue"
+						t1."item" as "item_1"
 					FROM
 						(
 							SELECT t."NullableValue" AS "item" FROM sys.dual

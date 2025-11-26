@@ -4,7 +4,7 @@ SET     @take = 10
 
 SELECT
 	a."PersonID" as ID,
-	a."PersonID" as "Id2"
+	a."PersonID" as ID_1
 FROM
 	"Person" a
 FETCH NEXT :take ROWS ONLY

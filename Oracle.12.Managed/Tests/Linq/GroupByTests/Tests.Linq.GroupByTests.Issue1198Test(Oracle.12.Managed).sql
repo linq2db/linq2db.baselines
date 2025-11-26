@@ -4,7 +4,7 @@ SELECT
 	COUNT(CASE
 		WHEN t."Status" = 3 THEN 1
 		ELSE NULL
-	END) as "MyGroupedCount"
+	END) as "Count_1"
 FROM
 	"Issue1192Table" t
 WHERE
