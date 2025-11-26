@@ -2,17 +2,17 @@
 
 SELECT
 	t1."Key_1",
-	t1."Join_1",
-	t1."Join_2",
-	t1."Join_3",
-	t1."Join_4",
+	t1."NullableDistinct",
+	t1."NullableDistinctNotNullDistinct",
+	t1."NullableDistinctNotNullDistinctOrdered",
+	t1."NotNullableDistinct",
 	(
 		SELECT
-			Coalesce(STRING_AGG(t2."NotNullableValue", ', ' ORDER BY t2."NotNullableValue" DESC NULLS FIRST), '')
+			Coalesce(STRING_AGG(t2."NotNullableDistinctOrdered", ', ' ORDER BY t2."NotNullableDistinctOrdered" DESC NULLS FIRST), '')
 		FROM
 			(
 				SELECT DISTINCT
-					t."NotNullableValue"
+					t."NotNullableValue" as "NotNullableDistinctOrdered"
 				FROM
 					"SampleClass" t
 				WHERE
@@ -23,10 +23,10 @@ FROM
 	(
 		SELECT
 			g_1."Id" as "Key_1",
-			STRING_AGG(DISTINCT Coalesce(g_1."NullableValue", ''), ', ') as "Join_1",
-			Coalesce(STRING_AGG(DISTINCT g_1."NullableValue", ', '), '') as "Join_2",
-			Coalesce(STRING_AGG(DISTINCT g_1."NullableValue", ', ' ORDER BY g_1."NullableValue" DESC), '') as "Join_3",
-			STRING_AGG(DISTINCT g_1."NotNullableValue", ', ') as "Join_4"
+			STRING_AGG(DISTINCT Coalesce(g_1."NullableValue", ''), ', ') as "NullableDistinct",
+			Coalesce(STRING_AGG(DISTINCT g_1."NullableValue", ', '), '') as "NullableDistinctNotNullDistinct",
+			Coalesce(STRING_AGG(DISTINCT g_1."NullableValue", ', ' ORDER BY g_1."NullableValue" DESC), '') as "NullableDistinctNotNullDistinctOrdered",
+			STRING_AGG(DISTINCT g_1."NotNullableValue", ', ') as "NotNullableDistinct"
 		FROM
 			"SampleClass" g_1
 		GROUP BY
