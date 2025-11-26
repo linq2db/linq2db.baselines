@@ -3,22 +3,22 @@
 SELECT
 	(
 		SELECT
-			AVG(CAST(`t2`.`Average` AS DOUBLE))
+			AVG(CAST(`t2`.`DetailId` AS DOUBLE))
 		FROM
 			(
 				SELECT
-					`t1`.`Average`
+					`t1`.`DetailId`
 				FROM
 					(
 						SELECT DISTINCT
-							`a_Details`.`DetailId` as `Average`
+							`a_Details`.`DetailId`
 						FROM
 							`DetailClass` `a_Details`
 						WHERE
 							`m_1`.`Id1` = `a_Details`.`MasterId`
 					) `t1`
 				ORDER BY
-					`t1`.`Average`
+					`t1`.`DetailId`
 				LIMIT 1, 5
 			) `t2`
 	)
