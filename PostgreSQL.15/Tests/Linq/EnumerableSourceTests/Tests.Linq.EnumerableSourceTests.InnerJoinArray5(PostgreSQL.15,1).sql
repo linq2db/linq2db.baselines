@@ -8,7 +8,8 @@ SELECT
 	p."Gender"
 FROM
 	(VALUES
-		('Janet'), ('Doe'), ('John'), ('Doe')
-	) n(item)
+		('Janet','Janet'), ('Doe','Doe'), ('John','John'),
+		('Doe','Doe')
+	) n(item, item0)
 		INNER JOIN "Person" p ON n.item = p."LastName"
 
