@@ -53,7 +53,7 @@ VALUES
 
 SELECT
 	[tupledArg].[Id],
-	[tupledArg].[Name],
+	[tupledArg].[Name] as [Item2],
 	[arg2].[Id] as [Id_1],
 	[arg2].[Text]
 FROM

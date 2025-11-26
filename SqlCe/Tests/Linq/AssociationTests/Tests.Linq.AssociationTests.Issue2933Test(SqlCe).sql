@@ -2,13 +2,13 @@
 
 SELECT
 	[x].[Id],
-	[t1].[Name]
+	[t1].[PetName]
 FROM
 	[Issue2933Car] [x]
 		LEFT JOIN [Issue2933Person] [a_Person] ON [x].[PersonId] = [a_Person].[Id]
 		OUTER APPLY (
 			SELECT TOP (1)
-				[a_PetIds].[Name]
+				[a_PetIds].[Name] as [PetName]
 			FROM
 				[Issue2933Pet] [a_PetIds]
 			WHERE

@@ -65,7 +65,7 @@ ORDER BY
 
 SELECT
 	[tupledArg].[Id],
-	[tupledArg].[Name]
+	[tupledArg].[Name] as [Item2]
 FROM
 	[Names] [tupledArg]
 ORDER BY

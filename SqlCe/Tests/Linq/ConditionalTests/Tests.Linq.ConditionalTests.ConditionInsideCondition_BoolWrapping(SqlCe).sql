@@ -14,7 +14,7 @@ SELECT
 			WHEN [p].[ParentID] < 5 THEN 1
 			ELSE 0
 		END
-	END as [c1]
+	END as [Value_1]
 FROM
 	[Parent] [p]
 

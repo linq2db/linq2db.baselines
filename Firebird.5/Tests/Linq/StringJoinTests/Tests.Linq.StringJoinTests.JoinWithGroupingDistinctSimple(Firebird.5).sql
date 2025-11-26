@@ -20,22 +20,22 @@ SELECT
 	),
 	(
 		SELECT
-			Coalesce(LIST(DISTINCT "t4"."c1", ', '), '')
+			Coalesce(LIST(DISTINCT "t4"."NotNullableOrderedNulls", ', '), '')
 		FROM
 			(
 				SELECT
-					"t3"."c1"
+					"t3"."NotNullableOrderedNulls"
 				FROM
 					(
 						SELECT
-							Coalesce("x"."NullableValue", '') as "c1"
+							Coalesce("x"."NullableValue", '') as "NotNullableOrderedNulls"
 						FROM
 							"SampleClass" "x"
 						WHERE
 							"t1"."Key_1" = "x"."Id"
 					) "t3"
 				ORDER BY
-					"t3"."c1"
+					"t3"."NotNullableOrderedNulls"
 			) "t4"
 	)
 FROM

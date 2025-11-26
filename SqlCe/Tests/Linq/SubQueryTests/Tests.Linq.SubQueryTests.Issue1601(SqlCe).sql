@@ -4,8 +4,8 @@ SELECT
 	CASE
 		WHEN [t2].[x] < 0 THEN 9
 		ELSE [t2].[x] + 8
-	END as [c1],
-	[t2].[x] + [t2].[x] as [c2]
+	END as [Y1],
+	[t2].[x] + [t2].[x] as [Y2]
 FROM
 	[LinqDataTypes] [q]
 		LEFT JOIN (

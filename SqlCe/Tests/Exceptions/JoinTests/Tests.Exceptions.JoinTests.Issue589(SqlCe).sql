@@ -3,15 +3,15 @@
 SELECT
 	[grandChild_1].[GrandChildID],
 	[child_1].[ChildID],
-	[a_Parent].[ParentID],
-	[pf_1].[GrandChildID] as [GrandChildID_1]
+	[a_Parent].[ParentID] as [ParentParentId],
+	[pf_1].[Tmp]
 FROM
 	[GrandChild] [grandChild_1]
 		INNER JOIN [Child] [child_1] ON [grandChild_1].[ChildID] = [child_1].[ChildID]
 		LEFT JOIN [Parent] [a_Parent] ON [child_1].[ParentID] = [a_Parent].[ParentID]
 		OUTER APPLY (
 			SELECT TOP (1)
-				[grandChild1].[GrandChildID]
+				[grandChild1].[GrandChildID] as [Tmp]
 			FROM
 				[Child] [pf]
 					INNER JOIN [Parent] [parent1] ON [pf].[ParentID] = [parent1].[ParentID]

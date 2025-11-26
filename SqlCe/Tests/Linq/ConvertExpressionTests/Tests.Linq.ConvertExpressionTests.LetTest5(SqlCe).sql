@@ -12,10 +12,10 @@ SELECT
 		)
 			THEN 1
 		ELSE 0
-	END as [c1],
+	END as [Any_1],
 	[t1].[Count_1],
-	[t2].[ParentID],
-	[t3].[ParentID] as [ParentID_1],
+	[t2].[First1],
+	[t3].[ParentID],
 	[t3].[ChildID]
 FROM
 	[Parent] [p]
@@ -29,7 +29,7 @@ FROM
 		) [t1]
 		OUTER APPLY (
 			SELECT TOP (1)
-				[c_2].[ParentID]
+				[c_2].[ParentID] as [First1]
 			FROM
 				[Child] [c_2]
 			WHERE

@@ -2,11 +2,11 @@
 
 SELECT
 	[g_2].[ParentID],
-	MIN([g_2].[ChildID]) as [Min_1],
+	MIN([g_2].[ChildID]) as [ChildMin],
 	COUNT(CASE
 		WHEN [g_2].[ChildID] > 25 THEN 1
 		ELSE NULL
-	END) as [Count_1]
+	END) as [ChildCount]
 FROM
 	(
 		SELECT

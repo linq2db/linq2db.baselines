@@ -1,12 +1,12 @@
 ﻿-- SqlCe
 
 SELECT
-	[t1].[Max_1]
+	[t1].[max_1]
 FROM
 	[Parent] [p]
 		OUTER APPLY (
 			SELECT
-				MAX([a_Children].[ParentID]) as [Max_1]
+				MAX([a_Children].[ParentID]) as [max_1]
 			FROM
 				[Child] [a_Children]
 			WHERE

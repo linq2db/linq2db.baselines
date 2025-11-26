@@ -14,22 +14,22 @@ FROM
 		) [t1]
 		OUTER APPLY (
 			SELECT
-				AVG(CAST([t3].[DetailId] AS Float)) as [Average]
+				AVG(CAST([t3].[Average] AS Float)) as [Average]
 			FROM
 				(
 					SELECT
-						[t2].[DetailId]
+						[t2].[Average]
 					FROM
 						(
 							SELECT DISTINCT
-								[a_Details_1].[DetailId]
+								[a_Details_1].[DetailId] as [Average]
 							FROM
 								[DetailClass] [a_Details_1]
 							WHERE
 								[m_1].[Id1] = [a_Details_1].[MasterId]
 						) [t2]
 					ORDER BY
-						[t2].[DetailId]
+						[t2].[Average]
 					OFFSET 1 ROWS FETCH NEXT 5 ROWS ONLY 
 				) [t3]
 		) [t4]

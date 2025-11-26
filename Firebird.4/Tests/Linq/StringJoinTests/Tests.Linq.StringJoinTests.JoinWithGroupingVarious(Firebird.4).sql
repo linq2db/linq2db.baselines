@@ -4,11 +4,11 @@ SELECT
 	"t1"."Key_1",
 	(
 		SELECT
-			Coalesce(LIST(Coalesce("t2"."NullableValue", ''), ', '), '')
+			Coalesce(LIST(Coalesce("t2"."NullableDistinct", ''), ', '), '')
 		FROM
 			(
 				SELECT DISTINCT
-					"t"."NullableValue"
+					"t"."NullableValue" as "NullableDistinct"
 				FROM
 					"SampleClass" "t"
 				WHERE
@@ -17,11 +17,11 @@ SELECT
 	),
 	(
 		SELECT
-			Coalesce(LIST(Coalesce("t3"."NullableValue", ''), ', '), '')
+			Coalesce(LIST(Coalesce("t3"."NullableDistinctNotNullDistinct", ''), ', '), '')
 		FROM
 			(
 				SELECT DISTINCT
-					"t_1"."NullableValue"
+					"t_1"."NullableValue" as "NullableDistinctNotNullDistinct"
 				FROM
 					"SampleClass" "t_1"
 				WHERE
@@ -30,31 +30,31 @@ SELECT
 	),
 	(
 		SELECT
-			Coalesce(LIST(Coalesce("t5"."NullableValue", ''), ', '), '')
+			Coalesce(LIST(Coalesce("t5"."NullableDistinctNotNullDistinctOrdered", ''), ', '), '')
 		FROM
 			(
 				SELECT
-					"t4"."NullableValue"
+					"t4"."NullableDistinctNotNullDistinctOrdered"
 				FROM
 					(
 						SELECT DISTINCT
-							"t_2"."NullableValue"
+							"t_2"."NullableValue" as "NullableDistinctNotNullDistinctOrdered"
 						FROM
 							"SampleClass" "t_2"
 						WHERE
 							"t1"."Key_1" = "t_2"."Id" AND "t_2"."NullableValue" IS NOT NULL
 					) "t4"
 				ORDER BY
-					"t4"."NullableValue" DESC
+					"t4"."NullableDistinctNotNullDistinctOrdered" DESC
 			) "t5"
 	),
 	(
 		SELECT
-			Coalesce(LIST("t6"."NotNullableValue", ', '), '')
+			Coalesce(LIST("t6"."NotNullableDistinct", ', '), '')
 		FROM
 			(
 				SELECT DISTINCT
-					"t_3"."NotNullableValue"
+					"t_3"."NotNullableValue" as "NotNullableDistinct"
 				FROM
 					"SampleClass" "t_3"
 				WHERE
@@ -63,22 +63,22 @@ SELECT
 	),
 	(
 		SELECT
-			Coalesce(LIST("t8"."NotNullableValue", ', '), '')
+			Coalesce(LIST("t8"."NotNullableDistinctOrdered", ', '), '')
 		FROM
 			(
 				SELECT
-					"t7"."NotNullableValue"
+					"t7"."NotNullableDistinctOrdered"
 				FROM
 					(
 						SELECT DISTINCT
-							"t_4"."NotNullableValue"
+							"t_4"."NotNullableValue" as "NotNullableDistinctOrdered"
 						FROM
 							"SampleClass" "t_4"
 						WHERE
 							"t1"."Key_1" = "t_4"."Id"
 					) "t7"
 				ORDER BY
-					"t7"."NotNullableValue" DESC
+					"t7"."NotNullableDistinctOrdered" DESC
 			) "t8"
 	)
 FROM

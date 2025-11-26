@@ -8,13 +8,13 @@ SELECT
 	COUNT(*) OVER(),
 	x."Key_1",
 	x."Count_1",
-	x."Max_1"
+	x."HighestFirstName"
 FROM
 	(
 		SELECT
 			summary."LastName" as "Key_1",
 			COUNT(*) as "Count_1",
-			MAX(summary."FirstName") as "Max_1"
+			MAX(summary."FirstName") as "HighestFirstName"
 		FROM
 			"Person" summary
 		GROUP BY

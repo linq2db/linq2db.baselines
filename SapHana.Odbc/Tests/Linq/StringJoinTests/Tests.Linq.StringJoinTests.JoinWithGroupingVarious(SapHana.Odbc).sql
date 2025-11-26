@@ -4,11 +4,11 @@ SELECT
 	"t1"."Key_1",
 	(
 		SELECT
-			Coalesce(STRING_AGG(Coalesce("t2"."NullableValue", ''), ', '), '')
+			Coalesce(STRING_AGG(Coalesce("t2"."NullableDistinct", ''), ', '), '')
 		FROM
 			(
 				SELECT DISTINCT
-					"t"."NullableValue"
+					"t"."NullableValue" as "NullableDistinct"
 				FROM
 					"SampleClass" "t"
 				WHERE
@@ -17,11 +17,11 @@ SELECT
 	),
 	(
 		SELECT
-			Coalesce(STRING_AGG(Coalesce("t3"."NullableValue", ''), ', '), '')
+			Coalesce(STRING_AGG(Coalesce("t3"."NullableDistinctNotNullDistinct", ''), ', '), '')
 		FROM
 			(
 				SELECT DISTINCT
-					"t_1"."NullableValue"
+					"t_1"."NullableValue" as "NullableDistinctNotNullDistinct"
 				FROM
 					"SampleClass" "t_1"
 				WHERE
@@ -30,11 +30,11 @@ SELECT
 	),
 	(
 		SELECT
-			Coalesce(STRING_AGG(Coalesce("t4"."NullableValue", ''), ', ' ORDER BY "t4"."NullableValue" DESC NULLS FIRST), '')
+			Coalesce(STRING_AGG(Coalesce("t4"."NullableDistinctNotNullDistinctOrdered", ''), ', ' ORDER BY "t4"."NullableDistinctNotNullDistinctOrdered" DESC NULLS FIRST), '')
 		FROM
 			(
 				SELECT DISTINCT
-					"t_2"."NullableValue"
+					"t_2"."NullableValue" as "NullableDistinctNotNullDistinctOrdered"
 				FROM
 					"SampleClass" "t_2"
 				WHERE
@@ -43,11 +43,11 @@ SELECT
 	),
 	(
 		SELECT
-			Coalesce(STRING_AGG("t5"."NotNullableValue", ', '), '')
+			Coalesce(STRING_AGG("t5"."NotNullableDistinct", ', '), '')
 		FROM
 			(
 				SELECT DISTINCT
-					"t_3"."NotNullableValue"
+					"t_3"."NotNullableValue" as "NotNullableDistinct"
 				FROM
 					"SampleClass" "t_3"
 				WHERE
@@ -56,11 +56,11 @@ SELECT
 	),
 	(
 		SELECT
-			Coalesce(STRING_AGG("t6"."NotNullableValue", ', ' ORDER BY "t6"."NotNullableValue" DESC NULLS FIRST), '')
+			Coalesce(STRING_AGG("t6"."NotNullableDistinctOrdered", ', ' ORDER BY "t6"."NotNullableDistinctOrdered" DESC NULLS FIRST), '')
 		FROM
 			(
 				SELECT DISTINCT
-					"t_4"."NotNullableValue"
+					"t_4"."NotNullableValue" as "NotNullableDistinctOrdered"
 				FROM
 					"SampleClass" "t_4"
 				WHERE

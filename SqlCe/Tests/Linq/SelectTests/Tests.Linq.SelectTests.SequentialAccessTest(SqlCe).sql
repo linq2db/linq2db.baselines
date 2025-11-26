@@ -3,9 +3,9 @@
 SELECT
 	[p].[FirstName],
 	[p].[PersonID] as [ID],
-	[p].[PersonID],
+	[p].[PersonID] as [IDNullable],
 	[p].[LastName],
-	[p].[FirstName] + ' ' + [p].[LastName] as [c1]
+	[p].[FirstName] + ' ' + [p].[LastName] as [FullName]
 FROM
 	[Person] [p]
 

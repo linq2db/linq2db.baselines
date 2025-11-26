@@ -2,7 +2,7 @@
 
 SELECT
 	[p].[PersonID] as [ID],
-	Coalesce([m_2].[MiddleName], 'default2') as [c1]
+	Coalesce([m_2].[MiddleName], 'default2') as [MiddleName]
 FROM
 	[Person] [p]
 		LEFT JOIN (

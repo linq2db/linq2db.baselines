@@ -679,179 +679,179 @@ SELECT
 	COUNT(CASE
 		WHEN [g_1].[Boolean] = 1 THEN 1
 		ELSE NULL
-	END) as [Count_2],
+	END) as [Count_Explicit],
 	COUNT(CASE
 		WHEN [g_1].[BooleanN] = 1 THEN 1
 		ELSE NULL
-	END) as [Count_3],
+	END) as [CountN],
 	COUNT(CASE
 		WHEN [g_1].[Boolean] = 0 THEN 1
 		ELSE NULL
-	END) as [Count_4],
+	END) as [Count_False],
 	COUNT(CASE
 		WHEN [g_1].[BooleanN] = 0 THEN 1
 		ELSE NULL
-	END) as [Count_5],
+	END) as [CountN_False],
 	COUNT(CASE
 		WHEN [g_1].[Boolean] = 0 THEN 1
 		ELSE NULL
-	END) as [Count_6],
+	END) as [Count_NotTrue],
 	COUNT(CASE
 		WHEN [g_1].[BooleanN] = 0 OR [g_1].[BooleanN] IS NULL THEN 1
 		ELSE NULL
-	END) as [Count_7],
+	END) as [CountN_NotTrue],
 	COUNT(CASE
 		WHEN [g_1].[Boolean] = 1 THEN 1
 		ELSE NULL
-	END) as [Count_8],
+	END) as [Count_NotFalse],
 	COUNT(CASE
 		WHEN [g_1].[BooleanN] = 1 OR [g_1].[BooleanN] IS NULL THEN 1
 		ELSE NULL
-	END) as [Count_9],
+	END) as [CountN_NotFalse],
 	COUNT(CASE
 		WHEN [g_1].[Int32] = 0 THEN 1
 		ELSE NULL
-	END) as [Count_10],
+	END) as [CountInt32],
 	COUNT(CASE
 		WHEN [g_1].[Int32N] = 0 THEN 1
 		ELSE NULL
-	END) as [Count_11],
+	END) as [Count32N],
 	COUNT(CASE
 		WHEN [g_1].[Decimal] = 0 THEN 1
 		ELSE NULL
-	END) as [Count_12],
+	END) as [CountDecimal],
 	COUNT(CASE
 		WHEN [g_1].[DecimalN] = 0 THEN 1
 		ELSE NULL
-	END) as [Count_13],
+	END) as [CountDecimalN],
 	COUNT(CASE
 		WHEN [g_1].[Double] = 0 THEN 1
 		ELSE NULL
-	END) as [Count_14],
+	END) as [CountDouble],
 	COUNT(CASE
 		WHEN [g_1].[DoubleN] = 0 THEN 1
 		ELSE NULL
-	END) as [Count_15],
+	END) as [CountDoubleN],
 	COUNT(CASE
 		WHEN [g_1].[Int32] <> 0 THEN 1
 		ELSE NULL
-	END) as [Count_16],
+	END) as [CountInt32_NotEqual],
 	COUNT(CASE
 		WHEN [g_1].[Int32N] <> 0 OR [g_1].[Int32N] IS NULL THEN 1
 		ELSE NULL
-	END) as [Count_17],
+	END) as [Count32N_NotEqual],
 	COUNT(CASE
 		WHEN [g_1].[Decimal] <> 0 THEN 1
 		ELSE NULL
-	END) as [Count_18],
+	END) as [CountDecimal_NotEqual],
 	COUNT(CASE
 		WHEN [g_1].[DecimalN] <> 0 OR [g_1].[DecimalN] IS NULL THEN 1
 		ELSE NULL
-	END) as [Count_19],
+	END) as [CountDecimalN_NotEqual],
 	COUNT(CASE
 		WHEN [g_1].[Double] <> 0 THEN 1
 		ELSE NULL
-	END) as [Count_20],
+	END) as [CountDouble_NotEqual],
 	COUNT(CASE
 		WHEN [g_1].[DoubleN] <> 0 OR [g_1].[DoubleN] IS NULL THEN 1
 		ELSE NULL
-	END) as [Count_21],
+	END) as [CountDoubleN_NotEqual],
 	COUNT(CASE
 		WHEN [g_1].[Int32] > 0 THEN 1
 		ELSE NULL
-	END) as [Count_22],
+	END) as [CountInt32_Greater],
 	COUNT(CASE
 		WHEN [g_1].[Int32N] > 0 THEN 1
 		ELSE NULL
-	END) as [Count_23],
+	END) as [Count32N_Greater],
 	COUNT(CASE
 		WHEN [g_1].[Decimal] > 0 THEN 1
 		ELSE NULL
-	END) as [Count_24],
+	END) as [CountDecimal_Greater],
 	COUNT(CASE
 		WHEN [g_1].[DecimalN] > 0 THEN 1
 		ELSE NULL
-	END) as [Count_25],
+	END) as [CountDecimalN_Greater],
 	COUNT(CASE
 		WHEN [g_1].[Double] > 0 THEN 1
 		ELSE NULL
-	END) as [Count_26],
+	END) as [CountDouble_Greater],
 	COUNT(CASE
 		WHEN [g_1].[DoubleN] > 0 THEN 1
 		ELSE NULL
-	END) as [Count_27],
+	END) as [CountDoubleN_Greater],
 	COUNT(CASE
 		WHEN [g_1].[Int32] < 0 THEN 1
 		ELSE NULL
-	END) as [Count_28],
+	END) as [CountInt32_Less],
 	COUNT(CASE
 		WHEN [g_1].[Int32N] < 0 THEN 1
 		ELSE NULL
-	END) as [Count_29],
+	END) as [Count32N_Less],
 	COUNT(CASE
 		WHEN [g_1].[Decimal] < 0 THEN 1
 		ELSE NULL
-	END) as [Count_30],
+	END) as [CountDecimal_Less],
 	COUNT(CASE
 		WHEN [g_1].[DecimalN] < 0 THEN 1
 		ELSE NULL
-	END) as [Count_31],
+	END) as [CountDecimalN_Less],
 	COUNT(CASE
 		WHEN [g_1].[Double] < 0 THEN 1
 		ELSE NULL
-	END) as [Count_32],
+	END) as [CountDouble_Less],
 	COUNT(CASE
 		WHEN [g_1].[DoubleN] < 0 THEN 1
 		ELSE NULL
-	END) as [Count_33],
+	END) as [CountDoubleN_Less],
 	COUNT(CASE
 		WHEN [g_1].[Int32] >= 0 THEN 1
 		ELSE NULL
-	END) as [Count_34],
+	END) as [CountInt32_GreaterEqual],
 	COUNT(CASE
 		WHEN [g_1].[Int32N] >= 0 THEN 1
 		ELSE NULL
-	END) as [Count_35],
+	END) as [Count32N_GreaterEqual],
 	COUNT(CASE
 		WHEN [g_1].[Decimal] >= 0 THEN 1
 		ELSE NULL
-	END) as [Count_36],
+	END) as [CountDecimal_GreaterEqual],
 	COUNT(CASE
 		WHEN [g_1].[DecimalN] >= 0 THEN 1
 		ELSE NULL
-	END) as [Count_37],
+	END) as [CountDecimalN_GreaterEqual],
 	COUNT(CASE
 		WHEN [g_1].[Double] >= 0 THEN 1
 		ELSE NULL
-	END) as [Count_38],
+	END) as [CountDouble_GreaterEqual],
 	COUNT(CASE
 		WHEN [g_1].[DoubleN] >= 0 THEN 1
 		ELSE NULL
-	END) as [Count_39],
+	END) as [CountDoubleN_GreaterEqual],
 	COUNT(CASE
 		WHEN [g_1].[Int32] <= 0 THEN 1
 		ELSE NULL
-	END) as [Count_40],
+	END) as [CountInt32_LessEqual],
 	COUNT(CASE
 		WHEN [g_1].[Int32N] <= 0 THEN 1
 		ELSE NULL
-	END) as [Count_41],
+	END) as [Count32N_LessEqual],
 	COUNT(CASE
 		WHEN [g_1].[Decimal] <= 0 THEN 1
 		ELSE NULL
-	END) as [Count_42],
+	END) as [CountDecimal_LessEqual],
 	COUNT(CASE
 		WHEN [g_1].[DecimalN] <= 0 THEN 1
 		ELSE NULL
-	END) as [Count_43],
+	END) as [CountDecimalN_LessEqual],
 	COUNT(CASE
 		WHEN [g_1].[Double] <= 0 THEN 1
 		ELSE NULL
-	END) as [Count_44],
+	END) as [CountDouble_LessEqual],
 	COUNT(CASE
 		WHEN [g_1].[DoubleN] <= 0 THEN 1
 		ELSE NULL
-	END) as [Count_45]
+	END) as [CountDoubleN_LessEqual]
 FROM
 	[BooleanTable] [g_1]
 GROUP BY
@@ -2388,179 +2388,179 @@ SELECT
 	COUNT(CASE
 		WHEN [g_1].[Boolean] = 1 THEN 1
 		ELSE NULL
-	END) as [Count_2],
+	END) as [Count_Explicit],
 	COUNT(CASE
 		WHEN [g_1].[BooleanN] = 1 THEN 1
 		ELSE NULL
-	END) as [Count_3],
+	END) as [CountN],
 	COUNT(CASE
 		WHEN [g_1].[Boolean] = 0 THEN 1
 		ELSE NULL
-	END) as [Count_4],
+	END) as [Count_False],
 	COUNT(CASE
 		WHEN [g_1].[BooleanN] = 0 THEN 1
 		ELSE NULL
-	END) as [Count_5],
+	END) as [CountN_False],
 	COUNT(CASE
 		WHEN [g_1].[Boolean] = 0 THEN 1
 		ELSE NULL
-	END) as [Count_6],
+	END) as [Count_NotTrue],
 	COUNT(CASE
 		WHEN [g_1].[BooleanN] = 0 OR [g_1].[BooleanN] IS NULL THEN 1
 		ELSE NULL
-	END) as [Count_7],
+	END) as [CountN_NotTrue],
 	COUNT(CASE
 		WHEN [g_1].[Boolean] = 1 THEN 1
 		ELSE NULL
-	END) as [Count_8],
+	END) as [Count_NotFalse],
 	COUNT(CASE
 		WHEN [g_1].[BooleanN] = 1 OR [g_1].[BooleanN] IS NULL THEN 1
 		ELSE NULL
-	END) as [Count_9],
+	END) as [CountN_NotFalse],
 	COUNT(CASE
 		WHEN [g_1].[Int32] = 0 THEN 1
 		ELSE NULL
-	END) as [Count_10],
+	END) as [CountInt32],
 	COUNT(CASE
 		WHEN [g_1].[Int32N] = 0 THEN 1
 		ELSE NULL
-	END) as [Count_11],
+	END) as [Count32N],
 	COUNT(CASE
 		WHEN [g_1].[Decimal] = 0 THEN 1
 		ELSE NULL
-	END) as [Count_12],
+	END) as [CountDecimal],
 	COUNT(CASE
 		WHEN [g_1].[DecimalN] = 0 THEN 1
 		ELSE NULL
-	END) as [Count_13],
+	END) as [CountDecimalN],
 	COUNT(CASE
 		WHEN [g_1].[Double] = 0 THEN 1
 		ELSE NULL
-	END) as [Count_14],
+	END) as [CountDouble],
 	COUNT(CASE
 		WHEN [g_1].[DoubleN] = 0 THEN 1
 		ELSE NULL
-	END) as [Count_15],
+	END) as [CountDoubleN],
 	COUNT(CASE
 		WHEN [g_1].[Int32] <> 0 THEN 1
 		ELSE NULL
-	END) as [Count_16],
+	END) as [CountInt32_NotEqual],
 	COUNT(CASE
 		WHEN [g_1].[Int32N] <> 0 OR [g_1].[Int32N] IS NULL THEN 1
 		ELSE NULL
-	END) as [Count_17],
+	END) as [Count32N_NotEqual],
 	COUNT(CASE
 		WHEN [g_1].[Decimal] <> 0 THEN 1
 		ELSE NULL
-	END) as [Count_18],
+	END) as [CountDecimal_NotEqual],
 	COUNT(CASE
 		WHEN [g_1].[DecimalN] <> 0 OR [g_1].[DecimalN] IS NULL THEN 1
 		ELSE NULL
-	END) as [Count_19],
+	END) as [CountDecimalN_NotEqual],
 	COUNT(CASE
 		WHEN [g_1].[Double] <> 0 THEN 1
 		ELSE NULL
-	END) as [Count_20],
+	END) as [CountDouble_NotEqual],
 	COUNT(CASE
 		WHEN [g_1].[DoubleN] <> 0 OR [g_1].[DoubleN] IS NULL THEN 1
 		ELSE NULL
-	END) as [Count_21],
+	END) as [CountDoubleN_NotEqual],
 	COUNT(CASE
 		WHEN [g_1].[Int32] > 0 THEN 1
 		ELSE NULL
-	END) as [Count_22],
+	END) as [CountInt32_Greater],
 	COUNT(CASE
 		WHEN [g_1].[Int32N] > 0 THEN 1
 		ELSE NULL
-	END) as [Count_23],
+	END) as [Count32N_Greater],
 	COUNT(CASE
 		WHEN [g_1].[Decimal] > 0 THEN 1
 		ELSE NULL
-	END) as [Count_24],
+	END) as [CountDecimal_Greater],
 	COUNT(CASE
 		WHEN [g_1].[DecimalN] > 0 THEN 1
 		ELSE NULL
-	END) as [Count_25],
+	END) as [CountDecimalN_Greater],
 	COUNT(CASE
 		WHEN [g_1].[Double] > 0 THEN 1
 		ELSE NULL
-	END) as [Count_26],
+	END) as [CountDouble_Greater],
 	COUNT(CASE
 		WHEN [g_1].[DoubleN] > 0 THEN 1
 		ELSE NULL
-	END) as [Count_27],
+	END) as [CountDoubleN_Greater],
 	COUNT(CASE
 		WHEN [g_1].[Int32] < 0 THEN 1
 		ELSE NULL
-	END) as [Count_28],
+	END) as [CountInt32_Less],
 	COUNT(CASE
 		WHEN [g_1].[Int32N] < 0 THEN 1
 		ELSE NULL
-	END) as [Count_29],
+	END) as [Count32N_Less],
 	COUNT(CASE
 		WHEN [g_1].[Decimal] < 0 THEN 1
 		ELSE NULL
-	END) as [Count_30],
+	END) as [CountDecimal_Less],
 	COUNT(CASE
 		WHEN [g_1].[DecimalN] < 0 THEN 1
 		ELSE NULL
-	END) as [Count_31],
+	END) as [CountDecimalN_Less],
 	COUNT(CASE
 		WHEN [g_1].[Double] < 0 THEN 1
 		ELSE NULL
-	END) as [Count_32],
+	END) as [CountDouble_Less],
 	COUNT(CASE
 		WHEN [g_1].[DoubleN] < 0 THEN 1
 		ELSE NULL
-	END) as [Count_33],
+	END) as [CountDoubleN_Less],
 	COUNT(CASE
 		WHEN [g_1].[Int32] >= 0 THEN 1
 		ELSE NULL
-	END) as [Count_34],
+	END) as [CountInt32_GreaterEqual],
 	COUNT(CASE
 		WHEN [g_1].[Int32N] >= 0 THEN 1
 		ELSE NULL
-	END) as [Count_35],
+	END) as [Count32N_GreaterEqual],
 	COUNT(CASE
 		WHEN [g_1].[Decimal] >= 0 THEN 1
 		ELSE NULL
-	END) as [Count_36],
+	END) as [CountDecimal_GreaterEqual],
 	COUNT(CASE
 		WHEN [g_1].[DecimalN] >= 0 THEN 1
 		ELSE NULL
-	END) as [Count_37],
+	END) as [CountDecimalN_GreaterEqual],
 	COUNT(CASE
 		WHEN [g_1].[Double] >= 0 THEN 1
 		ELSE NULL
-	END) as [Count_38],
+	END) as [CountDouble_GreaterEqual],
 	COUNT(CASE
 		WHEN [g_1].[DoubleN] >= 0 THEN 1
 		ELSE NULL
-	END) as [Count_39],
+	END) as [CountDoubleN_GreaterEqual],
 	COUNT(CASE
 		WHEN [g_1].[Int32] <= 0 THEN 1
 		ELSE NULL
-	END) as [Count_40],
+	END) as [CountInt32_LessEqual],
 	COUNT(CASE
 		WHEN [g_1].[Int32N] <= 0 THEN 1
 		ELSE NULL
-	END) as [Count_41],
+	END) as [Count32N_LessEqual],
 	COUNT(CASE
 		WHEN [g_1].[Decimal] <= 0 THEN 1
 		ELSE NULL
-	END) as [Count_42],
+	END) as [CountDecimal_LessEqual],
 	COUNT(CASE
 		WHEN [g_1].[DecimalN] <= 0 THEN 1
 		ELSE NULL
-	END) as [Count_43],
+	END) as [CountDecimalN_LessEqual],
 	COUNT(CASE
 		WHEN [g_1].[Double] <= 0 THEN 1
 		ELSE NULL
-	END) as [Count_44],
+	END) as [CountDouble_LessEqual],
 	COUNT(CASE
 		WHEN [g_1].[DoubleN] <= 0 THEN 1
 		ELSE NULL
-	END) as [Count_45]
+	END) as [CountDoubleN_LessEqual]
 FROM
 	[BooleanTable] [g_1]
 GROUP BY

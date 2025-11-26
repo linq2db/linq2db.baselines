@@ -4,7 +4,7 @@ SELECT
 	COUNT(CASE
 		WHEN [g_1].[ChildID] > 30 THEN 1
 		ELSE NULL
-	END) as [Count_1],
+	END) as [Cnt],
 	SUM(CASE
 		WHEN [g_1].[ChildID] > 30 THEN [g_1].[ChildID]
 		ELSE NULL
@@ -20,7 +20,7 @@ SELECT
 	AVG(CASE
 		WHEN [g_1].[ChildID] > 30 THEN [g_1].[ChildID]
 		ELSE NULL
-	END) as [Average]
+	END) as [Avg_1]
 FROM
 	[Child] [g_1]
 WHERE
