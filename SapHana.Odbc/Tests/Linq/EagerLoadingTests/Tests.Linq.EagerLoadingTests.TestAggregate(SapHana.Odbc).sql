@@ -7,22 +7,22 @@ FROM
 	"MasterClass" "m_1"
 		LEFT JOIN LATERAL (
 			SELECT
-				SUM("t2"."Sum_1") as "Sum_1"
+				SUM("t2"."DetailId") as "Sum_1"
 			FROM
 				(
 					SELECT
-						"t1"."Sum_1"
+						"t1"."DetailId"
 					FROM
 						(
 							SELECT DISTINCT
-								"a_Details"."DetailId" as "Sum_1"
+								"a_Details"."DetailId"
 							FROM
 								"DetailClass" "a_Details"
 							WHERE
 								"m_1"."Id1" = "a_Details"."MasterId"
 						) "t1"
 					ORDER BY
-						"t1"."Sum_1"
+						"t1"."DetailId"
 					LIMIT 5 OFFSET 1
 				) "t2"
 		) "t3" ON 1=1
@@ -36,14 +36,14 @@ FROM
 					FROM
 						(
 							SELECT DISTINCT
-								"a_Details_1"."DetailValue" as "Count_1"
+								"a_Details_1"."DetailValue"
 							FROM
 								"DetailClass" "a_Details_1"
 							WHERE
 								"m_1"."Id1" = "a_Details_1"."MasterId"
 						) "t4"
 					ORDER BY
-						"t4"."Count_1"
+						"t4"."DetailValue"
 					LIMIT 2 OFFSET 1
 				) "t5"
 		) "t6" ON 1=1

@@ -4,11 +4,11 @@ SELECT
 	SUBSTRING(Coalesce(', ' || "t"."NullableValue", '') || ', ' || "t"."NotNullableValue" || Coalesce(', ' || "t"."VarcharValue", '') || Coalesce(', ' || "t"."NVarcharValue", ''), 3),
 	(
 		SELECT
-			Coalesce(STRING_AGG(Coalesce("t2"."NotNullDistinctValue", ''), ', ' ORDER BY "t2"."NotNullDistinctValue" NULLS FIRST), '')
+			Coalesce(STRING_AGG(Coalesce("t2"."item_1", ''), ', ' ORDER BY "t2"."item_1" NULLS FIRST), '')
 		FROM
 			(
 				SELECT DISTINCT
-					"t1"."item" as "NotNullDistinctValue"
+					"t1"."item" as "item_1"
 				FROM
 					(
 						SELECT "t"."NullableValue" AS "item" FROM DUMMY

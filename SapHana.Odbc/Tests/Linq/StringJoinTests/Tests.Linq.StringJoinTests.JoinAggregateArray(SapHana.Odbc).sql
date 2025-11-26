@@ -4,11 +4,11 @@ SELECT
 	Coalesce("t"."NullableValue", '') || ', ' || "t"."NotNullableValue" || ', ' || Coalesce("t"."VarcharValue", '') || ', ' || Coalesce("t"."NVarcharValue", ''),
 	(
 		SELECT
-			Coalesce(STRING_AGG(Coalesce("t2"."AggregatedNotNullFilteredDistinct", ''), ', ' ORDER BY "t2"."AggregatedNotNullFilteredDistinct" NULLS FIRST), '')
+			Coalesce(STRING_AGG(Coalesce("t2"."item_1", ''), ', ' ORDER BY "t2"."item_1" NULLS FIRST), '')
 		FROM
 			(
 				SELECT DISTINCT
-					"t1"."item" as "AggregatedNotNullFilteredDistinct"
+					"t1"."item" as "item_1"
 				FROM
 					(
 						SELECT "t"."NotNullableValue" AS "item" FROM DUMMY
@@ -24,14 +24,14 @@ SELECT
 	),
 	(
 		SELECT
-			Coalesce(STRING_AGG(Coalesce("t4"."AggregatedFilteredDistinct", ''), ', ' ORDER BY CASE
-				WHEN "t4"."AggregatedFilteredDistinct" IS NULL THEN 0
+			Coalesce(STRING_AGG(Coalesce("t4"."item_1", ''), ', ' ORDER BY CASE
+				WHEN "t4"."item_1" IS NULL THEN 0
 				ELSE 1
-			END NULLS FIRST, "t4"."AggregatedFilteredDistinct" NULLS FIRST), '')
+			END NULLS FIRST, "t4"."item_1" NULLS FIRST), '')
 		FROM
 			(
 				SELECT DISTINCT
-					"t3"."item" as "AggregatedFilteredDistinct"
+					"t3"."item" as "item_1"
 				FROM
 					(
 						SELECT "t"."NotNullableValue" AS "item" FROM DUMMY
