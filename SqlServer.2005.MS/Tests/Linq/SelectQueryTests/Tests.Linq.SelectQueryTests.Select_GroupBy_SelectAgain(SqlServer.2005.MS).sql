@@ -8,19 +8,19 @@ SELECT
 	COUNT(*) OVER(),
 	[x].[Key_1],
 	[x].[Count_1],
-	[x].[Max_1]
+	[x].[HighestFirstName]
 FROM
 	(
 		SELECT
 			[t1].[Key_1],
 			[t1].[Count_1],
-			[t1].[Max_1]
+			[t1].[HighestFirstName]
 		FROM
 			(
 				SELECT
 					[summary].[LastName] as [Key_1],
 					COUNT(*) as [Count_1],
-					MAX([summary].[FirstName]) as [Max_1],
+					MAX([summary].[FirstName]) as [HighestFirstName],
 					ROW_NUMBER() OVER (ORDER BY (SELECT NULL)) as [RN]
 				FROM
 					[Person] [summary]

@@ -3,20 +3,20 @@
 SELECT
 	(
 		SELECT
-			SUM([t3].[DetailId])
+			SUM([t3].[Sum_1])
 		FROM
 			(
 				SELECT
-					[t2].[DetailId]
+					[t2].[Sum_1]
 				FROM
 					(
 						SELECT
-							[t1].[DetailId],
-							ROW_NUMBER() OVER (ORDER BY [t1].[DetailId]) as [RN]
+							[t1].[Sum_1],
+							ROW_NUMBER() OVER (ORDER BY [t1].[Sum_1]) as [RN]
 						FROM
 							(
 								SELECT DISTINCT
-									[a_Details].[DetailId]
+									[a_Details].[DetailId] as [Sum_1]
 								FROM
 									[DetailClass] [a_Details]
 								WHERE
@@ -37,11 +37,11 @@ SELECT
 				FROM
 					(
 						SELECT
-							ROW_NUMBER() OVER (ORDER BY [t4].[DetailValue]) as [RN]
+							ROW_NUMBER() OVER (ORDER BY [t4].[Count_1]) as [RN]
 						FROM
 							(
 								SELECT DISTINCT
-									[a_Details_1].[DetailValue]
+									[a_Details_1].[DetailValue] as [Count_1]
 								FROM
 									[DetailClass] [a_Details_1]
 								WHERE
