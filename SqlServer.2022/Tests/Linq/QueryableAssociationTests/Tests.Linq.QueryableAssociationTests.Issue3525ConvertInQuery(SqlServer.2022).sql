@@ -2,12 +2,12 @@
 
 SELECT
 	[i].[DocumentNo],
-	[t1].[ApplicationId]
+	[t1].[Id]
 FROM
 	[PropertyHistory] [i]
 		OUTER APPLY (
 			SELECT TOP (1)
-				[a_CustomerApplication].[Id] as [ApplicationId]
+				[a_CustomerApplication].[Id]
 			FROM
 				[CustomerApplication] [a_CustomerApplication]
 			WHERE
