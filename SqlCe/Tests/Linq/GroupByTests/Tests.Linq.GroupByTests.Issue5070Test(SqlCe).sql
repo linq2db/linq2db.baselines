@@ -3,7 +3,7 @@
 SELECT
 	[t_1].[FinalCustomerId],
 	[t_1].[IsActive],
-	SUM([t_1].[Amount]) as [Sum_1]
+	SUM([t_1].[Amount]) as [Amount]
 FROM
 	(
 		SELECT

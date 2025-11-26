@@ -15,8 +15,8 @@ FROM
 -- SqlCe
 
 SELECT
-	[a_A1].[ID] as [TypeCode],
-	[a_A2].[ID] as [TypeCode_1]
+	[a_A1].[ID] as [TC1],
+	[a_A2].[ID] as [TC2]
 FROM
 	[LinqDataTypes] [ia]
 		LEFT JOIN [LinqDataTypes] [a_A1] ON [ia].[GuidValue] = [a_A1].[GuidValue] AND [a_A1].[ID] = 2

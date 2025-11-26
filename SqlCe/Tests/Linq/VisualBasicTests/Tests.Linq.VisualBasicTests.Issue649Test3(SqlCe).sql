@@ -3,7 +3,7 @@
 SELECT
 	[a_Person].[personid],
 	[a_Person].[personname],
-	MAX([f].[added]) as [Max_1]
+	MAX([f].[added]) as [LastAdded]
 FROM
 	[activity649] [f]
 		INNER JOIN [person649] [a_Person] ON [f].[personid] = [a_Person].[personid]

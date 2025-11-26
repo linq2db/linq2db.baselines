@@ -1,10 +1,10 @@
 ﻿-- SqlCe
 
 SELECT
-	'*** p ***' + '4' as [c1],
-	'*** p ***' as [c2],
-	'*** [Parent] ***' as [c3],
-	'*** p_1.p ***' as [c4]
+	'*** p ***' + '4' as [alias2],
+	'*** p ***' as [alias1],
+	'*** [Parent] ***' as [alias3],
+	'*** p_1.p ***' as [alias4]
 FROM
 	[Child] [c_1]
 		INNER JOIN (

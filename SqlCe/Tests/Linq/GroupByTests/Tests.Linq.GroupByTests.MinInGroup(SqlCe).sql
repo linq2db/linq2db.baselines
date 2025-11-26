@@ -2,27 +2,27 @@
 
 SELECT
 	[g_2].[GroupId],
-	[g_2].[Min_1],
-	[g_2].[Min_2],
-	[g_2].[Min_3],
-	[g_2].[Min_4],
-	[t2].[Min_1] as [Min_5],
-	[t4].[Min_1] as [Min_6],
-	[t6].[Min_1] as [Min_7]
+	[g_2].[Simple_1],
+	[g_2].[Projection],
+	[g_2].[Filter_1],
+	[g_2].[FilterProjection],
+	[t2].[Distinct_1],
+	[t4].[FilterDistinct1],
+	[t6].[FilterDistinct2]
 FROM
 	(
 		SELECT
 			[g_1].[GroupId],
-			MIN([g_1].[DataValue]) as [Min_1],
-			MIN([g_1].[DataValue]) as [Min_2],
+			MIN([g_1].[DataValue]) as [Simple_1],
+			MIN([g_1].[DataValue]) as [Projection],
 			MIN(CASE
 				WHEN CAST([g_1].[DataValue] AS Int) % 2 = 0 THEN [g_1].[DataValue]
 				ELSE NULL
-			END) as [Min_3],
+			END) as [Filter_1],
 			MIN(CASE
 				WHEN CAST([g_1].[DataValue] AS Int) % 2 = 0 THEN [g_1].[DataValue]
 				ELSE NULL
-			END) as [Min_4]
+			END) as [FilterProjection]
 		FROM
 			[AggregationData] [g_1]
 		GROUP BY
@@ -30,11 +30,11 @@ FROM
 	) [g_2]
 		OUTER APPLY (
 			SELECT
-				MIN([t1].[DataValue]) as [Min_1]
+				MIN([t1].[Distinct_1]) as [Distinct_1]
 			FROM
 				(
 					SELECT DISTINCT
-						[t].[DataValue]
+						[t].[DataValue] as [Distinct_1]
 					FROM
 						[AggregationData] [t]
 					WHERE
@@ -43,11 +43,11 @@ FROM
 		) [t2]
 		OUTER APPLY (
 			SELECT
-				MIN([t3].[DataValue]) as [Min_1]
+				MIN([t3].[FilterDistinct1]) as [FilterDistinct1]
 			FROM
 				(
 					SELECT DISTINCT
-						[t_1].[DataValue]
+						[t_1].[DataValue] as [FilterDistinct1]
 					FROM
 						[AggregationData] [t_1]
 					WHERE
@@ -56,11 +56,11 @@ FROM
 		) [t4]
 		OUTER APPLY (
 			SELECT
-				MIN([t5].[DataValue]) as [Min_1]
+				MIN([t5].[FilterDistinct2]) as [FilterDistinct2]
 			FROM
 				(
 					SELECT DISTINCT
-						[t_2].[DataValue]
+						[t_2].[DataValue] as [FilterDistinct2]
 					FROM
 						[AggregationData] [t_2]
 					WHERE

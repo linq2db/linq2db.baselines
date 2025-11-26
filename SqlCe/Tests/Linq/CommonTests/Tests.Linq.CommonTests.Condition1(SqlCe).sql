@@ -6,7 +6,7 @@ SELECT
 		WHEN NOT ([p].[MiddleName] IS NULL OR LEN([p].[MiddleName] + '.') = 1)
 			THEN [p].[MiddleName]
 		ELSE [p].[LastName]
-	END as [c1]
+	END as [Name]
 FROM
 	[Person] [p]
 

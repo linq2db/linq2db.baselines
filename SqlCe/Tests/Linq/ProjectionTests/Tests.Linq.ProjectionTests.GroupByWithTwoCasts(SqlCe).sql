@@ -5,7 +5,7 @@ SET     @take = 1000
 SELECT TOP (@take)
 	[a_Patient].[Diagnosis],
 	[a_Patient].[PersonID],
-	AVG([auto16031].[PersonID]) as [Average]
+	AVG([auto16031].[PersonID]) as [y]
 FROM
 	[Person] [auto16031]
 		LEFT JOIN [Patient] [a_Patient] ON [auto16031].[PersonID] = [a_Patient].[PersonID]

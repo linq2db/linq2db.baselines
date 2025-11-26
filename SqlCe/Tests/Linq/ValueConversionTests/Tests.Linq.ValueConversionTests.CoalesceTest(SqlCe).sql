@@ -1,7 +1,7 @@
 ﻿-- SqlCe
 
 SELECT
-	Coalesce([t1].[EnumNullable], [t1].[Enum]) as [c1]
+	Coalesce([t1].[EnumNullable], [t1].[Enum]) as [Converted]
 FROM
 	[ValueConversion] [t1]
 

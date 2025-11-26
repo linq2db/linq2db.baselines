@@ -2,13 +2,13 @@
 
 SELECT
 	[t3].[ParentID],
-	[t1].[Count_1],
-	[t2].[Sum_1]
+	[t1].[CountResult],
+	[t2].[SumResult]
 FROM
 	[Parent] [t3]
 		OUTER APPLY (
 			SELECT
-				COUNT(*) as [Count_1]
+				COUNT(*) as [CountResult]
 			FROM
 				[Child] [od]
 			WHERE
@@ -16,7 +16,7 @@ FROM
 		) [t1]
 		OUTER APPLY (
 			SELECT
-				SUM([od_1].[ParentID]) as [Sum_1]
+				SUM([od_1].[ParentID]) as [SumResult]
 			FROM
 				[Child] [od_1]
 			WHERE
@@ -35,7 +35,7 @@ FROM
 SELECT
 	[x].[ParentID],
 	[t1].[CountResult],
-	[t2].[Sum_1]
+	[t2].[SumResult]
 FROM
 	[Parent] [x]
 		OUTER APPLY (
@@ -48,7 +48,7 @@ FROM
 		) [t1]
 		OUTER APPLY (
 			SELECT
-				SUM([od_1].[ParentID]) as [Sum_1]
+				SUM([od_1].[ParentID]) as [SumResult]
 			FROM
 				[Child] [od_1]
 			WHERE

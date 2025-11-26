@@ -7,7 +7,7 @@ DECLARE @x3 Int -- Int32
 SET     @x3 = 3
 
 SELECT
-	((((@x3 * (@y10 - @z2) / @x3) * @z2) * (((((@x3 * (@y10 - @z2) / @x3) * @z2) * (@y10 - @z2) / ((@x3 * (@y10 - @z2) / @x3) * @z2)) * @z2) - [child_1].[ChildID]) / ((@x3 * (@y10 - @z2) / @x3) * @z2)) * [child_1].[ChildID]) as [c1]
+	((((@x3 * (@y10 - @z2) / @x3) * @z2) * (((((@x3 * (@y10 - @z2) / @x3) * @z2) * (@y10 - @z2) / ((@x3 * (@y10 - @z2) / @x3) * @z2)) * @z2) - [child_1].[ChildID]) / ((@x3 * (@y10 - @z2) / @x3) * @z2)) * [child_1].[ChildID]) as [Value1]
 FROM
 	[Child] [child_1]
 

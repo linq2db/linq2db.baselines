@@ -1,12 +1,12 @@
 ﻿-- SqlCe
 
 SELECT
-	[t1].[Min_1]
+	[t1].[max_1]
 FROM
 	[Parent] [p]
 		OUTER APPLY (
 			SELECT
-				MIN([a_Children].[ParentID]) as [Min_1]
+				MIN([a_Children].[ParentID]) as [max_1]
 			FROM
 				[Child] [a_Children]
 			WHERE

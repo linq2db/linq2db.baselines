@@ -4,7 +4,7 @@ SELECT TOP (1)
 	COUNT(CASE
 		WHEN [t].[Status] = 3 THEN 1
 		ELSE NULL
-	END) as [Count_1]
+	END) as [MyGroupedCount]
 FROM
 	[Issue1192Table] [t]
 WHERE

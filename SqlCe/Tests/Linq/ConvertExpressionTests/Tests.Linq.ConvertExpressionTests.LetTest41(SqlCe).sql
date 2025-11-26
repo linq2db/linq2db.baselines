@@ -12,7 +12,7 @@ SELECT
 		)
 			THEN 1
 		ELSE 0
-	END as [c1],
+	END as [Any_1],
 	[t1].[Count_1],
 	[t2].[ParentID],
 	[t2].[ChildID],

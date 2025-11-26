@@ -1,7 +1,7 @@
 ﻿-- SqlCe
 
 SELECT
-	[ess].[ID]
+	[ess].[ID] as [SectionID]
 FROM
 	[VEMPLOYEE_SCH_SEC] [ess]
 WHERE

@@ -7,22 +7,22 @@ FROM
 	[MasterClass] [m_1]
 		OUTER APPLY (
 			SELECT
-				SUM([t2].[DetailId]) as [Sum_1]
+				SUM([t2].[Sum_1]) as [Sum_1]
 			FROM
 				(
 					SELECT
-						[t1].[DetailId]
+						[t1].[Sum_1]
 					FROM
 						(
 							SELECT DISTINCT
-								[a_Details].[DetailId]
+								[a_Details].[DetailId] as [Sum_1]
 							FROM
 								[DetailClass] [a_Details]
 							WHERE
 								[m_1].[Id1] = [a_Details].[MasterId]
 						) [t1]
 					ORDER BY
-						[t1].[DetailId]
+						[t1].[Sum_1]
 					OFFSET 1 ROWS FETCH NEXT 5 ROWS ONLY 
 				) [t2]
 		) [t3]
@@ -36,14 +36,14 @@ FROM
 					FROM
 						(
 							SELECT DISTINCT
-								[a_Details_1].[DetailValue]
+								[a_Details_1].[DetailValue] as [Count_1]
 							FROM
 								[DetailClass] [a_Details_1]
 							WHERE
 								[m_1].[Id1] = [a_Details_1].[MasterId]
 						) [t4]
 					ORDER BY
-						[t4].[DetailValue]
+						[t4].[Count_1]
 					OFFSET 1 ROWS FETCH NEXT 2 ROWS ONLY 
 				) [t5]
 		) [t6]

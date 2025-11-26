@@ -9,7 +9,7 @@ FROM
 -- SqlCe
 
 SELECT
-	[l].[Value1]
+	[l].[Value1] as [f1]
 FROM
 	[Table1788] [p]
 		LEFT JOIN [Table1788] [l] ON [l].[Id] = [p].[Id] + 1

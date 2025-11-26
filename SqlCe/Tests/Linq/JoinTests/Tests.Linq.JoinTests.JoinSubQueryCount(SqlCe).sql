@@ -4,12 +4,12 @@ SET     @n = 1
 
 SELECT
 	[p].[ParentID],
-	[t1].[Count_1]
+	[t1].[count_1]
 FROM
 	[Parent] [p]
 		OUTER APPLY (
 			SELECT
-				COUNT(*) as [Count_1]
+				COUNT(*) as [count_1]
 			FROM
 				[Child] [c_1]
 			WHERE
