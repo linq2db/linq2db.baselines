@@ -1,7 +1,7 @@
 ﻿-- SqlServer.2008.MS SqlServer.2008
 
 SELECT
-	(CAST(COUNT(*) AS NVarChar(11)) + N' items have not been processed, e.g. #' + CAST(MIN([s].[PersonID]) AS NVarChar(11))) + N'.'
+	(CAST(COUNT(*) AS NVarChar(11)) + N' items have not been processed, e.g. #' + Coalesce(CAST(MIN([s].[PersonID]) AS NVarChar(11)), N'')) + N'.'
 FROM
 	[Person] [s]
 WHERE
