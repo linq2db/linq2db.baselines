@@ -2,56 +2,56 @@
 
 SELECT
 	"t1"."Key_1",
-	"t1"."Join_1",
-	"t1"."Join_2",
+	"t1"."NullableDistinct",
+	"t1"."NullableDistinctNotNullDistinct",
 	(
 		SELECT
-			Coalesce(LIST(Coalesce("t3"."NullableValue", ''), ', '), '')
+			Coalesce(LIST(Coalesce("t3"."NullableDistinctNotNullDistinctOrdered", ''), ', '), '')
 		FROM
 			(
 				SELECT
-					"t2"."NullableValue"
+					"t2"."NullableDistinctNotNullDistinctOrdered"
 				FROM
 					(
 						SELECT DISTINCT
-							"t"."NullableValue"
+							"t"."NullableValue" as "NullableDistinctNotNullDistinctOrdered"
 						FROM
 							"SampleClass" "t"
 						WHERE
 							"t1"."Key_1" = "t"."Id" AND "t"."NullableValue" IS NOT NULL
 					) "t2"
 				ORDER BY
-					"t2"."NullableValue" DESC
+					"t2"."NullableDistinctNotNullDistinctOrdered" DESC
 			) "t3"
 	),
-	"t1"."Join_3",
+	"t1"."NotNullableDistinct",
 	(
 		SELECT
-			Coalesce(LIST("t5"."NotNullableValue", ', '), '')
+			Coalesce(LIST("t5"."NotNullableDistinctOrdered", ', '), '')
 		FROM
 			(
 				SELECT
-					"t4"."NotNullableValue"
+					"t4"."NotNullableDistinctOrdered"
 				FROM
 					(
 						SELECT DISTINCT
-							"t_1"."NotNullableValue"
+							"t_1"."NotNullableValue" as "NotNullableDistinctOrdered"
 						FROM
 							"SampleClass" "t_1"
 						WHERE
 							"t1"."Key_1" = "t_1"."Id"
 					) "t4"
 				ORDER BY
-					"t4"."NotNullableValue" DESC
+					"t4"."NotNullableDistinctOrdered" DESC
 			) "t5"
 	)
 FROM
 	(
 		SELECT
 			"g_1"."Id" as "Key_1",
-			LIST(DISTINCT Coalesce("g_1"."NullableValue", ''), ', ') as "Join_1",
-			Coalesce(LIST(DISTINCT "g_1"."NullableValue", ', '), '') as "Join_2",
-			LIST(DISTINCT "g_1"."NotNullableValue", ', ') as "Join_3"
+			LIST(DISTINCT Coalesce("g_1"."NullableValue", ''), ', ') as "NullableDistinct",
+			Coalesce(LIST(DISTINCT "g_1"."NullableValue", ', '), '') as "NullableDistinctNotNullDistinct",
+			LIST(DISTINCT "g_1"."NotNullableValue", ', ') as "NotNullableDistinct"
 		FROM
 			"SampleClass" "g_1"
 		GROUP BY
