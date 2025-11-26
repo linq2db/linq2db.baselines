@@ -8,10 +8,11 @@ SELECT
 	[p].[Gender]
 FROM
 	(
-		SELECT NULL [item] WHERE 1 = 0
+		SELECT NULL [item], NULL [item0] WHERE 1 = 0
 		UNION ALL
 		VALUES
-			('Janet'), ('Doe'), ('John'), ('Doe')
+			('Janet','Janet'), ('Doe','Doe'), ('John','John'),
+			('Doe','Doe')
 		) [n]
 		INNER JOIN [Person] [p] ON [n].[item] = [p].[LastName]
 
