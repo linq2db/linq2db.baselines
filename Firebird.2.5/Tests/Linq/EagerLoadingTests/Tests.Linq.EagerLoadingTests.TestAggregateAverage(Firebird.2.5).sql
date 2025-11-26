@@ -3,22 +3,22 @@
 SELECT
 	(
 		SELECT
-			AVG(CAST("t2"."DetailId" AS DOUBLE PRECISION))
+			AVG(CAST("t2"."Average" AS DOUBLE PRECISION))
 		FROM
 			(
 				SELECT FIRST 5 SKIP 1
-					"t1"."DetailId"
+					"t1"."Average"
 				FROM
 					(
 						SELECT DISTINCT
-							"a_Details"."DetailId"
+							"a_Details"."DetailId" as "Average"
 						FROM
 							"DetailClass" "a_Details"
 						WHERE
 							"m_1"."Id1" = "a_Details"."MasterId"
 					) "t1"
 				ORDER BY
-					"t1"."DetailId"
+					"t1"."Average"
 			) "t2"
 	)
 FROM
