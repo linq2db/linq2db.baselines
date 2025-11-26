@@ -2,7 +2,7 @@
 
 SELECT
 	[g_2].[LastName],
-	[g_2].[Count_1]
+	[g_2].[cnt]
 FROM
 	(
 		SELECT
@@ -10,7 +10,7 @@ FROM
 			COUNT(CASE
 				WHEN [a_Employee].[FirstName] LIKE '%an%' ESCAPE '~' THEN 1
 				ELSE NULL
-			END) as [Count_1],
+			END) as [cnt],
 			[a_Employee].[LastName]
 		FROM
 			[EmployeeTerritories] [g_1]
