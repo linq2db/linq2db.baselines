@@ -4,11 +4,11 @@ SELECT
 	"t1"."Key_1",
 	(
 		SELECT
-			Coalesce(LIST(Coalesce("t2"."NotNullableOrderedNoNulls", ''), ', '), '')
+			Coalesce(LIST(Coalesce("t2"."NullableValue", ''), ', '), '')
 		FROM
 			(
 				SELECT DISTINCT
-					"t"."NullableValue" as "NotNullableOrderedNoNulls"
+					"t"."NullableValue"
 				FROM
 					"SampleClass" "t"
 				WHERE
@@ -19,22 +19,22 @@ SELECT
 	),
 	(
 		SELECT
-			Coalesce(LIST("t4"."NotNullableOrderedNulls", ', '), '')
+			Coalesce(LIST("t4"."c1", ', '), '')
 		FROM
 			(
 				SELECT DISTINCT
-					"t3"."NotNullableOrderedNulls"
+					"t3"."c1"
 				FROM
 					(
 						SELECT
-							Coalesce("x"."NullableValue", '') as "NotNullableOrderedNulls"
+							Coalesce("x"."NullableValue", '') as "c1"
 						FROM
 							"SampleClass" "x"
 						WHERE
 							"t1"."Key_1" = "x"."Id"
 					) "t3"
 				ORDER BY
-					"t3"."NotNullableOrderedNulls"
+					"t3"."c1"
 			) "t4"
 	)
 FROM
