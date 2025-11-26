@@ -9,7 +9,7 @@ SELECT
 FROM
 	[Person] [p]
 		INNER JOIN (
-			SELECT 1 AS [ID]
+			SELECT 'Janet' AS [FirstName], 1 AS [ID], CAST(NULL AS NVarChar(255)) AS [LastName], CAST(NULL AS NVarChar(255)) AS [MiddleName], 'M' AS [Gender]
 			UNION ALL
-			SELECT 2) [n] ON [p].[PersonID] = [n].[ID]
+			SELECT 'Doe', 2, NULL, NULL, 'M') [n] ON [p].[PersonID] = [n].[ID]
 
