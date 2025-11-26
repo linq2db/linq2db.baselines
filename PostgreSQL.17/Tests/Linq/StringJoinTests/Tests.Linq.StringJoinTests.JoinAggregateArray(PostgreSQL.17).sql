@@ -13,14 +13,14 @@ SELECT
 	),
 	(
 		SELECT
-			Coalesce(STRING_AGG(Coalesce(t3.item_1, ''), ', ' ORDER BY CASE
-				WHEN t3.item_1 IS NULL THEN 0
+			Coalesce(STRING_AGG(Coalesce(t3."AggregatedFilteredDistinct", ''), ', ' ORDER BY CASE
+				WHEN t3."AggregatedFilteredDistinct" IS NULL THEN 0
 				ELSE 1
-			END NULLS FIRST, t3.item_1 NULLS FIRST), '')
+			END NULLS FIRST, t3."AggregatedFilteredDistinct" NULLS FIRST), '')
 		FROM
 			(
 				SELECT DISTINCT
-					t2.item as item_1
+					t2.item as "AggregatedFilteredDistinct"
 				FROM
 					(VALUES
 						(t."NotNullableValue"), (t."NotNullableValue"),

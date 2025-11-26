@@ -3,22 +3,22 @@
 SELECT
 	(
 		SELECT
-			AVG(t2."DetailId"::Float)
+			AVG(t2."Average"::Float)
 		FROM
 			(
 				SELECT
-					t1."DetailId"
+					t1."Average"
 				FROM
 					(
 						SELECT DISTINCT
-							"a_Details"."DetailId"
+							"a_Details"."DetailId" as "Average"
 						FROM
 							"DetailClass" "a_Details"
 						WHERE
 							m_1."Id1" = "a_Details"."MasterId"
 					) t1
 				ORDER BY
-					t1."DetailId"
+					t1."Average"
 				LIMIT 5 OFFSET 1 
 			) t2
 	)
