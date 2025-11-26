@@ -3,7 +3,7 @@
 SELECT
 	"m_1"."ParentID",
 	"d_1"."Key_1",
-	"d_1"."Children"
+	"d_1"."ConcatStringsNullable"
 FROM
 	(
 		SELECT DISTINCT
@@ -14,7 +14,7 @@ FROM
 		CROSS JOIN LATERAL (
 			SELECT
 				"d"."ParentID" as "Key_1",
-				LIST("d"."ChildID", ', ') as "Children"
+				LIST("d"."ChildID", ', ') as "ConcatStringsNullable"
 			FROM
 				"Child" "d"
 			WHERE

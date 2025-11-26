@@ -4,15 +4,15 @@ SELECT
 	SUBSTRING(Coalesce(', ' || "t"."NullableValue", '') || ', ' || "t"."NotNullableValue" || Coalesce(', ' || "t"."VarcharValue", '') || Coalesce(', ' || "t"."NVarcharValue", '') FROM 3),
 	(
 		SELECT
-			Coalesce(LIST(Coalesce("t3"."NotNullDistinctValue", ''), ', '), '')
+			Coalesce(LIST(Coalesce("t3"."item_1", ''), ', '), '')
 		FROM
 			(
 				SELECT
-					"t2"."NotNullDistinctValue"
+					"t2"."item_1"
 				FROM
 					(
 						SELECT DISTINCT
-							"t1"."item" as "NotNullDistinctValue"
+							"t1"."item" as "item_1"
 						FROM
 							(
 								SELECT "t"."NullableValue" AS "item" FROM rdb$database
@@ -26,7 +26,7 @@ SELECT
 							"t1"."item" IS NOT NULL
 					) "t2"
 				ORDER BY
-					"t2"."NotNullDistinctValue"
+					"t2"."item_1"
 			) "t3"
 	)
 FROM
