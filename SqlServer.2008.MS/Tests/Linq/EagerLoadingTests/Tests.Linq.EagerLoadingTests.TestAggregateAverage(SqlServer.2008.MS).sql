@@ -3,20 +3,20 @@
 SELECT
 	(
 		SELECT
-			AVG(CAST([t3].[DetailId] AS Float))
+			AVG(CAST([t3].[Average] AS Float))
 		FROM
 			(
 				SELECT
-					[t2].[DetailId]
+					[t2].[Average]
 				FROM
 					(
 						SELECT
-							[t1].[DetailId],
-							ROW_NUMBER() OVER (ORDER BY [t1].[DetailId]) as [RN]
+							[t1].[Average],
+							ROW_NUMBER() OVER (ORDER BY [t1].[Average]) as [RN]
 						FROM
 							(
 								SELECT DISTINCT
-									[a_Details].[DetailId]
+									[a_Details].[DetailId] as [Average]
 								FROM
 									[DetailClass] [a_Details]
 								WHERE
