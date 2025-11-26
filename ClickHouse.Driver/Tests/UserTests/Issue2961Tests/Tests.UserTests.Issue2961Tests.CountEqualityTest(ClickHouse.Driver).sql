@@ -4,7 +4,7 @@ SELECT
 	c_1.Id,
 	c_1.LocationId,
 	subcc.CountCondoCategories,
-	subct.TagsCount,
+	subct.CountCondoTags,
 	l.LocationName,
 	l.Id
 FROM
@@ -13,7 +13,7 @@ FROM
 		LEFT JOIN (
 			SELECT
 				g2.CondoId as Key_1,
-				COUNT(*) as TagsCount
+				COUNT(*) as CountCondoTags
 			FROM
 				CondoTags g2
 			GROUP BY
