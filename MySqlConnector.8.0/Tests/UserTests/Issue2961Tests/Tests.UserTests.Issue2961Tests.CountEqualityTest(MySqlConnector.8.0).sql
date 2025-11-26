@@ -4,7 +4,7 @@ SELECT
 	`c_1`.`Id`,
 	`c_1`.`LocationId`,
 	`subcc`.`CountCondoCategories`,
-	`subct`.`CountCondoTags`,
+	`subct`.`TagsCount`,
 	`l`.`LocationName`,
 	`l`.`Id`
 FROM
@@ -13,7 +13,7 @@ FROM
 		LEFT JOIN (
 			SELECT
 				`g2`.`CondoId` as `Key_1`,
-				COUNT(*) as `CountCondoTags`
+				COUNT(*) as `TagsCount`
 			FROM
 				`CondoTags` `g2`
 			GROUP BY
