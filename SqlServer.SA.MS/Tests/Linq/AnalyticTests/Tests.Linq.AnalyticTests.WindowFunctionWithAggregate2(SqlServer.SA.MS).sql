@@ -4,13 +4,13 @@ SET     @take = 100
 
 SELECT TOP (@take)
 	[t1].[Key_1],
-	[t1].[aggregate_1],
+	[t1].[Count_1],
 	[t1].[window_1]
 FROM
 	(
 		SELECT
 			[g_1].[ParentID] as [Key_1],
-			COUNT(*) as [aggregate_1],
+			COUNT(*) as [Count_1],
 			COUNT(*) OVER() as [window_1]
 		FROM
 			[Child] [g_1]
