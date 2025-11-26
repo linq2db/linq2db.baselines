@@ -3,22 +3,22 @@
 SELECT
 	(
 		SELECT
-			SUM([t2].[Sum_1])
+			SUM([t2].[DetailId])
 		FROM
 			(
 				SELECT
-					[t1].[Sum_1]
+					[t1].[DetailId]
 				FROM
 					(
 						SELECT DISTINCT
-							[a_Details].[DetailId] as [Sum_1]
+							[a_Details].[DetailId]
 						FROM
 							[DetailClass] [a_Details]
 						WHERE
 							[m_1].[Id1] = [a_Details].[MasterId]
 					) [t1]
 				ORDER BY
-					[t1].[Sum_1]
+					[t1].[DetailId]
 				OFFSET 1 ROWS FETCH NEXT 5 ROWS ONLY 
 			) [t2]
 	),
@@ -32,14 +32,14 @@ SELECT
 				FROM
 					(
 						SELECT DISTINCT
-							[a_Details_1].[DetailValue] as [Count_1]
+							[a_Details_1].[DetailValue]
 						FROM
 							[DetailClass] [a_Details_1]
 						WHERE
 							[m_1].[Id1] = [a_Details_1].[MasterId]
 					) [t3]
 				ORDER BY
-					[t3].[Count_1]
+					[t3].[DetailValue]
 				OFFSET 1 ROWS FETCH NEXT 2 ROWS ONLY 
 			) [t4]
 	)
