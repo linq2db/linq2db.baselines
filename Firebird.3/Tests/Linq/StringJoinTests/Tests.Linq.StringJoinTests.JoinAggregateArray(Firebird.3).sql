@@ -4,15 +4,15 @@ SELECT
 	Coalesce("t"."NullableValue", '') || ', ' || "t"."NotNullableValue" || ', ' || Coalesce("t"."VarcharValue", '') || ', ' || Coalesce("t"."NVarcharValue", ''),
 	(
 		SELECT
-			Coalesce(LIST(Coalesce("t3"."AggregatedNotNullFilteredDi", ''), ', '), '')
+			Coalesce(LIST(Coalesce("t3"."item_1", ''), ', '), '')
 		FROM
 			(
 				SELECT
-					"t2"."AggregatedNotNullFilteredDi"
+					"t2"."item_1"
 				FROM
 					(
 						SELECT DISTINCT
-							"t1"."item" as "AggregatedNotNullFilteredDi"
+							"t1"."item" as "item_1"
 						FROM
 							(
 								SELECT "t"."NotNullableValue" AS "item" FROM rdb$database
@@ -26,20 +26,20 @@ SELECT
 							"t1"."item" IS NOT NULL
 					) "t2"
 				ORDER BY
-					"t2"."AggregatedNotNullFilteredDi"
+					"t2"."item_1"
 			) "t3"
 	),
 	(
 		SELECT
-			Coalesce(LIST(Coalesce("t6"."AggregatedFilteredDistinct", ''), ', '), '')
+			Coalesce(LIST(Coalesce("t6"."item_1", ''), ', '), '')
 		FROM
 			(
 				SELECT
-					"t5"."AggregatedFilteredDistinct"
+					"t5"."item_1"
 				FROM
 					(
 						SELECT DISTINCT
-							"t4"."item" as "AggregatedFilteredDistinct"
+							"t4"."item" as "item_1"
 						FROM
 							(
 								SELECT "t"."NotNullableValue" AS "item" FROM rdb$database
@@ -54,10 +54,10 @@ SELECT
 					) "t5"
 				ORDER BY
 					CASE
-						WHEN "t5"."AggregatedFilteredDistinct" IS NULL THEN 0
+						WHEN "t5"."item_1" IS NULL THEN 0
 						ELSE 1
 					END,
-					"t5"."AggregatedFilteredDistinct"
+					"t5"."item_1"
 			) "t6"
 	)
 FROM
