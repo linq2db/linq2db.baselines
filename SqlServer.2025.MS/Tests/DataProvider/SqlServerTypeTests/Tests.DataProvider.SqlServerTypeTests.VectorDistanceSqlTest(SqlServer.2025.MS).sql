@@ -8,9 +8,9 @@ CREATE TABLE [tempdb]..[#<>f__AnonymousType46`1]
 INSERT BULK [tempdb]..[#<>f__AnonymousType46`1](Vector)
 
 -- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
-DECLARE @Vector 36(20) -- Binary
+DECLARE @Vector Vector(20) -- Binary
 SET     @Vector = '[1, 2, 3]'
-DECLARE @Vector_1 36(20) -- Binary
+DECLARE @Vector_1 Vector(20) -- Binary
 SET     @Vector_1 = '[1, 2, 3]'
 
 SELECT
