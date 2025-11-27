@@ -30,7 +30,7 @@ FROM
 DECLARE @Id Int -- Int32
 SET     @Id = 1
 DECLARE @Column 36(16) -- Binary
-SET     @Column = JSON_ARRAY(1.2, -1.1)
+SET     @Column = '[1.2, -1.1]'
 DECLARE @ColumnNullable NVarChar -- String
 SET     @ColumnNullable = NULL
 
@@ -68,7 +68,7 @@ FROM
 DECLARE @p1 Int -- Int32
 SET     @p1 = 1
 DECLARE @p2 36(16) -- Binary
-SET     @p2 = JSON_ARRAY(1.2, -1.1)
+SET     @p2 = '[1.2, -1.1]'
 DECLARE @p3 NVarChar -- String
 SET     @p3 = NULL
 
@@ -162,7 +162,7 @@ FROM
 DECLARE @Id Int -- Int32
 SET     @Id = 1
 DECLARE @Column 36(16) -- Binary
-SET     @Column = JSON_ARRAY(5.2, -3.1)
+SET     @Column = '[5.2, -3.1]'
 DECLARE @ColumnNullable NVarChar -- String
 SET     @ColumnNullable = NULL
 
@@ -200,7 +200,7 @@ FROM
 DECLARE @p1 Int -- Int32
 SET     @p1 = 1
 DECLARE @p2 36(16) -- Binary
-SET     @p2 = JSON_ARRAY(5.2, -3.1)
+SET     @p2 = '[5.2, -3.1]'
 DECLARE @p3 NVarChar -- String
 SET     @p3 = NULL
 
@@ -290,9 +290,9 @@ FROM
 DECLARE @Id Int -- Int32
 SET     @Id = 1
 DECLARE @Column 36(16) -- Binary
-SET     @Column = JSON_ARRAY(11.2, -4.1)
+SET     @Column = '[11.2, -4.1]'
 DECLARE @ColumnNullable 36(16) -- Binary
-SET     @ColumnNullable = JSON_ARRAY(5.2, -3.1)
+SET     @ColumnNullable = '[5.2, -3.1]'
 
 INSERT INTO [TypeTable`2]
 (
@@ -326,9 +326,9 @@ FROM
 DECLARE @p1 Int -- Int32
 SET     @p1 = 1
 DECLARE @p2 36(16) -- Binary
-SET     @p2 = JSON_ARRAY(11.2, -4.1)
+SET     @p2 = '[11.2, -4.1]'
 DECLARE @p3 36(16) -- Binary
-SET     @p3 = JSON_ARRAY(5.2, -3.1)
+SET     @p3 = '[5.2, -3.1]'
 
 INSERT INTO [TypeTable`2]
 (
