@@ -2,7 +2,7 @@
 
 CREATE TABLE [tempdb]..[#<>f__AnonymousType46`1]
 (
-	[Vector] VECTOR(3, float32)     NULL
+	[Vector] VECTOR(3, float32) NOT NULL
 )
 
 INSERT BULK [tempdb]..[#<>f__AnonymousType46`1](Vector)
@@ -18,8 +18,10 @@ SELECT
 	VECTOR_DISTANCE('cosine', [t].[Vector], @Vector),
 	VECTOR_DISTANCE('cosine', [t].[Vector], @Vector),
 	VECTOR_DISTANCE('cosine', [t].[Vector], @Vector_1),
+	VECTOR_DISTANCE('euclidean', [t].[Vector], @Vector),
 	VECTOR_DISTANCE('euclidean', [t].[Vector], @Vector_1),
-	VECTOR_DISTANCE('dot', [t].[Vector], @Vector_1)
+	VECTOR_DISTANCE('dot', [t].[Vector], @Vector_1),
+	VECTOR_DISTANCE('dot', [t].[Vector], @Vector)
 FROM
 	[tempdb]..[#<>f__AnonymousType46`1] [t]
 ORDER BY
