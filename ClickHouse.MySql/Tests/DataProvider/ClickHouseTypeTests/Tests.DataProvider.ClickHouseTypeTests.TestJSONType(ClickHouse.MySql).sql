@@ -142,7 +142,7 @@ VALUES
 (
 	1,
 	'{ "prop": 333 }',
-	'{ "prop": 123 }'
+	'{ "prop": -123 }'
 )
 
 -- ClickHouse.MySql ClickHouse
@@ -169,7 +169,7 @@ INSERT INTO `TypeTable``2`
 	ColumnNullable
 )
 VALUES
-(1,'{ "prop": 333 }','{ "prop": 123 }')
+(1,'{ "prop": 333 }','{ "prop": -123 }')
 
 -- ClickHouse.MySql ClickHouse
 
@@ -195,7 +195,7 @@ INSERT INTO `TypeTable``2`
 	ColumnNullable
 )
 VALUES
-(1,'{ "prop": 333 }','{ "prop": 123 }')
+(1,'{ "prop": 333 }','{ "prop": -123 }')
 
 -- ClickHouse.MySql ClickHouse
 
@@ -221,7 +221,7 @@ INSERT INTO `TypeTable``2`
 	ColumnNullable
 )
 VALUES
-(1,'{ "prop": 333 }','{ "prop": 123 }')
+(1,'{ "prop": 333 }','{ "prop": -123 }')
 
 -- ClickHouse.MySql ClickHouse
 
