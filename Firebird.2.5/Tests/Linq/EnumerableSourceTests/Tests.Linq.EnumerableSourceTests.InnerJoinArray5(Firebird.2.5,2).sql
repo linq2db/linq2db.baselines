@@ -8,12 +8,12 @@ SELECT
 	"p"."Gender"
 FROM
 	(
-		SELECT CAST('Janet' AS VARCHAR(5)) AS "item", CAST('Janet' AS VARCHAR(5)) AS "item0" FROM rdb$database
+		SELECT CAST('Janet' AS VARCHAR(5)) AS "item" FROM rdb$database
 		UNION ALL
-		SELECT CAST('Doe' AS VARCHAR(3)), CAST('Doe' AS VARCHAR(3)) FROM rdb$database
+		SELECT CAST('Doe' AS VARCHAR(3)) FROM rdb$database
 		UNION ALL
-		SELECT CAST('John' AS VARCHAR(4)), CAST('John' AS VARCHAR(4)) FROM rdb$database
+		SELECT CAST('John' AS VARCHAR(4)) FROM rdb$database
 		UNION ALL
-		SELECT CAST('Doe' AS VARCHAR(3)), CAST('Doe' AS VARCHAR(3)) FROM rdb$database) "n"
+		SELECT CAST('Doe' AS VARCHAR(3)) FROM rdb$database) "n"
 		INNER JOIN "Person" "p" ON "n"."item" = "p"."LastName"
 
