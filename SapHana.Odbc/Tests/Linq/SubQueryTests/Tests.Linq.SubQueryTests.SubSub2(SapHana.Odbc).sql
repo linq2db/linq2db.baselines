@@ -1,12 +1,12 @@
 ﻿-- SapHana.Odbc SapHanaOdbc
 
 SELECT
-	"t1"."c1"
+	"t1"."Count_1"
 FROM
 	"Parent" "p1"
 		LEFT JOIN LATERAL (
 			SELECT
-				"a_Children"."ParentID" + 1 as "c1"
+				"a_Children"."ParentID" + 1 as "Count_1"
 			FROM
 				"Child" "a_Children"
 			WHERE

@@ -21,14 +21,14 @@ SELECT
 		WHERE
 			"c_4"."ParentID" = "p"."ParentID" AND "c_4"."ChildID" > -100
 	),
-	"t1"."ParentID",
+	"t1"."First1",
 	"t2"."ParentID",
 	"t2"."ChildID"
 FROM
 	"Parent" "p"
 		LEFT JOIN LATERAL (
 			SELECT
-				"c_1"."ParentID"
+				"c_1"."ParentID" as "First1"
 			FROM
 				"Child" "c_1"
 			WHERE
