@@ -6,14 +6,14 @@ SELECT
 	`m_1`.`Id`,
 	`d_1`.`Key_1`,
 	`d_1`.`Sum_1`,
-	`d_1`.`ConcatStringsNullable`
+	`d_1`.`Des`
 FROM
 	`Parents` `m_1`
 		INNER JOIN LATERAL (
 			SELECT
 				`d`.`ParentId` as `Key_1`,
 				SUM(`d`.`Id`) as `Sum_1`,
-				GROUP_CONCAT(`d`.`Name` SEPARATOR ', ') as `ConcatStringsNullable`
+				GROUP_CONCAT(`d`.`Name` SEPARATOR ', ') as `Des`
 			FROM
 				`Children` `d`
 			WHERE

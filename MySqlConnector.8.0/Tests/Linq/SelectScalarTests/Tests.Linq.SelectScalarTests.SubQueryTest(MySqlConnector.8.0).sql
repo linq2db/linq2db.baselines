@@ -7,5 +7,5 @@ SELECT
 		FROM
 			`Parent` `p`
 		LIMIT 1
-	) as `Value1`
+	) as `f1`
 
