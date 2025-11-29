@@ -1,24 +1,24 @@
 ﻿-- SqlServer.2005.MS SqlServer.2005
 
-WITH [cte] ([FirstName], [LastName])
+WITH [cte] ([LastName], [FirstName])
 AS
 (
 	SELECT
-		[p].[FirstName],
-		[p].[LastName]
+		[p].[LastName],
+		[p].[FirstName]
 	FROM
 		[Person] [p]
 	UNION ALL
 	SELECT
-		[t1].[FirstName],
-		[t1].[LastName]
+		[t1].[LastName],
+		[t1].[FirstName]
 	FROM
 		[cte] [t1]
 			INNER JOIN [Doctor] [d] ON [t1].[FirstName] = [d].[Taxonomy]
 	UNION ALL
 	SELECT
-		[t2].[FirstName],
-		[t2].[LastName]
+		[t2].[LastName],
+		[t2].[FirstName]
 	FROM
 		[cte] [t2]
 			INNER JOIN [Patient] [pat] ON [t2].[FirstName] = [pat].[Diagnosis]
