@@ -3,7 +3,7 @@
 SELECT
 	m_1."ParentID",
 	d_1."Key_1",
-	d_1."ConcatStringsNullable"
+	d_1."Children"
 FROM
 	(
 		SELECT DISTINCT
@@ -14,7 +14,7 @@ FROM
 		INNER JOIN (
 			SELECT
 				d."ParentID" as "Key_1",
-				LISTAGG(CAST(d."ChildID" AS VarChar(255)), ', ') WITHIN GROUP (ORDER BY CAST(d."ChildID" AS VarChar(255))) as "ConcatStringsNullable"
+				LISTAGG(CAST(d."ChildID" AS VarChar(255)), ', ') WITHIN GROUP (ORDER BY CAST(d."ChildID" AS VarChar(255))) as "Children"
 			FROM
 				"Child" d
 			GROUP BY
