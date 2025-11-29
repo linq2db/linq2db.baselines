@@ -4,11 +4,11 @@ SELECT
 	[t1].[Key_1],
 	(
 		SELECT
-			Coalesce(GROUP_CONCAT(Coalesce([t2].[NullableValue], ''), ', '), '')
+			Coalesce(GROUP_CONCAT(Coalesce([t2].[NotNullableOrderedNoNulls], ''), ', '), '')
 		FROM
 			(
 				SELECT DISTINCT
-					[t].[NullableValue]
+					[t].[NullableValue] as [NotNullableOrderedNoNulls]
 				FROM
 					[SampleClass] [t]
 				WHERE
@@ -19,22 +19,22 @@ SELECT
 	),
 	(
 		SELECT
-			Coalesce(GROUP_CONCAT([t4].[c1], ', '), '')
+			Coalesce(GROUP_CONCAT([t4].[NotNullableOrderedNulls], ', '), '')
 		FROM
 			(
 				SELECT DISTINCT
-					[t3].[c1]
+					[t3].[NotNullableOrderedNulls]
 				FROM
 					(
 						SELECT
-							Coalesce([x].[NullableValue], '') as [c1]
+							Coalesce([x].[NullableValue], '') as [NotNullableOrderedNulls]
 						FROM
 							[SampleClass] [x]
 						WHERE
 							[t1].[Key_1] = [x].[Id]
 					) [t3]
 				ORDER BY
-					[t3].[c1]
+					[t3].[NotNullableOrderedNulls]
 			) [t4]
 	)
 FROM
