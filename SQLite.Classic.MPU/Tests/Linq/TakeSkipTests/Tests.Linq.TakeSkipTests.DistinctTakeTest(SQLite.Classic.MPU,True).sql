@@ -3,8 +3,8 @@ DECLARE @take  -- Int32
 SET     @take = 3
 
 SELECT DISTINCT
-	[r].[Value]
+	[t1].[Value]
 FROM
-	[TakeSkipClass] [r]
+	[TakeSkipClass] [t1]
 LIMIT @take
 

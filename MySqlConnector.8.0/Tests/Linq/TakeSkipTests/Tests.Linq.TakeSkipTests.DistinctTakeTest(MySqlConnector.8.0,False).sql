@@ -1,8 +1,8 @@
 ﻿-- MySqlConnector.8.0 MySql.8.0.MySqlConnector MySql80
 
 SELECT DISTINCT
-	`r`.`Value`
+	`t1`.`Value`
 FROM
-	`TakeSkipClass` `r`
+	`TakeSkipClass` `t1`
 LIMIT 3
 

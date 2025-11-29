@@ -1,7 +1,6 @@
 ﻿-- Access.Jet.Odbc AccessODBC
 
 SELECT TOP 4
-	[t1].[Id],
 	[t1].[Value]
 FROM
 	[TakeSkipClass] [t1]

@@ -1,7 +1,7 @@
 ﻿-- SqlServer.2014.MS SqlServer.2014
 
 SELECT DISTINCT TOP (3)
-	[r].[Value]
+	[t1].[Value]
 FROM
-	[TakeSkipClass] [r]
+	[TakeSkipClass] [t1]
 

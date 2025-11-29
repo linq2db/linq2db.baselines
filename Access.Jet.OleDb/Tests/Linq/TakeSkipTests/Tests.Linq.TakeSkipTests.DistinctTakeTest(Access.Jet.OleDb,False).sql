@@ -1,7 +1,7 @@
 ﻿-- Access.Jet.OleDb AccessOleDb
 
 SELECT DISTINCT TOP 3
-	[r].[Value]
+	[t1].[Value]
 FROM
-	[TakeSkipClass] [r]
+	[TakeSkipClass] [t1]
 

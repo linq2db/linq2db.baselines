@@ -1,8 +1,8 @@
 ﻿-- SQLite.MS SQLite
 
 SELECT DISTINCT
-	[r].[Value]
+	[t1].[Value]
 FROM
-	[TakeSkipClass] [r]
+	[TakeSkipClass] [t1]
 LIMIT 3
 
