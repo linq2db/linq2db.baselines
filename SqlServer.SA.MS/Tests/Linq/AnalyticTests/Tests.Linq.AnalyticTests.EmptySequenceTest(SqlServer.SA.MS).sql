@@ -3,7 +3,7 @@
 SELECT
 	[m_1].[ParentID],
 	[d_1].[Key_1],
-	[d_1].[ConcatStringsNullable]
+	[d_1].[Children]
 FROM
 	(
 		SELECT DISTINCT
@@ -14,7 +14,7 @@ FROM
 		CROSS APPLY (
 			SELECT
 				[d].[ParentID] as [Key_1],
-				STRING_AGG(CAST([d].[ChildID] AS NVarChar(11)), N', ') as [ConcatStringsNullable]
+				STRING_AGG(CAST([d].[ChildID] AS NVarChar(11)), N', ') as [Children]
 			FROM
 				[Child] [d]
 			WHERE
