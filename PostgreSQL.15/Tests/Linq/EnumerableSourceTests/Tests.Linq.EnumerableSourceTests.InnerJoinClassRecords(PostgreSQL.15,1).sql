@@ -9,6 +9,7 @@ SELECT
 FROM
 	"Person" p
 		INNER JOIN (VALUES
-			(1), (2)
-		) n("ID") ON p."PersonID" = n."ID"
+			('Janet',1,NULL::text,NULL::text,'M'),
+			('Doe',2,NULL,NULL,'M')
+		) n("FirstName", "ID", "LastName", "MiddleName", "Gender") ON p."PersonID" = n."ID"
 
