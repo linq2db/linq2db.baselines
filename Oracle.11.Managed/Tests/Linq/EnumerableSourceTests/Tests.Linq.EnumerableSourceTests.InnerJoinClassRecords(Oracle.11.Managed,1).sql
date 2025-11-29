@@ -9,7 +9,7 @@ SELECT
 FROM
 	"Person" p
 		INNER JOIN (
-			SELECT 'Janet' AS "FirstName", 1 AS ID, NULL AS "LastName", NULL AS "MiddleName", 'M' AS "Gender" FROM sys.dual
+			SELECT 1 AS ID FROM sys.dual
 			UNION ALL
-			SELECT 'Doe', 2, NULL, NULL, 'M' FROM sys.dual) n ON p."PersonID" = n.ID
+			SELECT 2 FROM sys.dual) n ON p."PersonID" = n.ID
 
