@@ -3,7 +3,7 @@
 SELECT
 	"m_1"."ParentID",
 	"d_1"."Key_1",
-	"d_1"."ConcatStringsNullable"
+	"d_1"."Children"
 FROM
 	(
 		SELECT DISTINCT
@@ -14,7 +14,7 @@ FROM
 		INNER JOIN (
 			SELECT
 				"d"."ParentID" as "Key_1",
-				LISTAGG(RTrim(Char("d"."ChildID")), ', ') as "ConcatStringsNullable"
+				LISTAGG(RTrim(Char("d"."ChildID")), ', ') as "Children"
 			FROM
 				"Child" "d"
 			GROUP BY
