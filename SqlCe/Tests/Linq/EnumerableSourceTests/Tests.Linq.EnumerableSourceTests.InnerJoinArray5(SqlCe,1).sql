@@ -8,12 +8,12 @@ SELECT
 	[p].[Gender]
 FROM
 	(
-		SELECT 'Janet' AS [item], 'Janet' AS [item0]
+		SELECT 'Janet' AS [item]
 		UNION ALL
-		SELECT 'Doe' AS [item], 'Doe' AS [item0]
+		SELECT 'Doe' AS [item]
 		UNION ALL
-		SELECT 'John' AS [item], 'John' AS [item0]
+		SELECT 'John' AS [item]
 		UNION ALL
-		SELECT 'Doe' AS [item], 'Doe' AS [item0]) [n]
+		SELECT 'Doe' AS [item]) [n]
 		INNER JOIN [Person] [p] ON [n].[item] = [p].[LastName]
 
