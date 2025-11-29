@@ -8,12 +8,12 @@ SELECT
 	p."Gender"
 FROM
 	(
-		SELECT 'Janet' AS "item", 'Janet' AS "item0" FROM sys.dual
+		SELECT 'Janet' AS "item" FROM sys.dual
 		UNION ALL
-		SELECT 'Doe', 'Doe' FROM sys.dual
+		SELECT 'Doe' FROM sys.dual
 		UNION ALL
-		SELECT 'John', 'John' FROM sys.dual
+		SELECT 'John' FROM sys.dual
 		UNION ALL
-		SELECT 'Doe', 'Doe' FROM sys.dual) n
+		SELECT 'Doe' FROM sys.dual) n
 		INNER JOIN "Person" p ON n."item" = p."LastName"
 
