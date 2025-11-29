@@ -8,12 +8,12 @@ SELECT
 	`p`.`Gender`
 FROM
 	(
-		SELECT 'Janet' AS `item`, 'Janet' AS `item0`
+		SELECT 'Janet' AS `item`
 		UNION ALL
-		SELECT 'Doe', 'Doe'
+		SELECT 'Doe'
 		UNION ALL
-		SELECT 'John', 'John'
+		SELECT 'John'
 		UNION ALL
-		SELECT 'Doe', 'Doe') `n`
+		SELECT 'Doe') `n`
 		INNER JOIN `Person` `p` ON `n`.`item` = `p`.`LastName`
 
