@@ -6,16 +6,16 @@ SELECT TOP (@take)
 	[r].[Id],
 	[r].[ReshipSaleId],
 	[t1].[cond],
-	[t1].[Id],
+	[t1].[ReshipSale],
 	[r].[OriginalSaleId],
 	[t2].[cond],
-	[t2].[Id]
+	[t2].[OriginalSale]
 FROM
 	[Returns] [r]
 		OUTER APPLY (
 			SELECT TOP (1)
 				N'Id' as [cond],
-				[x].[Id]
+				[x].[Id] as [ReshipSale]
 			FROM
 				[Sales] [x]
 			WHERE
@@ -24,7 +24,7 @@ FROM
 		OUTER APPLY (
 			SELECT TOP (1)
 				N'Id' as [cond],
-				[x_1].[Id]
+				[x_1].[Id] as [OriginalSale]
 			FROM
 				[Sales] [x_1]
 			WHERE
