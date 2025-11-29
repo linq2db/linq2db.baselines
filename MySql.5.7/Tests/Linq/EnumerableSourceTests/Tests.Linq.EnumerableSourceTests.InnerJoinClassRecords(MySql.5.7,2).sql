@@ -9,7 +9,7 @@ SELECT
 FROM
 	`Person` `p`
 		INNER JOIN (
-			SELECT 'Janet' AS `FirstName`, 1 AS `ID`, CAST(NULL AS CHAR(255)) AS `LastName`, CAST(NULL AS CHAR(255)) AS `MiddleName`, 'M' AS `Gender`
+			SELECT 1 AS `ID`
 			UNION ALL
-			SELECT 'Doe', 2, NULL, NULL, 'M') `n` ON `p`.`PersonID` = `n`.`ID`
+			SELECT 2) `n` ON `p`.`PersonID` = `n`.`ID`
 
