@@ -9,9 +9,9 @@ SELECT
 FROM
 	[Person] [p]
 		INNER JOIN (
-			SELECT NULL [FirstName], NULL [ID], NULL [LastName], NULL [MiddleName], NULL [Gender] WHERE 1 = 0
+			SELECT NULL [ID] WHERE 1 = 0
 			UNION ALL
 			VALUES
-				('Janet',1,NULL,NULL,'M'), ('Doe',2,NULL,NULL,'M')
+				(1), (2)
 			) [n] ON [p].[PersonID] = [n].[ID]
 
