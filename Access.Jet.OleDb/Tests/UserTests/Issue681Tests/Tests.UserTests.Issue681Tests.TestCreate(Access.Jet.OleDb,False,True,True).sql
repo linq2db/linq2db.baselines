@@ -1,6 +1,6 @@
 ﻿-- Access.Jet.OleDb AccessOleDb
 
-DROP TABLE [Issue681Table2]
+DROP TABLE [Database\TestData].[Issue681Table2]
 
 -- Access.Jet.OleDb AccessOleDb
 
@@ -14,5 +14,5 @@ CREATE TABLE [Database\TestData].[Issue681Table2]
 
 -- Access.Jet.OleDb AccessOleDb
 
-DROP TABLE [Issue681Table2]
+DROP TABLE [Database\TestData].[Issue681Table2]
 

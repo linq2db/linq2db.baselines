@@ -1,6 +1,6 @@
 ﻿-- Access.Jet.Odbc AccessODBC
 
-DROP TABLE [Issue681Table2]
+DROP TABLE [Database\TestData.ODBC.mdb].[Issue681Table2]
 
 -- Access.Jet.Odbc AccessODBC
 
@@ -14,5 +14,5 @@ CREATE TABLE [Database\TestData.ODBC.mdb].[Issue681Table2]
 
 -- Access.Jet.Odbc AccessODBC
 
-DROP TABLE [Issue681Table2]
+DROP TABLE [Database\TestData.ODBC.mdb].[Issue681Table2]
 
