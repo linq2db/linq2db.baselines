@@ -8,11 +8,11 @@ LIMIT 1
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
-DROP TABLE IF EXISTS `Issue681Table2`
+DROP TABLE IF EXISTS `testdata`.`Issue681Table2`
 
 -- MariaDB.11 MariaDB.10.MySqlConnector MariaDB
 
-CREATE TABLE `Issue681Table2`
+CREATE TABLE `testdata`.`Issue681Table2`
 (
 	`ID`    INT NOT NULL,
 	`Value` INT NOT NULL,
