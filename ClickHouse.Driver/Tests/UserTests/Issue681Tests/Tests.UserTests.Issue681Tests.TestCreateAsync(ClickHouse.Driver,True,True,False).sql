@@ -8,7 +8,7 @@ LIMIT 1
 
 -- ClickHouse.Driver ClickHouse
 
-DROP TABLE IF EXISTS Issue681Table2
+DROP TABLE IF EXISTS testdb2.Issue681Table2
 
 -- ClickHouse.Driver ClickHouse
 
@@ -24,5 +24,5 @@ ORDER BY ID
 
 -- ClickHouse.Driver ClickHouse
 
-DROP TABLE IF EXISTS Issue681Table2
+DROP TABLE IF EXISTS testdb2.Issue681Table2
 
