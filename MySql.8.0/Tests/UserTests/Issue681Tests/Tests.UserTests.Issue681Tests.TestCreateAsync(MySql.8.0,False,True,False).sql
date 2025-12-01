@@ -8,7 +8,7 @@ LIMIT 1
 
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
 
-DROP TABLE IF EXISTS `Issue681Table2`
+DROP TABLE IF EXISTS `testdata`.`Issue681Table2`
 
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
 
@@ -22,5 +22,5 @@ CREATE TABLE `testdata`.`Issue681Table2`
 
 -- MySql.8.0 MySql.8.0.MySql.Data MySql80
 
-DROP TABLE IF EXISTS `Issue681Table2`
+DROP TABLE IF EXISTS `testdata`.`Issue681Table2`
 
