@@ -1,10 +1,10 @@
 ﻿-- SQLite.Classic SQLite
 
-DROP TABLE IF EXISTS [Issue681Table2]
+DROP TABLE IF EXISTS [main].[Issue681Table2]
 
 -- SQLite.Classic SQLite
 
-CREATE TABLE [Issue681Table2]
+CREATE TABLE [main].[Issue681Table2]
 (
 	[ID]    INTEGER NOT NULL,
 	[Value] INTEGER NOT NULL,

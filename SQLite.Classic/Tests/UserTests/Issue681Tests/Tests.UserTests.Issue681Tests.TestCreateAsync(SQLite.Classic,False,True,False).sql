@@ -1,6 +1,6 @@
 ﻿-- SQLite.Classic SQLite
 
-DROP TABLE IF EXISTS [Issue681Table2]
+DROP TABLE IF EXISTS [main].[Issue681Table2]
 
 -- SQLite.Classic SQLite
 
@@ -14,5 +14,5 @@ CREATE TABLE [main].[Issue681Table2]
 
 -- SQLite.Classic SQLite
 
-DROP TABLE IF EXISTS [Issue681Table2]
+DROP TABLE IF EXISTS [main].[Issue681Table2]
 
