@@ -8,7 +8,7 @@ LIMIT 1
 
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 
-DROP TABLE IF EXISTS `Issue681Table2`
+DROP TABLE IF EXISTS `testdataconnector`.`Issue681Table2`
 
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 
@@ -22,5 +22,5 @@ CREATE TABLE `testdataconnector`.`Issue681Table2`
 
 -- MySqlConnector.5.7 MySql.5.7.MySqlConnector MySql57
 
-DROP TABLE IF EXISTS `Issue681Table2`
+DROP TABLE IF EXISTS `testdataconnector`.`Issue681Table2`
 
