@@ -16,7 +16,7 @@ LIMIT 1
 
 -- PostgreSQL.13 PostgreSQL
 
-DROP TABLE IF EXISTS "Issue681Table2"
+DROP TABLE IF EXISTS testdata.public."Issue681Table2"
 
 -- PostgreSQL.13 PostgreSQL
 
@@ -30,5 +30,5 @@ CREATE TABLE testdata.public."Issue681Table2"
 
 -- PostgreSQL.13 PostgreSQL
 
-DROP TABLE IF EXISTS "Issue681Table2"
+DROP TABLE IF EXISTS testdata.public."Issue681Table2"
 
