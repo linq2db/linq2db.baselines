@@ -1,10 +1,10 @@
 ﻿-- Access.Ace.Odbc AccessODBC
 
-DROP TABLE [Issue681Table2]
+DROP TABLE [Database\TestData.ODBC.mdb].[Issue681Table2]
 
 -- Access.Ace.Odbc AccessODBC
 
-CREATE TABLE [Issue681Table2]
+CREATE TABLE [Database\TestData.ODBC.mdb].[Issue681Table2]
 (
 	[ID]    Int NOT NULL,
 	[Value] Int NOT NULL,
