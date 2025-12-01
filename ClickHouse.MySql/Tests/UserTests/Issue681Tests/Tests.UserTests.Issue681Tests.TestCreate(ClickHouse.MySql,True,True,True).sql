@@ -8,7 +8,7 @@ LIMIT 1
 
 -- ClickHouse.MySql ClickHouse
 
-DROP TABLE IF EXISTS Issue681Table2
+DROP TABLE IF EXISTS testdb3.Issue681Table2
 
 -- ClickHouse.MySql ClickHouse
 
@@ -24,5 +24,5 @@ ORDER BY ID
 
 -- ClickHouse.MySql ClickHouse
 
-DROP TABLE IF EXISTS Issue681Table2
+DROP TABLE IF EXISTS testdb3.Issue681Table2
 

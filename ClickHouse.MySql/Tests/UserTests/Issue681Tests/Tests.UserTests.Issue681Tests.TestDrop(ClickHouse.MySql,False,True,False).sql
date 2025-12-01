@@ -8,11 +8,11 @@ LIMIT 1
 
 -- ClickHouse.MySql ClickHouse
 
-DROP TABLE IF EXISTS Issue681Table2
+DROP TABLE IF EXISTS testdb3.Issue681Table2
 
 -- ClickHouse.MySql ClickHouse
 
-CREATE TABLE Issue681Table2
+CREATE TABLE testdb3.Issue681Table2
 (
 	ID    Int32,
 	Value Int32,
