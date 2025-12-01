@@ -15,12 +15,12 @@ FROM
 		LEFT JOIN (
 			SELECT
 				[g_3].[Key_1],
-				SUM([g_3].[Ftq]) as [Ftq]
+				SUM([g_3].[c1]) as [Ftq]
 			FROM
 				(
 					SELECT
 						[g_2].[Month_1] as [Key_1],
-						SUM([g_2].[Qty]) / SUM(IIF([g_2].[Ok], 0, [g_2].[Qty])) as [Ftq]
+						SUM([g_2].[Qty]) / SUM(IIF([g_2].[Ok], 0, [g_2].[Qty])) as [c1]
 					FROM
 						(
 							SELECT
