@@ -182,24 +182,19 @@ FROM
 	[Parent] [u],
 	(
 		SELECT
-			[t1].[Value1],
-			[t1].[ParentID]
+			[x].[Value1],
+			ROW_NUMBER() OVER (ORDER BY [x].[ParentID] DESC) as [RN],
+			[x].[ParentID]
 		FROM
-			(
-				SELECT
-					[x].[Value1],
-					ROW_NUMBER() OVER (ORDER BY [x].[ParentID] DESC) as [RN],
-					[x].[ParentID]
-				FROM
-					[Parent] [x]
-				WHERE
-					[x].[ParentID] > 1000
-			) [t1]
+			[Parent] [x]
 		WHERE
-			[t1].[RN] > @skip AND [t1].[RN] <= (@skip + @take)
-	) [t2]
+			[x].[ParentID] > 1000
+	) [t1]
 WHERE
-	[u].[ParentID] = [t2].[ParentID] AND ([u].[Value1] = [t2].[Value1] OR [u].[Value1] IS NULL AND [t2].[Value1] IS NULL)
+	[t1].[RN] > @skip AND
+	[t1].[RN] <= (@skip + @take) AND
+	[u].[ParentID] = [t1].[ParentID] AND
+	([u].[Value1] = [t1].[Value1] OR [u].[Value1] IS NULL AND [t1].[Value1] IS NULL)
 
 -- SqlServer.2005
 
