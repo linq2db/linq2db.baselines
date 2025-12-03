@@ -1,6 +1,4 @@
-﻿-- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
-DECLARE @Vector VECTOR(20) -- Binary
-SET     @Vector = CAST('[1, 2, 3]' AS VECTOR(1, float32))
+﻿-- SqlServer.2025 SqlServer.2022
 
 SELECT
 	[t].[Vector],
@@ -11,7 +9,7 @@ SELECT
 	VECTOR_NORM([t].[Vector], 'norminf'),
 	VECTOR_NORM([t].[Vector], 'norminf')
 FROM
-	[SqlVectorTable] [t]
+	[VectorTable] [t]
 ORDER BY
-	VECTOR_DISTANCE('cosine', [t].[Vector], @Vector)
+	VECTOR_DISTANCE('cosine', [t].[Vector], CAST('[1, 2, 3]' AS VECTOR(3, float32)))
 
