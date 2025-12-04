@@ -1,0 +1,137 @@
+﻿-- Oracle.12.Managed Oracle.Managed Oracle12
+
+SELECT
+	MAX(t1.ID)
+FROM
+	"AllTypes" t1
+
+-- Oracle.12.Managed Oracle.Managed Oracle12
+DECLARE @NChar Char -- StringFixedLength
+SET     @NChar = ' '
+DECLARE @Char_1 Char -- StringFixedLength
+SET     @Char_1 = ' '
+
+INSERT INTO "AllTypes"
+(
+	"ncharDataType",
+	"char20DataType"
+)
+VALUES
+(
+	:NChar,
+	:Char_1
+)
+
+-- Oracle.12.Managed Oracle.Managed Oracle12
+DECLARE @NChar Char -- StringFixedLength
+SET     @NChar = '	'
+DECLARE @Char_1 Char -- StringFixedLength
+SET     @Char_1 = '	'
+
+INSERT INTO "AllTypes"
+(
+	"ncharDataType",
+	"char20DataType"
+)
+VALUES
+(
+	:NChar,
+	:Char_1
+)
+
+-- Oracle.12.Managed Oracle.Managed Oracle12
+DECLARE @NChar Char -- StringFixedLength
+SET     @NChar = '
+'
+DECLARE @Char_1 Char -- StringFixedLength
+SET     @Char_1 = '
+'
+
+INSERT INTO "AllTypes"
+(
+	"ncharDataType",
+	"char20DataType"
+)
+VALUES
+(
+	:NChar,
+	:Char_1
+)
+
+-- Oracle.12.Managed Oracle.Managed Oracle12
+DECLARE @NChar Char -- StringFixedLength
+SET     @NChar = ''
+DECLARE @Char_1 Char -- StringFixedLength
+SET     @Char_1 = ''
+
+INSERT INTO "AllTypes"
+(
+	"ncharDataType",
+	"char20DataType"
+)
+VALUES
+(
+	:NChar,
+	:Char_1
+)
+
+-- Oracle.12.Managed Oracle.Managed Oracle12
+DECLARE @NChar Char -- StringFixedLength
+SET     @NChar = ''
+DECLARE @Char_1 Char -- StringFixedLength
+SET     @Char_1 = ''
+
+INSERT INTO "AllTypes"
+(
+	"ncharDataType",
+	"char20DataType"
+)
+VALUES
+(
+	:NChar,
+	:Char_1
+)
+
+-- Oracle.12.Managed Oracle.Managed Oracle12
+DECLARE @NChar Char -- StringFixedLength
+SET     @NChar = ''
+DECLARE @Char_1 Char -- StringFixedLength
+SET     @Char_1 = ''
+
+INSERT INTO "AllTypes"
+(
+	"ncharDataType",
+	"char20DataType"
+)
+VALUES
+(
+	:NChar,
+	:Char_1
+)
+
+-- Oracle.12.Managed Oracle.Managed Oracle12
+DECLARE @NChar Char -- StringFixedLength
+SET     @NChar = ' '
+DECLARE @Char_1 Char -- StringFixedLength
+SET     @Char_1 = ' '
+
+INSERT INTO "AllTypes"
+(
+	"ncharDataType",
+	"char20DataType"
+)
+VALUES
+(
+	:NChar,
+	:Char_1
+)
+
+-- Oracle.12.Managed Oracle.Managed Oracle12
+DECLARE @lastId Int32
+SET     @lastId = 2
+
+DELETE FROM
+	"AllTypes" t1
+WHERE
+	t1.ID > :lastId
+
