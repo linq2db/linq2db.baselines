@@ -1,0 +1,486 @@
+﻿-- SqlServer.2025 SqlServer.2022
+
+INSERT INTO [BulkCopyTable]
+(
+	[Id],
+	[Value]
+)
+VALUES
+(1,10),
+(2,20)
+
+-- SqlServer.2025 SqlServer.2022
+
+SELECT
+	[t1].[Id],
+	[t1].[Value]
+FROM
+	[BulkCopyTable] [t1]
+ORDER BY
+	[t1].[Id]
+
+-- SqlServer.2025 SqlServer.2022
+
+DELETE [t1]
+FROM
+	[BulkCopyTable] [t1]
+
+-- SqlServer.2025 SqlServer.2022
+
+INSERT INTO [BulkCopyTable]
+(
+	[Id],
+	[Value]
+)
+VALUES
+(1,10),
+(2,20)
+
+-- SqlServer.2025 SqlServer.2022
+
+SELECT
+	[t1].[Id],
+	[t1].[Value]
+FROM
+	[BulkCopyTable] [t1]
+ORDER BY
+	[t1].[Id]
+
+-- SqlServer.2025 SqlServer.2022
+
+DELETE [t1]
+FROM
+	[BulkCopyTable] [t1]
+
+-- SqlServer.2025 SqlServer.2022
+
+INSERT INTO [BulkCopyTable]
+(
+	[Id],
+	[Value]
+)
+VALUES
+(1,10),
+(2,20)
+
+-- SqlServer.2025 SqlServer.2022
+
+SELECT
+	[t1].[Id],
+	[t1].[Value]
+FROM
+	[BulkCopyTable] [t1]
+ORDER BY
+	[t1].[Id]
+
+-- SqlServer.2025 SqlServer.2022
+
+DELETE [t1]
+FROM
+	[BulkCopyTable] [t1]
+
+-- SqlServer.2025 SqlServer.2022
+
+INSERT INTO [BulkCopyTable]
+(
+	[Id],
+	[Value]
+)
+VALUES
+(1,10),
+(2,20)
+
+-- SqlServer.2025 SqlServer.2022
+
+SELECT
+	[t1].[Id],
+	[t1].[Value]
+FROM
+	[BulkCopyTable] [t1]
+ORDER BY
+	[t1].[Id]
+
+-- SqlServer.2025 SqlServer.2022
+
+DELETE [t1]
+FROM
+	[BulkCopyTable] [t1]
+
+-- SqlServer.2025 SqlServer.2022
+
+INSERT INTO [BulkCopyTable]
+(
+	[Id],
+	[Value]
+)
+VALUES
+(1,10),
+(2,20)
+
+-- SqlServer.2025 SqlServer.2022
+
+SELECT
+	[t1].[Id],
+	[t1].[Value]
+FROM
+	[BulkCopyTable] [t1]
+ORDER BY
+	[t1].[Id]
+
+-- SqlServer.2025 SqlServer.2022
+
+DELETE [t1]
+FROM
+	[BulkCopyTable] [t1]
+
+-- SqlServer.2025 SqlServer.2022
+
+INSERT INTO [BulkCopyTable]
+(
+	[Id],
+	[Value]
+)
+VALUES
+(1,10),
+(2,20)
+
+-- SqlServer.2025 SqlServer.2022
+
+SELECT
+	[t1].[Id],
+	[t1].[Value]
+FROM
+	[BulkCopyTable] [t1]
+ORDER BY
+	[t1].[Id]
+
+-- SqlServer.2025 SqlServer.2022
+
+DELETE [t1]
+FROM
+	[BulkCopyTable] [t1]
+
+-- SqlServer.2025 SqlServer.2022
+
+INSERT INTO [BulkCopyTable]
+(
+	[Id],
+	[Value]
+)
+VALUES
+(1,10),
+(2,20)
+
+-- SqlServer.2025 SqlServer.2022
+
+SELECT
+	[t1].[Id],
+	[t1].[Value]
+FROM
+	[BulkCopyTable] [t1]
+ORDER BY
+	[t1].[Id]
+
+-- SqlServer.2025 SqlServer.2022
+
+DELETE [t1]
+FROM
+	[BulkCopyTable] [t1]
+
+-- SqlServer.2025 SqlServer.2022
+
+INSERT INTO [BulkCopyTable]
+(
+	[Id],
+	[Value]
+)
+VALUES
+(1,10),
+(2,20)
+
+-- SqlServer.2025 SqlServer.2022
+
+SELECT
+	[t1].[Id],
+	[t1].[Value]
+FROM
+	[BulkCopyTable] [t1]
+ORDER BY
+	[t1].[Id]
+
+-- SqlServer.2025 SqlServer.2022
+
+DELETE [t1]
+FROM
+	[BulkCopyTable] [t1]
+
+-- SqlServer.2025 SqlServer.2022
+
+INSERT INTO [BulkCopyTable]
+(
+	[Id],
+	[Value]
+)
+VALUES
+(1,10),
+(2,20)
+
+-- SqlServer.2025 SqlServer.2022
+
+SELECT
+	[t1].[Id],
+	[t1].[Value]
+FROM
+	[BulkCopyTable] [t1]
+ORDER BY
+	[t1].[Id]
+
+-- SqlServer.2025 SqlServer.2022
+
+DELETE [t1]
+FROM
+	[BulkCopyTable] [t1]
+
+-- SqlServer.2025 SqlServer.2022
+
+INSERT INTO [BulkCopyTable]
+(
+	[Id],
+	[Value]
+)
+VALUES
+(1,10),
+(2,20)
+
+-- SqlServer.2025 SqlServer.2022
+
+SELECT
+	[t1].[Id],
+	[t1].[Value]
+FROM
+	[BulkCopyTable] [t1]
+ORDER BY
+	[t1].[Id]
+
+-- SqlServer.2025 SqlServer.2022
+
+DELETE [t1]
+FROM
+	[BulkCopyTable] [t1]
+
+-- SqlServer.2025 SqlServer.2022
+
+INSERT INTO [BulkCopyTable]
+(
+	[Id],
+	[Value]
+)
+VALUES
+(1,10),
+(2,20)
+
+-- SqlServer.2025 SqlServer.2022
+
+SELECT
+	[t1].[Id],
+	[t1].[Value]
+FROM
+	[BulkCopyTable] [t1]
+ORDER BY
+	[t1].[Id]
+
+-- SqlServer.2025 SqlServer.2022
+
+DELETE [t1]
+FROM
+	[BulkCopyTable] [t1]
+
+-- SqlServer.2025 SqlServer.2022
+
+INSERT INTO [BulkCopyTable]
+(
+	[Id],
+	[Value]
+)
+VALUES
+(1,10),
+(2,20)
+
+-- SqlServer.2025 SqlServer.2022
+
+SELECT
+	[t1].[Id],
+	[t1].[Value]
+FROM
+	[BulkCopyTable] [t1]
+ORDER BY
+	[t1].[Id]
+
+-- SqlServer.2025 SqlServer.2022
+
+DELETE [t1]
+FROM
+	[BulkCopyTable] [t1]
+
+-- SqlServer.2025 SqlServer.2022
+
+INSERT INTO [BulkCopyTable]
+(
+	[Id],
+	[Value]
+)
+VALUES
+(1,10),
+(2,20)
+
+-- SqlServer.2025 SqlServer.2022
+
+SELECT
+	[t1].[Id],
+	[t1].[Value]
+FROM
+	[BulkCopyTable] [t1]
+ORDER BY
+	[t1].[Id]
+
+-- SqlServer.2025 SqlServer.2022
+
+DELETE [t1]
+FROM
+	[BulkCopyTable] [t1]
+
+-- SqlServer.2025 SqlServer.2022
+
+INSERT INTO [BulkCopyTable]
+(
+	[Id],
+	[Value]
+)
+VALUES
+(1,10),
+(2,20)
+
+-- SqlServer.2025 SqlServer.2022
+
+SELECT
+	[t1].[Id],
+	[t1].[Value]
+FROM
+	[BulkCopyTable] [t1]
+ORDER BY
+	[t1].[Id]
+
+-- SqlServer.2025 SqlServer.2022
+
+DELETE [t1]
+FROM
+	[BulkCopyTable] [t1]
+
+-- SqlServer.2025 SqlServer.2022
+
+INSERT INTO [BulkCopyTable]
+(
+	[Id],
+	[Value]
+)
+VALUES
+(1,10),
+(2,20)
+
+-- SqlServer.2025 SqlServer.2022
+
+SELECT
+	[t1].[Id],
+	[t1].[Value]
+FROM
+	[BulkCopyTable] [t1]
+ORDER BY
+	[t1].[Id]
+
+-- SqlServer.2025 SqlServer.2022
+
+DELETE [t1]
+FROM
+	[BulkCopyTable] [t1]
+
+-- SqlServer.2025 SqlServer.2022
+
+INSERT INTO [BulkCopyTable]
+(
+	[Id],
+	[Value]
+)
+VALUES
+(1,10),
+(2,20)
+
+-- SqlServer.2025 SqlServer.2022
+
+SELECT
+	[t1].[Id],
+	[t1].[Value]
+FROM
+	[BulkCopyTable] [t1]
+ORDER BY
+	[t1].[Id]
+
+-- SqlServer.2025 SqlServer.2022
+
+DELETE [t1]
+FROM
+	[BulkCopyTable] [t1]
+
+-- SqlServer.2025 SqlServer.2022
+
+INSERT INTO [BulkCopyTable]
+(
+	[Id],
+	[Value]
+)
+VALUES
+(1,10),
+(2,20)
+
+-- SqlServer.2025 SqlServer.2022
+
+SELECT
+	[t1].[Id],
+	[t1].[Value]
+FROM
+	[BulkCopyTable] [t1]
+ORDER BY
+	[t1].[Id]
+
+-- SqlServer.2025 SqlServer.2022
+
+DELETE [t1]
+FROM
+	[BulkCopyTable] [t1]
+
+-- SqlServer.2025 SqlServer.2022
+
+INSERT INTO [BulkCopyTable]
+(
+	[Id],
+	[Value]
+)
+VALUES
+(1,10),
+(2,20)
+
+-- SqlServer.2025 SqlServer.2022
+
+SELECT
+	[t1].[Id],
+	[t1].[Value]
+FROM
+	[BulkCopyTable] [t1]
+ORDER BY
+	[t1].[Id]
+
+-- SqlServer.2025 SqlServer.2022
+
+DELETE [t1]
+FROM
+	[BulkCopyTable] [t1]
+
