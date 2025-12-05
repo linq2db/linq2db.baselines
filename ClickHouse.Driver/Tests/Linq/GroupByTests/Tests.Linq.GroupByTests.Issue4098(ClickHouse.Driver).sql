@@ -2,7 +2,7 @@
 
 SELECT
 	ip.InvestorId,
-	t1.Units,
+	b_1.Units,
 	SUM(ip.NetPayment)
 FROM
 	PaymentEvent p
@@ -19,8 +19,8 @@ FROM
 			GROUP BY
 				b.SecurityClass,
 				b.InvestorId
-		) t1 ON ip.InvestorId = t1.InvestorId AND p.SecurityClass = t1.SecurityClass
+		) b_1 ON ip.InvestorId = b_1.InvestorId AND p.SecurityClass = b_1.SecurityClass
 GROUP BY
 	ip.InvestorId,
-	t1.Units
+	b_1.Units
 
