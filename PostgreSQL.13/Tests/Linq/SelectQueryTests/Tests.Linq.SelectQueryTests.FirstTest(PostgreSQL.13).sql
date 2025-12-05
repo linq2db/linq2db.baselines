@@ -1,0 +1,6 @@
+﻿-- PostgreSQL.13 PostgreSQL
+
+SELECT
+	CURRENT_TIMESTAMP
+LIMIT 1
+

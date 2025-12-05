@@ -1,0 +1,14 @@
+﻿-- SqlServer.2025.MS SqlServer.2025 SqlServer.2022
+
+SELECT
+	[c_1].[Value1],
+	NULL
+FROM
+	[Parent] [c_1]
+UNION ALL
+SELECT
+	NULL,
+	[c_2].[ParentID]
+FROM
+	[Child] [c_2]
+

@@ -1,0 +1,46 @@
+﻿-- PostgreSQL.17 PostgreSQL.15 PostgreSQL
+
+SELECT
+	VERSION(),
+	CURRENT_CATALOG,
+	CURRENT_DATABASE(),
+	CURRENT_ROLE,
+	CURRENT_SCHEMA,
+	CURRENT_USER,
+	SESSION_USER
+
+-- PostgreSQL.17 PostgreSQL.15 PostgreSQL
+
+SELECT
+	VERSION()
+
+-- PostgreSQL.17 PostgreSQL.15 PostgreSQL
+
+SELECT
+	CURRENT_CATALOG
+
+-- PostgreSQL.17 PostgreSQL.15 PostgreSQL
+
+SELECT
+	CURRENT_DATABASE()
+
+-- PostgreSQL.17 PostgreSQL.15 PostgreSQL
+
+SELECT
+	CURRENT_ROLE
+
+-- PostgreSQL.17 PostgreSQL.15 PostgreSQL
+
+SELECT
+	CURRENT_SCHEMA
+
+-- PostgreSQL.17 PostgreSQL.15 PostgreSQL
+
+SELECT
+	CURRENT_USER
+
+-- PostgreSQL.17 PostgreSQL.15 PostgreSQL
+
+SELECT
+	SESSION_USER
+

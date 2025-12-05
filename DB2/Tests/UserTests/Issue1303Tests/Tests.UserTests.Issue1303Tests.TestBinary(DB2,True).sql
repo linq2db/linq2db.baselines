@@ -1,0 +1,51 @@
+﻿-- DB2 DB2.LUW DB2LUW
+
+INSERT INTO "Issue1303"
+(
+	ID,
+	"Array",
+	"Binary"
+)
+VALUES
+(
+	1,
+	BX'010203',
+	BX'0405'
+)
+
+-- DB2 DB2.LUW DB2LUW
+
+SELECT
+	"t1".ID,
+	"t1"."Array",
+	"t1"."Binary"
+FROM
+	"Issue1303" "t1"
+WHERE
+	"t1".ID = 1
+FETCH NEXT 2 ROWS ONLY
+
+-- DB2 DB2.LUW DB2LUW
+
+SELECT
+	"t1".ID,
+	"t1"."Array",
+	"t1"."Binary"
+FROM
+	"Issue1303" "t1"
+WHERE
+	"t1"."Array" = BX'010203'
+FETCH NEXT 2 ROWS ONLY
+
+-- DB2 DB2.LUW DB2LUW
+
+SELECT
+	"t1".ID,
+	"t1"."Array",
+	"t1"."Binary"
+FROM
+	"Issue1303" "t1"
+WHERE
+	"t1"."Binary" = BX'0405'
+FETCH NEXT 2 ROWS ONLY
+
