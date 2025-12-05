@@ -140,20 +140,20 @@ DECLARE @uptoDate VarChar(23) -- AnsiString
 SET     @uptoDate = '2020-02-29 17:54:55.123'
 
 SELECT
-	[t5].[SourceInstrumentCode]
+	[t8].[SourceInstrumentCode]
 FROM
 	(
 		SELECT DISTINCT
-			[ins].[SourceInstrumentCode]
+			[t6].[SourceInstrumentCode]
 		FROM
-			[T1] [t4]
-				INNER JOIN [T2] [idx] ON [t4].[InstrumentId] = [idx].[InstrumentId]
-				INNER JOIN [T3] [w] ON [idx].[IndexId] = [w].[IndexId]
-				INNER JOIN [T1] [ins] ON [w].[InstrumentId] = [ins].[InstrumentId]
+			[T1] [t7]
+				INNER JOIN [T2] [t4] ON [t7].[InstrumentId] = [t4].[InstrumentId]
+				INNER JOIN [T3] [t5] ON [t4].[IndexId] = [t5].[IndexId]
+				INNER JOIN [T1] [t6] ON [t5].[InstrumentId] = [t6].[InstrumentId]
 		WHERE
-			[t4].[InstrumentCode] LIKE @cond ESCAPE '~' AND strftime('%Y-%m-%d %H:%M:%f', [t4].[CreateDate]) <= strftime('%Y-%m-%d %H:%M:%f', @uptoDate) AND
-			[ins].[SourceInstrumentCode] IS NOT NULL
-	) [t5]
+			[t7].[InstrumentCode] LIKE @cond ESCAPE '~' AND strftime('%Y-%m-%d %H:%M:%f', [t7].[CreateDate]) <= strftime('%Y-%m-%d %H:%M:%f', @uptoDate) AND
+			[t6].[SourceInstrumentCode] IS NOT NULL
+	) [t8]
 ORDER BY
-	[t5].[SourceInstrumentCode]
+	[t8].[SourceInstrumentCode]
 
