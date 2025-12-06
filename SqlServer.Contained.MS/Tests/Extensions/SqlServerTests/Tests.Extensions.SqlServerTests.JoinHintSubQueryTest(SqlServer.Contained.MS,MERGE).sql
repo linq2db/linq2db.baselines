@@ -1,18 +1,18 @@
 ﻿-- SqlServer.Contained.MS SqlServer.2019
 
 SELECT
-	[t].[ParentID],
+	[p].[ParentID],
 	(
 		SELECT
 			COUNT(*)
 		FROM
 			[Child] [a_Children]
 		WHERE
-			[t].[ParentID] = [a_Children].[ParentID]
+			[p].[ParentID] = [a_Children].[ParentID]
 	)
 FROM
 	[Child] [c_1]
-		INNER MERGE JOIN [Parent] [t] ON [c_1].[ParentID] = [t].[ParentID]
+		INNER MERGE JOIN [Parent] [p] ON [c_1].[ParentID] = [p].[ParentID]
 WHERE
 	EXISTS(
 		SELECT
@@ -20,6 +20,6 @@ WHERE
 		FROM
 			[Child] [a_Children_1]
 		WHERE
-			[t].[ParentID] = [a_Children_1].[ParentID]
+			[p].[ParentID] = [a_Children_1].[ParentID]
 	)
 

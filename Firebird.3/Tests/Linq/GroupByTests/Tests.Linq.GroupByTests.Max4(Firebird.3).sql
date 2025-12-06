@@ -1,9 +1,9 @@
 ﻿-- Firebird.3 Firebird3
 
 SELECT
-	"t1_1"."MoneyValue"
+	"t1"."MoneyValue"
 FROM
-	"LinqDataTypes" "t1_1"
+	"LinqDataTypes" "t1"
 		INNER JOIN (
 			SELECT
 				"t2".ID,
@@ -14,5 +14,5 @@ FROM
 				"t2".ID = 1 AND "t2"."DateTimeValue" <= CAST('2020-02-29' AS timestamp)
 			GROUP BY
 				"t2".ID
-		) "t1" ON "t1_1".ID = "t1".ID AND "t1_1"."DateTimeValue" = "t1"."c1"
+		) "t2_1" ON "t1".ID = "t2_1".ID AND "t1"."DateTimeValue" = "t2_1"."c1"
 

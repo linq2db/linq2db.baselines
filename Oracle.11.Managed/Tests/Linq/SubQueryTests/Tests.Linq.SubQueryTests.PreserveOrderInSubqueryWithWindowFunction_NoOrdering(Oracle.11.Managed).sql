@@ -2,7 +2,7 @@
 
 SELECT
 	t1."RowNumber",
-	n."PersonID"
+	r_1."PersonID"
 FROM
 	(
 		SELECT
@@ -11,7 +11,7 @@ FROM
 		FROM
 			"Person" r
 	) t1
-		INNER JOIN "Person" n ON t1.ID = n."PersonID"
+		INNER JOIN "Person" r_1 ON t1.ID = r_1."PersonID"
 WHERE
-	n."PersonID" = 2 AND ROWNUM <= 2
+	r_1."PersonID" = 2 AND ROWNUM <= 2
 

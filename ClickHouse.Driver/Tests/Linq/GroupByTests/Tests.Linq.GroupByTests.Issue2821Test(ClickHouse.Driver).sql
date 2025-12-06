@@ -24,7 +24,7 @@ FROM
 				(t.DateTimeValue2 IS NULL OR t.DateTimeValue2 >= toDateTime64('2020-02-29 17:54:55.1231234', 7))
 			GROUP BY
 				t.ID
-		) t1 ON o.ID = t1.ID AND (o.DateTimeValue2 = t1.c1 OR o.DateTimeValue2 IS NULL AND t1.c1 IS NULL)
+		) t_1 ON o.ID = t_1.ID AND (o.DateTimeValue2 = t_1.c1 OR o.DateTimeValue2 IS NULL AND t_1.c1 IS NULL)
 WHERE
 	Coalesce(o.DateTimeValue, o.DateTimeValue2) <= toDateTime64('2020-02-29 17:54:55.123', 3) AND
 	(o.DateTimeValue2 IS NULL OR o.DateTimeValue2 >= toDateTime64('2020-02-29 17:54:55.1231234', 7))

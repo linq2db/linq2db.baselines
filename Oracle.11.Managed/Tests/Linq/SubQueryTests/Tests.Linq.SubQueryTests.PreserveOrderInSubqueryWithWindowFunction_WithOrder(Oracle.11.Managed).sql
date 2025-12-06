@@ -4,7 +4,7 @@ SET     @take = 100
 
 SELECT
 	t2."RowNumber",
-	n."PersonID"
+	r_1."PersonID"
 FROM
 	(
 		SELECT
@@ -27,7 +27,7 @@ FROM
 		WHERE
 			ROWNUM <= :take
 	) t2
-		INNER JOIN "Person" n ON t2.ID = n."PersonID"
+		INNER JOIN "Person" r_1 ON t2.ID = r_1."PersonID"
 WHERE
-	n."PersonID" = 2 AND ROWNUM <= 2
+	r_1."PersonID" = 2 AND ROWNUM <= 2
 

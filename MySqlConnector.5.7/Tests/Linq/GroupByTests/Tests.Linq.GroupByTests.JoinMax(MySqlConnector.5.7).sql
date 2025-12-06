@@ -12,5 +12,5 @@ FROM
 				`Child` `max_1`
 			GROUP BY
 				`max_1`.`ParentID`
-		) `t1` ON `ch`.`ChildID` = `t1`.`c1`
+		) `max_2` ON `ch`.`ChildID` = `max_2`.`c1`
 

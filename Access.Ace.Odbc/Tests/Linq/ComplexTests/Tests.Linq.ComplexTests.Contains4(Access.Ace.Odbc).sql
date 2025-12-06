@@ -23,7 +23,7 @@ FROM
 							[GrandChild] [max_1]
 						GROUP BY
 							[max_1].[ChildID]
-					) [t1] ON ([gc].[GrandChildID] = [t1].[c1])
+					) [max_2] ON ([gc].[GrandChildID] = [max_2].[c1])
 		) [gc_1] ON ([a_Parent].[ParentID] = [gc_1].[ParentID])
 WHERE
 	[gc_1].[ParentID] IS NULL OR ([gc_1].[GrandChildID] NOT IN (111, 222) OR [gc_1].[GrandChildID] IS NULL)

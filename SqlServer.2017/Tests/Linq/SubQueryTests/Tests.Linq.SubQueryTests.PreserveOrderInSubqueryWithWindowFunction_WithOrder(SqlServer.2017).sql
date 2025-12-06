@@ -4,7 +4,7 @@ SET     @take = 100
 
 SELECT TOP (2)
 	[t1].[RowNumber],
-	[n].[PersonID]
+	[r_1].[PersonID]
 FROM
 	(
 		SELECT TOP (@take)
@@ -18,7 +18,7 @@ FROM
 		ORDER BY
 			[r].[FirstName]
 	) [t1]
-		INNER JOIN [Person] [n] ON [t1].[ID] = [n].[PersonID]
+		INNER JOIN [Person] [r_1] ON [t1].[ID] = [r_1].[PersonID]
 WHERE
-	[n].[PersonID] = 2
+	[r_1].[PersonID] = 2
 

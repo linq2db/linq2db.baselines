@@ -138,20 +138,20 @@ DECLARE @uptoDate TimeStamp -- DateTime
 SET     @uptoDate = CAST('2020-02-29 17:54:55.123' AS timestamp)
 
 SELECT
-	"t5"."SourceInstrumentCode"
+	"t8"."SourceInstrumentCode"
 FROM
 	(
 		SELECT DISTINCT
-			"ins"."SourceInstrumentCode"
+			"t6"."SourceInstrumentCode"
 		FROM
-			T1 "t4"
-				INNER JOIN T2 "idx" ON "t4"."InstrumentId" = "idx"."InstrumentId"
-				INNER JOIN T3 "w" ON "idx"."IndexId" = "w"."IndexId"
-				INNER JOIN T1 "ins" ON "w"."InstrumentId" = "ins"."InstrumentId"
+			T1 "t7"
+				INNER JOIN T2 "t4" ON "t7"."InstrumentId" = "t4"."InstrumentId"
+				INNER JOIN T3 "t5" ON "t4"."IndexId" = "t5"."IndexId"
+				INNER JOIN T1 "t6" ON "t5"."InstrumentId" = "t6"."InstrumentId"
 		WHERE
-			"t4"."InstrumentCode" STARTING WITH 'aaa' AND "t4"."CreateDate" <= @uptoDate AND
-			"ins"."SourceInstrumentCode" IS NOT NULL
-	) "t5"
+			"t7"."InstrumentCode" STARTING WITH 'aaa' AND "t7"."CreateDate" <= @uptoDate AND
+			"t6"."SourceInstrumentCode" IS NOT NULL
+	) "t8"
 ORDER BY
-	"t5"."SourceInstrumentCode"
+	"t8"."SourceInstrumentCode"
 
